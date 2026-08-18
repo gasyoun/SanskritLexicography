@@ -1,0 +1,611 @@
+repo	commit	path	kind	loc	contour	live_edge	disposition	evidence
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/E1_deepseek_vs_c4/e1_build_slice.py	source	55	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/E1_deepseek_vs_c4/e1_check_inputs.py	source	42	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/E1_deepseek_vs_c4/e1_find_inputs.py	source	41	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/E1_deepseek_vs_c4/e1_gen_inputs.py	source	34	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/H2674_w0_stream/run_canary.py	source	120	4	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/H2675_w1_prep/build_drain_head.py	source	263	6	import-depth-2	reviewed	RussianTranslation/src/pilot/cache_prep_census.py:251 import build_drain_head
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/H2675_w1_prep/run_prep_live.py	source	339	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/H2676_v4pro_q3_rematch/build_slice.py	source	72	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/H2676_v4pro_q3_rematch/summarize_run.py	source	106	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/pwg_cache_economy/h2703_generation/build_report.py	source	143	2	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:49 import prompt_rule_audit.build_report | RussianTranslation/src/pilot/audit_window.py:38 import prompt_rule_audit.build_report
+SanskritLexicography	af58b3b01836	RussianTranslation/experiments/pwg_cache_economy/h2756_flash/build_report.py	source	157	2	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:49 import prompt_rule_audit.build_report | RussianTranslation/src/pilot/audit_window.py:38 import prompt_rule_audit.build_report
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_audit.py	source	145	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_audit_micro.py	source	78	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_build_agni_ru.py	source	169	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_build_corpus_ru.py	source	84	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_build_persense_ru.py	source	178	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:3997 | RussianTranslation/.ai_state.md:3997
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_build_skeletons_ru.py	source	281	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_build_tables.py	source	122	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:6045
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_ls_extract.py	source	64	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_nws_audit.py	source	113	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_nws_defect_list.py	source	144	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_nws_defect_scan.py	source	72	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_nws_drift.py	source	121	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_nws_drift_sample.py	source	55	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_pilot_collect.py	source	159	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:7493 import _pilot_collect
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_pilot_gen_merged.py	source	841	6	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:177 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:288 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:288
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_purge_lexicon.py	source	85	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_sanskrit_util_vendored.py	source	614	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_supervise.py	source	52	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/_watch.py	source	65	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/a43_family_stats.py	source	92	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/add_corpus_renou.py	source	135	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/add_corpus_text.py	source	107	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_citation_edges.py	source	109	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_dcs_freq.py	source	199	2	import-depth-1	reviewed	RussianTranslation/src/mfs_baseline.py:195 import annotate_dcs_freq
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_edition_rel.py	source	98	7	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_evidence.py	source	392	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:7390 import annotate_evidence
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_form_labels.py	source	97	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_genres.py	source	250	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:7400 import annotate_genres
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_government.py	source	124	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_renou.py	source	172	6	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:181 | RussianTranslation/.ai_state.md:4536
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotate_stats.py	source	591	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5361
+SanskritLexicography	af58b3b01836	RussianTranslation/src/annotation_report.py	source	289	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/apply_decisions.py	source	433	6	entrypoint	reviewed	.github/workflows/ci.yml:205 | .github/workflows/ci.yml:205
+SanskritLexicography	af58b3b01836	RussianTranslation/src/assemble.py	source	354	5	import-depth-1	reviewed	RussianTranslation/src/validate_assembled_export.py:18 import assemble | RussianTranslation/src/run_batch.py:30 import assemble
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_coverage.py	source	144	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2470 | RussianTranslation/.ai_state.md:2652 | RussianTranslation/.ai_state.md:2826
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_griffith_en_alignment.py	source	171	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:760 | RussianTranslation/.ai_state.md:4192
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_root_split.py	source	148	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_sense_dupes.py	source	178	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2471 | RussianTranslation/.ai_state.md:3502 | RussianTranslation/.ai_state.md:3502
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_sense_glyph.py	source	208	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_translation.py	source	162	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2469 | RussianTranslation/.ai_state.md:5944 | RussianTranslation/.ai_state.md:5944
+SanskritLexicography	af58b3b01836	RussianTranslation/src/audit_translation_provenance.py	source	237	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5679 | RussianTranslation/.ai_state.md:5679 | RussianTranslation/.ai_state.md:5690
+SanskritLexicography	af58b3b01836	RussianTranslation/src/backfill_tn_residue.py	source	464	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:7581 import backfill_tn_residue
+SanskritLexicography	af58b3b01836	RussianTranslation/src/backfill_tn_residue_selftest.py	test	164	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_anatomy_crosswalk.py	source	173	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_citation_index.py	source	780	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_compound_split.py	source	106	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5042
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_corpus_lexicon.py	source	372	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2010
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_dcs_freq.py	source	231	2	import-depth-2	reviewed	RussianTranslation/src/annotate_dcs_freq.py:38 import build_dcs_freq
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_dcs_freq_dims.py	source	317	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_dcs_maps.py	source	153	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:5767 | RussianTranslation/.ai_state.md:5767
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_dcs_renou.py	source	341	2	import-depth-1	reviewed	RussianTranslation/src/renou_pilot_evidence.py:48 import build_dcs_renou | RussianTranslation/src/nominal_style.py:25 import build_dcs_renou
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_de_sidecar_pack.py	source	240	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_g5_review_sheet.py	source	501	6	entrypoint	reviewed	.github/workflows/ci.yml:223 | .github/workflows/ci.yml:223
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_g6_mqm_gold_sheet.py	source	365	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_glossaries.py	source	84	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5588 | RussianTranslation/.ai_state.md:5588 | RussianTranslation/PIPELINE_HISTORY.md:674
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_grade_gold.py	source	289	6	entrypoint	reviewed	.github/workflows/ci.yml:186 | .github/workflows/ci.yml:186
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_h1303_abbrev_sheet.py	source	378	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_h1306_style_sheet.py	source	317	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4705 | RussianTranslation/.ai_state.md:4705
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_h1682_abbrev_classification_tsv.py	source	61	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_h1682_abbrev_rules_sheet.py	source	474	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_h180_review_sheets.py	source	283	6	entrypoint	reviewed	~/.claude/commands/pwg-review-packet.md:13 | ~/.claude/commands/pwg-review-packet.md:13 | RussianTranslation/.ai_state.md:2124
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_h2805_q3_deploy_sheet.py	source	310	8	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_indic.py	source	161	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_integrity_extract.py	source	98	6	entrypoint	reviewed	.github/workflows/overlay-tripwire.yml:28 | .github/workflows/overlay-tripwire.yml:33 | .github/workflows/overlay-tripwire.yml:65
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_key1_repair_sheet.py	source	143	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_kochergina_sheet.py	source	250	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_kosha.py	source	110	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_l0.py	source	354	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2057 | RussianTranslation/.ai_state.md:2073 | RussianTranslation/.ai_state.md:2181
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_learner_scores.py	source	150	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2120 | RussianTranslation/PIPELINE_HISTORY.md:710 | RussianTranslation/PIPELINE_HISTORY.md:710
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_ls_map.py	source	170	6	import-depth-2	reviewed	RussianTranslation/src/renou.py:31 import build_ls_map
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_ls_map_mw.py	source	133	6	import-depth-2	reviewed	RussianTranslation/src/renou.py:32 import build_ls_map_mw
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_mbh_concordance.py	source	449	6	entrypoint	reviewed	.github/workflows/ci.yml:270 | .github/workflows/ci.yml:270
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_meulenbeld.py	source	94	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_oral_l0.py	source	538	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2050 | RussianTranslation/.ai_state.md:2050
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_pwg_freq_order.py	source	161	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_ramayana_concordance.py	source	808	6	entrypoint	reviewed	.github/workflows/ci.yml:269 | .github/workflows/ci.yml:269 | RussianTranslation/.ai_state.md:4867
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_reglue.py	source	273	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2121 | RussianTranslation/PIPELINE_HISTORY.md:712 | RussianTranslation/PIPELINE_HISTORY.md:712
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_reglue_evidence_sheet.py	source	353	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_reglue_sheet_v2.py	source	659	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_relationships.py	source	143	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2119 | RussianTranslation/PIPELINE_HISTORY.md:706 | RussianTranslation/PIPELINE_HISTORY.md:706
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_release_bundles.py	source	380	7	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_renou_pilot_sheet.py	source	281	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:1450
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_rollup_glossaries.py	source	300	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5770 | RussianTranslation/.ai_state.md:5770
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_ru_gloss_gap_stats.py	source	230	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_rv_divergence_gate_sheet.py	source	469	6	import-depth-1	reviewed	RussianTranslation/tests/test_rv_spine.py:507 import build_rv_divergence_gate_sheet
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_src.py	source	181	6	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:307 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:307
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_strata.py	source	160	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_surface_glossary.py	source	148	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5768 | RussianTranslation/.ai_state.md:5768
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_tmx.py	source	499	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:198 | RussianTranslation/.ai_state.md:198 | RussianTranslation/.ai_state.md:2074
+SanskritLexicography	af58b3b01836	RussianTranslation/src/build_vidyut_fallback.py	source	163	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4248 | RussianTranslation/.ai_state.md:4248 | RussianTranslation/.ai_state.md:5769
+SanskritLexicography	af58b3b01836	RussianTranslation/src/card_fields.py	source	165	3	import-depth-1	reviewed	RussianTranslation/src/pilot/headless_worker.py:26 import card_fields | RussianTranslation/src/pilot/headless_worker_selftest.py:1043 import card_fields | RussianTranslation/src/pilot/window_selftest.py:7520 import card_fields
+SanskritLexicography	af58b3b01836	RussianTranslation/src/citation_edges.py	source	464	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:1112 import citation_edges | RussianTranslation/src/promote_final_cards.py:57 import citation_edges | RussianTranslation/src/export_de_edition.py:64 import citation_edges
+SanskritLexicography	af58b3b01836	RussianTranslation/src/citation_tm.py	source	662	5	entrypoint	reviewed	.github/workflows/ci.yml:264 | .github/workflows/ci.yml:264 | RussianTranslation/.ai_state.md:752
+SanskritLexicography	af58b3b01836	RussianTranslation/src/collapse_audit.py	source	534	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4014
+SanskritLexicography	af58b3b01836	RussianTranslation/src/compile_translatable.py	source	323	3	import-depth-1	reviewed	RussianTranslation/src/root_units.py:28 import compile_translatable
+SanskritLexicography	af58b3b01836	RussianTranslation/src/corpus_gate.py	source	733	2	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:184 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:311 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:311
+SanskritLexicography	af58b3b01836	RussianTranslation/src/corpus_gate_sinonimy_selftest.py	test	156	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:4172
+SanskritLexicography	af58b3b01836	RussianTranslation/src/corpus_harvest.py	source	233	2	import-depth-1	reviewed	RussianTranslation/src/_build_persense_ru.py:8 import corpus_harvest | RussianTranslation/src/gold_recall_sample.py:29 import corpus_harvest | RussianTranslation/src/assemble.py:27 import corpus_harvest
+SanskritLexicography	af58b3b01836	RussianTranslation/src/corpus_provenance.py	source	115	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/dict_merge.py	source	252	5	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:225 import dict_merge | RussianTranslation/src/promote_final_cards.py:47 import dict_merge | RussianTranslation/src/_pilot_gen_merged.py:30 import dict_merge
+SanskritLexicography	af58b3b01836	RussianTranslation/src/edition_rel.py	source	991	7	entrypoint	reviewed	RussianTranslation/.ai_state.md:11
+SanskritLexicography	af58b3b01836	RussianTranslation/src/enrich_renou_bhs.py	source	121	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/enrich_renou_dcs.py	source	166	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/enrich_renou_wisdomlib.py	source	158	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/bli_eval.py	source	172	6	entrypoint	reviewed	.github/workflows/ci.yml:162 | .github/workflows/ci.yml:162 | RussianTranslation/.ai_state.md:4880
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/bli_score_stratified.py	source	217	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4102 | RussianTranslation/.ai_state.md:4102 | RussianTranslation/.ai_state.md:4110
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py	source	290	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4086 | RussianTranslation/.ai_state.md:4086
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/build_gold_koch.py	source	141	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4886
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/check_gold_frame.py	source	101	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/frame_presence_report.py	source	107	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/probe_gold_strata.py	source	393	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/probe_homographs.py	source	78	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/probe_key_scheme.py	source	112	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/sample_gold_frame.py	source	275	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/eval/summarize_gold_probe.py	source	54	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/export_de_edition.py	source	951	7	entrypoint	reviewed	RussianTranslation/.ai_state.md:636 | RussianTranslation/.ai_state.md:636
+SanskritLexicography	af58b3b01836	RussianTranslation/src/export_interop.py	source	225	7	entrypoint	reviewed	.github/workflows/ci.yml:371 | .github/workflows/ci.yml:371 | .github/workflows/ci.yml:399
+SanskritLexicography	af58b3b01836	RussianTranslation/src/export_lod.py	source	923	7	entrypoint	reviewed	RussianTranslation/.ai_state.md:5513 | RussianTranslation/.ai_state.md:5513
+SanskritLexicography	af58b3b01836	RussianTranslation/src/export_pwg_tm_ontolex.py	source	117	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_export.py:17 import export_pwg_tm_ontolex
+SanskritLexicography	af58b3b01836	RussianTranslation/src/export_pwg_tm_tei.py	source	115	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_export.py:16 import export_pwg_tm_tei
+SanskritLexicography	af58b3b01836	RussianTranslation/src/extend_ls_coverage.py	source	145	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/extend_ontolex_xrefs.py	source	77	7	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/fidelity_sample.py	source	128	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/fidelity_sample_en.py	source	129	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/form_labels.py	source	339	6	import-depth-1	reviewed	RussianTranslation/src/promote_final_cards.py:56 import form_labels | RussianTranslation/src/export_de_edition.py:63 import form_labels | RussianTranslation/src/microstructure.py:29 import form_labels
+SanskritLexicography	af58b3b01836	RussianTranslation/src/freq_route.py	source	80	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/fri_xref.py	source	232	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5403
+SanskritLexicography	af58b3b01836	RussianTranslation/src/g5_card_render.py	source	630	7	entrypoint	reviewed	.github/workflows/ci.yml:217 | .github/workflows/ci.yml:217 | RussianTranslation/.ai_state.md:4790
+SanskritLexicography	af58b3b01836	RussianTranslation/src/german_anchor.py	source	334	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:1196 | RussianTranslation/.ai_state.md:1196 | RussianTranslation/PIPELINE_HISTORY.md:96
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_aggregate.py	source	115	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_agreement.py	source	130	6	entrypoint	reviewed	.github/workflows/ci.yml:394 | .github/workflows/ci.yml:394 | .github/workflows/ci.yml:395
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_double_review_queue.py	source	71	6	entrypoint	reviewed	.github/workflows/ci.yml:390 | .github/workflows/ci.yml:390
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_double_review_verify.py	source	52	6	entrypoint	reviewed	.github/workflows/ci.yml:391 | .github/workflows/ci.yml:391
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_evidence_panel.py	source	1168	6	entrypoint	reviewed	.github/workflows/ci.yml:212 | .github/workflows/ci.yml:212 | RussianTranslation/.ai_state.md:1118
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_ingest.py	source	51	6	entrypoint	reviewed	.github/workflows/ci.yml:392 | .github/workflows/ci.yml:392
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_ingest_double_review.py	source	149	6	entrypoint	reviewed	.github/workflows/ci.yml:393 | .github/workflows/ci.yml:393
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_packet.py	source	50	6	entrypoint	reviewed	.github/workflows/ci.yml:388 | .github/workflows/ci.yml:388
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_packet_verify.py	source	56	6	entrypoint	reviewed	.github/workflows/ci.yml:389 | .github/workflows/ci.yml:389
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_recall_sample.py	source	185	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5544 | RussianTranslation/.ai_state.md:5544
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_review_csv.py	source	80	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_sample.py	source	80	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_sample_en.py	source	175	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_status.py	source	47	6	entrypoint	reviewed	.github/workflows/ci.yml:387 | .github/workflows/ci.yml:387
+SanskritLexicography	af58b3b01836	RussianTranslation/src/gold_validate.py	source	86	6	entrypoint	reviewed	.github/workflows/ci.yml:386 | .github/workflows/ci.yml:386
+SanskritLexicography	af58b3b01836	RussianTranslation/src/government_census.py	source	524	6	entrypoint	reviewed	.github/workflows/ci.yml:171 | .github/workflows/ci.yml:171 | RussianTranslation/.ai_state.md:2032
+SanskritLexicography	af58b3b01836	RussianTranslation/src/government_queries.py	source	169	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/government_sidecar.py	source	168	6	entrypoint	reviewed	.github/workflows/ci.yml:172 | .github/workflows/ci.yml:172
+SanskritLexicography	af58b3b01836	RussianTranslation/src/h1682_abbrev_collapse.py	source	201	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/h178_eval_bakeoff.py	source	817	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2102 | RussianTranslation/.ai_state.md:2102
+SanskritLexicography	af58b3b01836	RussianTranslation/src/iast_to_cyrillic.py	source	112	1	import-depth-1	reviewed	RussianTranslation/src/pilot/build_article_site.py:46 import iast_to_cyrillic
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ingest_oral.py	source	396	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2069 | RussianTranslation/.ai_state.md:2069
+SanskritLexicography	af58b3b01836	RussianTranslation/src/judge_ab_score.py	source	114	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/judge_disagreements.py	source	90	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/key1_repair_proposals.py	source	319	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/koch_xref.py	source	290	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5424
+SanskritLexicography	af58b3b01836	RussianTranslation/src/line_collapse.py	source	226	1	import-depth-1	reviewed	RussianTranslation/src/collapse_audit.py:62 import line_collapse
+SanskritLexicography	af58b3b01836	RussianTranslation/src/lod_acceptance.py	source	452	7	entrypoint	reviewed	.github/workflows/ci.yml:234 | .github/workflows/ci.yml:234 | RussianTranslation/.ai_state.md:5519
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_coverage.py	source	210	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5133
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_coverage_probe.py	source	104	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_gap_mine.py	source	260	6	entrypoint	reviewed	.github/workflows/ci.yml:267 | .github/workflows/ci.yml:267
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_gap_repair.py	source	266	6	entrypoint	reviewed	.github/workflows/ci.yml:268 | .github/workflows/ci.yml:268
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_gap_unrouted_viewers.py	source	134	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_links.py	source	516	6	entrypoint	reviewed	.github/workflows/ci.yml:265 | .github/workflows/ci.yml:265
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_resolver.py	source	1334	6	import-depth-1	reviewed	RussianTranslation/src/pilot/build_article_site.py:41 import ls_resolver | RussianTranslation/src/pilot/window_selftest.py:7257 import ls_resolver | RussianTranslation/src/ls_links.py:91 import ls_resolver
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ls_resolver_mbh_selftest.py	test	101	6	entrypoint	reviewed	.github/workflows/ci.yml:266 | .github/workflows/ci.yml:266
+SanskritLexicography	af58b3b01836	RussianTranslation/src/make_edition_cut.py	source	184	7	entrypoint	reviewed	.github/workflows/ci.yml:403 | .github/workflows/ci.yml:403 | RussianTranslation/.ai_state.md:5532
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mark_reconstructed_headwords.py	source	211	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/markup_fidelity_gates.py	source	248	6	import-depth-1	reviewed	RussianTranslation/src/pwg_tm_fragmentize.py:29 import markup_fidelity_gates | RussianTranslation/src/pilot/audit_window_en.py:96 import markup_fidelity_gates | RussianTranslation/src/audit_translation.py:35 import markup_fidelity_gates
+SanskritLexicography	af58b3b01836	RussianTranslation/src/measure_wave1_delta.py	source	101	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mfs_baseline.py	source	216	6	entrypoint	reviewed	.github/workflows/ci.yml:170 | .github/workflows/ci.yml:170
+SanskritLexicography	af58b3b01836	RussianTranslation/src/microstructure.py	source	396	1	import-depth-1	reviewed	RussianTranslation/src/_pilot_gen_merged.py:29 import microstructure | RussianTranslation/src/export_de_edition.py:60 import microstructure | RussianTranslation/src/pilot/select_medium50.py:31 import microstructure
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mine_running_text.py	source	584	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:2131 | RussianTranslation/.ai_state.md:2131 | RussianTranslation/.ai_state.md:2135
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mined_filter_bicleaner.py	source	245	6	entrypoint	reviewed	.github/workflows/ci.yml:187 | .github/workflows/ci.yml:187
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mw_ap_sense_coverage.py	source	381	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4036
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mw_compounds.py	source	166	6	entrypoint	reviewed	.github/workflows/ci.yml:169 | .github/workflows/ci.yml:169 | RussianTranslation/.ai_state.md:3748
+SanskritLexicography	af58b3b01836	RussianTranslation/src/mw_en_tm.py	source	170	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nn_api.py	source	295	4	import-depth-1	reviewed	RussianTranslation/src/tm_grade.py:176 import nn_api | RussianTranslation/src/tm_align.py:276 import nn_api | RussianTranslation/src/tm_saru_align_labse.py:158 import nn_api
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nominal_grammar.py	source	633	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:3750 | RussianTranslation/.ai_state.md:3750
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nominal_style.py	source	140	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:6027 | RussianTranslation/.ai_state.md:6027
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nws_audit_section.py	source	146	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nws_ls_markup.py	source	485	1	entrypoint	reviewed	RussianTranslation/.ai_state.md:329 | RussianTranslation/.ai_state.md:329 | RussianTranslation/.ai_state.md:4437
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nws_scrape.py	source	196	1	import-depth-1	reviewed	RussianTranslation/src/pilot/watch_upstream.py:317 import nws_scrape
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nws_split.py	source	321	1	import-depth-1	reviewed	RussianTranslation/src/_pilot_gen_merged.py:32 import nws_split | RussianTranslation/src/pilot/audit_window.py:34 import nws_split | RussianTranslation/src/compile_translatable.py:26 import nws_split
+SanskritLexicography	af58b3b01836	RussianTranslation/src/nws_tag_census.py	source	288	1	entrypoint	reviewed	.github/workflows/ci.yml:222 | .github/workflows/ci.yml:222
+SanskritLexicography	af58b3b01836	RussianTranslation/src/part_b_xref_discovery.py	source	175	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5412
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/_merge_subwindows.py	source	55	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/adjudicate_compound_differs.py	source	1027	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:579 | RussianTranslation/.ai_state.md:579
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/agent_budget.py	source	157	4	entrypoint	reviewed	.github/workflows/ci.yml:238 | .github/workflows/ci.yml:238 | RussianTranslation/.ai_state.md:5306
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/anthropic_messages_route.py	source	301	4	import-depth-1	reviewed	RussianTranslation/src/pilot/route_compare_selftest.py:21 import anthropic_messages_route | RussianTranslation/src/pilot/route_compare.py:24 import anthropic_messages_route
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/apply_editorial_decisions.py	source	433	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/apply_editorial_decisions_selftest.py	test	204	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/audit_window.py	source	929	6	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:178 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:585 | RussianTranslation/.ai_state.md:1056
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/audit_window_en.py	source	590	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:1646 | RussianTranslation/.ai_state.md:1963 | RussianTranslation/.ai_state.md:1963
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/autosplit_requeue.py	source	785	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2112 | RussianTranslation/.ai_state.md:2886 | RussianTranslation/.ai_state.md:3902
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/bounded_staged_run.py	source	1183	4	entrypoint	reviewed	.github/workflows/ci.yml:109 | ~/.claude/commands/pwg-bounded-run.md:12 | RussianTranslation/.ai_state.md:1580
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/bounded_staged_run_selftest.py	test	1463	4	entrypoint	reviewed	.github/workflows/ci.yml:258 | .github/workflows/ci.yml:258
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/bounded_supervisor.py	source	635	4	entrypoint	reviewed	.github/workflows/ci.yml:110
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/bounded_supervisor_selftest.py	test	639	4	entrypoint	reviewed	.github/workflows/ci.yml:257 | .github/workflows/ci.yml:257
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/build_article_site.py	source	1321	7	entrypoint	reviewed	.github/workflows/ci.yml:173 | .github/workflows/ci.yml:173 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:352
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/build_compound_rule_ratification_sheet.py	source	831	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/build_edition_diff_site.py	source	295	7	entrypoint	reviewed	.github/workflows/ci.yml:118 | .github/workflows/ci.yml:174 | .github/workflows/ci.yml:174
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/build_h1302_requeue_worklist.py	source	73	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_adoption_verdict.py	source	128	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_baseline_freeze.py	source	149	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:10 import cache_baseline_freeze | RussianTranslation/src/pilot/cache_generation_pairs.py:32 import cache_baseline_freeze | RussianTranslation/src/pilot/cache_prep_census.py:24 import cache_baseline_freeze
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_contract_selftest.py	test	42	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_economy_report.py	source	339	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:11 import cache_economy_report | RussianTranslation/experiments/pwg_cache_economy/h2703_generation/build_report.py:18 import cache_economy_report | RussianTranslation/src/pilot/cache_generation_pairs.py:33 import cache_economy_report
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_event_ledger.py	source	334	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:12 import cache_event_ledger | RussianTranslation/src/pilot/cache_economy_report.py:23 import cache_event_ledger | RussianTranslation/src/pilot/cache_generation_pairs.py:34 import cache_event_ledger
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_generation_pairs.py	source	742	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:13 import cache_generation_pairs
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_identity.py	source	194	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:14 import cache_identity | RussianTranslation/tests/test_pwg_cache_prep_h2704.py:11 import cache_identity | RussianTranslation/src/pilot/cache_baseline_freeze.py:27 import cache_identity
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_migrate.py	source	346	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:15 import cache_migrate
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_pair_compare.py	source	114	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:16 import cache_pair_compare | RussianTranslation/tests/test_pwg_cache_prep_h2704.py:12 import cache_pair_compare | RussianTranslation/src/pilot/cache_generation_pairs.py:36 import cache_pair_compare
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_prefix_stability_probe.py	source	98	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_prep_census.py	source	362	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_prep_h2704.py:13 import cache_prep_census | RussianTranslation/src/pilot/cache_prep_pairs.py:32 import cache_prep_census | RussianTranslation/src/pilot/cache_prep_h2756.py:24 import cache_prep_census
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_prep_h2756.py	source	352	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_prep_h2756.py:9 import cache_prep_h2756 | RussianTranslation/experiments/pwg_cache_economy/h2756_flash/build_report.py:16 import cache_prep_h2756
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_prep_pairs.py	source	770	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_prep_h2704.py:14 import cache_prep_pairs
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_reuse.py	source	283	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:17 import cache_reuse | RussianTranslation/src/pilot/cache_prep_census.py:26 import cache_reuse
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cache_scheduler.py	source	110	2	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:18 import cache_scheduler | RussianTranslation/src/pilot/cache_generation_pairs.py:37 import cache_scheduler | RussianTranslation/src/pilot/cache_prep_pairs.py:33 import cache_scheduler
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/calibrate_perf_harness.py	source	198	6	entrypoint	reviewed	RussianTranslation/src/pilot/window_selftest.py:5051 run | RussianTranslation/.ai_state.md:2837 | RussianTranslation/.ai_state.md:2857
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/call_reservation.py	source	498	4	entrypoint	reviewed	.github/workflows/ci.yml:102
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/call_reservation_selftest.py	test	240	4	entrypoint	reviewed	.github/workflows/ci.yml:239 | .github/workflows/ci.yml:239
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/canary_gate.py	source	378	4	entrypoint	reviewed	~/.claude/commands/pwg-live-gate.md:84 | RussianTranslation/src/pilot/RUN_FREQ_MAX.md:731 | RussianTranslation/.ai_state.md:4427
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/canary_manifest_build.py	source	212	4	entrypoint	reviewed	RussianTranslation/src/pilot/RUN_FREQ_MAX.md:722
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/canary_manifest_build_selftest.py	test	208	4	entrypoint	reviewed	~/.claude/commands/pwg-live-gate.md:96 | RussianTranslation/src/pilot/RUN_FREQ_MAX.md:738
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/card_coverage.py	source	35	3	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:2812 import card_coverage | RussianTranslation/src/pilot/en_residual_keys.py:22 import card_coverage
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/check_launch_ledger.py	source	208	8	entrypoint	reviewed	.github/workflows/ci.yml:272 | .github/workflows/ci.yml:272 | RussianTranslation/.ai_state.md:2089
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/ci_gate_runner.py	source	190	4	entrypoint	reviewed	.github/workflows/ci.yml:288 | .github/workflows/ci.yml:288
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/classify_run.py	source	206	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:1949 | RussianTranslation/.ai_state.md:1949 | RussianTranslation/.ai_state.md:5321
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cloud_window.py	source	180	4	entrypoint	reviewed	.github/workflows/ci.yml:286 | .github/workflows/ci.yml:286
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cohort_clean_rates.py	source	497	2	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:8008 import cohort_clean_rates
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cohort_engine.py	source	505	2	import-depth-1	reviewed	RussianTranslation/src/pilot/bounded_staged_run.py:773 import cohort_engine
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/cohort_engine_selftest.py	test	1078	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/compound_differs_arm2_sample.py	source	365	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:4846
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/compound_differs_review_sample.py	source	362	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/coordinator.py	source	2649	4	entrypoint	reviewed	.github/workflows/ci.yml:111 | RussianTranslation/deploy/pwg-ru-max-orchestrator.service:12 | RussianTranslation/.ai_state.md:4724
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/coordinator_hardening_selftest.py	test	502	4	entrypoint	reviewed	.github/workflows/ci.yml:252 | .github/workflows/ci.yml:252
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/d4_boundary_wrap.py	source	251	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:554 | RussianTranslation/.ai_state.md:554 | RussianTranslation/.ai_state.md:4523
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/dashboard_events.py	source	138	7	import-depth-1	reviewed	RussianTranslation/src/pilot/max_account_orchestrator.py:32 import dashboard_events | RussianTranslation/src/pilot/coordinator.py:30 import dashboard_events | RussianTranslation/src/pilot/window_selftest.py:7046 import dashboard_events
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/dashboard_server.py	source	162	7	entrypoint	reviewed	RussianTranslation/src/pilot/RUN_FREQ_MAX.md:40 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:121 | RussianTranslation/.ai_state.md:3427
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/data_inventory.py	source	293	5	entrypoint	reviewed	.github/workflows/ci.yml:284 | .github/workflows/ci.yml:284
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/data_migrate.py	source	293	5	entrypoint	reviewed	.github/workflows/ci.yml:285 | .github/workflows/ci.yml:285
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/data_root.py	source	169	5	entrypoint	reviewed	.github/workflows/ci.yml:276 | .github/workflows/ci.yml:276
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/digest_daily.py	source	194	8	entrypoint	reviewed	.github/workflows/ci.yml:282 | .github/workflows/ci.yml:282
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/economy_ledger.py	source	433	4	import-depth-1	reviewed	RussianTranslation/src/pilot/bounded_staged_run.py:77 import economy_ledger | RussianTranslation/src/pilot/economy_ledger_selftest.py:23 import economy_ledger | RussianTranslation/src/pilot/bounded_staged_run_selftest.py:50 import economy_ledger
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/economy_ledger_selftest.py	test	374	4	entrypoint	reviewed	.github/workflows/ci.yml:256 | .github/workflows/ci.yml:256
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/en_residual_keys.py	source	41	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2880 | RussianTranslation/.ai_state.md:3932 | RussianTranslation/.ai_state.md:3932
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/en_split_triage.py	source	179	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2882 | RussianTranslation/.ai_state.md:3938 | RussianTranslation/.ai_state.md:3938
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/enrich_portrait_derivation.py	source	262	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/enrich_portrait_government.py	source	140	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/enrich_portrait_grammar.py	source	72	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/enrich_portrait_nominal_grammar.py	source	162	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:3755 | RussianTranslation/.ai_state.md:3755
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/eval/skillopt/build_heldout.py	source	155	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/evolution_stats.py	source	333	6	import-depth-1	reviewed	RussianTranslation/src/pilot/dashboard_server.py:32 import evolution_stats
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/execution_contract.py	source	255	4	import-depth-1	reviewed	RussianTranslation/src/pilot/headless_worker.py:29 import execution_contract | RussianTranslation/src/pilot/max_account_orchestrator.py:27 import execution_contract | RussianTranslation/src/pilot/latency_payload_sweep.py:54 import execution_contract
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/execution_contract_selftest.py	test	214	4	entrypoint	reviewed	.github/workflows/ci.yml:250 | .github/workflows/ci.yml:250
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/export_mdf_pwg_ru.py	source	418	7	entrypoint	reviewed	RussianTranslation/.ai_state.md:5276 | RussianTranslation/.ai_state.md:5276
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/extract_lexical_cores.py	source	134	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2346
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/failure_capture.py	source	93	4	import-depth-1	reviewed	RussianTranslation/src/pilot/audit_window.py:472 import failure_capture
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/fidelity_aggregate.py	source	111	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/fix_d4_boundary_wrap.py	source	95	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:555 | RussianTranslation/.ai_state.md:555
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/fix_d4b_bracket_normalize.py	source	102	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:4532
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/fix_german_connectives.py	source	208	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:3363 | RussianTranslation/.ai_state.md:3363 | RussianTranslation/.ai_state.md:5142
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/fix_wrapper_defects.py	source	157	3	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:1723 import fix_wrapper_defects
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/foreign_literal_guards.py	source	72	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2676
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_attestation.py	source	480	4	entrypoint	reviewed	RussianTranslation/.ai_state.md:3560
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_attestation_selftest.py	test	299	4	entrypoint	reviewed	.github/workflows/ci.yml:243 | .github/workflows/ci.yml:243
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_canary_contract.py	source	195	4	import-depth-1	reviewed	RussianTranslation/src/pilot/gateway_canary_contract_selftest.py:16 import gateway_canary_contract | RussianTranslation/src/pilot/route_compare.py:25 import gateway_canary_contract
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_canary_contract_selftest.py	test	104	4	entrypoint	reviewed	.github/workflows/ci.yml:244 | .github/workflows/ci.yml:244
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_external.py	source	815	4	import-depth-1	reviewed	RussianTranslation/src/pilot/gateway_external_selftest.py:26 import gateway_external | RussianTranslation/src/pilot/route_compare.py:26 import gateway_external
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_external_selftest.py	test	529	4	entrypoint	reviewed	.github/workflows/ci.yml:242 | .github/workflows/ci.yml:242
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_route.py	source	470	4	import-depth-1	reviewed	RussianTranslation/src/pilot/pwg_batch.py:24 import gateway_route | RussianTranslation/src/pilot/gateway_route_selftest.py:29 import gateway_route | RussianTranslation/src/pilot/gateway_attestation_selftest.py:20 import gateway_route
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gateway_route_selftest.py	test	422	4	entrypoint	reviewed	.github/workflows/ci.yml:241 | .github/workflows/ci.yml:241
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gen_ab_detail.py	source	106	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gen_fidelity_judge.py	source	121	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gen_fidelity_judge_en.py	source	143	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:1386 import gen_fidelity_judge_en
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gen_nominal_judge.py	source	103	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/gen_opt_harness2.py	source	2647	3	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:429 | RussianTranslation/.ai_state.md:1990 | RussianTranslation/.ai_state.md:1990
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/german_residue_scan.py	source	291	3	entrypoint	reviewed	.github/workflows/ci.yml:207 | .github/workflows/ci.yml:207 | RussianTranslation/.ai_state.md:5141
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1209/build_args.py	source	56	3	import-depth-2	reviewed	RussianTranslation/src/pilot/h1210/deepseek_arm.py:661 import build_args | RussianTranslation/src/pilot/cache_generation_pairs.py:42 import build_args
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1209/canonical_audit.py	source	259	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:1516
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1209/inject_payload.py	source	48	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1209/js_field_param_selftest.py	test	217	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1209/prep_slice.py	source	255	3	import-depth-2	reviewed	RussianTranslation/src/pilot/prompt_compiler.py:34 import prep_slice
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/ab_report.py	source	283	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/arm_b_control.py	source	280	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/build_ab_review_sheet.py	source	289	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/collect_arm_a.py	source	180	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/coverage_gap.py	source	98	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/deepseek_arm.py	source	802	3	import-depth-1	reviewed	RussianTranslation/src/pilot/h1210/prep_pack.py:68 import deepseek_arm | RussianTranslation/src/tm_retrieval_eval.py:495 import deepseek_arm | RussianTranslation/src/rv_divergence_type.py:64 import deepseek_arm
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/det_gate.py	source	211	6	import-depth-1	reviewed	RussianTranslation/src/pilot/h1210/prep_pack.py:69 import det_gate | RussianTranslation/src/pilot/h1210/deepseek_arm.py:51 import det_gate | RussianTranslation/src/pilot/cache_generation_pairs.py:40 import det_gate
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/dual_metric_breakdown.py	source	122	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/extract_verdicts.py	source	47	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2591/b1_recover_tokens.py	source	127	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2591/b1_transcripts.py	source	89	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2598/b1_limit_window_probe.py	source	148	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2598/b2_whole_card_pool.py	source	98	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2612/decompose_margin.py	source	109	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2612/regrade_receipt.py	source	92	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/h2612/timeout_probe.py	source	125	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/length_breakdown.py	source	121	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/pack_chunks.py	source	76	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/prep_context_compare.py	source	1755	3	import-depth-2	reviewed	RussianTranslation/src/pilot/h1210/prep_context_compare_selftest.py:36 import prep_context_compare
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/prep_context_compare_selftest.py	test	982	6	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:8839 import prep_context_compare_selftest | RussianTranslation/src/pilot/h1210/prep_context_compare.py:1627 import prep_context_compare_selftest
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/prep_pack.py	source	1793	3	entrypoint	reviewed	.github/workflows/ci.yml:105 | .github/workflows/ci.yml:247 | .github/workflows/ci.yml:247
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/qc_gloss_arity.py	source	76	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/refresh_after_fill.py	source	112	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/select_ab100.py	source	368	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/select_ab40_subset.py	source	142	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/slim_audit.py	source	67	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/status_vs_audit.py	source	84	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/test_deepseek_stream.py	source	29	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1210/tm_question_catalog_selftest.py	test	50	5	entrypoint	reviewed	.github/workflows/ci.yml:106 | .github/workflows/ci.yml:248 | .github/workflows/ci.yml:248
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1339_offline_bench.py	source	746	6	entrypoint	reviewed	.github/workflows/ci.yml:291 | .github/workflows/ci.yml:291 | .github/workflows/ci.yml:316
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1339_population_rederive.py	source	236	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h1447/build_plan.py	source	88	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:1338 | RussianTranslation/.ai_state.md:1338
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2136_sonnet_independent_check.py	source	126	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2138_ceiling_derive.py	source	139	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2158_key_shape.py	source	89	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2158_liveness_probe.py	source	126	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2158_route_ab.py	source	378	3	import-depth-1	reviewed	RussianTranslation/src/pilot/headless_worker_selftest.py:1333 import h2158_route_ab
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2158_route_ab_report.py	source	198	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2160_batch_shape_probe.py	source	128	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:992 | RussianTranslation/.ai_state.md:992
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2160_regen_medium50.py	source	149	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:990 | RussianTranslation/.ai_state.md:990
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2189_min_profile.py	source	341	4	entrypoint	reviewed	RussianTranslation/src/pilot/RUN_FREQ_MAX.md:136 | RussianTranslation/.ai_state.md:4338
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2189_profile_ab.py	source	431	4	entrypoint	reviewed	RussianTranslation/.ai_state.md:150
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2189_profile_ab_selftest.py	test	242	4	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2250_amortisation_table.py	source	159	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2250_card_turns.py	source	54	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2251_content_equivalence.py	source	316	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2251_tag_compare.py	source	339	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:3643 | RussianTranslation/.ai_state.md:3643
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2253_bisect_signature.py	source	69	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2254_parity_restamp.py	source	84	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2299_series_analysis.py	source	239	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:770
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2313_timeout_distribution.py	source	86	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2375_prompt_extract.py	source	46	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h2504_parity_restamp.py	source	59	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h3_byte_probe.py	source	87	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:4730
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h809_selftest.py	test	199	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5238 | RussianTranslation/.ai_state.md:5251
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h963_c4_gate0_probe.py	source	765	6	entrypoint	reviewed	.github/workflows/ci.yml:113 | .github/workflows/ci.yml:290 | .github/workflows/ci.yml:290
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h963_c4_pilot_bind.py	source	148	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h963_c4_pilot_candidates.py	source	101	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/h963_c4_pilot_snapshot.py	source	161	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/harvest_launch_stats.py	source	439	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5267
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/headless_worker.py	source	1658	4	entrypoint	reviewed	.github/workflows/ci.yml:107 | ~/.claude/commands/pwg-bounded-run.md:12
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/headless_worker_selftest.py	test	2044	4	entrypoint	reviewed	.github/workflows/ci.yml:249 | .github/workflows/ci.yml:249
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/host_state.py	source	251	3	import-depth-1	reviewed	RussianTranslation/src/pilot/max_account_orchestrator.py:19 import host_state | RussianTranslation/src/pilot/h963_c4_gate0_probe.py:81 import host_state
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/lane_guard.py	source	240	2	entrypoint	reviewed	.github/workflows/ci.yml:279 | .github/workflows/ci.yml:279
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/lane_spotcheck_tick.py	source	196	3	entrypoint	reviewed	.github/workflows/ci.yml:280 | .github/workflows/ci.yml:280
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/lang_parity_check.py	source	192	6	entrypoint	reviewed	.github/workflows/ci.yml:271 | .github/workflows/ci.yml:271 | RussianTranslation/src/pilot/RUN_FREQ_MAX.md:60
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/latency_payload_sweep.py	source	209	3	entrypoint	reviewed	.github/workflows/ci.yml:114
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/latency_sweep_analyze.py	source	210	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/layer_presence_audit.py	source	117	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2359
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/layer_versions.py	source	276	1	entrypoint	reviewed	RussianTranslation/.ai_state.md:2247 | RussianTranslation/.ai_state.md:2247
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/ls_enrichment_selftest.py	test	184	6	entrypoint	reviewed	.github/workflows/ci.yml:320 | .github/workflows/ci.yml:320 | RussianTranslation/.ai_state.md:5133
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/marker_scan.py	source	142	8	entrypoint	reviewed	.github/workflows/ci.yml:289 | .github/workflows/ci.yml:289
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/max_account_orchestrator.py	source	1990	4	entrypoint	reviewed	.github/workflows/ci.yml:108 | RussianTranslation/deploy/pwg-ru-max-orchestrator.service:10 | RussianTranslation/deploy/pwg-ru-max-orchestrator.service:11
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/max_account_orchestrator_selftest.py	test	1921	4	entrypoint	reviewed	.github/workflows/ci.yml:251 | .github/workflows/ci.yml:251 | RussianTranslation/.ai_state.md:4209
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/migrate_health_probe_log.py	source	113	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/no_pwg_residual_ledger.py	source	263	3	import-depth-1	reviewed	RussianTranslation/src/pilot/requeue_from_audit.py:185 import no_pwg_residual_ledger
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/no_pwg_scale_plan.py	source	539	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:3731 | RussianTranslation/.ai_state.md:3743 | RussianTranslation/.ai_state.md:5234
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/nominals_worklist.py	source	313	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2218 | RussianTranslation/.ai_state.md:2349 | RussianTranslation/.ai_state.md:2373
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/nonstop_scheduler.py	source	541	2	entrypoint	reviewed	.github/workflows/ci.yml:281 | .github/workflows/ci.yml:281
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/openrouter_worker.py	source	271	4	entrypoint	reviewed	.github/workflows/ci.yml:287 | .github/workflows/ci.yml:287
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/parked_queue.py	source	142	2	entrypoint	reviewed	.github/workflows/ci.yml:277 | .github/workflows/ci.yml:277
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/parse_workflow_cost.py	source	193	8	entrypoint	reviewed	RussianTranslation/.ai_state.md:3309
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/perf_preflight.py	source	520	3	entrypoint	reviewed	RussianTranslation/src/pilot/window_selftest.py:3270 run | RussianTranslation/src/pilot/window_selftest.py:3280 run | RussianTranslation/src/pilot/window_selftest.py:3292 run
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/probe_log.py	source	462	8	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:400 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:400 | RussianTranslation/.ai_state.md:1026
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/proc_tree.py	source	316	4	entrypoint	reviewed	.github/workflows/ci.yml:101
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/promotion_journal.py	source	1237	5	entrypoint	reviewed	.github/workflows/ci.yml:112
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/promotion_journal_selftest.py	test	437	5	entrypoint	reviewed	.github/workflows/ci.yml:253 | .github/workflows/ci.yml:253
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/promotion_receipt.py	source	397	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/promotion_receipt_selftest.py	test	230	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/prompt_compiler.py	source	394	3	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_cache_economy.py:19 import prompt_compiler | RussianTranslation/tests/test_pwg_cache_prep_h2704.py:16 import prompt_compiler | RussianTranslation/src/pilot/cache_generation_pairs.py:41 import prompt_compiler
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/prompt_rule_audit.py	source	1064	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2653 | RussianTranslation/.ai_state.md:3279 | RussianTranslation/.ai_state.md:3279
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/pwg_batch.py	source	796	4	entrypoint	reviewed	.github/workflows/ci.yml:104
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/pwg_batch_selftest.py	test	277	4	entrypoint	reviewed	.github/workflows/ci.yml:246 | .github/workflows/ci.yml:246
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/repair_h178_da_cards.py	source	131	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/requeue_from_audit.py	source	251	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:5149
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/reservation_timeline.py	source	112	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/root_window_status.py	source	343	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/route_compare.py	source	513	4	import-depth-1	reviewed	RussianTranslation/src/pilot/route_compare_selftest.py:22 import route_compare
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/route_compare_selftest.py	test	432	4	entrypoint	reviewed	.github/workflows/ci.yml:245 | .github/workflows/ci.yml:245
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/route_transport.py	source	285	3	import-depth-1	reviewed	RussianTranslation/src/pilot/pwg_batch.py:32 import route_transport | RussianTranslation/src/pilot/route_compare_selftest.py:25 import route_transport | RussianTranslation/src/pilot/anthropic_messages_route.py:19 import route_transport
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/ru_coverage.py	source	173	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:3909
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/run_observability.py	source	194	8	entrypoint	reviewed	.github/workflows/ci.yml:116
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/run_observability_selftest.py	test	43	6	entrypoint	reviewed	.github/workflows/ci.yml:117 | .github/workflows/ci.yml:255 | .github/workflows/ci.yml:255
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/run_real_test.py	source	216	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/sanloss_bundling_fix_probe.py	source	211	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/script_census.py	source	277	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/select_medium50.py	source	154	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5484 | RussianTranslation/.ai_state.md:5484
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/selftest_isolation.py	source	249	6	import-depth-1	reviewed	RussianTranslation/src/pilot/windows100_selftest.py:14 import selftest_isolation | RussianTranslation/src/pilot/headless_worker_selftest.py:19 import selftest_isolation | RussianTranslation/src/pilot/max_account_orchestrator_selftest.py:21 import selftest_isolation
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/sense_count.py	source	224	3	entrypoint	reviewed	.github/workflows/ci.yml:259 | .github/workflows/ci.yml:259 | RussianTranslation/.ai_state.md:1643
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/softguard_falseflag_measure.py	source	442	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/spot_check_daily.py	source	356	6	entrypoint	reviewed	.github/workflows/ci.yml:278 | .github/workflows/ci.yml:278
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/tnmask_offline.py	source	152	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5120
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/translation_memory.py	source	2270	5	entrypoint	reviewed	.github/workflows/ci.yml:263 | .github/workflows/ci.yml:263 | RussianTranslation/.ai_state.md:2865
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/trilingual_sample.py	source	98	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/usage_accounting.py	source	183	4	entrypoint	reviewed	.github/workflows/ci.yml:103
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/usage_accounting_selftest.py	test	153	4	entrypoint	reviewed	.github/workflows/ci.yml:240 | .github/workflows/ci.yml:240
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/verb_worklist.py	source	132	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2435 | RussianTranslation/.ai_state.md:2617
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/watch_upstream.py	source	488	1	entrypoint	reviewed	RussianTranslation/.ai_state.md:2251 | RussianTranslation/.ai_state.md:2251
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/weekly_packet.py	source	222	8	entrypoint	reviewed	.github/workflows/ci.yml:283 | .github/workflows/ci.yml:283
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/window_common.py	source	317	3	entrypoint	reviewed	~/.claude/commands/pwg-drain.md:45
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/window_provenance.py	source	252	3	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:48 import window_provenance | RussianTranslation/src/pilot/audit_window.py:46 import window_provenance | RussianTranslation/src/pilot/window_reports.py:20 import window_provenance
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/window_reports.py	source	701	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5266
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/window_selftest.py	test	9310	6	entrypoint	reviewed	.github/workflows/ci.yml:260 | .github/workflows/ci.yml:260 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:613
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/windows100_selftest.py	test	83	6	entrypoint	reviewed	.github/workflows/ci.yml:115 | .github/workflows/ci.yml:254 | .github/workflows/ci.yml:254
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/workflow_payload.py	source	189	8	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:46 import workflow_payload | RussianTranslation/tests/test_h2252_boundary_refusals.py:33 import workflow_payload | RussianTranslation/src/pilot/audit_window.py:45 import workflow_payload
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/wrapper_defect_scan.py	source	107	3	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:1722 import wrapper_defect_scan | RussianTranslation/src/pilot/d4_boundary_wrap.py:76 import wrapper_defect_scan | RussianTranslation/src/pilot/fix_wrapper_defects.py:36 import wrapper_defect_scan
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pilot/xref_vocab.py	source	20	3	import-depth-1	reviewed	RussianTranslation/src/pilot/window_selftest.py:8484 import xref_vocab | RussianTranslation/src/pilot/gen_opt_harness2.py:868 import xref_vocab | RussianTranslation/src/pilot/audit_window_en.py:156 import xref_vocab
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pipeline_version.py	source	502	6	import-depth-1	reviewed	RussianTranslation/src/government_census.py:261 import pipeline_version | RussianTranslation/src/promote_final_cards.py:46 import pipeline_version | RussianTranslation/src/run_batch.py:31 import pipeline_version
+SanskritLexicography	af58b3b01836	RussianTranslation/src/placement_axis_check.py	source	335	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:6 | RussianTranslation/.ai_state.md:7 | RussianTranslation/.ai_state.md:11
+SanskritLexicography	af58b3b01836	RussianTranslation/src/preflight_remaining_gates.py	source	279	6	entrypoint	reviewed	.github/workflows/ci.yml:402 | .github/workflows/ci.yml:402 | RussianTranslation/.ai_state.md:5532
+SanskritLexicography	af58b3b01836	RussianTranslation/src/promote_en.py	source	617	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:1383 | RussianTranslation/.ai_state.md:2451 | RussianTranslation/.ai_state.md:5788
+SanskritLexicography	af58b3b01836	RussianTranslation/src/promote_final_cards.py	source	2227	5	entrypoint	reviewed	.github/workflows/ci.yml:262 | .github/workflows/ci.yml:262 | RussianTranslation/.ai_state.md:1388
+SanskritLexicography	af58b3b01836	RussianTranslation/src/promote_lock.py	source	242	5	entrypoint	reviewed	RussianTranslation/src/pilot/RUN_FREQ_MAX.md:548 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:530 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:530
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_ab.py	source	111	1	import-depth-1	reviewed	RussianTranslation/src/pilot/build_article_site.py:42 import pwg_ab | RussianTranslation/src/g5_card_render.py:497 import pwg_ab | RussianTranslation/src/pilot/export_mdf_pwg_ru.py:48 import pwg_ab
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_ab_ru.py	source	173	1	import-depth-1	reviewed	RussianTranslation/src/pilot/build_article_site.py:43 import pwg_ab_ru | RussianTranslation/src/review_residue_gate.py:70 import pwg_ab_ru | RussianTranslation/src/pilot/export_mdf_pwg_ru.py:49 import pwg_ab_ru
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_derivation_layer.py	source	200	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_mask.py	source	538	1	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:179 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:296 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:296
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_page_index.py	source	226	1	entrypoint	reviewed	RussianTranslation/.ai_state.md:5347 | RussianTranslation/.ai_state.md:5347
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_page_verify.py	source	124	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_sources.py	source	126	1	entrypoint	reviewed	RussianTranslation/PIPELINE_HISTORY.md:270
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_canonical.py	source	489	5	import-depth-1	reviewed	RussianTranslation/src/pwg_tm_migrate_v1.py:22 import pwg_tm_canonical | RussianTranslation/src/pwg_tm_fragmentize.py:28 import pwg_tm_canonical | RussianTranslation/src/pwg_tm_priority.py:27 import pwg_tm_canonical
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_export_core.py	source	876	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_export.py:13 import pwg_tm_export_core | RussianTranslation/src/build_tmx.py:441 import pwg_tm_export_core | RussianTranslation/src/pwg_tm_export_loss.py:22 import pwg_tm_export_core
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_export_loss.py	source	104	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_export.py:14 import pwg_tm_export_loss
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_fragmentize.py	source	301	2	entrypoint	reviewed	.github/workflows/ci.yml:194 | .github/workflows/ci.yml:194 | RussianTranslation/.ai_state.md:5
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_gates.py	source	278	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_generate.py:13 import pwg_tm_gates | RussianTranslation/src/pwg_tm_generate.py:35 import pwg_tm_gates
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_generate.py	source	1375	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_generate.py:14 import pwg_tm_generate | RussianTranslation/tests/test_pwg_tm_wave2_policy.py:9 import pwg_tm_generate
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_judge_shards.py	source	44	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_migrate_v1.py	source	125	5	entrypoint	reviewed	.github/workflows/ci.yml:193 | .github/workflows/ci.yml:193
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_priority.py	source	464	2	entrypoint	reviewed	.github/workflows/ci.yml:195 | .github/workflows/ci.yml:195
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_quality.py	source	540	5	import-depth-1	reviewed	RussianTranslation/tests/test_pwg_tm_generate.py:15 import pwg_tm_quality
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_refresh_sample.py	source	63	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_release.py	source	181	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_sample400_gloss_drafts.py	source	105	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_sample400_sense_drafts.py	source	146	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_unique_unfilled.py	source	53	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_w2_run.py	source	161	5	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_wave2_policy.py	source	160	5	import-depth-1	reviewed	RussianTranslation/src/tm_retrieval_eval.py:424 import pwg_tm_wave2_policy | RussianTranslation/tests/test_pwg_tm_wave2_policy.py:11 import pwg_tm_wave2_policy | RussianTranslation/src/pwg_tm_generate.py:36 import pwg_tm_wave2_policy
+SanskritLexicography	af58b3b01836	RussianTranslation/src/reglue_overlap.py	source	337	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/release_readiness.py	source	144	7	entrypoint	reviewed	.github/workflows/ci.yml:358 | .github/workflows/ci.yml:358 | .github/workflows/ci.yml:401
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou.py	source	157	6	import-depth-1	reviewed	RussianTranslation/src/annotate_renou.py:28 import renou | RussianTranslation/src/renou_glossary.py:28 import renou | RussianTranslation/src/annotate_genres.py:44 import renou
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_audit.py	source	279	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_corpus_map.py	source	80	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_glossary.py	source	168	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:6024
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_h4_citation_bias.py	source	237	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_h4_figures.py	source	99	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_h6_zipf.py	source	207	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_pilot_evidence.py	source	163	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:1448
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_pilot_sample.py	source	321	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_pipeline.py	source	105	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_portrait.py	source	159	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_register.py	source	133	3	import-depth-1	reviewed	RussianTranslation/src/renou_glossary.py:29 import renou_register | RussianTranslation/src/renou.py:137 import renou_register | RussianTranslation/src/build_dcs_renou.py:73 import renou_register
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_sigla.py	source	147	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/renou_stage_redundancy_check.py	source	215	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/resolve_xrefs.py	source	99	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/reverse_index.py	source	212	7	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/review_binding.py	source	343	6	entrypoint	reviewed	.github/workflows/ci.yml:203 | .github/workflows/ci.yml:203
+SanskritLexicography	af58b3b01836	RussianTranslation/src/review_changelog_guard.py	source	124	8	entrypoint	reviewed	.github/workflows/ci.yml:337 | .github/workflows/ci.yml:337 | .github/workflows/ci.yml:339
+SanskritLexicography	af58b3b01836	RussianTranslation/src/review_evidence_preflight.py	source	78	6	import-depth-1	reviewed	RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py:59 import review_evidence_preflight
+SanskritLexicography	af58b3b01836	RussianTranslation/src/review_residue_gate.py	source	290	6	entrypoint	reviewed	.github/workflows/ci.yml:206 | .github/workflows/ci.yml:206 | RussianTranslation/.ai_state.md:1159
+SanskritLexicography	af58b3b01836	RussianTranslation/src/review_sheet_standard.py	source	124	6	entrypoint	reviewed	~/.claude/commands/pwg-review-packet.md:13 | ~/.claude/commands/pwg-review-packet.md:13 | ~/.claude/commands/pwg-review-packet.md:39
+SanskritLexicography	af58b3b01836	RussianTranslation/src/roadmap_check.py	source	155	9	entrypoint	reviewed	.github/workflows/ci.yml:323 | .github/workflows/ci.yml:323
+SanskritLexicography	af58b3b01836	RussianTranslation/src/root_glue_translated.py	source	114	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/root_units.py	source	110	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2776
+SanskritLexicography	af58b3b01836	RussianTranslation/src/ru_style_sweep.py	source	748	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:5100 | RussianTranslation/.ai_state.md:5100
+SanskritLexicography	af58b3b01836	RussianTranslation/src/run_batch.py	source	725	4	entrypoint	reviewed	.github/workflows/ci.yml:345 | .github/workflows/ci.yml:345 | .github/workflows/ci.yml:346
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_added_by_one_diagnosis.py	source	519	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:216 | RussianTranslation/.ai_state.md:216
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_divergence_explain.py	source	257	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:413 | RussianTranslation/.ai_state.md:413
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_divergence_type.py	source	659	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:375 | RussianTranslation/.ai_state.md:375
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_griffith_extract.py	source	185	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:360 | RussianTranslation/.ai_state.md:756
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_jamison_brereton_extract.py	source	696	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:286 | RussianTranslation/.ai_state.md:286
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_org_root.py	source	28	6	import-depth-1	reviewed	RussianTranslation/src/rv_jamison_brereton_extract.py:66 import rv_org_root | RussianTranslation/src/rv_spine_build.py:34 import rv_org_root | RussianTranslation/src/rv_renou_citations.py:38 import rv_org_root
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_pada_align.py	source	925	6	entrypoint	reviewed	.github/workflows/ci.yml:229 | .github/workflows/ci.yml:229 | RussianTranslation/.ai_state.md:13
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_pada_align_selftest.py	test	237	6	import-depth-1	reviewed	RussianTranslation/src/rv_pada_align.py:894 import rv_pada_align_selftest
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_pipeline_bridge.py	source	274	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:380 | RussianTranslation/.ai_state.md:380
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_renou_citations.py	source	255	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:361
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_renou_evp_witness.py	source	221	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:300 | RussianTranslation/.ai_state.md:300
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_spine_build.py	source	546	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:361
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_wisdomlib_bridge.py	source	336	6	import-depth-1	reviewed	RussianTranslation/tests/test_rv_spine.py:245 import rv_wisdomlib_bridge
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_wordlevel_align.py	source	392	6	import-depth-1	reviewed	RussianTranslation/tests/test_rv_spine.py:246 import rv_wordlevel_align
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_wordlevel_gold.py	source	340	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/rv_wordlevel_gold_labels.py	source	162	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/safe_filename.py	source	71	1	import-depth-1	reviewed	RussianTranslation/src/pilot/h1210/prep_pack.py:957 import safe_filename | RussianTranslation/src/pilot/coordinator.py:78 import safe_filename | RussianTranslation/src/pilot/sense_count.py:126 import safe_filename
+SanskritLexicography	af58b3b01836	RussianTranslation/src/sample_glyph_quarantine.py	source	230	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/sanity_glyph_resegment.py	source	151	1	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/sanskrit_util.py	source	53	1	entrypoint	reviewed	RussianTranslation/.ai_state.md:5 | RussianTranslation/.ai_state.md:5
+SanskritLexicography	af58b3b01836	RussianTranslation/src/saru_gloss_aggregate.py	source	275	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:5051
+SanskritLexicography	af58b3b01836	RussianTranslation/src/saru_gloss_sample.py	source	100	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:5051
+SanskritLexicography	af58b3b01836	RussianTranslation/src/saru_gloss_tm.py	source	134	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:5035
+SanskritLexicography	af58b3b01836	RussianTranslation/src/scale_preflight.py	source	250	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2776
+SanskritLexicography	af58b3b01836	RussianTranslation/src/scale_route.py	source	78	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/sense_stratum.py	source	124	2	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/sheet_screening.py	source	119	6	import-depth-1	reviewed	RussianTranslation/src/build_g5_review_sheet.py:76 import sheet_screening | RussianTranslation/src/build_h180_review_sheets.py:49 import sheet_screening | RussianTranslation/src/h178_eval_bakeoff.py:52 import sheet_screening
+SanskritLexicography	af58b3b01836	RussianTranslation/src/sibling_root.py	source	109	6	entrypoint	reviewed	.github/workflows/ci.yml:168 | .github/workflows/ci.yml:168
+SanskritLexicography	af58b3b01836	RussianTranslation/src/slp1_norm.py	source	55	1	entrypoint	reviewed	RussianTranslation/.ai_state.md:2120
+SanskritLexicography	af58b3b01836	RussianTranslation/src/spr_fulltext.py	source	136	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:5132
+SanskritLexicography	af58b3b01836	RussianTranslation/src/stage2_pregate.py	source	375	6	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:590 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:590 | RussianTranslation/.ai_state.md:1963
+SanskritLexicography	af58b3b01836	RussianTranslation/src/store_flags.py	source	122	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:5 | RussianTranslation/.ai_state.md:17
+SanskritLexicography	af58b3b01836	RussianTranslation/src/store_path.py	source	264	5	entrypoint	reviewed	.github/workflows/ci.yml:261 | .github/workflows/ci.yml:261 | RussianTranslation/.ai_state.md:1796
+SanskritLexicography	af58b3b01836	RussianTranslation/src/store_write.py	source	196	5	entrypoint	reviewed	RussianTranslation/.ai_state.md:4550 | RussianTranslation/.ai_state.md:4550
+SanskritLexicography	af58b3b01836	RussianTranslation/src/synth_de_first.py	source	127	3	entrypoint	reviewed	RussianTranslation/.ai_state.md:2122 | RussianTranslation/PIPELINE_HISTORY.md:715 | RussianTranslation/PIPELINE_HISTORY.md:715
+SanskritLexicography	af58b3b01836	RussianTranslation/src/synth_dispatch.py	source	542	3	entrypoint	reviewed	docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:559 | docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md:559 | RussianTranslation/.ai_state.md:2115
+SanskritLexicography	af58b3b01836	RussianTranslation/src/synth_score.py	source	103	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/tag_dict_from_source.py	source	194	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/tag_mw_from_source.py	source	151	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/terminology_build.py	source	230	3	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/tm_align.py	source	652	5	entrypoint	reviewed	.github/workflows/ci.yml:185 | .github/workflows/ci.yml:185 | RussianTranslation/.ai_state.md:2186
+SanskritLexicography	af58b3b01836	RussianTranslation/src/tm_grade.py	source	800	5	entrypoint	reviewed	.github/workflows/ci.yml:184 | .github/workflows/ci.yml:184 | RussianTranslation/.ai_state.md:196
+SanskritLexicography	af58b3b01836	RussianTranslation/src/tm_retrieval_eval.py	source	905	5	entrypoint	reviewed	.github/workflows/ci.yml:189 | .github/workflows/ci.yml:189
+SanskritLexicography	af58b3b01836	RussianTranslation/src/tm_saru_align_labse.py	source	307	5	entrypoint	reviewed	.github/workflows/ci.yml:188 | .github/workflows/ci.yml:188
+SanskritLexicography	af58b3b01836	RussianTranslation/src/triage_review_queue.py	source	312	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_assembled_export.py	source	205	5	entrypoint	reviewed	.github/workflows/ci.yml:329 | .github/workflows/ci.yml:329
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_decisions.py	source	308	6	entrypoint	reviewed	.github/workflows/ci.yml:204 | .github/workflows/ci.yml:204
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_final_card_schema.py	source	354	6	entrypoint	reviewed	.github/workflows/ci.yml:327 | .github/workflows/ci.yml:327 | .github/workflows/ci.yml:328
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_interop.py	source	82	6	entrypoint	reviewed	.github/workflows/ci.yml:372 | .github/workflows/ci.yml:372 | .github/workflows/ci.yml:400
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_portrait_schema.py	source	120	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_pwg_markup.py	source	171	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_pwg_portrait.py	source	148	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/validate_release.py	source	136	6	entrypoint	reviewed	.github/workflows/ci.yml:404 | .github/workflows/ci.yml:404
+SanskritLexicography	af58b3b01836	RussianTranslation/src/vedaweb_ru_witness.py	source	101	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	RussianTranslation/src/verify_root_glue.py	source	165	2	entrypoint	reviewed	RussianTranslation/.ai_state.md:2777
+SanskritLexicography	af58b3b01836	RussianTranslation/src/whitney_grammar.py	source	191	6	entrypoint	reviewed	RussianTranslation/.ai_state.md:3351 | RussianTranslation/.ai_state.md:3351
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_h2252_boundary_refusals.py	test	144	6	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection) | RussianTranslation/.ai_state.md:4235 | RussianTranslation/.ai_state.md:4235
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_h2892_supersede_reviewed_bytes.py	test	242	6	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_ls_resolver_rvps_arity.py	test	86	6	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_make_edition_cut_lf_determinism.py	test	97	7	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_metalanguage_flags.py	test	125	3	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_nws_ls_markup.py	test	351	1	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection) | RussianTranslation/.ai_state.md:343 | RussianTranslation/.ai_state.md:343
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_cache_economy.py	test	176	2	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_cache_prep_h2704.py	test	101	2	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_cache_prep_h2756.py	test	41	2	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_tm_canonical.py	test	106	5	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_tm_export.py	test	101	5	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_tm_generate.py	test	237	5	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_pwg_tm_wave2_policy.py	test	61	5	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_ru_style_sweep_lf_determinism.py	test	70	3	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_rv_spine.py	test	672	6	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection) | RussianTranslation/.ai_state.md:234 | RussianTranslation/.ai_state.md:306
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_saru_gloss_pipeline.py	test	165	5	entrypoint	reviewed	.github/workflows/ci.yml:134 | .github/workflows/ci.yml:134 | RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_saru_gloss_tm.py	test	50	5	entrypoint	reviewed	.github/workflows/ci.yml:134 | RussianTranslation/tests/ (pytest collection) | RussianTranslation/.ai_state.md:5038
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_saru_gloss_wave2.py	test	64	5	entrypoint	reviewed	.github/workflows/ci.yml:134 | RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_saru_gloss_wave3.py	test	36	5	entrypoint	reviewed	.github/workflows/ci.yml:134 | RussianTranslation/tests/ (pytest collection) | RussianTranslation/.ai_state.md:5047
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_store_flags.py	test	94	5	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tests/test_tm_semantic_qe_retrieval.py	test	104	5	entrypoint	reviewed	RussianTranslation/tests/ (pytest collection)
+SanskritLexicography	af58b3b01836	RussianTranslation/tools/gaps_s6_cyrillic_name_probe.py	source	139	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	scripts/changelog_duplicate_bullets.py	source	228	8	entrypoint	reviewed	.github/workflows/changelog-lint.yml:31 | .github/workflows/changelog-lint.yml:31
+SanskritLexicography	af58b3b01836	scripts/eol_census.py	source	371	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	scripts/pre_push_stale_base_check.py	source	402	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	tools/audit_features_index_repo_cells.py	source	90	6	none	not-applicable	no proven live edge from a PWG-translation entrypoint
+SanskritLexicography	af58b3b01836	tools/epistemic_integrity_check.py	source	189	6	entrypoint	reviewed	.github/workflows/epistemic-integrity.yml:23 | .github/workflows/epistemic-integrity.yml:51 | .github/workflows/epistemic-integrity.yml:51
+SanskritLexicography	af58b3b01836	.github/workflows/changelog-lint.yml	workflow	31	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/ci.yml	workflow	435	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/codeql.yml	workflow	42	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/dependabot-auto-merge.yml	workflow	38	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/epistemic-integrity.yml	workflow	79	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/findings-dashboard.yml	workflow	83	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/link-check.yml	workflow	51	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/overlay-tripwire.yml	workflow	97	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	.github/workflows/upstream-watch.yml	workflow	79	8	entrypoint	reviewed	GitHub Actions trigger on push/PR
+SanskritLexicography	af58b3b01836	RussianTranslation/deploy/pwg-ru-max-orchestrator.service	service	14	8	entrypoint	reviewed	systemd unit (prod dispatcher)
+SanskritLexicography	af58b3b01836	RussianTranslation/deploy/pwg-ru-max-orchestrator.timer	service	11	8	entrypoint	reviewed	systemd unit (prod dispatcher)
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/decisions.schema.json	schema	75	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/fixtures	schema	0	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/ls_source_map_ext.json	schema	5	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_batch_plan.schema.json	schema	58	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_cache_event.schema.json	schema	64	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_cache_request.schema.json	schema	44	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_cache_run_manifest.schema.json	schema	55	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_gateway_external_envelope.schema.json	schema	65	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_gateway_external_response.schema.json	schema	40	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_gateway_external_ticket.schema.json	schema	49	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_markup.rnc	schema	119	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_portrait_structural.schema.json	schema	177	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_prompt_bundle.schema.json	schema	36	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_route_comparison.schema.json	schema	67	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_ru_final_card.schema.json	schema	611	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_ru_lexicographic_portrait.schema.json	schema	98	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_tm_canonical.schema.json	schema	471	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_tm_ontolex.shacl.ttl	schema	33	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_tm_tei_lex0.rng	schema	76	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_tm_tei_lex0.sch	schema	24	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/pwg_transport_envelope.schema.json	schema	85	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/rv_translation_spine.schema.json	schema	205	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/schemas/translation_memory.schema.json	schema	366	7	asset	reviewed	export/card schema referenced by validators
+SanskritLexicography	af58b3b01836	RussianTranslation/src/pwg_tm_prompts/grok46_fragment_v1.txt	prompt	11	3	asset	reviewed	PWG TM prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/1_perevod.txt	prompt	394	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/2_qa_sudya_opus.txt	prompt	278	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/2_qa_sudya_yandexgpt.txt	prompt	221	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/3_pereperevod_opus.txt	prompt	499	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/4_korpus_proverka.txt	prompt	509	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/5_corpus_translate.md	prompt	72	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/6_merged_translate.md	prompt	191	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/pwg_ru_prompts/README.md	prompt	114	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/mw_ru_prompts/1_perevod.txt	prompt	113	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/mw_ru_prompts/2_qa_sudya_opus.txt	prompt	205	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/mw_ru_prompts/2_qa_sudya_yandexgpt.txt	prompt	200	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/mw_ru_prompts/3_pereperevod_opus.txt	prompt	263	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/mw_ru_prompts/qa_judge_v4.md	prompt	305	3	asset	reviewed	pipeline prompt template
+SanskritLexicography	af58b3b01836	RussianTranslation/mw_ru_prompts/README.md	prompt	30	3	asset	reviewed	pipeline prompt template
