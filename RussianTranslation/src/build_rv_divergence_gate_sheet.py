@@ -40,6 +40,7 @@ PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')
 REVIEW_DIR = os.path.join(RT_ROOT, 'review')
 
 from csl_pyutil import render_review_sheet          # noqa: E402
+from sheet_screening import screening_block  # noqa: E402
 from review_binding import stamp, write_lock        # noqa: E402
 from review_sheet_standard import standard_config   # noqa: E402
 import rv_divergence_type as dv                     # noqa: E402
@@ -448,7 +449,12 @@ def main():
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
 
-    doc = render_review_sheet(items, config, extras=True)
+    doc = render_review_sheet(items, config, extras=True,
+                                   screening=screening_block(
+                                       deterministic=0, lookup=0, agent=0,
+                                      human=len(items),
+                                      evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+                                       rules=[]))
     doc, chash = stamp(doc)
     os.makedirs(REVIEW_DIR, exist_ok=True)
     with io.open(a.out, 'w', encoding='utf-8', newline='\n') as fh:

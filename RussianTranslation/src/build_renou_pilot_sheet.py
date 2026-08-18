@@ -38,6 +38,7 @@ import re
 import sys
 
 from csl_pyutil import render_review_sheet
+from sheet_screening import screening_block  # noqa: E402
 from review_binding import stamp, write_lock
 from review_sheet_standard import pwg_entry_href, standard_config
 
@@ -262,7 +263,12 @@ def main():
     # approve/reject/defer hypothesis sheet, not a DA translation-quality one.
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
-    doc = render_review_sheet(items, config, extras=True)
+    doc = render_review_sheet(items, config, extras=True,
+                                   screening=screening_block(
+                                       deterministic=0, lookup=0, agent=0,
+                                      human=len(items),
+                                      evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+                                       rules=[]))
     # H1404 binding standard. VOTED/CLOSED sheet — lock of record is the retro
     # lock from the committed HTML; a rerun is a deliberate remake only
     # (voted.md item 2), and re-mints the lock for the new generation.

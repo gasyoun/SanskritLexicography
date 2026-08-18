@@ -251,13 +251,28 @@ def _selftest():
     check("%" in by_key["diasystem"]["Ved"] or not cardrender.vocabulary(),
           "with the census present a chip also states the corpus share")
 
+    # H2889 / #1802: `extras` defaults to True and csl-pyutil >=0.14.0 then REQUIRES a
+    # screening block (H1649), so this call raised `screening= is required when
+    # extras=True` against every version a contributor gets from requirements.txt while
+    # CI stayed green on the pinned v0.7.0 that predates the check. The production path
+    # at cmd_build() has always passed one; only this selftest lagged.
+    #
+    # The counts are honest rather than decorative: this fixture screens nothing, so the
+    # funnel is 0/0/0 with all three fixture cards left for the human. Inventing a
+    # deterministic/lookup/agent split here would put a false claim in the banner the
+    # block exists to make true.
     doc = render_review_sheet(items, {
         "sheet_id": "selftest", "title": "t", "subtitle": "s", "footer": "f",
         "approve_label": "A", "reject_label": "R", "filters": [("na", "na")],
         "generated": GENERATED, "facets": dims,
         "facet_count_label": "показано {shown} из {total}",
         "facet_reset_label": "снять все пометы",
-        "extra_css": cardrender.EXTRA_CSS})
+        "extra_css": cardrender.EXTRA_CSS},
+        extras=True,
+        screening=screening_block(
+            deterministic=0, lookup=0, agent=0, human=len(items),
+            evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+            rules=[]))
     check('id="facetbar"' in doc, "the sheet renders a facet bar")
     check(doc.count('data-facet-key=') == sum(len(d["values"]) for d in dims),
           "every facet value reaches the bar as a chip")

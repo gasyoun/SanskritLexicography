@@ -40,6 +40,7 @@ RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
 from csl_pyutil.review_sheet import render_review_sheet, esc  # noqa: E402
+from sheet_screening import screening_block  # noqa: E402
 import review_binding  # noqa: E402
 from review_sheet_standard import standard_config  # noqa: E402
 
@@ -290,7 +291,12 @@ def build(out_dir=None, force_lock=False):
     }
     cfg.update(standard_config(save_as=SAVE_AS))
 
-    html_doc = render_review_sheet(cards, cfg)
+    html_doc = render_review_sheet(cards, cfg, extras=True,
+                                   screening=screening_block(
+                                       deterministic=0, lookup=0, agent=0,
+                                      human=len(cards),
+                                      evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+                                       rules=[]))
     # Drop unused import warning: esc is available for future panel builders.
     _ = esc
 

@@ -134,9 +134,17 @@ jobs:
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
       - name: Install the shared review-sheet emitter (H1808)
         # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
-        # needs the package rather than just py_compile. Pinned to the TAG, not
-        # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
+        # needs the package rather than just py_compile. Pinned to a TAG, so a CI run
+        # stays reproducible -- and to the SAME tag requirements.txt declares, which
+        # is the half that was missing.
         #
+        # H2889 (#1802, 18-08-2026): this pin was v0.7.0 while requirements.txt said
+        # `@main`, ten releases apart. Reproducibility was never the problem; the
+        # problem was that CI proved a version nobody installs. `build_g5_review_sheet
+        # --selftest` passed here and raised `screening= is required when extras=True`
+        # (H1649, added in 0.14.0) for every contributor following the requirements
+        # file. Both surfaces now name v0.17.1: declared == tested, and both pinned.
+        # Moving one without the other reopens the gap -- change them together.
         # H2254 (07-08-2026): MOVED UP, from after the TM-hardening lane to here.
         # The H2252 truth gate below collects the WHOLE suite, and two of its tests
         # (test_nws_ls_markup.py, test_rv_spine.py) transitively import csl_pyutil --
@@ -146,7 +154,7 @@ jobs:
         # its ordering form: a step that runs the whole suite has to be preceded by
         # every dependency the named steps install piecemeal, and nothing enforced
         # that. Keep this install ABOVE the truth gate.
-        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.17.1"
       - name: Complete subsystem test suite (H2252 truth gate)
         working-directory: RussianTranslation
         run: |

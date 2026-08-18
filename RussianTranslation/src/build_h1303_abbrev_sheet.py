@@ -42,6 +42,7 @@ import store_path                               # noqa: E402
 import pwg_ab                                   # noqa: E402
 from pwg_ab_ru import RU_MAP                    # noqa: E402
 from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic  # noqa: E402
+from sheet_screening import screening_block  # noqa: E402
 
 GENERATED = '2026-07-21'
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)
@@ -369,7 +370,12 @@ config = {
     'save_as': 'pwg_ru/eval/h1303_abbrev.decisions.json',
     'note_min_height_px': 56,
 }
-html_doc = render_review_sheet(items, config)
+html_doc = render_review_sheet(items, config, extras=True,
+                                   screening=screening_block(
+                                       deterministic=0, lookup=0, agent=0,
+                                      human=len(items),
+                                      evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+                                       rules=[]))
 out = os.path.join(RT, 'review', 'h1303_abbrev_sheet.html')
 os.makedirs(os.path.dirname(out), exist_ok=True)
 with open(out, 'w', encoding='utf-8', newline='\n') as f:

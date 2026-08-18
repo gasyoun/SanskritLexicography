@@ -35,6 +35,7 @@ from review_sheet_standard import (                               # noqa: E402
     NOTE_MIN_HEIGHT_PX, pwg_entry_href, slp1_iast, standard_config,
 )
 from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic  # noqa: E402
+from sheet_screening import screening_block  # noqa: E402
 
 GENERATED = '2026-07-31'
 SHEET_ID = 'h1682_abbrev_rules'
@@ -453,7 +454,12 @@ def build():
     # standard_config already sets note_min_height_px=88 and show_ids
     assert config.get('note_min_height_px') == NOTE_MIN_HEIGHT_PX
 
-    html_doc = render_review_sheet(items, config)
+    html_doc = render_review_sheet(items, config, extras=True,
+                                   screening=screening_block(
+                                       deterministic=0, lookup=0, agent=0,
+                                      human=len(items),
+                                      evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+                                       rules=[]))
 
     out = os.path.join(RT, 'review', 'h1682_abbrev_rules_sheet.html')
     os.makedirs(os.path.dirname(out), exist_ok=True)

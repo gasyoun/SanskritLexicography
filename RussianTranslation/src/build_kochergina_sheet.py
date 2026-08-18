@@ -40,6 +40,7 @@ import os
 import sys
 
 from csl_pyutil import esc, mark_cyrillic, render_review_sheet
+from sheet_screening import screening_block  # noqa: E402
 
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config
@@ -220,7 +221,13 @@ def main():
     config.update(standard_config(
         save_as="RussianTranslation\\review\\" + SHEET_ID + "_decisions.json"))
 
-    html_out = render_review_sheet(build_items(), config, extras=True)
+    _items = build_items()
+    html_out = render_review_sheet(_items, config, extras=True,
+                                 screening=screening_block(
+                                     deterministic=0, lookup=0, agent=0,
+                                     human=len(_items),
+                                     evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+                                     rules=[]))
 
     # Splice the localStorage migration ahead of the document's single core
     # <script> (h178_eval_bakeoff.py pattern, but pre-script: the core IIFE
