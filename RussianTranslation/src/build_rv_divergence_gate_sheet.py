@@ -39,7 +39,7 @@ RT_ROOT = os.path.normpath(os.path.join(HERE, '..'))
 PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')
 REVIEW_DIR = os.path.join(RT_ROOT, 'review')
 
-from csl_pyutil import render_review_sheet          # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, render_review_sheet          # noqa: E402
 from sheet_screening import screening_block  # noqa: E402
 from review_binding import stamp, write_lock        # noqa: E402
 from review_sheet_standard import standard_config   # noqa: E402
@@ -445,6 +445,16 @@ def main():
             '.rv-method{margin-top:2.5em;padding:1em 1.2em;background:#f6f6f8;'
             'color:#222;border-top:2px solid #bbb;border-radius:.2em;font-size:.95em}'
             '.rv-method h3{margin:0 0 .5em;font-size:1.05em;color:#111}'),
+        # H3103 (U6): emitter chrome (download/save buttons, legend, keyboard
+        # shortcuts, timer labels) was previously unset -> defaulted to English.
+        # save_banner overridden: RU_UI_STRINGS omits it on purpose (its default
+        # bakes in the caller's own sheet_id/save_as).
+        'ui_strings': dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>RussianTranslation\\review\\%s_decisions.json</code> '
+            '(значение <code>sheet_id</code> внутри файла — <code>%s</code> — так следующая '
+            'сессия узнаёт, к какому листу относятся эти решения).'
+            % (SHEET_ID, SHEET_ID, SHEET_ID))),
     }
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))

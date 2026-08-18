@@ -52,7 +52,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-from csl_pyutil import esc, mark_cyrillic, render_review_sheet  # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet  # noqa: E402
 from csl_pyutil.evidence import find_slp1  # noqa: E402
 
 from packset_output import emit_sheet  # noqa: E402
@@ -243,6 +243,16 @@ def main(pack_size=0, hub_name=None, out_dir=None, locks_dir=None):
         # pattern below is a real one (bare H### handoff citations) that would
         # legitimately need a label if this generator ever grew question text.
         "identity_gate": {"patterns": [r"\bH\d{3,4}\b"], "labels": {}},
+        # H3103 (U6): emitter chrome (download/save buttons, legend, keyboard
+        # shortcuts, timer labels) was previously unset -> defaulted to English.
+        # save_banner overridden: RU_UI_STRINGS omits it on purpose (its default
+        # bakes in the caller's own sheet_id/save_as).
+        "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>RussianTranslation\\review\\%s_decisions.json</code> '
+            '(значение <code>sheet_id</code> внутри файла — <code>%s</code> — так следующая '
+            'сессия узнаёт, к какому листу относятся эти решения).'
+            % (SHEET_ID, SHEET_ID, SHEET_ID))),
     }
     config.update(standard_config(
         save_as=r"RussianTranslation\review\%s_decisions.json" % SHEET_ID))

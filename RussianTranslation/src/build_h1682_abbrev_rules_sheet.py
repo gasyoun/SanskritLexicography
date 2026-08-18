@@ -34,7 +34,7 @@ import store_path                                                 # noqa: E402
 from review_sheet_standard import (                               # noqa: E402
     NOTE_MIN_HEIGHT_PX, pwg_entry_href, slp1_iast, standard_config,
 )
-from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic  # noqa: E402
+from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic, RU_UI_STRINGS  # noqa: E402
 from sheet_screening import screening_block  # noqa: E402
 
 GENERATED = '2026-07-31'
@@ -234,49 +234,50 @@ def rule_card(label, bulk_toks, residue_toks, citation, by_token, kwic):
         if is_case:
             q = (
                 '<b>Раздел:</b> %s&nbsp;&mdash;&nbsp;<b>%d</b> токенов, %d вхождений.<br>'
-                '<b>Политика MG 31-07 (LOCKED):</b> падежи остаются <b>латиницей</b> '
-                '(Acc., Loc., Instr., …) в видимой колонке; полные Latin + русские названия '
-                'падежей — только в тултипе/легенде (модель Kochergina). '
+                '<b>Политика MG 31-07 (зафиксировано):</b> падежи остаются <b>латиницей</b> '
+                '(Acc., Loc., Instr., …) в видимой колонке; полные латинские формы + русские '
+                'названия падежей — только в тултипе/легенде (модель Кочергиной). '
                 'N5 <em>не</em> означает «перевести Acc.». LES-формы (акк., вин. п.) — '
                 'только метаязык, не замена токена.<br>'
-                '<b>Принять</b> = ратифицировать stay-Latin + легенду тултипов для всех '
-                'case-fold семей раздела. <b>Отклонить</b> = оспорить lock (нужно новое '
+                '<b>Принять</b> = ратифицировать сохранение латиницы + легенду тултипов для всех '
+                'регистровых семей раздела. <b>Отклонить</b> = оспорить фиксацию (нужно новое '
                 'решение MG). <b>Отложить</b> = обсудить.'
                 % (esc(label), n_bulk, total_freq)
             )
             # no mark_cyrillic on whole chrome — only the judgment strings
             q = q  # Latin policy: judgment is policy text, not a RU mapping
-            approve_hint = 'принять stay-Latin'
+            approve_hint = 'принять сохранение латиницы'
         else:
             interim = ''
             if is_latin_gram:
                 interim = (
-                    ' Для voice/tense/прочей грамматики: interim-рекомендация — '
+                    ' Для залога/времени/прочей грамматики: временная рекомендация — '
                     '<b>оставить латиницу + русское полное имя в тултипе</b>, пока H2048 '
-                    'не даст crosswalk; не изобретать calques (фут., прекат.) без источника. '
-                    'N8 (Caus.→кауз.) — <em>одна</em> prior-vote note, не blank cheque.'
+                    'не даст свод соответствий; не изобретать кальки (фут., прекат.) без источника. '
+                    'N8 (Caus.→кауз.) — <em>одна</em> заметка прошлого голосования, не карт-бланш.'
                 )
             q = (
                 '<b>Раздел:</b> %s&nbsp;&mdash;&nbsp;<b>%d</b> токенов, %d вхождений в store.<br>'
-                '<b>Принять</b> = утвердить отображаемые соответствия (ниже: expansion + n=) '
-                'для всех bulk-семей раздела разом. '
+                '<b>Принять</b> = утвердить отображаемые соответствия (ниже: раскрытие + n=) '
+                'для всех семей раздела разом. '
                 '<b>Отклонить</b> = вернуть раздел к статус-кво (латиница/оригинал + тултип). '
                 '<b>Отложить</b> = обсудить.%s'
                 % (esc(label), n_bulk, total_freq, interim)
             )
-            approve_hint = 'принять RU / stay-Latin'
+            approve_hint = 'принять RU / сохранение латиницы'
 
         panels = [
-            ('состав (surface · expansion · proposal · n=; case-fold семьи вместе)',
+            ('состав (форма · раскрытие · предложение · n=; регистровые семьи вместе)',
              '<pre>%s</pre>' % esc(members)),
-            ('примеры (до %d, семья с max freq: %s)' % (MAX_EXAMPLES, esc(' / '.join(top_fam))),
+            ('примеры (до %d, для семьи с максимальной частотой в разделе)'
+             % MAX_EXAMPLES,
              ex_html),
             ('прецедент', '<pre>%s</pre>' % esc(citation)),
         ]
     else:
         q = (
             '<b>Раздел:</b> %s&nbsp;&mdash;&nbsp;механизм, без фиксированного RU на уровне токена.<br>'
-            '<b>Принять</b> = утвердить render-time механизм (перевод по значению атрибута '
+            '<b>Принять</b> = утвердить механизм на этапе рендера (перевод по значению атрибута '
             '<code>n=</code> в момент рендера, не по токену). Все %d токенов вынесены как '
             'отдельные карточки ниже. <b>Отклонить</b> = обсудить другой механизм. '
             '<b>Отложить</b> = обсудить.'
@@ -302,12 +303,20 @@ def rule_card(label, bulk_toks, residue_toks, citation, by_token, kwic):
         'badges': [
             '%d×' % n_bulk if bulk_toks else 'механизм',
             '%d неоднозн.' % len(residue_toks) if residue_toks else 'без остатка',
-            'stay-Latin' if is_case else 'gram' if is_latin_gram else 'rule',
+            'латиница' if is_case else 'грам.' if is_latin_gram else 'правило',
         ],
         'question': q,
         'panels': panels,
         'note_placeholder': 'своя формулировка / комментарий (%s)' % approve_hint,
     }
+
+
+#: H3103/U6: badge display for row['cls'] (нем/лат/конт/OCR classifier code
+#: from h1682_abbrev_collapse.classify()) — the first three are already
+#: Russian; OCR (an unclear/scan-artifact residue class) gets a Russian badge
+#: too, matching the meaning already recorded in build_h1303_abbrev_sheet's
+#: CLS_NAMES['OCR'] = 'OCR/неясное'.
+_CLS_BADGE_RU = {'OCR': 'неясное'}
 
 
 def residue_card(tok, row, kwic):
@@ -344,7 +353,7 @@ def residue_card(tok, row, kwic):
         'id': 'ab:%s' % tok,
         'filt': 'ambig',
         'title': tok,
-        'badges': ['%d×' % row['freq'], row['cls']],
+        'badges': ['%d×' % row['freq'], _CLS_BADGE_RU.get(row['cls'], row['cls'])],
         'question': q,
         'panels': panels,
         'note_placeholder': 'своя формулировка / комментарий',
@@ -355,7 +364,7 @@ def residue_card(tok, row, kwic):
 _LS_BORDER = [
     ('ed. Bomb.', '221', 'Bombay edition', 'Бомбейская ред.',
      'зафиксировано MG 19-07-2026 (N4); ls-территория, применение с H1307'),
-    ('Verz. d. Oxf. H.', 'в ls-ссылках', 'Verzeichniss der Oxforder Handschriften (Aufrecht 1864)',
+    ('Verz. d. Oxf. H.', 'в цитатных ссылках', 'Verzeichniss der Oxforder Handschriften (Aufrecht 1864)',
      'Кат. оксф. рукоп.', 'N9: не оставлять по-немецки; ls-территория'),
     ('Spr. / Spr. (II)', 'десятки', 'Indische Sprüche (Böhtlingk)',
      'оставить сиглой + тултип «Индийские изречения»', 'заглавие источника, как ṚV.; ls-территория'),
@@ -369,7 +378,7 @@ def ls_cards():
             'id': 'ls:%s' % sig,
             'filt': 'ls',
             'title': sig,
-            'badges': [freqs, 'ls-сигла'],
+            'badges': [freqs, 'сигла'],
             'question': '<b>%s</b>&nbsp;→&nbsp;%s' % (esc(sig), mark_cyrillic('<b>%s</b>' % esc(prop))),
             'panels': [
                 ('данные', '<pre>расшифровка: %s</pre>' % esc(exp)),
@@ -426,29 +435,41 @@ def build():
     n_bulk = sum(1 for row in r['by_token'].values() if not row['residue'])
     config = {
         'sheet_id': SHEET_ID,
-        'title': 'H1682 — сокращения pwg_ru: ратификация правил (content v3 / H2047)',
+        'title': 'H1682 — сокращения <code>pwg_ru</code>: ратификация правил (ревизия содержания v3 / H2047)',
         'subtitle': (
-            'H2047 content remake (MG 31-07): expansion+freq, case-fold семьи, '
-            'падежи stay-Latin (не Acc.→акк.), до %d кликабельных KWIC на карточку. '
-            '%d ab-токенов → %d правил + %d неоднозначных + 3 ls + 1 мета = %d карточек. '
-            'Не голосуйте, пока case-секция и примеры не совпадают с lock.'
+            'Ревизия содержания H2047 (MG 31-07): раскрытие + частота, объединение '
+            'по регистру (case-fold), падежи остаются латиницей (не Acc.→акк.), до '
+            '%d кликабельных примеров на карточку. '
+            '%d токенов &lt;ab&gt; → %d правил + %d неоднозначных + 3 сиглы + 1 мета = %d карточек. '
+            'Не голосуйте, пока раздел падежей и примеры не совпадают с lock.'
             % (MAX_EXAMPLES, n_bulk, n_rule_cards, n_residue_cards,
                n_rule_cards + n_residue_cards + len(_LS_BORDER) + 1)
         ),
         'footer': (
-            'Экспорт: pwg_ru/eval/h1682_abbrev_rules.decisions.json. '
-            'H2047 executor override: Grok 4.5 (grok-4.5) for Opus comparison. '
-            'Cases locked Latin-stay MG 31-07; non-case grammar awaits H2048 crosswalk.'
+            'Экспорт: <code>pwg_ru/eval/h1682_abbrev_rules.decisions.json</code>. '
+            'H2047 — модель-исполнитель <code>Grok 4.5 (grok-4.5)</code>, выбрана для '
+            'сравнения с <code>Opus</code>. '
+            'Падежи закреплены латиницей (решение от 31-07-2026); прочая грамматика '
+            'ожидает свод H2048.'
         ),
         'approve_label': 'принять',
         'reject_label': 'оставить как есть',
         'filters': [
             ('rule', 'правила'),
             ('ambig', 'неоднозначные'),
-            ('ls', 'ls-сиглы'),
+            ('ls', 'сиглы'),
             ('meta', 'мета'),
         ],
         'generated': GENERATED,
+        # H3103/U6: reviewer chrome (download/save buttons, keyboard hints,
+        # timer strings) via RU_UI_STRINGS; save_banner excluded from the
+        # preset (bakes in sheet_id/save_as), built here per its docstring.
+        'ui_strings': dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'
+            % (esc(SHEET_ID), esc('pwg_ru/eval/h1682_abbrev_rules.decisions.json'), esc(SHEET_ID)))),
     }
     config.update(standard_config(save_as='pwg_ru/eval/h1682_abbrev_rules.decisions.json'))
     # standard_config already sets note_min_height_px=88 and show_ids
