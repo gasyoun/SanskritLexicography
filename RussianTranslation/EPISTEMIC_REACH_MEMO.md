@@ -1,6 +1,6 @@
 # Epistemic reach of a citation-resolved, corpus-linked PWG → Russian dictionary
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 18-08-2026_
 
 A repo-anchored research-agenda memo for [`RussianTranslation`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) (the `pwg_ru` PWG→RU/EN pipeline). It answers a two-part owner question — *what can a translated, `<ls>`-resolved, corpus-linked PWG actually answer, and what can it not?* — and turns the answer into a build agenda under four locked decisions taken this session:
 
@@ -134,7 +134,7 @@ Ranked by leverage. Build handoffs are *not* minted here except the umbrella [H3
 | 2 | BLI evaluation of `corpus_lexicon` (E1) | ★★★ citable asset | S | gold slice (κ) | RussianTranslation | Sonnet | `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H###-Sonnet_RussianTranslation_bli_eval_corpus_lexicon_DD.MM.YY.md and execute it.` |
 | 3 | Sense-level genre attribution (E2) + V1 | ★★★ paper headline | M | #1 helpful | RussianTranslation | Sonnet | `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H###-Sonnet_RussianTranslation_sense_genre_attribution_DD.MM.YY.md and execute it.` |
 | 4 | Three-taxonomy genre crosswalk + κ (E6) + V5 | ★★ settles "use several" | M | library-science labelling | RussianTranslation + csl-atlas | Opus (labelling judgment) | `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H###-Opus_RussianTranslation_genre_taxonomy_crosswalk_DD.MM.YY.md and execute it.` |
-| 5 | Ghost-headword census (E4) + V3; translation drift (E5) + V4; survival streamgraph (V6) | ★★ | M | — | RussianTranslation | Sonnet | `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H###-Sonnet_RussianTranslation_ghost_drift_survival_DD.MM.YY.md and execute it.` |
+| 5 | Ghost-headword census (E4) + V3; translation drift (E5) + V4; survival streamgraph (V6) | ★★ | M | — | RussianTranslation | Sonnet | **DONE** [H2856](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2856-Sonnet_SanskritLexicography_ghost-headword-census-translation-drift-survival_15.08.26.md) (Sonnet 5, 18-08-2026) — [research/H2856_E4_GHOST_HEADWORD_CENSUS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/H2856_E4_GHOST_HEADWORD_CENSUS.md), [research/H2856_E5_TRANSLATION_DRIFT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/H2856_E5_TRANSLATION_DRIFT.md), [research/H2856_V6_SENSE_SURVIVAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/H2856_V6_SENSE_SURVIVAL.md) |
 | 6 | `samskrte.ru` entry-portrait feature (V7) | ★★★ deliverable-3 | L | #1, #3 | samskrte.ru | Opus | `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H###-Opus_samskrte_entry_portrait_feature_DD.MM.YY.md and execute it.` |
 | 7 | In-context WSD benchmark (E3) + confusion matrix | ★★★ but gated | L | #1, #3, gold sample, 2nd annotator | RussianTranslation | Opus | `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H###-Opus_RussianTranslation_wsd_benchmark_DD.MM.YY.md and execute it.` |
 
