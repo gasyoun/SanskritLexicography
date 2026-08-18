@@ -1,8 +1,8 @@
 # Compound-marker typography across the Sanskrit dictionaries — consolidated census
 
-_Created: 17-08-2026 · Last updated: 17-08-2026_
+_Created: 17-08-2026 · Last updated: 18-08-2026_
 
-Consolidates FINDINGS **§553–§558, §561 and §564** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
+Consolidates FINDINGS **§553–§558, §561, §564–§566** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
 measured over the [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
 digitizations, `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
 in-copyright content, never on GitHub),
@@ -172,6 +172,17 @@ item in this order:**
 3. **Sense-hierarchy depth** — `<div n="…">` nesting profile (PWG's 1〉/a〉 vs
    Apte's numbered senses vs flat dicts); needed before importing any sense
    order into pwg_ru cards (extends §18's citation-density split).
+   **measured → FINDINGS
+   [§566](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2980): `<div>` is not one device — 20 of 44 dicts carry it, but only
+   pw/pwg/bor give `n` a numeric SENSE level (elsewhere `n` is a type tag:
+   mw `to`/`vp`, gra `TS`); depth reaches 3 in PWG (1〉/a〉/α〉), 4 once in PW.
+   The bite: 25.2 % of hierarchical PWG entries open their `<div>` run at
+   `2〉` or higher, because sense 1 is printed in the head line outside any
+   `<div>` (PW regularised this to 99.96 % opening at `1〉`). Ruling: only
+   PWG's own sense order may enter a pwg_ru card, and only via a parser that
+   recovers the head-line sense 1; Apte/Kochergina are barred structurally as
+   well as by §18.**
 4. **Citation apparatus density** — `<ls>` per entry, per dict: which
    dictionaries *prove* senses and which assert; the §18 measurement extended
    from 4 dictionaries to all 44.

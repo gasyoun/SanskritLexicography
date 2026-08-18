@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 17-08-2026 (§565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
+_Created: 26-06-2026 · Last updated: 18-08-2026 (§566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -280,6 +280,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§562. Печатный заголовок карточки ОПРОКИДЫВАЕТ §560: дефект стора pwg_ru — не деградация key1, а инжест ЧУЖОЙ статьи-двойника; настоящие статьи 60+ целевых лемм в сторе отсутствуют](#562-печатный-заголовок-карточки-опрокидывает-560-дефект-стора-pwgru--не-деградация-key1-а-инжест-чужой-статьи-двойника-настоящие-статьи-60-целевых-лемм-в-сторе-отсутствуют) — inherited index row backfilled by H2983 (integrity repair); see the section for the finding.
 - 🟠 [§563. Symmetric akshara word-squares over inflected beginner vocabulary are structurally near-infeasible — word-medial syllables almost never begin words](#563-symmetric-akshara-word-squares-over-inflected-beginner-vocabulary-are-structurally-near-infeasible--word-medial-syllables-almost-never-begin-words) — inherited index row backfilled by H2983 (integrity repair); see the section for the finding.
 - 🟠 [§564. skd/vcp confirm ZERO graphic compound markers — the kośas print the whole apparatus in Sanskrit: SKD spells the vigraha + class term in parentheses, VCP compresses the same grammar into ॰-abbreviations with a numeral for the vibhakti (`6 ta0` = ṣaṣṭhī-tatpuruṣa)](#564-skdvcp-confirm-zero-graphic-compound-markers--the-kośas-print-the-whole-apparatus-in-sanskrit-skd-spells-the-vigraha--class-term-in-parentheses-vcp-compresses-the-same-grammar-into--abbreviations-with-a-numeral-for-the-vibhakti-6-ta0--ṣaṣṭhī-tatpuruṣa) — skd spells the apparatus (parenthesized vigraha + spelled class term, `iti <source>` net, Bengali `iti BAzA` glosses); vcp compresses it into 167 759 ॰-abbreviations (ASCII `0` in the digitization) with a numeral for the vibhakti — `6 ta0` = ṣaṣṭhī-tatpuruṣa, class tags sense-scoped. The kośa ॰ points at the metalanguage, never the object word; Apte's `[za˚ ta˚]` is this device transliterated westward.
+- 🟡 [§565. Prosody marks (breve/macron) appear in 27 dictionaries; 11 show collision risk with seam notation](#565-prosody-marks-brevemacron-appear-in-27-dictionaries-11-show-collision-risk-with-seam-notation) — 27 dicts carry breve, 25 macron; the MW-family em-dash is seam notation, not quantity — separate by context, not by character.
+- 🔴 [§566. `<div n=…>` is not a shared sense-hierarchy device — only PW/PWG/BOR nest senses, and PWG leaves sense 1 outside the markup in a quarter of its hierarchical entries](#566-div-n-is-not-a-shared-sense-hierarchy-device--only-pwpwgbor-nest-senses-and-pwg-leaves-sense-1-outside-the-markup-in-a-quarter-of-its-hierarchical-entries) — 20/44 dicts carry `<div>`, only pw/pwg/bor use a numeric level; 25.2 % of hierarchical PWG entries open at `2〉` because sense 1 sits unmarked in the head line. Only PWG's own order may enter a pwg_ru card.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -7255,3 +7257,158 @@ MW-like systems with both seam notation (em-dash) and prosody marks (breve),
 > grammar abbreviation usage), mw72.txt L1638 + L1643 + L1644 (preface
 > definition), ap90.txt L115 + L139 + L140 (quantity marks in lemma-suffix
 > notation). Verifiability: class A (reproducible from v02 text files via regex).
+
+### §566. `<div n=…>` is not a shared sense-hierarchy device — only PW/PWG/BOR nest senses, and PWG leaves sense 1 outside the markup in a quarter of its hierarchical entries
+
+🔴 **The `<div n="…">` tag carries four unrelated jobs across the CDSL canon, and only three
+dictionaries use it as a sense hierarchy at all. In PWG — the one dictionary whose sense order
+pwg_ru actually translates — 25.2 % of hierarchical entries do not open their `<div>` run at
+`1〉`, because sense 1 is printed in the head line outside any `<div>`.** A splitter that reads
+`<div>` as "sense" therefore drops sense 1 and shifts every later number by one in 4,184 PWG
+entries.
+
+Measured over all 44 [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+digitizations (plus `RussianTranslation/src/koch.jsonl`, local-only, for the Kochergina row of
+the ruling table). Per the §553 method: counted in each dictionary's own markup, never from
+`<k1>`.
+
+#### 1. Two syntactic devices that must never be summed
+
+20 of 44 dictionaries carry a `<div>` at all; the tag splits into an **open** form and a
+**self-closing** form, and they are different animals:
+
+| Form | Dicts | Meaning |
+|---|---|---|
+| **open** `<div n="K">`, no `</div>` | pw · pwg · bor · gra · cae · wil · bop · gst · inm · krm · mci (11) | block opener; `n` is a level **or** a type |
+| **self-closing** `<div n="K"/>` | mw · mw72 · fri · lan · pe · pgn · pui · snp · vei (9) | line break / segment marker — **never** a hierarchy |
+| none at all | the remaining 24 (ap, ap90, md, mwe, sch, shs, skd, vcp, yat, …) | — |
+
+Only **bor** ever emits `</div>` (71,019 open / 71,019 close) — and its levels are types
+(`I` Roman section, `xs`/`xe` quotation start/end), depth 1. So even the one dictionary with
+well-formed nesting does not nest *senses*.
+
+#### 2. `n` is a level in three dictionaries and a type in the other seventeen
+
+Numeric `n` — a real sense level — exists only in **pw, pwg, bor**. Everywhere else `n` is a
+category tag: `to` (11,000 in mw = "to X" root-gloss line), `vp` (3,792 = verb prefix), `TS`
+(34,044 in gra = *Textstellen*), `NI`, `P`, `pfx`, `H`, `Pf`, `W`. Even inside pw/pwg the tag
+is multiplexed across four axes — sense level (numeric), preverb block `p`, morphological
+derivative `m` (Caus./Desid.), etymological note `v` (`Vgl.`), `conj`:
+
+| Dict | `<div>` total | numeric (= sense) | non-numeric (= other axis) | non-numeric share |
+|---|---:|---:|---:|---:|
+| **pwg** | 100,080 | 76,183 | 23,897 (`v` 14,624 · `p` 9,198 · `conj` 67 · 8 stray) | **23.9 %** |
+| **pw** | 131,443 | 120,346 | 11,097 (`p` 8,438 · `m` 2,641 · `o` 18) | **8.4 %** |
+
+Counting `<div>` as "senses" therefore over-counts PWG by nearly a quarter.
+
+#### 3. Depth profile — per-entry maximum numeric level
+
+| Dict | entries | depth 0 | depth 1 | depth 2 | depth 3 | depth 4 |
+|---|---:|---:|---:|---:|---:|---:|
+| **pwg** | 123,366 | 103,629 (84.00 %) | 14,656 (11.88 %) | 4,750 (3.85 %) | 331 (0.27 %) | — |
+| **pw** | 170,556 | 145,295 (85.19 %) | 17,627 (10.34 %) | 6,585 (3.86 %) | 1,048 (0.61 %) | 1 (0.00 %) |
+| **bor** | 24,609 | 14,930 (60.67 %) | 9,679 (39.33 %) | — | — | — |
+
+Branching, over entries that reach the level: pwg L1 mean 2.73 / median 2 / max 244; L2 mean
+4.29 / max 96; L3 mean 4.26 / max 36. pw L1 mean 3.10 / max 423; L2 mean 5.00 / max 211; L3
+mean 3.69 / max 45.
+
+The printed label alphabet is strictly tiered, and the glyph is **U+3009 `〉`** (CJK right angle
+bracket), *not* U+232A — a census that greps the wrong codepoint scores zero:
+
+| level | pw | pwg |
+|---|---|---|
+| 1 | Arabic `1〉 2〉 3〉 …` | Arabic `1〉 …` (max label seen: 25) |
+| 2 | Latin `a〉 b〉 c〉 …` | Latin `a〉 …` |
+| 3 | Greek `α〉 β〉 γ〉 …` | Greek `α〉 …` |
+| 4 | Roman `I〉 II〉` (one entry, [pw.txt:491989](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L491989)) | — |
+
+#### 4. The finding that bites: PWG's unmarked sense 1
+
+| Measure | pwg | pw |
+|---|---:|---:|
+| entries with at least one level-1 `<div>` | 19,455 | 25,260 |
+| first level-1 `<div>` labelled `1〉` | 14,561 (**74.8 %**) | 25,251 (**99.96 %**) |
+| first `<div>` labelled `2〉` or higher | 4,894 (**25.2 %**) | 9 (0.04 %) |
+| …of those, `1〉` present in the head line | 4,184 (85.5 %) | 0 |
+| level-2 `<div>` with no level-1 sibling in the entry | 2,334 / 21,740 (**10.7 %**) | 2 / 38,148 (0.005 %) |
+| first level-1 `<div>` carrying a *level-2* label (`2〉a`, `3〉b`) | 400 entries | 0 |
+
+**PW regularised what PWG left typographic.** Böhtlingk's shorter recension opens essentially
+every hierarchical article at `1〉`; the *Großes Petersburger Wörterbuch* prints sense 1 in the
+head line, unmarked, and starts the `<div>` run at `2〉`. The nine PW exceptions are not the
+same phenomenon at all — they are cross-references *into another article's* numbering
+([pw.txt:8171](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L8171):
+`atIvAda = ativAda` … `— 3〉`, i.e. "sense 3 of *ativāda*"), which is a second, independent trap
+for a sense-splitter.
+
+#### 5. What the flat dictionaries use instead
+
+| Dict | device | coverage | depth |
+|---|---|---:|---:|
+| **ap** (Apte 1957) | `∙²N` sense · `∙³({%a%})` subsense | 25,752 / 90,843 entries (28.3 %); 91,503 + 1,186 markers | 2 |
+| **ap90** (Apte 1890) | `{N}` | 1,461 / 34,882 entries (**4.2 %**); 12,539 markers | 1 |
+| **gra** (Grassmann) | senses numbered `1〉 2〉` **inline in the prose**; `<div n="TS">` indexes the *inflected form* and back-references those numbers | 43,390 `〉` labels; 34,044 TS divs | 1 (inverted axis) |
+| **fri** | `<div n="1"/>` + plain digit — a **language** switch (cs/ru/en), not a sense | 23,013 | 0 |
+| **lan** | `<div n="2"/>{@—N.@}` | 2,031 numbers, max 12 | 1 |
+| **koch** (Kochergina, local-only) | `N)` inside the gloss string | 11,061 / 29,177 entries (37.9 %), mean 2.88, max 21 | **1** — no lettered sublevel exists |
+| **skd · vcp** and 22 others | none | 0 | 0 — sense order is pure text order |
+
+Grassmann is the sharp case: he has the richest sense numbering of the Vedic dictionaries and
+it is *invisible to any `<div>`-based reader*, because his `<div>` axis is form, not sense
+([gra.txt:10–17](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/gra/gra.txt#L10)).
+
+#### 6. Ruling — which sense orders may enter a pwg_ru card
+
+[§18](#18-vedic-citation-density-separates-the-dictionary-traditions) already forbade importing
+Apte's and Kochergina's sense order on *principle* (their order is logical-pedagogical, not
+etymological-genetic — Vedic-citation density 2.3 % and 0 % against PWG's 23.4 %). This pass
+adds the *structural* half, and the two agree:
+
+| Source | May its sense ORDER enter a pwg_ru card? | Why |
+|---|---|---|
+| **PWG** | **Yes — it is the source** | but only through a parser that treats the head line as sense 1 whenever the first `<div n="1">` is labelled `2〉` or higher (4,184 entries), and that ignores the 23.9 % non-numeric `<div>`s |
+| **PW** | **Cross-check only** | same tradition, same `1〉/a〉/α〉` alphabet, but PW is Böhtlingk's *re-ordering* of PWG; using it as the order silently substitutes the shorter recension's judgement |
+| **MW / MWS** | **No** | carries no numeric `<div>` at all (self-closing `to`/`vp`, 1.5 % of entries). Any "MW sense order" is reconstructed from prose punctuation — a derived artefact, and §557's no-source rule applies |
+| **AP / AP90** | **Never** | §18 principle *and* structure: AP's 2-level device reaches 28.3 % of entries, AP90's single level 4.2 % — there is no comparable ordering to import |
+| **GRA** | **No — evidence only** | order is Vedic-attestation-driven and lives in prose; the `<div>` axis is form. Import senses as *witnesses*, never as sequence |
+| **Kochergina** | **Never** | §18 (0 % Vedic) *and* structure: a single flat level, no subsenses at all — it cannot express PWG's `a〉/α〉` tiers |
+| **BOR · FRI · LAN · PE · PUI · CAE · WIL · …** | **Nothing to import** | no sense hierarchy exists in the markup |
+| **SKD · VCP** | **No** | §19/§564 — zero Western markup; sequence is the kośa's śloka order, not semantic |
+
+**Practical residue.** (1) The only importable sense order is PWG's own. (2) Any pwg_ru
+sense-splitter must be tested against an entry whose first `<div n="1">` is labelled `2〉` —
+[pwg.txt:181–184](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L181)
+(`2. a/Msa`, sense 1 `Schulter` in the head line) is the canonical fixture. (3) Never count
+`<div>` to estimate polysemy: 84 % of PWG entries have no numeric `<div>` at all, and a quarter
+of the tags that do exist are preverb/etymology blocks. (4) Grep the label with **U+3009**, not
+U+232A.
+
+**Specimens** (file:line in [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)):
+[pwg.txt:181–184](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L181) entry opens at `2〉` ·
+[pwg.txt:612–615](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L612) `a/kUpAra`, head-line `1〉` then `2〉` then `a〉` ·
+[pwg.txt:1019–1022](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L1019) depth-3 `α〉 β〉 γ〉 δ〉` ·
+[pwg.txt:9](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L9) orphan level-2 `a〉` with no level-1 above it ·
+[pwg.txt:54](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L54) `<div n="v">` = etymological `Vgl.`, not a sense ·
+[pwg.txt:218](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L218) `<div n="p">` = preverb `vi` block ·
+[pw.txt:491989](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L491989) the only depth-4 entry (`I〉/II〉`) ·
+[pw.txt:190](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L190) `<div n="m">` = `Caus.`/`Desid.` derivative ·
+[pw.txt:8171](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L8171) `— 3〉` pointing into *another* article ·
+[mw.txt:366](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt#L366) self-closing `<div n="to"/>` root-gloss line ·
+[fri.txt:15–17](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/fri/fri.txt#L15) `<div n="1"/>` = cs/ru/en language switch ·
+[lan.txt:55](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/lan/lan.txt#L55) `{@—1.@}` bold sense number ·
+[ap.txt:8](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap/ap.txt#L8) `∙²1` and
+[ap.txt:31](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap/ap.txt#L31) `∙³({%a%})` ·
+[ap90.txt:207](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90.txt#L207) `{1}` ·
+[bor.txt:88](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/bor/bor.txt#L88) the only real `</div></div>` nesting ·
+[gra.txt:12–13](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/gra/gra.txt#L12) `<div n="TS">` back-referencing inline sense numbers.
+
+> Opus 5 (`claude-opus-5`) · 18-08-2026 · H2980. Census scripts (throwaway, session
+> scratchpad): per-dict `<div>` inventory splitting `<div n="K">` from `<div n="K"/>`;
+> per-entry max numeric level between `<L>` and `<LEND>`; first-level-1-label extraction using
+> the U+3009 `〉` glyph; orphan-level detection; `∙²`/`∙³`, `{N}` and `N)` device counts.
+> Recipe: regex over `csl-orig/v02/<dict>/<dict>.txt` — `<div n="([^"]*)"/?>`, entry frames on
+> `^<L>` / `^<LEND>`, label as the 1–4 non-space characters before U+3009 immediately after the
+> opening tag with a leading U+2014 stripped. Verifiability: class A (fully reproducible from
+> the v02 text files; the koch row needs the local-only `koch.jsonl`).
