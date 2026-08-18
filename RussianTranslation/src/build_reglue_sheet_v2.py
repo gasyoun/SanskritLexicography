@@ -403,6 +403,7 @@ def build():
     items = []
     totals = collections.Counter()
     nl = collections.Counter()
+    per_card_klass = {}
     bodies_before, bodies_after, raw_before, raw_after = [], [], [], []
     for key1, nlayers in ORDER:
         p = os.path.join(REGLUE_DIR, key1 + ".json")
@@ -420,6 +421,7 @@ def build():
         compact, _, _, _, _ = render_card(key1, obj, COMPACT, None)
         totals += ls_stats
         totals += klass_stats
+        per_card_klass[key1] = klass_stats
 
         bodies_after.extend(card_bodies(obj))
         raw_after.append(raw)
@@ -454,6 +456,21 @@ def build():
             ],
         })
     digests = digest_guard(bodies_before, bodies_after, raw_before, raw_after)
+    # U7 (H2846) — MG: "typology always needs to be supported by statistics".
+    # totals is only complete once every card has been walked, so the
+    # population share (of ALL supplements across the 15-card sheet) is
+    # attached in a second pass, per card, next to its own count.
+    grand_total = sum(totals[k] for k in CLASS_LABEL)
+    for it in items:
+        key1 = it["id"].split("::", 1)[1]
+        kl = per_card_klass[key1]
+        typology = [
+            {"label": CLASS_LABEL[k], "n": kl[k],
+             "share": (totals[k] / grand_total) if grand_total else 0.0}
+            for k in ("adds", "restates", "cancels") if kl[k]
+        ]
+        if typology:
+            it["typology"] = typology
     return items, totals, nl, digests
 
 
