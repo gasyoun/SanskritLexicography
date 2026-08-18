@@ -70,7 +70,7 @@ Run: python src/build_reglue_sheet_v2.py
 """
 import sys, os, io, json, html, re, collections
 
-from csl_pyutil import render_review_sheet, mark_cyrillic, anatomy
+from csl_pyutil import render_review_sheet, mark_cyrillic, anatomy, RU_UI_STRINGS
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href, DA_RATING
 from sheet_screening import screening_block
@@ -100,30 +100,50 @@ ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5)
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
          ("viS", 3), ("siD", 3)]
 
+# H2847: «5-layer» was a bare, undefined badge — name the Petersburg strata it
+# counts (PWG · PW · NWS · SCH · Nachträge-to-Nachträge) directly in the badge
+# text, since badges render as HTML-escaped plain text with no title/tooltip.
+STRATA_NAMES = ["PWG", "PW", "NWS", "SCH", "Nachträge"]
+
+
+def _sloi(n):
+    """Russian noun agreement for 'layer(s)' — 2-4 -> слоя, else слоёв."""
+    return "слоя" if 2 <= n % 10 <= 4 and not (11 <= n % 100 <= 14) else "слоёв"
+
+
+def layer_badge(n):
+    names = " · ".join(STRATA_NAMES[:n])
+    return "%d %s: %s" % (n, _sloi(n), names)
+
 # --------------------------------------------------------------------- typology
 # The three axes of ADDENDA_TYPOLOGY.md §1, collapsed to what a reviewer must
 # see on the card: does this supplement ADD meaning, merely RESTATE it more
 # briefly, or CANCEL/CORRECT what PWG said?
 #   subtype -> (op, direction, class, one-line gloss)
 TYPOLOGY = {
-    "nws_at_sense":     ("add",      "additive",  "adds",     "NWS adds meaning at this PWG sense"),
-    "sch_star":         ("add",      "additive",  "adds",     "Schmidt adds a new sense (printed *)"),
-    "derived_sense":    ("add",      "additive",  "adds",     "preverb / causative / desiderative sub-sense"),
-    "foreign_fragment": ("add",      "additive",  "adds",     "supplement partly in EN / FR / LA, shown with its RU"),
-    "a2a":              ("relocate", "additive",  "adds",     "Nachträge-to-Nachträge — a supplement to a supplement"),
-    "restate":          ("restate",  "abridging", "restates", "PW says the same thing more briefly — NOT a new meaning"),
-    "pw_correct":       ("correct",  "abridging", "cancels",  "PW changes a value (gender, form, reading) — overrides PWG"),
-    "pw_cancels":       ("delete",   "abridging", "cancels",  "PW withdraws PWG material"),
+    "nws_at_sense":     ("add",      "additive",  "adds",     "NWS добавляет значение к этому значению PWG"),
+    "sch_star":         ("add",      "additive",  "adds",     "Шмидт добавляет новое значение (в печати отмечено *)"),
+    "derived_sense":    ("add",      "additive",  "adds",     "подзначение: превербное / каузативное / дезидеративное"),
+    "foreign_fragment": ("add",      "additive",  "adds",     "дополнение частично на EN / FR / LA, показано вместе с RU"),
+    "a2a":              ("relocate", "additive",  "adds",     "Nachträge-to-Nachträge — дополнение к дополнению"),
+    "restate":          ("restate",  "abridging", "restates", "PW говорит то же самое короче — НЕ новое значение"),
+    "pw_correct":       ("correct",  "abridging", "cancels",  "PW меняет значение параметра (род, форма, чтение) — отменяет PWG"),
+    "pw_cancels":       ("delete",   "abridging", "cancels",  "PW снимает материал PWG"),
     # H2880 wave 2 — an edit carried inside the PWG skeleton itself.
-    "pwg_internal_correction": ("amend", "internal", "cancels", "Nachtrag / addendum inside PWG amending this sense — not a sense of its own"),
+    "pwg_internal_correction": ("amend", "internal", "cancels", "Nachtrag / добавление внутри PWG, исправляющее это значение — не самостоятельное значение"),
     # H2881 wave 3 — Schmidt does not only add: `lies` / `streiche` correct and
     # withdraw printed PWG. Direction stays *additive* (ADDENDA_TYPOLOGY §1 axis
     # C puts sch in the additive set); it is the operation that cancels.
-    "sch_correct": ("correct", "additive", "cancels", "Schmidt emends printed PWG text (lies / Druckfehler) — overrides PWG"),
-    "sch_cancel":  ("delete",  "additive", "cancels", "Schmidt withdraws printed PWG material (streiche / tilge)"),
+    "sch_correct": ("correct", "additive", "cancels", "Шмидт исправляет напечатанный текст PWG (lies / Druckfehler) — отменяет PWG"),
+    "sch_cancel":  ("delete",  "additive", "cancels", "Шмидт снимает напечатанный материал PWG (streiche / tilge)"),
 }
-CLASS_LABEL = {"adds": "＋ added meaning", "restates": "≈ restatement",
-               "cancels": "✕ cancels / corrects"}
+CLASS_LABEL = {"adds": "＋ добавляет значение", "restates": "≈ переформулировка",
+               "cancels": "✕ отменяет / исправляет"}
+#: the `op` half of each TYPOLOGY tuple, for display — the value itself stays
+#: an ASCII lookup key (edition_rel.SUBTYPES / ADDENDA_TYPOLOGY.md vocabulary),
+#: only the chip text a reviewer reads is Russian.
+OP_LABEL = {"add": "добавляет", "restate": "переформулирует", "correct": "исправляет",
+            "delete": "удаляет", "relocate": "переносит", "amend": "правит", "?": "?"}
 
 # --------------------------------------------------------------------- gloss chains
 # NWS/SCH separate sense clusters with a full stop. Splitting on it is safe only
@@ -278,9 +298,9 @@ def render_body(raw, mode=EXPANDED, nl=None):
 #: supplement is NOT placed, so a `restate` chip can never be read on its own as
 #: a claim about some PWG sense (acceptance criterion A1).
 PLACEMENT_REASON_LABEL = {
-    "no_target_marker": "no target given",
-    "out_of_range": "sense number above PWG's range",
-    "not_found": "sense not found",
+    "no_target_marker": "цель не указана",
+    "out_of_range": "номер значения вне диапазона PWG",
+    "not_found": "значение не найдено",
 }
 
 
@@ -289,19 +309,23 @@ def _supp_head(sup):
     in compact mode votes on the same classification they see in expanded."""
     subtype = sup.get("subtype", "?")
     op, direction, klass, gloss = TYPOLOGY.get(
-        subtype, (sup.get("op", "?"), "?", "restates", "unclassified subtype"))
-    lang = ' <span class="tchip t-meta">‹%s›</span>' % esc(sup["lang"]) if sup.get("lang") else ""
-    cancels = (' <span class="tchip t-cancels">cancels PWG</span>'
+        subtype, (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
+    lang = (' <span class="tchip t-meta">‹<code>%s</code>›</span>' % esc(sup["lang"])
+             if sup.get("lang") else "")
+    cancels = (' <span class="tchip t-cancels">отменяет PWG</span>'
                if sup.get("cancels") else "")
     why = PLACEMENT_REASON_LABEL.get(sup.get("placement_reason"))
-    unplaced = (' <span class="tchip t-meta" title="the typology label says what '
-                'kind of supplement this is; it does not assert a target sense">'
-                'not placed: %s</span>' % esc(why)) if why else ""
+    unplaced = (' <span class="tchip t-meta" title="метка типологии говорит, к какому '
+                'виду относится дополнение; она не утверждает целевое значение">'
+                'не привязано: %s</span>' % esc(why)) if why else ""
+    # `subtype` stays its ASCII lookup key, wrapped as an identifier — it is
+    # the ADDENDA_TYPOLOGY.md/edition_rel.SUBTYPES vocabulary a reviewer
+    # quotes verbatim in a reject note; `op` is plain display text, Russian.
     head = ('<span class="tchip t-%s" title="%s">%s</span>'
-            '<span class="tchip t-meta">%s</span>'
-            '<span class="tchip t-meta">%s · %s</span>%s%s%s'
+            '<span class="tchip t-meta"><code>%s</code></span>'
+            '<span class="tchip t-meta"><code>%s</code> · %s</span>%s%s%s'
             % (klass, esc(gloss), esc(CLASS_LABEL[klass]), esc(subtype),
-               esc(sup.get("badge", "?")), esc(op), lang, cancels, unplaced))
+               esc(sup.get("badge", "?")), esc(OP_LABEL.get(op, op)), lang, cancels, unplaced))
     return head, klass
 
 
@@ -326,7 +350,7 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
     n_placed = n_new = 0
     compact = mode == COMPACT
     for hom in obj["homonyms"]:
-        chunks.append("<h4>homonym %s</h4>" % esc(hom["h"]))
+        chunks.append("<h4>омоним %s</h4>" % esc(hom["h"]))
         for s in hom["senses"]:
             pwg_body, st = render_body(s.get("pwg_ru", ""), mode, nl)
             ls_stats += st
@@ -334,7 +358,7 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
                 block = ['<span class="csense"><span class="cmark">%s)</span>%s'
                          % (esc(s["sense"]), pwg_body)]
             else:
-                block = ['<div class="sense"><div class="hd">PWG sense %s</div>%s'
+                block = ['<div class="sense"><div class="hd">значение PWG %s</div>%s'
                          % (esc(s["sense"]), pwg_body)]
             for sup in s["supplements"]:
                 h, st2, kl = render_supplement(sup, mode, nl)
@@ -348,7 +372,7 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
             chunks.append('<span class="csense"><span class="cmark">＋</span>'
                           if compact else
                           '<div class="sense"><div class="hd">'
-                          '＋ new senses (no PWG sense to attach to)</div>')
+                          '＋ новые значения (нет значения PWG для привязки)</div>')
             for sup in hom["new_senses"]:
                 h, st2, kl = render_supplement(sup, mode, nl)
                 ls_stats += st2
@@ -358,11 +382,11 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
             chunks.append("</span>" if compact else "</div>")
     body = ('<div class="cflow">%s</div>' % "".join(chunks)) if compact \
         else "".join(chunks)
-    cov = ('<div class="cov">citations: <b>%d</b> linked to Cologne · '
-           '<b>%d</b> ⚑ mintable gap (locus, no target) · <b>%d</b> ∅ bare '
-           'abbreviation (nothing to link)<br>supplements: <b>%d</b> placed at a PWG '
-           'sense · <b>%d</b> new &nbsp;|&nbsp; <b>%d</b> add meaning · <b>%d</b> '
-           'restate · <b>%d</b> cancel/correct</div>'
+    cov = ('<div class="cov">цитаты: <b>%d</b> связаны с Cologne · '
+           '<b>%d</b> ⚑ без цели у резолвера (локус есть, привязки нет) · <b>%d</b> ∅ '
+           'голая аббревиатура (привязывать нечего)<br>дополнения: <b>%d</b> привязаны '
+           'к значению PWG · <b>%d</b> новых &nbsp;|&nbsp; <b>%d</b> добавляют значение '
+           '· <b>%d</b> переформулируют · <b>%d</b> отменяют/исправляют</div>'
            % (ls_stats[HIT], ls_stats[MINTABLE], ls_stats[NO_LOCUS], n_placed, n_new,
               klass_stats["adds"], klass_stats["restates"], klass_stats["cancels"]))
     return cov + body, ls_stats, klass_stats, n_placed, n_new
@@ -426,11 +450,11 @@ def build():
         bodies_after.extend(card_bodies(obj))
         raw_after.append(raw)
 
-        badges = ["%d-layer" % nlayers]
+        badges = [layer_badge(nlayers)]
         if ls_stats[MINTABLE]:
-            badges.append("%d mintable citation gaps" % ls_stats[MINTABLE])
+            badges.append("%d цитат без цели у резолвера" % ls_stats[MINTABLE])
         if klass_stats["cancels"]:
-            badges.append("%d cancel/correct" % klass_stats["cancels"])
+            badges.append("%d отмен/исправлений" % klass_stats["cancels"])
         items.append({
             "id": "reglue2::%s" % key1,
             "filt": "%dL" % nlayers,
@@ -438,20 +462,22 @@ def build():
             "title_href": pwg_entry_href(key1),
             "badges": badges,
             "question": (
-                'Is the <b>glue typology and placement</b> right on this card? '
-                '<span class="muted">(green ＋ = the supplement really adds meaning · '
-                'amber ≈ = PW only restates PWG more briefly · red ✕ = it cancels or '
-                'corrects PWG. Approve = the chips and the sense each supplement sits '
-                'at are correct; Reject = say which supplement is mis-typed or '
-                'mis-placed. Rate 1–5 below for overall well-formedness.)</span>'),
-            "note_placeholder": "if reject: which supplement, what the right subtype / sense is",
+                'Правильны ли <b>типология склейки и её привязка</b> на этой карточке? '
+                '<span class="muted">(зелёный ＋ = дополнение действительно добавляет '
+                'значение · жёлтый ≈ = PW лишь короче переформулирует PWG · красный ✕ = '
+                'отменяет или исправляет PWG. «Типология верна» = метки и значение, к '
+                'которому привязано каждое дополнение, верны; «Неверно '
+                'типизировано/привязано» = укажите в заметке, какое дополнение '
+                'неверно типизировано или неверно привязано. Ниже оцените 1–5 общую '
+                'сформированность карточки.)</span>'),
+            "note_placeholder": "если отклоняете: какое дополнение, какой правильный подтип/значение",
             "panels": [
-                ("1 · re-glued card — print view, typology chips, linked citations "
-                 "(«компактно» вверху страницы переключает на печатную колонку)",
+                ("1 · склеенная карточка — печатный вид, метки типологии, связанные "
+                 "цитаты («компактно» вверху страницы переключает на печатную колонку)",
                  '<div class="render-expanded">%s</div>'
                  '<div class="render-compact">%s</div>' % (expanded, compact)),
-                ("2 · the same card as raw store markup — colours = parts of the "
-                 "entry; quote from here in a note",
+                ("2 · та же карточка как разметка store — цвета = части статьи; "
+                 "цитируйте отсюда в заметке",
                  anatomy.highlight(raw)),
             ],
         })
@@ -498,31 +524,52 @@ def main():
         save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v3.decisions.json")
     config.update({
         "sheet_id": sheet_id,
-        "title": "H180 · content-aware re-glue spot-check (v3)",
-        "subtitle": ("15 pilot cards with the glue typology surfaced, Cologne "
-                     "ls-links joined, NWS gloss chains split for reading, and "
-                     "the printed column's line-wraps collapsed" + MODE_SWITCH),
-        "footer": ("Approve = typology chips and placement are right · Reject = "
-                   "something is mis-typed or mis-placed (say what in the note) · "
-                   "Defer = unsure. The 1–5 rating is overall well-formedness. "
-                   "⚑ marks a citation with a real locus that no resolver pattern "
-                   "covers — the mintable gap; ∅ marks a bare abbreviation, which "
-                   "has nothing to link to.<br>"
+        "title": "H180 · выборочная проверка склейки с учётом содержания (v3)",
+        "subtitle": ("15 пилотных карточек с показанной типологией склейки, "
+                     "подключёнными ссылками Cologne, разбитыми для чтения "
+                     "цепочками значений NWS и свёрнутыми переносами строк "
+                     "печатной колонки" + MODE_SWITCH),
+        "footer": ("«Типология верна» = метки и привязка каждого дополнения верны · "
+                   "«Неверно типизировано/привязано» = что-то определено или "
+                   "привязано неверно (укажите что в заметке) · «Не уверен(а)» = "
+                   "сомнение. Оценка 1–5 — общая сформированность карточки. "
+                   "<b>«N слоёв»</b> — сколько петербургских пластов даёт материал "
+                   "для этого заглавного слова (PWG · PW · NWS · SCH · Nachträge). "
+                   "⚑ отмечает цитату с реальным локусом, который не покрывает ни "
+                   "один шаблон резолвера — счётчик локальный, для этой карточки; "
+                   "по всему корпусу резолвером машинно достижимо лишь 60 из 5 257 "
+                   "таких случаев, остальные 5 197 цитируют издания, которые "
+                   "Cologne не сканировал (<a href=\"https://github.com/gasyoun/"
+                   "Uprava/blob/main/handoffs/archive/H2835-Opus_SanskritLexicography_"
+                   "ls-citation-gap-mine_15.08.26.md\">H2835</a>) — это не "
+                   "накопившийся объём работы для агента, а измеренный потолок "
+                   "корпуса; ∅ отмечает голую аббревиатуру, привязывать которую "
+                   "нечего.<br>"
                    "<b>Компактно / развёрнуто</b> — один и тот же материал в двух "
                    "видах: развёрнутый (etext, каждое значение с новой строки) и "
                    "компактный (печатная колонка, значения идут подряд, дополнения "
                    "стоят сразу за своим значением). Перенос строки из csl-orig — "
                    "это перенос печатной колонки, а не структура: %d таких переносов "
                    "склеены на этих карточках, %d структурных границ сохранены. "
-                   "Текст store не менялся — SHA-256 значений %s, сырой панели %s."
+                   "Текст store не менялся — SHA-256 значений <code>%s</code>, "
+                   "сырой панели <code>%s</code>."
                    "<br>" % (nl["collapsed"], nl["kept"],
                              body_hash[:16], raw_hash[:16]) + g5_legend()),
-        "approve_label": "Typology right",
-        "reject_label": "Mis-typed / mis-placed",
-        "filters": [("5L", "5-layer"), ("4L", "4-layer"), ("3L", "3-layer")],
+        "approve_label": "Типология верна",
+        "reject_label": "Неверно типизировано/привязано",
+        "filters": [("5L", "5 слоёв"), ("4L", "4 слоя"), ("3L", "3 слоя")],
         "generated": GENERATED,
         "rating": DA_RATING,
         "extra_css": EXTRA_CSS,
+        # H2847: Russian-only reviewer chrome. RU_UI_STRINGS covers everything
+        # except `save_banner` (its default bakes in this sheet's own
+        # sheet_id/save_as, so a fixed preset string would drop them).
+        "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'
+            % (esc(sheet_id), esc(config["save_as"]), esc(sheet_id)))),
     })
     sc = screening_block(
         deterministic=totals[HIT] + totals[NO_LOCUS], lookup=totals[MINTABLE],
