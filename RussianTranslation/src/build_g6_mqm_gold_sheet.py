@@ -83,7 +83,7 @@ import os
 import re
 import sys
 
-from csl_pyutil import mark_cyrillic, render_review_sheet
+from csl_pyutil import RU_UI_STRINGS, mark_cyrillic, render_review_sheet
 from packset_output import emit_sheet
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config
@@ -348,6 +348,11 @@ def main():
     # device endpoints cannot be read from a static page at all (FINDINGS §477).
     # Leave `branch` unset: the contents API then writes to the inbox repo's own
     # default branch, which is `master` -- guessing `main` was the v0.17.0 bug.
+    # This instrument is Russian end to end -- title, subtitle, footer, both vote
+    # labels, every reject label. The emitter's own chrome was still English, and
+    # V17 has just made the most-read element on the page (the progress bar and
+    # the whole-sheet ETA) part of that chrome. One line fixes all of it.
+    config["ui_strings"] = RU_UI_STRINGS
     if args.github_inbox:
         config["github_inbox"] = {
             "repo": "gasyoun/vote-inbox",
