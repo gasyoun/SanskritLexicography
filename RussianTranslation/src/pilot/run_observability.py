@@ -45,6 +45,21 @@ ALLOWED = {
     # bounded: the pattern is a <=40-char slice matched by a fixed regex, the path a basename —
     # the envelope body itself never enters the event row.
     'err_pattern', 'raw_envelope_path',
+
+    # H2647: the BOX's state at the moment the reading was taken, so a row can tell its
+    # SUBJECT (the account and route) from its ENVIRONMENT (this machine). Without these a
+    # probe that died of local memory starvation is indistinguishable from one refused by
+    # the provider -- on 13-08-2026 a c1 probe died in 7 754 ms on a JavaScriptCore
+    # MemoryExhaustion assert at 97 % commit charge and was read as ACCOUNT CAPACITY.
+    # Bounded by construction: eight scalars only, produced solely by host_state.capture()
+    # (which pins this exact set in its own selftest) -- six small integers, one percentage,
+    # two process counts. No hostname, no path, no user, no payload; nothing here can carry
+    # provider text, so the leak this allowlist exists to prevent is not reachable through
+    # them. Dropped by append_event when None, so a row from a host that cannot be measured
+    # (or a non-Windows box) is byte-for-byte what it was before.
+    'host_total_phys_mb', 'host_avail_phys_mb', 'host_commit_limit_mb',
+    'host_commit_used_mb', 'host_commit_pct', 'host_memory_load_pct',
+    'host_proc_node', 'host_proc_python',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but
