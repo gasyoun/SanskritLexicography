@@ -1143,13 +1143,13 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "012fe493dccb6d4ec104241b2c83e0926a60d0bab370f3732075786beb9bfa1a",
       "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
-      "src/pilot/max_account_orchestrator.py": "a34a7864566570acbb0662c948d712f454c6ab8614591314c132d8af01fa2ef5",
+      "src/pilot/max_account_orchestrator.py": "f0fefdd3048ba0757b356d156a96fe490bede11a1c0609d92d6002949668b3a4",
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
       "src/pilot/headless_worker_selftest.py": "f114ab338648ac7b2472c86d168d54e3a5b984977e07cebb790ba31c792c51e6",
-      "src/pilot/max_account_orchestrator_selftest.py": "585be93bce0a85292bd62ab4295424c5de9ece1b65159595d5bae354c5925d3a",
+      "src/pilot/max_account_orchestrator_selftest.py": "54f6b6959fca276f9b2735063cccc243a92e7c079154faefa8d586708d52eef6",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "cb010a7452d1a68fb3a793c3d0ea77d1784eb158d985488cfd09177a1215515d",
-      "src/pilot/run_observability.py": "ec103ba3be97600ccb8f731146ece40ab620a399aec2ab58bb5baa877db1d95a",
+      "src/pilot/run_observability.py": "ca612d3aa9988d7e7692f25c82978e11c3ee4d3eb8958309f2d220438305c6dc",
       "src/pilot/run_observability_selftest.py": "75bc960a35080a0c84ca9b5ee62b63134a9e0bde334c5531d564b13019187b60",
       "src/pilot/proc_tree.py": "f187a0e11cf3c597a353e0dc6a3387c204474f6086d012e402c17e3721808b96"
     }
@@ -1596,7 +1596,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "681012c1d39d5cf6c774a56f1dfad319c451f62e43039c1bb8ab64487c563520",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "a34a7864566570acbb0662c948d712f454c6ab8614591314c132d8af01fa2ef5"
+      "src/pilot/max_account_orchestrator.py": "f0fefdd3048ba0757b356d156a96fe490bede11a1c0609d92d6002949668b3a4"
     }
   },
   {
@@ -1757,7 +1757,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "681012c1d39d5cf6c774a56f1dfad319c451f62e43039c1bb8ab64487c563520",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "a34a7864566570acbb0662c948d712f454c6ab8614591314c132d8af01fa2ef5",
+      "src/pilot/max_account_orchestrator.py": "f0fefdd3048ba0757b356d156a96fe490bede11a1c0609d92d6002949668b3a4",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",

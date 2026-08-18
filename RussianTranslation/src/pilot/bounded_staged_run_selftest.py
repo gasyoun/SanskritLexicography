@@ -1110,11 +1110,28 @@ def test_r_cohort_offline_serial_equivalence(td):
     assert results[1]['summary']['peak_concurrency'] == 1, results[1]['summary']
     assert results[2]['summary']['peak_concurrency'] >= 2, results[2]['summary']
     assert results[3]['summary']['peak_concurrency'] >= 2, results[3]['summary']
-    # measurably lower wall time under delayed fake workers (serial ~0.60s floor)
-    assert results[2]['elapsed'] < results[1]['elapsed'] - 0.10, (
-        'width 2 not faster: serial %.3fs vs %.3fs' % (results[1]['elapsed'], results[2]['elapsed']))
-    assert results[3]['elapsed'] < results[1]['elapsed'] - 0.15, (
-        'width 3 not faster: serial %.3fs vs %.3fs' % (results[1]['elapsed'], results[3]['elapsed']))
+    # Wall-clock deltas are OPT-IN (H2889, #1806). They asserted that width 2 beat serial by
+    # >=0.10 s and width 3 by >=0.15 s under delayed fake workers — true on an idle box, a
+    # coin flip on a contended runner. It failed CI at `width 2 not faster: serial 0.619s vs
+    # 0.527s`: width 2 WAS faster, by 92 ms, and the threshold wanted 100. Eight milliseconds
+    # of runner contention decided a merge gate.
+    #
+    # Nothing is lost by gating them, because the invariants this block exists for are
+    # asserted deterministically just above: `peak_concurrency` proves the widths really ran
+    # concurrently, and byte-identical `store_bytes` proves concurrency changed no output. A
+    # timing delta adds no coverage over those two and subtracts reliability — and a step
+    # that goes red for reasons unrelated to the change is how a lane learns to merge past
+    # red, which this repo has already done (three commits onto a red master, 18-08-2026).
+    if os.environ.get('PWG_ASSERT_WALLCLOCK') == '1':
+        assert results[2]['elapsed'] < results[1]['elapsed'] - 0.10, (
+            'width 2 not faster: serial %.3fs vs %.3fs' % (results[1]['elapsed'], results[2]['elapsed']))
+        assert results[3]['elapsed'] < results[1]['elapsed'] - 0.15, (
+            'width 3 not faster: serial %.3fs vs %.3fs' % (results[1]['elapsed'], results[3]['elapsed']))
+    else:
+        print('  wall-clock speedup assertions skipped (PWG_ASSERT_WALLCLOCK=1 to enable); '
+              'concurrency + byte-identity asserted unconditionally: serial %.3fs, '
+              'w2 %.3fs, w3 %.3fs'
+              % (results[1]['elapsed'], results[2]['elapsed'], results[3]['elapsed']))
 
     # a profile-less window is refused LOUDLY — the one-job-per-profile invariant is
     # meaningless without a profile binding, so offline fixtures must declare one.
