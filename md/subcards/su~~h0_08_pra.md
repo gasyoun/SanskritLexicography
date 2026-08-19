@@ -30,5 +30,5 @@
 [NIDĀNAS. 5,11,3] bei [WEBER, Nakṣ. 2,284.]
 
 - **RU:** — ср. 1. *prasava, prasut* . — caus. непрерывно заставлять жать (выжимать): *prasāvayet*
-[NIDĀNAS. 5,11,3] bei [WEBER, Nakṣ. 2,284.]
+[NIDĀNAS. 5,11,3] у [WEBER, Nakṣ. 2,284.]
   <sub>attested</sub>

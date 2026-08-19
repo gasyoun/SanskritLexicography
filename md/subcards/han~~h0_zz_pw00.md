@@ -5,7 +5,7 @@
 
 **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [mit **2.** *hā* verwechselt] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* st. *ghnanti* [SAṂSK. K. 95,a,2]. *hana* st. *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
 
-- **RU:** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. ed. Bomb. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* вместо *ghnanti* [SAṂSK. K. 95,a,2]. *hana* вместо *jahi* [129,a,7]. *vyapahanat* [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
+- **RU:** **1.** √*han*, *hanti* (*jahi* Imperat., *jahīhi* [смешивается с **2.** *hā*] [R. Бомбейская ред. 4,24,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,24,33)), *hananti* вместо *ghnanti* [SAṂSK. K. 95,a,2]. *hana* вместо *jahi* [129,a,7]. *vyapahanat* [R. Бомбейская ред. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18). *hate* (3. Sg. Med.), *jighnate*, *jighnat* Partic. [SV.]
   <sub>attested</sub>
 
 **1)** — 1〉 schlagen (mit Acc.), — auf (Loc.), hämmern, die Trommel —, einen Spielball —, eine Flüssigkeit schlagen (klopfen).
@@ -95,12 +95,12 @@
 
 **14d)** — d〉 getroffen, — von (Instr. oder im Comp. vorangehend).
 
-- **RU:** — d〉 пораженный, — чем-л. (Instr. или в Comp. предшествующем).
+- **RU:** — d〉 пораженный, — чем-л. (Ins. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **14e)** — e〉 getroffen von, so v. a. heimgesucht —, gequält —, mitgenommen von, zu kämpfen habend mit (Instr. oder im Comp. vorangehend).
 
-- **RU:** — e〉 пораженный чем-л., а именно преим. постигнутый —, мучимый —, страдающий от, вынужденный бороться с (Instr. или в Comp. предшествующем).
+- **RU:** — e〉 пораженный чем-л., а именно преим. постигнутый —, мучимый —, страдающий от, вынужденный бороться с (Ins. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **14f)** — f〉 getödtet, erschlagen.
@@ -325,7 +325,7 @@
 
 **prefix-pra-1)** — 1〉 anschlagen [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18).
 
-- **RU:** — 1〉 ударять, задевать [R. ed. Bomb. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18).
+- **RU:** — 1〉 ударять, задевать [R. Бомбейская ред. 3,51,18](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,51,18).
   <sub>attested</sub>
 
 **prefix-pra-2)** — 2〉 wehren, verhindern.
@@ -360,7 +360,7 @@
 
 **prefix-abhi-4)** — 4〉 Pass. befallen —, heimgesucht werden von (Instr.).
 
-- **RU:** — 4〉 Pass. быть постигнутым —, страдать от (Instr.).
+- **RU:** — 4〉 Pass. быть постигнутым —, страдать от (Ins.).
   <sub>attested</sub>
 
 **prefix-abhi-5-head)** — 5〉 *abhihata*
@@ -400,7 +400,7 @@
 
 **prefix-abhi-5g)** — g〉 getroffen von, so v. a. heimgesucht von, behaftet mit (Instr. oder im Comp. vorangehend). Caus. s. u. *ghātay*.
 
-- **RU:** — g〉 пораженный чем-л., а именно преим. постигнутый, одержимый (Instr. или в Comp. предшествующем). Caus. см. *ghātay*.
+- **RU:** — g〉 пораженный чем-л., а именно преим. постигнутый, одержимый (Ins. или в Comp. предшествующем). Caus. см. *ghātay*.
   <sub>attested</sub>
 
 **prefix-abhi-des)** — Desid. treffen —, niederschlagen wollen.
@@ -410,7 +410,7 @@
 
 **prefix-sam-head)** — Mit *samabhi* schlagen auf (Acc.), treffen [R. ed. Bomb. 4,19,20](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,19,20). *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
 
-- **RU:** — С *samabhi* бить по (Acc.), поражать [R. ed. Bomb. 4,19,20](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,19,20). *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
+- **RU:** — С *samabhi* бить по (Acc.), поражать [R. Бомбейская ред. 4,19,20](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,19,20). *hṛdi samabhihanyamānaḥ* [JĀTAKAM. 26].
   <sub>attested</sub>
 
 **prefix-ava-head)** — Mit *ava*
@@ -428,9 +428,9 @@
 - **RU:** — 2〉 поражать сверху вниз.
   <sub>attested</sub>
 
-**prefix-ava-3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
+**prefix-ava-3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S018) = ≈крит. 04,2.15a. liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
 
-- **RU:** — 3〉 бить по или о (Acc.). Вм. *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30). читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. ср. u. *abhini* 2〉.
+- **RU:** — 3〉 бить по или о (Acc.). Вм. *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S018) = ≈крит. 04,2.15a. читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. ср. u. *abhini* 2〉.
   <sub>attested</sub>
 
 **prefix-ava-4)** — 4〉 zurückschlagen, — stossen; verscheuchen, abwehren.

@@ -5,7 +5,7 @@
 
 **1)** — 1〉 zusammenkommen, zusammentreffen, sich verbinden, zusammenkommen bei (Loc.), zusammenkommen —, zusammenstossen mit (*saha, sārdham* oder Instr. allein), sich geschlechtlich verbinden mit (Instr.); von Sternen so v. a. in eine solche Stellung kommen, dass der eine Stern den andern verdeckt. *saṃgamaṃ parasparam* eine Verbindung unter einander eingehen. *samāgata* zusammengekommen, versammelt, vereint, — mit (Instr.), zusammengestossen mit (Instr.), in Conjunction stehend mit (Instr.).
 
-- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Instr. одно), вступать в половую связь с (Instr.); о звездах так преим. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединенный — с (Instr.), столкнувшийся с (Instr.), находящийся в соединении с (Instr.).
+- **RU:** — 1) сходиться, встречаться, соединяться, сходиться у (Loc.), сходиться —, сталкиваться с (*saha, sārdham* или Ins. одно), вступать в половую связь с (Ins.); о звездах так преим. приходить в такое положение, что одна звезда закрывает другую. *saṃgamaṃ parasparam* вступать во взаимную связь. *samāgata* сошедшийся, собравшийся, объединенный — с (Ins.), столкнувшийся с (Ins.), находящийся в соединении с (Ins.).
   <sub>attested</sub>
 
 **2)** — 2〉 herbeikommen, kommen, kommen zu; mit Acc. oder ([179,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?179)).
@@ -25,7 +25,7 @@
 
 **caus)** — Caus. Jmd (Acc.) zusammenführen —, zusammenbringen mit (Instr. oder Loc.).
 
-- **RU:** — Caus. кого-л. (Acc.) сводить —, соединять с (Instr. или Loc.).
+- **RU:** — Caus. кого-л. (Acc.) сводить —, соединять с (Ins. или Loc.).
   <sub>attested</sub>
 
 **sam-1)** — Mit *abhisamā*
@@ -162,9 +162,9 @@
 - **RU:** — 4) inire (feminam).
   <sub>attested</sub>
 
-**prati-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40). [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
+**prati-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40) = [≈Вульг. 13.1.57](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S057) = ≈крит. 13,1.50a. [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
 
-- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40). [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
+- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40) = [≈Вульг. 13.1.57](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S057) = ≈крит. 13,1.50a. [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
   <sub>attested</sub>
 
 **prati-6)** — 6〉 einen best. Standpunct erreichen (von Sternen).
@@ -314,7 +314,7 @@
 
 **a-1)** — Mit *saṃni* zusammentreffen, zusammenkommen mit (Instr.).
 
-- **RU:** — С *saṃni* встречаться, сходиться с (Instr.).
+- **RU:** — С *saṃni* встречаться, сходиться с (Ins.).
   <sub>attested</sub>
 
 **a-2)** — Mit *vini* Caus. in *˚gamaka*.

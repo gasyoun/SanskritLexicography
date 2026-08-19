@@ -5,7 +5,7 @@
 
 **Partic.1)** — 1〉 (umgeben) erfüllt —, in Besitz genommen —, heimgesucht von, behaftet mit (Instr. oder im Comp. vorangehend).
 
-- **RU:** — 1) (окружённый) наполненный —, охваченный —, поражённый чем-либо, отмеченный чем-либо (Instr. или предшествующее в Comp.).
+- **RU:** — 1) (окруженный) наполненный —, охваченный —, пораженный чем-либо, отмеченный чем-либо (Ins. или предшествующее в Comp.).
 
 **Partic.2)** — 2〉 erfahren, erlebt [BĀLAR. 91,22].
 
@@ -97,7 +97,7 @@
 
 **Partic2.2)** — 2〉 *glanzlos. Vgl. *vidūra vigata*
 
-- **RU:** — 2) *тусклый, лишённый блеска. ср. *vidūra vigata*
+- **RU:** — 2) *тусклый, лишенный блеска. ср. *vidūra vigata*
 
 **note2)** — Caus. verbringen (eine Zeit).
 
@@ -117,15 +117,15 @@
 
 **sam33.1a)** — a〉 zusammenkommen, -treffen, zusammenkommen —, sich vereinigen —, sich verbinden mit (Instr. oder Instr. mit *saha* oder *sārdham*). Von freundlichem, feindlichem und geschlechtlichem Zusammenkommen. *kulasaṃgata* so v. a. ein Bekannter der Familie [GAUT. 17,6].
 
-- **RU:** — а) сходиться, встречаться, сходиться —, соединяться —, вступать в связь с (Instr. или Instr. с *saha* или *sārdham*). О дружеской, враждебной и любовной встрече. *kulasaṃgata*, так преим. — знакомый семьи [GAUT. 17,6].
+- **RU:** — а) сходиться, встречаться, сходиться —, соединяться —, вступать в связь с (Ins. или Ins. с *saha* или *sārdham*). О дружеской, враждебной и любовной встрече. *kulasaṃgata*, так преим. — знакомый семьи [GAUT. 17,6].
 
 **sam33.1b)** — b〉 zusammenkommen —, sich einfinden bei (Loc.).
 
 - **RU:** — б) сходиться —, являться к (Loc.).
 
-**sam33.1c)** — c〉 theilhaftig werden, mit Instr. [ṚV. 5,42,18. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18).
+**sam33.1c)** — c〉 theilhaftig werden, mit Instr. [ṚV. 5,42,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18) [ṚV. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.081.html#rv07.081.02).
 
-- **RU:** — в) становиться причастным, с Instr. [ṚV. 5,42,18. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18).
+- **RU:** — в) становиться причастным, с Ins. [ṚV. 5,42,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.18) [ṚV. 7,81,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.081.html#rv07.081.02).
 
 **sam33.1d)** — d〉 abscheiden, sterben.
 
@@ -161,7 +161,7 @@
 
 **sam33.3)** — 3〉 *samgata* eingeschrumpft. Statt *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) liest [ed. Bomb. 3,19,10] besser *samgatāḥ* zusammengekommen.
 
-- **RU:** — 3) *samgata* — сжавшийся, съёжившийся. Вместо *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) [ed. Bomb. 3,19,10] читает лучше *samgatāḥ* — сошедшийся.
+- **RU:** — 3) *samgata* — сжавшийся, съежившийся. Вм. *saṃgatam* [R. 3,25,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7) [Бомбейская ред. 3,19,10] читает лучше *samgatāḥ* — сошедшийся.
 
 **samCaus.header)** — Caus.
 
@@ -169,7 +169,7 @@
 
 **samCaus.1)** — 1〉 zusammenbringen, zusammenbringen —, -führen —, verbinden mit (Instr.).
 
-- **RU:** — 1) сводить вместе, сводить —, соединять —, связывать с (Instr.).
+- **RU:** — 1) сводить вместе, сводить —, соединять —, связывать с (Ins.).
 
 **samCaus.2)** — 2〉 verbinden, so v. a. construiren.
 
@@ -183,9 +183,9 @@
 
 - **RU:** — 4) давать перейти на (Loc.), передавать.
 
-**samCaus.5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9).
+**samCaus.5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9) = [≈Вульг. 5.7.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A007_S012) = ≈крит. 05,7.9c.
 
-- **RU:** — 5) умерщвлять (по [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9).
+- **RU:** — 5) умерщвлять (по [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9) = [≈Вульг. 5.7.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A007_S012) = ≈крит. 05,7.9c.
 
 **samDesid.header)** — *Desid.
 
@@ -213,7 +213,7 @@
 
 **X75.2)** — 2〉 zusammenkommen mit (Instr.). *˚abhisaṃgata* im Verein mit.
 
-- **RU:** — 2) сходиться с (Instr.). *˚abhisaṃgata* — совместно с.
+- **RU:** — 2) сходиться с (Ins.). *˚abhisaṃgata* — совместно с.
 
 **X75.3)** — 3〉 zusammen bewillkommnen.
 

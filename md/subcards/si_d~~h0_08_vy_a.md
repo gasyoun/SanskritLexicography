@@ -6,7 +6,7 @@
 **1)** — *vyā*, partic. *˚siddha* verboten, untersagt
 [YĀJÑ. 2,261.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,261)
 
-- **RU:** — *vyā*, partic. *˚siddha* запрещённый, запрещённое
+- **RU:** — *vyā*, partic. *˚siddha* запрещенный, запрещенное
 [YĀJÑ. 2,261.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,261)
   <sub>attested</sub>
 

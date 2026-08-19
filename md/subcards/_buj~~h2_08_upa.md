@@ -8,11 +8,11 @@
 [YĀJÑ. 3,325.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,325) *rasāyanam*
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *tānmṛtānapi kravyādāḥ kṛtaghnānnopabhuñjate*
 [5124.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5124) *ghṛtaṃ madhu payastoyaṃ dadhīni rasavanti ca . phalaṃ mūlaṃ ca susvādu dvijāstatropabhuñjate ..*
-[MBH. 7,2311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2311)
+[MBH. 7,2311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2311) = [≈Вульг. 7.64.9](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A064_S009) = крит. —
 [HARIV. 7839.](https://sanskrit-lexicon-scans.github.io/hariv?7839)
 [R. 2,30,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,16) [61,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,5) (med. [ed. Bomb.]). *taruṇāḥ saṃtaptā nopabhuñjate* essen nicht
 [114,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,12) [R. GORR. 2,55,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,55,19) [RAGH. 2,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,65) [BHAṬṬ. 8,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,40) *so (mārjāraḥ) 'tha ḍiṇḍikaṃ (mūṣikaṃ) hyupabhuktavān*
-[MBH. 5,5443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5443) [13,227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.227)
+[MBH. 5,5443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5443) = [≈Вульг. 5.160.119](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U08_A160_S119) = ≈крит. 05,158.36a [13,227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.227) = [≈Вульг. 13.4.28](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A004_S028) = ≈крит. 13,4.28a
 [MĀRK. P. 23,72.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?23,72) *payaḥ pūrvaiḥ svaniśvāsakavoṣṇamupabhujyate*
 [RAGH. 1,67.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,67)
 [Spr. 3848.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3848)
@@ -22,7 +22,7 @@
 [KUMĀRAS. 3,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,37)
 [PAÑCAT. 104,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?104,6) *tvaṅgatturaṃgasaṃghātakhurāgrāṅkanakhakṣatā . pathi tasyābhavadbhūmirupabhukteva bhūyateḥ ..* wie verzehrt
 [KATHĀS. 18,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,7) *āśayā saṃcitaṃ dravyaṃ kālenaivopabhujyate*
-[MBH. 13,7592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7592) *anupabhujyamānaśca niṣprayojana eva saḥ (arthaḥ)*
+[MBH. 13,7592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7592) = [≈Вульг. 13.162.61](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A162_S061) = ≈крит. 12,186.30a *anupabhujyamānaśca niṣprayojana eva saḥ (arthaḥ)*
 [HIT. 46,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?46,8), v. l. *tapasāmupabhuñjānāḥ phalāni* geniessend
 [KUMĀRAS. 6,16.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,16) *bhogam*
 [KATHĀS. 28,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,118)
@@ -32,13 +32,13 @@
 [KATHĀS. 38,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,36)
 [BHĀG. P. 7,14,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,7) *yuṣmadāyattaṃ rājyamidaṃ svecchayopabhujyatām*
 [HIT. 130,4](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?130,4), v. l. *pāṇḍaveyāni ratnāni tvamadyāpyupabhuñjase*
-[MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118)
+[MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118) = [≈Вульг. 3.250.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A250_S009) = ≈крит. 03,238.45c
 [HARIV. 7193](https://sanskrit-lexicon-scans.github.io/hariv?7193) (act.). *upabhokṣyāmi tadvanam*
 [8271.](https://sanskrit-lexicon-scans.github.io/hariv?8271) *nānyopabhuktanavayauvanabhārasārā*
 [CAURAP. 33.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?33) *ratakrīḍāsukham*
 [KATHĀS. 45,181.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,181) *duḥkham*
 [R. GORR. 2,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,25) [MĀRK. P. 21,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,40) *lokānupabhokṣyasi puṣkalān*
-[MBH. 1,8343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8343) *mama prabhāvācca gavāmayutānyupabhokṣyatha*
+[MBH. 1,8343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8343) = [≈Вульг. 1.227.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A227_S015) = ≈крит. 01,218.15a *mama prabhāvācca gavāmayutānyupabhokṣyatha*
 [HARIV. 3881.](https://sanskrit-lexicon-scans.github.io/hariv?3881) *kṣitipatirupabhuṅkte trivargaṃ cirāya*
 [KATHĀS. 13,95.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,95) *pānaśayyāsanānyasya kūpodyānagṛhāṇi ca . adattānyupabhuñjānaḥ* benutzend,
 
@@ -49,8 +49,8 @@ gebrauchend
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *dharmavāṇijakā hyete ye dharmamupabhuñjate* leben von
 [MBH. 13,7595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7595) *tayopabhujyamānāṃ purīm* so v. a. beherrscht
 [BHĀG. P. 4,28,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,4) Jmd benutzen: *ahaṃ ca kururājyaṃ ca yatheṣṭamupabhujyatām*
-[MBH. 1,5392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5392) *preṣyavatpāṇḍupāñcālānupabhokṣyāmahe tataḥ*
-[7,8267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8267) *strīratnamupabhuṅkṣvemām* so v. a. der Liebe pflegen
+[MBH. 1,5392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5392) = [≈Вульг. 1.135.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A135_S005) = ≈крит. 01,125.5a *preṣyavatpāṇḍupāñcālānupabhokṣyāmahe tataḥ*
+[7,8267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8267) = [≈Вульг. 7.182.21](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A182_S021) = ≈крит. 07,157.20c *strīratnamupabhuṅkṣvemām* so v. a. der Liebe pflegen
 [HARIV. 11262.](https://sanskrit-lexicon-scans.github.io/hariv?11262)
 [KATHĀS. 17,91.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,91) [32,150.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,150) [152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,152) [168.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,168) [45,360.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,360)
 [Spr. 3833.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3833)
@@ -60,18 +60,18 @@ gebrauchend
 [MĀRK. P. 113,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?113,21) *tenopabhujyamānaṃ śarīram (striyāḥ)*
 [KATHĀS. 38,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,36) Es liegt nahe da, wo *yuj* mit *upa* die Bed. essen, verspeisen hat, eine Verwechselung mit *bhuj* anzunehmen, aber an den vielen Stellen, die
 [WESTERGAARD] anführt, liest die [ed. Bomb.] des
-[MBH.] nur [1,6221](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6221) *upabhokṣyati* st. *upayokṣyati*; vgl. u. *bhuj* simpl. am Ende.
+[MBH.] nur [1,6221](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6221) = [≈Вульг. 1.158.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A158_S023) = ≈крит. 01,146.23a *upabhokṣyati* st. *upayokṣyati*; vgl. u. *bhuj* simpl. am Ende.
 
 - **RU:** — *upa*
  1) вкушать, есть, поедать, пожирать: *yathā kathaṃcitpiṇḍānāṃ catvāriṃśacchatadvayam . māsenaivopabhuñjīta*
 [YĀJÑ. 3,325.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,325) *rasāyanam*
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *tānmṛtānapi kravyādāḥ kṛtaghnānnopabhuñjate*
 [5124.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5124) *ghṛtaṃ madhu payastoyaṃ dadhīni rasavanti ca . phalaṃ mūlaṃ ca susvādu dvijāstatropabhuñjate ..*
-[MBH. 7,2311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2311)
+[MBH. 7,2311.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2311) = [≈Вульг. 7.64.9](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A064_S009) = крит. —
 [HARIV. 7839.](https://sanskrit-lexicon-scans.github.io/hariv?7839)
-[R. 2,30,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,16) [61,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,5) (мед. [ed. Bomb.]). *taruṇāḥ saṃtaptā nopabhuñjate* не есть
+[R. 2,30,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,16) [61,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,5) (мед. [Бомбейская ред.]). *taruṇāḥ saṃtaptā nopabhuñjate* не есть
 [114,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,12) [R. GORR. 2,55,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,55,19) [RAGH. 2,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,65) [BHAṬṬ. 8,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,40) *so (mārjāraḥ) 'tha ḍiṇḍikaṃ (mūṣikaṃ) hyupabhuktavān*
-[MBH. 5,5443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5443) [13,227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.227)
+[MBH. 5,5443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5443) = [≈Вульг. 5.160.119](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U08_A160_S119) = ≈крит. 05,158.36a [13,227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.227) = [≈Вульг. 13.4.28](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A004_S028) = ≈крит. 13,4.28a
 [MĀRK. P. 23,72.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?23,72) *payaḥ pūrvaiḥ svaniśvāsakavoṣṇamupabhujyate*
 [RAGH. 1,67.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,67)
 [Spr. 3848.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3848)
@@ -81,7 +81,7 @@ gebrauchend
 [KUMĀRAS. 3,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,37)
 [PAÑCAT. 104,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?104,6) *tvaṅgatturaṃgasaṃghātakhurāgrāṅkanakhakṣatā . pathi tasyābhavadbhūmirupabhukteva bhūyateḥ ..* как бы поглощенный
 [KATHĀS. 18,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,7) *āśayā saṃcitaṃ dravyaṃ kālenaivopabhujyate*
-[MBH. 13,7592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7592) *anupabhujyamānaśca niṣprayojana eva saḥ (arthaḥ)*
+[MBH. 13,7592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7592) = [≈Вульг. 13.162.61](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A162_S061) = ≈крит. 12,186.30a *anupabhujyamānaśca niṣprayojana eva saḥ (arthaḥ)*
 [HIT. 46,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?46,8), v. l. *tapasāmupabhuñjānāḥ phalāni* вкушая
 [KUMĀRAS. 6,16.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,16) *bhogam*
 [KATHĀS. 28,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,118)
@@ -91,13 +91,13 @@ gebrauchend
 [KATHĀS. 38,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,36)
 [BHĀG. P. 7,14,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,7) *yuṣmadāyattaṃ rājyamidaṃ svecchayopabhujyatām*
 [HIT. 130,4](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?130,4), v. l. *pāṇḍaveyāni ratnāni tvamadyāpyupabhuñjase*
-[MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118)
+[MBH. 3,15118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15118) = [≈Вульг. 3.250.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A250_S009) = ≈крит. 03,238.45c
 [HARIV. 7193](https://sanskrit-lexicon-scans.github.io/hariv?7193) (act.). *upabhokṣyāmi tadvanam*
 [8271.](https://sanskrit-lexicon-scans.github.io/hariv?8271) *nānyopabhuktanavayauvanabhārasārā*
 [CAURAP. 33.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?33) *ratakrīḍāsukham*
 [KATHĀS. 45,181.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,181) *duḥkham*
 [R. GORR. 2,34,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,25) [MĀRK. P. 21,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,40) *lokānupabhokṣyasi puṣkalān*
-[MBH. 1,8343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8343) *mama prabhāvācca gavāmayutānyupabhokṣyatha*
+[MBH. 1,8343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8343) = [≈Вульг. 1.227.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A227_S015) = ≈крит. 01,218.15a *mama prabhāvācca gavāmayutānyupabhokṣyatha*
 [HARIV. 3881.](https://sanskrit-lexicon-scans.github.io/hariv?3881) *kṣitipatirupabhuṅkte trivargaṃ cirāya*
 [KATHĀS. 13,95.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,95) *pānaśayyāsanānyasya kūpodyānagṛhāṇi ca . adattānyupabhuñjānaḥ* пользуясь,
 
@@ -108,8 +108,8 @@ gebrauchend
 [Spr. 2951.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2951) *dharmavāṇijakā hyete ye dharmamupabhuñjate* жить от
 [MBH. 13,7595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7595) *tayopabhujyamānāṃ purīm* так преим. управляет
 [BHĀG. P. 4,28,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,4) пользоваться кем-либо: *ahaṃ ca kururājyaṃ ca yatheṣṭamupabhujyatām*
-[MBH. 1,5392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5392) *preṣyavatpāṇḍupāñcālānupabhokṣyāmahe tataḥ*
-[7,8267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8267) *strīratnamupabhuṅkṣvemām* так преим. предаваться любви
+[MBH. 1,5392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5392) = [≈Вульг. 1.135.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A135_S005) = ≈крит. 01,125.5a *preṣyavatpāṇḍupāñcālānupabhokṣyāmahe tataḥ*
+[7,8267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8267) = [≈Вульг. 7.182.21](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A182_S021) = ≈крит. 07,157.20c *strīratnamupabhuṅkṣvemām* так преим. предаваться любви
 [HARIV. 11262.](https://sanskrit-lexicon-scans.github.io/hariv?11262)
 [KATHĀS. 17,91.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,91) [32,150.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,150) [152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,152) [168.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,168) [45,360.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,360)
 [Spr. 3833.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3833)
@@ -118,7 +118,7 @@ gebrauchend
 [Spr. 677](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?677), v. l. *tathemāmupabhuñjataḥ* (gen. partic.)
 [MĀRK. P. 113,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?113,21) *tenopabhujyamānaṃ śarīram (striyāḥ)*
 [KATHĀS. 38,36.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,36) Соблазнительно там, где *yuj* с *upa* имеет значение есть, поедать, усматривать смешение с *bhuj*, но во многих местах, которые
-приводит [WESTERGAARD], [ed. Bomb.] [MBH.] читает лишь [1,6221](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6221) *upabhokṣyati* вместо *upayokṣyati*; ср. u. *bhuj* simpl. в конце.
+приводит [WESTERGAARD], [Бомбейская ред.] [MBH.] читает лишь [1,6221](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6221) = [≈Вульг. 1.158.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A158_S023) = ≈крит. 01,146.23a *upabhokṣyati* вместо *upayokṣyati*; ср. u. *bhuj* simpl. в конце.
   <sub>attested</sub>
 
 **2)** — 2) den Lohn für Etwas (acc.) haben: *mānasaṃ manasaivāyamupabhuṅkte śubhāśubham . vācā vācā kṛtaṃ karma kāyenaiva ca kāyikam ..*

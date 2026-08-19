@@ -12,13 +12,13 @@
 [AV. 6,119,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.119.html#av06.119.03) *grāmyāṇāṃ paśūnāṃ vāca ājānāti* versteht
 [PAÑCAV. BR. 10,2.] — *tadājñāya patīnāmanapekṣatām*
 [BHĀG. P. 1,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,50) *taṃ viṣīdantamājñāya rākṣasam* bemerken, dass
-[MBH. 3,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.448)
+[MBH. 3,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.448) = [≈Вульг. 3.11.63](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U02_A011_S063) = ≈крит. 03,12.63a
 [R. 2,69,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,3) [78,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,13) *kalimāgatamājñāya*
 [BHĀG. P. 1,1,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,1,21) erfahren, vernehmen, hören
 [BHĀG. P. 9,8,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,8,4) *śakrasya matamājñāya*
 [INDR. 3,1.] *tasya svaramājñāya*
 [R. 3,64,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,64,3) *bhrāturvacanamājñāya*
-[MBH. 1,5940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5940) [3,1431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1431)
+[MBH. 1,5940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5940) = [≈Вульг. 1.151.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S010) = крит. — [3,1431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1431) = [≈Вульг. 3.36.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A036_S021) = ≈крит. 03,37.19a
 [R. 1,9,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,61) [2,78,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,10) *śāsanamājñāya bhrātuḥ*
 [32,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,1) [34,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,12) *na jagāma tayokto 'pi bhrāturājñāya śāsanam* nachdem er den Befehl des Bruders vernommen, indem er sich nach dem
 
@@ -35,13 +35,13 @@ Befehl des Bruders richtete
 [AV. 6,119,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.119.html#av06.119.03) *grāmyāṇāṃ paśūnāṃ vāca ājānāti* понимает
 [PAÑCAV. BR. 10,2.] — *tadājñāya patīnāmanapekṣatām*
 [BHĀG. P. 1,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,50) *taṃ viṣīdantamājñāya rākṣasam* заметить, что
-[MBH. 3,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.448)
+[MBH. 3,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.448) = [≈Вульг. 3.11.63](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U02_A011_S063) = ≈крит. 03,12.63a
 [R. 2,69,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,3) [78,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,13) *kalimāgatamājñāya*
 [BHĀG. P. 1,1,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,1,21) узнавать, слышать, воспринимать на слух
 [BHĀG. P. 9,8,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,8,4) *śakrasya matamājñāya*
 [INDR. 3,1.] *tasya svaramājñāya*
 [R. 3,64,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,64,3) *bhrāturvacanamājñāya*
-[MBH. 1,5940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5940) [3,1431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1431)
+[MBH. 1,5940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5940) = [≈Вульг. 1.151.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S010) = крит. — [3,1431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1431) = [≈Вульг. 3.36.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A036_S021) = ≈крит. 03,37.19a
 [R. 1,9,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,61) [2,78,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,10) *śāsanamājñāya bhrātuḥ*
 [32,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,1) [34,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,12) *na jagāma tayokto 'pi bhrāturājñāya śāsanam* выслушав приказ брата, следуя
 
@@ -61,22 +61,22 @@ Befehl des Bruders richtete
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
 [DAŚAK.] in [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
-[MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
+[MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) = [≈Вульг. 2.78.8](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A078_S008) = крит. — *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
 [HARIV. 9704.](https://sanskrit-lexicon-scans.github.io/hariv?9704) *yātrām*
 [R. 2,82,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,21) *ghoṣaṇām*
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) *sadṛśaṃ kulasaṃbandhaṃ yadājñāpayathaḥ svayam*
 [R. 1,72,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,10) *kimājñāpayase*
-[MBH. 3,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1836) *ājñāpayadhvamiṣṭāni*
-[15025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15025) *ājñāptum*
+[MBH. 3,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1836) = [≈Вульг. 3.46.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S019) = крит. — *ājñāpayadhvamiṣṭāni*
+[15025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15025) = [≈Вульг. 3.246.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A246_S017) = ≈крит. 03,235.16a *ājñāptum*
 [R. 4,40,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,8) *sarvamājñāpyatāmāśu*
-[MBH. 13,1430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1430) *taṃ ha ciraṃ vasetyājñāpayāṃ cakāra*
+[MBH. 13,1430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1430) = [≈Вульг. 13.19.50](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S050) = ≈крит. 13,20.25a *taṃ ha ciraṃ vasetyājñāpayāṃ cakāra*
 [CHĀND. UP. 5,3,7.] *ājñāpayatu māṃ guruḥ*
-[MBH. 1,5265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5265) [2,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1008)
+[MBH. 1,5265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5265) = [≈Вульг. 1.132.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A132_S014) = ≈крит. 01,123.43a [2,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1008) = [≈Вульг. 2.26.15](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U05_A026_S015) = ≈крит. 02,23.24c
 [R. 1,66,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,3) [4,24,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,19) *senām*
-[MBH. 1,7652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7652) *sphītaṃ rāṣṭram — nityamājñāpayanbhāsi divi deveśvaro yathā*
-[2,1800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1800) *hṛṣṭamājñāpayasva ca*
+[MBH. 1,7652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7652) = [≈Вульг. 1.207.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A207_S042) = ≈крит. 01,199.41a *sphītaṃ rāṣṭram — nityamājñāpayanbhāsi divi deveśvaro yathā*
+[2,1800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1800) = [≈Вульг. 2.50.16](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A050_S016) = ≈крит. 02,46.16c *hṛṣṭamājñāpayasva ca*
 [R. 5,22,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,24) *ājñāpayitum*
 [4,19,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,19,23) [40,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,7) *ājñāpita*
 [R. 2,82,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,30)
@@ -87,10 +87,10 @@ Befehl des Bruders richtete
 [ŚĀK. 50,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?50,7)
 [DEV. 6,5.] *pitṝnājñāpayiṣyanti putrāḥ karmaṇi*
 [HARIV. 11195.](https://sanskrit-lexicon-scans.github.io/hariv?11195) *tathā tathā vidhānāya svayamājñāpayasva mām*
-[MBH. 1,5316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5316) *ājñāpaya māṃ svagṛhāya* heisse mich nach Hause gehen
+[MBH. 1,5316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5316) = [≈Вульг. 1.132.65](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A132_S065) = ≈крит. 01,123.43c *ājñāpaya māṃ svagṛhāya* heisse mich nach Hause gehen
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24) *māṃ dṛṣṭvā badhāyājñāpayiṣyati* er wird den Befehl ertheilen mich zu tödten
 [R. 5,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,79) *ājñāpitaṃ māmaśane*
-[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310)
+[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Вульг. 1.162.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A162_S013) = ≈крит. 01,150.13a
 
 - **RU:** 1) приказывать, повелевать, распоряжаться чем-либо, наставлять кого-либо (acc.), обращать к кому-либо приказание: *bhakṣyatāmiti suvyaktaṃ prabhurājñāpayiṣyati*
 [R. 5,25,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,48) [4,24,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,24) *anyathā na tu yaṣṭavyaṃ vayamājñāpayāmahe*
@@ -98,22 +98,22 @@ Befehl des Bruders richtete
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
 [DAŚAK.] в [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
-[MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) *kimājñāpayanti*
+[MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) = [≈Вульг. 2.78.8](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A078_S008) = крит. — *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
 [HARIV. 9704.](https://sanskrit-lexicon-scans.github.io/hariv?9704) *yātrām*
 [R. 2,82,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,21) *ghoṣaṇām*
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) *sadṛśaṃ kulasaṃbandhaṃ yadājñāpayathaḥ svayam*
 [R. 1,72,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,10) *kimājñāpayase*
-[MBH. 3,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1836) *ājñāpayadhvamiṣṭāni*
-[15025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15025) *ājñāptum*
+[MBH. 3,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1836) = [≈Вульг. 3.46.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S019) = крит. — *ājñāpayadhvamiṣṭāni*
+[15025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15025) = [≈Вульг. 3.246.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A246_S017) = ≈крит. 03,235.16a *ājñāptum*
 [R. 4,40,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,8) *sarvamājñāpyatāmāśu*
-[MBH. 13,1430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1430) *taṃ ha ciraṃ vasetyājñāpayāṃ cakāra*
+[MBH. 13,1430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1430) = [≈Вульг. 13.19.50](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S050) = ≈крит. 13,20.25a *taṃ ha ciraṃ vasetyājñāpayāṃ cakāra*
 [CHĀND. UP. 5,3,7.] *ājñāpayatu māṃ guruḥ*
-[MBH. 1,5265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5265) [2,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1008)
+[MBH. 1,5265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5265) = [≈Вульг. 1.132.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A132_S014) = ≈крит. 01,123.43a [2,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1008) = [≈Вульг. 2.26.15](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U05_A026_S015) = ≈крит. 02,23.24c
 [R. 1,66,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,3) [4,24,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,19) *senām*
-[MBH. 1,7652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7652) *sphītaṃ rāṣṭram — nityamājñāpayanbhāsi divi deveśvaro yathā*
-[2,1800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1800) *hṛṣṭamājñāpayasva ca*
+[MBH. 1,7652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7652) = [≈Вульг. 1.207.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A207_S042) = ≈крит. 01,199.41a *sphītaṃ rāṣṭram — nityamājñāpayanbhāsi divi deveśvaro yathā*
+[2,1800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1800) = [≈Вульг. 2.50.16](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A050_S016) = ≈крит. 02,46.16c *hṛṣṭamājñāpayasva ca*
 [R. 5,22,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,24) *ājñāpayitum*
 [4,19,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,19,23) [40,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,7) *ājñāpita*
 [R. 2,82,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,30)
@@ -124,10 +124,10 @@ Befehl des Bruders richtete
 [ŚĀK. 50,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?50,7)
 [DEV. 6,5.] *pitṝnājñāpayiṣyanti putrāḥ karmaṇi*
 [HARIV. 11195.](https://sanskrit-lexicon-scans.github.io/hariv?11195) *tathā tathā vidhānāya svayamājñāpayasva mām*
-[MBH. 1,5316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5316) *ājñāpaya māṃ svagṛhāya* прикажи мне идти домой
+[MBH. 1,5316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5316) = [≈Вульг. 1.132.65](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A132_S065) = ≈крит. 01,123.43c *ājñāpaya māṃ svagṛhāya* прикажи мне идти домой
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24) *māṃ dṛṣṭvā badhāyājñāpayiṣyati* он отдаст приказ убить меня
 [R. 5,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,79) *ājñāpitaṃ māmaśane*
-[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310)
+[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Вульг. 1.162.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A162_S013) = ≈крит. 01,150.13a
   <sub>attested</sub>
 
 **2)** — 2) versichern, betheuern: *na kiṃcidasyā vṛjinamahamājñāpayāmi te*

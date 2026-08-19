@@ -1,4 +1,4 @@
-## vid~~h0_zz_pw01
+## vid
 
 `vid~~h0_zz_pw01`
 
@@ -7,37 +7,37 @@
 — 1〉 finden, habhaft werden, antreffen, sich aneignen, erwerben, gewinnen, theilhaftig werden; besitzen. *diśaḥ* so v. a. sich in den Weltgegenden zurechtfinden.
 
 - **RU:** **3.** √*vid*, *vindati*, *˚te* (только эти формы в более позднем языке), *vidati*, *viddhi*, *vitse*, *vide*;
-— 1) *найти*, *завладеть, застать, овладеть чем-либо*; *приобрести, добыть*, *стать причастным чему-либо*; *обладать*. *diśaḥ*, так преим. *ориентироваться в странах света*.
+— 1) найти, завладеть, застать, овладеть чем-либо; приобрести, добыть, стать причастным чему-либо; обладать. *diśaḥ*, так преим. ориентироваться в странах света.
   <sub>attested</sub>
 
 **PW-3-2)** — 2〉 Jmd (Dat.) Etwas verschaffen.
 
-- **RU:** — 2) *доставить кому-либо* (Dat.) *что-либо*.
+- **RU:** — 2) доставить кому-либо (Dat.) что-либо.
   <sub>attested</sub>
 
 **PW-3-3)** — 3〉 aufsuchen, aussuchen, suchen nach, sich zuwenden.
 
-- **RU:** — 3) *разыскивать, отыскивать, искать*, *обращаться к чему-либо*.
+- **RU:** — 3) разыскивать, отыскивать, искать, обращаться к чему-либо.
   <sub>attested</sub>
 
 **PW-3-4)** — 4〉 empfinden.
 
-- **RU:** — 4) *чувствовать, ощущать*.
+- **RU:** — 4) чувствовать, ощущать.
   <sub>attested</sub>
 
 **PW-3-5)** — 5〉 halten für, mit doppeltem Acc.
 
-- **RU:** — 5) *считать за, принимать за*, с двойным Acc.
+- **RU:** — 5) считать за, принимать за, с двойным Acc.
   <sub>attested</sub>
 
 **PW-3-6)** — 6〉 treffen, betreffen, befallen, heimsuchen.
 
-- **RU:** — 6) *поразить, постичь, настичь, посетить (о несчастье)*.
+- **RU:** — 6) поразить, постичь, настичь, посетить (о несчастье).
   <sub>attested</sub>
 
 **PW-3-7)** — 7〉 zu Stande bringen, zu machen wissen, erreichen.
 
-- **RU:** — 7) *осуществить, суметь сделать, достичь*.
+- **RU:** — 7) осуществить, суметь сделать, достичь.
   <sub>attested</sub>
 
 **PW-3-8)** — 8〉 Med. (metrisch auch Act.)
@@ -47,22 +47,22 @@
 
 **PW-3-8a)** — a〉 mit und ohne *bhāryam* u. s. w. ein Weib —, zum Weibe nehmen.
 
-- **RU:** — a) с *bhāryam* и без него и т.д. *взять жену, жениться*.
+- **RU:** — a) с *bhāryam* и без него и т.д. взять жену, жениться.
   <sub>attested</sub>
 
 **PW-3-8b)** — b〉 einen Mann finden, heirathen (vom Weibe gesagt).
 
-- **RU:** — b) *найти мужа, выйти замуж* (говорится о женщине).
+- **RU:** — b) найти мужа, выйти замуж (говорится о женщине).
   <sub>attested</sub>
 
 **PW-3-8c)** — c〉 mit und ohne *sutam* zum Sohn bekommen.
 
-- **RU:** — c) с *sutam* и без него *получить в сыновья*.
+- **RU:** — c) с *sutam* и без него получить в сыновья.
   <sub>attested</sub>
 
 **PW-3-9)** — 9〉 Pass. Med. gefunden werden, vorhanden —, da sein, bestehen. *vidyate* (metrisch auch *vidyati*) es giebt, ist da, es besteht; insbes. mit einer Negation. *yathā* *vide* wie es geht, wie es so ist, so v. a. wie gewöhnlich und so gut als möglich. **vidyate* *bhoktum* es ist Etwas da zum Essen. **vidyate* mit folgendem Fut. ist es möglich, dass? *vidyamāna* da seiend, vorhanden.
 
-- **RU:** — 9) Pass. Med. *быть найденным, иметься в наличии —, существовать, иметься*. *vidyate* (метрически также *vidyati*) *имеется, есть, существует*; особ. с отрицанием. *yathā* *vide* *как обстоит дело, как это бывает*, так преим. *как обычно* и *как можно лучше*. **vidyate* *bhoktum* *есть что-нибудь поесть*. **vidyate* со следующим Fut. *возможно ли, что...?* *vidyamāna* *имеющийся в наличии, существующий*.
+- **RU:** — 9) Pass. Med. быть найденным, иметься в наличии —, существовать, иметься. *vidyate* (метрически также *vidyati*) имеется, есть, существует; особ. с отрицанием. *yathā* *vide* как обстоит дело, как это бывает, так преим. как обычно и как можно лучше. **vidyate* *bhoktum* есть что-нибудь поесть. **vidyate* со следующим Fut. возможно ли, что...? *vidyamāna* имеющийся в наличии, существующий.
   <sub>attested</sub>
 
 **10)** — 10〉 *vidāna* und *vidāna*
@@ -92,17 +92,17 @@
 
 **11a)** — a〉 erhalten, erworben.
 
-- **RU:** — a〉 полученный, приобретённый.
+- **RU:** — a〉 полученный, приобретенный.
   <sub>attested</sub>
 
 **11b)** — b〉 ergriffen —, getroffen —, befallen von (im Comp. vorangehend).
 
-- **RU:** — b〉 охваченный —, поражённый —, настигнутый чем-л. (в Comp. предшествующем).
+- **RU:** — b〉 охваченный —, пораженный —, настигнутый чем-л. (в Comp. предшествующем).
   <sub>attested</sub>
 
 **11c)** — c〉 _f._ *ā* genommen, geheirathet (ein Weib).
 
-- **RU:** — c〉 _f._ *ā* взятая, взятая в жёны (о женщине).
+- **RU:** — c〉 _f._ *ā* взятая, взятая в жены (о женщине).
   <sub>attested</sub>
 
 **12)** — 12〉 *vinna*
@@ -132,12 +132,12 @@
 
 **13)** — Desid. *vivitsita* was man zu finden wünscht.
 
-- **RU:** — Desid. *vivitsita* *то, что желают найти*.
+- **RU:** — Desid. *vivitsita* то, что желают найти.
   <sub>attested</sub>
 
 **13)** — Intens. *vevidāna* sich befindend.
 
-- **RU:** — Intens. *vevidāna* *находящийся*.
+- **RU:** — Intens. *vevidāna* находящийся.
   <sub>attested</sub>
 
 **13)** — Mit *adhi*
@@ -147,17 +147,17 @@
 
 **1)** — 1〉 die erste Frau (Acc.) durch einen zweite Frau (Instr.) hintansetzen.
 
-- **RU:** — 1〉 *оттеснять на второй план, пренебрегать* первой женой (Acc.) ради второй жены (Instr.).
+- **RU:** — 1〉 оттеснять на второй план, пренебрегать первой женой (Acc.) ради второй жены (Ins.).
   <sub>attested</sub>
 
 **2)** — 2〉 die erste (frühere) Frau (Frauen) hintansetzen (von einer neuen Frau gesagt), so v. a. als Nebenbuhlerin auftreten von (Acc.).
 
-- **RU:** — 2〉 *оттеснять на второй план* первую (прежнюю) жену (жён) (говорится о новой жене), так преим. *выступать соперницей* (Acc.).
+- **RU:** — 2〉 оттеснять на второй план первую (прежнюю) жену (жен) (говорится о новой жене), так преим. выступать соперницей (Acc.).
   <sub>attested</sub>
 
 **3)** — 3〉 *adhivinnā* und *adhivinnastrī* eine durch eine Nebenbuhlerin hintangesetzte Frau.
 
-- **RU:** — 3〉 *adhivinnā* и *adhivinnastrī* *жена, оттеснённая на второй план соперницей*.
+- **RU:** — 3〉 *adhivinnā* и *adhivinnastrī* жена, оттесненная на второй план соперницей.
   <sub>attested</sub>
 
 **3)** — Mit *anu*
@@ -167,32 +167,32 @@
 
 **1)** — 1〉 auffinden, habhaft —, theilhaftig werden.
 
-- **RU:** — 1〉 *находить, обретать, становиться причастным*.
+- **RU:** — 1〉 находить, обретать, становиться причастным.
   <sub>attested</sub>
 
 **2)** — 2〉 nach Jmd finden.
 
-- **RU:** — 2〉 *разыскивать кого-либо*.
+- **RU:** — 2〉 разыскивать кого-либо.
   <sub>attested</sub>
 
 **3)** — 3〉 Med. *bhāryām* zum Weibe nehmen.
 
-- **RU:** — 3〉 Med. *bhāryām* *брать в жёны*.
+- **RU:** — 3〉 Med. *bhāryām* брать в жены.
   <sub>attested</sub>
 
 **4)** — 4〉 finden, so v. a. halten für; mit doppeltem Acc.
 
-- **RU:** — 4〉 *находить,* т.е. преим. *считать за, принимать за*; с двойным Acc.
+- **RU:** — 4〉 находить, т.е. преим. считать за, принимать за; с двойным Acc.
   <sub>attested</sub>
 
 **5)** — 5〉 Pass. vorhanden —, da sein.
 
-- **RU:** — 5〉 Pass. *иметься в наличии, существовать*.
+- **RU:** — 5〉 Pass. иметься в наличии, существовать.
   <sub>attested</sub>
 
 **6)** — 6〉 *anuvitta* aufgefunden, vorhanden.
 
-- **RU:** — 6〉 *anuvitta* *найденный, наличествующий*.
+- **RU:** — 6〉 *anuvitta* найденный, наличествующий.
   <sub>attested</sub>
 
 **6)** — Mit *abhi*
@@ -202,7 +202,7 @@
 
 **1)** — 1〉 auffinden.
 
-- **RU:** — 1〉 *находить, обнаруживать*.
+- **RU:** — 1〉 находить, обнаруживать.
   <sub>attested</sub>
 
 **2)** — 2〉 kennen.
@@ -248,7 +248,7 @@
 
 **3)** — 3〉 Pass. überdrüssig werden, Nichts mehr wissen wollen von; die Ergänzung im Abl., Instr. und ausnahmsweise Acc.
 
-- **RU:** — 3〉 Pass. пресытиться, не желать более знать о чём-л.; дополнение в Abl., Instr. и в виде исключения Acc.
+- **RU:** — 3〉 Pass. пресытиться, не желать более знать о чем-л.; дополнение в Abl., Ins. и в виде исключения Acc.
   <sub>attested</sub>
 
 **4)** — 4〉 *nirviṇṇa* (*nirvinna* fehlerhaft) überdrüssig (die Ergänzung im Abl., Instr., Gen., Loc. oder im Comp. vorangehend). Ohne Ergänzung der Sache überdrüssig, von Nichts mehr Etwas wissen wollend, an Allem verzagend.
@@ -256,9 +256,9 @@
 — Mit *parinis*, *parinirviṇṇa* in hohem Grade überdrüssig (mit Loc.), an Allem verzagend.
 — Mit *pari*
 
-- **RU:** — 4〉 *nirviṇṇa* (*nirvinna* ошибочно) пресыщенный (дополнение в Abl., Instr., Gen., Loc. или предшествующем Comp.). Без дополнения пресыщенный делом, не желающий более ничего знать, отчаявшийся во всём.
+- **RU:** — 4〉 *nirviṇṇa* (*nirvinna* ошибочно) пресыщенный (дополнение в Abl., Ins., Gen., Loc. или предшествующем Comp.). Без дополнения пресыщенный делом, не желающий более ничего знать, отчаявшийся во всем.
 — Caus. *nirvedayati* довести кого-л. до отчаяния.
-— С *parinis*, *parinirviṇṇa* в высокой степени пресыщенный (с Loc.), отчаявшийся во всём.
+— С *parinis*, *parinirviṇṇa* в высокой степени пресыщенный (с Loc.), отчаявшийся во всем.
 — С *pari*
   <sub>attested</sub>
 
@@ -288,7 +288,7 @@
 
 **2)** — 2〉 etwa vorwegnehmen.
 
-- **RU:** — 2) примерно предвосхищать, забегать вперёд.
+- **RU:** — 2) примерно предвосхищать, забегать вперед.
   <sub>attested</sub>
 
 **2)** — Intens. (*pra — vevidāma*) theilhaftig werden, mit Acc.
@@ -343,7 +343,7 @@
 
 **2)** — 2〉 sich zusammenfinden mit (Instr.). *saṃvidāna* zusammen mit, zugleich, verbunden, vereint, — durch oder in (Instr.); einträchtig.
 
-- **RU:** — 2) сходиться, встречаться вместе с (Instr.). *saṃvidāna* вместе с, одновременно, соединённый, объединённый, — посредством или в (Instr.); согласно, в единодушии.
+- **RU:** — 2) сходиться, встречаться вместе с (Ins.). *saṃvidāna* вместе с, одновременно, соединенный, объединенный, — посредством или в (Ins.); согласно, в единодушии.
   <sub>attested</sub>
 
 **3)** — 3〉 Pass. sich finden, da sein, geben (impers.), esse alicui (Gen.); insbes. in der Frage oder mit *na* [VAJRACCH. 38,12. fgg.] [KĀRAṆḌ. 43,21. 45,15. 52,20. 53,18].
@@ -353,7 +353,7 @@
 
 **3)** — Intens. (*sam — vevidānaḥ*) vereint mit (Instr.).
 
-- **RU:** — Intens. (*sam — vevidānaḥ*) {соединённый с} (Instr.).
+- **RU:** — Intens. (*sam — vevidānaḥ*) {соединенный с} (Ins.).
   <sub>attested</sub>
 
 **3)** — Mit *abhisam* Med. zusammentreffen.

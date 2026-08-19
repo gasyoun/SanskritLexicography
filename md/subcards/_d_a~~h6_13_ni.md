@@ -30,7 +30,7 @@
 
 **6_addendum)** — 6) die [ed. Bomb.] richtig *vidhātuṃ* . — caus.
 
-- **RU:** — 6) [ed. Bomb.] верно *vidhātuṃ* . — caus.
+- **RU:** — 6) [Бомбейская ред.] верно *vidhātuṃ* . — caus.
   <sub>attested</sub>
 
 **1_sub_addendum)** 1) *bālasya ca śarīraṃ tattailadroṇyāṃ nidhāpaya*

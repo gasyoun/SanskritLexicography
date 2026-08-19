@@ -7,7 +7,7 @@
 [RĀJA-TAR. 1,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,83) *˚kaṇṭakakula*
 [6,367.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,367)
 
-- **RU:** — *nis*, partic. *nirnaṣṭa* (*na* остаётся без изменений, поскольку *śa* перешло в *ṣa*) пропавший, исчезнувший: *˚nāmakṛtya (mahīpāla)*
+- **RU:** — *nis*, partic. *nirnaṣṭa* (*na* остается без изменений, поскольку *śa* перешло в *ṣa*) пропавший, исчезнувший: *˚nāmakṛtya (mahīpāla)*
 [RĀJA-TAR. 1,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,83) *˚kaṇṭakakula*
 [6,367.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,367)
   <sub>attested</sub>

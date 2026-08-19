@@ -19,27 +19,27 @@
 [M. 10,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,71) *sa vinaśyati* der (der Kranke) ist verloren
 [SUŚR. 1,111,8. 119,6.] *avamantā vinaśyati* geht zu Grunde
 [M. 2,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,163) [3,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,57) [58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,58) [65.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,65) [4,174.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,174) [7,12.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,12) [39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,39) [8,22.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,22) [10,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,61)
-[MBH. 1,6162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6162)
+[MBH. 1,6162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6162) = [≈Вульг. 1.157.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S005) = ≈крит. 01,145.5c
 [BHAG. 8,20.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?8,20)
 [R. 3,45,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,4) [51,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,35)
 [BHARTṚ. 2,34.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,34)
 [VARĀH. BṚH. S. 6,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,8) [73,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?73,10) [97,12.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?97,12)
 [PRAB. 37,7.] *vinaśet*
-[MBH. 3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *vinaśiṣyanti*
-[1,3491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3491) [6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) [13,1815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1815) [1894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1894) [1898.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1898) [1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1899) [R. 2,51,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,15) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,16) [63,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,44) *vinaṅkṣyāmi*
-[MBH. 3,2861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2861) [2864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2864)
+[MBH. 3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) = [≈Вульг. 3.59.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A059_S013) = ≈крит. 03,56.13a *vinaśiṣyanti*
+[1,3491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3491) [6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) = [≈Вульг. 1.157.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S006) = ≈крит. 01,145.6a [13,1815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1815) = [≈Вульг. 13.26.57](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S057) = ≈крит. 13,27.56a [1894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1894) = [≈Вульг. 13.27.29](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A027_S029) = ≈крит. 13,28.27c [1898.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1898) = [≈Вульг. 13.28.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A028_S002) = ≈крит. 13,29.2a [1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1899) = [≈Вульг. 13.28.3](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A028_S003) = ≈крит. 13,29.3a [R. 2,51,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,15) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,16) [63,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,44) *vinaṅkṣyāmi*
+[MBH. 3,2861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2861) = [≈Вульг. 3.73.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S010) = ≈крит. 03,71.10a [2864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2864) = [≈Вульг. 3.73.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S013) = ≈крит. 03,71.13c
 [BHAG. 18,58.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,58)
 [R. 3,45,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,16) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,17) [54,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,25) [6,14,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,14,9)
 [BHAṬṬ. 16,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,26) *vinaṅkṣanti* (sic)
-[MBH. 1,4973.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4973) med. [MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) [6187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6187) [3,10700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10700) [R. 5,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,21) *vinaṣṭa* verloren gegangen, verschwunden: *asthivinaṣṭaśalya*
+[MBH. 1,4973.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4973) = [≈Вульг. 1.128.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S010) = ≈крит. 01,119.9c med. [MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) = [≈Вульг. 1.75.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S022) = ≈крит. 01,70.19c [6187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6187) = [≈Вульг. 1.157.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S030) = ≈крит. 01,145.30a [3,10700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10700) = [≈Вульг. 3.133.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A133_S027) = ≈крит. 03,133.24a [R. 5,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,21) *vinaṣṭa* verloren gegangen, verschwunden: *asthivinaṣṭaśalya*
 [SUŚR. 1,24,10.] *sodarī punarasya grahaṇaviplave vinaṣṭā . tadanveṣaṇāya yatiṣye*
 [MĀLAV. 9,3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?9,3) *˚cakṣus*
-[MBH. 3,16665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16665) *˚dṛṣṭi*
+[MBH. 3,16665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16665) = [≈Вульг. 3.294.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A294_S008) = ≈крит. 03,278.8a *˚dṛṣṭi*
 [BHĀG. P. 3,1,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,6) *˚dharme deśe*
 [RĀJA-TAR. 1,314.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,314) zu Grunde gegangen, umgekommen: *veṇo vinaṣṭo 'vinayāt*
 [M. 7,41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,41)
-[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) [2,2518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2518) *hā hatāsmi vinaṣṭāsmi bhītāsmi vijane vane* ich bin verloren
-[3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3) [I,324.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,324) *vinaṣṭā vā pranaṣṭā vā bhakṣitā vāpi maithilī*
+[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) = [≈Вульг. 1.157.31](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S031) = ≈крит. 01,145.31a [2,2518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2518) = [≈Вульг. 2.77.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A077_S005) = ≈крит. 02,68.5a *hā hatāsmi vinaṣṭāsmi bhītāsmi vijane vane* ich bin verloren
+[3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S003) = ≈крит. 03,60.3a [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3) [I,324.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,324) *vinaṣṭā vā pranaṣṭā vā bhakṣitā vāpi maithilī*
 [R. 5,15,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,37) *vinaṣṭaṃ vā pranaṣṭaṃ vā na yuktamanuśocitum*
 [71,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,71,7) *naṣṭaṃ vinaṣṭaṃ kṛmibhiḥ śvahataṃ viṣame mṛtam (paśum)*
 [M. 8,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,232) verdorben, schlecht geworden (von Sachen)
@@ -60,27 +60,27 @@
 [M. 10,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,71) *sa vinaśyati* (больной) погиб
 [SUŚR. 1,111,8. 119,6.] *avamantā vinaśyati* гибнет
 [M. 2,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,163) [3,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,57) [58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,58) [65.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,65) [4,174.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,174) [7,12.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,12) [39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,39) [8,22.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,22) [10,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,61)
-[MBH. 1,6162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6162)
+[MBH. 1,6162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6162) = [≈Вульг. 1.157.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S005) = ≈крит. 01,145.5c
 [BHAG. 8,20.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?8,20)
 [R. 3,45,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,4) [51,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,35)
 [BHARTṚ. 2,34.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,34)
 [VARĀH. BṚH. S. 6,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,8) [73,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?73,10) [97,12.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?97,12)
 [PRAB. 37,7.] *vinaśet*
-[MBH. 3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) *vinaśiṣyanti*
-[1,3491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3491) [6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) [13,1815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1815) [1894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1894) [1898.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1898) [1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1899) [R. 2,51,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,15) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,16) [63,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,44) *vinaṅkṣyāmi*
-[MBH. 3,2861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2861) [2864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2864)
+[MBH. 3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) = [≈Вульг. 3.59.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A059_S013) = ≈крит. 03,56.13a *vinaśiṣyanti*
+[1,3491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3491) [6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) = [≈Вульг. 1.157.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S006) = ≈крит. 01,145.6a [13,1815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1815) = [≈Вульг. 13.26.57](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S057) = ≈крит. 13,27.56a [1894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1894) = [≈Вульг. 13.27.29](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A027_S029) = ≈крит. 13,28.27c [1898.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1898) = [≈Вульг. 13.28.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A028_S002) = ≈крит. 13,29.2a [1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1899) = [≈Вульг. 13.28.3](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A028_S003) = ≈крит. 13,29.3a [R. 2,51,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,15) [16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,16) [63,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,44) *vinaṅkṣyāmi*
+[MBH. 3,2861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2861) = [≈Вульг. 3.73.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S010) = ≈крит. 03,71.10a [2864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2864) = [≈Вульг. 3.73.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S013) = ≈крит. 03,71.13c
 [BHAG. 18,58.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,58)
 [R. 3,45,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,16) [17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,17) [54,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,25) [6,14,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,14,9)
 [BHAṬṬ. 16,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,26) *vinaṅkṣanti* (sic)
-[MBH. 1,4973.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4973) мед. [MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) [6187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6187) [3,10700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10700) [R. 5,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,21) *vinaṣṭa* потерянный, исчезнувший: *asthivinaṣṭaśalya*
+[MBH. 1,4973.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4973) = [≈Вульг. 1.128.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S010) = ≈крит. 01,119.9c мед. [MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) = [≈Вульг. 1.75.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S022) = ≈крит. 01,70.19c [6187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6187) = [≈Вульг. 1.157.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S030) = ≈крит. 01,145.30a [3,10700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10700) = [≈Вульг. 3.133.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A133_S027) = ≈крит. 03,133.24a [R. 5,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,21) *vinaṣṭa* потерянный, исчезнувший: *asthivinaṣṭaśalya*
 [SUŚR. 1,24,10.] *sodarī punarasya grahaṇaviplave vinaṣṭā . tadanveṣaṇāya yatiṣye*
 [MĀLAV. 9,3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?9,3) *˚cakṣus*
-[MBH. 3,16665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16665) *˚dṛṣṭi*
+[MBH. 3,16665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16665) = [≈Вульг. 3.294.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A294_S008) = ≈крит. 03,278.8a *˚dṛṣṭi*
 [BHĀG. P. 3,1,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,6) *˚dharme deśe*
 [RĀJA-TAR. 1,314.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,314) погибший, умерший: *veṇo vinaṣṭo 'vinayāt*
 [M. 7,41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,41)
-[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) [2,2518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2518) *hā hatāsmi vinaṣṭāsmi bhītāsmi vijane vane* я погиб
-[3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3) [I,324.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,324) *vinaṣṭā vā pranaṣṭā vā bhakṣitā vāpi maithilī*
+[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) = [≈Вульг. 1.157.31](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S031) = ≈крит. 01,145.31a [2,2518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2518) = [≈Вульг. 2.77.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A077_S005) = ≈крит. 02,68.5a *hā hatāsmi vinaṣṭāsmi bhītāsmi vijane vane* я погиб
+[3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S003) = ≈крит. 03,60.3a [PAÑCAT. 21,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,3) [I,324.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,324) *vinaṣṭā vā pranaṣṭā vā bhakṣitā vāpi maithilī*
 [R. 5,15,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,37) *vinaṣṭaṃ vā pranaṣṭaṃ vā na yuktamanuśocitum*
 [71,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,71,7) *naṣṭaṃ vinaṣṭaṃ kṛmibhiḥ śvahataṃ viṣame mṛtam (paśum)*
 [M. 8,232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,232) испорченный, пришедший в негодность (о вещах)
@@ -93,7 +93,7 @@
 [ŚAT. BR. 5,5,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,3,1)
 [AV. 3,1,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.05) *tānoṣadhe tvaṃ gandhena viṣūcīnānvi nāśaya*
 [8,6,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.006.html#av08.006.10) [19,15,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.015.html#av19.015.02) *pṛthivīm*
-[MBH. 14,54.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.54) *janapadau*
+[MBH. 14,54.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.54) = [≈Вульг. 14.3.14](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A003_S014) = ≈крит. 14,3.14c *janapadau*
 [R. 1,26,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,27) [55,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,27) [65,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,11) [3,36,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,36,16) [5,37,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,42)
 [VARĀH. BṚH. S. 39 (38),8.]
 [KATHĀS. 25,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,77)
@@ -104,17 +104,17 @@
 [SUŚR. 1,120,1.]
 [R. 2,24,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,22) *ūrdhvakaro divasakarastāmraḥ senāpatiṃ vināśayati* stürzt ihn in's Verderben
 [VARĀH. BṚH. S. 3,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,21) [25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,25) [11,54.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,54) [83 (80,c),6.] *abarhānmāṃsabhūtānnaḥ kravyādākhurvināśayet* umbringen
-[MBH. 1,8382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8382) [16,275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.275)
+[MBH. 1,8382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8382) = [≈Вульг. 1.228.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A228_S002) = ≈крит. 01,219.1e [16,275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.275) = [≈Вульг. 16.8.23](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A008_S023) = ≈крит. 16,9.23a
 [HARIV. 4251.](https://sanskrit-lexicon-scans.github.io/hariv?4251)
 [R. 3,16,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,18)
 [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [87,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?87,24) [98,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,22)
 [ŚUK. in LA. 43,1.]
 *mā naḥ sarvānvyanīnaśaḥ*
-[MBH. 1,4169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4169) sich verlieren machen, in's Leere gehen machen: *āditya eṣāmastraṃ vi nāśayatu*
+[MBH. 1,4169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4169) = [≈Вульг. 1.103.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A103_S024) = ≈крит. 01,97.24a sich verlieren machen, in's Leere gehen machen: *āditya eṣāmastraṃ vi nāśayatu*
 [AV. 11,10,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.010.html#av11.010.16) zugeben, dass Etwas zu Grunde geht
 [RAGH. 2,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,56) Auffallend ist die Verbindung mit einem gen. in der Stelle: *vināśayati pāto 'smin lokānāmasakṛdyataḥ*
 [SŪRYAS. 11,4.] Der aor. in der intrans. Bed. des simpl. zu Grunde gehen, umkommen
-[MBH. 4,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.426) [5,767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.767)
+[MBH. 4,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.426) [5,767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.767) = [≈Вульг. 5.27.1](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A027_S001) = ≈крит. 05,27.1c
 [R. 2,110,30](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,110,30); vgl. das caus. vom simpl. — desid. vom caus. *vināśayiṣitaḥ* (ohne Redupl.!)
 [DAŚAK. 112,3] v. u.
 
@@ -125,7 +125,7 @@
 [ŚAT. BR. 5,5,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,3,1)
 [AV. 3,1,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.05) *tānoṣadhe tvaṃ gandhena viṣūcīnānvi nāśaya*
 [8,6,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.006.html#av08.006.10) [19,15,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.015.html#av19.015.02) *pṛthivīm*
-[MBH. 14,54.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.54) *janapadau*
+[MBH. 14,54.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.54) = [≈Вульг. 14.3.14](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A003_S014) = ≈крит. 14,3.14c *janapadau*
 [R. 1,26,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,27) [55,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,27) [65,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,11) [3,36,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,36,16) [5,37,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,42)
 [VARĀH. BṚH. S. 39 (38),8.]
 [KATHĀS. 25,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,77)
@@ -136,17 +136,17 @@
 [SUŚR. 1,120,1.]
 [R. 2,24,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,22) *ūrdhvakaro divasakarastāmraḥ senāpatiṃ vināśayati* ввергает его в гибель
 [VARĀH. BṚH. S. 3,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,21) [25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,25) [11,54.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,54) [83 (80,c),6.] *abarhānmāṃsabhūtānnaḥ kravyādākhurvināśayet* умерщвлять
-[MBH. 1,8382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8382) [16,275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.275)
+[MBH. 1,8382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8382) = [≈Вульг. 1.228.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A228_S002) = ≈крит. 01,219.1e [16,275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.275) = [≈Вульг. 16.8.23](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A008_S023) = ≈крит. 16,9.23a
 [HARIV. 4251.](https://sanskrit-lexicon-scans.github.io/hariv?4251)
 [R. 3,16,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,18)
 [PAÑCAT. 71,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) [87,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?87,24) [98,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,22)
 [ŚUK. in LA. 43,1.]
 *mā naḥ sarvānvyanīnaśaḥ*
-[MBH. 1,4169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4169) заставлять теряться, обращать в пустоту: *āditya eṣāmastraṃ vi nāśayatu*
+[MBH. 1,4169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4169) = [≈Вульг. 1.103.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A103_S024) = ≈крит. 01,97.24a заставлять теряться, обращать в пустоту: *āditya eṣāmastraṃ vi nāśayatu*
 [AV. 11,10,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.010.html#av11.010.16) допускать, чтобы нечто пропало
 [RAGH. 2,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,56) Примечательно сочетание с gen. в месте: *vināśayati pāto 'smin lokānāmasakṛdyataḥ*
 [SŪRYAS. 11,4.] aor. в intrans. знач. у simpl. погибать, гибнуть
-[MBH. 4,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.426) [5,767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.767)
+[MBH. 4,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.426) [5,767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.767) = [≈Вульг. 5.27.1](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A027_S001) = ≈крит. 05,27.1c
 [R. 2,110,30](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,110,30); ср. caus. от simpl. — desid. от caus. *vināśayiṣitaḥ* (без Redupl.!)
 [DAŚAK. 112,3] снизу
   <sub>attested</sub>

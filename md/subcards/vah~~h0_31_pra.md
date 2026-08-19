@@ -31,13 +31,13 @@
 *pravahajjalānām*
 [KULL.] zu [M. 3,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,163) hinbrausen, wehen: *kālena śīghrāḥ pravahanti vātāḥ*
 [Spr. 3922.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3922) zuführen: *tatra divyāni puṣpāṇi prāvahatpavanastadā*
-[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) *āmodam*
+[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) = [≈Вульг. 13.83.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A083_S043) = ≈крит. 13,82.40c *āmodam*
 [BHAṬṬ. 8,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,52) hinführen zu (acc.): *viṣayān*
-[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) med. davonfahren: *pra yadvahethe mahinā rathasya*
+[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) = [≈Вульг. 12.301.50](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A301_S050) = ≈крит. 12,290.49a med. davonfahren: *pra yadvahethe mahinā rathasya*
 [ṚV. 1,180,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.09) *praitaśebhirvahamāna ojasā*
 [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) [77,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.06)
 
-- **RU:** 1) везти дальше, тянуться вперёд
+- **RU:** 1) везти дальше, тянуться вперед
 [ṚV. 10,94,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.06) *(somaḥ) prohyamāṇaḥ*
 [VS. 8,55.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,55)
 [AIT. BR. 1,13.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,13) *havirdhāne*
@@ -49,16 +49,16 @@
 [R. 4,44,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,63) *idamāpaḥ pra vahata duritam*
 [ṚV. 1,23,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.023.html#rv01.023.22) [10,17,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.10)
 [VS. 6,17.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,17) *āpo marīcīḥ pravahantu no dhiyaḥ*
-[ĀŚV. GṚHY. 2,4,14.] течь вперёд, течь: *pravīramuṇḍapāṣāṇāḥ prāvahanrudhirāpagāḥ*
+[ĀŚV. GṚHY. 2,4,14.] течь вперед, течь: *pravīramuṇḍapāṣāṇāḥ prāvahanrudhirāpagāḥ*
 [KATHĀS. 116,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?116,65) *adyāpi kuntavāhinyaḥ pravahantyuttarāpathe*
 [RĀJA-TAR. 4,306.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,306)
 
 *pravahajjalānām*
 [KULL.] к [M. 3,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,163) мчаться, дуть: *kālena śīghrāḥ pravahanti vātāḥ*
 [Spr. 3922.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3922) подводить, доставлять: *tatra divyāni puṣpāṇi prāvahatpavanastadā*
-[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) *āmodam*
+[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) = [≈Вульг. 13.83.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A083_S043) = ≈крит. 13,82.40c *āmodam*
 [BHAṬṬ. 8,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,52) вести к (acc.): *viṣayān*
-[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) мед. уезжать, отплывать: *pra yadvahethe mahinā rathasya*
+[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) = [≈Вульг. 12.301.50](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A301_S050) = ≈крит. 12,290.49a мед. уезжать, отплывать: *pra yadvahethe mahinā rathasya*
 [ṚV. 1,180,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.09) *praitaśebhirvahamāna ojasā*
 [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) [77,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.06)
   <sub>attested</sub>
@@ -94,7 +94,7 @@
 **caus-2))** — 2) im Fliessen entführen, pass. fortgeschwemmt werden: *sa tvevaṃ naikadhā chinnaḥ kṣāranadyāṃ pravāhyate*
 [MĀRK. P. 14,68.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,68)
 
-- **RU:** — 2) уносить в потоке, pass. быть унесённым течением: *sa tvevaṃ naikadhā chinnaḥ kṣāranadyāṃ pravāhyate*
+- **RU:** — 2) уносить в потоке, pass. быть унесенным течением: *sa tvevaṃ naikadhā chinnaḥ kṣāranadyāṃ pravāhyate*
 [MĀRK. P. 14,68.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,68)
   <sub>attested</sub>
 
@@ -106,14 +106,14 @@
 - **RU:** — 3) приводить в движение, пускать в ход: *ūrdhvaṃ cāpi pravāhyantāṃ prāsā vai tomarāṇi ca*
 [HARIV. 5487](https://sanskrit-lexicon-scans.github.io/hariv?5487) (*nivāhyantāṃ* вместо которого
 [5009](https://sanskrit-lexicon-scans.github.io/hariv?5009)). *lokayātrām*
-[R. ed. Bomb. 2,109,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,109,27)
+[R. Бомбейская ред. 2,109,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,109,27)
   <sub>attested</sub>
 
 **caus-4))** — 4) *lomapravāhitam*
-[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
+[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Вульг. 6.48.57](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A048_S057) = крит. — fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
 
 - **RU:** — 4) *lomapravāhitam*
-[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) ошибочно вместо *lomapravāhinam* (см.), как читает [ed. Bomb.].
+[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Вульг. 6.48.57](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A048_S057) = крит. — ошибочно вм. *lomapravāhinam* (см.), как читает [Бомбейская ред.].
   <sub>attested</sub>
 
 **addendum)** — Vgl. *pravāhaka, pravāhaṇa* .

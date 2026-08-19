@@ -44,5 +44,5 @@ _PWG article — 3 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 
 **SCH-corrigendum)** *ahiphena , lies n. statt m.
 
-- **RU:** *ahiphena, читать n. вм. m.
+- **RU:** *ahiphena, читать n. вместо m.
   <sub>lexicographic</sub>

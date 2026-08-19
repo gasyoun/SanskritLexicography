@@ -8,9 +8,9 @@
 - **RU:** **1.** √*bhid*, *bhadati*, *bhinatti*; в виде исключения также Med. (*bhindāna* [ṚV. 6,27,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.027.html#rv06.027.06)).
   <sub>attested</sub>
 
-**1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
+**1)** — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A092_S030) = ≈крит. 06,88.27a fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
 
-- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) ошибочно вм. *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
+- **RU:** 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A092_S030) = ≈крит. 06,88.27a ошибочно вм. *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
   <sub>attested</sub>
 
 **2)** — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
@@ -50,7 +50,7 @@
 
 **9)** — 9〉 Pass. sich abtheilen —, sich fernhalten von (Instr.)
 
-- **RU:** 9〉 Pass. отделяться, держаться в стороне от (Instr.)
+- **RU:** 9〉 Pass. отделяться, держаться в стороне от (Ins.)
   <sub>attested</sub>
 
 **10)** — 10〉 Jmd mit sich selbst entzweien, irre machen, umstimmen; nur Pass.
@@ -70,7 +70,7 @@
 
 **13)** — 13〉 *bhinna* vermischt —, verbunden mit (Instr. oder im Comp. vorangehend), hängend —, haftend —, hängen geblieben an (Loc. oder im Comp. vorangehend).
 
-- **RU:** 13〉 *bhinna* смешанный, соединенный с (Instr. или в Comp. предшествующем), подвешенный, прикрепленный, застрявший на (Loc. или в Comp. предшествующем).
+- **RU:** 13〉 *bhinna* смешанный, соединенный с (Ins. или в Comp. предшествующем), подвешенный, прикрепленный, застрявший на (Loc. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **caus-header)** — Caus. *bhedayati*
@@ -78,9 +78,9 @@
 - **RU:** — Caus. *bhedayati*
   <sub>attested</sub>
 
-**caus-1)** — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52).
+**caus-1)** — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52) = [≈Вульг. 3.3.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S005) = ≈крит. 03,3.5a.
 
-- **RU:** 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52).
+- **RU:** 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52) = [≈Вульг. 3.3.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S005) = ≈крит. 03,3.5a.
   <sub>attested</sub>
 
 **caus-2)** — 2〉 zerstören, zu Nichte machen.
@@ -115,7 +115,7 @@
 
 **pref-anu)** — Mit *vyati*, *˚bhinna* unzertrennlich verbunden mit (Instr.) [Comm. zu NYĀYAS. 4,2,18].
 
-- **RU:** С *vyati*, *˚bhinna* неразрывно связанный с (Instr.) [Comm. zu NYĀYAS. 4,2,18].
+- **RU:** С *vyati*, *˚bhinna* неразрывно связанный с (Ins.) [Comm. zu NYĀYAS. 4,2,18].
   <sub>attested</sub>
 
 **pref-ava-header)** — Mit *anu*
@@ -128,9 +128,9 @@
 - **RU:** 1〉 раскалывать вдоль, разрезать вдоль.
   <sub>attested</sub>
 
-**pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) fehlerhaft für *ko nu bhi˚*.
+**pref-ava-2)** — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c fehlerhaft für *ko nu bhi˚*.
 
-- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) ошибочно вм. *ko nu bhi˚*.
+- **RU:** 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c ошибочно вм. *ko nu bhi˚*.
   <sub>attested</sub>
 
 **pref-abhi)** — Mit *antar* auf Verrath sinnen [DAŚAK. 19,8].
@@ -450,7 +450,7 @@
 
 **pref-aa2-7i)** — i〉 vermengt mit (Instr.)
 
-- **RU:** i〉 смешанный с (Instr.)
+- **RU:** i〉 смешанный с (Ins.)
   <sub>attested</sub>
 
 **pref-aa2-caus)** — Caus. Jmd von Jmd (Abl.) entfernen, abspänstig machen.

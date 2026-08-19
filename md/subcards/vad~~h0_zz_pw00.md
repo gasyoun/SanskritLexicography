@@ -5,7 +5,7 @@
 
 **root)** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* und *˚vādeyus* metrisch für *˚vadata* und *˚vadeyus*)
 
-- **RU:** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вместо *˚vadata* и *˚vadeyus*)
+- **RU:** √*vad*, *vadati*, *˚te* (*udeyam* [AV.], *˚vādata* и *˚vādeyus* метрически вм. *˚vadata* и *˚vadeyus*)
   <sub>attested</sub>
 
 **1)** — 1〉 Act.
@@ -35,7 +35,7 @@
 
 **1e)** — e〉 ankündigen, voraussagen, anzeigen, verrathen (von einem leblosen Subject [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), besagen, bezeichnen.
 
-- **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевлённом подлежащем [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), означать, обозначать.
+- **RU:** — e〉 возвещать, предвещать, указывать, выдавать (о неодушевленном подлежащем [304,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?304)), означать, обозначать.
   <sub>attested</sub>
 
 **1f)** — f〉 behaupten, annehmen.
@@ -55,7 +55,7 @@
 
 **1i)** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) vielleicht fehlerhaft für *ava* *das* (von *dar*).
 
-- **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) возможно, ошибочно вместо *ava* *das* (от *dar*).
+- **RU:** — i〉 *a*.*v*.*ad*.*as* [ṚV. 3,30,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.05) возможно, ошибочно вм. *ava* *das* (от *dar*).
   <sub>attested</sub>
 
 **2)** — 2〉 Med.
@@ -105,7 +105,7 @@
 
 **3a)** — a〉 gesagt, gesprochen, — in Betreff von (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
 
-- **RU:** — a〉 сказанный, произнесённый, — касательно (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
+- **RU:** — a〉 сказанный, произнесенный, — касательно (*prati* [190,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190)). *ityudite* impers. [126,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?126).
   <sub>attested</sub>
 
 **3b)** — b〉 angeredet, angesprochen.
@@ -115,7 +115,7 @@
 
 **3c)** — c〉 mitgetheilt, verkündet, angegeben.
 
-- **RU:** — c〉 сообщённый, возвещённый, указанный.
+- **RU:** — c〉 сообщенный, возвещенный, указанный.
   <sub>attested</sub>
 
 **3d)** — d〉 gelehrt, so v. a. recipirt, richtig. Compar. *uditatara*.
@@ -150,7 +150,7 @@
 
 **caus-4)** — 4〉 *von Jmd (Instr.) ein musikalisches Instrument (Acc.) spielen lassen.
 
-- **RU:** — 4〉 *велеть кому-либо (Instr.) играть на музыкальном инструменте (Acc.).
+- **RU:** — 4〉 *велеть кому-либо (Ins.) играть на музыкальном инструменте (Acc.).
   <sub>lexicographic</sub>
 
 **caus-5)** — 5〉 sprechen, hersagen.
@@ -288,7 +288,7 @@
 
 **vi2-1a)** — a〉 seinen Unmuth auslassen gegen Jmd, tadeln, schmähen; mit Gen. oder Acc.
 
-- **RU:** — a〉 выражать своё недовольство на кого-либо, порицать, поносить; с Gen. или Acc.
+- **RU:** — a〉 выражать свое недовольство на кого-либо, порицать, поносить; с Gen. или Acc.
   <sub>attested</sub>
 
 **vi2-1b)** — b〉 Jmd (Acc.) durch Reden zerstreuen.
@@ -308,7 +308,7 @@
 
 **vi2-2)** — 2〉 Med. geringschätzig sprechen von, schmähen, tadeln; mit Acc. [CARAKA. 1,29]. [ŚIŚ. 17,19]. mit Instr. [BĀLAR. 44,12]. mit Dat. [BHAṬṬ.]
 
-- **RU:** — 2〉 Med. говорить пренебрежительно о, поносить, порицать; с Acc. [CARAKA. 1,29]. [ŚIŚ. 17,19]. с Instr. [BĀLAR. 44,12]. с Dat. [BHAṬṬ.]
+- **RU:** — 2〉 Med. говорить пренебрежительно о, поносить, порицать; с Acc. [CARAKA. 1,29]. [ŚIŚ. 17,19]. с Ins. [BĀLAR. 44,12]. с Dat. [BHAṬṬ.]
   <sub>attested</sub>
 
 **nind-header)** 
@@ -364,12 +364,12 @@
 
 **abhi2-caus-2)** — 2〉 *Med. Jmd (Acc.) durch Jmd (Acc. oder Instr.) begrüssen lassen.
 
-- **RU:** — 2〉 *Med. велеть кому-либо (Acc.) быть приветствованным кем-либо (Acc. или Instr.).
+- **RU:** — 2〉 *Med. велеть кому-либо (Acc.) быть приветствованным кем-либо (Acc. или Ins.).
   <sub>lexicographic</sub>
 
 **abhi2-caus-3)** — 3〉 Med. Jmd (Dat.) seine Verehrung bezeigen [ŚĀṄKH. GṚHY. 4,12].
 
-- **RU:** — 3〉 Med. выражать кому-либо (Dat.) своё почтение [ŚĀṄKH. GṚHY. 4,12].
+- **RU:** — 3〉 Med. выражать кому-либо (Dat.) свое почтение [ŚĀṄKH. GṚHY. 4,12].
   <sub>attested</sub>
 
 **abhi2-caus-4)** — 4〉 Act. Etwas hersagen lassen.
@@ -494,5 +494,5 @@
 
 **abhi3-1d)** — d〉 in der dunkelen Stelle [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) zieht [SĀY.] *upa* zum Acc.
 
-- **RU:** — d〉 в тёмном месте [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) [SĀY.] *upa* относит к Acc.
+- **RU:** — d〉 в темном месте [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) [SĀY.] *upa* относит к Acc.
   <sub>attested</sub>

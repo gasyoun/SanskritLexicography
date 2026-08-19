@@ -10,7 +10,7 @@ Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) is
 
 - **RU:** *āp*
  2)
-стк. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) имеется в виду *apus* от *pā* защищать. — partic. *āpta* разделённый
+стк. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) имеется в виду *apus* от *pā* защищать. — partic. *āpta* разделенный
 [SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.]
   <sub>attested</sub>
 
@@ -23,18 +23,18 @@ Z. 6 [M. 1,63](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,63) is
 
 **3)** — *pra*
  2) mit infin. bekommen zu: *khādituṃ prāpyate yābat*
-[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) — partic. *prāpta*
+[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515 "Spr. (II) 7515: khādituṃ prāpyate yāvattāvadeva hi bāndhavāḥ | śiśire padminīṃ bhṛṅgaḥ kaṭākṣeṇāpi nekṣate || — Nur so lange, als sie Etwas zu essen bekommen, sind die Verwandten da: in der kühlen Jahreszeit würdigt eine Biene eine Lotuspflanze nicht einmal eines Seitenblickes.") — partic. *prāpta*
 
 - **RU:** — *pra*
  2) с infin. получать в качестве: *khādituṃ prāpyate yābat*
-[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) — partic. *prāpta*
+[Spr. (II) 7515.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515 "Spr. (II) 7515: khādituṃ prāpyate yāvattāvadeva hi bāndhavāḥ | śiśire padminīṃ bhṛṅgaḥ kaṭākṣeṇāpi nekṣate || — Nur so lange, als sie Etwas zu essen bekommen, sind die Verwandten da: in der kühlen Jahreszeit würdigt eine Biene eine Lotuspflanze nicht einmal eines Seitenblickes.") — partic. *prāpta*
   <sub>attested</sub>
 
 **4)** 4) *tejaḥkṣamāyaśaḥ˚* so v. a. versehen mit
 [R. ed. Bomb. 1,7,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,7,8)
 
-- **RU:** 4) *tejaḥkṣamāyaśaḥ˚* так преим. снабжённый чем-л.
-[R. ed. Bomb. 1,7,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,7,8)
+- **RU:** 4) *tejaḥkṣamāyaśaḥ˚* так преим. снабженный чем-л.
+[R. Бомбейская ред. 1,7,8.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,7,8)
   <sub>attested</sub>
 
 **5)** — *saṃparipra* desid. s. *saṃpariprepsu* .

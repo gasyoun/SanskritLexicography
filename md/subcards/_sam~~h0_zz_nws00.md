@@ -3,9 +3,9 @@
 `_sam~~h0_zz_nws00`
 
 
-**NWS-1)** *śam (=pṭ śam 1)* [Ved , unsp] wirken, mit Eifer thätig sein, sich abmühen (mit dem Instr dessen, wodurch oder womit man thätig ist). beim Gottesdienst thätig sein (durch Opferbereiten), eifrig beten. e. Gotte (Dat) eifrig dienen (durch Gebet oder Opferbereitung). wirksam sichern vor ( purā́ m. Abl). Vgl śamāy und ścam
+**NWS-1)** *śam (=pw śam 1)* [Ved , unsp] wirken, mit Eifer thätig sein, sich abmühen (mit dem Instr dessen, wodurch oder womit man thätig ist). beim Gottesdienst thätig sein (durch Opferbereiten), eifrig beten. e. Gotte (Dat) eifrig dienen (durch Gebet oder Opferbereitung). wirksam sichern vor ( purā́ m. Abl). Vgl śamāy und ścam
 
-- **RU:** *śam (=pṭ śam 1)* [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Instr. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl). Ср. śamāy und ścam. [NWS: Graßmann 1873 (1996) : 1378]
+- **RU:** *śam (=pw śam 1)* [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Ins. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl.). Ср. śamāy и ścam. [NWS: Graßmann 1873 (1996) : 1378]
   <sub>attested</sub>
 
 **NWS-2)** [Ved , unsp] eifrig sein. AB 2,7,11 . [ = saṃjñapayata (Komm). ]
@@ -13,24 +13,24 @@
 - **RU:** [Ved , unsp] быть усердным. AB 2,7,11 . [ = saṃjñapayata (Komm). ] [NWS: Hillebrandt 1885 : 119]
   <sub>attested</sub>
 
-**NWS-3)** [Ved , unsp] to work, to perform worship, to praise. ṚV I,85,12
+**NWS-3)** [Ved , unsp] to work, to perform worship, to praise. [ṚV I,85,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.12)
 
-- **RU:** [Ved , unsp] трудиться, совершать богослужение, восхвалять. ṚV I,85,12. [NWS: Vedic Hymns I : 516]
+- **RU:** [Ved , unsp] трудиться, совершать богослужение, восхвалять. [ṚV I,85,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.12). [NWS: Vedic Hymns I : 516]
   <sub>attested</sub>
 
-**NWS-4)** [Ved , unsp] ( II Ā ) (das Opfer resp. das Opfertier) zurichten, zubereiten, absolut: das Opfer richten, die nötigen Vorbereitungen zum Opfer treffen. ṚV 5,2,7 . im ṚV nur Aor und Perf
+**NWS-4)** [Ved , unsp] ( II Ā ) (das Opfer resp. das Opfertier) zurichten, zubereiten, absolut: das Opfer richten, die nötigen Vorbereitungen zum Opfer treffen. [ṚV 5,2,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.07) . im ṚV nur Aor und Perf
 
-- **RU:** [Ved , unsp] ( II Ā ) (жертву или жертвенное животное) снаряжать, приготовлять; абсолютно: устраивать жертвоприношение, производить необходимые приготовления к жертве. ṚV 5,2,7 . в ṚV только Aor и Perf. [NWS: Geldner 1907 : 177]
+- **RU:** [Ved , unsp] ( II Ā ) (жертву или жертвенное животное) снаряжать, приготовлять; абсолютно: устраивать жертвоприношение, производить необходимые приготовления к жертве. [ṚV 5,2,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.002.html#rv05.002.07) . в ṚV только Aor и Perf. [NWS: Geldner 1907 : 177]
   <sub>attested</sub>
 
-**NWS-5)** *śám (=pṭ śám 2) + as : ṭohlergehen. ṚV 1,114,1 .* [Ved , unsp] + bhū : guttun. ṚV 10,37,10 . Ved , unsp
+**NWS-5)** *śám (=pw śám 2) + as : ṭohlergehen. ṚV 1,114,1 .* [Ved , unsp] + bhū : guttun. [ṚV 10,37,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.037.html#rv10.037.10) . Ved , unsp
 
-- **RU:** *śám (=pṭ śám 2) + as : ṭohlergehen. ṚV 1,114,1 .* [Ved , unsp] + bhū : делать добро, идти на благо. ṚV 10,37,10 . [NWS: Geldner 1907 (N) : 236]
+- **RU:** *śám (=pw śám 2) + as : ṭohlergehen. [ṚV 1,114,1 .* [Ved , unsp] + bhū : делать добро, идти на благо. ṚV 10,37,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.114.html#rv01.114.01) . [NWS: Geldner 1907 (N) : 236]
   <sub>attested</sub>
 
-**NWS-6)** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) to become tired, finish, stop, come to an end, rest, be quiet or calm or satisfied or contented. TSaṃ , ŚB . to cease, be allayed or extinguished. Mbh , Kāvya(MW)
+**NWS-6)** *śam (=pw śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) to become tired, finish, stop, come to an end, rest, be quiet or calm or satisfied or contented. TSaṃ , ŚB . to cease, be allayed or extinguished. Mbh , Kāvya(MW)
 
-- **RU:** *śam (=pṭ śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворённым, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
+- **RU:** *śam (=pw śam 2)* [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворенным, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
   <sub>attested</sub>
 
 **NWS-7)** [Śā , Med] ( śāmyati VI ) relieve, cure. Hoernle 1893-1912 (II) 39.260
@@ -50,7 +50,7 @@
 
 **NWS-10)** *+ ni : to be eḷtinguished. dhharmaś , dhivyāv .* [Gen , unsp (s.v. niśam )] + pra ( praśānta ): destroyed. Mbh , Kāvya(MW) . Gen , unsp ; MW : 695 (s.v. praśān )
 
-- **RU:** *+ ni : to be eḷtinguished. dhharmaś , dhivyāv .* [Gen , unsp (s.v. niśam )] + pra ( praśānta ): уничтоженный. Mbh , Kāvya(MW) . [NWS: MW : 695 (s.v. praśān)]
+- **RU:** *+ ni : to be eḷtinguished. dhharmaś , dhivyāv .* [Gen. , unsp (s.v. niśam )] + pra ( praśānta ): уничтоженный. Mbh , Kāvya(MW) . [NWS: MW : 695 (s.v. praśān)]
   <sub>attested</sub>
 
 **NWS-11)** *+ prati : (° śāmayati , also ° śam ° and erroneously ° śrām °, ° sam °) (1) stores aṭay (property); (2) puts aṭay (a monk’s boṭl and robe, aṛter his begging-round); (3) harbors (a person), entertains (privately). śaddhph 114.13 , ṃvu i.56.2 , ṃśV ii.99.15 .* [Buddh , unsp (s.v. pratiśāmayati )] – (° śāmaya -, ° śāme -): weglegen, wegstellen; aufräumen. AbhisDh § 8.5.9A2 . Buddh , unsp
@@ -60,7 +60,7 @@
 
 **NWS-12)** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: quieted, calmed, allayed, appeased. Bbh 169.3 . Buddh , unsp ; BHSD : 519 (s.v. vyupaśānta )
 
-- **RU:** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворённый. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
+- **RU:** *+ pravi : (° śāmayati ) perh. stills, causes to subside. dhivyāv 542.22 .* [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворенный. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
   <sub>attested</sub>
 
 **NWS-13)** *– (° śamaya -): ṣur ṇuhe bringen, erledigen. ābhisdhh § 38.8.30bh3 .* [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : "déposer ensemble". Caland 1924, p. 166 . Ved , unsp
@@ -78,9 +78,9 @@
 - **RU:** [ śānta ] исполненный покоя. [NWS: Schlingloff 1964 : 245 (s.v. śānta)]
   <sub>attested</sub>
 
-**NWS-16)** *śam (=pṭ śam 3)* [Gen , unsp] ( śamnāti IX ) to put an end to, destroy. Kā(MW)
+**NWS-16)** *śam (=pw śam 3)* [Gen , unsp] ( śamnāti IX ) to put an end to, destroy. Kā(MW)
 
-- **RU:** *śam (=pṭ śam 3)* [Gen , unsp] ( śamnāti IX ) класть конец, уничтожать. Kā(MW). [NWS: MW : 1053]
+- **RU:** *śam (=pw śam 3)* [Gen , unsp] ( śamnāti IX ) класть конец, уничтожать. Kā(MW). [NWS: MW : 1053]
   <sub>attested</sub>
 
 **NWS-17)** *śám* [Ved , unsp] Indekl Heil, Freude
@@ -88,19 +88,19 @@
 - **RU:** *śám* [Ved , unsp] Indekl благо, радость. [NWS: Hillebrandt 1885 : 119]
   <sub>attested</sub>
 
-**NWS-18)** [Ved , unsp] well, pleasant, sweet, health. ṚV I,165,4
+**NWS-18)** [Ved , unsp] well, pleasant, sweet, health. [ṚV I,165,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.04)
 
-- **RU:** [Ved , unsp] хорошо, приятно, сладостно, здоровье. ṚV I,165,4. [NWS: Vedic Hymns I : 516]
+- **RU:** [Ved , unsp] хорошо, приятно, сладостно, здоровье. [ṚV I,165,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.04). [NWS: Vedic Hymns I : 516]
   <sub>attested</sub>
 
-**NWS-19)** [Ved , unsp] Subst [nur śámi (Lok) = Indekl] Zurüstung, Vorbereitung, Opferveranstaltung, Aufwartung. ṚV 1,87,5 ; śámī . Indekl recht , zusagend, nach Wunsch, glückbringend, heilsam, zum Glück, zum Wohl. ṚV 10,97,18 . + as oder bhū : recht sein, zusagen, zuträglich sein, gut tun, Glück bringen, zum Wohl dienen; wohlbekommen, zuträglich sein. ṚV 1,5,7 , ṚV 8,48,4 . als Subst gebraucht: Wohlsein, Gesundheit, Heil, alles Gute. ṚV 7,86,8
+**NWS-19)** [Ved , unsp] Subst [nur śámi (Lok) = Indekl] Zurüstung, Vorbereitung, Opferveranstaltung, Aufwartung. [ṚV 1,87,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.087.html#rv01.087.05) ; śámī . Indekl recht , zusagend, nach Wunsch, glückbringend, heilsam, zum Glück, zum Wohl. [ṚV 10,97,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.18) . + as oder bhū : recht sein, zusagen, zuträglich sein, gut tun, Glück bringen, zum Wohl dienen; wohlbekommen, zuträglich sein. [ṚV 1,5,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.005.html#rv01.005.07) , [ṚV 8,48,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.04) . als Subst gebraucht: Wohlsein, Gesundheit, Heil, alles Gute. [ṚV 7,86,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.086.html#rv07.086.08)
 
-- **RU:** [Ved , unsp] Subst [только śámi (Lok) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. ṚV 1,87,5 ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. ṚV 10,97,18 . + as oder bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. ṚV 1,5,7 , ṚV 8,48,4 . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. ṚV 7,86,8. [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
+- **RU:** [Ved , unsp] Subst [только śámi (Loc.) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. [ṚV 1,87,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.087.html#rv01.087.05) ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. [ṚV 10,97,18](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.18) . + as или bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. [ṚV 1,5,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.005.html#rv01.005.07) , [ṚV 8,48,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.04) . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. [ṚV 7,86,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.086.html#rv07.086.08). [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
   <sub>attested</sub>
 
 **NWS-20)** *śam* [Ved , unsp] Subst n ursprünglich wol: Werk, heilsames Werk. Heil, Segen. mit as oder bhū : jemandem (Dat) zum Heile gereichen, ihm lieb, angenehm sein (ebenso ohne ausgedrücktes as oder bhū ). śám yós oder śám ca yós ca : Heil und Segen
 
-- **RU:** *śam* [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as oder bhū : служить кому-либо (Dat) во благо, быть ему милым, приятным (равно без эксплицитных as oder bhū ). śám yós oder śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
+- **RU:** *śam* [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as или bhū : служить кому-либо (Dat.) во благо, быть ему милым, приятным (равно без эксплицитных as или bhū ). śám yós или śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
   <sub>attested</sub>
 
 **NWS-21)** [Reg , unsp] Indekl magic syllable. STB, S. 9, Z. 24
@@ -113,9 +113,9 @@
 - **RU:** *śaśamāná* [Ved , unsp] усердно. [NWS: Hillebrandt 1885 : 119 (s.v. śam)]
   <sub>attested</sub>
 
-**NWS-23)** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . der seine Arbeit getan hat, fertig. ṚV 10,142,6 . insbes: der alle Vorbereitungen und Arbeiten für das Opfer richtig gemacht hat, gerüstet, vorbereitet, fertig, opferbereit. ṚV 5,29,12 . + Instr: aufwartend mit. ṚV 1,151,7 . pass: (zum Opfer) hergerichtet. AV 2,34,2 . fertig, bereit. ṚV 1,24,4 . Geldner 1907 : 177 (s.v. śam )
+**NWS-23)** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . der seine Arbeit getan hat, fertig. [ṚV 10,142,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.142.html#rv10.142.06) . insbes: der alle Vorbereitungen und Arbeiten für das Opfer richtig gemacht hat, gerüstet, vorbereitet, fertig, opferbereit. [ṚV 5,29,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.029.html#rv05.029.12) . + Instr: aufwartend mit. [ṚV 1,151,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.151.html#rv01.151.07) . pass: (zum Opfer) hergerichtet. [AV 2,34,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.02) . fertig, bereit. [ṚV 1,24,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.04) . Geldner 1907 : 177 (s.v. śam )
 
-- **RU:** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвёл все приготовления и работы для жертвы; снаряжённый, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
+- **RU:** [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. [ṚV 10,142,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.142.html#rv10.142.06) . в особенности: тот, кто правильно произвел все приготовления и работы для жертвы; снаряженный, подготовленный, готовый, готовый к жертвоприношению. [ṚV 5,29,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.029.html#rv05.029.12) . + Ins.: прислуживающий посредством. [ṚV 1,151,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.151.html#rv01.151.07) . pass: (для жертвы) приготовленный. [AV 2,34,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.034.html#av02.034.02) . готовый, подготовленный. [ṚV 1,24,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.04) . [NWS: Geldner 1907 : 177 (s.v. śam)]
   <sub>attested</sub>
 
 **NWS-24)** *śámi* [Ved , unsp] Indekl śám . Geldner 1907 (N) : 236 (s.v. śám )

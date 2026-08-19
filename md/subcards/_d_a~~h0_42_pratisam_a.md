@@ -5,11 +5,11 @@
 
 **1)** — *pratisamā*
  1) auflegen (den Pfeil): (*tena*) *avidūre mṛgāndṛṣṭvā vāṇaḥ pratisamāhitaḥ*
-[MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266)
+[MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266) = [≈Вульг. 13.5.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A005_S004) = ≈крит. 13,5.3a
 
 - **RU:** — *pratisamā*
  1) накладывать (стрелу): (*tena*) *avidūre mṛgāndṛṣṭvā vāṇaḥ pratisamāhitaḥ*
-[MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266)
+[MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266) = [≈Вульг. 13.5.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A005_S004) = ≈крит. 13,5.3a
   <sub>attested</sub>
 
 **2)** — 2) Etwas wieder an seinen Platz stellen, in Ordnung bringen, wiederherstellen: *karṇakuvalayaṃ srastamiti pratisamādadhatī*

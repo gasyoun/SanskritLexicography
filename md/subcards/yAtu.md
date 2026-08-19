@@ -10,5 +10,5 @@
 
 **1 (PW))** *yatu* anzunehmen für *yatavya*.
 
-- **RU:** *yatu* следует принять вместо *yatavya*.
+- **RU:** *yatu* следует принять вм. *yatavya*.
   <sub>lexicographic</sub>

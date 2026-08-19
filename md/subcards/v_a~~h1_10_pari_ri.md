@@ -6,6 +6,6 @@
 **1)** — *pariṇi* und *praṇi˚*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), Schol.
 
-- **RU:** — *pariṇi* und *praṇi˚*
+- **RU:** — *pariṇi* и *praṇi˚*
 [P. 8,4,17](https://ashtadhyayi.com/sutraani/8/4/17), схол.
   <sub>attested</sub>

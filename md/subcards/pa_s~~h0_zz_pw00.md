@@ -60,7 +60,7 @@
 
 **11)** — 11〉 ansehen für, erkennen als, halten für, betrachten als; mit doppeltem Acc. Statt des Zweiten Acc. auch _Adv._ auf *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); statt des ersten Acc. ausnahmsweise Loc. (v. l. Acc.), statt des zweiten ein _Adv._ auf *vat*.
 
-- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вместо второго Acc. также _Adv._ при *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); вместо первого Acc. в виде исключения Loc. (v. l. Acc.), вместо второго — _Adv._ при *vat*.
+- **RU:** — 11〉 считать чем-л., признавать чем-л., принимать за, рассматривать как; с двойным Acc. Вм. второго Acc. также _Adv._ при *vat*. [140,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?140); вм. первого Acc. в виде исключения Loc. (v. l. Acc.), вм. второго — _Adv._ при *vat*.
   <sub>attested</sub>
 
 **12)** — 12〉 mit dem geistigen Auge erschauen (von Sehern und Dichtern); daher auch erfinden (z. B. Opfergebräuche). *svapnān* Traumgesichte sehen.
@@ -90,7 +90,7 @@
 
 **17)** — 17〉 *paśyāmi* in den Satz eingeschoben, so v. a. ich sehe es, ich bin davon überzeugt.
 
-- **RU:** — 17〉 *paśyāmi* вставленное в предложение, так преим. я вижу это, я убеждён в этом.
+- **RU:** — 17〉 *paśyāmi* вставленное в предложение, так преим. я вижу это, я убежден в этом.
   <sub>attested</sub>
 
 **18)** — 18〉 *paśya* sich und **paśyata* sehet interjectionsartig in den Satz eingeschoben oder vorangestellt, um die Aufmerksamkeit zu erregen. *paśya* leitet in prosaischen Schriften häufig einen Vers ein. Vgl. *spaś*.
@@ -265,7 +265,7 @@
 
 **mit_T61_4)** — 4〉 kennen, erkennen, — als (mit doppeltem Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Fehlerhaft für *˚pacyate*.
 
-- **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Ошибочно вместо *˚pacyate*.
+- **RU:** — 4〉 знать, узнавать, — как (с двойным Acc.). — *paripaśyate* [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10). Ошибочно вм. *˚pacyate*.
   <sub>attested</sub>
 
 **mit_T66)** — Mit *pra*
@@ -300,7 +300,7 @@
 
 **mit_T66_6)** — 6〉 vorausblicken, voraussehen.
 
-- **RU:** — 6〉 смотреть вперёд, предвидеть.
+- **RU:** — 6〉 смотреть вперед, предвидеть.
   <sub>attested</sub>
 
 **mit_T66_7)** — 7〉 erkennen, kennen.

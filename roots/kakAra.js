@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["kakAra"]=[{"key": "kak_ara~~h0_zz_pw", "h": "kakAra", "iast": "kakāra", "senses": [{"tag": "PW", "de_html": "<i class=sa>kakāra</i> <span class=lex>m.</span> der Laut <i class=sa>ka</i> <span class=ls title=? [Cologne Addition]>TS. PRĀT.</span>", "ru_html": "<i class=sa>kakāra</i> <span class=lex>m.</span> звук <i class=sa>ka</i> <span class=ls title=? [Cologne Addition]>TS. PRĀT.</span>", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["kakAra"]=[];

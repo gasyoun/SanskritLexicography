@@ -11,8 +11,8 @@
   <sub>attested</sub>
 
 **anu-2)** — desid. sich unterthan zu machen sich bestreben: *na jīyate nānujigīṣate 'nyān*
-[MBH. 5,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1274)
+[MBH. 5,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1274) = [≈Вульг. 5.36.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S015) = ≈крит. 05,36.15c
 
 - **RU:** — desid. стремиться подчинить себе: *na jīyate nānujigīṣate 'nyān*
-[MBH. 5,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1274)
+[MBH. 5,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1274) = [≈Вульг. 5.36.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S015) = ≈крит. 05,36.15c
   <sub>attested</sub>

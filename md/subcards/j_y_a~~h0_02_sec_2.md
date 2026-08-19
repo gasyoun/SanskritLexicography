@@ -20,21 +20,21 @@
 *yāvanna jijñāsata ātmatattvam*
 [BHĀG. P. 5,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,5) *jijñāsita* was man kennen zu lernen gewünscht hat
 [1,5,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,3) [4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,4) *jijñāsamāno rāmasya vīryam*
-[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
+[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) = [≈Вульг. 3.99.44](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A099_S044) = крит. — *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
 [R. 1,33,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,33,10) *teṣāṃ jijñāsamānānāṃ śaivaṃ dhanurupāhṛtam*
 [66,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,19) *jijñāsyatāṃ rathaḥ sadyo vyakta eṣa hiraṇmayaḥ*
-[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) *ātmānucarasya bhāvaṃ jijñāsamānā*
+[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) = [≈Вульг. 3.99.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A099_S014) = ≈крит. 03,97.12a *ātmānucarasya bhāvaṃ jijñāsamānā*
 [RAGH. 2,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,26)
 [BHAṬṬ. 8,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,33) *evaṃ hi na śāstraviṣayo jijñāsyeta*
 Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ ca*
 [R. 3,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,8)
-[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) *aśvān jijñāsamānaḥ*
-[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
+[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) = [≈Вульг. 13.160.32](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A160_S032) = ≈крит. 13,145.30a *aśvān jijñāsamānaḥ*
+[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) = [≈Вульг. 3.71.11](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S011) = ≈крит. 03,69.10a [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
 [R. 2,12,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,15) *ajijñāsañchivim*
-[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448)
+[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448) = [≈Вульг. 1.2.219](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S219) = ≈крит. 01,2.137a
 [R. 5,31,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,43) *śiviṃ jijñāsyāmaḥ* (sic)
-[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) *mayā jijñāsito hyasi*
-[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
+[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) = [≈Вульг. 3.197.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A197_S002) = крит. — *mayā jijñāsito hyasi*
+[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) = [≈Вульг. 13.14.341](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S341) = ≈крит. 13,14.177a sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
 [KATHĀS. 22,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,84)
 
 - **RU:** 1) желать познать, желать знать, желать узнать, желать ознакомиться; исследовать, испытывать, подвергать проверке: *hāsaṃ te — jijñāsāmi* я желаю знать, над чем ты смеешься
@@ -45,21 +45,21 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 *yāvanna jijñāsata ātmatattvam*
 [BHĀG. P. 5,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,5) *jijñāsita* то, что желали познать
 [1,5,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,3) [4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,4) *jijñāsamāno rāmasya vīryam*
-[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
+[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) = [≈Вульг. 3.99.44](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A099_S044) = крит. — *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
 [R. 1,33,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,33,10) *teṣāṃ jijñāsamānānāṃ śaivaṃ dhanurupāhṛtam*
 [66,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,19) *jijñāsyatāṃ rathaḥ sadyo vyakta eṣa hiraṇmayaḥ*
-[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) *ātmānucarasya bhāvaṃ jijñāsamānā*
+[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) = [≈Вульг. 3.99.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A099_S014) = ≈крит. 03,97.12a *ātmānucarasya bhāvaṃ jijñāsamānā*
 [RAGH. 2,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,26)
 [BHAṬṬ. 8,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,33) *evaṃ hi na śāstraviṣayo jijñāsyeta*
 схол. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ ca*
 [R. 3,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,8)
-[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) *aśvān jijñāsamānaḥ*
-[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
+[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) = [≈Вульг. 13.160.32](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A160_S032) = ≈крит. 13,145.30a *aśvān jijñāsamānaḥ*
+[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) = [≈Вульг. 3.71.11](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S011) = ≈крит. 03,69.10a [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
 [R. 2,12,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,15) *ajijñāsañchivim*
-[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448)
+[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448) = [≈Вульг. 1.2.219](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S219) = ≈крит. 01,2.137a
 [R. 5,31,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,43) *śiviṃ jijñāsyāmaḥ* (sic)
-[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) *mayā jijñāsito hyasi*
-[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) добиваться достоверности относительно: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
+[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) = [≈Вульг. 3.197.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A197_S002) = крит. — *mayā jijñāsito hyasi*
+[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) = [≈Вульг. 13.14.341](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S341) = ≈крит. 13,14.177a добиваться достоверности относительно: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
 [KATHĀS. 22,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,84)
   <sub>attested</sub>
 

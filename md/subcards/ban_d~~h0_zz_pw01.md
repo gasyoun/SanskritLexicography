@@ -27,7 +27,7 @@
 
 **mit-T5-2)** — 2〉 an Schnüren (Instr.) fassen.
 
-- **RU:** — 2〉 захватывать веревками (Instr.).
+- **RU:** — 2〉 захватывать веревками (Ins.).
   <sub>attested</sub>
 
 **mit-T5-3)** — 3〉 inʼs Stocken bringen. *purīṣam* [CARAKA. 5,10]. *vibaddha* inʼs Stocken gerathen, verstopft.
@@ -44,7 +44,7 @@
 — 1〉 zusammenbinden, verknüpfen, anbinden. Pass. sich verbinden, zusammenkleben, verbunden werden mit, so v. a. gehören zu (Instr. [224,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224)), zu ergänzen sein in (Loc.). *saṃbaddha* zusammengebunden; geschlossen; verbunden mit (Instr. oder im Comp. vorangehend [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223)), bedeckt mit (Instr.), erfüllt von (im Comp. vorangehend), in Verbindung stehend mit (im Comp. vorangehend), verbunden mit (im Comp. vorangehend), in Verbindung stehend mit (im Comp. vorangehend), verbunden mit (im Comp. vorangehend), so v. a. enthaltend; verbunden, so v. a. da seiend, vorhanden, sich befindend. *saṃbaddham* _Adv._ dazu, überdies.
 
 - **RU:** — С *sam*
-— 1〉 связывать вместе, соединять, привязывать. Pass. соединяться, слипаться, быть связанным с, так преим. принадлежать к (Instr. [224,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224)), быть подразумеваемым в (Loc.). *saṃbaddha* связанный вместе; закрытый; связанный с (Instr. или в Comp. предшествующий [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223)), покрытый (Instr.), наполненный (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), так преим. содержащий; связанный, так преим. находящийся здесь, наличный, пребывающий. *saṃbaddham* _Adv._ сверх того, к тому же.
+— 1〉 связывать вместе, соединять, привязывать. Pass. соединяться, слипаться, быть связанным с, так преим. принадлежать к (Ins. [224,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224)), быть подразумеваемым в (Loc.). *saṃbaddha* связанный вместе; закрытый; связанный с (Ins. или в Comp. предшествующий [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223)), покрытый (Ins.), наполненный (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), так преим. содержащий; связанный, так преим. находящийся здесь, наличный, пребывающий. *saṃbaddham* _Adv._ сверх того, к тому же.
   <sub>attested</sub>
 
 **mit-T13-2)** — 2〉 herbei-, verschaffen.
@@ -61,7 +61,7 @@
 
 **caus-T33-2)** — 2〉 verbinden heissen mit (Instr.) so v. a. sagen, dass man verbinden müsse.
 
-- **RU:** — 2〉 велеть соединять с (Instr.) так преим. говорить, что нужно соединить.
+- **RU:** — 2〉 велеть соединять с (Ins.) так преим. говорить, что нужно соединить.
   <sub>attested</sub>
 
 **mit-T36)** Mit *anusam*. *anusaṃbaddha* verbunden mit, begleitet von (im Comp. vorangehend).
@@ -71,7 +71,7 @@
 
 **mit-T39)** — Mit *abhisam* mit Etwas verbinden, so v. a. darunter verstehen. Pass. verbunden werden mit, so v. a. gehören zu (Instr.). *pratyekam* zu Jedem gehören, — zu ergänzen sein [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
 
-- **RU:** — С *abhisam* соединять с чем-либо, так преим. подразумевать под этим. Pass. быть соединенным с, так преим. принадлежать к (Instr.). *pratyekam* принадлежать к каждому, — быть подразумеваемым [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
+- **RU:** — С *abhisam* соединять с чем-либо, так преим. подразумевать под этим. Pass. быть соединенным с, так преим. принадлежать к (Ins.). *pratyekam* принадлежать к каждому, — быть подразумеваемым [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
   <sub>attested</sub>
 
 **mit-T47)** — Mit *upasam*, *uapasaṃddha* darangebunden.

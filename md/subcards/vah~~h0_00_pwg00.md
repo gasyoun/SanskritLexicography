@@ -9,7 +9,7 @@
 [TS.] *voḍhvam*
 [VS.]; *avāḍ*
 
-- **RU:** 1. *vah*, *vahati* und *vahate*
+- **RU:** 1. *vah*, *vahati* и *vahate*
 ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14) unter den *gatikarmāṇi*)
 [DHĀTUP. 23,35](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*prāpaṇe*) . imperat. *volham, volhām, ūḍhvam*
 [TS.] *voḍhvam*
@@ -23,7 +23,7 @@
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhathum, ūhe*
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhiṣe, ūhire, ūhivaṃs, ūhuṣī; vakṣyati*
 [Kār. 6] aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *vahiṣyati*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S040) = ≈крит. 01,114.31a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S042) = ≈крит. 01,141.21a
 [BHĀG. P. 4,25,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,36)
 [PAÑCAT. ed. orn. 22,21.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?22,21) *voḍhā, voḍhum*
 [P. 6,3,112.](https://ashtadhyayi.com/sutraani/6/3/112) *volhave; ūḍhvā*; pass. *uhyate; ūḍha*
@@ -37,8 +37,8 @@
 [P. 6,1,17.](https://ashtadhyayi.com/sutraani/6/1/17)
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhathum, ūhe*
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhiṣe, ūhire, ūhivaṃs, ūhuṣī; vakṣyati*
-[Кар. 6] aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *vahiṣyati*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
+[Кар. 6] aus [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *vahiṣyati*
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S040) = ≈крит. 01,114.31a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S042) = ≈крит. 01,141.21a
 [BHĀG. P. 4,25,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,36)
 [PAÑCAT. ed. orn. 22,21.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?22,21) *voḍhā, voḍhum*
 [P. 6,3,112.](https://ashtadhyayi.com/sutraani/6/3/112) *volhave; ūḍhvā*; pass. *uhyate; ūḍha*
@@ -72,22 +72,22 @@
 [TS. 1,3,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,3,8,2) *vahataṃ* (die Füsse angeredet) *pṛṇato gṛhān*
 [AV. 1,27,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.027.html#av01.027.04) *vaha vāyo niyuto yāhyasmayuḥ*
 [ṚV. 1,135,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.02) [7,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.01) — *vahanti ye* (*aśvāḥ*) *ratham*
-[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720)
+[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720) = [≈Вульг. 3.42.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S007) = ≈крит. 03,43.7a
 [R. GORR. 2,51,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,10) *te hayāḥ — avahanmām*
-[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107)
+[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107) = [≈Вульг. 5.178.80](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S080) = ≈крит. 05,179.16a
 [R. 2,45,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,11)
 [R. GORR. 2,41,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,41,15) *hayāḥ — vahanti devamādityam*
 [BHĀG. P. 5,21,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,15) *puruṣāṇāṃ śatānyaṣṭau mañjūṣāmaṣṭacakrasthāṃ gurvīmūhuḥ kathaṃcana*
 [R. GORR. 1,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,4) *uvāha māṃ hiraṇyapuramantikāt . rathena tena mātaliḥ*
 [MBH. 3,12214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12214) *śīghraṃ māṃ vahasva*
-[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) *vaha māṃ kauravānprati*
-[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
+[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) = [≈Вульг. 3.192.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A192_S039) = ≈крит. 03,190.44A *vaha māṃ kauravānprati*
+[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) = [≈Вульг. 4.38.19](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S019) = ≈крит. 04,36.17a *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
 [R. 2,52,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,51) ([51,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,19) [GORR.]). [HARIV. 9136.](https://sanskrit-lexicon-scans.github.io/hariv?9136) *tato māmavahatsūto hayaiḥ*
-[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181)
+[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181) = [≈Вульг. 5.180.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S019) = ≈крит. 05,181.18a
 [BHĀG. P. 10,1,34](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,34) (med.). *tacchiśūnavahadvrajam*
 [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6) *grāmamajāṃ vahati*
 [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) *nahi voḍhuṃ rathaḥ śaktaḥ śarānmama*
-[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern: *svāhākṛtaṃ vakṣi havyam*
+[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) = [≈Вульг. 1.223.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A223_S004) = ≈крит. 01,215.4a Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern: *svāhākṛtaṃ vakṣi havyam*
 [ṚV. 2,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.11) [3,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.04) [10,15,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.12)
 [AIT. BR. 3,47.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,47) *asyāpo yajñaṃ vahanti*
 [2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) [VS. 29,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?29,3) *kati pātrāṇi yajñaṃ vahanti*
@@ -121,22 +121,22 @@
 [TS. 1,3,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,3,8,2) *vahataṃ* (обращение к ногам) *pṛṇato gṛhān*
 [AV. 1,27,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.027.html#av01.027.04) *vaha vāyo niyuto yāhyasmayuḥ*
 [ṚV. 1,135,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.02) [7,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.01) — *vahanti ye* (*aśvāḥ*) *ratham*
-[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720)
+[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720) = [≈Вульг. 3.42.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S007) = ≈крит. 03,43.7a
 [R. GORR. 2,51,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,10) *te hayāḥ — avahanmām*
-[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107)
+[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107) = [≈Вульг. 5.178.80](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S080) = ≈крит. 05,179.16a
 [R. 2,45,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,11)
 [R. GORR. 2,41,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,41,15) *hayāḥ — vahanti devamādityam*
 [BHĀG. P. 5,21,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,15) *puruṣāṇāṃ śatānyaṣṭau mañjūṣāmaṣṭacakrasthāṃ gurvīmūhuḥ kathaṃcana*
 [R. GORR. 1,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,4) *uvāha māṃ hiraṇyapuramantikāt . rathena tena mātaliḥ*
 [MBH. 3,12214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12214) *śīghraṃ māṃ vahasva*
-[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) *vaha māṃ kauravānprati*
-[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
+[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) = [≈Вульг. 3.192.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A192_S039) = ≈крит. 03,190.44A *vaha māṃ kauravānprati*
+[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) = [≈Вульг. 4.38.19](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S019) = ≈крит. 04,36.17a *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
 [R. 2,52,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,51) ([51,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,19) [GORR.]). [HARIV. 9136.](https://sanskrit-lexicon-scans.github.io/hariv?9136) *tato māmavahatsūto hayaiḥ*
-[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181)
+[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181) = [≈Вульг. 5.180.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S019) = ≈крит. 05,181.18a
 [BHĀG. P. 10,1,34](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,34) (мед.). *tacchiśūnavahadvrajam*
 [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6) *grāmamajāṃ vahati*
-[SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) *nahi voḍhuṃ rathaḥ śaktaḥ śarānmama*
-[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) Агни ведёт или доставляет предметы жертвоприношения к богам: *svāhākṛtaṃ vakṣi havyam*
+[SIDDH. K.] к [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) *nahi voḍhuṃ rathaḥ śaktaḥ śarānmama*
+[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) = [≈Вульг. 1.223.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A223_S004) = ≈крит. 01,215.4a Агни ведет или доставляет предметы жертвоприношения к богам: *svāhākṛtaṃ vakṣi havyam*
 [ṚV. 2,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.11) [3,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.04) [10,15,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.12)
 [AIT. BR. 3,47.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,47) *asyāpo yajñaṃ vahanti*
 [2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) [VS. 29,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?29,3) *kati pātrāṇi yajñaṃ vahanti*
@@ -157,8 +157,8 @@
 [5,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.01) [60,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.060.html#rv05.060.07) [8,46,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.26) [VS. 27,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,33) act.: *tā ha tyadvartirūhathuḥ śaśvadaśvaiḥ*
 [6,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.03) *vahannaśvaḥ* ein am Wagen ziehendes Pferd
 [M. 8,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,146) *kathamalpaprāṇā vakṣyantīme hayā mama*
-[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
-[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) *hayāśca nāgāśca vahanti deśitāḥ*
+[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) = [≈Вульг. 3.71.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S015) = ≈крит. 03,69.14a [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) = [≈Вульг. 3.71.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S024) = ≈крит. 03,69.22a *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
+[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) = [≈Вульг. 4.38.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S002) = ≈крит. 04,36.2a *hayāśca nāgāśca vahanti deśitāḥ*
 [Spr. 463.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?463)
 [R. 2,74,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,12) ([76,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,17) [GORR.]). *yānaiḥ kiṃkarasaṃyuktairuvāha madhusūdanaḥ* fuhr dahin
 [HARIV. 6952.](https://sanskrit-lexicon-scans.github.io/hariv?6952) *vahate 'yaṃ *
@@ -172,22 +172,22 @@
 [15,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,40) *pravāhe vahadāyātaṃ sauvarṇaṃ padmapañcakam*
 [40,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,84) [59,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?59,4)
 
-- **RU:** — 2) intrans. ехать, проноситься на колеснице, управлять колесницей, тянуть у колесницы и т.д., нестись вперёд; мед.: *vahamānā rathena*
+- **RU:** — 2) intrans. ехать, проноситься на колеснице, управлять колесницей, тянуть у колесницы и т.д., нестись вперед; мед.: *vahamānā rathena*
 [ṚV. 5,31,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.031.html#rv05.031.09) [36,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.036.html#rv05.036.05) *aśvaiḥ*
 [7,45,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.045.html#rv07.045.01) *ya āśvaśvā vahante*
 [5,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.01) [60,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.060.html#rv05.060.07) [8,46,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.26) [VS. 27,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,33) act.: *tā ha tyadvartirūhathuḥ śaśvadaśvaiḥ*
 [6,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.03) *vahannaśvaḥ* конь, тянущий колесницу
 [M. 8,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,146) *kathamalpaprāṇā vakṣyantīme hayā mama*
-[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
-[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) *hayāśca nāgāśca vahanti deśitāḥ*
+[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) = [≈Вульг. 3.71.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S015) = ≈крит. 03,69.14a [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) = [≈Вульг. 3.71.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S024) = ≈крит. 03,69.22a *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
+[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) = [≈Вульг. 4.38.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S002) = ≈крит. 04,36.2a *hayāśca nāgāśca vahanti deśitāḥ*
 [Spr. 463.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?463)
-[R. 2,74,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,12) ([76,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,17) [GORR.]). *yānaiḥ kiṃkarasaṃyuktairuvāha madhusūdanaḥ* мчался вперёд
+[R. 2,74,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,12) ([76,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,17) [GORR.]). *yānaiḥ kiṃkarasaṃyuktairuvāha madhusūdanaḥ* мчался вперед
 [HARIV. 6952.](https://sanskrit-lexicon-scans.github.io/hariv?6952) *vahate 'yaṃ *
 
 * maghavā sarvasenaḥ* движется (в конном строю)
 [ṚV. 5,30,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.030.html#rv05.030.03) *apaśyaṃ grāmaṃ vahamānamārāt*
 [10,27,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.19) *na nābhibhaṅge hyarayo vahanti* бежать, катиться
-[Spr. 2420.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2420) *viyati vahatāṃ nakṣatrāṇām* тянуться вперёд
+[Spr. 2420.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2420) *viyati vahatāṃ nakṣatrāṇām* тянуться вперед
 [PRAB. 54,13.] ехать вдоль воды, плыть: *vahatā dehena vahanena ca*
 [KATHĀS. 26,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,21) *gaṅgāṃ gacchata tatrāntarvahantīṃ yāṃ ca paśyatha . mañjūṣām*
 [15,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,40) *pravāhe vahadāyātaṃ sauvarṇaṃ padmapañcakam*
@@ -197,34 +197,34 @@
 **3.3)** — 3) pass. dass.: *uhyāte janā anu somapeyaṃ sukho rathaḥ*
 [ṚV. 1,120,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.11) *vahaturuhyamānaḥ*
 [AV. 14,2,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.09) *vājibhiruhyamānāḥ*
-[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) *uhyanto vājibhirdrutam*
-[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
+[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) = [≈Вульг. 3.269.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S006) = ≈крит. 03,253.6c *uhyanto vājibhirdrutam*
+[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) = [≈Вульг. 1.133.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A133_S007) = ≈крит. 01,123.64a *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
 [RAGH. 11,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,10) *yugyaiḥ kṣitibhujāṃ yogyairuhyamānāḥ* (so ist zu lesen)
 [RĀJA-TAR. 5,33.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,33) *rathamuhyantaṃ divyaturagaiḥ*
 [HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (so die [ed. Bomb.])
-[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) *uhyamāna ivākāśe kālameghena candramāḥ*
+[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) = [≈Вульг. 7.19.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A019_S005) = ≈крит. 07,18.5c *uhyamāna ivākāśe kālameghena candramāḥ*
 [HARIV. 3757.](https://sanskrit-lexicon-scans.github.io/hariv?3757) *yāti viyatyuhyamāneva (ulkā)*
 [VARĀH. BṚH. S. 33,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,7) [24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,24) *tena plavena sa yayāvuhyamāno mahītale* zu Schiffe fahrend
 [MĀRK. P. 74,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,12) *srotasohyamānasya* (so ist zu lesen) vom Strome getrieben werdend
 [VIKR. 24.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?24) *mañjūṣāgato garbhastaraṃgairuhyamānakaḥ*
-[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) *vedaśāstrārṇave ghora uhyamānā itastataḥ*
+[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) = [≈Вульг. 3.308.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A308_S026) = ≈крит. 03,292.26c *vedaśāstrārṇave ghora uhyamānā itastataḥ*
 [Verz. d. Oxf. H. 91,a,2.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *guṇaughairuhyamānaḥ*
 [MAITRYUP. 3,2. 6,30.]
 
 - **RU:** — 3) pass. то же: *uhyāte janā anu somapeyaṃ sukho rathaḥ*
 [ṚV. 1,120,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.11) *vahaturuhyamānaḥ*
 [AV. 14,2,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.09) *vājibhiruhyamānāḥ*
-[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) *uhyanto vājibhirdrutam*
-[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
+[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) = [≈Вульг. 3.269.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S006) = ≈крит. 03,253.6c *uhyanto vājibhirdrutam*
+[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) = [≈Вульг. 1.133.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A133_S007) = ≈крит. 01,123.64a *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
 [RAGH. 11,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,10) *yugyaiḥ kṣitibhujāṃ yogyairuhyamānāḥ* (так следует читать)
 [RĀJA-TAR. 5,33.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,33) *rathamuhyantaṃ divyaturagaiḥ*
-[HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (так [ed. Bomb.])
-[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) *uhyamāna ivākāśe kālameghena candramāḥ*
+[HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (так [Бомбейская ред.])
+[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) = [≈Вульг. 7.19.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A019_S005) = ≈крит. 07,18.5c *uhyamāna ivākāśe kālameghena candramāḥ*
 [HARIV. 3757.](https://sanskrit-lexicon-scans.github.io/hariv?3757) *yāti viyatyuhyamāneva (ulkā)*
 [VARĀH. BṚH. S. 33,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,7) [24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,24) *tena plavena sa yayāvuhyamāno mahītale* плывя на корабле
 [MĀRK. P. 74,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,12) *srotasohyamānasya* (так следует читать) будучи несом течением
 [VIKR. 24.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?24) *mañjūṣāgato garbhastaraṃgairuhyamānakaḥ*
-[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) *vedaśāstrārṇave ghora uhyamānā itastataḥ*
+[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) = [≈Вульг. 3.308.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A308_S026) = ≈крит. 03,292.26c *vedaśāstrārṇave ghora uhyamānā itastataḥ*
 [Verz. d. Oxf. H. 91,a,2.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *guṇaughairuhyamānaḥ*
 [MAITRYUP. 3,2. 6,30.]
   <sub>attested</sub>

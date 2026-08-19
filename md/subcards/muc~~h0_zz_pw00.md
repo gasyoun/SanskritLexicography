@@ -10,7 +10,7 @@
 
 **1)** — 1〉 Jmd losmachen, freimachen, befreien, — von (Abl. oder _Adv._ auf *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. sich losmachen, sich befreien von (Abl., Instr. und ausnahmsweise Gen.), entrinnen. *mukta* freigelassen, befreit von (Abl. oder Instr.), — *durch (Abl. oder Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
 
-- **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. освобождаться, избавляться от (Abl., Instr. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобождённый от (Abl. или Instr.), — *посредством (Abl. или Instr. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
+- **RU:** — 1〉 освобождать кого-либо, отпускать на свободу, избавлять — от (Abl. или _Adv._ при *tas* [80,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?80)); Med. Pass. освобождаться, избавляться от (Abl., Ins. и в виде исключения Gen.), спасаться бегством. *mukta* отпущенный на свободу, освобожденный от (Abl. или Ins.), — *посредством (Abl. или Ins. [231,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?231)).
   <sub>attested</sub>
 
 **2)** — 2〉 verschonen [81,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81).
@@ -20,7 +20,7 @@
 
 **3)** — 3〉 ablösen, abbinden, lösen. *kaṇṭham* die Kehle lösen, so v. a. seine Stimme erheben. *prāṇān* Jmds (Gen.) Lebensgeister lösen, so v. a. Jmd das Leben nehmen. *mukta* losgebunden; abgelöst, herabgefallen (Frucht); aufgelöst, so v. a. erschlafft (die Glieder des Körpers).
 
-- **RU:** — 3〉 отвязывать, развязывать, распускать. *kaṇṭham* освободить горло, т.е. преим. возвысить голос. *prāṇān* разрешить чьи-либо (Gen.) жизненные силы, т.е. преим. лишить кого-либо жизни. *mukta* развязанный; отделившийся, упавший (плод); расслабленный, расслаблённый, т.е. преим. ослабевший (члены тела).
+- **RU:** — 3〉 отвязывать, развязывать, распускать. *kaṇṭham* освободить горло, т.е. преим. возвысить голос. *prāṇān* разрешить чьи-либо (Gen.) жизненные силы, т.е. преим. лишить кого-либо жизни. *mukta* развязанный; отделившийся, упавший (плод); расслабленный, расслабленный, т.е. преим. ослабевший (члены тела).
   <sub>attested</sub>
 
 **4)** — 4〉 loslassen, freilassen ([326,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). [327,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?327)), die Zügel schiessen lassen (Partic. *mukta*); entlassen, gehen lassen. *padātpadam* mit *na* den einen Fuss nicht vom andern lassen, so v. a. sich nicht von der Stelle bewegen. *ubhayorhastayormuktamannam* so v. a. Speise, die man nicht mit beiden Händen hält, [VASIṢṬHA 11,25].
@@ -30,7 +30,7 @@
 
 **5)** — 5〉 einen Platz verlassen. *mukta* verlassen, frei gelassen (Weg). frei gelegt ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* heisst diejenige Weltgegend, welche die Sonne so eben verlassen hat.
 
-- **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незаграждённый ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
+- **RU:** — 5〉 покидать место. *mukta* покинутый, оставленный свободным (путь). открытый, незагражденный ([MEGH. 41](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?41)). *muktā dik* означает ту сторону света, которую солнце только что покинуло.
   <sub>attested</sub>
 
 **6)** — 6〉 Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben, ablegen, absetzen ([CAMPAKA. 92]), deponiren ([ebend. 407. 410]). *kalevaram* ([Chr. 55,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?55)), *deham*, *prāṇān*, *jīvitam* ([315,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?315)) den Körper, die Lebensgeister, das Leben fahren lassen, in den Tod gehen, sterben. *mukta* fahren gelassen, verlassen, ausgezogen, abgelegt, deponirt ([CAMPAKA. 473]), weggeworfen (Kleider [ĀPAST. 2,21,11]), fahren gelassen, aufgegeben, nicht mehr da seiend, verschwunden (insbes. am Anfange eines adj. Comp.).
@@ -40,7 +40,7 @@
 
 **7)** — 7〉 aus sich entlassen, von sich geben, ausstossen, vergiessen (Thränen). *mukta* aus sich entlassen, von sich gegeben, ausgestossen, vergossen (Thränen).
 
-- **RU:** — 7〉 испускать, извергать из себя, проливать (слёзы). *mukta* испущенный, пролитый, извергнутый (слёзы).
+- **RU:** — 7〉 испускать, извергать из себя, проливать (слезы). *mukta* испущенный, пролитый, извергнутый (слезы).
   <sub>attested</sub>
 
 **8)** — 8〉 von sich geben, so v. a. verleihen; übergeben abgeben [CAMPAKA. 281].
@@ -50,7 +50,7 @@
 
 **9)** — 9〉 werfen, schleudern, abschiessen, — auf (Loc., Dat., Gen. oder Acc. mit *prati*). *ātmānam* sich stürzen von (Abl.). *mukta* hingeworfen ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), geschleudert, abgeschossen. *pādaprahāra* ein versetzter Fusstritt, *ātman* selbst sich gestürzt habend von (Abl.).
 
-- **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), метнутый, выпущенный. *pādaprahāra* нанесённый удар ногой, *ātman* сам бросившийся с (Abl.).
+- **RU:** — 9〉 бросать, метать, пускать, — в (Loc., Dat., Gen. или Acc. с *prati*). *ātmānam* броситься вниз с (Abl.). *mukta* брошенный ([MEGH. 84](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84)), метнутый, выпущенный. *pādaprahāra* нанесенный удар ногой, *ātman* сам бросившийся с (Abl.).
   <sub>attested</sub>
 
 **10)** — 10〉 schicken in (Loc.) *mukta* [CAMPAKA. 230].
@@ -70,7 +70,7 @@
 
 **12a)** — a〉 befreit —, erlöst werden von einer Sünde, — von den Sünden, — von den Banden der Welt. *muktvā* erlöst seiend [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* von einer Sünde befreit ([ĀPAST. 1,24,21]), erlöst von den Sünden, — von den Banden der Welt.
 
-- **RU:** — a〉 быть освобождённым — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* освобождённый от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
+- **RU:** — a〉 быть освобожденным — избавленным от греха, — от грехов, — от уз мирского существования. *muktvā* пребывающий в освобождении [288,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?288). *mukta* освобожденный от греха ([ĀPAST. 1,24,21]), избавленный от грехов, — от уз мирского существования.
   <sub>attested</sub>
 
 **12b)** — b〉 lassen von (Abl.) [Spr. 6496](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6496).
@@ -80,12 +80,12 @@
 
 **12c)** — c〉 kommen um (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
 
-- **RU:** — c〉 лишаться (Instr.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
+- **RU:** — c〉 лишаться (Ins.) [49,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?49).
   <sub>attested</sub>
 
 **12d)** — d〉 ermangeln, mit Instr. *mukta* ermangelnd, die Ergänzung im Instr. oder im Comp. vorangehend.
 
-- **RU:** — d〉 не иметь, лишаться, с Instr. *mukta* лишённый, дополнение стоит в Instr. или в предшествующем Comp..
+- **RU:** — d〉 не иметь, лишаться, с Ins. *mukta* лишенный, дополнение стоит в Ins. или в предшествующем Comp..
   <sub>attested</sub>
 
 **13)** — 13〉 *muktvā* Absol. mit Ausnahme von, ausser; mit Acc.
@@ -100,7 +100,7 @@
 
 **caus_1)** — 1〉 befreien, — von (Abl., ausnahmsweise Instr.), loslassen, frei einhergehen lassen.
 
-- **RU:** — 1〉 освобождать, — от (Abl., в виде исключения Instr.), отпускать, давать свободно передвигаться.
+- **RU:** — 1〉 освобождать, — от (Abl., в виде исключения Ins.), отпускать, давать свободно передвигаться.
   <sub>attested</sub>
 
 **caus_2)** — 2〉 ablösen, abbinden, lösen, abspannen.
@@ -275,7 +275,7 @@
 
 **preverb_pari_1c)** — c〉 gekleidet in (Acc.).
 
-- **RU:** — c〉 облачённый в (Acc.).
+- **RU:** — c〉 облаченный в (Acc.).
   <sub>attested</sub>
 
 **preverb_pari_2)** — 2〉 ablegen. Nur Partic. *āmukta* abgelegt (ein Kleidungsstück).
@@ -290,7 +290,7 @@
 
 **preverb_pari_4)** — 4〉 *āmukta* fehlerhaft für *āsakta*.
 
-- **RU:** — 4〉 *āmukta* ошибочно вместо *āsakta*.
+- **RU:** — 4〉 *āmukta* ошибочно вм. *āsakta*.
   <sub>attested</sub>
 
 **preverb_pari_apa)** — Mit *paryā* rund herum ablösen und abnehmen.
@@ -310,7 +310,7 @@
 
 **preverb_vi_1)** — 1〉 befreien, — von (Abl.); Pass. loskommen, gerettet sein. *˚unmukta* frei von, ermangelnd.
 
-- **RU:** — 1〉 освобождать, — от (Abl.); Pass. вырваться на свободу, быть спасённым. *˚unmukta* свободный от, лишённый.
+- **RU:** — 1〉 освобождать, — от (Abl.); Pass. вырваться на свободу, быть спасенным. *˚unmukta* свободный от, лишенный.
   <sub>attested</sub>
 
 **preverb_vi_2)** — 2〉 auflösen, losmachen; Med. auch sich losmachen.
@@ -390,7 +390,7 @@
 
 **preverb_pra_vi_1)** — 1〉 befreien, — von (Abl.); Pass. freigelassen werden ([SAṂHITOPAN. 8,8]), sich befreien von (Abl.) *nirmukta* befreit, Jmd (Instr.) entkommen, errettet von (Abl.), frei von (Abl. oder im Comp. vorangehend).
 
-- **RU:** — 1〉 освобождать, — от (Abl.); Pass. быть отпущенным на свободу ([SAṂHITOPAN. 8,8]), освобождаться от (Abl.) *nirmukta* освобождённый, спасшийся (Instr.), вырвавшийся из (Abl.), свободный от (Abl. или в предшествующем Comp.).
+- **RU:** — 1〉 освобождать, — от (Abl.); Pass. быть отпущенным на свободу ([SAṂHITOPAN. 8,8]), освобождаться от (Abl.) *nirmukta* освобожденный, спасшийся (Ins.), вырвавшийся из (Abl.), свободный от (Abl. или в предшествующем Comp.).
   <sub>attested</sub>
 
 **preverb_pra_vi_2)** — 2〉 lösen, aufbinden. *nirmukta* abgelöst.
@@ -430,7 +430,7 @@
 
 **preverb_pra_vi_5b)** — b〉 verlustig gehen, kommen um (Instr.). *˚nirmukta* ermangelnd. Ohne Ergänzung aller Habe entbehrend, Nichts besitzend. — *nirmukta* auch fehlerhaft für *nirmukta*.
 
-- **RU:** — b〉 лишаться, утрачивать (Instr.). *˚nirmukta* лишённый. Без дополнения лишённый всего имущества, ничего не имеющий. — *nirmukta* также ошибочно вместо *nirmukta*.
+- **RU:** — b〉 лишаться, утрачивать (Ins.). *˚nirmukta* лишенный. Без дополнения лишенный всего имущества, ничего не имеющий. — *nirmukta* также ошибочно вм. *nirmukta*.
   <sub>attested</sub>
 
 **preverb_caus_note)** — Caus. befreien von (Abl.) einlösen (ein Pfand) von Jmd (Abl.) [VIṢṆUS. 5,181] (zu lesen *tasmādani˚*).
@@ -450,7 +450,7 @@
 
 **preverb_corr_2)** — Mit *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) und sonst oft fehlerhaft für *abhinirmrukta*.
 
-- **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) и в других местах часто ошибочно вместо *abhinirmrukta*.
+- **RU:** — С *abhinis*, *abhinirmukta* [BHĀG. P. 11,26,8](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,26,8) и в других местах часто ошибочно вм. *abhinirmrukta*.
   <sub>attested</sub>
 
 **preverb_sam2)** — Mit *vinis*
@@ -460,7 +460,7 @@
 
 **preverb_sam2_1)** — 1〉 pass. sich befreien, sich losmachen von (Instr.) *vinirmukta* davongekommen, entronnen, sich befreit habend —, frei von (Abl., Instr. oder im Comp. vorangehend).
 
-- **RU:** — 1〉 pass. освобождаться, вырываться от (Instr.) *vinirmukta* спасшийся, вырвавшийся, освободившийся, — свободный от (Abl., Instr. или в предшествующем Comp.).
+- **RU:** — 1〉 pass. освобождаться, вырываться от (Ins.) *vinirmukta* спасшийся, вырвавшийся, освободившийся, — свободный от (Abl., Ins. или в предшествующем Comp.).
   <sub>attested</sub>
 
 **preverb_sam2_2)** — 2〉 fahrenlassen, aufgeben. *kalevaram* den Körper, so v. a. sterben.
@@ -480,7 +480,7 @@
 
 **preverb_anu_1)** — 1〉 befreien, — von (Abl.) Med. Pass. sich befreien —, sich losmachen von (Abl., Gen. oder Instr.). *parimukta* befreit, — von (im Comp. vorangehend).
 
-- **RU:** — 1〉 освобождать, — от (Abl.) Med. Pass. освобождаться, — вырываться от (Abl., Gen. или Instr.). *parimukta* освобождённый, — от (в предшествующем Comp.).
+- **RU:** — 1〉 освобождать, — от (Abl.) Med. Pass. освобождаться, — вырываться от (Abl., Gen. или Ins.). *parimukta* освобожденный, — от (в предшествующем Comp.).
   <sub>attested</sub>
 
 **preverb_anu_2)** — 2〉 lösen, ablösen, abnehmen. — *parimukta* abgegeben.

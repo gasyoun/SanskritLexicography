@@ -69,7 +69,7 @@
 
 **pw-mit-T13-3)** — 3〉 gehen, wandern, sich ergehen, umherstreichen; mit Instr. des Vehikels.
 
-- **RU:** — 3) идти, странствовать, прогуливаться, бродить кругом; с Instr. средства передвижения.
+- **RU:** — 3) идти, странствовать, прогуливаться, бродить кругом; с Ins. средства передвижения.
   <sub>attested</sub>
 
 **pw-mit-T13-4)** — 4〉 reichen bis (*ā*).
@@ -161,9 +161,9 @@
 - **RU:** — 5) блуждать кругом.
   <sub>attested</sub>
 
-**pw-T29)** — Caus. Jmd nachgehen lassen, so v. a. sich unterthänig machen [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111).
+**pw-T29)** — Caus. Jmd nachgehen lassen, so v. a. sich unterthänig machen [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111) = [≈Вульг. 12.10.25](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A010_S025) = ≈крит. 12,10.25a.
 
-- **RU:** — Caus. заставлять кого-либо следовать за собой, — преим. подчинять себе [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111).
+- **RU:** — Caus. заставлять кого-либо следовать за собой, — преим. подчинять себе [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111) = [≈Вульг. 12.10.25](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A010_S025) = ≈крит. 12,10.25a.
   <sub>attested</sub>
 
 **pw-mit-T32)** — Mit *abhisam* zugehen auf, aufsuchen.

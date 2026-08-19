@@ -17,14 +17,14 @@
   <sub>attested</sub>
 
 **2)** [M. 11,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,198) abwehren, abhalten von (abl.): *pṛṣṭhataḥ parānvīrān*
-[MBH. 6,541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.541) *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (so [ed. Bomb.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (so [ed. Bomb.], [ed. Calc.] und [DRAUP. 5,5] *˚sedhase*)
+[MBH. 6,541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.541) = [≈Вульг. 6.14.34](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S034) = ≈крит. 06,15.30a *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (so [ed. Bomb.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (so [ed. Bomb.], [ed. Calc.] und [DRAUP. 5,5] *˚sedhase*)
 *tvam*
-[3,15643.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15643) *bhīmasenādapāsedhatsūtaputram*
-[7,5805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5805) [7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) (nach der Lesart der [ed. Bomb.]).
+[3,15643.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15643) = [≈Вульг. 3.268.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A268_S006) = ≈крит. 03,252.6c *bhīmasenādapāsedhatsūtaputram*
+[7,5805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5805) = [≈Вульг. 7.139.114](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A139_S114) = ≈крит. 07,114.83c [7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) = [≈Вульг. 7.165.30](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A165_S030) = ≈крит. 07,42.11a (nach der Lesart der [ed. Bomb.]).
 
 - **RU:** [M. 11,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,198) отражать, удерживать от (abl.): *pṛṣṭhataḥ parānvīrān*
-[MBH. 6,541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.541) *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (так [ed. Bomb.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (так [ed. Bomb.], [ed. Calc.] und [DRAUP. 5,5] *˚sedhase*)
+[MBH. 6,541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.541) = [≈Вульг. 6.14.34](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S034) = ≈крит. 06,15.30a *nāgaṃ prabhinnaṃ girikūṭakalpamupatyakāṃ* (так [Бомбейская ред.]) *haimavatīṃ carantam . daṇḍīva yūthādapasedhasi* (так [Бомбейская ред.], [ed. Calc.] и [DRAUP. 5,5] *˚sedhase*)
 *tvam*
-[3,15643.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15643) *bhīmasenādapāsedhatsūtaputram*
-[7,5805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5805) [7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) (по чтению [ed. Bomb.]).
+[3,15643.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15643) = [≈Вульг. 3.268.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A268_S006) = ≈крит. 03,252.6c *bhīmasenādapāsedhatsūtaputram*
+[7,5805.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5805) = [≈Вульг. 7.139.114](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A139_S114) = ≈крит. 07,114.83c [7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) = [≈Вульг. 7.165.30](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A165_S030) = ≈крит. 07,42.11a (по чтению [Бомбейская ред.]).
   <sub>attested</sub>

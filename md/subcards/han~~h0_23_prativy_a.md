@@ -3,7 +3,7 @@
 `han~~h0_23_prativy_a`
 
 
-**1)** — *prativyā* scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), da mit der [ed. Bomb.] *pratigāhanti* st. *prativyāhanti* zu lesen ist.
+**1)** — *prativyā* scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Вульг. 12.100.43](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A100_S043) = ≈крит. 12,101.40a, da mit der [ed. Bomb.] *pratigāhanti* st. *prativyāhanti* zu lesen ist.
 
-- **RU:** — *prativyā* мнимо [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), так как с [ed. Bomb.] *pratigāhanti* вместо *prativyāhanti* следует читать.
+- **RU:** — *prativyā* мнимо [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Вульг. 12.100.43](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A100_S043) = ≈крит. 12,101.40a, так как с [Бомбейская ред.] *pratigāhanti* вместо *prativyāhanti* следует читать.
   <sub>attested</sub>

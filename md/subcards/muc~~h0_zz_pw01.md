@@ -5,7 +5,7 @@
 
 **intro)** — Caus. *parimocita* errettet, erlöst [VAJRACCH. 42,9. fgg.] Desid. in *parimokṣa*.
 
-- **RU:** — Caus. *parimocita* спасённый, освобождённый [VAJRACCH. 42,9. fgg.] Desid. в *parimokṣa*.
+- **RU:** — Caus. *parimocita* спасенный, освобожденный [VAJRACCH. 42,9. fgg.] Desid. в *parimokṣa*.
   <sub>attested</sub>
 
 **mit-Präp-1)** — Mit *vipari* pass. sich befreien von (Abl.).
@@ -20,7 +20,7 @@
 
 **1)** — 1〉 freilassen, laufen lassen, befreien von (Abl.); Pass. sich befreien von (Abl. oder Instr.) [GAUT.] *pramucya* sich befreiend von (Abl.), *pramukta* befreit von (Abl. oder Instr.)
 
-- **RU:** — 1〉 отпускать на свободу, давать уйти, освобождать от (Abl.); Pass. освобождаться от (Abl. или Instr.) [GAUT.] *pramucya* освобождаясь от (Abl.), *pramukta* освобождённый от (Abl. или Instr.)
+- **RU:** — 1〉 отпускать на свободу, давать уйти, освобождать от (Abl.); Pass. освобождаться от (Abl. или Ins.) [GAUT.] *pramucya* освобождаясь от (Abl.), *pramukta* освобожденный от (Abl. или Ins.)
   <sub>attested</sub>
 
 **2)** — 2〉 auflösen, aufknüpfen, aufbinden, ablösen; Pass. sich auflösen, sich ablösen, abfallen (von Früchten), — von (Abl.).
@@ -45,7 +45,7 @@
 
 **6)** — 6〉 aus sich entlassen, von sich geben, ausstossen. *āśūṇi* Thränen vergiessen [KĀRAṆḌ. 70,4]. *pramukta* von sich gegeben, ausgestossen; vergossen (Thränen [KĀRAṆḌ. 70,2]).
 
-- **RU:** — 6〉 испускать, извергать, выбрасывать. *āśūṇi* проливать слёзы [KĀRAṆḌ. 70,4]. *pramukta* испущенный, выброшенный; пролитый (слёзы [KĀRAṆḌ. 70,2]).
+- **RU:** — 6〉 испускать, извергать, выбрасывать. *āśūṇi* проливать слезы [KĀRAṆḌ. 70,4]. *pramukta* испущенный, выброшенный; пролитый (слезы [KĀRAṆḌ. 70,2]).
   <sub>attested</sub>
 
 **7)** — 7〉 schleudern, abschiessen. *pramukta* geschleudert, abgeschossen.
@@ -85,7 +85,7 @@
 
 **mit-anupra)** — Mit *anupra* nach einander loslassen.
 
-- **RU:** — С *anupra* отпускать поочерёдно.
+- **RU:** — С *anupra* отпускать поочередно.
   <sub>attested</sub>
 
 **mit-nis)** — Mit *paripra* Med. sich losmachen von (Abl.).
@@ -95,7 +95,7 @@
 
 **mit-apa)** — Mit *pratipra* ein Kalb zulassen zur Mutter.
 
-- **RU:** — С *pratipra* подпускать телёнка к матери.
+- **RU:** — С *pratipra* подпускать теленка к матери.
   <sub>attested</sub>
 
 **mit-vi-intro)** — Mit *vipra*
@@ -105,7 +105,7 @@
 
 **mit-vi-1)** — 1〉 befreien; Pass. sich befreien von (Abl.) frei ausgehen, nicht bestraft werden [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* befreit —, frei von (Instr. oder im Comp. vorangehend.)
 
-- **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* освобождённый —, свободный от (Instr. или в Comp. предшествующем.)
+- **RU:** — 1〉 освобождать; Pass. освобождаться от (Abl.), выходить безнаказанным [169,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?169). *vipramukta* освобожденный —, свободный от (Ins. или в Comp. предшествующем.)
   <sub>attested</sub>
 
 **mit-vi-2)** — 2〉 ablösen, abnehmen.
@@ -135,7 +135,7 @@
 
 **mit-sam-1)** — 1〉 Jmdm (Dat., Loc. oder Gen.) Etwas anziehen, anlegen; Med. (später auch Act.) sich anziegen, anlegen; annehmen (eine Gestalt u. s. w.). sich (sibi) setzen auf (Loc.). *pratimukta* aufgetragen (Salbe) auf (Loc.).
 
-- **RU:** — 1〉 надевать, облачать кого-л. (Dat., Loc. или Gen.) во что-л.; Med. (позднее также Act.) надевать на себя, облачаться; принимать (облик и т.д.). садиться (sibi) на (Loc.). *pratimukta* нанесённый (мазь) на (Loc.).
+- **RU:** — 1〉 надевать, облачать кого-л. (Dat., Loc. или Gen.) во что-л.; Med. (позднее также Act.) надевать на себя, облачаться; принимать (облик и т.д.). садиться (sibi) на (Loc.). *pratimukta* нанесенный (мазь) на (Loc.).
   <sub>attested</sub>
 
 **mit-sam-2)** — 2〉 Jmd (Loc.) Etwas anhängen, so v. a. anthun.
@@ -150,7 +150,7 @@
 
 **mit-sam-4)** — 4〉 freilassen, entlassen; Pass. sich befreien von (Abl.) und gefreien (!) *pratimukta* freigelassen, befreit von (Abl.).
 
-- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от (Abl.) и быть освобождённым (!); *pratimukta* отпущенный на свободу, освобождённый от (Abl.).
+- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от (Abl.) и быть освобожденным (!); *pratimukta* отпущенный на свободу, освобожденный от (Abl.).
   <sub>attested</sub>
 
 **mit-sam-5)** — 5〉 Etwas fahren lassen, aufgeben. *pratimukta* aufgegeben.
@@ -190,7 +190,7 @@
 
 **mit-vi2-1)** — 1〉 ablösen, losbinden, abspannen; Med. an sich oder für sich ablösen. (z. B. die eigenen Pferde abspannen); Med. Pass. sich lösen (auch mit *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), abgehen (von einer Leibesfrucht). *vimukta* ledig, nicht angespannt; aufgebunden, aufgelöst (Haar).
 
-- **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (напр. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), отделяться, выходить (о плоде). *vimukta* свободный, не запряжённый; развязанный, распущенный (волосы).
+- **RU:** — 1〉 снимать, отвязывать, распрягать; Med. снимать с себя или для себя. (напр. распрягать собственных лошадей); Med. Pass. развязываться, освобождаться (также с *vitarām*) [24,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?24), отделяться, выходить (о плоде). *vimukta* свободный, не запряженный; развязанный, распущенный (волосы).
   <sub>attested</sub>
 
 **mit-vi2-2)** — 2〉 Act. Med. abspannen, so v. a. Halt machen, einkehren.
@@ -205,7 +205,7 @@
 
 **mit-vi2-4)** — 4〉 freigeben, laufen lassen, befreien; Pass. sich von Jmd (Abl.) befreien, sich Jmds Gewalt entziehen; Jmd (Gen.) entkommen; sich befreien —, befreit werden von (Abl., _Adv._ auf *tas* oder Instr.). Ohne Ergänzung frei kommen, erlöst werden, insbes. _n._ von den Banden der Welt. *vimukta* befreit —, frei von (Abl. Instr. oder im Comp. vorangehend), entkommen aus (Abl.). Ohne Ergänzung frei —, flott gemacht (Schiff); erlöst, insbes. von den Banden der Welt.
 
-- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от кого-л. (Abl.), избавляться от власти кого-л.; ускользать от кого-л. (Gen.); освобождаться —, быть освобождённым от (Abl., _Adv._ на *tas* или Instr.). Без дополнения: выходить на свободу, обретать спасение, особ. _n._ от уз мира. *vimukta* освобождённый —, свободный от (Abl. Instr. или в Comp. предшествующем), спасшийся из (Abl.). Без дополнения: освобождённый, снятый с мели (корабль); спасённый, особ. от уз мира.
+- **RU:** — 4〉 отпускать, освобождать; Pass. освобождаться от кого-л. (Abl.), избавляться от власти кого-л.; ускользать от кого-л. (Gen.); освобождаться —, быть освобожденным от (Abl., _Adv._ на *tas* или Ins.). Без дополнения: выходить на свободу, обретать спасение, особ. _n._ от уз мира. *vimukta* освобожденный —, свободный от (Abl. Ins. или в Comp. предшествующем), спасшийся из (Abl.). Без дополнения: освобожденный, снятый с мели (корабль); спасенный, особ. от уз мира.
   <sub>attested</sub>
 
 **mit-vi2-5)** — 5〉 einen Ort verlassen.
@@ -235,7 +235,7 @@
 
 **mit-vi2-10)** — 10〉 aus sich entlassen, von sich geben, ausstossen (Laute u. s. w.). *grastam* einen verschluckten (verfinsterten) Himmelskörper wieder von sich geben, so v. a. von, so v. a. sich ergiessend aus (im Comp. vorangehend [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
 
-- **RU:** — 10〉 испускать, издавать, выбрасывать (звуки и т.д.). *grastam* снова выпускать проглоченное (затемнённое) небесное тело, так преим. от, так преим. изливающийся из (в Comp. предшествующем [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
+- **RU:** — 10〉 испускать, издавать, выбрасывать (звуки и т.д.). *grastam* снова выпускать проглоченное (затемненное) небесное тело, так преим. от, так преим. изливающийся из (в Comp. предшествующем [292,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?292)).
   <sub>attested</sub>
 
 **mit-vi2-11)** — 11〉 werfen, schleudern, abschiessen, — auf (Loc.). *ātmānam* sich stürzen in (Loc.). *vimukta* geworfen, geschleudert.
@@ -260,7 +260,7 @@
 
 **mit-vi2-15)** — 15〉 Pass. verlustig gehen Jmds (Instr.). *praṇais* des Lebens [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* gekommen um (Instr.), verlustig gegangen.
 
-- **RU:** — 15〉 Pass. лишаться кого-л. (Instr.). *praṇais* жизни [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* лишившийся (Instr.), утративший.
+- **RU:** — 15〉 Pass. лишаться кого-л. (Ins.). *praṇais* жизни [145,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). [19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?145). *vimukta* лишившийся (Ins.), утративший.
   <sub>attested</sub>
 
 **mit-vi2-16)** — 16〉 *vimukta*
@@ -335,7 +335,7 @@
 
 **mit-abhi2)** — Mit *sam* aus sich entlassen, von sich geben, vergiessen (Thränen).
 
-- **RU:** — С *sam* испускать, извергать, проливать (слёзы).
+- **RU:** — С *sam* испускать, извергать, проливать (слезы).
   <sub>attested</sub>
 
 **mit-prati)** — Caus. befreien.

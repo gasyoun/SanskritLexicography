@@ -6,7 +6,7 @@
 **1_auspressen)** **1.** √*su*, *sunoti* (auch Med.), *sunvāna* und *suvāna* (*svāna* zu sprechen und fasst immer passivisch); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 auspressen, keltern (den Soma).
 
-- **RU:** **1.** √*su*, *sunoti* (также Med.), *sunvāna* und *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
+- **RU:** **1.** √*su*, *sunoti* (также Med.), *sunvāna* и *suvāna* (*svāna* произносится и всегда понимается пассивно); **suṣuvāṇa* ved. [240,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?240).
 — 1〉 выжимать, прессовать (Сома).
   <sub>attested</sub>
 
@@ -34,7 +34,7 @@
 
 **mit_abhi_2)** — 2〉 bespritzen mit (Instr.) [BHAṬṬ.] — *Caus. *abhiṣāvayati*.
 
-- **RU:** — 2〉 обрызгивать (Instr.) [BHAṬṬ.] — *Caus. *abhiṣāvayati*.
+- **RU:** — 2〉 обрызгивать (Ins.) [BHAṬṬ.] — *Caus. *abhiṣāvayati*.
   <sub>attested</sub>
 
 **mit_ati)** — Mit *atyabhi* darüber hinaus keltern [ĀPAST. ŚR. 14,20,3].
@@ -96,7 +96,7 @@
 
 **main)** **2.** √*su* = **1.** *sū*. Davon *sauti* (erst [ŚAT. BR.]) und *suhi* (v. l. *sūhi*). Partic. *suta* veranlasst, angetrieben ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
 
-- **RU:** **2.** √*su* = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побуждённый, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
+- **RU:** **2.** √*su* = **1.** *sū*. Отсюда *sauti* (лишь [ŚAT. BR.]) и *suhi* (v. l. *sūhi*). Partic. *suta* побужденный, подстрекнутый ([ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,12) [13](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,13)).
   <sub>attested</sub>
 
 **main)** **3.** *su* _Adj._ in *dāvasu*.
@@ -106,7 +106,7 @@
 
 **main)** **4.** √*su* = **2.** *sū*. Nur *prasvati* (selten), *prasauti* (desgl.), *suta* Sohn und *suṣuti*.
 
-- **RU:** **4.** √*su* = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын und *suṣuti*.
+- **RU:** **4.** √*su* = **2.** *sū*. Только *prasvati* (редко), *prasauti* (desgl.), *suta* сын и *suṣuti*.
   <sub>attested</sub>
 
 **main)** **5.** *√*su*, *savati* (*gatau*).

@@ -27,7 +27,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhathum, ūhe*
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhiṣe, ūhire, ūhivaṃs, ūhuṣī; vakṣyati*
 [Kār. 6] aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *vahiṣyati*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S040) = ≈крит. 01,114.31a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S042) = ≈крит. 01,141.21a
 [BHĀG. P. 4,25,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,36)
 [PAÑCAT. ed. orn. 22,21.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?22,21) *voḍhā, voḍhum*
 [P. 6,3,112.](https://ashtadhyayi.com/sutraani/6/3/112) *volhave; ūḍhvā*; pass. *uhyate; ūḍha*
@@ -42,7 +42,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhathum, ūhe*
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhiṣe, ūhire, ūhivaṃs, ūhuṣī; vakṣyati*
 [Кар. 6] aus [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *vahiṣyati*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S040) = ≈крит. 01,114.31a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S042) = ≈крит. 01,141.21a
 [BHĀG. P. 4,25,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,36)
 [PAÑCAT. ed. orn. 22,21.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?22,21) *voḍhā, voḍhum*
 [P. 6,3,112.](https://ashtadhyayi.com/sutraani/6/3/112) *volhave; ūḍhvā*; pass. *uhyate; ūḍha*
@@ -76,22 +76,22 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [TS. 1,3,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,3,8,2) *vahataṃ* (die Füsse angeredet) *pṛṇato gṛhān*
 [AV. 1,27,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.027.html#av01.027.04) *vaha vāyo niyuto yāhyasmayuḥ*
 [ṚV. 1,135,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.02) [7,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.01) — *vahanti ye* (*aśvāḥ*) *ratham*
-[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720)
+[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720) = [≈Вульг. 3.42.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S007) = ≈крит. 03,43.7a
 [R. GORR. 2,51,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,10) *te hayāḥ — avahanmām*
-[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107)
+[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107) = [≈Вульг. 5.178.80](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S080) = ≈крит. 05,179.16a
 [R. 2,45,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,11)
 [R. GORR. 2,41,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,41,15) *hayāḥ — vahanti devamādityam*
 [BHĀG. P. 5,21,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,15) *puruṣāṇāṃ śatānyaṣṭau mañjūṣāmaṣṭacakrasthāṃ gurvīmūhuḥ kathaṃcana*
 [R. GORR. 1,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,4) *uvāha māṃ hiraṇyapuramantikāt . rathena tena mātaliḥ*
 [MBH. 3,12214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12214) *śīghraṃ māṃ vahasva*
-[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) *vaha māṃ kauravānprati*
-[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
+[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) = [≈Вульг. 3.192.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A192_S039) = ≈крит. 03,190.44A *vaha māṃ kauravānprati*
+[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) = [≈Вульг. 4.38.19](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S019) = ≈крит. 04,36.17a *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
 [R. 2,52,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,51) ([51,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,19) [GORR.]). [HARIV. 9136.](https://sanskrit-lexicon-scans.github.io/hariv?9136) *tato māmavahatsūto hayaiḥ*
-[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181)
+[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181) = [≈Вульг. 5.180.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S019) = ≈крит. 05,181.18a
 [BHĀG. P. 10,1,34](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,34) (med.). *tacchiśūnavahadvrajam*
 [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6) *grāmamajāṃ vahati*
 [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) *nahi voḍhuṃ rathaḥ śaktaḥ śarānmama*
-[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern: *svāhākṛtaṃ vakṣi havyam*
+[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) = [≈Вульг. 1.223.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A223_S004) = ≈крит. 01,215.4a Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern: *svāhākṛtaṃ vakṣi havyam*
 [ṚV. 2,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.11) [3,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.04) [10,15,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.12)
 [AIT. BR. 3,47.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,47) *asyāpo yajñaṃ vahanti*
 [2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) [VS. 29,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?29,3) *kati pātrāṇi yajñaṃ vahanti*
@@ -125,22 +125,22 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [TS. 1,3,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,3,8,2) *vahataṃ* (обращение к ногам) *pṛṇato gṛhān*
 [AV. 1,27,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.027.html#av01.027.04) *vaha vāyo niyuto yāhyasmayuḥ*
 [ṚV. 1,135,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.02) [7,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.01) — *vahanti ye* (*aśvāḥ*) *ratham*
-[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720)
+[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720) = [≈Вульг. 3.42.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S007) = ≈крит. 03,43.7a
 [R. GORR. 2,51,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,10) *te hayāḥ — avahanmām*
-[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107)
+[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107) = [≈Вульг. 5.178.80](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S080) = ≈крит. 05,179.16a
 [R. 2,45,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,11)
 [R. GORR. 2,41,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,41,15) *hayāḥ — vahanti devamādityam*
 [BHĀG. P. 5,21,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,15) *puruṣāṇāṃ śatānyaṣṭau mañjūṣāmaṣṭacakrasthāṃ gurvīmūhuḥ kathaṃcana*
 [R. GORR. 1,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,4) *uvāha māṃ hiraṇyapuramantikāt . rathena tena mātaliḥ*
 [MBH. 3,12214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12214) *śīghraṃ māṃ vahasva*
-[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) *vaha māṃ kauravānprati*
-[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
+[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) = [≈Вульг. 3.192.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A192_S039) = ≈крит. 03,190.44A *vaha māṃ kauravānprati*
+[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) = [≈Вульг. 4.38.19](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S019) = ≈крит. 04,36.17a *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
 [R. 2,52,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,51) ([51,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,19) [GORR.]). [HARIV. 9136.](https://sanskrit-lexicon-scans.github.io/hariv?9136) *tato māmavahatsūto hayaiḥ*
-[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181)
+[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181) = [≈Вульг. 5.180.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S019) = ≈крит. 05,181.18a
 [BHĀG. P. 10,1,34](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,34) (мед.). *tacchiśūnavahadvrajam*
 [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6) *grāmamajāṃ vahati*
 [SIDDH. K.] к [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) *nahi voḍhuṃ rathaḥ śaktaḥ śarānmama*
-[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) Агни ведет или доставляет предметы жертвоприношения к богам: *svāhākṛtaṃ vakṣi havyam*
+[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) = [≈Вульг. 1.223.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A223_S004) = ≈крит. 01,215.4a Агни ведет или доставляет предметы жертвоприношения к богам: *svāhākṛtaṃ vakṣi havyam*
 [ṚV. 2,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.11) [3,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.04) [10,15,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.12)
 [AIT. BR. 3,47.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,47) *asyāpo yajñaṃ vahanti*
 [2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) [VS. 29,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?29,3) *kati pātrāṇi yajñaṃ vahanti*
@@ -161,8 +161,8 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [5,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.01) [60,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.060.html#rv05.060.07) [8,46,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.26) [VS. 27,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,33) act.: *tā ha tyadvartirūhathuḥ śaśvadaśvaiḥ*
 [6,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.03) *vahannaśvaḥ* ein am Wagen ziehendes Pferd
 [M. 8,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,146) *kathamalpaprāṇā vakṣyantīme hayā mama*
-[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
-[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) *hayāśca nāgāśca vahanti deśitāḥ*
+[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) = [≈Вульг. 3.71.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S015) = ≈крит. 03,69.14a [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) = [≈Вульг. 3.71.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S024) = ≈крит. 03,69.22a *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
+[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) = [≈Вульг. 4.38.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S002) = ≈крит. 04,36.2a *hayāśca nāgāśca vahanti deśitāḥ*
 [Spr. 463.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?463)
 [R. 2,74,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,12) ([76,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,17) [GORR.]). *yānaiḥ kiṃkarasaṃyuktairuvāha madhusūdanaḥ* fuhr dahin
 [HARIV. 6952.](https://sanskrit-lexicon-scans.github.io/hariv?6952) *vahate 'yaṃ *
@@ -182,8 +182,8 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [5,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.01) [60,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.060.html#rv05.060.07) [8,46,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.26) [VS. 27,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,33) act.: *tā ha tyadvartirūhathuḥ śaśvadaśvaiḥ*
 [6,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.03) *vahannaśvaḥ* конь, тянущий колесницу
 [M. 8,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,146) *kathamalpaprāṇā vakṣyantīme hayā mama*
-[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
-[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) *hayāśca nāgāśca vahanti deśitāḥ*
+[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) = [≈Вульг. 3.71.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S015) = ≈крит. 03,69.14a [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) = [≈Вульг. 3.71.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S024) = ≈крит. 03,69.22a *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
+[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) = [≈Вульг. 4.38.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S002) = ≈крит. 04,36.2a *hayāśca nāgāśca vahanti deśitāḥ*
 [Spr. 463.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?463)
 [R. 2,74,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,12) ([76,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,17) [GORR.]). *yānaiḥ kiṃkarasaṃyuktairuvāha madhusūdanaḥ* мчался вперед
 [HARIV. 6952.](https://sanskrit-lexicon-scans.github.io/hariv?6952) *vahate 'yaṃ *
@@ -201,34 +201,34 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 **3.3)** — 3) pass. dass.: *uhyāte janā anu somapeyaṃ sukho rathaḥ*
 [ṚV. 1,120,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.11) *vahaturuhyamānaḥ*
 [AV. 14,2,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.09) *vājibhiruhyamānāḥ*
-[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) *uhyanto vājibhirdrutam*
-[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
+[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) = [≈Вульг. 3.269.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S006) = ≈крит. 03,253.6c *uhyanto vājibhirdrutam*
+[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) = [≈Вульг. 1.133.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A133_S007) = ≈крит. 01,123.64a *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
 [RAGH. 11,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,10) *yugyaiḥ kṣitibhujāṃ yogyairuhyamānāḥ* (so ist zu lesen)
 [RĀJA-TAR. 5,33.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,33) *rathamuhyantaṃ divyaturagaiḥ*
 [HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (so die [ed. Bomb.])
-[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) *uhyamāna ivākāśe kālameghena candramāḥ*
+[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) = [≈Вульг. 7.19.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A019_S005) = ≈крит. 07,18.5c *uhyamāna ivākāśe kālameghena candramāḥ*
 [HARIV. 3757.](https://sanskrit-lexicon-scans.github.io/hariv?3757) *yāti viyatyuhyamāneva (ulkā)*
 [VARĀH. BṚH. S. 33,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,7) [24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,24) *tena plavena sa yayāvuhyamāno mahītale* zu Schiffe fahrend
 [MĀRK. P. 74,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,12) *srotasohyamānasya* (so ist zu lesen) vom Strome getrieben werdend
 [VIKR. 24.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?24) *mañjūṣāgato garbhastaraṃgairuhyamānakaḥ*
-[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) *vedaśāstrārṇave ghora uhyamānā itastataḥ*
+[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) = [≈Вульг. 3.308.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A308_S026) = ≈крит. 03,292.26c *vedaśāstrārṇave ghora uhyamānā itastataḥ*
 [Verz. d. Oxf. H. 91,a,2.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *guṇaughairuhyamānaḥ*
 [MAITRYUP. 3,2. 6,30.]
 
 - **RU:** — 3) pass. то же: *uhyāte janā anu somapeyaṃ sukho rathaḥ*
 [ṚV. 1,120,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.11) *vahaturuhyamānaḥ*
 [AV. 14,2,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.09) *vājibhiruhyamānāḥ*
-[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) *uhyanto vājibhirdrutam*
-[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
+[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) = [≈Вульг. 3.269.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S006) = ≈крит. 03,253.6c *uhyanto vājibhirdrutam*
+[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) = [≈Вульг. 1.133.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A133_S007) = ≈крит. 01,123.64a *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
 [RAGH. 11,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,10) *yugyaiḥ kṣitibhujāṃ yogyairuhyamānāḥ* (так следует читать)
 [RĀJA-TAR. 5,33.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,33) *rathamuhyantaṃ divyaturagaiḥ*
-[HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (так [ed. Bomb.])
-[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) *uhyamāna ivākāśe kālameghena candramāḥ*
+[HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (так [Бомбейская ред.])
+[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) = [≈Вульг. 7.19.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A019_S005) = ≈крит. 07,18.5c *uhyamāna ivākāśe kālameghena candramāḥ*
 [HARIV. 3757.](https://sanskrit-lexicon-scans.github.io/hariv?3757) *yāti viyatyuhyamāneva (ulkā)*
 [VARĀH. BṚH. S. 33,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,7) [24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,24) *tena plavena sa yayāvuhyamāno mahītale* плывя на корабле
 [MĀRK. P. 74,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,12) *srotasohyamānasya* (так следует читать) будучи несом течением
 [VIKR. 24.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?24) *mañjūṣāgato garbhastaraṃgairuhyamānakaḥ*
-[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) *vedaśāstrārṇave ghora uhyamānā itastataḥ*
+[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) = [≈Вульг. 3.308.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A308_S026) = ≈крит. 03,292.26c *vedaśāstrārṇave ghora uhyamānā itastataḥ*
 [Verz. d. Oxf. H. 91,a,2.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *guṇaughairuhyamānaḥ*
 [MAITRYUP. 3,2. 6,30.]
   <sub>attested</sub>
@@ -246,15 +246,15 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [KĀṬH. 22,13.]
 [KAUŚ. 32.] *udakamavahat* stehendes Wasser
 [ĀŚV. GṚHY. 4,4,10.] *pratyagūhurmahānadyaḥ prāṅmukhāḥ sindhusaptamāḥ*
-[MBH. 5,2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2998) [16,3.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.3)
+[MBH. 5,2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2998) = [≈Вульг. 5.84.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A084_S006) = ≈крит. 05,82.6a [16,3.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.3) = [≈Вульг. 16.1.3](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A001_S003) = ≈крит. 16,1.3a
 [HARIV. 8287.](https://sanskrit-lexicon-scans.github.io/hariv?8287) [8297.](https://sanskrit-lexicon-scans.github.io/hariv?8297) *kṣīrodāḥ — vahanti yatra vai nadyaḥ*
-[MBH. 13,3790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3790)
+[MBH. 13,3790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3790) = [≈Вульг. 13.80.6](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A080_S006) = ≈крит. 13,79.6a
 [R. 4,41,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,41,55) *paropakārāya vahanti nadyaḥ*
 [Spr. 1734.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1734) [3921.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3921)
 [KATHĀS. 39,37.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,37) [Verz. d. Oxf. H. 120,a,16.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?120) [BHĀG. P. 7,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,17) [MĀRK. P. 99,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?99,6) *vahati nikaṭe kālasrotaḥ*
 [Spr. 1158.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1158) *chandena codakaṃ tasya vahatyāvarjitaṃ drutam* zufliessen
-[MBH. 3,2936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2936) *nadyaśca sarito vāri vahantyo brahmasaṃbhavam*
-[14,783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.783) *ūhuḥ sarvarasānnadyaḥ*
+[MBH. 3,2936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2936) = [≈Вульг. 3.75.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A075_S015) = ≈крит. 03,73.15a *nadyaśca sarito vāri vahantyo brahmasaṃbhavam*
+[14,783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.783) = [≈Вульг. 14.27.20](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A027_S020) = ≈крит. 14,27.21a *ūhuḥ sarvarasānnadyaḥ*
 [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *toyaṃ vahati sirā paścimā*
 [VARĀH. BṚH. S. 54,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,6) [19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,19) [21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,21) [36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,36) [39.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,39) [66.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,66) [71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,71) [73.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,73) *asraughaṃ muhurūhatuḥ* liessen einen Thränenstrom fliessen
 [BHĀG. P. 4,9,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,48) *(śiraḥ) vavāha (!) raktam*
@@ -268,15 +268,15 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [KĀṬH. 22,13.]
 [KAUŚ. 32.] *udakamavahat* стоячая вода
 [ĀŚV. GṚHY. 4,4,10.] *pratyagūhurmahānadyaḥ prāṅmukhāḥ sindhusaptamāḥ*
-[MBH. 5,2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2998) [16,3.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.3)
+[MBH. 5,2998.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2998) = [≈Вульг. 5.84.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A084_S006) = ≈крит. 05,82.6a [16,3.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.3) = [≈Вульг. 16.1.3](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A001_S003) = ≈крит. 16,1.3a
 [HARIV. 8287.](https://sanskrit-lexicon-scans.github.io/hariv?8287) [8297.](https://sanskrit-lexicon-scans.github.io/hariv?8297) *kṣīrodāḥ — vahanti yatra vai nadyaḥ*
-[MBH. 13,3790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3790)
+[MBH. 13,3790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3790) = [≈Вульг. 13.80.6](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A080_S006) = ≈крит. 13,79.6a
 [R. 4,41,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,41,55) *paropakārāya vahanti nadyaḥ*
 [Spr. 1734.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1734) [3921.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3921)
 [KATHĀS. 39,37.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,37) [Verz. d. Oxf. H. 120,a,16.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?120) [BHĀG. P. 7,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,17) [MĀRK. P. 99,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?99,6) *vahati nikaṭe kālasrotaḥ*
 [Spr. 1158.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1158) *chandena codakaṃ tasya vahatyāvarjitaṃ drutam* притекать
-[MBH. 3,2936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2936) *nadyaśca sarito vāri vahantyo brahmasaṃbhavam*
-[14,783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.783) *ūhuḥ sarvarasānnadyaḥ*
+[MBH. 3,2936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2936) = [≈Вульг. 3.75.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A075_S015) = ≈крит. 03,73.15a *nadyaśca sarito vāri vahantyo brahmasaṃbhavam*
+[14,783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.783) = [≈Вульг. 14.27.20](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A027_S020) = ≈крит. 14,27.21a *ūhuḥ sarvarasānnadyaḥ*
 [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *toyaṃ vahati sirā paścimā*
 [VARĀH. BṚH. S. 54,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,6) [19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,19) [21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,21) [36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,36) [39.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,39) [66.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,66) [71.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,71) [73.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,73) *asraughaṃ muhurūhatuḥ* проливали поток слез
 [BHĀG. P. 4,9,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,48) *(śiraḥ) vavāha (!) raktam*
@@ -303,17 +303,17 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [R. 1,73,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,36)
 [KATHĀS. 45,357.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,357) [58,86.](https://sanskrit-lexicon-scans.github.io/kss/index.html?58,86) [84,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,65)
 [BHĀG. P. 3,3,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,4) [4,1,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,6) [6,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,31) [9,2,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,18) [24,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,22) *voḍhum*
-[4,8,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,18) [MBH. 13,5090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5090) act. vom Weibe: *jāyā patiṃ vahati vagnunā sumat*
+[4,8,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,18) [MBH. 13,5090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5090) = [≈Вульг. 13.104.136](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S136) = ≈крит. 13,107.128a act. vom Weibe: *jāyā patiṃ vahati vagnunā sumat*
 [ṚV. 10,32,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.03) *ūḍhā* geheirathet, verheirathet (Gattin
-[H. 513](https://sanskrit-lexicon-scans.github.io/abch2/app1?513)) [AK. 2,6,1,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,23) [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) [R. GORR. 2,34,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,8) [53,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,53,16) [KUMĀRAS. 5,70.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,70) [KATHĀS. 36,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,54) *anūḍhā*
+[H. 513](https://sanskrit-lexicon-scans.github.io/abch2/app1?513)) [AK. 2,6,1,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,23) [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) = [≈Вульг. 5.191.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A191_S003) = ≈крит. 05,192.3a [R. GORR. 2,34,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,8) [53,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,53,16) [KUMĀRAS. 5,70.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,70) [KATHĀS. 36,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,54) *anūḍhā*
 [R. 2,63,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,13) so v. a. Concubine
 [SĀH. D. 81.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?81) *ūḍhapūrvā*
 [ŚĀK. 79,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?79,15) [110,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,17) *daivoḍhā, ārṣoḍhā*
 [M. 3,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,38) *kāyoḍhaja* ebend. aus metrischen Rücksichten statt *kāyoḍhāja*.* anūḍha* unverheirathet (vom Manne)
 [AK. 2,7,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,55)
 [H. 526.](https://sanskrit-lexicon-scans.github.io/abch2/app1?526) *ūḍhātprabhṛti* seit der Verheirathung (eines Weibes)
-[MBH. 5,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2961) Die Form *voḍha* (vgl. *soḍha*) in der Stelle: *idaṃ bhāryāśatam — putrārthinā mayā voḍham* (*coḍham?*)
-[MBH. 3,10482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10482)
+[MBH. 5,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2961) = [≈Вульг. 5.83.42](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A083_S042) = ≈крит. 05,81.42c Die Form *voḍha* (vgl. *soḍha*) in der Stelle: *idaṃ bhāryāśatam — putrārthinā mayā voḍham* (*coḍham?*)
+[MBH. 3,10482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10482) = [≈Вульг. 3.125.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A125_S026) = ≈крит. 03,125.23a
 
 - **RU:** — 6) брать домой, жениться (увозить невесту в дом); мед.: *janīḥ*
 [ṚV. 1,167,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.07) [5,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.03) *ya īṃ vahāte ya īṃ vā vareyāt*
@@ -322,17 +322,17 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [R. 1,73,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,36)
 [KATHĀS. 45,357.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,357) [58,86.](https://sanskrit-lexicon-scans.github.io/kss/index.html?58,86) [84,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?84,65)
 [BHĀG. P. 3,3,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,4) [4,1,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,6) [6,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,31) [9,2,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,18) [24,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,22) *voḍhum*
-[4,8,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,18) [MBH. 13,5090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5090) act. о женщине: *jāyā patiṃ vahati vagnunā sumat*
+[4,8,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,18) [MBH. 13,5090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5090) = [≈Вульг. 13.104.136](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S136) = ≈крит. 13,107.128a act. о женщине: *jāyā patiṃ vahati vagnunā sumat*
 [ṚV. 10,32,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.03) *ūḍhā* замужняя, состоящая в браке (супруга
-[H. 513](https://sanskrit-lexicon-scans.github.io/abch2/app1?513)) [AK. 2,6,1,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,23) [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) [R. GORR. 2,34,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,8) [53,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,53,16) [KUMĀRAS. 5,70.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,70) [KATHĀS. 36,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,54) *anūḍhā*
+[H. 513](https://sanskrit-lexicon-scans.github.io/abch2/app1?513)) [AK. 2,6,1,23.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,23) [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) = [≈Вульг. 5.191.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A191_S003) = ≈крит. 05,192.3a [R. GORR. 2,34,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,8) [53,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,53,16) [KUMĀRAS. 5,70.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,70) [KATHĀS. 36,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,54) *anūḍhā*
 [R. 2,63,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,13) так преим. наложница
 [SĀH. D. 81.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?81) *ūḍhapūrvā*
 [ŚĀK. 79,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?79,15) [110,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,17) *daivoḍhā, ārṣoḍhā*
 [M. 3,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,38) *kāyoḍhaja* там же по метрическим соображениям вм. *kāyoḍhāja*. * anūḍha* неженатый (о мужчине)
 [AK. 2,7,55.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,55)
 [H. 526.](https://sanskrit-lexicon-scans.github.io/abch2/app1?526) *ūḍhātprabhṛti* со времени замужества (женщины)
-[MBH. 5,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2961) Форма *voḍha* (ср. *soḍha*) в месте: *idaṃ bhāryāśatam — putrārthinā mayā voḍham* (*coḍham?*)
-[MBH. 3,10482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10482)
+[MBH. 5,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2961) = [≈Вульг. 5.83.42](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A083_S042) = ≈крит. 05,81.42c Форма *voḍha* (ср. *soḍha*) в месте: *idaṃ bhāryāśatam — putrārthinā mayā voḍham* (*coḍham?*)
+[MBH. 3,10482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10482) = [≈Вульг. 3.125.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A125_S026) = ≈крит. 03,125.23a
   <sub>attested</sub>
 
 **7)** — 7) mit sich —, bei sich führen: *na sa pathyodanaṃ vahet*
@@ -372,26 +372,26 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
   <sub>attested</sub>
 
 **9)** — 9) wegführen: *(sarasvatī) vegenovāha taṃ vipraṃ viśvāmitrāśramaṃ prati*
-[MBH. 9,2391.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2391) *adreḥ śṛṅgaṃ vahati pavanaḥ kiṃ svit*
+[MBH. 9,2391.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2391) = [≈Вульг. 9.42.34](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S034) = ≈крит. 09,41.32c *adreḥ śṛṅgaṃ vahati pavanaḥ kiṃ svit*
 [MEGH. 14.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?14) *taṃ (reṇuṃ) vahatyanilaḥ śīghram*
 [R. 2,93,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,93,14) ([102,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,102,16) [GORR.]). [MĀRK. P. 17,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,3) *kurulakṣmīm*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) *uhyamānaḥ* (*jalena*)
-[9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) *jalenoḍham* vom Wasser fortgeschwemmt
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S040) = ≈крит. 01,114.31a *uhyamānaḥ* (*jalena*)
+[9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Вульг. 9.42.29](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S029) = ≈крит. 09,41.28a *jalenoḍham* vom Wasser fortgeschwemmt
 [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) *ūḍha* fortgeschleppt, geraubt
 [9,270.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,270)
 
 - **RU:** — 9) уводить, уносить прочь: *(sarasvatī) vegenovāha taṃ vipraṃ viśvāmitrāśramaṃ prati*
-[MBH. 9,2391.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2391) *adreḥ śṛṅgaṃ vahati pavanaḥ kiṃ svit*
+[MBH. 9,2391.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2391) = [≈Вульг. 9.42.34](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S034) = ≈крит. 09,41.32c *adreḥ śṛṅgaṃ vahati pavanaḥ kiṃ svit*
 [MEGH. 14.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?14) *taṃ (reṇuṃ) vahatyanilaḥ śīghram*
 [R. 2,93,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,93,14) ([102,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,102,16) [GORR.]). [MĀRK. P. 17,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,3) *kurulakṣmīm*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) *uhyamānaḥ* (*jalena*)
-[9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) *jalenoḍham* унесенный водой, смытый потоком
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S040) = ≈крит. 01,114.31a *uhyamānaḥ* (*jalena*)
+[9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Вульг. 9.42.29](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S029) = ≈крит. 09,41.28a *jalenoḍham* унесенный водой, смытый потоком
 [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) *ūḍha* утащенный, похищенный
 [9,270.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,270)
   <sub>attested</sub>
 
 **10)** — 10) tragen: *pṛṣṭhena*
-[MBH. 1,5888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5888) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
+[MBH. 1,5888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5888) = [≈Вульг. 1.148.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A148_S021) = ≈крит. 01,136.18a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S042) = ≈крит. 01,141.21a
 [KATHĀS. 22,140.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,140) *skandhena*
 [Spr. 2764.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2764) [3924.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3924) *mūrdhnā*
 [2684.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2684) [MEGH. 17.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?17) *śirasā*
@@ -403,7 +403,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [BHĀG. P. 3,13,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,40) *teṣāmahaṃ pādasarojareṇum — vaheyādhikirīṭamāyuḥ*
 [4,21,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,42) *mukhe nibaddhāṃ nirṛtim*
 [Spr. (II) 576.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?576 "Spr. (II) 576: aruntudaṃ paruṣaṃ tīkṣṇavācaṃ vākkaṇṭakairvitudantaṃ manuṣyān | vidyādalakṣmīkatamaṃ janānāṃ mukhe nibaddhāṃ nirṛtiṃ vahantam || — (3585.) Wisse, dass der Verletzende, Grobe, Scharfzüngige, mit stachligen Worten die Leute Geisselnde und die an seinem Mund gefesselte Genie des Verderbens Tragende der Unglückseligste unter den Menschen ist.") *dharmarājaṃ ca dhaumyaṃ ca kṛṣṇāṃ ca yamajau tathā . eko 'pyahamalaṃ voḍhum*
-[MBH. 3,11019. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11019) [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148)
+[MBH. 3,11019. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11019) = [≈Вульг. 3.143.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A143_S008) = ≈крит. 03,143.7a [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) = [≈Вульг. 4.5.7](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S007) = ≈крит. 04,5.7c
 [R. 3,4,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,26) [5,35,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,31)
 [KATHĀS. 18,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,170) [22,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,142) *yatrārohanti jetāro vahanti ca parājitāḥ* ein Spiel
 [BHĀG. P. 10,18,21. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,18,21) *vahanti śivikāmanye yāntyanye śivikāgatāḥ*
@@ -411,21 +411,21 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [BHĀG. P. 5,10,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,2) [6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,6) *khe khelagāmī tamuvāha vāhaḥ*
 [KUMĀRAS. 7,49.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,49) *kharavat*
 [Spr. 4780.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4780) *karabhāṇāṃ sahasrāṇi kośaṃ tasya — ūhurdaśa*
-[MBH. 2,1201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1201) *vāhakairuhyamānāṃ tāṃ śūraiḥ*
+[MBH. 2,1201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1201) = [≈Вульг. 2.32.19](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U05_A032_S019) = ≈крит. 02,29.18a *vāhakairuhyamānāṃ tāṃ śūraiḥ*
 [R. 4,24,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,21) [5,73,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,48) *guhyakairuhyamānā sā* (*sabhā*)
-[MBH. 2,385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.385) *uhyante sma suparṇena*
+[MBH. 2,385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.385) = [≈Вульг. 2.10.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A010_S003) = ≈крит. 02,10.3a *uhyante sma suparṇena*
 [RAGH. 10,62.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,62)
 [PAÑCAT. 198,17. fg.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?198,17) *vasudhā tathohe yena*
 [BHAṬṬ. 2,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,39) *aṅkāśrayapraṇayinastanayānvahantaḥ*
 [ŚĀK. 176.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?176) *śarīrameko vahate 'ntarātmā*
-[MBH. 12,6917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6917) *garbham* eine Leibesfrucht tragen
+[MBH. 12,6917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6917) = [≈Вульг. 12.192.2](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A192_S002) = ≈крит. 12,185.2a *garbham* eine Leibesfrucht tragen
 [Spr. 1596.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1596) *(nāvaḥ) vahantyo janamārūḍhaṃ tadā saṃpeturāśugāḥ*
 [R. 2,89,17. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,17) ([97,22. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,97,22) [GORR.]). *taṃ janamasatyasaṃdhaṃ bhagavati vasudhe kathaṃ vahasi*
 [Spr. 484.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?484)
 [BHĀG. P. 8,20,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,4) *vahati bhuvanaśreṇīṃ śeṣaḥ*
 [Spr. 2763.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2763) *ambhonidhirvahati durvahavāḍavāgnim*
 [203](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?203), v. l. [KATHĀS. 25,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,100) *kāryadhuram*
-[MBH. 8,1663](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1663) (med.). [R. GORR. 2,21,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,21,12) [36,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,36,14) *bhāraṃ sa vahate tasya*
+[MBH. 8,1663](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1663) = [≈Вульг. 8.35.44](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A035_S044) = ≈крит. 08,25.7a (med.). [R. GORR. 2,21,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,21,12) [36,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,36,14) *bhāraṃ sa vahate tasya*
 [Spr. 4919.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4919)
 [BHAṬṬ. 3,51.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,51) [15,20](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,20) (*bharam* st. *param* Comm.).
 [BHĀG. P. 5,2,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,11) [8,6,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,34) *ciroḍhāṃ dhuram*
@@ -447,7 +447,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [BHĀG. P. 5,26,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,22)
 
 - **RU:** — 10) носить, нести: *pṛṣṭhena*
-[MBH. 1,5888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5888) [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053)
+[MBH. 1,5888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5888) = [≈Вульг. 1.148.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A148_S021) = ≈крит. 01,136.18a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S042) = ≈крит. 01,141.21a
 [KATHĀS. 22,140.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,140) *skandhena*
 [Spr. 2764.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2764) [3924.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3924) *mūrdhnā*
 [2684.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2684) [MEGH. 17.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?17) *śirasā*
@@ -459,7 +459,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [BHĀG. P. 3,13,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,40) *teṣāmahaṃ pādasarojareṇum — vaheyādhikirīṭamāyuḥ*
 [4,21,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,42) *mukhe nibaddhāṃ nirṛtim*
 [Spr. (II) 576.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?576 "Spr. (II) 576: aruntudaṃ paruṣaṃ tīkṣṇavācaṃ vākkaṇṭakairvitudantaṃ manuṣyān | vidyādalakṣmīkatamaṃ janānāṃ mukhe nibaddhāṃ nirṛtiṃ vahantam || — (3585.) Wisse, dass der Verletzende, Grobe, Scharfzüngige, mit stachligen Worten die Leute Geisselnde und die an seinem Mund gefesselte Genie des Verderbens Tragende der Unglückseligste unter den Menschen ist.") *dharmarājaṃ ca dhaumyaṃ ca kṛṣṇāṃ ca yamajau tathā . eko 'pyahamalaṃ voḍhum*
-[MBH. 3,11019. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11019) [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148)
+[MBH. 3,11019. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11019) = [≈Вульг. 3.143.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A143_S008) = ≈крит. 03,143.7a [4,148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) = [≈Вульг. 4.5.7](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S007) = ≈крит. 04,5.7c
 [R. 3,4,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,26) [5,35,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,31)
 [KATHĀS. 18,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,170) [22,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,142) *yatrārohanti jetāro vahanti ca parājitāḥ* игра
 [BHĀG. P. 10,18,21. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,18,21) *vahanti śivikāmanye yāntyanye śivikāgatāḥ*
@@ -467,21 +467,21 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [BHĀG. P. 5,10,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,2) [6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,6) *khe khelagāmī tamuvāha vāhaḥ*
 [KUMĀRAS. 7,49.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,49) *kharavat*
 [Spr. 4780.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4780) *karabhāṇāṃ sahasrāṇi kośaṃ tasya — ūhurdaśa*
-[MBH. 2,1201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1201) *vāhakairuhyamānāṃ tāṃ śūraiḥ*
+[MBH. 2,1201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1201) = [≈Вульг. 2.32.19](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U05_A032_S019) = ≈крит. 02,29.18a *vāhakairuhyamānāṃ tāṃ śūraiḥ*
 [R. 4,24,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,21) [5,73,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,48) *guhyakairuhyamānā sā* (*sabhā*)
-[MBH. 2,385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.385) *uhyante sma suparṇena*
+[MBH. 2,385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.385) = [≈Вульг. 2.10.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A010_S003) = ≈крит. 02,10.3a *uhyante sma suparṇena*
 [RAGH. 10,62.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,62)
 [PAÑCAT. 198,17. fg.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?198,17) *vasudhā tathohe yena*
 [BHAṬṬ. 2,39.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,39) *aṅkāśrayapraṇayinastanayānvahantaḥ*
 [ŚĀK. 176.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?176) *śarīrameko vahate 'ntarātmā*
-[MBH. 12,6917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6917) *garbham* носить плод во чреве
+[MBH. 12,6917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6917) = [≈Вульг. 12.192.2](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A192_S002) = ≈крит. 12,185.2a *garbham* носить плод во чреве
 [Spr. 1596.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1596) *(nāvaḥ) vahantyo janamārūḍhaṃ tadā saṃpeturāśugāḥ*
 [R. 2,89,17. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,17) ([97,22. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,97,22) [GORR.]). *taṃ janamasatyasaṃdhaṃ bhagavati vasudhe kathaṃ vahasi*
 [Spr. 484.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?484)
 [BHĀG. P. 8,20,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,20,4) *vahati bhuvanaśreṇīṃ śeṣaḥ*
 [Spr. 2763.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2763) *ambhonidhirvahati durvahavāḍavāgnim*
 [203](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?203), v. l. [KATHĀS. 25,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,100) *kāryadhuram*
-[MBH. 8,1663](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1663) (мед.). [R. GORR. 2,21,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,21,12) [36,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,36,14) *bhāraṃ sa vahate tasya*
+[MBH. 8,1663](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1663) = [≈Вульг. 8.35.44](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A035_S044) = ≈крит. 08,25.7a (мед.). [R. GORR. 2,21,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,21,12) [36,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,36,14) *bhāraṃ sa vahate tasya*
 [Spr. 4919.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4919)
 [BHAṬṬ. 3,51.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,51) [15,20](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,20) (*bharam* вместо *param* коммент.).
 [BHĀG. P. 5,2,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,11) [8,6,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,34) *ciroḍhāṃ dhuram*
@@ -518,7 +518,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
   <sub>attested</sub>
 
 **12)** — 12) an sich tragen, haben: *yaccāśrupātātkalilaṃ vadanaṃ vahase*
-[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
+[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) = [≈Вульг. 11.1.42](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A001_S042) = ≈крит. 11,1.35a *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
 [MṚCCH. 13,15.] *pīyūṣapūrṇakucakumbhayugmam*
 [CAURAP. 26.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?26) *vīrakāyavahadghrāhā*
 [KATHĀS. 47,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,52) *dṛśā bāṣpakalāmuvāha*
@@ -526,7 +526,7 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [RĀJA-TAR. 4,197.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,197)
 
 - **RU:** — 12) носить на себе, иметь (при себе или на себе): *yaccāśrupātātkalilaṃ vadanaṃ vahase*
-[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
+[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) = [≈Вульг. 11.1.42](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A001_S042) = ≈крит. 11,1.35a *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
 [MṚCCH. 13,15.] *pīyūṣapūrṇakucakumbhayugmam*
 [CAURAP. 26.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?26) *vīrakāyavahadghrāhā*
 [KATHĀS. 47,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,52) *dṛśā bāṣpakalāmuvāha*
@@ -540,11 +540,11 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 
 * 'nuśāsanam*
 [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,20) *durvahaṃ yogam*
-[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) *mānuṣīṃ dīkṣām*
+[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) = [≈Вульг. 13.29.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A029_S005) = ≈крит. 13,30.1a *mānuṣīṃ dīkṣām*
 [HARIV. 3735.](https://sanskrit-lexicon-scans.github.io/hariv?3735) *niyamān*
 [BHĀG. P. 3,16,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,7) *sūryādhikāram*
 [MĀRK. P. 111,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?111,3) *kapaṭam*
-[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) *adharmam*
+[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) = [≈Вульг. 1.74.107](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S107) = ≈крит. 01,69.26a *adharmam*
 [R. 1,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,7) *lajjām*
 [Spr. (II) 382.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?382 "Spr. (II) 382: anyocchiṣṭeṣu pātreṣu bhuktvaiteṣu mahībhujaḥ | kasmānna lajjāmavahañchauce cintāṃ na vā dadhuḥ || — (3506.) Als Fürsten, die Geniesser der Erde, aus diesen Schüsseln, die Andere zurückliessen, speisten, warum empfanden sie keine Scham oder dachten nicht an Reinigung?") *khedam*
 [568.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?568) *paścāttāpam*
@@ -578,11 +578,11 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 
 * 'nuśāsanam*
 [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,20) *durvahaṃ yogam*
-[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) *mānuṣīṃ dīkṣām*
+[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) = [≈Вульг. 13.29.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A029_S005) = ≈крит. 13,30.1a *mānuṣīṃ dīkṣām*
 [HARIV. 3735.](https://sanskrit-lexicon-scans.github.io/hariv?3735) *niyamān*
 [BHĀG. P. 3,16,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,7) *sūryādhikāram*
 [MĀRK. P. 111,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?111,3) *kapaṭam*
-[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) *adharmam*
+[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) = [≈Вульг. 1.74.107](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S107) = ≈крит. 01,69.26a *adharmam*
 [R. 1,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,7) *lajjām*
 [Spr. (II) 382.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?382 "Spr. (II) 382: anyocchiṣṭeṣu pātreṣu bhuktvaiteṣu mahībhujaḥ | kasmānna lajjāmavahañchauce cintāṃ na vā dadhuḥ || — (3506.) Als Fürsten, die Geniesser der Erde, aus diesen Schüsseln, die Andere zurückliessen, speisten, warum empfanden sie keine Scham oder dachten nicht an Reinigung?") *khedam*
 [568.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?568) *paścāttāpam*
@@ -653,16 +653,16 @@ _PWG article — 48 sub-card(s), 360 sense(s) · RU 360/360 · EN 0/360_
 [MBH. 4,1435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1435)
 [HARIV. 2433.](https://sanskrit-lexicon-scans.github.io/hariv?2433) [7300.](https://sanskrit-lexicon-scans.github.io/hariv?7300) [9359.](https://sanskrit-lexicon-scans.github.io/hariv?9359)
 [R. 2,114,8](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,8) ([125,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,18) [GORR.]). [7,28,24.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,28,24) [29,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,7) (die Pferde) ziehen lassen, lenken: *śanakairvaḥhayanhayān*
-[MBH. 7,6421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6421) [8,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.688) *mahāvṛṣān*
+[MBH. 7,6421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6421) = [≈Вульг. 7.148.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A148_S038) = ≈крит. 07,123.33a [8,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.688) = [≈Вульг. 8.16.51](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A016_S051) = ≈крит. 08,12.47a *mahāvṛṣān*
 [RĀJA-TAR. 4,227.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,227) Schol. zu [KĀTY. ŚR. 626,2](https://sanskrit-lexicon-scans.github.io/katyasr/app2?626,2) v. u. *vāhayāmāsa tānṛṣīn* liess sie (wie Zugthiere) ziehen
-[MBH. 5,469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.469) [13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) mit doppeltem acc.
+[MBH. 5,469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.469) = [≈Вульг. 5.15.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A015_S022) = ≈крит. 05,15.21c [13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) = [≈Вульг. 13.99.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A099_S011) = ≈крит. 13,102.11a mit doppeltem acc.
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Vārtt. 7. *balīvardānyavān*
 Schol. (zu Wagen) Etwas führen: *arpitavimānavāhitakāñcanakarpūravastrakoṭicaya*
 [KATHĀS. 43,250.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,250) (ein Schiff) führen, lenken: *nāvam*
-[MBH. 1,2399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2399) *tarim*
-[4014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4014) Ohne acc. fahren zu Wagen, sich vermittelst eines Vehikels irgendwohin begeben: *tvaritaṃ vāhyatām* (impers.) wird dem Wagenlenker zugerufen
+[MBH. 1,2399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2399) = [≈Вульг. 1.63.67](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A063_S067) = ≈крит. 01,57.54a *tarim*
+[4014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4014) = [≈Вульг. 1.100.48](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S048) = ≈крит. 01,94.43c Ohne acc. fahren zu Wagen, sich vermittelst eines Vehikels irgendwohin begeben: *tvaritaṃ vāhyatām* (impers.) wird dem Wagenlenker zugerufen
 [R. 2,40,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,31) *adhiṣṭhāya ca gāṃ loke bhuñjate vāhayanti ca*
-[MBH. 12,6705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6705) *avāhayaṃstataḥ* (*ādhāvantastadā* die neuere Ausg.) *śīghraṃ bāṇasya puramantikāt*
+[MBH. 12,6705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6705) = [≈Вульг. 12.182.24](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A182_S024) = ≈крит. 12,175.24a *avāhayaṃstataḥ* (*ādhāvantastadā* die neuere Ausg.) *śīghraṃ bāṇasya puramantikāt*
 [HARIV. 10476.](https://sanskrit-lexicon-scans.github.io/hariv?10476) *dakṣiṇena ca mārgeṇa savyaṃ dakṣiṇameva ca . vāhayasva mahābhāga tato drakṣyasi rāghavam ..*
 [R. 2,92,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,13) (in der [ed. Bomb.] wird ein Vers eingeschoben, so dass dort *vāhayasva* in der Bed. führen mit *vāhinīm* zu verbinden ist).
 
@@ -670,18 +670,18 @@ Schol. (zu Wagen) Etwas führen: *arpitavimānavāhitakāñcanakarpūravastrako�
 [MBH. 4,1435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1435)
 [HARIV. 2433.](https://sanskrit-lexicon-scans.github.io/hariv?2433) [7300.](https://sanskrit-lexicon-scans.github.io/hariv?7300) [9359.](https://sanskrit-lexicon-scans.github.io/hariv?9359)
 [R. 2,114,8](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,8) ([125,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,18) [GORR.]). [7,28,24.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,28,24) [29,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,7) (лошадей) давать тянуть, направлять: *śanakairvaḥhayanhayān*
-[MBH. 7,6421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6421) [8,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.688) *mahāvṛṣān*
+[MBH. 7,6421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6421) = [≈Вульг. 7.148.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A148_S038) = ≈крит. 07,123.33a [8,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.688) = [≈Вульг. 8.16.51](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A016_S051) = ≈крит. 08,12.47a *mahāvṛṣān*
 [RĀJA-TAR. 4,227.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,227) схол. к [KĀTY. ŚR. 626,2](https://sanskrit-lexicon-scans.github.io/katyasr/app2?626,2) снизу *vāhayāmāsa tānṛṣīn* заставил их (как тягловых животных) тянуть
-[MBH. 5,469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.469) [13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) с двойным acc.
+[MBH. 5,469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.469) = [≈Вульг. 5.15.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A015_S022) = ≈крит. 05,15.21c [13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) = [≈Вульг. 13.99.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A099_S011) = ≈крит. 13,102.11a с двойным acc.
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Вартт. 7. *balīvardānyavān*
 схол. (на повозке) везти что-либо: *arpitavimānavāhitakāñcanakarpūravastrakoṭicaya*
 [KATHĀS. 43,250.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,250) (корабль) вести, направлять: *nāvam*
-[MBH. 1,2399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2399) *tarim*
-[4014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4014) Без acc. ехать на повозке, перемещаться куда-либо посредством экипажа: *tvaritaṃ vāhyatām* (impers.) обращается к вознице
+[MBH. 1,2399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2399) = [≈Вульг. 1.63.67](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A063_S067) = ≈крит. 01,57.54a *tarim*
+[4014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4014) = [≈Вульг. 1.100.48](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S048) = ≈крит. 01,94.43c Без acc. ехать на повозке, перемещаться куда-либо посредством экипажа: *tvaritaṃ vāhyatām* (impers.) обращается к вознице
 [R. 2,40,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,31) *adhiṣṭhāya ca gāṃ loke bhuñjate vāhayanti ca*
-[MBH. 12,6705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6705) *avāhayaṃstataḥ* (*ādhāvantastadā* более новое изд.) *śīghraṃ bāṇasya puramantikāt*
+[MBH. 12,6705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6705) = [≈Вульг. 12.182.24](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A182_S024) = ≈крит. 12,175.24a *avāhayaṃstataḥ* (*ādhāvantastadā* более новое изд.) *śīghraṃ bāṇasya puramantikāt*
 [HARIV. 10476.](https://sanskrit-lexicon-scans.github.io/hariv?10476) *dakṣiṇena ca mārgeṇa savyaṃ dakṣiṇameva ca . vāhayasva mahābhāga tato drakṣyasi rāghavam ..*
-[R. 2,92,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,13) (в [ed. Bomb.] вставляется стих, так что там *vāhayasva* в знач. вести связывается с *vāhinīm*).
+[R. 2,92,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,13) (в [Бомбейская ред.] вставляется стих, так что там *vāhayasva* в знач. вести связывается с *vāhinīm*).
   <sub>attested</sub>
 
 **2)** — 2) Jmd lenken lassen; mit dopp. acc.: *vāhānavāhayatpārtham*
@@ -697,7 +697,7 @@ Schol. *śailānkapibhiḥ*
 [VOP. 5,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,5) *uṣṭravāmīśatavāhitārtha*
 [RAGH. 5,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,32)
 [RĀJA-TAR. 5,274.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,274) [Z. d. d. m. G. 14,571,7. 572,4. 8.] Jmd tragen lassen, zum Tragen anstellen: *paśuvaccaiva tānpṛṣṭhe vāhayāmāsa*
-[MBH. 1,3153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3153) *na vāhayeddvijān*
+[MBH. 1,3153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3153) = [≈Вульг. 1.75.28](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S028) = ≈крит. 01,70.25c *na vāhayeddvijān*
 [MĀRK. P. 34,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,34) sich tragen lassen so v. a. reiten auf (acc.): *turagam*
 [121,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,8) [KATHĀS. 12,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,135) *te vāhayanto 'nyo'nyam*
 [HARIV. 3749.](https://sanskrit-lexicon-scans.github.io/hariv?3749) *taṃ ca maṇḍūkairvāhyamānaṃ dṛṣṭvā*
@@ -710,7 +710,7 @@ Schol. *śailānkapibhiḥ*
 [VOP. 5,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,5) *uṣṭravāmīśatavāhitārtha*
 [RAGH. 5,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,32)
 [RĀJA-TAR. 5,274.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,274) [Z. d. d. m. G. 14,571,7. 572,4. 8.] велеть кому-либо нести, приставить для ношения: *paśuvaccaiva tānpṛṣṭhe vāhayāmāsa*
-[MBH. 1,3153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3153) *na vāhayeddvijān*
+[MBH. 1,3153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3153) = [≈Вульг. 1.75.28](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S028) = ≈крит. 01,70.25c *na vāhayeddvijān*
 [MĀRK. P. 34,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,34) дать себя нести, так преим. ехать верхом на (acc.): *turagam*
 [121,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,8) [KATHĀS. 12,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,135) *te vāhayanto 'nyo'nyam*
 [HARIV. 3749.](https://sanskrit-lexicon-scans.github.io/hariv?3749) *taṃ ca maṇḍūkairvāhyamānaṃ dṛṣṭvā*
@@ -955,27 +955,27 @@ Schol. *śailānkapibhiḥ*
 
 **1)** 1) wegfahren, wegführen
 [MBH. 4,2085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2085) *tamāropya svarathe — apovāha*
-[6,2347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2347) [5400. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5400) *raṇāt*
+[6,2347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2347) = [≈Вульг. 6.54.113](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A054_S113) = ≈крит. 06,50.104a [5400. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5400) = [≈Вульг. 6.116.25](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A116_S025) = ≈крит. 06,112.25a *raṇāt*
 [BHĀG. P. 10,76,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,76,27) *(rākṣasaḥ) kīcakamapovāha vātavegena*
-[MBH. 4,462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.462)
+[MBH. 4,462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.462) = [≈Вульг. 4.16.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S011) = ≈крит. 04,15.8c
 [HARIV. 10726.](https://sanskrit-lexicon-scans.github.io/hariv?10726) *yajñapaśumapovāha*
 [BHĀG. P. 4,19,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,11) [10,37,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,37,29)
 [ŚAṂK.] zu [CHĀND. UP. S. 31.] *nadī . apovāha vasiṣṭhaṃ tu prācīṃ diśam*
-[MBH. 9,2393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2393) *vāyurapovāha tadrajaḥ*
-[1,1479.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1479) *apovāha ca vāso 'syā mārutaḥ*
-[2939.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2939)
+[MBH. 9,2393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2393) = [≈Вульг. 9.42.36](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S036) = ≈крит. 09,41.34c *vāyurapovāha tadrajaḥ*
+[1,1479.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1479) = [≈Вульг. 1.32.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A032_S009) = ≈крит. 01,28.9a *apovāha ca vāso 'syā mārutaḥ*
+[2939.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2939) = [≈Вульг. 1.72.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A072_S003) = ≈крит. 01,66.3c
 
 - **RU:** 1) уезжать прочь, увозить
 [MBH. 4,2085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2085) *tamāropya svarathe — apovāha*
-[6,2347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2347) [5400. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5400) *raṇāt*
+[6,2347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2347) = [≈Вульг. 6.54.113](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A054_S113) = ≈крит. 06,50.104a [5400. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5400) = [≈Вульг. 6.116.25](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A116_S025) = ≈крит. 06,112.25a *raṇāt*
 [BHĀG. P. 10,76,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,76,27) *(rākṣasaḥ) kīcakamapovāha vātavegena*
-[MBH. 4,462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.462)
+[MBH. 4,462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.462) = [≈Вульг. 4.16.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S011) = ≈крит. 04,15.8c
 [HARIV. 10726.](https://sanskrit-lexicon-scans.github.io/hariv?10726) *yajñapaśumapovāha*
 [BHĀG. P. 4,19,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,11) [10,37,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,37,29)
 [ŚAṂK.] к [CHĀND. UP. S. 31.] *nadī . apovāha vasiṣṭhaṃ tu prācīṃ diśam*
-[MBH. 9,2393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2393) *vāyurapovāha tadrajaḥ*
-[1,1479.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1479) *apovāha ca vāso 'syā mārutaḥ*
-[2939.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2939)
+[MBH. 9,2393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2393) = [≈Вульг. 9.42.36](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S036) = ≈крит. 09,41.34c *vāyurapovāha tadrajaḥ*
+[1,1479.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1479) = [≈Вульг. 1.32.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A032_S009) = ≈крит. 01,28.9a *apovāha ca vāso 'syā mārutaḥ*
+[2939.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2939) = [≈Вульг. 1.72.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A072_S003) = ≈крит. 01,66.3c
   <sub>attested</sub>
 
 **2)** — 2) wegtreiben, vertreiben: *narairivolkābhirapohyamāno mahāgajaḥ*
@@ -988,11 +988,11 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **3)** — 3) abwerfen: *apohya vasanaṃ svakam*
-[MBH. 2,2389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2389) entfernen, wegschieben: *anapoḍhārgala*
+[MBH. 2,2389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2389) = [≈Вульг. 2.71.10](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A071_S010) = ≈крит. 02,63.10a entfernen, wegschieben: *anapoḍhārgala*
 [RAGH. ed. Calc. 16,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?16,6)
 
 - **RU:** — 3) сбрасывать: *apohya vasanaṃ svakam*
-[MBH. 2,2389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2389) удалять, отодвигать: *anapoḍhārgala*
+[MBH. 2,2389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2389) = [≈Вульг. 2.71.10](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A071_S010) = ≈крит. 02,63.10a удалять, отодвигать: *anapoḍhārgala*
 [RAGH. ed. Calc. 16,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?16,6)
   <sub>attested</sub>
 
@@ -1020,7 +1020,7 @@ Schol. *śailānkapibhiḥ*
 
 **caus-1)** 1) wegfahren, wegführen, abführen: *rathaṃ yuddhāt*
 [R. 6,88,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,88,36) [89,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,89,3) *trigartasenāpatinā svarathenāpavāhitaḥ*
-[MBH. 7,4968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4968) [9,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2394)
+[MBH. 7,4968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4968) = [≈Вульг. 7.124.8](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A124_S008) = ≈крит. 07,100.5a [9,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2394) = [≈Вульг. 9.42.37](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S037) = ≈крит. 09,41.35a
 [HARIV. 9233.](https://sanskrit-lexicon-scans.github.io/hariv?9233) [9237.](https://sanskrit-lexicon-scans.github.io/hariv?9237) [10728.](https://sanskrit-lexicon-scans.github.io/hariv?10728) [10844.](https://sanskrit-lexicon-scans.github.io/hariv?10844)
 [R. 1,1,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,51) ([54](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,54) [GORR.]). [2,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,13) [R. GORR. 1,42,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,42,2) [43,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,43,2) [2,6,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,26) [3,59,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,4) [66,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,25) [5,32,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,27) [7,28,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,28,19) [MĀLAV. 67,19.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?67,19) [BHAṬṬ. 8,86.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,86) *kaṅkālam*
 [RĀJA-TAR. 2,101.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,101) *apovāhita* (!)
@@ -1028,7 +1028,7 @@ Schol. *śailānkapibhiḥ*
 
 - **RU:** 1) увозить прочь, уводить, уводить под стражей: *rathaṃ yuddhāt*
 [R. 6,88,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,88,36) [89,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,89,3) *trigartasenāpatinā svarathenāpavāhitaḥ*
-[MBH. 7,4968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4968) [9,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2394)
+[MBH. 7,4968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4968) = [≈Вульг. 7.124.8](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A124_S008) = ≈крит. 07,100.5a [9,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2394) = [≈Вульг. 9.42.37](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S037) = ≈крит. 09,41.35a
 [HARIV. 9233.](https://sanskrit-lexicon-scans.github.io/hariv?9233) [9237.](https://sanskrit-lexicon-scans.github.io/hariv?9237) [10728.](https://sanskrit-lexicon-scans.github.io/hariv?10728) [10844.](https://sanskrit-lexicon-scans.github.io/hariv?10844)
 [R. 1,1,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,51) ([54](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,54) [GORR.]). [2,9,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,13) [R. GORR. 1,42,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,42,2) [43,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,43,2) [2,6,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,26) [3,59,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,4) [66,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,25) [5,32,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,27) [7,28,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,28,19) [MĀLAV. 67,19.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?67,19) [BHAṬṬ. 8,86.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,86) *kaṅkālam*
 [RĀJA-TAR. 2,101.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,101) *apovāhita* (!)
@@ -1076,25 +1076,25 @@ Schol. *śailānkapibhiḥ*
 **1))** — *vyapa* (hierher oder zu 1. *ūh*)
  1) vertreiben, verscheuchen: *vyapoḍhābhra*
 
-[MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942) *vyapoḍhe ca tato ghore tasmiṃstejasi*
-[7,8279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8279) *vyapohya mātṛdoṣam*
+[MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942) = [≈Вульг. 5.83.23](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A083_S023) = ≈крит. 05,81.23c *vyapoḍhe ca tato ghore tasmiṃstejasi*
+[7,8279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8279) = [≈Вульг. 7.182.33](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A182_S033) = ≈крит. 07,157.30c *vyapohya mātṛdoṣam*
 [BHĀG. P. 6,18,66.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,66) *avyapohyānimittaṃ hi kāryaṃ yatkriyate — tadaniṣṭāya kalpeta*
 [KATHĀS. 32,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,42)
 
 - **RU:** — *vyapa* (сюда или к 1. *ūh*)
  1) изгонять, прогонять: *vyapoḍhābhra*
 
-[MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942) *vyapoḍhe ca tato ghore tasmiṃstejasi*
-[7,8279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8279) *vyapohya mātṛdoṣam*
+[MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942) = [≈Вульг. 5.83.23](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A083_S023) = ≈крит. 05,81.23c *vyapoḍhe ca tato ghore tasmiṃstejasi*
+[7,8279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8279) = [≈Вульг. 7.182.33](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A182_S033) = ≈крит. 07,157.30c *vyapohya mātṛdoṣam*
 [BHĀG. P. 6,18,66.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,66) *avyapohyānimittaṃ hi kāryaṃ yatkriyate — tadaniṣṭāya kalpeta*
 [KATHĀS. 32,42.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,42)
   <sub>attested</sub>
 
 **2))** — 2) offenbaren, an den Tag legen: *tayā te mānuṣaṃ karma vyapoḍham*
-[MBH. 8,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1610)
+[MBH. 8,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1610) = [≈Вульг. 8.34.156](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A034_S156) = ≈крит. 08,24.156c
 
 - **RU:** — 2) обнаруживать, выявлять: *tayā te mānuṣaṃ karma vyapoḍham*
-[MBH. 8,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1610)
+[MBH. 8,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1610) = [≈Вульг. 8.34.156](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A034_S156) = ≈крит. 08,24.156c
   <sub>attested</sub>
 
 ## abhivah
@@ -1147,12 +1147,12 @@ Schol. *śailānkapibhiḥ*
 [ŚAT. BR. 2,5,2,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,29)
 [ĀŚV. ŚR. 1,3,22. 3,10,19.] *oḍhā, adyoḍhā*
 [P. 6,1,95](https://ashtadhyayi.com/sutraani/6/1/95), Schol. — *āvāhyamāvahet* (so die [ed. Bomb.]) zuführen (die Braut)
-[MBH. 13,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2407) *rukmaṃ hiraṇyam* u. s. w. *na jātu kṣayamāvahet* bringe man nicht in's Haus
-[4,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.535) *tasyārcāpuṣpamāvahan*
+[MBH. 13,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2407) = [≈Вульг. 13.44.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A044_S004) = ≈крит. 13,44.4a *rukmaṃ hiraṇyam* u. s. w. *na jātu kṣayamāvahet* bringe man nicht in's Haus
+[4,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.535) = [≈Вульг. 4.18.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A018_S013) = ≈крит. 04,17.13a *tasyārcāpuṣpamāvahan*
 [R. GORR. 2,80,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,80,11) *kimasya ta āvahanti* bringen, darbringen
 [BHĀG. P. 8,22,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,22,19) *gurave prītim* bringen, verschaffen
 [M. 2,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,246) [3,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,82) *sukham*
-[MBH. 1,3355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3355) [3,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2830) [16709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16709) *saubhāgyam*
+[MBH. 1,3355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3355) = [≈Вульг. 1.80.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A080_S024) = ≈крит. 01,75.22a [3,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2830) = [≈Вульг. 3.72.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S023) = ≈крит. 03,70.20c [16709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16709) *saubhāgyam*
 [HARIV. 7155.](https://sanskrit-lexicon-scans.github.io/hariv?7155) *kṣayam*
 [R. 3,56,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,27) *āpadaṃ ghorām*
 [5,76,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,5) *rucim*
@@ -1175,13 +1175,13 @@ Schol. *śailānkapibhiḥ*
 [TAITT. UP. 1,4,2,1.] мед. [ṚV. 7,71,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.03) [8,19,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.019.html#rv08.019.01) partic. *oḍha*
 [ŚAT. BR. 2,5,2,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,29)
 [ĀŚV. ŚR. 1,3,22. 3,10,19.] *oḍhā, adyoḍhā*
-[P. 6,1,95](https://ashtadhyayi.com/sutraani/6/1/95), схол. — *āvāhyamāvahet* (так [ed. Bomb.]) привести (невесту)
-[MBH. 13,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2407) *rukmaṃ hiraṇyam* и т.д. *na jātu kṣayamāvahet* да не вводят в дом
-[4,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.535) *tasyārcāpuṣpamāvahan*
+[P. 6,1,95](https://ashtadhyayi.com/sutraani/6/1/95), схол. — *āvāhyamāvahet* (так [Бомбейская ред.]) привести (невесту)
+[MBH. 13,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2407) = [≈Вульг. 13.44.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A044_S004) = ≈крит. 13,44.4a *rukmaṃ hiraṇyam* и т.д. *na jātu kṣayamāvahet* да не вводят в дом
+[4,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.535) = [≈Вульг. 4.18.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A018_S013) = ≈крит. 04,17.13a *tasyārcāpuṣpamāvahan*
 [R. GORR. 2,80,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,80,11) *kimasya ta āvahanti* приносить, подносить
 [BHĀG. P. 8,22,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,22,19) *gurave prītim* приносить, доставлять
 [M. 2,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,246) [3,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,82) *sukham*
-[MBH. 1,3355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3355) [3,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2830) [16709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16709) *saubhāgyam*
+[MBH. 1,3355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3355) = [≈Вульг. 1.80.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A080_S024) = ≈крит. 01,75.22a [3,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2830) = [≈Вульг. 3.72.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S023) = ≈крит. 03,70.20c [16709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16709) *saubhāgyam*
 [HARIV. 7155.](https://sanskrit-lexicon-scans.github.io/hariv?7155) *kṣayam*
 [R. 3,56,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,27) *āpadaṃ ghorām*
 [5,76,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,5) *rucim*
@@ -1190,11 +1190,11 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **2))** — 2) heimführen (als Gattin)
-[MBH. 13,2443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2443) [5079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5079) [5088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5088)
+[MBH. 13,2443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2443) = [≈Вульг. 13.44.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A044_S040) = ≈крит. 13,44.39a [5079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5079) = [≈Вульг. 13.104.125](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S125) = ≈крит. 13,107.117c [5088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5088) = [≈Вульг. 13.104.134](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S134) = ≈крит. 13,107.126a
 [HARIV. 120.](https://sanskrit-lexicon-scans.github.io/hariv?120)
 
 - **RU:** — 2) привести домой (в качестве супруги)
-[MBH. 13,2443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2443) [5079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5079) [5088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5088)
+[MBH. 13,2443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2443) = [≈Вульг. 13.44.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A044_S040) = ≈крит. 13,44.39a [5079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5079) = [≈Вульг. 13.104.125](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S125) = ≈крит. 13,107.117c [5088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5088) = [≈Вульг. 13.104.134](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S134) = ≈крит. 13,107.126a
 [HARIV. 120.](https://sanskrit-lexicon-scans.github.io/hariv?120)
   <sub>attested</sub>
 
@@ -1206,17 +1206,17 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **4))** — 4) fortführen: *tena kūlāpahāreṇa maitrāvaruṇirauhyata* wurde vom Flusse fortgetrieben
-[MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386)
+[MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Вульг. 9.42.29](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S029) = ≈крит. 09,41.28a
 
 - **RU:** — 4) уносить: *tena kūlāpahāreṇa maitrāvaruṇirauhyata* был унесен рекой
-[MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386)
+[MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Вульг. 9.42.29](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S029) = ≈крит. 09,41.28a
   <sub>attested</sub>
 
 **5))** — 5) sich ergiessen, fliessen: *balavatpratividdhasya nastaḥ śoṇitamāvahat*
-[MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209)
+[MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209) = [≈Вульг. 4.68.48](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A068_S048) = ≈крит. 04,63.46a
 
 - **RU:** — 5) изливаться, течь: *balavatpratividdhasya nastaḥ śoṇitamāvahat*
-[MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209)
+[MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209) = [≈Вульг. 4.68.48](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A068_S048) = ≈крит. 04,63.46a
   <sub>attested</sub>
 
 **6))** — 6) tragen: *nānāvicitrakṛtamaṇḍanam*
@@ -1240,7 +1240,7 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **8_herbeirufen)** — Vgl. *āvaha* fg., *āvāha* . — caus. herbeirufen: *ṛṣim*
-[MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287)
+[MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287) = [≈Вульг. 1.106.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A106_S013) = ≈крит. 01,100.13c
 [HARIV. 7787.](https://sanskrit-lexicon-scans.github.io/hariv?7787) insbes. die Götter zum Opfer u. s. w.: *devatāḥ*
 [ŚAT. BR. 1,7,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,13) [2,6,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,22) [3,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,13)
 [AIT. BR. 1,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,2)
@@ -1248,10 +1248,10 @@ Schol. *śailānkapibhiḥ*
 [GOBH. 4,3,4.]
 [ĀŚV. ŚR. 1,5,24. 4,8,6.]
 [YĀJÑ. 1,229.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,229) [233.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,233)
-[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) [4387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4387) [4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) [4757](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4757) (med.). [15,824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.824) [HARIV. 7580.](https://sanskrit-lexicon-scans.github.io/hariv?7580) [R. 1,13,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,9) [R. GORR. 1,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,36) [VARĀH. BṚH. S. 48,21. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,21) [WEBER, RĀMAT. UP. 325.] [KṚṢṆAJ. 279. 289.] [BHĀG. P. 11,27,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,27,24) [PAÑCAR. 3,13,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,13,3)
+[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) = [≈Вульг. 1.67.134](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S134) = крит. — [4387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4387) = [≈Вульг. 1.110.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A110_S013) = ≈крит. 01,103.12c [4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) = [≈Вульг. 1.122.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S040) = ≈крит. 01,113.39a [4757](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4757) = [≈Вульг. 1.122.43](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S043) = ≈крит. 01,113.42a (med.). [15,824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.824) = [≈Вульг. 15.30.6](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U02_A030_S006) = ≈крит. 15,38.6c [HARIV. 7580.](https://sanskrit-lexicon-scans.github.io/hariv?7580) [R. 1,13,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,9) [R. GORR. 1,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,36) [VARĀH. BṚH. S. 48,21. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,21) [WEBER, RĀMAT. UP. 325.] [KṚṢṆAJ. 279. 289.] [BHĀG. P. 11,27,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,27,24) [PAÑCAR. 3,13,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,13,3)
 
 - **RU:** — ср. *āvaha* сл., *āvāha* . — caus. призывать: *ṛṣim*
-[MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287)
+[MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287) = [≈Вульг. 1.106.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A106_S013) = ≈крит. 01,100.13c
 [HARIV. 7787.](https://sanskrit-lexicon-scans.github.io/hariv?7787) особ. богов к жертвоприношению и т.д.: *devatāḥ*
 [ŚAT. BR. 1,7,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,13) [2,6,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,22) [3,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,13)
 [AIT. BR. 1,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,2)
@@ -1259,7 +1259,7 @@ Schol. *śailānkapibhiḥ*
 [GOBH. 4,3,4.]
 [ĀŚV. ŚR. 1,5,24. 4,8,6.]
 [YĀJÑ. 1,229.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,229) [233.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,233)
-[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) [4387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4387) [4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) [4757](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4757) (мед.). [15,824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.824) [HARIV. 7580.](https://sanskrit-lexicon-scans.github.io/hariv?7580) [R. 1,13,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,9) [R. GORR. 1,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,36) [VARĀH. BṚH. S. 48,21. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,21) [WEBER, RĀMAT. UP. 325.] [KṚṢṆAJ. 279. 289.] [BHĀG. P. 11,27,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,27,24) [PAÑCAR. 3,13,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,13,3)
+[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) = [≈Вульг. 1.67.134](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S134) = крит. — [4387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4387) = [≈Вульг. 1.110.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A110_S013) = ≈крит. 01,103.12c [4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) = [≈Вульг. 1.122.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S040) = ≈крит. 01,113.39a [4757](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4757) = [≈Вульг. 1.122.43](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S043) = ≈крит. 01,113.42a (мед.). [15,824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.824) = [≈Вульг. 15.30.6](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U02_A030_S006) = ≈крит. 15,38.6c [HARIV. 7580.](https://sanskrit-lexicon-scans.github.io/hariv?7580) [R. 1,13,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,9) [R. GORR. 1,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,36) [VARĀH. BṚH. S. 48,21. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,21) [WEBER, RĀMAT. UP. 325.] [KṚṢṆAJ. 279. 289.] [BHĀG. P. 11,27,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,27,24) [PAÑCAR. 3,13,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,13,3)
   <sub>attested</sub>
 
 **tail)** — Vgl. *āvāhana* .
@@ -1305,21 +1305,21 @@ Schol. *śailānkapibhiḥ*
 [ŚAT. BR. 3,3,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,3,17) *tato māṃ sūtastūrṇamudāvahat*
   <sub>attested</sub>
 
-**dahinziehen)** [MBH. 5,7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) dahinziehen: *turagāḥ śikhaṇḍinamudāvahan* so v. a. zogen den Wagen des Śikh.
+**dahinziehen)** [MBH. 5,7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) = [≈Вульг. 5.180.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S015) = ≈крит. 05,181.15a dahinziehen: *turagāḥ śikhaṇḍinamudāvahan* so v. a. zogen den Wagen des Śikh.
 
-- **RU:** [MBH. 5,7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) тянуть вперед: *turagāḥ śikhaṇḍinamudāvahan* так преим. тянули колесницу Шикх.
+- **RU:** [MBH. 5,7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) = [≈Вульг. 5.180.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S015) = ≈крит. 05,181.15a тянуть вперед: *turagāḥ śikhaṇḍinamudāvahan* так преим. тянули колесницу Шикх.
   <sub>attested</sub>
 
-**hinaufführen)** [7,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.969) [3,15704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15704) hinaufführen: *agnirhavyamudāvahan*
+**hinaufführen)** [7,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.969) = [≈Вульг. 7.23.26](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A023_S026) = ≈крит. 07,22.19a [3,15704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15704) = [≈Вульг. 3.270.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S010) = ≈крит. 03,254.10a hinaufführen: *agnirhavyamudāvahan*
 
-- **RU:** [7,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.969) [3,15704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15704) вести наверх: *agnirhavyamudāvahan*
+- **RU:** [7,969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.969) = [≈Вульг. 7.23.26](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A023_S026) = ≈крит. 07,22.19a [3,15704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15704) = [≈Вульг. 3.270.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S010) = ≈крит. 03,254.10a вести наверх: *agnirhavyamudāvahan*
   <sub>attested</sub>
 
-**heimführen)** [12,12196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12196) heimführen, heirathen: *subhadrāṃ bhāryāmudāvahat*
-[1,3830. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3830) [6,5601](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) (nach der Lesart der [ed. Bomb.]). [R. 7,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,4,16)
+**heimführen)** [12,12196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12196) = [≈Вульг. 12.324.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A324_S010) = ≈крит. 12,311.9c heimführen, heirathen: *subhadrāṃ bhāryāmudāvahat*
+[1,3830. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3830) = [≈Вульг. 1.95.77](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A095_S077) = ≈крит. 01,90.84A [6,5601](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S018) = ≈крит. 06,114.17c (nach der Lesart der [ed. Bomb.]). [R. 7,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,4,16)
 
-- **RU:** [12,12196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12196) уводить домой, жениться: *subhadrāṃ bhāryāmudāvahat*
-[1,3830. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3830) [6,5601](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) (по чтению [ed. Bomb.]). [R. 7,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,4,16)
+- **RU:** [12,12196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12196) = [≈Вульг. 12.324.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A324_S010) = ≈крит. 12,311.9c уводить домой, жениться: *subhadrāṃ bhāryāmudāvahat*
+[1,3830. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3830) = [≈Вульг. 1.95.77](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A095_S077) = ≈крит. 01,90.84A [6,5601](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S018) = ≈крит. 06,114.17c (по чтению [Бомбейская ред.]). [R. 7,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,4,16)
   <sub>attested</sub>
 
 ## samudāvah
@@ -1342,11 +1342,11 @@ Schol. *śailānkapibhiḥ*
 - **RU:** [R. 7,69,15.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,69,15) везти (на колеснице) кого-л.: *(aśvāḥ) putraṃ virāṭarājasya satvaraṃ samudāvahan*
   <sub>attested</sub>
 
-**heimführen)** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) heimführen, heirathen: *ahaṃ vicitravīryasya dve kanye samudāvaham*
-[13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441)
+**heimführen)** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) = [≈Вульг. 7.23.23](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A023_S023) = ≈крит. 07,22.16c heimführen, heirathen: *ahaṃ vicitravīryasya dve kanye samudāvaham*
+[13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441) = [≈Вульг. 13.44.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A044_S038) = ≈крит. 13,44.37c
 
-- **RU:** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) уводить домой, жениться: *ahaṃ vicitravīryasya dve kanye samudāvaham*
-[13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441)
+- **RU:** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) = [≈Вульг. 7.23.23](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A023_S023) = ≈крит. 07,22.16c уводить домой, жениться: *ahaṃ vicitravīryasya dve kanye samudāvaham*
+[13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441) = [≈Вульг. 13.44.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A044_S038) = ≈крит. 13,44.37c
   <sub>attested</sub>
 
 ## upāvah
@@ -1444,20 +1444,20 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **3)** — 3) aufheben: *vajrasāramayaṃ śiśum*
-[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) *kṛcchrādiva samudvahan . padāni*
-[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171)
+[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) = [≈Вульг. 2.17.42](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A017_S042) = ≈крит. 02,16.41a *kṛcchrādiva samudvahan . padāni*
+[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171) = [≈Вульг. 15.5.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S002) = ≈крит. 15,9.2c
 
 - **RU:** — 3) поднимать, снимать (устранять): *vajrasāramayaṃ śiśum*
-[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) *kṛcchrādiva samudvahan . padāni*
-[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171)
+[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) = [≈Вульг. 2.17.42](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A017_S042) = ≈крит. 02,16.41a *kṛcchrādiva samudvahan . padāni*
+[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171) = [≈Вульг. 15.5.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S002) = ≈крит. 15,9.2c
   <sub>attested</sub>
 
 **4)** — 4) tragen: *jaṭābhāram*
 [HARIV. 2825.](https://sanskrit-lexicon-scans.github.io/hariv?2825) [12306.](https://sanskrit-lexicon-scans.github.io/hariv?12306) *mantridhurām*
 [KATHĀS. 4,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,136) *tadrājyacintābhāram*
 [86,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,9) *mālām*
-[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) *duḥkhāni*
-[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) *manasā, hṛdayena* im Herzen tragen, eingedenk sein
+[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) = [≈Вульг. 13.14.391](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S391) = ≈крит. 13,15.15a *duḥkhāni*
+[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) = [≈Вульг. 13.14.189](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S189) = ≈крит. 13,14.97c *manasā, hṛdayena* im Herzen tragen, eingedenk sein
 [HARIV. 8749.](https://sanskrit-lexicon-scans.github.io/hariv?8749)
 [R. 7,17,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,17,16)
 
@@ -1465,8 +1465,8 @@ Schol. *śailānkapibhiḥ*
 [HARIV. 2825.](https://sanskrit-lexicon-scans.github.io/hariv?2825) [12306.](https://sanskrit-lexicon-scans.github.io/hariv?12306) *mantridhurām*
 [KATHĀS. 4,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,136) *tadrājyacintābhāram*
 [86,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,9) *mālām*
-[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) *duḥkhāni*
-[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) *manasā, hṛdayena* носить в сердце, помнить
+[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) = [≈Вульг. 13.14.391](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S391) = ≈крит. 13,15.15a *duḥkhāni*
+[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) = [≈Вульг. 13.14.189](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S189) = ≈крит. 13,14.97c *manasā, hṛdayena* носить в сердце, помнить
 [HARIV. 8749.](https://sanskrit-lexicon-scans.github.io/hariv?8749)
 [R. 7,17,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,17,16)
   <sub>attested</sub>
@@ -1491,11 +1491,11 @@ Schol. *śailānkapibhiḥ*
 
 **1)** — *samupa*
  1) mit sich führen, strömen lassen: *(nadī) śoṇitaṃ samupāvahat*
-[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400)
+[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400) = [≈Вульг. 9.43.1](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S001) = ≈крит. 09,42.1a
 
 - **RU:** — *samupa*
  1) нести с собой, заставлять течь: *(nadī) śoṇitaṃ samupāvahat*
-[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400)
+[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400) = [≈Вульг. 9.43.1](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S001) = ≈крит. 09,42.1a
   <sub>attested</sub>
 
 **2)** — 2) pass. heranrücken, einbrechen, beginnen: *rātriśca samupohyate*
@@ -1630,7 +1630,7 @@ Schol. *śailānkapibhiḥ*
 [ŚAT. BR. 3,2,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,3,17) [3,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,3,17) [4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,4,8)
 [KĀTY. ŚR. 14,1,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?14,1,16) [15,3,42.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,3,42) [4,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,4,3)
 [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) umherschleifen: *hatānparivahantaḥ* (*nāgāḥ*)
-[MBH. 7,839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.839)
+[MBH. 7,839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.839) = [≈Вульг. 7.20.47](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A020_S047) = ≈крит. 07,19.48c
 
 - **RU:** — *pari* act.
 [P. 1,3,82](https://ashtadhyayi.com/sutraani/1/3/82), схол.
@@ -1640,7 +1640,7 @@ Schol. *śailānkapibhiḥ*
 [ŚAT. BR. 3,2,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,3,17) [3,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,3,17) [4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,4,8)
 [KĀTY. ŚR. 14,1,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?14,1,16) [15,3,42.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,3,42) [4,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,4,3)
 [AIT. BR. 1,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,14) волочить вокруг: *hatānparivahantaḥ* (*nāgāḥ*)
-[MBH. 7,839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.839)
+[MBH. 7,839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.839) = [≈Вульг. 7.20.47](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A020_S047) = ≈крит. 07,19.48c
   <sub>attested</sub>
 
 **2))** — 2) herumfliessen: *āpaḥ parivahantīḥ*
@@ -1701,9 +1701,9 @@ Schol. *śailānkapibhiḥ*
 *pravahajjalānām*
 [KULL.] zu [M. 3,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,163) hinbrausen, wehen: *kālena śīghrāḥ pravahanti vātāḥ*
 [Spr. 3922.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3922) zuführen: *tatra divyāni puṣpāṇi prāvahatpavanastadā*
-[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) *āmodam*
+[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) = [≈Вульг. 13.83.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A083_S043) = ≈крит. 13,82.40c *āmodam*
 [BHAṬṬ. 8,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,52) hinführen zu (acc.): *viṣayān*
-[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) med. davonfahren: *pra yadvahethe mahinā rathasya*
+[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) = [≈Вульг. 12.301.50](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A301_S050) = ≈крит. 12,290.49a med. davonfahren: *pra yadvahethe mahinā rathasya*
 [ṚV. 1,180,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.09) *praitaśebhirvahamāna ojasā*
 [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) [77,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.06)
 
@@ -1726,9 +1726,9 @@ Schol. *śailānkapibhiḥ*
 *pravahajjalānām*
 [KULL.] к [M. 3,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,163) мчаться, дуть: *kālena śīghrāḥ pravahanti vātāḥ*
 [Spr. 3922.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3922) подводить, доставлять: *tatra divyāni puṣpāṇi prāvahatpavanastadā*
-[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) *āmodam*
+[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) = [≈Вульг. 13.83.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A083_S043) = ≈крит. 13,82.40c *āmodam*
 [BHAṬṬ. 8,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,52) вести к (acc.): *viṣayān*
-[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) мед. уезжать, отплывать: *pra yadvahethe mahinā rathasya*
+[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) = [≈Вульг. 12.301.50](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A301_S050) = ≈крит. 12,290.49a мед. уезжать, отплывать: *pra yadvahethe mahinā rathasya*
 [ṚV. 1,180,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.09) *praitaśebhirvahamāna ojasā*
 [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) [77,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.06)
   <sub>attested</sub>
@@ -1776,14 +1776,14 @@ Schol. *śailānkapibhiḥ*
 - **RU:** — 3) приводить в движение, пускать в ход: *ūrdhvaṃ cāpi pravāhyantāṃ prāsā vai tomarāṇi ca*
 [HARIV. 5487](https://sanskrit-lexicon-scans.github.io/hariv?5487) (*nivāhyantāṃ* вместо которого
 [5009](https://sanskrit-lexicon-scans.github.io/hariv?5009)). *lokayātrām*
-[R. ed. Bomb. 2,109,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,109,27)
+[R. Бомбейская ред. 2,109,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,109,27)
   <sub>attested</sub>
 
 **caus-4))** — 4) *lomapravāhitam*
-[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
+[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Вульг. 6.48.57](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A048_S057) = крит. — fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
 
 - **RU:** — 4) *lomapravāhitam*
-[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) ошибочно вм. *lomapravāhinam* (см.), как читает [ed. Bomb.].
+[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Вульг. 6.48.57](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A048_S057) = крит. — ошибочно вм. *lomapravāhinam* (см.), как читает [Бомбейская ред.].
   <sub>attested</sub>
 
 **addendum)** — Vgl. *pravāhaka, pravāhaṇa* .
@@ -1814,10 +1814,10 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **1))** 1) umherfahren, umherführen: *sa māṃ rathenānuprāvahat*
-[MBH. 3,13305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13305) [13307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13307)
+[MBH. 3,13305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13305) = [≈Вульг. 3.198.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A198_S002) = ≈крит. 05,119.10a [13307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13307) = [≈Вульг. 3.198.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A198_S004) = крит. —
 
 - **RU:** 1) ездить вокруг, водить вокруг: *sa māṃ rathenānuprāvahat*
-[MBH. 3,13305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13305) [13307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13307)
+[MBH. 3,13305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13305) = [≈Вульг. 3.198.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A198_S002) = ≈крит. 05,119.10a [13307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13307) = [≈Вульг. 3.198.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A198_S004) = крит. —
   <sub>attested</sub>
 
 **2))** — 2) vorwärts kommen: *ā devānāmapi panthāmaganma yacchaknavāma tadanu pravo|um* quantum, tantum
@@ -1856,10 +1856,10 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **2))** — Vgl. *prativāha, pratīvāha, prativoḍhavya* . — caus. hinführen im Fliessen, hinschwemmen: *kimarthaṃ ca saricchreṣṭhā tamṛṣiṃ pratyavāhayat*
-[MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358)
+[MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358) = [≈Вульг. 9.42.1](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S001) = ≈крит. 09,41.1c
 
 - **RU:** — ср. *prativāha, pratīvāha, prativoḍhavya* . — caus. нести в потоке, смывать в направлении (к чему-либо): *kimarthaṃ ca saricchreṣṭhā tamṛṣiṃ pratyavāhayat*
-[MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358)
+[MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358) = [≈Вульг. 9.42.1](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S001) = ≈крит. 09,41.1c
   <sub>attested</sub>
 
 ## vivah
@@ -1871,13 +1871,13 @@ Schol. *śailānkapibhiḥ*
  1) entführen
 [ṚV. 4,27,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.03) *harī yamasya vahato vi sūribhiḥ*
 [10,23,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.023.html#rv10.023.03) wegspülen, wegschwemmen: *lohitāpagā . gajāśvanaradehānsā vyuvāha patitānbahūn*
-[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379)
+[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379) = [≈Вульг. 8.49.81](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A049_S081) = ≈крит. 08,33.60c
 
 - **RU:** — *vi*
  1) уводить, похищать
 [ṚV. 4,27,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.03) *harī yamasya vahato vi sūribhiḥ*
 [10,23,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.023.html#rv10.023.03) смывать, уносить (потоком): *lohitāpagā . gajāśvanaradehānsā vyuvāha patitānbahūn*
-[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379)
+[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379) = [≈Вульг. 8.49.81](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A049_S081) = ≈крит. 08,33.60c
   <sub>attested</sub>
 
 **2) Act.)** — 2) wegführen (die Braut aus dem Elternhause)
@@ -1910,14 +1910,14 @@ Schol. *śailānkapibhiḥ*
   <sub>attested</sub>
 
 **Caus-1))** 1) verheirathen (ein Mädchen)
-[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601)
+[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S018) = ≈крит. 06,114.17c
 [Spr. 2908.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2908)
 [MĀRK. P. 51,104.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,104) [134,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,34) *gāndharvavivāhenātmānaṃ vivāhayitvā*
 [PAÑCAT. 129,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,9) *tenāndhena saha vivāhitā*
 [262,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,3)
 
 - **RU:** 1) выдавать замуж (девушку)
-[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601)
+[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S018) = ≈крит. 06,114.17c
 [Spr. 2908.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2908)
 [MĀRK. P. 51,104.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,104) [134,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,34) *gāndharvavivāhenātmānaṃ vivāhayitvā*
 [PAÑCAT. 129,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,9) *tenāndhena saha vivāhitā*
@@ -1961,35 +1961,35 @@ Schol. *śailānkapibhiḥ*
 **1) zusammenführen; führen, hinüberführen)** — *sam*
  1) zusammenführen; führen, hinüberführen
 [AV. 2,30,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.030.html#av02.030.02) [6,48,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.048.html#av06.048.01) [13,3,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.003.html#av13.003.17) ziehen: *sīdamānāni cakrāṇi samūhusturagā bhṛśam*
-[MBH. 8,1116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1116)
+[MBH. 8,1116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1116) = [≈Вульг. 8.27.40](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A027_S040) = ≈крит. 08,19.33c
 
 *nṛṇāṃ śatāni pañcāśat — mañjūṣāmaṣṭacakrasthāṃ samūhuste kathaṃcana*
 [R. 1,67,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,67,4)
-[MBH. 3,13188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13188) mit sich fortziehen, treiben; vom Winde
+[MBH. 3,13188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13188) = [≈Вульг. 3.192.48](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A192_S048) = ≈крит. 03,190.60c mit sich fortziehen, treiben; vom Winde
 [ŚAT. BR. 2,1,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,1,8) *samuhyamānā bahudhā yena (vāyunā) nītāḥ pṛthagghanāḥ*
-[MBH. 12,12405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12405) pass. getragen werden von, reiten auf (instr.): *garuḍena samuhyamānaḥ*
+[MBH. 12,12405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12405) = [≈Вульг. 12.328.41](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A328_S041) = ≈крит. 12,315.41c pass. getragen werden von, reiten auf (instr.): *garuḍena samuhyamānaḥ*
 [BHĀG. P. 8,3,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,31) *pakṣibhyāṃ kūrmaḥ samuhyate*
 [HIT. 112,3](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?112,3), v. l.
 
 - **RU:** — *sam*
  1) сводить вместе; вести, переводить
 [AV. 2,30,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.030.html#av02.030.02) [6,48,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.048.html#av06.048.01) [13,3,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.003.html#av13.003.17) тащить: *sīdamānāni cakrāṇi samūhusturagā bhṛśam*
-[MBH. 8,1116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1116)
+[MBH. 8,1116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1116) = [≈Вульг. 8.27.40](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A027_S040) = ≈крит. 08,19.33c
 
 *nṛṇāṃ śatāni pañcāśat — mañjūṣāmaṣṭacakrasthāṃ samūhuste kathaṃcana*
 [R. 1,67,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,67,4)
-[MBH. 3,13188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13188) увлекать за собой, гнать; о ветре
+[MBH. 3,13188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13188) = [≈Вульг. 3.192.48](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A192_S048) = ≈крит. 03,190.60c увлекать за собой, гнать; о ветре
 [ŚAT. BR. 2,1,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,1,8) *samuhyamānā bahudhā yena (vāyunā) nītāḥ pṛthagghanāḥ*
-[MBH. 12,12405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12405) pass. быть несомым, ехать верхом на (instr.): *garuḍena samuhyamānaḥ*
+[MBH. 12,12405.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12405) = [≈Вульг. 12.328.41](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A328_S041) = ≈крит. 12,315.41c pass. быть несомым, ехать верхом на (instr.): *garuḍena samuhyamānaḥ*
 [BHĀG. P. 8,3,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,31) *pakṣibhyāṃ kūrmaḥ samuhyate*
 [HIT. 112,3](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?112,3), v. l.
   <sub>attested</sub>
 
 **2) entlang fahren mit der Hand, streichen)** — 2) entlang fahren mit der Hand, streichen: *tasyāḥ pādau karābhyāṃ śanakaiḥ saṃvavāhatuḥ*
-[MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) [WESTERGAARD] stellt diese unregelmässige Form (st. *samūhatus*) zu *vāh* .
+[MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) = [≈Вульг. 3.142.57](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A142_S057) = крит. — [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) = [≈Вульг. 1.172.20](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A172_S020) = ≈крит. 01,161.14a [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) = [≈Вульг. 13.53.6](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A053_S006) = ≈крит. 13,53.6c [WESTERGAARD] stellt diese unregelmässige Form (st. *samūhatus*) zu *vāh* .
 
 - **RU:** — 2) проводить рукой вдоль, поглаживать: *tasyāḥ pādau karābhyāṃ śanakaiḥ saṃvavāhatuḥ*
-[MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) [WESTERGAARD] относит эту нерегулярную форму (вместо *samūhatus*) к *vāh* .
+[MBH. 3,11005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11005) = [≈Вульг. 3.142.57](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A142_S057) = крит. — [1,6639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6639) = [≈Вульг. 1.172.20](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A172_S020) = ≈крит. 01,161.14a [13,2760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2760) = [≈Вульг. 13.53.6](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A053_S006) = ≈крит. 13,53.6c [WESTERGAARD] относит эту нерегулярную форму (вместо *samūhatus*) к *vāh* .
   <sub>attested</sub>
 
 **3) an den Tag legen, äussern)** — 3) an den Tag legen, äussern: *vāsudeve samuvāha bhaktim*
@@ -2022,16 +2022,16 @@ Schol. *śailānkapibhiḥ*
 **Nachträge 2) fahren, lenken; heimführen; jagen, treiben)** — 2) fahren, lenken (den Wagen u. s. w.), hinfahren, hinführen: *sūtaḥ saṃvāhayāmāsa ratham*
 [R. 6,79,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,7)
 [KATHĀS. 56,375.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,375)
-[MBH. 13,5734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5734) *rathamāsthāya drutamaśvānacodayat . saṃvāhayitavāṃścāpi rājadārānpuraṃ prati ..*
-[9,1653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1653) heimführen (eine Gattin)
+[MBH. 13,5734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5734) = [≈Вульг. 13.117.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A117_S012) = ≈крит. 13,118.11e *rathamāsthāya drutamaśvānacodayat . saṃvāhayitavāṃścāpi rājadārānpuraṃ prati ..*
+[9,1653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1653) = [≈Вульг. 9.29.86](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U02_A029_S086) = ≈крит. 09,28.80e heimführen (eine Gattin)
 [VET. in LA. 17,14], v. l. jagen, treiben: *so 'pi saṃvāhyate loke tṛṣṇayā*
 [Spr. 540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?540)
 
 - **RU:** — 2) ехать, управлять (колесницей и т.д.), ехать туда, вести туда: *sūtaḥ saṃvāhayāmāsa ratham*
 [R. 6,79,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,7)
 [KATHĀS. 56,375.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,375)
-[MBH. 13,5734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5734) *rathamāsthāya drutamaśvānacodayat . saṃvāhayitavāṃścāpi rājadārānpuraṃ prati ..*
-[9,1653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1653) привезти домой (супругу)
+[MBH. 13,5734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5734) = [≈Вульг. 13.117.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A117_S012) = ≈крит. 13,118.11e *rathamāsthāya drutamaśvānacodayat . saṃvāhayitavāṃścāpi rājadārānpuraṃ prati ..*
+[9,1653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1653) = [≈Вульг. 9.29.86](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U02_A029_S086) = ≈крит. 09,28.80e привезти домой (супругу)
 [VET. in LA. 17,14], v. l. гнать, погонять: *so 'pi saṃvāhyate loke tṛṣṇayā*
 [Spr. 540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?540)
   <sub>attested</sub>
@@ -2079,7 +2079,7 @@ Schol. *śailānkapibhiḥ*
 — a〉 führen, fahren, mit Gespann oder zu Schiffe (Instr.) bringen, — fortführen, den Wagen (Acc.) ziehen, die Rosse (Acc.) führen, so v. a. lenken. Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern. Pass. geführt —, gefahren —, gezogen werden, fahren mit oder zu (Instr.).
 
 - **RU:** — 1〉 trans.
-— a〉 вести, везти, упряжкой или на судне (Instr.) доставлять, — увозить, колесницу (Acc.) тянуть, коней (Acc.) вести, так преим. править. Агни ведет или сопровождает предметы жертвоприношения к богам. Pass. быть ведомым —, везомым —, тянутым, ехать с чем-л. или к чему-л. (Instr.).
+— a〉 вести, везти, упряжкой или на судне (Ins.) доставлять, — увозить, колесницу (Acc.) тянуть, коней (Acc.) вести, так преим. править. Агни ведет или сопровождает предметы жертвоприношения к богам. Pass. быть ведомым —, везомым —, тянутым, ехать с чем-л. или к чему-л. (Ins.).
   <sub>attested</sub>
 
 **1b)** — b〉 Wasser u. s. w. führen (von Flüssen), fliessen lassen (Thränen).
@@ -2119,7 +2119,7 @@ Schol. *śailānkapibhiḥ*
 
 **1i)** — i〉 tragen (auch von Kleidungsstücken), — auf (Instr. oder Loc.). *garbham* eine Leibesfrucht tragen; *śiras* (auch *śirāṃsi garvitāni* und mit *uccaistarām*) den Kopf hoch tragen; die Erde tragen auch so v. a. regieren.
 
-- **RU:** — i〉 носить (также об одежде), — на (Instr. или Loc.). *garbham* носить плод во чреве; *śiras* (также *śirāṃsi garvitāni* и с *uccaistarām*) высоко держать голову; землю нести, также так преим. править.
+- **RU:** — i〉 носить (также об одежде), — на (Ins. или Loc.). *garbham* носить плод во чреве; *śiras* (также *śirāṃsi garvitāni* и с *uccaistarām*) высоко держать голову; землю нести, также так преим. править.
   <sub>attested</sub>
 
 **1k)** — k〉 tragen, so v. a. am Leben erhalten.
@@ -2176,12 +2176,12 @@ Schol. *śailānkapibhiḥ*
 — a〉 zu Wagen oder mit Pferden (Instr.) fahren, den Wagen lenken, am Wagen u. s. w. ziehen, dahinfahren, laufen.
 
 - **RU:** — 2〉 intrans.
-— a〉 на колеснице или с конями (Instr.) ехать, править колесницей, в колесницу и т.д. быть впряженным, катиться, бежать.
+— a〉 на колеснице или с конями (Ins.) ехать, править колесницей, в колесницу и т.д. быть впряженным, катиться, бежать.
   <sub>attested</sub>
 
 **2b)** — b〉 zu Schiffe (Instr.) fahren, dem Wasser entlang hinfahren, schwimmen.
 
-- **RU:** — b〉 на судне (Instr.) плыть, идти вдоль воды, плавать.
+- **RU:** — b〉 на судне (Ins.) плыть, идти вдоль воды, плавать.
   <sub>attested</sub>
 
 **2c)** — c〉 dahinfahren vom Winde, so v. a. wehen [187,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187).
@@ -2263,7 +2263,7 @@ Schol. *śailānkapibhiḥ*
 
 **caus_7)** — 7〉 Etwas tragen lassen, — von (Instr.).
 
-- **RU:** — 7〉 давать нести что-л., — кем-л. (Instr.).
+- **RU:** — 7〉 давать нести что-л., — кем-л. (Ins.).
   <sub>attested</sub>
 
 **caus_8)** — 8〉 Jmd tragen lassen, — auf (Loc.), zum Tragen anstellen.
@@ -2384,9 +2384,9 @@ Schol. *śailānkapibhiḥ*
 - **RU:** — 3〉 Med. уродиться в кого-л., становиться похожим.
   <sub>attested</sub>
 
-**anu_4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
+**anu_4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
 
-- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
+- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
   <sub>attested</sub>
 
 **apa_intro)** — Mit *apa*
@@ -2475,9 +2475,9 @@ Schol. *śailānkapibhiḥ*
 - **RU:** — 4〉 уводить, угонять.
   <sub>attested</sub>
 
-**a_caus_5)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
+**a_caus_5)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03) [ṚV. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.054.html#rv08.054.06).
 
-- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
+- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03) [ṚV. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.054.html#rv08.054.06).
   <sub>attested</sub>
 
 **a_caus_6)** — 6〉 sich ergiessen, fliessen.
@@ -2522,9 +2522,9 @@ Schol. *śailānkapibhiḥ*
 - **RU:** — 2〉 возводить наверх.
   <sub>attested</sub>
 
-**ud_3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
+**ud_3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S051) = ≈крит. 06,4.2c.
 
-- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
+- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S051) = ≈крит. 06,4.2c.
   <sub>attested</sub>
 
 **upa2_intro)** — Mit *samudā*
@@ -2621,7 +2621,7 @@ Schol. *śailānkapibhiḥ*
 
 **mit5-6)** — 6〉 tragen, — auf (Instr.). *bhartāram* so v. a. auf sich liegen haben; *mahīm* oder *rājyam* so v. a. regieren; *manasā* im Herzen tragen, so v. a. gedenken.
 
-- **RU:** — 6) нести — на (Instr.). *bhartāram* так преим. нести на себе (какую-л. обязанность); *mahīm* или *rājyam* так преим. управлять; *manasā* носить в сердце, так преим. помнить, хранить в памяти.
+- **RU:** — 6) нести — на (Ins.). *bhartāram* так преим. нести на себе (какую-л. обязанность); *mahīm* или *rājyam* так преим. управлять; *manasā* носить в сердце, так преим. помнить, хранить в памяти.
   <sub>attested</sub>
 
 **mit5-7)** — 7〉 ertragen, erdulden.
@@ -2661,7 +2661,7 @@ Schol. *śailānkapibhiḥ*
 
 **mitT26-1)** — 1〉 verheirathen (ein Mädchen oder einen Mann), — mit (Instr.) [HEM. PAR. 1,210. 216].
 
-- **RU:** — 1) выдавать замуж / женить (девушку или мужчину), — с (Instr.) [HEM. PAR. 1,210. 216].
+- **RU:** — 1) выдавать замуж / женить (девушку или мужчину), — с (Ins.) [HEM. PAR. 1,210. 216].
   <sub>attested</sub>
 
 **mitT26-2)** — 2〉 heimführen, heirathen (ein Mädchen).
@@ -2816,7 +2816,7 @@ Schol. *śailānkapibhiḥ*
 
 **mit54-5)** — 5〉 sein Leben unterhalten, leben von (Instr.) [CAMPAKA. 147].
 
-- **RU:** — 5) поддерживать свое существование, жить за счет (Instr.) [CAMPAKA. 147].
+- **RU:** — 5) поддерживать свое существование, жить за счет (Ins.) [CAMPAKA. 147].
   <sub>attested</sub>
 
 **mit54-6)** — 6〉 Jmd anstehen, sich geziemen für (Gen.) [HEM. PAR. 7,42].
@@ -2949,9 +2949,9 @@ Schol. *śailānkapibhiḥ*
 - **RU:** — 3) приводить в движение, запускать.
   <sub>attested</sub>
 
-**mitT76-4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) fehlerhaft für *˚pravāhinam*.
+**mitT76-4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A005_S016) = ≈крит. 06,6.15c fehlerhaft für *˚pravāhinam*.
 
-- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) ошибочно вм. *˚pravāhinam*.
+- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A005_S016) = ≈крит. 06,6.15c ошибочно вм. *˚pravāhinam*.
   <sub>lexicographic</sub>
 
 **mit83)** — Mit *atipra* darüber hinaus führen, — ziehen.
@@ -3001,7 +3001,7 @@ Schol. *śailānkapibhiḥ*
 
 **mit93-2)** — 2〉 wegführen (die Braut aus dem Elternhause); heimführen, heirathen (ein Mädchen) überh.; eine eheliche Verbindung schliessen, — mit (Instr.) [GOBH. 2,10,6]. Med. eine Hochzeit feiern; sich verheirathen. *mitho vivahamānāḥ* untereinander heirathend [ĀPAST. 1,29,8]. *vyūḍhā* geheirathet, verheirathet.
 
-- **RU:** — 2) уводить (невесту из родительского дома); приводить в дом, брать в жены (девушку) вообще; заключать брачный союз, — с (Instr.) [GOBH. 2,10,6]. Med. справлять свадьбу; вступать в брак. *mitho vivahamānāḥ* вступающие в брак между собой [ĀPAST. 1,29,8]. *vyūḍhā* женатый, состоящий в браке.
+- **RU:** — 2) уводить (невесту из родительского дома); приводить в дом, брать в жены (девушку) вообще; заключать брачный союз, — с (Ins.) [GOBH. 2,10,6]. Med. справлять свадьбу; вступать в брак. *mitho vivahamānāḥ* вступающие в брак между собой [ĀPAST. 1,29,8]. *vyūḍhā* женатый, состоящий в браке.
   <sub>attested</sub>
 
 **mitT101-intro)** — Caus. (*vī˚* [PAÑCAD.])
@@ -3021,7 +3021,7 @@ Schol. *śailānkapibhiḥ*
 
 **mit111-113)** — Mit **saṃvi* Med. mit Andern (Instr.) eine Ehe eingehen.
 
-- **RU:** — С **saṃvi* Med. с другими (Instr.) вступать в брак.
+- **RU:** — С **saṃvi* Med. с другими (Ins.) вступать в брак.
   <sub>lexicographic</sub>
 
 **mit114-intro)** — Mit *sam*
@@ -3056,12 +3056,12 @@ Schol. *śailānkapibhiḥ*
 
 **5)** — 5〉 Pass. getragen werden von, so v. a. reiten auf (Instr.).
 
-- **RU:** 5) Pass. быть носимым кем-л., чем-л., отсюда преим. ехать верхом на (Instr.).
+- **RU:** 5) Pass. быть носимым кем-л., чем-л., отсюда преим. ехать верхом на (Ins.).
   <sub>attested</sub>
 
 **6)** — 6〉 entlang fahren mit der Hand (Instr.) über, streichen; mit Acc. *saṃvavāhatus* (!).
 
-- **RU:** 6) проводить рукой (Instr.) вдоль чего-л., по чему-л., поглаживать; с Acc. *saṃvavāhatus* (!).
+- **RU:** 6) проводить рукой (Ins.) вдоль чего-л., по чему-л., поглаживать; с Acc. *saṃvavāhatus* (!).
   <sub>attested</sub>
 
 **7)** — 7〉 an den Tag legen, äussern.
@@ -3146,7 +3146,7 @@ Schol. *śailānkapibhiḥ*
 
 **1. — mit ud)** — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
 
-- **RU:** — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
+- **RU:** — С *samud* Caus. поднимать вверх [R. Бомбейская ред. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
   <sub>attested</sub>
 
 **1. — mit prati)** — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
@@ -3161,7 +3161,7 @@ Schol. *śailānkapibhiḥ*
 
 **1)** **1.** *vah* Caus. VI. treiben, betreiben (ein Geschäft) [DIVYĀVAD. 14,20]. — Mit *abhi* VI. tragen, so v. a. haben [KIR. 16,39]. — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].
 
-- **RU:** **1.** *vah* Caus. VI. гнать, вести (дело) [DIVYĀVAD. 14,20]. — С *abhi* VI. нести, так преим. иметь [KIR. 16,39]. — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — С *prati* VI. действовать вопреки (приказу, Acc.) [DIVYĀVAD. 178,11].
+- **RU:** **1.** *vah* Caus. VI. гнать, вести (дело) [DIVYĀVAD. 14,20]. — С *abhi* VI. нести, так преим. иметь [KIR. 16,39]. — С *samud* Caus. поднимать вверх [R. Бомбейская ред. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39). — С *prati* VI. действовать вопреки (приказу, Acc.) [DIVYĀVAD. 178,11].
   <sub>lexicographic</sub>
 
 ## vah
@@ -3186,12 +3186,12 @@ Schol. *śailānkapibhiḥ*
 
 **4 (mit samud))** Mit samud [Kaus.] in die Höhe heben, [R. ed. Bomb. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39)
 
-- **RU:** С samud [Kaus.] поднимать ввысь, [R. ed. Bomb. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39)
+- **RU:** С samud [Kaus.] поднимать ввысь, [R. Бомбейская ред. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39)
   <sub>lexicographic</sub>
 
 **5 (mit prati))** Mit prati entgegenhandeln (einem Befehle, Akk.), [Divyāvad. 178,11.]
 
-- **RU:** С prati действовать наперекор, поступать вопреки (приказу, Akk.), [Divyāvad. 178,11.]
+- **RU:** С prati действовать наперекор, поступать вопреки (приказу, Acc.), [Divyāvad. 178,11.]
   <sub>lexicographic</sub>
 
 ## vah
@@ -3237,14 +3237,14 @@ Schol. *śailānkapibhiḥ*
 — *saṃpra* s. *saṃpravāha* .
 — *vi*
 
-- **RU:** *vah*, intens. *vāvahīti* «нести, везти»: *ratnabhāram*
+- **RU:** *vah*, intens. *vāvahīti* нести, везти: *ratnabhāram*
 [Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053 "Spr. (II) 4053: pāpaṭhīti sakalaṃ ca vāṅnayaṃ bobudhīti na ca kiñcidapyasau | ratnabharamiva gardabhaḥ sadā vāvahīti kila bobhujīti no || — Wer alle möglichen Schriftwerke liest und Nichts davon versteht, gleicht einem Esel, der beständig eine Last Juwelen trägt und diese, wie man weiss, nie geniesst.")
 — *ati* caus.
  1) ср.
 [HEM.]
 [YOGAŚ. 1,35.]
 — *ud*
- 4) *bhartāramudvahantīm* так преим. «имея на себе / неся на себе (некое бремя, обязанность)»
+ 4) *bhartāramudvahantīm* так преим. имея на себе / неся на себе (некое бремя, обязанность)
 [BHOJAPRAB. 90,6.] [Sp. 866, Z. 6 lies 864 st. 846.]
 — *saṃpra* см. *saṃpravāha* .
 — *vi*
@@ -3253,13 +3253,13 @@ Schol. *śailānkapibhiḥ*
 **2)** 1) wegführen: *oghena vyuhyamānānāṃ* (Conj. für *vyū˚) plavānāṃ srotaso* (so zu lesen) *yathā*
 [Spr. (II) 3820.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3820 "Spr. (II) 3820: naikatra priyasaṃvāsaḥ suhṛdāṃ citrakarmaṇāṃ | aughena vyuhyamānānāṃ plavānāṃ srotasā yathā || — Freunde, die verschiedenen Beschäftigungen nachgehen, bleiben nicht, wie es ihnen wohl lieb wäre, an einem Orte zusammen: es ergeht ihnen wie auf dem Wasser schwimmenden Gegenständen, welche die Strömung des Flusses wegf…")
 
-- **RU:** 1) «уводить, увозить прочь»: *oghena vyuhyamānānāṃ* (Conj. вм. *vyū˚) plavānāṃ srotaso* (так следует читать) *yathā*
+- **RU:** 1) уводить, увозить прочь: *oghena vyuhyamānānāṃ* (Conj. вм. *vyū˚) plavānāṃ srotaso* (так следует читать) *yathā*
 [Spr. (II) 3820.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3820 "Spr. (II) 3820: naikatra priyasaṃvāsaḥ suhṛdāṃ citrakarmaṇāṃ | aughena vyuhyamānānāṃ plavānāṃ srotasā yathā || — Freunde, die verschiedenen Beschäftigungen nachgehen, bleiben nicht, wie es ihnen wohl lieb wäre, an einem Orte zusammen: es ergeht ihnen wie auf dem Wasser schwimmenden Gegenständen, welche die Strömung des Flusses wegf…")
   <sub>attested</sub>
 
 **3)** — *saṃvi* med. mit Andern (instr.) eine Ehe eingehen: *saṃvivahante gargaiḥ*
 [PAT. a. a. O. 1,247,a.]
 
-- **RU:** — *saṃvi* мед. «с другими» (instr.) «вступать в брак»: *saṃvivahante gargaiḥ*
+- **RU:** — *saṃvi* мед. с другими (instr.) вступать в брак: *saṃvivahante gargaiḥ*
 [PAT. a. a. O. 1,247,a.]
   <sub>attested</sub>

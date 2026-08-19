@@ -9,14 +9,14 @@
   <sub>attested</sub>
 
 **4a)** a) gewünscht —, gern gesehen werden: *sarvamātmārthamiṣyate*
-[MBH. 1,6145.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6145) [5144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5144) [6184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6184) *nṛpasaṃśraya iṣyate budhaiḥ*
+[MBH. 1,6145.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6145) = [≈Вульг. 1.156.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A156_S007) = ≈крит. 01,144.7c [5144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5144) = [≈Вульг. 1.131.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A131_S012) = ≈крит. 01,122.10a [6184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6184) = [≈Вульг. 1.157.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S027) = ≈крит. 01,145.27c *nṛpasaṃśraya iṣyate budhaiḥ*
 [PAÑCAT. I,27.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,27) *tajjñātvā satāṃ saṃgatamiṣyate*
 [HIT. 24,18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?24,18) *na hi cūḍāmaṇisthāne pādukā kaiścidiṣyate*
 [IV,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,11) *ataḥ samīpe pariṇeturiṣyate pramadā svabandhubhiḥ*
 [ŚĀK. 114.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?114)
 
 - **RU:** a) быть желанным, быть приятным, пользоваться расположением: *sarvamātmārthamiṣyate*
-[MBH. 1,6145.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6145) [5144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5144) [6184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6184) *nṛpasaṃśraya iṣyate budhaiḥ*
+[MBH. 1,6145.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6145) = [≈Вульг. 1.156.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A156_S007) = ≈крит. 01,144.7c [5144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5144) = [≈Вульг. 1.131.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A131_S012) = ≈крит. 01,122.10a [6184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6184) = [≈Вульг. 1.157.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S027) = ≈крит. 01,145.27c *nṛpasaṃśraya iṣyate budhaiḥ*
 [PAÑCAT. I,27.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,27) *tajjñātvā satāṃ saṃgatamiṣyate*
 [HIT. 24,18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?24,18) *na hi cūḍāmaṇisthāne pādukā kaiścidiṣyate*
 [IV,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,11) *ataḥ samīpe pariṇeturiṣyate pramadā svabandhubhiḥ*
@@ -35,7 +35,7 @@
   <sub>attested</sub>
 
 **4c)** — c) gebilligt —, anerkannt —, angenommen —, für Etwas angesehen werden, gelten: *acchadmanā māyayā ca mṛgāṇāṃ vadha iṣyate*
-[MBH. 1,4570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4570) *nihatasya paśoryajñe svargaprāptiryadīṣyate*
+[MBH. 1,4570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4570) = [≈Вульг. 1.118.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A118_S013) = ≈крит. 01,109.13a *nihatasya paśoryajñe svargaprāptiryadīṣyate*
 [PRAB. 28,10.] *trirātraṃ daśarātraṃ vā śāvamāśaucamiṣyate*
 [YĀJÑ. 3,18.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,18) *nirvṛttacūḍakānāṃ tu trirātrācchuddhiriṣyate*
 [M. 5,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,67) [71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,71) *bhartureva tadiṣyate* das wird als dem Gatten angehörend angesehen
@@ -45,10 +45,10 @@
 [P. 3,1,7](https://ashtadhyayi.com/sutraani/3/1/7), Kār. *citā kāṣṭhamaṭhī caityaṃ citācūḍakamiṣyate . cittaṃ ca* (lauter Synonyme)
 [TRIK. 2,8,62.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,62) *jambho dante 'pi ceṣyate* jambha gilt auch für Zahn (bedeutet auch Zahn)
 [3,3,286.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,286) [64.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,64) mit act.-Endung ohne dass das Versmaass es erforderte: *yadi kāle tu doṣo 'sti yadi tatrāpi neṣyati*
-[MBH. 13,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.59)
+[MBH. 13,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.59) = [≈Вульг. 13.1.59](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S059) = ≈крит. 13,1.52a
 
 - **RU:** — c) быть одобренным, признанным, принятым; считаться чем-либо, иметь силу: *acchadmanā māyayā ca mṛgāṇāṃ vadha iṣyate*
-[MBH. 1,4570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4570) *nihatasya paśoryajñe svargaprāptiryadīṣyate*
+[MBH. 1,4570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4570) = [≈Вульг. 1.118.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A118_S013) = ≈крит. 01,109.13a *nihatasya paśoryajñe svargaprāptiryadīṣyate*
 [PRAB. 28,10.] *trirātraṃ daśarātraṃ vā śāvamāśaucamiṣyate*
 [YĀJÑ. 3,18.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,18) *nirvṛttacūḍakānāṃ tu trirātrācchuddhiriṣyate*
 [M. 5,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,67) [71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,71) *bhartureva tadiṣyate* это считается принадлежащим супругу
@@ -58,7 +58,7 @@
 [P. 3,1,7](https://ashtadhyayi.com/sutraani/3/1/7), Кар. *citā kāṣṭhamaṭhī caityaṃ citācūḍakamiṣyate . cittaṃ ca* (сплошь синонимы)
 [TRIK. 2,8,62.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,8,62) *jambho dante 'pi ceṣyate* джамбха употребляется также в знач. «зуб»
 [3,3,286.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,286) [64.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,64) с окончанием act. без того, чтобы этого требовал метр: *yadi kāle tu doṣo 'sti yadi tatrāpi neṣyati*
-[MBH. 13,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.59)
+[MBH. 13,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.59) = [≈Вульг. 13.1.59](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S059) = ≈крит. 13,1.52a
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *icchā, icchu* .

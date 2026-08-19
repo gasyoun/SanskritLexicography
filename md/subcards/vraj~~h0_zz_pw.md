@@ -10,7 +10,7 @@
 
 **PW-1)** — 1〉 schreiten, gehen, wandern ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — zu Fusse (auch mit *padbhyām*, *upānadbhyām* in Schuhen) oder mittelst eines Vehikels (*dhuryais*, *vṛṣasthitaḥ*), laufen (von Pferden), sich bewegen (von unbelebten Dingen), gehen einen Weg (Acc.), — eines Weges (Instr.), eine best. Strecke (Acc.) zurücklegen, hingehen zu oder nach (Acc., seltener Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), gelangen zu (Acc.). *śaraṇam* seine Zuflucht nehmen zu (Acc.), *mūrdhnā pādau* sich zu Jmds (Gen.) Füssen werfen, *antam* anʼs Ende von (Gen.) gelangen; *gehen nach Etwas (Dat.), so v. a. um dieses zu holen; *gehen um zu (Infin., Dat. eines Nom. act. oder ein verbales _Adj._ auf *aka*, wie *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* gegangen (*anyena* auf einem andern Wege).
 
-- **RU:** 1〉 шествовать, идти, странствовать ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — пешком (также с *padbhyām*, *upānadbhyām* в обуви) или при помощи средства передвижения (*dhuryais*, *vṛṣasthitaḥ*), бежать (о конях), двигаться (о неодушевлённых предметах), пройти путём (Acc.), — путём (Instr.), преодолеть определ. расстояние (Acc.), идти к или направляться в (Acc., реже Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), достигать (Acc.). *śaraṇam* прибегать к (Acc.), *mūrdhnā pādau* пасть к ногам кого-либо (Gen.), *antam* достигать конца (Gen.); *идти за чем-либо (Dat.), так преим. чтобы принести это; *идти чтобы (Infin., Dat. одного Nom. act. или отглагольного _Adj._ на *aka*, как *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* ушедший (*anyena* по другому пути).
+- **RU:** 1〉 шествовать, идти, странствовать ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — пешком (также с *padbhyām*, *upānadbhyām* в обуви) или при помощи средства передвижения (*dhuryais*, *vṛṣasthitaḥ*), бежать (о конях), двигаться (о неодушевленных предметах), пройти путем (Acc.), — путем (Ins.), преодолеть определ. расстояние (Acc.), идти к или направляться в (Acc., реже Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), достигать (Acc.). *śaraṇam* прибегать к (Acc.), *mūrdhnā pādau* пасть к ногам кого-либо (Gen.), *antam* достигать конца (Gen.); *идти за чем-либо (Dat.), так преим. чтобы принести это; *идти чтобы (Infin., Dat. одного Nom. act. или отглагольного _Adj._ на *aka*, как *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* ушедший (*anyena* по другому пути).
   <sub>attested</sub>
 
 **PW-2)** — 2〉 zu einem Weibe (Acc.) gehen, so v. a. ihr beiwohnen [CARAKA. 6,2].
@@ -25,7 +25,7 @@
 
 **PW-4)** — 4〉 fortgehen, — von (Abl.), — aus dem Lande, davongehen (auch von Unbelebtem), verstreichen (von der Zeit).
 
-- **RU:** 4〉 уходить, — от (Abl.), — из страны, удаляться (также о неодушевлённом), истекать (о времени).
+- **RU:** 4〉 уходить, — от (Abl.), — из страны, удаляться (также о неодушевленном), истекать (о времени).
   <sub>attested</sub>
 
 **PW-5)** — 5〉 mit *punar* in dieses Leben zurückkehren.
@@ -45,7 +45,7 @@
 
 **PW-caus)** — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) treiben [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] und [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] fehlerhaft für *avratayat*.
 
-- **RU:** — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) гнать [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] и [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] ошибочно вместо *avratayat*.
+- **RU:** — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) гнать [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] и [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] ошибочно вм. *avratayat*.
   <sub>attested</sub>
 
 **PW-denom)** — *Intens. *vāvrajyate* = *kuṭilaṃ vrajati*.
@@ -160,7 +160,7 @@
 
 **PW-prati-head)** — Mit *udā* vorwärts schreiten.
 
-- **RU:** — С *udā* шествовать вперёд.
+- **RU:** — С *udā* шествовать вперед.
   <sub>attested</sub>
 
 **PW-vipra-head)** — Mit *pratyudā* nach der entgegengesetzten Richtung schreiten.
@@ -175,7 +175,7 @@
 
 **PW-ni-head)** — Mit *pratyā* zurückgehen, — kehren; mit Instr. des Weges.
 
-- **RU:** — С *pratyā* возвращаться; с Instr. пути.
+- **RU:** — С *pratyā* возвращаться; с Ins. пути.
   <sub>attested</sub>
 
 **PW-vi-head)** — Mit *samā* zurückkehren.
@@ -250,7 +250,7 @@
 
 **PW-pra-1)** — 1〉 vorwärts schreiten, weitergehen, fortgehen ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — von (Abl. [BAUDH. 1,12]), wandern, sich auf den Weg machen, — nach oder in (Acc., Loc. oder Dat.) abziehen (von Unbelebtem). *pravrajita* fortgegangen ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), davongelaufen (Pferde), ausgewandert, fortgezogen in (Acc.)
 
-- **RU:** 1〉 шествовать вперёд, идти дальше, уходить ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — от (Abl. [BAUDH. 1,12]), странствовать, отправляться в путь, — направляться в или к (Acc., Loc. или Dat.), удаляться (о неодушевлённом). *pravrajita* ушедший ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), сбежавший (кони), эмигрировавший, переселившийся в (Acc.)
+- **RU:** 1〉 шествовать вперед, идти дальше, уходить ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — от (Abl. [BAUDH. 1,12]), странствовать, отправляться в путь, — направляться в или к (Acc., Loc. или Dat.), удаляться (о неодушевленном). *pravrajita* ушедший ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), сбежавший (кони), эмигрировавший, переселившийся в (Acc.)
   <sub>attested</sub>
 
 **PW-pra-2)** — 2〉 das Haus verlassen um als Asket zu wandern [ĀPAST. 2,21,18. 19]. Auch mit Abl. des Ortes, den man verlässt, und Acc. des Ortes, an den man sich begiebt. Bei den Jaina so v. a. Mönch werden [HEM. PAR.] *pravrajita* der das Haus verlassen hat um als Asket zu leben [ĀPAST. 1,18,31]. [GAUT.] auch mit Hinzufügung von *vanam* [Chr. 213,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
@@ -273,9 +273,9 @@
 - **RU:** 2〉 побудить кого-либо странствовать как аскет, — стать монахом [HEM. PAR. 1,300. 337].
   <sub>attested</sub>
 
-**PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) fehlerhaft für *pravrajita*.
+**PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a fehlerhaft für *pravrajita*.
 
-- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) ошибочно вместо *pravrajita*.
+- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a ошибочно вм. *pravrajita*.
   <sub>attested</sub>
 
 **PW-anupra-head)** — Mit *anupra* Jmd (Acc.) in die Verbannung folgen.
@@ -285,7 +285,7 @@
 
 **PW-prati-dir)** — Mit *abhipra* vorschreiten in der Richtung zu Jmd hin [ĀPAST. ŚR. 6,24,8].
 
-- **RU:** — С *abhipra* двигаться вперёд по направлению к кому-либо [ĀPAST. ŚR. 6,24,8].
+- **RU:** — С *abhipra* двигаться вперед по направлению к кому-либо [ĀPAST. ŚR. 6,24,8].
   <sub>attested</sub>
 
 **PW-vi-away)** — Mit *vipra* auseinandergehen, fortgehen von (Abl.) [ĀPAST. 1,29,9].

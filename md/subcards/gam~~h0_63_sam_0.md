@@ -46,7 +46,7 @@
 [RĀJA-TAR. 5,97.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,97) *bhruvau cāsaṃgate mama*
 [R. 6,23,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,23,11) *kācciddṛṣṭastvayāraṇye saṃgatyeha nalaḥ*
 [N. 12,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,20) *saṃgatvā*
-[MBH. 13,456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.456) *kathaṃ kaśyapadāyādā puṃścalyāṃ mayi saṃgatāḥ* woher haben sie sich an mich geschlossen?
+[MBH. 13,456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.456) = [≈Вульг. 13.10.25](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A010_S025) = ≈крит. 13,10.22c *kathaṃ kaśyapadāyādā puṃścalyāṃ mayi saṃgatāḥ* woher haben sie sich an mich geschlossen?
 [BHĀG. P. 8,9,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,9) *akṣadhūrtaiḥ samagaṃsi*
 [DAŚAK. 69,13. 93,12. 17. 137,18.] *hanumatā saṃgataḥ*
 [R. 1,1,57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,57) [51,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,7) [2,103,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,103,35)
@@ -61,7 +61,7 @@
 [RĀJA-TAR. 5,97.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,97) *bhruvau cāsaṃgate mama*
 [R. 6,23,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,23,11) *kācciddṛṣṭastvayāraṇye saṃgatyeha nalaḥ*
 [N. 12,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,20) *saṃgatvā*
-[MBH. 13,456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.456) *kathaṃ kaśyapadāyādā puṃścalyāṃ mayi saṃgatāḥ* «откуда они присоединились ко мне?»
+[MBH. 13,456.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.456) = [≈Вульг. 13.10.25](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A010_S025) = ≈крит. 13,10.22c *kathaṃ kaśyapadāyādā puṃścalyāṃ mayi saṃgatāḥ* откуда они присоединились ко мне?
 [BHĀG. P. 8,9,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,9) *akṣadhūrtaiḥ samagaṃsi*
 [DAŚAK. 69,13. 93,12. 17. 137,18.] *hanumatā saṃgataḥ*
 [R. 1,1,57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,57) [51,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,7) [2,103,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,103,35)
@@ -73,15 +73,15 @@
 [MṚCCH. 14,5.] *mantrisaṃgata*
 [YĀJÑ. 1,327.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,327) *parasaṃgata* (feindlich)
 [325.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,325) *saṃgacchasva mayā sārdhamekenaikaḥ* (feindlich)
-[MBH. 1,5989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5989) *bhrātṛbhiḥ saha saṃgataḥ*
+[MBH. 1,5989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5989) = [≈Вульг. 1.152.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S014) = крит. — *bhrātṛbhiḥ saha saṃgataḥ*
 [ARJ. 3,1.]
 [N. 24,46.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,46)
 [R. 2,50,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,50,3)
 [RĀJA-TAR. 5,257.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,257) geschlechtlich: *tvayā saṃgamya*
-[MBH. 3,17085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17085)
+[MBH. 3,17085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17085) = [≈Вульг. 3.306.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A306_S016) = ≈крит. 03,290.15a
 [R. 1,48,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,22) [37,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,37,23) *yasya bhāryā ca parasaṃgatā*
 [PAÑCAT. I,234.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,234) *saṃgamiṣye tvayā saha*
-[MBH. 3,17119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17119) *icchantyā saha saṃgataḥ*
+[MBH. 3,17119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17119) = [≈Вульг. 3.307.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A307_S022) = ≈крит. 03,291.22c *icchantyā saha saṃgataḥ*
 [M. 8,378.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,378) *matkaiḥ saṃgacchasva vanaiḥ śubhaiḥ* so v. a. komm in meine Wälder
 [BHAṬṬ. 8,16.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,16) Für das act. haben wir folgende Stellen; *saṃ sūryasya jyotipāganma*
 
@@ -91,27 +91,27 @@
 [MṚCCH. 14,5.] *mantrisaṃgata*
 [YĀJÑ. 1,327.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,327) *parasaṃgata* (враждебно)
 [325.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,325) *saṃgacchasva mayā sārdhamekenaikaḥ* (враждебно)
-[MBH. 1,5989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5989) *bhrātṛbhiḥ saha saṃgataḥ*
+[MBH. 1,5989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5989) = [≈Вульг. 1.152.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S014) = крит. — *bhrātṛbhiḥ saha saṃgataḥ*
 [ARJ. 3,1.]
 [N. 24,46.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,46)
 [R. 2,50,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,50,3)
 [RĀJA-TAR. 5,257.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,257) в половом отношении: *tvayā saṃgamya*
-[MBH. 3,17085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17085)
+[MBH. 3,17085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17085) = [≈Вульг. 3.306.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A306_S016) = ≈крит. 03,290.15a
 [R. 1,48,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,22) [37,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,37,23) *yasya bhāryā ca parasaṃgatā*
 [PAÑCAT. I,234.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,234) *saṃgamiṣye tvayā saha*
-[MBH. 3,17119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17119) *icchantyā saha saṃgataḥ*
+[MBH. 3,17119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17119) = [≈Вульг. 3.307.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A307_S022) = ≈крит. 03,291.22c *icchantyā saha saṃgataḥ*
 [M. 8,378.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,378) *matkaiḥ saṃgacchasva vanaiḥ śubhaiḥ* так преим. приди в мои леса
 [BHAṬṬ. 8,16.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,16) Для act. у нас имеются следующие места; *saṃ sūryasya jyotipāganma*
 
 **1)** [AV. 16,9,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.009.html#av16.009.03) *devāsaścinmanasā saṃ hi jagmuḥ paniṣṭhaṃ jātaṃ tavasaṃ duvasyan*
 [ṚV. 3,1,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.13) *saṃ yasminviśvā vasūni jagmuḥ*
 [10,6,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.006.html#rv10.006.06) *rajo meghāśca saṃjagmuḥ śastravidyudbhirāvṛtāḥ*
-[MBH. 6,5372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5372) *rāmaḥ samagacchadguhena*
+[MBH. 6,5372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5372) = [≈Вульг. 6.115.38](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A115_S038) = ≈крит. 06,111.38c *rāmaḥ samagacchadguhena*
 [R. 2,50,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,50,20) *saṃgaccha saha bhāryayā*
 [N. 24,34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,34) — *saṃgata* _n._ Zusammenkunft, Verbindung, Bündniss, Freundschaft
 ([P. 3,1,105.](https://ashtadhyayi.com/sutraani/3/1/105) [TRIK. 3,2,1](https://sanskrit-lexicon-scans.github.io/medini/app2?3,2,1) [lies: *ajaryaṃ]* .
 [H. 731](https://sanskrit-lexicon-scans.github.io/abch2/app1?731)) [P. 1,3,25](https://ashtadhyayi.com/sutraani/1/3/25), Vārtt. 1. *diṣṭyā me saṃgataṃ tvayā*
-[MBH. 3,14044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14044) *mā bhūcca tvayi mama saṃgataṃ kadācit*
+[MBH. 3,14044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14044) = [≈Вульг. 3.215.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A215_S004) = ≈крит. 03,205.4a *mā bhūcca tvayi mama saṃgataṃ kadācit*
 [MṚCCH. 131,16.] *tadā dharmārthakāmānāṃ trayāṇāmapi saṃgatam*
 [MĀRK. P. 21,69.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,69)
 [VIKR. 162.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?162)
@@ -122,12 +122,12 @@
 - **RU:** [AV. 16,9,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.009.html#av16.009.03) *devāsaścinmanasā saṃ hi jagmuḥ paniṣṭhaṃ jātaṃ tavasaṃ duvasyan*
 [ṚV. 3,1,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.13) *saṃ yasminviśvā vasūni jagmuḥ*
 [10,6,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.006.html#rv10.006.06) *rajo meghāśca saṃjagmuḥ śastravidyudbhirāvṛtāḥ*
-[MBH. 6,5372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5372) *rāmaḥ samagacchadguhena*
+[MBH. 6,5372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5372) = [≈Вульг. 6.115.38](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A115_S038) = ≈крит. 06,111.38c *rāmaḥ samagacchadguhena*
 [R. 2,50,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,50,20) *saṃgaccha saha bhāryayā*
 [N. 24,34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,34) — *saṃgata* _n._ встреча, соединение, союз, дружба
 ([P. 3,1,105.](https://ashtadhyayi.com/sutraani/3/1/105) [TRIK. 3,2,1](https://sanskrit-lexicon-scans.github.io/medini/app2?3,2,1) [читай: *ajaryaṃ]* .
 [H. 731](https://sanskrit-lexicon-scans.github.io/abch2/app1?731)) [P. 1,3,25](https://ashtadhyayi.com/sutraani/1/3/25), Вартт. 1. *diṣṭyā me saṃgataṃ tvayā*
-[MBH. 3,14044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14044) *mā bhūcca tvayi mama saṃgataṃ kadācit*
+[MBH. 3,14044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14044) = [≈Вульг. 3.215.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A215_S004) = ≈крит. 03,205.4a *mā bhūcca tvayi mama saṃgataṃ kadācit*
 [MṚCCH. 131,16.] *tadā dharmārthakāmānāṃ trayāṇāmapi saṃgatam*
 [MĀRK. P. 21,69.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,69)
 [VIKR. 162.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?162)
@@ -137,23 +137,23 @@
   <sub>attested</sub>
 
 **1))** [M. 3,140.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,140)
-[MBH. 13,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4312) *viṣayaiḥ saṃgataṃ* (Verbindung) *cāstu tyajeyaṃ saṃgataṃ* (Uebereinkunft) *yadi*
-[14,175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.175)
+[MBH. 13,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4312) = [≈Вульг. 13.90.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A090_S043) = ≈крит. 13,90.36c *viṣayaiḥ saṃgataṃ* (Verbindung) *cāstu tyajeyaṃ saṃgataṃ* (Uebereinkunft) *yadi*
+[14,175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.175) = [≈Вульг. 14.7.23](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A007_S023) = ≈крит. 14,7.23a
 
 - **RU:** [M. 3,140.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,140)
-[MBH. 13,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4312) *viṣayaiḥ saṃgataṃ* (связь) *cāstu tyajeyaṃ saṃgataṃ* (соглашение) *yadi*
-[14,175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.175)
+[MBH. 13,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4312) = [≈Вульг. 13.90.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A090_S043) = ≈крит. 13,90.36c *viṣayaiḥ saṃgataṃ* (связь) *cāstu tyajeyaṃ saṃgataṃ* (соглашение) *yadi*
+[14,175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.175) = [≈Вульг. 14.7.23](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A007_S023) = ≈крит. 14,7.23a
 
 **2))** — 2) sich zusammenziehen, einschrumpfen: *balī saṃgatagātrastu durdarśo durbalaḥ *
 
 * kṛśaḥ*
-[MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
+[MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) = [≈Вульг. 1.84.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A084_S026) = ≈крит. 01,79.23a *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
 [R. 3,25,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7)
 
 - **RU:** — 2) сжиматься, съеживаться: *balī saṃgatagātrastu durdarśo durbalaḥ *
 
 * kṛśaḥ*
-[MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
+[MBH. 1,3471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3471) = [≈Вульг. 1.84.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A084_S026) = ≈крит. 01,79.23a *kasya patrarathāḥ kāyānmāṃsamutkṛtya saṃgatam*
 [R. 3,25,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,7)
 
 **3))** — 3) abscheiden, sterben(?): *tadeva saṃgacchate tadeva mriyate*

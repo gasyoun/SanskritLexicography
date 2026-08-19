@@ -7,5 +7,5 @@
 Schol. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
 
 - **RU:** — intens. *yāyajyate, yāyajīti*
-схол. zu [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
+схол. к [P. 7,4,83.](https://ashtadhyayi.com/sutraani/7/4/83)
   <sub>lexicographic</sub>

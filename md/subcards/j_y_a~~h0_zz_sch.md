@@ -5,7 +5,7 @@
 
 **1 (adhi))** jñā mit adhi begreifen, verstehen, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
 
-- **RU:** jñā с adhi — постигать, понимать, [R. ed. Bomb. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
+- **RU:** jñā с adhi — постигать, понимать, [R. Бомбейская ред. 3,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38)
   <sub>attested</sub>
 
 **2 (anu, Desid.))** Mit anu *Desid. [Med.] sarpiṣo 'nujijñāsate, [P. 1,3,58](https://ashtadhyayi.com/sutraani/1/3/58), Sch.; vgl. Simpl. 2. c).

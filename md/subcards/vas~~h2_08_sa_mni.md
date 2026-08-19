@@ -4,8 +4,8 @@
 
 
 **saMni)** — *saṃni* umthun, anlegen: *prāvārān*
-[MBH. 5,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.745)
+[MBH. 5,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.745) = [≈Вульг. 5.26.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A026_S008) = ≈крит. 05,26.7a
 
 - **RU:** — *saṃni* надевать, облачаться: *prāvārān*
-[MBH. 5,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.745)
+[MBH. 5,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.745) = [≈Вульг. 5.26.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A026_S008) = ≈крит. 05,26.7a
   <sub>attested</sub>

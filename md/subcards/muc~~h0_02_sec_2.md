@@ -25,14 +25,14 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
 [VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mumukṣamāṇā uta yā mumucre*
 [ṚV. 10,111,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.111.html#rv10.111.09) *yat — na mumukṣeya bandhanāt*
 [BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
-[MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167)
+[MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167) = [≈Вульг. 3.3.37](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S037) = крит. —
 
 - **RU:** — b) мед. быть готовым освободиться: *mumukṣate vatsaḥ*
 [P. 7,4,57](https://ashtadhyayi.com/sutraani/7/4/57), схол.
 [VOP. 19,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,13) *mumukṣamāṇā uta yā mumucre*
 [ṚV. 10,111,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.111.html#rv10.111.09) *yat — na mumukṣeya bandhanāt*
 [BHĀG. P. 3,23,57.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,57) act.: *gatistvaṃ mumukṣatām*
-[MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167)
+[MBH. 3,167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.167) = [≈Вульг. 3.3.37](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S037) = крит. —
   <sub>attested</sub>
 
 **2a)** — 2) *mokṣate*
@@ -51,8 +51,8 @@ fahren zu lassen —, aufzugeben im Begriff stehen: *prāṇānkasmānmumukṣas
   <sub>attested</sub>
 
 **2b)** — b) sich befreien von (acc.): *mokṣiṣye manaso jvaram*
-[MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
+[MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115) = [≈Вульг. 15.3.55](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A003_S055) = ≈крит. 15,6.15c
 
 - **RU:** — b) освобождаться от (acc.): *mokṣiṣye manaso jvaram*
-[MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115)
+[MBH. 15,115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.115) = [≈Вульг. 15.3.55](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A003_S055) = ≈крит. 15,6.15c
   <sub>attested</sub>

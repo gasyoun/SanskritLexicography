@@ -5,11 +5,11 @@
 
 **1)** — *vinis* nach allen Richtungen hervorgehen: *yathārdraidhāgnerabhyāhitasya . pṛthagdhūmā viniścaranti*
 [ŚAT. BR. 14,5,4,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,10)
-[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) *teṣāṃ vimucyamānānāṃ dhanuṣāmarkavarcasām . viniśceruḥ prabhā divyāḥ*
-[4,1322.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1322)
+[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) = [≈Вульг. 2.71.15](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A071_S015) = ≈крит. 02,63.15a *teṣāṃ vimucyamānānāṃ dhanuṣāmarkavarcasām . viniśceruḥ prabhā divyāḥ*
+[4,1322.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1322) = [≈Вульг. 4.41.12](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A041_S012) = ≈крит. 04,38.19a
 
 - **RU:** — *vinis* выходить во всех направлениях: *yathārdraidhāgnerabhyāhitasya . pṛthagdhūmā viniścaranti*
 [ŚAT. BR. 14,5,4,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,4,10)
-[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) *teṣāṃ vimucyamānānāṃ dhanuṣāmarkavarcasām . viniśceruḥ prabhā divyāḥ*
-[4,1322.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1322)
+[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) = [≈Вульг. 2.71.15](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A071_S015) = ≈крит. 02,63.15a *teṣāṃ vimucyamānānāṃ dhanuṣāmarkavarcasām . viniśceruḥ prabhā divyāḥ*
+[4,1322.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1322) = [≈Вульг. 4.41.12](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A041_S012) = ≈крит. 04,38.19a
   <sub>attested</sub>

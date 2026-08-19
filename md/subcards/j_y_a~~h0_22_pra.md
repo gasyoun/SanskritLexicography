@@ -14,7 +14,7 @@
 [ŚAT. BR. 3,2,3,1. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,3,1) *vācā hi mugdhaṃ prajñāyate 'thātra prajñāte yathāpūrvaṃ karoti* denn mittelst der Rede kann man sich im Unklaren zurechtfinden, und hat man sich zurechtgefunden (d. h. kennt man die Ordnung), so vollzieht man die Handlungen nach der Reihe
 [4,5,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,3) [6,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,8) [11,5,5,4. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,4) *svargyamagniṃ naciketaḥ prajānan*
 [KAṬHOP. 1,14.] *jyeṣṭhaścenna prajānāti kanīyānkiṃ kariṣyati*
-[MBH. 1,8407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8407) partic. praes.: *prajānatīva na diśo mināti*
+[MBH. 1,8407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8407) = [≈Вульг. 1.228.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A228_S027) = ≈крит. 01,218.3a partic. praes.: *prajānatīva na diśo mināti*
 [ṚV. 1,124,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.124.html#rv01.124.03) *pura etu prajānan*
 [10,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.06) *devebhyo havyaṃ vahatu prajānan*
 [16,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.09) [AV. 2,26,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.026.html#av02.026.02) *imāṃ śālāṃ bṛhaspatirni minotu prajānan*
@@ -24,10 +24,10 @@
 [R. 2,72,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,14) *prajñā = prajānatī*
 [H. 522.](https://sanskrit-lexicon-scans.github.io/abch2/app1?522) unterscheiden, erkennen: *yayā dharmamadharmaṃ ca kāryaṃ cākāryameva ca . ayathāvatprajānāti buddhiḥ sā pārtha rājasī ..*
 [BHAG. 18,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,31) *vācyāvācye hi kupito na prajānāti karhicit*
-[MBH. 3,1069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1069) *tataḥ sa tamasāviṣṭo na sma *
+[MBH. 3,1069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1069) = [≈Вульг. 3.29.41](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A029_S041) = ≈крит. 03,30.40a *tataḥ sa tamasāviṣṭo na sma *
 
 * kiṃcitprajajñivān*
-[4,1948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1948) *garjitena ca daityānāṃ na prājñāyata kiṃ ca na*
+[4,1948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1948) = [≈Вульг. 4.60.26](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A060_S026) = ≈крит. 04,55.24c *garjitena ca daityānāṃ na prājñāyata kiṃ ca na*
 [ARJ. 8,6.]
 
 - **RU:** — *pra* распознавать, понимать: особ. распознавать путь, или направление, или также способ действия; уметь найти что-либо, ориентироваться, быть осведомленным, разбираться: *pra nīcīragne aruṣīrajānan*
@@ -41,7 +41,7 @@
 [ŚAT. BR. 3,2,3,1. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,3,1) *vācā hi mugdhaṃ prajñāyate 'thātra prajñāte yathāpūrvaṃ karoti* ибо посредством речи можно разобраться в темном, и если разобрались (т.е. знают порядок), то совершают действия последовательно
 [4,5,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,3) [6,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,8) [11,5,5,4. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,4) *svargyamagniṃ naciketaḥ prajānan*
 [KAṬHOP. 1,14.] *jyeṣṭhaścenna prajānāti kanīyānkiṃ kariṣyati*
-[MBH. 1,8407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8407) partic. praes.: *prajānatīva na diśo mināti*
+[MBH. 1,8407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8407) = [≈Вульг. 1.228.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A228_S027) = ≈крит. 01,218.3a partic. praes.: *prajānatīva na diśo mināti*
 [ṚV. 1,124,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.124.html#rv01.124.03) *pura etu prajānan*
 [10,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.06) *devebhyo havyaṃ vahatu prajānan*
 [16,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.09) [AV. 2,26,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.026.html#av02.026.02) *imāṃ śālāṃ bṛhaspatirni minotu prajānan*
@@ -51,42 +51,42 @@
 [R. 2,72,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,14) *prajñā = prajānatī*
 [H. 522.](https://sanskrit-lexicon-scans.github.io/abch2/app1?522) различать, распознавать: *yayā dharmamadharmaṃ ca kāryaṃ cākāryameva ca . ayathāvatprajānāti buddhiḥ sā pārtha rājasī ..*
 [BHAG. 18,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,31) *vācyāvācye hi kupito na prajānāti karhicit*
-[MBH. 3,1069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1069) *tataḥ sa tamasāviṣṭo na sma *
+[MBH. 3,1069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1069) = [≈Вульг. 3.29.41](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A029_S041) = ≈крит. 03,30.40a *tataḥ sa tamasāviṣṭo na sma *
 
 * kiṃcitprajajñivān*
-[4,1948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1948) *garjitena ca daityānāṃ na prājñāyata kiṃ ca na*
+[4,1948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1948) = [≈Вульг. 4.60.26](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A060_S026) = ≈крит. 04,55.24c *garjitena ca daityānāṃ na prājñāyata kiṃ ca na*
 [ARJ. 8,6.]
   <sub>attested</sub>
 
-**main-verb-2-gewahr)** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) gewahr werden: *na ca kiṃcitprajajñivān*
+**main-verb-2-gewahr)** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) = [≈Вульг. 3.95.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A095_S022) = ≈крит. 03,93.21a gewahr werden: *na ca kiṃcitprajajñivān*
 
-- **RU:** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) замечать, обнаруживать: *na ca kiṃcitprajajñivān*
+- **RU:** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) = [≈Вульг. 3.95.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A095_S022) = ≈крит. 03,93.21a замечать, обнаруживать: *na ca kiṃcitprajajñivān*
   <sub>attested</sub>
 
-**main-verb-3-wissen-von)** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) wissen von, erfahren von: *na hi prajānāmi tava pravṛttim*
+**main-verb-3-wissen-von)** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) = [≈Вульг. 3.217.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A217_S010) = ≈крит. 03,207.10a wissen von, erfahren von: *na hi prajānāmi tava pravṛttim*
 [BHAG. 11,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,31) *nānyaṃ prajñāsyate kaṃcinmānavaṃ pitṛvarjitam*
 [R. 1,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,8) *na prājñāyanta pāṇḍavāḥ* man hat nichts von den
 P. erfahren, man weiss nichts von ihnen
-[MBH. 4,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.87) *damayantyā gataḥ sārdhaṃ na prājñāyata karhicit* (v. l. *kasyacit*)
+[MBH. 4,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.87) = [≈Вульг. 4.4.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S005) = ≈крит. 04,4.5a *damayantyā gataḥ sārdhaṃ na prājñāyata karhicit* (v. l. *kasyacit*)
 [N. 17,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,3) *na ca striyaṃ prajānāti kaścidaprāptayauvanaḥ* weiss nichts von einem Weibe, tritt in kein näheres Verhältniss zu ihr
 
-- **RU:** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) знать о чем-либо, узнавать о чем-либо: *na hi prajānāmi tava pravṛttim*
+- **RU:** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) = [≈Вульг. 3.217.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A217_S010) = ≈крит. 03,207.10a знать о чем-либо, узнавать о чем-либо: *na hi prajānāmi tava pravṛttim*
 [BHAG. 11,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,31) *nānyaṃ prajñāsyate kaṃcinmānavaṃ pitṛvarjitam*
 [R. 1,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,8) *na prājñāyanta pāṇḍavāḥ* ничего не узнали о
 P. не узнали ничего о них, ничего о них не знают
-[MBH. 4,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.87) *damayantyā gataḥ sārdhaṃ na prājñāyata karhicit* (v. l. *kasyacit*)
+[MBH. 4,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.87) = [≈Вульг. 4.4.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S005) = ≈крит. 04,4.5a *damayantyā gataḥ sārdhaṃ na prājñāyata karhicit* (v. l. *kasyacit*)
 [N. 17,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,3) *na ca striyaṃ prajānāti kaścidaprāptayauvanaḥ* ничего не знает о женщине, не вступает с ней в более близкие отношения
   <sub>attested</sub>
 
-**main-verb-4-ausfindig)** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) ausfindig machen: *āyatanaṃ naḥ prajānīhi*
+**main-verb-4-ausfindig)** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) = [≈Вульг. 1.64.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A064_S038) = ≈крит. 01,58.36c ausfindig machen: *āyatanaṃ naḥ prajānīhi*
 
-- **RU:** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) разыскивать, обнаруживать: *āyatanaṃ naḥ prajānīhi*
+- **RU:** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) = [≈Вульг. 1.64.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A064_S038) = ≈крит. 01,58.36c разыскивать, обнаруживать: *āyatanaṃ naḥ prajānīhi*
   <sub>attested</sub>
 
 **main-verb-5-ppp)** [AIT. UP. 2,1.] — *prajñāta* unterschieden, deutlich zu erkennen: *āsīdidaṃ tamobhatūmaprajñātamalakṣaṇam*
 [M. 1,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,5) bekannt (
 [H. 1493](https://sanskrit-lexicon-scans.github.io/abch2/app1?1493)), anerkannt; kenntlich, deutlich; gewöhnlich: *pradakṣiṇāni kurvīta prajñātāṃśca vanaspatīn*
-[M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39) (vgl. [MBH. 13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979), wo st. dessen *parijñāta)*.* anuṣṭubhaḥ* (im Gegens. zu künstlich erzeugtem Metrum)
+[M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39) (vgl. [MBH. 13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) = [≈Вульг. 13.104.25](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S025) = ≈крит. 13,107.49c, wo st. dessen *parijñāta)*.* anuṣṭubhaḥ* (im Gegens. zu künstlich erzeugtem Metrum)
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4) *etaddha nveva prajñātaṃ kaurupañcālaṃ yaccaturavattam*
 [ŚAT. BR. 1,7,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,8)
 [KĀTY. ŚR. 22,11,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,11,26)
@@ -98,7 +98,7 @@ P. не узнали ничего о них, ничего о них не зна�
 - **RU:** [AIT. UP. 2,1.] — *prajñāta* различимый, отчетливо распознаваемый: *āsīdidaṃ tamobhatūmaprajñātamalakṣaṇam*
 [M. 1,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,5) известный (
 [H. 1493](https://sanskrit-lexicon-scans.github.io/abch2/app1?1493)), признанный; различимый, отчетливый; обычный: *pradakṣiṇāni kurvīta prajñātāṃśca vanaspatīn*
-[M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39) (ср. [MBH. 13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979), где вместо является *parijñāta)*.* anuṣṭubhaḥ* (в противоп. для искусственно созданного метра)
+[M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39) (ср. [MBH. 13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) = [≈Вульг. 13.104.25](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S025) = ≈крит. 13,107.49c, где вместо является *parijñāta)*.* anuṣṭubhaḥ* (в противоп. для искусственно созданного метра)
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4) *etaddha nveva prajñātaṃ kaurupañcālaṃ yaccaturavattam*
 [ŚAT. BR. 1,7,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,8)
 [KĀTY. ŚR. 22,11,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,11,26)

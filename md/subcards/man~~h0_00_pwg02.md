@@ -54,7 +54,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [RĀJA-TAR. 4,369.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,369)
 [SIDDH. K.] zu [P. 1,2,6.](https://ashtadhyayi.com/sutraani/1/2/6) [MĀRK. P. 18,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,33) *satāṃ matamatikramya yo 'satāṃ vartate mate* Rath
 [Spr. 3117.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3117) *matāni mantriṇām*
-[KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* Lehre
+[KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) = [≈Вульг. 1.157.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S011) = ≈крит. 01,145.11c *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* Lehre
 [BHAG. 3,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,31) [18,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,6)
 [LA. (II) 90,14. 91,5.]
 [PAÑCAT. 253,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?253,12) *vaikhānasamate sthitaḥ*
@@ -64,7 +64,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [H. 1540.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1540)
 — γ) Absicht
 [H. 1383.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1383)
-[MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759)
+[MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) = [≈Вульг. 3.44.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A044_S004) = ≈крит. 03,45.4c [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759) = [≈Вульг. 3.70.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A070_S016) = ≈крит. 03,68.15a
 [BHĀG. P. 1,7,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,32)
 — Vgl. *amata (amata*
 [KĀM. NĪTIS. 13,67] fehlerhaft für *abhṛta*; vgl.
@@ -79,7 +79,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [RĀJA-TAR. 4,369.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,369)
 [SIDDH. K.] к [P. 1,2,6.](https://ashtadhyayi.com/sutraani/1/2/6) [MĀRK. P. 18,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,33) *satāṃ matamatikramya yo 'satāṃ vartate mate* совет
 [Spr. 3117.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3117) *matāni mantriṇām*
-[KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* учение
+[KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) = [≈Вульг. 1.157.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S011) = ≈крит. 01,145.11c *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* учение
 [BHAG. 3,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,31) [18,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,6)
 [LA. (II) 90,14. 91,5.]
 [PAÑCAT. 253,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?253,12) *vaikhānasamate sthitaḥ*
@@ -89,7 +89,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [H. 1540.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1540)
 — γ) намерение
 [H. 1383.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1383)
-[MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759)
+[MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) = [≈Вульг. 3.44.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A044_S004) = ≈крит. 03,45.4c [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759) = [≈Вульг. 3.70.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A070_S016) = ≈крит. 03,68.15a
 [BHĀG. P. 1,7,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,32)
 — ср. *amata (amata*
 [KĀM. NĪTIS. 13,67] ошибочно вм. *abhṛta*; ср.

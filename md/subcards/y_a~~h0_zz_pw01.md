@@ -53,9 +53,9 @@
 - **RU:** — С *abhyud*, *abhyudyāta* восставший против кого-л. v. l. *abhyudyata*.
   <sub>attested</sub>
 
-**T221—Mit T15)** — Mit *pratyud* sich erheben und Jmd (Acc., ausnahmsweise Gen.) entgegengehen (in freundlicher oder feindlicher Absicht). *pratyudyāta* mit pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15).
+**T221—Mit T15)** — Mit *pratyud* sich erheben und Jmd (Acc., ausnahmsweise Gen.) entgegengehen (in freundlicher oder feindlicher Absicht). *pratyudyāta* mit pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15) = [≈Вульг. 7.7.17](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A007_S017) = крит. —.
 
-- **RU:** — С *pratyud* подняться и выйти навстречу кому-л. (Acc., в виде исключения Gen.) (с дружественным или враждебным намерением). *pratyudyāta* с pass. знач. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15).
+- **RU:** — С *pratyud* подняться и выйти навстречу кому-л. (Acc., в виде исключения Gen.) (с дружественным или враждебным намерением). *pratyudyāta* с pass. знач. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15) = [≈Вульг. 7.7.17](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A007_S017) = крит. —.
   <sub>attested</sub>
 
 **T222—Mit T22)** — Mit *samud* sich gegen Jmd (Acc.) erheben. *samudyāta* mit act. Bed.
@@ -345,7 +345,7 @@
 
 **T279—7)** — 7〉 verfliessen, verstreichen. *prayāta* verstrichen, verflossen [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
 
-- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протёкший, прошедший [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
+- **RU:** — 7〉 протекать, проходить (о времени). *prayāta* протекший, прошедший [139,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?139).
   <sub>attested</sub>
 
 **T280—8)** — 8〉 in einen Zustand —, in eine Lage —, in ein Verhältniss kommen, — gerathen, theilhaftig werden; mit Acc.
@@ -390,7 +390,7 @@
 
 **T288—Mit T167)** — Mit *samanupra* seines Weges gehen [MAITR. S. 2,12,4 (148,1)].
 
-- **RU:** — С *samanupra* идти своим путём [MAITR. S. 2,12,4 (148,1)].
+- **RU:** — С *samanupra* идти своим путем [MAITR. S. 2,12,4 (148,1)].
   <sub>attested</sub>
 
 **T289—Mit T169)** — Mit *abhipra*
@@ -470,7 +470,7 @@
 
 **T304—4)** — 4〉 *saṃprayāta* vorgegangen mit (Instr.), so v. a. sich bedienend.
 
-- **RU:** — 4〉 *saṃprayāta* поступивший с (Instr.), так преим. пользующийся.
+- **RU:** — 4〉 *saṃprayāta* поступивший с (Ins.), так преим. пользующийся.
   <sub>attested</sub>
 
 **T305—Mit T197)** — Mit *anusaṃpra* hingehen.

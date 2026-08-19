@@ -65,17 +65,17 @@
 
 **11a)** — a〉 getroffen (das Ziel).
 
-- **RU:** — a〉 поражённый (цель).
+- **RU:** — a〉 пораженный (цель).
   <sub>attested</sub>
 
 **11b)** — b〉 erfolgt, gelungen, zu Stande gekommen, erreicht, vollbracht, in Erfüllung gegangen.
 
-- **RU:** — b〉 состоявшийся, удавшийся, осуществлённый, достигнутый, совершённый, исполненный.
+- **RU:** — b〉 состоявшийся, удавшийся, осуществленный, достигнутый, совершенный, исполненный.
   <sub>attested</sub>
 
 **11c)** — c〉 eingegangen (von Geldern).
 
-- **RU:** — c〉 поступивший, внесённый (о деньгах).
+- **RU:** — c〉 поступивший, внесенный (о деньгах).
   <sub>attested</sub>
 
 **11d)** — d〉 verfertigt, zubereitet, fertig gemacht, gekocht u. s. w.
@@ -105,7 +105,7 @@
 
 **11i)** — i〉 in Ordnung gekommen, geheilt.
 
-- **RU:** — i〉 пришедший в порядок, исцелённый.
+- **RU:** — i〉 пришедший в порядок, исцеленный.
   <sub>attested</sub>
 
 **11k)** — k〉 aus Etwas sich ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesen, bewiesen.
@@ -120,7 +120,7 @@
 
 **11m)** — m〉 wirksam, Zauberkraft besitzend, wunderkräftig (vom leblosen Gegenständen) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?1).
 
-- **RU:** — m〉 действенный, обладающий магической силой, чудодейственный (о неодушевлённых предметах) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?1).
+- **RU:** — m〉 действенный, обладающий магической силой, чудодейственный (о неодушевленных предметах) [CARAKA. 6,1. 9. 12]. *˚tama* [1,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?1).
   <sub>attested</sub>
 
 **11n)** — n〉 zu Willen seiend, zu Jmds (Gen.). Verfügung stehend (insbes. von Geistern und andern Zaubermitteln).
@@ -135,17 +135,17 @@
 
 **11p)** — p〉 der das höchste Ziel erreicht hat, zur Vollkommenheit gelangt, Meister geworden in Etwas (Dat. oder im Comp. vorangehend).
 
-- **RU:** — p〉 достигший высшей цели, достигший совершенства, ставший мастером в чём-л. (Dat. или в Comp. предшествующем).
+- **RU:** — p〉 достигший высшей цели, достигший совершенства, ставший мастером в чем-л. (Dat. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **11q)** — q〉 vollkommen geworden, so v. a. in den Besitz übernatürlicher Kräfte gelangt, den Naturgesetzen nicht mehr unterworfen.
 
-- **RU:** — q〉 ставший совершенным, так преим. обретший сверхъестественные силы, более не подчинённый законам природы.
+- **RU:** — q〉 ставший совершенным, так преим. обретший сверхъестественные силы, более не подчиненный законам природы.
   <sub>attested</sub>
 
 **11r)** — r〉 _f._ *siddhā* am Ende von Hetärennamen.
 
-- **RU:** — r〉 _f._ *siddhā* в конце имён гетер.
+- **RU:** — r〉 _f._ *siddhā* в конце имен гетер.
   <sub>attested</sub>
 
 ***caus)** — *Caus. *sedhayati* Jmds Wissen an den Tag legen.
@@ -191,7 +191,7 @@
 
 **mit T39 — 2)** — 2〉 sich ergeben, seine Erklärung finden.
 
-- **RU:** — 2〉 вытекать, находить своё объяснение.
+- **RU:** — 2〉 вытекать, находить свое объяснение.
   <sub>attested</sub>
 
 **mit T39 — 3)** — 3〉 *prasiddha*
@@ -206,7 +206,7 @@
 
 **mit T39 — 3b)** — b〉 in Ordnung gekommen, — gebraucht, geordnet.
 
-- **RU:** — b〉 приведённый в порядок, употреблённый, упорядоченный.
+- **RU:** — b〉 приведенный в порядок, употребленный, упорядоченный.
   <sub>attested</sub>
 
 **mit T39 — 3c)** — c〉 bekannt.
@@ -243,17 +243,17 @@
 
 **mit T45 — 3b)** — b〉 zu Theil geworden, erreicht, erlangt.
 
-- **RU:** — b〉 доставшийся (на долю), достигнутый, обретённый.
+- **RU:** — b〉 доставшийся (на долю), достигнутый, обретенный.
   <sub>attested</sub>
 
 **mit T45 — 3c)** — c〉 zurechtgemacht, bereitet, zubereitet (von Speisen), gemacht.
 
-- **RU:** — c〉 приведённый в надлежащий вид, приготовленный (о пище), сделанный.
+- **RU:** — c〉 приведенный в надлежащий вид, приготовленный (о пище), сделанный.
   <sub>attested</sub>
 
 **mit T45 — 3d)** — d〉 hergestellt, geheilt.
 
-- **RU:** — d〉 восстановленный, исцелённый.
+- **RU:** — d〉 восстановленный, исцеленный.
   <sub>attested</sub>
 
 **mit T45 — 3e)** — e〉 bereit zu (Dat.)
@@ -263,12 +263,12 @@
 
 **mit T45 — 3f)** — f〉 fest entschlossen.
 
-- **RU:** — f〉 твёрдо решившийся.
+- **RU:** — f〉 твердо решившийся.
   <sub>attested</sub>
 
 **mit T45 — 3g)** — g〉 befriedigt, zufriedengestellt.
 
-- **RU:** — g〉 удовлетворённый.
+- **RU:** — g〉 удовлетворенный.
   <sub>attested</sub>
 
 **mit T45 — 3h)** — h〉 geschickt —, erfahren in (Loc.).

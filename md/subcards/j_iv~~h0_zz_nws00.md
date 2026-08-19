@@ -15,7 +15,7 @@
 
 **NWS-3)** *„ jīvāpaya “.* [Jin , unsp] + upa : leben von (Akk), das Leben bewahren oder bestehen durch. Ved , unsp
 
-- **RU:** *„ jīvāpaya “.* [Jin , unsp] + upa: жить чем-л. (Akk.), поддерживать жизнь или существовать посредством чего-л. Ved , unsp. [NWS: Graßmann 1873 (1996) : 491]
+- **RU:** *„ jīvāpaya “.* [Jin , unsp] + upa: жить чем-л. (Acc.), поддерживать жизнь или существовать посредством чего-л. Ved , unsp. [NWS: Graßmann 1873 (1996) : 491]
   <sub>attested</sub>
 
 **NWS-4)** *+ pratyud ( pratyujjīvyate ): resuscitates (said ṛig. oṛ a suṛṛiḷ ṭhich had been abolished by a previous rule). dhurghVṛ 1.2,48 .* [Śā , Ling (s.v. jīv )] jīvamāna Śā , Ling > habituated to live. BhāṣāVṛ 3.2,129 . Renou 1953 (1) : 11 (s.v. jīv )

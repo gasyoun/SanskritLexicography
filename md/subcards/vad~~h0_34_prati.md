@@ -15,7 +15,7 @@
   <sub>attested</sub>
 
 **2)** — 2) antworten
-[MBH. 13,1452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1452)
+[MBH. 13,1452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1452) = [≈Вульг. 13.19.72](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S072) = ≈крит. 13,20.44c
 [KATHĀS. 88,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?88,59)
 [RĀJA-TAR. 3,1.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,1)
 [DAŚAK. 63,5.] mit acc. der Person
@@ -26,7 +26,7 @@
 [BHĀG. P. 6,2,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,21)
 
 - **RU:** — 2) отвечать
-[MBH. 13,1452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1452)
+[MBH. 13,1452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1452) = [≈Вульг. 13.19.72](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S072) = ≈крит. 13,20.44c
 [KATHĀS. 88,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?88,59)
 [RĀJA-TAR. 3,1.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,1)
 [DAŚAK. 63,5.] с acc. лица
@@ -39,11 +39,11 @@
 
 **3)** — 3) nachsprechen, wiederholen: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
-[MBH. 5,4635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4635)
+[MBH. 5,4635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4635) = [≈Вульг. 5.138.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A138_S027) = ≈крит. 05,136.26a
 
 - **RU:** — 3) повторять вслед, воспроизводить сказанное: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
-[MBH. 5,4635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4635)
+[MBH. 5,4635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4635) = [≈Вульг. 5.138.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A138_S027) = ≈крит. 05,136.26a
   <sub>attested</sub>
 
 **caus)** — Vgl. *prativāda* fg. — intens. partic. *prativāvadat* widerredend

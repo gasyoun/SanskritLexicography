@@ -35,7 +35,7 @@
 
 **T52—1)** — 1〉 durchfahren, mit dem Wagen —, mit den Rädern durchschneiden [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
 
-- **RU:** — 1〉 проезжать насквозь, на колеснице —, колёсами прорезать [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
+- **RU:** — 1〉 проезжать насквозь, на колеснице —, колесами прорезать [MAITR. S. 1,10,14] (= [KĀṬH. 36,8]. [NIR. 5,5](https://sanskrit-lexicon-scans.github.io/nirukta/app1?5,5)).
   <sub>attested</sub>
 
 **T53—2)** — 2〉 durchlaufen, -schneiden, zwischen durch gehen, — fahren.
@@ -55,7 +55,7 @@
 
 **T56—5)** — 5〉 **viyāta* dreist, unverschämt, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) scheint der Text entstellt zu sein.
 
-- **RU:** — 5〉 **viyāta* дерзкий, бесстыдный, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) текст, по всей видимости, искажён.
+- **RU:** — 5〉 **viyāta* дерзкий, бесстыдный, [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) текст, по всей видимости, искажен.
   <sub>attested</sub>
 
 **T57—Mit T15)** — Mit *abhivi* hinfahren zu (Acc.).
@@ -88,9 +88,9 @@
 - **RU:** — 4〉 направляться, — к (Acc., также с *prati*).
   <sub>attested</sub>
 
-**T63—5)** — 5〉 kommen, herankommen, herbeifahren ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11)). *saṃyāta* herbeigekommen.
+**T63—5)** — 5〉 kommen, herankommen, herbeifahren ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11) = [≈Вульг. 3.6.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S010) = ≈крит. 03,7.9a). *saṃyāta* herbeigekommen.
 
-- **RU:** — 5〉 приходить, приближаться, приезжать ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11)). *saṃyāta* прибывший.
+- **RU:** — 5〉 приходить, приближаться, приезжать ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11) = [≈Вульг. 3.6.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S010) = ≈крит. 03,7.9a). *saṃyāta* прибывший.
   <sub>attested</sub>
 
 **T64—6)** — 6〉 in eines Zustand —, in eine Lage —, in ein Verhältniss treten, theilhaftig werden; mit Acc.
@@ -100,7 +100,7 @@
 
 **T65—7)** — 7〉 sich richten nach (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) fehlerhaft für *khaṃ* *yayuḥ*.
 
-- **RU:** — 7〉 следовать, руководствоваться (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) ошибочно вместо *khaṃ* *yayuḥ*.
+- **RU:** — 7〉 следовать, руководствоваться (Acc.). — *saṃyayuḥ* [HARIV. 15,892](https://sanskrit-lexicon-scans.github.io/hariv?15) ошибочно вм. *khaṃ* *yayuḥ*.
   <sub>attested</sub>
 
 **T66—Mit T29)** — Mit *anusam*
@@ -110,7 +110,7 @@
 
 **T67—1)** — 1〉 auf- und abgehen.
 
-- **RU:** — 1〉 ходить взад и вперёд.
+- **RU:** — 1〉 ходить взад и вперед.
   <sub>attested</sub>
 
 **T68—2)** — 2〉 hingehen zu oder nach, besuchen; mit Acc. *anusaṃyāta* mit act. Bed.

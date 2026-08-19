@@ -6,6 +6,6 @@
 **1)** — *anupra* daranheften: *śikhām*
 [TS. 7,4,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,9,1)
 
-- **RU:** — *anupra* прикреплять, пристёгивать к: *śikhām*
+- **RU:** — *anupra* прикреплять, пристегивать к: *śikhām*
 [TS. 7,4,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,9,1)
   <sub>attested</sub>

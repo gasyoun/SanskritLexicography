@@ -34,10 +34,10 @@
 [MṚCCH. 2,10.] *diśo vīkṣate vāpyadhaḥ* in's Blaue hinein sehen (vgl. *digvilokana*)
 [PAÑCAT. II,64.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,64) *diśaḥ saṃpūrayannādaiḥ*
 [INDR. 1,3.] *dikṣu rukmīti viśrutaḥ*
-[MBH. 5,5351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5351)
+[MBH. 5,5351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5351) = [≈Вульг. 5.160.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U08_A160_S027) = крит. —
 [MEGH. 25.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?25) *digbhyaḥ* von allen Weltgegenden
 [BHĀG. P. 1,15,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,8) *yathā mṛgagaṇāṃstrastānsiṃho drāvayate diśaḥ*
-[MBH. 8,2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2748) *(tān) diśaḥ prasthāpayāmāsa*
+[MBH. 8,2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2748) = [≈Вульг. 8.56.52](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A056_S052) = ≈крит. 08,40.53c *(tān) diśaḥ prasthāpayāmāsa*
 [R. 1,1,69.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,69) *tato bhagnā nṛpatayo hanyamānā diśo yayuḥ*
 [66,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,25) *vipradrutā bhītāḥ — diśaḥ*
 [55,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,22) *diśo jagmuḥ*
@@ -65,19 +65,19 @@ fünf (die vorigen mit der *dhruvā*)
 [KAUŚ. 116.] acht (die vier zuerst genannten nebst den zwischenliegenden SO. SW. NW. NO.)
 [M. 1,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,13) zehn (die acht vorhergehenden nebst *tiryak* und *ūrdhvam* oder *adhas* und *ūrdhvam*)
 [ŚAT. BR. 6,2,2,34.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,34) [8,4,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,4,2,13)
-[MBH. 1,729.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.729) [3,10667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10667) *āruhya vṛkṣaṃ mādreya nirīkṣasva diśo daśa*
-[17246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17246) [5,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.305) [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) *adya bhītāḥ palāyantāmarayaste diśo daśa*
+[MBH. 1,729.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.729) = [≈Вульг. 1.3.64](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S064) = ≈крит. 01,3.67c [3,10667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10667) = [≈Вульг. 3.132.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A132_S017) = ≈крит. 03,132.15c *āruhya vṛkṣaṃ mādreya nirīkṣasva diśo daśa*
+[17246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17246) = [≈Вульг. 3.312.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A312_S006) = ≈крит. 03,296.6c [5,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.305) = [≈Вульг. 5.10.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A010_S014) = ≈крит. 05,10.14c [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) *adya bhītāḥ palāyantāmarayaste diśo daśa*
 [R. 2,106,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,27) [3,54,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,7) [6,2,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,2,19) [36,107.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,36,107) *etā daśa diśo bhadre kāryamasti na me tvayā* so v. a. gehe wohin es dir beliebt
 [100,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,18) [MṚCCH. 123,23.] [RAGH. 8,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,29) [BHĀG. P. 2,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,20) *daśadiśi pradhāvitāḥ*
 [VET. 14,2.] Daher zur Bezeichnung der Zahl zehn
 [ŚRUT. 36.]
 [SŪRYAS. 2,24. 8,6.] zehn Weltgegenden ausser *tiryak* und *ūrdhvam*
-[MBH. 3,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.856) *diśāṃ patiḥ* heisst Soma
+[MBH. 3,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.856) = [≈Вульг. 3.22.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S008) = ≈крит. 03,23.8a *diśāṃ patiḥ* heisst Soma
 [ṚV. 9,113,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.113.html#rv09.113.02) Rudra
 [VS. 16,17](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,17); vgl. *dikpati* u. s. w. *diśāṃ priyatamaḥ* Bein. Śiva's
 [H. ś. 46.](https://sanskrit-lexicon-scans.github.io/abch2/app2?46) *diśāmudīcī* (Zenith) — *rājā*
-[MBH. 14,1179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1179) *diśāṃ ca pradiśāṃ cordhvaṃ dikpūrvā prathamā tathā*
-[1224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1224) *pradiśo diśaśca*
+[MBH. 14,1179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1179) = [≈Вульг. 14.43.10](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A043_S010) = ≈крит. 14,43.10a *diśāṃ ca pradiśāṃ cordhvaṃ dikpūrvā prathamā tathā*
+[1224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1224) = [≈Вульг. 14.44.13](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A044_S013) = ≈крит. 14,44.12a *pradiśo diśaśca*
 [AV. 5,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.02) [9,2,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.21) *diśaśca vidiśaścaiva*
 [HARIV. 11000.](https://sanskrit-lexicon-scans.github.io/hariv?11000) *diśāmantardeśāḥ*
 [AV. 4,40,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.040.html#av04.040.08) [5,10,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.010.html#av05.010.07) Die *diśaḥ* unter den *devā vaikārikāḥ*
@@ -110,10 +110,10 @@ fünf (die vorigen mit der *dhruvā*)
 [MṚCCH. 2,10.] *diśo vīkṣate vāpyadhaḥ* смотреть в пустоту, глядеть куда попало (ср. *digvilokana*)
 [PAÑCAT. II,64.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,64) *diśaḥ saṃpūrayannādaiḥ*
 [INDR. 1,3.] *dikṣu rukmīti viśrutaḥ*
-[MBH. 5,5351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5351)
+[MBH. 5,5351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5351) = [≈Вульг. 5.160.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U08_A160_S027) = крит. —
 [MEGH. 25.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?25) *digbhyaḥ* со всех сторон света
 [BHĀG. P. 1,15,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,8) *yathā mṛgagaṇāṃstrastānsiṃho drāvayate diśaḥ*
-[MBH. 8,2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2748) *(tān) diśaḥ prasthāpayāmāsa*
+[MBH. 8,2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2748) = [≈Вульг. 8.56.52](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A056_S052) = ≈крит. 08,40.53c *(tān) diśaḥ prasthāpayāmāsa*
 [R. 1,1,69.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,69) *tato bhagnā nṛpatayo hanyamānā diśo yayuḥ*
 [66,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,25) *vipradrutā bhītāḥ — diśaḥ*
 [55,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,22) *diśo jagmuḥ*
@@ -141,19 +141,19 @@ fünf (die vorigen mit der *dhruvā*)
 [KAUŚ. 116.] восемь (четыре перечисленных выше вместе с промежуточными: ЮВ, ЮЗ, СЗ, СВ)
 [M. 1,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,13) десять (предыдущие восемь плюс *tiryak* и *ūrdhvam* или *adhas* и *ūrdhvam*)
 [ŚAT. BR. 6,2,2,34.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,2,34) [8,4,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,4,2,13)
-[MBH. 1,729.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.729) [3,10667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10667) *āruhya vṛkṣaṃ mādreya nirīkṣasva diśo daśa*
-[17246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17246) [5,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.305) [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) *adya bhītāḥ palāyantāmarayaste diśo daśa*
+[MBH. 1,729.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.729) = [≈Вульг. 1.3.64](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S064) = ≈крит. 01,3.67c [3,10667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10667) = [≈Вульг. 3.132.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A132_S017) = ≈крит. 03,132.15c *āruhya vṛkṣaṃ mādreya nirīkṣasva diśo daśa*
+[17246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17246) = [≈Вульг. 3.312.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A312_S006) = ≈крит. 03,296.6c [5,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.305) = [≈Вульг. 5.10.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A010_S014) = ≈крит. 05,10.14c [N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) *adya bhītāḥ palāyantāmarayaste diśo daśa*
 [R. 2,106,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,27) [3,54,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,7) [6,2,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,2,19) [36,107.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,36,107) *etā daśa diśo bhadre kāryamasti na me tvayā* то есть преим. иди куда хочешь
 [100,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,18) [MṚCCH. 123,23.] [RAGH. 8,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,29) [BHĀG. P. 2,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,20) *daśadiśi pradhāvitāḥ*
 [VET. 14,2.] Отсюда для обозначения числа десять
 [ŚRUT. 36.]
 [SŪRYAS. 2,24. 8,6.] десять стран света, кроме *tiryak* и *ūrdhvam*
-[MBH. 3,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.856) *diśāṃ patiḥ* называется Сома
+[MBH. 3,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.856) = [≈Вульг. 3.22.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S008) = ≈крит. 03,23.8a *diśāṃ patiḥ* называется Сома
 [ṚV. 9,113,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.113.html#rv09.113.02) Рудра
 [VS. 16,17](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,17); ср. *dikpati* и т.д. *diśāṃ priyatamaḥ* эпит. Шивас
 [H. ś. 46.](https://sanskrit-lexicon-scans.github.io/abch2/app2?46) *diśāmudīcī* (зенит) — *rājā*
-[MBH. 14,1179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1179) *diśāṃ ca pradiśāṃ cordhvaṃ dikpūrvā prathamā tathā*
-[1224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1224) *pradiśo diśaśca*
+[MBH. 14,1179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1179) = [≈Вульг. 14.43.10](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A043_S010) = ≈крит. 14,43.10a *diśāṃ ca pradiśāṃ cordhvaṃ dikpūrvā prathamā tathā*
+[1224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1224) = [≈Вульг. 14.44.13](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A044_S013) = ≈крит. 14,44.12a *pradiśo diśaśca*
 [AV. 5,28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.02) [9,2,21.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.002.html#av09.002.21) *diśaśca vidiśaścaiva*
 [HARIV. 11000.](https://sanskrit-lexicon-scans.github.io/hariv?11000) *diśāmantardeśāḥ*
 [AV. 4,40,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.040.html#av04.040.08) [5,10,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.010.html#av05.010.07) *diśaḥ* среди *devā vaikārikāḥ*
@@ -208,8 +208,8 @@ in [Ind. St. 4,280.] *dāsīsabhaṃ nṛpasabhaṃ rakṣaḥsabhamimā diśa�
   <sub>lexicographic</sub>
 
 **6)** — 6) N. pr. eines Flusses
-[MBH. 6,327](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.327) ([VP. 182).]
+[MBH. 6,327](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.327) = [≈Вульг. 6.9.19](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A009_S019) = ≈крит. 06,10.18c ([VP. 182).]
 
 - **RU:** — 6) имя собств. некоей реки
-[MBH. 6,327](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.327) ([VP. 182).]
+[MBH. 6,327](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.327) = [≈Вульг. 6.9.19](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A009_S019) = ≈крит. 06,10.18c ([VP. 182).]
   <sub>attested</sub>

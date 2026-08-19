@@ -9,19 +9,19 @@
 [13,21.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,21) *nūpurayugalamāmucya*
 [MĀLAV. 37,19.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?37,19) *āmucyamānābharaṇā*
 [KUMĀRAS. 7,21.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,21) *āmuñcatāṃ* (partic.) *ca varmoṇi*
-[MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) *āmucya kambūparihāṭake śubhe*
-[4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) *kavacāvyāmucya śarīreṣu*
-[1027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1027) [14,1687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1687) *āmucyātha varma*
+[MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) = [≈Вульг. 1.102.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A102_S018) = ≈крит. 01,96.12e *āmucya kambūparihāṭake śubhe*
+[4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) = [≈Вульг. 4.11.4](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S004) = ≈крит. 04,10.4c *kavacāvyāmucya śarīreṣu*
+[1027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1027) = [≈Вульг. 4.31.28](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S028) = крит. — [14,1687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1687) = [≈Вульг. 14.57.26](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A057_S026) = ≈крит. 14,56.26a *āmucyātha varma*
 [HARIV. 13118.](https://sanskrit-lexicon-scans.github.io/hariv?13118) *āmumuce kirīṭaṃ mālāṃ ca* ebend. und
 [13087.](https://sanskrit-lexicon-scans.github.io/hariv?13087) *āmuñcadvarma*
 [BHAṬṬ. 17,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,6) *āmukta* angelegt
 [AK. 2,8,2,33.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,33)
 [H. 765.](https://sanskrit-lexicon-scans.github.io/abch2/app1?765)
 [HALĀY. 4,62.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,62) *˚kavaca*
-[MBH. 1,2783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2783) [5,2005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2005) *āmuktābharaṇa*
+[MBH. 1,2783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2783) = [≈Вульг. 1.67.147](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S147) = ≈крит. 01,104.21c [5,2005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2005) = [≈Вульг. 5.50.39](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A050_S039) = ≈крит. 05,49.36a *āmuktābharaṇa*
 [RAGH. 17,25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,25) [16,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,74)
 [RĀJA-TAR. 3,241.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)
-[MBH. 14,1688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1688) *˚vivāhakautuka (kara)*
+[MBH. 14,1688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1688) = [≈Вульг. 14.57.27](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A057_S027) = ≈крит. 14,56.27a *˚vivāhakautuka (kara)*
 [KUMĀRAS. 5,66.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,66) *˚vraṇapaṭṭa*
 [RĀJA-TAR. 4,454.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,454) *˚hāramukuṭa*
 [KATHĀS. 45,152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,152) *anāmuktā (ratna)*
@@ -35,25 +35,25 @@
 [13,21.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,21) *nūpurayugalamāmucya*
 [MĀLAV. 37,19.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?37,19) *āmucyamānābharaṇā*
 [KUMĀRAS. 7,21.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,21) *āmuñcatāṃ* (partic.) *ca varmoṇi*
-[MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) *āmucya kambūparihāṭake śubhe*
-[4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) *kavacāvyāmucya śarīreṣu*
-[1027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1027) [14,1687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1687) *āmucyātha varma*
-[HARIV. 13118.](https://sanskrit-lexicon-scans.github.io/hariv?13118) *āmumuce kirīṭaṃ mālāṃ ca* там же und
+[MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) = [≈Вульг. 1.102.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A102_S018) = ≈крит. 01,96.12e *āmucya kambūparihāṭake śubhe*
+[4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) = [≈Вульг. 4.11.4](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S004) = ≈крит. 04,10.4c *kavacāvyāmucya śarīreṣu*
+[1027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1027) = [≈Вульг. 4.31.28](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S028) = крит. — [14,1687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1687) = [≈Вульг. 14.57.26](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A057_S026) = ≈крит. 14,56.26a *āmucyātha varma*
+[HARIV. 13118.](https://sanskrit-lexicon-scans.github.io/hariv?13118) *āmumuce kirīṭaṃ mālāṃ ca* там же и
 [13087.](https://sanskrit-lexicon-scans.github.io/hariv?13087) *āmuñcadvarma*
 [BHAṬṬ. 17,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,6) *āmukta* надетый
 [AK. 2,8,2,33.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,33)
 [H. 765.](https://sanskrit-lexicon-scans.github.io/abch2/app1?765)
 [HALĀY. 4,62.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,62) *˚kavaca*
-[MBH. 1,2783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2783) [5,2005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2005) *āmuktābharaṇa*
+[MBH. 1,2783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2783) = [≈Вульг. 1.67.147](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S147) = ≈крит. 01,104.21c [5,2005.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2005) = [≈Вульг. 5.50.39](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A050_S039) = ≈крит. 05,49.36a *āmuktābharaṇa*
 [RAGH. 17,25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,25) [16,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,74)
 [RĀJA-TAR. 3,241.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,241)
-[MBH. 14,1688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1688) *˚vivāhakautuka (kara)*
+[MBH. 14,1688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1688) = [≈Вульг. 14.57.27](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A057_S027) = ≈крит. 14,56.27a *˚vivāhakautuka (kara)*
 [KUMĀRAS. 5,66.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,66) *˚vraṇapaṭṭa*
 [RĀJA-TAR. 4,454.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,454) *˚hāramukuṭa*
 [KATHĀS. 45,152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,152) *anāmuktā (ratna)*
 [Spr. 94](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?94), v. l. одетый, украшенный чем-л.: *bhrājatkaustubhāmuktakaṃdhara*
 [BHĀG. P. 3,28,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,28,14) *āmuktamiva pāṣaṇḍam*
-[4,19,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,12) согласно схол. облачённый в еретическое одеяние (то есть *āmukta* в transit. знач.).
+[4,19,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,12) согласно схол. облаченный в еретическое одеяние (то есть *āmukta* в transit. знач.).
   <sub>attested</sub>
 
 **2)** — 2) ablegen (ein Kleidungsstück): *suptāḥ savasanāḥ kāścitkāścidāmuktavāsasaḥ*
@@ -65,12 +65,12 @@
 
 **3)** — 3) befreien, loslassen: *āmuktāḥ (āsaktāḥ* liest der
 Schol.) [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3738) schleudern, werfen: *airāvataḥ — salilam — megheṣvāmuñcate*
-[MBH. 5,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3553) *āmokṣyanti tvayi madhukaraśreṇidīrghānkaṭākṣān*
+[MBH. 5,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3553) = [≈Вульг. 5.101.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A101_S014) = ≈крит. 05,99.14a *āmokṣyanti tvayi madhukaraśreṇidīrghānkaṭākṣān*
 [MEGH. 36.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?36)
 
 - **RU:** — 3) освобождать, отпускать: *āmuktāḥ (āsaktāḥ* читает
 схол.) [Spr. 3738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3738) метать, бросать: *airāvataḥ — salilam — megheṣvāmuñcate*
-[MBH. 5,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3553) *āmokṣyanti tvayi madhukaraśreṇidīrghānkaṭākṣān*
+[MBH. 5,3553.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3553) = [≈Вульг. 5.101.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A101_S014) = ≈крит. 05,99.14a *āmokṣyanti tvayi madhukaraśreṇidīrghānkaṭākṣān*
 [MEGH. 36.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?36)
   <sub>attested</sub>
 

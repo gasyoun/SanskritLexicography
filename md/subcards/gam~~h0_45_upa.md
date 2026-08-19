@@ -13,7 +13,7 @@
 
 *pratirūpaṃ haivainamupagacchati*
 [14,5,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,8) — *upagacchetsvayaṃ ca yaḥ (putraḥ)*
-[MBH. 1,4673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4673) [3,2681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2681)
+[MBH. 1,4673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4673) = [≈Вульг. 1.120.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A120_S034) = ≈крит. 01,111.29a [3,2681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2681) = [≈Вульг. 3.68.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A068_S028) = ≈крит. 03,65.27a
 [R. 3,4,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,32)
 
 - **RU:** — *upa*
@@ -26,66 +26,66 @@
 
 *pratirūpaṃ haivainamupagacchati*
 [14,5,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,8) — *upagacchetsvayaṃ ca yaḥ (putraḥ)*
-[MBH. 1,4673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4673) [3,2681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2681)
+[MBH. 1,4673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4673) = [≈Вульг. 1.120.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A120_S034) = ≈крит. 01,111.29a [3,2681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2681) = [≈Вульг. 3.68.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A068_S028) = ≈крит. 03,65.27a
 [R. 3,4,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,32)
   <sub>attested</sub>
 
 **1)** [HIT. 12,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,14)
 [ŚĀK. 28,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,7) [78,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?78,1)
 [VID. 85.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?85) *bhāryāmayatnopagatām*
-[MBH. 13,2965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2965)
+[MBH. 13,2965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2965) = [≈Вульг. 13.57.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A057_S040) = ≈крит. 13,57.40c
 [MEGH. 52.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?52) [98](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?98), v. l.
 [MĀLAV. 75.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?75)
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143) *upajagmuḥ pitāmaham*
 [MBH. 3,8823.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8823)
 [N. 21,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,11) *māmevāpagamya*
 [DAŚAK.] in [BENF. Chr. 184,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) *sarva evaite pitāmahamupāgaman*
-[MBH. 1,7683](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7683)*. [BENF. Chr. 26,72*.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?26) *yadaiva menakā dākṣāyaṇīmupagatā*
+[MBH. 1,7683](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7683) = [≈Вульг. 1.208.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A208_S021) = ≈крит. 01,200.20c*. [BENF. Chr. 26,72*.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?26) *yadaiva menakā dākṣāyaṇīmupagatā*
 [ŚĀK. 111,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,4) *raṇāyopajagāma tam*
-[MBH. 1,5399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5399) *grahāstamupagacchanti sārameyā ivāmiṣam* herfallen über
-[11,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.109) *yanmāmadharmeṇopagacchata* übel begegnen
+[MBH. 1,5399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5399) = [≈Вульг. 1.135.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A135_S012) = ≈крит. 01,125.12a *grahāstamupagacchanti sārameyā ivāmiṣam* herfallen über
+[11,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.109) = [≈Вульг. 11.4.6](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A004_S006) = ≈крит. 11,4.6a *yanmāmadharmeṇopagacchata* übel begegnen
 
 - **RU:** [HIT. 12,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?12,14)
 [ŚĀK. 28,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,7) [78,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?78,1)
 [VID. 85.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?85) *bhāryāmayatnopagatām*
-[MBH. 13,2965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2965)
+[MBH. 13,2965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2965) = [≈Вульг. 13.57.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A057_S040) = ≈крит. 13,57.40c
 [MEGH. 52.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?52) [98](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?98), v. l.
 [MĀLAV. 75.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?75)
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143) *upajagmuḥ pitāmaham*
 [MBH. 3,8823.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8823)
 [N. 21,11.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,11) *māmevāpagamya*
 [DAŚAK.] в [BENF. Chr. 184,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) *sarva evaite pitāmahamupāgaman*
-[MBH. 1,7683](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7683)*. [BENF. Chr. 26,72*.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?26) *yadaiva menakā dākṣāyaṇīmupagatā*
+[MBH. 1,7683](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7683) = [≈Вульг. 1.208.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A208_S021) = ≈крит. 01,200.20c*. [BENF. Chr. 26,72*.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?26) *yadaiva menakā dākṣāyaṇīmupagatā*
 [ŚĀK. 111,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,4) *raṇāyopajagāma tam*
-[MBH. 1,5399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5399) *grahāstamupagacchanti sārameyā ivāmiṣam* нападать на
-[11,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.109) *yanmāmadharmeṇopagacchata* дурно обращаться с
+[MBH. 1,5399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5399) = [≈Вульг. 1.135.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A135_S012) = ≈крит. 01,125.12a *grahāstamupagacchanti sārameyā ivāmiṣam* нападать на
+[11,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.109) = [≈Вульг. 11.4.6](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A004_S006) = ≈крит. 11,4.6a *yanmāmadharmeṇopagacchata* дурно обращаться с
   <sub>attested</sub>
 
-**45)** [8,2082.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2082) *samīpaṃ nopagacchāmi*
-[1,6579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6579) [PAÑCAT. 33,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?33,11) [HIT. 18,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,16) *matsamīpamupagato nāsīt*
+**45)** [8,2082.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2082) = [≈Вульг. 8.45.12](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S012) = ≈крит. 08,30.59a *samīpaṃ nopagacchāmi*
+[1,6579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6579) = [≈Вульг. 1.171.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A171_S004) = ≈крит. 01,160.4a [PAÑCAT. 33,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?33,11) [HIT. 18,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,16) *matsamīpamupagato nāsīt*
 [ŚĀK. 82,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?82,8) *upāgamat — girinadīm*
-[MBH. 3,2537](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2537). [N. 21,26](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,26)*. [BHAṬṬ. 7,32](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,32)*. *adho 'dho gaṅgeyaṃ padamupagatā stokam*
+[MBH. 3,2537](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2537) = [≈Вульг. 3.65.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S006) = ≈крит. 03,62.6a. [N. 21,26](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,26)*. [BHAṬṬ. 7,32](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,32)*. *adho 'dho gaṅgeyaṃ padamupagatā stokam*
 [BHARTṚ. 2,10.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,10) *kṛṣṇe svaghāmopagate*
 [BHĀG. P. 1,3,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,43) *astamupagacchati sa bhagavānmṛgāṅkaḥ*
 [MṚCCH. 46,15.] *astopagatasya bhānoḥ*
 [R. 3,48,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,48,19) *narakāyopagacchati* (dat.!)
-[MBH. 13,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3176) *nivāsopagata*
-[3,944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.944) *jālakamukhopagatān*
+[MBH. 13,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3176) = [≈Вульг. 13.62.74](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A062_S074) = ≈крит. 13,61.71a *nivāsopagata*
+[3,944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.944) = [≈Вульг. 3.24.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A024_S026) = ≈крит. 03,25.26c *jālakamukhopagatān*
 (Sch.: = *praviṣṭān) indukiraṇān*
 [ŚIŚ. 9,39.] einen best. Standpunkt erreichen (von Sternen)
 [VARĀH. BṚH. S. 9,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,26) *nīcopagatā*
 [32,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,15) [41 (40),3.] *tanayabhavanamupagataḥ*
 
-- **RU:** [8,2082.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2082) *samīpaṃ nopagacchāmi*
-[1,6579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6579) [PAÑCAT. 33,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?33,11) [HIT. 18,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,16) *matsamīpamupagato nāsīt*
+- **RU:** [8,2082.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2082) = [≈Вульг. 8.45.12](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S012) = ≈крит. 08,30.59a *samīpaṃ nopagacchāmi*
+[1,6579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6579) = [≈Вульг. 1.171.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A171_S004) = ≈крит. 01,160.4a [PAÑCAT. 33,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?33,11) [HIT. 18,16.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,16) *matsamīpamupagato nāsīt*
 [ŚĀK. 82,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?82,8) *upāgamat — girinadīm*
-[MBH. 3,2537](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2537). [N. 21,26](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,26)*. [BHAṬṬ. 7,32](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,32)*. *adho 'dho gaṅgeyaṃ padamupagatā stokam*
+[MBH. 3,2537](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2537) = [≈Вульг. 3.65.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S006) = ≈крит. 03,62.6a. [N. 21,26](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,26)*. [BHAṬṬ. 7,32](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,32)*. *adho 'dho gaṅgeyaṃ padamupagatā stokam*
 [BHARTṚ. 2,10.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,10) *kṛṣṇe svaghāmopagate*
 [BHĀG. P. 1,3,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,43) *astamupagacchati sa bhagavānmṛgāṅkaḥ*
 [MṚCCH. 46,15.] *astopagatasya bhānoḥ*
 [R. 3,48,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,48,19) *narakāyopagacchati* (dat.!)
-[MBH. 13,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3176) *nivāsopagata*
-[3,944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.944) *jālakamukhopagatān*
+[MBH. 13,3176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3176) = [≈Вульг. 13.62.74](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A062_S074) = ≈крит. 13,61.71a *nivāsopagata*
+[3,944.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.944) = [≈Вульг. 3.24.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A024_S026) = ≈крит. 03,25.26c *jālakamukhopagatān*
 (схол.: = *praviṣṭān) indukiraṇān*
 [ŚIŚ. 9,39.] достичь определ. положения (о звездах)
 [VARĀH. BṚH. S. 9,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,26) *nīcopagatā*
@@ -101,11 +101,11 @@
 
 **3)** — 3) inire feminam: *suptāṃ mattāṃ pramattāṃ vā raho yatropagacchati*
 [M. 3,34.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,34) [4,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,40) [41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,41) *śarmiṣṭhāmupajagmivān*
-[MBH. 1,3458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3458)
+[MBH. 1,3458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3458) = [≈Вульг. 1.84.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A084_S013) = ≈крит. 01,79.7a
 
 - **RU:** — 3) войти к женщине: *suptāṃ mattāṃ pramattāṃ vā raho yatropagacchati*
 [M. 3,34.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,34) [4,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,40) [41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,41) *śarmiṣṭhāmupajagmivān*
-[MBH. 1,3458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3458)
+[MBH. 1,3458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3458) = [≈Вульг. 1.84.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A084_S013) = ≈крит. 01,79.7a
   <sub>attested</sub>
 
 **4)** — 4) Jmd (acc.) zu Etwas (acc.) erwählen: *yaṃ snātanaḥ pitaramupāgamatsvayam*
@@ -117,13 +117,13 @@
 
 **5)** — 5) in einen Zustand, ein Verhältniss treten, verfallen in, theilhaftig werden, erlangen: *śukratvamupagacchati*
 [YĀJÑ. 3,71.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,71) *vadhyatvamupagacchetāṃ mama*
-[MBH. 3,13572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13572)
+[MBH. 3,13572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13572) = [≈Вульг. 3.203.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A203_S026) = ≈крит. 03,194.21a
 [KUMĀRAS. 1,8.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,8) *pratikūlatāmupagate hi vidhau*
 [ŚIŚ. 9,16.] *nidrāvaśamupagatasya*
 [PAÑCAT. 126,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?126,3) *na tṛptimupajagmatuḥ*
 [R. 4,4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,19) *śāntim*
 [3,9,34](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,34)*. *praharṣam*
-[MBH. 1,7346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7346) *atulāṃ prītim*
+[MBH. 1,7346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7346) = [≈Вульг. 1.197.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A197_S005) = ≈крит. 01,189.5a *atulāṃ prītim*
 [INDR. 3,10.] *saṃtāpam*
 [SĀV. 1,4.] *paścāttāpam*
 [ŚĀK. 79,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?79,16) *viṣādam*
@@ -133,17 +133,17 @@
 [R. 1,1,80](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,80)*. *nidrām*
 [35,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,35,22)*. *jīvitāntam*
 [2,64,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,72)*. *parāṃ buddhim*
-[MBH. 3,261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.261) *pādanyāso layamupagataḥ*
+[MBH. 3,261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.261) = [≈Вульг. 3.5.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A005_S022) = ≈крит. 03,6.22a *pādanyāso layamupagataḥ*
 
 - **RU:** — 5) войти в (какое-л.) состояние, отношение; впасть в; стать причастным; достигнуть, обрести: *śukratvamupagacchati*
 [YĀJÑ. 3,71.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,71) *vadhyatvamupagacchetāṃ mama*
-[MBH. 3,13572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13572)
+[MBH. 3,13572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13572) = [≈Вульг. 3.203.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A203_S026) = ≈крит. 03,194.21a
 [KUMĀRAS. 1,8.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,8) *pratikūlatāmupagate hi vidhau*
 [ŚIŚ. 9,16.] *nidrāvaśamupagatasya*
 [PAÑCAT. 126,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?126,3) *na tṛptimupajagmatuḥ*
 [R. 4,4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,19) *śāntim*
 [3,9,34](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,34)*. *praharṣam*
-[MBH. 1,7346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7346) *atulāṃ prītim*
+[MBH. 1,7346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7346) = [≈Вульг. 1.197.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A197_S005) = ≈крит. 01,189.5a *atulāṃ prītim*
 [INDR. 3,10.] *saṃtāpam*
 [SĀV. 1,4.] *paścāttāpam*
 [ŚĀK. 79,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?79,16) *viṣādam*
@@ -153,24 +153,24 @@
 [R. 1,1,80](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,80)*. *nidrām*
 [35,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,35,22)*. *jīvitāntam*
 [2,64,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,72)*. *parāṃ buddhim*
-[MBH. 3,261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.261) *pādanyāso layamupagataḥ*
+[MBH. 3,261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.261) = [≈Вульг. 3.5.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A005_S022) = ≈крит. 03,6.22a *pādanyāso layamupagataḥ*
   <sub>attested</sub>
 
 **contd.)** [MĀLAV. 29.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?29) *saṃskāropagatā*
-[MBH. 1,19.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.19)
+[MBH. 1,19.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.19) = [≈Вульг. 1.1.65](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S065) = крит. —
 
 - **RU:** [MĀLAV. 29.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?29) *saṃskāropagatā*
-[MBH. 1,19.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.19)
+[MBH. 1,19.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.19) = [≈Вульг. 1.1.65](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S065) = крит. —
   <sub>attested</sub>
 
 **6)** — 6) einräumen. zugestehen, anerkennen: *sa vai sarvamavāpnoti vedāntopagataṃ phalam*
 [M. 2,160.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,160) *dṛṣṭāntopagata*
-[MBH. 13,2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2629) *upagata = pratijñāta* u. s. w.
+[MBH. 13,2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2629) = [≈Вульг. 13.49.17](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A049_S017) = ≈крит. 13,49.17a *upagata = pratijñāta* u. s. w.
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 
 - **RU:** — 6) уступать. соглашаться, признавать: *sa vai sarvamavāpnoti vedāntopagataṃ phalam*
 [M. 2,160.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,160) *dṛṣṭāntopagata*
-[MBH. 13,2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2629) *upagata = pratijñāta* и т.д.
+[MBH. 13,2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2629) = [≈Вульг. 13.49.17](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A049_S017) = ≈крит. 13,49.17a *upagata = pratijñāta* и т.д.
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
   <sub>attested</sub>
 

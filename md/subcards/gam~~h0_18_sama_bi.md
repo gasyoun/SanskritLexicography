@@ -6,6 +6,6 @@
 **1)** — *samabhi* herankommen: *samabhigacchantaṃ prekṣya rāmam*
 [R. 3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16)
 
-- **RU:** — *samabhi* «подходить, приближаться»: *samabhigacchantaṃ prekṣya rāmam*
+- **RU:** — *samabhi* подходить, приближаться: *samabhigacchantaṃ prekṣya rāmam*
 [R. 3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16)
   <sub>attested</sub>

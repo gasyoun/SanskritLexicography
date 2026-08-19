@@ -33,20 +33,20 @@
 [TRIK. 3,1,3.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,3)
 [H. 491.](https://sanskrit-lexicon-scans.github.io/abch2/app1?491)
 [HĀR. 66.](https://sanskrit-lexicon-scans.github.io/medini/app3?66) *āviṣṭā iva yudhyante*
-[MBH. 6,1759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1759)
+[MBH. 6,1759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1759) = [≈Вульг. 6.46.3](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A046_S003) = ≈крит. 06,44.3c
 [HARIV. 4311.](https://sanskrit-lexicon-scans.github.io/hariv?4311)
 [R. 5,21,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,8)
 [KATHĀS. 17,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,130) [70,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?70,62)
 [PRAB. 75,10.] *jarayā*
 [R. 3,1,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,9) *kṣudhā*
-[MBH. 3,2420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2420) [12,4274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4274)
+[MBH. 3,2420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2420) = [≈Вульг. 3.64.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S020) = ≈крит. 03,61.19c [12,4274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4274) = [≈Вульг. 12.118.17](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S017) = ≈крит. 12,118.17c
 [PAÑCAT. 69,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?69,4) *chardyāviṣṭa*
 [KĀTY. ŚR. 25,11,31.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,11,31) *vedanayā* (Schmerz und Wissen)
 [Spr. 2896.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2896) *hṛcchayāviṣṭacetanā*
-[MBH. 3,2106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2106) *manmathāviṣṭahṛdaya*
+[MBH. 3,2106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2106) = [≈Вульг. 3.54.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A054_S003) = ≈крит. 03,51.3a *manmathāviṣṭahṛdaya*
 [BRAHMA-P. in LA. (III) 54,10.] *upadravāviṣṭa*
 [SUŚR. 1,120,2.] *manyunā*
-[MBH. 5,5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5996) [13,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.184) *roṣeṇa mahatā*
+[MBH. 5,5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5996) = [≈Вульг. 5.175.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S021) = ≈крит. 05,172.19a [13,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.184) = [≈Вульг. 13.3.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A003_S004) = ≈крит. 13,3.4a *roṣeṇa mahatā*
 [R. 2,74,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,1)
 [R. GORR. 1,68,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,68,20) *roṣāviṣṭacitta*
 [PAÑCAT. 186,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?186,5) *kopena*
@@ -55,25 +55,25 @@
 [PAÑCAT. 40,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,18) [55,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,7)
 [ŚUK. in LA. (III) 34,14.] *duḥkhena mahatā*
 [R. 1,57,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,7)
-[Spr. (II) 1042.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1042) *śokaduḥkhābhyām*
-[MBH. 3,2957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2957) *śokāviṣṭa*
+[Spr. (II) 1042.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1042 "Spr. (II) 1042: āviṣṭa iva duḥkhena hṛdgatena garīyasā | samanvitaḥ karuṇayā parayā dīnamuddharet || — (395.) Wer tiefes Mitgefühl hat, der zieht einen Elenden aus der Noth: es ist ihm dabei zu Muthe, als wenn ein heftiger Seelenschmerz ihn dämonisch erfasst hätte.") *śokaduḥkhābhyām*
+[MBH. 3,2957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2957) = [≈Вульг. 3.76.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A076_S002) = ≈крит. 03,74.2a *śokāviṣṭa*
 [HIT. 126,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?126,17) *cintayā*
 [R. 1,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,8) *bhayena mahatā*
-[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) *kaśmalāviṣṭa*
-[7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) *tamasā*
+[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) = [≈Вульг. 5.190.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A190_S013) = ≈крит. 05,191.12a *kaśmalāviṣṭa*
+[7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) = [≈Вульг. 5.180.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S015) = ≈крит. 05,181.15a *tamasā*
 [HARIV. 2518.](https://sanskrit-lexicon-scans.github.io/hariv?2518)
 [BHĀG. P. 4,28,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,25) *tapasā*
 [HARIV. 2522.](https://sanskrit-lexicon-scans.github.io/hariv?2522) *adharmeṇa*
-[MBH. 13,1304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1304) *doṣaiḥ*
+[MBH. 13,1304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1304) = [≈Вульг. 13.18.7](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S007) = ≈крит. 13,18.6a *doṣaiḥ*
 [R. GORR. 2,109,66.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,66) *vismayāviṣṭa*
 [BHAG. 11,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,14)
-[MBH. 3,2831.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2831) *kṛpayā*
-[5,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7159) *karuṇāviṣṭa*
+[MBH. 3,2831.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2831) = [≈Вульг. 3.72.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S024) = ≈крит. 03,70.21a *kṛpayā*
+[5,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7159) = [≈Вульг. 5.179.36](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A179_S036) = ≈крит. 05,180.36a *karuṇāviṣṭa*
 [RĀJA-TAR. 2,43.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,43) *harṣeṇa mahatā*
 [R. 5,14,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,33) *javena mahatā* von grosser Eile ergriffen
 [3,60,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,1) *tvarāviṣṭa*
 [2,111,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,44) *snehapāśairbahuvidhairāviṣṭaviṣayā janāḥ* behaftet mit
-[MBH. 12,6480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6480) Vgl. *bhūtāviṣṭa* (auch
+[MBH. 12,6480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6480) = [≈Вульг. 12.175.39](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A175_S039) = ≈крит. 12,169.37c Vgl. *bhūtāviṣṭa* (auch
 [KATHĀS. 73,293](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,293)).
 
 - **RU:** — 5) partic. *āviṣṭa*
@@ -90,36 +90,36 @@
 — β) сидящий на (loc.), о птицах
 [BHĀG. P. 10,41,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,41,22) парящий в воздухе (= *ākāśasaṃbaddha* коммент.): *abhra*
 [R. 7,31,14.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,31,14)
-— γ) целиком погружённый во что-л., всецело преданный чему-л. (*tatpara*)
+— γ) целиком погруженный во что-л., всецело преданный чему-л. (*tatpara*)
 [AK. 3,1,9](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,9), v. l.
 — b) с pass. знач.
- α) обитаемый, наполненный: *bahulāviṣṭa* густо заселённый
+ α) обитаемый, наполненный: *bahulāviṣṭa* густо заселенный
 [AIT. BR. 3,44.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,44) *tairdurātmabhirāviṣṭamāśramam*
 [R. 3,1,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,27)
-— β) поражённый: *manmathaśarāviṣṭa*
+— β) пораженный: *manmathaśarāviṣṭa*
 [R. 3,52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) *āviṣṭa iva tatrasthadevīdāheṣuṇāgninā*
 [KATHĀS. 16,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,50)
-— γ) охваченный —, одержимый —, поражённый —, подавленный —, находящийся во власти: *kalinā*
+— γ) охваченный —, одержимый —, пораженный —, подавленный —, находящийся во власти: *kalinā*
 [MBH. 3,2270.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2270) *āviṣṭeyaṃ mayā bālā*
 [HARIV. 8729.](https://sanskrit-lexicon-scans.github.io/hariv?8729) *sattvenāviṣṭacetanaḥ*
 [R. GORR. 2,33,11. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,33,11) [MĀRK. P. 51,100.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,100) без дополнения так преим. одержимый злым духом
 [TRIK. 3,1,3.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,1,3)
 [H. 491.](https://sanskrit-lexicon-scans.github.io/abch2/app1?491)
 [HĀR. 66.](https://sanskrit-lexicon-scans.github.io/medini/app3?66) *āviṣṭā iva yudhyante*
-[MBH. 6,1759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1759)
+[MBH. 6,1759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1759) = [≈Вульг. 6.46.3](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A046_S003) = ≈крит. 06,44.3c
 [HARIV. 4311.](https://sanskrit-lexicon-scans.github.io/hariv?4311)
 [R. 5,21,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,8)
 [KATHĀS. 17,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,130) [70,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?70,62)
 [PRAB. 75,10.] *jarayā*
 [R. 3,1,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,9) *kṣudhā*
-[MBH. 3,2420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2420) [12,4274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4274)
+[MBH. 3,2420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2420) = [≈Вульг. 3.64.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S020) = ≈крит. 03,61.19c [12,4274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4274) = [≈Вульг. 12.118.17](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S017) = ≈крит. 12,118.17c
 [PAÑCAT. 69,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?69,4) *chardyāviṣṭa*
 [KĀTY. ŚR. 25,11,31.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,11,31) *vedanayā* (боль и знание)
 [Spr. 2896.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2896) *hṛcchayāviṣṭacetanā*
-[MBH. 3,2106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2106) *manmathāviṣṭahṛdaya*
+[MBH. 3,2106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2106) = [≈Вульг. 3.54.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A054_S003) = ≈крит. 03,51.3a *manmathāviṣṭahṛdaya*
 [BRAHMA-P. in LA. (III) 54,10.] *upadravāviṣṭa*
 [SUŚR. 1,120,2.] *manyunā*
-[MBH. 5,5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5996) [13,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.184) *roṣeṇa mahatā*
+[MBH. 5,5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5996) = [≈Вульг. 5.175.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S021) = ≈крит. 05,172.19a [13,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.184) = [≈Вульг. 13.3.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A003_S004) = ≈крит. 13,3.4a *roṣeṇa mahatā*
 [R. 2,74,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,1)
 [R. GORR. 1,68,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,68,20) *roṣāviṣṭacitta*
 [PAÑCAT. 186,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?186,5) *kopena*
@@ -128,25 +128,25 @@
 [PAÑCAT. 40,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,18) [55,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,7)
 [ŚUK. in LA. (III) 34,14.] *duḥkhena mahatā*
 [R. 1,57,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,7)
-[Spr. (II) 1042.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1042) *śokaduḥkhābhyām*
-[MBH. 3,2957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2957) *śokāviṣṭa*
+[Spr. (II) 1042.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1042 "Spr. (II) 1042: āviṣṭa iva duḥkhena hṛdgatena garīyasā | samanvitaḥ karuṇayā parayā dīnamuddharet || — (395.) Wer tiefes Mitgefühl hat, der zieht einen Elenden aus der Noth: es ist ihm dabei zu Muthe, als wenn ein heftiger Seelenschmerz ihn dämonisch erfasst hätte.") *śokaduḥkhābhyām*
+[MBH. 3,2957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2957) = [≈Вульг. 3.76.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A076_S002) = ≈крит. 03,74.2a *śokāviṣṭa*
 [HIT. 126,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?126,17) *cintayā*
 [R. 1,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,8) *bhayena mahatā*
-[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) *kaśmalāviṣṭa*
-[7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) *tamasā*
+[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) = [≈Вульг. 5.190.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A190_S013) = ≈крит. 05,191.12a *kaśmalāviṣṭa*
+[7177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7177) = [≈Вульг. 5.180.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S015) = ≈крит. 05,181.15a *tamasā*
 [HARIV. 2518.](https://sanskrit-lexicon-scans.github.io/hariv?2518)
 [BHĀG. P. 4,28,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,25) *tapasā*
 [HARIV. 2522.](https://sanskrit-lexicon-scans.github.io/hariv?2522) *adharmeṇa*
-[MBH. 13,1304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1304) *doṣaiḥ*
+[MBH. 13,1304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1304) = [≈Вульг. 13.18.7](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S007) = ≈крит. 13,18.6a *doṣaiḥ*
 [R. GORR. 2,109,66.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,66) *vismayāviṣṭa*
 [BHAG. 11,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,14)
-[MBH. 3,2831.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2831) *kṛpayā*
-[5,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7159) *karuṇāviṣṭa*
+[MBH. 3,2831.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2831) = [≈Вульг. 3.72.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S024) = ≈крит. 03,70.21a *kṛpayā*
+[5,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7159) = [≈Вульг. 5.179.36](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A179_S036) = ≈крит. 05,180.36a *karuṇāviṣṭa*
 [RĀJA-TAR. 2,43.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,43) *harṣeṇa mahatā*
 [R. 5,14,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,33) *javena mahatā* охваченный великой поспешностью
 [3,60,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,1) *tvarāviṣṭa*
-[2,111,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,44) *snehapāśairbahuvidhairāviṣṭaviṣayā janāḥ* отягощённый
-[MBH. 12,6480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6480) ср. *bhūtāviṣṭa* (также
+[2,111,44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,44) *snehapāśairbahuvidhairāviṣṭaviṣayā janāḥ* отягощенный
+[MBH. 12,6480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6480) = [≈Вульг. 12.175.39](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A175_S039) = ≈крит. 12,169.37c ср. *bhūtāviṣṭa* (также
 [KATHĀS. 73,293](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,293)).
   <sub>attested</sub>
 
@@ -154,7 +154,7 @@
 [KATHĀS. 45,60](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,60) fehlerhaft für *āveśya* .
 
 - **RU:** — 6) *āviśya*
-[KATHĀS. 45,60](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,60) ошибочно вместо *āveśya* .
+[KATHĀS. 45,60](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,60) ошибочно вм. *āveśya* .
   <sub>attested</sub>
 
 **Caus.)** — Vgl. *āveśa* fg. — caus. eingehen machen, hineinbringen, hineinlassen; Jmd Etwas übergeben, mittheilen u. s. w.
@@ -166,16 +166,16 @@
 [ṚV. 1,176,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.176.html#rv01.176.02)
 [TS. 4,4,12,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,2) — *dvāḥsthenāveśitaḥ* eingeführt
 [RĀJA-TAR. 8,2130.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2130) *ādityaścandramā vāyuḥ* u. s. w. *sarve brāhmaṇamāveśya sadānnamupabhuñjate* in's Haus hineinlassen so v. a. bewirthen
-[MBH. 13,2115. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2115) *yo 'nyasmin śarīre yogayuktitaḥ . antaḥkaraṇamāveśya* (so ist st. *āviśya* zu lesen) *praviśedindriyāṇi ca* (die beiden acc. von *āveśya* abhängig) hineinfahren lassen
+[MBH. 13,2115. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2115) = [≈Вульг. 13.34.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A034_S005) = ≈крит. 13,34.4c *yo 'nyasmin śarīre yogayuktitaḥ . antaḥkaraṇamāveśya* (so ist st. *āviśya* zu lesen) *praviśedindriyāṇi ca* (die beiden acc. von *āveśya* abhängig) hineinfahren lassen
 [KATHĀS. 45,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,60) *bhruvormadhye prāṇamāveśya*
 [BHAG. 8,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?8,10) *utsarpayannasūnmūrdhni krameṇāveśya*
 [BHĀG. P. 4,23,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,15) *sadasaccaiva mayāveśitamātmani*
-[MBH. 12,13234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13234) *āveśya māmātmani*
+[MBH. 12,13234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13234) = [≈Вульг. 12.342.75](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A342_S075) = ≈крит. 12,330.10a *āveśya māmātmani*
 [BHĀG. P. 7,10,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,11) *mayyāveśya manaḥ* so v. a. richten auf
 [BHAG. 12,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,12)
 [BHĀG. P. 1,9,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,23) [5,16,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,3) [7,1,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,1,29) *ātmanyātmānamāveśya*
 [1,9,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,43) [3,10,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,4) *tvayyāveśitacittā*
-[MBH. 13,1504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1504)
+[MBH. 13,1504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1504) = [≈Вульг. 13.20.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A020_S015) = ≈крит. 13,21.13a
 [RAGH. 10,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,28)
 [BHĀG. P. 5,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,6) [1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,5) *adhokṣaja āveśyatāṃ matiḥ*
 [5,18,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,9) [20,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,25) *āveśitadhiyam — bhagavati*
@@ -190,18 +190,18 @@
 [ŚĀṄKH. ŚR. 12,24,6.] *ūrje puṣṭaṃ vasu*
 [AV. 7,79,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.03) *tasminnā veśayā giraḥ*
 [ṚV. 1,176,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.176.html#rv01.176.02)
-[TS. 4,4,12,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,2) — *dvāḥsthenāveśitaḥ* введённый
+[TS. 4,4,12,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,12,2) — *dvāḥsthenāveśitaḥ* введенный
 [RĀJA-TAR. 8,2130.](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?8,2130) *ādityaścandramā vāyuḥ* и т.д. *sarve brāhmaṇamāveśya sadānnamupabhuñjate* впускать в дом так преим. угощать
-[MBH. 13,2115. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2115) *yo 'nyasmin śarīre yogayuktitaḥ . antaḥkaraṇamāveśya* (так следует читать вместо *āviśya*) *praviśedindriyāṇi ca* (оба acc. зависят от *āveśya*) заставлять вселяться
+[MBH. 13,2115. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2115) = [≈Вульг. 13.34.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A034_S005) = ≈крит. 13,34.4c *yo 'nyasmin śarīre yogayuktitaḥ . antaḥkaraṇamāveśya* (так следует читать вместо *āviśya*) *praviśedindriyāṇi ca* (оба acc. зависят от *āveśya*) заставлять вселяться
 [KATHĀS. 45,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,60) *bhruvormadhye prāṇamāveśya*
 [BHAG. 8,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?8,10) *utsarpayannasūnmūrdhni krameṇāveśya*
 [BHĀG. P. 4,23,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,15) *sadasaccaiva mayāveśitamātmani*
-[MBH. 12,13234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13234) *āveśya māmātmani*
+[MBH. 12,13234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13234) = [≈Вульг. 12.342.75](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A342_S075) = ≈крит. 12,330.10a *āveśya māmātmani*
 [BHĀG. P. 7,10,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,11) *mayyāveśya manaḥ* так преим. направлять на
 [BHAG. 12,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,12)
 [BHĀG. P. 1,9,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,23) [5,16,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,3) [7,1,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,1,29) *ātmanyātmānamāveśya*
 [1,9,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,43) [3,10,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,4) *tvayyāveśitacittā*
-[MBH. 13,1504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1504)
+[MBH. 13,1504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1504) = [≈Вульг. 13.20.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A020_S015) = ≈крит. 13,21.13a
 [RAGH. 10,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,28)
 [BHĀG. P. 5,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,6) [1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,5) *adhokṣaja āveśyatāṃ matiḥ*
 [5,18,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,9) [20,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,25) *āveśitadhiyam — bhagavati*

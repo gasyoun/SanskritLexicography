@@ -26,7 +26,7 @@
 
 **prefix_anu.2)** — 2) am Schluss, auch [ed. Bomb.] *abhyagāt* .
 
-- **RU:** — 2) в конце, также [ed. Bomb.] *abhyagāt* .
+- **RU:** — 2) в конце, также [Бомбейская ред.] *abhyagāt* .
   <sub>attested</sub>
 
 **prefix_pari.4)** — *pari*

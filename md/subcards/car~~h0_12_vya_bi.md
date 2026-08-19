@@ -7,17 +7,17 @@
  1) sich feindselig gegen Jmd (acc. gen.) benehmen, sich vergehen:
 
 *abrāhmaṇaṃ kartumicchanti raudrāste māṃ yathā vyabhicaranti nityam*
-[MBH. 1,3234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3234) *na brahmadattaste bhūyo vyabhicariṣyati*
+[MBH. 1,3234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3234) = [≈Вульг. 1.76.51](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A076_S051) = ≈крит. 01,71.39a *na brahmadattaste bhūyo vyabhicariṣyati*
 [KATHĀS. 20,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,4) [2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,2) *bhartāramapi jīvantamanyānvyabhicarantyuta (nāryaḥ)*
-[MBH. 3,12869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12869)
+[MBH. 3,12869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12869) = [≈Вульг. 3.188.65](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S065) = ≈крит. 03,186.56c
 
 - **RU:** — *vyabhi*
  1) вести себя враждебно по отношению к кому-л. (acc. gen.), погрешать:
 
 *abrāhmaṇaṃ kartumicchanti raudrāste māṃ yathā vyabhicaranti nityam*
-[MBH. 1,3234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3234) *na brahmadattaste bhūyo vyabhicariṣyati*
+[MBH. 1,3234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3234) = [≈Вульг. 1.76.51](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A076_S051) = ≈крит. 01,71.39a *na brahmadattaste bhūyo vyabhicariṣyati*
 [KATHĀS. 20,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,4) [2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,2) *bhartāramapi jīvantamanyānvyabhicarantyuta (nāryaḥ)*
-[MBH. 3,12869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12869)
+[MBH. 3,12869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12869) = [≈Вульг. 3.188.65](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S065) = ≈крит. 03,186.56c
   <sub>attested</sub>
 
 **2)** — 2) es Jmd anthun, zaubern: *na vyabhicareta*

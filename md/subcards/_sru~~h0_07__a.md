@@ -40,7 +40,7 @@
 - **RU:** — 3) обещать, давать слово; с acc. вещи и dat. лица
 [P. 1,4,40.](https://ashtadhyayi.com/sutraani/1/4/40)
 [VOP. 5,15.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,15)
-[R. ed. Bomb. 2,58,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,58,27) *āśruta* обещанный, данный в обещание
+[R. Бомбейская ред. 2,58,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,58,27) *āśruta* обещанный, данный в обещание
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489) *kuryādyathāśrutam*
 [YĀJÑ. 2,196.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,196)
@@ -60,7 +60,7 @@
 [ṚV. 7,62,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.062.html#rv07.062.05) *āśrāvayanta iva ślokamāyavaḥ*
 [1,139,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.03) *yajñaṃ deveṣvāśrāvaya*
 [ĀŚV. ŚR. 1,3,23.] *āśrāvayacca tatkarma*
-[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260)
+[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260) = [≈Вульг. 3.254.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A254_S025) = крит. —
 [BHĀG. P. 5,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,17) [10,70,40](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,70,40) (med.). [73,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,34)
 
 - **RU:** — ср. 1. *āśrava, āśrut, āśruti* . — caus.
@@ -68,7 +68,7 @@
 [ṚV. 7,62,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.062.html#rv07.062.05) *āśrāvayanta iva ślokamāyavaḥ*
 [1,139,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.03) *yajñaṃ deveṣvāśrāvaya*
 [ĀŚV. ŚR. 1,3,23.] *āśrāvayacca tatkarma*
-[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260)
+[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260) = [≈Вульг. 3.254.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A254_S025) = крит. —
 [BHĀG. P. 5,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,17) [10,70,40](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,70,40) (мед.). [73,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,34)
   <sub>attested</sub>
 
@@ -124,7 +124,7 @@
 **caus. 5))** — 5) besprechen: *āśrāvita (mantra)*
 [R. 5,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,10)
 
-- **RU:** — 5) заклинать, нашёптывать над (кем-л.): *āśrāvita (mantra)*
+- **RU:** — 5) заклинать, нашептывать над (кем-л.): *āśrāvita (mantra)*
 [R. 5,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,10)
   <sub>attested</sub>
 

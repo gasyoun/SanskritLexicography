@@ -12,7 +12,7 @@
 
 **PW_root_2)** — 2〉 Act. Schritt halten, in einer Reihe —, auf einer Stufe stehen —, wetteifern mit (Instr.).
 
-- **RU:** — 2〉 Act. идти в ногу, стоять в одном ряду —, на одном уровне —, соперничать с (Instr.).
+- **RU:** — 2〉 Act. идти в ногу, стоять в одном ряду —, на одном уровне —, соперничать с (Ins.).
   <sub>attested</sub>
 
 **PW_root_3)** — 3〉 Med. sich anschliessen, — anreihen, in Reihen ziehen.
@@ -22,7 +22,7 @@
 
 **PW_root_4)** — 4〉 Med. sich verbinden, — vereinigen, zusammentreffen mit (Instr.). *kratubhiḥ* so v. a. sich in Jmds (Gen.) Willen fügen.
 
-- **RU:** — 4〉 Med. соединяться, объединяться, встречаться с (Instr.). *kratubhiḥ* так преим. подчиняться чьей-либо (Gen.) воле.
+- **RU:** — 4〉 Med. соединяться, объединяться, встречаться с (Ins.). *kratubhiḥ* так преим. подчиняться чьей-либо (Gen.) воле.
   <sub>attested</sub>
 
 **PW_root_5)** — 5〉 Med. feindlich zusammengerathen, im Kampfe liegen.
@@ -63,7 +63,7 @@
 
 **PW_root_9b)** — b〉 *yatita* mit einem Infin. derjenige, den zu — man sich bemüht hat. _n._ impers. mit Infin. man (Instr.) ist darauf bedacht gewesen.
 
-- **RU:** — b〉 *yatita* с Infin. тот, о ком заботились. _n._ impers. с Infin. было проявлено усердие (Instr.).
+- **RU:** — b〉 *yatita* с Infin. тот, о ком заботились. _n._ impers. с Infin. было проявлено усердие (Ins.).
   <sub>attested</sub>
 
 **PW_causative_intro)** — Caus. *yātayati*, *˚te*
@@ -103,7 +103,7 @@
 
 **PW_caus_7)** — 7〉 Act. Med. Jmd peinigen, quälen. — Nach dem [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) und *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) fehlerhaft für *yatiṣye*.
 
-- **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) ошибочно вместо *yatiṣye*.
+- **RU:** — 7〉 Act. Med. мучить, терзать кого-либо. — По [DHĀTUP.] *nikāre* (*nirākāre*, *khede*) и *upaskāre* *yātiṣye* [MĀRK. P. 121,39](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,39) ошибочно вм. *yatiṣye*.
   <sub>attested</sub>
 
 **PW_alam)** — Mit *adhi* Med. sich einen Schmuck (Acc.) anlegen auf (Loc.).
@@ -140,7 +140,7 @@
 
 - **RU:** — 2〉 *āyatta*
 — a〉 находящийся в (Loc. или Acc.)
-— b〉 зависящий от, основывающийся на, состоящий в чьём-либо распоряжении; дополнение в Loc., Gen. или в Comp. предшествует. Также без дополнения.
+— b〉 зависящий от, основывающийся на, состоящий в чьем-либо распоряжении; дополнение в Loc., Gen. или в Comp. предшествует. Также без дополнения.
 — c〉 напрягающий силы, прилагающий усилия.
 — d〉 находящийся начеку, остерегающийся.
 — e〉 стоящий наготове.
@@ -237,7 +237,7 @@
 
 **PW_pari_nis)** — Mit *pari* umstellen, umringen. *pariyatta* umstellt.
 
-- **RU:** — С *pari* окружать, обступать. *pariyatta* окружённый.
+- **RU:** — С *pari* окружать, обступать. *pariyatta* окруженный.
   <sub>attested</sub>
 
 **PW_pra_intro)** — Mit *pra*
@@ -252,7 +252,7 @@
 
 **PW_pra_2)** — 2〉 Med. Act. (metrisch) sich bestreben, sich bemühen um, bedacht sein auf, sich befleissigen; die Ergänzung im Loc., Dat., Acc., *arthai, artham, haitos* oder im Infin. *prayatta* sich bestrebend, ganz bei der Sache seiend; *prayatita* _n._ impers.
 
-- **RU:** — 2〉 Med. Act. (метрически) стремиться, прилагать усилия к, быть озабоченным, усердствовать; дополнение в Loc., Dat., Acc., *arthai, artham, haitos* или в Infin. *prayatta* стремящийся, всецело поглощённый делом; *prayatita* _n._ impers.
+- **RU:** — 2〉 Med. Act. (метрически) стремиться, прилагать усилия к, быть озабоченным, усердствовать; дополнение в Loc., Dat., Acc., *arthai, artham, haitos* или в Infin. *prayatta* стремящийся, всецело поглощенный делом; *prayatita* _n._ impers.
   <sub>attested</sub>
 
 **PW_prati_comb)** — Mit *saṃpra* Med. sich bemühen um, bedacht sein auf (Dat.).
@@ -317,7 +317,7 @@
 
 **PW_sam_3)** — 3〉 Med. sich vereinigen, zusammentreffen, sich verbinden mit (Instr.).
 
-- **RU:** — 3〉 Med. соединяться, встречаться, вступать в связь с (Instr.).
+- **RU:** — 3〉 Med. соединяться, встречаться, вступать в связь с (Ins.).
   <sub>attested</sub>
 
 **PW_sam_4)** — 4〉 Med. an einander gerathen, in Streit kommen. *saṃgrāmam* einen Kampf beginnen. *saṃyatta* Pl. in Streit gerathen, *saṃgrāmai saṃyattai* beim Ausbruch des Kampfes [TS. 2,1,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,1) [2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,3,2) [8,4](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,8,4).
@@ -327,7 +327,7 @@
 
 **PW_sam_5)** — 5〉 *saṃyatta* vorbereitet, ganz bei der Sache seiend, seine Maassregeln getroffen habend, auf der Hut seiend, sich vorsehend.
 
-- **RU:** — 5〉 *saṃyatta* готовый, всецело поглощённый делом, принявший меры, находящийся начеку, остерегающийся.
+- **RU:** — 5〉 *saṃyatta* готовый, всецело поглощенный делом, принявший меры, находящийся начеку, остерегающийся.
   <sub>attested</sub>
 
 **PW_abhi_sam)** — Mit *abhisam*, *˚saṃyatta* besorgt, gelenkt (Rosse).
@@ -347,12 +347,12 @@
 
 **PW_pratiyat_2)** — 2〉 *˚saṃyatta* vollkommen vorbereitet, — gerüstet.
 
-- **RU:** — 2〉 *˚saṃyatta* совершенно готовый, — снаряжённый.
+- **RU:** — 2〉 *˚saṃyatta* совершенно готовый, — снаряженный.
   <sub>attested</sub>
 
 **PW_root2_intro)** √*yat* Caus. vgl. [ROTH] in [Z. d. d. m. G. 41,676].
 — Mit *anvā* V. sich bei Etwas betheiligen [ŚĀṄKH. BR. 23,5].
 
 - **RU:** √*yat* Caus. ср. [ROTH] в [Z. d. d. m. G. 41,676].
-— С *anvā* V. принимать участие в чём-либо [ŚĀṄKH. BR. 23,5].
+— С *anvā* V. принимать участие в чем-либо [ŚĀṄKH. BR. 23,5].
   <sub>attested</sub>

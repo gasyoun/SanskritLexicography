@@ -9,30 +9,30 @@
 [TS. 1,5,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,6,1)
 [AV. 13,2,44.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.44)
 erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārthāḥ saṃpaśyamānāḥ prayayurnarāgryāḥ*
-[MBH. 3,12338.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12338) act. [12371.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12371) [7,1822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1822) [9,2894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2894) [R. 2,54,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,3) [5,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,6) [BHĀG. P. 3,9,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,8) *yathaiva śṛṇumo dūrātsaṃpaśyāmastathāntikāt*
+[MBH. 3,12338.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12338) = [≈Вульг. 3.175.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A175_S016) = ≈крит. 03,172.15c act. [12371.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12371) [7,1822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1822) = [≈Вульг. 7.45.18](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A045_S018) = ≈крит. 07,44.18a [9,2894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2894) = [≈Вульг. 9.50.41](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A050_S041) = ≈крит. 09,49.39c [R. 2,54,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,3) [5,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,6) [BHĀG. P. 3,9,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,8) *yathaiva śṛṇumo dūrātsaṃpaśyāmastathāntikāt*
 [9,24,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,9) *sarvamātmani saṃpaśyetsaccāsacca samāhitaḥ*
 [M. 12,118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,118)
 [BHĀG. P. 9,21,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,6) *siddhimekasya saṃpaśyan*
 [M. 6,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,42) *yadi tatrāpi saṃpaśyeddoṣam*
 [7,176.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,176) *saṃpaśya tapaso balam*
-[MBH. 3,14031.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14031) *dhyānayogena saṃpaśyetsūkṣma ātmātmani sthitaḥ*
+[MBH. 3,14031.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14031) = [≈Вульг. 3.214.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A214_S019) = ≈крит. 03,204.18a *dhyānayogena saṃpaśyetsūkṣma ātmātmani sthitaḥ*
 [YĀJÑ. 3,64.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,64) *yasya saṃpaśyataḥ* vor wessen Augen
 [M. 7,143.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,143)
 [HARIV. 7464.](https://sanskrit-lexicon-scans.github.io/hariv?7464)
 [BHĀG. P. 8,3,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,33) [18,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,18,12) auf Jmd oder Etwas sehen, anschauen, besichtigen: *bāhū viśālau saṃpaśyan*
-[MBH. 2,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2623) [3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *saṃpaśyannāsikāgraṃ svam*
+[MBH. 2,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2623) = [≈Вульг. 2.80.4](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A080_S004) = ≈крит. 02,71.3a [3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) = [≈Вульг. 3.22.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S021) = ≈крит. 03,23.20c *saṃpaśyannāsikāgraṃ svam*
 [MĀRK. P. 39,31.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?39,31) *prasthitaṃ vanavāsāya saṃpaśya kuśalena mām*
 [R. GORR. 2,35,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,35,20) *saṃpaśyemaṃ bhogacayaṃ mahāntaṃ sahāsmābhirdhṛtarāṣṭrasya rājñaḥ*
-[MBH. 5,743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.743) *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
+[MBH. 5,743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.743) = [≈Вульг. 5.26.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A026_S006) = ≈крит. 05,26.5c *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
 [M. 7,222.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,222) Jmd sehen so v. a. mit Jmd zusammenkommen, Jmd vor sich lassen: *uttiṣṭha śakra saṃpaśya devarṣīṃśca samāgatām*
-[MBH. 5,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.498)
+[MBH. 5,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.498) = [≈Вульг. 5.16.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A016_S017) = ≈крит. 05,16.17c
 [R. 2,34,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,34) seine Aufmerksamkeit auf Etwas richten, betrachten, erwägen: *dhyānayogena saṃpaśyedgatimasyāntarātmanaḥ*
 [M. 6,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,73) *lokasaṃgrahamevāpi saṃpaśyankartumarhasi*
 [BHAG. 3,20.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,20) *so 'sya kāryāṇi saṃpaśyetsabhyaireva tribhirvṛtaḥ*
 [M. 8,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,10) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,45)
 [R. 2,111,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,23) ([121,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,121,9) [GORR.]). *idaṃ tvidānīṃ saṃpaśya kenopāyena manthare . bharataḥ prāpnuyādrājyam*
 [9,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,3) ansehen für: *yasyāstulyaṃ patiṃ soma utathyaṃ samapaśyata*
-[MBH. 13,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7241) *mitraṃ hiraṇyaṃ bhūmiṃ vā saṃpaśyaṃstrividhaṃ phalam*
+[MBH. 13,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7241) = [≈Вульг. 13.154.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A154_S009) = ≈крит. 13,139.9a *mitraṃ hiraṇyaṃ bhūmiṃ vā saṃpaśyaṃstrividhaṃ phalam*
 [M. 7,206.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,206) med. sich (gegenseitig) ansehen: *saṃ devi devyorvaśyā paśyasva*
 [TS. 1,2,5,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,5,2) *yatra devāḥ samapaśyanta viśve* sich beisammen sehen, — befinden
 [ṚV. 10,82,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.05) ansichtig werden: *saṃpaśyamānā amadannabhi svam*
@@ -46,30 +46,30 @@ erblicken, gewahr werden, sehen, erkennen: *mahānti cānyāni sarāṃsi pārth
 [TS. 1,5,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,6,1)
 [AV. 13,2,44.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.44)
 заметить, увидеть, узреть, распознать: *mahānti cānyāni sarāṃsi pārthāḥ saṃpaśyamānāḥ prayayurnarāgryāḥ*
-[MBH. 3,12338.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12338) act. [12371.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12371) [7,1822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1822) [9,2894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2894) [R. 2,54,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,3) [5,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,6) [BHĀG. P. 3,9,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,8) *yathaiva śṛṇumo dūrātsaṃpaśyāmastathāntikāt*
+[MBH. 3,12338.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12338) = [≈Вульг. 3.175.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A175_S016) = ≈крит. 03,172.15c act. [12371.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12371) [7,1822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1822) = [≈Вульг. 7.45.18](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A045_S018) = ≈крит. 07,44.18a [9,2894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2894) = [≈Вульг. 9.50.41](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A050_S041) = ≈крит. 09,49.39c [R. 2,54,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,3) [5,9,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,9,6) [BHĀG. P. 3,9,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,8) *yathaiva śṛṇumo dūrātsaṃpaśyāmastathāntikāt*
 [9,24,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,9) *sarvamātmani saṃpaśyetsaccāsacca samāhitaḥ*
 [M. 12,118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,118)
 [BHĀG. P. 9,21,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,6) *siddhimekasya saṃpaśyan*
 [M. 6,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,42) *yadi tatrāpi saṃpaśyeddoṣam*
 [7,176.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,176) *saṃpaśya tapaso balam*
-[MBH. 3,14031.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14031) *dhyānayogena saṃpaśyetsūkṣma ātmātmani sthitaḥ*
+[MBH. 3,14031.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14031) = [≈Вульг. 3.214.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A214_S019) = ≈крит. 03,204.18a *dhyānayogena saṃpaśyetsūkṣma ātmātmani sthitaḥ*
 [YĀJÑ. 3,64.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,64) *yasya saṃpaśyataḥ* на чьих глазах
 [M. 7,143.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,143)
 [HARIV. 7464.](https://sanskrit-lexicon-scans.github.io/hariv?7464)
 [BHĀG. P. 8,3,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,33) [18,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,18,12) смотреть на кого-л. или что-л., рассматривать, осматривать: *bāhū viśālau saṃpaśyan*
-[MBH. 2,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2623) [3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) *saṃpaśyannāsikāgraṃ svam*
+[MBH. 2,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2623) = [≈Вульг. 2.80.4](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A080_S004) = ≈крит. 02,71.3a [3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) = [≈Вульг. 3.22.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S021) = ≈крит. 03,23.20c *saṃpaśyannāsikāgraṃ svam*
 [MĀRK. P. 39,31.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?39,31) *prasthitaṃ vanavāsāya saṃpaśya kuśalena mām*
 [R. GORR. 2,35,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,35,20) *saṃpaśyemaṃ bhogacayaṃ mahāntaṃ sahāsmābhirdhṛtarāṣṭrasya rājñaḥ*
-[MBH. 5,743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.743) *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
+[MBH. 5,743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.743) = [≈Вульг. 5.26.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A026_S006) = ≈крит. 05,26.5c *alaṃkṛtaśca saṃpaśyedāyudhīyaṃ punarjanam . vāhanāni ca sarvāṇi śastrāṇyābharaṇāni ca ..*
 [M. 7,222.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,222) увидеть кого-л. так преим. встретиться с кем-л., допустить кого-л. к себе: *uttiṣṭha śakra saṃpaśya devarṣīṃśca samāgatām*
-[MBH. 5,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.498)
-[R. 2,34,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,34) обращать своё внимание на что-л., рассматривать, взвешивать: *dhyānayogena saṃpaśyedgatimasyāntarātmanaḥ*
+[MBH. 5,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.498) = [≈Вульг. 5.16.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A016_S017) = ≈крит. 05,16.17c
+[R. 2,34,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,34) обращать свое внимание на что-л., рассматривать, взвешивать: *dhyānayogena saṃpaśyedgatimasyāntarātmanaḥ*
 [M. 6,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,73) *lokasaṃgrahamevāpi saṃpaśyankartumarhasi*
 [BHAG. 3,20.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,20) *so 'sya kāryāṇi saṃpaśyetsabhyaireva tribhirvṛtaḥ*
 [M. 8,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,10) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,45)
 [R. 2,111,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,23) ([121,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,121,9) [GORR.]). *idaṃ tvidānīṃ saṃpaśya kenopāyena manthare . bharataḥ prāpnuyādrājyam*
 [9,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,3) считать кем-л./чем-л.: *yasyāstulyaṃ patiṃ soma utathyaṃ samapaśyata*
-[MBH. 13,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7241) *mitraṃ hiraṇyaṃ bhūmiṃ vā saṃpaśyaṃstrividhaṃ phalam*
+[MBH. 13,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7241) = [≈Вульг. 13.154.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A154_S009) = ≈крит. 13,139.9a *mitraṃ hiraṇyaṃ bhūmiṃ vā saṃpaśyaṃstrividhaṃ phalam*
 [M. 7,206.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,206) мед. смотреть друг на друга: *saṃ devi devyorvaśyā paśyasva*
 [TS. 1,2,5,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,5,2) *yatra devāḥ samapaśyanta viśve* видеться вместе, — находиться вместе
 [ṚV. 10,82,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.082.html#rv10.082.05) увидеть, заметить: *saṃpaśyamānā amadannabhi svam*

@@ -10,7 +10,7 @@
 
 **PWKVN-ā-1)** — Mit *ā* 1〉 bilden, hervorbringen [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
 
-- **RU:** — Mit *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
+- **RU:** — С *ā* 1〉 создавать, производить [ṚV. 3,38,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.07).
   <sub>attested</sub>
 
 **PWKVN-ā-2)** — 2〉 herbeischaffen [ṚV. 10,56,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.02).
@@ -20,7 +20,7 @@
 
 **PWKVN-mit-T8)** — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
 
-- **RU:** — Mit *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
+- **RU:** — С *sam, saṃmita* [MAITR. S. 2,11,1 (140,4)].
   <sub>attested</sub>
 
 **PWKVN-1-main)** **1.** *mā* mit Präs. damit nicht [R. GORR. 1,65,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,65,21). *purā mā* mit Präs. so v. a. sonst, andernfalls [3,68,44](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,44). *mā gantumarhasi* st. *na ga˚* metrisch [2,116,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,5).
@@ -35,15 +35,15 @@
 
 **PWKVN-3-mit-T22)** — Mit *ā* 5.
 
-- **RU:** — Mit *ā* 5.
+- **RU:** — С *ā* 5.
   <sub>attested</sub>
 
 **PWKVN-3-Desid.)** — Mit *pra* Desid. sich über Etwas (Acc.) eine richtige Vorstellung zu bilden wünschen [BHĀMATĪ 616,9].
 
-- **RU:** — Mit *pra* Desid. желать составить правильное представление о чём-либо (Acc.) [BHĀMATĪ 616,9].
+- **RU:** — С *pra* Desid. желать составить правильное представление о чем-либо (Acc.) [BHĀMATĪ 616,9].
   <sub>attested</sub>
 
 **PWKVN-3-mit-T27)** — Mit *sam* V. 5.
 
-- **RU:** — Mit *sam* V. 5.
+- **RU:** — С *sam* V. 5.
   <sub>attested</sub>

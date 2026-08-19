@@ -15,7 +15,7 @@
 
 **— Mit abhi)** — Mit abhi fahren über (Akk.), [Āpast. Gṛhy. 5,24.]
 
-- **RU:** — С abhi проезжать через (Akk.), [Āpast. Gṛhy. 5,24.]
+- **RU:** — С abhi проезжать через (Acc.), [Āpast. Gṛhy. 5,24.]
   <sub>attested</sub>
 
 **— Mit ā)** — Mit ā [Kaus.] erziehen, [Divyāvad. 499,9.]

@@ -6,6 +6,6 @@
 **1)** — *pratinyā* zurückkehren
 [KĀṬH. 27,9.]
 
-- **RU:** — *pratinyā* «возвращаться»
+- **RU:** — *pratinyā* возвращаться
 [KĀṬH. 27,9.]
   <sub>attested</sub>

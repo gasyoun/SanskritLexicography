@@ -38,10 +38,10 @@
 **caus)** — Vgl. *saṃbhoga* u. s. w. — caus. Jmd (acc.) speisen mit (instr.)
 [YĀJÑ. 1,105.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,105)
 [BHĀG. P. 9,5,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,18) *atithīnannapānena bhṛtyānatyaśanena ca . saṃbhojya*
-[MBH. 3,12672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12672)
+[MBH. 3,12672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12672) = [≈Вульг. 3.184.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A184_S021) = ≈крит. 03,182.19c
 
 - **RU:** — ср. *saṃbhoga* и т.д. — caus. потчевать кого-либо (acc.) чем-либо (instr.)
 [YĀJÑ. 1,105.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,105)
 [BHĀG. P. 9,5,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,18) *atithīnannapānena bhṛtyānatyaśanena ca . saṃbhojya*
-[MBH. 3,12672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12672)
+[MBH. 3,12672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12672) = [≈Вульг. 3.184.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A184_S021) = ≈крит. 03,182.19c
   <sub>attested</sub>

@@ -13,13 +13,13 @@
 [MEGH. 21.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?21) *prāleyaśīkara˚ (tuhināṃśubhāsaḥ)*
 [Spr. 3349.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3349) *viṣa˚ (vāc)*
 [5283.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5283) *aśani˚ (megha)*
-[MBH. 1,8247.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8247) [7,1640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1640) *vana˚ (indra)*
+[MBH. 1,8247.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8247) = [≈Вульг. 1.223.82](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A223_S082) = крит. — [7,1640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1640) = [≈Вульг. 7.38.19](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A038_S019) = ≈крит. 07,37.18a *vana˚ (indra)*
 [RAGH. 9,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,18) *vārimuco na prabhūtavārimucaḥ*
 [VARĀH. BṚH. S. 3,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,16) [24,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?24,19) *puṣpavṛṣṭi˚*
 [MĀRK. P. 128,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?128,25)
 [KATHĀS. 56,164.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,164) *śaravṛṣṭi˚ (dhanus)*
 [RAGH. 9,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,12) *sāyaka˚*
-[MBH. 7,7401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7401) *girayaḥ — nānāyudhamucaḥ*
+[MBH. 7,7401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7401) = [≈Вульг. 7.165.34](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A165_S034) = ≈крит. 07,140.34a *girayaḥ — nānāyudhamucaḥ*
 [BHĀG. P. 3,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,20)
 — Vgl. *a˚, jala˚, toya˚, payo˚, parṇa˚, mada˚, vāri˚* .
 
@@ -33,13 +33,13 @@
 [MEGH. 21.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?21) *prāleyaśīkara˚ (tuhināṃśubhāsaḥ)*
 [Spr. 3349.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3349) *viṣa˚ (vāc)*
 [5283.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5283) *aśani˚ (megha)*
-[MBH. 1,8247.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8247) [7,1640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1640) *vana˚ (indra)*
+[MBH. 1,8247.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8247) = [≈Вульг. 1.223.82](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A223_S082) = крит. — [7,1640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1640) = [≈Вульг. 7.38.19](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A038_S019) = ≈крит. 07,37.18a *vana˚ (indra)*
 [RAGH. 9,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,18) *vārimuco na prabhūtavārimucaḥ*
 [VARĀH. BṚH. S. 3,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,16) [24,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?24,19) *puṣpavṛṣṭi˚*
 [MĀRK. P. 128,25.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?128,25)
 [KATHĀS. 56,164.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,164) *śaravṛṣṭi˚ (dhanus)*
 [RAGH. 9,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,12) *sāyaka˚*
-[MBH. 7,7401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7401) *girayaḥ — nānāyudhamucaḥ*
+[MBH. 7,7401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7401) = [≈Вульг. 7.165.34](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A165_S034) = ≈крит. 07,140.34a *girayaḥ — nānāyudhamucaḥ*
 [BHĀG. P. 3,19,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,20)
 — ср. *a˚, jala˚, toya˚, payo˚, parṇa˚, mada˚, vāri˚*.
   <sub>attested</sub>

@@ -14,7 +14,7 @@
 [HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) fehlerhaft für *niryukta* .
 
 - **RU:** — *nis*, *nirmukta*
-[HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) ошибочно вместо *niryukta*.
+[HARIV. 4644](https://sanskrit-lexicon-scans.github.io/hariv?4644) ошибочно вм. *niryukta*.
   <sub>lexicographic</sub>
 
 **Nachtrag T27)** — *prati*

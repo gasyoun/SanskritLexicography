@@ -133,9 +133,9 @@
 - **RU:** — 7〉 поселяться, обосновываться, так преим. заводить дом, жениться (о мужчине) [214,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
   <sub>attested</sub>
 
-**201-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2)).
+**201-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2) = [≈Вульг. 13.1.70](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S070) = ≈крит. 13,1.63c).
 
-- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2)).
+- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2) = [≈Вульг. 13.1.70](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S070) = ≈крит. 13,1.63c).
   <sub>attested</sub>
 
 **202-9)** — 9〉 sich hinwenden zu, sich richten auf (Loc., vom Geiste).
@@ -230,7 +230,7 @@
 
 **220-n)** — n〉 versehen mit (Instr.).
 
-- **RU:** — n〉 снабжённый (Instr.).
+- **RU:** — n〉 снабженный (Ins.).
   <sub>attested</sub>
 
 **221)** — Caus.
@@ -363,9 +363,9 @@
 - **RU:** — 2〉 погружаться в, всецело предаваться; с Acc.
   <sub>attested</sub>
 
-**247-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17).
+**247-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17) = [≈Вульг. 5.4.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A004_S014) = ≈крит. 05,4.14a.
 
-- **RU:** — 3〉 упорно стоять на своём [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17).
+- **RU:** — 3〉 упорно стоять на своем [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17) = [≈Вульг. 5.4.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A004_S014) = ≈крит. 05,4.14a.
   <sub>attested</sub>
 
 **248-4)** — 4〉 Jmdm (Loc.) zukommen (Gegensatz abgehen) [224,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
@@ -393,19 +393,19 @@
 - **RU:** — α〉 (во что нечто проникло) вздутый, распухший, выпуклый [R. 2,9,33](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,33).
   <sub>attested</sub>
 
-**253-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31).
+**253-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31) = [≈Вульг. 8.4.10](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A004_S010) = ≈крит. 08,3.9c.
 
-- **RU:** — β〉 во что кто-л. (Instr.) погрузился, чему всецело предался [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31).
+- **RU:** — β〉 во что кто-л. (Ins.) погрузился, чему всецело предался [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31) = [≈Вульг. 8.4.10](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A004_S010) = ≈крит. 08,3.9c.
   <sub>attested</sub>
 
 **254-gamma)** — γ〉 durchdrungen —, in Beschlag genommen von (Instr.).
 
-- **RU:** — γ〉 проникнутый —, охваченный (Instr.).
+- **RU:** — γ〉 проникнутый —, охваченный (Ins.).
   <sub>attested</sub>
 
 **255-delta)** — δ〉 reichlich versehen mit (Instr.).
 
-- **RU:** — δ〉 обильно снабжённый (Instr.).
+- **RU:** — δ〉 обильно снабженный (Ins.).
   <sub>attested</sub>
 
 **256-b)** — b〉 mit act. Bed.
@@ -420,7 +420,7 @@
 
 **258-beta)** — β〉 fest auf einen Punct gerichtet, ganz mit Etwas beschäftigt, nur Eines vor Augen habend, ganz versessen auf (Loc., Acc. mit *prati*, ein adv. Comp. mit *adhi* oder im Comp. vorangehend). Ohne Ergänzung [ŚIŚ. 16,43].
 
-- **RU:** — β〉 твёрдо устремлённый на одну точку, всецело занятый чем-л., имеющий перед глазами только одно, всецело помешанный на (Loc., Acc. с *prati*, adv. Comp. с *adhi* или предшествующий Comp.). Без дополнения [ŚIŚ. 16,43].
+- **RU:** — β〉 твердо устремленный на одну точку, всецело занятый чем-л., имеющий перед глазами только одно, всецело помешанный на (Loc., Acc. с *prati*, adv. Comp. с *adhi* или предшествующий Comp.). Без дополнения [ŚIŚ. 16,43].
   <sub>attested</sub>
 
 **259)** — Caus.
@@ -445,7 +445,7 @@
 
 **263-4)** — 4〉 bewirken, dass Jmd einer Sache sein ganzes Herz zuwendet, Jmds ganzes Verlangen richten auf (Loc.).
 
-- **RU:** — 4〉 добиваться того, чтобы кто-л. обратил к чему-л. всё своё сердце, направлять всё чьё-л. желание на (Loc.).
+- **RU:** — 4〉 добиваться того, чтобы кто-л. обратил к чему-л. всё свое сердце, направлять всё чье-л. желание на (Loc.).
   <sub>attested</sub>
 
 **264)** — Mit *upani*, *˚viṣṭa*
@@ -455,7 +455,7 @@
 
 **265-1)** — 1〉 erfüllt von (Instr.).
 
-- **RU:** — 1〉 исполненный (Instr.).
+- **RU:** — 1〉 исполненный (Ins.).
   <sub>attested</sub>
 
 **266-2)** — 2〉 belagernd, einschliessend; mit Acc.
@@ -495,7 +495,7 @@
 
 **273)** — Mit *pratini*, *˚viṣṭa* ganz beschäftigt mit, nur Sinn habend für (Loc.). Ohne Ergänzung auf seinem Kopfe bestehend, verstockt.
 
-- **RU:** — С *pratini*, *˚viṣṭa* всецело занятый чем-л., помышляющий только о (Loc.). Без дополнения упорствующий на своём, упрямый.
+- **RU:** — С *pratini*, *˚viṣṭa* всецело занятый чем-л., помышляющий только о (Loc.). Без дополнения упорствующий на своем, упрямый.
   <sub>attested</sub>
 
 **274)** — Mit *vini*, *˚viṣṭa*

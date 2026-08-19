@@ -6,6 +6,6 @@
 **1)** — *abhisaṃni*, partic. *˚viṣṭa* in Jmd vereinigt
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 103.]
 
-- **RU:** — *abhisaṃni*, partic. *˚viṣṭa* объединённый в ком-либо
+- **RU:** — *abhisaṃni*, partic. *˚viṣṭa* объединенный в ком-либо
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 103.]
   <sub>attested</sub>

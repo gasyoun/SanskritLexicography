@@ -6,7 +6,7 @@
 **1)** — *api* med. sich anbinden: *srajam*
 [ĀŚV. GṚHY. 3,8.]
 
-- **RU:** — *api* мед. «привязываться»: *srajam*
+- **RU:** — *api* мед. привязываться: *srajam*
 [ĀŚV. GṚHY. 3,8.]
   <sub>attested</sub>
 

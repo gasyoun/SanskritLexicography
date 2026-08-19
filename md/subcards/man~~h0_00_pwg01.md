@@ -19,11 +19,11 @@
 [AIT. BR. 3,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,19) [1,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,1) [2,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,31) *paṇḍitā* (so die Scholien) *manyamānāḥ*
 [KAṬHOP. 2,5.]
 [MUṆḌ. UP. 1,2,8] (nach der Lesart der Scholien). *jātyandha iva manyeta* er erscheine wie blind geboren, thue, als wenn er blind sei,
-[MBH. 4,102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.102) *yena svairapi manyante jīvanto 'pi mṛtāḥ* gehalten werden für
+[MBH. 4,102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.102) = [≈Вульг. 4.4.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S020) = крит. — *yena svairapi manyante jīvanto 'pi mṛtāḥ* gehalten werden für
 [Spr. 1258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1258) Statt des nom. hier und da auch der acc.: *hataścenmanyate hatam*
 [KAṬHOP. 2,19.] *paṇḍitaṃ manyamānāḥ*
 [5.] [MUṆḌ. UP. 1,2,8] (die Scholien an beiden Stellen *paṇḍitā)* .
-[MBH. 13,1543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1543)
+[MBH. 13,1543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1543) = [≈Вульг. 13.22.13](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A022_S013) = ≈крит. 01,85.23a
 
 - **RU:** 3) считать себя (nom.); считаться, слыть, казаться, представляться: *amarmaṇo manyamānasya marma*
 [ṚV. 3,32,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.032.html#rv03.032.04) *apratirmanyamānaḥ*
@@ -41,32 +41,32 @@
 [AIT. BR. 3,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,19) [1,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,1) [2,31.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,31) *paṇḍitā* (так схолии) *manyamānāḥ*
 [KAṬHOP. 2,5.]
 [MUṆḌ. UP. 1,2,8] (по чтению схолий). *jātyandha iva manyeta* «пусть он выглядит как слепорожденный, притворяется слепым»,
-[MBH. 4,102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.102) *yena svairapi manyante jīvanto 'pi mṛtāḥ* «считаться»
+[MBH. 4,102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.102) = [≈Вульг. 4.4.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S020) = крит. — *yena svairapi manyante jīvanto 'pi mṛtāḥ* «считаться»
 [Spr. 1258.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1258) Вм. nom. здесь и там также acc.: *hataścenmanyate hatam*
 [KAṬHOP. 2,19.] *paṇḍitaṃ manyamānāḥ*
 [5.] [MUṆḌ. UP. 1,2,8] (схолии в обоих местах *paṇḍitā)*.
-[MBH. 13,1543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1543)
+[MBH. 13,1543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1543) = [≈Вульг. 13.22.13](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A022_S013) = ≈крит. 01,85.23a
   <sub>attested</sub>
 
 **4)** — 4) meinen so v. a. für gut finden, billigen: *kathaṃ vā gautamī manyate*
 [ŚĀK. 56,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?56,3) *yathā bhavānmanyate*
 [101,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,19) [VIKR. 12,9.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?12,9) *yadi manyase*
-[MBH. 3,2299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2299) [2331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2331) [2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) *manyase yadi*
-[2772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2772) [3025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3025) *kiṃ vā manyata putrakāḥ* (die [ed. Bomb.] *manyadhvam* bei einer auch sonst abweichenden Lesart)
-[1,8370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8370) *tatheti tadamanyata*
+[MBH. 3,2299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2299) = [≈Вульг. 3.61.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S003) = ≈крит. 03,58.3c [2331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2331) = [≈Вульг. 3.61.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S035) = ≈крит. 03,58.33c [2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) = [≈Вульг. 3.68.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A068_S035) = ≈крит. 03,65.33a *manyase yadi*
+[2772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2772) = [≈Вульг. 3.71.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S001) = ≈крит. 03,69.1a [3025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3025) = [≈Вульг. 3.77.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S018) = ≈крит. 01,13.37a *kiṃ vā manyata putrakāḥ* (die [ed. Bomb.] *manyadhvam* bei einer auch sonst abweichenden Lesart)
+[1,8370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8370) = [≈Вульг. 1.227.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A227_S042) = ≈крит. 01,218.41a *tatheti tadamanyata*
 [KATHĀS. 27,149.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,149) [28,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,34)
 [SĀH. D. 11,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?11,14) Jmd (acc.) beistimmen
-[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799)
+[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) = [≈Вульг. 14.28.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A028_S012) = ≈крит. 14,28.12c
 
 - **RU:** 4) полагать, а именно преим. признавать хорошим, одобрять: *kathaṃ vā gautamī manyate*
 [ŚĀK. 56,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?56,3) *yathā bhavānmanyate*
 [101,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,19) [VIKR. 12,9.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?12,9) *yadi manyase*
-[MBH. 3,2299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2299) [2331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2331) [2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) *manyase yadi*
-[2772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2772) [3025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3025) *kiṃ vā manyata putrakāḥ* (die [ed. Bomb.] *manyadhvam* при иначе расходящемся чтении)
-[1,8370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8370) *tatheti tadamanyata*
+[MBH. 3,2299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2299) = [≈Вульг. 3.61.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S003) = ≈крит. 03,58.3c [2331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2331) = [≈Вульг. 3.61.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S035) = ≈крит. 03,58.33c [2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) = [≈Вульг. 3.68.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A068_S035) = ≈крит. 03,65.33a *manyase yadi*
+[2772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2772) = [≈Вульг. 3.71.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S001) = ≈крит. 03,69.1a [3025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3025) = [≈Вульг. 3.77.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S018) = ≈крит. 01,13.37a *kiṃ vā manyata putrakāḥ* (die [Бомбейская ред.] *manyadhvam* при иначе расходящемся чтении)
+[1,8370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8370) = [≈Вульг. 1.227.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A227_S042) = ≈крит. 01,218.41a *tatheti tadamanyata*
 [KATHĀS. 27,149.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,149) [28,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,34)
 [SĀH. D. 11,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?11,14) соглашаться с кем-либо (acc.)
-[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799)
+[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) = [≈Вульг. 14.28.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A028_S012) = ≈крит. 14,28.12c
   <sub>attested</sub>
 
 **5)** — 5) denken an so v. a. mit Sinn und Herz zugewandt sein, ehren, schätzen *(stu*
@@ -79,8 +79,8 @@
 
 * devamamaṃsata*
 [10,86,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.01) *yathā tvadanyaṃ puruṣaṃ na sā maṃsyati karhicit*
-[MBH. 3,2092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2092) *maṃsyante māṃ yathā nṛpam*
-[4,32.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.32) *taṃ manmahe maheśānam*
+[MBH. 3,2092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2092) = [≈Вульг. 3.53.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A053_S020) = ≈крит. 03,50.19a *maṃsyante māṃ yathā nṛpam*
+[4,32.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.32) = [≈Вульг. 4.2.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S005) = крит. — *taṃ manmahe maheśānam*
 [Verz. d. Oxf. H. 69,a,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?69) *na maṃsyate janārdanam*
 [VOP. 25,12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?25,12) *nikaṭasthaṃ garīyāṃsamapi loko na manyate*
 [Spr. 1571.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1571) *manyāmahe malayameva*
@@ -100,14 +100,14 @@
 
 * devamamaṃsata*
 [10,86,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.01) *yathā tvadanyaṃ puruṣaṃ na sā maṃsyati karhicit*
-[MBH. 3,2092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2092) *maṃsyante māṃ yathā nṛpam*
-[4,32.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.32) *taṃ manmahe maheśānam*
+[MBH. 3,2092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2092) = [≈Вульг. 3.53.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A053_S020) = ≈крит. 03,50.19a *maṃsyante māṃ yathā nṛpam*
+[4,32.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.32) = [≈Вульг. 4.2.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S005) = крит. — *taṃ manmahe maheśānam*
 [Verz. d. Oxf. H. 69,a,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?69) *na maṃsyate janārdanam*
 [VOP. 25,12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?25,12) *nikaṭasthaṃ garīyāṃsamapi loko na manyate*
 [Spr. 1571.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1571) *manyāmahe malayameva*
 [681.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?681) *ṛṣayaścaiva devāśca satyameva hi menire*
 [3815.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3815) *manyadhve patyurasyaiva cecchriyam*
-[RĀJA-TAR. 4,311.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,311) *evameva naravyāghraḥ paralīḍhaṃ* (так [ed. Bomb.]) *na manyate* так преим. «пренебрегать»
+[RĀJA-TAR. 4,311.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,311) *evameva naravyāghraḥ paralīḍhaṃ* (так [Бомбейская ред.]) *na manyate* так преим. «пренебрегать»
 [R. 2,61,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,16) *śaṭhastu samayaṃ prāpya nopakāraṃ hi manyate* «ни во что не ставит»
 [Spr. 5051.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5051)
   <sub>attested</sub>
@@ -120,7 +120,7 @@
 [5,22,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.022.html#rv05.022.03) *nū cinnu te manyamānasya dasmodaśnuvanti mahimānam* wenn du es darauf absiehst
 [7,22,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.022.html#rv07.022.08) *adevena manasā yo riṣaṇyati śāsā- mugro manyamāno jighāṃsati* eum vindex acerrimus animadvertens interimit
 [2,23,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.12) *(aśvān) yānanyānmanyase rājanbrūhi tānyojayāmi te*
-[MBH. 3,2788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2788) *yauvarājyamamanyata*
+[MBH. 3,2788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2788) = [≈Вульг. 3.71.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S017) = ≈крит. 03,69.15a *yauvarājyamamanyata*
 [R. 2,1,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,1,26) mit gen. begehren: *suvitasya manāmahe (vanāmahe*
 [SV.]) [ṚV. 9,41,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.041.html#rv09.041.02)
 
@@ -132,7 +132,7 @@
 [5,22,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.022.html#rv05.022.03) *nū cinnu te manyamānasya dasmodaśnuvanti mahimānam* «если ты нацелен на это»
 [7,22,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.022.html#rv07.022.08) *adevena manasā yo riṣaṇyati śāsā- mugro manyamāno jighāṃsati* «eum vindex acerrimus animadvertens interimit»
 [2,23,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.12) *(aśvān) yānanyānmanyase rājanbrūhi tānyojayāmi te*
-[MBH. 3,2788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2788) *yauvarājyamamanyata*
+[MBH. 3,2788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2788) = [≈Вульг. 3.71.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S017) = ≈крит. 03,69.15a *yauvarājyamamanyata*
 [R. 2,1,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,1,26) mit gen. домогаться, алкать: *suvitasya manāmahe (vanāmahe*
 [SV.]) [ṚV. 9,41,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.041.html#rv09.041.02)
   <sub>attested</sub>
@@ -188,10 +188,10 @@
   <sub>attested</sub>
 
 **9)** — 9) zudenken so v. a. schenken, verehren: *yaḥ sahasraṃ sahasrāṇāṃ kanyā hemavibhūṣitāḥ — brāhmaṇebhyo hyamanyata*
-[MBH. 7,2250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2250) [2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2265) [2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2317)
+[MBH. 7,2250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2250) = [≈Вульг. 7.60.2](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A060_S002) = ≈крит. 12,29.58a [2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2265) = [≈Вульг. 7.61.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A061_S005) = крит. — [2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2317) = [≈Вульг. 7.64.15](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A064_S015) = ≈крит. 03,93.25a
 
 - **RU:** 9) мысленно предназначать, а именно преим. дарить, подносить в дар: *yaḥ sahasraṃ sahasrāṇāṃ kanyā hemavibhūṣitāḥ — brāhmaṇebhyo hyamanyata*
-[MBH. 7,2250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2250) [2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2265) [2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2317)
+[MBH. 7,2250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2250) = [≈Вульг. 7.60.2](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A060_S002) = ≈крит. 12,29.58a [2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2265) = [≈Вульг. 7.61.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A061_S005) = крит. — [2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2317) = [≈Вульг. 7.64.15](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A064_S015) = ≈крит. 03,93.25a
   <sub>attested</sub>
 
 **10)** — 10) partic. *mata*
@@ -211,8 +211,8 @@
 [MBH. 5,6084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6084) *yajñagoptā sa me mataḥ*
 [R. 1,70,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,4) *ahiṃsyastava cenmato 'ham*
 [RAGH. 2,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,57) [14,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,40) Kār. zu [P. 5,2,45.](https://ashtadhyayi.com/sutraani/5/2/45) *tasmānme naiva doṣo matastava*
-[MBH. 13,40.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.40) *na cānyadatrauṣadhamasti me matam* so v. a. nach meiner Meinung giebt es nicht
-[4,380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.380) mit *śreṇi* u. s. w. (als praed.) componirt gaṇa *kṛtādi* zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
+[MBH. 13,40.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.40) = [≈Вульг. 13.1.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S040) = ≈крит. 13,1.33a *na cānyadatrauṣadhamasti me matam* so v. a. nach meiner Meinung giebt es nicht
+[4,380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.380) = [≈Вульг. 4.14.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A014_S008) = ≈крит. 04,13.7c mit *śreṇi* u. s. w. (als praed.) componirt gaṇa *kṛtādi* zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 davor ein fem.-suff. verkürzt
 [6,3,43. fgg.](https://ashtadhyayi.com/sutraani/6/3/43) *brāhmaṇimatā* Schol. *bahu˚* hoch gehalten, geachtet; s. u. *bahu* Belege.
 
@@ -228,8 +228,8 @@ davor ein fem.-suff. verkürzt
 [MBH. 5,6084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6084) *yajñagoptā sa me mataḥ*
 [R. 1,70,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,4) *ahiṃsyastava cenmato 'ham*
 [RAGH. 2,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,57) [14,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,40) Кар. к [P. 5,2,45.](https://ashtadhyayi.com/sutraani/5/2/45) *tasmānme naiva doṣo matastava*
-[MBH. 13,40.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.40) *na cānyadatrauṣadhamasti me matam* так преим. «по моему мнению, не существует»
-[4,380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.380) mit *śreṇi* и т.д. (als praed.) componirt гана *kṛtādi* zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
+[MBH. 13,40.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.40) = [≈Вульг. 13.1.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S040) = ≈крит. 13,1.33a *na cānyadatrauṣadhamasti me matam* так преим. «по моему мнению, не существует»
+[4,380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.380) = [≈Вульг. 4.14.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A014_S008) = ≈крит. 04,13.7c mit *śreṇi* и т.д. (als praed.) componirt гана *kṛtādi* zu [P. 2,1,59.](https://ashtadhyayi.com/sutraani/2/1/59)
 davor ein fem.-suff. verkürzt
 [6,3,43. fgg.](https://ashtadhyayi.com/sutraani/6/3/43) *brāhmaṇimatā* схол. *bahu˚* «высоко чтимый, уважаемый»; см. *bahu* Belege.
   <sub>attested</sub>

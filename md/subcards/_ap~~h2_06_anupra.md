@@ -6,6 +6,6 @@
 **1)** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* wohl alle Flüssigkeiten sind schliesslich Wasser
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
 
-- **RU:** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* «по всей видимости, все жидкости в конечном счёте суть вода»
+- **RU:** — *anupra*, *sarvarasā anuprāptāḥ pānīyam* по всей видимости, все жидкости в конечном счете суть вода
 [NIR. 1,16.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,16)
   <sub>attested</sub>

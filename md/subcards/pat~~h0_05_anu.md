@@ -9,7 +9,7 @@
 [BHĀG. P. 3,11,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,5) nachfliegen, hinterher laufen, — gehen. nachfolgen, nachgehen (eig. und übertr.): *muhuranupatati* (loc.) *syandane*
 [ŚĀK. 7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
 [KATHĀS. 39,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,136) *dharmamanvapataddrutam*
-[7,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,89) [28,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,57) [MBH. 7,1742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1742) [12,10449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10449) *cittaspanditakalpanāmanupatan*
+[7,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,89) [28,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,57) [MBH. 7,1742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1742) = [≈Вульг. 7.41.26](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A041_S026) = ≈крит. 07,40.23c [12,10449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10449) = [≈Вульг. 12.288.3](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A288_S003) = ≈крит. 12,277.3a *cittaspanditakalpanāmanupatan*
 [PRAB. 16,16.] *(na jātu) anupatanti vinā te prāṇināṃ śucaḥ*
 [BHĀG. P. 1,17,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,8) [5,1,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,37) *anupātam* absol.: *gṛhānupātam* (vgl. u. *anupra*) von Haus zu Haus gehend, *latānupātam* bei
 [GOLD.] Wörterb. u. *anupātam* .
@@ -17,12 +17,12 @@
 - **RU:** — *anu*
  1) прилетать к (acc.)
 [ĀŚV. GṚHY. 3,7.] *khamevānupatan* летя по воздуху
-[BHĀG. P. 3,11,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,5) лететь вслед, бежать следом, идти следом; следовать за, сопровождать (букв. und перен.): *muhuranupatati* (loc.) *syandane*
+[BHĀG. P. 3,11,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,5) лететь вслед, бежать следом, идти следом; следовать за, сопровождать (букв. и перен.): *muhuranupatati* (loc.) *syandane*
 [ŚĀK. 7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7)
 [KATHĀS. 39,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,136) *dharmamanvapataddrutam*
-[7,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,89) [28,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,57) [MBH. 7,1742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1742) [12,10449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10449) *cittaspanditakalpanāmanupatan*
+[7,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,89) [28,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,57) [MBH. 7,1742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1742) = [≈Вульг. 7.41.26](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A041_S026) = ≈крит. 07,40.23c [12,10449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10449) = [≈Вульг. 12.288.3](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A288_S003) = ≈крит. 12,277.3a *cittaspanditakalpanāmanupatan*
 [PRAB. 16,16.] *(na jātu) anupatanti vinā te prāṇināṃ śucaḥ*
-[BHĀG. P. 1,17,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,8) [5,1,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,37) *anupātam* absol.: *gṛhānupātam* (ср. u. *anupra*) переходя из дома в дом, *latānupātam* bei
+[BHĀG. P. 1,17,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,8) [5,1,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,37) *anupātam* absol.: *gṛhānupātam* (ср. u. *anupra*) переходя из дома в дом, *latānupātam* у
 [GOLD.] словарь u. *anupātam* .
   <sub>attested</sub>
 

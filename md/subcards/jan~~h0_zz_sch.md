@@ -3,9 +3,9 @@
 `jan~~h0_zz_sch`
 
 
-**jajānat)** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.]
+**jajānat)** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Вульг. 8.2.9](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A002_S009) = ≈крит. 08,1.33a
 
-- **RU:** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān жил снова, ожил, [MBh. 8,33,31.]
+- **RU:** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān жил снова, ожил, [MBh. 8,33,31.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Вульг. 8.2.9](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A002_S009) = ≈крит. 08,1.33a
   <sub>attested</sub>
 
 **ava)** — Mit ava, ˚jāta = apajāta, mißraten, [Divyāvad. 2,13.]
@@ -35,5 +35,5 @@
 
 **parivi)** — Mit parivi in der Fortpflanzung übertreffen, mit Akk. [Maitr. S. 2,5,1] (46,15).
 
-- **RU:** — С parivi превосходить в деторождении, с Akk. [Maitr. S. 2,5,1] (46,15).
+- **RU:** — С parivi превосходить в деторождении, с Acc. [Maitr. S. 2,5,1] (46,15).
   <sub>attested</sub>

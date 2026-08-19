@@ -7,5 +7,5 @@
 [LIA. II, Anh. VIII.] Wohl fehlerhaft für *˚ratha* .
 
 - **RU:** *manorata* _m._ имя собств. одного буддийского патриарха
-[LIA. II, Anh. VIII.] Вероятно, ошибочно вместо *˚ratha* .
+[LIA. II, Anh. VIII.] Вероятно, ошибочно вм. *˚ratha* .
   <sub>lexicographic</sub>

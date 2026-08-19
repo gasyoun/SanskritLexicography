@@ -41,7 +41,7 @@
 [VIKR. 30.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?30)
 [ŚRUT. 29.] *etān — yathā drāgananyasadṛśānvidadhāsi tathā kāryam*
 [PAÑCAT. 4,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?4,25) *putraṃ śayyāyāṃ susthitaṃ vidhāya*
-[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22. 185,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184)
+[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) [BENF. Chr. 185,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185)
 
 - **RU:** — 7) делать чем-либо, reddere; с acc. объекта и предиката: *pravīṇaḥ preṣaṇādhyakṣo dharmādhyakṣo vidhīyate*
 [CĀṆ. 102. fg.] *tām . gāndharvavidhinā guptaṃ bhāryāṃ vyadhita*
@@ -52,18 +52,18 @@
 [VIKR. 30.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?30)
 [ŚRUT. 29.] *etān — yathā drāgananyasadṛśānvidadhāsi tathā kāryam*
 [PAÑCAT. 4,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?4,25) *putraṃ śayyāyāṃ susthitaṃ vidhāya*
-[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22. 185,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184)
+[238,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,16) [KATHĀS. 4,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,48) [5,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,82) [6,167.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,167) [13,196.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,196) [VID. 59.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?59) [Z. d. d. m. G. 14,574,9.] [RĀJA-TAR. 1,108.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,108) [121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,121) [3,93.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,93) [5,83.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,83) [169.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,169) [230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,230) [385.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,385) [BHĀG. P. 1,4,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,19) [DAŚAK.] in [BENF. Chr. 184,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?184) [BENF. Chr. 185,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185)
   <sub>attested</sub>
 
 **8)** — 8) sich Etwas angelegen sein lassen: *tasmādbalaṃ ca koṣaśca* (so ist zu lesen) *nītiścāpi *
 
 * vidhīyatām . yathā kālodaye prāpte samyaktaiḥ saṃdadhāmahe ..*
-[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964)
+[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964) = [≈Вульг. 4.29.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A029_S008) = ≈крит. 04,28.8a
 
 - **RU:** — 8) усердно заниматься чем-либо, озаботиться чем-либо: *tasmādbalaṃ ca koṣaśca* (so ist zu lesen) *nītiścāpi *
 
 * vidhīyatām . yathā kālodaye prāpte samyaktaiḥ saṃdadhāmahe ..*
-[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964)
+[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964) = [≈Вульг. 4.29.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A029_S008) = ≈крит. 04,28.8a
   <sub>attested</sub>
 
 **9)** — 9) legen auf: *vidhāya — bhāraṃ yaugaṃdharāyaṇe*
@@ -90,10 +90,10 @@
   <sub>attested</sub>
 
 **10)** — 10) ablegen: *yo 'smānvidadhato (nidadhato?) draṣṭā bhavecchastrāṇi*
-[MBH. 4,155.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155)
+[MBH. 4,155.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S014) = ≈крит. 04,5.13a
 
 - **RU:** — 10) откладывать, снимать с себя: *yo 'smānvidadhato (nidadhato?) draṣṭā bhavecchastrāṇi*
-[MBH. 4,155.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155)
+[MBH. 4,155.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S014) = ≈крит. 04,5.13a
   <sub>attested</sub>
 
 **11)** — 11) abordnen, absenden: *cārān*
@@ -114,12 +114,12 @@
 
 **13)** — 13) *vihita* versehen mit, in Besitz von: *annapānaiḥ suvihitāḥ*
 [R. 1,13,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,16) *sarvakāmaiḥ suvihitā*
-[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl mit Allem reichlich versehen
+[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S018) = ≈крит. 03,66.16c *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl mit Allem reichlich versehen
 [R. 1,69,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,2)
 
 - **RU:** — 13) *vihita* снабженный чем-либо, обладающий: *annapānaiḥ suvihitāḥ*
 [R. 1,13,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,16) *sarvakāmaiḥ suvihitā*
-[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделенный всем
+[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S018) = ≈крит. 03,66.16c *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделенный всем
 [R. 1,69,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,2)
   <sub>attested</sub>
 
@@ -156,22 +156,22 @@
   <sub>attested</sub>
 
 **des-3)** — 3) beabsichtigen zu vollbringen u. s. w., beabsichtigen: *so 'haṃ naivākṛtaṃ pūrvaṃ careyaṃ vidhitsamānaḥ kimu tatra sādhu*
-[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
+[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) = [≈Вульг. 1.92.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A092_S013) = ≈крит. 01,87.12a *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
 [HARIV. 1311.](https://sanskrit-lexicon-scans.github.io/hariv?1311) *vairasyāntaṃ vidhitsan*
 [6460.](https://sanskrit-lexicon-scans.github.io/hariv?6460) *bhagavāṃstadvidhitsati*
 [BHĀG. P. 3,16,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,35) *vidhitsita* _n._ Absicht
 [1,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,16) *vidhitsamāna* bestimmte Absichten habend, bestimmte Zwecke verfolgend
-[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) *ka upāyaṃ vidhitset* so v. a. wer sollte gar schon an ein Mittel denken?
+[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) = [≈Вульг. 3.212.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A212_S006) = ≈крит. 03,203.6c *ka upāyaṃ vidhitset* so v. a. wer sollte gar schon an ein Mittel denken?
 [BHĀG. P. 4,6,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,7) *ātmānamapratidvandvamekarājaṃ vyadhitsata* er dachte daran sich zum Alleinherrscher zu machen
 [7,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,1)
 
 - **RU:** — 3) намереваться совершить и т.д., иметь намерение: *so 'haṃ naivākṛtaṃ pūrvaṃ careyaṃ vidhitsamānaḥ kimu tatra sādhu*
-[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
+[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) = [≈Вульг. 1.92.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A092_S013) = ≈крит. 01,87.12a *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
 [HARIV. 1311.](https://sanskrit-lexicon-scans.github.io/hariv?1311) *vairasyāntaṃ vidhitsan*
 [6460.](https://sanskrit-lexicon-scans.github.io/hariv?6460) *bhagavāṃstadvidhitsati*
 [BHĀG. P. 3,16,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,35) *vidhitsita* _n._ намерение
 [1,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,16) *vidhitsamāna* имеющий определенные намерения, преследующий определенные цели
-[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) *ka upāyaṃ vidhitset* so преим. кто бы стал думать уже и о средстве?
+[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) = [≈Вульг. 3.212.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A212_S006) = ≈крит. 03,203.6c *ka upāyaṃ vidhitset* so преим. кто бы стал думать уже и о средстве?
 [BHĀG. P. 4,6,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,7) *ātmānamapratidvandvamekarājaṃ vyadhitsata* он думал о том, чтобы стать единовластным правителем
 [7,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,1)
   <sub>attested</sub>

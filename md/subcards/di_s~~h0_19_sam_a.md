@@ -7,13 +7,13 @@
  1) anweisen, zuweisen, zutheilen: *ekameva tu śūdrasya prabhuḥ karma samādiśat*
 [M. 1,91.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,91) *tasmai rājyaṃ samādiśya*
 [R. 1,43,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,43,3)
-[MBH. 4,1024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1024)
+[MBH. 4,1024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1024) = [≈Вульг. 4.31.25](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S025) = ≈крит. 04,30.22e
 
 - **RU:** — *samā*
  1) указывать, назначать, распределять: *ekameva tu śūdrasya prabhuḥ karma samādiśat*
 [M. 1,91.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,91) *tasmai rājyaṃ samādiśya*
 [R. 1,43,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,43,3)
-[MBH. 4,1024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1024)
+[MBH. 4,1024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1024) = [≈Вульг. 4.31.25](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S025) = ≈крит. 04,30.22e
   <sub>attested</sub>
 
 **2)** — 2) aussagen, verkünden, zu wissen thun, lehren: *rājñe samādiśat*
@@ -34,7 +34,7 @@
   <sub>attested</sub>
 
 **3)** — 3) bestimmen, bezeichnen, nennen: *ekadeśaṃ ca śākhāyāḥ samādiṣṭām*
-[MBH. 3,2829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2829) *samādiśantu *
+[MBH. 3,2829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2829) = [≈Вульг. 3.72.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S022) = ≈крит. 03,70.20a *samādiśantu *
 
 * niyamaṃ prāyaścittaṃ yathā bhavet*
 [R. 1,8,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,14) *tasminsudhanvannahani bhagavānyatsamādiśat*
@@ -46,7 +46,7 @@
 [MĀLAV. 69,14.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?69,14)
 
 - **RU:** — 3) определять, обозначать, называть: *ekadeśaṃ ca śākhāyāḥ samādiṣṭām*
-[MBH. 3,2829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2829) *samādiśantu *
+[MBH. 3,2829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2829) = [≈Вульг. 3.72.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S022) = ≈крит. 03,70.20a *samādiśantu *
 
 * niyamaṃ prāyaścittaṃ yathā bhavet*
 [R. 1,8,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,14) *tasminsudhanvannahani bhagavānyatsamādiśat*
@@ -61,14 +61,14 @@
 **4)** — 4) Jmd anweisen, einen Befehl ertheilen, auffordern, beauftragen, abordnen: *brāhmaṇaṃ rājani* (Soma) *samādiśya*
 [LĀṬY. 5,6,5. 8,7.] *nāpitaṃ samādiśati akṣaṇvanvapa*
 [KAUŚ. 54. 87.]
-[MBH. 1,7663.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7663)
+[MBH. 1,7663.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7663) = [≈Вульг. 1.208.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A208_S001) = ≈крит. 01,200.1a
 [N. 17,37.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,37)
 [ARJ. 3,10.]
 [R. 1,70,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,5) [3,49,57.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,57) [50,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,1) [61,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,61,1)
 [SŪRYAS. 1,7.]
 [VID. 196.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?196) [200.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?200)
 [KATHĀS. 4,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,104) *śaravrātaiḥ sutīkṣṇāgraiḥ samādiṣṭaiḥ khagairiva*
-[MBH. 4,1714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1714) *tato mahat — balaṃ samādekṣyati*
+[MBH. 4,1714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1714) = [≈Вульг. 4.55.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A055_S018) = крит. — *tato mahat — balaṃ samādekṣyati*
 [R. 5,37,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,38) [39,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,39,32) *samādideśendrajitaṃ raṇāya*
 [43,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,43,1) *mahīpatīnāṃ pṛthagarhaṇārthaṃ samādideśādhikṛtān*
 [RAGH. 7,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,26)
@@ -81,14 +81,14 @@
 - **RU:** — 4) давать кому-л. указание, отдавать приказ, призывать, поручать, посылать: *brāhmaṇaṃ rājani* (Сома) *samādiśya*
 [LĀṬY. 5,6,5. 8,7.] *nāpitaṃ samādiśati akṣaṇvanvapa*
 [KAUŚ. 54. 87.]
-[MBH. 1,7663.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7663)
+[MBH. 1,7663.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7663) = [≈Вульг. 1.208.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A208_S001) = ≈крит. 01,200.1a
 [N. 17,37.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,37)
 [ARJ. 3,10.]
 [R. 1,70,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,5) [3,49,57.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,57) [50,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,1) [61,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,61,1)
 [SŪRYAS. 1,7.]
 [VID. 196.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?196) [200.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?200)
 [KATHĀS. 4,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,104) *śaravrātaiḥ sutīkṣṇāgraiḥ samādiṣṭaiḥ khagairiva*
-[MBH. 4,1714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1714) *tato mahat — balaṃ samādekṣyati*
+[MBH. 4,1714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1714) = [≈Вульг. 4.55.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A055_S018) = крит. — *tato mahat — balaṃ samādekṣyati*
 [R. 5,37,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,38) [39,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,39,32) *samādideśendrajitaṃ raṇāya*
 [43,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,43,1) *mahīpatīnāṃ pṛthagarhaṇārthaṃ samādideśādhikṛtān*
 [RAGH. 7,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,26)

@@ -20,7 +20,7 @@
 
 **3)** — 3〉 anordnen, anbefehlen [R. ed. Bomb. 2,82,22](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,82,22). Mit einem Infin. heissen.
 
-- **RU:** — 3〉 распоряжаться, приказывать [R. ed. Bomb. 2,82,22](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,82,22). С Infin. велеть.
+- **RU:** — 3〉 распоряжаться, приказывать [R. Бомбейская ред. 2,82,22](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,82,22). С Infin. велеть.
   <sub>attested</sub>
 
 **4)** — 4〉 Partic. *diṣṭa*
@@ -194,7 +194,7 @@
 
 **vi-3)** — 3〉 Jmd (Dat.) Etwas (Acc.) anweisen, zuweisen. Statt. des Dat. auch Instr. [BHĀG. P.]
 
-- **RU:** — 3〉 кому-либо (Dat.) что-либо (Acc.) указывать, назначать. Вм. Dat. также Instr. [BHĀG. P.]
+- **RU:** — 3〉 кому-либо (Dat.) что-либо (Acc.) указывать, назначать. Вм. Dat. также Ins. [BHĀG. P.]
   <sub>attested</sub>
 
 **vi-4)** — 4〉 Etwas anzeigen, mittheilen, verkünden, lehren.
@@ -413,7 +413,7 @@
 
 **pra-4)** — 4〉 bezeichnen als, unter Etwas Etwas meinen; mit doppeltem Acc. *uddiṣṭa* bei den Lexicographen gemeint in der Bedeutung von (Loc.).
 
-- **RU:** — 4〉 обозначать как, подразумевать под чем-либо что-либо; с двойным Acc. *uddiṣṭa* у лексикографов подразумеваемый в знач. (Loc.).
+- **RU:** — 4〉 обозначать как, подразумевать под чем-либо что-либо; с двойным Acc. *uddiṣṭa* у лексикографов подразумеваемый в значении (Loc.).
   <sub>attested</sub>
 
 **pra-5)** — 5〉 von Jmd (Acc.) aussagen, verkünden, vorhersagen.
@@ -455,5 +455,5 @@
 
 **sam-pra-3)** — 3〉 sich in eine Erörterung einlassen mit (Instr.) [AIT. ĀR. 469,14].
 
-- **RU:** — 3〉 вступать в обсуждение с (Instr.) [AIT. ĀR. 469,14].
+- **RU:** — 3〉 вступать в обсуждение с (Ins.) [AIT. ĀR. 469,14].
   <sub>attested</sub>

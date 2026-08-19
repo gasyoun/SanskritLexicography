@@ -12,7 +12,7 @@
 
 **6))** 6) lenken und
 
-- **RU:** 6) направлять, управлять und
+- **RU:** 6) направлять, управлять и
   <sub>attested</sub>
 
 **7))** 7) unterrichten, unterweisen

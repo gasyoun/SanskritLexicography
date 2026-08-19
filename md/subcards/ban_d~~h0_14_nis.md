@@ -17,13 +17,13 @@
 **2)** — 2) sich an Jmd klammern, heftig in Jmd dringen,
 
 Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
-[MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) *bhūyo bhūyaśca nirbaddhayā tvayā*
+[MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) = [≈Вульг. 5.124.52](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A124_S052) = ≈крит. 05,122.51a *bhūyo bhūyaśca nirbaddhayā tvayā*
 [DAŚAK.] in [BENF. Chr. 193,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
 - **RU:** — 2) цепляться за кого-либо, настойчиво обращаться к кому-либо,
 
 сильно досаждать кому-либо: *nirbadhnatātimātraṃ ca gālavena*
-[MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) *bhūyo bhūyaśca nirbaddhayā tvayā*
+[MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) = [≈Вульг. 5.124.52](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A124_S052) = ≈крит. 05,122.51a *bhūyo bhūyaśca nirbaddhayā tvayā*
 [DAŚAK.] в [BENF. Chr. 193,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
   <sub>attested</sub>
 

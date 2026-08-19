@@ -30,7 +30,7 @@
 
 **7b〉)** — b〉 leichtgemacht, gleichkommend, gleich lang, — breit, — hoch, — weit, entsprechend, angemessen; aussehend wie, geltend für; die Ergänzung im Instr. (ausnahmsweise Gen.) oder im Comp. vorangehen.
 
-- **RU:** — b〉 лёгкий, равносильный, равной длины, — ширины, — высоты, — протяжённости, соответствующий, подходящий; имеющий вид как, считающийся за; дополнение в Instr. (в виде исключения Gen.) или в Comp. предшествующем.
+- **RU:** — b〉 легкий, равносильный, равной длины, — ширины, — высоты, — протяженности, соответствующий, подходящий; имеющий вид как, считающийся за; дополнение в Ins. (в виде исключения Gen.) или в Comp. предшествующем.
   <sub>attested</sub>
 
 **7c〉)** — c〉 vielleicht symmetrisch.
@@ -40,7 +40,7 @@
 
 **7d〉)** — d〉 versehen mit, bestehend aus (Instr. oder im Comp. vorangehend).
 
-- **RU:** — d〉 снабжённый, состоящий из (Instr. или в Comp. предшествующем).
+- **RU:** — d〉 снабженный, состоящий из (Ins. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **7e〉)** — e〉 bestimmt zu (im Comp. vorangehend).

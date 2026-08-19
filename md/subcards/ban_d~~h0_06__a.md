@@ -13,19 +13,19 @@
 [ĀŚV. GṚHY. 1,22.]
 [GOBH. 3,4,20.] *pavitrapāśairābaddhaḥ*
 [R. 1,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,19)
-[MBH. 4,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.173) *srajaḥ prahrādasya mūrdhni ābabandha*
+[MBH. 4,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.173) = [≈Вульг. 4.5.32](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S032) = ≈крит. 04,5.28a *srajaḥ prahrādasya mūrdhni ābabandha*
 [HARIV. 13730.](https://sanskrit-lexicon-scans.github.io/hariv?13730) *varma — ābabandha*
-[MBH. 7,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3447)
+[MBH. 7,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3447) = [≈Вульг. 7.94.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A094_S038) = ≈крит. 07,69.38a
 [HARIV. 13165.](https://sanskrit-lexicon-scans.github.io/hariv?13165) [2052.](https://sanskrit-lexicon-scans.github.io/hariv?2052)
 [R. 2,96,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,31) [3,50,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,3)
 [KATHĀS. 13,187.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,187)
 [RĀJA-TAR. 4,587.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,587)
 [CAURAP. 15](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?15) bei [HAEB.] [H. 915.](https://sanskrit-lexicon-scans.github.io/abch2/app1?915) *ābaddhā mānuṣāḥ sarve* in Banden seiend
-[MBH. 10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) *dṛṣṭipāśaurivābaddhau*
+[MBH. 10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) = [≈Вульг. 10.2.2](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U01_A002_S002) = ≈крит. 10,2.2c *dṛṣṭipāśaurivābaddhau*
 [KATHĀS. 34,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,103) *bahumānena cābaddhāḥ*
 [BHĀG. P. 8,9,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,23)
 
-- **RU:** — *ā* «привязывать», мед. (в эпосе также act.) «привязывать себе что-л.»
+- **RU:** — *ā* привязывать, мед. (в эпосе также act.) привязывать себе что-л.
 [AV. 3,9,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.009.html#av03.009.03) [5,28,11.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.11) *yatte devī nirṛtirābabandha dāma*
 [6,63,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.063.html#av06.063.01) *parihastam*
 [81,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.081.html#av03.081.03) *mekhalām*
@@ -35,25 +35,25 @@
 [ĀŚV. GṚHY. 1,22.]
 [GOBH. 3,4,20.] *pavitrapāśairābaddhaḥ*
 [R. 1,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,19)
-[MBH. 4,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.173) *srajaḥ prahrādasya mūrdhni ābabandha*
+[MBH. 4,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.173) = [≈Вульг. 4.5.32](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S032) = ≈крит. 04,5.28a *srajaḥ prahrādasya mūrdhni ābabandha*
 [HARIV. 13730.](https://sanskrit-lexicon-scans.github.io/hariv?13730) *varma — ābabandha*
-[MBH. 7,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3447)
+[MBH. 7,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3447) = [≈Вульг. 7.94.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A094_S038) = ≈крит. 07,69.38a
 [HARIV. 13165.](https://sanskrit-lexicon-scans.github.io/hariv?13165) [2052.](https://sanskrit-lexicon-scans.github.io/hariv?2052)
 [R. 2,96,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,31) [3,50,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,3)
 [KATHĀS. 13,187.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,187)
 [RĀJA-TAR. 4,587.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,587)
-[CAURAP. 15](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?15) при [HAEB.] [H. 915.](https://sanskrit-lexicon-scans.github.io/abch2/app1?915) *ābaddhā mānuṣāḥ sarve* «находящийся в оковах»
-[MBH. 10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) *dṛṣṭipāśaurivābaddhau*
+[CAURAP. 15](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?15) при [HAEB.] [H. 915.](https://sanskrit-lexicon-scans.github.io/abch2/app1?915) *ābaddhā mānuṣāḥ sarve* находящийся в оковах
+[MBH. 10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) = [≈Вульг. 10.2.2](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U01_A002_S002) = ≈крит. 10,2.2c *dṛṣṭipāśaurivābaddhau*
 [KATHĀS. 34,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,103) *bahumānena cābaddhāḥ*
 [BHĀG. P. 8,9,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,23)
   <sub>attested</sub>
 
 **2)** — 2) verbinden, zusammenfügen: *vātābaddhābhavanmeghāḥ* (für *vātābaddhā abhavan)* zusammengeballt
-[MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* die hohlen Hände zusammengefügt habend
+[MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) = [≈Вульг. 3.109.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A109_S009) = ≈крит. 03,108.9a *ābaddhāñjali* die hohlen Hände zusammengefügt habend
 [DAŚAK.] in [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
-- **RU:** — 2) «соединять, связывать вместе»: *vātābaddhābhavanmeghāḥ* (вм. *vātābaddhā abhavan)* «сжатый в кулак»
-[MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) *ābaddhāñjali* «сложивший ладони лодочкой»
+- **RU:** — 2) соединять, связывать вместе: *vātābaddhābhavanmeghāḥ* (вм. *vātābaddhā abhavan)* сжатый в кулак
+[MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) = [≈Вульг. 3.109.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A109_S009) = ≈крит. 03,108.9a *ābaddhāñjali* сложивший ладони лодочкой
 [DAŚAK.] в [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
   <sub>attested</sub>
 
@@ -62,9 +62,9 @@
 * vābadhya vāsasā* so v. a. am Kragen festhalten
 [M. 11,205](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,205); vgl. u. simpl. 3.
 
-- **RU:** — 3) «удерживать, схватить»: *(brāhmaṇam) kaṇṭhe *
+- **RU:** — 3) удерживать, схватить: *(brāhmaṇam) kaṇṭhe *
 
-* vābadhya vāsasā* так преим. «держать за ворот»
+* vābadhya vāsasā* так преим. держать за ворот
 [M. 11,205](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,205); ср. u. simpl. 3.
   <sub>attested</sub>
 
@@ -72,7 +72,7 @@
 [RAGH. 1,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,40) *tadekābaddhamānasā*
 [KATHĀS. 15,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,85)
 
-- **RU:** — 4) «устремлять, направлять» (взор, дух): *syandanābaddhadṛṣṭi*
+- **RU:** — 4) устремлять, направлять (взор, дух): *syandanābaddhadṛṣṭi*
 [RAGH. 1,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,40) *tadekābaddhamānasā*
 [KATHĀS. 15,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,85)
   <sub>attested</sub>
@@ -85,11 +85,11 @@
 [KIR. 5,33.] *ābaddhasāraṇau (karau)*
 [KATHĀS. 6,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,57)
 
-- **RU:** — 5) «производить, порождать, образовывать; обнаруживать в себе, выражать, проявлять»: *(tamisram) ābaddharekhamabhito ravimañjarībhiḥ*
-[GĪT. 11,12.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,12) *ābaddhamāla* (одновременно «с привязанными гирляндами»)
+- **RU:** — 5) производить, порождать, образовывать; обнаруживать в себе, выражать, проявлять: *(tamisram) ābaddharekhamabhito ravimañjarībhiḥ*
+[GĪT. 11,12.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,12) *ābaddhamāla* (одновременно с привязанными гирляндами)
 [MEGH. 9.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?9) *ābaddhamaṇḍalaṃ nāgam*
 [SOM. NALA 106.] *ābaddhabhīmabhrukuṭīvibhaṅga*
-[BHAṬṬ. 3,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,30) *ābaddhavepathu* так преим. «дрожащий»
+[BHAṬṬ. 3,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,30) *ābaddhavepathu* так преим. дрожащий
 [KIR. 5,33.] *ābaddhasāraṇau (karau)*
 [KATHĀS. 6,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,57)
   <sub>attested</sub>

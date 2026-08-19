@@ -20,7 +20,7 @@
 
 **mit_T12_1)** — Mit *abhisam* 1〉 hinfliegen, hineilen zu, stürzen auf (Acc.) — 2〉 einherfliegen.
 
-- **RU:** — Mit *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперёд.
+- **RU:** — С *abhisam* 1〉 лететь к, спешить к, бросаться на (Acc.) — 2〉 лететь вперед.
   <sub>attested</sub>
 
 **1_pat_mit_T15_IV)** **1.** √*pat* mit *ati* IV. *˚patya* Absol. mit Acc. so v. a. sich nicht kümmernd um [JĀTAKAM. 2,26]. [28,13].
@@ -30,22 +30,22 @@
 
 **mit_T22_IV)** — Mit *samā* IV. *˚patita* unerwartet zum Vorschein gekommen, — sich eingestellt habend [JĀTAKAM. 26].
 
-- **RU:** — Mit *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26].
+- **RU:** — С *samā* IV. *˚patita* неожиданно появившийся, — объявившийся [JĀTAKAM. 26].
   <sub>attested</sub>
 
 **mit_T25_5)** — Mit *abhyud* Caus. 5.
 
-- **RU:** — Mit *abhyud* Caus. 5.
+- **RU:** — С *abhyud* Caus. 5.
   <sub>attested</sub>
 
 **mit_T27)** — Mit *abhini* herabfallen auf (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. fallenlassen, schleudern (Worte) [JĀTAKAM. 21,18].
 
-- **RU:** — Mit *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18].
+- **RU:** — С *abhini* падать на (Acc.) [ĀPAST. GṚHY. 23,8]. — Caus. ронять, бросать (слова) [JĀTAKAM. 21,18].
   <sub>attested</sub>
 
 **mit_T32_5)** — Mit *abhisam* 5.
 
-- **RU:** — Mit *abhisam* 5.
+- **RU:** — С *abhisam* 5.
   <sub>attested</sub>
 
 **1_pat_mit_T34)** **1.** √*pat* mit *vyati* über Etwas hinauskommen [HARAVIJAYA 6,30].

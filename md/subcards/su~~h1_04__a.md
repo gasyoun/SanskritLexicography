@@ -33,5 +33,5 @@
 
 **ā+su (addendum))** — Vgl. 1. *āsava, āsavitar* und 1. *āsuti* .
 
-- **RU:** — ср. 1. *āsava, āsavitar* und 1. *āsuti* .
+- **RU:** — ср. 1. *āsava, āsavitar* и 1. *āsuti* .
   <sub>attested</sub>

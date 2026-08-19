@@ -9,5 +9,5 @@
 
 - **RU:** — *apa*
  9) *apanīta* _n._ также
-[R. ed. Bomb. 6,95,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?6,95,38)
+[R. Бомбейская ред. 6,95,38.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?6,95,38)
   <sub>attested</sub>

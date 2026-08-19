@@ -65,7 +65,7 @@
 [ŚAT. BR. 4,1,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,4,3) — [AV. 3,1,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.04) ist (vgl.
 [ṚV. 3,30,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.06)) zu verstehen *pra sū te* .
 
-- **RU:** — partic. *prasūta* побуждённый, посланный, призванный; которому дозволено, кому разрешено
+- **RU:** — partic. *prasūta* побужденный, посланный, призванный; которому дозволено, кому разрешено
 [ṚV. 1,113,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.01) *arṣantvāpastvayeha prasūtāḥ*
 [3,30,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.09) *dūta*
 [54,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.054.html#rv03.054.19) *janāḥ sūryeṇa prasūtāḥ*

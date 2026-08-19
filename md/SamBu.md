@@ -17,9 +17,9 @@ _PWG article — 2 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 - **RU:** мф. ведущий ко благу, благодатный, спасительный. Graßmann 1873 (1996) : 1381
   <sub>lexicographic</sub>
 
-**NWS: Geldner 1907)** heilsam, zuträglich, wohltuend, zusagend. ṚV 10,186,1. Geldner 1907 : 178
+**NWS: Geldner 1907)** heilsam, zuträglich, wohltuend, zusagend. [ṚV 10,186,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.186.html#rv10.186.01). Geldner 1907 : 178
 
-- **RU:** целительный, полезный, приятный, желанный. ṚV 10,186,1. Geldner 1907 : 178
+- **RU:** целительный, полезный, приятный, желанный. [ṚV 10,186,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.186.html#rv10.186.01). Geldner 1907 : 178
   <sub>attested</sub>
 
 **NWS: MW)** 'Śiva's wife', N of Durgā. Kāvya(MW). MW : 1055 (s.v. śambhú )

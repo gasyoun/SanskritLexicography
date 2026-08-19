@@ -5,11 +5,11 @@
 
 **1)** — *ni*
  1) eingehen, sich anschmiegen: *yudhyamānā śaraiḥ — dhvajinī nyagāt . anyo'nyam*
-[MBH. 6,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1886)
+[MBH. 6,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1886) = [≈Вульг. 6.48.24](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A048_S024) = крит. —
 
 - **RU:** — *ni*
  1) войти внутрь, плотно прильнуть, прилечь: *yudhyamānā śaraiḥ — dhvajinī nyagāt . anyo'nyam*
-[MBH. 6,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1886)
+[MBH. 6,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1886) = [≈Вульг. 6.48.24](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A048_S024) = крит. —
   <sub>attested</sub>
 
 **2)** — 2) gerathen in: *eno mā ni gām*

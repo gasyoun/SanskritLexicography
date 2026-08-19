@@ -4,8 +4,8 @@
 
 
 **1))** — *pratisam* zusammentreffen: *ācakṣe 'haṃ mānuṣebhyo devebhyaḥ pratisaṃcaran*
-[MBH. 12,11022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11022)
+[MBH. 12,11022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11022) = [≈Вульг. 12.299.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A299_S034) = ≈крит. 12,288.34a
 
 - **RU:** — *pratisam* zusammentreffen: *ācakṣe 'haṃ mānuṣebhyo devebhyaḥ pratisaṃcaran*
-[MBH. 12,11022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11022)
+[MBH. 12,11022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11022) = [≈Вульг. 12.299.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A299_S034) = ≈крит. 12,288.34a
   <sub>attested</sub>

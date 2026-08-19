@@ -3,7 +3,7 @@
 `a_sakta~~h0_zz_sch`
 
 
-**SCH (Nachtrag))** aśakta , Nom. abstr. ˚tva n., [MBh. 5,163,4.]
+**SCH (Nachtrag))** aśakta , Nom. abstr. ˚tva n., [MBh. 5,163,4.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A007_S033) = ≈крит. 05,7.30a
 
-- **RU:** aśakta, отглаг. имя Nom. abstr. ˚tva n., [MBh. 5,163,4.]
+- **RU:** aśakta, отглаг. имя Nom. abstr. ˚tva n., [MBh. 5,163,4.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A007_S033) = ≈крит. 05,7.30a
   <sub>lexicographic</sub>

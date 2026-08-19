@@ -15,29 +15,29 @@
   <sub>attested</sub>
 
 **2)** — 2) für Jmd leben, sich ihm ganz hingeben, ihm zugethan sein: *trayodaśemā hi samāḥ sadā vayaṃ tvāmanvajīviṣma dhanaṃjayāśayā*
-[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) *jīvantāvanujīvāmi bhartavyau tau mameti ca*
+[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) = [≈Вульг. 8.68.13](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A068_S013) = ≈крит. 08,48.9a *jīvantāvanujīvāmi bhartavyau tau mameti ca*
 [SĀV. 5,94.] *ye ca tvāmanujīvanti nāhaṃ teṣāṃ na te mama*
 [R. 2,42,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,7)
 
 - **RU:** 2) жить ради кого-л., всецело отдаваться кому-л., быть преданным ему: *trayodaśemā hi samāḥ sadā vayaṃ tvāmanvajīviṣma dhanaṃjayāśayā*
-[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) *jīvantāvanujīvāmi bhartavyau tau mameti ca*
+[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) = [≈Вульг. 8.68.13](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A068_S013) = ≈крит. 08,48.9a *jīvantāvanujīvāmi bhartavyau tau mameti ca*
 [SĀV. 5,94.] *ye ca tvāmanujīvanti nāhaṃ teṣāṃ na te mama*
 [R. 2,42,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,7)
   <sub>attested</sub>
 
 **3)** — 3) leben von, bestehen durch, erhalten werden von; mit dem acc.: *jīvantaṃ tvānujīvantu prajāḥ sarvā yudhiṣṭhira .. parjanyamiva bhūtāni mahādrumamivāṇḍajāḥ . kuveramiva rakṣāṃsi śatakratumivāmarāḥ .. jñātayastvānujīvantu suhṛdaśca* (vgl. *anu tvāṃ tāta jīvantu brāhmaṇāḥ suhṛdastathā . parjanyamiva bhūtāni devā iva śatakratum ..*
-[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
+[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) = [≈Вульг. 13.61.37](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S037) = ≈крит. 13,60.24a [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) = [≈Вульг. 14.1.17](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A001_S017) = ≈крит. 14,1.16a [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
 
 - **RU:** 3) жить чем-л., существовать благодаря чему-л., поддерживаться чем-л.; с acc.: *jīvantaṃ tvānujīvantu prajāḥ sarvā yudhiṣṭhira .. parjanyamiva bhūtāni mahādrumamivāṇḍajāḥ . kuveramiva rakṣāṃsi śatakratumivāmarāḥ .. jñātayastvānujīvantu suhṛdaśca* (ср. *anu tvāṃ tāta jīvantu brāhmaṇāḥ suhṛdastathā . parjanyamiva bhūtāni devā iva śatakratum ..*
-[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
+[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) = [≈Вульг. 13.61.37](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S037) = ≈крит. 13,60.24a [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) = [≈Вульг. 14.1.17](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A001_S017) = ≈крит. 14,1.16a [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
   <sub>attested</sub>
 
 **4)** — 4) sich in Etwas (acc.) fügen, Jmd Etwas gönnen: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
-[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. Jmd wieder zum Leben bringen
+[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Вульг. 7.11.47](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A011_S047) = ≈крит. 07,10.46c — caus. Jmd wieder zum Leben bringen
 [DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 
 - **RU:** 4) смиряться с чем-л. (acc.), желать кому-л. чего-л.: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
-[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. возвращать кого-л. к жизни
+[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Вульг. 7.11.47](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A011_S047) = ≈крит. 07,10.46c — caus. возвращать кого-л. к жизни
 [DAŚAK.] в [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
   <sub>attested</sub>
 

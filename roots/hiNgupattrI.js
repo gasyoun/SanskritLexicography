@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["hiNgupattrI"]=[{"key": "hi_ngupattr_i~~h0_zz_pw", "h": "1", "iast": "hiṅgupattrī", "senses": [{"tag": "1", "de_html": "*<i class=sa>hiṅgupattrī</i> <span class=lex>f.</span> Gardenia gummifera.", "ru_html": "<i class=sa>hiṅgupattrī</i> <span class=lex>f.</span> Gardenia gummifera.", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["hiNgupattrI"]=[];

@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["gokzuraka"]=[{"key": "gokzuraka~~h0_zz_pw", "h": "{#gokzuraka#}", "iast": "gokṣuraka", "senses": [{"tag": "1)-2)", "de_html": "<i class=sa>gokṣuraka</i> <span class=lex>m.</span> 1〉 *und 2〉 = <i class=sa>gokṣura</i> 1〉 2〉.", "ru_html": "<i class=sa>gokṣuraka</i> <span class=lex>m.</span> 1) *и 2) = <i class=sa>gokṣura</i> 1) 2).", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["gokzuraka"]=[];

@@ -18,9 +18,9 @@
 - **RU:** доставлять, переносить к (Loc.) *āre* уносить далеко прочь [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Большей частью Act.
   <sub>attested</sub>
 
-**3)** — 3〉 Jmd an einen Ort oder in einen Zustand versetzen, verhelfen zu, bringen in oder zu (Loc. oder Dat.) [ṚV. 2,34,9. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09). Meist Act.
+**3)** — 3〉 Jmd an einen Ort oder in einen Zustand versetzen, verhelfen zu, bringen in oder zu (Loc. oder Dat.) [ṚV. 2,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09) [ṚV. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.017.html#rv04.017.07). Meist Act.
 
-- **RU:** переносить кого-либо в место или в состояние, помогать достичь, приводить в или к (Loc. или Dat.) [ṚV. 2,34,9. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09). Большей частью Act.
+- **RU:** переносить кого-либо в место или в состояние, помогать достичь, приводить в или к (Loc. или Dat.) [ṚV. 2,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09) [ṚV. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.017.html#rv04.017.07). Большей частью Act.
   <sub>attested</sub>
 
 **4)** — 4〉 richten auf (Dat. [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19), oder Loc.), nach oder an (Loc.). *cintāma, matim* oder *manas* seine Gedanken richten auf, denken an (Loc. oder Dat.), beschliessen (mit Dat., Loc., Acc. mit *prati*, Infin., oder directe Rede mit *iti*). Meist Med. *dhīyamāna* (v. l. *vartamāna*) und *dhita* (verdächtig) dessen Sinn gerichtet ist auf (Loc. oder Dat.).
@@ -63,9 +63,9 @@
 - **RU:** нести, так преим. поддерживать, сохранять.
   <sub>attested</sub>
 
-**12)** — 12〉 Med. an sich nehmen, empfangen, erlangen, erhalten [ṚV. 4,32,19. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19). insbes. eine Leibesfrucht empfangen, concipere. *antam* ein Ende finden [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* und *canas* Gefallen finden —, sich erfreuen an (Loc. oder Dat.).
+**12)** — 12〉 Med. an sich nehmen, empfangen, erlangen, erhalten [ṚV. 4,32,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19) [ṚV. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.07). insbes. eine Leibesfrucht empfangen, concipere. *antam* ein Ende finden [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* und *canas* Gefallen finden —, sich erfreuen an (Loc. oder Dat.).
 
-- **RU:** Med. принимать, воспринимать, получать, обретать [ṚV. 4,32,19. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19). особ. зачать плод, concipere. *antam* обретать конец [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* и *canas* находить удовольствие —, радоваться чему-либо (Loc. или Dat.).
+- **RU:** Med. принимать, воспринимать, получать, обретать [ṚV. 4,32,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19) [ṚV. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.07). особ. зачать плод, concipere. *antam* обретать конец [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* и *canas* находить удовольствие —, радоваться чему-либо (Loc. или Dat.).
   <sub>attested</sub>
 
 **13)** — 13〉 sich zu eigen machen, annehmen, so v. a. an sich zur Erscheinung bringen, zeigen, sich zuziehen, inne haben, besitzen, behaupten.
@@ -183,9 +183,9 @@
 - **RU:** Act. Med.
   <sub>attested</sub>
 
-**preverb_antar_1a)** — a〉 hineinlegen in (Loc.) [ṚV. 1,62,9. 6,44,23. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09).
+**preverb_antar_1a)** — a〉 hineinlegen in (Loc.) [ṚV. 1,62,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09) [ṚV. 6,44,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.23) [ṚV. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.054.html#rv10.054.06).
 
-- **RU:** вкладывать в (Loc.) [ṚV. 1,62,9. 6,44,23. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09).
+- **RU:** вкладывать в (Loc.) [ṚV. 1,62,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09) [ṚV. 6,44,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.23) [ṚV. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.054.html#rv10.054.06).
   <sub>attested</sub>
 
 **preverb_antar_1b)** — b〉 dazwischen legen, — setzen.
@@ -278,14 +278,14 @@
 - **RU:** подносить, вручать кому-либо (Dat.), жаловать кому-либо (Loc.) [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
   <sub>attested</sub>
 
-**preverb_aa_3)** — 3〉 zudecken, verstopfen, verschliessen, schliessen, einschliessen, verhüllen, bedecken, verdecken, verbergen. Pass. verhüllt werden, spurlos verschwinden in (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* und *pihita* zugedeckt u. s. w., unsichtbar gemacht, in seiner Thätigkeit gehemmt.
+**preverb_aa_3)** — 3〉 zudecken, verstopfen, verschliessen, schliessen, einschliessen, verhüllen, bedecken, verdecken, verbergen. Pass. verhüllt werden, spurlos verschwinden in (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a. Partic. *apihita* und *pihita* zugedeckt u. s. w., unsichtbar gemacht, in seiner Thätigkeit gehemmt.
 
-- **RU:** покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19). Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стесненный в своей деятельности.
+- **RU:** покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a. Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стесненный в своей деятельности.
   <sub>attested</sub>
 
 **preverb_aa_caus)** — Caus. zudecken lassen mit (Instr.), schliessen lassen (mit doppeltem Acc.).
 
-- **RU:** Caus. велеть покрывать чем-либо (Instr.), велеть закрывать (с двойным Acc.).
+- **RU:** Caus. велеть покрывать чем-либо (Ins.), велеть закрывать (с двойным Acc.).
   <sub>attested</sub>
 
 **preverb_samaa)** — Mit *samapi* ganz zudecken.
@@ -310,7 +310,7 @@
 
 **preverb_pari_3)** — 3〉 umhüllen, umlegen mit (Instr.), umwinden, binden. Gewöhnlich Med. *abhihita* angebunden, angeschirrt, angespannt.
 
-- **RU:** обертывать, облагать чем-либо (Instr.), обвязывать, вязать. Обычно Med. *abhihita* привязанный, запряженный.
+- **RU:** обертывать, облагать чем-либо (Ins.), обвязывать, вязать. Обычно Med. *abhihita* привязанный, запряженный.
   <sub>attested</sub>
 
 **preverb_pari_4)** — 4〉 belegen, mit Truppen überziehen.

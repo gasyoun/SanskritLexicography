@@ -10,7 +10,7 @@
 
 **2)** 2) *udanvacchinnā bhūḥ* so v. a. begrenzt
 
-- **RU:** 2) *udanvacchinnā bhūḥ* так преим. — «ограниченный»
+- **RU:** 2) *udanvacchinnā bhūḥ* так преим. — ограниченный
   <sub>attested</sub>
 
 **2 (cont.))** [Spr. 461.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?461)
@@ -22,8 +22,8 @@
 [KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47) *kiṃ naśchinnam* was stört es uns? was geht es uns an? was machen wir uns daraus?
 [Spr. 2130.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2130)
 
-- **RU:** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* «непрерывный»
-[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47) *kiṃ naśchinnam* — «что нам до этого? что нам с того? что нам за дело?»
+- **RU:** — 3) *acchinnaṃ lokasya hasitaṃ tvabhūt* непрерывный
+[KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47) *kiṃ naśchinnam* — что нам до этого? что нам с того? что нам за дело?
 [Spr. 2130.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2130)
   <sub>attested</sub>
 
@@ -39,7 +39,7 @@
 
 - **RU:** — 4) *śrutirātmaśaraṇyānāṃ vyasanaṃ no chinatti kim*
 [LA. (II) 90,22.] *saṃśayam*
-[SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* — «исчезнувший, более не существующий»
+[SŪRYAS. 12,9.] *tāvatpayo 'khilam . tattasyāśchinnam* — исчезнувший, более не существующий
 [KATHĀS. 61,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,47)
   <sub>attested</sub>
 
@@ -71,30 +71,30 @@
  1) und
 [VEDĀNTAS. (Allah.) No. 34] und [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) unter 2); *dikkālānavacchinna* dem Raum und der Zeit nicht angehörig, nicht unter die Kategorien von Raum und Zeit fallend.
 
-- **RU:** 3) *avacchinna* — «определенный, точно установленный, понятийно ограниченный»: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
+- **RU:** 3) *avacchinna* — определенный, точно установленный, понятийно ограниченный: *ṣoḍaśasaṃkhyāvacchinno gaṇaḥ ṣoḍaśakaḥ*
 [SARVADARŚANAS. 148,21.] [NĪLAK. 205. 225. 238. 242. 244. 170. fg.] *tādātmyasaṃbandhāvacchinnapratiyogiko 'nyo'nyābhāvaḥ*
 [TARKAS. 58.] *anavacchinna*
 [SARVADARŚANAS. 84,22.] *anavacchinnatva*
 [21.] Сюда же относятся места
 [BĀLAB. 33] и [YOGAS. 2,31] под
  1) и
-[VEDĀNTAS. (Allah.) No. 34] и [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) под 2); *dikkālānavacchinna* — «не принадлежащий пространству и времени, не подпадающий под категории пространства и времени».
+[VEDĀNTAS. (Allah.) No. 34] и [BHARTṚ. 2,1](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,1) под 2); *dikkālānavacchinna* — не принадлежащий пространству и времени, не подпадающий под категории пространства и времени.
   <sub>attested</sub>
 
 **Nachtrag §79)** — *ā*
  1)
-Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) liest die [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
+Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A266_S042) = ≈крит. 12,258.39c liest die [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 
 - **RU:** — *ā*
  1)
-стк. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) — [ed. Bomb.] читает *ye ca cchindanti vṛṣaṇān* .
+стк. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A266_S042) = ≈крит. 12,258.39c — [Бомбейская ред.] читает *ye ca cchindanti vṛṣaṇān* .
   <sub>attested</sub>
 
 **Nachtrag §81-3)** — 3) entfernen, zu Nichte machen: *yenācchinnaṃ tattamaḥ* (so die [ed. Bomb.])
-[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362)
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362) = [≈Вульг. 13.158.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A158_S009) = ≈крит. 13,143.8a
 
-- **RU:** — 3) удалять, уничтожать: *yenācchinnaṃ tattamaḥ* (так [ed. Bomb.])
-[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362)
+- **RU:** — 3) удалять, уничтожать: *yenācchinnaṃ tattamaḥ* (так [Бомбейская ред.])
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362) = [≈Вульг. 13.158.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A158_S009) = ≈крит. 13,143.8a
   <sub>attested</sub>
 
 **Nachtrag §82-4)** — 4) *ācchinnadāradraviṇāḥ*
@@ -114,7 +114,7 @@ Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) li
 **Nachtrag §84)** — *samud*, *samucchinna* verloren gegangen: *racanā*
 [SŪRYAS. 13,18.]
 
-- **RU:** — *samud*, *samucchinna* — «утраченный, пропавший»: *racanā*
+- **RU:** — *samud*, *samucchinna* — утраченный, пропавший: *racanā*
 [SŪRYAS. 13,18.]
   <sub>attested</sub>
 
@@ -130,7 +130,7 @@ Schol. durch *pṛthakprakāśita*.* aparicchinna* unbegrenzt, unbeschränkt
  4)
 [Z. 11] *paricchinna*
 [BHĀG. P. 3,10,12](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,10,12) — объясняет
-схол. посредством *pṛthakprakāśita*.* aparicchinna* — «неограниченный, безграничный»
+схол. посредством *pṛthakprakāśita*.* aparicchinna* — неограниченный, безграничный
 [Spr. 3473.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3473)
 [SARVADARŚANAS. 53,2.]
   <sub>attested</sub>
@@ -144,7 +144,7 @@ Schol. durch *pṛthakprakāśita*.* aparicchinna* unbegrenzt, unbeschränkt
 [165,20.]
 
 - **RU:** — *vi*
- 1) *vicchinna* — «прерванный»
+ 1) *vicchinna* — прерванный
 [SARVADARŚANAS. 165,19. 166,2.] *mantra*
 
 [171,10.] *a˚*

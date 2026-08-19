@@ -13,7 +13,7 @@
 
 - **RU:** — *apa* caus. презирать кого-либо, выказывать пренебрежение к кому-либо: *bhaktaṃ śaktaṃ kulīnaṃ ca na bhṛtyamapamānayet*
 [Spr. 2003.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2003)
-[KULL.] zu [M. 8,282.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,282) *˚mānita*
+[KULL.] к [M. 8,282.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,282) *˚mānita*
 [ŚĀṄKH. GṚHY. 2,16.]
 [R. 4,8,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,30)
 [MĀRK. P. 125,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?125,27)

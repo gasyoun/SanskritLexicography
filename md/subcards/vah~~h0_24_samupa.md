@@ -5,11 +5,11 @@
 
 **1)** — *samupa*
  1) mit sich führen, strömen lassen: *(nadī) śoṇitaṃ samupāvahat*
-[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400)
+[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400) = [≈Вульг. 9.43.1](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S001) = ≈крит. 09,42.1a
 
 - **RU:** — *samupa*
  1) нести с собой, заставлять течь: *(nadī) śoṇitaṃ samupāvahat*
-[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400)
+[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400) = [≈Вульг. 9.43.1](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S001) = ≈крит. 09,42.1a
   <sub>attested</sub>
 
 **2)** — 2) pass. heranrücken, einbrechen, beginnen: *rātriśca samupohyate*

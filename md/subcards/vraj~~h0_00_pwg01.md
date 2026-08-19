@@ -14,7 +14,7 @@
 [R. 4,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,36) *taṃ vinā ko vrajetsukham* so v. a. sich wohl fühlen
 [HARIV. 15815.](https://sanskrit-lexicon-scans.github.io/hariv?15815)
 
-- **RU:** — 6) о собственном движении в следующих сочетаниях речь уже не идёт: *yadi jīvanvrajeta saḥ* то есть преим. спастись живым
+- **RU:** — 6) о собственном движении в следующих сочетаниях речь уже не идет: *yadi jīvanvrajeta saḥ* то есть преим. спастись живым
 [R. 4,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,36) *taṃ vinā ko vrajetsukham* то есть преим. чувствовать себя хорошо
 [HARIV. 15815.](https://sanskrit-lexicon-scans.github.io/hariv?15815)
   <sub>attested</sub>

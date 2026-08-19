@@ -17,23 +17,23 @@
   <sub>attested</sub>
 
 **2)** — 2) geboren werden, entstehen, sich einstellen, zum Vorschein kommen, sich zeigen: *tataḥ saṃjajñire vīrāḥ kṣitāviha narādhipāḥ*
-[MBH. 1,2695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2695) *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
-[4519.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4519) *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
+[MBH. 1,2695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2695) = [≈Вульг. 1.67.59](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S059) = ≈крит. 01,61.54a *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
+[4519.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4519) = [≈Вульг. 1.115.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A115_S038) = ≈крит. 01,107.32a *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
 [BHAG. 13,26.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,26) *bharatāt — samajāyata*
 [R. 1,70,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,27) [19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,19) *adityāṃ samajāyata*
 [31,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,16) *tava kukṣau — saṃjaniṣyati*
 [R. 1,70,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,34) *ardhasaṃjātaśasyā (vasuṃdharā)* halb emporgeschossen
 [N. 24,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,47) *saṃjātaśītapiḍaka*
 [SUŚR. 1,113,1.] *tasya — svedo vai samajāyata*
-[MBH. 3,16748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16748) *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
+[MBH. 3,16748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16748) = [≈Вульг. 3.297.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A297_S001) = ≈крит. 03,281.1a *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
 [R. 3,16,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,38) *strīsahasraninādaśca saṃjajñe rājaveśmani*
 [2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19) *ādau citte* (so ist zu lesen) *tataḥ kāye satāṃ saṃjāyate jarā*
 [PAÑCAT. I,182.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,182) *durbalānāṃ ca rakṣaṇāt . balaṃ saṃjāyate*
 [M. 8,172.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,172) *saṅgātsaṃjāyate kāmaḥ*
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *yuddhābhilāṣaḥ*
 [HARIV. 9861.](https://sanskrit-lexicon-scans.github.io/hariv?9861) *mūrcchā*
-[MBH. 1,5886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5886) *vismayaḥ*
-[7,4066.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4066) *kāruṇyam*
+[MBH. 1,5886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5886) = [≈Вульг. 1.148.19](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A148_S019) = ≈крит. 01,136.16a *vismayaḥ*
+[7,4066.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4066) = [≈Вульг. 7.108.14](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A108_S014) = ≈крит. 07,83.14a *kāruṇyam*
 [R. 1,2,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,16) *bhīḥ*
 [PAÑCAT. I,125.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,125) *virāgaḥ*
 [BHĀG. P. 3,3,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,22) *yathā saṃjāyate varṇaharaṇādiva bhūbhujām* wie es sich zu ereignen pflegt
@@ -56,23 +56,23 @@
 [BHĀG. P. 4,17,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,28)
 
 - **RU:** — 2) рождаться, возникать, наступать, появляться, обнаруживаться: *tataḥ saṃjajñire vīrāḥ kṣitāviha narādhipāḥ*
-[MBH. 1,2695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2695) *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
-[4519.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4519) *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
+[MBH. 1,2695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2695) = [≈Вульг. 1.67.59](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S059) = ≈крит. 01,61.54a *putraśataṃ pūrṇaṃ dhṛtarāṣṭrasya — saṃjajñe*
+[4519.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4519) = [≈Вульг. 1.115.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A115_S038) = ≈крит. 01,107.32a *yāvatsaṃjāyate kiṃcitsattvaṃ sthāvarajaṅgamam*
 [BHAG. 13,26.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,26) *bharatāt — samajāyata*
 [R. 1,70,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,27) [19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,19) *adityāṃ samajāyata*
 [31,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,16) *tava kukṣau — saṃjaniṣyati*
 [R. 1,70,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,34) *ardhasaṃjātaśasyā (vasuṃdharā)* наполовину взошедший
 [N. 24,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,47) *saṃjātaśītapiḍaka*
 [SUŚR. 1,113,1.] *tasya — svedo vai samajāyata*
-[MBH. 3,16748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16748) *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
+[MBH. 3,16748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16748) = [≈Вульг. 3.297.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A297_S001) = ≈крит. 03,281.1a *jagāmastaṃ tataḥ sūryaḥ saṃdhyā ca samajāyata*
 [R. 3,16,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,38) *strīsahasraninādaśca saṃjajñe rājaveśmani*
 [2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19) *ādau citte* (так следует читать) *tataḥ kāye satāṃ saṃjāyate jarā*
 [PAÑCAT. I,182.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,182) *durbalānāṃ ca rakṣaṇāt . balaṃ saṃjāyate*
 [M. 8,172.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,172) *saṅgātsaṃjāyate kāmaḥ*
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *yuddhābhilāṣaḥ*
 [HARIV. 9861.](https://sanskrit-lexicon-scans.github.io/hariv?9861) *mūrcchā*
-[MBH. 1,5886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5886) *vismayaḥ*
-[7,4066.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4066) *kāruṇyam*
+[MBH. 1,5886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5886) = [≈Вульг. 1.148.19](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A148_S019) = ≈крит. 01,136.16a *vismayaḥ*
+[7,4066.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4066) = [≈Вульг. 7.108.14](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A108_S014) = ≈крит. 07,83.14a *kāruṇyam*
 [R. 1,2,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,16) *bhīḥ*
 [PAÑCAT. I,125.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,125) *virāgaḥ*
 [BHĀG. P. 3,3,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,22) *yathā saṃjāyate varṇaharaṇādiva bhūbhujām* как это обычно случается
@@ -112,37 +112,37 @@
 
 **4)** — 4) gebären: *diggajaṃ caiva śaṅkhākhyaṃ śvetā vai samajāyata*
 [R. 3,20,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,27) — caus. zeugen, gebären; bilden, bauen; erzeugen, hervorbringen, verursachen: *kaśyapastvasyāmādityānsamajījanat*
-[MBH. 1,3135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3135) *tasyāṃ saṃjanayāmāsa kurum*
-[6633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6633) [HARIV. 1799.](https://sanskrit-lexicon-scans.github.io/hariv?1799) *tasyāṃ saṃjanayāṃ cakra ātmajām*
+[MBH. 1,3135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3135) = [≈Вульг. 1.75.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S010) = ≈крит. 01,70.9a *tasyāṃ saṃjanayāmāsa kurum*
+[6633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6633) = [≈Вульг. 1.172.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A172_S014) = крит. — [HARIV. 1799.](https://sanskrit-lexicon-scans.github.io/hariv?1799) *tasyāṃ saṃjanayāṃ cakra ātmajām*
 [BHĀG. P. 4,28,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,30) *putrān — mattaḥ saṃjanayiṣyatha*
 [R. 3,20,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,13) *tatra saṃjanayāmāsa nānāgārāṇi*
-[MBH. 1,4995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4995) *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
-[7,1526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1526) *matsyaparivartanasaṃjanitaphena*
+[MBH. 1,4995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4995) = [≈Вульг. 1.128.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S032) = крит. — *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
+[7,1526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1526) = [≈Вульг. 7.35.20](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A035_S020) = ≈крит. 07,34.20c *matsyaparivartanasaṃjanitaphena*
 [PAÑCAT. 188,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?188,10) *tasya saṃjanayanharṣam*
 [BHAG. 1,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,12) *(teṣām) bhedaṃ saṃjanayiṣyati*
-[MBH. 5,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.118) *ratim*
+[MBH. 5,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.118) = [≈Вульг. 5.6.10](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A006_S010) = ≈крит. 05,6.10a *ratim*
 [R. 2,95,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,5)
 [ṚT. 2,18.] *sukham*
 [SUŚR. 1,243,11.] *trāsam*
 [R. 3,43,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,35)
 [HIT. III,23.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,23) *(janakṣayaḥ) tvayā saṃjanitaḥ*
-[MBH. 7,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3563)
+[MBH. 7,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3563) = [≈Вульг. 7.96.22](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A096_S022) = ≈крит. 07,71.22c
 
 - **RU:** — 4) рожать: *diggajaṃ caiva śaṅkhākhyaṃ śvetā vai samajāyata*
 [R. 3,20,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,27) — caus. зачинать, рожать; создавать, строить; порождать, производить, вызывать: *kaśyapastvasyāmādityānsamajījanat*
-[MBH. 1,3135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3135) *tasyāṃ saṃjanayāmāsa kurum*
-[6633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6633) [HARIV. 1799.](https://sanskrit-lexicon-scans.github.io/hariv?1799) *tasyāṃ saṃjanayāṃ cakra ātmajām*
+[MBH. 1,3135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3135) = [≈Вульг. 1.75.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S010) = ≈крит. 01,70.9a *tasyāṃ saṃjanayāmāsa kurum*
+[6633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6633) = [≈Вульг. 1.172.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A172_S014) = крит. — [HARIV. 1799.](https://sanskrit-lexicon-scans.github.io/hariv?1799) *tasyāṃ saṃjanayāṃ cakra ātmajām*
 [BHĀG. P. 4,28,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,30) *putrān — mattaḥ saṃjanayiṣyatha*
 [R. 3,20,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,13) *tatra saṃjanayāmāsa nānāgārāṇi*
-[MBH. 1,4995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4995) *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
-[7,1526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1526) *matsyaparivartanasaṃjanitaphena*
+[MBH. 1,4995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4995) = [≈Вульг. 1.128.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S032) = крит. — *bhinddhyanīkam — dvāraṃ saṃjanayasva naḥ*
+[7,1526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1526) = [≈Вульг. 7.35.20](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A035_S020) = ≈крит. 07,34.20c *matsyaparivartanasaṃjanitaphena*
 [PAÑCAT. 188,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?188,10) *tasya saṃjanayanharṣam*
 [BHAG. 1,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,12) *(teṣām) bhedaṃ saṃjanayiṣyati*
-[MBH. 5,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.118) *ratim*
+[MBH. 5,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.118) = [≈Вульг. 5.6.10](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A006_S010) = ≈крит. 05,6.10a *ratim*
 [R. 2,95,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,5)
 [ṚT. 2,18.] *sukham*
 [SUŚR. 1,243,11.] *trāsam*
 [R. 3,43,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,35)
 [HIT. III,23.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,23) *(janakṣayaḥ) tvayā saṃjanitaḥ*
-[MBH. 7,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3563)
+[MBH. 7,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3563) = [≈Вульг. 7.96.22](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A096_S022) = ≈крит. 07,71.22c
   <sub>attested</sub>

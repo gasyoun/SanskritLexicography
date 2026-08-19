@@ -16,7 +16,7 @@
 [R. 2,95,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,5) *ata eva nipīyate 'dharaḥ*
 [BHARTṚ. 1,82.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,82) *madhupairnipītakusumaḥ (taruḥ)*
 
-- **RU:** — *ni* вбирать в себя питьём, всасывать, прихлёбывать, пить (у чего-л.): *galātsravantamasagāsavam — nipīya*
+- **RU:** — *ni* вбирать в себя питьем, всасывать, прихлебывать, пить (у чего-л.): *galātsravantamasagāsavam — nipīya*
 [BHĀG. P. 5,9,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,19) *tṛṣṇārtaiśca nipīyate vanamṛgairuṣṇaṃ payaḥ sārasam*
 [MṚCCH. 116,11.] *nipītatoyāṃ (nadīṃ) gajasiṃhavānaraiḥ*
 [R. 2,95,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,18) ([104,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,104,19) [GORR.]). *dantacchadaṃ priyatamena nipītasāram*

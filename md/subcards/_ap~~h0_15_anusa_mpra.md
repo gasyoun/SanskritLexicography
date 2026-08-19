@@ -6,16 +6,16 @@
 **1)** — *anusaṃpra*
  1) erreichen, anlangen bei: *araṇyamanusaṃprāpya*
 [MBH. 1,5243.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5243) *virāṭamanusaṃprāpya rājānam*
-[4,22.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.22) *duḥkhaṃ māmanusaṃprāptam*
-[1,4708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4708) *anusaṃprāptaḥ sthānam*
-[3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) [R. 3,68,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,7)
+[4,22.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.22) = [≈Вульг. 4.1.23](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S023) = ≈крит. 04,1.19a *duḥkhaṃ māmanusaṃprāptam*
+[1,4708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4708) = [≈Вульг. 1.121.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A121_S030) = ≈крит. 01,112.26c *anusaṃprāptaḥ sthānam*
+[3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) = [≈Вульг. 3.47.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A047_S005) = ≈крит. 03,45.13c [R. 3,68,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,7)
 
 - **RU:** — *anusaṃpra*
  1) достигать, прибывать к: *araṇyamanusaṃprāpya*
 [MBH. 1,5243.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5243) *virāṭamanusaṃprāpya rājānam*
-[4,22.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.22) *duḥkhaṃ māmanusaṃprāptam*
-[1,4708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4708) *anusaṃprāptaḥ sthānam*
-[3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) [R. 3,68,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,7)
+[4,22.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.22) = [≈Вульг. 4.1.23](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S023) = ≈крит. 04,1.19a *duḥkhaṃ māmanusaṃprāptam*
+[1,4708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4708) = [≈Вульг. 1.121.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A121_S030) = ≈крит. 01,112.26c *anusaṃprāptaḥ sthānam*
+[3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) = [≈Вульг. 3.47.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A047_S005) = ≈крит. 03,45.13c [R. 3,68,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,7)
   <sub>attested</sub>
 
 **2)** — 2) *anusaṃprāpta* angelangt, gekommen

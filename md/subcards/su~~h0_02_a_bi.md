@@ -21,8 +21,8 @@
 [ŚAT. BR. 12,6,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,21)
 [KĀTY. ŚR. 9,5,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,5,1) [10,3,12.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,3,12) *abhiṣutya*
 [R. 1,13,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,5), v. l. *abhiṣūya* (so [ed. Bomb.]) *somam*
-[MBH. 14,2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2624) *some vṛthābhiṣūyamāṇe*
-[13,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.372) mit Flüssigkeit ansetzen und ausdrücken: *yāni caivābhiṣūyante puṣpamūlaphalaiḥ śubhaiḥ*
+[MBH. 14,2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2624) = [≈Вульг. 14.88.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A088_S021) = ≈крит. 14,90.20c *some vṛthābhiṣūyamāṇe*
+[13,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.372) = [≈Вульг. 13.7.29](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A007_S029) = ≈крит. 13,7.29a mit Flüssigkeit ansetzen und ausdrücken: *yāni caivābhiṣūyante puṣpamūlaphalaiḥ śubhaiḥ*
 [M. 5,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,10) *kṣīreṇābhiṣutya*
 (v. l. *abhiplutya*)
 [SUŚR. 1,317,12.] *kiṇvapiṣṭam*
@@ -39,9 +39,9 @@
 [4,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,4,4) [5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,5,1) *sa yadyabhiṣūyamāṇaḥ kiṃcidāpadyate*
 [ŚAT. BR. 12,6,1,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,21)
 [KĀTY. ŚR. 9,5,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,5,1) [10,3,12.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,3,12) *abhiṣutya*
-[R. 1,13,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,5), v. l. *abhiṣūya* (так [ed. Bomb.]) *somam*
-[MBH. 14,2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2624) *some vṛthābhiṣūyamāṇe*
-[13,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.372) смешать с жидкостью и выдавить: *yāni caivābhiṣūyante puṣpamūlaphalaiḥ śubhaiḥ*
+[R. 1,13,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,5), v. l. *abhiṣūya* (так [Бомбейская ред.]) *somam*
+[MBH. 14,2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2624) = [≈Вульг. 14.88.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A088_S021) = ≈крит. 14,90.20c *some vṛthābhiṣūyamāṇe*
+[13,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.372) = [≈Вульг. 13.7.29](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A007_S029) = ≈крит. 13,7.29a смешать с жидкостью и выдавить: *yāni caivābhiṣūyante puṣpamūlaphalaiḥ śubhaiḥ*
 [M. 5,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,10) *kṣīreṇābhiṣutya*
 (v. l. *abhiplutya*)
 [SUŚR. 1,317,12.] *kiṇvapiṣṭam*

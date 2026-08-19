@@ -16,5 +16,5 @@
 [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) fehlerhaft für *udapāṭayat* .
 
 - **RU:** — ср. *utpitsu*.* udapātayat*
-[KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вместо *udapāṭayat* .
+[KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вм. *udapāṭayat* .
   <sub>attested</sub>

@@ -5,7 +5,7 @@
 
 **1)** **1.** √*vas* enklitischer Acc., Dat., Gen. und Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) des Pronomens der 2ten Person.
 
-- **RU:** **1.** √*vas* энклитическая Acc., Dat., Gen. и Instr. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
+- **RU:** **1.** √*vas* энклитическая Acc., Dat., Gen. и Ins. Pl. ([HARIV. 2233](https://sanskrit-lexicon-scans.github.io/hariv?2233). [BHĀG. P. 6,4,13](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,13)) местоимения 2-го лица.
   <sub>attested</sub>
 
 **intro)** **2.** √*vas* *ucchati*
@@ -30,7 +30,7 @@
 
 **4)** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04) vielleicht fehlerhaft für *ukṣantu*.
 
-- **RU:** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04), возможно, ошибочно вместо *ukṣantu*.
+- **RU:** — 4〉 *ucchantu* [AV. 3,12,4](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.04), возможно, ошибочно вм. *ukṣantu*.
   <sub>attested</sub>
 
 **5)** — 5〉 **uṣita* hell geworden.
@@ -95,7 +95,7 @@
 
 **sam-1)** — Mit *abhivi* hell werden über (Acc.), so v. a. vor Beendigung von — Tag werden. Med. *vyuccheta* vielleicht fehlerhaft für *vyucchet*.
 
-- **RU:** — С *abhivi* светать над (Acc.), так преим. наступать дню прежде окончания —. Med. *vyuccheta*, возможно, ошибочно вместо *vyucchet*.
+- **RU:** — С *abhivi* светать над (Acc.), так преим. наступать дню прежде окончания —. Med. *vyuccheta*, возможно, ошибочно вм. *vyucchet*.
   <sub>attested</sub>
 
 **sam-2)** — *Caus. die Nacht (Acc.) hell werden lassen, so v. a. bis Tagesanbruch erzählen [PAT. zu P. 3,1,26, Vārtt. 9].
@@ -125,7 +125,7 @@
 
 **caus-2)** — 2〉 bekleiden mit (Instr.), einhüllen in (Instr.); Med. sich hüllen in (Instr.) *˚vāsita* bekleidet mit [HEMĀDRI 1,434,12].
 
-- **RU:** — 2〉 облачать в (Instr.), окутывать в (Instr.); Med. облекаться в (Instr.) *˚vāsita* облачённый в [HEMĀDRI 1,434,12].
+- **RU:** — 2〉 облачать в (Ins.), окутывать в (Ins.); Med. облекаться в (Ins.) *˚vāsita* облаченный в [HEMĀDRI 1,434,12].
   <sub>attested</sub>
 
 **ati)** — Mit *adhi* anziehen.
@@ -140,7 +140,7 @@
 
 **abhi-1)** — 1〉 bekleiden, umfangen, (schützend) umgeben mit (Instr.).
 
-- **RU:** — 1〉 облачать, обнимать, (защитно) окружать (Instr.).
+- **RU:** — 1〉 облачать, обнимать, (защитно) окружать (Ins.).
   <sub>attested</sub>
 
 **abhi-2)** — 2〉 sich bekleiden, sich hüllen in (Acc.).
@@ -155,7 +155,7 @@
 
 **apa)** — Caus. bekleiden, bedecken mit (Instr.).
 
-- **RU:** — Caus. облачать, покрывать (Instr.).
+- **RU:** — Caus. облачать, покрывать (Ins.).
   <sub>attested</sub>
 
 **ava)** — Mit *upa* Caus. in *upavāsana*.
@@ -185,7 +185,7 @@
 
 **aa-4)** — 4〉 *nivasita* gekleidet in (Instr.).
 
-- **RU:** — 4〉 *nivasita* одетый в (Instr.).
+- **RU:** — 4〉 *nivasita* одетый в (Ins.).
   <sub>attested</sub>
 
 **pari-intro)** — Caus.
@@ -205,7 +205,7 @@
 
 **pari-2a)** — a〉 gekleidet in (Instr.).
 
-- **RU:** — a〉 одетый в (Instr.).
+- **RU:** — a〉 одетый в (Ins.).
   <sub>attested</sub>
 
 **pari-2b)** — b〉 am Ende eines Comp. beschäftigt mit.
@@ -250,7 +250,7 @@
 
 **samava)** — Caus. *prativāsita* gehüllt in (Instr.).
 
-- **RU:** — Caus. *prativāsita* окутанный в (Instr.).
+- **RU:** — Caus. *prativāsita* окутанный в (Ins.).
   <sub>attested</sub>
 
 **samaa-intro)** — Mit *vi*
@@ -275,7 +275,7 @@
 
 **su)** — Mit *sam* sich kleiden in (Instr.).
 
-- **RU:** — С *sam* одеваться в (Instr.).
+- **RU:** — С *sam* одеваться в (Ins.).
   <sub>attested</sub>
 
 **anusam)** — Mit *abhisam* umnehmen.

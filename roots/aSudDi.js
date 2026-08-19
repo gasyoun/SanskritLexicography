@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["aSudDi"]=[{"key": "a_sud_di~~h0_zz_pw", "h": "aśuddhi", "iast": "aśuddhi", "senses": [{"tag": "1", "de_html": "<i class=sa>aśuddhi</i> <span class=lex>f.</span> Unreinheit.", "ru_html": "<i class=sa>aśuddhi</i> <span class=lex>f.</span> нечистота.", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["aSudDi"]=[];

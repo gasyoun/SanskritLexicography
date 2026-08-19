@@ -16,8 +16,8 @@
   <sub>attested</sub>
 
 **2)** — 2) pass. den Kürzern ziehen, Jmd (abl.) weichen: im Wettfluge
-[MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916)
+[MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916) = [≈Вульг. 8.41.43](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A041_S043) = ≈крит. 08,28.37c
 
 - **RU:** — 2) pass. оказаться в проигрыше, уступать кому-л. (abl.): в состязании в беге
-[MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916)
+[MBH. 8,1916.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1916) = [≈Вульг. 8.41.43](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A041_S043) = ≈крит. 08,28.37c
   <sub>attested</sub>

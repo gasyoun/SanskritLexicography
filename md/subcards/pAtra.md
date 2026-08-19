@@ -10,7 +10,7 @@
 
 **PW-1)** *patra* defective Schreibart für *pattra*.
 
-- **RU:** *patra* дефектное написание вместо *pattra*.
+- **RU:** *patra* дефектное написание вм. *pattra*.
   <sub>lexicographic</sub>
 
 **NWS-1)** [NWS: Graßmann 1873 (1996) : 767] *pátra* [Ved , unsp] Subst n Flügel. enthalten in áchinna -, śatápatra
@@ -28,9 +28,9 @@
 - **RU:** [NWS: Olivelle 2015 : 235] [Śā , Soc] сущ. n. юридический документ. BṛhSm 1.6.12 . иногда синоним *jayapatra* — документа о победе, выдаваемого выигравшей стороне в судебном деле
   <sub>attested</sub>
 
-**NWS-4)** [NWS: Otter 2010 : 236] [Śā , Art] leaf, foliage. s.v. pattra (pw). Meister 1988 (2.1) : 408 > Śā , Art , 11. Jh.? , Dhārā? > Subst n a kind of moulding. SamarāS 28.25c . s.v. pattra (pw)
+**NWS-4)** [NWS: Otter 2010 : 236] [Śā , Art] leaf, foliage. s.v. pattra (pw). Meister 1988 (2.1) : 408 > Śā , Art (11. Jh.? , Dhārā?) > Subst n a kind of moulding. SamarāS 28.25c . s.v. pattra (pw)
 
-- **RU:** [NWS: Otter 2010 : 236] [Śā , Art] лист, листва. s.v. pattra (pw). Meister 1988 (2.1) : 408 > [Śā , Art , 11. Jh.? , Dhārā?] сущ. n. разновидность лепного орнамента. SamarāS 28.25c . s.v. pattra (pw)
+- **RU:** [NWS: Otter 2010 : 236] [Śā , Art] лист, листва. s.v. pattra (pw). Meister 1988 (2.1) : 408 > [Śā, Art] (11. Jh.? , Dhārā?) сущ. n. разновидность лепного орнамента. SamarāS 28.25c . s.v. pattra (pw)
   <sub>lexicographic</sub>
 
 **NWS-5)** [NWS: Hoernle 1908 : 288] [Śā , Med] leaf. Hoernle 1893-1912 (I) 1.9 . esp. leaves of Cinnamomum zeylanicum , cinnamon. Hoernle 1893-1912 (I) 7.91 . [ vegetable drug. ]

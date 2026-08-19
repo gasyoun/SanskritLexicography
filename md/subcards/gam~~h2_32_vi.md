@@ -8,6 +8,6 @@
 [R. 7,29,37.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,37)
 
 - **RU:** — *vi*
- 2) *raṇavigata* «отступающий от битвы, уклоняющийся от боя»
+ 2) *raṇavigata* отступающий от битвы, уклоняющийся от боя
 [R. 7,29,37.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,37)
   <sub>attested</sub>

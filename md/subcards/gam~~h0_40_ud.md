@@ -6,20 +6,20 @@
 **1)** — *ud*
  1) in die Höhe gehen, aufgehen, sich erheben, aufschiessen; von Gestirnen
 [VARĀH. BṚH. S. 7,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,19) [8,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,1) *śakrasyodgamya caraṇaṃ prasthito janamejayaḥ*
-[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330)
+[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330) = [≈Вульг. 13.6.36](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A006_S036) = ≈крит. 13,6.36c
 [PAÑCAT. 47,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,18) *vātodgatareṇu*
 [ṚT. 1,10], v. l. *śālapota ivodgataḥ*
-[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942); vgl. *śālamiva pravṛddham*
-[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703)
+[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) = [≈Вульг. 3.159.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U09_A159_S024) = ≈крит. 03,156.23c [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942) = [≈Вульг. 1.151.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S012) = крит. —; vgl. *śālamiva pravṛddham*
+[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S009) = ≈крит. 03,254.9a
 
 - **RU:** — *ud*
  1) подниматься вверх, восходить, вздыматься, вздыбливаться; о светилах
 [VARĀH. BṚH. S. 7,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,19) [8,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,1) *śakrasyodgamya caraṇaṃ prasthito janamejayaḥ*
-[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330)
+[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330) = [≈Вульг. 13.6.36](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A006_S036) = ≈крит. 13,6.36c
 [PAÑCAT. 47,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,18) *vātodgatareṇu*
 [ṚT. 1,10], v. l. *śālapota ivodgataḥ*
-[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942); ср. *śālamiva pravṛddham*
-[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703)
+[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) = [≈Вульг. 3.159.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U09_A159_S024) = ≈крит. 03,156.23c [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942) = [≈Вульг. 1.151.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S012) = крит. —; ср. *śālamiva pravṛddham*
+[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S009) = ≈крит. 03,254.9a
   <sub>attested</sub>
 
 **2)** — 2) herausgehen, hervorkommen, hervorbrechen, hinausgehen: *udvayaṃ tamasaspari — sūryamaganma*

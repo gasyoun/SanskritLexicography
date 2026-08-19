@@ -14,21 +14,21 @@
 [3,2,2,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,2,22) [ĀŚV. GṚHY. 1,20. 2,1.] [ŚĀṄKH. GṚHY. 3,5.] [PĀR. GṚHY. 2,2.] *prajāpaterātmānaṃ paridadāni*
 [CHĀND. UP. 3,22,5.] *tuñjāte vṛṣṇyaṃ payaḥ paridāya rasaṃ duhe*
 [ṚV. 1,105,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.105.html#rv01.105.02) — *prajāpatirhi vaiśyāya sṛṣṭvā paridade (paridadau*
-[MBH. 12,2290](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2290)) *paśūn . brāhmaṇāya ca rājñe ca sarvāḥ paridade prajāḥ ..*
+[MBH. 12,2290](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2290) = [≈Вульг. 12.60.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A060_S023) = ≈крит. 12,60.22e) *paśūn . brāhmaṇāya ca rājñe ca sarvāḥ paridade prajāḥ ..*
 [M. 9,327.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,327) *pṛthāṃ paridadau tasmai*
-[MBH. 3,17039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17039) [7,5146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5146) *striyaḥ puṃsāṃ paridade manurjigamiṣurdivam*
-[13,2491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2491) [3,10868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10868) *rājyaṃ paridadau sarvaṃ vaiśyāputre*
-[17,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.6) *yasminso paridadyāstvaṃ so 'pi rāmo vanaṃ gataḥ*
+[MBH. 3,17039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17039) = [≈Вульг. 3.304.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A304_S013) = ≈крит. 03,288.12a [7,5146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5146) = [≈Вульг. 7.127.3](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A127_S003) = ≈крит. 07,102.45a *striyaḥ puṃsāṃ paridade manurjigamiṣurdivam*
+[13,2491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2491) = [≈Вульг. 13.46.8](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A046_S008) = ≈крит. 13,46.7a [3,10868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10868) = [≈Вульг. 3.138.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A138_S025) = ≈крит. 03,139.20e *rājyaṃ paridadau sarvaṃ vaiśyāputre*
+[17,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.6) = [≈Вульг. 17.1.6](https://sanatana.in/mahabharata/listing/parva/mahaprasthanikaparva?id=P17_U01_A001_S006) = ≈крит. 17,1.6a *yasminso paridadyāstvaṃ so 'pi rāmo vanaṃ gataḥ*
 [R. GORR. 2,84,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,84,6) *tatra sītāṃ paridāya*
 [3,30,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,30,27) *bṛhaspatiṃ paridātuṃ marutte* zur Verfügung stellen
-[MBH. 14,226. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.226) *tvaṃ naḥ svacakṣuḥ paridehi* verleihe
+[MBH. 14,226. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.226) = [≈Вульг. 14.9.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A009_S008) = ≈крит. 14,9.8a *tvaṃ naḥ svacakṣuḥ paridehi* verleihe
 [BHĀG. P. 3,5,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,50) *pārivarhānmahādhanān . daṃpatyoḥ paryadātprītyā bhūṣāvasaḥparicchadān*
 [22,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,23) partic. *parītta*
 [P. 6,3,124.](https://ashtadhyayi.com/sutraani/6/3/124) *(javaḥ) śyene parīttaḥ*
 [VS. 9,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,9)
 [ŚĀṄKH. GṚHY. 2,12.] *parīta* fälschlich st. *parītta*
-[MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) — caus. übergeben lassen: *(tam) paridāpya yudhiṣṭhire*
-[MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445)
+[MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) = [≈Вульг. 1.229.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A229_S010) = ≈крит. 01,220.10a [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) = [≈Вульг. 14.53.23](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A053_S023) = ≈крит. 14,52.23a — caus. übergeben lassen: *(tam) paridāpya yudhiṣṭhire*
+[MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445) = [≈Вульг. 15.16.4](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A016_S004) = ≈крит. 15,22.4a
 
 - **RU:** — *pari* act. мед. (последнее реже) вручать, передавать, доверять; откладывать у или в; подавать кому-л. что-л.; с dat. gen. или loc. лица: *trite duḥṣvapnyaṃ sarvamāptye pari dadmasi*
 [ṚV. 8,47,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.15) *(śvānau) tābhyāmenaṃ pari dehi*
@@ -41,19 +41,19 @@
 [3,2,2,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,2,22) [ĀŚV. GṚHY. 1,20. 2,1.] [ŚĀṄKH. GṚHY. 3,5.] [PĀR. GṚHY. 2,2.] *prajāpaterātmānaṃ paridadāni*
 [CHĀND. UP. 3,22,5.] *tuñjāte vṛṣṇyaṃ payaḥ paridāya rasaṃ duhe*
 [ṚV. 1,105,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.105.html#rv01.105.02) — *prajāpatirhi vaiśyāya sṛṣṭvā paridade (paridadau*
-[MBH. 12,2290](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2290)) *paśūn . brāhmaṇāya ca rājñe ca sarvāḥ paridade prajāḥ ..*
+[MBH. 12,2290](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2290) = [≈Вульг. 12.60.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A060_S023) = ≈крит. 12,60.22e) *paśūn . brāhmaṇāya ca rājñe ca sarvāḥ paridade prajāḥ ..*
 [M. 9,327.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,327) *pṛthāṃ paridadau tasmai*
-[MBH. 3,17039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17039) [7,5146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5146) *striyaḥ puṃsāṃ paridade manurjigamiṣurdivam*
-[13,2491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2491) [3,10868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10868) *rājyaṃ paridadau sarvaṃ vaiśyāputre*
-[17,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.6) *yasminso paridadyāstvaṃ so 'pi rāmo vanaṃ gataḥ*
+[MBH. 3,17039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17039) = [≈Вульг. 3.304.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U21_A304_S013) = ≈крит. 03,288.12a [7,5146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5146) = [≈Вульг. 7.127.3](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A127_S003) = ≈крит. 07,102.45a *striyaḥ puṃsāṃ paridade manurjigamiṣurdivam*
+[13,2491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2491) = [≈Вульг. 13.46.8](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A046_S008) = ≈крит. 13,46.7a [3,10868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10868) = [≈Вульг. 3.138.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A138_S025) = ≈крит. 03,139.20e *rājyaṃ paridadau sarvaṃ vaiśyāputre*
+[17,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.6) = [≈Вульг. 17.1.6](https://sanatana.in/mahabharata/listing/parva/mahaprasthanikaparva?id=P17_U01_A001_S006) = ≈крит. 17,1.6a *yasminso paridadyāstvaṃ so 'pi rāmo vanaṃ gataḥ*
 [R. GORR. 2,84,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,84,6) *tatra sītāṃ paridāya*
 [3,30,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,30,27) *bṛhaspatiṃ paridātuṃ marutte* предоставлять в распоряжение
-[MBH. 14,226. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.226) *tvaṃ naḥ svacakṣuḥ paridehi* предоставляю
+[MBH. 14,226. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.226) = [≈Вульг. 14.9.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A009_S008) = ≈крит. 14,9.8a *tvaṃ naḥ svacakṣuḥ paridehi* предоставляю
 [BHĀG. P. 3,5,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,50) *pārivarhānmahādhanān . daṃpatyoḥ paryadātprītyā bhūṣāvasaḥparicchadān*
 [22,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,23) partic. *parītta*
 [P. 6,3,124.](https://ashtadhyayi.com/sutraani/6/3/124) *(javaḥ) śyene parīttaḥ*
 [VS. 9,9.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,9)
 [ŚĀṄKH. GṚHY. 2,12.] *parīta* ошибочно вместо *parītta*
-[MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) — caus. велеть передать: *(tam) paridāpya yudhiṣṭhire*
-[MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445)
+[MBH. 1,8437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8437) = [≈Вульг. 1.229.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A229_S010) = ≈крит. 01,220.10a [14,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1558) = [≈Вульг. 14.53.23](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A053_S023) = ≈крит. 14,52.23a — caus. велеть передать: *(tam) paridāpya yudhiṣṭhire*
+[MBH. 15,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.445) = [≈Вульг. 15.16.4](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A016_S004) = ≈крит. 15,22.4a
   <sub>attested</sub>

@@ -10,5 +10,5 @@
 
 **1 (PW))** *mṛṇmaya* _Adj._ fehlerhaft für *mṛnmaya*.
 
-- **RU:** *mṛṇmaya* _Adj._ ошибочно вместо *mṛnmaya*.
+- **RU:** *mṛṇmaya* _Adj._ ошибочно вм. *mṛnmaya*.
   <sub>lexicographic</sub>

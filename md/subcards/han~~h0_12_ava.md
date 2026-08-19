@@ -14,10 +14,10 @@
 [10,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.06) den Wagen der Uṣas
 [73,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.073.html#rv10.073.06) [AV. 13,1,30.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.30) [6,134,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.134.html#av06.134.02) (partic. *avahata)*.* sānuṃ vajreṇa* von oben herab treffen
 [ṚV. 1,80,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.080.html#rv01.080.05) schlagen auf, gegen: *parasparaṃ jānubhiścāvajaghnatuḥ*
-[MBH. 2,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.915) *śuṣkadrumāsthiśmaśānāni mūtryāvahatya (śvā)*
+[MBH. 2,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.915) = [≈Вульг. 2.23.26](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U04_A023_S026) = ≈крит. 02,21.14a *śuṣkadrumāsthiśmaśānāni mūtryāvahatya (śvā)*
 [VARĀH. BṚH. S. 89,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,1) *yathā śailasya mahataḥ śailenaivāvajaghnataḥ*
-(= *avahanyamānasya* [NĪLAK.], man könnte *avahanyataḥ* vermuthen; vgl. [6,2514](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2514))
-[MBH. 4,1424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424)
+(= *avahanyamānasya* [NĪLAK.], man könnte *avahanyataḥ* vermuthen; vgl. [6,2514](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2514) = [≈Вульг. 6.59.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A059_S006) = ≈крит. 06,55.5a)
+[MBH. 4,1424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424) = [≈Вульг. 4.45.31](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A045_S031) = ≈крит. 04,40.26c
 
 - **RU:** 1) сбивать вниз —, повергать, низвергать: *parvatādadhi*
 [ṚV. 4,30,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.030.html#rv04.030.14) *dānavam*
@@ -25,10 +25,10 @@
 [10,48,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.06) колесницу Ушас
 [73,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.073.html#rv10.073.06) [AV. 13,1,30.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.30) [6,134,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.134.html#av06.134.02) (partic. *avahata)*.* sānuṃ vajreṇa* поражать сверху вниз
 [ṚV. 1,80,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.080.html#rv01.080.05) бить по, о: *parasparaṃ jānubhiścāvajaghnatuḥ*
-[MBH. 2,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.915) *śuṣkadrumāsthiśmaśānāni mūtryāvahatya (śvā)*
+[MBH. 2,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.915) = [≈Вульг. 2.23.26](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U04_A023_S026) = ≈крит. 02,21.14a *śuṣkadrumāsthiśmaśānāni mūtryāvahatya (śvā)*
 [VARĀH. BṚH. S. 89,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,1) *yathā śailasya mahataḥ śailenaivāvajaghnataḥ*
-(= *avahanyamānasya* [NĪLAK.], можно было бы предположить *avahanyataḥ*; ср. [6,2514](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2514))
-[MBH. 4,1424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424)
+(= *avahanyamānasya* [NĪLAK.], можно было бы предположить *avahanyataḥ*; ср. [6,2514](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2514) = [≈Вульг. 6.59.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A059_S006) = ≈крит. 06,55.5a)
+[MBH. 4,1424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424) = [≈Вульг. 4.45.31](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A045_S031) = ≈крит. 04,40.26c
   <sub>attested</sub>
 
 **2)** — 2) zurückschlagen, — stossen; verscheuchen, abwehren: *śardhaḥ*

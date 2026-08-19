@@ -20,7 +20,7 @@
 
 **vi-nī (PPP))** — Mit *vipari*, *˚ṇīta* dessen Platz mit dem eines Andern vertauscht ist.
 
-- **RU:** С *vipari*, *˚ṇīta* тот, чьё место поменяно с местом другого.
+- **RU:** С *vipari*, *˚ṇīta* тот, чье место поменяно с местом другого.
   <sub>attested</sub>
 
 **sam-nī)** — Mit *pra*
@@ -30,7 +30,7 @@
 
 **1)** — 1〉 vorwärts geleiten, führen, anführen (ein Heer), fördern.
 
-- **RU:** 1〉 вести вперёд, руководить, предводительствовать (войском), способствовать.
+- **RU:** 1〉 вести вперед, руководить, предводительствовать (войском), способствовать.
   <sub>attested</sub>
 
 **2)** — 2〉 hintragen, hinbringen. Technischer Ausdruck für das Hintragen des Feuers auf seine Oerter am Altare und des zu den Handlungen nöthigen Wassers (auch des Soma).
@@ -90,12 +90,12 @@
 
 **13)** — 13〉 seine Gewogenheit —, seine Freundschaft gegen Jmd (Acc.) an den Tag legen.
 
-- **RU:** 13〉 проявлять своё расположение —, свою дружбу к кому-л. (Acc.).
+- **RU:** 13〉 проявлять свое расположение —, свою дружбу к кому-л. (Acc.).
   <sub>attested</sub>
 
-**14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19).
+**14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19) = [≈Вульг. 13.1.71](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S071) = ≈крит. 13,1.64a.
 
-- **RU:** 14〉 желать, хотеть. *manasā yatpraṇītam* то, чего желает сердце [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* то же [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19).
+- **RU:** 14〉 желать, хотеть. *manasā yatpraṇītam* то, чего желает сердце [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* то же [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19) = [≈Вульг. 13.1.71](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S071) = ≈крит. 13,1.64a.
   <sub>attested</sub>
 
 **nī desid.)** — Desid. hinführen wollen zu (Dat.).
@@ -195,7 +195,7 @@
 
 **apa-nī 5)** — 5〉 scheiteln.
 
-- **RU:** 5〉 делать пробор (расчёсывать волосы).
+- **RU:** 5〉 делать пробор (расчесывать волосы).
   <sub>attested</sub>
 
 **apa-nī 6)** — 6〉 dehnen, ausbreiten.
@@ -210,7 +210,7 @@
 
 **apa-nī 8)** — 8〉 zähmen, abrichten, dressiren. *vinīta* gezähmt, dressirt.
 
-- **RU:** 8〉 укрощать, выдрессировать, дрессировать. *vinīta* укрощённый, дрессированный.
+- **RU:** 8〉 укрощать, выдрессировать, дрессировать. *vinīta* укрощенный, дрессированный.
   <sub>attested</sub>
 
 **apa-nī 9)** — 9〉 züchtigen.
@@ -218,9 +218,9 @@
 - **RU:** 9〉 наказывать, карать.
   <sub>attested</sub>
 
-**apa-nī 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) fehlerhaft für *vinīta*.
+**apa-nī 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Вульг. 1.140.17](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S017) = ≈крит. 12,138.10a fehlerhaft für *vinīta*.
 
-- **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) ошибочно вместо *vinīta*.
+- **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Вульг. 1.140.17](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S017) = ≈крит. 12,138.10a ошибочно вм. *vinīta*.
   <sub>attested</sub>
 
 **apa-nī 11)** — 11〉 anleiten —, veranlassen zu (Dat. Infin.).
@@ -290,7 +290,7 @@
 
 **sam-nī 4)** — 4〉 Jmd beschenken mit (Instr.).
 
-- **RU:** 4〉 одарять кого-л. (Instr.).
+- **RU:** 4〉 одарять кого-л. (Ins.).
   <sub>attested</sub>
 
 **sam-nī 5)** — 5〉 den Geist richten auf (Loc.).

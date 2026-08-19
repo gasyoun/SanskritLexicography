@@ -5,7 +5,7 @@
 
 **T67)** — Caus. eintreten lassen, hineinbringen (an seinen Platz [CARAKA. 6,30]), hineinführen in (Acc. oder Loc.) [HARIV. 2,47,45](https://sanskrit-lexicon-scans.github.io/hariv?2). *vyasane* inʼs Unglück bringen [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320) (Conj.). *saṃpraveśita* so v. a. inʼs Land wieder eingelassen (Gegensatz *nirvāsita* ve bannt). *saṃpraveśya* [RĀJAT. 4,32](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,32) fehlerhaft für *˚viśya*.
 
-- **RU:** — Caus. побуждать вступить, вводить внутрь (на его место [CARAKA. 6,30]), вводить, вести внутрь (Acc. или Loc.) [HARIV. 2,47,45](https://sanskrit-lexicon-scans.github.io/hariv?2). *vyasane* вводить, ввергать в несчастье [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320) (Conj.). *saṃpraveśita* так преим. вновь впущенный в страну (в противоположность *nirvāsita* изгнанному). *saṃpraveśya* [RĀJAT. 4,32](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,32) ошибочно вместо *˚viśya*.
+- **RU:** — Caus. побуждать вступить, вводить внутрь (на его место [CARAKA. 6,30]), вводить, вести внутрь (Acc. или Loc.) [HARIV. 2,47,45](https://sanskrit-lexicon-scans.github.io/hariv?2). *vyasane* вводить, ввергать в несчастье [Spr. 6320](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6320) (Conj.). *saṃpraveśita* так преим. вновь впущенный в страну (в противоположность *nirvāsita* изгнанному). *saṃpraveśya* [RĀJAT. 4,32](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,32) ошибочно вм. *˚viśya*.
   <sub>attested</sub>
 
 **T68)** — Mit *vi* eingehen in (Acc.).
@@ -15,7 +15,7 @@
 
 **T69)** — Caus. [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910). wo aber mit der anderen Ausg. [2,49,9](https://sanskrit-lexicon-scans.github.io/hariv?2) *viveśatuḥ* (metrisch für *viviśatuḥ*) st. *viveśitau* zu lesen ist.
 
-- **RU:** — Caus. [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910), где, однако, при другом изд. [2,49,9](https://sanskrit-lexicon-scans.github.io/hariv?2) *viveśatuḥ* (метрически вместо *viviśatuḥ*) следует читать вместо *viveśitau*.
+- **RU:** — Caus. [HARIV. 5910](https://sanskrit-lexicon-scans.github.io/hariv?5910), где, однако, при другом изд. [2,49,9](https://sanskrit-lexicon-scans.github.io/hariv?2) *viveśatuḥ* (метрически вм. *viviśatuḥ*) следует читать вместо *viveśitau*.
   <sub>attested</sub>
 
 **T70)** — Mit *anuvi* sich da und dort niederlassen, — einfinden; mit Acc. [MAITR. S. 2,4,7. 8].
@@ -35,7 +35,7 @@
 
 **T73)** — 2〉 sich anschliessen an (Acc.), sich vereinen mit (Instr.).
 
-- **RU:** — 2〉 присоединяться к (Acc.), объединяться, соединяться с (Instr.).
+- **RU:** — 2〉 присоединяться к (Acc.), объединяться, соединяться с (Ins.).
   <sub>attested</sub>
 
 **T74)** — 3〉 eintreten —, eingehen —, dringen —, fahren in (Acc., ausnahmsweise Loc.).
@@ -50,7 +50,7 @@
 
 **T76)** — 5〉 sich niederlassen, — niederlegen, — zur Ruhe begeben ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), mit oder zu seinem Weibe (Instr., Instr. mit *saha* oder mit Dat. [[KAUṢ. UP. 2,10] *saṃvekṣyan* zu lesen]) — auf oder in (Loc. oder *˚upari*), schlafen mit (Instr.), sich lagen auf (Acc.). *saṃviṣṭa* sich hingelegt habend ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), zur Ruhe gegangen, schlafend.
 
-- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), с или к своей женой (Instr., Instr. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Instr.), возлежать на (Acc.). *saṃviṣṭa* возлёгший ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), отошедший ко сну, спящий.
+- **RU:** — 5〉 располагаться, — ложиться, — отходить ко сну ([27,19](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?27)), с или к своей женой (Ins., Ins. с *saha* или с Dat. [следует читать [KAUṢ. UP. 2,10] *saṃvekṣyan*]) — на или в (Loc. или *˚upari*), спать с (Ins.), возлежать на (Acc.). *saṃviṣṭa* возлегший ([Chr. 39,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39)), отошедший ко сну, спящий.
   <sub>attested</sub>
 
 **T77)** — 6〉 beschlafen, mit Acc. des Weibes.
@@ -60,7 +60,7 @@
 
 **T78)** — 7〉 sich setzen zu (Acc.). *saṃviṣṭa* gesessen mit (Instr.).
 
-- **RU:** — 7〉 садиться к, подле (Acc.). *saṃviṣṭa* сидевший с (Instr.).
+- **RU:** — 7〉 садиться к, подле (Acc.). *saṃviṣṭa* сидевший с (Ins.).
   <sub>attested</sub>
 
 **T79)** — 8〉 sich mit Etwas (Acc.) befassen.

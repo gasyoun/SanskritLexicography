@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["gaRanA"]=[{"key": "ga_ran_a~~h0_zz_sch", "h": "{%gaṇanā%}", "iast": "gaṇanā", "senses": [{"tag": "˚", "de_html": "gaṇanā ˚ = upamā, <span class=ls>S II,43,6.</span>", "ru_html": "gaṇanā ˚ (в конце сложного слова, форма новая по сравнению с PW) = upamā, <span class=ls>S II,43,6.</span>", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["gaRanA"]=[];

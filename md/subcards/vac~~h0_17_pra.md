@@ -20,7 +20,7 @@
 [CHĀND. UP. 4,10,2.] [8,8,4.]
 [M. 2,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,89) [3,22.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,22) [124.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,124) [266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,266) [5,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,57) [7,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,36) [8,266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,266) [9,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,56)
 [BHAG. 4,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,1) [8,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?8,11)
-[MBH. 1,6148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6148)
+[MBH. 1,6148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6148) = [≈Вульг. 1.156.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A156_S010) = ≈крит. 01,144.10c
 [HARIV. 9622.](https://sanskrit-lexicon-scans.github.io/hariv?9622)
 [R. GORR. 1,4,75.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,75) [5,84,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,84,4) [88,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,8)
 [VARĀH. BṚH. S. 1,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?1,11) [11,53.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,53) [25,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?25,1) [41,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?41,1) [43,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?43,11) [45,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,1) [46,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,1) [54,62.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,62)
@@ -29,7 +29,7 @@
 [6,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,37) [MĀRK. P. 54,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?54,8) [BRAHMA-P. in LA. (III) 49,6.] [PAÑCAR. 1,1,23.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,1,23) *ātmacaritavṛttāntaṃ parasparaṃ procatuḥ*
 [PAÑCAT. 116,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?116,1) *omiti brāhmaṇaḥ pravakṣyannāha* praecepturus
 [TAITT. UP. 1,8.] *naiva tasya vapuḥ śakyaṃ pravaktuṃ veṣa eva ca* lässt sich nicht mittheilen, — beschreiben
-[MBH. 10,222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.222) *adya bārhaspataḥ śrīmānyuktaḥ puṣyeṇa* (so ist zu lesen) *procyate brāhmaṇaiḥ*
+[MBH. 10,222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.222) = [≈Вульг. 10.6.7](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U01_A006_S007) = ≈крит. 10,6.7c *adya bārhaspataḥ śrīmānyuktaḥ puṣyeṇa* (so ist zu lesen) *procyate brāhmaṇaiḥ*
 [R. 2,26,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,9) ([11](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,26,11) [GORR.]). [H. 19.](https://sanskrit-lexicon-scans.github.io/abch2/app1?19) *prokta* verkündet, mitgetheilt, gelehrt, aufgeführt, erwähnt
 [M. 2,68.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,68) [5,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,110) [7,98.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,98) [12,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,126)
 [P. 4,2,64.](https://ashtadhyayi.com/sutraani/4/2/64) [3,101.](https://ashtadhyayi.com/sutraani/4/3/101) Einl. 1. [VARĀH. BṚH. S. 45,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,1) [BHĀG. P. 2,9,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,43) [8,13,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,13,37) *(ayaṃ paśudharmaḥ) manuṣyāṇāmapi prokto veṇe rājyaṃ praśāsati* wird auch bei den Menschen erwähnt, soll auch bei den Menschen stattgefunden haben
@@ -55,7 +55,7 @@
 [CHĀND. UP. 4,10,2.] [8,8,4.]
 [M. 2,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,89) [3,22.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,22) [124.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,124) [266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,266) [5,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,57) [7,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,36) [8,266.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,266) [9,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,56)
 [BHAG. 4,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,1) [8,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?8,11)
-[MBH. 1,6148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6148)
+[MBH. 1,6148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6148) = [≈Вульг. 1.156.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A156_S010) = ≈крит. 01,144.10c
 [HARIV. 9622.](https://sanskrit-lexicon-scans.github.io/hariv?9622)
 [R. GORR. 1,4,75.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,75) [5,84,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,84,4) [88,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,8)
 [VARĀH. BṚH. S. 1,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?1,11) [11,53.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,53) [25,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?25,1) [41,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?41,1) [43,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?43,11) [45,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,1) [46,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,1) [54,62.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?54,62)
@@ -63,9 +63,9 @@
 [BHĀG. P. 1,2,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,1) [4,1,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,12) *brahma sanātanam . nāradāya vocantam* (acc. partic.)
 [6,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,37) [MĀRK. P. 54,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?54,8) [BRAHMA-P. in LA. (III) 49,6.] [PAÑCAR. 1,1,23.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,1,23) *ātmacaritavṛttāntaṃ parasparaṃ procatuḥ*
 [PAÑCAT. 116,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?116,1) *omiti brāhmaṇaḥ pravakṣyannāha* praecepturus
-[TAITT. UP. 1,8.] *naiva tasya vapuḥ śakyaṃ pravaktuṃ veṣa eva ca* не поддаётся передаче, — описанию
-[MBH. 10,222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.222) *adya bārhaspataḥ śrīmānyuktaḥ puṣyeṇa* (так следует читать) *procyate brāhmaṇaiḥ*
-[R. 2,26,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,9) ([11](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,26,11) [GORR.]). [H. 19.](https://sanskrit-lexicon-scans.github.io/abch2/app1?19) *prokta* возвещённый, переданный, наставленный, перечисленный, упомянутый
+[TAITT. UP. 1,8.] *naiva tasya vapuḥ śakyaṃ pravaktuṃ veṣa eva ca* не поддается передаче, — описанию
+[MBH. 10,222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.222) = [≈Вульг. 10.6.7](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U01_A006_S007) = ≈крит. 10,6.7c *adya bārhaspataḥ śrīmānyuktaḥ puṣyeṇa* (так следует читать) *procyate brāhmaṇaiḥ*
+[R. 2,26,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,9) ([11](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,26,11) [GORR.]). [H. 19.](https://sanskrit-lexicon-scans.github.io/abch2/app1?19) *prokta* возвещенный, переданный, наставленный, перечисленный, упомянутый
 [M. 2,68.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,68) [5,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,110) [7,98.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,98) [12,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,126)
 [P. 4,2,64.](https://ashtadhyayi.com/sutraani/4/2/64) [3,101.](https://ashtadhyayi.com/sutraani/4/3/101) введ. 1. [VARĀH. BṚH. S. 45,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,1) [BHĀG. P. 2,9,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,9,43) [8,13,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,13,37) *(ayaṃ paśudharmaḥ) manuṣyāṇāmapi prokto veṇe rājyaṃ praśāsati* упоминается также у людей, должно было иметь место также у людей
 [M. 9,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,66) *yāḥ kardamasutāḥ proktā nava brahmarṣipatnayaḥ*
@@ -88,14 +88,14 @@
   <sub>attested</sub>
 
 **3))** — 3) sagen, sprechen
-[MBH. 2,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.503) [5,7487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7487)
+[MBH. 2,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.503) = [≈Вульг. 2.12.24](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A012_S024) = крит. — [5,7487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7487)
 [KATHĀS. 3,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,48)
 [PAÑCAT. 4,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?4,14) [77,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?77,1) [96,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,25) *ataḥ procyate* impers.
 [49,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,5) *samudra ityevaṃ procyate*
 
 [PRAŚNOP. 6,5.] *kumārilasvāminā proktam*
 [PRAB. 110,9.] *tattatprocya*
-[MBH. 5,888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.888)
+[MBH. 5,888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.888) = [≈Вульг. 5.30.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A030_S022) = ≈крит. 05,30.22a
 [R. 1,62,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,16)
 [Spr. 155.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?155) *vākyam*
 [HARIV. 7286.](https://sanskrit-lexicon-scans.github.io/hariv?7286)
@@ -104,22 +104,22 @@
 [BHAṬṬ. 15,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,11) *procyamānaśrutibhiḥ* so v. a. erschallend
 [BHĀG. P. 5,2,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,4) *mantriproktaniṣevin* das was der Minister sagt
 [VARĀH. BṚH. S. 74,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?74,3) — *tebhya evaṃ pravakṣyāmi* so will ich zu ihnen sprechen
-[MBH. 4,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.65) gewöhnlich mit acc. der Person: *rājā provāca bhīmam*
-[3,15673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15673) [15788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15788) [5,7332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7332) [R. 1,9,46.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,46) [BHĀG. P. 3,23,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,22) [BHAṬṬ. 7,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,47) *svāgataṃ tu iti proktā taiḥ*
-[MBH. 3,2468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2468)
+[MBH. 4,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.65) = [≈Вульг. 4.3.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A003_S006) = крит. — gewöhnlich mit acc. der Person: *rājā provāca bhīmam*
+[3,15673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15673) = [≈Вульг. 3.269.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S007) = ≈крит. 03,253.7a [15788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15788) = [≈Вульг. 3.272.11](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S011) = ≈крит. 03,256.11c [5,7332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7332) = [≈Вульг. 5.186.5](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A186_S005) = ≈крит. 05,187.5a [R. 1,9,46.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,46) [BHĀG. P. 3,23,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,22) [BHAṬṬ. 7,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,47) *svāgataṃ tu iti proktā taiḥ*
+[MBH. 3,2468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2468) = [≈Вульг. 3.64.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S068) = ≈крит. 03,61.64a
 [Spr. 1927.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1927)
 [ŚUK. in LA. (III) 33,15.] mit dopp. acc.: *taṃ pravakṣyāmi bhāratīm*
 [R. 2,64,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,37)
 
 - **RU:** — 3) говорить, произносить
-[MBH. 2,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.503) [5,7487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7487)
+[MBH. 2,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.503) = [≈Вульг. 2.12.24](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A012_S024) = крит. — [5,7487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7487)
 [KATHĀS. 3,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,48)
 [PAÑCAT. 4,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?4,14) [77,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?77,1) [96,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,25) *ataḥ procyate* impers.
 [49,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?49,5) *samudra ityevaṃ procyate*
 
 [PRAŚNOP. 6,5.] *kumārilasvāminā proktam*
 [PRAB. 110,9.] *tattatprocya*
-[MBH. 5,888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.888)
+[MBH. 5,888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.888) = [≈Вульг. 5.30.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A030_S022) = ≈крит. 05,30.22a
 [R. 1,62,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,16)
 [Spr. 155.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?155) *vākyam*
 [HARIV. 7286.](https://sanskrit-lexicon-scans.github.io/hariv?7286)
@@ -128,9 +128,9 @@
 [BHAṬṬ. 15,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,11) *procyamānaśrutibhiḥ* так преим. звучащий
 [BHĀG. P. 5,2,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,4) *mantriproktaniṣevin* то, что говорит министр
 [VARĀH. BṚH. S. 74,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?74,3) — *tebhya evaṃ pravakṣyāmi* так хочу говорить им
-[MBH. 4,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.65) обычно с acc. лица: *rājā provāca bhīmam*
-[3,15673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15673) [15788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15788) [5,7332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7332) [R. 1,9,46.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,46) [BHĀG. P. 3,23,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,22) [BHAṬṬ. 7,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,47) *svāgataṃ tu iti proktā taiḥ*
-[MBH. 3,2468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2468)
+[MBH. 4,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.65) = [≈Вульг. 4.3.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A003_S006) = крит. — обычно с acc. лица: *rājā provāca bhīmam*
+[3,15673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15673) = [≈Вульг. 3.269.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S007) = ≈крит. 03,253.7a [15788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15788) = [≈Вульг. 3.272.11](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S011) = ≈крит. 03,256.11c [5,7332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7332) = [≈Вульг. 5.186.5](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A186_S005) = ≈крит. 05,187.5a [R. 1,9,46.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,46) [BHĀG. P. 3,23,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,22) [BHAṬṬ. 7,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,47) *svāgataṃ tu iti proktā taiḥ*
+[MBH. 3,2468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2468) = [≈Вульг. 3.64.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S068) = ≈крит. 03,61.64a
 [Spr. 1927.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1927)
 [ŚUK. in LA. (III) 33,15.] с dopp. acc.: *taṃ pravakṣyāmi bhāratīm*
 [R. 2,64,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,37)
@@ -160,7 +160,7 @@
 [Spr. 2300.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2300) *raṇaproktena karmaṇā* названный битвой
 [HARIV. 5702.](https://sanskrit-lexicon-scans.github.io/hariv?5702) *uditaṃ proktamudgate* (так следует читать) т.е. *udita* означает так преим. *udgata*
 [TRIK. 3,3,150.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,150) — *proktvā*
-[PAÑCAT. 97,14](https://sanskrit-lexicon-scans.github.io/pantankose/app2?97,14) является ошибочной формой вместо *procya* .
+[PAÑCAT. 97,14](https://sanskrit-lexicon-scans.github.io/pantankose/app2?97,14) является ошибочной формой вм. *procya* .
   <sub>attested</sub>
 
 **misc)** — Vgl. *pravaktar* fg., *pravacana* fg., *pravāka, pravācya* (in der Bed.
@@ -168,12 +168,12 @@
 [HARIV. 7178](https://sanskrit-lexicon-scans.github.io/hariv?7178)), *purāṇaprokta* . — caus. verkünden lassen
 [GOBH. 1,3,19.]
 — Vgl. *pravācana* . — desid. scheinbar
-[MBH. 12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767), wo aber mit der [ed. Bomb.] *pravivikṣataḥ* zu lesen ist.
+[MBH. 12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) = [≈Вульг. 12.102.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A102_S015) = ≈крит. 12,103.15a, wo aber mit der [ed. Bomb.] *pravivikṣataḥ* zu lesen ist.
 
 - **RU:** — ср. *pravaktar* сл., *pravacana* сл., *pravāka, pravācya* (в знач.
  1) b) также
 [HARIV. 7178](https://sanskrit-lexicon-scans.github.io/hariv?7178)), *purāṇaprokta* . — caus. велеть возвещать
 [GOBH. 1,3,19.]
 — ср. *pravācana* . — desid. по видимости
-[MBH. 12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767), где, однако, с [ed. Bomb.] следует читать *pravivikṣataḥ* .
+[MBH. 12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) = [≈Вульг. 12.102.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A102_S015) = ≈крит. 12,103.15a, где, однако, с [Бомбейская ред.] следует читать *pravivikṣataḥ* .
   <sub>attested</sub>

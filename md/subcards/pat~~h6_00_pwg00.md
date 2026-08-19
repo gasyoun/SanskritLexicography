@@ -6,14 +6,14 @@
 **1) a)** 1. *pat*
  1) fliegen, wehen von Fahnen (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) dahineilen, entfliehen: *ahorātrāḥ patantīme*
-[MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Hierher gehört auch die
+[MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) = [≈Вульг. 12.280.66](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A280_S066) = ≈крит. 12,271.65a [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) = [≈Вульг. 12.177.25](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A177_S025) = ≈крит. 12,171.25a [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) = [≈Вульг. 12.280.64](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A280_S064) = ≈крит. 12,271.63c [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) = [≈Вульг. 12.321.18](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A321_S018) = ≈крит. 12,309.17a Hierher gehört auch die
 Z. 4 stehende Stelle aus [R.];
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
 
 - **RU:** 1. *pat*
- 1) летать, реять о знамёнах (*patākā*)
+ 1) летать, реять о знаменах (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) мчаться, бежать: *ahorātrāḥ patantīme*
-[MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) Сюда же относится
+[MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) = [≈Вульг. 12.280.66](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A280_S066) = ≈крит. 12,271.65a [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) = [≈Вульг. 12.177.25](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A177_S025) = ≈крит. 12,171.25a [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) = [≈Вульг. 12.280.64](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A280_S064) = ≈крит. 12,271.63c [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) = [≈Вульг. 12.321.18](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A321_S018) = ≈крит. 12,309.17a Сюда же относится
 стк. место из [R.] (п. 4);
 ср. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
   <sub>attested</sub>

@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["kaNguRI"]=[{"key": "ka_ngu_r_i~~h0_zz_sch", "h": "kaṅguṇī", "iast": "kaṅguṇī", "senses": [{"tag": "1", "de_html": "°kaṅguṇī f. = kaṅgunī (*Fennich), <span class=ls>Prabandh. 103,6.</span> {part=N,seq=28731,type=˚,n=2}", "ru_html": "°kaṅguṇī f. = kaṅgunī (*могар), <span class=ls>Prabandh. 103,6.</span>", "en_html": "", "dcs": null, "src": "attested"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["kaNguRI"]=[];

@@ -53,8 +53,8 @@
   <sub>attested</sub>
 
 **caus-2)** — 2) umbringen: *spaśairnirghātayetsarvān* (so [ed. Bomb.])
-[MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792)
+[MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792) = [≈Вульг. 1.145.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A145_S010) = крит. —
 
-- **RU:** — 2) умерщвлять: *spaśairnirghātayetsarvān* (так [ed. Bomb.])
-[MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792)
+- **RU:** — 2) умерщвлять: *spaśairnirghātayetsarvān* (так [Бомбейская ред.])
+[MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792) = [≈Вульг. 1.145.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A145_S010) = крит. —
   <sub>attested</sub>

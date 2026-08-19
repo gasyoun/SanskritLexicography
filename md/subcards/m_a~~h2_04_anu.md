@@ -20,17 +20,17 @@
 [BHĀG. P. 2,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,8,12) *evaṃ kālo 'pyanumitaḥ saukṣmye sthaulye ca*
 [3,11,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,3) *amuṣya vayaṃ kathamanumimīmahi* wie sollen wir uns dieses denken?
 [5,22,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,1) *vapurhyanumimīmaste meghasyeva savidyutaḥ* so v. a. wir stellen uns deinen Körper wie eine von Blitzen durchzuckte Wolke vor
-[MBH. 12,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1851) *tadaiva te 'numīyante (˚māryante* [ed. Bomb.]) *kuṇape kṛmayo* (so die [ed. Bomb.]) *yathā* man betrachtet sie wie Würmer in einem Leichname
-[4872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4872) *tadetadṛṣiṇā proktaṃ vistareṇānumīyate* so v. a. daraus macht man sich einen Schluss
-[8819.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8819) *dṛṣṭvā bhavantaṃ na śaknumo 'numātum* wir können uns keine Vorstellung über dich machen, wir können nicht errathen, wer du bist
-[5,1262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1262) *nāpyanumātuṃ śakyate*
+[MBH. 12,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1851) = [≈Вульг. 12.52.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A052_S004) = ≈крит. 12,52.4c *tadaiva te 'numīyante (˚māryante* [ed. Bomb.]) *kuṇape kṛmayo* (so die [ed. Bomb.]) *yathā* man betrachtet sie wie Würmer in einem Leichname
+[4872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4872) = [≈Вульг. 12.138.13](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A138_S013) = ≈крит. 12,136.13a *tadetadṛṣiṇā proktaṃ vistareṇānumīyate* so v. a. daraus macht man sich einen Schluss
+[8819.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8819) = [≈Вульг. 12.245.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A245_S026) = ≈крит. 12,237.26a *dṛṣṭvā bhavantaṃ na śaknumo 'numātum* wir können uns keine Vorstellung über dich machen, wir können nicht errathen, wer du bist
+[5,1262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1262) = [≈Вульг. 5.36.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S003) = ≈крит. 05,36.3c *nāpyanumātuṃ śakyate*
 [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) *dhūmādagnimanumāya* aus Rauch auf Feuer schliessend
 [TARKAS. 32.] *atimatiṃ tvāṃ hi vākyairanumimīmahe* aus den Reden schliessen wir, dass du hohen Verstandes bist,
-[MBH. 3,12470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12470) *aliṅgāṃ prakṛtiṃ tvāhurliṅgairanumimīmahe*
-[12,11309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11309) *puryā vaidhavyaśaṃsīni kāraṇairanumīmahe*
+[MBH. 3,12470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12470) = [≈Вульг. 3.179.43](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U11_A179_S043) = ≈крит. 03,176.43c *aliṅgāṃ prakṛtiṃ tvāhurliṅgairanumimīmahe*
+[12,11309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11309) = [≈Вульг. 12.303.47](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A303_S047) = ≈крит. 12,292.42a *puryā vaidhavyaśaṃsīni kāraṇairanumīmahe*
 [HARIV. 4256.](https://sanskrit-lexicon-scans.github.io/hariv?4256) *atidevairamānuṣyaiḥ karmabhiḥ so 'numīyate*
 [4148.](https://sanskrit-lexicon-scans.github.io/hariv?4148) [MAITRYUP. 6,1.] *saṃbhāvyamasminkarmedamutsāhāccānumīyate*
-[MBH. 1,7043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7043)
+[MBH. 1,7043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7043) = [≈Вульг. 1.185.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A185_S034) = ≈крит. 01,176.33e
 [SUŚR. 1,147,20. 246,15.]
 [KUMĀRAS. 2,25.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,25) *mānasvarūpābhijñatvaṃ teṣāṃ kenānumīyate*
 [Spr. 2139.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2139)
@@ -44,40 +44,40 @@ Schol. zu [KAP. 1,137.] *anumita* gefolgert, geschlossen
 [KUMĀRAS. 3,60.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,60)
 [PRAB. 79,5.]
 [LA. (II) 86,9.] — *anumīya*
-[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) fehlerhaft für *anunīya*, wie die [ed. Bomb.] hat.
+[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) = [≈Вульг. 3.6.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S025) = ≈крит. 03,7.24c fehlerhaft für *anunīya*, wie die [ed. Bomb.] hat.
 — Vgl. *anumā, anumāna, anumiti, anumeya* (auch
 [KUMĀRAS. 1,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,37)
 [BHĀṢĀP. 49]).
 
-- **RU:** — 2) составлять представление о чём-либо или ком-либо; из чего-либо (abl. instr.) заключать, умозаключать, делать вывод: *yathā kālo 'numīyate . bhūtabhavyabhavacchabdaḥ*
+- **RU:** — 2) составлять представление о чем-либо или ком-либо; из чего-либо (abl. instr.) заключать, умозаключать, делать вывод: *yathā kālo 'numīyate . bhūtabhavyabhavacchabdaḥ*
 [BHĀG. P. 2,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,8,12) *evaṃ kālo 'pyanumitaḥ saukṣmye sthaulye ca*
 [3,11,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,3) *amuṣya vayaṃ kathamanumimīmahi* как нам это понимать / как нам об этом составить представление?
-[5,22,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,1) *vapurhyanumimīmaste meghasyeva savidyutaḥ* так преим. мы представляем твоё тело подобным туче, пронизанной молниями
-[MBH. 12,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1851) *tadaiva te 'numīyante (˚māryante* [ed. Bomb.]) *kuṇape kṛmayo* (так [ed. Bomb.]) *yathā* их рассматривают, подобно червям в трупе
-[4872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4872) *tadetadṛṣiṇā proktaṃ vistareṇānumīyate* так преим. из этого делают умозаключение
-[8819.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8819) *dṛṣṭvā bhavantaṃ na śaknumo 'numātum* мы не можем составить о тебе никакого представления, мы не можем угадать, кто ты
-[5,1262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1262) *nāpyanumātuṃ śakyate*
+[5,22,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,1) *vapurhyanumimīmaste meghasyeva savidyutaḥ* так преим. мы представляем твое тело подобным туче, пронизанной молниями
+[MBH. 12,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1851) = [≈Вульг. 12.52.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A052_S004) = ≈крит. 12,52.4c *tadaiva te 'numīyante (˚māryante* [Бомбейская ред.]) *kuṇape kṛmayo* (так [Бомбейская ред.]) *yathā* их рассматривают, подобно червям в трупе
+[4872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4872) = [≈Вульг. 12.138.13](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A138_S013) = ≈крит. 12,136.13a *tadetadṛṣiṇā proktaṃ vistareṇānumīyate* так преим. из этого делают умозаключение
+[8819.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8819) = [≈Вульг. 12.245.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A245_S026) = ≈крит. 12,237.26a *dṛṣṭvā bhavantaṃ na śaknumo 'numātum* мы не можем составить о тебе никакого представления, мы не можем угадать, кто ты
+[5,1262.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1262) = [≈Вульг. 5.36.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S003) = ≈крит. 05,36.3c *nāpyanumātuṃ śakyate*
 [Verz. d. Oxf. H. 264,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) *dhūmādagnimanumāya* заключая из дыма о наличии огня
 [TARKAS. 32.] *atimatiṃ tvāṃ hi vākyairanumimīmahe* из речей мы заключаем, что ты обладаешь высоким умом,
-[MBH. 3,12470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12470) *aliṅgāṃ prakṛtiṃ tvāhurliṅgairanumimīmahe*
-[12,11309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11309) *puryā vaidhavyaśaṃsīni kāraṇairanumīmahe*
+[MBH. 3,12470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12470) = [≈Вульг. 3.179.43](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U11_A179_S043) = ≈крит. 03,176.43c *aliṅgāṃ prakṛtiṃ tvāhurliṅgairanumimīmahe*
+[12,11309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11309) = [≈Вульг. 12.303.47](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A303_S047) = ≈крит. 12,292.42a *puryā vaidhavyaśaṃsīni kāraṇairanumīmahe*
 [HARIV. 4256.](https://sanskrit-lexicon-scans.github.io/hariv?4256) *atidevairamānuṣyaiḥ karmabhiḥ so 'numīyate*
 [4148.](https://sanskrit-lexicon-scans.github.io/hariv?4148) [MAITRYUP. 6,1.] *saṃbhāvyamasminkarmedamutsāhāccānumīyate*
-[MBH. 1,7043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7043)
+[MBH. 1,7043.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7043) = [≈Вульг. 1.185.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A185_S034) = ≈крит. 01,176.33e
 [SUŚR. 1,147,20. 246,15.]
 [KUMĀRAS. 2,25.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,25) *mānasvarūpābhijñatvaṃ teṣāṃ kenānumīyate*
 [Spr. 2139.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2139)
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 28.] [BHĀG. P. 6,1,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,46) [KIR. 5,47.] [GAUḌAP.] к [SĀṂKHYAK. 5.] [P. 6,3,80](https://ashtadhyayi.com/sutraani/6/3/80), схол. *anvamīyata śuddheti śāntena vapuṣaiva sā*
 [RAGH. 15,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,77) [17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,17) [11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,11) *anumīyamāna*
 [KULL.] к [M. 1,21.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,21) *anumātavya*
-схол. к [KAP. 1,137.] *anumita* выведенный, заключённый
+схол. к [KAP. 1,137.] *anumita* выведенный, заключенный
 [VARĀH. BṚH. S. 51,36.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?51,36)
 [KUSUM. 60,10.] *tejoviśeṣānumita* выведенный из
 [RAGH. 2,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,7) [68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,68) [5,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,12)
 [KUMĀRAS. 3,60.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,60)
 [PRAB. 79,5.]
 [LA. (II) 86,9.] — *anumīya*
-[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) ошибочно вместо *anunīya*, как гласит [ed. Bomb.].
+[MBH. 3,286](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.286) = [≈Вульг. 3.6.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S025) = ≈крит. 03,7.24c ошибочно вм. *anunīya*, как гласит [Бомбейская ред.].
 — ср. *anumā, anumāna, anumiti, anumeya* (также
 [KUMĀRAS. 1,37.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,37)
 [BHĀṢĀP. 49]).

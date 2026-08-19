@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["mAtrA"]=[{"key": "m_atr_a~~h0_zz_sch", "h": "mātrā", "iast": "mātrā", "senses": [{"tag": "SCH-Nachtrag, к знач. 2 (доп.)", "de_html": "˚eine Art Strophe, <span class=ls>S I,177,6</span>; 182,8. {part=,seq=21806,type=,n=2}", "ru_html": "— ˚вид строфы, <span class=ls>S I,177,6</span>; 182,8.", "en_html": "", "dcs": null, "src": "attested"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["mAtrA"]=[];

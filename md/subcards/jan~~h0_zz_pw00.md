@@ -89,7 +89,7 @@
 
 **pw_3a)** — a〉 geboren, — von (Loc.), erzeugt von (Instr. oder Abl.), — mit (Loc.), neugeboren, gewachsen, entstanden, — aus (Abl.), zum Vorschein gekommen. Am Ende eines Comp.
 
-- **RU:** — a〉 рожденный, — от (Loc.), порожденный (Instr. или Abl.), — с (Loc.), новорожденный, выросший, возникший, — из (Abl.), появившийся на свет. В конце Comp.
+- **RU:** — a〉 рожденный, — от (Loc.), порожденный (Ins. или Abl.), — с (Loc.), новорожденный, выросший, возникший, — из (Abl.), появившийся на свет. В конце Comp.
   <sub>attested</sub>
 
 **pw_3a_alpha)** — α〉 geboren vor so und so langer Zeit, so und so alt.
@@ -102,14 +102,14 @@
 - **RU:** — β〉 возникший —, проявляющийся в.
   <sub>attested</sub>
 
-**pw_3b)** — b〉 geboren —, von Natur bestimmt zu (Dat.) [ṚV. 4,20,6. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06).
+**pw_3b)** — b〉 geboren —, von Natur bestimmt zu (Dat.) [ṚV. 4,20,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06) [ṚV. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.094.html#rv09.094.04).
 
-- **RU:** — b〉 рожденный —, предназначенный от природы к (Dat.) [ṚV. 4,20,6. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06).
+- **RU:** — b〉 рожденный —, предназначенный от природы к (Dat.) [ṚV. 4,20,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.06) [ṚV. 9,94,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.094.html#rv09.094.04).
   <sub>attested</sub>
 
 **pw_3c)** — c〉 geworden. _n._ impers. mit doppeltem Instr.
 
-- **RU:** — c〉 ставший. _n._ impers. с двойным Instr.
+- **RU:** — c〉 ставший. _n._ impers. с двойным Ins.
   <sub>attested</sub>
 
 **pw_3d)** — d〉 geworden —, gereichend zu (Dat.) [Spr. 2932](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2932).
@@ -129,7 +129,7 @@
 
 **pw_3g)** — g〉 versehen mit (Instr.).
 
-- **RU:** — g〉 снабженный (Instr.).
+- **RU:** — g〉 снабженный (Ins.).
   <sub>attested</sub>
 
 **pw_3h)** — h〉 häufig am Anfange eines adj. Comp. in den Bedeutungen a〉 c〉 e〉 und f〉. Nicht selten auch mit Umstellung der beiden Glieder. *Desid. *jijaniṣati*. *Intens. *jañjanyate, jājāyate, jañjantas, jājātas, jañjanati* und *jañjñati*.
@@ -149,7 +149,7 @@
 
 **pw_pre2_1)** — 1〉 geboren werden —, entstehen aus (Abl.), erzeugt werden von (Instr.).
 
-- **RU:** — 1〉 рождаться —, возникать из (Abl.), порождаться от (Instr.).
+- **RU:** — 1〉 рождаться —, возникать из (Abl.), порождаться от (Ins.).
   <sub>attested</sub>
 
 **pw_pre2_2)** — 2〉 entstehen auf oder über (Acc.).
@@ -182,9 +182,9 @@
 - **RU:** — 3〉 *anujāta* тот, кто испытал второе рождение, т.е. был принят в учение.
   <sub>attested</sub>
 
-**pw_pre3_4)** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) ist in Unordnung; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
+**pw_pre3_4)** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) = [≈Вульг. 13.1.48](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S048) = ≈крит. 13,1.41a ist in Unordnung; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
 
-- **RU:** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) находится в беспорядке; ср. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
+- **RU:** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) = [≈Вульг. 13.1.48](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S048) = ≈крит. 13,1.41a находится в беспорядке; ср. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
   <sub>attested</sub>
 
 **pw_pre4)** — Mit *samanu* Jmd (Acc.) ähnlich geboren werden.
@@ -224,7 +224,7 @@
 
 **pw_pre7_4)** — 4〉 geboren —, erzeugt werden, — von (Abl.), — mit (Loc.), entstehen, — aus (Abl.), zum Vorschein kommen mit (Instr.).
 
-- **RU:** — 4〉 рождаться —, порождаться, — от (Abl.), — с (Loc.), возникать, — из (Abl.), появляться на свет с (Instr.).
+- **RU:** — 4〉 рождаться —, порождаться, — от (Abl.), — с (Loc.), возникать, — из (Abl.), появляться на свет с (Ins.).
   <sub>attested</sub>
 
 **pw_pre7_5)** — 5〉 wiedergeboren werden, von Neuem entstehen.
@@ -352,9 +352,9 @@
 - **RU:** — 4〉 рождаться вновь.
   <sub>attested</sub>
 
-**pw_pre16_5)** — 5〉 sein [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) fehlerhaft für *upayātam*.
+**pw_pre16_5)** — 5〉 sein [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A062_S022) = ≈крит. 09,61.22c fehlerhaft für *upayātam*.
 
-- **RU:** — 5〉 быть [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) ошибочно вм. *upayātam*.
+- **RU:** — 5〉 быть [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A062_S022) = ≈крит. 09,61.22c ошибочно вм. *upayātam*.
   <sub>attested</sub>
 
 **pw_pre17_hdr)** — Caus.
@@ -419,7 +419,7 @@
 
 **pw_pre22_1)** — 1〉 geboren werden, entstehen, — aus (Abl.), in (*adhi* oder Loc.), erzeugt werden von (Instr. oder Abl.) mit (Loc.). *mātāpitros* von Mutter und Vater.
 
-- **RU:** — 1〉 рождаться, возникать, — из (Abl.), в (*adhi* или Loc.), порождаться от (Instr. или Abl.) с (Loc.). *mātāpitros* от матери и отца.
+- **RU:** — 1〉 рождаться, возникать, — из (Abl.), в (*adhi* или Loc.), порождаться от (Ins. или Abl.) с (Loc.). *mātāpitros* от матери и отца.
   <sub>attested</sub>
 
 **pw_pre22_2)** — 2〉 zu einem lebenden Wesen sich entwickeln.
@@ -434,12 +434,12 @@
 
 **pw_pre22_4)** — 4〉 sich fortpflanzen, — durch (Instr.).
 
-- **RU:** — 4〉 размножаться, — посредством (Instr.).
+- **RU:** — 4〉 размножаться, — посредством (Ins.).
   <sub>attested</sub>
 
 **pw_pre22_5)** — 5〉 zeugen, gebären, zeugen mit (Loc. oder Instr.). *prajātā* it act. Bed.
 
-- **RU:** — 5〉 порождать, рождать, порождать с (Loc. или Instr.). *prajātā* it act. знач.
+- **RU:** — 5〉 порождать, рождать, порождать с (Loc. или Ins.). *prajātā* it act. знач.
   <sub>attested</sub>
 
 **pw_pre22_6)** — 6〉 zu einem lebenden Wesen werden lassen.
@@ -454,7 +454,7 @@
 
 **pw_pre23_1)** — 1〉 Jmd (Acc.) sich fortpflanzen lassen durch (Instr.), fortpflanzen, entstehen lassen.
 
-- **RU:** — 1〉 дать кому-л. (Acc.) размножаться посредством (Instr.), давать размножаться, давать возникнуть.
+- **RU:** — 1〉 дать кому-л. (Acc.) размножаться посредством (Ins.), давать размножаться, давать возникнуть.
   <sub>attested</sub>
 
 **pw_pre23_2)** — 2〉 zeugen. *prajanayāmakaḥ* [MAITR. S. 1,6,10. 8,5].

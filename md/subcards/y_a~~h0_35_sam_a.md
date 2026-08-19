@@ -5,10 +5,10 @@
 
 **1)** — *samā*
  1) zusammen herbeikommen, zusammenkommen, hinzukommen, herantreten, kommen, kommen nach, zu: *lokapālā mahendrādyāḥ samāyānti* (*sabhāṃ yā˚* [ed. Calc.]) *didṛkṣavaḥ*
-[MBH. 3,2139](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2139) ([N. 3,5](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,5)). [R. 1,59,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,11) [2,91,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,14) [4,37,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,23) [MĀRK. P. 109,37.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,37) [128,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?128,27) [LA. (III) 91,1.] *catvāro varāḥ samāyātāḥ*
+[MBH. 3,2139](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2139) = [≈Вульг. 3.55.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S004) = ≈крит. 03,52.4a ([N. 3,5](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,5)). [R. 1,59,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,11) [2,91,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,14) [4,37,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,23) [MĀRK. P. 109,37.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,37) [128,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?128,27) [LA. (III) 91,1.] *catvāro varāḥ samāyātāḥ*
 [13,1.] *dvau panthānau samāyātau*
 [PAÑCAT. 245,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,2) *samāyāt*
-[MBH. 4,1107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1107)
+[MBH. 4,1107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1107) = [≈Вульг. 4.33.41](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A033_S041) = ≈крит. 04,32.31a
 [R. GORR. 2,33,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,33,6) *samāyāte kānte*
 [Spr. 3178.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3178)
 [KATHĀS. 104,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,50)
@@ -23,7 +23,7 @@
 [PAÑCAT. 199,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,2) *vatsarājasya pārśvam*
 [KATHĀS. 14,1.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,1) *nikaṭaṃ tasya*
 [45,279.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,279) *samāyāsyanti te 'ntikam*
-[MBH. 12,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7213)
+[MBH. 12,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7213) = [≈Вульг. 12.199.106](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A199_S106) = ≈крит. 12,192.105c
 [MĀRK. P. S. 656, Z. 12.] *atra samāyayau*
 [KATHĀS. 34,144.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,144)
 [HIT. 27,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,14)
@@ -32,7 +32,7 @@
 [5,16.] *tām* ging auf sie zu
 [KATHĀS. 9,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,62) *kālameghaḥ samāyayau* zog auf
 [52,323.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,323) *śaktiṃ samāyāntīṃ* herangeflogen kommend
-[MBH. 5,7206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7206) *samāyāti sadā lakṣmīrnārikelaphalāmbuvat*
+[MBH. 5,7206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7206) = [≈Вульг. 5.181.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A181_S006) = ≈крит. 05,182.6c *samāyāti sadā lakṣmīrnārikelaphalāmbuvat*
 [Spr. 3177.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3177) *tilapuṣpātsamāyāti vāyuḥ*
 [1034.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1034) *asyā duṣṭā daśā samāyātā* kam über sie
 [Z. d. d. m. G. 14,574,3.] *mama valānnidrā samāyātā*
@@ -42,10 +42,10 @@
 
 - **RU:** — *samā*
  1) сойтись, собраться вместе, прибыть, подойти, прийти, прийти к, к: *lokapālā mahendrādyāḥ samāyānti* (*sabhāṃ yā˚* [ed. Calc.]) *didṛkṣavaḥ*
-[MBH. 3,2139](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2139) ([N. 3,5](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,5)). [R. 1,59,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,11) [2,91,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,14) [4,37,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,23) [MĀRK. P. 109,37.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,37) [128,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?128,27) [LA. (III) 91,1.] *catvāro varāḥ samāyātāḥ*
+[MBH. 3,2139](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2139) = [≈Вульг. 3.55.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S004) = ≈крит. 03,52.4a ([N. 3,5](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,5)). [R. 1,59,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,11) [2,91,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,14) [4,37,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,37,23) [MĀRK. P. 109,37.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?109,37) [128,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?128,27) [LA. (III) 91,1.] *catvāro varāḥ samāyātāḥ*
 [13,1.] *dvau panthānau samāyātau*
 [PAÑCAT. 245,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,2) *samāyāt*
-[MBH. 4,1107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1107)
+[MBH. 4,1107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1107) = [≈Вульг. 4.33.41](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A033_S041) = ≈крит. 04,32.31a
 [R. GORR. 2,33,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,33,6) *samāyāte kānte*
 [Spr. 3178.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3178)
 [KATHĀS. 104,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,50)
@@ -53,14 +53,14 @@
 [PAÑCAT. 34,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?34,17) [46,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?46,6)
 [HIT. 14,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,22) *kastvaṃ kutaḥ samāyātaḥ*
 [40,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,21) [83,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?83,2) [VET. in LA. (III) 7,11. 9,13.] [Verz. d. Oxf. H. 14,b,40.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?14)
-*kṛtvā nandasya mantritām . khinnaḥ samāyayau draṣṭuṃ kadācidvindhyavāsinīm* он пошёл
+*kṛtvā nandasya mantritām . khinnaḥ samāyayau draṣṭuṃ kadācidvindhyavāsinīm* он пошел
 [KATHĀS. 2,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,2) *vṛṣṇayaḥ sarva evaite svaṃ svaṃ sadma samāyayuḥ*
 [HARIV. 14494.](https://sanskrit-lexicon-scans.github.io/hariv?14494)
 [R. 2,71,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,10) [Verz. d. Oxf. H. 149,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?149) *tamuddeśaṃ samāyātaḥ* пришедший
 [PAÑCAT. 199,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,2) *vatsarājasya pārśvam*
 [KATHĀS. 14,1.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,1) *nikaṭaṃ tasya*
 [45,279.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,279) *samāyāsyanti te 'ntikam*
-[MBH. 12,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7213)
+[MBH. 12,7213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7213) = [≈Вульг. 12.199.106](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A199_S106) = ≈крит. 12,192.105c
 [MĀRK. P. S. 656, Z. 12.] *atra samāyayau*
 [KATHĀS. 34,144.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,144)
 [HIT. 27,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,14)
@@ -69,7 +69,7 @@
 [5,16.] *tām* направился к ней
 [KATHĀS. 9,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,62) *kālameghaḥ samāyayau* выступил в поход
 [52,323.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,323) *śaktiṃ samāyāntīṃ* прилетающий
-[MBH. 5,7206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7206) *samāyāti sadā lakṣmīrnārikelaphalāmbuvat*
+[MBH. 5,7206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7206) = [≈Вульг. 5.181.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A181_S006) = ≈крит. 05,182.6c *samāyāti sadā lakṣmīrnārikelaphalāmbuvat*
 [Spr. 3177.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3177) *tilapuṣpātsamāyāti vāyuḥ*
 [1034.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1034) *asyā duṣṭā daśā samāyātā* напал на них
 [Z. d. d. m. G. 14,574,3.] *mama valānnidrā samāyātā*
@@ -79,10 +79,10 @@
   <sub>attested</sub>
 
 **2)** — 2) verstreichen, verfliessen: *māsā daśa samāyayuḥ*
-[MBH. 4,373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.373)
+[MBH. 4,373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.373) = [≈Вульг. 4.14.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A014_S001) = ≈крит. 04,13.1a
 
 - **RU:** — 2) протекать, истекать (о времени): *māsā daśa samāyayuḥ*
-[MBH. 4,373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.373)
+[MBH. 4,373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.373) = [≈Вульг. 4.14.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A014_S001) = ≈крит. 04,13.1a
   <sub>attested</sub>
 
 **3)** — 3) in einen Zustand, eine Lage, ein Verhältniss kommen; mit acc.: *vṛddhim*

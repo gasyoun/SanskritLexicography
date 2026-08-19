@@ -20,10 +20,10 @@
 
 **4 (mit samud))** Mit samud [Kaus.] in die Höhe heben, [R. ed. Bomb. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39)
 
-- **RU:** С samud [Kaus.] поднимать ввысь, [R. ed. Bomb. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39)
+- **RU:** С samud [Kaus.] поднимать ввысь, [R. Бомбейская ред. 4,28,39.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39)
   <sub>lexicographic</sub>
 
 **5 (mit prati))** Mit prati entgegenhandeln (einem Befehle, Akk.), [Divyāvad. 178,11.]
 
-- **RU:** С prati действовать наперекор, поступать вопреки (приказу, Akk.), [Divyāvad. 178,11.]
+- **RU:** С prati действовать наперекор, поступать вопреки (приказу, Acc.), [Divyāvad. 178,11.]
   <sub>lexicographic</sub>

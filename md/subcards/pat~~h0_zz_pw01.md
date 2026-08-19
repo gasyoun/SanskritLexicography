@@ -30,17 +30,17 @@
 
 **mit_T1)** — Mit *upa* hinfliegen —, hineilen zu (Acc. oder Loc.).
 
-- **RU:** — Mit *upa* лететь к, спешить к (Acc. oder Loc.).
+- **RU:** — С *upa* лететь к, спешить к (Acc. или Loc.).
   <sub>attested</sub>
 
 **mit_T4)** — Mit *ā — upa* hinzufliegen zu (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
 
-- **RU:** — Mit *ā — upa* подлетать к (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
+- **RU:** — С *ā — upa* подлетать к (Acc.) [ṚV. 5,78,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.078.html#rv05.078.01).
   <sub>attested</sub>
 
 **mit_T7_header)** — Mit *ni*
 
-- **RU:** — Mit *ni*
+- **RU:** — С *ni*
   <sub>attested</sub>
 
 **mit_T7_1)** — 1〉 herabfliegen, sich niederlassen, sich herabstürzen, sich herablassen, — auf (Loc.). *pādayoḥ* sich Jmd (Gen.) zu Füssen werfen. *nabhonipatita* vom Himmel herabgeflogen.
@@ -50,7 +50,7 @@
 
 **mit_T7_2)** — 2〉 sich stürzen auf, herfallen über (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
 
-- **RU:** — 2〉 бросаться на, нападать на (Acc. oder Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
+- **RU:** — 2〉 бросаться на, нападать на (Acc. или Loc.) [133,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?133). [321,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?321).
   <sub>attested</sub>
 
 **mit_T7_3)** — 3〉 sich hineinbegeben in (Loc.) [176,18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?176).
@@ -70,12 +70,12 @@
 
 **mit_T7_6)** — 6〉 sich einfügen, zu stehen kommen, seinen Platz erhalten.
 
-- **RU:** — 6〉 вписываться, занимать своё место.
+- **RU:** — 6〉 вписываться, занимать свое место.
   <sub>attested</sub>
 
 **mit_T7_7)** — 7〉 niederfallen, stürzen auf (Loc. oder Gen. mit *upari*) oder in (Acc. oder Loc.), umfallen, fallen. *nipatita* vom Busen so v. a. eingefallen.
 
-- **RU:** — 7〉 падать, рушиться на (Loc. oder Gen. mit *upari*) oder в (Acc. oder Loc.), опрокидываться, падать. *nipatita* от груди так преим. ввалившийся.
+- **RU:** — 7〉 падать, рушиться на (Loc. или Gen. mit *upari*) или в (Acc. или Loc.), опрокидываться, падать. *nipatita* от груди так преим. ввалившийся.
   <sub>attested</sub>
 
 **mit_T7_8)** — 8〉 fallen auf, so v. a. sich richten auf (Loc.).
@@ -115,7 +115,7 @@
 
 **caus_3)** — 3〉 auswerfen, so v. a. ausspeien.
 
-- **RU:** — 3〉 выбрасывать, так преим. выплёвывать.
+- **RU:** — 3〉 выбрасывать, так преим. выплевывать.
   <sub>attested</sub>
 
 **caus_4)** — 4〉 herabfallen lassen, so v. a. tröpfeln.
@@ -155,12 +155,12 @@
 
 **mit_T54)** — Mit *abhini* Caus. nieder-, hinunterwerfen.
 
-- **RU:** — Mit *abhini* Caus. низвергать, бросать вниз.
+- **RU:** — С *abhini* Caus. низвергать, бросать вниз.
   <sub>attested</sub>
 
 **mit_T56_header)** — Mit *upani*
 
-- **RU:** — Mit *upani*
+- **RU:** — С *upani*
   <sub>attested</sub>
 
 **mit_T56_1)** — 1〉 niederfliegen zu (Acc.).
@@ -190,7 +190,7 @@
 
 **mit_T64)** — Mit *praṇi* sich niederwerfen, sich ehrfurchtsvoll verneigen vor (Acc., Dat. oder Loc.).
 
-- **RU:** — Mit *praṇi* простираться ниц, почтительно кланяться перед (Acc., Dat. oder Loc.).
+- **RU:** — С *praṇi* простираться ниц, почтительно кланяться перед (Acc., Dat. или Loc.).
   <sub>attested</sub>
 
 **mit_T64_caus)** — Caus. machen, dass Jmd sich niederwirft.
@@ -200,12 +200,12 @@
 
 **mit_T69)** — Mit *pratini* in *˚pāta*.
 
-- **RU:** — Mit *pratini* in *˚pāta*.
+- **RU:** — С *pratini* in *˚pāta*.
   <sub>attested</sub>
 
 **mit_T71_header)** — Mit *vini*
 
-- **RU:** — Mit *vini*
+- **RU:** — С *vini*
   <sub>attested</sub>
 
 **mit_T71_1)** — 1〉 herabfliegen, sich herabstürzen, sich hinablassen auf (Loc.), sich niederwerfen zu (Loc.), herabstürzen, -fallen, hineinfallen in (Loc.).
@@ -240,7 +240,7 @@
 
 **mit_T79_header)** — Mit *saṃni*
 
-- **RU:** — Mit *saṃni*
+- **RU:** — С *saṃni*
   <sub>attested</sub>
 
 **mit_T79_1)** — 1〉 herabfliegen, sich herablassen, — auf (Loc.), herabfallen auf (Loc.).
@@ -255,7 +255,7 @@
 
 **mit_T84)** — Mit (Instr. oder Instr. mit *saha*), sich in einer Versammlung (Loc.) einstellen [VAJRACCH. 19,14]. *saṃnipatita* Pl. zusammengetroffen, versammelt [KĀRAṆḌ. 2,7. 15. 15,5].
 
-- **RU:** — Mit (Instr. oder Instr. mit *saha*), появляться на собрании (Loc.) [VAJRACCH. 19,14]. *saṃnipatita* Pl. собравшийся, сошедшийся [KĀRAṆḌ. 2,7. 15. 15,5].
+- **RU:** — Mit (Ins. или Ins. mit *saha*), появляться на собрании (Loc.) [VAJRACCH. 19,14]. *saṃnipatita* Pl. собравшийся, сошедшийся [KĀRAṆḌ. 2,7. 15. 15,5].
   <sub>attested</sub>
 
 **mit_T79_3)** — 3〉 sich darbieten.
@@ -290,12 +290,12 @@
 
 **mit_T99_3)** — 3〉 hinziehen (einen Strick) zu (Loc.) [ŚULBAS. 1,56. 57].
 
-- **RU:** — 3〉 тянуть (верёвку) к (Loc.) [ŚULBAS. 1,56. 57].
+- **RU:** — 3〉 тянуть (веревку) к (Loc.) [ŚULBAS. 1,56. 57].
   <sub>attested</sub>
 
 **mit_T102_header)** — Mit *nis*
 
-- **RU:** — Mit *nis*
+- **RU:** — С *nis*
   <sub>attested</sub>
 
 **mit_T102_1)** — 1〉 hinausfliegen, -stürzen, hervorstürzen, hinausgehen, herauskommen, hervorschiessen, herausfallen.
@@ -320,12 +320,12 @@
 
 **mit_T103_caus_2)** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
 
-- **RU:** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) fehlerhaft für *niṣpādita*; *niryātita* [ed. Bomb.]
+- **RU:** — 2〉 *niṣpātita* [R. 2,75,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,15) ошибочно вм. *niṣpādita*; *niryātita* [Бомбейская ред.]
   <sub>attested</sub>
 
 **mit_T109_header)** — Mit *abhinis*
 
-- **RU:** — Mit *abhinis*
+- **RU:** — С *abhinis*
   <sub>attested</sub>
 
 **mit_T109_1)** — 1〉 ausfliegen zu (Acc.).
@@ -340,7 +340,7 @@
 
 **mit_T111_header)** — Mit *vinis*
 
-- **RU:** — Mit *vinis*
+- **RU:** — С *vinis*
   <sub>attested</sub>
 
 **mit_T111_1)** — 1〉 herausfliegen, hervorfliegen, herausspringen, hervorstürzen, -kommen, -treten, herausfallen.
@@ -355,7 +355,7 @@
 
 **mit_T112_header)** — Mit *parā*
 
-- **RU:** — Mit *parā*
+- **RU:** — С *parā*
   <sub>attested</sub>
 
 **mit_T112_1)** — 1〉 wegfliehen, entfliehen, fortziehen (von Wolken).
@@ -395,17 +395,17 @@
 
 **mit_T117)** — Mit *anuparā* neben Jmd (Acc.) fliegen, — eilen.
 
-- **RU:** — Mit *anuparā* лететь рядом с кем-л. (Acc.), мчаться рядом.
+- **RU:** — С *anuparā* лететь рядом с кем-л. (Acc.), мчаться рядом.
   <sub>attested</sub>
 
 **mit_T119_header)** — Mit *pari*
 
-- **RU:** — Mit *pari*
+- **RU:** — С *pari*
   <sub>attested</sub>
 
 **mit_T119_1)** — 1〉 herumfliegen, umfliegen, herumlaufen, in die Kreuz und in die Quere laufen, sich tummeln, umlaufen, hinundherspringen (vom Winde); als Trans. mit Acc.
 
-- **RU:** — 1〉 летать кругом, облетать, бегать кругом, носиться взад и вперёд, кружиться, бегать по кругу, прыгать туда-сюда (о ветре); als Trans. mit Acc.
+- **RU:** — 1〉 летать кругом, облетать, бегать кругом, носиться взад и вперед, кружиться, бегать по кругу, прыгать туда-сюда (о ветре); als Trans. mit Acc.
   <sub>attested</sub>
 
 **mit_T119_2)** — 2〉 herunterspringen von (Abl.).
@@ -440,12 +440,12 @@
 
 **mit_T128)** — Mit *vipari* umherfliegen [ŚAṂK. zu BĀDAR. 2,3,40].
 
-- **RU:** — Mit *vipari* летать кругом [ŚAṂK. zu BĀDAR. 2,3,40].
+- **RU:** — С *vipari* летать кругом [ŚAṂK. zu BĀDAR. 2,3,40].
   <sub>attested</sub>
 
 **mit_T130_header)** — Mit *pra*
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
   <sub>attested</sub>
 
 **mit_T130_1)** — 1〉 aus-, davonfliegen, hinfliegen, davon-, hineilen, — zu (Loc.).
@@ -455,7 +455,7 @@
 
 **mit_T130_2)** — 2〉 hinabfliegen, -stürzen, fallen, — auf (Loc. oder Acc.) Stürzen, fallen.
 
-- **RU:** — 2〉 слетать вниз, низвергаться, падать, — на (Loc. oder Acc.) низвергаться, падать.
+- **RU:** — 2〉 слетать вниз, низвергаться, падать, — на (Loc. или Acc.) низвергаться, падать.
   <sub>attested</sub>
 
 **mit_T130_3)** — 3〉 gerathen in (Loc.).
@@ -483,9 +483,9 @@
 - **RU:** — 2〉 преследовать, гнаться за.
   <sub>attested</sub>
 
-**mit_T136_caus_3)** — 3〉 abwerfen [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33).
+**mit_T136_caus_3)** — 3〉 abwerfen [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33) = [≈Вульг. 7.1.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S038) = ≈крит. 07,1.36a.
 
-- **RU:** — 3〉 сбрасывать [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33).
+- **RU:** — 3〉 сбрасывать [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33) = [≈Вульг. 7.1.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S038) = ≈крит. 07,1.36a.
   <sub>attested</sub>
 
 **desid)** — Desid. (*pra — pipatiṣati*) davoneilen wollen.
@@ -500,5 +500,5 @@
 
 **mit_T142)** — Mit *anupra* in **gehānuprapātam*.
 
-- **RU:** — Mit *anupra* in **gehānuprapātam*.
+- **RU:** — С *anupra* in **gehānuprapātam*.
   <sub>attested</sub>

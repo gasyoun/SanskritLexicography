@@ -11,8 +11,8 @@
 [H. 1457.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1457) [1483.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1483)
 [HALĀY. 4,11.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,11) *darbhāndviguṇānbhugnān*
 [ĀŚV. GṚHY. 4,7,8.] *vāyubhugnāṅga*
-[MBH. 13,2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2281) *kṣudhā bhugnaḥ*
-[12,4265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4265) *bharabhugnavitatabāhu*
+[MBH. 13,2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2281) = [≈Вульг. 13.40.35](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S035) = ≈крит. 13,40.35a *kṣudhā bhugnaḥ*
+[12,4265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4265) = [≈Вульг. 12.118.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S008) = ≈крит. 12,118.8a *bharabhugnavitatabāhu*
 [VĀSAVAD. 2,4.] *nyubjo bhugne rujā*
 [AK. 2,6,2,12.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,12) *pāṇiruha*
 [BHAṬṬ. 11,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,8) *bhruvau ca bhugnau* (masc.!) gefurcht
@@ -30,8 +30,8 @@
 [H. 1457.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1457) [1483.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1483)
 [HALĀY. 4,11.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,11) *darbhāndviguṇānbhugnān*
 [ĀŚV. GṚHY. 4,7,8.] *vāyubhugnāṅga*
-[MBH. 13,2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2281) *kṣudhā bhugnaḥ*
-[12,4265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4265) *bharabhugnavitatabāhu*
+[MBH. 13,2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2281) = [≈Вульг. 13.40.35](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S035) = ≈крит. 13,40.35a *kṣudhā bhugnaḥ*
+[12,4265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4265) = [≈Вульг. 12.118.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S008) = ≈крит. 12,118.8a *bharabhugnavitatabāhu*
 [VĀSAVAD. 2,4.] *nyubjo bhugne rujā*
 [AK. 2,6,2,12.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,12) *pāṇiruha*
 [BHAṬṬ. 11,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,8) *bhruvau ca bhugnau* (masc.!) «бороздчатый, изборожденный»

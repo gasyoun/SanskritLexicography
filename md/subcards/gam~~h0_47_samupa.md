@@ -5,15 +5,15 @@
 
 **1)** — *samupa*
  1) herbeikommen, hinzutreten zu: *gītaiśca stutisaṃyuktaiḥ prītyā samupajagmire*
-[MBH. 1,7718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7718) *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
+[MBH. 1,7718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7718) = [≈Вульг. 1.209.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S032) = ≈крит. 01,201.31c *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
 [R. 6,99,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,99,21) *vasiṣṭhaṃ samupāgamat*
-[MBH. 1,6673](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6673)*. [6872](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6872)*. [R. 1,18,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,18,9)*.
+[MBH. 1,6673](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6673) = [≈Вульг. 1.173.28](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A173_S028) = ≈крит. 01,163.6c*. [6872](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6872) = [≈Вульг. 1.178.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A178_S018) = ≈крит. 01,169.17e*. [R. 1,18,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,18,9)*.
 
 - **RU:** — *samupa*
  1) приблизиться, подойти к: *gītaiśca stutisaṃyuktaiḥ prītyā samupajagmire*
-[MBH. 1,7718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7718) *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
+[MBH. 1,7718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7718) = [≈Вульг. 1.209.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S032) = ≈крит. 01,201.31c *saṃnikarṣaṃ me śīghraṃ samupagacchatu*
 [R. 6,99,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,99,21) *vasiṣṭhaṃ samupāgamat*
-[MBH. 1,6673](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6673)*. [6872](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6872)*. [R. 1,18,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,18,9)*.
+[MBH. 1,6673](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6673) = [≈Вульг. 1.173.28](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A173_S028) = ≈крит. 01,163.6c*. [6872](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6872) = [≈Вульг. 1.178.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A178_S018) = ≈крит. 01,169.17e*. [R. 1,18,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,18,9)*.
   <sub>attested</sub>
 
 **2)** — 2) in einen Zustand, ein Verhältniss treten: *pañcatvaṃ samupāgamat*

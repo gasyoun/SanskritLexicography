@@ -25,9 +25,9 @@
 - **RU:** — c〉 жечь, отсюда преим. приводить в сильный жар —, в возбуждение, волновать (*śrotraṃ putravṛttāntena* [DAŚAK. 78,9. 10]), грызть сердце.
   <sub>attested</sub>
 
-**2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7)), verbrennen, brennen (auch von Wunden), in Flammen stehen.
+**2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Вульг. 4.1.24](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S024) = ≈крит. 04,1.20c), verbrennen, brennen (auch von Wunden), in Flammen stehen.
 
-- **RU:** — 2〉 Pass. *dahyate* (в эпосе и [MĀN. GṚHY. 2,15] также *˚ti*) быть сжигаемым ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7)), сгорать, гореть (также о ранах), стоять в пламени.
+- **RU:** — 2〉 Pass. *dahyate* (в эпосе и [MĀN. GṚHY. 2,15] также *˚ti*) быть сжигаемым ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Вульг. 4.1.24](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S024) = ≈крит. 04,1.20c), сгорать, гореть (также о ранах), стоять в пламени.
   <sub>attested</sub>
 
 **2b)** — b〉 durch Feuer entfernt werden, getilgt werden, zu Nichte werden überh.
@@ -84,8 +84,8 @@
 **3)** — 3〉 brennen [Spr. 339](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?339).
 — Desid. *didhikṣiti, ˚te* im Begriff stehen.
 
-- **RU:** — 3) *гореть* [Spr. 339](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?339).
- — Desid. *didhikṣiti, ˚te* *собираться (сделать что-л.), быть готовым (сделать что-л.)*.
+- **RU:** — 3) гореть [Spr. 339](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?339).
+ — Desid. *didhikṣiti, ˚te* собираться (сделать что-л.), быть готовым (сделать что-л.).
   <sub>attested</sub>
 
 **1)** — 1〉 zu verbrennen.
@@ -121,7 +121,7 @@
 
 **2)** — 2〉 ganz ausdörren [ŚAT. BR. 1,4,1,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,14).
 
-- **RU:** — 2) *совсем иссушить, совершенно высушить* [ŚAT. BR. 1,4,1,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,14).
+- **RU:** — 2) совсем иссушить, совершенно высушить [ŚAT. BR. 1,4,1,14](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,14).
   <sub>attested</sub>
 
 **3)** — 3〉 mit der Flamme nicht erreichen [ĀPAST. ŚR. 1,25,9].
@@ -146,10 +146,10 @@
 - **RU:** — 2〉 вспыхивать, воспламеняться (intrans.) [ṚV. 2,1,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.10).
   <sub>attested</sub>
 
-**3)** — 3〉 hinterher verbrennen (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20).
+**3)** — 3〉 hinterher verbrennen (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Вульг. 12.8.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S023) = ≈крит. 12,8.23a.
 — Mit *apa*
 
-- **RU:** — 3〉 сгорать вслед, догорать (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20).
+- **RU:** — 3〉 сгорать вслед, догорать (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Вульг. 12.8.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S023) = ≈крит. 12,8.23a.
 — С *apa*
   <sub>attested</sub>
 

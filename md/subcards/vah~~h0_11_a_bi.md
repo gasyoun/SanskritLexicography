@@ -21,7 +21,7 @@
 [ŚAT. BR. 3,8,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,16) [4,1,1,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,1,25)
 [AIT. BR. 6,9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,9) [8,24.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,24) *ghṛtakulyā madhukulyāḥ pitṝnsvadhā abhivahanti*
 [ŚAT. BR. 11,5,6,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,6,4) *tato 'bhyavahadavyagrau vairāṭiḥ savyasācinam . yatrātiṣṭhatkṛpaḥ*
-[MBH. 4,1757. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1757) ср. *abhivahana, abhivāhya, abhyūḍhi* . — caus. проводить (время) ошибочно вместо *ati*
+[MBH. 4,1757. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1757) ср. *abhivahana, abhivāhya, abhyūḍhi* . — caus. проводить (время) ошибочно вм. *ati*
 [RĀJA-TAR. 1,332](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,332) (где сверх того надлежит читать *satrayodaśavāsarā*) и
 [PAÑCAR. 3,7,23.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,23)
   <sub>attested</sub>

@@ -13,9 +13,9 @@
 [ŚAT. BR. 1,9,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,16) [2,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,17) [3,5,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,18) *kuśīm*
 [6,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,10) *āchinna* abgerissen
 [KĀTY. ŚR. 4,1,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,11) *ye cācchindanti vṛṣaṇān*
-[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
-[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) *āchetsyāmyahametasya dhanurjyāmapi cāhave*
-[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) *ācchinnaṃ dhanuriva nirguṇam*
+[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A266_S042) = ≈крит. 12,258.39c *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
+[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) = [≈Вульг. 1.151.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S006) = ≈крит. 01,138.4a *āchetsyāmyahametasya dhanurjyāmapi cāhave*
+[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) = [≈Вульг. 4.61.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A061_S018) = ≈крит. 04,56.3a *ācchinnaṃ dhanuriva nirguṇam*
 [MṚCCH. 131,17.]
 [BHĀG. P. 9,15,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,33) *jagadācchidya dhāvat*
 [3,21,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,18)
@@ -25,9 +25,9 @@
 [ŚAT. BR. 1,9,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,2,16) [2,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,17) [3,5,2,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,18) *kuśīm*
 [6,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,10) *āchinna* оборванный
 [KĀTY. ŚR. 4,1,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,1,11) *ye cācchindanti vṛṣaṇān*
-[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
-[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) *āchetsyāmyahametasya dhanurjyāmapi cāhave*
-[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) *ācchinnaṃ dhanuriva nirguṇam*
+[MBH. 12,9377.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A266_S042) = ≈крит. 12,258.39c *ākramya mānuṣaṃ kaṇṭhamācchidya dhamanīmapi*
+[1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) = [≈Вульг. 1.151.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S006) = ≈крит. 01,138.4a *āchetsyāmyahametasya dhanurjyāmapi cāhave*
+[4,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1967) = [≈Вульг. 4.61.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A061_S018) = ≈крит. 04,56.3a *ācchinnaṃ dhanuriva nirguṇam*
 [MṚCCH. 131,17.]
 [BHĀG. P. 9,15,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,33) *jagadācchidya dhāvat*
 [3,21,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,18)
@@ -51,11 +51,11 @@
   <sub>attested</sub>
 
 **A-3)** — 3) abziehen, entfernen: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
-[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* abschneiden von, ausschliessen von
+[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) = [≈Вульг. 3.234.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A234_S001) = ≈крит. 03,223.1c *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* abschneiden von, ausschliessen von
 [KULL.] zu [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
 
 - **RU:** — 3) отстранять, удалять: *asminyathāvatsakhi vartamānā bhartāramācchetsyasi kāminībhyaḥ*
-[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* отрезать от, исключать из
+[MBH. 3,14710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14710) = [≈Вульг. 3.234.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A234_S001) = ≈крит. 03,223.1c *karmāntarārjitebhyaḥ svargādilokebhya ācchinatti* отрезать от, исключать из
 [KULL.] к [M. 4,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,219)
   <sub>attested</sub>
 
@@ -63,7 +63,7 @@
 [HARIV. 4836.](https://sanskrit-lexicon-scans.github.io/hariv?4836) *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
 [KUMĀRAS. 2,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,46) *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
 [KATHĀS. 11,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,54) *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
-[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180)
+[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) = [≈Вульг. 4.67.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A067_S011) = крит. — [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) = [≈Вульг. 4.67.23](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A067_S023) = крит. — [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) = [≈Вульг. 4.69.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A069_S001) = ≈крит. 04,64.19a [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) = [≈Вульг. 4.47.19](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A047_S019) = ≈крит. 04,42.19c [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) = [≈Вульг. 3.35.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A035_S017) = ≈крит. 03,36.17c [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) = [≈Вульг. 5.147.39](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A147_S039) = ≈крит. 05,145.36c [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) = [≈Вульг. 12.68.46](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A068_S046) = ≈крит. 12,68.46a [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180) = [≈Вульг. 13.62.78](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A062_S078) = ≈крит. 13,61.75a
 [MṚCCH. 165,7.]
 [PAÑCAT. 222,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,4)
 [BHĀG. P. 6,7,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,39) [8,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,32)
@@ -72,7 +72,7 @@
 [HARIV. 4836.](https://sanskrit-lexicon-scans.github.io/hariv?4836) *(havyam) jātavedomukhānmāyī miṣatāmācchinatti naḥ*
 [KUMĀRAS. 2,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,46) *rājaputrīrimāḥ śatam . ācchidya rājñāṃ gehebhyaḥ parivāraṃ nyadhānmama ..*
 [KATHĀS. 11,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,54) *ācchidya sarvaṃ ca dhanaṃ kurubhyaḥ*
-[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180)
+[MBH. 4,2147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2147) = [≈Вульг. 4.67.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A067_S011) = крит. — [2159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2159) = [≈Вульг. 4.67.23](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A067_S023) = крит. — [2240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2240) = [≈Вульг. 4.69.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A069_S001) = ≈крит. 04,64.19a [1489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1489) = [≈Вульг. 4.47.19](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A047_S019) = ≈крит. 04,42.19c [3,1392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1392) = [≈Вульг. 3.35.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A035_S017) = ≈крит. 03,36.17c [5,4924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4924) = [≈Вульг. 5.147.39](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A147_S039) = ≈крит. 05,145.36c [12,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2580) = [≈Вульг. 12.68.46](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A068_S046) = ≈крит. 12,68.46a [13,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3180) = [≈Вульг. 13.62.78](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A062_S078) = ≈крит. 13,61.75a
 [MṚCCH. 165,7.]
 [PAÑCAT. 222,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?222,4)
 [BHĀG. P. 6,7,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,39) [8,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,19,32)

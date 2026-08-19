@@ -24,11 +24,11 @@
 
 **6_addendum)** — 6)
 Z. 10. fg. *upahita*
-[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) bedeutet ein secundäres Gut; s. oben u. *upahita* .
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A140_S026) = ≈крит. 12,138.26a bedeutet ein secundäres Gut; s. oben u. *upahita* .
 
 - **RU:** — 6)
 стк. 10. сл. *upahita*
-[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) означает второстепенное благо; см. выше u. *upahita* .
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A140_S026) = ≈крит. 12,138.26a означает второстепенное благо; см. выше u. *upahita* .
   <sub>attested</sub>
 
 **7_addendum)** — 7)

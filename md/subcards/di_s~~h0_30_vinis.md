@@ -13,8 +13,8 @@
   <sub>attested</sub>
 
 **2)** — 2) bezeichnen, angeben: *gajānāṃ ca parīmāṇametadvinirdiśet*
-[MBH. 1,294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.294) *alpakāryaṃ vinirdiṣṭaṃ tasyāgamanakāraṇam*
-[3,2880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2880) *tattenaiva vinirdiśet*
+[MBH. 1,294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.294) = [≈Вульг. 1.2.65](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S065) = ≈крит. 01,2.53a *alpakāryaṃ vinirdiṣṭaṃ tasyāgamanakāraṇam*
+[3,2880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2880) = [≈Вульг. 3.73.29](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S029) = ≈крит. 03,71.27a *tattenaiva vinirdiśet*
 [BHĀG. P. 7,11,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,35) *tatra (deśe) śalyamabhinirdiśet* als vorhanden annehmen, bezeichnen
 [SUŚR. 1,98,17.]
 [YĀJÑ. 3,87.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,87)
@@ -23,13 +23,13 @@ verkünden: *śuddhiṃ tasya vinirdiśet*
 [2,111.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,111) anzeigen s. v. a. ankündigen: *kaṣṭameva jagato vinirdiśet*
 [VARĀH. BṚH. S. 24,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?24,28) *sarpatsu taruṣu — janasaṃkṣayo vinirdiṣṭaḥ*
 [45,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,30) bezeichnen als, erklären für: *yamevaṃlakṣaṇaṃ vidyāttamamitraṃ vinirdiśet*
-[MBH. 12,2997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2997)
+[MBH. 12,2997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2997) = [≈Вульг. 12.80.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A080_S015) = ≈крит. 12,81.15a
 [SUŚR. 1,88,16. 136,14.]
 [VET. 25,8.]
 
 - **RU:** — 2) обозначать, указывать: *gajānāṃ ca parīmāṇametadvinirdiśet*
-[MBH. 1,294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.294) *alpakāryaṃ vinirdiṣṭaṃ tasyāgamanakāraṇam*
-[3,2880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2880) *tattenaiva vinirdiśet*
+[MBH. 1,294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.294) = [≈Вульг. 1.2.65](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S065) = ≈крит. 01,2.53a *alpakāryaṃ vinirdiṣṭaṃ tasyāgamanakāraṇam*
+[3,2880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2880) = [≈Вульг. 3.73.29](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S029) = ≈крит. 03,71.27a *tattenaiva vinirdiśet*
 [BHĀG. P. 7,11,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,11,35) *tatra (deśe) śalyamabhinirdiśet* предполагать как существующее, обозначать
 [SUŚR. 1,98,17.]
 [YĀJÑ. 3,87.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,87)
@@ -37,16 +37,16 @@ verkünden: *śuddhiṃ tasya vinirdiśet*
 [2,111.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,111) указывать см. а. объявлять: *kaṣṭameva jagato vinirdiśet*
 [VARĀH. BṚH. S. 24,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?24,28) *sarpatsu taruṣu — janasaṃkṣayo vinirdiṣṭaḥ*
 [45,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,30) обозначать как, объяснять в качестве: *yamevaṃlakṣaṇaṃ vidyāttamamitraṃ vinirdiśet*
-[MBH. 12,2997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2997)
+[MBH. 12,2997.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2997) = [≈Вульг. 12.80.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A080_S015) = ≈крит. 12,81.15a
 [SUŚR. 1,88,16. 136,14.]
 [VET. 25,8.]
   <sub>attested</sub>
 
 **3)** — 3) ankündigen so v. a. bestimmen, beschliessen: *mokṣaṃ tasya vinirdiśa*
-[MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413)
+[MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413) = [≈Вульг. 5.13.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A013_S014) = ≈крит. 05,13.12c
 
 - **RU:** — 3) объявлять так преим. определять, решать: *mokṣaṃ tasya vinirdiśa*
-[MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413)
+[MBH. 5,413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.413) = [≈Вульг. 5.13.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A013_S014) = ≈крит. 05,13.12c
   <sub>attested</sub>
 
 **4)** — 4) Jmd zu Etwas (loc.) anweisen, mit Etwas beauftragen: *ekakārye vinirdiṣṭo yo bahūnyapi sādhayet*

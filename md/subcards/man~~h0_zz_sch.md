@@ -29,10 +29,10 @@
 
 - **RU:** С saṃprod, 
 
- saṃplomnāya [Āpast. Śr. 8,16,6] — без сомнения ошибочное чтение. Возможно, следует читать saṃpronmlāpya. [Hiraṇy. Śr.] согласно Hillebrandt вместо него имеет saṃśliṣya.
+ saṃplomnāya [Āpast. Śr. 8,16,6] — без сомнения ошибочное чтение. Возможно, следует читать saṃpronmlāpya. [Hiraṇy. Śr.] согласно Hillebrandt вм. него имеет saṃśliṣya.
   <sub>attested</sub>
 
 **prati)** Mit prati [Kaus.] wieder ehren, jemandem (Akk.) vergelten mit (Instr.), [Jātakam. 10,8.]
 
-- **RU:** С prati [Kaus.] чтить в ответ, воздавать кому-л. (Akk.) чем-л. (Instr.), [Jātakam. 10,8.]
+- **RU:** С prati [Kaus.] чтить в ответ, воздавать кому-л. (Acc.) чем-л. (Ins.), [Jātakam. 10,8.]
   <sub>attested</sub>

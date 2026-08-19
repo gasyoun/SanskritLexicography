@@ -25,7 +25,7 @@
 [BHĀG. P. 10,19,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) — desid. herbeiholen
 [PAÑCAV. BR. 20,3,2.] partic. *īpsita*
 
-- **RU:** 1) *tataśca te 'kṣīṇyunmīlya punarbhāṇḍīramāpitāḥ* принесённый
+- **RU:** 1) *tataśca te 'kṣīṇyunmīlya punarbhāṇḍīramāpitāḥ* принесенный
 [BHĀG. P. 10,19,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) — desid. доставлять
 [PAÑCAV. BR. 20,3,2.] partic. *īpsita*
   <sub>attested</sub>

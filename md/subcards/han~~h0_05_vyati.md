@@ -16,8 +16,8 @@
   <sub>attested</sub>
 
 **vyati-3)** [NAIṢ. 17,79.] sich wehren: *vyatyaghnannatrirakṣitāḥ*
-[MBH. 13,7301](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7301) (*vyaghnannatrisurakṣitāḥ* [ed. Bomb.]).
+[MBH. 13,7301](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7301) = [≈Вульг. 13.156.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A156_S011) = ≈крит. 13,141.10c (*vyaghnannatrisurakṣitāḥ* [ed. Bomb.]).
 
 - **RU:** [NAIṢ. 17,79.] защищаться, обороняться: *vyatyaghnannatrirakṣitāḥ*
-[MBH. 13,7301](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7301) (*vyaghnannatrisurakṣitāḥ* [ed. Bomb.]).
+[MBH. 13,7301](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7301) = [≈Вульг. 13.156.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A156_S011) = ≈крит. 13,141.10c (*vyaghnannatrisurakṣitāḥ* [Бомбейская ред.]).
   <sub>attested</sub>

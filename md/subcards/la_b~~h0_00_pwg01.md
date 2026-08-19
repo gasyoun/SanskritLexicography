@@ -8,7 +8,7 @@
 [2,85,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,19) *kevalatvam*
 [MAITRYUP. 6,21.] *svātantryam*
 [22.] *puruṣatvam*
-[MBH. 5,7382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7382)
+[MBH. 5,7382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7382) = [≈Вульг. 5.187.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A187_S013) = ≈крит. 05,188.12c
 [Spr. 4171.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4171)
 [BHĀG. P. 5,24,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,1) *brāhmaṇyam*
 [R. 1,65,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,25) *yauvarājyam*
@@ -30,7 +30,7 @@
 [R. 4,7,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,4) *sevām*
 [RĀJA-TAR. 5,154.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,154) *labdhayuṣmatprasāda*
 [BHĀG. P. 3,15,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,7) *anujñām*
-[MBH. 3,14797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14797)
+[MBH. 3,14797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14797) = [≈Вульг. 3.238.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A238_S002) = ≈крит. 03,227.2c
 [AK. 2,7,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,10) *duḥkham*
 [R. 2,74,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,25)
 [Spr. 267.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?267) [3262.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3262) *kleśam*
@@ -56,7 +56,7 @@
 [2,85,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,19) *kevalatvam*
 [MAITRYUP. 6,21.] *svātantryam*
 [22.] *puruṣatvam*
-[MBH. 5,7382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7382)
+[MBH. 5,7382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7382) = [≈Вульг. 5.187.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A187_S013) = ≈крит. 05,188.12c
 [Spr. 4171.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4171)
 [BHĀG. P. 5,24,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,1) *brāhmaṇyam*
 [R. 1,65,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,25) *yauvarājyam*
@@ -78,7 +78,7 @@
 [R. 4,7,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,4) *sevām*
 [RĀJA-TAR. 5,154.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,154) *labdhayuṣmatprasāda*
 [BHĀG. P. 3,15,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,7) *anujñām*
-[MBH. 3,14797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14797)
+[MBH. 3,14797.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14797) = [≈Вульг. 3.238.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A238_S002) = ≈крит. 03,227.2c
 [AK. 2,7,10.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,10) *duḥkham*
 [R. 2,74,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,25)
 [Spr. 267.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?267) [3262.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3262) *kleśam*
@@ -102,28 +102,28 @@
 
 **3)** — 3) mit einem infin.
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65) zu — bekommen: *draṣṭum*
-[MBH. 4,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.95)
+[MBH. 4,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.95) = [≈Вульг. 4.4.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S013) = ≈крит. 04,4.9c
 [Spr. 5131](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5131) (vgl. *na tamiha darśanāya labhate*
 [CHĀND. UP. 8,3,1.]). *bhoktum*
 [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), Sch.
 *praveṣṭuṃ labhate* es gelingt ihm einzutreten
 [HARIV. 8249.](https://sanskrit-lexicon-scans.github.io/hariv?8249) *na cainaṃ kaścidāroḍhuṃ*
 (v. l. für *ārūḍhaṃ) labhate rājasattamam* so v. a. es gelingt Niemand zu sehen, wie der König hinaufsteigt
-[MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) *martumapi na labhyate* es ist Einem nicht ein Mal zu sterben vergönnt
+[MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) = [≈Вульг. 1.42.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A042_S032) = крит. — *martumapi na labhyate* es ist Einem nicht ein Mal zu sterben vergönnt
 [KATHĀS. 96,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?96,22) *nādharmo labhyate kartuṃ loke vaidyādhare* so v. a. es kann —, es darf kein Unrecht verübt werden
 [106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* er fand keinen Brahmanen zum Opfern
 [MĀRK. P. 133,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,21)
 
 - **RU:** — 3) с infin.
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65) получить возможность —, суметь: *draṣṭum*
-[MBH. 4,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.95)
+[MBH. 4,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.95) = [≈Вульг. 4.4.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S013) = ≈крит. 04,4.9c
 [Spr. 5131](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5131) (ср. *na tamiha darśanāya labhate*
 [CHĀND. UP. 8,3,1.]). *bhoktum*
 [P. 3,4,65](https://ashtadhyayi.com/sutraani/3/4/65), схол.
 *praveṣṭuṃ labhate* ему удается войти
 [HARIV. 8249.](https://sanskrit-lexicon-scans.github.io/hariv?8249) *na cainaṃ kaścidāroḍhuṃ*
 (v. l. вм. *ārūḍhaṃ) labhate rājasattamam* так преим. никому не удается видеть, как царь поднимается
-[MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) *martumapi na labhyate* нельзя даже умереть
+[MBH. 1,1756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1756) = [≈Вульг. 1.42.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A042_S032) = крит. — *martumapi na labhyate* нельзя даже умереть
 [KATHĀS. 96,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?96,22) *nādharmo labhyate kartuṃ loke vaidyādhare* так преим. никакой несправедливости не может —, не должно быть совершено
 [106,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,156) [RĀJA-TAR. 3,142.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,142) *yaṣṭuṃ tato nālabhata dvijān* он не нашел брахмана для совершения жертвоприношения
 [MĀRK. P. 133,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?133,21)

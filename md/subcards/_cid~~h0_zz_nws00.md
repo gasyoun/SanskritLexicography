@@ -10,7 +10,7 @@
 
 **NWS-2)** [Ved , unsp] abschneiden (Fuss, Flügel, Akk), abreissen, zerreissen (Faden, Zügel, Akk), zerstossen (den Kopf, Akk, mit dem Fusse, Istr)
 
-- **RU:** [Ved , unsp] отрезать (ногу, крыло, Akk), отрывать, разрывать (нить, поводья, Akk), разбивать (голову, Akk, ногой, Istr)
+- **RU:** [Ved , unsp] отрезать (ногу, крыло, Acc.), отрывать, разрывать (нить, поводья, Acc.), разбивать (голову, Acc., ногой, Istr)
   <sub>attested</sub>
 
 **NWS-3)** [Ved , unsp] ( chinátti VII ) brechen, zerbrechen
@@ -18,9 +18,9 @@
 - **RU:** [Ved , unsp] ( chinátti VII ) ломать, разламывать
   <sub>attested</sub>
 
-**NWS-4)** [Ved , unsp] ( VII ) abtrennen, abschneiden, abhauen. ṚV 1,116,15
+**NWS-4)** [Ved , unsp] ( VII ) abtrennen, abschneiden, abhauen. [ṚV 1,116,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15)
 
-- **RU:** [Ved , unsp] ( VII ) отделять, отрезать, срубать. ṚV 1,116,15
+- **RU:** [Ved , unsp] ( VII ) отделять, отрезать, срубать. [ṚV 1,116,15](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15)
   <sub>attested</sub>
 
 **NWS-5)** [Buddh , unsp] durchschneiden. zerhacken
@@ -43,9 +43,9 @@
 - **RU:** *+ ud ( ucchinna ): (involving the ceding oṛ) despoiled (lands). khā 7.3.33 .* [Śā , Soc (s.v. ucchinna )] + upa ( upacchinatti ): отрезать, прерывать. ASP 177.4 . Buddh , unsp ; BHSD : 134 (s.v. upacchinatti )
   <sub>attested</sub>
 
-**NWS-9)** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen , unsp (s.v. paricchid )] – zerbrechen, zersplittern. ṚV 7,33,6 . Ved , unsp
+**NWS-9)** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen , unsp (s.v. paricchid )] – zerbrechen, zersplittern. [ṚV 7,33,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.06) . Ved , unsp
 
-- **RU:** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen , unsp (s.v. paricchid )] – разламывать, раздроблять. ṚV 7,33,6 . Ved , unsp
+- **RU:** *+ pari : a) clip round, cut through or oṛṛ or to pieces, mutilate; b) discriminate, decide, determine; c) to separate, divide, part; d) to avert, obviate. Śbh , khāvya(ṃṭh) , śiddhkh .* [Gen. , unsp (s.v. paricchid )] – разламывать, раздроблять. [ṚV 7,33,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.06) . Ved , unsp
   <sub>attested</sub>
 
 **NWS-10)** *– ; rings beschneiden und - abschneiden. ṚV 7,33,6 .* [Ved , unsp] – ( parichinatti ): reaps (grain). Kāraṇḍ 71.7 . Buddh , unsp ; BHSD : 322 (s.v. parichinatti )
@@ -60,7 +60,7 @@
 
 **NWS-12)** *+ pári : ringsum beschneiden (ākk).* [Ved , unsp] + pratyā (only in Caus. ind. p. ° cchedya ), to break to pieces. BaudhDhŚ . Gen , unsp ; MW : 1330 (s.v. pratyācchid )
 
-- **RU:** *+ pári : ringsum beschneiden (ākk).* [Ved , unsp] + pratyā (only in Caus. ind. p. ° cchedya ), разбивать на куски. BaudhDhŚ . Gen , unsp ; MW : 1330 (s.v. pratyācchid )
+- **RU:** *+ pári : ringsum beschneiden (ākk).* [Ved , unsp] + pratyā (only in Caus. ind. p. ° cchedya ), разбивать на куски. BaudhDhŚ . Gen. , unsp ; MW : 1330 (s.v. pratyācchid )
   <sub>attested</sub>
 
 **NWS-13)** *+ vi : unterbrechen, stören. chhū Vī 7, 1 .* [Ved , unsp] – ( vichinna ). Caland 1896, p. 90 . Ved , unsp ; Renou 1935 : 27 (s.v. vichinna )
@@ -70,7 +70,7 @@
 
 **NWS-14)** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): various, diverse. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): cut or torn or split or cleft or broken asunder. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
 
-- **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщепленный, расколотый, разбитый. AV , Hariv , BhāgP . Gen , unsp ; MW : 959 (s.v. vícchinna )
+- **RU:** *– teilen.* [Buddh , unsp (s.v. vicchid )] – ( vicchinna ): разнообразный, различный. Lévi 1925, S. 8, Z. 12 . Buddh , Phil ; Bareau 1953 (2) (s.v. vicchinna ) > + vi ( vicchinna ): срезанный, разорванный, расщепленный, расколотый, разбитый. AV , Hariv , BhāgP . Gen. , unsp ; MW : 959 (s.v. vícchinna )
   <sub>attested</sub>
 
 **NWS-15)** *+ vyava ( vyavacchinna ): 1) separated, detached ṛrom a speciṛic thing by the loss oṛ connection ṭith it ; 2) characteriṣed or possessed oṛ an intervention by similar things. ṃbhh on phāṇ īī.1.1 Vā 2 , ṃbhh on phāṇ īīī.3.83 .* [Śā , Ling (s.v. vyavacchinna )] – ( vyavacchinna ): fixed; demarcated. Sircar 1942, S. 237 . Epigr , unsp ; Sircar 1966 : 383 (s.v. vyavacchinna )
@@ -80,7 +80,7 @@
 
 **NWS-16)** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): cut off, extirpated, destroyed, interrupted, ceased. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
 
-- **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искорененный, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen , unsp ; MW : 1040 (s.v. vyucchitti )
+- **RU:** *+ vyud ( vyucchinna ): geteilt.* [Buddh , unsp (s.v. vyucchinna )] + vyud ( vyucchinna ): отрезанный, искорененный, уничтоженный, прерванный, прекратившийся. Mbh , Kāvya(MW) . Gen. , unsp ; MW : 1040 (s.v. vyucchitti )
   <sub>attested</sub>
 
 **NWS-17)** [ chinná ] divided, torn, cut through, perforated. AV . opened (a wound). Suś . disturbed. Hariv 16258 , Mṛcch . kiṃ naś chinnam : 'what is there in this to disturb us?' there is nothing to care about. Amaru . ? . Suś . [ said of the belly of a leach. ] limited by (in comp.). Bhartṛ(MW) iii, 20 . taken away or out of. R ii, 56, 23 , Ragh xii, 80 . ifc: decaying or exhausted by. Buddh(MW) , Lex(MW) . MW : 406 (s.v. chinná )

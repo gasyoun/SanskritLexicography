@@ -35,7 +35,7 @@
 
 **upa_6)** — 6〉 Jmd (Acc.) bevollmächtigen, die Erlaubniss zu Etwas geben; s. *asaṃmata*. — *saṃmata* auch fehlerhaft für *saṃgata*.
 
-- **RU:** 6〉 уполномочивать кого-л. (Acc.), давать разрешение на что-л.; см. *asaṃmata*. — *saṃmata* также ошибочно вместо *saṃgata*.
+- **RU:** 6〉 уполномочивать кого-л. (Acc.), давать разрешение на что-л.; см. *asaṃmata*. — *saṃmata* также ошибочно вм. *saṃgata*.
   <sub>attested</sub>
 
 **upa_caus)** — Caus.
@@ -45,7 +45,7 @@
 
 **upa_caus_1)** — 1〉 Jmd ehren, Jmd Ehre erweisen. *saṃmānayitvā* [KĀD. 91,23] fehlerhaft für *mānayitvā*, wie die andere Ausg. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164) liest.
 
-- **RU:** 1〉 чтить кого-л., оказывать почесть кому-л.. *saṃmānayitvā* [KĀD. 91,23] ошибочно вместо *mānayitvā*, как читает другая изд. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164).
+- **RU:** 1〉 чтить кого-л., оказывать почесть кому-л.. *saṃmānayitvā* [KĀD. 91,23] ошибочно вм. *mānayitvā*, как читает другая изд. [164,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?164).
   <sub>attested</sub>
 
 **upa_caus_2)** — 2〉 Etwas beachten.
@@ -55,15 +55,15 @@
 
 **upa_caus_3)** — 3〉 Jmd (Gen.) Etwas versichern.
 
-- **RU:** 3〉 заверять кого-л. (Gen.) в чём-л..
+- **RU:** 3〉 заверять кого-л. (Gen.) в чем-л..
   <sub>attested</sub>
 
 **upa_sam)** — Mit *anusam*, *anusaṃmata* gebilligt —, gutgeheissen von (Instr.).
 
-- **RU:** — С *anusam*, *anusaṃmata* одобренный —, санкционированный (Instr.).
+- **RU:** — С *anusam*, *anusaṃmata* одобренный —, санкционированный (Ins.).
   <sub>attested</sub>
 
 **upa_pari)** — Mit *abhisam*, *abhisaṃnata* geehrt —, geschätzt von (im Comp. vorangehend).
 
-- **RU:** — С *abhisam*, *abhisaṃnata* почтённый —, ценимый (в Comp. в препозиции).
+- **RU:** — С *abhisam*, *abhisaṃnata* почтенный —, ценимый (в Comp. в препозиции).
   <sub>attested</sub>

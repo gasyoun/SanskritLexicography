@@ -8,14 +8,14 @@
 [R. 3,23,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,2) *āśramapadam*
 [BHĀG. P. 9,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,23) *svadhiṣṇyam*
 [3,6,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,6,19) [26,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,50) *prītiśca duryodhanamupāviśat* fahren in, kommen über
-[MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389)
+[MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389) = [≈Вульг. 1.135.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A135_S002) = ≈крит. 01,125.2c
 
 - **RU:** — *upā*
  1) входить, вступать в: *parṇaśālām*
 [R. 3,23,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,2) *āśramapadam*
 [BHĀG. P. 9,15,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,23) *svadhiṣṇyam*
 [3,6,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,6,19) [26,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,50) *prītiśca duryodhanamupāviśat* вселяться в, находить на
-[MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389)
+[MBH. 1,5389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5389) = [≈Вульг. 1.135.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A135_S002) = ≈крит. 01,125.2c
   <sub>attested</sub>
 
 **2)** — 2) gerathen in: *devā bhayamupāviśan*

@@ -219,9 +219,9 @@
 - **RU:** — e〉 противоречащий, находящийся в противоречии.
   <sub>attested</sub>
 
-**vi-han-4f)** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) fehlerhaft für *vyāhṛta*.
+**vi-han-4f)** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) = [≈Вульг. 1.2.139](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S139) = ≈крит. 01,2.102c fehlerhaft für *vyāhṛta*.
 
-- **RU:** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) ошибочно вм. *vyāhṛta*.
+- **RU:** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) = [≈Вульг. 1.2.139](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S139) = ≈крит. 01,2.102c ошибочно вм. *vyāhṛta*.
   <sub>lexicographic</sub>
 
 **vi-han-note)** — Caus. s. u. *ghātay*.
@@ -229,9 +229,9 @@
 - **RU:** — Caus. см. *ghātay*.
   <sub>lexicographic</sub>
 
-**vi-han-corr)** — Mit *prativyā* nur scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), da hier *pratigāhanti* die richtige Lesart ist.
+**vi-han-corr)** — Mit *prativyā* nur scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Вульг. 12.100.43](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A100_S043) = ≈крит. 12,101.40a, da hier *pratigāhanti* die richtige Lesart ist.
 
-- **RU:** — С *prativyā* лишь по видимости [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724), так как здесь правильным чтением является *pratigāhanti*.
+- **RU:** — С *prativyā* лишь по видимости [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Вульг. 12.100.43](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A100_S043) = ≈крит. 12,101.40a, так как здесь правильным чтением является *pratigāhanti*.
   <sub>lexicographic</sub>
 
 **sam-han-1)** — Mit *samā*
@@ -253,7 +253,7 @@
 
 **sam-han-4)** — 4〉 zusammenstossen mit (Instr.). v. l. besser *samājagmus* st. *samājaghnus*.
 
-- **RU:** — 4〉 сталкиваться с (Instr.). v. l. лучше *samājagmus* вместо *samājaghnus*.
+- **RU:** — 4〉 сталкиваться с (Ins.). v. l. лучше *samājagmus* вместо *samājaghnus*.
   <sub>attested</sub>
 
 **sam-han-5)** — 5〉 anschlagen (eine Trommel).
@@ -360,7 +360,7 @@
 
 **ud-han-6i)** — i〉 strotzend —, voll von (Instr. oder im Comp. vorgehend) [ŚIŚ. 17,58].
 
-- **RU:** — i〉 переполненный, полный чего-либо (Instr. или в Comp. предшествующем) [ŚIŚ. 17,58].
+- **RU:** — i〉 переполненный, полный чего-либо (Ins. или в Comp. предшествующем) [ŚIŚ. 17,58].
   <sub>attested</sub>
 
 **ud-han-6k)** — k〉 in Bewegung versetzt, erregt. Richtiger *uddhuta* oder *uddhūta*.

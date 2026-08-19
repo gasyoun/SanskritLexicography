@@ -4,11 +4,11 @@
 
 
 **8)** — 8) inire (feminam), mit acc.: *striyam*
-[MBH. 13,4518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4518) *ātmatanayāṃ prajānātho 'yāsīt*
+[MBH. 13,4518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4518) = [≈Вульг. 13.93.123](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A093_S123) = ≈крит. 13,95.62a *ātmatanayāṃ prajānātho 'yāsīt*
 [PRAB. 8,3.]
 
 - **RU:** — 8) inire (feminam), с acc.: *striyam*
-[MBH. 13,4518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4518) *ātmatanayāṃ prajānātho 'yāsīt*
+[MBH. 13,4518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4518) = [≈Вульг. 13.93.123](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A093_S123) = ≈крит. 13,95.62a *ātmatanayāṃ prajānātho 'yāsīt*
 [PRAB. 8,3.]
   <sub>attested</sub>
 
@@ -26,10 +26,10 @@
   <sub>attested</sub>
 
 **10)** — 10) hinter Etwas kommen, erkennen: *tathāsya cittaṃ hyapi saṃvitarkayannararṣabhasyāsya na yāmi tattvataḥ*
-[MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234)
+[MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234) = [≈Вульг. 4.8.4](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A008_S004) = ≈крит. 04,7.4c
 
 - **RU:** — 10) дознаться до чего-либо, распознать: *tathāsya cittaṃ hyapi saṃvitarkayannararṣabhasyāsya na yāmi tattvataḥ*
-[MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234)
+[MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234) = [≈Вульг. 4.8.4](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A008_S004) = ≈крит. 04,7.4c
   <sub>attested</sub>
 
 **11)** — 11) *yātu* so v. a. dem sei wie ihm wolle
@@ -40,10 +40,10 @@
   <sub>attested</sub>
 
 **12)** — 12) *yāta* fehlerhaft für *jāta* in *yātamanyu*
-[MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) *jāta˚* [ed. Bomb.]
+[MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) = [≈Вульг. 15.18.15](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A018_S015) = ≈крит. 15,24.15a *jāta˚* [ed. Bomb.]
 
-- **RU:** — 12) *yāta* ошибочно вместо *jāta* в *yātamanyu*
-[MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) *jāta˚* [ed. Bomb.]
+- **RU:** — 12) *yāta* ошибочно вм. *jāta* в *yātamanyu*
+[MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) = [≈Вульг. 15.18.15](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A018_S015) = ≈крит. 15,24.15a *jāta˚* [Бомбейская ред.]
   <sub>attested</sub>
 
 **addendum-forms)** — Vgl. 3. *i* und *gam* .

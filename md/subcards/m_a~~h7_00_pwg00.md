@@ -18,7 +18,7 @@
 [SĀH. D. 121,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?121,6) [122,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?122,18) [155,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?155,7)
 [SARVADARŚANAS. 28,6.]
 
-- **RU:** — *anu* caus. давать основание заключать о чём-либо (acc.), — делать вывод о чём-либо
+- **RU:** — *anu* caus. давать основание заключать о чем-либо (acc.), — делать вывод о чем-либо
 [SĀH. D. 121,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?121,6) [122,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?122,18) [155,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?155,7)
 [SARVADARŚANAS. 28,6.]
   <sub>attested</sub>

@@ -5,17 +5,17 @@
 
 **mit_T1_in_T2)** — Mit *niṣpra* in *durniṣpra˚* (_n._ *durniṣprapatara*).
 
-- **RU:** — Mit *niṣpra* in *durniṣpra˚* (_n._ *durniṣprapatara*).
+- **RU:** — С *niṣpra* in *durniṣpra˚* (_n._ *durniṣprapatara*).
   <sub>attested</sub>
 
 **mit_T5)** — Mit *prati* entgegenfliegen, -eilen; mit Acc.
 
-- **RU:** — Mit *prati* лететь навстречу, мчаться навстречу; mit Acc.
+- **RU:** — С *prati* лететь навстречу, мчаться навстречу; mit Acc.
   <sub>attested</sub>
 
 **mit_T7_header)** — Mit *vi*
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
   <sub>attested</sub>
 
 **mit_T7_1)** — 1〉 dahinfliegen [ṚV. 10,96,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.096.html#rv10.096.09). durchfliegen.
@@ -50,17 +50,17 @@
 
 **mit_T10_header)** — Mit *sam*
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
   <sub>attested</sub>
 
 **mit_T10_1)** — 1〉 zusammenfliegen, -eilen, sich zusammenfinden, sich vereinigen bei oder auf (Acc.), zusammenkommen mit (Instr.), feindlich zusammenstossen *saṃpatitāḥ* zusammengeflossen, -geronnen.
 
-- **RU:** — 1〉 слетаться, сбегаться, сходиться, объединяться при или на (Acc.), сходиться с (Instr.), враждебно сталкиваться *saṃpatitāḥ* слившийся, свернувшийся.
+- **RU:** — 1〉 слетаться, сбегаться, сходиться, объединяться при или на (Acc.), сходиться с (Ins.), враждебно сталкиваться *saṃpatitāḥ* слившийся, свернувшийся.
   <sub>attested</sub>
 
 **mit_T10_2)** — 2〉 hinfliegen, hineilen zu (Acc.), herbeigeflogen —, herbeigeeilt kommen, herankommen, hinzukommen, hingehen —, sich begeben —, kommen —, gelangen in oder zu (Acc. oder Loc.), daherfliegen, -kommen.
 
-- **RU:** — 2〉 лететь к, спешить к (Acc.), прилетать —, прибегать, подходить, присоединяться, идти —, направляться —, приходить —, достигать чего-л. или кого-л. (Acc. oder Loc.), лететь оттуда, прилетать.
+- **RU:** — 2〉 лететь к, спешить к (Acc.), прилетать —, прибегать, подходить, присоединяться, идти —, направляться —, приходить —, достигать чего-л. или кого-л. (Acc. или Loc.), лететь оттуда, прилетать.
   <sub>attested</sub>
 
 **mit_T10_3)** — 3〉 lustwandeln.

@@ -13,7 +13,7 @@
 [ĀŚV. GṚHY. 4,7,11.] — *tābhyāṃ sa śakalābhyāṃ ca divaṃ bhūmiṃ ca nirmame*
 [M. 1,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,13) *kumbhaṃ nirmāti cakreṇa kumbhakāro mṛdā (mṛdo?) bhuvi*
 [BRAHMAVAIV. P.] bei [BOHLEN] zu [BHARTṚ. 2,93.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,93) *vārāṇasīm — nirmame*
-[MBH. 13,1955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1955)
+[MBH. 13,1955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1955) = [≈Вульг. 13.30.16](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A030_S016) = ≈крит. 13,31.16c
 [RAGH. 15,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,28)
 [RĀJA-TAR. 1,98.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,98) [5,120.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,120) *yathānyāyaṃ nirmamire dvārāṇyāyatanāni ca*
 [HARIV. 6508.](https://sanskrit-lexicon-scans.github.io/hariv?6508) *nirmāya yajñāyatanam*
@@ -21,7 +21,7 @@
 [PRAB. 16,7.] *nagaram — niramīyata*
 [RĀJA-TAR. 1,86.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,86) *nirmame* (pass.)
 [5,425.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,425) *brāhmaṇasthapatibhyāṃ ca nirmitaṃ yanniveśanam*
-[MBH. 13,5073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5073) *nagarī manunā nirmitā*
+[MBH. 13,5073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5073) = [≈Вульг. 13.104.119](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S119) = ≈крит. 13,107.112a *nagarī manunā nirmitā*
 [R. 1,5,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,6)
 [SŪRYAS. 12,37.]
 [VID. 251.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?251) *sunirmitamahāpatha*
@@ -34,7 +34,7 @@
 [80,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?80,14) *sarvabhūtāni nirmame*
 [M. 1,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,16)
 [SŪRYAS. 12,26.] *nirmame yoṣitaṃ divyām*
-[MBH. 1,7690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7690) [VṚDDHA-CĀṆ. 10,17.] [MĀRK. P. 77,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,11) [BHĀG. P. 2,4,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,23) *yasmādeṣāṃ surendrāṇāṃ mātrābhyo nirmito nṛpaḥ*
+[MBH. 1,7690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7690) = [≈Вульг. 1.209.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S004) = крит. — [VṚDDHA-CĀṆ. 10,17.] [MĀRK. P. 77,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,11) [BHĀG. P. 2,4,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,23) *yasmādeṣāṃ surendrāṇāṃ mātrābhyo nirmito nṛpaḥ*
 [M. 7,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,5) *māṃsamūtrapurīṣāsthinirmite ca kalevare*
 [Spr. 2160.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2160) *kathaṃ nu — nirmātuṃ prabhavenmanoharamidaṃ rūpaṃ purāṇo muniḥ*
 [VIKR. 9.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?9) *māyeyaṃ niramāyi mayedṛśī*
@@ -42,13 +42,13 @@
 [M. 2,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,17)
 [P. 4,4,13.](https://ashtadhyayi.com/sutraani/4/4/13)
 [DRAUP. 1,10.]
-[MBH. 1,7693.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7693) [7697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7697)
+[MBH. 1,7693.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7693) = [≈Вульг. 1.209.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S007) = ≈крит. 01,201.5c [7697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7697) = [≈Вульг. 1.209.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S011) = ≈крит. 01,201.10c
 [R. 1,1,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,26)
 [Spr. 1970.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1970) [BRAHMA-P. in LA. (II) 56,22.]
 
 *sarveṣāṃ tu sa nāmāni karmāṇi ca pṛthakpṛthak . vedaśabdebhya evādau pṛthaksaṃsthāśca nirmame ..*
 [M. 1,21.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,21)
-[MBH. 12,8536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8536) *kāmaṃ kāmaṃ puruṣo nirmimāṇaḥ*
+[MBH. 12,8536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8536) = [≈Вульг. 12.236.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A236_S010) = ≈крит. 12,228.9c *kāmaṃ kāmaṃ puruṣo nirmimāṇaḥ*
 [KAṬHOP. 5,8.] *nirmimīte citram* ein Bild malen
 [DAŚAK. 101,4.]
 [ŚĀK. 144.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?144) *śalākāñjananirmiteva*
@@ -66,7 +66,7 @@
 [Spr. 1323.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1323)
 [PAÑCAT. 138,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?138,5) *tvayā matkulakṣayo nirmitaḥ*
 [257,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,8) [BHĀG. P. 5,14,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,7) *tāṃ (nītiṃ) cecchaknoṣi nirmātum* an den Tag legen
-[MBH. 12,3904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3904) *atirātrau ca nirmitau* so v. a. begangen, gefeiert
+[MBH. 12,3904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3904) = [≈Вульг. 12.105.2](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A105_S002) = ≈крит. 12,106.2c *atirātrau ca nirmitau* so v. a. begangen, gefeiert
 [R. ed. Bomb. 1,14,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,14,42) *baṃhīyasīṃ laghiṣṭhāṃ vā giraṃ nirmānti vāgminaḥ* so v. a. sprechen wie es ihnen gefällt Cit. bei
 [KULL] zu [M. 5,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,64)
 
@@ -79,8 +79,8 @@
 [NIR. 2,8.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?2,8) *devanirmita*
 [ĀŚV. GṚHY. 4,7,11.] — *tābhyāṃ sa śakalābhyāṃ ca divaṃ bhūmiṃ ca nirmame*
 [M. 1,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,13) *kumbhaṃ nirmāti cakreṇa kumbhakāro mṛdā (mṛdo?) bhuvi*
-[BRAHMAVAIV. P.] bei [BOHLEN] zu [BHARTṚ. 2,93.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,93) *vārāṇasīm — nirmame*
-[MBH. 13,1955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1955)
+[BRAHMAVAIV. P.] у [BOHLEN] к [BHARTṚ. 2,93.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,93) *vārāṇasīm — nirmame*
+[MBH. 13,1955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1955) = [≈Вульг. 13.30.16](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A030_S016) = ≈крит. 13,31.16c
 [RAGH. 15,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,28)
 [RĀJA-TAR. 1,98.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,98) [5,120.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,120) *yathānyāyaṃ nirmamire dvārāṇyāyatanāni ca*
 [HARIV. 6508.](https://sanskrit-lexicon-scans.github.io/hariv?6508) *nirmāya yajñāyatanam*
@@ -88,7 +88,7 @@
 [PRAB. 16,7.] *nagaram — niramīyata*
 [RĀJA-TAR. 1,86.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,86) *nirmame* (pass.)
 [5,425.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,425) *brāhmaṇasthapatibhyāṃ ca nirmitaṃ yanniveśanam*
-[MBH. 13,5073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5073) *nagarī manunā nirmitā*
+[MBH. 13,5073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5073) = [≈Вульг. 13.104.119](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S119) = ≈крит. 13,107.112a *nagarī manunā nirmitā*
 [R. 1,5,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,6)
 [SŪRYAS. 12,37.]
 [VID. 251.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?251) *sunirmitamahāpatha*
@@ -101,7 +101,7 @@
 [80,14.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?80,14) *sarvabhūtāni nirmame*
 [M. 1,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,16)
 [SŪRYAS. 12,26.] *nirmame yoṣitaṃ divyām*
-[MBH. 1,7690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7690) [VṚDDHA-CĀṆ. 10,17.] [MĀRK. P. 77,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,11) [BHĀG. P. 2,4,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,23) *yasmādeṣāṃ surendrāṇāṃ mātrābhyo nirmito nṛpaḥ*
+[MBH. 1,7690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7690) = [≈Вульг. 1.209.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S004) = крит. — [VṚDDHA-CĀṆ. 10,17.] [MĀRK. P. 77,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,11) [BHĀG. P. 2,4,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,4,23) *yasmādeṣāṃ surendrāṇāṃ mātrābhyo nirmito nṛpaḥ*
 [M. 7,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,5) *māṃsamūtrapurīṣāsthinirmite ca kalevare*
 [Spr. 2160.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2160) *kathaṃ nu — nirmātuṃ prabhavenmanoharamidaṃ rūpaṃ purāṇo muniḥ*
 [VIKR. 9.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?9) *māyeyaṃ niramāyi mayedṛśī*
@@ -109,20 +109,20 @@
 [M. 2,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,17)
 [P. 4,4,13.](https://ashtadhyayi.com/sutraani/4/4/13)
 [DRAUP. 1,10.]
-[MBH. 1,7693.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7693) [7697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7697)
+[MBH. 1,7693.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7693) = [≈Вульг. 1.209.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S007) = ≈крит. 01,201.5c [7697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7697) = [≈Вульг. 1.209.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S011) = ≈крит. 01,201.10c
 [R. 1,1,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,26)
 [Spr. 1970.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1970) [BRAHMA-P. in LA. (II) 56,22.]
 
 *sarveṣāṃ tu sa nāmāni karmāṇi ca pṛthakpṛthak . vedaśabdebhya evādau pṛthaksaṃsthāśca nirmame ..*
 [M. 1,21.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,21)
-[MBH. 12,8536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8536) *kāmaṃ kāmaṃ puruṣo nirmimāṇaḥ*
+[MBH. 12,8536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8536) = [≈Вульг. 12.236.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A236_S010) = ≈крит. 12,228.9c *kāmaṃ kāmaṃ puruṣo nirmimāṇaḥ*
 [KAṬHOP. 5,8.] *nirmimīte citram* написать картину
 [DAŚAK. 101,4.]
 [ŚĀK. 144.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?144) *śalākāñjananirmiteva*
 [KUMĀRAS. 1,48.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,48) *kośaṃ viśvaprakāśākhyaṃ niramāt* составил
 [Verz. d. Oxf. H. 188,b,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?188) *grantho niramāyi*
 [212,a,13.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?212) *nāṭakaṃ nirmāya*
-[PRAB. 2,18.] *dharmam — prākprajāpatinirmitam* установленный, определённый
+[PRAB. 2,18.] *dharmam — prākprajāpatinirmitam* установленный, определенный
 [M. 9,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,46) *bāhuyuddhamidaṃ raṅge saprāśnikamakātaram . kriyābalasamājñātamaśastraṃ nirmitaṃ purā ..*
 [HARIV. 4697.](https://sanskrit-lexicon-scans.github.io/hariv?4697) *kṛtāntavihitaṃ karma yadbhavetpūrvanirmitam*
 [Spr. 717.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?717) *sā (vṛttiḥ) hi dhātraiva nirmitā*
@@ -133,15 +133,15 @@
 [Spr. 1323.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1323)
 [PAÑCAT. 138,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?138,5) *tvayā matkulakṣayo nirmitaḥ*
 [257,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,8) [BHĀG. P. 5,14,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,7) *tāṃ (nītiṃ) cecchaknoṣi nirmātum* проявлять
-[MBH. 12,3904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3904) *atirātrau ca nirmitau* so преим. совершённый, отпразднованный
-[R. ed. Bomb. 1,14,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,14,42) *baṃhīyasīṃ laghiṣṭhāṃ vā giraṃ nirmānti vāgminaḥ* so преим. говорить как им угодно цит. bei
-[KULL] zu [M. 5,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,64)
+[MBH. 12,3904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3904) = [≈Вульг. 12.105.2](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A105_S002) = ≈крит. 12,106.2c *atirātrau ca nirmitau* so преим. совершенный, отпразднованный
+[R. Бомбейская ред. 1,14,42.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?1,14,42) *baṃhīyasīṃ laghiṣṭhāṃ vā giraṃ nirmānti vāgminaḥ* so преим. говорить как им угодно цит. у
+[KULL] к [M. 5,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,64)
   <sub>attested</sub>
 
 **2))** — 2) *nirmita* so v. a. *nirūḍha* oder *svatantra* vom Opferthier: *paśavaḥ saumyāśca nirmitāśca nirmita aindrāgnaḥ*
 [ĀŚV. ŚR. 3,8,3. 4.]
 
-- **RU:** — 2) *nirmita* so преим. *nirūḍha* oder *svatantra* о жертвенном животном: *paśavaḥ saumyāśca nirmitāśca nirmita aindrāgnaḥ*
+- **RU:** — 2) *nirmita* so преим. *nirūḍha* или *svatantra* о жертвенном животном: *paśavaḥ saumyāśca nirmitāśca nirmita aindrāgnaḥ*
 [ĀŚV. ŚR. 3,8,3. 4.]
   <sub>attested</sub>
 

@@ -69,7 +69,7 @@
 
 - **RU:** — С *vyā*
 — 1〉 удерживать кого-л., отражать [ŚIŚ. 12,43].
-— 2〉 *vyāsiddha* запрещённый, воспрещённый.
+— 2〉 *vyāsiddha* запрещенный, воспрещенный.
   <sub>attested</sub>
 
 **para)** — Mit *ud* bei Seite treiben.
@@ -82,9 +82,9 @@
 - **RU:** — С *samud* в *samutsedha*.
   <sub>attested</sub>
 
-**pra)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+**pra)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = [≈Вульг. 7.1.44](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S044) = ≈крит. 07,1.42a. Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
 
-- **RU:** — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8). Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+- **RU:** — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = [≈Вульг. 7.1.44](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S044) = ≈крит. 07,1.42a. Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
   <sub>attested</sub>
 
 **prati-1)** — Mit *ni*
@@ -96,9 +96,9 @@
 
 - **RU:** — С *ni*
 — 1〉 прогонять.
-— 2〉 отражать кого-л., удерживать, стремиться отвадить от чего-л. (Abl.), запрещать кому-л. (Acc.). *niṣiddha* отражённый, удерживаемый, которому что-л. запрещено. *niṣiddhavant* отразивший.
+— 2〉 отражать кого-л., удерживать, стремиться отвадить от чего-л. (Abl.), запрещать кому-л. (Acc.). *niṣiddha* отраженный, удерживаемый, которому что-л. запрещено. *niṣiddhavant* отразивший.
 — 3〉 отражать что-л. [BHAṬṬ.]
-— 4〉 запрещать что-л., воспрещать, отклонять, выступать против чего-л., заявлять протест; с Acc. предмета. *niṣiddha* воспрещённый, запрещённый, запрещённый к (Infin.).
+— 4〉 запрещать что-л., воспрещать, отклонять, выступать против чего-л., заявлять протест; с Acc. предмета. *niṣiddha* воспрещенный, запрещенный, запрещенный к (Infin.).
 — 5〉 *запрещать что-л., не давать распространяться,/} так преим. {%преувеличивать (*sadṛśye*) [251,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
   <sub>attested</sub>
 
@@ -124,13 +124,13 @@
 **star-prefix)** — Mit **pari*. *˚ṣedhati* und *˚sedhati* (dieses in der Bed. umherschwirren) [BHAṬṬ.]
 — *Desid. vom Caus. *pariṣiṣedhayiṣati*.
 
-- **RU:** — С **pari*. *˚ṣedhati* и *˚sedhati* (последнее в значении знач. порхать вокруг) [BHAṬṬ.]
+- **RU:** — С **pari*. *˚ṣedhati* и *˚sedhati* (последнее в знач. порхать вокруг) [BHAṬṬ.]
 — *Desid. от Caus. *pariṣiṣedhayiṣati*.
   <sub>lexicographic</sub>
 
 **sam-pra)** — Mit *pra* Act. Med. vorwärts treiben.
 
-- **RU:** — С *pra* Act. Med. гнать вперёд.
+- **RU:** — С *pra* Act. Med. гнать вперед.
   <sub>attested</sub>
 
 **sam-1)** — Mit *prati* (*˚ṣedhati*)
@@ -143,7 +143,7 @@
 — 1〉 прогонять.
 — 2〉 отражать кого-л., удерживать, стремиться отвадить от чего-л. (Abl.), запрещать кому-л. (Acc.) то, кому что-л. воспрещено.
 — 3〉 удерживать что-л., подавлять. *pratiṣiddha* воздерживаться.
-— 4〉 запрещать что-л., воспрещать, отрицать [ĀPAST. 1,8,20]. *pratiṣiddha* воспрещённый, запрещённый, заповеданный, отрицаемый [GAUT. 3,30. 5,2. 12,27. 19,2. 22,33. 25,7. 8]. [ĀPAST. 1,21,14. 26,7]. отрицаемый,/} так преим. {%снабжённый отрицанием. *pratiṣiddhavant* воспретивший что-л. — запретивший.
+— 4〉 запрещать что-л., воспрещать, отрицать [ĀPAST. 1,8,20]. *pratiṣiddha* воспрещенный, запрещенный, заповеданный, отрицаемый [GAUT. 3,30. 5,2. 12,27. 19,2. 22,33. 25,7. 8]. [ĀPAST. 1,21,14. 26,7]. отрицаемый,/} так преим. {%снабженный отрицанием. *pratiṣiddhavant* воспретивший что-л. — запретивший.
   <sub>attested</sub>
 
 **sam-caus)** — Caus. (*pratiṣedhayati*)
@@ -160,7 +160,7 @@
 — 2〉 entgegengesetzt, widersprechend [ĀPAST. 2,8,12]. *˚m* _Adv._ = *vipratiṣedhena* (*año vuñ* so v. a. bei dem Conflicte dieser beiden siegt *vuñ* über *añ*), *pūrvavirpatiṣiddham* = *˚ṣedhena* (s. *pūrvavipratiṣedha* [Nachtr. 5]).
 
 - **RU:** — С *viprati*, *˚ṣiddha*
-— 1〉 запрещённый, воспрещённый [ĀPAST. 1,13,20. 2,14,19. 21,13].
+— 1〉 запрещенный, воспрещенный [ĀPAST. 1,13,20. 2,14,19. 21,13].
 — 2〉 противоположный, противоречивый [ĀPAST. 2,8,12]. *˚m* _Adv._ = *vipratiṣedhena* (*año vuñ* так преим. при столкновении этих двух побеждает *vuñ* над *añ*), *pūrvavirpatiṣiddham* = *˚ṣedhena* (см. *pūrvavipratiṣedha* [Nachtr. 5]).
   <sub>attested</sub>
 

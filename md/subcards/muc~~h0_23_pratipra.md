@@ -6,6 +6,6 @@
 **1)** — *pratipra* zulassen zu (das Kalb zur Mutter)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
 
-- **RU:** — *pratipra* подпускать к (телёнка к матери)
+- **RU:** — *pratipra* подпускать к (теленка к матери)
 [ŚAT. BR. 11,1,4,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,4,1)
   <sub>attested</sub>

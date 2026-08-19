@@ -25,7 +25,7 @@
 
 **1. — mit ud)** — Mit *samud* Caus. in die Höhe heben [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
 
-- **RU:** — С *samud* Caus. поднимать вверх [R. ed. Bomb. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
+- **RU:** — С *samud* Caus. поднимать вверх [R. Бомбейская ред. 4,28,39](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,28,39).
   <sub>attested</sub>
 
 **1. — mit prati)** — Mit *prati* VI. entgegenhandeln (einem Befehl, Acc.) [DIVYĀVAD. 178,11].

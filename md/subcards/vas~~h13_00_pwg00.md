@@ -5,7 +5,7 @@
 
 **5)** 5. *vas*
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* beruht auf
-[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
+[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712 "Spr. (II) 5712: rathasyaikaṃ cakraṃ bhujagayamitā sapta turagā nirālambo mārgaścaraṇavikalaḥ sārathirapi | raviryātyevāntaṃ pratidinamapārasya nabhasaḥ kriyāsiddhiḥ s… — Am Wagen nur ein Rad, sieben mit Schlangenleibern gezäumte Rosse, ein in der Luft schwebender Pfad und ein lahmer Wagenlenker") = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
  2) zu streichen; vgl. *vāsay* mit *adhi* .
 — *ni*
@@ -16,7 +16,7 @@
 
 - **RU:** 5. *vas*
  1) *kriyāsiddhiḥ sattve vasati mahatāṃ nopakaraṇe* основано на
-[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712) = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
+[Spr. (II) 5712](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5712 "Spr. (II) 5712: rathasyaikaṃ cakraṃ bhujagayamitā sapta turagā nirālambo mārgaścaraṇavikalaḥ sārathirapi | raviryātyevāntaṃ pratidinamapārasya nabhasaḥ kriyāsiddhiḥ s… — Am Wagen nur ein Rad, sieben mit Schlangenleibern gezäumte Rosse, ein in der Luft schwebender Pfad und ein lahmer Wagenlenker") = [6145.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6145)
 — *adhi* caus.
  2) вычеркнуть; ср. *vāsay* с *adhi* .
 — *ni*

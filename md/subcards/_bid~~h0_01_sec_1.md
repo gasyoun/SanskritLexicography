@@ -6,7 +6,7 @@
 **caus-1)** — caus.
  1) spalten, brechen, zerschlagen: *bhedayeyuḥ sthirāndrumān*
 [R. 1,16,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,23) *purodyānāni sarvāṇi bhedayāmāsa*
-[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620)
+[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620) = [≈Вульг. 3.14.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S007) = ≈крит. 03,15.7a
 [HARIV. 11905.](https://sanskrit-lexicon-scans.github.io/hariv?11905) *anayormahānnisargopajātaḥ snehaḥ kathaṃ bhedayituṃ śakyaḥ* zerstören, lösen
 [HIT. 67,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?67,2) *bhedita = bhinna*
 [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50)
@@ -14,7 +14,7 @@
 - **RU:** — caus.
  1) раскалывать, ломать, разбивать: *bhedayeyuḥ sthirāndrumān*
 [R. 1,16,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,23) *purodyānāni sarvāṇi bhedayāmāsa*
-[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620)
+[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620) = [≈Вульг. 3.14.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S007) = ≈крит. 03,15.7a
 [HARIV. 11905.](https://sanskrit-lexicon-scans.github.io/hariv?11905) *anayormahānnisargopajātaḥ snehaḥ kathaṃ bhedayituṃ śakyaḥ* разрушать, разрывать
 [HIT. 67,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?67,2) *bhedita = bhinna*
 [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50)
@@ -28,22 +28,22 @@
   <sub>attested</sub>
 
 **caus-3)** — 3) entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite hinüberziehen
-[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) *suśliṣṭānapi* (so die neuere Ausg.) *lokeṣu bhedayan*
+[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) = [≈Вульг. 1.198.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A198_S005) = ≈крит. 01,190.5a [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) = [≈Вульг. 13.12.28](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S028) = ≈крит. 13,12.25a [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S031) = ≈крит. 13,12.27e *suśliṣṭānapi* (so die neuere Ausg.) *lokeṣu bhedayan*
 [HARIV. 3209.](https://sanskrit-lexicon-scans.github.io/hariv?3209)
 [R. 4,54,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,6) [7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,7)
 [KATHĀS. 34,209.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,209) *bhayena bhedayedbhīruṃ śūramañjalikarmaṇā . lubdhamarthapradānena samaṃ nyūnaṃ tathaujasā ..*
 [Spr. 2017.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2017) [3013.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3013) *asakṛccāpyahaṃ tena tvatkṛte pārtha bheditaḥ*
-[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835)
+[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835) = [≈Вульг. 5.82.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A082_S003) = ≈крит. 05,80.3a
 [R. GORR. 2,18,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,15) [77,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,77,2) *tamṛṣiṃ kauśikaṃ rambhe bhedayasva (= kāmotpādanena tapasaścālaya* Schol.) *tapasvinam* so v. a. verfähre
 [R. SCHL. 1,64,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,7)
 
 - **RU:** — 3) рассорить с другими или с самим собой, сбить с толку кого-либо, переманить на свою сторону
-[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) *suśliṣṭānapi* (так в более новой изд.) *lokeṣu bhedayan*
+[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) = [≈Вульг. 1.198.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A198_S005) = ≈крит. 01,190.5a [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) = [≈Вульг. 13.12.28](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S028) = ≈крит. 13,12.25a [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S031) = ≈крит. 13,12.27e *suśliṣṭānapi* (так в более новой изд.) *lokeṣu bhedayan*
 [HARIV. 3209.](https://sanskrit-lexicon-scans.github.io/hariv?3209)
 [R. 4,54,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,6) [7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,7)
 [KATHĀS. 34,209.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,209) *bhayena bhedayedbhīruṃ śūramañjalikarmaṇā . lubdhamarthapradānena samaṃ nyūnaṃ tathaujasā ..*
 [Spr. 2017.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2017) [3013.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3013) *asakṛccāpyahaṃ tena tvatkṛte pārtha bheditaḥ*
-[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835)
+[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835) = [≈Вульг. 5.82.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A082_S003) = ≈крит. 05,80.3a
 [R. GORR. 2,18,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,15) [77,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,77,2) *tamṛṣiṃ kauśikaṃ rambhe bhedayasva (= kāmotpādanena tapasaścālaya* схол.) *tapasvinam*, тем самым преим. поступи
 [R. SCHL. 1,64,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,7)
   <sub>attested</sub>

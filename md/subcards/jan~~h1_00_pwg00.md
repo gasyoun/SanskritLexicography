@@ -51,10 +51,10 @@
   <sub>attested</sub>
 
 **Nachtrag-vi-2)** — 2) *upajāyate* entsteht als Folge
-[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) ist zu streichen, da daselbst mit der [ed. Bomb.] *upayātam* gehet nach zu lesen ist.
+[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A062_S022) = ≈крит. 09,61.22c ist zu streichen, da daselbst mit der [ed. Bomb.] *upayātam* gehet nach zu lesen ist.
 
 - **RU:** — 2) *upajāyate* возникает как следствие
-[SARVADARŚANAS. 2,7. 3,20.] стк. 9. сл. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) следует вычеркнуть, так как там с [ed. Bomb.] *upayātam* следует за надлежит читать.
+[SARVADARŚANAS. 2,7. 3,20.] стк. 9. сл. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A062_S022) = ≈крит. 09,61.22c следует вычеркнуть, так как там с [Бомбейская ред.] *upayātam* следует за надлежит читать.
   <sub>attested</sub>
 
 **Nachtrag-vi-4)** — 4) *tena nārada nārīṇāṃ satītvamupajāyate* darum giebt es Keuschheit bei den Frauen

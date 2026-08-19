@@ -5,7 +5,7 @@
 
 **NWS: MW)** Gen , unsp > Subst f [rarely ° ri ] a kettle-drum. Mbh , Kāvya(MW) . MW : 766
 
-- **RU:** Gen, unsp > сущ. f [редко °ri] литавра, барабан-котел. Mbh, Kāvya(MW). MW : 766
+- **RU:** Gen., unsp > сущ. f [редко °ri] литавра, барабан-котел. Mbh, Kāvya(MW). MW : 766
   <sub>attested</sub>
 
 **NWS: Sircar)** Epigr , unsp > a musical instrument. Subramaniam 1957 . Sircar 1966 : 53

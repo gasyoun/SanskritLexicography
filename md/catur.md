@@ -32,9 +32,9 @@ _PWG article — 1 sub-card(s), 21 sense(s) · RU 21/21 · EN 0/21_
 - **RU:** [NWS: MW : 384 (s.v. catúr)] *caturaśra* [Gen , unsp] прил. mf(ā)n четырехугольный. KātyŚS , KauśS , Pāṇ v, 4, 120 , Hariv 12378 . сущ. m четырехугольная фигура. W(MW) . MW : 384 (s.v. catúr )
   <sub>attested</sub>
 
-**NWS-4)** *cáturaṅga* [Gen , unsp] Adj mfn having 4 limbs (or extremities). ṚV x, 92, 11 , ŚB xii . Subst n a kind of chess (played by 4 parties). Tithyād . MW : 384 (s.v. catúr )
+**NWS-4)** *cáturaṅga* [Gen , unsp] Adj mfn having 4 limbs (or extremities). [ṚV x, 92, 11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.11) , ŚB xii . Subst n a kind of chess (played by 4 parties). Tithyād . MW : 384 (s.v. catúr )
 
-- **RU:** [NWS: MW : 384 (s.v. catúr)] *cáturaṅga* [Gen , unsp] прил. mfn имеющий 4 члена (или конечности). ṚV x, 92, 11 , ŚB xii . сущ. n вид шахмат (для 4 партий). Tithyād . MW : 384 (s.v. catúr )
+- **RU:** [NWS: MW : 384 (s.v. catúr)] *cáturaṅga* [Gen , unsp] прил. mfn имеющий 4 члена (или конечности). [ṚV x, 92, 11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.11) , ŚB xii . сущ. n вид шахмат (для 4 партий). Tithyād . MW : 384 (s.v. catúr )
   <sub>attested</sub>
 
 **NWS-5)** *caturbhadra* [Gen , unsp] Adj mfn (4 times, i.e.) extremely auspicious. Hemādri . Subst n 4 objects of human wishes. viz. dharma , kāma , artha , bala . Lex(MW) . or the first 3 with mokṣa . W(MW) . or kīrti , āyus , yaśas , bala . Mbh xiii, 5657 . or dharma , jñāna , vairāgya , aiśvarya . Mbh vii, 2182, Sch. . or dāna , jñāna , śaurya , bhoga or vitta . Mbh , Hit i, 6, 58 . MW : 384 (s.v. cátur )

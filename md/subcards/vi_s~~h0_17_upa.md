@@ -21,7 +21,7 @@
 [ĀŚV. GṚHY. 2,3,7. 3,2,2.]
 [KAUṢ. UP. 2,1.]
 [BHAG. 1,47.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,47)
-[MBH. 3,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.464) [2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) [16810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16810) [4,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.97) [12,13345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13345) [13,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1274)
+[MBH. 3,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.464) = [≈Вульг. 3.12.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S004) = ≈крит. 03,13.4a [2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S033) = ≈крит. 03,71.30c [16810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16810) = [≈Вульг. 3.297.63](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A297_S063) = ≈крит. 03,281.61c [4,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.97) = [≈Вульг. 4.4.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S015) = ≈крит. 04,4.11a [12,13345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13345) = [≈Вульг. 12.343.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A343_S042) = ≈крит. 12,331.31a [13,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1274) = [≈Вульг. 13.17.160](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A017_S160) = ≈крит. 13,17.156a
 [R. 1,2,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,25) [2,53,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,28) [104,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,104,26) [3,49,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,43)
 *idamāsanam atropaviśyatām* (impers.)
 [MṚCCH. 73,20. 88,2.]
@@ -36,11 +36,11 @@
 [AIT. BR. 5,27.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,27)
 [ŚAT. BR. 12,4,1,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,9) [11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,11) *vānarā upāviśan*
 [R. 4,39,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,39,43) *garutmantaḥ*
-[MBH. 4,1052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1052) *upaviṣṭa* (auch st. des verbi finiti) sich gesetzt habend, sitzend
+[MBH. 4,1052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1052) = [≈Вульг. 4.32.17](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A032_S017) = ≈крит. 04,31.14c *upaviṣṭa* (auch st. des verbi finiti) sich gesetzt habend, sitzend
 [H. 492.](https://sanskrit-lexicon-scans.github.io/abch2/app1?492)
 [HALĀY. 2,231.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,231)
 [KĀTY. ŚR. 1,2,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,2,7)
-[MBH. 1,2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2219) [3,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2427) [2890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2890) [16658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16658) [5,6039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6039)
+[MBH. 1,2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2219) [3,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2427) = [≈Вульг. 3.64.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S027) = ≈крит. 03,61.25e [2890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2890) = [≈Вульг. 3.74.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A074_S001) = ≈крит. 03,72.1a [16658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16658) = [≈Вульг. 3.294.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A294_S001) = ≈крит. 03,278.1a [5,6039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6039) = [≈Вульг. 5.176.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S016) = ≈крит. 05,174.15a
 [R. 1,2,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,30) [52,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,3) [2,54,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,19)
 [ŚĀK. 37,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?37,3) [81,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,16)
 [KATHĀS. 18,215.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,215)
@@ -67,7 +67,7 @@
 [ĀŚV. GṚHY. 2,3,7. 3,2,2.]
 [KAUṢ. UP. 2,1.]
 [BHAG. 1,47.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,47)
-[MBH. 3,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.464) [2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) [16810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16810) [4,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.97) [12,13345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13345) [13,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1274)
+[MBH. 3,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.464) = [≈Вульг. 3.12.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S004) = ≈крит. 03,13.4a [2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S033) = ≈крит. 03,71.30c [16810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16810) = [≈Вульг. 3.297.63](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A297_S063) = ≈крит. 03,281.61c [4,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.97) = [≈Вульг. 4.4.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S015) = ≈крит. 04,4.11a [12,13345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13345) = [≈Вульг. 12.343.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A343_S042) = ≈крит. 12,331.31a [13,1274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1274) = [≈Вульг. 13.17.160](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A017_S160) = ≈крит. 13,17.156a
 [R. 1,2,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,25) [2,53,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,53,28) [104,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,104,26) [3,49,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,43)
 *idamāsanam atropaviśyatām* (impers.)
 [MṚCCH. 73,20. 88,2.]
@@ -82,11 +82,11 @@
 [AIT. BR. 5,27.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,27)
 [ŚAT. BR. 12,4,1,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,9) [11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,11) *vānarā upāviśan*
 [R. 4,39,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,39,43) *garutmantaḥ*
-[MBH. 4,1052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1052) *upaviṣṭa* (также вместо глагола) усевшийся, сидящий
+[MBH. 4,1052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1052) = [≈Вульг. 4.32.17](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A032_S017) = ≈крит. 04,31.14c *upaviṣṭa* (также вместо глагола) усевшийся, сидящий
 [H. 492.](https://sanskrit-lexicon-scans.github.io/abch2/app1?492)
 [HALĀY. 2,231.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,231)
 [KĀTY. ŚR. 1,2,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,2,7)
-[MBH. 1,2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2219) [3,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2427) [2890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2890) [16658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16658) [5,6039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6039)
+[MBH. 1,2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2219) [3,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2427) = [≈Вульг. 3.64.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S027) = ≈крит. 03,61.25e [2890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2890) = [≈Вульг. 3.74.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A074_S001) = ≈крит. 03,72.1a [16658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16658) = [≈Вульг. 3.294.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A294_S001) = ≈крит. 03,278.1a [5,6039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6039) = [≈Вульг. 5.176.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S016) = ≈крит. 05,174.15a
 [R. 1,2,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,30) [52,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,3) [2,54,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,19)
 [ŚĀK. 37,3.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?37,3) [81,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,16)
 [KATHĀS. 18,215.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,215)
@@ -100,25 +100,25 @@
 [DAŚAK. 67,10.] *harmyatalopaviṣṭa*
 [R. 5,11,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,11,18) *janamadhyopaviṣṭa*
 [KATHĀS. 28,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,8) *upaviṣṭa* о животных
-[YĀJÑ. 2,160.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,160) в животном эпосе [PAÑCAT. 53,22. fg.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?53,22) [68,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,21) о птицах [110,9](https://sanskrit-lexicon-scans.github.io/pantankose/app2?110,9) (где по [ed. Bomb.] *˚dvāra* следует читать).
+[YĀJÑ. 2,160.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,160) в животном эпосе [PAÑCAT. 53,22. fg.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?53,22) [68,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,21) о птицах [110,9](https://sanskrit-lexicon-scans.github.io/pantankose/app2?110,9) (где по [Бомбейская ред.] *˚dvāra* следует читать).
 [HIT. 13,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?13,5) *sabhāyāmupaviṣṭavān*
 [VET. in LA. (III) 28,14.]
   <sub>attested</sub>
 
 **3)** — 3) das Lager aufschlagen, Halt machen: *balenopaviveśa ha*
-[MBH. 3,659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.659)
+[MBH. 3,659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.659) = [≈Вульг. 3.16.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A016_S001) = ≈крит. 03,17.1c
 
 - **RU:** — 3) разбивать лагерь, делать привал: *balenopaviveśa ha*
-[MBH. 3,659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.659)
+[MBH. 3,659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.659) = [≈Вульг. 3.16.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A016_S001) = ≈крит. 03,17.1c
   <sub>attested</sub>
 
 **4)** — 4) sich zu Jmd (acc.) setzen: *tamārtam — upāviśatsā pariṣatsamantāt*
 [R. GORR. 2,79,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,79,40) sich zu Jmd setzen so v. a. nicht von seiner Seite weichen um ihn zur Nachgiebigkeit zu zwingen (vgl. *pratyupa): draupadī yatra bhartṝnupāviśat*
-[MBH. 1,573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.573)
+[MBH. 1,573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.573) = [≈Вульг. 1.2.344](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S344) = ≈крит. 01,2.211a
 
 - **RU:** — 4) садиться подле кого-л. (acc.): *tamārtam — upāviśatsā pariṣatsamantāt*
 [R. GORR. 2,79,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,79,40) садиться подле кого-л.; так преим. не отходить от него, принуждая его к уступчивости (ср. *pratyupa): draupadī yatra bhartṝnupāviśat*
-[MBH. 1,573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.573)
+[MBH. 1,573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.573) = [≈Вульг. 1.2.344](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S344) = ≈крит. 01,2.211a
   <sub>attested</sub>
 
 **5)** — 5) sich zum Untergang neigen (von der Sonne): *tāvadarko 'pyupāviśat*
@@ -140,7 +140,7 @@
 [R. 4,56,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,1) [20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) *prāyopaviṣṭa* (s. auch bes.)
 [BHĀG. P. 1,19,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,18) [8,1,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,1,33) *anaśanopaviṣṭa*
 [PAÑCAT. 224,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,15) das einfache *upaviṣṭa* in derselben Bed.
-[MBH. 12,4258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4258) [4263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4263)
+[MBH. 12,4258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4258) = [≈Вульг. 12.118.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S001) = ≈крит. 12,118.1c [4263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4263) = [≈Вульг. 12.118.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S006) = ≈крит. 12,118.6c
 [BHAṬṬ. 7,75.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,75)
 
 - **RU:** — 7) предаваться чему-л., быть занятым; с acc.: *prāyam*
@@ -148,7 +148,7 @@
 [R. 4,56,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,1) [20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) *prāyopaviṣṭa* (см. также особ.)
 [BHĀG. P. 1,19,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,18) [8,1,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,1,33) *anaśanopaviṣṭa*
 [PAÑCAT. 224,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?224,15) простое *upaviṣṭa* в том же знач.
-[MBH. 12,4258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4258) [4263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4263)
+[MBH. 12,4258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4258) = [≈Вульг. 12.118.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S001) = ≈крит. 12,118.1c [4263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4263) = [≈Вульг. 12.118.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S006) = ≈крит. 12,118.6c
 [BHAṬṬ. 7,75.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,75)
   <sub>attested</sub>
 
@@ -156,7 +156,7 @@
 [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) in beiden Ausgg. fehlerhaft für *upaveśya* .
 
 - **RU:** — 8) *upaviśya*
-[HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) в обоих изд. ошибочно вместо *upaveśya*.
+[HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) в обоих изд. ошибочно вм. *upaveśya*.
   <sub>attested</sub>
 
 **caus_header)** — Vgl. *upaveśa* fg., *upaveśin, prāyopaviṣṭa* fgg. — caus.
@@ -171,7 +171,7 @@
 [KAUŚ. 79. 78.] *āsaneṣu*
 [M. 3,208. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,208)
 [YĀJÑ. 1,226.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,226)
-[MBH. 3,1775.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1775)
+[MBH. 3,1775.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1775) = [≈Вульг. 3.43.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A043_S020) = ≈крит. 03,44.20c
 [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) (*upaveśya* zu lesen). *ūrau*
 [8745.](https://sanskrit-lexicon-scans.github.io/hariv?8745) *aṅke*
 [R. GORR. 2,74,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,74,5) [SUŚR. 1,15,7.] [VIKR. 28,18](https://sanskrit-lexicon-scans.github.io/vikramor/app2?28,18) (*upave˚* zu lesen; s. Anm.).
@@ -186,7 +186,7 @@
 [KAUŚ. 79. 78.] *āsaneṣu*
 [M. 3,208. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,208)
 [YĀJÑ. 1,226.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,226)
-[MBH. 3,1775.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1775)
+[MBH. 3,1775.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1775) = [≈Вульг. 3.43.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A043_S020) = ≈крит. 03,44.20c
 [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) (следует читать *upaveśya*). *ūrau*
 [8745.](https://sanskrit-lexicon-scans.github.io/hariv?8745) *aṅke*
 [R. GORR. 2,74,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,74,5) [SUŚR. 1,15,7.] [VIKR. 28,18](https://sanskrit-lexicon-scans.github.io/vikramor/app2?28,18) (следует читать *upave˚*; см. Anm.).
@@ -214,7 +214,7 @@
 [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) fehlerhaft für *upaviśya*, wie die [ed. Bomb.] liest.
 
 - **RU:** — 3) *upaveśya*
-[PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) ошибочно вместо *upaviśya*, как читает [ed. Bomb.].
+[PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) ошибочно вм. *upaviśya*, как читает [Бомбейская ред.].
   <sub>attested</sub>
 
 **caus_4)** — = *adhyupa* sich darauf setzen

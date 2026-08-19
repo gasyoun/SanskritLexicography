@@ -26,8 +26,8 @@
   <sub>attested</sub>
 
 **desid)** — Vgl. *samādhā* fgg. — desid. Jmd (acc.) dahin zu bringen wünschen, dass er sich sammelt: *ātmānamasamādhāya samādhitsati yaḥ parān*
-[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586)
+[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Вульг. 12.270.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S029) = ≈крит. 12,262.27a
 
 - **RU:** — ср. *samādhā* сл. — desid. желать побудить кого-либо (acc.) к тому, чтобы он сосредоточился: *ātmānamasamādhāya samādhitsati yaḥ parān*
-[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586)
+[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Вульг. 12.270.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S029) = ≈крит. 12,262.27a
   <sub>attested</sub>

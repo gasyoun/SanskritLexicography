@@ -5,7 +5,7 @@
 
 **13)** 1. nī 13. Cappeller vermutet, daß [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) die Bed. "eine Autorität sein" im Auge gehabt hatte.
 
-- **RU:** 1. nī 13. Cappeller предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду Bed. «быть авторитетом».
+- **RU:** 1. nī 13. Cappeller предполагает, что [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) имел в виду Bed. быть авторитетом.
   <sub>attested</sub>
 
 **samanu = anu 3)** — Mit samanu = anu 3., [Jātakam. 28.]
@@ -65,7 +65,7 @@
 
 **abhipra (hinzuführen zu))** — Mit abhipra auch: hinzuführen zu (Akk.).
 
-- **RU:** — С abhipra также: вести к (Akk.).
+- **RU:** — С abhipra также: вести к (Acc.).
   <sub>attested</sub>
 
 **abhivi (durch Unterricht bekehren))** — Mit abhivi durch Unterricht bekehren, [Jātakam. 31,42.]

@@ -12,7 +12,7 @@ _PWG article — 2 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 - **RU:** [NWS: Buddh, unsp] aśuci — нечистоты, нечистое. Schlingloff 1964 : 197
   <sub>attested</sub>
 
-**NWS-2)** Jin , unsp , 2. H. 12. Jh. , Gujarat > Subst f impurity. TriṣaŚaPuC 8. 9. 105 . TŚPC 5 : 429
+**NWS-2)** Jin , unsp (2. H. 12. Jh. , Gujarat) > Subst f impurity. TriṣaŚaPuC 8. 9. 105 . TŚPC 5 : 429
 
 - **RU:** [NWS: Jin, unsp, 2. H. 12. Jh., Gujarat] Subst f — нечистота. TriṣaŚaPuC 8. 9. 105 . TŚPC 5 : 429
   <sub>attested</sub>

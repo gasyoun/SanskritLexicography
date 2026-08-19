@@ -10,10 +10,10 @@
 
 **upa-var-1)** — Mit *anu* 1〉 sich in Jmds (Gen.) Nähe aufhalten [HEMĀDRI 1,35,20].
 
-- **RU:** — Mit *anu* 1〉 находиться вблизи кого-либо (Gen.) [HEMĀDRI 1,35,20].
+- **RU:** — С *anu* 1〉 находиться вблизи кого-либо (Gen.) [HEMĀDRI 1,35,20].
   <sub>attested</sub>
 
 **adhi-var)** **2.** *ās* I. 1. Mit *avasthānam* sich niederlassen an einem Orte [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
 
-- **RU:** **2.** *ās* I. 1. Mit *avasthānam* поселиться на каком-либо месте [R. ed. Bomb. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — Mit *anu* I. 1.
+- **RU:** **2.** *ās* I. 1. С *avasthānam* поселиться на каком-либо месте [R. Бомбейская ред. 4,54,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,54,16) (*āsiṣyasi*). — С *anu* I. 1.
   <sub>attested</sub>

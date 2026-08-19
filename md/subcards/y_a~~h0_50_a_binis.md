@@ -4,17 +4,17 @@
 
 
 **1)** — *abhinis* hinausgehen, —, ziehen
-[MBH. 3,654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.654) [4,1033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1033) [1252.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1252)
+[MBH. 3,654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.654) = [≈Вульг. 3.15.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A015_S019) = ≈крит. 03,16.19a [4,1033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1033) = [≈Вульг. 4.31.34](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S034) = ≈крит. 04,30.29a [1252.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1252) = [≈Вульг. 4.38.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S021) = ≈крит. 04,36.19a
 [BHĀG. P. 10,63,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,63,5) *nagarāt*
-[MBH. 14,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2177)
+[MBH. 14,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2177) = [≈Вульг. 14.74.33](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A074_S033) = ≈крит. 14,73.33a
 [R. 2,71,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,1) [7,23,1,89.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,1,89) *yuddhāya*
 [6,27,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,27,19) *vadhāyāsya*
 [3,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,16)
 
 - **RU:** — *abhinis* выходить, выступать (в поход)
-[MBH. 3,654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.654) [4,1033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1033) [1252.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1252)
+[MBH. 3,654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.654) = [≈Вульг. 3.15.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A015_S019) = ≈крит. 03,16.19a [4,1033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1033) = [≈Вульг. 4.31.34](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S034) = ≈крит. 04,30.29a [1252.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1252) = [≈Вульг. 4.38.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A038_S021) = ≈крит. 04,36.19a
 [BHĀG. P. 10,63,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,63,5) *nagarāt*
-[MBH. 14,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2177)
+[MBH. 14,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2177) = [≈Вульг. 14.74.33](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A074_S033) = ≈крит. 14,73.33a
 [R. 2,71,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,1) [7,23,1,89.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,1,89) *yuddhāya*
 [6,27,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,27,19) *vadhāyāsya*
 [3,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,16)

@@ -25,7 +25,7 @@
 
 - **RU:** — 5) *mitrāṇi śatrutvamivānayantī mitratvamapyarthavaśācca śatrūn*
 [Spr. 4722.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4722) — caus.
-[LA. (II) 91,12.] стк. 5 die [ed. Bomb.]
+[LA. (II) 91,12.] стк. 5 die [Бомбейская ред.]
 [R. 2,14,21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,14,21) *ānāyayitum*;
 [GILD.] in [LA. (III) 102, N.]: *ānāpituṃ* (wohl Druckfehler für *ānāpayituṃ)* lectio est codicum, qui
 [RAGHUNĀTHAM] sequuntur; libri scholiis

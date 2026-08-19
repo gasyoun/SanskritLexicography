@@ -12,12 +12,12 @@
 
 **1a)** — a〉 mit Acc. des Gottes, Dat. der Person oder des Zweckes, für welchen, und, Instr. der Sache (auch partitivem Gen.) oder des Werkzeuges, womit die Handlung vollzogen wird. *iṣṭa* derjenige, welchem geopfert worden ist. Auch impers. mit Instr. der Person, die das Opfer darbringt, und Instr. des dargebrachten Opfers [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
 
-- **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Instr. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Instr. лица, приносящего жертву, и Instr. принесённой жертвы [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
+- **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Ins. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Ins. лица, приносящего жертву, и Ins. принесенной жертвы [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
   <sub>attested</sub>
 
-**1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* geopfert, dargebracht.
+**1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10) = [≈Вульг. 13.1.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S031) = ≈крит. 13,1.24a. *iṣṭa* geopfert, dargebracht.
 
-- **RU:** — b〉 с Acc. жертвы, песнопения и т.д., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10). *iṣṭa* принесённый в жертву, поднесённый.
+- **RU:** — b〉 с Acc. жертвы, песнопения и т.д., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10) = [≈Вульг. 13.1.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S031) = ≈крит. 13,1.24a. *iṣṭa* принесенный в жертву, поднесенный.
   <sub>attested</sub>
 
 **1c)** — c〉 mit Dat., Loc. oder Acc. mit *prati* der Person und Acc. der Sache.
@@ -39,12 +39,12 @@
 — 1〉 Jmd (Acc.) zum Opfer verhelfen, für Jmd als Opferpriester thätig sein; mit Instr. der Feier.
 
 - **RU:** — Caus. *yājayati* (метрически также Med.)
-— 1〉 помогать кому-либо (Acc.) совершить жертвоприношение, действовать для кого-либо в качестве жреца; с Instr. торжества.
+— 1〉 помогать кому-либо (Acc.) совершить жертвоприношение, действовать для кого-либо в качестве жреца; с Ins. торжества.
   <sub>attested</sub>
 
 **Kaus-2)** — 2〉 Jmd (Acc.) ein Opfer (Instr.) darbringen heissen vermittelst Jmds (Instr.).
 
-- **RU:** — 2〉 велеть кому-либо (Acc.) совершить жертвоприношение (Instr.) посредством кого-либо (Instr.).
+- **RU:** — 2〉 велеть кому-либо (Acc.) совершить жертвоприношение (Ins.) посредством кого-либо (Ins.).
   <sub>attested</sub>
 
 **Kaus-3)** — 3〉 Jmd ein Opfer darbringen heissen, mit doppeltem Acc.
@@ -59,30 +59,30 @@
 
 **pref-anu)** — Mit *ati* Med. mit dem Opfer eine Gottheit (Acc.) übergehen.
 
-- **RU:** — Mit *ati* Med. обходить божество (Acc.) при жертвоприношении.
+- **RU:** — С *ati* Med. обходить божество (Acc.) при жертвоприношении.
   <sub>attested</sub>
 
 **pref-apa-1)** — Mit *anu*
 — 1〉 den Anuyāja darbringen [ĀPAST. ŚR. 8,3,10].
 
-- **RU:** — Mit *anu*
+- **RU:** — С *anu*
 — 1〉 совершать Ануйаджа [ĀPAST. ŚR. 8,3,10].
   <sub>attested</sub>
 
 **pref-apa-2)** — 2〉 nachher verehren durch (Instr.). — [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) ist *tadanu* *ya˚* zu trennen.
 
-- **RU:** — 2〉 затем чтить посредством (Instr.). — [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) следует отделять от *tadanu* *ya˚*.
+- **RU:** — 2〉 затем чтить посредством (Ins.). — [PAÑCAR. 3,7,17](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,7,17) следует отделять от *tadanu* *ya˚*.
   <sub>attested</sub>
 
 **pref-ava)** — Mit *apa* mit einem Opfer vertreiben, wegopfern; Med. durch ein Opfer abkaufen [MANTRABR. 1,2,5].
 
-- **RU:** — Mit *apa* изгонять жертвой, отвращать жертвой; Med. откупаться жертвой [MANTRABR. 1,2,5].
+- **RU:** — С *apa* изгонять жертвой, отвращать жертвой; Med. откупаться жертвой [MANTRABR. 1,2,5].
   <sub>attested</sub>
 
 **pref-a-1)** — Mit *abhi*
 — 1〉 mit Opfer ehren, den Göttern (Acc.) opfern [MAITR. S. 1,4,5].
 
-- **RU:** — Mit *abhi*
+- **RU:** — С *abhi*
 — 1〉 чтить жертвой, жертвовать богам (Acc.) [MAITR. S. 1,4,5].
   <sub>attested</sub>
 
@@ -93,18 +93,18 @@
 
 **pref-nis)** — Mit *ava* durch Opfer oder Gebete abwenden, vertreiben, durch Gaben abfinden.
 
-- **RU:** — Mit *ava* отвращать, изгонять жертвами или молитвами, умиротворять дарами.
+- **RU:** — С *ava* отвращать, изгонять жертвами или молитвами, умиротворять дарами.
   <sub>attested</sub>
 
 **pref-prati)** — Mit *nirava* abfinden gegenüber von (Abl.).
 
-- **RU:** — Mit *nirava* умиротворять/откупаться по отношению к (Abl.).
+- **RU:** — С *nirava* умиротворять/откупаться по отношению к (Abl.).
   <sub>attested</sub>
 
 **pref-pra-1)** — Mit *ā*
 — 1〉 huldigend darbringen, weihen.
 
-- **RU:** — Mit *ā*
+- **RU:** — С *ā*
 — 1〉 подносить в знак почтения, посвящать.
   <sub>attested</sub>
 
@@ -115,28 +115,28 @@
 
 **pref-pra-3)** — 3〉 eropfern, überh. verschaffen (den Menschen von den Göttern), zuwenden; Med. auch sich verschaffen. *eṣṭa* eropfert, durch Verehrung gewonnen.
 
-- **RU:** — 3〉 добывать жертвой, вообще доставлять (людям от богов), обращать; Med. также добывать для себя. *eṣṭa* добытый жертвой, обретённый через почитание.
+- **RU:** — 3〉 добывать жертвой, вообще доставлять (людям от богов), обращать; Med. также добывать для себя. *eṣṭa* добытый жертвой, обретенный через почитание.
   <sub>attested</sub>
 
 **pref-anu-pra)** — Mit *samā* verschaffen.
 
-- **RU:** — Mit *samā* доставлять, добывать.
+- **RU:** — С *samā* доставлять, добывать.
   <sub>attested</sub>
 
 **pref-upa-pra)** — Mit *upa* dazu opfern.
 
-- **RU:** — Mit *upa* жертвовать дополнительно.
+- **RU:** — С *upa* жертвовать дополнительно.
   <sub>attested</sub>
 
 **pref-pra-pra)** — Mit *atyupa* weiter dazu opfern.
 
-- **RU:** — Mit *atyupa* жертвовать сверх того.
+- **RU:** — С *atyupa* жертвовать сверх того.
   <sub>attested</sub>
 
 **pref-vi-1)** Mit *pari*
 — 1〉 eropfern, erlangen, verschaffen.
 
-- **RU:** Mit *pari*
+- **RU:** С *pari*
 — 1〉 добывать жертвой, обретать, доставлять.
   <sub>attested</sub>
 
@@ -153,7 +153,7 @@
 **pref-sam-1)** — Mit *pra*
 — 1〉 verehren, huldigen, Jmd (Acc.) Opfer darbringen.
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
 — 1〉 почитать, чтить, приносить жертву кому-либо (Acc.).
   <sub>attested</sub>
 
@@ -165,7 +165,7 @@
 **pref-prati-sam-1)** — Mit *prati*
 — 1〉 dagegen opfern.
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 жертвовать в ответ.
   <sub>attested</sub>
 
@@ -176,13 +176,13 @@
 
 **pref-abhi-sam)** — Mit *anupra* Med. verehren.
 
-- **RU:** — Mit *anupra* Med. почитать.
+- **RU:** — С *anupra* Med. почитать.
   <sub>attested</sub>
 
 **pref-sam-a-1)** — Mit *sam*
 — 1〉 zusammen (den Göttern) opfern, — huldigen; opfern; überh.
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 совместно жертвовать (богам), — чтить; приносить жертву; вообще
   <sub>attested</sub>
 

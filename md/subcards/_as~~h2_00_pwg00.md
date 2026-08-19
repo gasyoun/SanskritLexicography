@@ -37,7 +37,7 @@
 [7,16,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.016.html#rv07.016.09) *prajāvatā vacasā vahnirāsā ca huve ni ca satsīha devaiḥ* coram vehens
 [1,76,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.076.html#rv01.076.04) [129,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.129.html#rv01.129.05) [10,115,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.115.html#rv10.115.03) *tve agne viśve amṛtāso adruha āsā devā haviradantyāhutam* лично присутствующий
 [2,1,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.14) *viśvā yaścarṣaṇīrabhyā3sā vājeṣu sāsahat* cominus, муж против мужа
-[5,23,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.023.html#rv05.023.01) *bhasadaśvo na yamasāna āsā* он жуёт, словно конь, которого ведут за поводья спереди,
+[5,23,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.023.html#rv05.023.01) *bhasadaśvo na yamasāna āsā* он жует, словно конь, которого ведут за поводья спереди,
 [6,3,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.003.html#rv06.003.04) *adha dyutānaḥ pitroḥ sacāsāmanuta guhyaṃ cāru pṛśneḥ*
 [4,5,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.10) *asya hi svayaśastara āsā vidharmanmanyase*
 [5,17,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.017.html#rv05.017.02) *nū na iddhi vāryamāsā sacante sūrayaḥ*
@@ -45,5 +45,5 @@
 [6,32,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.032.html#rv06.032.01) *anyasyāsā jihvayā jenyo vṛṣā*
 [1,140,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.02) *āsāvivāsannaditimuruṣyet*
 [152,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.152.html#rv01.152.06) *āsā gāvo vandyāso nokṣaṇaḥ*
-[168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) ср. *āsayā* . — В comp. см. *ādaghna, āspātra, anās, svās*; ср. также ещё *āsan* и *āsya* .
+[168,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.168.html#rv01.168.02) [10,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.001.html#rv10.001.03) [20,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.03) [40,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.040.html#rv10.040.06) [67,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.10) ср. *āsayā* . — В comp. см. *ādaghna, āspātra, anās, svās*; ср. также еще *āsan* и *āsya* .
   <sub>attested</sub>

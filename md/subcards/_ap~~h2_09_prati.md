@@ -6,6 +6,6 @@
 **1)** — *prati* desid. werben um (ein Mädchen): *tvatsvāmyarthaṃ pratīpsa tām*
 [KATHĀS. 120,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,97)
 
-- **RU:** — *prati* desid. «свататься за» (девушку): *tvatsvāmyarthaṃ pratīpsa tām*
+- **RU:** — *prati* desid. свататься за (девушку): *tvatsvāmyarthaṃ pratīpsa tām*
 [KATHĀS. 120,97.](https://sanskrit-lexicon-scans.github.io/kss/index.html?120,97)
   <sub>attested</sub>

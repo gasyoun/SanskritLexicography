@@ -9,7 +9,7 @@
 
 - **RU:** — *abhi*
  1) *nāvamanyedabhigatam* так преим. того, кто приближается с просьбой,
-[Spr. 1557.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1557) стк. 8 *abhigatvā* также и [ed. Bomb.]
+[Spr. 1557.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1557) стк. 8 *abhigatvā* также и [Бомбейская ред.]
   <sub>attested</sub>
 
 **3)** — 3)

@@ -13,10 +13,10 @@
   <sub>attested</sub>
 
 **2)** — 2) eindringen in, durchdringen: *yadidaṃ dharmagahanaṃ buḍhyā samanugamyate*
-[MBH. 11,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.125) *sarveṣu hi vedānteṣu vākyāni tātparyeṇaiva svārthasya prātipādakatvena samanugatāni*
+[MBH. 11,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.125) = [≈Вульг. 11.5.2](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A005_S002) = ≈крит. 11,5.2a *sarveṣu hi vedānteṣu vākyāni tātparyeṇaiva svārthasya prātipādakatvena samanugatāni*
 [WIND. Sancara 109.]
 
 - **RU:** — 2) проникать во что-л., пронизывать: *yadidaṃ dharmagahanaṃ buḍhyā samanugamyate*
-[MBH. 11,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.125) *sarveṣu hi vedānteṣu vākyāni tātparyeṇaiva svārthasya prātipādakatvena samanugatāni*
+[MBH. 11,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.125) = [≈Вульг. 11.5.2](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A005_S002) = ≈крит. 11,5.2a *sarveṣu hi vedānteṣu vākyāni tātparyeṇaiva svārthasya prātipādakatvena samanugatāni*
 [WIND. Sancara 109.]
   <sub>attested</sub>
