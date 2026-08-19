@@ -159,7 +159,7 @@ not profiled (same method applies; markup per dict).
 ## 4.5. Printed-preface evidence — the lexicographers define the ring themselves
 
 _Section of record: FINDINGS [§571](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
-([H3143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3143-Opus_SanskritLexicography_preface-ring-definition-cappeller-priority_19.08.26.md), 19-08-2026)._
+([H3143](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3143-Opus_SanskritLexicography_preface-ring-definition-cappeller-priority_19.08.26.md), 19-08-2026)._
 
 Everything in §1–§4 is **distributional**: counted out of the CDSL markup. It
 was collected without opening a single preface, and the census therefore
