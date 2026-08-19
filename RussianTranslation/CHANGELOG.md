@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Roadmap truth-pass: `freq_route.py` was listed as unbuilt (H3001, 19-08-2026)
+
+- **[REVIEW_AND_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REVIEW_AND_ROADMAP.md)
+  §5 still read "**Build (next step):** `freq_route.py`".** Both artifacts exist —
+  [`src/freq_route.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/freq_route.py)
+  and `pilot/output/scale_manifest.freq.json`. Corrected in place; the phases A–D
+  plan and the 23-06-2026 frequency-first pivot stand as written, and Phase A
+  remains the named immediate action.
+- **[RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md)
+  now states its shared blocker at document level.** Cards 1 (COMET-QE calibration)
+  and 3 (BLI evaluation of `corpus_lexicon`) both wait on gold sets that do not
+  exist, and until now that fact lived only in per-card `needs gold sample` flags —
+  so a session could pick a card up, get halfway, and discover the blocker itself.
+  Both, plus [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)'s
+  C1 WSD harness, are unblocked by one handoff:
+  [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md).
+- **Ceiling Wave 1 finally minted.** ROADMAP_CEILING_2026's own text promised
+  "handoffs for Wave 1 items are minted after H335 lands"; H335 closed 08-07-2026
+  and six weeks later none existed — H3168 (C2 phase 1 attestation window), H3169
+  (C4 KEWA join), H3170 (C8 DharmaMitra probe). Wave 2 stays coverage-gated and
+  deliberately unminted. Residual programme:
+  [docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
+
 ## [1.144.79] - 2026-08-19
 
 ### Generation prompt: plan-mode TASK SHAPE block (H3144, 19-08-2026)

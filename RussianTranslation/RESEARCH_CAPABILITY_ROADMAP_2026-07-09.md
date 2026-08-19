@@ -1,6 +1,27 @@
 # PWG->RU research-grade capability roadmap: 30 additive layers
 
-_Created: 09-07-2026 · Last updated: 09-07-2026_
+_Created: 09-07-2026 · Last updated: 19-08-2026_
+
+> **⚠️ Shared blocker, surfaced 19-08-2026** ([H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md)).
+> **Several cards below are blocked on a gold set that does not exist yet**, and
+> until now that fact lived only in per-card `needs gold sample` flags — nothing at
+> document level said so. A session could pick up card 1 or card 3, get halfway,
+> and discover the blocker itself. Card 1 (COMET-QE calibration) needs a frozen
+> human A/B/C slice; card 3 (BLI evaluation of `corpus_lexicon`) needs a 300-item
+> Sa→Ru gold set. Both, plus
+> [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)'s
+> C1 WSD harness, are now unblocked by one handoff:
+> [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md).
+> **Before starting any card, check whether it carries `needs gold sample`.**
+>
+> Second standing caveat: this roadmap's card numbering overlaps
+> [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)
+> (C1 WSD) and
+> [research/ROADMAP_ACL_LESSONS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.md)
+> (B1 BLI) — all three were authored the same week. **Which document owns the
+> actual build is unruled and needs a human decision**; see the "Not mintable"
+> table in
+> [docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
 
 This roadmap turns the four H335 capability questions into a wider, ranked
 research programme for `pwg_ru`. It is additive: the baseline remains the
