@@ -1,6 +1,10 @@
 # pwg_ru — full review and roadmap (2026-06-16)
 
-_Created: 09-07-2026 · Last updated: 09-07-2026_
+_Created: 09-07-2026 · Last updated: 19-08-2026_
+
+> **Truth-pass 19-08-2026** ([H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md)).
+> One stale claim corrected in §5: `freq_route.py` was listed as the next thing to
+> build; it is built. Phases A–D and the frequency-first pivot stand as written.
 
 A candid retrospective of the corpus-first build and a phased plan forward.
 Companion docs: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (5-lens external
@@ -137,9 +141,12 @@ bulk changes.
 of running Sanskrit text; translate + review them, then **reassess** the tail (the
 frequency-0 lexicographic-only words are deferred until that checkpoint).
 
-**Build (next step):** `freq_route.py` — join DCS token+breadth to PWG headwords (IAST→
-SLP1 via the existing `build_dcs_renou` join), score richness, emit
-`pilot/output/scale_manifest.freq.json` (ranked). The rest of the chain is unchanged:
+**Build — ✅ done (correction, 19-08-2026).** This line read "**Build (next step):**"
+until the H3001 truth-pass; both artifacts exist:
+[`src/freq_route.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/freq_route.py)
+and `pilot/output/scale_manifest.freq.json`. `freq_route.py` joins DCS
+token+breadth to PWG headwords (IAST→SLP1 via the existing `build_dcs_renou`
+join), scores richness, and emits the ranked manifest. The rest of the chain is unchanged:
 `_pilot_gen_merged.py --manifest freq` → owner-map → gated translate→audit
 ([archived RUN_ASECTION_MAX.md](src/pilot/archive/legacy_max_2026-06-27/RUN_ASECTION_MAX.md) loop, just pointed at the freq
 manifest). **Only the order changes; the pipeline is the same.**

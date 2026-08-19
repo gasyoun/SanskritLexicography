@@ -1,6 +1,6 @@
 # REVIEW_AND_ROADMAP.meta.md — metadoc for `REVIEW_AND_ROADMAP.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-08-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [REVIEW_AND_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REVIEW_AND_ROADMAP.md).
@@ -68,8 +68,11 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
   roadmap; archive with a pointer to the published edition rather than deleting.
 
 ## Deprecation status
-`active` — Phase A explicitly named as the immediate next action, not yet complete as of this
-metadoc's authoring.
+`active` — truth-passed 19-08-2026 (H3001). Phases A–D and the 23-06-2026
+frequency-first pivot stand as written; the only stale claim was §5's "**Build
+(next step):** `freq_route.py`", which is built ([`src/freq_route.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/freq_route.py)
+plus `scale_manifest.freq.json`) — corrected in place. Phase A remains the named
+immediate action.
 
 ## Related documents
 - [METHODOLOGY_REVIEW.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/METHODOLOGY_REVIEW.md) — the 5-lens external review companion.

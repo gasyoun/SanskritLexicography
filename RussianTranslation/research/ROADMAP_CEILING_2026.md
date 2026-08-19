@@ -1,6 +1,15 @@
 # Roadmap A — beyond the ceiling: what the PWG→RU dictionary cannot answer, and what we bolt on
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 19-08-2026_
+
+> **Truth-pass 19-08-2026** ([H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md)).
+> This roadmap said *"Handoffs for Wave 1 items are minted after H335 lands."*
+> [H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)
+> closed ✅ on **08-07-2026** and no Wave 1 handoff was ever minted — a roadmap that
+> delegates its own mint to a future moment has nothing watching for that moment.
+> **Wave 0 is complete; Wave 1 is now minted** (see the phasing section). Residual
+> programme:
+> [docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
 
 The dictionary answers "what senses exist and where are they cited" superbly; it does **not** answer "which sense is live in this passage" or "how did the sense change over time" without an external model or dated corpus bolted on. This roadmap turns each honest ceiling item into either a build (with the bolt-on named), a partial (with the proxy named), or an explicit stays-out-of-scope. All eight forks were ruled by MG on 08-07-2026 (decision log at the bottom). Sequencing ruling: **[H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md) audit first → cheap derivables in parallel with translation → model/benchmark phases after ~50% translation coverage.**
 
@@ -19,10 +28,18 @@ The dictionary answers "what senses exist and where are they cited" superbly; it
 
 ## Phasing (per the sequencing ruling)
 
-- **Wave 0 (now):** H335 audit (its W2 evidence-vector and W4 genre specs are C6/C5/C7's foundation).
-- **Wave 1 (parallel with translation, cheap derivables):** C2 phase 1 (dating join — deterministic), C4 KEWA normalization + join (deterministic), C8 license-gated probe + outreach draft.
-- **Wave 2 (after ~50% translation coverage):** C1 embedding WSD baseline + gold set, C2 phase 2 (curated dating table), C1 DharmaMitra probe.
-- Handoffs for Wave 1 items are minted after H335 lands (its specs set their schemas); each will carry its own starter line in the registry.
+- **Wave 0 — ✅ complete 08-07-2026.** The [H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md)
+  audit closed; its W2 evidence-vector and W4 genre specs are C6/C5/C7's foundation.
+- **Wave 1 (parallel with translation, cheap derivables) — 🟡 minted 19-08-2026:**
+
+  | Item | Handoff |
+  |---|---|
+  | C2 phase 1 — dating join, deterministic | [H3168 (Sonnet 5) — Ceiling C2 phase 1: per-sense attestation window](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3168-Sonnet_SanskritLexicography_ceiling-c2p1-sense-attestation-window_19.08.26.md) |
+  | C4 — KEWA normalization + dhātu-aware join | [H3169 (Opus 5) — Ceiling C4: KEWA index normalization and join](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3169-Opus_SanskritLexicography_ceiling-c4-kewa-normalize-join_19.08.26.md) |
+  | C8 — license-gated probe + outreach draft | [H3170 (Sonnet 5) — Ceiling C8: DharmaMitra probe plus outreach draft](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3170-Sonnet_SanskritLexicography_ceiling-c8-dharmamitra-probe-outreach_19.08.26.md) |
+
+- **Wave 2 (after ~50% translation coverage):** C1 embedding WSD baseline, C2 phase 2 (curated dating table), C1 DharmaMitra probe. **Deliberately not minted** — minting coverage-gated work now would produce handoffs that sit blocked and rot. The **gold set** C1 needs is *not* coverage-gated and is minted separately as [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md): building the yardstick early is what makes the coverage checkpoint actionable when it arrives.
+- **On mint timing (correction, 19-08-2026).** The original line here — *"handoffs for Wave 1 items are minted after H335 lands"* — is the defect this truth-pass found. A gate whose successor is only *promised* has no observer. Any future gate in this document names the observable that decides it, and queues its successor at the same time the gate is written.
 
 ## Decision log (MG rulings, 08-07-2026)
 

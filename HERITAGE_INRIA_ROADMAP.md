@@ -1,6 +1,14 @@
 # Sanskrit Heritage (INRIA) reuse roadmap
 
-_Created: 03-07-2026 · Last updated: 26-07-2026_
+_Created: 03-07-2026 · Last updated: 19-08-2026_
+
+> **Truth-pass 19-08-2026** ([H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md)).
+> This document's **body was accurate** — phases 0–5 ✅ with evidence, phase 6 ⬜ —
+> and it was the only one of four stale Tier-1 roadmaps that was. Its *metadoc* was
+> the stale one (it claimed phase 3 still queued after phase 3 executed
+> 26-07-2026); corrected in the same pass. Phase 6's mint, delegated to "when its
+> gate clears" on a gate that was never closed, is now
+> [H3171 (Sonnet 5) — Heritage phase 6: segmenter-as-service cross-validation](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3171-Sonnet_SanskritLexicography_heritage-phase6-segmenter-service_19.08.26.md).
 
 What of [sanskrit.inria.fr](https://sanskrit.inria.fr) (Gérard Huet's Sanskrit Heritage
 Platform) we already reuse, and the staged plan for the rest. The Phase 5 DICO
@@ -79,7 +87,7 @@ gloss layer was delivered on 03-07-2026 (H106). Rulings by MG 03-07-2026
 | 3 | Frequency tables | Ingest the `DATA/*.tsv` pada/compound/transition frequencies; diff against VisualDCS M1–M8 and `corpus_lexicon`; register the feed in [PROJECT_INTERLINKS](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md) | VisualDCS, csl-atlas | mirror only — no gate | ✅ **Done 26-07-2026 (H1490, Sonnet 5 `claude-sonnet-5`)** — new WX→SLP1 transcoder (sourced from the mirror's own `XML/WX_morph.dtd`); 5 lexical tables diffed against VisualDCS M1–M8 (`dcs_full.sqlite`) and `corpus_lexicon.jsonl` across 3 series (surface forms, lemmas, compound first-members) — Spearman ρ 0.70–0.74 vs DCS (82.7–93.6% coverage), 0.53 vs `corpus_lexicon`; the 2 `*_trans_freq.tsv` files are non-lexical POS-tag transition bigrams, ingested but out of scope for the ranking diff. Report + derived TSV: [heritage_frequency_diff.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md) / [.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.tsv); registered in [PROJECT_INTERLINKS](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md). |
 | 4 | Morphology databanks | Current inflected-form XML banks → forms oracle for SanskritSpellCheck + third witness beside kosha's vidyut-built forms layer (426,410 pairs) — diff, never overwrite | SanskritSpellCheck, kosha | ~~Phase 0 @DO download; @DECIDE for anything vendored~~ **both cleared 03-07-2026** | ✅ **Done 03-07-2026 (H105, Opus 4.8 `claude-opus-4-8`)** — oracle built: 1,022,526 Heritage forms vs 409,978 kosha forms; **94,264 overlap, 78.3% agree**; the small raw overlap is engine-surplus + anusvara/avagraha convention (18,636 recover under nasal-norm), and 66% of disagreements are root↔derived-stem lemmatization policy, not error (40-row hand-adjudication). Deliverables [heritage_forms_oracle.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.md) + `.tsv.gz`/`.py`; [FINDINGS §52](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md). kosha-ingest of Heritage's 928k surplus forms is a **GTD @DECIDE**, not built. |
 | 5 | Heritage dictionary (DICO) | French gloss layer + entry structure as an additional witness/gloss source for kosha entries | kosha | ~~@DECIDE ruling + Huet outreach reply~~ **both cleared 03-07-2026** | ✅ **Done 03-07-2026 (H106, Sonnet 5 `claude-sonnet-5`)** — [heritage_dico_gloss.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss.tsv): 24,549/24,549 crosswalk-resolved entries extracted (100 %), 99.98 % join kosha's `lemmas` (7.59 % of the 323,425-row table); 25-row hand-verified, zero truncation/bleed after fixing a 3-way anchor-role ambiguity (fresh headword vs. compound sub-entry vs. inline cross-reference — see [FINDINGS §54](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)). Report: [heritage_dico_gloss.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss.md). kosha UI surfacing flagged as GTD @DECIDE, not built. |
-| 6 | Segmenter as service | UoHyd-mirror segmenter/lemmatizer cross-validation vs DharmaMitra GPU morphology (csl-atlas #89/#92 lineage) and the RussianTranslation glossary adjudication set — polite: cache, throttle, identify | csl-atlas, RussianTranslation | none; live-service etiquette | ⬜ queued |
+| 6 | Segmenter as service | UoHyd-mirror segmenter/lemmatizer cross-validation vs DharmaMitra GPU morphology (csl-atlas #89/#92 lineage) and the RussianTranslation glossary adjudication set — polite: cache, throttle, identify | csl-atlas, RussianTranslation | none; live-service etiquette | 🟡 **QUEUED 19-08-2026** — [H3171 (Sonnet 5) — Heritage phase 6: segmenter-as-service cross-validation](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3171-Sonnet_SanskritLexicography_heritage-phase6-segmenter-service_19.08.26.md). The gate was always clear; the mint was delegated to "when its gate clears" and nothing was watching |
 
 Phases 1–5 are done (1–3 off the mirror; 4 off the human-downloaded morphology
 XML; 5 off the DICO mirror); 6 can run whenever a session needs the second
@@ -95,7 +103,10 @@ Phases 0–2 executed 03-07-2026 (handoff
 Sonnet 5 `claude-sonnet-5`) — see the Status column above and
 [FINDINGS.md §49](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
 Phase 3 executed 26-07-2026 (handoff
-[H1490](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1490-Sonnet_SanskritLexicography_heritage-freq-tables-ingest_22.07.26.md),
-Sonnet 5 `claude-sonnet-5`). Phase 6 mints its own H### handoff when its gate clears.
+[H1490](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1490-Sonnet_SanskritLexicography_heritage-freq-tables-ingest_22.07.26.md),
+Sonnet 5 `claude-sonnet-5`). Phase 6 is queued as
+[H3171 (Sonnet 5) — Heritage phase 6: segmenter-as-service cross-validation](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3171-Sonnet_SanskritLexicography_heritage-phase6-segmenter-service_19.08.26.md)
+(minted 19-08-2026 — the earlier "mints its own H### when its gate clears" wording
+had no observer, and the gate had been clear from the start).
 
 _Dr. Mārcis Gasūns_

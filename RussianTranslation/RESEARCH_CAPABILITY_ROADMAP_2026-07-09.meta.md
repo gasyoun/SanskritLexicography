@@ -1,6 +1,6 @@
 # RESEARCH_CAPABILITY_ROADMAP_2026-07-09.meta.md — metadoc for `RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-08-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md).
@@ -62,7 +62,12 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
   into whichever survives as canonical.
 
 ## Deprecation status
-`active` — cards not yet individually triaged as done/in-progress/blocked at the doc level.
+`active` — truth-passed 19-08-2026 (H3001). Cards are still not individually
+triaged, but the **shared blocker is now stated at doc level** rather than hiding
+in per-card `needs gold sample` flags: cards 1 and 3 (and CEILING C1) all wait on
+gold sets, minted as H3172. The overlap with CEILING C1 and ACL_LESSONS B1 remains
+an unruled human decision about which document owns the build — recorded as N1 in
+[docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
 
 ## Related documents
 - [ROADMAP_ACL_LESSONS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.md) — overlapping BLI/WSD scope, see backlog item 3.
