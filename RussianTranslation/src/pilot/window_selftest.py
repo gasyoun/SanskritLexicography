@@ -1402,6 +1402,42 @@ def test_mask_preamble_carries_task_shape():
                  '(%r) — that is the exact shape the model refused twice' % banned)
 
 
+def test_health_probe_shares_the_production_task_shape():
+    """H3157 repair (a) / FINDINGS §498 rule 1: the cheap gate half must be able to fail the
+    way the expensive half fails.
+
+    H994 fixed this probe's plan-mode refusal in its PROMPT while keeping `--permission-mode
+    plan`, so the probe matched the paid call in spawn shape and was immunised in the one input
+    the model reasons about. On 19-08-2026 that produced a Step-1 PASS on both ceilings minutes
+    before the Step-2 canary refused — same profile, same flag, same model. A gate whose cheap
+    half cannot detect the failure its expensive half is exposed to reports healthy right up to
+    the moment it spends.
+
+    The fix is that the probe now carries the generation lane's OWN TASK SHAPE block, so a
+    regression there refuses cheaply at Step 1 instead of expensively at Step 2. Asserted on
+    the assembled prompt, not on the import, so deleting the prepend is caught too.
+    """
+    import max_account_orchestrator as mao
+    from gen_opt_harness2 import MASK_PREAMBLE as preamble
+
+    prompt = mao._probe_prompt(6491)
+
+    if preamble.strip() not in prompt:
+        fail('the health probe no longer carries the production TASK SHAPE block — a Step-1 '
+             'PASS would again carry no information about whether Step 2 will refuse (§498)')
+    if not prompt.startswith('=== TASK SHAPE (read first) ==='):
+        fail('the TASK SHAPE block must OPEN the probe prompt, as it does in production — the '
+             'model refuses before reaching a later block')
+    # H994's own fix must survive: a natural, completable task, never a bare tool-demand.
+    if '{"ok": true}' not in prompt:
+        fail('the probe lost its natural completable task (H994) — a degenerate tool-demand is '
+             'the shape that triggered the refusal in the first place')
+    # The payload floor is what makes the reading load-representative; the prepend must not
+    # have been paid for out of the filler.
+    if len(prompt.encode('utf-8')) < 6491:
+        fail('probe prompt fell below the >=5 KB payload floor after the preamble was added')
+
+
 def test_prompt_rule_audit_missing_blocks():
     with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.js', delete=False) as f:
         path = f.name
@@ -9206,6 +9242,12 @@ def main():
         test_no_pwg_layer_and_profile_survive_promotion,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
+        # H3157: `test_mask_preamble_carries_task_shape` was authored with the option-B fix but
+        # never added to this list, so the guard that two separate docs describe as "pinning"
+        # the TASK SHAPE block had never executed. An unregistered test is indistinguishable
+        # from a passing one in every report that matters.
+        test_mask_preamble_carries_task_shape,
+        test_health_probe_shares_the_production_task_shape,
         test_semantic_risk_checker,
         test_h1152_guard1_en_polyseme_checklist,
         test_braced_gloss_audit,

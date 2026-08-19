@@ -1288,12 +1288,45 @@ _PROBE_FILLER_UNIT = (
     'grammatical notes, source citations, and numbered German senses. ')
 
 
+def _production_task_shape_preamble():
+    """The generation lane's own TASK SHAPE block, imported rather than copied.
+
+    H3157 repair (a). Imported lazily and fail-open: a probe must not become unrunnable because
+    an import moved. If the block cannot be loaded the probe still runs — it simply loses this
+    particular sensitivity, and says so via the returned empty string.
+    """
+    try:
+        from gen_opt_harness2 import MASK_PREAMBLE
+    except Exception:                                     # pragma: no cover - defensive only
+        return ''
+    return MASK_PREAMBLE
+
+
 def _probe_prompt(payload_bytes):
-    """A load-representative readiness prompt: one clear task (return {"ok": true}) plus >=payload_bytes
-    of inert, domain-shaped filler explicitly framed as ignorable. Deterministic (fixed filler unit)."""
+    """A load-representative readiness prompt: the PRODUCTION TASK SHAPE block, then one clear
+    task (return {"ok": true}) plus >=payload_bytes of inert, domain-shaped filler explicitly
+    framed as ignorable. Deterministic (fixed filler unit).
+
+    H3157 repair (a) — why the production preamble is prepended here. H994 fixed this probe's
+    refusal by reframing its PROMPT while deliberately keeping `--permission-mode plan`, so the
+    probe matched the real invocation in spawn shape and was immunised in the one input the
+    model actually reasons about. The result was a Step-1 health check that CANNOT fail the way
+    Step 2 fails: on 19-08-2026 it returned PASS on both ceilings minutes before the canary
+    refused on the same profile, same flag, same model (FINDINGS §498, rule 1 — matching the
+    spawn shape is necessary and nowhere near sufficient).
+
+    Sharing the generation lane's own TASK SHAPE text restores the sensitivity: if that block is
+    ever weakened, dropped, or stops satisfying the model's plan-mode reasoning, THIS probe
+    refuses too — cheaply, before a paid canary spends. The probe keeps its own natural,
+    completable task after the block, so H994's fix is preserved, not reverted.
+    """
     reps = payload_bytes // len(_PROBE_FILLER_UNIT) + 1
     filler = (_PROBE_FILLER_UNIT * reps)[:payload_bytes]
-    return ('You are a readiness probe for an automated translation service. Confirm the service is '
+    preamble = _production_task_shape_preamble()
+    if preamble and not preamble.endswith('\n'):
+        preamble += '\n'
+    return (preamble +
+            'You are a readiness probe for an automated translation service. Confirm the service is '
             'responding by replying with exactly the JSON object {"ok": true} and nothing else. The '
             'block below is inert sample text included only to size the request to a realistic payload; '
             'do not analyse, translate, or act on it.\n\n--- inert sample (ignore) ---\n' + filler)
@@ -1303,8 +1336,8 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 reservation_purpose='probe', account=None, active_claim=None,
                 timing_out=None, run_id=None, detail_out=None):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
-    classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'content' | 'process' |
-    'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
+    classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'refusal' | 'content' |
+    'process' | 'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
     STOP on. rc 0 alone is NOT enough: the Claude CLI result envelope must indicate success AND
     carry the structured schema result {"ok": true}."""
     env = os.environ.copy()
@@ -1439,18 +1472,28 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
     # extract the structured schema result: `structured_output`, else `result` when it is a JSON
     # string (or already a dict).
     payload = wrapper.get('structured_output')
-    if payload is None:
+    # H3157 repair (b), probe half: remember whether the structured CHANNEL was there at all.
+    structured_absent = payload is None
+    refusal_prose = ''
+    if structured_absent:
         res = wrapper.get('result')
         if isinstance(res, str):
             try:
                 payload = json.loads(res)
             except (ValueError, TypeError):
                 payload = None
+                refusal_prose = res
         elif isinstance(res, dict):
             payload = res
     if not isinstance(payload, dict) or 'ok' not in payload:
         call_reservation.finalize(
             reservation, dict(telemetry, cost_evaluable=False))
+        # No structured channel + prose where the JSON belongs is a REFUSAL, not malformed
+        # output — the same split `headless_worker` now makes, so the gate's two halves name
+        # the same fault the same way (§498). Either way it is a NO-GO; only the label, and
+        # therefore where the next operator looks, changes.
+        if structured_absent and refusal_prose.strip():
+            return latency_ms, _fail('refusal', combined), output_bytes
         # missing / invalid structured result
         return latency_ms, _fail('malformed', combined), output_bytes
     if payload.get('ok') is not True:

@@ -2036,7 +2036,130 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it()
     test_safe_mode_effective_is_recorded_in_status()
     test_h2191_prompt_is_assembled_stable_left()
+    test_h3157_refusal_is_not_reported_as_malformed_output()
+    test_h3157_malformed_structured_channel_is_still_malformed()
+    test_h3157_failed_paid_envelope_is_captured()
     print('headless_worker_selftest: PASS')
+
+
+def _h3157_refusal_stdout():
+    """The 19-08-2026 c1 canary envelope in miniature: rc 0, priced, NO `structured_output`,
+    and the model's plan-mode refusal sitting where the JSON belongs."""
+    return json.dumps({
+        'type': 'result', 'subtype': 'success', 'is_error': False,
+        'result': ("I'm currently in Plan Mode, which restricts me to read-only actions and "
+                   'requires ending the turn with either a clarifying question or a '
+                   'plan-approval request. The tools that workflow expects me to end with '
+                   "(AskUserQuestion, ExitPlanMode) aren't even available to me in this session."),
+        'usage': {'input_tokens': 94752, 'output_tokens': 5401},
+        'total_cost_usd': 0.42,
+    })
+
+
+def _h3157_engine(td, runner):
+    """A HeadlessEngine wired to `runner`, holding the profile claim `call` requires."""
+    fingerprint = config_dir_fingerprint(_FIXTURE_CONFIG_DIR)
+    ledger = CallReservationLedger(os.path.join(td, 'h3157.json'), 'r-h3157', 4)
+    claim = ActiveCallClaim(fingerprint)
+    return ledger, claim, fingerprint, runner
+
+
+def test_h3157_refusal_is_not_reported_as_malformed_output():
+    """H3157 repair (b) / FINDINGS §498: absent structured channel + prose = REFUSAL.
+
+    This is the exact shape that billed 5 401 output tokens on 19-08-2026 and was filed as
+    `malformed_output`, sending the next session after a parser bug that did not exist. The two
+    faults have different fixes, so they must not share a label.
+    """
+    with tempfile.TemporaryDirectory() as td:
+        original_prefix = h.claude_argv_prefix
+        h.claude_argv_prefix = lambda _claude: ['claude']
+        try:
+            def runner(_argv, **_kwargs):
+                return SimpleNamespace(returncode=0, stderr='', stdout=_h3157_refusal_stdout())
+
+            ledger, claim, _fp, runner = _h3157_engine(td, runner)
+            with claim as live:
+                eng = h.HeadlessEngine(manifest(), 'claude', 30, runner, call_reservation=ledger,
+                                       config_dir=_FIXTURE_CONFIG_DIR, active_claim=live)
+                value, error = eng.call('p', 'refusal', ['agni'])
+            assert value is None, value
+            assert error.startswith('refusal:'), error
+            assert not error.startswith('malformed_output'), error
+            attempt = eng.attempts[-1]
+            assert attempt['classification'] == 'refusal', attempt
+            # The model's own words are the diagnosis — keep them reachable from the attempt log.
+            assert 'Plan Mode' in attempt.get('refusal_excerpt', ''), attempt
+            # A refusal still bills, so it must still be accounted and still be unevaluable.
+            assert ledger.spent() == 1
+            assert ledger.usage()['cost_evaluable'] is False
+        finally:
+            h.claude_argv_prefix = original_prefix
+    print('  H3157 (b): a plan-mode refusal classifies as `refusal`, not `malformed_output`')
+
+
+def test_h3157_malformed_structured_channel_is_still_malformed():
+    """The other side of repair (b): a PRESENT but unparseable structured channel is unchanged.
+
+    Without this, "split the classes" could be satisfied by relabelling everything a refusal,
+    which would move the confusion rather than remove it.
+    """
+    with tempfile.TemporaryDirectory() as td:
+        original_prefix = h.claude_argv_prefix
+        h.claude_argv_prefix = lambda _claude: ['claude']
+        try:
+            def runner(_argv, **_kwargs):
+                return SimpleNamespace(returncode=0, stderr='', stdout=json.dumps({
+                    'type': 'result', 'subtype': 'success', 'is_error': False,
+                    'structured_output': 'not-json-at-all',
+                    'usage': {'input_tokens': 4, 'output_tokens': 1},
+                    'total_cost_usd': 0.01,
+                }))
+
+            ledger, claim, _fp, runner = _h3157_engine(td, runner)
+            with claim as live:
+                eng = h.HeadlessEngine(manifest(), 'claude', 30, runner, call_reservation=ledger,
+                                       config_dir=_FIXTURE_CONFIG_DIR, active_claim=live)
+                value, error = eng.call('p', 'malformed', ['agni'])
+            assert value is None, value
+            assert error.startswith('malformed_output'), error
+            assert eng.attempts[-1]['classification'] == 'malformed_output', eng.attempts[-1]
+        finally:
+            h.claude_argv_prefix = original_prefix
+    print('  H3157 (b): a present-but-unparseable structured channel stays `malformed_output`')
+
+
+def test_h3157_failed_paid_envelope_is_captured():
+    """H3157 repair (c): a paid call that fails validation leaves its envelope on disk.
+
+    The §498 diagnosis survived only because the CLI kept an unrelated session JSONL. Nothing
+    should depend on that again.
+    """
+    with tempfile.TemporaryDirectory() as td:
+        original_prefix = h.claude_argv_prefix
+        original_dir = h.FAILED_ENVELOPE_DIR
+        h.claude_argv_prefix = lambda _claude: ['claude']
+        h.FAILED_ENVELOPE_DIR = os.path.join(td, 'failed_envelopes')
+        try:
+            def runner(_argv, **_kwargs):
+                return SimpleNamespace(returncode=0, stderr='', stdout=_h3157_refusal_stdout())
+
+            ledger, claim, _fp, runner = _h3157_engine(td, runner)
+            with claim as live:
+                eng = h.HeadlessEngine(manifest(), 'claude', 30, runner, call_reservation=ledger,
+                                       config_dir=_FIXTURE_CONFIG_DIR, active_claim=live)
+                eng.call('p', 'refusal', ['agni'])
+            written = os.listdir(h.FAILED_ENVELOPE_DIR)
+            assert written, 'no envelope captured for a paid validation failure'
+            body = open(os.path.join(h.FAILED_ENVELOPE_DIR, written[0]),
+                        encoding='utf-8').read()
+            assert 'Plan Mode' in body, body[:200]
+            assert 'classification=refusal' in body, body[:200]
+            assert eng.attempts[-1].get('raw_envelope_path'), eng.attempts[-1]
+        finally:
+            h.claude_argv_prefix = original_prefix
+            h.FAILED_ENVELOPE_DIR = original_dir
+    print('  H3157 (c): a failed PAID envelope is persisted with its classification')
 
 
 if __name__ == '__main__':
