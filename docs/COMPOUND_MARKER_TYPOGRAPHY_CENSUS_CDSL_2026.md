@@ -292,6 +292,14 @@ item in this order:**
 8. **Inflection abbreviation** — Wilson's `(-traM)`, MD's `-tas, -m` runs,
    Whitney's `-te etc.`: the leading-hyphen *inflectional* use that §558
    showed must be separated from the compound use before any expansion pass.
+   **measured → FINDINGS
+   [§573](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2985): Wilson is 100 % inflectional (49,487/49,487 leading-hyphen runs);
+   Macdonell splits 82.9 % compound-member / 1.9 % inflectional / 15.2 % a
+   third taddhita-derivational class the two-way split cannot hold; Whitney's
+   Roots 1885 device is pure compound-member while his Grammar's is
+   inflectional (`-arthe`/`-kṛte`, §1116) — a 4-rule disambiguation table by
+   markup context, not by dictionary.**
 9. **Meter/quantity marks** — mw72's symbol list has `˘`/`—` for syllable
    quantity; who else marks prosody inline. **measured → FINDINGS
    [§565](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
