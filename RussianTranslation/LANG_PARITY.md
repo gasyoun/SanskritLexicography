@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 18-08-2026 (H3103: `h1210_ab_arm_scaffold` hash re-verified after a U6 chrome-only fix to `build_ab_review_sheet.py`, SHARED stands.)_
+_Created: 04-07-2026 · Last updated: 19-08-2026 (H3157: the §498 refusal-vs-`malformed_output` split, the paid failed-envelope capture, and the health probe adopting the generation lane's TASK SHAPE block — all language-neutral, SHARED stands; hashes re-verified.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -111,7 +111,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "f4ea220f7dd4c503adf3c36f7c7b345785982a1f96aa5d8c65fa55f7a3c5a90e",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -132,7 +132,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pwg_mask.py": "f4ea220f7dd4c503adf3c36f7c7b345785982a1f96aa5d8c65fa55f7a3c5a90e",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -153,9 +153,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H1412",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
+      "src/pilot/headless_worker.py": "59b7cace7d38a4483e8af1e36bd45a07c2d7a085f1f58ee30a1010ddf1ab74cf",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -191,7 +191,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -210,7 +210,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -229,7 +229,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -434,7 +434,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -453,7 +453,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -491,7 +491,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -550,7 +550,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
       "src/pilot/perf_preflight.py": "bc03b5b9878e526d3ffd9d2e5352bd1c1bcf69c8961ac37d673bafb9d6bf645b",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -569,7 +569,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H2248",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -600,7 +600,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -619,7 +619,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -637,7 +637,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "78b24df1fbf6585c910a308fdca964b51d0cbe8dc53f08d6b1a667a7e427db03",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -656,7 +656,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -786,7 +786,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",
       "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -811,7 +811,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "c99752277f85228dec175c1c331382a1d3ead769dc71b0d64cdfbb6e517a6345",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "a8e72de3bced4f00265753e8b8b305500f2584a1734501e5dca297c8e95485a8",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -840,7 +840,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -860,7 +860,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "3ba83e6475c856cdc58a68526f2a0a5baa208754abd789dc3e3ec14e71bb9258",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -879,7 +879,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -916,7 +916,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "3ba83e6475c856cdc58a68526f2a0a5baa208754abd789dc3e3ec14e71bb9258",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -974,7 +974,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "3ba83e6475c856cdc58a68526f2a0a5baa208754abd789dc3e3ec14e71bb9258",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -993,7 +993,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1012,7 +1012,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1032,7 +1032,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483",
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735",
       "src/pilot/classify_run.py": "e3dd743ee01bf25384f6bfc1b716a037c44834862013eab9ea1874ca4ea0d682"
     }
   },
@@ -1054,7 +1054,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1113,7 +1113,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1137,15 +1137,15 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H818 Windows readiness uses one language-parameterized manifest and worker contract. Whole-card retries, binary split, fragment TM/restore/fidelity, per-card budgets, timeout-no-bisect, partial stitching, audit-clean subset promotion, staged dispatch, and credential-safe event/census telemetry do not branch on RU/EN. Production policy selects RU no_pwg for the first 100-headword proof; the mechanism preserves EN field/schema behavior. H1957 (30-07-2026, Opus 5 `claude-opus-5[1m]`): incidental re-stamp only — coordinator.py drifted solely because run_audit moved to a killable subprocess. The manifest/worker contract is untouched, and this note's 'timeout-no-bisect' is headless_worker's TRANSLATE timeout, a different subsystem from the audit-step timeout H1957 repaired. Language-neutral, so SHARED stands. H1940 H8 (30-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. coordinator.py drifted solely because the claim-path perf_preflight subprocess gained timeout=PREPARE_TIMEOUT_SECONDS. That is the CLAIM-time cost-gate probe, which runs before any execution manifest exists -- a different subsystem from this note's 'timeout-no-bisect' (headless_worker's per-card translate timeout) and from H1957's audit-step timeout. The manifest schema, worker contract and staged dispatch are untouched and unbranched by language, so SHARED stands. H1940 H1 (30-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. This is the entry the H1 diff genuinely belongs to, and it is about WHEN a bad manifest is classified, not about the manifest contract. The v2 seal check (--manifest-sha256), preflight validation, call-reservation construction and validate_profile are byte-identical and still run in the same order; the schema, the worker result contract and staged dispatch are untouched. What changed: an unreadable / undecodable / structurally malformed manifest now yields classification=configuration, exit 2 and an actual status file instead of escaping main() as a bare traceback -- which is exactly the signal this entry's own 'scheduler/planner dispatch' half consumes. The never-read case reports manifest_sha256=null, the absent-hash shape those consumers already handle (bounded_staged_run's `headless.get('manifest_sha256')`, max_account_orchestrator.emit_call_events' `or 'call'` fallback); a hash is retained whenever bytes were actually read, so evidence is never fabricated and never discarded. headless_worker_selftest.py drifted only by the four H1 pins and their two added imports. Nothing here branches on RU/EN. H1940 H1 orchestrator correction (31-07-2026, Opus 5 `claude-opus-5[1m]`): addendum to the H1 clause above, after an acceptance review found that clause's retry claim unproven. The worker-side fix alone did NOT stop the deterministic retries, so max_account_orchestrator.py and its selftest changed too: run_claimed's pre-launch manifest hash+decode is now guarded (it previously escaped run_claimed entirely, leaving the job stuck in_progress and wedging the account via _claim_tx's one-job-per-account rule); a new fail_terminal() ends a job on the attempt that produced a `configuration`/`manifest_drift` verdict; and `configuration` joins HARD_FAILURE_CLASSES so a job it kills stays visible in the windows100 readiness report. All three are dispatch-layer job-state mechanics — they read `classification`/`failure_class` STRINGS and never the manifest's `field`/`meta.lang`, so RU and EN are affected identically. fail_or_retry itself is byte-unchanged, so transient retry behaviour is exactly as before on both lanes. SHARED stands. H1940 H4/H3 (31-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Three tracked files drifted, none in this mechanism. coordinator.py: the H4 duplicate-id guard in claim(). headless_worker.py: H3 adds flush()+os.fsync(fileno()) before the existing os.replace in atomic_json. headless_worker_selftest.py: the new H3 pin. The manifest schema, validate_manifest and the whole v2 execution contract are untouched. Worth stating explicitly for THIS entry: H3 was implemented inline rather than routed through window_common.atomic_write_json precisely so the status/output sidecar bytes stay identical (measured by src/pilot/h3_byte_probe.py: routing through it would emit CRLF and drop the trailing newline), so no manifest-adjacent hash moves. No --lang branch is introduced. ceiling raise (31-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the c4 latency-ceiling raise 30 000 -> 65 000 ms: `PROBE_LATENCY_CEILING_MS` in both `coordinator.py` and `max_account_orchestrator.py`, plus the D-F/D-K selftest pin re-based onto that constant instead of the literals 29999/30000. A probe-latency threshold decides whether an ACCOUNT is healthy enough to receive work; it is read from a wall-clock measurement and compared with a number. No target-language field is read or written anywhere on that path, and no `--lang` branch is introduced, so RU and EN are gated identically — a slow account parks for both lanes or neither. For THIS entry: three tracked files drifted — both ceiling definitions and the selftest whose D-F/D-K pin was re-based. The manifest schema, `validate_manifest`, and the v2 execution contract are untouched; a probe-latency threshold is not manifest data and no manifest byte changes, so `manifest_sha256` is unaffected. The selftest edit strengthens rather than relaxes: hard-coded 29999/30000 boundaries had silently become a false pass at the new ceiling, and deriving them from the constant restores the strictly-below policy the pin was written to guard. H2063 (#943/#944, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the rate-limit-through-timeout classification: proc_tree now attaches a tree-killed child's drained stdout/stderr to its TimeoutExpired, headless_worker classifies that text and promotes an ACCOUNT-level cause (429/401) to HardFailure exit 21 instead of a bare 'timeout', and the orchestrator probe does the same. It fires only when a call was KILLED and therefore produced no card at all, and it branches on the PROVIDER's message, never on a target-language field — a locked account refuses RU and EN identically. The manifest schema and the result contract are byte-unchanged. Retry/split/heal/stitch control flow does change on one path — an account-level refusal now aborts the run rather than retrying into a locked account — but that abort is language-independent and lands on both twins through the same HardFailure the non-hanging 429 already used. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2079 (#945, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift captures the CLI envelope's OWN timings (`duration_ms` / `duration_api_ms`) into the call reservation telemetry and emits `duration_api_ms` + `api_gap_ms` beside the probe's wall `elapsed_ms`, so a latency reading can be decomposed into route time vs time the CLI spent retrying internally. Pure ADDITIONAL RECORDING: no gate, ceiling or threshold changed, and `elapsed_ms` remains the gated number. Language-independent by construction — a probe times an ACCOUNT and reads no target-language field, so RU and EN are admitted or parked identically. H2091 (#948, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift makes `_selfheal_stop_reason` RANKED — a budget stop still wins first (H2a, unchanged), then any other typed INFRASTRUCTURE reason, then the historical `selfheal-nothing-resolved`. A `timeout` previously fell through to that last branch, reporting a dead CALL as a CONTENT verdict on the only per-key cause an operator ever sees. Language-independent by construction: the reason is read from how the call died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Genuine content failures (fidelity reject, missing/mismatched key) keep `selfheal-nothing-resolved` exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2189 (02-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, verdict stands. The drift is the opt-in `--safe-mode` spawn flag: `resolve_safe_mode` reads `execution.cli_safe_mode` from the manifest, `cli_supports_safe_mode` probes the installed CLI once and fails SAFE to the historical argv, and `HeadlessEngine.call` appends the flag when both agree. It changes WHICH profile context the CLI child loads (operator CLAUDE.md, skills, commands, agents, hooks) -- a property of the spawn, never of the target language: the RU and EN lanes send the same argv shape and a stripped profile strips identically for both. Re-derived mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and the only hits are a prose measurement line quoting '13/13 senses carrying Russian', not a branch. The schema and `--permission-mode plan` posture that make this a pwg_ru translation call are pinned as surviving the flag by `headless_worker_selftest.test_safe_mode_is_carried_when_the_manifest_requests_it`, and the default-OFF posture by `test_safe_mode_is_opt_in_and_off_by_default`. H2191 (03-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the stable-left prompt reorder: `build_prompt`, `fragment_prompt`, the two generated-harness JS twins and `h1209/prep_slice.prompt_common` now assemble `preamble + translation + grammar + [nws] + card blocks` instead of the historical `preamble + grammar + translation + ...`, so the run-invariant framework (preamble + CONV_TR) is the leftmost bytes ahead of the window-scoped grammar block, lengthening the stable head any provider-side prefix match can reuse. Re-derived mechanically, not asserted: the entire pilot diff is a permutation of three segments that were all already being sent, plus comments and one new selftest, and every changed line was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) with ZERO hits. Nothing was dropped or compressed -- lean-TR stays rejected (AB_TEST_LEAN_TR.md); the identical bytes are sent in a different order. The order is fixed in the shared assembly with no language branch, so the RU and EN lanes reorder identically. Pinned by `headless_worker_selftest.test_h2191_prompt_is_assembled_stable_left`, which asserts the segment order, that each segment still appears exactly once, that the H2158 `split_prompt` byte-identity with `build_prompt` still holds, and that the old JS order is absent from the generator. H2249 (03-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the spawn-directory ancestry fix. `bare_cli_cwd()` now DERIVES candidates (an operator `PWG_RU_CLI_CWD` override, then the historical `%TEMP%` directory, then each FIXED filesystem root the OS reports with the system drive last) and returns one only after `h2189_min_profile.cwd_ancestry_scan` proves its whole ancestry carries no `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/CLAUDE.local.md`, `.claude/rules` or `.git`; otherwise None, the historical inherited-cwd behaviour. It changes WHERE the CLI child is spawned from -- a property of the spawn, never of the target language: the RU and EN lanes are handed the same `cwd` and a clean ancestry is clean for both. Re-derived mechanically, not asserted: every added line of the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) with zero hits. argv construction is byte-unchanged -- `claude_argv_prefix`, the manifest-v2 schema and the `--permission-mode plan` posture are untouched; only the value of the `cwd` kwarg handed to `run_tree_kill` changes. The selftest drift is the same fix's pins: the H2189 ancestry MEASUREMENT became the assertion `test_bare_cwd_ancestry_is_clean_or_none` (it could not pass before this fix, which is why it shipped as a report), plus `test_bare_cwd_candidates_are_derived_not_hardcoded` and `test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it`, which feeds a synthetic dirty ancestor through the override and requires a refusal. None of the three reads a target-language field. H2240 (04-08-2026, Sonnet 5 `claude-sonnet-5`): re-derived, SHARED stands. The drift is the canonical `health_probe_log.jsonl` writer added inside `live_probe`'s `_emit` — every probe reading is now ALSO appended to one cross-account file, best-effort, alongside the existing per-account `events_path` write which is byte-unchanged. It is a telemetry/observability property of the probe call, never of the target language: the row fields (`account`, `elapsed_ms`, `model`, `duration_api_ms`, …) carry no `lang`/`field` key, and the same helper fires identically regardless of which manifest (RU or EN) dispatched the probe. Grepped for a language-keyed token (`lang`/`russian`/`english`/`--lang`/`FIELD[`/`CARD_FIELD`) with zero hits in the diff. The manifest schema, `validate_manifest`, and the v2 execution contract are untouched.",
+    "note": "H818 Windows readiness uses one language-parameterized manifest and worker contract. Whole-card retries, binary split, fragment TM/restore/fidelity, per-card budgets, timeout-no-bisect, partial stitching, audit-clean subset promotion, staged dispatch, and credential-safe event/census telemetry do not branch on RU/EN. Production policy selects RU no_pwg for the first 100-headword proof; the mechanism preserves EN field/schema behavior. H1957 (30-07-2026, Opus 5 `claude-opus-5[1m]`): incidental re-stamp only — coordinator.py drifted solely because run_audit moved to a killable subprocess. The manifest/worker contract is untouched, and this note's 'timeout-no-bisect' is headless_worker's TRANSLATE timeout, a different subsystem from the audit-step timeout H1957 repaired. Language-neutral, so SHARED stands. H1940 H8 (30-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. coordinator.py drifted solely because the claim-path perf_preflight subprocess gained timeout=PREPARE_TIMEOUT_SECONDS. That is the CLAIM-time cost-gate probe, which runs before any execution manifest exists -- a different subsystem from this note's 'timeout-no-bisect' (headless_worker's per-card translate timeout) and from H1957's audit-step timeout. The manifest schema, worker contract and staged dispatch are untouched and unbranched by language, so SHARED stands. H1940 H1 (30-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. This is the entry the H1 diff genuinely belongs to, and it is about WHEN a bad manifest is classified, not about the manifest contract. The v2 seal check (--manifest-sha256), preflight validation, call-reservation construction and validate_profile are byte-identical and still run in the same order; the schema, the worker result contract and staged dispatch are untouched. What changed: an unreadable / undecodable / structurally malformed manifest now yields classification=configuration, exit 2 and an actual status file instead of escaping main() as a bare traceback -- which is exactly the signal this entry's own 'scheduler/planner dispatch' half consumes. The never-read case reports manifest_sha256=null, the absent-hash shape those consumers already handle (bounded_staged_run's `headless.get('manifest_sha256')`, max_account_orchestrator.emit_call_events' `or 'call'` fallback); a hash is retained whenever bytes were actually read, so evidence is never fabricated and never discarded. headless_worker_selftest.py drifted only by the four H1 pins and their two added imports. Nothing here branches on RU/EN. H1940 H1 orchestrator correction (31-07-2026, Opus 5 `claude-opus-5[1m]`): addendum to the H1 clause above, after an acceptance review found that clause's retry claim unproven. The worker-side fix alone did NOT stop the deterministic retries, so max_account_orchestrator.py and its selftest changed too: run_claimed's pre-launch manifest hash+decode is now guarded (it previously escaped run_claimed entirely, leaving the job stuck in_progress and wedging the account via _claim_tx's one-job-per-account rule); a new fail_terminal() ends a job on the attempt that produced a `configuration`/`manifest_drift` verdict; and `configuration` joins HARD_FAILURE_CLASSES so a job it kills stays visible in the windows100 readiness report. All three are dispatch-layer job-state mechanics — they read `classification`/`failure_class` STRINGS and never the manifest's `field`/`meta.lang`, so RU and EN are affected identically. fail_or_retry itself is byte-unchanged, so transient retry behaviour is exactly as before on both lanes. SHARED stands. H1940 H4/H3 (31-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Three tracked files drifted, none in this mechanism. coordinator.py: the H4 duplicate-id guard in claim(). headless_worker.py: H3 adds flush()+os.fsync(fileno()) before the existing os.replace in atomic_json. headless_worker_selftest.py: the new H3 pin. The manifest schema, validate_manifest and the whole v2 execution contract are untouched. Worth stating explicitly for THIS entry: H3 was implemented inline rather than routed through window_common.atomic_write_json precisely so the status/output sidecar bytes stay identical (measured by src/pilot/h3_byte_probe.py: routing through it would emit CRLF and drop the trailing newline), so no manifest-adjacent hash moves. No --lang branch is introduced. ceiling raise (31-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the c4 latency-ceiling raise 30 000 -> 65 000 ms: `PROBE_LATENCY_CEILING_MS` in both `coordinator.py` and `max_account_orchestrator.py`, plus the D-F/D-K selftest pin re-based onto that constant instead of the literals 29999/30000. A probe-latency threshold decides whether an ACCOUNT is healthy enough to receive work; it is read from a wall-clock measurement and compared with a number. No target-language field is read or written anywhere on that path, and no `--lang` branch is introduced, so RU and EN are gated identically — a slow account parks for both lanes or neither. For THIS entry: three tracked files drifted — both ceiling definitions and the selftest whose D-F/D-K pin was re-based. The manifest schema, `validate_manifest`, and the v2 execution contract are untouched; a probe-latency threshold is not manifest data and no manifest byte changes, so `manifest_sha256` is unaffected. The selftest edit strengthens rather than relaxes: hard-coded 29999/30000 boundaries had silently become a false pass at the new ceiling, and deriving them from the constant restores the strictly-below policy the pin was written to guard. H2063 (#943/#944, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the rate-limit-through-timeout classification: proc_tree now attaches a tree-killed child's drained stdout/stderr to its TimeoutExpired, headless_worker classifies that text and promotes an ACCOUNT-level cause (429/401) to HardFailure exit 21 instead of a bare 'timeout', and the orchestrator probe does the same. It fires only when a call was KILLED and therefore produced no card at all, and it branches on the PROVIDER's message, never on a target-language field — a locked account refuses RU and EN identically. The manifest schema and the result contract are byte-unchanged. Retry/split/heal/stitch control flow does change on one path — an account-level refusal now aborts the run rather than retrying into a locked account — but that abort is language-independent and lands on both twins through the same HardFailure the non-hanging 429 already used. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2079 (#945, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift captures the CLI envelope's OWN timings (`duration_ms` / `duration_api_ms`) into the call reservation telemetry and emits `duration_api_ms` + `api_gap_ms` beside the probe's wall `elapsed_ms`, so a latency reading can be decomposed into route time vs time the CLI spent retrying internally. Pure ADDITIONAL RECORDING: no gate, ceiling or threshold changed, and `elapsed_ms` remains the gated number. Language-independent by construction — a probe times an ACCOUNT and reads no target-language field, so RU and EN are admitted or parked identically. H2091 (#948, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift makes `_selfheal_stop_reason` RANKED — a budget stop still wins first (H2a, unchanged), then any other typed INFRASTRUCTURE reason, then the historical `selfheal-nothing-resolved`. A `timeout` previously fell through to that last branch, reporting a dead CALL as a CONTENT verdict on the only per-key cause an operator ever sees. Language-independent by construction: the reason is read from how the call died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Genuine content failures (fidelity reject, missing/mismatched key) keep `selfheal-nothing-resolved` exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2189 (02-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, verdict stands. The drift is the opt-in `--safe-mode` spawn flag: `resolve_safe_mode` reads `execution.cli_safe_mode` from the manifest, `cli_supports_safe_mode` probes the installed CLI once and fails SAFE to the historical argv, and `HeadlessEngine.call` appends the flag when both agree. It changes WHICH profile context the CLI child loads (operator CLAUDE.md, skills, commands, agents, hooks) -- a property of the spawn, never of the target language: the RU and EN lanes send the same argv shape and a stripped profile strips identically for both. Re-derived mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and the only hits are a prose measurement line quoting '13/13 senses carrying Russian', not a branch. The schema and `--permission-mode plan` posture that make this a pwg_ru translation call are pinned as surviving the flag by `headless_worker_selftest.test_safe_mode_is_carried_when_the_manifest_requests_it`, and the default-OFF posture by `test_safe_mode_is_opt_in_and_off_by_default`. H2191 (03-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the stable-left prompt reorder: `build_prompt`, `fragment_prompt`, the two generated-harness JS twins and `h1209/prep_slice.prompt_common` now assemble `preamble + translation + grammar + [nws] + card blocks` instead of the historical `preamble + grammar + translation + ...`, so the run-invariant framework (preamble + CONV_TR) is the leftmost bytes ahead of the window-scoped grammar block, lengthening the stable head any provider-side prefix match can reuse. Re-derived mechanically, not asserted: the entire pilot diff is a permutation of three segments that were all already being sent, plus comments and one new selftest, and every changed line was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) with ZERO hits. Nothing was dropped or compressed -- lean-TR stays rejected (AB_TEST_LEAN_TR.md); the identical bytes are sent in a different order. The order is fixed in the shared assembly with no language branch, so the RU and EN lanes reorder identically. Pinned by `headless_worker_selftest.test_h2191_prompt_is_assembled_stable_left`, which asserts the segment order, that each segment still appears exactly once, that the H2158 `split_prompt` byte-identity with `build_prompt` still holds, and that the old JS order is absent from the generator. H2249 (03-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the spawn-directory ancestry fix. `bare_cli_cwd()` now DERIVES candidates (an operator `PWG_RU_CLI_CWD` override, then the historical `%TEMP%` directory, then each FIXED filesystem root the OS reports with the system drive last) and returns one only after `h2189_min_profile.cwd_ancestry_scan` proves its whole ancestry carries no `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/CLAUDE.local.md`, `.claude/rules` or `.git`; otherwise None, the historical inherited-cwd behaviour. It changes WHERE the CLI child is spawned from -- a property of the spawn, never of the target language: the RU and EN lanes are handed the same `cwd` and a clean ancestry is clean for both. Re-derived mechanically, not asserted: every added line of the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) with zero hits. argv construction is byte-unchanged -- `claude_argv_prefix`, the manifest-v2 schema and the `--permission-mode plan` posture are untouched; only the value of the `cwd` kwarg handed to `run_tree_kill` changes. The selftest drift is the same fix's pins: the H2189 ancestry MEASUREMENT became the assertion `test_bare_cwd_ancestry_is_clean_or_none` (it could not pass before this fix, which is why it shipped as a report), plus `test_bare_cwd_candidates_are_derived_not_hardcoded` and `test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it`, which feeds a synthetic dirty ancestor through the override and requires a refusal. None of the three reads a target-language field. H2240 (04-08-2026, Sonnet 5 `claude-sonnet-5`): re-derived, SHARED stands. The drift is the canonical `health_probe_log.jsonl` writer added inside `live_probe`'s `_emit` — every probe reading is now ALSO appended to one cross-account file, best-effort, alongside the existing per-account `events_path` write which is byte-unchanged. It is a telemetry/observability property of the probe call, never of the target language: the row fields (`account`, `elapsed_ms`, `model`, `duration_api_ms`, …) carry no `lang`/`field` key, and the same helper fires identically regardless of which manifest (RU or EN) dispatched the probe. Grepped for a language-keyed token (`lang`/`russian`/`english`/`--lang`/`FIELD[`/`CARD_FIELD`) with zero hits in the diff. The manifest schema, `validate_manifest`, and the v2 execution contract are untouched. H3157 (19-08-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. Three repairs carried out of H3144/FINDINGS §498, all in the CALL-outcome layer. (a) `_probe_prompt` now prepends the generation lane's own `gen_opt_harness2.MASK_PREAMBLE` TASK SHAPE block, so the cheap health probe can refuse the way the paid canary refuses — on 19-08 the probe PASSED both ceilings minutes before the canary refused on the same profile, flag and model, because H994 had immunised the probe's PROMPT while deliberately keeping `--permission-mode plan` to match the spawn shape. (b) `structured_from_wrapper` now raises `StructuredRefusal` when the structured CHANNEL is ABSENT and `result` holds prose, and `HeadlessEngine.call` classifies that as `refusal` instead of `malformed_output`; a PRESENT-but-unparseable structured value is untouched and still `malformed_output`. (c) `write_failed_envelope` persists the bounded tail of any PAID envelope that fails validation, generalising the probe's own `_write_probe_raw` (H2326) one lane over. Language-neutral by construction and re-derived mechanically rather than asserted: every added line was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) with ZERO hits. All three read how a CALL died or what shape the CLI returned, never a target-language field — a model that refuses on plan-mode grounds refuses the RU and EN lanes identically, and a captured envelope is captured for both. No gate, ceiling, threshold or manifest byte moves; `elapsed_ms` and every acceptance predicate are unchanged, and a refusal remains a NO-GO exactly as `malformed_output` was, so only the LABEL (and therefore where the next operator looks) differs. Found and fixed in the same pass: `window_selftest.test_mask_preamble_carries_task_shape` — the sole guard on the option-B TASK SHAPE fix, described as 'pinning' it in two separate files — was defined but never added to `main()`'s test list, so it had never executed; it is now registered alongside the new `test_health_probe_shares_the_production_task_shape`.",
     "tracking": "",
     "note_h1940_h2b": "31-07-2026, OpenAI GPT-5.6 Sol (`openrouter/openai/gpt-5.6-sol`): SHARED re-derived against the H2b diff. resolve_group changes only failure-note precedence when a retry is refused by a typed translate budget; manifest schema, field selection, split/heal/stitch, scheduler dispatch and all paid boundaries are untouched. The same HeadlessEngine path serves RU and EN with no language branch. The added two-attempt selftest drives the shared manifest fixture and proves the previous clobber.",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
-      "src/pilot/max_account_orchestrator.py": "f0fefdd3048ba0757b356d156a96fe490bede11a1c0609d92d6002949668b3a4",
+      "src/pilot/headless_worker.py": "59b7cace7d38a4483e8af1e36bd45a07c2d7a085f1f58ee30a1010ddf1ab74cf",
+      "src/pilot/max_account_orchestrator.py": "30d11c54eaa9999e16efd85214ae4dc19118785d3159ca601b3f7576249b3598",
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
-      "src/pilot/headless_worker_selftest.py": "f114ab338648ac7b2472c86d168d54e3a5b984977e07cebb790ba31c792c51e6",
+      "src/pilot/headless_worker_selftest.py": "ba609f5fd270851112bb4d4eabcf6014a4404958a7bfa3b7847bbca1c0548706",
       "src/pilot/max_account_orchestrator_selftest.py": "54f6b6959fca276f9b2735063cccc243a92e7c079154faefa8d586708d52eef6",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "cb010a7452d1a68fb3a793c3d0ea77d1784eb158d985488cfd09177a1215515d",
@@ -1174,7 +1174,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
       "src/pilot/window_reports.py": "a8e72de3bced4f00265753e8b8b305500f2584a1734501e5dca297c8e95485a8",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1193,7 +1193,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1218,7 +1218,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/_pilot_gen_merged.py": "0c350f3ddfb9d33edf04e7e1a9fd88939ffa886066f05116e959255b29fa381f",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1240,7 +1240,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483",
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735",
       "src/pilot/accept_sensecount_test.js": "fbf8d37f8ae360c286f646361025d56adb0caeff09da30a0abfef5f6b7289937"
     }
   },
@@ -1260,7 +1260,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/cohort_clean_rates.py": "1d2a1da68eb4e897422696ec42c7845cecf9e94a2a0b8a587f8a68d3b44bfb7e",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1315,7 +1315,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -1511,7 +1511,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/ru_style_sweep.py": "9184e1859428312866623e25bd1e1e8a1b08bec773cc339303a1f4fcd7fbc64f",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483",
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
       "src/pilot/run_pilot_wf.js": "b194ceb034b458ffc470e7feb2d9c921c6f391c88088e7f05a00a1e790bcf7a4"
     }
@@ -1537,7 +1537,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
-      "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
+      "src/pilot/headless_worker.py": "59b7cace7d38a4483e8af1e36bd45a07c2d7a085f1f58ee30a1010ddf1ab74cf",
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7"
     }
   },
@@ -1596,7 +1596,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "681012c1d39d5cf6c774a56f1dfad319c451f62e43039c1bb8ab64487c563520",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "f0fefdd3048ba0757b356d156a96fe490bede11a1c0609d92d6002949668b3a4"
+      "src/pilot/max_account_orchestrator.py": "30d11c54eaa9999e16efd85214ae4dc19118785d3159ca601b3f7576249b3598"
     }
   },
   {
@@ -1615,7 +1615,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1"
+      "src/pilot/headless_worker.py": "59b7cace7d38a4483e8af1e36bd45a07c2d7a085f1f58ee30a1010ddf1ab74cf"
     }
   },
   {
@@ -1757,7 +1757,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "681012c1d39d5cf6c774a56f1dfad319c451f62e43039c1bb8ab64487c563520",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "f0fefdd3048ba0757b356d156a96fe490bede11a1c0609d92d6002949668b3a4",
+      "src/pilot/max_account_orchestrator.py": "30d11c54eaa9999e16efd85214ae4dc19118785d3159ca601b3f7576249b3598",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",
@@ -1794,7 +1794,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/dashboard_events.py": "e967ba0993cba28b62923f93ddd206da9986fddbfccdeb56063b3f8fb4869ef1",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",
       "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483",
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735",
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873"
     }
   },
@@ -1883,7 +1883,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H858",
     "verified_sha256": {
       "src/german_anchor.py": "751a6bf9c1cf9bc6201397d28f429cd02c680f668c1b2340be8ca55f54e8a276",
-      "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
+      "src/pilot/headless_worker.py": "59b7cace7d38a4483e8af1e36bd45a07c2d7a085f1f58ee30a1010ddf1ab74cf",
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85"
     }
@@ -1903,7 +1903,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "codex/rt-pipeline-hardening-speed",
     "verified_sha256": {
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -2010,7 +2010,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pipeline_version.py": "b461d0c78b5df3f598007eb1e7ee284d84596ae19b5106d5329fdab1a93f00be",
       "src/pilot/h1339_offline_bench.py": "f674d36eaf905947e3b4471ea63e5de74a1f4cb9052200225cd31c9b9d08c988",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   },
   {
@@ -2156,7 +2156,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H3144-Opus_SanskritLexicography_h858-residual-c1-window-after-canary-nogo_19.08.26.md",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
-      "src/pilot/window_selftest.py": "51a21df98fd9bf98fd73918ffd9520cd4f013871bc35150e476b14f6e4411483"
+      "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
     }
   }
 ]
