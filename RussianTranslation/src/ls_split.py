@@ -62,6 +62,20 @@ _ADDR_BOUNDARY = re.compile(r"(?<=\.)\s+(?=\d)")
 #: has an empty prefix because its work name lives in the ``n=`` attribute.
 _PREFIX = re.compile(r"^\D*")
 
+#: Nested markup inside the citation body — ``<is n="Vārttika">Vārtt.</is>`` and
+#: friends. Its presence means the run is NOT a plain list of addresses under one
+#: siglum, so prefix inheritance does not hold. See :func:`splittable`.
+_NESTED = re.compile(r"<[^>]+>")
+
+#: A sibling address is *purely* a locus: digits and commas, an optional trailing
+#: period, nothing else. Anything richer — ``11087 (p. 572)``, ``83, N. 6``,
+#: ``100,a.`` — is one address carrying a page reference, a note marker or a
+#: column letter, not two addresses.
+_PURE_ADDRESS = re.compile(r"^\d+(?:\s*,\s*\d+)*\.?$")
+
+#: An address's shape: how many numeric components it has.
+_COMPONENTS = re.compile(r"\d+")
+
 
 def split_ls_loci(n_attr, visible):
     """Split one ``<ls>`` body into the address strings it actually holds.
@@ -87,15 +101,49 @@ def split_ls_loci(n_attr, visible):
     return [prefix + p for p in parts if p]
 
 
+def splittable(visible, loci):
+    """Is this really a run of sibling addresses under one siglum? Three refusals.
+
+    **Resolving is not enough**, and this is the trap the whole function exists
+    for: the resolver will happily place an address the split *invented*, so a run
+    can be cut into links that all work and all point somewhere — a worse failure
+    than not splitting, because it looks correct. Every refusal below was found on
+    a real ``pwg.txt`` line while generating the upstream change file.
+
+    **Nested markup.** ``<ls>P. 4,3,66, <is n="Vārttika">Vārtt.</is> 2. 3</ls>`` is
+    Pāṇini 4.3.66, Vārttikas 2 *and* 3. Splitting yields ``<ls n="P.">3</ls>``,
+    which resolves — to sūtra 3, an entirely different place.
+
+    **Impure address.** ``<ls n="MBH. 3,">11087 (p. 572)</ls>`` is one citation
+    with a page reference; ``<ls n="HARIV.">83, N. 6</ls>`` is one with a note
+    marker; ``Verz. d. Oxf. H. 100,a. 101,b`` uses column letters. A sibling
+    address is digits and commas and nothing else.
+
+    **Shape mismatch.** In a genuine run every address has the same number of
+    numeric components — ``ṚV. 4,3,13. 10,18,4`` is 3 and 3. A different shape is
+    usually a continuation of an *inner* coordinate, and inheriting the outer
+    siglum misplaces it.
+    """
+    if _NESTED.search(visible or ""):
+        return False
+    prefix = _PREFIX.match(loci[0]).group(0)
+    addresses = [text[len(prefix):] if text.startswith(prefix) else text
+                 for text in loci]
+    if not all(_PURE_ADDRESS.match(a.strip()) for a in addresses):
+        return False
+    shapes = {len(_COMPONENTS.findall(a)) for a in addresses}
+    return len(shapes) == 1
+
+
 def resolve_loci(dict_code, n_attr, visible):
     """``[(text, href), …]`` for a multi-address citation, or ``None``.
 
-    ``None`` means "render this element exactly as before": either it holds one
-    address (nothing to gain), or at least one address does not resolve and the
-    all-or-nothing rule applies.
+    ``None`` means "render this element exactly as before": it holds one address,
+    or it is not a plain address run (:func:`splittable`), or at least one address
+    does not resolve and the all-or-nothing rule applies.
     """
     loci = split_ls_loci(n_attr, visible)
-    if len(loci) < 2:
+    if len(loci) < 2 or not splittable(visible, loci):
         return None
     out = []
     for text in loci:
@@ -157,6 +205,23 @@ def selftest():
     check(split_ls_loci(None, "GORR.") == ["GORR."],
           "a bare abbreviation is one (unresolvable) item, not zero")
     check(resolve_loci("pwg", None, "GORR.") is None, "bare abbreviation -> None")
+
+    # ---- the two refusals that stop a WRONG split (both from real pwg.txt lines)
+    nested = 'P. 4,3,66, <is n="Vārttika">Vārtt.</is> 2. 3'
+    check(resolve_loci("pwg", None, nested) is None,
+          "a body with nested markup is never split — that trailing 3 is "
+          "Vārttika 3, and <ls n=\"P.\">3</ls> would resolve to sūtra 3")
+    check(resolve_loci("pwg", None, "Spr. 100. 2,3,4") is None,
+          "addresses of different shape are not siblings under one siglum")
+    for impure, why in (
+            ("11087 (p. 572)", "a page reference is not a second address"),
+            ("83, N. 6", "a note marker is not a second address"),
+            ("Verz. d. Oxf. H. 100,a. 101,b", "column letters are not a plain locus")):
+        check(resolve_loci("pwg", "MBH. 3," if impure[0].isdigit() else None,
+                           impure) is None, "%s (%r)" % (why, impure))
+    check(splittable("ṚV. 4,3,13. 10,18,4",
+                     split_ls_loci(None, "ṚV. 4,3,13. 10,18,4")),
+          "…while a genuine same-shape run still splits")
 
     # ---- all or nothing
     check(resolve_loci("pwg", None, "NOTADICT. 1,1. 2,2") is None,

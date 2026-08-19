@@ -1,0 +1,29 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h180-reglue-spotcheck-v4-2026-08-19",
+  "content_hash": "sha256:624cfa5c1d6ae92f2e0b5c58d377ccb012b38928981c21a67208e103e00720bb",
+  "generated": "2026-08-19",
+  "gate": null,
+  "n_items": 15,
+  "ids": [
+    "reglue2::gA",
+    "reglue2::Cid",
+    "reglue2::Sam",
+    "reglue2::jIv",
+    "reglue2::rakz",
+    "reglue2::vraj",
+    "reglue2::yat",
+    "reglue2::DA",
+    "reglue2::Ap",
+    "reglue2::Bid",
+    "reglue2::Buj",
+    "reglue2::banD",
+    "reglue2::Sru",
+    "reglue2::viS",
+    "reglue2::siD"
+  ],
+  "source_html": "h180_reglue_v4_sheet.html",
+  "mode": "stamped",
+  "created": "2026-08-19",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

@@ -61,7 +61,12 @@ _MBH = ls_links.MbhEtext()
 #: card can mark the coordinate as approximate instead of asserting it.
 _MBH_LOCUS = mbh_locus.MbhLocusIndex()
 
-RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
+#: The store is a gitignored, local-only artefact belonging to the MAIN checkout.
+#: Resolved relative to this file it simply does not exist inside a linked
+#: worktree, which is the sanctioned place to work — the same H255 class of loss
+#: `store_path` was written for.
+from store_path import canonical_store  # noqa: E402
+RU_STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
 OUT_DIR = os.path.join(REPO, 'article_site')
 
 _ACCENT = re.compile(r'[\\/^~]')          # Vedic udatta/anudatta/svarita markers
