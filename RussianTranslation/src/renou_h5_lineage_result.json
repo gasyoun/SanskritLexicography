@@ -1,0 +1,38 @@
+{
+  "n_mw_lines": 286560,
+  "n_pwg_lines": 123366,
+  "n_ap_lines": 90654,
+  "n_mw_key1": 194084,
+  "n_pwg_key1": 106083,
+  "n_ap_key1": 88701,
+  "n_shared_key1_mw_pwg": 94777,
+  "n_shared_key1_mw_ap": 38145,
+  "stats": {
+    "pwg": {
+      "n": 71229,
+      "exact_mean": 0.6708222774431762,
+      "exact_lo": 0.6674528633000604,
+      "exact_hi": 0.6741358856645467,
+      "jaccard_mean": 0.7672148984262027,
+      "jaccard_lo": 0.7645848893475036,
+      "jaccard_hi": 0.7699006549298741,
+      "containment_mean": 0.7823779640315041,
+      "containment_lo": 0.7795272992741721,
+      "containment_hi": 0.785270395484985
+    },
+    "ap": {
+      "n": 29563,
+      "exact_mean": 0.12887731285728782,
+      "exact_lo": 0.1250887934242127,
+      "exact_hi": 0.13259818015762947,
+      "jaccard_mean": 0.21045281827509613,
+      "jaccard_lo": 0.2065050344462109,
+      "jaccard_hi": 0.21448667534869034,
+      "containment_mean": 0.14017521902377972,
+      "containment_lo": 0.13648733213814565,
+      "containment_hi": 0.14409904272232182
+    },
+    "containment_gap_pwg_minus_ap": 0.6422027450077243,
+    "permutation_p_one_sided": 0.0001999600079984003
+  }
+}
