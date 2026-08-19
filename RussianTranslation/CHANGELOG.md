@@ -10,6 +10,38 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Generation prompt: plan-mode TASK SHAPE block (H3144, 19-08-2026)
+
+- **The paid canary was refusing, not returning malformed output.** The production spawn
+  passes `--permission-mode plan` alongside `--json-schema`. On 19-08-2026 the c1 canary came
+  back a null card reported as `malformed_output: … Expecting value: line 1 column 1 (char 0)`.
+  The CLI session transcript shows the model *declined* to emit structured output on plan-mode
+  grounds — «the tools that workflow expects me to end with (`AskUserQuestion`,
+  `ExitPlanMode`) aren't even available to me in this session» — and refused again against the
+  CLI's own `[structured-output-enforce]` retry, correctly, since an in-conversation directive
+  cannot lift a system-level mode. `returncode` was 0, `structured_output` was absent, so
+  `structured_from_wrapper` fell back to the prose in `result`. The call billed in full
+  (5 401 output + 94 752 subagent tokens) and was discarded.
+- **Fix (MG ruling, option B — keep plan mode, reframe the prompt).**
+  [`gen_opt_harness2.MASK_PREAMBLE`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) now opens with a TASK SHAPE
+  block stating what is actually true of the task: read-only, self-contained, complete in one
+  turn, with the schema result as the deliverable and nothing awaiting approval. It does **not**
+  instruct the model to ignore or exit plan mode — that is the demand shape it refused twice.
+  This is the same move H994 applied to the health probe on 15-07-2026, which is why that probe
+  passes where this call refused.
+- **SHARED by construction.** `MASK_PREAMBLE` feeds both the manifest-v2 preamble and the
+  generated JS harness through one `.replace('`russian`', field)` call; the new text names no
+  target field and no language. Ledger entry `plan_mode_task_shape_preamble_h3144`.
+- **Pinned:** `window_selftest.test_mask_preamble_carries_task_shape` asserts the block opens
+  the preamble, carries each clause answering the model's three stated objections, and forbids
+  reintroducing a bare "you MUST call this tool now" demand. Golden canary manifest regenerated
+  (its `prompt` legitimately changed). Offline: `window_selftest` **211/211**,
+  `lang_parity_check` 99 entries no drift, `headless_worker_selftest`,
+  `canary_manifest_build_selftest` all green.
+- **Not yet re-gated.** No paid call was made after the fix; the c1 probe ration (≤2 attempts
+  per UTC day, ≥6 h apart) puts the earliest legal second health probe at 15:43 UTC. Diagnosis:
+  Uprava FINDINGS §498.
+
 ## [1.144.77] - 2026-08-19
 
 ### German case-abbreviation compliance sweep (H2849, 19-08-2026)

@@ -712,7 +712,37 @@ def conv_text():
     return m.group(1)
 
 
-MASK_PREAMBLE = """=== MASKED + BATCHED REGIME (read first — overrides input-format details below) ===
+# H3144 (19-08-2026) — TASK-SHAPE block, and why it is the FIRST thing in the prompt.
+#
+# The production spawn is `claude -p --output-format json --json-schema … --permission-mode
+# plan`. On 19-08-2026 the c1 canary returned a null card with
+# `malformed_output: … Expecting value: line 1 column 1 (char 0)`, which is not malformed
+# output at all: the model DECLINED to emit structured output, citing plan mode — "requires
+# ending the turn with either a clarifying question or a plan-approval request … the tools
+# that workflow expects me to end with (AskUserQuestion, ExitPlanMode) aren't even available
+# to me in this session". The CLI's own `[structured-output-enforce]` retry then insisted
+# "You MUST call the StructuredOutput tool", and the model refused again — correctly, since an
+# in-conversation directive cannot lift a system-level mode. rc was 0, `structured_output` was
+# absent, so `structured_from_wrapper` fell back to the prose in `result` and json.loads died
+# at char 0. The call billed in full (Uprava FINDINGS §498).
+#
+# MG ruled option B on 19-08-2026: KEEP plan mode, reframe the prompt — the same fix H994
+# applied to the health probe on 15-07-2026, which is why that probe passes where this call
+# refused. So this block does NOT tell the model to ignore or exit plan mode (that is the very
+# demand shape that triggered the refusal, and it would be false besides). It states what is
+# actually true of the task: it is read-only, self-contained, and complete in one turn, so
+# plan mode's read-only constraint is already satisfied and its approval workflow has nothing
+# to attach to. Pinned by `test_mask_preamble_carries_task_shape` — if this text is ever
+# dropped, the next paid window refuses again and reports a parser bug.
+MASK_PREAMBLE = """=== TASK SHAPE (read first) ===
+This is a self-contained, read-only text-transformation task, complete in a single turn.
+Everything it needs is inline below: there is no repository to explore, no file to open or
+write, no command to run, and nothing outside this message is consulted or modified. The
+deliverable is exactly the structured result described by the response schema — returning
+that result IS the completion of this task. Nothing here is a proposal awaiting approval, so
+no planning step, clarifying question, or approval round applies to it.
+
+=== MASKED + BATCHED REGIME (read first — overrides input-format details below) ===
 You are given SEVERAL headwords at once, each in its own '=== CARD <key> ===' block.
 Each card's source German has been MASKED: every untranslatable span (Sanskrit {#..#},
 source refs <ls>, abbreviations <ab>, italic <is>, grammar <lex>) is replaced by a {Tn}

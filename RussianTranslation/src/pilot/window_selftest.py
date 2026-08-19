@@ -1364,6 +1364,44 @@ def test_prompt_rule_audit_template():
              ', '.join(sorted(expected - coverage)))
 
 
+def test_mask_preamble_carries_task_shape():
+    """H3144 / FINDINGS §498: the generation prompt must keep its TASK SHAPE block.
+
+    The production spawn passes `--permission-mode plan` alongside `--json-schema`. Without
+    this block the model refuses to emit structured output on plan-mode grounds, the CLI
+    returns rc 0 with no `structured_output`, and the harness misreports the paid call as
+    `malformed_output` (19-08-2026, c1 canary). MG ruled option B — keep plan mode, fix the
+    prompt — so the block IS the fix and nothing else guards it.
+
+    Asserted on the shared source, which feeds BOTH the manifest-v2 preamble and the
+    generated JS harness, so one check covers both lanes.
+    """
+    from gen_opt_harness2 import MASK_PREAMBLE as preamble
+
+    if not preamble.startswith('=== TASK SHAPE (read first) ==='):
+        fail('MASK_PREAMBLE must OPEN with the TASK SHAPE block (the model reads first, '
+             'and refuses before reaching a later block): %r' % preamble[:80])
+
+    # Each clause answers one of the three objections the model actually raised.
+    required = [
+        ('read-only', 'plan mode restricts to read-only actions'),
+        ('single turn', 'plan mode wants the turn ended by question/approval'),
+        ('no planning step, clarifying question, or approval round',
+         'AskUserQuestion/ExitPlanMode do not exist in a headless -p session'),
+    ]
+    for needle, why in required:
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the %r clause (%s) — the next paid window will refuse '
+                 'and be misfiled as malformed_output' % (needle, why))
+
+    # The refusal was triggered by a bare tool-demand, and the CLI's own retry proved that
+    # shape cannot win. Never reintroduce it here.
+    for banned in ('You MUST call', 'call this tool now', 'ignore plan mode', 'exit plan mode'):
+        if banned.lower() in preamble.lower():
+            fail('MASK_PREAMBLE must not demand the tool call or claim to lift plan mode '
+                 '(%r) — that is the exact shape the model refused twice' % banned)
+
+
 def test_prompt_rule_audit_missing_blocks():
     with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.js', delete=False) as f:
         path = f.name
