@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.77] - 2026-08-19
+
 ### German case-abbreviation compliance sweep (H2849, 19-08-2026)
 
 - **RU-field case markers now ship as Latin, not German.** 963 substitutions
@@ -26,7 +28,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   Renderer split-guard (`build_reglue_sheet_v2.py` `ABBREV`) and chrome
   allowlist (`scan_sheet_latin_chrome.py`) both extended with the new stems.
   [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md)
-  §"German case-abbreviation compliance sweep".
+  §"German case-abbreviation compliance sweep". FINDINGS §569/§570.
 
 ### Renou H5 — MW–PWG citation lineage confirmed (H062, 19-08-2026)
 
