@@ -17,33 +17,33 @@
   <sub>attested</sub>
 
 **2)** — 2) ein Ende machen, genug sein lassen: *bhīma paryāpnuhi*
-[MBH. 15,1073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1073) = [≈Вульг. 15.38.18](mbh/15.38.html#v18) = ≈крит. 15,46.18a — part. *paryāpta* erfüllt, zum Abschluss gebracht, das volle Maass habend, ein hohes Maass erreichend, geräumig, vollständig, voll, hinreichend, genügend: *kāmānyaḥ kāmayate manyamānaḥ *
+[MBH. 15,1073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1073) = [≈Vulg. 15.38.18](mbh/15.38.html#v18) = ≈krit. 15,46.18a — part. *paryāpta* erfüllt, zum Abschluss gebracht, das volle Maass habend, ein hohes Maass erreichend, geräumig, vollständig, voll, hinreichend, genügend: *kāmānyaḥ kāmayate manyamānaḥ *
 
 * sa kāmabhirjāyate tatra tatra . paryāptakāmasya* (der seine Begierden abgeschlossen hat) *kṛtātmanastu ihaiva sarve pravilīyanti kāmāḥ ..*
 [MUṆḌ. UP. 3,2,2.] *śaśīva paryāptakalaḥ*
 [RAGH. 6,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,44) *paryāptacandreva śarattriyāmā*
 [KUMĀRAS. 7,26.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,26) *paryāptapuṣpastavakāvanamrā*
 [3,54.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,54) *tasya dvārāṇi sarvāṇi paryāptāni bṛhanti ca*
-[MBH. 15,186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.186) = [≈Вульг. 15.5.17](mbh/15.5.html#v17) = ≈крит. 15,9.17c *urasyaparyāptaniveśabhāgā* (*lakṣmīḥ*)
+[MBH. 15,186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.186) = [≈Vulg. 15.5.17](mbh/15.5.html#v17) = ≈krit. 15,9.17c *urasyaparyāptaniveśabhāgā* (*lakṣmīḥ*)
 [RAGH. 18,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,46) *nātiparyāptamālakṣya matkukṣeradya bhojanam*
 [15,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,18) *yajñāḥ paryāptadakṣiṇāḥ* (häufiger *āptada˚*)
 [17,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,17) *aparyāptaṃ tadasmākaṃ balam — paryāptaṃ tvidameteṣāṃ balam*
 [BHAG. 1,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,10) *suparyāptaṃ kārayedgṛhamātmanaḥ*
 [M. 7,76.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,76) *paryāpto me varo hyeṣa yadahaṃ hariṃ dṛṣṭavān*
-[MBH. 3,13505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13505) = [≈Вульг. 3.201.4](mbh/3.201.html#v4) = ≈крит. 03,192.3a *paryāptabhogā*
+[MBH. 3,13505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13505) = [≈Vulg. 3.201.4](mbh/3.201.html#v4) = ≈krit. 03,192.3a *paryāptabhogā*
 [M. 3,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,40)
 [YĀJÑ. 3,250.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,250) *paryāptametāvadbhartṛsnehanidarśanam*
 [R. 5,25,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,20) [81,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,81,24) [42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,81,42) [2,38,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,10) *paryāptaḥ parihāso 'yametāvat* treibe den Scherz nicht weiter
 [N. (BOPP) 11,8.] hinreichend, mit dem dat.: *yasya traivarṣikaṃ bhaktaṃ paryāptaṃ bhṛtyavṛttaye*
 [M. 11,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,7) Die Ergänzung geht im comp. voran: *mahendropakāraparyāptena vikramamahimnā*
 [VIKR. 11,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?11,11) einer Handlung (dat. oder loc. des nom. act. oder auch inf.) oder einer Person (gen.) gewachsen: *tvaṃ hi tasya vināśāya paryāptaḥ*
-[MBH. 3,13541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13541) = [≈Вульг. 3.202.27](mbh/3.202.html#v27) = ≈крит. 03,193.24a *tadātmabharaṇe — paryāptā madvidhānāṃ ca bharaṇāya*
+[MBH. 3,13541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13541) = [≈Vulg. 3.202.27](mbh/3.202.html#v27) = ≈krit. 03,193.24a *tadātmabharaṇe — paryāptā madvidhānāṃ ca bharaṇāya*
 [R. 2,31,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,23) *ahamārya suparyāpto vadhāyāsya*
 [6,36,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,36,21) *tvamevaikaḥ kāryasya parisādhane . paryāptaḥ*
 [5,35,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,46) [3,42,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,26) *anuyātuṃ na paryāpto garuḍo vāyunā saha*
 [3,44,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,44,30) [35,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,25) [51,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,7) [RAGH. 10,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,26) [PRAB. 75,2.] *rāmasya — na paryāptau*
 [R. 1,21,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,13) [3,28,15](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,28,15) [42,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,25)
-[MBH. 3,11281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11281) = [≈Вульг. 3.149.13](mbh/3.149.html#v13) = ≈крит. 03,148.12a *paryāptam* nach Wunsch
+[MBH. 3,11281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11281) = [≈Vulg. 3.149.13](mbh/3.149.html#v13) = ≈krit. 03,148.12a *paryāptam* nach Wunsch
 [AK. 2,9,57.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,57)
 [H. 1505.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1505) Gleichbedeutend mit *paryāpta* ist *paryāptavant*
 [RAGH. 16,28](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,28) : *pīḍāmaparyāptavatīva soḍhum* . — desid.
@@ -83,10 +83,10 @@
 
 **pari-verb-2nd-block-1)** 1) verlangen, fordern, wünschen: *dātā — ṛṇam — parīpsetkena hetunā*
 [M. 8,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,161) *sā bahūni parīpsati*
-[MBH. 3,11368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11368) = [≈Вульг. 3.151.8](mbh/3.151.html#v8) = ≈крит. 03,150.6c *putrajanma parīpsan*
-[1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) = [≈Вульг. 1.138.30](mbh/1.138.html#v30) = ≈крит. 08,55.10c *vadhaṃ kṛṣṇā parīpsantī senāvāhasya*
-[4,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.503) = [≈Вульг. 4.17.2](mbh/4.17.html#v2) = ≈крит. 04,16.2a *priyameva parīpsante*
-[2,563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.563) = [≈Вульг. 2.13.50](mbh/2.13.html#v50) = ≈крит. 02,12.39a
+[MBH. 3,11368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11368) = [≈Vulg. 3.151.8](mbh/3.151.html#v8) = ≈krit. 03,150.6c *putrajanma parīpsan*
+[1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) = [≈Vulg. 1.138.30](mbh/1.138.html#v30) = ≈krit. 08,55.10c *vadhaṃ kṛṣṇā parīpsantī senāvāhasya*
+[4,503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.503) = [≈Vulg. 4.17.2](mbh/4.17.html#v2) = ≈krit. 04,16.2a *priyameva parīpsante*
+[2,563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.563) = [≈Vulg. 2.13.50](mbh/2.13.html#v50) = ≈krit. 02,12.39a
 
 - **RU:** 1) желать, требовать, стремиться: *dātā — ṛṇam — parīpsetkena hetunā*
 [M. 8,161.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,161) *sā bahūni parīpsati*
@@ -97,11 +97,11 @@
   <sub>attested</sub>
 
 **pari-verb-2nd-block-2)** — 2) zu erhalten wünschen, in Acht nehmen, schützen: *na peyamudakam — prāṇāniha parīpsatā*
-[MBH. 3,17327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17327) = [≈Вульг. 3.313.42](mbh/3.313.html#v42) = ≈крит. 03,297.23c *vyāyāmena parīpsasva jīvitam*
-[4,2246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2246) = [≈Вульг. 4.69.7](mbh/4.69.html#v7) = ≈крит. 04,64.25a *na parīpsanti ye bhāryāṃ vadhyānānām*
-[480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.480) = [≈Вульг. 4.16.29](mbh/4.16.html#v29) = ≈крит. 04,15.22a *vaikartanaṃ parīpsanto gandharvānsamavākiran*
-[3,14899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14899) = [≈Вульг. 3.241.20](mbh/3.241.html#v20) = ≈крит. 03,230.19a *tānparīpsasva*
-[4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008) = [≈Вульг. 4.31.9](mbh/4.31.html#v9) = ≈крит. 04,30.8a
+[MBH. 3,17327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17327) = [≈Vulg. 3.313.42](mbh/3.313.html#v42) = ≈krit. 03,297.23c *vyāyāmena parīpsasva jīvitam*
+[4,2246.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2246) = [≈Vulg. 4.69.7](mbh/4.69.html#v7) = ≈krit. 04,64.25a *na parīpsanti ye bhāryāṃ vadhyānānām*
+[480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.480) = [≈Vulg. 4.16.29](mbh/4.16.html#v29) = ≈krit. 04,15.22a *vaikartanaṃ parīpsanto gandharvānsamavākiran*
+[3,14899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14899) = [≈Vulg. 3.241.20](mbh/3.241.html#v20) = ≈krit. 03,230.19a *tānparīpsasva*
+[4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008) = [≈Vulg. 4.31.9](mbh/4.31.html#v9) = ≈krit. 04,30.8a
 
 - **RU:** — 2) желать получить, беречь, охранять: *na peyamudakam — prāṇāniha parīpsatā*
 [MBH. 3,17327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17327) = [≈Вульг. 3.313.42](mbh/3.313.html#v42) = ≈крит. 03,297.23c *vyāyāmena parīpsasva jīvitam*
@@ -112,9 +112,9 @@
   <sub>attested</sub>
 
 **pari-verb-2nd-block-3)** — 3) Jmd beizukommen suchen, auf Jmd oder Etwas lauern, nachstellen: *sa mayā sāgarāvarte dṛṣṭa āsītparīpsatā*
-[MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) = [≈Вульг. 3.14.19](mbh/3.14.html#v19) = ≈крит. 03,15.19a *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*
-[11454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11454) = [≈Вульг. 3.155.18](mbh/3.155.html#v18) = ≈крит. 03,153.18a *pañcaśatāñchūrān — parīpsamānaḥ*
-[15723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15723) = [≈Вульг. 3.271.7](mbh/3.271.html#v7) = ≈крит. 03,255.7a
+[MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) = [≈Vulg. 3.14.19](mbh/3.14.html#v19) = ≈krit. 03,15.19a *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*
+[11454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11454) = [≈Vulg. 3.155.18](mbh/3.155.html#v18) = ≈krit. 03,153.18a *pañcaśatāñchūrān — parīpsamānaḥ*
+[15723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15723) = [≈Vulg. 3.271.7](mbh/3.271.html#v7) = ≈krit. 03,255.7a
 
 - **RU:** — 3) стремиться подступиться к кому-либо, подстерегать кого-либо или что-либо, преследовать: *sa mayā sāgarāvarte dṛṣṭa āsītparīpsatā*
 [MBH. 3,632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.632) = [≈Вульг. 3.14.19](mbh/3.14.html#v19) = ≈крит. 03,15.19a *parīpsamānaḥ pārthānāṃ kalāpāna dhanūṃṣi ca*

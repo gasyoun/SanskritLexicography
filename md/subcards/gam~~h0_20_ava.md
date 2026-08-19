@@ -34,7 +34,7 @@
   <sub>attested</sub>
 
 **3)** — 3) an Etwas gehen, unternehmen: *kuto yuddhaṃ jātu naro 'vagacchet*
-[MBH. 5,740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.740) = [≈Вульг. 5.26.3](mbh/5.26.html#v3) = ≈крит. 05,26.3c
+[MBH. 5,740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.740) = [≈Vulg. 5.26.3](mbh/5.26.html#v3) = ≈krit. 05,26.3c
 
 - **RU:** — 3) приступать к чему-либо, предпринимать: *kuto yuddhaṃ jātu naro 'vagacchet*
 [MBH. 5,740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.740) = [≈Вульг. 5.26.3](mbh/5.26.html#v3) = ≈крит. 05,26.3c
@@ -57,12 +57,12 @@
 [98,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?98,23) *avagacchādya yatkāryaṃ kartavyaṃ te* bringe in Erfahrung
 [R. 6,10,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,6) *avagantuṃ tvayā yuktaṃ buddhyā — mṛgo hemamayo naiṣaḥ* zur Ueberzeugung gelangen
 [3,49,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,19) [1,30,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,30,17) *saṃbhāvya ityavagatya*
-[ITIH.] bei [SĀY.] zu [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) [MBH. 1,896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.896) = [≈Вульг. 1.5.34](mbh/1.5.html#v34) = крит. — [3431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3431) = [≈Вульг. 1.83.28](mbh/1.83.html#v28) = ≈крит. 01,78.27a [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) Sch. zu [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* gelangte ich zur Ueberzeugung
+[ITIH.] bei [SĀY.] zu [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) [MBH. 1,896.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.896) = [≈Vulg. 1.5.34](mbh/1.5.html#v34) = krit. — [3431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3431) = [≈Vulg. 1.83.28](mbh/1.83.html#v28) = ≈krit. 01,78.27a [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) Sch. zu [Kap. 1,80.] *tadaiva dhyānādavagato 'smi — iti* gelangte ich zur Ueberzeugung
 [ŚĀK. 111,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,4) *kathaṃ śāntamityabhihite śrānta ityavagacchati mūrkhaḥ* glauben, dass gemeint sei
 [MṚCCH. 13,11.] *yāvadbhiḥ śabdaiḥ so 'rtho 'vagamyate tāvantaḥ prayoktavyāḥ* wie viele Wörter der Sinn zum Verständniss verlangt
 [PAT.] zu [P. 8,1,12.](https://ashtadhyayi.com/sutraani/8/1/12) *nāvagam* mit einem infin. nicht verstehen: *(tadbalaṃ) saṃkhyātuṃ nāvajagmatuḥ*
 [R. 6,1,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,1,17) Jmd oder Etwas (acc.) für Etwas (acc.) erkennen, halten, ansehen: *tasya māmavagacchadhvaṃ bhāryām*
-[MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) = [≈Вульг. 3.64.83](mbh/3.64.html#v83) = ≈крит. 03,61.78c *tattadevāvagaccha tvaṃ mama tejoṃ'śasaṃbhavam*
+[MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) = [≈Vulg. 3.64.83](mbh/3.64.html#v83) = ≈krit. 03,61.78c *tattadevāvagaccha tvaṃ mama tejoṃ'śasaṃbhavam*
 [BHAG. 10,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?10,41)
 [R. 6,103,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,16) [4,7,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,7,7)
 [SUŚR. 1,23,13.]

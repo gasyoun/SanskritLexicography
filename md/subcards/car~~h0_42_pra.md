@@ -7,9 +7,9 @@
  1) hervortreten, zum Vorschein kommen: *(yathā) tāḥ (marīcayaḥ) yunaḥ punarudayataḥ (arkasya) pracaranti*
 [PRAŚNOP. 4,2.] *naiśāni sarvabhūtāni pracaranti tatastataḥ*
 [R. 1,35,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,35,18) [3,5,9](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,9) [48,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,48,17) *prāṇaḥ prālīyata tataḥ punaśca pracacāra ha*
-[MBH. 14,692. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.692) = [≈Вульг. 14.23.8](mbh/14.23.html#v8) = ≈крит. 14,23.8a *pracīrṇa*
-[690. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.690) = [≈Вульг. 14.23.6](mbh/14.23.html#v6) = ≈крит. 14,23.6c *iti sma vācaḥ śrūyante pracarantyastataḥ*
-[6,2189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2189) = [≈Вульг. 6.52.66](mbh/6.52.html#v66) = ≈крит. 06,48.65a
+[MBH. 14,692. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.692) = [≈Vulg. 14.23.8](mbh/14.23.html#v8) = ≈krit. 14,23.8a *pracīrṇa*
+[690. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.690) = [≈Vulg. 14.23.6](mbh/14.23.html#v6) = ≈krit. 14,23.6c *iti sma vācaḥ śrūyante pracarantyastataḥ*
+[6,2189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2189) = [≈Vulg. 6.52.66](mbh/6.52.html#v66) = ≈krit. 06,48.65a
 
 - **RU:** — *pra*
  1) выступать, появляться: *(yathā) tāḥ (marīcayaḥ) yunaḥ punarudayataḥ (arkasya) pracaranti*
@@ -71,9 +71,9 @@ Hand an bei den liturgischen Verrichtungen
 [4,4,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,4,2,1) [TS. 6,2,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,2,4) [3,10,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,3,10,1) [KĀTY. ŚR. 10,1,27.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,27) [18,4,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?18,4,23) — *bhṛtyavatpracariṣyāmi* zu Werke gehen, verfahren
 [HARIV. 14470.](https://sanskrit-lexicon-scans.github.io/hariv?14470) *cikitsakānāṃ sarveṣāṃ mithyā pracaratāṃ damaḥ* falsch verfahren
 [M. 9,284.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,284) *śāstradṛṣṭyā yathaiva buddhvā pracarasva*
-[MBH. 12,4195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4195) = [≈Вульг. 12.115.7](mbh/12.115.html#v7) = ≈крит. 12,116.7a thätig sein in, — bei, beschäftigt sein mit (loc.): *adhvaryurapi nirmohaḥ pracacāra mahāmakhe*
-[MBH. 14,815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.815) = [≈Вульг. 14.28.28](mbh/14.28.html#v28) = ≈крит. 14,28.28a *cikitsāyāṃ pracaratu*
-[13,4569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4569) = [≈Вульг. 13.94.23](mbh/13.94.html#v23) = ≈крит. 13,95.66a *dehendriyaprāṇamanodhiyo 'mī yadaṃśaviddhāḥ pracaranti karmasu*
+[MBH. 12,4195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4195) = [≈Vulg. 12.115.7](mbh/12.115.html#v7) = ≈krit. 12,116.7a thätig sein in, — bei, beschäftigt sein mit (loc.): *adhvaryurapi nirmohaḥ pracacāra mahāmakhe*
+[MBH. 14,815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.815) = [≈Vulg. 14.28.28](mbh/14.28.html#v28) = ≈krit. 14,28.28a *cikitsāyāṃ pracaratu*
+[13,4569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4569) = [≈Vulg. 13.94.23](mbh/13.94.html#v23) = ≈krit. 13,95.66a *dehendriyaprāṇamanodhiyo 'mī yadaṃśaviddhāḥ pracaranti karmasu*
 [BHĀG. P. 6,16,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,24)
 
 - **RU:** — 4) приступать к делу, особ. приступать к священному делу; совершать что-либо; с instr. предмета, которым или при посредстве которого что-либо совершается: *pra vāmardhvaryuścaratu payasvān*

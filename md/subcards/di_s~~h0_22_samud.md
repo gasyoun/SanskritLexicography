@@ -19,16 +19,16 @@
   <sub>attested</sub>
 
 **2)** — 2) absol. *samuddiśya* mit Hinweisung auf (acc.) so v. a. auf, gegen: *na ripūnvai samuddiśya vimuñcanti narāḥ śarān*
-[MBH. 1,4573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4573) = [≈Вульг. 1.118.16](mbh/1.118.html#v16) = ≈крит. 01,109.16c für, zu Ehren von, wegen, in Berücksichtigung von: *śyāmākaṃ bhojanaṃ tatra yaḥ prayacchati mānavaḥ . devānpitṝnsamuddiśya*
+[MBH. 1,4573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4573) = [≈Vulg. 1.118.16](mbh/1.118.html#v16) = ≈krit. 01,109.16c für, zu Ehren von, wegen, in Berücksichtigung von: *śyāmākaṃ bhojanaṃ tatra yaḥ prayacchati mānavaḥ . devānpitṝnsamuddiśya*
 [MBH. 3,6039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6039) *dhṛtarāṣṭraṃ samuddiśya dadau saḥ — suvarṇaṃ rajatam* zu Ehren, zum Andenken des Dhṛ.
-[15,1094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1094) = [≈Вульг. 15.39.17](mbh/15.39.html#v17) = ≈крит. 15,47.17a *mahotsavaṃ pinākinaṃ samuddiśya cakre*
+[15,1094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1094) = [≈Vulg. 15.39.17](mbh/15.39.html#v17) = ≈krit. 15,47.17a *mahotsavaṃ pinākinaṃ samuddiśya cakre*
 [HARIV. 9112.](https://sanskrit-lexicon-scans.github.io/hariv?9112) *brahmaṇe gṛhamadhye tu viśvedevebhyo eva ca . dhanvantariṃ samuddiśya prāgudīcyāṃ baliṃ kṣipet*
 [MĀRK. P. 29,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,17) *tatsarvaṃ tvāṃ samuddiśya sahasāhamupāgataḥ* deinetwegen
-[MBH. 4,742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.742) = [≈Вульг. 4.22.49](mbh/4.22.html#v49) = ≈крит. 04,21.47a *sāpyaṣṭamīṃ samuddiśya tatra rājasutāyayau*
+[MBH. 4,742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.742) = [≈Vulg. 4.22.49](mbh/4.22.html#v49) = ≈krit. 04,21.47a *sāpyaṣṭamīṃ samuddiśya tatra rājasutāyayau*
 [KATHĀS. 7,71.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,71) *parvaṇi* (als Zeitbestimmung im loc. stehend, das folgende *samuddiśya* besagt, dass der Zeitpunkt zugleich als Veranlassung anzusehen sei) *tvaṃ samuddiśya surāmannaṃ ca kāraya*
-[MBH. 4,435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.435) = [≈Вульг. 4.15.5](mbh/4.15.html#v5) = ≈крит. 04,14.5c *adyaiva ca tvayā rāma gantavyaṃ vacanātpituḥ . vanavāsaṃ samuddiśya nava varṣāṇi pañca ca ..* um im Walde 14 Jahre zu leben
+[MBH. 4,435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.435) = [≈Vulg. 4.15.5](mbh/4.15.html#v5) = ≈krit. 04,14.5c *adyaiva ca tvayā rāma gantavyaṃ vacanātpituḥ . vanavāsaṃ samuddiśya nava varṣāṇi pañca ca ..* um im Walde 14 Jahre zu leben
 [R. GORR. 2,15,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,15,34) [56,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,56,5) *tayorbadhaṃ samuddiśya viśvakarmāṇamāhvayat*
-[MBH. 1,7688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7688) = [≈Вульг. 1.209.2](mbh/1.209.html#v2) = ≈крит. 01,201.2a *virāṭenottarā dattā snuṣā yatra kirīṭinaḥ . abhimanyuṃ samuddiśya* wo Virāṭa seine Tochter dem Abhimanyu zur Ehe gab, wodurch sie die Schwiegertochter
+[MBH. 1,7688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7688) = [≈Vulg. 1.209.2](mbh/1.209.html#v2) = ≈krit. 01,201.2a *virāṭenottarā dattā snuṣā yatra kirīṭinaḥ . abhimanyuṃ samuddiśya* wo Virāṭa seine Tochter dem Abhimanyu zur Ehe gab, wodurch sie die Schwiegertochter
 Arjuna's wurde, 489.
 
 - **RU:** — 2) absol. *samuddiśya* с указанием на (acc.), так преим. на, против: *na ripūnvai samuddiśya vimuñcanti narāḥ śarān*

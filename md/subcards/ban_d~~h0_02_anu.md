@@ -10,7 +10,7 @@
 [TS. 6,6,5,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,5,3) *mekhalām*
 [GOBH. 3,4,17.] *anubaddhaśiraḥpādaṃ carma*
 [KAUŚ. 24. 64. 81.] *citrāṃ mālāṃ cānubaddhām*
-[MBH. 7,76.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.76) = [≈Вульг. 7.2.25](mbh/7.2.html#v25) = ≈крит. 07,2.25c *dayitabāhulatānubaddhā* umfangen
+[MBH. 7,76.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.76) = [≈Vulg. 7.2.25](mbh/7.2.html#v25) = ≈krit. 07,2.25c *dayitabāhulatānubaddhā* umfangen
 [Spr. 3894.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3894) *dharmabandhānubaddha* gebunden, gefesselt
 [R. GORR. 2,113,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,113,3) *vacasā — tantyā lokaḥ kilāyaṃ kāmahato 'nubaddhaḥ*
 [BHĀG. P. 3,21,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,16) *viṣayeṣvanvabadhyata*
@@ -41,7 +41,7 @@
 **2)** — 2) in seinem Gefolge haben: *na śiṣyānanubadhnīta*
 [BHĀG. P. 7,13,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,8) *anubaddha* im Gefolge seiend, mit Etwas zusammenhängend, in Verbindung stehend: *anubaddhārthānarthasaṃśayānvicārya*
 [DAŚAK.] in [BENF. Chr. 181,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) *aho mamopari vidheḥ saṃrambho dāruṇo mahān . nānubadhnāti kuśalam* so v. a. bringt keine Wohlfahrt
-[MBH. 3,2562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2562) = [≈Вульг. 3.65.31](mbh/3.65.html#v31) = крит. — *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti*
+[MBH. 3,2562.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2562) = [≈Vulg. 3.65.31](mbh/3.65.html#v31) = krit. — *he vṛṣala te tathā vikṣepo 'stu yathā hiṃsāmanubadhnāti*
 [P. 6,1,141](https://ashtadhyayi.com/sutraani/6/1/141), Sch.
 
 - **RU:** — 2) иметь в своей свите: *na śiṣyānanubadhnīta*

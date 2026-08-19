@@ -8,7 +8,7 @@
 [RĀJA-TAR. 5,92.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) *aṇavo* (die Atome) *baddhāḥ*
 [LIṄGA-P.] bei [MUIR, ST. 4,326,1.] *vṛkāḥ pañcabaddhāśca śatabaddhāstathāpare* zu fünf —, zu hundert verbunden
 [HARIV. 3507.](https://sanskrit-lexicon-scans.github.io/hariv?3507) *rājānaḥ śreṇibaddhāḥ*
-[MBH. 2,568.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.568) = [≈Вульг. 2.14.4](mbh/2.14.html#v4) = ≈крит. 02,13.4a *chāyābaddhakadambakaṃ mṛgakulam* Gruppen bildend
+[MBH. 2,568.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.568) = [≈Vulg. 2.14.4](mbh/2.14.html#v4) = ≈krit. 02,13.4a *chāyābaddhakadambakaṃ mṛgakulam* Gruppen bildend
 [ŚĀK. 39.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?39) *dehabaddha* mit einem Körper verbunden
 [RAGH. 11,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,35)
 [KUMĀRAS. 2,47.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,47) [5,30.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,30) *karmāṇi śīlena baddhāni*
@@ -31,13 +31,13 @@
 [Spr. 808.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?808)
 [VET. in LA. 13,7.] *baddhvā yogāsanāni*
 [BHAṬṬ. 7,77.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,77) *bhrukuṭiṃ bandh* die Brauen furchen (hätte auch u. 6. gestellt werden können)
-[MBH. 7,762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.762) = [≈Вульг. 7.19.10](mbh/7.19.html#v10) = ≈крит. 07,18.10a
+[MBH. 7,762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.762) = [≈Vulg. 7.19.10](mbh/7.19.html#v10) = ≈krit. 07,18.10a
 [R. 2,23,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,2) [3,54,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,1) [6,82,180.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,180) [100,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,11)
 [KĀVYĀD. 2,326.] *suratabaddhāṅgyaḥ* zum Beischlaf zurechtgelegt
 [HARIV. 8315.](https://sanskrit-lexicon-scans.github.io/hariv?8315) *kāñcanī vāsayaṣṭirmūle baddhā maṇibhiḥ* mit Edelsteinen eingelegt
 [MEGH. 77.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?77) *marakataśilābaddhasopāna*
 [74.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?74) *lohabaddhā gudāḥ* mit Eisen beschlagen
-[MBH. 7,8141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8141) = [≈Вульг. 7.179.27](mbh/7.179.html#v27) = ≈крит. 07,154.27a *hastīva jāmbūnadabaddhaśṛṅga* mit Gold belegt
+[MBH. 7,8141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8141) = [≈Vulg. 7.179.27](mbh/7.179.html#v27) = ≈krit. 07,154.27a *hastīva jāmbūnadabaddhaśṛṅga* mit Gold belegt
 [R. 5,11,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,11,7) *rītibaddha* in Messing gefasst
 [KATHĀS. 24,178.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,178) [184.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,184) *setuṃ bandh* einen Damm —, eine Brücke bauen
 [BHĀG. P. 9,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,15)
@@ -47,11 +47,11 @@
 [6,81,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,81,18) *baddhadviradasetubhiḥ* aus Elephanten gebildete Brücken
 [RAGH. 4,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,38) *babandhurbandhanīyān* (sc. *deśān)* dämmten
 [R. 2,80,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,10) *bandhiṣye setunā gaṅgām* so v. a. ich werde überbrücken
-[MBH. 3,10727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727) = [≈Вульг. 3.134.24](mbh/3.134.html#v24) = ≈крит. 03,134.24a *nāyaṃ śakyastvayā baddhuṃ* (sic) *mahānoghaḥ*
-[10728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10728) = [≈Вульг. 3.134.25](mbh/3.134.html#v25) = ≈крит. 03,134.25c *sāgaraṃ sumahadbaddhvā*
+[MBH. 3,10727.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727) = [≈Vulg. 3.134.24](mbh/3.134.html#v24) = ≈krit. 03,134.24a *nāyaṃ śakyastvayā baddhuṃ* (sic) *mahānoghaḥ*
+[10728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10728) = [≈Vulg. 3.134.25](mbh/3.134.html#v25) = ≈krit. 03,134.25c *sāgaraṃ sumahadbaddhvā*
 [R. 6,34,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,34,14) *pāṣāṇasetubandhena — abhavadbaddhā nikhilā nīlajāsarit* abgedämmt
 [RĀJA-TAR. 5,91.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,91) *kedārakhaṇḍaṃ badhāna* so v. a. verstopfen
-[MBH. 1,685. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.685) = [≈Вульг. 1.3.20](mbh/1.3.html#v20) = ≈крит. 01,3.17A festmachen, verschliessen, schliessen: *abadhnannargalena bahiśca tām (mañjūṣām)*
+[MBH. 1,685. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.685) = [≈Vulg. 1.3.20](mbh/1.3.html#v20) = ≈krit. 01,3.17A festmachen, verschliessen, schliessen: *abadhnannargalena bahiśca tām (mañjūṣām)*
 [KATHĀS. 4,56.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,56) *parṇakuṭīdvāraṃ babandha*
 [Z. d. d. m. G. 14,575,20.] *divākarādarśanabaddhakośe 'ravinde*
 [RAGH. 6,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,66) *baddhāmbaracaramārga* versperrt
@@ -164,12 +164,12 @@
   <sub>attested</sub>
 
 **4)** — 4) heften, richten das Auge, das Ohr, die Sinne auf Etwas (loc.): *puṃskokilaninādeṣu ṣaṭpadācariteṣu ca . baddhaśrotramanaścakṣuḥ*
-[MBH. 3,11085. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11085) = [≈Вульг. 3.145.23](mbh/3.145.html#v23) = ≈крит. 03,145.20a *muhuranupatati syandane baddhadṛṣṭiḥ*
+[MBH. 3,11085. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11085) = [≈Vulg. 3.145.23](mbh/3.145.html#v23) = ≈krit. 03,145.20a *muhuranupatati syandane baddhadṛṣṭiḥ*
 [ŚĀK. 7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?7) *badhnanti ca payodeṣu dṛśaḥ*
 [KĀVYĀD. 2,103.] *baddhanetrā*
 [MBH. 15,436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.436) *tathāvidhe mano babandha*
 [RAGH. 3,4.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,4) *bhavatyāṃ baddhacittaḥ*
-[MBH. 15,984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.984) = [≈Вульг. 15.36.28](mbh/15.36.html#v28) = ≈крит. 15,44.28a *matiṃ badhāna sugrīve*
+[MBH. 15,984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.984) = [≈Vulg. 15.36.28](mbh/15.36.html#v28) = ≈krit. 15,44.28a *matiṃ badhāna sugrīve*
 [BHAṬṬ. 20,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?20,22)
 
 - **RU:** — 4) устремлять, направлять взор, слух, чувства на что-либо (loc.): *puṃskokilaninādeṣu ṣaṭpadācariteṣu ca . baddhaśrotramanaścakṣuḥ*

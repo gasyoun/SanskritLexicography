@@ -43,7 +43,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 **2)** — 2) Jmd Etwas anweisen, bestimmen: *yannaḥ pitā saṃjānīte tasmiṃstiṣṭhāmahe vayam*
 [AIT. BR. 7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18)
 [BHĀG. P. 9,16,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,16,34) *indriyaṃ ghnāṇasaṃjñātaṃ nāsiketyabhisaṃjñikā* der für den Geruch bestimmte Sinn
-[MBH. 12,9095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9095) = [≈Вульг. 12.258.34](mbh/12.258.html#v34) = ≈крит. 12,250.33a
+[MBH. 12,9095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9095) = [≈Vulg. 12.258.34](mbh/12.258.html#v34) = ≈krit. 12,250.33a
 
 - **RU:** — 2) указывать кому-л. что-л., предназначать: *yannaḥ pitā saṃjānīte tasmiṃstiṣṭhāmahe vayam*
 [AIT. BR. 7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18)
@@ -109,7 +109,7 @@ Sch. *saṃjānīṣva svamīśā ca*
   <sub>attested</sub>
 
 **caus_2)** — 2) Jmd beruhigen, zufriedenstellen: *ravistu saṃjñāpayate lokānraśmibhirulvanaiḥ*
-[MBH. 12,12567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12567) = [≈Вульг. 12.331.58](mbh/12.331.html#v58) = ≈крит. 12,318.57a *nāgarikavṛttyā saṃjñāpayainām*
+[MBH. 12,12567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12567) = [≈Vulg. 12.331.58](mbh/12.331.html#v58) = ≈krit. 12,318.57a *nāgarikavṛttyā saṃjñāpayainām*
 [ŚĀK. 60,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?60,2) *ahamenāṃ saṃjñāpayāmi*
 ([WEBER]: ich werde sie schon wieder zum Bewusstsein bringen)
 [MĀLAV. 58,17.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?58,17)
@@ -128,7 +128,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [ŚĀṄKH. ŚR. 4,14,14.]
 [ĀŚV. GṚHY. 1,11.]
 [KAUŚ. 44.] *saṃjñāpya turagaṃ vidhivadyājakāstadā*
-[MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Вульг. 14.89.2](mbh/14.89.html#v2) = ≈крит. 14,91.2c *saṃjñaptamaśvam*
+[MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Vulg. 14.89.2](mbh/14.89.html#v2) = ≈krit. 14,91.2c *saṃjñaptamaśvam*
 [HARIV. 11236. fgg.](https://sanskrit-lexicon-scans.github.io/hariv?11236) *paśūnpaśya tvayādhvare . saṃjñāpitān*
 
 [BHĀG. P. 4,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,7) *saṃjñapitaḥ paśuḥ*

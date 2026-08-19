@@ -13,7 +13,7 @@
 [ṚV. 4,36,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.036.html#rv04.036.02) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.036.html#rv04.036.07) [10,151,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.151.html#rv10.151.01)
 [ŚAT. BR. 5,3,5,31.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,5,31) kund thun, mittheilen, melden, anzeigen
 [YĀJÑ. 2,5.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,5) [6.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,6)
-[MBH. 1,3820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3820) = [≈Вульг. 1.95.67](mbh/1.95.html#v67) = крит. — [15,1083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1083) = [≈Вульг. 15.39.6](mbh/15.39.html#v6) = ≈крит. 15,47.6a
+[MBH. 1,3820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3820) = [≈Vulg. 1.95.67](mbh/1.95.html#v67) = krit. — [15,1083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.1083) = [≈Vulg. 15.39.6](mbh/15.39.html#v6) = ≈krit. 15,47.6a
 [HARIV. 9128.](https://sanskrit-lexicon-scans.github.io/hariv?9128)
 [R. 1,1,60.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,60)
 [R. GORR. 1,19,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,19,1) [2,3,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,3,5) [7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,3,7) [4,39,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,39,43) [5,56,133.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,133)
@@ -25,7 +25,7 @@
 [KATHĀS. 22,110.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,110) *purogāveditaścainamabhyagātsa purohitam* angemeldet von
 [24,122.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,122) [50,164.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,164) [RĀJA-TAR. 3,116.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,116) [371.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,371) [5,450.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,450) *rājña āvedayadhvaṃ māṃ saṃprāptam* meldet, dass
 [R. 1,20,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,5) ([21,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,4) [GORR.]). [7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,7) [R. GORR. 2,3,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,3,18) [34,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,28) [ŚĀK. 30,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?30,4) [BHAṬṬ. 3,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,49) *yāvadāvedyate rājñe hataḥ karṇo 'rjunena vai*
-[MBH. 8,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4992) = [≈Вульг. 8.96.11](mbh/8.96.html#v11) = ≈крит. 08,69.8c Jmd (acc.) benachrichtigen: *āvedita*
+[MBH. 8,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4992) = [≈Vulg. 8.96.11](mbh/8.96.html#v11) = ≈krit. 08,69.8c Jmd (acc.) benachrichtigen: *āvedita*
 [RAGH. 5,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,23)
 [RĀJA-TAR. 1,224.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,224)
 

@@ -4,7 +4,7 @@
 
 
 **saṃpra+hi — geschleudert)** — *saṃpra*, partic. *˚hita* geschleudert: *śarāḥ*
-[MBH. 8,4074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4074) = [≈Вульг. 8.79.53](mbh/8.79.html#v53) = крит. —
+[MBH. 8,4074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4074) = [≈Vulg. 8.79.53](mbh/8.79.html#v53) = krit. —
 
 - **RU:** — *saṃpra*, partic. *˚hita* брошенный, метнутый: *śarāḥ*
 [MBH. 8,4074.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4074) = [≈Вульг. 8.79.53](mbh/8.79.html#v53) = крит. —

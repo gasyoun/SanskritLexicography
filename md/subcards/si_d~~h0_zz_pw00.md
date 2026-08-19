@@ -82,7 +82,7 @@
 - **RU:** — С *samud* в *samutsedha*.
   <sub>attested</sub>
 
-**pra)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = [≈Вульг. 7.1.44](mbh/7.1.html#v44) = ≈крит. 07,1.42a. Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+**pra)** — Mit *upa* abwehren, — abhalten von (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = [≈Vulg. 7.1.44](mbh/7.1.html#v44) = ≈krit. 07,1.42a. Richtige *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
 
 - **RU:** — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = [≈Вульг. 7.1.44](mbh/7.1.html#v44) = ≈крит. 07,1.42a. Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
   <sub>attested</sub>

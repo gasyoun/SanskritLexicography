@@ -7,9 +7,9 @@
  1) sich feindselig gegen Jmd (acc. gen.) benehmen, sich vergehen:
 
 *abrāhmaṇaṃ kartumicchanti raudrāste māṃ yathā vyabhicaranti nityam*
-[MBH. 1,3234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3234) = [≈Вульг. 1.76.51](mbh/1.76.html#v51) = ≈крит. 01,71.39a *na brahmadattaste bhūyo vyabhicariṣyati*
+[MBH. 1,3234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3234) = [≈Vulg. 1.76.51](mbh/1.76.html#v51) = ≈krit. 01,71.39a *na brahmadattaste bhūyo vyabhicariṣyati*
 [KATHĀS. 20,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,4) [2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,2) *bhartāramapi jīvantamanyānvyabhicarantyuta (nāryaḥ)*
-[MBH. 3,12869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12869) = [≈Вульг. 3.188.65](mbh/3.188.html#v65) = ≈крит. 03,186.56c
+[MBH. 3,12869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12869) = [≈Vulg. 3.188.65](mbh/3.188.html#v65) = ≈krit. 03,186.56c
 
 - **RU:** — *vyabhi*
  1) вести себя враждебно по отношению к кому-л. (acc. gen.), погрешать:

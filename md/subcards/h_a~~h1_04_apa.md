@@ -13,7 +13,7 @@
 - **RU:** [AV. 18,3,73.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.73) *apahāya* оставляя: *mathurām*
   <sub>attested</sub>
 
-**apa_3_meidend)** [HARIV. 6403.](https://sanskrit-lexicon-scans.github.io/hariv?6403) Jmd [MBH. 1,3339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3339) = [≈Вульг. 1.80.8](mbh/1.80.html#v8) = ≈крит. 01,75.7a [3,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2961) = [≈Вульг. 3.76.6](mbh/3.76.html#v6) = ≈крит. 03,74.6a [VIKR. 33,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?33,13) [BHĀG. P. 5,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,39) [2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) meidend
+**apa_3_meidend)** [HARIV. 6403.](https://sanskrit-lexicon-scans.github.io/hariv?6403) Jmd [MBH. 1,3339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3339) = [≈Vulg. 1.80.8](mbh/1.80.html#v8) = ≈krit. 01,75.7a [3,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2961) = [≈Vulg. 3.76.6](mbh/3.76.html#v6) = ≈krit. 03,74.6a [VIKR. 33,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?33,13) [BHĀG. P. 5,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,39) [2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) meidend
 
 - **RU:** [HARIV. 6403.](https://sanskrit-lexicon-scans.github.io/hariv?6403) кого-л. [MBH. 1,3339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3339) = [≈Вульг. 1.80.8](mbh/1.80.html#v8) = ≈крит. 01,75.7a [3,2961.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2961) = [≈Вульг. 3.76.6](mbh/3.76.html#v6) = ≈крит. 03,74.6a [VIKR. 33,13.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?33,13) [BHĀG. P. 5,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,39) [2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) сторонясь, избегая
   <sub>attested</sub>
@@ -28,7 +28,7 @@
 - **RU:** [HARIV. 11835.](https://sanskrit-lexicon-scans.github.io/hariv?11835) освобождаясь от: *ṛṇāni*
   <sub>attested</sub>
 
-**apa_6_hintansetzung)** [MBH. 12,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.173) = [≈Вульг. 12.7.18](mbh/12.7.html#v18) = ≈крит. 12,7.17c mit Hintansetzung von
+**apa_6_hintansetzung)** [MBH. 12,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.173) = [≈Vulg. 12.7.18](mbh/12.7.html#v18) = ≈krit. 12,7.17c mit Hintansetzung von
 [ŚĀK. 143.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?143)
 [Spr. (II) 7279.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7279 "Spr. (II) 7279: svardhapīḍāmapahāya yo 'yaṃ matpāpaśuddhyarthamiha pravṛttaḥ | na cetkṣamāmapyahamasya kuryāṃ mattaḥ kṛtaghno vada kīdṛśo 'nyaḥ || — (5340.) Welcher Andere, sprich, wäre undankbarer als ich, wenn ich nicht einmal Verzeihung angedeihen liesse demjenigen, welcher, die Beeinträchtigung seiner eigenen Pflichten hintansetzend, hierher gekommen ist, damit m…")
 

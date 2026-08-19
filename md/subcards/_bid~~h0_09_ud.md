@@ -6,7 +6,7 @@
 **1)** — *ud* durchdringen durch (acc.): *udbhijjāni bhūmimudbhidya jātāni latāvṛkṣādīni*
 [VEDĀNTAS. (Allah.) No. 71.] *pulakodbhinnasarvāṅga*
 [BHĀG. P. 3,2,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,5) pass. aufspringen: *aṇḍaṃ — nodbhidyati*
-[MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) = [≈Вульг. 5.102.8](mbh/5.102.html#v8) = ≈крит. 05,100.8a hervorbrechen, hervorschiessen, zum Vorschein kommen; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
+[MBH. 5,3563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3563) = [≈Vulg. 5.102.8](mbh/5.102.html#v8) = ≈krit. 05,100.8a hervorbrechen, hervorschiessen, zum Vorschein kommen; act.: *nastaḥ, cakṣuṣṭaḥ, śrotrata udabhinat*
 [ŚAT. BR. 13,4,4,6. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,6) pass. dass.: *yāvannodbhidyete* (so zu lesen) *stanau*
 [PAIṬHĪNASI] in [DĀYABH. 273,1.] *udbhidyamānaśramajalapulaka*
 [DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) [BHĀG. P. 5,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,11) *tvatsunītipādapasya puṣpamudbhinnamidam*
@@ -18,7 +18,7 @@
 [PAÑCAR. 4,6,7.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,6,7) *navameghaśabdādudbhinnayā ratnaśalākayeva*
 [KUMĀRAS. 1,24.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,24) *udbhinnavidyudvalayo meghaḥ*
 [RAGH. 13,21.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,21) *udbhinnarudhira*
-[MBH. 7,3787.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3787) = [≈Вульг. 7.101.25](mbh/7.101.html#v25) = ≈крит. 07,76.25a [9,3237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3237)
+[MBH. 7,3787.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3787) = [≈Vulg. 7.101.25](mbh/7.101.html#v25) = ≈krit. 07,76.25a [9,3237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3237)
 
 *raviprabhodbhinnaśiromaṇiprabha (phaṇin)*
 [ṚT. 1,19.] *udbhinnasaṃbhrama*

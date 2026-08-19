@@ -32,7 +32,7 @@
 
 **pwkvn-4)** === LAYER: PWKVN — PWK variant supplement (keyed to PW sense numbers) ===
 
-**5.** *vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4) = [≈Вульг. 13.1.4](mbh/13.1.html#v4) = ≈крит. 13,1.4a. [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10) = [≈Вульг. 13.1.10](mbh/13.1.html#v10) = крит. —. — Mit *vi* VI. 6.
+**5.** *vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4) = [≈Vulg. 13.1.4](mbh/13.1.html#v4) = ≈krit. 13,1.4a. [10](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.10) = [≈Vulg. 13.1.10](mbh/13.1.html#v10) = krit. —. — Mit *vi* VI. 6.
 
 - **RU:** === СЛОЙ: PWKVN — дополнение вариантов PWK (привязано к номерам значений PW) ===
 

@@ -43,7 +43,7 @@
 [9,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,21) *īpsitam*
 [22,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,170) *samīhitam*
 [37,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,29) *mānasaḥ saṃkalpaḥ*
-[MBH. 5,2339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2339) = [≈Вульг. 5.59.12](mbh/5.59.html#v12) = ≈крит. 05,58.12a (med.). [BHĀG. P. 8,24,60.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,60)
+[MBH. 5,2339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2339) = [≈Vulg. 5.59.12](mbh/5.59.html#v12) = ≈krit. 05,58.12a (med.). [BHĀG. P. 8,24,60.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,60)
 
 *pratijñā*
 [KATHĀS. 38,41.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,41) *yatne kṛte yadi na sidhyati ko 'tra doṣaḥ*
@@ -141,8 +141,8 @@ Kār. zu [P. 4,1,161.](https://ashtadhyayi.com/sutraani/4/1/161) [PAT.] (unzähl
 
 **8)** — 8) sein Ziel erreichen. Erfolg haben (von Personen): *sidhyanti karmasu mahatsvapi yanniyojyāḥ*
 [Spr. (II) 7050.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7050 "Spr. (II) 7050: sithyanti karmasu mahatsvapi yanniyojyāḥ saṃbhāvanāguṇavehi tamīśvarāṇām | kiṃ vābhaviṣyadaruṇastamasāṃ vibhettā | taṃ cetasahasrakiraṇo dhuri nākariṣ… — (5233.) Wenn Untergebene sogar mit grossen Thaten zu Stande kommen, so erkenne darin eine löbliche Eigenschaft ihrer Gebieter, dass diese nämlich ihnen Solches zutrauen. Würde wohl Aruṇa der Verscheucher der Finsterniss…") [3435](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3435) (oder zu 7). *anarthāḥ saṃśayāvasthāḥ sidhyante muktasaṃśayāḥ*
-[MBH. 3,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1244) = [≈Вульг. 3.32.43](mbh/3.32.html#v43) = ≈крит. 03,33.40c das höchste Ziel erreichen, vollkommen —, glückselig werden
-[29.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.29) = [≈Вульг. 3.1.29](mbh/3.1.html#v29) = ≈крит. 03,1.27a [8203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8203) = [≈Вульг. 3.85.61](mbh/3.85.html#v61) = ≈крит. 03,83.58c [R. 7,36,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,45) [ŚATR. 1,285.] [BHĀG. P. 4,12,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,49) [5,18,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,10) [6,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,4) — partic. *siddha*
+[MBH. 3,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1244) = [≈Vulg. 3.32.43](mbh/3.32.html#v43) = ≈krit. 03,33.40c das höchste Ziel erreichen, vollkommen —, glückselig werden
+[29.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.29) = [≈Vulg. 3.1.29](mbh/3.1.html#v29) = ≈krit. 03,1.27a [8203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8203) = [≈Vulg. 3.85.61](mbh/3.85.html#v61) = ≈krit. 03,83.58c [R. 7,36,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,45) [ŚATR. 1,285.] [BHĀG. P. 4,12,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,49) [5,18,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,10) [6,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,4) — partic. *siddha*
 
 - **RU:** — 8) достигать своей цели, иметь успех (о лицах): *sidhyanti karmasu mahatsvapi yanniyojyāḥ*
 [Spr. (II) 7050.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7050 "Spr. (II) 7050: sithyanti karmasu mahatsvapi yanniyojyāḥ saṃbhāvanāguṇavehi tamīśvarāṇām | kiṃ vābhaviṣyadaruṇastamasāṃ vibhettā | taṃ cetasahasrakiraṇo dhuri nākariṣ… — (5233.) Wenn Untergebene sogar mit grossen Thaten zu Stande kommen, so erkenne darin eine löbliche Eigenschaft ihrer Gebieter, dass diese nämlich ihnen Solches zutrauen. Würde wohl Aruṇa der Verscheucher der Finsterniss…") [3435](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3435) (или zu 7). *anarthāḥ saṃśayāvasthāḥ sidhyante muktasaṃśayāḥ*
@@ -213,7 +213,7 @@ Kār. zu [P. 4,1,161.](https://ashtadhyayi.com/sutraani/4/1/161) [PAT.] (unzähl
 [TRIK. 2,7,11.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,7,11)
 [H. 412.](https://sanskrit-lexicon-scans.github.io/abch2/app1?412)
 [M. 3,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,84) [121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,121)
-[MBH. 13,2769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2769) = [≈Вульг. 13.53.15](mbh/13.53.html#v15) = ≈крит. 13,53.14a
+[MBH. 13,2769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2769) = [≈Vulg. 13.53.15](mbh/13.53.html#v15) = ≈krit. 13,53.14a
 [HARIV. 8441.](https://sanskrit-lexicon-scans.github.io/hariv?8441)
 [R. 1,65,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,5) [3,52,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,51)
 [SUŚR. 2,66,14.]
@@ -221,7 +221,7 @@ Kār. zu [P. 4,1,161.](https://ashtadhyayi.com/sutraani/4/1/161) [PAT.] (unzähl
 [BHĀG. P. 4,13,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,36) *ardha˚*
 [MĀRK. P. 51,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,33) *su˚*
 [Spr. (II) 4216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4216 "Spr. (II) 4216: prajñāśareṇābhihatasya jantościkitsakāḥ santi cauṣadhāni | na homamantrā na ca maṅgalāni nātharvaṇā nāpyagadāḥ susiddhāḥ || — (4577.) Für den, der mit dem Pfeile des Verstandes verwundet ward, giebt es keine Aerzte und keine Heilkräuter, keine Opfersprüche, keine Amulete, keine Beschwörer und auch keine künstlich zubereiteten Arzeneien.") *anala˚*
-[MBH. 3,2943.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2943) = [≈Вульг. 3.75.22](mbh/3.75.html#v22) = ≈крит. 03,73.21e *ukhā˚*
+[MBH. 3,2943.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2943) = [≈Vulg. 3.75.22](mbh/3.75.html#v22) = ≈krit. 03,73.21e *ukhā˚*
 [H. 411.](https://sanskrit-lexicon-scans.github.io/abch2/app1?411) *sṛgālavinnā˚*
 [SUŚR. 2,38,7.] *bastāṇḍa˚*
 [155,1.]

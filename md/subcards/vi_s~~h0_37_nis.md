@@ -38,8 +38,8 @@
   <sub>attested</sub>
 
 **3)** — 3) abtragen, bezahlen: *nirveṣṭuṃ bhartṛpiṇḍam*
-[MBH. 8,637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.637) = [≈Вульг. 8.15.32](mbh/8.15.html#v32) = ≈крит. 08,11.31a *asti nūnaṃ karma kṛtaṃ purastādanirviṣṭaṃ pāpakaṃ dhārtarāṣṭraiḥ*
-[5,1816.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1816) = [≈Вульг. 5.48.9](mbh/5.48.html#v9) = ≈крит. 05,47.7c
+[MBH. 8,637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.637) = [≈Vulg. 8.15.32](mbh/8.15.html#v32) = ≈krit. 08,11.31a *asti nūnaṃ karma kṛtaṃ purastādanirviṣṭaṃ pāpakaṃ dhārtarāṣṭraiḥ*
+[5,1816.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1816) = [≈Vulg. 5.48.9](mbh/5.48.html#v9) = ≈krit. 05,47.7c
 
 - **RU:** — 3) погашать, уплачивать: *nirveṣṭuṃ bhartṛpiṇḍam*
 [MBH. 8,637.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.637) = [≈Вульг. 8.15.32](mbh/8.15.html#v32) = ≈крит. 08,11.31a *asti nūnaṃ karma kṛtaṃ purastādanirviṣṭaṃ pāpakaṃ dhārtarāṣṭraiḥ*
@@ -82,7 +82,7 @@
   <sub>attested</sub>
 
 **5)** — 5) *nirviśantyāṃ*
-[MBH. 13,3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Вульг. 13.70.2](mbh/13.70.html#v2) = ≈крит. 13,69.2c fehlerhaft für *nivi˚*, wie die [ed. Bomb.] liest.
+[MBH. 13,3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Vulg. 13.70.2](mbh/13.70.html#v2) = ≈krit. 13,69.2c fehlerhaft für *nivi˚*, wie die [ed. Bomb.] liest.
 
 - **RU:** — 5) *nirviśantyāṃ*
 [MBH. 13,3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Вульг. 13.70.2](mbh/13.70.html#v2) = ≈крит. 13,69.2c ошибочно вм. *nivi˚*, как читает [Бомбейская ред.].

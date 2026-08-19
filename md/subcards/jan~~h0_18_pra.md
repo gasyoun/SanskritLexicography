@@ -16,13 +16,13 @@
 
 *ugro nāma prajāyate*
 [M. 10,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,9) *mātāpitroḥ prajāyante putrāḥ sādhāraṇāḥ*
-[MBH. 1,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4251) = [≈Вульг. 1.105.32](mbh/1.105.html#v32) = ≈крит. 01,99.28c [4,240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.240) = [≈Вульг. 4.8.10](mbh/4.8.html#v10) = ≈крит. 04,7.8a *mahiṣyeṇa karaṇyāṃ tu rathakāraḥ prajāyate*
+[MBH. 1,4251.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4251) = [≈Vulg. 1.105.32](mbh/1.105.html#v32) = ≈krit. 01,99.28c [4,240.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.240) = [≈Vulg. 4.8.10](mbh/4.8.html#v10) = ≈krit. 04,7.8a *mahiṣyeṇa karaṇyāṃ tu rathakāraḥ prajāyate*
 [YĀJÑ. 1,95.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,95) *(tasya) daśa putrāḥ prajajñire*
 [BHĀG. P. 3,12,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,21) *ajaṃ prajātaṃ jagataḥ śivāya*
 [1,5,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,21) *rājakulaprajātā*
 [R. 5,11,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,11,21) *tataḥ (phalāt) prajāyanti punaśca pādapāḥ*
 [HARIV. 11272.](https://sanskrit-lexicon-scans.github.io/hariv?11272) *prajajñe hṛdi manmathaḥ*
-[MBH. 1,4869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4869) = [≈Вульг. 1.125.4](mbh/1.125.html#v4) = ≈крит. 01,116.4a *lobhātkāmaḥ prajāyate*
+[MBH. 1,4869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4869) = [≈Vulg. 1.125.4](mbh/1.125.html#v4) = ≈krit. 01,116.4a *lobhātkāmaḥ prajāyate*
 [HIT. I,24.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,24) *nirghātāḥ — vivarebhyaḥ prajajñire*
 [BHĀG. P. 3,17,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,8)
 
@@ -51,7 +51,7 @@
   <sub>attested</sub>
 
 **2)** — 2) wiedergeboren werden: *tailapāyī prajāyate*
-[MBH. 13,5509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5509) = [≈Вульг. 13.111.111](mbh/13.111.html#v111) = ≈крит. 13,112.73c
+[MBH. 13,5509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5509) = [≈Vulg. 13.111.111](mbh/13.111.html#v111) = ≈krit. 13,112.73c
 
 - **RU:** — 2) возрождаться, рождаться вновь: *tailapāyī prajāyate*
 [MBH. 13,5509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5509) = [≈Вульг. 13.111.111](mbh/13.111.html#v111) = ≈крит. 13,112.73c
@@ -67,29 +67,29 @@
 [9,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,2,8) *upasthaṃ prajaniṣyamāṇo 'bhimṛśet*
 [ŚĀṄKH. GṚHY. 1,19.] *agniḥ svaṃ retaḥ prajaniṣyate* zur Geburt werden lassen
 [ŚAT. BR. 2,2,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,4,17) *menakāyāṃ prajajñivān . gandharvarājaḥ*
-[MBH. 1,943.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.943) = [≈Вульг. 1.8.6](mbh/1.8.html#v6) = ≈крит. 01,8.5a *anṛtau vratī jaṭī caiva bhāryāyāṃ sa prajāyatu*
-[13,4573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4573) = [≈Вульг. 13.94.27](mbh/13.94.html#v27) = ≈крит. 13,96.27c *na prajāsyatha patniṣu*
+[MBH. 1,943.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.943) = [≈Vulg. 1.8.6](mbh/1.8.html#v6) = ≈krit. 01,8.5a *anṛtau vratī jaṭī caiva bhāryāyāṃ sa prajāyatu*
+[13,4573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4573) = [≈Vulg. 13.94.27](mbh/13.94.html#v27) = ≈krit. 13,96.27c *na prajāsyatha patniṣu*
 [R. 1,38,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,6) *prajāyasva*
-[MBH. 1,8343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8343) = [≈Вульг. 1.227.15](mbh/1.227.html#v15) = ≈крит. 01,218.15a [4660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4660) = [≈Вульг. 1.120.21](mbh/1.120.html#v21) = крит. — *śreyasā cetprajāyate*
+[MBH. 1,8343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8343) = [≈Vulg. 1.227.15](mbh/1.227.html#v15) = ≈krit. 01,218.15a [4660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4660) = [≈Vulg. 1.120.21](mbh/1.120.html#v21) = krit. — *śreyasā cetprajāyate*
 [M. 10,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,64) *na prajāsyati cāpyeṣa mānuṣeṣu*
-[MBH. 1,3958.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3958) = [≈Вульг. 1.99.39](mbh/1.99.html#v39) = ≈крит. 01,93.37a *saptavarṣāṣṭavarṣāśca prajāsyanti narāstadā*
-[3,13058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13058) = [≈Вульг. 3.190.50](mbh/3.190.html#v50) = ≈крит. 03,188.49a *tayārcaṃ cchrāmyaṃścacāra prajākāmastayemāṃ prajātiṃ prajajñe*
+[MBH. 1,3958.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3958) = [≈Vulg. 1.99.39](mbh/1.99.html#v39) = ≈krit. 01,93.37a *saptavarṣāṣṭavarṣāśca prajāsyanti narāstadā*
+[3,13058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13058) = [≈Vulg. 3.190.50](mbh/3.190.html#v50) = ≈krit. 03,188.49a *tayārcaṃ cchrāmyaṃścacāra prajākāmastayemāṃ prajātiṃ prajajñe*
 [ŚAT. BR. 1,8,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,10) *imāṃ prajātiṃ prājāyanta*
 [2,2,4,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,4,18) *yā prajāyate*
 [ŚĀṄKH. GṚHY. 3,10. 5,7.] *sā — prajajñe — kumāram*
-[MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) = [≈Вульг. 1.48.17](mbh/1.48.html#v17) = ≈крит. 01,44.17c [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) = [≈Вульг. 1.66.60](mbh/1.66.html#v60) = ≈крит. 01,60.58a [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) = [≈Вульг. 1.66.65](mbh/1.66.html#v65) = ≈крит. 01,60.63a [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) = [≈Вульг. 1.82.27](mbh/1.82.html#v27) = ≈крит. 01,77.27a [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) = [≈Вульг. 1.154.16](mbh/1.154.html#v16) = ≈крит. 01,142.16a *prajāyantesutānnāryaḥ*
+[MBH. 1,1927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1927) = [≈Vulg. 1.48.17](mbh/1.48.html#v17) = ≈krit. 01,44.17c [2624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2624) = [≈Vulg. 1.66.60](mbh/1.66.html#v60) = ≈krit. 01,60.58a [2629.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2629) = [≈Vulg. 1.66.65](mbh/1.66.html#v65) = ≈krit. 01,60.63a [3423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3423) = [≈Vulg. 1.82.27](mbh/1.82.html#v27) = ≈krit. 01,77.27a [6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6072) = [≈Vulg. 1.154.16](mbh/1.154.html#v16) = ≈krit. 01,142.16a *prajāyantesutānnāryaḥ*
 [3,13639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13639) *kanyām — prājāyata*
 [BENF. Chr. 50,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?50) *na prajāsyati*
-[MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) = [≈Вульг. 3.236.25](mbh/3.236.html#v25) = ≈крит. 03,225.25c *nārī prajaniṣyamāṇā* der Zeit des Gebärens nahe
+[MBH. 1,4526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4526) [3,14765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14765) = [≈Vulg. 3.236.25](mbh/3.236.html#v25) = ≈krit. 03,225.25c *nārī prajaniṣyamāṇā* der Zeit des Gebärens nahe
 [SUŚR. 1,368,7.] *prajātā* die da geboren hat
 [AK. 2,6,1,6.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,1,6)
 [H. 539.](https://sanskrit-lexicon-scans.github.io/abch2/app1?539) *yamau prajātā*
 [ŚĀṄKH. ŚR. 3,4,14.]
 [KĀTY. ŚR. 25,11,17.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,11,17)
-[MBH. 1,3046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3046) = [≈Вульг. 1.74.59](mbh/1.74.html#v59) = ≈крит. 01,68.58a [3927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3927) = [≈Вульг. 1.99.8](mbh/1.99.html#v8) = ≈крит. 01,93.8c
+[MBH. 1,3046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3046) = [≈Vulg. 1.74.59](mbh/1.74.html#v59) = ≈krit. 01,68.58a [3927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3927) = [≈Vulg. 1.99.8](mbh/1.99.html#v8) = ≈krit. 01,93.8c
 [HARIV. 3371.](https://sanskrit-lexicon-scans.github.io/hariv?3371)
 [SUŚR. 1,370,17.] *dāsīnāmaprajātānām*
-[MBH. 5,3047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3047) = [≈Вульг. 5.86.8](mbh/5.86.html#v8) = ≈крит. 05,84.8a *ṛtaprajātā* die rechtzeitig entbunden ist, rechtzeitig gebärend
+[MBH. 5,3047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3047) = [≈Vulg. 5.86.8](mbh/5.86.html#v8) = ≈krit. 05,84.8a *ṛtaprajātā* die rechtzeitig entbunden ist, rechtzeitig gebärend
 [AV. 1,11,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.01)
 
 - **RU:** — 3) размножаться посредством, в (instr.); зачинать, рожать; с acc.: *pra jāyemahi prajābhiḥ*

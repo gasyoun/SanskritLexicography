@@ -21,7 +21,7 @@ Schol. zu [P. 1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) *yakṣi*
 [ṚV. 8,25,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.025.html#rv08.025.01) wohl 1. sg., nach [SĀY. 2.] sg. *ijyāt, ijyāstām, ijyāsus, yakṣīṣṭa, yakṣīdhvam*
 Schol. zu [P. 3,4,104.](https://ashtadhyayi.com/sutraani/3/4/104) [1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) [8,3,78.](https://ashtadhyayi.com/sutraani/8/3/78) pass. *ijyate, ijyant, yajyamāna* neben *ijyamāna*
 [PAT.] zu [P. 6,1,108.](https://ashtadhyayi.com/sutraani/6/1/108) *iṣṭa; yaṣṭum, yaṣṭave, yajadhyai, ījitum*
-[MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) = [≈Вульг. 2.33.23](mbh/2.33.html#v23) = ≈крит. 02,30.23e *iṣṭvā, iṣṭvīnam*
+[MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) = [≈Vulg. 2.33.23](mbh/2.33.html#v23) = ≈krit. 02,30.23e *iṣṭvā, iṣṭvīnam*
 [P. 7,1,48.](https://ashtadhyayi.com/sutraani/7/1/48)
 
 - **RU:** 1. *yaj*, *yajati, ˚te*
@@ -103,54 +103,54 @@ Schol. zu [P. 1,3,72.](https://ashtadhyayi.com/sutraani/1/3/72) [VOP. 23,58](htt
 Schol. zu [P. 1,4,32](https://ashtadhyayi.com/sutraani/1/4/32), Vārtt. *surāghaṭasahasreṇa māṃsabhūtodanena ca . yakṣye tvām*
 [R. 2,52,83.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,83) [55,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,20)
 [M. 8,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,105) [11,118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,118) *yastilairyajate pitṝn*
-[MBH. 13,3317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3317) = [≈Вульг. 13.66.9](mbh/13.66.html#v9) = ≈крит. 13,65.8c
+[MBH. 13,3317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3317) = [≈Vulg. 13.66.9](mbh/13.66.html#v9) = ≈krit. 13,65.8c
 [BHĀG. P. 1,5,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,38) *yajate kratubhirdevānpitṝṃśca*
 [3,32,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,2) [4,12,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,10)
 
 *māṃ karmabhirviprā yajadhvam*
 [14,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,28) *puṇyena hayamedhena māmiṣṭvā*
 [R. 7,85,21.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,85,21) *yajñairijyantamīśvaram*
-[MBH. 2,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1325) = [≈Вульг. 2.36.20](mbh/2.36.html#v20) = ≈крит. 02,33.20c
+[MBH. 2,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1325) = [≈Vulg. 2.36.20](mbh/2.36.html#v20) = ≈krit. 02,33.20c
 [HARIV. 2806.](https://sanskrit-lexicon-scans.github.io/hariv?2806) *tāni sarvāṇi* (*daivatāni*) *yakṣyāmi tīrthānyāyatanāni ca*
 [52,84.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,52,84) [5,33,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,18) [BHĀG. P. 3,32,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,17) *ījurdevānpurohitāḥ*
 [BHAṬṬ. 14,90.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,90) *yajanta iha devatāḥ*
 [BHAG. 4,12.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,12) [9,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,23)
-[MBH. 3,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8390) = [≈Вульг. 3.90.19](mbh/3.90.html#v19) = ≈крит. 03,88.16a
+[MBH. 3,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8390) = [≈Vulg. 3.90.19](mbh/3.90.html#v19) = ≈krit. 03,88.16a
 [R. 2,52,79](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,79) ([19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,19) [GORR.]). [7,85,20.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,85,20) [BHĀG. P. 5,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,3,1) [BHAṬṬ. 1,2.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,2) *aiṇeyaṃ māṃsamāhṛtya śālāṃ (= parṇaśālādhiṣṭhātṛdevatām* Schol.) *yakṣyāmahe vayam*
 [R. 2,56,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,18) [21](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,21) *iṣṭvā devānpitṝn*
 [KATHĀS. 27,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,118) *śakrasya yadarthaṃ dhvaja ijyate*
 [HARIV. 3790.](https://sanskrit-lexicon-scans.github.io/hariv?3790) *girirasmābhirijyatām*
 [3850.](https://sanskrit-lexicon-scans.github.io/hariv?3850) *jñānenaivāpare viprā yajantyetairmakhaiḥ sadā*
 [M. 4,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,24) *yakṣyanti ca naravyāghrāḥ — rājasūyāśvamedhādyaiḥ kratubhiḥ*
-[MBH. 1,6098.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6098) = [≈Вульг. 1.155.6](mbh/1.155.html#v6) = ≈крит. 01,143.6a [7664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7664) = [≈Вульг. 1.208.2](mbh/1.208.html#v2) = ≈крит. 01,200.2c *sutārthaṃ vājimedhena kimarthaṃ na yajāmyaham*
+[MBH. 1,6098.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6098) = [≈Vulg. 1.155.6](mbh/1.155.html#v6) = ≈krit. 01,143.6a [7664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7664) = [≈Vulg. 1.208.2](mbh/1.208.html#v2) = ≈krit. 01,200.2c *sutārthaṃ vājimedhena kimarthaṃ na yajāmyaham*
 [R. 1,8,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,2) [11,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,11,8)
 [MĀRK. P. 36,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?36,2) *iyāja ca mahāmakhaiḥ*
 [37,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?37,2) *yajñairbahubhirījivān*
 [R. GORR. 1,44,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,44,6) *yajeta rājā kratubhirvividhaiḥ*
 [M. 7,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,79) [5,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,53) [8,306.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,306) [11,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,74)
-[MBH. 9,2885.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2885) = [≈Вульг. 9.50.32](mbh/9.50.html#v32) = ≈крит. 09,49.30e [13,3331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3331) = [≈Вульг. 13.66.23](mbh/13.66.html#v23) = ≈крит. 13,65.22a [14,22.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.22) = [≈Вульг. 14.2.3](mbh/14.2.html#v3) = ≈крит. 14,2.3a
+[MBH. 9,2885.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2885) = [≈Vulg. 9.50.32](mbh/9.50.html#v32) = ≈krit. 09,49.30e [13,3331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3331) = [≈Vulg. 13.66.23](mbh/13.66.html#v23) = ≈krit. 13,65.22a [14,22.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.22) = [≈Vulg. 14.2.3](mbh/14.2.html#v3) = ≈krit. 14,2.3a
 [MĀRK. P. 26,39.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?26,39) *yakṣye*
 [22,9.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,9) [HARIV. 11088.](https://sanskrit-lexicon-scans.github.io/hariv?11088) *yakṣyamāṇa*
 [BHĀG. P. 1,12,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,33) [7,15,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,10) *ījire ca mahāyajñaiḥ kṣatriyāḥ*
-[MBH. 1,2473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2473) = [≈Вульг. 1.64.40](mbh/1.64.html#v40) = ≈крит. 01,58.38a [3120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3120) = [≈Вульг. 1.74.133](mbh/1.74.html#v133) = ≈крит. 01,69.51a [3,2235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2235) = [≈Вульг. 3.57.44](mbh/3.57.html#v44) = ≈крит. 03,54.35c [3067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3067) = [≈Вульг. 3.79.5](mbh/3.79.html#v5) = ≈крит. 03,78.5c [8523.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8523) = [≈Вульг. 3.95.13](mbh/3.95.html#v13) = ≈крит. 03,93.12c [11000](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11000) = [≈Вульг. 3.142.52](mbh/3.142.html#v52) = крит. — (S. 569). 12745. 14864. [R. GORR. 1,1,92.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,92) *mahadbhiḥ kratubhirījāno bharataḥ*
-[MBH. 1,3712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3712) = [≈Вульг. 1.94.22](mbh/1.94.html#v22) = ≈крит. 01,89.18a [3,10526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10526) = [≈Вульг. 3.126.44](mbh/3.126.html#v44) = ≈крит. 03,126.42a *ījituṃ rājasūyena*
-[2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) = [≈Вульг. 2.33.23](mbh/2.33.html#v23) = ≈крит. 02,30.23e *iṣṭvā ca śaktito yajñaiḥ*
+[MBH. 1,2473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2473) = [≈Vulg. 1.64.40](mbh/1.64.html#v40) = ≈krit. 01,58.38a [3120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3120) = [≈Vulg. 1.74.133](mbh/1.74.html#v133) = ≈krit. 01,69.51a [3,2235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2235) = [≈Vulg. 3.57.44](mbh/3.57.html#v44) = ≈krit. 03,54.35c [3067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3067) = [≈Vulg. 3.79.5](mbh/3.79.html#v5) = ≈krit. 03,78.5c [8523.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8523) = [≈Vulg. 3.95.13](mbh/3.95.html#v13) = ≈krit. 03,93.12c [11000](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11000) = [≈Vulg. 3.142.52](mbh/3.142.html#v52) = krit. — (S. 569). 12745. 14864. [R. GORR. 1,1,92.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,92) *mahadbhiḥ kratubhirījāno bharataḥ*
+[MBH. 1,3712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3712) = [≈Vulg. 1.94.22](mbh/1.94.html#v22) = ≈krit. 01,89.18a [3,10526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10526) = [≈Vulg. 3.126.44](mbh/3.126.html#v44) = ≈krit. 03,126.42a *ījituṃ rājasūyena*
+[2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) = [≈Vulg. 2.33.23](mbh/2.33.html#v23) = ≈krit. 02,30.23e *iṣṭvā ca śaktito yajñaiḥ*
 [M. 6,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,36) [37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,37) [4,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,27)
-[MBH. 3,2414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2414) = [≈Вульг. 3.64.14](mbh/3.64.html#v14) = ≈крит. 03,61.13c [13,328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.328) = [≈Вульг. 13.6.34](mbh/13.6.html#v34) = ≈крит. 13,6.34a
+[MBH. 3,2414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2414) = [≈Vulg. 3.64.14](mbh/3.64.html#v14) = ≈krit. 03,61.13c [13,328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.328) = [≈Vulg. 13.6.34](mbh/13.6.html#v34) = ≈krit. 13,6.34a
 [R. 1,1,91.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,91)
 [BHĀG. P. 4,3,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,3) *iṣṭavānaśvamedhena*
 [R. 1,14,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,7) *iṣṭaṃ syātkratubhistena*
 [YĀJÑ. 1,358.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358)
 [AK. 2,8,1,3.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,1,3) *tasmānnālpadhano yajet*
 [M. 11,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,40) *kṣatriyo dhanurāśritya yajeccaiva na yājayet*
-[MBH. 4,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1558) = [≈Вульг. 4.50.4](mbh/4.50.html#v4) = ≈крит. 04,45.4c
+[MBH. 4,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1558) = [≈Vulg. 4.50.4](mbh/4.50.html#v4) = ≈krit. 04,45.4c
 [R. 1,57,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,11) [59,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,3) [2,32,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,41) [36,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,8)
 [BHĀG. P. 10,72,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,72,14) *yajvā tu vidhineṣṭavān*
 [AK. 2,7,8.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,8) *adhītya brāhmaṇo vedān yājayeta yajeta ca*
-[MBH. 4,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1558) = [≈Вульг. 4.50.4](mbh/4.50.html#v4) = ≈крит. 04,45.4c [12,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.234) = [≈Вульг. 12.8.33](mbh/12.8.html#v33) = ≈крит. 12,8.32c *yatrāyajata dharmo 'pi*
-[3,10098.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10098) = [≈Вульг. 3.112.11](mbh/3.112.html#v11) = ≈крит. 03,112.11a *yadarthaṃ yajase*
+[MBH. 4,1558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1558) = [≈Vulg. 4.50.4](mbh/4.50.html#v4) = ≈krit. 04,45.4c [12,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.234) = [≈Vulg. 12.8.33](mbh/12.8.html#v33) = ≈krit. 12,8.32c *yatrāyajata dharmo 'pi*
+[3,10098.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10098) = [≈Vulg. 3.112.11](mbh/3.112.html#v11) = ≈krit. 03,112.11a *yadarthaṃ yajase*
 [R. 1,15,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,15,14) [2,56,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,24) *tasmiṃśca yajamāne*
-[MBH. 1,4687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4687) = [≈Вульг. 1.121.9](mbh/1.121.html#v9) = ≈крит. 01,112.9a [3,2238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2238) = [≈Вульг. 3.57.47](mbh/3.57.html#v47) = ≈крит. 03,54.38a [8331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8331) = [≈Вульг. 3.88.6](mbh/3.88.html#v6) = ≈крит. 03,86.6a
+[MBH. 1,4687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4687) = [≈Vulg. 1.121.9](mbh/1.121.html#v9) = ≈krit. 01,112.9a [3,2238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2238) = [≈Vulg. 3.57.47](mbh/3.57.html#v47) = ≈krit. 03,54.38a [8331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8331) = [≈Vulg. 3.88.6](mbh/3.88.html#v6) = ≈krit. 03,86.6a
 [R. 1,61,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,6)
 [R. GORR. 1,15,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,15,3)
 [M. 11,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,24)

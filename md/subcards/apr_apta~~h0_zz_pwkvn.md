@@ -3,7 +3,7 @@
 `apr_apta~~h0_zz_pwkvn`
 
 
-**PWKVN к знач. 7)** *aprāpta* 7〉 hierher wohl *˚damaka* unerwachsene (Thiere) zähmend [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Вульг. 13.1.23](mbh/13.1.html#v23) = ≈крит. 13,1.16c. = *adānta* [NĪLAK.]
+**PWKVN к знач. 7)** *aprāpta* 7〉 hierher wohl *˚damaka* unerwachsene (Thiere) zähmend [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Vulg. 13.1.23](mbh/13.1.html#v23) = ≈krit. 13,1.16c. = *adānta* [NĪLAK.]
 
 - **RU:** *aprāpta* 7) сюда, вероятно, относится *˚damaka* — приручающий недоросших (животных) [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Вульг. 13.1.23](mbh/13.1.html#v23) = ≈крит. 13,1.16c. = *adānta* [NĪLAK.]
   <sub>mixed</sub>

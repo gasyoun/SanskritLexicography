@@ -4,7 +4,7 @@
 
 
 **main)** — *saṃpra*, partic. *˚śānta* aufgehört, gewichen, geschwunden: *˚rajastamas*
-[MBH. 1,8249.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8249) = [≈Вульг. 1.224.1](mbh/1.224.html#v1) = крит. —
+[MBH. 1,8249.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8249) = [≈Vulg. 1.224.1](mbh/1.224.html#v1) = krit. —
 
 - **RU:** — *saṃpra*, partic. *˚śānta* прекратившийся, отступивший, исчезнувший: *˚rajastamas*
 [MBH. 1,8249.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8249) = [≈Вульг. 1.224.1](mbh/1.224.html#v1) = крит. —

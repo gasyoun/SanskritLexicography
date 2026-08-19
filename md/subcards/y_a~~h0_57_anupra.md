@@ -6,7 +6,7 @@
 **main)** — *anupra* auf dem Wege nachfolgen
 [TBR. 3,7,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,1,1) den Weg einschlagen nach: *āghātamadyānuprayāmi śāmitramālabdhumivādhvare 'jaḥ*
 [MṚCCH. 161,12.] nach Jmd (acc.) aufbrechen, Jmd begleiten: *taṃ prayāntamanuprāyāt*
-[MBH. 5,2949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2949) = [≈Вульг. 5.83.30](mbh/5.83.html#v30) = ≈крит. 05,81.30c
+[MBH. 5,2949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2949) = [≈Vulg. 5.83.30](mbh/5.83.html#v30) = ≈krit. 05,81.30c
 [R. GORR. 2,33,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,33,7) *pṛṣṭhato 'nuprayātāni* (mit act. Bed.)
 [43,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,43,23) ([45,22] [SCHL.]). *anuprayāta* begleitet von
 [KUMĀRAS. 3,23.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,23) [52.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,52)

@@ -51,7 +51,7 @@
 
 **3)** — 3) einverstanden sein: *icchāmyahaṃ varamasmai pradātuṃ tanme viprāḥ saṃvidadhvaṃ* (man hätte *saṃviddhvam* oder *saṃvindadhvam* von 3. *vid* erwartet) *yathāvat*
 [MBH. 1,2114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2114) mit einem acc.: *te pṛthagdarśanāstasya saṃvidanti tathaikatām*
-[12,10053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10053) = [≈Вульг. 12.283.4](mbh/12.283.html#v4) = ≈крит. 12,274.4c *sarveṣāmeva naḥ sarvametatsaṃviditaṃ yathā* wir sind alle darin einverstanden
+[12,10053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10053) = [≈Vulg. 12.283.4](mbh/12.283.html#v4) = ≈krit. 12,274.4c *sarveṣāmeva naḥ sarvametatsaṃviditaṃ yathā* wir sind alle darin einverstanden
 [R. 5,82,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) *jayasenāyāstāvatsaṃviditaṃ gaccha* im Einverständniss mit
 [MĀLAV. 45,17.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?45,17) *saṃvidita = ūrīkṛta*
 u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_col/app1?3,2,58) (*vidita*
@@ -81,7 +81,7 @@ u. s. w. [AK. ed. COLEBR. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amar
   <sub>attested</sub>
 
 **caus.2)** — 2) kund thun, verkünden
-[MBH. 4,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2177) = [≈Вульг. 4.68.16](mbh/4.68.html#v16) = ≈крит. 04,63.16a
+[MBH. 4,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2177) = [≈Vulg. 4.68.16](mbh/4.68.html#v16) = ≈krit. 04,63.16a
 
 - **RU:** — 2) объявлять, возвещать
 [MBH. 4,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2177) = [≈Вульг. 4.68.16](mbh/4.68.html#v16) = ≈крит. 04,63.16a

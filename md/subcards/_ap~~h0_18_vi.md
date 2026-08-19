@@ -8,7 +8,7 @@
 [AV. 8,9,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.009.html#av08.009.20) *ubhe vyāpa nabhasī mahitvā*
 [12,3,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.05) [28.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.28) *ubhā samudrau rucyā vyāpitha*
 [13,2,30.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.30) [17,1,13.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av17.001.html#av17.001.13) [ŚAT. BR. 3,8,3,33.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,3,33) [10,4,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,4,2,4) *jaladharāḥ sarve vyāpnuvanti nabhastalam*
-[MBH. 3,12883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12883) = [≈Вульг. 3.188.79](mbh/3.188.html#v79) = ≈крит. 03,186.70a *sarvapathānvyāpnoti rathaḥ*
+[MBH. 3,12883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12883) = [≈Vulg. 3.188.79](mbh/3.188.html#v79) = ≈krit. 03,186.70a *sarvapathānvyāpnoti rathaḥ*
 [P. 5,2,7.](https://ashtadhyayi.com/sutraani/5/2/7) *tejomahimnā punarāvṛtātmā tad (siṃhāsanaṃ) vyāpa*
 [RAGH. 18,39.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,39)
 [BHAṬṬ. 7,56.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,56) [15,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,22)
@@ -71,10 +71,10 @@
   <sub>attested</sub>
 
 **PPP-2)** — 2) eingenommen, in Besitz genommen: *vṛtreṇa pṛthivī vyāptā purā kila*
-[MBH. 14,299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.299) = [≈Вульг. 14.11.6](mbh/14.11.html#v6) = ≈крит. 14,11.6a *vyāpte jyotiṣi vṛtreṇa rūpe 'tha viṣaye hṛte*
-[304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.304) = [≈Вульг. 14.11.11](mbh/14.11.html#v11) = ≈крит. 14,11.15a *vyāpte vāyau tu vṛtreṇa sparśe 'tha viṣaye hṛte*
-[306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.306) = [≈Вульг. 14.11.13](mbh/14.11.html#v13) = ≈крит. 14,11.15a Vgl. *ākāśe vṛtrabhūte*
-[308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.308) = [≈Вульг. 14.11.15](mbh/14.11.html#v15) = ≈крит. 14,11.15a *aparaṃ me priyā mṛtā . gṛhamanyena ca vyāptam*
+[MBH. 14,299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.299) = [≈Vulg. 14.11.6](mbh/14.11.html#v6) = ≈krit. 14,11.6a *vyāpte jyotiṣi vṛtreṇa rūpe 'tha viṣaye hṛte*
+[304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.304) = [≈Vulg. 14.11.11](mbh/14.11.html#v11) = ≈krit. 14,11.15a *vyāpte vāyau tu vṛtreṇa sparśe 'tha viṣaye hṛte*
+[306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.306) = [≈Vulg. 14.11.13](mbh/14.11.html#v13) = ≈krit. 14,11.15a Vgl. *ākāśe vṛtrabhūte*
+[308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.308) = [≈Vulg. 14.11.15](mbh/14.11.html#v15) = ≈krit. 14,11.15a *aparaṃ me priyā mṛtā . gṛhamanyena ca vyāptam*
 [PAÑCAT. 227,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?227,11) *kiṃ vyāptaṃ kimapohitam*
 [PRAB. 116,7.]
 Sch. : *kiṃ vyāptaṃ kimākrāntam kimapohitaṃ dūrīkṛtam* .

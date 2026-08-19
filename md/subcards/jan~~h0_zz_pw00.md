@@ -182,7 +182,7 @@
 - **RU:** — 3〉 *anujāta* тот, кто испытал второе рождение, т.е. был принят в учение.
   <sub>attested</sub>
 
-**pw_pre3_4)** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) = [≈Вульг. 13.1.48](mbh/13.1.html#v48) = ≈крит. 13,1.41a ist in Unordnung; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
+**pw_pre3_4)** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) = [≈Vulg. 13.1.48](mbh/13.1.html#v48) = ≈krit. 13,1.41a ist in Unordnung; vgl. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
 
 - **RU:** — 4〉 [MBH. 13,48,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,48,19) = [≈Вульг. 13.1.48](mbh/13.1.html#v48) = ≈крит. 13,1.41a находится в беспорядке; ср. [M. 10,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,31) [32](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32).
   <sub>attested</sub>
@@ -352,7 +352,7 @@
 - **RU:** — 4〉 рождаться вновь.
   <sub>attested</sub>
 
-**pw_pre16_5)** — 5〉 sein [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](mbh/9.62.html#v22) = ≈крит. 09,61.22c fehlerhaft für *upayātam*.
+**pw_pre16_5)** — 5〉 sein [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Vulg. 9.62.22](mbh/9.62.html#v22) = ≈krit. 09,61.22c fehlerhaft für *upayātam*.
 
 - **RU:** — 5〉 быть [Spr. 3056](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3056). — *upajātam* [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](mbh/9.62.html#v22) = ≈крит. 09,61.22c ошибочно вм. *upayātam*.
   <sub>attested</sub>

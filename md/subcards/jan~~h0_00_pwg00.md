@@ -85,9 +85,9 @@ vgl. u. II, 2 und unter — *vyati* .
 [3,61,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.061.html#rv03.061.04) [4,40,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.040.html#rv04.040.02) *daivyāni vratāni*
 [7,75,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.075.html#rv07.075.03) [ŚAT. BR. 2,2,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,4,3) [1,8,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,8) [9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,9) [14,9,4,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,27) *bhrātṛvyam*
 [TS. 2,2,10,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,10,5) — *devi putrān janiṣyasi*
-[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) = [≈Вульг. 1.67.134](mbh/1.67.html#v134) = крит. — *manasedaṃ jajāna*
+[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) = [≈Vulg. 1.67.134](mbh/1.67.html#v134) = krit. — *manasedaṃ jajāna*
 [BHĀG. P. 5,7,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,13) *jamadagniṃ tataḥ putraṃ jajñe sā*
-[MBH. 3,11067](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11067) = [≈Вульг. 3.145.5](mbh/3.145.html#v5) = ≈крит. 03,145.5a (S. 571). [1,2627.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2627) = [≈Вульг. 1.66.63](mbh/1.66.html#v63) = ≈крит. 01,60.61a [R. 3,20,22](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,22). *caidyoparicarājjajñe girikā sapta mānavān*
+[MBH. 3,11067](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11067) = [≈Vulg. 3.145.5](mbh/3.145.html#v5) = ≈krit. 03,145.5a (S. 571). [1,2627.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2627) = [≈Vulg. 1.66.63](mbh/1.66.html#v63) = ≈krit. 01,60.61a [R. 3,20,22](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,22). *caidyoparicarājjajñe girikā sapta mānavān*
 [HARIV. 1805.](https://sanskrit-lexicon-scans.github.io/hariv?1805) *(saḥ) pumāṃsaṃ jāyate putram*
 [CARAṆAVY.] in [Ind. St. 3,282,9.] *bhāsī bhāsānajāyata*
 [R. 3,20,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,17) *yaḥ pāṇḍum — ajījanat*
@@ -95,30 +95,30 @@ vgl. u. II, 2 und unter — *vyati* .
 [R. 1,16,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,8)
 [ŚĀK. 71,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,12) *janayitvā sutaṃ tasyām*
 [M. 3,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,17) [10,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,20) *yadanyagoṣu vṛṣabho vatsānāṃ janayecchatam*
-[9,50.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,50) [MBH. 1,2772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2772) = [≈Вульг. 1.67.136](mbh/1.67.html#v136) = ≈крит. 01,104.8c [BHĀG. P. 3,12,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,54) *ṛṣim* — *bhruvo 'ntare janayate — prabhuḥ*
+[9,50.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,50) [MBH. 1,2772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2772) = [≈Vulg. 1.67.136](mbh/1.67.html#v136) = ≈krit. 01,104.8c [BHĀG. P. 3,12,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,54) *ṛṣim* — *bhruvo 'ntare janayate — prabhuḥ*
 [HARIV. 11800.](https://sanskrit-lexicon-scans.github.io/hariv?11800) *janito brāhmaṇyāṃ vṛṣalena yaḥ*
 [AK. 2,10,4.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,10,4) *kanyā tu yaṃ putraṃ janayedrahaḥ*
 [M. 9,172.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,172)
-[MBH. 1,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2621) = [≈Вульг. 1.66.57](mbh/1.66.html#v57) = ≈крит. 01,60.55a [4294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4294) = [≈Вульг. 1.106.20](mbh/1.106.html#v20) = ≈крит. 01,100.20a [2,2598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2598) = [≈Вульг. 2.79.15](mbh/2.79.html#v15) = ≈крит. 02,70.15c
+[MBH. 1,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2621) = [≈Vulg. 1.66.57](mbh/1.66.html#v57) = ≈krit. 01,60.55a [4294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4294) = [≈Vulg. 1.106.20](mbh/1.106.html#v20) = ≈krit. 01,100.20a [2,2598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2598) = [≈Vulg. 2.79.15](mbh/2.79.html#v15) = ≈krit. 02,70.15c
 [R. 1,19,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,19,3) [39,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,8) [3,20,15. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,15)
 [RAGH. 8,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,28)
 [PAÑCAT. I,118.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,118) [218,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,22) *śūdrādāyogavaṃ vaiśyā janayāmāsa vai sutam*
 [YĀJÑ. 1,94.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,94) *putram — matto vai janayiṣyasi*
 [R. 1,46,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,6) *jāyā janayate putram*
-[MBH. 1,3104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3104) = [≈Вульг. 1.74.117](mbh/1.74.html#v117) = ≈крит. 01,69.35c *na hi tvaṃ janito mayā* (_f._)
+[MBH. 1,3104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3104) = [≈Vulg. 1.74.117](mbh/1.74.html#v117) = ≈krit. 01,69.35c *na hi tvaṃ janito mayā* (_f._)
 [HARIV. 9238.](https://sanskrit-lexicon-scans.github.io/hariv?9238) *sa tu śabdo divaṃ stabdhvā pratiśabdamajījanat*
 [ARJ. 6,13.] *ātmā hi janayatyeṣāṃ karmayogaṃ śarīriṇām*
 [M. 12,119.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,119) *mahāghoraṃ prajānāṃ janayanbhayam*
-[MBH. 2,2694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2694) = [≈Вульг. 2.81.23](mbh/2.81.html#v23) = ≈крит. 02,72.21e *pratyayam*
+[MBH. 2,2694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2694) = [≈Vulg. 2.81.23](mbh/2.81.html#v23) = ≈krit. 02,72.21e *pratyayam*
 [R. 1,1,64.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,64) *prītim*
 [2,95,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,16) *saṃkrośaṃ rāghavasya vivāsanam*
 [58,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,26) *janayati mama cedaṃ kutsitaṃ karma lajjām*
 [MṚCCH. 64,14.] [HIT. I,172.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,172) [RAGH. ed. Calc. 1,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,77) [ŚĀK. 29.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?29) [38,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?38,7) [VID. 150.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?150) *janaya radakhaṇḍanam*
 [GĪT. 10,3.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?10,3) *devadānavayakṣāṇāṃ bhayaṃ janayate mahat*
-[MBH. 3,12875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12875) = [≈Вульг. 3.188.71](mbh/3.188.html#v71) = ≈крит. 03,186.62c *kathāpratigraho vīra śraddhāṃ janayate śubhām*
-[8373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8373) = [≈Вульг. 3.90.2](mbh/3.90.html#v2) = крит. — *lobho janayate tṛṣām*
+[MBH. 3,12875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12875) = [≈Vulg. 3.188.71](mbh/3.188.html#v71) = ≈krit. 03,186.62c *kathāpratigraho vīra śraddhāṃ janayate śubhām*
+[8373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8373) = [≈Vulg. 3.90.2](mbh/3.90.html#v2) = krit. — *lobho janayate tṛṣām*
 [HIT. I,133.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,133) *reṇurjanitastena*
-[MBH. 4,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1236) = [≈Вульг. 4.38.5](mbh/4.38.html#v5) = ≈крит. 04,36.4e *prahārajanitā vyathā*
+[MBH. 4,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1236) = [≈Vulg. 4.38.5](mbh/4.38.html#v5) = ≈krit. 04,36.4e *prahārajanitā vyathā*
 [PAÑCAT. V,47.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?5,47) [MEGH. 71.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?71) [87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87) [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [14,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?14,19) *janitātyarthānurāgā yoṣit = vanitā*
 [AK. 3,4,14,76.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,76) Lob, Andacht, Lied u. s. w. erzeugen: *stomamagnaye jījanam*
 [ṚV. 7,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.015.html#rv07.015.04) *brahmāṇi*

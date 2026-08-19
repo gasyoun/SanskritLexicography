@@ -152,7 +152,7 @@
 - **RU:** — 3〉 достигать (по величине/качеству).
   <sub>attested</sub>
 
-**ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](mbh/14.86.html#v9) = ≈крит. 14,88.9a fehlerhaft für *mamāptaḥ*.
+**ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Vulg. 14.86.9](mbh/14.86.html#v9) = ≈krit. 14,88.9a fehlerhaft für *mamāptaḥ*.
 
 - **RU:** — Partic. *samāpta* завершенный, оконченный, доведенный до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](mbh/14.86.html#v9) = ≈крит. 14,88.9a ошибочно вм. *mamāptaḥ*.
   <sub>attested</sub>
@@ -207,7 +207,7 @@
   <sub>attested</sub>
 
 **ppp_T61_1)** — Partic. *parisamāpta*
-— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](mbh/1.1.html#v269) = ≈крит. 01,1.206a.
+— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Vulg. 1.1.269](mbh/1.1.html#v269) = ≈krit. 01,1.206a.
 
 - **RU:** — Partic. *parisamāpta*
 — 1〉 полностью завершенный [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](mbh/1.1.html#v269) = ≈крит. 01,1.206a.

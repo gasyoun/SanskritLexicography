@@ -60,7 +60,7 @@
 [ṚV. 7,62,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.062.html#rv07.062.05) *āśrāvayanta iva ślokamāyavaḥ*
 [1,139,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.03) *yajñaṃ deveṣvāśrāvaya*
 [ĀŚV. ŚR. 1,3,23.] *āśrāvayacca tatkarma*
-[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260) = [≈Вульг. 3.254.25](mbh/3.254.html#v25) = крит. —
+[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260) = [≈Vulg. 3.254.25](mbh/3.254.html#v25) = krit. —
 [BHĀG. P. 5,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,17) [10,70,40](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,70,40) (med.). [73,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,34)
 
 - **RU:** — ср. 1. *āśrava, āśrut, āśruti* . — caus.

@@ -15,7 +15,7 @@
   <sub>attested</sub>
 
 **2)** — 2) antworten
-[MBH. 13,1452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1452) = [≈Вульг. 13.19.72](mbh/13.19.html#v72) = ≈крит. 13,20.44c
+[MBH. 13,1452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1452) = [≈Vulg. 13.19.72](mbh/13.19.html#v72) = ≈krit. 13,20.44c
 [KATHĀS. 88,59.](https://sanskrit-lexicon-scans.github.io/kss/index.html?88,59)
 [RĀJA-TAR. 3,1.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,1)
 [DAŚAK. 63,5.] mit acc. der Person
@@ -39,7 +39,7 @@
 
 **3)** — 3) nachsprechen, wiederholen: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]
-[MBH. 5,4635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4635) = [≈Вульг. 5.138.27](mbh/5.138.html#v27) = ≈крит. 05,136.26a
+[MBH. 5,4635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4635) = [≈Vulg. 5.138.27](mbh/5.138.html#v27) = ≈krit. 05,136.26a
 
 - **RU:** — 3) повторять вслед, воспроизводить сказанное: *sa cāpi tatpratyavadadyathoktam*
 [KAṬHOP. 1,15.]

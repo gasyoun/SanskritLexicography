@@ -37,7 +37,7 @@
   <sub>attested</sub>
 
 **3 (cont.) — zur Sprache bringen)** — *upod* caus. zur Sprache bringen, einleiten
-[NĪLAK.] zu [MBH. 1,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6) = [≈Вульг. 1.1.52](mbh/1.1.html#v52) = ≈крит. 01,1.50a *hananīyaka* _adj._ von *hananīy*
+[NĪLAK.] zu [MBH. 1,6.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6) = [≈Vulg. 1.1.52](mbh/1.1.html#v52) = ≈krit. 01,1.50a *hananīyaka* _adj._ von *hananīy*
 [PAT. a. a. O. 7,118,a.]
 
 - **RU:** — *upod* caus. излагать, вводить (в речь)

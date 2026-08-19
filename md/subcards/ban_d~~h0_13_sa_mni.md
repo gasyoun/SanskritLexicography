@@ -6,7 +6,7 @@
 **1))** — *saṃni*, partic. *saṃnibaddha* geknüpft an, hängend an, abhängend von: *saṃsāre saṃnibaddhānāṃ nigaḍacchedakartarī*
 [BRAHMAVAIV. P.] in [Verz. d. Oxf. H. 20,b,8.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?20) *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*
 [R. 2,48,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,25) besetzt mit: *krīḍāśca* (Spielplätze) *nānādrumasaṃnibaddhāḥ*
-[MBH. 3,12318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12318) = [≈Вульг. 3.174.13](mbh/3.174.html#v13) = ≈крит. 03,171.13a
+[MBH. 3,12318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12318) = [≈Vulg. 3.174.13](mbh/3.174.html#v13) = ≈krit. 03,171.13a
 
 - **RU:** — *saṃni*, partic. *saṃnibaddha* прикрепленный к, висящий на, зависящий от: *saṃsāre saṃnibaddhānāṃ nigaḍacchedakartarī*
 [BRAHMAVAIV. P.] в [Verz. d. Oxf. H. 20,b,8.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?20) *bharate saṃnibaddhāḥ sma śaunike paśavo yathā*

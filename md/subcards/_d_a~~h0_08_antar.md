@@ -33,26 +33,26 @@
 [ŚĀṄKH. GṚHY. 4,1.] *ātmānaṃ nāntardadhīta*
 [PĀR. GṚHY. 2,8.] *anṛtenātmānamantardhāya* sich mit Unwahrheit verhüllend
 [CHĀND. UP. 6,16,1.] *(tam) kṣaṇena — antardadhe ghoraśaraughavṛṣṭyā*
-[MBH. 4,1683.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1683) = [≈Вульг. 4.54.24](mbh/4.54.html#v24) = крит. — *(rajaḥ) bhaumamantardadhe lokamāvṛtya savituḥ prabhām*
+[MBH. 4,1683.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1683) = [≈Vulg. 4.54.24](mbh/4.54.html#v24) = krit. — *(rajaḥ) bhaumamantardadhe lokamāvṛtya savituḥ prabhām*
 [R. 5,73,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,63) *antardhāya tato tmānam* sich verbergen, sich unsichtbar machen
-[MBH. 1,6713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6713) = [≈Вульг. 1.175.3](mbh/1.175.html#v3) = ≈крит. 01,165.3a *antaradhāt*
+[MBH. 1,6713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6713) = [≈Vulg. 1.175.3](mbh/1.175.html#v3) = ≈krit. 01,165.3a *antaradhāt*
 [BHĀG. P. 3,2,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,11) *ātmamāyāmantardhāya* verschwinden machen
 [6,9,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,9,35) *piturantardadhe kīrtiṃ śīlavṛttasamādhibhiḥ* so v. a. verdunkeln
-[MBH. 1,5519.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5519) = [≈Вульг. 1.138.34](mbh/1.138.html#v34) = ≈крит. 07,25.54a mit dem abl. vorenthalten, entziehen: *paśūneva rudrādantardadhāti*
+[MBH. 1,5519.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5519) = [≈Vulg. 1.138.34](mbh/1.138.html#v34) = ≈krit. 07,25.54a mit dem abl. vorenthalten, entziehen: *paśūneva rudrādantardadhāti*
 [ŚAT. BR. 13,3,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,3,4,3) pass. verdeckt —, verhüllt —, unsichtbar werden, verschwinden: *iṣubhirvyatisarpadbhirādityo 'ntaradhīyata*
-[MBH. 4,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1042) = [≈Вульг. 4.32.7](mbh/4.32.html#v7) = ≈крит. 04,31.5c *ātmanyantardadhe*
+[MBH. 4,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1042) = [≈Vulg. 4.32.7](mbh/4.32.html#v7) = ≈krit. 04,31.5c *ātmanyantardadhe*
 [M. 1,51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,51) *adbhutaṃ ca sarvamantaradhīyata*
 [SUND. 1,17.] *tadbhūtaṃ tatraivāntaradhīyata*
 [ARJ. 3,41.]
-[MBH. 1,3880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3880) = [≈Вульг. 1.97.17](mbh/1.97.html#v17) = ≈крит. 01,92.17a [3,2619.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2619) = [≈Вульг. 3.66.12](mbh/3.66.html#v12) = ≈крит. 03,63.11a [2632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2632) = [≈Вульг. 3.66.25](mbh/3.66.html#v25) = ≈крит. 03,63.23a [4.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4) = [≈Вульг. 3.1.4](mbh/3.1.html#v4) = ≈крит. 03,1.4c [213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.213) = [≈Вульг. 3.3.83](mbh/3.3.html#v83) = ≈крит. 03,4.7a [5,7385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7385) = [≈Вульг. 5.187.16](mbh/5.187.html#v16) = ≈крит. 05,188.15c
+[MBH. 1,3880.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3880) = [≈Vulg. 1.97.17](mbh/1.97.html#v17) = ≈krit. 01,92.17a [3,2619.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2619) = [≈Vulg. 3.66.12](mbh/3.66.html#v12) = ≈krit. 03,63.11a [2632.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2632) = [≈Vulg. 3.66.25](mbh/3.66.html#v25) = ≈krit. 03,63.23a [4.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4) = [≈Vulg. 3.1.4](mbh/3.1.html#v4) = ≈krit. 03,1.4c [213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.213) = [≈Vulg. 3.3.83](mbh/3.3.html#v83) = ≈krit. 03,4.7a [5,7385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7385) = [≈Vulg. 5.187.16](mbh/5.187.html#v16) = ≈krit. 05,188.15c
 [R. 1,2,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,41) [15,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,15,17) [2,41,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,41,9) *te cāntardadhire nāgāḥ*
 [MBH. 1,5060.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5060)
 [KATHĀS. 10,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,13)
 [BHĀG. P. 1,12,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,12,11) [3,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,15) *rātrirādityodaye 'ntardhīyate*
 [NIR. 12,11.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?12,11) *bhayamarjunasaṃjātaṃ kṣipramantaradhīyata*
-[MBH. 1,5442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5442) = [≈Вульг. 1.136.23](mbh/1.136.html#v23) = ≈крит. 01,126.23c *uṣṇamantardadhe sadyaḥ*
+[MBH. 1,5442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5442) = [≈Vulg. 1.136.23](mbh/1.136.html#v23) = ≈krit. 01,126.23c *uṣṇamantardadhe sadyaḥ*
 [DAŚ. 1,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,15) *imaṃ vaiśravaṇāvāsaṃ puṇyam — kathaṃ bhīma gamiṣyāmo gatirantaradhīyatām* (lies: *˚dhīyata*) so v. a. wurde unterbrochen
-[MBH. 3,11441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11441) = [≈Вульг. 3.155.5](mbh/3.155.html#v5) = ≈крит. 03,153.5a Mit dem abl. sich vor Jmd verbergen, sich Jmdes Augen entziehen
+[MBH. 3,11441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11441) = [≈Vulg. 3.155.5](mbh/3.155.html#v5) = ≈krit. 03,153.5a Mit dem abl. sich vor Jmd verbergen, sich Jmdes Augen entziehen
 [P. 1,4,28.](https://ashtadhyayi.com/sutraani/1/4/28) *upādhyāyādantardhatte*
 Sch. *antardhatsva raghuvyāghrāt*
 [BHAṬṬ. 5,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,32) [6,15.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,15) [8,71.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,71) auch mit dem gen: *teṣāmantardadhe*
@@ -94,7 +94,7 @@ Sch. *antardhatsva raghuvyāghrāt*
 
 **3)** — 3) in sich aufnehmen: *viśvaṃbhare devi māmantardhātumarhasi*
 [RAGH. 15,81.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,81) in sich enthalten: *śāstrametat . antardhāsyati tatsarvametadvaḥ kathitaṃ mayā*
-[MBH. 12,12747.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12747) = [≈Вульг. 12.335.55](mbh/12.335.html#v55) = ≈крит. 12,322.52a im Innern, im Herzen zur Erscheinung bringen, zeigen: *saipāntardadhatī tamovighaṭanādānandamātmaprabham*
+[MBH. 12,12747.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12747) = [≈Vulg. 12.335.55](mbh/12.335.html#v55) = ≈krit. 12,322.52a im Innern, im Herzen zur Erscheinung bringen, zeigen: *saipāntardadhatī tamovighaṭanādānandamātmaprabham*
 [PRAB. 80,6.] — *antarhita* partic.
 
 - **RU:** — 3) вбирать в себя: *viśvaṃbhare devi māmantardhātumarhasi*
@@ -127,11 +127,11 @@ Sch. *antardhatsva raghuvyāghrāt*
 * cāntarhitaḥ*
 [BHĀG. P. 1,3,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,36) *pādapāntarhita*
 [ŚĀK. 9,18](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?9,18), v. l. *mayā te 'ntarhitaṃ rūpam*
-[MBH. 3,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2621) = [≈Вульг. 3.66.14](mbh/3.66.html#v14) = ≈крит. 03,63.13a [4,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1684) = [≈Вульг. 4.54.25](mbh/4.54.html#v25) = крит. — *ya udārā antarhitāḥ*
+[MBH. 3,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2621) = [≈Vulg. 3.66.14](mbh/3.66.html#v14) = ≈krit. 03,63.13a [4,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1684) = [≈Vulg. 4.54.25](mbh/4.54.html#v25) = krit. — *ya udārā antarhitāḥ*
 [AV. 11,9,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.009.html#av11.009.16)
 [ŚAT. BR. 13,8,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,2,1) *siṃhau bhūtvā punarvyāghrau punaścāntarhitāvubhau*
 [SUND. 2,21.]
-[MBH. 1,119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.119) = [≈Вульг. 1.1.165](mbh/1.1.html#v165) = крит. — [4710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4710) = [≈Вульг. 1.121.32](mbh/1.121.html#v32) = ≈крит. 01,112.29a [3,2496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2496) = [≈Вульг. 3.64.96](mbh/3.64.html#v96) = ≈крит. 03,61.91a [2634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2634) = [≈Вульг. 3.67.1](mbh/3.67.html#v1) = ≈крит. 03,64.1a [2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2699) = [≈Вульг. 3.69.6](mbh/3.69.html#v6) = ≈крит. 03,66.5e [4,450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.450) = [≈Вульг. 4.15.20](mbh/4.15.html#v20) = ≈крит. 04,14.20a [5,7266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7266) = [≈Вульг. 5.183.19](mbh/5.183.html#v19) = ≈крит. 05,184.18a
+[MBH. 1,119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.119) = [≈Vulg. 1.1.165](mbh/1.1.html#v165) = krit. — [4710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4710) = [≈Vulg. 1.121.32](mbh/1.121.html#v32) = ≈krit. 01,112.29a [3,2496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2496) = [≈Vulg. 3.64.96](mbh/3.64.html#v96) = ≈krit. 03,61.91a [2634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2634) = [≈Vulg. 3.67.1](mbh/3.67.html#v1) = ≈krit. 03,64.1a [2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2699) = [≈Vulg. 3.69.6](mbh/3.69.html#v6) = ≈krit. 03,66.5e [4,450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.450) = [≈Vulg. 4.15.20](mbh/4.15.html#v20) = ≈krit. 04,14.20a [5,7266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7266) = [≈Vulg. 5.183.19](mbh/5.183.html#v19) = ≈krit. 05,184.18a
 [R. 3,15,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,17)
 [RAGH. 13,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,40)
 [BHĀG. P. 1,16,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,24) Mit einem abl. verborgen vor, Jmds Blicken entzogen

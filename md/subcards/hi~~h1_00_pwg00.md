@@ -108,23 +108,23 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [Spr. (II) 5656.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5656 "Spr. (II) 5656: yo hi kaściddvijaṃ hanyādgāṃ ca lokasya mātaram | śaraṇāgataṃ ca yo hanyāttulyaṃ teṣāṃ ca pātakam ||") -- [5678.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5678) *yaddhi yat*
 [370.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?370) *yadyaddhi*
 [M. 2,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,4) *yaṃ yaṃ hi*
-[MBH. 3,2202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2202) = [≈Вульг. 3.57.11](mbh/3.57.html#v11) = ≈крит. 03,54.11a *yathā hi*
+[MBH. 3,2202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2202) = [≈Vulg. 3.57.11](mbh/3.57.html#v11) = ≈krit. 03,54.11a *yathā hi*
 [SARVADARŚANAS. 10,5.]
 
 *yathā yathā hi*
 [M. 4,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,20) [10,128.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,128)
-[MBH. 3,2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2285) = [≈Вульг. 3.59.9](mbh/3.59.html#v9) = ≈крит. 03,56.9a *yadi hi*
+[MBH. 3,2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2285) = [≈Vulg. 3.59.9](mbh/3.59.html#v9) = ≈krit. 03,56.9a *yadi hi*
 [M. 3,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,61) nach oder mit Interrogativis: *ko hi*
-[MBH. 1,5957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5957) = [≈Вульг. 1.151.27](mbh/1.151.html#v27) = ≈крит. 01,138.19a [5978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5978) = [≈Вульг. 1.152.3](mbh/1.152.html#v3) = крит. —
+[MBH. 1,5957.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5957) = [≈Vulg. 1.151.27](mbh/1.151.html#v27) = ≈krit. 01,138.19a [5978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5978) = [≈Vulg. 1.152.3](mbh/1.152.html#v3) = krit. —
 [R. GORR. 1,1,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,2)
 [KATHĀS. 18,346.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,346) *kiṃ hi*
-[MBH. 12,8973.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8973) = [≈Вульг. 12.252.9](mbh/12.252.html#v9) = ≈крит. 12,244.8c *kimarthaṃ hi*
+[MBH. 12,8973.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8973) = [≈Vulg. 12.252.9](mbh/12.252.html#v9) = ≈krit. 12,244.8c *kimarthaṃ hi*
 [R. 1,73,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,15) *kathaṃ hi*
-[MBH. 3,2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) = [≈Вульг. 3.56.16](mbh/3.56.html#v16) = крит. — [2203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2203) = [≈Вульг. 3.57.12](mbh/3.57.html#v12) = ≈крит. 03,54.11e *kiṃ kupito hyasi*
+[MBH. 3,2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) = [≈Vulg. 3.56.16](mbh/3.56.html#v16) = krit. — [2203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2203) = [≈Vulg. 3.57.12](mbh/3.57.html#v12) = ≈krit. 03,54.11e *kiṃ kupito hyasi*
 [R. 2,64,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,29)
 [Spr. (II) 371.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?371 "Spr. (II) 371: anyapratāpamāsādya yo dṛḍhatvaṃ na gacchati | jātuṣābharaṇasyeva rūpeṇāpi hi tasya kim || — (131.) Wer bei der Berührung mit einem andern Machtglanz nicht fest wird, dem nützt ja auch das Aussehen eben so wenig wie dem Schmuck aus Lack.") [5610.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5610) nach *api*
 [M. 2,113.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,113) [3,14.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,14) [9,100.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,100) [139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,139) [336.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,336) [10,129.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,129)
-[MBH. 1,3346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3346) = [≈Вульг. 1.80.15](mbh/1.80.html#v15) = ≈крит. 01,75.13a
+[MBH. 1,3346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3346) = [≈Vulg. 1.80.15](mbh/1.80.html#v15) = ≈krit. 01,75.13a
 [R. 1,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,16) [24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,24)
 [Spr. (II) 3594.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3594 "Spr. (II) 3594: nāpṛṣṭaḥ kasyavidbrūyānna cānyāyena pṛcchataḥ | jānannapi hi medhāvī jaḍavalloka ācaret ||") [3990.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3990) [7395.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7395)
 [VARĀH. BṚH. S. 69,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,18) nach *eva*
@@ -134,13 +134,13 @@ u. s. w. [ṚV. 1,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01
 [Spr. (II) 3703.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3703 "Spr. (II) 3703: nijasaukhyaṃ nirundhāno yo dhanārjanamicchati | parārthaṃ bhāravāhīva kleśasyaiva hi bhājanam || — (1576.) Wer auf Kosten seines eigenen Wohlbehagens Reichthümer zu erwerben trachtet, ist ja wie jener, der für Andere Lasten trägt, nur ein Gefäss für Leiden.") [5276.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5276)
 [SARVADARŚANAS. 7,16.] nach *caiva*
 [M. 2,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,105) [3,116.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,116) [207.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,207) [212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,212) [232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,232) [4,25.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,25) [5,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,9) [7,120.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,120) [11,184.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,184)
-[MBH. 3,2179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2179) = [≈Вульг. 3.56.20](mbh/3.56.html#v20) = ≈крит. 03,53.10c
+[MBH. 3,2179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2179) = [≈Vulg. 3.56.20](mbh/3.56.html#v20) = ≈krit. 03,53.10c
 [SARVADARŚANAS. 75,8. 14] (im Verse). nach *iva*
 [Spr. (II) 706.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?706 "Spr. (II) 706: avyavasāyinamalasaṃ daivaparaṃ sāhasācca parihīṇam | pramadeva hi vṛddhapatiṃ necchatyupagūhituṃ lakṣmīḥ || — (260.) Wie ja ein junges Weib einen alten Gatten nicht umarmen mag, so die Glücksgöttin nicht den, der Nichts unternimmt, träge, verhängnissgläubig und jeder kühnen That abgeneigt ist.") [6896.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6896) nach einem verbum finitum am Ende eines Verses
 [M. 6,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,89)
-[MBH. 2,808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.808) = [≈Вульг. 2.21.11](mbh/2.21.html#v11) = ≈крит. 02,19.11a [3,1273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1273) = [≈Вульг. 3.33.10](mbh/3.33.html#v10) = ≈крит. 03,34.10a
+[MBH. 2,808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.808) = [≈Vulg. 2.21.11](mbh/2.21.html#v11) = ≈krit. 02,19.11a [3,1273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1273) = [≈Vulg. 3.33.10](mbh/3.33.html#v10) = ≈krit. 03,34.10a
 [SARVADARŚANAS. 99,5. 14.] in zwei auf einander folgenden Sätzen: *gatvā hi varayiṣye tvāṃ mano hi mama tāṃ gatam*
-[MBH. 3,2241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2241) = [≈Вульг. 3.58.2](mbh/3.58.html#v2) = ≈крит. 03,55.2a
+[MBH. 3,2241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2241) = [≈Vulg. 3.58.2](mbh/3.58.html#v2) = ≈krit. 03,55.2a
 [R. 1,64,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,19)
 
 - **RU:** 1) обосновывающее и подтверждающее: ведь, же, именно, а именно: *indavo vāmuśanti hi*

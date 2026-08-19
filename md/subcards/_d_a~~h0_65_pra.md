@@ -17,7 +17,7 @@
 * tadyajamāno 'gnau pradadhāti*
 [TS. 2,3,2,9.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,9) *āyuḥ prajānāṃ pradadhyātpramāyukāḥ syuḥ*
 [KĀṬH. 28,1.] — Das so häufig vorkommende partic. *prahita* abgesandt, abgeschossen, gerichtet auf ist ohne Zweifel auf *hi* zurückzuführen; desgl. *saṃprahita* . Vgl. *pradhāna* . — caus.: *(prabhagnā camūḥ) diśaścatasraḥ sahasā pradhāpitā*
-[MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](mbh/9.20.html#v4) = ≈крит. 09,19.4a; wohl nur fehlerhaft für *pradhāvitā* .
+[MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Vulg. 9.20.4](mbh/9.20.html#v4) = ≈krit. 09,19.4a; wohl nur fehlerhaft für *pradhāvitā* .
 
 - **RU:** — 2) отдавать, жертвовать: *ātmānameva *
 

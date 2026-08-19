@@ -4,13 +4,13 @@
 
 
 **1)** — *pratyud* hinaus — und Jmd (acc.) entgegen gehen (zur Bewillkommnung oder in feindlicher Absicht): *tamāgatamabhiprekṣya pratyudgamya — . praṇipatyābhivādyainaṃ tasthuḥ prāñjalayastadā ..*
-[MBH. 1,6422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6422) = [≈Вульг. 1.167.10](mbh/1.167.html#v10) = ≈крит. 01,155.10a [16,121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.121) = [≈Вульг. 16.4.17](mbh/16.4.html#v17) = ≈крит. 16,5.15e
+[MBH. 1,6422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6422) = [≈Vulg. 1.167.10](mbh/1.167.html#v10) = ≈krit. 01,155.10a [16,121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.121) = [≈Vulg. 16.4.17](mbh/16.4.html#v17) = ≈krit. 16,5.15e
 [M. 2,196.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,196)
 [R. 1,9,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,53) [67](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,67) *pratyujjagāma taṃ bhrātā*
 [2,96,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,33) [4,33,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,33,45) [RAGH. 5,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,2) [KUMĀRAS. 7,52.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,52) [BHĀG. P. 1,11,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,19) [13,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,4) [GĪT. 11,10.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,10) *pratyudgamya rathaṃ ripoḥ . vidhvaṃsayitumicchāmi*
 [R. 6,90,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,90,6) med.: *pratyudgacchata tām*
-[MBH. 3,1834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1834) = [≈Вульг. 3.46.17](mbh/3.46.html#v17) = крит. — *pratyudgata* mit act. Bed.: *pratyudgatāḥ* (in feindlicher Absicht) *kekayān*
-[MBH. 6,3503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3503) = [≈Вульг. 6.79.54](mbh/6.79.html#v54) = ≈крит. 06,75.51a mit pass. Bed.: *pauraiḥ pratyudgato dūram*
+[MBH. 3,1834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1834) = [≈Vulg. 3.46.17](mbh/3.46.html#v17) = krit. — *pratyudgata* mit act. Bed.: *pratyudgatāḥ* (in feindlicher Absicht) *kekayān*
+[MBH. 6,3503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3503) = [≈Vulg. 6.79.54](mbh/6.79.html#v54) = ≈krit. 06,75.51a mit pass. Bed.: *pauraiḥ pratyudgato dūram*
 [R. 1,77,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,77,8)
 [RAGH. 2,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,20) [12,62.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,62)
 

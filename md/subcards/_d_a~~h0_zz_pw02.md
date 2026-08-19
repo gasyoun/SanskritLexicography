@@ -298,7 +298,7 @@
 - **RU:** — 9〉 устремлять все свои мысли —, всё свое внимание на что-либо, обдумывать что-либо (Acc.). Только *praṇīdhāya* и *praṇihita* всецело погруженный во что-либо (Loc.), целиком занятый одним делом, поглощенный одной мыслью (о людях и об уме). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
   <sub>attested</sub>
 
-**mit_T110_10)** — 10〉 herausbringen, dahinterkommen, — dass ist; mit doppeltem Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](mbh/7.1.html#v37) = ≈крит. 07,1.35a. *praṇihita* herausgebracht, anʼs Tageslicht gebracht.
+**mit_T110_10)** — 10〉 herausbringen, dahinterkommen, — dass ist; mit doppeltem Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Vulg. 7.1.37](mbh/7.1.html#v37) = ≈krit. 07,1.35a. *praṇihita* herausgebracht, anʼs Tageslicht gebracht.
 
 - **RU:** — 10〉 выяснять, разузнавать, — что именно; с двойным Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](mbh/7.1.html#v37) = ≈крит. 07,1.35a. *praṇihita* выясненный, выведенный на свет.
   <sub>attested</sub>
@@ -368,7 +368,7 @@
 - **RU:** — 6〉 *vinihita, ˚tātman* _Adj._ расходящийся с кем-либо, — не согласующийся [ĀPAST. 11,8,27].
   <sub>attested</sub>
 
-**mit_T158_7)** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](mbh/6.83.html#v40) = ≈крит. 06,79.39a fehlerhaft für *vinihata*.
+**mit_T158_7)** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Vulg. 6.83.40](mbh/6.83.html#v40) = ≈krit. 06,79.39a fehlerhaft für *vinihata*.
 
 - **RU:** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](mbh/6.83.html#v40) = ≈крит. 06,79.39a ошибочно вм. *vinihata*.
   <sub>attested</sub>

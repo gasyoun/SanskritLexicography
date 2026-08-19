@@ -19,7 +19,7 @@
 [11,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,44) *manaḥpūtam*
 [6,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,46) *śreyaḥ kiṃcit*
 [2,223.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,223) *yatkṣemaṃ tatsamācara*
-[MBH. 2,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.509) = [≈Вульг. 2.12.30](mbh/2.12.html#v30) = ≈крит. 02,11.69c [3,10259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10259) = [≈Вульг. 3.116.29](mbh/3.116.html#v29) = ≈крит. 03,116.28c
+[MBH. 2,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.509) = [≈Vulg. 2.12.30](mbh/2.12.html#v30) = ≈krit. 02,11.69c [3,10259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10259) = [≈Vulg. 3.116.29](mbh/3.116.html#v29) = ≈krit. 03,116.28c
 [R. 3,56,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,16)
 [BHARTṚ. 1,21.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,21)
 [PAÑCAT. 170,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?170,6) *kathamanyatsamācare*
@@ -27,14 +27,14 @@
 [R. 3,56,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,28)
 [BHAG. 3,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,9) [19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,19)
 [PAÑCAT. II,116.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,116) *kaḥ — tatkāryaṃ vigraheṇa samācaret*
-[MBH. 1,7514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7514) = [≈Вульг. 1.203.7](mbh/1.203.html#v7) = ≈крит. 01,195.7c *tvayaitaddhi samācīrṇaṃ gautamasyāśrame tadā*
-[MBH. 14,1733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1733) = [≈Вульг. 14.58.43](mbh/14.58.html#v43) = ≈крит. 14,57.40c *sauhṛdaṃ sakhyurhatasyāpi samācaran*
+[MBH. 1,7514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7514) = [≈Vulg. 1.203.7](mbh/1.203.html#v7) = ≈krit. 01,195.7c *tvayaitaddhi samācīrṇaṃ gautamasyāśrame tadā*
+[MBH. 14,1733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1733) = [≈Vulg. 14.58.43](mbh/14.58.html#v43) = ≈krit. 14,57.40c *sauhṛdaṃ sakhyurhatasyāpi samācaran*
 [BHĀG. P. 8,11,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,13)
 [VET. 12,17.] *pūjāmasmai samācara*
 [PAÑCAT. III,158.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,158) *priyāṇi — nṛpatau samācarata vīryavān*
-[MBH. 15,46.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.46) [4,482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.482) = [≈Вульг. 4.16.31](mbh/4.16.html#v31) = ≈крит. 04,15.24c
+[MBH. 15,46.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.46) [4,482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.482) = [≈Vulg. 4.16.31](mbh/4.16.html#v31) = ≈krit. 04,15.24c
 [HIT. I,73.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,73) *tvayā pāpāni ghorāṇi samācīrṇāni pāṇḍuṣu*
-[MBH. 8,1281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1281) = [≈Вульг. 8.30.44](mbh/8.30.html#v44) = ≈крит. 09,3.6c
+[MBH. 8,1281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1281) = [≈Vulg. 8.30.44](mbh/8.30.html#v44) = ≈krit. 09,3.6c
 
 *jñātikāryāṇi*
 [M. 11,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,187) *pitṛmedham*
@@ -50,7 +50,7 @@
 [116,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?116,18) *mantram*
 [I,61.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,61) *maunam*
 [HIT. II,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,22) *yatnam*
-[MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) = [≈Вульг. 3.22.21](mbh/3.22.html#v21) = ≈крит. 03,23.20c *āhāramekaparṇena ekaparṇā samācarat* nährte sich von einem einzigen Blatte
+[MBH. 3,869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.869) = [≈Vulg. 3.22.21](mbh/3.22.html#v21) = ≈krit. 03,23.20c *āhāramekaparṇena ekaparṇā samācarat* nährte sich von einem einzigen Blatte
 [HARIV. 945.](https://sanskrit-lexicon-scans.github.io/hariv?945) *rājendratvam*
 [5992. fg.](https://sanskrit-lexicon-scans.github.io/hariv?5992) *kaṣṭāni tapāṃsi mahānti dānāni dāruṇāni yuddhāni bhīmāni samudralaṅghanādīni*
 [DAŚAK.] в [BENF. Chr. 183,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *dūrādāvasathānmūtraṃ dūrātpādāvasecanam . ucchiṣṭānnaṃ niṣekaṃ ca dūrādeva samācaret ..* fern hinthun

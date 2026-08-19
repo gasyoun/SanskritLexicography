@@ -31,7 +31,7 @@
 [1. 8.] med. [ŚĀṄKH. GṚHY. 2,12.] — *upavaseddinam*
 [M. 2,220.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,220) [5,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,20) [11,157.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,157) [213.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,213) [259.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,259)
 [YĀJÑ. 3,292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,292)
-[MBH. 15,126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.126) = [≈Вульг. 15.3.66](mbh/15.3.html#v66) = ≈крит. 15,6.26a
+[MBH. 15,126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.126) = [≈Vulg. 15.3.66](mbh/15.3.html#v66) = ≈krit. 15,6.26a
 [R. GORR. 1,45,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,45,1)
 [VARĀH. BṚH. S. 105,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,8)
 [BHĀG. P. 7,12,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,5) [WEBER, KṚṢṆAJ. 226.] *trirātramupoṣya*
@@ -42,7 +42,7 @@
 [KATHĀS. 93,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?93,82)
 [BHĀG. P. 4,8,71.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,71) [8,9,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,14) *upoṣita* gefastet habend, nüchtern
 [YĀJÑ. 2,97.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,97)
-[MBH. 13,3259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3259) = [≈Вульг. 13.64.8](mbh/13.64.html#v8) = ≈крит. 13,63.8c [3264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3264) = [≈Вульг. 13.64.13](mbh/13.64.html#v13) = ≈крит. 13,63.13a [3267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3267) = [≈Вульг. 13.64.16](mbh/13.64.html#v16) = ≈крит. 13,63.16a [3276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3276) = [≈Вульг. 13.64.25](mbh/13.64.html#v25) = ≈крит. 13,63.25a
+[MBH. 13,3259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3259) = [≈Vulg. 13.64.8](mbh/13.64.html#v8) = ≈krit. 13,63.8c [3264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3264) = [≈Vulg. 13.64.13](mbh/13.64.html#v13) = ≈krit. 13,63.13a [3267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3267) = [≈Vulg. 13.64.16](mbh/13.64.html#v16) = ≈krit. 13,63.16a [3276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3276) = [≈Vulg. 13.64.25](mbh/13.64.html#v25) = ≈krit. 13,63.25a
 [HARIV. 7602.](https://sanskrit-lexicon-scans.github.io/hariv?7602)
 [RAGH. 16,39.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,39)
 [KATHĀS. 33,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,156) [42,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,173)
@@ -112,7 +112,7 @@ Schol. *vikuṇṭham*
   <sub>attested</sub>
 
 **4)** — 4) sich zu Jmd (acc.) in die Lehre begeben
-[MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177) = [≈Вульг. 5.55.34](mbh/5.55.html#v34) = ≈крит. 05,54.33a
+[MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177) = [≈Vulg. 5.55.34](mbh/5.55.html#v34) = ≈krit. 05,54.33a
 
 - **RU:** 4) отправляться к кому-л. (acc.) в обучение
 [MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177) = [≈Вульг. 5.55.34](mbh/5.55.html#v34) = ≈крит. 05,54.33a
@@ -120,7 +120,7 @@ Schol. *vikuṇṭham*
 
 **5)** — 5) antreten, sich widmen, obliegen: *tapaḥśraddhe ye hyupavasanti*
 [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat*
-[MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) = [≈Вульг. 13.4.6](mbh/13.4.html#v6) = ≈крит. 13,4.6a nach der Lesart der [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā*
+[MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) = [≈Vulg. 13.4.6](mbh/13.4.html#v6) = ≈krit. 13,4.6a nach der Lesart der [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā*
 [MĀRK. P. 126,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,17) [19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,19)
 
 - **RU:** 5) приступать, посвящать себя, исполнять: *tapaḥśraddhe ye hyupavasanti* [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat* [MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) = [≈Вульг. 13.4.6](mbh/13.4.html#v6) = ≈крит. 13,4.6a по чтению [Бомбейская ред.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā* [MĀRK. P. 126,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,17) [19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,19)
@@ -147,7 +147,7 @@ Schol. *vikuṇṭham*
 **causative-2)** — 2) fasten lassen
 [PĀR. GṚHY. 1,14.]
 [R. 2,5,4](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4) ([4,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,4,4) [GORR.]). *atithiṃ nopavāsayet*
-[MBH. 12,7046](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7046) = [≈Вульг. 12.195.8](mbh/12.195.html#v8) = ≈крит. 12,188.8c = [13,7576.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7576) = [≈Вульг. 13.162.45](mbh/13.162.html#v45) = ≈крит. 13,148.19a
+[MBH. 12,7046](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7046) = [≈Vulg. 12.195.8](mbh/12.195.html#v8) = ≈krit. 12,188.8c = [13,7576.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7576) = [≈Vulg. 13.162.45](mbh/13.162.html#v45) = ≈krit. 13,148.19a
 
 - **RU:** 2) заставлять поститься
 [PĀR. GṚHY. 1,14.]

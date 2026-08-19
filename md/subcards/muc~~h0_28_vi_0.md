@@ -23,38 +23,38 @@
 [ŚĀṄKH. ŚR. 1,15,9.] *chadis*
 [LĀṬY. 1,2,22.] *ito vimucyamānaḥ* sich befreiend von
 [ŚAT. BR. 14,6,11,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,1) [7,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,11) — *vimucya veṇīm*
-[MBH. 4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) = [≈Вульг. 4.11.4](mbh/4.11.html#v4) = ≈крит. 04,10.4c *vimuktakeśa*
+[MBH. 4,301.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.301) = [≈Vulg. 4.11.4](mbh/4.11.html#v4) = ≈krit. 04,10.4c *vimuktakeśa*
 [BHĀG. P. 1,15,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,10) *vimucya vāhān* abspannend
-[MBH. 3,15609.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15609) [10,2.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.2) = [≈Вульг. 10.1.2](mbh/10.1.html#v2) = ≈крит. 10,1.2a *rathādvimucya śrāntānhayān*
+[MBH. 3,15609.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15609) [10,2.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.2) = [≈Vulg. 10.1.2](mbh/10.1.html#v2) = ≈krit. 10,1.2a *rathādvimucya śrāntānhayān*
 [R. 2,45,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,33) *tena hi vimucyantāmabhīṣavaḥ* schiessen lassen
 [ŚĀK. 5,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,15) *vimuktapragrahā vājinaḥ*
 [BHAṬṬ. 7,50.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,50) *vimuktakaṇṭham* (vgl. *muktakaṇṭha)* _adv._ mit gelöster Kehle, aus vollem Halse (schreien)
 [Spr. 1335.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1335) [1098.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1098) *na vimokṣyāmi daṃśanam* ablegen
-[MBH. 1,564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.564) = [≈Вульг. 1.2.335](mbh/1.2.html#v335) = крит. — [8,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2848) = [≈Вульг. 8.57.5](mbh/8.57.html#v5) = крит. — *kavacam*
-[7,8431](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8431) = [≈Вульг. 7.185.13](mbh/7.185.html#v13) = ≈крит. 07,160.12c (med.). *vāsāṃsi gurūṇi*
+[MBH. 1,564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.564) = [≈Vulg. 1.2.335](mbh/1.2.html#v335) = krit. — [8,2848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2848) = [≈Vulg. 8.57.5](mbh/8.57.html#v5) = krit. — *kavacam*
+[7,8431](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8431) = [≈Vulg. 7.185.13](mbh/7.185.html#v13) = ≈krit. 07,160.12c (med.). *vāsāṃsi gurūṇi*
 [ṚT. 1,7.] *ābharaṇāni*
-[MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) = [≈Вульг. 1.102.18](mbh/1.102.html#v18) = ≈крит. 01,96.12e
+[MBH. 1,4095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4095) = [≈Vulg. 1.102.18](mbh/1.102.html#v18) = ≈krit. 01,96.12e
 [R. 5,68,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,30) *tato vimuktvā saśaraṃ śarāsanaṃ mahendradattaṃ kavacaṃ ca kāñcanam*
 [6,95,65.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,95,65) *vimucya nāvam*
-[MBH. 3,10077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10077) = [≈Вульг. 3.111.20](mbh/3.111.html#v20) = ≈крит. 03,111.19a *vimukte pravahaṇe* frei — flott gemacht
+[MBH. 3,10077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10077) = [≈Vulg. 3.111.20](mbh/3.111.html#v20) = ≈krit. 03,111.19a *vimukte pravahaṇe* frei — flott gemacht
 [VID. 231.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?231) *maharṣīṃśca vimucya tān* befreien
 [R. 3,39,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,39,34) *abadhyaḥ badhyatāṃ ko 'dya badhyaḥ ko vā vimucyatām* frei geben, laufen lassen
-[R. GORR. 2,9,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,11) [MBH. 3,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2623) = [≈Вульг. 3.66.16](mbh/3.66.html#v16) = ≈крит. 03,63.15a [2851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2851) [KUMĀRAS. 4,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,31) [RAGH. ed. Calc. 2,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?2,45) [PAÑCAT. 41,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,22) *garbhaḥ sa prasavamāno vimucyate* löst sich ab, geht ab
+[R. GORR. 2,9,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,11) [MBH. 3,2623.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2623) = [≈Vulg. 3.66.16](mbh/3.66.html#v16) = ≈krit. 03,63.15a [2851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2851) [KUMĀRAS. 4,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,31) [RAGH. ed. Calc. 2,45.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?2,45) [PAÑCAT. 41,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,22) *garbhaḥ sa prasavamāno vimucyate* löst sich ab, geht ab
 [SUŚR. 1,317,5.] *stenaḥ steyādvimucyate* befreit sich von dem Verbrechen des Diebstahls
 [M. 8,316.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,316) *śūdro dāsyādvimucyate*
 [414.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,414) *kṛcchrādgrāhāt*
 [Spr. 4298.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4298) *bhayāt*
-[MBH. 2,882](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.882) = [≈Вульг. 2.22.29](mbh/2.22.html#v29) = ≈крит. 02,20.27a (*vimucyeyam*) .
-[13,363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.363) = [≈Вульг. 13.7.20](mbh/13.7.html#v20) = ≈крит. 13,7.20a [KATHĀS. 1,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,60) [69,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,107) *na niṣkrayavisargābhyāṃ bharturbhāryā vimucyate* sich der Gewalt des Mannes entziehen
+[MBH. 2,882](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.882) = [≈Vulg. 2.22.29](mbh/2.22.html#v29) = ≈krit. 02,20.27a (*vimucyeyam*) .
+[13,363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.363) = [≈Vulg. 13.7.20](mbh/13.7.html#v20) = ≈krit. 13,7.20a [KATHĀS. 1,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,60) [69,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,107) *na niṣkrayavisargābhyāṃ bharturbhāryā vimucyate* sich der Gewalt des Mannes entziehen
 [M. 9,46.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,46) *tasya dehādvimuktasya*
 [6,40.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,40) *sarvapāpebhyaḥ*
-[MBH. 3,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2493) = [≈Вульг. 3.64.93](mbh/3.64.html#v93) = ≈крит. 03,61.88c *abhrāt (sūryamaṇḍala)*
-[4,312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.312) = [≈Вульг. 4.12.1](mbh/4.12.html#v1) = ≈крит. 04,11.1c *vanāditaḥ* entkommen
-[148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) = [≈Вульг. 4.5.7](mbh/4.5.html#v7) = ≈крит. 04,5.7c *narakāt*
+[MBH. 3,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2493) = [≈Vulg. 3.64.93](mbh/3.64.html#v93) = ≈krit. 03,61.88c *abhrāt (sūryamaṇḍala)*
+[4,312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.312) = [≈Vulg. 4.12.1](mbh/4.12.html#v1) = ≈krit. 04,11.1c *vanāditaḥ* entkommen
+[148.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.148) = [≈Vulg. 4.5.7](mbh/4.5.html#v7) = ≈krit. 04,5.7c *narakāt*
 [MĀRK. P. 15,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,6) *dhanatyāgāt* der nicht in den Fall kommt Reichthümer zu verschenken
-[MBH. 12,6573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6573) = [≈Вульг. 12.179.3](mbh/12.179.html#v3) = ≈крит. 12,172.3a st. des abl. auch der instr.: *mahato 'pyenaso māsāttvacevāhirvimucyate*
+[MBH. 12,6573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6573) = [≈Vulg. 12.179.3](mbh/12.179.html#v3) = ≈krit. 12,172.3a st. des abl. auch der instr.: *mahato 'pyenaso māsāttvacevāhirvimucyate*
 [M. 2,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,79) *pāśairvimuktaḥ*
-[MBH. 1,6750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6750) = [≈Вульг. 1.175.40](mbh/1.175.html#v40) = ≈крит. 01,165.37e [3,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2618) = [≈Вульг. 3.66.11](mbh/3.66.html#v11) = ≈крит. 03,63.10a [13,3728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3728)
+[MBH. 1,6750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6750) = [≈Vulg. 1.175.40](mbh/1.175.html#v40) = ≈krit. 01,165.37e [3,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2618) = [≈Vulg. 3.66.11](mbh/3.66.html#v11) = ≈krit. 03,63.10a [13,3728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3728)
 [R. 4,29,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,1)
 [KĀM. NĪTIS. 15,1.] [VARĀH. BṚH. S. 8,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,30) *prāṇaiḥ*
 [Spr. 944.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?944) [2532.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2532)
@@ -64,9 +64,9 @@
 [VIKR. 129.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?129)
 [Spr. 4711.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4711) *vimuktāṃ maṇibhirjātyairnavāṃ muktāvalīmiva*
 [R. GORR. 2,125,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,7) *na me jīvanvimokṣyase* du wirst mir nicht lebendig entkommen
-[MBH. 3,1580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1580) = [≈Вульг. 3.39.30](mbh/3.39.html#v30) = ≈крит. 03,40.23a [15169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15169) = [≈Вульг. 3.252.15](mbh/3.252.html#v15) = ≈крит. 03,240.15a *viṣavimuktātman* befreit vom Gift
-[2839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2839) = [≈Вульг. 3.72.32](mbh/3.72.html#v32) = ≈крит. 03,70.29c [RAGH. 2,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,59) [13,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,37) [Spr. 3540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3540) [VARĀH. BṚH. S. 38,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,8) [ŚAṂK.] zu [BṚH. ĀR. UP. S. 301.] [BHĀG. P. 9,11,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,20) Ohne Ergänzung: *devakanyā mṛgī bhūtvā muniṃ sūya vimokṣyase* (sc. *mṛgībhāvāt)*
-[MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) = [≈Вульг. 3.110.36](mbh/3.110.html#v36) = ≈крит. 03,110.15a sc. *pāpāt*
+[MBH. 3,1580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1580) = [≈Vulg. 3.39.30](mbh/3.39.html#v30) = ≈krit. 03,40.23a [15169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15169) = [≈Vulg. 3.252.15](mbh/3.252.html#v15) = ≈krit. 03,240.15a *viṣavimuktātman* befreit vom Gift
+[2839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2839) = [≈Vulg. 3.72.32](mbh/3.72.html#v32) = ≈krit. 03,70.29c [RAGH. 2,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,59) [13,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,37) [Spr. 3540.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3540) [VARĀH. BṚH. S. 38,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?38,8) [ŚAṂK.] zu [BṚH. ĀR. UP. S. 301.] [BHĀG. P. 9,11,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,20) Ohne Ergänzung: *devakanyā mṛgī bhūtvā muniṃ sūya vimokṣyase* (sc. *mṛgībhāvāt)*
+[MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) = [≈Vulg. 3.110.36](mbh/3.110.html#v36) = ≈krit. 03,110.15a sc. *pāpāt*
 [M. 11,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,80) [82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,82)
 [Spr. 3679.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3679) *kalikaluṣāṇi yāni lāke mayi nipatantu vimucyatāṃ tu lokaḥ*
 [KUMĀRILA] bei [MÜLLER, SL. 80.] *yāvanna vimokṣye*
@@ -76,18 +76,18 @@
 [VEDĀNTAS. (Allah.) No. 150.] *yateriva vimuktasya*
 [R. GORR. 2,16,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,16,45) *vimuktairmantribhiḥ* frei von allen Leidenschaften
 [4,32,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,32,18) *vimukta* so v. a. *tvacā vi˚* sich vor Kurzem gehäutet habend (von Schlangen)
-[MBH. 8,740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.740) = [≈Вульг. 8.18.14](mbh/8.18.html#v14) = ≈крит. 08,13.14c verlassen (einen Ort): *mṛgendrāśca — vyamuñcanta guhā bhayāt*
+[MBH. 8,740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.740) = [≈Vulg. 8.18.14](mbh/8.18.html#v14) = ≈krit. 08,13.14c verlassen (einen Ort): *mṛgendrāśca — vyamuñcanta guhā bhayāt*
 [MBH. 3,12381.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12381)
 [HARIV. 1578](https://sanskrit-lexicon-scans.github.io/hariv?1578) *(nivatsyāmi* st. *vimokṣyāmi* die neuere Ausg.).
 [RAGH. 16,46.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,46)
 [KATHĀS. 54,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,55)
 [UTTARARĀMAC. 51,19.] Jmd oder Etwas fahren lassen, im Stich lassen, aufgeben: *vimuñcati na puṇyātmā śaraṇyaḥ śaraṇāgatān*
-[MBH. 13,7527.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7527) = [≈Вульг. 13.161.26](mbh/13.161.html#v26) = ≈крит. 07,173.72a
+[MBH. 13,7527.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7527) = [≈Vulg. 13.161.26](mbh/13.161.html#v26) = ≈krit. 07,173.72a
 [Spr. 4665.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4665) *(tam) vimuñcati śrīḥ*
 [VṚDDHA-CĀṆ. 15,4.] [SOM. NALA 81.] [UTTARARĀMAC. 2,13.] *tvadvimuktā*
 [MĀRK. P. 61,67.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,67) *prāṇānvimokṣyati* den Geist aufgeben
-[MBH. 3,315.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.315) = [≈Вульг. 3.8.5](mbh/3.8.html#v5) = ≈крит. 03,9.5a *tanum*
-[16,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.118) = [≈Вульг. 16.4.14](mbh/16.4.html#v14) = ≈крит. 16,5.13a [KATHĀS. 7,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,112) *saṃjñām* die Besinnung verlieren
+[MBH. 3,315.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.315) = [≈Vulg. 3.8.5](mbh/3.8.html#v5) = ≈krit. 03,9.5a *tanum*
+[16,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.118) = [≈Vulg. 16.4.14](mbh/16.4.html#v14) = ≈krit. 16,5.13a [KATHĀS. 7,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,112) *saṃjñām* die Besinnung verlieren
 [HARIV. 16279.](https://sanskrit-lexicon-scans.github.io/hariv?16279) *anyā vāco vimuñcatha* aufgeben, vermeiden
 [MUṆḌ. UP. 2,2,5.] *yathā svapnaṃ bhayaṃ śokaṃ viṣādaṃ madameva ca . na vimuñcati durmedhāḥ*
 [BHAG. 18,35.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,35) [53.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,53)
@@ -104,7 +104,7 @@
 [BHĀG. P. 3,1,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,37) *doṣam*
 [GĪT. 2,10.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?2,10) Etwas fahren lassen so v. a. aus sich entlassen, von sich geben; werfen, schleudern, abschiessen: *atraiva garbhaṃ vimuñca*
 [PAÑCAT. 75,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?75,9) *vimokṣyanti viṣaṃ kruddhāḥ kauraveyeṣu*
-[MBH. 3,313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.313) = [≈Вульг. 3.8.3](mbh/3.8.html#v3) = ≈крит. 03,9.3a *na te krodhaṃ vimuñcanti*
+[MBH. 3,313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.313) = [≈Vulg. 3.8.3](mbh/3.8.html#v3) = ≈krit. 03,9.3a *na te krodhaṃ vimuñcanti*
 [R. 3,42,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,11) *ghoraṃ kopaṃ vimokṣyāmi sasainye tvayi*
 [6,1,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,1,35) einen verschlungenen (*grastam*) d. i. verfinsterten Himmelskörper von sich geben d. i. ihn von der Verfinsterung befreien
 [SŪRYAS. 6,18. 23.] *mūrtim* eine Gestalt annehmen
@@ -112,13 +112,13 @@
 [R. 2,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,59,5)
 [RAGH. 8,25.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,25) *śakṛnmūtram*
 [BHĀG. P. 3,20,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,20) *puṇyā vācaḥ*
-[MBH. 1,5711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5711) = [≈Вульг. 1.141.29](mbh/1.141.html#v29) = ≈крит. 01,129.9c [5,7297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7297) = [≈Вульг. 5.185.8](mbh/5.185.html#v8) = ≈крит. 05,186.8c *ghorānnādān*
-[3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Вульг. 3.65.14](mbh/3.65.html#v14) = ≈крит. 03,62.10a [R. 6,84,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,1) [RĀJA-TAR. 5,408.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,408) *ahaṃ jalaṃ vimuñcāmi* ich sende den Regen
-[MBH. 1,3317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3317) = [≈Вульг. 1.78.39](mbh/1.78.html#v39) = крит. — *vyamuñcaccharavarṣāṇi satoya iva toyadaḥ*
-[4,1089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1089) = [≈Вульг. 4.33.23](mbh/4.33.html#v23) = крит. — [R. 6,80,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,80,13) *tajjalam — vimuñcati — meghaiḥ śakro bhṛtyairiveśvaraḥ*
+[MBH. 1,5711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5711) = [≈Vulg. 1.141.29](mbh/1.141.html#v29) = ≈krit. 01,129.9c [5,7297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7297) = [≈Vulg. 5.185.8](mbh/5.185.html#v8) = ≈krit. 05,186.8c *ghorānnādān*
+[3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Vulg. 3.65.14](mbh/3.65.html#v14) = ≈krit. 03,62.10a [R. 6,84,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,1) [RĀJA-TAR. 5,408.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,408) *ahaṃ jalaṃ vimuñcāmi* ich sende den Regen
+[MBH. 1,3317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3317) = [≈Vulg. 1.78.39](mbh/1.78.html#v39) = krit. — *vyamuñcaccharavarṣāṇi satoya iva toyadaḥ*
+[4,1089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1089) = [≈Vulg. 4.33.23](mbh/4.33.html#v23) = krit. — [R. 6,80,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,80,13) *tajjalam — vimuñcati — meghaiḥ śakro bhṛtyairiveśvaraḥ*
 [HARIV. 3801.](https://sanskrit-lexicon-scans.github.io/hariv?3801) *suravimuktaṃ puṣpavarṣam*
 [RAGH. 12,102.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,102) *vimuñcantau mahāśarān*
-[MBH. 4,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1866) = [≈Вульг. 4.58.43](mbh/4.58.html#v43) = ≈крит. 04,53.39c [3,12099.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12099) = [≈Вульг. 3.168.73](mbh/3.168.html#v73) = ≈крит. 03,165.11c *pureṣvastraṃ vyamuñcata*
+[MBH. 4,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1866) = [≈Vulg. 4.58.43](mbh/4.58.html#v43) = ≈krit. 04,53.39c [3,12099.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12099) = [≈Vulg. 3.168.73](mbh/3.168.html#v73) = ≈krit. 03,165.11c *pureṣvastraṃ vyamuñcata*
 [BHĀG. P. 7,10,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,56) *gadāṃ vimokṣyāmi puraṃdarorasi*
 [HARIV. 7210](https://sanskrit-lexicon-scans.github.io/hariv?7210) = [7294.](https://sanskrit-lexicon-scans.github.io/hariv?7294) *ātmānaṃ gaṅgādevyāṃ vimuñcati* stürzt sich
 [UTTARARĀMAC. 121,3.]

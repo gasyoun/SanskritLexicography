@@ -7,13 +7,13 @@
  1) herbeiführen, herbeitragen, herbeibringen
 [ŚĀK. 110,15](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,15), v. l. *upānītastārkṣyeṇa*
 [BHĀG. P. 4,7,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,19) *nimānairvividhaiścitrairupānītaiḥ surottamaiḥ*
-[MBH. 4,1777.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1777) = [≈Вульг. 4.56.18](mbh/4.56.html#v18) = ≈крит. 04,51.17e *paṇyāni*
-[MBH. 2,250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.250) = [≈Вульг. 2.5.116](mbh/2.5.html#v116) = ≈крит. 02,5.105a *payoghṛtam*
+[MBH. 4,1777.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1777) = [≈Vulg. 4.56.18](mbh/4.56.html#v18) = ≈krit. 04,51.17e *paṇyāni*
+[MBH. 2,250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.250) = [≈Vulg. 2.5.116](mbh/2.5.html#v116) = ≈krit. 02,5.105a *payoghṛtam*
 [HARIV. 4417.](https://sanskrit-lexicon-scans.github.io/hariv?4417)
 [R. 1,19,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,19,22) [2,65,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,9) *srajo* (acc. pl.) *dhruvaṃ kṛṣṇamupānayanti (ṛtavaḥ)*
 [HARIV. 8797.](https://sanskrit-lexicon-scans.github.io/hariv?8797) *mama śokamupānayan* Kummer bringen
 [R. 6,82,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,3) heranziehen an: *udakāntamupānīya matsyam* an's Ufer
-[MBH. 3,12756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12756) = [≈Вульг. 3.187.14](mbh/3.187.html#v14) = ≈крит. 03,185.14a *(tām) keśabandha upānīya bāhubhyāṃ pariṣasvaje*
+[MBH. 3,12756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12756) = [≈Vulg. 3.187.14](mbh/3.187.html#v14) = ≈krit. 03,185.14a *(tām) keśabandha upānīya bāhubhyāṃ pariṣasvaje*
 [BHĀG. P. 8,12,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,28) *(śarottamam) śravaṇāntamupānīya*
 [R. 3,50,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,17)
 
@@ -35,7 +35,7 @@
 **2)** — 2) hinführen, wegführen, entführen: *upānīya tato gaṅgāṃ rasātalatalam*
 [R. 1,44,42](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,42) ([45,32](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,45,32) [GORR.]). *balāt . svayaṃvarādupānīte ambikāmbālike*
 [BHĀG. P. 9,22,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,23) *yaścāsataḥ sattvamupānayīta* hinführen zu so v. a. einweihen in
-[MBH. 5,1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Вульг. 5.37.6](mbh/5.37.html#v6) = ≈крит. 05,37.6a — Formen mit dem Augment haben wir zu *upa* gestellt.
+[MBH. 5,1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Vulg. 5.37.6](mbh/5.37.html#v6) = ≈krit. 05,37.6a — Formen mit dem Augment haben wir zu *upa* gestellt.
 
 - **RU:** — 2) отводить, уводить, похищать: *upānīya tato gaṅgāṃ rasātalatalam*
 [R. 1,44,42](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,42) ([45,32](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,45,32) [GORR.]). *balāt . svayaṃvarādupānīte ambikāmbālike*

@@ -5,7 +5,7 @@
 
 **1)** — *samā*
  1) act. geben, schenken: *phalāni cānyāni samādadanme*
-[MBH. 3,10063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10063) = [≈Вульг. 3.111.6](mbh/3.111.html#v6) = ≈крит. 03,111.6a *bhūmidānaṃ samādadyādbrāhmaṇāya*
+[MBH. 3,10063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10063) = [≈Vulg. 3.111.6](mbh/3.111.html#v6) = ≈krit. 03,111.6a *bhūmidānaṃ samādadyādbrāhmaṇāya*
 [HARIV. 16367.](https://sanskrit-lexicon-scans.github.io/hariv?16367) wiedergeben: *triviṣṭapaṃ mahendrāya yajñabhāgānsamādaduḥ*
 [BHĀG. P. 9,17,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,17,15)
 
@@ -50,9 +50,9 @@
 **2b)** — b) fortnehmen, wegnehmen, herausziehen, entziehen: *piṇḍebhyastvalpikāṃ mātrāṃ samādāya*
 [M. 3,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,219) *mahānasācchṛtaṃ māṃsaṃ samādāyaihi*
 [N. 23,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?23,18) *vilādākhuṃ samādāya*
-[MBH. 1,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8390) = [≈Вульг. 1.228.10](mbh/1.228.html#v10) = ≈крит. 01,219.6c *rājñaśca tathaiva nīle vastre samādatsva*
-[4,2117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2117) = [≈Вульг. 4.66.12](mbh/4.66.html#v12) = ≈крит. 04,61.12c *nūnametatsamādātuṃ punaricchatyadhokṣajaḥ . yadasya śiśupālasya tejastiṣṭhati ..*
-[2,1428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1428) = [≈Вульг. 2.40.8](mbh/2.40.html#v8) = ≈крит. 02,37.8c
+[MBH. 1,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8390) = [≈Vulg. 1.228.10](mbh/1.228.html#v10) = ≈krit. 01,219.6c *rājñaśca tathaiva nīle vastre samādatsva*
+[4,2117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2117) = [≈Vulg. 4.66.12](mbh/4.66.html#v12) = ≈krit. 04,61.12c *nūnametatsamādātuṃ punaricchatyadhokṣajaḥ . yadasya śiśupālasya tejastiṣṭhati ..*
+[2,1428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1428) = [≈Vulg. 2.40.8](mbh/2.40.html#v8) = ≈krit. 02,37.8c
 
 - **RU:** — b) уносить, отнимать, извлекать, отбирать: *piṇḍebhyastvalpikāṃ mātrāṃ samādāya*
 [M. 3,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,219) *mahānasācchṛtaṃ māṃsaṃ samādāyaihi*
@@ -63,15 +63,15 @@
   <sub>attested</sub>
 
 **2c)** — c) ergreifen, fassen, packen: *śastrāṇi divyāni samādadānāḥ*
-[MBH. 4,2111.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2111) = [≈Вульг. 4.66.6](mbh/4.66.html#v6) = ≈крит. 04,61.6a [6,5595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5595) = [≈Вульг. 6.119.12](mbh/6.119.html#v12) = ≈крит. 06,114.11c [8,814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.814) = [≈Вульг. 8.20.45](mbh/8.20.html#v45) = ≈крит. 08,15.39a
+[MBH. 4,2111.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2111) = [≈Vulg. 4.66.6](mbh/4.66.html#v6) = ≈krit. 04,61.6a [6,5595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5595) = [≈Vulg. 6.119.12](mbh/6.119.html#v12) = ≈krit. 06,114.11c [8,814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.814) = [≈Vulg. 8.20.45](mbh/8.20.html#v45) = ≈krit. 08,15.39a
 [HARIV. 9418.](https://sanskrit-lexicon-scans.github.io/hariv?9418)
 [R. 3,32,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,5)
 [DEV. 9,31.] *tṛṇamuṣṭiṃ samādāya*
-[MBH. 3,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2933) = [≈Вульг. 3.75.12](mbh/3.75.html#v12) = ≈крит. 03,73.12a *yadyacchastraṃ samādadyāt* (act.)
+[MBH. 3,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2933) = [≈Vulg. 3.75.12](mbh/3.75.html#v12) = ≈krit. 03,73.12a *yadyacchastraṃ samādadyāt* (act.)
 [BHĀG. P. 8,10,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,43) *matsyo matsyaṃ samādatte jñātirjñātim*
 [KĀM. NĪTIS. 8,68.] *tānsarvānāhave kruddhānsānubandhānsamāgatān . ahamekaḥ samādāsye timirmatsyānivodakāt ..*
-[MBH. 5,2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2280) = [≈Вульг. 5.57.49](mbh/5.57.html#v49) = ≈крит. 05,56.49a zusammenlesen: *jalajāni — samādade*
-[3,11395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11395) = [≈Вульг. 3.153.2](mbh/3.153.html#v2) = ≈крит. 03,151.2a *samādatta* ergriffen, gepackt
+[MBH. 5,2280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2280) = [≈Vulg. 5.57.49](mbh/5.57.html#v49) = ≈krit. 05,56.49a zusammenlesen: *jalajāni — samādade*
+[3,11395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11395) = [≈Vulg. 3.153.2](mbh/3.153.html#v2) = ≈krit. 03,151.2a *samādatta* ergriffen, gepackt
 [HARIV. 12098.](https://sanskrit-lexicon-scans.github.io/hariv?12098) *skandhaiḥ samādāya kumārān* auf die Schultern nehmen
 [11200.](https://sanskrit-lexicon-scans.github.io/hariv?11200)
 
@@ -90,8 +90,8 @@
   <sub>attested</sub>
 
 **2d)** — d) an Etwas gehen, sich an Etwas machen: *samādadānaḥ pṛthagastramārgānyathāgniriddho gahanaṃ nidāghe*
-[MBH. 5,1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1913) = [≈Вульг. 5.48.106](mbh/5.48.html#v106) = ≈крит. 05,47.100a *vākyam* eine Rede beginnen
-[26.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.26) = [≈Вульг. 5.1.26](mbh/5.1.html#v26) = ≈крит. 05,1.25c
+[MBH. 5,1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1913) = [≈Vulg. 5.48.106](mbh/5.48.html#v106) = ≈krit. 05,47.100a *vākyam* eine Rede beginnen
+[26.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.26) = [≈Vulg. 5.1.26](mbh/5.1.html#v26) = ≈krit. 05,1.25c
 
 - **RU:** — d) приниматься за что-л., браться за что-л.: *samādadānaḥ pṛthagastramārgānyathāgniriddho gahanaṃ nidāghe*
 [MBH. 5,1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1913) = [≈Вульг. 5.48.106](mbh/5.48.html#v106) = ≈крит. 05,47.100a *vākyam* начинать речь

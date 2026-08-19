@@ -20,12 +20,12 @@
 [ŚAT. BR. 2,5,2,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,29)
 [ĀŚV. ŚR. 1,3,22. 3,10,19.] *oḍhā, adyoḍhā*
 [P. 6,1,95](https://ashtadhyayi.com/sutraani/6/1/95), Schol. — *āvāhyamāvahet* (so die [ed. Bomb.]) zuführen (die Braut)
-[MBH. 13,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2407) = [≈Вульг. 13.44.4](mbh/13.44.html#v4) = ≈крит. 13,44.4a *rukmaṃ hiraṇyam* u. s. w. *na jātu kṣayamāvahet* bringe man nicht in's Haus
-[4,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.535) = [≈Вульг. 4.18.13](mbh/4.18.html#v13) = ≈крит. 04,17.13a *tasyārcāpuṣpamāvahan*
+[MBH. 13,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2407) = [≈Vulg. 13.44.4](mbh/13.44.html#v4) = ≈krit. 13,44.4a *rukmaṃ hiraṇyam* u. s. w. *na jātu kṣayamāvahet* bringe man nicht in's Haus
+[4,535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.535) = [≈Vulg. 4.18.13](mbh/4.18.html#v13) = ≈krit. 04,17.13a *tasyārcāpuṣpamāvahan*
 [R. GORR. 2,80,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,80,11) *kimasya ta āvahanti* bringen, darbringen
 [BHĀG. P. 8,22,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,22,19) *gurave prītim* bringen, verschaffen
 [M. 2,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,246) [3,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,82) *sukham*
-[MBH. 1,3355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3355) = [≈Вульг. 1.80.24](mbh/1.80.html#v24) = ≈крит. 01,75.22a [3,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2830) = [≈Вульг. 3.72.23](mbh/3.72.html#v23) = ≈крит. 03,70.20c [16709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16709) *saubhāgyam*
+[MBH. 1,3355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3355) = [≈Vulg. 1.80.24](mbh/1.80.html#v24) = ≈krit. 01,75.22a [3,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2830) = [≈Vulg. 3.72.23](mbh/3.72.html#v23) = ≈krit. 03,70.20c [16709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16709) *saubhāgyam*
 [HARIV. 7155.](https://sanskrit-lexicon-scans.github.io/hariv?7155) *kṣayam*
 [R. 3,56,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,27) *āpadaṃ ghorām*
 [5,76,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,5) *rucim*
@@ -63,7 +63,7 @@
   <sub>attested</sub>
 
 **2))** — 2) heimführen (als Gattin)
-[MBH. 13,2443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2443) = [≈Вульг. 13.44.40](mbh/13.44.html#v40) = ≈крит. 13,44.39a [5079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5079) = [≈Вульг. 13.104.125](mbh/13.104.html#v125) = ≈крит. 13,107.117c [5088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5088) = [≈Вульг. 13.104.134](mbh/13.104.html#v134) = ≈крит. 13,107.126a
+[MBH. 13,2443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2443) = [≈Vulg. 13.44.40](mbh/13.44.html#v40) = ≈krit. 13,44.39a [5079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5079) = [≈Vulg. 13.104.125](mbh/13.104.html#v125) = ≈krit. 13,107.117c [5088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5088) = [≈Vulg. 13.104.134](mbh/13.104.html#v134) = ≈krit. 13,107.126a
 [HARIV. 120.](https://sanskrit-lexicon-scans.github.io/hariv?120)
 
 - **RU:** — 2) привести домой (в качестве супруги)
@@ -79,14 +79,14 @@
   <sub>attested</sub>
 
 **4))** — 4) fortführen: *tena kūlāpahāreṇa maitrāvaruṇirauhyata* wurde vom Flusse fortgetrieben
-[MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Вульг. 9.42.29](mbh/9.42.html#v29) = ≈крит. 09,41.28a
+[MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Vulg. 9.42.29](mbh/9.42.html#v29) = ≈krit. 09,41.28a
 
 - **RU:** — 4) уносить: *tena kūlāpahāreṇa maitrāvaruṇirauhyata* был унесен рекой
 [MBH. 9,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2386) = [≈Вульг. 9.42.29](mbh/9.42.html#v29) = ≈крит. 09,41.28a
   <sub>attested</sub>
 
 **5))** — 5) sich ergiessen, fliessen: *balavatpratividdhasya nastaḥ śoṇitamāvahat*
-[MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209) = [≈Вульг. 4.68.48](mbh/4.68.html#v48) = ≈крит. 04,63.46a
+[MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209) = [≈Vulg. 4.68.48](mbh/4.68.html#v48) = ≈krit. 04,63.46a
 
 - **RU:** — 5) изливаться, течь: *balavatpratividdhasya nastaḥ śoṇitamāvahat*
 [MBH. 4,2209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2209) = [≈Вульг. 4.68.48](mbh/4.68.html#v48) = ≈крит. 04,63.46a
@@ -113,7 +113,7 @@
   <sub>attested</sub>
 
 **8_herbeirufen)** — Vgl. *āvaha* fg., *āvāha* . — caus. herbeirufen: *ṛṣim*
-[MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287) = [≈Вульг. 1.106.13](mbh/1.106.html#v13) = ≈крит. 01,100.13c
+[MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287) = [≈Vulg. 1.106.13](mbh/1.106.html#v13) = ≈krit. 01,100.13c
 [HARIV. 7787.](https://sanskrit-lexicon-scans.github.io/hariv?7787) insbes. die Götter zum Opfer u. s. w.: *devatāḥ*
 [ŚAT. BR. 1,7,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,3,13) [2,6,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,22) [3,5,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,2,13)
 [AIT. BR. 1,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,2)
@@ -121,7 +121,7 @@
 [GOBH. 4,3,4.]
 [ĀŚV. ŚR. 1,5,24. 4,8,6.]
 [YĀJÑ. 1,229.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,229) [233.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,233)
-[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) = [≈Вульг. 1.67.134](mbh/1.67.html#v134) = крит. — [4387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4387) = [≈Вульг. 1.110.13](mbh/1.110.html#v13) = ≈крит. 01,103.12c [4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) = [≈Вульг. 1.122.40](mbh/1.122.html#v40) = ≈крит. 01,113.39a [4757](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4757) = [≈Вульг. 1.122.43](mbh/1.122.html#v43) = ≈крит. 01,113.42a (med.). [15,824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.824) = [≈Вульг. 15.30.6](mbh/15.30.html#v6) = ≈крит. 15,38.6c [HARIV. 7580.](https://sanskrit-lexicon-scans.github.io/hariv?7580) [R. 1,13,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,9) [R. GORR. 1,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,36) [VARĀH. BṚH. S. 48,21. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,21) [WEBER, RĀMAT. UP. 325.] [KṚṢṆAJ. 279. 289.] [BHĀG. P. 11,27,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,27,24) [PAÑCAR. 3,13,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,13,3)
+[MBH. 1,2770.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2770) = [≈Vulg. 1.67.134](mbh/1.67.html#v134) = krit. — [4387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4387) = [≈Vulg. 1.110.13](mbh/1.110.html#v13) = ≈krit. 01,103.12c [4754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4754) = [≈Vulg. 1.122.40](mbh/1.122.html#v40) = ≈krit. 01,113.39a [4757](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4757) = [≈Vulg. 1.122.43](mbh/1.122.html#v43) = ≈krit. 01,113.42a (med.). [15,824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.824) = [≈Vulg. 15.30.6](mbh/15.30.html#v6) = ≈krit. 15,38.6c [HARIV. 7580.](https://sanskrit-lexicon-scans.github.io/hariv?7580) [R. 1,13,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,9) [R. GORR. 1,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,36) [VARĀH. BṚH. S. 48,21. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,21) [WEBER, RĀMAT. UP. 325.] [KṚṢṆAJ. 279. 289.] [BHĀG. P. 11,27,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,27,24) [PAÑCAR. 3,13,3.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,13,3)
 
 - **RU:** — ср. *āvaha* сл., *āvāha* . — caus. призывать: *ṛṣim*
 [MBH. 1,4287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4287) = [≈Вульг. 1.106.13](mbh/1.106.html#v13) = ≈крит. 01,100.13c

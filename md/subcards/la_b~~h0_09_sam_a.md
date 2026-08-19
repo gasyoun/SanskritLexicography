@@ -7,7 +7,7 @@
  1) anfassen, berühren: *uttarāmuttarāṃ śākhāṃ samālambhaṃ rohet*
 [ŚAT. BR. 9,3,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,3,6)
 [YĀJÑ. 3,13.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,13) *pāṇinā*
-[MBH. 4,1421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1421) = [≈Вульг. 4.45.28](mbh/4.45.html#v28) = крит. —
+[MBH. 4,1421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1421) = [≈Vulg. 4.45.28](mbh/4.45.html#v28) = krit. —
 [R. 1,29,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,29,25) [41,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,23)
 [R. GORR. 1,13,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,13,33) [30,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,24) [2,86,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,86,9)
 

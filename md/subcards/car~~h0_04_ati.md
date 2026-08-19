@@ -17,9 +17,9 @@
 **2)** — 2) übertreten, sich vergehen gegen Jmd —, untreu sein dem Gatten; mit dem (acc.): *bhartṛśāsanamaticarasi*
 [BHĀG. P. 5,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,8) *vacasā manasā caiva yathā nāticarāmyaham* (v. l. *abhi˚*)
 [N. (BOPP) 5,19.] *yathā cāhaṃ nāticare kathaṃcitpatīn — manasāpi jātu*
-[MBH. 3,15659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15659) = [≈Вульг. 3.268.22](mbh/3.268.html#v22) = ≈крит. 03,252.21a
+[MBH. 3,15659.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15659) = [≈Vulg. 3.268.22](mbh/3.268.html#v22) = ≈krit. 03,252.21a
 [HARIV. 7084.](https://sanskrit-lexicon-scans.github.io/hariv?7084) *putrāḥ pitṝnatyacarannāryāścātyacaranpatīn*
-[MBH. 12,8387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8387) = [≈Вульг. 12.231.25](mbh/12.231.html#v25) = ≈крит. 12,224.24a
+[MBH. 12,8387.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8387) = [≈Vulg. 12.231.25](mbh/12.231.html#v25) = ≈krit. 12,224.24a
 [HARIV. 2348.](https://sanskrit-lexicon-scans.github.io/hariv?2348)
 [R. 6,103,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,6)
 

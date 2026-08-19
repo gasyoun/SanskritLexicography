@@ -8,7 +8,7 @@
 [ṚV. 1,39,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.03) [5,56,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.056.html#rv05.056.03) *vṛtram*
 [4,16,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.016.html#rv04.016.07) abschlagen: den Kopf
 [6,26,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.026.html#rv06.026.03) *parāhanaddrauṇivarāṅgabhūṣaṇam*
-[MBH. 8,812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.812) = [≈Вульг. 8.20.43](mbh/8.20.html#v43) = ≈крит. 08,15.37a
+[MBH. 8,812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.812) = [≈Vulg. 8.20.43](mbh/8.20.html#v43) = ≈krit. 08,15.37a
 
 - **RU:** — *parā*
  1) отбрасывать, опрокидывать: *sthiram*
@@ -32,7 +32,7 @@
 **3)** — 3) partic. *˚hata = āviddha*
 [MED. dh. 28.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,28)
  a) ab-, weggeschlagen, vertrieben: *payodā vāyuvegaparāhatāḥ*
-[MBH. 3,12889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12889) = [≈Вульг. 3.188.85](mbh/3.188.html#v85) = ≈крит. 03,186.76a *daivaṃ matpauruṣaparāhatam*
+[MBH. 3,12889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12889) = [≈Vulg. 3.188.85](mbh/3.188.html#v85) = ≈krit. 03,186.76a *daivaṃ matpauruṣaparāhatam*
 [R. GORR. 2,20,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,28) abgewandt: *kaṭākṣaparāhataṃ vadanapaṅkajam*
 [MĀLATĪM. 140,15.]
 — b) im Widerspruch stehend: *paraspara˚*

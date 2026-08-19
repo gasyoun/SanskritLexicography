@@ -12,11 +12,11 @@ befreien
 [MṚCCH. 48,4.] *mocyantāṃ yantramārgāḥ* so v. a. öffnen
 [PRAB. 26,6.] *ādhiḥ — yadi na mocyate* einlösen
 [YĀJÑ. 2,58.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,58) *mocayitvā tānaśvān* abspannen
-[MBH. 3,2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](mbh/3.73.html#v33) = ≈крит. 03,71.30c
+[MBH. 3,2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Vulg. 3.73.33](mbh/3.73.html#v33) = ≈krit. 03,71.30c
 [R. 2,50,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,50,17) *kiṃ na mocayate rāmam* befreien
 [R. 2,78,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,3)
 [R. GORR. 2,77,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,77,20)
-[MBH. 7,3604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3604) = [≈Вульг. 7.98.5](mbh/7.98.html#v5) = ≈крит. 07,73.5c
+[MBH. 7,3604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3604) = [≈Vulg. 7.98.5](mbh/7.98.html#v5) = ≈krit. 07,73.5c
 [MṚCCH. 33,24.]
 [VIKR. 13,10.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?13,10)
 [MĀLAV. 75.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?75)
@@ -28,8 +28,8 @@ befreien
 [DAŚAK.] in [BENF. Chr. 197,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *mṛgaṃ bandhanānmocayitvā*
 [HIT. 23,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?23,11)
 [Ind. St. 3,373,6.] *(nauḥ) mocayiṣyati vaḥ sarvānasmaddeśāt*
-[MBH. 1,5850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5850) = [≈Вульг. 1.147.3](mbh/1.147.html#v3) = ≈крит. 01,135.3a *sa kṛcchrānmocayātmānam*
-[6191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6191) = [≈Вульг. 1.157.34](mbh/1.157.html#v34) = ≈крит. 01,145.33e *ahaṃ tvāṃ sarvapāpebhyo mocayiṣyāmi (mokṣayiṣyāmi*
+[MBH. 1,5850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5850) = [≈Vulg. 1.147.3](mbh/1.147.html#v3) = ≈krit. 01,135.3a *sa kṛcchrānmocayātmānam*
+[6191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6191) = [≈Vulg. 1.157.34](mbh/1.157.html#v34) = ≈krit. 01,145.33e *ahaṃ tvāṃ sarvapāpebhyo mocayiṣyāmi (mokṣayiṣyāmi*
 v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,66) *mocayedenasaḥ ṣitṝn*
 [M. 3,37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,37)
 [R. 2,111,32.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,111,32) [3,53,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,16)
@@ -40,7 +40,7 @@ v. l.) [BHAG. 18,66.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1
 [DAŚAK.] in [BENF. Chr. 192,18.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?192) *seyam — nyāyyā mayā mocayituṃ bhavattaḥ*
 [RAGH. 2,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,55)
 [KATHĀS. 32,172.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,172) *droṇena* (von Droṇa) *mocayāmāsa pāñcālyam*
-[MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) = [≈Вульг. 7.98.6](mbh/7.98.html#v6) = ≈крит. 07,73.6a *(gardabhaḥ) śasyakṣetre mocitaḥ* er liess den Esel los, liess ihn frei einhergehen auf
+[MBH. 7,3605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3605) = [≈Vulg. 7.98.6](mbh/7.98.html#v6) = ≈krit. 07,73.6a *(gardabhaḥ) śasyakṣetre mocitaḥ* er liess den Esel los, liess ihn frei einhergehen auf
 [HIT. ed. JOHNS. 1706.] Etwas fahren lassen so v. a. verausgaben, vergeben: *tapasā dravyamāsādya mocayetsādhitena yaḥ*
 [MĀRK. P. 121,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,3)
 

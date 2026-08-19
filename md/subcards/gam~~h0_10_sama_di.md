@@ -15,8 +15,8 @@
   <sub>attested</sub>
 
 **2)** — 2) in Besitz von Etwas gelangen, erwerben, erlangen: *yatte samadhigacchanti yasya te tasya taddhanam*
-[M. 8,416](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,416) = [MBH. 1,3418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3418) = [≈Вульг. 1.82.22](mbh/1.82.html#v22) = ≈крит. 01,77.22a [5,1034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1034) = [≈Вульг. 5.33.64](mbh/5.33.html#v64) = ≈крит. 01,77.22a *vimānam*
-[13,5327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5327) = [≈Вульг. 13.107.123](mbh/13.107.html#v123) = ≈крит. 13,110.116c *uttarakośalān*
+[M. 8,416](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,416) = [MBH. 1,3418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3418) = [≈Vulg. 1.82.22](mbh/1.82.html#v22) = ≈krit. 01,77.22a [5,1034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1034) = [≈Vulg. 5.33.64](mbh/5.33.html#v64) = ≈krit. 01,77.22a *vimānam*
+[13,5327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5327) = [≈Vulg. 13.107.123](mbh/13.107.html#v123) = ≈krit. 13,110.116c *uttarakośalān*
 [RAGH. 9,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,1) *siddhim*
 [BHAG. 3,4.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,4) *śreyaḥ*
 [BHĀG. P. 5,22,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,4) *paraṃ mahimānam*

@@ -5,7 +5,7 @@
 
 **1)** — *pari*
  1) Etwas (acc.) vorweg essen: *parocchiṣṭaṃ ca yadbhuktaṃ paribhuktaṃ ca yadbhavet*
-[MBH. 13,1579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1579) = [≈Вульг. 13.23.8](mbh/13.23.html#v8) = ≈крит. 13,24.8a
+[MBH. 13,1579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1579) = [≈Vulg. 13.23.8](mbh/13.23.html#v8) = ≈krit. 13,24.8a
 
 - **RU:** — *pari*
  1) съесть что-либо (acc.) наперед, поесть первым: *parocchiṣṭaṃ ca yadbhuktaṃ paribhuktaṃ ca yadbhavet*
@@ -30,8 +30,8 @@
 [R. GORR. 2,62,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,24) *nirmālyadāma paribhuktamanojñagandham* (so ist zu lesen)
 [ṚT. 4. 15.] *jīrṇaṃ ca paribhuktaṃ ca yātayāmamidaṃ dvayam*
 [AK. 3,4,23,147.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,23,147) — st. *paribhujyantam*
-[MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) = [≈Вульг. 11.3.14](mbh/11.3.html#v14) = ≈крит. 11,3.11c liest die [ed. Bomb.] *paribhṛjjantam* (d. i. *˚bhṛjjyantam)* . Vgl. *paribhoktar* fg. — desid. partic. *paribubhukṣita* überaus hungrig
-[MBH. 9,1483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1483) = [≈Вульг. 9.27.41](mbh/9.27.html#v41) = ≈крит. 09,26.38c Kann auch in *pari + bu˚* zerlegt werden.
+[MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) = [≈Vulg. 11.3.14](mbh/11.3.html#v14) = ≈krit. 11,3.11c liest die [ed. Bomb.] *paribhṛjjantam* (d. i. *˚bhṛjjyantam)* . Vgl. *paribhoktar* fg. — desid. partic. *paribubhukṣita* überaus hungrig
+[MBH. 9,1483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1483) = [≈Vulg. 9.27.41](mbh/9.27.html#v41) = ≈krit. 09,26.38c Kann auch in *pari + bu˚* zerlegt werden.
 
 - **RU:** — 3) поедать: *(śarīraṃ me) balimiva paribhoktuṃ vāyasāstarkayanti*
 [MṚCCH. 157,11.] вкушать, пользоваться, употреблять: *yadi me sa putra imaṃ dhanaskandhaṃ paribhuñjīyāt*

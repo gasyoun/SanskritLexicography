@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **3)** — 3) zu Etwas gelangen, theilhaft werden *nānyathā hyapigacchanti* (so schreiben wir) *vṛttiṃ lokāḥ kathaṃ ca na*
-[MBH. 3,1213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1213) = [≈Вульг. 3.32.12](mbh/3.32.html#v12) = ≈крит. 03,33.10c
+[MBH. 3,1213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1213) = [≈Vulg. 3.32.12](mbh/3.32.html#v12) = ≈krit. 03,33.10c
 
 - **RU:** — 3) достигать чего-либо, становиться причастным (чему-либо) *nānyathā hyapigacchanti* (так мы пишем) *vṛttiṃ lokāḥ kathaṃ ca na*
 [MBH. 3,1213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1213) = [≈Вульг. 3.32.12](mbh/3.32.html#v12) = ≈крит. 03,33.10c

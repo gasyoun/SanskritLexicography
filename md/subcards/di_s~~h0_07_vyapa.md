@@ -7,7 +7,7 @@
  1) darstellen, bezeichnen, nennen
 [ŚAT. BR. 14,6,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,5,1) *iti tadduhitṛtvena vyapadiśyate*
 [KUMĀRILA] bei [MÜLLER, SL. 529.] *bhrātaraṃ rājarājānaṃ maheśvarasakhaṃ prabhum . dhaneśvaraṃ vyapadiśan*
-[MBH. 3,16189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16189) = [≈Вульг. 3.281.25](mbh/3.281.html#v25) = ≈крит. 03,265.24c
+[MBH. 3,16189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16189) = [≈Vulg. 3.281.25](mbh/3.281.html#v25) = ≈krit. 03,265.24c
 [R. 3,54,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,24) *kulaṃ vyapadiśan ślādhyam*
 [35,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,22) [5,59,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,20) *mitraṃ ca māṃ vyapadiśasyaparaṃ ca yāsi*
 [MṚCCH. 62,11.] *yenedaṃ varṣaṃ bhāratamiti vyapadiśanti*
@@ -32,7 +32,7 @@
 
 **2)** — 2) fälschlich bezeichnen, vorgegeben, vorschützen: *svamāśramapadaṃ tasya vyapadiśyāvidūrataḥ*
 [R. 1,9,41](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,41) (GORR. [40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,9,40)). *nimittaṃ śītajaṃ tadā . vyapadiśya maharṣervai śayanaṃ vyavarohata*
-[MBH. 13,1458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1458) = [≈Вульг. 13.19.78](mbh/13.19.html#v78) = ≈крит. 13,20.50c
+[MBH. 13,1458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1458) = [≈Vulg. 13.19.78](mbh/13.19.html#v78) = ≈krit. 13,20.50c
 
 - **RU:** — 2) ложно обозначать, притворяться, симулировать: *svamāśramapadaṃ tasya vyapadiśyāvidūrataḥ*
 [R. 1,9,41](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,41) (GORR. [40](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,9,40)). *nimittaṃ śītajaṃ tadā . vyapadiśya maharṣervai śayanaṃ vyavarohata*

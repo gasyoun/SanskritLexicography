@@ -5,7 +5,7 @@
 
 **5)** — *upā*
  5) *nādya śokamupādade* (so die [ed. Bomb.])
-[MBH. 7,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.268) = [≈Вульг. 7.9.8](mbh/7.9.html#v8) = ≈крит. 07,8.8a
+[MBH. 7,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.268) = [≈Vulg. 7.9.8](mbh/7.9.html#v8) = ≈krit. 07,8.8a
 
 - **RU:** — *upā*
  5) *nādya śokamupādade* (так [Бомбейская ред.])

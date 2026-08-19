@@ -5,10 +5,10 @@
 
 **1)** — *abhi*
  1) sich vergehen gegen Jmd, untreu sein dem Gatten (vgl. u. *ati): manasā vacasā caiva yathā nābhicarāmyaham*
-[MBH. 3,2208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2208) = [≈Вульг. 3.57.17](mbh/3.57.html#v17) = ≈крит. 03,54.16c *patiṃ yā nābhicarati manovāgdehasaṃyatā*
+[MBH. 3,2208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2208) = [≈Vulg. 3.57.17](mbh/3.57.html#v17) = ≈krit. 03,54.16c *patiṃ yā nābhicarati manovāgdehasaṃyatā*
 [M. 5,165.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,165) [9,29.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,29) *yathā nābhicaretāṃ tau (strīpuṃsau) viyuktāvitaretaram*
 [102.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,102) *yathaivāhaṃ nābhicare kadācitpatīnmadādvai manasāpi jātu*
-[MBH. 4,457.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.457) = [≈Вульг. 4.16.6](mbh/4.16.html#v6) = ≈крит. 03,252.20c
+[MBH. 4,457.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.457) = [≈Vulg. 4.16.6](mbh/4.16.html#v6) = ≈krit. 03,252.20c
 
 - **RU:** — *abhi*
  1) погрешать против кого-л., изменять супругу (ср. u. *ati): manasā vacasā caiva yathā nābhicarāmyaham*

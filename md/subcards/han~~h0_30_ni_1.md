@@ -61,10 +61,10 @@ u. s. w.
 [R. 3,35,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,51) *anilo 'nilena*
 [VARĀH. BṚH. S. 32,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?32,2) ein Planet von einem andern im Planetenkampfe
 [17,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?17,25) [BṚH. 15,2.] getroffen: *lakṣya*
-[MBH. 1,7173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7173) = [≈Вульг. 1.190.22](mbh/1.190.html#v22) = ≈крит. 01,181.21a uneig.: *avaloka˚*
+[MBH. 1,7173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7173) = [≈Vulg. 1.190.22](mbh/1.190.html#v22) = ≈krit. 01,181.21a uneig.: *avaloka˚*
 [BHĀG. P. 1,11,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,37) *śoka˚*
 [Spr. (II) 2781](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781 "Spr. (II) 2781: dāridryāddhriyameti tatparigataḥ prabhraśyate tejaso nistejāḥ paribhūyate paribhavānnirvedamāpadyate | nirviṇṇaḥ śucameti śokavihato buddhyā parityajy… — (1145.) Von der Armuth gelangt man zur Scham"), v. l. erschlagen, niedergemacht, geschlachtet
-[MBH. 1,1172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1172) = [≈Вульг. 1.19.15](mbh/1.19.html#v15) = ≈крит. 01,17.14c [5992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5992) = [≈Вульг. 1.152.17](mbh/1.152.html#v17) = ≈крит. 01,139.13c [6038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6038) = [≈Вульг. 1.153.27](mbh/1.153.html#v27) = крит. — [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) = [≈Вульг. 3.42.35](mbh/3.42.html#v35) = ≈крит. 03,43.32a [2544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2544) = [≈Вульг. 3.65.13](mbh/3.65.html#v13) = ≈крит. 03,62.9a [16904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16904) = [≈Вульг. 3.299.2](mbh/3.299.html#v2) = ≈крит. 03,283.2a [5,7084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7084) = [≈Вульг. 5.178.57](mbh/5.178.html#v57) = ≈крит. 05,178.31c [7225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7225) = [≈Вульг. 5.182.30](mbh/5.182.html#v30) = ≈крит. 05,183.27a
+[MBH. 1,1172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1172) = [≈Vulg. 1.19.15](mbh/1.19.html#v15) = ≈krit. 01,17.14c [5992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5992) = [≈Vulg. 1.152.17](mbh/1.152.html#v17) = ≈krit. 01,139.13c [6038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6038) = [≈Vulg. 1.153.27](mbh/1.153.html#v27) = krit. — [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) = [≈Vulg. 3.42.35](mbh/3.42.html#v35) = ≈krit. 03,43.32a [2544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2544) = [≈Vulg. 3.65.13](mbh/3.65.html#v13) = ≈krit. 03,62.9a [16904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16904) = [≈Vulg. 3.299.2](mbh/3.299.html#v2) = ≈krit. 03,283.2a [5,7084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7084) = [≈Vulg. 5.178.57](mbh/5.178.html#v57) = ≈krit. 05,178.31c [7225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7225) = [≈Vulg. 5.182.30](mbh/5.182.html#v30) = ≈krit. 05,183.27a
 [R. 1,1,52.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,52) [2,63,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,31) [37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,37) [64,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,39) [44.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,44) [51.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,51) [97,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,30)
 [Spr. (II) 499.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?499 "Spr. (II) 499: abhimukhanihatasya satastiṣṭhatu tāvajjayo 'tha vā svargaḥ | ubhayabalasādhuvādaḥ śravaṇasukhasyaiva tātparyam || — (190.) Wer in der Schlacht von vorn verwundet wird, fragt zunächst nicht Sieg oder Himmel: der Beifallsruf beider Heere ist das, was er vor Allem gern hört.") [3792.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3792) [4004.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4004) [4657](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4657), v. l.
 [KATHĀS. 25,197.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,197)
@@ -89,7 +89,7 @@ u. s. w.
   <sub>attested</sub>
 
 **11b)** — b) zerstört, zu Grunde gerichtet, vernichtet: *tripura*
-[MBH. 3,1703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1703) = [≈Вульг. 3.41.39](mbh/3.41.html#v39) = крит. — *deśa*
+[MBH. 3,1703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1703) = [≈Vulg. 3.41.39](mbh/3.41.html#v39) = krit. — *deśa*
 [VARĀH. BṚH. S. 11,62.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,62) *jagat*
 [PRAB. 70,12.] *ānanda*
 [R. 2,47,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,18) *āśā*
@@ -126,7 +126,7 @@ _n._ [4.]
 [KIR. 14,14] fehlerhaft für *nihata* . Vgl. *nighāta* fgg., *nihan* fgg. und *nihatārtha* in den Nachträgen. — caus. erschlagen, tödten: *spaśairnighātayetsarvān* (so zu
 
 lesen)
-[MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792) = [≈Вульг. 1.145.10](mbh/1.145.html#v10) = крит. — *nighātayiṣyanyudhi yātudhānān*
+[MBH. 1,5792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5792) = [≈Vulg. 1.145.10](mbh/1.145.html#v10) = krit. — *nighātayiṣyanyudhi yātudhānān*
 [BHAṬṬ. 2,21.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,21) — intens. *nighanighnat* schleudernd
 [ṚV. 1,55,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.055.html#rv01.055.05)
 

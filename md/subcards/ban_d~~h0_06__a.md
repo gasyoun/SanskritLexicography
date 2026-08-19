@@ -13,15 +13,15 @@
 [ĀŚV. GṚHY. 1,22.]
 [GOBH. 3,4,20.] *pavitrapāśairābaddhaḥ*
 [R. 1,62,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,19)
-[MBH. 4,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.173) = [≈Вульг. 4.5.32](mbh/4.5.html#v32) = ≈крит. 04,5.28a *srajaḥ prahrādasya mūrdhni ābabandha*
+[MBH. 4,173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.173) = [≈Vulg. 4.5.32](mbh/4.5.html#v32) = ≈krit. 04,5.28a *srajaḥ prahrādasya mūrdhni ābabandha*
 [HARIV. 13730.](https://sanskrit-lexicon-scans.github.io/hariv?13730) *varma — ābabandha*
-[MBH. 7,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3447) = [≈Вульг. 7.94.38](mbh/7.94.html#v38) = ≈крит. 07,69.38a
+[MBH. 7,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3447) = [≈Vulg. 7.94.38](mbh/7.94.html#v38) = ≈krit. 07,69.38a
 [HARIV. 13165.](https://sanskrit-lexicon-scans.github.io/hariv?13165) [2052.](https://sanskrit-lexicon-scans.github.io/hariv?2052)
 [R. 2,96,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,31) [3,50,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,3)
 [KATHĀS. 13,187.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,187)
 [RĀJA-TAR. 4,587.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,587)
 [CAURAP. 15](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?15) bei [HAEB.] [H. 915.](https://sanskrit-lexicon-scans.github.io/abch2/app1?915) *ābaddhā mānuṣāḥ sarve* in Banden seiend
-[MBH. 10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) = [≈Вульг. 10.2.2](mbh/10.2.html#v2) = ≈крит. 10,2.2c *dṛṣṭipāśaurivābaddhau*
+[MBH. 10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) = [≈Vulg. 10.2.2](mbh/10.2.html#v2) = ≈krit. 10,2.2c *dṛṣṭipāśaurivābaddhau*
 [KATHĀS. 34,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,103) *bahumānena cābaddhāḥ*
 [BHĀG. P. 8,9,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,23)
 
@@ -49,7 +49,7 @@
   <sub>attested</sub>
 
 **2)** — 2) verbinden, zusammenfügen: *vātābaddhābhavanmeghāḥ* (für *vātābaddhā abhavan)* zusammengeballt
-[MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) = [≈Вульг. 3.109.9](mbh/3.109.html#v9) = ≈крит. 03,108.9a *ābaddhāñjali* die hohlen Hände zusammengefügt habend
+[MBH. 3,9970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9970) = [≈Vulg. 3.109.9](mbh/3.109.html#v9) = ≈krit. 03,108.9a *ābaddhāñjali* die hohlen Hände zusammengefügt habend
 [DAŚAK.] in [BENF. Chr. 199,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
 - **RU:** — 2) соединять, связывать вместе: *vātābaddhābhavanmeghāḥ* (вм. *vātābaddhā abhavan)* сжатый в кулак

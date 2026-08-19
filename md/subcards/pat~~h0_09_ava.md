@@ -11,7 +11,7 @@
 [MBH. 13,3715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3715)
 [HARIV. 9455.](https://sanskrit-lexicon-scans.github.io/hariv?9455) *phalairvṛkṣāvapatitaiḥ*
 [R. 2,28,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,28,12) *keśakīṭāvapatita* worauf eine Kopflaus gefallen ist
-[MBH. 13,1577](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1577) = [≈Вульг. 13.23.6](mbh/13.23.html#v6) = ≈крит. 13,24.6a; vgl. u. *pad* mit *ava* . Vgl. *avapāta* .
+[MBH. 13,1577](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1577) = [≈Vulg. 13.23.6](mbh/13.23.html#v6) = ≈krit. 13,24.6a; vgl. u. *pad* mit *ava* . Vgl. *avapāta* .
 
 - **RU:** — *ava* слетать вниз, бросаться вниз, прыгать вниз, падать вниз: *avapatantīravadandiva oṣadhayaspari*
 [ṚV. 10,97,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.17)
