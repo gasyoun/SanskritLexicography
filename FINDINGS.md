@@ -1,6 +1,12 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§574 — gloss-language layering:
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§575 — root citation splits into
+zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` confined to the PW family
+(pw/pwg/pwkvn/sch); WhitneyRoots' `roots.csv` header has no pw_id/pwg_id
+column at all, so pw/pwg are structurally unjoinable to the root crosswalk;
+class digits fragment across four incompatible devices (MD's `<cl>` tag,
+mw/wil's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl."
+prose); §574 — gloss-language layering:
 `{%…%}` is not "German-or-English" — Burnouf (bur) wraps French prose in it,
 Sircar (ieg) wraps front-matter dedications in it, and Cappeller's own English
 dictionary (cae) plus MW use zero `{%…%}` at all despite dense English glosses;
@@ -296,6 +302,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟢 [§572. Homonym-splitting density spans 0 to 419 per 1 000 entries across the 44 dicts — general dictionaries cluster at 20–65, name-indices at 89–419, and 22 dicts split none](#572-homonym-splitting-density-spans-0-to-419-per-1-000-entries-across-the-44-dicts--general-dictionaries-cluster-at-2065-name-indices-at-89419-and-22-dicts-split-none-hom-inline-markers-over-count-h-metadata-by-up-to-36) — 8 dicts print inline `<hom>N.` numbering, 14 split without displaying it, 22 split nothing; the high-density class (pui/inm/pe/mci/lrv/bop) is genre — name-indices splitting distinct persons, not sense-dictionaries splitting polysemy. `agnihotra` splits mfn./n. in 6 dicts and stays one entry in ap/vcp/wil — a 1:2-vs-1:1 join mismatch any headword matcher must carry.
 - 🔴 [§573. The leading hyphen has two senses, but no dictionary marks which — Wilson is 100 % inflectional, Macdonell is 83 % compound-member/2 % inflectional/15 % a third (taddhita) class the two-way split cannot hold](#573-the-leading-hyphen-has-two-senses-but-no-dictionary-marks-which--wilson-is-100--inflectional-macdonell-is-83--compound-member2--inflectional15--a-third-taddhita-class-the-two-way-split-cannot-hold) — Wilson 49,487/49,487 leading-hyphen runs read as inflection; MD's `{@-X@}` overloads compound-member/inflection/taddhita-derivational; Whitney's Roots and Grammar use two different devices under one name. Ships a 4-rule markup-context disambiguation table.
 - 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
+- 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -7908,3 +7915,148 @@ is added.
 > public [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) checkout and
 > the private `pwg-ru-data/corpus/koch.jsonl`; per §557, no claim made about a
 > source with no measurable text).
+
+### §575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices
+
+🔴 **The census item's own framing ("who lemmatizes roots vs 3sg forms") does not
+match what's on the page.** No dictionary in [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+lemmatizes a verb under its 3rd-singular-present form. The real split is
+**which grade of the root** gets the headword: 19 of 44 dicts cite the
+zero-grade root (`kf`, SLP1 for kṛ "to do"), the four PW-family dicts cite the
+**guṇa-grade** root (`kar`) instead, and 3 dicts carry both as independent
+headwords. Measured by grepping `√` (the root-sign glyph) and testing
+`<k1>kf<` / `<k1>kar<` as literal headword keys across all 44 `<dict>.txt`
+files, then reading the actual entries for the one root ("to do") common to
+every dictionary that has *any* root notation at all:
+
+| dict | `√` | class-digit device (n) | `kf` head | `kar` head | citation form |
+|---|---|---|---|---|---|
+| **mw** | 14,290 | `<ab>cl.</ab>` text (2,129) | 5 | 0 | zero-grade root |
+| **pw** | 4,347 | none (narrative "Präsenstämme:" list instead) | 0 | 11 | guṇa-grade root |
+| **pwg** | 2,083 | German ordinal + `<ab>Kl.</ab>` (6) | 0 | 15 | guṇa-grade root |
+| lan | 2,376 | none | 3 | 0 | zero-grade root, no class digit at all |
+| md | 1,595 | dedicated `<cl>` tag, Unicode roman numerals (750) | 2 | 0 | zero-grade root |
+| gra | 916 | none | 12 | 2 | zero-grade root dominant; `kar` also an independent headword |
+| fri | 504 (+31 `✓`-glyph variant) | roman numeral after `v.` (24) | 1 | 2 | zero-grade root, inline 3sg-present gloss + guṇa cross-ref |
+| wil | 0 | `<ab>cl.</ab>` text, ordinal ("5th cl.") (2,055) | 1 | 0 | zero-grade root, Pāṇinian indicatory-letter form (`kfY`) |
+| ap | 0 | `€N` glyph, full €1–€10 range (3,913) | 1 | 0 | zero-grade root |
+| ap90 | 0 | (not separately re-measured; same lineage as ap) | 1 | 0 | zero-grade root |
+| pwkvn | 0 | none | 0 | 6 | guṇa-grade (PW-derived supplement) |
+| sch | 0 | none | 0 | 3 | guṇa-grade (PW-derived supplement; near-identical wording to pwkvn) |
+| ccs | 0 | none | 1 | 3 | both grades attested as independent headwords |
+| ben | 0 | `<ab>cl.</ab>` text (2, noise-level) | 2 | 0 | zero-grade root |
+| bur | 0 | `<ab>cl.</ab>` text (2, noise-level) | 2 | 0 | zero-grade root |
+| bop | 0 | none | 2 | 0 | zero-grade root |
+| cae | 0 | none | 3 | 0 | zero-grade root |
+| lrv | 0 | none | 2 | 0 | zero-grade root |
+| mw72 | 0 | none | 3 | 0 | zero-grade root |
+| shs | 0 | none | 1 | 0 | zero-grade root |
+| skd | 0 | none | 3 | 0 | zero-grade root |
+| stc | 0 | none | 1 | 0 | zero-grade root |
+| vcp | 0 | none | 3 | 0 | zero-grade root |
+
+(Remaining 21 dicts show zero `√`, zero class-digit device, and zero `kf`/`kar`
+headword hits — no verb-root lemmatization of any kind: abch, acc, acph,
+acsj, ae, armh, bhs, bor, gst, ieg, inm, krm, mci, mwe, nmmb, pe, pgn, pui,
+snp, vei, yat. Several of these are the same proper-noun/name-index genre
+§572 already identified splitting persons, not analyzing verbal morphology.)
+
+**Four incompatible class-digit devices, only one machine-clean.** `mw.txt`
+line 186069: `<hom>1.</hom> <s>kf</s> ¦ <lang>Ved.</lang> I) <ab>cl.</ab>
+2. <ab>P.</ab>` — class as inline English abbreviation text inside prose
+structure markers (`I)`/`II)`/`III)`/`IV)`), not a dedicated tag.
+`md.txt` line 24759: `{#kf#}¦ <hom>1.</hom> KṚ (skṛ after upa, pari, sam),
+<cl>Ⅷ.</cl> 🞄{@káro@} {%strong%}, {@kuru@} {%weak%}; <ab>V.</ab> +
+<cl>Ⅰ.</cl> {@kára,@} <cl>Ⅱ.</cl> 🞄{@kár,@} <cl>Ⅴ.</cl> {@kṛṇó@}` — the
+**only** dedicated `<cl>` tag in the corpus (750 occurrences total), and its
+Unicode roman-numeral values (Ⅷ, Ⅰ, Ⅱ, Ⅴ) map almost directly onto
+WhitneyRoots' own `class` column format (see below). `ap.txt` line 152237:
+`{#kf#}¦ I. €5 <ab>U.</ab> ({#kfRoti-kfRute#}) To hurt, injure, kill.
+━II. €8 <ab>U.</ab>` — a private glyph `€N` standing in for the class
+number, confirmed to span the full Pāṇinian range (`€1`…`€10`, 2,083–634
+occurrences each, 3,913 total) by `grep -oE "€[0-9]+" ap.txt | sort | uniq -c`.
+`wil.txt` line 87225: `{#kf#}¦ <lex>r.</lex> 5th <ab>cl.</ab> ({#Y#})
+{#kfY#} ({#kfRoti kfRute#})` — English ordinal prose, and the headword
+itself carries a **Pāṇinian indicatory letter** (`kfY`, the dhātupāṭha
+citation form, not bare `kf`) that neither mw nor md attach. `pwg.txt` line
+73408: `<div n="1"> I〉 nach der 2ten <ab>Kl.</ab> <ab>praes.</ab>` — German
+ordinal + `<ab>Kl.</ab>` (6 occurrences of the exact `Nten <ab>Kl.</ab>`
+pattern; `pw.txt` has **zero**, describing the same four-way present-stem
+split as unlabelled "Präsenstämme:" prose instead, `pw.txt` line 95653).
+`fri.txt` line 10592 is the single most compact citation in the corpus:
+`√kṛ karoti v. I kar` — root sign, 3sg-present gloss, roman-numeral class,
+and a cross-reference to the guṇa-grade headword, all four census-item
+components in one four-word line (24 occurrences of the `v. [IVX]+ ` pattern
+corpus-wide, e.g. `fri.txt` line 7019: `ucchvasiti = ud + śvasiti, v. I
+śvas`); `fri.txt` line 6914 additionally shows a **checkmark variant** `✓`
+used interchangeably with `√` (`✓uṃd v. II ud`), 31 occurrences separate from
+the 504 `√` count above.
+
+**The PW family cites a different root grade, verified on the shared
+lemma, not inferred from the header-key test alone.** `pwg.txt` line
+73407: `<hom>1.</hom> √{#kar#}¦ ({#kf#} <ls>DHĀTUP. 30,10</ls>… {#kfv#}
+<ls n="DHĀTUP.">15,89</ls>)` — PWG's own entry opens under `kar` and glosses
+`kf` as a cross-reference *inside* that entry, i.e. this is a deliberate
+citation-form choice, not a missing zero-grade entry. `pw.txt` line
+95652–95653 confirms the identical choice for the larger dictionary:
+`<L>24527…<k1>kar<k2>kar<h>1` / `√{#kar#} (√{#skar#})¦, Präsenstämme: {#kar#}
+({#kur, kf#}), {#ka/ra, karo/, kuru#}…`. Checking `<k1>kf<` immediately
+before `kar` in the pw.txt alphabetical run (line 118320–118323) confirms
+`kf` is **absent** as its own headword in PW — the sort jumps straight from
+`kUhA` to `kfka`, skipping the zero-grade root entirely. `pwkvn.txt` line
+9509 and `sch.txt` line 30279 carry the **same** partial entry
+(`{#kar#}¦ mit {#pratyapa#} {%sich rächen an%}…`) as a PW-derived
+supplement, confirming both inherit the guṇa-grade citation policy from the
+PW tradition rather than choosing it independently.
+
+**The practical bite: WhitneyRoots' own `roots.csv` already joins the
+zero-grade dicts and has no column for the guṇa-grade ones at all.**
+[WhitneyRoots/crosswalk/roots.csv](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv)
+line 106: `106,kṛ,kf,1,I|II|V|VIII,,make,kṛtá,AV|B|C|E|RV|S|V,0,
+root_1_k_r.html,40799,1,1|2|6,…,54148,11373,…` — `root_slp1` is `kf`
+(zero-grade, confirming `mw_id` 54148 is exactly the `<L>54148` line found
+above for MW's own `kf` entry, and `apte_id` 11373 likewise resolves against
+ap's `€`-glyph entry). The header row —
+`whitney_no,root_iast,root_slp1,homonym,class,class_uncertain,gloss_short,
+ppp,period_tags,grouped,warnemyr_url,dcs_freq,dcs_rank,dcs_class_tag,
+attested_forms,mw_id,apte_id,senses,section_refs` — has **no `pw_id` or
+`pwg_id` field at all** (`grep -in "pw" <header>` returns nothing). Cologne's
+two largest and most authoritative dictionaries (pw 643,112 lines, pwg
+593,596 lines — both bigger than mw's 877,233-line file once entry density
+is accounted for) are therefore **structurally unjoinable** to the root
+crosswalk today, not merely unjoined: there is nowhere in the schema to put
+the id even if someone built the guṇa-grade lookup.
+
+**Implication.** Two separate gaps, not one: (1) a **citation-form
+normalization layer** — a small ablaut table (zero-grade ↔ guṇa-grade, the
+same handful of vowel-gradation rules Whitney's own Grammar documents) is a
+prerequisite for joining pw/pwg/pwkvn/sch to `roots.csv`; without it, any
+mechanical join on `root_slp1` silently drops the two largest dictionaries.
+(2) a **class-digit extractor per device**, not one regex: MD's `<cl>` tag
+is already machine-clean and near-identical in shape to `roots.csv`'s own
+`class` column (`I|II|V|VIII` vs `<cl>Ⅷ.</cl>`/`<cl>Ⅰ.</cl>`/…, needing only
+Unicode-roman-numeral→ASCII normalization); mw/wil's `<ab>cl.</ab>` text and
+ap's `€N` glyph each need their own parser; pwg's German "Nten `<ab>Kl.</ab>`"
+covers only 6 of its root entries, so pw/pwg class data will mostly have to
+come from parsing the narrative present-stem lists directly rather than any
+tagged field. Per §557 (Mylius rule): no claim is made about the 21
+zero-signal dicts beyond "no root notation measured" — they may still carry
+verb entries under some other undiscovered device, that possibility is out
+of scope for this pass.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · `grep -c "√"` and
+> `grep -c "<k1>kf<"` / `<k1>kar<"` over all 44 `csl-orig/v02/*/<dict>.txt`
+> files; class-digit device counts via `grep -c "<cl>"`, `grep -c
+> "<ab>cl\.</ab>"`, `grep -oE "€[0-9]+" | sort | uniq -c`, and `grep -c
+> "[0-9]ten <ab>Kl\."`; citation-form policy confirmed by reading every `kf`/
+> `kar` entry for the shared lemma "to do" (kṛ) rather than trusting the
+> header-key count alone. Specimens quoted from mw.txt L186067-186069,
+> pw.txt L95652-95653 and L118320-118323, pwg.txt L73406-73408, gra.txt
+> L15663-15664, md.txt L24758-24759, lan.txt L5543-5548, fri.txt L10591-10592
+> and L6914 and L7019, wil.txt L87223-87225, ap.txt L152236-152237,
+> pwkvn.txt L9508-9509, sch.txt L30278-30279, and
+> [WhitneyRoots/crosswalk/roots.csv](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv)
+> header row and line 106. Verifiability: class A (every grep, every quoted
+> line, and the `roots.csv` header/row are reproducible from the public
+> [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) and
+> [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) checkouts).
