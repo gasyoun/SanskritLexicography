@@ -585,19 +585,93 @@ def parse_cli_wrapper(stdout):
     return wrapper
 
 
+class StructuredRefusal(ValueError):
+    """The CLI returned a healthy envelope with NO structured channel and prose in `result`.
+
+    H3157 / FINDINGS §498, repair (b). This is a MODEL REFUSAL, not malformed output, and the
+    distinction is the whole point: `malformed_output` sends the next session hunting a schema
+    or parser bug, when the actual cause is that the model declined to emit the structured
+    result at all (on 19-08-2026, on `--permission-mode plan` grounds). The two are separable
+    mechanically — a malformed structured channel is PRESENT but unparseable, whereas a refusal
+    leaves `structured_output` ABSENT and puts prose where the JSON should be.
+
+    Subclasses ValueError so every existing `except ValueError` path keeps working unchanged;
+    only callers that care about the distinction need to look.
+    """
+
+    def __init__(self, message, prose=''):
+        super().__init__(message)
+        self.prose = prose
+
+
 def structured_from_wrapper(wrapper):
     """Extract and validate the schema result from an already-accounted CLI envelope."""
     value = wrapper.get('structured_output')
-    if value is None:
+    # H3157: remember whether the structured CHANNEL existed at all. `structured_output` absent
+    # + non-JSON prose in `result` is a refusal (§498); a present-but-unparseable value is the
+    # ordinary malformed case. Conflating them cost a session of parser-hunting.
+    structured_absent = value is None
+    if structured_absent:
         value = wrapper.get('result')
     if isinstance(value, str):
         try:
             value = json.loads(value)
         except json.JSONDecodeError as exc:
+            if structured_absent:
+                raise StructuredRefusal(
+                    'Claude emitted no structured_output and answered in prose — this is a '
+                    'refusal, not malformed output (%s)' % exc, prose=value)
             raise ValueError('Claude result is not structured JSON: %s' % exc)
     if not isinstance(value, dict) or not isinstance(value.get('cards'), list):
+        if structured_absent and isinstance(value, str):
+            raise StructuredRefusal(
+                'Claude emitted no structured_output and answered in prose — this is a '
+                'refusal, not malformed output', prose=value)
         raise ValueError('Claude result has no cards[] object')
     return value
+
+
+#: Bounded tail kept from a failed paid envelope. A provider refusal is ~1 KB; 4 KB is
+#: generous and still incapable of growing without limit. Mirrors the probe's
+#: `PROBE_RAW_TAIL_BYTES` (H2326) rather than inventing a second number.
+FAILED_ENVELOPE_TAIL_BYTES = 4096
+#: Sits under the pilot's gitignored `output/`, exactly like the probe's raw-envelope dir, so
+#: this commits nothing and leaks nothing.
+FAILED_ENVELOPE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                   'output', 'failed_envelopes')
+
+
+def write_failed_envelope(label, classification, stdout, error):
+    """Persist the tail of a PAID call's envelope that failed structured validation.
+
+    H3157 repair (c), generalised from the probe's `_write_probe_raw` (H2326 — same lesson, one
+    lane over): a call that bills in full and then fails validation must leave its own evidence
+    behind. On 19-08-2026 a refusal cost 5 401 output + 94 752 subagent tokens and the harness
+    stored nothing; the diagnosis existed only because the CLI kept an unrelated session JSONL,
+    which no future session should have to rely on.
+
+    Best-effort and append-only: a window must never fail because its diagnostic could not be
+    written, and a later failure must never erase an earlier one.
+    """
+    text = stdout or ''
+    raw = text.encode('utf-8')
+    truncated = len(raw) > FAILED_ENVELOPE_TAIL_BYTES
+    tail = (raw[-FAILED_ENVELOPE_TAIL_BYTES:].decode('utf-8', 'replace') if truncated else text)
+    name = 'failed_envelope_%s.txt' % re.sub(r'[^A-Za-z0-9_.-]', '_', str(label or 'nolabel'))[:64]
+    header = ('--- %s | label=%s | classification=%s | bytes=%d%s\n--- error: %s\n'
+              % (time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), label or '-',
+                 classification, len(raw),
+                 ' | TRUNCATED to last %d B' % FAILED_ENVELOPE_TAIL_BYTES if truncated else '',
+                 error))
+    try:
+        os.makedirs(FAILED_ENVELOPE_DIR, exist_ok=True)
+        with open(os.path.join(FAILED_ENVELOPE_DIR, name), 'a',
+                  encoding='utf-8', newline='\n') as fh:
+            fh.write(header + tail + '\n')
+    except OSError as exc:
+        print('warning: failed-envelope capture failed: %s' % exc, file=sys.stderr)
+        return None
+    return os.path.join('output', 'failed_envelopes', name)
 
 
 def extract_structured(stdout):
@@ -1075,6 +1149,7 @@ class HeadlessEngine:
             credit_claim_evidence=execution.get('agent_sdk_credit_claim_evidence'))
         structured = None
         structured_error = None
+        structured_raw_path = None
         if not proc.returncode:
             try:
                 if wrapper is None:
@@ -1085,6 +1160,13 @@ class HeadlessEngine:
                 # Malformed output is permanently unevaluable even if its outer wrapper claimed
                 # a price: the paid/result association itself failed validation.
                 telemetry = dict(telemetry, cost_evaluable=False)
+                # H3157 repair (c): keep the envelope of any PAID call that failed validation.
+                # The §498 diagnosis survived only because the CLI happened to keep its own
+                # session JSONL; the harness saved nothing, so a refusal that billed 5 401
+                # output tokens left no evidence of its own cause. Best-effort by construction.
+                structured_raw_path = write_failed_envelope(
+                    label, 'refusal' if isinstance(exc, StructuredRefusal) else 'malformed_output',
+                    proc.stdout, exc)
         # Durable finalization occurs before any classification branch returns or raises.
         self.call_reservation.finalize(reservation, telemetry)
         self._accumulate_usage(telemetry)
@@ -1096,9 +1178,22 @@ class HeadlessEngine:
                                   'elapsed_ms': elapsed, 'classification': classification})
             raise HardFailure(classification, code, (proc.stderr or proc.stdout or '')[-2000:])
         if structured_error is not None:
-            self.attempts.append({'label': label, 'keys': keys, 'returncode': 0,
-                                  'elapsed_ms': elapsed, 'classification': 'malformed_output'})
-            return None, 'malformed_output:%s' % structured_error
+            # H3157 repair (b): a refusal and a malformed structured channel are different
+            # faults with different fixes — the first is a prompt/mode problem, the second a
+            # schema/parser one. Reporting both as `malformed_output` routed the operator to
+            # the wrong half of the system for a full session (§498).
+            refused = isinstance(structured_error, StructuredRefusal)
+            classification = 'refusal' if refused else 'malformed_output'
+            attempt = {'label': label, 'keys': keys, 'returncode': 0,
+                       'elapsed_ms': elapsed, 'classification': classification}
+            if structured_raw_path:
+                attempt['raw_envelope_path'] = structured_raw_path
+            if refused:
+                # The model's own words are the diagnosis; carry a bounded excerpt inline so a
+                # reader of the attempt log never has to go find the file to know what happened.
+                attempt['refusal_excerpt'] = (structured_error.prose or '')[:400]
+            self.attempts.append(attempt)
+            return None, '%s:%s' % (classification, structured_error)
         self.attempts.append({'label': label, 'keys': keys, 'returncode': 0,
                               'elapsed_ms': elapsed, 'classification': 'success'})
         return structured, None
