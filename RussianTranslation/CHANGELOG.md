@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.82] - 2026-08-19
+
 ### Roadmap truth-pass: `freq_route.py` was listed as unbuilt (H3001, 19-08-2026)
 
 - **[REVIEW_AND_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REVIEW_AND_ROADMAP.md)
