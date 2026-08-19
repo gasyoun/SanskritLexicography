@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 18-08-2026 (§566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§570 — renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table keyed on the old stem; §569 — a bracketed `[Gen, unsp]` domain/period tag collides on the letters "Gen" with the genitive-case abbreviation and needs the same masking discipline as `{#…#}` Sanskrit spans; §566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -7456,3 +7456,50 @@ per-*sense*-stratum build specifically, not of the Renou state system in general
 > Recipe: scan every sense's `renou_oldest`/`renou_youngest` for the literal string `"V"` —
 > zero hits. Verifiability: class B (driver committed; input `pwg_sense_stratum.jsonl` is a
 > gitignored, local-only store).
+
+### §569. A bracketed `[Gen, unsp]` domain/period tag collides on the letters "Gen" with the genitive-case abbreviation — needs the same masking discipline as `{#…#}` Sanskrit spans
+
+📊 **`pwg_ru_translated.jsonl`'s `ru` field carries TWO independent short-tag taxonomies that
+share a letter sequence.** Grammatical-category case markers (`Gen`, `Dat`, `Abl`, …, per
+[ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md)
+Bucket B) sit in plain parenthetical usage notes and inside `<ab>` tags. Separately, an
+MW-style bracketed period/genre tag list — `[Ved, unsp]`, `[Buddh, Phil]`, `[Jin]`, `[Reg]`,
+`[Tan]`, `[Epigr]`, and **`[Gen, unsp]`** — uses `Gen` to mean *"General"* (a text-period
+label), never genitive case. A naive `\bGen\b` sweep matched **38** of these domain-tag `Gen`
+occurrences alongside the 173 genuine genitive-case ones, and — because both convert to the
+identical-looking `Gen.` — the collision is invisible after the fact; only distinguishable by
+excluding it *during* the sweep. Detection rule that worked: a token is a domain tag (skip it)
+when it sits inside a bracket span containing **only** bare Latin tag words joined by `,`/`:`
+— `\[(?:[A-Za-z]+\.?)(?:\s*[:,]\s*[A-Za-z]+\.?)*\]` — never Cyrillic, parens, or `=`. A future
+sweep of this or a similarly-sourced MW-format store should mask this bracket class the same
+way `{#…#}`/`{%…%}` Sanskrit spans are already masked, not just check the surrounding tag.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · H2849. Sweep write-up:
+> [`RussianTranslation/ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md)
+> §"German case-abbreviation compliance sweep". Verifiability: class B (driver not committed —
+> a one-off scratch sweep script — but the excluded/included counts and the 40-row eyeball
+> sample are recorded in the doc; input is a gitignored, local-only store).
+
+### §570. Renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table still keyed on the old stem
+
+📊 **A render-time tooltip resolver that looks the STORED token up in an external ground-truth
+table breaks silently, not loudly, when an editorial rename changes the stored token but not
+the table.** `pilot/build_article_site.py`'s `_ab_display()` calls `pwg_ab.resolve(tok)` with
+whatever string sits inside the RU column's own `<ab>` tag; `pwg_ab.py`'s table is sourced from
+[`csl-pywork/v02/distinctfiles/pwg/pywork/pwgab/pwgab_input.txt`](https://github.com/sanskrit-lexicon/csl-pywork/blob/main/v02/distinctfiles/pwg/pywork/pwgab/pwgab_input.txt)
+— PWG's own authoritative print-abbreviation list, out of this repo's control, keyed `Instr.`
+for the instrumental case. When [H2849](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2849-Sonnet_SanskritLexicography_german-case-abbreviations-to-latin-compliance-sweep_15.08.26.md)
+renamed the RU-column token from `Instr.` to `Ins.` (per a newer review instruction), every one
+of the 261 affected `<ab>Ins.</ab>` tags would have silently lost its tooltip — `resolve()`
+returns `None` on a miss, no exception, no test failure, nothing renders visibly wrong except a
+missing `title=` attribute a human would have to hover to notice. Fixed with a one-entry alias
+(`RENAME_ALIASES = {'Ins.': 'Instr.'}` in `resolve()`), not by touching the external table.
+**General lesson:** before any editorial rename of a token that also serves as a lookup key
+into an external/upstream table, grep that table for the OLD key first — a clean data sweep and
+a clean render-time regression are not the same verification.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · H2849. Fix:
+> [`RussianTranslation/src/pwg_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab.py)
+> `resolve()`. Verified: `python src/pwg_ab.py lookup "Ins."` resolves to the same
+> `Instrumental / instrumental (case)` expansion as `lookup "Instr."`. Verifiability: class A
+> (driver committed, reproducible, no gitignored input required for this specific check).
