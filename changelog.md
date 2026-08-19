@@ -14,6 +14,52 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.84] - 2026-08-19
+
+### Added — H3152, MG's six reglue2 review points
+
+- **Mahābhārata coordinate triple.** `MBH. 12,8081.` renders as
+  `= ≈Вульг. 12.226.6 = ≈крит. 12,219.6a` instead of a mute `E`, surfacing
+  csl-atlas's `bori_locus` column for the first time. Both derived coordinates are
+  marked `≈`: they come from a fitted index measured at 49.4 % exact, and MG's own
+  specimen is a miss (`src/mbh_locus.py`).
+- **2,110 IAST verse pages**, 83,740 verses from the Nīlakaṇṭha vulgate, so the
+  coordinate leads to our own fast Roman-script page rather than sanatana.in.
+  The BORI critical edition appears as an address and never as text — its e-text
+  is explicitly non-redistributable (`src/build_mbh_verse_pages.py`).
+- **Multi-address `<ls>` splitting** — `<ls>ṚV. 4,3,13. 10,18,4</ls>` yields two
+  links. Refuses on impure addresses, shape mismatch and nested markup, because a
+  resolver that mints a URL is not evidence the address exists (`src/ls_split.py`).
+- **NWS bare-citation wrapping** for Ṛgveda/Atharvaveda addresses that carry no
+  element, with a book-range check the resolver does not do; the Paippalāda
+  recension is deliberately refused (`src/nws_citation_wrap.py`).
+- **Restatement diff-typology** — one sign (`＋ → ʰ § ≈`) computed German-vs-German
+  replaces the four-fold `restate` chip, which was a default carried by 90.2 % of
+  supplements. Largest sign 49.3 % on the pilot, under the 70 % gate
+  (`src/reglue_delta.py`).
+- **German glue** `<key1>.de.md` beside `<key1>.md`, with a parity gate over the
+  rendered cards; **binding label** «привязано к смыслу PWG N»; **gloss flags**
+  (28 rows, flagged not fixed).
+- Before/after citation-coverage meter (`src/reglue2_coverage.py`), German
+  case-marker gate (`src/ru_case_marker_gate.py`), coordinate spot-check against a
+  background (`src/mbh_locus_spotcheck.py`), Russian MBh editions index
+  (`data/mbh_russian_editions.tsv`, 18 parvans with a confidence column).
+
+### Fixed
+
+- `build_reglue.py`, `reglue_delta.py` and `build_article_site.py` resolve their
+  gitignored inputs from the MAIN checkout, so they run from a linked worktree at
+  all (the H255 loss class).
+
+### Measured
+
+- Citation coverage over all 11,603 store rows / 42,296 addresses: 34,572 →
+  34,604 links. No cell falls. Ṛgveda in the PW layer 80.6 % → 90.8 %; NWS
+  Ṛgveda 97.9 % → 100 %.
+- FINDINGS §577 — a resolver that mints a well-formed URL is not evidence the
+  address exists; a resolve-only split rule proposed 2,838 `pwg` lines of which
+  0 were correct, while the real population was 141 lines in `pw`.
+
 ## [1.144.83] - 2026-08-19
 
 - **A refusal now says it refused, the probe can catch it, and a paid failure keeps its own evidence** (Opus 5 `claude-opus-5`, 19-08-2026): the three unpaid repairs carried out of [H3144](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3144-Opus_SanskritLexicography_h858-residual-c1-window-after-canary-nogo_19.08.26.md) into [H3157](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3157-Opus_SanskritLexicography_h3144-residual-c1-paid-window-measurement_19.08.26.md), all in the call-outcome layer and none of them spending a call. **(a) The health probe is no longer immune to the failure it gates.** [`_probe_prompt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator.py) now prepends the generation lane's own `MASK_PREAMBLE` TASK SHAPE block. H994 had fixed the probe's plan-mode refusal in its *prompt* while deliberately keeping `--permission-mode plan` so the spawn shape matched production — which is precisely why, on 19-08, Step 1 PASSED both ceilings minutes before the Step-2 canary refused on the same profile, flag and model. Sharing the production block means a regression there now refuses cheaply at Step 1 instead of expensively at Step 2 (FINDINGS §498 rule 1: matching the spawn shape is necessary and nowhere near sufficient). **(b) `refusal` is split from `malformed_output`.** A structured channel that is ABSENT with prose in `result` is a model refusal; a channel that is PRESENT but unparseable is malformed. They have different fixes, and reporting both as `malformed_output` sent a session hunting a parser bug that did not exist. `structured_from_wrapper` raises the new `StructuredRefusal`, the attempt log carries a bounded `refusal_excerpt`, and the probe half makes the same split so both halves of the gate name the fault identically. **(c) A paid call that fails validation keeps its envelope** — `write_failed_envelope`, generalised from the probe's own `_write_probe_raw` (H2326) one lane over. The §498 diagnosis survived only because the CLI happened to keep an unrelated session JSONL; a call that billed 5 401 output + 94 752 subagent tokens stored nothing of its own. **Found in passing:** `window_selftest.test_mask_preamble_carries_task_shape` — the sole guard on the option-B fix, described as "pinning" it in two separate files — was defined but never registered in `main()`, so it had never run once. Now registered, alongside the new `test_health_probe_shares_the_production_task_shape`. Suites: window 213/213, headless_worker and max_account_orchestrator PASS, LANG_PARITY re-derived SHARED across 44 re-stamped entries (every added line grepped for a language-keyed token, zero hits — these read how a call died, never a target-language field). No gate, ceiling or acceptance predicate moved; a refusal remains a NO-GO exactly as `malformed_output` was.
