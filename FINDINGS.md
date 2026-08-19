@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§570 — renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table keyed on the old stem; §569 — a bracketed `[Gen, unsp]` domain/period tag collides on the letters "Gen" with the genitive-case abbreviation and needs the same masking discipline as `{#…#}` Sanskrit spans; §566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§572 — homonym-splitting density spans 0–419 per 1 000 entries across the 44 dicts: 8 print an inline `<hom>N.` display, 14 split without displaying it, 22 split nothing; the high-density class (pui/inm/pe/mci/lrv/bop) is genre — name-indices splitting distinct persons, not sense-dictionaries splitting polysemy — and `agnihotra` itself splits mfn./n. in 6 dicts but stays one entry in 3, a 1:2-vs-1:1 join mismatch any headword matcher must carry; §570 — renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table keyed on the old stem; §569 — a bracketed `[Gen, unsp]` domain/period tag collides on the letters "Gen" with the genitive-case abbreviation and needs the same masking discipline as `{#…#}` Sanskrit spans; §566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -7554,3 +7554,94 @@ inference with a quotation — or prove, as with PWG, that no quotation exists.
 > quotations (committed OCR pages with `source_url` frontmatter pointing at the Cologne scan);
 > class B for the 33-code coverage count (derived from local clones, some staging dirs are not on
 > any remote).
+
+### §572. Homonym-splitting density spans 0 to 419 per 1 000 entries across the 44 dicts — general dictionaries cluster at 20–65, name-indices at 89–419, and 22 dicts split none; `<hom>` inline markers over-count `<h>` metadata by up to 3.6×
+
+🟢 **Eighth entry of the §553–§571 compound/typography census series; census item
+§5.2 (H2979).** `<h>` is a per-entry meta-line tag (`<L>…<k1>…<k2>…<h>N`) present
+only on entries that are one of a numbered set sharing a headword — it is the
+authoritative "this entry is a homonym split" signal. `<hom>N.</hom>` is a
+separate inline body-text tag that prints the number; MW's own schema doc
+(`mw-meta2.txt:89-94`) states it "also appears in cross-references," so `<hom>`
+counts run higher than `<h>` counts wherever cross-refs cite split entries —
+confirmed: pwg `<h>`=6,499 vs `<hom>`=23,438 (3.6×), pw `<h>`=8,012 vs
+`<hom>`=10,052 (1.25×), mw `<h>`=5,738 vs `<hom>`=11,517 (2.0×). **Counting
+`<hom>` as "how many entries are split" over-counts by that factor; `<h>` is
+the entry-level denominator.**
+
+Counted over all 44 `v02/*/​*.txt` data files (excluding `*-meta*`/`*hwextra*`
+schema/appendix files, which contaminate raw grep counts — e.g. `ae`, `ben`,
+`ieg`, `krm`, `mwe`, `pgn`, `snp`, `bor` show a spurious `<h>`=1 each, entirely
+from the tag-schema documentation line `<L>,<e>,<h>,<k1>,<k2>,<pc>,<LEND>` in
+their `*-meta2.txt`, not from any real split — the §557 Mylius rule bites on
+`grep` output too, not only on prose claims):
+
+| Class | Dicts (n) | `<h>` density /1 000 entries | Examples |
+|---|---|---|---|
+| Splits, prints inline `<hom>N.` | 8 | 0.1–52.7 | mw 20.0, pw 47.0, pwg 52.7, gra 39.3, md 44.3, bhs 5.3, pwkvn 36.7, ap 0.1 |
+| Splits (`<h>` present), no inline `<hom>` display | 14 | 0.3–419.0 | pui 419.0, inm 339.9, pe 330.7, lrv 150.9, mci 120.7, bop 88.5, vei 81.9, mw72 66.0, cae 63.9, ccs 59.9, lan 42.3, gra-adjacent gst 3.7, ap90 0.3, stc 46.8 |
+| No splitting at all (`<h>`=0 everywhere) | 22 | 0 | abch, acc, acph, acsj, ae, armh, ben, bor, bur, fri, ieg, krm, mwe, nmmb, pgn, sch, shs, skd, snp, vcp, wil, yat |
+
+8 + 14 + 22 = 44. **The class-2/class-3 split is not "some dicts split more,
+some less" — it is genre.** pui (Purāṇa Index), inm (Index to the Names in the
+Mahābhārata), pe (Puranic Encyclopedia), mci (Mahābhārata Cultural Index),
+lrv, bop are name-indices, not sense-dictionaries: their high density (89–419
+per 1 000, i.e. up to 42 % of entries) reflects many *distinct persons*
+sharing one name, not polysemy. General dictionaries (mw/pw/pwg/gra/md/bhs)
+cluster an order of magnitude lower (5–53 per 1 000). Mixing the two classes
+in one "homonym density" ranking would misread genre difference as
+lexicographic-policy difference. skd/vcp (Sanskrit-Sanskrit kośas, §564) and
+wil (Wilson) split zero — consistent with §564's finding that they encode
+sense structure through the vigraha/quotation apparatus, not through the
+homonym-number device at all.
+
+**Specimen: `agnihotra` — the exact cross-dictionary-join case the handoff
+named.** mw/pw/pwg/md/cae/ccs split it into `<h>1` (mfn., "sacrificing to
+Agni," `<s1>Agni</s1>`) and `<h>2` (n., "oblation to Agni") — six
+independently-digitized editions agree on the n./adj. split:
+- [mw/mw.txt:4137](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt#L4137) `<hom>1.</hom> agni/—hotra ¦ mfn. … sacrificing to Agni`
+- [mw/mw.txt:4146](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt#L4146) `<hom>2.</hom> agni—hotra/ ¦ n., … oblation to Agni`
+- [pwg/pwg.txt:2413](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L2413) / [:2421](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt#L2421) — `<h>1` / `<h>2`
+- [pw/pw.txt:2563](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L2563) / [:2568](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt#L2568) — `<h>1` / `<h>2`
+- [md/md.txt:1147](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/md/md.txt#L1147) / [:1151](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/md/md.txt#L1151) — `<h>1` / `<h>2`
+- [cae/cae.txt:770](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/cae/cae.txt#L770) / [:773](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/cae/cae.txt#L773) — `<h>1` / `<h>2`, no inline `<hom>` (class 2)
+- [ccs/ccs.txt:656](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ccs/ccs.txt#L656) / [:660](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ccs/ccs.txt#L660) — same
+
+Three dictionaries keep it **one entry**, no `<h>` at all:
+[ap/ap.txt:4560](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap/ap.txt#L4560),
+[vcp/vcp.txt:2769](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L2769),
+[wil/wil.txt:2386](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/wil/wil.txt#L2386).
+**A headword-join keyed only on `<k1>`/`<k2>` (agnihotra=agnihotra) is a 1:2
+join against mw/pw/pwg/md/cae/ccs and a 1:1 join against ap/vcp/wil — any
+matcher that assumes one row per dictionary per headword silently drops the
+mfn./n. distinction on the split side, or silently merges two senses into one
+row on the joined side.** This is exactly the pwg_ru / kosha headword-matcher
+risk the handoff named, now with file:line proof instead of prediction.
+
+**Specimen: numbering convention differs by dict-class.** General dicts use
+Arabic `<h>1`/`<h>2`/…; the name-index pui uses Roman numerals — 5 distinct
+figures named Indra get `<h>I`…`<h>V`
+([pui/pui.txt:10544](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pui/pui.txt#L10544)–[:10838](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pui/pui.txt#L10838)),
+and [pui/pui.txt:74](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pui/pui.txt#L74)–88
+gives `akṛtavraṇa` `<h>I`–`<h>IV` (4 distinct persons). A homonym-count script
+that assumes `<h>` values are always small integers will silently mis-sort or
+mis-parse pui/inm-family Roman numerals.
+
+**Residue for pwg_ru / kosha:** (1) any cross-dictionary headword join must
+carry the `<h>` cardinality per side, not just the key match — a 1:N join is
+not an error, it is the data; (2) `<h>` (not `<hom>`) is the correct
+entry-level denominator for "how many rows does this headword occupy in dict
+X"; (3) name-index dicts (pui/inm/pe/mci/lrv/bop) need a separate
+"distinct-referent count," not "sense count," when their `<h>` cardinality is
+used downstream — conflating the two would read Indra-I..V as five senses of
+one word rather than five different gods/kings/sages named Indra.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · H2979. Method: `grep -o '<h>'` /
+> `grep -o '<hom'` / `grep -o '<L>'` over every `v02/<dict>/<dict>.txt` (main
+> data file only, `*-meta*`/`*hwextra*` excluded) across all 44 dict codes in
+> [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02);
+> density = `<h>` count / `<L>` count × 1000; dict-code→title resolved via
+> [SanskritLexicography/FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md).
+> Verifiability: class A (every count and specimen reproducible from the
+> public [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) checkout with
+> the one-line `grep -o` commands above; no literature claim, per §557).
