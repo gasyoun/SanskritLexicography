@@ -5,11 +5,11 @@
 
 **1)** — *prati*
  1) durchbohren: *kasyādya kāyaṃ pratibhidya ghorā mahīṃ pravekṣyanti śitāḥ śarāgryāḥ*
-[MBH. 3,15681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15681)
+[MBH. 3,15681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15681) = [≈Вульг. 3.269.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S015) = ≈крит. 03,253.14a
 
 - **RU:** — *prati*
  1) пронзать, прокалывать насквозь: *kasyādya kāyaṃ pratibhidya ghorā mahīṃ pravekṣyanti śitāḥ śarāgryāḥ*
-[MBH. 3,15681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15681)
+[MBH. 3,15681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15681) = [≈Вульг. 3.269.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S015) = ≈крит. 03,253.14a
   <sub>attested</sub>
 
 **2)** — 2) verrathen: *apratibhidya rahasyam*

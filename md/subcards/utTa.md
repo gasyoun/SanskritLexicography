@@ -18,9 +18,9 @@
 - **RU:** *utta* [Buddh] Lal 133.16 . [ подразумевается в ( duḥkhena ) cotto ; читать либо cātto = ca - ātto , либо cārto = ca - ārto . ] BHSD : 122
   <sub>attested</sub>
 
-**NWS-2)** [Jin , Soc , 13.-15. Jhd. , Gujarat]: Sohn. LekhPa 2.3.7
+**NWS-2)** [Jin, Soc] (13.-15. Jhd. , Gujarat): Sohn. LekhPa 2.3.7
 
-- **RU:** [Jin , Soc , 13.-15. Jhd. , Gujarat]: сын. LekhPa 2.3.7 . Strauch 2002 : 446
+- **RU:** [Jin, Soc] (13.-15. Jhd. , Gujarat): сын. LekhPa 2.3.7 . Strauch 2002 : 446
   <sub>attested</sub>
 
 **NWS-3)** [Epigr]: modification of putra . LekhPa Ed

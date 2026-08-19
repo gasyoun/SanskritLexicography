@@ -13,10 +13,10 @@
   <sub>attested</sub>
 
 **2)** [TBR. 3,2,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,2,4) *iti* (bei Gelegenheit dieses Spruches) *darbhānpariṣauti*
-[ĀPAST.] in [TS. Comm. 1,53,3] v. u. so v. a. zusammenraffen.
+[ĀPAST.] in [TS. Comm. 1,53,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,53,3) v. u. so v. a. zusammenraffen.
 
 - **RU:** [TBR. 3,2,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,2,4) *iti* (по случаю этого изречения) *darbhānpariṣauti*
-[ĀPAST.] в [TS. Comm. 1,53,3] снизу так преим. собрать воедино.
+[ĀPAST.] в [TS. Comm. 1,53,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,53,3) снизу так преим. собрать воедино.
   <sub>attested</sub>
 
 **Nachtr.)** — Vgl. *pariṣūti* .

@@ -10,13 +10,13 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 **1)** *āmarśa* _m._ Berührung, Anklang: *hautrāmarśa*
 [ĀŚV. ŚR. 8,13,32.]
 
-- **RU:** *āmarśa* _m._ «прикосновение, созвучие»: *hautrāmarśa*
+- **RU:** *āmarśa* _m._ прикосновение, созвучие: *hautrāmarśa*
 [ĀŚV. ŚR. 8,13,32.]
   <sub>attested</sub>
 
 **PW)** *āmarśa* _m._ Berührung, Anklang.
 
-- **RU:** *āmarśa* _m._ «прикосновение, созвучие».
+- **RU:** *āmarśa* _m._ прикосновение, созвучие.
   <sub>attested</sub>
 
 **NWS-1)** *āmarśa* [Gen, unsp] Subst m contact. nearness, similarity. ĀśvŚS ii, 2, 13, 32 [NWS: MW : 147]
@@ -24,7 +24,7 @@ _PWG article — 1 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 - **RU:** *āmarśa* [Gen, unsp] Subst m «контакт, близость, сходство». ĀśvŚS ii, 2, 13, 32 [NWS: MW : 147]
   <sub>attested</sub>
 
-**NWS-2)** [Jin, unsp, 2. H. 12. Jh., Gujarat] Subst m consideration. TriṣaŚaPuC 1. 2. 150 [NWS: TŚPC 1 : 459]
+**NWS-2)** [Jin, unsp] (2. H. 12. Jh., Gujarat) Subst m consideration. TriṣaŚaPuC 1. 2. 150 [NWS: TŚPC 1 : 459]
 
-- **RU:** [Jin, unsp, 2. H. 12. Jh., Gujarat] Subst m «размышление, рассмотрение». TriṣaŚaPuC 1. 2. 150 [NWS: TŚPC 1 : 459]
+- **RU:** [Jin, unsp] (2. H. 12. Jh., Gujarat) Subst m «размышление, рассмотрение». TriṣaŚaPuC 1. 2. 150 [NWS: TŚPC 1 : 459]
   <sub>attested</sub>

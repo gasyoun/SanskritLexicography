@@ -7,5 +7,5 @@
 [ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] zu [BṚH. ĀR. UP. S. 321).]
 
 - **RU:** — *anūd* развеваться на ветру (acc.): *yadā vā agniranugacchati vāyuṃ tarhyanūdvāti tasmādenamudavāsīdatyāhurvāyuṃ hyanūdvāti*
-[ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] zu [BṚH. ĀR. UP. S. 321).]
+[ŚAT. BR. 10,3,3,8](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,3,8) ([ŚAṂK.] к [BṚH. ĀR. UP. S. 321).]
   <sub>attested</sub>

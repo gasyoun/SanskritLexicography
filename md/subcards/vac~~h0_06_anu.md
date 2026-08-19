@@ -64,13 +64,13 @@ u. s. w.) so v. a. lernen, studiren: *yo brāhmaṇo vidyāmanūcya na viroceta*
 [CHĀND. UP. 6,1,1.] *etadvā etaistribhirāyurbhiranvavocathāḥ . atha ta itaradananūktam*
 [TBR. 3,10,11,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,11,4) *parovaraṃ yajño 'nūcyate*
 [ŚAT. BR. 1,6,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,4) [2,4,4,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,4,4) [6,1,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,1,1,8) *araṇye 'nūcyamānatvādāraṇyakam*
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 3.] auch act. in dieser знач.: *brahmānūcuḥ*
-[BHĀG. P. 3,33,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,7) *anūcāna* (см. auch особ.) тот, кто изучает; изучивший; учёный
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 3.] также act. in dieser знач.: *brahmānūcuḥ*
+[BHĀG. P. 3,33,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,7) *anūcāna* (см. также особ.) тот, кто изучает; изучивший; ученый
 [VOP. 26,132.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,132) [135.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,135)
 [AIT. BR. 2,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,2)
 [ŚAT. BR. 10,6,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,3) [11,4,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,8) *anūcānartvij*
 [KĀTY. ŚR. 7,1,18.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,1,18)
-[KUMĀRAS. 6,15.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,15) *anūkta* (см. auch особ.) изученный, выученный
+[KUMĀRAS. 6,15.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,15) *anūkta* (см. также особ.) изученный, выученный
 [ĀŚV. GṚHY. 1,22,15.] *mayā yathānūktamavādi te hareḥ kṛtāvatārasya sumitra ceṃṣṭitam* so преим. как было мною услышано
 [BHĀG. P. 3,19,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,32)
   <sub>attested</sub>

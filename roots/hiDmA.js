@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["hiDmA"]=[{"key": "hi_dm_a~~h0_zz_pw", "h": "hidhmā", "iast": "hidhmā", "senses": [{"tag": "PW: корректура", "de_html": "<i class=sa>hidhmā</i> <span class=lex>f.</span> fehlerhaft für <i class=sa>hikkā</i>.", "ru_html": "<i class=sa>hidhmā</i> <span class=lex>f.</span> — ошибочно вм. <i class=sa>hikkā</i>.", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["hiDmA"]=[];

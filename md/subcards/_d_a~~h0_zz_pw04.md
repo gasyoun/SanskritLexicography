@@ -17,7 +17,7 @@
 
 **Mit {#aBisam#} — 2)** — 2〉 ein Geschoss mit einem Bogen (Instr.) verbinden, auf den Bogen legen.
 
-- **RU:** — 2〉 соединять стрелу с луком (Instr.), накладывать на лук.
+- **RU:** — 2〉 соединять стрелу с луком (Ins.), накладывать на лук.
   <sub>attested</sub>
 
 **Mit {#aBisam#} — 3)** — 3〉 ein Geschoss richten auf (Dat. oder Loc.), zielen —, gerichtet sein auf (von einem Geschoss); mit Acc. *abhisaṃhita* gerichtet auf (Dat.).
@@ -25,14 +25,14 @@
 - **RU:** — 3〉 направлять снаряд на (Dat. или Loc.), целиться —, быть направленным на (о снаряде); mit Acc. *abhisaṃhita* направленный на (Dat.).
   <sub>attested</sub>
 
-**Mit {#aBisam#} — 4)** — 4〉 Etwas oder Jmd sich als Ziel setzen, bezwecken, beabsichtigen, vor Augen haben, denken an, es abgesehen haben auf (Acc., ausnahmsweise Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23). *tāda śairme 'bhisaṃhitam* solche haben es auf mich abgesehen. *abhisaṃdhāya* ohne Object in einer selbstsüchtigen Absicht [GAUT.]
+**Mit {#aBisam#} — 4)** — 4〉 Etwas oder Jmd sich als Ziel setzen, bezwecken, beabsichtigen, vor Augen haben, denken an, es abgesehen haben auf (Acc., ausnahmsweise Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S016) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* solche haben es auf mich abgesehen. *abhisaṃdhāya* ohne Object in einer selbstsüchtigen Absicht [GAUT.]
 
-- **RU:** — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23). *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
+- **RU:** — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S016) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
   <sub>attested</sub>
 
-**Mit {#aBisam#} — 5)** — 5〉 Jmd gemeinsam anerkennen, anerkennen überh. *sarvalokābhisaṃhita* von aller Welt anerkannt [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1).
+**Mit {#aBisam#} — 5)** — 5〉 Jmd gemeinsam anerkennen, anerkennen überh. *sarvalokābhisaṃhita* von aller Welt anerkannt [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A005_S005) = ≈крит. 12,5.5a.
 
-- **RU:** — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1).
+- **RU:** — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A005_S005) = ≈крит. 12,5.5a.
   <sub>attested</sub>
 
 **Mit {#aBisam#} — 6)** — 6〉 sich über Etwas vorher verständigen, vorher über Etwas übereinkommen; mit Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (wo wohl *anyo'nyenābhi˚* zu verbinden ist).
@@ -52,7 +52,7 @@
 
 **Mit {#aBisam#} — 9)** — 9〉 sich anschliessen an, sich verbünden mit (Instr.).
 
-- **RU:** — 9〉 примыкать к, вступать в союз с (Instr.).
+- **RU:** — 9〉 примыкать к, вступать в союз с (Ins.).
   <sub>attested</sub>
 
 **Mit {#aBisam#} — 10)** — 10〉 Med. Jmd bestimmen zu, einsetzen als; mit doppeltem Acc.
@@ -77,9 +77,9 @@
 - **RU:** — 2〉 намереваться (Acc.).
   <sub>attested</sub>
 
-**Mit {#samaBisam#} — 3)** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) fehlerhaft für *savamaṃśamabhi˚*.
+**Mit {#samaBisam#} — 3)** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A016_S023) = ≈крит. 09,15.23a fehlerhaft für *savamaṃśamabhi˚*.
 
-- **RU:** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) ошибочно вм. *savamaṃśamabhi˚*.
+- **RU:** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A016_S023) = ≈крит. 09,15.23a ошибочно вм. *savamaṃśamabhi˚*.
   <sub>attested</sub>
 
 **Mit {#upasam#} — 1)** — Mit *upasam*
@@ -96,12 +96,12 @@
 
 **Mit {#upasam#} — 3)** — 3〉 verbinden mit (Instr.).
 
-- **RU:** — 3〉 соединять с (Instr.).
+- **RU:** — 3〉 соединять с (Ins.).
   <sub>attested</sub>
 
 **Mit {#upasam#} — 4)** — 4〉 Jmd mit Etwas (Instr.) verbinden, so v. a. theilhaftig werden lassen. *upasaṃhita* verbunden —, versehen mit, begleitet —, umgeben von (Instr. oder im Comp. vorangehend). *kṛṣṇopa˚* so v. a. schwarzgefärbt. *deśakālopa˚* so v. a. Ort und Zeit entsprechend.
 
-- **RU:** — 4〉 соединять кого-либо с чем-либо (Instr.), таким образом преим. делать причастным. *upasaṃhita* соединенный —, снабженный чем-либо, сопровождаемый —, окруженный (Instr. или в Comp. предшествующем). *kṛṣṇopa˚* таким образом преим. окрашенный в черный цвет. *deśakālopa˚* таким образом преим. соответствующий месту и времени.
+- **RU:** — 4〉 соединять кого-либо с чем-либо (Ins.), таким образом преим. делать причастным. *upasaṃhita* соединенный —, снабженный чем-либо, сопровождаемый —, окруженный (Ins. или в Comp. предшествующем). *kṛṣṇopa˚* таким образом преим. окрашенный в черный цвет. *deśakālopa˚* таким образом преим. соответствующий месту и времени.
   <sub>attested</sub>
 
 **Mit {#upasam#} — 5)** — 5〉 als Ziel vor Augen haben.
@@ -109,9 +109,9 @@
 - **RU:** — 5〉 иметь перед глазами в качестве цели.
   <sub>attested</sub>
 
-**Mit {#upasam#} — 6)** — 6〉 Jmd hintergehen, anführen [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12).
+**Mit {#upasam#} — 6)** — 6〉 Jmd hintergehen, anführen [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S020) = ≈крит. 04,2.17a.
 
-- **RU:** — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12).
+- **RU:** — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S020) = ≈крит. 04,2.17a.
   <sub>attested</sub>
 
 **Mit {#upasam#} — 7)** — 7〉 *upasaṃhita* ergeben, zugethan.

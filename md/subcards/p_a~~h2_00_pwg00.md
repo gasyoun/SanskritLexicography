@@ -14,15 +14,15 @@
 [P. 8,3,52](https://ashtadhyayi.com/sutraani/8/3/52)) [6,61,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.061.html#rv06.061.11) *diva skambhaḥ samṛtaḥ pāti nākam*
 [4,13,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.013.html#rv04.013.05) [ŚAT. BR. 1,5,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,1,22) *te yajñaṃ pāntu rajasaḥ*
 [TBR. 3,1,2,8](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,2,8) in [Z. f. d. K. d. M. 7,272.] — *tāṃstvaṃ pāsi*
-[MBH. 2,2607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2607) [14,514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.514) *nṛpamapathagaṃ pānti*
+[MBH. 2,2607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2607) = [≈Вульг. 2.79.24](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S024) = крит. — [14,514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.514) = [≈Вульг. 14.18.18](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A018_S018) = ≈крит. 14,18.17a *nṛpamapathagaṃ pānti*
 [RĀJA-TAR. 4,321.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,321)
 [GHAṬ. 12.] *nāvyāropya mahīmayyāmapādvaivasvataṃ manum*
 [BHĀG. P. 1,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,15) *pāntau* partic.
 [BHAṬṬ. 6,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,96) *pāhi*
-[MBH. 1,1258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1258)
+[MBH. 1,1258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1258) = [≈Вульг. 1.25.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A025_S015) = крит. —
 [R. 2,79,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,79,5) *pātu, pāntu*
 [DHŪRTAS. 66,6.]
-[MBH. 5,1331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1331)
+[MBH. 5,1331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1331) = [≈Вульг. 5.36.72](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S072) = ≈крит. 05,36.70a
 [R. 2,25,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,12)
 [VARĀH. BṚH. S. 47,79.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,79) [61,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,2)
 [VOP. 25,24.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?25,24) *sa pāyādvo gajānanaḥ*
@@ -30,8 +30,8 @@
 [BHĀG. P. 6,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,12) *pātum*
 [R. 1,21,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,8)
 [RAGH. 10,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,26) *adharmātpāhi mām*
-[MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) *bhayebhyaḥ*
-[9,2733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2733) *sarvataḥ*
+[MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) = [≈Вульг. 1.82.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A082_S021) = ≈крит. 01,77.21c *bhayebhyaḥ*
+[9,2733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2733) = [≈Вульг. 9.47.6](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A047_S006) = ≈крит. 09,46.6a *sarvataḥ*
 [R. 2,107,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,12) *upaplavebhyaḥ*
 [RAGH. 2,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,48)
 [BHĀG. P. 6,8,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,18) *pātyetāṃ sāṃprataṃ purīm*
@@ -56,15 +56,15 @@
 [P. 8,3,52](https://ashtadhyayi.com/sutraani/8/3/52)) [6,61,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.061.html#rv06.061.11) *diva skambhaḥ samṛtaḥ pāti nākam*
 [4,13,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.013.html#rv04.013.05) [ŚAT. BR. 1,5,1,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,1,22) *te yajñaṃ pāntu rajasaḥ*
 [TBR. 3,1,2,8](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,2,8) в [Z. f. d. K. d. M. 7,272.] — *tāṃstvaṃ pāsi*
-[MBH. 2,2607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2607) [14,514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.514) *nṛpamapathagaṃ pānti*
+[MBH. 2,2607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2607) = [≈Вульг. 2.79.24](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S024) = крит. — [14,514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.514) = [≈Вульг. 14.18.18](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A018_S018) = ≈крит. 14,18.17a *nṛpamapathagaṃ pānti*
 [RĀJA-TAR. 4,321.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,321)
 [GHAṬ. 12.] *nāvyāropya mahīmayyāmapādvaivasvataṃ manum*
 [BHĀG. P. 1,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,15) *pāntau* partic.
 [BHAṬṬ. 6,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,96) *pāhi*
-[MBH. 1,1258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1258)
+[MBH. 1,1258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1258) = [≈Вульг. 1.25.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A025_S015) = крит. —
 [R. 2,79,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,79,5) *pātu, pāntu*
 [DHŪRTAS. 66,6.]
-[MBH. 5,1331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1331)
+[MBH. 5,1331.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1331) = [≈Вульг. 5.36.72](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S072) = ≈крит. 05,36.70a
 [R. 2,25,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,12)
 [VARĀH. BṚH. S. 47,79.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,79) [61,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,2)
 [VOP. 25,24.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?25,24) *sa pāyādvo gajānanaḥ*
@@ -72,8 +72,8 @@
 [BHĀG. P. 6,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,12) *pātum*
 [R. 1,21,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,8)
 [RAGH. 10,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,26) *adharmātpāhi mām*
-[MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) *bhayebhyaḥ*
-[9,2733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2733) *sarvataḥ*
+[MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) = [≈Вульг. 1.82.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A082_S021) = ≈крит. 01,77.21c *bhayebhyaḥ*
+[9,2733.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2733) = [≈Вульг. 9.47.6](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A047_S006) = ≈крит. 09,46.6a *sarvataḥ*
 [R. 2,107,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,12) *upaplavebhyaḥ*
 [RAGH. 2,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,48)
 [BHĀG. P. 6,8,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,18) *pātyetāṃ sāṃprataṃ purīm*
@@ -83,7 +83,7 @@
 [BHĀG. P. 1,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,12)
 
 *kīrtim*
-[BHAṬṬ. 7,69.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,69) *pāta* сохранён и т.д.
+[BHAṬṬ. 7,69.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,69) *pāta* сохранен и т.д.
 [TRIK. 3,3,169.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,169)
 [MED. t. 32.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,32)
   <sub>attested</sub>
@@ -164,9 +164,9 @@
 [10,17,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.04) *pumānpumāṃsaṃ pari pātu viśvataḥ*
 [6,75,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.14) [71,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.071.html#rv06.071.03) *taṃ pari pāto aṃhasaḥ*
 [1,136,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.136.html#rv01.136.05) [143,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.143.html#rv01.143.08) [VS. 26,14.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?26,14) [AV. 6,110,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.110.html#av06.110.02) [8,2,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.26) *tena naḥ paripāhi*
-[MBH. 1,8413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8413) *bhagavānparipāti dīnān*
+[MBH. 1,8413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8413) = [≈Вульг. 1.228.33](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A228_S033) = ≈крит. 01,219.29a *bhagavānparipāti dīnān*
 [BHĀG. P. 4,9,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,17) [5,8,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,21) *paripāhi vasuṃdharām*
-[MBH. 12,1203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1203) *viśvam*
+[MBH. 12,1203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1203) = [≈Вульг. 12.33.48](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A033_S048) = ≈крит. 12,34.36a *viśvam*
 [BHĀG. P. 2,6,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,31)
 [DEV. 11,32.] *anuśāsanam* bewahren, aufrecht erhalten
 [BHĀG. P. 1,7,53.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,53) *dharmeṇa dharmaḥ paripāti setum*
@@ -177,9 +177,9 @@
 [10,17,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.04) *pumānpumāṃsaṃ pari pātu viśvataḥ*
 [6,75,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.075.html#rv06.075.14) [71,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.071.html#rv06.071.03) *taṃ pari pāto aṃhasaḥ*
 [1,136,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.136.html#rv01.136.05) [143,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.143.html#rv01.143.08) [VS. 26,14.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?26,14) [AV. 6,110,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.110.html#av06.110.02) [8,2,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.26) *tena naḥ paripāhi*
-[MBH. 1,8413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8413) *bhagavānparipāti dīnān*
+[MBH. 1,8413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8413) = [≈Вульг. 1.228.33](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A228_S033) = ≈крит. 01,219.29a *bhagavānparipāti dīnān*
 [BHĀG. P. 4,9,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,17) [5,8,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,21) *paripāhi vasuṃdharām*
-[MBH. 12,1203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1203) *viśvam*
+[MBH. 12,1203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1203) = [≈Вульг. 12.33.48](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A033_S048) = ≈крит. 12,34.36a *viśvam*
 [BHĀG. P. 2,6,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,31)
 [DEV. 11,32.] *anuśāsanam* хранить, поддерживать
 [BHĀG. P. 1,7,53.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,53) *dharmeṇa dharmaḥ paripāti setum*

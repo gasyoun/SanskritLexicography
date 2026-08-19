@@ -14,12 +14,12 @@
 [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* wird nicht müde zu verzehren
 [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
 
-- **RU:** — 1) слабеть, уставать, истощаться, падать духом: *na vāyanti subhvo devayuktāḥ* [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ* [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* не устаёт пожирать [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
+- **RU:** — 1) слабеть, уставать, истощаться, падать духом: *na vāyanti subhvo devayuktāḥ* [ṚV. 7,67,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.067.html#rv07.067.08) *na tā vājeṣu vāyataḥ* [8,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.06) *bapsadagnirna vāyati* не устает пожирать [43,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.043.html#rv08.043.07)
   <sub>attested</sub>
 
 **2)** — 2) = 2. *vā* wehen: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
-[MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat*
-[MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) Druckfehler für *avārayat* .
+[MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) = [≈Вульг. 6.3.29](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S029) = ≈крит. 06,3.30c — *avāyat*
+[MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) = [≈Вульг. 9.17.84](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A017_S084) = ≈крит. 09,16.80c Druckfehler für *avārayat* .
 
-- **RU:** — 2) = 2. *vā* веять: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ* [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) — *avāyat* [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) опечатка вместо *avārayat* .
+- **RU:** — 2) = 2. *vā* веять: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ* [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) = [≈Вульг. 6.3.29](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S029) = ≈крит. 06,3.30c — *avāyat* [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) = [≈Вульг. 9.17.84](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A017_S084) = ≈крит. 09,16.80c опечатка вм. *avārayat* .
   <sub>attested</sub>

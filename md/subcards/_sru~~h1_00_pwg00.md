@@ -20,7 +20,7 @@
 [1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) В более поздних текстах этот корень и его производные нередко пишутся с палатальным сибилянтом. Соответствующие места мы отсылаем, однако, под *sru* .
 — *ā* то же: *ā vo yāmāya pṛthivī cidaśrot* сама земля уступала вашему движению
 [ṚV. 1,39,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.06)
-— *pra* caus. продвигать вперёд: *prāśrāvayaṃ turvaśaṃ yadum*
+— *pra* caus. продвигать вперед: *prāśrāvayaṃ turvaśaṃ yadum*
 [ṚV. 10,49,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.08) *prāndhaṃ śroṇaṃ śravayan*
 [2,13,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.12)
 — *vi* см. 2. *viśruti* .

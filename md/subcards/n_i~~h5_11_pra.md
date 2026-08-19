@@ -19,7 +19,7 @@
 - **RU:** — *pra*
  2)
 [Sp. 278, Z. 6] добавить: *praṇītā āpo mantrasaṃskṛtā āhavanīyasyottarato nihitāḥ* коммент. к [ĀŚV. ŚR. 1,1,4.]
-*praṇīta* означает обряд, при котором не используется освящённая вода (*praṇītāḥ*),
+*praṇīta* означает обряд, при котором не используется освященная вода (*praṇītāḥ*),
 [ĀŚV. ŚR. 1,1,5.] стк. 8 читай 11,2,6,1 вместо 11,26,1.
 — 6) *na laṅghayati ko 'pi vidhipraṇītam* то, что предопределено судьбой
 [Spr. 3655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3655) *naitaddhi samyakkavibhiḥ praṇītam* преподано, высказано

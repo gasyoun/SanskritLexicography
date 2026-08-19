@@ -4,10 +4,10 @@
 
 
 **caus-2)** — 2) in sein Haus führen so v. a. heirathen (vom Manne)
-[MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983)
+[MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983) = [≈Вульг. 5.175.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S008) = ≈крит. 05,172.6e
 
 - **RU:** — 2) вводить в свой дом так преим. жениться (о мужчине)
-[MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983)
+[MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983) = [≈Вульг. 5.175.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S008) = ≈крит. 05,172.6e
   <sub>attested</sub>
 
 **caus-3)** — 3) verausgaben: *prabhūto 'pi saṃcito 'rthaḥ praveśyamāno 'ñjanamiva kṣīyate*
@@ -29,15 +29,15 @@
   <sub>attested</sub>
 
 **desid-intro)** — Vgl. *praveśana, praveśayitavya, praveśya* . — desid. *pravivikṣati* hineinzugehen —, einzudringen beabsichtigen: *śailān*
-[MBH. 3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) *senām*
-[7,4359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4359) mit Ergänzung von *senām*
-[6,139](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.139) = [12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) (in der Calc. Ausg. fälschlich *vivakṣataḥ)*.* hutāśanam*
+[MBH. 3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) = [≈Вульг. 3.137.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A137_S012) = ≈крит. 03,138.12a *senām*
+[7,4359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4359) = [≈Вульг. 7.112.68](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A112_S068) = ≈крит. 02,28.1a mit Ergänzung von *senām*
+[6,139](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.139) = [≈Вульг. 6.3.71](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S071) = ≈крит. 06,4.22a = [12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) = [≈Вульг. 12.102.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A102_S015) = ≈крит. 12,103.15a (in der Calc. Ausg. fälschlich *vivakṣataḥ)*.* hutāśanam*
 [R. GORR. 2,18,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,17)
 
 - **RU:** — ср. *praveśana, praveśayitavya, praveśya* . — desid. *pravivikṣati* намереваться войти —, проникнуть: *śailān*
-[MBH. 3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) *senām*
-[7,4359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4359) с дополнением *senām*
-[6,139](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.139) = [12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) (в калькутт. изд. ошибочно *vivakṣataḥ)*.* hutāśanam*
+[MBH. 3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) = [≈Вульг. 3.137.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A137_S012) = ≈крит. 03,138.12a *senām*
+[7,4359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4359) = [≈Вульг. 7.112.68](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A112_S068) = ≈крит. 02,28.1a с дополнением *senām*
+[6,139](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.139) = [≈Вульг. 6.3.71](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S071) = ≈крит. 06,4.22a = [12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) = [≈Вульг. 12.102.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A102_S015) = ≈крит. 12,103.15a (в калькутт. изд. ошибочно *vivakṣataḥ)*.* hutāśanam*
 [R. GORR. 2,18,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,17)
   <sub>attested</sub>
 

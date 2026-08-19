@@ -24,5 +24,5 @@ _PWG article — 2 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 
 **SCH Nachtr.)** dharā ˚Stätte, [H] XLIII,88.
 
-- **RU:** dharā °«место, стоянка», [H] XLIII,88.
+- **RU:** dharā °место, стоянка, [H] XLIII,88.
   <sub>attested</sub>

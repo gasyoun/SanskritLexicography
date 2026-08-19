@@ -72,7 +72,7 @@
 
 **Mit {#ni#} — 7)** — 7〉 anschlagen mit (Instr.) an (Acc.), so v. a. berühren.
 
-- **RU:** — 7〉 ударять (Instr.) о (Acc.), так преим. касаться.
+- **RU:** — 7〉 ударять (Ins.) о (Acc.), так преим. касаться.
   <sub>attested</sub>
 
 **Mit {#ni#} — 8)** — 8〉 fällen, nieder schlagen, erschlagen, tödten; Auch von Planeten im Planetenkampf.
@@ -192,9 +192,9 @@
 — 1〉 насаживать, нанизывать.
   <sub>attested</sub>
 
-**Mit {#aBini#} — 2)** — 2〉 schlagen —, einhauen auf (Acc.) *abhinighnant* Partic. mit passiver Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30), v. l. Vgl. u. *ava* 3〉.
+**Mit {#aBini#} — 2)** — 2〉 schlagen —, einhauen auf (Acc.) *abhinighnant* Partic. mit passiver Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S018) = ≈крит. 04,2.15a, v. l. Vgl. u. *ava* 3〉.
 
-- **RU:** — 2〉 бить —, рубить по (Acc.) *abhinighnant* Partic. с пассивным знач. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30), v. l. ср. u. *ava* 3〉.
+- **RU:** — 2〉 бить —, рубить по (Acc.) *abhinighnant* Partic. с пассивным знач. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S018) = ≈крит. 04,2.15a, v. l. ср. u. *ava* 3〉.
   <sub>attested</sub>
 
 **Mit {#aBini#} — 3)** — 3〉 die Trommel schlagen.
@@ -320,9 +320,9 @@
 - **RU:** — 2〉 убивать.
   <sub>attested</sub>
 
-**Mit {#saMni#} — 3)** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) fehlerhaft für *saṃnihita*.
+**Mit {#saMni#} — 3)** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) = [≈Вульг. 1.3.165](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S165) = ≈крит. 01,3.96A fehlerhaft für *saṃnihita*.
 
-- **RU:** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) ошибочно вм. *saṃnihita*.
+- **RU:** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) = [≈Вульг. 1.3.165](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S165) = ≈крит. 01,3.96A ошибочно вм. *saṃnihita*.
   <sub>attested</sub>
 
 **Mit {#nis#} — 1)** — Mit *nis*

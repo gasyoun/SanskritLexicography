@@ -5,11 +5,11 @@
 
 **1)** — *upa* med. (nur ein Mal act.)
  1) zu Jmd. (acc.) sprechen: *yamo 'haṃ tvāmupabruve*
-[MBH. 12,7228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7228)
+[MBH. 12,7228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7228) = [≈Вульг. 12.199.121](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A199_S121) = ≈крит. 12,192.120a
 
 - **RU:** — *upa* мед. (nur ein Mal act.)
  1) говорить к Jmd. (acc.), обращаться (с речью): *yamo 'haṃ tvāmupabruve*
-[MBH. 12,7228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7228)
+[MBH. 12,7228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7228) = [≈Вульг. 12.199.121](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A199_S121) = ≈крит. 12,192.120a
   <sub>attested</sub>
 
 **2)** — 2) bittend ansprechen um (dat.), anrufen; zureden, bereden zu

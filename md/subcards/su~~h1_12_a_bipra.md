@@ -8,6 +8,6 @@
 [11,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,12)
 
 - **RU:** — *abhipra* гнать туда, к: *yadenāmabhiprasuvanti nadyaḥ*
-[NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26) *˚sūta* побуждённый, призванный
+[NIR. 9,26.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,26) *˚sūta* побужденный, призванный
 [11,12.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,12)
   <sub>attested</sub>

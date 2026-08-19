@@ -15,13 +15,13 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 - **RU:** — *ā*
  1) подносить в почитании, посвящать: *yebhyo hotrāṃ prathamāmāyeje* (ср.
-zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
+к [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 [ṚV. 10,63,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.063.html#rv10.063.07) [61,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.061.html#rv10.061.11) [1,121,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.121.html#rv01.121.05) *āhutim*
 [AV. 19,4,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.01) Partic. *eṣṭa* . Места, приводимые ниже под 3. *iṣ* с *ā*, возможно, следует отнести сюда, поскольку *iṣ* иначе с этим Praep. не встречается; а именно:
 [ṚV. 1,184,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.184.html#rv01.184.02) так преим. почести (*anveṣṭārau*
-[SĀY.]), [AIT. BR. 1,26](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,26) и [VS. 5,7](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?5,7) так преим. добытый жертвоприношением, обретённый через почитание; см. ниже (3).
-[MAH.] zu [VS.] разделяет эту точку зрения, тогда как
-[SĀY.] zu [AIT. BR.] *eṣṭar* и *eṣṭā* принимает как nom. ag. zu *iṣ*, подобно также в коммент. zu [TS. 1,2,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,11,1)
+[SĀY.]), [AIT. BR. 1,26](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,26) и [VS. 5,7](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?5,7) так преим. добытый жертвоприношением, обретенный через почитание; см. ниже (3).
+[MAH.] к [VS.] разделяет эту точку зрения, тогда как
+[SĀY.] к [AIT. BR.] *eṣṭar* и *eṣṭā* принимает как nom. ag. zu *iṣ*, подобно также в коммент. к [TS. 1,2,11,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,2,11,1)
   <sub>attested</sub>
 
 **2) почитать)** — 2) verehren, mit acc.: *ā yaṃ hotā yajati viśvavāram*
@@ -66,5 +66,5 @@ zu [P. 6,4,120](https://ashtadhyayi.com/sutraani/6/4/120)) *manuḥ*
 
 **отсылки)** — Vgl. *āyaji* fgg. und *āyāga* .
 
-- **RU:** — ср. *āyaji* сл. und *āyāga* .
+- **RU:** — ср. *āyaji* сл. и *āyāga* .
   <sub>attested</sub>

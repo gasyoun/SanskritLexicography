@@ -17,21 +17,21 @@
 [BHĀG. P. 5,17,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,5) *abhinyavikṣathāstvaṃ me yathaivāvyāhatā manaḥ* eindringen in so v. a. sich bemeistern
 [BHAṬṬ. 8,80.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,80)
 
-- **RU:** 1) «входить, вступать в»: *grāmamabhiniviśate*
-[P. 1,4,47](https://ashtadhyayi.com/sutraani/1/4/47), схол. *(nadī) nadanadīpatimabhiniviśati* «впадает в»
-[BHĀG. P. 5,17,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,5) *abhinyavikṣathāstvaṃ me yathaivāvyāhatā manaḥ* «проникать в», т. е. преим. «овладевать»
+- **RU:** 1) входить, вступать в: *grāmamabhiniviśate*
+[P. 1,4,47](https://ashtadhyayi.com/sutraani/1/4/47), схол. *(nadī) nadanadīpatimabhiniviśati* впадает в
+[BHĀG. P. 5,17,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,5) *abhinyavikṣathāstvaṃ me yathaivāvyāhatā manaḥ* проникать в, т. е. преим. овладевать
 [BHAṬṬ. 8,80.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,80)
   <sub>attested</sub>
 
 **2)** — 2) sich in Etwas (acc.) versenken, sich ganz hingeben: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
 [DAŚAK. 78,8. 9.] ohne Ergänzung auf seinem Kopfe bestehen: *te cedabhinivekṣyanti (˚nte* [ed. Bomb.]) *nābhyupaiṣyanti me vacaḥ*
-[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798)
+[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A077_S017) = ≈крит. 05,75.17a
 
-- **RU:** — 2) «погружаться во что-либо» (acc.), «всецело предаваться»: *dharmānabhiniviśya*
+- **RU:** — 2) погружаться во что-либо (acc.), всецело предаваться: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
-[DAŚAK. 78,8. 9.] без дополнения «упорствовать в своём»: *te cedabhinivekṣyanti (˚nte* [ed. Bomb.]) *nābhyupaiṣyanti me vacaḥ*
-[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798)
+[DAŚAK. 78,8. 9.] без дополнения упорствовать в своем: *te cedabhinivekṣyanti (˚nte* [Бомбейская ред.]) *nābhyupaiṣyanti me vacaḥ*
+[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A077_S017) = ≈крит. 05,75.17a
   <sub>attested</sub>
 
 **3)** — 3) partic. *˚viṣṭa*
@@ -41,11 +41,11 @@
 
 **3a)** a) sich festgesetzt habend an einem Orte
 [SUŚR. 1,82,12.] hartnäckig: *paraspareṇābhiniviṣṭaroṣayoḥ*
-[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210)
+[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A082_S005) = ≈крит. 08,60.5a
 
-- **RU:** a) «утвердившийся на месте»
-[SUŚR. 1,82,12.] «упрямый, упорный»: *paraspareṇābhiniviṣṭaroṣayoḥ*
-[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210)
+- **RU:** a) утвердившийся на месте
+[SUŚR. 1,82,12.] упрямый, упорный: *paraspareṇābhiniviṣṭaroṣayoḥ*
+[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A082_S005) = ≈крит. 08,60.5a
   <sub>attested</sub>
 
 **3b)** — b) fest auf einen Punkt gerichtet, ganz mit Etwas beschäftigt, nur Eines vor Augen habend: *arthasūkṣmābhiniviṣṭadṛṣṭi*
@@ -62,7 +62,7 @@
 [KATHĀS. 79,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?79,4) *śunorekārthābhiniviṣṭayoḥ*
 [Spr. 2414.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2414)
 
-- **RU:** — b) «целиком сосредоточенный на одном, всецело занятый чем-либо, имеющий перед глазами лишь одно»: *arthasūkṣmābhiniviṣṭadṛṣṭi*
+- **RU:** — b) целиком сосредоточенный на одном, всецело занятый чем-либо, имеющий перед глазами лишь одно: *arthasūkṣmābhiniviṣṭadṛṣṭi*
 [BHĀG. P. 3,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,13) *abhiniviṣṭayā dṛśā mālatīmukhāvalokanavihitayā*
 [MĀLATĪM. 19,2.] *adhyakṣaraṃ svabhiniviṣṭadhiyaḥ*
 [VARĀH. BṚH. S. 19,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,11) *kāryābhiyoge 'bhiniviṣṭabuddhiḥ*
@@ -72,7 +72,7 @@
 [3,2,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,24) *iṣṭārthābhiniviṣṭaṃ manaḥ*
 [MALLIN.] к [KUMĀRAS. 5,5.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,5) *adhyayanaśravaṇābhiniviṣṭa*
 [TATTVAS. 37.] *mādhavāpakāraṃ pratyabhiniviṣṭā bhavāmi*
-[MĀLATĪM. 88,2.] *abhiniviṣṭo 'si kaṣṭe* т. е. преим. «помешанный на, одержимый»
+[MĀLATĪM. 88,2.] *abhiniviṣṭo 'si kaṣṭe* т. е. преим. помешанный на, одержимый
 [KATHĀS. 79,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?79,4) *śunorekārthābhiniviṣṭayoḥ*
 [Spr. 2414.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2414)
   <sub>attested</sub>
@@ -81,8 +81,8 @@
 [BHĀG. P. 10,1,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,41) *gurubhirlokapālānubhāvaiḥ* reichlich versehen mit
 [RAGH. 2,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,75)
 
-- **RU:** — c) «пронизанный чем-либо, охваченный, занятый»: *manorathenābhiniviṣṭacetasaḥ*
-[BHĀG. P. 10,1,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,41) *gurubhirlokapālānubhāvaiḥ* «щедро наделённый»
+- **RU:** — c) пронизанный чем-либо, охваченный, занятый: *manorathenābhiniviṣṭacetasaḥ*
+[BHĀG. P. 10,1,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,41) *gurubhirlokapālānubhāvaiḥ* щедро наделенный
 [RAGH. 2,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,75)
   <sub>attested</sub>
 
@@ -96,16 +96,16 @@
 [1,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,38) *rūpāṇi cakṣuṣā jyotiṣyabhiniveśayet* eingehen lassen in
 [7,12,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,28)
 
-- **RU:** 1) «впускать, вводить во что-либо»: *kālasūtrasaṃjñake narake*
+- **RU:** 1) впускать, вводить во что-либо: *kālasūtrasaṃjñake narake*
 [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *yadabhiniveśito 'hamindriyaiḥ — ˚viṣayāndhakūpe*
-[1,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,38) *rūpāṇi cakṣuṣā jyotiṣyabhiniveśayet* «заставлять войти в»
+[1,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,38) *rūpāṇi cakṣuṣā jyotiṣyabhiniveśayet* заставлять войти в
 [7,12,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,28)
   <sub>attested</sub>
 
 **caus-2)** — 2) sich gegenüber sitzen heissen: *munimāsane — abhinyavīviśat*
 [ŚIŚ. 1,15.]
 
-- **RU:** — 2) «усаживать напротив»: *munimāsane — abhinyavīviśat*
+- **RU:** — 2) усаживать напротив: *munimāsane — abhinyavīviśat*
 [ŚIŚ. 1,15.]
   <sub>attested</sub>
 
@@ -121,10 +121,10 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) machen, dass Jmd einer Sache sein ganzes Herz zuwendet, Jmdes ganzes Verlangen auf Etwas richten: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
-[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) *pratibandhavatsu viṣayeṣu*
+[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S035) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
 [MĀLAV. 28,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,7)
 
-- **RU:** — 4) «заставить кого-либо всем сердцем устремиться к чему-либо, направить всё желание кого-либо на что-либо»: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
-[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) *pratibandhavatsu viṣayeṣu*
+- **RU:** — 4) заставить кого-либо всем сердцем устремиться к чему-либо, направить всё желание кого-либо на что-либо: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
+[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S035) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
 [MĀLAV. 28,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,7)
   <sub>attested</sub>

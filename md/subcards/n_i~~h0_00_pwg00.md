@@ -5,7 +5,7 @@
 
 **conjugation-paradigm)** *nī*, *nayati* und *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) neben *nayeta* ep. auch *nayīta*
-[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) neben *anayat* ved. auch *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
+[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) = [≈Вульг. 5.36.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S004) = ≈крит. 05,36.4a [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Вульг. 5.37.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A037_S006) = ≈крит. 05,37.6a neben *anayat* ved. auch *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (med.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
 [P. 3,1,34](https://ashtadhyayi.com/sutraani/3/1/34), Vārtt.
 [P. 3,1,85](https://ashtadhyayi.com/sutraani/3/1/85), Schol.; ved. *anītām, nītām; nināya, ninyatus, ninyus* (
@@ -15,7 +15,7 @@
 
 - **RU:** *nī*, *nayati* и *˚te*
 [DHĀTUP. 22,5.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) наряду с *nayeta* эп. также *nayīta*
-[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) наряду с *anayat* ved. также *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (мед.), *neṣa* imper. aor.
+[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) = [≈Вульг. 5.36.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S004) = ≈крит. 05,36.4a [1339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Вульг. 5.37.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A037_S006) = ≈крит. 05,37.6a наряду с *anayat* ved. также *anayīt; anaiṣīt, aneṣṭa*, ved. *neṣat, neṣati, neṣi, naiṣṭa, neṣatha, neṣṭa* (мед.), *neṣa* imper. aor.
 [AV. 7,97,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.097.html#av07.097.02) [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) *neṣatu*
 [P. 3,1,34](https://ashtadhyayi.com/sutraani/3/1/34), Вартт.
 [P. 3,1,85](https://ashtadhyayi.com/sutraani/3/1/85), схол.; ved. *anītām, nītām; nināya, ninyatus, ninyus* (
@@ -34,11 +34,11 @@
 [AIT. BR. 2,38.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,38)
 [ŚAT. BR. 13,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,3,1) *ajaḥ puro nīyate*
 [ṚV. 1,163,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.12) *sarvānneṣyāmi vaḥ sadā . vṛjināttārayiṣyāmi*
-[MBH. 1,6052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6052) *gamanāya matiṃ cakre tāścainaṃ ninyuraṅganāḥ*
+[MBH. 1,6052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6052) = [≈Вульг. 1.153.41](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S041) = ≈крит. 01,141.20c *gamanāya matiṃ cakre tāścainaṃ ninyuraṅganāḥ*
 [R. 1,9,55.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,55) *nayiṣyāmi ca vāhinīm*
 [5,91,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,24) [RĀJA-TAR. 5,218.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,218) *camūḥ . balamukhyaiḥ sunītā*
-[MBH. 2,197.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.197) *daivena kila yasyārthaḥ sa nīto 'pi vipadyate*
-[4,612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.612) *agraṃ* Etwas (gen.) anführen: *dhītī vā ye anayanvāco agram*
+[MBH. 2,197.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.197) = [≈Вульг. 2.5.63](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S063) = ≈крит. 02,5.53a *daivena kila yasyārthaḥ sa nīto 'pi vipadyate*
+[4,612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.612) = [≈Вульг. 4.20.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A020_S003) = ≈крит. 04,19.3a *agraṃ* Etwas (gen.) anführen: *dhītī vā ye anayanvāco agram*
 [AV. 7,1,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.001.html#av07.001.01) *agraṃ yajñasya bṛhato nayantīḥ*
 [ṚV. 6,65,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.065.html#rv06.065.02) *agraṃ nayatsupadyakṣarāṇām*
 [3,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.06); vgl. *agraṇī* . med.: *anayanta sindhūn*
@@ -57,11 +57,11 @@
 [AIT. BR. 2,38.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,38)
 [ŚAT. BR. 13,2,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,3,1) *ajaḥ puro nīyate*
 [ṚV. 1,163,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.12) *sarvānneṣyāmi vaḥ sadā . vṛjināttārayiṣyāmi*
-[MBH. 1,6052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6052) *gamanāya matiṃ cakre tāścainaṃ ninyuraṅganāḥ*
+[MBH. 1,6052.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6052) = [≈Вульг. 1.153.41](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S041) = ≈крит. 01,141.20c *gamanāya matiṃ cakre tāścainaṃ ninyuraṅganāḥ*
 [R. 1,9,55.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,55) *nayiṣyāmi ca vāhinīm*
 [5,91,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,24) [RĀJA-TAR. 5,218.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,218) *camūḥ . balamukhyaiḥ sunītā*
-[MBH. 2,197.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.197) *daivena kila yasyārthaḥ sa nīto 'pi vipadyate*
-[4,612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.612) *agraṃ* что-либо (gen.) возглавлять: *dhītī vā ye anayanvāco agram*
+[MBH. 2,197.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.197) = [≈Вульг. 2.5.63](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S063) = ≈крит. 02,5.53a *daivena kila yasyārthaḥ sa nīto 'pi vipadyate*
+[4,612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.612) = [≈Вульг. 4.20.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A020_S003) = ≈крит. 04,19.3a *agraṃ* что-либо (gen.) возглавлять: *dhītī vā ye anayanvāco agram*
 [AV. 7,1,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.001.html#av07.001.01) *agraṃ yajñasya bṛhato nayantīḥ*
 [ṚV. 6,65,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.065.html#rv06.065.02) *agraṃ nayatsupadyakṣarāṇām*
 [3,31,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.06); ср. *agraṇī* . мед.: *anayanta sindhūn*
@@ -74,11 +74,11 @@
 **2)** — 2) abführen, wegführen, fortbringen, fortschaffen; hinführen, hinbringen, hinschaffen zu: *nayatā baddhametam*
 [ṚV. 10,34,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.03) *lodhaṃ nayanti paśu manyamānāḥ*
 [3,53,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.23) *ito netā*
-[MBH. 3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) *na rāmaṃ netumarhasi*
+[MBH. 3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) = [≈Вульг. 3.66.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S006) = крит. — *na rāmaṃ netumarhasi*
 [R. 1,22,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,22,4) *nayanti māṃ tvatsakāśataḥ*
 [54,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,8) [3,53,53. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,53) *netuṃ gaṅgāṃ sa tridivaṃ yayau*
 [R. GORR. 1,44,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,44,24) *kālaṃ kālaḥ nayiṣyati*
-[MBH. 5,393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.393) *yadyanītāsu dakṣiṇāsu kalaśo dīryeta*
+[MBH. 5,393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.393) = [≈Вульг. 5.12.26](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A012_S026) = ≈крит. 05,12.26c *yadyanītāsu dakṣiṇāsu kalaśo dīryeta*
 [ŚAT. BR. 4,5,10,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,10,7)
 [KĀTY. ŚR. 25,11,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,11,7) [12,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,26) Das Ziel
  a) im acc.: *grāmamajāṃ nayati*
@@ -89,19 +89,19 @@
 [MBH. 3,5073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5073) *(tām) grahāya (= gṛhītvā) dakṣiṇe haste nināya śayanottamam*
 [HARIV. 8744.](https://sanskrit-lexicon-scans.github.io/hariv?8744) *dharmapradhānaṃ puruṣam — paralokaṃ nayatyāśu*
 [M. 4,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,243) *avidvāṃsamalam — pramadā hyutpathaṃ netum*
-[2,214.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,214) [MBH. 1,2971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2971) [SUND. 2,20.] [R. 1,42,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,20) [3,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,10) [KATHĀS. 9,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,84) [26,119.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,119) [PAÑCAT. 40,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,22) [41,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,15) [ŚUK. 44,15. 45,8.] [BHAṬṬ. 6,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,49) *nayiṣyati tvāṃ svapurīm*
+[2,214.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,214) [MBH. 1,2971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2971) = [≈Вульг. 1.73.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A073_S018) = ≈крит. 01,67.18a [SUND. 2,20.] [R. 1,42,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,20) [3,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,10) [KATHĀS. 9,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,84) [26,119.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,119) [PAÑCAT. 40,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,22) [41,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,15) [ŚUK. 44,15. 45,8.] [BHAṬṬ. 6,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,49) *nayiṣyati tvāṃ svapurīm*
 [R. 3,63,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,14)
-[MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
+[MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) = [≈Вульг. 1.152.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S015) = ≈крит. 01,139.11a *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
 [DAŚAK.] в [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
-[MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
+[MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758) = [≈Вульг. 1.42.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A042_S034) = ≈крит. 01,38.32c
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
 [DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) im dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
-[MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
+[MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [≈Вульг. 2.75.2](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S002) = ≈крит. 02,66.29a = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310) = [≈Вульг. 7.147.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A147_S013) = ≈крит. 07,122.13a
 
 *na vā etaṃ mṛtyave nayanti yaṃ yajñāya nayanti*
 [ŚAT. BR. 3,8,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,10) *agne naya supathā rāye asmān*
@@ -126,11 +126,11 @@
 - **RU:** — 2) уводить, отводить, уносить, доставлять; вести, приводить, приносить куда-либо: *nayatā baddhametam*
 [ṚV. 10,34,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.03) *lodhaṃ nayanti paśu manyamānāḥ*
 [3,53,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.053.html#rv03.053.23) *ito netā*
-[MBH. 3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) *na rāmaṃ netumarhasi*
+[MBH. 3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) = [≈Вульг. 3.66.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S006) = крит. — *na rāmaṃ netumarhasi*
 [R. 1,22,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,22,4) *nayanti māṃ tvatsakāśataḥ*
 [54,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,8) [3,53,53. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,53) *netuṃ gaṅgāṃ sa tridivaṃ yayau*
 [R. GORR. 1,44,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,44,24) *kālaṃ kālaḥ nayiṣyati*
-[MBH. 5,393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.393) *yadyanītāsu dakṣiṇāsu kalaśo dīryeta*
+[MBH. 5,393.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.393) = [≈Вульг. 5.12.26](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A012_S026) = ≈крит. 05,12.26c *yadyanītāsu dakṣiṇāsu kalaśo dīryeta*
 [ŚAT. BR. 4,5,10,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,10,7)
 [KĀTY. ŚR. 25,11,7.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,11,7) [12,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,26) Цель
  a) в acc.: *grāmamajāṃ nayati*
@@ -141,19 +141,19 @@
 [MBH. 3,5073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5073) *(tām) grahāya (= gṛhītvā) dakṣiṇe haste nināya śayanottamam*
 [HARIV. 8744.](https://sanskrit-lexicon-scans.github.io/hariv?8744) *dharmapradhānaṃ puruṣam — paralokaṃ nayatyāśu*
 [M. 4,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,243) *avidvāṃsamalam — pramadā hyutpathaṃ netum*
-[2,214.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,214) [MBH. 1,2971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2971) [SUND. 2,20.] [R. 1,42,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,20) [3,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,10) [KATHĀS. 9,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,84) [26,119.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,119) [PAÑCAT. 40,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,22) [41,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,15) [ŚUK. 44,15. 45,8.] [BHAṬṬ. 6,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,49) *nayiṣyati tvāṃ svapurīm*
+[2,214.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,214) [MBH. 1,2971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2971) = [≈Вульг. 1.73.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A073_S018) = ≈крит. 01,67.18a [SUND. 2,20.] [R. 1,42,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,20) [3,54,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,10) [KATHĀS. 9,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,84) [26,119.](https://sanskrit-lexicon-scans.github.io/kss/index.html?26,119) [PAÑCAT. 40,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,22) [41,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?41,15) [ŚUK. 44,15. 45,8.] [BHAṬṬ. 6,49.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,49) *nayiṣyati tvāṃ svapurīm*
 [R. 3,63,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,14)
-[MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
+[MBH. 1,5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5990) = [≈Вульг. 1.152.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S015) = ≈крит. 01,139.11a *dhruvaṃ tu bharataṃ rāmaḥ — deśāntaraṃ ca nayitā dehāntaramathāpi vā*
 [R. GORR. 2,7,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,23) *yantā hareḥ — ūrdhvaṃ rathaṃ harisahasrayujaṃ nināya*
 [RAGH. 12,103.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,103) *taṃ pravahaṇena nītvā puram*
 [DAŚAK.] в [BENF. Chr. 183,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) *puradvāraṃ śakaṭena nayet (yaṣṭim)*
 [VARĀH. BṚH. S. 42 (43),21.] *ātmānaṃ śanaiḥ sūkṣmaṃ (bhagavato rūpaṃ) dhiyā nayet*
 [BHĀG. P. 5,26,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,39) *tam — neṣyate yamasādanam*
-[MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758)
+[MBH. 1,1758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1758) = [≈Вульг. 1.42.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A042_S034) = ≈крит. 01,38.32c
 [BHĀG. P. 7,8,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,6) [2,2,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,20) *tvāṃ nayai tvatpriyatamam*
 [DAŚAK.] в [BENF. Chr. 187,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 — b) в dat.: *nīyatāṃ paralokāya sādhvayaṃ kulapāṃsanaḥ*
-[MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310)
+[MBH. 2,2480](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2480) = [≈Вульг. 2.75.2](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S002) = ≈крит. 02,66.29a = [7,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6310) = [≈Вульг. 7.147.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A147_S013) = ≈крит. 07,122.13a
 
 *na vā etaṃ mṛtyave nayanti yaṃ yajñāya nayanti*
 [ŚAT. BR. 3,8,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,1,10) *agne naya supathā rāye asmān*
@@ -179,11 +179,11 @@
 **3)** — 3) med. mit sich führen, mit sich nehmen (als Sieger, Eigenthümer, Machthaber): *yātudhānasya prajāṃ nayasva*
 [AV. 1,8,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.008.html#av01.008.03) *aharaharnayasāno gāmaśvaṃ puruṣaṃ jagat*
 [TAITT. ĀR. 6,5,3.] *vikrītaṃ madhyamaṃ manye rājaputra nayasva mām*
-[R. 1,61,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,20) ([63,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,23) [GORR.]). [54,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,10) [MBH. 1,679.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.679) [4000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4000) [3,9907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9907) [HARIV. 6342.](https://sanskrit-lexicon-scans.github.io/hariv?6342) [7654.](https://sanskrit-lexicon-scans.github.io/hariv?7654) [R. 2,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,22) [31,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,8) [R. GORR. 2,30,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,33) *(māṃ yadi) nayeta svapurīṃ rāmaḥ*
+[R. 1,61,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,20) ([63,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,23) [GORR.]). [54,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,10) [MBH. 1,679.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.679) = [≈Вульг. 1.3.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S014) = ≈крит. 01,3.13A [4000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4000) = [≈Вульг. 1.100.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S034) = ≈крит. 01,94.31c [3,9907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9907) = [≈Вульг. 3.107.59](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A107_S059) = ≈крит. 03,106.29c [HARIV. 6342.](https://sanskrit-lexicon-scans.github.io/hariv?6342) [7654.](https://sanskrit-lexicon-scans.github.io/hariv?7654) [R. 2,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,22) [31,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,8) [R. GORR. 2,30,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,33) *(māṃ yadi) nayeta svapurīṃ rāmaḥ*
 [5,35,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,47) *ārye satyameva nivartanam tanmāmapi netumarhasi*
 [VIKR. 82,20.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?82,20) *pustakāni nītvā pracalitāḥ*
 [PAÑCAT. 245,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,1) *tvaṃ hi bhīṣmeṇa nirjitya nītā prītimatī tadā* heimgeführt (als Weib)
-[MBH. 5,5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5982) [5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5990) [7054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7054) [7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7056)
+[MBH. 5,5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5982) = [≈Вульг. 5.175.7](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S007) = ≈крит. 05,172.6c [5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5990) = [≈Вульг. 5.175.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S015) = ≈крит. 05,172.13a [7054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7054) = [≈Вульг. 5.178.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S027) = ≈крит. 05,178.4a [7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7056) = [≈Вульг. 5.178.29](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S029) = ≈крит. 05,178.6c
 [DRAUP. 5,26.] Ausnahmsweise act.: *atha māmevamavyagrāṃ vanaṃ na cennayiṣyasi*
 [R. 2,30,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,19) *naya mām*
 [R. GORR. 2,30,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,25) *narāngehādgehātpratidivasamākṛṣya nayataḥ kṛtāntāt*
@@ -192,11 +192,11 @@
 - **RU:** — 3) мед. уводить с собой, брать с собой (как победитель, собственник, властитель): *yātudhānasya prajāṃ nayasva*
 [AV. 1,8,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.008.html#av01.008.03) *aharaharnayasāno gāmaśvaṃ puruṣaṃ jagat*
 [TAITT. ĀR. 6,5,3.] *vikrītaṃ madhyamaṃ manye rājaputra nayasva mām*
-[R. 1,61,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,20) ([63,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,23) [GORR.]). [54,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,10) [MBH. 1,679.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.679) [4000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4000) [3,9907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9907) [HARIV. 6342.](https://sanskrit-lexicon-scans.github.io/hariv?6342) [7654.](https://sanskrit-lexicon-scans.github.io/hariv?7654) [R. 2,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,22) [31,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,8) [R. GORR. 2,30,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,33) *(māṃ yadi) nayeta svapurīṃ rāmaḥ*
+[R. 1,61,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,20) ([63,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,63,23) [GORR.]). [54,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,10) [MBH. 1,679.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.679) = [≈Вульг. 1.3.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S014) = ≈крит. 01,3.13A [4000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4000) = [≈Вульг. 1.100.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S034) = ≈крит. 01,94.31c [3,9907.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9907) = [≈Вульг. 3.107.59](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A107_S059) = ≈крит. 03,106.29c [HARIV. 6342.](https://sanskrit-lexicon-scans.github.io/hariv?6342) [7654.](https://sanskrit-lexicon-scans.github.io/hariv?7654) [R. 2,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,22) [31,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,8) [R. GORR. 2,30,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,33) *(māṃ yadi) nayeta svapurīṃ rāmaḥ*
 [5,35,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,47) *ārye satyameva nivartanam tanmāmapi netumarhasi*
 [VIKR. 82,20.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?82,20) *pustakāni nītvā pracalitāḥ*
-[PAÑCAT. 245,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,1) *tvaṃ hi bhīṣmeṇa nirjitya nītā prītimatī tadā* уведённая домой (как жена)
-[MBH. 5,5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5982) [5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5990) [7054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7054) [7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7056)
+[PAÑCAT. 245,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?245,1) *tvaṃ hi bhīṣmeṇa nirjitya nītā prītimatī tadā* уведенная домой (как жена)
+[MBH. 5,5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5982) = [≈Вульг. 5.175.7](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S007) = ≈крит. 05,172.6c [5990.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5990) = [≈Вульг. 5.175.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S015) = ≈крит. 05,172.13a [7054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7054) = [≈Вульг. 5.178.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S027) = ≈крит. 05,178.4a [7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7056) = [≈Вульг. 5.178.29](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S029) = ≈крит. 05,178.6c
 [DRAUP. 5,26.] В виде исключения act.: *atha māmevamavyagrāṃ vanaṃ na cennayiṣyasi*
 [R. 2,30,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,19) *naya mām*
 [R. GORR. 2,30,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,25) *narāngehādgehātpratidivasamākṛṣya nayataḥ kṛtāntāt*

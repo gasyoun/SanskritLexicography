@@ -29,7 +29,7 @@
 
 **3)** — 3) führen, richten auf: *brahmaṇyātmānaṃ saṃnayan*
 [BHĀG. P. 6,10,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,11) herbeiführen
-[MBH. 1,7412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7412) zuführen, herbeischaffen, verschaffen: *bhadrānnaḥ śreyaḥ samanaiṣṭa (samanayīṣṭa*
+[MBH. 1,7412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7412) = [≈Вульг. 1.198.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A198_S018) = ≈крит. 01,190.18c zuführen, herbeischaffen, verschaffen: *bhadrānnaḥ śreyaḥ samanaiṣṭa (samanayīṣṭa*
 [PĀR. GṚHY. 3,1]) *devāḥ*
 [TS. 5,7,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,2,4) *tatpaśava oṣadhībhyo 'dhyātmansamanayan*
 [TBR. 2,5,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,5,3,3) *paśubhyaḥ*
@@ -39,7 +39,7 @@
 
 - **RU:** — 3) вести, направлять на: *brahmaṇyātmānaṃ saṃnayan*
 [BHĀG. P. 6,10,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,11) приводить
-[MBH. 1,7412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7412) подводить, доставлять, обеспечивать: *bhadrānnaḥ śreyaḥ samanaiṣṭa (samanayīṣṭa*
+[MBH. 1,7412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7412) = [≈Вульг. 1.198.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A198_S018) = ≈крит. 01,190.18c подводить, доставлять, обеспечивать: *bhadrānnaḥ śreyaḥ samanaiṣṭa (samanayīṣṭa*
 [PĀR. GṚHY. 3,1]) *devāḥ*
 [TS. 5,7,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,2,4) *tatpaśava oṣadhībhyo 'dhyātmansamanayan*
 [TBR. 2,5,3,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,5,3,3) *paśubhyaḥ*

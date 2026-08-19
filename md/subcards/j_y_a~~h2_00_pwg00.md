@@ -10,7 +10,7 @@
 [69,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,34) *ka evaṃ jānīte* mit folgendem fut. wer weiss, ob nicht
 [Spr. 3573.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3573) *naitā jānanti pitaraṃ na kulaṃ na ca mātaram* sie wissen nichts vom Vater u. s. w. so v. a. sie achten nicht des Vaters u. s. w.
 [1646.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1646) sich erinnern, mit gen.: *hṛdayaṃ tatra jānāti kartuścaiva kṛtasya ca*
-[MBH. 12,5169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5169) annehmen, als bekannt voraussetzen
+[MBH. 12,5169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5169) = [≈Вульг. 12.139.89](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A139_S089) = ≈крит. 12,137.85a annehmen, als bekannt voraussetzen
 [Spr. 2491.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2491) [5227.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5227) halten für: *khalagiraṃ jānāti satyām*
 [2858.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2858) *svajanaiḥ svātmavajjanturjñāyate guṇavānparaiḥ*
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.
@@ -23,7 +23,7 @@
 [69,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,34) *ka evaṃ jānīte* с последующим fut. кто знает, не …ли
 [Spr. 3573.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3573) *naitā jānanti pitaraṃ na kulaṃ na ca mātaram* они ничего не знают об отце и т.д. так преим. они не чтят отца и т.д.
 [1646.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1646) помнить, вспоминать, с gen.: *hṛdayaṃ tatra jānāti kartuścaiva kṛtasya ca*
-[MBH. 12,5169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5169) принимать, предполагать как известное
+[MBH. 12,5169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5169) = [≈Вульг. 12.139.89](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A139_S089) = ≈крит. 12,137.85a принимать, предполагать как известное
 [Spr. 2491.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2491) [5227.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5227) считать за, принимать за: *khalagiraṃ jānāti satyām*
 [2858.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2858) *svajanaiḥ svātmavajjanturjñāyate guṇavānparaiḥ*
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.

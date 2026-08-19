@@ -15,15 +15,15 @@
 
 **NWS 1)** [NWS: Graßmann 1873 (1996) : 162 (s.v. áhan)] *áhar* [Ved, unsp] Subst n áhan .
 
-- **RU:** [NWS: Graßmann 1873 (1996) : 162 (s.v. áhan)] *áhar* [Вед., неопр.] сущ. n *áhan*, *день* .
+- **RU:** [NWS: Graßmann 1873 (1996) : 162 (s.v. áhan)] *áhar* [Ved, unsp] сущ. n *áhan*, день .
   <sub>attested</sub>
 
-**NWS 2)** [NWS: Rivelex (1) : 733] [Ved, unsp] Subst n [ an jedem Tag, Tag für Tag (so AiGr). ] adv. ṚV 1,123,9 .
+**NWS 2)** [NWS: Rivelex (1) : 733] [Ved, unsp] Subst n [ an jedem Tag, Tag für Tag (so AiGr). ] adv. [ṚV 1,123,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.09) .
 
-- **RU:** [NWS: Rivelex (1) : 733] [Вед., неопр.] сущ. n [*день* за днем, каждый день (так AiGr).] нареч. ṚV 1,123,9 .
+- **RU:** [NWS: Rivelex (1) : 733] [Ved, unsp] сущ. n [день за днем, каждый день (так AiGr).] нареч. [ṚV 1,123,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.123.html#rv01.123.09) .
   <sub>attested</sub>
 
 **NWS 3)** [NWS: MW : 124 (s.v. ahar)] ahargaṇa Gen, unsp > Subst m any calculated term. Lex(MW) .
 
-- **RU:** [NWS: MW : 124 (s.v. ahar)] *ahargaṇa* [Общ., неопр.] сущ. m любой вычисленный срок. Lex(MW) .
+- **RU:** [NWS: MW : 124 (s.v. ahar)] *ahargaṇa* Gen., unsp сущ. m любой вычисленный срок. Lex(MW) .
   <sub>lexicographic</sub>

@@ -15,7 +15,7 @@
 **Nachtrag_6_1)** — *anūd*, *mūlaṃ vā atitiṣṭhadrakṣāṃsyanūtpipate* der überstehenden Wurzel nach erheben sich die Rakṣas
 [TBR. 3,2,9,10.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,9,10)
 
-- **RU:** — *anūd*, *mūlaṃ vā atitiṣṭhadrakṣāṃsyanūtpipate* согласно вышеприведённому корню, поднимаются Ракшас
+- **RU:** — *anūd*, *mūlaṃ vā atitiṣṭhadrakṣāṃsyanūtpipate* согласно вышеприведенному корню, поднимаются Ракшас
 [TBR. 3,2,9,10.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,9,10)
   <sub>attested</sub>
 

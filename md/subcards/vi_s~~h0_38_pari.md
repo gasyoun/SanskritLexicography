@@ -24,5 +24,5 @@
 
 **nachtr.)** — Vgl. *pariveśas, apariviṣṭa* und 1. *viṣ* mit *pari*, welches häufig mit *śa* geschrieben wird. Hierher gehört wohl *pariveṣaṇa* 2), welches auch in der [ed. Bomb.] mit *śa* geschrieben wird.
 
-- **RU:** — ср. *pariveśas, apariviṣṭa* und 1. *viṣ* mit *pari*, welches häufig mit *śa* geschrieben wird. Сюда, вероятно, относится *pariveṣaṇa* 2), которое также в [ed. Bomb.] пишется как *śa*.
+- **RU:** — ср. *pariveśas, apariviṣṭa* и 1. *viṣ* mit *pari*, welches häufig mit *śa* geschrieben wird. Сюда, вероятно, относится *pariveṣaṇa* 2), которое также в [Бомбейская ред.] пишется как *śa*.
   <sub>attested</sub>

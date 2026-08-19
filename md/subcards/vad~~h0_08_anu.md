@@ -46,7 +46,7 @@
 [ŚAṂK.] zu [CHĀND. UP. S. 54.] Comm. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,42) [KULL.] zu [M. 1,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,74) [2,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,6) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,45) [3,25. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,25) [6,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,87) [8,409.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,409) [SĀH. D. 215,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?215,2)
 
 - **RU:** — 2) act. говорить снова, возвращаться к чему-либо, повторять что-либо (чтобы подчеркнуть его важность)
-[ŚAṂK.] zu [CHĀND. UP. S. 54.] коммент. zu [NYĀYAS. 1,1,1. 2,1,64.] zu [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,42) [KULL.] zu [M. 1,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,74) [2,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,6) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,45) [3,25. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,25) [6,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,87) [8,409.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,409) [SĀH. D. 215,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?215,2)
+[ŚAṂK.] к [CHĀND. UP. S. 54.] коммент. к [NYĀYAS. 1,1,1. 2,1,64.] к [JAIM. 1,23.] [BHĀG. P. 11,21,42. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,21,42) [KULL.] к [M. 1,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,74) [2,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,6) [45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,45) [3,25. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,25) [6,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,87) [8,409.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,409) [SĀH. D. 215,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?215,2)
   <sub>attested</sub>
 
 **3)** — 3) schmähen: *dakṣamanūdya*
@@ -57,11 +57,11 @@
   <sub>attested</sub>
 
 **4)** — 4) Jmd um ein Almosen ansprechen: *ye tvānuvādeyuravṛttikarśitāḥ*
-[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229)
+[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S015) = ≈крит. 04,6.13c
 [NĪLAK.] : *anuvāde 'yuḥ pūrvaṃ dehītyuktyā dattasyaiva kṣetrārāmādeḥ prativarṣaṃ punardehīti rājavacanaṃ yadadhikāriṇaṃ prati tadanuvādastannimittaṃ ye tvāṃ prati ayuḥ prāpnuyuḥ*
 
 - **RU:** — 4) просить кого-либо о подаянии: *ye tvānuvādeyuravṛttikarśitāḥ*
-[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229)
+[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S015) = ≈крит. 04,6.13c
 [NĪLAK.] : *anuvāde 'yuḥ pūrvaṃ dehītyuktyā dattasyaiva kṣetrārāmādeḥ prativarṣaṃ punardehīti rājavacanaṃ yadadhikāriṇaṃ prati tadanuvādastannimittaṃ ye tvāṃ prati ayuḥ prāpnuyuḥ*
   <sub>attested</sub>
 

@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["Akulita"]=[{"key": "_akulita~~h0_zz_sch", "h": "ākulita", "iast": "ākulita", "senses": [{"tag": "SCH (Nachtr.)", "de_html": "˚eifrig beschäftigt mit, einzig bedacht auf, <span class=ls>Sam. VI,30</span>; VIII,49.", "ru_html": "ревностно занятый чем-либо, всецело поглощенный чем-либо, <span class=ls>Sam. VI,30</span>; VIII,49.", "en_html": "", "dcs": null, "src": "attested"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["Akulita"]=[];

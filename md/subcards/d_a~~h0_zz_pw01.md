@@ -225,7 +225,7 @@
 
 **mit_T64_4)** — 4〉 weggeben, so v. a. verkaufen, mit Instr. des Preises.
 
-- **RU:** — 4〉 отдавать, так преим. продавать, с Instr. цены.
+- **RU:** — 4〉 отдавать, так преим. продавать, с Ins. цены.
   <sub>attested</sub>
 
 **mit_T64_5)** — 5〉 wiedererstatten.

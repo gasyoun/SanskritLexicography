@@ -17,11 +17,11 @@
 [KĀM. NĪTIS. 12,40.] [BHĀG. P. 3,2,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,8) [6,4,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,24) *na saṃvasetpatitaiḥ*
 [M. 4,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,79) [246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,246)
 [YĀJÑ. 3,210.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,210)
-[MBH. 12,470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.470)
+[MBH. 12,470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.470) = [≈Вульг. 12.15.47](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A015_S047) = ≈крит. 12,15.47a
 [R. 5,88,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,2)
 [BHĀG. P. 9,14,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,14,40) *na ca taiḥ saha saṃvaset*
 [YĀJÑ. 3,15.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,15) [227.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,227)
-[MBH. 4,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109)
+[MBH. 4,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109) = [≈Вульг. 4.4.27](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S027) = ≈крит. 04,4.21c
 [R. 3,30,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,30,13)
 [Spr. 1037](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1037), v. l. mit acc. der Person
 [M. 11,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,190)
@@ -41,11 +41,11 @@
 [KĀM. NĪTIS. 12,40.] [BHĀG. P. 3,2,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,8) [6,4,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,24) *na saṃvasetpatitaiḥ*
 [M. 4,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,79) [246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,246)
 [YĀJÑ. 3,210.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,210)
-[MBH. 12,470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.470)
+[MBH. 12,470.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.470) = [≈Вульг. 12.15.47](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A015_S047) = ≈крит. 12,15.47a
 [R. 5,88,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,2)
 [BHĀG. P. 9,14,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,14,40) *na ca taiḥ saha saṃvaset*
 [YĀJÑ. 3,15.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,15) [227.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,227)
-[MBH. 4,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109)
+[MBH. 4,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109) = [≈Вульг. 4.4.27](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S027) = ≈крит. 04,4.21c
 [R. 3,30,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,30,13)
 [Spr. 1037](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1037), v. l. с acc. лица
 [M. 11,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,190)
@@ -53,12 +53,12 @@
   <sub>attested</sub>
 
 **2)** — 2) sich aufhalten, seinen Wohnsitz haben, leben: *kṣitau ca ye cādhastātsaṃvasante*
-[MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) *tathā saṃvasatastasya munīnāmāśrame sukham*
+[MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) = [≈Вульг. 12.318.86](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A318_S086) = ≈крит. 12,306.83a *tathā saṃvasatastasya munīnāmāśrame sukham*
 [R. 3,15,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,28) *svabhūmau naiva saṃvaset*
 [Verz. d. Oxf. H. 269,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?269)
 
-- **RU:** — 2) пребывать, иметь своё жилище, жить: *kṣitau ca ye cādhastātsaṃvasante*
-[MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) *tathā saṃvasatastasya munīnāmāśrame sukham*
+- **RU:** — 2) пребывать, иметь свое жилище, жить: *kṣitau ca ye cādhastātsaṃvasante*
+[MBH. 12,11809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11809) = [≈Вульг. 12.318.86](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A318_S086) = ≈крит. 12,306.83a *tathā saṃvasatastasya munīnāmāśrame sukham*
 [R. 3,15,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,28) *svabhūmau naiva saṃvaset*
 [Verz. d. Oxf. H. 269,a,38.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?269)
   <sub>attested</sub>
@@ -88,8 +88,8 @@
   <sub>attested</sub>
 
 **caus-2)** — 2) beherbergen
-[MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
+[MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418) = [≈Вульг. 13.159.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A159_S018) = ≈крит. 13,144.14e
 
 - **RU:** — 2) принимать на постой, давать кров
-[MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418)
+[MBH. 13,7418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7418) = [≈Вульг. 13.159.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A159_S018) = ≈крит. 13,144.14e
   <sub>attested</sub>

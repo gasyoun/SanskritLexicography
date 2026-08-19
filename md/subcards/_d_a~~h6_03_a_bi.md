@@ -10,7 +10,7 @@
 
 - **RU:** — *abhi*
  2)
-[BHĀG. P. 5,23,8](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,8) читает [ed. Bomb.] *dhīmahi* (= *mantreṇopatiṣṭhema* коммент.) вместо *abhivīmahi*;
+[BHĀG. P. 5,23,8](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,23,8) читает [Бомбейская ред.] *dhīmahi* (= *mantreṇopatiṣṭhema* коммент.) вместо *abhivīmahi*;
 [8,3,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,2) объясняется *abhidhīmahi* через *abhidhyāyema*, то есть возводится к *dhyā*; ср. u. *samabhi* и u. 1. *dhī* .
   <sub>attested</sub>
 

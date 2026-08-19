@@ -13,9 +13,9 @@
 - **RU:** [Ved , unsp] ( dáhati I ) гореть. Kaus: заставлять сжечь Hillebrandt 1885 : 92
   <sub>attested</sub>
 
-**NWS-3)** [Ved , unsp] ( I ) brennen, verbrennen. ṚV 4,4,4
+**NWS-3)** [Ved , unsp] ( I ) brennen, verbrennen. [ṚV 4,4,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.04)
 
-- **RU:** [Ved , unsp] ( I ) гореть, сжигать. ṚV 4,4,4 Geldner 1907 : 80
+- **RU:** [Ved , unsp] ( I ) гореть, сжигать. [ṚV 4,4,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.04) Geldner 1907 : 80
   <sub>attested</sub>
 
 **NWS-4)** [Ved , unsp] „faire du mal“. Caland 1908, p. 100
@@ -40,7 +40,7 @@
 
 **NWS-8)** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : herabbrennen, durch Glut herabtreiben (Akk) von (Abl). Ved , unsp
 
-- **RU:** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : выжигать вниз, вытеснять жаром (Acc) от (Abl). Ved , unsp Graßmann 1873 (1996) : 586
+- **RU:** *+ ava : ṝeuer herabṭerṛen auṛ. ṚV 1,33,7 .* [Ved , unsp] + áva : выжигать вниз, вытеснять жаром (Acc) от (Abl.). Ved , unsp Graßmann 1873 (1996) : 586
   <sub>attested</sub>
 
 **NWS-9)** *+ ā , phass khaus: sich verbrennen. chhū Vī 16, 3 .* [Ved , unsp] + ud ( uddahati ): burns up. Śikṣās 324.15 (vs) . Buddh , unsp ; BHSD : 130 (s.v. uddahati )
@@ -50,12 +50,12 @@
 
 **NWS-10)** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): set on fire. RājTa . Gen , unsp ; MW : 555 (s.v. nirdah )
 
-- **RU:** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): поджигать. RājTa . Gen , unsp ; MW : 555 (s.v. nirdah )
+- **RU:** *+ ní : niederbrennen (ākk).* [Ved , unsp] + nis , Caus ( nirdāhayati ): поджигать. RājTa . Gen. , unsp ; MW : 555 (s.v. nirdah )
   <sub>attested</sub>
 
-**NWS-11)** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – wegbrennen, ausräuchern; versengen, verbrennen, auch fig. ṚV 10,80,3 , ṚV 10,34,9 . Ved , unsp
+**NWS-11)** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – wegbrennen, ausräuchern; versengen, verbrennen, auch fig. [ṚV 10,80,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.080.html#rv10.080.03) , [ṚV 10,34,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.09) . Ved , unsp
 
-- **RU:** *– aus-, verbrennen. ṚV 10,34,9 .* [Ved , unsp] – выжигать, выкуривать; опалять, сжигать, также перен. ṚV 10,80,3 , ṚV 10,34,9 . Ved , unsp Geldner 1907 : 80
+- **RU:** *– aus-, verbrennen. [ṚV 10,34,9 .* [Ved , unsp] – выжигать, выкуривать; опалять, сжигать, также перен. ṚV 10,80,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.09) , [ṚV 10,34,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.09) . Ved , unsp Geldner 1907 : 80
   <sub>attested</sub>
 
 **NWS-12)** *+ nís : ganṣ verbrennen, vernichten (ākk).* [Ved , unsp] + pari ( paridahyati , ° te , pass.) is tormented (with passion or desire). Divyāv 420.6 . Buddh , unsp ; BHSD : 325 (s.v. paridahyati )
@@ -63,19 +63,19 @@
 - **RU:** *+ nís : ganṣ verbrennen, vernichten (ākk).* [Ved , unsp] + pari ( paridahyati , ° te , pass.) томится (страстью или желанием). Divyāv 420.6 . Buddh , unsp ; BHSD : 325 (s.v. paridahyati )
   <sub>attested</sub>
 
-**NWS-13)** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : versengen. ṚV 3,18,1 . Ved , unsp
+**NWS-13)** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : versengen. [ṚV 3,18,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.018.html#rv03.018.01) . Ved , unsp
 
-- **RU:** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : опалять. ṚV 3,18,1 . Ved , unsp Geldner 1907 : 80
+- **RU:** *+ prá : verbrennen, vernichten (ākk).* [Ved , unsp] + prati : опалять. [ṚV 3,18,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.018.html#rv03.018.01) . Ved , unsp Geldner 1907 : 80
   <sub>attested</sub>
 
-**NWS-14)** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : verbrennen. ṚV 10,16,1 . Ved , unsp
+**NWS-14)** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : verbrennen. [ṚV 10,16,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) . Ved , unsp
 
-- **RU:** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : сжигать. ṚV 10,16,1 . Ved , unsp Geldner 1907 : 80
+- **RU:** *+ práti : entgegenbrennen, mit ghlut entgegengehen (ākk).* [Ved , unsp] + vi : сжигать. [ṚV 10,16,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) . Ved , unsp Geldner 1907 : 80
   <sub>attested</sub>
 
 **NWS-15)** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) consumed; b) tawny or reddish brown (like impure blood). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
 
-- **RU:** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) сожженный, испепеленный; b) буро-желтоватый или красновато-коричневый (как нечистая кровь). ŚB , Lex(MW) . Gen , unsp ; MW : 965 (s.v. vídagdha )
+- **RU:** *+ ví : durch bhrennen beschädigen (ākk).* [Ved , unsp] + vi ( vídagdha ): a) сожженный, испепеленный; b) буро-желтоватый или красновато-коричневый (как нечистая кровь). ŚB , Lex(MW) . Gen. , unsp ; MW : 965 (s.v. vídagdha )
   <sub>mixed</sub>
 
 **NWS-16)** *+ vyapa : see vyava °.* [Buddh , unsp (s.v. vyapadahyati )] + vyava (° dahyati , pass.): is consumed, burnt away [v.l. vyapa °]. Mvu i.18.13 . Buddh , unsp ; BHSD : 515 (s.v. vyavadahyati )

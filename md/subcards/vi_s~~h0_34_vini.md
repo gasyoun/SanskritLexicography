@@ -29,15 +29,15 @@
 **4)** — 4) aufgetragen: *giridhātu (lalāṭe)*
 [R. 2,96,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,19) ([105,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,18) [GORR.]).
 
-- **RU:** — 4) нанесённый, наложенный: *giridhātu (lalāṭe)*
+- **RU:** — 4) нанесенный, наложенный: *giridhātu (lalāṭe)*
 [R. 2,96,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,19) ([105,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,18) [GORR.]).
   <sub>attested</sub>
 
 **5)** — 5) angelegt: *taḍāgāni*
-[MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211)
+[MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211) = [≈Вульг. 2.5.77](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S077) = ≈крит. 02,5.67c
 
 - **RU:** — 5) заложенный, устроенный: *taḍāgāni*
-[MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211)
+[MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211) = [≈Вульг. 2.5.77](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S077) = ≈крит. 02,5.67c
   <sub>attested</sub>
 
 **verb.1)** — Vgl. *viniveśin* . — caus.
@@ -67,11 +67,11 @@
   <sub>attested</sub>
 
 **verb.3)** — 3) aufstellen (Truppen)
-[MBH. 7,1494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1494)
+[MBH. 7,1494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1494) = [≈Вульг. 7.34.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A034_S013) = ≈крит. 07,33.12a
 [KĀM. NĪTIS. 16,6.]
 
 - **RU:** — 3) расставлять (войска)
-[MBH. 7,1494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1494)
+[MBH. 7,1494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1494) = [≈Вульг. 7.34.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A034_S013) = ≈крит. 07,33.12a
 [KĀM. NĪTIS. 16,6.]
   <sub>attested</sub>
 
@@ -113,13 +113,13 @@
 
 **verb.8)** — 8) bringen —, versetzen auf: *pathi viniveśitātmanām*
 [KĀM. NĪTIS. 3,38.] Jmd anstellen: *sārathye*
-[MBH. 5,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5253) *kare* so v. a. tributpflichtig machen
-[2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035)
+[MBH. 5,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5253) = [≈Вульг. 5.157.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A157_S019) = ≈крит. 05,154.17c *kare* so v. a. tributpflichtig machen
+[2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035) = [≈Вульг. 2.27.26](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U05_A027_S026) = ≈крит. 02,24.25c
 
 - **RU:** — 8) переводить —, переносить на: *pathi viniveśitātmanām*
 [KĀM. NĪTIS. 3,38.] назначить кого-либо: *sārathye*
-[MBH. 5,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5253) *kare* так преим. облагать данью
-[2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035)
+[MBH. 5,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5253) = [≈Вульг. 5.157.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A157_S019) = ≈крит. 05,154.17c *kare* так преим. облагать данью
+[2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035) = [≈Вульг. 2.27.26](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U05_A027_S026) = ≈крит. 02,24.25c
   <sub>attested</sub>
 
 **verb.9)** — 9) *hṛdaye* in's Herz prägen: *hṛdaye kuśalairviniveśitā . śikṣā*
@@ -130,10 +130,10 @@
   <sub>attested</sub>
 
 **verb.10)** — 10) richten (Blick, Gedanken) auf Etwas: *govinde viniveśitāṃ dṛṣṭim*
-[MBH. 14,1538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1538) *matiṃ puryarthe*
+[MBH. 14,1538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1538) = [≈Вульг. 14.53.3](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A053_S003) = ≈крит. 14,52.3a *matiṃ puryarthe*
 [HARIV. 6415.](https://sanskrit-lexicon-scans.github.io/hariv?6415)
 
 - **RU:** — 10) направлять (взгляд, мысли) на что-либо: *govinde viniveśitāṃ dṛṣṭim*
-[MBH. 14,1538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1538) *matiṃ puryarthe*
+[MBH. 14,1538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1538) = [≈Вульг. 14.53.3](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A053_S003) = ≈крит. 14,52.3a *matiṃ puryarthe*
 [HARIV. 6415.](https://sanskrit-lexicon-scans.github.io/hariv?6415)
   <sub>attested</sub>

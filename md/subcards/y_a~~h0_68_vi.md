@@ -53,6 +53,6 @@
 [AK. 3,1,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,25)
 [H. 432.](https://sanskrit-lexicon-scans.github.io/abch2/app1?432)
 [HALĀY. 2,216.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,216) *virūpaṃ yātaṃ gamanaṃ ceṣṭanaṃ yasya sa viyāto 'vinītaḥ*
-[KAIY.] zu [P. 7,2,19.](https://ashtadhyayi.com/sutraani/7/2/19) urspr. wohl выродившийся; ср. *vaiyātya* . —
+[KAIY.] к [P. 7,2,19.](https://ashtadhyayi.com/sutraani/7/2/19) urspr. wohl выродившийся; ср. *vaiyātya* . —
 [AV. 3,31,5](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.031.html#av03.031.05) scheint der Text entstellt zu sein.
   <sub>attested</sub>

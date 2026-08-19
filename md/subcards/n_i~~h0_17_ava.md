@@ -24,7 +24,7 @@
 [KĀTY. ŚR. 9,3,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,21) *uccheṣaṇaṃ valmīkavapāyāmavanayet*
 [TBR. 1,8,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,2) *manthe saṃpātamavanayet*
 [CHĀND. UP. 5,2,4.] — Diese Verbindung ist später nicht zu belegen, da *nāvanīta*
-[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ von *navanīta* ist.
+[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [≈Вульг. 5.185.30](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A185_S030) = ≈крит. 05,186.29c = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ von *navanīta* ist.
 — Vgl. *avanaya, ˚nayana, ˚nāya* .
 
 - **RU:** — 2) отливать, лить вниз, поливать сверху
@@ -35,6 +35,6 @@
 [KĀTY. ŚR. 9,3,21.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,21) *uccheṣaṇaṃ valmīkavapāyāmavanayet*
 [TBR. 1,8,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,6,2) *manthe saṃpātamavanayet*
 [CHĀND. UP. 5,2,4.] — Это словосочетание в более позднее время не засвидетельствовано, так как *nāvanīta*
-[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ от *navanīta* .
+[MBH. 5,7319](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [≈Вульг. 5.185.30](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A185_S030) = ≈крит. 05,186.29c = [BENF. Chr. 43,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?43) _adj._ от *navanīta* .
 — ср. *avanaya, ˚nayana, ˚nāya* .
   <sub>attested</sub>

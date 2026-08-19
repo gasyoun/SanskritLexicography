@@ -22,14 +22,14 @@ _PWG article — 1 sub-card(s), 7 sense(s) · RU 7/7 · EN 0/7_
 - **RU:** [NWS: Hillebrandt 1885] вымя. Hillebrandt 1885: 79
   <sub>mixed</sub>
 
-**NWS-4)** Ved , unsp > Subst n Euter. ṚV 2,14,10 . [ des Berges, von den Quellen. ṚV 5,32,2 . ] des Himmels Euter = Wolke. ṚV 10,45,3 . Geldner 1907 : 37
+**NWS-4)** Ved , unsp > Subst n Euter. [ṚV 2,14,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.014.html#rv02.014.10) . [ des Berges, von den Quellen. [ṚV 5,32,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.02) . ] des Himmels Euter = Wolke. [ṚV 10,45,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.045.html#rv10.045.03) . Geldner 1907 : 37
 
-- **RU:** [NWS: Geldner 1907] вымя. ṚV 2,14,10. [горы, источников. ṚV 5,32,2.] вымя неба = облако. ṚV 10,45,3. Geldner 1907: 37
+- **RU:** [NWS: Geldner 1907] вымя. [ṚV 2,14,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.014.html#rv02.014.10). [горы, источников. [ṚV 5,32,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.02).] вымя неба = облако. [ṚV 10,45,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.045.html#rv10.045.03). Geldner 1907: 37
   <sub>attested</sub>
 
-**NWS-5)** Ved , unsp > Subst n Nacht. Naigh 1,7 . [ bes die kalte. ṚV 5,34,3 . ] Nacht. [ = Tag. ] Geldner 1907 : 37
+**NWS-5)** Ved , unsp > Subst n Nacht. Naigh 1,7 . [ bes die kalte. [ṚV 5,34,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.03) . ] Nacht. [ = Tag. ] Geldner 1907 : 37
 
-- **RU:** [NWS: Geldner 1907] ночь. Naigh 1,7. [особ. холодная. ṚV 5,34,3.] ночь. [= день.] Geldner 1907: 37
+- **RU:** [NWS: Geldner 1907] ночь. Naigh 1,7. [особ. холодная. [ṚV 5,34,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.03).] ночь. [= день.] Geldner 1907: 37
   <sub>mixed</sub>
 
 **NWS-6)** ū́dhan Ved , unsp > ū́dhas . Geldner 1907 : 37 (s.v. ū́dhas )

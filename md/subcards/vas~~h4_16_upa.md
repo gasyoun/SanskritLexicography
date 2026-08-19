@@ -31,7 +31,7 @@
 [1. 8.] med. [ŚĀṄKH. GṚHY. 2,12.] — *upavaseddinam*
 [M. 2,220.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,220) [5,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,20) [11,157.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,157) [213.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,213) [259.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,259)
 [YĀJÑ. 3,292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,292)
-[MBH. 15,126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.126)
+[MBH. 15,126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.126) = [≈Вульг. 15.3.66](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A003_S066) = ≈крит. 15,6.26a
 [R. GORR. 1,45,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,45,1)
 [VARĀH. BṚH. S. 105,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,8)
 [BHĀG. P. 7,12,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,5) [WEBER, KṚṢṆAJ. 226.] *trirātramupoṣya*
@@ -42,7 +42,7 @@
 [KATHĀS. 93,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?93,82)
 [BHĀG. P. 4,8,71.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,71) [8,9,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,14) *upoṣita* gefastet habend, nüchtern
 [YĀJÑ. 2,97.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,97)
-[MBH. 13,3259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3259) [3264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3264) [3267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3267) [3276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3276)
+[MBH. 13,3259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3259) = [≈Вульг. 13.64.8](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S008) = ≈крит. 13,63.8c [3264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3264) = [≈Вульг. 13.64.13](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S013) = ≈крит. 13,63.13a [3267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3267) = [≈Вульг. 13.64.16](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S016) = ≈крит. 13,63.16a [3276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3276) = [≈Вульг. 13.64.25](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S025) = ≈крит. 13,63.25a
 [HARIV. 7602.](https://sanskrit-lexicon-scans.github.io/hariv?7602)
 [RAGH. 16,39.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,39)
 [KATHĀS. 33,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,156) [42,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,173)
@@ -74,7 +74,7 @@
 [1. 8.] мед. [ŚĀṄKH. GṚHY. 2,12.] — *upavaseddinam*
 [M. 2,220.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,220) [5,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,20) [11,157.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,157) [213.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,213) [259.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,259)
 [YĀJÑ. 3,292.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,292)
-[MBH. 15,126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.126)
+[MBH. 15,126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.126) = [≈Вульг. 15.3.66](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A003_S066) = ≈крит. 15,6.26a
 [R. GORR. 1,45,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,45,1)
 [VARĀH. BṚH. S. 105,8.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,8)
 [BHĀG. P. 7,12,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,5) [WEBER, KṚṢṆAJ. 226.] *trirātramupoṣya*
@@ -85,7 +85,7 @@
 [KATHĀS. 93,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?93,82)
 [BHĀG. P. 4,8,71.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,71) [8,9,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,14) *upoṣita* «постившийся, натощак»
 [YĀJÑ. 2,97.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,97)
-[MBH. 13,3259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3259) [3264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3264) [3267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3267) [3276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3276)
+[MBH. 13,3259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3259) = [≈Вульг. 13.64.8](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S008) = ≈крит. 13,63.8c [3264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3264) = [≈Вульг. 13.64.13](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S013) = ≈крит. 13,63.13a [3267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3267) = [≈Вульг. 13.64.16](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S016) = ≈крит. 13,63.16a [3276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3276) = [≈Вульг. 13.64.25](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S025) = ≈крит. 13,63.25a
 [HARIV. 7602.](https://sanskrit-lexicon-scans.github.io/hariv?7602)
 [RAGH. 16,39.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,39)
 [KATHĀS. 33,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,156) [42,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,173)
@@ -96,7 +96,7 @@
 [MBH. 3,4086.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4086)
 [KATHĀS. 19,6.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,6) [21,143.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,143)
 [RĀJA-TAR. 4,100.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,100) *upoṣitābhyāmiva locanābhyām*
-[RAGH. 2,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,19) с pass. знач. «проведённый в посте»: *tithi*
+[RAGH. 2,19.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,19) с pass. знач. «проведенный в посте»: *tithi*
 [WEBER, KṚṢṆAJ. 222.] _n._ «пост»
 [Spr. 4455.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4455)
 [MĀRK. P. 16,61.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,61) *upoṣya* «провести в посте»
@@ -112,18 +112,18 @@ Schol. *vikuṇṭham*
   <sub>attested</sub>
 
 **4)** — 4) sich zu Jmd (acc.) in die Lehre begeben
-[MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177)
+[MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177) = [≈Вульг. 5.55.34](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A055_S034) = ≈крит. 05,54.33a
 
 - **RU:** 4) отправляться к кому-л. (acc.) в обучение
-[MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177)
+[MBH. 5,2177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2177) = [≈Вульг. 5.55.34](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A055_S034) = ≈крит. 05,54.33a
   <sub>attested</sub>
 
 **5)** — 5) antreten, sich widmen, obliegen: *tapaḥśraddhe ye hyupavasanti*
 [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat*
-[MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) nach der Lesart der [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā*
+[MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) = [≈Вульг. 13.4.6](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A004_S006) = ≈крит. 13,4.6a nach der Lesart der [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā*
 [MĀRK. P. 126,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,17) [19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,19)
 
-- **RU:** 5) приступать, посвящать себя, исполнять: *tapaḥśraddhe ye hyupavasanti* [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat* [MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) по чтению [ed. Bomb.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā* [MĀRK. P. 126,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,17) [19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,19)
+- **RU:** 5) приступать, посвящать себя, исполнять: *tapaḥśraddhe ye hyupavasanti* [MUṆḌ. UP. 1,2,11.] *vanavāsamupāvasat* [MBH. 13,205](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.205) = [≈Вульг. 13.4.6](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A004_S006) = ≈крит. 13,4.6a по чтению [Бомбейская ред.] *udāvasat* [ed. Calc.] *kimicchakamupoṣitā* [MĀRK. P. 126,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,17) [19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?126,19)
   <sub>attested</sub>
 
 **6)** — 6) *upavasita*
@@ -131,7 +131,7 @@ Schol. *vikuṇṭham*
 [ŚAT. BR. 3,9,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,2,8) Andere schreiben ganz falsch *upavasathā*, die Ausg. der Bibl. ind. *upavasithā* .
 
 - **RU:** 6) *upavasita*
-[ĀŚV. GṚHY. 1,14,7] у [ST.] ошибочно вместо *upāvasita* (от *sā* с *upā)*, как читает сличённая нами рукоп.; ср.
+[ĀŚV. GṚHY. 1,14,7] у [ST.] ошибочно вм. *upāvasita* (от *sā* с *upā)*, как читает сличенная нами рукоп.; ср.
 [ŚAT. BR. 3,9,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,2,8) Другие пишут совершенно неверно *upavasathā*, изд. Bibl. ind. *upavasithā*.
   <sub>lexicographic</sub>
 
@@ -147,10 +147,10 @@ Schol. *vikuṇṭham*
 **causative-2)** — 2) fasten lassen
 [PĀR. GṚHY. 1,14.]
 [R. 2,5,4](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4) ([4,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,4,4) [GORR.]). *atithiṃ nopavāsayet*
-[MBH. 12,7046](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7046) = [13,7576.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7576)
+[MBH. 12,7046](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7046) = [≈Вульг. 12.195.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A195_S008) = ≈крит. 12,188.8c = [13,7576.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7576) = [≈Вульг. 13.162.45](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A162_S045) = ≈крит. 13,148.19a
 
 - **RU:** 2) заставлять поститься
 [PĀR. GṚHY. 1,14.]
 [R. 2,5,4](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4) ([4,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,4,4) [GORR.]). *atithiṃ nopavāsayet*
-[MBH. 12,7046](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7046) = [13,7576.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7576)
+[MBH. 12,7046](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7046) = [≈Вульг. 12.195.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A195_S008) = ≈крит. 12,188.8c = [13,7576.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7576) = [≈Вульг. 13.162.45](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A162_S045) = ≈крит. 13,148.19a
   <sub>attested</sub>

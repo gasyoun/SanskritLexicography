@@ -5,7 +5,7 @@
 
 **1)** — *abhipra* hineingehen in —, sich ergiessen in (acc.), von einem Flusse [BHĀG. P. 5,17,6. fgg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,6) *mahāgajo dhvāntamabhipraviṣṭaḥ* gerathen in [R. 2,21,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,53) st. *nipānagambhīramabhipraviṣṭam* [HARIV. 8799](https://sanskrit-lexicon-scans.github.io/hariv?8799) liest die neuere Ausg. *˚gambhīramiva pra˚* .
 
-- **RU:** — *abhipra* «входить в —, вливаться в» (acc.), о реке [BHĀG. P. 5,17,6. fgg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,6) *mahāgajo dhvāntamabhipraviṣṭaḥ* «попадать в» [R. 2,21,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,53) вместо *nipānagambhīramabhipraviṣṭam* [HARIV. 8799](https://sanskrit-lexicon-scans.github.io/hariv?8799) читает новейший изд. *˚gambhīramiva pra˚* .
+- **RU:** — *abhipra* входить в —, вливаться в (acc.), о реке [BHĀG. P. 5,17,6. fgg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,6) *mahāgajo dhvāntamabhipraviṣṭaḥ* попадать в [R. 2,21,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,53) вместо *nipānagambhīramabhipraviṣṭam* [HARIV. 8799](https://sanskrit-lexicon-scans.github.io/hariv?8799) читает новейший изд. *˚gambhīramiva pra˚* .
   <sub>attested</sub>
 
 **2)** — Vgl. *abhipraveśa* .

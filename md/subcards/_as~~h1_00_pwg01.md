@@ -21,11 +21,11 @@
 *prāyamāsmahe* «мы медленно умираем» (см. *i* с *pra*) «мы обрекаем себя на голодную смерть»
 [R. 4,57,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,57,23) *prāyamāsīnān* 3. *kasmādvā prāyamāsyate*
 [56,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,24) ср. также u. *upa* и *prāyamupaviṣṭān*
-[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) Из этого следует, что *prāyamāśiṣye, āśitum* и *upāśiṣye* (см. 1. *aś* с *ā* и *upa*) является лишь неверным написанием. О смешении *ās* и *aś* см. ещё u. 6. Поскольку *ās* и в иных случаях сочетается с acc. (ср. ниже при partic. *āsita* первый пример u. c), то *doham* и *prāyam* могут быть поняты и как настоящие acc..
+[R. 4,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,56,20) Из этого следует, что *prāyamāśiṣye, āśitum* и *upāśiṣye* (см. 1. *aś* с *ā* и *upa*) является лишь неверным написанием. О смешении *ās* и *aś* см. еще u. 6. Поскольку *ās* и в иных случаях сочетается с acc. (ср. ниже при partic. *āsita* первый пример u. c), то *doham* и *prāyam* могут быть поняты и как настоящие acc..
   <sub>attested</sub>
 
 **4c)** — c) ein _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (er verhält sich ganz ruhig) *parjanyastatra kāraṇam ..*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248)
+[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S047) = ≈крит. 03,33.44c
 [PAÑCAT. 21,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,10) *tūṣṇīmāsyatām*
 [HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* (gehabe dich wohl) *ramasva ca*
 [R. 2,16,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,19) *sukhamāstāṃ bhavān*
@@ -35,14 +35,14 @@
 [R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) Hierher ist wohl auch zu ziehen: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
 [BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 und 64.
 
-- **RU:** — c) _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* («он ведёт себя совершенно спокойно») *parjanyastatra kāraṇam ..*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248)
+- **RU:** — c) _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (он ведет себя совершенно спокойно) *parjanyastatra kāraṇam ..*
+[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S047) = ≈крит. 03,33.44c
 [PAÑCAT. 21,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,10) *tūṣṇīmāsyatām*
-[HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* («будь здоров, благополучствуй») *ramasva ca*
+[HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* (будь здоров, благополучствуй) *ramasva ca*
 [R. 2,16,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,19) *sukhamāstāṃ bhavān*
-[VIKR. 65,17.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?65,17) *sukhamāsyate kaiḥ* «кто чувствует себя хорошо?»
+[VIKR. 65,17.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?65,17) *sukhamāsyate kaiḥ* кто чувствует себя хорошо?
 [BHARTṚ. 2,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,49) *kimiti joṣamāsyate*
-[ŚĀK. 66,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,16) *evamāste* («в этих обстоятельствах находится») *mahābhāgā sītā*
+[ŚĀK. 66,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,16) *evamāste* (в этих обстоятельствах находится) *mahābhāgā sītā*
 [R. 5,57,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,57,15) Сюда, по всей видимости, относится также: *sthitadhīḥ kiṃ prabhāṣeta kimāsīta vrajeta kim*
 [BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); ср. 61 и 64.
   <sub>attested</sub>
@@ -63,7 +63,7 @@ ein Geschäft übertragen hat,
 **4e)** — e) ein dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* möge die gute Führung redlicher Leute wie eine Neuvermählte euerm Herzen zur Freude gereichen und zwar dauernd
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
 
-- **RU:** — e) dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* «да будет благонравие честных людей, подобно молодой супруге, радостью вашему сердцу — и притом неизменно»
+- **RU:** — e) dat.: *āstāṃ mānasatuṣṭaye sukṛtināṃ nītirnavoḍheva vaḥ* да будет благонравие честных людей, подобно молодой супруге, радостью вашему сердцу — и притом неизменно
 [HIT. I,207.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,207)
   <sub>attested</sub>
 
@@ -75,11 +75,11 @@ ein Geschäft übertragen hat,
 [HIT. 122,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,19) *āstāṃ tāvat*
 [127,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,15)
 
-- **RU:** — 5) «улечься, прекратиться, окончиться»: *tadāstāṃ tāvadvihaṃgamāmiṣalobho yāvatkuṭumbajīvanopāyabhūtaṃ jālamapi me naṣṭam*
-[PAÑCAT. 106,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?106,19) *āstāṃ tāvat* («пора положить конец» перечислению пороков женщин) *kimanyena daurātmyeneha yoṣitām . vivṛtaṃ svodareṇāpi ghnanti putraṃ svakaṃ ruṣā ..*
+- **RU:** — 5) улечься, прекратиться, окончиться: *tadāstāṃ tāvadvihaṃgamāmiṣalobho yāvatkuṭumbajīvanopāyabhūtaṃ jālamapi me naṣṭam*
+[PAÑCAT. 106,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?106,19) *āstāṃ tāvat* (пора положить конец перечислению пороков женщин) *kimanyena daurātmyeneha yoṣitām . vivṛtaṃ svodareṇāpi ghnanti putraṃ svakaṃ ruṣā ..*
 [IV,61.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,61) *āstāṃ jīvitahāriṇaḥ pravasanālāpasya kīrtanam*
 [AMAR. 97.]
-[DAŚAK. 185], ult. *āstāṃ mā maivam* «довольно! не так! не так!»
+[DAŚAK. 185], ult. *āstāṃ mā maivam* довольно! не так! не так!
 [HIT. 122,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?122,19) *āstāṃ tāvat*
 [127,15.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?127,15)
   <sub>attested</sub>
@@ -115,7 +115,7 @@ ein Geschäft übertragen hat,
 **VN-2)** — 2) _n._
  a) das Sitzen, Sichsetzen: *jṛmbhāsitādikṛt (ālasyam)*
 [SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* schlechte, unschickliche Art zu sitzen
-[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669)
+[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669) = [≈Вульг. 3.233.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S021) = ≈крит. 03,222.20a
 — b) der Ort, an dem man gesessen oder gewohnt hat: *idameṣāmāsitam*
 Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
 [R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* sitzen heissen: *devadattam*
@@ -126,7 +126,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **RU:** — 2) _n._
  a) «сидение, усаживание»: *jṛmbhāsitādikṛt (ālasyam)*
 [SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* «дурная, неприличная манера сидеть»
-[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669)
+[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669) = [≈Вульг. 3.233.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S021) = ≈крит. 03,222.20a
 — b) «место, где сидели или обитали»: *idameṣāmāsitam*
 схол. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
 [R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* «велеть сесть»: *devadattam*

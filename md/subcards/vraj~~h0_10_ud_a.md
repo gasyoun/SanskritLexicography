@@ -6,6 +6,6 @@
 **1)** — *udā* vorwärts schreiten: *anavekṣamāṇā grāmamudāvrajanti*
 [KAUŚ. 7. 18. fg.]
 
-- **RU:** — *udā* шагать вперёд: *anavekṣamāṇā grāmamudāvrajanti*
+- **RU:** — *udā* шагать вперед: *anavekṣamāṇā grāmamudāvrajanti*
 [KAUŚ. 7. 18. fg.]
   <sub>attested</sub>

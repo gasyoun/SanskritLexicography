@@ -8,7 +8,7 @@ Z. 8 *(abhi) dadhyuṣī* auch die [ed. Bomb.]; die Form gehört zu *dhyāḥ*
 Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) liest die neuere Ausg. *patibhaktyorjitāśca* st. *patibhaktyai dhitāḥ sma* .
 
 - **RU:** 1. *dhā*
-стк. 8 *(abhi) dadhyuṣī* также [ed. Bomb.]; форма относится к *dhyāḥ*
+стк. 8 *(abhi) dadhyuṣī* также [Бомбейская ред.]; форма относится к *dhyāḥ*
 стк. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) читает новейшее изд. *patibhaktyorjitāśca* вместо *patibhaktyai dhitāḥ sma* .
   <sub>attested</sub>
 
@@ -34,5 +34,5 @@ Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) liest d
 
 - **RU:** — 11) *ye (vāsarāḥ) cālpatvaṃ dadhati* становиться кратким, казаться кратким
 [Spr. 2519.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2519) [Sp. 904.] стк. 12. сл. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) означает *dhatte* при правильном чтении reddit; ср.
-[Spr. 401.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?401) В конце, [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) читает [ed. Bomb.] правильно *adhārayat* .
+[Spr. 401.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?401) В конце, [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) читает [Бомбейская ред.] правильно *adhārayat* .
   <sub>attested</sub>

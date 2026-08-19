@@ -5,7 +5,7 @@
 
 **e)** — e〉 besiegt werden von (Instr.), Jmd nachstehen.
 
-- **RU:** — e〉 быть побежденным кем-л. (Instr.), уступать кому-л.
+- **RU:** — e〉 быть побежденным кем-л. (Ins.), уступать кому-л.
   <sub>attested</sub>
 
 **f)** — f〉 ablassen —, abstehen von, untreu werden; mit Abl.
@@ -40,7 +40,7 @@
 
 **7c)** — c〉 ermangelnd, ohne — seiend (die Ergänzung im Abl., Instr. oder im Comp. vorangehend).
 
-- **RU:** — c〉 лишенный, не имеющий (дополнение стоит в Abl., Instr. или предшествует в Comp.).
+- **RU:** — c〉 лишенный, не имеющий (дополнение стоит в Abl., Ins. или предшествует в Comp.).
   <sub>attested</sub>
 
 **caus)** — Caus.
@@ -60,7 +60,7 @@
 
 **caus-3)** — 3〉 Jmd um Etwas (Instr.) bringen.
 
-- **RU:** — 3〉 лишать кого-л. чего-л. (Instr.).
+- **RU:** — 3〉 лишать кого-л. чего-л. (Ins.).
   <sub>attested</sub>
 
 **caus-4)** — 4〉 *parihāpya* mit Ausnahme von (Acc.) [ĀPAST. 1,13,9. 17,15. 25,11. 30,14. 2,10,6. 14,1. 15,5]. [ĀPAST. ŚR. 12,4,5. 8].
@@ -97,7 +97,7 @@
 
 **mit-T18-5a)** — a〉 aufgegeben werden —, weichen von Jmd (Instr.).
 
-- **RU:** — a〉 быть оставленным —, отступать от кого-л. (Instr.).
+- **RU:** — a〉 быть оставленным —, отступать от кого-л. (Ins.).
   <sub>attested</sub>
 
 **mit-T18-5b)** — b〉 unterbleiben, versäumt werden.
@@ -137,7 +137,7 @@
 
 **mit-T18-6d)** — d〉 nicht zu Stande kommend mit Etwas (Instr.).
 
-- **RU:** — d〉 не справляющийся с чем-л. (Instr.).
+- **RU:** — d〉 не справляющийся с чем-л. (Ins.).
   <sub>attested</sub>
 
 **mit-T18-6e)** — e〉 geschwunden [256,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [JĀTAKAM. 22].
@@ -179,12 +179,12 @@
 
 **mit-T36-2c)** — c〉 ermangelnd, ohne — seiend; die Ergänzung im Instr.
 
-- **RU:** — c〉 лишенный, не имеющий; дополнение в Instr.
+- **RU:** — c〉 лишенный, не имеющий; дополнение в Ins.
   <sub>attested</sub>
 
 **mit-T41)** — Mit *saṃpra* verlassen [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
 
-- **RU:** — С *saṃpra* покидать [R. ed. Bomb. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
+- **RU:** — С *saṃpra* покидать [R. Бомбейская ред. 4,22,16](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,22,16).
   <sub>attested</sub>
 
 **mit-T43-1)** — Mit *prati*
@@ -308,7 +308,7 @@
 
 **mit-T47-11c)** — c〉 ermangelnd, ohne — seiend, beraubt —, getrennt —, frei von (Instr., Abl. oder im Comp. vorangehend).
 
-- **RU:** — c〉 лишенный, не имеющий, лишенный —, отделенный —, свободный от (Instr., Abl. или предшествует в Comp.).
+- **RU:** — c〉 лишенный, не имеющий, лишенный —, отделенный —, свободный от (Ins., Abl. или предшествует в Comp.).
   <sub>attested</sub>
 
 **addenda-ptcp)** — Caus. s. *vihāpita* [Nachtr. 6].

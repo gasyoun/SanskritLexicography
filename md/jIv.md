@@ -22,12 +22,12 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [7,143.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,143) *sa jīvaṃśca mṛtaścaiva na kvacitsukhamedhate*
 [5,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,45) *sa jīvanneva śūdratvamāśu gacchati* noch bei Lebzeiten
 [2,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,168) *jānīhi bhrātaram — yadi jīvati*
-[MBH. 3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) *kathaṃ jīveyuratyantaṃ kathaṃ vardheyurityapi*
-[344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.344) *te jīvanti sukhaṃ loke*
-[1,5915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5915) *muhūrtaṃ na sa jīvati*
+[MBH. 3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) = [≈Вульг. 3.6.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S008) = ≈крит. 03,7.7c *kathaṃ jīveyuratyantaṃ kathaṃ vardheyurityapi*
+[344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.344) = [≈Вульг. 3.9.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A009_S021) = ≈крит. 03,10.21c *te jīvanti sukhaṃ loke*
+[1,5915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5915) = [≈Вульг. 1.150.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S011) = ≈крит. 01,137.11c *muhūrtaṃ na sa jīvati*
 [R. 3,35,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,27) *jīvatvekasutastava*
 [VID. 205.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?205) *jīviṣyasi samārbudam*
-[MBH. 13,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1344)
+[MBH. 13,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1344) = [≈Вульг. 13.18.47](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S047) = ≈крит. 13,18.34a
 [R. 2,48,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,23) *jīvatyanātho 'pi vane visarjitaḥ*
 [PAÑCAT. I,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,24) *kāladaṣṭā na jīvati kanyeyam* wird nicht am Leben bleiben
 [VET. 16,13.] *saṃśayaṃ punarāruhya yadi jīvati paśyati* (*bhadrāṇi*) wenn er am Leben bleibt
@@ -36,23 +36,23 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [CAURAP. 11.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?11) *taravaḥ kiṃ na jīvanti*
 [BHĀG. P. 2,3,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,18) *jīvedvaiśyasya jīvikām*
 [M. 10,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,82) [4,11.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,11)
-[MBH. 3,1185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1185)
+[MBH. 3,1185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1185) = [≈Вульг. 3.31.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A031_S026) = ≈крит. 03,32.24a
 [R. 5,26,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,25) *jīvatvasukhajīvikām*
 [N. 11,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,17) *saha jīvantaḥ* zusammenlebend
 [M. 9,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,210) med.: *sa sukhī jīvate sadā*
-[MBH. 3,13852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13852) [1,5913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5913) [13,5016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5016)
+[MBH. 3,13852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13852) = [≈Вульг. 3.208.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A208_S035) = ≈крит. 03,199.30a [1,5913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5913) = [≈Вульг. 1.150.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S009) = ≈крит. 01,137.9c [13,5016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5016) = [≈Вульг. 13.104.62](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S062) = ≈крит. 13,107.29c
 [HARIV. 14440.](https://sanskrit-lexicon-scans.github.io/hariv?14440)
 [BHĀG. P. 1,2,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,10) *na hyekasminhate rāme sarve jīvāmahe vayam*
 [R. 1,75,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,9) *yauvarājye jīvasva*
 [2,58,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,20) *jīviṣye*
 [SĀV. 5,99.] *jīvamāna*
-[MBH. 2,626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.626) [3,345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.345) [6,5449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5449) [7,475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.475) [8,213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.213)
+[MBH. 2,626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.626) = [≈Вульг. 2.14.62](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A014_S062) = ≈крит. 02,13.61a [3,345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.345) = [≈Вульг. 3.9.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A009_S022) = ≈крит. 03,10.22a [6,5449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5449) = [≈Вульг. 6.116.74](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A116_S074) = ≈крит. 06,112.72a [7,475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.475) = [≈Вульг. 7.13.16](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A013_S016) = ≈крит. 07,12.15c [8,213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.213)
 [BHARTṚ. Suppl. 2.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app3?2) *jīvitum*
 [ŚAT. BR. 14,9,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,2,8)
 [DRAUP. 9,10.]
-[MBH. 3,16232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16232) *jīvase*
+[MBH. 3,16232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16232) = [≈Вульг. 3.282.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A282_S036) = ≈крит. 03,266.35c *jīvase*
 [VS. 16,49.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,49)
-[ṚV. 1,25,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.21) [36,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.036.html#rv01.036.14) u. s. w. [MBH. 1,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.732) *jīvitavai*
+[ṚV. 1,25,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.21) [36,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.036.html#rv01.036.14) u. s. w. [MBH. 1,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.732) = [≈Вульг. 1.3.67](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S067) = ≈крит. 01,3.70a *jīvitavai*
 [AV. 6,109,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.109.html#av06.109.01) pass. impers.: *yajjīvyate kṣaṇamapi — manuṣyaiḥ*
 [PAÑCAT. I,29.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,29) *yasyāḥ saṅgena jīvyeta*
 [IV,34.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,34) [HIT. I,195.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,195)
@@ -72,12 +72,12 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [7,143.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,143) *sa jīvaṃśca mṛtaścaiva na kvacitsukhamedhate*
 [5,45.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,45) *sa jīvanneva śūdratvamāśu gacchati* еще при жизни
 [2,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,168) *jānīhi bhrātaram — yadi jīvati*
-[MBH. 3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) *kathaṃ jīveyuratyantaṃ kathaṃ vardheyurityapi*
-[344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.344) *te jīvanti sukhaṃ loke*
-[1,5915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5915) *muhūrtaṃ na sa jīvati*
+[MBH. 3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) = [≈Вульг. 3.6.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S008) = ≈крит. 03,7.7c *kathaṃ jīveyuratyantaṃ kathaṃ vardheyurityapi*
+[344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.344) = [≈Вульг. 3.9.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A009_S021) = ≈крит. 03,10.21c *te jīvanti sukhaṃ loke*
+[1,5915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5915) = [≈Вульг. 1.150.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S011) = ≈крит. 01,137.11c *muhūrtaṃ na sa jīvati*
 [R. 3,35,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,27) *jīvatvekasutastava*
 [VID. 205.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?205) *jīviṣyasi samārbudam*
-[MBH. 13,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1344)
+[MBH. 13,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1344) = [≈Вульг. 13.18.47](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S047) = ≈крит. 13,18.34a
 [R. 2,48,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,23) *jīvatyanātho 'pi vane visarjitaḥ*
 [PAÑCAT. I,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,24) *kāladaṣṭā na jīvati kanyeyam* не останется в живых
 [VET. 16,13.] *saṃśayaṃ punarāruhya yadi jīvati paśyati* (*bhadrāṇi*) если он останется жив
@@ -86,23 +86,23 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [CAURAP. 11.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?11) *taravaḥ kiṃ na jīvanti*
 [BHĀG. P. 2,3,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,18) *jīvedvaiśyasya jīvikām*
 [M. 10,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,82) [4,11.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,11)
-[MBH. 3,1185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1185)
+[MBH. 3,1185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1185) = [≈Вульг. 3.31.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A031_S026) = ≈крит. 03,32.24a
 [R. 5,26,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,26,25) *jīvatvasukhajīvikām*
 [N. 11,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,17) *saha jīvantaḥ* живущие вместе
 [M. 9,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,210) мед.: *sa sukhī jīvate sadā*
-[MBH. 3,13852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13852) [1,5913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5913) [13,5016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5016)
+[MBH. 3,13852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13852) = [≈Вульг. 3.208.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A208_S035) = ≈крит. 03,199.30a [1,5913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5913) = [≈Вульг. 1.150.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S009) = ≈крит. 01,137.9c [13,5016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5016) = [≈Вульг. 13.104.62](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S062) = ≈крит. 13,107.29c
 [HARIV. 14440.](https://sanskrit-lexicon-scans.github.io/hariv?14440)
 [BHĀG. P. 1,2,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,10) *na hyekasminhate rāme sarve jīvāmahe vayam*
 [R. 1,75,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,9) *yauvarājye jīvasva*
 [2,58,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,20) *jīviṣye*
 [SĀV. 5,99.] *jīvamāna*
-[MBH. 2,626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.626) [3,345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.345) [6,5449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5449) [7,475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.475) [8,213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.213)
+[MBH. 2,626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.626) = [≈Вульг. 2.14.62](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A014_S062) = ≈крит. 02,13.61a [3,345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.345) = [≈Вульг. 3.9.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A009_S022) = ≈крит. 03,10.22a [6,5449.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5449) = [≈Вульг. 6.116.74](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A116_S074) = ≈крит. 06,112.72a [7,475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.475) = [≈Вульг. 7.13.16](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A013_S016) = ≈крит. 07,12.15c [8,213.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.213)
 [BHARTṚ. Suppl. 2.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app3?2) *jīvitum*
 [ŚAT. BR. 14,9,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,2,8)
 [DRAUP. 9,10.]
-[MBH. 3,16232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16232) *jīvase*
+[MBH. 3,16232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16232) = [≈Вульг. 3.282.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A282_S036) = ≈крит. 03,266.35c *jīvase*
 [VS. 16,49.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,49)
-[ṚV. 1,25,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.21) [36,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.036.html#rv01.036.14) и т.д. [MBH. 1,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.732) *jīvitavai*
+[ṚV. 1,25,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.21) [36,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.036.html#rv01.036.14) и т.д. [MBH. 1,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.732) = [≈Вульг. 1.3.67](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S067) = ≈крит. 01,3.70a *jīvitavai*
 [AV. 6,109,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.109.html#av06.109.01) pass. impers.: *yajjīvyate kṣaṇamapi — manuṣyaiḥ*
 [PAÑCAT. I,29.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,29) *yasyāḥ saṅgena jīvyeta*
 [IV,34.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?4,34) [HIT. I,195.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,195)
@@ -123,7 +123,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [M. 10,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,112) [11,18.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,18) *vetanādibhyo jīvati*
 [P. 4,4,12.](https://ashtadhyayi.com/sutraani/4/4/12) *gṛdhrocchiṣṭena*
 [M. 11,26.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,26) *sattvaiḥ sattvāni jīvanti bahudhā*
-[MBH. 3,13830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13830) *vipaṇena*
+[MBH. 3,13830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13830) = [≈Вульг. 3.208.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A208_S013) = ≈крит. 03,199.10c *vipaṇena*
 [M. 3,152.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,152) *nakṣatraiḥ*
 [162.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,162) *ṛtāmṛtābhyām*
 [4,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,4) *paradharmeṇa*
@@ -133,13 +133,13 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 * bāṇijyaṃ tena caivāpi jīvyate*
 [M. 4,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,6) Auch mit dem loc. der Person: *ṣaḍime ṣaṭsu jīvanti saptamo nopalabhyate . caurāḥ pramatte jīvanti vyādhiteṣu cikitsakāḥ .. pramadāḥ kāmayāneṣu yājamāneṣu yājakāḥ . rājā vivadamāneṣu nityaṃ mūrkheṣu paṇḍitāḥ ..*
-[MBH. 5,1059. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1059) — caus.
+[MBH. 5,1059. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1059) = [≈Вульг. 5.33.89](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A033_S089) = крит. — — caus.
 
 - **RU:** 3) иметь пропитание, жить чем-л., кормиться чем-л. (instr.): *ajīvan* не имеющий пропитания
 [M. 10,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,112) [11,18.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,18) *vetanādibhyo jīvati*
 [P. 4,4,12.](https://ashtadhyayi.com/sutraani/4/4/12) *gṛdhrocchiṣṭena*
 [M. 11,26.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,26) *sattvaiḥ sattvāni jīvanti bahudhā*
-[MBH. 3,13830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13830) *vipaṇena*
+[MBH. 3,13830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13830) = [≈Вульг. 3.208.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A208_S013) = ≈крит. 03,199.10c *vipaṇena*
 [M. 3,152.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,152) *nakṣatraiḥ*
 [162.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,162) *ṛtāmṛtābhyām*
 [4,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,4) *paradharmeṇa*
@@ -149,7 +149,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 * bāṇijyaṃ tena caivāpi jīvyate*
 [M. 4,6.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,6) Также с loc. лица: *ṣaḍime ṣaṭsu jīvanti saptamo nopalabhyate . caurāḥ pramatte jīvanti vyādhiteṣu cikitsakāḥ .. pramadāḥ kāmayāneṣu yājamāneṣu yājakāḥ . rājā vivadamāneṣu nityaṃ mūrkheṣu paṇḍitāḥ ..*
-[MBH. 5,1059. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1059) — caus.
+[MBH. 5,1059. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1059) = [≈Вульг. 5.33.89](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A033_S089) = крит. — — caus.
   <sub>attested</sub>
 
 **caus-1)** 1) *jīvayati* (ep. auch *˚te)*; aor. *ajījivat* und *ajijīvat*
@@ -157,22 +157,22 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [VOP. 18,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,3) lebendig machen, beleben; Jmd am Leben lassen, Jmdes Leben erhalten so v. a. ihn nicht sterben lassen als auch ihn nicht tödten: *utāgaścakruṣaṃ devā devā jīvayathā punaḥ*
 [ṚV. 10,137,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.01)
 [ĀŚV. ŚR. 6,9.] *tānpunarjīvayāmāsa*
-[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
-[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
-[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) (med.).
-[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
+[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) = [≈Вульг. 1.76.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A076_S007) = ≈крит. 01,71.6e *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
+[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) = [≈Вульг. 1.50.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A050_S035) = крит. — *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
+[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) = [≈Вульг. 1.43.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S001) = ≈крит. 01,39.1c [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) = [≈Вульг. 1.43.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S003) = ≈крит. 01,39.3c (med.).
+[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) = [≈Вульг. 1.50.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A050_S034) = крит. — [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) = [≈Вульг. 17.3.15](https://sanatana.in/mahabharata/listing/parva/mahaprasthanikaparva?id=P17_U01_A003_S015) = ≈крит. 17,3.14a *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
 [KATHĀS. 14,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,80) *jīvaya mṛtamiva dāsam*
 [GĪT. 12,6.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,6) *ajījivat*
 [BHAṬṬ. 15,110.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,110) *api māṃ jīvayiṣyadhvam*
-[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) *tāṃ sakhīṃ māṃ ca jīvaya*
+[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) = [≈Вульг. 3.282.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A282_S034) = ≈крит. 03,266.33c *tāṃ sakhīṃ māṃ ca jīvaya*
 [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) *tanme prāṇavyayenāpi jīvayaitān*
 [HIT. I,40.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,40) *jīvayeyamahaṃ kāmaṃ na tu tvaṃ jīvituṃ kṣamaḥ*
-[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) *jahi śālvam — mainaṃ jīvaya*
-[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
+[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) = [≈Вульг. 9.31.70](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A031_S070) = ≈крит. 09,30.66a *jahi śālvam — mainaṃ jīvaya*
+[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) = [≈Вульг. 3.22.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S022) = ≈крит. 03,23.21c *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
 [R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* so v. a. er tödtete ihn
 [BHAṬṬ. 15,122.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,122) Jmd leben lassen so v. a. ernähren, aufziehen: *kathaṃ hi vidhavānāthā — mithunaṃ jīvayiṣyāmi*
-[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
-[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) *eṣo 'smān jīvayet*
+[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) = [≈Вульг. 1.156.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A156_S014) = ≈крит. 01,144.15a *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
+[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) = [≈Вульг. 13.102.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A102_S005) = ≈крит. 13,105.5a *eṣo 'smān jīvayet*
 [KATHĀS. 3,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,17) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,18) *jantūn jīvayituṃ tataḥ . svayamannapatiḥ — kṣitimavātarat*
 [RĀJA-TAR. 5,72.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,72)
 
@@ -181,22 +181,22 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [VOP. 18,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,3) оживлять, оживить; оставлять кого-л. в живых, сохранять чью-л. жизнь — и в смысле преим. не дать ему умереть, и в смысле не убивать его: *utāgaścakruṣaṃ devā devā jīvayathā punaḥ*
 [ṚV. 10,137,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.01)
 [ĀŚV. ŚR. 6,9.] *tānpunarjīvayāmāsa*
-[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
-[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
-[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) (мед.).
-[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
+[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) = [≈Вульг. 1.76.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A076_S007) = ≈крит. 01,71.6e *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
+[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) = [≈Вульг. 1.50.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A050_S035) = крит. — *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
+[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) = [≈Вульг. 1.43.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S001) = ≈крит. 01,39.1c [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) = [≈Вульг. 1.43.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S003) = ≈крит. 01,39.3c (мед.).
+[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) = [≈Вульг. 1.50.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A050_S034) = крит. — [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) = [≈Вульг. 17.3.15](https://sanatana.in/mahabharata/listing/parva/mahaprasthanikaparva?id=P17_U01_A003_S015) = ≈крит. 17,3.14a *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
 [KATHĀS. 14,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,80) *jīvaya mṛtamiva dāsam*
 [GĪT. 12,6.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,6) *ajījivat*
 [BHAṬṬ. 15,110.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,110) *api māṃ jīvayiṣyadhvam*
-[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) *tāṃ sakhīṃ māṃ ca jīvaya*
+[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) = [≈Вульг. 3.282.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A282_S034) = ≈крит. 03,266.33c *tāṃ sakhīṃ māṃ ca jīvaya*
 [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) *tanme prāṇavyayenāpi jīvayaitān*
 [HIT. I,40.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,40) *jīvayeyamahaṃ kāmaṃ na tu tvaṃ jīvituṃ kṣamaḥ*
-[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) *jahi śālvam — mainaṃ jīvaya*
-[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
+[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) = [≈Вульг. 9.31.70](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A031_S070) = ≈крит. 09,30.66a *jahi śālvam — mainaṃ jīvaya*
+[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) = [≈Вульг. 3.22.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S022) = ≈крит. 03,23.21c *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
 [R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* — в знач. преим. он убил его
 [BHAṬṬ. 15,122.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,122) позволять кому-л. жить, а также преим. кормить, воспитывать: *kathaṃ hi vidhavānāthā — mithunaṃ jīvayiṣyāmi*
-[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
-[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) *eṣo 'smān jīvayet*
+[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) = [≈Вульг. 1.156.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A156_S014) = ≈крит. 01,144.15a *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
+[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) = [≈Вульг. 13.102.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A102_S005) = ≈крит. 13,105.5a *eṣo 'smān jīvayet*
 [KATHĀS. 3,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,17) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,18) *jantūn jīvayituṃ tataḥ . svayamannapatiḥ — kṣitimavātarat*
 [RĀJA-TAR. 5,72.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,72)
   <sub>attested</sub>
@@ -215,20 +215,20 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [LĀṬY. 8,8,41.] *kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ*
 [ĪŚOP. 2.]
 [PRAB. 108,7.] *imāmavasthāṃ saṃprāptā madanyā kā jijīviṣet*
-[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) *yāneva hatvā na jijīviṣāmaḥ*
+[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) = [≈Вульг. 4.20.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A020_S006) = ≈крит. 04,19.5c *yāneva hatvā na jijīviṣāmaḥ*
 [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) seinen Lebensunterhalt zu finden suchen, leben wollen von (instr.): *dhaninaṃ vāpyupārādhya vaiśyaṃ śūdro jijīviṣet*
 [M. 10,121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,121) *kaccinna bhedena jijīviṣanti suhṛdrūpā durhṛdaḥ*
-[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702)
+[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702) = [≈Вульг. 5.23.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S018) = ≈крит. 05,23.18a
 
 - **RU:** Desid. 1) *jijīviṣati* хотеть жить, желать жить: *jijīviṣet*
 [KĀTY. ŚR. 22,6,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,20)
 [LĀṬY. 8,8,41.] *kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ*
 [ĪŚOP. 2.]
 [PRAB. 108,7.] *imāmavasthāṃ saṃprāptā madanyā kā jijīviṣet*
-[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) *yāneva hatvā na jijīviṣāmaḥ*
+[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) = [≈Вульг. 4.20.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A020_S006) = ≈крит. 04,19.5c *yāneva hatvā na jijīviṣāmaḥ*
 [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) стремиться найти пропитание, хотеть жить чем-л. (instr.): *dhaninaṃ vāpyupārādhya vaiśyaṃ śūdro jijīviṣet*
 [M. 10,121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,121) *kaccinna bhedena jijīviṣanti suhṛdrūpā durhṛdaḥ*
-[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702)
+[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702) = [≈Вульг. 5.23.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S018) = ≈крит. 05,23.18a
   <sub>attested</sub>
 
 ## jīv
@@ -290,29 +290,29 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
   <sub>attested</sub>
 
 **2)** — 2) für Jmd leben, sich ihm ganz hingeben, ihm zugethan sein: *trayodaśemā hi samāḥ sadā vayaṃ tvāmanvajīviṣma dhanaṃjayāśayā*
-[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) *jīvantāvanujīvāmi bhartavyau tau mameti ca*
+[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) = [≈Вульг. 8.68.13](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A068_S013) = ≈крит. 08,48.9a *jīvantāvanujīvāmi bhartavyau tau mameti ca*
 [SĀV. 5,94.] *ye ca tvāmanujīvanti nāhaṃ teṣāṃ na te mama*
 [R. 2,42,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,7)
 
 - **RU:** 2) жить ради кого-л., всецело отдаваться кому-л., быть преданным ему: *trayodaśemā hi samāḥ sadā vayaṃ tvāmanvajīviṣma dhanaṃjayāśayā*
-[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) *jīvantāvanujīvāmi bhartavyau tau mameti ca*
+[MBH. 8,3388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3388) = [≈Вульг. 8.68.13](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A068_S013) = ≈крит. 08,48.9a *jīvantāvanujīvāmi bhartavyau tau mameti ca*
 [SĀV. 5,94.] *ye ca tvāmanujīvanti nāhaṃ teṣāṃ na te mama*
 [R. 2,42,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,7)
   <sub>attested</sub>
 
 **3)** — 3) leben von, bestehen durch, erhalten werden von; mit dem acc.: *jīvantaṃ tvānujīvantu prajāḥ sarvā yudhiṣṭhira .. parjanyamiva bhūtāni mahādrumamivāṇḍajāḥ . kuveramiva rakṣāṃsi śatakratumivāmarāḥ .. jñātayastvānujīvantu suhṛdaśca* (vgl. *anu tvāṃ tāta jīvantu brāhmaṇāḥ suhṛdastathā . parjanyamiva bhūtāni devā iva śatakratum ..*
-[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
+[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) = [≈Вульг. 13.61.37](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S037) = ≈крит. 13,60.24a [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) = [≈Вульг. 14.1.17](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A001_S017) = ≈крит. 14,1.16a [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
 
 - **RU:** 3) жить чем-л., существовать благодаря чему-л., поддерживаться чем-л.; с acc.: *jīvantaṃ tvānujīvantu prajāḥ sarvā yudhiṣṭhira .. parjanyamiva bhūtāni mahādrumamivāṇḍajāḥ . kuveramiva rakṣāṃsi śatakratumivāmarāḥ .. jñātayastvānujīvantu suhṛdaśca* (ср. *anu tvāṃ tāta jīvantu brāhmaṇāḥ suhṛdastathā . parjanyamiva bhūtāni devā iva śatakratum ..*
-[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
+[5,4535](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,5,4535)) [MBH. 13,3100. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3100) = [≈Вульг. 13.61.37](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S037) = ≈крит. 13,60.24a [14,16.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16) = [≈Вульг. 14.1.17](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A001_S017) = ≈крит. 14,1.16a [R. 5,2,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,35)
   <sub>attested</sub>
 
 **4)** — 4) sich in Etwas (acc.) fügen, Jmd Etwas gönnen: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
-[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. Jmd wieder zum Leben bringen
+[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Вульг. 7.11.47](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A011_S047) = ≈крит. 07,10.46c — caus. Jmd wieder zum Leben bringen
 [DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 
 - **RU:** 4) смиряться с чем-л. (acc.), желать кому-л. чего-л.: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
-[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) — caus. возвращать кого-л. к жизни
+[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Вульг. 7.11.47](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A011_S047) = ≈крит. 07,10.46c — caus. возвращать кого-л. к жизни
 [DAŚAK.] в [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
   <sub>attested</sub>
 
@@ -329,14 +329,14 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 **1)** — *ā* leben von, bestehen durch, Nutzen ziehen aus: *yamājīvanti puruṣaṃ *
 
 * sarvabhūtāni — pakvadrumamivāsādya tasya jīvitamarthavat*
-[MBH. 5,4536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4536) *ājīvan* benutzend
+[MBH. 5,4536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4536) = [≈Вульг. 5.135.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A135_S022) = ≈крит. 05,133.20c *ājīvan* benutzend
 [YĀJÑ. 2,67.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,67) *(dhenuḥ) ājīvyamānā jagatāṃ sākṣayā nāpacīyate*
 [MĀRK. P. 29,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,8)
 
 - **RU:** ā+*ā* жить чем-л., существовать благодаря чему-л., извлекать пользу из чего-л.: *yamājīvanti puruṣaṃ *
 
 * sarvabhūtāni — pakvadrumamivāsādya tasya jīvitamarthavat*
-[MBH. 5,4536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4536) *ājīvan* используя
+[MBH. 5,4536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4536) = [≈Вульг. 5.135.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A135_S022) = ≈крит. 05,133.20c *ājīvan* используя
 [YĀJÑ. 2,67.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,67) *(dhenuḥ) ājīvyamānā jagatāṃ sākṣayā nāpacīyate*
 [MĀRK. P. 29,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,8)
   <sub>attested</sub>
@@ -353,12 +353,12 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 **1)** — *ud* wieder aufleben: *udajīvat*
 [BHAṬṬ. 17,95.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,95) *kaścinmartyo mṛto rājanpunarujjīvito 'bhavat*
-[MBH. 12,5675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5675) [14,2392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2392) — caus. beleben: *vīryaṃ saṃdhukṣayantī = punarujjīvayantī*
+[MBH. 12,5675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5675) = [≈Вульг. 12.153.60](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A153_S060) = ≈крит. 12,149.56c [14,2392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2392) = [≈Вульг. 14.80.52](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S052) = ≈крит. 14,81.12a — caus. beleben: *vīryaṃ saṃdhukṣayantī = punarujjīvayantī*
 [MALLIN.] zu [KUMĀRAS. 3,52.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,52)
 
 - **RU:** ud+*ud* снова оживать, возвращаться к жизни: *udajīvat*
 [BHAṬṬ. 17,95.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,95) *kaścinmartyo mṛto rājanpunarujjīvito 'bhavat*
-[MBH. 12,5675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5675) [14,2392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2392) — caus. оживлять: *vīryaṃ saṃdhukṣayantī = punarujjīvayantī*
+[MBH. 12,5675.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5675) = [≈Вульг. 12.153.60](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A153_S060) = ≈крит. 12,149.56c [14,2392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2392) = [≈Вульг. 14.80.52](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S052) = ≈крит. 14,81.12a — caus. оживлять: *vīryaṃ saṃdhukṣayantī = punarujjīvayantī*
 [MALLIN.] к [KUMĀRAS. 3,52.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,52)
   <sub>attested</sub>
 
@@ -373,10 +373,10 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 
 **1)** — *abhyud* als Haupt, als Beschützer Anderer leben: *svabāhubalamāśritya yo 'bhyujjīvati mānavaḥ . sa loke labhate kīrtiṃ paratra ca śubhāṃ gatim ..*
-[MBH. 5,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538)
+[MBH. 5,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A135_S024) = ≈крит. 05,133.21c
 
 - **RU:** abhyud+*abhyud* жить как глава, как защитник других: *svabāhubalamāśritya yo 'bhyujjīvati mānavaḥ . sa loke labhate kīrtiṃ paratra ca śubhāṃ gatim ..*
-[MBH. 5,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538)
+[MBH. 5,4538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A135_S024) = ≈крит. 05,133.21c
   <sub>attested</sub>
 
 ## jīv
@@ -417,24 +417,24 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [KAUŚ. 68.] *ye tvā devosrikaṃ manyamānāḥ pāpā bhadramupajīvanti pajrāḥ*
 [ṚV. 1,190,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.190.html#rv01.190.05) — *śeṣāstam (jyeṣṭham) upajīveyuryathaiva pitaraṃ tathā*
 [M. 9,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,105) *parjanyamiva bhūtāni mahādrumamiva dvijāḥ .. bāndhavāstvopajīvantu sahasrākṣamivāmarāḥ .*
-[MBH. 2,1624. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1624) [3,15093.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15093) [11466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11466) [4,2283.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2283) [7,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1061) [3422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3422) [13,288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.288) [1811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1811)
+[MBH. 2,1624. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1624) = [≈Вульг. 2.45.62](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A045_S062) = ≈крит. 02,42.55e [3,15093.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15093) = [≈Вульг. 3.249.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A249_S024) = ≈крит. 03,238.23a [11466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11466) = [≈Вульг. 3.155.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A155_S030) = ≈крит. 03,153.29a [4,2283.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2283) = [≈Вульг. 4.70.24](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U05_A070_S024) = ≈крит. 04,65.17c [7,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1061) = [≈Вульг. 7.24.20](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A024_S020) = ≈крит. 07,23.19e [3422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3422) = [≈Вульг. 7.94.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A094_S013) = ≈крит. 07,69.13a [13,288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.288) = [≈Вульг. 13.5.26](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A005_S026) = ≈крит. 13,5.25c [1811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1811) = [≈Вульг. 13.26.53](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S053) = ≈крит. 13,27.52a
 [R. 2,36,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,4)
 [PAÑCAT. 207,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?207,16) *upajīvanti śaktyā hi jalajā jalajāniva*
 [I,173.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,173) *upajīvya guruṃ droṇaṃ śakraṃ vaiśravaṇam* u. s. w. *kathametānna yodhaye* leben von so v. a. dienen
-[MBH. 4,1433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1433) *manuṣyāścopajīvanti yasya śilpam*
-[1,2594.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2594) [13,4277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4277) *svakarma*
+[MBH. 4,1433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1433) = [≈Вульг. 4.45.40](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A045_S040) = ≈крит. 05,155.29c *manuṣyāścopajīvanti yasya śilpam*
+[1,2594.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2594) = [≈Вульг. 1.66.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A066_S030) = ≈крит. 01,60.29a [13,4277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4277) = [≈Вульг. 13.90.8](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A090_S008) = ≈крит. 13,90.8a *svakarma*
 [3108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.3108) *bāṇijyam*
 [4261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.4261) *svaṃ samutthānam*
-[3,1208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1208) *tāṃ siddhimupajīvanti karmajāmiha jantavaḥ*
-[1229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1229) [ŚIŚ. 9,32.] *vikramocchiṣṭam*
+[3,1208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1208) = [≈Вульг. 3.32.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S007) = ≈крит. 03,33.7c *tāṃ siddhimupajīvanti karmajāmiha jantavaḥ*
+[1229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1229) = [≈Вульг. 3.32.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S028) = ≈крит. 03,33.26c [ŚIŚ. 9,32.] *vikramocchiṣṭam*
 [BHĀG. P. 4,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,10) *strīdhanāni tu ye mohādupajīvanti bāndhavāḥ . nārīyānāni vastraṃ vā* Nutzen ziehen aus, gebrauchen
 [3,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,52) *upajīvya dhanaṃ muñcan (jāram)*
 [YĀJÑ. 2,301.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,301) mit dem gen. (!): *yeṣāṃ vayaṃ dātāro ye cāsmākamupajīvanti*
 [KAUŚ. 88.] pass.: *sujīvaṃ nityaśastasya yaḥ parairupajīvyate . rāma tasya tu durjīvaṃ yaḥ parānupajīvati ..*
 [R. 2,105,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,5) *vayobhiḥ kṛmikīṭaiśca nara evopojīvyate*
 [MĀRK. P. 26,32.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?26,32) *tadetadbhārataṃ nāma kavibhistūpajīvyate . udayaprepsubhirbhṛtyairabhijāta iveśvaraḥ ..*
-[MBH. 1,308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.308) *(śrīḥ) bhavadbhiścopajīvitā*
-[18,137.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.137)
+[MBH. 1,308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.308) = [≈Вульг. 1.2.79](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S079) = ≈крит. 01,2.66a *(śrīḥ) bhavadbhiścopajīvitā*
+[18,137.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.137) = [≈Вульг. 18.4.13](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U01_A004_S013) = ≈крит. 18,4.10c
 
 - **RU:** — *upa*
  1) жить от, существовать благодаря, содержаться за счет, извлекать пользу из; с acc.: *apāṃ ca khalu vā oṣadhīnāṃ ca rasamupajīvāmaḥ*
@@ -448,39 +448,39 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 [KAUŚ. 68.] *ye tvā devosrikaṃ manyamānāḥ pāpā bhadramupajīvanti pajrāḥ*
 [ṚV. 1,190,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.190.html#rv01.190.05) — *śeṣāstam (jyeṣṭham) upajīveyuryathaiva pitaraṃ tathā*
 [M. 9,105.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,105) *parjanyamiva bhūtāni mahādrumamiva dvijāḥ .. bāndhavāstvopajīvantu sahasrākṣamivāmarāḥ .*
-[MBH. 2,1624. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1624) [3,15093.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15093) [11466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11466) [4,2283.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2283) [7,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1061) [3422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3422) [13,288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.288) [1811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1811)
+[MBH. 2,1624. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1624) = [≈Вульг. 2.45.62](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A045_S062) = ≈крит. 02,42.55e [3,15093.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15093) = [≈Вульг. 3.249.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A249_S024) = ≈крит. 03,238.23a [11466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11466) = [≈Вульг. 3.155.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A155_S030) = ≈крит. 03,153.29a [4,2283.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2283) = [≈Вульг. 4.70.24](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U05_A070_S024) = ≈крит. 04,65.17c [7,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1061) = [≈Вульг. 7.24.20](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A024_S020) = ≈крит. 07,23.19e [3422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3422) = [≈Вульг. 7.94.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A094_S013) = ≈крит. 07,69.13a [13,288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.288) = [≈Вульг. 13.5.26](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A005_S026) = ≈крит. 13,5.25c [1811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1811) = [≈Вульг. 13.26.53](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S053) = ≈крит. 13,27.52a
 [R. 2,36,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,4)
 [PAÑCAT. 207,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?207,16) *upajīvanti śaktyā hi jalajā jalajāniva*
 [I,173.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,173) *upajīvya guruṃ droṇaṃ śakraṃ vaiśravaṇam* и т.д. *kathametānna yodhaye* жить от, так преим. служить
-[MBH. 4,1433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1433) *manuṣyāścopajīvanti yasya śilpam*
-[1,2594.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2594) [13,4277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4277) *svakarma*
+[MBH. 4,1433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1433) = [≈Вульг. 4.45.40](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A045_S040) = ≈крит. 05,155.29c *manuṣyāścopajīvanti yasya śilpam*
+[1,2594.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2594) = [≈Вульг. 1.66.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A066_S030) = ≈крит. 01,60.29a [13,4277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4277) = [≈Вульг. 13.90.8](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A090_S008) = ≈крит. 13,90.8a *svakarma*
 [3108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.3108) *bāṇijyam*
 [4261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.4261) *svaṃ samutthānam*
-[3,1208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1208) *tāṃ siddhimupajīvanti karmajāmiha jantavaḥ*
-[1229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1229) [ŚIŚ. 9,32.] *vikramocchiṣṭam*
+[3,1208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1208) = [≈Вульг. 3.32.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S007) = ≈крит. 03,33.7c *tāṃ siddhimupajīvanti karmajāmiha jantavaḥ*
+[1229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1229) = [≈Вульг. 3.32.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S028) = ≈крит. 03,33.26c [ŚIŚ. 9,32.] *vikramocchiṣṭam*
 [BHĀG. P. 4,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,10) *strīdhanāni tu ye mohādupajīvanti bāndhavāḥ . nārīyānāni vastraṃ vā* извлекать пользу из, использовать
 [3,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,52) *upajīvya dhanaṃ muñcan (jāram)*
 [YĀJÑ. 2,301.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,301) с gen. (!): *yeṣāṃ vayaṃ dātāro ye cāsmākamupajīvanti*
 [KAUŚ. 88.] pass.: *sujīvaṃ nityaśastasya yaḥ parairupajīvyate . rāma tasya tu durjīvaṃ yaḥ parānupajīvati ..*
 [R. 2,105,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,5) *vayobhiḥ kṛmikīṭaiśca nara evopojīvyate*
 [MĀRK. P. 26,32.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?26,32) *tadetadbhārataṃ nāma kavibhistūpajīvyate . udayaprepsubhirbhṛtyairabhijāta iveśvaraḥ ..*
-[MBH. 1,308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.308) *(śrīḥ) bhavadbhiścopajīvitā*
-[18,137.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.137)
+[MBH. 1,308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.308) = [≈Вульг. 1.2.79](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S079) = ≈крит. 01,2.66a *(śrīḥ) bhavadbhiścopajīvitā*
+[18,137.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.137) = [≈Вульг. 18.4.13](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U01_A004_S013) = ≈крит. 18,4.10c
   <sub>attested</sub>
 
 **2)** — 2) leben von, für so v. a. betreiben, üben: *na tadā brāhmaṇaḥ kaścitsvadharmamupajīvati*
-[MBH. 3,12840.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12840) *dharmaṃ purāṇamupajīvanti*
-[8,2086.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2086) *te samyagupajīveyuḥ ṣaṭkarmāṇi* (*adhyāpanam, adhyayanam, yajanam, yājanam, dānam, pratigraham*)
+[MBH. 3,12840.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12840) = [≈Вульг. 3.188.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S036) = ≈крит. 03,186.31a *dharmaṃ purāṇamupajīvanti*
+[8,2086.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2086) = [≈Вульг. 8.45.16](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S016) = ≈крит. 08,30.62a *te samyagupajīveyuḥ ṣaṭkarmāṇi* (*adhyāpanam, adhyayanam, yajanam, yājanam, dānam, pratigraham*)
 [M. 10,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,74) *aliṅgī liṅgaveṣeṇa yo vṛttimupajīvati*
-[MBH. 4,200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.200) *nopajīveta jīvikām*
+[MBH. 4,200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.200) = [≈Вульг. 4.6.23](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A006_S023) = крит. — *nopajīveta jīvikām*
 [BHĀG. P. 7,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,7) *tathā hyasyotthitā buddhirmānuṣyamupajīvitum* als Mensch zu leben
 [HARIV. 4383.](https://sanskrit-lexicon-scans.github.io/hariv?4383)
 
 - **RU:** — 2) жить от, ради, так преим. заниматься, упражняться: *na tadā brāhmaṇaḥ kaścitsvadharmamupajīvati*
-[MBH. 3,12840.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12840) *dharmaṃ purāṇamupajīvanti*
-[8,2086.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2086) *te samyagupajīveyuḥ ṣaṭkarmāṇi* (*adhyāpanam, adhyayanam, yajanam, yājanam, dānam, pratigraham*)
+[MBH. 3,12840.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12840) = [≈Вульг. 3.188.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S036) = ≈крит. 03,186.31a *dharmaṃ purāṇamupajīvanti*
+[8,2086.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2086) = [≈Вульг. 8.45.16](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S016) = ≈крит. 08,30.62a *te samyagupajīveyuḥ ṣaṭkarmāṇi* (*adhyāpanam, adhyayanam, yajanam, yājanam, dānam, pratigraham*)
 [M. 10,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,74) *aliṅgī liṅgaveṣeṇa yo vṛttimupajīvati*
-[MBH. 4,200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.200) *nopajīveta jīvikām*
+[MBH. 4,200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.200) = [≈Вульг. 4.6.23](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A006_S023) = крит. — *nopajīveta jīvikām*
 [BHĀG. P. 7,13,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,13,7) *tathā hyasyotthitā buddhirmānuṣyamupajīvitum* жить как человек
 [HARIV. 4383.](https://sanskrit-lexicon-scans.github.io/hariv?4383)
   <sub>attested</sub>
@@ -496,10 +496,10 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 
 **1)** — *vi* aufleben, in's Leben zurückkehren: *dvijaprabhāvāt — vyajīvatsa vanaspatiḥ*
-[MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002)
+[MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002) = [≈Вульг. 1.50.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A050_S042) = ≈крит. 01,46.30c
 
 - **RU:** — *vi* ожить, вернуться к жизни: *dvijaprabhāvāt — vyajīvatsa vanaspatiḥ*
-[MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002)
+[MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002) = [≈Вульг. 1.50.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A050_S042) = ≈крит. 01,46.30c
   <sub>attested</sub>
 
 ## saṃjīv
@@ -519,35 +519,35 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 **2)** — 2) leben: *yasyai nikramaṇe ghṛtaṃ prajāḥ saṃjīvantīḥ pibanti*
 [TS. 1,7,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,2,4)
 [AV. 19,69,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.069.html#av19.069.03) *saṃjīva śaradaḥ śatam*
-[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
-[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) leben von (instr.): *kathaṃ svidvaiśyadharmeṇa *
+[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) = [≈Вульг. 3.78.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A078_S025) = ≈крит. 03,77.23c *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
+[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) = [≈Вульг. 14.5.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A005_S012) = ≈крит. 14,5.11a [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) leben von (instr.): *kathaṃ svidvaiśyadharmeṇa *
 
 * saṃjīvedbāhmaṇo na vā*
-[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917)
+[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917) = [≈Вульг. 12.78.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A078_S001) = ≈крит. 12,79.1a
 
 - **RU:** — 2) жить: *yasyai nikramaṇe ghṛtaṃ prajāḥ saṃjīvantīḥ pibanti*
 [TS. 1,7,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,2,4)
 [AV. 19,69,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.069.html#av19.069.03) *saṃjīva śaradaḥ śatam*
-[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
-[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) жить от (instr.): *kathaṃ svidvaiśyadharmeṇa *
+[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) = [≈Вульг. 3.78.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A078_S025) = ≈крит. 03,77.23c *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
+[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) = [≈Вульг. 14.5.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A005_S012) = ≈крит. 14,5.11a [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) жить от (instr.): *kathaṃ svidvaiśyadharmeṇa *
 
 * saṃjīvedbāhmaṇo na vā*
-[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917)
+[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917) = [≈Вульг. 12.78.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A078_S001) = ≈крит. 12,79.1a
   <sub>attested</sub>
 
 **3)** — 3) zum Leben zurückkehren, wieder lebendig werden
 [ŚAT. BR. 3,8,2,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,27) [9,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,2,17)
-[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) med.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
-[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) [DRAUP. 9,4.] — caus. beleben: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
+[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) = [≈Вульг. 14.67.14](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A067_S014) = ≈крит. 14,66.14c med.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
+[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) = [≈Вульг. 14.68.18](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A068_S018) = ≈крит. 14,67.18a [DRAUP. 9,4.] — caus. beleben: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
 [ĀŚV. ŚR. 6,9.] *evaṃ saḥ — sarvam — saṃjīvayati*
 [M. 1,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,57) *mṛtāṃstānsamajīvayat*
-[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979)
+[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) = [≈Вульг. 3.246.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A246_S019) = ≈крит. 03,235.18a [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979) = [≈Вульг. 14.67.15](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A067_S015) = ≈крит. 14,66.15c
 [RĀJA-TAR. 2,94.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,94) *saṃjīvita*
-[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) *mriyamāṇānsaṃjīvayitum*
+[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) = [≈Вульг. 14.80.50](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S050) = ≈крит. 14,81.10a *mriyamāṇānsaṃjīvayitum*
 [R. 4,51,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,51,20) *vṛkṣam*
-[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) *āvikṣitam — vācā saṃjīvayanniva*
-[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) *kṣipraṃ saṃjīvaya ca pārthivam*
-[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
+[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) = [≈Вульг. 1.43.8](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S008) = ≈крит. 01,39.8c *āvikṣitam — vācā saṃjīvayanniva*
+[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) = [≈Вульг. 14.6.17](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A006_S017) = ≈крит. 14,6.17a *kṣipraṃ saṃjīvaya ca pārthivam*
+[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) = [≈Вульг. 3.6.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S016) = ≈крит. 03,7.15a [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) = [≈Вульг. 3.136.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A136_S014) = ≈крит. 03,137.14a *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
 [16950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16950) *udbhrāntacetanām . sītāṃ māyeti śaṃsantī trijaṭā samajīvayat*
 [RAGH. 12,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,74) *mama vācamimāṃ prasuptāṃ saṃjīvayati*
 [BHĀG. P. 4,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,6) Jmd am Leben erhalten, ernähren: *krītānnaḥ sa divārātraṃ prāṇinaḥ samajīvayat*
@@ -555,17 +555,17 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 - **RU:** — 3) вернуться к жизни, снова ожить
 [ŚAT. BR. 3,8,2,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,27) [9,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,2,17)
-[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) мед.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
-[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) [DRAUP. 9,4.] — caus. оживлять: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
+[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) = [≈Вульг. 14.67.14](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A067_S014) = ≈крит. 14,66.14c мед.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
+[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) = [≈Вульг. 14.68.18](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A068_S018) = ≈крит. 14,67.18a [DRAUP. 9,4.] — caus. оживлять: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
 [ĀŚV. ŚR. 6,9.] *evaṃ saḥ — sarvam — saṃjīvayati*
 [M. 1,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,57) *mṛtāṃstānsamajīvayat*
-[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979)
+[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) = [≈Вульг. 3.246.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A246_S019) = ≈крит. 03,235.18a [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979) = [≈Вульг. 14.67.15](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A067_S015) = ≈крит. 14,66.15c
 [RĀJA-TAR. 2,94.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,94) *saṃjīvita*
-[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) *mriyamāṇānsaṃjīvayitum*
+[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) = [≈Вульг. 14.80.50](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S050) = ≈крит. 14,81.10a *mriyamāṇānsaṃjīvayitum*
 [R. 4,51,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,51,20) *vṛkṣam*
-[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) *āvikṣitam — vācā saṃjīvayanniva*
-[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) *kṣipraṃ saṃjīvaya ca pārthivam*
-[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
+[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) = [≈Вульг. 1.43.8](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S008) = ≈крит. 01,39.8c *āvikṣitam — vācā saṃjīvayanniva*
+[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) = [≈Вульг. 14.6.17](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A006_S017) = ≈крит. 14,6.17a *kṣipraṃ saṃjīvaya ca pārthivam*
+[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) = [≈Вульг. 3.6.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S016) = ≈крит. 03,7.15a [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) = [≈Вульг. 3.136.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A136_S014) = ≈крит. 03,137.14a *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
 [16950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16950) *udbhrāntacetanām . sītāṃ māyeti śaṃsantī trijaṭā samajīvayat*
 [RAGH. 12,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,74) *mama vācamimāṃ prasuptāṃ saṃjīvayati*
 [BHĀG. P. 4,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,6) поддерживать жизнь кого-л., кормить: *krītānnaḥ sa divārātraṃ prāṇinaḥ samajīvayat*
@@ -606,7 +606,7 @@ _PWG article — 17 sub-card(s), 78 sense(s) · RU 78/78 · EN 0/78_
 
 **NWS-3)** *„ jīvāpaya “.* [Jin , unsp] + upa : leben von (Akk), das Leben bewahren oder bestehen durch. Ved , unsp
 
-- **RU:** *„ jīvāpaya “.* [Jin , unsp] + upa: жить чем-л. (Akk.), поддерживать жизнь или существовать посредством чего-л. Ved , unsp. [NWS: Graßmann 1873 (1996) : 491]
+- **RU:** *„ jīvāpaya “.* [Jin , unsp] + upa: жить чем-л. (Acc.), поддерживать жизнь или существовать посредством чего-л. Ved , unsp. [NWS: Graßmann 1873 (1996) : 491]
   <sub>attested</sub>
 
 **NWS-4)** *+ pratyud ( pratyujjīvyate ): resuscitates (said ṛig. oṛ a suṛṛiḷ ṭhich had been abolished by a previous rule). dhurghVṛ 1.2,48 .* [Śā , Ling (s.v. jīv )] jīvamāna Śā , Ling > habituated to live. BhāṣāVṛ 3.2,129 . Renou 1953 (1) : 11 (s.v. jīv )
@@ -635,7 +635,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 
 **3)** — 3〉 seinen Lebensunterhalt haben, leben von (Instr., ausnahmsweise Loc.).
 
-- **RU:** — 3〉 иметь средства к существованию, жить от (Instr., в виде исключения Loc.).
+- **RU:** — 3〉 иметь средства к существованию, жить от (Ins., в виде исключения Loc.).
   <sub>attested</sub>
 
 **caus. 1)** — Caus. *jīvayati* (episch auch Med.)
@@ -668,17 +668,17 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 - **RU:** — Desid.
 — 1〉 *jijīviṣati, ˚te* ([BHĀG. P.]).
 — a〉 желать жить, стремиться к жизни.
-— b〉 стремиться найти средства к существованию, хотеть жить от (Instr.).
+— b〉 стремиться найти средства к существованию, хотеть жить от (Ins.).
   <sub>attested</sub>
 
 **desid. T105)** — 2〉 *jujyūṣati* sein Leben zu fristen suchen mit (Instr.).
 
-- **RU:** — 2〉 *jujyūṣati* стремиться кое-как прожить посредством (Instr.).
+- **RU:** — 2〉 *jujyūṣati* стремиться кое-как прожить посредством (Ins.).
   <sub>attested</sub>
 
 **desid. T106)** — 3〉 *jijyūṣita* der sein Leben zu fristen sucht mit (Instr.).
 
-- **RU:** — 3〉 *jijyūṣita* тот, кто пытается кое-как прожить посредством (Instr.).
+- **RU:** — 3〉 *jijyūṣita* тот, кто пытается кое-как прожить посредством (Ins.).
   <sub>attested</sub>
 
 **ati- 1)** — Mit *ati*
@@ -749,7 +749,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 — 1〉 seinen Lebensunterhalt haben [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; mit Acc., ausnahmsweise mit Gen. oder Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. in Abhängigkeit vom wegen; mit Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 
 - **RU:** — С *upa*
-— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счет, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Instr. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
+— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счет, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Ins. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
   <sub>attested</sub>
 
 **sam- 2)** — 2〉 leben von oder für, so v. a. betreiben, üben. *vṛttim* einen Lebensunterhalt erwählen [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* dass. *mānuṣyam* als Mensch leben, die Menschennatur erwählen.
@@ -786,7 +786,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 - **RU:** — С *sam*
 — 1〉 жить вместе.
 — 2〉 жить.
-— 3〉 жить от (Instr.)
+— 3〉 жить от (Ins.)
 — 4〉 вернуться к жизни, снова ожить.
   <sub>attested</sub>
 
@@ -806,7 +806,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 — Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
 - **RU:** √*jīv* с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
-— С *abhi* жить счастливее, чем (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
+— С *abhi* жить счастливее, чем (Abl.) [R. Бомбейская ред. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
   <sub>attested</sub>
 
 ## jīv
@@ -821,7 +821,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 
 **abhi-)** Mit *abhi* glücklicher im Leben sich befinden als (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
-- **RU:** С *abhi* жить счастливее, чем (Abl.) [R. ed. Bomb. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
+- **RU:** С *abhi* жить счастливее, чем (Abl.) [R. Бомбейская ред. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
   <sub>attested</sub>
 
 ## jīv
@@ -836,7 +836,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 
 **abhi-)** Mit abhi glücklicher im Leben sich befinden als (Abl.), [R. ed. Bomb. 3,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19) {part=,seq=14151,type=,n=4}
 
-- **RU:** С abhi жить счастливее, чем (Abl.), [R. ed. Bomb. 3,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19) {part=,seq=14151,type=,n=4}
+- **RU:** С abhi жить счастливее, чем (Abl.), [R. Бомбейская ред. 3,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19) {part=,seq=14151,type=,n=4}
   <sub>attested</sub>
 
 ## jīv
@@ -873,10 +873,10 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.](https://sanskrit-lexicon-scans.githu
   <sub>attested</sub>
 
 **T46 corr.)** — *abhyud* lies sich am Leben zu erhalten suchen, sich nähren und vgl.
-[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538)).
+[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A135_S024) = ≈крит. 05,133.21c).
 
 - **RU:** — *abhyud* читай стараться сохранить себе жизнь, питаться и ср.
-[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538)).
+[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A135_S024) = ≈крит. 05,133.21c).
   <sub>attested</sub>
 
 **T47 block)** — *pratyud*

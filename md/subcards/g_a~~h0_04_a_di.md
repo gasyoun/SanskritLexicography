@@ -5,12 +5,12 @@
 
 **1)** — *adhi*
  1) in einen Zustand gerathen, theilhaftig werden: *viśvāmitro 'dhyagādyatra brāhmaṇatvam*
-[MBH. 3,8309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8309) *śramamadhyagāt*
+[MBH. 3,8309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8309) = [≈Вульг. 3.87.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A087_S013) = ≈крит. 03,85.9c *śramamadhyagāt*
 [BHĀG. P. 4,26,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,10)
 
 - **RU:** — *adhi*
  1) впасть в какое-либо состояние, стать причастным к чему-либо: *viśvāmitro 'dhyagādyatra brāhmaṇatvam*
-[MBH. 3,8309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8309) *śramamadhyagāt*
+[MBH. 3,8309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8309) = [≈Вульг. 3.87.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A087_S013) = ≈крит. 03,85.9c *śramamadhyagāt*
 [BHĀG. P. 4,26,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,10)
   <sub>attested</sub>
 
@@ -33,34 +33,34 @@
   <sub>attested</sub>
 
 **4)** — 4) zu einer Kenntniss von Etwas (acc.) gelangen, studiren, lesen, lernen: *śiśurevādhyagātsarvaṃ paraṃ brahma sanātanam*
-[MBH. 13,121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.121) *adhyagānmahadākhyānam*
+[MBH. 13,121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.121) = [≈Вульг. 13.2.36](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A002_S036) = ≈крит. 13,2.36a *adhyagānmahadākhyānam*
 [BHĀG. P. 1,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,11) *yato 'hamidamadhyagām (purāṇam)* von dem ich dieses gelernt habe
 [9,22,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,21) Gewöhnlich med. *adhijage; adhyagīṣṭa; adhyagīṣyata*
 [P. 1,2,1.](https://ashtadhyayi.com/sutraani/1/2/1) [2,4,49.](https://ashtadhyayi.com/sutraani/2/4/49) [50.](https://ashtadhyayi.com/sutraani/2/4/50) [6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 [VOP. 9,43.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,43) [44.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,44) *yadvai kiṃ caitadadhyagīṣṭhā nāmaivaitat*
 [CHĀND. UP. 7,1,3.] *vedāṃścādhijage*
 [MBH. 1,2210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2210) *adhyagīṣṭa sa vedān*
-[5106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5106) [6332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6332) [BHAṬṬ. 15,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,88) *nādhyagīḍhvaṃ dhruvaṃ smṛtīḥ*
+[5106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5106) = [≈Вульг. 1.130.39](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A130_S039) = ≈крит. 01,121.6a [6332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6332) = [≈Вульг. 1.163.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A163_S009) = ≈крит. 01,151.5a [BHAṬṬ. 15,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,88) *nādhyagīḍhvaṃ dhruvaṃ smṛtīḥ*
 [7,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,91) *etaddhi matto 'dhijage sarvam* lernen von
 [M. 1,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,59)
-[MBH. 1,1928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1928) [4001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4001) *vedo 'ṅgavāṃstairakhilo 'dhyagāyi*
+[MBH. 1,1928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1928) = [≈Вульг. 1.48.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A048_S018) = ≈крит. 01,44.18c [4001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4001) = [≈Вульг. 1.100.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S035) = ≈крит. 01,94.32c *vedo 'ṅgavāṃstairakhilo 'dhyagāyi*
 [BHAṬṬ. 1,16.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,16) — caus. lehren, aor. *adhyajīgapat*
 [P. 2,4,51.](https://ashtadhyayi.com/sutraani/2/4/51) — desid. vom caus. *adhijigāpayiṣati* zu lehren verlangen
 [P. 2,4,51.](https://ashtadhyayi.com/sutraani/2/4/51)
 [VOP. 19,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,1)
 
 - **RU:** — 4) приходить к познанию чего-либо (acc.), изучать, читать, учиться: *śiśurevādhyagātsarvaṃ paraṃ brahma sanātanam*
-[MBH. 13,121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.121) *adhyagānmahadākhyānam*
+[MBH. 13,121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.121) = [≈Вульг. 13.2.36](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A002_S036) = ≈крит. 13,2.36a *adhyagānmahadākhyānam*
 [BHĀG. P. 1,7,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,11) *yato 'hamidamadhyagām (purāṇam)* от кого я выучил это
 [9,22,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,22,21) Обычно мед. *adhijage; adhyagīṣṭa; adhyagīṣyata*
 [P. 1,2,1.](https://ashtadhyayi.com/sutraani/1/2/1) [2,4,49.](https://ashtadhyayi.com/sutraani/2/4/49) [50.](https://ashtadhyayi.com/sutraani/2/4/50) [6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 [VOP. 9,43.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,43) [44.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?9,44) *yadvai kiṃ caitadadhyagīṣṭhā nāmaivaitat*
 [CHĀND. UP. 7,1,3.] *vedāṃścādhijage*
 [MBH. 1,2210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2210) *adhyagīṣṭa sa vedān*
-[5106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5106) [6332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6332) [BHAṬṬ. 15,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,88) *nādhyagīḍhvaṃ dhruvaṃ smṛtīḥ*
+[5106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5106) = [≈Вульг. 1.130.39](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A130_S039) = ≈крит. 01,121.6a [6332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6332) = [≈Вульг. 1.163.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A163_S009) = ≈крит. 01,151.5a [BHAṬṬ. 15,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,88) *nādhyagīḍhvaṃ dhruvaṃ smṛtīḥ*
 [7,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,91) *etaddhi matto 'dhijage sarvam* учиться у
 [M. 1,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,59)
-[MBH. 1,1928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1928) [4001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4001) *vedo 'ṅgavāṃstairakhilo 'dhyagāyi*
+[MBH. 1,1928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1928) = [≈Вульг. 1.48.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A048_S018) = ≈крит. 01,44.18c [4001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4001) = [≈Вульг. 1.100.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S035) = ≈крит. 01,94.32c *vedo 'ṅgavāṃstairakhilo 'dhyagāyi*
 [BHAṬṬ. 1,16.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,16) — caus. учить, aor. *adhyajīgapat*
 [P. 2,4,51.](https://ashtadhyayi.com/sutraani/2/4/51) — desid. от caus. *adhijigāpayiṣati* желать учить
 [P. 2,4,51.](https://ashtadhyayi.com/sutraani/2/4/51)

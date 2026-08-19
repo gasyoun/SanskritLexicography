@@ -21,20 +21,20 @@
 [BHĀG. P. 10,58,52.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,58,52) [84,68.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,84,68) побуждать к маршу
 [KĀM. NĪTIS. 11,25.] *dṛṣṭim* направлять взгляд: *dṛṣṭiṃ pathikaḥ kva yāpayatu*
 
-(v. l. вместо *pātayatu*)
+(v. l. вм. *pātayatu*)
 [Spr. 491.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?491) прогонять, отгонять: *madayāpitalajjā*
 [RAGH. 9,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,27) облегчать (болезнь)
 [SUŚR. 1,30,21.]
   <sub>attested</sub>
 
 **caus-2)** — 2) verstreichen lassen; zubringen (eine Zeit): *nāyaṃ yāpayituṃ* (so die [ed. Bomb.]) *kālo vidyate mādhava kvācit*
-[MBH. 6,4334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4334) *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
+[MBH. 6,4334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4334) = [≈Вульг. 6.96.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A096_S006) = ≈крит. 06,92.6a *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
 [MEGH. 87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87)
 [MĀLAV. 28,15.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,15)
 [PAÑCAT. 183,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?183,24)
 
-- **RU:** — 2) давать миновать; проводить (время): *nāyaṃ yāpayituṃ* (так [ed. Bomb.]) *kālo vidyate mādhava kvācit*
-[MBH. 6,4334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4334) *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
+- **RU:** — 2) давать миновать; проводить (время): *nāyaṃ yāpayituṃ* (так [Бомбейская ред.]) *kālo vidyate mādhava kvācit*
+[MBH. 6,4334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4334) = [≈Вульг. 6.96.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A096_S006) = ≈крит. 06,92.6a *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
 [MEGH. 87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87)
 [MĀLAV. 28,15.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,15)
 [PAÑCAT. 183,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?183,24)
@@ -51,7 +51,7 @@
 [DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) wohl fehlerhaft für *pāyitāyāḥ* (caus. von 1. *pā*).
 
 - **RU:** — 4) *yāpitāyāḥ*
-[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) вероятно, ошибочно вместо *pāyitāyāḥ* (caus. от 1. *pā*).
+[DAŚAK. 83,9] ([BENF. Chr. 194,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194)) вероятно, ошибочно вм. *pāyitāyāḥ* (caus. от 1. *pā*).
   <sub>attested</sub>
 
 **caus-addendum)** — Vgl. *yāpaka* fgg.

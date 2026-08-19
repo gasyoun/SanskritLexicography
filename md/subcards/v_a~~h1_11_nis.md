@@ -21,13 +21,13 @@
 
 **3)** — 3) sich abkühlen, gestillt —, erquickt werden: *tathā vapurjalārdrāpavanairna nirvavau*
 [ŚIŚ. 1,65.] *iti sarvaṃ samunnaddhaṃ na nirvāti kathaṃ ca na*
-[MBH. 9,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.259) *tvayi dṛṣṭa eva tasyā nirvāti mano manobhavajvalitam*
+[MBH. 9,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.259) = [≈Вульг. 9.5.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A005_S022) = ≈крит. 09,4.20c *tvayi dṛṣṭa eva tasyā nirvāti mano manobhavajvalitam*
 [Spr. 1086.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1086)
 [KATHĀS. 104,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,57) [117,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?117,51)
 
 - **RU:** — 3) остывать; успокаиваться, освежаться: *tathā vapurjalārdrāpavanairna nirvavau*
 [ŚIŚ. 1,65.] *iti sarvaṃ samunnaddhaṃ na nirvāti kathaṃ ca na*
-[MBH. 9,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.259) *tvayi dṛṣṭa eva tasyā nirvāti mano manobhavajvalitam*
+[MBH. 9,259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.259) = [≈Вульг. 9.5.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A005_S022) = ≈крит. 09,4.20c *tvayi dṛṣṭa eva tasyā nirvāti mano manobhavajvalitam*
 [Spr. 1086.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1086)
 [KATHĀS. 104,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?104,57) [117,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?117,51)
   <sub>attested</sub>
@@ -36,7 +36,7 @@
 [ṚV. 10,16,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.13) *agnīnnirvāpayāṃ cakruḥ*
 [AIT. BR. 2,36.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,36) *udakenāsthīni*
 [ŚĀṄKH. ŚR. 4,15,13.] *samidhaṃ jātavedasam . varṣairnirvāpayiṣyāmo meghā bhūtvā savidyutaḥ ..*
-[MBH. 1,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1608) [5857.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5857) [11,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.241)
+[MBH. 1,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1608) = [≈Вульг. 1.37.20](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A037_S020) = ≈крит. 01,33.20c [5857.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5857) = [≈Вульг. 1.147.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A147_S010) = ≈крит. 01,135.10a [11,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.241) = [≈Вульг. 11.8.49](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A008_S049) = ≈крит. 11,8.44c
 [HARIV. 6227.](https://sanskrit-lexicon-scans.github.io/hariv?6227)
 [KATHĀS. 66,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,15) *pradīpaṃ paṭāntena*
 [MṚCCH. 16,7. 49,20.] [BURNOUF, Intr. 589.] [KATHĀS. 4,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,67) *analapraveśena śokānalam*
@@ -51,13 +51,13 @@
 [KATHĀS. 25,265.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,265) *iti vāksudhayā tasyāḥ kṛtī nirvāpitaḥ*
 [103,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,72) *nirvāpaya prasannena locanenāmṛtaścyutā . dṛṣṭvā māṃ duḥkhadāvāgnidagdham*
 [101,304.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,304) [Verz. d. Oxf. H. 31,a,42.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?31) *sa* (*agniḥ*) *me nirvāpya sahasā cakṣuṣī śāmyate punaḥ* so v. a. blendend (= *mandīkṛtya*
-[NĪLAK.]) [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864)
+[NĪLAK.]) [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) = [≈Вульг. 5.114.20](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A114_S020) = ≈крит. 05,112.20a
 
 - **RU:** — ср. *nirvāṇa* . — caus. тушить, гасить; охлаждать, освобождать от жара — от зноя; охлаждать; успокаивать, приводить в покой, освежать: *yaṃ tvamagne samadahastamu nirvāpayā punaḥ*
 [ṚV. 10,16,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.13) *agnīnnirvāpayāṃ cakruḥ*
 [AIT. BR. 2,36.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,36) *udakenāsthīni*
 [ŚĀṄKH. ŚR. 4,15,13.] *samidhaṃ jātavedasam . varṣairnirvāpayiṣyāmo meghā bhūtvā savidyutaḥ ..*
-[MBH. 1,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1608) [5857.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5857) [11,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.241)
+[MBH. 1,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1608) = [≈Вульг. 1.37.20](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A037_S020) = ≈крит. 01,33.20c [5857.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5857) = [≈Вульг. 1.147.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A147_S010) = ≈крит. 01,135.10a [11,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.241) = [≈Вульг. 11.8.49](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A008_S049) = ≈крит. 11,8.44c
 [HARIV. 6227.](https://sanskrit-lexicon-scans.github.io/hariv?6227)
 [KATHĀS. 66,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,15) *pradīpaṃ paṭāntena*
 [MṚCCH. 16,7. 49,20.] [BURNOUF, Intr. 589.] [KATHĀS. 4,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,67) *analapraveśena śokānalam*
@@ -72,7 +72,7 @@
 [KATHĀS. 25,265.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,265) *iti vāksudhayā tasyāḥ kṛtī nirvāpitaḥ*
 [103,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,72) *nirvāpaya prasannena locanenāmṛtaścyutā . dṛṣṭvā māṃ duḥkhadāvāgnidagdham*
 [101,304.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,304) [Verz. d. Oxf. H. 31,a,42.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?31) *sa* (*agniḥ*) *me nirvāpya sahasā cakṣuṣī śāmyate punaḥ* так преим. ослепительный (= *mandīkṛtya*
-[NĪLAK.]) [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864)
+[NĪLAK.]) [MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) = [≈Вульг. 5.114.20](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A114_S020) = ≈крит. 05,112.20a
   <sub>attested</sub>
 
 **nachtrag)** — Vgl. 2. *nirvāpaṇa* fg.

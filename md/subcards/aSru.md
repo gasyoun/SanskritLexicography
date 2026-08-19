@@ -15,5 +15,5 @@
 
 **NWS 2)** [NWS: Hoernle 1908 : 248] [Śā, Med] tear. Hoernle 1893-1912 (II) 66.863
 
-- **RU:** [NWS: Hoernle 1908 : 248] [Śā., Мед.] слеза. Hoernle 1893-1912 (II) 66.863
+- **RU:** [NWS: Hoernle 1908 : 248] [Śā., Med] слеза. Hoernle 1893-1912 (II) 66.863
   <sub>attested</sub>

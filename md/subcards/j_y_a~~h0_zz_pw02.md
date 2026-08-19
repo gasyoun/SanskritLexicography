@@ -32,7 +32,7 @@
 — Mit *anu* Desid. II. 2.
 — Mit *pra* Caus. II. 3. 3〉 lies zurechtmachen. So auch [MAHĀVY. 226,109] (*prajñaptaṃ* zu lesen) [244,20]. — Desid. 5.
 
-- **RU:** **1.** √*jñā* с *adhi* постигать, понимать [R. ed. Bomb. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
+- **RU:** **1.** √*jñā* с *adhi* постигать, понимать [R. Бомбейская ред. 3,31,38](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,31,38).
 — С *anu* Desid. II. 2.
 — С *pra* Caus. II. 3. 3〉 читать приводить в порядок, налаживать. Также и [MAHĀVY. 226,109] (читать *prajñaptaṃ*) [244,20]. — Desid. 5.
   <sub>attested</sub>

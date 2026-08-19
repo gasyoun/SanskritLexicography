@@ -1,4 +1,4 @@
-## vas~~h0_zz_pw01
+## vas
 
 `vas~~h0_zz_pw01`
 
@@ -10,7 +10,7 @@
 
 **1)** — 1〉 an einem Orte bleiben, Halt machen, übernachten (mit und ohne *rātrim*; nicht selten ist zu einem Zahlwort oder Pronomen im Acc. *rātrīs* oder *rātrim* zu ergänzen), verweilen (auch so v. a. ausbleiben, wegbleiben), sich aufhalten, seinen Standort haben (auch von Thieren), seinen Aufenthalt nehmen, wohnen, leben in oder bei, verbleiben (mit einem prädicativen Partic. praet. pass. in diesem Zustande —, in dieser Lage verbleiben, — liegen —, — stehen bleiben), stehen bleiben bei, inne halten, sich irgendwo befinden oder sein. Das Wo, Worin oder Wobei im Loc. *dūratas* sich fern halten, *sukham* auch so v. a. behaglich leben, sich behaglich fühlen.
 
-- **RU:** — 1〉 оставаться на месте, делать остановку, ночевать (с *rātrim* и без него; нередко к числительному или местоимению следует добавить в мыслях Acc. *rātrīs* или *rātrim*), пребывать, задерживаться (также так преим. отсутствовать, не являться), находиться, иметь своё местопребывание (также о животных), поселяться, обитать, жить в или у, оставаться (с предикативным Partic. praet. pass. оставаться —, пребывать в этом состоянии —, в этом положении —, — лежать —, — стоять неподвижно), останавливаться на, задерживаться на, находиться где-либо или быть. Где, в чём или при чём — в Loc. *dūratas* держаться в стороне, устраняться, *sukham* также так преим. жить в довольстве, чувствовать себя уютно.
+- **RU:** — 1〉 оставаться на месте, делать остановку, ночевать (с *rātrim* и без него; нередко к числительному или местоимению следует добавить в мыслях Acc. *rātrīs* или *rātrim*), пребывать, задерживаться (также так преим. отсутствовать, не являться), находиться, иметь свое местопребывание (также о животных), поселяться, обитать, жить в или у, оставаться (с предикативным Partic. praet. pass. оставаться —, пребывать в этом состоянии —, в этом положении —, — лежать —, — стоять неподвижно), останавливаться на, задерживаться на, находиться где-либо или быть. Где, в чем или при чем — в Loc. *dūratas* держаться в стороне, устраняться, *sukham* также так преим. жить в довольстве, чувствовать себя уютно.
   <sub>attested</sub>
 
 **2)** — 2〉 beiwohnen, geschlechtlichen Umgang haben mit (Loc.).
@@ -35,7 +35,7 @@
 
 **6)** — 6〉 Jmd (Acc.) betrauen —, sich beschäftigen lassen mit (Instr.).
 
-- **RU:** — 6) поручать кому-л. (Acc.) заниматься, занимать кого-л. чем-л. (Instr.).
+- **RU:** — 6) поручать кому-л. (Acc.) заниматься, занимать кого-л. чем-л. (Ins.).
   <sub>attested</sub>
 
 **7)** — 7〉 *uṣita*
@@ -45,7 +45,7 @@
 
 **a)** — a〉 zugebracht, verlebt (ein Tag); _n._ impers. geweilt —, die Zeit zugebracht worden (das Wo im Loc.).
 
-- **RU:** — a) проведённый, прожитый (о дне); _n._ impers. пробывший — тот, кем было проведено время (место обозначено формой Loc.).
+- **RU:** — a) проведенный, прожитый (о дне); _n._ impers. пробывший — тот, кем было проведено время (место обозначено формой Loc.).
   <sub>attested</sub>
 
 **b)** — b〉 wohin man sich zurückgezogen hat [Spr. 7686](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7686).
@@ -55,7 +55,7 @@
 
 **c)** — c〉 Halt gemacht —, übernachtet —, verweilt —, sich aufgehalten —, irgendwo gelebt habend, abwesend gewesen, seinen Standort habend, gewartet habend ([HEMĀDRI 1,416,13]); der Ort im Loc. oder im Comp. vorangehend, die Zeit im Acc. oder im Comp. vorangehend. Auch mit Hinzufügung von *˚vāsam* und *˚vasatim*.
 
-- **RU:** — c) тот, кто сделал остановку —, переночевал —, пробыл —, задержался —, где-л. пожил, отсутствовал, имел своё местопребывание, ждал ([HEMĀDRI 1,416,13]); при этом место указывается формой, предшествующей Loc. или Comp., а время — формой, предшествующей Acc. или Comp.. Также с добавлением *˚vāsam* и *˚vasatim*.
+- **RU:** — c) тот, кто сделал остановку —, переночевал —, пробыл —, задержался —, где-л. пожил, отсутствовал, имел свое местопребывание, ждал ([HEMĀDRI 1,416,13]); при этом место указывается формой, предшествующей Loc. или Comp., а время — формой, предшествующей Acc. или Comp.. Также с добавлением *˚vāsam* и *˚vasatim*.
   <sub>attested</sub>
 
 **d)** — d〉 mit (*saha*) Jmd geschlechtlich gelebt habend.
@@ -82,7 +82,7 @@
 
 **b)** — b〉 mit Jmd (Instr.) den Beischlaf vollziehen lassen.
 
-- **RU:** — b) давать совершить половой акт с (Instr.) кем-л..
+- **RU:** — b) давать совершить половой акт с (Ins.) кем-л..
 
 **c)** — c〉 über Nacht Etwas stehen lassen. *tisras* sc. *rātrīs*.
 
@@ -120,9 +120,9 @@
 - **RU:** — 1) занимать место, избирать местом пребывания, занимать место ([PRASANNAR. 74,12]), обитать в; лежать на; с Acc.
   <sub>attested</sub>
 
-**2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
+**2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32) = [≈Вульг. 3.2.74](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S074) = ≈крит. 03,2.70c.
 
-- **RU:** — 2) держаться, придерживаться (чего-л.), так преим. жить за счёт (чего-л.), пользоваться (чем-л.); с Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32).
+- **RU:** — 2) держаться, придерживаться (чего-л.), так преим. жить за счет (чего-л.), пользоваться (чем-л.); с Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32) = [≈Вульг. 3.2.74](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S074) = ≈крит. 03,2.70c.
   <sub>attested</sub>
 
 **3)** — 3〉 *adhyuṣita*
@@ -132,12 +132,12 @@
 
 **3a)** — a〉 besetzt, eingenommen, innegehabt (von einem Orte). bewohnt, wo sich Jmd aufgehalten hat, worauf Jmd gelegen hat. *marutā* so v. a. vom Winde bestrichen.
 
-- **RU:** — a) занятый, захваченный, находящийся во владении (о месте). обитаемый, где кто-л. пребывал, на чём кто-л. лежал. *marutā* так преим. обвеваемый ветром.
+- **RU:** — a) занятый, захваченный, находящийся во владении (о месте). обитаемый, где кто-л. пребывал, на чем кто-л. лежал. *marutā* так преим. обвеваемый ветром.
   <sub>attested</sub>
 
 **3b)** — b〉 gewohnt —, zugebracht habend, — in (Loc.), *bewohnend (mit Acc.). *acirādhyuṣita* der nur kurze Zeit bei einem Lehrer zugebracht hat [VARĀH. YOGAY. 14,3].
 
-- **RU:** — b) привыкший —, проведший (время) —, в (Loc.), *обитающий (с Acc.). *acirādhyuṣita* тот, кто провёл лишь короткое время у учителя [VARĀH. YOGAY. 14,3].
+- **RU:** — b) привыкший —, проведший (время) —, в (Loc.), *обитающий (с Acc.). *acirādhyuṣita* тот, кто провел лишь короткое время у учителя [VARĀH. YOGAY. 14,3].
   <sub>attested</sub>
 
 **3c)** — c〉 dem man obliegt.
@@ -154,7 +154,7 @@
 
 **add2)** — 2〉 heimsuchen.
 
-- **RU:** — 2) поражать, насылать беду (на кого-л.), посещать (в знач. «карать»).
+- **RU:** — 2) поражать, насылать беду (на кого-л.), посещать (в знач. {%карать)%}.
   <sub>attested</sub>
 
 **3)** — 3〉 sich einverstanden erklären mit Jmd (Gen.), zustimmen.
@@ -196,14 +196,14 @@
 - **RU:** — 5) предаваться чувству (Acc.) [CARAKA. 1,8] (читать *anuvaset*).
   <sub>attested</sub>
 
-**6)** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) fehlerhaft für *anuvartsyate*.
+**6)** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) = [≈Вульг. 3.37.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A037_S019) = ≈крит. 03,38.16a fehlerhaft für *anuvartsyate*.
 
-- **RU:** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) ошибочно вместо *anuvartsyate*.
+- **RU:** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) = [≈Вульг. 3.37.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A037_S019) = ≈крит. 03,38.16a ошибочно вм. *anuvartsyate*.
   <sub>mixed</sub>
 
 **caus-1)** — Caus. das Kalb (Acc.) bei der Mutter belassen [ĀPAST. ŚR. 8,11,14].
 
-- **RU:** — Caus. телёнка (Acc.) оставлять при матери [ĀPAST. ŚR. 8,11,14].
+- **RU:** — Caus. теленка (Acc.) оставлять при матери [ĀPAST. ŚR. 8,11,14].
   <sub>attested</sub>
 
 **caus-2a)** — Mit *samanu* obliegen, befolgen; mit Acc. [HARIV. 3,3,39](https://sanskrit-lexicon-scans.github.io/hariv?3).
@@ -268,7 +268,7 @@
 **7-note)** — 7〉 statt *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02) ist wohl *amā va˚* zu lesen; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) fehlerhaft für *āvāsita*.
 — Caus.
 
-- **RU:** — 7) вместо *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02), по-видимому, следует читать *amā va˚*; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) ошибочно вместо *āvāsita*.
+- **RU:** — 7) вм. *māmā vasanti* [AV. 7,79,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.079.html#av07.079.02), по-видимому, следует читать *amā va˚*; *āvasita* [KATHĀS. 54,12](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,12) ошибочно вм. *āvāsita*.
 — Caus.
 
 **1)** — 1〉 beherbergen, bei sich wohnen lassen.
@@ -277,12 +277,12 @@
 
 **2)** — 2〉 beziehen, zum Aufenthaltsort erwählen. *premāvāsita* in dem die Zuneigung ihre Wohnung aufgeschlagen hat.
 
-- **RU:** — 2) поселяться (в), избирать местом пребывания. *premāvāsita* в ком/чём приязнь обрела себе жилище.
+- **RU:** — 2) поселяться (в), избирать местом пребывания. *premāvāsita* в ком/чем приязнь обрела себе жилище.
 
 **3)** — 3〉 Halt machen, sich lagern (für die Nacht). *āvāsita* mit act. Bed. [HARṢAC. (ed. Bomb.) 470,4].
 — Mit *adhyā*
 
-- **RU:** — 3) останавливаться на ночлег, располагаться станом (на ночь). *āvāsita* с act. знач. [HARṢAC. (ed. Bomb.) 470,4].
+- **RU:** — 3) останавливаться на ночлег, располагаться станом (на ночь). *āvāsita* с act. знач. [HARṢAC. (Бомбейская ред.) 470,4].
 — С *adhyā*
 
 **1)** — 1〉 beziehen, zum Aufenthaltsort wählen, bewohnen [{{MBH. 3,40,52->MBH. 3,70,23||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
@@ -362,7 +362,7 @@
 
 **1)** — 1〉 verweilen bei Etwas (Acc.), bei Jmd (Gen.), in (Loc.), warten, abwarten.
 
-- **RU:** — 1) пребывать, задерживаться при чём-л. (Acc.), у кого-л. (Gen.), в (Loc.), ждать, выжидать.
+- **RU:** — 1) пребывать, задерживаться при чем-л. (Acc.), у кого-л. (Gen.), в (Loc.), ждать, выжидать.
   <sub>attested</sub>
 
 **2)** — 2〉 fasten, mit Acc. der Speise oder der Zeitdauer ([GAUT. 27,4]; mit Loc. [13]). *upavatsyadbhakta* _n._ [VAITĀN. 1,11. 6,12]. Ausnahmsweise Med. in der Prosa. *upoṣita*
@@ -377,7 +377,7 @@
 
 **2b)** — b〉 in Fasten zugebracht.
 
-- **RU:** — b) проведённый в посте.
+- **RU:** — b) проведенный в посте.
   <sub>attested</sub>
 
 **3)** — 3〉 *beziehen, zum Aufenthaltsort erwählen.
@@ -398,7 +398,7 @@
 **6)** — 6〉 *upavasita* [ĀŚV. GṚHY. 1,14,7] fehlerhaft für *upāvasita* (von *sā* mit *upāva*).
 — Caus.
 
-- **RU:** — 6) *upavasita* [ĀŚV. GṚHY. 1,14,7] ошибочно вместо *upāvasita* (от *sā* с *upāva*).
+- **RU:** — 6) *upavasita* [ĀŚV. GṚHY. 1,14,7] ошибочно вм. *upāvasita* (от *sā* с *upāva*).
  — Caus.
   <sub>attested</sub>
 

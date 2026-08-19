@@ -16,18 +16,18 @@
 [R. 6,81,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,81,25) *dundubhīn* die Trommeln
 [R. ed. Bomb. 3,30,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,30,27) einhauen auf
 [MBH. 1,2489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2489) *gadayā*
-[5,1828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1828) [HARIV. 13173.](https://sanskrit-lexicon-scans.github.io/hariv?13173) *˚ghnant* mit passiver Bed.: *pratodena* geschlagen werdend
-[MBH. 3,332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.332) *yathā śailasya mahataḥ śailenaivābhinighnataḥ*
-[4,1424](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424) nach einer von
+[5,1828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1828) = [≈Вульг. 5.48.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A048_S021) = ≈крит. 05,47.17c [HARIV. 13173.](https://sanskrit-lexicon-scans.github.io/hariv?13173) *˚ghnant* mit passiver Bed.: *pratodena* geschlagen werdend
+[MBH. 3,332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.332) = [≈Вульг. 3.9.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A009_S009) = ≈крит. 03,10.9c *yathā śailasya mahataḥ śailenaivābhinighnataḥ*
+[4,1424](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424) = [≈Вульг. 4.45.31](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A045_S031) = ≈крит. 04,40.26c nach einer von
 [NĪLAK.] erwähnten Lesart.
 
 - **RU:** — 2) ударять по: *anyo'nyamabhinighnatāṃ śarāṇām*
 [R. 6,81,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,81,25) *dundubhīn* барабаны
-[R. ed. Bomb. 3,30,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,30,27) рубить по
+[R. Бомбейская ред. 3,30,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,30,27) рубить по
 [MBH. 1,2489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2489) *gadayā*
-[5,1828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1828) [HARIV. 13173.](https://sanskrit-lexicon-scans.github.io/hariv?13173) *˚ghnant* с пассивным знач.: *pratodena* будучи ударяем
-[MBH. 3,332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.332) *yathā śailasya mahataḥ śailenaivābhinighnataḥ*
-[4,1424](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424) согласно одному чтению, упомянутому у
+[5,1828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1828) = [≈Вульг. 5.48.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A048_S021) = ≈крит. 05,47.17c [HARIV. 13173.](https://sanskrit-lexicon-scans.github.io/hariv?13173) *˚ghnant* с пассивным знач.: *pratodena* будучи ударяем
+[MBH. 3,332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.332) = [≈Вульг. 3.9.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A009_S009) = ≈крит. 03,10.9c *yathā śailasya mahataḥ śailenaivābhinighnataḥ*
+[4,1424](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1424) = [≈Вульг. 4.45.31](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A045_S031) = ≈крит. 04,40.26c согласно одному чтению, упомянутому у
 [NĪLAK.].
   <sub>attested</sub>
 

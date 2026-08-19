@@ -23,5 +23,5 @@
 [R. 2,47,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) nach der Lesart der [ed. Bomb.]
 
 - **RU:** — *pravi*, ˚*naṣṭaharṣa* исчезнувший
-[R. 2,47,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) по чтению [ed. Bomb.]
+[R. 2,47,19](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) по чтению [Бомбейская ред.]
   <sub>attested</sub>

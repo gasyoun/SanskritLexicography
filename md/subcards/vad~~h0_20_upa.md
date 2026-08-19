@@ -38,7 +38,7 @@
 [P.], Sch. *kaṃcinnopāvadiṣṭāsau*
 [BHAṬṬ. 8,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,28)
 
-- **RU:** — 3) мед. уговаривать кого-л., стараться привлечь к себе (*upasaṃbhāṣāyām* und *upamantraṇe*)
+- **RU:** — 3) мед. уговаривать кого-л., стараться привлечь к себе (*upasaṃbhāṣāyām* и *upamantraṇe*)
 [P. 1,3,47.](https://ashtadhyayi.com/sutraani/1/3/47) (*pralobhe*)
 [VOP. 23,39.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,39) *karmakarānupavadate = upasāntvayati, kulabhāryāmupavadate = upacchandayati*
 [P.], схол. *kaṃcinnopāvadiṣṭāsau*
@@ -49,7 +49,7 @@
 [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) zieht
 [SĀY.] *upa* zu *hitam* .
 
-- **RU:** — 4) в тёмном месте *guhā hitamupa niṇigvadanti*
+- **RU:** — 4) в темном месте *guhā hitamupa niṇigvadanti*
 [ṚV. 4,5,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.005.html#rv04.005.08) относит
 [SĀY.] *upa* к *hitam* .
   <sub>attested</sub>

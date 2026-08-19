@@ -13,7 +13,7 @@
 [P. 1,3,53](https://ashtadhyayi.com/sutraani/1/3/53), Sch.
 [VOP. 23,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,45) *yaiṣā hṛdayādūrdhvaṃ nāḍyuccarati*
 [ŚAT. BR. 14,6,11,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,3) *saudāminīmuccarantīṃ yathaiva*
-[MBH. 3,10088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10088) sich erheben so v. a. ertönen: *vāk*
+[MBH. 3,10088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10088) = [≈Вульг. 3.112.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A112_S001) = ≈крит. 03,112.1a sich erheben so v. a. ertönen: *vāk*
 [ŚAT. BR. 14,7,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,5) *divyastūryadhvanirudacarat*
 [RAGH. 16,87.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,87) [9,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,73) *aśvatthatarostasmāduccacāra sarasvatī*
 [KATHĀS. 20,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,32)
@@ -29,7 +29,7 @@
 [P. 1,3,53](https://ashtadhyayi.com/sutraani/1/3/53), схол.
 [VOP. 23,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,45) *yaiṣā hṛdayādūrdhvaṃ nāḍyuccarati*
 [ŚAT. BR. 14,6,11,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,3) *saudāminīmuccarantīṃ yathaiva*
-[MBH. 3,10088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10088) подниматься так преим. звучать: *vāk*
+[MBH. 3,10088.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10088) = [≈Вульг. 3.112.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A112_S001) = ≈крит. 03,112.1a подниматься так преим. звучать: *vāk*
 [ŚAT. BR. 14,7,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,5) *divyastūryadhvanirudacarat*
 [RAGH. 16,87.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,87) [9,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,73) *aśvatthatarostasmāduccacāra sarasvatī*
 [KATHĀS. 20,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,32)
@@ -60,16 +60,16 @@
   <sub>attested</sub>
 
 **5)** — 5) von sich geben, entlassen, aussprechen: *dadāti sarvamīśānaḥ purastācchukramuccaran*
-[MBH. 5,917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.917) [3,1139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1139) [5,2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2751) *vāgvacanamuccarati*
+[MBH. 5,917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.917) = [≈Вульг. 5.31.2](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A031_S002) = ≈крит. 05,31.2a [3,1139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1139) = [≈Вульг. 3.30.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A030_S023) = ≈крит. 03,31.22a [5,2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2751) = [≈Вульг. 5.75.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A075_S012) = ≈крит. 05,73.12a *vāgvacanamuccarati*
 [TATTVAS. 14,29.] *praśnānuccaritānadya vyāhariṣyasi cenmama*
-[MBH. 3,12466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12466) *jagati rāma ityayaṃ śabda uccarita eva māmagāt*
+[MBH. 3,12466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12466) = [≈Вульг. 3.179.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U11_A179_S039) = ≈крит. 03,176.39a *jagati rāma ityayaṃ śabda uccarita eva māmagāt*
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73) *daśavāramuccarito gośabdaḥ*
 Sch. zu [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
 
 - **RU:** — 5) издавать, испускать, произносить: *dadāti sarvamīśānaḥ purastācchukramuccaran*
-[MBH. 5,917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.917) [3,1139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1139) [5,2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2751) *vāgvacanamuccarati*
+[MBH. 5,917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.917) = [≈Вульг. 5.31.2](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A031_S002) = ≈крит. 05,31.2a [3,1139.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1139) = [≈Вульг. 3.30.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A030_S023) = ≈крит. 03,31.22a [5,2751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2751) = [≈Вульг. 5.75.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A075_S012) = ≈крит. 05,73.12a *vāgvacanamuccarati*
 [TATTVAS. 14,29.] *praśnānuccaritānadya vyāhariṣyasi cenmama*
-[MBH. 3,12466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12466) *jagati rāma ityayaṃ śabda uccarita eva māmagāt*
+[MBH. 3,12466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12466) = [≈Вульг. 3.179.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U11_A179_S039) = ≈крит. 03,176.39a *jagati rāma ityayaṃ śabda uccarita eva māmagāt*
 [RAGH. 11,73.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,73) *daśavāramuccarito gośabdaḥ*
 схол. к [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
   <sub>attested</sub>
@@ -84,12 +84,12 @@ Sch. zu [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
   <sub>attested</sub>
 
 **7)** — 7) sich gegen Jmd versehen, untreu sein dem Gatten: *patnyaḥ patīnuccaranta patnīśca patayastathā*
-[MBH. 16,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.43) übertreten, zuwiderhandeln; med.: *dharmam, guruvacanamuccarate*
+[MBH. 16,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.43) = [≈Вульг. 16.2.11](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A002_S011) = ≈крит. 16,3.9c übertreten, zuwiderhandeln; med.: *dharmam, guruvacanamuccarate*
 [P. 1,3,53](https://ashtadhyayi.com/sutraani/1/3/53), Sch.
 [VOP. 23,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,45) Nach [P.] erscheint *car* mit *ud* als trans. schlechtweg im med. — caus.
 
 - **RU:** — 7) погрешать против кого-либо, изменять супругу: *patnyaḥ patīnuccaranta patnīśca patayastathā*
-[MBH. 16,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.43) преступать, нарушать; мед.: *dharmam, guruvacanamuccarate*
+[MBH. 16,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.43) = [≈Вульг. 16.2.11](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A002_S011) = ≈крит. 16,3.9c преступать, нарушать; мед.: *dharmam, guruvacanamuccarate*
 [P. 1,3,53](https://ashtadhyayi.com/sutraani/1/3/53), схол.
 [VOP. 23,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,45) По [P.] *car* с *ud* выступает как trans. просто в мед. — caus.
   <sub>attested</sub>
@@ -102,22 +102,22 @@ Sch. zu [JAIM. 1,2,19.] [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io
   <sub>attested</sub>
 
 **Nachtrag-2)** — 2) (Laute) entlassen, ertönen lassen, verkünden, aussprechen: *madhurāṃ vāṇīm*
-[MBH. 1,7255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7255) *giram*
-[3,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1691) *vākyam*
-[10950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10950) *yajuṣāmṛcāṃ sāmnāṃ ca gadyānāṃ caiva sarvaśaḥ . āsīduccāryamāṇānāṃ nisvano hṛdayaṃgamaḥ ..*
-[966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.966) *oṃkāreṇa — samyaguccāritena*
-[8190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8190) *svarādi duṣṭamasakṛduccārayati*
+[MBH. 1,7255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7255) = [≈Вульг. 1.193.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A193_S014) = ≈крит. 01,185.14c *giram*
+[3,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1691) = [≈Вульг. 3.41.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A041_S027) = ≈крит. 03,42.25a *vākyam*
+[10950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10950) = [≈Вульг. 3.142.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A142_S002) = крит. — *yajuṣāmṛcāṃ sāmnāṃ ca gadyānāṃ caiva sarvaśaḥ . āsīduccāryamāṇānāṃ nisvano hṛdayaṃgamaḥ ..*
+[966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.966) = [≈Вульг. 3.26.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A026_S003) = ≈крит. 03,27.3a *oṃkāreṇa — samyaguccāritena*
+[8190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8190) = [≈Вульг. 3.85.48](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S048) = ≈крит. 03,83.45a *svarādi duṣṭamasakṛduccārayati*
 [P. 1,3,71](https://ashtadhyayi.com/sutraani/1/3/71), Sch.
-- [LĀṬY. 6,10,18.] [MBH. 3,13653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13653) [13,4045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4045) [R. 2,91,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,27) [MṚCCH. 44,15.] [RĀJA-TAR. 5,475.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,475) [BHĀG. P. 3,21,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,34) Sch. zu [JAIM. 1,2,17. 19.] Sch. zu [P. 1,1,8.](https://ashtadhyayi.com/sutraani/1/1/8) [8,1,3.](https://ashtadhyayi.com/sutraani/8/1/3) [VOP. 1,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,2) [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
+- [LĀṬY. 6,10,18.] [MBH. 3,13653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13653) = [≈Вульг. 3.205.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A205_S007) = ≈крит. 03,196.7a [13,4045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4045) = [≈Вульг. 13.85.30](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A085_S030) = ≈крит. 13,84.29c [R. 2,91,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,27) [MṚCCH. 44,15.] [RĀJA-TAR. 5,475.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,475) [BHĀG. P. 3,21,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,34) Sch. zu [JAIM. 1,2,17. 19.] Sch. zu [P. 1,1,8.](https://ashtadhyayi.com/sutraani/1/1/8) [8,1,3.](https://ashtadhyayi.com/sutraani/8/1/3) [VOP. 1,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,2) [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
 
 - **RU:** — 2) (звуки) испускать, заставлять звучать, возвещать, произносить: *madhurāṃ vāṇīm*
-[MBH. 1,7255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7255) *giram*
-[3,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1691) *vākyam*
-[10950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10950) *yajuṣāmṛcāṃ sāmnāṃ ca gadyānāṃ caiva sarvaśaḥ . āsīduccāryamāṇānāṃ nisvano hṛdayaṃgamaḥ ..*
-[966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.966) *oṃkāreṇa — samyaguccāritena*
-[8190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8190) *svarādi duṣṭamasakṛduccārayati*
+[MBH. 1,7255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7255) = [≈Вульг. 1.193.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A193_S014) = ≈крит. 01,185.14c *giram*
+[3,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1691) = [≈Вульг. 3.41.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A041_S027) = ≈крит. 03,42.25a *vākyam*
+[10950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10950) = [≈Вульг. 3.142.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A142_S002) = крит. — *yajuṣāmṛcāṃ sāmnāṃ ca gadyānāṃ caiva sarvaśaḥ . āsīduccāryamāṇānāṃ nisvano hṛdayaṃgamaḥ ..*
+[966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.966) = [≈Вульг. 3.26.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A026_S003) = ≈крит. 03,27.3a *oṃkāreṇa — samyaguccāritena*
+[8190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8190) = [≈Вульг. 3.85.48](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S048) = ≈крит. 03,83.45a *svarādi duṣṭamasakṛduccārayati*
 [P. 1,3,71](https://ashtadhyayi.com/sutraani/1/3/71), схол.
-- [LĀṬY. 6,10,18.] [MBH. 3,13653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13653) [13,4045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4045) [R. 2,91,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,27) [MṚCCH. 44,15.] [RĀJA-TAR. 5,475.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,475) [BHĀG. P. 3,21,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,34) схол. к [JAIM. 1,2,17. 19.] схол. к [P. 1,1,8.](https://ashtadhyayi.com/sutraani/1/1/8) [8,1,3.](https://ashtadhyayi.com/sutraani/8/1/3) [VOP. 1,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,2) [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
+- [LĀṬY. 6,10,18.] [MBH. 3,13653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13653) = [≈Вульг. 3.205.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A205_S007) = ≈крит. 03,196.7a [13,4045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4045) = [≈Вульг. 13.85.30](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A085_S030) = ≈крит. 13,84.29c [R. 2,91,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,27) [MṚCCH. 44,15.] [RĀJA-TAR. 5,475.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,475) [BHĀG. P. 3,21,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,34) схол. к [JAIM. 1,2,17. 19.] схол. к [P. 1,1,8.](https://ashtadhyayi.com/sutraani/1/1/8) [8,1,3.](https://ashtadhyayi.com/sutraani/8/1/3) [VOP. 1,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?1,2) [SĀH. D. 9,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,1)
   <sub>attested</sub>
 
 **Nachtrag-3)** — Vgl. *uccāra* fgg.

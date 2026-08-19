@@ -10,10 +10,10 @@
 [7,88,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.088.html#rv07.088.02) *rathaṃ yena devāso anayannabhi priyam*
 [10,53,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.07) [AV. 6,47,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.047.html#av06.047.03) *sa naḥ svargamabhi neṣa lokam*
 [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) [17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.17) *sūto hi māmadhiratho dṛṣṭvaivābhyanayadgṛhān*
-[MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) *badhamabhinīyamānaścauraḥ*
+[MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) = [≈Вульг. 5.142.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A142_S016) = ≈крит. 05,140.16c *badhamabhinīyamānaścauraḥ*
 Schol. in der Einl. zu [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* zur Bogensehne geführt
-[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) *abhinītāni śastrāṇi* herbeigebracht, herbeigeschafft
-[12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691)
+[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) = [≈Вульг. 3.19.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A019_S020) = ≈крит. 03,20.20c *abhinītāni śastrāṇi* herbeigebracht, herbeigeschafft
+[12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691) = [≈Вульг. 12.100.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A100_S010) = ≈крит. 12,101.9a
 
 - **RU:** — *abhi*
  1) провожать, вести к, подводить к: *abhi sūyavasaṃ naya*
@@ -22,10 +22,10 @@ Schol. in der Einl. zu [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* z
 [7,88,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.088.html#rv07.088.02) *rathaṃ yena devāso anayannabhi priyam*
 [10,53,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.07) [AV. 6,47,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.047.html#av06.047.03) *sa naḥ svargamabhi neṣa lokam*
 [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) [17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.17) *sūto hi māmadhiratho dṛṣṭvaivābhyanayadgṛhān*
-[MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) *badhamabhinīyamānaścauraḥ*
-схол. в введ. к [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* доведённый до тетивы
-[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) *abhinītāni śastrāṇi* принесённый, доставленный
-[12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691)
+[MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) = [≈Вульг. 5.142.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A142_S016) = ≈крит. 05,140.16c *badhamabhinīyamānaścauraḥ*
+схол. в введ. к [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* доведенный до тетивы
+[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) = [≈Вульг. 3.19.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A019_S020) = ≈крит. 03,20.20c *abhinītāni śastrāṇi* принесенный, доставленный
+[12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691) = [≈Вульг. 12.100.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A100_S010) = ≈крит. 12,101.9a
   <sub>attested</sub>
 
 **2)** — 2) mit Geberden begleiten, pantomimisch darstellen, auf dem Theater aufführen: *gītāni ramyāṇi jaguḥ prahṛṣṭāḥ kāntābhinītāni manoharāṇi*
@@ -79,15 +79,15 @@ Schol. zu [BHAṬṬ.] bei [GOLDST.] u. *abhinīta*; its easy understanding
   <sub>attested</sub>
 
 **4)** — 4) *abhinīta* abgerichtet: *abhinītāśca (gajāḥ) śikṣābhiḥ*
-[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) gebildet, klug, gescheidt, von einer Person
+[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) = [≈Вульг. 6.46.9](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A046_S009) = ≈крит. 06,44.9c gebildet, klug, gescheidt, von einer Person
 [R. 4,28,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,28,13) *abhinītataraṃ vākyam*
-[MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) *etāvadabhinītārthamuktvā*
+[MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) = [≈Вульг. 12.26.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A026_S001) = ≈крит. 12,20.1c *etāvadabhinītārthamuktvā*
 [R. 2,39,36](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,36) ([38,45](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,45) [GORR.]). Andere Bedeutungen geben die indischen Lexicographen dem partic.; s. u. *abhinīta* .
 
 - **RU:** — 4) *abhinīta* дрессированный, обученный: *abhinītāśca (gajāḥ) śikṣābhiḥ*
-[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) образованный, умный, смышлёный, о человеке
+[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) = [≈Вульг. 6.46.9](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A046_S009) = ≈крит. 06,44.9c образованный, умный, смышленый, о человеке
 [R. 4,28,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,28,13) *abhinītataraṃ vākyam*
-[MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) *etāvadabhinītārthamuktvā*
+[MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) = [≈Вульг. 12.26.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A026_S001) = ≈крит. 12,20.1c *etāvadabhinītārthamuktvā*
 [R. 2,39,36](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,36) ([38,45](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,45) [GORR.]). Иные значения приписывают partic. индийские лексикографы; см. *abhinīta* .
   <sub>mixed</sub>
 

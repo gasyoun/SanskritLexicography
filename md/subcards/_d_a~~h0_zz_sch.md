@@ -45,7 +45,7 @@
 
 **Mit vini — 6 vinihitātman)** — Mit vini 6. vinihitātman an der angeführten Stelle bedeutet: keine Aufmerksamkeit jemandem (Lok.) schenkend.
 
-- **RU:** — С vini 6. vinihitātman в приведенном месте означает: не уделяющий внимания кому-либо (Lok.).
+- **RU:** — С vini 6. vinihitātman в приведенном месте означает: не уделяющий внимания кому-либо (Loc.).
   <sub>attested</sub>
 
 **Mit saṃpi — schließen)** — Mit saṃpi schließen, {part=,seq=16355,type=,n=20}

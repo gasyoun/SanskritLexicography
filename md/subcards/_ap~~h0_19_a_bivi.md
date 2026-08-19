@@ -11,7 +11,7 @@
 - **RU:** — *abhivi* простираться до какого-л. предела: *abhivyāpya* до и включая: *bhrājabhāseti kvipamabhivyāpya*
 [P. 2,1,134](https://ashtadhyayi.com/sutraani/2/1/134), схол.
 *adhikāro 'yaṃ yūnastirityabhivyāpya*
-[SIDDH. K.] zu [1,14.](https://ashtadhyayi.com/sutraani/2/1/14)
+[SIDDH. K.] к [1,14.](https://ashtadhyayi.com/sutraani/2/1/14)
   <sub>attested</sub>
 
 **addendum)** — Vgl. *abhivyāpaka* fgg.

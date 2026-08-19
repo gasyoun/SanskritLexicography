@@ -56,38 +56,38 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [KAUŚ. 57.] *nyagrodhaphalaṃ bhindhi*
 [CHĀND. UP. 6,12,1.] *hatvā chittvā ca bhittvā ca*
 [M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) *chindhi bhindhi pradhāva*
-[MBH. 1,1175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1175) *prahara hara cchinddhi bhinddhi*
+[MBH. 1,1175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1175) = [≈Вульг. 1.19.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S018) = ≈крит. 01,17.17c *prahara hara cchinddhi bhinddhi*
 [VARĀH. BṚH. S. 46,77.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,77) *vane kāṣṭhāni bhindataḥ (me)*
 [SĀV. 6,30.]
 [R. 2,80,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,10) *lakṣyaṃ bhittvā*
-[MBH. 1,152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.152) [7004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7004) *lakṣaṇam*
+[MBH. 1,152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.152) = [≈Вульг. 1.1.198](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S198) = ≈крит. 01,1.140a [7004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7004) = [≈Вульг. 1.184.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A184_S015) = ≈крит. 01,175.15a *lakṣaṇam*
 [MAITRYUP. 6,24.] *sāyakaiḥ kāṃścidabhinat*
-[MBH. 1,2834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2834) [1170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1170)
+[MBH. 1,2834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2834) = [≈Вульг. 1.69.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A069_S021) = ≈крит. 01,63.15c [1170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1170) = [≈Вульг. 1.19.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S013) = ≈крит. 01,17.12a
 [R. 1,1,64.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,64) [3,50,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,18) [6,75,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,75,63)
 [RAGH. 5,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,55) [12,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,77) [91.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,91)
 [ŚIŚ. 9,66.]
 [BHAṬṬ. 15,65.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,65) [117.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,117) *dhanuṣā hṛdi bhinnaḥ*
 [HIT. 35,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?35,13) *tānpakṣanakhatuṇḍāgrairabhinadvinatāsutaḥ*
-[MBH. 1,1490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1490) *bhindanti* (so ist zu lesen) *mama* (die Sonne spricht) *maṇḍalam*
+[MBH. 1,1490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1490) = [≈Вульг. 1.32.20](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A032_S020) = ≈крит. 01,28.20a *bhindanti* (so ist zu lesen) *mama* (die Sonne spricht) *maṇḍalam*
 [KATHĀS. 48,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,5) *abhittvā paramarmāṇi*
 [Spr. 1543.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1543) *vajraṃ vajreṇa bhidyate*
 [KĀM. NĪTIS. 8. 67.] *darbhabhinnapeśalapādā*
 [SOM. NALA 73.] *pṛthivīṃ lāṅgaleneha bhittvā*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) *bhinatti bhīmaṃ karirājakumbham (siṃhaḥ)*
+[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S047) = ≈крит. 03,33.44c *bhinatti bhīmaṃ karirājakumbham (siṃhaḥ)*
 [Spr. 2047.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2047) *dharaṇītalam . bibhiduḥ — vajrasparśasamairbhujaiḥ*
 [R. 1,40,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,18) *atiśītalamapyambhaḥ kiṃ bhinatti na bhūbhṛtaḥ*
 [Spr. 1853.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1853)
 [BHAṬṬ. 6,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,35) [116.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,116) [15,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,22) *nābhidyata mahāvyūho bhīmena*
-[MBH. 6,2433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2433) [2432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2432) [7,1521.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1521) *girīṇāmiva bhidyatām (adrīṇāmiva bhindatām* die ältere Ausg.) bersten
-[6,4125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) *svayameva kāṣṭhaṃ bhidyate, abhedi*
+[MBH. 6,2433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2433) = [≈Вульг. 6.57.9](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A057_S009) = ≈крит. 06,53.8c [2432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2432) = [≈Вульг. 6.57.8](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A057_S008) = ≈крит. 06,53.7a [7,1521.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1521) = [≈Вульг. 7.35.15](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A035_S015) = ≈крит. 07,34.15a *girīṇāmiva bhidyatām (adrīṇāmiva bhindatām* die ältere Ausg.) bersten
+[6,4125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A092_S030) = ≈крит. 06,88.27a *svayameva kāṣṭhaṃ bhidyate, abhedi*
 [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *nirghoṣo bhindanniva rasātalam*
 [LA. (II) 90,6.] *(dhvaniḥ) yajñamuṣāṃ manāṃsi bhindan*
 [VARĀH. BṚH. S. 19,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,13) *bhidyerandarśanādasyā bhīrūṇāṃ hṛdayāni ca*
 [R. 1,28,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,9) *(amitram) bhindyādghaṭamivāśmani*
 [Spr. 2764.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2764)
-[MBH. 4,687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.687) *aṇḍāni bibhrati svāni na bhindanti pipīlikāḥ*
-[1,3042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3042) *bhīmo gadāghātaistavoru bhetsyate*
-[MBH. 3,379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.379) *bhinnā nauḥ*
+[MBH. 4,687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.687) = [≈Вульг. 4.21.47](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A021_S047) = ≈крит. 04,20.32c *aṇḍāni bibhrati svāni na bhindanti pipīlikāḥ*
+[1,3042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3042) = [≈Вульг. 1.74.55](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S055) = ≈крит. 01,68.54a *bhīmo gadāghātaistavoru bhetsyate*
+[MBH. 3,379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.379) = [≈Вульг. 3.10.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A010_S033) = ≈крит. 03,11.33c *bhinnā nauḥ*
 [Spr. 3065.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3065)
 [BHAṬṬ. 5,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,88) *ghaṭa*
 [Spr. 2917.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2917) *bhāṇḍa*
@@ -102,7 +102,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,102) *bhinnasāraṅgayūtha (gaja)*
 [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32) *śītena bhidyate* vor Kälte bersten
 [PAÑCAT. I,436.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,436) [III,148.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,148) *bherī*
-[MBH. 4,772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.772)
+[MBH. 4,772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.772) = [≈Вульг. 4.22.79](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A022_S079) = ≈крит. 03,12.35c
 [SUŚR. 1,155,20.] *bhinna = dārita, dīrṇa*
 [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50)
 [TRIK. 3,3,250.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,250)
@@ -131,38 +131,38 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [KAUŚ. 57.] *nyagrodhaphalaṃ bhindhi*
 [CHĀND. UP. 6,12,1.] *hatvā chittvā ca bhittvā ca*
 [M. 3,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,33) *chindhi bhindhi pradhāva*
-[MBH. 1,1175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1175) *prahara hara cchinddhi bhinddhi*
+[MBH. 1,1175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1175) = [≈Вульг. 1.19.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S018) = ≈крит. 01,17.17c *prahara hara cchinddhi bhinddhi*
 [VARĀH. BṚH. S. 46,77.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,77) *vane kāṣṭhāni bhindataḥ (me)*
 [SĀV. 6,30.]
 [R. 2,80,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,10) *lakṣyaṃ bhittvā*
-[MBH. 1,152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.152) [7004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7004) *lakṣaṇam*
+[MBH. 1,152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.152) = [≈Вульг. 1.1.198](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S198) = ≈крит. 01,1.140a [7004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7004) = [≈Вульг. 1.184.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A184_S015) = ≈крит. 01,175.15a *lakṣaṇam*
 [MAITRYUP. 6,24.] *sāyakaiḥ kāṃścidabhinat*
-[MBH. 1,2834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2834) [1170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1170)
+[MBH. 1,2834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2834) = [≈Вульг. 1.69.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A069_S021) = ≈крит. 01,63.15c [1170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1170) = [≈Вульг. 1.19.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S013) = ≈крит. 01,17.12a
 [R. 1,1,64.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,64) [3,50,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,18) [6,75,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,75,63)
 [RAGH. 5,55.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,55) [12,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,77) [91.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,91)
 [ŚIŚ. 9,66.]
 [BHAṬṬ. 15,65.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,65) [117.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,117) *dhanuṣā hṛdi bhinnaḥ*
 [HIT. 35,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?35,13) *tānpakṣanakhatuṇḍāgrairabhinadvinatāsutaḥ*
-[MBH. 1,1490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1490) *bhindanti* (так следует читать) *mama* (солнце говорит) *maṇḍalam*
+[MBH. 1,1490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1490) = [≈Вульг. 1.32.20](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A032_S020) = ≈крит. 01,28.20a *bhindanti* (так следует читать) *mama* (солнце говорит) *maṇḍalam*
 [KATHĀS. 48,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?48,5) *abhittvā paramarmāṇi*
 [Spr. 1543.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1543) *vajraṃ vajreṇa bhidyate*
 [KĀM. NĪTIS. 8. 67.] *darbhabhinnapeśalapādā*
 [SOM. NALA 73.] *pṛthivīṃ lāṅgaleneha bhittvā*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) *bhinatti bhīmaṃ karirājakumbham (siṃhaḥ)*
+[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S047) = ≈крит. 03,33.44c *bhinatti bhīmaṃ karirājakumbham (siṃhaḥ)*
 [Spr. 2047.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2047) *dharaṇītalam . bibhiduḥ — vajrasparśasamairbhujaiḥ*
 [R. 1,40,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,18) *atiśītalamapyambhaḥ kiṃ bhinatti na bhūbhṛtaḥ*
 [Spr. 1853.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1853)
 [BHAṬṬ. 6,35.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,35) [116.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,116) [15,22.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,22) *nābhidyata mahāvyūho bhīmena*
-[MBH. 6,2433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2433) [2432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2432) [7,1521.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1521) *girīṇāmiva bhidyatām (adrīṇāmiva bhindatām* более древнее изд.) трескаться, лопаться
-[6,4125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) *svayameva kāṣṭhaṃ bhidyate, abhedi*
+[MBH. 6,2433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2433) = [≈Вульг. 6.57.9](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A057_S009) = ≈крит. 06,53.8c [2432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2432) = [≈Вульг. 6.57.8](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A057_S008) = ≈крит. 06,53.7a [7,1521.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1521) = [≈Вульг. 7.35.15](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A035_S015) = ≈крит. 07,34.15a *girīṇāmiva bhidyatām (adrīṇāmiva bhindatām* более древнее изд.) трескаться, лопаться
+[6,4125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A092_S030) = ≈крит. 06,88.27a *svayameva kāṣṭhaṃ bhidyate, abhedi*
 [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *nirghoṣo bhindanniva rasātalam*
 [LA. (II) 90,6.] *(dhvaniḥ) yajñamuṣāṃ manāṃsi bhindan*
 [VARĀH. BṚH. S. 19,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,13) *bhidyerandarśanādasyā bhīrūṇāṃ hṛdayāni ca*
 [R. 1,28,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,9) *(amitram) bhindyādghaṭamivāśmani*
 [Spr. 2764.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2764)
-[MBH. 4,687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.687) *aṇḍāni bibhrati svāni na bhindanti pipīlikāḥ*
-[1,3042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3042) *bhīmo gadāghātaistavoru bhetsyate*
-[MBH. 3,379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.379) *bhinnā nauḥ*
+[MBH. 4,687.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.687) = [≈Вульг. 4.21.47](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A021_S047) = ≈крит. 04,20.32c *aṇḍāni bibhrati svāni na bhindanti pipīlikāḥ*
+[1,3042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3042) = [≈Вульг. 1.74.55](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S055) = ≈крит. 01,68.54a *bhīmo gadāghātaistavoru bhetsyate*
+[MBH. 3,379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.379) = [≈Вульг. 3.10.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A010_S033) = ≈крит. 03,11.33c *bhinnā nauḥ*
 [Spr. 3065.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3065)
 [BHAṬṬ. 5,88.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,88) *ghaṭa*
 [Spr. 2917.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2917) *bhāṇḍa*
@@ -177,7 +177,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,102) *bhinnasāraṅgayūtha (gaja)*
 [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32) *śītena bhidyate* трескаться от холода
 [PAÑCAT. I,436.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,436) [III,148.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,148) *bherī*
-[MBH. 4,772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.772)
+[MBH. 4,772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.772) = [≈Вульг. 4.22.79](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A022_S079) = ≈крит. 03,12.35c
 [SUŚR. 1,155,20.] *bhinna = dārita, dīrṇa*
 [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50)
 [TRIK. 3,3,250.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,250)
@@ -186,7 +186,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
   <sub>attested</sub>
 
 **1-sub-einen Damm durchbrechen)** [MED. n. 14.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,14) *setum, maryādām, velāṃ bhid* einen Damm, Schranken, das Ufer durchbrechen: *baddhaṃ setuṃ ko nu* (so ist zu lesen) *bhindyāt*
-[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) *ambhasā bhidyate setuḥ*
+[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c *ambhasā bhidyate setuḥ*
 [Spr. 119.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?119) *bhidyeransarve setavaḥ*
 [M. 7,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,24)
 [BHĀG. P. 3,21,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,54) *dharmasetūnbhindanti te*
@@ -218,7 +218,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 [SĀV. 4,7.]
 
 - **RU:** [MED. n. 14.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,14) *setum, maryādām, velāṃ bhid* прорывать плотину, преграды, берег: *baddhaṃ setuṃ ko nu* (так следует читать) *bhindyāt*
-[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) *ambhasā bhidyate setuḥ*
+[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c *ambhasā bhidyate setuḥ*
 [Spr. 119.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?119) *bhidyeransarve setavaḥ*
 [M. 7,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,24)
 [BHĀG. P. 3,21,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,54) *dharmasetūnbhindanti te*

@@ -56,7 +56,7 @@
   <sub>attested</sub>
 
 **5)** — 5) *saṃyatta* vorbereitet, ganz bei der Sache seiend, der seine Maassregeln getroffen hat, auf der Hut seiend, sich vorsehend: *samare*
-[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) *tathā yudhyeta saṃyatto*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) = [≈Вульг. 7.127.36](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A127_S036) = ≈крит. 07,102.71c *tathā yudhyeta saṃyatto*
 (v. l. für *saṃpanno) vijayeta ripūnyathā*
 [M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
 [HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)
@@ -65,14 +65,14 @@
 [BHĀG. P. 8,7,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) (nach der Lesart der [ed. Bomb.]). *a˚*
 [6,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,28)
 
-- **RU:** — 5) *saṃyatta* готовый, всецело поглощённый делом, принявший меры, бдительный, осторожный: *samare*
-[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) *tathā yudhyeta saṃyatto*
-(v. l. вместо *saṃpanno) vijayeta ripūnyathā*
+- **RU:** — 5) *saṃyatta* готовый, всецело поглощенный делом, принявший меры, бдительный, осторожный: *samare*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) = [≈Вульг. 7.127.36](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A127_S036) = ≈крит. 07,102.71c *tathā yudhyeta saṃyatto*
+(v. l. вм. *saṃpanno) vijayeta ripūnyathā*
 [M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
 [HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)
 [BHĀG. P. 10,44,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,44,41) *su˚*
 [HARIV. 15389](https://sanskrit-lexicon-scans.github.io/hariv?15389) (*susaṃpanna* более поздняя изд.).
-[BHĀG. P. 8,7,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) (по чтению [ed. Bomb.]). *a˚*
+[BHĀG. P. 8,7,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,7,2) (по чтению [Бомбейская ред.]). *a˚*
 [6,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,28)
   <sub>attested</sub>
 

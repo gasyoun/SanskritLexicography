@@ -20,12 +20,12 @@
 
 **mit T17 I durchsuchen / mit T20 2 / mit T21 5)** **1.** *iṣ* mit *samanu* I. durchsuchen. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — Mit *upa* 2. — Mit *atipra* 5.
 
-- **RU:** 1. *iṣ* с *samanu* I. — обыскивать. *samanveṣitum* [R. ed. Bomb. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — С *upa* 2. — С *atipra* 5.
+- **RU:** 1. *iṣ* с *samanu* I. — обыскивать. *samanveṣitum* [R. Бомбейская ред. 3,67,7](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,67,7). — С *upa* 2. — С *atipra* 5.
   <sub>attested</sub>
 
 **passivisch Infinitiv 4eβ)** **3.** *iṣ* mit passivisch aufzufassendem Infinitiv: *samudraṃ netumicchāmi bhavadbhiḥ* ich wünsche von Euch anʼs Meer geführt zu werden [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). Zu 4〉e〉β〉 gehört *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
 
-- **RU:** 3. *iṣ* с инфинитивом, понимаемым пассивно: *samudraṃ netumicchāmi bhavadbhiḥ* — я желаю, чтобы вы отвели меня к морю [R. ed. Bomb. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). К 4〉e〉β〉 относится *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
+- **RU:** 3. *iṣ* с инфинитивом, понимаемым пассивно: *samudraṃ netumicchāmi bhavadbhiḥ* — я желаю, чтобы вы отвели меня к морю [R. Бомбейская ред. 4,58,33](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,58,33). [56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,56,21). К 4〉e〉β〉 относится *pratikūlitumicchāmi na hi vākyamidaṃ tvayā* [3,24,13](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,24,13).
   <sub>attested</sub>
 
 **I.3)** **4.** *iṣ* I. 3.

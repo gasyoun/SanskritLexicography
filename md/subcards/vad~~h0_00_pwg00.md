@@ -9,8 +9,8 @@
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [AV. 3,20,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.020.html#av03.020.10) [16,2,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.002.html#av16.002.02)), *abhivādata*
 2. pl. imperat. (aus metrischen Rücksichten gedehnt)
-[MBH. 3,10908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10908) *anuvādeyus* (aus metrischen Rücksichten gedehnt)
-[4,229](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229); *uvāda, ūdatus*
+[MBH. 3,10908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10908) = [≈Вульг. 3.140.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A140_S017) = ≈крит. 03,141.16c *anuvādeyus* (aus metrischen Rücksichten gedehnt)
+[4,229](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S015) = ≈крит. 04,6.13c; *uvāda, ūdatus*
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) *vedatus, veditha*
 [52.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,52) *ūdima, ūde, ūdāte, ūdire; avādīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
@@ -19,14 +19,14 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [P. 1,2,7.](https://ashtadhyayi.com/sutraani/1/2/7)
 [VOP. 26,204.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,204) *˚udya*; pass. *udyate, avādi, udita* .
 
-- **RU:** *vad*, *vadati* und *˚te*
+- **RU:** *vad*, *vadati* и *˚te*
 [DHĀTUP. 23,40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=23) (*vyaktāyāṃ vāci*).
 [34,34](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=34) (*saṃdeśavacane*,
 v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [AV. 3,20,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.020.html#av03.020.10) [16,2,2](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.002.html#av16.002.02)), *abhivādata*
 2. pl. imperat. (растянуто из метрических соображений)
-[MBH. 3,10908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10908) *anuvādeyus* (растянуто из метрических соображений)
-[4,229](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229); *uvāda, ūdatus*
+[MBH. 3,10908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10908) = [≈Вульг. 3.140.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A140_S017) = ≈крит. 03,141.16c *anuvādeyus* (растянуто из метрических соображений)
+[4,229](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S015) = ≈крит. 04,6.13c; *uvāda, ūdatus*
 [VOP. 8,141.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,141) *vedatus, veditha*
 [52.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,52) *ūdima, ūde, ūdāte, ūdire; avādīt*
 [P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
@@ -48,17 +48,17 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚAT. BR. 2,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,14) [3,2,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,20) [4,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,7)
 [AIT. BR. 5,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,14)
 [KAUṢ. UP. 3,2.] *vadatāṃ varaḥ*
-[MBH. 3,3019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3019)
+[MBH. 3,3019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3019) = [≈Вульг. 3.77.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S012) = ≈крит. 03,76.11a
 [R. 2,99,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,99,13)
 [RAGH. 1,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,59) *vada maunaṃ samācara*
 [Spr. 579.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?579)
 [VET. in LA. (III) 4,3.] *vada vandhyā kīdṛśī nāma*
 [Spr. 855.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?855)
-[MBH. 3,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2183) *trirvadāmi*
+[MBH. 3,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2183) = [≈Вульг. 3.56.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A056_S024) = ≈крит. 03,53.14a *trirvadāmi*
 [R. 1,71,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,71,22) [2,28,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,28,4)
 [RAGH. 19,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,22) *unmattasyeva vadatastasya*
 [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) *avādīstvaṃ vayasā yaḥ pravṛddhaḥ sa vai rājannābhyadhikaḥ kathyate ca*
-[MBH. 1,3579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3579)
+[MBH. 1,3579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3579) = [≈Вульг. 1.89.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A089_S003) = ≈крит. 01,84.2c
 [KATHĀS. 4,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,64) [5,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,92) [18,143.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,143) [340.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,340) [21,137.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,137)
 [HIT. 15,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,1) [18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,18) [18,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,1) [26,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?26,11) [27,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,5)
 [ŚUK. in LA. (III) 36,4.] [BHAṬṬ. 7,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,96)
@@ -71,14 +71,14 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [DAŚAK. 59,10.]
 [PAÑCAT. 63,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?63,21)
 [BHAṬṬ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,18) *tvamapyevaṃ nale vada*
-[MBH. 3,2102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2102)
+[MBH. 3,2102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2102) = [≈Вульг. 3.53.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A053_S030) = ≈крит. 03,50.28c
 [ŚĀK. 25,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?25,14)
 [PAÑCAT. 67,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?67,22) *maivaṃ vada*
-[MBH. 5,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5985) *maivaṃ vādīḥ*
+[MBH. 5,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5985) = [≈Вульг. 5.175.10](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S010) = ≈крит. 05,172.8a *maivaṃ vādīḥ*
 [KATHĀS. 12,95.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,95)
 [SARVADARŚANAS. 79,22. 119,14.] *anyathā*
 [M. 8,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,103)
-[MBH. 1,913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.913)
+[MBH. 1,913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.913) = [≈Вульг. 1.7.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U04_A007_S003) = ≈крит. 01,7.3c
 [MĀRK. P. 64,16.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?64,16) *mithyā*
 [21,58.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,58) [M. 8,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59) [ŚĀK. 125.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?125) *mṛṣā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) *yadi yathā vadati tathā tvamasi*
@@ -86,13 +86,13 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [PAÑCAT. 48,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,14) *kiṃ vadāmi yat* so v. a. was brauche ich noch zu sagen, dass? dann brauche ich es kaum mehr zu sagen, dass
 [Spr. 2649.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2649) *vadata yadi* ob
 [Spr. 711.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?711) *kiṃ prayacchāmi tubhyaṃ droṇa vadāśu tat*
-[MBH. 1,5130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5130)
+[MBH. 1,5130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5130) = [≈Вульг. 1.130.63](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A130_S063) = ≈крит. 01,121.20c
 [Spr. 2177.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2177)
 [BHĀG. P. 7,10,69.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,69)
 [PAÑCAT. 45,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,25) *sarvamevāñjasā vada*
 [M. 8,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,101) *avācyavādāṃśca bahūnvadiṣyanti*
 [BHAG. 2,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,36) *iti vacanaṃ yuktamasmadvidho vadet*
-[MBH. 3,16720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16720) [2,2300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2300) [5,7510.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7510)
+[MBH. 3,16720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16720) = [≈Вульг. 3.296.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A296_S007) = ≈крит. 03,280.7c [2,2300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2300) = [≈Вульг. 2.68.50](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A068_S050) = ≈крит. 02,61.43c [5,7510.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7510) = [≈Вульг. 5.192.23](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A192_S023) = ≈крит. 05,193.21a
 [R. 2,47,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,3) [64,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,30) [5,29,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,29,17) [6,16,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,1)
 [Spr. 1232.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1232) [5336.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5336)
 [BHĀG. P. 3,25,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,35)
@@ -101,7 +101,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [M. 3,229.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,229) [4,236.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,236) [8,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,36) [82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,82) [97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,97)
 [Spr. 5389.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5389) *yaḥ sākṣyamanṛtaṃ vadet*
 [M. 8,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,93) [119.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,119) *vada satyam*
-[MBH. 3,2473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2473)
+[MBH. 3,2473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2473) = [≈Вульг. 3.64.73](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S073) = ≈крит. 03,61.68c
 [KATHĀS. 4,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,77)
 [BRAHMA-P. in LA. (III) 56,12.] *nāsatyaṃ nāpriyaṃ vadet*
 [R. 4,17,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,27)
@@ -121,10 +121,10 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [BHAṬṬ. 5,55.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,55) *vadedrājñīṃ ca ceṭīṃ ca bhavatīti vidūṣakaḥ*
 [BHAR.] im Comm. zu [ŚĀK. 5,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,2) *āśīrbhiranukūlābhirubhāvapyavadattadā*
 [HARIV. 6973.](https://sanskrit-lexicon-scans.github.io/hariv?6973) mit dopp. acc.: *yanmāṃ vadasi*
-[MBH. 3,1853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1853)
+[MBH. 3,1853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1853) = [≈Вульг. 3.46.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S036) = крит. —
 [R. 1,65,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,7)
 [BHAṬṬ. 5,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,96) Die Person im acc. mit *abhiḥ vada māmabhi*
-[MBH. 7,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.98) im gen. [KATHĀS. 18,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,142) — pass.: *tābhyāmavādi* impers.
+[MBH. 7,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.98) = [≈Вульг. 7.3.10](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A003_S010) = ≈крит. 07,3.10a im gen. [KATHĀS. 18,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,142) — pass.: *tābhyāmavādi* impers.
 [RĀJA-TAR. 1,219.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,219) [3,23.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,23) *udita*
 
 - **RU:** 1) act.
@@ -139,17 +139,17 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [ŚAT. BR. 2,4,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,14) [3,2,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,20) [4,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,7)
 [AIT. BR. 5,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,14)
 [KAUṢ. UP. 3,2.] *vadatāṃ varaḥ*
-[MBH. 3,3019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3019)
+[MBH. 3,3019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3019) = [≈Вульг. 3.77.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S012) = ≈крит. 03,76.11a
 [R. 2,99,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,99,13)
 [RAGH. 1,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,59) *vada maunaṃ samācara*
 [Spr. 579.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?579)
 [VET. in LA. (III) 4,3.] *vada vandhyā kīdṛśī nāma*
 [Spr. 855.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?855)
-[MBH. 3,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2183) *trirvadāmi*
+[MBH. 3,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2183) = [≈Вульг. 3.56.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A056_S024) = ≈крит. 03,53.14a *trirvadāmi*
 [R. 1,71,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,71,22) [2,28,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,28,4)
 [RAGH. 19,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,22) *unmattasyeva vadatastasya*
 [RĀJA-TAR. 5,81.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,81) *avādīstvaṃ vayasā yaḥ pravṛddhaḥ sa vai rājannābhyadhikaḥ kathyate ca*
-[MBH. 1,3579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3579)
+[MBH. 1,3579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3579) = [≈Вульг. 1.89.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A089_S003) = ≈крит. 01,84.2c
 [KATHĀS. 4,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,64) [5,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,92) [18,143.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,143) [340.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,340) [21,137.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,137)
 [HIT. 15,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,1) [18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,18) [18,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,1) [26,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?26,11) [27,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,5)
 [ŚUK. in LA. (III) 36,4.] [BHAṬṬ. 7,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,96)
@@ -162,28 +162,28 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [DAŚAK. 59,10.]
 [PAÑCAT. 63,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?63,21)
 [BHAṬṬ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,18) *tvamapyevaṃ nale vada*
-[MBH. 3,2102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2102)
+[MBH. 3,2102.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2102) = [≈Вульг. 3.53.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A053_S030) = ≈крит. 03,50.28c
 [ŚĀK. 25,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?25,14)
 [PAÑCAT. 67,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?67,22) *maivaṃ vada*
-[MBH. 5,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5985) *maivaṃ vādīḥ*
+[MBH. 5,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5985) = [≈Вульг. 5.175.10](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S010) = ≈крит. 05,172.8a *maivaṃ vādīḥ*
 [KATHĀS. 12,95.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,95)
 [SARVADARŚANAS. 79,22. 119,14.] *anyathā*
 [M. 8,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,103)
-[MBH. 1,913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.913)
+[MBH. 1,913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.913) = [≈Вульг. 1.7.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U04_A007_S003) = ≈крит. 01,7.3c
 [MĀRK. P. 64,16.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?64,16) *mithyā*
 [21,58.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,58) [M. 8,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59) [ŚĀK. 125.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?125) *mṛṣā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) *yadi yathā vadati tathā tvamasi*
 [ŚĀK. 123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *sarvo jano vadiṣyati yat* что
-[PAÑCAT. 48,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,14) *kiṃ vadāmi yat* so преим. что мне ещё остаётся говорить? мне уже едва ли нужно говорить, что
+[PAÑCAT. 48,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?48,14) *kiṃ vadāmi yat* so преим. что мне еще остается говорить? мне уже едва ли нужно говорить, что
 [Spr. 2649.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2649) *vadata yadi* ли
 [Spr. 711.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?711) *kiṃ prayacchāmi tubhyaṃ droṇa vadāśu tat*
-[MBH. 1,5130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5130)
+[MBH. 1,5130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5130) = [≈Вульг. 1.130.63](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A130_S063) = ≈крит. 01,121.20c
 [Spr. 2177.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2177)
 [BHĀG. P. 7,10,69.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,69)
 [PAÑCAT. 45,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,25) *sarvamevāñjasā vada*
 [M. 8,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,101) *avācyavādāṃśca bahūnvadiṣyanti*
 [BHAG. 2,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,36) *iti vacanaṃ yuktamasmadvidho vadet*
-[MBH. 3,16720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16720) [2,2300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2300) [5,7510.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7510)
+[MBH. 3,16720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16720) = [≈Вульг. 3.296.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A296_S007) = ≈крит. 03,280.7c [2,2300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2300) = [≈Вульг. 2.68.50](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A068_S050) = ≈крит. 02,61.43c [5,7510.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7510) = [≈Вульг. 5.192.23](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A192_S023) = ≈крит. 05,193.21a
 [R. 2,47,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,3) [64,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,30) [5,29,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,29,17) [6,16,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,1)
 [Spr. 1232.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1232) [5336.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5336)
 [BHĀG. P. 3,25,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,35)
@@ -192,7 +192,7 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [M. 3,229.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,229) [4,236.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,236) [8,36.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,36) [82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,82) [97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,97)
 [Spr. 5389.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5389) *yaḥ sākṣyamanṛtaṃ vadet*
 [M. 8,93.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,93) [119.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,119) *vada satyam*
-[MBH. 3,2473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2473)
+[MBH. 3,2473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2473) = [≈Вульг. 3.64.73](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S073) = ≈крит. 03,61.68c
 [KATHĀS. 4,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,77)
 [BRAHMA-P. in LA. (III) 56,12.] *nāsatyaṃ nāpriyaṃ vadet*
 [R. 4,17,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,27)
@@ -212,9 +212,9 @@ v. l. *saṃdeśane, bhāṣaṇe*), *vadet, udeyam* (
 [BHAṬṬ. 5,55.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,55) *vadedrājñīṃ ca ceṭīṃ ca bhavatīti vidūṣakaḥ*
 [BHAR.] в коммент. к [ŚĀK. 5,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?5,2) *āśīrbhiranukūlābhirubhāvapyavadattadā*
 [HARIV. 6973.](https://sanskrit-lexicon-scans.github.io/hariv?6973) с dopp. acc.: *yanmāṃ vadasi*
-[MBH. 3,1853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1853)
+[MBH. 3,1853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1853) = [≈Вульг. 3.46.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S036) = крит. —
 [R. 1,65,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,7)
 [BHAṬṬ. 5,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,96) лицо в acc. с *abhiḥ vada māmabhi*
-[MBH. 7,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.98) в gen. [KATHĀS. 18,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,142) — pass.: *tābhyāmavādi* impers.
+[MBH. 7,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.98) = [≈Вульг. 7.3.10](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A003_S010) = ≈крит. 07,3.10a в gen. [KATHĀS. 18,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,142) — pass.: *tābhyāmavādi* impers.
 [RĀJA-TAR. 1,219.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,219) [3,23.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,23) *udita*
   <sub>attested</sub>

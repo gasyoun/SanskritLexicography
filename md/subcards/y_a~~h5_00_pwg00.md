@@ -9,7 +9,7 @@
 [KAIY.]
 — *samā*
  3) theilhaftig werden: *vastu*
-[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492)
+[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492 "Spr. (II) 2492: tapasālaṅkṛto jīvo yadyadvastu samīhate | tattadeva samāyāti bhuvanatritaye dhruvam || — Eine mit Kasteiungen geschmückte Seele wird sicher in den drei Welten alles dessen theilhaftig, was sie erstrebt.")
 — *nis*
  1) *cāpānniryāto bāṇavāraḥ*
 [PĀRŚVANĀTHAK. 4,141] nach [AUFRECHT], [HALĀY.] [Ind.] u. *vāra* .
@@ -23,7 +23,7 @@ Z. 4 lies 3, 31, 19 st. 3, 31, 9.
 [KAIY.]
 — *samā*
  3) становиться причастным; приобщаться: *vastu*
-[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492)
+[Spr. (II) 2492.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2492 "Spr. (II) 2492: tapasālaṅkṛto jīvo yadyadvastu samīhate | tattadeva samāyāti bhuvanatritaye dhruvam || — Eine mit Kasteiungen geschmückte Seele wird sicher in den drei Welten alles dessen theilhaftig, was sie erstrebt.")
 — *nis*
  1) *cāpānniryāto bāṇavāraḥ*
 [PĀRŚVANĀTHAK. 4,141] nach [AUFRECHT], [HALĀY.] [Ind.] u. *vāra* .

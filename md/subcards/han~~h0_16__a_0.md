@@ -19,7 +19,7 @@
 [Z. d. d. m. G. 27,70.] *gadayā*
 [HARIV. 5067.](https://sanskrit-lexicon-scans.github.io/hariv?5067)
 [BHĀG. P. 8,10,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,56) *nārācaiḥ, bāṇena, śaraiḥ*
-[MBH. 3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750)
+[MBH. 3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) = [≈Вульг. 3.271.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S034) = ≈крит. 03,255.34a
 [MĀRK. P. 21,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,6) [89,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?89,27) *khaḍgena*
 [KATHĀS. 44,145](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,145) (kann auch *han* simpl. sein). *kṣurikayā*
 [42,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,47) *sarṣapaiḥ*
@@ -58,7 +58,7 @@ Schol. *āghnīya*
 [Z. d. d. m. G. 27,70.] *gadayā*
 [HARIV. 5067.](https://sanskrit-lexicon-scans.github.io/hariv?5067)
 [BHĀG. P. 8,10,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,56) *nārācaiḥ, bāṇena, śaraiḥ*
-[MBH. 3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750)
+[MBH. 3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) = [≈Вульг. 3.271.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S034) = ≈крит. 03,255.34a
 [MĀRK. P. 21,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,6) [89,27.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?89,27) *khaḍgena*
 [KATHĀS. 44,145](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,145) (может также быть *han* simpl.). *kṣurikayā*
 [42,47.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,47) *sarṣapaiḥ*
@@ -132,8 +132,8 @@ für *etānyo hanti* .
 [H. an.]) [RAGH. 15,52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,52) getroffen so v. a. zum Schaden berührt (in der Astr.); überhaupt so v. a. heimgesucht, geschädigt: *śṛṅge* (des Mondes) *kujenāhate*
 [VARĀH. BṚH. S. 4,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,21) *kṣititanayatrividhādbhutāhate bhe*
 [23,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?23,10) *hṛdi śokena*
-[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) *yakṣmāhata*
-[13,1584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1584) *dṛṣṭiviṣāhata*
+[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) = [≈Вульг. 5.190.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A190_S013) = ≈крит. 05,191.12a *yakṣmāhata*
+[13,1584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1584) = [≈Вульг. 13.23.13](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A023_S013) = ≈крит. 13,24.14a *dṛṣṭiviṣāhata*
 [KATHĀS. 33,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,65) *vṛkṣa* angerissen
 [ŚAT. BR. 14,6,9,31.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,31) *grāhāhata ibhaḥ* verwundet
 [BHĀG. P. 3,18,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,6)
@@ -162,8 +162,8 @@ für *etānyo hanti* .
 [H. an.]) [RAGH. 15,52.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,52) пораженный так преим. затронутый к ущербу (в астр.); вообще так преим. подвергшийся напасти, поврежденный: *śṛṅge* (луны) *kujenāhate*
 [VARĀH. BṚH. S. 4,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?4,21) *kṣititanayatrividhādbhutāhate bhe*
 [23,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?23,10) *hṛdi śokena*
-[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) *yakṣmāhata*
-[13,1584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1584) *dṛṣṭiviṣāhata*
+[MBH. 5,7446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7446) = [≈Вульг. 5.190.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A190_S013) = ≈крит. 05,191.12a *yakṣmāhata*
+[13,1584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1584) = [≈Вульг. 13.23.13](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A023_S013) = ≈крит. 13,24.14a *dṛṣṭiviṣāhata*
 [KATHĀS. 33,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,65) *vṛkṣa* задетый
 [ŚAT. BR. 14,6,9,31.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,9,31) *grāhāhata ibhaḥ* раненый
 [BHĀG. P. 3,18,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,6)
@@ -181,14 +181,14 @@ für *etānyo hanti* .
   <sub>attested</sub>
 
 **4c)** — c) angeschlagen, in Bewegung gesetzt. *anāhatā kampati me dhanurjyā*
-[MBH. 5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) eine Trommel u. s. w.: *anāhatā dundubhayo vineduḥ*
-[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316 "Spr. (II) 1316: urasi nihitastāro hāraḥ kṛtā jaghane kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau | priyamabhisarasyevaṃ mugdhe tvamāhataḍiṇḍimā yadi kimadhikatrāsotkam… — (501.) An die Brust hast du eine klingende Perlenschnur gehängt, um die prallen Hüften hast du einen gellenden Glockengürtel befestigt, die Füsse tragen tönende Zierathen aus Edelsteinen. Wenn du, o Einfältige, auf diese…") [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (eine Muschel)
+[MBH. 5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) = [≈Вульг. 5.48.102](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A048_S102) = ≈крит. 05,47.96a eine Trommel u. s. w.: *anāhatā dundubhayo vineduḥ*
+[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) = [≈Вульг. 14.80.55](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S055) = ≈крит. 14,81.15c [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316 "Spr. (II) 1316: urasi nihitastāro hāraḥ kṛtā jaghane kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau | priyamabhisarasyevaṃ mugdhe tvamāhataḍiṇḍimā yadi kimadhikatrāsotkam… — (501.) An die Brust hast du eine klingende Perlenschnur gehängt, um die prallen Hüften hast du einen gellenden Glockengürtel befestigt, die Füsse tragen tönende Zierathen aus Edelsteinen. Wenn du, o Einfältige, auf diese…") [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (eine Muschel)
 [SIDDH. K.] zu [P. 6,2,48.](https://ashtadhyayi.com/sutraani/6/2/48) _m._ = *ānaka* Trommel
 [MED.]
 
 - **RU:** — c) ударенный (о музыкальном инструменте), приведенный в движение. *anāhatā kampati me dhanurjyā*
-[MBH. 5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) барабан и т.д.: *anāhatā dundubhayo vineduḥ*
-[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316 "Spr. (II) 1316: urasi nihitastāro hāraḥ kṛtā jaghane kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau | priyamabhisarasyevaṃ mugdhe tvamāhataḍiṇḍimā yadi kimadhikatrāsotkam… — (501.) An die Brust hast du eine klingende Perlenschnur gehängt, um die prallen Hüften hast du einen gellenden Glockengürtel befestigt, die Füsse tragen tönende Zierathen aus Edelsteinen. Wenn du, o Einfältige, auf diese…") [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (раковина)
+[MBH. 5,1909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1909) = [≈Вульг. 5.48.102](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A048_S102) = ≈крит. 05,47.96a барабан и т.д.: *anāhatā dundubhayo vineduḥ*
+[7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7241) [14,2395.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2395) = [≈Вульг. 14.80.55](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S055) = ≈крит. 14,81.15c [HARIV. 3322.](https://sanskrit-lexicon-scans.github.io/hariv?3322) [8056.](https://sanskrit-lexicon-scans.github.io/hariv?8056) [10296.](https://sanskrit-lexicon-scans.github.io/hariv?10296) [R. 5,74,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,37) [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) [RAGH. 17,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,11) [Spr. (II) 1316.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1316 "Spr. (II) 1316: urasi nihitastāro hāraḥ kṛtā jaghane kalakalavatī kāñcī pādau kvaṇanmaṇinūpurau | priyamabhisarasyevaṃ mugdhe tvamāhataḍiṇḍimā yadi kimadhikatrāsotkam… — (501.) An die Brust hast du eine klingende Perlenschnur gehängt, um die prallen Hüften hast du einen gellenden Glockengürtel befestigt, die Füsse tragen tönende Zierathen aus Edelsteinen. Wenn du, o Einfältige, auf diese…") [PAÑCAT. ed. orn. 57,14.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,14) *anāhato nadati devadattaḥ* (раковина)
 [SIDDH. K.] к [P. 6,2,48.](https://ashtadhyayi.com/sutraani/6/2/48) _m._ = *ānaka* барабан
 [MED.]
   <sub>attested</sub>

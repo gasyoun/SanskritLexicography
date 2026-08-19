@@ -7,7 +7,7 @@
 [ŚAT. BR. 3,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,8)
 [KĀTY. ŚR. 10,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,5)
 
-- **RU:** — *abhi* измерять по чему-либо / отмерять на чём-либо
+- **RU:** — *abhi* измерять по чему-либо / отмерять на чем-либо
 [ŚAT. BR. 3,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,8)
 [KĀTY. ŚR. 10,1,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,1,5)
   <sub>attested</sub>

@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["SfgAla"]=[{"key": "_sfg_ala~~h0_zz_pw", "h": "śṛgāla", "iast": "śṛgāla", "senses": [{"tag": "xref", "de_html": "<i class=sa>śṛgāla</i> <span class=ab title=siehe — see>s.</span> <i class=sa>sṛgāla</i>.", "ru_html": "<i class=sa>śṛgāla</i> <span class=ab title=siehe — see>см.</span> <i class=sa>sṛgāla</i>.", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["SfgAla"]=[];

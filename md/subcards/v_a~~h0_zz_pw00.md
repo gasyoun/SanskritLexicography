@@ -12,7 +12,7 @@
 — 1〉 oder, nachfolgend, metrisch aber auch vorangehend. *na — vā* weder — noch, *vā — vā* entweder — oder (bei einer Disjunction zweier Sätze wird das Verbum des ersten, ausnahmsweise auch das des zweiten Satzes betont), *kiṃ* (Fragepartikel). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* weder — noch, *vā — na vā* entweder — oder nicht, vielleicht — vielleicht auch nicht ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), ob — oder nicht, *vā na — vā* entweder nicht — oder, *yadi vā — vā* ob — oder. Bei mehr als zwei Gliedern vom zweiten an wiederholt oder hier und da ausfallend; steht *vā* schon nach dem ersten Gliede, so ist es hier durch entweder oder weder (in einem negativem Satze) wiederzugeben. Eine Negation braucht an zweiter und folgender Stelle nicht wiederholt zu werden. Es wechselt *vā* auch mit *ca* und *api*. Statt des einfachen *vā* auch *api vā*, *api vā punaḥ* (an letzter Stelle), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (an letzter Stelle [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* oder auch nicht [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (an erster Stelle), *vā gha*. In *yajñasya vā niśitiṃ voditiṃ vā* ist das erste *vā* überschüssig.
 
 - **RU:** **1.** *vā* _Indecl._
-— 1〉 или, следует за предшествующим словом, но метрически также предшествует ему. *na — vā* ни — ни, *vā — vā* или — или (при дизъюнкции двух предложений ударение падает на глагол первого, в виде исключения также второго предложения), *kiṃ* (вопросительная частица). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* ни — ни, *vā — na vā* или — или нет, быть может — быть может и нет ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), или — или нет, *vā na — vā* или не — или, *yadi vā — vā* или — или. При более чем двух членах повторяется начиная со второго или местами опускается; если *vā* стоит уже после первого члена, то здесь оно передаётся через или либо ни (в отрицательном предложении). Отрицание не обязательно повторяется при втором и последующих членах. *vā* чередуется также с *ca* и *api*. Вместо простого *vā* также *api vā*, *api vā punaḥ* (на последнем месте), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (на последнем месте [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* или также нет [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (на первом месте), *vā gha*. В *yajñasya vā niśitiṃ voditiṃ vā* первое *vā* является излишним.
+— 1〉 или, следует за предшествующим словом, но метрически также предшествует ему. *na — vā* ни — ни, *vā — vā* или — или (при дизъюнкции двух предложений ударение падает на глагол первого, в виде исключения также второго предложения), *kiṃ* (вопросительная частица). *vā — kiṃ vā*, *kiṃ vā — na vā*, *na vā — vā* ни — ни, *vā — na vā* или — или нет, быть может — быть может и нет ([28,13](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28). [14](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28)), или — или нет, *vā na — vā* или не — или, *yadi vā — vā* или — или. При более чем двух членах повторяется начиная со второго или местами опускается; если *vā* стоит уже после первого члена, то здесь оно передается через или либо ни (в отрицательном предложении). Отрицание не обязательно повторяется при втором и последующих членах. *vā* чередуется также с *ca* и *api*. Вм. простого *vā* также *api vā*, *api vā punaḥ* (на последнем месте), *vāpi*, *atha vā*, *atho vā*, *vātha*, *atha vāpi*, *atha vā punaḥ* (на последнем месте [69,31](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69)), *yadi vā* (*yadi vā na* или также нет [19,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?19)), *yadvā* ([166,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?166)). *uta vā*, *vāha* (на первом месте), *vā gha*. В *yajñasya vā niśitiṃ voditiṃ vā* первое *vā* является излишним.
   <sub>attested</sub>
 
 **2)** — 2〉 oder, so v. a. entweder oder auch nicht, beliebig, facultativ.
@@ -45,9 +45,9 @@
 - **RU:** — 7〉 после вопросительных и относительных _Pronomm._ так преим. пожалуй, примерно, разве.
   <sub>attested</sub>
 
-**8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
+**8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a.
 
-- **RU:** — 8〉 метрически вместо *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25).
+- **RU:** — 8〉 метрически вм. *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a.
   <sub>attested</sub>
 
 **9)** — 9〉 nach den Lexicographen auch blosser Lückenbüsser.
@@ -221,7 +221,7 @@
 
 - **RU:** — 4〉 *nirvāṇa*
 — a〉 угасший; о солнце так преим. зашедший [Spr. 1276](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1276).
-— b〉 тот, у кого угас огонь жизни, совершенно успокоившийся, освобождённый от уз существования.
+— b〉 тот, у кого угас огонь жизни, совершенно успокоившийся, освобожденный от уз существования.
 — c〉 *неподвижный.
   <sub>mixed</sub>
 
@@ -296,14 +296,14 @@
 - **RU:** — С *anuvi* продувать последовательно или в длину.
   <sub>attested</sub>
 
-**mit_prati)** — Mit *sam* wehen [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
+**mit_prati)** — Mit *sam* wehen [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37) = [≈Вульг. 12.11.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S010) = ≈крит. 12,11.10a.
 
-- **RU:** — С *sam* веять, дуть [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37).
+- **RU:** — С *sam* веять, дуть [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37) = [≈Вульг. 12.11.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S010) = ≈крит. 12,11.10a.
   <sub>attested</sub>
 
 **mit_anu_sam)** — Mit *anusam* der Reihe nach (zusammen) anwehen.
 
-- **RU:** — С *anusam* поочерёдно (совместно) овевать.
+- **RU:** — С *anusam* поочередно (совместно) овевать.
   <sub>attested</sub>
 
 **1)** **3.** √*vā*, *vāyati*, *vāyate* (episch)
@@ -323,9 +323,9 @@
 - **RU:** — 3〉 лишаться, утрачивать, с Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
   <sub>attested</sub>
 
-**4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) fehlerhaft für *avārayat*.
+**4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) = [≈Вульг. 9.2.38](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A002_S038) = ≈крит. 09,2.34c fehlerhaft für *avārayat*.
 
-- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) ошибочно вместо *avārayat*.
+- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) = [≈Вульг. 9.2.38](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A002_S038) = ≈крит. 09,2.34c ошибочно вм. *avārayat*.
   <sub>attested</sub>
 
 **5)** — 5〉 *vāna* trocken.
@@ -345,7 +345,7 @@
 
 **mit_upa_erschoepf)** — Mit *abhi*, *abhivāta* siech, krank. Statt dessen fehlerhaft *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
 
-- **RU:** — С *abhi*, *abhivāta* хворый, больной. Ошибочно вместо этого *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
+- **RU:** — С *abhi*, *abhivāta* хворый, больной. Ошибочно вм. этого *abhighāta* [SĀMAV. BR. 1,8,13. fgg.]
   <sub>attested</sub>
 
 **mit_pra_vi)** — Mit *ud* matt werden, hinsterben; vom Feuer in sich erlöschen.
@@ -377,7 +377,7 @@
 
 **mit_abhi_erschoepf_2)** — 2〉 *pravāta* erschöpft, müde [CARAKA. 1,7].
 
-- **RU:** — 2〉 *pravāta* изнурённый, усталый [CARAKA. 1,7].
+- **RU:** — 2〉 *pravāta* изнуренный, усталый [CARAKA. 1,7].
   <sub>attested</sub>
 
 **mit_sam_pra)** — Mit *atipra* heftig wehen.
@@ -390,9 +390,9 @@
 - **RU:** — С *vi* Med. веять, дуть.
   <sub>attested</sub>
 
-**mit_aa_vaa)** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) herbeiziehen, gewinnen [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
+**mit_aa_vaa)** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) herbeiziehen, gewinnen [ṚV. 1,74,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09) [ṚV. 8,31,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.07) [ṚV. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.098.html#rv09.098.04).
 
-- **RU:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) привлекать, добывать, снискивать [ṚV. 1,74,9. 8,31,7. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09).
+- **RU:** — Desid. *vivāsati*, *˚te* (*paricaraṇakarman*) привлекать, добывать, снискивать [ṚV. 1,74,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.074.html#rv01.074.09) [ṚV. 8,31,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.031.html#rv08.031.07) [ṚV. 9,98,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.098.html#rv09.098.04).
   <sub>attested</sub>
 
 **mit_abhi_vaa)** — Mit *accha* Desid. Act. dass. [ṚV. 6,16,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.016.html#rv06.016.12).

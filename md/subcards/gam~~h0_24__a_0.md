@@ -18,18 +18,18 @@
 [ŚAT. BR. 14,6,11,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,6) [7,1,43.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,43) [8,12,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,12,1) — *ayamayamāgacchāmi*
 [ŚĀK. 42,5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?42,5) *ājagāma tato brahmā — draṣṭuṃ tam*
 [R. 1,2,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,26) [13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,13)
-[MBH. 3,15314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15314)
+[MBH. 3,15314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15314) = [≈Вульг. 3.256.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A256_S018) = ≈крит. 03,242.16c
 [N. 4,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,15) *rathaḥ — ājagāma*
-[MBH. 3,1715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1715) *satvaramāgamyatāṃ devena*
+[MBH. 3,1715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1715) = [≈Вульг. 3.42.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S002) = ≈крит. 03,43.2a *satvaramāgamyatāṃ devena*
 [HIT. 41,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?41,13) *nānādigdeśāt*
 [9,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?9,4) [R. 1,59,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,9) *ājagāmāśu pāṇḍavān*
 [HIḌ. 3,1.]
 [R. 1,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,5) *abhyāsam*
-[9,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,25) [MBH. 1,7030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7030) *samīpam*
+[9,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,25) [MBH. 1,7030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7030) = [≈Вульг. 1.185.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A185_S021) = ≈крит. 01,176.21a *samīpam*
 [N. 2,23.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,23) *antikam*
 [ITIH.] bei [SĀY.] zu [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *parvatam*
 [ARJ. 1,3.] *sabhādvāram*
-[MBH. 3,264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.264)
+[MBH. 3,264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.264) = [≈Вульг. 3.6.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S003) = ≈крит. 03,7.2a
 [N. 13,48.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,48)
 [R. 1,9,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,43) [57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,57) [26,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,30) *rātrau tava gṛha āgamiṣyāmi*
 
@@ -40,7 +40,7 @@
 [N. 16,30.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,30)
 
 - **RU:** — *ā*
- 1) «прийти, явиться, наступить; прийти к, в, после; подступить к, к; достигнуть, встретить»: *viśvo hya1nyo arirājagāma*
+ 1) прийти, явиться, наступить; прийти к, в, после; подступить к, к; достигнуть, встретить: *viśvo hya1nyo arirājagāma*
 [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) *āgacchata āgatasya nāma gṛhṇāmyāyataḥ*
 [AV. 6,82,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.082.html#av06.082.01) *devo devebhirā gamat*
 [ṚV. 1,1,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.001.html#rv01.001.05) [5,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.005.html#rv01.005.03) [21,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.021.html#rv01.021.04) [34,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.034.html#rv01.034.10) *āgacchataṃ sīmavobhiḥ*
@@ -49,30 +49,30 @@
 [1,181,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.181.html#rv01.181.03) [186,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.186.html#rv01.186.06) [10,3,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.003.html#rv10.003.07) *ā vāṃ patitvaṃ sakhyāya jagmuṣī*
 [1,119,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.119.html#rv01.119.05) [VS. 9,19.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,19) *ā mā -ghoṣo gacchati vāṅma āsām (apām)*
 [AV. 3,13,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.013.html#av03.013.06) *ā ghā tā gacchānuttarā yugāni*
-[ṚV. 10,10,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.10) *mā no arātiraghaśaṃsa āgan* «пусть оно не достигнет нас»
+[ṚV. 10,10,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.010.html#rv10.010.10) *mā no arātiraghaśaṃsa āgan* пусть оно не достигнет нас
 [TBR. 3,1,2,8.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,2,8) *abhayaṃ tvāgacchatāt*
 [ŚAT. BR. 14,6,11,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,6) [7,1,43.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,43) [8,12,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,12,1) — *ayamayamāgacchāmi*
 [ŚĀK. 42,5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?42,5) *ājagāma tato brahmā — draṣṭuṃ tam*
 [R. 1,2,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,26) [13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,13)
-[MBH. 3,15314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15314)
+[MBH. 3,15314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15314) = [≈Вульг. 3.256.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A256_S018) = ≈крит. 03,242.16c
 [N. 4,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,15) *rathaḥ — ājagāma*
-[MBH. 3,1715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1715) *satvaramāgamyatāṃ devena*
+[MBH. 3,1715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1715) = [≈Вульг. 3.42.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S002) = ≈крит. 03,43.2a *satvaramāgamyatāṃ devena*
 [HIT. 41,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?41,13) *nānādigdeśāt*
 [9,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?9,4) [R. 1,59,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,9) *ājagāmāśu pāṇḍavān*
 [HIḌ. 3,1.]
 [R. 1,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,5) *abhyāsam*
-[9,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,25) [MBH. 1,7030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7030) *samīpam*
+[9,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,25) [MBH. 1,7030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7030) = [≈Вульг. 1.185.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A185_S021) = ≈крит. 01,176.21a *samīpam*
 [N. 2,23.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,23) *antikam*
 [ITIH.] у [SĀY.] к [ṚV. 1,125,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.125.html#rv01.125.01) *parvatam*
 [ARJ. 1,3.] *sabhādvāram*
-[MBH. 3,264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.264)
+[MBH. 3,264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.264) = [≈Вульг. 3.6.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A006_S003) = ≈крит. 03,7.2a
 [N. 13,48.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,48)
 [R. 1,9,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,43) [57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,57) [26,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,26,30) *rātrau tava gṛha āgamiṣyāmi*
 
 [VET. 24,3.] *tatra*
 [SUND. 4,21.]
 [N. 7,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,1) *āgacchethāḥ*
-[MBH.] в [BENF. Chr. 28,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28) *āgam saha* «сойтись с кем-либо»
+[MBH.] в [BENF. Chr. 28,16.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28) *āgam saha* сойтись с кем-либо
 [N. 16,30.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,30)
   <sub>attested</sub>
 
@@ -87,7 +87,7 @@
 [1,2,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,9) *punarāgamya tāṃ sabhām*
 [N. 10,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,20) [1,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,31) [4,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,22)
 
-- **RU:** — 2) «возвращаться»
+- **RU:** — 2) возвращаться
 [TS. 1,5,9,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,9,4)
 [N. 24,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,1)
 [R. 1,61,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,22)
@@ -105,7 +105,7 @@
 [3,55,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,18) *viśvāsam*
 [52,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,52,49) [PAÑCAT. 34,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?34,15) — *āgata*
 
-- **RU:** — 3) «войти в некое состояние, — впасть, предаться»: *teṣāmānṛṇyamāgaccha*
+- **RU:** — 3) войти в некое состояние, — впасть, предаться: *teṣāmānṛṇyamāgaccha*
 [R. 3,27,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,27,13) *dhyānam*
 [R. 6,99,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,99,4) *samudvegam*
 [3,55,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,18) *viśvāsam*
@@ -123,9 +123,9 @@
 [R. 3,68,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,48)
 [VID. 5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?5) [298.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?298) *ahamapyanupadamāgata eva* ich komme sogleich nach
 [ŚĀK. 29,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?29,1) *āgatābhyāgatān*
-[MBH. 5,912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.912) *tasya kālo 'yamāgataḥ*
+[MBH. 5,912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.912) = [≈Вульг. 5.30.46](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A030_S046) = ≈крит. 05,30.44a *tasya kālo 'yamāgataḥ*
 [R. 1,62,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,9) *kāla āgate*
-[MBH. 3,1793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1793) *rājanyām*
+[MBH. 3,1793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1793) = [≈Вульг. 3.44.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A044_S009) = крит. — *rājanyām*
 [PAÑCAT. 128,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?128,11) *gṛhamāgatān*
 [M. 3,113.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,113)
 [N. 12,78.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,78)
@@ -143,27 +143,27 @@
 [YĀJÑ. 2,154.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,154) zugekommen, zugefallen: *nyāyāgatadhana*
 [YĀJÑ. 3,205.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,205) *anvayāgata* ererbt
 [PAÑCAT. 16,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,11) [168,23](https://sanskrit-lexicon-scans.github.io/pantankose/app2?168,23) (fälschlich *anvayagata)*; vgl. *kramāgata, paryāyāgata* . was sich zugetragen hat: *kimanyadidamāgatam*
-[MBH. 3,2555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2555) was sich eingestellt hat: *āgataṃ cāśā ca*
+[MBH. 3,2555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2555) = [≈Вульг. 3.65.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S024) = крит. — was sich eingestellt hat: *āgataṃ cāśā ca*
 [ŚAT. BR. 2,3,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,24) [27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,27) *āgatamanyu*
 [M. 2,152.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,152) *kiṃcidāgatavismaya*
 [R. 1,35,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,35,23) *˚saṃtrāsa*
 [6,5,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,5,3) *māmāgataṃ tasya tadvacaḥ* jene Rede von ihm geht jetzt an mir in Erfüllung
 [DAŚ. 2,58.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,58)
 
-- **RU:** 1) «пришедший, явившийся»
+- **RU:** 1) пришедший, явившийся
 [AV. 6,82,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.082.html#av06.082.01) [10,4,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.09) [19,53,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.053.html#av19.053.07) *ahani*
 [7,52,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.052.html#av07.052.02) *ṛtau*
 [11,4,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.04) *punaryantu yata āgatāḥ*
-[14,2,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.10) [ŚAT. BR. 3,6,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,2) [KĀTY. ŚR. 7,8,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,8,22) о «госте»
+[14,2,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.10) [ŚAT. BR. 3,6,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,2) [KĀTY. ŚR. 7,8,22.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?7,8,22) о госте
 [AIT. BR. 1,15.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,15)
 [ŚAT. BR. 1,6,4,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,4,3) [3,3,4,31.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,4,31) — *āgato 'smi*
 [N. 21,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,22) [3,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,3) [22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,22) [26,34.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,34)
 [R. 3,68,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,48)
-[VID. 5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?5) [298.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?298) *ahamapyanupadamāgata eva* «я приду тотчас следом»
+[VID. 5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?5) [298.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?298) *ahamapyanupadamāgata eva* я приду тотчас следом
 [ŚĀK. 29,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?29,1) *āgatābhyāgatān*
-[MBH. 5,912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.912) *tasya kālo 'yamāgataḥ*
+[MBH. 5,912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.912) = [≈Вульг. 5.30.46](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A030_S046) = ≈крит. 05,30.44a *tasya kālo 'yamāgataḥ*
 [R. 1,62,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,9) *kāla āgate*
-[MBH. 3,1793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1793) *rājanyām*
+[MBH. 3,1793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1793) = [≈Вульг. 3.44.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A044_S009) = крит. — *rājanyām*
 [PAÑCAT. 128,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?128,11) *gṛhamāgatān*
 [M. 3,113.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,113)
 [N. 12,78.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,78)
@@ -173,19 +173,19 @@
 [DAŚ. 2,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,13) *ihāgataḥ*
 [N. 12,38.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,38) [16,24.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,24) [16,24.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,24) [18,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?18,12) [22,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?22,7)
 [HIT. 19,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?19,3) *tatra*
-[18,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,10) *āśramāgata* «пришедший в скит»
+[18,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,10) *āśramāgata* пришедший в скит
 [M. 6,7.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,7) *gṛhāgata*
 [PAÑCAT. III,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,11) *śaraṇāgata*
-[RAGH. 3,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,11) *tiryakpratimukhāgata* (повозка) «которая ударилась сбоку или спереди обо что-либо»
-[M. 8,291.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,291) Также с указанием места «откуда» compon.: *digāgata*
-[YĀJÑ. 2,154.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,154) «доставшийся, выпавший на долю»: *nyāyāgatadhana*
-[YĀJÑ. 3,205.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,205) *anvayāgata* «унаследованный»
-[PAÑCAT. 16,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,11) [168,23](https://sanskrit-lexicon-scans.github.io/pantankose/app2?168,23) (ошибочно *anvayagata)*; ср. *kramāgata, paryāyāgata*) «то, что случилось»: *kimanyadidamāgatam*
-[MBH. 3,2555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2555) «то, что наступило»: *āgataṃ cāśā ca*
+[RAGH. 3,11.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,11) *tiryakpratimukhāgata* (повозка) которая ударилась сбоку или спереди обо что-либо
+[M. 8,291.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,291) Также с указанием места откуда compon.: *digāgata*
+[YĀJÑ. 2,154.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,154) доставшийся, выпавший на долю: *nyāyāgatadhana*
+[YĀJÑ. 3,205.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,205) *anvayāgata* унаследованный
+[PAÑCAT. 16,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,11) [168,23](https://sanskrit-lexicon-scans.github.io/pantankose/app2?168,23) (ошибочно *anvayagata)*; ср. *kramāgata, paryāyāgata*) то, что случилось: *kimanyadidamāgatam*
+[MBH. 3,2555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2555) = [≈Вульг. 3.65.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S024) = крит. — то, что наступило: *āgataṃ cāśā ca*
 [ŚAT. BR. 2,3,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,24) [27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,27) *āgatamanyu*
 [M. 2,152.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,152) *kiṃcidāgatavismaya*
 [R. 1,35,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,35,23) *˚saṃtrāsa*
-[6,5,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,5,3) *māmāgataṃ tasya tadvacaḥ* «та его речь теперь на мне исполняется»
+[6,5,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,5,3) *māmāgataṃ tasya tadvacaḥ* та его речь теперь на мне исполняется
 [DAŚ. 2,58.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,58)
   <sub>attested</sub>
 
@@ -194,7 +194,7 @@
 [M. 11,195.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,195)
 [HIT. 21,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,11)
 
-- **RU:** — 2) «возвратившийся»: *proṣuṣamāgatam*
+- **RU:** — 2) возвратившийся: *proṣuṣamāgatam*
 [ŚAT. BR. 12,5,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,8) [13,4,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,7) В том же знач. с *punar: govrajātpunarāgatam*
 [M. 11,195.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,195)
 [HIT. 21,11.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,11)
@@ -202,8 +202,8 @@
 
 **ppp3)** — 3) gerathen in (acc.): *dāsatvam*
 [N. 26,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,20) *śailatvam*
-[MBH. 13,191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.191) *anaṅgavaśam*
-[3,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1851) *pañcatvam*
+[MBH. 13,191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.191) = [≈Вульг. 13.3.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A003_S011) = ≈крит. 13,3.11a *anaṅgavaśam*
+[3,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1851) = [≈Вульг. 3.46.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S034) = крит. — *pañcatvam*
 [KATHĀS. 2,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,32) *śokaḥ ślokatvam*
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43) *kāruṇyam*
 [58,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,13) *paraṃ vismayam*
@@ -211,10 +211,10 @@
 [64,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,10) *saṃtāpam*
 [14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,14)
 
-- **RU:** — 3) «впавший в» (acc.): *dāsatvam*
+- **RU:** — 3) впавший в (acc.): *dāsatvam*
 [N. 26,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,20) *śailatvam*
-[MBH. 13,191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.191) *anaṅgavaśam*
-[3,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1851) *pañcatvam*
+[MBH. 13,191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.191) = [≈Вульг. 13.3.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A003_S011) = ≈крит. 13,3.11a *anaṅgavaśam*
+[3,1851.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1851) = [≈Вульг. 3.46.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S034) = крит. — *pañcatvam*
 [KATHĀS. 2,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,32) *śokaḥ ślokatvam*
 [R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43) *kāruṇyam*
 [58,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,13) *paraṃ vismayam*

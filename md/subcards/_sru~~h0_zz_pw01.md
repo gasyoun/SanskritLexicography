@@ -5,7 +5,7 @@
 
 **Hauptbed.)** **2.** √*śru* = *sru* sich in Bewegung (namentlich der Theile) setzen, auseinandergehen, zerfliessen. Nur *śruvat* und *śruvanta*. In den späteren Schriften einfach Fehler für *sru*.
 
-- **RU:** **2.** √*śru* = *sru* приходить в движение (в особенности о частях), расходиться, растекаться. Только *śruvat* и *śruvanta*. В более поздних текстах просто ошибка вместо *sru*.
+- **RU:** **2.** √*śru* = *sru* приходить в движение (в особенности о частях), расходиться, растекаться. Только *śruvat* и *śruvanta*. В более поздних текстах просто ошибка вм. *sru*.
   <sub>attested</sub>
 
 **Mit apa)** — Mit *ā* (nur *ā — aśrot*) weichen, nachgeben.
@@ -15,7 +15,7 @@
 
 **Mit pra)** — Mit *pra* Caus. (*˚śravayati* und *˚śrāvayati*) vorwärts bringen.
 
-- **RU:** — С *pra* Caus. (*˚śravayati* и *˚śrāvayati*) продвигать вперёд.
+- **RU:** — С *pra* Caus. (*˚śravayati* и *˚śrāvayati*) продвигать вперед.
   <sub>attested</sub>
 
 **Mit vi)** — Mit *vi* in **2.** *viśruti*.
@@ -25,7 +25,7 @@
 
 **Mit sam)** — Mit *sam*, *saṃśruta* zusammengeflossen.
 
-- **RU:** — С *sam*, *saṃśruta* слившийся вместе, стёкшийся.
+- **RU:** — С *sam*, *saṃśruta* слившийся вместе, стекшийся.
   <sub>attested</sub>
 
 **Nachtrag VI mit upa)** **1.** √*śru* VI. *śuśrāva* mit pass. Bed. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).

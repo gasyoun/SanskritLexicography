@@ -16,9 +16,9 @@ v. l.) и реже *vedayati* .
 [ĀŚV. ŚR. 8,14,3.]
 [GṚHY. 1,22,10. 12. 24,7. 30.] [ŚAT. BR. 14,6,11,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,6) [CHĀND. UP. 8,7,3.] [M. 11,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,31) *kṣipramāgamanaṃ mahyaṃ tasya tvaṃ vedayasva ha*
 [MBH. 14,1835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1835) *vedayāno bhayaṃ ghoram*
-[6,5207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5207) [VARĀH. BṚH. S. 31,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?31,2) *vedayitum*
+[6,5207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5207) = [≈Вульг. 6.112.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A112_S006) = ≈крит. 06,108.6c [VARĀH. BṚH. S. 31,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?31,2) *vedayitum*
 [R. GORR. 2,16,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,16,46) *vedita*
-[RĀJA-TAR. 3,351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,351) act. [YĀJÑ. 3,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,243) [MBH. 4,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1463) [HARIV. 10297.](https://sanskrit-lexicon-scans.github.io/hariv?10297) *upasthitaṃ bhayaṃ ghoraṃ pakṣiṇo vedayanti te*
+[RĀJA-TAR. 3,351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,351) act. [YĀJÑ. 3,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,243) [MBH. 4,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1463) = [≈Вульг. 4.46.27](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A046_S027) = ≈крит. 04,41.21e [HARIV. 10297.](https://sanskrit-lexicon-scans.github.io/hariv?10297) *upasthitaṃ bhayaṃ ghoraṃ pakṣiṇo vedayanti te*
 [R. GORR. 1,76,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,76,14) *tvayā guptau ca kākutsthau vedayantu nṛpāya te* melden, dass
 [69,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,27) ([67,26](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,67,26) [SCHL.]). *balaṃ sajjamavedayan*
 [R. SCHL. 2,82,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,25) *yaḥ sādhayantaṃ chandena vedayeddhanikaṃ nṛpe* so v. a. anklagen, dass
@@ -28,9 +28,9 @@ v. l.) и реже *vedayati* .
 [ĀŚV. ŚR. 8,14,3.]
 [GṚHY. 1,22,10. 12. 24,7. 30.] [ŚAT. BR. 14,6,11,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,6) [CHĀND. UP. 8,7,3.] [M. 11,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,31) *kṣipramāgamanaṃ mahyaṃ tasya tvaṃ vedayasva ha*
 [MBH. 14,1835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1835) *vedayāno bhayaṃ ghoram*
-[6,5207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5207) [VARĀH. BṚH. S. 31,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?31,2) *vedayitum*
+[6,5207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5207) = [≈Вульг. 6.112.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A112_S006) = ≈крит. 06,108.6c [VARĀH. BṚH. S. 31,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?31,2) *vedayitum*
 [R. GORR. 2,16,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,16,46) *vedita*
-[RĀJA-TAR. 3,351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,351) act. [YĀJÑ. 3,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,243) [MBH. 4,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1463) [HARIV. 10297.](https://sanskrit-lexicon-scans.github.io/hariv?10297) *upasthitaṃ bhayaṃ ghoraṃ pakṣiṇo vedayanti te*
+[RĀJA-TAR. 3,351.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,351) act. [YĀJÑ. 3,243.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,243) [MBH. 4,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1463) = [≈Вульг. 4.46.27](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A046_S027) = ≈крит. 04,41.21e [HARIV. 10297.](https://sanskrit-lexicon-scans.github.io/hariv?10297) *upasthitaṃ bhayaṃ ghoraṃ pakṣiṇo vedayanti te*
 [R. GORR. 1,76,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,76,14) *tvayā guptau ca kākutsthau vedayantu nṛpāya te* докладывать, что
 [69,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,27) ([67,26](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,67,26) [SCHL.]). *balaṃ sajjamavedayan*
 [R. SCHL. 2,82,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,25) *yaḥ sādhayantaṃ chandena vedayeddhanikaṃ nṛpe* так преим. обвинять в том, что
@@ -57,28 +57,28 @@ v. l.) и реже *vedayati* .
 
 **4)** — 4) kennen: *avedayāno naṣṭasya deśaṃ kālaṃ ca tattvataḥ . varṇaṃ rūpaṃ pramāṇaṃ ca*
 [M. 8,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,32)
-[MBH. 1,3626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3626) *hutaṃ ca hoṣyamāṇaṃ ca kāle vedayate sadā*
-[2,175](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.175) (vgl. [R. GORR. 2,109,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,8)). [13,7389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7389) [14,986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.986) *veditavān*
+[MBH. 1,3626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3626) = [≈Вульг. 1.90.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A090_S027) = ≈крит. 01,85.27a *hutaṃ ca hoṣyamāṇaṃ ca kāle vedayate sadā*
+[2,175](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.175) = [≈Вульг. 2.5.41](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S041) = ≈крит. 02,5.30a (vgl. [R. GORR. 2,109,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,8)). [13,7389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7389) = [≈Вульг. 13.158.36](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A158_S036) = ≈крит. 13,143.34c [14,986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.986) *veditavān*
 [R. 7,35,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,12) *nākṛtātmā vedayati dharmādharmaviniścayam*
-[MBH. 3,14048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14048) [4,1531.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1531)
+[MBH. 3,14048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14048) = [≈Вульг. 3.215.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A215_S008) = ≈крит. 03,205.7e [4,1531.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1531) = [≈Вульг. 4.49.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A049_S001) = ≈крит. 04,44.1a
 [HARIV. 11293.](https://sanskrit-lexicon-scans.github.io/hariv?11293) [12287.](https://sanskrit-lexicon-scans.github.io/hariv?12287) *nāsau veditavāndhanairvirahitaṃ viśrabdhasuptaṃ janam* wusste nicht, dass
 [MṚCCH. 52,3.] halten für: *yanmāṃ vedayase priyam*
-[MBH. 4,724.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.724) *brāhmaṇyāṃ vṛṣalājjātaṃ vedayatīva mām*
-[13,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1886) *samupāgataṃ sutaṃ sumantrato vedya* nachdem er erfahren hatte, dass
+[MBH. 4,724.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.724) = [≈Вульг. 4.22.31](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A022_S031) = ≈крит. 04,21.31a *brāhmaṇyāṃ vṛṣalājjātaṃ vedayatīva mām*
+[13,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1886) = [≈Вульг. 13.27.21](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A027_S021) = ≈крит. 13,28.20c *samupāgataṃ sutaṃ sumantrato vedya* nachdem er erfahren hatte, dass
 [R. GORR. 2,34,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,29) erkennen, wahrnehmen: *yadvedyate yena vedanena tattato na bhidyate yathā jñānenātmā vedyante taiśca nīlādayaḥ*
 [SARVADARŚANAS. 16,11.fg.] *parasya sukhaṃ vedayati*
 [P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), Schol.
 
 - **RU:** — 4) знать: *avedayāno naṣṭasya deśaṃ kālaṃ ca tattvataḥ . varṇaṃ rūpaṃ pramāṇaṃ ca*
 [M. 8,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,32)
-[MBH. 1,3626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3626) *hutaṃ ca hoṣyamāṇaṃ ca kāle vedayate sadā*
-[2,175](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.175) (ср. [R. GORR. 2,109,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,8)). [13,7389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7389) [14,986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.986) *veditavān*
+[MBH. 1,3626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3626) = [≈Вульг. 1.90.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A090_S027) = ≈крит. 01,85.27a *hutaṃ ca hoṣyamāṇaṃ ca kāle vedayate sadā*
+[2,175](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.175) = [≈Вульг. 2.5.41](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S041) = ≈крит. 02,5.30a (ср. [R. GORR. 2,109,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,8)). [13,7389.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7389) = [≈Вульг. 13.158.36](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A158_S036) = ≈крит. 13,143.34c [14,986.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.986) *veditavān*
 [R. 7,35,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,12) *nākṛtātmā vedayati dharmādharmaviniścayam*
-[MBH. 3,14048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14048) [4,1531.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1531)
+[MBH. 3,14048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14048) = [≈Вульг. 3.215.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A215_S008) = ≈крит. 03,205.7e [4,1531.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1531) = [≈Вульг. 4.49.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A049_S001) = ≈крит. 04,44.1a
 [HARIV. 11293.](https://sanskrit-lexicon-scans.github.io/hariv?11293) [12287.](https://sanskrit-lexicon-scans.github.io/hariv?12287) *nāsau veditavāndhanairvirahitaṃ viśrabdhasuptaṃ janam* не знал, что
 [MṚCCH. 52,3.] считать за: *yanmāṃ vedayase priyam*
-[MBH. 4,724.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.724) *brāhmaṇyāṃ vṛṣalājjātaṃ vedayatīva mām*
-[13,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1886) *samupāgataṃ sutaṃ sumantrato vedya* после того как он узнал, что
+[MBH. 4,724.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.724) = [≈Вульг. 4.22.31](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A022_S031) = ≈крит. 04,21.31a *brāhmaṇyāṃ vṛṣalājjātaṃ vedayatīva mām*
+[13,1886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1886) = [≈Вульг. 13.27.21](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A027_S021) = ≈крит. 13,28.20c *samupāgataṃ sutaṃ sumantrato vedya* после того как он узнал, что
 [R. GORR. 2,34,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,29) распознавать, воспринимать: *yadvedyate yena vedanena tattato na bhidyate yathā jñānenātmā vedyante taiśca nīlādayaḥ*
 [SARVADARŚANAS. 16,11.fg.] *parasya sukhaṃ vedayati*
 [P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), схол.
@@ -88,22 +88,22 @@ v. l.) и реже *vedayati* .
 [ŚAT. BR. 14,6,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,9) *yena vedayate sarvaṃ sukhaṃ duḥkhaṃ ca janmasu*
 [M. 12,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,13) *sukham*
 [P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), Schol. *rujam*
-[MBH. 12,6912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6912) *vedaye na ca saṃyuktān śabdasparśarasānaham*
+[MBH. 12,6912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6912) = [≈Вульг. 12.191.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A191_S015) = ≈крит. 12,184.15a *vedaye na ca saṃyuktān śabdasparśarasānaham*
 [R. 2,64,67.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,67)
 
 - **RU:** — 5) чувствовать, ощущать: *tvacā hi sparśānvedayate*
 [ŚAT. BR. 14,6,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,2,9) *yena vedayate sarvaṃ sukhaṃ duḥkhaṃ ca janmasu*
 [M. 12,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,13) *sukham*
 [P. 3,1,18](https://ashtadhyayi.com/sutraani/3/1/18), схол. *rujam*
-[MBH. 12,6912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6912) *vedaye na ca saṃyuktān śabdasparśarasānaham*
+[MBH. 12,6912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6912) = [≈Вульг. 12.191.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A191_S015) = ≈крит. 12,184.15a *vedaye na ca saṃyuktān śabdasparśarasānaham*
 [R. 2,64,67.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,67)
   <sub>attested</sub>
 
 **6)** — 6) *vedayanti*
-[MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) fehlerhaft für *ramayanti*, wie die [ed. Bomb.] liest; *avedito*
+[MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A106_S055) = ≈крит. 13,109.52c fehlerhaft für *ramayanti*, wie die [ed. Bomb.] liest; *avedito*
 [KATHĀS. 123,158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) fehlerhaft für *avidito*, wie auch das Metrum zeigt.
 
 - **RU:** — 6) *vedayanti*
-[MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) ошибочно вместо *ramayanti*, как читает [ed. Bomb.]; *avedito*
-[KATHĀS. 123,158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) ошибочно вместо *avidito*, как показывает и метр.
+[MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A106_S055) = ≈крит. 13,109.52c ошибочно вм. *ramayanti*, как читает [Бомбейская ред.]; *avedito*
+[KATHĀS. 123,158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) ошибочно вм. *avidito*, как показывает и метр.
   <sub>attested</sub>

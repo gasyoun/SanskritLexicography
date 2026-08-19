@@ -7,9 +7,9 @@
 [HARIV. 6510.](https://sanskrit-lexicon-scans.github.io/hariv?6510) *sādhvī sā patitā tataḥ . dāsyāstasya gṛhe dvāri*
 [KATHĀS. 34,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,83) *patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ*
 [BHAG. 1,42.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,42) *kṣīṇe puṇye patitāsyadya*
-[MBH. 1,3566. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3566) [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) [4055. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4055) *pata bhūmimavākśirāḥ*
+[MBH. 1,3566. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3566) = [≈Вульг. 1.88.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A088_S003) = ≈крит. 01,83.3c [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) = [≈Вульг. 1.1.51](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S051) = ≈крит. 01,1.49c [4055. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4055) = [≈Вульг. 1.100.89](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S089) = ≈крит. 01,94.81c *pata bhūmimavākśirāḥ*
 [R. 1,60,17. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,17) *pāpa patasva mahīṃ sarpo bhava*
-[MBH. 12,13216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13216) *divyāḥ patantyeva śāpānmānuṣayoniṣu*
+[MBH. 12,13216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13216) = [≈Вульг. 12.342.57](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A342_S057) = ≈крит. 12,329.45B *divyāḥ patantyeva śāpānmānuṣayoniṣu*
 [KATHĀS. 27,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,76) [36,119.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,119) *svargapatitaḥ* des Himmels verlustig gegangen
 [P. 2,1,38](https://ashtadhyayi.com/sutraani/2/1/38), Sch.
 
@@ -17,9 +17,9 @@
 [HARIV. 6510.](https://sanskrit-lexicon-scans.github.io/hariv?6510) *sādhvī sā patitā tataḥ . dāsyāstasya gṛhe dvāri*
 [KATHĀS. 34,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,83) *patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ*
 [BHAG. 1,42.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,42) *kṣīṇe puṇye patitāsyadya*
-[MBH. 1,3566. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3566) [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) [4055. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4055) *pata bhūmimavākśirāḥ*
+[MBH. 1,3566. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3566) = [≈Вульг. 1.88.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A088_S003) = ≈крит. 01,83.3c [5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5) = [≈Вульг. 1.1.51](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S051) = ≈крит. 01,1.49c [4055. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4055) = [≈Вульг. 1.100.89](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S089) = ≈крит. 01,94.81c *pata bhūmimavākśirāḥ*
 [R. 1,60,17. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,17) *pāpa patasva mahīṃ sarpo bhava*
-[MBH. 12,13216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13216) *divyāḥ patantyeva śāpānmānuṣayoniṣu*
+[MBH. 12,13216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13216) = [≈Вульг. 12.342.57](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A342_S057) = ≈крит. 12,329.45B *divyāḥ patantyeva śāpānmānuṣayoniṣu*
 [KATHĀS. 27,76.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,76) [36,119.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,119) *svargapatitaḥ* лишившийся неба
 [P. 2,1,38](https://ashtadhyayi.com/sutraani/2/1/38), схол.
   <sub>attested</sub>
@@ -35,7 +35,7 @@
 [M. 11,172.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,172)
 
 - **RU:** — 5) нисходить в ад: *nejjihmā yantyo narakaṃ patāma*
-[NIR. 1,11](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,11) (ср. схол. zu [P. 3,4,8.](https://ashtadhyayi.com/sutraani/3/4/8) [8,1,30](https://ashtadhyayi.com/sutraani/8/1/30)). [R. GORR. 2,49,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,49,27) *narakaṃ patitaḥ, narakapatitaḥ*
+[NIR. 1,11](https://sanskrit-lexicon-scans.github.io/nirukta/app1?1,11) (ср. схол. к [P. 3,4,8.](https://ashtadhyayi.com/sutraani/3/4/8) [8,1,30](https://ashtadhyayi.com/sutraani/8/1/30)). [R. GORR. 2,49,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,49,27) *narakaṃ patitaḥ, narakapatitaḥ*
 [P. 2,1,24](https://ashtadhyayi.com/sutraani/2/1/24), схол.
 *patanti narake 'śucau*
 [BHAG. 16,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,16)
@@ -51,7 +51,7 @@
 [CHĀND. UP. 5,10,9.]
 [M. 3,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,16) [4,204.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,204) [5,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,19) [9,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,200) [10,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,92)
 [YĀJÑ. 1,38.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,38) *abhigamya paraṃ nārī patiṣyati* (könnte viell. auch bedeuten wird zur Hölle niederfahren) *na saṃśayaḥ*
-[MBH. 1,4203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4203) *puraṃdarāṇāṃ śataṃ śataṃ ca parameṣṭhināṃ patatu vā munīnāṃ śatam*
+[MBH. 1,4203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4203) = [≈Вульг. 1.104.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A104_S034) = крит. — *puraṃdarāṇāṃ śataṃ śataṃ ca parameṣṭhināṃ patatu vā munīnāṃ śatam*
 [PRAB. 24,11.] *patita*
 [KAUŚ. 57.]
 [ĀŚV. GṚHY. 4,9.]
@@ -66,12 +66,12 @@
 [M. 10,97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,97) *steno hiraṇyasya surāṃ pibaṃśca gurostalpamāvasanbrahmahā caite patanti*
 [CHĀND. UP. 5,10,9.]
 [M. 3,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,16) [4,204.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,204) [5,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,19) [9,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,200) [10,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,92)
-[YĀJÑ. 1,38.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,38) *abhigamya paraṃ nārī patiṣyati* (könnte возможно auch bedeuten нисходит в ад) *na saṃśayaḥ*
-[MBH. 1,4203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4203) *puraṃdarāṇāṃ śataṃ śataṃ ca parameṣṭhināṃ patatu vā munīnāṃ śatam*
+[YĀJÑ. 1,38.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,38) *abhigamya paraṃ nārī patiṣyati* (könnte возможно также bedeuten нисходит в ад) *na saṃśayaḥ*
+[MBH. 1,4203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4203) = [≈Вульг. 1.104.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A104_S034) = крит. — *puraṃdarāṇāṃ śataṃ śataṃ ca parameṣṭhināṃ patatu vā munīnāṃ śatam*
 [PRAB. 24,11.] *patita*
 [KAUŚ. 57.]
 [ĀŚV. GṚHY. 4,9.]
-[PĀR.] [GṚHY. 2,11.] [VS. PRĀT. 8,34.] [M. 3,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,92) [4,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,79) [5,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,85) [9,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,58) [63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,63) [79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,79) [118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,118) [144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,144) [YĀJÑ. 1,148.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,148) [SUŚR. 1,7,13. 108,10.] [KATHĀS. 7,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,48) [VP.] bei [MUIR, Sanscrit Texts I,147, Z. 8 u. 9 in der N.] *patitavṛtta*
+[PĀR.] [GṚHY. 2,11.] [VS. PRĀT. 8,34.] [M. 3,92.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,92) [4,79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,79) [5,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,85) [9,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,58) [63.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,63) [79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,79) [118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,118) [144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,144) [YĀJÑ. 1,148.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,148) [SUŚR. 1,7,13. 108,10.] [KATHĀS. 7,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,48) [VP.] у [MUIR, Sanscrit Texts I,147, Z. 8 u. 9 in der N.] *patitavṛtta*
 [HARIV. 4847.](https://sanskrit-lexicon-scans.github.io/hariv?4847) *apatita*
 [M. 8,389.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,389) *sāvitrīpatita* лишившийся Сав.
 [M. 2,39.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,39)
@@ -80,7 +80,7 @@
 
 **7)** — 7) fallen auf s. v. a. sich richten auf, treffen: *prasādasaumyāni satāṃ suhṛjjane patanti cakṣūṃṣi*
 [ŚĀK. 156.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?156) *tato gātreṣu patitā teṣāṃ dṛṣṭiḥ*
-[MBH. 3,2199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2199) *arhasyantarbhavanapatitāṃ kartum — vidyudunmeṣadṛṣṭim*
+[MBH. 3,2199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2199) = [≈Вульг. 3.57.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A057_S008) = ≈крит. 03,54.8a *arhasyantarbhavanapatitāṃ kartum — vidyudunmeṣadṛṣṭim*
 [MEGH. 79.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?79) *na me hṛṣīkāṇi patantyasatpathe yat*
 [BHĀG. P. 2,6,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,33) *vyaktaṃ mayi ca tasyāṃ ca patito hi viparyayaḥ* s. v. a. zu Theil geworden
 [R. 2,22,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,20) *prajābhiśāpe patite*
@@ -88,7 +88,7 @@
 
 - **RU:** — 7) падать на см. a. направляться на, попадать в: *prasādasaumyāni satāṃ suhṛjjane patanti cakṣūṃṣi*
 [ŚĀK. 156.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?156) *tato gātreṣu patitā teṣāṃ dṛṣṭiḥ*
-[MBH. 3,2199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2199) *arhasyantarbhavanapatitāṃ kartum — vidyudunmeṣadṛṣṭim*
+[MBH. 3,2199.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2199) = [≈Вульг. 3.57.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A057_S008) = ≈крит. 03,54.8a *arhasyantarbhavanapatitāṃ kartum — vidyudunmeṣadṛṣṭim*
 [MEGH. 79.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?79) *na me hṛṣīkāṇi patantyasatpathe yat*
 [BHĀG. P. 2,6,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,33) *vyaktaṃ mayi ca tasyāṃ ca patito hi viparyayaḥ* см. a. выпавший на долю
 [R. 2,22,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,20) *prajābhiśāpe patite*
@@ -116,10 +116,10 @@ Schol. zu [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
 [PAÑCAT. I,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,16) *viṣamapatitaḥ* (так следует, вероятно, читать)
 [III,237.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,237) *vicārapatita*
 [KATHĀS. 33,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,21) *ghorāyāṃ bhrūṇahatyāyāṃ patate* so преим. совершает этот грех
-[PARĀŚARA] bei [KULL.] zu [M. 3,45](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,45) (см. 193,1. сл.). *avaṃśapatita* so преим. происходящий из низкого рода
+[PARĀŚARA] у [KULL.] к [M. 3,45](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,45) (см. 193,1. сл.). *avaṃśapatita* so преим. происходящий из низкого рода
 [Spr. 240.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?240) *madhyapatita* so преим. находящийся посредине
 
-схол. zu [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
+схол. к [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
   <sub>attested</sub>
 
 **9)** — 9) sich ereignen, eintreten: *tatra ca cirakālaṃ durbhikṣaṃ patitam*
@@ -168,18 +168,18 @@ Schol. zu [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* wirf die Würfel
 [HARIV. 6743.](https://sanskrit-lexicon-scans.github.io/hariv?6743) [6745.](https://sanskrit-lexicon-scans.github.io/hariv?6745) *pātaya jalam* auf die Erde giessen
 [14239.](https://sanskrit-lexicon-scans.github.io/hariv?14239) [14242.](https://sanskrit-lexicon-scans.github.io/hariv?14242) *netrābhyāṃ pātayañjalam*
-[MBH. 7,4912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4912) *tataḥ . prakāśako 'pyasaṃbandhaṃ tamo jagati pātayet*
+[MBH. 7,4912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4912) = [≈Вульг. 7.122.52](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A122_S052) = ≈крит. 07,98.43e *tataḥ . prakāśako 'pyasaṃbandhaṃ tamo jagati pātayet*
 [KATHĀS. 18,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,18) — *adhaḥ pātayetkaratalasthavastu cet* fallen lassen
 [VARĀH. BṚH. S. 50,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,27) — *(tam) khādbhūmimapātayat*
 [R. 6,82,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,93) *ta ime śailaśṛṅgāgrātpātyante*
 [MĀRK. P. 14,81.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,81)
-[MBH. 13,1911.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1911) *pātayanti sma taṃ svargādaśrupātena*
+[MBH. 13,1911.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1911) = [≈Вульг. 13.28.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A028_S015) = ≈крит. 13,29.15a *pātayanti sma taṃ svargādaśrupātena*
 [HIT. IV,74.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,74) [MĀRK. P. 75,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?75,8) *gajayodhinaḥ . pātayāmāsa nārācairdrumebhya iva varhiṇaḥ*
 [DRAUP. 8,11.] *(dhvajam) etadunmathya pātiṣye bhallena niśitena ca*
 [HARIV. 9246.](https://sanskrit-lexicon-scans.github.io/hariv?9246) *pātito* (v. l. für *patito) 'pi karāghātairutpatatyeva kandukaḥ*
 [BHARTṚ. 2,83.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,83)
 [MṚCCH. 79,23.] *phalāni pātayāmāsa samyakpariṇatānyuta*
-[MBH. 12,671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.671) [14,1710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1710) [1711](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1711) (med.). [HARIV. 3709.](https://sanskrit-lexicon-scans.github.io/hariv?3709) [ŚĀK. 81,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,15) *eṣa te pātayiṣyāmi śiraḥ kāyāt*
+[MBH. 12,671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.671) = [≈Вульг. 12.23.21](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A023_S021) = ≈крит. 12,24.5a [14,1710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1710) = [≈Вульг. 14.58.20](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A058_S020) = ≈крит. 14,57.19a [1711](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1711) = [≈Вульг. 14.58.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A058_S021) = ≈крит. 14,57.20a (med.). [HARIV. 3709.](https://sanskrit-lexicon-scans.github.io/hariv?3709) [ŚĀK. 81,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,15) *eṣa te pātayiṣyāmi śiraḥ kāyāt*
 [HARIV. 15178.](https://sanskrit-lexicon-scans.github.io/hariv?15178) [15181.](https://sanskrit-lexicon-scans.github.io/hariv?15181)
 [RAGH. 12,99.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,99)
 [VET. in LA. 33,9.] *(mayā) pātukāmeṣu vatseṣu mātṝṇāṃ pātitāḥ stanāḥ*
@@ -189,14 +189,14 @@ Schol. zu [P. 1,1,71.](https://ashtadhyayi.com/sutraani/1/1/71)
 [RAGH. 11,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,76)
 [PAÑCAT. I,407.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,407) *rathasthaṃ pārthivaṃ rāmaḥ pātayitvārjunaṃ bhuvi*
 [HARIV. 2314.](https://sanskrit-lexicon-scans.github.io/hariv?2314) *athainām — pātayitvā padābadhīt*
-[MBH. 4,461.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.461) [673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.673)
+[MBH. 4,461.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.461) = [≈Вульг. 4.16.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S010) = ≈крит. 04,15.7c [673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.673) = [≈Вульг. 4.21.33](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A021_S033) = крит. —
 [RAGH. 8,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,38) [9,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,61)
 [MṚCCH. 104,25.]
 [ŚAT. BR. 3,6,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,12) [14,4,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,5) *ityātmānaṃ pātayati* sich niederwerfen
 [MṚCCH. 163,1.] *pātayiṣyāmi rākṣasam* niederhauen
-[MBH. 1,6025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6025) [2,1811](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1811) (med.) [6,3807](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3807) (med.). [13,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) [14,31.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.31) [ARJ. 10,22.] [PRAB. 35,8.] — *mṛtakalpaṃ tadā vīraṃ sthalājjalamapātayat*
-[MBH. 1,5017.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5017) *(tān) kūpe — apātayat*
-[5158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5158) [KATHĀS. 43,186.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,186) [BHĀG. P. 5,26,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,26) [RĀJA-TAR. 6,128.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,128) [VET. in LA. 22,5.] *(tam) pātayadhvaṃ vibhāvasau*
+[MBH. 1,6025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6025) = [≈Вульг. 1.153.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S014) = ≈крит. 01,140.14a [2,1811](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1811) = [≈Вульг. 2.50.27](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A050_S027) = ≈крит. 02,46.28a (med.) [6,3807](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3807) = [≈Вульг. 6.86.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A086_S006) = ≈крит. 06,82.6c (med.). [13,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S031) = ≈крит. 13,12.27e [14,31.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.31) = [≈Вульг. 14.2.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A002_S012) = ≈крит. 14,2.12a [ARJ. 10,22.] [PRAB. 35,8.] — *mṛtakalpaṃ tadā vīraṃ sthalājjalamapātayat*
+[MBH. 1,5017.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5017) = [≈Вульг. 1.128.54](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S054) = ≈крит. 01,119.34a *(tān) kūpe — apātayat*
+[5158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5158) = [≈Вульг. 1.131.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A131_S026) = крит. — [KATHĀS. 43,186.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,186) [BHĀG. P. 5,26,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,26) [RĀJA-TAR. 6,128.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,128) [VET. in LA. 22,5.] *(tam) pātayadhvaṃ vibhāvasau*
 [MBH. 1,2125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2125) hineinwerfen, hineinthun: *kṣāraṃ pātayitvā*
 [SUŚR. 1,33,18.] *sa pātayatyagham*
 [VP.] bei [MUIR, Sanscrit Texts I,22, N. 35, Śl. 15.] Etwas in Etwas hineingelangen lassen: *gūḍhaṃ nūpuraśabdamātramapi me kāntaṃ śrutau pātayet*
@@ -216,43 +216,43 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [76,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,13) — *sthānāt* Jmd von seiner Stelle stürzen
 [R. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,5) Jmd stürzen, zu Fall —, in's Unglück bringen, in eine schlimme Lage versetzen: *(tvayā) vayamātmā ca pātitāḥ*
 [R. 6,94,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,19) *atha tānpātayiṣyāmi yathā yāsyanti na kṣayam*
-[MBH. 4,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.35) [610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.610) [13,4760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4760) *yenāyaṃ pātano 'rīṇāṃ vinā śastreṇa pātitaḥ*
+[MBH. 4,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.35) = [≈Вульг. 4.2.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S008) = ≈крит. 04,2.6c [610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.610) = [≈Вульг. 4.20.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A020_S001) = ≈крит. 04,19.1a [13,4760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4760) = [≈Вульг. 13.99.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A099_S018) = ≈крит. 13,102.18a *yenāyaṃ pātano 'rīṇāṃ vinā śastreṇa pātitaḥ*
 [MĀRK. P. 24,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?24,40) *brāhmaṇakulaṃ tamasi pātitam, atha vā ātmā pātitaḥ*
 [MṚCCH. 50,7. 8. 129,14.]
 [ŚĀK. 117.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?117) *arghatas* eine Sache um ihren Preis bringen, den Preis einer Sache verderben: *maṇayo yairarghataḥ pātitāḥ*
 [BHARTṚ. 2,12.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,12) einführen, in Gang bringen (?)
 [RĀJA-TAR. 5,173.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,173)
 
-- **RU:** — 2. caus. *pātayati* und *˚te*
+- **RU:** — 2. caus. *pātayati* и *˚te*
  1) заставлять летать, метать, бросать, повергать, сбрасывать вниз, отсекать, повергать ниц, опрокидывать, бросать в, на: *idaṃ yatkṛṣṇaḥ śakunirabhiniṣpatannapīpatat*
 [AV. 7,64,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.064.html#av07.064.01) *śaravyā asmadviṣūcīrindra pātaya*
 [1,19,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.019.html#av01.019.01) *vidyutam*
 [11,2,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.26) *mayyeva pātyatāṃ bāṇaḥ*
-[MĀRK. P. 66,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?66,13) [ARJ. 3,52.] [R. 2,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,22) *paraśuḥ* (остаётся в руке) — *pātitaḥ*
+[MĀRK. P. 66,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?66,13) [ARJ. 3,52.] [R. 2,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,22) *paraśuḥ* (остается в руке) — *pātitaḥ*
 [R. GORR. 2,114,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,114,32) *vidūṣakasyopari daṇḍakāṣṭhaṃ pātayati*
 [MĀLAV. 56,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?56,7) *daṇḍaṃ tasyāhamatulaṃ pātayiṣye*
 [MĀRK. P. 51,112.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,112) *daṇḍaṃ daṇḍyeṣu pātayet* налагать наказание
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126)
 [YĀJÑ. 1,353.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,353) [367.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,367) *daṇḍo 'yaṃ kṣetriyo yena mayyapāti*
 [BHAṬṬ. 4,32.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,32) *madāvasannahastapatitena nistriṃśena dvitrāneva hatvā*
-[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so преим. он быстро проведёт нож
+[DAŚAK.] in [BENF. Chr. 194,12.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *āśu śastraṃ pātayet* so преим. он быстро проведет нож
 [SUŚR. 1,45,12.] [2,56,5.] *sūtraṃ vetālapātitam* шнур для измерения, натянутый Вет.
 [RĀJA-TAR. 3,349.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,349) — *salilaṃ nāśu pātayati* (солнце)
 [VARĀH. BṚH. S. 3,22.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?3,22) *pātayākṣān* бросай кости
 [HARIV. 6743.](https://sanskrit-lexicon-scans.github.io/hariv?6743) [6745.](https://sanskrit-lexicon-scans.github.io/hariv?6745) *pātaya jalam* лить на землю
 [14239.](https://sanskrit-lexicon-scans.github.io/hariv?14239) [14242.](https://sanskrit-lexicon-scans.github.io/hariv?14242) *netrābhyāṃ pātayañjalam*
-[MBH. 7,4912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4912) *tataḥ . prakāśako 'pyasaṃbandhaṃ tamo jagati pātayet*
+[MBH. 7,4912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4912) = [≈Вульг. 7.122.52](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A122_S052) = ≈крит. 07,98.43e *tataḥ . prakāśako 'pyasaṃbandhaṃ tamo jagati pātayet*
 [KATHĀS. 18,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,18) — *adhaḥ pātayetkaratalasthavastu cet* уронить
 [VARĀH. BṚH. S. 50,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,27) — *(tam) khādbhūmimapātayat*
 [R. 6,82,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,93) *ta ime śailaśṛṅgāgrātpātyante*
 [MĀRK. P. 14,81.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,81)
-[MBH. 13,1911.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1911) *pātayanti sma taṃ svargādaśrupātena*
+[MBH. 13,1911.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1911) = [≈Вульг. 13.28.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A028_S015) = ≈крит. 13,29.15a *pātayanti sma taṃ svargādaśrupātena*
 [HIT. IV,74.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,74) [MĀRK. P. 75,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?75,8) *gajayodhinaḥ . pātayāmāsa nārācairdrumebhya iva varhiṇaḥ*
 [DRAUP. 8,11.] *(dhvajam) etadunmathya pātiṣye bhallena niśitena ca*
 [HARIV. 9246.](https://sanskrit-lexicon-scans.github.io/hariv?9246) *pātito* (v. l. für *patito) 'pi karāghātairutpatatyeva kandukaḥ*
 [BHARTṚ. 2,83.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,83)
 [MṚCCH. 79,23.] *phalāni pātayāmāsa samyakpariṇatānyuta*
-[MBH. 12,671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.671) [14,1710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1710) [1711](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1711) (мед.). [HARIV. 3709.](https://sanskrit-lexicon-scans.github.io/hariv?3709) [ŚĀK. 81,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,15) *eṣa te pātayiṣyāmi śiraḥ kāyāt*
+[MBH. 12,671.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.671) = [≈Вульг. 12.23.21](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A023_S021) = ≈крит. 12,24.5a [14,1710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1710) = [≈Вульг. 14.58.20](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A058_S020) = ≈крит. 14,57.19a [1711](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1711) = [≈Вульг. 14.58.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A058_S021) = ≈крит. 14,57.20a (мед.). [HARIV. 3709.](https://sanskrit-lexicon-scans.github.io/hariv?3709) [ŚĀK. 81,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,15) *eṣa te pātayiṣyāmi śiraḥ kāyāt*
 [HARIV. 15178.](https://sanskrit-lexicon-scans.github.io/hariv?15178) [15181.](https://sanskrit-lexicon-scans.github.io/hariv?15181)
 [RAGH. 12,99.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,99)
 [VET. in LA. 33,9.] *(mayā) pātukāmeṣu vatseṣu mātṝṇāṃ pātitāḥ stanāḥ*
@@ -262,17 +262,17 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [RAGH. 11,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,76)
 [PAÑCAT. I,407.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,407) *rathasthaṃ pārthivaṃ rāmaḥ pātayitvārjunaṃ bhuvi*
 [HARIV. 2314.](https://sanskrit-lexicon-scans.github.io/hariv?2314) *athainām — pātayitvā padābadhīt*
-[MBH. 4,461.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.461) [673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.673)
+[MBH. 4,461.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.461) = [≈Вульг. 4.16.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S010) = ≈крит. 04,15.7c [673.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.673) = [≈Вульг. 4.21.33](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A021_S033) = крит. —
 [RAGH. 8,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,38) [9,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,61)
 [MṚCCH. 104,25.]
 [ŚAT. BR. 3,6,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,4,12) [14,4,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,5) *ityātmānaṃ pātayati* простираться ниц
 [MṚCCH. 163,1.] *pātayiṣyāmi rākṣasam* срубать
-[MBH. 1,6025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6025) [2,1811](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1811) (мед.) [6,3807](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3807) (мед.). [13,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) [14,31.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.31) [ARJ. 10,22.] [PRAB. 35,8.] — *mṛtakalpaṃ tadā vīraṃ sthalājjalamapātayat*
-[MBH. 1,5017.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5017) *(tān) kūpe — apātayat*
-[5158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5158) [KATHĀS. 43,186.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,186) [BHĀG. P. 5,26,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,26) [RĀJA-TAR. 6,128.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,128) [VET. in LA. 22,5.] *(tam) pātayadhvaṃ vibhāvasau*
+[MBH. 1,6025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6025) = [≈Вульг. 1.153.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S014) = ≈крит. 01,140.14a [2,1811](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1811) = [≈Вульг. 2.50.27](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A050_S027) = ≈крит. 02,46.28a (мед.) [6,3807](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3807) = [≈Вульг. 6.86.6](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A086_S006) = ≈крит. 06,82.6c (мед.). [13,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S031) = ≈крит. 13,12.27e [14,31.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.31) = [≈Вульг. 14.2.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A002_S012) = ≈крит. 14,2.12a [ARJ. 10,22.] [PRAB. 35,8.] — *mṛtakalpaṃ tadā vīraṃ sthalājjalamapātayat*
+[MBH. 1,5017.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5017) = [≈Вульг. 1.128.54](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S054) = ≈крит. 01,119.34a *(tān) kūpe — apātayat*
+[5158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5158) = [≈Вульг. 1.131.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A131_S026) = крит. — [KATHĀS. 43,186.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,186) [BHĀG. P. 5,26,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,26) [RĀJA-TAR. 6,128.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,128) [VET. in LA. 22,5.] *(tam) pātayadhvaṃ vibhāvasau*
 [MBH. 1,2125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2125) бросать внутрь, класть в: *kṣāraṃ pātayitvā*
 [SUŚR. 1,33,18.] *sa pātayatyagham*
-[VP.] bei [MUIR, Sanscrit Texts I,22, N. 35, Śl. 15.] помещать что-либо внутрь чего-либо: *gūḍhaṃ nūpuraśabdamātramapi me kāntaṃ śrutau pātayet*
+[VP.] у [MUIR, Sanscrit Texts I,22, N. 35, Śl. 15.] помещать что-либо внутрь чего-либо: *gūḍhaṃ nūpuraśabdamātramapi me kāntaṃ śrutau pātayet*
 [VIKR. 56.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?56) *pāvakam* разводить огонь
 [PAÑCAT. III,166.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,166) — *śarīre ca pātayitvā śirodharām* давать осесть, заставлять оседать
 [R. 2,23,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,4) *cakṣuḥ, dṛṣṭim* бросать взгляд,
@@ -287,12 +287,12 @@ den Blick werfen, richten auf: *sarvataścakṣurvane lolamapātayat*
 [R. GORR. 2,76,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,7) [99,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,22) *rāmamātā sapatnī me kathaṃ na vairaṃ pātayet*
 [7,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,7,31) *pitu rviyogajaṃ duḥkhaṃ sahasā pātitaṃ tvayā*
 [76,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,13) — *sthānāt* низвергать кого-л. с его места
-[R. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,5) низвергать кого-л., губить, ввергать в несчастье, ставить в тяжёлое положение: *(tvayā) vayamātmā ca pātitāḥ*
+[R. 2,43,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,5) низвергать кого-л., губить, ввергать в несчастье, ставить в тяжелое положение: *(tvayā) vayamātmā ca pātitāḥ*
 [R. 6,94,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,19) *atha tānpātayiṣyāmi yathā yāsyanti na kṣayam*
-[MBH. 4,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.35) [610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.610) [13,4760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4760) *yenāyaṃ pātano 'rīṇāṃ vinā śastreṇa pātitaḥ*
+[MBH. 4,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.35) = [≈Вульг. 4.2.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S008) = ≈крит. 04,2.6c [610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.610) = [≈Вульг. 4.20.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A020_S001) = ≈крит. 04,19.1a [13,4760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4760) = [≈Вульг. 13.99.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A099_S018) = ≈крит. 13,102.18a *yenāyaṃ pātano 'rīṇāṃ vinā śastreṇa pātitaḥ*
 [MĀRK. P. 24,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?24,40) *brāhmaṇakulaṃ tamasi pātitam, atha vā ātmā pātitaḥ*
 [MṚCCH. 50,7. 8. 129,14.]
-[ŚĀK. 117.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?117) *arghatas* лишать вещь её цены, обесценивать: *maṇayo yairarghataḥ pātitāḥ*
+[ŚĀK. 117.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?117) *arghatas* лишать вещь ее цены, обесценивать: *maṇayo yairarghataḥ pātitāḥ*
 [BHARTṚ. 2,12.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,12) вводить, приводить в действие (?)
 [RĀJA-TAR. 5,173.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,173)
   <sub>attested</sub>

@@ -7,9 +7,9 @@ _PWG article — 2 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 `apr_apta~~h0_zz_pwkvn`
 
 
-**PWKVN к знач. 7)** *aprāpta* 7〉 hierher wohl *˚damaka* unerwachsene (Thiere) zähmend [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79). = *adānta* [NĪLAK.]
+**PWKVN к знач. 7)** *aprāpta* 7〉 hierher wohl *˚damaka* unerwachsene (Thiere) zähmend [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Вульг. 13.1.23](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S023) = ≈крит. 13,1.16c. = *adānta* [NĪLAK.]
 
-- **RU:** *aprāpta* 7) сюда, вероятно, относится *˚damaka* — приручающий недоросших (животных) [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79). = *adānta* [NĪLAK.]
+- **RU:** *aprāpta* 7) сюда, вероятно, относится *˚damaka* — приручающий недоросших (животных) [MBH. 13,23,79](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Вульг. 13.1.23](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S023) = ≈крит. 13,1.16c. = *adānta* [NĪLAK.]
   <sub>mixed</sub>
 
 **PWKVN к I. 2)** *aprāpta* I. 2.
@@ -22,7 +22,7 @@ _PWG article — 2 sub-card(s), 3 sense(s) · RU 3/3 · EN 0/3_
 `apr_apta~~h0_zz_sch`
 
 
-**7)** aprāpta 7. hierher wohl ˚damaka, unerwachsene (Tiere) zähmend, [MBh. 13,23,79.] (= adānta [Nīlak.])
+**7)** aprāpta 7. hierher wohl ˚damaka, unerwachsene (Tiere) zähmend, [MBh. 13,23,79.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Вульг. 13.1.23](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S023) = ≈крит. 13,1.16c (= adānta [Nīlak.])
 
-- **RU:** aprāpta 7. Сюда, по-видимому, относится ˚damaka — «приручающий недороших (животных)», [MBh. 13,23,79.] (= adānta [Nīlak.])
+- **RU:** aprāpta 7. Сюда, по-видимому, относится ˚damaka — «приручающий недороших (животных)», [MBh. 13,23,79.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,23,79) = [≈Вульг. 13.1.23](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S023) = ≈крит. 13,1.16c (= adānta [Nīlak.])
   <sub>attested</sub>

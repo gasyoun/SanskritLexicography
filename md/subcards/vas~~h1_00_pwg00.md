@@ -99,8 +99,8 @@ es wäre nicht Tag geworden
 [7,81,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.081.html#rv07.081.02) [8,46,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.21) *vyuṣṭa* hell geworden: *vyuṣṭāyāṃ rātrau*
 [ŚAT. BR. 12,7,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,3)
 [KĀTY. ŚR. 20,4,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,4,33)
-[MBH. 1,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1205) [3,11917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11917) [4,452](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.452) (*suvyuṣṭā rajanī mama*) .
-[7,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2605) [12,1548.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1548) [15,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.355) [R. 2,54,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,37) [R. GORR. 1,30,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,1) [BHĀG. P. 9,2,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,8) [10,42,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,42,32) [PAÑCAT. 130,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?130,7) _n._ = *dina, prabhāta*
+[MBH. 1,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1205) = [≈Вульг. 1.21.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A021_S001) = ≈крит. 01,19.1c [3,11917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11917) [4,452](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.452) = [≈Вульг. 4.16.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S001) = ≈крит. 04,15.1a (*suvyuṣṭā rajanī mama*) .
+[7,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2605) = [≈Вульг. 7.73.39](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A073_S039) = крит. — [12,1548.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1548) [15,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.355) = [≈Вульг. 15.11.6](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A011_S006) = ≈крит. 15,17.6a [R. 2,54,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,37) [R. GORR. 1,30,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,1) [BHĀG. P. 9,2,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,8) [10,42,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,42,32) [PAÑCAT. 130,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?130,7) _n._ = *dina, prabhāta*
 [H. an. 2,99.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,99)
 [TRIK. 1,1,103.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,103) = *kalya*
 [3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102) [MED. ṭ. 28](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,28); vgl. *avyuṣṭa*.* vyuṣite*
@@ -119,8 +119,8 @@ es wäre nicht Tag geworden
 [7,81,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.081.html#rv07.081.02) [8,46,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.21) *vyuṣṭa* ставший светлым: *vyuṣṭāyāṃ rātrau*
 [ŚAT. BR. 12,7,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,3)
 [KĀTY. ŚR. 20,4,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,4,33)
-[MBH. 1,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1205) [3,11917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11917) [4,452](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.452) (*suvyuṣṭā rajanī mama*) .
-[7,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2605) [12,1548.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1548) [15,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.355) [R. 2,54,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,37) [R. GORR. 1,30,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,1) [BHĀG. P. 9,2,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,8) [10,42,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,42,32) [PAÑCAT. 130,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?130,7) _n._ = *dina, prabhāta*
+[MBH. 1,1205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1205) = [≈Вульг. 1.21.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A021_S001) = ≈крит. 01,19.1c [3,11917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11917) [4,452](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.452) = [≈Вульг. 4.16.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S001) = ≈крит. 04,15.1a (*suvyuṣṭā rajanī mama*) .
+[7,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2605) = [≈Вульг. 7.73.39](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A073_S039) = крит. — [12,1548.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1548) [15,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.355) = [≈Вульг. 15.11.6](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A011_S006) = ≈крит. 15,17.6a [R. 2,54,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,37) [R. GORR. 1,30,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,30,1) [BHĀG. P. 9,2,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,2,8) [10,42,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,42,32) [PAÑCAT. 130,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?130,7) _n._ = *dina, prabhāta*
 [H. an. 2,99.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,99)
 [TRIK. 1,1,103.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,103) = *kalya*
 [3,3,102.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,102) [MED. ṭ. 28](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,28); ср. *avyuṣṭa*.* vyuṣite*
@@ -136,7 +136,7 @@ es wäre nicht Tag geworden
 [PAÑCAV. BR. 8,1,13. 18,9,8. 11,11.]
 
 - **RU:** — 2) освещать, озарять: *ādityo vivasvānahorātra vivaste* (совершенно неправильно с точки зрения этимологии)
-[ŚAT. BR. 10,5,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,4) — caus. заставлять светлеть, делать светлым: *vyevāsmai vāsayati* он даёт ему наступить дню
+[ŚAT. BR. 10,5,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,4) — caus. заставлять светлеть, делать светлым: *vyevāsmai vāsayati* он дает ему наступить дню
 [TBR. 1,8,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,2,3) (по коммент. к 3. *vas)*.* ayaṃ vāsayadvyṛ1tena pūrvīḥ*
 [ṚV. 6,39,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.039.html#rv06.039.04) *idaṃ no vivāsayatam*
 [TS. 6,4,8,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,4,8,3)
@@ -151,7 +151,7 @@ es wäre nicht Tag geworden
 
 - **RU:** — *abhivi* светлеть над т.е., во время (acc.): *yadi paryāyānabhivyucchet* над p. т.е. прежде чем они завершатся
 [ĀŚV. ŚR. 6,6,1.]
-[PAÑCAV. BR. 9,3,3.] мед. (*˚ccheta* возможно, лишь описка вместо *˚cchet*)
+[PAÑCAV. BR. 9,3,3.] мед. (*˚ccheta* возможно, лишь описка вм. *˚cchet*)
 [ŚĀṄKH. ŚR. 13,10,4.]
   <sub>attested</sub>
 

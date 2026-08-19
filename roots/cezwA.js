@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["cezwA"]=[{"key": "cezw_a~~h0_zz_sch", "h": "ceṣṭā", "iast": "ceṣṭā", "senses": [{"tag": "Nachtrag (SCH)", "de_html": "ceṣṭā = ˚pada oder padapāṃsu? <span class=ls>Kauś. 48,14</span>/16?", "ru_html": "ceṣṭā = ˚pada или padapāṃsu? <span class=ls>Kauś. 48,14</span>/16?", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["cezwA"]=[];

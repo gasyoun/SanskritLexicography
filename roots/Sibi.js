@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["Sibi"]=[{"key": "_sibi~~h0_zz_nws00", "h": "śibi", "iast": "śibi", "senses": [{"tag": "NWS", "de_html": "śibi Ved , unsp &gt; e. Volk in der heutigen Region Shorkot des Gebietes Jhang (Panjab). SIjNS (9) : 90 &gt;", "ru_html": "[NWS: Ved., unsp.] <i class=sa>śibi</i> — народ в современной области Шоркот округа Джанг (Панджаб). SIjNS (9) : 90", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["Sibi"]=[];

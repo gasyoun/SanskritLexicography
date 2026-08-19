@@ -7,12 +7,12 @@
  1) vernehmen, hören: *saṃśṛṇuta*
 [PRAB. 105,19.] *gadato nigamaṃ mama*
 [BHĀG. P. 6,5,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,30) *samaśrauṣaṃ vacaḥ*
-[MBH. 1,1626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1626) *saṃśṛṇoti na coktāni*
+[MBH. 1,1626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1626) = [≈Вульг. 1.40.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A040_S003) = ≈крит. 01,36.3a *saṃśṛṇoti na coktāni*
 [BHAṬṬ. 5,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,19) *kroṣṭūnsamāśṛṇotkrūrānrasato 'śubhaśaṃsinaḥ*
 [6,5.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,5) *punaḥ saṃśrutya saṃśrutām (vācam)*
 [YĀJÑ. 3,150.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,150) [12.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,12) *ākrandamānāṃ saṃśrutya*
-[MBH. 3,2388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2388) *rathaghoṣam*
-[13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) [R. 5,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,55,8) *manmukhāt*
+[MBH. 3,2388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2388) = [≈Вульг. 3.63.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S027) = ≈крит. 03,60.26c *rathaghoṣam*
+[13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) = [≈Вульг. 13.30.39](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A030_S039) = ≈крит. 13,31.36a [R. 5,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,55,8) *manmukhāt*
 [PAÑCAR. 4,2,15.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,2,15) *yadi vāsti tvabhiprāyaḥ saṃśrotuṃ tava*
 [R. 7,35,18.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,18) med. : *saṃśṛṇuṣva*
 [BHAṬṬ. 8,16](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,16) (fälschlich auf
@@ -21,26 +21,26 @@
 [P. 1,3,29](https://ashtadhyayi.com/sutraani/1/3/29), Vārtt. 2.
 [VOP. 23,14.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,14) *yathaiva mithaḥ saṃśṛṇvīran*
 [ŚĀṄKH. BR. 9,1.] pass. : *yathā saṃśrūyate* wie man hört, liest
-[MBH. 12,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7159) *tvaṃ hi saṃśrūyase 'tyarthamasahyabalavikramaḥ* so v. a. du bist, wie man hört,
-[6,4794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4794) *yasminsaṃśrūyate satyaṃ jyotirbrahma sanātanam* worin, wie man hört, enthalten sein soll
-[1,30.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.30) *saṃśruta* vernommen, gehört
+[MBH. 12,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7159) = [≈Вульг. 12.199.52](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A199_S052) = ≈крит. 12,192.51a *tvaṃ hi saṃśrūyase 'tyarthamasahyabalavikramaḥ* so v. a. du bist, wie man hört,
+[6,4794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4794) = [≈Вульг. 6.105.25](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A105_S025) = ≈крит. 06,101.24c *yasminsaṃśrūyate satyaṃ jyotirbrahma sanātanam* worin, wie man hört, enthalten sein soll
+[1,30.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.30) = [≈Вульг. 1.1.76](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S076) = крит. — *saṃśruta* vernommen, gehört
 [YĀJÑ. 3,150.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,150)
-[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) *na dṛṣṭaṃ na ca saṃśrutam*
-[Spr. (II) 5018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5018)
+[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) = [≈Вульг. 5.36.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S004) = ≈крит. 05,36.4a *na dṛṣṭaṃ na ca saṃśrutam*
+[Spr. (II) 5018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5018 "Spr. (II) 5018: yacca vedeṣu śāstreṣu na daṣṭaṃ na ca saṃśrutam | tatsarvaṃ vetni loko 'yaṃ yatsyādbrahnāṇḍamadhyagam || — (2270.) Alles, was in der Welt vorgeht, kennen die Leute, auch das, was in den Veden und den Lehrbüchern nicht angetroffen wird und auch sonst nicht gehört worden ist.")
 [MĀRK. P. 100,17. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?100,17) *sanatkumārādvacanamiti vai saṃśrutaṃ mayā*
 [R. GORR. 1,8,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,29) *purāṇe saṃśruto mayā* so v. a. gelesen
-[MBH. 1,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2546)
+[MBH. 1,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2546) = [≈Вульг. 1.65.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A065_S038) = ≈крит. 01,59.37a
 
 - **RU:** — *sam*
  1) воспринимать слухом, слышать: *saṃśṛṇuta*
 [PRAB. 105,19.] *gadato nigamaṃ mama*
 [BHĀG. P. 6,5,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,30) *samaśrauṣaṃ vacaḥ*
-[MBH. 1,1626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1626) *saṃśṛṇoti na coktāni*
+[MBH. 1,1626.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1626) = [≈Вульг. 1.40.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A040_S003) = ≈крит. 01,36.3a *saṃśṛṇoti na coktāni*
 [BHAṬṬ. 5,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,19) *kroṣṭūnsamāśṛṇotkrūrānrasato 'śubhaśaṃsinaḥ*
 [6,5.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,5) *punaḥ saṃśrutya saṃśrutām (vācam)*
 [YĀJÑ. 3,150.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,150) [12.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,12) *ākrandamānāṃ saṃśrutya*
-[MBH. 3,2388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2388) *rathaghoṣam*
-[13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) [R. 5,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,55,8) *manmukhāt*
+[MBH. 3,2388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2388) = [≈Вульг. 3.63.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S027) = ≈крит. 03,60.26c *rathaghoṣam*
+[13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) = [≈Вульг. 13.30.39](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A030_S039) = ≈крит. 13,31.36a [R. 5,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,55,8) *manmukhāt*
 [PAÑCAR. 4,2,15.](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,2,15) *yadi vāsti tvabhiprāyaḥ saṃśrotuṃ tava*
 [R. 7,35,18.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,18) мед. : *saṃśṛṇuṣva*
 [BHAṬṬ. 8,16](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,16) (ошибочно отсылается к
@@ -49,25 +49,25 @@
 [P. 1,3,29](https://ashtadhyayi.com/sutraani/1/3/29), Вартт. 2.
 [VOP. 23,14.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,14) *yathaiva mithaḥ saṃśṛṇvīran*
 [ŚĀṄKH. BR. 9,1.] pass. : *yathā saṃśrūyate* как слышно, читается
-[MBH. 12,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7159) *tvaṃ hi saṃśrūyase 'tyarthamasahyabalavikramaḥ*, так преим. ты, как слышно,
-[6,4794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4794) *yasminsaṃśrūyate satyaṃ jyotirbrahma sanātanam* в чём, как слышно, должно содержаться
-[1,30.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.30) *saṃśruta* воспринятый, услышанный
+[MBH. 12,7159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7159) = [≈Вульг. 12.199.52](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A199_S052) = ≈крит. 12,192.51a *tvaṃ hi saṃśrūyase 'tyarthamasahyabalavikramaḥ*, так преим. ты, как слышно,
+[6,4794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4794) = [≈Вульг. 6.105.25](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A105_S025) = ≈крит. 06,101.24c *yasminsaṃśrūyate satyaṃ jyotirbrahma sanātanam* в чем, как слышно, должно содержаться
+[1,30.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.30) = [≈Вульг. 1.1.76](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S076) = крит. — *saṃśruta* воспринятый, услышанный
 [YĀJÑ. 3,150.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,150)
-[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) *na dṛṣṭaṃ na ca saṃśrutam*
-[Spr. (II) 5018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5018)
+[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) = [≈Вульг. 5.36.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S004) = ≈крит. 05,36.4a *na dṛṣṭaṃ na ca saṃśrutam*
+[Spr. (II) 5018.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5018 "Spr. (II) 5018: yacca vedeṣu śāstreṣu na daṣṭaṃ na ca saṃśrutam | tatsarvaṃ vetni loko 'yaṃ yatsyādbrahnāṇḍamadhyagam || — (2270.) Alles, was in der Welt vorgeht, kennen die Leute, auch das, was in den Veden und den Lehrbüchern nicht angetroffen wird und auch sonst nicht gehört worden ist.")
 [MĀRK. P. 100,17. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?100,17) *sanatkumārādvacanamiti vai saṃśrutaṃ mayā*
 [R. GORR. 1,8,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,29) *purāṇe saṃśruto mayā*, так преим. прочитанный
-[MBH. 1,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2546)
+[MBH. 1,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2546) = [≈Вульг. 1.65.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A065_S038) = ≈крит. 01,59.37a
   <sub>attested</sub>
 
 **2)** — 2) zusagen, versprechen: *mātāmahe samaśrauṣīdrājyaśulkam*
 [R. 2,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,3) *kariṣya iti saṃśrutya pūrvamasmāsu*
-[MBH. 3,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2143) *tatheti saṃśrutya gamanaṃ tasya*
+[MBH. 3,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2143) = [≈Вульг. 3.55.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S008) = крит. — *tatheti saṃśrutya gamanaṃ tasya*
 [R. 1,10,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,10,22) ([23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,10,23) [GORR.]). [23,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,8) [2,21,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,41) *tapasvibhyaḥ sattre yajñadakṣiṇām*
-[75,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,24) [R. GORR. 2,18,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,48) [3,14,18. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,18) [67,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,67,21) [Spr. (II) 612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?612) [LA. (III) 91,11.] *saṃśruta* zugesagt. versprochen
+[75,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,24) [R. GORR. 2,18,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,48) [3,14,18. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,18) [67,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,67,21) [Spr. (II) 612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?612 "Spr. (II) 612: arthināmupapannānāṃ pūrvaṃ cāpyupakāriṇām | āśāṃ saṃśrutya yo hanti sa loke puruṣādhamaḥ || — Wer Bedürftigen, die ihm ehemals einen Dienst erwiesen, erst Hoffnungen macht, wenn sie sich an ihn wenden, und hinterdrein diese nicht erfüllt, der gilt für den niedrigsten Menschen auf der Welt.") [LA. (III) 91,11.] *saṃśruta* zugesagt. versprochen
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
-[MBH. 14,1667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1667)
+[MBH. 14,1667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1667) = [≈Вульг. 14.57.6](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A057_S006) = ≈крит. 14,56.6a
 [R. 3,14,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,17) [6,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,23) [7,76,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,12) (mit gen.
 
 der Person).
@@ -76,12 +76,12 @@ der Person).
 
 - **RU:** — 2) обещать, давать обещание: *mātāmahe samaśrauṣīdrājyaśulkam*
 [R. 2,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,3) *kariṣya iti saṃśrutya pūrvamasmāsu*
-[MBH. 3,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2143) *tatheti saṃśrutya gamanaṃ tasya*
+[MBH. 3,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2143) = [≈Вульг. 3.55.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S008) = крит. — *tatheti saṃśrutya gamanaṃ tasya*
 [R. 1,10,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,10,22) ([23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,10,23) [GORR.]). [23,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,8) [2,21,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,41) *tapasvibhyaḥ sattre yajñadakṣiṇām*
-[75,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,24) [R. GORR. 2,18,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,48) [3,14,18. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,18) [67,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,67,21) [Spr. (II) 612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?612) [LA. (III) 91,11.] *saṃśruta* обещано, дано обещание
+[75,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,24) [R. GORR. 2,18,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,48) [3,14,18. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,18) [67,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,67,21) [Spr. (II) 612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?612 "Spr. (II) 612: arthināmupapannānāṃ pūrvaṃ cāpyupakāriṇām | āśāṃ saṃśrutya yo hanti sa loke puruṣādhamaḥ || — Wer Bedürftigen, die ihm ehemals einen Dienst erwiesen, erst Hoffnungen macht, wenn sie sich an ihn wenden, und hinterdrein diese nicht erfüllt, der gilt für den niedrigsten Menschen auf der Welt.") [LA. (III) 91,11.] *saṃśruta* обещано, дано обещание
 [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
 [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
-[MBH. 14,1667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1667)
+[MBH. 14,1667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1667) = [≈Вульг. 14.57.6](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A057_S006) = ≈крит. 14,56.6a
 [R. 3,14,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,17) [6,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,23) [7,76,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,12) (с gen.
 
 лица).
@@ -99,14 +99,14 @@ der Person).
 [Verz. d. Oxf. H. 259,a,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259) *ruditadhvanim*
 [KATHĀS. 72,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,50) *vārttām*
 [R. 3,63,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,28) *nāma saṃśrāvya cātmanaḥ* seinen Namen nennend
-[MBH. 15,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.732)
+[MBH. 15,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.732) = [≈Вульг. 15.27.18](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A027_S018) = ≈крит. 15,34.18a
 [R. GORR. 2,2,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,2,18) [6,79,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,10)
 [KATHĀS. 20,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,40) *saṃśrāvyamāṇeṣu rājñāṃ nāmasu*
-[MBH. 12,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.118) *vāco rūkṣāḥ saṃśrāvayan*
-[8,309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.309) *paruṣāṇi*
+[MBH. 12,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.118) = [≈Вульг. 12.4.11](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A004_S011) = ≈крит. 12,4.11a *vāco rūkṣāḥ saṃśrāvayan*
+[8,309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.309) = [≈Вульг. 8.9.60](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A009_S060) = ≈крит. 08,5.79c *paruṣāṇi*
 [R. 4,8,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,21) *bhagavate paruṣāṇi*
 [BHĀG. P. 10,74,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,74,30) mit acc. der Person (auch neben acc. der Sache) Etwas zu Jmdes Ohren bringen
-[MBH. 5,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.560)
+[MBH. 5,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.560) = [≈Вульг. 5.18.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A018_S019) = ≈крит. 05,18.19a
 [BHĀG. P. 1,3,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,42) *etān śabdaṃ saṃśrāvya*
 [PAÑCAT. 172,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?172,25) *saṃśrāvitatallekhau* so v. a. vorgelesen
 [KATHĀS. 43,271.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,271)
@@ -115,23 +115,23 @@ der Person).
 [YĀJÑ. 2,112.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,112) *saṃśrāvayannadhvani deśikendraḥ*
 [Verz. d. Oxf. H. 259,a,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259) *ruditadhvanim*
 [KATHĀS. 72,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,50) *vārttām*
-[R. 3,63,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,28) *nāma saṃśrāvya cātmanaḥ* называя своё имя
-[MBH. 15,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.732)
+[R. 3,63,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,28) *nāma saṃśrāvya cātmanaḥ* называя свое имя
+[MBH. 15,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.732) = [≈Вульг. 15.27.18](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A027_S018) = ≈крит. 15,34.18a
 [R. GORR. 2,2,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,2,18) [6,79,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,10)
 [KATHĀS. 20,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,40) *saṃśrāvyamāṇeṣu rājñāṃ nāmasu*
-[MBH. 12,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.118) *vāco rūkṣāḥ saṃśrāvayan*
-[8,309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.309) *paruṣāṇi*
+[MBH. 12,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.118) = [≈Вульг. 12.4.11](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A004_S011) = ≈крит. 12,4.11a *vāco rūkṣāḥ saṃśrāvayan*
+[8,309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.309) = [≈Вульг. 8.9.60](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A009_S060) = ≈крит. 08,5.79c *paruṣāṇi*
 [R. 4,8,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,21) *bhagavate paruṣāṇi*
 [BHĀG. P. 10,74,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,74,30) с acc. лица (также рядом с acc. предмета) довести что-либо до чьих-либо ушей
-[MBH. 5,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.560)
+[MBH. 5,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.560) = [≈Вульг. 5.18.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A018_S019) = ≈крит. 05,18.19a
 [BHĀG. P. 1,3,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,42) *etān śabdaṃ saṃśrāvya*
 [PAÑCAT. 172,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?172,25) *saṃśrāvitatallekhau*, так преим. прочитанный вслух
 [KATHĀS. 43,271.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,271)
   <sub>attested</sub>
 
 **caus-2)** — 2) erschallen machen: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
-[MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
+[MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385) = [≈Вульг. 5.95.46](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A095_S046) = ≈крит. 05,93.46a
 
 - **RU:** — 2) заставлять звучать, издавать звук: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
-[MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385)
+[MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385) = [≈Вульг. 5.95.46](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A095_S046) = ≈крит. 05,93.46a
   <sub>attested</sub>

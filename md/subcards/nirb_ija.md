@@ -12,7 +12,7 @@
 — 1〉 _Adj._ samenlos, leer, inhaltslos. Nom. abstr., *˚tva* _n._
 
 - **RU:** *nirbīja*
-— 1〉 _Adj._ без семени, пустой, лишённый содержания. Nom. abstr., *˚tva* _n._
+— 1〉 _Adj._ без семени, пустой, лишенный содержания. Nom. abstr., *˚tva* _n._
   <sub>attested</sub>
 
 **PW-2)** — 2〉 *_f._ *ā* eine Traubenart ohne Kerne.

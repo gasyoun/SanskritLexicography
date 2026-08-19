@@ -25,7 +25,7 @@
 
 **4〉)** — 4〉 abmessen gegen, vergleichen mit (Instr.)
 
-- **RU:** — 4〉 отмерять по отношению к, сравнивать с (Instr.)
+- **RU:** — 4〉 отмерять по отношению к, сравнивать с (Ins.)
   <sub>attested</sub>
 
 **5〉)** — 5〉 *māti* dem Maasse entsprechen. so v. a. gross —, lang genug sein für (Gen.).
@@ -40,7 +40,7 @@
 
 **7〉)** — 7〉 *māti* mit *na* ausser sich sein vor (Instr.) [VIKRAMĀṄKAC. 2,79].
 
-- **RU:** — 7〉 *māti* с *na* быть вне себя от (Instr.) [VIKRAMĀṄKAC. 2,79].
+- **RU:** — 7〉 *māti* с *na* быть вне себя от (Ins.) [VIKRAMĀṄKAC. 2,79].
   <sub>attested</sub>
 
 **8〉)** — 8〉 zumessen, zutheilen, gewähren.
@@ -90,12 +90,12 @@
 
 **15b〉)** — b〉 im Maasse, an Zahl u. s. w. gleichkommend mit (Instr. oder im Comp. vorangehend).
 
-- **RU:** — b〉 по мере, по числу и т.д. равный (Instr. или в Comp. предшествующем).
+- **RU:** — b〉 по мере, по числу и т.д. равный (Ins. или в Comp. предшествующем).
   <sub>attested</sub>
 
 **15c〉)** — c〉 abgemessen, so v. a. begrenzt durch (Instr.).
 
-- **RU:** — c〉 отмеренный, так преим. ограниченный (Instr.).
+- **RU:** — c〉 отмеренный, так преим. ограниченный (Ins.).
   <sub>attested</sub>
 
 **15d〉)** — d〉 abgemessen, so v. a. mässig, kärglich, wenig, kurz, klein.
@@ -145,27 +145,27 @@
 
 **ava-2〉)** — 2〉 abmessen; Pass. gemessen —, bestimmt werden [ĀRYABH. 3,1].
 
-- **RU:** — 2〉 отмерять; Pass. быть измеренным —, определённым [ĀRYABH. 3,1].
+- **RU:** — 2〉 отмерять; Pass. быть измеренным —, определенным [ĀRYABH. 3,1].
   <sub>attested</sub>
 
-**ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
+**ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) = [≈Вульг. 12.2.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S007) = ≈крит. 12,2.7a ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
 
-- **RU:** — 3〉 составить себе представление о ком-либо или о чём-либо (Acc.), думать о чём-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чём составлено представление, что было мысленно представлено.
+- **RU:** — 3〉 составить себе представление о ком-либо или о чем-либо (Acc.), думать о чем-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) = [≈Вульг. 12.2.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S007) = ≈крит. 12,2.7a надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чем составлено представление, что было мысленно представлено.
   <sub>attested</sub>
 
 **ava-4〉)** — 4〉 aus Etwas (Abl. oder Instr.) schliessen auf (Acc.), erschliessen, folgern, schliessen, dass ist (mit doppelten Acc.). Praes. nur in den reduplicirten Formen (*anumimīran* [Comm. zu JAIM. 1,3,2]) und *anuminoti* (s. u. **1.** *mi* mit *anu*). *anumita* geschlossen, gefolgert.
 
-- **RU:** — 4〉 из чего-либо (Abl. или Instr.) умозаключать о (Acc.), делать вывод, заключать, что является (с двойным Acc.). Praes. только в редуплицированных формах (*anumimīran* [Comm. zu JAIM. 1,3,2]) и *anuminoti* (см. **1.** *mi* с *anu*). *anumita* умозаключённый, выведенный.
+- **RU:** — 4〉 из чего-либо (Abl. или Ins.) умозаключать о (Acc.), делать вывод, заключать, что является (с двойным Acc.). Praes. только в редуплицированных формах (*anumimīran* [Comm. zu JAIM. 1,3,2]) и *anuminoti* (см. **1.** *mi* с *anu*). *anumita* умозаключенный, выведенный.
   <sub>attested</sub>
 
 **ava-caus)** — Caus. bewirken, dass man auf Etwas (Acc.) schliesst, — dass man Etwas folgert, beweisen [KĀD. 148,19].
 
-- **RU:** — Caus. заставлять умозаключать о чём-либо (Acc.), — заставлять делать вывод, доказывать [KĀD. 148,19].
+- **RU:** — Caus. заставлять умозаключать о чем-либо (Acc.), — заставлять делать вывод, доказывать [KĀD. 148,19].
   <sub>attested</sub>
 
-**a-head)** — Mit *apa* abmessen [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
+**a-head)** — Mit *apa* abmessen [AV. 18,2,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) [AV. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.057.html#av19.057.06) (Conj.).
 
-- **RU:** — С *apa* отмерять [AV. 18,2,40. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) (Conj.).
+- **RU:** — С *apa* отмерять [AV. 18,2,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.40) [AV. 19,57,6](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.057.html#av19.057.06) (Conj.).
   <sub>attested</sub>
 
 **adhi-head)** — Mit *abhi* darauf messen [ĀPAST. ŚR. 12,9,3].
@@ -195,7 +195,7 @@
 
 **abhi-2〉)** — 2〉 Med. vergleichen mit (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* verglichen, gleichgesetzt, gleich ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
 
-- **RU:** — 2〉 Med. сравнивать с (Instr.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* сравненный, приравненный, равный ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
+- **RU:** — 2〉 Med. сравнивать с (Ins.) [249,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?249). *upamita* сравненный, приравненный, равный ([250,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?250)).
   <sub>attested</sub>
 
 **abhi-3〉)** — 3〉 Pass. zu Passe kommen, von Nutzen sein.
@@ -220,12 +220,12 @@
 
 **upa-2a〉)** — a〉 dem Maasse nach bestimmt, gemessen; vgl. *cakṣurnimita* und *durnimita*.
 
-- **RU:** — a〉 определённый по мере, измеренный; ср. *cakṣurnimita* и *durnimita*.
+- **RU:** — a〉 определенный по мере, измеренный; ср. *cakṣurnimita* и *durnimita*.
   <sub>attested</sub>
 
 **upa-2b〉)** — b〉 veranlasst durch (Instr.).
 
-- **RU:** — b〉 вызванный (Instr.).
+- **RU:** — b〉 вызванный (Ins.).
   <sub>attested</sub>
 
 **ud-head)** — Mit **pariṇi* und **praṇi*.
@@ -245,7 +245,7 @@
 
 **ni-2〉)** — 2〉 herausbilden, herstellen, machen aus (Abl. oder Instr.), verfertigen, bauen, schaffen, bilden überh.
 
-- **RU:** — 2〉 создавать, изготовлять, делать из (Abl. или Instr.), производить, строить, создавать, образовывать вообще
+- **RU:** — 2〉 создавать, изготовлять, делать из (Abl. или Ins.), производить, строить, создавать, образовывать вообще
   <sub>attested</sub>
 
 **ni-3〉)** — 3〉 verfassen.
@@ -275,22 +275,22 @@
 
 **ni-7a〉)** — a〉 hergestellt, gemacht, verfertigt, erbaut, geschaffen, gebildet überh. — von (Instr. oder im Comp. vorangehend), — aus (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] oder im Comp. vorangehend).
 
-- **RU:** — a〉 изготовленный, сделанный, произведённый, возведённый, созданный, образованный вообще — кем (Instr. или в Comp. предшествующем), — из (Abl., Instr. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] или в Comp. предшествующем).
+- **RU:** — a〉 изготовленный, сделанный, произведенный, возведенный, созданный, образованный вообще — кем (Ins. или в Comp. предшествующем), — из (Abl., Ins. [[122,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?122). [137,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?137). [152,10](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152)] или в Comp. предшествующем).
   <sub>attested</sub>
 
 **ni-7b〉)** — b〉 bewirkt.
 
-- **RU:** — b〉 вызванный, произведённый.
+- **RU:** — b〉 вызванный, произведенный.
   <sub>attested</sub>
 
 **ni-7c〉)** — c〉 begangen, gefeiert.
 
-- **RU:** — c〉 совершённый, отпразднованный.
+- **RU:** — c〉 совершенный, отпразднованный.
   <sub>attested</sub>
 
 **ni-7d〉)** — d〉 festgesetzt, bestimmt, eingeführt, eingesetzt.
 
-- **RU:** — d〉 установленный, определённый, введённый, назначенный.
+- **RU:** — d〉 установленный, определенный, введенный, назначенный.
   <sub>attested</sub>
 
 **ni-7e〉)** — e〉 abgesondert, für sich stehend.
@@ -340,7 +340,7 @@
 
 **pari-vi-3〉)** — 3〉 festgesetzt, bestimmt.
 
-- **RU:** — 3〉 установленный, определённый.
+- **RU:** — 3〉 установленный, определенный.
   <sub>attested</sub>
 
 **vi-head)** — Mit *vinis*
@@ -350,7 +350,7 @@
 
 **vi-1〉)** — 1〉 verfertigen, bauen, schaffen, bilden, — aus (Abl. oder Instr.).
 
-- **RU:** — 1〉 изготовлять, строить, создавать, образовывать, — из (Abl. или Instr.).
+- **RU:** — 1〉 изготовлять, строить, создавать, образовывать, — из (Abl. или Ins.).
   <sub>attested</sub>
 
 **vi-2〉)** — 2〉 *˚nirmita*
@@ -365,12 +365,12 @@
 
 **vi-2b〉)** — b〉 bestimmt, festgesetzt, — als (Nomin.).
 
-- **RU:** — b〉 определённый, установленный, — как (Nomin.).
+- **RU:** — b〉 определенный, установленный, — как (Nomin.).
   <sub>attested</sub>
 
 **vi-2c〉)** — c〉 begangen, gefeiert.
 
-- **RU:** — c〉 совершённый, отпразднованный.
+- **RU:** — c〉 совершенный, отпразднованный.
   <sub>attested</sub>
 
 **sam-vi-head)** — Mit *pravinis*, *˚nmmirmita* verfertigt aus (im Comp. vorangehend) [Ind. St. 14,385].
@@ -390,7 +390,7 @@
 
 **pari-1〉)** — 1〉 ringsum messen, durchmessen, erfüllen, umfassen mit (Instr. [NAIṢ. 2,35])
 
-- **RU:** — 1〉 мерить кругом, пронизывать, наполнять, охватывать (Instr. [NAIṢ. 2,35])
+- **RU:** — 1〉 мерить кругом, пронизывать, наполнять, охватывать (Ins. [NAIṢ. 2,35])
   <sub>attested</sub>
 
 **pari-2〉)** — 2〉 bemessen, ermessen.
@@ -405,7 +405,7 @@
 
 **pari-3a〉)** — a〉 bemessen, umschrieben, begrenzt, dem Maasse oder der Zahl nach genau bestimmt.
 
-- **RU:** — a〉 обмеренный, ограниченный, точно определённый по мере или по числу.
+- **RU:** — a〉 обмеренный, ограниченный, точно определенный по мере или по числу.
   <sub>attested</sub>
 
 **pari-3b〉)** — b〉 beschränkt, so v. a. wenig.
@@ -440,7 +440,7 @@
 
 **pra-mA-3〉)** — 3〉 sich eine richtige Vorstellung bilden über (Acc.). *pramita* worüber man sich eine r. V. gebildet hat.
 
-- **RU:** — 3〉 составить себе правильное представление о (Acc.). *pramita* о чём составлено r. V..
+- **RU:** — 3〉 составить себе правильное представление о (Acc.). *pramita* о чем составлено r. V..
   <sub>attested</sub>
 
 **prati-head)** — Mit *prati*
@@ -455,7 +455,7 @@
 
 **prati-2〉)** — 2〉 *pratimita* wieder gespiegelt, sich abspiegelnd.
 
-- **RU:** — 2〉 *pratimita* отражённый, отображающийся.
+- **RU:** — 2〉 *pratimita* отраженный, отображающийся.
   <sub>attested</sub>
 
 **vi-mA-head)** — Mit *vi*
@@ -495,10 +495,10 @@
 
 **sam-2〉)** — 2〉 nach dem Maasse eines Andern (Instr.) machen, gleichmachen (an Grösse, Zahl u. s. w.), nachbilden.
 
-- **RU:** — 2〉 делать по мере другого (Instr.), уравнивать (по величине, числу и т.д.), воспроизводить.
+- **RU:** — 2〉 делать по мере другого (Ins.), уравнивать (по величине, числу и т.д.), воспроизводить.
   <sub>attested</sub>
 
 **sam-3〉)** — 3〉 vergleichen mit (Instr.).
 
-- **RU:** — 3〉 сравнивать с (Instr.).
+- **RU:** — 3〉 сравнивать с (Ins.).
   <sub>attested</sub>

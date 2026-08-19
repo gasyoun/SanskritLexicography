@@ -15,7 +15,7 @@
 
 **PW-prefix-T4)** — Mit *samudā* in *samudānaya*; vgl. *samudānay*.
 
-- **RU:** — С *samudā* в значении *samudānaya*; ср. *samudānay*.
+- **RU:** — С *samudā* в знач. *samudānaya*; ср. *samudānay*.
   <sub>attested</sub>
 
 **PW-prefix-T8-1)** — Mit *upā*
@@ -76,7 +76,7 @@
 
 **PW-prefix-T19-2)** — 2〉 wiedergewinnen.
 
-- **RU:** — 2〉 возвращать себе, отвоёвывать.
+- **RU:** — 2〉 возвращать себе, отвоевывать.
   <sub>attested</sub>
 
 **PW-prefix-T19-3)** — 3〉 wieder zugiessen, nachgiessen, auffüllen [GOP. BR. 1,3,11].
@@ -103,7 +103,7 @@
 
 **PW-prefix-T26-2)** — 2〉 Jmd mit Jmd (Instr. oder Instr. mit *saha*) zusammenbringen.
 
-- **RU:** — 2〉 сводить кого-либо с кем-либо (Instr. или Instr. с *saha*).
+- **RU:** — 2〉 сводить кого-либо с кем-либо (Ins. или Ins. с *saha*).
   <sub>attested</sub>
 
 **PW-prefix-T26-3)** — 3〉 Flüssigkeiten zusammenbringen, zusammengiessen.
@@ -137,7 +137,7 @@
 
 **PW-prefix-T33)** — Mit *pratisamā* vollständig zugiessen [ĀPAST. ŚR. 7,14,8].
 
-- **RU:** — С *pratisamā* доливать до краёв, наполнять до краёв [ĀPAST. ŚR. 7,14,8].
+- **RU:** — С *pratisamā* доливать до краев, наполнять до краев [ĀPAST. ŚR. 7,14,8].
   <sub>attested</sub>
 
 **PW-prefix-T35-1)** — Mit *ud*
@@ -169,7 +169,7 @@
 
 **PW-prefix-T35-6)** — 6〉 wegführen (das Kalb von der Mutter), Jmd bei Seite führen. *vadhāya* zum Tode abführen. *unnita* _Adj._ Pl. nach verschiedenen Seite auseinander geführt, getrennt.
 
-- **RU:** — 6〉 уводить (телёнка от матери), отводить кого-либо в сторону. *vadhāya* уводить на смерть. *unnita* _Adj._ Pl. разведённые в разные стороны, разлучённые.
+- **RU:** — 6〉 уводить (теленка от матери), отводить кого-либо в сторону. *vadhāya* уводить на смерть. *unnita* _Adj._ Pl. разведенные в разные стороны, разлученные.
   <sub>attested</sub>
 
 **PW-prefix-T35-7)** — 7〉 auseinander streifen, schlichten.
@@ -401,7 +401,7 @@
 
 **PW-prefix-T88-2)** — 2〉 aufʼs Reine bringen, Etwas herausbringen, hinter Etwas kommen, Etwas zur Entscheidung bringen, sich für Etwas entscheiden. *nirṇīta* aufʼs Reine gebracht, entschieden, ausgemacht, feststehend.
 
-- **RU:** — 2〉 выяснять, устанавливать, докапываться до сути, решать вопрос, принимать решение. *nirṇīta* выясненный, решённый, установленный, твёрдо определённый.
+- **RU:** — 2〉 выяснять, устанавливать, докапываться до сути, решать вопрос, принимать решение. *nirṇīta* выясненный, решенный, установленный, твердо определенный.
   <sub>attested</sub>
 
 **PW-prefix-T90)** — Mit *vinis* vollkommen aufʼs Reine bringen.
@@ -433,7 +433,7 @@
 
 **PW-prefix-T95-2)** — 2〉 ein Paar oder eine Braut um das Feuer (Acc., auch mit Ergänzung dieses Acc.) herumführen (als Hochzeitsceremonie); daher ein Mädchen (Acc.) heirathen, sich mit einem Mädchen vermählen. *pariṇītā* verheirathet. *pariṇītabhartar* wohl der nur angetraute Gatte, der seine Frau noch nicht heimgeführt hat.
 
-- **RU:** — 2〉 обводить пару или невесту вокруг огня (Acc., также с дополнением Acc.) (как свадебный обряд); отсюда жениться на девушке (Acc.), вступать в брак с девушкой. *pariṇītā* состоящий в браке. *pariṇītabhartar* вероятно, супруг, лишь обручённый, ещё не приведший жену в дом.
+- **RU:** — 2〉 обводить пару или невесту вокруг огня (Acc., также с дополнением Acc.) (как свадебный обряд); отсюда жениться на девушке (Acc.), вступать в брак с девушкой. *pariṇītā* состоящий в браке. *pariṇītabhartar* вероятно, супруг, лишь обрученный, еще не приведший жену в дом.
   <sub>attested</sub>
 
 **PW-prefix-T95-3)** — 3〉 entführen.
@@ -458,5 +458,5 @@
 
 **PW-prefix-T95-7)** — 7〉 *pariṇīta* ausgeführt.
 
-- **RU:** — 7〉 *pariṇīta* исполненный, осуществлённый.
+- **RU:** — 7〉 *pariṇīta* исполненный, осуществленный.
   <sub>attested</sub>

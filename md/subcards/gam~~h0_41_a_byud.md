@@ -15,10 +15,10 @@
   <sub>attested</sub>
 
 **2)** — 2) hinaus — und Jmd (acc.) entgegen gehen: *abhyudgatāstvāṃ vayamadya sarve*
-[MBH. 1,3572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3572)
+[MBH. 1,3572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3572) = [≈Вульг. 1.88.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A088_S009) = ≈крит. 01,83.9c
 
 - **RU:** — 2) выйти навстречу кому-л. (acc.): *abhyudgatāstvāṃ vayamadya sarve*
-[MBH. 1,3572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3572)
+[MBH. 1,3572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3572) = [≈Вульг. 1.88.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A088_S009) = ≈крит. 01,83.9c
   <sub>attested</sub>
 
 **3)** — Vgl. *abhyudgama* fg.

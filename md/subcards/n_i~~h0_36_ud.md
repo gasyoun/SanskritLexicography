@@ -8,8 +8,8 @@
 [ṚV. 2,13,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.12) *uttūrvayāṇaṃ dhṛṣatā ninetha*
 [6,18,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.018.html#rv06.018.13) *utsūryaṃ nayatho jyotiṣā saha*
 [72,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.072.html#rv06.072.02) [10,137,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.01) *kiṃ svidādityamunnayati*
-[MBH. 3,17330. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17330) *retodhāḥ putra unnayati naradeva yamakṣayāt*
-[MBH. 1,3103](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3103) = [HARIV. 1725.](https://sanskrit-lexicon-scans.github.io/hariv?1725) *unneṣyati vrajamataḥ*
+[MBH. 3,17330. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17330) = [≈Вульг. 3.313.45](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A313_S045) = ≈крит. 03,297.26a *retodhāḥ putra unnayati naradeva yamakṣayāt*
+[MBH. 1,3103](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3103) = [≈Вульг. 1.74.116](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S116) = ≈крит. 01,69.34c = [HARIV. 1725.](https://sanskrit-lexicon-scans.github.io/hariv?1725) *unneṣyati vrajamataḥ*
 [BHĀG. P. 2,7,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,29) *urvīm — rasāyā līlayonnītām*
 [3,13,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,46) *svadaṃṣṭronnītadharo varāhaḥ*
 [6,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,13) aufrichten (den Yūpa)
@@ -30,7 +30,7 @@
 [PĀR. GṚHY. 2,2.] *arcakānunnītavantam*
 [VOP. 5,26.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,26) herausholen
 [KĀTY. ŚR. 9,3,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,10) aufsetzen, auflegen: *pumāṃsamunnayetprājñaḥ śayana tapta āyase*
-[MBH. 12,6105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6105) Nach [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) und [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,28) erscheint *nī* in der Bed. *utsañjana* (P.) oder *utkṣepa* ([VOP.]) stets als med.;
+[MBH. 12,6105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6105) = [≈Вульг. 12.166.55](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A166_S055) = ≈крит. 12,160.52c Nach [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) und [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,28) erscheint *nī* in der Bed. *utsañjana* (P.) oder *utkṣepa* ([VOP.]) stets als med.;
 als Beispiel wird in den Scholien *daṇḍamunnayate* er erhebt den Stock aufgeführt.
 
 - **RU:** — *ud*
@@ -38,8 +38,8 @@ als Beispiel wird in den Scholien *daṇḍamunnayate* er erhebt den Stock aufge
 [ṚV. 2,13,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.12) *uttūrvayāṇaṃ dhṛṣatā ninetha*
 [6,18,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.018.html#rv06.018.13) *utsūryaṃ nayatho jyotiṣā saha*
 [72,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.072.html#rv06.072.02) [10,137,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.01) *kiṃ svidādityamunnayati*
-[MBH. 3,17330. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17330) *retodhāḥ putra unnayati naradeva yamakṣayāt*
-[MBH. 1,3103](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3103) = [HARIV. 1725.](https://sanskrit-lexicon-scans.github.io/hariv?1725) *unneṣyati vrajamataḥ*
+[MBH. 3,17330. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17330) = [≈Вульг. 3.313.45](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A313_S045) = ≈крит. 03,297.26a *retodhāḥ putra unnayati naradeva yamakṣayāt*
+[MBH. 1,3103](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3103) = [≈Вульг. 1.74.116](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S116) = ≈крит. 01,69.34c = [HARIV. 1725.](https://sanskrit-lexicon-scans.github.io/hariv?1725) *unneṣyati vrajamataḥ*
 [BHĀG. P. 2,7,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,29) *urvīm — rasāyā līlayonnītām*
 [3,13,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,46) *svadaṃṣṭronnītadharo varāhaḥ*
 [6,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,13) поднимать (Йупа)
@@ -60,7 +60,7 @@ als Beispiel wird in den Scholien *daṇḍamunnayate* er erhebt den Stock aufge
 [PĀR. GṚHY. 2,2.] *arcakānunnītavantam*
 [VOP. 5,26.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,26) извлекать
 [KĀTY. ŚR. 9,3,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,3,10) надевать, класть сверху: *pumāṃsamunnayetprājñaḥ śayana tapta āyase*
-[MBH. 12,6105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6105) По [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) и [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,28) *nī* в знач. *utsañjana* (P.) или *utkṣepa* ([VOP.]) всегда выступает как мед.;
+[MBH. 12,6105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6105) = [≈Вульг. 12.166.55](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A166_S055) = ≈крит. 12,160.52c По [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) и [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,28) *nī* в знач. *utsañjana* (P.) или *utkṣepa* ([VOP.]) всегда выступает как мед.;
 в схолиях в качестве примера приводится *daṇḍamunnayate* он поднимает посох.
   <sub>attested</sub>
 
@@ -85,33 +85,33 @@ als Beispiel wird in den Scholien *daṇḍamunnayate* er erhebt den Stock aufge
 [TS. 1,6,11,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,11,3)
 [ŚĀṄKH. ŚR. 5,10,6.]
 [KĀTY. ŚR. 26,5,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?26,5,4) Jmd bei Seite führen: *mantrayasvainamunnīya paravantaṃ viśeṣataḥ*
-[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) *tata ekāntamunnīya pārāśaryo yudhiṣṭhiram . abravīt*
-[3,1438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1438) [10756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10756) *badhāyonnīyamāneṣu* zum Tode abführen
-[12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* nach verschiedenen Seiten auseinandergeführt, getrennt
+[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) = [≈Вульг. 14.28.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A028_S012) = ≈крит. 14,28.12c *tata ekāntamunnīya pārāśaryo yudhiṣṭhiram . abravīt*
+[3,1438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1438) = [≈Вульг. 3.36.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A036_S028) = ≈крит. 03,37.25a [10756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10756) = [≈Вульг. 3.135.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A135_S012) = ≈крит. 03,135.12a *badhāyonnīyamāneṣu* zum Tode abführen
+[12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) = [≈Вульг. 12.270.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S004) = ≈крит. 12,262.4a *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* nach verschiedenen Seiten auseinandergeführt, getrennt
 [BHĀG. P. 7,2,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,21)
 
-- **RU:** — 3) уводить (телёнка от матери)
+- **RU:** — 3) уводить (теленка от матери)
 [TS. 1,6,11,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,6,11,3)
 [ŚĀṄKH. ŚR. 5,10,6.]
 [KĀTY. ŚR. 26,5,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?26,5,4) отводить кого-л. в сторону: *mantrayasvainamunnīya paravantaṃ viśeṣataḥ*
-[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) *tata ekāntamunnīya pārāśaryo yudhiṣṭhiram . abravīt*
-[3,1438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1438) [10756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10756) *badhāyonnīyamāneṣu* уводить на смерть
-[12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* разведённые в разные стороны, разлучённые
+[MBH. 14,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.799) = [≈Вульг. 14.28.12](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A028_S012) = ≈крит. 14,28.12c *tata ekāntamunnīya pārāśaryo yudhiṣṭhiram . abravīt*
+[3,1438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1438) = [≈Вульг. 3.36.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A036_S028) = ≈крит. 03,37.25a [10756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10756) = [≈Вульг. 3.135.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A135_S012) = ≈крит. 03,135.12a *badhāyonnīyamāneṣu* уводить на смерть
+[12,9561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9561) = [≈Вульг. 12.270.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S004) = ≈крит. 12,262.4a *daivenaikatra nītānāmunnītānāṃ svakarmabhiḥ* разведенные в разные стороны, разлученные
 [BHĀG. P. 7,2,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,21)
   <sub>attested</sub>
 
 **4)** — 4) auseinanderstreifen, schlichten: *(darbhapiñjūlībhiḥ) trirunnayet*
 [GṚHYASAṂGR. 1,93.]
 
-- **RU:** — 4) расчёсывать (разбирая), приводить в порядок: *(darbhapiñjūlībhiḥ) trirunnayet*
+- **RU:** — 4) расчесывать (разбирая), приводить в порядок: *(darbhapiñjūlībhiḥ) trirunnayet*
 [GṚHYASAṂGR. 1,93.]
   <sub>attested</sub>
 
 **5)** — 5) viell. ausquetschen (ein Geschwür): *paruṣairākṣipasyevaṃ vraṇaṃ pūtimivonnayan*
-[MBH. 5,2776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2776)
+[MBH. 5,2776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2776) = [≈Вульг. 5.78.11](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A078_S011) = ≈крит. 05,76.11a
 
 - **RU:** — 5) возможно выдавливать (нарыв): *paruṣairākṣipasyevaṃ vraṇaṃ pūtimivonnayan*
-[MBH. 5,2776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2776)
+[MBH. 5,2776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2776) = [≈Вульг. 5.78.11](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A078_S011) = ≈крит. 05,76.11a
   <sub>attested</sub>
 
 **6)** — 6) anstimmen: *unnīta* als Erkl. von *udañcita* in *udañcitapañcasarāga*
@@ -122,8 +122,8 @@ Schol. zu [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
   <sub>attested</sub>
 
 **7)** — 7) herausbringen, hinter Etwas kommen, ausspüren, erschliessen: *tasya padamunnīya*
-[MBH. 3,12444.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12444) *tato rājñāṃ carairāptaiḥ pravṛttirudanīyata*
-[1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
+[MBH. 3,12444.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12444) = [≈Вульг. 3.179.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U11_A179_S017) = ≈крит. 03,176.17a *tato rājñāṃ carairāptaiḥ pravṛttirudanīyata*
+[1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) = [≈Вульг. 1.197.25](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A197_S025) = ≈крит. 01,189.25c [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
 [DAŚAK.] in [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*
@@ -132,8 +132,8 @@ Schol. zu [GĪT. 1,39.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?1,
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252)
 
 - **RU:** — 7) выяснять, докапываться до чего-л., выслеживать, выводить (умозаключение): *tasya padamunnīya*
-[MBH. 3,12444.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12444) *tato rājñāṃ carairāptaiḥ pravṛttirudanīyata*
-[1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
+[MBH. 3,12444.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12444) = [≈Вульг. 3.179.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U11_A179_S017) = ≈крит. 03,176.17a *tato rājñāṃ carairāptaiḥ pravṛttirudanīyata*
+[1,7366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7366) = [≈Вульг. 1.197.25](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A197_S025) = ≈крит. 01,189.25c [RĀJA-TAR. 4,353.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,353) [6,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,6) *upalabdhamupalakṣaṇaṃ yena tasyāḥ kopanāyāḥ sarasamunnīyate mārgaḥ*
 [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *prakṛtipratyayādyarthaiḥ saṃkīrṇe liṅgamunnayet*
 [AK. 3,3,1.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,3,1) *sā tu tāvatonnītamadabhiprāyā*
 [DAŚAK.] в [BENF. Chr. 200,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200) *ubhayorbhāvamunnīya*

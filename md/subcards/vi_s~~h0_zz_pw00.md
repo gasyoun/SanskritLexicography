@@ -10,7 +10,7 @@
 
 **1-body)** — 1〉 sich niederlassen, hineintreten —, eingehen —, einziehen —, sich hineinbegeben —, hineinschlüpfen —, eindringen —, versinken —, aufgehen in (Loc. oder Acc.); auch mit hinzugefügtem *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* u. s. w. den Scheiterhaufen besteigen. In der Astr. in Conjunction kommen mit (Acc.). Ohne Ergänzung hineintreten inʼs Haus u. s. w., auftreten auf der Schaubühne, erscheinen.
 
-- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* и т.д. всходить на погребальный костёр. В астр. вступать в соединение с (Acc.). Без дополнения входить в дом и т.д., выступать на сцене, появляться.
+- **RU:** — 1〉 поселяться, входить —, вступать —, вселяться —, проникать внутрь —, вползать —, врываться —, погружаться —, сливаться с (Loc. или Acc.); также с добавлением *antar* ([299,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?299)). *agnim* и т.д. всходить на погребальный костер. В астр. вступать в соединение с (Acc.). Без дополнения входить в дом и т.д., выступать на сцене, появляться.
   <sub>attested</sub>
 
 **1-cont)** — Mit *punar* oder *bhūyas* zurückgehen, zurückkehren, — in (Acc.).
@@ -60,7 +60,7 @@
 
 **10)** — 10〉 sich zu schaffen machen mit (Instr.).
 
-- **RU:** — 10〉 заниматься, иметь дело с (Instr.).
+- **RU:** — 10〉 заниматься, иметь дело с (Ins.).
   <sub>attested</sub>
 
 **11)** — 11〉 *viṣṭa*
@@ -73,9 +73,9 @@
 - **RU:** — a〉 вошедший в —, содержащийся в (Acc. или Loc.).
   <sub>attested</sub>
 
-**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
+**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) = [≈Вульг. 7.36.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A036_S013) = ≈крит. 07,35.13a ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
 
-- **RU:** — b〉 исполненный —, соединённый с (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Вместо непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) ([ed. Vardh. 7,35,13]) [ed. Bomb. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
+- **RU:** — b〉 исполненный —, соединенный с (Ins.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Вм. непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) = [≈Вульг. 7.36.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A036_S013) = ≈крит. 07,35.13a ([ed. Vardh. 7,35,13]) [Бомбейская ред. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
   <sub>attested</sub>
 
 **caus-head)** — Caus. *veśayati*
@@ -95,7 +95,7 @@
 
 **desid-head)** — Desid. *vivikṣati* hineinzutreten —, hineinzugehen in (Acc.). *agnim* u. s. w. den Scheiterhaufen zu besteigen beabsichtigen.
 
-- **RU:** — Desid. *vivikṣati* намереваться войти —, вступить в (Acc.). *agnim* и т.д. намереваться взойти на погребальный костёр.
+- **RU:** — Desid. *vivikṣati* намереваться войти —, вступить в (Acc.). *agnim* и т.д. намереваться взойти на погребальный костер.
   <sub>attested</sub>
 
 **desid-2)** — Mit *adhi* Caus. setzen auf (Acc.).
@@ -200,7 +200,7 @@
 
 **aa-7a-delta)** — δ〉 *ganz in Etwas steckend, einer Sache ganz hingegeben.
 
-- **RU:** — δ〉 *всецело погружённый во что-либо, всецело преданный делу.
+- **RU:** — δ〉 *всецело погруженный во что-либо, всецело преданный делу.
   <sub>attested</sub>
 
 **aa-7b-head)** — b〉 mit pass. Bed.
@@ -210,17 +210,17 @@
 
 **aa-7b-alpha)** — α〉 bewohnt —, erfüllt von (Instr. oder im Comp. vorangehend).
 
-- **RU:** — α〉 населённый —, исполненный (Instr. или с предшествующим Comp.).
+- **RU:** — α〉 населенный —, исполненный (Ins. или с предшествующим Comp.).
   <sub>attested</sub>
 
 **aa-7b-beta)** — β〉 getroffen von (einem Pfeile, Instr. oder im Comp. vorangehend).
 
-- **RU:** — β〉 поражённый (стрелой, Instr. или с предшествующим Comp.).
+- **RU:** — β〉 пораженный (стрелой, Ins. или с предшествующим Comp.).
   <sub>attested</sub>
 
 **aa-7b-gamma)** — γ〉 ergriffen —, besessen —, befallen —, überwältigt —, in der Gewalt stehend von (Instr. oder im Comp. vorangehend), behaftet mit. *rogāviṣṭa* [ĀPAST. 2,26,16]. Ohne Ergänzung von einem bösen Geiste besessen. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) fehlerhaft für *āveśya*.
 
-- **RU:** — γ〉 охваченный —, одержимый —, поражённый —, побеждённый —, находящийся во власти (Instr. или с предшествующим Comp.), поражённый. *rogāviṣṭa* [ĀPAST. 2,26,16]. Без дополнения одержимый злым духом. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) ошибочно вместо *āveśya*.
+- **RU:** — γ〉 охваченный —, одержимый —, пораженный —, побежденный —, находящийся во власти (Ins. или с предшествующим Comp.), пораженный. *rogāviṣṭa* [ĀPAST. 2,26,16]. Без дополнения одержимый злым духом. — *āviśya* [KATHĀS. 45,6](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,6) ошибочно вм. *āveśya*.
   <sub>attested</sub>
 
 **aa-caus-head)** — Caus.
@@ -370,17 +370,17 @@
 
 **sam-7a)** — a〉 ergriffen —, überwältigt —, erfüllt von (Instr. oder im Comp. vorangehend).
 
-- **RU:** — a〉 охваченный —, побеждённый —, исполненный (Instr. или с предшествующим Comp.).
+- **RU:** — a〉 охваченный —, побежденный —, исполненный (Ins. или с предшествующим Comp.).
   <sub>attested</sub>
 
 **sam-7b)** — b〉 versehen mit (im Comp. vorangehend).
 
-- **RU:** — b〉 снабжённый (с предшествующим Comp.).
+- **RU:** — b〉 снабженный (с предшествующим Comp.).
   <sub>attested</sub>
 
 **sam-7c)** — c〉 unterwiesen in (Instr.) von (Instr.).
 
-- **RU:** — c〉 наставленный в (Instr.) кем-либо (Instr.).
+- **RU:** — c〉 наставленный в (Ins.) кем-либо (Ins.).
   <sub>attested</sub>
 
 **sam-caus-head)** — Caus.
@@ -455,7 +455,7 @@
 
 **nisad-7)** — 7〉 sich mit einem Weibe (Instr.) vermischen.
 
-- **RU:** — 7〉 совокупляться с женщиной (Instr.).
+- **RU:** — 7〉 совокупляться с женщиной (Ins.).
   <sub>attested</sub>
 
 **nisad-8)** — 8〉 sich einer Sache hingeben, obliegen; mit Acc.
@@ -475,7 +475,7 @@
 
 **nisad-9b)** — b〉 *prāyam*, *prāya˚* oder *anaśana˚* sich dem Tode durch Hungern geweiht habend, auf diese Weise ruhig den Tod erwartend. Das einfache *upaviṣṭa* in derselben Bed. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) fehlerhaft für *upaveśya*.
 
-- **RU:** — b〉 *prāyam*, *prāya˚* или *anaśana˚* обрёкший себя на смерть голодом, спокойно ожидая таким образом смерти. Простое *upaviṣṭa* в том же знач. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) ошибочно вместо *upaveśya*.
+- **RU:** — b〉 *prāyam*, *prāya˚* или *anaśana˚* обрекший себя на смерть голодом, спокойно ожидая таким образом смерти. Простое *upaviṣṭa* в том же знач. — *upaviśya* [HARIV. 4568](https://sanskrit-lexicon-scans.github.io/hariv?4568) ошибочно вм. *upaveśya*.
   <sub>attested</sub>
 
 **nisad-caus-head)** — Caus.
@@ -495,7 +495,7 @@
 
 **nisad-caus-3)** — 3〉 Jmd veranlassen per anum von sich zu geben, mit doppeltem Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) fehlerhaft für *upaviśya*.
 
-- **RU:** — 3〉 побуждать кого-либо испражниться, с двойным Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) ошибочно вместо *upaviśya*.
+- **RU:** — 3〉 побуждать кого-либо испражниться, с двойным Acc. [CARAKA. 6,10. 18]. [BHĀVAPR. 4,4]. — *upaveśya* [PAÑCAT. 147,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?147,6) ошибочно вм. *upaviśya*.
   <sub>attested</sub>
 
 **final)** — Mit *adhyupa* sich darauf setzen.

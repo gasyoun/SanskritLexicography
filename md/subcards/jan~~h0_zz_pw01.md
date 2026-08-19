@@ -66,7 +66,7 @@
 — 1〉 geboren werden —, zugleich erscheinen mit (Instr.).
 
 - **RU:** — С *sam*
-— 1〉 родиться —, появиться одновременно с (Instr.).
+— 1〉 родиться —, появиться одновременно с (Ins.).
   <sub>attested</sub>
 
 **Mit T16 — 2〉)** — 2〉 geboren werden, — von (Loc.), erzeugt werden, — von (Abl.), wachsen, entstehen, — aus (Abl.), sich einstellen, zum Vorschein kommen, sich ereignen.

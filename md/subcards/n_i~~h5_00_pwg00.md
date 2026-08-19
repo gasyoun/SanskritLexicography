@@ -27,19 +27,19 @@
   <sub>attested</sub>
 
 **4-am-Ende)** — 4) am Ende, *bhasmasānnītaḥ*
-[MBH. 15,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.951)
+[MBH. 15,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.951) = [≈Вульг. 15.35.13](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U02_A035_S013) = ≈крит. 15,43.13a
 [HARIV. 3662.](https://sanskrit-lexicon-scans.github.io/hariv?3662) [5950.](https://sanskrit-lexicon-scans.github.io/hariv?5950)
 
 - **RU:** — 4) в конце, *bhasmasānnītaḥ*
-[MBH. 15,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.951)
+[MBH. 15,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.951) = [≈Вульг. 15.35.13](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U02_A035_S013) = ≈крит. 15,43.13a
 [HARIV. 3662.](https://sanskrit-lexicon-scans.github.io/hariv?3662) [5950.](https://sanskrit-lexicon-scans.github.io/hariv?5950)
   <sub>attested</sub>
 
 **12-anders-auslegen)** — 12) *anyathā* anders auslegen
 [LA. (II) 91,7.] — Z. 3 vom Schluss, die [ed. Bomb.] liest
-[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) *bhettuṃ* st. *netuṃ* .
+[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) = [≈Вульг. 7.202.66](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A202_S066) = ≈крит. 07,173.54a *bhettuṃ* st. *netuṃ* .
 
 - **RU:** — 12) *anyathā* иначе истолковывать
-[LA. (II) 91,7.] — стк. 3 vom Schluss, die [ed. Bomb.] liest
-[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) *bhettuṃ* вместо *netuṃ* .
+[LA. (II) 91,7.] — стк. 3 vom Schluss, die [Бомбейская ред.] liest
+[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) = [≈Вульг. 7.202.66](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A202_S066) = ≈крит. 07,173.54a *bhettuṃ* вместо *netuṃ* .
   <sub>attested</sub>

@@ -28,6 +28,6 @@
 **3))** [ŚĀṄKH. ŚR. 13,6,1.] — intens. vorwärtsbringen: *śṛṇve vīra ugramugraṃ damāyannanyamanyamatinenīyamānaḥ*
 [ṚV. 6,47,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.16)
 
-- **RU:** [ŚĀṄKH. ŚR. 13,6,1.] — intens. продвигать вперёд: *śṛṇve vīra ugramugraṃ damāyannanyamanyamatinenīyamānaḥ*
+- **RU:** [ŚĀṄKH. ŚR. 13,6,1.] — intens. продвигать вперед: *śṛṇve vīra ugramugraṃ damāyannanyamanyamatinenīyamānaḥ*
 [ṚV. 6,47,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.16)
   <sub>attested</sub>
