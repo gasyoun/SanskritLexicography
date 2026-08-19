@@ -26,7 +26,7 @@ Re-glue — DA
 [BHAG. 14,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,3) *paya usriyāyāmadhattam*
 [ṚV. 1,180,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.03) *tānvāyurātmani dhitvā*
 [ŚAT. BR. 14,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,3,2) *vijñātadoṣeṣu dadhāti daṇḍam* возложить палку на кого-л., так преим. наложить наказание на кого-л.
-[MBH. 5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Вульг. 5.33.105](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A033_S105) = ≈крит. 05,33.86a *daṇḍaṃ ca me dhāsyati*
+[MBH. 5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Вульг. 5.33.105](mbh/5.33.html#v105) = ≈крит. 05,33.86a *daṇḍaṃ ca me dhāsyati*
 [R. 5,28,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,7) *mama vrate te hṛdayaṃ dadhāmi*
 [PĀR. GṚHY. 2,2.] мед.: *daśa te kalaśānāmadhīmahi*
 [ṚV. 4,32,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19) *tvaṃ divo dharuṇaṃ dhiṣa ojasā*
@@ -41,7 +41,7 @@ Re-glue — DA
 [6,29,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05) *dhṛṣṇave dhīyate dhanā*
 [1,81,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03) *prācīnaṃ reto dhīyate* семя вносится сзади наперед
 [TS. 2,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,3) находиться в, содержаться в: *evaṃ sarvamahiṃsāyāṃ dharmārthamapi dhīyate*
-[MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933) = [≈Вульг. 12.250.18](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A250_S018) = ≈крит. 12,242.18a
+[MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933) = [≈Вульг. 12.250.18](mbh/12.250.html#v18) = ≈крит. 12,242.18a
 
 **1)b)** 2) доставить к, принести к (loc.); act.: *imaṃ no yajñamamṛteṣu dhehi*
 
@@ -71,8 +71,8 @@ Re-glue — DA
 
 **2)** — 2) накладывать, прикреплять
 [SUŚR. 1,60,13] (мед.). накладывать стрелу на лук: *pratisaṃdhāya cāstrāṇi te 'nyo'nyasya — yuyudhuḥ*
-[MBH. 6,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3313) = [≈Вульг. 6.76.2](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A076_S002) = ≈крит. 06,72.2c [7,4841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4841) = [≈Вульг. 7.121.36](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A121_S036) = ≈крит. 07,97.34a *paśyataḥ pratisaṃdhāya vidhyataḥ savyasācinaḥ*
-[4,2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2081) = [≈Вульг. 4.64.46](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A064_S046) = ≈крит. 04,59.41a
+[MBH. 6,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3313) = [≈Вульг. 6.76.2](mbh/6.76.html#v2) = ≈крит. 06,72.2c [7,4841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4841) = [≈Вульг. 7.121.36](mbh/7.121.html#v36) = ≈крит. 07,97.34a *paśyataḥ pratisaṃdhāya vidhyataḥ savyasācinaḥ*
+[4,2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2081) = [≈Вульг. 4.64.46](mbh/4.64.html#v46) = ≈крит. 04,59.41a
   — ＋ PW доставлять, переносить к (Loc.) *āre* уносить далеко прочь [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Большей частью Act.
   — ＋ PW 2〉 Дрова подкладывать (в огонь) [37,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [38,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?38).
   — ＋ PW ~~(cancels PWG)~~ — 2〉 *_m._ эпит.
@@ -80,8 +80,8 @@ Re-glue — DA
   — ＋ PW — b〉 Брихаспатиʼs.
 
 **3)** — 3) направлять на, против: *manyustasya kathaṃ śāmyenmāṃ caiva pratisaṃhitaḥ*
-[MBH. 3,1926.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1926) = [≈Вульг. 3.48.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A048_S012) = ≈крит. 03,46.12c *maṅgalaiḥ stutibhiśca vijayapratisaṃhitaiḥ . cāraṇaiḥ stūyamānau*
-[1,7655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7655) = [≈Вульг. 1.207.45](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A207_S045) = ≈крит. 01,199.44a
+[MBH. 3,1926.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1926) = [≈Вульг. 3.48.12](mbh/3.48.html#v12) = ≈крит. 03,46.12c *maṅgalaiḥ stutibhiśca vijayapratisaṃhitaiḥ . cāraṇaiḥ stūyamānau*
+[1,7655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7655) = [≈Вульг. 1.207.45](mbh/1.207.html#v45) = ≈крит. 01,199.44a
   — → PW переносить кого-либо в место или в состояние, помогать достичь, приводить в или к (Loc. или Dat.) [ṚV. 2,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09) [ṚV. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.017.html#rv04.017.07). Большей частью Act.
   — ≈ PW 3〉 Ставить (в игре).
   — → PW — 3〉 _f._ на конце Comp. Nom. act. от **1.** *dhā*.
@@ -103,8 +103,8 @@ Re-glue — DA
   — ＋ PW 5〉 Med. хранить.
 
 **6)** — 6) обманывать кого-либо, вводить в заблуждение: *anyo 'nyamabhisaṃdhātum*
-[MBH. 12,5116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5116) = [≈Вульг. 12.139.36](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A139_S036) = ≈крит. 12,137.32c *prājño 'bhisaṃdhatte samyagbuddhisamāśrayāt* там же *abhisaṃdhīyate prājñaḥ pramādādapi budhaiḥ*
-[5119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5119) = [≈Вульг. 12.139.39](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A139_S039) = ≈крит. 12,137.35a v. l. für *atisaṃ˚*
+[MBH. 12,5116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5116) = [≈Вульг. 12.139.36](mbh/12.139.html#v36) = ≈крит. 12,137.32c *prājño 'bhisaṃdhatte samyagbuddhisamāśrayāt* там же *abhisaṃdhīyate prājñaḥ pramādādapi budhaiḥ*
+[5119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5119) = [≈Вульг. 12.139.39](mbh/12.139.html#v39) = ≈крит. 12,137.35a v. l. für *atisaṃ˚*
 [ŚĀK. 32,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,6) [69,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,23) *janaṃ vidvānekaḥ sakalamabhisaṃdhāya kapaṭaiḥ*
 [MĀLAT. 7,9.]
   — ＋ PW устанавливать, определять, предписывать, constituere.
@@ -140,8 +140,8 @@ Re-glue — DA
 
 **9)** — 9) *abhisaṃhita* am Ende eines comp. связанный с, находящийся в отношении к: *vākyaṃ ghorābhisaṃhitam* so преим. содержащий
 [R. 1,58,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,8) *vāyasastveṣa me rājannanu kāryābhisaṃhitaḥ* возможно so преим. знакомый с
-[MBH. 12,3087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3087) = [≈Вульг. 12.82.61](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A082_S061) = ≈крит. 12,83.60a *hīne paramake dharme sarvalokābhisaṃhite* (zu *upajīvane* zu ziehen) *. sarvasmindasyusādbhūte pṛthivyāmupajīvane ..* wohl so преим. предназначенный для
-[4793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4793) = [≈Вульг. 12.134.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A134_S012) = ≈крит. 12,132.11a
+[MBH. 12,3087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3087) = [≈Вульг. 12.82.61](mbh/12.82.html#v61) = ≈крит. 12,83.60a *hīne paramake dharme sarvalokābhisaṃhite* (zu *upajīvane* zu ziehen) *. sarvasmindasyusādbhūte pṛthivyāmupajīvane ..* wohl so преим. предназначенный для
+[4793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4793) = [≈Вульг. 12.134.12](mbh/12.134.html#v12) = ≈крит. 12,132.11a
   — ＋ PW держать (в руке), схватывать, нести, носить в себе (плод чрева).
   — ＋ PW 9〉 Употреблять для, применять при (Loc.).
   — ʰ PW — 9〉 *upahita*
@@ -150,7 +150,7 @@ Re-glue — DA
   — ＋ PW — c〉 соблазненный, введенный в заблуждение или обманутый.
 
 **10)** — 10) пользоваться чем-либо (instr.): *tasmādbalaśca koṣaṃ ca* (lies: *balaṃ ca koṣaśca) nītiścāpi vidhīyatām . yathā kālodaye prāpte samyaktaiḥ saṃdadhāmahe* (sic) *..*
-[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964) = [≈Вульг. 4.29.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A029_S008) = ≈крит. 04,28.8a
+[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964) = [≈Вульг. 4.29.8](mbh/4.29.html#v8) = ≈крит. 04,28.8a
   — ＋ PW носить одежду, украшение, цветок.
   — ＋ PW 10〉 Med. схватывать, брать [Spr. 7735](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7735).
 
@@ -167,7 +167,7 @@ Re-glue — DA
 
 **13)** — 13) *vihita* снабженный чем-либо, обладающий: *annapānaiḥ suvihitāḥ*
 [R. 1,13,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,16) *sarvakāmaiḥ suvihitā*
-[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S018) = ≈крит. 03,66.16c *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделенный всем
+[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](mbh/3.69.html#v18) = ≈крит. 03,66.16c *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделенный всем
 [R. 1,69,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,2)
   — ＋ PW присваивать себе, принимать, так преим. обнаруживать в себе, проявлять, навлекать на себя, иметь при себе, обладать, утверждать.
   — ＋ PW 13〉 Принимать в себя или вбирать в себя; учение принимать (будд.), обет брать на себя, — давать (*āhita* данный), душевному состоянию предаваться. В порядке исключения Act.
@@ -209,11 +209,11 @@ Re-glue — DA
 * cāntarhitaḥ*
 [BHĀG. P. 1,3,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,36) *pādapāntarhita*
 [ŚĀK. 9,18](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?9,18), v. l. *mayā te 'ntarhitaṃ rūpam*
-[MBH. 3,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2621) = [≈Вульг. 3.66.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S014) = ≈крит. 03,63.13a [4,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1684) = [≈Вульг. 4.54.25](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A054_S025) = крит. — *ya udārā antarhitāḥ*
+[MBH. 3,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2621) = [≈Вульг. 3.66.14](mbh/3.66.html#v14) = ≈крит. 03,63.13a [4,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1684) = [≈Вульг. 4.54.25](mbh/4.54.html#v25) = крит. — *ya udārā antarhitāḥ*
 [AV. 11,9,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.009.html#av11.009.16)
 [ŚAT. BR. 13,8,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,2,1) *siṃhau bhūtvā punarvyāghrau punaścāntarhitāvubhau*
 [SUND. 2,21.]
-[MBH. 1,119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.119) = [≈Вульг. 1.1.165](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S165) = крит. — [4710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4710) = [≈Вульг. 1.121.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A121_S032) = ≈крит. 01,112.29a [3,2496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2496) = [≈Вульг. 3.64.96](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S096) = ≈крит. 03,61.91a [2634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2634) = [≈Вульг. 3.67.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A067_S001) = ≈крит. 03,64.1a [2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2699) = [≈Вульг. 3.69.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S006) = ≈крит. 03,66.5e [4,450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.450) = [≈Вульг. 4.15.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A015_S020) = ≈крит. 04,14.20a [5,7266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7266) = [≈Вульг. 5.183.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A183_S019) = ≈крит. 05,184.18a
+[MBH. 1,119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.119) = [≈Вульг. 1.1.165](mbh/1.1.html#v165) = крит. — [4710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4710) = [≈Вульг. 1.121.32](mbh/1.121.html#v32) = ≈крит. 01,112.29a [3,2496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2496) = [≈Вульг. 3.64.96](mbh/3.64.html#v96) = ≈крит. 03,61.91a [2634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2634) = [≈Вульг. 3.67.1](mbh/3.67.html#v1) = ≈крит. 03,64.1a [2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2699) = [≈Вульг. 3.69.6](mbh/3.69.html#v6) = ≈крит. 03,66.5e [4,450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.450) = [≈Вульг. 4.15.20](mbh/4.15.html#v20) = ≈крит. 04,14.20a [5,7266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7266) = [≈Вульг. 5.183.19](mbh/5.183.html#v19) = ≈крит. 05,184.18a
 [R. 3,15,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,17)
 [RAGH. 13,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,40)
 [BHĀG. P. 1,16,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,24) С abl. скрытый от, недоступный чьему-л. взору
@@ -237,7 +237,7 @@ Re-glue — DA
 **caus-2)** — 2) окружать, облекать чем-л. (instr.): *yena devaṃ savitāraṃ pari devā adhāpayan* (так надлежит восстановить чтение)
 [AV. 19,24,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.024.html#av19.024.01) *indrasya tvā varmaṇā pari dhāpayāmaḥ*
 [46,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.046.html#av19.046.04) [12,3,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.51) — desid. быть намерен надеть на себя: *kṛṣṇājināni paridhitsamānān*
-[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A029_S045) = ≈крит. 05,29.38a
+[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](mbh/5.29.html#v45) = ≈крит. 05,29.38a
 
 **caus./desid.)** — ср. *ādhāna, ādhāyaka*,
 1. *ādhi*, *ādheya, āhiti*.
@@ -245,7 +245,7 @@ Re-glue — DA
 — caus. велеть посадить: *ādhāpayati*
 [KAUŚ. 75.] — desid. желать наложить: *agnim*
 [TBR. 1,1,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,2,2) желать дать —, передать: *daṇḍamādhitsatā*
-[MBH. 12,3170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3170) = [≈Вульг. 12.83.46](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A083_S046) = ≈крит. 12,84.43a
+[MBH. 12,3170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3170) = [≈Вульг. 12.83.46](mbh/12.83.html#v46) = ≈крит. 12,84.43a
 
 **des-1)** 1) намереваться даровать: *anāmarūpātmani rūpanāmanī vidhitmamānaḥ*
 [BHĀG. P. 1,10,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,22)
@@ -256,17 +256,17 @@ Re-glue — DA
 [66.]
 
 **des-3)** — 3) намереваться совершить и т.д., иметь намерение: *so 'haṃ naivākṛtaṃ pūrvaṃ careyaṃ vidhitsamānaḥ kimu tatra sādhu*
-[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) = [≈Вульг. 1.92.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A092_S013) = ≈крит. 01,87.12a *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
+[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) = [≈Вульг. 1.92.13](mbh/1.92.html#v13) = ≈крит. 01,87.12a *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
 [HARIV. 1311.](https://sanskrit-lexicon-scans.github.io/hariv?1311) *vairasyāntaṃ vidhitsan*
 [6460.](https://sanskrit-lexicon-scans.github.io/hariv?6460) *bhagavāṃstadvidhitsati*
 [BHĀG. P. 3,16,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,35) *vidhitsita* _n._ намерение
 [1,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,16) *vidhitsamāna* имеющий определенные намерения, преследующий определенные цели
-[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) = [≈Вульг. 3.212.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A212_S006) = ≈крит. 03,203.6c *ka upāyaṃ vidhitset* so преим. кто бы стал думать уже и о средстве?
+[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) = [≈Вульг. 3.212.6](mbh/3.212.html#v6) = ≈крит. 03,203.6c *ka upāyaṃ vidhitset* so преим. кто бы стал думать уже и о средстве?
 [BHĀG. P. 4,6,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,7) *ātmānamapratidvandvamekarājaṃ vyadhitsata* он думал о том, чтобы стать единовластным правителем
 [7,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,1)
 
 **desid)** — ср. *samādhā* сл. — desid. желать побудить кого-либо (acc.) к тому, чтобы он сосредоточился: *ātmānamasamādhāya samādhitsati yaḥ parān*
-[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Вульг. 12.270.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S029) = ≈крит. 12,262.27a
+[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Вульг. 12.270.29](mbh/12.270.html#v29) = ≈крит. 12,262.27a
 
 **desid-intro)** — desid.
 
@@ -276,8 +276,8 @@ Re-glue — DA
 **intro)** — *upasam*
 
 **main)** — *prasam* накладывать (стрелу на лук): *prasaṃdhāya śilīmukham . preṣayāmāsa samare paṇḍitaṃ prati*
-[MBH. 6,3910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3910) = [≈Вульг. 6.88.24](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A088_S024) = ≈крит. 06,84.23a [5487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5487) = [≈Вульг. 6.117.36](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A117_S036) = ≈крит. 06,112.112a *prasaṃdadhe śitaṃ vāṇam*
-[4185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4185) = [≈Вульг. 6.93.36](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A093_S036) = ≈крит. 06,89.34a
+[MBH. 6,3910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3910) = [≈Вульг. 6.88.24](mbh/6.88.html#v24) = ≈крит. 06,84.23a [5487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5487) = [≈Вульг. 6.117.36](mbh/6.117.html#v36) = ≈крит. 06,112.112a *prasaṃdadhe śitaṃ vāṇam*
+[4185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4185) = [≈Вульг. 6.93.36](mbh/6.93.html#v36) = ≈крит. 06,89.34a
 
 **note-confusion)** — ср. *paridhāna* сл. Смешения с *paridā* встречаются там и сям,
 напр. [AV. 6,55,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.055.html#av06.055.01) (тогда как
@@ -405,7 +405,7 @@ Re-glue — DA
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] подносить, вручать кому-либо (Dat.), жаловать кому-либо (Loc.) [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a. Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стесненный в своей деятельности.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) = [≈Вульг. 12.9.4](mbh/12.9.html#v4) = ≈крит. 12,9.4a [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19) = [≈Вульг. 12.9.4](mbh/12.9.html#v4) = ≈крит. 12,9.4a. Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стесненный в своей деятельности.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. велеть покрывать чем-либо (Ins.), велеть закрывать (с двойным Acc.).
 
@@ -507,7 +507,7 @@ Re-glue — DA
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Med. желать разложить (огонь).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Намереваться схватить. *daṇḍam* так преим. приготовляться наказать [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45) = [≈Вульг. 12.3.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A003_S010) = ≈крит. 12,3.10c.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Намереваться схватить. *daṇḍam* так преим. приготовляться наказать [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45) = [≈Вульг. 12.3.10](mbh/12.3.html#v10) = ≈крит. 12,3.10c.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] С *atyā* — ставить впереди, возвышать над. ср. *atyāhita*.
 
@@ -543,7 +543,7 @@ Re-glue — DA
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Прикладывать к (Loc.), ставить на (Loc.). **upāhita* поставленный поверх.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Med. схватывать (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4) = [≈Вульг. 12.1.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A001_S015) = ≈крит. 12,1.15c. *upādāya* беря с собой, с (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Med. схватывать (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4) = [≈Вульг. 12.1.15](mbh/12.1.html#v15) = ≈крит. 12,1.15c. *upādāya* беря с собой, с (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Med. с *ātmani* удерживать при себе.
 
@@ -615,7 +615,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] g〉 допускать, признавать. *samāhita* одобренный; принятый [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392](https://sanskrit-lexicon-scans.github.io/hariv?11392). согласный с (в Comp. предшествующем) [2225](https://sanskrit-lexicon-scans.github.io/hariv?2225).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 11〉 *samāhita* завершившийся, истекший [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31) = [≈Вульг. 1.1.219](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S219) = ≈крит. 01,1.160a.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 11〉 *samāhita* завершившийся, истекший [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31) = [≈Вульг. 1.1.219](mbh/1.1.html#v219) = ≈крит. 01,1.160a.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. (*˚dhitsati*) желать привести кого-либо (Acc.) к тому, чтобы он сосредоточился, — взял себя в руки.
 
@@ -775,7 +775,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 9〉 устремлять все свои мысли —, всё свое внимание на что-либо, обдумывать что-либо (Acc.). Только *praṇīdhāya* и *praṇihita* всецело погруженный во что-либо (Loc.), целиком занятый одним делом, поглощенный одной мыслью (о людях и об уме). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 10〉 выяснять, разузнавать, — что именно; с двойным Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S037) = ≈крит. 07,1.35a. *praṇihita* выясненный, выведенный на свет.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 10〉 выяснять, разузнавать, — что именно; с двойным Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](mbh/7.1.html#v37) = ≈крит. 07,1.35a. *praṇihita* выясненный, выведенный на свет.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *saṃpraṇi* (только *˚dhāya*)
 
@@ -803,7 +803,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 *vinihita, ˚tātman* _Adj._ расходящийся с кем-либо, — не согласующийся [ĀPAST. 11,8,27].
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A083_S040) = ≈крит. 06,79.39a ошибочно вм. *vinihata*.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](mbh/6.83.html#v40) = ≈крит. 06,79.39a ошибочно вм. *vinihata*.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *saṃni*
 
@@ -863,7 +863,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 предаваться чему-либо (Acc.) [LALIT. 499,9]. — *prahita* и *saṃprahita* относятся к *hi*.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A020_S004) = ≈крит. 09,19.4a ошибочно вм. *pradhāvita*.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](mbh/9.20.html#v4) = ≈крит. 09,19.4a ошибочно вм. *pradhāvita*.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] С *prati* — 1〉 приставлять, насаживать, прилагать, вставлять.
 
@@ -899,7 +899,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 проявлять, обнаруживать (душевное состояние, манеру поведения) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 находить, отыскивать (средство) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S030) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 находить, отыскивать (средство) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](mbh/3.2.html#v30) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 создавать, производить, образовывать, основывать, строить, возводить, закладывать, составлять.
 
@@ -909,7 +909,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 11〉 делать чем-либо, reddere; с двойным Acc.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 12〉 с чем-либо или с кем-либо (Acc.) сделать так —, привести к тому, чтобы (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S002) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 12〉 с чем-либо или с кем-либо (Acc.) сделать так —, привести к тому, чтобы (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](mbh/4.2.html#v2) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 13〉 класть на (Loc.), ставить (*agratas, adhas*), вкладывать —, помещать в (Loc.). *hṛdaye*, так преим. запечатлевать в сердце.
 
@@ -919,7 +919,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 16〉 *vihita* снаряженный —, наделенный (Ins.).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S014) = ≈крит. 04,5.13a ошибочно вм. *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] вм. *pi* (*api*).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](mbh/4.5.html#v14) = ≈крит. 04,5.13a ошибочно вм. *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] вм. *pi* (*api*).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. велеть класть. Desid. (*˚dhitsati, ˚dhitsate*) — 1〉 намереваться уделить кому-либо (Loc.).
 
@@ -985,7 +985,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 расставлять, раскладывать (силки); можно было бы ожидать *saṃni*.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A043_S017) = ≈крит. 02,40.16c ошибочно вм. *saṃni*, как читает [Бомбейская ред.].
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](mbh/2.43.html#v17) = ≈крит. 02,40.16c ошибочно вм. *saṃni*, как читает [Бомбейская ред.].
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. поручать кому-либо заботу —, давать кому-либо управлять [KĀD. 2,108,19].
 
@@ -1003,7 +1003,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 Med. сводить вместе, так преим. примирять.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 *договариваться, объединяться —, ладить —, мириться с (Ins., в виде исключения Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A005_S006) = ≈крит. 05,5.6a. В виде исключения Act. *saṃhita* находящийся в дружественных отношениях с (Ins. или *Ins. с *saha*).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 *договариваться, объединяться —, ладить —, мириться с (Ins., в виде исключения Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](mbh/5.5.html#v6) = ≈крит. 05,5.6a. В виде исключения Act. *saṃhita* находящийся в дружественных отношениях с (Ins. или *Ins. с *saha*).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 *впутывать кого-либо в (Loc.).
 
@@ -1015,7 +1015,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 13〉 Med. пользоваться (Ins.).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S010) = ≈крит. 03,255.10a ошибочно вм. *saṃyāya*. К *ātmasaṃhita* [KĀM. NĪTIS. 9,68] ср. коммент.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](mbh/3.271.html#v10) = ≈крит. 03,255.10a ошибочно вм. *saṃyāya*. К *ātmasaṃhita* [KĀM. NĪTIS. 9,68] ср. коммент.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. (*˚dhitsati*) желать составить —, изготовить.
 
@@ -1042,9 +1042,9 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 направлять снаряд на (Dat. или Loc.), целиться —, быть направленным на (о снаряде); mit Acc. *abhisaṃhita* направленный на (Dat.).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S016) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](mbh/9.1.html#v16) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A005_S005) = ≈крит. 12,5.5a.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](mbh/12.5.html#v5) = ≈крит. 12,5.5a.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 заблаговременно договариваться о чем-либо, заранее приходить к соглашению о чем-либо; mit Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (где, по всей видимости, следует соединить *anyo'nyenābhi˚*).
 
@@ -1063,7 +1063,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 намереваться (Acc.).
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A016_S023) = ≈крит. 09,15.23a ошибочно вм. *savamaṃśamabhi˚*.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](mbh/9.16.html#v23) = ≈крит. 09,15.23a ошибочно вм. *savamaṃśamabhi˚*.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upasam*
 — 1〉 прибавлять, присоединять.
@@ -1076,7 +1076,7 @@ a〉 надевать (одежду), принимать (облик).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 иметь перед глазами в качестве цели.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S020) = ≈крит. 04,2.17a.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](mbh/4.2.html#v20) = ≈крит. 04,2.17a.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 *upasaṃhita* преданный, приверженный.
 
@@ -1198,7 +1198,7 @@ a〉 надевать (одежду), принимать (облик).
 
 ## омоним h6
 
-**1)** 1) *vācaṃ tena na saṃdadhyāt* так преим. с тем пусть он не обменивается словами [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A116_S009) = ≈крит. 12,117.9a
+**1)** 1) *vācaṃ tena na saṃdadhyāt* так преим. с тем пусть он не обменивается словами [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](mbh/12.116.html#v9) = ≈крит. 12,117.9a
   — ＋ PWG ‹1_addendum› 1) в конце добавь *samāhitena manasā*
 [Spr. 2796.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2796) *susamāhita* весьма внимательный
 [4541.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4541)
@@ -1223,7 +1223,7 @@ a〉 надевать (одежду), принимать (облик).
   — ʰ PWG ‹3_addendum› — 3) *hṛdayanihitavaira* (Conj.) сокрытый в сердце
 [Spr. 2340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2340) *sunihita* надежно сохраненный
 [5010.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5010)
-  — ʰ PWG ‹3 (addendum)› 3) *adhanenārthakāmena nārthaḥ śakyo vidhitsitum* (так [Бомбейская ред.]) бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги, [MBH. 12,220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.220) = [≈Вульг. 12.8.19](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S019) = ≈крит. 12,8.19a
+  — ʰ PWG ‹3 (addendum)› 3) *adhanenārthakāmena nārthaḥ śakyo vidhitsitum* (так [Бомбейская ред.]) бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги, [MBH. 12,220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.220) = [≈Вульг. 12.8.19](mbh/12.8.html#v19) = ≈крит. 12,8.19a
 
 **4)** — 4) стк. 9 читай назначил ее к —, поставил ее в качестве —.
   — ʰ PWG ‹4_addendum› 4) *tadā ca saṃnidhāsye te yadā tvaṃ māṃ smariṣyasi*
@@ -1233,7 +1233,7 @@ a〉 надевать (одежду), принимать (облик).
 **6)** — 6) *tathaiva rathamāruhya nāpsu caryā vidhīyate* [Spr. 4439.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4439) *vidhāya vairam* начать вражду, объявить кому-л. войну [2811.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2811)
   — ＋ PWG ‹6_addendum› — 6)
 стк. 10. сл. *upahita*
-[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A140_S026) = ≈крит. 12,138.26a означает второстепенное благо; см. выше u. *upahita* .
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](mbh/12.140.html#v26) = ≈крит. 12,138.26a означает второстепенное благо; см. выше u. *upahita* .
   — ＋ PWG ‹6_addendum› — 6) [Бомбейская ред.] верно *vidhātuṃ* . — caus.
   — ＋ PWG ‹6_addendum› — 6)
 стк. 6. сл. ср. *mūlapraṇihita* .
@@ -1249,7 +1249,7 @@ a〉 надевать (одежду), принимать (облик).
   — ʰ PWG ‹8_addendum› 8) удерживать: *(tam) sindhuṃ veleva pratyadhāt (= pratirurodha*
 схол.) [BHĀG. P. 10,78,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,78,3)
 
-**9)** — 9) *jñānābhisaṃhita* так преим. распознан в противоп. к *jñeya* [MBH. 12,7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A207_S006) = ≈крит. 12,200.6a по [NĪLAK.] *jñānaśabdenābhisaṃhitaṃ jñānaśabdābhidheyaṃ brahma* .
+**9)** — 9) *jñānābhisaṃhita* так преим. распознан в противоп. к *jñeya* [MBH. 12,7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](mbh/12.207.html#v6) = ≈крит. 12,200.6a по [NĪLAK.] *jñānaśabdenābhisaṃhitaṃ jñānaśabdābhidheyaṃ brahma* .
 
 **10)** — 10) [NĪLAK.] : *yathā taiḥ saha saṃdadhāmahe śarādisaṃdhānaṃ kurmahe yadvā sakhyaṃ kurmahe*; он упоминает также чтение *teṣāṃ vidhīyate* вместо *taiḥ saṃdadhāmahe* .
   — ʰ PWG ‹10_addendum› — 10)
@@ -1297,7 +1297,7 @@ a〉 надевать (одежду), принимать (облик).
 [9,99,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.099.html#rv09.099.03) [VS. 8,51.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,51) [19,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,11) [17,87.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,87) [ŚAT. BR. 12,9,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,2,11) [KAUŚ. 93.] *yajñasya rasaṃ dhītvā*
 [ŚAT. BR. 1,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,1)
 [AIT. BR. 3,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,18) *kamayaṃ dhāsyati, māmevāyaṃ dhayatu, māṃ dhāsyati* (к пояснение имени *māṃdhātar*)
-[MBH. 7,2276. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2276) = [≈Вульг. 7.62.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A062_S005) = ≈крит. 12,29.76c [3,10452. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10452) = [≈Вульг. 3.124.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A124_S021) = ≈крит. 03,124.20c [12,976. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.976) = [≈Вульг. 12.29.83](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A029_S083) = ≈крит. 12,29.76a
+[MBH. 7,2276. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2276) = [≈Вульг. 7.62.5](mbh/7.62.html#v5) = ≈крит. 12,29.76c [3,10452. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10452) = [≈Вульг. 3.124.21](mbh/3.124.html#v21) = ≈крит. 03,124.20c [12,976. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.976) = [≈Вульг. 12.29.83](mbh/12.29.html#v83) = ≈крит. 12,29.76a
 [BHĀG. P. 9,6,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,31) *bālam — dhayantaṃ svakarāṅgulīḥ*
 [RĀJA-TAR. 5,75.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,75) *dhayatyānanam*
 [GĪT. 12,16.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,16) *na vārayedgāṃ dhayantīm*
@@ -1350,7 +1350,7 @@ a〉 надевать (одежду), принимать (облик).
 
 ## омоним h8
 
-**main)** 3. *dhā*, *dhātuṃ teṣāṃ somam* [MBH. 3,14282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14282) = [≈Вульг. 3.224.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A224_S026) = ≈крит. 03,213.37e
+**main)** 3. *dhā*, *dhātuṃ teṣāṃ somam* [MBH. 3,14282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14282) = [≈Вульг. 3.224.26](mbh/3.224.html#v26) = ≈крит. 03,213.37e
 
 ## омоним h9
 

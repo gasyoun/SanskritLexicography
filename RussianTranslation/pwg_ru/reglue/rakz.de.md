@@ -6,9 +6,9 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 
 **1)** — *prati*
  1) behüten, beschützen: *yadi śūrastathā kṣeme* (*kṣemaṃ* [ed. Bomb.]) *pratirakṣedyathā bhaye*
-[MBH. 12,3596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3596) = [≈Вульг. 12.97.16](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A097_S016) = ≈крит. 12,98.16a *viśvā āśāḥ prati rakṣantyeke*
+[MBH. 12,3596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3596) = [≈Вульг. 12.97.16](mbh/12.97.html#v16) = ≈крит. 12,98.16a *viśvā āśāḥ prati rakṣantyeke*
 [AV. 10,8,36.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.36) *satyāṃ* (so die [ed. Bomb.]) *pratijñāṃ tāṃ pārthena pratirakṣatā* treu haltend
-[MBH. 8,3542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3542) = [≈Вульг. 8.70.44](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A070_S044) = ≈крит. 08,49.103a
+[MBH. 8,3542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3542) = [≈Вульг. 8.70.44](mbh/8.70.html#v44) = ≈крит. 08,49.103a
 
 **2)** — 2) fürchten, sich retten vor: *pratirakṣannasuryam*
 [VS. 8,24.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,24)
@@ -19,33 +19,33 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [2,13,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.013.html#av02.013.01) [3,12,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.08) [ŚAT. BR. 2,3,4,40.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,40) [ĀŚV. ŚR. 2,5,2. 12.] [KAUŚ. 135.] [CHĀND. UP. 4,17,10.] *bhīṣmamevābhirakṣantu*
 [BHAG. 1,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,11) *daṇḍaḥ śāsti prajāḥ sarvā daṇḍa evābhirakṣati*
 [Spr. 4162.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4162) [4920.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4920)
-[MBH. 4,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1535) = [≈Вульг. 4.49.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A049_S005) = ≈крит. 04,44.5a [5,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.711) = [≈Вульг. 5.23.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S027) = ≈крит. 05,23.26a [6,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.543) = [≈Вульг. 6.14.36](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S036) = ≈крит. 06,15.32a
+[MBH. 4,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1535) = [≈Вульг. 4.49.5](mbh/4.49.html#v5) = ≈крит. 04,44.5a [5,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.711) = [≈Вульг. 5.23.27](mbh/5.23.html#v27) = ≈крит. 05,23.26a [6,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.543) = [≈Вульг. 6.14.36](mbh/6.14.html#v36) = ≈крит. 06,15.32a
 [HARIV. 2471.](https://sanskrit-lexicon-scans.github.io/hariv?2471) [7115.](https://sanskrit-lexicon-scans.github.io/hariv?7115)
 [R. 2,25,3. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,3) *dhātrī svaputravatskandaṃ śūlahastābhyarakṣata*
-[MBH. 3,14365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14365) = [≈Вульг. 3.226.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A226_S024) = ≈крит. 03,215.18c [6,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.544) = [≈Вульг. 6.14.37](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S037) = ≈крит. 06,15.33c [13,2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2265) = [≈Вульг. 13.40.19](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S019) = ≈крит. 13,40.18c *uparyantaḥpure sā* (*kanyakā*) *ca ratnamityabhirakṣyate*
+[MBH. 3,14365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14365) = [≈Вульг. 3.226.24](mbh/3.226.html#v24) = ≈крит. 03,215.18c [6,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.544) = [≈Вульг. 6.14.37](mbh/6.14.html#v37) = ≈крит. 06,15.33c [13,2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2265) = [≈Вульг. 13.40.19](mbh/13.40.html#v19) = ≈крит. 13,40.18c *uparyantaḥpure sā* (*kanyakā*) *ca ratnamityabhirakṣyate*
 [KATHĀS. 3,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,58) [78,131.](https://sanskrit-lexicon-scans.github.io/kss/index.html?78,131) *balaṃ bhīṣmābhirakṣitam* so v. a. befehligt
 [BHAG. 1,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,10)
 [MBH. 4,425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.425)
 [R. 2,2,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,2,4) [25,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,6) [52,77.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,77)
 [R. GORR. 1,35,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,35,30) [2,27,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,27,24) [5,43,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,43,4) [73,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,34) *adharmāttvabhirakṣa mām*
-[MBH. 7,2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2081) = [≈Вульг. 7.54.9](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A054_S009) = крит. — *evaṃ bahubhyaḥ śatrubhyaḥ prajñayātmābhirakṣitaḥ*
+[MBH. 7,2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2081) = [≈Вульг. 7.54.9](mbh/7.54.html#v9) = крит. — *evaṃ bahubhyaḥ śatrubhyaḥ prajñayātmābhirakṣitaḥ*
 [KATHĀS. 33,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,130)
 [BHĀG. P. 1,18,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,24) *tābhyaḥ striyo 'bhirakṣyāḥ*
 [VARĀH. BṚH. S. 78,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?78,10) *yena vīraḥ kurukṣetramabhyarakṣat*
-[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) = [≈Вульг. 4.5.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S020) = ≈крит. 04,5.18c *yaḥ kṛtsnāmaṭavīmetāṃ paryantastho 'bhirakṣati*
+[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) = [≈Вульг. 4.5.20](mbh/4.5.html#v20) = ≈крит. 04,5.18c *yaḥ kṛtsnāmaṭavīmetāṃ paryantastho 'bhirakṣati*
 [KATHĀS. 29,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,135) [115,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?115,10) *svagṛhaṃ taṃ kālaṃ so 'bhyarakṣata*
-[MBH. 13,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2306) = [≈Вульг. 13.40.60](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S060) = ≈крит. 13,40.59a
+[MBH. 13,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2306) = [≈Вульг. 13.40.60](mbh/13.40.html#v60) = ≈крит. 13,40.59a
 [HARIV. 8999.](https://sanskrit-lexicon-scans.github.io/hariv?8999) *vasuṃdharām — bāhuvīryābhirakṣitām*
 [R. 2,88,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,18) *ṛṣyamūkaḥ — śiśunāgābhirakṣitaḥ*
 [3,76,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,76,28) [KATHĀS. 39,28.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,28) *sattvamindro 'bhirakṣatu*
 [SUŚR. 1,17,5.] *prāṇā yanme 'bhirakṣitāḥ*
 [BHĀG. P. 9,5,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,17) *ye 'bhyarakṣanpurātanīṃ tasya devasya sṛṣṭim*
-[MBH. 13,1375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1375) = [≈Вульг. 13.18.78](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S078) = ≈крит. 13,18.54a *yo graha ivārthamabhirakṣati*
+[MBH. 13,1375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1375) = [≈Вульг. 13.18.78](mbh/13.18.html#v78) = ≈крит. 13,18.54a *yo graha ivārthamabhirakṣati*
 [BHĀG. P. 5,26,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,36) *eṣa kalpataruḥ kasya kṛte 'mogho 'bhirakṣyate* gehegt —, gepflegt werden
 [KATHĀS. 90,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?90,21) *yathā bījāṅkuraḥ sūkṣmaḥ paripuṣṭo 'bhirakṣitaḥ*
 [Spr. 2316.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2316) *ākāramabhirakṣeta* bewahre
-[MBH. 1,5616.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5616) = [≈Вульг. 1.140.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S027) = крит. — [2,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2183) = [≈Вульг. 2.65.44](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S044) = ≈крит. 02,58.42a *ākāramabhirakṣantī pratijñāṃ dharmasaṃhitām*
-[4,472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.472) = [≈Вульг. 4.16.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S021) = ≈крит. 04,15.14c *vratāni* beobachten
+[MBH. 1,5616.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5616) = [≈Вульг. 1.140.27](mbh/1.140.html#v27) = крит. — [2,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2183) = [≈Вульг. 2.65.44](mbh/2.65.html#v44) = ≈крит. 02,58.42a *ākāramabhirakṣantī pratijñāṃ dharmasaṃhitām*
+[4,472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.472) = [≈Вульг. 4.16.21](mbh/4.16.html#v21) = ≈крит. 04,15.14c *vratāni* beobachten
 [ṚV. 4,53,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.053.html#rv04.053.04) [7,83,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.09) [9,73,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.073.html#rv09.073.03)
 — Vgl. *abhirakṣitar* .
 
@@ -54,11 +54,11 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 
 **anu+rakṣ)** — *anu* hütend nachgehen
 [ŚĀṄKH. ŚR. 16,10,11.] *ke pṛṣṭhato 'nvarakṣanta* (*pṛṣṭhataścāpyabhavan* [ed. Bomb.])
-[MBH. 7,7330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7330) = [≈Вульг. 7.163.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A163_S038) = ≈крит. 07,138.34c behüten, beschützen; med.
+[MBH. 7,7330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7330) = [≈Вульг. 7.163.38](mbh/7.163.html#v38) = ≈крит. 07,138.34c behüten, beschützen; med.
 [R. 6,103,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,2)
 
 **ava+rakṣ)** — *ava* scheinbar in der Stelle: *ramante copahāsena puruṣāḥ puruṣaiḥ saha *|* anyo'nyamavarakṣanto deśe deśe samaithunāḥ *||
-[MBH. 8,2115](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2115) = [≈Вульг. 8.45.45](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S045) = ≈крит. 04,27.13c, wo aber wohl *avakṣaranto* begiessend, besudelnd (mit Samen) zu lesen ist. Der bei der Umstellung erscheinende seltene Fuss – ⏑ – – mag zur Erhaltung des einfachen Schreibfehlers beigetragen haben.
+[MBH. 8,2115](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2115) = [≈Вульг. 8.45.45](mbh/8.45.html#v45) = ≈крит. 04,27.13c, wo aber wohl *avakṣaranto* begiessend, besudelnd (mit Samen) zu lesen ist. Der bei der Umstellung erscheinende seltene Fuss – ⏑ – – mag zur Erhaltung des einfachen Schreibfehlers beigetragen haben.
 
 **caus.)** — caus. *rakṣayati, ararakṣat*
 [P. 7,4,93](https://ashtadhyayi.com/sutraani/7/4/93), Sch.
@@ -67,8 +67,8 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 [Spr. 1367.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1367)
 
 **desid.)** — desid. *rirakṣiṣati* zu beschützen beabsichtigen vor (abl.): *rirakṣiṣantaḥ*
-[MBH. 5,2368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2368) = [≈Вульг. 5.60.10](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A060_S010) = ≈крит. 05,59.10c [6,3760](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3760) = [≈Вульг. 6.85.10](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A085_S010) = ≈крит. 06,81.9c (*rira˚* zu lesen).
-[4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4695) = [≈Вульг. 6.103.14](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A103_S014) = ≈крит. 06,99.14a
+[MBH. 5,2368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2368) = [≈Вульг. 5.60.10](mbh/5.60.html#v10) = ≈крит. 05,59.10c [6,3760](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3760) = [≈Вульг. 6.85.10](mbh/6.85.html#v10) = ≈крит. 06,81.9c (*rira˚* zu lesen).
+[4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4695) = [≈Вульг. 6.103.14](mbh/6.103.html#v14) = ≈крит. 06,99.14a
 
 **intens.)** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* der fleissig gehütet —, beobachtet wird
 [ṚV. 4,3,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.14) fleissig hütend
@@ -77,17 +77,17 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 **pari+rakṣ — основная форма)** — *pari* bewachen, bewahren, beschützen, hüten, behüten, in Acht nehmen, erhalten, erretten, servare: *ghraṃsaṃ rakṣantaṃ pari viśvato gayam*
 [ṚV. 5,44,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.044.html#rv05.044.07) *jighatsubhya imaṃ me pari rakṣata*
 [AV. 8,2,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.20) *parirakṣedimāḥ prajāḥ* (*rājā*)
-[M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) [MBH. 3,528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.528) = [≈Вульг. 3.12.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S068) = ≈крит. 03,13.60a [15708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15708) = [≈Вульг. 3.270.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S014) = ≈крит. 03,254.14c [R. GORR. 2,50,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,5)
+[M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) [MBH. 3,528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.528) = [≈Вульг. 3.12.68](mbh/3.12.html#v68) = ≈крит. 03,13.60a [15708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15708) = [≈Вульг. 3.270.14](mbh/3.270.html#v14) = ≈крит. 03,254.14c [R. GORR. 2,50,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,5)
 
 *tāṃ kanyāṃ vāsukiḥ paryarakṣata*
-[MBH. 1,1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1642) = [≈Вульг. 1.40.19](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A040_S019) = ≈крит. 01,36.16c [1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1940) = [≈Вульг. 1.49.8](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A049_S008) = ≈крит. 01,45.7a [2948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2948) = [≈Вульг. 1.72.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A072_S012) = ≈крит. 01,66.10c [3,14366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14366) = [≈Вульг. 3.226.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A226_S025) = ≈крит. 03,215.19a [7,3661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3661)
+[MBH. 1,1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1642) = [≈Вульг. 1.40.19](mbh/1.40.html#v19) = ≈крит. 01,36.16c [1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1940) = [≈Вульг. 1.49.8](mbh/1.49.html#v8) = ≈крит. 01,45.7a [2948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2948) = [≈Вульг. 1.72.12](mbh/1.72.html#v12) = ≈крит. 01,66.10c [3,14366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14366) = [≈Вульг. 3.226.25](mbh/3.226.html#v25) = ≈крит. 03,215.19a [7,3661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3661)
 [HARIV. 9085.](https://sanskrit-lexicon-scans.github.io/hariv?9085) [9690.](https://sanskrit-lexicon-scans.github.io/hariv?9690) *parirakṣyamāṇa*
 [BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21) *parirakṣita*
-[24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [9,9,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,40) [MBH. 5,6035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6035) = [≈Вульг. 5.176.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S012) = ≈крит. 05,174.11c *yoṣitaḥ parirakṣitum* hüten
+[24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [9,9,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,40) [MBH. 5,6035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6035) = [≈Вульг. 5.176.12](mbh/5.176.html#v12) = ≈крит. 05,174.11c *yoṣitaḥ parirakṣitum* hüten
 [M. 9,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,10) *apānaṃ te parjanyaḥ parirakṣatu*
 [SUŚR. 1,17,2.] *tadidaṃ parirakṣa vapuḥ*
 [KUMĀRAS. 4,44.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,44) *ātmānaṃ parirakṣasva*
-[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) = [≈Вульг. 1.157.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S038) = ≈крит. 01,145.37c *śakyastenānumānena paro 'pi parirakṣitum* erhalten —, gerettet werden
+[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) = [≈Вульг. 1.157.38](mbh/1.157.html#v38) = ≈крит. 01,145.37c *śakyastenānumānena paro 'pi parirakṣitum* erhalten —, gerettet werden
 [Spr. 2129.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2129) *parirakṣa asmadīyaprāṇān*
 [PAÑCAT. ed. orn. 58,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?58,12) *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
 [R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* gerettet
@@ -95,11 +95,11 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 [R. GORR. 2,109,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,49) [HARIV. 733.](https://sanskrit-lexicon-scans.github.io/hariv?733) [3714.](https://sanskrit-lexicon-scans.github.io/hariv?3714) [Spr. 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) [BHĀG. P. 5,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,17) *madbhujaparirakṣite 'sminvane*
 [PAÑCAT. 30,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?30,24) [215,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,7) *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* schont
 [R. 6,4,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,27) *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
-[MBH. 6,4062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4062) = [≈Вульг. 6.90.92](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A090_S092) = ≈крит. 06,86.85a schonen, vor Berührung behüten
+[MBH. 6,4062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4062) = [≈Вульг. 6.90.92](mbh/6.90.html#v92) = ≈крит. 06,86.85a schonen, vor Berührung behüten
 [SUŚR. 1,98,16.] *śiṣṭaṃ māṃsam — kākebhyaḥ paryarakṣata* aufbewahren
 [R. 2,96,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,38) ([105,37](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,37) [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
 [5,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,7) *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
-[MBH. 13,4886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4886) = [≈Вульг. 13.102.44](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A102_S044) = ≈крит. 13,105.44a *svadharmaṃ parirakṣatā* treu bewahrend
+[MBH. 13,4886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4886) = [≈Вульг. 13.102.44](mbh/13.102.html#v44) = ≈крит. 13,105.44a *svadharmaṃ parirakṣatā* treu bewahrend
 [R. 4,24,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,10) [5,51,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,51,13) *pratijñām*
 [R. GORR. 2,50,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,8) *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* so v. a. bedacht auf
 [HARIV. 6811.](https://sanskrit-lexicon-scans.github.io/hariv?6811) vermeiden
@@ -115,9 +115,9 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 [R. 7,104,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,104,3)
 
 **sam (1))** — *sam* bewachen, bewahren, beschützen, hüten, behüten, erhalten, erretten, servare: *saṃrakṣato munigaṇānnighnato rākṣasānmama*
-[R. 3,10,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,25) [7,108,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,27) [Spr. 1828.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1828) [Verz. d. Oxf. H. 257,a, N.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?257) [Verz. d. Oxf. H. 3.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?3) *saṃrakṣyamāṇo rājñā*
+[R. 3,10,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,25) [7,108,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,27) [Spr. 1828.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1828) [Verz. d. Oxf. H. 257,a, N. 3.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?257) *saṃrakṣyamāṇo rājñā*
 [M. 7,136.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,136)
-[MBH. 7,230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.230) = [≈Вульг. 7.8.11](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A008_S011) = ≈крит. 07,7.11a [6059.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6059) = [≈Вульг. 7.145.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A145_S005) = ≈крит. 07,120.4a
+[MBH. 7,230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.230) = [≈Вульг. 7.8.11](mbh/7.8.html#v11) = ≈крит. 07,7.11a [6059.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6059) = [≈Вульг. 7.145.5](mbh/7.145.html#v5) = ≈крит. 07,120.4a
 [R. 5,19,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,19,33)
 [KATHĀS. 20,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,87)
 [RĀJA-TAR. 3,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,39) *saṃrakṣita*
@@ -132,12 +132,12 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 [RĀJA-TAR. 5,218.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,218) *anidra eva ṣaḍrātraṃ sa saṃrakṣanmuneḥ kratum*
 [R. GORR. 1,33,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,33,6) *madhuvanaṃ saṃrakṣa tvam*
 [5,63,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,27) *dharmaṃ saṃrakṣate daṇḍastathaivārthaṃ janādhipa . kāmaṃ saṃrakṣate daṇḍaḥ*
-[MBH. 12,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.426) = [≈Вульг. 12.15.3](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A015_S003) = ≈крит. 12,15.3c *vṛttaṃ yatnena saṃrakṣet*
+[MBH. 12,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.426) = [≈Вульг. 12.15.3](mbh/12.15.html#v3) = ≈крит. 12,15.3c *vṛttaṃ yatnena saṃrakṣet*
 [Spr. 5030.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5030) *saṃrakṣenmantrabījam*
 [KĀM. NĪTIS. 11,53.] *mantraṃ saṃrakṣet*
 [64.] *daṃpatyoḥ saṃrakṣatorgauravam* bewahren
 [Spr. 530.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?530) *ātmanaśca pareṣāṃ ca vṛttiṃ saṃrakṣa* sichre
-[MBH. 13,3080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3080) = [≈Вульг. 13.61.17](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S017) = ≈крит. 13,60.17c aufbewahren, verwahren: *taddānavaśarīraṃ te saṃrakṣya sthāpitaṃ mayā*
+[MBH. 13,3080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3080) = [≈Вульг. 13.61.17](mbh/13.61.html#v17) = ≈крит. 13,60.17c aufbewahren, verwahren: *taddānavaśarīraṃ te saṃrakṣya sthāpitaṃ mayā*
 [KATHĀS. 45,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,50)
 
 **sam (2))** — Vgl. *saṃrakṣaṇa* fgg.
@@ -148,12 +148,12 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 **vi)** — *vi* behüten, beschützen, bewahren: *sarvaṃ bhūtam*
 [AV. 10,6,18.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.18) [13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) *rājā rāṣṭraṃ vi rakṣati*
 [11,5,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.17) *anyo'nyaṃ samupāśritya virakṣanti raṇājire (na tyakṣyanti raṇājiram* [ed. Bomb.])
-[MBH. 7,4410.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4410) = [≈Вульг. 7.113.40](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A113_S040) = ≈крит. 07,88.33c *droṇaṃ ca ke vyarakṣanta*
-[7329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7329) = [≈Вульг. 7.163.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A163_S037) = ≈крит. 07,138.34a
+[MBH. 7,4410.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4410) = [≈Вульг. 7.113.40](mbh/7.113.html#v40) = ≈крит. 07,88.33c *droṇaṃ ca ke vyarakṣanta*
+[7329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7329) = [≈Вульг. 7.163.37](mbh/7.163.html#v37) = ≈крит. 07,138.34a
 
 **ā+rakṣ — основная форма)** — *ā* behüten, beschützen, bewahren, bewachen: *ā mā mitrāvaruṇeha rakṣatam*
 [ṚV. 7,50,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.050.html#rv07.050.01) *dvārāṇi yantrairārakṣitāni*
-[MBH. 15,186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.186) = [≈Вульг. 15.5.17](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S017) = ≈крит. 15,9.17c *bharatārakṣitaṃ putrarājyam*
+[MBH. 15,186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.186) = [≈Вульг. 15.5.17](mbh/15.5.html#v17) = ≈крит. 15,9.17c *bharatārakṣitaṃ putrarājyam*
 [R. 2,52,58.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,58)
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Vgl. *ārakṣa* fgg.
@@ -209,7 +209,7 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Mit *samabhi* bewahre, behüten, beschützen.
 
-**+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A002_S021) = ≈крит. 08,1.44a fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
+**+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](mbh/8.2.html#v21) = ≈крит. 08,1.44a fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Mit *ā* behüten, beschützen, bewahren, bewachen, — vor (Abl.)
 

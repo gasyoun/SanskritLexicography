@@ -5,46 +5,54 @@
 MG review point 1, second half: *sanatana.in «is rather slow and devanagari only.
 Can … our datasets … link to our local, IAST version of the text?»*
 
-This is the generator for that. **It does not run today**, and the reason is an
-input, not a design: neither Mahābhārata e-text is on this machine, and one of the
-two may not be republished at all. Both facts are checked at run time and reported
-as a refusal with the path that is missing — never as an empty build.
+This builds that local IAST text as static pages, one per **adhyāya**, with an
+anchor per verse — so `MBH. 12,8081.` can link to `mbh/12.226.html#v6` instead of
+a slow Devanāgarī reader.
 
-The two witnesses, and what may be done with each
--------------------------------------------------
-**Nīlakaṇṭha vulgate** — the text ``12.226.6`` addresses. Harvested from
-[sanatana.in](https://sanatana.in/mahabharata/) into
-``CommentaryStrategies/mahabharata-nilakantha/nilakantha_vulgate_full.jsonl``
-(58.9 MB), **gitignored**; census in
-[`NILAKANTHA_VULGATE_CENSUS.md`](https://github.com/gasyoun/CommentaryStrategies/blob/main/mahabharata-nilakantha/NILAKANTHA_VULGATE_CENSUS.md).
-Third-party rights are *unclear*, which under the org's standing policy
+Where the text is, and why it took looking twice
+------------------------------------------------
+The Nīlakaṇṭha vulgate is **not in any working tree**. It is 58.8 MB of
+rights-gated third-party text, so CommentaryStrategies keeps it on a local-only
+git branch — ``mahabharata-nilakantha-local-only-do-not-push`` — and consumers
+read it with ``git show <branch>:<path>``. That is the org's standing convention
+for this class of asset; csl-atlas's own
+[`f8_mbh_witnesses.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/f8_mbh_witnesses.py)
+reads it exactly this way.
+
+An earlier pass of this handoff checked the working-tree path, found nothing and
+concluded the text was gone. It was not: *checking the file system is not
+checking the repository*. The census in
+[`NILAKANTHA_VULGATE_CENSUS.md`](https://github.com/gasyoun/CommentaryStrategies/blob/main/mahabharata-nilakantha/NILAKANTHA_VULGATE_CENSUS.md)
+was accurate all along — 83,971 verses, all 18 parvans, `mula_iast` already
+transliterated.
+
+The two witnesses are NOT treated alike
+---------------------------------------
+**Nīlakaṇṭha vulgate** — third-party rights are *unclear*, which under the org's
+standing policy
 ([`STANDING_POLICY_RIGHTS_UNCERTAINTY_IS_NOT_A_STOP_2026.md`](https://github.com/gasyoun/Uprava/blob/main/docs/STANDING_POLICY_RIGHTS_UNCERTAINTY_IS_NOT_A_STOP_2026.md))
-is **not** a stop, including for publication. So this side may be rendered.
+is **not** a stop, including for publication. This is what the pages render.
 
-**BORI critical** — the text ``12,219.6a`` addresses. © BORI 1999; John D. Smith's
-stated terms are *"please do not provide copies of the text to others"*
+**BORI critical** — © BORI 1999; John D. Smith's stated terms are *"please do not
+provide copies of the text to others"*
 ([`BORI_CRITICAL_SOURCE.md`](https://github.com/gasyoun/CommentaryStrategies/blob/main/mahabharata-nilakantha/BORI_CRITICAL_SOURCE.md)).
-That is a **confirmed prohibition**, which the same standing policy does treat as
-a stop. So the critical *reading* is never written to a published page; only its
-*address* is, which is a citation and not a copy. A reader who wants the text goes
-to the printed volume — which is what the Russian-editions index
-(``data/mbh_russian_editions.tsv``) is for.
+That is a **confirmed prohibition**, which the same policy does treat as a stop.
+Its 18 files are on the same branch and this generator never opens them: a page
+carries the critical *address*, which is a citation, and never the critical
+*reading*, which would be a copy. :func:`page_html` has no parameter that could
+carry one.
 
-Consequence for the card
-------------------------
-Until the vulgate jsonl is staged, the vulgate coordinate produced by
-[`mbh_locus`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mbh_locus.py)
-keeps pointing at sanatana.in — slow and Devanāgarī, exactly as MG complained, but
-real and reachable. The coordinate itself becomes visible either way, which is the
-half of review point 1 that this handoff does close.
+The ṭīkā (Nīlakaṇṭha's commentary, present in the source as ``tika_iast``) is
+also not rendered: the ask was the verse, and the commentary would triple the
+published bytes for text nobody linked to.
 
 Run::
 
-    python src/build_mbh_verse_pages.py --check      # report input availability
-    python src/build_mbh_verse_pages.py --out DIR    # build (needs the vulgate text)
+    python src/build_mbh_verse_pages.py --check          # input availability
+    python src/build_mbh_verse_pages.py --out DIR        # build
     python src/build_mbh_verse_pages.py --selftest
 """
-import sys, os, io, json, html, argparse
+import sys, os, io, json, html, argparse, subprocess, collections
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -55,84 +63,153 @@ sys.path.insert(0, HERE)
 REPO = os.path.dirname(os.path.dirname(HERE))
 ORG = os.path.dirname(REPO)
 
-#: The harvested Nīlakaṇṭha vulgate. Gitignored in its own repo; override with
-#: ``MBH_VULGATE_JSONL`` if it has been staged somewhere else.
-VULGATE_JSONL = os.environ.get(
-    "MBH_VULGATE_JSONL",
-    os.path.join(ORG, "CommentaryStrategies", "mahabharata-nilakantha",
-                 "nilakantha_vulgate_full.jsonl"))
-
-#: The BORI critical e-text directory. Present only to be *reported* — nothing
-#: read from here is ever written to a published page.
-BORI_DIR = os.environ.get(
-    "MBH_BORI_DIR",
-    os.path.join(ORG, "CommentaryStrategies", "mahabharata-nilakantha",
-                 "bori-critical"))
+#: The sibling that owns the text, and the local-only branch it lives on.
+SIBLING = os.environ.get("COMMENTARY_STRATEGIES_DIR",
+                         os.path.join(ORG, "CommentaryStrategies"))
+BRANCH = os.environ.get("MBH_VULGATE_BRANCH",
+                        "mahabharata-nilakantha-local-only-do-not-push")
+VULGATE_BLOB = "mahabharata-nilakantha/nilakantha_vulgate_full.jsonl"
+BORI_BLOB_DIR = "mahabharata-nilakantha/bori-critical"
 
 RIGHTS_VULGATE = "uncertain — may be published (org standing policy)"
 RIGHTS_BORI = "PROHIBITED — © BORI 1999, 'do not provide copies to others'"
 
+#: parvan number -> the slug the source uses, for a human label
+PARVA_LABEL = {
+    1: "Ādiparvan", 2: "Sabhāparvan", 3: "Āraṇyakaparvan", 4: "Virāṭaparvan",
+    5: "Udyogaparvan", 6: "Bhīṣmaparvan", 7: "Droṇaparvan", 8: "Karṇaparvan",
+    9: "Śalyaparvan", 10: "Sauptikaparvan", 11: "Strīparvan",
+    12: "Śāntiparvan", 13: "Anuśāsanaparvan", 14: "Āśvamedhikaparvan",
+    15: "Āśramavāsikaparvan", 16: "Mausalaparvan", 17: "Mahāprasthānikaparvan",
+    18: "Svargārohaṇaparvan",
+}
+
+
+def _git(args, binary=False):
+    return subprocess.run(["git", "-C", SIBLING] + args, stdout=subprocess.PIPE,
+                          stderr=subprocess.PIPE,
+                          **({} if binary else dict(encoding="utf-8",
+                                                    errors="replace")))
+
+
+def branch_exists():
+    p = _git(["rev-parse", "--verify", "--quiet", BRANCH])
+    return p.returncode == 0
+
+
+def blob_size(path):
+    """Size in bytes of a blob on the branch, or ``None``."""
+    p = _git(["ls-tree", "-l", BRANCH, "--", path])
+    if p.returncode or not p.stdout.strip():
+        return None
+    try:
+        return int(p.stdout.split()[3])
+    except (IndexError, ValueError):
+        return None
+
+
+def iter_verses():
+    """Stream ``(parvan, adhyaya, shloka, id, iast)`` from the local-only branch.
+
+    Streamed rather than loaded: 58.8 MB of JSON lines, and the caller only ever
+    needs one adhyāya's worth at a time.
+    """
+    p = subprocess.Popen(["git", "-C", SIBLING, "show",
+                          "%s:%s" % (BRANCH, VULGATE_BLOB)],
+                         stdout=subprocess.PIPE)
+    for raw in io.TextIOWrapper(p.stdout, encoding="utf-8"):
+        raw = raw.strip()
+        if not raw:
+            continue
+        d = json.loads(raw)
+        iast = (d.get("mula_iast") or "").strip()
+        if not iast:
+            continue
+        yield (d.get("parva_no"), d.get("adhyaya"), d.get("shloka"),
+               d.get("id"), iast)
+    p.stdout.close()
+    p.wait()
+
 
 def inputs_status():
-    """``[(name, path, present, rights)]`` — what a build would need, and its rights."""
+    """``[(name, locator, present, rights)]`` — what a build needs, and its rights."""
+    ok = branch_exists()
+    vsize = blob_size(VULGATE_BLOB) if ok else None
+    bori = blob_size(BORI_BLOB_DIR + "/MBh12.txt") if ok else None
     return [
-        ("Nīlakaṇṭha vulgate (text)", VULGATE_JSONL,
-         os.path.exists(VULGATE_JSONL), RIGHTS_VULGATE),
-        ("BORI critical (text)", BORI_DIR, os.path.isdir(BORI_DIR), RIGHTS_BORI),
+        ("Nīlakaṇṭha vulgate (text)",
+         "%s:%s" % (BRANCH, VULGATE_BLOB), vsize is not None, RIGHTS_VULGATE),
+        ("BORI critical (text)",
+         "%s:%s/MBh*.txt" % (BRANCH, BORI_BLOB_DIR), bori is not None, RIGHTS_BORI),
     ]
 
 
 def can_build():
-    """``(bool, reason)`` — only the vulgate side is required, and only it is publishable."""
-    if not os.path.exists(VULGATE_JSONL):
-        return False, ("the Nīlakaṇṭha vulgate e-text is not on this machine: %s "
-                       "(gitignored in CommentaryStrategies; re-harvest with its "
-                       "nilakantha_parser.py scrape)" % VULGATE_JSONL)
-    return True, "vulgate text present"
+    if not branch_exists():
+        return False, ("the local-only branch %r is not in %s — the vulgate text "
+                       "lives there, not in any working tree" % (BRANCH, SIBLING))
+    if blob_size(VULGATE_BLOB) is None:
+        return False, "%s carries no %s" % (BRANCH, VULGATE_BLOB)
+    return True, "vulgate text present on %s (%.1f MB)" % (
+        BRANCH, blob_size(VULGATE_BLOB) / 1048576.0)
 
 
-def page_html(address, text_iast, bori_address=None):
-    """One verse page. Vulgate reading in IAST; the critical side as an ADDRESS only.
+_CSS = """body{font-family:Georgia,serif;max-width:46em;margin:2em auto;padding:0 1em;
+line-height:1.6;color:#222}h1{font-size:1.4em}.v{margin:.9em 0;padding-left:3.2em;
+text-indent:-3.2em}.n{color:#999;font-size:.85em;display:inline-block;width:2.6em}
+.sa{font-style:italic}.src{color:#666;font-size:.85em;margin-top:2em;border-top:1px
+solid #ddd;padding-top:.8em}a{color:#06c}"""
 
-    The asymmetry is the rights rule made mechanical: a reading is a copy, an
-    address is a citation. Nothing in this function can emit BORI text, because
-    it is never passed any.
+
+def page_html(parvan, adhyaya, verses):
+    """One adhyāya page: every verse in IAST, anchored by its śloka number.
+
+    ``verses`` is ``[(shloka, iast)]``. There is deliberately no parameter for a
+    critical-edition reading — see the module docstring.
     """
-    crit = ("<p class=crit>Критическое издание (BORI): <b>%s</b> — "
-            "адрес приведён без текста: e-text под запретом на распространение.</p>"
-            % html.escape(bori_address)) if bori_address else \
-           "<p class=crit>Соответствия в критическом издании нет.</p>"
-    return (
-        "<h1>Mahābhārata %s</h1>\n"
-        "<p class=ed>Nīlakaṇṭha vulgate, IAST</p>\n"
-        "<p class=verse lang=sa>%s</p>\n%s\n"
-        % (html.escape(address), html.escape(text_iast), crit))
+    label = PARVA_LABEL.get(parvan, "parvan %s" % parvan)
+    out = ["<!doctype html><meta charset=utf-8>",
+           "<title>MBh %s.%s — %s</title>" % (parvan, adhyaya, label),
+           "<style>%s</style>" % _CSS,
+           "<h1>Mahābhārata %s.%s <small>(%s)</small></h1>"
+           % (parvan, adhyaya, html.escape(label))]
+    for shloka, iast in verses:
+        out.append('<p class=v id="v%s"><span class=n>%s</span>'
+                   '<span class=sa>%s</span></p>'
+                   % (html.escape(str(shloka)), html.escape(str(shloka)),
+                      html.escape(iast).replace("\n", "<br>")))
+    out.append('<p class=src>Нилакантхинская вульгата, IAST. Текст сверх этой '
+               'редакции — критическое издание BORI — здесь не приводится: '
+               'e-text под запретом на распространение, доступен только адрес. '
+               'Комментарий Нилакантхи (ṭīkā) есть в источнике и не публикуется '
+               'здесь.</p>')
+    return "\n".join(out)
 
 
-def build(out_dir, limit=None):
+def verse_href(parvan, adhyaya, shloka, base="mbh"):
+    """The address :mod:`mbh_locus` should point a vulgate coordinate at."""
+    return "%s/%s.%s.html#v%s" % (base, parvan, adhyaya, shloka)
+
+
+def build(out_dir, limit_parvan=None):
     ok, why = can_build()
     if not ok:
         print("REFUSED: %s" % why)
         return 2
     os.makedirs(out_dir, exist_ok=True)
-    n = 0
-    with io.open(VULGATE_JSONL, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if not line:
-                continue
-            d = json.loads(line)
-            address = "%s.%s.%s" % (d.get("parvan"), d.get("adhyaya"), d.get("shloka"))
-            text = d.get("text_iast") or d.get("iast") or ""
-            if not text:
-                continue
-            with io.open(os.path.join(out_dir, address + ".html"), "w",
-                         encoding="utf-8") as out:
-                out.write(page_html(address, text))
-            n += 1
-            if limit and n >= limit:
-                break
-    print("wrote %d verse pages -> %s" % (n, out_dir))
+    groups = collections.OrderedDict()
+    n_verses = 0
+    for parvan, adhyaya, shloka, _vid, iast in iter_verses():
+        if limit_parvan and parvan != limit_parvan:
+            continue
+        groups.setdefault((parvan, adhyaya), []).append((shloka, iast))
+        n_verses += 1
+    for (parvan, adhyaya), verses in groups.items():
+        path = os.path.join(out_dir, "%s.%s.html" % (parvan, adhyaya))
+        with io.open(path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(page_html(parvan, adhyaya, verses))
+    print("wrote %d adhyāya pages (%d verses) -> %s"
+          % (len(groups), n_verses, out_dir))
     return 0
 
 
@@ -140,9 +217,9 @@ def report():
     print("Mahābhārata verse pages (H3152 A2) — input availability\n")
     print("%-28s %-9s %s" % ("input", "present", "rights"))
     print("-" * 78)
-    for name, path, present, rights in inputs_status():
+    for name, locator, present, rights in inputs_status():
         print("%-28s %-9s %s" % (name, "yes" if present else "NO", rights))
-        print("%-28s %s" % ("", path))
+        print("%-28s %s" % ("", locator))
     ok, why = can_build()
     print("\nbuildable: %s — %s" % ("yes" if ok else "NO", why))
     return 0 if ok else 1
@@ -156,28 +233,37 @@ def selftest():
         print(("  ok   " if cond else "  FAIL ") + msg)
         ok = ok and bool(cond)
 
-    p = page_html("12.226.6", "santāpādbhraśyate cāyur", "12,219.6a")
-    check("12.226.6" in p and "santāpād" in p, "the vulgate reading is rendered")
-    check("12,219.6a" in p, "the critical ADDRESS is rendered")
+    p = page_html(12, 226, [(6, "santāpādbhraśyate cāyur"), (7, "tato rājā")])
+    check("Mahābhārata 12.226" in p, "the page names its coordinate")
+    check('id="v6"' in p and 'id="v7"' in p, "every verse is anchored by its number")
+    check("santāpād" in p, "the vulgate reading is rendered")
+    check("Śāntiparvan" in p, "the parvan is named in words")
     check("под запретом" in p,
-          "the page says WHY the critical reading is absent, rather than omitting it")
+          "the page says the critical reading is withheld, rather than omitting it")
 
-    p2 = page_html("12.223.24", "yadā ca pṛthivīṃ", None)
-    check("Соответствия в критическом издании нет" in p2,
-          "a vulgate-only verse says so in words")
-
-    # the rights rule, mechanically: the function has no parameter that could
-    # carry BORI text into a page
+    # the rights rule, mechanically: no parameter can carry a BORI reading in
     import inspect
     params = list(inspect.signature(page_html).parameters)
-    check(params == ["address", "text_iast", "bori_address"],
-          "page_html takes a critical ADDRESS and no critical text: %r" % params)
+    check(params == ["parvan", "adhyaya", "verses"],
+          "page_html cannot be handed a critical reading: %r" % params)
+
+    check(verse_href(12, 226, 6) == "mbh/12.226.html#v6",
+          "the href a coordinate points at: %s" % verse_href(12, 226, 6))
 
     ok_build, why = can_build()
-    check(isinstance(ok_build, bool) and isinstance(why, str),
-          "can_build reports a reason either way: %s / %s" % (ok_build, why))
-    if not ok_build:
-        print("  note  A2 is input-blocked on this machine, as expected: %s" % why)
+    check(isinstance(ok_build, bool), "can_build reports a reason: %s" % why)
+    if ok_build:
+        # the live branch must actually yield the specimen MG named
+        want = None
+        for parvan, adhyaya, shloka, _vid, iast in iter_verses():
+            if (parvan, adhyaya, shloka) == (12, 223, 24):
+                want = iast
+                break
+        check(want and "yajamāno" in want,
+              "the branch yields the verse whose pratīka PWG prints at MBH. 12,8081: %r"
+              % ((want or "")[:60],))
+    else:
+        print("  note  branch not available here: %s" % why)
 
     print("build_mbh_verse_pages selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1
@@ -186,15 +272,15 @@ def selftest():
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--out", help="output directory")
-    ap.add_argument("--limit", type=int)
-    ap.add_argument("--check", action="store_true", help="report input availability")
+    ap.add_argument("--parvan", type=int, help="build only this parvan")
+    ap.add_argument("--check", action="store_true")
     ap.add_argument("--selftest", action="store_true")
     a = ap.parse_args(argv)
     if a.selftest:
         return selftest()
     if a.check or not a.out:
         return report()
-    return build(a.out, a.limit)
+    return build(a.out, a.parvan)
 
 
 if __name__ == "__main__":

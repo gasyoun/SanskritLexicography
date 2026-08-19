@@ -62,8 +62,8 @@ Inputs (local, untracked — point PWG_RU_DATA_ROOT at the tree that has them):
     <data>/src/pwg_ru_translated.jsonl
     <data>/pwg_ru/reglue/<key1>.json
 Output (gitignored, published to the vote hub by hand):
-    <data>/review/h180_reglue_v4_sheet.html
-    <data>/review/h180_reglue_v4_sample.jsonl
+    <data>/review/h180_reglue_v5_sheet.html
+    <data>/review/h180_reglue_v5_sample.jsonl
 
 Run: python src/build_reglue_sheet_v2.py
      python src/build_reglue_sheet_v2.py --selftest
@@ -553,9 +553,9 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v4-2026-08-19"
+    sheet_id = "h180-reglue-spotcheck-v5-2026-08-19"
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v4.decisions.json")
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v5.decisions.json")
     config.update({
         "sheet_id": sheet_id,
         "title": "H180 · выборочная проверка склейки с учётом содержания (v3)",
@@ -610,20 +610,20 @@ def main():
         deterministic=totals[HIT] + totals[NO_LOCUS], lookup=totals[MINTABLE],
         agent=0, human=len(items),
         evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
-        rules=["ls_resolver", "citation_tm", "h180-reglue-v4", "line_collapse"])
+        rules=["ls_resolver", "citation_tm", "h180-reglue-v5", "line_collapse"])
     doc = render_review_sheet(items, config, extras=True, screening=sc)
     doc, chash = stamp(doc)
     if 'id="modecompact"' not in doc or "render-compact" not in doc:
         raise SystemExit("the compact/expanded control did not survive rendering")
 
-    sample = os.path.join(REVIEW, "h180_reglue_v4_sample.jsonl")
+    sample = os.path.join(REVIEW, "h180_reglue_v5_sample.jsonl")
     # newline="\n": the tracked sample is LF in git, and a Windows run without
     # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
     with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
-    out = os.path.join(REVIEW, "h180_reglue_v4_sheet.html")
+    out = os.path.join(REVIEW, "h180_reglue_v5_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
     write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED, source_html=out)

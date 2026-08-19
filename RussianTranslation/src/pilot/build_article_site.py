@@ -118,7 +118,20 @@ def _mbh_triple_html(visible, n_attr, LT, GT, QT):
     ft = _FITTED_TITLE.replace(' ', '\xa0')
     out = ['%sspan class=mbhtriple%s' % (LT, GT)]
     # vulgate: approximate, but linkable — sanatana.in is where the verse is read
-    if loc.vulgate_href:
+    if loc.iast_href:
+        # MG review point 1: the coordinate leads to OUR fast IAST page, not to
+        # the slow Devanāgarī reader. sanatana.in stays reachable beside it as
+        # the source of record — a small superscript, so the primary click is
+        # the one MG asked for.
+        out.append(' = %sa class=lsv href=%s%s%s title=%s%s≈Вульг.\xa0%s%s/a%s'
+                   % (LT, QT, loc.iast_href, QT, ft, GT, loc.vulgate, LT, GT))
+        if loc.vulgate_href:
+            out.append('%sa class=lsvsrc href=%s%s%s title=%s target=_blank '
+                       'rel=noopener%s%ssup%sист.%s/sup%s%s/a%s'
+                       % (LT, QT, loc.vulgate_href, QT,
+                          'sanatana.in — источник вульгатного текста'
+                          .replace(' ', '\xa0'), GT, LT, GT, LT, GT, LT, GT))
+    elif loc.vulgate_href:
         # the href carries `?id=…`; an `=` inside an UNQUOTED attribute value is
         # an HTML5 parse error, so this one attribute is genuinely quoted via the
         # QT sentinel (the H2845 lesson — do not "simplify" it back)
@@ -150,8 +163,8 @@ def _mbh_triple_md(visible, n_attr):
     loc = _MBH_LOCUS.resolve_citation(visible, n_attr)
     if loc is None or not loc.fitted:
         return ''
-    out = (' = [≈Вульг. %s](%s)' % (loc.vulgate, loc.vulgate_href)
-           if loc.vulgate_href else ' = ≈Вульг. %s' % loc.vulgate)
+    out = (' = [≈Вульг. %s](%s)' % (loc.vulgate, loc.iast_href or loc.vulgate_href)
+           if (loc.iast_href or loc.vulgate_href) else ' = ≈Вульг. %s' % loc.vulgate)
     if loc.presence == mbh_locus.VULGATE_ONLY:
         out += ' = крит. —'
     elif loc.bori:
@@ -1474,7 +1487,12 @@ def selftest_citations():
               'review 1: the vulgate coordinate is visible — %s' % tri)
         check('≈крит. 12,219.6a' in tri,
               'review 1: the critical address is visible at last')
-        check('sanatana.in' in tri, 'review 1: the vulgate coordinate is clickable')
+        check('mbh/12.226.html#v6' in tri,
+              'review 1: the coordinate leads to OUR fast IAST page, not to the '
+              'slow Devanāgarī reader — %s' % tri)
+        th_src = _render('<ls>MBH. 12,8081.</ls>', 'html', 'ru')
+        check('sanatana.in' in th_src,
+              'review 1: sanatana.in stays reachable as the source of record')
         check('≈' in tri,
               'review 1: both fitted coordinates are marked approximate, never asserted')
         th = _render('<ls>MBH. 12,8081.</ls>', 'html', 'ru')

@@ -7,20 +7,20 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 **1)** — *sam*
  1) zerspalten, zerbrechen, durchbohren: *śiraḥ*
 [AV. 10,4,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.05)
-[MBH. 8,3839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3839) = [≈Вульг. 8.76.19](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A076_S019) = ≈крит. 08,54.17c *saṃbhinnajarjaritakoṣṭhaśiraḥkapāla*
+[MBH. 8,3839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3839) = [≈Вульг. 8.76.19](mbh/8.76.html#v19) = ≈крит. 08,54.17c *saṃbhinnajarjaritakoṣṭhaśiraḥkapāla*
 [SUŚR. 1,352,17.] *saṃbhinnacarmaghaṇṭāḥ (saṃbhinnamarma˚* [ed. Bomb.])
-[MBH. 7,4565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4565) = [≈Вульг. 7.115.26](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A115_S026) = ≈крит. 07,91.22c [8,499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.499) = [≈Вульг. 8.12.16](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A012_S016) = ≈крит. 08,8.16a *saṃbhinnamaryāda* der die Schranken durchbrochen hat
+[MBH. 7,4565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4565) = [≈Вульг. 7.115.26](mbh/7.115.html#v26) = ≈крит. 07,91.22c [8,499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.499) = [≈Вульг. 8.12.16](mbh/8.12.html#v16) = ≈крит. 08,8.16a *saṃbhinnamaryāda* der die Schranken durchbrochen hat
 [R. 2,49,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,49,5) ([46,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,46,7) [GORR.]). [67,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,67,28) *asaṃbhinnāryamaryāda*
 [Spr. 5088.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5088)
-[MBH. 15,383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.383) = [≈Вульг. 15.12.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A012_S002) = ≈крит. 15,18.2a [2,2443](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2443) = [≈Вульг. 2.73.11](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A073_S011) = ≈крит. 02,65.10a (wo beide Ausgg. fälschlich *asaṃbhinnārtha˚* lesen). *saṃbhinnavṛtta* der seinen guten Lebenswandel unterbrochen, — verlassen hat
-[12,788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.788) = [≈Вульг. 12.26.21](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A026_S021) = ≈крит. 12,20.8c
-  — ʰ PW — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A092_S030) = ≈крит. 06,88.27a fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
+[MBH. 15,383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.383) = [≈Вульг. 15.12.2](mbh/15.12.html#v2) = ≈крит. 15,18.2a [2,2443](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2443) = [≈Вульг. 2.73.11](mbh/2.73.html#v11) = ≈крит. 02,65.10a (wo beide Ausgg. fälschlich *asaṃbhinnārtha˚* lesen). *saṃbhinnavṛtta* der seinen guten Lebenswandel unterbrochen, — verlassen hat
+[12,788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.788) = [≈Вульг. 12.26.21](mbh/12.26.html#v21) = ≈крит. 12,20.8c
+  — ʰ PW — 1〉 spalten, einbrechen, ein Loch in Etwas schlagen, durchstechen, durchbrechen, zersprengen, aufreissen, -schlitzen. *setum*, *maryādām*, *sthitim*, *velām* einen Damm, Schranken, das Ufer durchbrechen. Ein Planet oder Komet durchbricht eines Stern, wenn er durch ihn durchgeht. Pass. *bhidyate*, *˚ti* (metrisch, aber auch bei [BAUDH.] im [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](mbh/6.92.html#v30) = ≈крит. 06,88.27a fehlerhaft für *bhidyatām*) auch in intransit. Bed. bersten. *bhinna* zerschlagen, zerbrochen u. s. w.
   — ＋ PW — 1〉 _Adj._ am Ende eines Comp.
   — ＋ PW — a〉 zerbrechend, zermalmend, durchbrechend, durchbohrend, treffend (ein Ziel).
   — ＋ PW — b〉 vertreibend, zu Nichte machend.
 
 **1-sub-einen Damm durchbrechen)** [MED. n. 14.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,14) *setum, maryādām, velāṃ bhid* einen Damm, Schranken, das Ufer durchbrechen: *baddhaṃ setuṃ ko nu* (so ist zu lesen) *bhindyāt*
-[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c *ambhasā bhidyate setuḥ*
+[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](mbh/2.75.html#v5) = ≈крит. 02,66.31c *ambhasā bhidyate setuḥ*
 [Spr. 119.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?119) *bhidyeransarve setavaḥ*
 [M. 7,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,24)
 [BHĀG. P. 3,21,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,54) *dharmasetūnbhindanti te*
@@ -64,7 +64,7 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [PAÑCAR. 3,11,18.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,11,18) *kadambasaṃbhinnaḥ pavanaḥ* in Berührung gekommen
 [BHAṬṬ. 7,5.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,5) *saṃbhinno māruto yasya marmasthānāni kṛntati* so v. a. compact
 [MĀRK. P. 43,14](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?43,14) = [VĀYU-P.] in [Verz. d. Oxf. H. 51,b,6.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) *saṃbhinna* verbunden neben *vibhinna* als Beiw. Śiva's
-[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Вульг. 12.286.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A286_S008) = ≈крит. 12,275.8a
+[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Вульг. 12.286.8](mbh/12.286.html#v8) = ≈крит. 12,275.8a
   — ＋ PW — 2〉 brechen in übertr. Bed. so v. a. vertreiben, verschwinden —, zu Nichte machen; Pass. zu Nichte werden. *bhinna* zu Nichte gemacht [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
   — ≈ PW — 2〉 _f._
   — ＋ PW — a〉 Wand [ṚV. 1,174,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.08). Vgl. *bhitti*.
@@ -83,7 +83,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
   — ＋ PW — 4〉 spalten, so v. a. öffen; blühen machen; Pass. sich öffnen, freien Lauf haben (Wasser), sich ergiessen, über die Ufer treten. *bhinna* geöffnet, aufgeblüht. *˚karaṭa* oder *˚gaṇḍakaraṭa* _Adj._ von einem Elephanten, dessen Schläfen zur Brunstzeit sich geöffnet haben und fliessen; auch *bhinna* allein in derselben Bed.
 
 **5)** — 5) umstimmen: *vibhetsyati manāṃsyeṣām*
-[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) = [≈Вульг. 5.6.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A006_S016) = ≈крит. 05,6.15c pass. eine Umstimmung erfahren: *paśubuddhirvibhidyate*
+[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) = [≈Вульг. 5.6.16](mbh/5.6.html#v16) = ≈крит. 05,6.15c pass. eine Umstimmung erfahren: *paśubuddhirvibhidyate*
 [BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* umgestimmt
 [R. GORR. 2,28,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,15) untreu geworden
 [RĀJA-TAR. 6,124.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,124)
@@ -105,7 +105,7 @@ sich zu Jmd (acc.) gesellen: *tataśca bhagavānasmānupekṣate na saṃbhinatt
 
 **8)** — 8) *vibhinna* vermengt mit (instr.): *vibhinnamambhojapalāśaśobhayā*
 [KIR. 4,27. 5,34.] — caus. Jmd von Jmd (abl.) entfernen, abspänstig machen
-[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108) = [≈Вульг. 12.111.66](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A111_S066) = ≈крит. 12,112.62a
+[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108) = [≈Вульг. 12.111.66](mbh/12.111.html#v66) = ≈крит. 12,112.62a
 [R. GORR. 2,6,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,16) ([7,18] [SCHL.]). [8,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,55)
   — ＋ PW — 8〉 spalten, theilen, so v. a. entzweien. *bhinna* Pl. Entzweite, Zerfallene; *dāna˚* durch Geschenke abtrünnig gemacht, — bestochen.
 
@@ -166,7 +166,7 @@ Schol.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32
 **anu-1)** — *anu* der Länge nach spalten, — zerschlitzen: *taṃ dvedhānvabhinat*
 [ŚAT. BR. 1,6,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,17) pass. sich öffnen: *anvabhidyetāṃ* (v. l. *nyabhi˚) karṇau*
 [BHĀG. P. 3,26,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,55) — *baddhaṃ setuṃ ko 'nubhindyāt*
-[MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c fehlerhaft für *ko nu bhi˚* .
+[MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](mbh/2.75.html#v5) = ≈крит. 02,66.31c fehlerhaft für *ko nu bhi˚* .
 
 **apa-1)** — *apa* abschlagen: *bhindhi viśvā apa dviṣaḥ*
 [ṚV. 8,45,40.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40)
@@ -174,7 +174,7 @@ Schol.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32
 **caus-1)** — caus.
  1) spalten, brechen, zerschlagen: *bhedayeyuḥ sthirāndrumān*
 [R. 1,16,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,23) *purodyānāni sarvāṇi bhedayāmāsa*
-[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620) = [≈Вульг. 3.14.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S007) = ≈крит. 03,15.7a
+[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620) = [≈Вульг. 3.14.7](mbh/3.14.html#v7) = ≈крит. 03,15.7a
 [HARIV. 11905.](https://sanskrit-lexicon-scans.github.io/hariv?11905) *anayormahānnisargopajātaḥ snehaḥ kathaṃ bhedayituṃ śakyaḥ* zerstören, lösen
 [HIT. 67,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?67,2) *bhedita = bhinna*
 [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50)
@@ -183,19 +183,19 @@ Schol.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32
 [SĀH. D. 18,112.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,112) Könnte auch _adj._ von *ṣoḍaśa — bheda* sein.
 
 **caus-3)** — 3) entzweien mit Andern oder mit sich, Jmd irre machen, auf seine Seite hinüberziehen
-[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) = [≈Вульг. 1.198.5](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A198_S005) = ≈крит. 01,190.5a [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) = [≈Вульг. 13.12.28](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S028) = ≈крит. 13,12.25a [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A012_S031) = ≈крит. 13,12.27e *suśliṣṭānapi* (so die neuere Ausg.) *lokeṣu bhedayan*
+[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) = [≈Вульг. 1.198.5](mbh/1.198.html#v5) = ≈крит. 01,190.5a [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) = [≈Вульг. 13.12.28](mbh/13.12.html#v28) = ≈крит. 13,12.25a [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](mbh/13.12.html#v31) = ≈крит. 13,12.27e *suśliṣṭānapi* (so die neuere Ausg.) *lokeṣu bhedayan*
 [HARIV. 3209.](https://sanskrit-lexicon-scans.github.io/hariv?3209)
 [R. 4,54,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,6) [7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,7)
 [KATHĀS. 34,209.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,209) *bhayena bhedayedbhīruṃ śūramañjalikarmaṇā . lubdhamarthapradānena samaṃ nyūnaṃ tathaujasā ..*
 [Spr. 2017.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2017) [3013.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3013) *asakṛccāpyahaṃ tena tvatkṛte pārtha bheditaḥ*
-[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835) = [≈Вульг. 5.82.3](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A082_S003) = ≈крит. 05,80.3a
+[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835) = [≈Вульг. 5.82.3](mbh/5.82.html#v3) = ≈крит. 05,80.3a
 [R. GORR. 2,18,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,15) [77,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,77,2) *tamṛṣiṃ kauśikaṃ rambhe bhedayasva (= kāmotpādanena tapasaścālaya* Schol.) *tapasvinam* so v. a. verfähre
 [R. SCHL. 1,64,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,7)
 
 **desid-1)** — desid. *vibhitsati*
 [P. 1,2,10](https://ashtadhyayi.com/sutraani/1/2/10), Sch.,
 zu durchbrechen —, zu sprengen beabsichtigen: *anīkam*
-[MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) = [≈Вульг. 7.33.27](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A033_S027) = ≈крит. 07,32.25e [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624) = [≈Вульг. 7.37.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A037_S037) = ≈крит. 07,36.36c
+[MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) = [≈Вульг. 7.33.27](mbh/7.33.html#v27) = ≈крит. 07,32.25e [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624) = [≈Вульг. 7.37.37](mbh/7.37.html#v37) = ≈крит. 07,36.36c
 
 **desid-2)** — Vgl. *bibhitsā* fg.
 
@@ -253,7 +253,7 @@ Sch.
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Caus. *bhedayati*
 
-**+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52) = [≈Вульг. 3.3.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S005) = ≈крит. 03,3.5a.
+**+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 1〉 spalten, brechen, zerschlagen [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52) = [≈Вульг. 3.3.5](mbh/3.3.html#v5) = ≈крит. 03,3.5a.
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 2〉 zerstören, zu Nichte machen.
 
@@ -273,7 +273,7 @@ Sch.
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 1〉 der Länge nach spalten, — zerschlitzen.
 
-**+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A075_S005) = ≈крит. 02,66.31c fehlerhaft für *ko nu bhi˚*.
+**+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 2〉 Pass. sich öffnen. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](mbh/2.75.html#v5) = ≈крит. 02,66.31c fehlerhaft für *ko nu bhi˚*.
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Mit *antar* auf Verrath sinnen [DAŚAK. 19,8].
 

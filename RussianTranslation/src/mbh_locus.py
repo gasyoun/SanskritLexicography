@@ -99,6 +99,10 @@ FITTED_WITHIN_2_RATE = 0.680
 #: ``MBH. P,N`` as PWG prints it, off the visible text of an ``<ls>``
 _CITED = re.compile(r"^\s*MBH\.?\s*(\d{1,2})\s*,\s*(\d{1,5})", re.I)
 
+#: Where our own IAST verse pages are published, relative to the article site.
+#: Override with ``MBH_IAST_BASE`` when the site is served from elsewhere.
+IAST_BASE = os.environ.get("MBH_IAST_BASE", "mbh")
+
 
 class MbhLocus(object):
     """The coordinates of one Mahābhārata citation. Immutable, cheap, printable."""
@@ -128,12 +132,28 @@ class MbhLocus(object):
         """True whenever a vulgate coordinate is being offered at all.
 
         There is no lane in this module that produces a *verified* vulgate
-        address — that would need the vulgate e-text, which is not redistributable
-        and is not on this machine (see the module docstring of
-        [`build_mbh_verse_pages.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_mbh_verse_pages.py)).
-        The property exists so a renderer asks the object rather than assuming.
+        address: placing a citation by its printed pratīka needs a text search,
+        which is csl-atlas's quote lane, not a lookup. This property exists so a
+        renderer asks the object rather than assuming.
         """
         return self.vulgate is not None
+
+    @property
+    def iast_href(self):
+        """Our own IAST page for the vulgate coordinate, or ``None``.
+
+        This is the half of MG review point 1 that a coordinate alone does not
+        close: *«sanatana.in is rather slow and devanagari only … link to our
+        local, IAST version»*. Built by
+        [`build_mbh_verse_pages.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_mbh_verse_pages.py)
+        from the Nīlakaṇṭha vulgate — one static page per adhyāya, anchored per
+        verse. ``vulgate_href`` (sanatana.in) stays available beside it as the
+        source of record.
+        """
+        if not self.vulgate:
+            return None
+        return "%s/%s.html#v%s" % (IAST_BASE, self.vulgate.rsplit(".", 1)[0],
+                                   self.vulgate.rsplit(".", 1)[1])
 
     @property
     def bori_href(self):
@@ -293,7 +313,12 @@ def selftest():
           "the Cologne scan link is still there: %s" % loc.scan_href)
     check(loc.vulgate_href == "https://sanatana.in/mahabharata/listing/parva/"
                               "shantiparva?id=P12_U03_A226_S006",
-          "the vulgate address deep-links into the reader: %s" % loc.vulgate_href)
+          "the vulgate address deep-links into the source reader: %s" % loc.vulgate_href)
+    check(loc.iast_href == "mbh/12.226.html#v6",
+          "…and into OUR fast IAST page, which is what MG asked for: %s"
+          % loc.iast_href)
+    check(idx.resolve(12, 999999).iast_href is None,
+          "no coordinate, no IAST page — the link is never invented")
 
     # ---- the honesty property this module exists for
     check(loc.fitted is True,
