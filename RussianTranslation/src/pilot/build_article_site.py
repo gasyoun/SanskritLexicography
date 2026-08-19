@@ -76,25 +76,67 @@ _LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
 _N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
 
 
-#: Wording of the presence verdict, in the card's own language. `unchecked` has
-#: no wording at all — it prints nothing, which is the whole point of H2845.
-_PRESENCE_TITLE = {
-    mbh_locus.PRESENT: 'этот стих есть и в критическом издании BORI',
-    mbh_locus.VULGATE_ONLY: 'только вульгата: критическое издание BORI отправило '
-                            'этот стих в аппарат',
-    mbh_locus.ABSENT: 'по этому вульгатному адресу вульгата ничего не даёт',
+#: The coordinate triple's chrome, per edition language. H2845's `E` mark was
+#: language-neutral, so its ledger entry could say the two editions get
+#: byte-identical output; the triple prints WORDS, so it needs a substitution
+#: point per language or the DE/EN editions would carry Russian labels. That is
+#: exactly the divergence LANG_PARITY exists to catch, and this table is the fix.
+#: `unchecked` has no wording at all in any language — it prints nothing, which
+#: is the whole point of H2845.
+_TRIPLE_STRINGS = {
+    'ru': {
+        'vulgate': '≈Вульг.', 'critical': '≈крит.', 'critical_none': 'крит. —',
+        'source': 'ист.',
+        'source_title': 'sanatana.in — источник вульгатного текста',
+        mbh_locus.PRESENT: 'этот стих есть и в критическом издании BORI',
+        mbh_locus.VULGATE_ONLY: 'только вульгата: критическое издание BORI '
+                                'отправило этот стих в аппарат',
+        mbh_locus.ABSENT: 'по этому вульгатному адресу вульгата ничего не даёт',
+        'fitted': 'координаты вульгаты и критического издания получены подогнанным '
+                  'индексом csl-atlas по непрерывному калькуттскому номеру, а не '
+                  'прочитаны из текста: ровно в тот стих он попадает в %.0f%% '
+                  'измеренных случаев (±2 шлоки — %.0f%%). Достоверен только '
+                  'напечатанный в PWG калькуттский номер.',
+    },
+    'de': {
+        'vulgate': '≈Vulg.', 'critical': '≈krit.', 'critical_none': 'krit. —',
+        'source': 'Qu.',
+        'source_title': 'sanatana.in — Quelle des Vulgata-Textes',
+        mbh_locus.PRESENT: 'dieser Vers steht auch in der kritischen BORI-Ausgabe',
+        mbh_locus.VULGATE_ONLY: 'nur Vulgata: die kritische BORI-Ausgabe verweist '
+                                'diesen Vers in den Apparat',
+        mbh_locus.ABSENT: 'unter dieser Vulgata-Adresse steht in der Vulgata nichts',
+        'fitted': 'Vulgata- und kritische Adresse stammen aus dem angepassten '
+                  'csl-atlas-Index über die fortlaufende Kalkutta-Nummer, sie sind '
+                  'nicht aus dem Text gelesen: genau den Vers trifft er in %.0f%% '
+                  'der gemessenen Fälle (±2 Ślokas — %.0f%%). Gesichert ist nur '
+                  'die in PWG gedruckte Kalkutta-Nummer.',
+    },
+    'en': {
+        'vulgate': '≈vulg.', 'critical': '≈crit.', 'critical_none': 'crit. —',
+        'source': 'src.',
+        'source_title': 'sanatana.in — source of the vulgate text',
+        mbh_locus.PRESENT: 'this verse also stands in the BORI critical edition',
+        mbh_locus.VULGATE_ONLY: 'vulgate-only: the BORI critical edition relegates '
+                                'this verse to its apparatus',
+        mbh_locus.ABSENT: 'the vulgate has nothing at this vulgate address',
+        'fitted': 'the vulgate and critical coordinates come from the csl-atlas '
+                  'fitted index over the continuous Calcutta number; they are not '
+                  'read from the text. It lands on exactly that verse in %.0f%% of '
+                  'measured cases (±2 ślokas — %.0f%%). Only the Calcutta number '
+                  'printed in PWG is certain.',
+    },
 }
 
-#: What the ≈ on the fitted coordinates means, spelled out once per citation.
-_FITTED_TITLE = (
-    'координаты вульгаты и критического издания получены подогнанным индексом '
-    'csl-atlas по непрерывному калькуттскому номеру, а не прочитаны из текста: '
-    'ровно в тот стих он попадает в %.0f%% измеренных случаев (±2 шлоки — %.0f%%). '
-    'Достоверен только напечатанный в PWG калькуттский номер.'
-    % (100 * mbh_locus.FITTED_EXACT_RATE, 100 * mbh_locus.FITTED_WITHIN_2_RATE))
+
+def _triple_strings(lang):
+    """Chrome for the coordinate triple in the edition's own language."""
+    s = _TRIPLE_STRINGS.get(lang or 'ru') or _TRIPLE_STRINGS['ru']
+    return dict(s, fitted=s['fitted'] % (100 * mbh_locus.FITTED_EXACT_RATE,
+                                         100 * mbh_locus.FITTED_WITHIN_2_RATE))
 
 
-def _mbh_triple_html(visible, n_attr, LT, GT, QT):
+def _mbh_triple_html(visible, n_attr, LT, GT, QT, lang=None):
     """`MBH. 12,8081.` → ` = ≈Вульг. 12.226.6 = ≈крит. 12,219.6a`, or '' (H3152 A3).
 
     Replaces the mute `E` / `E†` superscript of H2845 with the coordinates MG
@@ -115,45 +157,49 @@ def _mbh_triple_html(visible, n_attr, LT, GT, QT):
     loc = _MBH_LOCUS.resolve_citation(visible, n_attr)
     if loc is None or not loc.fitted:
         return ''
-    ft = _FITTED_TITLE.replace(' ', '\xa0')
+    S = _triple_strings(lang)
+    ft = S['fitted'].replace(' ', '\xa0')
     out = ['%sspan class=mbhtriple%s' % (LT, GT)]
-    # vulgate: approximate, but linkable — sanatana.in is where the verse is read
+    # vulgate: approximate, but linkable — our own IAST page is where it leads
     if loc.iast_href:
         # MG review point 1: the coordinate leads to OUR fast IAST page, not to
         # the slow Devanāgarī reader. sanatana.in stays reachable beside it as
         # the source of record — a small superscript, so the primary click is
         # the one MG asked for.
-        out.append(' = %sa class=lsv href=%s%s%s title=%s%s≈Вульг.\xa0%s%s/a%s'
-                   % (LT, QT, loc.iast_href, QT, ft, GT, loc.vulgate, LT, GT))
+        out.append(' = %sa class=lsv href=%s%s%s title=%s%s%s\xa0%s%s/a%s'
+                   % (LT, QT, loc.iast_href, QT, ft, GT, S['vulgate'],
+                      loc.vulgate, LT, GT))
         if loc.vulgate_href:
             out.append('%sa class=lsvsrc href=%s%s%s title=%s target=_blank '
-                       'rel=noopener%s%ssup%sист.%s/sup%s%s/a%s'
+                       'rel=noopener%s%ssup%s%s%s/sup%s%s/a%s'
                        % (LT, QT, loc.vulgate_href, QT,
-                          'sanatana.in — источник вульгатного текста'
-                          .replace(' ', '\xa0'), GT, LT, GT, LT, GT, LT, GT))
+                          S['source_title'].replace(' ', '\xa0'), GT,
+                          LT, GT, S['source'], LT, GT, LT, GT))
     elif loc.vulgate_href:
         # the href carries `?id=…`; an `=` inside an UNQUOTED attribute value is
         # an HTML5 parse error, so this one attribute is genuinely quoted via the
         # QT sentinel (the H2845 lesson — do not "simplify" it back)
         out.append(' = %sa class=lsv href=%s%s%s title=%s target=_blank '
-                   'rel=noopener%s≈Вульг.\xa0%s%s/a%s'
-                   % (LT, QT, loc.vulgate_href, QT, ft, GT, loc.vulgate, LT, GT))
+                   'rel=noopener%s%s\xa0%s%s/a%s'
+                   % (LT, QT, loc.vulgate_href, QT, ft, GT, S['vulgate'],
+                      loc.vulgate, LT, GT))
     else:
-        out.append(' = ≈Вульг.\xa0%s' % loc.vulgate)
+        out.append(' = %s\xa0%s' % (S['vulgate'], loc.vulgate))
     # critical: an address, never a copy of the text
-    pt = _PRESENCE_TITLE.get(loc.presence, '')
+    pt = S.get(loc.presence, '')
     if loc.presence == mbh_locus.VULGATE_ONLY:
-        out.append('%sspan class=lsc title=%s%s = крит.\xa0—%s/span%s'
-                   % (LT, pt.replace(' ', '\xa0'), GT, LT, GT))
+        out.append('%sspan class=lsc title=%s%s = %s%s/span%s'
+                   % (LT, pt.replace(' ', '\xa0'), GT,
+                      S['critical_none'].replace(' ', '\xa0'), LT, GT))
     elif loc.bori:
-        out.append('%sspan class=lsc title=%s%s = ≈крит.\xa0%s%s/span%s'
-                   % (LT, (pt + '. ' + _FITTED_TITLE).replace(' ', '\xa0'), GT,
-                      loc.bori, LT, GT))
+        out.append('%sspan class=lsc title=%s%s = %s\xa0%s%s/span%s'
+                   % (LT, (pt + '. ' + S['fitted']).replace(' ', '\xa0'), GT,
+                      S['critical'], loc.bori, LT, GT))
     out.append('%s/span%s' % (LT, GT))
     return ''.join(out)
 
 
-def _mbh_triple_md(visible, n_attr):
+def _mbh_triple_md(visible, n_attr, lang=None):
     """The md rendering of the same triple — one data source, two line policies.
 
     The `≈` and the vulgate link survive into `reglue/<key1>.md`; the tooltip does
@@ -163,12 +209,15 @@ def _mbh_triple_md(visible, n_attr):
     loc = _MBH_LOCUS.resolve_citation(visible, n_attr)
     if loc is None or not loc.fitted:
         return ''
-    out = (' = [≈Вульг. %s](%s)' % (loc.vulgate, loc.iast_href or loc.vulgate_href)
-           if (loc.iast_href or loc.vulgate_href) else ' = ≈Вульг. %s' % loc.vulgate)
+    S = _triple_strings(lang)
+    out = (' = [%s %s](%s)' % (S['vulgate'], loc.vulgate,
+                               loc.iast_href or loc.vulgate_href)
+           if (loc.iast_href or loc.vulgate_href)
+           else ' = %s %s' % (S['vulgate'], loc.vulgate))
     if loc.presence == mbh_locus.VULGATE_ONLY:
-        out += ' = крит. —'
+        out += ' = %s' % S['critical_none']
     elif loc.bori:
-        out += ' = ≈крит. %s' % loc.bori
+        out += ' = %s %s' % (S['critical'], loc.bori)
     return out
 
 
@@ -446,13 +495,13 @@ def _render(text, mode, lang=None):
                                  'rel=noopener%s%s%s/a%s%s'
                                  % (LT, href, tattr, GT,
                                     _ls_visible_display(text, lang), LT, GT,
-                                    _mbh_triple_html(text, n_attr, LT, GT, QT)))
+                                    _mbh_triple_html(text, n_attr, LT, GT, QT, lang)))
                 return ' '.join(parts)
             if url:
                 # <a class=ls href=URL title=T target=_blank rel=noopener>DISPLAY</a>
                 return ('%sa class=ls href=%s%s target=_blank rel=noopener%s%s%s/a%s%s'
                         % (LT, url, tattr, GT, display, LT, GT,
-                           _mbh_triple_html(vis, n_attr, LT, GT, QT)
+                           _mbh_triple_html(vis, n_attr, LT, GT, QT, lang)
                            or _etext_html(url, LT, GT, QT)))
             return '%sspan class=ls%s%s%s%s/span%s' % (LT, tattr, GT, display, LT, GT)
         t = _LS.sub(_ls_html, t)
@@ -495,7 +544,7 @@ def _render(text, mode, lang=None):
             if loci:
                 return ' '.join(
                     '[%s](%s)%s' % (_ls_visible_display(lt, lang), h,
-                                    _mbh_triple_md(lt, n_attr))
+                                    _mbh_triple_md(lt, n_attr, lang))
                     for lt, h in loci)
             if not url:
                 return '[%s]' % display
@@ -505,8 +554,8 @@ def _render(text, mode, lang=None):
             rich = spr.tooltip(m.group(1), vis)
             if rich:
                 return ('[%s](%s "%s")%s' % (display, url, rich.replace('"', "'"),
-                                             _mbh_triple_md(vis, n_attr)))
-            return '[%s](%s)%s' % (display, url, _mbh_triple_md(vis, n_attr))
+                                             _mbh_triple_md(vis, n_attr, lang)))
+            return '[%s](%s)%s' % (display, url, _mbh_triple_md(vis, n_attr, lang))
         t = _LS.sub(_ls_md, t)
         t = _AB.sub(lambda m: _ab_display(m.group(1), lang, m.string[:m.start()])[0], t)
         t = _LEX.sub(lambda m: '_%s_' % m.group(1).strip(), t)
@@ -1502,6 +1551,23 @@ def selftest_citations():
               'review 1: the tooltip carries the measured accuracy of the fit')
     else:
         print('  skip  csl-atlas not on this machine — coordinate cases not run')
+
+    # ---- LANG PARITY: the triple prints WORDS, so every edition needs its own.
+    # H2845's `E` mark was language-neutral and could be shared byte-for-byte;
+    # this cannot, and shipping it unlocalised would put Russian labels on the
+    # German and English cards.
+    if _MBH_LOCUS.loaded:
+        de = _render('<ls>MBH. 12,8081.</ls>', 'md', 'de')
+        en = _render('<ls>MBH. 12,8081.</ls>', 'md', 'en')
+        check('≈Vulg.' in de and 'Вульг' not in de,
+              'the German card carries German chrome, not Russian — %s' % de)
+        check('≈vulg.' in en and 'Вульг' not in en,
+              'the English card carries English chrome, not Russian — %s' % en)
+        for edition in (de, en):
+            check('12.226.6' in edition and '12,219.6a' in edition,
+                  'every edition gets the same coordinates — only the words differ')
+            check('mbh/12.226.html#v6' in edition,
+                  'and the same IAST page')
 
     # ---- a citation with no coordinate layer at all is untouched
     plain = _render('<ls>AIT. BR. 6,33.</ls>', 'md', 'ru')

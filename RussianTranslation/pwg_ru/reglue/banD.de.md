@@ -8,10 +8,10 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [SUŚR. 1,54,12. 64,2. 65,18. 68,1. 19.] *vandho vidhīyate*
 [2,14,9. 376,8.] *bandhaṃ samācaret*
 [398,13.] *subaddhasyāpi bhārasya pūrvabandhaḥ ślathāyate*
-[MBH. 1,7979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7979) = [≈Вульг. 1.218.14](mbh/1.218.html#v14) = ≈крит. 01,210.14c *sve sthāne śakaṭasyātha cakrabandhamakārayat* das Anbinden
+[MBH. 1,7979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7979) = [≈Vulg. 1.218.14](mbh/1.218.html#v14) = ≈krit. 01,210.14c *sve sthāne śakaṭasyātha cakrabandhamakārayat* das Anbinden
 [HARIV. 3422.](https://sanskrit-lexicon-scans.github.io/hariv?3422) *gobandhadāru*
 [H. 894.](https://sanskrit-lexicon-scans.github.io/abch2/app1?894) *īṣābandhaṃ cakrabandhaṃ rathabandhaṃ tathaiva ca . prāṇāśayadameyātmā*
-[MBH. 7,8776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8776) = [≈Вульг. 7.191.22](mbh/7.191.html#v22) = ≈крит. 07,164.132a *cakra˚ = cakre bandhaḥ*
+[MBH. 7,8776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8776) = [≈Vulg. 7.191.22](mbh/7.191.html#v22) = ≈krit. 07,164.132a *cakra˚ = cakre bandhaḥ*
 [P. 2,1,41](https://ashtadhyayi.com/sutraani/2/1/41), Sch.
 *hastebandha* und *hasta˚*
 [6,3,13](https://ashtadhyayi.com/sutraani/6/3/13), Sch. Accent solcher Compp.
@@ -21,29 +21,29 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [575.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,575) *keśabandhaviśeṣāḥ* verschiedene Arten das Haar zu binden, — von Haartrachten
 [HALĀY. 2,375.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,375) *brahmāstreṇa ca bandho vai māruteḥ*
 [R. GORR. 1,4,84.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,84) *baddhau tu śarabandhena bhrātarau raṇamūrdhani*
-[6,20,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,20,18) [5,44,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,13) [15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,15) [MBH. 3,16466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16466) = [≈Вульг. 3.289.4](mbh/3.289.html#v4) = ≈крит. 03,273.4a
+[6,20,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,20,18) [5,44,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,13) [15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,15) [MBH. 3,16466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16466) = [≈Vulg. 3.289.4](mbh/3.289.html#v4) = ≈krit. 03,273.4a
 
 **2)** — 2) das Fangen, Einfangen: *gaja˚*
 [RAGH. 16,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,2) *śakunibandhavyasanin*
 [PAÑCAT. 192,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,3) Fesselung, Gefangensetzung, Gefangenschaft, Haft (häufig in Verbindung mit *vadha* Tödtung, Todesstrafe)
 [M. 5,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,49) [8,310](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,310) (neben *nirodhana* Einsperrung).
-[MBH. 14,443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.443) = [≈Вульг. 14.16.36](mbh/14.16.html#v36) = ≈крит. 14,16.35c
+[MBH. 14,443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.443) = [≈Vulg. 14.16.36](mbh/14.16.html#v36) = ≈krit. 14,16.35c
 [Spr. 3609.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3609)
-[MBH. 1,165.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.165) = [≈Вульг. 1.1.211](mbh/1.1.html#v211) = ≈крит. 01,1.152c [5,5225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5225) = [≈Вульг. 5.156.27](mbh/5.156.html#v27) = ≈крит. 05,153.27c *rāja˚* Gefangensetzung durch den Fürsten
+[MBH. 1,165.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.165) = [≈Vulg. 1.1.211](mbh/1.1.html#v211) = ≈krit. 01,1.152c [5,5225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5225) = [≈Vulg. 5.156.27](mbh/5.156.html#v27) = ≈krit. 05,153.27c *rāja˚* Gefangensetzung durch den Fürsten
 [HARIV. 3294.](https://sanskrit-lexicon-scans.github.io/hariv?3294) *vandhānmokṣayatu mām*
 [14368.](https://sanskrit-lexicon-scans.github.io/hariv?14368) [MĀLAV. 75.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?75) [RĀJA-TAR. 3,121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,121) *˚mudrā*
 [4,179.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,179)
 
 **3)** — 3) das Binden, Zusammenfügen in den verschiedensten Verbindungen (s. u. *bandh* 2.): *setorbandhaḥ, setu˚* die Errichtung eines Dammes, — einer Brücke
 [Spr. 2989.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2989)
-[MBH. 3,16312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16312) = [≈Вульг. 3.283.44](mbh/3.283.html#v44) = ≈крит. 03,267.44a
+[MBH. 3,16312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16312) = [≈Vulg. 3.283.44](mbh/3.283.html#v44) = ≈krit. 03,267.44a
 [RĀJA-TAR. 5,91.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,91) [114.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,114)
 [KATHĀS. 19,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,5) *saritām* Abdämmung
 [MĀRK. P. 68,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?68,40) Ueberbrückung (zugleich Fesselung)
 [Spr. 1185.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1185) (vgl. jedoch [4200](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4200)). = *gṛhādiveṣṭana*
 [ŚABDAR.] im [ŚKDR.] *prākāramūla˚*
 [MED. y. 20.](https://sanskrit-lexicon-scans.github.io/medini/app1?y,20) *bandhocchrayacitāni (śivirāṇi)* wohl Wall
-[MBH. 5,5202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5202) = [≈Вульг. 5.156.4](mbh/5.156.html#v4) = ≈крит. 05,153.4a *āsana˚* (hätte bei *āsana* unter 1, a gestellt werden müssen) das Sichsetzen
+[MBH. 5,5202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5202) = [≈Vulg. 5.156.4](mbh/5.156.html#v4) = ≈krit. 05,153.4a *āsana˚* (hätte bei *āsana* unter 1, a gestellt werden müssen) das Sichsetzen
 [RAGH. 2,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,6) *paryaṅka˚*
 [KUMĀRAS. 3,45.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,45) [59.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,59)
 [AŚOKĀVAD. 32.] *prāsādavātāyanadṛśyabandhaiḥ — añjalibhiḥ* das Zusammenfügen der hohlen Hände
@@ -57,7 +57,7 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [16], [18.] und auch
 [36] aufgeführt
 [RATIM.] und [SMARADĪP.] im [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?85) *kathā˚* Knüpfung der Erzählung so v. a. Einleitung
-[MBH. 1,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.59) = [≈Вульг. 1.1.105](mbh/1.1.html#v105) = ≈крит. 01,1.63c in der Unterschr.
+[MBH. 1,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.59) = [≈Vulg. 1.1.105](mbh/1.1.html#v105) = ≈krit. 01,1.63c in der Unterschr.
 
 **4)** — 4) das Heften, Richten: *deśe nābhicakranāsāgrādau cittasya bandhaḥ*
 [Verz. d. Oxf. H. 236,b, N.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?236)
@@ -100,11 +100,11 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [KATHĀS. 37,49.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,49) *bandhānmuktaḥ*
 [RĀJA-TAR. 3,122.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,122) *dharmabandhena baddho 'smi*
 [R. 2,106,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,8) *satya˚* _adj._ für den die Wahrheit eine Fessel ist, der an der Wahrheit festhält
-[MBH. 1,6779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6779) = [≈Вульг. 1.176.21](mbh/1.176.html#v21) = ≈крит. 01,166.17c
+[MBH. 1,6779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6779) = [≈Vulg. 1.176.21](mbh/1.176.html#v21) = ≈krit. 01,166.17c
   — ＋ PW — 8〉 *pratibaddha* verwickelt, schwer zu lösen.
 
 **9)** — 9) Sehne (am Körper): *pīvaraśca suvarṇaśca dṛḍhabandhaśca jāyate (mārjāraḥ)*
-[MBH. 5,5437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5437) = [≈Вульг. 5.160.113](mbh/5.160.html#v113) = ≈крит. 05,158.30c
+[MBH. 5,5437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5437) = [≈Vulg. 5.160.113](mbh/5.160.html#v113) = ≈krit. 05,158.30c
 
 **10)** — 10) Einfassung, Behälter: *ādhārastvambhasāṃ bandhaḥ*
 [H. 1096.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1096)
@@ -113,7 +113,7 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [H. an.] [MED.]
 
 **13)** — 13) Folge: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* so v. a. was Heil bringt
-[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](mbh/4.66.html#v21) = ≈крит. 04,61.21c
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Vulg. 4.66.21](mbh/4.66.html#v21) = ≈krit. 04,61.21c
 
 **14)** — 14) in der Rhet. Lautgefüge, Wortgefüge
 [KĀVYĀD. 1,47.] *˚pāruṣya*
@@ -144,7 +144,7 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 [RĀJA-TAR. 6,269](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,269)) Kār. 4 aus
 [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *bandhiṣyati*
 [HARIV. 14323.](https://sanskrit-lexicon-scans.github.io/hariv?14323) *bandhiṣye*
-[MBH. 3,10727](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727) = [≈Вульг. 3.134.24](mbh/3.134.html#v24) = ≈крит. 03,134.24a; *banddhum* (hier und da fälschlich *baddhum), bandhitum*
+[MBH. 3,10727](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727) = [≈Vulg. 3.134.24](mbh/3.134.html#v24) = ≈krit. 03,134.24a; *banddhum* (hier und da fälschlich *baddhum), bandhitum*
 [R. 2,18,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,23); *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
 
 **root-head-part3)** [RĀJA-TAR. 3,126.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,126) *baddhamauna* so v. a. Stillschweigen beobachtend
@@ -168,7 +168,7 @@ scheint ganz am Platz seiend, wohl angebracht zu bedeuten.
 [ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6) *anyanaupratibaddhām (nāvam)*
 [KĀM. NĪTIS. 7,33.] *dāmnā caivodare baddhvā pratyabandhadulūkhale*
 [HARIV. 3449.](https://sanskrit-lexicon-scans.github.io/hariv?3449) *śirasyetaṃ maṇiṃ rājā pratibadhnātu*
-[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Вульг. 10.16.34](mbh/10.16.html#v34) = ≈крит. 10,16.33a *pītapratibaddhavatsā*
+[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Vulg. 10.16.34](mbh/10.16.html#v34) = ≈krit. 10,16.33a *pītapratibaddhavatsā*
 [RAGH. 2,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,1)
 [SUŚR. 1,161,21.] *sthūlāntrapratibaddha* befestigt an, hängend an
 [258,10. 324,3.] einfassen: *yadi maṇistrapuṇi pratibadhyate*
@@ -176,7 +176,7 @@ scheint ganz am Platz seiend, wohl angebracht zu bedeuten.
 [ŚIŚ. 9,8.] *pratibaddha* verknüpft, verbunden
 [KAP. 1,101.] *yo yena pratibaddhaḥ syāt*
 [Spr. 2560.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2560) versehen mit: *dīptāṅgadayugapratibaddhamahābhuja*
-[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Вульг. 11.25.6](mbh/11.25.html#v6) = ≈крит. 11,25.6a *dharmārthapratibaddhatā*
+[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Vulg. 11.25.6](mbh/11.25.html#v6) = ≈krit. 11,25.6a *dharmārthapratibaddhatā*
 [H. 69.](https://sanskrit-lexicon-scans.github.io/abch2/app1?69) *paśuvatparatantratvena pratibaddhaḥ* so v. a. abhängig
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* dem Tode unterworfen
 [98.] *rasāntareṣu pratibaddharāgam* so v. a. harmonirend
@@ -195,7 +195,7 @@ scheint ganz am Platz seiend, wohl angebracht zu bedeuten.
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 4) Jmd von sich weisen, fern halten von sich: *pratyabadhnāccārthapatim*
 [DAŚAK.] in [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
 [DURGA] zu [NIR.] bei [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* so v. a. mit den B. will man Nichts zu thun haben
-[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Вульг. 8.45.38](mbh/8.45.html#v38) = ≈крит. 08,30.74c *pratibaddha = manohata, pratihata, hata*
+[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Vulg. 8.45.38](mbh/8.45.html#v38) = ≈krit. 08,30.74c *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)
 [H. 439.](https://sanskrit-lexicon-scans.github.io/abch2/app1?439)
 

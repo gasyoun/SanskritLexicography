@@ -12,27 +12,27 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 **2)** — 2) leben: *yasyai nikramaṇe ghṛtaṃ prajāḥ saṃjīvantīḥ pibanti*
 [TS. 1,7,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,2,4)
 [AV. 19,69,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.069.html#av19.069.03) *saṃjīva śaradaḥ śatam*
-[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) = [≈Вульг. 3.78.25](mbh/3.78.html#v25) = ≈крит. 03,77.23c *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
-[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) = [≈Вульг. 14.5.12](mbh/14.5.html#v12) = ≈крит. 14,5.11a [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) leben von (instr.): *kathaṃ svidvaiśyadharmeṇa *
+[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) = [≈Vulg. 3.78.25](mbh/3.78.html#v25) = ≈krit. 03,77.23c *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
+[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) = [≈Vulg. 14.5.12](mbh/14.5.html#v12) = ≈krit. 14,5.11a [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) leben von (instr.): *kathaṃ svidvaiśyadharmeṇa *
 
 * saṃjīvedbāhmaṇo na vā*
-[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917) = [≈Вульг. 12.78.1](mbh/12.78.html#v1) = ≈крит. 12,79.1a
+[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917) = [≈Vulg. 12.78.1](mbh/12.78.html#v1) = ≈krit. 12,79.1a
   — ＋ PW — 2〉 aufleben.
 Mit *punar* dass. *jīvita* wieder aufgelebt.
 
 **3)** — 3) zum Leben zurückkehren, wieder lebendig werden
 [ŚAT. BR. 3,8,2,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,27) [9,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,2,17)
-[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) = [≈Вульг. 14.67.14](mbh/14.67.html#v14) = ≈крит. 14,66.14c med.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
-[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) = [≈Вульг. 14.68.18](mbh/14.68.html#v18) = ≈крит. 14,67.18a [DRAUP. 9,4.] — caus. beleben: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
+[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) = [≈Vulg. 14.67.14](mbh/14.67.html#v14) = ≈krit. 14,66.14c med.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
+[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) = [≈Vulg. 14.68.18](mbh/14.68.html#v18) = ≈krit. 14,67.18a [DRAUP. 9,4.] — caus. beleben: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
 [ĀŚV. ŚR. 6,9.] *evaṃ saḥ — sarvam — saṃjīvayati*
 [M. 1,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,57) *mṛtāṃstānsamajīvayat*
-[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) = [≈Вульг. 3.246.19](mbh/3.246.html#v19) = ≈крит. 03,235.18a [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979) = [≈Вульг. 14.67.15](mbh/14.67.html#v15) = ≈крит. 14,66.15c
+[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) = [≈Vulg. 3.246.19](mbh/3.246.html#v19) = ≈krit. 03,235.18a [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979) = [≈Vulg. 14.67.15](mbh/14.67.html#v15) = ≈krit. 14,66.15c
 [RĀJA-TAR. 2,94.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,94) *saṃjīvita*
-[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) = [≈Вульг. 14.80.50](mbh/14.80.html#v50) = ≈крит. 14,81.10a *mriyamāṇānsaṃjīvayitum*
+[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) = [≈Vulg. 14.80.50](mbh/14.80.html#v50) = ≈krit. 14,81.10a *mriyamāṇānsaṃjīvayitum*
 [R. 4,51,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,51,20) *vṛkṣam*
-[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) = [≈Вульг. 1.43.8](mbh/1.43.html#v8) = ≈крит. 01,39.8c *āvikṣitam — vācā saṃjīvayanniva*
-[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) = [≈Вульг. 14.6.17](mbh/14.6.html#v17) = ≈крит. 14,6.17a *kṣipraṃ saṃjīvaya ca pārthivam*
-[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) = [≈Вульг. 3.6.16](mbh/3.6.html#v16) = ≈крит. 03,7.15a [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) = [≈Вульг. 3.136.14](mbh/3.136.html#v14) = ≈крит. 03,137.14a *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
+[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) = [≈Vulg. 1.43.8](mbh/1.43.html#v8) = ≈krit. 01,39.8c *āvikṣitam — vācā saṃjīvayanniva*
+[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) = [≈Vulg. 14.6.17](mbh/14.6.html#v17) = ≈krit. 14,6.17a *kṣipraṃ saṃjīvaya ca pārthivam*
+[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) = [≈Vulg. 3.6.16](mbh/3.6.html#v16) = ≈krit. 03,7.15a [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) = [≈Vulg. 3.136.14](mbh/3.136.html#v14) = ≈krit. 03,137.14a *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
 [16950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16950) *udbhrāntacetanām . sītāṃ māyeti śaṃsantī trijaṭā samajīvayat*
 [RAGH. 12,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,74) *mama vācamimāṃ prasuptāṃ saṃjīvayati*
 [BHĀG. P. 4,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,6) Jmd am Leben erhalten, ernähren: *krītānnaḥ sa divārātraṃ prāṇinaḥ samajīvayat*
@@ -40,7 +40,7 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
   — → PW — 3〉 seinen Lebensunterhalt haben, leben von (Instr., ausnahmsweise Loc.).
 
 **4)** — 4) sich in Etwas (acc.) fügen, Jmd Etwas gönnen: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
-[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Вульг. 7.11.47](mbh/7.11.html#v47) = ≈крит. 07,10.46c — caus. Jmd wieder zum Leben bringen
+[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Vulg. 7.11.47](mbh/7.11.html#v47) = ≈krit. 07,10.46c — caus. Jmd wieder zum Leben bringen
 [DAŚAK.] in [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 
 **caus)** — Vgl. *pratyujjīvana* .
@@ -50,22 +50,22 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 [VOP. 18,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,3) lebendig machen, beleben; Jmd am Leben lassen, Jmdes Leben erhalten so v. a. ihn nicht sterben lassen als auch ihn nicht tödten: *utāgaścakruṣaṃ devā devā jīvayathā punaḥ*
 [ṚV. 10,137,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.01)
 [ĀŚV. ŚR. 6,9.] *tānpunarjīvayāmāsa*
-[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) = [≈Вульг. 1.76.7](mbh/1.76.html#v7) = ≈крит. 01,71.6e *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
-[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) = [≈Вульг. 1.50.35](mbh/1.50.html#v35) = крит. — *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
-[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) = [≈Вульг. 1.43.1](mbh/1.43.html#v1) = ≈крит. 01,39.1c [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) = [≈Вульг. 1.43.3](mbh/1.43.html#v3) = ≈крит. 01,39.3c (med.).
-[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) = [≈Вульг. 1.50.34](mbh/1.50.html#v34) = крит. — [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) = [≈Вульг. 17.3.15](mbh/17.3.html#v15) = ≈крит. 17,3.14a *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
+[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) = [≈Vulg. 1.76.7](mbh/1.76.html#v7) = ≈krit. 01,71.6e *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
+[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) = [≈Vulg. 1.50.35](mbh/1.50.html#v35) = krit. — *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
+[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) = [≈Vulg. 1.43.1](mbh/1.43.html#v1) = ≈krit. 01,39.1c [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) = [≈Vulg. 1.43.3](mbh/1.43.html#v3) = ≈krit. 01,39.3c (med.).
+[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) = [≈Vulg. 1.50.34](mbh/1.50.html#v34) = krit. — [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) = [≈Vulg. 17.3.15](mbh/17.3.html#v15) = ≈krit. 17,3.14a *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
 [KATHĀS. 14,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,80) *jīvaya mṛtamiva dāsam*
 [GĪT. 12,6.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,6) *ajījivat*
 [BHAṬṬ. 15,110.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,110) *api māṃ jīvayiṣyadhvam*
-[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) = [≈Вульг. 3.282.34](mbh/3.282.html#v34) = ≈крит. 03,266.33c *tāṃ sakhīṃ māṃ ca jīvaya*
+[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) = [≈Vulg. 3.282.34](mbh/3.282.html#v34) = ≈krit. 03,266.33c *tāṃ sakhīṃ māṃ ca jīvaya*
 [KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) *tanme prāṇavyayenāpi jīvayaitān*
 [HIT. I,40.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,40) *jīvayeyamahaṃ kāmaṃ na tu tvaṃ jīvituṃ kṣamaḥ*
-[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) = [≈Вульг. 9.31.70](mbh/9.31.html#v70) = ≈крит. 09,30.66a *jahi śālvam — mainaṃ jīvaya*
-[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) = [≈Вульг. 3.22.22](mbh/3.22.html#v22) = ≈крит. 03,23.21c *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
+[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) = [≈Vulg. 9.31.70](mbh/9.31.html#v70) = ≈krit. 09,30.66a *jahi śālvam — mainaṃ jīvaya*
+[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) = [≈Vulg. 3.22.22](mbh/3.22.html#v22) = ≈krit. 03,23.21c *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
 [R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* so v. a. er tödtete ihn
 [BHAṬṬ. 15,122.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,122) Jmd leben lassen so v. a. ernähren, aufziehen: *kathaṃ hi vidhavānāthā — mithunaṃ jīvayiṣyāmi*
-[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) = [≈Вульг. 1.156.14](mbh/1.156.html#v14) = ≈крит. 01,144.15a *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
-[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) = [≈Вульг. 13.102.5](mbh/13.102.html#v5) = ≈крит. 13,105.5a *eṣo 'smān jīvayet*
+[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) = [≈Vulg. 1.156.14](mbh/1.156.html#v14) = ≈krit. 01,144.15a *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
+[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) = [≈Vulg. 13.102.5](mbh/13.102.html#v5) = ≈krit. 13,105.5a *eṣo 'smān jīvayet*
 [KATHĀS. 3,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,17) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,18) *jantūn jīvayituṃ tataḥ . svayamannapatiḥ — kṣitimavātarat*
 [RĀJA-TAR. 5,72.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,72)
 
@@ -78,10 +78,10 @@ Mit *punar* dass. *jīvita* wieder aufgelebt.
 [LĀṬY. 8,8,41.] *kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ*
 [ĪŚOP. 2.]
 [PRAB. 108,7.] *imāmavasthāṃ saṃprāptā madanyā kā jijīviṣet*
-[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) = [≈Вульг. 4.20.6](mbh/4.20.html#v6) = ≈крит. 04,19.5c *yāneva hatvā na jijīviṣāmaḥ*
+[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) = [≈Vulg. 4.20.6](mbh/4.20.html#v6) = ≈krit. 04,19.5c *yāneva hatvā na jijīviṣāmaḥ*
 [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) seinen Lebensunterhalt zu finden suchen, leben wollen von (instr.): *dhaninaṃ vāpyupārādhya vaiśyaṃ śūdro jijīviṣet*
 [M. 10,121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,121) *kaccinna bhedena jijīviṣanti suhṛdrūpā durhṛdaḥ*
-[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702) = [≈Вульг. 5.23.18](mbh/5.23.html#v18) = ≈крит. 05,23.18a
+[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702) = [≈Vulg. 5.23.18](mbh/5.23.html#v18) = ≈krit. 05,23.18a
 
 **desid-2)** — 2) *jujyūṣanti* sein Leben zu fristen suchen mit (instr.)
 [ŚAT. BR. 3,2,4,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,16) [5,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,3,11)
@@ -196,7 +196,7 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.](https://sanskrit-lexicon-scans.githu
 [BHĀG. P. 10,24,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,24,19)
 
 **T46 corr.)** — *abhyud* lies sich am Leben zu erhalten suchen, sich nähren und vgl.
-[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](mbh/5.135.html#v24) = ≈крит. 05,133.21c).
+[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Vulg. 5.135.24](mbh/5.135.html#v24) = ≈krit. 05,133.21c).
 
 **T47 block)** — *pratyud*
 [KATHĀS. 78,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?78,102) *˚jīvita*
