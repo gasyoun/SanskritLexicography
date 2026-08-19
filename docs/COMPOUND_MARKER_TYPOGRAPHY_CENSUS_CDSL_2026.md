@@ -298,7 +298,21 @@ item in this order:**
    (H2986): 27 dicts carry breve marks, 25 carry macron; 11 show collision with
    seam notation (MW-family).**
 10. **Gloss-language layering** — German/English/Latin/Russian mixing per
-    dict (`{%…%}` vs plain), for router/translation passes.
+    dict (`{%…%}` vs plain), for router/translation passes. **measured →
+    FINDINGS
+    [§573](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+    (H2987): `{%…%}` is not a language-typed tag — pwg/pw carry German at
+    66.0 %/64.9 % of entries, but bur (Burnouf) wraps **French** prose in it
+    (100 % of entries, a third Western language the task's own framing
+    missed) and ieg (Sircar) wraps front-matter dedications in it; mw and cae
+    use **zero** `{%…%}` despite dense English glosses, so a pivot-gloss
+    extractor must read tail text there, not grep the tag. The `<ab>` layer
+    is Latin/English in mw but German in gra, and 21 of 44 dicts tag no
+    abbreviations at all. koch.jsonl (Kochergina) is 99.98 % Russian by
+    construction (no markup needed) with a 25.8 % `см.`-cross-ref rate to
+    mask before treating a gloss as a sense. Router reading: pwg/pw for a
+    tag-delimited German pivot, mw/cae for English via tail-text extraction,
+    koch for Russian; bur (French) is out of scope for a DE/EN/RU router.**
 
 ## 6. Reproduce
 

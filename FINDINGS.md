@@ -1,6 +1,12 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§572 — homonym-splitting density spans 0–419 per 1 000 entries across the 44 dicts: 8 print an inline `<hom>N.` display, 14 split without displaying it, 22 split nothing; the high-density class (pui/inm/pe/mci/lrv/bop) is genre — name-indices splitting distinct persons, not sense-dictionaries splitting polysemy — and `agnihotra` itself splits mfn./n. in 6 dicts but stays one entry in 3, a 1:2-vs-1:1 join mismatch any headword matcher must carry; §570 — renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table keyed on the old stem; §569 — a bracketed `[Gen, unsp]` domain/period tag collides on the letters "Gen" with the genitive-case abbreviation and needs the same masking discipline as `{#…#}` Sanskrit spans; §566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§573 — gloss-language layering:
+`{%…%}` is not "German-or-English" — Burnouf (bur) wraps French prose in it,
+Sircar (ieg) wraps front-matter dedications in it, and Cappeller's own English
+dictionary (cae) plus MW use zero `{%…%}` at all despite dense English glosses;
+the `<ab>` abbreviation layer is Latin/English in mw but German in gra, and 21
+of 44 dicts tag no abbreviations at all; koch.jsonl (Kochergina) is 99.98 %
+Russian by construction with a 25.8 % `см.`-cross-ref rate; §572 — homonym-splitting density spans 0–419 per 1 000 entries across the 44 dicts: 8 print an inline `<hom>N.` display, 14 split without displaying it, 22 split nothing; the high-density class (pui/inm/pe/mci/lrv/bop) is genre — name-indices splitting distinct persons, not sense-dictionaries splitting polysemy — and `agnihotra` itself splits mfn./n. in 6 dicts but stays one entry in 3, a 1:2-vs-1:1 join mismatch any headword matcher must carry; §570 — renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table keyed on the old stem; §569 — a bracketed `[Gen, unsp]` domain/period tag collides on the letters "Gen" with the genitive-case abbreviation and needs the same masking discipline as `{#…#}` Sanskrit spans; §566 — `<div n=…>` is not a shared sense-hierarchy device: only pw/pwg/bor nest senses, PWG hides sense 1 in the head line in 25.2 % of hierarchical entries, and only PWG's own sense order may enter a pwg_ru card; §565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -7645,3 +7651,141 @@ one word rather than five different gods/kings/sages named Indra.
 > Verifiability: class A (every count and specimen reproducible from the
 > public [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) checkout with
 > the one-line `grep -o` commands above; no literature claim, per §557).
+
+### §573. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary
+
+🟢 **The `{%…%}` span is the CDSL digitizers' generic "running prose / translation" wrapper, not a language-typed tag.** Measured over all 44
+[csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+digitizations, per-entry (entry = one `<L>` block, language of an entry's
+`{%…%}` spans scored by German- vs English-function-word majority — `ambig`
+when the span carries no scored function word, e.g. a single noun phrase):
+
+| dict | entries | %`{%…%}` | de | en | ambig | %`<ab>` |
+|---|---|---|---|---|---|---|
+| **bur** | 19 776 | 100.0 | 450 | 3 560 | **15 765** | 93.8 |
+| ieg | 7 935 | 100.0 | 201 | 1 847 | 5 884 | 38.3 |
+| mw72 | 55 390 | 100.0 | 15 345 | 22 826 | 17 216 | 0.0 |
+| pgn | 485 | 100.0 | 4 | 122 | 359 | 0.0 |
+| pui | 17 512 | 100.0 | 252 | 2 086 | 15 174 | 0.0 |
+| sch | 29 125 | 100.0 | 291 | 4 017 | 24 817 | 0.0 |
+| ben | 17 316 | 99.9 | 115 | 6 588 | 10 604 | 96.3 |
+| mwe | 32 378 | 99.8 | 0 | 12 172 | 20 151 | 0.0 |
+| yat | 45 206 | 99.8 | 1 | 13 683 | 31 440 | 0.0 |
+| lan | 4 944 | 97.2 | 7 | 2 659 | 2 138 | 95.4 |
+| bop | 8 961 | 87.7 | 24 | 1 457 | 6 376 | 0.0 |
+| lrv | 53 441 | 83.1 | 0 | 9 083 | 35 345 | 0.0 |
+| mci | 2 643 | 81.5 | 160 | 857 | 1 137 | 0.0 |
+| ccs | 30 010 | 78.2 | 2 657 | 108 | 20 689 | 0.0 |
+| gra | 12 785 | 76.4 | 2 983 | 239 | 6 546 | 85.2 |
+| vei | 3 834 | 67.7 | 280 | 945 | 1 370 | 0.0 |
+| **pwg** | 123 366 | 66.0 | **48 926** | 1 628 | 30 885 | 59.0 |
+| **pw** | 170 556 | 64.9 | **64 289** | 1 895 | 44 546 | 33.7 |
+| bhs | 17 839 | 55.2 | 27 | 5 623 | 4 206 | 85.7 |
+| ap90 | 34 882 | 47.0 | 1 | 10 412 | 5 970 | 60.2 |
+| md | 20 749 | 46.6 | 2 | 8 543 | 1 124 | 60.6 |
+| inm | 12 647 | 45.3 | 54 | 1 298 | 4 373 | 0.0 |
+| stc | 24 574 | 44.1 | 451 | 2 447 | 7 942 | 94.1 |
+| pwkvn | 24 976 | 41.5 | 5 700 | 202 | 4 465 | 19.4 |
+| ap | 90 843 | 34.4 | 1 | 19 406 | 11 806 | 24.0 |
+| bor | 24 609 | 30.4 | 16 | 6 001 | 1 458 | 0.0 |
+| wil | 44 577 | 13.2 | 19 | 545 | 5 311 | 93.4 |
+| **cae** | 40 069 | **0.0** | 0 | 0 | 0 | 31.5 |
+| **mw** | 286 525 | **0.0** | 0 | 0 | 0 | 38.7 |
+
+(Remaining zero-or-near-zero-`{%…%}` dicts: gst 17.9 %, pe 6.7 %, acc 1.9 %,
+krm 0.1 %, and eight with none at all — abch, acph, acsj, ae, armh, fri,
+nmmb, shs, skd, vcp.)
+
+**Three residues the task's own framing ("German/English spans") missed.**
+
+1. **A third Western language is in scope: French.** `bur` (Burnouf's
+   *Dictionnaire Classique Sanscrit-Français*, 1866) wraps its French prose in
+   `{%…%}` at 100 % of entries — `bur.txt` line 2–3:
+   `{#a#}¦ {%a%} 1ʳᵉ lettre de l'alphabet sanscrit, nommée {%akāra.%}`. The
+   German/English word-majority heuristic correctly refuses to call this
+   either language (79.7 % of its `{%…%}` entries score `ambig`, 7th-highest
+   of the 25 dicts with >500 wrapped entries — a high ambig share alone is
+   not proof of a third language, since ccs/pui/sch/bop score higher from
+   short noun-phrase glosses under either heuristic). The confirmation is the
+   digitization's own title metadata, not the classifier: **an ambig-heavy
+   dict only becomes a hidden-language finding once cross-checked against
+   `<title>` metadata** — verified against `burheader.xml` line 8–11
+   (`<title type="key">Burnouf 1866</title>`, `<name>Burnouf,
+   Émile</name>`).
+2. **`{%…%}` also wraps non-gloss editorial prose.** `ieg` (Sircar's *Indian
+   Epigraphical Glossary*) hits 100 % `{%…%}` coverage not because every
+   entry has a translation span but because its front matter is wrapped the
+   same way — `ieg.txt` line 9–10:
+   `{%Carmichael Professor and Head of the Department of Ancient%}
+   {%Indian History and Culture, University of Calcutta%}` (a dedication, not
+   a gloss). The tag marks *any running prose distinct from the Sanskrit/
+   citation/abbreviation spans*, not "translation" specifically — a parser
+   that treats every `{%…%}` as a sense gloss will ingest dedications and
+   colophons as word meanings.
+3. **The Cappeller pair diverges on whether English gets the wrapper at
+   all.** `ccs` (Cappeller's German *Sanskrit-Wörterbuch*, 1887) wraps its
+   German glosses (78.2 % of entries, `ccs.txt` line 657:
+   `{#agnihotra/#}¦ {%n.%} Feueropfer.`); `cae` (Cappeller's *English*
+   Sanskrit-English dictionary, 1891, same lexicographer, one year earlier)
+   has **zero** `{%…%}` spans anywhere in 40 069 entries — its English gloss
+   is bare running text, `cae.txt` line 764–765:
+   `{#agnisAt#}¦ <ab>adv.</ab> into fire; {#˚kf#} burn.` `mw` (876 976 lines,
+   286 525 entries) is the same pattern at scale: zero `{%…%}`, English
+   glosses printed as unwrapped text after the last `<ab>`/`<ls>` tag. The
+   practical rule for a pwg_ru pivot-gloss extractor: **`{%…%}` presence is a
+   per-digitization markup choice, not a property of "having a translatable
+   gloss" — mw and cae must be read by extracting the tail text after the
+   entry's structural tags, not by grepping `{%…%}`.**
+
+**The `<ab>` abbreviation layer is itself language-specific, not uniformly
+Latin.** `mw`'s `<ab>` stock (38.7 % of entries carry at least one) is Latin/
+English lexicographic shorthand — `cf.` 11 620×, `id.` 4 401×, `q.v.` 3 542×,
+`v.l.` 3 542× (`mw.txt` line 29: `<ab>cf.</ab> <s>a/-karRa</s>`). `gra`
+(Grassmann, German) uses **German** abbreviations in the same tag — `d.`
+("das"), `u. s. w.` ("und so weiter"), `Vgl.` ("Vergleiche") — `gra.txt`
+line 11 and 19. A downstream abbreviation-expansion table keyed only on Latin
+forms (`cf.`, `e.g.`, `ib.`) will silently fail on `gra`, `pwg` (59.0 %
+`<ab>` coverage), and `pw` (33.7 %) — the Latin abbreviation set from §558 is
+an MW/English-family fact, not a cross-dict one. 21 of 44 dicts carry no
+`<ab>` tag at all (0.0 % column above), meaning their abbreviations — if any
+— are inline plain text, structurally invisible to a tag-based scan.
+
+**Russian layer: `koch` is the one source that is Russian by construction,
+not by markup.**
+[pwg-ru-data/corpus/koch.jsonl](https://github.com/gasyoun/pwg-ru-data/blob/main/corpus/koch.jsonl)
+(Kochergina 1978/2005, digitized as flat JSONL, not TEI — no `{%…%}` markup
+exists) holds 29 177 entries; **29 171 (99.98 %)** contain Cyrillic in the
+`gloss` field, the 6 exceptions being bare cross-reference stubs with no
+prose (e.g. `go-yajYa`: `गोयज्ञ /go-yajña/ m. /gomed_a/` — headword +
+grammar tag + a pointer, no Russian sentence). 7 522 entries (25.8 %) open
+with `см.` ("see") as a cross-reference marker — the Russian-tradition
+equivalent of MW's `<ab>cf.</ab>`/`q.v.` and PWG's `s.`. Grammatical labels
+inside the Russian gloss are still Latin-script shorthand
+(`(А. pr. /ghaṭṭate/ — I fut. /ghaṭṭiṣyate/, pf. /jaghaṭṭe/, aor.
+/aghaṭṭiṣṭa/, pp. /ghaṭṭita/)`, `-Gaww` entry) — Russian prose plus IAST plus
+Devanāgarī plus Latin-abbreviated grammar, four scripts/languages in one
+entry, none of them wrapped in a distinguishing tag the way `{%…%}` at least
+attempts to for the TEI-digitized dicts.
+
+**Router/pivot-gloss reading.** For a pwg_ru or mw_ru pivot pass: `pwg`/`pw`
+are the only large sources whose German layer is both high-coverage (66.0 % /
+64.9 %) and tag-delimited (`{%…%}`); `mw`/`cae` are high-coverage English but
+require tail-text extraction, not tag-grepping, because neither uses
+`{%…%}`; `koch` is the only Russian-native source and needs no language
+classifier — every entry is Russian by construction, only the cross-ref rate
+(25.8 %) needs masking before treating a `см.`-opening gloss as a sense.
+`bur` is French and out of scope for a DE/EN/RU router unless a French pivot
+is added.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · census script over
+> `csl-orig/v02/*/<dict>.txt` — per-`<L>`-entry split, `{%…%}` span extraction,
+> German/English function-word majority vote (ambig when no scored word
+> present), `<ab>` tag presence; koch.jsonl (Kochergina) scanned separately for
+> Cyrillic coverage and `см.` cross-ref rate. Specimens quoted from pwg.txt
+> L2418, ccs.txt L657, mw72.txt L44, wil.txt L958-959, bur.txt L2-3,
+> burheader.xml L8-11, mw.txt L29, gra.txt L11 and L19, cae.txt L764-765,
+> ieg.txt L9-10, koch.jsonl (slp1 keys `-aSrika`, `-Gaww`, `go-yajYa`).
+> Verifiability: class A (every count and specimen reproducible from the
+> public [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) checkout and
+> the private `pwg-ru-data/corpus/koch.jsonl`; per §557, no claim made about a
+> source with no measurable text).
