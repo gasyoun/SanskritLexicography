@@ -690,7 +690,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1308 (19-07-2026, Opus 4.8 claude-opus-4-8). government_index() reads s['de_raw'] (the German SOURCE sense text, identical across the RU and EN editions) via the shared extract_government() — the same authoritative reference set ab_frequency()/ls_stats() use — and marker spans render through the shared _render() layer. No RU/EN branch anywhere in the government surface; a future EN site build would show the identical government index. Language-neutral analysis layer, exactly like the H775 government sidecar precedent. Pinned by build_article_site.py --selftest (selftest_government).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651"
+      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
     }
   },
   {
@@ -1404,7 +1404,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
       "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
-      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651"
+      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
     }
   },
   {
@@ -1423,7 +1423,48 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_links.py": "1594100634c0629cc02a94cdf9aaecf79d655cdb3a1ec4fa0842af6188a33a7c",
-      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651"
+      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
+    }
+  },
+  {
+    "id": "mbh_coordinate_triple_h3152",
+    "mechanism": "H3152 coordinate triple: mbh_locus.MbhLocusIndex joins csl-atlas mbh_vulgate_critical_presence.csv (including the previously unsurfaced `bori_locus` column) onto a `MBH. P,N` citation and returns Calcutta + vulgate + critical coordinates plus a presence verdict; build_article_site._mbh_triple_html/_mbh_triple_md render them beside the scan link, replacing H2845's mute `E`/`E-dagger` mark, through the same shared _render() layer. The vulgate coordinate links to our own IAST verse pages (build_mbh_verse_pages.py), with sanatana.in kept beside it as the source of record.",
+    "files": [
+      "src/mbh_locus.py",
+      "src/build_mbh_verse_pages.py",
+      "src/pilot/build_article_site.py"
+    ],
+    "languages": [
+      "ru",
+      "de",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H3152 (19-08-2026, Opus 5 `claude-opus-5`). The lookup is a text-vs-text join between two Sanskrit witnesses and never consults translation prose, so every edition gets the SAME coordinates, the same IAST href and the same presence verdict. Unlike H2845's `E` mark, however, the triple prints WORDS, so it cannot be byte-identical across editions and is NOT claimed to be: `_TRIPLE_STRINGS` carries ru/de/en chrome and `_triple_strings(lang)` is the single substitution point, exactly the shared-substitution-point future that the H2845 entry anticipated. Shipping it unlocalised would have put Russian labels on the German and English cards; the parity gate caught that before merge. Pinned by build_article_site.selftest_citations, which asserts German and English chrome on the DE/EN editions AND that all three carry identical coordinates and the identical IAST href.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/mbh_locus.py": "d46dea2aade8bcaa097a3124576446bad5eb731d0425494334d8c700e322ed14",
+      "src/build_mbh_verse_pages.py": "b9c148f95cbe721ec2725b27cdec6001e4b1bc82487bc07b2f7f08ecabcf39b1",
+      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
+    }
+  },
+  {
+    "id": "reglue_card_language_h3152",
+    "mechanism": "H3152 B5: build_reglue.render_md(obj, lang) emits the printed re-glue card in Russian (`<key1>.md`, from each row's `ru`) and in German (`<key1>.de.md`, from the same row's `de`), from ONE object and ONE loop. Insertion points, the delta sign, the badge and the binding label are computed once and shared; only the body field and the card chrome differ by language. insertion_points() then re-reads BOTH rendered cards and refuses the build when their attachment points disagree.",
+    "files": [
+      "src/build_reglue.py",
+      "src/reglue_delta.py"
+    ],
+    "languages": [
+      "ru",
+      "de"
+    ],
+    "verdict": "SHARED",
+    "note": "H3152 (19-08-2026, Opus 5 `claude-opus-5`). An insertion point is a property of the STRUCTURE, not of the language, so the two glue renderings must agree on it exactly — that is asserted, not assumed: the parity gate parses the emitted markdown rather than comparing the shared object (an object-level comparison would be true by construction and prove nothing). The delta sign is deliberately computed from the GERMAN originals on both sides, because the restatement relation holds between the sources and not between their translations; the Russian card therefore shows a sign derived from German, and that is intended, not a leak. LANG_TITLE/LANG_HOM/LANG_LEGEND/LANG_BOUND/LANG_UNBOUND are the per-language substitution points. Pinned by build_reglue.selftest (German bodies on the German card, identical insertion points) and by the 15-headword pilot build, which reports parity for every card.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/build_reglue.py": "e891a7b9e486b2f049f58e43077e07882d2a9f8ee8a94c61a07fe14083827655",
+      "src/reglue_delta.py": "e7dcc0f24822ed2e80f2e055495b509050e5ecdb40355a0b7db174d7cd9e2a6b"
     }
   },
   {
@@ -1440,7 +1481,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H2005 (01-08-2026, Grok 4.5 `grok-4.5`, Sonnet-tier handoff override). MG R4 (H1305) ruled `ed. Bomb.` → «Бомбейская ред.»; store rewrite of in-ls text would break pwg_sources. EN has no equivalent Cyrillic display form. Pinned by ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve.",
     "tracking": "H2005",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651",
+      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967",
       "src/pilot/ls_enrichment_selftest.py": "f60dc7df6005ecef81e855f83b431bb0c8397b456211b0ffcdc0f4e646f15df6"
     }
   },

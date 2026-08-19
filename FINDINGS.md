@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§576 — cross-reference markers
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§577 — a resolver that mints a well-formed URL is not evidence the address exists: `ls_resolver` places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for an INVENTED address; a resolve-only split rule proposed 2,838 pwg lines of which 0 were correct, while the real population was 141 lines in pw; §576 — cross-reference markers
 (см./s./vide/Vgl./q.v./=) are four unrelated edge types, not one convention:
 `s.`/`siehe` and `=` are genuine graph edges to a real headword, `Vgl.` is a
 weaker "compare" edge frequently pointing at a citation not a lemma, `q.v.`
@@ -49,7 +49,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §577) whatever its section, so existing numbers never shift; when a finding is later
+(currently §578) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -312,6 +312,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§573. The leading hyphen has two senses, but no dictionary marks which — Wilson is 100 % inflectional, Macdonell is 83 % compound-member/2 % inflectional/15 % a third (taddhita) class the two-way split cannot hold](#573-the-leading-hyphen-has-two-senses-but-no-dictionary-marks-which--wilson-is-100--inflectional-macdonell-is-83--compound-member2--inflectional15--a-third-taddhita-class-the-two-way-split-cannot-hold) — Wilson 49,487/49,487 leading-hyphen runs read as inflection; MD's `{@-X@}` overloads compound-member/inflection/taddhita-derivational; Whitney's Roots and Grammar use two different devices under one name. Ships a 4-rule markup-context disambiguation table.
 - 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
 - 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
+- 🔴 [§577. A citation resolver that mints a well-formed URL is not evidence the address exists — `ls_resolver` happily places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for a split or a wrapper](#577-a-citation-resolver-that-mints-a-well-formed-url-is-not-evidence-the-address-exists--ls_resolver-happily-places-v-9999999-so-resolves-cannot-be-the-acceptance-test-for-a-split-or-a-wrapper) — the resolver is a formatter, not a validator: it range-checks nothing. Any pass that INVENTS an address (splitting a multi-address `<ls>`, wrapping a bare citation) and accepts it because a URL came back will mint links that work and point at the wrong place — a worse failure than no link, because it looks right. Measured on pwg.txt: a resolve-only rule proposed 2,838 splits, of which 0 were correct; page references `11087 (p. 572)`, note markers `83, N. 6` and Oxford column letters `100,a. 101,b` all "resolve". The correct population was in `pw` (141), not `pwg` (0).
 - 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
 ## Grammar & morphology data
 
@@ -8184,3 +8185,55 @@ rather than a key.
 > Mylius rule: cae's `s.` sense and ap90/bhs/lrv/inm's full `q.v.` markup
 > shape are reported as measured counts only, not asserted as resolved
 > "see"-graph edges without a preface cross-check.
+
+### §577. A citation resolver that mints a well-formed URL is not evidence the address exists — `ls_resolver` happily places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for a split or a wrapper
+
+🔴 **`generate_href` is a formatter, not a validator.** Asked for
+`ṚV. 99,999,999` it returns
+`rvlinks/rvhymns/rv99.999.html#rv99.999.999` — a well-formed URL for a maṇḍala
+that does not exist. It range-checks nothing, and it is right not to: for a
+citation the source already wrapped, the address came from PWG and is presumed
+real, so the resolver's job is to format it.
+
+The trap is any pass that **invents** an address and then uses the resolver as
+its acceptance test. Two such passes were built in H3152 — splitting a
+multi-address `<ls>` into one element per address, and wrapping a bare
+Ṛgveda/Atharvaveda address that carries no element at all. Both are shaped so
+that "the resolver gave me a href" feels like proof. It is not. It only proves
+the string was formattable.
+
+**Measured, on `csl-orig/v02/pwg/pwg.txt`.** A resolve-only split rule proposed
+**2,838 lines**. Every one of them would have produced a second link that
+resolves — and points somewhere else entirely:
+
+| element | what the resolve-only rule produced | what it actually is |
+|---|---|---|
+| `<ls>P. 4,3,66, <is n="Vārttika">Vārtt.</is> 2. 3</ls>` | `<ls n="P.">3</ls>` → Pāṇini **sūtra** 3 | Vārttika 3 |
+| `<ls n="MBH. 3,">11087 (p. 572)</ls>` | `572)` as a second address | a page reference |
+| `<ls n="HARIV.">83, N. 6</ls>` | `6` as a second address | a note marker |
+| `Verz. d. Oxf. H. 100,a. 101,b` | a pair of addresses | catalogue column letters |
+
+Under a rule that additionally requires every address to be **purely numeric**,
+all addresses to share a **component count**, and the element body to carry **no
+nested markup**, `pwg` proposes **zero** — its genuine multi-address citations
+already use the `n=` continuation form. The real population was in the sibling
+dictionary `pw`: **141 lines**, all correct. Aiming at the dictionary the plan
+named, on the strength of "it resolves", would have queued 2,838 lines of damage
+into a corrections batch.
+
+**The generalisation.** For a derived link, the acceptance test must be a
+property of the *address* (does this book/hymn/verse exist; is this shape a
+sibling of its neighbours), never a property of the *URL* (did a string come
+back). A wrapper that mints its own citations therefore carries its own range
+table — `ṚV` ≤ 10 maṇḍalas, `AV` ≤ 20 books — even though the resolver it calls
+does not.
+
+**Corollary already in force elsewhere:** the same asymmetry decides
+recension identity. `AV(P) 9.10,10` is Paippalāda; the Śaunaka `avlinks` URL for
+`AV. 9,10,10` would format perfectly and assert a false identity between two
+recensions, so it is refused rather than linked.
+
+Evidence: `RussianTranslation/src/ls_split.py::splittable` and its selftest (every
+refusal is pinned on a real `pwg.txt` line), `nws_citation_wrap.py::_accept`
+(`_MAX_BOOK`), and `ls_split_changefile.py --dict pwg|pw --count`. Full write-up:
+`RussianTranslation/pwg_ru/H3152_REGLUE2_CITATION_LAYER_TYPOLOGY_REPORT_19-08-2026.md`.

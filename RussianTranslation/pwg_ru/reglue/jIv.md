@@ -1,214 +1,215 @@
-# Re-glue — jIv
+Re-glue — jIv
 
-## h0
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
 
-**1)** <div n="p">— {#pratisam#} {%ожить%}: {#vAtAtapaklAntamivApraDfzyaM varzeRa vIjaM pratisaMjijIve#}
-<ls>R. 5,28,16.</ls>
-  — [PW·restate] √{#jIv#}¦, {#jI/vati#} (метрически также <ab>Med.</ab>)
-<div n="1">— 1〉 {%жить, быть живым, — оставаться в живых%}. {#jIva jIva#} {%да живешь ты долго!%} Также с <ab>Acc.</ab> {#jIvikAm, jI/vant#} и {#jIvita#} (в виде исключения) {%живущий, живой, еще живой%}. {#jIvangacCati#} так <ab>v. a.</ab> {%остается в живых%} <ls n="Chr.">57,2</ls>.
+## омоним h0
 
-**2)** <div n="1">— 2) {%жить%}: {#yasyE^ ni\krama^Re Gf\taM pra\jAH sa\MjIva^ntI\H piba^nti#}
-<ls>TS. 1,7,2,4.</ls>
-<ls>AV. 19,69,3.</ls> {#saMjIva SaradaH Satam#}
-<ls>MBH. 3,3054.</ls> {#saMjIvya kAlamizwaM ca saSarIro divaM gataH#}
-<ls n="MBH.">14,103.</ls> <ls>BHĀG. P. 4,21,47.</ls> {%жить от%} (<ab>instr.</ab>): {#kaTaM svidvESyaDarmeRa #}
-[Page3-0114]
-{# saMjIvedbAhmaRo na vA#}
-<ls>MBH. 12,2917.</ls>
-  — [PW·restate] <div n="1">— 2〉 {%ожить%}.
-<div n="p">С {#punar#} <ab>dass.</ab> {#jIvita#} {%снова ожил%}.
+**1)** — *pratisam* ожить: *vātātapaklāntamivāpradhṛṣyaṃ varṣeṇa vījaṃ pratisaṃjijīve*
+[R. 5,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,16)
+  — → PW √*jīv*, *jīvati* (метрически также Med.)
+— 1〉 жить, быть живым, — оставаться в живых. *jīva jīva* да живешь ты долго! Также с Acc. *jīvikām, jīvant* и *jīvita* (в виде исключения) живущий, живой, еще живой. *jīvangacchati* так преим. остается в живых [57,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57).
 
-**3)** <div n="1">— 3) {%вернуться к жизни, снова ожить%}
-<ls>ŚAT. BR. 3,8,2,27.</ls> <ls n="ŚAT. BR.">9,4,2,17.</ls>
-<ls>MBH. 14,1978.</ls> <ab>med.</ab>: {#prARAMstyakzyAmi govinda nAyaM saMjIvate yadA#}
-<ls n="MBH. 14,">2001.</ls> <ls>DRAUP. 9,4.</ls> — <ab>caus.</ab> {%оживлять%}: {#saMjIvikA nAma sTa tA imamamuM saMjIvayata#}
-<ls>ĀŚV. ŚR. 6,9.</ls> {#evaM saH — sarvam — saMjIvayati#}
-<ls>M. 1,57.</ls> {#mftAMstAnsamajIvayat#}
-<ls>MBH. 3,15027.</ls> <ls n="MBH.">14,1979.</ls>
-<ls>RĀJA-TAR. 2,94.</ls> {#saMjIvita#}
-<ls>MBH. 14,2390.</ls> {#mriyamARAnsaMjIvayitum#}
-<ls>R. 4,51,20.</ls> {#vfkzam#}
-<ls>MBH. 1,1773. fg.</ls> {#Avikzitam — vAcA saMjIvayanniva#}
-<ls n="MBH.">14,136.</ls> {#kzipraM saMjIvaya ca pArTivam#}
-<ls n="MBH.">3,277.</ls> <ls n="MBH. 3,">10818.</ls> {#kIrtirhi puruzaM loke saMjIvayati mAtfvat#}
-<ls n="MBH. 14,">16950.</ls> {#udBrAntacetanAm . sItAM mAyeti SaMsantI trijawA samajIvayat#}
-<ls>RAGH. 12,74.</ls> {#mama vAcamimAM prasuptAM saMjIvayati#}
-<ls>BHĀG. P. 4,9,6.</ls> {%поддерживать жизнь кого-л., кормить%}: {#krItAnnaH sa divArAtraM prARinaH samajIvayat#}
-<ls>RĀJA. 2,28.</ls>
-  — [PW·restate] <div n="1">— 3〉 {%иметь средства к существованию, жить от%} (<ab>Instr.</ab>, в виде исключения <ab>Loc.</ab>).
+**2)** — 2) жить: *yasyai nikramaṇe ghṛtaṃ prajāḥ saṃjīvantīḥ pibanti*
+[TS. 1,7,2,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,7,2,4)
+[AV. 19,69,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.069.html#av19.069.03) *saṃjīva śaradaḥ śatam*
+[MBH. 3,3054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3054) = [≈Вульг. 3.78.25](mbh/3.78.html#v25) = ≈крит. 03,77.23c *saṃjīvya kālamiṣṭaṃ ca saśarīro divaṃ gataḥ*
+[14,103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.103) = [≈Вульг. 14.5.12](mbh/14.5.html#v12) = ≈крит. 14,5.11a [BHĀG. P. 4,21,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,47) жить от (instr.): *kathaṃ svidvaiśyadharmeṇa *
 
-**4)** 4) {%смиряться с чем-л.%} (<ab>acc.</ab>), {%желать кому-л. чего-л.%}: {#yAM tAM SriyamasUyAma purA dfzwvA yuDizWire . adya tAmanujIvAmaH#}
-<ls>MBH. 7,428.</ls> — <ab>caus.</ab> {%возвращать кого-л. к жизни%}
-<ls>DAŚAK.</ls> в <ls>BENF. Chr. 187,9.</ls>
+* saṃjīvedbāhmaṇo na vā*
+[MBH. 12,2917.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2917) = [≈Вульг. 12.78.1](mbh/12.78.html#v1) = ≈крит. 12,79.1a
+  — ＋ PW — 2〉 ожить.
+С *punar* то же *jīvita* снова ожил.
 
-**caus)** Caus. <ab>Vgl.</ab> {#pratyujjIvana#}.
+**3)** — 3) вернуться к жизни, снова ожить
+[ŚAT. BR. 3,8,2,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,2,27) [9,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,2,17)
+[MBH. 14,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1978) = [≈Вульг. 14.67.14](mbh/14.67.html#v14) = ≈крит. 14,66.14c мед.: *prāṇāṃstyakṣyāmi govinda nāyaṃ saṃjīvate yadā*
+[2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2001) = [≈Вульг. 14.68.18](mbh/14.68.html#v18) = ≈крит. 14,67.18a [DRAUP. 9,4.] — caus. оживлять: *saṃjīvikā nāma stha tā imamamuṃ saṃjīvayata*
+[ĀŚV. ŚR. 6,9.] *evaṃ saḥ — sarvam — saṃjīvayati*
+[M. 1,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,57) *mṛtāṃstānsamajīvayat*
+[MBH. 3,15027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15027) = [≈Вульг. 3.246.19](mbh/3.246.html#v19) = ≈крит. 03,235.18a [14,1979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1979) = [≈Вульг. 14.67.15](mbh/14.67.html#v15) = ≈крит. 14,66.15c
+[RĀJA-TAR. 2,94.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,94) *saṃjīvita*
+[MBH. 14,2390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2390) = [≈Вульг. 14.80.50](mbh/14.80.html#v50) = ≈крит. 14,81.10a *mriyamāṇānsaṃjīvayitum*
+[R. 4,51,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,51,20) *vṛkṣam*
+[MBH. 1,1773. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1773) = [≈Вульг. 1.43.8](mbh/1.43.html#v8) = ≈крит. 01,39.8c *āvikṣitam — vācā saṃjīvayanniva*
+[14,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.136) = [≈Вульг. 14.6.17](mbh/14.6.html#v17) = ≈крит. 14,6.17a *kṣipraṃ saṃjīvaya ca pārthivam*
+[3,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.277) = [≈Вульг. 3.6.16](mbh/3.6.html#v16) = ≈крит. 03,7.15a [10818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10818) = [≈Вульг. 3.136.14](mbh/3.136.html#v14) = ≈крит. 03,137.14a *kīrtirhi puruṣaṃ loke saṃjīvayati mātṛvat*
+[16950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.16950) *udbhrāntacetanām . sītāṃ māyeti śaṃsantī trijaṭā samajīvayat*
+[RAGH. 12,74.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,74) *mama vācamimāṃ prasuptāṃ saṃjīvayati*
+[BHĀG. P. 4,9,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,6) поддерживать жизнь кого-л., кормить: *krītānnaḥ sa divārātraṃ prāṇinaḥ samajīvayat*
+[RĀJA. 2,28.]
+  — → PW — 3〉 иметь средства к существованию, жить от (Ins., в виде исключения Loc.).
 
-**caus-1)** Caus. 1) {#jIvayati#} (в эпосе также {#˚te)#}; <ab>aor.</ab> {#ajIjivat#} и {#ajijIvat#}
-<ls>P. 7,4,3.</ls>
-<ls>VOP. 18,3.</ls> {%оживлять, оживить; оставлять кого-л. в живых, сохранять чью-л. жизнь%} — и в смысле <ab>v. a.</ab> {%не дать ему умереть%}, и в смысле {%не убивать его%}: {#utA^gaSca\kruza^M devA\ devA^ jI\vaya^TA\ puna^H#}
-<ls>ṚV. 10,137,1.</ls>
-<ls>ĀŚV. ŚR. 6,9.</ls> {#tAnpunarjIvayAmAsa#}
-<ls>MBH. 1,3190.</ls> {#dazwaM yadi mayA vipraH pArTivaM jIvayizyati#}
-<ls n="MBH. 1,">1995.</ls> {#vfkzaM mayA dazwamimaM jIvaya#}
-<ls n="MBH. 1,">1766.</ls> <ls n="MBH. 1,">1768</ls> (<ab>med.</ab>).
-<ls n="MBH. 1,">1994.</ls> <ls n="MBH.">17,87.</ls> {#etAM kzIRAyuzam — svAyuzo 'rDena jIvaya#}
-<ls>KATHĀS. 14,80.</ls> {#jIvaya mftamiva dAsam#}
-<ls>GĪT. 12,6.</ls> {#ajIjivat#}
-<ls>BHAṬṬ. 15,110.</ls> {#api mAM jIvayizyaDvam#}
-<ls>MBH. 3,16230.</ls> {#tAM saKIM mAM ca jIvaya#}
-<ls>KATHĀS. 4,16.</ls> {#tanme prARavyayenApi jIvayEtAn#}
-<ls>HIT. I,40.</ls> {#jIvayeyamahaM kAmaM na tu tvaM jIvituM kzamaH#}
-<ls>MBH. 9,1812.</ls> {#jahi SAlvam — mEnaM jIvaya#}
-<ls n="MBH.">3,870.</ls> {#kaTaM SatruH kulInaM mAM sugrIvo jIvayizyati#}
-<ls>R. 4,55,8.</ls> {#ajijIvadyaTA na tam#} — в знач. <ab>v. a.</ab> {%он убил его%}
-<ls>BHAṬṬ. 15,122.</ls> {%позволять кому-л. жить%}, а также <ab>v. a.</ab> {%кормить, воспитывать%}: {#kaTaM hi viDavAnATA — miTunaM jIvayizyAmi#}
-<ls>MBH. 1,6152.</ls> {#hastiSiSuM paridyUnamamAtfkam — jIvayAmAsa sAnukroSaH#}
-<ls n="MBH.">13,4847.</ls> {#ezo 'smAn jIvayet#}
-<ls>KATHĀS. 3,17.</ls> <ls n="KATHĀS. 3,">18.</ls> {#jantUn jIvayituM tataH . svayamannapatiH — kzitimavAtarat#}
-<ls>RĀJA-TAR. 5,72.</ls>
+**4)** 4) смиряться с чем-л. (acc.), желать кому-л. чего-л.: *yāṃ tāṃ śriyamasūyāma purā dṛṣṭvā yudhiṣṭhire . adya tāmanujīvāmaḥ*
+[MBH. 7,428.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.428) = [≈Вульг. 7.11.47](mbh/7.11.html#v47) = ≈крит. 07,10.46c — caus. возвращать кого-л. к жизни
+[DAŚAK.] в [BENF. Chr. 187,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187)
 
-**caus-2)** Caus. 2) {#jIvApayati#} {%возвращать кого-л. к жизни, воскрешать%}
-<ls>VET. 18,8. 14.</ls> {#jIvApita#}
-<ls n="VET.">6. 16. 19,1. 34,1.</ls> — <ab>desid.</ab>
+**caus)** Caus. ср. *pratyujjīvana*.
 
-**desid-1)** Desid. 1) {#jijIvizati#} {%хотеть жить, желать жить%}: {#jijIvizet#}
-<ls>KĀTY. ŚR. 22,6,20.</ls>
-<ls>LĀṬY. 8,8,41.</ls> {#kurvanneveha karmARi jijIvizecCataM samAH#}
-<ls>ĪŚOP. 2.</ls>
-<ls>PRAB. 108,7.</ls> {#imAmavasTAM saMprAptA madanyA kA jijIvizet#}
-<ls>MBH. 4,615.</ls> {#yAneva hatvA na jijIvizAmaH#}
-<ls>BHAG. 2,6.</ls> {%стремиться найти пропитание, хотеть жить чем-л.%} (<ab>instr.</ab>): {#DaninaM vApyupArADya vESyaM SUdro jijIvizet#}
-<ls>M. 10,121.</ls> {#kaccinna Bedena jijIvizanti suhfdrUpA durhfdaH#}
-<ls>MBH. 5,702.</ls>
+**caus-1)** Caus. 1) *jīvayati* (в эпосе также *˚te)*; aor. *ajījivat* и *ajijīvat*
+[P. 7,4,3.](https://ashtadhyayi.com/sutraani/7/4/3)
+[VOP. 18,3.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?18,3) оживлять, оживить; оставлять кого-л. в живых, сохранять чью-л. жизнь — и в смысле преим. не дать ему умереть, и в смысле не убивать его: *utāgaścakruṣaṃ devā devā jīvayathā punaḥ*
+[ṚV. 10,137,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.137.html#rv10.137.01)
+[ĀŚV. ŚR. 6,9.] *tānpunarjīvayāmāsa*
+[MBH. 1,3190.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3190) = [≈Вульг. 1.76.7](mbh/1.76.html#v7) = ≈крит. 01,71.6e *daṣṭaṃ yadi mayā vipraḥ pārthivaṃ jīvayiṣyati*
+[1995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1995) = [≈Вульг. 1.50.35](mbh/1.50.html#v35) = крит. — *vṛkṣaṃ mayā daṣṭamimaṃ jīvaya*
+[1766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1766) = [≈Вульг. 1.43.1](mbh/1.43.html#v1) = ≈крит. 01,39.1c [1768](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1768) = [≈Вульг. 1.43.3](mbh/1.43.html#v3) = ≈крит. 01,39.3c (мед.).
+[1994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1994) = [≈Вульг. 1.50.34](mbh/1.50.html#v34) = крит. — [17,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?17.87) = [≈Вульг. 17.3.15](mbh/17.3.html#v15) = ≈крит. 17,3.14a *etāṃ kṣīṇāyuṣam — svāyuṣo 'rdhena jīvaya*
+[KATHĀS. 14,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,80) *jīvaya mṛtamiva dāsam*
+[GĪT. 12,6.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,6) *ajījivat*
+[BHAṬṬ. 15,110.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,110) *api māṃ jīvayiṣyadhvam*
+[MBH. 3,16230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16230) = [≈Вульг. 3.282.34](mbh/3.282.html#v34) = ≈крит. 03,266.33c *tāṃ sakhīṃ māṃ ca jīvaya*
+[KATHĀS. 4,16.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,16) *tanme prāṇavyayenāpi jīvayaitān*
+[HIT. I,40.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,40) *jīvayeyamahaṃ kāmaṃ na tu tvaṃ jīvituṃ kṣamaḥ*
+[MBH. 9,1812.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1812) = [≈Вульг. 9.31.70](mbh/9.31.html#v70) = ≈крит. 09,30.66a *jahi śālvam — mainaṃ jīvaya*
+[3,870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.870) = [≈Вульг. 3.22.22](mbh/3.22.html#v22) = ≈крит. 03,23.21c *kathaṃ śatruḥ kulīnaṃ māṃ sugrīvo jīvayiṣyati*
+[R. 4,55,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,55,8) *ajijīvadyathā na tam* — в знач. преим. он убил его
+[BHAṬṬ. 15,122.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,122) позволять кому-л. жить, а также преим. кормить, воспитывать: *kathaṃ hi vidhavānāthā — mithunaṃ jīvayiṣyāmi*
+[MBH. 1,6152.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6152) = [≈Вульг. 1.156.14](mbh/1.156.html#v14) = ≈крит. 01,144.15a *hastiśiśuṃ paridyūnamamātṛkam — jīvayāmāsa sānukrośaḥ*
+[13,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4847) = [≈Вульг. 13.102.5](mbh/13.102.html#v5) = ≈крит. 13,105.5a *eṣo 'smān jīvayet*
+[KATHĀS. 3,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,17) [18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,18) *jantūn jīvayituṃ tataḥ . svayamannapatiḥ — kṣitimavātarat*
+[RĀJA-TAR. 5,72.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,72)
 
-**desid-2)** Desid. 2) {#ju/jyUzanti#} {%стараться перебиваться, добывать себе пропитание чем-л.%} (<ab>instr.</ab>)
-<ls>ŚAT. BR. 3,2,4,16.</ls> <ls n="ŚAT. BR. 3,">5,3,11.</ls>
+**caus-2)** Caus. 2) *jīvāpayati* возвращать кого-л. к жизни, воскрешать
+[VET. 18,8. 14.] *jīvāpita*
+[6. 16. 19,1. 34,1.] — desid.
 
-**desid-3)** Desid. 3) {#jijyUzita#} {%тот, кто стремится кормиться чем-л.%} (<ab>instr.</ab>): {#brahmabanDavena, vESyatayA, SUdratayA#}
-<ls>AIT. BR. 7,29.</ls> — {#jIvita#} <ab>s.</ab> <ab>bes.</ab>
+**desid-1)** Desid. 1) *jijīviṣati* хотеть жить, желать жить: *jijīviṣet*
+[KĀTY. ŚR. 22,6,20.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,20)
+[LĀṬY. 8,8,41.] *kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ*
+[ĪŚOP. 2.]
+[PRAB. 108,7.] *imāmavasthāṃ saṃprāptā madanyā kā jijīviṣet*
+[MBH. 4,615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.615) = [≈Вульг. 4.20.6](mbh/4.20.html#v6) = ≈крит. 04,19.5c *yāneva hatvā na jijīviṣāmaḥ*
+[BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) стремиться найти пропитание, хотеть жить чем-л. (instr.): *dhaninaṃ vāpyupārādhya vaiśyaṃ śūdro jijīviṣet*
+[M. 10,121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,121) *kaccinna bhedena jijīviṣanti suhṛdrūpā durhṛdaḥ*
+[MBH. 5,702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.702) = [≈Вульг. 5.23.18](mbh/5.23.html#v18) = ≈крит. 05,23.18a
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#upajIvaka#} <ab>fgg.</ab>
+**desid-2)** Desid. 2) *jujyūṣanti* стараться перебиваться, добывать себе пропитание чем-л. (instr.)
+[ŚAT. BR. 3,2,4,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,16) [5,3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,5,3,11)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#saMjIvana, saMjijIvayizu#} .
+**desid-3)** Desid. 3) *jijyūṣita* тот, кто стремится кормиться чем-л. (instr.): *brahmabandhavena, vaiśyatayā, śūdratayā*
+[AIT. BR. 7,29.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,29) — *jīvita* см. особ.
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#jīv#} [Ved , unsp] жить. [ śatám śarádas : жить сто осеней (лет). ] Кауз.: оживлять, давать жизнь. [NWS: Graßmann 1873 (1996) : 491]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *upajīvaka* сл.
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Jin , unsp] Кауз.: возвращать к жизни. PPS, S. 8, Z. 15. [NWS: SJS 7 : 138]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *saṃjīvana, saṃjijīvayiṣu* .
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#„ jīvāpaya “.#} [Jin , unsp] + upa: жить чем-л. (Akk.), поддерживать жизнь или существовать посредством чего-л. Ved , unsp. [NWS: Graßmann 1873 (1996) : 491]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *jīv* [Ved , unsp] жить. [ śatám śarádas : жить сто осеней (лет). ] Кауз.: оживлять, давать жизнь. [NWS: Graßmann 1873 (1996) : 491]
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ pratyud ( pratyujjīvyate ): resuscitates (said fig. of a suffix which had been abolished by a previous rule). DurghVṛ 1.2,48 .#} [Śā , Ling (s.v. jīv)] jīvamāna Śā , Ling > привыкший жить, живущий (о деятеле, для которого жизнедеятельность является привычным состоянием). BhāṣāVṛ 3.2,129. [NWS: Renou 1953 (1) : 11 (s.v. jīv)]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Jin , unsp] Кауз.: возвращать к жизни. PPS, S. 8, Z. 15. [NWS: SJS 7 : 138]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#jIva/yati#} (в эпосе также <ab>Med.</ab>)
-<div n="1">— 1〉 {%оживлять, делать живым%}. {#jIvita#} {%оживленный, сделанный живым%} <ls n="Chr.">63,11</ls>. <ls n="Chr.">123,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *„ jīvāpaya “.* [Jin , unsp] + upa: жить чем-л. (Acc.), поддерживать жизнь или существовать посредством чего-л. Ved , unsp. [NWS: Graßmann 1873 (1996) : 491]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%оставлять кого-л. в живых, сохранять жизнь кому-л.,%} так <ab>v. a.</ab> {%не давать кому-л. умереть и не убивать кого-л.%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ pratyud ( pratyujjīvyate ): resuscitates (said ṛig. oṛ a suṛṛiḷ ṭhich had been abolished by a previous rule). dhurghVṛ 1.2,48 .* [Śā , Ling (s.v. jīv)] jīvamāna Śā , Ling > привыкший жить, живущий (о деятеле, для которого жизнедеятельность является привычным состоянием). BhāṣāVṛ 3.2,129. [NWS: Renou 1953 (1) : 11 (s.v. jīv)]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%давать кому-л. жить,%} так <ab>v. a.</ab> {%кормить, воспитывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. *jīvayati* (в эпосе также Med.)
+— 1〉 оживлять, делать живым. *jīvita* оживленный, сделанный живым [63,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?63). [123,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?123).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%давать жить,%} так <ab>v. a.</ab> {#jIva#} {%звать%}. [Page2-269-c]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 оставлять кого-л. в живых, сохранять жизнь кому-л., так преим. не давать кому-л. умереть и не убивать кого-л..
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab>
-<div n="1">— 1〉 {#jijIvizati, ˚te#} (<ls>BHĀG. P.</ls>).
-<div n="2">— a〉 {%желать жить, стремиться к жизни%}.
-<div n="2">— b〉 {%стремиться найти средства к существованию, хотеть жить от%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 давать кому-л. жить, так преим. кормить, воспитывать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {#ju/jyUzati#} {%стремиться кое-как прожить посредством%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 давать жить, так преим. *jīva* звать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {#jijyUzita#} {%тот, кто пытается кое-как прожить посредством%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid.
+— 1〉 *jijīviṣati, ˚te* ([BHĀG. P.]).
+— a〉 желать жить, стремиться к жизни.
+— b〉 стремиться найти средства к существованию, хотеть жить от (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ati#}
-<div n="1">— 1〉 {%пережить, остаться в живых после%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 *jujyūṣati* стремиться кое-как прожить посредством (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%жить лучше, чем%} (<ab>Acc.</ab>) <ls>ĀPAST. 2,25,10</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 *jijyūṣita* тот, кто пытается кое-как прожить посредством (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#}
-<div n="1">— 1〉 {%жить вслед за кем-л.,%} так <ab>v. a.</ab> {%жить так же, как%} —; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ati*
+— 1〉 пережить, остаться в живых после.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%жить ради кого-л., всецело посвятить себя кому-л., быть преданным кому-л.;%} с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 жить лучше, чем (Acc.) [ĀPAST. 2,25,10].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%жить от, существовать благодаря, содержаться за счет;%} с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anu*
+— 1〉 жить вслед за кем-л., так преим. жить так же, как —; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%примириться с чем-л.%} (<ab>Acc.</ab>){%,  уступить кому-л. что-л.%}. <ab>v. l.</ab> {#anujAnImas#} <ab>st.</ab> {#˚jIvAmas#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 жить ради кого-л., всецело посвятить себя кому-л., быть преданным кому-л.; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%снова вернуть кого-л. к жизни%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 жить от, существовать благодаря, содержаться за счет; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} {%жить от, существовать благодаря, извлекать пользу из, использовать;%} с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 примириться с чем-л. (Acc.), уступить кому-л. что-л.. v. l. *anujānīmas* вместо *˚jīvāmas*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ud#} {%снова ожить%}. Также с {#punar#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. снова вернуть кого-л. к жизни.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%оживлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* жить от, существовать благодаря, извлекать пользу из, использовать; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aByud#} {%стараться сохранить себе жизнь, питаться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ud* снова ожить. Также с *punar*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyud#} {%снова ожить%} <ls n="Chr.">326,15</ls>. {#pratyujjIvita#} {%ожил%} <ls>KĀD. 2,137,32. 139,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. оживлять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#}
-<div n="1">— 1〉 {%иметь средства к существованию%} <ls n="Chr.">33,7</ls>. {%жить от, существовать благодаря, содержаться за счет, извлекать пользу из, использовать, пользоваться;%} с <ab>Acc.</ab>, в виде исключения с <ab>Gen.</ab> или <ab>Instr.</ab> (<ls>Spr. 7865</ls>). {#upajIvya#} <ab>Absol.</ab> {%в зависимости от, по причине;%} с <ab>Acc.</ab> <ls>Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhyud* стараться сохранить себе жизнь, питаться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%жить от или ради,%} так <ab>v. a.</ab> {%заниматься, упражняться%}. {#vfttim#} {%избрать источник средств к существованию%} <ls>M. 4,200</ls>. {#jIvikAm#} <ab>dass.</ab> {#mAnuzyam#} {%жить как человек, избрать человеческую природу%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyud* снова ожить [326,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?326). *pratyujjīvita* ожил [KĀD. 2,137,32. 139,1].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%извлекать пользу из кого-л., эксплуатировать кого-л.;%} с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa*
+— 1〉 иметь средства к существованию [33,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?33). жить от, существовать благодаря, содержаться за счет, извлекать пользу из, использовать, пользоваться; с Acc., в виде исключения с Gen. или Ins. ([Spr. 7865](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7865)). *upajīvya* Absol. в зависимости от, по причине; с Acc. [Comm. zu NYĀYAM. 9,4,6. 10,1,11. 2,14].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#} в {#prajIvana, prajIvin#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 жить от или ради, так преим. заниматься, упражняться. *vṛttim* избрать источник средств к существованию [M. 4,200](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,200). *jīvikām* то же *mānuṣyam* жить как человек, избрать человеческую природу.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#} в {#pratijIvana#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. извлекать пользу из кого-л., эксплуатировать кого-л.; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#} {%ожить, вернуться к жизни%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* в *prajīvana, prajīvin*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
-<div n="1">— 1〉 {%жить вместе%}.
-<div n="1">— 2〉 {%жить%}.
-<div n="1">— 3〉 {%жить от%} (<ab>Instr.</ab>)
-<div n="1">— 4〉 {%вернуться к жизни, снова ожить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prati* в *pratijīvana*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">
-<div n="1">— 1〉 {%оживлять%}.
-<div n="1">— 2〉 {%поддерживать жизнь кого-л., кормить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi* ожить, вернуться к жизни.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratisam#} {%оживание%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam*
+— 1〉 жить вместе.
+— 2〉 жить.
+— 3〉 жить от (Ins.)
+— 4〉 вернуться к жизни, снова ожить.
 
-**+)** [PW·restate → не привязано: цель не указана] √{#jIv#}¦ с {#aDi#} <ab>Caus.</ab> {%оживлять%} <ls>DHARMAŚARM. 15,1</ls>.
-<div n="p">— С {#aBi#} {%жить счастливее, чем%} (<ab>Abl.</ab>) <ls>R. ed. Bomb. 3,34,19</ls>.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 оживлять.
+— 2〉 поддерживать жизнь кого-л., кормить.
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] {#jIv#}¦ с {#aDi#} <ab>Caus.</ab> {%оживлять%} <ls>DHARMAŚARM. 15,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratisam* оживание.
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] С {#aBi#} {%жить счастливее, чем%} (<ab>Abl.</ab>) <ls>R. ed. Bomb. 3,34,19</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] √*jīv* с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
+— С *abhi* жить счастливее, чем (Abl.) [R. Бомбейская ред. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] {%jīv%}¦ с {%adhi%} <ls>Kaus.</ls> оживлять, <ls>Dharmaśarm. 15,1.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *jīv* с *adhi* Caus. оживлять [DHARMAŚARM. 15,1].
 
-**+)** [SCH·sch_star → не привязано: цель не указана] С {%abhi%} жить счастливее, чем (Abl.), <ls>R. ed. Bomb. 3,34,19.</ls> {part=,seq=14151,type=,n=4}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhi* жить счастливее, чем (Abl.) [R. Бомбейская ред. 3,34,19](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19).
 
-## h1
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] jīv с adhi [Kaus.] оживлять, [Dharmaśarm. 15,1.]
 
-**1 (T42 block))** {#jIv#}¦
-<div n="1"> 1) {#jIva jIva#} {%да живешь ты долго%}
-<ls>KATHĀS. 124,109.</ls> <ls n="KATHĀS. 124,">111.</ls> — <ab>caus.</ab>
-<div n="1"> 1) {%поддерживать жизнь кого-л.%}
-<ls>KATHĀS. 65,29.</ls> {#jIva#} {%звать%}
-<ls n="KATHĀS.">124,113.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С abhi жить счастливее, чем (Abl.), [R. Бомбейская ред. 3,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,34,19) {part=,seq=14151,type=,n=4}
 
-**2 (T44 block))** <div n="1">— 2) {#jIvApita#}
-<ls>R. 7,76,27.</ls> {#pugArzaH#} (!)
-<ab>Schol.</ab> — <ab>desid.</ab> <ab>med.</ab> <ls>BHĀG. P. 11,7,70.</ls>
-<div n="p">— {#A#}, {#AjIvyEkataraM BAvaM yastvanyamupajIvati#}
-<ls>BHĀG. P. 10,24,19.</ls>
+## омоним h1
 
-**T46 corr.)** <div n="p">— {#aByud#} читай {%стараться сохранить себе жизнь, питаться%} и <ab>vgl.</ab>
-<ls>Spr. 4893.</ls> <ls n="Spr.">5346</ls> (<ls>MBH. 5,4538</ls>).
+**1 (T42 block))** *jīv*
+ 1) *jīva jīva* да живешь ты долго
+[KATHĀS. 124,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,109) [111.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,111) — caus.
+ 1) поддерживать жизнь кого-л.
+[KATHĀS. 65,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,29) *jīva* звать
+[124,113.](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,113)
 
-**T47 block)** <div n="p">— {#pratyud#}
-<ls>KATHĀS. 78,102.</ls> {#˚jIvita#}
-<ls n="KATHĀS.">58,33.</ls>
+**2 (T44 block))** — 2) *jīvāpita*
+[R. 7,76,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,27) *pugārṣaḥ* (!)
+схол. — desid. мед. [BHĀG. P. 11,7,70.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,7,70)
+— *ā*, *ājīvyaikataraṃ bhāvaṃ yastvanyamupajīvati*
+[BHĀG. P. 10,24,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,24,19)
 
-**T48–T49 block, sense 2)** <div n="p">— {#upa#}
-<div n="1"> 2)
-<ls>BHĀG. P. 10,24,19.</ls> — <ab>caus.</ab> {%извлекать пользу из кого-л.%} (<ab>acc.</ab>){%,
-эксплуатировать кого-л.%}
-<ls>KATHĀS. 61,268.</ls>
+**T46 corr.)** — *abhyud* читай стараться сохранить себе жизнь, питаться и ср.
+[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](mbh/5.135.html#v24) = ≈крит. 05,133.21c).
 
-**T50 block)** <div n="p">— {#pra#} <ab>vgl.</ab> {#prajIvana, prajIvin; — prati#} <ab>vgl.</ab> {#pratijIvana#} .
+**T47 block)** — *pratyud*
+[KATHĀS. 78,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?78,102) *˚jīvita*
+[58,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?58,33)
 
-**T51 block)** <div n="p">— {#sam#} <ab>caus.</ab>
-<ls>Spr. 4992.</ls>
-<ls>BHĀG. P. 10,15,50.</ls>
+**T48–T49 block, sense 2)** — *upa*
+ 2)
+[BHĀG. P. 10,24,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,24,19) — caus. извлекать пользу из кого-л. (acc.),
+эксплуатировать кого-л.
+[KATHĀS. 61,268.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,268)
+
+**T50 block)** — *pra* ср. *prajīvana, prajīvin; — prati* ср. *pratijīvana* .
+
+**T51 block)** — *sam* caus.
+[Spr. 4992.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4992)
+[BHĀG. P. 10,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,50)
