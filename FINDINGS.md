@@ -7607,6 +7607,117 @@ independently-digitized editions agree on the n./adj. split:
 - [cae/cae.txt:770](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/cae/cae.txt#L770) / [:773](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/cae/cae.txt#L773) — `<h>1` / `<h>2`, no inline `<hom>` (class 2)
 - [ccs/ccs.txt:656](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ccs/ccs.txt#L656) / [:660](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ccs/ccs.txt#L660) — same
 
+### §573. The leading hyphen has two senses, but no dictionary marks which — Wilson is 100 % inflectional, Macdonell is 83 % compound-member/2 % inflectional/15 % a third (taddhita) class the two-way split cannot hold
+
+🟢 **Ninth entry of the §553–§572 compound/typography census series; census
+item §5.8 (H2985).** The leading hyphen (`{#-X#}` / `{@-X@}` / `<s>-X</s>`
+depending on dict) reads as EITHER "this abbreviates a compound's second
+member" OR "this abbreviates an inflected/derived form of the SAME headword" —
+and the two readings require opposite expansion rules (join to a NEW headword
+vs join to the SAME headword). No dict marks which sense is meant; it must be
+inferred from what follows the hyphen run.
+
+**Wilson (wil.txt, `{#-X#}` markup) is unambiguously the inflection pole.**
+49,487 leading-hyphen occurrences total; 48,878 (98.8 %) sit inside a
+`(…)` immediately after a bare `<lex>` gender/number tag with no gloss of
+their own — a declension-paradigm listing, not a second compound member:
+[wil/wil.txt:48](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/wil/wil.txt#L48)
+`<lex>m.</lex> ({#-kaH#})`,
+[wil/wil.txt:2399](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/wil/wil.txt#L2399)
+`<ab>nom.</ab> ({#-tA#})`,
+[wil/wil.txt:4299](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/wil/wil.txt#L4299)
+`{%Adverbial.%} ({#-sraM#})`. The remaining 609 (1.2 %) miss the regex only
+because an intervening `<ab>`/`<lex>` abbreviation sits between hyphen and
+gloss — reading the specimens confirms every one is still a paradigm form of
+the SAME headword (`<ab>fem.</ab> {#-KI#}`, `<ab>pl.</ab> {#-ttAH#}`). **0 of
+49,487 read as a compound second member.** Śabdasāgara (shs.txt) inherits the
+identical convention verbatim (
+[shs/shs.txt:22](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/shs/shs.txt#L22)
+`m. ({#-SaH#})`), confirming this is Wilson's device, not shs's own.
+
+**Macdonell (md.txt, `{@-X@}` markup) is the opposite case: the SAME device
+covers three distinct morphological classes, and only 83 % of them are
+compound members.** Of 32,177 `{@-X,@}` runs: **608 (1.9 %)** are `X` drawn
+from a closed set of case/adverb suffixes (`-tas`, `-m`, `-ena`, `-e`, `-āt`
+…) immediately tagged `<lex>ad.</lex>` or a bare case abbreviation
+(`<ab>in./ab./lc./ac.</ab>`) with NO independent gloss beyond the case sense —
+these are inflected/derived ADVERBS of the same headword:
+[md/md.txt:312](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/md/md.txt#L312)
+`a-kārya … misdeed: {@-tas,@} <lex>ad.</lex> by doing wrong`. **26,690
+(82.9 %)** are `X` tagged with a full `<lex>m./f./n./a.</lex>` and an
+INDEPENDENT gloss unrelated to case — true compound second members:
+[md/md.txt:840](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/md/md.txt#L840)
+`akṣauhiṇī … {@-pati,@} <lex>m.</lex> lord of an army, general` (=
+akṣauhiṇī-pati, a new two-member compound headword). **4,879 (15.2 %) are
+NEITHER** — taddhita/derivational suffixes (`-tā`, `-tva`, `-ka`, `-ya`,
+`-ita`, `-vat`, `-maya` …) that derive a new abstract noun or adjective STEM
+from the headword, e.g.
+[md/md.txt:2880](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/md/md.txt#L2880)
+`{@-tā,@} <lex>f.</lex> <ab>abst. ɴ.</ab>` — grammatically tagged as a noun
+with its own gloss (so the compound-member rule over-classifies these; they
+pass the mechanical test above but are a third class the census flags as
+residue, not silently folded into "compound"). The `<ab>˚—</ab>` ring+dash
+marker (§558, "as prior member of a compound") and the leading-hyphen run are
+DIFFERENT devices printed side by side —
+[md/md.txt:324](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/md/md.txt#L324)
+`a-kāla … <ab>˚—</ab>, {@-tas,@} <ab>lc.</ab> unseasonably` uses `˚—` for
+"used as compound-prior-member" and `-tas` for the case-suffixed adverb, in
+the same entry, meaning different things.
+
+**Whitney is two different devices under one name (extends §561).** *Roots
+1885* (Deriv. columns, read from
+[csl-whitroot/jpg/whit-023-kft2.jpg](https://github.com/sanskrit-lexicon/csl-whitroot/blob/master/jpg/whit-023-kft2.jpg)):
+leading hyphen marks a stem attested ONLY as a compound's final member
+(`-kartin c.`, `-karttṛ E.+`) — pure compound-member, no inflectional use
+found in this column (§561). *Grammar* (
+[WhitneyRoots/src/wg_text.txt](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt))
+splits again: L4050/L18955 `-arthe or -kṛte` (§1116) cite an adverbially-used
+LOCATIVE case form — inflection — while
+[wg_text.txt:23245](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt#L23245)
+`-kṛt, see 1105.` is an index cross-reference to a kṛt-suffix derivative
+class — closer to the compound/derivational-suffix reading than to case
+inflection.
+
+**Disambiguation rule for an expansion pass (the deliverable):**
+1. Leading hyphen inside a parenthetical directly after a bare `<lex>`
+   gender/number tag, with no gloss of its own → **inflection** (paradigm
+   form of the SAME headword). Wilson/shs pattern.
+2. Leading hyphen where `X` is a closed-class case/adverb suffix (`-tas`,
+   `-m`, `-ena`, `-e`, `-āt`, `-bhis` …) followed by an adverb/case
+   abbreviation tag and NO independent gloss → **inflection** (case-derived
+   adverb of the SAME headword). MD/Whitney-Grammar `-arthe`/`-kṛte` pattern.
+3. Leading hyphen where `X` is followed by a full part-of-speech tag AND an
+   independent gloss naming a different concept than the headword →
+   **compound second member** — expand to a NEW join headword
+   (`{headword}{X}`). MD `-pati` / Whitney-Roots `-kartin` pattern.
+4. Taddhita/derivational suffixes (`-tā`, `-tva`, `-ka`, `-ya`, `-ita`,
+   `-vat`, `-maya` …) satisfy rule 3's surface test (full POS tag + gloss)
+   but name neither a compound nor a case form — **flag as a third class**
+   and do not auto-expand into either bucket without a human check; ≈15 % of
+   MD's inventory falls here and the fraction is unmeasured for other dicts.
+
+**Breadth (unclassified this pass — named, not counted into the rule
+above):** the same ambiguity is present, at larger raw counts, in dicts this
+item did not name: ap `{#-#}`=48,726; ap90 `{#-#}`=36,060 + `{@-@}`=53,697;
+shs `{#-#}`=52,406 (confirmed Wilson-pattern); mwe `{#-#}`=16,997; gst
+`{#-#}`=7,519; mw `<s>-</s>`=18,242 — and MW's own convention diverges from
+its Wilson ancestor: [mw/mw.txt:1572](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt#L1572)
+`(<ab>cf.</ab> <s>-karRa</s>, <s>-BA</s>, <s>-BAga</s>)` is a compound-member
+cross-reference list, not a declension paradigm. A future pass must re-run
+rules 1–4 per dict before trusting any cross-dict aggregate.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · regex counts over
+> [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+> `wil/wil.txt` (`{#-[^#]*#}`, tail-context match on `<lex>` gender tags) and
+> `md/md.txt` (`{@-[^@]*@}`, tail-context match on case-abbreviation vs
+> noun/adj tags against a closed case-suffix set); Whitney read from
+> [WhitneyRoots/src/wg_text.txt](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt)
+> line grep plus the §561 scan-read of Roots 1885. Breadth table: raw
+> occurrence counts only, not classified. Verifiability: class A for wil/md/mw
+> specimens (reproducible from the public csl-orig checkout); the Roots 1885
+> compound-member claim is class B (scan-read, not machine-countable, carried
+> from §561).
+
 Three dictionaries keep it **one entry**, no `<h>` at all:
 [ap/ap.txt:4560](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap/ap.txt#L4560),
 [vcp/vcp.txt:2769](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L2769),
