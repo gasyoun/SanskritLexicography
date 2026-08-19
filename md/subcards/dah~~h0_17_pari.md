@@ -9,7 +9,7 @@
 [BHĀG. P. 2,7,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,29) *gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate* brennt, glüht
 [BHAG. 1,30.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,30) *diśi diśi paridagdhā bhūmayaḥ pāvakena*
 [ṚT. 1,24.] *saṃhārakāle paridagdhakāyā brahmāṇamāyānti sadā prajā hi*
-[MBH. 12,10076.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10076) = [≈Вульг. 12.283.27](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A283_S027) = ≈крит. 12,274.26a
+[MBH. 12,10076.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10076) = [≈Вульг. 12.283.27](mbh/12.283.html#v27) = ≈крит. 12,274.26a
 [HARIV. 548.](https://sanskrit-lexicon-scans.github.io/hariv?548)
 
 - **RU:** — *pari* обжигать вокруг, охватывать жаром, сжигать: *āgneyasvabhāvātparidahati kaṇṭhamuro hṛdayaṃ ceti*
@@ -18,7 +18,7 @@
 [BHĀG. P. 2,7,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,29) *gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate* горит, пылает
 [BHAG. 1,30.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,30) *diśi diśi paridagdhā bhūmayaḥ pāvakena*
 [ṚT. 1,24.] *saṃhārakāle paridagdhakāyā brahmāṇamāyānti sadā prajā hi*
-[MBH. 12,10076.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10076) = [≈Вульг. 12.283.27](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A283_S027) = ≈крит. 12,274.26a
+[MBH. 12,10076.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10076) = [≈Вульг. 12.283.27](mbh/12.283.html#v27) = ≈крит. 12,274.26a
 [HARIV. 548.](https://sanskrit-lexicon-scans.github.io/hariv?548)
   <sub>attested</sub>
 

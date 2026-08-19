@@ -72,7 +72,7 @@
 
 * sarvasaṃdhiṣu . makāramastramuddiśya* (hier vertritt *astramuddiśya* die Stelle der vorangehenden locc.)
 [BHĀG. P. 6,8,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,8) zu, an (sprechen, die Rede richten): *etadvākyaṃ nalo rājā damayantīṃ samāhitaḥ . ubācāsakṛdārto hi bhaimīmuddiśya*
-[MBH. 3,2320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2320) = [≈Вульг. 3.61.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S024) = крит. — *sītāmuddiśya dharmajña idaṃ vacanamabravīt*
+[MBH. 3,2320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2320) = [≈Вульг. 3.61.24](mbh/3.61.html#v24) = крит. — *sītāmuddiśya dharmajña idaṃ vacanamabravīt*
 [R. 3,2,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,14)
 [VET. 40,13.]
 [SĀH. D. 10,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?10,2) zu (einladen): *nyamantrayata viprānsa śrāddhamuddiśya*
@@ -80,7 +80,7 @@
 [PĀR. GṚHY. 3,10.]
 [ŚĀṄKH. GṚHY. 1,2.] *niyuktāstatra paśavastāstā uddiśya devatāḥ . jalacarāḥ sthalacarā antarīkṣacarāstathā ..*
 [R. 1,13,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,31) *āgatāham — tvāmuddiśya*
-[MBH. 5,5979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5979) = [≈Вульг. 5.175.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S004) = ≈крит. 05,172.3a
+[MBH. 5,5979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5979) = [≈Вульг. 5.175.4](mbh/5.175.html#v4) = ≈крит. 05,172.3a
 [R. 3,18,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,7) *smaramuddiśya — nivapeḥ sahakāramañjarīḥ*
 [KUMĀRAS. 4,38.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,38)
 [MUDRĀR. 3,9.]
@@ -100,7 +100,7 @@
 [R. 1,72,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,22) (GORR. [74,28](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,74,28)). *rāmaścopetya vijñāpyo māmuddiśya sagauravam* von mir, in meinem Namen
 [R. GORR. 1,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,80,21) *vacasi bhavati saṃtyāgamuddiśya vārttā śrutimukharamukhānāṃ kevalaṃ paṇḍitānām* so v. a. das Gewerbe der Entsagung
 [BHARTṚ. 1,56.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,56) Mit zu ergänzendem obj.: *sālaṃkārāngajānaśvānkanyāścaiva varastriyaḥ . uddiśyoddiśya sarvebhyo dadau* dem Sinne nach so v. a. dem dieses, dem jenes
-[MBH. 15,414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.414) = [≈Вульг. 15.14.5](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A014_S005) = ≈крит. 15,20.5a
+[MBH. 15,414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.414) = [≈Вульг. 15.14.5](mbh/15.14.html#v5) = ≈крит. 15,20.5a
 
 - **RU:** — 4) absol. *uddiśya* с указанием на (acc.) так преим. против, на, к, по направлению к; для обозн. цели (*lakṣyam* может при этом стоять) движения: *saṃdhāya cāpe tānāśu lakṣyamuddiśya rākṣasān . mumoca rāghavo vāṇān*
 [R. 3,26,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,20) *tameva mṛgamuddiśya taṃ śaraṃ rāghavaḥ śitam . mumoca*
@@ -114,7 +114,7 @@
 
 * sarvasaṃdhiṣu . makāramastramuddiśya* (здесь *astramuddiśya* занимает место предшествующего locc.)
 [BHĀG. P. 6,8,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,8) к, обращаясь к (говорить, направлять речь): *etadvākyaṃ nalo rājā damayantīṃ samāhitaḥ . ubācāsakṛdārto hi bhaimīmuddiśya*
-[MBH. 3,2320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2320) = [≈Вульг. 3.61.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S024) = крит. — *sītāmuddiśya dharmajña idaṃ vacanamabravīt*
+[MBH. 3,2320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2320) = [≈Вульг. 3.61.24](mbh/3.61.html#v24) = крит. — *sītāmuddiśya dharmajña idaṃ vacanamabravīt*
 [R. 3,2,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,14)
 [VET. 40,13.]
 [SĀH. D. 10,2.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?10,2) к (приглашать): *nyamantrayata viprānsa śrāddhamuddiśya*
@@ -122,7 +122,7 @@
 [PĀR. GṚHY. 3,10.]
 [ŚĀṄKH. GṚHY. 1,2.] *niyuktāstatra paśavastāstā uddiśya devatāḥ . jalacarāḥ sthalacarā antarīkṣacarāstathā ..*
 [R. 1,13,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,31) *āgatāham — tvāmuddiśya*
-[MBH. 5,5979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5979) = [≈Вульг. 5.175.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S004) = ≈крит. 05,172.3a
+[MBH. 5,5979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5979) = [≈Вульг. 5.175.4](mbh/5.175.html#v4) = ≈крит. 05,172.3a
 [R. 3,18,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,7) *smaramuddiśya — nivapeḥ sahakāramañjarīḥ*
 [KUMĀRAS. 4,38.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,38)
 [MUDRĀR. 3,9.]
@@ -142,7 +142,7 @@
 [R. 1,72,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,22) (GORR. [74,28](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,74,28)). *rāmaścopetya vijñāpyo māmuddiśya sagauravam* от меня, от моего имени
 [R. GORR. 1,80,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,80,21) *vacasi bhavati saṃtyāgamuddiśya vārttā śrutimukharamukhānāṃ kevalaṃ paṇḍitānām* так преим. ремесло отречения
 [BHARTṚ. 1,56.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,56) С подразумеваемым obj.: *sālaṃkārāngajānaśvānkanyāścaiva varastriyaḥ . uddiśyoddiśya sarvebhyo dadau* по смыслу так преим. тому это, тому то
-[MBH. 15,414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.414) = [≈Вульг. 15.14.5](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A014_S005) = ≈крит. 15,20.5a
+[MBH. 15,414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.414) = [≈Вульг. 15.14.5](mbh/15.14.html#v5) = ≈крит. 15,20.5a
   <sub>attested</sub>
 
 **Nachtrag)** — Vgl. *uddeśa* fgg., *ekoddiṣṭa* (auch

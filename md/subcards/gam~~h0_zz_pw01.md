@@ -78,9 +78,9 @@
 - **RU:** — 5〉 иметь плотскую связь (о обоих полах), с Acc. [Spr. 7842](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7842).
   <sub>attested</sub>
 
-**pw_208_6)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10) = [≈Вульг. 9.1.42](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S042) = ≈крит. 09,1.40a.
+**pw_208_6)** — 6〉 sich machen an, sich hingeben. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10) = [≈Вульг. 9.1.42](mbh/9.1.html#v42) = ≈крит. 09,1.40a.
 
-- **RU:** — 6〉 приниматься за, предаваться. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10) = [≈Вульг. 9.1.42](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S042) = ≈крит. 09,1.40a.
+- **RU:** — 6〉 приниматься за, предаваться. *cintām* [MBH. 9,42,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,42,10) = [≈Вульг. 9.1.42](mbh/9.1.html#v42) = ≈крит. 09,1.40a.
   <sub>attested</sub>
 
 **pw_209_7)** — 7〉 erlangen, erwerben, theilhaftig werden. *nidrāmabhigataḥ* so v. a. eingeschlafen.
@@ -213,9 +213,9 @@
 - **RU:** — 2〉 приходить снова, возвращаться. Обычно с *punar* [21,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21). [29,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?29).
   <sub>attested</sub>
 
-**pw_235_3)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S022) = ≈крит. 03,2.21a.
+**pw_235_3)** — 3〉 zusammenkommen mit (Instr.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](mbh/3.2.html#v22) = ≈крит. 03,2.21a.
 
-- **RU:** — 3〉 сходиться с (Ins.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S022) = ≈крит. 03,2.21a.
+- **RU:** — 3〉 сходиться с (Ins.) [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](mbh/3.2.html#v22) = ≈крит. 03,2.21a.
   <sub>attested</sub>
 
 **pw_236_4)** — 4〉 erreichen, treffen, zu Theil werden. *adṛṣṭaṃ bhayaṃ tvāmāgamiṣyati* [39,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?39). Mit vorangehendem *acchā* [ṚV. 8,929](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.929.html#rv08.929.01).
@@ -353,9 +353,9 @@
 - **RU:** — С *abhyā*
   <sub>attested</sub>
 
-**pw_263_1)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31) = [≈Вульг. 13.1.71](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S071) = ≈крит. 13,1.64a. *kramāt* so v. a. ererbt.
+**pw_263_1)** — 1〉 herbeikommen, kommen —, treten zu, besuchen. *˚gata* herbeigekommen, gekommen (auch von der Zeit), — zu oder nach (Acc.) *poṣaṇābhyāgata* gekommen um sich zu mästen [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31) = [≈Вульг. 13.1.71](mbh/13.1.html#v71) = ≈крит. 13,1.64a. *kramāt* so v. a. ererbt.
 
-- **RU:** — 1〉 приходить, приходить — к, вступать к, посещать. *˚gata* пришедший (также о времени), — к или в направлении (Acc.) *poṣaṇābhyāgata* пришедший, чтобы откормиться [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31) = [≈Вульг. 13.1.71](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S071) = ≈крит. 13,1.64a. *kramāt* так преим. унаследованный.
+- **RU:** — 1〉 приходить, приходить — к, вступать к, посещать. *˚gata* пришедший (также о времени), — к или в направлении (Acc.) *poṣaṇābhyāgata* пришедший, чтобы откормиться [MBH. 13,71,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,31) = [≈Вульг. 13.1.71](mbh/13.1.html#v71) = ≈крит. 13,1.64a. *kramāt* так преим. унаследованный.
   <sub>attested</sub>
 
 **pw_264_2)** — 2〉 in einen Zustand —, in ein Verhältniss gerathen.
@@ -463,9 +463,9 @@
 - **RU:** — 1〉 завершивший круговорот, истекший.
   <sub>attested</sub>
 
-**pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89) = [≈Вульг. 5.3.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A003_S008) = ≈крит. 05,3.8c.
+**pw_285_2)** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89) = [≈Вульг. 5.3.8](mbh/5.3.html#v8) = ≈крит. 05,3.8c.
 
-- **RU:** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89) = [≈Вульг. 5.3.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A003_S008) = ≈крит. 05,3.8c.
+- **RU:** — 2〉 inveteratus [MBH. 5,48,89](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,48,89) = [≈Вульг. 5.3.8](mbh/5.3.html#v8) = ≈крит. 05,3.8c.
   <sub>attested</sub>
 
 **pw_286_3)** — 3〉 wieder inʼs Leben gekommen.

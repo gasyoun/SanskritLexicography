@@ -4,14 +4,14 @@
 
 
 **Caus. 2)** — 2) niedermachen, tödten, um's Leben bringen: *vāsavo 'pyasurānsarvānnirjitya nipātya ca*
-[MBH. 14,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.98) = [≈Вульг. 14.5.7](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A005_S007) = ≈крит. 14,5.7c *dvijaṃ* (Vogel) *dṛṣṭvā niṣādena nipātitam*
+[MBH. 14,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.98) = [≈Вульг. 14.5.7](mbh/14.5.html#v7) = ≈крит. 14,5.7c *dvijaṃ* (Vogel) *dṛṣṭvā niṣādena nipātitam*
 [R. 1,2,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,16) *turagānasya mārgaṇaiḥ nyapātayat*
 [3,33,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,32) *yathā sute bhrātari vā nipātite*
 [R. GORR. 2,45,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,45,32) [KATHĀS. 11,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,60) [20,199.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,199) [27,45.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,45) [42,127.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,127) [166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,166) [RĀJA-TAR. 5,431.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,431) [6,332.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,332) [PAÑCAT. 23,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?23,22) [HIT. II,116.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,116) [BHĀG. P. 1,8,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,10) [MĀRK. P. 74,41.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,41) [PRAB. 88,7.] *māṃsaṃ śvacaṇḍālakravyādādinipātitam* so v. a. das Fleisch eines Thiers, das getödtet worden ist,
 [YĀJÑ. 1,192](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,192) = [MĀRK. P. 35,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?35,20)
 
 - **RU:** — 2) убивать, умерщвлять, лишать жизни: *vāsavo 'pyasurānsarvānnirjitya nipātya ca*
-[MBH. 14,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.98) = [≈Вульг. 14.5.7](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A005_S007) = ≈крит. 14,5.7c *dvijaṃ* (птица) *dṛṣṭvā niṣādena nipātitam*
+[MBH. 14,98.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.98) = [≈Вульг. 14.5.7](mbh/14.5.html#v7) = ≈крит. 14,5.7c *dvijaṃ* (птица) *dṛṣṭvā niṣādena nipātitam*
 [R. 1,2,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,16) *turagānasya mārgaṇaiḥ nyapātayat*
 [3,33,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,32) *yathā sute bhrātari vā nipātite*
 [R. GORR. 2,45,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,45,32) [KATHĀS. 11,60.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,60) [20,199.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,199) [27,45.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,45) [42,127.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,127) [166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?42,166) [RĀJA-TAR. 5,431.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,431) [6,332.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,332) [PAÑCAT. 23,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?23,22) [HIT. II,116.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,116) [BHĀG. P. 1,8,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,10) [MĀRK. P. 74,41.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,41) [PRAB. 88,7.] *māṃsaṃ śvacaṇḍālakravyādādinipātitam*, т. е. преим. мясо убитого животного,
@@ -19,10 +19,10 @@
   <sub>attested</sub>
 
 **Caus. 3)** — 3) *karān* Tribut erheben von (abl.): *na cāsthāne na cākāle karāṃstebhyo nipātayet*
-[MBH. 12,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3313) = [≈Вульг. 12.88.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A088_S012) = ≈крит. 12,89.11c
+[MBH. 12,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3313) = [≈Вульг. 12.88.12](mbh/12.88.html#v12) = ≈крит. 12,89.11c
 
 - **RU:** — 3) *karān* взимать дань с (abl.): *na cāsthāne na cākāle karāṃstebhyo nipātayet*
-[MBH. 12,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3313) = [≈Вульг. 12.88.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A088_S012) = ≈крит. 12,89.11c
+[MBH. 12,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3313) = [≈Вульг. 12.88.12](mbh/12.88.html#v12) = ≈крит. 12,89.11c
   <sub>attested</sub>
 
 **Caus. 4)** — 4) in der Gramm. eine Erscheinung, die sich der allgemeinen Regel nicht fügt, fertig hinstellen, als Unregelmässigkeit besonders aufführen, Etwas als unregelmässig betrachten: *amāvasorahaṃ ṇyatornipātayāmyavṛddhitām* Kār. zu [P. 3,1,122.](https://ashtadhyayi.com/sutraani/3/1/122)

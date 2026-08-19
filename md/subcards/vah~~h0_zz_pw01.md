@@ -413,9 +413,9 @@
 - **RU:** — 3) приводить в движение, запускать.
   <sub>attested</sub>
 
-**mitT76-4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A005_S016) = ≈крит. 06,6.15c fehlerhaft für *˚pravāhinam*.
+**mitT76-4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](mbh/6.5.html#v16) = ≈крит. 06,6.15c fehlerhaft für *˚pravāhinam*.
 
-- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A005_S016) = ≈крит. 06,6.15c ошибочно вм. *˚pravāhinam*.
+- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](mbh/6.5.html#v16) = ≈крит. 06,6.15c ошибочно вм. *˚pravāhinam*.
   <sub>lexicographic</sub>
 
 **mit83)** — Mit *atipra* darüber hinaus führen, — ziehen.

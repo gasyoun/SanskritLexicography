@@ -8,7 +8,7 @@
 - **RU:** — *upasam* 1) ложиться рядом с (acc.): *mahiṣyaśvam* [KĀTY. ŚR. 20,6,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,6,14)
   <sub>attested</sub>
 
-**2)** — 2) = *abhisam* [TBR. 2,2,10,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,10,6) [3,1,1,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,7) — caus. sich dazu legen lassen: *patnīm* [KAUŚ. 80.] daneben sitzen lassen [MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Вульг. 14.89.2](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A089_S002) = ≈крит. 14,91.2c
+**2)** — 2) = *abhisam* [TBR. 2,2,10,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,10,6) [3,1,1,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,7) — caus. sich dazu legen lassen: *patnīm* [KAUŚ. 80.] daneben sitzen lassen [MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Вульг. 14.89.2](mbh/14.89.html#v2) = ≈крит. 14,91.2c
 
-- **RU:** — 2) = *abhisam* [TBR. 2,2,10,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,10,6) [3,1,1,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,7) — caus. позволить лечь рядом с собой: *patnīm* [KAUŚ. 80.] усадить рядом [MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Вульг. 14.89.2](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A089_S002) = ≈крит. 14,91.2c
+- **RU:** — 2) = *abhisam* [TBR. 2,2,10,6.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,2,10,6) [3,1,1,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,7) — caus. позволить лечь рядом с собой: *patnīm* [KAUŚ. 80.] усадить рядом [MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Вульг. 14.89.2](mbh/14.89.html#v2) = ≈крит. 14,91.2c
   <sub>attested</sub>

@@ -214,10 +214,10 @@
   <sub>attested</sub>
 
 **ni-prefix-1)** — Mit *vyupa*
-— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S053) = ≈крит. 06,4.4a.
+— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](mbh/6.3.html#v53) = ≈крит. 06,4.4a.
 
 - **RU:** — С *vyupa*
-— 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S053) = ≈крит. 06,4.4a.
+— 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](mbh/6.3.html#v53) = ≈крит. 06,4.4a.
   <sub>attested</sub>
 
 **ni-prefix-2)** — 2〉 aufhören, sich legen. *duḥkhaṃ* *vyupaśāntam* [KĀRAṆḌ. 48,9].

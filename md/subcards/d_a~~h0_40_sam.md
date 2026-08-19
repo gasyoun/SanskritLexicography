@@ -9,7 +9,7 @@
 [7,48,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.048.html#rv07.048.04) *tatsarve samadurmahyametat*
 [AV. 3,22,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.022.html#av03.022.01) *agniḥ sūrya āpo medhāṃ viśve devāśca saṃ daduḥ*
 [12,1,53.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.53) *saṃdatta mamābhayam*
-[MBH. 7,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2618) = [≈Вульг. 7.73.52](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A073_S052) = ≈крит. 07,51.42a
+[MBH. 7,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2618) = [≈Вульг. 7.73.52](mbh/7.73.html#v52) = ≈крит. 07,51.42a
 
 - **RU:** — *sam*
  1) совместно давать, — дарить: *sarvāḥ saṃgatya vīrudho 'syai saṃ datta vīryam*
@@ -17,7 +17,7 @@
 [7,48,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.048.html#rv07.048.04) *tatsarve samadurmahyametat*
 [AV. 3,22,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.022.html#av03.022.01) *agniḥ sūrya āpo medhāṃ viśve devāśca saṃ daduḥ*
 [12,1,53.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.53) *saṃdatta mamābhayam*
-[MBH. 7,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2618) = [≈Вульг. 7.73.52](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A073_S052) = ≈крит. 07,51.42a
+[MBH. 7,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2618) = [≈Вульг. 7.73.52](mbh/7.73.html#v52) = ≈крит. 07,51.42a
   <sub>attested</sub>
 
 **2)** — 2) zusammenhalten: *uttarāttvā somaḥ saṃ dadātai*

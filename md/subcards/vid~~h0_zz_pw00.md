@@ -3,10 +3,10 @@
 `vid~~h0_zz_pw00`
 
 
-**1)** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S022) = ≈крит. 03,2.21a), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
+**1)** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](mbh/3.2.html#v22) = ≈крит. 03,2.21a), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
 — 1〉 Etwas oder Jmd kennen lernen, erkennen; wissen, begreifen, sich auf Etwas verstehen, Etwas oder Jmd erkennen, wissen von Jmd, ein Bewusstsein von Etwas haben ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), eine richtige Vorstellung haben von; in der älteren Sprachen mit Acc. oder Gen., in der späteren mit Acc. Mit Infin. verstehen zu [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
 
-- **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S022) = ≈крит. 03,2.21a), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
+- **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](mbh/3.2.html#v22) = ≈крит. 03,2.21a), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
 — 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чем-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чем-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
   <sub>attested</sub>
 
@@ -97,9 +97,9 @@
 - **RU:** — 6) чувствовать, ощущать. Act. [NYĀYAS. 4,1,57]. Med. коммент. к [3,1,1. 4,1,57].
   <sub>attested</sub>
 
-**7)** — 7〉 *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A106_S055) = ≈крит. 13,109.52c fehlerhaft für *ramayanti*.
+**7)** — 7〉 *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](mbh/13.106.html#v55) = ≈крит. 13,109.52c fehlerhaft für *ramayanti*.
 
-- **RU:** — 7) *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A106_S055) = ≈крит. 13,109.52c ошибочно вм. *ramayanti*.
+- **RU:** — 7) *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](mbh/13.106.html#v55) = ≈крит. 13,109.52c ошибочно вм. *ramayanti*.
   <sub>attested</sub>
 
 **7)** — Desid. *vividiṣati* zu wissen wünschen, erkennen —, kennen lernen wollen, sich erkundigen nach (Acc.).
@@ -222,9 +222,9 @@
 - **RU:** — 5) *doṣam* перекладывать вину на (Dat.).
   <sub>attested</sub>
 
-**6)** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) = [≈Вульг. 14.89.35](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A089_S035) = ≈крит. 14,91.34a fehlerhaft für *nyaveśayat*.
+**6)** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) = [≈Вульг. 14.89.35](mbh/14.89.html#v35) = ≈крит. 14,91.34a fehlerhaft für *nyaveśayat*.
 
-- **RU:** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) = [≈Вульг. 14.89.35](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A089_S035) = ≈крит. 14,91.34a ошибочно вм. *nyaveśayat*.
+- **RU:** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) = [≈Вульг. 14.89.35](mbh/14.89.html#v35) = ≈крит. 14,91.34a ошибочно вм. *nyaveśayat*.
   <sub>attested</sub>
 
 **6)** — Mit *atini* Caus. Jmd Etwas anbieten. Vielleicht fehlerhaft für *abhini*.
@@ -357,9 +357,9 @@
 - **RU:** — 1〉 различать, знать.
   <sub>attested</sub>
 
-**—2〉)** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) = [≈Вульг. 12.9.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S023) = ≈крит. 12,9.23c fehlerhaft für *vivadanti*.
+**—2〉)** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) = [≈Вульг. 12.9.23](mbh/12.9.html#v23) = ≈крит. 12,9.23c fehlerhaft für *vivadanti*.
 
-- **RU:** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) = [≈Вульг. 12.9.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S023) = ≈крит. 12,9.23c ошибочно вм. *vivadanti*.
+- **RU:** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) = [≈Вульг. 12.9.23](mbh/12.9.html#v23) = ≈крит. 12,9.23c ошибочно вм. *vivadanti*.
   <sub>attested</sub>
 
 **—2〉)** — Mit *sam* angeblich stets Med.

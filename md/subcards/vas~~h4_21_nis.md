@@ -4,20 +4,20 @@
 
 
 **1)** — *nis* ausleben, zu Ende leben: *vāsamimaṃ niruṣya*
-[MBH. 3,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.915) = [≈Вульг. 3.23.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A023_S013) = ≈крит. 03,24.13a *vane vāsamimaṃ niruṣya (nirudhya* [ed. Calc.])
-[962](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.962) = [≈Вульг. 3.25.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A025_S018) = ≈крит. 03,26.17a (nach der Lesart der [ed. Bomb.]). *kṛcchraṃ vāsam*
-[5,646.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.646) = [≈Вульг. 5.22.2](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A022_S002) = ≈крит. 05,22.2c *durgavāsam*
-[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A026_S004) = ≈крит. 14,26.4a *tasmingurau guruvāsaṃ niruṣya*
-[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A026_S004) = ≈крит. 14,26.4a — *nirvatsyāmi*
-[4,24](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.24) = [≈Вульг. 4.1.25](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S025) = ≈крит. 04,1.21a fehlerhaft für *nirvartsyāmi*, wie die [ed. Bomb.] liest.
+[MBH. 3,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.915) = [≈Вульг. 3.23.13](mbh/3.23.html#v13) = ≈крит. 03,24.13a *vane vāsamimaṃ niruṣya (nirudhya* [ed. Calc.])
+[962](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.962) = [≈Вульг. 3.25.18](mbh/3.25.html#v18) = ≈крит. 03,26.17a (nach der Lesart der [ed. Bomb.]). *kṛcchraṃ vāsam*
+[5,646.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.646) = [≈Вульг. 5.22.2](mbh/5.22.html#v2) = ≈крит. 05,22.2c *durgavāsam*
+[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](mbh/14.26.html#v4) = ≈крит. 14,26.4a *tasmingurau guruvāsaṃ niruṣya*
+[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](mbh/14.26.html#v4) = ≈крит. 14,26.4a — *nirvatsyāmi*
+[4,24](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.24) = [≈Вульг. 4.1.25](mbh/4.1.html#v25) = ≈крит. 04,1.21a fehlerhaft für *nirvartsyāmi*, wie die [ed. Bomb.] liest.
 
 - **RU:** *nis* дожить, прожить до конца: *vāsamimaṃ niruṣya*
-[MBH. 3,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.915) = [≈Вульг. 3.23.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A023_S013) = ≈крит. 03,24.13a *vane vāsamimaṃ niruṣya (nirudhya* [ed. Calc.])
-[962](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.962) = [≈Вульг. 3.25.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A025_S018) = ≈крит. 03,26.17a (по чтению [Бомбейская ред.]). *kṛcchraṃ vāsam*
-[5,646.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.646) = [≈Вульг. 5.22.2](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A022_S002) = ≈крит. 05,22.2c *durgavāsam*
-[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A026_S004) = ≈крит. 14,26.4a *tasmingurau guruvāsaṃ niruṣya*
-[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A026_S004) = ≈крит. 14,26.4a — *nirvatsyāmi*
-[4,24](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.24) = [≈Вульг. 4.1.25](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S025) = ≈крит. 04,1.21a ошибочно вм. *nirvartsyāmi*, как читает [Бомбейская ред.].
+[MBH. 3,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.915) = [≈Вульг. 3.23.13](mbh/3.23.html#v13) = ≈крит. 03,24.13a *vane vāsamimaṃ niruṣya (nirudhya* [ed. Calc.])
+[962](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.962) = [≈Вульг. 3.25.18](mbh/3.25.html#v18) = ≈крит. 03,26.17a (по чтению [Бомбейская ред.]). *kṛcchraṃ vāsam*
+[5,646.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.646) = [≈Вульг. 5.22.2](mbh/5.22.html#v2) = ≈крит. 05,22.2c *durgavāsam*
+[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](mbh/14.26.html#v4) = ≈крит. 14,26.4a *tasmingurau guruvāsaṃ niruṣya*
+[14,749.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.749) = [≈Вульг. 14.26.4](mbh/14.26.html#v4) = ≈крит. 14,26.4a — *nirvatsyāmi*
+[4,24](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.24) = [≈Вульг. 4.1.25](mbh/4.1.html#v25) = ≈крит. 04,1.21a ошибочно вм. *nirvartsyāmi*, как читает [Бомбейская ред.].
   <sub>attested</sub>
 
 **caus_intro)** — Vgl. *nirvāsa* . — caus.
@@ -27,7 +27,7 @@
 
 **caus_1)** 1) aus seinem Wohnorte entfernen, vertreiben, verbannen: *purāt*
 [M. 9,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,225) *rāṣṭrāt*
-[MBH. 2,2644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2644) = [≈Вульг. 2.80.25](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A080_S025) = крит. —
+[MBH. 2,2644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2644) = [≈Вульг. 2.80.25](mbh/2.80.html#v25) = крит. —
 [R. 1,39,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,22) ([40,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,40,20) [GORR.]). *rāṣṭrādvanavāsāya*
 [2,21,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,4) *vanam*
 [39,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,11) [R. GORR. 2,3,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,3,25) [18,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,6) [81,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,81,18) [3,79,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,47) [Spr. 2186.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2186) [RAGH. 14,67.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,67) [UTTARAR. 87,10 (112,6).] [KATHĀS. 4,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,68) [10,41.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,41) [23,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,25) [24,76. fg.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,76) [39,56.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,56) [232.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,232) [51,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,73) [57,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?57,118) [RĀJA-TAR. 1,115.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,115) [344.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,344) [3,288.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,288) [330.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,330) [6,342](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,342) (*nirvāsitā deśāt* zu schreiben).
@@ -38,7 +38,7 @@
 
 - **RU:** 1) удалять с места жительства, изгонять, ссылать: *purāt*
 [M. 9,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,225) *rāṣṭrāt*
-[MBH. 2,2644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2644) = [≈Вульг. 2.80.25](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A080_S025) = крит. —
+[MBH. 2,2644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2644) = [≈Вульг. 2.80.25](mbh/2.80.html#v25) = крит. —
 [R. 1,39,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,22) ([40,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,40,20) [GORR.]). *rāṣṭrādvanavāsāya*
 [2,21,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,4) *vanam*
 [39,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,11) [R. GORR. 2,3,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,3,25) [18,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,6) [81,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,81,18) [3,79,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,47) [Spr. 2186.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2186) [RAGH. 14,67.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,67) [UTTARAR. 87,10 (112,6).] [KATHĀS. 4,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,68) [10,41.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,41) [23,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,25) [24,76. fg.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,76) [39,56.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,56) [232.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,232) [51,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,73) [57,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?57,118) [RĀJA-TAR. 1,115.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,115) [344.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,344) [3,288.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,288) [330.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,330) [6,342](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,342) (следует писать *nirvāsitā deśāt*).

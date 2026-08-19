@@ -58,9 +58,9 @@
 - **RU:** — β〉 пропитанный маслом, погруженный в масло (об оружии).
   <sub>attested</sub>
 
-**PW1_4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A049_S007) = ≈крит. 12,49.7a fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
+**PW1_4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](mbh/12.49.html#v7) = ≈крит. 12,49.7a fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
 
-- **RU:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A049_S007) = ≈крит. 12,49.7a ошибочно вм. *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) следует соединять с *˚ātmanipītanidraḥ*.
+- **RU:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](mbh/12.49.html#v7) = ≈крит. 12,49.7a ошибочно вм. *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) следует соединять с *˚ātmanipītanidraḥ*.
   <sub>attested</sub>
 
 **PW1_caus)** — Caus. *pāyayati, ˚te* (*pāpayati* fehlerhaft) tränken, zu trinken geben; mit doppeltem Acc. ([CARAKA. 6,11]) oder mit partitivem Gen. (nur in der älteren Sprache) des Trankes: Jmd (Instr.) saugen lassen an (Acc.) *pāyita*

@@ -16,14 +16,14 @@
 [KĀTY. ŚR. 13,3,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?13,3,16) *upagātāra upagāyanti*
 [ŚAT. BR. 13,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,3,2) *atirecayedyadanya upagāyet tasmātsvayaṃprastutamanupagītam*
 [4,6,9,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,9,17) [LĀṬY. 4,2,5.] vor Jmd (acc.) singen: *upagāyanti bībhatsuṃ nṛtyantyapsarasāṃ gaṇāḥ*
-[MBH. 1,4809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4809) = [≈Вульг. 1.123.53](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S053) = ≈крит. 01,114.43a *upagīyamānā narībhiḥ*
-[2,2027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2027) = [≈Вульг. 2.58.36](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A058_S036) = ≈крит. 02,52.35c *upagītopanṛttaśca gandharvāpsarasāṃ gaṇaiḥ*
-[5,4100.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4100) = [≈Вульг. 5.124.36](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A124_S036) = ≈крит. 05,122.34c [13,2075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2075) = [≈Вульг. 13.32.32](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A032_S032) = крит. — *gandharvairupagīyantaḥ* (partic. pass.)
-[15,883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.883) = [≈Вульг. 15.32.16](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U02_A032_S016) = ≈крит. 15,40.16c *upagītā* die vorzusingen begonnen hat
+[MBH. 1,4809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4809) = [≈Вульг. 1.123.53](mbh/1.123.html#v53) = ≈крит. 01,114.43a *upagīyamānā narībhiḥ*
+[2,2027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2027) = [≈Вульг. 2.58.36](mbh/2.58.html#v36) = ≈крит. 02,52.35c *upagītopanṛttaśca gandharvāpsarasāṃ gaṇaiḥ*
+[5,4100.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4100) = [≈Вульг. 5.124.36](mbh/5.124.html#v36) = ≈крит. 05,122.34c [13,2075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2075) = [≈Вульг. 13.32.32](mbh/13.32.html#v32) = крит. — *gandharvairupagīyantaḥ* (partic. pass.)
+[15,883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.883) = [≈Вульг. 15.32.16](mbh/15.32.html#v16) = ≈крит. 15,40.16c *upagītā* die vorzusingen begonnen hat
 [ŚIŚ. 4,57.] *vīṇayopagāyati* wohl unter Begleitung der Vīṇā vorsingen
 [P. 3,1,25](https://ashtadhyayi.com/sutraani/3/1/25), Sch.
 [VOP. 21,17.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?21,17) mit seinem Gesange erfüllen: *upagīyamānā bhramarai rājante vanarājayaḥ*
-[MBH. 3,11606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11606) = [≈Вульг. 3.158.83](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U09_A158_S083) = ≈крит. 03,155.70a [17284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17284) = [≈Вульг. 3.312.44](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A312_S044) = ≈крит. 03,296.42a
+[MBH. 3,11606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11606) = [≈Вульг. 3.158.83](mbh/3.158.html#v83) = ≈крит. 03,155.70a [17284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17284) = [≈Вульг. 3.312.44](mbh/3.312.html#v44) = ≈крит. 03,296.42a
 
 - **RU:** — *upa*
  1) кому-либо (dat. acc.) петь в сопровождение; вступать в пение: *pra stoṣadupa *
@@ -38,14 +38,14 @@
 [KĀTY. ŚR. 13,3,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?13,3,16) *upagātāra upagāyanti*
 [ŚAT. BR. 13,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,3,2) *atirecayedyadanya upagāyet tasmātsvayaṃprastutamanupagītam*
 [4,6,9,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,9,17) [LĀṬY. 4,2,5.] петь перед кем-либо (acc.): *upagāyanti bībhatsuṃ nṛtyantyapsarasāṃ gaṇāḥ*
-[MBH. 1,4809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4809) = [≈Вульг. 1.123.53](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S053) = ≈крит. 01,114.43a *upagīyamānā narībhiḥ*
-[2,2027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2027) = [≈Вульг. 2.58.36](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A058_S036) = ≈крит. 02,52.35c *upagītopanṛttaśca gandharvāpsarasāṃ gaṇaiḥ*
-[5,4100.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4100) = [≈Вульг. 5.124.36](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A124_S036) = ≈крит. 05,122.34c [13,2075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2075) = [≈Вульг. 13.32.32](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A032_S032) = крит. — *gandharvairupagīyantaḥ* (partic. pass.)
-[15,883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.883) = [≈Вульг. 15.32.16](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U02_A032_S016) = ≈крит. 15,40.16c *upagītā* которая начала петь первой
+[MBH. 1,4809.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4809) = [≈Вульг. 1.123.53](mbh/1.123.html#v53) = ≈крит. 01,114.43a *upagīyamānā narībhiḥ*
+[2,2027.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2027) = [≈Вульг. 2.58.36](mbh/2.58.html#v36) = ≈крит. 02,52.35c *upagītopanṛttaśca gandharvāpsarasāṃ gaṇaiḥ*
+[5,4100.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4100) = [≈Вульг. 5.124.36](mbh/5.124.html#v36) = ≈крит. 05,122.34c [13,2075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2075) = [≈Вульг. 13.32.32](mbh/13.32.html#v32) = крит. — *gandharvairupagīyantaḥ* (partic. pass.)
+[15,883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.883) = [≈Вульг. 15.32.16](mbh/15.32.html#v16) = ≈крит. 15,40.16c *upagītā* которая начала петь первой
 [ŚIŚ. 4,57.] *vīṇayopagāyati* вероятно, петь под аккомпанемент Вина
 [P. 3,1,25](https://ashtadhyayi.com/sutraani/3/1/25), схол.
 [VOP. 21,17.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?21,17) наполнять своим пением: *upagīyamānā bhramarai rājante vanarājayaḥ*
-[MBH. 3,11606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11606) = [≈Вульг. 3.158.83](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U09_A158_S083) = ≈крит. 03,155.70a [17284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17284) = [≈Вульг. 3.312.44](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A312_S044) = ≈крит. 03,296.42a
+[MBH. 3,11606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11606) = [≈Вульг. 3.158.83](mbh/3.158.html#v83) = ≈крит. 03,155.70a [17284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17284) = [≈Вульг. 3.312.44](mbh/3.312.html#v44) = ≈крит. 03,296.42a
   <sub>attested</sub>
 
 **2))** — 2) besingen: *(jambuḥ) arcitā copagītā ca nityamapsarasāṃ gaṇaiḥ*
@@ -62,12 +62,12 @@
   <sub>attested</sub>
 
 **3))** — 3) singen: *rathaṃtaraṃ sāmagāścopagānti*
-[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A284_S187) = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
+[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](mbh/12.284.html#v187) = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
 [BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* von ihm singt man Solches
 [5,14,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,41)
 
 - **RU:** — 3) петь: *rathaṃtaraṃ sāmagāścopagānti*
-[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A284_S187) = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
+[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](mbh/12.284.html#v187) = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
 [BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нем поют следующее
 [5,14,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,41)
   <sub>attested</sub>

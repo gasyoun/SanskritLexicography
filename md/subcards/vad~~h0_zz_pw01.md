@@ -318,9 +318,9 @@
 - **RU:** С *upasam* в *upasaṃvāda*.
   <sub>attested</sub>
 
-**pref-sam-abhi)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15) = [≈Вульг. 13.2.74](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A002_S074) = ≈крит. 13,2.73c.
+**pref-sam-abhi)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15) = [≈Вульг. 13.2.74](mbh/13.2.html#v74) = ≈крит. 13,2.73c.
 
-- **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15) = [≈Вульг. 13.2.74](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A002_S074) = ≈крит. 13,2.73c.
+- **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15) = [≈Вульг. 13.2.74](mbh/13.2.html#v74) = ≈крит. 13,2.73c.
   <sub>attested</sub>
 
 **pref-sam-anu2)** — Mit *pratisam* Med. sich mit Jmd (Acc.) einverstanden erklären.

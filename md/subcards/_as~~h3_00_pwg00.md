@@ -158,25 +158,25 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 **sub-entry-4)** — *upa*
  1) *evaṃ saṃmantrya valinaḥ sarvasainyamupāsitāḥ*
 [R. 7,6,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,45) *upāsate yathā bālā mātaraṃ kṣudhayārditāḥ* umlagern
-[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S050) = ≈крит. 13,27.49a
+[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](mbh/13.26.html#v50) = ≈крит. 13,27.49a
 
 - **RU:** — *upa*
  1) *evaṃ saṃmantrya valinaḥ sarvasainyamupāsitāḥ*
 [R. 7,6,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,45) *upāsate yathā bālā mātaraṃ kṣudhayārditāḥ* окружать
-[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S050) = ≈крит. 13,27.49a
+[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](mbh/13.26.html#v50) = ≈крит. 13,27.49a
   <sub>attested</sub>
 
 **sub-entry-4, 3))** — 3) *mahendraṃ vai giriśreṣṭhaṃ rāmo nityamupāsti ha* zum Aufenthaltsort haben
-[MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Вульг. 5.176.31](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S031) = ≈крит. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
+[MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Вульг. 5.176.31](mbh/5.176.html#v31) = ≈крит. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
 [Spr. 4321.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4321) *pāraṃ gatvā śrutaughasya dhanyā vanamupāsate*
 [1814.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1814) *śreyaskāmāstathā gaṅgāmupāsantīha dehinaḥ*
-[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S050) = ≈крит. 13,27.49a
+[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](mbh/13.26.html#v50) = ≈крит. 13,27.49a
 
 - **RU:** — 3) *mahendraṃ vai giriśreṣṭhaṃ rāmo nityamupāsti ha* иметь своим местопребыванием
-[MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Вульг. 5.176.31](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S031) = ≈крит. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
+[MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Вульг. 5.176.31](mbh/5.176.html#v31) = ≈крит. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
 [Spr. 4321.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4321) *pāraṃ gatvā śrutaughasya dhanyā vanamupāsate*
 [1814.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1814) *śreyaskāmāstathā gaṅgāmupāsantīha dehinaḥ*
-[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S050) = ≈крит. 13,27.49a
+[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](mbh/13.26.html#v50) = ≈крит. 13,27.49a
   <sub>attested</sub>
 
 **sub-entry-4, 7))** — 7) *upāsitena mantreṇa*
@@ -204,11 +204,11 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 
 **sub-entry-4, 10))** — 10) *prāptaṃ prāptamupāsīta hṛdayenāparājitaḥ* ruhig abwarten
 [Spr. 5236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5236) *kṣamāṃ kurvankālamupāsate yaḥ*
-[MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258) = [≈Вульг. 3.5.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A005_S019) = ≈крит. 03,6.19a
+[MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258) = [≈Вульг. 3.5.19](mbh/3.5.html#v19) = ≈крит. 03,6.19a
 
 - **RU:** — 10) *prāptaṃ prāptamupāsīta hṛdayenāparājitaḥ* спокойно выжидать
 [Spr. 5236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5236) *kṣamāṃ kurvankālamupāsate yaḥ*
-[MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258) = [≈Вульг. 3.5.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A005_S019) = ≈крит. 03,6.19a
+[MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258) = [≈Вульг. 3.5.19](mbh/3.5.html#v19) = ≈крит. 03,6.19a
   <sub>attested</sub>
 
 **sub-entry-4, 11))** — 11) *(yaḥ) śūnyamupāsate* wer einem Habenichts dient
@@ -229,20 +229,20 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 
 **sub-entry-6)** — *paryupa*
  1) umlagern (einen Feind)
-[MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236) = [≈Вульг. 15.7.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A007_S002) = ≈крит. 15,12.2c
+[MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236) = [≈Вульг. 15.7.2](mbh/15.7.html#v2) = ≈крит. 15,12.2c
 
 - **RU:** — *paryupa*
  1) окружать (врага)
-[MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236) = [≈Вульг. 15.7.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A007_S002) = ≈крит. 15,12.2c
+[MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236) = [≈Вульг. 15.7.2](mbh/15.7.html#v2) = ≈крит. 15,12.2c
   <sub>attested</sub>
 
 **sub-entry-6, 5))** — 5) *nyagbhūtvā paryupāsīta vadhyaṃ hanyādbale sati*
 [Spr. 1655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1655)
-[MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550) = [≈Вульг. 12.331.41](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A331_S041) = ≈крит. 12,318.41c
+[MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550) = [≈Вульг. 12.331.41](mbh/12.331.html#v41) = ≈крит. 12,318.41c
 
 - **RU:** — 5) *nyagbhūtvā paryupāsīta vadhyaṃ hanyādbale sati*
 [Spr. 1655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1655)
-[MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550) = [≈Вульг. 12.331.41](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A331_S041) = ≈крит. 12,318.41c
+[MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550) = [≈Вульг. 12.331.41](mbh/12.331.html#v41) = ≈крит. 12,318.41c
   <sub>attested</sub>
 
 **sub-entry-6, 6))** — 6) Etwas ruhig ansehen: *nahyato duṣkarataraṃ manye lokeṣvapi triṣu . yatsapatnaśriyaṃ dīptāṃ hīnaśrīḥ paryupāsate ..*

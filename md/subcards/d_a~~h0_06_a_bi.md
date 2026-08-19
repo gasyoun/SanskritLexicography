@@ -4,8 +4,8 @@
 
 
 **1)** — *abhi* geben: *abhyadāt*
-[MBH. 3,13309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13309) = [≈Вульг. 3.198.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A198_S006) = крит. —
+[MBH. 3,13309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13309) = [≈Вульг. 3.198.6](mbh/3.198.html#v6) = крит. —
 
 - **RU:** давать: *abhyadāt*
-[MBH. 3,13309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13309) = [≈Вульг. 3.198.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A198_S006) = крит. —
+[MBH. 3,13309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13309) = [≈Вульг. 3.198.6](mbh/3.198.html#v6) = крит. —
   <sub>attested</sub>

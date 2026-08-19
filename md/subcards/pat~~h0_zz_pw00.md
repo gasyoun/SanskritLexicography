@@ -289,9 +289,9 @@
 - **RU:** 1〉 бросать что-л. (Ins.) в кого-л. [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
   <sub>attested</sub>
 
-**abhipat- caus. 2〉)** — 2〉 werfen —, schleudern auf (Dat. oder Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4) = [≈Вульг. 3.2.55](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S055) = ≈крит. 03,2.53a.
+**abhipat- caus. 2〉)** — 2〉 werfen —, schleudern auf (Dat. oder Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4) = [≈Вульг. 3.2.55](mbh/3.2.html#v55) = ≈крит. 03,2.53a.
 
-- **RU:** 2〉 бросать, метать на (Dat. или Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4) = [≈Вульг. 3.2.55](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S055) = ≈крит. 03,2.53a.
+- **RU:** 2〉 бросать, метать на (Dat. или Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4) = [≈Вульг. 3.2.55](mbh/3.2.html#v55) = ≈крит. 03,2.53a.
   <sub>attested</sub>
 
 **abhipat- caus. 3〉)** — 3〉 hinwerfen, hinabwerfen.

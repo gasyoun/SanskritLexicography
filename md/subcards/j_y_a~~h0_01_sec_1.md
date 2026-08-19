@@ -22,28 +22,28 @@
   <sub>attested</sub>
 
 **caus-sense-inform)** [ĀŚV. GṚHY. 4,7.] Etwas (acc.) zu wissen thun, mittheilen, verkünden: *(tam) samāgamyājñāpayatsvaṃ prayojanam*
-[MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) = [≈Вульг. 2.13.45](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A013_S045) = ≈крит. 02,12.34a *parīkṣya jñāpayannarthānna paścātparitapyate*
-[12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) = [≈Вульг. 12.112.17](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A112_S017) = ≈крит. 12,113.17c *utpātena jñāpyamāne*
+[MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) = [≈Вульг. 2.13.45](mbh/2.13.html#v45) = ≈крит. 02,12.34a *parīkṣya jñāpayannarthānna paścātparitapyate*
+[12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) = [≈Вульг. 12.112.17](mbh/12.112.html#v17) = ≈крит. 12,113.17c *utpātena jñāpyamāne*
 Vārtt. 3 zu [P. 2,3,13.](https://ashtadhyayi.com/sutraani/2/3/13) Etwas (acc.) lehren: *etajjñāpayatyācāryaḥ, kiṃ jñāpyate*
 [PAT.] zu [P. 2,4,66.](https://ashtadhyayi.com/sutraani/2/4/66) [4,1,133.](https://ashtadhyayi.com/sutraani/4/1/133)
 Vārtt. 1 zu [P. 4,1,4.](https://ashtadhyayi.com/sutraani/4/1/4) *jñāpita*
 Sch. zu [JAIM. 1,1,2.] Jmd (acc.) mit Etwas (acc.) bekanntmachen: *śrāvitastvaṃ mayā guhyaṃ jñāpitaśca sanātanam . dharmam*
-[MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) = [≈Вульг. 14.16.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A016_S008) = ≈крит. 14,16.8c *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
+[MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) = [≈Вульг. 14.16.8](mbh/14.16.html#v8) = ≈крит. 14,16.8c *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
 [HARIV. 10038.](https://sanskrit-lexicon-scans.github.io/hariv?10038) Jmd (gen.) von Jmd (acc.) berichten: *tataste jñāpayāmāsurdhṛtarāṣṭrasya nāgarāḥ . pāṇḍavānagninā dagdhān* sie theilten dem Dhṛt. mit, dass die
 P. verbrannt wären
-[MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) = [≈Вульг. 1.147.17](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A147_S017) = ≈крит. 01,135.17c med. Jmd (acc.) angehen, bitten, zusprechen: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
+[MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) = [≈Вульг. 1.147.17](mbh/1.147.html#v17) = ≈крит. 01,135.17c med. Jmd (acc.) angehen, bitten, zusprechen: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
 [3,8762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8762) *upamantrayate sa hiṃkāro jñapayate sa prastāvaḥ striyā saha śete sa udgīthaḥ*
 
 - **RU:** [ĀŚV. GṚHY. 4,7.] давать знать о чем-либо (acc.), сообщать, возвещать: *(tam) samāgamyājñāpayatsvaṃ prayojanam*
-[MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) = [≈Вульг. 2.13.45](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A013_S045) = ≈крит. 02,12.34a *parīkṣya jñāpayannarthānna paścātparitapyate*
-[12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) = [≈Вульг. 12.112.17](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A112_S017) = ≈крит. 12,113.17c *utpātena jñāpyamāne*
+[MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) = [≈Вульг. 2.13.45](mbh/2.13.html#v45) = ≈крит. 02,12.34a *parīkṣya jñāpayannarthānna paścātparitapyate*
+[12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) = [≈Вульг. 12.112.17](mbh/12.112.html#v17) = ≈крит. 12,113.17c *utpātena jñāpyamāne*
 Вартт. 3 zu [P. 2,3,13.](https://ashtadhyayi.com/sutraani/2/3/13) учить чему-либо (acc.): *etajjñāpayatyācāryaḥ, kiṃ jñāpyate*
 [PAT.] к [P. 2,4,66.](https://ashtadhyayi.com/sutraani/2/4/66) [4,1,133.](https://ashtadhyayi.com/sutraani/4/1/133)
 Вартт. 1 zu [P. 4,1,4.](https://ashtadhyayi.com/sutraani/4/1/4) *jñāpita*
 схол. к [JAIM. 1,1,2.] знакомить кого-либо (acc.) с чем-либо (acc.): *śrāvitastvaṃ mayā guhyaṃ jñāpitaśca sanātanam . dharmam*
-[MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) = [≈Вульг. 14.16.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A016_S008) = ≈крит. 14,16.8c *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
+[MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) = [≈Вульг. 14.16.8](mbh/14.16.html#v8) = ≈крит. 14,16.8c *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
 [HARIV. 10038.](https://sanskrit-lexicon-scans.github.io/hariv?10038) сообщать кому-либо (gen.) о ком-либо (acc.): *tataste jñāpayāmāsurdhṛtarāṣṭrasya nāgarāḥ . pāṇḍavānagninā dagdhān* они сообщили Дхрит., что P. сгорели
-[MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) = [≈Вульг. 1.147.17](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A147_S017) = ≈крит. 01,135.17c мед. обращаться к кому-либо (acc.), просить, увещевать: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
+[MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) = [≈Вульг. 1.147.17](mbh/1.147.html#v17) = ≈крит. 01,135.17c мед. обращаться к кому-либо (acc.), просить, увещевать: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
 [3,8762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8762) *upamantrayate sa hiṃkāro jñapayate sa prastāvaḥ striyā saha śete sa udgīthaḥ*
   <sub>attested</sub>
 

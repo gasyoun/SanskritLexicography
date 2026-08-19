@@ -428,9 +428,9 @@
 - **RU:** — 2〉 поражать сверху вниз.
   <sub>attested</sub>
 
-**prefix-ava-3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S018) = ≈крит. 04,2.15a. liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
+**prefix-ava-3)** — 3〉 schlagen auf oder gegen (Acc.). Statt *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](mbh/4.2.html#v18) = ≈крит. 04,2.15a. liest [ed. Vardh. 4,43,30] *avajaghnuṣas*. Vgl. u. *abhini* 2〉.
 
-- **RU:** — 3〉 бить по или о (Acc.). Вм. *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S018) = ≈крит. 04,2.15a. читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. ср. u. *abhini* 2〉.
+- **RU:** — 3〉 бить по или о (Acc.). Вм. *āvajaghnatas* (= *avahanyamānasya* [NĪLAK.]) [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](mbh/4.2.html#v18) = ≈крит. 04,2.15a. читает [ed. Vardh. 4,43,30] *avajaghnuṣas*. ср. u. *abhini* 2〉.
   <sub>attested</sub>
 
 **prefix-ava-4)** — 4〉 zurückschlagen, — stossen; verscheuchen, abwehren.

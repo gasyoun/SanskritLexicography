@@ -8,14 +8,14 @@
 [ṚV. 1,25,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.08) *śakāra upajāyate*
 [ṚV. PRĀT. 4,37.]
 [ŚĀṄKH. ŚR. 14,22,26.] *pañcame pañcame varṣe dvau māsāvupajāyataḥ*
-[MBH. 4,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1608) = [≈Вульг. 4.52.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A052_S003) = ≈крит. 04,47.3a
+[MBH. 4,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1608) = [≈Вульг. 4.52.3](mbh/4.52.html#v3) = ≈крит. 04,47.3a
 
 - **RU:** — *upa*
  1) приходить, — приступать: *veda māso dvādaśa . vedā ya upajāyate*
 [ṚV. 1,25,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.025.html#rv01.025.08) *śakāra upajāyate*
 [ṚV. PRĀT. 4,37.]
 [ŚĀṄKH. ŚR. 14,22,26.] *pañcame pañcame varṣe dvau māsāvupajāyataḥ*
-[MBH. 4,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1608) = [≈Вульг. 4.52.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A052_S003) = ≈крит. 04,47.3a
+[MBH. 4,1608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1608) = [≈Вульг. 4.52.3](mbh/4.52.html#v3) = ≈крит. 04,47.3a
   <sub>attested</sub>
 
 **2)** — 2) geboren werden; entstehen, sich einstellen, zum Vorschein kommen, sich zeigen: *uṣmaṇaścopajāyante*
@@ -28,8 +28,8 @@
 [SUŚR. 1,266,16.] *tathā tathā kuśalatā teṣāṃ teṣūpajāyate*
 [M. 12,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,73) *dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate*
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
-[14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) = [≈Вульг. 2.79.7](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S007) = ≈крит. 02,70.7c [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) = [≈Вульг. 3.2.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S068) = ≈крит. 03,2.64c [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) = [≈Вульг. 3.33.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A033_S030) = ≈крит. 03,34.30a [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
-[MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A062_S022) = ≈крит. 09,61.22c *tatkṣaṇopajātayā pratibhayā*
+[14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) = [≈Вульг. 2.79.7](mbh/2.79.html#v7) = ≈крит. 02,70.7c [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) = [≈Вульг. 3.2.68](mbh/3.2.html#v68) = ≈крит. 03,2.64c [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) = [≈Вульг. 3.33.30](mbh/3.33.html#v30) = ≈крит. 03,34.30a [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
+[MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](mbh/9.62.html#v22) = ≈крит. 09,61.22c *tatkṣaṇopajātayā pratibhayā*
 [DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ bei dem sich Vertrauen eingestellt hat
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
@@ -46,8 +46,8 @@
 [SUŚR. 1,266,16.] *tathā tathā kuśalatā teṣāṃ teṣūpajāyate*
 [M. 12,73.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,73) *dhyāyato viṣayānpuṃsaḥ saṅgasteṣūpajāyate*
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *dehe 'sminprakāśa upajāyate . jñānaṃ yadā*
-[14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) = [≈Вульг. 2.79.7](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S007) = ≈крит. 02,70.7c [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) = [≈Вульг. 3.2.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S068) = ≈крит. 03,2.64c [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) = [≈Вульг. 3.33.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A033_S030) = ≈крит. 03,34.30a [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
-[MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A062_S022) = ≈крит. 09,61.22c *tatkṣaṇopajātayā pratibhayā*
+[14,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,11) [MBH. 2,2590.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2590) = [≈Вульг. 2.79.7](mbh/2.79.html#v7) = ≈крит. 02,70.7c [3,114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.114) = [≈Вульг. 3.2.68](mbh/3.2.html#v68) = ≈крит. 03,2.64c [1293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1293) = [≈Вульг. 3.33.30](mbh/3.33.html#v30) = ≈крит. 03,34.30a [R. 3,69,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,69,5) [6,82,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,7) [PAÑCAT. I,154.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,154) [HIT. I,61.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,61) [BHĀG. P. 6,14,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,2) *upajātamupaplavyaṃ saha gāṇḍīvadhanvanā*
+[MBH. 9,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](mbh/9.62.html#v22) = ≈крит. 09,61.22c *tatkṣaṇopajātayā pratibhayā*
 [DAŚAK.] in [BENF. Chr. 194,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *upajātaviśvāsa* _adj._ в ком возникло доверие
 [HIT. 42,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?42,6) *˚kheda*
 [MṚCCH. 157,21.] *˚sādhvasa*
@@ -58,12 +58,12 @@
 **3)** — 3) wiedergeboren werden: *sarge 'pi nopajāyate*
 [BHAG. 14,2.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,2) *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
 [YĀJÑ. 3,256.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,256) *mānuṣeṣu*
-[MBH. 13,6689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6689) = [≈Вульг. 13.145.7](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A145_S007) = ≈крит. 13,133.7a
+[MBH. 13,6689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6689) = [≈Вульг. 13.145.7](mbh/13.145.html#v7) = ≈крит. 13,133.7a
 
 - **RU:** — 3) возрождаться, рождаться вновь: *sarge 'pi nopajāyate*
 [BHAG. 14,2.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,2) *ihaiva sā śunī gṛdhrī śūkarī copajāyate*
 [YĀJÑ. 3,256.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,256) *mānuṣeṣu*
-[MBH. 13,6689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6689) = [≈Вульг. 13.145.7](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A145_S007) = ≈крит. 13,133.7a
+[MBH. 13,6689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6689) = [≈Вульг. 13.145.7](mbh/13.145.html#v7) = ≈крит. 13,133.7a
   <sub>attested</sub>
 
 **4)** — 4) sein: *prabhutvaṃ dhanamūlaṃ hi rājñāmapyupajāyate*

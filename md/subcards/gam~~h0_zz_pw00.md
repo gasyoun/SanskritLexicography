@@ -135,9 +135,9 @@
 
 - **RU:** — 4) велеть кому-либо уйти, отсылать прочь.
 
-**Caus.5)** — 5〉 hingehen lassen, so v. a. sterben — *gamita* gestorben [MBH. 12,29,149](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,29,149) = [≈Вульг. 12.1.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A001_S029) = ≈крит. 12,1.29a.
+**Caus.5)** — 5〉 hingehen lassen, so v. a. sterben — *gamita* gestorben [MBH. 12,29,149](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,29,149) = [≈Вульг. 12.1.29](mbh/12.1.html#v29) = ≈крит. 12,1.29a.
 
-- **RU:** — 5) отпускать (в иной мир), так преим. — умирать — *gamita* умерший [MBH. 12,29,149](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,29,149) = [≈Вульг. 12.1.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A001_S029) = ≈крит. 12,1.29a.
+- **RU:** — 5) отпускать (в иной мир), так преим. — умирать — *gamita* умерший [MBH. 12,29,149](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,29,149) = [≈Вульг. 12.1.29](mbh/12.1.html#v29) = ≈крит. 12,1.29a.
 
 **Caus.6)** — 6〉 verfliessen lassen, zubringen (eine Zeit).
 
@@ -203,9 +203,9 @@
 
 - **RU:** — 1) протекать, проходить. *˚gata* — истекший.
 
-**apa115.2)** — 2〉 übergehen, überspringen; mit Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) = [≈Вульг. 9.42.10](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S010) = ≈крит. 09,41.10c fehlerhaft für *abhi*.
+**apa115.2)** — 2〉 übergehen, überspringen; mit Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) = [≈Вульг. 9.42.10](mbh/9.42.html#v10) = ≈крит. 09,41.10c fehlerhaft für *abhi*.
 
-- **RU:** — 2) переходить, пропускать; с Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) = [≈Вульг. 9.42.10](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A042_S010) = ≈крит. 09,41.10c ошибочно вм. *abhi*.
+- **RU:** — 2) переходить, пропускать; с Acc. — [MBH. 9,2367](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2367) = [≈Вульг. 9.42.10](mbh/9.42.html#v10) = ≈крит. 09,41.10c ошибочно вм. *abhi*.
 
 **abhi120)** — Mit *upāti* gehen über (einen Fluss).
 
@@ -327,9 +327,9 @@
 
 - **RU:** — а) послушный, уступчивый, покорный [256,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?256). [KĀD. 2,123,13].
 
-**anu149.6b)** — b〉 am Ende eines Comp. sich richtend nach, entsprechend, gemäss [105,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [211,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?211). [MBH. 3,315,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,315,24) = [≈Вульг. 3.8.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A008_S005) = ≈крит. 03,9.5a. [R. 4,24,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3). [PAÑCAT. 218,8](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8).
+**anu149.6b)** — b〉 am Ende eines Comp. sich richtend nach, entsprechend, gemäss [105,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [211,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?211). [MBH. 3,315,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,315,24) = [≈Вульг. 3.8.5](mbh/3.8.html#v5) = ≈крит. 03,9.5a. [R. 4,24,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3). [PAÑCAT. 218,8](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8).
 
-- **RU:** — б) в конце Comp. — сообразующийся с, соответствующий, согласно [105,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [211,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?211). [MBH. 3,315,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,315,24) = [≈Вульг. 3.8.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A008_S005) = ≈крит. 03,9.5a. [R. 4,24,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3). [PAÑCAT. 218,8](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8).
+- **RU:** — б) в конце Comp. — сообразующийся с, соответствующий, согласно [105,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). [211,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?211). [MBH. 3,315,24](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,315,24) = [≈Вульг. 3.8.5](mbh/3.8.html#v5) = ≈крит. 03,9.5a. [R. 4,24,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3). [PAÑCAT. 218,8](https://sanskrit-lexicon-scans.github.io/pantankose/app2?218,8).
 
 **anu149.6c)** — c〉 nachgeahmt [106,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?106).
 

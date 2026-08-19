@@ -5,11 +5,11 @@
 
 **1)** — *vini* caus.
  1) kund thun, berichten, melden
-[MBH. 5,7344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7344) = [≈Вульг. 5.186.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A186_S017) = ≈крит. 05,187.16a
+[MBH. 5,7344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7344) = [≈Вульг. 5.186.17](mbh/5.186.html#v17) = ≈крит. 05,187.16a
 [R. 1,1,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,72) ([77](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,77) [GORR.]). [KATHĀS. 71,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,65) Jmd anmelden
 [MBH. 1,4906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4906)
 
-- **RU:** 1) — *vini* caus. возвещать, сообщать, докладывать [MBH. 5,7344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7344) = [≈Вульг. 5.186.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A186_S017) = ≈крит. 05,187.16a [R. 1,1,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,72) ([77](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,77) [GORR.]). [KATHĀS. 71,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,65) докладывать о ком-л. [MBH. 1,4906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4906)
+- **RU:** 1) — *vini* caus. возвещать, сообщать, докладывать [MBH. 5,7344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7344) = [≈Вульг. 5.186.17](mbh/5.186.html#v17) = ≈крит. 05,187.16a [R. 1,1,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,72) ([77](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,77) [GORR.]). [KATHĀS. 71,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,65) докладывать о ком-л. [MBH. 1,4906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4906)
   <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas anbieten, übergeben

@@ -9,10 +9,10 @@
   <sub>attested</sub>
 
 **1)** 1) hinterher verbrennen: *dagdhamevānudahati* (wohl *kālaḥ* aus dem Vorhergehenden zu ergänzen, da *anudahati* wohl kaum = *anudahyeta* sein kann) *hatamevānuhanyate . naśyate naṣṭamevāgre*
-[MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Вульг. 12.227.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A227_S009) = ≈крит. 12,220.9a
+[MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Вульг. 12.227.9](mbh/12.227.html#v9) = ≈крит. 12,220.9a
 
 - **RU:** 1) сжигать вслед, вдогонку: *dagdhamevānudahati* (по-видимому, следует восполнить *kālaḥ* из предыдущего, так как *anudahati* едва ли может быть = *anudahyeta*) *hatamevānuhanyate . naśyate naṣṭamevāgre*
-[MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Вульг. 12.227.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A227_S009) = ≈крит. 12,220.9a
+[MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Вульг. 12.227.9](mbh/12.227.html#v9) = ≈крит. 12,220.9a
   <sub>attested</sub>
 
 **2)** — 2) aufbrennen (von Anfang bis zu Ende): *anu daha sahamūrānkravyādaḥ*

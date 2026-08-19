@@ -87,12 +87,12 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [ŚĀK. 33.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?33) *gacchatāṃ puro bhavantau*
 [29,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?29,1) *tena (mārgeṇa) gacchan*
 [M. 4,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,178) *tena (pathā) gacchāmahe*
-[MBH. 1,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4312) = [≈Вульг. 1.107.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A107_S009) = ≈крит. 01,101.8a *yeneṣṭaṃ tena (mārgeṇa) gamyatām* ad
+[MBH. 1,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4312) = [≈Вульг. 1.107.9](mbh/1.107.html#v9) = ≈крит. 01,101.8a *yeneṣṭaṃ tena (mārgeṇa) gamyatām* ad
 [HIT. I,25.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,25) *(khagāḥ) jagmurvihāyasā*
 [N. 9,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,14) *gatvā gagaṇenāśu*
 [VID. 117.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?117) *pathi gacchatā kenāpi*
 [HIT. 4,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?4,6) *gatvā prakṛṣṭādhvānam*
-([P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12)) [N. 12,82.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,82) [MBH. 3,11285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11285) = [≈Вульг. 3.149.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A149_S017) = ≈крит. 03,148.16c [R. 2,34,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,31) *anyāṃ gatiṃ gamiṣyāmi*
+([P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12)) [N. 12,82.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,82) [MBH. 3,11285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11285) = [≈Вульг. 3.149.17](mbh/3.149.html#v17) = ≈крит. 03,148.16c [R. 2,34,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,31) *anyāṃ gatiṃ gamiṣyāmi*
 [1,58,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,7) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,43) *yo (adhvā) 'śvena dinenaikena gamyate*
 [H. 1250.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1250)
 [AK. 2,8,2,15.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,15) *gamiṣye daśayojanam*
@@ -115,11 +115,11 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [PAÑCAT. I,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,9) [HIT. I,95.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,95) *gatavatī vāṃ sahadharmacāriṇī*
 [ŚĀK. 57,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?57,23) *gantumicchati*
 [22,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?22,14) *purottamāt — gacchāmo yatra gantā yudhiṣṭhiraḥ*
-[MBH. 1,5746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5746) = [≈Вульг. 1.143.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A143_S002) = ≈крит. 01,131.2a *vayamadyaiva gacchāmo rāmaṃ draṣṭum*
+[MBH. 1,5746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5746) = [≈Вульг. 1.143.2](mbh/1.143.html#v2) = ≈крит. 01,131.2a *vayamadyaiva gacchāmo rāmaṃ draṣṭum*
 [BHAṬṬ. 7,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,29) *gamyatām* man mache sich auf
 [PAÑCAT. 45,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,1) [100,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?100,10) [232,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?232,10) *tadito gamyatāṃ tvayā*
 [VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* wird kommen
-[MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312) = [≈Вульг. 3.256.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A256_S016) = ≈крит. 03,242.14a
+[MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312) = [≈Вульг. 3.256.16](mbh/3.256.html#v16) = ≈крит. 03,242.14a
 
 - **RU:** — 1) идти, двигаться; отправляться туда; уходить, удаляться; приходить; о живых существах и неодушевленных предметах, о непосредственном и опосредованном движении: *tena gaccha parastaram*
 [ṚV. 10,155,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.155.html#rv10.155.03) *paraḥ*
@@ -136,12 +136,12 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [ŚĀK. 33.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?33) *gacchatāṃ puro bhavantau*
 [29,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?29,1) *tena (mārgeṇa) gacchan*
 [M. 4,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,178) *tena (pathā) gacchāmahe*
-[MBH. 1,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4312) = [≈Вульг. 1.107.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A107_S009) = ≈крит. 01,101.8a *yeneṣṭaṃ tena (mārgeṇa) gamyatām* ad
+[MBH. 1,4312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4312) = [≈Вульг. 1.107.9](mbh/1.107.html#v9) = ≈крит. 01,101.8a *yeneṣṭaṃ tena (mārgeṇa) gamyatām* ad
 [HIT. I,25.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,25) *(khagāḥ) jagmurvihāyasā*
 [N. 9,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,14) *gatvā gagaṇenāśu*
 [VID. 117.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?117) *pathi gacchatā kenāpi*
 [HIT. 4,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?4,6) *gatvā prakṛṣṭādhvānam*
-([P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12)) [N. 12,82.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,82) [MBH. 3,11285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11285) = [≈Вульг. 3.149.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A149_S017) = ≈крит. 03,148.16c [R. 2,34,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,31) *anyāṃ gatiṃ gamiṣyāmi*
+([P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12)) [N. 12,82.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,82) [MBH. 3,11285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11285) = [≈Вульг. 3.149.17](mbh/3.149.html#v17) = ≈крит. 03,148.16c [R. 2,34,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,31) *anyāṃ gatiṃ gamiṣyāmi*
 [1,58,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,7) [DAŚ. 2,41.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,41) [43.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,43) *yo (adhvā) 'śvena dinenaikena gamyate*
 [H. 1250.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1250)
 [AK. 2,8,2,15.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,15) *gamiṣye daśayojanam*
@@ -164,11 +164,11 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [PAÑCAT. I,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,9) [HIT. I,95.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,95) *gatavatī vāṃ sahadharmacāriṇī*
 [ŚĀK. 57,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?57,23) *gantumicchati*
 [22,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?22,14) *purottamāt — gacchāmo yatra gantā yudhiṣṭhiraḥ*
-[MBH. 1,5746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5746) = [≈Вульг. 1.143.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A143_S002) = ≈крит. 01,131.2a *vayamadyaiva gacchāmo rāmaṃ draṣṭum*
+[MBH. 1,5746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5746) = [≈Вульг. 1.143.2](mbh/1.143.html#v2) = ≈крит. 01,131.2a *vayamadyaiva gacchāmo rāmaṃ draṣṭum*
 [BHAṬṬ. 7,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,29) *gamyatām* пусть отправляются в путь
 [PAÑCAT. 45,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?45,1) [100,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?100,10) [232,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?232,10) *tadito gamyatāṃ tvayā*
 [VID. 165.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?165) *tadā tu nṛpatirgantā* придет
-[MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312) = [≈Вульг. 3.256.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A256_S016) = ≈крит. 03,242.14a
+[MBH. 3,15312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15312) = [≈Вульг. 3.256.16](mbh/3.256.html#v16) = ≈крит. 03,242.14a
   <sub>attested</sub>
 
 **2)** — 2) verfliessen, vergehen (von der Zeit): *kāle gacchati* im Verlauf der Zeit
@@ -213,16 +213,16 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [N. 6,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?6,3) *haṃsāḥ samutpatya vidarbhānagaman*
 [1,21.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,21) *gamiṣyāmi* (sc. *rathena) — ekāhnā — vidarbhanagarīm*
 [19,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?19,10) *samīpaṃ puṣkarasya ca . gatvā*
-[7,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,4) [14,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,20) [MBH. 3,16645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16645) = [≈Вульг. 3.293.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A293_S030) = ≈крит. 03,277.30a [HIT. 27,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,1) *pratīpaṃ gam* Jmd entgegen gehen, sich Jmd (gen.) widersetzen
+[7,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,4) [14,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,20) [MBH. 3,16645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16645) = [≈Вульг. 3.293.30](mbh/3.293.html#v30) = ≈крит. 03,277.30a [HIT. 27,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,1) *pratīpaṃ gam* Jmd entgegen gehen, sich Jmd (gen.) widersetzen
 [ŚĀK. 93.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?93) *gamyatāmeṣa dakṣiṇasyottaro giriḥ*
 [R. 4,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,63,22)
 [HIT. 80,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?80,8) *uttamānuttamāngacchanhīnānhīnāṃśca varjayan*
 [M. 4,245.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,245) *gacchadhvam — rājānam*
-[MBH. 1,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1789) = [≈Вульг. 1.43.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S024) = ≈крит. 01,39.23c [6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A165_S003) = ≈крит. 01,153.3a
+[MBH. 1,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1789) = [≈Вульг. 1.43.24](mbh/1.43.html#v24) = ≈крит. 01,39.23c [6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](mbh/1.165.html#v3) = ≈крит. 01,153.3a
 [R. 1,54,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,5) *gacchadhvamenaṃ śaraṇam*
-[MBH. 3,13006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13006) = [≈Вульг. 3.189.57](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A189_S057) = ≈крит. 03,187.55a *ete gacchanti bahavaḥ panthāno dakṣiṇāpatham*
-[2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2317) = [≈Вульг. 3.61.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S021) = ≈крит. 03,58.20a [2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2319) = [≈Вульг. 3.61.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S023) = ≈крит. 03,58.22c [P. 4,3,85.](https://ashtadhyayi.com/sutraani/4/3/85) *jānubhyāmavanīṃ gam* sich auf die Knie werfen
-[MBH. 13,935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.935) = [≈Вульг. 13.14.344](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S344) = ≈крит. 13,14.180c
+[MBH. 3,13006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13006) = [≈Вульг. 3.189.57](mbh/3.189.html#v57) = ≈крит. 03,187.55a *ete gacchanti bahavaḥ panthāno dakṣiṇāpatham*
+[2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2317) = [≈Вульг. 3.61.21](mbh/3.61.html#v21) = ≈крит. 03,58.20a [2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2319) = [≈Вульг. 3.61.23](mbh/3.61.html#v23) = ≈крит. 03,58.22c [P. 4,3,85.](https://ashtadhyayi.com/sutraani/4/3/85) *jānubhyāmavanīṃ gam* sich auf die Knie werfen
+[MBH. 13,935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.935) = [≈Вульг. 13.14.344](mbh/13.14.html#v344) = ≈крит. 13,14.180c
 [PAÑCAT. 236,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?236,9) *dharaṇīṃ mūrdhnā* sich mit dem Kopfe bis zur Erde verneigen
 [R. 3,11,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,6) *tvāmapyetādṛśo bhāvaḥ kṣiprameva gamiṣyati — dātāramiva dakṣiṇā*
 [DAŚ. 2,54.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,54) *chadmanā caritaṃ yacca vrataṃ rakṣāṃsi gacchati*
@@ -259,16 +259,16 @@ partic. *gmant: adha gmantośanā* (Падап.: *gmantā) pṛcchate vāṃ kad
 [N. 6,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?6,3) *haṃsāḥ samutpatya vidarbhānagaman*
 [1,21.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,21) *gamiṣyāmi* (а именно *rathena) — ekāhnā — vidarbhanagarīm*
 [19,10.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?19,10) *samīpaṃ puṣkarasya ca . gatvā*
-[7,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,4) [14,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,20) [MBH. 3,16645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16645) = [≈Вульг. 3.293.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A293_S030) = ≈крит. 03,277.30a [HIT. 27,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,1) *pratīpaṃ gam* идти навстречу кому-л., противостоять кому-л. (gen.)
+[7,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,4) [14,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?14,20) [MBH. 3,16645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16645) = [≈Вульг. 3.293.30](mbh/3.293.html#v30) = ≈крит. 03,277.30a [HIT. 27,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?27,1) *pratīpaṃ gam* идти навстречу кому-л., противостоять кому-л. (gen.)
 [ŚĀK. 93.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?93) *gamyatāmeṣa dakṣiṇasyottaro giriḥ*
 [R. 4,63,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,63,22)
 [HIT. 80,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?80,8) *uttamānuttamāngacchanhīnānhīnāṃśca varjayan*
 [M. 4,245.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,245) *gacchadhvam — rājānam*
-[MBH. 1,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1789) = [≈Вульг. 1.43.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A043_S024) = ≈крит. 01,39.23c [6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A165_S003) = ≈крит. 01,153.3a
+[MBH. 1,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1789) = [≈Вульг. 1.43.24](mbh/1.43.html#v24) = ≈крит. 01,39.23c [6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](mbh/1.165.html#v3) = ≈крит. 01,153.3a
 [R. 1,54,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,5) *gacchadhvamenaṃ śaraṇam*
-[MBH. 3,13006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13006) = [≈Вульг. 3.189.57](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A189_S057) = ≈крит. 03,187.55a *ete gacchanti bahavaḥ panthāno dakṣiṇāpatham*
-[2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2317) = [≈Вульг. 3.61.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S021) = ≈крит. 03,58.20a [2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2319) = [≈Вульг. 3.61.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S023) = ≈крит. 03,58.22c [P. 4,3,85.](https://ashtadhyayi.com/sutraani/4/3/85) *jānubhyāmavanīṃ gam* бросаться на колени
-[MBH. 13,935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.935) = [≈Вульг. 13.14.344](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S344) = ≈крит. 13,14.180c
+[MBH. 3,13006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13006) = [≈Вульг. 3.189.57](mbh/3.189.html#v57) = ≈крит. 03,187.55a *ete gacchanti bahavaḥ panthāno dakṣiṇāpatham*
+[2317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2317) = [≈Вульг. 3.61.21](mbh/3.61.html#v21) = ≈крит. 03,58.20a [2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2319) = [≈Вульг. 3.61.23](mbh/3.61.html#v23) = ≈крит. 03,58.22c [P. 4,3,85.](https://ashtadhyayi.com/sutraani/4/3/85) *jānubhyāmavanīṃ gam* бросаться на колени
+[MBH. 13,935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.935) = [≈Вульг. 13.14.344](mbh/13.14.html#v344) = ≈крит. 13,14.180c
 [PAÑCAT. 236,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?236,9) *dharaṇīṃ mūrdhnā* кланяться, касаясь головой земли
 [R. 3,11,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,11,6) *tvāmapyetādṛśo bhāvaḥ kṣiprameva gamiṣyati — dātāramiva dakṣiṇā*
 [DAŚ. 2,54.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,54) *chadmanā caritaṃ yacca vrataṃ rakṣāṃsi gacchati*

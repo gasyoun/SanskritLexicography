@@ -77,9 +77,9 @@
 — 1〉 бить в (Gen.), нападать на кого-л. (Acc.).
   <sub>attested</sub>
 
-**mit-T21-2)** — 2〉 niederschlagen [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9) = [≈Вульг. 12.8.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S029) = ≈крит. 12,8.28c.
+**mit-T21-2)** — 2〉 niederschlagen [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9) = [≈Вульг. 12.8.29](mbh/12.8.html#v29) = ≈крит. 12,8.28c.
 
-- **RU:** — 2〉 сражать [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9) = [≈Вульг. 12.8.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S029) = ≈крит. 12,8.28c.
+- **RU:** — 2〉 сражать [MBH. 12,230,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,230,9) = [≈Вульг. 12.8.29](mbh/12.8.html#v29) = ≈крит. 12,8.28c.
   <sub>attested</sub>
 
 **mit-T21-3)** — 3〉 zerschlagen, brechen.
@@ -274,9 +274,9 @@
 - **RU:** — Intens. (*vijījahi* ?) причинять кому-л. (Acc.) вред, наносить ущерб.
   <sub>attested</sub>
 
-**mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a nach [KERN] fehlerhaft für *anuvahanti*.
+**mit-T60-T64)** — Mit *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](mbh/12.2.html#v12) = ≈крит. 12,2.12a nach [KERN] fehlerhaft für *anuvahanti*.
 
-- **RU:** — С *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a по [KERN] ошибочно вм. *anuvahanti*.
+- **RU:** — С *anuvi*, *˚hanti* [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](mbh/12.2.html#v12) = ≈крит. 12,2.12a по [KERN] ошибочно вм. *anuvahanti*.
   <sub>attested</sub>
 
 **mit-T65-T66)** — Mit *āvi* (!) hauen auf (Acc.).

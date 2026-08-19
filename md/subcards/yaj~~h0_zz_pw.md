@@ -15,9 +15,9 @@
 - **RU:** — a〉 с Acc. бога, Dat. лица или цели, ради которой, и Ins. предмета (также партитивным Gen.) или орудия, которым совершается действие. *iṣṭa* тот, кому была принесена жертва. Также impers. с Ins. лица, приносящего жертву, и Ins. принесенной жертвы [YĀJÑ. 1,358](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,358).
   <sub>attested</sub>
 
-**1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10) = [≈Вульг. 13.1.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S031) = ≈крит. 13,1.24a. *iṣṭa* geopfert, dargebracht.
+**1b)** — b〉 mit Acc. des Opfers, Liedes u. s. w., worin sich die Cultushandlung vollzieht. Opfern und zugleich darbringen, hingeben, schenken [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10) = [≈Вульг. 13.1.31](mbh/13.1.html#v31) = ≈крит. 13,1.24a. *iṣṭa* geopfert, dargebracht.
 
-- **RU:** — b〉 с Acc. жертвы, песнопения и т.д., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10) = [≈Вульг. 13.1.31](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S031) = ≈крит. 13,1.24a. *iṣṭa* принесенный в жертву, поднесенный.
+- **RU:** — b〉 с Acc. жертвы, песнопения и т.д., в которых совершается культовое действие. Жертвовать и одновременно подносить, отдавать, дарить [MBH. 13,31,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,31,10) = [≈Вульг. 13.1.31](mbh/13.1.html#v31) = ≈крит. 13,1.24a. *iṣṭa* принесенный в жертву, поднесенный.
   <sub>attested</sub>
 
 **1c)** — c〉 mit Dat., Loc. oder Acc. mit *prati* der Person und Acc. der Sache.

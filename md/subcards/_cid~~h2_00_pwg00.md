@@ -83,18 +83,18 @@
 
 **Nachtrag §79)** — *ā*
  1)
-Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A266_S042) = ≈крит. 12,258.39c liest die [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
+Z. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](mbh/12.266.html#v42) = ≈крит. 12,258.39c liest die [ed. Bomb.] *ye ca cchindanti vṛṣaṇān* .
 
 - **RU:** — *ā*
  1)
-стк. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A266_S042) = ≈крит. 12,258.39c — [Бомбейская ред.] читает *ye ca cchindanti vṛṣaṇān* .
+стк. 4 [MBH. 12,9377](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9377) = [≈Вульг. 12.266.42](mbh/12.266.html#v42) = ≈крит. 12,258.39c — [Бомбейская ред.] читает *ye ca cchindanti vṛṣaṇān* .
   <sub>attested</sub>
 
 **Nachtrag §81-3)** — 3) entfernen, zu Nichte machen: *yenācchinnaṃ tattamaḥ* (so die [ed. Bomb.])
-[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362) = [≈Вульг. 13.158.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A158_S009) = ≈крит. 13,143.8a
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362) = [≈Вульг. 13.158.9](mbh/13.158.html#v9) = ≈крит. 13,143.8a
 
 - **RU:** — 3) удалять, уничтожать: *yenācchinnaṃ tattamaḥ* (так [Бомбейская ред.])
-[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362) = [≈Вульг. 13.158.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A158_S009) = ≈крит. 13,143.8a
+[MBH. 13,7362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7362) = [≈Вульг. 13.158.9](mbh/13.158.html#v9) = ≈крит. 13,143.8a
   <sub>attested</sub>
 
 **Nachtrag §82-4)** — 4) *ācchinnadāradraviṇāḥ*

@@ -10,7 +10,7 @@
 [AV. 6,56,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.056.html#av06.056.03) Flügel
 [ŚAT. BR. 14,7,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,19) [3,4,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,16) *saṃhatya hastau*
 [M. 2,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,71) *bhruvormadhyam*
-[MBH. 5,4704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4704) = [≈Вульг. 5.141.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A141_S018) = ≈крит. 05,139.18a *bhrūkuṭīm*
+[MBH. 5,4704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4704) = [≈Вульг. 5.141.18](mbh/5.141.html#v18) = ≈крит. 05,139.18a *bhrūkuṭīm*
 [R. 3,35,76.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,76) *padāni saṃhanyante* werden verbunden, verbinden sich
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 73.]
 
@@ -21,7 +21,7 @@
 [AV. 6,56,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.056.html#av06.056.03) крылья
 [ŚAT. BR. 14,7,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,19) [3,4,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,16) *saṃhatya hastau*
 [M. 2,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,71) *bhruvormadhyam*
-[MBH. 5,4704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4704) = [≈Вульг. 5.141.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A141_S018) = ≈крит. 05,139.18a *bhrūkuṭīm*
+[MBH. 5,4704.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4704) = [≈Вульг. 5.141.18](mbh/5.141.html#v18) = ≈крит. 05,139.18a *bhrūkuṭīm*
 [R. 3,35,76.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,76) *padāni saṃhanyante* соединяются, связываются
 [ŚAṂK.] в [BṚH. ĀR. UP. S. 73.]
   <sub>attested</sub>
@@ -29,12 +29,12 @@
 **sam+han — 2)** — 2) zusammenballen: *saṃhantyapo divyā mārutaḥ* ballt zusammen zu Hagel
 [SUŚR. 1,264,18.] pass. sich ballen, fest —, consistent werden: *śaraḥ samahanyata*
 [ŚAT. BR. 10,6,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,2) *kṛṣṇāyasasyeva ca te saṃhatya hṛdayaṃ kṛtam* so v. a. dein Herz ist gleichsam aus Eisen zusammengehämmert
-[MBH. 5,4580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4580) = [≈Вульг. 5.137.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A137_S004) = ≈крит. 05,88.64c
+[MBH. 5,4580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4580) = [≈Вульг. 5.137.4](mbh/5.137.html#v4) = ≈крит. 05,88.64c
 
 - **RU:** — 2) сгущаться, скатываться в шар: *saṃhantyapo divyā mārutaḥ* скатывается в шар, превращаясь в град
 [SUŚR. 1,264,18.] pass. сгущаться, становиться плотным —, плотным (consistent): *śaraḥ samahanyata*
 [ŚAT. BR. 10,6,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,5,2) *kṛṣṇāyasasyeva ca te saṃhatya hṛdayaṃ kṛtam* так преим. твое сердце как будто выковано из железа
-[MBH. 5,4580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4580) = [≈Вульг. 5.137.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A137_S004) = ≈крит. 05,88.64c
+[MBH. 5,4580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4580) = [≈Вульг. 5.137.4](mbh/5.137.html#v4) = ≈крит. 05,88.64c
   <sub>attested</sub>
 
 **sam+han — 3)** — 3) zusammensetzen, — fügen: *āsandīm*
@@ -59,25 +59,25 @@
   <sub>attested</sub>
 
 **sam+han — 6)** — 6) absol. *saṃhatya* sich zusammenthuend, in Gemeinschaft, vereint, zusammen: *jīvāmaḥ*
-[MBH. 5,922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.922) = [≈Вульг. 5.31.7](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A031_S007) = ≈крит. 05,31.7a *sa saṃhatya nihantvyaḥ*
-[13,3097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3097) = [≈Вульг. 13.61.34](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S034) = ≈крит. 13,60.21a *kurvate yātrāḥ*
-[14,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1061) = [≈Вульг. 14.39.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A039_S004) = ≈крит. 14,39.4c [R. GORR. 2,67,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,19) [3,16,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,18) [VARĀH. BṚH. S. 89,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,18) [BHĀG. P. 3,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,14) *dvaṃdvena saṃhatya ca yudhyamānāḥ*
+[MBH. 5,922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.922) = [≈Вульг. 5.31.7](mbh/5.31.html#v7) = ≈крит. 05,31.7a *sa saṃhatya nihantvyaḥ*
+[13,3097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3097) = [≈Вульг. 13.61.34](mbh/13.61.html#v34) = ≈крит. 13,60.21a *kurvate yātrāḥ*
+[14,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1061) = [≈Вульг. 14.39.4](mbh/14.39.html#v4) = ≈крит. 14,39.4c [R. GORR. 2,67,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,19) [3,16,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,18) [VARĀH. BṚH. S. 89,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,18) [BHĀG. P. 3,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,14) *dvaṃdvena saṃhatya ca yudhyamānāḥ*
 [8,10,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,34) *kāriṇaḥ*
 [11,24,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,24,9) *˚kāritvāt*
 Schol. zu [KAP. 1,104.] [SĀH. D. 9,9.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,9) *a˚*
 [BHĀG. P. 3,26,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,50) *pāpaiḥ sahāyaiḥ saṃhatya* im Verein mit
-[MBH. 5,4398.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4398) = [≈Вульг. 5.132.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A132_S004) = ≈крит. 05,130.4a *saṃhatyānyo'nyam*
+[MBH. 5,4398.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4398) = [≈Вульг. 5.132.4](mbh/5.132.html#v4) = ≈крит. 05,130.4a *saṃhatyānyo'nyam*
 [BHĀG. P. 1,7,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,30) [2,5,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,33)
 
 - **RU:** — 6) absol. *saṃhatya* объединяясь, сообща, совместно, вместе: *jīvāmaḥ*
-[MBH. 5,922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.922) = [≈Вульг. 5.31.7](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A031_S007) = ≈крит. 05,31.7a *sa saṃhatya nihantvyaḥ*
-[13,3097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3097) = [≈Вульг. 13.61.34](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S034) = ≈крит. 13,60.21a *kurvate yātrāḥ*
-[14,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1061) = [≈Вульг. 14.39.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A039_S004) = ≈крит. 14,39.4c [R. GORR. 2,67,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,19) [3,16,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,18) [VARĀH. BṚH. S. 89,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,18) [BHĀG. P. 3,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,14) *dvaṃdvena saṃhatya ca yudhyamānāḥ*
+[MBH. 5,922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.922) = [≈Вульг. 5.31.7](mbh/5.31.html#v7) = ≈крит. 05,31.7a *sa saṃhatya nihantvyaḥ*
+[13,3097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3097) = [≈Вульг. 13.61.34](mbh/13.61.html#v34) = ≈крит. 13,60.21a *kurvate yātrāḥ*
+[14,1061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1061) = [≈Вульг. 14.39.4](mbh/14.39.html#v4) = ≈крит. 14,39.4c [R. GORR. 2,67,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,19) [3,16,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,18) [VARĀH. BṚH. S. 89,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?89,18) [BHĀG. P. 3,20,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,20,14) *dvaṃdvena saṃhatya ca yudhyamānāḥ*
 [8,10,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,10,34) *kāriṇaḥ*
 [11,24,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,24,9) *˚kāritvāt*
 схол. к [KAP. 1,104.] [SĀH. D. 9,9.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?9,9) *a˚*
 [BHĀG. P. 3,26,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,50) *pāpaiḥ sahāyaiḥ saṃhatya* совместно с
-[MBH. 5,4398.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4398) = [≈Вульг. 5.132.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A132_S004) = ≈крит. 05,130.4a *saṃhatyānyo'nyam*
+[MBH. 5,4398.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4398) = [≈Вульг. 5.132.4](mbh/5.132.html#v4) = ≈крит. 05,130.4a *saṃhatyānyo'nyam*
 [BHĀG. P. 1,7,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,30) [2,5,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,33)
   <sub>attested</sub>
 
@@ -96,18 +96,18 @@ Schol. zu [KAP. 1,104.] [SĀH. D. 9,9.](https://sanskrit-lexicon-scans.github.io
 [R. 3,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,10) [21,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,21,6) [4,13,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,23) [25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,25) [6,111,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,111,49)
 [BHĀG. P. 4,1,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,26) [12,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,21) [10,86,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,86,25) Finger
 [KAUŚ. 4.] *saṃhatoru*
-[MBH. 4,253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.253) = [≈Вульг. 4.9.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A009_S010) = ≈крит. 04,8.10c *ūrū susaṃhatau*
+[MBH. 4,253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.253) = [≈Вульг. 4.9.10](mbh/4.9.html#v10) = ≈крит. 04,8.10c *ūrū susaṃhatau*
 [R. 5,2,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,18) *saṃhatavṛttoru*
 [6,9,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,12) *caraṇau*
 [3,52,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,33) *˚bhrū*
-[MBH. 5,2036.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2036) = [≈Вульг. 5.51.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A051_S018) = ≈крит. 05,50.17c *bhrukuṭīsaṃhatabhrū*
-[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S009) = ≈крит. 03,254.9a *˚bhrukuṭīmukha*
-[11187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11187) = [≈Вульг. 3.146.71](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A146_S071) = ≈крит. 03,146.61a [VARĀH. BṚH. S. 61,10. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,10) *arā rathanābhau*
+[MBH. 5,2036.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2036) = [≈Вульг. 5.51.18](mbh/5.51.html#v18) = ≈крит. 05,50.17c *bhrukuṭīsaṃhatabhrū*
+[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](mbh/3.270.html#v9) = ≈крит. 03,254.9a *˚bhrukuṭīmukha*
+[11187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11187) = [≈Вульг. 3.146.71](mbh/3.146.html#v71) = ≈крит. 03,146.61a [VARĀH. BṚH. S. 61,10. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,10) *arā rathanābhau*
 [MUṆḌ. UP. 2,2,6.] *lekhā*
 [GOBH. 1,1,9.] *ayugma˚*
 [7,10.] *trīnpiṇḍānsaṃhatānnidadhāti* verbunden, einen Haufen bildend
 [KAUŚ. 88.] *upalāḥ*
-[MBH. 3,1719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1719) = [≈Вульг. 3.42.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S006) = ≈крит. 03,43.6a *drumavalkaiḥ saṃhataiḥ*
+[MBH. 3,1719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1719) = [≈Вульг. 3.42.6](mbh/3.42.html#v6) = ≈крит. 03,43.6a *drumavalkaiḥ saṃhataiḥ*
 [R. 5,44,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,12)
 [M. 5,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,115)
 [YĀJÑ. 1,184.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,184)
@@ -123,7 +123,7 @@ Schol. zu [KAP. 1,104.] [SĀH. D. 9,9.](https://sanskrit-lexicon-scans.github.io
 Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS. 143,20.] *˚cārin*
 [HARIV. 10675.](https://sanskrit-lexicon-scans.github.io/hariv?10675) *saṃhatavākkalau* _adj._ so v. a. ein Duett singend
 [MĀRK. P. 23,60.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?23,60) *su˚*
-[MBH. 4,981.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.981) = [≈Вульг. 4.30.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A030_S011) = ≈крит. 04,29.11a
+[MBH. 4,981.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.981) = [≈Вульг. 4.30.11](mbh/4.30.html#v11) = ≈крит. 04,29.11a
 [HIT. IV,51.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,51) *a˚*
 [KĀM. NĪTIS. 19,41] (als _m._ Bez. einer best. Truppenaufstellung).
 [Spr. (II) 1424.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1424 "Spr. (II) 1424: ekodarāḥ pṛthaggrīvā anyo 'nyaphalabhakṣiṇaḥ | asaṃhatā vinaśyanti bhāraṇḍā iva pakṣiṇaḥ || — (556.) Uneinige gehen zu Grunde wie die Vogel Bhāraṇḍa, welche bei gemeinschaftlichem Magen, aber gesonderten Hälsen, Einer für den Andern Früchte verspeisen.")
@@ -147,18 +147,18 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [R. 3,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,10) [21,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,21,6) [4,13,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,23) [25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,25) [6,111,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,111,49)
 [BHĀG. P. 4,1,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,26) [12,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,21) [10,86,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,86,25) пальцы
 [KAUŚ. 4.] *saṃhatoru*
-[MBH. 4,253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.253) = [≈Вульг. 4.9.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A009_S010) = ≈крит. 04,8.10c *ūrū susaṃhatau*
+[MBH. 4,253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.253) = [≈Вульг. 4.9.10](mbh/4.9.html#v10) = ≈крит. 04,8.10c *ūrū susaṃhatau*
 [R. 5,2,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,18) *saṃhatavṛttoru*
 [6,9,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,12) *caraṇau*
 [3,52,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,33) *˚bhrū*
-[MBH. 5,2036.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2036) = [≈Вульг. 5.51.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A051_S018) = ≈крит. 05,50.17c *bhrukuṭīsaṃhatabhrū*
-[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S009) = ≈крит. 03,254.9a *˚bhrukuṭīmukha*
-[11187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11187) = [≈Вульг. 3.146.71](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A146_S071) = ≈крит. 03,146.61a [VARĀH. BṚH. S. 61,10. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,10) *arā rathanābhau*
+[MBH. 5,2036.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2036) = [≈Вульг. 5.51.18](mbh/5.51.html#v18) = ≈крит. 05,50.17c *bhrukuṭīsaṃhatabhrū*
+[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](mbh/3.270.html#v9) = ≈крит. 03,254.9a *˚bhrukuṭīmukha*
+[11187.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11187) = [≈Вульг. 3.146.71](mbh/3.146.html#v71) = ≈крит. 03,146.61a [VARĀH. BṚH. S. 61,10. fg.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?61,10) *arā rathanābhau*
 [MUṆḌ. UP. 2,2,6.] *lekhā*
 [GOBH. 1,1,9.] *ayugma˚*
 [7,10.] *trīnpiṇḍānsaṃhatānnidadhāti* соединенный, образующий груду
 [KAUŚ. 88.] *upalāḥ*
-[MBH. 3,1719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1719) = [≈Вульг. 3.42.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S006) = ≈крит. 03,43.6a *drumavalkaiḥ saṃhataiḥ*
+[MBH. 3,1719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1719) = [≈Вульг. 3.42.6](mbh/3.42.html#v6) = ≈крит. 03,43.6a *drumavalkaiḥ saṃhataiḥ*
 [R. 5,44,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,12)
 [M. 5,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,115)
 [YĀJÑ. 1,184.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,184)
@@ -174,7 +174,7 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 схол. к [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS. 143,20.] *˚cārin*
 [HARIV. 10675.](https://sanskrit-lexicon-scans.github.io/hariv?10675) *saṃhatavākkalau* _adj._ так преим. поющий дуэтом
 [MĀRK. P. 23,60.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?23,60) *su˚*
-[MBH. 4,981.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.981) = [≈Вульг. 4.30.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A030_S011) = ≈крит. 04,29.11a
+[MBH. 4,981.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.981) = [≈Вульг. 4.30.11](mbh/4.30.html#v11) = ≈крит. 04,29.11a
 [HIT. IV,51.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,51) *a˚*
 [KĀM. NĪTIS. 19,41] (как _m._ обозн. построения определ. войск).
 [Spr. (II) 1424.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1424 "Spr. (II) 1424: ekodarāḥ pṛthaggrīvā anyo 'nyaphalabhakṣiṇaḥ | asaṃhatā vinaśyanti bhāraṇḍā iva pakṣiṇaḥ || — (556.) Uneinige gehen zu Grunde wie die Vogel Bhāraṇḍa, welche bei gemeinschaftlichem Magen, aber gesonderten Hälsen, Einer für den Andern Früchte verspeisen.")
@@ -192,13 +192,13 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [VARĀH. BṚH. S. 2, S. 3, Z. 10] v. u. Brüste
 [R. 3,52,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,25) [35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,35) [5,18,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,25) [21,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,10)
 [KATHĀS. 47,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,107) *uras*
-[MBH. 1,5970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5970) = [≈Вульг. 1.151.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S040) = крит. — Wangen
+[MBH. 1,5970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5970) = [≈Вульг. 1.151.40](mbh/1.151.html#v40) = крит. — Wangen
 [R. 3,52,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,29) Schultern
 [5,14,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,17) *āyasaṃ hṛdayaṃ nūnaṃ rāmamātuḥ susaṃhatam*
 [2,39,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,29) von festem, compactem Gliederbau; = *dṛḍhasaṃdhi*
 [AK. 3,2,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,25)
 [H. 1472.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1472) *yūnaḥ paramasaṃhatān*
-[MBH. 3,14653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14653) = [≈Вульг. 3.233.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S005) = ≈крит. 03,222.4e
+[MBH. 3,14653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14653) = [≈Вульг. 3.233.5](mbh/3.233.html#v5) = ≈крит. 03,222.4e
 
 - **RU:** — b) ставший твердым —, плотным (consistent): *vāyunāpastu saṃhatāḥ*
 [MĀRK. P. 47,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?47,12) *tejas*
@@ -208,13 +208,13 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
 [VARĀH. BṚH. S. 2, S. 3, Z. 10] снизу груди
 [R. 3,52,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,25) [35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,35) [5,18,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,25) [21,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,10)
 [KATHĀS. 47,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,107) *uras*
-[MBH. 1,5970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5970) = [≈Вульг. 1.151.40](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S040) = крит. — щеки
+[MBH. 1,5970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5970) = [≈Вульг. 1.151.40](mbh/1.151.html#v40) = крит. — щеки
 [R. 3,52,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,29) плечи
 [5,14,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,17) *āyasaṃ hṛdayaṃ nūnaṃ rāmamātuḥ susaṃhatam*
 [2,39,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,29) крепкого, плотного телосложения; = *dṛḍhasaṃdhi*
 [AK. 3,2,25.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,25)
 [H. 1472.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1472) *yūnaḥ paramasaṃhatān*
-[MBH. 3,14653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14653) = [≈Вульг. 3.233.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S005) = ≈крит. 03,222.4e
+[MBH. 3,14653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14653) = [≈Вульг. 3.233.5](mbh/3.233.html#v5) = ≈крит. 03,222.4e
   <sub>attested</sub>
 
 **sam+han — 7c)** — c) stark, intensiv: *kṣuta*
@@ -225,10 +225,10 @@ Schol. zu [P. 2,3,56.](https://ashtadhyayi.com/sutraani/2/3/56) [SARVADARŚANAS.
   <sub>attested</sub>
 
 **sam+han — 7d)** — d) Bez. eines best. Geruchs
-[MBH. 12,6848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6848) = [≈Вульг. 12.188.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A188_S005) = ≈крит. 12,181.5a [14,1409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1409) = [≈Вульг. 14.50.43](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A050_S043) = ≈крит. 14,49.42e eines best. Tons
-[1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1420) = [≈Вульг. 14.50.54](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A050_S054) = ≈крит. 14,49.54a wohl so v. a. zusammengesetzt.
+[MBH. 12,6848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6848) = [≈Вульг. 12.188.5](mbh/12.188.html#v5) = ≈крит. 12,181.5a [14,1409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1409) = [≈Вульг. 14.50.43](mbh/14.50.html#v43) = ≈крит. 14,49.42e eines best. Tons
+[1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1420) = [≈Вульг. 14.50.54](mbh/14.50.html#v54) = ≈крит. 14,49.54a wohl so v. a. zusammengesetzt.
 
 - **RU:** — d) обозн. некоего определ. запаха
-[MBH. 12,6848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6848) = [≈Вульг. 12.188.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A188_S005) = ≈крит. 12,181.5a [14,1409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1409) = [≈Вульг. 14.50.43](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A050_S043) = ≈крит. 14,49.42e некоего определ. звука
-[1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1420) = [≈Вульг. 14.50.54](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A050_S054) = ≈крит. 14,49.54a вероятно так преим. составной.
+[MBH. 12,6848.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6848) = [≈Вульг. 12.188.5](mbh/12.188.html#v5) = ≈крит. 12,181.5a [14,1409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1409) = [≈Вульг. 14.50.43](mbh/14.50.html#v43) = ≈крит. 14,49.42e некоего определ. звука
+[1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1420) = [≈Вульг. 14.50.54](mbh/14.50.html#v54) = ≈крит. 14,49.54a вероятно так преим. составной.
   <sub>attested</sub>

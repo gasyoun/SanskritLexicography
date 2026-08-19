@@ -10,7 +10,7 @@
 [AV. 18,4,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.51) [52.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.52) *vācam*
 [19,4,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.04) *ādhānāpratijñāta* dessen Feueranlegung nicht genehmigt d. h. ohne Erfolg geblieben ist (andere Erkll. in den Scholien)
 [KĀTY. ŚR. 4,11,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,11,1) *kaccinna pāne dyūte vā krīḍāsu pramadāsu ca . pratijānanti pūrvāhṇe vyayaṃ vyasanajaṃ tava ..*
-[MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) = [≈Вульг. 2.5.69](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S069) = ≈крит. 02,5.59a *ṛṇe deye pratijñāte* wenn die Schuld anerkannt worden ist (Gegens. *apahnava*)
+[MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) = [≈Вульг. 2.5.69](mbh/2.5.html#v69) = ≈крит. 02,5.59a *ṛṇe deye pratijñāte* wenn die Schuld anerkannt worden ist (Gegens. *apahnava*)
 [M. 8,139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,139) *śataṃ pratijānīte*
 [P. 1,3,46](https://ashtadhyayi.com/sutraani/1/3/46), Sch.
 *pratijñāta* angenehm, erwünscht: *pratijñāto ma eṣa varaḥ*
@@ -24,7 +24,7 @@
 [AV. 18,4,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.51) [52.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.52) *vācam*
 [19,4,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.04) *ādhānāpratijñāta* чье возжигание огня не было одобрено т.е. осталось безуспешным (иначе пояснения в схолиях)
 [KĀTY. ŚR. 4,11,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,11,1) *kaccinna pāne dyūte vā krīḍāsu pramadāsu ca . pratijānanti pūrvāhṇe vyayaṃ vyasanajaṃ tava ..*
-[MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) = [≈Вульг. 2.5.69](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A005_S069) = ≈крит. 02,5.59a *ṛṇe deye pratijñāte* когда долг был признан (противоп. *apahnava*)
+[MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) = [≈Вульг. 2.5.69](mbh/2.5.html#v69) = ≈крит. 02,5.59a *ṛṇe deye pratijñāte* когда долг был признан (противоп. *apahnava*)
 [M. 8,139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,139) *śataṃ pratijānīte*
 [P. 1,3,46](https://ashtadhyayi.com/sutraani/1/3/46), схол.
 *pratijñāta* приятный, желанный: *pratijñāto ma eṣa varaḥ*
@@ -33,28 +33,28 @@
   <sub>attested</sub>
 
 **2)** — 2) zusagen, versprechen: *pratijajñe badhaṃ cāpi sarvakṣatrasya*
-[MBH. 3,10201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10201) = [≈Вульг. 3.115.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A115_S016) = крит. —
+[MBH. 3,10201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10201) = [≈Вульг. 3.115.16](mbh/3.115.html#v16) = крит. —
 [HARIV. 6825.](https://sanskrit-lexicon-scans.github.io/hariv?6825)
 [BHAṬṬ. 14,64.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,64) *kāryam*
 [MBH. 5,6021.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6021) *pratijñāya vanavāsamimaṃ guroḥ*
 [R. 2,109,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,24) [3,19,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,17) [4,30,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,13) *tasmai niśācaraiśvaryaṃ pratijajñe*
 [RAGH. ed. Calc. 12,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?12,69) *pratijānāmi te vākyam*
-[MBH. 3,2780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2780) = [≈Вульг. 3.71.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S009) = ≈крит. 03,69.8a *pratijajñe ca bhūpena tatastatsvāminigrahaḥ*
+[MBH. 3,2780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2780) = [≈Вульг. 3.71.9](mbh/3.71.html#v9) = ≈крит. 03,69.8a *pratijajñe ca bhūpena tatastatsvāminigrahaḥ*
 [RĀJA-TAR. 4,281.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,281) *pratijñāto hi bhavatā duḥkhapratiśamo mama*
-[MBH. 5,7485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7485) = [≈Вульг. 5.191.29](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A191_S029) = ≈крит. 05,192.29c [7,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2648) = [≈Вульг. 7.75.1](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A075_S001) = ≈крит. 07,53.1a
+[MBH. 5,7485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7485) = [≈Вульг. 5.191.29](mbh/5.191.html#v29) = ≈крит. 05,192.29c [7,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2648) = [≈Вульг. 7.75.1](mbh/7.75.html#v1) = ≈крит. 07,53.1a
 [R. 1,60,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,26) [3,13,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,8)
 
 *sthirā mayā pratijñātā pratijñā*
 [2,109,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,25) *pratijñātaṃ ca rāmeṇa tadā bālibadhaṃ prati*
 [1,1,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,61) *pratijajñe ca rājyāya* er sagte ihm die Herrschaft zu
-[MBH. 1,7234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7234) = [≈Вульг. 1.192.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A192_S011) = ≈крит. 01,184.11a *pratijānīṣva taṃ kartum*
+[MBH. 1,7234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7234) = [≈Вульг. 1.192.11](mbh/1.192.html#v11) = ≈крит. 01,184.11a *pratijānīṣva taṃ kartum*
 [ARJ. 5,8.] *arjunaḥ pratijānīte — karṇam — hantāsmi*
-[MBH. 2,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2546) = [≈Вульг. 2.77.33](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A077_S033) = ≈крит. 02,68.33a
+[MBH. 2,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2546) = [≈Вульг. 2.77.33](mbh/2.77.html#v33) = ≈крит. 02,68.33a
 [HARIV. 7244.](https://sanskrit-lexicon-scans.github.io/hariv?7244) *pratyajñāsta*
 [BHAṬṬ. 8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) *pratijñātaṃ hi nastathā*
-[MBH. 4,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.153) = [≈Вульг. 4.5.12](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S012) = ≈крит. 04,5.11c *yadanyasya pratijñāya punaranyasya dīyate (kanyā)*
+[MBH. 4,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.153) = [≈Вульг. 4.5.12](mbh/4.5.html#v12) = ≈крит. 04,5.11c *yadanyasya pratijñāya punaranyasya dīyate (kanyā)*
 [M. 9,99.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,99) *evaṃ me pratijānīhi*
-[MBH. 4,706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.706) = [≈Вульг. 4.22.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A022_S013) = ≈крит. 04,21.13c
+[MBH. 4,706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.706) = [≈Вульг. 4.22.13](mbh/4.22.html#v13) = ≈крит. 04,21.13c
 [R. 1,21,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,14) [38,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,12) [2,23,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,29) *pratijānāmi te vīra satyenāyudhamālabhe . yathā rāmaṃ raṇe pāpaṃ pātayiṣyāmi*
 [3,33,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,3) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,26) *tebhyaḥ pratijñāya nalaḥ kariṣya iti*
 [MBH. 3,2135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2135) *sahasrākṣe pratijñāya*
@@ -62,32 +62,32 @@
 [65,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,13) *māmevaiṣyasisatyaṃ te pratijāne* ich sage es dir zu, verspreche es dir
 [BHAG. 18,65.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,65) *pratijānāmi te satyaṃ na jīvanpratiyāsyati*
 [R. 6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) *satyaṃ me pratijānīhi*
-[MBH. 5,7491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7491) = [≈Вульг. 5.192.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A192_S004) = ≈крит. 05,193.3c *pratijñāta = aṅgīkṛta*
+[MBH. 5,7491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7491) = [≈Вульг. 5.192.4](mbh/5.192.html#v4) = ≈крит. 05,193.3c *pratijñāta = aṅgīkṛta*
 u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58) [H. 1488.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1488)
 
 - **RU:** — 2) обещать, давать обет: *pratijajñe badhaṃ cāpi sarvakṣatrasya*
-[MBH. 3,10201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10201) = [≈Вульг. 3.115.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A115_S016) = крит. —
+[MBH. 3,10201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10201) = [≈Вульг. 3.115.16](mbh/3.115.html#v16) = крит. —
 [HARIV. 6825.](https://sanskrit-lexicon-scans.github.io/hariv?6825)
 [BHAṬṬ. 14,64.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,64) *kāryam*
 [MBH. 5,6021.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6021) *pratijñāya vanavāsamimaṃ guroḥ*
 [R. 2,109,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,24) [3,19,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,17) [4,30,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,13) *tasmai niśācaraiśvaryaṃ pratijajñe*
 [RAGH. ed. Calc. 12,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?12,69) *pratijānāmi te vākyam*
-[MBH. 3,2780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2780) = [≈Вульг. 3.71.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A071_S009) = ≈крит. 03,69.8a *pratijajñe ca bhūpena tatastatsvāminigrahaḥ*
+[MBH. 3,2780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2780) = [≈Вульг. 3.71.9](mbh/3.71.html#v9) = ≈крит. 03,69.8a *pratijajñe ca bhūpena tatastatsvāminigrahaḥ*
 [RĀJA-TAR. 4,281.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,281) *pratijñāto hi bhavatā duḥkhapratiśamo mama*
-[MBH. 5,7485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7485) = [≈Вульг. 5.191.29](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A191_S029) = ≈крит. 05,192.29c [7,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2648) = [≈Вульг. 7.75.1](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A075_S001) = ≈крит. 07,53.1a
+[MBH. 5,7485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7485) = [≈Вульг. 5.191.29](mbh/5.191.html#v29) = ≈крит. 05,192.29c [7,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2648) = [≈Вульг. 7.75.1](mbh/7.75.html#v1) = ≈крит. 07,53.1a
 [R. 1,60,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,26) [3,13,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,8)
 
 *sthirā mayā pratijñātā pratijñā*
 [2,109,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,25) *pratijñātaṃ ca rāmeṇa tadā bālibadhaṃ prati*
 [1,1,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,61) *pratijajñe ca rājyāya* он обещал ему власть
-[MBH. 1,7234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7234) = [≈Вульг. 1.192.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A192_S011) = ≈крит. 01,184.11a *pratijānīṣva taṃ kartum*
+[MBH. 1,7234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7234) = [≈Вульг. 1.192.11](mbh/1.192.html#v11) = ≈крит. 01,184.11a *pratijānīṣva taṃ kartum*
 [ARJ. 5,8.] *arjunaḥ pratijānīte — karṇam — hantāsmi*
-[MBH. 2,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2546) = [≈Вульг. 2.77.33](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A077_S033) = ≈крит. 02,68.33a
+[MBH. 2,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2546) = [≈Вульг. 2.77.33](mbh/2.77.html#v33) = ≈крит. 02,68.33a
 [HARIV. 7244.](https://sanskrit-lexicon-scans.github.io/hariv?7244) *pratyajñāsta*
 [BHAṬṬ. 8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) *pratijñātaṃ hi nastathā*
-[MBH. 4,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.153) = [≈Вульг. 4.5.12](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S012) = ≈крит. 04,5.11c *yadanyasya pratijñāya punaranyasya dīyate (kanyā)*
+[MBH. 4,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.153) = [≈Вульг. 4.5.12](mbh/4.5.html#v12) = ≈крит. 04,5.11c *yadanyasya pratijñāya punaranyasya dīyate (kanyā)*
 [M. 9,99.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,99) *evaṃ me pratijānīhi*
-[MBH. 4,706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.706) = [≈Вульг. 4.22.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A022_S013) = ≈крит. 04,21.13c
+[MBH. 4,706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.706) = [≈Вульг. 4.22.13](mbh/4.22.html#v13) = ≈крит. 04,21.13c
 [R. 1,21,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,14) [38,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,12) [2,23,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,29) *pratijānāmi te vīra satyenāyudhamālabhe . yathā rāmaṃ raṇe pāpaṃ pātayiṣyāmi*
 [3,33,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,3) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,26) *tebhyaḥ pratijñāya nalaḥ kariṣya iti*
 [MBH. 3,2135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2135) *sahasrākṣe pratijñāya*
@@ -95,7 +95,7 @@ u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [65,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,13) *māmevaiṣyasisatyaṃ te pratijāne* я обещаю тебе это, даю тебе слово
 [BHAG. 18,65.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,65) *pratijānāmi te satyaṃ na jīvanpratiyāsyati*
 [R. 6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) *satyaṃ me pratijānīhi*
-[MBH. 5,7491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7491) = [≈Вульг. 5.192.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A192_S004) = ≈крит. 05,193.3c *pratijñāta = aṅgīkṛta*
+[MBH. 5,7491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7491) = [≈Вульг. 5.192.4](mbh/5.192.html#v4) = ≈крит. 05,193.3c *pratijñāta = aṅgīkṛta*
 и т.д. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58) [H. 1488.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1488)
   <sub>attested</sub>
 
@@ -105,12 +105,12 @@ u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [CHĀND. UP. 4,1,8.] *ko nu tvānuśaśāsetyanye manuṣyebhya iti ha pratijajñe*
 [9,2.] *kiṃ pibasīti pṛṣṭvā puṃsavanaṃ puṃsavanamiti triḥ pratijānīyāt*
 [ĀŚV. GṚHY. 1,13.] *tatheti pratijñāya* an einigen Stellen bestätigen, an andern zusagen, sich einverstanden erklären
-[MBH. 1,7700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7700) = [≈Вульг. 1.209.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S014) = ≈крит. 01,201.13a
+[MBH. 1,7700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7700) = [≈Вульг. 1.209.14](mbh/1.209.html#v14) = ≈крит. 01,201.13a
 [HARIV. 15294.](https://sanskrit-lexicon-scans.github.io/hariv?15294) [15532.](https://sanskrit-lexicon-scans.github.io/hariv?15532)
 [R. 2,90,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,9) [112,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,26)
 [PAÑCAT. 54,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?54,25) [226,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?226,7) *tatheti pratijñāya sāvitryā vacanam*
 [SĀV. 1,16.] *anāmayaṃ pratijāne tavāham* ich bestätige dir mein Wohlsein so. v. a. ja, ich bin wohl
-[MBH. 5,690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.690) = [≈Вульг. 5.23.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S006) = ≈крит. 05,23.6c *tata ekena vṛddhaśṛgālena pratijñātam mayā — etanmaraṇaṃ kartavyam*
+[MBH. 5,690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.690) = [≈Вульг. 5.23.6](mbh/5.23.html#v6) = ≈крит. 05,23.6c *tata ekena vṛddhaśṛgālena pratijñātam mayā — etanmaraṇaṃ kartavyam*
 [HIT. 40,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,19)
 
 - **RU:** — 3) подтверждать, утверждать (в знак согласия), отвечать, мед.
@@ -119,29 +119,29 @@ u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [CHĀND. UP. 4,1,8.] *ko nu tvānuśaśāsetyanye manuṣyebhya iti ha pratijajñe*
 [9,2.] *kiṃ pibasīti pṛṣṭvā puṃsavanaṃ puṃsavanamiti triḥ pratijānīyāt*
 [ĀŚV. GṚHY. 1,13.] *tatheti pratijñāya* в одних местах подтверждать, в других обещать, выражать согласие
-[MBH. 1,7700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7700) = [≈Вульг. 1.209.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S014) = ≈крит. 01,201.13a
+[MBH. 1,7700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7700) = [≈Вульг. 1.209.14](mbh/1.209.html#v14) = ≈крит. 01,201.13a
 [HARIV. 15294.](https://sanskrit-lexicon-scans.github.io/hariv?15294) [15532.](https://sanskrit-lexicon-scans.github.io/hariv?15532)
 [R. 2,90,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,9) [112,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,26)
 [PAÑCAT. 54,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?54,25) [226,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?226,7) *tatheti pratijñāya sāvitryā vacanam*
 [SĀV. 1,16.] *anāmayaṃ pratijāne tavāham* я подтверждаю тебе, что здоров так. преим. да, я здоров
-[MBH. 5,690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.690) = [≈Вульг. 5.23.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S006) = ≈крит. 05,23.6c *tata ekena vṛddhaśṛgālena pratijñātam mayā — etanmaraṇaṃ kartavyam*
+[MBH. 5,690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.690) = [≈Вульг. 5.23.6](mbh/5.23.html#v6) = ≈крит. 05,23.6c *tata ekena vṛddhaśṛgālena pratijñātam mayā — etanmaraṇaṃ kartavyam*
 [HIT. 40,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,19)
   <sub>attested</sub>
 
 **4)** — 4) behaupten, aussagen, statuiren, annehmen: *ke yūyaṃ puṣpavantaśca — bibhrataḥ kṣātramojaśca brāhmaṇyaṃ pratijānatha* wie könnt ihr behaupten, dass ihr Brahmanen seid?
-[MBH. 2,842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Вульг. 2.21.45](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U04_A021_S045) = ≈крит. 02,19.41c *ityetatpratijānāmi*
-[4,37.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.37) = [≈Вульг. 4.2.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S010) = ≈крит. 04,2.8a *tāṃ pratijñāṃ pratijñāya purā*
+[MBH. 2,842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Вульг. 2.21.45](mbh/2.21.html#v45) = ≈крит. 02,19.41c *ityetatpratijānāmi*
+[4,37.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.37) = [≈Вульг. 4.2.10](mbh/4.2.html#v10) = ≈крит. 04,2.8a *tāṃ pratijñāṃ pratijñāya purā*
 [R. 6,85,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,85,8) *kuśalāḥ pratijānānta ye vai tattvavido janāḥ*
-[MBH. 3,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1236) = [≈Вульг. 3.32.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S035) = ≈крит. 03,33.32c *pratijñātārtha* Behauptung
+[MBH. 3,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1236) = [≈Вульг. 3.32.35](mbh/3.32.html#v35) = ≈крит. 03,33.32c *pratijñātārtha* Behauptung
 [YĀJÑ. 2,7.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,7) *ityādīṇāṃ yaṇo 'nunāsikatvaṃ na pratijñāyate* statuirt —, angenommen werden
 Sch. zu [P. 7,1,1.](https://ashtadhyayi.com/sutraani/7/1/1) [SIDDH. K.] zu [P. 3,1,11.](https://ashtadhyayi.com/sutraani/3/1/11) *iha śāstre kāryārthamakāro vivṛtaḥ pratijñātaḥ*
 Sch. zu [P. 8,4,68.](https://ashtadhyayi.com/sutraani/8/4/68) [Ind. St. 4,139. 152. 206.]
 
 - **RU:** — 4) утверждать, высказывать, полагать, принимать (за истину): *ke yūyaṃ puṣpavantaśca — bibhrataḥ kṣātramojaśca brāhmaṇyaṃ pratijānatha* как вы можете утверждать, что вы брахманы?
-[MBH. 2,842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Вульг. 2.21.45](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U04_A021_S045) = ≈крит. 02,19.41c *ityetatpratijānāmi*
-[4,37.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.37) = [≈Вульг. 4.2.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S010) = ≈крит. 04,2.8a *tāṃ pratijñāṃ pratijñāya purā*
+[MBH. 2,842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Вульг. 2.21.45](mbh/2.21.html#v45) = ≈крит. 02,19.41c *ityetatpratijānāmi*
+[4,37.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.37) = [≈Вульг. 4.2.10](mbh/4.2.html#v10) = ≈крит. 04,2.8a *tāṃ pratijñāṃ pratijñāya purā*
 [R. 6,85,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,85,8) *kuśalāḥ pratijānānta ye vai tattvavido janāḥ*
-[MBH. 3,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1236) = [≈Вульг. 3.32.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S035) = ≈крит. 03,33.32c *pratijñātārtha* утверждение
+[MBH. 3,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1236) = [≈Вульг. 3.32.35](mbh/3.32.html#v35) = ≈крит. 03,33.32c *pratijñātārtha* утверждение
 [YĀJÑ. 2,7.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,7) *ityādīṇāṃ yaṇo 'nunāsikatvaṃ na pratijñāyate* полагаться —, приниматься
 схол. к [P. 7,1,1.](https://ashtadhyayi.com/sutraani/7/1/1) [SIDDH. K.] к [P. 3,1,11.](https://ashtadhyayi.com/sutraani/3/1/11) *iha śāstre kāryārthamakāro vivṛtaḥ pratijñātaḥ*
 схол. к [P. 8,4,68.](https://ashtadhyayi.com/sutraani/8/4/68) [Ind. St. 4,139. 152. 206.]
@@ -161,16 +161,16 @@ Sch.
   <sub>attested</sub>
 
 **6)** — 6) erkennen, erfahren, gewahrwerden: *droṇaṃ ca pratyajānata* (nach der Beschreibung)
-[MBH. 1,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5170) = [≈Вульг. 1.131.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A131_S038) = ≈крит. 01,122.22c *diśo na pratijānāmi*
-[2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2089) = [≈Вульг. 1.56.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A056_S006) = крит. — *pratijānīhi yena mokṣamavāpsyasi*
-[13,4839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4839) = [≈Вульг. 13.101.27](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A101_S027) = ≈крит. 13,104.27a *pratijānīhi na me bhaktaḥ praṇaśyati*
+[MBH. 1,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5170) = [≈Вульг. 1.131.38](mbh/1.131.html#v38) = ≈крит. 01,122.22c *diśo na pratijānāmi*
+[2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2089) = [≈Вульг. 1.56.6](mbh/1.56.html#v6) = крит. — *pratijānīhi yena mokṣamavāpsyasi*
+[13,4839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4839) = [≈Вульг. 13.101.27](mbh/13.101.html#v27) = ≈крит. 13,104.27a *pratijānīhi na me bhaktaḥ praṇaśyati*
 [BHAG. 9,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,31) *na kṣutpipāse kālaṃ vā pratyajānaṃ tadā*
 [HARIV. 1036.](https://sanskrit-lexicon-scans.github.io/hariv?1036)
 
 - **RU:** — 6) узнавать, распознавать, замечать: *droṇaṃ ca pratyajānata* (по описанию)
-[MBH. 1,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5170) = [≈Вульг. 1.131.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A131_S038) = ≈крит. 01,122.22c *diśo na pratijānāmi*
-[2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2089) = [≈Вульг. 1.56.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A056_S006) = крит. — *pratijānīhi yena mokṣamavāpsyasi*
-[13,4839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4839) = [≈Вульг. 13.101.27](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A101_S027) = ≈крит. 13,104.27a *pratijānīhi na me bhaktaḥ praṇaśyati*
+[MBH. 1,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5170) = [≈Вульг. 1.131.38](mbh/1.131.html#v38) = ≈крит. 01,122.22c *diśo na pratijānāmi*
+[2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2089) = [≈Вульг. 1.56.6](mbh/1.56.html#v6) = крит. — *pratijānīhi yena mokṣamavāpsyasi*
+[13,4839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4839) = [≈Вульг. 13.101.27](mbh/13.101.html#v27) = ≈крит. 13,104.27a *pratijānīhi na me bhaktaḥ praṇaśyati*
 [BHAG. 9,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,31) *na kṣutpipāse kālaṃ vā pratyajānaṃ tadā*
 [HARIV. 1036.](https://sanskrit-lexicon-scans.github.io/hariv?1036)
   <sub>attested</sub>
@@ -178,12 +178,12 @@ Sch.
 **7)** — 7) mit Wehmuth zurückdenken an; nur in dieser Bed. wird
 [P. 1,3,46.](https://ashtadhyayi.com/sutraani/1/3/46)
 [VOP. 23,37](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,37) das act. anerkannt. Wir haben für diese Bed. nur eine Belegstelle und zwar für med.: *na cātītāni śocanti na caiva pratijānate*
-[MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438) = [≈Вульг. 12.233.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A233_S001) = ≈крит. 12,224.74a
+[MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438) = [≈Вульг. 12.233.1](mbh/12.233.html#v1) = ≈крит. 12,224.74a
 
 - **RU:** — 7) с грустью вспоминать о; только в этом знач.
 [P. 1,3,46.](https://ashtadhyayi.com/sutraani/1/3/46)
 [VOP. 23,37](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,37) признается act.. Для этого знач. у нас есть только одно место, а именно для мед.: *na cātītāni śocanti na caiva pratijānate*
-[MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438) = [≈Вульг. 12.233.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A233_S001) = ≈крит. 12,224.74a
+[MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438) = [≈Вульг. 12.233.1](mbh/12.233.html#v1) = ≈крит. 12,224.74a
   <sub>attested</sub>
 
 **addendum)** — Vgl. *pratijñā, pratijñāna* . — caus. *pratijñāpita*

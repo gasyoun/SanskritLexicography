@@ -15,10 +15,10 @@
   <sub>attested</sub>
 
 **halten_für)** — *pra* halten für: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
-[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Вульг. 12.8.13](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S013) = ≈крит. 12,8.13c
+[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Вульг. 12.8.13](mbh/12.8.html#v13) = ≈крит. 12,8.13c
 
 - **RU:** — *pra* считать за, принимать за: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
-[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Вульг. 12.8.13](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S013) = ≈крит. 12,8.13c
+[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Вульг. 12.8.13](mbh/12.8.html#v13) = ≈крит. 12,8.13c
   <sub>attested</sub>
 
 **addendum_tail)** — *prati* vgl. *pratispaśa, pratispāśana* .

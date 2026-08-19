@@ -4,23 +4,23 @@
 
 
 **1)** — *vyapa* dass.: *tato vyapagataḥ punaḥ*
-[MBH. 13,7421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7421) = [≈Вульг. 13.159.21](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A159_S021) = ≈крит. 13,144.18c *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām*
-[3,17419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17419) = [≈Вульг. 3.314.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A314_S001) = ≈крит. 03,298.1a *vyapagacchatu te — bhayam*
+[MBH. 13,7421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7421) = [≈Вульг. 13.159.21](mbh/13.159.html#v21) = ≈крит. 13,144.18c *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām*
+[3,17419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17419) = [≈Вульг. 3.314.1](mbh/3.314.html#v1) = ≈крит. 03,298.1a *vyapagacchatu te — bhayam*
 [R. 5,22,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,3) *mado me vyapagataḥ*
 [BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *vyapagatamadarāgadambhadveṣadoṣa*
 [INDR. 5,62.]
-[MBH. 3,882.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.882) = [≈Вульг. 3.22.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S034) = ≈крит. 03,23.33a
+[MBH. 3,882.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.882) = [≈Вульг. 3.22.34](mbh/3.22.html#v34) = ≈крит. 03,23.33a
 [R. 4,8,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,4)
 [MṚCCH. 1,3. 16.]
 [MEGH. 74.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?74) *dharmādvyapagataḥ* vom Rechte gewichen
 
 - **RU:** — *vyapa* то же: *tato vyapagataḥ punaḥ*
-[MBH. 13,7421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7421) = [≈Вульг. 13.159.21](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A159_S021) = ≈крит. 13,144.18c *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām*
-[3,17419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17419) = [≈Вульг. 3.314.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A314_S001) = ≈крит. 03,298.1a *vyapagacchatu te — bhayam*
+[MBH. 13,7421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7421) = [≈Вульг. 13.159.21](mbh/13.159.html#v21) = ≈крит. 13,144.18c *kṣutpipāse ca sarveṣāṃ kṣaṇena vyapagacchatām*
+[3,17419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17419) = [≈Вульг. 3.314.1](mbh/3.314.html#v1) = ≈крит. 03,298.1a *vyapagacchatu te — bhayam*
 [R. 5,22,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,3) *mado me vyapagataḥ*
 [BHARTṚ. 2,8.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,8) *vyapagatamadarāgadambhadveṣadoṣa*
 [INDR. 5,62.]
-[MBH. 3,882.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.882) = [≈Вульг. 3.22.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A022_S034) = ≈крит. 03,23.33a
+[MBH. 3,882.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.882) = [≈Вульг. 3.22.34](mbh/3.22.html#v34) = ≈крит. 03,23.33a
 [R. 4,8,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,4)
 [MṚCCH. 1,3. 16.]
 [MEGH. 74.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?74) *dharmādvyapagataḥ* уклонившийся от права

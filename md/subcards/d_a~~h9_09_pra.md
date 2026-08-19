@@ -15,10 +15,10 @@
 **1_receive)** 1) sich geben —, sich zahlen lassen: *alpenālpena deyena *
 
 * vardhamānaṃ pradāpayet*
-[MBH. 12,3308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3308) = [≈Вульг. 12.88.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A088_S007) = ≈крит. 12,89.6a
+[MBH. 12,3308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3308) = [≈Вульг. 12.88.7](mbh/12.88.html#v7) = ≈крит. 12,89.6a
 
 - **RU:** 1) дать себя —, велеть заплатить себе: *alpenālpena deyena *
 
 * vardhamānaṃ pradāpayet*
-[MBH. 12,3308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3308) = [≈Вульг. 12.88.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A088_S007) = ≈крит. 12,89.6a
+[MBH. 12,3308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3308) = [≈Вульг. 12.88.7](mbh/12.88.html#v7) = ≈крит. 12,89.6a
   <sub>attested</sub>

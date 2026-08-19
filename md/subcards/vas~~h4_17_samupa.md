@@ -5,13 +5,13 @@
 
 **1)** — *samupa*
  1) fasten: *samupoṣita* gefastet habend
-[MBH. 13,3273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3273) = [≈Вульг. 13.64.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S022) = ≈крит. 13,63.22c
+[MBH. 13,3273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3273) = [≈Вульг. 13.64.22](mbh/13.64.html#v22) = ≈крит. 13,63.22c
 [VARĀH. BṚH. S. 105,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,16)
 [BHĀG. P. 9,4,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,30)
 
 - **RU:** — *samupa*
  1) поститься: *samupoṣita* тот, кто постился / соблюдавший пост
-[MBH. 13,3273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3273) = [≈Вульг. 13.64.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A064_S022) = ≈крит. 13,63.22c
+[MBH. 13,3273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3273) = [≈Вульг. 13.64.22](mbh/13.64.html#v22) = ≈крит. 13,63.22c
 [VARĀH. BṚH. S. 105,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,16)
 [BHĀG. P. 9,4,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,30)
   <sub>attested</sub>

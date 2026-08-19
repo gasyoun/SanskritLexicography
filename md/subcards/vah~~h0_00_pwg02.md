@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **12)** — 12) an sich tragen, haben: *yaccāśrupātātkalilaṃ vadanaṃ vahase*
-[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) = [≈Вульг. 11.1.42](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A001_S042) = ≈крит. 11,1.35a *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
+[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) = [≈Вульг. 11.1.42](mbh/11.1.html#v42) = ≈крит. 11,1.35a *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
 [MṚCCH. 13,15.] *pīyūṣapūrṇakucakumbhayugmam*
 [CAURAP. 26.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?26) *vīrakāyavahadghrāhā*
 [KATHĀS. 47,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,52) *dṛśā bāṣpakalāmuvāha*
@@ -21,7 +21,7 @@
 [RĀJA-TAR. 4,197.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,197)
 
 - **RU:** — 12) носить на себе, иметь (при себе или на себе): *yaccāśrupātātkalilaṃ vadanaṃ vahase*
-[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) = [≈Вульг. 11.1.42](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A001_S042) = ≈крит. 11,1.35a *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
+[MBH. 11,43.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.43) = [≈Вульг. 11.1.42](mbh/11.1.html#v42) = ≈крит. 11,1.35a *vahasi hi dhanahāryaṃ paṇyabhūtaṃ śarīram*
 [MṚCCH. 13,15.] *pīyūṣapūrṇakucakumbhayugmam*
 [CAURAP. 26.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?26) *vīrakāyavahadghrāhā*
 [KATHĀS. 47,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,52) *dṛśā bāṣpakalāmuvāha*
@@ -35,11 +35,11 @@
 
 * 'nuśāsanam*
 [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,20) *durvahaṃ yogam*
-[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) = [≈Вульг. 13.29.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A029_S005) = ≈крит. 13,30.1a *mānuṣīṃ dīkṣām*
+[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) = [≈Вульг. 13.29.5](mbh/13.29.html#v5) = ≈крит. 13,30.1a *mānuṣīṃ dīkṣām*
 [HARIV. 3735.](https://sanskrit-lexicon-scans.github.io/hariv?3735) *niyamān*
 [BHĀG. P. 3,16,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,7) *sūryādhikāram*
 [MĀRK. P. 111,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?111,3) *kapaṭam*
-[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) = [≈Вульг. 1.74.107](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S107) = ≈крит. 01,69.26a *adharmam*
+[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) = [≈Вульг. 1.74.107](mbh/1.74.html#v107) = ≈крит. 01,69.26a *adharmam*
 [R. 1,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,7) *lajjām*
 [Spr. (II) 382.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?382 "Spr. (II) 382: anyocchiṣṭeṣu pātreṣu bhuktvaiteṣu mahībhujaḥ | kasmānna lajjāmavahañchauce cintāṃ na vā dadhuḥ || — (3506.) Als Fürsten, die Geniesser der Erde, aus diesen Schüsseln, die Andere zurückliessen, speisten, warum empfanden sie keine Scham oder dachten nicht an Reinigung?") *khedam*
 [568.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?568) *paścāttāpam*
@@ -73,11 +73,11 @@
 
 * 'nuśāsanam*
 [20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,20) *durvahaṃ yogam*
-[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) = [≈Вульг. 13.29.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A029_S005) = ≈крит. 13,30.1a *mānuṣīṃ dīkṣām*
+[MBH. 13,1918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1918) = [≈Вульг. 13.29.5](mbh/13.29.html#v5) = ≈крит. 13,30.1a *mānuṣīṃ dīkṣām*
 [HARIV. 3735.](https://sanskrit-lexicon-scans.github.io/hariv?3735) *niyamān*
 [BHĀG. P. 3,16,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,7) *sūryādhikāram*
 [MĀRK. P. 111,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?111,3) *kapaṭam*
-[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) = [≈Вульг. 1.74.107](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S107) = ≈крит. 01,69.26a *adharmam*
+[MBH. 1,3094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3094) = [≈Вульг. 1.74.107](mbh/1.74.html#v107) = ≈крит. 01,69.26a *adharmam*
 [R. 1,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,7) *lajjām*
 [Spr. (II) 382.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?382 "Spr. (II) 382: anyocchiṣṭeṣu pātreṣu bhuktvaiteṣu mahībhujaḥ | kasmānna lajjāmavahañchauce cintāṃ na vā dadhuḥ || — (3506.) Als Fürsten, die Geniesser der Erde, aus diesen Schüsseln, die Andere zurückliessen, speisten, warum empfanden sie keine Scham oder dachten nicht an Reinigung?") *khedam*
 [568.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?568) *paścāttāpam*

@@ -32,10 +32,10 @@
 **3)** — 3) bezeichnen, angeben, näher bestimmen, nennen: *ime pañceme catvāro 'sāveka iti nirdiśeyuḥ*
 [PAÑCAV. BR. 10,3.] *nirdiśyāpahnute ca yaḥ*
 [M. 8,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,53) *śakyate yā (sabhā) na nirdeṣṭumevaṃrūpeti*
-[MBH. 2,420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.420) = [≈Вульг. 2.10.38](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A010_S038) = крит. — *nirdiṣṭabhāga*
+[MBH. 2,420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.420) = [≈Вульг. 2.10.38](mbh/2.10.html#v38) = крит. — *nirdiṣṭabhāga*
 [TS. 2,2,4,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,4,6) *nirdiṣṭaphalabhoktā*
 [M. 7,144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,144) *nirdiṣṭakārin*
-[MBH. 13,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.65) = [≈Вульг. 13.1.65](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S065) = ≈крит. 13,1.58c *svayaṃnirdiṣṭa*
+[MBH. 13,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.65) = [≈Вульг. 13.1.65](mbh/13.1.html#v65) = ≈крит. 13,1.58c *svayaṃnirdiṣṭa*
 [ŚAT. BR. 8,6,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,6,1,16) *anirdiṣṭa*
 [ŚĀṄKH. ŚR. 8,15,14.]
 [KAUŚ. 51.]
@@ -44,8 +44,8 @@
 [VS. PRĀT. 1,134.]
 [P. 1,1,66.](https://ashtadhyayi.com/sutraani/1/1/66) *prathamānirdiṣṭaṃ samāsa upasarjanam*
 [2,43.](https://ashtadhyayi.com/sutraani/1/2/43) Schol. zu [1,1,52.](https://ashtadhyayi.com/sutraani/1/1/52) [55.](https://ashtadhyayi.com/sutraani/1/1/55) *nakṣatrāṇi na nirdiśet*
-[MBH. 13,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4992) = [≈Вульг. 13.104.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S038) = ≈крит. 13,107.62a *nirdiśasva yathātattvaṃ yathā pṛṣṭā*
-[4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) = [≈Вульг. 4.42.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A042_S018) = ≈крит. 04,38.35c *nirdiṣṭāṃ kulapatinā — parṇaśālām*
+[MBH. 13,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4992) = [≈Вульг. 13.104.38](mbh/13.104.html#v38) = ≈крит. 13,107.62a *nirdiśasva yathātattvaṃ yathā pṛṣṭā*
+[4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) = [≈Вульг. 4.42.18](mbh/4.42.html#v18) = ≈крит. 04,38.35c *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* angeben, nennen
 [DAŚAK.] in [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*
@@ -62,10 +62,10 @@
 - **RU:** — 3) обозначать, указывать, точнее определять, называть: *ime pañceme catvāro 'sāveka iti nirdiśeyuḥ*
 [PAÑCAV. BR. 10,3.] *nirdiśyāpahnute ca yaḥ*
 [M. 8,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,53) *śakyate yā (sabhā) na nirdeṣṭumevaṃrūpeti*
-[MBH. 2,420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.420) = [≈Вульг. 2.10.38](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A010_S038) = крит. — *nirdiṣṭabhāga*
+[MBH. 2,420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.420) = [≈Вульг. 2.10.38](mbh/2.10.html#v38) = крит. — *nirdiṣṭabhāga*
 [TS. 2,2,4,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,4,6) *nirdiṣṭaphalabhoktā*
 [M. 7,144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,144) *nirdiṣṭakārin*
-[MBH. 13,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.65) = [≈Вульг. 13.1.65](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S065) = ≈крит. 13,1.58c *svayaṃnirdiṣṭa*
+[MBH. 13,65.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.65) = [≈Вульг. 13.1.65](mbh/13.1.html#v65) = ≈крит. 13,1.58c *svayaṃnirdiṣṭa*
 [ŚAT. BR. 8,6,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,6,1,16) *anirdiṣṭa*
 [ŚĀṄKH. ŚR. 8,15,14.]
 [KAUŚ. 51.]
@@ -74,8 +74,8 @@
 [VS. PRĀT. 1,134.]
 [P. 1,1,66.](https://ashtadhyayi.com/sutraani/1/1/66) *prathamānirdiṣṭaṃ samāsa upasarjanam*
 [2,43.](https://ashtadhyayi.com/sutraani/1/2/43) схол. к [1,1,52.](https://ashtadhyayi.com/sutraani/1/1/52) [55.](https://ashtadhyayi.com/sutraani/1/1/55) *nakṣatrāṇi na nirdiśet*
-[MBH. 13,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4992) = [≈Вульг. 13.104.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S038) = ≈крит. 13,107.62a *nirdiśasva yathātattvaṃ yathā pṛṣṭā*
-[4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) = [≈Вульг. 4.42.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A042_S018) = ≈крит. 04,38.35c *nirdiṣṭāṃ kulapatinā — parṇaśālām*
+[MBH. 13,4992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4992) = [≈Вульг. 13.104.38](mbh/13.104.html#v38) = ≈крит. 13,107.62a *nirdiśasva yathātattvaṃ yathā pṛṣṭā*
+[4,1342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1342) = [≈Вульг. 4.42.18](mbh/4.42.html#v18) = ≈крит. 04,38.35c *nirdiṣṭāṃ kulapatinā — parṇaśālām*
 [RAGH. 1,95.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,95)
 [BHĀG. P. 1,17,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,37) *tvāmeva niradikṣat* указывать, называть
 [DAŚAK.] в [BENF. Chr. 197,23.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?197) *yathānirdiṣṭaparivāra*

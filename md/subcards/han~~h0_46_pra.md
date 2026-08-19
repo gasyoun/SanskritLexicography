@@ -19,7 +19,7 @@
 [MED. t. 121.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,121) [HALĀY. 2,197.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,197) = *vitata*
 [MED.] geschlagen, getroffen: *˚rathanarāśvakuñjara*
 [MBH. 8,1210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1210) *iṣubhiḥ*
-[7,3236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3236) = [≈Вульг. 7.91.21](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A091_S021) = ≈крит. 07,66.20c *prahatasya mayā tasya lāṅgūlena mahāgireḥ*
+[7,3236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3236) = [≈Вульг. 7.91.21](mbh/7.91.html#v21) = ≈крит. 07,66.20c *prahatasya mayā tasya lāṅgūlena mahāgireḥ*
 [R. 5,56,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,42) *anekaprahataṃ cakram*
 [HARIV. 15040](https://sanskrit-lexicon-scans.github.io/hariv?15040) (*anekamahataṃ* die neuere Ausg.). angeschlagen: Trommel
 u. s. w. [MEGH. 65.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?65) [RAGH. 19,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,14) [KATHĀS. 10,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,171) [107,49.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,49) [109,152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,152) [118,39.](https://sanskrit-lexicon-scans.github.io/kss/index.html?118,39) zerhauen, zerschlagen: *gadā*
@@ -46,7 +46,7 @@ zu [P. 4,4,19.](https://ashtadhyayi.com/sutraani/4/4/19)
 [MED. t. 121.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,121) [HALĀY. 2,197.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,197) = *vitata*
 [MED.] пораженный, сраженный: *˚rathanarāśvakuñjara*
 [MBH. 8,1210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1210) *iṣubhiḥ*
-[7,3236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3236) = [≈Вульг. 7.91.21](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A091_S021) = ≈крит. 07,66.20c *prahatasya mayā tasya lāṅgūlena mahāgireḥ*
+[7,3236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3236) = [≈Вульг. 7.91.21](mbh/7.91.html#v21) = ≈крит. 07,66.20c *prahatasya mayā tasya lāṅgūlena mahāgireḥ*
 [R. 5,56,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,42) *anekaprahataṃ cakram*
 [HARIV. 15040](https://sanskrit-lexicon-scans.github.io/hariv?15040) (*anekamahataṃ* новейшая изд.). ударенный: барабан
 и т.д. [MEGH. 65.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?65) [RAGH. 19,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,14) [KATHĀS. 10,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,171) [107,49.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,49) [109,152.](https://sanskrit-lexicon-scans.github.io/kss/index.html?109,152) [118,39.](https://sanskrit-lexicon-scans.github.io/kss/index.html?118,39) изрубленный, разбитый: *gadā*

@@ -55,9 +55,9 @@
 - **RU:** 2) обитать в (Loc.).
   <sub>attested</sub>
 
-**main)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18) = [≈Вульг. 3.1.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A001_S025) = ≈крит. 03,1.23a.
+**main)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18) = [≈Вульг. 3.1.25](mbh/3.1.html#v25) = ≈крит. 03,1.23a.
 
-- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18) = [≈Вульг. 3.1.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A001_S025) = ≈крит. 03,1.23a.
+- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18) = [≈Вульг. 3.1.25](mbh/3.1.html#v25) = ≈крит. 03,1.23a.
   <sub>attested</sub>
 
 **main)** — Caus.

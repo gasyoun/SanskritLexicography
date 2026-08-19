@@ -5,10 +5,10 @@
 
 **1))** — *ni* caus.
  1) *śucerapi hi yuktasya doṣa eva nipātyate* wird eine Schuld angehängt
-[MBH. 12,4142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4142) = [≈Вульг. 12.112.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A112_S010) = ≈крит. 12,113.10a
+[MBH. 12,4142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4142) = [≈Вульг. 12.112.10](mbh/12.112.html#v10) = ≈крит. 12,113.10a
 
 - **RU:** — *ni* caus.
- 1) *śucerapi hi yuktasya doṣa eva nipātyate* навлекается вина [MBH. 12,4142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4142) = [≈Вульг. 12.112.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A112_S010) = ≈крит. 12,113.10a
+ 1) *śucerapi hi yuktasya doṣa eva nipātyate* навлекается вина [MBH. 12,4142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4142) = [≈Вульг. 12.112.10](mbh/12.112.html#v10) = ≈крит. 12,113.10a
   <sub>attested</sub>
 
 **2))** — 2)

@@ -21,7 +21,7 @@
 [Spr. 2896](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2896) nebst Note. *na pūrṇacandreṇa mukhaṃ nayane vā kuśeśayaiḥ . utsahāmopamātum (utsahe nopa˚* die neuere Ausg.)
 [HARIV. 8626.](https://sanskrit-lexicon-scans.github.io/hariv?8626) *upamitum*
 [CAURAP. 43.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?43) *sahasrākṣeṇa rājā hi sarvathaivopamīyate*
-[MBH. 12,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3447) = [≈Вульг. 12.91.45](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A091_S045) = ≈крит. 12,92.41a
+[MBH. 12,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3447) = [≈Вульг. 12.91.45](mbh/12.91.html#v45) = ≈крит. 12,92.41a
 [Spr. 948.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?948) [4153.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4153) *upamita* verglichen
 [P. 2,1,56.](https://ashtadhyayi.com/sutraani/2/1/56)
 [ŚAṂK.] zu [CHĀND. UP. S. 62.] *stanau māṃsagranthī kanakakalaśāvityapumitau*
@@ -32,7 +32,7 @@
 [Spr. 2896](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2896) с примечанием. *na pūrṇacandreṇa mukhaṃ nayane vā kuśeśayaiḥ . utsahāmopamātum (utsahe nopa˚* более новое изд.)
 [HARIV. 8626.](https://sanskrit-lexicon-scans.github.io/hariv?8626) *upamitum*
 [CAURAP. 43.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?43) *sahasrākṣeṇa rājā hi sarvathaivopamīyate*
-[MBH. 12,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3447) = [≈Вульг. 12.91.45](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A091_S045) = ≈крит. 12,92.41a
+[MBH. 12,3447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3447) = [≈Вульг. 12.91.45](mbh/12.91.html#v45) = ≈крит. 12,92.41a
 [Spr. 948.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?948) [4153.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4153) *upamita* сравниваемый
 [P. 2,1,56.](https://ashtadhyayi.com/sutraani/2/1/56)
 [ŚAṂK.] к [CHĀND. UP. S. 62.] *stanau māṃsagranthī kanakakalaśāvityapumitau*

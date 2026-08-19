@@ -16,10 +16,10 @@
   <sub>attested</sub>
 
 **2)** — 2) erfüllend, mit acc.: *ityetāni — sapta varṣāṇi bhāgaśaḥ . bhūtānyupaniviṣṭāni gatimanti dhruvāṇi ca ..*
-[MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Вульг. 6.6.53](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A006_S053) = ≈крит. 06,7.50a
+[MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Вульг. 6.6.53](mbh/6.6.html#v53) = ≈крит. 06,7.50a
 
 - **RU:** — 2) наполняющий, с acc.: *ityetāni — sapta varṣāṇi bhāgaśaḥ . bhūtānyupaniviṣṭāni gatimanti dhruvāṇi ca ..*
-[MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Вульг. 6.6.53](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A006_S053) = ≈крит. 06,7.50a
+[MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Вульг. 6.6.53](mbh/6.6.html#v53) = ≈крит. 06,7.50a
   <sub>attested</sub>
 
 **3)** — 3) erfüllt von: *bhāratādīni varṣāṇi nadībhiḥ parvataistathā . bhūtaiścopaniviṣṭāni gatimadbhirdhruvaistathā ..*

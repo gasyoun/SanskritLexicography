@@ -16,14 +16,14 @@
 [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām*
 [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8)
 [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa*
-[MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) = [≈Вульг. 1.2.395](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S395) = крит. —
+[MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) = [≈Вульг. 1.2.395](mbh/1.2.html#v395) = крит. —
 [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ*
-[MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) = [≈Вульг. 3.279.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A279_S026) = ≈крит. 03,263.23a
+[MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) = [≈Вульг. 3.279.26](mbh/3.279.html#v26) = ≈крит. 03,263.23a
 [HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* giebt Vid. ein Zeichen
 [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam*
 [ŚATR. 14,78.]
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ*
-[MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) = [≈Вульг. 2.44.11](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A044_S011) = крит. — *strībhāvaṃ cāpi lambhitā*
+[MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) = [≈Вульг. 2.44.11](mbh/2.44.html#v11) = крит. — *strībhāvaṃ cāpi lambhitā*
 [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ*
 [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ*
 [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha*
@@ -34,14 +34,14 @@
 [HARIV. 14547.](https://sanskrit-lexicon-scans.github.io/hariv?14547) *putraṃ kṣmām*
 [RAGH. 18,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,8)
 [KATHĀS. 30,104.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,104) *śarīraṃ vāsudevasya rāmasya ca mahātmanaḥ saṃskāraṃ lambhayāmāsa*
-[MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) = [≈Вульг. 1.2.395](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S395) = крит. —
+[MBH. 1,624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.624) = [≈Вульг. 1.2.395](mbh/1.2.html#v395) = крит. —
 [MĀRK. P. 22,46.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?22,46) *satkāraṃ lambhayāmāsa sakhāyaṃ pūjayanpituḥ*
-[MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) = [≈Вульг. 3.279.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A279_S026) = ≈крит. 03,263.23a
+[MBH. 3,16068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16068) = [≈Вульг. 3.279.26](mbh/3.279.html#v26) = ≈крит. 03,263.23a
 [HARIV. 4901.](https://sanskrit-lexicon-scans.github.io/hariv?4901) *vidūṣakaṃ saṃjñāṃ lambhayati* дает Вид. знак
 [VIKR. 47,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?47,12) *lambhayannaparānpuṇyam*
 [ŚATR. 14,78.]
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 254.] *dehabhedaṃ ca lambhitaḥ*
-[MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) = [≈Вульг. 2.44.11](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A044_S011) = крит. — *strībhāvaṃ cāpi lambhitā*
+[MBH. 2,1529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1529) = [≈Вульг. 2.44.11](mbh/2.44.html#v11) = крит. — *strībhāvaṃ cāpi lambhitā*
 [HARIV. 9929.](https://sanskrit-lexicon-scans.github.io/hariv?9929) [10065.](https://sanskrit-lexicon-scans.github.io/hariv?10065) *so 'yaṃ mṛtyuṃ martyena lambhitaḥ*
 [R. 6,94,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,17) *tena pitrā bālo 'pi sa vidyāḥ snehena lambhitaḥ*
 [KATHĀS. 65,74.](https://sanskrit-lexicon-scans.github.io/kss/index.html?65,74) *lambhitalobha*

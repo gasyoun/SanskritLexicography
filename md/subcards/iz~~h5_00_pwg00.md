@@ -4,13 +4,13 @@
 
 
 **intro)** 5. *iṣ*, *iṣati* nur in Verbindung mit *anu* durch zwei Beispiele zu belegen: *tamevānviṣa* den suche auf
-[MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) = [≈Вульг. 3.271.37](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S037) = ≈крит. 03,255.37a *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
+[MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) = [≈Вульг. 3.271.37](mbh/3.271.html#v37) = ≈крит. 03,255.37a *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
 [HIT. 113,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?113,8) (v. l. *anviṣyan*). Ein *iṣ, iṣati* wird unter den verbis der Bewegung aufgezählt
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [NIR. 9,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,18)
 
 - **RU:** 5. *iṣ*, *iṣati* засвидетельствован только в сочетании с *anu* двумя примерами: *tamevānviṣa* найди, отыщи
-[MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) = [≈Вульг. 3.271.37](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S037) = ≈крит. 03,255.37a *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
+[MBH. 3,15753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15753) = [≈Вульг. 3.271.37](mbh/3.271.html#v37) = ≈крит. 03,255.37a *taṃ ca mūṣikaṃ khādituṃ yatnādanviṣanviḍālo muninā dṛṣṭaḥ*
 [HIT. 113,8](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?113,8) (v. l. *anviṣyan*). *iṣ, iṣati* причисляется к глаголам движения
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
 [NIR. 9,18.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?9,18)

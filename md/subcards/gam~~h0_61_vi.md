@@ -6,12 +6,12 @@
 **1)** — *vi*
  1) auseinandergehen: *tredhā viṣvagvi gacchati*
 [AV. 11,8,33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.008.html#av11.008.33) *avanitalavigataiśca bhūtasaṃghaiḥ*
-[MBH. 7,1622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1622) = [≈Вульг. 7.37.35](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A037_S035) = ≈крит. 07,36.34c
+[MBH. 7,1622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1622) = [≈Вульг. 7.37.35](mbh/7.37.html#v35) = ≈крит. 07,36.34c
 
 - **RU:** — *vi*
  1) расходиться в разные стороны: *tredhā viṣvagvi gacchati*
 [AV. 11,8,33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.008.html#av11.008.33) *avanitalavigataiśca bhūtasaṃghaiḥ*
-[MBH. 7,1622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1622) = [≈Вульг. 7.37.35](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A037_S035) = ≈крит. 07,36.34c
+[MBH. 7,1622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1622) = [≈Вульг. 7.37.35](mbh/7.37.html#v35) = ≈крит. 07,36.34c
   <sub>attested</sub>
 
 **2)** — 2) weggehen; vergehen, verschwinden: *vigate bāhuvīrye*
@@ -21,15 +21,15 @@
 [1,13,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,20) *śraddhā ca no mā vyagamat*
 [M. 3,259.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,259)
 [YĀJÑ. 1,245.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,245) *atra snātasya bhāvaste mānuṣo vigamiṣyati*
-[MBH. 18,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.109) = [≈Вульг. 18.3.29](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U01_A003_S029) = ≈крит. 18,3.27c *sa manyurvyagamacchīghram*
-[3,10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) = [≈Вульг. 3.122.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A122_S025) = ≈крит. 03,122.23a *na vigacchati vaidehyāḥ — prabhā*
+[MBH. 18,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.109) = [≈Вульг. 18.3.29](mbh/18.3.html#v29) = ≈крит. 18,3.27c *sa manyurvyagamacchīghram*
+[3,10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) = [≈Вульг. 3.122.25](mbh/3.122.html#v25) = ≈крит. 03,122.23a *na vigacchati vaidehyāḥ — prabhā*
 [R. 2,60,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,60,16) [4,12,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,6)
 [BHAG. 11,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,1)
 [GĪT. 11,33.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,33) *saṃdhyayāpi sapadi vyagami* (pass. impers., der Form nach aber vom caus.)
 [ŚIŚ. 9,17.] Sehr häufig *vigata* verschwunden, gewichen, = *a* priv. am Anfange eines adj. comp.: *vigatāsu*
-[MBH. 7,1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1420) = [≈Вульг. 7.32.48](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A032_S048) = ≈крит. 07,31.46c *˚nayana* blind
+[MBH. 7,1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1420) = [≈Вульг. 7.32.48](mbh/7.32.html#v48) = ≈крит. 07,31.46c *˚nayana* blind
 [PAÑCAT. 262,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,13) *˚saṃtrāsa*
-[MBH. 3,13.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13) = [≈Вульг. 3.1.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A001_S013) = ≈крит. 03,1.12a *˚snehasauhṛda*
+[MBH. 3,13.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13) = [≈Вульг. 3.1.13](mbh/3.1.html#v13) = ≈крит. 03,1.12a *˚snehasauhṛda*
 [SUND. 4,17.] *˚jvara*
 [N. 12,68.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,68) *˚saṃkalpa*
 [2,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,28) *˚klama*
@@ -44,15 +44,15 @@
 [1,13,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,20) *śraddhā ca no mā vyagamat*
 [M. 3,259.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,259)
 [YĀJÑ. 1,245.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,245) *atra snātasya bhāvaste mānuṣo vigamiṣyati*
-[MBH. 18,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.109) = [≈Вульг. 18.3.29](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U01_A003_S029) = ≈крит. 18,3.27c *sa manyurvyagamacchīghram*
-[3,10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) = [≈Вульг. 3.122.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A122_S025) = ≈крит. 03,122.23a *na vigacchati vaidehyāḥ — prabhā*
+[MBH. 18,109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.109) = [≈Вульг. 18.3.29](mbh/18.3.html#v29) = ≈крит. 18,3.27c *sa manyurvyagamacchīghram*
+[3,10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) = [≈Вульг. 3.122.25](mbh/3.122.html#v25) = ≈крит. 03,122.23a *na vigacchati vaidehyāḥ — prabhā*
 [R. 2,60,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,60,16) [4,12,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,6)
 [BHAG. 11,1.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,1)
 [GĪT. 11,33.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,33) *saṃdhyayāpi sapadi vyagami* (pass. impers., по форме, однако, от caus.)
 [ŚIŚ. 9,17.] Очень часто *vigata* «исчезнувший, ушедший», = *a* priv. в начале adj. comp.: *vigatāsu*
-[MBH. 7,1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1420) = [≈Вульг. 7.32.48](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A032_S048) = ≈крит. 07,31.46c *˚nayana* «слепой»
+[MBH. 7,1420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1420) = [≈Вульг. 7.32.48](mbh/7.32.html#v48) = ≈крит. 07,31.46c *˚nayana* «слепой»
 [PAÑCAT. 262,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,13) *˚saṃtrāsa*
-[MBH. 3,13.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13) = [≈Вульг. 3.1.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A001_S013) = ≈крит. 03,1.12a *˚snehasauhṛda*
+[MBH. 3,13.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13) = [≈Вульг. 3.1.13](mbh/3.1.html#v13) = ≈крит. 03,1.12a *˚snehasauhṛda*
 [SUND. 4,17.] *˚jvara*
 [N. 12,68.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,68) *˚saṃkalpa*
 [2,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?2,28) *˚klama*

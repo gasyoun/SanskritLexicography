@@ -4,10 +4,10 @@
 
 
 **pra-9e)** — e) hingeschickt zu (loc.) so v. a. mit der Sorge um — beauftragt: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
-[MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69) = [≈Вульг. 4.3.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A003_S010) = ≈крит. 04,3.8c
+[MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69) = [≈Вульг. 4.3.10](mbh/4.3.html#v10) = ≈крит. 04,3.8c
 
 - **RU:** — e) посланный к (loc.) так преим. облеченный заботой о — поручением: *ahaṃ hi satataṃ goṣu bhavatā prahitaḥ purā*
-[MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69) = [≈Вульг. 4.3.10](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A003_S010) = ≈крит. 04,3.8c
+[MBH. 4,69.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.69) = [≈Вульг. 4.3.10](mbh/4.3.html#v10) = ≈крит. 04,3.8c
   <sub>attested</sub>
 
 **pra-10)** — 10) partic. *prahitavant* der ausgesandt hat, st. des verbi finiti

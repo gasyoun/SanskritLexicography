@@ -13,13 +13,13 @@
 **4)** — 4) Jmd um Etwas bringen, in Etwas besiegen, Jmd Etwas im Spiele abnehmen; mit doppeltem acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
-[MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) = [≈Вульг. 3.64.83](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S083) = ≈крит. 03,61.78c [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
+[MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) = [≈Вульг. 3.64.83](mbh/3.64.html#v83) = ≈крит. 03,61.78c [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
 [DAŚAK.] in [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
 
 - **RU:** — 4) лишить кого-либо чего-либо, одержать над кем-либо верх в чем-либо, отнять у кого-либо что-либо в игре; с двойным acc.: *tānapyardhamāgnīdhrasya jigyuḥ*
 [ŚAT. BR. 3,6,1,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,1,28) *na vai yuṣmākamimaṃ kaścidbrahmodyaṃ jetā*
 [14,6,8,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,1) [12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *devane kuśalairjihmairjito rājyaṃ vasūni ca*
-[MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) = [≈Вульг. 3.64.83](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S083) = ≈крит. 03,61.78c [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
+[MBH. 3,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2483) = [≈Вульг. 3.64.83](mbh/3.64.html#v83) = ≈крит. 03,61.78c [2258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2258)
 [DAŚAK.] в [BENF. Chr. 186,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) [SIDDH. K.] к [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6)
   <sub>attested</sub>
 
@@ -27,7 +27,7 @@
 [ṚV. 8,52,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.052.html#rv08.052.11) *samithe*
 [9,76,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.076.html#rv09.076.05) *ajaiṣmādya*
 [8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18) *jayatāmiva dundubhiḥ*
-[1,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.028.html#rv01.028.05) [M. 7,201.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,201) [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) [MBH. 7,2702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2702) = [≈Вульг. 7.76.21](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A076_S021) = крит. — im Spiele
+[1,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.028.html#rv01.028.05) [M. 7,201.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,201) [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) [MBH. 7,2702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2702) = [≈Вульг. 7.76.21](mbh/7.76.html#v21) = крит. — im Spiele
 [ṚV. 10,34,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.06) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.07) — *yena jayanti na parājayante*
 [AV. 4,22,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.022.html#av04.022.05) [6,98,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.098.html#av06.098.01) [8,8,24.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.24) *jigīvāṃ chatrūyatāmā bharā bhojanāni*
 [4,23,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.023.html#av04.023.06) *tvamajaiṣī3rahā3m*
@@ -49,7 +49,7 @@
 [ṚV. 8,52,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.052.html#rv08.052.11) *samithe*
 [9,76,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.076.html#rv09.076.05) *ajaiṣmādya*
 [8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18) *jayatāmiva dundubhiḥ*
-[1,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.028.html#rv01.028.05) [M. 7,201.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,201) [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) [MBH. 7,2702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2702) = [≈Вульг. 7.76.21](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A076_S021) = крит. — в игре
+[1,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.028.html#rv01.028.05) [M. 7,201.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,201) [BHAG. 2,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,6) [MBH. 7,2702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2702) = [≈Вульг. 7.76.21](mbh/7.76.html#v21) = крит. — в игре
 [ṚV. 10,34,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.06) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.034.html#rv10.034.07) — *yena jayanti na parājayante*
 [AV. 4,22,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.022.html#av04.022.05) [6,98,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.098.html#av06.098.01) [8,8,24.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.008.html#av08.008.24) *jigīvāṃ chatrūyatāmā bharā bhojanāni*
 [4,23,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.023.html#av04.023.06) *tvamajaiṣī3rahā3m*

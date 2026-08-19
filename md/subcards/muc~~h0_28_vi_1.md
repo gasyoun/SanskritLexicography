@@ -8,13 +8,13 @@
 [ŚĀK. 45.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?45) *yānam*
 [KAUŚ. 42. 77.] Jmd befreien
 [M. 11,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,112)
-[MBH. 12,4782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4782) = [≈Вульг. 12.134.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A134_S001) = ≈крит. 12,132.1c
+[MBH. 12,4782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4782) = [≈Вульг. 12.134.1](mbh/12.134.html#v1) = ≈крит. 12,132.1c
 [SĀṂKHYAK. 63.]
 [RAGH. ed. Calc. 3,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?3,20) [BHĀG. P. 1,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,23) [6,2,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,31) [7,6,9](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,9) (*vimocitum*) .
 [Spr. 608.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?608) *saṃśayāt*
 [YĀJÑ. 2,101.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,101) *duḥkhāt*
-[MBH. 3,2435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2435) = [≈Вульг. 3.64.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S035) = ≈крит. 03,61.33a *śāpāt*
-[9,2412](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2412) = [≈Вульг. 9.43.13](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S013) = ≈крит. 09,42.12a (*vimocayāmahe*).* vadhāt*
+[MBH. 3,2435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2435) = [≈Вульг. 3.64.35](mbh/3.64.html#v35) = ≈крит. 03,61.33a *śāpāt*
+[9,2412](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2412) = [≈Вульг. 9.43.13](mbh/9.43.html#v13) = ≈крит. 09,42.12a (*vimocayāmahe*).* vadhāt*
 [KATHĀS. 20,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,20) *vimocitāsuragaṇa* Beiw. Śiva's
 [ŚIV.] von sich abhalten: *śarān*
 [R. 5,42,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,11) — desid. im Begriff stehen zu befreien: *vimumukṣitaliṅgaka* (s. u. *kuliśanāyaka*.) med. sich zu befreien wünschen: *naitānvihāya kṛpaṇānvimumukṣa ekaḥ*
@@ -25,13 +25,13 @@
 [ŚĀK. 45.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?45) *yānam*
 [KAUŚ. 42. 77.] освобождать кого-либо
 [M. 11,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,112)
-[MBH. 12,4782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4782) = [≈Вульг. 12.134.1](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A134_S001) = ≈крит. 12,132.1c
+[MBH. 12,4782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4782) = [≈Вульг. 12.134.1](mbh/12.134.html#v1) = ≈крит. 12,132.1c
 [SĀṂKHYAK. 63.]
 [RAGH. ed. Calc. 3,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?3,20) [BHĀG. P. 1,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,23) [6,2,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,31) [7,6,9](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,9) (*vimocitum*).
 [Spr. 608.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?608) *saṃśayāt*
 [YĀJÑ. 2,101.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,101) *duḥkhāt*
-[MBH. 3,2435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2435) = [≈Вульг. 3.64.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S035) = ≈крит. 03,61.33a *śāpāt*
-[9,2412](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2412) = [≈Вульг. 9.43.13](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S013) = ≈крит. 09,42.12a (*vimocayāmahe*).* vadhāt*
+[MBH. 3,2435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2435) = [≈Вульг. 3.64.35](mbh/3.64.html#v35) = ≈крит. 03,61.33a *śāpāt*
+[9,2412](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2412) = [≈Вульг. 9.43.13](mbh/9.43.html#v13) = ≈крит. 09,42.12a (*vimocayāmahe*).* vadhāt*
 [KATHĀS. 20,20.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,20) *vimocitāsuragaṇa* эпит. Шивас
 [ŚIV.] отстранять от себя: *śarān*
 [R. 5,42,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,11) — desid. намереваться освободить: *vimumukṣitaliṅgaka* (см. *kuliśanāyaka*.) мед. желать освободиться: *naitānvihāya kṛpaṇānvimumukṣa ekaḥ*

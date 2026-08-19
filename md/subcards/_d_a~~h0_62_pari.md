@@ -32,11 +32,11 @@
 [ŚAT. BR. 3,1,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,2,13) [11,5,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,4)
 [ĀŚV. GṚHY. 4,4.]
 [KĀTY. ŚR. 5,5,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,5,33)
-[MBH. 7,9455.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9455) = [≈Вульг. 7.201.62](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A201_S062) = ≈крит. 07,172.56a
+[MBH. 7,9455.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9455) = [≈Вульг. 7.201.62](mbh/7.201.html#v62) = ≈крит. 07,172.56a
 [R. 2,37,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,6)
 [R. GORR. 2,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,37,7)
 [P. 3,1,20](https://ashtadhyayi.com/sutraani/3/1/20), Schol. *vāsaśca paridhāya*
-[MBH. 4,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.245) = [≈Вульг. 4.9.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A009_S002) = ≈крит. 04,8.2a [12,6113.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6113) = [≈Вульг. 12.166.63](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A166_S063) = ≈крит. 12,160.60c
+[MBH. 4,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.245) = [≈Вульг. 4.9.2](mbh/4.9.html#v2) = ≈крит. 04,8.2a [12,6113.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6113) = [≈Вульг. 12.166.63](mbh/12.166.html#v63) = ≈крит. 12,160.60c
 [R. 1,2,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,10)
 [R. GORR. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,15)
 [RAGH. 3,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,31)
@@ -48,7 +48,7 @@
 [BHĀG. P. 9,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,1,30) [18,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,18,9) Ohne obj. ein Gewand umlegen: *hriyā paridadhuḥ*
 [1,4,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,5) *gamanāya paryadhāt*
 [15,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,37) *paridhāya cānyathā*
-[MBH. 4,302.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.302) = [≈Вульг. 4.11.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S005) = ≈крит. 04,10.5c
+[MBH. 4,302.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.302) = [≈Вульг. 4.11.5](mbh/4.11.html#v5) = ≈крит. 04,10.5c
 
 - **RU:** — 2) надевать на себя, накидывать на себя; мед.: *parīdaṃ vāso adhithāḥ*
 [AV. 2,13,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.013.html#av02.013.03) [14,1,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.45)
@@ -56,11 +56,11 @@
 [ŚAT. BR. 3,1,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,2,13) [11,5,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,4)
 [ĀŚV. GṚHY. 4,4.]
 [KĀTY. ŚR. 5,5,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,5,33)
-[MBH. 7,9455.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9455) = [≈Вульг. 7.201.62](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A201_S062) = ≈крит. 07,172.56a
+[MBH. 7,9455.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9455) = [≈Вульг. 7.201.62](mbh/7.201.html#v62) = ≈крит. 07,172.56a
 [R. 2,37,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,6)
 [R. GORR. 2,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,37,7)
 [P. 3,1,20](https://ashtadhyayi.com/sutraani/3/1/20), схол. *vāsaśca paridhāya*
-[MBH. 4,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.245) = [≈Вульг. 4.9.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A009_S002) = ≈крит. 04,8.2a [12,6113.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6113) = [≈Вульг. 12.166.63](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A166_S063) = ≈крит. 12,160.60c
+[MBH. 4,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.245) = [≈Вульг. 4.9.2](mbh/4.9.html#v2) = ≈крит. 04,8.2a [12,6113.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6113) = [≈Вульг. 12.166.63](mbh/12.166.html#v63) = ≈крит. 12,160.60c
 [R. 1,2,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,10)
 [R. GORR. 2,62,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,15)
 [RAGH. 3,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,31)
@@ -72,7 +72,7 @@
 [BHĀG. P. 9,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,1,30) [18,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,18,9) Без obj. надеть одежду: *hriyā paridadhuḥ*
 [1,4,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,5) *gamanāya paryadhāt*
 [15,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,37) *paridhāya cānyathā*
-[MBH. 4,302.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.302) = [≈Вульг. 4.11.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S005) = ≈крит. 04,10.5c
+[MBH. 4,302.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.302) = [≈Вульг. 4.11.5](mbh/4.11.html#v5) = ≈крит. 04,10.5c
   <sub>attested</sub>
 
 **3)** — 3) umlégen, umgében, bekleiden: act.: *pari tvā dhātsavitā devo varcasā*
@@ -165,10 +165,10 @@ z. B. [AV. 6,55,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.055.h
 **caus-2)** — 2) umgében, bekleiden mit (instr.): *yena devaṃ savitāraṃ pari devā adhāpayan* (so ist die Lesart herzustellen)
 [AV. 19,24,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.024.html#av19.024.01) *indrasya tvā varmaṇā pari dhāpayāmaḥ*
 [46,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.046.html#av19.046.04) [12,3,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.51) — desid. im Begriff stehen sich umzulegen: *kṛṣṇājināni paridhitsamānān*
-[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A029_S045) = ≈крит. 05,29.38a
+[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](mbh/5.29.html#v45) = ≈крит. 05,29.38a
 
 - **RU:** — 2) окружать, облекать чем-л. (instr.): *yena devaṃ savitāraṃ pari devā adhāpayan* (так надлежит восстановить чтение)
 [AV. 19,24,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.024.html#av19.024.01) *indrasya tvā varmaṇā pari dhāpayāmaḥ*
 [46,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.046.html#av19.046.04) [12,3,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.51) — desid. быть намерен надеть на себя: *kṛṣṇājināni paridhitsamānān*
-[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A029_S045) = ≈крит. 05,29.38a
+[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](mbh/5.29.html#v45) = ≈крит. 05,29.38a
   <sub>attested</sub>

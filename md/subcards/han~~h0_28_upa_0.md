@@ -12,7 +12,7 @@
 [LĀṬY. 1,9,22. 12,2.] *daṇḍenopaghātaṃ* oder *daṇḍopaghātaṃ gāḥ kalayati*
 [P. 3,4,48](https://ashtadhyayi.com/sutraani/3/4/48), Schol. vom Stossen d. h. Auftreffen eines Vogels: *kapotaścedāgāramupahanyāt*
 [ĀŚV. GṚHY. 3,7,7.] *mārjāravatpoṣakaṃ copahaṃsi* so v. a. kratzen
-[MBH. 2,2123.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2123) = [≈Вульг. 2.64.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A064_S003) = ≈крит. 02,57.3c
+[MBH. 2,2123.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2123) = [≈Вульг. 2.64.3](mbh/2.64.html#v3) = ≈крит. 02,57.3c
 
 - **RU:** — *upa*
  1) ударять —, наталкиваться на; касаться: *jaghanān*
@@ -23,7 +23,7 @@
 [LĀṬY. 1,9,22. 12,2.] *daṇḍenopaghātaṃ* или *daṇḍopaghātaṃ gāḥ kalayati*
 [P. 3,4,48](https://ashtadhyayi.com/sutraani/3/4/48), схол. об ударении т.е. столкновении птицы: *kapotaścedāgāramupahanyāt*
 [ĀŚV. GṚHY. 3,7,7.] *mārjāravatpoṣakaṃ copahaṃsi* так преим. царапать
-[MBH. 2,2123.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2123) = [≈Вульг. 2.64.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A064_S003) = ≈крит. 02,57.3c
+[MBH. 2,2123.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2123) = [≈Вульг. 2.64.3](mbh/2.64.html#v3) = ≈крит. 02,57.3c
   <sub>attested</sub>
 
 **2)** — 2) anstecken, an die Spitze eines Stabes u. s. w. fassen, antupfen
@@ -59,13 +59,13 @@
 [TBR. 3,7,12,3](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,12,3); vgl.
 [AV. 6,118,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.118.html#av06.118.01) *upahanyāmimāḥ prajāḥ*
 [BHAG. 3,24.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,24) *anupaghnanpitṛdravyam*
-[M. 9,208](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,208) (= [MBH. 13,5123](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5123) = [≈Вульг. 13.105.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A105_S012) = ≈крит. 13,108.12a). [MBH. 5,699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.699) = [≈Вульг. 5.23.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S015) = ≈крит. 05,23.15a *ajāvikam*
+[M. 9,208](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,208) (= [MBH. 13,5123](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5123) = [≈Вульг. 13.105.12](mbh/13.105.html#v12) = ≈крит. 13,108.12a). [MBH. 5,699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.699) = [≈Вульг. 5.23.15](mbh/5.23.html#v15) = ≈крит. 05,23.15a *ajāvikam*
 [VARĀH. BṚH. S. 39,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?39,2) *sasyarddhim*
 [MĀRK. P. 51,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,23)
 [BHAṬṬ. 5,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,12) *laṅkā copahaniṣyate* (pass.)
 [16,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,12) *dharmārthāvupahanti*
 [Spr. (II) 4851.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4851 "Spr. (II) 4851: mitraṃ vicārya bahuśo jñātadoṣaṃ parityajet | tyajannabhūtadoṣaṃ hi dharmārthāvupahanti saḥ || — (2196.) Er (der Fürst) prüfe den Freund auf vielfache Weise und verstosse ihn erst dann, wenn er seine Schuld erkannt hat, denn wer einen schuldlosen Freund verstösst, der macht ja Verdienst und Vortheil zu Nichte.") *sarvaṃ tasyopahanyate*
-[MBH. 13,407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.407) = [≈Вульг. 13.9.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A009_S005) = крит. — *śrutiḥ*
+[MBH. 13,407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.407) = [≈Вульг. 13.9.5](mbh/13.9.html#v5) = крит. — *śrutiḥ*
 [SUŚR. 1,38,16.] *svabhāvaḥ*
 [BHĀG. P. 2,10,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,41) *mama pratijñāmupahantum* zu Schanden machen
 [HARIV. 7209.](https://sanskrit-lexicon-scans.github.io/hariv?7209)
@@ -75,13 +75,13 @@
 [TBR. 3,7,12,3](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,12,3); ср.
 [AV. 6,118,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.118.html#av06.118.01) *upahanyāmimāḥ prajāḥ*
 [BHAG. 3,24.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,24) *anupaghnanpitṛdravyam*
-[M. 9,208](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,208) (= [MBH. 13,5123](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5123) = [≈Вульг. 13.105.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A105_S012) = ≈крит. 13,108.12a). [MBH. 5,699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.699) = [≈Вульг. 5.23.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S015) = ≈крит. 05,23.15a *ajāvikam*
+[M. 9,208](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,208) (= [MBH. 13,5123](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5123) = [≈Вульг. 13.105.12](mbh/13.105.html#v12) = ≈крит. 13,108.12a). [MBH. 5,699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.699) = [≈Вульг. 5.23.15](mbh/5.23.html#v15) = ≈крит. 05,23.15a *ajāvikam*
 [VARĀH. BṚH. S. 39,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?39,2) *sasyarddhim*
 [MĀRK. P. 51,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,23)
 [BHAṬṬ. 5,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,12) *laṅkā copahaniṣyate* (pass.)
 [16,12.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,12) *dharmārthāvupahanti*
 [Spr. (II) 4851.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4851 "Spr. (II) 4851: mitraṃ vicārya bahuśo jñātadoṣaṃ parityajet | tyajannabhūtadoṣaṃ hi dharmārthāvupahanti saḥ || — (2196.) Er (der Fürst) prüfe den Freund auf vielfache Weise und verstosse ihn erst dann, wenn er seine Schuld erkannt hat, denn wer einen schuldlosen Freund verstösst, der macht ja Verdienst und Vortheil zu Nichte.") *sarvaṃ tasyopahanyate*
-[MBH. 13,407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.407) = [≈Вульг. 13.9.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A009_S005) = крит. — *śrutiḥ*
+[MBH. 13,407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.407) = [≈Вульг. 13.9.5](mbh/13.9.html#v5) = крит. — *śrutiḥ*
 [SUŚR. 1,38,16.] *svabhāvaḥ*
 [BHĀG. P. 2,10,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,10,41) *mama pratijñāmupahantum* посрамлять
 [HARIV. 7209.](https://sanskrit-lexicon-scans.github.io/hariv?7209)
@@ -126,7 +126,7 @@
 [MĀLATĪM. 160,18.] *˚pādendriya*
 [SARVADARŚANAS. 78,11.] *anupahatakarṇendriyatā*
 [Lot. de la b. l. 603.] *guruśāpena kriyā*
-[MBH. 1,4665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4665) = [≈Вульг. 1.120.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A120_S026) = ≈крит. 01,111.21a
+[MBH. 1,4665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4665) = [≈Вульг. 1.120.26](mbh/1.120.html#v26) = ≈крит. 01,111.21a
 [HARIV. 5594.](https://sanskrit-lexicon-scans.github.io/hariv?5594) *daivopahatakarman*
 [R. 1,58,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,23) ([60,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,60,26) [GORR.]). *chāyā mama*
 [2,69,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,20) *indurgraheṇopahatadyutiḥ*
@@ -148,7 +148,7 @@
 [VARĀH. BṚH. S. 5,50.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,50) [19,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,9) [59,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?59,3) [60,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?60,6) *mūṣikopahatavastra*
 [Verz. d. Oxf. H. 86,b,15.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [KULL.] zu [M. 5,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,115) *stanau śucā* durch Thränen
 [BHĀG. P. 4,26,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,25) [10,60,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,27) *ruditopahata*
-[MBH. 9,2425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2425) = [≈Вульг. 9.43.26](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S026) = ≈крит. 09,42.21a *aśrūpahata*
+[MBH. 9,2425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2425) = [≈Вульг. 9.43.26](mbh/9.43.html#v26) = ≈крит. 09,42.21a *aśrūpahata*
 [VIKR. 127.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?127) *kaśmalopahata*
 [R. 1,65,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,9) *timirādyupahatacakṣus*
 [SARVADARŚANAS. 17,3.] *bāṣpopahatā vāk*
@@ -160,17 +160,17 @@
 [Spr. (II) 4488.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4488 "Spr. (II) 4488: boddhāro matsaragrastāḥ prabhavaḥ smayadūṣitāḥ | abodhopahatāścānye jīrṇamaṅge subhāṣitam || — (1988.) Die Kenner werden von Neid verzehrt, die Gebieter sind mit Hochmuth befleckt, die Uebrigen mit Dummheit geschlagen: die schönen Worte habe ich im eigenen Leibe verdaut (so v. a. unterdrückt).") *āśopahatātmavṛtti*
 [KUMĀRAS. 5,76.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,76) *kāmopahata*
 [M. 9,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,67)
-[MBH. 1,5953.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5953) = [≈Вульг. 1.151.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S023) = ≈крит. 01,138.15a
+[MBH. 1,5953.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5953) = [≈Вульг. 1.151.23](mbh/1.151.html#v23) = ≈крит. 01,138.15a
 [NĪLAK. 22.] *tṛṣṇopahata*
 [ṚT. 1,15.] *darpopahata*
-[MBH. 3,8496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8496) = [≈Вульг. 3.94.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A094_S008) = ≈крит. 03,92.8a *dāridryopahata*
+[MBH. 3,8496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8496) = [≈Вульг. 3.94.8](mbh/3.94.html#v8) = ≈крит. 03,92.8a *dāridryopahata*
 [PAÑCAT. 95,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,13) [119,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?119,5) *duḥkhopahata*
 [R. 2,47,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) [3,79,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,50)
 [Spr. (II) 4606.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606 "Spr. (II) 4606: bhūtānāmiha sarveṣāṃ duḥkhopahatacetasām | gatimanveṣamāṇānāṃ na gaṅgāsadṛśī gatiḥ || — (2055.) Für kein Wesen hier auf Erden, das eine Zuflucht sucht, wenn sein Herz wie das bei einem Brunnen: das Schicksal führt sie zusammen, die eigenen Thaten führen sie auseinander.") *durbhikṣopahata*
 [RĀJA-TAR. 4,230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,230) [5,89.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,89) *madanopahata*
-[MBH. 1,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.951) = [≈Вульг. 1.8.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U04_A008_S014) = ≈крит. 01,8.11a *madāvalepopahata*
+[MBH. 1,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.951) = [≈Вульг. 1.8.14](mbh/1.8.html#v14) = ≈крит. 01,8.11a *madāvalepopahata*
 [MĀRK. P. 21,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,3) *rogarāgopahata*
-[MBH. 3,15639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15639) = [≈Вульг. 3.268.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A268_S002) = ≈крит. 03,252.2c *lobhopahata*
+[MBH. 3,15639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15639) = [≈Вульг. 3.268.2](mbh/3.268.html#v2) = ≈крит. 03,252.2c *lobhopahata*
 [BHAG. 1,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,38) *vairūpyopahata*
 [Spr. (II) 4341.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4341 "Spr. (II) 4341: prāyeṇātra kalānvitaṃ kukulajāḥ śrīvallabhaṃ durbhagā dātāraṃ kṛpaṇā ṛjūnanṛjavo vittānvitaṃ nirdhanāḥ | vairūpyopahatāśca kāntavapuṣaṃ dharmāśrayaṃ p… — (1912.) Gewöhnlich tadeln hier auf Erden niedrig Geborene einen hoch Geborenen, Unglückliche einen Günstling des Glücks, Geizige einen Freigebigen, Unredliche Redliche, Arme einen Reichen, Hässliche einen Schönen, Bösewi…") *śāṭhyopahata*
 [367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?367) *śokopahata*
@@ -183,7 +183,7 @@
 [Spr. (II) 1889.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1889 "Spr. (II) 1889: kṛtvā śastravibhīṣikāṃ katipayagrāmeṣu dīnāḥ prajā mathnanto viṭajalpitairupahatāḥ kṣauṇībhujaste kila | vidvāṃso 'pi vayaṃ kila trijagatīsargasthitiv… — (726.) Wer, Schrecken verbreitend durch Waffen, in wenigen Dorfer armselige Unterthanen bedrückt, das sind, wie wir wissen, durch das Geschwätz Unterthanen bedrückt, das sind, wie wir wissen, durch huldigt, den Herrn übe…") *apāyopahatāntarātman* so v. a. entmuthigt
 [3485.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3485) *daivena* vom Schicksal geschlagen, — verfolgt
 [R. 2,47,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,14) [5,80,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,9) ohne *daivena* dass.
-[MBH. 5,1277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1277) = [≈Вульг. 5.36.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S018) = ≈крит. 05,36.18c
+[MBH. 5,1277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1277) = [≈Вульг. 5.36.18](mbh/5.36.html#v18) = ≈крит. 05,36.18c
 [VARĀH. BṚH. S. 16,37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,37) *upahatātman* niedergeschlagen, traurig
 [KATHĀS. 114,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?114,100) *anupahatātmaka* wohlgemuth
 [27,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,130)
@@ -197,7 +197,7 @@
 [MĀLATĪM. 160,18.] *˚pādendriya*
 [SARVADARŚANAS. 78,11.] *anupahatakarṇendriyatā*
 [Lot. de la b. l. 603.] *guruśāpena kriyā*
-[MBH. 1,4665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4665) = [≈Вульг. 1.120.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A120_S026) = ≈крит. 01,111.21a
+[MBH. 1,4665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4665) = [≈Вульг. 1.120.26](mbh/1.120.html#v26) = ≈крит. 01,111.21a
 [HARIV. 5594.](https://sanskrit-lexicon-scans.github.io/hariv?5594) *daivopahatakarman*
 [R. 1,58,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,23) ([60,26](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,60,26) [GORR.]). *chāyā mama*
 [2,69,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,20) *indurgraheṇopahatadyutiḥ*
@@ -219,7 +219,7 @@
 [VARĀH. BṚH. S. 5,50.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?5,50) [19,9.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,9) [59,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?59,3) [60,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?60,6) *mūṣikopahatavastra*
 [Verz. d. Oxf. H. 86,b,15.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?86) [KULL.] к [M. 5,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,115) *stanau śucā* слезами
 [BHĀG. P. 4,26,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,25) [10,60,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,60,27) *ruditopahata*
-[MBH. 9,2425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2425) = [≈Вульг. 9.43.26](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A043_S026) = ≈крит. 09,42.21a *aśrūpahata*
+[MBH. 9,2425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2425) = [≈Вульг. 9.43.26](mbh/9.43.html#v26) = ≈крит. 09,42.21a *aśrūpahata*
 [VIKR. 127.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?127) *kaśmalopahata*
 [R. 1,65,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,9) *timirādyupahatacakṣus*
 [SARVADARŚANAS. 17,3.] *bāṣpopahatā vāk*
@@ -231,17 +231,17 @@
 [Spr. (II) 4488.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4488 "Spr. (II) 4488: boddhāro matsaragrastāḥ prabhavaḥ smayadūṣitāḥ | abodhopahatāścānye jīrṇamaṅge subhāṣitam || — (1988.) Die Kenner werden von Neid verzehrt, die Gebieter sind mit Hochmuth befleckt, die Uebrigen mit Dummheit geschlagen: die schönen Worte habe ich im eigenen Leibe verdaut (so v. a. unterdrückt).") *āśopahatātmavṛtti*
 [KUMĀRAS. 5,76.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,76) *kāmopahata*
 [M. 9,67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,67)
-[MBH. 1,5953.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5953) = [≈Вульг. 1.151.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S023) = ≈крит. 01,138.15a
+[MBH. 1,5953.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5953) = [≈Вульг. 1.151.23](mbh/1.151.html#v23) = ≈крит. 01,138.15a
 [NĪLAK. 22.] *tṛṣṇopahata*
 [ṚT. 1,15.] *darpopahata*
-[MBH. 3,8496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8496) = [≈Вульг. 3.94.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A094_S008) = ≈крит. 03,92.8a *dāridryopahata*
+[MBH. 3,8496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8496) = [≈Вульг. 3.94.8](mbh/3.94.html#v8) = ≈крит. 03,92.8a *dāridryopahata*
 [PAÑCAT. 95,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,13) [119,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?119,5) *duḥkhopahata*
 [R. 2,47,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,19) [3,79,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,50)
 [Spr. (II) 4606.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4606 "Spr. (II) 4606: bhūtānāmiha sarveṣāṃ duḥkhopahatacetasām | gatimanveṣamāṇānāṃ na gaṅgāsadṛśī gatiḥ || — (2055.) Für kein Wesen hier auf Erden, das eine Zuflucht sucht, wenn sein Herz wie das bei einem Brunnen: das Schicksal führt sie zusammen, die eigenen Thaten führen sie auseinander.") *durbhikṣopahata*
 [RĀJA-TAR. 4,230.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,230) [5,89.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,89) *madanopahata*
-[MBH. 1,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.951) = [≈Вульг. 1.8.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U04_A008_S014) = ≈крит. 01,8.11a *madāvalepopahata*
+[MBH. 1,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.951) = [≈Вульг. 1.8.14](mbh/1.8.html#v14) = ≈крит. 01,8.11a *madāvalepopahata*
 [MĀRK. P. 21,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,3) *rogarāgopahata*
-[MBH. 3,15639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15639) = [≈Вульг. 3.268.2](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A268_S002) = ≈крит. 03,252.2c *lobhopahata*
+[MBH. 3,15639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15639) = [≈Вульг. 3.268.2](mbh/3.268.html#v2) = ≈крит. 03,252.2c *lobhopahata*
 [BHAG. 1,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,38) *vairūpyopahata*
 [Spr. (II) 4341.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4341 "Spr. (II) 4341: prāyeṇātra kalānvitaṃ kukulajāḥ śrīvallabhaṃ durbhagā dātāraṃ kṛpaṇā ṛjūnanṛjavo vittānvitaṃ nirdhanāḥ | vairūpyopahatāśca kāntavapuṣaṃ dharmāśrayaṃ p… — (1912.) Gewöhnlich tadeln hier auf Erden niedrig Geborene einen hoch Geborenen, Unglückliche einen Günstling des Glücks, Geizige einen Freigebigen, Unredliche Redliche, Arme einen Reichen, Hässliche einen Schönen, Bösewi…") *śāṭhyopahata*
 [367.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?367) *śokopahata*
@@ -254,7 +254,7 @@
 [Spr. (II) 1889.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1889 "Spr. (II) 1889: kṛtvā śastravibhīṣikāṃ katipayagrāmeṣu dīnāḥ prajā mathnanto viṭajalpitairupahatāḥ kṣauṇībhujaste kila | vidvāṃso 'pi vayaṃ kila trijagatīsargasthitiv… — (726.) Wer, Schrecken verbreitend durch Waffen, in wenigen Dorfer armselige Unterthanen bedrückt, das sind, wie wir wissen, durch das Geschwätz Unterthanen bedrückt, das sind, wie wir wissen, durch huldigt, den Herrn übe…") *apāyopahatāntarātman* так преим. лишившийся мужества
 [3485.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3485) *daivena* сраженный судьбой, — преследуемый ею
 [R. 2,47,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,47,14) [5,80,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,80,9) без *daivena* то же
-[MBH. 5,1277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1277) = [≈Вульг. 5.36.18](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S018) = ≈крит. 05,36.18c
+[MBH. 5,1277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1277) = [≈Вульг. 5.36.18](mbh/5.36.html#v18) = ≈крит. 05,36.18c
 [VARĀH. BṚH. S. 16,37.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,37) *upahatātman* подавленный, опечаленный
 [KATHĀS. 114,100.](https://sanskrit-lexicon-scans.github.io/kss/index.html?114,100) *anupahatātmaka* бодрый духом
 [27,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,130)

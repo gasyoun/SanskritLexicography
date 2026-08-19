@@ -26,12 +26,12 @@
 **2)** — 2) sich in Etwas (acc.) versenken, sich ganz hingeben: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
 [DAŚAK. 78,8. 9.] ohne Ergänzung auf seinem Kopfe bestehen: *te cedabhinivekṣyanti (˚nte* [ed. Bomb.]) *nābhyupaiṣyanti me vacaḥ*
-[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A077_S017) = ≈крит. 05,75.17a
+[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](mbh/5.77.html#v17) = ≈крит. 05,75.17a
 
 - **RU:** — 2) погружаться во что-либо (acc.), всецело предаваться: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
 [DAŚAK. 78,8. 9.] без дополнения упорствовать в своем: *te cedabhinivekṣyanti (˚nte* [Бомбейская ред.]) *nābhyupaiṣyanti me vacaḥ*
-[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A077_S017) = ≈крит. 05,75.17a
+[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](mbh/5.77.html#v17) = ≈крит. 05,75.17a
   <sub>attested</sub>
 
 **3)** — 3) partic. *˚viṣṭa*
@@ -41,11 +41,11 @@
 
 **3a)** a) sich festgesetzt habend an einem Orte
 [SUŚR. 1,82,12.] hartnäckig: *paraspareṇābhiniviṣṭaroṣayoḥ*
-[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A082_S005) = ≈крит. 08,60.5a
+[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](mbh/8.82.html#v5) = ≈крит. 08,60.5a
 
 - **RU:** a) утвердившийся на месте
 [SUŚR. 1,82,12.] упрямый, упорный: *paraspareṇābhiniviṣṭaroṣayoḥ*
-[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A082_S005) = ≈крит. 08,60.5a
+[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](mbh/8.82.html#v5) = ≈крит. 08,60.5a
   <sub>attested</sub>
 
 **3b)** — b) fest auf einen Punkt gerichtet, ganz mit Etwas beschäftigt, nur Eines vor Augen habend: *arthasūkṣmābhiniviṣṭadṛṣṭi*
@@ -121,10 +121,10 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) machen, dass Jmd einer Sache sein ganzes Herz zuwendet, Jmdes ganzes Verlangen auf Etwas richten: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
-[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S035) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
+[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](mbh/4.19.html#v35) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
 [MĀLAV. 28,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,7)
 
 - **RU:** — 4) заставить кого-либо всем сердцем устремиться к чему-либо, направить всё желание кого-либо на что-либо: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
-[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S035) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
+[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](mbh/4.19.html#v35) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
 [MĀLAV. 28,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,7)
   <sub>attested</sub>

@@ -8,10 +8,10 @@
 - **RU:** — *upa*
 
 **1)** 1) *yopakartṝṃśca* (d. i. *ya upa˚) hantṝṃśca tejasaivopagacchati* Jmd mit Gewalt entgegentreten, Gewalt gegen Jmd gebrauchen
-[MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Вульг. 3.28.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A028_S021) = ≈крит. 03,29.21c
+[MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Вульг. 3.28.21](mbh/3.28.html#v21) = ≈крит. 03,29.21c
 
 - **RU:** 1) *yopakartṝṃśca* (т.е. *ya upa˚) hantṝṃśca tejasaivopagacchati* выступать против кого-л. с применением силы, применять силу против кого-л.
-[MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Вульг. 3.28.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A028_S021) = ≈крит. 03,29.21c
+[MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Вульг. 3.28.21](mbh/3.28.html#v21) = ≈крит. 03,29.21c
 
 **5)** — 5)
 Z. 4 lies 9, 6 st. 9, 16.

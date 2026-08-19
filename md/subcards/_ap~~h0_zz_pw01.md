@@ -152,9 +152,9 @@
 - **RU:** — 3〉 достигать (по величине/качеству).
   <sub>attested</sub>
 
-**ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A086_S009) = ≈крит. 14,88.9a fehlerhaft für *mamāptaḥ*.
+**ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](mbh/14.86.html#v9) = ≈крит. 14,88.9a fehlerhaft für *mamāptaḥ*.
 
-- **RU:** — Partic. *samāpta* завершенный, оконченный, доведенный до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A086_S009) = ≈крит. 14,88.9a ошибочно вм. *mamāptaḥ*.
+- **RU:** — Partic. *samāpta* завершенный, оконченный, доведенный до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](mbh/14.86.html#v9) = ≈крит. 14,88.9a ошибочно вм. *mamāptaḥ*.
   <sub>attested</sub>
 
 **caus_T48_1)** — Caus.
@@ -207,10 +207,10 @@
   <sub>attested</sub>
 
 **ppp_T61_1)** — Partic. *parisamāpta*
-— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S269) = ≈крит. 01,1.206a.
+— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](mbh/1.1.html#v269) = ≈крит. 01,1.206a.
 
 - **RU:** — Partic. *parisamāpta*
-— 1〉 полностью завершенный [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S269) = ≈крит. 01,1.206a.
+— 1〉 полностью завершенный [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](mbh/1.1.html#v269) = ≈крит. 01,1.206a.
   <sub>attested</sub>
 
 **ppp_T61_2)** — 2〉 vollendet, so v. a. auf dem Höhepunkt stehend [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).

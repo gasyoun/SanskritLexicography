@@ -6,12 +6,12 @@
 **1)** — *viprati*, partic. *˚ṣiddha*
  1) verwehrt, untersagt
 [KĀTY. ŚR. 4,3,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,3,19)
-[MBH. 5,4489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4489) = [≈Вульг. 5.134.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A134_S016) = ≈крит. 05,132.16a
+[MBH. 5,4489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4489) = [≈Вульг. 5.134.16](mbh/5.134.html#v16) = ≈крит. 05,132.16a
 
 - **RU:** — *viprati*, partic. *˚ṣiddha*
  1) запрещенный, воспрещенный
 [KĀTY. ŚR. 4,3,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,3,19)
-[MBH. 5,4489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4489) = [≈Вульг. 5.134.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A134_S016) = ≈крит. 05,132.16a
+[MBH. 5,4489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4489) = [≈Вульг. 5.134.16](mbh/5.134.html#v16) = ≈крит. 05,132.16a
   <sub>attested</sub>
 
 **2)** — 2) entgegengesetzt, widersprechend

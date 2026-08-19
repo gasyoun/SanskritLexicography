@@ -162,9 +162,9 @@
 - **RU:** — 4) inire (feminam).
   <sub>attested</sub>
 
-**prati-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40) = [≈Вульг. 13.1.57](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S057) = ≈крит. 13,1.50a. [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
+**prati-5)** — 5〉 erreichen, treffen, widerfahren, begegnen, zu Theil werden; mit Acc. *upagata* zu Theil geworden [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40) = [≈Вульг. 13.1.57](mbh/13.1.html#v57) = ≈крит. 13,1.50a. [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
 
-- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40) = [≈Вульг. 13.1.57](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S057) = ≈крит. 13,1.50a. [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
+- **RU:** — 5) достигать, встречать, случаться, попадаться, доставаться в удел; с Acc. *upagata* доставшийся в удел [MBH. 13,57,40](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,57,40) = [≈Вульг. 13.1.57](mbh/13.1.html#v57) = ≈крит. 13,1.50a. [Spr. 45](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?45).
   <sub>attested</sub>
 
 **prati-6)** — 6〉 einen best. Standpunct erreichen (von Sternen).

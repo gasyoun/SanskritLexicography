@@ -45,9 +45,9 @@
 - **RU:** — 7〉 после вопросительных и относительных _Pronomm._ так преим. пожалуй, примерно, разве.
   <sub>attested</sub>
 
-**8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a.
+**8)** — 8〉 metrisch statt *ca* und [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) = [≈Вульг. 12.11.6](mbh/12.11.html#v6) = ≈крит. 12,11.6a [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25) = [≈Вульг. 12.11.6](mbh/12.11.html#v6) = ≈крит. 12,11.6a.
 
-- **RU:** — 8〉 метрически вм. *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25) = [≈Вульг. 12.11.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S006) = ≈крит. 12,11.6a.
+- **RU:** — 8〉 метрически вм. *ca* и [MBH. 12,324,20.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,20) = [≈Вульг. 12.11.6](mbh/12.11.html#v6) = ≈крит. 12,11.6a [25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,324,25) = [≈Вульг. 12.11.6](mbh/12.11.html#v6) = ≈крит. 12,11.6a.
   <sub>attested</sub>
 
 **9)** — 9〉 nach den Lexicographen auch blosser Lückenbüsser.
@@ -296,9 +296,9 @@
 - **RU:** — С *anuvi* продувать последовательно или в длину.
   <sub>attested</sub>
 
-**mit_prati)** — Mit *sam* wehen [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37) = [≈Вульг. 12.11.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S010) = ≈крит. 12,11.10a.
+**mit_prati)** — Mit *sam* wehen [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37) = [≈Вульг. 12.11.10](mbh/12.11.html#v10) = ≈крит. 12,11.10a.
 
-- **RU:** — С *sam* веять, дуть [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37) = [≈Вульг. 12.11.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A011_S010) = ≈крит. 12,11.10a.
+- **RU:** — С *sam* веять, дуть [MBH. 12,328,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,328,37) = [≈Вульг. 12.11.10](mbh/12.11.html#v10) = ≈крит. 12,11.10a.
   <sub>attested</sub>
 
 **mit_anu_sam)** — Mit *anusam* der Reihe nach (zusammen) anwehen.
@@ -323,9 +323,9 @@
 - **RU:** — 3〉 лишаться, утрачивать, с Gen. [ṚV. 8,47,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.06).
   <sub>attested</sub>
 
-**4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) = [≈Вульг. 9.2.38](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A002_S038) = ≈крит. 09,2.34c fehlerhaft für *avārayat*.
+**4)** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) = [≈Вульг. 9.2.38](mbh/9.2.html#v38) = ≈крит. 09,2.34c fehlerhaft für *avārayat*.
 
-- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) = [≈Вульг. 9.2.38](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A002_S038) = ≈крит. 09,2.34c ошибочно вм. *avārayat*.
+- **RU:** — 4〉 *avāyat* [MBH. 9,94](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.94) = [≈Вульг. 9.2.38](mbh/9.2.html#v38) = ≈крит. 09,2.34c ошибочно вм. *avārayat*.
   <sub>attested</sub>
 
 **5)** — 5〉 *vāna* trocken.

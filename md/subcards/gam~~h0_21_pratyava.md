@@ -4,8 +4,8 @@
 
 
 **1)** — *pratyava* einzeln erkennen
-[MBH. 11,90.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.90) = [≈Вульг. 11.3.7](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A003_S007) = крит. —
+[MBH. 11,90.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.90) = [≈Вульг. 11.3.7](mbh/11.3.html#v7) = крит. —
 
 - **RU:** — *pratyava* распознавать по отдельности
-[MBH. 11,90.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.90) = [≈Вульг. 11.3.7](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A003_S007) = крит. —
+[MBH. 11,90.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.90) = [≈Вульг. 11.3.7](mbh/11.3.html#v7) = крит. —
   <sub>attested</sub>

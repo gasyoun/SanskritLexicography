@@ -17,9 +17,9 @@
 [PAÑCAT. I,427.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,427) *mitraṃ caivopadekṣyāmi bhavatoḥ*
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
-[MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) = [≈Вульг. 5.175.44](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S044) = ≈крит. 05,173.17a *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
+[MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) = [≈Вульг. 5.175.44](mbh/5.175.html#v44) = ≈крит. 05,173.17a *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
 [DAŚAK.] in [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
-[MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614) = [≈Вульг. 3.66.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S007) = ≈крит. 03,63.6c
+[MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614) = [≈Вульг. 3.66.7](mbh/3.66.html#v7) = ≈крит. 03,63.6c
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
 [ĀŚV. ŚR. 10,7.] *gṛhyakarmāṇyupadekṣyāmaḥ*
@@ -28,7 +28,7 @@
 [ŚĀṄKH. GṚHY. 2,13.] *hitaṃ copadiśatsu*
 [M. 2,206.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,206) [4,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,80) [12,107.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,107)
 [BHAG. 4,34.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,34) *iṣvastraṃ mama — bhavataiva caturvidham . upādaṣṭam*
-[MBH. 5,7065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7065) = [≈Вульг. 5.178.38](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S038) = ≈крит. 05,178.15c
+[MBH. 5,7065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7065) = [≈Вульг. 5.178.38](mbh/5.178.html#v38) = ≈крит. 05,178.15c
 [ARJ. 8,8.]
 [R. 2,75,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,26) *yathopadiṣṭamṛṣiṇā jagatuḥ*
 [1,4,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,12) *āyurvedamupadiśyamānam*
@@ -38,7 +38,7 @@
 [MĀLAV. 5.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?5) *nāśiṣyāyopadiśyate*
 [PAÑCAT. I,430.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,430) [KATHĀS. 12,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,50) [17,121.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,121) [123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,123) [MĀRK. P. 21,66.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,66) [BHĀG. P. 5,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,24) [RĀJA-TAR. 4,719.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,719) *upadiśati kāminīnāṃ yauvanamada eva lalitāni*
 [SĀH. D. 15,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?15,18) Schol. zu [KAP. 1,59.] med.: *upadeśaṃ mahāprājña śamasyopadiśasva me*
-[MBH. 12,6644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6644) = [≈Вульг. 12.180.37](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A180_S037) = ≈крит. 12,173.35a *upadekṣyamāṇa*
+[MBH. 12,6644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6644) = [≈Вульг. 12.180.37](mbh/12.180.html#v37) = ≈крит. 12,173.35a *upadekṣyamāṇa*
 [BHĀG. P. 5,19,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,10) anrathen, rathen zu: *sa kiṃ mantrī yaḥ prathamaṃ bhūmityāgaṃ yuddhodyogaṃ yuddhodyogaṃ vopadiśati*
 [HIT. 57,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,1)
 
@@ -47,9 +47,9 @@
 [PAÑCAT. I,427.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,427) *mitraṃ caivopadekṣyāmi bhavatoḥ*
 [R. 3,75,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,35) *kenedamupadiṣṭaṃ te mṛtyudvāramapāvṛtam*
 [43,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,40) [45,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,3) [2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,45,2) *upadiṣṭamihecchāmi tāpasyam*
-[MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) = [≈Вульг. 5.175.44](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S044) = ≈крит. 05,173.17a *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
+[MBH. 5,6019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6019) = [≈Вульг. 5.175.44](mbh/5.175.html#v44) = ≈крит. 05,173.17a *tasya — tvayāpratibhidya rahasyaṃ labdhavyo mokṣa ityupadiśya*
 [DAŚAK.] в [BENF. Chr. 199,22.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *uṣadekṣyāmi te śreyaḥ*
-[MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614) = [≈Вульг. 3.66.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S007) = ≈крит. 03,63.6c
+[MBH. 3,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2614) = [≈Вульг. 3.66.7](mbh/3.66.html#v7) = ≈крит. 03,63.6c
 [R. 1,24,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,11) —
 [ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3)
 [ĀŚV. ŚR. 10,7.] *gṛhyakarmāṇyupadekṣyāmaḥ*
@@ -58,7 +58,7 @@
 [ŚĀṄKH. GṚHY. 2,13.] *hitaṃ copadiśatsu*
 [M. 2,206.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,206) [4,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,80) [12,107.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,107)
 [BHAG. 4,34.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,34) *iṣvastraṃ mama — bhavataiva caturvidham . upādaṣṭam*
-[MBH. 5,7065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7065) = [≈Вульг. 5.178.38](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S038) = ≈крит. 05,178.15c
+[MBH. 5,7065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7065) = [≈Вульг. 5.178.38](mbh/5.178.html#v38) = ≈крит. 05,178.15c
 [ARJ. 8,8.]
 [R. 2,75,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,26) *yathopadiṣṭamṛṣiṇā jagatuḥ*
 [1,4,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,12) *āyurvedamupadiśyamānam*
@@ -68,7 +68,7 @@
 [MĀLAV. 5.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?5) *nāśiṣyāyopadiśyate*
 [PAÑCAT. I,430.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,430) [KATHĀS. 12,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,50) [17,121.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,121) [123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,123) [MĀRK. P. 21,66.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,66) [BHĀG. P. 5,13,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,24) [RĀJA-TAR. 4,719.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,719) *upadiśati kāminīnāṃ yauvanamada eva lalitāni*
 [SĀH. D. 15,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?15,18) схол. к [KAP. 1,59.] мед.: *upadeśaṃ mahāprājña śamasyopadiśasva me*
-[MBH. 12,6644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6644) = [≈Вульг. 12.180.37](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A180_S037) = ≈крит. 12,173.35a *upadekṣyamāṇa*
+[MBH. 12,6644.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6644) = [≈Вульг. 12.180.37](mbh/12.180.html#v37) = ≈крит. 12,173.35a *upadekṣyamāṇa*
 [BHĀG. P. 5,19,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,10) советовать, рекомендовать: *sa kiṃ mantrī yaḥ prathamaṃ bhūmityāgaṃ yuddhodyogaṃ yuddhodyogaṃ vopadiśati*
 [HIT. 57,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,1)
   <sub>attested</sub>
@@ -109,7 +109,7 @@
 **6)** — 6) festsetzen, vorschreiben: *brāhmaṇasyaiva karmaitadupadiṣṭam*
 [M. 2,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,190) *pāṇigrahaṇasaṃskāraḥ savarṇāsūpadiśyate*
 [3,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,43) *kṛtyāni — āgamairupadiṣṭāni*
-[MBH. 12,4373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4373) = [≈Вульг. 12.121.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A121_S012) = ≈крит. 12,121.11a *vrataṃ yathopadiṣṭaṃ vai yathāvatpāritaṃ tvayā*
+[MBH. 12,4373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4373) = [≈Вульг. 12.121.12](mbh/12.121.html#v12) = ≈крит. 12,121.11a *vrataṃ yathopadiṣṭaṃ vai yathāvatpāritaṃ tvayā*
 [SĀV. 4,16.] *upadiśyate rājayakṣmiṇām* (*ayaskṛtiḥ*)
 [SUŚR. 2,75,4.] *parasyopadiśanpathyamapathyāśīva rogahṛt*
 [RĀJA-TAR. 6,68.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,68) *vaidyopadiṣṭairabhyaṅgaiḥ*
@@ -120,7 +120,7 @@
 - **RU:** — 6) устанавливать, предписывать: *brāhmaṇasyaiva karmaitadupadiṣṭam*
 [M. 2,190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,190) *pāṇigrahaṇasaṃskāraḥ savarṇāsūpadiśyate*
 [3,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,43) *kṛtyāni — āgamairupadiṣṭāni*
-[MBH. 12,4373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4373) = [≈Вульг. 12.121.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A121_S012) = ≈крит. 12,121.11a *vrataṃ yathopadiṣṭaṃ vai yathāvatpāritaṃ tvayā*
+[MBH. 12,4373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4373) = [≈Вульг. 12.121.12](mbh/12.121.html#v12) = ≈крит. 12,121.11a *vrataṃ yathopadiṣṭaṃ vai yathāvatpāritaṃ tvayā*
 [SĀV. 4,16.] *upadiśyate rājayakṣmiṇām* (*ayaskṛtiḥ*)
 [SUŚR. 2,75,4.] *parasyopadiśanpathyamapathyāśīva rogahṛt*
 [RĀJA-TAR. 6,68.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,68) *vaidyopadiṣṭairabhyaṅgaiḥ*
@@ -139,13 +139,13 @@
 **8)** — 8) benennen, pass. heissen: *tasmādandhatāmimraṃ tamupadiśanti*
 [BHĀG. P. 5,26,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *niṣkāmaṃ jñānapūrvaṃ tu nivṛttamupadiśyate*
 [M. 12,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,89) *vyāna ityupadiśyate*
-[MBH. 12,6873.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6873) = [≈Вульг. 12.189.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A189_S010) = ≈крит. 03,203.40a [14,318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.318) = [≈Вульг. 14.12.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A012_S004) = ≈крит. 14,12.3e
+[MBH. 12,6873.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6873) = [≈Вульг. 12.189.10](mbh/12.189.html#v10) = ≈крит. 03,203.40a [14,318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.318) = [≈Вульг. 14.12.4](mbh/14.12.html#v4) = ≈крит. 14,12.3e
 [ŚRUT. 31.]
 
 - **RU:** — 8) именовать, pass. называться: *tasmādandhatāmimraṃ tamupadiśanti*
 [BHĀG. P. 5,26,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *niṣkāmaṃ jñānapūrvaṃ tu nivṛttamupadiśyate*
 [M. 12,89.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,89) *vyāna ityupadiśyate*
-[MBH. 12,6873.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6873) = [≈Вульг. 12.189.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A189_S010) = ≈крит. 03,203.40a [14,318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.318) = [≈Вульг. 14.12.4](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A012_S004) = ≈крит. 14,12.3e
+[MBH. 12,6873.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6873) = [≈Вульг. 12.189.10](mbh/12.189.html#v10) = ≈крит. 03,203.40a [14,318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.318) = [≈Вульг. 14.12.4](mbh/14.12.html#v4) = ≈крит. 14,12.3e
 [ŚRUT. 31.]
   <sub>attested</sub>
 

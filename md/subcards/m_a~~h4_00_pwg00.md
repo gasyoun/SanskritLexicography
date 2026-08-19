@@ -35,11 +35,11 @@
   <sub>attested</sub>
 
 **vertauschen)** — *ni* vertauschen gegen (instr.): *pakvenāmasya niyamaṃ na praśaṃsanti sādhavaḥ . nimayetpakvamāṃsena bhojanārthāya*
-[MBH. 12,2923. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2923) = [≈Вульг. 12.78.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A078_S007) = ≈крит. 12,79.7a *narapaśunā na nimīyate gajendraḥ*
+[MBH. 12,2923. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2923) = [≈Вульг. 12.78.7](mbh/12.78.html#v7) = ≈крит. 12,79.7a *narapaśunā na nimīyate gajendraḥ*
 [Spr. 870.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?870)
 
 - **RU:** — *ni* обменивать на (instr.): *pakvenāmasya niyamaṃ na praśaṃsanti sādhavaḥ . nimayetpakvamāṃsena bhojanārthāya*
-[MBH. 12,2923. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2923) = [≈Вульг. 12.78.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A078_S007) = ≈крит. 12,79.7a *narapaśunā na nimīyate gajendraḥ*
+[MBH. 12,2923. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2923) = [≈Вульг. 12.78.7](mbh/12.78.html#v7) = ≈крит. 12,79.7a *narapaśunā na nimīyate gajendraḥ*
 [Spr. 870.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?870)
   <sub>attested</sub>
 

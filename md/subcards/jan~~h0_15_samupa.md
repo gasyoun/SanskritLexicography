@@ -17,10 +17,10 @@
   <sub>attested</sub>
 
 **2)** — 2) wiedergeboren werden: *svarge samupajāyate*
-[MBH. 13,6722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6722) = [≈Вульг. 13.145.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A145_S040) = ≈крит. 13,133.40a — caus. erzeugen, verursachen: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
+[MBH. 13,6722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6722) = [≈Вульг. 13.145.40](mbh/13.145.html#v40) = ≈крит. 13,133.40a — caus. erzeugen, verursachen: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
 [ṚT. 2,28.]
 
 - **RU:** — 2) возрождаться, рождаться вновь: *svarge samupajāyate*
-[MBH. 13,6722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6722) = [≈Вульг. 13.145.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A145_S040) = ≈крит. 13,133.40a — caus. порождать, производить: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
+[MBH. 13,6722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6722) = [≈Вульг. 13.145.40](mbh/13.145.html#v40) = ≈крит. 13,133.40a — caus. порождать, производить: *atiśayaparuṣābhirgrīṣmavahneḥ śikhābhiḥ samupajanitatāpam — vindhyam*
 [ṚT. 2,28.]
   <sub>attested</sub>

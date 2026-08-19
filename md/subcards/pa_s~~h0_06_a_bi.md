@@ -10,7 +10,7 @@
 [R. GORR. 2,30,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,2) [4,2,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,2,16) [4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,19) [KATHĀS. 32,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,68) [45,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,142) *āturam*
 [SUŚR. 1,30,6.] *tasyābhipaśyataḥ* vor seinen Augen
 [BHĀG. P. 3,13,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,19) erblicken, gewahr werden: *udyānamabhipaśyantaḥ*
-[MBH. 1,5002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5002) = [≈Вульг. 1.128.39](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S039) = крит. —
+[MBH. 1,5002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5002) = [≈Вульг. 1.128.39](mbh/1.128.html#v39) = крит. —
 [R. GORR. 2,52,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,34) [74,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,74,1) (med.). [3,77,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,77,7) [5,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,38) [39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,39) *so 'hamasminsamārambhe sunītasya kalāmapi . vimṛśannābhipaśyāmi*
 [3,46,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,11) *bhūteṣu sarveṣvabhipaśyatāṃ* (gen. pl.) *tava* (st. *tvām!*)
 [BHĀG. P. 4,6,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,46) kennen
@@ -23,7 +23,7 @@
 [R. GORR. 2,30,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,30,2) [4,2,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,2,16) [4,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,4,19) [KATHĀS. 32,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,68) [45,142.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,142) *āturam*
 [SUŚR. 1,30,6.] *tasyābhipaśyataḥ* перед глазами
 [BHĀG. P. 3,13,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,19) узреть, заметить: *udyānamabhipaśyantaḥ*
-[MBH. 1,5002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5002) = [≈Вульг. 1.128.39](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S039) = крит. —
+[MBH. 1,5002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5002) = [≈Вульг. 1.128.39](mbh/1.128.html#v39) = крит. —
 [R. GORR. 2,52,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,34) [74,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,74,1) (мед.). [3,77,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,77,7) [5,31,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,38) [39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,39) *so 'hamasminsamārambhe sunītasya kalāmapi . vimṛśannābhipaśyāmi*
 [3,46,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,11) *bhūteṣu sarveṣvabhipaśyatāṃ* (gen. pl.) *tava* (вместо *tvām!*)
 [BHĀG. P. 4,6,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,46) знать

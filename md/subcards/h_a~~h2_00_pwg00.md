@@ -9,7 +9,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
 [H. an. 7,17.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,17) *viṣāde ca śoke ca*
 [MED. avy. 85.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,85) vor einem voc.: *hā kṛṣṇe kiṃ jahāsi mām*
-[MBH. 2,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2604) = [≈Вульг. 2.79.21](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S021) = крит. — [3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S003) = ≈крит. 03,60.3a [2384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2384) = [≈Вульг. 3.63.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S023) = ≈крит. 03,60.22a [2419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2419) = [≈Вульг. 3.64.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S019) = ≈крит. 03,61.18c
+[MBH. 2,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2604) = [≈Вульг. 2.79.21](mbh/2.79.html#v21) = крит. — [3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](mbh/3.63.html#v3) = ≈крит. 03,60.3a [2384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2384) = [≈Вульг. 3.63.23](mbh/3.63.html#v23) = ≈крит. 03,60.22a [2419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2419) = [≈Вульг. 3.64.19](mbh/3.64.html#v19) = ≈крит. 03,61.18c
 [R. 2,40,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,37) [42,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,30) [57,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,11) [64,70. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,70) [66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18)
 [R. GORR. 2,10,20. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,10,20) [83,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,83,42) [3,50,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,22) [51,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,25) [55,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,35) [79,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,46) [4,5,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,15) [6,23,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,23,2)
 [MṚCCH. 130,22.]
@@ -19,9 +19,9 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 [SIDDH. K.] zu [P. 2,3,2.](https://ashtadhyayi.com/sutraani/2/3/2) [VOP. 5,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,7) *hā karṇamiti* (*karṇa iti* [ed. Bomb.])
 
 *cākrandan*
-[MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) = [≈Вульг. 7.1.46](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S046) = ≈крит. 07,1.43a *hā janma nṛpayoṣitām*
+[MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) = [≈Вульг. 7.1.46](mbh/7.1.html#v46) = ≈крит. 07,1.43a *hā janma nṛpayoṣitām*
 [Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826 "Spr. (II) 6826: sapatnīnāṃ śate vāsaḥ putrasyāpi na darśanam | bālyakāle 'pi na svecchā hā janma nṛpayeṣitām || — Unter hundert Nebenbuhlerinnen zu leben, nicht einmal einen Sohn zu Gesicht zu bekommen und nicht einmal im Kindesalter einen freien Willen zu haben: Wehe rufe ich über die Geburt der Weiber eines Fürsten!") *hā hatāsmi*
-[MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S003) = ≈крит. 03,60.3a
+[MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](mbh/3.63.html#v3) = ≈крит. 03,60.3a
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15)
 [PAÑCAT. 135,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,1)
 [HIT. 18,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,12) *hā gatiṃ kāṃ gamiṣyāmi*
@@ -39,7 +39,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) des Schmerzes und des S
 [VIKR. 61,7.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?61,7) *huṃ* (*uṃ* die neuere Ausg.) *hā*
 [HARIV. 9709.](https://sanskrit-lexicon-scans.github.io/hariv?9709) *hā hā* gaṇa *cādi*
 zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
-[MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) = [≈Вульг. 3.54.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A054_S004) = ≈крит. 03,51.3c [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219) = [≈Вульг. 3.57.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A057_S028) = ≈крит. 03,54.26e
+[MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) = [≈Вульг. 3.54.4](mbh/3.54.html#v4) = ≈крит. 03,51.3c [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219) = [≈Вульг. 3.57.28](mbh/3.57.html#v28) = ≈крит. 03,54.26e
 [R. 2,63,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,23)
 [Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989 "Spr. (II) 1989: kvacidvīṇānādaḥ kvacidapi ca hā heti ruditaṃ kvacidvidvadgoṣṭhī kvacidapi surāmattakalahaḥ | kvacidramyā rāmā kvacidapi jarājarjaratanu- rna jāne saṃs… — (3991.) Hier der Klang einer Laute und dort Wehgeschrei, hier eine Unterhaltung Gelehrter und dort ein Zank Betrunkener, hier eine reizende Schöne und dort ein vom Alter gebrochener Körper: ich weiss nicht, ob das Dasein…") *hā hā tathāpi viṣayānna jahāti cetaḥ*
 [4584.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4584) *hā hā naśyati*
@@ -50,14 +50,14 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [Z. d. d. m. G. 27,19.] *hā heti cakre*
 [14,573,25.] *hāhāśabda* ebend. *˚rava*
 [KATHĀS. 56,127.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,127) vor einem voc.
-[MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380) = [≈Вульг. 3.63.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S019) = ≈крит. 03,60.18c
+[MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380) = [≈Вульг. 3.63.19](mbh/3.63.html#v19) = ≈крит. 03,60.18c
 [R. 2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19)
 [MṚCCH. 130,21.]
 [Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389 "Spr. (II) 7389: hā hā putraka nāghīta sugataitāsu rātriṣu | tena tvaṃ viduṣāṃ madhye paṅke gauriva sīdasi || — (3351.) He, he mein Söhnchen, der du Nichts gelernt, es dir aber hast wohl gehen lassen in diesen Nächten! Deshalb weisst du unter Gelehrten dir nicht zu helfen, wie eine Kuh im Sumpf.") *hā hā muṣṭo 'smi*
 [PAÑCAT. 35,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,10) *hā hāhaṃ patitāsmi*
 [KATHĀS. 12,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,182)
 [MṚCCH. 84,2.] *hā hā dhik*
-[MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) = [≈Вульг. 14.80.25](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S025) = ≈крит. 14,80.7c *hā hā kaṣṭam*
+[MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) = [≈Вульг. 14.80.25](mbh/14.80.html#v25) = ≈крит. 14,80.7c *hā hā kaṣṭam*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* die neuere Ausg.) *hā heti vādinau* als Ausdruck des Behagens
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
 
@@ -67,7 +67,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [TRIK. 3,3,465.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,465) *sukhaduḥkhaviṣādeṣu*
 [H. an. 7,17.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?7,17) *viṣāde ca śoke ca*
 [MED. avy. 85.](https://sanskrit-lexicon-scans.github.io/medini/app1?avy,85) перед voc.: *hā kṛṣṇe kiṃ jahāsi mām*
-[MBH. 2,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2604) = [≈Вульг. 2.79.21](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S021) = крит. — [3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S003) = ≈крит. 03,60.3a [2384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2384) = [≈Вульг. 3.63.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S023) = ≈крит. 03,60.22a [2419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2419) = [≈Вульг. 3.64.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S019) = ≈крит. 03,61.18c
+[MBH. 2,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2604) = [≈Вульг. 2.79.21](mbh/2.79.html#v21) = крит. — [3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](mbh/3.63.html#v3) = ≈крит. 03,60.3a [2384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2384) = [≈Вульг. 3.63.23](mbh/3.63.html#v23) = ≈крит. 03,60.22a [2419.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2419) = [≈Вульг. 3.64.19](mbh/3.64.html#v19) = ≈крит. 03,61.18c
 [R. 2,40,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,37) [42,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,30) [57,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,57,11) [64,70. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,70) [66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18)
 [R. GORR. 2,10,20. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,10,20) [83,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,83,42) [3,50,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,22) [51,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,25) [55,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,35) [79,46.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,46) [4,5,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,15) [6,23,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,23,2)
 [MṚCCH. 130,22.]
@@ -77,9 +77,9 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [SIDDH. K.] к [P. 2,3,2.](https://ashtadhyayi.com/sutraani/2/3/2) [VOP. 5,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,7) *hā karṇamiti* (*karṇa iti* [Бомбейская ред.])
 
 *cākrandan*
-[MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) = [≈Вульг. 7.1.46](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S046) = ≈крит. 07,1.43a *hā janma nṛpayoṣitām*
+[MBH. 7,44.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.44) = [≈Вульг. 7.1.46](mbh/7.1.html#v46) = ≈крит. 07,1.43a *hā janma nṛpayoṣitām*
 [Spr. (II) 6826.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6826 "Spr. (II) 6826: sapatnīnāṃ śate vāsaḥ putrasyāpi na darśanam | bālyakāle 'pi na svecchā hā janma nṛpayeṣitām || — Unter hundert Nebenbuhlerinnen zu leben, nicht einmal einen Sohn zu Gesicht zu bekommen und nicht einmal im Kindesalter einen freien Willen zu haben: Wehe rufe ich über die Geburt der Weiber eines Fürsten!") *hā hatāsmi*
-[MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S003) = ≈крит. 03,60.3a
+[MBH. 3,2364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2364) = [≈Вульг. 3.63.3](mbh/3.63.html#v3) = ≈крит. 03,60.3a
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15)
 [PAÑCAT. 135,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,1)
 [HIT. 18,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?18,12) *hā gatiṃ kāṃ gamiṣyāmi*
@@ -97,7 +97,7 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [VIKR. 61,7.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?61,7) *huṃ* (*uṃ* более новое изд.) *hā*
 [HARIV. 9709.](https://sanskrit-lexicon-scans.github.io/hariv?9709) *hā hā* гана *cādi*
 к [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
-[MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) = [≈Вульг. 3.54.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A054_S004) = ≈крит. 03,51.3c [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219) = [≈Вульг. 3.57.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A057_S028) = ≈крит. 03,54.26e
+[MBH. 3,2107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2107) = [≈Вульг. 3.54.4](mbh/3.54.html#v4) = ≈крит. 03,51.3c [2219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2219) = [≈Вульг. 3.57.28](mbh/3.57.html#v28) = ≈крит. 03,54.26e
 [R. 2,63,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,23)
 [Spr. (II) 1989.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1989 "Spr. (II) 1989: kvacidvīṇānādaḥ kvacidapi ca hā heti ruditaṃ kvacidvidvadgoṣṭhī kvacidapi surāmattakalahaḥ | kvacidramyā rāmā kvacidapi jarājarjaratanu- rna jāne saṃs… — (3991.) Hier der Klang einer Laute und dort Wehgeschrei, hier eine Unterhaltung Gelehrter und dort ein Zank Betrunkener, hier eine reizende Schöne und dort ein vom Alter gebrochener Körper: ich weiss nicht, ob das Dasein…") *hā hā tathāpi viṣayānna jahāti cetaḥ*
 [4584.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4584) *hā hā naśyati*
@@ -108,14 +108,14 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) *hā heti rudatī*
 [Z. d. d. m. G. 27,19.] *hā heti cakre*
 [14,573,25.] *hāhāśabda* там же *˚rava*
 [KATHĀS. 56,127.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,127) перед voc.
-[MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380) = [≈Вульг. 3.63.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S019) = ≈крит. 03,60.18c
+[MBH. 3,2380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2380) = [≈Вульг. 3.63.19](mbh/3.63.html#v19) = ≈крит. 03,60.18c
 [R. 2,34,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,19)
 [MṚCCH. 130,21.]
 [Spr. (II) 7389.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7389 "Spr. (II) 7389: hā hā putraka nāghīta sugataitāsu rātriṣu | tena tvaṃ viduṣāṃ madhye paṅke gauriva sīdasi || — (3351.) He, he mein Söhnchen, der du Nichts gelernt, es dir aber hast wohl gehen lassen in diesen Nächten! Deshalb weisst du unter Gelehrten dir nicht zu helfen, wie eine Kuh im Sumpf.") *hā hā muṣṭo 'smi*
 [PAÑCAT. 35,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,10) *hā hāhaṃ patitāsmi*
 [KATHĀS. 12,182.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,182)
 [MṚCCH. 84,2.] *hā hā dhik*
-[MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) = [≈Вульг. 14.80.25](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A080_S025) = ≈крит. 14,80.7c *hā hā kaṣṭam*
+[MBH. 14,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2365) = [≈Вульг. 14.80.25](mbh/14.80.html#v25) = ≈крит. 14,80.7c *hā hā kaṣṭam*
 [KATHĀS. 15,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,33) *hī hī* (*hā hā* более новое изд.) *hā heti vādinau* как выражение удовольствия
 [HARIV. 14578.](https://sanskrit-lexicon-scans.github.io/hariv?14578)
   <sub>attested</sub>

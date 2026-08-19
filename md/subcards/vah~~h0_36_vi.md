@@ -7,13 +7,13 @@
  1) entführen
 [ṚV. 4,27,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.03) *harī yamasya vahato vi sūribhiḥ*
 [10,23,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.023.html#rv10.023.03) wegspülen, wegschwemmen: *lohitāpagā . gajāśvanaradehānsā vyuvāha patitānbahūn*
-[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379) = [≈Вульг. 8.49.81](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A049_S081) = ≈крит. 08,33.60c
+[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379) = [≈Вульг. 8.49.81](mbh/8.49.html#v81) = ≈крит. 08,33.60c
 
 - **RU:** — *vi*
  1) уводить, похищать
 [ṚV. 4,27,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.03) *harī yamasya vahato vi sūribhiḥ*
 [10,23,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.023.html#rv10.023.03) смывать, уносить (потоком): *lohitāpagā . gajāśvanaradehānsā vyuvāha patitānbahūn*
-[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379) = [≈Вульг. 8.49.81](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A049_S081) = ≈крит. 08,33.60c
+[MBH. 8,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2379) = [≈Вульг. 8.49.81](mbh/8.49.html#v81) = ≈крит. 08,33.60c
   <sub>attested</sub>
 
 **2) Act.)** — 2) wegführen (die Braut aus dem Elternhause)
@@ -46,14 +46,14 @@
   <sub>attested</sub>
 
 **Caus-1))** 1) verheirathen (ein Mädchen)
-[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S018) = ≈крит. 06,114.17c
+[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](mbh/6.119.html#v18) = ≈крит. 06,114.17c
 [Spr. 2908.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2908)
 [MĀRK. P. 51,104.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,104) [134,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,34) *gāndharvavivāhenātmānaṃ vivāhayitvā*
 [PAÑCAT. 129,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,9) *tenāndhena saha vivāhitā*
 [262,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?262,3)
 
 - **RU:** 1) выдавать замуж (девушку)
-[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S018) = ≈крит. 06,114.17c
+[MBH. 6,5601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5601) = [≈Вульг. 6.119.18](mbh/6.119.html#v18) = ≈крит. 06,114.17c
 [Spr. 2908.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2908)
 [MĀRK. P. 51,104.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,104) [134,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,34) *gāndharvavivāhenātmānaṃ vivāhayitvā*
 [PAÑCAT. 129,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?129,9) *tenāndhena saha vivāhitā*

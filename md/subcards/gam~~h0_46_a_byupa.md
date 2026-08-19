@@ -8,11 +8,11 @@
 [PAÑCAT. 189,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?189,24) *abhyupagata*
 
 [SUŚR. 1,7,12.] *gurūnabhyupagacchati*
-[MBH. 1,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4847) = [≈Вульг. 1.124.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A124_S014) = ≈крит. 01,115.14c *asmānihāgatāneṣa niṣkramyābhyupagacchati*
+[MBH. 1,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4847) = [≈Вульг. 1.124.14](mbh/1.124.html#v14) = ≈крит. 01,115.14c *asmānihāgatāneṣa niṣkramyābhyupagacchati*
 [R. 3,18,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,24) *(bhartari) paralokamabhyupagate*
 [ŚIŚ. 9,13.] Jmd zu Hülfe kommen: *vayamabhyupagacchāmaḥ kṛṣṇeṇa tvāṃ pradharṣitam*
 [HARIV. 2095.](https://sanskrit-lexicon-scans.github.io/hariv?2095) zu Etwas schreiten: *tasmādabhyupagantavyaṃ yuddhāya*
-[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) = [≈Вульг. 14.12.13](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A012_S013) = ≈крит. 14,12.11e zu einem Zeitpunkt gelangen: *āṣāḍhīmabhyupagato bharataḥ*
+[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) = [≈Вульг. 14.12.13](mbh/14.12.html#v13) = ≈крит. 14,12.11e zu einem Zeitpunkt gelangen: *āṣāḍhīmabhyupagato bharataḥ*
 [R. 4,27,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,11) erlangen, erreichen: *atrābhyupagataḥ — vaidehyā iva darśanam*
 [5,67,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,67,10)
 
@@ -21,18 +21,18 @@
 [PAÑCAT. 189,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?189,24) *abhyupagata*
 
 [SUŚR. 1,7,12.] *gurūnabhyupagacchati*
-[MBH. 1,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4847) = [≈Вульг. 1.124.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A124_S014) = ≈крит. 01,115.14c *asmānihāgatāneṣa niṣkramyābhyupagacchati*
+[MBH. 1,4847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4847) = [≈Вульг. 1.124.14](mbh/1.124.html#v14) = ≈крит. 01,115.14c *asmānihāgatāneṣa niṣkramyābhyupagacchati*
 [R. 3,18,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,24) *(bhartari) paralokamabhyupagate*
 [ŚIŚ. 9,13.] прийти кому-л. на помощь: *vayamabhyupagacchāmaḥ kṛṣṇeṇa tvāṃ pradharṣitam*
 [HARIV. 2095.](https://sanskrit-lexicon-scans.github.io/hariv?2095) приступить к чему-л.: *tasmādabhyupagantavyaṃ yuddhāya*
-[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) = [≈Вульг. 14.12.13](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A012_S013) = ≈крит. 14,12.11e достичь определенного момента: *āṣāḍhīmabhyupagato bharataḥ*
+[MBH. 14,327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.327) = [≈Вульг. 14.12.13](mbh/14.12.html#v13) = ≈крит. 14,12.11e достичь определенного момента: *āṣāḍhīmabhyupagato bharataḥ*
 [R. 4,27,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,11) добыть, достигнуть: *atrābhyupagataḥ — vaidehyā iva darśanam*
 [5,67,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,67,10)
   <sub>attested</sub>
 
 **2)** — 2) sich für Etwas erklären, zugestehen, zugeben, einwilligen: *na tu dhanadāyāsāvabhyupagacchati*
 [DAŚAK. 79,8.] *priyābhyupagate dyūte*
-[MBH. 5,4239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4239) = [≈Вульг. 5.128.43](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A128_S043) = ≈крит. 05,126.42a *taccāvaśyamabhyupagantavyam*
+[MBH. 5,4239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4239) = [≈Вульг. 5.128.43](mbh/5.128.html#v43) = ≈крит. 05,126.42a *taccāvaśyamabhyupagantavyam*
 [KĀŚ.] zu [P. 1,2,55.](https://ashtadhyayi.com/sutraani/1/2/55) *svābhyupagatasyāvidyānṛtatvasya*
 Sch. zu [KAP. 1,21.] *abhyupagataṃ tāvadasmābhirevam*
 [ŚĀK. 69,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,22) *tathā ca tenābhyupagate*
@@ -41,7 +41,7 @@ u. s. w. [H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
 
 - **RU:** — 2) высказаться за что-л., признать, допустить, согласиться: *na tu dhanadāyāsāvabhyupagacchati*
 [DAŚAK. 79,8.] *priyābhyupagate dyūte*
-[MBH. 5,4239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4239) = [≈Вульг. 5.128.43](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A128_S043) = ≈крит. 05,126.42a *taccāvaśyamabhyupagantavyam*
+[MBH. 5,4239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4239) = [≈Вульг. 5.128.43](mbh/5.128.html#v43) = ≈крит. 05,126.42a *taccāvaśyamabhyupagantavyam*
 [KĀŚ.] к [P. 1,2,55.](https://ashtadhyayi.com/sutraani/1/2/55) *svābhyupagatasyāvidyānṛtatvasya*
 схол. к [KAP. 1,21.] *abhyupagataṃ tāvadasmābhirevam*
 [ŚĀK. 69,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,22) *tathā ca tenābhyupagate*

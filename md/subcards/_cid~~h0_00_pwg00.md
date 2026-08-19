@@ -46,13 +46,13 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [M. 4,69.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,69)
 [BHĀG. P. 6,18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,46) *na cchindyātkarajaistṛṇam*
 [M. 4,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,70) *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
-[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827) = [≈Вульг. 3.208.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A208_S010) = ≈крит. 03,199.8c
+[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827) = [≈Вульг. 3.208.10](mbh/3.208.html#v10) = ≈крит. 03,199.8c
 [R. 2,80,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,6)
 [PAÑCAT. III,260.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,260) *chinnadruma*
 [HIT. 34,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?34,21) *chinnamūlā iva drumāḥ*
 [R. 3,26,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,24) *chittvā jaṭām*
 [1,1,86.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,86) *acchindannuttamāṅgāni*
-[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) = [≈Вульг. 3.170.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A170_S027) = ≈крит. 03,167.26a *śirāṃsyapi sa cicchide*
+[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) = [≈Вульг. 3.170.27](mbh/3.170.html#v27) = ≈крит. 03,167.26a *śirāṃsyapi sa cicchide*
 [HARIV. 8867.](https://sanskrit-lexicon-scans.github.io/hariv?8867) *teṣāṃ chittvā nṛpo hastau*
 [M. 9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276)
 [R. 1,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,16) [3,75,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,33) *jihvām*
@@ -65,14 +65,14 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [ŚVETĀŚV. UP. 4,15.]
 [PAÑCAT. II,86.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,86) [108,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?108,10) [HIT. 15,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,9) [43,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,17) [VET. 5,7.] *snehapāśamimaṃ chindhi*
 [BHĀG. P. 1,8,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,41) *śūlaṃ mūle sa cicchide*
-[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) = [≈Вульг. 1.108.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A108_S006) = ≈крит. 01,101.20a *nainaṃ chindanti śastrāṇi*
+[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) = [≈Вульг. 1.108.6](mbh/1.108.html#v6) = ≈крит. 01,101.20a *nainaṃ chindanti śastrāṇi*
 [BHAG. 2,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,23) *dhanurasyāśu cicchide*
-[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) = [≈Вульг. 8.61.55](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A061_S055) = ≈крит. 08,44.50a *(tānāśugaiḥ) dvidhā tridhā cācchinam*
-[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) = [≈Вульг. 3.21.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A021_S001) = ≈крит. 03,22.1c *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
+[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) = [≈Вульг. 8.61.55](mbh/8.61.html#v55) = ≈крит. 08,44.50a *(tānāśugaiḥ) dvidhā tridhā cācchinam*
+[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) = [≈Вульг. 3.21.1](mbh/3.21.html#v1) = ≈крит. 03,22.1c *khaḍgān* u. s. w. *śatadhā taiḥ — ahamacchidam*
 [ARJ. 7,21.]
 [R. 1,46,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,23) *anyo'nyaṃ chindatāṃ śastraiḥ*
-[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) = [≈Вульг. 1.19.16](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S016) = ≈крит. 01,17.15a *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
-[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) = [≈Вульг. 6.119.8](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S008) = ≈крит. 06,114.7c [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
+[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) = [≈Вульг. 1.19.16](mbh/1.19.html#v16) = ≈крит. 01,17.15a *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
+[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) = [≈Вульг. 6.119.8](mbh/6.119.html#v8) = ≈крит. 06,114.7c [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
 [R. 3,32,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,30) *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
 [MBH. 12,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3571) *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
 [SUŚR. 1,301,11.] *chinnaṃ rohati cāsinā*
@@ -104,13 +104,13 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [M. 4,69.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,69)
 [BHĀG. P. 6,18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,46) *na cchindyātkarajaistṛṇam*
 [M. 4,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,70) *vṛkṣāṃstathauṣadhīṃścāpi cchindanti*
-[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827) = [≈Вульг. 3.208.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A208_S010) = ≈крит. 03,199.8c
+[MBH. 3,13827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13827) = [≈Вульг. 3.208.10](mbh/3.208.html#v10) = ≈крит. 03,199.8c
 [R. 2,80,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,80,6)
 [PAÑCAT. III,260.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,260) *chinnadruma*
 [HIT. 34,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?34,21) *chinnamūlā iva drumāḥ*
 [R. 3,26,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,26,24) *chittvā jaṭām*
 [1,1,86.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,86) *acchindannuttamāṅgāni*
-[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) = [≈Вульг. 3.170.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A170_S027) = ≈крит. 03,167.26a *śirāṃsyapi sa cicchide*
+[MBH. 3,12163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12163) = [≈Вульг. 3.170.27](mbh/3.170.html#v27) = ≈крит. 03,167.26a *śirāṃsyapi sa cicchide*
 [HARIV. 8867.](https://sanskrit-lexicon-scans.github.io/hariv?8867) *teṣāṃ chittvā nṛpo hastau*
 [M. 9,276.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,276)
 [R. 1,28,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,16) [3,75,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,33) *jihvām*
@@ -123,14 +123,14 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [ŚVETĀŚV. UP. 4,15.]
 [PAÑCAT. II,86.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,86) [108,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?108,10) [HIT. 15,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?15,9) [43,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?43,17) [VET. 5,7.] *snehapāśamimaṃ chindhi*
 [BHĀG. P. 1,8,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,8,41) *śūlaṃ mūle sa cicchide*
-[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) = [≈Вульг. 1.108.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A108_S006) = ≈крит. 01,101.20a *nainaṃ chindanti śastrāṇi*
+[MBH. 1,4327.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4327) = [≈Вульг. 1.108.6](mbh/1.108.html#v6) = ≈крит. 01,101.20a *nainaṃ chindanti śastrāṇi*
 [BHAG. 2,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,23) *dhanurasyāśu cicchide*
-[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) = [≈Вульг. 8.61.55](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A061_S055) = ≈крит. 08,44.50a *(tānāśugaiḥ) dvidhā tridhā cācchinam*
-[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) = [≈Вульг. 3.21.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A021_S001) = ≈крит. 03,22.1c *khaḍgān* и т.д. *śatadhā taiḥ — ahamacchidam*
+[MBH. 8,3121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3121) = [≈Вульг. 8.61.55](mbh/8.61.html#v55) = ≈крит. 08,44.50a *(tānāśugaiḥ) dvidhā tridhā cācchinam*
+[3,820.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.820) = [≈Вульг. 3.21.1](mbh/3.21.html#v1) = ≈крит. 03,22.1c *khaḍgān* и т.д. *śatadhā taiḥ — ahamacchidam*
 [ARJ. 7,21.]
 [R. 1,46,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,23) *anyo'nyaṃ chindatāṃ śastraiḥ*
-[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) = [≈Вульг. 1.19.16](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S016) = ≈крит. 01,17.15a *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
-[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) = [≈Вульг. 6.119.8](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S008) = ≈крит. 06,114.7c [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
+[MBH. 1,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1173) = [≈Вульг. 1.19.16](mbh/1.19.html#v16) = ≈крит. 01,17.15a *sārathiṃ daśabhiścāsya dhvajaṃ caikena cicchide*
+[6,5591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5591) = [≈Вульг. 6.119.8](mbh/6.119.html#v8) = ≈крит. 06,114.7c [HARIV. 6857.](https://sanskrit-lexicon-scans.github.io/hariv?6857) [BHĀG. P. 6,10,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,15) *te chinnavarmāvaraṇāśchinnabhinnāḥ śarāhatāḥ*
 [R. 3,32,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,30) *nāmitro vinikarttavyo nāticchedyaḥ kathaṃ ca na . jīvitaṃ hyapyaticchinnaḥ saṃtyajecca kadācana ..*
 [MBH. 12,3571.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3571) *anyatara pārśvāvaśiṣṭaṃ (asthi) chinnam*
 [SUŚR. 1,301,11.] *chinnaṃ rohati cāsinā*
@@ -178,12 +178,12 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
   <sub>attested</sub>
 
 **4)** — 4) vernichten, zu Grunde richten, zerstören, entfernen: *bāhūnivataunmā cchetsīḥ* (lies *chai˚*)
-[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) = [≈Вульг. 2.54.9](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A054_S009) = крит. — *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
+[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) = [≈Вульг. 2.54.9](mbh/2.54.html#v9) = крит. — *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
 [R. 3,70,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,20) *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
 [RAGH. 12,96.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,96) *pratiṣṭhām*
 [ŚAT. BR. 10,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,5) *chidyante sarvasaṃśayāḥ*
 [MUṆḌ. UP. 2,2,8.] *etaṃ me saṃśayaṃ sarvaṃ chettumarhati*
-[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) = [≈Вульг. 1.179.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A179_S007) = ≈крит. 01,170.7a *saṃdehaṃ me — tattvataśchettumarhasi*
+[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) = [≈Вульг. 1.179.7](mbh/1.179.html#v7) = ≈крит. 01,170.7a *saṃdehaṃ me — tattvataśchettumarhasi*
 [3,4030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4030) *geharatiṃ chinatti*
 [BHĀG. P. 3,5,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,11) *chindyādasaṅgaśastreṇa spṛhām*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*
@@ -195,12 +195,12 @@ Sch.; *ciccheda* und *cicchide, cicchidvaṃs*
 [RĀJA-TAR. 6,16.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,16)
 
 - **RU:** 4) уничтожать, погублять, разрушать, устранять: *bāhūnivataunmā cchetsīḥ* (lege *chai˚*)
-[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) = [≈Вульг. 2.54.9](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A054_S009) = крит. — *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
+[MBH. 2,1942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1942) = [≈Вульг. 2.54.9](mbh/2.54.html#v9) = крит. — *tataśchetsyati nārācairjagatsarvaṃ sarākṣasam*
 [R. 3,70,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,20) *(śataghnīm) āśāṃ ca suradviṣāṃ — vāṇaiściccheda*
 [RAGH. 12,96.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,96) *pratiṣṭhām*
 [ŚAT. BR. 10,5,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,5,2,5) *chidyante sarvasaṃśayāḥ*
 [MUṆḌ. UP. 2,2,8.] *etaṃ me saṃśayaṃ sarvaṃ chettumarhati*
-[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) = [≈Вульг. 1.179.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A179_S007) = ≈крит. 01,170.7a *saṃdehaṃ me — tattvataśchettumarhasi*
+[MBH. 1,6890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6890) = [≈Вульг. 1.179.7](mbh/1.179.html#v7) = ≈крит. 01,170.7a *saṃdehaṃ me — tattvataśchettumarhasi*
 [3,4030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4030) *geharatiṃ chinatti*
 [BHĀG. P. 3,5,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,11) *chindyādasaṅgaśastreṇa spṛhām*
 [2,1,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,15) *kriyāṃ nīlapurāṇoktāmacchindannāgamadviṣaḥ*

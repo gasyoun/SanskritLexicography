@@ -5,20 +5,20 @@
 
 **1)** *ji*
  1) *jitvā saṃgrāmān*
-[MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) = [≈Вульг. 12.25.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A025_S034) = ≈крит. 12,25.32c Z. 4 lies 3,34,4 st. 8,34,4.
+[MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) = [≈Вульг. 12.25.34](mbh/12.25.html#v34) = ≈крит. 12,25.32c Z. 4 lies 3,34,4 st. 8,34,4.
 
 - **RU:** *ji*
  1) *jitvā saṃgrāmān*
-[MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) = [≈Вульг. 12.25.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A025_S034) = ≈крит. 12,25.32c стк. 4 читай 3,34,4 вместо 8,34,4.
+[MBH. 12,765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.765) = [≈Вульг. 12.25.34](mbh/12.25.html#v34) = ≈крит. 12,25.32c стк. 4 читай 3,34,4 вместо 8,34,4.
   <sub>attested</sub>
 
 **2)** — 2) *yathā pipāsāṃ jayate (jayati* [ed. Bomb.]) *puruṣaḥ prāpya vai jalam* so v. a. den Durst stillen
-[MBH. 13,7606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7606) = [≈Вульг. 13.163.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A163_S011) = ≈крит. 12,171.1a [Sp. 96, Z. 11] *jitaśrama* an Anstrengungen gewöhnt auch
+[MBH. 13,7606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7606) = [≈Вульг. 13.163.11](mbh/13.163.html#v11) = ≈крит. 12,171.1a [Sp. 96, Z. 11] *jitaśrama* an Anstrengungen gewöhnt auch
 [Spr. 5352.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5352) [Z. 12] *jitākṣara* wer die Schrift in seiner Gewalt hat; vgl.
 [Spr. 3090.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3090)
 
 - **RU:** — 2) *yathā pipāsāṃ jayate (jayati* [Бомбейская ред.]) *puruṣaḥ prāpya vai jalam* так преим. утолить жажду
-[MBH. 13,7606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7606) = [≈Вульг. 13.163.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A163_S011) = ≈крит. 12,171.1a [Sp. 96, Z. 11] *jitaśrama* привыкший к усилиям, тяготам, также
+[MBH. 13,7606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7606) = [≈Вульг. 13.163.11](mbh/13.163.html#v11) = ≈крит. 12,171.1a [Sp. 96, Z. 11] *jitaśrama* привыкший к усилиям, тяготам, также
 [Spr. 5352.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5352) [Z. 12] *jitākṣara* тот, кто владеет Писанием (свят. текстом); ср.
 [Spr. 3090.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3090)
   <sub>attested</sub>

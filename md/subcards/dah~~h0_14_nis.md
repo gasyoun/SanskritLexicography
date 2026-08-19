@@ -13,20 +13,20 @@
 [12,4,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,3,4) — [KAUŚ. 90. 131.] *yathaidhastejasā vahniḥ prāptaṃ nirdahati kṣaṇāt*
 [M. 11,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,246) *(agnivarṇayā surayā) kāye nirdagdhe*
 [90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,90) [BHĀG. P. 5,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [6,4,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,6) *na coṣarāṃ na nirdagdhāṃ mahīṃ dadyāt*
-[MBH. 13,3341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3341) = [≈Вульг. 13.66.33](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A066_S033) = ≈крит. 13,65.31c *dhūmanirdagdhakūrca*
+[MBH. 13,3341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3341) = [≈Вульг. 13.66.33](mbh/13.66.html#v33) = ≈крит. 13,65.31c *dhūmanirdagdhakūrca*
 [RĀJA-TAR. 5,461.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,461) *nirdaheta ca yatkṛtsnaṃ trailokyam*
-[MBH. 13,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.856) = [≈Вульг. 13.14.265](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S265) = ≈крит. 13,14.131c *kālāgnimiva bībhatsuṃ nirdahantamiva prajāḥ*
-[4,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1702) = [≈Вульг. 4.55.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A055_S006) = крит. — [1,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.241) = [≈Вульг. 1.2.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S012) = ≈крит. 01,2.8a *bhittvā hṛdi śarāḥ pañca nirdahantīva me tanum*
+[MBH. 13,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.856) = [≈Вульг. 13.14.265](mbh/13.14.html#v265) = ≈крит. 13,14.131c *kālāgnimiva bībhatsuṃ nirdahantamiva prajāḥ*
+[4,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1702) = [≈Вульг. 4.55.6](mbh/4.55.html#v6) = крит. — [1,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.241) = [≈Вульг. 1.2.12](mbh/1.2.html#v12) = ≈крит. 01,2.8a *bhittvā hṛdi śarāḥ pañca nirdahantīva me tanum*
 [HARIV. 4607.](https://sanskrit-lexicon-scans.github.io/hariv?4607)
 [R. 1,54,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,22) [55,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,21) [2,61,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,21)
-[MBH. 4,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1162) = [≈Вульг. 4.35.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A035_S015) = ≈крит. 04,33.15c *nāhaṃ janaṃ nirdaheyaṃ dṛṣṭvā ghoreṇa cakṣuṣā*
-[2,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2631) = [≈Вульг. 2.80.12](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A080_S012) = ≈крит. 02,71.11a [DAŚAK.] in [BENF. Chr. 186,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *vaidehīṃ rāvaṇaḥ kruddho nirdahanniva rākṣasaḥ*
+[MBH. 4,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1162) = [≈Вульг. 4.35.15](mbh/4.35.html#v15) = ≈крит. 04,33.15c *nāhaṃ janaṃ nirdaheyaṃ dṛṣṭvā ghoreṇa cakṣuṣā*
+[2,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2631) = [≈Вульг. 2.80.12](mbh/2.80.html#v12) = ≈крит. 02,71.11a [DAŚAK.] in [BENF. Chr. 186,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *vaidehīṃ rāvaṇaḥ kruddho nirdahanniva rākṣasaḥ*
 [R. 3,55,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,26) [5,33,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,37)
 [PRAB. 82,10.]
 [VID. 145.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?145) *(yasya cittam) na nirdahati kopakṛtānuśayaḥ*
 [BHARTṚ. 2,76.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,76) *etattrayaṃ hi puruṣaṃ nirdahedavamāninam*
 [M. 4,136.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,136) *(devāḥ) avajñātāvadhūtāśca nirdahantyadhamānnarān*
-[MBH. 13,4713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4713) = [≈Вульг. 13.98.37](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A098_S037) = ≈крит. 13,101.36c
+[MBH. 13,4713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4713) = [≈Вульг. 13.98.37](mbh/13.98.html#v37) = ≈крит. 13,101.36c
 [R. 1,55,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,6) *durhṛdaḥ sādhu nirdahan . suhṛdastarpayankāmaiḥ*
 [2,106,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,26) *(enaḥ) tatsarvaṃ nirdahantāśu tapasaiva tapodhanāḥ*
 [M. 11,241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,241)
@@ -43,20 +43,20 @@
 [12,4,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,3,4) — [KAUŚ. 90. 131.] *yathaidhastejasā vahniḥ prāptaṃ nirdahati kṣaṇāt*
 [M. 11,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,246) *(agnivarṇayā surayā) kāye nirdagdhe*
 [90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,90) [BHĀG. P. 5,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [6,4,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,6) *na coṣarāṃ na nirdagdhāṃ mahīṃ dadyāt*
-[MBH. 13,3341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3341) = [≈Вульг. 13.66.33](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A066_S033) = ≈крит. 13,65.31c *dhūmanirdagdhakūrca*
+[MBH. 13,3341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3341) = [≈Вульг. 13.66.33](mbh/13.66.html#v33) = ≈крит. 13,65.31c *dhūmanirdagdhakūrca*
 [RĀJA-TAR. 5,461.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,461) *nirdaheta ca yatkṛtsnaṃ trailokyam*
-[MBH. 13,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.856) = [≈Вульг. 13.14.265](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S265) = ≈крит. 13,14.131c *kālāgnimiva bībhatsuṃ nirdahantamiva prajāḥ*
-[4,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1702) = [≈Вульг. 4.55.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A055_S006) = крит. — [1,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.241) = [≈Вульг. 1.2.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S012) = ≈крит. 01,2.8a *bhittvā hṛdi śarāḥ pañca nirdahantīva me tanum*
+[MBH. 13,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.856) = [≈Вульг. 13.14.265](mbh/13.14.html#v265) = ≈крит. 13,14.131c *kālāgnimiva bībhatsuṃ nirdahantamiva prajāḥ*
+[4,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1702) = [≈Вульг. 4.55.6](mbh/4.55.html#v6) = крит. — [1,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.241) = [≈Вульг. 1.2.12](mbh/1.2.html#v12) = ≈крит. 01,2.8a *bhittvā hṛdi śarāḥ pañca nirdahantīva me tanum*
 [HARIV. 4607.](https://sanskrit-lexicon-scans.github.io/hariv?4607)
 [R. 1,54,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,22) [55,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,21) [2,61,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,21)
-[MBH. 4,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1162) = [≈Вульг. 4.35.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A035_S015) = ≈крит. 04,33.15c *nāhaṃ janaṃ nirdaheyaṃ dṛṣṭvā ghoreṇa cakṣuṣā*
-[2,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2631) = [≈Вульг. 2.80.12](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A080_S012) = ≈крит. 02,71.11a [DAŚAK.] в [BENF. Chr. 186,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *vaidehīṃ rāvaṇaḥ kruddho nirdahanniva rākṣasaḥ*
+[MBH. 4,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1162) = [≈Вульг. 4.35.15](mbh/4.35.html#v15) = ≈крит. 04,33.15c *nāhaṃ janaṃ nirdaheyaṃ dṛṣṭvā ghoreṇa cakṣuṣā*
+[2,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2631) = [≈Вульг. 2.80.12](mbh/2.80.html#v12) = ≈крит. 02,71.11a [DAŚAK.] в [BENF. Chr. 186,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *vaidehīṃ rāvaṇaḥ kruddho nirdahanniva rākṣasaḥ*
 [R. 3,55,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,26) [5,33,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,37)
 [PRAB. 82,10.]
 [VID. 145.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?145) *(yasya cittam) na nirdahati kopakṛtānuśayaḥ*
 [BHARTṚ. 2,76.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,76) *etattrayaṃ hi puruṣaṃ nirdahedavamāninam*
 [M. 4,136.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,136) *(devāḥ) avajñātāvadhūtāśca nirdahantyadhamānnarān*
-[MBH. 13,4713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4713) = [≈Вульг. 13.98.37](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A098_S037) = ≈крит. 13,101.36c
+[MBH. 13,4713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4713) = [≈Вульг. 13.98.37](mbh/13.98.html#v37) = ≈крит. 13,101.36c
 [R. 1,55,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,6) *durhṛdaḥ sādhu nirdahan . suhṛdastarpayankāmaiḥ*
 [2,106,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,26) *(enaḥ) tatsarvaṃ nirdahantāśu tapasaiva tapodhanāḥ*
 [M. 11,241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,241)

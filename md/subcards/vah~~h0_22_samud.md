@@ -22,20 +22,20 @@
   <sub>attested</sub>
 
 **3)** — 3) aufheben: *vajrasāramayaṃ śiśum*
-[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) = [≈Вульг. 2.17.42](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A017_S042) = ≈крит. 02,16.41a *kṛcchrādiva samudvahan . padāni*
-[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171) = [≈Вульг. 15.5.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S002) = ≈крит. 15,9.2c
+[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) = [≈Вульг. 2.17.42](mbh/2.17.html#v42) = ≈крит. 02,16.41a *kṛcchrādiva samudvahan . padāni*
+[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171) = [≈Вульг. 15.5.2](mbh/15.5.html#v2) = ≈крит. 15,9.2c
 
 - **RU:** — 3) поднимать, снимать (устранять): *vajrasāramayaṃ śiśum*
-[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) = [≈Вульг. 2.17.42](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U03_A017_S042) = ≈крит. 02,16.41a *kṛcchrādiva samudvahan . padāni*
-[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171) = [≈Вульг. 15.5.2](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S002) = ≈крит. 15,9.2c
+[MBH. 2,718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.718) = [≈Вульг. 2.17.42](mbh/2.17.html#v42) = ≈крит. 02,16.41a *kṛcchrādiva samudvahan . padāni*
+[15,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.171) = [≈Вульг. 15.5.2](mbh/15.5.html#v2) = ≈крит. 15,9.2c
   <sub>attested</sub>
 
 **4)** — 4) tragen: *jaṭābhāram*
 [HARIV. 2825.](https://sanskrit-lexicon-scans.github.io/hariv?2825) [12306.](https://sanskrit-lexicon-scans.github.io/hariv?12306) *mantridhurām*
 [KATHĀS. 4,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,136) *tadrājyacintābhāram*
 [86,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,9) *mālām*
-[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) = [≈Вульг. 13.14.391](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S391) = ≈крит. 13,15.15a *duḥkhāni*
-[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) = [≈Вульг. 13.14.189](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S189) = ≈крит. 13,14.97c *manasā, hṛdayena* im Herzen tragen, eingedenk sein
+[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) = [≈Вульг. 13.14.391](mbh/13.14.html#v391) = ≈крит. 13,15.15a *duḥkhāni*
+[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) = [≈Вульг. 13.14.189](mbh/13.14.html#v189) = ≈крит. 13,14.97c *manasā, hṛdayena* im Herzen tragen, eingedenk sein
 [HARIV. 8749.](https://sanskrit-lexicon-scans.github.io/hariv?8749)
 [R. 7,17,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,17,16)
 
@@ -43,8 +43,8 @@
 [HARIV. 2825.](https://sanskrit-lexicon-scans.github.io/hariv?2825) [12306.](https://sanskrit-lexicon-scans.github.io/hariv?12306) *mantridhurām*
 [KATHĀS. 4,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,136) *tadrājyacintābhāram*
 [86,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,9) *mālām*
-[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) = [≈Вульг. 13.14.391](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S391) = ≈крит. 13,15.15a *duḥkhāni*
-[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) = [≈Вульг. 13.14.189](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A014_S189) = ≈крит. 13,14.97c *manasā, hṛdayena* носить в сердце, помнить
+[MBH. 13,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.982) = [≈Вульг. 13.14.391](mbh/13.14.html#v391) = ≈крит. 13,15.15a *duḥkhāni*
+[780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.780) = [≈Вульг. 13.14.189](mbh/13.14.html#v189) = ≈крит. 13,14.97c *manasā, hṛdayena* носить в сердце, помнить
 [HARIV. 8749.](https://sanskrit-lexicon-scans.github.io/hariv?8749)
 [R. 7,17,16.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,17,16)
   <sub>attested</sub>

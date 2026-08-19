@@ -6,11 +6,11 @@
 **1)** — *ni*
  1) herabfliegen, sich niederlassen, sich herabstürzen, sich herablassen, sich niederwerfen: *damayantyāstadantike . nipetuste garutmantaḥ*
 
-[MBH. 1,2094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2094) = [≈Вульг. 1.56.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A056_S011) = ≈крит. 01,51.11a
+[MBH. 1,2094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2094) = [≈Вульг. 1.56.11](mbh/1.56.html#v11) = ≈крит. 01,51.11a
 [HIT. I,32.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,32) *nyapaptanmuṣale gṛdhrāḥ*
 [BHAṬṬ. 15,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,27) *tasminnipatite bhūmau nārade*
 [HARIV. 9611.](https://sanskrit-lexicon-scans.github.io/hariv?9611) *utpatedapi vākāśaṃ nipatecca yathecchakam*
-[MBH. 3,11414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11414) = [≈Вульг. 3.154.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A154_S005) = ≈крит. 03,152.5a
+[MBH. 3,11414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11414) = [≈Вульг. 3.154.5](mbh/3.154.html#v5) = ≈крит. 03,152.5a
 [R. 5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [6,16,77.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,77) *mātalistūrṇaṃ nipatya dharaṇītale*
 [ARJ. 6,7.] *tasyaiva dāsyā gehe tvaṃ nipatiṣyasyayonijā*
 [KATHĀS. 34,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,81) *nabhonipatitāmiva*
@@ -21,8 +21,8 @@
 [KATHĀS. 39,236.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,236)
 [KUMĀRAS. 7,92.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,92)
 [BHARTṚ. 2,26.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,26) *bhūmau nipatamānāyāḥ śaraṇaṃ bhava me*
-[MBH. 13,1501.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1501) = [≈Вульг. 13.20.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A020_S012) = ≈крит. 13,21.10a sich stürzen auf, herfallen über: *yaṃ yameṣo 'bhisaṃkruddhaḥ saṃgrāme nipatiṣyati*
-[MBH. 4,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1572) = [≈Вульг. 4.50.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A050_S018) = ≈крит. 04,45.17c *siṃho śiśurapi nipatati madamalinakapolabhittiṣu gajeṣu*
+[MBH. 13,1501.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1501) = [≈Вульг. 13.20.12](mbh/13.20.html#v12) = ≈крит. 13,21.10a sich stürzen auf, herfallen über: *yaṃ yameṣo 'bhisaṃkruddhaḥ saṃgrāme nipatiṣyati*
+[MBH. 4,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1572) = [≈Вульг. 4.50.18](mbh/4.50.html#v18) = ≈крит. 04,45.17c *siṃho śiśurapi nipatati madamalinakapolabhittiṣu gajeṣu*
 [BHARTṚ. 2,31.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,31) *gṛdhradhvāṅkṣavṛkān śuno nipatataḥ krauñcānkathaṃ vārayet*
 [PRAB. 95,18.] *tato niśīthe sahasā nipatyaivodyatāyudhā . caurasenā sumahatī sārthaṃ veṣṭayati sma tam ..*
 [KATHĀS. 29,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,117) hineinstürzen in: *iha (saṃsāre) viṣayāmiṣalālasa mānasamārjāra mā nipata*
@@ -31,11 +31,11 @@
 - **RU:** — *ni*
  1) опускаться вниз, садиться, низвергаться, спускаться, повергаться ниц: *damayantyāstadantike . nipetuste garutmantaḥ*
 
-[MBH. 1,2094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2094) = [≈Вульг. 1.56.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A056_S011) = ≈крит. 01,51.11a
+[MBH. 1,2094.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2094) = [≈Вульг. 1.56.11](mbh/1.56.html#v11) = ≈крит. 01,51.11a
 [HIT. I,32.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,32) *nyapaptanmuṣale gṛdhrāḥ*
 [BHAṬṬ. 15,27.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,27) *tasminnipatite bhūmau nārade*
 [HARIV. 9611.](https://sanskrit-lexicon-scans.github.io/hariv?9611) *utpatedapi vākāśaṃ nipatecca yathecchakam*
-[MBH. 3,11414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11414) = [≈Вульг. 3.154.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A154_S005) = ≈крит. 03,152.5a
+[MBH. 3,11414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11414) = [≈Вульг. 3.154.5](mbh/3.154.html#v5) = ≈крит. 03,152.5a
 [R. 5,15,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,15,10) [6,16,77.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,77) *mātalistūrṇaṃ nipatya dharaṇītale*
 [ARJ. 6,7.] *tasyaiva dāsyā gehe tvaṃ nipatiṣyasyayonijā*
 [KATHĀS. 34,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,81) *nabhonipatitāmiva*
@@ -46,8 +46,8 @@
 [KATHĀS. 39,236.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,236)
 [KUMĀRAS. 7,92.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,92)
 [BHARTṚ. 2,26.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,26) *bhūmau nipatamānāyāḥ śaraṇaṃ bhava me*
-[MBH. 13,1501.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1501) = [≈Вульг. 13.20.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A020_S012) = ≈крит. 13,21.10a бросаться на, нападать на: *yaṃ yameṣo 'bhisaṃkruddhaḥ saṃgrāme nipatiṣyati*
-[MBH. 4,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1572) = [≈Вульг. 4.50.18](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A050_S018) = ≈крит. 04,45.17c *siṃho śiśurapi nipatati madamalinakapolabhittiṣu gajeṣu*
+[MBH. 13,1501.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1501) = [≈Вульг. 13.20.12](mbh/13.20.html#v12) = ≈крит. 13,21.10a бросаться на, нападать на: *yaṃ yameṣo 'bhisaṃkruddhaḥ saṃgrāme nipatiṣyati*
+[MBH. 4,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1572) = [≈Вульг. 4.50.18](mbh/4.50.html#v18) = ≈крит. 04,45.17c *siṃho śiśurapi nipatati madamalinakapolabhittiṣu gajeṣu*
 [BHARTṚ. 2,31.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,31) *gṛdhradhvāṅkṣavṛkān śuno nipatataḥ krauñcānkathaṃ vārayet*
 [PRAB. 95,18.] *tato niśīthe sahasā nipatyaivodyatāyudhā . caurasenā sumahatī sārthaṃ veṣṭayati sma tam ..*
 [KATHĀS. 29,117.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,117) ринуться в: *iha (saṃsāre) viṣayāmiṣalālasa mānasamārjāra mā nipata*
@@ -60,16 +60,16 @@
 [RĀJA-TAR. 6,144.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,144)
 [KATHĀS. 27,45.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,45) [40,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,92)
 [VID. 295.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?295) *prāsāśca vipulāstīkṣṇā nyapatanta sahasraśaḥ*
-[MBH. 1,1169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1169) = [≈Вульг. 1.19.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S012) = ≈крит. 01,17.11c *kathamasmadvidhe śastraṃ nipatet*
+[MBH. 1,1169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1169) = [≈Вульг. 1.19.12](mbh/1.19.html#v12) = ≈крит. 01,17.11c *kathamasmadvidhe śastraṃ nipatet*
 [R. 2,63,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,24)
 [AV. 6,90,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.090.html#av06.090.03) [12,5,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.26) *kṣate prahārā nipatantyabhīkṣṇam*
 [Spr. 781.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?781) *nadī merumandaraśikharāt — avanitale nipatantī*
 [BHĀG. P. 5,16,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,20) *vikuṇṭhadhiṣaṇāttayornipatamānayoḥ*
 [3,16,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,33) *yatra (mahāraurave) nipatitaṃ puruṣam*
 [5,26,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,12) *nipeturdharaṇītale*
-[MBH. 3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Вульг. 3.65.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S014) = ≈крит. 03,62.10a *nipeturanalam*
-[1,8291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8291) = [≈Вульг. 1.225.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A225_S022) = ≈крит. 01,216.19c *paṭe nipatite*
-[3,2810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2810) = [≈Вульг. 3.72.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S003) = ≈крит. 03,70.3a *jāle punarnipatitaḥ śapharaḥ*
+[MBH. 3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Вульг. 3.65.14](mbh/3.65.html#v14) = ≈крит. 03,62.10a *nipeturanalam*
+[1,8291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8291) = [≈Вульг. 1.225.22](mbh/1.225.html#v22) = ≈крит. 01,216.19c *paṭe nipatite*
+[3,2810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2810) = [≈Вульг. 3.72.3](mbh/3.72.html#v3) = ≈крит. 03,70.3a *jāle punarnipatitaḥ śapharaḥ*
 [Spr. 740.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?740) *nyapataṃśca garbhāḥ* (vor der Zeit)
 [BHĀG. P. 6,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,12) *saśabdanipataddruma*
 [BHAṬṬ. 8,131.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,131) *mā ni paptaṃ bhuvane śiśriyāṇaḥ*
@@ -80,7 +80,7 @@
 [PAÑCAT. 35,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,11) *etasyāḥ stanamaṇḍalaṃ nipatitam* zusammengefallen, eingefallen
 [DHŪRTAS. in LA. 80,15.] sich ergiessen in, münden in: *bahudhāpyāgamairbhinnāḥ panthānaḥ siddhihetavaḥ . tvayyeva nipatantyoghā jāhnavīyā ivārṇave ..*
 [RAGH. 10,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,27) fallen auf so v. a. sich richten auf: *tasyā gātre nipatitā dṛṣṭisteṣām*
-[MBH. 1,7708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7708) = [≈Вульг. 1.209.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S022) = ≈крит. 01,201.21c *netravrajāḥ paurajanasya tasmin — nipetuḥ*
+[MBH. 1,7708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7708) = [≈Вульг. 1.209.22](mbh/1.209.html#v22) = ≈крит. 01,201.21c *netravrajāḥ paurajanasya tasmin — nipetuḥ*
 [RAGH. 6,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,7) *āloke te nipatite pure*
 [MEGH. 83](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?83), v. l. *nipatanti dṛṣṭiviśikhā yāvannendīvarākṣīṇām*
 [PRAB. 7,4.] *tasmin — nipeturantaḥkaraṇairnarendrā dehaiḥ sthitāḥ kevalamāsaneṣu*
@@ -92,16 +92,16 @@
 [RĀJA-TAR. 6,144.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,144)
 [KATHĀS. 27,45.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,45) [40,92.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,92)
 [VID. 295.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?295) *prāsāśca vipulāstīkṣṇā nyapatanta sahasraśaḥ*
-[MBH. 1,1169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1169) = [≈Вульг. 1.19.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A019_S012) = ≈крит. 01,17.11c *kathamasmadvidhe śastraṃ nipatet*
+[MBH. 1,1169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1169) = [≈Вульг. 1.19.12](mbh/1.19.html#v12) = ≈крит. 01,17.11c *kathamasmadvidhe śastraṃ nipatet*
 [R. 2,63,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,24)
 [AV. 6,90,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.090.html#av06.090.03) [12,5,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.005.html#av12.005.26) *kṣate prahārā nipatantyabhīkṣṇam*
 [Spr. 781.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?781) *nadī merumandaraśikharāt — avanitale nipatantī*
 [BHĀG. P. 5,16,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,20) *vikuṇṭhadhiṣaṇāttayornipatamānayoḥ*
 [3,16,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,33) *yatra (mahāraurave) nipatitaṃ puruṣam*
 [5,26,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,12) *nipeturdharaṇītale*
-[MBH. 3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Вульг. 3.65.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S014) = ≈крит. 03,62.10a *nipeturanalam*
-[1,8291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8291) = [≈Вульг. 1.225.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A225_S022) = ≈крит. 01,216.19c *paṭe nipatite*
-[3,2810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2810) = [≈Вульг. 3.72.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A072_S003) = ≈крит. 03,70.3a *jāle punarnipatitaḥ śapharaḥ*
+[MBH. 3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Вульг. 3.65.14](mbh/3.65.html#v14) = ≈крит. 03,62.10a *nipeturanalam*
+[1,8291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8291) = [≈Вульг. 1.225.22](mbh/1.225.html#v22) = ≈крит. 01,216.19c *paṭe nipatite*
+[3,2810.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2810) = [≈Вульг. 3.72.3](mbh/3.72.html#v3) = ≈крит. 03,70.3a *jāle punarnipatitaḥ śapharaḥ*
 [Spr. 740.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?740) *nyapataṃśca garbhāḥ* (преждевременно)
 [BHĀG. P. 6,8,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,8,12) *saśabdanipataddruma*
 [BHAṬṬ. 8,131.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,131) *mā ni paptaṃ bhuvane śiśriyāṇaḥ*
@@ -112,7 +112,7 @@
 [PAÑCAT. 35,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,11) *etasyāḥ stanamaṇḍalaṃ nipatitam* обрушившийся, осевший
 [DHŪRTAS. in LA. 80,15.] вливаться в, впадать в: *bahudhāpyāgamairbhinnāḥ panthānaḥ siddhihetavaḥ . tvayyeva nipatantyoghā jāhnavīyā ivārṇave ..*
 [RAGH. 10,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,27) падать на, т. е. преим. обращаться на: *tasyā gātre nipatitā dṛṣṭisteṣām*
-[MBH. 1,7708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7708) = [≈Вульг. 1.209.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A209_S022) = ≈крит. 01,201.21c *netravrajāḥ paurajanasya tasmin — nipetuḥ*
+[MBH. 1,7708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7708) = [≈Вульг. 1.209.22](mbh/1.209.html#v22) = ≈крит. 01,201.21c *netravrajāḥ paurajanasya tasmin — nipetuḥ*
 [RAGH. 6,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,7) *āloke te nipatite pure*
 [MEGH. 83](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?83), v. l. *nipatanti dṛṣṭiviśikhā yāvannendīvarākṣīṇām*
 [PRAB. 7,4.] *tasmin — nipeturantaḥkaraṇairnarendrā dehaiḥ sthitāḥ kevalamāsaneṣu*
@@ -153,12 +153,12 @@
   <sub>attested</sub>
 
 **6)** — 6) zu Schanden werden, zu Nichte gehen: *mā te svako 'rtho nipateta mohāt*
-[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A066_S021) = ≈крит. 04,61.21c *ṛddhiṃ nipatitāmiva*
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](mbh/4.66.html#v21) = ≈крит. 04,61.21c *ṛddhiṃ nipatitāmiva*
 [R. 5,18,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,7) *(sadma) sadyo nipatitānandam*
 [2,65,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,28)
 
 - **RU:** — 6) посрамиться, потерпеть крах: *mā te svako 'rtho nipateta mohāt*
-[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A066_S021) = ≈крит. 04,61.21c *ṛddhiṃ nipatitāmiva*
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](mbh/4.66.html#v21) = ≈крит. 04,61.21c *ṛddhiṃ nipatitāmiva*
 [R. 5,18,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,7) *(sadma) sadyo nipatitānandam*
 [2,65,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,28)
   <sub>attested</sub>
@@ -173,14 +173,14 @@ v. a. schlagen
 [M. 4,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,164)
 [VARĀH. BṚH. S. 42 (43),28.] *mayyeva — nipātayiṣyati krūraṃ daṇḍaṃ prāṇāpahāriṇam*
 [R. 5,1,80.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,80) *śarairnipātayiṣyāmi sūryam*
-[MBH. 13,4618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4618) = [≈Вульг. 13.95.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A095_S018) = ≈крит. 13,97.17a *alaktako yathā rakto niṣpīḍya puruṣastathā . abalābhirbalādraktaḥ pādamūle nipātyate ..*
+[MBH. 13,4618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4618) = [≈Вульг. 13.95.18](mbh/13.95.html#v18) = ≈крит. 13,97.17a *alaktako yathā rakto niṣpīḍya puruṣastathā . abalābhirbalādraktaḥ pādamūle nipātyate ..*
 [Spr. 231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?231) *nipātya tuṅgādripuyūthanātham* von der Höhe stürzen (bildlich)
 [BHĀG. P. 3,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,1) *(dānavāḥ) vaśībhūtāśca me sarve bhūtale ca nipātitāḥ*
-[MBH. 3,634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.634) = [≈Вульг. 3.14.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S021) = ≈крит. 03,15.21c
+[MBH. 3,634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.634) = [≈Вульг. 3.14.21](mbh/3.14.html#v21) = ≈крит. 03,15.21c
 [MĀRK. P. 14,62.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,62) *narake balānnipātyate*
 [BHĀG. P. 5,26,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,8) [9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *nipātayannaṣṭadṛśaṃ hi garte*
 [5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,15) *sa no rājā — nyapātayadvyasane* in's Unglück stürzen
-[MBH. 3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A034_S007) = ≈крит. 03,35.6a *viṣamaviṣayāṅgāreṣu nipātyamānamātmānaṃ nāvabudhyase*
+[MBH. 3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](mbh/3.34.html#v7) = ≈крит. 03,35.6a *viṣamaviṣayāṅgāreṣu nipātyamānamātmānaṃ nāvabudhyase*
 [PRAB. 102,11.] *na — vṛkṣaḥ phalakāle nipātyate*
 [R. 6,38,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,38,28) *(nadyaḥ) nipātayantyaḥ — taṭadrumān*
 [ṚT. 2,7.] *(tam) ūrau nipātya vidadāra nakhaiḥ*
@@ -189,7 +189,7 @@ v. a. schlagen
 [KATHĀS. 25,124.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,124) *nipātayanti nadyo hi kūlāni kulāni nāryaḥ* zum Sturz bringen (eig. und übertr.)
 [PAÑCAT. I,227.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,227) *raktavindurnipātitaḥ* getröpfelt
 [KATHĀS. 2,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,10) *vindavo jātarūpasya śataṃ yasmin (dhanuṣi) nipātitāḥ* getröpfelt auf so v. a. erhaben eingelegt
-[MBH. 4,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1325) = [≈Вульг. 4.42.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A042_S001) = ≈крит. 04,38.20a auswerfen so v. a. ausspeien: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
+[MBH. 4,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1325) = [≈Вульг. 4.42.1](mbh/4.42.html#v1) = ≈крит. 04,38.20a auswerfen so v. a. ausspeien: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
 [Spr. 438.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?438) (den Blick) fallen lassen, richten auf: *yadyeṣa mayi susnigdhāṃ dṛṣṭimadya nipātayet*
 [MĀRK. P. 61,41.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,41)
 
@@ -203,14 +203,14 @@ v. a. schlagen
 [M. 4,164.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,164)
 [VARĀH. BṚH. S. 42 (43),28.] *mayyeva — nipātayiṣyati krūraṃ daṇḍaṃ prāṇāpahāriṇam*
 [R. 5,1,80.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,80) *śarairnipātayiṣyāmi sūryam*
-[MBH. 13,4618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4618) = [≈Вульг. 13.95.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A095_S018) = ≈крит. 13,97.17a *alaktako yathā rakto niṣpīḍya puruṣastathā . abalābhirbalādraktaḥ pādamūle nipātyate ..*
+[MBH. 13,4618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4618) = [≈Вульг. 13.95.18](mbh/13.95.html#v18) = ≈крит. 13,97.17a *alaktako yathā rakto niṣpīḍya puruṣastathā . abalābhirbalādraktaḥ pādamūle nipātyate ..*
 [Spr. 231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?231) *nipātya tuṅgādripuyūthanātham* низвергать с высоты (образно)
 [BHĀG. P. 3,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,1) *(dānavāḥ) vaśībhūtāśca me sarve bhūtale ca nipātitāḥ*
-[MBH. 3,634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.634) = [≈Вульг. 3.14.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S021) = ≈крит. 03,15.21c
+[MBH. 3,634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.634) = [≈Вульг. 3.14.21](mbh/3.14.html#v21) = ≈крит. 03,15.21c
 [MĀRK. P. 14,62.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,62) *narake balānnipātyate*
 [BHĀG. P. 5,26,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,8) [9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *nipātayannaṣṭadṛśaṃ hi garte*
 [5,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,15) *sa no rājā — nyapātayadvyasane* повергать в несчастье
-[MBH. 3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A034_S007) = ≈крит. 03,35.6a *viṣamaviṣayāṅgāreṣu nipātyamānamātmānaṃ nāvabudhyase*
+[MBH. 3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](mbh/3.34.html#v7) = ≈крит. 03,35.6a *viṣamaviṣayāṅgāreṣu nipātyamānamātmānaṃ nāvabudhyase*
 [PRAB. 102,11.] *na — vṛkṣaḥ phalakāle nipātyate*
 [R. 6,38,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,38,28) *(nadyaḥ) nipātayantyaḥ — taṭadrumān*
 [ṚT. 2,7.] *(tam) ūrau nipātya vidadāra nakhaiḥ*
@@ -219,7 +219,7 @@ v. a. schlagen
 [KATHĀS. 25,124.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,124) *nipātayanti nadyo hi kūlāni kulāni nāryaḥ* приводить к падению (букв. и перен.)
 [PAÑCAT. I,227.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,227) *raktavindurnipātitaḥ* накапанный, нанесенный каплями
 [KATHĀS. 2,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,10) *vindavo jātarūpasya śataṃ yasmin (dhanuṣi) nipātitāḥ* нанесенный каплями на, т. е. преим. рельефно инкрустированный
-[MBH. 4,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1325) = [≈Вульг. 4.42.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A042_S001) = ≈крит. 04,38.20a выбрасывать, т. е. преим. выплевывать: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
+[MBH. 4,1325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1325) = [≈Вульг. 4.42.1](mbh/4.42.html#v1) = ≈крит. 04,38.20a выбрасывать, т. е. преим. выплевывать: *guḍena vardhitaḥ śleṣmā sukhaṃ vṛddhyā nipātyate*
 [Spr. 438.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?438) (взгляд) опускать, направлять на: *yadyeṣa mayi susnigdhāṃ dṛṣṭimadya nipātayet*
 [MĀRK. P. 61,41.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?61,41)
   <sub>attested</sub>

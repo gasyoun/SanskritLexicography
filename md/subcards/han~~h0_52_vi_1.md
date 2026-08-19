@@ -4,21 +4,21 @@
 
 
 **2)** — 2) quälen, plagen; med.
-[MBH. 13,6720](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6720) = [≈Вульг. 13.145.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A145_S038) = ≈крит. 13,133.38c nach der Lesart der [ed. Bomb.]
+[MBH. 13,6720](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6720) = [≈Вульг. 13.145.38](mbh/13.145.html#v38) = ≈крит. 13,133.38c nach der Lesart der [ed. Bomb.]
 
 - **RU:** — 2) мучить, терзать; мед.
-[MBH. 13,6720](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6720) = [≈Вульг. 13.145.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A145_S038) = ≈крит. 13,133.38c по чтению [Бомбейская ред.]
+[MBH. 13,6720](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6720) = [≈Вульг. 13.145.38](mbh/13.145.html#v38) = ≈крит. 13,133.38c по чтению [Бомбейская ред.]
   <sub>attested</sub>
 
 **3)** — 3) hemmen, unterbrechen: *śrautāgnihotrahomān*
 [KULL.] zu [M. 5,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,84) — desid. stören —, hemmen wollen: *karma vijighāṃsatā*
 [BHĀG. P. 4,19,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,31) — intens. (?) Jmd ein Leid zufügen: *mā sattvāni vijījahi*
-[MBH. 7,2383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2383) = [≈Вульг. 7.68.7](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A068_S007) = крит. —
+[MBH. 7,2383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2383) = [≈Вульг. 7.68.7](mbh/7.68.html#v7) = крит. —
 
 - **RU:** — 3) задерживать, прерывать: *śrautāgnihotrahomān*
 [KULL.] к [M. 5,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,84) — desid. желать нарушить —, задержать: *karma vijighāṃsatā*
 [BHĀG. P. 4,19,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,31) — intens. (?) причинять кому-л. вред: *mā sattvāni vijījahi*
-[MBH. 7,2383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2383) = [≈Вульг. 7.68.7](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A068_S007) = крит. —
+[MBH. 7,2383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2383) = [≈Вульг. 7.68.7](mbh/7.68.html#v7) = крит. —
   <sub>attested</sub>
 
 **additional)** — Vgl. *vighāta* fgg., *vighna, vijighāṃsu, vihati* fgg., *vaihatya* .

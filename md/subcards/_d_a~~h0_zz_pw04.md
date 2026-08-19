@@ -25,14 +25,14 @@
 - **RU:** — 3〉 направлять снаряд на (Dat. или Loc.), целиться —, быть направленным на (о снаряде); mit Acc. *abhisaṃhita* направленный на (Dat.).
   <sub>attested</sub>
 
-**Mit {#aBisam#} — 4)** — 4〉 Etwas oder Jmd sich als Ziel setzen, bezwecken, beabsichtigen, vor Augen haben, denken an, es abgesehen haben auf (Acc., ausnahmsweise Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S016) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* solche haben es auf mich abgesehen. *abhisaṃdhāya* ohne Object in einer selbstsüchtigen Absicht [GAUT.]
+**Mit {#aBisam#} — 4)** — 4〉 Etwas oder Jmd sich als Ziel setzen, bezwecken, beabsichtigen, vor Augen haben, denken an, es abgesehen haben auf (Acc., ausnahmsweise Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](mbh/9.1.html#v16) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* solche haben es auf mich abgesehen. *abhisaṃdhāya* ohne Object in einer selbstsüchtigen Absicht [GAUT.]
 
-- **RU:** — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S016) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
+- **RU:** — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](mbh/9.1.html#v16) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
   <sub>attested</sub>
 
-**Mit {#aBisam#} — 5)** — 5〉 Jmd gemeinsam anerkennen, anerkennen überh. *sarvalokābhisaṃhita* von aller Welt anerkannt [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A005_S005) = ≈крит. 12,5.5a.
+**Mit {#aBisam#} — 5)** — 5〉 Jmd gemeinsam anerkennen, anerkennen überh. *sarvalokābhisaṃhita* von aller Welt anerkannt [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](mbh/12.5.html#v5) = ≈крит. 12,5.5a.
 
-- **RU:** — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A005_S005) = ≈крит. 12,5.5a.
+- **RU:** — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](mbh/12.5.html#v5) = ≈крит. 12,5.5a.
   <sub>attested</sub>
 
 **Mit {#aBisam#} — 6)** — 6〉 sich über Etwas vorher verständigen, vorher über Etwas übereinkommen; mit Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (wo wohl *anyo'nyenābhi˚* zu verbinden ist).
@@ -77,9 +77,9 @@
 - **RU:** — 2〉 намереваться (Acc.).
   <sub>attested</sub>
 
-**Mit {#samaBisam#} — 3)** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A016_S023) = ≈крит. 09,15.23a fehlerhaft für *savamaṃśamabhi˚*.
+**Mit {#samaBisam#} — 3)** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](mbh/9.16.html#v23) = ≈крит. 09,15.23a fehlerhaft für *savamaṃśamabhi˚*.
 
-- **RU:** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A016_S023) = ≈крит. 09,15.23a ошибочно вм. *savamaṃśamabhi˚*.
+- **RU:** — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](mbh/9.16.html#v23) = ≈крит. 09,15.23a ошибочно вм. *savamaṃśamabhi˚*.
   <sub>attested</sub>
 
 **Mit {#upasam#} — 1)** — Mit *upasam*
@@ -109,9 +109,9 @@
 - **RU:** — 5〉 иметь перед глазами в качестве цели.
   <sub>attested</sub>
 
-**Mit {#upasam#} — 6)** — 6〉 Jmd hintergehen, anführen [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S020) = ≈крит. 04,2.17a.
+**Mit {#upasam#} — 6)** — 6〉 Jmd hintergehen, anführen [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](mbh/4.2.html#v20) = ≈крит. 04,2.17a.
 
-- **RU:** — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S020) = ≈крит. 04,2.17a.
+- **RU:** — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](mbh/4.2.html#v20) = ≈крит. 04,2.17a.
   <sub>attested</sub>
 
 **Mit {#upasam#} — 7)** — 7〉 *upasaṃhita* ergeben, zugethan.

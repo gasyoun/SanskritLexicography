@@ -27,7 +27,7 @@
 [HARIV. 6754.](https://sanskrit-lexicon-scans.github.io/hariv?6754) *astram*
 [R. 7,21,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,21,36) *enaḥ*
 [M. 6,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,96) [11,256.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,256) *kṛtaṃ pāpaṃ kalyāṇenāpahanyate*
-[MBH. 12,192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.192) = [≈Вульг. 12.7.37](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A007_S037) = крит. — *kṣudhām*
+[MBH. 12,192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.192) = [≈Вульг. 12.7.37](mbh/12.7.html#v37) = крит. — *kṣudhām*
 [13,3013.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3013) *duritam*
 [ŚĀK. 83.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?83) *tamastīvram*
 [Spr. (II) 412.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?412 "Spr. (II) 412: apahatya tamastīvraṃ yathā bhātyudaye raviḥ | tathāpahatya pāpmānaṃ bhāti gaṅgājalokṣitaḥ || — (3521.) Wie die Sonne beim Aufgange glänzt, indem sie die dichte Finsterniss verscheucht hat, so glänzt der im Wasser der Gaṅgā Gebadete, indem er die Sünden verscheucht hat.") [544](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?544), v. l. *śakti karotyapahanti vā*
@@ -66,7 +66,7 @@
 [HARIV. 6754.](https://sanskrit-lexicon-scans.github.io/hariv?6754) *astram*
 [R. 7,21,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,21,36) *enaḥ*
 [M. 6,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,96) [11,256.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,256) *kṛtaṃ pāpaṃ kalyāṇenāpahanyate*
-[MBH. 12,192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.192) = [≈Вульг. 12.7.37](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A007_S037) = крит. — *kṣudhām*
+[MBH. 12,192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.192) = [≈Вульг. 12.7.37](mbh/12.7.html#v37) = крит. — *kṣudhām*
 [13,3013.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3013) *duritam*
 [ŚĀK. 83.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?83) *tamastīvram*
 [Spr. (II) 412.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?412 "Spr. (II) 412: apahatya tamastīvraṃ yathā bhātyudaye raviḥ | tathāpahatya pāpmānaṃ bhāti gaṅgājalokṣitaḥ || — (3521.) Wie die Sonne beim Aufgange glänzt, indem sie die dichte Finsterniss verscheucht hat, so glänzt der im Wasser der Gaṅgā Gebadete, indem er die Sünden verscheucht hat.") [544](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?544), v. l. *śakti karotyapahanti vā*
