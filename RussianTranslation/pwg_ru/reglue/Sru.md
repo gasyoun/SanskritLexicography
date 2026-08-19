@@ -1,193 +1,195 @@
-# Re-glue — Sru
+Re-glue — Sru
 
-## h0
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
 
-**1)** <div n="p">— {#pratisam#} {%давать согласие, обещать%}: {#aSvinoH pratisaMSrutya#}
-<ls>MBH. 13,7306.</ls>
-  — [PWKVN·a2a] <hom>1.</hom> {#Sru#}¦ VI. {#SuSrAva#} с <ab>pass.</ab> <ab>Bed.</ab> <ls>R. 7,27,23</ls>. — С {#upa#} VI. {%давать обет, клясться%} <ls>JĀTAKAM. 31</ls>.
-  — [PWKVN·a2a] <hom>1.</hom> {#Sru#}¦ с {#prati#} VI. {%отвечать%} — добавить.
+## омоним h0
 
-**2)** <div n="1">— 2) {%обещать, давать обещание%}: {#mAtAmahe samaSrOzIdrAjyaSulkam#}
-<ls>R. 2,107,3.</ls> {#karizya iti saMSrutya pUrvamasmAsu#}
-<ls>MBH. 3,2143.</ls> {#taTeti saMSrutya gamanaM tasya#}
-<ls>R. 1,10,22</ls> (<ls n="GORR. 1,10,">23</ls> <ls>GORR.</ls>). <ls n="R. 1,">23,8.</ls> <ls n="R.">2,21,41.</ls> {#tapasviByaH sattre yajYadakziRAm#}
-<ls n="R. 1,">75,24.</ls> <ls>R. GORR. 2,18,48.</ls> <ls n="R. GORR.">3,14,18. fg.</ls> <ls n="R. GORR. 3,">67,21.</ls> <ls>Spr. (II) 612.</ls> <ls>LA. (III) 91,11.</ls> {#saMSruta#} {%обещано, дано обещание%}
-<ls>AK. 3,2,58.</ls>
-<ls>H. 1489.</ls>
-<ls>MBH. 14,1667.</ls>
-<ls>R. 3,14,17.</ls> <ls n="R.">6,8,23.</ls> <ls n="R.">7,76,12</ls> (с <ab>gen.</ab>
-[Page7-0383]
+**1)** — *pratisam* давать согласие, обещать: *aśvinoḥ pratisaṃśrutya*
+[MBH. 13,7306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7306) = [≈Вульг. 13.156.16](mbh/13.156.html#v16) = ≈крит. 13,141.16a
+  — ʰ PWKVN **1.** *śru* VI. *śuśrāva* с pass. знач. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23). — С *upa* VI. давать обет, клясться [JĀTAKAM. 31].
+  — ʰ PWKVN **1.** *śru* с *prati* VI. отвечать — добавить.
+
+**2)** — 2) обещать, давать обещание: *mātāmahe samaśrauṣīdrājyaśulkam*
+[R. 2,107,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,3) *kariṣya iti saṃśrutya pūrvamasmāsu*
+[MBH. 3,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2143) = [≈Вульг. 3.55.8](mbh/3.55.html#v8) = крит. — *tatheti saṃśrutya gamanaṃ tasya*
+[R. 1,10,22](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,10,22) ([23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,10,23) [GORR.]). [23,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,8) [2,21,41.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,41) *tapasvibhyaḥ sattre yajñadakṣiṇām*
+[75,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,75,24) [R. GORR. 2,18,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,48) [3,14,18. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,18) [67,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,67,21) [Spr. (II) 612.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?612 "Spr. (II) 612: arthināmupapannānāṃ pūrvaṃ cāpyupakāriṇām | āśāṃ saṃśrutya yo hanti sa loke puruṣādhamaḥ || — Wer Bedürftigen, die ihm ehemals einen Dienst erwiesen, erst Hoffnungen macht, wenn sie sich an ihn wenden, und hinterdrein diese nicht erfüllt, der gilt für den niedrigsten Menschen auf der Welt.") [LA. (III) 91,11.] *saṃśruta* обещано, дано обещание
+[AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58)
+[H. 1489.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1489)
+[MBH. 14,1667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1667) = [≈Вульг. 14.57.6](mbh/14.57.html#v6) = ≈крит. 14,56.6a
+[R. 3,14,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,17) [6,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,23) [7,76,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,76,12) (с gen.
+
 лица).
-<ls>RAGH. 12,5.</ls>
-<ls>RĀJA-TAR. 3,19.</ls>
+[RAGH. 12,5.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,5)
+[RĀJA-TAR. 3,19.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,19)
 
-**3)** <div n="1">— 3) {%радостный%} ({#hfzwa, saMhfzwa#})
-<ls>H. an.</ls> и <ls>VIŚVA</ls> <ab>a. a. O.</ab>
+**3)** — 3) радостный (*hṛṣṭa, saṃhṛṣṭa*)
+[H. an.] и [VIŚVA] указ. соч.
 
-**4)** <div n="1">— 4) {#pratiSrutaM#} {%называемый%}
-<ls>HARIV. 1937</ls> ошибочно вм. {#pariSruta#}, как читает новейшее издание.
+**4)** — 4) *pratiśrutaṃ* называемый
+[HARIV. 1937](https://sanskrit-lexicon-scans.github.io/hariv?1937) ошибочно вм. *pariśruta*, как читает новейшее издание.
 
-**Desid.)** <div n="v">— <ab>Vgl.</ab> 3. {#SrAvaRa, SrAvaRIya, SrAvya#} .
+**Desid.)** — ср. 3. *śrāvaṇa, śrāvaṇīya, śrāvya* .
 
-**PPP 1))** <div n="1"> 1) {%услышанный, воспринятый на слух%}: {#kaTA#}
-<ls>MBH. 1,4685.</ls> {#na ca nastAdfSaM dfzwaM nEva cApi pariSrutam#}
-<ls n="MBH.">9,1194.</ls> <ls n="MBH.">10,200.</ls> <ls n="MBH.">13,5804.</ls> {#sarvaloka˚#}
-<ls n="MBH.">14,834.</ls> {#yatra GoratamaM vfttamfzIRAM me pariSrutam#}
-<ls n="MBH.">12,6156.</ls> <ls>R. GORR. 2,18,34.</ls> {#udArAScApi vaMSe 'sminrAjAno me pariSrutAH#}
-<ls>MBH. 1,3754.</ls> {#pariSruto mayA pUrvaM rAmeREza sahAyavAn#}
-<ls>R. 4,14,15.</ls> {#iti pariSrutam#} <ab>impers.</ab>
-<ls>HARIV. 2010.</ls>
+**PPP 1))** 1) услышанный, воспринятый на слух: *kathā*
+[MBH. 1,4685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4685) = [≈Вульг. 1.121.7](mbh/1.121.html#v7) = ≈крит. 01,112.7a *na ca nastādṛśaṃ dṛṣṭaṃ naiva cāpi pariśrutam*
+[9,1194.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1194) = [≈Вульг. 9.23.4](mbh/9.23.html#v4) = ≈крит. 09,22.4a [10,200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.200) = [≈Вульг. 10.4.28](mbh/10.4.html#v28) = ≈крит. 10,4.27c [13,5804.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5804) = [≈Вульг. 13.120.11](mbh/13.120.html#v11) = ≈крит. 13,121.10e *sarvaloka˚*
+[14,834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.834) = [≈Вульг. 14.29.18](mbh/14.29.html#v18) = ≈крит. 14,29.18a *yatra ghoratamaṃ vṛttamṛṣīṇāṃ me pariśrutam*
+[12,6156.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6156) = [≈Вульг. 12.167.17](mbh/12.167.html#v17) = ≈крит. 12,161.16c [R. GORR. 2,18,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,34) *udārāścāpi vaṃśe 'sminrājāno me pariśrutāḥ*
+[MBH. 1,3754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3754) = [≈Вульг. 1.94.64](mbh/1.94.html#v64) = ≈крит. 01,89.55a *pariśruto mayā pūrvaṃ rāmeṇaiṣa sahāyavān*
+[R. 4,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,14,15) *iti pariśrutam* impers.
+[HARIV. 2010.](https://sanskrit-lexicon-scans.github.io/hariv?2010)
 
-**PPP 2))** <div n="1">— 2) известный как, считающийся, слывущий, называемый: {#aSvameDaH kratuSrezWaH kzatriyARAM pariSrutaH#}
-<ls>HARIV. 11110.</ls> {#mahAvfndasahasrARAM SataM padmaM pariSrutam#}
-<ls>R. 6,4,58.</ls> {#SrIrnAmnAhaM pariSrutA#}
-<ls>MBH. 13,3856.</ls> {#pUtaneti pariSrutA#}
-<ls>HARIV. 3423.</ls>
-<ls>R. 7,35,20.</ls> известный, так <ab>v. a.</ab> знаменитый
-<ls>MBH. 12,1799</ls> (по чтению <ls>ed. Bomb.</ls>).
-<ls n="MBH. 12,">3127.</ls> <ls>BHĀG. P. 4,9,5.</ls>
+**PPP 2))** — 2) известный как, считающийся, слывущий, называемый: *aśvamedhaḥ kratuśreṣṭhaḥ kṣatriyāṇāṃ pariśrutaḥ*
+[HARIV. 11110.](https://sanskrit-lexicon-scans.github.io/hariv?11110) *mahāvṛndasahasrāṇāṃ śataṃ padmaṃ pariśrutam*
+[R. 6,4,58.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,58) *śrīrnāmnāhaṃ pariśrutā*
+[MBH. 13,3856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3856) = [≈Вульг. 13.82.6](mbh/13.82.html#v6) = ≈крит. 13,81.6c *pūtaneti pariśrutā*
+[HARIV. 3423.](https://sanskrit-lexicon-scans.github.io/hariv?3423)
+[R. 7,35,20.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,20) известный, так преим. знаменитый
+[MBH. 12,1799](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1799) = [≈Вульг. 12.49.84](mbh/12.49.html#v84) = ≈крит. 12,49.75a (по чтению [Бомбейская ред.]).
+[3127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3127) = [≈Вульг. 12.83.3](mbh/12.83.html#v3) = ≈крит. 12,84.2c [BHĀG. P. 4,9,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,5)
 
-**PPP 3))** <div n="1">— 3) ошибочное написание вм. {#pratiSruta#}
-[Page7-0381]
-(так <ls>ed. Bomb.</ls>)
-<ls>MBH. 4,1610.</ls>
+**PPP 3))** — 3) ошибочное написание вм. *pratiśruta*
 
-**PPP 4)** <div n="1">— 4) {%названный, именуемый%}: {#SrAvastIti purI ramyA SrAvitA ca lavasya ha#}
-<ls>R. 7,108,5.</ls>
+(так [Бомбейская ред.])
+[MBH. 4,1610.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1610) = [≈Вульг. 4.52.5](mbh/4.52.html#v5) = ≈крит. 04,47.5c
 
-**PPP 5)** <div n="1">— 5) так <ab>v. a.</ab> {#ASrAvita#} {%ритуальный возглас%}
-<ls>ŚAT. BR. 14,9,3,9.</ls>
+**PPP 4)** — 4) названный, именуемый: *śrāvastīti purī ramyā śrāvitā ca lavasya ha*
+[R. 7,108,5.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,5)
 
-**add.)** <div n="v">— <ab>Vgl.</ab> {#pariSruta#} .
+**PPP 5)** — 5) так преим. *āśrāvita* ритуальный возглас
+[ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9)
 
-**caus-1)** <div n="1"> 1) {%дать услышать, возвещать%}
-<ls>YĀJÑ. 2,112.</ls> {#saMSrAvayannaDvani deSikendraH#}
-<ls>Verz. d. Oxf. H. 259,a,19.</ls> {#ruditaDvanim#}
-<ls>KATHĀS. 72,50.</ls> {#vArttAm#}
-<ls>R. 3,63,28.</ls> {#nAma saMSrAvya cAtmanaH#} {%называя свое имя%}
-<ls>MBH. 15,732.</ls>
-<ls>R. GORR. 2,2,18.</ls> <ls n="R. GORR.">6,79,10.</ls>
-<ls>KATHĀS. 20,40.</ls> {#saMSrAvyamARezu rAjYAM nAmasu#}
-<ls>MBH. 12,118.</ls> {#vAco rUkzAH saMSrAvayan#}
-<ls n="MBH.">8,309.</ls> {#paruzARi#}
-<ls>R. 4,8,21.</ls> {#Bagavate paruzARi#}
-<ls>BHĀG. P. 10,74,30.</ls> с <ab>acc.</ab> лица (также рядом с <ab>acc.</ab> предмета) {%довести что-либо до чьих-либо ушей%}
-<ls>MBH. 5,560.</ls>
-<ls>BHĀG. P. 1,3,42.</ls> {#etAn SabdaM saMSrAvya#}
-<ls>PAÑCAT. 172,25.</ls> {#saMSrAvitatalleKO#}, так <ab>v. a.</ab> {%прочитанный вслух%}
-<ls>KATHĀS. 43,271.</ls>
+**add.)** — ср. *pariśruta* .
 
-**caus-2)** <div n="1">— 2) {%заставлять звучать, издавать звук%}: {#jImUta iva GarmAnte sarvaM saMSrAvayansaBAm#}
-<ls>MBH. 5,3385.</ls>
+**caus-1)** 1) дать услышать, возвещать
+[YĀJÑ. 2,112.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,112) *saṃśrāvayannadhvani deśikendraḥ*
+[Verz. d. Oxf. H. 259,a,19.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259) *ruditadhvanim*
+[KATHĀS. 72,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,50) *vārttām*
+[R. 3,63,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,63,28) *nāma saṃśrāvya cātmanaḥ* называя свое имя
+[MBH. 15,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.732) = [≈Вульг. 15.27.18](mbh/15.27.html#v18) = ≈крит. 15,34.18a
+[R. GORR. 2,2,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,2,18) [6,79,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,10)
+[KATHĀS. 20,40.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,40) *saṃśrāvyamāṇeṣu rājñāṃ nāmasu*
+[MBH. 12,118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.118) = [≈Вульг. 12.4.11](mbh/12.4.html#v11) = ≈крит. 12,4.11a *vāco rūkṣāḥ saṃśrāvayan*
+[8,309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.309) = [≈Вульг. 8.9.60](mbh/8.9.html#v60) = ≈крит. 08,5.79c *paruṣāṇi*
+[R. 4,8,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,21) *bhagavate paruṣāṇi*
+[BHĀG. P. 10,74,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,74,30) с acc. лица (также рядом с acc. предмета) довести что-либо до чьих-либо ушей
+[MBH. 5,560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.560) = [≈Вульг. 5.18.19](mbh/5.18.html#v19) = ≈крит. 05,18.19a
+[BHĀG. P. 1,3,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,42) *etān śabdaṃ saṃśrāvya*
+[PAÑCAT. 172,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?172,25) *saṃśrāvitatallekhau*, так преим. прочитанный вслух
+[KATHĀS. 43,271.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,271)
 
-**caus-3)** <div n="1">— 3) {%заставлять звучать, производить звук%}: {#dunduBim#}
-<ls>MBH. 6,1628.</ls> {#tato 'ntarIkze vAgAsItsarvA viSrAvayan#} (вм. {#˚SrAvayantI) diSaH#}
-<ls n="MBH.">3,16556.</ls>
+**caus-2)** — 2) заставлять звучать, издавать звук: *jīmūta iva gharmānte sarvaṃ saṃśrāvayansabhām*
+[MBH. 5,3385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3385) = [≈Вульг. 5.95.46](mbh/5.95.html#v46) = ≈крит. 05,93.46a
 
-**caus-note)** <div n="v">— <ab>Vgl.</ab> {#saMSrava#} <ab>u. s. w.</ab> — <ab>caus.</ab>
+**caus-3)** — 3) заставлять звучать, производить звук: *dundubhim*
+[MBH. 6,1628.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1628) = [≈Вульг. 6.43.100](mbh/6.43.html#v100) = ≈крит. 06,41.95c *tato 'ntarīkṣe vāgāsītsarvā viśrāvayan* (вм. *˚śrāvayantī) diśaḥ*
+[3,16556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16556) = [≈Вульг. 3.291.26](mbh/3.291.html#v26) = ≈крит. 03,275.25c
 
-**caus.)** <div n="p">— <ab>caus.</ab> vom <ab>desid.</ab> = <ab>desid.</ab> {%быть в услужении у кого-л.%}: {#garuM SuSrUzayet#}
-<ls>KULL.</ls> к <ls>M. 2,243.</ls>, возможно, лишь ошибочное написание вм. {#SuSrUzeta#}.
+**caus-note)** — ср. *saṃśrava* и т.д. — caus.
 
-**caus. 1))** <div n="v">— <ab>Vgl.</ab> 1. {#ASrava, ASrut, ASruti#} . — <ab>caus.</ab>
-<div n="1"> 1) {%возвещать, объявлять, делать известным%}: {#A no\ jane^ Sravayatam#}
-<ls>ṚV. 7,62,5.</ls> {#A\SrA\vaya^nta iva\ Sloka^mA\yava^H#}
-<ls n="ṚV.">1,139,3.</ls> {#yajYaM devezvASrAvaya#}
-<ls>ĀŚV. ŚR. 1,3,23.</ls> {#ASrAvayacca tatkarma#}
-<ls>MBH. 3,15260.</ls>
-<ls>BHĀG. P. 5,6,17.</ls> <ls n="BHĀG. P.">10,70,40</ls> (<ab>med.</ab>). <ls n="BHĀG. P. 10,">73,34.</ls>
+**caus.)** — caus. vom desid. = desid. быть в услужении у кого-л.: *garuṃ śuśrūṣayet*
+[KULL.] к [M. 2,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,243), возможно, лишь ошибочное написание вм. *śuśrūṣeta*.
 
-**caus. 2))** <div n="1">— 2) {%обращаться к, взывать к%}: {#yo jA\tAnyA^SrA\vaya^ti\ Sloke^na#}
-<ls>ṚV. 5,82,9.</ls> {#A dyAM rave^Ra pfTi\vIma^SuSruvuH#}
-<ls n="ṚV.">10,94,12.</ls> с <ab>dopp.</ab> <ab>acc.</ab> {%говорить кому-л. что-л.%}: {#ASrAvya rAmaM durvAcyam#}
-<ls>BHĀG. P. 10,68,29.</ls>
+**caus. 1))** — ср. 1. *āśrava, āśrut, āśruti* . — caus.
+ 1) возвещать, объявлять, делать известным: *ā no jane śravayatam*
+[ṚV. 7,62,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.062.html#rv07.062.05) *āśrāvayanta iva ślokamāyavaḥ*
+[1,139,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.139.html#rv01.139.03) *yajñaṃ deveṣvāśrāvaya*
+[ĀŚV. ŚR. 1,3,23.] *āśrāvayacca tatkarma*
+[MBH. 3,15260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15260) = [≈Вульг. 3.254.25](mbh/3.254.html#v25) = крит. —
+[BHĀG. P. 5,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,17) [10,70,40](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,70,40) (мед.). [73,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,73,34)
 
-**caus. 3))** <div n="1">— 3) в особенности о ритуальном возгласе, в частности <is>Adhvaryu</is> к <is>Agnīdh</is> с целью произнесения формулы {#SrOzaw#}
-<ls>AV. 9,6,49.</ls>
-<ls>VS. 19,24.</ls> {#A sva\DetyASrA^vayati#}
-<ls>TBR. 1,6,9,5.</ls> {#ASrA^va\yetI\daM de^vAH SfRu\teti^#}
-<ls>TS. 2,5,11,8.</ls> <ls n="TS.">3,1,2,3.</ls>
-<ls>ŚAT. BR. 1,5,1,1. fgg.</ls> <ls n="ŚAT. BR. 1,5,">2,7.</ls> <ls n="ŚAT. BR. 1,5,">3,7.</ls> <ls n="ŚAT. BR.">2,5,2,34.</ls>
-<ls>ĀŚV. ŚR. 1,3,23. 4,12. 4,15,11. 9,7,9.</ls> {#omityASrAvayati#}
-<ls>CHĀND. UP. 1,1,9.</ls> {#oSrAvayetyASrAvayanti#}
-<ls>TAITT. UP. 1,1,8</ls>; <ab>vgl.</ab>
-[Page7-0380]
-<ls>P. 8,2,92</ls>, <is>Vārtt</is>. {#ASrAvita#} <lex>n.</lex> ритуальный возглас: {#a\gni\ho\trasyASrA^vitam#}
-<ls>TBR. 2,1,5,9.</ls>
-<ls>ŚAT. BR. 11,4,2,5.</ls>
-<ls>KĀTY. ŚR. 3,3,14.</ls>
+**caus. 2))** — 2) обращаться к, взывать к: *yo jātānyāśrāvayati ślokena*
+[ṚV. 5,82,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.09) *ā dyāṃ raveṇa pṛthivīmaśuśruvuḥ*
+[10,94,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.12) с dopp. acc. говорить кому-л. что-л.: *āśrāvya rāmaṃ durvācyam*
+[BHĀG. P. 10,68,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,68,29)
 
-**caus. 4))** <div n="1">— 4) {%призывать, подзывать к себе%}: {#parasya janam#}
-<ls>BHAṬṬ. 12,30.</ls>
+**caus. 3))** — 3) в особенности о ритуальном возгласе, в частности Адхварйу к Агнид с целью произнесения формулы *śrauṣaṭ*
+[AV. 9,6,49.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.49)
+[VS. 19,24.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,24) *ā svadhetyāśrāvayati*
+[TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,9,5) *āśrāvayetīdaṃ devāḥ śṛṇuteti*
+[TS. 2,5,11,8.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,11,8) [3,1,2,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,2,3)
+[ŚAT. BR. 1,5,1,1. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,1,1) [2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,2,7) [3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,7) [2,5,2,34.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,34)
+[ĀŚV. ŚR. 1,3,23. 4,12. 4,15,11. 9,7,9.] *omityāśrāvayati*
+[CHĀND. UP. 1,1,9.] *ośrāvayetyāśrāvayanti*
+[TAITT. UP. 1,1,8]; ср.
 
-**caus. 5))** <div n="1">— 5) {%заклинать, нашептывать над (кем-л.)%}: {#ASrAvita (mantra)#}
-<ls>R. 5,82,10.</ls>
+[P. 8,2,92](https://ashtadhyayi.com/sutraani/8/2/92), Вартт. *āśrāvita* _n._ ритуальный возглас: *agnihotrasyāśrāvitam*
+[TBR. 2,1,5,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,5,9)
+[ŚAT. BR. 11,4,2,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,2,5)
+[KĀTY. ŚR. 3,3,14.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,3,14)
 
-**cross-ref)** <div n="v">— <ab>Vgl.</ab> {#SuSrUzaka#} <ab>fgg.</ab>
+**caus. 4))** — 4) призывать, подзывать к себе: *parasya janam*
+[BHAṬṬ. 12,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,30)
 
-**desid.)** <div n="p">— <ab>desid.</ab> <ab>vom.</ab> <ab>caus.</ab> {#SiSrAvayizati#} и {#SuSrAvayizati#}
-<ls>P. 7,4,81.</ls>
-<ls>VOP. 19,15.</ls>
+**caus. 5))** — 5) заклинать, нашептывать над (кем-л.): *āśrāvita (mantra)*
+[R. 5,82,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,10)
 
-**desid. intro)** <div n="p">— <ab>desid.</ab> {#Su/SrUzate#}
-<ls>P. 1,3,57.</ls>
-<ls>VOP. 23,57.</ls> в эпосе по метрическим соображениям также <ab>med.</ab>
+**cross-ref)** — ср. *śuśrūṣaka* сл.
 
-**note)** <div n="v">— <ab>Vgl.</ab> {#pratiSrava#} <ab>fgg.</ab> — <ab>desid.</ab> {#˚SuSrUzati#} (не <ab>med.</ab>)
-<ls>P. 1,3,59.</ls>
-<ls>VOP. 23,57.</ls>
+**desid.)** — desid. vom. caus. *śiśrāvayiṣati* и *śuśrāvayiṣati*
+[P. 7,4,81.](https://ashtadhyayi.com/sutraani/7/4/81)
+[VOP. 19,15.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,15)
 
-**pariśru verb)** <div n="p">— {#pari#} {%слышать, воспринимать на слух%}: {#patiM hi pariSfRvantI rAmam#} {%услышав о, узнав что-л. о%}
-<ls>R. 5,29,35.</ls> {#tAmAgatAM pariSrutya#}
-<ls n="R.">6,99,19.</ls> — <ab>partic.</ab> {#˚Sruta#}
+**desid. intro)** — desid. *śuśrūṣate*
+[P. 1,3,57.](https://ashtadhyayi.com/sutraani/1/3/57)
+[VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57) в эпосе по метрическим соображениям также мед.
 
-**pratyāśru)** <div n="p">— {#pratyA#}, <ab>partic.</ab> {#˚Sruta#} <lex>n.</lex> = {#pratyA/SrAvita#}
-<ls>TS. 7,3,11,2.</ls>
-<ls>KĀTY. ŚR. 3,2,6.</ls> <ls n="KĀTY. ŚR.">5,4,33.</ls> <ls>Z. d. d. m. G. 9, LXII.</ls> <ab>Vgl.</ab> {#pratyASrAva#} . — <ab>caus.</ab> отвечать на ритуальный возглас (словами вроде {#astu svaDA, astu SrOzaw#}
-<ab>u. s. w.</ab>) <ls>TBR. 1,6,9,5.</ls> <ls>ŚAT. BR. 1,5,2,7.</ls> <ls n="ŚAT. BR.">2,6,1,25.</ls> <ls>ĀŚV. ŚR. 9,7,10. 1,4,13.</ls> <ab>partic.</ab> {#pratyA/SrAvita#} <lex>n.</lex> ответ на ритуальный возглас
-<ls>TBR. 2,1,5,9.</ls>
-<ls>ŚAT. BR. 14,9,3,9.</ls> <ab>Vgl.</ab> {#pratyASrAvaRa#} .
+**note)** — ср. *pratiśrava* сл. — desid. *˚śuśrūṣati* (не мед.)
+[P. 1,3,59.](https://ashtadhyayi.com/sutraani/1/3/59)
+[VOP. 23,57.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,57)
 
-**samupaśru)** <div n="p">— {#samupa#} {%выслушивать, слышать, воспринимать на слух%}: {#BartfBagavatkaTAM samupaSfRoti#}
-<ls>BHĀG. P. 5,19,2.</ls> {#tezAM tu samupaSrutya sUtamAgaDabandinAm . sarvA bubuDire#}
-<ls>R. GORR. 2,67,4.</ls> {#brAhmaRAtsamupaSrutya#}
-<ls>MBH. 1,384.</ls>
+**pariśru verb)** — *pari* слышать, воспринимать на слух: *patiṃ hi pariśṛṇvantī rāmam* услышав о, узнав что-л. о
+[R. 5,29,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,29,35) *tāmāgatāṃ pariśrutya*
+[6,99,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,99,19) — partic. *˚śruta*
 
-**samāśru)** <div n="p">— {#samA#} <ab>caus.</ab> с <ab>dopp.</ab> <ab>acc.</ab> {%сообщать кому-л. что-л.%}: {#kfzRarAmO#} (<ab>acc.</ab>) {#samASrAvya putrAnkaMsavihiMsitAn#}
-<ls>BHĀG. P. 10,85,28.</ls>
+**pratyāśru)** — *pratyā*, partic. *˚śruta* _n._ = *pratyāśrāvita*
+[TS. 7,3,11,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,3,11,2)
+[KĀTY. ŚR. 3,2,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,2,6) [5,4,33.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?5,4,33) [Z. d. d. m. G. 9, LXII.] ср. *pratyāśrāva* . — caus. отвечать на ритуальный возглас (словами вроде *astu svadhā, astu śrauṣaṭ*
+и т.д.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,6,9,5) [ŚAT. BR. 1,5,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,2,7) [2,6,1,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,1,25) [ĀŚV. ŚR. 9,7,10. 1,4,13.] partic. *pratyāśrāvita* _n._ ответ на ритуальный возглас
+[TBR. 2,1,5,9.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,1,5,9)
+[ŚAT. BR. 14,9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9) ср. *pratyāśrāvaṇa* .
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>2.</hom> √{#Sru#} = {#sru#} приходить в движение (в особенности о частях), расходиться, растекаться. Только {#Sruvat#} и {#Sruvanta#}. В более поздних текстах просто ошибка вм. {#sru#}.
+**samupaśru)** — *samupa* выслушивать, слышать, воспринимать на слух: *bhartṛbhagavatkathāṃ samupaśṛṇoti*
+[BHĀG. P. 5,19,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,2) *teṣāṃ tu samupaśrutya sūtamāgadhabandinām . sarvā bubudhire*
+[R. GORR. 2,67,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,67,4) *brāhmaṇātsamupaśrutya*
+[MBH. 1,384.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.384) = [≈Вульг. 1.2.155](mbh/1.2.html#v155) = крит. —
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#A#} (только {#A/ — aSrot#}) {%отступать, уступать%}.
+**samāśru)** — *samā* caus. с dopp. acc. сообщать кому-л. что-л.: *kṛṣṇarāmau* (acc.) *samāśrāvya putrānkaṃsavihiṃsitān*
+[BHĀG. P. 10,85,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,28)
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#pra#} <ab>Caus.</ab> ({#˚Sravayati#} и {#˚SrAvayati#}) {%продвигать вперед%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **2.** √*śru* = *sru* приходить в движение (в особенности о частях), расходиться, растекаться. Только *śruvat* и *śruvanta*. В более поздних текстах просто ошибка вм. *sru*.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#vi#} в <hom>2.</hom> {#viSruti#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* (только *ā — aśrot*) отступать, уступать.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#sam#}, {#sa/MSruta#} {%слившийся вместе, стекшийся%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* Caus. (*˚śravayati* и *˚śrāvayati*) продвигать вперед.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#Sru#} VI. {#SuSrAva#} с <ab>pass.</ab> <ab>Bed.</ab> <ls>R. 7,27,23</ls>.
-— С {#upa#} VI. {%давать обет, обещаться%} <ls>JĀTAKAM. 31</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi* в **2.** *viśruti*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#Sru#} с {#prati#} VI. следует добавить: отвечать.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam*, *saṃśruta* слившийся вместе, стекшийся.
 
-**+)** [SCH·sch_star → не привязано: цель не указана] 1. {%[śru]%}, {%śuśrāva%} с пассивным значением, <ls>R. 7,27,23.</ls> — С {%upa%} давать обет, <ls>Jātakam. 31.</ls> — С {%prati%} следует добавить «отвечать».
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*śru* VI. *śuśrāva* с pass. знач. [R. 7,27,23](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23).
+— С *upa* VI. давать обет, обещаться [JĀTAKAM. 31].
 
-## h2
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*śru* с *prati* VI. следует добавить: отвечать.
 
-**1)** 1. {#Sru#}¦ с {#aBi#} <ab>caus.</ab> {%дать кому-либо услышать что-либо, говорить о ком-либо что-либо, обсуждать%}; с двойным <ab>acc.</ab>
-<ls>SĀMAVIDH. BR. 2,3,2.</ls> с <ab>instr.</ab> и <ab>acc.</ab> <ls n="SĀMAVIDH. BR. 2,">4,7.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1. [śru], śuśrāva с пассивным значением, [R. 7,27,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,27,23) — С upa давать обет, [Jātakam. 31.] — С prati следует добавить «отвечать».
 
-## h1
+## омоним h2
 
-**2)** 2. {#Sru#}¦ = {#sru#}.{# Sru/vat, Sruvantu#} {%приходить в движение%} (в особенности {%о частях тела): расходиться, растекаться%}: {#ta A ga^mantu\ ta i\ha Sru^vantu#}
-<ls>ṚV. 6,49,1.</ls> <ls n="ṚV.">10,15,5</ls> (по <ab>Comm.</ab> к 1. {#Sru)#}.{# vI\Lu ci\dasya\ samf^tO\ Sruva\dvane^va\ yatsTi\ram#}
-<ls n="ṚV.">1,127,3.</ls> В более поздних текстах этот корень и его производные нередко пишутся с палатальным сибилянтом. Соответствующие места мы отсылаем, однако, под {#sru#} .
-<div n="p">— {#A#} <ab>dass.</ab>: {#A vo\ yAmA^ya pfTi\vI ci^daSrot#} {%сама земля уступала вашему движению%}
-<ls>ṚV. 1,39,6.</ls>
-<div n="p">— {#pra#} <ab>caus.</ab> {%продвигать вперед%}: {#prASrA^vayaM tu\rvaSa\M yadu^m#}
-<ls>ṚV. 10,49,8.</ls> {#prAnDaM Sro\RaM Sra\vaya^n#}
-<ls n="ṚV.">2,13,12.</ls>
-<div n="p">— {#vi#} <ab>s.</ab> 2. {#viSruti#} .
-<div n="p">— {#sam#} {%стекаться%}: {#yadva\stAvaDi\ saMSru^tam#}
-<ls>AV. 1,3,6.</ls>
+**1)** 1. *śru* с *abhi* caus. дать кому-либо услышать что-либо, говорить о ком-либо что-либо, обсуждать; с двойным acc.
+[SĀMAVIDH. BR. 2,3,2.] с instr. и acc. [4,7.]
+
+## омоним h1
+
+**2)** 2. *śru* = *sru*.* śruvat, śruvantu* приходить в движение (в особенности о частях тела): расходиться, растекаться: *ta ā gamantu ta iha śruvantu*
+[ṚV. 6,49,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.049.html#rv06.049.01) [10,15,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.05) (по коммент. к 1. *śru)*.* vīLu cidasya samṛtau śruvadvaneva yatsthiram*
+[1,127,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.03) В более поздних текстах этот корень и его производные нередко пишутся с палатальным сибилянтом. Соответствующие места мы отсылаем, однако, под *sru* .
+— *ā* то же: *ā vo yāmāya pṛthivī cidaśrot* сама земля уступала вашему движению
+[ṚV. 1,39,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.039.html#rv01.039.06)
+— *pra* caus. продвигать вперед: *prāśrāvayaṃ turvaśaṃ yadum*
+[ṚV. 10,49,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.08) *prāndhaṃ śroṇaṃ śravayan*
+[2,13,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.013.html#rv02.013.12)
+— *vi* см. 2. *viśruti* .
+— *sam* стекаться: *yadvastāvadhi saṃśrutam*
+[AV. 1,3,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.003.html#av01.003.06)

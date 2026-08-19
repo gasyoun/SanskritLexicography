@@ -1,759 +1,761 @@
-# Re-glue — gA
+Re-glue — gA
 
-## h0
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
 
-**1)** <div n="p">— {#anupari#} {%проходить насквозь, обходить, странствовать по%}: {#yadA ca pfTivIM sarvAM yajamAno 'nuparyagAH#}
-<ls>MBH. 12,8081.</ls>
-  — [NWS·nws_at_sense] {#gā (=pw gā 1)#} идти, приходить, странствовать. уходить. приходить к кому-л. (Akk) (с личными подлежащими). приходить к какому-л. месту (Akk) или направляться туда (место, укрытие). идти дорогой (Akk, Instr). враждебно нападать на (Akk). достигать, получать что-л. (Akk). идти куда-л. (Lok или нар. места). происходить [о каком-л. действии]. приходить кому-л. (Dat), т. е. появляться у него, доставаться ему. обращаться к кому-л. (Akk) (с песнями), воспевать. другая форма для gam
-  — [PW·restate] <hom>1.</hom> √{#gA#}¦, {#ji/gAti#}, *{#jagAti#} (*{#jagAyA/t#}), *{#gA/ti#} (<ls>NAIGH. 2,14</ls>) и *{#gAte#} — 1〉 приходить.
-  — [PW·restate] <hom>2.</hom> {#˚gA#}¦ <lex>Adj.</lex> {%идущий к, идущий, странствующий%}.
-  — [PW·restate] <hom>4.</hom> {#gA#}¦
-<div n="1">— 1〉 <lex>Adj.</lex> в конце <ab>Comp.</ab> {%поющий%}.
+## омоним h0
 
-**2)** <div n="1">— 2) {%прийти, достигнуть, настигнуть кого-либо%}: {#pra vA^M Gf\tAcI^ bA\hvordaGA^nA\ pari\ tmanA\ vizu^rUpA jigAti#}
-<ls>ṚV. 7,84,1.</ls> {#vayo^ vayo jarase\ yaddaDA^na\H pari\ tmanA\ vizu^rUpo jigAsi#}
-<ls n="ṚV.">5,15,4.</ls> {#jarA balI ca mAM tAta palitAni ca paryaguH#}
-<ls>MBH. 1,3647.</ls>
-  — [NWS·nws_at_sense] ( III ) идти, входить в; уходить. <ls n="ṚV. 10,108,9">ṚV 10,108,9</ls>
-  — [PW·restate] — 2〉 приходить — , идти к или в направлении, направляться к, обращаться к; с <ab>Acc.</ab> или <ab>Loc.</ab>
-  — [PW·restate] <div n="1">— 2〉 *<lex>f.</lex> {%пение, стих%}.
+**1)** — *anupari* проходить насквозь, обходить, странствовать по: *yadā ca pṛthivīṃ sarvāṃ yajamāno 'nuparyagāḥ*
+[MBH. 12,8081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8081) = [≈Вульг. 12.226.6](mbh/12.226.html#v6) = ≈крит. 12,219.6a
+  — ʰ NWS *gā (=pw gā 1)* идти, приходить, странствовать. уходить. приходить к кому-л. (Acc.) (с личными подлежащими). приходить к какому-л. месту (Acc.) или направляться туда (место, укрытие). идти дорогой (Acc., Ins.). враждебно нападать на (Acc.). достигать, получать что-л. (Acc.). идти куда-л. (Loc. или нар. места). происходить [о каком-л. действии]. приходить кому-л. (Dat.), т. е. появляться у него, доставаться ему. обращаться к кому-л. (Acc.) (с песнями), воспевать. другая форма для gam
+  — ʰ PW **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и **gāte* — 1〉 приходить.
+  — ʰ PW **2.** *˚gā* _Adj._ идущий к, идущий, странствующий.
+  — ʰ PW **4.** *gā*
+— 1〉 _Adj._ в конце Comp. поющий.
 
-**3)** <div n="1">— 3) обходить так <ab>v. a.</ab> уклоняться: {#pari^ tve\zasya^ durma\tirma\hI gA^t#}
-<ls>ṚV. 2,33,14.</ls> {#pari^ Gra\Msamo\manA^ vA\M vayo^ gAt#}
-<ls n="ṚV.">7,69,4.</ls> не обращать внимания, пропускать мимо ушей: {#yatkiM ca vadAmi tanme mA parigAteti#}
-<ls>AIT. BR. 6,33.</ls>
-  — [NWS·nws_at_sense] идти, уходить; приходить в движение, приходить; достигать. <ls n="ṚV. 10,108,9">ṚV 10,108,9</ls> , <ls n="ṚV. 1,2,3">ṚV 1,2,3</ls> , <ls n="ṚV. 3,31,1">ṚV 3,31,1</ls>
-  — [PW·restate] — 3〉 {%преследовать, следовать за%} <ls>ṚV. 4,3,13. 10,18,4</ls>.
+**2)** — 2) прийти, достигнуть, настигнуть кого-либо: *pra vāṃ ghṛtācī bāhvordaghānā pari tmanā viṣurūpā jigāti*
+[ṚV. 7,84,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.084.html#rv07.084.01) *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
+[5,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04) *jarā balī ca māṃ tāta palitāni ca paryaguḥ*
+[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = [≈Вульг. 1.92.3](mbh/1.92.html#v3) = ≈крит. 01,87.3a
+  — ＋ NWS ( III ) идти, входить в; уходить. [ṚV 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09)
+  — → PW — 2〉 приходить — , идти к или в направлении, направляться к, обращаться к; с Acc. или Loc.
+  — ＋ PW — 2〉 *_f._ пение, стих.
 
-**4)** <div n="1">— 4) {%дознаться, получить знание о чем-либо%}: {#yo hyAtmamAyAviBavaM sma paryagAdyaTA naBaH svAntamaTApare kutaH#}
-<ls>BHĀG. P. 2,6,35.</ls> <ls>BURNOUF</ls> : ({%qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.%}
-  — [NWS·nws_at_sense] идти. AV(P) 9.10,10
-  — [PW·restate] — 4〉 приходить к кому-л. (<ab>Dat.</ab>), так <ab>v. a.</ab> — появляться при <ls>ṚV. 8,45,32</ls>. доставаться кому-л. (<ab>Acc.</ab>) (об имени).
+**3)** — 3) обходить так преим. уклоняться: *pari tveṣasya durmatirmahī gāt*
+[ṚV. 2,33,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.14) *pari ghraṃsamomanā vāṃ vayo gāt*
+[7,69,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.069.html#rv07.069.04) не обращать внимания, пропускать мимо ушей: *yatkiṃ ca vadāmi tanme mā parigāteti*
+[AIT. BR. 6,33.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,33)
+  — ＋ NWS идти, уходить; приходить в движение, приходить; достигать. [ṚV 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09) , [ṚV 1,2,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.002.html#rv01.002.03) , [ṚV 3,31,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.01)
+  — ＋ PW — 3〉 преследовать, следовать за [ṚV. 4,3,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13) [ṚV. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04).
 
-**5)** <div n="1">— 5) {%с победой преодолеть, превозмочь, счастливо избежать%}: {#atyagAnmAyAM devAnAm#}
-<ls>BHĀG. P. 9,20,27.</ls> {#hiraRyakaSipuScApi BagavannindayA tamaH . vivikzuratyagAtsUnoH prahrAdasyAnuBAvataH ..#}
-<ls n="BHĀG. P.">4,21,46.</ls>
-  — [NWS·nws_at_sense] {#nur in der Form gātá , die auch zu gā , singen, gezogen werden könnte.#} + accha: направляться к чему-л. <ls n="ṚV. 3,31,6">ṚV 3,31,6</ls>
-  — [PW·restate] — 5〉 приходить в какое-л. состояние, положение, отношение (<ab>Acc.</ab>), приобщаться.
+**4)** — 4) дознаться, получить знание о чем-либо: *yo hyātmamāyāvibhavaṃ sma paryagādyathā nabhaḥ svāntamathāpare kutaḥ*
+[BHĀG. P. 2,6,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35) [BURNOUF] : (qui,) semblable au ciel qui ne (!) connait pas ses limites, n'a pu (!) encore atteindre le terme de la puissance de sa Māyā.
+  — ≈ NWS идти. AV(P) 9.10,10
+  — ＋ PW — 4〉 приходить к кому-л. (Dat.), так преим. — появляться при [ṚV. 8,45,32](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.32). доставаться кому-л. (Acc.) (об имени).
 
-**6)** <div n="1">— 6) {%проходить мимо, оставлять без внимания%}: {#na cEnamatyagAdvahnirvelAmiva mahodaDiH#} {%он внял ему, сделал то, чего тот требовал%}
-<ls>MBH. 2,1157.</ls> {#so 'mftasyABayasyeSo martyamannaM yadatyagAt#} (по
-<ls>BURNOUF</ls> иное понимание)
-<ls>BHĀG. P. 2,6,17.</ls> {#prAptakAlamidaM manye mA tvaM duryoDanAtyagAH#} {%упустить%}
-<ls>MBH. 5,4212.</ls>
-  — [NWS·nws_at_sense] {#+ áccha : hingehen zu (Akk).#} + áti: переходить через что-л. (Akk), проходить сквозь.
-  — [PW·restate] — 6〉 {%отправляться, уходить, удаляться%} <ls>ṚV. 10,108,9</ls>. с <ab>Abl.</ab> {%— откуда и%} <ab>Loc.</ab> {%— куда%}.
+**5)** — 5) с победой преодолеть, превозмочь, счастливо избежать: *atyagānmāyāṃ devānām*
+[BHĀG. P. 9,20,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,20,27) *hiraṇyakaśipuścāpi bhagavannindayā tamaḥ . vivikṣuratyagātsūnoḥ prahrādasyānubhāvataḥ ..*
+[4,21,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,46)
+  — ＋ NWS *nur in der ṝorm gātá , die auch ṣu gā , singen, geṣogen ṭerden könnte.* + accha: направляться к чему-л. [ṚV 3,31,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.06)
+  — ＋ PW — 5〉 приходить в какое-л. состояние, положение, отношение (Acc.), приобщаться.
 
-**note)** <div n="v">— <ab>Vgl.</ab> {#i#} с {#aDi#} .
+**6)** — 6) проходить мимо, оставлять без внимания: *na cainamatyagādvahnirvelāmiva mahodadhiḥ* он внял ему, сделал то, чего тот требовал
+[MBH. 2,1157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1157) = [≈Вульг. 2.31.53](mbh/2.31.html#v53) = ≈крит. 02,28.31c *so 'mṛtasyābhayasyeśo martyamannaṃ yadatyagāt* (по
+[BURNOUF] иное понимание)
+[BHĀG. P. 2,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,17) *prāptakālamidaṃ manye mā tvaṃ duryodhanātyagāḥ* упустить
+[MBH. 5,4212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4212) = [≈Вульг. 5.128.16](mbh/5.128.html#v16) = ≈крит. 05,126.16a
+  — ＋ NWS *+ áccha : hingehen ṣu (ākk).* + áti: переходить через что-л. (Acc.), проходить сквозь.
+  — ＋ PW — 6〉 отправляться, уходить, удаляться [ṚV. 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09). с Abl. — откуда и Loc. — куда.
 
-**pra)** <div n="p">— {#pra#} {%выступать вперед, уходить, идти, приходить в движение%}: {#f\zvA te\ pAdA\ pra yajjigA^si#}
-<ls>ṚV. 10,73,3.</ls> {#mA pra gA^ma pa\To va\yam#}
-<ls n="ṚV. 10,">57,1.</ls> {#sU\ryAyA^ vaha\tuH prAgA^t#}
-<ls n="ṚV. 10,">85,13.</ls> {#pra dIDi^tirjigAti#}
-<ls n="ṚV.">3,4,3.</ls> <ls n="ṚV.">7,104,17.</ls> <ls n="ṚV.">8,48,2.</ls> {#soma^sya ji\hvA pra ji^gAti\ cakza^sA#}
-<ls n="ṚV.">1,87,5.</ls> <ls n="ṚV. 1,">85,6.</ls> <ls>VĀLAKH. 1,2.</ls> {#prAgA^ddevapu\rA a\yam#}
-<ls>AV. 5,28,9.</ls> {#sA gadA tatkarAnmuktA prAgAddroRajiGAMsayA#}
-<ls>MBH. 6,2212.</ls> Сюда относится по форме <ab>partic.</ab> {#praji/gat#}, которое
-<ls>SĀY.</ls> к <ls n="MBH.">2.</ls> {#gA#} притягивает: {#ka\dA ca\na pra\jiga^to\ ade^vayoH#}
-<ls>ṚV. 1,150,2.</ls>
+**note)** — ср. *i* с *adhi* .
 
-**prati)** <div n="p">— {#prati#} {%возвращаться%}: {#svaDAma pratyagAtpraBuH#}
-<ls>BHĀG. P. 4,20,37.</ls>
+**pra)** — *pra* выступать вперед, уходить, идти, приходить в движение: *ṛṣvā te pādā pra yajjigāsi*
+[ṚV. 10,73,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.073.html#rv10.073.03) *mā pra gāma patho vayam*
+[57,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.057.html#rv10.057.01) *sūryāyā vahatuḥ prāgāt*
+[85,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.13) *pra dīdhitirjigāti*
+[3,4,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.03) [7,104,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.17) [8,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02) *somasya jihvā pra jigāti cakṣasā*
+[1,87,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.087.html#rv01.087.05) [85,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.06) [VĀLAKH. 1,2.] *prāgāddevapurā ayam*
+[AV. 5,28,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.09) *sā gadā tatkarānmuktā prāgāddroṇajighāṃsayā*
+[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) = [≈Вульг. 6.53.19](mbh/6.53.html#v19) = ≈крит. 06,49.19a Сюда относится по форме partic. *prajigat*, которое
+[SĀY.] к [2.] *gā* притягивает: *kadā cana prajigato adevayoḥ*
+[ṚV. 1,150,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.150.html#rv01.150.02)
 
-**sam 1))** <div n="p">— {#sam#}
-<div n="1"> 1) {%сходиться, собираться вместе%}
-<ls>AV. 19,57,2.</ls>
+**prati)** — *prati* возвращаться: *svadhāma pratyagātprabhuḥ*
+[BHĀG. P. 4,20,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,20,37)
 
-**sam 2))** <div n="1">— 2) {%идти к, направляться к%}: {#paraM samagAtsvaDAma#}
-<ls>BHĀG. P. 9,24,66.</ls> {#ESvaraM samagAtpadam#}
-<ls n="BHĀG. P.">4,31,27.</ls>
+**sam 1))** — *sam*
+ 1) сходиться, собираться вместе
+[AV. 19,57,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.057.html#av19.057.02)
 
-**upapra)** <div n="p">— {#upapra#} {%приходить, подступать к%}: {#upa\ prAgA^dde\vaH#}
-<ls>AV. 1,28,1.</ls> <ls n="AV. 1,28,">6.</ls> <ls n="AV. 1,">37,1.</ls> {#upa\ prAgA\cCasa^naM vA\jyarvA^#}
-<ls>ṚV. 1,163,12.</ls> <ls n="ṚV. 1,163,">13.</ls> <ls n="ṚV. 1,">162,7.</ls> {#upa^ de\vAndEvI\rviSa\H prAgu^H#}
-<ls>VS. 6,7.</ls>
+**sam 2))** — 2) идти к, направляться к: *paraṃ samagātsvadhāma*
+[BHĀG. P. 9,24,66.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,66) *aiśvaraṃ samagātpadam*
+[4,31,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,31,27)
 
-**vi)** <div n="p">— {#vi#} {%проходить, исчезать%}: {#pUrRaM me mA vigAt#}
-<ls>PĀR. GṚHY. 2,16.</ls>
+**upapra)** — *upapra* приходить, подступать к: *upa prāgāddevaḥ*
+[AV. 1,28,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.028.html#av01.028.01) [6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.028.html#av01.028.06) [37,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.037.html#av01.037.01) *upa prāgācchasanaṃ vājyarvā*
+[ṚV. 1,163,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.12) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.13) [162,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.07) *upa devāndaivīrviśaḥ prāguḥ*
+[VS. 6,7.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,7)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ádhi : e. Sache oder Person (Gen) gedenken, achten auf (Gen).#} + ánu: 1) следовать за кем-л. (Akk), идти вслед; 2) следовать = разыскивать (Akk); 3) следовать чему-л., руководствоваться (Akk); 4) проходить мимо.
+**vi)** — *vi* проходить, исчезать: *pūrṇaṃ me mā vigāt*
+[PĀR. GṚHY. 2,16.]
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ánu ā́ : nachfolgen.#} + anupra (° geṣma). AV(P) 16.92,6
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ádhi : e. śache oder pherson (ghen) gedenken, achten auṛ (ghen).* + ánu: 1) следовать за кем-л. (Acc.), идти вслед; 2) следовать = разыскивать (Acc.); 3) следовать чему-л., руководствоваться (Acc.); 4) проходить мимо.
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ antar : ausschliessen, beseitigen. <ls n="ṚV. 3,31,21">ṚV 3,31,21</ls> .#} + antár: 1) входить между чем-л. (Akk); 2) ходить туда-сюда между (Akk), посредничать.
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ánu ā́ : nachṛolgen.* + anupra (° geṣma). AV(P) 16.92,6
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ anvā : hinterdreinkommen, folgen. <ls n="ṚV. 1,126,3">ṚV 1,126,3</ls> .#} + apa: исчезать. ChU VI 4, 1
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ antar : ausschliessen, beseitigen. ṚV 3,31,21 .* + antár: 1) входить между чем-л. (Acc.); 2) ходить туда-сюда между (Acc.), посредничать.
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ápa prá : hinweggehen.#} + apapra: уходить. <ls n="ṚV. 1,113,16">ṚV 1,113,16</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ anvā : hinterdreinkommen, ṛolgen. ṚV 1,126,3 .* + apa: исчезать. ChU VI 4, 1
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ápi : sich hineindrängen in (Akk).#} + abhi: нападать на. <ls n="ṚV. 1,33,13">ṚV 1,33,13</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ápa prá : hinṭeggehen.* + apapra: уходить. [ṚV 1,113,16](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.16)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ abhí : 1) herbeikommen; 2) hinkommen zu (Akk); 3) betreten (Akk); 4) angreifen (feindlich).#} + abhí ā́: приходить к (Akk).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ápi : sich hineindrängen in (ākk).* + abhi: нападать на. [ṚV 1,33,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.13)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ abhí úd : aufgehen über (Akk), von der Sonne.#} + áva: соединяться с, идти к (Instr).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ abhí : 1) herbeikommen; 2) hinkommen ṣu (ākk); 3) betreten (ākk); 4) angreiṛen (ṛeindlich).* + abhí ā́: приходить к (Acc.).
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ā : her-, herankommen; gehen zu, in (Akk).#} – a) приходить, появляться; доставаться, приходиться на долю; b) вступать; навещать, занимать; c) возвращаться домой, возвращаться. <ls n="ṚV. 1,35,8">ṚV 1,35,8</ls> , <ls n="ṚV. 2,38,11">ṚV 2,38,11</ls> , <ls n="ṚV. 1,167,5">ṚV 1,167,5</ls> , <ls n="ṚV. 2,38,8">ṚV 2,38,8</ls> , <ls n="ṚV. 2,38,6">ṚV 2,38,6</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ abhí úd : auṛgehen über (ākk), von der śonne.* + áva: соединяться с, идти к (Ins.).
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ā́ : 1) herbeikommen; 2) kommen zu, gehen zu (Akk).#} + ā́ áccha: идти к (Akk).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ā : her-, herankommen; gehen ṣu, in (ākk).* – a) приходить, появляться; доставаться, приходиться на долю; b) вступать; навещать, занимать; c) возвращаться домой, возвращаться. [ṚV 1,35,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.035.html#rv01.035.08) , [ṚV 2,38,11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.038.html#rv02.038.11) , [ṚV 1,167,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.05) , [ṚV 2,38,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.038.html#rv02.038.08) , [ṚV 2,38,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.038.html#rv02.038.06)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ ud : aufgehen.#} – восходить. <ls n="ṚV. 1,50,13">ṚV 1,50,13</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ā́ : 1) herbeikommen; 2) kommen ṣu, gehen ṣu (ākk).* + ā́ áccha: идти к (Acc.).
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ úd : aufgehen (von der Sonne).#} + upa: вступать к, в (Akk). <ls n="AV. 5,19,9">AV 5,19,9</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ ud : auṛgehen.* – восходить. [ṚV 1,50,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.050.html#rv01.050.13)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ úpa : 1) hinkommen zu (Akk); 2) jemand (fragend) angehen; 3) wandern auf (Instr).#} + úpa ā́: 1) приходить к (Akk); 2) наступать на (Akk).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ úd : auṛgehen (von der śonne).* + upa: вступать к, в (Acc.). [AV 5,19,9](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.019.html#av05.019.09)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ úpa prá : 1) heranschreiten; 2) heranschreiten zu (Akk).#} + upapra: идти туда. <ls n="ṚV. 1,162,7">ṚV 1,162,7</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ úpa : 1) hinkommen ṣu (ākk); 2) jemand (ṛragend) angehen; 3) ṭandern auṛ (īnstr).* + úpa ā́: 1) приходить к (Acc.); 2) наступать на (Acc.).
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#– kommen, hingehen. <ls n="ṚV. 1,163,12">ṚV 1,163,12</ls> .#} + ní: попадать в (Akk).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ úpa prá : 1) heranschreiten; 2) heranschreiten ṣu (ākk).* + upapra: идти туда. [ṚV 1,162,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.162.html#rv01.162.07)
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ nis : heraus-, zum Vorschein kommen. <ls n="ṚV. 7,3,9">ṚV 7,3,9</ls> .#} + nís: выходить.
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *– kommen, hingehen. ṚV 1,163,12 .* + ní: попадать в (Acc.).
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ parā : fort-, weitergehen. <ls n="ṚV. 3,53,2">ṚV 3,53,2</ls> .#} + párā: 1) уходить; 2) уходить к (Akk).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ nis : heraus-, ṣum Vorschein kommen. ṚV 7,3,9 .* + nís: выходить.
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ pari : umwandeln.#} – a) обходить стороной, миновать, щадить; b) резвиться в (Lok и Akk). <ls n="ṚV. 2,33,14">ṚV 2,33,14</ls> , <ls n="ṚV. 9,96,9">ṚV 9,96,9</ls>
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ parā : ṛort-, ṭeitergehen. ṚV 3,53,2 .* + párā: 1) уходить; 2) уходить к (Acc.).
 
-**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] {#+ pári : 1) herumwandeln; 2) etwas (Akk) umwandeln, umkreisen; 3) hindurchwandern zu (Lok); 4) vorübergehen; 5) vermeiden (Akk).#} + pári ā́: заниматься каким-л. делом (Akk).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ pari : umṭandeln.* – a) обходить стороной, миновать, щадить; b) резвиться в (Loc. и Acc.). [ṚV 2,33,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.033.html#rv02.033.14) , [ṚV 9,96,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.096.html#rv09.096.09)
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ pra : vorschreiten. <ls n="ṚV. 1,85,6">ṚV 1,85,6</ls> .#} [Ved , unsp] – продвигаться вперед, достигать; отправляться; pra - gam . <ls n="ṚV. 8,48,2">ṚV 8,48,2</ls> , <ls n="ṚV. 7,104,17">ṚV 7,104,17</ls> . Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] *+ pári : 1) herumṭandeln; 2) etṭas (ākk) umṭandeln, umkreisen; 3) hindurchṭandern ṣu (Lok); 4) vorübergehen; 5) vermeiden (ākk).* + pári ā́: заниматься каким-л. делом (Acc.).
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ prá : 1) vorschreiten; 2) schreiten zu (Akk); 3) vor sich gehen, vorschreiten (von Handlungen); 4) fortgehen von (Abl).#} [Ved , unsp] + prá áccha : направляться к (Akk). Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ pra : vorschreiten. [ṚV 1,85,6 .* [Ved , unsp] – продвигаться вперед, достигать; отправляться; pra - gam . ṚV 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.06) , [ṚV 7,104,17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.17) . Ved , unsp
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ prá pári : umherschreiten.#} [Ved , unsp] + práti úd : восходить над (Akk), о солнце. Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ prá : 1) vorschreiten; 2) schreiten ṣu (ākk); 3) vor sich gehen, vorschreiten (von ḥandlungen); 4) ṛortgehen von (ābl).* [Ved , unsp] + prá áccha : направляться к (Acc.). Ved , unsp
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#gā (=pw gā 3)#} [Gen , unsp] ( gā́yati, °te I P, rarely Ā ) Pass. ( gīyáte ): a) воспеваться, прославляться в песне; b) называться, именоваться. ṚV , Mbh i, 4329 . MW : 363 (s.v. gai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ prá pári : umherschreiten.* [Ved , unsp] + práti úd : восходить над (Acc.), о солнце. Ved , unsp
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] петь. петь песнь (Akk). петь кому-л. (Dat; во хвалу ему). петь кому-л. хвалебную песнь (Akk). воспевать кого-л. (Akk). звучать, раздаваться
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *gā (=pw gā 3)* [Gen , unsp] ( gā́yati, °te I P, rarely Ā ) Pass. ( gīyáte ): a) воспеваться, прославляться в песне; b) называться, именоваться. ṚV , Mbh i, 4329 . MW : 363 (s.v. gai )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( I meist P ) петь; петь хвалу (+ Dat); воспевать (Akk). <ls n="ṚV. 1,167,6">ṚV 1,167,6</ls> , <ls n="ṚV. 1,4,10">ṚV 1,4,10</ls> , <ls n="ṚV. 8,2,38">ṚV 8,2,38</ls> . Geldner 1907 : 56 (s.v. gai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] петь. петь песнь (Acc.). петь кому-л. (Dat.; во хвалу ему). петь кому-л. хвалебную песнь (Acc.). воспевать кого-л. (Acc.). звучать, раздаваться
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Jin, unsp] (2. H. 12. Jh. , Gujarat) говорить. HemPar III, 191
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] ( I meist P ) петь; петь хвалу (+ Dat.); воспевать (Acc.). [ṚV 1,167,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.06) , [ṚV 1,4,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.004.html#rv01.004.10) , [ṚV 8,2,38](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.38) . Geldner 1907 : 56 (s.v. gai )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Reg , unsp] ( gāyati ) восхвалять, прославлять. SHK, 24,8 . Ensink 1964 : 60 (s.v. √ gai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Jin, unsp] (2. H. 12. Jh. , Gujarat) говорить. HemPar III, 191
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ áccha : jemanden (Akk) herbeisingen, d. h. ihn durch Singen herbeischaffen.#} [Ved , unsp] + anu : (ppp.) воспетый в согласии с (предшествующим отрывком). Mvu i.42.5 . Buddh , unsp ; BHSD : 26 (s.v. anugīta )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Reg , unsp] ( gāyati ) восхвалять, прославлять. SHK, 24,8 . Ensink 1964 : 60 (s.v. √ gai )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ abhi : besingen, ansingen, anlocken, incantare . <ls n="ṚV. 9,96,23">ṚV 9,96,23</ls> .#} [Ved , unsp (s.v. gai )] + abhí : воспевать кого-л. (Akk), петь ему. Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ áccha : jemanden (ākk) herbeisingen, d. h. ihn durch śingen herbeischaṛṛen.* [Ved , unsp] + anu : (ppp.) воспетый в согласии с (предшествующим отрывком). Mvu i.42.5 . Buddh , unsp ; BHSD : 26 (s.v. anugīta )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ abhí prá : anheben jemand (Akk) zu besingen.#} [Ved , unsp] + abhipra : воспевать. <ls n="ṚV. 1,5,1">ṚV 1,5,1</ls> . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ abhi : besingen, ansingen, anlocken, incantare . ṚV 9,96,23 .* [Ved , unsp (s.v. gai )] + abhí : воспевать кого-л. (Acc.), петь ему. Ved , unsp
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ ava (° gīta , ppp.): (lit. sung down), reduced, diminished. JKM(Ā) 11.21 .#} [Buddh , unsp (s.v. avagīta )] + ava ( avagīta ): a) воспетый пренебрежительно; b) часто воспеваемый, общеизвестный, избитый; c) порицаемый, достойный осуждения, презренный, низкий. Gen , unsp ; MW : 97 (s.v. avagīta )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ abhí prá : anheben jemand (ākk) ṣu besingen.* [Ved , unsp] + abhipra : воспевать. [ṚV 1,5,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.005.html#rv01.005.01) . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ ā ( āgīta ): sung unto. JU .#} [Gen , unsp (s.v. āgīta )] + ā́ : воспевать кого-л. (Akk), петь ему. Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ava (° gīta , ppp.): (lit. sung doṭn), reduced, diminished. jhkhṃ(Ā) 11.21 .* [Buddh , unsp (s.v. avagīta )] + ava ( avagīta ): a) воспетый пренебрежительно; b) часто воспеваемый, общеизвестный, избитый; c) порицаемый, достойный осуждения, презренный, низкий. Gen. , unsp ; MW : 97 (s.v. avagīta )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ ud (+ Gen). JB Ed, p. 67 n. 2 .#} [Ved , unsp (s.v. udgā -)] + úd : начинать пение, запевать (см. udgātṛ́ ). Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ā ( āgīta ): sung unto. jhū .* [Gen. , unsp (s.v. āgīta )] + ā́ : воспевать кого-л. (Acc.), петь ему. Ved , unsp
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ úpa : jemandem (Akk, Dat, Lok) zusingen, ihn besingen.#} [Ved , unsp] + pra : запевать, начинать песнь, подхватывать пение. <ls n="ṚV. 8,1,7">ṚV 8,1,7</ls> . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ud (+ ghen). jhbh aid, p. 67 n. 2 .* [Ved , unsp (s.v. udgā -)] + úd : начинать пение, запевать (см. udgātṛ́ ). Ved , unsp
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ prá : 1) anheben zu singen, oder 2) jemandem e. Lied zu singen oder 3) ihn zu besingen; 4) ertönen.#} [Ved , unsp] + vi : порицать, хулить. Renou 1997, S. 739 . Gen , unsp ; Renou 1997 : 1018 (s.v. vigāyati )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ úpa : jemandem (ākk, dhat, Lok) ṣusingen, ihn besingen.* [Ved , unsp] + pra : запевать, начинать песнь, подхватывать пение. [ṚV 8,1,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.07) . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#– „sing“.#} [Ved , unsp (s.v. vigā -)] – ( vigīta ): „ pṛthag gītaḥ "; частично воспетый. ṢB II.3.11 , ĀpŚS XIII.15.9 . Ved , unsp ; Renou 1935 : 26 (s.v. vigīta )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ prá : 1) anheben ṣu singen, oder 2) jemandem e. Lied ṣu singen oder 3) ihn ṣu besingen; 4) ertönen.* [Ved , unsp] + vi : порицать, хулить. Renou 1997, S. 739 . Gen. , unsp ; Renou 1997 : 1018 (s.v. vigāyati )
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ sam (° gāyati ): lit. ‘sings in unison’ = is concordant, avoids quarreling [opp. of vivadati ]. KPar 142.4 .#} [Buddh , unsp (s.v. saṃgāyati )] – ( saṃgīta ): a) воспетый хором (?); b) соответствующий, согласующийся. STB, S. 93, Z. 20 , Is Indon 1, 11 . Reg , unsp ; Ensink 1964 : 193 (s.v. saṃgīta )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *– „sing“.* [Ved , unsp (s.v. vigā -)] – ( vigīta ): „ pṛthag gītaḥ "; частично воспетый. ṢB II.3.11 , ĀpŚS XIII.15.9 . Ved , unsp ; Renou 1935 : 26 (s.v. vigīta )
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ sam ( saṃgīta ): sung together, sung in chorus or harmony.#} [Gen , unsp (s.v. saṃgīta )] + samanu : повторять в стихах или в метре. Caraka(MW) . Gen , unsp ; MW : 1154 (s.v. samanugai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ sam (° gāyati ): lit. ‘sings in unison’ = is concordant, avoids ḍuarreling [opp. oṛ vivadati ]. khphar 142.4 .* [Buddh , unsp (s.v. saṃgāyati )] – ( saṃgīta ): a) воспетый хором (?); b) соответствующий, согласующийся. STB, S. 93, Z. 20 , Is Indon 1, 11 . Reg , unsp ; Ensink 1964 : 193 (s.v. saṃgīta )
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#gā#} [Śā , Ling] заместительная морфема для i ṇ в формах аориста. Pāṇ 2.4.45
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ sam ( saṃgīta ): sung together, sung in chorus or harmony.* [Gen. , unsp (s.v. saṃgīta )] + samanu : повторять в стихах или в метре. Caraka(MW) . Gen. , unsp ; MW : 1154 (s.v. samanugai )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Reg , unsp] Subst f земля. Is Indon 3, 26
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *gā* [Śā , Ling] заместительная морфема для i ṇ в формах аориста. Pāṇ 2.4.45
 
-**+)** [PW·restate → не привязано: номер выше диапазона PWG] — 7〉 {%подходить к концу%} <ls>NAIṢ. 8,109</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Reg , unsp] Subst f земля. Is Indon 3, 26
 
-**+)** [PW·restate → не привязано: номер выше диапазона PWG] — 8〉 {%идти, странствовать%} <ls>ṚV. 8,2,39</ls>. с <ab>Acc.</ab> или <ab>Instr.</ab> (<ls>ṚV. 8,5,39</ls>) пути.
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] — 7〉 подходить к концу [NAIṢ. 8,109].
 
-**+)** [PW·restate → не привязано: цель не указана] — <ab>Desid.</ab> {#jigIzati#} {%желать идти%}.
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] — 8〉 идти, странствовать [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). с Acc. или Ins. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) пути.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#acCa#}, {#acCA#}: приходить — , идти к. с предшествующим {#A#} и {#pra#} <ab>dass.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. *jigīṣati* желать идти.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#ati#} — 1〉 {%переступать через, переходить%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *accha*, *acchā*: приходить — , идти к. с предшествующим *ā* и *pra* то же
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%проходить мимо%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ati* — 1〉 переступать через, переходить (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 проходить, истекать (о времени), — вместо (<ab>Acc.</ab>). [Page2-162-a]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 проходить мимо (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 4〉 {%уходить, умирать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 проходить, истекать (о времени), — вместо (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 5〉 победоносно переступать, преодолевать, счастливо спасаться; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 уходить, умирать.
 
-**+)** [PW·restate → не привязано: цель не указана] — 6〉 проходить мимо, так <ab>v. a.</ab> — оставлять без внимания.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 победоносно переступать, преодолевать, счастливо спасаться; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#vyati#}: проходить мимо (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 проходить мимо, так преим. — оставлять без внимания.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#aDi#} — 1〉 попадать в какое-л. состояние (<ab>Acc.</ab>), приобщаться.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vyati*: проходить мимо (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%приходить к чему-л., решаться на%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *adhi* — 1〉 попадать в какое-л. состояние (Acc.), приобщаться.
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 {%вспоминать, помнить, обращать внимание на%} (<ab>Gen.</ab> или <ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 приходить к чему-л., решаться на (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 4〉 {%изучать, учиться чему-л.%} (<ab>Acc.</ab>), — у (<ab>Abl.</ab>). Обычно <ab>Med.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 вспоминать, помнить, обращать внимание на (Gen. или Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — *<ab>Caus.</ab> {#aDigApayati#}: учить.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 изучать, учиться чему-л. (Acc.), — у (Abl.). Обычно Med.
 
-**+)** [PW·restate → не привязано: цель не указана] — *<ab>Desid.</ab> от <ab>Caus.</ab> {#aDijigApayizati#}: желать учить.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — *Caus. *adhigāpayati*: учить.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#anu#} — 1〉 следовать за кем-л., идти вдоль (<ls n="Chr.">93,16</ls>), избирать путь; разыскивать; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — *Desid. от Caus. *adhijigāpayiṣati*: желать учить.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%следовать, руководствоваться%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anu* — 1〉 следовать за кем-л., идти вдоль ([93,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?93)), избирать путь; разыскивать; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 {%предаваться, погружаться в%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 следовать, руководствоваться (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#samanu#}: следовать за кем-л.; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 предаваться, погружаться в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#antar#} — 1〉 {%идти между чем-л.%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samanu*: следовать за кем-л.; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%вмешиваться, разлучать, отстранять от%} (<ab>Abl.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *antar* — 1〉 идти между чем-л. (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#apa#}: уходить, удаляться — , держаться вдали от (<ab>Abl.</ab>) <ls n="Chr.">25,9</ls>. <ls n="Chr. 25,">18</ls>. отступать от (<ab>Abl.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 вмешиваться, разлучать, отстранять от (Abl.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#api#}: входить, проникать, вмешиваться в (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *apa*: уходить, удаляться — , держаться вдали от (Abl.) [25,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). [18](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?25). отступать от (Abl.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#aBi#} — 1〉 приходить, направляться к (также во враждебных целях), приступать к, идти к, отправляться к или в направлении; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *api*: входить, проникать, вмешиваться в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 достигать, приобщаться; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhi* — 1〉 приходить, направляться к (также во враждебных целях), приступать к, идти к, отправляться к или в направлении; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 истекать (ошибочно вм. {#ati#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 достигать, приобщаться; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#ava#} — 1〉 {%уходить, пропадать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 истекать (ошибочно вм. *ati*).
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%идти к%}. {#yuDA/#} {%— идти в бой%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ava* — 1〉 уходить, пропадать.
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 идти к, так <ab>v. a.</ab> — соединяться с (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 идти к. *yudhā* — идти в бой.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#anvava#}: идти к, так <ab>v. a.</ab> — соединяться с (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 идти к, так преим. — соединяться с (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#samaByava#}: отправляться в (<ab>Acc.</ab>) <ls>GOP. BR. 2,4,11</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anvava*: идти к, так преим. — соединяться с (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#anuvyava#}: следуя за другим, вмешиваться, с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samabhyava*: отправляться в (Acc.) [GOP. BR. 2,4,11].
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#A#} — 1〉 приходить, приближаться, прийти к, достигать; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anuvyava*: следуя за другим, вмешиваться, с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 появляться, настигать кого-л. (<ab>Acc.</ab>), постигать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* — 1〉 приходить, приближаться, прийти к, достигать; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#anvA#}: следовать за, с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 появляться, настигать кого-л. (Acc.), постигать.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#aByA#} — 1〉 {%приходить, приближаться, прийти к или в%} (<ab>Acc.</ab>), направляться к (<ab>Gen.</ab> <ls>BHĀG. P.</ls>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anvā*: следовать за, с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 постигать кого-л. (<ab>Acc.</ab>), настигать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhyā* — 1〉 приходить, приближаться, прийти к или в (Acc.), направляться к (Gen. [BHĀG. P.]).
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 {%приниматься за — , решаться на%} (<ab>Infin.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 постигать кого-л. (Acc.), настигать.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#samaByA#} — 1〉 {%приходить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 приниматься за — , решаться на (Infin.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 постигать кого-л. (<ab>Acc.</ab>), настигать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samabhyā* — 1〉 приходить.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#udA#}: подниматься к, выходить к (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 постигать кого-л. (Acc.), настигать.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#upA#}: приходить, направляться к (также во враждебных целях), прийти к; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *udā*: подниматься к, выходить к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#paryA#} — 1〉 {%совершать оборот (круговращение)%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upā*: приходить, направляться к (также во враждебных целях), прийти к; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 заниматься чем-л. (<ab>Acc.</ab>), посвящать себя <ls>ṚV. 1,88,4</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *paryā* — 1〉 совершать оборот (круговращение).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#anuparyA#}: снова возвращаться к (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 заниматься чем-л. (Acc.), посвящать себя [ṚV. 1,88,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.088.html#rv01.088.04).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#ud#} — 1〉 восходить (о светилах).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anuparyā*: снова возвращаться к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%выдвигаться или получать подъем%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ud* — 1〉 восходить (о светилах).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#aByud#}: восходить над или впереди (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 выдвигаться или получать подъем.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#pratyud#}. [Page2-162-b] <ab>dass.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhyud*: восходить над или впереди (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#upa#} — 1〉 идти к, вступать — , попадать в, достигать; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyud*. то же
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%идти, странствовать%}. {#paTA/ yama/sya#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa* — 1〉 идти к, вступать — , попадать в, достигать; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#ni#} — 1〉 {%попадать в%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 идти, странствовать. *pathā yamasya*.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%прижиматься%} (?).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ni* — 1〉 попадать в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#nis#} — 1〉 выходить, — из (<ab>Abl.</ab>) <ls n="Chr.">110,4</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 прижиматься (?).
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%выходить, уходить от%} (<ab>Abl.</ab>). <ls n="Chr.">132,21</ls>. {%покидать дом%} <ls n="Chr.">127,8</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *nis* — 1〉 выходить, — из (Abl.) [110,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?110).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#parA#}: уходить в сторону, удаляться, бежать; с <ab>Acc.</ab> — куда.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 выходить, уходить от (Abl.). [132,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?132). покидать дом [127,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?127).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#pari#} — 1〉 {%обходить вокруг%} <ls>ṚV. 5,15,4</ls>. {%обходить, окружать, облетать; пролетать насквозь%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *parā*: уходить в сторону, удаляться, бежать; с Acc. — куда.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%входить в%} (<ab>Acc.</ab>) <ls>VS. 40,8</ls> = <ls>ĪŚOP. 8</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari* — 1〉 обходить вокруг [ṚV. 5,15,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04). обходить, окружать, облетать; пролетать насквозь.
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 приходить на кого-л. (<ab>Acc.</ab>), постигать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 входить в (Acc.) [VS. 40,8](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?40,8) = [ĪŚOP. 8].
 
-**+)** [PW·restate → не привязано: цель не указана] — 4〉 проходить мимо, так <ab>v. a.</ab> — уклоняться, избегать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 приходить на кого-л. (Acc.), постигать.
 
-**+)** [PW·restate → не привязано: цель не указана] — 5〉 {%не замечать, пропускать мимо ушей%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 проходить мимо, так преим. — уклоняться, избегать.
 
-**+)** [PW·restate → не привязано: цель не указана] — 6〉 {%не понимать, не распознавать%} <ls>BHĀG. P. 2,6,35</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 не замечать, пропускать мимо ушей.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#anupari#}: проходить насквозь, странствовать по.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 не понимать, не распознавать [BHĀG. P. 2,6,35](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,35).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#vipari#}: падать, опрокидываться.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anupari*: проходить насквозь, странствовать по.
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#pra#} — 1〉 {%идти вперед, продвигаться, приходить в движение, шагать к%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vipari*: падать, опрокидываться.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%уходить, убираться от%} (<ab>Abl.</ab>) <ls n="Chr.">17,10. fgg.</ls> (<ab>Conj.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* — 1〉 идти вперед, продвигаться, приходить в движение, шагать к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — 3〉 с {#antar#}: входить, вступать <ls>ṚV. 8,48,2</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 уходить, убираться от (Abl.) [17,10. fgg.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?17) (Conj.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#apapra#}: уходить, отступать <ls>ṚV. 1,113,16</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 с *antar*: входить, вступать [ṚV. 8,48,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#upapra#}: приходить, подходить к (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *apapra*: уходить, отступать [ṚV. 1,113,16](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.113.html#rv01.113.16).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#prati#}: возвращаться к (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upapra*: приходить, подходить к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#vi#}: исчезать, улетучиваться.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prati*: возвращаться к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#sam#} — 1〉 {%сходиться, собираться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi*: исчезать, улетучиваться.
 
-**+)** [PW·restate → не привязано: цель не указана] — 2〉 {%идти к%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam* — 1〉 сходиться, собираться.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#gA#}¦ {#gA/yati, ˚te#} (редко), {#gAti#} и *{#jigAti#} <ls>DHĀTUP. 25,25</ls>. {%петь, говорить нараспев, воспевать кому-л.%} (<ab>Dat.</ab>), {%возвещать в стихах, воспевать%} (с <ab>Acc.</ab>), {%петь перед кем-л.%} (<ab>Acc.</ab>), {%исполнять нараспев%}. <ab>Pass.</ab> также {%называться, именоваться%}. {#gIta#} {%спетый, возвещенный в стихах, воспетый%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 идти к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#gApayati#} {%заставлять петь —, заставлять воспевать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*gā* *gāyati, ˚te* (редко), *gāti* и **jigāti* [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25). петь, говорить нараспев, воспевать кому-л. (Dat.), возвещать в стихах, воспевать (с Acc.), петь перед кем-л. (Acc.), исполнять нараспев. Pass. также называться, именоваться. *gīta* спетый, возвещенный в стихах, воспетый.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Intens.</ab> {#jegIyate#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. *gāpayati* заставлять петь —, заставлять воспевать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%петь%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Intens. *jegīyate*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%быть воспетым, воспеваться%} <ls>DAŚAK. 1,10</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 петь.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%часто или упорно утверждаться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 быть воспетым, воспеваться [DAŚAK. 1,10].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#acCa#} {%призывать пением, — звать пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 часто или упорно утверждаться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *accha* призывать пением, — звать пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%петь вслед, петь после, петь сообразно%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anu*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%петь что-л. перед кем-л.%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 петь вслед, петь после, петь сообразно.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%петь, воспевать; высказываться о чем-л.%} (<ab>Acc.</ab>) (о древних мудрецах).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 петь что-л. перед кем-л. (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%заставлять петь вслед%} <ls>GOBH. 3,2,31. 34. 36</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 петь, воспевать; высказываться о чем-л. (Acc.) (о древних мудрецах).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samanu#} {%повторять в стихах%} <ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 2,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. заставлять петь вслед [GOBH. 3,2,31. 34. 36].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#apa#} {%прекращать петь%} <ls>VAITĀN. 17,4</ls>. <ls>GOP. BR. 2,2,14</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samanu* повторять в стихах [{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 2,1].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *apa* прекращать петь [VAITĀN. 17,4]. [GOP. BR. 2,2,14].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%петь кому-л.%} (<ab>Acc.</ab>), {%взывать к кому-л. пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhi*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%наполнять своим пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 петь кому-л. (Acc.), взывать к кому-л. пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%incantare, завораживать кого-л.%} (<ab>Acc.</ab>) {%пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 наполнять своим пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%петь, воспевать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 incantare, завораживать кого-л. (Acc.) пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {#aBigIta#} {%начиная со второго%} <is>Svara</is> {%и заканчивая первым%} <ls>SAṂHITOPAN. 17,2</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 петь, воспевать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#}, {#avagIta#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 *abhigīta* начиная со второго Свара и заканчивая первым [SAṂHITOPAN. 17,2].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%часто повторяемый, tritus%} <ls>RĀJAT. 7,435</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ava*, *avagīta*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%ставший надоедливым, приевшийся%}. [Page2-162-c]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 часто повторяемый, tritus [RĀJAT. 7,435](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?7,435).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 ставший надоедливым, приевшийся.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%петь кому-л.%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%получать пением, добывать пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 петь кому-л. (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%петь легко —, петь тихо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 получать пением, добывать пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ud#} {%затягивать песню, петь%} (<ab>insbes.</ab> {%о литургическом пении%}), {%возвещать в стихах, воспевать, петь перед кем-л.%} (<ab>Acc.</ab>), {%наполнять пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 петь легко —, петь тихо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prod#} {%начинать петь%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ud* затягивать песню, петь (особ. о литургическом пении), возвещать в стихах, воспевать, петь перед кем-л. (Acc.), наполнять пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyud#} {%отвечать кому-л.%} (<ab>Acc.</ab>) {%пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prod* начинать петь.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#} {%петь с кем-л.%} (<ab>Dat.</ab>, <ab>Loc.</ab> или <ab>Acc.</ab>), {%вступать в пение, петь перед кем-л.%} (<ab>Acc.</ab>), {%воспевать, наполнять своим пением; петь что-л.%} (<ab>Acc.</ab>) {%о ком-л.%} (<ab>Gen.</ab>), {%так%} <ab>v. a.</ab> {%возвещать%}. {#upagIta#} также с <ab>act.</ab> <ab>Bed.</ab> {%тот, кто начал петь перед кем-л.%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyud* отвечать кому-л. (Acc.) пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa* петь с кем-л. (Dat., Loc. или Acc.), вступать в пение, петь перед кем-л. (Acc.), воспевать, наполнять своим пением; петь что-л. (Acc.) о ком-л. (Gen.), так преим. возвещать. *upagīta* также с act. знач. тот, кто начал петь перед кем-л..
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%сопровождать пением%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ni*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%петь, так%} <ab>v. a.</ab> {%возвещать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 сопровождать пением.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 петь, так преим. возвещать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%ходить вокруг с пением, — обходить с пением, — обходить кругом, распевая%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%петь повсюду — вблизи и вдали, воспевать, возвещать как%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 ходить вокруг с пением, — обходить с пением, — обходить кругом, распевая.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 петь повсюду — вблизи и вдали, воспевать, возвещать как.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%начинать петь, — начинать воспевать, воспевать%}. {#pragIta#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="2">— a〉 {%произнесенный нараспев, спетый%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 начинать петь, — начинать воспевать, воспевать. *pragīta*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {%наполненный пением%} <ls>LA. 60,6</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — a〉 произнесенный нараспев, спетый.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="2">— c〉 {%поднявший песнопение, поющий%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — b〉 наполненный пением [LA. 60,6].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%звучать, раздаваться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — c〉 поднявший песнопение, поющий.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBipra#} {%начинать воспевать кого-л.%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 звучать, раздаваться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vipra#}, {#˚gIta#} {%о чем мнения расходятся%} <ls>Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhipra* начинать воспевать кого-л. (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMpra#} {%начинать петь, петь, произносить нараспев%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vipra*, *˚gīta* о чем мнения расходятся [Comm. zu JAIM. 2,3,3 (S. 173, Z. 8)].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *saṃpra* начинать петь, петь, произносить нараспев.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%порицать%} <ls>NAIṢ. 9,13</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {#vigIta#} {%противоречащий, находящийся в противоречии%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 порицать [NAIṢ. 9,13].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#} {%совместно воспевать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 *vigīta* противоречащий, находящийся в противоречии.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>5.</hom> *√{#gA#}¦, {#jigAti#} ({#janmani#}) <ls>VOP.</ls> в <ls>DHĀTUP. 25,25</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam* совместно воспевать.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#gA#}¦ с {#aDi#} <ab>Caus.</ab> {#aDyajIgapat#} <ls>HEM. PAR. 1,398</ls>.<info n="sup_5"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **5.** *√*gā*, *jigāti* (*janmani*) [VOP.] в [DHĀTUP. 25,25](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=25).
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> {#gA#}¦ также {%говорить, произносить, — кому-л.%} (<ab>Acc.</ab>) <ls>CAMPAKA 126</ls>. <ls n="CAMPAKA">137</ls>. <ls n="CAMPAKA">338</ls>. <ls n="CAMPAKA">438</ls>. <ls n="CAMPAKA">472</ls>. <ls>UTTAMAC. 107</ls>. <ls n="UTTAMAC.">285</ls>.<info n="sup_5"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*gā* с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#gA#}¦ II. {#jagAyAt#} <ls>ṚV. 10,28,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** *gā* также говорить, произносить, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDi#} <ab>Caus.</ab> II. 5.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#} II. {%понимать, знать%} <ls>KIR. 12,34</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *adhi* Caus. II. 5.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#} II. 2〉 читай <ls n="KIR.">27,10. fgg.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ava* II. понимать, знать [KIR. 12,34].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#} II. {%вступать между, разделять;%} с <ab>Acc.</ab> <ls>ŚĀṄKH. BR. 13,9</ls>.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* II. 2〉 читай [27,10. fgg.]
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#gA#}¦ II. 5.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#} II. {#˚gIta#} {%в ослабленном значении%} ({#Soka#}) <ls>JĀTAKAM. 2</ls>. {%ставший надоедливым, приевшийся%} <ls n="JĀTAKAM.">10,1</ls>.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*gā* II. 5.
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>1.</hom> {#gA#}¦ с {#aDi#} <ab>Caus.</ab> {#aDyajIgapat#} <ls>HEM. PAR. 1,398</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ava* II. *˚gīta* в ослабленном значении (*śoka*) [JĀTAKAM. 2]. ставший надоедливым, приевшийся [10,1].
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>3.</hom> {#gA#}¦ также говорить, высказываться, — кому-л. (<ab>Acc.</ab>) <ls>CAMPAKA 126</ls>. <ls n="CAMPAKA">137</ls>. <ls n="CAMPAKA">338</ls>. <ls n="CAMPAKA">438</ls>. <ls n="CAMPAKA">472</ls>. <ls>UTTAMAC. 107</ls>. <ls n="UTTAMAC.">285</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *gā* с *adhi* Caus. *adhyajīgapat* [HEM. PAR. 1,398].
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>1.</hom> {#gA#}¦ II. {#jagAyAt#} <ls>ṚV. 10,28,1</ls>. — С {#aDi#} <ab>Caus.</ab> II. 5. — С {#ava#} II. понимать, знать <ls>KIR. 12,34</ls>. — С {#pra#} II. 2〉 читай <ls n="KIR.">27,10. fgg.</ls> — С {#vi#} II. вступать между, разделять; с <ab>Acc.</ab> <ls>ŚĀṄKH. BR. 13,9</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** *gā* также говорить, высказываться, — кому-л. (Acc.) [CAMPAKA 126]. [137]. [338]. [438]. [472]. [UTTAMAC. 107]. [285].
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>3.</hom> {#gA#}¦ II. 5. — С {#ava#} II. {#˚gIta#} {%ослабленное%} ({#Soka#}) <ls>JĀTAKAM. 2</ls>. {%ставший надоедливым%} <ls n="JĀTAKAM.">10,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *gā* II. *jagāyāt* [ṚV. 10,28,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01). — С *adhi* Caus. II. 5. — С *ava* II. понимать, знать [KIR. 12,34]. — С *pra* II. 2〉 читай [27,10. fgg.] — С *vi* II. вступать между, разделять; с Acc. [ŚĀṄKH. BR. 13,9].
 
-**+)** [SCH·sch_star → не привязано: цель не указана] 1. {%gā%}¦ {%jagāyāt%} <ls>ṚV. 10,28,1.</ls> — С {%adhi%} <ls>Kaus.</ls> {%adhyajīgapat%}, <ls>Hem. Par. 1,398.</ls> — С {%ava%} {%понимать, знать%}, <ls>Kir. 12,34.</ls> — С {%pra%} 2. читать: 27,10 сл. — С {%vi%} {%вступать между, разделять;%} с Akk. <ls>Śāṅkh. Br. 13,9.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** *gā* II. 5. — С *ava* II. *˚gīta* ослабленное (*śoka*) [JĀTAKAM. 2]. ставший надоедливым [10,1].
 
-**+)** [SCH·sch_star → не привязано: цель не указана] 3. {%gā%}¦ также {%говорить, изрекать%}, к кому-л. (Akk.), Campaka 126. 137. 338. 438. 472; <ls>Uttamac. 107. 285.</ls> — С {%ava, ˚gīta%} {%в ослабленном значении%} ({%śoka%}), <ls>Jātakam. 2</ls>; {%ставший надоедливым%}, 10,1.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1. gā jagāyāt [ṚV. 10,28,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.01) — С adhi [Kaus.] adhyajīgapat, [Hem. Par. 1,398.] — С ava понимать, знать, [Kir. 12,34.] — С pra 2. читать: 27,10 сл. — С vi вступать между, разделять; с Acc. [Śāṅkh. Br. 13,9.]
 
-## h1
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3. gā также говорить, изрекать, к кому-л. (Acc.), Campaka 126. 137. 338. 438. 472; [Uttamac. 107. 285.] — С ava, ˚gīta в ослабленном значении (śoka), [Jātakam. 2]; ставший надоедливым, 10,1.
 
-**1)** <div n="p">— {#sam#} {%воспевать сообща%}: {#purARErimaM yajamAnaM rAjaBiH sADukfdBiH saMgAyateti taM te taTA saMgAyanti#}
-<ls>ŚAT. BR. 13,4,3,3.</ls> <ls n="ŚAT. BR. 13,4,">4,2.</ls>
-<ls>KĀTY. ŚR. 20,3,2.</ls>
-<ls>ŚĀṄKH. ŚR. 16,1,21.</ls> {#vIRAgATinO saMSAsti somaM rAjAnaM saMgAyetAmiti#}
-<ls>ĀŚV. GṚHY. 1,14.</ls>
-<ls>ŚĀṄKH. GṚHY. 1,22.</ls>
-<ls>PĀR. GṚHY. 1,15.</ls> {#saMgIyamAnasatkIrtiH sastrIBiH suragAyakEH#}
-<ls>BHĀG. P. 3,22,33.</ls> {#saMgIta#} <lex>n.</lex> {%многоголосное пение, пение в сопровождении музыки, концерт%}
-<ls>H. 279.</ls>
-<ls>BHARTṚ. 4,2.</ls>
-<ls>MEGH. 57.</ls> <ls n="MEGH.">65.</ls>
-<ls>RAGH. 13,40.</ls>
-<ls>ṚT. 3,23.</ls>
-<ls>DHŪRTAS. 67,5. 68,15.</ls>
+## омоним h1
 
-**1a)** <div n="p">— {#saMpra#} {%петь%}: {#yA gATAH saMpragAyanti#}
+**1)** — *sam* воспевать сообща: *purāṇairimaṃ yajamānaṃ rājabhiḥ sādhukṛdbhiḥ saṃgāyateti taṃ te tathā saṃgāyanti*
+[ŚAT. BR. 13,4,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,3,3) [4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,4,2)
+[KĀTY. ŚR. 20,3,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,3,2)
+[ŚĀṄKH. ŚR. 16,1,21.] *vīṇāgāthinau saṃśāsti somaṃ rājānaṃ saṃgāyetāmiti*
+[ĀŚV. GṚHY. 1,14.]
+[ŚĀṄKH. GṚHY. 1,22.]
+[PĀR. GṚHY. 1,15.] *saṃgīyamānasatkīrtiḥ sastrībhiḥ suragāyakaiḥ*
+[BHĀG. P. 3,22,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,22,33) *saṃgīta* _n._ многоголосное пение, пение в сопровождении музыки, концерт
+[H. 279.](https://sanskrit-lexicon-scans.github.io/abch2/app1?279)
+[BHARTṚ. 4,2.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?4,2)
+[MEGH. 57.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?57) [65.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?65)
+[RAGH. 13,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,40)
+[ṚT. 3,23.]
+[DHŪRTAS. 67,5. 68,15.]
 
-**1b)** <ls>MBH. 8,1836.</ls> {%произносить нараспев%}:
-[Page2-0727]
-{#ikArAntaM cEvopAyaM saMpragAyanti kutsAH#}
-<ls>LĀṬY. 7,8,19.</ls>
+**1a)** — *saṃpra* петь: *yā gāthāḥ saṃpragāyanti*
 
-**1c)** <ls>R. 6,15,11.</ls> {%incantare, завораживать пением%}: {#indragATABirvE devA asurAnaBigAyATEnAnatyAyan#}
-<ls>AIT. BR. 6,32.</ls>
+**1b)** [MBH. 8,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1836) = [≈Вульг. 8.40.21](mbh/8.40.html#v21) = ≈крит. 08,27.71c произносить нараспев:
 
-**2))** <div n="1">— 2) хулить, порицать: {#vigIyase (ketaka) manmaTadehadAhinA#}
-<ls>NAIṢ. 1,79.</ls> <ab>Vgl.</ab> {#vigAna#}.{# — vijigIta#} (<ab>unregelm.</ab> форма интенсива) прославленный
-<ls>BṚH. ĀR. UP. 6,4,18.</ls>
-<ls>ŚAṂK.</ls> : {#viviDaM gIto vigItaH#} (sic);
-<ls>ŚAT. BR. 14,9,4,17</ls> читает <ab>st.</ab>, чей {#vijigITaH#} .
+*ikārāntaṃ caivopāyaṃ saṃpragāyanti kutsāḥ*
+[LĀṬY. 7,8,19.]
 
-**3))** <div n="1">— 3) {%петь%}: {#raTaMtaraM sAmagAScopagAnti#}
-<ls>MBH. 12,10299.</ls> {#jihvAsatI — na yopagAyatyurugAyagATAH#}
-<ls>BHĀG. P. 2,3,20.</ls> {#tasyedamupagAyanti#} {%о нем поют следующее%}
-<ls n="BHĀG. P.">5,14,41.</ls>
+**1c)** [R. 6,15,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,15,11) incantare, завораживать пением: *indragāthābhirvai devā asurānabhigāyāthainānatyāyan*
+[AIT. BR. 6,32.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,32)
 
-**A 1))** <div n="p">— {#A#}
-<div n="1"> 1) {%петь кому-л.%} (<ab>acc.</ab>): {#A pa\SuM gA^si pfTi\vIM vana\spatI^n#}
-<ls>ṚV. 8,27,2.</ls>
+**2))** — 2) хулить, порицать: *vigīyase (ketaka) manmathadehadāhinā*
+[NAIṢ. 1,79.] ср. *vigāna*.* — vijigīta* (unregelm. форма интенсива) прославленный
+[BṚH. ĀR. UP. 6,4,18.]
+[ŚAṂK.] : *vividhaṃ gīto vigītaḥ* (sic);
+[ŚAT. BR. 14,9,4,17](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,17) читает вместо, чей *vijigīthaḥ* .
 
-**A 2))** <div n="1">— 2) {%достигать пением, обрести посредством пения%}: {#yo vAci BogastaM deveBya AgAyat#}
-<ls>ŚAT. BR. 14,4,1,3. fgg.</ls>
-<ls>CHĀND. UP. 1,2,13. 7,9.</ls>
+**3))** — 3) петь: *rathaṃtaraṃ sāmagāścopagānti*
+[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](mbh/12.284.html#v187) = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
+[BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нем поют следующее
+[5,14,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,41)
 
-**A tail)** <div n="v">— <ab>Vgl.</ab> {#AgAtar, AgAna#} .
+**A 1))** — *ā*
+ 1) петь кому-л. (acc.): *ā paśuṃ gāsi pṛthivīṃ vanaspatīn*
+[ṚV. 8,27,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.027.html#rv08.027.02)
 
-**PPP 1): gesungen)** <div n="1"> 1) <lex>adj.</lex> {%пропетый, возвещенный в стихах, воспетый%}
-<ls>TRIK. 3,3,155.</ls>
-<ls>H. an. 2,166.</ls>
-<ls>MED. t. 16.</ls> {#sADu gItam#} {%красиво спетый%}
-<ls>ŚĀK. 4,11.</ls> {#nisvanaH — gItaH#}
-<ls>R. 3,15,19.</ls> {#gATA vAyugItAH#}
-<ls>M. 9,42.</ls> {#gItaH Sloko mahAtmanA#}
-<ls>MBH.</ls> в <ls>BENF. Chr. 22,24.</ls> <ls>VARĀH. BṚH. S. 47,23.</ls> {#caturBiryaH padErgIto maharziRA — SokaH#}
-<ls>R. 1,2,43.</ls>
-<ls>ŚĀK. 47.</ls>
+**A 2))** — 2) достигать пением, обрести посредством пения: *yo vāci bhogastaṃ devebhya āgāyat*
+[ŚAT. BR. 14,4,1,3. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,3)
+[CHĀND. UP. 1,2,13. 7,9.]
 
-**PPP 2a): Lehre)** <div n="1">— 2) <lex>f.</lex> {#A#}
-<div n="2"> a) (<ab>sc.</ab> {#upanizad#}) {%учение, возвещенное вдохновленным мудрецом в стихах%}, <ab>s.</ab> {#agastya˚, Bagavad˚, rAma˚, Siva˚#}.
-Под {#gItA#} подразумевается {#BagavadgItA#}.
+**A tail)** — ср. *āgātar, āgāna* .
 
-**PPP 2b): Metrum)** <div n="2">— b) <ab>N.</ab> названия метра (4 раза ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
-<ls>COLEBR. Misc. Ess. II,163</ls> (<ls n="COLEBR. Misc. Ess.">XV,4</ls>).
+**PPP 1): gesungen)** 1) _adj._ пропетый, возвещенный в стихах, воспетый
+[TRIK. 3,3,155.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,155)
+[H. an. 2,166.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,166)
+[MED. t. 16.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,16) *sādhu gītam* красиво спетый
+[ŚĀK. 4,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,11) *nisvanaḥ — gītaḥ*
+[R. 3,15,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,19) *gāthā vāyugītāḥ*
+[M. 9,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,42) *gītaḥ śloko mahātmanā*
+[MBH.] в [BENF. Chr. 22,24.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [VARĀH. BṚH. S. 47,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,23) *caturbhiryaḥ padairgīto maharṣiṇā — śokaḥ*
+[R. 1,2,43.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,43)
+[ŚĀK. 47.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?47)
 
-**PPP 3): Gesang (noun))** <div n="1">— 3) <lex>n.</lex> {%пение%}
-<ls>AK. 1,1,6,4.</ls>
-<ls>TRIK.</ls>
-<ls>H. 279. fg.</ls>
-<ls>H. an.</ls> <ls>MED.</ls> <ls>VS. 30,6.</ls> {#nfttaM gItamupAvavarta#}
-<ls>ŚAT. BR. 3,2,4,6.</ls> <ls n="ŚAT. BR.">6,1,1,15.</ls>
-<ls>KĀTY. ŚR. 21,3,11.</ls>
-<ls>LĀṬY. 7,7,32.</ls> {#gItaM karizyAmi#}
-<ls>PAÑCAT. 248,5.</ls> {#gItajYo yadi yogena nApnoti paramaM paday . rudrasyAnucaro BUtvA saha tenEva modate ..#}
-<ls>YĀJÑ. 3,116.</ls>
-<ls>ARJ. 4,10.</ls>
-<ls>R. 1,4,16.</ls> <ls n="R. 1,">64,10.</ls>
-<ls>SUŚR. 1,192,5. 250. 13.</ls>
-<ls>ŚĀK. 5.</ls> <ls n="ŚĀK.">164.</ls>
-<ls>ŚUK. 39,11.</ls>
-<ls>ṚT. 1,3.</ls> {#gItavAditre#}
-<ls>CHĀND. UP. 8,2,8.</ls>
-<ls>R. 1,9,8.</ls> <ls n="R.">3,15,7.</ls> {#gItavAdanam#}
-<ls>M. 2,178.</ls> {#gItanftyaH(!)#}
-<ls>R. 1,24,5.</ls> — <ab>caus.</ab> {#gApayati#} {%заставить петь —, воспевать%}
-<ls>LĀTY. 1,5,8.</ls> <ls>ŚĀṄKH. GṚHY. 1,22.</ls> {#vAsavadattAM tAM gApayan#}
-<ls>KATHĀS. 12,31.</ls> {#svakftiM gApayAmAsa#}
-<ls>RAGH. 15,33.</ls> {#jayodAharaRaM bAhvorgApayAmAsa kiMnarAn#}
-<ls n="RAGH.">4,78.</ls> <ls n="RAGH.">9,20.</ls> {#gApayanharim#}
-<ls>BHĀG. P. 6,17,3.</ls> {#kaTamAtmAnaM gApayizyAma#} {%позволять воспевать себя%}
-<ls n="BHĀG. P.">4,15,26.</ls> — <ab>intens.</ab> {#jegIyate#}
-<ls>P. 6,4,66.</ls>
-<ls>VOP. 20,4.</ls> {#jegIyante sma ganDarvAH#}
-<ls>MBH. 12,12200.</ls> {#jegIyate#} <ab>pass.</ab>
-<ls>VARĀH. BṚH. S. 19,18.</ls>
+**PPP 2a): Lehre)** — 2) _f._ *ā*
+ a) (а именно *upaniṣad*) учение, возвещенное вдохновленным мудрецом в стихах, см. *agastya˚, bhagavad˚, rāma˚, śiva˚*.
+Под *gītā* подразумевается *bhagavadgītā*.
 
-**acCa)** <div n="p">— {#acCa#} {%призывать пением, призывать%}: {#acCA^ vo a\gnima^vase de\vaM gA^mi#} (1. <ab>aor.</ab> <ab>med.</ab>)
-<ls>ṚV. 5,25,1.</ls>
+**PPP 2b): Metrum)** — b) имя названия метра (4 раза ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ – ⏑ ⏑ – ⏑ –)
+[COLEBR. Misc. Ess. II,163] ([XV,4]).
 
-**ava 1): PPP geschmäht)** <div n="1"> 1) <lex>adj.</lex> {%поносимый, осмеянный, жалкий, ничтожный%}, = {#KyAtagarhaRa#}
-<ls>AK. 3,2,42.</ls> = {#garhita#}
-<ls n="AK.">3,4,14,81.</ls> <ls>MED. t. 178.</ls> <ls>VIŚVA beim Sch.</ls> к <ls>KIR. 2,7.</ls> = {#vigarhita#}
-<ls>H. an. 4,93.</ls> = {#muhurduzwa#}
-<ls>VIŚVA</ls> <ab>a. a. O.</ab> = {#muhurdfzwa#}
-<ls>ŚKDR.</ls> по той же <ab>Aut.</ab>
-<ls>H. an.</ls> = {#tvazwf(!)#}
-<ls>MED.</ls> = {#dfzwa#}
-<ls>ŚKDR.</ls> по <ab>ders.</ab> <ab>Aut.</ab> {#avagItAM daSAm#}
-<ls>KIR. 2,7.</ls> {#avagItamidaM sarvamAvAByAM BaktakAnanam#} {%ставший в тягость, надоевший%}
-<ls>HARIV. 3483.</ls>
+**PPP 3): Gesang (noun))** — 3) _n._ пение
+[AK. 1,1,6,4.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?1,1,6,4)
+[TRIK.]
+[H. 279. fg.](https://sanskrit-lexicon-scans.github.io/abch2/app1?279)
+[H. an.] [MED.] [VS. 30,6.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?30,6) *nṛttaṃ gītamupāvavarta*
+[ŚAT. BR. 3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6) [6,1,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,1,1,15)
+[KĀTY. ŚR. 21,3,11.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?21,3,11)
+[LĀṬY. 7,7,32.] *gītaṃ kariṣyāmi*
+[PAÑCAT. 248,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?248,5) *gītajño yadi yogena nāpnoti paramaṃ paday . rudrasyānucaro bhūtvā saha tenaiva modate ..*
+[YĀJÑ. 3,116.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,116)
+[ARJ. 4,10.]
+[R. 1,4,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,16) [64,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,10)
+[SUŚR. 1,192,5. 250. 13.]
+[ŚĀK. 5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?5) [164.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?164)
+[ŚUK. 39,11.]
+[ṚT. 1,3.] *gītavāditre*
+[CHĀND. UP. 8,2,8.]
+[R. 1,9,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,8) [3,15,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,7) *gītavādanam*
+[M. 2,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,178) *gītanṛtyaḥ(!)*
+[R. 1,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,5) — caus. *gāpayati* заставить петь —, воспевать
+[LĀTY. 1,5,8.] [ŚĀṄKH. GṚHY. 1,22.] *vāsavadattāṃ tāṃ gāpayan*
+[KATHĀS. 12,31.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,31) *svakṛtiṃ gāpayāmāsa*
+[RAGH. 15,33.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,33) *jayodāharaṇaṃ bāhvorgāpayāmāsa kiṃnarān*
+[4,78.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,78) [9,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,20) *gāpayanharim*
+[BHĀG. P. 6,17,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,17,3) *kathamātmānaṃ gāpayiṣyāma* позволять воспевать себя
+[4,15,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,15,26) — intens. *jegīyate*
+[P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
+[VOP. 20,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,4) *jegīyante sma gandharvāḥ*
+[MBH. 12,12200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12200) = [≈Вульг. 12.324.14](mbh/12.324.html#v14) = ≈крит. 12,311.14a *jegīyate* pass.
+[VARĀH. BṚH. S. 19,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,18)
 
-**ava 2): Gespötte)** <div n="1">— 2) <lex>n.</lex> {%осмеяние, злословие%}, = {#janya#}
-<ls>AK. 3,4,14,81.</ls> = {#apavAda#}
-<ls>H. an.</ls> = {#nirvAda#}
-<ls>MED.</ls> <ls>VIŚVA.</ls>
+**acCa)** — *accha* призывать пением, призывать: *acchā vo agnimavase devaṃ gāmi* (1. aor. мед.)
+[ṚV. 5,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.025.html#rv05.025.01)
 
-**ava verb)** <div n="p">— {#ava#} {%петь на убыль%} так <ab>v. a.</ab> {%поносить в песнях, осмеивать%}; {#avagIta#}
+**ava 1): PPP geschmäht)** 1) _adj._ поносимый, осмеянный, жалкий, ничтожный, = *khyātagarhaṇa*
+[AK. 3,2,42.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,42) = *garhita*
+[3,4,14,81.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,81) [MED. t. 178.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,178) [VIŚVA beim Sch.] к [KIR. 2,7.] = *vigarhita*
+[H. an. 4,93.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?4,93) = *muhurduṣṭa*
+[VIŚVA] указ. соч. = *muhurdṛṣṭa*
+[ŚKDR.] по той же авт.
+[H. an.] = *tvaṣṭṛ(!)*
+[MED.] = *dṛṣṭa*
+[ŚKDR.] по тот же авт. *avagītāṃ daśām*
+[KIR. 2,7.] *avagītamidaṃ sarvamāvābhyāṃ bhaktakānanam* ставший в тягость, надоевший
+[HARIV. 3483.](https://sanskrit-lexicon-scans.github.io/hariv?3483)
 
-**closing)** <div n="v">— <ab>Vgl.</ab> {#aBigezRa#} .
+**ava 2): Gespötte)** — 2) _n._ осмеяние, злословие, = *janya*
+[AK. 3,4,14,81.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,14,81) = *apavāda*
+[H. an.] = *nirvāda*
+[MED.] [VIŚVA.]
 
-**cross-ref)** <div n="v">— <ab>Vgl.</ab> {#upagA, upagAtar#} .
+**ava verb)** — *ava* петь на убыль так преим. поносить в песнях, осмеивать; *avagīta*
 
-**main verb: singen)** 2. {#gA#}¦ {#(gE), gA/yati#}
-<ls>DHĀTUP. 22,20.</ls> ep. {#gAnti#}
-<ls>MBH. 3,15850.</ls> <ls n="MBH.">12,10299.</ls> {#jagO; gAsyati; agAsIt, gAsizat; geyAt#}
-<ls>P. 6,4,67.</ls>
-<ls>VOP. 8,85.</ls> {#gItvA, ˚gAya#}
-<ls>P. 6,4,69.</ls>
-<ls>VOP. 26,212.</ls>; {#gIyate#}
-<ls>P. 6,4,66</ls>; {#gIta#}; редко <ab>med.</ab> {%петь, говорить нараспев%} (<ab>z. B.</ab> о речи существ, не наделенных даром слова, таких как земля, изображения богов <ab>u. s. w.</ab>); {%возвещать в стихах; воспевать%}: {#gA\ya\traM tvo^ gAyati#}
-<ls>ṚV. 10,71,11.</ls> <ls n="ṚV.">1,10,1.</ls> <ls n="ṚV. 1,">21,2.</ls> <ls n="ṚV. 1,">38,14.</ls>
-<ls>CHĀND. UP. 1,11,7.</ls> {#indrA^ya gAyata#}
-<ls>ṚV. 1,4,10.</ls> {#pA\hi gAyAnDa^so\ mada\ indrA^ya#}
-<ls n="ṚV.">8,33,4.</ls> {#samI^kzayasva\ gAya^to\ naBA^Msi#}
-<ls>AV. 4,15,3.</ls>
-[Page2-0724]
-{#gAya^dgA\TaM su\taso^mo duva\syan#}
-<ls>ṚV. 1,167,6.</ls> {#gAya\tsAma^#}
-<ls n="ṚV. 1,">173,1.</ls> <ls n="ṚV.">2,43,2.</ls> <ls>ŚAT. BR. 2,5,2,46.</ls> <ls n="ŚAT. BR.">6,1,1,15.</ls> <ls>TAITT. UP. 1,8. 3,10.</ls> {#stomA^so gI\yamA^nAsaH#}
-<ls>ṚV. 6,69,2.</ls> <ls n="ṚV.">8,2,14.</ls> {#gAya^nta\M striya^H kAmayante#}
-<ls>TS. 6,1,6,6.</ls> {#BUmirha jagAvityudAharanti#}
-<ls>AIT. BR. 8,21.</ls>
-<ls>ŚAT. BR. 13,7,1,15.</ls> <ls n="ŚAT. BR. 13,">1,5,1.</ls> <ls n="ŚAT. BR.">3,2,4,6.</ls>
-<ls>ŚĀṄKH. ŚR. 15,26,9.</ls> {#devatAni gAyanti#}
-<ls>KAUŚ. 105. 93.</ls> {#akzarARi nikrIqayanniva gAyati#}
-<ls>LĀṬY. 7,12,9. 13.</ls> — {#na nftyedaTa vA gAyet#}
-<ls>M. 4,64.</ls> {#gAyanti divyatAnEH#}
-<ls>MBH. 2,133.</ls>
-<ls>R. 1,9,14.</ls> <ls n="R.">3,15,15.</ls>
-<ls>ŚĀK. 4,8.</ls> {#jaguH kalaM ca ganDarvAH#}
-<ls>R. 1,19,10.</ls> <ls n="R. 1,">4,12.</ls>
-<ls>KATHĀS. 3,64.</ls> {#(mfgAH) manojYEH — vAgBirgAyantIva#}
-<ls>R. 3,78,12.</ls> {#gIyatAM pIyatAM ca#}
-<ls>MBH. 1,7649.</ls>
-<ls>ŚĀK. 59,6.</ls> {#grIzmasamayamaDikftya gIyatAm#}
-<ls n="ŚĀK.">4,5.</ls> {#jaguSca — sAmAni sAmagAH#}
-<ls>R. 2,76,18.</ls> {#jagurgItAni#}
-<ls>ARJ. 4,10.</ls> {#tatra sma gATA gAyanti sAmnA paramavalgunA#}
-<ls>MBH. 3,1783.</ls> {#gIyamAnamaNgala#}
-<ls>PAÑCAT. 158,2.</ls> {#idaM kAvyamagAyatAm#}
-<ls>R. 1,4,13.</ls> {#gIyatAmidamAKyAnam#}
-<ls n="R. 1,4,">10.</ls> {#jaguH Slokamimam#}
-<ls n="R. 1,">2,42.</ls> <ls>MBH. 3,2648.</ls> {#jagAvidam#}
-<ls>R. 1,2,7.</ls> {#gAyanti sukumArARi manojYAni#}
-<ls n="R. 1,">9,48.</ls> {#gIyatAM nAwyocitaM kiMcit#}
-<ls>DHŪRTAS. 68,17.</ls> {#tavAmalaM yaSo gItvA#}
-<ls>BHĀG. P. 7,8,54.</ls> {#yaM devaM viduzo gAnti#}
-<ls>MBH. 3,15850.</ls> {#vedANgezvatulabalOGa gIyase ca#}
-<ls n="MBH.">1,1295.</ls> <ls>MEGH. 57.</ls> <ls>BHĀG. P. 8,1,32.</ls> {#praBavastasya gIyase#} так <ab>v. a.</ab> {%называться%}
-<ls>KUMĀRAS. 2,5.</ls> {#aRImARqavya iti ca tato lokezu gIyate#}
-<ls>MBH. 1,4329.</ls>
-<ls>RAGH. ed. Calc. 8,30.</ls> Об изречениях великих мудрецов
-<ls>VARĀH. BṚH. S. 1,7.</ls> <ls n="VARĀH. BṚH. S.">31,26.</ls> {%петь кому-л.%} (<ab>acc.</ab>), {%исполнять (что-л.) с пением%}: {#jagO jayA pratIhArIH#}
-<ls>KATHĀS. 1,53.</ls> — <ab>med.</ab>: {#gAye^ tvA\ nama^sA gi\rA#}
-<ls>ṚV. 8,46,17.</ls> {#bf\hadu^ gAyize\ vaca^H#}
-<ls n="ṚV.">7,96,1.</ls> <ls>LĀṬY. 1,8,7.</ls> {#hasate gAyate cEva#}
-<ls>MBH. 13,747.</ls> {#ime ca gATe dve gAyeTAH#}
-<ls>R. 1,62,20.</ls> {#agAyata#}
-<ls>BRAHMA-P. 53,17.</ls>
-<ls>MĀRK. P. 29,43.</ls> {#gaNgAvataraRam — jagire#}
-<ls>HARIV. 8690.</ls> {#gAyamAna#}
-<ls>R. 1,4,15.</ls>
-<ls>BHĀG. P. 3,15,18.</ls> {#vAkyAni mama gATABirgAyamAnAH#}
-<ls>N. 24,22.</ls> — {#gIta/#}
+**closing)** — ср. *abhigeṣṇa* .
 
-**pratyud)** <div n="p">— {#pratyud#} {%отвечать пением%}: {#pratyudgItastu KalvezAM taTodgAtA Bavati#}
-<ls>LĀṬY. 7,8,19.</ls>
+**cross-ref)** — ср. *upagā, upagātar* .
 
-**prefix_marker)** <div n="p">— {#aBi#}
+**main verb: singen)** 2. *gā* *(gai), gāyati*
+[DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
+[MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) = [≈Вульг. 3.272.73](mbh/3.272.html#v73) = ≈крит. 03,256.29a [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](mbh/12.284.html#v187) = крит. — *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
+[P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
+[VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85) *gītvā, ˚gāya*
+[P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69)
+[VOP. 26,212.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,212); *gīyate*
+[P. 6,4,66](https://ashtadhyayi.com/sutraani/6/4/66); *gīta*; редко мед. петь, говорить нараспев (напр. о речи существ, не наделенных даром слова, таких как земля, изображения богов и т.д.); возвещать в стихах; воспевать: *gāyatraṃ tvo gāyati*
+[ṚV. 10,71,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.11) [1,10,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.010.html#rv01.010.01) [21,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.021.html#rv01.021.02) [38,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.038.html#rv01.038.14)
+[CHĀND. UP. 1,11,7.] *indrāya gāyata*
+[ṚV. 1,4,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.004.html#rv01.004.10) *pāhi gāyāndhaso mada indrāya*
+[8,33,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.033.html#rv08.033.04) *samīkṣayasva gāyato nabhāṃsi*
+[AV. 4,15,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.015.html#av04.015.03)
 
-**prod)** <div n="p">— {#prod#} {%начинать петь%}: {#prodgItAM maDuparutEH stutiM paWanto nftyanti (samIrAH)#}
-<ls>PRAB. 80,3.</ls>
+*gāyadgāthaṃ sutasomo duvasyan*
+[ṚV. 1,167,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.06) *gāyatsāma*
+[173,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.173.html#rv01.173.01) [2,43,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.043.html#rv02.043.02) [ŚAT. BR. 2,5,2,46.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,46) [6,1,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,1,1,15) [TAITT. UP. 1,8. 3,10.] *stomāso gīyamānāsaḥ*
+[ṚV. 6,69,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.069.html#rv06.069.02) [8,2,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.14) *gāyantaṃ striyaḥ kāmayante*
+[TS. 6,1,6,6.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,1,6,6) *bhūmirha jagāvityudāharanti*
+[AIT. BR. 8,21.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,21)
+[ŚAT. BR. 13,7,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,7,1,15) [1,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,1) [3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6)
+[ŚĀṄKH. ŚR. 15,26,9.] *devatāni gāyanti*
+[KAUŚ. 105. 93.] *akṣarāṇi nikrīḍayanniva gāyati*
+[LĀṬY. 7,12,9. 13.] — *na nṛtyedatha vā gāyet*
+[M. 4,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,64) *gāyanti divyatānaiḥ*
+[MBH. 2,133.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.133) = [≈Вульг. 2.4.38](mbh/2.4.html#v38) = ≈крит. 02,4.31c
+[R. 1,9,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,14) [3,15,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,15)
+[ŚĀK. 4,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,8) *jaguḥ kalaṃ ca gandharvāḥ*
+[R. 1,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,19,10) [4,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,12)
+[KATHĀS. 3,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,64) *(mṛgāḥ) manojñaiḥ — vāgbhirgāyantīva*
+[R. 3,78,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,78,12) *gīyatāṃ pīyatāṃ ca*
+[MBH. 1,7649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7649) = [≈Вульг. 1.207.39](mbh/1.207.html#v39) = ≈крит. 01,199.37c
+[ŚĀK. 59,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?59,6) *grīṣmasamayamadhikṛtya gīyatām*
+[4,5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,5) *jaguśca — sāmāni sāmagāḥ*
+[R. 2,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,18) *jagurgītāni*
+[ARJ. 4,10.] *tatra sma gāthā gāyanti sāmnā paramavalgunā*
+[MBH. 3,1783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1783) = [≈Вульг. 3.43.28](mbh/3.43.html#v28) = ≈крит. 03,44.28a *gīyamānamaṅgala*
+[PAÑCAT. 158,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?158,2) *idaṃ kāvyamagāyatām*
+[R. 1,4,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,13) *gīyatāmidamākhyānam*
+[10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,10) *jaguḥ ślokamimam*
+[2,42.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,42) [MBH. 3,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2648) = [≈Вульг. 3.67.15](mbh/3.67.html#v15) = ≈крит. 03,64.14c *jagāvidam*
+[R. 1,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,7) *gāyanti sukumārāṇi manojñāni*
+[9,48.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,48) *gīyatāṃ nāṭyocitaṃ kiṃcit*
+[DHŪRTAS. 68,17.] *tavāmalaṃ yaśo gītvā*
+[BHĀG. P. 7,8,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,54) *yaṃ devaṃ viduṣo gānti*
+[MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) = [≈Вульг. 3.272.73](mbh/3.272.html#v73) = ≈крит. 03,256.29a *vedāṅgeṣvatulabalaugha gīyase ca*
+[1,1295.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1295) [MEGH. 57.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?57) [BHĀG. P. 8,1,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,1,32) *prabhavastasya gīyase* так преим. называться
+[KUMĀRAS. 2,5.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,5) *aṇīmāṇḍavya iti ca tato lokeṣu gīyate*
+[MBH. 1,4329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4329) = [≈Вульг. 1.108.8](mbh/1.108.html#v8) = ≈крит. 01,101.22a
+[RAGH. ed. Calc. 8,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?8,30) Об изречениях великих мудрецов
+[VARĀH. BṚH. S. 1,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?1,7) [31,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?31,26) петь кому-л. (acc.), исполнять (что-л.) с пением: *jagau jayā pratīhārīḥ*
+[KATHĀS. 1,53.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,53) — мед.: *gāye tvā namasā girā*
+[ṚV. 8,46,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.17) *bṛhadu gāyiṣe vacaḥ*
+[7,96,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.096.html#rv07.096.01) [LĀṬY. 1,8,7.] *hasate gāyate caiva*
+[MBH. 13,747.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.747) = [≈Вульг. 13.14.156](mbh/13.14.html#v156) = крит. — *ime ca gāthe dve gāyethāḥ*
+[R. 1,62,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,20) *agāyata*
+[BRAHMA-P. 53,17.]
+[MĀRK. P. 29,43.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,43) *gaṅgāvataraṇam — jagire*
+[HARIV. 8690.](https://sanskrit-lexicon-scans.github.io/hariv?8690) *gāyamāna*
+[R. 1,4,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,15)
+[BHĀG. P. 3,15,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,18) *vākyāni mama gāthābhirgāyamānāḥ*
+[N. 24,22.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,22) — *gīta*
 
-**ud main)** <div n="p">— {#ud#} {%запевать, петь%}; употребляется особенно о литургическом пении, по которому один из жрецов называется <is>Udgātar</is>. {#u\ta prAstO\ducca^ vi\dvA~ a^gAyat#}
-<ls>ṚV. 10,67,3.</ls>
-<ls>AV. 9,6,45.</ls>
-<ls>ŚAT. BR. 13,2,3,2.</ls> <ls n="ŚAT. BR.">14,4,1,3.</ls> <ls n="ŚAT. BR. 14,">9,3,9.</ls> <ls n="ŚAT. BR.">4,3,4,26.</ls>
-<ls>AIT. BR. 5,34.</ls> {#navaBiraDvaryurudgAyati#}
-<ls>TS. 7,5,8,2.</ls>
-<ls>LĀṬY. 2,6,2. 10,3. 6,10,8.</ls>
-<ls>CHĀND. UP. 1,1,1. 10,10. 11,7.</ls> — {#udgAsyatAM kiMnarARAm#}
-<ls>KUMĀRAS. 1,8.</ls> {#kvacidDasati — udgAyati kvacit#}
-<ls>BHĀG. P. 7,4,39.</ls>
-<ls>RĀJA-TAR. 5,370.</ls> {#geyamudgAtukAmA#}
-<ls>MEGH. 84.</ls> {#gATAScirodgItAH (kaRqunA)#}
-<ls>R. 5,91,7.</ls> {#tadetatte mayodgItaM yaTAtaTam#} {%возвещено%}
-<ls>MBH. 6,2966.</ls> {#udgItametatparamaM tu brahma#} {%возвещено мудрецами как высшее%} Br.
-<ls>ŚVETĀŚV. UP. 1,7.</ls> {%воспевать%}: {#yaSaH svamuccErudgIyamAnaM vanadevatABiH#}
-<ls>RAGH. 2,12.</ls>
-<ls>PRAB. 3,14.</ls> {%петь перед кем-л.%} (<ab>acc.</ab>): {#(munim) udgIyamAnaM ganDarvEH#}
-<ls>MĀRK. P. 18,23.</ls> {%наполнять пением%}: {#haMsakAraRqavodgItAH (nadyaH)#}
-<ls>MBH. 3,1535.</ls> {#udgIta#} <lex>n.</lex> {%пение%}: {#kiMnarodgItaBAziRI#}
-<ls>MBH. 1,6569.</ls> в <is>Prākrit</is>: {#sa kAlo madavibBamuggIdARaM#}
-<ls>ŚĀK. CH. 117,5.</ls>
+**pratyud)** — *pratyud* отвечать пением: *pratyudgītastu khalveṣāṃ tathodgātā bhavati*
+[LĀṬY. 7,8,19.]
 
-**ud tail)** <div n="v">— <ab>Vgl.</ab> {#udgAtar, udgATA, udgIti, udgITa#} .
+**prefix_marker)** — *abhi*
 
-## h2
+**prod)** — *prod* начинать петь: *prodgītāṃ madhuparutaiḥ stutiṃ paṭhanto nṛtyanti (samīrāḥ)*
+[PRAB. 80,3.]
 
-**1)** 3. {#gA#}¦ (от {#gam#}) <lex>adj.</lex> идущий, в конце <ab>compp.</ab>
-<ls>P. 3,2,67</ls> (<ls>ved.).</ls> <ls>VOP. 26,66.</ls> <ls n="VOP. 26,">67.</ls>
-<div n="v">— <ab>Vgl.</ab> {#agA, agregA, purogA, svastigA#} и 1. {#ga#} .
+**ud main)** — *ud* запевать, петь; употребляется особенно о литургическом пении, по которому один из жрецов называется Удгатар. *uta prāstauducca vidvā agāyat*
+[ṚV. 10,67,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.03)
+[AV. 9,6,45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.45)
+[ŚAT. BR. 13,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,3,2) [14,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,3) [9,3,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,3,9) [4,3,4,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,3,4,26)
+[AIT. BR. 5,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,34) *navabhiradhvaryurudgāyati*
+[TS. 7,5,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,8,2)
+[LĀṬY. 2,6,2. 10,3. 6,10,8.]
+[CHĀND. UP. 1,1,1. 10,10. 11,7.] — *udgāsyatāṃ kiṃnarāṇām*
+[KUMĀRAS. 1,8.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,8) *kvaciddhasati — udgāyati kvacit*
+[BHĀG. P. 7,4,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,4,39)
+[RĀJA-TAR. 5,370.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,370) *geyamudgātukāmā*
+[MEGH. 84.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84) *gāthāścirodgītāḥ (kaṇḍunā)*
+[R. 5,91,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,7) *tadetatte mayodgītaṃ yathātatham* возвещено
+[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) = [≈Вульг. 6.65.69](mbh/6.65.html#v69) = ≈крит. 06,61.64c *udgītametatparamaṃ tu brahma* возвещено мудрецами как высшее Br.
+[ŚVETĀŚV. UP. 1,7.] воспевать: *yaśaḥ svamuccairudgīyamānaṃ vanadevatābhiḥ*
+[RAGH. 2,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,12)
+[PRAB. 3,14.] петь перед кем-л. (acc.): *(munim) udgīyamānaṃ gandharvaiḥ*
+[MĀRK. P. 18,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,23) наполнять пением: *haṃsakāraṇḍavodgītāḥ (nadyaḥ)*
+[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) = [≈Вульг. 3.38.20](mbh/3.38.html#v20) = ≈крит. 03,39.18a *udgīta* _n._ пение: *kiṃnarodgītabhāṣiṇī*
+[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) = [≈Вульг. 1.170.74](mbh/1.170.html#v74) = ≈крит. 01,159.16a в Пракрит: *sa kālo madavibbhamuggīdāṇaṃ*
+[ŚĀK. CH. 117,5.]
 
-## h3
+**ud tail)** — ср. *udgātar, udgāthā, udgīti, udgītha* .
 
-**1))** 4. {#gA#}¦ (= 2. {#gA#})
-<div n="1"> 1) <lex>adj.</lex> поющий, в конце <ab>comp.</ab> <ab>s.</ab> {#sAmagA#} .
+## омоним h2
 
-**2))** <div n="1">— 2) <lex>f.</lex> {%песнь, стих%} ({#gATA#})
-<ls>PURUṢ.</ls> в <ls>ŚKDR.</ls>
+**1)** 3. *gā* (от *gam*) _adj._ идущий, в конце compp.
+[P. 3,2,67](https://ashtadhyayi.com/sutraani/3/2/67) ([ved.).] [VOP. 26,66.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,66) [67.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,67)
+— ср. *agā, agregā, purogā, svastigā* и 1. *ga* .
 
-**cross-ref)** <div n="v">— <ab>Vgl.</ab> 2. {#ga#} .
+## омоним h3
 
-## h6
+**1))** 4. *gā* (= 2. *gā*)
+ 1) _adj._ поющий, в конце comp. см. *sāmagā* .
 
-**1)** 3. {#gA#}¦ <ab>vgl.</ab> еще {#tamogA#} .
+**2))** — 2) _f._ песнь, стих (*gāthā*)
+[PURUṢ.] в [ŚKDR.]
 
-## h5
+**cross-ref)** — ср. 2. *ga* .
 
-**2a)** <div n="1"> 2)
-<div n="2"> a) {#gItA = BagavadgItA#}
-<ls>Verz. d. Oxf. H. 2,b,2.</ls> <ls n="Verz. d. Oxf. H.">3,b, No. 24.</ls> <ls n="Verz. d. Oxf. H.">113,b,20.</ls> <ls n="Verz. d. Oxf. H.">182,b,33.</ls> <ls n="Verz. d. Oxf. H.">270,a,31.</ls> {#˚tattvaprakASikA#}
-<ls>HALL 118.</ls> {#˚tAtparya#}
-<ls n="HALL">95.</ls> {#˚tAtparyaSudDi#}
-<ls n="HALL">117.</ls> {#˚BAzya#}
-<ls n="HALL">92. 117.</ls> {#˚BAzyavivecana#}
-<ls n="HALL">117.</ls> {#˚vyAKyA#}
-<ls n="HALL">120.</ls> {#˚vyAKyAna#}
-<ls n="HALL">117.</ls> {#˚sAra#}
-<ls n="HALL">121.</ls> {#˚hetunirRaya#}
-<ls n="HALL">152.</ls> {#gItAmftataraMgiRI#}
-<ls n="HALL">120.</ls> {#gItArTavivaraRa#}
-<ls n="HALL">205.</ls>
+## омоним h6
 
-**3_structure)** <div n="1">— 3) распадается на {#gAnDarva#} и {#gAna#}
-<ls>Verz. d. Oxf. H. 199,b, No. 472.</ls> на {#mArga#} и {#deSI#}
-<ls n="Verz. d. Oxf. H.">200,a, No. 475.</ls> {#gItaM vAdyaM nartanaM ca trayaM saMgItamucyate#}
-<ls n="Verz. d. Oxf. H. 200,">b, No. 476.</ls> среди
-64 <is>Kalā</is> <ls n="Verz. d. Oxf. H.">217,a,1.</ls> {#jagrAha pAWyamfgvedAtsAmaByo gItameva ca#}
-<ls n="Verz. d. Oxf. H.">265,b,24.</ls> название 4 гимнов на <is>Kṛṣṇa</is>
-<ls>HALL 151.</ls> — <ab>intens.</ab> {#jegIyate#} {%часто утверждается —, настойчиво утверждается%}
-<ls>SARVADARŚANAS. 40,1. 122,1.</ls>
+**1)** 3. *gā* ср. еще *tamogā* .
 
-**heading)** 2. {#gA#}¦, {#yaH SOryOdAryaSfNgAramayo janatayA jage#} так <ab>v. a.</ab> {%носивший в народе имя%}
-<ls>KATHĀS. 91,7.</ls> {#gIyate#} {%называется, именуется%}
-<ls>SARVADARŚANAS. 163,12. fg.</ls> — {#gIta#}
+## омоним h5
 
-**prefix_pari.3)** <div n="p">— {#anu#}
-<div n="1"> 3) {#evaM vrajastriyaH — kfzRalIlAnugAyatIH#}
-<ls>BHĀG. P. 10,35,26.</ls>
+**2a)** 2)
+ a) *gītā = bhagavadgītā*
+[Verz. d. Oxf. H. 2,b,2.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?2) [3,b, No. 24.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?3) [113,b,20.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?113) [182,b,33.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?182) [270,a,31.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?270) *˚tattvaprakāśikā*
+[HALL 118.] *˚tātparya*
+[95.] *˚tātparyaśuddhi*
+[117.] *˚bhāṣya*
+[92. 117.] *˚bhāṣyavivecana*
+[117.] *˚vyākhyā*
+[120.] *˚vyākhyāna*
+[117.] *˚sāra*
+[121.] *˚hetunirṇaya*
+[152.] *gītāmṛtataraṃgiṇī*
+[120.] *gītārthavivaraṇa*
+[205.]
 
-**prefix_pra.3)** <div n="p">— {#A#}
-<div n="1"> 3) {%петь тихо —, вполголоса%}
-<ls>PAÑCAV. BR. 13,10,8. 19,12,7.</ls>
+**3_structure)** — 3) распадается на *gāndharva* и *gāna*
+[Verz. d. Oxf. H. 199,b, No. 472.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?199) на *mārga* и *deśī*
+[200,a, No. 475.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?200) *gītaṃ vādyaṃ nartanaṃ ca trayaṃ saṃgītamucyate*
+[b, No. 476.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?200) среди
+64 Кала [217,a,1.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?217) *jagrāha pāṭhyamṛgvedātsāmabhyo gītameva ca*
+[265,b,24.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?265) название 4 гимнов на Кришна
+[HALL 151.] — intens. *jegīyate* часто утверждается —, настойчиво утверждается
+[SARVADARŚANAS. 40,1. 122,1.]
 
-**prefix_pra_ud_sam)** <div n="p">— {#saMpra#} {%начинать петь%}: {#samaM saMprajaguryatra manastuzwivivarDanam#}
-<ls>R. 7,26,7.</ls>
+**heading)** 2. *gā*, *yaḥ śauryaudāryaśṛṅgāramayo janatayā jage* так преим. носивший в народе имя
+[KATHĀS. 91,7.](https://sanskrit-lexicon-scans.github.io/kss/index.html?91,7) *gīyate* называется, именуется
+[SARVADARŚANAS. 163,12. fg.] — *gīta*
 
-**prefix_sam_vi_pra)** <div n="p">— {#ud#}, {#udgAti#}
-<ls>ŚĀṄKH. BR. 17,7.</ls> {#udgAyet#}
-<ls>LĀṬY. 6,10,18.</ls> {#ujjaguH#}
-<ls>BHĀG. P. 10,5,12.</ls> {#ityudgIya#}
-<ls>KATHĀS. 86,46.</ls>
+**prefix_pari.3)** — *anu*
+ 3) *evaṃ vrajastriyaḥ — kṛṣṇalīlānugāyatīḥ*
+[BHĀG. P. 10,35,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,35,26)
 
-**prefix_ud.1)** <div n="p">— {#upa#}
-<div n="1"> 1)
-<ls>ŚĀṄKH. BR. 17,7.</ls>
+**prefix_pra.3)** — *ā*
+ 3) петь тихо —, вполголоса
+[PAÑCAV. BR. 13,10,8. 19,12,7.]
 
-**prefix_ud.3)** <div n="1">— 3) {#yaToktamfziRA pUrvaM sarvaM tatropagAyatAm#}
-<ls>R. 7,94,1.</ls>
+**prefix_pra_ud_sam)** — *saṃpra* начинать петь: *samaṃ saṃprajaguryatra manastuṣṭivivardhanam*
+[R. 7,26,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,26,7)
 
-**prefix_ud_sam_ppp)** <div n="p">— {#pra#}, {#pragIta#} {%произнесенный нараспев, воспетый%}: {#vEdikASca (mantrAH) dviviDAH pragItA apragItASca . tatra pragItAH sAmAni . apragItASca dviviDAH#} (а именно {#fcaH#} и {#yajUMzi)#}
-<ls>SARVADARŚANAS. 169,17. fg.</ls> {%поя, нараспев%}
-<ls>KATHĀS. 121,130.</ls>
+**prefix_sam_vi_pra)** — *ud*, *udgāti*
+[ŚĀṄKH. BR. 17,7.] *udgāyet*
+[LĀṬY. 6,10,18.] *ujjaguḥ*
+[BHĀG. P. 10,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,5,12) *ityudgīya*
+[KATHĀS. 86,46.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,46)
 
-**prefix_vi_pari)** <div n="p">— {#ava#}, {#avagItaM muhurdfzwamupalabDaM ca yadBavet#}
-<ls>HALĀY. 4,70.</ls> {#avagItaM tu nirvede 'nUktadfzwe vigarhite#}
-<ls>AJAYA</ls> при <ls>AUFRECHT, HALĀY.</ls> <ls>Ind.</ls>
+**prefix_ud.1)** — *upa*
+ 1)
+[ŚĀṄKH. BR. 17,7.]
 
-## h4
+**prefix_ud.3)** — 3) *yathoktamṛṣiṇā pūrvaṃ sarvaṃ tatropagāyatām*
+[R. 7,94,1.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,94,1)
 
-**heading)** 1. {#gA#}¦
+**prefix_ud_sam_ppp)** — *pra*, *pragīta* произнесенный нараспев, воспетый: *vaidikāśca (mantrāḥ) dvividhāḥ pragītā apragītāśca . tatra pragītāḥ sāmāni . apragītāśca dvividhāḥ* (а именно *ṛcaḥ* и *yajūṃṣi)*
+[SARVADARŚANAS. 169,17. fg.] поя, нараспев
+[KATHĀS. 121,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,130)
 
-**prefix_abhi.1)** <div n="1"> 1) {#muktAPalam — agAt#} {%направился к жемчужине%}
-<ls>Spr. 5231.</ls>
+**prefix_vi_pari)** — *ava*, *avagītaṃ muhurdṛṣṭamupalabdhaṃ ca yadbhavet*
+[HALĀY. 4,70.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,70) *avagītaṃ tu nirvede 'nūktadṛṣṭe vigarhite*
+[AJAYA] при [AUFRECHT, HALĀY.] [Ind.]
 
-**prefix_anu.1)** <div n="p">— {#aBi#}
-<div n="1"> 1) {#rAjA hfzwastamaByagAt#} {%шел ему навстречу%}
-<ls>KATHĀS. 51,176.</ls>
+## омоним h4
 
-**prefix_anu.2)** <div n="1">— 2) в конце, также <ls>ed. Bomb.</ls> {#aByagAt#} .
+**heading)** 1. *gā*
 
-**prefix_pari.4)** <div n="p">— {#pari#}
-<div n="1"> 4) читай «обходить» так <ab>v. a.</ab> не достичь цели, не уразуметь, не получить познания о чем-л. {#pariSabdo nizeDe#}
-<ab>Schol.</ab>
+**prefix_abhi.1)** 1) *muktāphalam — agāt* направился к жемчужине
+[Spr. 5231.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5231)
 
-**prefix_vi.umfallen)** <div n="p">— {#vipari#} {%падать, опрокидываться%}: {#kaTaM svayaM vE SakawaM viparyagAt#}
-<ls>BHĀG. P. 10,7,8.</ls>
+**prefix_anu.1)** — *abhi*
+ 1) *rājā hṛṣṭastamabhyagāt* шел ему навстречу
+[KATHĀS. 51,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?51,176)
+
+**prefix_anu.2)** — 2) в конце, также [Бомбейская ред.] *abhyagāt* .
+
+**prefix_pari.4)** — *pari*
+ 4) читай «обходить» так преим. не достичь цели, не уразуметь, не получить познания о чем-л. *pariśabdo niṣedhe*
+схол.
+
+**prefix_vi.umfallen)** — *vipari* падать, опрокидываться: *kathaṃ svayaṃ vai śakaṭaṃ viparyagāt*
+[BHĀG. P. 10,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,8)

@@ -46,13 +46,27 @@ import spr_fulltext as spr  # noqa: E402  (<ls> Spr. (II) N -> Indische Sprüche
 import iast_to_cyrillic as i2c  # noqa: E402  (<is> proper name -> Cyrillic, RU column only)
 import government_census as govc  # noqa: E402  (<ab> case-government extractor; powers government.html, H1308)
 import ls_links  # noqa: E402  (<ls> MBh scan URL -> vulgate e-text URL + presence verdict, H2845)
+import mbh_locus  # noqa: E402  (MBh citation -> Calcutta/vulgate/critical triple, H3152)
+import ls_split  # noqa: E402  (one <ls>, several addresses — H3152 A4, MG review 6a)
+import nws_citation_wrap as nwswrap  # noqa: E402  (unwrapped ṚV/AV in NWS — H3152 A5, MG review 5)
 
 #: The MBh e-text layer, shared by every card this renderer builds (H2845). It is
 #: a lookup over csl-atlas mbh_vulgate_critical_presence.csv; where that sibling
 #: checkout is absent it stays silent rather than implying a verse is absent.
 _MBH = ls_links.MbhEtext()
 
-RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
+#: The three-coordinate layer on top of it (H3152 A3, MG review point 1). Same
+#: table, same silence when csl-atlas is absent — it additionally surfaces the
+#: `bori_locus` column and carries the fitted index's measured accuracy so the
+#: card can mark the coordinate as approximate instead of asserting it.
+_MBH_LOCUS = mbh_locus.MbhLocusIndex()
+
+#: The store is a gitignored, local-only artefact belonging to the MAIN checkout.
+#: Resolved relative to this file it simply does not exist inside a linked
+#: worktree, which is the sanctioned place to work — the same H255 class of loss
+#: `store_path` was written for.
+from store_path import canonical_store  # noqa: E402
+RU_STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
 OUT_DIR = os.path.join(REPO, 'article_site')
 
 _ACCENT = re.compile(r'[\\/^~]')          # Vedic udatta/anudatta/svarita markers
@@ -60,6 +74,151 @@ _SK = re.compile(r'\{#(.*?)#\}', re.S)
 _GL = re.compile(r'\{%(.*?)%\}', re.S)
 _LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
 _N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
+
+
+#: The coordinate triple's chrome, per edition language. H2845's `E` mark was
+#: language-neutral, so its ledger entry could say the two editions get
+#: byte-identical output; the triple prints WORDS, so it needs a substitution
+#: point per language or the DE/EN editions would carry Russian labels. That is
+#: exactly the divergence LANG_PARITY exists to catch, and this table is the fix.
+#: `unchecked` has no wording at all in any language — it prints nothing, which
+#: is the whole point of H2845.
+_TRIPLE_STRINGS = {
+    'ru': {
+        'vulgate': '≈Вульг.', 'critical': '≈крит.', 'critical_none': 'крит. —',
+        'source': 'ист.',
+        'source_title': 'sanatana.in — источник вульгатного текста',
+        mbh_locus.PRESENT: 'этот стих есть и в критическом издании BORI',
+        mbh_locus.VULGATE_ONLY: 'только вульгата: критическое издание BORI '
+                                'отправило этот стих в аппарат',
+        mbh_locus.ABSENT: 'по этому вульгатному адресу вульгата ничего не даёт',
+        'fitted': 'координаты вульгаты и критического издания получены подогнанным '
+                  'индексом csl-atlas по непрерывному калькуттскому номеру, а не '
+                  'прочитаны из текста: ровно в тот стих он попадает в %.0f%% '
+                  'измеренных случаев (±2 шлоки — %.0f%%). Достоверен только '
+                  'напечатанный в PWG калькуттский номер.',
+    },
+    'de': {
+        'vulgate': '≈Vulg.', 'critical': '≈krit.', 'critical_none': 'krit. —',
+        'source': 'Qu.',
+        'source_title': 'sanatana.in — Quelle des Vulgata-Textes',
+        mbh_locus.PRESENT: 'dieser Vers steht auch in der kritischen BORI-Ausgabe',
+        mbh_locus.VULGATE_ONLY: 'nur Vulgata: die kritische BORI-Ausgabe verweist '
+                                'diesen Vers in den Apparat',
+        mbh_locus.ABSENT: 'unter dieser Vulgata-Adresse steht in der Vulgata nichts',
+        'fitted': 'Vulgata- und kritische Adresse stammen aus dem angepassten '
+                  'csl-atlas-Index über die fortlaufende Kalkutta-Nummer, sie sind '
+                  'nicht aus dem Text gelesen: genau den Vers trifft er in %.0f%% '
+                  'der gemessenen Fälle (±2 Ślokas — %.0f%%). Gesichert ist nur '
+                  'die in PWG gedruckte Kalkutta-Nummer.',
+    },
+    'en': {
+        'vulgate': '≈vulg.', 'critical': '≈crit.', 'critical_none': 'crit. —',
+        'source': 'src.',
+        'source_title': 'sanatana.in — source of the vulgate text',
+        mbh_locus.PRESENT: 'this verse also stands in the BORI critical edition',
+        mbh_locus.VULGATE_ONLY: 'vulgate-only: the BORI critical edition relegates '
+                                'this verse to its apparatus',
+        mbh_locus.ABSENT: 'the vulgate has nothing at this vulgate address',
+        'fitted': 'the vulgate and critical coordinates come from the csl-atlas '
+                  'fitted index over the continuous Calcutta number; they are not '
+                  'read from the text. It lands on exactly that verse in %.0f%% of '
+                  'measured cases (±2 ślokas — %.0f%%). Only the Calcutta number '
+                  'printed in PWG is certain.',
+    },
+}
+
+
+def _triple_strings(lang):
+    """Chrome for the coordinate triple in the edition's own language."""
+    s = _TRIPLE_STRINGS.get(lang or 'ru') or _TRIPLE_STRINGS['ru']
+    return dict(s, fitted=s['fitted'] % (100 * mbh_locus.FITTED_EXACT_RATE,
+                                         100 * mbh_locus.FITTED_WITHIN_2_RATE))
+
+
+def _mbh_triple_html(visible, n_attr, LT, GT, QT, lang=None):
+    """`MBH. 12,8081.` → ` = ≈Вульг. 12.226.6 = ≈крит. 12,219.6a`, or '' (H3152 A3).
+
+    Replaces the mute `E` / `E†` superscript of H2845 with the coordinates MG
+    asked to see. Three deliberate refusals live here:
+
+    * **The equals signs are qualified.** The vulgate and critical coordinates
+      come from a fitted index that lands on the exactly right verse 49.4 % of the
+      time (csl-atlas f8 quote-lane census), so each is prefixed `≈` and the
+      tooltip says so. MG's own specimen is a miss — the pratīka printed under
+      `MBH. 12,8081` actually stands at vulgate 12.223.24 — which is precisely why
+      this is rendered as an approximation and not as the verse's address.
+    * **The critical address is text, not a link.** The BORI e-text is
+      © BORI 1999 and explicitly not redistributable, so there is no reading
+      surface of ours to point at and no third-party deep link is invented.
+    * **`unchecked` prints nothing.** Not a dash, not a question mark on the
+      critical side — silence, so no reader can read a missing lookup as absence.
+    """
+    loc = _MBH_LOCUS.resolve_citation(visible, n_attr)
+    if loc is None or not loc.fitted:
+        return ''
+    S = _triple_strings(lang)
+    ft = S['fitted'].replace(' ', '\xa0')
+    out = ['%sspan class=mbhtriple%s' % (LT, GT)]
+    # vulgate: approximate, but linkable — our own IAST page is where it leads
+    if loc.iast_href:
+        # MG review point 1: the coordinate leads to OUR fast IAST page, not to
+        # the slow Devanāgarī reader. sanatana.in stays reachable beside it as
+        # the source of record — a small superscript, so the primary click is
+        # the one MG asked for.
+        out.append(' = %sa class=lsv href=%s%s%s title=%s%s%s\xa0%s%s/a%s'
+                   % (LT, QT, loc.iast_href, QT, ft, GT, S['vulgate'],
+                      loc.vulgate, LT, GT))
+        if loc.vulgate_href:
+            out.append('%sa class=lsvsrc href=%s%s%s title=%s target=_blank '
+                       'rel=noopener%s%ssup%s%s%s/sup%s%s/a%s'
+                       % (LT, QT, loc.vulgate_href, QT,
+                          S['source_title'].replace(' ', '\xa0'), GT,
+                          LT, GT, S['source'], LT, GT, LT, GT))
+    elif loc.vulgate_href:
+        # the href carries `?id=…`; an `=` inside an UNQUOTED attribute value is
+        # an HTML5 parse error, so this one attribute is genuinely quoted via the
+        # QT sentinel (the H2845 lesson — do not "simplify" it back)
+        out.append(' = %sa class=lsv href=%s%s%s title=%s target=_blank '
+                   'rel=noopener%s%s\xa0%s%s/a%s'
+                   % (LT, QT, loc.vulgate_href, QT, ft, GT, S['vulgate'],
+                      loc.vulgate, LT, GT))
+    else:
+        out.append(' = %s\xa0%s' % (S['vulgate'], loc.vulgate))
+    # critical: an address, never a copy of the text
+    pt = S.get(loc.presence, '')
+    if loc.presence == mbh_locus.VULGATE_ONLY:
+        out.append('%sspan class=lsc title=%s%s = %s%s/span%s'
+                   % (LT, pt.replace(' ', '\xa0'), GT,
+                      S['critical_none'].replace(' ', '\xa0'), LT, GT))
+    elif loc.bori:
+        out.append('%sspan class=lsc title=%s%s = %s\xa0%s%s/span%s'
+                   % (LT, (pt + '. ' + S['fitted']).replace(' ', '\xa0'), GT,
+                      S['critical'], loc.bori, LT, GT))
+    out.append('%s/span%s' % (LT, GT))
+    return ''.join(out)
+
+
+def _mbh_triple_md(visible, n_attr, lang=None):
+    """The md rendering of the same triple — one data source, two line policies.
+
+    The `≈` and the vulgate link survive into `reglue/<key1>.md`; the tooltip does
+    not, so the approximation marker has to carry the caveat on its own. That is
+    why it is a visible character and not a CSS class.
+    """
+    loc = _MBH_LOCUS.resolve_citation(visible, n_attr)
+    if loc is None or not loc.fitted:
+        return ''
+    S = _triple_strings(lang)
+    out = (' = [%s %s](%s)' % (S['vulgate'], loc.vulgate,
+                               loc.iast_href or loc.vulgate_href)
+           if (loc.iast_href or loc.vulgate_href)
+           else ' = %s %s' % (S['vulgate'], loc.vulgate))
+    if loc.presence == mbh_locus.VULGATE_ONLY:
+        out += ' = %s' % S['critical_none']
+    elif loc.bori:
+        out += ' = %s %s' % (S['critical'], loc.bori)
+    return out
 
 
 def _etext_html(scan_url, LT, GT, QT):
@@ -285,6 +444,13 @@ def _render(text, mode, lang=None):
     # XML/source metalanguage that must never reach the web (Cologne drops it too):
     #  ¦ (U+00A6) = lemma-terminator after the head-word; ⌊..⌋ hidden text.
     t = t.replace('¦', '')
+    # H3152 A5 (MG review 5): in the NWS layer a Ṛgveda/Atharvaveda address often
+    # stands in the running text with no <ls> around it, because csl-orig has
+    # none — so there is nothing for the resolver to see. Wrap those here, BEFORE
+    # citation rendering, so they travel the one normal code path. The wrapper is
+    # a narrow whitelist that resolves every candidate before accepting it and
+    # refuses the Paippalāda recension outright; the store is not touched.
+    t = nwswrap.wrap_bare_citations(t)[0]
     if mode == 'html':
         # Convert the tags we KEEP into sentinel-wrapped tags first (LT/GT are
         # placeholder chars, unquoted class= so html.escape won't mangle them),
@@ -307,15 +473,36 @@ def _render(text, mode, lang=None):
             # Resolver always sees stored Latin `vis`; display may RU-substitute
             # ed. Bomb. (H2005) without touching the store or href input.
             vis = m.group(2).strip()
+            n_attr = _N_ATTR.search(m.group(1) or '')
+            n_attr = n_attr.group(1) if n_attr else None
             display = _ls_visible_display(vis, lang)
             url = _ls_href(m.group(1), vis)
             title = _ls_tooltip(m.group(1), vis)
             tattr = ' title=%s' % title.replace(' ', '\xa0') if title else ''
+            # H3152 A4 (MG review 6a): one element, several addresses. Every
+            # address becomes its own link, or — if any of them fails to resolve —
+            # none does and the element renders exactly as it did before. A half
+            # split reads as "the other place does not exist", which is the very
+            # defect being fixed.
+            loci = ls_split.resolve_loci('pwg', n_attr, vis)
+            if loci:
+                parts = []
+                for text, href in loci:
+                    # each address carries its OWN coordinate triple: a run of
+                    # Mahābhārata addresses is a run of different verses, and one
+                    # triple hung off the first would describe only that one
+                    parts.append('%sa class=ls href=%s%s target=_blank '
+                                 'rel=noopener%s%s%s/a%s%s'
+                                 % (LT, href, tattr, GT,
+                                    _ls_visible_display(text, lang), LT, GT,
+                                    _mbh_triple_html(text, n_attr, LT, GT, QT, lang)))
+                return ' '.join(parts)
             if url:
                 # <a class=ls href=URL title=T target=_blank rel=noopener>DISPLAY</a>
                 return ('%sa class=ls href=%s%s target=_blank rel=noopener%s%s%s/a%s%s'
                         % (LT, url, tattr, GT, display, LT, GT,
-                           _etext_html(url, LT, GT, QT)))
+                           _mbh_triple_html(vis, n_attr, LT, GT, QT, lang)
+                           or _etext_html(url, LT, GT, QT)))
             return '%sspan class=ls%s%s%s%s/span%s' % (LT, tattr, GT, display, LT, GT)
         t = _LS.sub(_ls_html, t)
 
@@ -346,8 +533,19 @@ def _render(text, mode, lang=None):
 
         def _ls_md(m):
             vis = m.group(2).strip()
+            n_attr = _N_ATTR.search(m.group(1) or '')
+            n_attr = n_attr.group(1) if n_attr else None
             display = _ls_visible_display(vis, lang)
             url = _ls_href(m.group(1), vis)
+            # H3152: the md surface gets the same multi-address split as html —
+            # `reglue/<key1>.md` is a reading surface too (PLAN decision 2), and a
+            # second code path is how the two would drift.
+            loci = ls_split.resolve_loci('pwg', n_attr, vis)
+            if loci:
+                return ' '.join(
+                    '[%s](%s)%s' % (_ls_visible_display(lt, lang), h,
+                                    _mbh_triple_md(lt, n_attr, lang))
+                    for lt, h in loci)
             if not url:
                 return '[%s]' % display
             # Carry the Spr. (II) full-text enrichment (H1307) into the md link
@@ -355,8 +553,9 @@ def _render(text, mode, lang=None):
             # citations stay a plain link to keep the md output unchanged.
             rich = spr.tooltip(m.group(1), vis)
             if rich:
-                return '[%s](%s "%s")' % (display, url, rich.replace('"', "'"))
-            return '[%s](%s)' % (display, url)
+                return ('[%s](%s "%s")%s' % (display, url, rich.replace('"', "'"),
+                                             _mbh_triple_md(vis, n_attr, lang)))
+            return '[%s](%s)%s' % (display, url, _mbh_triple_md(vis, n_attr, lang))
         t = _LS.sub(_ls_md, t)
         t = _AB.sub(lambda m: _ab_display(m.group(1), lang, m.string[:m.start()])[0], t)
         t = _LEX.sub(lambda m: '_%s_' % m.group(1).strip(), t)
@@ -1291,14 +1490,105 @@ def selftest_government():
     print('build_article_site government selftest: OK')
 
 
+def selftest_citations():
+    """The H3152 citation layer, pinned on MG's own reglue2 review specimens.
+
+    Every case below is a line MG pointed at, so a regression here is a
+    regression against a stated complaint rather than against a made-up fixture.
+    Runs without the store; needs csl-atlas only for the coordinate cases, which
+    are skipped (not failed) where that sibling checkout is absent.
+    """
+    ok = [True]
+
+    def check(cond, msg):
+        print(('  ok   ' if cond else '  FAIL ') + msg)
+        ok[0] = ok[0] and bool(cond)
+
+    # ---- review 6a: one <ls>, two addresses, two links
+    md = _render('<ls>ṚV. 4,3,13. 10,18,4</ls>', 'md', 'ru')
+    check(md.count('](') == 2, 'review 6a: two links, not one — %s' % md)
+    check('rv10.018.html#rv10.018.04' in md,
+          'review 6a: the second address points at ṚV 10,18,4, not back at the first')
+    htm = _render('<ls>ṚV. 4,3,13. 10,18,4</ls>', 'html', 'ru')
+    check(htm.count('<a class=ls ') == 2, 'review 6a: html surface splits too')
+
+    # ---- all or nothing: one unresolvable address means the run is left alone
+    one = _render('<ls>NOTADICT. 1,1. 2,2</ls>', 'md', 'ru')
+    check('](' not in one,
+          'a run with an unresolvable address is not half-linked — %s' % one)
+
+    # ---- review 5: an unwrapped ṚV address in an NWS body becomes a link
+    nws = _render('идти, входить в; уходить. ṚV 10,108,9', 'md', 'ru')
+    check('rv10.108.html#rv10.108.09' in nws,
+          'review 5: a bare ṚV address in running text is linked — %s' % nws)
+    check('ṚV 10,108,9' in nws,
+          'review 5: the visible text the reader sees is unchanged')
+
+    # ---- and the Paippalāda recension is still NOT linked
+    avp = _render('идти. AV(P) 9.10,10', 'md', 'ru')
+    check(avp == 'идти. AV(P) 9.10,10',
+          'AV(P) is a different recension and stays plain text — %s' % avp)
+
+    # ---- review 1: the coordinate triple replaces the mute E
+    if _MBH_LOCUS.loaded:
+        tri = _render('<ls>MBH. 12,8081.</ls>', 'md', 'ru')
+        check('≈Вульг. 12.226.6' in tri,
+              'review 1: the vulgate coordinate is visible — %s' % tri)
+        check('≈крит. 12,219.6a' in tri,
+              'review 1: the critical address is visible at last')
+        check('mbh/12.226.html#v6' in tri,
+              'review 1: the coordinate leads to OUR fast IAST page, not to the '
+              'slow Devanāgarī reader — %s' % tri)
+        th_src = _render('<ls>MBH. 12,8081.</ls>', 'html', 'ru')
+        check('sanatana.in' in th_src,
+              'review 1: sanatana.in stays reachable as the source of record')
+        check('≈' in tri,
+              'review 1: both fitted coordinates are marked approximate, never asserted')
+        th = _render('<ls>MBH. 12,8081.</ls>', 'html', 'ru')
+        check('>E<' not in th and '>E†<' not in th,
+              'review 1: the mute E superscript is gone from the html surface')
+        check('title=' in th and '49%' in th,
+              'review 1: the tooltip carries the measured accuracy of the fit')
+    else:
+        print('  skip  csl-atlas not on this machine — coordinate cases not run')
+
+    # ---- LANG PARITY: the triple prints WORDS, so every edition needs its own.
+    # H2845's `E` mark was language-neutral and could be shared byte-for-byte;
+    # this cannot, and shipping it unlocalised would put Russian labels on the
+    # German and English cards.
+    if _MBH_LOCUS.loaded:
+        de = _render('<ls>MBH. 12,8081.</ls>', 'md', 'de')
+        en = _render('<ls>MBH. 12,8081.</ls>', 'md', 'en')
+        check('≈Vulg.' in de and 'Вульг' not in de,
+              'the German card carries German chrome, not Russian — %s' % de)
+        check('≈vulg.' in en and 'Вульг' not in en,
+              'the English card carries English chrome, not Russian — %s' % en)
+        for edition in (de, en):
+            check('12.226.6' in edition and '12,219.6a' in edition,
+                  'every edition gets the same coordinates — only the words differ')
+            check('mbh/12.226.html#v6' in edition,
+                  'and the same IAST page')
+
+    # ---- a citation with no coordinate layer at all is untouched
+    plain = _render('<ls>AIT. BR. 6,33.</ls>', 'md', 'ru')
+    check(plain.count('](') == 1 and 'Вульг' not in plain,
+          'a non-Mahābhārata citation gains nothing and loses nothing — %s' % plain)
+
+    print('build_article_site citation selftest:', 'OK' if ok[0] else 'FAIL')
+    return 0 if ok[0] else 1
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--root', help='debug: print one root and exit')
     ap.add_argument('--selftest', action='store_true',
-                    help='run the government_index/meta fixture selftest and exit')
+                    help='run the fixture selftests (government + citation layer) and exit')
     args = ap.parse_args()
     if args.selftest:
         selftest_government()
+        rc = selftest_citations()
+        if rc:
+            sys.exit(rc)
         return
     model = build_model()
     if args.root:

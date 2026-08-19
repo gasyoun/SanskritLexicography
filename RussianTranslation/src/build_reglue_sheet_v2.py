@@ -62,8 +62,8 @@ Inputs (local, untracked — point PWG_RU_DATA_ROOT at the tree that has them):
     <data>/src/pwg_ru_translated.jsonl
     <data>/pwg_ru/reglue/<key1>.json
 Output (gitignored, published to the vote hub by hand):
-    <data>/review/h180_reglue_v3_sheet.html
-    <data>/review/h180_reglue_v3_sample.jsonl
+    <data>/review/h180_reglue_v5_sheet.html
+    <data>/review/h180_reglue_v5_sample.jsonl
 
 Run: python src/build_reglue_sheet_v2.py
      python src/build_reglue_sheet_v2.py --selftest
@@ -75,6 +75,11 @@ from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href, DA_RATING
 from sheet_screening import screening_block
 from ls_links import LsLinks, HIT, NO_LOCUS, MINTABLE
+import reglue_delta as rd   # H3152: one delta sign instead of four labels
+
+#: H3152 B4 (MG review 5a) — say which relation holds, not just which number.
+BOUND_LABEL = "привязано к смыслу PWG %s"
+UNBOUND_LABEL = "новый смысл, в PWG соответствия нет"
 # H1646/H1808 legibility standard: reuse the g5 card renderer rather than
 # re-escaping CDSL markup into a wall of text. print_panel is the canonical
 # article-site render (<ls> -> Cologne link + bibliography tooltip, {#…#} ->
@@ -94,7 +99,7 @@ REVIEW = os.path.join(DATA, "review")
 # The 16-08 generation was built but never published; its inputs (the wave-3
 # reglue jsons) moved the same day, so it can no longer be reproduced and its
 # lock was retired rather than re-bound. 17-08 is the generation that ships.
-GENERATED = "2026-08-17"
+GENERATED = "2026-08-19"
 
 ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5), ("yat", 5),
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
@@ -309,27 +314,50 @@ PLACEMENT_REASON_LABEL = {
 
 def _supp_head(sup):
     """The typology chips — identical in both renderings, so a reviewer voting
-    in compact mode votes on the same classification they see in expanded."""
+    in compact mode votes on the same classification they see in expanded.
+
+    H3152 B3 (MG review point 4): this used to print FOUR chips —
+    ``≈ переформулировка``, ``restate``, ``PW``, ``переформулирует`` — all four
+    saying the same nothing, since ``restate`` is
+    [ADDENDA_TYPOLOGY](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ADDENDA_TYPOLOGY.md) §5's
+    default and carries 90.2 % of supplements. It now prints ONE sign that says
+    *in what way* the supplement differs, computed from the German by
+    [`reglue_delta`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/reglue_delta.py),
+    with the full delta list in the hover and the key in a legend at the top of
+    the sheet. The layer badge stays — it names *who* is speaking, which the sign
+    does not.
+    """
     subtype = sup.get("subtype", "?")
     op, direction, klass, gloss = TYPOLOGY.get(
         subtype, (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
+    sign = sup.get("sign") or rd.ABRIDGE
+    tip = sup.get("delta_tip") or gloss
     lang = (' <span class="tchip t-meta">‹<code>%s</code>›</span>' % esc(sup["lang"])
              if sup.get("lang") else "")
     cancels = (' <span class="tchip t-cancels">отменяет PWG</span>'
                if sup.get("cancels") else "")
     why = PLACEMENT_REASON_LABEL.get(sup.get("placement_reason"))
-    unplaced = (' <span class="tchip t-meta" title="метка типологии говорит, к какому '
-                'виду относится дополнение; она не утверждает целевое значение">'
-                'не привязано: %s</span>' % esc(why)) if why else ""
-    # `subtype` stays its ASCII lookup key, wrapped as an identifier — it is
-    # the ADDENDA_TYPOLOGY.md/edition_rel.SUBTYPES vocabulary a reviewer
-    # quotes verbatim in a reject note; `op` is plain display text, Russian.
+    unplaced = (' <span class="tchip t-meta" title="знак говорит, ЧЕМ дополнение '
+                'отличается; он не утверждает целевое значение">'
+                '%s</span>' % esc("%s — %s" % (UNBOUND_LABEL, why))) if why else ""
     head = ('<span class="tchip t-%s" title="%s">%s</span>'
-            '<span class="tchip t-meta"><code>%s</code></span>'
-            '<span class="tchip t-meta"><code>%s</code> · %s</span>%s%s%s'
-            % (klass, esc(gloss), esc(CLASS_LABEL[klass]), esc(subtype),
-               esc(sup.get("badge", "?")), esc(OP_LABEL.get(op, op)), lang, cancels, unplaced))
+            '<span class="tchip t-meta"><code>%s</code></span>%s%s%s'
+            % (klass, esc(tip), esc(sign), esc(sup.get("badge", "?")),
+               lang, cancels, unplaced))
     return head, klass
+
+
+def sign_legend_html():
+    """The sign key, once at the top of the sheet (decisions 9 + 13)."""
+    items = " · ".join('<b>%s</b> %s' % (esc(s), esc(label))
+                       for s, label in rd.LEGEND)
+    return ('<b>Знаки различия дополнения</b>: %s<br>'
+            '<small>Знак отвечает на вопрос «в чём именно переформулировка»: он '
+            'вычислен сравнением немецкого текста дополнения с немецким текстом '
+            'смысла PWG. Полный список дельт — во всплывающей подсказке. '
+            'Пустое тело смысла PWG делает дельты неразличимыми; такие случаи '
+            'получают %s и помечены как неразрешимые.</small><br>'
+            % (items, esc(rd.ABRIDGE)))
 
 
 def render_supplement(sup, mode=EXPANDED, nl=None):
@@ -361,8 +389,11 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
                 block = ['<span class="csense"><span class="cmark">%s)</span>%s'
                          % (esc(s["sense"]), pwg_body)]
             else:
-                block = ['<div class="sense"><div class="hd">значение PWG %s</div>%s'
-                         % (esc(s["sense"]), pwg_body)]
+                # H3152 B4 (MG review 5a): «значение PWG 2» read both as "PWG's
+                # second meaning" and as "the meaning called PWG 2". Name the
+                # relation instead of the thing.
+                block = ['<div class="sense"><div class="hd">%s</div>%s'
+                         % (esc(BOUND_LABEL % s["sense"]), pwg_body)]
             for sup in s["supplements"]:
                 h, st2, kl = render_supplement(sup, mode, nl)
                 ls_stats += st2
@@ -522,9 +553,9 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v3-2026-08-17"
+    sheet_id = "h180-reglue-spotcheck-v5-2026-08-19"
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v3.decisions.json")
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v5.decisions.json")
     config.update({
         "sheet_id": sheet_id,
         "title": "H180 · выборочная проверка склейки с учётом содержания (v3)",
@@ -557,7 +588,8 @@ def main():
                    "Текст store не менялся — SHA-256 значений <code>%s</code>, "
                    "сырой панели <code>%s</code>."
                    "<br>" % (nl["collapsed"], nl["kept"],
-                             body_hash[:16], raw_hash[:16]) + g5_legend()),
+                             body_hash[:16], raw_hash[:16])
+                   + sign_legend_html() + g5_legend()),
         "approve_label": "Типология верна",
         "reject_label": "Неверно типизировано/привязано",
         "filters": [("5L", "5 слоёв"), ("4L", "4 слоя"), ("3L", "3 слоя")],
@@ -578,20 +610,20 @@ def main():
         deterministic=totals[HIT] + totals[NO_LOCUS], lookup=totals[MINTABLE],
         agent=0, human=len(items),
         evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
-        rules=["ls_resolver", "citation_tm", "h180-reglue-v3", "line_collapse"])
+        rules=["ls_resolver", "citation_tm", "h180-reglue-v5", "line_collapse"])
     doc = render_review_sheet(items, config, extras=True, screening=sc)
     doc, chash = stamp(doc)
     if 'id="modecompact"' not in doc or "render-compact" not in doc:
         raise SystemExit("the compact/expanded control did not survive rendering")
 
-    sample = os.path.join(REVIEW, "h180_reglue_v3_sample.jsonl")
+    sample = os.path.join(REVIEW, "h180_reglue_v5_sample.jsonl")
     # newline="\n": the tracked sample is LF in git, and a Windows run without
     # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
     with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
-    out = os.path.join(REVIEW, "h180_reglue_v3_sheet.html")
+    out = os.path.join(REVIEW, "h180_reglue_v5_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
     write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED, source_html=out)
