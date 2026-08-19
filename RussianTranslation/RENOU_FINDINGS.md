@@ -1,6 +1,6 @@
 # Renou register axis — findings register
 
-_Created: 26-06-2026 · Last updated: 03-07-2026_
+_Created: 26-06-2026 · Last updated: 19-08-2026_
 
 Empirical findings from the two-axis tagging ([`RENOU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md)), beyond the
 headline épigraphique result of [`papers/A34_renou_register_note.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A34_renou_register_note.md).
@@ -167,6 +167,26 @@ for the operating-point tradeoff). Full method, table, and limitations:
 [RENOU_H6_ZIPF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_H6_ZIPF.md);
 tool [src/renou_h6_zipf.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_h6_zipf.py);
 figure [research/figures/renou/h6_zipf_agreement.svg](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/figures/renou/h6_zipf_agreement.svg).
+Computed by Sonnet 5 (`claude-sonnet-5`).
+
+---
+
+## F8. MW's citation apparatus is measurably inherited from PWG, not independent — **[data]**
+
+H5 (MW–PWG lineage): among the 71,229 MW headwords sharing a `key1` with PWG and
+carrying at least one `<ls>` citation state, MW's era-state set is **contained** in
+PWG's 78.2% of the time (95% CI [78.0%, 78.5%]), against only **14.0%** [13.6%, 14.4%]
+for the same comparison against AP (Apte) — an independent-lineage baseline (MW's
+apparatus is Petersburg-derived, AP's is not; FINDINGS §83/§97). Exact-match (67.1% vs
+12.9%) and mean Jaccard overlap (0.767 vs 0.210) tell the same story. Containment gap
+0.6422, one-sided permutation p = 0.0002 (0/5,000 shuffles). This is the first
+**quantitative** measurement of a fact previously known only philologically — MW reuses
+PWG/PW's attested-period judgments for shared headwords far more than chance or genuine
+independent philological overlap would produce. Full method, table, and limitations
+(siglum-level join not attempted; MW-conditioned containment is directional):
+[RENOU_H5_LINEAGE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_H5_LINEAGE.md);
+tool [src/renou_h5_lineage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_h5_lineage.py);
+figure [research/figures/renou/h5_lineage.svg](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/figures/renou/h5_lineage.svg).
 Computed by Sonnet 5 (`claude-sonnet-5`).
 
 ---
