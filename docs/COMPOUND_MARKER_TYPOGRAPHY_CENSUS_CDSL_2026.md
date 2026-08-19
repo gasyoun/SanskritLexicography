@@ -1,8 +1,8 @@
 # Compound-marker typography across the Sanskrit dictionaries — consolidated census
 
-_Created: 17-08-2026 · Last updated: 19-08-2026_
+_Created: 17-08-2026 · Last updated: 19-08-2026 (§576 — cross-reference conventions)_
 
-Consolidates FINDINGS **§553–§558, §561, §564–§566, §571, §575** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
+Consolidates FINDINGS **§553–§558, §561, §564–§566, §571, §575–§576** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
 measured over the [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
 digitizations, the OCRed Cologne front matter (§4.5),
 `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
@@ -278,6 +278,23 @@ item in this order:**
    from 4 dictionaries to all 44.
 5. **Cross-reference conventions** — `см. / s. / vide / Vgl. / q.v. / =` — the
    internal reference graph of each dict, and its ring interaction (`˚`-refs).
+   **measured → FINDINGS
+   [§576](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2982): the six named markers are four unrelated edge types, not one
+   convention — `s.`/`siehe` (pwg 4,650/pw 839/pwkvn 98/gra 663) and `=`
+   (pwg 23,108/pw 10,460/mw 14,524/cae 1,609/ap 995) are real graph edges to
+   another headword; `Vgl.`/`vergl.` (pwg 18,234/pw 2,471/gra 1,593/pwkvn 311/
+   sch 633 bare/ccs 13) is weaker — "compare," often pointing at a citation,
+   not a lemma; `q.v.` fragments into four incompatible tag shapes
+   (`<ab>q.v.</ab>` mw/cae/bhs, `<ab>q. v.</ab>` ap/ap90/wil, bare spaced
+   mw72, bare unspaced lrv/inm) across the same printed abbreviation. `vide`
+   is a false positive almost everywhere it was expected: genuine Sanskrit
+   *vidé* (√vid) in pwg/pw, and zero in ccs/sch once word-boundaries replace
+   substring matching. gra's bare `<ab>s.</ab>` (1,643) is grammatical
+   Singular, not "see" — the genuine xref is the separately-tagged
+   `<ab n="siehe">s.</ab>` (663), a markup-not-key trap in the same family as
+   `<k1>`-vs-`<k2>` (§555/§556/§558). Ring-in-target (§556's `см. °…`)
+   recurs at <1% of xref instances in pwg/pw/mw/sch — not koch-specific.
 6. **Kośa devices** — skd/vcp (Śabdakalpadruma, Vācaspatya) showed ZERO
    Western markers: how the Sanskrit-Sanskrit kośas mark compounds instead
    (iti-quotation, devanāgarī daṇḍa segmentation) — **measured → FINDINGS

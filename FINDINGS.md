@@ -1,6 +1,15 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§575 — root citation splits into
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§576 — cross-reference markers
+(см./s./vide/Vgl./q.v./=) are four unrelated edge types, not one convention:
+`s.`/`siehe` and `=` are genuine graph edges to a real headword, `Vgl.` is a
+weaker "compare" edge frequently pointing at a citation not a lemma, `q.v.`
+fragments into four incompatible tag shapes across the same printed
+abbreviation, `vide` is a false positive almost everywhere it was expected
+(genuine Sanskrit *vidé* in pwg/pw, zero after a word-boundary check in
+ccs/sch), and gra's bare `<ab>s.</ab>` is grammatical Singular, not "see" —
+the real xref is the separately-tagged `<ab n="siehe">s.</ab>` (663, not
+1,643); §575 — root citation splits into
 zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` confined to the PW family
 (pw/pwg/pwkvn/sch); WhitneyRoots' `roots.csv` header has no pw_id/pwg_id
 column at all, so pw/pwg are structurally unjoinable to the root crosswalk;
@@ -40,7 +49,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §576) whatever its section, so existing numbers never shift; when a finding is later
+(currently §577) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -303,6 +312,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§573. The leading hyphen has two senses, but no dictionary marks which — Wilson is 100 % inflectional, Macdonell is 83 % compound-member/2 % inflectional/15 % a third (taddhita) class the two-way split cannot hold](#573-the-leading-hyphen-has-two-senses-but-no-dictionary-marks-which--wilson-is-100--inflectional-macdonell-is-83--compound-member2--inflectional15--a-third-taddhita-class-the-two-way-split-cannot-hold) — Wilson 49,487/49,487 leading-hyphen runs read as inflection; MD's `{@-X@}` overloads compound-member/inflection/taddhita-derivational; Whitney's Roots and Grammar use two different devices under one name. Ships a 4-rule markup-context disambiguation table.
 - 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
 - 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
+- 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -8060,3 +8070,117 @@ of scope for this pass.
 > line, and the `roots.csv` header/row are reproducible from the public
 > [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) and
 > [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) checkouts).
+
+### §576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina
+
+🟠 **The item's own marker list (см./s./vide/Vgl./q.v./=) is not one
+cross-reference convention with six spellings — it is at least four
+semantically distinct edge types, unevenly tagged, and two of the six named
+markers are largely noise once markup is checked instead of the bare string.**
+Measured over [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+(`<ab>`-tag counts where the dictionary tags the marker, raw-text counts with
+word boundaries where it doesn't) plus `RussianTranslation/src/koch.jsonl`
+(local-only, gitignored, per [§574](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary)):
+
+| dict | `s.`/`siehe` ("see") | `Vgl.`/`vergl.` ("compare") | `q.v.`/`vide` ("which see") | `=` (identity) | ring rides in target |
+|---|---|---|---|---|---|
+| pwg | 4,650 `<ab>s.</ab>` | 18,234 (18,230 `Vgl.` + 4 `vergl.`) | 0 | 23,108 `= {#…#}` | 11 (`s.`) / 17 (`Vgl.`) |
+| pw | 839 | 2,471 (2,470 + 1) | 0 | 10,460 | 11 / 19 |
+| gra | 663 `<ab n="siehe">s.</ab>` — **disambiguated from 1,643 false-positive bare `<ab>s.</ab>` = grammatical Singular, not "see"** | 1,593 (239 `Vgl.` + 1,354 lowercase `vgl.`) | 0 | 0 | not measured |
+| pwkvn | 98 | 311 | 0 | not measured | not measured |
+| sch | 0 tagged — genuine `Vgl.` exists but as bare text, never `<ab>`-wrapped | 633 (bare text) | 0 | not measured | ≥1 (`Vgl. {%avakarṇa˚%}`) |
+| cae | 313 `<ab>s.</ab>` — **target is prose ("side, flank"), not a headword pointer; likely Latin *scilicet* ("namely"), not *siehe* — unresolved, flagged not asserted** | 0 | 384 `<ab>q.v.</ab>` | 1,609 `= {#…#}` | not measured |
+| ccs | 0 | 10 bare + 3 `{%Vgl.%}` | 0 | not measured | not measured |
+| mw | 0 | 0 | 3,506 `<ab>q.v.</ab>` | 14,524 `= <s>…` | ≥1 (`<ab>q.v.</ab>, <s>rAja-k˚</s>`) |
+| mw72 | 0 | 0 | 2,342 bare `q. v.` (spaced, untagged) | not measured | not measured |
+| ap | 0 | 0 | 1,020 `<ab>q. v.</ab>` (spaced) + rare genuine bare `vide` | 995 | not measured |
+| ap90 | 0 | 0 | 917 `<ab>q. v.</ab>` | not measured | not measured |
+| wil | 0 | 0 | 78 `<ab>q. v.</ab>` | 0 | not measured |
+| bhs | 0 | 0 | 2,599 `<ab>q.v.</ab>` | not measured | not measured |
+| lrv | 0 | 0 | 985 bare `q.v.` (untagged) | not measured | not measured |
+| inm | 0 | 0 | 246 bare `(q.v.)`, parenthetical | not measured | not measured |
+| koch | 7,642 `см.` (26.2 % of 29,177 rows — confirms §574's 25.8 %, small counting-method variance) | — | — | — | 18 `см. °…` |
+
+**Four unrelated devices, not one convention:**
+1. **`s.`/`siehe`** (pwg/pw/pwkvn/gra) points *forward* to another headword's
+   own `{#…#}` fragment, frequently ring-abbreviated — a genuine, mechanically
+   resolvable graph edge. pwg.txt L417660 `<ab>s.</ab> {#˚lIyamAnaka#}`; pw.txt
+   L28707 `<ab>s.</ab> {#˚zyanda#}`; gra.txt L70 stacks three: `(<ab
+   n="siehe">s.</ab> <ab n="das">d.</ab> <ab n="vorige">v.</ab>)` — "see, this,
+   the previous [entry]," a deictic cluster, not a literal target string.
+2. **`Vgl.`/`vergl.`/lowercase `vgl.`** (pwg/pw/gra/pwkvn tagged; sch/ccs
+   bare-text only) is a *weaker, comparative* edge — "compare," not "is the
+   same as." pwg.txt L21 `<ab>Vgl.</ab> über die Betonung noch <ls>P.
+   6,2,155</ls>—…` points at a grammar citation, not a headword at all; gra.txt
+   L64 `(<ab>vgl.</ab> <ls>Cu. 〔166〕</ls>)` likewise. Tagging is inconsistent
+   even within one dictionary: sch.txt L142 `— Vgl. {%avakarṇa˚%}.` and ccs.txt
+   L7643 `{%Vgl.%} 1. {#kar#} {%u.%} {#BU#}.` never get an `<ab>` wrapper.
+3. **`q.v.`** (English/Latin tradition: mw/mw72/ap/ap90/wil/bhs/lrv/inm/cae) is
+   *anaphoric* — it follows the just-named headword within the same sentence
+   ("(pragṛhya, q.v.)," mw.txt L11) rather than opening a new clause, but still
+   asserts a real edge to that word's own entry. Markup for the identical
+   device fragments into four incompatible forms across dicts that share one
+   printed abbreviation: tag-wrapped no-space (`<ab>q.v.</ab>` — mw, cae, bhs),
+   tag-wrapped spaced (`<ab>q. v.</ab>` — ap, ap90, wil), bare spaced untagged
+   (`q. v.` — mw72.txt L5918 `(fr. {%aṇu,%} q. v.), minuteness`), and bare
+   unspaced untagged (`q.v.` — lrv.txt L3356 `same as {#aDas#} q.v.`, inm.txt
+   L326 `of {%Sṛñjaya%} (q.v.), to whom`). **`vide` is a false positive in the
+   German tradition, not a marker**: pwg.txt L109576 and pw.txt L428298 read
+   `vide/` — the genuine Sanskrit verb form *vidé* (√vid, "to know/find," a
+   Rig-Vedic 3rd-sg. perfect), not the Latin imperative "see." A raw
+   case-insensitive `vide` count over pwg/pw (508/225 in the item's naive
+   first pass) is 100 % noise; word-boundary re-checks on ccs/sch (32/28 raw)
+   also collapse to **zero** — those were substring hits inside unrelated
+   words. `vide` is genuine only in the English tradition and at low rate
+   there (ap.txt L318818 `({%vide%} <ls>K. P. 9</ls>`).
+4. **`=`** (pwg/pw/mw/cae/ap; absent in gra/wil) is the *tightest* edge — a
+   literal identity assertion between two headword forms, not "see" or
+   "compare": pw.txt L128 `<ab>N. pr.</ab> = {#cARakya#}.`; pwg.txt L11431 `{#anamitaMpaca#} = {#mitaMpaca, anasUri#} … = {#sUri#}` (two chained
+   identities in one entry, §554's negation-compound discussion).
+
+**The ring-in-target pattern (§556's `см. °…`) is not koch-specific — it is
+the same device wherever a ring-tradition dictionary (§554) also runs an
+`s.`/`Vgl.` xref**, at a comparably low rate in every family measured: pwg
+11/17, pw 11/19, koch 18/7,642, plus at least one confirmed hit each in mw
+(`<ab>q.v.</ab>, <s>rAja-k˚</s>`, L174883) and sch (`Vgl. {%avakarṇa˚%}`,
+L142, ring inside sch's own `{%…%}` span rather than `{#…#}`). The rate stays
+under ~1 % of xref instances everywhere it was measured — ring-elision inside
+a cross-reference target is a marginal but structurally recurring
+combination, not a Kochergina peculiarity.
+
+**Implication for csl-lslink-adjacent link extraction.** Three tiers of
+graph-forming reliability, not one: `=` is the highest-confidence edge (exact
+identity, resolvable directly against `<k1>`/`<k2>`); `s.`/`siehe`/`q.v.` are
+real edges but need per-dict markup handling (ring-expansion for pwg/pw/koch
+targets, four different tag shapes for the one `q.v.` device); `Vgl.`/`vgl.`
+targets are frequently *not* headwords at all (grammar citations, other
+compared lemmas) and should not be treated as equivalent to `s.`/`q.v.` edges
+without a target-type check. `cae`'s `s.` needs its own disambiguation pass
+before being trusted as "see" — the sampled targets read as glosses, not
+pointers, and no Cappeller preface page has been re-read to confirm which
+sense he intends (§557 Mylius-style caution: flagged unresolved, not
+asserted). `gra`'s bare `<ab>s.</ab>` is a **named trap**: it is grammatical
+Singular in every sampled instance (100 % of a 10-specimen check), and any
+census that counts it as a cross-reference inflates gra's xref rate by
+~2.5×the true `<ab n="siehe">` figure — the same class of error the census's
+own `<k1>`-vs-`<k2>` lesson (§555/§556/§558) warns against, here in a tag
+rather than a key.
+
+> Sonnet 5 (`claude-sonnet-5`) · 19-08-2026 · `grep -c`/`grep -o` over
+> `<ab>` tag variants and word-boundary raw text across `csl-orig/v02/*/<dict>.txt`
+> (pwg, pw, gra, pwkvn, sch, cae, ccs, mw, mw72, ap, ap90, wil, bhs, lrv,
+> inm) and `RussianTranslation/src/koch.jsonl` (local-only, gitignored);
+> ring-in-target via `<ab>MARKER</ab> {#˚…#}`-shaped patterns per dict's own
+> `{#…#}`/`{%…%}` markup. Specimens quoted from pwg.txt L417660, L109576,
+> L11431 and L21; pw.txt L28707, L428298 and L128; gra.txt L70, L64, L689
+> (false-positive Singular) and L228; sch.txt L142; ccs.txt L7643; cae.txt
+> L950; mw.txt L11 and L174883; mw72.txt L5918; ap.txt L1760 and L318818;
+> wil.txt L48635; bhs.txt L28; lrv.txt L3356; inm.txt L326; koch.jsonl row
+> 135 (slp1 `-zWIvi`, the exact specimen §556 already quoted, re-verified
+> with its jsonl row number). Verifiability: class A (every grep and quoted
+> line reproducible from the public
+> [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) checkout; koch.jsonl
+> is local-only per §574 but its row content is quoted verbatim). Per §557's
+> Mylius rule: cae's `s.` sense and ap90/bhs/lrv/inm's full `q.v.` markup
+> shape are reported as measured counts only, not asserted as resolved
+> "see"-graph edges without a preface cross-check.
