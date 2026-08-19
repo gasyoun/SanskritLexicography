@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### German case-abbreviation compliance sweep (H2849, 19-08-2026)
+
+- **RU-field case markers now ship as Latin, not German.** 963 substitutions
+  across 694 rows (59 `key1` entries) in `src/pwg_ru_translated.jsonl`'s `ru`
+  field: `Akk`→`Acc.`, `Lok`→`Loc.` (real German→Latin), `Instr`/`Abl`/`Gen`/
+  `Dat`/`Nom` normalized to a trailing period (`Instr` additionally renamed to
+  `Ins.` per MG's newer review instruction). `de` field untouched — it is the
+  German source column. Found and excluded a false-positive collision: the
+  `[Gen, unsp]` MW-style period/genre bracket tag ("General", not genitive)
+  masked the same way as `{#...#}` Sanskrit spans. Found and fixed a real
+  regression: `<ab>Instr.</ab>` tooltips resolve against PWG's own
+  `pwgab_input.txt` table (keyed `Instr.`, not `Ins.`) — a one-entry alias in
+  `src/pwg_ab.py`'s `resolve()` keeps the tooltip live after the rename.
+  Renderer split-guard (`build_reglue_sheet_v2.py` `ABBREV`) and chrome
+  allowlist (`scan_sheet_latin_chrome.py`) both extended with the new stems.
+  [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md)
+  §"German case-abbreviation compliance sweep".
+
 ### Renou H5 — MW–PWG citation lineage confirmed (H062, 19-08-2026)
 
 - **H5 (step 5 of the Renou hypothesis programme).** MW's `<ls>` citation

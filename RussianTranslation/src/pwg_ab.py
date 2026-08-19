@@ -60,8 +60,21 @@ def table():
     return _AB
 
 
+#: H2849 — the RU store's case-marker sweep ships `Ins.` (MG's newer review
+#: instruction), but PWG's own authoritative table (pwgab_input.txt, sourced
+#: from the printed dictionary itself) still keys the instrumental case as
+#: `Instr.` and is out of this repo's control. Without this alias, every
+#: RU-column `<ab>Ins.</ab>` tag would silently lose its tooltip (resolve()
+#: returning None) the moment the store token stopped matching the table key.
+RENAME_ALIASES = {'Ins.': 'Instr.'}
+
+
 def resolve(token):
-    return table().get(norm(token))
+    tok = norm(token)
+    r = table().get(tok)
+    if r is None and tok in RENAME_ALIASES:
+        r = table().get(RENAME_ALIASES[tok])
+    return r
 
 
 def label(token):

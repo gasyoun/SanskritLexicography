@@ -1,6 +1,6 @@
 # PWG `<ab>`/`<ls>` abbreviations — tooltips and RU-column purity
 
-_Created: 10-07-2026 · Last updated: 31-07-2026_
+_Created: 10-07-2026 · Last updated: 19-08-2026_
 
 > Consolidated Russian style guide of record (all ratified rules, with provenance and the
 > open 10-07 vs 19-07 abbreviation contradiction surfaced):
@@ -102,6 +102,81 @@ Live coverage (see the [abbreviations dashboard](https://gasyoun.github.io/Sansk
 for the current numbers): **~43% of `<ab>` occurrences translated to Russian,
 ~52% kept Latin (Bucket B), ~5% unresolved** (rare tokens not in PWG's own
 `pwgab` table at all — typically OCR noise or non-standard local abbreviations).
+
+## German case-abbreviation compliance sweep (H2849, 19-08-2026)
+
+The Bucket B rule above was decided but had never been swept against
+free-floating case markers that sit **outside** an `<ab>` tag — plain
+parenthetical usage notes like `(Akk, Instr)` in the RU field, which the
+render-time `<ab>` machinery above never sees because there is no tag to
+intercept. 963 substitutions across 694 rows (**59** distinct `key1` entries) in
+`src/pwg_ru_translated.jsonl`'s **`ru` field only** (the `de` field is the
+German source column and is untouched, per the render-at-render-time
+architecture above). The mint estimate (H2849's own pre-measurement) said 72
+entries; 13 of those only "matched" via the `[Gen, unsp]` domain-tag false
+positive below and are correctly excluded here — the 59 figure is the
+post-exclusion, actually-swept count:
+
+| Token found | Count | Canonical form shipped |
+|---|--:|---|
+| `Akk` | 110 | `Acc.` — unambiguously German, real substitution |
+| `Lok` | 8 | `Loc.` — unambiguously German, real substitution |
+| `Instr` | 261 | `Ins.` — Latin stem, renamed (see naming choice below) |
+| `Abl` | 218 | `Abl.` — Latin stem, period added where missing |
+| `Gen` | 173 | `Gen.` — Latin stem, period added where missing |
+| `Dat` | 160 | `Dat.` — Latin stem, period added where missing |
+| `Nom` | 33 | `Nom.` — Latin stem, period added where missing |
+
+**Naming choice resolved: `Ins.`, not `Instr.`** MG's review instruction wrote
+`Ins.`; this doc previously implied `Instr.` nowhere explicitly, but the
+sweep's substitution table is a single named constant
+(`GERMAN_TO_LATIN`/`LATIN_NORMALIZE` in the sweep script) so a reversal to
+`Instr.` is a one-line flag change, not a re-derivation.
+
+**False-positive guard found and excluded — `[Gen , unsp]` domain tags.** A
+second, unrelated taxonomy also lives in this store: bracketed period/genre
+tags borrowed from the MW-style convention — `[Ved, unsp]`, `[Buddh, Phil]`,
+`[Jin]`, `[Reg]`, `[Tan]`, `[Epigr]`, and **`[Gen, unsp]`** where `Gen` means
+*"General"* (a text-period label), not genitive case. 38 such `Gen` bracket
+occurrences were detected and deliberately **not** substituted — matching
+"General" against the genitive-case rule would have made the two senses of
+`Gen.` indistinguishable in the data. Detection rule: a token is a domain tag
+(and skipped) when it sits inside a bracket span containing **only** bare
+Latin tag words joined by `,`/`:` — `\[(?:[A-Za-z]+\.?)(?:\s*[:,]\s*[A-Za-z]+\.?)*\]`
+— never Cyrillic, parens, or `=`. One genuine case use nested inside a larger
+bracket (`[только śámi (Lok) = Indekl]`) was excluded by this same guard as a
+conservative trade-off — it fails the "bare tags only" test because of the
+Cyrillic and `=`, so it was left as `Lok` rather than risk a false positive
+elsewhere; a human can flag it for a follow-up pass if the single miss
+matters.
+
+**Renderer guard list.** `Akk`/`Instr`/`Lok` remain in
+`build_reglue_sheet_v2.py`'s `ABBREV` split-guard tuple (harmless — they no
+longer occur in swept RU text, but the German-source `de` field and any
+future review-sheet input can still contain them); `Acc`/`Ins`/`Loc` were
+**added** so a reglue sheet built from the now-Latin RU text does not split a
+sentence right after one of these case markers' new stems. The same three
+were added to `scan_sheet_latin_chrome.py`'s `ALLOWED_TOKENS`.
+
+**A real regression, found and fixed: `<ab>` tooltips.** 261 of the `Instr`
+occurrences sit inside `<ab>Instr.</ab>` tags, and `_ab_display()`
+(`pilot/build_article_site.py`) resolves each tag's tooltip by looking the RU
+column's own stored token up in
+[`csl-pywork/v02/distinctfiles/pwg/pywork/pwgab/pwgab_input.txt`](https://github.com/sanskrit-lexicon/csl-pywork/blob/main/v02/distinctfiles/pwg/pywork/pwgab/pwgab_input.txt)
+— the authoritative PWG print-abbreviation table, out of this repo's control.
+That table's own key for the instrumental case is `Instr.` (not `Ins.`), so
+renaming the stored token would have silently dropped the tooltip for every
+one of those 261 occurrences (`pwg_ab.resolve()` returning `None`). Fixed with
+a one-entry alias, `RENAME_ALIASES = {'Ins.': 'Instr.'}`, in
+[`RussianTranslation/src/pwg_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab.py)'s
+`resolve()` — verified: `python pwg_ab.py lookup "Ins."` now returns the same
+`Instrumental / instrumental (case)` expansion as `lookup "Instr."`.
+
+**Affected `key1` entries (59):** Ap, As, Ayuzkara, BerI, Bid, Buj, Cid, DA,
+KecarI, SaSvat, Sam, aSakta, aSmarI, aSuci, ahar, asvatantra, banD, brU, car,
+dA, dah, diS, dyAvApfTivI, gA, gAyatrI, gam, hA, han, hi, jIv, jYA, jan,
+jananI, ji, mA, mad, mahat, man, muc, nI, naS, nirbIja, pA, pat, prota, rakz,
+siD, su, vA, vac, vad, vah, vas, viS, vid, vraj, yA, yaj, yat.
 
 ## Two data-level collisions found and fixed
 

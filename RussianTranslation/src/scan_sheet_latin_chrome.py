@@ -32,6 +32,8 @@ ALLOWED_TOKENS = {
     "PWG", "PW", "NWS", "SCH", "MW", "DA", "RU", "EN", "FR", "LA", "IAST",
     "H180", "H2835", "H2844", "H2846", "MBH", "Cologne", "SHA",
     "Akk", "Dat", "Gen", "Instr", "Lok", "Abl", "Nom", "Voc", "Adj", "Adv",
+    # H2849: RU-field case markers now ship as Acc./Ins./Loc.
+    "Acc", "Ins", "Loc",
     "Comp", "sc", "Druckfehler", "lies", "streiche", "tilge", "Nachtrag",
     "Nachträge", "localStorage", "etext", "csl-orig", "store",
     "Nachträge-to-Nachträge",

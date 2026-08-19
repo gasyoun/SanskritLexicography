@@ -148,10 +148,13 @@ OP_LABEL = {"add": "добавляет", "restate": "переформулиру�
 # --------------------------------------------------------------------- gloss chains
 # NWS/SCH separate sense clusters with a full stop. Splitting on it is safe only
 # away from these abbreviations, which legitimately end in a period mid-sentence.
+#: H2849: RU-field case markers are now Latin (`Acc.`/`Ins.`/`Loc.`, not the
+#: German `Akk`/`Instr`/`Lok`) — those three are kept here too since the `de`
+#: field and future review-sheet input can still carry the German stems.
 ABBREV = ("т. е", "т. н", "и т. д", "и т. п", "напр", "ср", "см", "перен", "букв",
           "нар", "прил", "сущ", "гл", "мн", "ед", "вин", "род", "дат", "твор",
           "v. a", "s. v", "cf", "vgl", "resp", "Akk", "Dat", "Gen", "Instr", "Lok",
-          "Abl", "Nom", "Voc", "Adj", "Adv", "Comp", "sc")
+          "Abl", "Nom", "Voc", "Adj", "Adv", "Comp", "sc", "Acc", "Ins", "Loc")
 SPLIT_RE = re.compile(r"(?<=[а-яёA-Za-z\)\]])\.\s+(?=[а-яё\(\[«])")
 #: never split straight after a Russian pronoun-clitic abbreviation
 #: (``кому-л.``, ``что-л.``, ``каком-л.``) — the period is part of the token.
