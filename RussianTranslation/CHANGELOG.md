@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.79] - 2026-08-19
+
 ### Generation prompt: plan-mode TASK SHAPE block (H3144, 19-08-2026)
 
 - **The paid canary was refusing, not returning malformed output.** The production spawn
