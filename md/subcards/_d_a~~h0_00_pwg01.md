@@ -14,19 +14,19 @@
 [10,66,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.066.html#rv10.066.02) *namastubhyaṃ bhagavate vāsudevāya dhīmahi*
 [BHĀG. P. 6,16,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,18) [5,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,28) [1,5,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,37) *manas, matim* seinen Geist, seine Gedanken auf Jmd oder Etwas richten, beschliessen; act. und med.: *dharme dadhyātsadā manaḥ*
 [M. 12,23.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,23) *rudrāya dadhire manaḥ*
-[MBH. 13,1379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1379) = [≈Вульг. 13.18.82](mbh/13.18.html#v82) = ≈крит. 13,18.58c *dhāsye mano bhagavati śuddhaṃ tatkīrtanādibhiḥ*
+[MBH. 13,1379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1379) = [≈Vulg. 13.18.82](mbh/13.18.html#v82) = ≈krit. 13,18.58c *dhāsye mano bhagavati śuddhaṃ tatkīrtanādibhiḥ*
 [BHĀG. P. 6,2,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,2,38) *niveśāya mano dadhuḥ*
-[MBH. 3,2535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2535) = [≈Вульг. 3.65.4](mbh/3.65.html#v4) = ≈крит. 03,62.4c
+[MBH. 3,2535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2535) = [≈Vulg. 3.65.4](mbh/3.65.html#v4) = ≈krit. 03,62.4c
 [R. 1,9,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,40) *badhāyāsya mano dadhe*
-[MBH. 3,630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.630) = [≈Вульг. 3.14.17](mbh/3.14.html#v17) = ≈крит. 03,15.17c [5,5949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5949) = [≈Вульг. 5.173.7](mbh/5.173.html#v7) = ≈крит. 05,170.7a
+[MBH. 3,630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.630) = [≈Vulg. 3.14.17](mbh/3.14.html#v17) = ≈krit. 03,15.17c [5,5949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5949) = [≈Vulg. 5.173.7](mbh/5.173.html#v7) = ≈krit. 05,170.7a
 [BHĀG. P. 3,12,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,12,49) *dadhuḥ kumārānugame manāṃsi*
 [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *pāñcālānāṃ prasuptānāṃ badhaṃ prati mano dadhe*
-[MBH. 1,567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.567) = [≈Вульг. 1.2.338](mbh/1.2.html#v338) = ≈крит. 01,2.206a *yaṣṭuṃ mano dadhe*
+[MBH. 1,567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.567) = [≈Vulg. 1.2.338](mbh/1.2.html#v338) = ≈krit. 01,2.206a *yaṣṭuṃ mano dadhe*
 [R. 1,11,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,11,1) *śiśāvasminnetāḥ — dadhatyāśām* richten die Hoffnung auf
 [KATHĀS. 3,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,17) *lakṣye samādhiṃ na dadhe* die Aufmerksamkeit richten auf
 [BHAṬṬ. 2,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,7) pass.: *kathaṃ tyaktuṃ guṇārāmaṃ rāmaṃ me dhīyate matiḥ* wie kann ich daran denken zu
 [R. GORR. 2,34,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,18) *na nāśamadhigaccheyuriti me dhīyate matiḥ* der Meinung bin ich
-[MBH. 4,920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.920) = [≈Вульг. 4.28.8](mbh/4.28.html#v8) = ≈крит. 04,27.7c [3,8290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8290) = [≈Вульг. 3.86.14](mbh/3.86.html#v14) = ≈крит. 03,84.13a [12402.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12402) = [≈Вульг. 3.178.8](mbh/3.178.html#v8) = ≈крит. 03,175.8a *dhīyamāna* und *dhita* viell. dessen Sinn auf Etwas gerichtet ist: *adharme dhīyamānasya sadbhistatra nivāraṇam*
+[MBH. 4,920.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.920) = [≈Vulg. 4.28.8](mbh/4.28.html#v8) = ≈krit. 04,27.7c [3,8290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8290) = [≈Vulg. 3.86.14](mbh/3.86.html#v14) = ≈krit. 03,84.13a [12402.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12402) = [≈Vulg. 3.178.8](mbh/3.178.html#v8) = ≈krit. 03,175.8a *dhīyamāna* und *dhita* viell. dessen Sinn auf Etwas gerichtet ist: *adharme dhīyamānasya sadbhistatra nivāraṇam*
 [HARIV. 1854.](https://sanskrit-lexicon-scans.github.io/hariv?1854) *patibhaktyai dhitāḥ sma*
 [7799.](https://sanskrit-lexicon-scans.github.io/hariv?7799)
 
@@ -65,7 +65,7 @@
 [AIT. BR. 3,47.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,47) *rāṣṭraṃ tvayi dhāsyāmi*
 [ŚAT. BR. 12,9,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,3,2) *kṣatra eva tadyaśo dadhāti* (*brāhmaṇaḥ*)
 [14,4,2,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,23) *(kaccit) śatamasmāsu dhāsyati*
-[MBH. 7,5267. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5267) = [≈Вульг. 7.129.3](mbh/7.129.html#v3) = крит. — *vayo dadhatpadvate*
+[MBH. 7,5267. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5267) = [≈Vulg. 7.129.3](mbh/7.129.html#v3) = krit. — *vayo dadhatpadvate*
 [ṚV. 1,140,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.09) [116,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.08) *asme śataṃ śarado jīvase dhāḥ*
 [3,36,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.036.html#rv03.036.10) *dadhāti ratnaṃ vidhate*
 [4,12,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.012.html#rv04.012.03) *dhattaṃ sūribhya uta vā svaśvyam*
@@ -73,7 +73,7 @@
 [3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.03) [30,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.01) *dhātā rayim*
 [54,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.054.html#rv01.054.13) *sa no dadhādbrahmāpyayam*
 [ŚVETĀŚV. UP. 6,10.] *tatra te 'ham — śreyo dhāsyāmi yatparam*
-[MBH. 3,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2618) = [≈Вульг. 3.66.11](mbh/3.66.html#v11) = ≈крит. 03,63.10a *hiṃsrāhiṃsre mṛdukrūre dharmādharmāvṛtānṛte . yadyasya so 'dadhātsarge tattasya svayamāviśet ..*
+[MBH. 3,2618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2618) = [≈Vulg. 3.66.11](mbh/3.66.html#v11) = ≈krit. 03,63.10a *hiṃsrāhiṃsre mṛdukrūre dharmādharmāvṛtānṛte . yadyasya so 'dadhātsarge tattasya svayamāviśet ..*
 [M. 1,29.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,29) med.: *dame dame sapta ratnā dadhānaḥ*
 [ṚV. 5,1,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.05) [6,74,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.074.html#rv06.074.01) *yaḥsaṃmānaṃ sadā dhatte bhṛtyānāṃ kṣitipo 'dhikam*
 [PAÑCAT. II,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,22) pass.: *preṣṭho asmā adhāyi stomaḥ*

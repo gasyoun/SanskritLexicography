@@ -9,17 +9,17 @@
 * rājyanāmni*
 [RĀJA-TAR. 6,313.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,313) *duratyaye 'dhvani*
 [BHĀG. P. 5,13,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,1) [19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,19) ein setzen in (ein Amt, eine Stellung): *rājye*
-[MBH. 2,1107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1107) = [≈Вульг. 2.31.3](mbh/2.31.html#v3) = ≈крит. 02,28.3a [9,2300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2300) = [≈Вульг. 9.40.16](mbh/9.40.html#v16) = ≈крит. 09,39.16a
+[MBH. 2,1107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1107) = [≈Vulg. 2.31.3](mbh/2.31.html#v3) = ≈krit. 02,28.3a [9,2300.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2300) = [≈Vulg. 9.40.16](mbh/9.40.html#v16) = ≈krit. 09,39.16a
 [KATHĀS. 10,217.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,217) [41,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?41,58)
 [BHĀG. P. 1,10,2](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,2) (*niveśayitvā*).* pārameśvare pade*
 [PRAB. 16,5. 8. 117,18.] *kuśāvatyāṃ kuśam* als Fürsten einsetzen in
 [RAGH. 15,97.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,97)
 [MĀRK. P. 56,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?56,11) *teṣu (varṣeṣu) sapta rikthādānvarṣapānniveśya*
 [BHĀG. P. 5,20,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,20) *kare* so v. a. tributpflichtig machen
-[MBH. 2,1039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1039) = [≈Вульг. 2.28.2](mbh/2.28.html#v2) = ≈крит. 02,25.2a *karaniveśita*
+[MBH. 2,1039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1039) = [≈Vulg. 2.28.2](mbh/2.28.html#v2) = ≈krit. 02,25.2a *karaniveśita*
 [KĀM. NĪTIS. 17,32]; vgl. *yairiyaṃ pṛthivī karavatī prativarṣaṃ niveśitā*
 [MĀRK. P. 53,11.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?53,11) *samaye* so v. a. mit Jmd einen Vertrag schliessen
-[MBH. 1,6297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6297) = [≈Вульг. 1.161.20](mbh/1.161.html#v20) = ≈крит. 01,149.20a
+[MBH. 1,6297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6297) = [≈Vulg. 1.161.20](mbh/1.161.html#v20) = ≈krit. 01,149.20a
 
 - **RU:** — 11) приводить, переводить на (что-либо): *dharmye pathi*
 [M. 8,228.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,228) *mṛtyupathe *
@@ -71,7 +71,7 @@
   <sub>attested</sub>
 
 **14)** — 14) richten (den Blick, die Gedanken, den Geist u. s. w.) auf Etwas (loc.): *dṛṣṭiṃ pāñcālyām*
-[MBH. 1,7141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7141) = [≈Вульг. 1.189.14](mbh/1.189.html#v14) = ≈крит. 01,180.13a
+[MBH. 1,7141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7141) = [≈Vulg. 1.189.14](mbh/1.189.html#v14) = ≈krit. 01,180.13a
 [Spr. 1004.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1004) [Spr. (II) 2257.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2257 "Spr. (II) 2257: caraṇapatanapratyākhyānātprasādaparāṅmukhe nibhṛtakitavācāretyuktvā ruṣā paruṣīkṛte | vrajati ramaṇe niḥśvasyoccaiḥ stanasthitahastayā nayanasalilacch… — (902.) Als sie dem Geliebten es untersagte sich ihr zu Füssen zu werfen, da zeigte er sich gleichgiltig gegen ihre Gunst, und als sie ihn darauf im Zorn hart anfuhr mit den Worten «o, der du im Geheimen wie ein Schelm di…") *mayi buddhim*
 [BHAG. 12,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,8) *mano 'dharme*
 [Spr. 4364.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4364)
@@ -80,7 +80,7 @@
 [BHĀG. P. 2,8,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,8,3) [7,1,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,1,31)
 [MĀRK. P. 41,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20) *cetaso niveśitasyātmani*
 [MAITRYUP. 6,34.] *ātmānaṃ kalyāṇe*
-[MBH. 5,1382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1382) = [≈Вульг. 5.37.49](mbh/5.37.html#v49) = ≈крит. 05,37.45a
+[MBH. 5,1382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1382) = [≈Vulg. 5.37.49](mbh/5.37.html#v49) = ≈krit. 05,37.45a
 [BHĀG. P. 1,15,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,33) *dhyeye dhyānam*
 [Spr. 3313.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3313)
 

@@ -13,11 +13,11 @@ Bez. einer best. Constellation
 
 **2d)** — d) N. pr.
  α) pl. eines Volkes
-[MBH. 6,364](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.364) = [≈Вульг. 6.9.56](mbh/6.9.html#v56) = ≈крит. 06,10.54c ([VP. 192).]
+[MBH. 6,364](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.364) = [≈Vulg. 6.9.56](mbh/6.9.html#v56) = ≈krit. 06,10.54c ([VP. 192).]
 — β) eines Devagandharva
-[MBH. 1,2554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2554) = [≈Вульг. 1.65.46](mbh/1.65.html#v46) = ≈крит. 01,59.44e
+[MBH. 1,2554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2554) = [≈Vulg. 1.65.46](mbh/1.65.html#v46) = ≈krit. 01,59.44e
 — γ) eines Rājarṣi
-[MBH. 2,320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.320) = [≈Вульг. 2.8.9](mbh/2.8.html#v9) = ≈крит. 02,8.8c eines Fürsten
+[MBH. 2,320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.320) = [≈Vulg. 2.8.9](mbh/2.8.html#v9) = ≈krit. 02,8.8c eines Fürsten
 [RĀJA-TAR. 1,276.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,276) eines Bruders des Jajja
 [4,519.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,519) eines Brahmanen
 [TĀRAN. 4. 24.]
@@ -95,7 +95,7 @@ a) волшебная сила, сверхъестественная мощь: *
 
 **nis-sidh-1)** — *abhi*
  1) gelingen, zu Stande kommen: *artho 'bhisidhyati*
-[MBH. 12,7427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7427) = [≈Вульг. 12.207.7](mbh/12.207.html#v7) = ≈крит. 12,200.7a
+[MBH. 12,7427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7427) = [≈Vulg. 12.207.7](mbh/12.207.html#v7) = ≈krit. 12,200.7a
 
 - **RU:** — *abhi*
 1) удаваться, осуществляться: *artho 'bhisidhyati* [MBH. 12,7427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7427) = [≈Вульг. 12.207.7](mbh/12.207.html#v7) = ≈крит. 12,200.7a
@@ -111,7 +111,7 @@ a) волшебная сила, сверхъестественная мощь: *
  1) gelingen, erfolgen, zu Stande kommen
 [M. 11,237.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,237) *śarīrayātrāpi ca te na prasidhyedakarmaṇaḥ*
 [BHAG. 3,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,8) *na brāhmaṇaḥ sādhayate havyaṃ daivātprasidhyati*
-[MBH. 13,1536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1536) = [≈Вульг. 13.22.6](mbh/13.22.html#v6) = ≈крит. 13,23.6a *prasidhyatā samāgamena*
+[MBH. 13,1536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1536) = [≈Vulg. 13.22.6](mbh/13.22.html#v6) = ≈krit. 13,23.6a *prasidhyatā samāgamena*
 [Spr. (II) 272.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?272 "Spr. (II) 272: anāturotkaṇṭhitayoḥ prasidhyatā samāgamenāpi ratirna māṃ prati | parasparaprāptinirāśayorvaraṃ śarīranāśo 'pi samānarāgayoḥ || — (3459.) Wenn zwei Personen, von denen die eine Nichts von Liebe fühlt, die andere aber vor Sehnsucht vergeht, bei zu Stande kommender Vereinigung sogar dem Liebesgenuss sich hingeben, so ist dieses in meinen Augen wenige…") *arthaḥ*
 [3618.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3618) [VARĀH. BṚH. S. 104,61.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,61) *yatkarma svayameva prasidhyati*
 [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *tāsāmāyācitam — tvatprasādātprasidhyatām* (am Ende eines Śloka!)
@@ -153,7 +153,7 @@ Kār. zu [P. 3,1,122.](https://ashtadhyayi.com/sutraani/3/1/122) — partic. *pr
 [KĀM. NĪTIS. 11,49.] *aṅgapura˚*
 [DAŚAK. 82,3.]
 [PRAB. 23,11.] *ati˚*
-[MBH. 9,1396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1396) = [≈Вульг. 9.25.59](mbh/9.25.html#v59) = ≈крит. 09,24.52c
+[MBH. 9,1396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1396) = [≈Vulg. 9.25.59](mbh/9.25.html#v59) = ≈krit. 09,24.52c
 [AK. 3,4,28,220.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,28,220) *su˚*
 Davon [SĀH. D. 2,1.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?2,1) nom. abstr. *prasiddhatva* _n._
 [SARVADARŚANAS. 135,7. 140,6.]

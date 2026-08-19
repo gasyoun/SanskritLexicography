@@ -5,7 +5,7 @@
 
 **anuni+śam)** — *anuni* = *niḥ ruditamanuniśamya*
 [BHĀG. P. 10,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,25) *idamidamiti tṛṣṇayābhibhūtaṃ janamanavāptadhanaṃ viṣīdamānam . nipuṇamanuniśamya tattvabuddhyā* dem Geiste vorführend
-[MBH. 12,6680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6680) = [≈Вульг. 12.181.19](mbh/12.181.html#v19) = ≈крит. 12,174.19c
+[MBH. 12,6680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6680) = [≈Vulg. 12.181.19](mbh/12.181.html#v19) = ≈krit. 12,174.19c
 
 - **RU:** — *anuni* = *niḥ ruditamanuniśamya*
 [BHĀG. P. 10,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,25) *idamidamiti tṛṣṇayābhibhūtaṃ janamanavāptadhanaṃ viṣīdamānam . nipuṇamanuniśamya tattvabuddhyā* представляя уму

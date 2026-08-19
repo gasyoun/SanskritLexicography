@@ -119,7 +119,7 @@
 [ŚAT. BR. 13,8,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,4) *āyudhāni*
 [AIT. BR. 7,19.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,19)
 [KĀTY. ŚR. 25,11,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,11,13) — *vipāṭhānkṣuradhārāṃśca dhanurbhirnidadhuḥ saha*
-[MBH. 4,168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.168) = [≈Вульг. 4.5.27](mbh/4.5.html#v27) = ≈крит. 04,5.24c *dinānte nihitaṃ tejaḥ savitrā*
+[MBH. 4,168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.168) = [≈Vulg. 4.5.27](mbh/4.5.html#v27) = ≈krit. 04,5.24c *dinānte nihitaṃ tejaḥ savitrā*
 [RAGH. 4,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,1) *tato nidhāya nagare mātṝḥ* zurücklassend
 [R. GORR. 2,126,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,126,1) *yaśaḥ sphītaṃ nidhāyāruruhe paraṃ padam* grossen Ruhm zurücklassend
 [BHĀG. P. 4,21,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,21,7)
@@ -157,8 +157,8 @@
 [17,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.017.html#rv01.017.06) — *kvacinmuṣitakaṃ nidhāya*
 [DAŚAK.] in [BENF. Chr. 188,14.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yaṃ tu paśyennidhiṃ rājā purāṇaṃ nihitaṃ kṣitau*
 [M. 8,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,38) *(śamīm) tāmupāruhya nakulo dhanūṃṣi nidadhe svayam*
-[MBH. 4,170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.170) = [≈Вульг. 4.5.29](mbh/4.5.html#v29) = ≈крит. 04,5.25a *yajñapātrāṇi ratnānyābharaṇāni ca . nyadadhuḥ pāṇḍavā rājannāśrame vṛṣaparvaṇaḥ ..*
-[3,11549.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11549) = [≈Вульг. 3.157.58](mbh/3.157.html#v58) = ≈крит. 03,154.47a [R. 2,31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,31) [5,32,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,31) *ācaṣṭa bhavatīṃ devīṃ nihitāṃ rāvaṇālaye*
+[MBH. 4,170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.170) = [≈Vulg. 4.5.29](mbh/4.5.html#v29) = ≈krit. 04,5.25a *yajñapātrāṇi ratnānyābharaṇāni ca . nyadadhuḥ pāṇḍavā rājannāśrame vṛṣaparvaṇaḥ ..*
+[3,11549.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11549) = [≈Vulg. 3.157.58](mbh/3.157.html#v58) = ≈krit. 03,154.47a [R. 2,31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,31) [5,32,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,31) *ācaṣṭa bhavatīṃ devīṃ nihitāṃ rāvaṇālaye*
 [28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,28) [4,63,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,63,17) [KATHĀS. 10,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,109) *(idaṃ dhanuḥ) ṛcīke bhārgave nyāsaṃ nyadadhādviṣṇuḥ*
 [R. GORR. 1,77,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,77,24) *dhanam . haste hiraṇyadattasya nidhāya*
 [KATHĀS. 4,26.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,26) *hṛdaye, manasi* im Herzen verwahren, — tragen, dem Herzen einprägen: *hṛdayanihitairlakṣaṇaiḥ*

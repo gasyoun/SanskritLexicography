@@ -44,7 +44,7 @@
   <sub>attested</sub>
 
 **3)** — 3) abschlagen, abwehren, sich wehren gegen: *talaprahārairanyāṃśca vyahanat*
-[MBH. 3,11117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11117) = [≈Вульг. 3.146.1](mbh/3.146.html#v1) = ≈крит. 03,146.1a [13,73001](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.73001) (nach der Lesart der [ed. Bomb.]). *yadi pratīpaṃ daivaṃ te na vihanyām*
+[MBH. 3,11117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11117) = [≈Vulg. 3.146.1](mbh/3.146.html#v1) = ≈krit. 03,146.1a [13,73001](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.73001) (nach der Lesart der [ed. Bomb.]). *yadi pratīpaṃ daivaṃ te na vihanyām*
 [R. GORR. 2,20,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,20,32)
 
 - **RU:** — 3) отражать, отбивать, защищаться против: *talaprahārairanyāṃśca vyahanat*
@@ -74,7 +74,7 @@
 [BHĀG. P. 11,15,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,15,27) *aiśvaryam*
 [GAUḌAP.] zu [SĀṂKHYAK. 45.] [WILSON, ebend. S. 157.] *ṇatvaṃ vihanyeta*
 Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurūṇāmanayādvihaṃsi* so v. a. vorenthalten
-[MBH. 5,5033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5033) = [≈Вульг. 5.151.13](mbh/5.151.html#v13) = ≈крит. 05,149.13c *padmānyaśokapuṣpāṇi dṛṣṭvā dṛṣṭirvihanyate* das (fernere) Sehen wird aufgehoben so v. a. wird unnütz, dann braucht man Nichts mehr zu sehen
+[MBH. 5,5033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5033) = [≈Vulg. 5.151.13](mbh/5.151.html#v13) = ≈krit. 05,149.13c *padmānyaśokapuṣpāṇi dṛṣṭvā dṛṣṭirvihanyate* das (fernere) Sehen wird aufgehoben so v. a. wird unnütz, dann braucht man Nichts mehr zu sehen
 [R. 3,79,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,79,28)
 
 - **RU:** — 4) нарушать, задерживать, подавлять, устранять: *rakṣāṃsi kratūn*
@@ -104,13 +104,13 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
   <sub>attested</sub>
 
 **5)** — 5) pass. sich quälen, sich Sorge machen: *alābhe na vihanyeta lābhaścainaṃ na harṣayet*
-[MBH. 12,9976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9976) = [≈Вульг. 12.281.36](mbh/12.281.html#v36) = ≈крит. 12,272.36a *kimidaṃ tvaṃ vihanyase (vimuhyase* die neuere Ausg.)
+[MBH. 12,9976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9976) = [≈Vulg. 12.281.36](mbh/12.281.html#v36) = ≈krit. 12,272.36a *kimidaṃ tvaṃ vihanyase (vimuhyase* die neuere Ausg.)
 [HARIV. 9962.](https://sanskrit-lexicon-scans.github.io/hariv?9962) *tvaṃ tu mithyā vihanyase*
 [R. 2,108,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,108,12) ([116,21](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,116,21) [GORR.]). *sukhāni cānubhūyante manaśca na vihanyate*
-[MBH. 2,151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.151) = [≈Вульг. 2.5.17](mbh/2.5.html#v17) = ≈крит. 02,5.7a *naiva śakyastvayā jetuṃ vajranābha vihanyase (= mriyase*
+[MBH. 2,151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.151) = [≈Vulg. 2.5.17](mbh/2.5.html#v17) = ≈krit. 02,5.7a *naiva śakyastvayā jetuṃ vajranābha vihanyase (= mriyase*
 [NĪLAK.]) so v. a. du zerbrichst dir unnütz darüber den Kopf
 [HARIV. 8825.](https://sanskrit-lexicon-scans.github.io/hariv?8825) *mā vihanyata gacchata*
-[MBH. 3,15138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15138) = [≈Вульг. 3.251.15](mbh/3.251.html#v15) = ≈крит. 03,239.12e
+[MBH. 3,15138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15138) = [≈Vulg. 3.251.15](mbh/3.251.html#v15) = ≈krit. 03,239.12e
 
 - **RU:** — 5) pass. мучиться, тревожиться: *alābhe na vihanyeta lābhaścainaṃ na harṣayet*
 [MBH. 12,9976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9976) = [≈Вульг. 12.281.36](mbh/12.281.html#v36) = ≈крит. 12,272.36a *kimidaṃ tvaṃ vihanyase (vimuhyase* новейшее изд.)
@@ -162,7 +162,7 @@ Schol. zu [VS. PRĀT. 4,185.] [SARVADARŚANAS. 130,20. 161,17.] *rājyaṃ kurū
 
 **6c)** — c) abgeschlagen, abgewehrt: *astra*
 [R. 5,44,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,14) *aśmavarṣa*
-[MBH. 3,12135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12135) = [≈Вульг. 3.169.23](mbh/3.169.html#v23) = ≈крит. 03,166.22a
+[MBH. 3,12135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12135) = [≈Vulg. 3.169.23](mbh/3.169.html#v23) = ≈krit. 03,166.22a
 [HARIV. 12771.](https://sanskrit-lexicon-scans.github.io/hariv?12771) zurückgewiesen, abgewiesen: Person
 [BHAG.] [P. 6,3,1.](https://ashtadhyayi.com/sutraani/6/3/1) *a˚*
 [3,15,29.](https://ashtadhyayi.com/sutraani/3/15/29) gestört, gehemmt: *vighna˚*
@@ -214,8 +214,8 @@ Schol.
 
 **7)** — 7) *vi — han* fehlerhaft für *ni — han* (wie die
 v. l. fast überall hat)
-[MBH. 1,570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.570) = [≈Вульг. 1.2.341](mbh/1.2.html#v341) = ≈крит. 01,2.208c
-[ARJ. 10,23. 56] ([MBH. 3,12220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12220) [12252](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12252) = [≈Вульг. 3.173.22](mbh/3.173.html#v22) = ≈крит. 03,170.19a richtig).
+[MBH. 1,570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.570) = [≈Vulg. 1.2.341](mbh/1.2.html#v341) = ≈krit. 01,2.208c
+[ARJ. 10,23. 56] ([MBH. 3,12220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12220) [12252](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12252) = [≈Vulg. 3.173.22](mbh/3.173.html#v22) = ≈krit. 03,170.19a richtig).
 [R. 4,19,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,19,23)
 [Spr. (II) 2781.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2781 "Spr. (II) 2781: dāridryāddhriyameti tatparigataḥ prabhraśyate tejaso nistejāḥ paribhūyate paribhavānnirvedamāpadyate | nirviṇṇaḥ śucameti śokavihato buddhyā parityajy… — (1145.) Von der Armuth gelangt man zur Scham") [5624](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5624), v. l. [5861.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5861)
 [PAÑCAT. 68,7](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,7) (*ghnanti* [ed. Bomb.]).

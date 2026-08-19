@@ -158,7 +158,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 **sub-entry-4)** — *upa*
  1) *evaṃ saṃmantrya valinaḥ sarvasainyamupāsitāḥ*
 [R. 7,6,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,6,45) *upāsate yathā bālā mātaraṃ kṣudhayārditāḥ* umlagern
-[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](mbh/13.26.html#v50) = ≈крит. 13,27.49a
+[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Vulg. 13.26.50](mbh/13.26.html#v50) = ≈krit. 13,27.49a
 
 - **RU:** — *upa*
  1) *evaṃ saṃmantrya valinaḥ sarvasainyamupāsitāḥ*
@@ -167,10 +167,10 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
   <sub>attested</sub>
 
 **sub-entry-4, 3))** — 3) *mahendraṃ vai giriśreṣṭhaṃ rāmo nityamupāsti ha* zum Aufenthaltsort haben
-[MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Вульг. 5.176.31](mbh/5.176.html#v31) = ≈крит. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
+[MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Vulg. 5.176.31](mbh/5.176.html#v31) = ≈krit. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
 [Spr. 4321.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4321) *pāraṃ gatvā śrutaughasya dhanyā vanamupāsate*
 [1814.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1814) *śreyaskāmāstathā gaṅgāmupāsantīha dehinaḥ*
-[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Вульг. 13.26.50](mbh/13.26.html#v50) = ≈крит. 13,27.49a
+[MBH. 13,1808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1808) = [≈Vulg. 13.26.50](mbh/13.26.html#v50) = ≈krit. 13,27.49a
 
 - **RU:** — 3) *mahendraṃ vai giriśreṣṭhaṃ rāmo nityamupāsti ha* иметь своим местопребыванием
 [MBH. 5,6054.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6054) = [≈Вульг. 5.176.31](mbh/5.176.html#v31) = ≈крит. 05,175.2c *ā dehapatanādgaṅgāmupāste yaḥ pumāniha*
@@ -204,7 +204,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 
 **sub-entry-4, 10))** — 10) *prāptaṃ prāptamupāsīta hṛdayenāparājitaḥ* ruhig abwarten
 [Spr. 5236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5236) *kṣamāṃ kurvankālamupāsate yaḥ*
-[MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258) = [≈Вульг. 3.5.19](mbh/3.5.html#v19) = ≈крит. 03,6.19a
+[MBH. 3,258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.258) = [≈Vulg. 3.5.19](mbh/3.5.html#v19) = ≈krit. 03,6.19a
 
 - **RU:** — 10) *prāptaṃ prāptamupāsīta hṛdayenāparājitaḥ* спокойно выжидать
 [Spr. 5236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5236) *kṣamāṃ kurvankālamupāsate yaḥ*
@@ -229,7 +229,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 
 **sub-entry-6)** — *paryupa*
  1) umlagern (einen Feind)
-[MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236) = [≈Вульг. 15.7.2](mbh/15.7.html#v2) = ≈крит. 15,12.2c
+[MBH. 15,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.236) = [≈Vulg. 15.7.2](mbh/15.7.html#v2) = ≈krit. 15,12.2c
 
 - **RU:** — *paryupa*
  1) окружать (врага)
@@ -238,7 +238,7 @@ Beispiele ist, wie wie schon durch das Ausrufungszeichen andeuteten, eine falsch
 
 **sub-entry-6, 5))** — 5) *nyagbhūtvā paryupāsīta vadhyaṃ hanyādbale sati*
 [Spr. 1655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1655)
-[MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550) = [≈Вульг. 12.331.41](mbh/12.331.html#v41) = ≈крит. 12,318.41c
+[MBH. 12,12550.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12550) = [≈Vulg. 12.331.41](mbh/12.331.html#v41) = ≈krit. 12,318.41c
 
 - **RU:** — 5) *nyagbhūtvā paryupāsīta vadhyaṃ hanyādbale sati*
 [Spr. 1655.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1655)

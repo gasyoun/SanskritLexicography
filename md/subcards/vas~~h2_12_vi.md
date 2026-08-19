@@ -22,7 +22,7 @@
   <sub>attested</sub>
 
 **vi 2) (2nd instance))** caus. anziehen, umlegen: *vivāsyantāṃ rurucarmāṇi*
-[MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520) = [≈Вульг. 2.77.7](mbh/2.77.html#v7) = ≈крит. 02,68.7c
+[MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520) = [≈Vulg. 2.77.7](mbh/2.77.html#v7) = ≈krit. 02,68.7c
 
 - **RU:** caus. надевать, набрасывать: *vivāsyantāṃ rurucarmāṇi*
 [MBH. 2,2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2520) = [≈Вульг. 2.77.7](mbh/2.77.html#v7) = ≈крит. 02,68.7c

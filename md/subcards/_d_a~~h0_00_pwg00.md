@@ -9,7 +9,7 @@
 [8,2,38.](https://ashtadhyayi.com/sutraani/8/2/38) *dadhmas, dadhmasi, dhattha, dadhati* (
 [P. 7,1,4.](https://ashtadhyayi.com/sutraani/7/1/4) [6,1,189](https://ashtadhyayi.com/sutraani/6/1/189)) und *dadhanti* (
 [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19)); *adadhāt, adhattam, adadhāta, adadhus (samādadhan*
-[MBH. 3,12706](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12706) = [≈Вульг. 3.185.29](mbh/3.185.html#v29) = ≈крит. 03,183.25c); conj. *dadhas, dadhat* (
+[MBH. 3,12706](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12706) = [≈Vulg. 3.185.29](mbh/3.185.html#v29) = ≈krit. 03,183.25c); conj. *dadhas, dadhat* (
 [P. 7,3,70](https://ashtadhyayi.com/sutraani/7/3/70), Sch.),
 *dadhāt* (
 [PAT.] zu [P. 7,3,70](https://ashtadhyayi.com/sutraani/7/3/70)), *dadhathas, dadhāma, dadhan; dhehi* (
@@ -125,7 +125,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [BHAG. 14,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,3) *paya usriyāyāmadhattam*
 [ṚV. 1,180,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.03) *tānvāyurātmani dhitvā*
 [ŚAT. BR. 14,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,3,2) *vijñātadoṣeṣu dadhāti daṇḍam* den Stock auf Jmd legen so v. a. Strafe über Jmd verhängen
-[MBH. 5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Вульг. 5.33.105](mbh/5.33.html#v105) = ≈крит. 05,33.86a *daṇḍaṃ ca me dhāsyati*
+[MBH. 5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Vulg. 5.33.105](mbh/5.33.html#v105) = ≈krit. 05,33.86a *daṇḍaṃ ca me dhāsyati*
 [R. 5,28,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,7) *mama vrate te hṛdayaṃ dadhāmi*
 [PĀR. GṚHY. 2,2.] med.: *daśa te kalaśānāmadhīmahi*
 [ṚV. 4,32,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19) *tvaṃ divo dharuṇaṃ dhiṣa ojasā*
@@ -140,7 +140,7 @@ Sch.; med. *dadhe* 1. sg., *dhatse*
 [6,29,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05) *dhṛṣṇave dhīyate dhanā*
 [1,81,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03) *prācīnaṃ reto dhīyate* von hinten nach vorn wird der Same eingebracht
 [TS. 2,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,3) liegen in, enthalten sein in: *evaṃ sarvamahiṃsāyāṃ dharmārthamapi dhīyate*
-[MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933) = [≈Вульг. 12.250.18](mbh/12.250.html#v18) = ≈крит. 12,242.18a
+[MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933) = [≈Vulg. 12.250.18](mbh/12.250.html#v18) = ≈krit. 12,242.18a
 
 - **RU:** 1) класть, помещать, ставить; класть —, помещать в, на (loc.); act.: *imaṃ jīvebhyaḥ paridhiṃ dadhāmi*
 [ṚV. 10,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04) *dadho yatketumupamaṃ samatsu*

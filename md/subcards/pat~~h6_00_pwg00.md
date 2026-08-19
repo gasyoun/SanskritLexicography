@@ -6,7 +6,7 @@
 **1) a)** 1. *pat*
  1) fliegen, wehen von Fahnen (*patākā*)
 [BHĀG. P. 10,69,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,69,6) [11,30,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,30,15) dahineilen, entfliehen: *ahorātrāḥ patantīme*
-[MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) = [≈Вульг. 12.280.66](mbh/12.280.html#v66) = ≈крит. 12,271.65a [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) = [≈Вульг. 12.177.25](mbh/12.177.html#v25) = ≈крит. 12,171.25a [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) = [≈Вульг. 12.280.64](mbh/12.280.html#v64) = ≈крит. 12,271.63c [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) = [≈Вульг. 12.321.18](mbh/12.321.html#v18) = ≈крит. 12,309.17a Hierher gehört auch die
+[MBH. 12,9936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9936) = [≈Vulg. 12.280.66](mbh/12.280.html#v66) = ≈krit. 12,271.65a [6528. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6528) = [≈Vulg. 12.177.25](mbh/12.177.html#v25) = ≈krit. 12,171.25a [9934. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9934) = [≈Vulg. 12.280.64](mbh/12.280.html#v64) = ≈krit. 12,271.63c [12061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12061) = [≈Vulg. 12.321.18](mbh/12.321.html#v18) = ≈krit. 12,309.17a Hierher gehört auch die
 Z. 4 stehende Stelle aus [R.];
 vgl. [Spr. 2723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2723)
 

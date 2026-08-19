@@ -9,7 +9,7 @@
 [TS. 6,2,5,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,5,5)
 [TBR. 3,11,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,11,8,2) *gṛhebhyaḥ*
 [ŚAT. BR. 11,3,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,3,1,5)
-[MBH. 4,129.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.129) = [≈Вульг. 4.4.47](mbh/4.4.html#v47) = ≈крит. 04,4.40a *saṃvatsaraṃ proṣya*
+[MBH. 4,129.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.129) = [≈Vulg. 4.4.47](mbh/4.4.html#v47) = ≈krit. 04,4.40a *saṃvatsaraṃ proṣya*
 [ŚAT. BR. 14,9,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,2,8) *pitaraṃ proṣuṣamāgatam*
 [12,5,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,8) [2,4,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,6) [VS. 3,42.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?3,42) [AIT. BR. 7,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,2) [12.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,12) *vrātyāṃ pravasanti*
 [PAÑCAV. BR. 17,1,2.] *pravatsyant*
@@ -17,11 +17,11 @@
 [CHĀND. UP. 4,4,5.] *pravāsāṃ cakre*
 [10,2.] *aproṣivāngṛhapatiḥ*
 [ŚĀṄKH. ŚR. 8,24,3.] *proṣyāgacchatām* ved. Cit. bei
-[MALLIN.] zu [RAGH. 1,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,49) [M. 9,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,74) [MBH. 3,13084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13084) = [≈Вульг. 3.190.76](mbh/3.190.html#v76) = ≈крит. 03,188.73e [16811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16811) = [≈Вульг. 3.297.64](mbh/3.297.html#v64) = ≈крит. 03,281.62c [HARIV. 8931.](https://sanskrit-lexicon-scans.github.io/hariv?8931) [R. 7,72,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,72,12) [Spr. 4816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4816) [RAGH. 11,4.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,4) [BHĀG. P. 1,11,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,32) *proṣita* von Hause abwesend, in der Fremde weilend, verreist: *proṣitaścetpreyāt*
+[MALLIN.] zu [RAGH. 1,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,49) [M. 9,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,74) [MBH. 3,13084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13084) = [≈Vulg. 3.190.76](mbh/3.190.html#v76) = ≈krit. 03,188.73e [16811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16811) = [≈Vulg. 3.297.64](mbh/3.297.html#v64) = ≈krit. 03,281.62c [HARIV. 8931.](https://sanskrit-lexicon-scans.github.io/hariv?8931) [R. 7,72,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,72,12) [Spr. 4816.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4816) [RAGH. 11,4.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,4) [BHĀG. P. 1,11,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,32) *proṣita* von Hause abwesend, in der Fremde weilend, verreist: *proṣitaścetpreyāt*
 [KĀTY. ŚR. 25,8,9.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,9) [3,4,29](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,4,29) (*a˚*) .
 [M. 9,75. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,75)
 [YĀJÑ. 1,84.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,84)
-[MBH. 1,750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.750) = [≈Вульг. 1.3.85](mbh/1.3.html#v85) = ≈крит. 01,3.89A
+[MBH. 1,750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.750) = [≈Vulg. 1.3.85](mbh/1.3.html#v85) = ≈krit. 01,3.89A
 [R. 2,72,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,2) [49.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,49) [76,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,6) [103,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,103,38) ([111,43](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,43) [GORR.]). [106,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,7) [R. GORR. 2,17,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,32) [MṚCCH. 84,2.] [ṚT. 6,9.] [MEGH. 97.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?97) [VARĀH. BṚH. S. 78,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?78,6) [90,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?90,14) [KATHĀS. 16,105.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,105) [KAUṢ. UP. Einl. 2,6.] [DAŚAK. 59,9.] [BHĀG. P. 8,16,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,16,8) *pataṅge pravasati* wenn die Sonne vom Himmel verschwindet, nicht mehr scheint
 [VARĀH. BṚH. S. 27,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?27,2) *proṣita* untergegangen (heliakisch): *induja*
 [7,17.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,17) *ne me vairaṃ pravasati* (so die neuere Ausg.) *ekāhamapi* verschwinden, aufhören
@@ -56,7 +56,7 @@
 
 **2)** — 2) verweilen, sich aufhalten: *pravatsyati sukhaṃ vane*
 [R. 2,36,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,36,8) *yatra nityaṃ pravasati* (*prabhavati* [ed. Bomb.]) *svayaṃ devaḥ prajāpatiḥ*
-[MBH. 6,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.466) = [≈Вульг. 6.12.25](mbh/6.12.html#v25) = ≈крит. 06,13.25a *atra vaṭe yakṣiṇī pravasati*
+[MBH. 6,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.466) = [≈Vulg. 6.12.25](mbh/6.12.html#v25) = ≈krit. 06,13.25a *atra vaṭe yakṣiṇī pravasati*
 [GAUḌAP.] zu [SĀṂKHYAK. 4.]
 
 - **RU:** — 2) пребывать, оставаться: *pravatsyati sukhaṃ vane*
@@ -76,7 +76,7 @@
 [ṚV. 3,7,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.007.html#rv03.007.03) Jmd aus seinem Wohnort vertreiben, verbannen
 [M. 8,123.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,123) [284.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,284) [352.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,352) [9,289.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,289) [10,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,96)
 [YĀJÑ. 2,294.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,294)
-[MBH. 1,5694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5694) = [≈Вульг. 1.141.12](mbh/1.141.html#v12) = крит. — [6,4089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4089) = [≈Вульг. 6.91.14](mbh/6.91.html#v14) = ≈крит. 06,87.13c
+[MBH. 1,5694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5694) = [≈Vulg. 1.141.12](mbh/1.141.html#v12) = krit. — [6,4089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4089) = [≈Vulg. 6.91.14](mbh/6.91.html#v14) = ≈krit. 06,87.13c
 [HARIV. 10311.](https://sanskrit-lexicon-scans.github.io/hariv?10311)
 [R. 1,70,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,28) [2,49,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,49,6)
 [KATHĀS. 39,203.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,203) [56,306.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,306) [60,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?60,22)

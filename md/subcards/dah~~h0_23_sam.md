@@ -16,7 +16,7 @@
 [RAGH. ed. Calc. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?14,56) — caus. verbrennen lassen: *ghṛtāvasiktaṃ *
 
 * (pretaṃ) rājānam — vidhinā samadāhayat*
-[MBH. 1,4954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4954) = [≈Вульг. 1.126.31](mbh/1.126.html#v31) = ≈крит. 01,117.29a [11,793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.793) = [≈Вульг. 11.26.38](mbh/11.26.html#v38) = ≈крит. 11,26.38c
+[MBH. 1,4954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4954) = [≈Vulg. 1.126.31](mbh/1.126.html#v31) = ≈krit. 01,117.29a [11,793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.793) = [≈Vulg. 11.26.38](mbh/11.26.html#v38) = ≈krit. 11,26.38c
 
 - **RU:** — *sam* сжигаться вместе, сгорать дотла: *śocantaḥ saṃdahanto avratān*
 [ṚV. 9,73,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.073.html#rv09.073.05) *druho dahāmi saṃ mahīranindrāḥ*

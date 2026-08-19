@@ -3,7 +3,7 @@
 `d_a~~h0_zz_pw00`
 
 
-**Präsensstämme)** **1.** √*dā*, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25) = [≈Вульг. 1.1.233](mbh/1.1.html#v233) = ≈крит. 01,1.173c) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
+**Präsensstämme)** **1.** √*dā*, Präsensstämme; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (nur *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25) = [≈Vulg. 1.1.233](mbh/1.1.html#v233) = ≈krit. 01,1.173c) und *dadāya* (nur Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (s. u. *vyā*) und *˚tta*
 
 - **RU:** **1.** √*dā*, основы настоящего времени; *dadā* (Acc.), *dad* (Act. Med.), *dada* (Act. Med.), *dā, dāya* (только *ādāyamāna* [MBH. 1,187,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,187,25) = [≈Вульг. 1.1.233](mbh/1.1.html#v233) = ≈крит. 01,1.173c) и *dadāya* (только Partic. *ādadāyant* [MUṆḌ. UP.]), Partic. *datta, ˚dāta, ˚dita* (см. *vyā*) и *˚tta*
   <sub>attested</sub>
@@ -373,7 +373,7 @@
 - **RU:** — 3〉 брать с собой. *upādāya* в сопровождении, вместе с; с Acc.
   <sub>attested</sub>
 
-**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22) = [≈Вульг. 7.1.25](mbh/7.1.html#v25) = ≈крит. 07,1.24a. [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
+**upādā.4)** — 4〉 ergreifen, in die Hand nehmen, fassen, auffangen (Feuer); pflücken, lesen, auflesen [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22) = [≈Vulg. 7.1.25](mbh/7.1.html#v25) = ≈krit. 07,1.24a. [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). schöpfen (Wasser). *śulāgre* so v. a. stecken auf [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
 
 - **RU:** — 4〉 схватывать, брать в руку, хватать, улавливать (огонь); срывать, собирать, подбирать [MBH. 7,23,22](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,23,22) = [≈Вульг. 7.1.25](mbh/7.1.html#v25) = ≈крит. 07,1.24a. [Chr. 121,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?121). черпать (воду). *śulāgre* так преим. насаживать на [R. 3,7,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,7).
   <sub>attested</sub>
@@ -418,7 +418,7 @@
 - **RU:** — 12〉 приступать, браться за, начинать. С Infin. начинать. *upādāya* начиная от —; ср. u. 10〉.
   <sub>attested</sub>
 
-**upādā.13)** — 13〉 sich einem Gefühl, einer Stimmung hingeben. *śokam* ([MBH. 7,9,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,9,8) = [≈Вульг. 7.1.11](mbh/7.1.html#v11) = ≈крит. 07,1.11c), *harṣam, anukampām*.
+**upādā.13)** — 13〉 sich einem Gefühl, einer Stimmung hingeben. *śokam* ([MBH. 7,9,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,9,8) = [≈Vulg. 7.1.11](mbh/7.1.html#v11) = ≈krit. 07,1.11c), *harṣam, anukampām*.
 
 - **RU:** — 13〉 предаваться чувству, настроению. *śokam* ([MBH. 7,9,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,9,8) = [≈Вульг. 7.1.11](mbh/7.1.html#v11) = ≈крит. 07,1.11c), *harṣam, anukampām*.
   <sub>attested</sub>

@@ -8,11 +8,11 @@
 ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāryeta*
 [UPAL. 9,15.] *tatra daṇḍo 'vicāritaḥ* keinem Bedenken unterliegend
 [M. 8,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,295) *ityetadavicāritam*
-[MBH. 14,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1344) = [≈Вульг. 14.48.9](mbh/14.48.html#v9) = ≈крит. 14,48.9c *na rāmagamane — vicārayitumarhasi*
+[MBH. 14,1344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1344) = [≈Vulg. 14.48.9](mbh/14.48.html#v9) = ≈krit. 14,48.9c *na rāmagamane — vicārayitumarhasi*
 [R. 1,23,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,23,19) *kiṃ vicāryate* was bedenkt man sich lange?
 [HARIV. 3818.](https://sanskrit-lexicon-scans.github.io/hariv?3818) *na khalu kiṃcidvicāritamanayā*
 [MĀLAV. 49,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?49,9) *mā vicāraya* bedenke dich nicht lange
-[MBH. 1,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.763) = [≈Вульг. 1.3.98](mbh/1.3.html#v98) = ≈крит. 01,3.101B [6668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6668) = [≈Вульг. 1.173.23](mbh/1.173.html#v23) = ≈крит. 01,163.2a
+[MBH. 1,763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.763) = [≈Vulg. 1.3.98](mbh/1.3.html#v98) = ≈krit. 01,3.101B [6668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6668) = [≈Vulg. 1.173.23](mbh/1.173.html#v23) = ≈krit. 01,163.2a
 [SĀV. 5,107.]
 [R. 5,35,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,25) *avicārayan* (stets am Ende eines Halbverses) ohne sich zu bedenken
 [M. 3,114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,114) [7,212.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,212) [8,283](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,283) u. s. w. [R. 4,8,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,40) [5,3,67.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,67) *vicārita* _n._ das Bedenken: *tata etadvicāritam*
@@ -47,7 +47,7 @@ ziehen, Bedenken tragen, mit der Entscheidung zögern: *antyaṃ padaṃ vicāry
   <sub>attested</sub>
 
 **caus-5)** — 5) herausbringen, dahinterkommen, feststellen: *dṛṣṭvā cainaṃ na vicārayāmyahaṃ gandharvarājo yadi vā puraṃdaraḥ*
-[MBH. 4,235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.235) = [≈Вульг. 4.8.5](mbh/4.8.html#v5) = крит. — *vicāryatām yadi kācidāpannasattvā tasya bhāryāsu syāt*
+[MBH. 4,235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.235) = [≈Vulg. 4.8.5](mbh/4.8.html#v5) = krit. — *vicāryatām yadi kācidāpannasattvā tasya bhāryāsu syāt*
 [ŚĀK. 90,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?90,21) *sa nāpnoti phalaṃ tasya paratreti vicāritam* dieses steht fest, ist ausgemacht
 [M. 11,28.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,28) *vicārita = vinna, vitta*
 [AK. 3,2,49.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,49)

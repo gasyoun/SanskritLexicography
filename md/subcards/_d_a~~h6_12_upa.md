@@ -24,7 +24,7 @@
 
 **6_addendum)** — 6)
 Z. 10. fg. *upahita*
-[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](mbh/12.140.html#v26) = ≈крит. 12,138.26a bedeutet ein secundäres Gut; s. oben u. *upahita* .
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Vulg. 12.140.26](mbh/12.140.html#v26) = ≈krit. 12,138.26a bedeutet ein secundäres Gut; s. oben u. *upahita* .
 
 - **RU:** — 6)
 стк. 10. сл. *upahita*

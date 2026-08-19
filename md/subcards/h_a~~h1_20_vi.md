@@ -26,8 +26,8 @@
 [RĀJA-TAR. 1,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,58)
 [BHĀG. P. 1,5,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,19) [3,14,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,14,47) [4,24,67.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,67) *ratham*
 [R. 2,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,13) Jmd verlassen
-[MBH. 2,2604](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2604) = [≈Вульг. 2.79.21](mbh/2.79.html#v21) = крит. — (*vihāsye* des Metrums wegen).
-[3,2328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2328) = [≈Вульг. 3.61.32](mbh/3.61.html#v32) = ≈крит. 03,58.30a [4,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.268) = [≈Вульг. 4.9.25](mbh/4.9.html#v25) = ≈крит. 04,8.23a [7,301](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.301) = [≈Вульг. 7.9.41](mbh/7.9.html#v41) = ≈крит. 07,8.37c (*kacciccainaṃ* mit der [ed. Bomb.] zu lesen).
+[MBH. 2,2604](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2604) = [≈Vulg. 2.79.21](mbh/2.79.html#v21) = krit. — (*vihāsye* des Metrums wegen).
+[3,2328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2328) = [≈Vulg. 3.61.32](mbh/3.61.html#v32) = ≈krit. 03,58.30a [4,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.268) = [≈Vulg. 4.9.25](mbh/4.9.html#v25) = ≈krit. 04,8.23a [7,301](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.301) = [≈Vulg. 7.9.41](mbh/7.9.html#v41) = ≈krit. 07,8.37c (*kacciccainaṃ* mit der [ed. Bomb.] zu lesen).
 [R. 2,21,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,22) [51.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,51) [30,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,29) [35,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,30) [66,4](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,4) ([68,30](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,68,30) [GORR.]). [18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18) [R. GORR. 2,83,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,83,42) [3,64,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,64,18) [RAGH. 14,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,51) [KATHĀS. 18,289.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,289) [RĀJA-TAR. 3,126.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,126) [BHĀG. P. 3,16,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,7) [4,4,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,3) [7,9,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,44) [9,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,20) [PAÑCAT. 44,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?44,22) Jmd verlassen
 [MĀRK. P. 127,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?127,17) (den Leib) verlassen so v. a. sterben
 [BHĀG. P. 6,10,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,10,33) [7,15,45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,45) *prāṇān*
@@ -46,17 +46,17 @@
 [SARVADARŚANAS. 99,13.] *utkaṇṭhāṃ vijahiṣyasi*
 
 loswerden, sich befreien von
-[MBH. 3,8406.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8406) = [≈Вульг. 3.91.1](mbh/3.91.html#v1) = ≈крит. 03,89.1a [14,357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.357) = [≈Вульг. 14.14.4](mbh/14.14.html#v4) = ≈крит. 14,14.4a
+[MBH. 3,8406.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8406) = [≈Vulg. 3.91.1](mbh/3.91.html#v1) = ≈krit. 03,89.1a [14,357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.357) = [≈Vulg. 14.14.4](mbh/14.14.html#v4) = ≈krit. 14,14.4a
 [R. 3,76,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,76,13)
 [RAGH. 12,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,75) *karma śamalaṃ ca*
 [BHĀG. P. 3,9,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,23) [5,10,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,24) [8,24,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,48) [9,10,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,46) ablegen, abthun: *strīrūpam*
-[MBH. 1,1167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1167) = [≈Вульг. 1.19.10](mbh/1.19.html#v10) = ≈крит. 01,17.9a
+[MBH. 1,1167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1167) = [≈Vulg. 1.19.10](mbh/1.19.html#v10) = ≈krit. 01,17.9a
 [R. 1,27,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,27,12) *vāsāṃsi jīrṇāni*
 [BHAG. 2,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,22)
 [R. 2,37,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,8) [39,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,6)
 [ṚT. 6,13.] *maulimaṇim*
 [RAGH. 13,59.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,59) *dhanuśchinnam*
-[MBH. 6,2370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2370) = [≈Вульг. 6.55.10](mbh/6.55.html#v10) = ≈крит. 06,51.10c liegen lassen: *pathi*
+[MBH. 6,2370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2370) = [≈Vulg. 6.55.10](mbh/6.55.html#v10) = ≈krit. 06,51.10c liegen lassen: *pathi*
 [BHĀG. P. 8,6,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,34) *vihāya* so v. a. mit Hintansetzung —, mit Uebergehung von, ohne zu beachten
 [RAGH. 6,7.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,7)
 [KUMĀRAS. 3,1.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,1) *yadratnarāśīnapi vihāyābhinandyam* so v. a. mehr als
@@ -187,9 +187,9 @@ loswerden, sich befreien von
   <sub>attested</sub>
 
 **3c-beta)** — β) niedrig stehend, gemein: Personen
-[MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) = [≈Вульг. 3.12.118](mbh/3.12.html#v118) = ≈крит. 03,13.105a (nach der Lesart der [ed. Bomb.]).
-[15649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15649) = [≈Вульг. 3.268.12](mbh/3.268.html#v12) = ≈крит. 03,252.12a *˚yoni*
-[15674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15674) = [≈Вульг. 3.269.8](mbh/3.269.html#v8) = ≈крит. 03,253.8a
+[MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) = [≈Vulg. 3.12.118](mbh/3.12.html#v118) = ≈krit. 03,13.105a (nach der Lesart der [ed. Bomb.]).
+[15649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15649) = [≈Vulg. 3.268.12](mbh/3.268.html#v12) = ≈krit. 03,252.12a *˚yoni*
+[15674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15674) = [≈Vulg. 3.269.8](mbh/3.269.html#v8) = ≈krit. 03,253.8a
 
 - **RU:** — β) стоящий низко, низкий: о лицах
 [MBH. 3,578](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.578) = [≈Вульг. 3.12.118](mbh/3.12.html#v118) = ≈крит. 03,13.105a (по чтению [Бомбейская ред.]).
@@ -199,16 +199,16 @@ loswerden, sich befreien von
 
 **3c-gamma)** — γ) ermangelnd, ohne — seiend, beraubt —, frei von; die Ergänzung im instr.: *darśanena*
 [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) *tvayā*
-[MBH. 1,6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) = [≈Вульг. 1.157.6](mbh/1.157.html#v6) = ≈крит. 01,145.6a [6192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6192) = [≈Вульг. 1.157.35](mbh/1.157.html#v35) = ≈крит. 01,145.34c [3,2713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2713) = [≈Вульг. 3.69.20](mbh/3.69.html#v20) = ≈крит. 03,66.18a *śriyā*
-[15634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15634) = [≈Вульг. 3.266.5](mbh/3.266.html#v5) = ≈крит. 03,250.5a [R. 2,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,8) [27,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,20) [38,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,15) [66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18) [R. GORR. 1,23,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,23,8) *anarthairvyasanaiḥ*
+[MBH. 1,6163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6163) = [≈Vulg. 1.157.6](mbh/1.157.html#v6) = ≈krit. 01,145.6a [6192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6192) = [≈Vulg. 1.157.35](mbh/1.157.html#v35) = ≈krit. 01,145.34c [3,2713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2713) = [≈Vulg. 3.69.20](mbh/3.69.html#v20) = ≈krit. 03,66.18a *śriyā*
+[15634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15634) = [≈Vulg. 3.266.5](mbh/3.266.html#v5) = ≈krit. 03,250.5a [R. 2,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,8) [27,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,20) [38,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,15) [66,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,18) [R. GORR. 1,23,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,23,8) *anarthairvyasanaiḥ*
 [RAGH. 18,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,13)
 [Spr. (II) 6302.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6302 "Spr. (II) 6302: vyathayanti paraṃ ceto manorathaśatairjanāḥ | nānuṣṭhānairdhanairhīnāḥ kulajā vidhavā iva || — (2909.) Arme Leute regen nur, wie Wittwen aus edlem Geschlecht, das Herz mit Hunderten von Wünschen auf, indem sie nie zur Befriedigung derselben gelangen.") [6882.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6882)
 [VARĀH. BṚH. S. 15,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,27) [68,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,7) [33.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,33) im abl. : *patilokāt*
-[MBH. 5,7373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7373) = [≈Вульг. 5.187.4](mbh/5.187.html#v4) = ≈крит. 05,188.4a *rājyāt*
+[MBH. 5,7373.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7373) = [≈Vulg. 5.187.4](mbh/5.187.html#v4) = ≈krit. 05,188.4a *rājyāt*
 [R. 3,68,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,35) *dharmāt*
 [2,111,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,111,1) ([102,1] [SCHL.]). im comp. vorangehend: *rūpadravya˚*
 [M. 4,141.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,141) *mātāpitṛ˚*
-[9,177.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,177) [MBH. 1,6151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6151) = [≈Вульг. 1.156.13](mbh/1.156.html#v13) = ≈крит. 01,144.14c [3,2343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2343) = [≈Вульг. 3.62.11](mbh/3.62.html#v11) = ≈крит. 03,59.11c [R. 2,52,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) [ŚRUT. 17.] *deśakālavihīnāni karmāṇi*
+[9,177.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,177) [MBH. 1,6151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6151) = [≈Vulg. 1.156.13](mbh/1.156.html#v13) = ≈krit. 01,144.14c [3,2343.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2343) = [≈Vulg. 3.62.11](mbh/3.62.html#v11) = ≈krit. 03,59.11c [R. 2,52,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,37) [ŚRUT. 17.] *deśakālavihīnāni karmāṇi*
 [Spr. (II) 2959.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2959 "Spr. (II) 2959: deśakālavihīnāni karmāṇi viparītavat | kriyamāṇāni duṣyanti havīṃṣyaprayateṣviva || — (4216.) Handlungen, die man nicht am rechten Orte und ausser der Zeit, also auf verkehrte Weise vollbringt, werden zu Schanden, wie Opferbutter in den Händen von Unreinen.") [6026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6026) [6089.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6089) *kleśa˚*
 [6320.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6320) [6721](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6721), v. l. [7037.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7037) [VARĀH. BṚH. S. 48,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,4) *ṣaṣṭiścaturvihīnā* weniger vier
 [53,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?53,6) [81,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?81,16) [58,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,15) [68,30.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?68,30) [KATHĀS. 24,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,25) [RĀJA-TAR. 6,328.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,328) [MĀRK. P. 34,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,6) [BHĀG. P. 3,24,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,47) [SARVADARŚANAS. 90,10.] — caus. partic. *vihāpita* _n._ Gabe, Geschenk

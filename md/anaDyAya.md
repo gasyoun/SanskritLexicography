@@ -22,7 +22,7 @@ _PWG article — 3 sub-card(s), 9 sense(s) · RU 9/9 · EN 0/9_
 - **RU:** *anadhyāya* I. 1.
   <sub>lexicographic</sub>
 
-**I.1b)** *anadhyāya* I. 1. eine zum Studium ungeeignete Zeit oder ein solcher Ort [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Вульг. 13.2.9](mbh/13.2.html#v9) = ≈крит. 13,2.9a.
+**I.1b)** *anadhyāya* I. 1. eine zum Studium ungeeignete Zeit oder ein solcher Ort [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Vulg. 13.2.8](mbh/13.2.html#v8) = ≈krit. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Vulg. 13.2.9](mbh/13.2.html#v9) = ≈krit. 13,2.9a.
 
 - **RU:** *anadhyāya* I. 1. время, непригодное для занятий, или такое же место [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Вульг. 13.2.9](mbh/13.2.html#v9) = ≈крит. 13,2.9a.
   <sub>attested</sub>
@@ -42,7 +42,7 @@ _PWG article — 3 sub-card(s), 9 sense(s) · RU 9/9 · EN 0/9_
 - **RU:** *anadhyāya* I. 1.
   <sub>lexicographic</sub>
 
-**PWKVN 3)** *anadhyāya* I. 1. eine zum Studium ungeeignete Zeit oder ein solcher Ort [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Вульг. 13.2.9](mbh/13.2.html#v9) = ≈крит. 13,2.9a.
+**PWKVN 3)** *anadhyāya* I. 1. eine zum Studium ungeeignete Zeit oder ein solcher Ort [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Vulg. 13.2.8](mbh/13.2.html#v8) = ≈krit. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Vulg. 13.2.9](mbh/13.2.html#v9) = ≈krit. 13,2.9a.
 
 - **RU:** *anadhyāya* I. 1. время, не пригодное для занятий, или такое же место [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Вульг. 13.2.9](mbh/13.2.html#v9) = ≈крит. 13,2.9a.
   <sub>attested</sub>
@@ -57,7 +57,7 @@ _PWG article — 3 sub-card(s), 9 sense(s) · RU 9/9 · EN 0/9_
 - **RU:** anadhyāya m. молчание, [Naiṣ. 9,61.]
   <sub>lexicographic</sub>
 
-**2)** Eine zum Studium ungeeignete Zeit oder ein solcher Ort, [MBh. 13,93,117](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a f.; 94,25.
+**2)** Eine zum Studium ungeeignete Zeit oder ein solcher Ort, [MBh. 13,93,117](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Vulg. 13.2.8](mbh/13.2.html#v8) = ≈krit. 13,2.8a f.; 94,25.
 
 - **RU:** время, непригодное для занятий, или такое же место, [MBh. 13,93,117](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a f.; 94,25.
   <sub>lexicographic</sub>

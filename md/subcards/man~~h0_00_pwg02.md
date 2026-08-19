@@ -54,7 +54,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [RĀJA-TAR. 4,369.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,369)
 [SIDDH. K.] zu [P. 1,2,6.](https://ashtadhyayi.com/sutraani/1/2/6) [MĀRK. P. 18,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,33) *satāṃ matamatikramya yo 'satāṃ vartate mate* Rath
 [Spr. 3117.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3117) *matāni mantriṇām*
-[KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) = [≈Вульг. 1.157.11](mbh/1.157.html#v11) = ≈крит. 01,145.11c *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* Lehre
+[KĀM. NĪTIS. 11,75.] [MBH. 1,6168.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6168) = [≈Vulg. 1.157.11](mbh/1.157.html#v11) = ≈krit. 01,145.11c *ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ* Lehre
 [BHAG. 3,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,31) [18,6.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,6)
 [LA. (II) 90,14. 91,5.]
 [PAÑCAT. 253,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?253,12) *vaikhānasamate sthitaḥ*
@@ -64,7 +64,7 @@ Schol. [2,2,12](https://ashtadhyayi.com/sutraani/2/2/12), [Sch. 3,67], Sch. [RAG
 [H. 1540.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1540)
 — γ) Absicht
 [H. 1383.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1383)
-[MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) = [≈Вульг. 3.44.4](mbh/3.44.html#v4) = ≈крит. 03,45.4c [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759) = [≈Вульг. 3.70.16](mbh/3.70.html#v16) = ≈крит. 03,68.15a
+[MBH. 3,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1788) = [≈Vulg. 3.44.4](mbh/3.44.html#v4) = ≈krit. 03,45.4c [2759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2759) = [≈Vulg. 3.70.16](mbh/3.70.html#v16) = ≈krit. 03,68.15a
 [BHĀG. P. 1,7,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,32)
 — Vgl. *amata (amata*
 [KĀM. NĪTIS. 13,67] fehlerhaft für *abhṛta*; vgl.

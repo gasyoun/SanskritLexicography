@@ -16,7 +16,7 @@
 [PAÑCAV. BR. 12,13,14.]
 [ṢAḌV. BR. 2,3.] *eṣa tu ativadati yaḥ satyenātivadati*
 [CHĀND. UP. 7,16,1.] *vṛddhānnātivadejjātu* (*nābhibhavejjātu* [ed. Bomb.])
-[MBH. 13,7578.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7578) = [≈Вульг. 13.162.47](mbh/13.162.html#v47) = ≈крит. 13,148.21c
+[MBH. 13,7578.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7578) = [≈Vulg. 13.162.47](mbh/13.162.html#v47) = ≈krit. 13,148.21c
 
 - **RU:** 1) заглушать голосом, говорить громче или лучше, забивать словами, переспорить: *dundubhiḥ sarvā vāco 'tivadati*
 [TBR. 1,3,6,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,6,2) *rāṣṭraṃ viśamati vadati*

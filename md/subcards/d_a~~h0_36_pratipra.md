@@ -5,7 +5,7 @@
 
 **1)** — *pratipra*
  1) wieder herausgeben: *rājyaṃ pratipradāsyāmi*
-[MBH. 5,5525.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5525) = [≈Вульг. 5.162.33](mbh/5.162.html#v33) = крит. —
+[MBH. 5,5525.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5525) = [≈Vulg. 5.162.33](mbh/5.162.html#v33) = krit. —
 
 - **RU:** — *pratipra*
  1) снова выдавать, возвращать: *rājyaṃ pratipradāsyāmi*

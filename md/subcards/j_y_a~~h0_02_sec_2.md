@@ -20,21 +20,21 @@
 *yāvanna jijñāsata ātmatattvam*
 [BHĀG. P. 5,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,5) *jijñāsita* was man kennen zu lernen gewünscht hat
 [1,5,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,3) [4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,4) *jijñāsamāno rāmasya vīryam*
-[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) = [≈Вульг. 3.99.44](mbh/3.99.html#v44) = крит. — *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
+[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) = [≈Vulg. 3.99.44](mbh/3.99.html#v44) = krit. — *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
 [R. 1,33,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,33,10) *teṣāṃ jijñāsamānānāṃ śaivaṃ dhanurupāhṛtam*
 [66,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,19) *jijñāsyatāṃ rathaḥ sadyo vyakta eṣa hiraṇmayaḥ*
-[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) = [≈Вульг. 3.99.14](mbh/3.99.html#v14) = ≈крит. 03,97.12a *ātmānucarasya bhāvaṃ jijñāsamānā*
+[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) = [≈Vulg. 3.99.14](mbh/3.99.html#v14) = ≈krit. 03,97.12a *ātmānucarasya bhāvaṃ jijñāsamānā*
 [RAGH. 2,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,26)
 [BHAṬṬ. 8,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,33) *evaṃ hi na śāstraviṣayo jijñāsyeta*
 Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ ca*
 [R. 3,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,8)
-[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) = [≈Вульг. 13.160.32](mbh/13.160.html#v32) = ≈крит. 13,145.30a *aśvān jijñāsamānaḥ*
-[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) = [≈Вульг. 3.71.11](mbh/3.71.html#v11) = ≈крит. 03,69.10a [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
+[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) = [≈Vulg. 13.160.32](mbh/13.160.html#v32) = ≈krit. 13,145.30a *aśvān jijñāsamānaḥ*
+[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) = [≈Vulg. 3.71.11](mbh/3.71.html#v11) = ≈krit. 03,69.10a [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
 [R. 2,12,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,15) *ajijñāsañchivim*
-[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448) = [≈Вульг. 1.2.219](mbh/1.2.html#v219) = ≈крит. 01,2.137a
+[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448) = [≈Vulg. 1.2.219](mbh/1.2.html#v219) = ≈krit. 01,2.137a
 [R. 5,31,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,43) *śiviṃ jijñāsyāmaḥ* (sic)
-[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) = [≈Вульг. 3.197.2](mbh/3.197.html#v2) = крит. — *mayā jijñāsito hyasi*
-[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) = [≈Вульг. 13.14.341](mbh/13.14.html#v341) = ≈крит. 13,14.177a sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
+[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) = [≈Vulg. 3.197.2](mbh/3.197.html#v2) = krit. — *mayā jijñāsito hyasi*
+[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) = [≈Vulg. 13.14.341](mbh/13.14.html#v341) = ≈krit. 13,14.177a sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
 [KATHĀS. 22,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,84)
 
 - **RU:** 1) желать познать, желать знать, желать узнать, желать ознакомиться; исследовать, испытывать, подвергать проверке: *hāsaṃ te — jijñāsāmi* я желаю знать, над чем ты смеешься

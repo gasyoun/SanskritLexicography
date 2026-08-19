@@ -4,8 +4,8 @@
 
 
 **main)** — *prasam* auflegen (den Pfeil auf den Bogen): *prasaṃdhāya śilīmukham . preṣayāmāsa samare paṇḍitaṃ prati*
-[MBH. 6,3910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3910) = [≈Вульг. 6.88.24](mbh/6.88.html#v24) = ≈крит. 06,84.23a [5487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5487) = [≈Вульг. 6.117.36](mbh/6.117.html#v36) = ≈крит. 06,112.112a *prasaṃdadhe śitaṃ vāṇam*
-[4185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4185) = [≈Вульг. 6.93.36](mbh/6.93.html#v36) = ≈крит. 06,89.34a
+[MBH. 6,3910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3910) = [≈Vulg. 6.88.24](mbh/6.88.html#v24) = ≈krit. 06,84.23a [5487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5487) = [≈Vulg. 6.117.36](mbh/6.117.html#v36) = ≈krit. 06,112.112a *prasaṃdadhe śitaṃ vāṇam*
+[4185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4185) = [≈Vulg. 6.93.36](mbh/6.93.html#v36) = ≈krit. 06,89.34a
 
 - **RU:** — *prasam* накладывать (стрелу на лук): *prasaṃdhāya śilīmukham . preṣayāmāsa samare paṇḍitaṃ prati*
 [MBH. 6,3910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3910) = [≈Вульг. 6.88.24](mbh/6.88.html#v24) = ≈крит. 06,84.23a [5487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5487) = [≈Вульг. 6.117.36](mbh/6.117.html#v36) = ≈крит. 06,112.112a *prasaṃdadhe śitaṃ vāṇam*

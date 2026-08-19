@@ -33,9 +33,9 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 [BHĀG. P. 5,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [3,2,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,2,25) *svapitrościkīrṣayā śam*
 [3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,3,1) *śaṃ na ā vakṣaddvipade*
 [ṚV. 1,157,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.157.html#rv01.157.03) *śaṃ janmasu na vindati*
-[MBH. 3,1180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1180) = [≈Вульг. 3.31.21](mbh/3.31.html#v21) = ≈крит. 03,32.20c *śaṃ vidhātuṃ mitrāṇām*
-[5,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2593) = [≈Вульг. 5.72.13](mbh/5.72.html#v13) = ≈крит. 05,70.13c [BHĀG. P. 3,13,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,44) [15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,9) [9,4,59.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,59) *labhate śamanantataḥ*
-[MBH. 12,7121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7121) = [≈Вульг. 12.199.14](mbh/12.199.html#v14) = ≈крит. 12,192.14a *śaṃ puṣṇāti*
+[MBH. 3,1180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1180) = [≈Vulg. 3.31.21](mbh/3.31.html#v21) = ≈krit. 03,32.20c *śaṃ vidhātuṃ mitrāṇām*
+[5,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2593) = [≈Vulg. 5.72.13](mbh/5.72.html#v13) = ≈krit. 05,70.13c [BHĀG. P. 3,13,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,44) [15,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,9) [9,4,59.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,59) *labhate śamanantataḥ*
+[MBH. 12,7121.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7121) = [≈Vulg. 12.199.14](mbh/12.199.html#v14) = ≈krit. 12,192.14a *śaṃ puṣṇāti*
 [Spr. 3346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3346), v. l. *bhaktānāṃ śamabhīpsavaḥ*
 [BHĀG. P. 1,6,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,10) *yajatāṃ śaṃ tanoti*
 [17,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,34) [5,19,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,28) *vitanoti*

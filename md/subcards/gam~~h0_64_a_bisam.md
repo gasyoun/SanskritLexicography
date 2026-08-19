@@ -4,7 +4,7 @@
 
 
 **1)** — *abhisam* zusammen herbeikommen zu (acc.): *rakṣāṃsi ca piśācāśca vinedurabhisaṃgatāḥ*
-[MBH. 7,9410.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9410) = [≈Вульг. 7.201.17](mbh/7.201.html#v17) = ≈крит. 07,172.15c *abhi kṣipaḥ samagmata marjayantīriṣaspatim*
+[MBH. 7,9410.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9410) = [≈Vulg. 7.201.17](mbh/7.201.html#v17) = ≈krit. 07,172.15c *abhi kṣipaḥ samagmata marjayantīriṣaspatim*
 [ṚV. 9,14,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.014.html#rv09.014.07) *ārṣeyā daivā abhisaṃgatya bhāgam*
 [AV. 11,1,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.001.html#av11.001.16) *te kṣipramabhisaṃgamya yūthapā yūthaparṣabham*
 [R. 4,1,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,1,9) mit Jmd zusammenkommen: *ṛṣibhiścābhisaṃgamya pravatsyati sukhaṃ vane*

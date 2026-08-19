@@ -48,9 +48,9 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 [106.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?106) *bhinna* = *phulla*
 [H. an. 2,277.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,277)
 [MED. n. 14.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,14) *bhinnakaraṭa* von einem Elephanten, dessen Schläfen sich (während der Brunstzeit) geöffnet haben und fliessen
-[MBH. 3,16039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16039) = [≈Вульг. 3.278.39](mbh/3.278.html#v39) = ≈крит. 03,262.37a *madabhinnagaṇḍakaraṭa*
+[MBH. 3,16039.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16039) = [≈Vulg. 3.278.39](mbh/3.278.html#v39) = ≈krit. 03,262.37a *madabhinnagaṇḍakaraṭa*
 [Spr. 2399.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2399) *bhinna* (vgl. *prabhinna)* allein von einem brünstigen Elephanten gebraucht: *madavegabhinnā mattā yathā haimavatā gajāḥ*
-[MBH. 1,7006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7006) = [≈Вульг. 1.184.17](mbh/1.184.html#v17) = ≈крит. 01,175.17c
+[MBH. 1,7006.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7006) = [≈Vulg. 1.184.17](mbh/1.184.html#v17) = ≈krit. 01,175.17c
 [Spr. 2529](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2529) (Conj.). in der Stelle *bhinnebhamauktikāpūrṇapāṇiḥ siṃhaḥ*
 [RĀJA-TAR. 4,176](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,176) bedeutet aber *bhinna* nicht brünstig, sondern zerfleischt.
 
@@ -74,13 +74,13 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 **4)** — 4) lösen, pass. sich lösen, aufgehen: *prasthānabhinnāṃ na babandha nīvīm*
 [RAGH. 7,9.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,9) *tatastau tu jaṭā* (so die [ed. Bomb.] und
 [SUND. 1,30]) *bhittvā maulinau saṃbabhūvatuḥ*
-[MBH. 1,7647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7647) = [≈Вульг. 1.207.37](mbh/1.207.html#v37) = ≈крит. 01,199.35c *śirastraniṣkarṣaṇabhinnamauli*
+[MBH. 1,7647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7647) = [≈Vulg. 1.207.37](mbh/1.207.html#v37) = ≈krit. 01,199.35c *śirastraniṣkarṣaṇabhinnamauli*
 [RAGH. 7,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,63) *bhidyate hṛdayagranthiśchidyante sarvasaṃśayāḥ*
 [MUṆḌ. UP. 2,2. 8.]
 
 *vacāṃsi yogagrathitāni sādho na naḥ kṣamaṃ te manasāpi bhettum* entwirren
 [BHĀG. P. 5,10,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,10,19) *tacchlokakūṭamadyāpi grathitaṃ sudṛḍhaṃ mune . bhettuṃ na śakyate 'rthasya gūḍhatvāt*
-[MBH. 1,82.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.82) = [≈Вульг. 1.1.128](mbh/1.1.html#v128) = ≈крит. 01,1.83a
+[MBH. 1,82.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.82) = [≈Vulg. 1.1.128](mbh/1.1.html#v128) = ≈krit. 01,1.83a
 
 - **RU:** — 4) развязывать, освобождать, pass. развязываться, распускаться: *prasthānabhinnāṃ na babandha nīvīm*
 [RAGH. 7,9.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,9) *tatastau tu jaṭā* (так [Бомбейская ред.] и
@@ -97,7 +97,7 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 **5)** — 5) unterbrechen, stören: *tayordvāḥsthaḥ samayaṃ lakṣmaṇo 'bhinat*
 [RAGH. 15,94.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,94) *teṣāṃ na bhinnā mudaḥ*
 [Spr. 2526.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2526) *tatastairbhidyate vṛttam* den guten Lebenswandel unterbrechen so v. a. ihn verlassen
-[MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) = [≈Вульг. 13.162.13](mbh/13.162.html#v13) = ≈крит. 13,147.12c Vgl. *bhinnavṛtta*.* bhrūbhaṅgabhinnatilaka* so v. a. verwischt
+[MBH. 13,7544. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7544) = [≈Vulg. 13.162.13](mbh/13.162.html#v13) = ≈krit. 13,147.12c Vgl. *bhinnavṛtta*.* bhrūbhaṅgabhinnatilaka* so v. a. verwischt
 [MĀLAV. 67.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?67)
 [DAŚAK.] in [BENF. Chr. 199,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199)
 
@@ -131,12 +131,12 @@ P. [YĀJÑ. 2,248.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,
 **7)** — 7) spalten, theilen so v. a. entzweien: *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān . dūtastatkurute karma bhidyante yena vā na vā ..*
 [M. 7,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,66) *jalavatparvatāñchatrūnbhindyādanupalakṣitaḥ*
 [KĀM. NĪTIS. 17,17. 22.] [KATHĀS. 46,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,50) *kathaṃ ca pañca kṛṣṇāyāmekasyāṃ te narādhipāḥ . vartamānā mahābhāgā nābhidyanta parasparam ..*
-[MBH. 1,7598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7598) = [≈Вульг. 1.206.14](mbh/1.206.html#v14) = ≈крит. 01,198.13a *bhinnāḥ* Entzweite, Zerfallene
+[MBH. 1,7598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7598) = [≈Vulg. 1.206.14](mbh/1.206.html#v14) = ≈krit. 01,198.13a *bhinnāḥ* Entzweite, Zerfallene
 [1358. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [Spr. 4331. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4331)
 [R. 4,54,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,7)
 [KĀM. NĪTIS. 17,25. 19,2.] [KATHĀS. 34,210.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,210) *dānabhinna* durch Geschenke abtrünnig gemacht, — bestochen
 [Spr. 4956.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4956) pass. sich abtheilen von, sich fernhalten von (instr.): *dveṣyairapakṣairahitaiśca tasya bhidyasva nityaṃ kuhakoddhataiśca*
-[MBH. 3,14718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14718) = [≈Вульг. 3.234.9](mbh/3.234.html#v9) = ≈крит. 03,223.9a
+[MBH. 3,14718.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14718) = [≈Vulg. 3.234.9](mbh/3.234.html#v9) = ≈krit. 03,223.9a
 
 - **RU:** — 7) раскалывать, делить, тем самым преим. рассорить, вбить клин между: *dūta eva hi saṃdhatte bhinattyeva ca saṃhatān . dūtastatkurute karma bhidyante yena vā na vā ..*
 [M. 7,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,66) *jalavatparvatāñchatrūnbhindyādanupalakṣitaḥ*

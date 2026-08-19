@@ -22,7 +22,7 @@
   <sub>attested</sub>
 
 **2)** — 2) Jmd mit Gesang begleiten, Jmd (acc.) Etwas vorsingen: *(ugrasenaḥ) anugīyamāno gandharvaiḥ*
-[MBH. 1,7913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7913) = [≈Вульг. 1.216.6](mbh/1.216.html#v6) = ≈крит. 01,208.5c
+[MBH. 1,7913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7913) = [≈Vulg. 1.216.6](mbh/1.216.html#v6) = ≈krit. 01,208.5c
 
 - **RU:** — 2) сопровождать кого-л. пением, петь что-л. перед кем-л. (acc.): *(ugrasenaḥ) anugīyamāno gandharvaiḥ*
 [MBH. 1,7913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7913) = [≈Вульг. 1.216.6](mbh/1.216.html#v6) = ≈крит. 01,208.5c
@@ -31,7 +31,7 @@
 **3)** — 3) singen, besingen: *krīḍantamanugāyantam*
 [BHĀG. P. 6,1,60.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,60) [4,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,39) *anugītasatkatho vedeṣu guhyeṣu ca guhyavādibhiḥ*
 [1,10,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,24) [5,19,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,2) *śrūyatāṃ pṛthivīpāla yathaiṣo 'rtho 'nugīyate* wie man darüber singt, was die alten Weisen darüber singen
-[MBH. 12,4211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4211) = [≈Вульг. 12.115.23](mbh/12.115.html#v23) = ≈крит. 12,116.22a — caus. nachsingen lassen: *stotrīyāmanugāpayet*
+[MBH. 12,4211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4211) = [≈Vulg. 12.115.23](mbh/12.115.html#v23) = ≈krit. 12,116.22a — caus. nachsingen lassen: *stotrīyāmanugāpayet*
 [GOBH. 3,2,21. fgg.]
 
 - **RU:** — 3) петь, воспевать: *krīḍantamanugāyantam*

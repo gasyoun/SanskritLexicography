@@ -5,7 +5,7 @@
 
 **1)** — *pratisamā*
  1) auflegen (den Pfeil): (*tena*) *avidūre mṛgāndṛṣṭvā vāṇaḥ pratisamāhitaḥ*
-[MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266) = [≈Вульг. 13.5.4](mbh/13.5.html#v4) = ≈крит. 13,5.3a
+[MBH. 13,266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.266) = [≈Vulg. 13.5.4](mbh/13.5.html#v4) = ≈krit. 13,5.3a
 
 - **RU:** — *pratisamā*
  1) накладывать (стрелу): (*tena*) *avidūre mṛgāndṛṣṭvā vāṇaḥ pratisamāhitaḥ*

@@ -4,7 +4,7 @@
 
 
 **1)** — *vi* aufleben, in's Leben zurückkehren: *dvijaprabhāvāt — vyajīvatsa vanaspatiḥ*
-[MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002) = [≈Вульг. 1.50.42](mbh/1.50.html#v42) = ≈крит. 01,46.30c
+[MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002) = [≈Vulg. 1.50.42](mbh/1.50.html#v42) = ≈krit. 01,46.30c
 
 - **RU:** — *vi* ожить, вернуться к жизни: *dvijaprabhāvāt — vyajīvatsa vanaspatiḥ*
 [MBH. 1,2002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2002) = [≈Вульг. 1.50.42](mbh/1.50.html#v42) = ≈крит. 01,46.30c

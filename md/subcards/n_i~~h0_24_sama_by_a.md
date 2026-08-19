@@ -4,7 +4,7 @@
 
 
 **1)** — *samabhyā* herbeiführen, herführen: *vandiṃ samābhyānaya* (sic!) *matsakāśam*
-[MBH. 3,10656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10656) = [≈Вульг. 3.132.6](mbh/3.132.html#v6) = крит. —
+[MBH. 3,10656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10656) = [≈Vulg. 3.132.6](mbh/3.132.html#v6) = krit. —
 
 - **RU:** — *samabhyā* приводить, подводить: *vandiṃ samābhyānaya* (sic!) *matsakāśam*
 [MBH. 3,10656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10656) = [≈Вульг. 3.132.6](mbh/3.132.html#v6) = крит. —

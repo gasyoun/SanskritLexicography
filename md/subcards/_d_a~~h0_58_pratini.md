@@ -21,7 +21,7 @@
   <sub>attested</sub>
 
 **2)** — 2) verfügen, befehlen: *tathā pratinidhāya*
-[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) = [≈Вульг. 1.115.24](mbh/1.115.html#v24) = ≈крит. 01,107.23c — Statt *guṇāśrayaviśeṣaṃ pratinidhāya* bei
+[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) = [≈Vulg. 1.115.24](mbh/1.115.html#v24) = ≈krit. 01,107.23c — Statt *guṇāśrayaviśeṣaṃ pratinidhāya* bei
 [GAUḌAP.] zu [SĀṂKHYAK. 16] ist zu lesen *˚śeṣaṃ prati nidhāya* .
 
 - **RU:** — 2) распорядиться, приказать: *tathā pratinidhāya*

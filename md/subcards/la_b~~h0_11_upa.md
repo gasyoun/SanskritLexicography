@@ -7,11 +7,11 @@
  1) erwischen, habhaft werden, finden, bekommen, erhalten, wiedererlangen, theilhaftig werden (pass. zu Theil werden)
 [KĀTY. ŚR. 25,9,2.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,9,2) [12,25.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,12,25)
 [R. 3,46,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,14)
-[MBH. 1,1046](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1046) (act.). [1853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1853) = [≈Вульг. 1.46.8](mbh/1.46.html#v8) = ≈крит. 01,42.6c [3,2597.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2597) = [≈Вульг. 3.65.66](mbh/3.65.html#v66) = ≈крит. 03,62.36c [R. 3,74,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,74,29) *upalabdhaṃ hi mitraṃ me*
+[MBH. 1,1046](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1046) (act.). [1853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1853) = [≈Vulg. 1.46.8](mbh/1.46.html#v8) = ≈krit. 01,42.6c [3,2597.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2597) = [≈Vulg. 3.65.66](mbh/3.65.html#v66) = ≈krit. 03,62.36c [R. 3,74,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,74,29) *upalabdhaṃ hi mitraṃ me*
 [4,9,101.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,101) [40,71.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,71) [VIKR. 65,19.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?65,19) [DAŚAK. 73,10.] [80,17.] *nāvamiva māmupalabhya*
 [88,5. 6.] [SADDH. P. 4,14,a.] *garbhānupalebhire* empfingen
-[R. 1,15,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,15,25) ([23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,15,23) [GORR.]). [M. 11,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,17) [MBH. 13,307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.307) = [≈Вульг. 13.6.13](mbh/13.6.html#v13) = ≈крит. 13,6.13a *nālabhyaṃ copalabhyeta nṛṇām*
-[7601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7601) = [≈Вульг. 13.163.6](mbh/13.163.html#v6) = ≈крит. 13,149.5a [14,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.448) = [≈Вульг. 14.16.41](mbh/14.16.html#v41) = ≈крит. 14,16.39a [HARIV. 6507](https://sanskrit-lexicon-scans.github.io/hariv?6507) (*durgakarmāṇi saṃskārānupakalpya* die neuere Ausg.). *anartham*
+[R. 1,15,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,15,25) ([23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,15,23) [GORR.]). [M. 11,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,17) [MBH. 13,307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.307) = [≈Vulg. 13.6.13](mbh/13.6.html#v13) = ≈krit. 13,6.13a *nālabhyaṃ copalabhyeta nṛṇām*
+[7601.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7601) = [≈Vulg. 13.163.6](mbh/13.163.html#v6) = ≈krit. 13,149.5a [14,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.448) = [≈Vulg. 14.16.41](mbh/14.16.html#v41) = ≈krit. 14,16.39a [HARIV. 6507](https://sanskrit-lexicon-scans.github.io/hariv?6507) (*durgakarmāṇi saṃskārānupakalpya* die neuere Ausg.). *anartham*
 [R. 3,42,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,47) *anyatamaṃ rasamupalabhate* nimmt einen Geschmack an
 [SUŚR. 1,169,11.]
 [MṚCCH. 1,16.]
@@ -19,12 +19,12 @@
 [RĀJA-TAR. 5,297.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,297)
 [BHĀG. P. 1,16,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,34) [3,16,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,6) [33,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,37) [5,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15) [3,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,3,4) *grahatvam*
 [HARIV. 607.](https://sanskrit-lexicon-scans.github.io/hariv?607) *smṛtim*
-[MBH. 1,3994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3994) = [≈Вульг. 1.100.28](mbh/1.100.html#v28) = ≈крит. 01,94.26c [ŚĀK. 108,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,7) [Verz. d. Oxf. H. 51,b,35.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) *saṃjñām*
-[MBH. 1,216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.216) = [≈Вульг. 1.1.262](mbh/1.1.html#v262) = ≈крит. 01,1.199c
+[MBH. 1,3994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3994) = [≈Vulg. 1.100.28](mbh/1.100.html#v28) = ≈krit. 01,94.26c [ŚĀK. 108,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?108,7) [Verz. d. Oxf. H. 51,b,35.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) *saṃjñām*
+[MBH. 1,216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.216) = [≈Vulg. 1.1.262](mbh/1.1.html#v262) = ≈krit. 01,1.199c
 [R. 2,62,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,3) [3,25,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,25,9) *sukham*
 [Spr. 3322.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3322) [4073.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4073)
 [KUMĀRAS. 4,42.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,42) *śāntim*
-[MBH. 1,6526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6526) = [≈Вульг. 1.170.31](mbh/1.170.html#v31) = ≈крит. 01,158.28a [16,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.276) = [≈Вульг. 16.8.24](mbh/16.8.html#v24) = ≈крит. 16,9.23c *nirvṛtim*
+[MBH. 1,6526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6526) = [≈Vulg. 1.170.31](mbh/1.170.html#v31) = ≈krit. 01,158.28a [16,276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.276) = [≈Vulg. 16.8.24](mbh/16.8.html#v24) = ≈krit. 16,9.23c *nirvṛtim*
 [RĀJA-TAR. 1,65.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,65) *sveṣu *
 
 * dāreṣu ratim*
@@ -70,8 +70,8 @@
 [JAIM. 1,1,9.] [TATTVAS. 18.] [NĪLAK. 157.] [KUMĀRILA] bei [MÜLLER, SL. 510.] [ŚAṂK.] zu [BṚH. ĀR. UP. S. 27. 300.] [Verz. d. Oxf. H. 256,b,8.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?256) [264,a,29](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?264) (*upāla˚* fälschlich gedruckt).
 [BHĀṢĀP. 61.]
 [GAUḌAP.] zu [SĀṂKHYAK. 6.] Schol. zu [KAP. 1,109. 114. 157.] [SARVADARŚANAS. 7,13. 21. 21,19.] *tamālaśyāmalatvenopalabhyamānaṃ tamaḥ* wahrgenommen werdend als
-[110,17. 144,4.] [MBH. 1,8276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8276) = [≈Вульг. 1.225.7](mbh/1.225.html#v7) = ≈крит. 01,216.5c *nalaṃ ca hṛtasarvasvamupalabhya*
-[3,2274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2274) = [≈Вульг. 3.60.3](mbh/3.60.html#v3) = ≈крит. 03,57.3a [2396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2396) = [≈Вульг. 3.63.35](mbh/3.63.html#v35) = ≈крит. 03,60.34c [4,771.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.771) = [≈Вульг. 4.22.78](mbh/4.22.html#v78) = ≈крит. 03,12.65c [7,3070](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) = [≈Вульг. 7.86.7](mbh/7.86.html#v7) = ≈крит. 07,62.7a (*upalapsyanti* [ed. Bomb.]).
+[110,17. 144,4.] [MBH. 1,8276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8276) = [≈Vulg. 1.225.7](mbh/1.225.html#v7) = ≈krit. 01,216.5c *nalaṃ ca hṛtasarvasvamupalabhya*
+[3,2274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2274) = [≈Vulg. 3.60.3](mbh/3.60.html#v3) = ≈krit. 03,57.3a [2396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2396) = [≈Vulg. 3.63.35](mbh/3.63.html#v35) = ≈krit. 03,60.34c [4,771.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.771) = [≈Vulg. 4.22.78](mbh/4.22.html#v78) = ≈krit. 03,12.65c [7,3070](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3070) = [≈Vulg. 7.86.7](mbh/7.86.html#v7) = ≈krit. 07,62.7a (*upalapsyanti* [ed. Bomb.]).
 [HARIV. 11593.](https://sanskrit-lexicon-scans.github.io/hariv?11593)
 [R. 2,65,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,13) [3,60,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,13) [5,14,59.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,14,59) [51,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,51,15) *nopalebhe tadātmānam*
 [7,88,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,88,12) [VIKR. 57,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,11) *na sukhaṃ duḥkhamevāsti yasmāttadupalabhyate*
@@ -97,7 +97,7 @@
 
 **3)** — 3) erfahren, in Erfahrung bringen, kennen lernen, erkennen, sich Gewissheit verschaffen über
 [M. 7,57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,57)
-[MBH. 2,2615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2615) = [≈Вульг. 2.79.32](mbh/2.79.html#v32) = крит. — [4,898.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.898) = [≈Вульг. 4.26.16](mbh/4.26.html#v16) = ≈крит. 04,25.14e
+[MBH. 2,2615.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2615) = [≈Vulg. 2.79.32](mbh/2.79.html#v32) = krit. — [4,898.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.898) = [≈Vulg. 4.26.16](mbh/4.26.html#v16) = ≈krit. 04,25.14e
 [HARIV. 4609.](https://sanskrit-lexicon-scans.github.io/hariv?4609)
 [R. 1,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,11) [3,34,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,17) [39,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,39,2) [60,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,14) [4,47,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,47,17) [58,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,58,11) [39.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,58,39) [5,1,82.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,82) [38,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,38,17) [71,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,71,4) [7,33,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,33,23)
 [RAGH. 12,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,60)
@@ -113,8 +113,8 @@
 [CHĀND. UP. 8,8,4.]
 [KAṬHOP. 6,12. fg.]
 [MAITRYUP. 4,4. 6,8.] erkennen, einsehen, wissen
-[MBH. 2,709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.709) = [≈Вульг. 2.17.33](mbh/2.17.html#v33) = ≈крит. 02,16.32a *manaso duḥkhamūlaṃ tu sneha ityupalabhyate*
-[3,73.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.73) = [≈Вульг. 3.2.27](mbh/3.2.html#v27) = ≈крит. 03,2.26a *savyadakṣiṇayoryatra viśeṣo nopalabhyate*
+[MBH. 2,709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.709) = [≈Vulg. 2.17.33](mbh/2.17.html#v33) = ≈krit. 02,16.32a *manaso duḥkhamūlaṃ tu sneha ityupalabhyate*
+[3,73.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.73) = [≈Vulg. 3.2.27](mbh/3.2.html#v27) = ≈krit. 03,2.26a *savyadakṣiṇayoryatra viśeṣo nopalabhyate*
 [Spr. 3220.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3220) *caturthaṃ nopalabhyate* kennt man nicht
 [871.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?871) [3067.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3067) [KATHĀS. 6,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?6,128) *vināśastava rāmeṇa saṃyuge nopalabhyate* so v. a. ist unbegreiflich
 [R. 6,95,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,95,7)

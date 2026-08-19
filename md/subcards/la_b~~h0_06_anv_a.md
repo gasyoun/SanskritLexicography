@@ -8,7 +8,7 @@
 [ṚV. 10,130,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.130.html#rv10.130.07) *aṃsam*
 [GOBH. 2,10,26.]
 [KAUŚ. 69. 80.]
-[MBH. 5,1195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1195) = [≈Вульг. 5.35.14](mbh/5.35.html#v14) = ≈крит. 05,35.10c
+[MBH. 5,1195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1195) = [≈Vulg. 5.35.14](mbh/5.35.html#v14) = ≈krit. 05,35.10c
 [HARIV. 8207.](https://sanskrit-lexicon-scans.github.io/hariv?8207)
 
 - **RU:** — *anvā*

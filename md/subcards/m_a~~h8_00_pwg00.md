@@ -20,7 +20,7 @@ Z. 8 lies 7, 59, 12.
   <sub>attested</sub>
 
 **4)** — 4)
-[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Вульг. 3.269.22](mbh/3.269.html#v22) = ≈крит. 03,253.20a
+[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Vulg. 3.269.22](mbh/3.269.html#v22) = ≈krit. 03,253.20a
 
 - **RU:** — 4)
 [MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Вульг. 3.269.22](mbh/3.269.html#v22) = ≈крит. 03,253.20a

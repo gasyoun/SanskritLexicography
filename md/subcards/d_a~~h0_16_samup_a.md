@@ -15,7 +15,7 @@
 **2a)** — 2) med.
  a) erwerben, erlangen: *yaḥ pitrā samupāttāni dhanavīryayaśāṃsi vai . nyūnatāṃ nayati*
 [MĀRK. P. 21,95.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,95) *rakṣaṇaṃ samupāttānām*
-[MBH. 2,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1940) = [≈Вульг. 2.54.7](mbh/2.54.html#v7) = ≈крит. 02,50.7a
+[MBH. 2,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1940) = [≈Vulg. 2.54.7](mbh/2.54.html#v7) = ≈krit. 02,50.7a
 
 - **RU:** — 2) мед.
  a) приобретать, получать: *yaḥ pitrā samupāttāni dhanavīryayaśāṃsi vai . nyūnatāṃ nayati*
@@ -24,7 +24,7 @@
   <sub>attested</sub>
 
 **2b)** — b) entziehen, rauben: *tejāṃsi samupādatte*
-[MBH. 3,11876.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11876) = [≈Вульг. 3.163.36](mbh/3.163.html#v36) = ≈крит. 03,160.31a
+[MBH. 3,11876.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11876) = [≈Vulg. 3.163.36](mbh/3.163.html#v36) = ≈krit. 03,160.31a
 
 - **RU:** — b) отнимать, похищать: *tejāṃsi samupādatte*
 [MBH. 3,11876.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11876) = [≈Вульг. 3.163.36](mbh/3.163.html#v36) = ≈крит. 03,160.31a
@@ -38,7 +38,7 @@
   <sub>attested</sub>
 
 **2d)** — d) anthun, aufsetzen: *mālāṃ ca samupādāya*
-[MBH. 1,6974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6974) = [≈Вульг. 1.182.23](mbh/1.182.html#v23) = ≈крит. 01,173.21c
+[MBH. 1,6974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6974) = [≈Vulg. 1.182.23](mbh/1.182.html#v23) = ≈krit. 01,173.21c
 
 - **RU:** — d) надевать, возлагать: *mālāṃ ca samupādāya*
 [MBH. 1,6974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6974) = [≈Вульг. 1.182.23](mbh/1.182.html#v23) = ≈крит. 01,173.21c

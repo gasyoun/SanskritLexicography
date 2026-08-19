@@ -25,11 +25,11 @@
 
 **2) caus.)** — 2) caus. (*pātay*) wegfliegen machen, abschiessen: *vi te madaṃ madāvati śaramiva pātayāmasi*
 [AV. 4,7,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.007.html#av04.007.04) *vyapātayaccharān*
-[MBH. 4,1862.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1862) = [≈Вульг. 4.58.39](mbh/4.58.html#v39) = ≈крит. 04,53.35c abfliegen machen, abtrennen, abhauen: *śira eṣā vi pātaya*
+[MBH. 4,1862.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1862) = [≈Vulg. 4.58.39](mbh/4.58.html#v39) = ≈krit. 04,53.35c abfliegen machen, abtrennen, abhauen: *śira eṣā vi pātaya*
 [AV. 19,28,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.028.html#av19.028.04)
 [ŚAT. BR. 14,4,1,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,26) niedermachen, tödten: *kurupravīrāniṣubhirvyapātayat*
-[MBH. 7,6149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6149) = [≈Вульг. 7.145.95](mbh/7.145.html#v95) = ≈крит. 07,120.87a *tāṃstu daivahatānpūrvaṃ paścāddrauṇirvyapātayat*
-[10,392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.392) = [≈Вульг. 10.8.74](mbh/10.8.html#v74) = ≈крит. 10,8.68c Es ist wohl an beiden Stellen *nyapā˚* zu lesen.
+[MBH. 7,6149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6149) = [≈Vulg. 7.145.95](mbh/7.145.html#v95) = ≈krit. 07,120.87a *tāṃstu daivahatānpūrvaṃ paścāddrauṇirvyapātayat*
+[10,392.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.392) = [≈Vulg. 10.8.74](mbh/10.8.html#v74) = ≈krit. 10,8.68c Es ist wohl an beiden Stellen *nyapā˚* zu lesen.
 
 - **RU:** — 2) caus. (*pātay*) заставить улететь, выстрелить, пустить: *vi te madaṃ madāvati śaramiva pātayāmasi*
 [AV. 4,7,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.007.html#av04.007.04) *vyapātayaccharān*

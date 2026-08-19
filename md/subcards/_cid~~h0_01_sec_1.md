@@ -13,7 +13,7 @@
 [ŚĀṄKH. ŚR. 17,1,8. 15.]
 [GOBH. 4,2,9.] *nābhināḍīm*
 [SUŚR. 1,369,1.] *yanme bāhumacicchidaḥ*
-[MBH. 7,5954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5954) = [≈Вульг. 7.143.2](mbh/7.143.html#v2) = ≈крит. 07,118.2a *chedita*
+[MBH. 7,5954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5954) = [≈Vulg. 7.143.2](mbh/7.143.html#v2) = ≈krit. 07,118.2a *chedita*
 [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490)
 
 - **RU:** 1) срезать, срубать

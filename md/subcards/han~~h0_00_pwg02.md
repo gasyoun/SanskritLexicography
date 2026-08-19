@@ -10,7 +10,7 @@
 [R. 3,68,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,27) *˚dhvānta*
 [BHĀG. P. 3,8,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,23) *˚paramārtha*
 [Spr. (II) 1147.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1147 "Spr. (II) 1147: iha hi madhuragītaṃ nṛtyametadraso 'yaṃ sphurati parimalo 'sau sparśa eṣa stanānām | iti hataparamārthairindriyairbhrāmyamāṇaḥ svahitakaraṇadakṣaiḥ pa… — (434.) «Hier giebt es ja einen lieblichen Gesang zu hören, dort einem Tanz zuzusehen, da Etwas zu kosten, hier erhebt sich ein Wohlgeruch, dort bietet sich ein Busen zur Berührung dar», so sprachen zu dir die fünf Sinne,…") *˚prabha*
-[MBH. 3,16764.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16764) = [≈Вульг. 3.297.17](mbh/3.297.html#v17) = ≈крит. 03,281.16a
+[MBH. 3,16764.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16764) = [≈Vulg. 3.297.17](mbh/3.297.html#v17) = ≈krit. 03,281.16a
 [R. 3,1,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,1,35)
 [SUŚR. 2,402,17.]
 [BHĀG. P. 1,7,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,56) [14,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,17) *˚pramāda*
@@ -62,7 +62,7 @@ Schol.
 [R. 2,3,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,3,10) [91,62.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,62)
 [BHĀG. P. 5,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,16) [8,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,9,15)
 — d) _f._ so v. a. fututa: *he hate he hatetyevaṃ svāmibhartṛhateti ca*
-[MBH. 8,2037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2037) = [≈Вульг. 8.44.14](mbh/8.44.html#v14) = ≈крит. 08,30.17c
+[MBH. 8,2037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2037) = [≈Vulg. 8.44.14](mbh/8.44.html#v14) = ≈krit. 08,30.17c
 — e) aufgewirbelt, erregt: *turagakhurahato reṇuḥ*
 [ŚĀK. 31.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?31)
 — f) gekommen um: *vṛttataḥ*

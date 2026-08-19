@@ -18,8 +18,8 @@
 - **RU:** [R. 7,69,15.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,69,15) везти (на колеснице) кого-л.: *(aśvāḥ) putraṃ virāṭarājasya satvaraṃ samudāvahan*
   <sub>attested</sub>
 
-**heimführen)** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) = [≈Вульг. 7.23.23](mbh/7.23.html#v23) = ≈крит. 07,22.16c heimführen, heirathen: *ahaṃ vicitravīryasya dve kanye samudāvaham*
-[13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441) = [≈Вульг. 13.44.38](mbh/13.44.html#v38) = ≈крит. 13,44.37c
+**heimführen)** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) = [≈Vulg. 7.23.23](mbh/7.23.html#v23) = ≈krit. 07,22.16c heimführen, heirathen: *ahaṃ vicitravīryasya dve kanye samudāvaham*
+[13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441) = [≈Vulg. 13.44.38](mbh/13.44.html#v38) = ≈krit. 13,44.37c
 
 - **RU:** [MBH. 7,966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.966) = [≈Вульг. 7.23.23](mbh/7.23.html#v23) = ≈крит. 07,22.16c уводить домой, жениться: *ahaṃ vicitravīryasya dve kanye samudāvaham*
 [13,2441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2441) = [≈Вульг. 13.44.38](mbh/13.44.html#v38) = ≈крит. 13,44.37c

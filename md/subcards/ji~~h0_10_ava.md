@@ -5,10 +5,10 @@
 
 **1)** — *ava*
  1) abgewinnen, abnehmen: *śarairvidhvasya tāṃścaurānavajitya ca taddhanam*
-[MBH. 1,7765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7765) = [≈Вульг. 1.211.19](mbh/1.211.html#v19) = крит. —
+[MBH. 1,7765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7765) = [≈Vulg. 1.211.19](mbh/1.211.html#v19) = krit. —
 [M. 11,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,80) *puṣpakaṃ nāma vimānam — vīryādavajitam*
 [R. 3,54,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,6) *hṛtāṃ kṛṣṇāmavājayat*
-[MBH. 4,1537.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1537) = [≈Вульг. 4.49.7](mbh/4.49.html#v7) = ≈крит. 04,44.6e
+[MBH. 4,1537.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1537) = [≈Vulg. 4.49.7](mbh/4.49.html#v7) = ≈krit. 04,44.6e
 [R. 5,71,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,71,13) [6,9,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,9,30)
 
 - **RU:** — *ava*
@@ -21,14 +21,14 @@
   <sub>attested</sub>
 
 **2)** — 2) abhalten, abwenden: *gṛhasthaścāvajeṣyāmi mṛtyum*
-[MBH. 13,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.124) = [≈Вульг. 13.2.39](mbh/13.2.html#v39) = ≈крит. 13,2.38a
+[MBH. 13,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.124) = [≈Vulg. 13.2.39](mbh/13.2.html#v39) = ≈krit. 13,2.38a
 
 - **RU:** — 2) отстранять, отвращать: *gṛhasthaścāvajeṣyāmi mṛtyum*
 [MBH. 13,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.124) = [≈Вульг. 13.2.39](mbh/13.2.html#v39) = ≈крит. 13,2.38a
   <sub>attested</sub>
 
 **3)** — 3) besiegen: *avajitya suśarmāṇam*
-[MBH. 4,1118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1118) = [≈Вульг. 4.33.52](mbh/4.33.html#v52) = ≈крит. 04,32.35a [6,3757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3757) = [≈Вульг. 6.85.7](mbh/6.85.html#v7) = ≈крит. 06,81.6c — desid. abgewinnen —, wiedergewinnen wollen: *rāṣṭramavajigīṣan*
+[MBH. 4,1118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1118) = [≈Vulg. 4.33.52](mbh/4.33.html#v52) = ≈krit. 04,32.35a [6,3757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3757) = [≈Vulg. 6.85.7](mbh/6.85.html#v7) = ≈krit. 06,81.6c — desid. abgewinnen —, wiedergewinnen wollen: *rāṣṭramavajigīṣan*
 [ŚĀṄKH. ŚR. 14,50,8.]
 
 - **RU:** — 3) побеждать: *avajitya suśarmāṇam*

@@ -5,7 +5,7 @@
 
 **1)** — *vipra*
  1) richten (den Geist) auf: *saṃcaye ca vināśānte maraṇānte ca jīvite saṃyoge ca viyogānte ko nu vipraṇayenmanaḥ ..*
-[MBH. 12,3891. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3891) = [≈Вульг. 12.104.44](mbh/12.104.html#v44) = ≈крит. 12,105.44a
+[MBH. 12,3891. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3891) = [≈Vulg. 12.104.44](mbh/12.104.html#v44) = ≈krit. 12,105.44a
 
 - **RU:** — *vipra*
  1) направлять (ум) на: *saṃcaye ca vināśānte maraṇānte ca jīvite saṃyoge ca viyogānte ko nu vipraṇayenmanaḥ ..*

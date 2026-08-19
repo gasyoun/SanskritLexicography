@@ -53,7 +53,7 @@
 - **RU:** — С *abhyud*, *abhyudyāta* восставший против кого-л. v. l. *abhyudyata*.
   <sub>attested</sub>
 
-**T221—Mit T15)** — Mit *pratyud* sich erheben und Jmd (Acc., ausnahmsweise Gen.) entgegengehen (in freundlicher oder feindlicher Absicht). *pratyudyāta* mit pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15) = [≈Вульг. 7.7.17](mbh/7.7.html#v17) = крит. —.
+**T221—Mit T15)** — Mit *pratyud* sich erheben und Jmd (Acc., ausnahmsweise Gen.) entgegengehen (in freundlicher oder feindlicher Absicht). *pratyudyāta* mit pass. Bed. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15) = [≈Vulg. 7.7.17](mbh/7.7.html#v17) = krit. —.
 
 - **RU:** — С *pratyud* подняться и выйти навстречу кому-л. (Acc., в виде исключения Gen.) (с дружественным или враждебным намерением). *pratyudyāta* с pass. знач. [MBH. 7,185,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,185,15) = [≈Вульг. 7.7.17](mbh/7.7.html#v17) = крит. —.
   <sub>attested</sub>

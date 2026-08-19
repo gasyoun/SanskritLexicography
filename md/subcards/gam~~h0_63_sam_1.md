@@ -12,7 +12,7 @@
 
 **3)** — 3) auf Jmd (loc.) Etwas übergehen lassen, übergeben, darbieten: *vibhīṣaṇe saṃgamayya śriyaṃ vairiṇaḥ*
 [RAGH. 12,104.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,104) *kṛtvā cāṅgārako vakraṃ jyeṣṭhāyāṃ madhusūdana . anurādhāṃ prārthayate maitraṃ saṃgamayanniva ..*
-[MBH. 5,4841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4841) = [≈Вульг. 5.144.26](mbh/5.144.html#v26) = ≈крит. 05,142.26c — desid. *saṃjigaṃmiṣyate*
+[MBH. 5,4841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4841) = [≈Vulg. 5.144.26](mbh/5.144.html#v26) = ≈krit. 05,142.26c — desid. *saṃjigaṃmiṣyate*
 [P. 7,2,58](https://ashtadhyayi.com/sutraani/7/2/58), Vārtt. 2, Sch.
 
 - **RU:** — 3) на кого-л. (loc.) переносить что-л., передавать, преподносить: *vibhīṣaṇe saṃgamayya śriyaṃ vairiṇaḥ*

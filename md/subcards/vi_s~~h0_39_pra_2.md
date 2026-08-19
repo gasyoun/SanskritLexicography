@@ -4,7 +4,7 @@
 
 
 **caus-2)** — 2) in sein Haus führen so v. a. heirathen (vom Manne)
-[MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983) = [≈Вульг. 5.175.8](mbh/5.175.html#v8) = ≈крит. 05,172.6e
+[MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983) = [≈Vulg. 5.175.8](mbh/5.175.html#v8) = ≈krit. 05,172.6e
 
 - **RU:** — 2) вводить в свой дом так преим. жениться (о мужчине)
 [MBH. 5,5983.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5983) = [≈Вульг. 5.175.8](mbh/5.175.html#v8) = ≈крит. 05,172.6e
@@ -29,9 +29,9 @@
   <sub>attested</sub>
 
 **desid-intro)** — Vgl. *praveśana, praveśayitavya, praveśya* . — desid. *pravivikṣati* hineinzugehen —, einzudringen beabsichtigen: *śailān*
-[MBH. 3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) = [≈Вульг. 3.137.12](mbh/3.137.html#v12) = ≈крит. 03,138.12a *senām*
-[7,4359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4359) = [≈Вульг. 7.112.68](mbh/7.112.html#v68) = ≈крит. 02,28.1a mit Ergänzung von *senām*
-[6,139](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.139) = [≈Вульг. 6.3.71](mbh/6.3.html#v71) = ≈крит. 06,4.22a = [12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) = [≈Вульг. 12.102.15](mbh/12.102.html#v15) = ≈крит. 12,103.15a (in der Calc. Ausg. fälschlich *vivakṣataḥ)*.* hutāśanam*
+[MBH. 3,10836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10836) = [≈Vulg. 3.137.12](mbh/3.137.html#v12) = ≈krit. 03,138.12a *senām*
+[7,4359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4359) = [≈Vulg. 7.112.68](mbh/7.112.html#v68) = ≈krit. 02,28.1a mit Ergänzung von *senām*
+[6,139](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.139) = [≈Vulg. 6.3.71](mbh/6.3.html#v71) = ≈krit. 06,4.22a = [12,3767](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3767) = [≈Vulg. 12.102.15](mbh/12.102.html#v15) = ≈krit. 12,103.15a (in der Calc. Ausg. fälschlich *vivakṣataḥ)*.* hutāśanam*
 [R. GORR. 2,18,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,17)
 
 - **RU:** — ср. *praveśana, praveśayitavya, praveśya* . — desid. *pravivikṣati* намереваться войти —, проникнуть: *śailān*

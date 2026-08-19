@@ -46,7 +46,7 @@
 
 **8h)** — h) schlechte Lesart für *prahita*
 [H. 1492.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1492) — caus. Jmd abwehren: *kaḥ pārthaṃ pratighātayet*
-[MBH. 7,6993.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6993) = [≈Вульг. 7.158.23](mbh/7.158.html#v23) = ≈крит. 07,133.23a
+[MBH. 7,6993.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6993) = [≈Vulg. 7.158.23](mbh/7.158.html#v23) = ≈krit. 07,133.23a
 
 - **RU:** — h) плохой вариант чтения для *prahita*
 [H. 1492.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1492) — caus. отражать кого-л.: *kaḥ pārthaṃ pratighātayet*

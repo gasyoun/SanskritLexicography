@@ -161,7 +161,7 @@
 - **RU:** — 5) блуждать кругом.
   <sub>attested</sub>
 
-**pw-T29)** — Caus. Jmd nachgehen lassen, so v. a. sich unterthänig machen [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111) = [≈Вульг. 12.10.25](mbh/12.10.html#v25) = ≈крит. 12,10.25a.
+**pw-T29)** — Caus. Jmd nachgehen lassen, so v. a. sich unterthänig machen [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111) = [≈Vulg. 12.10.25](mbh/12.10.html#v25) = ≈krit. 12,10.25a.
 
 - **RU:** — Caus. заставлять кого-либо следовать за собой, — преим. подчинять себе [MBH. 12,301,111](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,301,111) = [≈Вульг. 12.10.25](mbh/12.10.html#v25) = ≈крит. 12,10.25a.
   <sub>attested</sub>

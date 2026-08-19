@@ -4,7 +4,7 @@
 
 
 **1))** — *samud* festbinden: *ātmānaṃ kaḥ samudbadhya kaṇṭhe baddhvā mahāśilām . samudraṃ pratareddorbhyām*
-[MBH. 4,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1545) = [≈Вульг. 4.49.15](mbh/4.49.html#v15) = ≈крит. 04,44.14c
+[MBH. 4,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1545) = [≈Vulg. 4.49.15](mbh/4.49.html#v15) = ≈krit. 04,44.14c
 
 - **RU:** — *samud* крепко привязать: *ātmānaṃ kaḥ samudbadhya kaṇṭhe baddhvā mahāśilām . samudraṃ pratareddorbhyām*
 [MBH. 4,1545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1545) = [≈Вульг. 4.49.15](mbh/4.49.html#v15) = ≈крит. 04,44.14c

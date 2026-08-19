@@ -5,7 +5,7 @@
 
 **intr)** — *parinis* vollkommen erlöschen, — zur Ruhe gelangen: *ulkeva parinirvāti sma*
 [LALIT. ed. Calc. 20,9.] *śāmyāmi parinirvāmi*
-[MBH. 12,6635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6635) = [≈Вульг. 12.180.28](mbh/12.180.html#v28) = ≈крит. 12,173.27a Vgl. *parinirvāṇa* .
+[MBH. 12,6635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6635) = [≈Vulg. 12.180.28](mbh/12.180.html#v28) = ≈krit. 12,173.27a Vgl. *parinirvāṇa* .
 
 - **RU:** — *parinis* окончательно угасать, — обретать покой: *ulkeva parinirvāti sma*
 [LALIT. ed. Calc. 20,9.] *śāmyāmi parinirvāmi*

@@ -5,7 +5,7 @@
 
 **1)** — *samupa*
  1) mit sich führen, strömen lassen: *(nadī) śoṇitaṃ samupāvahat*
-[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400) = [≈Вульг. 9.43.1](mbh/9.43.html#v1) = ≈крит. 09,42.1a
+[MBH. 9,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2400) = [≈Vulg. 9.43.1](mbh/9.43.html#v1) = ≈krit. 09,42.1a
 
 - **RU:** — *samupa*
  1) нести с собой, заставлять течь: *(nadī) śoṇitaṃ samupāvahat*

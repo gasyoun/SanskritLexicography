@@ -126,8 +126,8 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [ŚAT. BR. 12,3,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,3,5,2) [5,1,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,1,15) [2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,3) *grāmyo 'gniḥ śālāṃ dahati*
 [KAUŚ. 133.]
 [ĀŚV. GṚHY. 4,4.] [KĀTY. ŚR. 25,13,28.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,13,28) [ŚĀṄKH. ŚR. 18,24,14.] *nāgnirdadāha romāpi*
-[MBH. 8,116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.116) = [≈Вульг. 8.5.27](mbh/8.5.html#v27) = ≈крит. 08,4.27a [115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.115) = [≈Вульг. 8.5.26](mbh/8.5.html#v26) = ≈крит. 08,4.26c *janamejayasya vo yajñe dhakṣyati*
-[1,1058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1058) [5834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5834) = [≈Вульг. 1.146.18](mbh/1.146.html#v18) = ≈крит. 01,134.16c [8090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8090) = [≈Вульг. 1.221.47](mbh/1.221.html#v47) = ≈крит. 01,213.42e [8329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8329) = [≈Вульг. 1.227.1](mbh/1.227.html#v1) = ≈крит. 01,218.1c *kathamagnirna no dhakṣyet* (pot. fut.)
+[MBH. 8,116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.116) = [≈Vulg. 8.5.27](mbh/8.5.html#v27) = ≈krit. 08,4.27a [115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.115) = [≈Vulg. 8.5.26](mbh/8.5.html#v26) = ≈krit. 08,4.26c *janamejayasya vo yajñe dhakṣyati*
+[1,1058.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1058) [5834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5834) = [≈Vulg. 1.146.18](mbh/1.146.html#v18) = ≈krit. 01,134.16c [8090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8090) = [≈Vulg. 1.221.47](mbh/1.221.html#v47) = ≈krit. 01,213.42e [8329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8329) = [≈Vulg. 1.227.1](mbh/1.227.html#v1) = ≈krit. 01,218.1c *kathamagnirna no dhakṣyet* (pot. fut.)
 [8383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.8383) *gṛdhraṃ dagdhvā*
 [R. 1,1,53.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,53) [75](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,75) *taṃ hatvā kāṣṭhairadahat*
 [54.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,54) [BHARTṚ. 2,47.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,47) [RAGH. 12,63.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,63) *anyaṃ kaṃcidadhākṣuśca — śavam*
@@ -135,25 +135,25 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [HIT. I,74.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,74) brennen (medic.)
 [SUŚR. 1,32,5.] [2,48,1.] — med.: *dhakṣyate śāyakaiścemām — purīm*
 [R. 5,33,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,38) [34,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,34,2)
-[MBH. 1,8159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8159) = [≈Вульг. 1.222.27](mbh/1.222.html#v27) = ≈крит. 01,214.26c *daheta naḥ*
-[5788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5788) = [≈Вульг. 1.145.6](mbh/1.145.html#v6) = ≈крит. 01,133.6a *tvamevānyāndahase jātavedaḥ*
-[14,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.245) = [≈Вульг. 14.9.27](mbh/14.9.html#v27) = ≈крит. 14,9.27a *atandrito dahate jātavedāḥ*
-[5,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.818) = [≈Вульг. 5.29.10](mbh/5.29.html#v10) = ≈крит. 05,29.9c verbrennen, versengen so v. a. nach Art des Feuers vollständig vernichten: *ekameva dahatyagnirnaraṃ durupasarpiṇam . kulaṃ dahati rājāgniḥ*
+[MBH. 1,8159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8159) = [≈Vulg. 1.222.27](mbh/1.222.html#v27) = ≈krit. 01,214.26c *daheta naḥ*
+[5788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5788) = [≈Vulg. 1.145.6](mbh/1.145.html#v6) = ≈krit. 01,133.6a *tvamevānyāndahase jātavedaḥ*
+[14,245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.245) = [≈Vulg. 14.9.27](mbh/14.9.html#v27) = ≈krit. 14,9.27a *atandrito dahate jātavedāḥ*
+[5,818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.818) = [≈Vulg. 5.29.10](mbh/5.29.html#v10) = ≈krit. 05,29.9c verbrennen, versengen so v. a. nach Art des Feuers vollständig vernichten: *ekameva dahatyagnirnaraṃ durupasarpiṇam . kulaṃ dahati rājāgniḥ*
 [M. 7,9.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,9) *vṛkṣānaṅgārakārīva maināndhākṣīḥ samūlakān*
-[MBH. 2,2109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2109) = [≈Вульг. 2.62.16](mbh/2.62.html#v16) = ≈крит. 02,55.15c [5,7016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7016) *adhakṣaṃ* (lies *adhakṣyaṃ) tānahaṃ krūrāṃstadā sarvān*
-[7,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2541) = [≈Вульг. 7.72.66](mbh/7.72.html#v66) = ≈крит. 07,50.61a *dahat* (imperf.) *kṣatraṃ parasparam*
-[1,138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.138) = [≈Вульг. 1.1.184](mbh/1.1.html#v184) = ≈крит. 01,1.126a *lokāniva dhakṣyatī ruṣā*
+[MBH. 2,2109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2109) = [≈Vulg. 2.62.16](mbh/2.62.html#v16) = ≈krit. 02,55.15c [5,7016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7016) *adhakṣaṃ* (lies *adhakṣyaṃ) tānahaṃ krūrāṃstadā sarvān*
+[7,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2541) = [≈Vulg. 7.72.66](mbh/7.72.html#v66) = ≈krit. 07,50.61a *dahat* (imperf.) *kṣatraṃ parasparam*
+[1,138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.138) = [≈Vulg. 1.1.184](mbh/1.1.html#v184) = ≈krit. 01,1.126a *lokāniva dhakṣyatī ruṣā*
 [BHĀG. P. 4,4,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,9) [14,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,12)
 [RĀJA-TAR. 5,478.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,478) *adahata*
 [HARIV. 13993.](https://sanskrit-lexicon-scans.github.io/hariv?13993)
-[MBH. 6,5070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5070) = [≈Вульг. 6.109.16](mbh/6.109.html#v16) = ≈крит. 06,105.15a *mā tvāṃ dhakṣye cakṣuṣā dāruṇena*
-[14,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.237) = [≈Вульг. 14.9.19](mbh/14.9.html#v19) = ≈крит. 14,9.19c *jagāma campāṃ prati dhakṣyamāṇastamaṅgarājaṃ sapuraṃ rāṣṭram*
+[MBH. 6,5070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5070) = [≈Vulg. 6.109.16](mbh/6.109.html#v16) = ≈krit. 06,105.15a *mā tvāṃ dhakṣye cakṣuṣā dāruṇena*
+[14,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.237) = [≈Vulg. 14.9.19](mbh/14.9.html#v19) = ≈krit. 14,9.19c *jagāma campāṃ prati dhakṣyamāṇastamaṅgarājaṃ sapuraṃ rāṣṭram*
 [3,10084.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10084) *tasya jñānāgninā pāpaṃ sarvaṃ dahati vedavit*
 [M. 11,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,246) [6,72.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,72) [12,101.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,101)
 [ŚĀNTIŚ. 3,13.] brennen so v. a. in heftige Gluth —, in Wallung versetzen, aufregen; am Herzen nagen: *aṣṭau *
 
 * yasyāgnayo hyete na dahante manaḥ sadā*
-[MBH. 14,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.112) = [≈Вульг. 14.5.21](mbh/14.5.html#v21) = ≈крит. 14,5.19a *madanānalo dahati mama mānasam*
+[MBH. 14,112.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.112) = [≈Vulg. 14.5.21](mbh/14.5.html#v21) = ≈krit. 14,5.19a *madanānalo dahati mama mānasam*
 [GĪT. 10,2.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?10,2) *yanmāṃ tasyāḥ kapolau dahataḥ*
 [PAÑCAT. I,225.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,225) *tapati tanugātri madanastvāmaniśaṃ māṃ punardahatyeva*
 [ŚĀK. 65.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?65) *punardṛṣṭiṃ vāṣpaprakarakaluṣāmarpitavatī mayi krūre yattatsaviṣamiva śalyaṃ dahati mām*
@@ -216,12 +216,12 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 `dah~~h0_01_sec_1`
 
 
-**caus./desid./intens. — main)** — pass. verbrannt werden, verbrennen, brennen, in Flammen stehen: *tatra dahyeta pāpakṛt* [M. 8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [MBH. 4,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.798) = [≈Вульг. 4.23.1](mbh/4.23.html#v1) = ≈крит. 04,22.1a *te dahyante sma vahninā* [2,1140.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1140) = [≈Вульг. 2.31.36](mbh/2.31.html#v36) = ≈крит. 02,28.22a [3,2935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2935) = [≈Вульг. 3.75.14](mbh/3.75.html#v14) = ≈крит. 03,73.13c *dahyamānāmivārkeṇa* [2670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2670) *na ca dahyanti gacchantyaḥ sutaptairapi pāṃśubhiḥ* [13,1468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1468) = [≈Вульг. 13.19.88](mbh/13.19.html#v88) = ≈крит. 13,20.60c *bhṛgurbhṛjyamāno na dehe* [NIR. 3,17.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,17) *dahyante gṛhāḥ* [AV. 12,4,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.03) *diśaḥ* [ṢAḌV. BR. 5,9.] *tasminvane dahyamāne* [MBH. 1,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8330) = [≈Вульг. 1.227.2](mbh/1.227.html#v2) = крит. — *dahyatastasya — dāvasya* [8210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8210) = [≈Вульг. 1.223.45](mbh/1.223.html#v45) = крит. — [3,2608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2608) = [≈Вульг. 3.66.1](mbh/3.66.html#v1) = ≈крит. 03,63.1a durch Feuer entfernt werden, getilgt werden überh.: *dahyante dhmāyamānānāṃ dhātūnāṃ hi yathā malāḥ . tathendriyāṇāṃ dahyante doṣāḥ prāṇasya nigrahāt ..* [M. 6,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,71) brennen, von Wunden [SUŚR. 1,103,17.] von innerer Gluth verzehrt werden, — vergehen, sich abhärmen: *viṣeṇa nāgarājasya dahyamāno divāniśam* [MBH. 3,2843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2843) = [≈Вульг. 3.72.36](mbh/3.72.html#v36) = ≈крит. 03,70.33a *dahyamāna ivāgninā* [2,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1691) = [≈Вульг. 2.47.30](mbh/2.47.html#v30) = крит. — *rājā svatejobhiradahyatāntarbhogīva mantrauṣadhiruddhavīryaḥ* [RAGH. 2,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,32) *ādhibhirdahyamānasya* [MBH. 3,2754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2754) = [≈Вульг. 3.70.11](mbh/3.70.html#v11) = ≈крит. 03,68.10a *kṣutpipāsābhyāṃ ca dahyamānāntarbahiḥśarīraḥ* [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *dahyamānaḥ sa śokena* [MBH. 3,2647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2647) = [≈Вульг. 3.67.14](mbh/3.67.html#v14) = ≈крит. 03,64.14a *śokena dehe janatātimātram* [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *dehe cātīva manyunā* [14,60.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,60) *dahyamānāṃ bhṛśaṃ bālām* [MBH. 3,2731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2731) = [≈Вульг. 3.69.38](mbh/3.69.html#v38) = ≈крит. 03,67.10c [2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2913) = [≈Вульг. 3.74.24](mbh/3.74.html#v24) = ≈крит. 03,72.24a [R. 1,58,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,12) *mano hi me dūyate dahyate ca* [DRAUP. 6,4.] *amarṣavaśamāpanno dahyāmi* [MBH. 2,1690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1690) = [≈Вульг. 2.47.29](mbh/2.47.html#v29) = ≈крит. 02,43.26a *dahyantyaṅgāni me* [1,2061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2061) = [≈Вульг. 1.53.21](mbh/1.53.html#v21) = ≈крит. 01,48.21c *tena me vyākulaṃ cittaṃ hṛdayaṃ dahyatīva ca* [5048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5048) [SĀV. 5,3.] *dahye 'haṃ madhuno lehairdāvairugrairyathā giriḥ* gequält —, mitgenommen werden [BHAṬṬ. 6,82.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,82) Mit transit. Bed. verbrennen: *(tām) sahānenādya dahyema* [MBH. 4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) = [≈Вульг. 4.23.2](mbh/4.23.html#v2) = ≈крит. 04,22.2a — partic. *dagdha*
+**caus./desid./intens. — main)** — pass. verbrannt werden, verbrennen, brennen, in Flammen stehen: *tatra dahyeta pāpakṛt* [M. 8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [MBH. 4,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.798) = [≈Vulg. 4.23.1](mbh/4.23.html#v1) = ≈krit. 04,22.1a *te dahyante sma vahninā* [2,1140.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1140) = [≈Vulg. 2.31.36](mbh/2.31.html#v36) = ≈krit. 02,28.22a [3,2935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2935) = [≈Vulg. 3.75.14](mbh/3.75.html#v14) = ≈krit. 03,73.13c *dahyamānāmivārkeṇa* [2670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2670) *na ca dahyanti gacchantyaḥ sutaptairapi pāṃśubhiḥ* [13,1468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1468) = [≈Vulg. 13.19.88](mbh/13.19.html#v88) = ≈krit. 13,20.60c *bhṛgurbhṛjyamāno na dehe* [NIR. 3,17.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,17) *dahyante gṛhāḥ* [AV. 12,4,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.03) *diśaḥ* [ṢAḌV. BR. 5,9.] *tasminvane dahyamāne* [MBH. 1,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8330) = [≈Vulg. 1.227.2](mbh/1.227.html#v2) = krit. — *dahyatastasya — dāvasya* [8210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8210) = [≈Vulg. 1.223.45](mbh/1.223.html#v45) = krit. — [3,2608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2608) = [≈Vulg. 3.66.1](mbh/3.66.html#v1) = ≈krit. 03,63.1a durch Feuer entfernt werden, getilgt werden überh.: *dahyante dhmāyamānānāṃ dhātūnāṃ hi yathā malāḥ . tathendriyāṇāṃ dahyante doṣāḥ prāṇasya nigrahāt ..* [M. 6,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,71) brennen, von Wunden [SUŚR. 1,103,17.] von innerer Gluth verzehrt werden, — vergehen, sich abhärmen: *viṣeṇa nāgarājasya dahyamāno divāniśam* [MBH. 3,2843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2843) = [≈Vulg. 3.72.36](mbh/3.72.html#v36) = ≈krit. 03,70.33a *dahyamāna ivāgninā* [2,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1691) = [≈Vulg. 2.47.30](mbh/2.47.html#v30) = krit. — *rājā svatejobhiradahyatāntarbhogīva mantrauṣadhiruddhavīryaḥ* [RAGH. 2,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,32) *ādhibhirdahyamānasya* [MBH. 3,2754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2754) = [≈Vulg. 3.70.11](mbh/3.70.html#v11) = ≈krit. 03,68.10a *kṣutpipāsābhyāṃ ca dahyamānāntarbahiḥśarīraḥ* [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *dahyamānaḥ sa śokena* [MBH. 3,2647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2647) = [≈Vulg. 3.67.14](mbh/3.67.html#v14) = ≈krit. 03,64.14a *śokena dehe janatātimātram* [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *dehe cātīva manyunā* [14,60.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,60) *dahyamānāṃ bhṛśaṃ bālām* [MBH. 3,2731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2731) = [≈Vulg. 3.69.38](mbh/3.69.html#v38) = ≈krit. 03,67.10c [2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2913) = [≈Vulg. 3.74.24](mbh/3.74.html#v24) = ≈krit. 03,72.24a [R. 1,58,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,12) *mano hi me dūyate dahyate ca* [DRAUP. 6,4.] *amarṣavaśamāpanno dahyāmi* [MBH. 2,1690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1690) = [≈Vulg. 2.47.29](mbh/2.47.html#v29) = ≈krit. 02,43.26a *dahyantyaṅgāni me* [1,2061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2061) = [≈Vulg. 1.53.21](mbh/1.53.html#v21) = ≈krit. 01,48.21c *tena me vyākulaṃ cittaṃ hṛdayaṃ dahyatīva ca* [5048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5048) [SĀV. 5,3.] *dahye 'haṃ madhuno lehairdāvairugrairyathā giriḥ* gequält —, mitgenommen werden [BHAṬṬ. 6,82.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,82) Mit transit. Bed. verbrennen: *(tām) sahānenādya dahyema* [MBH. 4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) = [≈Vulg. 4.23.2](mbh/4.23.html#v2) = ≈krit. 04,22.2a — partic. *dagdha*
 
 - **RU:** — pass. быть сожженным, гореть, пылать, стоять в пламени: *tatra dahyeta pāpakṛt* [M. 8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [MBH. 4,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.798) = [≈Вульг. 4.23.1](mbh/4.23.html#v1) = ≈крит. 04,22.1a *te dahyante sma vahninā* [2,1140.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1140) = [≈Вульг. 2.31.36](mbh/2.31.html#v36) = ≈крит. 02,28.22a [3,2935.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2935) = [≈Вульг. 3.75.14](mbh/3.75.html#v14) = ≈крит. 03,73.13c *dahyamānāmivārkeṇa* [2670.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2670) *na ca dahyanti gacchantyaḥ sutaptairapi pāṃśubhiḥ* [13,1468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1468) = [≈Вульг. 13.19.88](mbh/13.19.html#v88) = ≈крит. 13,20.60c *bhṛgurbhṛjyamāno na dehe* [NIR. 3,17.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?3,17) *dahyante gṛhāḥ* [AV. 12,4,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.03) *diśaḥ* [ṢAḌV. BR. 5,9.] *tasminvane dahyamāne* [MBH. 1,8330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8330) = [≈Вульг. 1.227.2](mbh/1.227.html#v2) = крит. — *dahyatastasya — dāvasya* [8210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8210) = [≈Вульг. 1.223.45](mbh/1.223.html#v45) = крит. — [3,2608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2608) = [≈Вульг. 3.66.1](mbh/3.66.html#v1) = ≈крит. 03,63.1a быть устраненным огнем, быть уничтоженным вообще: *dahyante dhmāyamānānāṃ dhātūnāṃ hi yathā malāḥ . tathendriyāṇāṃ dahyante doṣāḥ prāṇasya nigrahāt ..* [M. 6,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,71) гореть (о ранах) [SUŚR. 1,103,17.] быть снедаемым внутренним жаром, — томиться, изнывать: *viṣeṇa nāgarājasya dahyamāno divāniśam* [MBH. 3,2843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2843) = [≈Вульг. 3.72.36](mbh/3.72.html#v36) = ≈крит. 03,70.33a *dahyamāna ivāgninā* [2,1691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1691) = [≈Вульг. 2.47.30](mbh/2.47.html#v30) = крит. — *rājā svatejobhiradahyatāntarbhogīva mantrauṣadhiruddhavīryaḥ* [RAGH. 2,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,32) *ādhibhirdahyamānasya* [MBH. 3,2754.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2754) = [≈Вульг. 3.70.11](mbh/3.70.html#v11) = ≈крит. 03,68.10a *kṣutpipāsābhyāṃ ca dahyamānāntarbahiḥśarīraḥ* [BHĀG. P. 5,26,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,14) *dahyamānaḥ sa śokena* [MBH. 3,2647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2647) = [≈Вульг. 3.67.14](mbh/3.67.html#v14) = ≈крит. 03,64.14a *śokena dehe janatātimātram* [BHAṬṬ. 3,11.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,11) *dehe cātīva manyunā* [14,60.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,60) *dahyamānāṃ bhṛśaṃ bālām* [MBH. 3,2731.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2731) = [≈Вульг. 3.69.38](mbh/3.69.html#v38) = ≈крит. 03,67.10c [2913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2913) = [≈Вульг. 3.74.24](mbh/3.74.html#v24) = ≈крит. 03,72.24a [R. 1,58,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,12) *mano hi me dūyate dahyate ca* [DRAUP. 6,4.] *amarṣavaśamāpanno dahyāmi* [MBH. 2,1690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1690) = [≈Вульг. 2.47.29](mbh/2.47.html#v29) = ≈крит. 02,43.26a *dahyantyaṅgāni me* [1,2061.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2061) = [≈Вульг. 1.53.21](mbh/1.53.html#v21) = ≈крит. 01,48.21c *tena me vyākulaṃ cittaṃ hṛdayaṃ dahyatīva ca* [5048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5048) [SĀV. 5,3.] *dahye 'haṃ madhuno lehairdāvairugrairyathā giriḥ* быть измученным —, изнуренным [BHAṬṬ. 6,82.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,82) С transit. знач. сгорать: *(tām) sahānenādya dahyema* [MBH. 4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) = [≈Вульг. 4.23.2](mbh/4.23.html#v2) = ≈крит. 04,22.2a — partic. *dagdha*
   <sub>attested</sub>
 
-**1)** 1) verbrannt [AK. 3,2,48.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,48) [H. 1486.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1486) [MED. dh. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,7) [AV. 18,2,34.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.34) [KĀTY. ŚR. 1,10,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) [25,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,19) [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) = [≈Вульг. 3.63.39](mbh/3.63.html#v39) = ≈крит. 03,60.38c [HIḌ. 1,6. 43.] [PAÑCAT. 98,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,1) [BHĀG. P. 5,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,4) angebrannt (von Speisen): *pattrāṇām* (lies: *pattriṇām) āmiṣaṃ parṇam . gorvarjyamāmiṣaṃ kṣīraṃ phale jambīramāmiṣam . āmiṣaṃ raktaśākaṃ ca sarvaṃ ca dagdhamāmiṣam* [KARMALOCANA] im [ŚKDR.] Uneig. in Gluth versetzt, verzehrt, gemartert, gequält: *priyāviyogānaladagdhamānasa* [ṚT. 1,10.] *vyādhidagdhāntara* [RĀJA-TAR. 6,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,104) *dagdhajaṭhara* ([BHARTṚ. 3,22](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,22)), *dagdhodara* ([HIT. I,62](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,62)) ein vom Feuer der Verdauungskraft (vgl. *jaṭharāgni, jāṭharo 'gniḥ*) verbrannter d. i. hungriger Magen.
+**1)** 1) verbrannt [AK. 3,2,48.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,48) [H. 1486.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1486) [MED. dh. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,7) [AV. 18,2,34.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.34) [KĀTY. ŚR. 1,10,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) [25,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,19) [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) = [≈Vulg. 3.63.39](mbh/3.63.html#v39) = ≈krit. 03,60.38c [HIḌ. 1,6. 43.] [PAÑCAT. 98,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,1) [BHĀG. P. 5,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,4) angebrannt (von Speisen): *pattrāṇām* (lies: *pattriṇām) āmiṣaṃ parṇam . gorvarjyamāmiṣaṃ kṣīraṃ phale jambīramāmiṣam . āmiṣaṃ raktaśākaṃ ca sarvaṃ ca dagdhamāmiṣam* [KARMALOCANA] im [ŚKDR.] Uneig. in Gluth versetzt, verzehrt, gemartert, gequält: *priyāviyogānaladagdhamānasa* [ṚT. 1,10.] *vyādhidagdhāntara* [RĀJA-TAR. 6,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,104) *dagdhajaṭhara* ([BHARTṚ. 3,22](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,22)), *dagdhodara* ([HIT. I,62](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,62)) ein vom Feuer der Verdauungskraft (vgl. *jaṭharāgni, jāṭharo 'gniḥ*) verbrannter d. i. hungriger Magen.
 
 - **RU:** 1) «сожженный» [AK. 3,2,48.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,48) [H. 1486.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1486) [MED. dh. 7.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,7) [AV. 18,2,34.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.34) [KĀTY. ŚR. 1,10,13.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,10,13) [25,8,19.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,19) [M. 8,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,189) [MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) = [≈Вульг. 3.63.39](mbh/3.63.html#v39) = ≈крит. 03,60.38c [HIḌ. 1,6. 43.] [PAÑCAT. 98,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?98,1) [BHĀG. P. 5,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,4) «подгоревший» (о кушаньях): *pattrāṇām* (читай: *pattriṇām) āmiṣaṃ parṇam . gorvarjyamāmiṣaṃ kṣīraṃ phale jambīramāmiṣam . āmiṣaṃ raktaśākaṃ ca sarvaṃ ca dagdhamāmiṣam* [KARMALOCANA] в [ŚKDR.] неточно «приведенный в жар, снедаемый, измученный, истерзанный»: *priyāviyogānaladagdhamānasa* [ṚT. 1,10.] *vyādhidagdhāntara* [RĀJA-TAR. 6,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,104) *dagdhajaṭhara* ([BHARTṚ. 3,22](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,22)), *dagdhodara* ([HIT. I,62](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,62)) «сожженный огнем пищеварительной силы» (ср. *jaṭharāgni, jāṭharo 'gniḥ*) т.е. «голодный желудок»
   <sub>attested</sub>
@@ -258,7 +258,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 **caus. 1)** — caus. *dāhayati* verbrennen lassen —, heissen: *strīm — pūrvamāriṇīm . dāhayedagnihotreṇa yajñapātraiśca*
 [M. 5,167.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,167) *pumāṃsaṃ dāhayetpāpaṃ śayane tapta āyase*
-[8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [YĀJÑ. 1,89.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,89) [MBH. 1,588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.588) = [≈Вульг. 1.2.359](mbh/1.2.html#v359) = ≈крит. 01,2.225a [5832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5832) = [≈Вульг. 1.146.16](mbh/1.146.html#v16) = ≈крит. 01,134.15a [8309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8309) = [≈Вульг. 1.226.3](mbh/1.226.html#v3) = ≈крит. 01,217.3c [5,2418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2418) = [≈Вульг. 5.62.8](mbh/5.62.html#v8) = ≈крит. 05,61.8a [3439.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3439) = [≈Вульг. 5.96.37](mbh/5.96.html#v37) = ≈крит. 05,94.33c [11,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.798) = [≈Вульг. 11.26.43](mbh/11.26.html#v43) = ≈крит. 11,26.43a [HARIV. 9798.](https://sanskrit-lexicon-scans.github.io/hariv?9798) [KATHĀS. 4,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,107) braten lassen: *vyādhairmāṃsānyadīdahan*
+[8,372.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,372) [YĀJÑ. 1,89.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,89) [MBH. 1,588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.588) = [≈Vulg. 1.2.359](mbh/1.2.html#v359) = ≈krit. 01,2.225a [5832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5832) = [≈Vulg. 1.146.16](mbh/1.146.html#v16) = ≈krit. 01,134.15a [8309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8309) = [≈Vulg. 1.226.3](mbh/1.226.html#v3) = ≈krit. 01,217.3c [5,2418.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2418) = [≈Vulg. 5.62.8](mbh/5.62.html#v8) = ≈krit. 05,61.8a [3439.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3439) = [≈Vulg. 5.96.37](mbh/5.96.html#v37) = ≈krit. 05,94.33c [11,798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.798) = [≈Vulg. 11.26.43](mbh/11.26.html#v43) = ≈krit. 11,26.43a [HARIV. 9798.](https://sanskrit-lexicon-scans.github.io/hariv?9798) [KATHĀS. 4,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,107) braten lassen: *vyādhairmāṃsānyadīdahan*
 [HARIV. 15523.](https://sanskrit-lexicon-scans.github.io/hariv?15523)
 
 - **RU:** — caus. *dāhayati* давать сжечь —, велеть сжечь: *strīm — pūrvamāriṇīm . dāhayedagnihotreṇa yajñapātraiśca*
@@ -273,8 +273,8 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 
 **desid. 1)** — desid. *didhakṣati* im Begriff stehen zu verbrennen, zu Grunde zu richten, zu vernichten: *agne mā tvaṃ pravardhiṣṭhāḥ kvacinno na didhakṣasi*
-[MBH. 1,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1244) = [≈Вульг. 1.25.1](mbh/1.25.html#v1) = ≈крит. 01,21.1a *didhakṣanniva*
-[8189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8189) = [≈Вульг. 1.223.24](mbh/1.223.html#v24) = крит. — [8325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8325) = [≈Вульг. 1.226.19](mbh/1.226.html#v19) = ≈крит. 01,217.19a [2,2.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2) = [≈Вульг. 2.1.6](mbh/2.1.html#v6) = ≈крит. 02,1.5a [3,468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.468) = [≈Вульг. 3.12.8](mbh/3.12.html#v8) = ≈крит. 03,13.7a [4,716.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.716) = [≈Вульг. 4.22.23](mbh/4.22.html#v23) = ≈крит. 04,21.23c [818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.818) = [≈Вульг. 4.23.21](mbh/4.23.html#v21) = крит. — [DAŚ. 1,35.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,35) [R. 2,97,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,17)
+[MBH. 1,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1244) = [≈Vulg. 1.25.1](mbh/1.25.html#v1) = ≈krit. 01,21.1a *didhakṣanniva*
+[8189.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8189) = [≈Vulg. 1.223.24](mbh/1.223.html#v24) = krit. — [8325.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8325) = [≈Vulg. 1.226.19](mbh/1.226.html#v19) = ≈krit. 01,217.19a [2,2.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2) = [≈Vulg. 2.1.6](mbh/2.1.html#v6) = ≈krit. 02,1.5a [3,468.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.468) = [≈Vulg. 3.12.8](mbh/3.12.html#v8) = ≈krit. 03,13.7a [4,716.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.716) = [≈Vulg. 4.22.23](mbh/4.22.html#v23) = ≈krit. 04,21.23c [818.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.818) = [≈Vulg. 4.23.21](mbh/4.23.html#v21) = krit. — [DAŚ. 1,35.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,35) [R. 2,97,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,17)
 
 *(tvām) didhakṣamāṇāṃ hṛdayaṃ sabandhanam*
 [12,106.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,106)
@@ -344,7 +344,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 **1)** 1) übermässig brennen: *atidagdha*
 [SUŚR. 2,47,19.] es Jmd überaus heiss machen: *eṣa cāti raṇe bhīṣmo dahate vai mahācamūm*
-[MBH. 6,5238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5238) = [≈Вульг. 6.112.37](mbh/6.112.html#v37) = ≈крит. 06,108.37a
+[MBH. 6,5238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5238) = [≈Vulg. 6.112.37](mbh/6.112.html#v37) = ≈krit. 06,108.37a
 
 - **RU:** 1) чрезмерно гореть: *atidagdha*
 [SUŚR. 2,47,19.] делать кому-л. чрезвычайно жарко: *eṣa cāti raṇe bhīṣmo dahate vai mahācamūm*
@@ -369,7 +369,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
   <sub>attested</sub>
 
 **1)** 1) hinterher verbrennen: *dagdhamevānudahati* (wohl *kālaḥ* aus dem Vorhergehenden zu ergänzen, da *anudahati* wohl kaum = *anudahyeta* sein kann) *hatamevānuhanyate . naśyate naṣṭamevāgre*
-[MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Вульг. 12.227.9](mbh/12.227.html#v9) = ≈крит. 12,220.9a
+[MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Vulg. 12.227.9](mbh/12.227.html#v9) = ≈krit. 12,220.9a
 
 - **RU:** 1) сжигать вслед, вдогонку: *dagdhamevānudahati* (по-видимому, следует восполнить *kālaḥ* из предыдущего, так как *anudahati* едва ли может быть = *anudahyeta*) *hatamevānuhanyate . naśyate naṣṭamevāgre*
 [MBH. 12,8107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8107) = [≈Вульг. 12.227.9](mbh/12.227.html#v9) = ≈крит. 12,220.9a
@@ -392,7 +392,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 
 **1)** — *apa* abbrennen, wegbrennen: *vījānyagnyapadagdhāni naro hanti yathā punaḥ*
-[MBH. 12,7705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7705) = [≈Вульг. 12.215.18](mbh/12.215.html#v18) = ≈крит. 12,208.17a durch Gluth vertreiben: *viśvā agne 'pa daḥārātīḥ*
+[MBH. 12,7705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7705) = [≈Vulg. 12.215.18](mbh/12.215.html#v18) = ≈krit. 12,208.17a durch Gluth vertreiben: *viśvā agne 'pa daḥārātīḥ*
 [ṚV. 7,1,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.07)
 
 - **RU:** — *apa* сжигать, выжигать (прочь): *vījānyagnyapadagdhāni naro hanti yathā punaḥ*
@@ -481,7 +481,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [GOBH. 3,7,4.] *upadagdhena haviṣā*
 [ŚAT. BR. 11,4,4,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,4,2) *bhūmerupadagdhaṃ samutkhāya*
 [KAUŚ. 69.] Feuer anlegen an (acc.): *suptānupādhākṣīdbālakān*
-[MBH. 3,546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.546) = [≈Вульг. 3.12.86](mbh/3.12.html#v86) = ≈крит. 03,13.78a
+[MBH. 3,546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.546) = [≈Vulg. 3.12.86](mbh/3.12.html#v86) = ≈krit. 03,13.78a
 
 - **RU:** — *upa* поджигать: *upa ha taddahedyadudantaṃ kuryādaprajajñi vai reta upadagdham*
 [ŚAT. BR. 2,3,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,14) *yavamuṣṭiṃ bhṛjjatyanupadahan*
@@ -499,7 +499,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 **1)** — *ni* niederbrennen, durch Feuer verzehren: *rakṣo ni dhakṣi*
 [ṚV. 6,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.018.html#rv06.018.10) *ni māyinastapuṣā rakṣaso daha*
 [8,23,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.023.html#rv08.023.14) [1,99,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.099.html#rv01.099.01) [KAUŚ. 52. 83.] pass.: *pāṇḍupāvakamāsādya nyadahyanta narādhipāḥ*
-[MBH. 1,4454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4454) = [≈Вульг. 1.113.30](mbh/1.113.html#v30) = ≈крит. 01,105.13c
+[MBH. 1,4454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4454) = [≈Vulg. 1.113.30](mbh/1.113.html#v30) = ≈krit. 01,105.13c
 
 - **RU:** — *ni* сжигать дотла, испепелять огнем: *rakṣo ni dhakṣi*
 [ṚV. 6,18,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.018.html#rv06.018.10) *ni māyinastapuṣā rakṣaso daha*
@@ -527,20 +527,20 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [12,4,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,3,4) — [KAUŚ. 90. 131.] *yathaidhastejasā vahniḥ prāptaṃ nirdahati kṣaṇāt*
 [M. 11,246.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,246) *(agnivarṇayā surayā) kāye nirdagdhe*
 [90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,90) [BHĀG. P. 5,24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [6,4,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,6) *na coṣarāṃ na nirdagdhāṃ mahīṃ dadyāt*
-[MBH. 13,3341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3341) = [≈Вульг. 13.66.33](mbh/13.66.html#v33) = ≈крит. 13,65.31c *dhūmanirdagdhakūrca*
+[MBH. 13,3341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3341) = [≈Vulg. 13.66.33](mbh/13.66.html#v33) = ≈krit. 13,65.31c *dhūmanirdagdhakūrca*
 [RĀJA-TAR. 5,461.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,461) *nirdaheta ca yatkṛtsnaṃ trailokyam*
-[MBH. 13,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.856) = [≈Вульг. 13.14.265](mbh/13.14.html#v265) = ≈крит. 13,14.131c *kālāgnimiva bībhatsuṃ nirdahantamiva prajāḥ*
-[4,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1702) = [≈Вульг. 4.55.6](mbh/4.55.html#v6) = крит. — [1,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.241) = [≈Вульг. 1.2.12](mbh/1.2.html#v12) = ≈крит. 01,2.8a *bhittvā hṛdi śarāḥ pañca nirdahantīva me tanum*
+[MBH. 13,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.856) = [≈Vulg. 13.14.265](mbh/13.14.html#v265) = ≈krit. 13,14.131c *kālāgnimiva bībhatsuṃ nirdahantamiva prajāḥ*
+[4,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1702) = [≈Vulg. 4.55.6](mbh/4.55.html#v6) = krit. — [1,241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.241) = [≈Vulg. 1.2.12](mbh/1.2.html#v12) = ≈krit. 01,2.8a *bhittvā hṛdi śarāḥ pañca nirdahantīva me tanum*
 [HARIV. 4607.](https://sanskrit-lexicon-scans.github.io/hariv?4607)
 [R. 1,54,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,22) [55,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,21) [2,61,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,21)
-[MBH. 4,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1162) = [≈Вульг. 4.35.15](mbh/4.35.html#v15) = ≈крит. 04,33.15c *nāhaṃ janaṃ nirdaheyaṃ dṛṣṭvā ghoreṇa cakṣuṣā*
-[2,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2631) = [≈Вульг. 2.80.12](mbh/2.80.html#v12) = ≈крит. 02,71.11a [DAŚAK.] in [BENF. Chr. 186,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *vaidehīṃ rāvaṇaḥ kruddho nirdahanniva rākṣasaḥ*
+[MBH. 4,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1162) = [≈Vulg. 4.35.15](mbh/4.35.html#v15) = ≈krit. 04,33.15c *nāhaṃ janaṃ nirdaheyaṃ dṛṣṭvā ghoreṇa cakṣuṣā*
+[2,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2631) = [≈Vulg. 2.80.12](mbh/2.80.html#v12) = ≈krit. 02,71.11a [DAŚAK.] in [BENF. Chr. 186,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *vaidehīṃ rāvaṇaḥ kruddho nirdahanniva rākṣasaḥ*
 [R. 3,55,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,26) [5,33,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,33,37)
 [PRAB. 82,10.]
 [VID. 145.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?145) *(yasya cittam) na nirdahati kopakṛtānuśayaḥ*
 [BHARTṚ. 2,76.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,76) *etattrayaṃ hi puruṣaṃ nirdahedavamāninam*
 [M. 4,136.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,136) *(devāḥ) avajñātāvadhūtāśca nirdahantyadhamānnarān*
-[MBH. 13,4713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4713) = [≈Вульг. 13.98.37](mbh/13.98.html#v37) = ≈крит. 13,101.36c
+[MBH. 13,4713.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4713) = [≈Vulg. 13.98.37](mbh/13.98.html#v37) = ≈krit. 13,101.36c
 [R. 1,55,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,6) *durhṛdaḥ sādhu nirdahan . suhṛdastarpayankāmaiḥ*
 [2,106,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,26) *(enaḥ) tatsarvaṃ nirdahantāśu tapasaiva tapodhanāḥ*
 [M. 11,241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,241)
@@ -603,13 +603,13 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 
 **1)** — *vinis* verbrennen, durch Feuer verzehren, vollständig vernichten: *jagadvinirdahedetat* (*astram*)
-[MBH. 1,5307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5307) = [≈Вульг. 1.132.56](mbh/1.132.html#v56) = ≈крит. 01,123.35a
+[MBH. 1,5307.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5307) = [≈Vulg. 1.132.56](mbh/1.132.html#v56) = ≈krit. 01,123.35a
 [ARJ. 3,52.] *eṣa senāḥ — agnivatsamare tāta cariṣyati vinirdahan*
-[MBH. 5,5769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5769) = [≈Вульг. 5.168.7](mbh/5.168.html#v7) = ≈крит. 05,165.6c *cakrānalavinirdagdha*
+[MBH. 5,5769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5769) = [≈Vulg. 5.168.7](mbh/5.168.html#v7) = ≈krit. 05,165.6c *cakrānalavinirdagdha*
 [HARIV. 5935.](https://sanskrit-lexicon-scans.github.io/hariv?5935)
 [R. GORR. 1,29,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,29,11) [3,35,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,93) *(enam) matprabhāvavinirdagdhaṃ pataṃgamiva vahninā*
-[MBH. 2,1492.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1492) = [≈Вульг. 2.42.17](mbh/2.42.html#v17) = ≈крит. 02,39.17a *brahmaśāpavinirdagdha*
-[16,279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.279) = [≈Вульг. 16.8.27](mbh/16.8.html#v27) = ≈крит. 16,9.26c [3,14829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14829) = [≈Вульг. 3.239.10](mbh/3.239.html#v10) = ≈крит. 03,228.10a [MĀRK. P. 39,61.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?39,61) *tayājñānaṃ vinirdahan*
+[MBH. 2,1492.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1492) = [≈Vulg. 2.42.17](mbh/2.42.html#v17) = ≈krit. 02,39.17a *brahmaśāpavinirdagdha*
+[16,279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.279) = [≈Vulg. 16.8.27](mbh/16.8.html#v27) = ≈krit. 16,9.26c [3,14829.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14829) = [≈Vulg. 3.239.10](mbh/3.239.html#v10) = ≈krit. 03,228.10a [MĀRK. P. 39,61.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?39,61) *tayājñānaṃ vinirdahan*
 [BHĀG. P. 9,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,7,24)
 
 - **RU:** — *vinis* сжигать, испепелять огнем, уничтожать полностью: *jagadvinirdahedetat* (*astram*)
@@ -639,7 +639,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [BHĀG. P. 2,7,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,29) *gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate* brennt, glüht
 [BHAG. 1,30.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,30) *diśi diśi paridagdhā bhūmayaḥ pāvakena*
 [ṚT. 1,24.] *saṃhārakāle paridagdhakāyā brahmāṇamāyānti sadā prajā hi*
-[MBH. 12,10076.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10076) = [≈Вульг. 12.283.27](mbh/12.283.html#v27) = ≈крит. 12,274.26a
+[MBH. 12,10076.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10076) = [≈Vulg. 12.283.27](mbh/12.283.html#v27) = ≈krit. 12,274.26a
 [HARIV. 548.](https://sanskrit-lexicon-scans.github.io/hariv?548)
 
 - **RU:** — *pari* обжигать вокруг, охватывать жаром, сжигать: *āgneyasvabhāvātparidahati kaṇṭhamuro hṛdayaṃ ceti*
@@ -663,7 +663,7 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 
 
 **1)** — *saṃpari* pass. verbrennen, vor Gluth vergehen: *gatena tenāsmi kṛto vicetā gātraṃ ca me saṃparidahyatīva*
-[MBH. 3,10067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10067) = [≈Вульг. 3.111.10](mbh/3.111.html#v10) = ≈крит. 03,111.10c
+[MBH. 3,10067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10067) = [≈Vulg. 3.111.10](mbh/3.111.html#v10) = ≈krit. 03,111.10c
 
 - **RU:** — *saṃpari* pass. сжигать, погибать от жара: *gatena tenāsmi kṛto vicetā gātraṃ ca me saṃparidahyatīva*
 [MBH. 3,10067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10067) = [≈Вульг. 3.111.10](mbh/3.111.html#v10) = ≈крит. 03,111.10c
@@ -684,10 +684,10 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
 [ŚAṂK.] Vertauschung der Personen; viell. *˚kṣīditi* zu lesen)
 [CHĀND. UP. 4,1,2.] *prādahan śaraṇānyanye prajānāṃ jvalitolmukaiḥ*
 [BHĀG. P. 7,2,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,15) *na pāvakastvāṃ pradahiṣyati*
-[MBH. 1,2120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2120) [8362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8362) = [≈Вульг. 1.227.34](mbh/1.227.html#v34) = ≈крит. 01,218.33a *pāṇḍavāgnim — dīptaṃ pradahantamivāhitān*
-[4,1520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1520) = [≈Вульг. 4.48.15](mbh/4.48.html#v15) = ≈крит. 04,43.14a *bhīmasenadavāgnestu mama putrāṃstṛṇopamān . pradhakṣyataḥ* (so st. *pradhakṣataḥ* zu lesen)
-[7,5277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5277) = [≈Вульг. 7.129.13](mbh/7.129.html#v13) = крит. — [1,1762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1762) = [≈Вульг. 1.42.38](mbh/1.42.html#v38) = ≈крит. 01,38.36a [5,678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.678) = [≈Вульг. 5.22.34](mbh/5.22.html#v34) = ≈крит. 05,22.32c [7,6092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6092) = [≈Вульг. 7.145.38](mbh/7.145.html#v38) = ≈крит. 07,120.35c [16,274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.274) = [≈Вульг. 16.8.22](mbh/16.8.html#v22) = ≈крит. 16,9.22a *sarvāṇi mainyāni ca vāsudevaḥ pradhakṣyate sāyakavahnijālaiḥ*
-[3,10274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10274) = [≈Вульг. 3.117.15](mbh/3.117.html#v15) = ≈крит. 03,117.15a — [HARIV. 11601.](https://sanskrit-lexicon-scans.github.io/hariv?11601) [13888.](https://sanskrit-lexicon-scans.github.io/hariv?13888) *māṃ śokāgniḥ — pradhakṣyati*
+[MBH. 1,2120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2120) [8362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8362) = [≈Vulg. 1.227.34](mbh/1.227.html#v34) = ≈krit. 01,218.33a *pāṇḍavāgnim — dīptaṃ pradahantamivāhitān*
+[4,1520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1520) = [≈Vulg. 4.48.15](mbh/4.48.html#v15) = ≈krit. 04,43.14a *bhīmasenadavāgnestu mama putrāṃstṛṇopamān . pradhakṣyataḥ* (so st. *pradhakṣataḥ* zu lesen)
+[7,5277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5277) = [≈Vulg. 7.129.13](mbh/7.129.html#v13) = krit. — [1,1762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1762) = [≈Vulg. 1.42.38](mbh/1.42.html#v38) = ≈krit. 01,38.36a [5,678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.678) = [≈Vulg. 5.22.34](mbh/5.22.html#v34) = ≈krit. 05,22.32c [7,6092.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6092) = [≈Vulg. 7.145.38](mbh/7.145.html#v38) = ≈krit. 07,120.35c [16,274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.274) = [≈Vulg. 16.8.22](mbh/16.8.html#v22) = ≈krit. 16,9.22a *sarvāṇi mainyāni ca vāsudevaḥ pradhakṣyate sāyakavahnijālaiḥ*
+[3,10274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10274) = [≈Vulg. 3.117.15](mbh/3.117.html#v15) = ≈krit. 03,117.15a — [HARIV. 11601.](https://sanskrit-lexicon-scans.github.io/hariv?11601) [13888.](https://sanskrit-lexicon-scans.github.io/hariv?13888) *māṃ śokāgniḥ — pradhakṣyati*
 [R. 2,24,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,8) [94,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,15)
 [R. GORR. 2,25,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,25,6) *tatkulaṃ pradahati*
 [BHĀG. P. 1,7,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,48) [31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,31) [4,4,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,2) [9,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,12) *keliḥ pradahati majjāṃ* (so zu lesen) *śṛṅgāro 'sthīni*
@@ -712,15 +712,15 @@ _PWG article — 31 sub-card(s), 139 sense(s) · RU 139/139 · EN 0/139_
   <sub>attested</sub>
 
 **2)** [PAÑCAT. I,191.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,191) — pass. in Flammen gerathen, brennen, verbrennen: *vṛkṣasyeva pradahyataḥ*
-[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) = [≈Вульг. 2.71.15](mbh/2.71.html#v15) = ≈крит. 02,63.15a *vastraṃ pradahyate*
+[MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) = [≈Vulg. 2.71.15](mbh/2.71.html#v15) = ≈krit. 02,63.15a *vastraṃ pradahyate*
 [VARĀH. BṚH. S. 72,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,6) *tasyāḥ kṛpaṇacakṣurbhyāṃ pradahyetāpi medinī*
-[MBH. 2,2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2689) = [≈Вульг. 2.81.18](mbh/2.81.html#v18) = ≈крит. 02,72.18a *pradagdha* verbrannt
+[MBH. 2,2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2689) = [≈Vulg. 2.81.18](mbh/2.81.html#v18) = ≈krit. 02,72.18a *pradagdha* verbrannt
 [ŚAT. BR. 11,1,6,33.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,6,33)
 [R. 3,42,53.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,53)
 [VARĀH. BṚH. S. 72,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,2) *yena pūrvaṃ pradagdhāni śatrusainyāni*
 
 vernichtet
-[MBH. 16,275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.275) = [≈Вульг. 16.8.23](mbh/16.8.html#v23) = ≈крит. 16,9.23a
+[MBH. 16,275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.275) = [≈Vulg. 16.8.23](mbh/16.8.html#v23) = ≈krit. 16,9.23a
 
 - **RU:** [PAÑCAT. I,191.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,191) — pass. загораться, гореть, сгорать: *vṛkṣasyeva pradahyataḥ*
 [MBH. 2,2394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2394) = [≈Вульг. 2.71.15](mbh/2.71.html#v15) = ≈крит. 02,63.15a *vastraṃ pradahyate*
@@ -740,8 +740,8 @@ vernichtet
 
 
 **1)** — *saṃpra* verbrennen: *na nastatra hutāśaḥ saṃpradhakṣyati*
-[MBH. 1,5796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5796) = [≈Вульг. 1.145.14](mbh/1.145.html#v14) = ≈крит. 01,133.13a [2,2256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2256) = [≈Вульг. 2.68.6](mbh/2.68.html#v6) = ≈крит. 02,61.6a vernichten: *putrapautrabadhaṃ śrutvā dhruvaṃ naḥ saṃpradhakṣyati*
-[9,3526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3526) = [≈Вульг. 9.63.22](mbh/9.63.html#v22) = ≈крит. 09,62.21c
+[MBH. 1,5796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5796) = [≈Vulg. 1.145.14](mbh/1.145.html#v14) = ≈krit. 01,133.13a [2,2256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2256) = [≈Vulg. 2.68.6](mbh/2.68.html#v6) = ≈krit. 02,61.6a vernichten: *putrapautrabadhaṃ śrutvā dhruvaṃ naḥ saṃpradhakṣyati*
+[9,3526.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3526) = [≈Vulg. 9.63.22](mbh/9.63.html#v22) = ≈krit. 09,62.21c
 
 - **RU:** — *saṃpra* сжигать: *na nastatra hutāśaḥ saṃpradhakṣyati*
 [MBH. 1,5796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5796) = [≈Вульг. 1.145.14](mbh/1.145.html#v14) = ≈крит. 01,133.13a [2,2256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2256) = [≈Вульг. 2.68.6](mbh/2.68.html#v6) = ≈крит. 02,61.6a уничтожать: *putrapautrabadhaṃ śrutvā dhruvaṃ naḥ saṃpradhakṣyati*
@@ -765,7 +765,7 @@ vernichtet
   <sub>attested</sub>
 
 **2)** [CHĀND. UP. 2,22,4.] — pass. verbrennen (intrans.): *vaiśvānaraṃ yathā prāpya pratidahyanti vai janāḥ*
-[MBH. 8,2750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2750) = [≈Вульг. 8.56.54](mbh/8.56.html#v54) = ≈крит. 08,40.56a
+[MBH. 8,2750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2750) = [≈Vulg. 8.56.54](mbh/8.56.html#v54) = ≈krit. 08,40.56a
 
 - **RU:** [CHĀND. UP. 2,22,4.] — pass. сжигать (intrans.): *vaiśvānaraṃ yathā prāpya pratidahyanti vai janāḥ*
 [MBH. 8,2750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2750) = [≈Вульг. 8.56.54](mbh/8.56.html#v54) = ≈крит. 08,40.56a
@@ -779,7 +779,7 @@ vernichtet
 **0-intro)** — *vi* ausbrennen (eine Wunde u. s. w.)
 [SUŚR. 1,100,21.] durch Brand beschädigt, anbrennen: *mainamagne vi daho mābhi śocaḥ*
 [ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) verbrennen, durch Feuer vernichten: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
-[MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) = [≈Вульг. 8.11.24](mbh/8.11.html#v24) = ≈крит. 08,7.24a — pass.
+[MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) = [≈Vulg. 8.11.24](mbh/8.11.html#v24) = ≈krit. 08,7.24a — pass.
 
 - **RU:** — *vi* выжигать (рану и т.д.)
 [SUŚR. 1,100,21.] повредить огнем, обжигать: *mainamagne vi daho mābhi śocaḥ*
@@ -803,7 +803,7 @@ vernichtet
   <sub>attested</sub>
 
 **2)** — 2) sich innerlich verzehren, sich abgrämen: *sakhyaṃ ca vāsudevena bālye gāṇḍīvadhanvanaḥ . prajānāmanurāgaṃ ca cintayāno vyadahyata*
-[MBH. 12,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.52) = [≈Вульг. 12.2.8](mbh/12.2.html#v8) = ≈крит. 12,2.8c
+[MBH. 12,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.52) = [≈Vulg. 12.2.8](mbh/12.2.html#v8) = ≈krit. 12,2.8c
 
 - **RU:** — 2) терзаться внутренне, изводить себя горем: *sakhyaṃ ca vāsudevena bālye gāṇḍīvadhanvanaḥ . prajānāmanurāgaṃ ca cintayāno vyadahyata*
 [MBH. 12,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.52) = [≈Вульг. 12.2.8](mbh/12.2.html#v8) = ≈крит. 12,2.8c
@@ -867,7 +867,7 @@ vernichtet
   <sub>attested</sub>
 
 **pp-5)** — 5) (der sich ein Mal verbrannt hat, durch Erfahrung klug geworden) klug, verständig, gewandt: *sparśaṃ vetsi vidagdhastvaṃ kāmadharmavicakṣaṇaḥ*
-[MBH. 4,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.745) = [≈Вульг. 4.22.52](mbh/4.22.html#v52) = ≈крит. 04,21.48a *˚pariṣad*
+[MBH. 4,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.745) = [≈Vulg. 4.22.52](mbh/4.22.html#v52) = ≈krit. 04,21.48a *˚pariṣad*
 [BHARTṚ. 3,42.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,42)
 [VIKR. 3,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,12) *nāvidagdhaḥ priyaṃ brūyāt*
 [PAÑCAT. I,180.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,180) [RĀJA-TAR. 5,79.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,79) *neyaṃ gaṇanā vidagdhasya puruṣasya*
@@ -923,7 +923,7 @@ vernichtet
 [RAGH. ed. Calc. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?14,56) — caus. verbrennen lassen: *ghṛtāvasiktaṃ *
 
 * (pretaṃ) rājānam — vidhinā samadāhayat*
-[MBH. 1,4954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4954) = [≈Вульг. 1.126.31](mbh/1.126.html#v31) = ≈крит. 01,117.29a [11,793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.793) = [≈Вульг. 11.26.38](mbh/11.26.html#v38) = ≈крит. 11,26.38c
+[MBH. 1,4954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4954) = [≈Vulg. 1.126.31](mbh/1.126.html#v31) = ≈krit. 01,117.29a [11,793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.793) = [≈Vulg. 11.26.38](mbh/11.26.html#v38) = ≈krit. 11,26.38c
 
 - **RU:** — *sam* сжигаться вместе, сгорать дотла: *śocantaḥ saṃdahanto avratān*
 [ṚV. 9,73,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.073.html#rv09.073.05) *druho dahāmi saṃ mahīranindrāḥ*
@@ -992,7 +992,7 @@ vernichtet
 - **RU:** — c〉 жечь, отсюда преим. приводить в сильный жар —, в возбуждение, волновать (*śrotraṃ putravṛttāntena* [DAŚAK. 78,9. 10]), грызть сердце.
   <sub>attested</sub>
 
-**2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Вульг. 4.1.24](mbh/4.1.html#v24) = ≈крит. 04,1.20c), verbrennen, brennen (auch von Wunden), in Flammen stehen.
+**2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Vulg. 4.1.24](mbh/4.1.html#v24) = ≈krit. 04,1.20c), verbrennen, brennen (auch von Wunden), in Flammen stehen.
 
 - **RU:** — 2〉 Pass. *dahyate* (в эпосе и [MĀN. GṚHY. 2,15] также *˚ti*) быть сжигаемым ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Вульг. 4.1.24](mbh/4.1.html#v24) = ≈крит. 04,1.20c), сгорать, гореть (также о ранах), стоять в пламени.
   <sub>attested</sub>
@@ -1113,7 +1113,7 @@ vernichtet
 - **RU:** — 2〉 вспыхивать, воспламеняться (intrans.) [ṚV. 2,1,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.10).
   <sub>attested</sub>
 
-**3)** — 3〉 hinterher verbrennen (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Вульг. 12.8.23](mbh/12.8.html#v23) = ≈крит. 12,8.23a.
+**3)** — 3〉 hinterher verbrennen (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Vulg. 12.8.23](mbh/12.8.html#v23) = ≈krit. 12,8.23a.
 — Mit *apa*
 
 - **RU:** — 3〉 сгорать вслед, догорать (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Вульг. 12.8.23](mbh/12.8.html#v23) = ≈крит. 12,8.23a.

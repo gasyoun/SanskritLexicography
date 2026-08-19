@@ -6,7 +6,7 @@
 **0-intro)** — *vi* ausbrennen (eine Wunde u. s. w.)
 [SUŚR. 1,100,21.] durch Brand beschädigt, anbrennen: *mainamagne vi daho mābhi śocaḥ*
 [ṚV. 10,16,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.01) [7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.07) verbrennen, durch Feuer vernichten: *śaranmadhyaṃdinābhārkatejasā vyadahadripūn*
-[MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) = [≈Вульг. 8.11.24](mbh/8.11.html#v24) = ≈крит. 08,7.24a — pass.
+[MBH. 8,464.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.464) = [≈Vulg. 8.11.24](mbh/8.11.html#v24) = ≈krit. 08,7.24a — pass.
 
 - **RU:** — *vi* выжигать (рану и т.д.)
 [SUŚR. 1,100,21.] повредить огнем, обжигать: *mainamagne vi daho mābhi śocaḥ*
@@ -30,7 +30,7 @@
   <sub>attested</sub>
 
 **2)** — 2) sich innerlich verzehren, sich abgrämen: *sakhyaṃ ca vāsudevena bālye gāṇḍīvadhanvanaḥ . prajānāmanurāgaṃ ca cintayāno vyadahyata*
-[MBH. 12,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.52) = [≈Вульг. 12.2.8](mbh/12.2.html#v8) = ≈крит. 12,2.8c
+[MBH. 12,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.52) = [≈Vulg. 12.2.8](mbh/12.2.html#v8) = ≈krit. 12,2.8c
 
 - **RU:** — 2) терзаться внутренне, изводить себя горем: *sakhyaṃ ca vāsudevena bālye gāṇḍīvadhanvanaḥ . prajānāmanurāgaṃ ca cintayāno vyadahyata*
 [MBH. 12,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.52) = [≈Вульг. 12.2.8](mbh/12.2.html#v8) = ≈крит. 12,2.8c
@@ -94,7 +94,7 @@
   <sub>attested</sub>
 
 **pp-5)** — 5) (der sich ein Mal verbrannt hat, durch Erfahrung klug geworden) klug, verständig, gewandt: *sparśaṃ vetsi vidagdhastvaṃ kāmadharmavicakṣaṇaḥ*
-[MBH. 4,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.745) = [≈Вульг. 4.22.52](mbh/4.22.html#v52) = ≈крит. 04,21.48a *˚pariṣad*
+[MBH. 4,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.745) = [≈Vulg. 4.22.52](mbh/4.22.html#v52) = ≈krit. 04,21.48a *˚pariṣad*
 [BHARTṚ. 3,42.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,42)
 [VIKR. 3,12.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?3,12) *nāvidagdhaḥ priyaṃ brūyāt*
 [PAÑCAT. I,180.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,180) [RĀJA-TAR. 5,79.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,79) *neyaṃ gaṇanā vidagdhasya puruṣasya*

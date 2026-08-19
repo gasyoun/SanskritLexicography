@@ -192,7 +192,7 @@
 — 1〉 насаживать, нанизывать.
   <sub>attested</sub>
 
-**Mit {#aBini#} — 2)** — 2〉 schlagen —, einhauen auf (Acc.) *abhinighnant* Partic. mit passiver Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](mbh/4.2.html#v18) = ≈крит. 04,2.15a, v. l. Vgl. u. *ava* 3〉.
+**Mit {#aBini#} — 2)** — 2〉 schlagen —, einhauen auf (Acc.) *abhinighnant* Partic. mit passiver Bed. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Vulg. 4.2.18](mbh/4.2.html#v18) = ≈krit. 04,2.15a, v. l. Vgl. u. *ava* 3〉.
 
 - **RU:** — 2〉 бить —, рубить по (Acc.) *abhinighnant* Partic. с пассивным знач. [MBH. 4,45,30](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,45,30) = [≈Вульг. 4.2.18](mbh/4.2.html#v18) = ≈крит. 04,2.15a, v. l. ср. u. *ava* 3〉.
   <sub>attested</sub>
@@ -320,7 +320,7 @@
 - **RU:** — 2〉 убивать.
   <sub>attested</sub>
 
-**Mit {#saMni#} — 3)** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) = [≈Вульг. 1.3.165](mbh/1.3.html#v165) = ≈крит. 01,3.96A fehlerhaft für *saṃnihita*.
+**Mit {#saMni#} — 3)** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) = [≈Vulg. 1.3.165](mbh/1.3.html#v165) = ≈krit. 01,3.96A fehlerhaft für *saṃnihita*.
 
 - **RU:** — 3〉 *sāṃnihata* [MBH. 1,830](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.830) = [≈Вульг. 1.3.165](mbh/1.3.html#v165) = ≈крит. 01,3.96A ошибочно вм. *saṃnihita*.
   <sub>attested</sub>

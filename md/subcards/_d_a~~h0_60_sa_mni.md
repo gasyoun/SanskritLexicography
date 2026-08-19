@@ -10,11 +10,11 @@
 [TBR. 1,3,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,1,1)
 [ŚAT. BR. 3,4,2,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,15) *tena* (*ādityaḥ*) *sarvānprāṇānraśmiṣu saṃnidhatte*
 [PRAŚNOP. 1,6.] *tato vittaṃ vividhaṃ saṃnidhāya yathotsāhaṃ kārayitvā ca kośam* aufspeichern, ansammeln
-[MBH. 14,290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.290) = [≈Вульг. 14.10.35](mbh/14.10.html#v35) = ≈крит. 14,10.34a *megheṣūrdhvaṃ saṃnidhatte prāṇānāṃ pavanaḥ patiḥ . tacca meghagataṃ vāri śakro varṣati*
-[13,3235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3235) = [≈Вульг. 13.63.36](mbh/13.63.html#v36) = ≈крит. 13,62.36c *saṃnidadhyāt*
+[MBH. 14,290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.290) = [≈Vulg. 14.10.35](mbh/14.10.html#v35) = ≈krit. 14,10.34a *megheṣūrdhvaṃ saṃnidhatte prāṇānāṃ pavanaḥ patiḥ . tacca meghagataṃ vāri śakro varṣati*
+[13,3235.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3235) = [≈Vulg. 13.63.36](mbh/13.63.html#v36) = ≈krit. 13,62.36c *saṃnidadhyāt*
 [SUŚR. 1,164,7.] *dūrādāhṛtya samidhaḥ saṃnidadhyādvihāyasi*
 [M. 2,186.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,186) *saṃnidadhustatra pāṇḍavā hyāyudhāni*
-[MBH. 1,482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.482) = [≈Вульг. 1.2.253](mbh/1.2.html#v253) = ≈крит. 01,2.159e [2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) = [≈Вульг. 1.73.31](mbh/1.73.html#v31) = ≈крит. 01,67.30a
+[MBH. 1,482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.482) = [≈Vulg. 1.2.253](mbh/1.2.html#v253) = ≈krit. 01,2.159e [2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) = [≈Vulg. 1.73.31](mbh/1.73.html#v31) = ≈krit. 01,67.30a
 [R. 3,75,69.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,69) *(karkaṭakam) karpūrapuṭikāmadhye saṃnidhāya*
 [PAÑCAT. 265,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?265,5) *dṛṣṭim* das Auge heften auf (loc.), med.
 [RAGH. 13,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,44) *hṛdayasaṃnihita* in's Herz gelegt, im Herzen wohnend
@@ -63,13 +63,13 @@
 [DAŚAK.] in [BENF. Chr. 190,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *saṃnihita* in der Nähe befindlich, gegenwärtig —, da —, bei der Hand seiend, nahe bevorstehend
 [MUṆḌ. UP. 2,2,1.]
 [GOBH. 2,10,41.] *noccaiḥ saṃnihito haset*
-[MBH. 4,130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.130) = [≈Вульг. 4.4.48](mbh/4.4.html#v48) = ≈крит. 04,4.41c *gurau saṃnihite*
+[MBH. 4,130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.130) = [≈Vulg. 4.4.48](mbh/4.4.html#v48) = ≈krit. 04,4.41c *gurau saṃnihite*
 [M. 2,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,205)
 [R. 2,54,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,5)
 [R. GORR. 2,17,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,17,31)
 [ŚĀK. 7,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,14) [26,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?26,7) [52,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?52,6) *asmin — latāmaṇḍape saṃnihitayā tvayā bhavitavyam*
 [32,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,19) [VIKR. 38,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?38,11) [PAÑCAT. 37,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,19) [BHĀG. P. 8,12,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,34) [SĀH. D. 20,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?20,14) *nityaṃ saṃnihitābhistu oṣadhībhiḥ phalaistathā . atithīnpūjayāmāsa*
-[MBH. 13,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.454) = [≈Вульг. 13.10.23](mbh/13.10.html#v23) = ≈крит. 13,10.20a *vipatsaṃnihitā tasya*
+[MBH. 13,454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.454) = [≈Vulg. 13.10.23](mbh/13.10.html#v23) = ≈krit. 13,10.20a *vipatsaṃnihitā tasya*
 [HIT. I,68.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,68) *kāyaḥ saṃnihitāpāyaḥ*
 [202.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,202) *saṃnihitāstapovanasattvarakṣāyai bhavata* so v. a. bereit zu, gerüstet zu
 [ŚĀK. 17,20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?17,20)

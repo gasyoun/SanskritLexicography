@@ -8,7 +8,7 @@
 [MBH. 3,12500.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12500) *asyāmeva prasūyadhvam*
 [1,2502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2502) [2504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2504) *etasmācca jagatsarvaṃ prasūyeta janārdanāt*
 [HARIV. 11053.](https://sanskrit-lexicon-scans.github.io/hariv?11053) *prasūyatas*
-2. du. [MBH. 13,2565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2565) = [≈Вульг. 13.48.3](mbh/13.48.html#v3) = ≈крит. 13,48.3a *prasūyāmas*
+2. du. [MBH. 13,2565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2565) = [≈Vulg. 13.48.3](mbh/13.48.html#v3) = ≈krit. 13,48.3a *prasūyāmas*
 [HARIV. 173](https://sanskrit-lexicon-scans.github.io/hariv?173) = [VP. 1,15,128.] *sarveṇa khalu martavyaṃ martyaloke prasūyatā*
 [Spr. (II) 6949.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6949 "Spr. (II) 6949: sarveṇa khalu martavyaṃ martyaloke prasūyatā | kṛtāntavihite mārge mṛtaṃ ko jīvayiṣyati || — (5203.) Jeder, der in der Welt der Sterblichen geboren wird, muss ja sterben") *sindhoḥ prasūya kamalā*
 [RĀJA-TAR. 6,317.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,317) *pra keśāḥ suvate*
@@ -66,7 +66,7 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 [ŚVETĀŚV. UP. 5,2.]
 [KAUṢ. UP. 1,2.] *tasyām*
 [M. 3,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,19) *tataḥ*
-[MBH. 1,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.35) = [≈Вульг. 1.1.81](mbh/1.1.html#v81) = ≈крит. 01,2.167c *mama kāyāt*
+[MBH. 1,35.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.35) = [≈Vulg. 1.1.81](mbh/1.1.html#v81) = ≈krit. 01,2.167c *mama kāyāt*
 [R. 2,74,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,21) *tadanvaye*
 [RAGH. 1,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,12) *nīcakule*
 [Spr. (II) 6475.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6475 "Spr. (II) 6475: śīlaṃ pradhānaṃ na kulaṃ pradhānaṃ kulena kiṃ śīlavivarjitena | dhanaṃ vinā nīcakule prasūtāḥ svargaṃ gatāḥ śīlamavāpya dhirāḥ || — Eine edle Gemüthsart ist das Vornehmste, nimmer aber Adel der Geburt") *yasya tasya*
@@ -84,9 +84,9 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 [BHĀG. P. 9,9,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,14)
 [PAÑCAR. 1,7,40.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,7,40) *kalpavṛkṣa˚ (madhu)*
 [MEGH. 67.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?67) *matprasūtaṃ bhayam*
-[MBH. 3,2844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2844) = [≈Вульг. 3.72.37](mbh/3.72.html#v37) = ≈крит. 03,70.34a *matprasūtena tejasā*
-[11970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11970) = [≈Вульг. 3.167.36](mbh/3.167.html#v36) = ≈крит. 03,163.34c *bhīṣma˚ (duḥkha)*
-[5,7029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7029) = [≈Вульг. 5.178.2](mbh/5.178.html#v2) = ≈крит. 05,177.2c *dharmaviśeṣa˚*
+[MBH. 3,2844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2844) = [≈Vulg. 3.72.37](mbh/3.72.html#v37) = ≈krit. 03,70.34a *matprasūtena tejasā*
+[11970.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11970) = [≈Vulg. 3.167.36](mbh/3.167.html#v36) = ≈krit. 03,163.34c *bhīṣma˚ (duḥkha)*
+[5,7029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7029) = [≈Vulg. 5.178.2](mbh/5.178.html#v2) = ≈krit. 05,177.2c *dharmaviśeṣa˚*
 [KAṆ. 1,1,4.] *saraladrumāṇāṃ srutakṣīratayā prasūto gandhaḥ*
 [KUMĀRAS. 1,9.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,9) *prasūtaṃ tarhi saukhyaṃ naḥ*
 [Z. f. d. K. d. M. 2,426.]
@@ -159,9 +159,9 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **compounds_and_cross_refs)** — Vgl. 3. *prasava, prasavana*, 2. *prasavitar*, 2. *prasavin, prasūta*, 2. *prasūti, prasūna, devaprasūta* (hierher oder zu 2. *su*).
 — *anupra*, partic. *˚sūta* darauf entstanden: *sṛṣṭistathaiveyamanuprasūtā*
-[MBH. 13,7361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7361) = [≈Вульг. 13.158.8](mbh/13.158.html#v8) = ≈крит. 13,143.7e
+[MBH. 13,7361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7361) = [≈Vulg. 13.158.8](mbh/13.158.html#v8) = ≈krit. 13,143.7e
 — *abhipra*, partic. *˚sūta* erzeugt, geboren: *mātuḥ pituḥ karmaṇābhiprasūtaḥ saṃvardhate vidhivadbhojanena*
-[MBH. 5,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.964) = [≈Вульг. 5.32.26](mbh/5.32.html#v26) = ≈крит. 05,32.25a
+[MBH. 5,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.964) = [≈Vulg. 5.32.26](mbh/5.32.html#v26) = ≈krit. 05,32.25a
 — *saṃpra*
 
 - **RU:** — ср. 3. *prasava, prasavana*, 2. *prasavitar*, 2. *prasavin, prasūta*, 2. *prasūti, prasūna, devaprasūta* (сюда или к 2. *su*).
@@ -173,9 +173,9 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
   <sub>attested</sub>
 
 **prefix_1_erzeugen)** 1) erzeugen: *˚sūte*
-[MBH. 13,2582.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2582) = [≈Вульг. 13.48.20](mbh/13.48.html#v20) = ≈крит. 13,48.20c *˚sūyate*
+[MBH. 13,2582.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2582) = [≈Vulg. 13.48.20](mbh/13.48.html#v20) = ≈krit. 13,48.20c *˚sūyate*
 [M. 10,33.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,33) — *˚sūyate*
-[MBH. 13,5850](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5850) = [≈Вульг. 13.122.13](mbh/13.122.html#v13) = ≈крит. 13,123.12c fehlerhaft für *˚ṇūyate*, wie die [ed. Bomb.] liest.
+[MBH. 13,5850](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5850) = [≈Vulg. 13.122.13](mbh/13.122.html#v13) = ≈krit. 13,123.12c fehlerhaft für *˚ṇūyate*, wie die [ed. Bomb.] liest.
 
 - **RU:** 1) порождать: *˚sūte*
 [MBH. 13,2582.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2582) = [≈Вульг. 13.48.20](mbh/13.48.html#v20) = ≈крит. 13,48.20c *˚sūyate*
@@ -184,7 +184,7 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
   <sub>attested</sub>
 
 **prefix_2_geboren_werden)** — 2) geboren werden: *tadāhaṃ saṃprasūyāmi gṛheṣu śubhakarmaṇām*
-[MBH. 3,12978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12978) = [≈Вульг. 3.189.29](mbh/3.189.html#v29) = ≈крит. 03,187.28a
+[MBH. 3,12978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12978) = [≈Vulg. 3.189.29](mbh/3.189.html#v29) = ≈krit. 03,187.28a
 
 - **RU:** — 2) рождаться: *tadāhaṃ saṃprasūyāmi gṛheṣu śubhakarmaṇām*
 [MBH. 3,12978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12978) = [≈Вульг. 3.189.29](mbh/3.189.html#v29) = ≈крит. 03,187.28a
@@ -192,8 +192,8 @@ Schol. zu [KĀTY. ŚR. 24,6,8.](https://sanskrit-lexicon-scans.github.io/katyasr
 
 **prefix_3_erzeugt_geboren)** — 3) partic. *˚sūta* erzeugt, geboren: *bahvīḥ prajāḥ puruṣāt*
 [MUṆḌ. UP. 2,1,5.] *śarmiṣṭhayā*
-[MBH. 5,5044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5044) = [≈Вульг. 5.151.24](mbh/5.151.html#v24) = ≈крит. 05,149.24a *brahmāsyatas, bāhubhyām*
-[12,11814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11814) = [≈Вульг. 12.318.91](mbh/12.318.html#v91) = ≈крит. 12,306.88c [13,4426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4426) = [≈Вульг. 13.93.31](mbh/13.93.html#v31) = ≈крит. 13,94.14a *guṇavipuleṣu kuleṣu*
+[MBH. 5,5044.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5044) = [≈Vulg. 5.151.24](mbh/5.151.html#v24) = ≈krit. 05,149.24a *brahmāsyatas, bāhubhyām*
+[12,11814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11814) = [≈Vulg. 12.318.91](mbh/12.318.html#v91) = ≈krit. 12,306.88c [13,4426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4426) = [≈Vulg. 13.93.31](mbh/13.93.html#v31) = ≈krit. 13,94.14a *guṇavipuleṣu kuleṣu*
 [R. 4,41,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,41,79) *māyā guṇasaṃprasūtā*
 [BHĀG. P. 11,10,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,10,13)
 

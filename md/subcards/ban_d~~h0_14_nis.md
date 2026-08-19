@@ -17,7 +17,7 @@
 **2)** — 2) sich an Jmd klammern, heftig in Jmd dringen,
 
 Jmd stark zusetzen: *nirbadhnatātimātraṃ ca gālavena*
-[MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) = [≈Вульг. 5.124.52](mbh/5.124.html#v52) = ≈крит. 05,122.51a *bhūyo bhūyaśca nirbaddhayā tvayā*
+[MBH. 5,4116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4116) = [≈Vulg. 5.124.52](mbh/5.124.html#v52) = ≈krit. 05,122.51a *bhūyo bhūyaśca nirbaddhayā tvayā*
 [DAŚAK.] in [BENF. Chr. 193,3.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?193)
 
 - **RU:** — 2) цепляться за кого-либо, настойчиво обращаться к кому-либо,

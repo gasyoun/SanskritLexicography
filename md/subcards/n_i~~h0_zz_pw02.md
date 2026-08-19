@@ -93,7 +93,7 @@
 - **RU:** 13〉 проявлять свое расположение —, свою дружбу к кому-л. (Acc.).
   <sub>attested</sub>
 
-**14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19) = [≈Вульг. 13.1.71](mbh/13.1.html#v71) = ≈крит. 13,1.64a.
+**14)** — 14〉 begehren, wünschen. *manasā yatpraṇītam* was das Herz begehrt [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* dass. [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19) = [≈Vulg. 13.1.71](mbh/13.1.html#v71) = ≈krit. 13,1.64a.
 
 - **RU:** 14〉 желать, хотеть. *manasā yatpraṇītam* то, чего желает сердце [MĀN. GṚHY. 2,13]. *manaḥpraṇīta* то же [MBH. 13,71,19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,71,19) = [≈Вульг. 13.1.71](mbh/13.1.html#v71) = ≈крит. 13,1.64a.
   <sub>attested</sub>
@@ -218,7 +218,7 @@
 - **RU:** 9〉 наказывать, карать.
   <sub>attested</sub>
 
-**apa-nī 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Вульг. 1.140.17](mbh/1.140.html#v17) = ≈крит. 12,138.10a fehlerhaft für *vinīta*.
+**apa-nī 10)** — 10〉 erziehen, unterrichten, unterweisen. *vinīta* unterrichtet, bewandert in (Loc. oder im Comp. vorangehend); wohlerzogen, gesittet, bescheiden (auch von Reden und vom Anzug). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Vulg. 1.140.17](mbh/1.140.html#v17) = ≈krit. 12,138.10a fehlerhaft für *vinīta*.
 
 - **RU:** 10〉 воспитывать, обучать, наставлять. *vinīta* обученный, сведущий в (Loc. или в предшествующем Comp.); благовоспитанный, благопристойный, скромный (также о речи и одежде). *vīnīta* [MBH. 1,5606](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Вульг. 1.140.17](mbh/1.140.html#v17) = ≈крит. 12,138.10a ошибочно вм. *vinīta*.
   <sub>attested</sub>

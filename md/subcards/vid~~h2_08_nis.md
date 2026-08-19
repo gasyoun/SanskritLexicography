@@ -22,23 +22,23 @@
   <sub>attested</sub>
 
 **3)** — 3) pass. (sich ausserhalb von Etwas befinden) überdrüssig werden, Nichts mehr wissen wollen von; mit abl.: *nirvidyate 'rthāt*
-[MBH. 12,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3888) = [≈Вульг. 12.104.41](mbh/12.104.html#v41) = ≈крит. 12,105.41a [6603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6603) = [≈Вульг. 12.179.33](mbh/12.179.html#v33) = ≈крит. 12,172.33c *gṛhāt*
+[MBH. 12,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3888) = [≈Vulg. 12.104.41](mbh/12.104.html#v41) = ≈krit. 12,105.41a [6603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6603) = [≈Vulg. 12.179.33](mbh/12.179.html#v33) = ≈krit. 12,172.33c *gṛhāt*
 [BHĀG. P. 4,13,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,46) [6,5,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,41) *virvidyeyuśca laukikāt*
-[MBH. 12,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3889) = [≈Вульг. 12.104.42](mbh/12.104.html#v42) = ≈крит. 12,105.42c *kāmāt*
-[3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) = [≈Вульг. 12.104.7](mbh/12.104.html#v7) = ≈крит. 12,105.7c *nirvidya nirayādataḥ*
+[MBH. 12,3889.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3889) = [≈Vulg. 12.104.42](mbh/12.104.html#v42) = ≈krit. 12,105.42c *kāmāt*
+[3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) = [≈Vulg. 12.104.7](mbh/12.104.html#v7) = ≈krit. 12,105.7c *nirvidya nirayādataḥ*
 [BHĀG. P. 4,30,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,30,18) mit instr.: *niravidyata jīvitena*
-[MBH. 6,5344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5344) = [≈Вульг. 6.115.10](mbh/6.115.html#v10) = ≈крит. 06,111.10a *dāsyena*
+[MBH. 6,5344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5344) = [≈Vulg. 6.115.10](mbh/6.115.html#v10) = ≈krit. 06,111.10a *dāsyena*
 [Spr. (II) 1373.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1373 "Spr. (II) 1373: ekaṃ bhūmipatiḥ karoti sacivaṃ rājye pradhānaṃ yadā taṃ mohācchrayate madaḥ sa ca madāddāsyena nirvidyate | nirviṇṇasya padaṃ karoti hṛdaye tasya svat… — (528.) Wenn ein Fürst Einen Minister an die Spitze der Regierung stellt, dann kommt über diesen in seiner Verblendung ein Taumel") mit acc.: *nirvidyate tataḥ kṛtsnam*
-[MBH. 14,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.530) = [≈Вульг. 14.18.34](mbh/14.18.html#v34) = ≈крит. 14,18.33a ohne Ergänzung: *upasado nā canāgacchannirvidyeva*
+[MBH. 14,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.530) = [≈Vulg. 14.18.34](mbh/14.18.html#v34) = ≈krit. 14,18.33a ohne Ergänzung: *upasado nā canāgacchannirvidyeva*
 [ŚĀṄKH. BR. 9,1.] *sā ca nirvidyatāṃ punaḥ*
-[MBH. 3,14792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14792) = [≈Вульг. 3.237.21](mbh/3.237.html#v21) = ≈крит. 03,226.20a
+[MBH. 3,14792.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14792) = [≈Vulg. 3.237.21](mbh/3.237.html#v21) = ≈krit. 03,226.20a
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11) [5,13,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,13,6) [7,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,25) [11,20,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,20,9) *nirvidya* absol.
-[1,4,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,12) [4,13,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,48) [MBH. 12,3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) = [≈Вульг. 12.104.7](mbh/12.104.html#v7) = ≈крит. 12,105.7c [6603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6603) = [≈Вульг. 12.179.33](mbh/12.179.html#v33) = ≈крит. 12,172.33c [NAIṢ. 3,128.] partic. *nirviṇa* (bisweilen fälschlich *nirvinna* geschrieben)
+[1,4,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,12) [4,13,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,48) [MBH. 12,3854.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3854) = [≈Vulg. 12.104.7](mbh/12.104.html#v7) = ≈krit. 12,105.7c [6603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6603) = [≈Vulg. 12.179.33](mbh/12.179.html#v33) = ≈krit. 12,172.33c [NAIṢ. 3,128.] partic. *nirviṇa* (bisweilen fälschlich *nirvinna* geschrieben)
 [P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Vārtt.
 [VOP. 26,88.fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) überdrüssig, mit abl.: *kṣatrabhāvāt*
-[MBH. 1,6692.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6692) = [≈Вульг. 1.173.47](mbh/1.173.html#v47) = ≈крит. 01,163.20a *jīvitāt*
-[7,5575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5575) = [≈Вульг. 7.136.7](mbh/7.136.html#v7) = ≈крит. 07,111.6a [KATHĀS. 86,108.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,108) [ŚAṂK.] zu [BṚH. ĀR. UP. S. 196.] [BHĀG. P. 3,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,7) [4,13,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,18) [47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,47) mit instr.: *dehenānena*
-[MBH. 6,5348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5348) = [≈Вульг. 6.115.14](mbh/6.115.html#v14) = ≈крит. 06,111.14a
+[MBH. 1,6692.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6692) = [≈Vulg. 1.173.47](mbh/1.173.html#v47) = ≈krit. 01,163.20a *jīvitāt*
+[7,5575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5575) = [≈Vulg. 7.136.7](mbh/7.136.html#v7) = ≈krit. 07,111.6a [KATHĀS. 86,108.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,108) [ŚAṂK.] zu [BṚH. ĀR. UP. S. 196.] [BHĀG. P. 3,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,7) [4,13,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,18) [47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,47) mit instr.: *dehenānena*
+[MBH. 6,5348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5348) = [≈Vulg. 6.115.14](mbh/6.115.html#v14) = ≈krit. 06,111.14a
 [P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), Vārtt., Schol. [KATHĀS. 5,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,125) [PAÑCAT. ed. orn. 42,3.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?42,3) mit gen.: *matsyamāṃsānām* (*matsyamāṃsādanena* [ed. Bomb.] [54,19](https://sanskrit-lexicon-scans.github.io/pantankose/app2?54,19))
 [PAÑCAT. 51,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?51,25) [137,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?137,1) mit loc. [KĀM. NĪTIS. 18,42.] [BHĀG. P. 11,20,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,20,27) die Ergänzung im comp. vorangehend
 [KATHĀS. 30,98.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,98) [40,27.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,27)
@@ -85,7 +85,7 @@
   <sub>attested</sub>
 
 **4 (Nachtrag))** — Vgl. *nirveda* . — caus. Jmd zur Verzweiflung bringen: *nirvedayitvā tu paraṃ hatvā vā*
-[MBH. 12,2658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2658) = [≈Вульг. 12.69.63](mbh/12.69.html#v63) = ≈крит. 12,69.61a
+[MBH. 12,2658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2658) = [≈Vulg. 12.69.63](mbh/12.69.html#v63) = ≈krit. 12,69.61a
 
 - **RU:** — ср. *nirveda* . — caus. приводить кого-л. в отчаяние: *nirvedayitvā tu paraṃ hatvā vā*
 [MBH. 12,2658.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2658) = [≈Вульг. 12.69.63](mbh/12.69.html#v63) = ≈крит. 12,69.61a

@@ -8,7 +8,7 @@
 [26,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.026.html#rv01.026.01) [48,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.048.html#rv01.048.11) *sa mandasvā hyandhasaḥ*
 [3,41,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.041.html#rv03.041.06) *taddhi darśaya*
 [R. 1,56,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,56,3) *mayyeva praharerhi*
-[MBH. 1,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5985) = [≈Вульг. 1.152.10](mbh/1.152.html#v10) = ≈крит. 01,139.7a [3,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2891) = [≈Вульг. 3.74.2](mbh/3.74.html#v2) = ≈крит. 03,72.2a
+[MBH. 1,5985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5985) = [≈Vulg. 1.152.10](mbh/1.152.html#v10) = ≈krit. 01,139.7a [3,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2891) = [≈Vulg. 3.74.2](mbh/3.74.html#v2) = ≈krit. 03,72.2a
 [Spr. (II) 2513.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2513 "Spr. (II) 2513: taskarebhyo niyuktebhyaḥ śatrubhyo nṛpavallabhāt | nṛpatirnijalobhācca prajā rakṣetpiteva hi || — (109.) Ein Fürst schütze hier auf Erden wie ein Vater seine Unterthanen vor Dieben, vor Beamten, vor Feinden, vor seinem Liebling und vor seiner eigenen Habsucht.") *paśyāmo hi* wir wollen doch sehen
 [KATHĀS. 18,266.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,266)
 
@@ -40,14 +40,14 @@
 **4) häufig blosser Versfüller)** — 4) häufig blosser Versfüller,
 z. B. [MBH. 5,6023.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6023) [RAGH. 1,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,69) insbesondere zwischen Vocalen zur Entfernung eines Hiatus
 [M. 1,83.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,83) [2,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,52) [12,66.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,66)
-[MBH. 3,2894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2894) = [≈Вульг. 3.74.5](mbh/3.74.html#v5) = ≈крит. 03,72.5a
+[MBH. 3,2894.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2894) = [≈Vulg. 3.74.5](mbh/3.74.html#v5) = ≈krit. 03,72.5a
 [R. 1,1,87.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,87) am Ende eines Pāda: *paśyāmyasminvane hyamanuṣyaniṣevite*
-[MBH. 3,2528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2528) = [≈Вульг. 3.64.128](mbh/3.64.html#v128) = ≈крит. 03,61.122a [2716.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2716) = [≈Вульг. 3.69.23](mbh/3.69.html#v23) = ≈крит. 03,66.21c ([ed. Bomb.] *su* st. *hi*).
+[MBH. 3,2528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2528) = [≈Vulg. 3.64.128](mbh/3.64.html#v128) = ≈krit. 03,61.122a [2716.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2716) = [≈Vulg. 3.69.23](mbh/3.69.html#v23) = ≈krit. 03,66.21c ([ed. Bomb.] *su* st. *hi*).
 [VARĀH. BṚH. S. 105,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,6)
 [H. 131.](https://sanskrit-lexicon-scans.github.io/abch2/app1?131) zur Gewinnung einer Länge
 [H. 57.](https://sanskrit-lexicon-scans.github.io/abch2/app1?57) erscheint im selben Satze sogar doppelt: *ātmā hyeko hi*
-[MBH. 1,6124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6124) = [≈Вульг. 1.155.32](mbh/1.155.html#v32) = ≈крит. 01,143.29a *yogakṣemo hi rājño hi*
-[12,2808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2808) = [≈Вульг. 12.75.4](mbh/12.75.html#v4) = ≈крит. 12,76.4a *anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit*
+[MBH. 1,6124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6124) = [≈Vulg. 1.155.32](mbh/1.155.html#v32) = ≈krit. 01,143.29a *yogakṣemo hi rājño hi*
+[12,2808.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2808) = [≈Vulg. 12.75.4](mbh/12.75.html#v4) = ≈krit. 12,76.4a *anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit*
 [Spr. (II) 388.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?388 "Spr. (II) 388: anyo hi nāśnāti kṛtaṃ hi karma manuṣyaloke manujasya kaścit | yattena kiñciddhi kṛtaṃ hi karma tadaśnute nāsti kṛtasya nāśaḥ || — (3511.) Kein Anderer geniesst die Frucht einer That, die in der Welt der Menschen von einem Menschen vollbracht wurde: die Frucht jeglicher That, die dieser vollbrachte, geniesst er und keine vollbrachte That geht ohne L…") *bhāryā hi paramo hyarthaḥ*
 [4577.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4577) *guhyādguhyatarastvaṃ hi hyevamāha pitāmahaḥ*
 [R. 7,37,5,47.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,37,5,47) *svalpaṃ hi nahi naḥ sukham*

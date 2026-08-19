@@ -23,7 +23,7 @@
   <sub>attested</sub>
 
 **anu+vā: wehen)** [R. 5,73,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,52) *śivaścānuvavau vāyuḥ* wehen
-[MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942) = [≈Вульг. 5.83.23](mbh/5.83.html#v23) = ≈крит. 05,81.23c
+[MBH. 5,2942.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2942) = [≈Vulg. 5.83.23](mbh/5.83.html#v23) = ≈krit. 05,81.23c
 [BHĀG. P. 10,35,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,35,21)
 
 - **RU:** [R. 5,73,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,52) *śivaścānuvavau vāyuḥ* веять

@@ -88,7 +88,7 @@
 - **RU:** — 4〉 направляться, — к (Acc., также с *prati*).
   <sub>attested</sub>
 
-**T63—5)** — 5〉 kommen, herankommen, herbeifahren ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11) = [≈Вульг. 3.6.10](mbh/3.6.html#v10) = ≈крит. 03,7.9a). *saṃyāta* herbeigekommen.
+**T63—5)** — 5〉 kommen, herankommen, herbeifahren ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11) = [≈Vulg. 3.6.10](mbh/3.6.html#v10) = ≈krit. 03,7.9a). *saṃyāta* herbeigekommen.
 
 - **RU:** — 5〉 приходить, приближаться, приезжать ([MBH. 3,271,11](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,271,11) = [≈Вульг. 3.6.10](mbh/3.6.html#v10) = ≈крит. 03,7.9a). *saṃyāta* прибывший.
   <sub>attested</sub>

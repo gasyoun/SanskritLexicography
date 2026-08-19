@@ -3,7 +3,7 @@
 `jan~~h0_zz_sch`
 
 
-**jajānat)** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Вульг. 8.2.9](mbh/8.2.html#v9) = ≈крит. 08,1.33a
+**jajānat)** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān lebte auf, wurde wieder lebendig, [MBh. 8,33,31.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Vulg. 8.2.9](mbh/8.2.html#v9) = ≈krit. 08,1.33a
 
 - **RU:** jan 1. jajānat [Maitr. S. 1,3,20; 9,1] ([Kāṭh. 9,8]). jajñivān жил снова, ожил, [MBh. 8,33,31.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Вульг. 8.2.9](mbh/8.2.html#v9) = ≈крит. 08,1.33a
   <sub>attested</sub>
