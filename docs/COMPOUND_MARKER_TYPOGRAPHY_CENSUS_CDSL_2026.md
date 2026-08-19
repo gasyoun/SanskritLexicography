@@ -1,10 +1,11 @@
 # Compound-marker typography across the Sanskrit dictionaries — consolidated census
 
-_Created: 17-08-2026 · Last updated: 18-08-2026_
+_Created: 17-08-2026 · Last updated: 19-08-2026_
 
-Consolidates FINDINGS **§553–§558, §561, §564–§566** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
+Consolidates FINDINGS **§553–§558, §561, §564–§566, §571** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
 measured over the [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
-digitizations, `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
+digitizations, the OCRed Cologne front matter (§4.5),
+`RussianTranslation/src/koch.jsonl` (local-only, gitignored —
 in-copyright content, never on GitHub),
 [wg_text.txt](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt) and the
 [csl-whitroot print scans](https://github.com/sanskrit-lexicon/csl-whitroot/tree/master/jpg).
@@ -38,7 +39,11 @@ Trigger: the pwg_ru compound-position glyph vote (лист `h2805_q3_deploy` on 
 слитное — членение живёт в `<k2>`/теле, и любой census, читающий `<k1>`,
 слеп; (3) для карточек pwg_ru выбор глифа `˚` — не вкусовщина, а
 присоединение к главной линии традиции, а прецедент пометы ПОЗИЦИИ — пара
-Макдонелла, где начало/конец различаются порядком знаков, не новым глифом.
+Каппеллера `○—` / `—○`, объявленная им в предисловии 1887 г. и повторённая
+по-английски в 1891 г. (Макдонелл 1893 её наследует и даёт самый крупный
+корпус вхождений, но не первенство): начало/конец различаются порядком
+знаков, не новым глифом. Печатные свидетельства — §4.5 ниже; они
+единственные в этом своде получены не подсчётом, а чтением автора.
 Десять следующих замеров того же метода закреплены хэндоффами H2978–H2987
 (§5 ниже).
 
@@ -96,8 +101,12 @@ not profiled (same method applies; markup per dict).
   parenthesized decomposition `({#agni#} + {#hotra#})`, 34 752×. Ring every
   ~1.5 entries.
 - **PW** (§554): flipped the ring to leading member-elision; analysis dropped.
-- **Cappeller CAE/CCS** (§553–554): PW convention at its endpoint —
-  leading-only in practice; solid headwords; trailing single-digit noise.
+- **Cappeller CAE/CCS** (§553–554, §571): PW convention at its endpoint —
+  leading-only in practice; solid headwords; trailing single-digit noise. But
+  the *declared* system is both positions: his prefaces define `○—` / `—○`
+  ("das Stichwort am Anfang oder am Ende eines Compositums", 1887; "at the
+  beginning / at the end of a compound", 1891) — see **§4.5**. Leading
+  dominance is a usage statistic, not the convention.
 - **Apte AP/AP90** (§555): leading dominates, tail alive; ring also
   abbreviates grammar labels (`[za˚ ta˚]` = ṣaṣṭhī-tatpuruṣa); compounds as
   `+`-joined hyphen sub-lemmas of the **—Comp.** block (36 248 in ap).
@@ -119,8 +128,9 @@ not profiled (same method applies; markup per dict).
   etymology; leading hyphens abbreviate inflection, not compounds.
 - **Macdonell** (§558): four devices — hyphenated translit lemmas (~13 119),
   underties `a-kravya‿ad` (2 852) for sandhi seams, **`˚—`/`—˚` as positional
-  notation** ("as first / as final member", 409 / 4 258 — the closest
-  historical precedent for the pwg_ru position marker), classic elision rings.
+  notation** ("as first / as final member", 409 / 4 258 — the *largest*
+  attestation of the pwg_ru position marker; the *earliest* is Cappeller 1887,
+  §4.5), classic elision rings.
 - **Whitney** (§561): no ring at all. Roots 1885: leading hyphen = bound stem
   (`-kartin`, `-karttṛ`; read from the
   [whit-023 scan](https://github.com/sanskrit-lexicon/csl-whitroot/blob/master/jpg/whit-023-kft2.jpg));
@@ -142,8 +152,79 @@ not profiled (same method applies; markup per dict).
    join wrapped lines before counting.
 6. For the glyph vote: `˚` U+02DA is what 20+ CDSL digitizations use; `°` is a
    digitization variant of the same device (sch/ae/koch); `॰` only Bopp;
-   Macdonell's `˚—`/`—˚` shows position can be encoded by sign ORDER, not a
-   new glyph.
+   Cappeller's `○—`/`—○` (1887, printed definition — §4.5) and Macdonell's
+   `˚—`/`—˚` (1893, 4 667 attestations) both show position can be encoded by
+   sign ORDER, not a new glyph.
+
+## 4.5. Printed-preface evidence — the lexicographers define the ring themselves
+
+_Section of record: FINDINGS [§571](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+([H3143](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3143-Opus_SanskritLexicography_preface-ring-definition-cappeller-priority_19.08.26.md), 19-08-2026)._
+
+Everything in §1–§4 is **distributional**: counted out of the CDSL markup. It
+was collected without opening a single preface, and the census therefore
+carried an avoidable weakness — it inferred what a sign *means* from where it
+occurs. The Cologne front matter has been OCRed for **33 dictionary codes**
+(see the coverage table below), and two of those prefaces state the compound
+convention **in the author's own prose**, including the positional pair that
+the pwg_ru vote is about.
+
+### Cappeller, German side — CCS, Vorrede, Jena, 3 July 1887
+
+[`CCS/prefaces/ccspref05.md`](https://github.com/sanskrit-lexicon/CCS/blob/master/prefaces/ccspref05.md)
+([scan page](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/prefaces/ccspref/ccspref05.html)):
+
+> Das Zeichen ○ geht immer auf das Stichwort oder einen sich von selbst
+> verstehenden Teil desselben; ○— und —○ bedeuten also resp. das Stichwort am
+> Anfang oder am Ende eines Compositums (wobei auch die Verbindung eines
+> Verbums mit einer Präposition als solches gilt).
+
+### Cappeller, English side — CAE, "Symbols", 1891
+
+[`CAE/prefaces/caepref06.md`](https://github.com/sanskrit-lexicon/CAE/blob/master/prefaces/caepref06.md)
+([scan page](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/prefaces/caepref/caepref06.html)):
+
+> ◦— the principal word of an article to be supplied at the beginning of a compound.
+> —◦ the same supplied at the end of a compound.
+
+### What this changes in the census
+
+| Claim as stated in §1–§4 | Correction from the prefaces |
+|---|---|
+| §3 · §4-6: Macdonell's `˚—`/`—˚` (409 / 4 258) is "the closest historical precedent" for a **positional** marker | Cappeller prints the identical device **six years earlier** — `○—` / `—○`, CCS 1887, restated as `◦—` / `—◦` in CAE 1891. Macdonell (1893) inherits it; he is the *largest* attestation, not the first. |
+| §3 Cappeller row: "PW convention at its endpoint — leading-only in practice" | True of the counts, but incomplete as a description of the **system**: Cappeller declares both positions and both directions of the em-dash. Leading dominance is a usage statistic, not the convention. |
+| The positional reading was **inferred** from where the ring sits | It is **printed**. `○` "geht immer auf das Stichwort" — the ring always stands for the headword; position of the dash, not a second glyph, encodes start vs end. |
+| §4-6: "`˚` U+02DA is what 20+ CDSL digitizations use" | Unchanged for the digitizations, but the *printed* sort in the Cappeller line is a circle, and the two OCR passes disagree on how to code it — `○` U+25CB in ccspref05, `◦` U+25E6 in caepref06. Glyph variance is a digitization artefact all the way down to the front matter. |
+
+**Consequence for `h2805_q3_deploy`** (sheet
+[h2805_q3_deploy](https://gasyoun.github.io/vote/sheets/h2805_q3_deploy.html),
+7 cards, groups D слой / G глиф / T тултип): the **G** group no longer needs a
+purely aesthetic argument, and the **T** (tooltip) group has a citable
+authority. The wording under vote — "headword at the beginning / at the end of
+a compound" — is a translation of Cappeller's own sentence, in both his
+languages. A tooltip may quote him rather than paraphrase the census.
+This does **not** re-open the form vote (MG ruled the circle on 15-08-2026,
+[H2804](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2804-Opus_SanskritLexicography_h1306-style-vote-apply_15.08.26.md));
+it supplies the evidence line the deployment cards were missing.
+
+### Preface OCR coverage — where else to look for a printed definition
+
+Front-matter editions under `GitHub/` (source pages + `*pref_all.*`), census
+19-08-2026. The Cologne front-matter
+[index](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/index.html)
+lists 38 codes; **33 have OCRed pages, 2 are empty stubs (SKD, PUI), and the
+rest are unstarted**. Pipeline: [`/cologne-preface-ocr`](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-preface-ocr.md).
+
+| State | Codes |
+|---|---|
+| In a dictionary repo, with consolidated edition | ACC · AP90 · BEN · BHS · BOP · BOR · BUR · CAE · CCS · GRA · INM · KRM · MCI · MD · MW · MWE · MW72 · PW · PWG · SCH · SHS · STC · VCP · VEI · WIL · YAT |
+| Local staging only (`GitHub/prefaces_*`, **not on any remote**) | AE · GST · IEG · LAN · PE · PGN · SNP |
+| Directory exists, no edition pages | SKD · PUI |
+| Ring/circle glyph present in the OCRed front matter | **CCS** pref05 (definition) · **CAE** pref06 (symbol list) · PWG pref13–14 (errata *using* `॰`, no definition) · KRM pref02/24 (`॰` in Sanskrit abbreviations) · GST pref06 (errata) |
+
+Only Cappeller defines it. PWG's own Vorrede does **not** — which is why the
+PWG truncation sense had to be counted rather than read, and why §4-1 ("a ring
+is three different signs") stands on distribution alone for PWG.
 
 ## 5. Candidate phenomena to measure next (same method, unmeasured)
 
