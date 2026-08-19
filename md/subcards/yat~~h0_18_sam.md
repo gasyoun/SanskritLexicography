@@ -56,7 +56,7 @@
   <sub>attested</sub>
 
 **5)** — 5) *saṃyatta* vorbereitet, ganz bei der Sache seiend, der seine Maassregeln getroffen hat, auf der Hut seiend, sich vorsehend: *samare*
-[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) = [≈Вульг. 7.127.36](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A127_S036) = ≈крит. 07,102.71c *tathā yudhyeta saṃyatto*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) = [≈Вульг. 7.127.36](mbh/7.127.html#v36) = ≈крит. 07,102.71c *tathā yudhyeta saṃyatto*
 (v. l. für *saṃpanno) vijayeta ripūnyathā*
 [M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
 [HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)
@@ -66,7 +66,7 @@
 [6,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,28)
 
 - **RU:** — 5) *saṃyatta* готовый, всецело поглощенный делом, принявший меры, бдительный, осторожный: *samare*
-[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) = [≈Вульг. 7.127.36](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A127_S036) = ≈крит. 07,102.71c *tathā yudhyeta saṃyatto*
+[MBH. 7,5179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5179) = [≈Вульг. 7.127.36](mbh/7.127.html#v36) = ≈крит. 07,102.71c *tathā yudhyeta saṃyatto*
 (v. l. вм. *saṃpanno) vijayeta ripūnyathā*
 [M. 7,200.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,200)
 [HARIV. 8067.](https://sanskrit-lexicon-scans.github.io/hariv?8067)

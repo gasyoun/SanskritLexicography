@@ -273,9 +273,9 @@
 - **RU:** 2〉 побудить кого-либо странствовать как аскет, — стать монахом [HEM. PAR. 1,300. 337].
   <sub>attested</sub>
 
-**PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a fehlerhaft für *pravrajita*.
+**PW-pra-caus-3)** — 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](mbh/6.71.html#v18) = ≈крит. 06,67.17a fehlerhaft für *pravrajita*.
 
-- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a ошибочно вм. *pravrajita*.
+- **RU:** 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](mbh/6.71.html#v18) = ≈крит. 06,67.17a ошибочно вм. *pravrajita*.
   <sub>attested</sub>
 
 **PW-anupra-head)** — Mit *anupra* Jmd (Acc.) in die Verbannung folgen.

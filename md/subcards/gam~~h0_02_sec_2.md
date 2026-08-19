@@ -11,7 +11,7 @@
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Sch.
 *svayaṃ ha rathena yātī3 . upādhyāyaṃ padātiṃ gamayati*
 [8,1,60](https://ashtadhyayi.com/sutraani/8/1/60), Sch. *tena tvamevaṃ gamito mayā*
-[MBH. 18,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.95) = [≈Вульг. 18.3.15](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U01_A003_S015) = ≈крит. 18,3.13c *asraṃ gamayati pretānkopo 'rīnanṛtaṃ śunaḥ*
+[MBH. 18,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.95) = [≈Вульг. 18.3.15](mbh/18.3.html#v15) = ≈крит. 18,3.13c *asraṃ gamayati pretānkopo 'rīnanṛtaṃ śunaḥ*
 [M. 3,230.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,230) *tasmā enadgamayāmaḥ*
 [AV. 16,6,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.006.html#av16.006.04) *asūnpitṛbhyo gamayāṃ cakāra*
 [18,2,27.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.27) *sūryaṃ cakṣurgamayatāt*
@@ -23,21 +23,21 @@
 [VS. 8,44.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,44)
 [ŚAT. BR. 13,2,9,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,7) [14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) [9,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,18) *asato mā sadgamaya tamaso mā jyotirgamaya*
 [ŚAT. BR. 14,4,1,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,30) [PRAŚNOP. 4,4.] *tām — samudraṃ gamayiṣyati*
-[MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) = [≈Вульг. 3.12.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S033) = ≈крит. 03,13.30a *vaivasvatakṣayam*
-[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) = [≈Вульг. 2.77.44](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A077_S044) = ≈крит. 02,68.44a [DAŚAK.] in [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
-[MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) = [≈Вульг. 3.14.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S012) = ≈крит. 03,15.12a *gamita* so v. a. *gamito yamakṣayam*
-[12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) = [≈Вульг. 12.29.149](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A029_S149) = ≈крит. 12,29.141a *koṭaram — gamite*
+[MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) = [≈Вульг. 3.12.33](mbh/3.12.html#v33) = ≈крит. 03,13.30a *vaivasvatakṣayam*
+[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) = [≈Вульг. 2.77.44](mbh/2.77.html#v44) = ≈крит. 02,68.44a [DAŚAK.] in [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
+[MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) = [≈Вульг. 3.14.12](mbh/3.14.html#v12) = ≈крит. 03,15.12a *gamita* so v. a. *gamito yamakṣayam*
+[12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) = [≈Вульг. 12.29.149](mbh/12.29.html#v149) = ≈крит. 12,29.141a *koṭaram — gamite*
 [MĀLAV. 60.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?60) *śarīraṃ nihatyāvidyāṃ gamayitvā*
 [ŚAT. BR. 14,7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,4) *sa evainaṃ bhūtiṃ gamayati*
 [TS. 2,1,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,1,1) *jyaiṣṭhyaṃ śraiṣṭyaṃ rājyamādhipatyam*
 [CHĀND. UP. 5,2,6.] *ekatām*
 [6,9,1.] *uttamāṃ gatim*
 [M. 5,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,42) *vilayam*
-[MBH. 1,8280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8280) = [≈Вульг. 1.225.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A225_S011) = ≈крит. 01,216.8e *dāsyam*
-[3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A034_S007) = ≈крит. 03,35.6a *parābhavam* (med.)
-[8,3800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3800) = [≈Вульг. 8.74.52](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A074_S052) = ≈крит. 07,64.12a *kṣayam*
-[13,12.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.12) = [≈Вульг. 13.1.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S012) = крит. — *imāmavasthām*
-[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5) = [≈Вульг. 13.1.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S005) = ≈крит. 13,1.5a [BHARTṚ. 3,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,49) [VIKR. 137.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?137) [AMAR. 24.] [BHĀG. P. 8,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,4,13) [KIR. 2,7.] *agami madam*
+[MBH. 1,8280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8280) = [≈Вульг. 1.225.11](mbh/1.225.html#v11) = ≈крит. 01,216.8e *dāsyam*
+[3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](mbh/3.34.html#v7) = ≈крит. 03,35.6a *parābhavam* (med.)
+[8,3800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3800) = [≈Вульг. 8.74.52](mbh/8.74.html#v52) = ≈крит. 07,64.12a *kṣayam*
+[13,12.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.12) = [≈Вульг. 13.1.12](mbh/13.1.html#v12) = крит. — *imāmavasthām*
+[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5) = [≈Вульг. 13.1.5](mbh/13.1.html#v5) = ≈крит. 13,1.5a [BHARTṚ. 3,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,49) [VIKR. 137.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?137) [AMAR. 24.] [BHĀG. P. 8,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,4,13) [KIR. 2,7.] *agami madam*
 [VOP. 24,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,13)
 
 - **RU:** — caus. *gamayati*
@@ -48,7 +48,7 @@
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), схол.
 *svayaṃ ha rathena yātī3 . upādhyāyaṃ padātiṃ gamayati*
 [8,1,60](https://ashtadhyayi.com/sutraani/8/1/60), схол. *tena tvamevaṃ gamito mayā*
-[MBH. 18,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.95) = [≈Вульг. 18.3.15](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U01_A003_S015) = ≈крит. 18,3.13c *asraṃ gamayati pretānkopo 'rīnanṛtaṃ śunaḥ*
+[MBH. 18,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.95) = [≈Вульг. 18.3.15](mbh/18.3.html#v15) = ≈крит. 18,3.13c *asraṃ gamayati pretānkopo 'rīnanṛtaṃ śunaḥ*
 [M. 3,230.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,230) *tasmā enadgamayāmaḥ*
 [AV. 16,6,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av16.006.html#av16.006.04) *asūnpitṛbhyo gamayāṃ cakāra*
 [18,2,27.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.27) *sūryaṃ cakṣurgamayatāt*
@@ -60,21 +60,21 @@
 [VS. 8,44.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,44)
 [ŚAT. BR. 13,2,9,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,2,9,7) [14,4,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,11) [9,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,1,18) *asato mā sadgamaya tamaso mā jyotirgamaya*
 [ŚAT. BR. 14,4,1,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,1,30) [PRAŚNOP. 4,4.] *tām — samudraṃ gamayiṣyati*
-[MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) = [≈Вульг. 3.12.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S033) = ≈крит. 03,13.30a *vaivasvatakṣayam*
-[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) = [≈Вульг. 2.77.44](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A077_S044) = ≈крит. 02,68.44a [DAŚAK.] в [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
-[MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) = [≈Вульг. 3.14.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A014_S012) = ≈крит. 03,15.12a *gamita* так преим. *gamito yamakṣayam*
-[12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) = [≈Вульг. 12.29.149](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A029_S149) = ≈крит. 12,29.141a *koṭaram — gamite*
+[MBH. 3,493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.493) = [≈Вульг. 3.12.33](mbh/3.12.html#v33) = ≈крит. 03,13.30a *vaivasvatakṣayam*
+[2,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2557) = [≈Вульг. 2.77.44](mbh/2.77.html#v44) = ≈крит. 02,68.44a [DAŚAK.] в [BENF. Chr. 201,13.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *gamayiṣye*
+[MBH. 3,625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.625) = [≈Вульг. 3.14.12](mbh/3.14.html#v12) = ≈крит. 03,15.12a *gamita* так преим. *gamito yamakṣayam*
+[12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) = [≈Вульг. 12.29.149](mbh/12.29.html#v149) = ≈крит. 12,29.141a *koṭaram — gamite*
 [MĀLAV. 60.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?60) *śarīraṃ nihatyāvidyāṃ gamayitvā*
 [ŚAT. BR. 14,7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,4) *sa evainaṃ bhūtiṃ gamayati*
 [TS. 2,1,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,1,1) *jyaiṣṭhyaṃ śraiṣṭyaṃ rājyamādhipatyam*
 [CHĀND. UP. 5,2,6.] *ekatām*
 [6,9,1.] *uttamāṃ gatim*
 [M. 5,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,42) *vilayam*
-[MBH. 1,8280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8280) = [≈Вульг. 1.225.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A225_S011) = ≈крит. 01,216.8e *dāsyam*
-[3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A034_S007) = ≈крит. 03,35.6a *parābhavam* (мед.)
-[8,3800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3800) = [≈Вульг. 8.74.52](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A074_S052) = ≈крит. 07,64.12a *kṣayam*
-[13,12.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.12) = [≈Вульг. 13.1.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S012) = крит. — *imāmavasthām*
-[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5) = [≈Вульг. 13.1.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S005) = ≈крит. 13,1.5a [BHARTṚ. 3,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,49) [VIKR. 137.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?137) [AMAR. 24.] [BHĀG. P. 8,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,4,13) [KIR. 2,7.] *agami madam*
+[MBH. 1,8280.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8280) = [≈Вульг. 1.225.11](mbh/1.225.html#v11) = ≈крит. 01,216.8e *dāsyam*
+[3,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1360) = [≈Вульг. 3.34.7](mbh/3.34.html#v7) = ≈крит. 03,35.6a *parābhavam* (мед.)
+[8,3800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3800) = [≈Вульг. 8.74.52](mbh/8.74.html#v52) = ≈крит. 07,64.12a *kṣayam*
+[13,12.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.12) = [≈Вульг. 13.1.12](mbh/13.1.html#v12) = крит. — *imāmavasthām*
+[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5) = [≈Вульг. 13.1.5](mbh/13.1.html#v5) = ≈крит. 13,1.5a [BHARTṚ. 3,49.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,49) [VIKR. 137.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?137) [AMAR. 24.] [BHĀG. P. 8,4,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,4,13) [KIR. 2,7.] *agami madam*
 [VOP. 24,13.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,13)
   <sub>attested</sub>
 
@@ -96,21 +96,21 @@
   <sub>attested</sub>
 
 **3)** — 3) herbeiführen, verleihen: *gamayiṣyāmi śakreṇa samatāmapi te dhruvam*
-[MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179) = [≈Вульг. 14.7.27](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A007_S027) = ≈крит. 14,7.27c
+[MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179) = [≈Вульг. 14.7.27](mbh/14.7.html#v27) = ≈крит. 14,7.27c
 
 - **RU:** — 3) причинять, даровать: *gamayiṣyāmi śakreṇa samatāmapi te dhruvam*
-[MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179) = [≈Вульг. 14.7.27](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A007_S027) = ≈крит. 14,7.27c
+[MBH. 14,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.179) = [≈Вульг. 14.7.27](mbh/14.7.html#v27) = ≈крит. 14,7.27c
   <sub>attested</sub>
 
 **4)** — 4) zum Verständniss bringen, erklären: *svadharmasthaḥ paraṃ dharmaṃ budhyasva gamayasva*
 ([WEST.]: sequi, obsequi) *ca*
-[MBH. 3,11290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11290) = [≈Вульг. 3.149.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A149_S022) = ≈крит. 03,148.21a *na pratibaddhaṃ gamayati vakti na vā praśnamekamapi pṛṣṭaḥ . nigadati na ca śiṣyebhyaḥ kathaṃ sa śāstravijjñeyaḥ ..*
+[MBH. 3,11290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11290) = [≈Вульг. 3.149.22](mbh/3.149.html#v22) = ≈крит. 03,148.21a *na pratibaddhaṃ gamayati vakti na vā praśnamekamapi pṛṣṭaḥ . nigadati na ca śiṣyebhyaḥ kathaṃ sa śāstravijjñeyaḥ ..*
 [VARĀH. BṚH. S. 2,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?2,1) *ṭīkayati gamayatyarthāṇṭīkā*
 [H. 256](https://sanskrit-lexicon-scans.github.io/abch2/app1?256), Sch.
 
 - **RU:** — 4) доводить до понимания, объяснять: *svadharmasthaḥ paraṃ dharmaṃ budhyasva gamayasva*
 ([WEST.]: sequi, obsequi) *ca*
-[MBH. 3,11290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11290) = [≈Вульг. 3.149.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A149_S022) = ≈крит. 03,148.21a *na pratibaddhaṃ gamayati vakti na vā praśnamekamapi pṛṣṭaḥ . nigadati na ca śiṣyebhyaḥ kathaṃ sa śāstravijjñeyaḥ ..*
+[MBH. 3,11290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11290) = [≈Вульг. 3.149.22](mbh/3.149.html#v22) = ≈крит. 03,148.21a *na pratibaddhaṃ gamayati vakti na vā praśnamekamapi pṛṣṭaḥ . nigadati na ca śiṣyebhyaḥ kathaṃ sa śāstravijjñeyaḥ ..*
 [VARĀH. BṚH. S. 2,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?2,1) *ṭīkayati gamayatyarthāṇṭīkā*
 [H. 256](https://sanskrit-lexicon-scans.github.io/abch2/app1?256), схол.
   <sub>attested</sub>

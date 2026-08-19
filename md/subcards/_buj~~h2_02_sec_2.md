@@ -4,14 +4,14 @@
 
 
 **desid.1)** — desid. zu essen wünschen, hungrig sein: *annaṃ bubhukṣamāṇaḥ*
-[MBH. 13,5009.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5009) = [≈Вульг. 13.104.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S055) = крит. — *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
+[MBH. 13,5009.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5009) = [≈Вульг. 13.104.55](mbh/13.104.html#v55) = крит. — *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
 [BHĀG. P. 9,21,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,8) zu geniessen wünschen: *na sa rājyaṃ bubhukṣati*
-[MBH. 1,5667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5667) = [≈Вульг. 1.140.78](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S078) = крит. —
+[MBH. 1,5667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5667) = [≈Вульг. 1.140.78](mbh/1.140.html#v78) = крит. —
 
 - **RU:** — desid. желать есть, быть голодным: *annaṃ bubhukṣamāṇaḥ*
-[MBH. 13,5009.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5009) = [≈Вульг. 13.104.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S055) = крит. — *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
+[MBH. 13,5009.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5009) = [≈Вульг. 13.104.55](mbh/13.104.html#v55) = крит. — *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
 [BHĀG. P. 9,21,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,8) желать наслаждаться: *na sa rājyaṃ bubhukṣati*
-[MBH. 1,5667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5667) = [≈Вульг. 1.140.78](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S078) = крит. —
+[MBH. 1,5667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5667) = [≈Вульг. 1.140.78](mbh/1.140.html#v78) = крит. —
   <sub>attested</sub>
 
 **desid.cross-ref)** — Vgl. *bubhukṣā, bubhukṣita* (auch

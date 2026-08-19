@@ -209,9 +209,9 @@
 - **RU:** — 3〉 наставлять кого-л., побуждать, понуждать.
   <sub>attested</sub>
 
-**Mit {#pra#} 4〉)** — 4〉 zuweisen, zutheilen, zukommen lassen, gewähren [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37) = [≈Вульг. 1.1.216](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S216) = ≈крит. 01,1.157c.
+**Mit {#pra#} 4〉)** — 4〉 zuweisen, zutheilen, zukommen lassen, gewähren [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37) = [≈Вульг. 1.1.216](mbh/1.1.html#v216) = ≈крит. 01,1.157c.
 
-- **RU:** — 4〉 назначать, наделять, предоставлять, даровать [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37) = [≈Вульг. 1.1.216](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S216) = ≈крит. 01,1.157c.
+- **RU:** — 4〉 назначать, наделять, предоставлять, даровать [MBH. 1,170,37](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,170,37) = [≈Вульг. 1.1.216](mbh/1.1.html#v216) = ≈крит. 01,1.157c.
   <sub>attested</sub>
 
 **Mit {#pra#} <ab>Caus.</ab>)** — Caus. Jmd auffordern, antreiben.
@@ -241,16 +241,16 @@
 - **RU:** — 2〉 с уверенностью указывать, доказывать.
   <sub>attested</sub>
 
-**Mit {#saMpra#} 3〉)** — 3〉 Jmd anweisen, unterweisen. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) = [≈Вульг. 5.181.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A181_S008) = ≈крит. 05,182.8c fehlerhaft für *˚daśya*.
+**Mit {#saMpra#} 3〉)** — 3〉 Jmd anweisen, unterweisen. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) = [≈Вульг. 5.181.8](mbh/5.181.html#v8) = ≈крит. 05,182.8c fehlerhaft für *˚daśya*.
 
-- **RU:** — 3〉 наставлять кого-л., обучать. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) = [≈Вульг. 5.181.8](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A181_S008) = ≈крит. 05,182.8c ошибочно вм. *˚daśya*.
+- **RU:** — 3〉 наставлять кого-л., обучать. — *saṃpradiśya* [MBH. 5,7208](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7208) = [≈Вульг. 5.181.8](mbh/5.181.html#v8) = ≈крит. 05,182.8c ошибочно вм. *˚daśya*.
   <sub>attested</sub>
 
 **Mit {#prati#} 1〉)** — Mit *prati* Caus.
-— 1〉 anzeigen, bezeichnen, angeben [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9) = [≈Вульг. 12.12.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A012_S034) = ≈крит. 12,12.32a.
+— 1〉 anzeigen, bezeichnen, angeben [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9) = [≈Вульг. 12.12.34](mbh/12.12.html#v34) = ≈крит. 12,12.32a.
 
 - **RU:** — С *prati* Caus.
-— 1〉 указывать, обозначать, сообщать [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9) = [≈Вульг. 12.12.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A012_S034) = ≈крит. 12,12.32a.
+— 1〉 указывать, обозначать, сообщать [MBH. 12,365,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,365,9) = [≈Вульг. 12.12.34](mbh/12.12.html#v34) = ≈крит. 12,12.32a.
   <sub>attested</sub>
 
 **Mit {#prati#} 2〉)** — 2〉 gestehen, beichten [KĀRAṆḌ. 31,5].
@@ -290,9 +290,9 @@
 - **RU:** — 6〉 отряжать кого-л. с поручением к кому-л. (Dat.).
   <sub>attested</sub>
 
-**Mit {#sam#} <ab>Caus.</ab>)** — Caus. Jmd auffordern eine Erklärung zu geben, sich über Etwas auszusprechen. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5) = [≈Вульг. 14.1.18](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A001_S018) = ≈крит. 14,1.17a) *saṃcodita* st. *saṃdeśita*.
+**Mit {#sam#} <ab>Caus.</ab>)** — Caus. Jmd auffordern eine Erklärung zu geben, sich über Etwas auszusprechen. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5) = [≈Вульг. 14.1.18](mbh/14.1.html#v18) = ≈крит. 14,1.17a) *saṃcodita* st. *saṃdeśita*.
 
-- **RU:** — Caus. просить кого-л. дать объяснение, высказаться о чем-л.. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5) = [≈Вульг. 14.1.18](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A001_S018) = ≈крит. 14,1.17a) *saṃcodita* вместо *saṃdeśita*.
+- **RU:** — Caus. просить кого-л. дать объяснение, высказаться о чем-л.. v. l. ([MBH. 14,17,5](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?14,17,5) = [≈Вульг. 14.1.18](mbh/14.1.html#v18) = ≈крит. 14,1.17a) *saṃcodita* вместо *saṃdeśita*.
   <sub>attested</sub>
 
 **Mit {#anusam#})** — Mit *anusam* überweisen.

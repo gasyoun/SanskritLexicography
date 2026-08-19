@@ -14,7 +14,7 @@
 [KĀṬH. 34,5] in [Ind. St. 3,477.] Mit dopp. acc.: *abhijitā vai devā asurānimāṃ lokānabhyajayan*
 [PAÑCAV. BR. 20,8.] — *te cāndramasameva lokamabhijayante*
 [PRAŚNOP. 1,9]; hier ist wohl *abhijāyante* (s. u. *jan*) zu lesen. — desid. gewinnen —, überwinden wollen, angreifen: *vedaśrutibhirākhyānairarthānabhijigīṣati*
-[MBH. 12,8465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8465) = [≈Вульг. 12.234.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A234_S009) = ≈крит. 12,226.9a
+[MBH. 12,8465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8465) = [≈Вульг. 12.234.9](mbh/12.234.html#v9) = ≈крит. 12,226.9a
 [ŚĀṄKH. ŚR. 14,42,16.] *yuktasenasya nṛpateḥ parānabhijigīṣataḥ*
 [SUŚR. 1,122,3.]
 — Vgl. *abhijaya, abhijit* fgg.
@@ -30,7 +30,7 @@
 [KĀṬH. 34,5] в [Ind. St. 3,477.] с dopp. acc.: *abhijitā vai devā asurānimāṃ lokānabhyajayan*
 [PAÑCAV. BR. 20,8.] — *te cāndramasameva lokamabhijayante*
 [PRAŚNOP. 1,9]; здесь следует, по всей видимости, читать *abhijāyante* (см. *jan*). — desid. желать выиграть —, одолеть, нападать: *vedaśrutibhirākhyānairarthānabhijigīṣati*
-[MBH. 12,8465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8465) = [≈Вульг. 12.234.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A234_S009) = ≈крит. 12,226.9a
+[MBH. 12,8465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8465) = [≈Вульг. 12.234.9](mbh/12.234.html#v9) = ≈крит. 12,226.9a
 [ŚĀṄKH. ŚR. 14,42,16.] *yuktasenasya nṛpateḥ parānabhijigīṣataḥ*
 [SUŚR. 1,122,3.]
 — ср. *abhijaya, abhijit* сл.

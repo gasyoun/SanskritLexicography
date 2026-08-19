@@ -49,10 +49,10 @@
   <sub>attested</sub>
 
 **caus. — быть жрецом для кого-либо)** [KĀṬH. 23,9.] für Jmd (acc.) als Opferpriester thätig sein
-[MBH. 1,6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A165_S003) = ≈крит. 01,153.3a [12,12372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12372) = [≈Вульг. 12.328.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A328_S008) = ≈крит. 12,315.8a
+[MBH. 1,6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](mbh/1.165.html#v3) = ≈крит. 01,153.3a [12,12372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12372) = [≈Вульг. 12.328.8](mbh/12.328.html#v8) = ≈крит. 12,315.8a
 
 - **RU:** [KĀṬH. 23,9.] действовать ради кого-либо (acc.) в качестве жреца-исполнителя
-[MBH. 1,6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A165_S003) = ≈крит. 01,153.3a [12,12372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12372) = [≈Вульг. 12.328.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A328_S008) = ≈крит. 12,315.8a
+[MBH. 1,6375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6375) = [≈Вульг. 1.165.3](mbh/1.165.html#v3) = ≈крит. 01,153.3a [12,12372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12372) = [≈Вульг. 12.328.8](mbh/12.328.html#v8) = ≈крит. 12,315.8a
   <sub>attested</sub>
 
 **отсылки)** — Vgl. *saṃyāja, saṃyājya, samiṣṭayajus* .

@@ -25,7 +25,7 @@
   <sub>attested</sub>
 
 **4c)** — c) ein _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (er verhält sich ganz ruhig) *parjanyastatra kāraṇam ..*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S047) = ≈крит. 03,33.44c
+[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](mbh/3.32.html#v47) = ≈крит. 03,33.44c
 [PAÑCAT. 21,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,10) *tūṣṇīmāsyatām*
 [HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* (gehabe dich wohl) *ramasva ca*
 [R. 2,16,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,19) *sukhamāstāṃ bhavān*
@@ -36,7 +36,7 @@
 [BHAG. 2,54](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,54); vgl. 61 und 64.
 
 - **RU:** — c) _adv._: *pṛthivīṃ lāṅgaleneha bhiktvā vījaṃ vapatyuta . āste 'yaṃ karṣakastūṣṇīṃ* (он ведет себя совершенно спокойно) *parjanyastatra kāraṇam ..*
-[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A032_S047) = ≈крит. 03,33.44c
+[MBH. 3,1248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1248) = [≈Вульг. 3.32.47](mbh/3.32.html#v47) = ≈крит. 03,33.44c
 [PAÑCAT. 21,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,10) *tūṣṇīmāsyatām*
 [HIT. 57,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?57,17) *sukhamāsva* (будь здоров, благополучствуй) *ramasva ca*
 [R. 2,16,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,16,19) *sukhamāstāṃ bhavān*
@@ -115,7 +115,7 @@ ein Geschäft übertragen hat,
 **VN-2)** — 2) _n._
  a) das Sitzen, Sichsetzen: *jṛmbhāsitādikṛt (ālasyam)*
 [SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* schlechte, unschickliche Art zu sitzen
-[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669) = [≈Вульг. 3.233.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S021) = ≈крит. 03,222.20a
+[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669) = [≈Вульг. 3.233.21](mbh/3.233.html#v21) = ≈крит. 03,222.20a
 — b) der Ort, an dem man gesessen oder gewohnt hat: *idameṣāmāsitam*
 Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
 [R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* sitzen heissen: *devadattam*
@@ -126,7 +126,7 @@ Sch. zu [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://
 - **RU:** — 2) _n._
  a) «сидение, усаживание»: *jṛmbhāsitādikṛt (ālasyam)*
 [SĀH. D. 68,18.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?68,18) *durāsita* «дурная, неприличная манера сидеть»
-[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669) = [≈Вульг. 3.233.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S021) = ≈крит. 03,222.20a
+[MBH. 3,14669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14669) = [≈Вульг. 3.233.21](mbh/3.233.html#v21) = ≈крит. 03,222.20a
 — b) «место, где сидели или обитали»: *idameṣāmāsitam*
 схол. к [P. 3,4,76.](https://ashtadhyayi.com/sutraani/3/4/76) [2,2,13.](https://ashtadhyayi.com/sutraani/2/2/13) [3,68.](https://ashtadhyayi.com/sutraani/2/3/68) [VOP. 5,27.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,27) [26,130.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,130) *āsitaṃ śayitaṃ bhuktaṃ sūta rāmasya kīrtaya*
 [R. 2,58,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,10) — caus. *āsayati* «велеть сесть»: *devadattam*

@@ -23,12 +23,12 @@
 **2)** — 2) herbeikommen, gelangen zu, erreichen, über Jmd kommen: *pra vāṃ ghṛtācī bāhvordaghānā pari tmanā viṣurūpā jigāti*
 [ṚV. 7,84,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.084.html#rv07.084.01) *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
 [5,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04) *jarā balī ca māṃ tāta palitāni ca paryaguḥ*
-[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = [≈Вульг. 1.92.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A092_S003) = ≈крит. 01,87.3a
+[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = [≈Вульг. 1.92.3](mbh/1.92.html#v3) = ≈крит. 01,87.3a
 
 - **RU:** — 2) прийти, достигнуть, настигнуть кого-либо: *pra vāṃ ghṛtācī bāhvordaghānā pari tmanā viṣurūpā jigāti*
 [ṚV. 7,84,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.084.html#rv07.084.01) *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
 [5,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04) *jarā balī ca māṃ tāta palitāni ca paryaguḥ*
-[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = [≈Вульг. 1.92.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A092_S003) = ≈крит. 01,87.3a
+[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = [≈Вульг. 1.92.3](mbh/1.92.html#v3) = ≈крит. 01,87.3a
   <sub>attested</sub>
 
 **3)** — 3) umgehen so v. a. ausweichen: *pari tveṣasya durmatirmahī gāt*

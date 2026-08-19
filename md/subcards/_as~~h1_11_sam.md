@@ -8,9 +8,9 @@
 [ṚV. 7,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.04) *samasmiṃ jāyamāna āsata gnāḥ*
 [10,95,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.095.html#rv10.095.07) *tvāṃ yadagne paśavaḥ samāsate*
 [3,9,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.009.html#rv03.009.07) [AV. 12,2,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.51) [13,2,27.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.27) *sarve tatra samāsate*
-[MBH. 2,304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.304) = [≈Вульг. 2.7.23](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A007_S023) = ≈крит. 02,7.20c [379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.379) = [≈Вульг. 2.9.26](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A009_S026) = ≈крит. 02,9.22c *taṃ jātaṃ mātaraḥ sarvāḥ parivārya samāsate*
-[3,10474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10474) = [≈Вульг. 3.125.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A125_S018) = ≈крит. 03,125.15a *ime ca te sūryasamānavarcasaḥ samāsate vṛtrahaṇaḥ kratuṃ yathā*
-[1,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2104) = [≈Вульг. 1.55.8](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A055_S008) = крит. — mit dem instr.: *tato rājñā samāsīnāḥ sarve te vanavāsinaḥ*
+[MBH. 2,304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.304) = [≈Вульг. 2.7.23](mbh/2.7.html#v23) = ≈крит. 02,7.20c [379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.379) = [≈Вульг. 2.9.26](mbh/2.9.html#v26) = ≈крит. 02,9.22c *taṃ jātaṃ mātaraḥ sarvāḥ parivārya samāsate*
+[3,10474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10474) = [≈Вульг. 3.125.18](mbh/3.125.html#v18) = ≈крит. 03,125.15a *ime ca te sūryasamānavarcasaḥ samāsate vṛtrahaṇaḥ kratuṃ yathā*
+[1,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2104) = [≈Вульг. 1.55.8](mbh/1.55.html#v8) = крит. — mit dem instr.: *tato rājñā samāsīnāḥ sarve te vanavāsinaḥ*
 [SĀV. 6,27.]
 
 - **RU:** — *sam*
@@ -18,9 +18,9 @@
 [ṚV. 7,1,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.001.html#rv07.001.04) *samasmiṃ jāyamāna āsata gnāḥ*
 [10,95,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.095.html#rv10.095.07) *tvāṃ yadagne paśavaḥ samāsate*
 [3,9,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.009.html#rv03.009.07) [AV. 12,2,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.51) [13,2,27.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.27) *sarve tatra samāsate*
-[MBH. 2,304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.304) = [≈Вульг. 2.7.23](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A007_S023) = ≈крит. 02,7.20c [379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.379) = [≈Вульг. 2.9.26](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A009_S026) = ≈крит. 02,9.22c *taṃ jātaṃ mātaraḥ sarvāḥ parivārya samāsate*
-[3,10474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10474) = [≈Вульг. 3.125.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A125_S018) = ≈крит. 03,125.15a *ime ca te sūryasamānavarcasaḥ samāsate vṛtrahaṇaḥ kratuṃ yathā*
-[1,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2104) = [≈Вульг. 1.55.8](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A055_S008) = крит. — с instr.: *tato rājñā samāsīnāḥ sarve te vanavāsinaḥ*
+[MBH. 2,304.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.304) = [≈Вульг. 2.7.23](mbh/2.7.html#v23) = ≈крит. 02,7.20c [379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.379) = [≈Вульг. 2.9.26](mbh/2.9.html#v26) = ≈крит. 02,9.22c *taṃ jātaṃ mātaraḥ sarvāḥ parivārya samāsate*
+[3,10474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10474) = [≈Вульг. 3.125.18](mbh/3.125.html#v18) = ≈крит. 03,125.15a *ime ca te sūryasamānavarcasaḥ samāsate vṛtrahaṇaḥ kratuṃ yathā*
+[1,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2104) = [≈Вульг. 1.55.8](mbh/1.55.html#v8) = крит. — с instr.: *tato rājñā samāsīnāḥ sarve te vanavāsinaḥ*
 [SĀV. 6,27.]
   <sub>attested</sub>
 
@@ -45,12 +45,12 @@
   <sub>attested</sub>
 
 **4)** — 4) es mit Jmd (acc.) oder Etwas aufnehmen, gewachsen sein, widerstehen: *kastānyudhi samāsīta*
-[MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) = [≈Вульг. 3.10.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A010_S026) = ≈крит. 03,11.25c *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
-[14,822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.822) = [≈Вульг. 14.29.6](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A029_S006) = ≈крит. 14,29.6a *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktāḥ śaravegaṃ samāsitum*
+[MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) = [≈Вульг. 3.10.26](mbh/3.10.html#v26) = ≈крит. 03,11.25c *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
+[14,822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.822) = [≈Вульг. 14.29.6](mbh/14.29.html#v6) = ≈крит. 14,29.6a *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktāḥ śaravegaṃ samāsitum*
 [R. 5,36,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,50) Vgl. — *pratisam* .
 
 - **RU:** — 4) противостоять кому-либо (acc.) или чему-либо, быть способным выдержать, сопротивляться: *kastānyudhi samāsīta*
-[MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) = [≈Вульг. 3.10.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A010_S026) = ≈крит. 03,11.25c *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
-[14,822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.822) = [≈Вульг. 14.29.6](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A029_S006) = ≈крит. 14,29.6a *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktāḥ śaravegaṃ samāsitum*
+[MBH. 3,372.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.372) = [≈Вульг. 3.10.26](mbh/3.10.html#v26) = ≈крит. 03,11.25c *taṃ samācakṣva yaḥ samāsīta māṃ mṛdhe*
+[14,822.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.822) = [≈Вульг. 14.29.6](mbh/14.29.html#v6) = ≈крит. 14,29.6a *na nāgā na ca gandharvāḥ — tava rāma raṇe śaktāḥ śaravegaṃ samāsitum*
 [R. 5,36,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,50) ср. — *pratisam* .
   <sub>attested</sub>

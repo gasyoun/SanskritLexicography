@@ -16,15 +16,15 @@
 [ṚV. 10,48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.05) *parā bhāgamoṣadhīnāṃ jayantām*
 [87,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.18) *asurā sarvaṃ parājayanta*
 [ŚAT. BR. 1,5,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,4,11) act.: *bahu vittaṃ parājaiṣīḥ ācakṣva vittaṃ kaunteya yadi te 'styaparājitam*
-[MBH. 2,2141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2141) = [≈Вульг. 2.65.2](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S002) = ≈крит. 02,58.2c [2167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2167) = [≈Вульг. 2.65.28](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S028) = ≈крит. 02,58.27a [2204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2204) = [≈Вульг. 2.67.18](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A067_S018) = ≈крит. 02,60.14a *yadātmānaṃ parājayeḥ* (so ist mit [WEST.] zu lesen)
-[2170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2170) = [≈Вульг. 2.65.31](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S031) = ≈крит. 02,58.30a
+[MBH. 2,2141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2141) = [≈Вульг. 2.65.2](mbh/2.65.html#v2) = ≈крит. 02,58.2c [2167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2167) = [≈Вульг. 2.65.28](mbh/2.65.html#v28) = ≈крит. 02,58.27a [2204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2204) = [≈Вульг. 2.67.18](mbh/2.67.html#v18) = ≈крит. 02,60.14a *yadātmānaṃ parājayeḥ* (so ist mit [WEST.] zu lesen)
+[2170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2170) = [≈Вульг. 2.65.31](mbh/2.65.html#v31) = ≈крит. 02,58.30a
 
 - **RU:** 1) что-либо (acc.) проигрывать, лишаться чего-либо: *ahamindro na parā jigya iddhanam*
 [ṚV. 10,48,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.05) *parā bhāgamoṣadhīnāṃ jayantām*
 [87,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.087.html#rv10.087.18) *asurā sarvaṃ parājayanta*
 [ŚAT. BR. 1,5,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,4,11) act.: *bahu vittaṃ parājaiṣīḥ ācakṣva vittaṃ kaunteya yadi te 'styaparājitam*
-[MBH. 2,2141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2141) = [≈Вульг. 2.65.2](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S002) = ≈крит. 02,58.2c [2167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2167) = [≈Вульг. 2.65.28](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S028) = ≈крит. 02,58.27a [2204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2204) = [≈Вульг. 2.67.18](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A067_S018) = ≈крит. 02,60.14a *yadātmānaṃ parājayeḥ* (так следует читать с [WEST.])
-[2170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2170) = [≈Вульг. 2.65.31](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S031) = ≈крит. 02,58.30a
+[MBH. 2,2141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2141) = [≈Вульг. 2.65.2](mbh/2.65.html#v2) = ≈крит. 02,58.2c [2167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2167) = [≈Вульг. 2.65.28](mbh/2.65.html#v28) = ≈крит. 02,58.27a [2204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2204) = [≈Вульг. 2.67.18](mbh/2.67.html#v18) = ≈крит. 02,60.14a *yadātmānaṃ parājayeḥ* (так следует читать с [WEST.])
+[2170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2170) = [≈Вульг. 2.65.31](mbh/2.65.html#v31) = ≈крит. 02,58.30a
   <sub>attested</sub>
 
 **2)** — 2) besiegt werden, unterliegen: *ubhā jigyathurna parā jayethe*
@@ -33,7 +33,7 @@
 [TS. 2,3,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,1)
 [ŚAT. BR. 1,5,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,6) [4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,4,6)
 [KAUŚ. 15.] *na ca senā parājayyāt*
-[MBH. 4,1604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604) = [≈Вульг. 4.51.22](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A051_S022) = ≈крит. 04,46.18a *parājita*
+[MBH. 4,1604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604) = [≈Вульг. 4.51.22](mbh/4.51.html#v22) = ≈крит. 04,46.18a *parājita*
 [ṚV. 10,84,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.084.html#rv10.084.07)
 [AV. 3,1,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.06) [5,21,9](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.021.html#av05.021.09); vgl. u.
 [4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.04)
@@ -44,7 +44,7 @@
 [TS. 2,3,2,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,3,2,1)
 [ŚAT. BR. 1,5,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,6) [4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,4,6)
 [KAUŚ. 15.] *na ca senā parājayyāt*
-[MBH. 4,1604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604) = [≈Вульг. 4.51.22](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A051_S022) = ≈крит. 04,46.18a *parājita*
+[MBH. 4,1604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1604) = [≈Вульг. 4.51.22](mbh/4.51.html#v22) = ≈крит. 04,46.18a *parājita*
 [ṚV. 10,84,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.084.html#rv10.084.07)
 [AV. 3,1,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.06) [5,21,9](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.021.html#av05.021.09); ср. u.
 [4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.001.html#av03.001.04)
@@ -64,26 +64,26 @@ Sch. *tāṃ parājayamānām — prīteḥ (rāvaṇasya)*
   <sub>attested</sub>
 
 **4)** — 4) besiegen, überwinden: *tasmāddroṇaḥ parājaiṣṭa mām*
-[MBH. 1,6378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378) = [≈Вульг. 1.165.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A165_S006) = крит. — *parājayiṣye kauravyaṃ kavacenāpi rakṣitam*
-[7,3860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3860) = [≈Вульг. 7.103.18](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A103_S018) = ≈крит. 07,78.18a *naite yudhi parājetuṃ śakyā devagaṇairapi*
-[2,1717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1717) = [≈Вульг. 2.48.16](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A048_S016) = ≈крит. 02,44.15c *parājitya ca vāsukim*
+[MBH. 1,6378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378) = [≈Вульг. 1.165.6](mbh/1.165.html#v6) = крит. — *parājayiṣye kauravyaṃ kavacenāpi rakṣitam*
+[7,3860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3860) = [≈Вульг. 7.103.18](mbh/7.103.html#v18) = ≈крит. 07,78.18a *naite yudhi parājetuṃ śakyā devagaṇairapi*
+[2,1717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1717) = [≈Вульг. 2.48.16](mbh/2.48.html#v16) = ≈крит. 02,44.15c *parājitya ca vāsukim*
 [R. 3,36,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,36,13)
 [MĀLAV. 90.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?90) *parājayiṣata* (sic) *yavanāḥ*
 [DAŚAK. 149,2.] *yaṃ parājayase mṛṣā* (im Process)
 [YĀJÑ. 2,75.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,75) *khaṃ parājayamāno 'sāvunnatyā* (*asau* sc. *adriḥ*)
 [BHAṬṬ. 8,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,9) act.: *yastvāṃ yuddhe parājayet*
-[MBH. 7,3004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3004) = [≈Вульг. 7.84.30](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A084_S030) = ≈крит. 07,60.30a [1,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2303) = [≈Вульг. 1.62.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A062_S021) = ≈крит. 01,56.20a [14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A081_S021) = ≈крит. 14,82.22a *tato 'gnirditijān — parājayāmāsa*
+[MBH. 7,3004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3004) = [≈Вульг. 7.84.30](mbh/7.84.html#v30) = ≈крит. 07,60.30a [1,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2303) = [≈Вульг. 1.62.21](mbh/1.62.html#v21) = ≈крит. 01,56.20a [14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](mbh/14.81.html#v21) = ≈крит. 14,82.22a *tato 'gnirditijān — parājayāmāsa*
 [HARIV. 13946.](https://sanskrit-lexicon-scans.github.io/hariv?13946) *kuntīsutamakṣavatyāṃ parājaiṣīt*
-[MBH. 3,223.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.223) = [≈Вульг. 3.4.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A004_S005) = ≈крит. 03,5.5c *tānglahe — parājayat*
-[2,2171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2171) = [≈Вульг. 2.65.32](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S032) = ≈крит. 02,58.31c *parājita* besiegt, überwunden, überwältigt (vgl. u. 2)
+[MBH. 3,223.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.223) = [≈Вульг. 3.4.5](mbh/3.4.html#v5) = ≈крит. 03,5.5c *tānglahe — parājayat*
+[2,2171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2171) = [≈Вульг. 2.65.32](mbh/2.65.html#v32) = ≈крит. 02,58.31c *parājita* besiegt, überwunden, überwältigt (vgl. u. 2)
 [AK. 2,8,2,80.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,80)
 [H. 805.](https://sanskrit-lexicon-scans.github.io/abch2/app1?805)
-[MBH. 14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A081_S021) = ≈крит. 14,82.22a
+[MBH. 14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](mbh/14.81.html#v21) = ≈крит. 14,82.22a
 [R. 3,56,53.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,53)
 [KUMĀRAS. 1,41.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,41)
 [BHĀG. P. 1,14,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,42) [8,11,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,48)
 [DEV. 2,2.] im Spiele
-[MBH. 2,2163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2163) = [≈Вульг. 2.65.24](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S024) = ≈крит. 02,58.23c
+[MBH. 2,2163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2163) = [≈Вульг. 2.65.24](mbh/2.65.html#v24) = ≈крит. 02,58.23c
 [N. 26,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,18)
 [PAÑCAT. I,431.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,431) im Process
 [M. 8,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,58)
@@ -92,26 +92,26 @@ Sch. *tāṃ parājayamānām — prīteḥ (rāvaṇasya)*
 [R. 2,65,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,16)
 
 - **RU:** — 4) побеждать, одолевать: *tasmāddroṇaḥ parājaiṣṭa mām*
-[MBH. 1,6378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378) = [≈Вульг. 1.165.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A165_S006) = крит. — *parājayiṣye kauravyaṃ kavacenāpi rakṣitam*
-[7,3860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3860) = [≈Вульг. 7.103.18](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A103_S018) = ≈крит. 07,78.18a *naite yudhi parājetuṃ śakyā devagaṇairapi*
-[2,1717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1717) = [≈Вульг. 2.48.16](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A048_S016) = ≈крит. 02,44.15c *parājitya ca vāsukim*
+[MBH. 1,6378.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6378) = [≈Вульг. 1.165.6](mbh/1.165.html#v6) = крит. — *parājayiṣye kauravyaṃ kavacenāpi rakṣitam*
+[7,3860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3860) = [≈Вульг. 7.103.18](mbh/7.103.html#v18) = ≈крит. 07,78.18a *naite yudhi parājetuṃ śakyā devagaṇairapi*
+[2,1717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1717) = [≈Вульг. 2.48.16](mbh/2.48.html#v16) = ≈крит. 02,44.15c *parājitya ca vāsukim*
 [R. 3,36,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,36,13)
 [MĀLAV. 90.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?90) *parājayiṣata* (sic) *yavanāḥ*
 [DAŚAK. 149,2.] *yaṃ parājayase mṛṣā* (в тяжбе)
 [YĀJÑ. 2,75.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,75) *khaṃ parājayamāno 'sāvunnatyā* (*asau* а именно *adriḥ*)
 [BHAṬṬ. 8,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,9) act.: *yastvāṃ yuddhe parājayet*
-[MBH. 7,3004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3004) = [≈Вульг. 7.84.30](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A084_S030) = ≈крит. 07,60.30a [1,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2303) = [≈Вульг. 1.62.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A062_S021) = ≈крит. 01,56.20a [14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A081_S021) = ≈крит. 14,82.22a *tato 'gnirditijān — parājayāmāsa*
+[MBH. 7,3004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3004) = [≈Вульг. 7.84.30](mbh/7.84.html#v30) = ≈крит. 07,60.30a [1,2303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2303) = [≈Вульг. 1.62.21](mbh/1.62.html#v21) = ≈крит. 01,56.20a [14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](mbh/14.81.html#v21) = ≈крит. 14,82.22a *tato 'gnirditijān — parājayāmāsa*
 [HARIV. 13946.](https://sanskrit-lexicon-scans.github.io/hariv?13946) *kuntīsutamakṣavatyāṃ parājaiṣīt*
-[MBH. 3,223.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.223) = [≈Вульг. 3.4.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A004_S005) = ≈крит. 03,5.5c *tānglahe — parājayat*
-[2,2171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2171) = [≈Вульг. 2.65.32](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S032) = ≈крит. 02,58.31c *parājita* побежденный, сломленный, подавленный (ср. u. 2)
+[MBH. 3,223.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.223) = [≈Вульг. 3.4.5](mbh/3.4.html#v5) = ≈крит. 03,5.5c *tānglahe — parājayat*
+[2,2171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2171) = [≈Вульг. 2.65.32](mbh/2.65.html#v32) = ≈крит. 02,58.31c *parājita* побежденный, сломленный, подавленный (ср. u. 2)
 [AK. 2,8,2,80.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,80)
 [H. 805.](https://sanskrit-lexicon-scans.github.io/abch2/app1?805)
-[MBH. 14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A081_S021) = ≈крит. 14,82.22a
+[MBH. 14,2422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2422) = [≈Вульг. 14.81.21](mbh/14.81.html#v21) = ≈крит. 14,82.22a
 [R. 3,56,53.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,53)
 [KUMĀRAS. 1,41.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,41)
 [BHĀG. P. 1,14,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,42) [8,11,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,11,48)
 [DEV. 2,2.] в игре
-[MBH. 2,2163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2163) = [≈Вульг. 2.65.24](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S024) = ≈крит. 02,58.23c
+[MBH. 2,2163.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2163) = [≈Вульг. 2.65.24](mbh/2.65.html#v24) = ≈крит. 02,58.23c
 [N. 26,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?26,18)
 [PAÑCAT. I,431.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,431) в тяжбе
 [M. 8,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,58)

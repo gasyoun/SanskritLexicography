@@ -183,9 +183,9 @@
 
 - **RU:** — 4) давать перейти на (Loc.), передавать.
 
-**samCaus.5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9) = [≈Вульг. 5.7.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A007_S012) = ≈крит. 05,7.9c.
+**samCaus.5)** — 5〉 tödten (nach [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9) = [≈Вульг. 5.7.12](mbh/5.7.html#v12) = ≈крит. 05,7.9c.
 
-- **RU:** — 5) умерщвлять (по [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9) = [≈Вульг. 5.7.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A007_S012) = ≈крит. 05,7.9c.
+- **RU:** — 5) умерщвлять (по [NĪLAK.]) [MBH. 5,142,9](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,142,9) = [≈Вульг. 5.7.12](mbh/5.7.html#v12) = ≈крит. 05,7.9c.
 
 **samDesid.header)** — *Desid.
 

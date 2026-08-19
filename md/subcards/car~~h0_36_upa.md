@@ -27,9 +27,9 @@
 [ŚAT. BR. 3,3,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,2,3) *madantībhiḥ*
 [4,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,10) *yathā copacaredenam*
 [M. 4,254.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,254)
-[MBH. 1,4299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4299) = [≈Вульг. 1.106.25](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A106_S025) = ≈крит. 01,100.24c [3,14667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14667) = [≈Вульг. 3.233.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S019) = ≈крит. 03,222.18c
+[MBH. 1,4299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4299) = [≈Вульг. 1.106.25](mbh/1.106.html#v25) = ≈крит. 01,100.24c [3,14667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14667) = [≈Вульг. 3.233.19](mbh/3.233.html#v19) = ≈крит. 03,222.18c
 [R. 1,9,69.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,69) *upacīrṇo gururmithyā bhavatā*
-[MBH. 7,9062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9062) = [≈Вульг. 7.196.34](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A196_S034) = ≈крит. 07,167.32c *samamupacara bhadre supriyaṃ vāpriyaṃ vā* (zu einem öffentlichen Mädchen gesprochen)
+[MBH. 7,9062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9062) = [≈Вульг. 7.196.34](mbh/7.196.html#v34) = ≈крит. 07,167.32c *samamupacara bhadre supriyaṃ vāpriyaṃ vā* (zu einem öffentlichen Mädchen gesprochen)
 [MṚCCH. 13,16. 120,23.] *yatnādupacaryatām*
 [ŚĀK. 43,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?43,12)
 [RAGH. 5,62.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,62)
@@ -37,25 +37,25 @@
 [DAŚAK. 59,8.]
 [BHĀG. P. 4,28,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,43) *vidyādharībhirupacīrṇavapuḥ*
 [3,23,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,38) *sa mocayitvā tānaśvānupacarya ca śāstrataḥ*
-[MBH. 3,2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S033) = ≈крит. 03,71.30c *bhartāram — upācarat . upāyaiḥ śvetakākīyaiḥ*
-[1,1879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1879) = [≈Вульг. 1.47.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A047_S011) = ≈крит. 01,43.10a *tatra daivatakanyābhirāsanenopacaryate*
-[13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) = [≈Вульг. 13.107.80](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A107_S080) = ≈крит. 13,110.74a *kṛtrimasaṃvidhābhiḥ*
+[MBH. 3,2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](mbh/3.73.html#v33) = ≈крит. 03,71.30c *bhartāram — upācarat . upāyaiḥ śvetakākīyaiḥ*
+[1,1879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1879) = [≈Вульг. 1.47.11](mbh/1.47.html#v11) = ≈крит. 01,43.10a *tatra daivatakanyābhirāsanenopacaryate*
+[13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) = [≈Вульг. 13.107.80](mbh/13.107.html#v80) = ≈крит. 13,110.74a *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
 [DAŚAK.] in [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
-[MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) = [≈Вульг. 1.3.104](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S104) = крит. — *anṛtenopacīrṇo hi hanyādeva*
-[4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) = [≈Вульг. 4.4.22](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S022) = ≈крит. 04,4.16a *nikṛtyopacaranvadhyaḥ*
-[3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) = [≈Вульг. 3.12.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S007) = ≈крит. 03,13.6a med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) = [≈Вульг. 13.71.3](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A071_S003) = ≈крит. 13,70.3a *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* unterstützt
-[5,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.21) = [≈Вульг. 5.1.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A001_S021) = ≈крит. 05,1.20c *upacarita = varivasita* u. s. w.
+[MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) = [≈Вульг. 1.3.104](mbh/1.3.html#v104) = крит. — *anṛtenopacīrṇo hi hanyādeva*
+[4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) = [≈Вульг. 4.4.22](mbh/4.4.html#v22) = ≈крит. 04,4.16a *nikṛtyopacaranvadhyaḥ*
+[3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) = [≈Вульг. 3.12.7](mbh/3.12.html#v7) = ≈крит. 03,13.6a med. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) = [≈Вульг. 13.71.3](mbh/13.71.html#v3) = ≈крит. 13,70.3a *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* unterstützt
+[5,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.21) = [≈Вульг. 5.1.21](mbh/5.1.html#v21) = ≈крит. 05,1.20c *upacarita = varivasita* u. s. w.
 [AK. 3,2,51.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,51)
 
 - **RU:** — 2) подходить, чтобы прислуживать, помогать кому-либо, служить, прислуживать; с acc. лица: *sa yo hainaṃ śobhanenopacarati*
 [ŚAT. BR. 3,3,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,2,3) *madantībhiḥ*
 [4,3,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,3,10) *yathā copacaredenam*
 [M. 4,254.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,254)
-[MBH. 1,4299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4299) = [≈Вульг. 1.106.25](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A106_S025) = ≈крит. 01,100.24c [3,14667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14667) = [≈Вульг. 3.233.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S019) = ≈крит. 03,222.18c
+[MBH. 1,4299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4299) = [≈Вульг. 1.106.25](mbh/1.106.html#v25) = ≈крит. 01,100.24c [3,14667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14667) = [≈Вульг. 3.233.19](mbh/3.233.html#v19) = ≈крит. 03,222.18c
 [R. 1,9,69.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,69) *upacīrṇo gururmithyā bhavatā*
-[MBH. 7,9062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9062) = [≈Вульг. 7.196.34](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A196_S034) = ≈крит. 07,167.32c *samamupacara bhadre supriyaṃ vāpriyaṃ vā* (сказано публичной девушке)
+[MBH. 7,9062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9062) = [≈Вульг. 7.196.34](mbh/7.196.html#v34) = ≈крит. 07,167.32c *samamupacara bhadre supriyaṃ vāpriyaṃ vā* (сказано публичной девушке)
 [MṚCCH. 13,16. 120,23.] *yatnādupacaryatām*
 [ŚĀK. 43,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?43,12)
 [RAGH. 5,62.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,62)
@@ -63,16 +63,16 @@
 [DAŚAK. 59,8.]
 [BHĀG. P. 4,28,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,43) *vidyādharībhirupacīrṇavapuḥ*
 [3,23,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,38) *sa mocayitvā tānaśvānupacarya ca śāstrataḥ*
-[MBH. 3,2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S033) = ≈крит. 03,71.30c *bhartāram — upācarat . upāyaiḥ śvetakākīyaiḥ*
-[1,1879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1879) = [≈Вульг. 1.47.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A047_S011) = ≈крит. 01,43.10a *tatra daivatakanyābhirāsanenopacaryate*
-[13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) = [≈Вульг. 13.107.80](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A107_S080) = ≈крит. 13,110.74a *kṛtrimasaṃvidhābhiḥ*
+[MBH. 3,2884.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2884) = [≈Вульг. 3.73.33](mbh/3.73.html#v33) = ≈крит. 03,71.30c *bhartāram — upācarat . upāyaiḥ śvetakākīyaiḥ*
+[1,1879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1879) = [≈Вульг. 1.47.11](mbh/1.47.html#v11) = ≈крит. 01,43.10a *tatra daivatakanyābhirāsanenopacaryate*
+[13,5284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5284) = [≈Вульг. 13.107.80](mbh/13.107.html#v80) = ≈крит. 13,110.74a *kṛtrimasaṃvidhābhiḥ*
 [RAGH. 14,17.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,17) *snānena bhojanairvastraiḥ*
 [VID. 252.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?252) *mitratvenopacaritasya*
 [DAŚAK.] в [BENF. Chr. 199,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?199) *na yuktaṃ bhavatāhamanṛtenopacaritum*
-[MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) = [≈Вульг. 1.3.104](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U03_A003_S104) = крит. — *anṛtenopacīrṇo hi hanyādeva*
-[4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) = [≈Вульг. 4.4.22](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S022) = ≈крит. 04,4.16a *nikṛtyopacaranvadhyaḥ*
-[3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) = [≈Вульг. 3.12.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S007) = ≈крит. 03,13.6a мед. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) = [≈Вульг. 13.71.3](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A071_S003) = ≈крит. 13,70.3a *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* поддерживаем
-[5,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.21) = [≈Вульг. 5.1.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A001_S021) = ≈крит. 05,1.20c *upacarita = varivasita* и т.д.
+[MBH. 1,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.769) = [≈Вульг. 1.3.104](mbh/1.3.html#v104) = крит. — *anṛtenopacīrṇo hi hanyādeva*
+[4,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.104) = [≈Вульг. 4.4.22](mbh/4.4.html#v22) = ≈крит. 04,4.16a *nikṛtyopacaranvadhyaḥ*
+[3,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.467) = [≈Вульг. 3.12.7](mbh/3.12.html#v7) = ≈крит. 03,13.6a мед. [13,3037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3037) [3487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3487) = [≈Вульг. 13.71.3](mbh/13.71.html#v3) = ≈крит. 13,70.3a *tairupacaryamāṇā hanyuḥ sametāndhṛtarāṣṭrasutān* поддерживаем
+[5,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.21) = [≈Вульг. 5.1.21](mbh/5.1.html#v21) = ≈крит. 05,1.20c *upacarita = varivasita* и т.д.
 [AK. 3,2,51.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,51)
   <sub>attested</sub>
 

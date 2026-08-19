@@ -4,10 +4,10 @@
 
 
 **1)** — *samupa* geniessen so v. a. der Liebe pflegen mit (acc.): *vaśyāṃ kumārīṃ balato ye tāṃ samupabhuñjate*
-[MBH. 13,2482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2482) = [≈Вульг. 13.45.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A045_S022) = ≈крит. 13,45.23c [Verz. d. Oxf. H. 259,b,26.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259)
+[MBH. 13,2482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2482) = [≈Вульг. 13.45.22](mbh/13.45.html#v22) = ≈крит. 13,45.23c [Verz. d. Oxf. H. 259,b,26.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259)
 
 - **RU:** — *samupa* вкушать, так преим. предаваться любви с (acc.): *vaśyāṃ kumārīṃ balato ye tāṃ samupabhuñjate*
-[MBH. 13,2482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2482) = [≈Вульг. 13.45.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A045_S022) = ≈крит. 13,45.23c [Verz. d. Oxf. H. 259,b,26.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259)
+[MBH. 13,2482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2482) = [≈Вульг. 13.45.22](mbh/13.45.html#v22) = ≈крит. 13,45.23c [Verz. d. Oxf. H. 259,b,26.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?259)
   <sub>attested</sub>
 
 **nachtr)** — Vgl. *samupabhoga* .

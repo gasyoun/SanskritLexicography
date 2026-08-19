@@ -248,9 +248,9 @@
 - **RU:** — d〉 испытанный, вкушенный.
   <sub>attested</sub>
 
-**Mit-aavis-5e)** — e〉 gewonnen, erarbeitet [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) = [≈Вульг. 13.7.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A007_S002) = ≈крит. 13,7.2a fehlerhaft für *nivi˚*.
+**Mit-aavis-5e)** — e〉 gewonnen, erarbeitet [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) = [≈Вульг. 13.7.2](mbh/13.7.html#v2) = ≈крит. 13,7.2a fehlerhaft für *nivi˚*.
 
-- **RU:** — e〉 добытый, заработанный [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) = [≈Вульг. 13.7.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A007_S002) = ≈крит. 13,7.2a ошибочно вм. *nivi˚*.
+- **RU:** — e〉 добытый, заработанный [GAUT.] — *nirviśantyāṃ* [MBH. 13,345](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) = [≈Вульг. 13.7.2](mbh/13.7.html#v2) = ≈крит. 13,7.2a ошибочно вм. *nivi˚*.
   <sub>attested</sub>
 
 **Mit-aavis-des)** — Desid. eine gemeinsame Wohnung beziehen wollen.

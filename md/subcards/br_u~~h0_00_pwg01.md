@@ -16,8 +16,8 @@
 [6,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.038.html#rv06.038.02) *sa indro brāhmaṇo bruvāṇa iṣṭakāmupādhatta* sich ausgebend für
 [TBR. 1,1,2,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,2,5)
 [ŚAT. BR. 2,1,2,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,14) [3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,3,3) [4,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,4,19) [1,6,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,1,8) *paurogavo bruvāṇo 'haṃ ballavo nāma*
-[MBH. 4,28.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.28) = [≈Вульг. 4.2.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S001) = ≈крит. 04,2.1c [560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.560) = [≈Вульг. 4.19.4](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S004) = крит. — *brahmabruvāṇa* sich für einen Brahmanen ausgebend
-[5,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2427) = [≈Вульг. 5.62.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A062_S017) = ≈крит. 05,61.17c *gautamabruvāṇa, gautamo vā bruvāṇaḥ*
+[MBH. 4,28.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.28) = [≈Вульг. 4.2.1](mbh/4.2.html#v1) = ≈крит. 04,2.1c [560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.560) = [≈Вульг. 4.19.4](mbh/4.19.html#v4) = крит. — *brahmabruvāṇa* sich für einen Brahmanen ausgebend
+[5,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2427) = [≈Вульг. 5.62.17](mbh/5.62.html#v17) = ≈крит. 05,61.17c *gautamabruvāṇa, gautamo vā bruvāṇaḥ*
 [Ind. St. 1,38.] *brūte kathā svayameva* erzählt sich selbst
 [P. 3,1,89](https://ashtadhyayi.com/sutraani/3/1/89), Vārtt., Sch.
 [VOP. 24,12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,12) Vielleicht sich sagen lassen, fragen nach (wie
@@ -33,8 +33,8 @@
 [6,38,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.038.html#rv06.038.02) *sa indro brāhmaṇo bruvāṇa iṣṭakāmupādhatta* выдавая себя за
 [TBR. 1,1,2,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,2,5)
 [ŚAT. BR. 2,1,2,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,2,14) [3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,3,3) [4,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,4,19) [1,6,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,1,8) *paurogavo bruvāṇo 'haṃ ballavo nāma*
-[MBH. 4,28.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.28) = [≈Вульг. 4.2.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S001) = ≈крит. 04,2.1c [560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.560) = [≈Вульг. 4.19.4](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S004) = крит. — *brahmabruvāṇa* выдавая себя за брахмана
-[5,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2427) = [≈Вульг. 5.62.17](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A062_S017) = ≈крит. 05,61.17c *gautamabruvāṇa, gautamo vā bruvāṇaḥ*
+[MBH. 4,28.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.28) = [≈Вульг. 4.2.1](mbh/4.2.html#v1) = ≈крит. 04,2.1c [560.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.560) = [≈Вульг. 4.19.4](mbh/4.19.html#v4) = крит. — *brahmabruvāṇa* выдавая себя за брахмана
+[5,2427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2427) = [≈Вульг. 5.62.17](mbh/5.62.html#v17) = ≈крит. 05,61.17c *gautamabruvāṇa, gautamo vā bruvāṇaḥ*
 [Ind. St. 1,38.] *brūte kathā svayameva* рассказывает о себе самом
 [P. 3,1,89](https://ashtadhyayi.com/sutraani/3/1/89), Вартт., схол.
 [VOP. 24,12.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,12) Возможно — позволять говорить себе, спрашивать о (как
@@ -44,10 +44,10 @@
   <sub>attested</sub>
 
 **2b)** — b) act.: *bruvanballavajātīyaḥ* sich ausgebend für
-[MBH. 4,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.558) = [≈Вульг. 4.19.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S002) = крит. —
+[MBH. 4,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.558) = [≈Вульг. 4.19.2](mbh/4.19.html#v2) = крит. —
 
 - **RU:** — b) act.: *bruvanballavajātīyaḥ* выдавая себя за
-[MBH. 4,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.558) = [≈Вульг. 4.19.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S002) = крит. —
+[MBH. 4,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.558) = [≈Вульг. 4.19.2](mbh/4.19.html#v2) = крит. —
   <sub>attested</sub>
 
 **closing-ref)** — Vgl. *bruva* .

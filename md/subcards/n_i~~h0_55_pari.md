@@ -31,10 +31,10 @@
   <sub>attested</sub>
 
 **2)** — 2) insbes. ein Paar oder eine Braut um das Feuer herumführen (als Hochzeitscerimonie): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
-[MBH. 1,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7340) = [≈Вульг. 1.196.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A196_S022) = ≈крит. 01,188.21a *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
+[MBH. 1,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7340) = [≈Вульг. 1.196.22](mbh/1.196.html#v22) = ≈крит. 01,188.21a *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
 [KUMĀRAS. 7,80.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,80) *agṛhṇāṃ yacca te pāṇimagniṃ paryaṇayaṃ ca yat*
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8) Daher ein Mädchen heirathen, sich mit einem Mädchen vermählen: *varayitvā yathānyāyaṃ mantravatpariṇīya ca*
-[MBH. 1,6134.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6134) = [≈Вульг. 1.155.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S042) = крит. — *rājakanyāṃ yaḥ pariṇayati*
+[MBH. 1,6134.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6134) = [≈Вульг. 1.155.42](mbh/1.155.html#v42) = крит. — *rājakanyāṃ yaḥ pariṇayati*
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
@@ -42,10 +42,10 @@
 [7,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,82) [10,180.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,180) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [65,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,23) [HIT. 28,3.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?28,3) [VET. in LA. 20. 8.]
 
 - **RU:** — 2) особ. обводить пару или невесту вокруг огня (как свадебный обряд): *pradakṣiṇaṃ tau pragṛhītapāṇī parīṇayāmāsa sa vedapāragaḥ*
-[MBH. 1,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7340) = [≈Вульг. 1.196.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A196_S022) = ≈крит. 01,188.21a *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
+[MBH. 1,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7340) = [≈Вульг. 1.196.22](mbh/1.196.html#v22) = ≈крит. 01,188.21a *tau daṃpatī triḥ pariṇīya vahnim (purodhāḥ)*
 [KUMĀRAS. 7,80.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,80) *agṛhṇāṃ yacca te pāṇimagniṃ paryaṇayaṃ ca yat*
 [R. 2,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,8) Отсюда жениться на девушке, вступать в брак с девушкой: *varayitvā yathānyāyaṃ mantravatpariṇīya ca*
-[MBH. 1,6134.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6134) = [≈Вульг. 1.155.42](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S042) = крит. — *rājakanyāṃ yaḥ pariṇayati*
+[MBH. 1,6134.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6134) = [≈Вульг. 1.155.42](mbh/1.155.html#v42) = крит. — *rājakanyāṃ yaḥ pariṇayati*
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) [10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,10)
 [HIT. 63,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,20) [21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?63,21)
 [RĀJA-TAR. 3,436.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,436)
@@ -55,23 +55,23 @@
 
 **3)** — 8) herausbringen, ausspüren: *teṣāṃ vṛttaṃ pariṇayetsamyagrāṣṭreṣu taccaraiḥ*
 [M. 7,122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,122)
-[MBH. 12,3272.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3272) = [≈Вульг. 12.87.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A087_S012) = крит. —
+[MBH. 12,3272.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3272) = [≈Вульг. 12.87.12](mbh/12.87.html#v12) = крит. —
 
 - **RU:** — 8) обнаруживать, выслеживать: *teṣāṃ vṛttaṃ pariṇayetsamyagrāṣṭreṣu taccaraiḥ*
 [M. 7,122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,122)
-[MBH. 12,3272.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3272) = [≈Вульг. 12.87.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A087_S012) = крит. —
+[MBH. 12,3272.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3272) = [≈Вульг. 12.87.12](mbh/12.87.html#v12) = крит. —
   <sub>attested</sub>
 
 **4)** — 4) *pariṇīta* wohl ausgeführt in der Stelle: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
-[MBH. 3,13739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13739) = [≈Вульг. 3.207.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A207_S039) = ≈крит. 03,198.37c
+[MBH. 3,13739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13739) = [≈Вульг. 3.207.39](mbh/3.207.html#v39) = ≈крит. 03,198.37c
 
 - **RU:** — 4) *pariṇīta* вероятно совершенный, выполненный в данном месте: *ye caiva māṃ praśaṃsanti ye ca nindanti mānavāḥ . sarvānsupariṇītena karmaṇā toṣayāmyaham ..*
-[MBH. 3,13739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13739) = [≈Вульг. 3.207.39](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A207_S039) = ≈крит. 03,198.37c
+[MBH. 3,13739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13739) = [≈Вульг. 3.207.39](mbh/3.207.html#v39) = ≈крит. 03,198.37c
   <sub>attested</sub>
 
 **5)** — Vgl. *pariṇaya, ˚ṇāya, ˚ṇetar* . — caus. zubringen (die Zeit): *tatra kākasaṃhasrāṇi tāṃ niśāṃ paryanāyayan* (sic)
-[MBH. 10,36.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.36) = [≈Вульг. 10.1.36](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U01_A001_S036) = ≈крит. 10,1.35a
+[MBH. 10,36.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.36) = [≈Вульг. 10.1.36](mbh/10.1.html#v36) = ≈крит. 10,1.35a
 
 - **RU:** — ср. *pariṇaya, ˚ṇāya, ˚ṇetar* . — caus. проводить (время): *tatra kākasaṃhasrāṇi tāṃ niśāṃ paryanāyayan* (sic)
-[MBH. 10,36.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.36) = [≈Вульг. 10.1.36](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U01_A001_S036) = ≈крит. 10,1.35a
+[MBH. 10,36.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.36) = [≈Вульг. 10.1.36](mbh/10.1.html#v36) = ≈крит. 10,1.35a
   <sub>attested</sub>

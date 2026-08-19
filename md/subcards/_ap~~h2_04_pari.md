@@ -4,7 +4,7 @@
 
 
 **1)** — *pari* partic.: *vatsa paryāptametāvadbhīṣmeṇa saha saṃyuge* genug
-[MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) = [≈Вульг. 5.185.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A185_S013) = ≈крит. 05,186.13a *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* eine hinreichende Anzahl von Augen habend (= *saṃprāptanetraphala*
+[MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) = [≈Вульг. 5.185.13](mbh/5.185.html#v13) = ≈крит. 05,186.13a *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* eine hinreichende Anzahl von Augen habend (= *saṃprāptanetraphala*
 Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *paryāptamaśru muñcāmi* reichlich
 [DAŚAK.] in [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* geräumig genug für
 [HARIV. 6525.](https://sanskrit-lexicon-scans.github.io/hariv?6525) *kimapāṅgamaparyāptamasminkarmaṇi manyase* meinst du, der äussere Augenwinkel vermöge nicht dieses zu bewirken?
@@ -20,7 +20,7 @@ Schol.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *pa
 [Spr. 3368.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3368) — desid. vgl. *parīpsā, parīpsu* .
 
 - **RU:** — *pari* partic.: *vatsa paryāptametāvadbhīṣmeṇa saha saṃyuge* достаточно
-[MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) = [≈Вульг. 5.185.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A185_S013) = ≈крит. 05,186.13a *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* имеющий достаточное число глаз (= *saṃprāptanetraphala*
+[MBH. 5,7302. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7302) = [≈Вульг. 5.185.13](mbh/5.185.html#v13) = ≈крит. 05,186.13a *paryāptanayanaḥ śakraḥ sarvairnetrairudaikṣata* имеющий достаточное число глаз (= *saṃprāptanetraphala*
 схол.!) [HARIV. 3964.](https://sanskrit-lexicon-scans.github.io/hariv?3964) *paryāptamaśru muñcāmi* в изобилии
 [DAŚAK.] в [BENF. Chr. 185,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *purī tviyaṃ janasyāsya na paryāptā bhaviṣyati* достаточно просторный для
 [HARIV. 6525.](https://sanskrit-lexicon-scans.github.io/hariv?6525) *kimapāṅgamaparyāptamasminkarmaṇi manyase* неужели ты думаешь, что внешний уголок глаза не в состоянии этого произвести?

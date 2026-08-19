@@ -21,10 +21,10 @@
   <sub>attested</sub>
 
 **2)** — 2) wiedergeboren werden: *sārikā saṃprajāyate*
-[MBH. 13,5459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5459) = [≈Вульг. 13.111.61](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A111_S061) = ≈крит. 13,112.52a [5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5508) = [≈Вульг. 13.111.110](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A111_S110) = ≈крит. 13,112.96a
+[MBH. 13,5459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5459) = [≈Вульг. 13.111.61](mbh/13.111.html#v61) = ≈крит. 13,112.52a [5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5508) = [≈Вульг. 13.111.110](mbh/13.111.html#v110) = ≈крит. 13,112.96a
 
 - **RU:** — 2) возрождаться, рождаться вновь: *sārikā saṃprajāyate*
-[MBH. 13,5459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5459) = [≈Вульг. 13.111.61](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A111_S061) = ≈крит. 13,112.52a [5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5508) = [≈Вульг. 13.111.110](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A111_S110) = ≈крит. 13,112.96a
+[MBH. 13,5459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5459) = [≈Вульг. 13.111.61](mbh/13.111.html#v61) = ≈крит. 13,112.52a [5508.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5508) = [≈Вульг. 13.111.110](mbh/13.111.html#v110) = ≈крит. 13,112.96a
   <sub>attested</sub>
 
 **3)** — 3) *saṃprajātā* gekalbt habend: *˚tāsu goṣu*

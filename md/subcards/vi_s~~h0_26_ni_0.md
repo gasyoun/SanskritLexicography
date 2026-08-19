@@ -19,16 +19,16 @@
 [ŚAT. BR. 2,3,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,8) [4,1,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,5,2) *nya1nyā arkamabhito viviśre* sich lagern um
 [ṚV. 8,90,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.090.html#rv08.090.14) *padmena caiva vyūhena niviśeta*
 [M. 7,188.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,188)
-[MBH. 1,5893.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5893) = [≈Вульг. 1.149.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A149_S004) = крит. — [6960](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6960) = [≈Вульг. 1.182.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A182_S009) = ≈крит. 01,173.8a (act.). [3,16364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16364) = [≈Вульг. 3.285.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A285_S001) = ≈крит. 03,269.1a [5,7049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7049) = [≈Вульг. 5.178.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S022) = ≈крит. 05,177.23c [HARIV. 8047.](https://sanskrit-lexicon-scans.github.io/hariv?8047) *veśmāni* hineintreten in
-[MBH. 1,7566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7566) = [≈Вульг. 1.205.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A205_S012) = ≈крит. 01,197.11c *saṃ sārakārāgṛhe*
+[MBH. 1,5893.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5893) = [≈Вульг. 1.149.4](mbh/1.149.html#v4) = крит. — [6960](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6960) = [≈Вульг. 1.182.9](mbh/1.182.html#v9) = ≈крит. 01,173.8a (act.). [3,16364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16364) = [≈Вульг. 3.285.1](mbh/3.285.html#v1) = ≈крит. 03,269.1a [5,7049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7049) = [≈Вульг. 5.178.22](mbh/5.178.html#v22) = ≈крит. 05,177.23c [HARIV. 8047.](https://sanskrit-lexicon-scans.github.io/hariv?8047) *veśmāni* hineintreten in
+[MBH. 1,7566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7566) = [≈Вульг. 1.205.12](mbh/1.205.html#v12) = ≈крит. 01,197.11c *saṃ sārakārāgṛhe*
 [Spr. 1039.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1039) *dvāri*
 [BHĀG. P. 3,15,29](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,29) (act.). *rāmaśālām*
 [BHAṬṬ. 4,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,28) *makarālayam*
 [8,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,7) *kūrmasyāṅgāni kūrmaśarīre*
 [SARVADARŚANAS. 150,20.] *śilīmukhāḥ — nyaviśanta rasātalam* drangen in
 [R. 3,31,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,20) *mahīṃ niviśate raviḥ* die Sonne dringt (mit ihren Strahlen) in die Erde
-[MBH. 3,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.136) = [≈Вульг. 3.3.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S006) = ≈крит. 03,3.6a *tau cāpi keśau niviśetāṃ yadūnāṃ kule striyau devakīṃ rohiṇīṃ ca* gingen ein in
-[1,7308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7308) = [≈Вульг. 1.195.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A195_S023) = ≈крит. 01,187.22c [WILSON, SĀṂKHYAK. S. 62.] *jñeyapade* in den Bereich des Erkennbaren treten
+[MBH. 3,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.136) = [≈Вульг. 3.3.6](mbh/3.3.html#v6) = ≈крит. 03,3.6a *tau cāpi keśau niviśetāṃ yadūnāṃ kule striyau devakīṃ rohiṇīṃ ca* gingen ein in
+[1,7308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7308) = [≈Вульг. 1.195.23](mbh/1.195.html#v23) = ≈крит. 01,187.22c [WILSON, SĀṂKHYAK. S. 62.] *jñeyapade* in den Bereich des Erkennbaren treten
 [SARVADARŚANAS. 101,7. 8.] *dehasyāpacayo matau niviśate* dringt in den Geist so v. a. kommt zum Bewusstsein
 [Spr. 1973.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1973)
 
@@ -39,16 +39,16 @@
 [ŚAT. BR. 2,3,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,8) [4,1,5,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,5,2) *nya1nyā arkamabhito viviśre* расположиться лагерем вокруг
 [ṚV. 8,90,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.090.html#rv08.090.14) *padmena caiva vyūhena niviśeta*
 [M. 7,188.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,188)
-[MBH. 1,5893.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5893) = [≈Вульг. 1.149.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A149_S004) = крит. — [6960](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6960) = [≈Вульг. 1.182.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A182_S009) = ≈крит. 01,173.8a (act.). [3,16364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16364) = [≈Вульг. 3.285.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A285_S001) = ≈крит. 03,269.1a [5,7049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7049) = [≈Вульг. 5.178.22](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S022) = ≈крит. 05,177.23c [HARIV. 8047.](https://sanskrit-lexicon-scans.github.io/hariv?8047) *veśmāni* вступать в
-[MBH. 1,7566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7566) = [≈Вульг. 1.205.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A205_S012) = ≈крит. 01,197.11c *saṃ sārakārāgṛhe*
+[MBH. 1,5893.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5893) = [≈Вульг. 1.149.4](mbh/1.149.html#v4) = крит. — [6960](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6960) = [≈Вульг. 1.182.9](mbh/1.182.html#v9) = ≈крит. 01,173.8a (act.). [3,16364.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16364) = [≈Вульг. 3.285.1](mbh/3.285.html#v1) = ≈крит. 03,269.1a [5,7049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7049) = [≈Вульг. 5.178.22](mbh/5.178.html#v22) = ≈крит. 05,177.23c [HARIV. 8047.](https://sanskrit-lexicon-scans.github.io/hariv?8047) *veśmāni* вступать в
+[MBH. 1,7566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7566) = [≈Вульг. 1.205.12](mbh/1.205.html#v12) = ≈крит. 01,197.11c *saṃ sārakārāgṛhe*
 [Spr. 1039.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1039) *dvāri*
 [BHĀG. P. 3,15,29](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,29) (act.). *rāmaśālām*
 [BHAṬṬ. 4,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,28) *makarālayam*
 [8,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,7) *kūrmasyāṅgāni kūrmaśarīre*
 [SARVADARŚANAS. 150,20.] *śilīmukhāḥ — nyaviśanta rasātalam* проникали в
 [R. 3,31,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,20) *mahīṃ niviśate raviḥ* солнце проникает (своими лучами) в землю
-[MBH. 3,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.136) = [≈Вульг. 3.3.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A003_S006) = ≈крит. 03,3.6a *tau cāpi keśau niviśetāṃ yadūnāṃ kule striyau devakīṃ rohiṇīṃ ca* вошли в
-[1,7308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7308) = [≈Вульг. 1.195.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U13_A195_S023) = ≈крит. 01,187.22c [WILSON, SĀṂKHYAK. S. 62.] *jñeyapade* вступать в область познаваемого
+[MBH. 3,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.136) = [≈Вульг. 3.3.6](mbh/3.3.html#v6) = ≈крит. 03,3.6a *tau cāpi keśau niviśetāṃ yadūnāṃ kule striyau devakīṃ rohiṇīṃ ca* вошли в
+[1,7308.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7308) = [≈Вульг. 1.195.23](mbh/1.195.html#v23) = ≈крит. 01,187.22c [WILSON, SĀṂKHYAK. S. 62.] *jñeyapade* вступать в область познаваемого
 [SARVADARŚANAS. 101,7. 8.] *dehasyāpacayo matau niviśate* проникает в разум, так что преим. доходит до сознания
 [Spr. 1973.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1973)
   <sub>attested</sub>
@@ -81,21 +81,21 @@
   <sub>attested</sub>
 
 **5) sich niederlassen; ein Haus gründen, heirathen)** — 5) sich niederlassen so v. a. ein Haus gründen, heirathen (vom Manne)
-[MBH. 1,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1852) = [≈Вульг. 1.46.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A046_S007) = ≈крит. 01,42.5c [1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1860) = [≈Вульг. 1.46.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A046_S015) = ≈крит. 01,42.12a *niveṣṭukāma*
-[13,1391](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1391) = [≈Вульг. 13.19.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S011) = ≈крит. 13,19.11a; vgl. unter *nis* 2).
+[MBH. 1,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1852) = [≈Вульг. 1.46.7](mbh/1.46.html#v7) = ≈крит. 01,42.5c [1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1860) = [≈Вульг. 1.46.15](mbh/1.46.html#v15) = ≈крит. 01,42.12a *niveṣṭukāma*
+[13,1391](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1391) = [≈Вульг. 13.19.11](mbh/13.19.html#v11) = ≈крит. 13,19.11a; vgl. unter *nis* 2).
 
 - **RU:** — 5) обосноваться, т.е. преим. основать дом, жениться (о мужчине)
-[MBH. 1,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1852) = [≈Вульг. 1.46.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A046_S007) = ≈крит. 01,42.5c [1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1860) = [≈Вульг. 1.46.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A046_S015) = ≈крит. 01,42.12a *niveṣṭukāma*
-[13,1391](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1391) = [≈Вульг. 13.19.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S011) = ≈крит. 13,19.11a; ср. под *nis* 2).
+[MBH. 1,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1852) = [≈Вульг. 1.46.7](mbh/1.46.html#v7) = ≈крит. 01,42.5c [1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1860) = [≈Вульг. 1.46.15](mbh/1.46.html#v15) = ≈крит. 01,42.12a *niveṣṭukāma*
+[13,1391](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1391) = [≈Вульг. 13.19.11](mbh/13.19.html#v11) = ≈крит. 13,19.11a; ср. под *nis* 2).
   <sub>attested</sub>
 
 **6) gegründet werden)** — 6) gegründet werden: *dvāravatyāṃ niviśantyām*
-[MBH. 13,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3544) = [≈Вульг. 13.72.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A072_S002) = ≈крит. 13,71.2c [3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Вульг. 13.70.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A070_S002) = ≈крит. 13,69.2c (*nirviśa˚* [ed. Calc.] *nivi˚* [ed. Bomb.]).
+[MBH. 13,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3544) = [≈Вульг. 13.72.2](mbh/13.72.html#v2) = ≈крит. 13,71.2c [3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Вульг. 13.70.2](mbh/13.70.html#v2) = ≈крит. 13,69.2c (*nirviśa˚* [ed. Calc.] *nivi˚* [ed. Bomb.]).
 [HARIV. 2043](https://sanskrit-lexicon-scans.github.io/hariv?2043) (*nivasantyām* die neuere Ausg., welches
 [NĪLAK.] durch *kṛtanivāsāyām* erklärt).
 
 - **RU:** — 6) основываться, быть основанным: *dvāravatyāṃ niviśantyām*
-[MBH. 13,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3544) = [≈Вульг. 13.72.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A072_S002) = ≈крит. 13,71.2c [3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Вульг. 13.70.2](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A070_S002) = ≈крит. 13,69.2c (*nirviśa˚* [ed. Calc.] *nivi˚* [Бомбейская ред.]).
+[MBH. 13,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3544) = [≈Вульг. 13.72.2](mbh/13.72.html#v2) = ≈крит. 13,71.2c [3453](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3453) = [≈Вульг. 13.70.2](mbh/13.70.html#v2) = ≈крит. 13,69.2c (*nirviśa˚* [ed. Calc.] *nivi˚* [Бомбейская ред.]).
 [HARIV. 2043](https://sanskrit-lexicon-scans.github.io/hariv?2043) (*nivasantyām* новейшее изд., которое
 [NĪLAK.] объясняется через *kṛtanivāsāyām*).
   <sub>attested</sub>
@@ -105,14 +105,14 @@
 richten auf: *pāpe niviśate manaḥ*
 [Spr. (II) 894.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?894 "Spr. (II) 894: ātmanānarthayuktena pāpe niviśate manaḥ | sa karma kaluṣaṃ kṛtvā kleśe mahati dhīyate || — Erleidet Jemand einen Schaden, so wendet sich sein Herz zum Bösen") obliegen: *svadharme*
 [M. 2,8.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,8) *arthe*
-[MBH. 7,3073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3073) = [≈Вульг. 7.86.10](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A086_S010) = ≈крит. 07,62.10a *tadā varṇā yathādharmaṃ niviśeyuḥ kathaṃcana*
-[12,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2933) = [≈Вульг. 12.78.17](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A078_S017) = ≈крит. 12,79.17a
+[MBH. 7,3073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3073) = [≈Вульг. 7.86.10](mbh/7.86.html#v10) = ≈крит. 07,62.10a *tadā varṇā yathādharmaṃ niviśeyuḥ kathaṃcana*
+[12,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2933) = [≈Вульг. 12.78.17](mbh/12.78.html#v17) = ≈крит. 12,79.17a
 
 - **RU:** — 7) обращаться к, направляться на: *pāpe niviśate manaḥ*
 [Spr. (II) 894.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?894 "Spr. (II) 894: ātmanānarthayuktena pāpe niviśate manaḥ | sa karma kaluṣaṃ kṛtvā kleśe mahati dhīyate || — Erleidet Jemand einen Schaden, so wendet sich sein Herz zum Bösen") быть занятым, предаваться: *svadharme*
 [M. 2,8.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,8) *arthe*
-[MBH. 7,3073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3073) = [≈Вульг. 7.86.10](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A086_S010) = ≈крит. 07,62.10a *tadā varṇā yathādharmaṃ niviśeyuḥ kathaṃcana*
-[12,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2933) = [≈Вульг. 12.78.17](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A078_S017) = ≈крит. 12,79.17a
+[MBH. 7,3073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3073) = [≈Вульг. 7.86.10](mbh/7.86.html#v10) = ≈крит. 07,62.10a *tadā varṇā yathādharmaṃ niviśeyuḥ kathaṃcana*
+[12,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2933) = [≈Вульг. 12.78.17](mbh/12.78.html#v17) = ≈крит. 12,79.17a
   <sub>attested</sub>
 
 **8) zukommen (abgehen); zur Anwendung kommen)** — 8) zukommen (Gegens. abgehen): *(guṇaḥ) sattve niviśate 'paiti* Cit. bei
@@ -136,7 +136,7 @@ richten auf: *pāpe niviśate manaḥ*
 [VS. 22,7.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?22,7) *mano niviṣṭamanusaṃviśasva*
 [AV. 18,3,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.09) *tasyāṃ suparṇāvadhi yau niviṣṭau*
 [TBR. 3,7,7,14.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,7,14) gelagert: *balam*
-[MBH. 3,661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.661) = [≈Вульг. 3.16.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A016_S003) = ≈крит. 03,17.3a
+[MBH. 3,661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.661) = [≈Вульг. 3.16.3](mbh/3.16.html#v3) = ≈крит. 03,17.3a
 [HARIV. 4974.](https://sanskrit-lexicon-scans.github.io/hariv?4974) [9701.](https://sanskrit-lexicon-scans.github.io/hariv?9701)
 [R. 2,84,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,1) ([91,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,91,1) [GORR.]). [99,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,99,1) [100,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,1) *sāgaraṃ prati*
 [R. GORR. 1,4,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,93) [4,40,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,1) [5,74,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,26) [75,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,75,3) [MĀLAV. 67,21.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?67,21) [KATHĀS. 46,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,54) [47,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,9) *suniviṣṭāṃśca rakṣiṇaḥ* aufgestellt
@@ -149,7 +149,7 @@ richten auf: *pāpe niviśate manaḥ*
 [VS. 22,7.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?22,7) *mano niviṣṭamanusaṃviśasva*
 [AV. 18,3,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.09) *tasyāṃ suparṇāvadhi yau niviṣṭau*
 [TBR. 3,7,7,14.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,7,7,14) расположившийся лагерем: *balam*
-[MBH. 3,661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.661) = [≈Вульг. 3.16.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A016_S003) = ≈крит. 03,17.3a
+[MBH. 3,661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.661) = [≈Вульг. 3.16.3](mbh/3.16.html#v3) = ≈крит. 03,17.3a
 [HARIV. 4974.](https://sanskrit-lexicon-scans.github.io/hariv?4974) [9701.](https://sanskrit-lexicon-scans.github.io/hariv?9701)
 [R. 2,84,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,84,1) ([91,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,91,1) [GORR.]). [99,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,99,1) [100,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,1) *sāgaraṃ prati*
 [R. GORR. 1,4,93.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,93) [4,40,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,1) [5,74,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,26) [75,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,75,3) [MĀLAV. 67,21.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?67,21) [KATHĀS. 46,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,54) [47,9.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,9) *suniviṣṭāṃśca rakṣiṇaḥ* выставленный, расставленный
@@ -171,7 +171,7 @@ richten auf: *pāpe niviśate manaḥ*
 [KUMĀRAS. 7,33.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,33) *kaṇṭhaniviṣṭakaustubha*
 [BHĀG. P. 8,18,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,18,3) *antarniviṣṭajñānadīdhiti*
 [MĀRK. P. 18,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,29) *yasminnetāni* (Vorzüge) *dṛśyante na cākāryāṇi bhārata . svabhāvato niviṣṭāni tatpātraṃ mānamarhati ..*
-[MBH. 13,2192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2192) = [≈Вульг. 13.37.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A037_S009) = ≈крит. 13,37.9a gerichtet auf: *tvadabhimukhaniviṣṭottānacañcūpuṭa*
+[MBH. 13,2192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2192) = [≈Вульг. 13.37.9](mbh/13.37.html#v9) = ≈крит. 13,37.9a gerichtet auf: *tvadabhimukhaniviṣṭottānacañcūpuṭa*
 [Spr. 1428.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1428) *sūryaniviṣṭadṛṣṭi*
 [RAGH. 14,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,66) *śrutismṛtinyāyaniviṣṭacitta*
 [HARIV. 14657.](https://sanskrit-lexicon-scans.github.io/hariv?14657) *sāmye niviṣṭacetasām*
@@ -191,7 +191,7 @@ richten auf: *pāpe niviśate manaḥ*
 [KUMĀRAS. 7,33.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,33) *kaṇṭhaniviṣṭakaustubha*
 [BHĀG. P. 8,18,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,18,3) *antarniviṣṭajñānadīdhiti*
 [MĀRK. P. 18,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,29) *yasminnetāni* (достоинства) *dṛśyante na cākāryāṇi bhārata . svabhāvato niviṣṭāni tatpātraṃ mānamarhati ..*
-[MBH. 13,2192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2192) = [≈Вульг. 13.37.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A037_S009) = ≈крит. 13,37.9a направленный на: *tvadabhimukhaniviṣṭottānacañcūpuṭa*
+[MBH. 13,2192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2192) = [≈Вульг. 13.37.9](mbh/13.37.html#v9) = ≈крит. 13,37.9a направленный на: *tvadabhimukhaniviṣṭottānacañcūpuṭa*
 [Spr. 1428.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1428) *sūryaniviṣṭadṛṣṭi*
 [RAGH. 14,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,66) *śrutismṛtinyāyaniviṣṭacitta*
 [HARIV. 14657.](https://sanskrit-lexicon-scans.github.io/hariv?14657) *sāmye niviṣṭacetasām*
@@ -224,10 +224,10 @@ richten auf: *pāpe niviśate manaḥ*
   <sub>attested</sub>
 
 **10e) der sich häuslich niedergelassen hat, verheirathet)** — e) der sich häuslich niedergelassen hat, verheirathet: *a˚*
-[MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) = [≈Вульг. 1.192.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A192_S018) = ≈крит. 01,184.18c *anirviṣṭa* u. *pariviṇṇa* .
+[MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) = [≈Вульг. 1.192.18](mbh/1.192.html#v18) = ≈крит. 01,184.18c *anirviṣṭa* u. *pariviṇṇa* .
 
 - **RU:** — e) обустроившийся домом, женатый: *a˚*
-[MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) = [≈Вульг. 1.192.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A192_S018) = ≈крит. 01,184.18c *anirviṣṭa* u. *pariviṇṇa* .
+[MBH. 1,7241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7241) = [≈Вульг. 1.192.18](mbh/1.192.html#v18) = ≈крит. 01,184.18c *anirviṣṭa* u. *pariviṇṇa* .
   <sub>attested</sub>
 
 **10f) gegründet, angelegt)** — f) gegründet, angelegt: *divodāsena niviṣṭāṃ nagarīm*

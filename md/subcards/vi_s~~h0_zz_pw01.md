@@ -133,9 +133,9 @@
 - **RU:** — 7〉 поселяться, обосновываться, так преим. заводить дом, жениться (о мужчине) [214,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?214).
   <sub>attested</sub>
 
-**201-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2) = [≈Вульг. 13.1.70](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S070) = ≈крит. 13,1.63c).
+**201-8)** — 8〉 gegründet werden (von einer Stadt). Dreimal in der Verbindung *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2) = [≈Вульг. 13.1.70](mbh/13.1.html#v70) = ≈крит. 13,1.63c).
 
-- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2) = [≈Вульг. 13.1.70](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S070) = ≈крит. 13,1.63c).
+- **RU:** — 8〉 быть основанным (о городе). Трижды в сочетании *dvāravatyāṃ niviśantyām* ([MBH. 13,70,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,70,2) = [≈Вульг. 13.1.70](mbh/13.1.html#v70) = ≈крит. 13,1.63c).
   <sub>attested</sub>
 
 **202-9)** — 9〉 sich hinwenden zu, sich richten auf (Loc., vom Geiste).
@@ -363,9 +363,9 @@
 - **RU:** — 2〉 погружаться в, всецело предаваться; с Acc.
   <sub>attested</sub>
 
-**247-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17) = [≈Вульг. 5.4.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A004_S014) = ≈крит. 05,4.14a.
+**247-3)** — 3〉 auf seinem Kopf bestehen [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17) = [≈Вульг. 5.4.14](mbh/5.4.html#v14) = ≈крит. 05,4.14a.
 
-- **RU:** — 3〉 упорно стоять на своем [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17) = [≈Вульг. 5.4.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A004_S014) = ≈крит. 05,4.14a.
+- **RU:** — 3〉 упорно стоять на своем [MBH. 5,77,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,77,17) = [≈Вульг. 5.4.14](mbh/5.4.html#v14) = ≈крит. 05,4.14a.
   <sub>attested</sub>
 
 **248-4)** — 4〉 Jmdm (Loc.) zukommen (Gegensatz abgehen) [224,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224).
@@ -393,9 +393,9 @@
 - **RU:** — α〉 (во что нечто проникло) вздутый, распухший, выпуклый [R. 2,9,33](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,33).
   <sub>attested</sub>
 
-**253-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31) = [≈Вульг. 8.4.10](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A004_S010) = ≈крит. 08,3.9c.
+**253-beta)** — β〉 worin man (Instr.) sich versetzt hat, dem man sich ganz hingegeben hat [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31) = [≈Вульг. 8.4.10](mbh/8.4.html#v10) = ≈крит. 08,3.9c.
 
-- **RU:** — β〉 во что кто-л. (Ins.) погрузился, чему всецело предался [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31) = [≈Вульг. 8.4.10](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A004_S010) = ≈крит. 08,3.9c.
+- **RU:** — β〉 во что кто-л. (Ins.) погрузился, чему всецело предался [MBH. 8,82,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,82,31) = [≈Вульг. 8.4.10](mbh/8.4.html#v10) = ≈крит. 08,3.9c.
   <sub>attested</sub>
 
 **254-gamma)** — γ〉 durchdrungen —, in Beschlag genommen von (Instr.).

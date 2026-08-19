@@ -6,10 +6,10 @@
 **1)** — *paryā*
  1)
 Z. 6, *paryāgataḥ punaḥ*
-[MBH. 13,3496](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3496) = [≈Вульг. 13.71.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A071_S012) = ≈крит. 13,70.11c bedeutet wieder in's Leben gekommen.
+[MBH. 13,3496](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3496) = [≈Вульг. 13.71.12](mbh/13.71.html#v12) = ≈крит. 13,70.11c bedeutet wieder in's Leben gekommen.
 
 - **RU:** — *paryā*
  1)
 стк. 6, *paryāgataḥ punaḥ*
-[MBH. 13,3496](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3496) = [≈Вульг. 13.71.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A071_S012) = ≈крит. 13,70.11c означает вновь пришедший в жизнь, воскресший.
+[MBH. 13,3496](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3496) = [≈Вульг. 13.71.12](mbh/13.71.html#v12) = ≈крит. 13,70.11c означает вновь пришедший в жизнь, воскресший.
   <sub>attested</sub>

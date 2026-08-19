@@ -15,8 +15,8 @@
   <sub>attested</sub>
 
 **2)** — 2) schlagen: *urāṃsi parinighnantyaḥ* (so beide Ausgg.)
-[MBH. 3,12261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12261) = [≈Вульг. 3.173.31](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A173_S031) = ≈крит. 03,170.28a
+[MBH. 3,12261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12261) = [≈Вульг. 3.173.31](mbh/3.173.html#v31) = ≈крит. 03,170.28a
 
 - **RU:** — 2) ударять: *urāṃsi parinighnantyaḥ* (так оба изд.)
-[MBH. 3,12261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12261) = [≈Вульг. 3.173.31](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A173_S031) = ≈крит. 03,170.28a
+[MBH. 3,12261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12261) = [≈Вульг. 3.173.31](mbh/3.173.html#v31) = ≈крит. 03,170.28a
   <sub>attested</sub>

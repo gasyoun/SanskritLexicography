@@ -4,11 +4,11 @@
 
 
 **1)** — *apa* sich vergehen: *yo yasteṣāmapacarettamācakṣīta vai dvijaḥ*
-[MBH. 12,9566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9566) = [≈Вульг. 12.270.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S009) = ≈крит. 12,262.8a *pitṛdevarṣibhṛtyāśca na cāpacaritā mayā*
+[MBH. 12,9566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9566) = [≈Вульг. 12.270.9](mbh/12.270.html#v9) = ≈крит. 12,262.8a *pitṛdevarṣibhṛtyāśca na cāpacaritā mayā*
 [MĀRK. P. 13,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?13,13)
 
 - **RU:** — *apa* погрешать, проступиться: *yo yasteṣāmapacarettamācakṣīta vai dvijaḥ*
-[MBH. 12,9566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9566) = [≈Вульг. 12.270.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S009) = ≈крит. 12,262.8a *pitṛdevarṣibhṛtyāśca na cāpacaritā mayā*
+[MBH. 12,9566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9566) = [≈Вульг. 12.270.9](mbh/12.270.html#v9) = ≈крит. 12,262.8a *pitṛdevarṣibhṛtyāśca na cāpacaritā mayā*
 [MĀRK. P. 13,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?13,13)
   <sub>attested</sub>
 

@@ -20,8 +20,8 @@ Z. 8 lies 7, 59, 12.
   <sub>attested</sub>
 
 **4)** — 4)
-[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Вульг. 3.269.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S022) = ≈крит. 03,253.20a
+[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Вульг. 3.269.22](mbh/3.269.html#v22) = ≈крит. 03,253.20a
 
 - **RU:** — 4)
-[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Вульг. 3.269.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A269_S022) = ≈крит. 03,253.20a
+[MBH. 3,15688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15688) = [≈Вульг. 3.269.22](mbh/3.269.html#v22) = ≈крит. 03,253.20a
   <sub>attested</sub>

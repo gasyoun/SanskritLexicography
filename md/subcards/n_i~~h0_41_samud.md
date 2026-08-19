@@ -7,13 +7,13 @@
  1) emporheben (eig. und übertr.): *parameṣṭhī tvapāṃ madhye tathāsannāmavekṣya gām . kathamenāṃ samunneṣya iti dadhyau dhiyā ciram ..*
 [BHĀG. P. 3,13,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,16) *tasya (ripoḥ) saṃśamanāyāśu tatkulīnaṃ samunnayet*
 [KĀM. NĪTIS. 8,66. 9,70.] *samunnītā (mati)*
-[MBH. 14,638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.638) = [≈Вульг. 14.21.11](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A021_S011) = ≈крит. 14,21.6a
+[MBH. 14,638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.638) = [≈Вульг. 14.21.11](mbh/14.21.html#v11) = ≈крит. 14,21.6a
 
 - **RU:** — *samud*
  1) поднимать, воздвигать (букв. и перен.): *parameṣṭhī tvapāṃ madhye tathāsannāmavekṣya gām . kathamenāṃ samunneṣya iti dadhyau dhiyā ciram ..*
 [BHĀG. P. 3,13,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,16) *tasya (ripoḥ) saṃśamanāyāśu tatkulīnaṃ samunnayet*
 [KĀM. NĪTIS. 8,66. 9,70.] *samunnītā (mati)*
-[MBH. 14,638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.638) = [≈Вульг. 14.21.11](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A021_S011) = ≈крит. 14,21.6a
+[MBH. 14,638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.638) = [≈Вульг. 14.21.11](mbh/14.21.html#v11) = ≈крит. 14,21.6a
   <sub>attested</sub>
 
 **2)** — 2) herausbringen, erschliessen: *ityādyanyatsamunneyaṃ svayaṃ bhāvitabuddhibhiḥ*
