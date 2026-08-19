@@ -17,7 +17,7 @@
 [BHĀG. P. 9,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,7) [10,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,35) *prāṇaiścittaṃ sarvamotam*
 [MUṆḌ. UP. 3,1,9.]
 [MAITRYUP. 6,3.] *otaproto 'ham*
-[MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789)
+[MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789) = [≈Вульг. 5.47.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A047_S016) = ≈крит. 05,46.16a
 — Vgl. *ṛgāvānam* und *nasyota* .
 
 - **RU:** — *ā* вплетать, захватывать, нанизывать (напр. жемчужины на нить), продевать
@@ -34,6 +34,6 @@
 [BHĀG. P. 9,9,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,7) [10,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,35) *prāṇaiścittaṃ sarvamotam*
 [MUṆḌ. UP. 3,1,9.]
 [MAITRYUP. 6,3.] *otaproto 'ham*
-[MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789)
-— ср. *ṛgāvānam* und *nasyota* .
+[MBH. 5,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1789) = [≈Вульг. 5.47.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A047_S016) = ≈крит. 05,46.16a
+— ср. *ṛgāvānam* и *nasyota* .
   <sub>attested</sub>

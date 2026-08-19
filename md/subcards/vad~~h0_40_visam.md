@@ -8,7 +8,7 @@
 [KULL.] zu [M. 12,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,110) *tanmandāravatīdevīrūpaṃ nātra visaṃvadet*
 [KATHĀS. 101,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,82)
 
-- **RU:** — *visam* act. нарушать своё обещание, изменять данному слову
+- **RU:** — *visam* act. нарушать свое обещание, изменять данному слову
 [M. 8,219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,219) делать возражения, противоречить
 [KULL.] к [M. 12,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,110) *tanmandāravatīdevīrūpaṃ nātra visaṃvadet*
 [KATHĀS. 101,82.](https://sanskrit-lexicon-scans.github.io/kss/index.html?101,82)
@@ -19,7 +19,7 @@
 [R. 6,24,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,24,27)
 
 - **RU:** — ср. *visaṃvāda* . — caus.
- 1) вызывать чьё-л. недовольство: *lakṣmaṇena na visaṃvāditaḥ kaścit*
+ 1) вызывать чье-л. недовольство: *lakṣmaṇena na visaṃvāditaḥ kaścit*
 [R. 6,24,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,24,27)
   <sub>attested</sub>
 

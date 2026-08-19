@@ -16,13 +16,13 @@
 [RĀJA-TAR. 5,370.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,370) *geyamudgātukāmā*
 [MEGH. 84.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84) *gāthāścirodgītāḥ (kaṇḍunā)*
 [R. 5,91,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,7) *tadetatte mayodgītaṃ yathātatham* verkündet
-[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) *udgītametatparamaṃ tu brahma* von den Weisen als das höchste Br. verkündet
+[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) = [≈Вульг. 6.65.69](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A065_S069) = ≈крит. 06,61.64c *udgītametatparamaṃ tu brahma* von den Weisen als das höchste Br. verkündet
 [ŚVETĀŚV. UP. 1,7.] besingen: *yaśaḥ svamuccairudgīyamānaṃ vanadevatābhiḥ*
 [RAGH. 2,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,12)
 [PRAB. 3,14.] vor Jmd (acc.) singen: *(munim) udgīyamānaṃ gandharvaiḥ*
 [MĀRK. P. 18,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,23) mit Gesang erfüllen: *haṃsakāraṇḍavodgītāḥ (nadyaḥ)*
-[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) *udgīta* _n._ Gesang: *kiṃnarodgītabhāṣiṇī*
-[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) im Prākrit: *sa kālo madavibbhamuggīdāṇaṃ*
+[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) = [≈Вульг. 3.38.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A038_S020) = ≈крит. 03,39.18a *udgīta* _n._ Gesang: *kiṃnarodgītabhāṣiṇī*
+[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) = [≈Вульг. 1.170.74](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A170_S074) = ≈крит. 01,159.16a im Prākrit: *sa kālo madavibbhamuggīdāṇaṃ*
 [ŚĀK. CH. 117,5.]
 
 - **RU:** — *ud* запевать, петь; употребляется особенно о литургическом пении, по которому один из жрецов называется Удгатар. *uta prāstauducca vidvā agāyat*
@@ -38,13 +38,13 @@
 [RĀJA-TAR. 5,370.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,370) *geyamudgātukāmā*
 [MEGH. 84.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84) *gāthāścirodgītāḥ (kaṇḍunā)*
 [R. 5,91,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,7) *tadetatte mayodgītaṃ yathātatham* возвещено
-[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) *udgītametatparamaṃ tu brahma* возвещено мудрецами как высшее Br.
+[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) = [≈Вульг. 6.65.69](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A065_S069) = ≈крит. 06,61.64c *udgītametatparamaṃ tu brahma* возвещено мудрецами как высшее Br.
 [ŚVETĀŚV. UP. 1,7.] воспевать: *yaśaḥ svamuccairudgīyamānaṃ vanadevatābhiḥ*
 [RAGH. 2,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,12)
 [PRAB. 3,14.] петь перед кем-л. (acc.): *(munim) udgīyamānaṃ gandharvaiḥ*
 [MĀRK. P. 18,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,23) наполнять пением: *haṃsakāraṇḍavodgītāḥ (nadyaḥ)*
-[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) *udgīta* _n._ пение: *kiṃnarodgītabhāṣiṇī*
-[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) в Пракрит: *sa kālo madavibbhamuggīdāṇaṃ*
+[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) = [≈Вульг. 3.38.20](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A038_S020) = ≈крит. 03,39.18a *udgīta* _n._ пение: *kiṃnarodgītabhāṣiṇī*
+[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) = [≈Вульг. 1.170.74](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A170_S074) = ≈крит. 01,159.16a в Пракрит: *sa kālo madavibbhamuggīdāṇaṃ*
 [ŚĀK. CH. 117,5.]
   <sub>attested</sub>
 

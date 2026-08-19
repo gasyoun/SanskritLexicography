@@ -4,10 +4,10 @@
 
 
 **13)** — 13) Folge: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* so v. a. was Heil bringt
-[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126)
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A066_S021) = ≈крит. 04,61.21c
 
 - **RU:** — 13) следствие: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* так преим. то, что приносит благо
-[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126)
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A066_S021) = ≈крит. 04,61.21c
   <sub>attested</sub>
 
 **14)** — 14) in der Rhet. Lautgefüge, Wortgefüge
@@ -41,9 +41,9 @@
 
 **Nachtr)** — Vgl. *aṅka˚, artha˚* (auch
 [VIKR. 32](https://sanskrit-lexicon-scans.github.io/vikramor/app1?32)), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (auch
-[DAŚAK.] in [BENF. Chr. 183,20. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
+[DAŚAK.] in [BENF. Chr. 183,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) [BENF. Chr. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
 
 - **RU:** — ср. *aṅka˚, artha˚* (также
 [VIKR. 32](https://sanskrit-lexicon-scans.github.io/vikramor/app1?32)), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (также
-[DAŚAK.] в [BENF. Chr. 183,20. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
+[DAŚAK.] в [BENF. Chr. 183,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) [BENF. Chr. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
   <sub>attested</sub>

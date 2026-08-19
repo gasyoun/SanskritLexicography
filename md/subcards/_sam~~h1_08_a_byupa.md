@@ -6,6 +6,6 @@
 **main)** — *abhyupa*, partic. *˚śānta* gestillt, abgekühlt: *˚manmatha*
 [ṚT. 1,1.]
 
-- **RU:** — *abhyupa*, partic. *˚śānta* утолённый, охлаждённый: *˚manmatha*
+- **RU:** — *abhyupa*, partic. *˚śānta* утоленный, охлажденный: *˚manmatha*
 [ṚT. 1,1.]
   <sub>attested</sub>

@@ -22,9 +22,9 @@ _PWG article — 1 sub-card(s), 6 sense(s) · RU 6/6 · EN 0/6_
 - **RU:** [NWS: MW : 630] *pīna* [Gen , unsp] сущ. m. (с *sveda*) обильное потоотделение. Suś
   <sub>attested</sub>
 
-**NWS-2)** [NWS: MW : 630 (s.v. pīna)] *pī (=pṭ pī 2)* [Gen , unsp] [ pīna ] swelling, swollen, full, round, thick, large, fat, fleshy, corpulent muscular. Mbh , Kāvya(MW) . MW : 630 (s.v. pīna )
+**NWS-2)** [NWS: MW : 630 (s.v. pīna)] *pī (=pw pī 2)* [Gen , unsp] [ pīna ] swelling, swollen, full, round, thick, large, fat, fleshy, corpulent muscular. Mbh , Kāvya(MW) . MW : 630 (s.v. pīna )
 
-- **RU:** [NWS: MW : 630 (s.v. pīna)] *pī (=pṭ pī 2)* [Gen , unsp] [ *pīna* ] опухший, вздутый, полный, округлый, толстый, крупный, тучный, мясистый, тучный мускулистый. Mbh , Kāvya(MW) . MW : 630 (s.v. pīna )
+- **RU:** [NWS: MW : 630 (s.v. pīna)] *pī (=pw pī 2)* [Gen , unsp] [ *pīna* ] опухший, вздутый, полный, округлый, толстый, крупный, тучный, мясистый, тучный мускулистый. Mbh , Kāvya(MW) . MW : 630 (s.v. pīna )
   <sub>attested</sub>
 
 **NWS-3)** [NWS: Ensink 1964 : 113 (s.v. pīna)] [Reg , unsp] [ pīna ] fat, strong. Is Indon 18, 1 . full, round. STB, S. 94, Z. 16 . Ensink 1964 : 113 (s.v. pīna )

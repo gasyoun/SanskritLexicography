@@ -6,6 +6,6 @@
 **1)** — *apod* desid. sich losmachen wollen
 [AIT. BR. 6,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,34)
 
-- **RU:** — *apod* desid. «желающий освободиться, вырваться»
+- **RU:** — *apod* desid. желающий освободиться, вырваться
 [AIT. BR. 6,34.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,34)
   <sub>attested</sub>

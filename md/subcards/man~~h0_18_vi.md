@@ -12,11 +12,11 @@
 
 **2)** [ĀŚV. ŚR. 2,11. 3,13. 6,6.] missachtet, beleidigt
 
-- **RU:** [ĀŚV. ŚR. 2,11. 3,13. 6,6.] презираемый, оскорблённый
+- **RU:** [ĀŚV. ŚR. 2,11. 3,13. 6,6.] презираемый, оскорбленный
   <sub>attested</sub>
 
 **3)** [BHĀG. P. 6,6,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,43) — caus. entehren, mit Geringachtung behandeln: *vimānita*
-[MBH. 1,1257.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1257) [5,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2041) [12,4158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4158) [13,6284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6284)
+[MBH. 1,1257.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1257) = [≈Вульг. 1.25.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A025_S014) = ≈крит. 01,21.14c [5,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2041) = [≈Вульг. 5.51.23](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A051_S023) = ≈крит. 05,50.23c [12,4158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4158) = [≈Вульг. 12.113.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A113_S005) = ≈крит. 12,114.5a [13,6284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6284) = [≈Вульг. 13.138.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A138_S009) = крит. —
 [R. GORR. 2,9,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,7) [6,82,111.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,111)
 [MṚCCH. 19,14.] *strībhirvimānitānāṃ kāpuruṣāṇāṃ vivardhate *
 
@@ -25,7 +25,7 @@
 [R. 5,21,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,21,10)
 
 - **RU:** [BHĀG. P. 6,6,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,43) — caus. бесчестить, обращаться с пренебрежением: *vimānita*
-[MBH. 1,1257.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1257) [5,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2041) [12,4158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4158) [13,6284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6284)
+[MBH. 1,1257.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1257) = [≈Вульг. 1.25.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A025_S014) = ≈крит. 01,21.14c [5,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2041) = [≈Вульг. 5.51.23](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A051_S023) = ≈крит. 05,50.23c [12,4158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4158) = [≈Вульг. 12.113.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A113_S005) = ≈крит. 12,114.5a [13,6284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6284) = [≈Вульг. 13.138.9](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A138_S009) = крит. —
 [R. GORR. 2,9,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,7) [6,82,111.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,111)
 [MṚCCH. 19,14.] *strībhirvimānitānāṃ kāpuruṣāṇāṃ vivardhate *
 

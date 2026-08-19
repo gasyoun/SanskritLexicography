@@ -1,18 +1,18 @@
-## vid~~h0_zz_pw00
+## vid
 
 `vid~~h0_zz_pw00`
 
 
-**1)** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
+**1)** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S022) = ≈крит. 03,2.21a), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (mit Präsensbedeutung, ganz ausnahmsweise auch als Perf.); metrisch hier und da Med.
 — 1〉 Etwas oder Jmd kennen lernen, erkennen; wissen, begreifen, sich auf Etwas verstehen, Etwas oder Jmd erkennen, wissen von Jmd, ein Bewusstsein von Etwas haben ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), eine richtige Vorstellung haben von; in der älteren Sprachen mit Acc. oder Gen., in der späteren mit Acc. Mit Infin. verstehen zu [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
 
-- **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34)), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
-— 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чём-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чём-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
+- **RU:** **1.** √*vid*, *vetti*, *veda* (2te Imper. [MBH. 3,68,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,68,34) = [≈Вульг. 3.2.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S022) = ≈крит. 03,2.21a), *vidāṃ* *karoti* ([Spr. 6512](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6512)), *veda* Perf. (со значением настоящего времени, в виде исключения также как Perf.); метрически местами Med.
+— 1〉 узнать что-либо или кого-либо, познать; знать, понимать, разбираться в чем-либо, что-либо или кого-либо узнать, знать о ком-либо, иметь представление о чем-либо ([260,26](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260)), иметь верное представление о; в более древнем языке с Acc. или Gen., в более позднем с Acc. С Infin. понимать, как [136,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?136).
   <sub>attested</sub>
 
 **2)** — 2〉 in Jmd oder in Etwas Jmd oder Etwas erkennen, kennen als, auch so v. a. erklären für, nennen; mit doppeltem Acc. (statt des prädicativen Acc. auch Nomin. mit *iti*).
 
-- **RU:** — 2〉 узнавать в ком-либо или в чём-либо кого-либо или что-либо, знать как, также так преим. объявлять кем-либо, называть; с двойным Acc. (вместо предикативного Acc. также Nomin. с *iti*).
+- **RU:** — 2〉 узнавать в ком-либо или в чем-либо кого-либо или что-либо, знать как, также так преим. объявлять кем-либо, называть; с двойным Acc. (вм. предикативного Acc. также Nomin. с *iti*).
   <sub>attested</sub>
 
 **3)** — 3〉 merken, beachten, achten auf; eingedenk sein; mit Gen. oder Acc.
@@ -27,7 +27,7 @@
 
 **5)** — 5〉 erfahren, zu geniessen haben, empfinden, an Etwas denken müssen; mit Acc. oder Gen.
 
-- **RU:** — 5〉 испытывать, вкушать, чувствовать, быть вынужденным думать о чём-либо; с Acc. или Gen.
+- **RU:** — 5〉 испытывать, вкушать, чувствовать, быть вынужденным думать о чем-либо; с Acc. или Gen.
   <sub>attested</sub>
 
 **6)** — 6〉 glauben, wähnen, annehmen, voraussetzen; halten für (mit doppeltem Acc.) [VIKRAMĀṄKAC. 17,11].
@@ -42,7 +42,7 @@
 
 **8)** — 8〉 *vidita* kennen gelernt, erkannt, gekannt, bekannt, — als (Nomin.). Auch _n._ impers. *viditamastu vaḥ* oder *astuvo* *viditam* es sei euch bekannt, wisset [Ind. Antiq. 6,73. 77. 86]. *viditam* _Adv._ mit Wissen, — von (Gen.)
 
-- **RU:** — 8〉 *vidita* «познанный, узнанный, знаемый, известный — как» (Nomin.). Также _n._ impers. *viditamastu vaḥ* или *astuvo* *viditam* «да будет вам известно, знайте» [Ind. Antiq. 6,73. 77. 86]. *viditam* _Adv._ «со знанием — о» (Gen.)
+- **RU:** — 8〉 *vidita* познанный, узнанный, знаемый, известный — как (Nomin.). Также _n._ impers. *viditamastu vaḥ* или *astuvo* *viditam* да будет вам известно, знайте [Ind. Antiq. 6,73. 77. 86]. *viditam* _Adv._ со знанием — о (Gen.)
   <sub>attested</sub>
 
 **9)** — 9〉 *vitta*
@@ -52,39 +52,39 @@
 
 **9a)** — a〉 erkannt.
 
-- **RU:** — a〉 «познанный».
+- **RU:** — a〉 познанный.
   <sub>attested</sub>
 
 **9b)** — b〉 bekannt, berühmt.
 
-- **RU:** — b〉 «известный, знаменитый».
+- **RU:** — b〉 известный, знаменитый.
   <sub>attested</sub>
 
 **10)** — 10〉 **vinna* = *jñāta* [TRIK. 3,3,262](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262). — *avidan* und *vidyāt* auch fehlerhaft für *avindan* und *vindyāt* (zu **3.** *vid*).
 — Caus. *vedayate* und *vedayati* (seltener)
 
-- **RU:** — 10〉 **vinna* = *jñāta* [TRIK. 3,3,262](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262). — *avidan* и *vidyāt* также ошибочно вместо *avindan* и *vindyāt* (к **3.** *vid*).
+- **RU:** — 10〉 **vinna* = *jñāta* [TRIK. 3,3,262](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,262). — *avidan* и *vidyāt* также ошибочно вм. *avindan* и *vindyāt* (к **3.** *vid*).
 — Caus. *vedayate* и *vedayati* (реже)
   <sub>attested</sub>
 
 **1)** — 1〉 ankündigen, mittheilen, melden, anzeigen, angeben; auch mit prädicativem Acc.
 
-- **RU:** — 1〉 «извещать, сообщать, доносить, указывать, называть»; также с предикативным Acc.
+- **RU:** — 1〉 извещать, сообщать, доносить, указывать, называть; также с предикативным Acc.
   <sub>attested</sub>
 
 **2)** — 2〉 lehren, erklären; mit doppeltem Acc. [225,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225).
 
-- **RU:** — 2〉 «учить, разъяснять»; с двойным Acc. [225,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225).
+- **RU:** — 2〉 учить, разъяснять; с двойным Acc. [225,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225).
   <sub>attested</sub>
 
 **3)** — 3〉 kund thun, so v. a. zeigen, anwenden.
 
-- **RU:** — 3〉 «делать известным», так преим. «показывать, применять».
+- **RU:** — 3〉 делать известным, так преим. показывать, применять.
   <sub>attested</sub>
 
 **4)** — 4〉 kennen, — als, so v. a. dass ist (mit doppeltem Acc.), halten für (mit doppeltem Acc.).
 
-- **RU:** — 4〉 «знать — как», так преим. «то есть» (с двойным Acc.), «принимать за, считать» (с двойным Acc.).
+- **RU:** — 4〉 знать — как, так преим. то есть (с двойным Acc.), принимать за, считать (с двойным Acc.).
   <sub>attested</sub>
 
 **5)** — 5〉 erkennen, Wahrnehmen, erfahren —, dass ist. (mit doppeltem Acc.).
@@ -97,9 +97,9 @@
 - **RU:** — 6) чувствовать, ощущать. Act. [NYĀYAS. 4,1,57]. Med. коммент. к [3,1,1. 4,1,57].
   <sub>attested</sub>
 
-**7)** — 7〉 *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) fehlerhaft für *ramayanti*.
+**7)** — 7〉 *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A106_S055) = ≈крит. 13,109.52c fehlerhaft für *ramayanti*.
 
-- **RU:** — 7) *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) ошибочно вместо *ramayanti*.
+- **RU:** — 7) *vedayanti* [MBH. 13,5186](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5186) = [≈Вульг. 13.106.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A106_S055) = ≈крит. 13,109.52c ошибочно вм. *ramayanti*.
   <sub>attested</sub>
 
 **7)** — Desid. *vividiṣati* zu wissen wünschen, erkennen —, kennen lernen wollen, sich erkundigen nach (Acc.).
@@ -159,7 +159,7 @@
 
 **3)** — 3〉 kund thun, mittheilen, melden (auch mit prädicativem Acc.) anzeigen. *ātmānam* sich anmelden, seinen Namen nennen. *āvedita* angemeldet.
 
-- **RU:** — 3) объявлять, сообщать, докладывать (также с предикативным Acc.) указывать, извещать. *ātmānam* представляться, называть своё имя. *āvedita* доложенный, объявленный.
+- **RU:** — 3) объявлять, сообщать, докладывать (также с предикативным Acc.) указывать, извещать. *ātmānam* представляться, называть свое имя. *āvedita* доложенный, объявленный.
   <sub>attested</sub>
 
 **4)** — 4〉 vorschreiben (vom Arzte gesagt) [Spr. 7623](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7623).
@@ -199,7 +199,7 @@
 
 **1)** — 1〉 Jmd (Dat., Gen. oder Loc.) kund thun, melden, sagen, berichten, ankündigen, mittheilen, anzeigen, melden —, sagen dass ist (mit prädicativem Acc. [Spr. 7802](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7802)), Jmd anmelden. *ātmānam* sich anmelden, indem man seinen Namen nennt.
 
-- **RU:** — 1) объявлять, сообщать, говорить, докладывать, возвещать, извещать, указывать, сообщать —, говорить что есть кому-либо (Dat., Gen. или Loc.) (с предикативным Acc. [Spr. 7802](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7802)), докладывать о ком-либо. *ātmānam* представляться, называя своё имя.
+- **RU:** — 1) объявлять, сообщать, говорить, докладывать, возвещать, извещать, указывать, сообщать —, говорить что есть кому-либо (Dat., Gen. или Loc.) (с предикативным Acc. [Spr. 7802](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7802)), докладывать о ком-либо. *ātmānam* представляться, называя свое имя.
   <sub>attested</sub>
 
 **2)** — 2〉 nennen, mit doppeltem Acc.
@@ -209,12 +209,12 @@
 
 **3)** — 3〉 Jmd Etwas anmelden, so v. a. anbieten, übergeben.
 
-- **RU:** — 3) докладывать кому-либо о чём-либо, так преим. предлагать, передавать.
+- **RU:** — 3) докладывать кому-либо о чем-либо, так преим. предлагать, передавать.
   <sub>attested</sub>
 
 **4)** — 4〉 überantworten. *ātmānam* sich zu eigen geben, sich zur Verfügung stellen.
 
-- **RU:** — 4) передавать, вручать. *ātmānam* отдавать себя, предоставлять себя в чьё-либо распоряжение.
+- **RU:** — 4) передавать, вручать. *ātmānam* отдавать себя, предоставлять себя в чье-либо распоряжение.
   <sub>attested</sub>
 
 **5)** — 5〉 *doṣam* eine Schuld wälzen auf (Dat.).
@@ -222,14 +222,14 @@
 - **RU:** — 5) *doṣam* перекладывать вину на (Dat.).
   <sub>attested</sub>
 
-**6)** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) fehlerhaft für *nyaveśayat*.
+**6)** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) = [≈Вульг. 14.89.35](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A089_S035) = ≈крит. 14,91.34a fehlerhaft für *nyaveśayat*.
 
-- **RU:** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) ошибочно вместо *nyaveśayat*.
+- **RU:** — 6〉 *nyavedayat* [MBH. 14,2678](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2678) = [≈Вульг. 14.89.35](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A089_S035) = ≈крит. 14,91.34a ошибочно вм. *nyaveśayat*.
   <sub>attested</sub>
 
 **6)** — Mit *atini* Caus. Jmd Etwas anbieten. Vielleicht fehlerhaft für *abhini*.
 
-- **RU:** — С *atini* Caus. предлагать кому-либо что-либо. Может быть, ошибочно вместо *abhini*.
+- **RU:** — С *atini* Caus. предлагать кому-либо что-либо. Может быть, ошибочно вм. *abhini*.
   <sub>attested</sub>
 
 **6)** — Mit *vini* Caus.
@@ -259,7 +259,7 @@
 
 **2)** — 2〉 anbieten. *ātmānam* sich Jmd zur Verfügung stellen.
 
-- **RU:** — 2〉 предлагать. *ātmānam* предоставлять себя в чьё-либо распоряжение.
+- **RU:** — 2〉 предлагать. *ātmānam* предоставлять себя в чье-либо распоряжение.
   <sub>attested</sub>
 
 **2)** — Mit *nis* Caus. in *anirvedita*.
@@ -357,9 +357,9 @@
 - **RU:** — 1〉 различать, знать.
   <sub>attested</sub>
 
-**—2〉)** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) fehlerhaft für *vivadanti*.
+**—2〉)** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) = [≈Вульг. 12.9.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S023) = ≈крит. 12,9.23c fehlerhaft für *vivadanti*.
 
-- **RU:** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) ошибочно вместо *vivadanti*.
+- **RU:** — 2〉 *vividanti* [MBH. 12,265,13](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,265,13) = [≈Вульг. 12.9.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S023) = ≈крит. 12,9.23c ошибочно вм. *vivadanti*.
   <sub>attested</sub>
 
 **—2〉)** — Mit *sam* angeblich stets Med.
@@ -404,13 +404,13 @@
 
 **d)** — d〉 worüber man (Gen.) einverstanden ist. *˚m* im Einverständniss mit (Gen.).
 
-- **RU:** — d〉 то, в чём Gen. согласны. *˚m* в согласии с Gen..
+- **RU:** — d〉 то, в чем Gen. согласны. *˚m* в согласии с Gen..
   <sub>attested</sub>
 
 **e)** — e〉 ermahnt.
 — Caus.
 
-- **RU:** — e〉 увещёванный, наставленный.
+- **RU:** — e〉 увещеванный, наставленный.
 — Caus.
   <sub>attested</sub>
 
@@ -456,7 +456,7 @@
 
 **1)** — 1〉 Nom. ag. wissend, kennend, sich verstehend auf, vertraut mit Etwas, Kenner. Gewöhnlich in Comp. mit seinem Obj. Superl. *˚vittama*.
 
-- **RU:** — 1〉 Nom. ag. знающий, ведающий, разбирающийся в чём-либо, знаток чего-либо. Обычно в Comp. со своим Obj. Superl. *˚vittama*.
+- **RU:** — 1〉 Nom. ag. знающий, ведающий, разбирающийся в чем-либо, знаток чего-либо. Обычно в Comp. со своим Obj. Superl. *˚vittama*.
   <sub>attested</sub>
 
 **2)** — 2〉 _m._ der Planet Mercur.

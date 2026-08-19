@@ -22,7 +22,7 @@
 
 **PW-1b)** — b〉 fehlerhaft für *mīna*.
 
-- **RU:** — b〉 ошибочно вместо *mīna*.
+- **RU:** — b〉 ошибочно вм. *mīna*.
   <sub>lexicographic</sub>
 
 **PW-2)** — 2〉 _f._ *menā*
@@ -60,12 +60,12 @@
 - **RU:** — γ〉 некой реки.
   <sub>lexicographic</sub>
 
-**NWS-1)** [NWS: Kümmel 1940 : 393] *mena* [Gen , unsp , 1111; 1598 , ?; Bikaneer] = viṣṇu . ŚabdaBhePra(Ma) Ed, S. 81
+**NWS-1)** [NWS: Kümmel 1940 : 393] *mena* [Gen, unsp] (1111; 1598 , ?; Bikaneer) = viṣṇu . ŚabdaBhePra(Ma) Ed, S. 81
 
-- **RU:** *mena* [Gen , unsp , 1111; 1598 , ?; Bikaneer] = viṣṇu . ŚabdaBhePra(Ma) Ed, S. 81 . Kümmel 1940 : 393
+- **RU:** *mena* [Gen, unsp] (1111; 1598 , ?; Bikaneer) = viṣṇu . ŚabdaBhePra(Ma) Ed, S. 81 . Kümmel 1940 : 393
   <sub>lexicographic</sub>
 
-**NWS-2)** [NWS: Kümmel 1940 : 393 (s.v. mena)] *viṣṇu* [Gen , unsp , 1111; 1598 , ?; Bikaneer] = mena . ŚabdaBhePra(Ma) Ed, S. 81 . Kümmel 1940 : 393 (s.v. mena )
+**NWS-2)** [NWS: Kümmel 1940 : 393 (s.v. mena)] *viṣṇu* [Gen, unsp] (1111; 1598 , ?; Bikaneer) = mena . ŚabdaBhePra(Ma) Ed, S. 81 . Kümmel 1940 : 393 (s.v. mena )
 
-- **RU:** *viṣṇu* [Gen , unsp , 1111; 1598 , ?; Bikaneer] = mena . ŚabdaBhePra(Ma) Ed, S. 81 . Kümmel 1940 : 393 (s.v. mena )
+- **RU:** *viṣṇu* [Gen, unsp] (1111; 1598 , ?; Bikaneer) = mena . ŚabdaBhePra(Ma) Ed, S. 81 . Kümmel 1940 : 393 (s.v. mena )
   <sub>lexicographic</sub>

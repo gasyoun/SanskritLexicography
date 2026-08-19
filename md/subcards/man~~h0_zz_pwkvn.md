@@ -25,5 +25,5 @@
 
 **prati)** Mit *prati* Caus. V. wieder ehren, Jmd (Acc.) vergelten mit (Instr.) [JĀTAKAM. 10,8].
 
-- **RU:** С *prati* Caus. V. чтить в ответ, воздавать кому-л. (Acc.) чем-л. (Instr.) [JĀTAKAM. 10,8].
+- **RU:** С *prati* Caus. V. чтить в ответ, воздавать кому-л. (Acc.) чем-л. (Ins.) [JĀTAKAM. 10,8].
   <sub>attested</sub>

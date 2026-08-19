@@ -10,7 +10,7 @@
 [3,4,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.03) [7,104,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.17) [8,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02) *somasya jihvā pra jigāti cakṣasā*
 [1,87,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.087.html#rv01.087.05) [85,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.06) [VĀLAKH. 1,2.] *prāgāddevapurā ayam*
 [AV. 5,28,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.09) *sā gadā tatkarānmuktā prāgāddroṇajighāṃsayā*
-[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) Hierher gehört der Form nach das partic. *prajigat*, welches
+[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) = [≈Вульг. 6.53.19](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A053_S019) = ≈крит. 06,49.19a Hierher gehört der Form nach das partic. *prajigat*, welches
 [SĀY.] zu [2.] *gā* zieht: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.150.html#rv01.150.02)
 
@@ -21,7 +21,7 @@
 [3,4,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.03) [7,104,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.17) [8,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02) *somasya jihvā pra jigāti cakṣasā*
 [1,87,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.087.html#rv01.087.05) [85,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.06) [VĀLAKH. 1,2.] *prāgāddevapurā ayam*
 [AV. 5,28,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.09) *sā gadā tatkarānmuktā prāgāddroṇajighāṃsayā*
-[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) Сюда относится по форме partic. *prajigat*, которое
+[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) = [≈Вульг. 6.53.19](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A053_S019) = ≈крит. 06,49.19a Сюда относится по форме partic. *prajigat*, которое
 [SĀY.] к [2.] *gā* притягивает: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.150.html#rv01.150.02)
   <sub>attested</sub>

@@ -14,13 +14,13 @@
 
 **2)** — 2) *atyāhita* widerwärtig, unerwünscht; _n._ Widerwärtigkeit, Unglück (s. auch *atyāhita): kāryamatyāhitaṃ bhaviṣyati*
 [PRAB. 33,1.] [25,3.]
-[MBH. 4,861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.861)
+[MBH. 4,861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.861) = [≈Вульг. 4.25.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A025_S001) = ≈крит. 04,24.1a
 [HARIV. 9714.](https://sanskrit-lexicon-scans.github.io/hariv?9714)
 [PAÑCAT. ed. orn. 41,6.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?41,6) [8.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?41,8)
 
 - **RU:** — 2) *atyāhita* неприятный, нежелательный; _n._ неприятность, несчастье (см. также *atyāhita): kāryamatyāhitaṃ bhaviṣyati*
 [PRAB. 33,1.] [25,3.]
-[MBH. 4,861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.861)
+[MBH. 4,861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.861) = [≈Вульг. 4.25.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A025_S001) = ≈крит. 04,24.1a
 [HARIV. 9714.](https://sanskrit-lexicon-scans.github.io/hariv?9714)
 [PAÑCAT. ed. orn. 41,6.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?41,6) [8.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?41,8)
   <sub>attested</sub>

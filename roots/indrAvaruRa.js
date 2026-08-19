@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["indrAvaruRa"]=[{"key": "indr_avaru_ra~~h0_zz_pw", "h": "{#i/ndrAva/ruRa#}", "iast": "indrāvaruṇa", "senses": [{"tag": "1", "de_html": "<i class=sa>indrāvaruṇa</i> <span class=lex>m.</span> <span class=ab title=Dual — dual>Du.</span> <i>Indra</i> und <i>Varuṇa</i>.", "ru_html": "<i class=sa>indrāvaruṇa</i> <span class=lex>m.</span> <span class=ab title=Dual — dual>Du.</span> <i>Индра</i> и <i>Варуна</i>.", "en_html": "", "dcs": null, "src": "attested"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["indrAvaruRa"]=[];

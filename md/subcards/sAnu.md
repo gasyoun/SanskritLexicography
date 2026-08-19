@@ -13,7 +13,7 @@
 - **RU:** *sánu* [Ved]: выигрышный, привлекательный. Geldner 1907 : 189
   <sub>attested</sub>
 
-**NWS-2)** *sánutara* [Ved] [Komp zu sánu ] ṚV 4,38,4 . Geldner 1907 : 189 (s.v. sánu )
+**NWS-2)** *sánutara* [Ved] [Komp zu sánu ] [ṚV 4,38,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.038.html#rv04.038.04) . Geldner 1907 : 189 (s.v. sánu )
 
-- **RU:** *sánutara* [Ved] [сравнительная степень от sánu ] ṚV 4,38,4 . Geldner 1907 : 189 (s.v. sánu )
+- **RU:** *sánutara* [Ved] [сравнительная степень от sánu ] [ṚV 4,38,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.038.html#rv04.038.04) . Geldner 1907 : 189 (s.v. sánu )
   <sub>attested</sub>

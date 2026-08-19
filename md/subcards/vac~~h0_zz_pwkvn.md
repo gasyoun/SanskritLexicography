@@ -10,5 +10,5 @@
 
 **vi_prefix_kvn)** **1.** *vac* mit *paripra* VI. 6. — Mit *vi* *Caus. murren, klagen, ungehalten sein [MAHĀVY. 132,16]. Statt dessen *vipācayati* [281,158].
 
-- **RU:** **1.** *vac* с *paripra* VI. 6. — С *vi* *Caus. ворчать, жаловаться, быть недовольным [MAHĀVY. 132,16]. Вместо этого *vipācayati* [281,158].
+- **RU:** **1.** *vac* с *paripra* VI. 6. — С *vi* *Caus. ворчать, жаловаться, быть недовольным [MAHĀVY. 132,16]. Вм. этого *vipācayati* [281,158].
   <sub>attested</sub>

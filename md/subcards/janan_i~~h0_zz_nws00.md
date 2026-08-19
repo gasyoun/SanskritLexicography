@@ -5,7 +5,7 @@
 
 **NWS 1 (Gen., unsp.))** [NWS: MW] jananī Gen , unsp > Subst f a queen-mother. W(MW) . MW : 411 (s.v. jánana )
 
-- **RU:** [NWS: MW] jananī Gen, unsp — Subst f мать-царица. W(MW). MW : 411 (s.v. jánana)
+- **RU:** [NWS: MW] jananī Gen., unsp — Subst f мать-царица. W(MW). MW : 411 (s.v. jánana)
   <sub>lexicographic</sub>
 
 **NWS 2 (Ved., unsp.))** [NWS: Windisch] Ved , unsp > Subst f Erzeugerin, Mutter. Windisch 1883 : 122

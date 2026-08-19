@@ -14,9 +14,9 @@
 - **RU:** — 2〉 приходить — , идти к или в направлении, направляться к, обращаться к; с Acc. или Loc.
   <sub>attested</sub>
 
-**3)** — 3〉 nachgehen, verfolgen [ṚV. 4,3,13. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13).
+**3)** — 3〉 nachgehen, verfolgen [ṚV. 4,3,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13) [ṚV. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04).
 
-- **RU:** — 3〉 преследовать, следовать за [ṚV. 4,3,13. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13).
+- **RU:** — 3〉 преследовать, следовать за [ṚV. 4,3,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.13) [ṚV. 10,18,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04).
   <sub>attested</sub>
 
 **4)** — 4〉 zu Jmd (Dat.) kommen, so v. a. sich einstellen bei [ṚV. 8,45,32](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.32). Jmd (Acc.) zukommen (von einem Namen).
@@ -41,7 +41,7 @@
 
 **8)** — 8〉 gehen, wandeln [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). mit Acc. oder Instr. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) des Weges.
 
-- **RU:** — 8〉 идти, странствовать [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). с Acc. или Instr. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) пути.
+- **RU:** — 8〉 идти, странствовать [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). с Acc. или Ins. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) пути.
   <sub>attested</sub>
 
 **Des.)** — Desid. *jigīṣati* zu gehen verlangen.
@@ -66,7 +66,7 @@
 
 **Mit T31-3)** — 3〉 vorübergehen, verstreichen (von der Zeit), — für (Acc.).
 
-- **RU:** — 3〉 проходить, истекать (о времени), — вм. (Acc.).
+- **RU:** — 3〉 проходить, истекать (о времени), — вместо (Acc.).
   <sub>attested</sub>
 
 **Mit T31-4)** — 4〉 hingehen, sterben.

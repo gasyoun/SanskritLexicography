@@ -14,7 +14,7 @@
 [9,5,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.01) [12,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.04) [45.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.45) [VS. 40,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?40,3) [ŚAT. BR. 3,4,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,7) [14,7,2,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,14) [LĀṬY. 4,12,17.]
 
 - **RU:** — *api*
- 1) «войти во что-либо, вступить к кому-либо»: *devān*
+ 1) войти во что-либо, вступить к кому-либо: *devān*
 [AV. 12,4,31.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.31) [3,53.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.53)
 [ŚAT. BR. 14,4,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,1) *tāṃścidevāpi gacchatāt*
 [ṚV. 10,154,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.154.html#rv10.154.01) *api panthāmaganmahi svastigām*
@@ -27,6 +27,6 @@
 **2)** — 2) inire feminam: *apyū nu patnīrvṛṣaṇo jagamyuḥ*
 [ṚV. 1,179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.179.html#rv01.179.01)
 
-- **RU:** — 2) «совокупляться с женщиной» (inire feminam): *apyū nu patnīrvṛṣaṇo jagamyuḥ*
+- **RU:** — 2) совокупляться с женщиной (inire feminam): *apyū nu patnīrvṛṣaṇo jagamyuḥ*
 [ṚV. 1,179,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.179.html#rv01.179.01)
   <sub>attested</sub>

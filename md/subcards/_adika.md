@@ -10,7 +10,7 @@
 
 **NWS-1)** *ādika* [Ved, unsp] [ifc (Bhvr)] ādi . ityādi : so beginnend. ṚV(Sā) I 165, 11 [NWS: Windisch 1883 : 106]
 
-- **RU:** *ādika* [Ved, unsp] [ifc (Bhvr)] ādi. ityādi: «так начинающийся». ṚV(Sā) I 165, 11 [NWS: Windisch 1883 : 106]
+- **RU:** *ādika* [Ved, unsp] [ifc (Bhvr)] ādi. ityādi: «так начинающийся». [ṚV(Sā) I 165, 11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.11) [NWS: Windisch 1883 : 106]
   <sub>attested</sub>
 
 **NWS-2)** [Śā, Med] [ifc] beginning with. Hoernle 1893-1912 (I) 5.47 [NWS: Hoernle 1908 : 249]

@@ -6,7 +6,7 @@
 **1〉)** **1.** √*pat*, *patati* (episch auch Med.)
 — 1〉 fliegen, sich in der Luft schnell bewegen (von Belebtem und Unbelebtem), wehen (von Fahnen), dahineilen, fliehen (von der Zeit).
 
-- **RU:** 1〉 летать, быстро двигаться в воздухе (об одушевлённых и неодушевлённых предметах), веять (о знамёнах), мчаться, убегать (о времени).
+- **RU:** 1〉 летать, быстро двигаться в воздухе (об одушевленных и неодушевленных предметах), веять (о знаменах), мчаться, убегать (о времени).
   <sub>attested</sub>
 
 **2〉)** — 2〉 sich herablassen, sich niederlassen, sich senken (von der Sonne), sich niederwerfen, sich stürzen, sich werfen auf oder in (Loc. oder Acc.), — zu Jmdes Füssen (Loc., ausnahmsweise Acc.) *mūrdhnā* mit dem Kopfe sich Jmd (Gen.) zu Füssen werfen. *pādayoḥ patitaḥ* und *pādapatita* sich Jmd zu Füssen geworfen habend.
@@ -61,7 +61,7 @@
 
 **caus. 2〉)** — 2〉 fallen machen, — lassen, eine Axt, ein Messer u. s. w. fallen lassen, so v. a. damit einen Schlag —, einen Schnitt verursachen. Das Worauf im Loc., Gen. oder Gen. mit *upari*. *ātmānam* sich niederwerfen. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* so v. a. dass sie mit allen zehn Fingern auf ihr Gesicht schlug [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* auch so v. a. Strafe verhängen über (Loc.), *jalam* so v. a. Wasser auf die Erde giessen, *jalaṃ netrāmbhyām* so v. a. Thränen vergiessen, *aśrūṇi* so v. a. Thränen hervorrufen [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* Jmd von seiner Stelle stürzen.
 
-- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож и т.д., так преим. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так преим. что она ударила себя по лицу всеми десятью пальцами [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* также так преим. налагать наказание на (Loc.), *jalam* так преим. лить воду на землю, *jalaṃ netrāmbhyām* так преим. проливать слёзы, *aśrūṇi* так преим. вызывать слёзы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
+- **RU:** 2〉 заставлять падать, ронять, ронять топор, нож и т.д., так преим. наносить удар, делать разрез. Предмет, на который роняют, — в Loc., Gen. или Gen. с *upari*. *ātmānam* простираться ниц. *yattayā — vaktre 'syāḥ svāṅgulyo daśa pātitāḥ* так преим. что она ударила себя по лицу всеми десятью пальцами [114,32](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?114). *daṇḍam* также так преим. налагать наказание на (Loc.), *jalam* так преим. лить воду на землю, *jalaṃ netrāmbhyām* так преим. проливать слезы, *aśrūṇi* так преим. вызывать слезы [Spr. 7786](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7786). *sathānāt* низвергать кого-л. с его места.
   <sub>attested</sub>
 
 **caus. 3〉)** — 3〉 hinabwerfen, abschlagen (den Kopf), ausschlagen (Zähne), niederwerfen, niederhauen, umwerfen, werfen in (Acc. oder Loc.).
@@ -261,7 +261,7 @@
 
 **abhipat- 2〉)** — 2〉 überfliegen, im Fliegen überholen.
 
-- **RU:** 2〉 перелетать, обгонять в полёте.
+- **RU:** 2〉 перелетать, обгонять в полете.
   <sub>attested</sub>
 
 **abhipat- 3〉)** — 3〉 durchlaufen, zurücklegen.
@@ -286,12 +286,12 @@
 
 **abhipat- caus. 1〉)** — 1〉 mit Etwas (Instr.) nach Etwas werfen [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
 
-- **RU:** 1〉 бросать что-л. (Instr.) в кого-л. [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
+- **RU:** 1〉 бросать что-л. (Ins.) в кого-л. [TBR. 3,2,8,10](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,2,8,10).
   <sub>attested</sub>
 
-**abhipat- caus. 2〉)** — 2〉 werfen —, schleudern auf (Dat. oder Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4).
+**abhipat- caus. 2〉)** — 2〉 werfen —, schleudern auf (Dat. oder Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4) = [≈Вульг. 3.2.55](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S055) = ≈крит. 03,2.53a.
 
-- **RU:** 2〉 бросать, метать на (Dat. или Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4).
+- **RU:** 2〉 бросать, метать на (Dat. или Loc.) [MBH. 3,101,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,101,4) = [≈Вульг. 3.2.55](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S055) = ≈крит. 03,2.53a.
   <sub>attested</sub>
 
 **abhipat- caus. 3〉)** — 3〉 hinwerfen, hinabwerfen.
@@ -361,7 +361,7 @@
 
 **sam- caus. 2〉)** — 2〉 *asram* Thränen vergiessen.
 
-- **RU:** 2〉 *asram* проливать слёзы.
+- **RU:** 2〉 *asram* проливать слезы.
   <sub>attested</sub>
 
 **samā- (caus.))** — Mit *abhyā* herbeieilen, hinstürzen zu, losstürzen auf (Acc. oder Acc. mit *prati*).
@@ -371,7 +371,7 @@
 
 **vi-)** — Caus. hindehnen —, hinziehen (einen Strick) zu (Acc.) [ŚULBAS. 1,58].
 
-- **RU:** Caus. натягивать, протягивать (верёвку) к (Acc.) [ŚULBAS. 1,58].
+- **RU:** Caus. натягивать, протягивать (веревку) к (Acc.) [ŚULBAS. 1,58].
   <sub>attested</sub>
 
 **vi- (caus.))** — Mit *paryā* forteilen, davoneilen.
@@ -461,7 +461,7 @@
 
 **ud- caus. 3〉)** — 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) fehlerhaft für *˚pāṭayat*.
 
-- **RU:** 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вместо *˚pāṭayat*.
+- **RU:** 3〉 *udapātayat* [KATHĀS. 72,86](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,86) ошибочно вм. *˚pāṭayat*.
   <sub>attested</sub>
 
 **ud- desid.)** — Desid. auffliegen wollen.

@@ -10,8 +10,8 @@
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
 
 - **RU:** — *vi*, partic. *vyāpta*
- 1) «включённый, охваченный чем-либо другим»
-[BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam*, так преим. «подпадает под понятие преходящести»
-[TARKAS. 41.] — caus. *vyāpita* «наполненный, исполненный»
+ 1) включенный, охваченный чем-либо другим
+[BHĀṢĀP. 67.] *kṛtakatvamanityatvena vyāptam*, так преим. подпадает под понятие преходящести
+[TARKAS. 41.] — caus. *vyāpita* наполненный, исполненный
 [Spr. 3836.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3836)
   <sub>attested</sub>

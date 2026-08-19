@@ -12,7 +12,7 @@
 — a〉 sich freuen, fröhlich, heiter sein, frohlocken, sich ergötzen, schwelgen in, sich wohl befinden bei, sich gütlich thun an oder in (Instr., Gen., Loc., selten Acc.), sich in Etwas berauschen, berauscht (auch in übertragener Bed.) werden durch (Instr.). *mandamāna* freudig.
 
 - **RU:** — 1〉 intrans. Acc., редко Med.
-— a〉 радоваться, быть радостным, веселым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чем-л., угощаться чем-л. или в чем-л. (Instr., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном знач.) от чего-л. (Instr.). *mandamāna* радостно.
+— a〉 радоваться, быть радостным, веселым, ликовать, наслаждаться, упиваться чем-л., чувствовать себя хорошо при чем-л., угощаться чем-л. или в чем-л. (Ins., Gen., Loc., редко Acc.), упиваться чем-л., приходить в опьянение (также в переносном знач.) от чего-л. (Ins.). *mandamāna* радостно.
   <sub>attested</sub>
 
 **1b)** — b〉 selig sein (von Göttern und Seligen).
@@ -202,7 +202,7 @@
 
 **a-root)** — Mit *vipra*, *˚matta* wohl nicht versäumt.
 
-- **RU:** — С *vipra*, *˚matta* — по всей видимости, «не упущенный».
+- **RU:** — С *vipra*, *˚matta* — по всей видимости, не упущенный.
   <sub>attested</sub>
 
 **sam-root)** — Mit *saṃpra*, *˚matta*
@@ -267,7 +267,7 @@
 
 **sam2-2)** — 2〉 an Etwas (Instr.) sich ergötzen.
 
-- **RU:** — 2〉 наслаждаться чем-л. (Instr.).
+- **RU:** — 2〉 наслаждаться чем-л. (Ins.).
   <sub>attested</sub>
 
 **sam2-3)** — 3〉 aufgeregt, hingerissen, berauscht (in übertragener Bed.); brünstig (Elephant).

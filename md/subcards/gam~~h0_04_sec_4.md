@@ -11,7 +11,7 @@
 
 Begriff sein zu gehen, zu gelangen streben
 [LĀṬY. 2,6,17.] *jigamiṣantaḥ*
-[MBH. 16,63.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.63) *svargaṃ lokamajigāṃsat*
+[MBH. 16,63.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.63) = [≈Вульг. 16.3.7](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A003_S007) = ≈крит. 16,4.6a *svargaṃ lokamajigāṃsat*
 [ŚAT. BR. 10,2,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,1,1) *atha yadi mahajjigamiṣet*
 [CHĀND. UP. 5,2,4.]
 
@@ -22,7 +22,7 @@ Begriff sein zu gehen, zu gelangen streben
  1) хотеть идти, собираться идти, стремиться дойти, достигнуть
 
 [LĀṬY. 2,6,17.] *jigamiṣantaḥ*
-[MBH. 16,63.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.63) *svargaṃ lokamajigāṃsat*
+[MBH. 16,63.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.63) = [≈Вульг. 16.3.7](https://sanatana.in/mahabharata/listing/parva/mausalaparva?id=P16_U01_A003_S007) = ≈крит. 16,4.6a *svargaṃ lokamajigāṃsat*
 [ŚAT. BR. 10,2,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,1,1) *atha yadi mahajjigamiṣet*
 [CHĀND. UP. 5,2,4.]
   <sub>attested</sub>

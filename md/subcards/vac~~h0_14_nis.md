@@ -8,9 +8,9 @@
 [AIT. BR. 4,29.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,29) *aniruktāṃ devatāṃ niravocat*
 [ŚAT. BR. 10,3,5,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,5,15)
 [NIR. 10,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,5) *tasmātsatyaṃ nirucyatām*
-[MBH. 3,16892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16892) *nāmadheyāni lokeṣu bahūnyasya yathārthavat . nirucyante mahattvācca vibhutvācca karmaṇastathā ..*
-[7,9611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9611) [13,7523.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7523) [12,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.236) *śṛṇu putra yathā hyeṣa puruṣaḥ śāśvato 'vyayaḥ . akṣayaścāprameyaśca sarvagaśca nirucyate ..*
-[13740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13740) *yādavā yadunā cāgre nirucyante ca haihayāḥ*
+[MBH. 3,16892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16892) = [≈Вульг. 3.298.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A298_S034) = ≈крит. 03,282.34a *nāmadheyāni lokeṣu bahūnyasya yathārthavat . nirucyante mahattvācca vibhutvācca karmaṇastathā ..*
+[7,9611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9611) = [≈Вульг. 7.202.120](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A202_S120) = ≈крит. 07,173.79a [13,7523.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7523) = [≈Вульг. 13.161.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A161_S022) = ≈крит. 07,173.78c [12,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.236) = [≈Вульг. 12.8.35](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S035) = ≈крит. 12,8.35a *śṛṇu putra yathā hyeṣa puruṣaḥ śāśvato 'vyayaḥ . akṣayaścāprameyaśca sarvagaśca nirucyate ..*
+[13740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13740) = [≈Вульг. 3.207.40](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A207_S040) = ≈крит. 03,198.39a *yādavā yadunā cāgre nirucyante ca haihayāḥ*
 [HARIV. 1898.](https://sanskrit-lexicon-scans.github.io/hariv?1898) *vedā nirvaktumakṣamāḥ*
 [PAÑCAR. 1,12,38.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,38) *(yaḥ) nirucyamāna praśnaṃ necchet* (der) eine an ihn gerichtete Frage nicht beantworten will
 [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) *vidirjñāne nirucyate* die Wurzel *vid* wird durch *jñāna* erklärt
@@ -23,7 +23,7 @@
 
 * niruktam*
 [7,9,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,48) [8,5,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,5,26) *akṣauhiṇī tu paryāyairniruktā ca varūthinī*
-[MBH. 5,5267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5267)
+[MBH. 5,5267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5267) = [≈Вульг. 5.157.33](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A157_S033) = ≈крит. 05,154.32a
 [BHĀG. P. 7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) *yanniruktaṃ nidhanamupeyuḥ*
 [PAÑCAV. BR. 17,1,8. 18,6,9.] *nirukta aindra upāṃśu prajāpatyaḥ*
 [ŚĀṄKH. ŚR. 17,7,9.]
@@ -35,21 +35,21 @@
 [LĀṬY. 1,4,5.] *āgneyyāvanirukte* Verse an Agni, in welchen aber sein Name nicht vorkommt,
 [ĀŚV. ŚR. 2,14,32.] ausdrücklich genannt, — vorgeschrieben
 [GṚHY. 1,22,27.] *tadidaṃ vacanaṃ teṣāṃ niruktaṃ vai* ist erklärt so v. a. hat sich bewährt, ist in Erfüllung gegangen
-[MBH. 9,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1316)
+[MBH. 9,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1316) = [≈Вульг. 9.24.45](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A024_S045) = ≈крит. 09,23.43a
 
 - **RU:** — *nis*
  1) высказывать, обозначать словами, прямо называть, объяснять: *yatprathame pade devatā nirucyate*
 [AIT. BR. 4,29.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,29) *aniruktāṃ devatāṃ niravocat*
 [ŚAT. BR. 10,3,5,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,3,5,15)
 [NIR. 10,5.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?10,5) *tasmātsatyaṃ nirucyatām*
-[MBH. 3,16892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16892) *nāmadheyāni lokeṣu bahūnyasya yathārthavat . nirucyante mahattvācca vibhutvācca karmaṇastathā ..*
-[7,9611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9611) [13,7523.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7523) [12,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.236) *śṛṇu putra yathā hyeṣa puruṣaḥ śāśvato 'vyayaḥ . akṣayaścāprameyaśca sarvagaśca nirucyate ..*
-[13740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13740) *yādavā yadunā cāgre nirucyante ca haihayāḥ*
+[MBH. 3,16892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16892) = [≈Вульг. 3.298.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A298_S034) = ≈крит. 03,282.34a *nāmadheyāni lokeṣu bahūnyasya yathārthavat . nirucyante mahattvācca vibhutvācca karmaṇastathā ..*
+[7,9611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9611) = [≈Вульг. 7.202.120](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A202_S120) = ≈крит. 07,173.79a [13,7523.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7523) = [≈Вульг. 13.161.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A161_S022) = ≈крит. 07,173.78c [12,236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.236) = [≈Вульг. 12.8.35](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S035) = ≈крит. 12,8.35a *śṛṇu putra yathā hyeṣa puruṣaḥ śāśvato 'vyayaḥ . akṣayaścāprameyaśca sarvagaśca nirucyate ..*
+[13740.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13740) = [≈Вульг. 3.207.40](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A207_S040) = ≈крит. 03,198.39a *yādavā yadunā cāgre nirucyante ca haihayāḥ*
 [HARIV. 1898.](https://sanskrit-lexicon-scans.github.io/hariv?1898) *vedā nirvaktumakṣamāḥ*
-[PAÑCAR. 1,12,38.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,38) *(yaḥ) nirucyamāna praśnaṃ necchet* (тот,) кто не желает отвечать на обращённый к нему вопрос
+[PAÑCAR. 1,12,38.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,12,38) *(yaḥ) nirucyamāna praśnaṃ necchet* (тот,) кто не желает отвечать на обращенный к нему вопрос
 [M. 8,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,55) *vidirjñāne nirucyate* корень *vid* объясняется через *jñāna*
 [KĀM. NĪTIS. 2,17.] [Verz. d. Oxf. H. 4,a, No. 30.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?4) *māṃsāttu medaso janma medaso 'sthi nirucyate* кости производятся от жира
-[HARIV. 2179.](https://sanskrit-lexicon-scans.github.io/hariv?2179) *nirukta* высказанный, облечённый в слова, объяснённый; чётко произнесённый (противоп. *upāṃśu): niruktamenaḥ kanīyo bhavati*
+[HARIV. 2179.](https://sanskrit-lexicon-scans.github.io/hariv?2179) *nirukta* высказанный, облеченный в слова, объясненный; четко произнесенный (противоп. *upāṃśu): niruktamenaḥ kanīyo bhavati*
 [ŚAT. BR. 2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20) *aniruktaḥ prajāpatiḥ*
 [14,2,2,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,21) [TAITT. UP. 2,6. 7.] *ayameva svārtho bhagavatyā viṣṇubhaktyā svāmino niruktaḥ*
 [PRAB. 104,18.]
@@ -57,7 +57,7 @@
 
 * niruktam*
 [7,9,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,48) [8,5,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,5,26) *akṣauhiṇī tu paryāyairniruktā ca varūthinī*
-[MBH. 5,5267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5267)
+[MBH. 5,5267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5267) = [≈Вульг. 5.157.33](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A157_S033) = ≈крит. 05,154.32a
 [BHĀG. P. 7,14,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,34) *yanniruktaṃ nidhanamupeyuḥ*
 [PAÑCAV. BR. 17,1,8. 18,6,9.] *nirukta aindra upāṃśu prajāpatyaḥ*
 [ŚĀṄKH. ŚR. 17,7,9.]
@@ -69,7 +69,7 @@
 [LĀṬY. 1,4,5.] *āgneyyāvanirukte* стихи к Агни, в которых, однако, его имя не встречается,
 [ĀŚV. ŚR. 2,14,32.] прямо назван, — предписан
 [GṚHY. 1,22,27.] *tadidaṃ vacanaṃ teṣāṃ niruktaṃ vai* объяснено так преим. оправдалось, исполнилось
-[MBH. 9,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1316)
+[MBH. 9,1316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1316) = [≈Вульг. 9.24.45](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A024_S045) = ≈крит. 09,23.43a
   <sub>attested</sub>
 
 **2))** — 2) wegsprechen, durch Worte vertreiben: *śalyānniravocamahaṃ viṣam*

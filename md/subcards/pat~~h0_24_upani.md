@@ -24,6 +24,6 @@
 **Nachträge addendum)** — Vgl. *upanipāta* fg. — Für das caus.
 [ŚĀṄKH. ŚR. 16,3,33] und [ĀŚV. ŚR. 10,8] wird richtiger *pad* caus. gelesen.
 
-- **RU:** — ср. *upanipāta* сл. — Вместо caus.
+- **RU:** — ср. *upanipāta* сл. — Вм. caus.
 [ŚĀṄKH. ŚR. 16,3,33] и [ĀŚV. ŚR. 10,8] правильнее читать *pad* caus..
   <sub>attested</sub>

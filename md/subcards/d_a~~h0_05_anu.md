@@ -41,10 +41,10 @@
   <sub>attested</sub>
 
 **4)** — 4) viell. Jmd (acc.) nachträglich eins versetzen: *agrato lakṣaye yāntaṃ puruṣaṃ pāvakaprabham .. — .. tena bhagnānarīnsarvānmadbhagnānmanyate janaḥ . tena bhagnāni sainyāni pṛṣṭhato 'nudadāmyaham ..*
-[MBH. 7,9499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499)
+[MBH. 7,9499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499) = [≈Вульг. 7.202.8](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A202_S008) = ≈крит. 07,173.6a
 
 - **RU:** 4) возможно нанести кому-л. (acc.) удар вдогонку, ударить вослед: *agrato lakṣaye yāntaṃ puruṣaṃ pāvakaprabham .. — .. tena bhagnānarīnsarvānmadbhagnānmanyate janaḥ . tena bhagnāni sainyāni pṛṣṭhato 'nudadāmyaham ..*
-[MBH. 7,9499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499)
+[MBH. 7,9499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499) = [≈Вульг. 7.202.8](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U08_A202_S008) = ≈крит. 07,173.6a
   <sub>attested</sub>
 
 **comp.)** — Vgl. *anānuda, anudeyī* (viell. Mitgabe

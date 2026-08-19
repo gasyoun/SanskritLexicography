@@ -12,12 +12,12 @@
 — a〉 führen, fahren, mit Gespann oder zu Schiffe (Instr.) bringen, — fortführen, den Wagen (Acc.) ziehen, die Rosse (Acc.) führen, so v. a. lenken. Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern. Pass. geführt —, gefahren —, gezogen werden, fahren mit oder zu (Instr.).
 
 - **RU:** — 1〉 trans.
-— a〉 вести, везти, упряжкой или на судне (Instr.) доставлять, — увозить, колесницу (Acc.) тянуть, коней (Acc.) вести, так преим. править. Агни ведёт или сопровождает предметы жертвоприношения к богам. Pass. быть ведомым —, везомым —, тянутым, ехать с чем-л. или к чему-л. (Instr.).
+— a〉 вести, везти, упряжкой или на судне (Ins.) доставлять, — увозить, колесницу (Acc.) тянуть, коней (Acc.) вести, так преим. править. Агни ведет или сопровождает предметы жертвоприношения к богам. Pass. быть ведомым —, везомым —, тянутым, ехать с чем-л. или к чему-л. (Ins.).
   <sub>attested</sub>
 
 **1b)** — b〉 Wasser u. s. w. führen (von Flüssen), fliessen lassen (Thränen).
 
-- **RU:** — b〉 воду и т.д. нести (о реках), проливать (слёзы).
+- **RU:** — b〉 воду и т.д. нести (о реках), проливать (слезы).
   <sub>attested</sub>
 
 **1c)** — c〉 zuführen, bringen; verschaffen, bewirken.
@@ -37,7 +37,7 @@
 
 **1f)** — f〉 wegführen, hintreiben, fortschleppen; rauben. Pass. weggeführt u. s. w. werden.
 
-- **RU:** — f〉 уводить, угонять, утаскивать; похищать. Pass. быть уведённым и т.д. .
+- **RU:** — f〉 уводить, угонять, утаскивать; похищать. Pass. быть уведенным и т.д. .
   <sub>attested</sub>
 
 **1g)** — g〉 heimführen, heirathen (vom Manne, ausnahmsweise auch vom Weibe). Med. [ĀPAST. 2,12,1. 2].
@@ -52,7 +52,7 @@
 
 **1i)** — i〉 tragen (auch von Kleidungsstücken), — auf (Instr. oder Loc.). *garbham* eine Leibesfrucht tragen; *śiras* (auch *śirāṃsi garvitāni* und mit *uccaistarām*) den Kopf hoch tragen; die Erde tragen auch so v. a. regieren.
 
-- **RU:** — i〉 носить (также об одежде), — на (Instr. или Loc.). *garbham* носить плод во чреве; *śiras* (также *śirāṃsi garvitāni* и с *uccaistarām*) высоко держать голову; землю нести, также так преим. править.
+- **RU:** — i〉 носить (также об одежде), — на (Ins. или Loc.). *garbham* носить плод во чреве; *śiras* (также *śirāṃsi garvitāni* и с *uccaistarām*) высоко держать голову; землю нести, также так преим. править.
   <sub>attested</sub>
 
 **1k)** — k〉 tragen, so v. a. am Leben erhalten.
@@ -77,7 +77,7 @@
 
 **1o)** — o〉 sich unterziehen, sich hingeben, sich unterwerfen. *agnim*, *viṣam*. *tulām* sich dem Gottesurtheil mit dem Feuer, dem Gift, der Wage unterwerfen.
 
-- **RU:** — o〉 подвергать себя, предаваться, подчиняться. *agnim*, *viṣam*. *tulām* подвергать себя божьему суду огнём, ядом, весами.
+- **RU:** — o〉 подвергать себя, предаваться, подчиняться. *agnim*, *viṣam*. *tulām* подвергать себя божьему суду огнем, ядом, весами.
   <sub>attested</sub>
 
 **1p)** — p〉 empfinden (einen Schmerz) [302,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?302).
@@ -102,19 +102,19 @@
 
 **1t)** — t〉 *sahasā vahan* [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) fehlerhaft für *manasā japan*.
 
-- **RU:** — t〉 *sahasā vahan* [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) ошибочно вместо *manasā japan*.
+- **RU:** — t〉 *sahasā vahan* [HARIV. 4453](https://sanskrit-lexicon-scans.github.io/hariv?4453) ошибочно вм. *manasā japan*.
   <sub>attested</sub>
 
 **2)** — 2〉 intrans.
 — a〉 zu Wagen oder mit Pferden (Instr.) fahren, den Wagen lenken, am Wagen u. s. w. ziehen, dahinfahren, laufen.
 
 - **RU:** — 2〉 intrans.
-— a〉 на колеснице или с конями (Instr.) ехать, править колесницей, в колесницу и т.д. быть впряжённым, катиться, бежать.
+— a〉 на колеснице или с конями (Ins.) ехать, править колесницей, в колесницу и т.д. быть впряженным, катиться, бежать.
   <sub>attested</sub>
 
 **2b)** — b〉 zu Schiffe (Instr.) fahren, dem Wasser entlang hinfahren, schwimmen.
 
-- **RU:** — b〉 на судне (Instr.) плыть, идти вдоль воды, плавать.
+- **RU:** — b〉 на судне (Ins.) плыть, идти вдоль воды, плавать.
   <sub>attested</sub>
 
 **2c)** — c〉 dahinfahren vom Winde, so v. a. wehen [187,15](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187).
@@ -131,12 +131,12 @@
 — a〉 weggeführt, fortgetrieben, — geschleppt, geraubt.
 
 - **RU:** — 3〉 *ūḍha*
-— a〉 уведённый, угнанный, — утащенный, похищенный.
+— a〉 уведенный, угнанный, — утащенный, похищенный.
   <sub>attested</sub>
 
 **3b)** — b〉 _f._ heimgeführt, so v. a. geheirathet, verheirathet.
 
-- **RU:** — b〉 _f._ введённая в дом, так преим. взятая в жёны, замужняя.
+- **RU:** — b〉 _f._ введенная в дом, так преим. взятая в жены, замужняя.
   <sub>attested</sub>
 
 **3c)** — c〉 getragen, — auf (im Comp. vorangehend).
@@ -156,7 +156,7 @@
 
 **4)** — 4〉 *voḍha* geehelicht (*bhāryāśata*).
 
-- **RU:** — 4〉 *voḍha* взятая в жёны (*bhāryāśata*).
+- **RU:** — 4〉 *voḍha* взятая в жены (*bhāryāśata*).
   <sub>attested</sub>
 
 **caus_intro)** — Caus. *vāhayati*, *˚te* (metrisch)
@@ -196,7 +196,7 @@
 
 **caus_7)** — 7〉 Etwas tragen lassen, — von (Instr.).
 
-- **RU:** — 7〉 давать нести что-л., — кем-л. (Instr.).
+- **RU:** — 7〉 давать нести что-л., — кем-л. (Ins.).
   <sub>attested</sub>
 
 **caus_8)** — 8〉 Jmd tragen lassen, — auf (Loc.), zum Tragen anstellen.
@@ -231,7 +231,7 @@
 
 **caus_14)** — 14〉 verabreichen, eingeben (eine Arzenei). *madhuvāhita* in Honig eingegeben [BHĀVAPR. 2,114].
 
-- **RU:** — 14〉 давать, вводить (лекарство). *madhuvāhita* данное с мёдом [BHĀVAPR. 2,114].
+- **RU:** — 14〉 давать, вводить (лекарство). *madhuvāhita* данное с медом [BHĀVAPR. 2,114].
   <sub>attested</sub>
 
 **caus_15)** — 15〉 Jmd anführen, betrügen. Nur *vāhita* angeführt.
@@ -317,9 +317,9 @@
 - **RU:** — 3〉 Med. уродиться в кого-л., становиться похожим.
   <sub>attested</sub>
 
-**anu_4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
+**anu_4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
 
-- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
+- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
   <sub>attested</sub>
 
 **apa_intro)** — Mit *apa*
@@ -358,7 +358,7 @@
 
 **apa_caus_3)** — 3〉 sich aus dem Staube machen.
 
-- **RU:** — 3〉 улепётывать, обращаться в бегство.
+- **RU:** — 3〉 улепетывать, обращаться в бегство.
   <sub>attested</sub>
 
 **apa_caus_4)** — 4〉 **apavāhita* = *pihita* [GAL.]
@@ -408,9 +408,9 @@
 - **RU:** — 4〉 уводить, угонять.
   <sub>attested</sub>
 
-**a_caus_5)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
+**a_caus_5)** — 5〉 herbeifahren (intrans.) [ṚV. 4,14,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03) [ṚV. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.054.html#rv08.054.06).
 
-- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03).
+- **RU:** — 5〉 подъезжать (intrans.) [ṚV. 4,14,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.014.html#rv04.014.03) [ṚV. 8,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.054.html#rv08.054.06).
   <sub>attested</sub>
 
 **a_caus_6)** — 6〉 sich ergiessen, fliessen.
@@ -455,9 +455,9 @@
 - **RU:** — 2〉 возводить наверх.
   <sub>attested</sub>
 
-**ud_3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
+**ud_3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S051) = ≈крит. 06,4.2c.
 
-- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34).
+- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S051) = ≈крит. 06,4.2c.
   <sub>attested</sub>
 
 **upa2_intro)** — Mit *samudā*

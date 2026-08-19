@@ -65,7 +65,7 @@
 
 **mit_T10_1)** — 1〉 niedersetzen, niederlegen, ablegen, hinlegen, hinsetzen, hinstellen, — auf, an oder in (Loc.), hineinlegen, — in (Loc., Loc. mit *antar* oder *˚antar*), Etwas vor Jmd (Dat.) hinlegen. *bhūmau* oder *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) in die Erde, in eine Grube legen, so v. a. begraben; auf den Kopf (Loc., ausnahmsweise auch Instr.) legen auch so v. a. hoch aufnehmen [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* inʼs Herz legen, so v. a. bei sich denken. Pass. auch ruhen —, enthalten sein in (Loc.), übergehen —, sich auflösen in (Loc.) *nihita* niedergesetzt u. s. w., gelagert (ein Heer), steckend —, befindlich in (Loc. oder im Comp. vorangehend) [ĀPAST. 1,22,6].
 
-- **RU:** — 1〉 опускать, класть , откладывать, укладывать, помещать, ставить — на, у или в (Loc.), вкладывать — в (Loc., Loc. с *antar* или *˚antar*), класть что-либо перед кем-либо (Dat.). *bhūmau* или *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) класть в землю, в яму, отсюда преим. погребать; класть на голову (Loc., в виде исключения также Instr.), а также преим. высоко поднимать [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* класть в сердце, отсюда преим. думать про себя. Pass. также пребывать —, содержаться в (Loc.), переходить —, растворяться в (Loc.); *nihita* положенный и т.д., расположившийся (о войске), застрявший —, находящийся в (Loc. или в Comp. предшествующем) [ĀPAST. 1,22,6].
+- **RU:** — 1〉 опускать, класть , откладывать, укладывать, помещать, ставить — на, у или в (Loc.), вкладывать — в (Loc., Loc. с *antar* или *˚antar*), класть что-либо перед кем-либо (Dat.). *bhūmau* или *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) класть в землю, в яму, отсюда преим. погребать; класть на голову (Loc., в виде исключения также Ins.), а также преим. высоко поднимать [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* класть в сердце, отсюда преим. думать про себя. Pass. также пребывать —, содержаться в (Loc.), переходить —, растворяться в (Loc.); *nihita* положенный и т.д., расположившийся (о войске), застрявший —, находящийся в (Loc. или в Comp. предшествующем) [ĀPAST. 1,22,6].
   <sub>attested</sub>
 
 **mit_T10_2)** — 2〉 das Auge richten auf (Loc.) den Sinn, die Gedanken richten auf (Dat.), so v. a. beschliessen. *kriyām* Mühe wenden an (Loc.).
@@ -195,7 +195,7 @@
 
 **mit_T86_2)** — 2〉 berühren, nahe kommen mit (Instr.), — an (Acc. oder Loc.). *abhinihita* berührt.
 
-- **RU:** — 2〉 касаться, приближаться с (Instr.), — к (Acc. или Loc.). *abhinihita* затронутый, коснувшийся.
+- **RU:** — 2〉 касаться, приближаться с (Ins.), — к (Acc. или Loc.). *abhinihita* затронутый, коснувшийся.
   <sub>attested</sub>
 
 **mit_T86_3)** — 3〉 Pass. mit einander verschmelzen (von einem auslautenden *e* oder *o* mit einem anlautenden *a*, das elidirt wird). *abhinihita* heisst ein solcher Saṃdhi und der darauf ruhende Ton.
@@ -265,7 +265,7 @@
 
 **mit_T110_3)** — 3〉 berühren, nahe kommen mit (Instr.) an (Acc.).
 
-- **RU:** — 3〉 касаться, приближаться с (Instr.) к (Acc.).
+- **RU:** — 3〉 касаться, приближаться с (Ins.) к (Acc.).
   <sub>attested</sub>
 
 **mit_T110_4)** — 4〉 sein Auge, seinen Sinn, seinen Geist heften —, richten auf (Loc.) [HARIV. 2,14,16](https://sanskrit-lexicon-scans.github.io/hariv?2). Mit *manas* und Infin. so v. a. beschliessen. *ātmā praṇidhīyatām* so v. a. man vergegenwärtige sich. *praṇihita* gerichtet auf (Loc. oder im Comp. vorangehend). *samyakpraṇihitā vāk* eine wohlangebrachte Rede.
@@ -290,7 +290,7 @@
 
 **mit_T110_8)** — 8〉 spähen —, spioniren lassen durch (Instr.) bei (Loc.).
 
-- **RU:** — 8〉 велеть разведывать —, шпионить через (Instr.) при (Loc.).
+- **RU:** — 8〉 велеть разведывать —, шпионить через (Ins.) при (Loc.).
   <sub>attested</sub>
 
 **mit_T110_9)** — 9〉 alle seine Gedanken —, seine ganze Aufmerksamkeit auf Etwas richten, Etwas (Acc.) überlegen. Nur *praṇīdhāya* und *praṇihita* ganz in Etwas (Loc.) vertieft, ganz bei einer Sache seiend, in einem Gedanken ganz aufgehend (von Personen und vom Geist). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
@@ -298,9 +298,9 @@
 - **RU:** — 9〉 устремлять все свои мысли —, всё свое внимание на что-либо, обдумывать что-либо (Acc.). Только *praṇīdhāya* и *praṇihita* всецело погруженный во что-либо (Loc.), целиком занятый одним делом, поглощенный одной мыслью (о людях и об уме). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
   <sub>attested</sub>
 
-**mit_T110_10)** — 10〉 herausbringen, dahinterkommen, — dass ist; mit doppeltem Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21). *praṇihita* herausgebracht, anʼs Tageslicht gebracht.
+**mit_T110_10)** — 10〉 herausbringen, dahinterkommen, — dass ist; mit doppeltem Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S037) = ≈крит. 07,1.35a. *praṇihita* herausgebracht, anʼs Tageslicht gebracht.
 
-- **RU:** — 10〉 выяснять, разузнавать, — что именно; с двойным Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21). *praṇihita* выясненный, выведенный на свет.
+- **RU:** — 10〉 выяснять, разузнавать, — что именно; с двойным Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S037) = ≈крит. 07,1.35a. *praṇihita* выясненный, выведенный на свет.
   <sub>attested</sub>
 
 **mit_T154)** — Mit *saṃpraṇi* (nur *˚dhāya*)
@@ -368,9 +368,9 @@
 - **RU:** — 6〉 *vinihita, ˚tātman* _Adj._ расходящийся с кем-либо, — не согласующийся [ĀPAST. 11,8,27].
   <sub>attested</sub>
 
-**mit_T158_7)** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) fehlerhaft für *vinihata*.
+**mit_T158_7)** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A083_S040) = ≈крит. 06,79.39a fehlerhaft für *vinihata*.
 
-- **RU:** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) ошибочно вм. *vinihata*.
+- **RU:** — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A083_S040) = ≈крит. 06,79.39a ошибочно вм. *vinihata*.
   <sub>attested</sub>
 
 **mit_T177)** — Mit *saṃni*
@@ -450,7 +450,7 @@
 
 **mit_T204_3)** — 3〉 umlegen, umgeben, bekleiden, — mit (Instr.), umzingeln. Gewöhnlich Act. *parihita* umlegt, umgeben.
 
-- **RU:** — 3〉 обкладывать, окружать, облачать — с (Instr.), окружать со всех сторон. Обычно Act. *parihita* обложенный, окруженный.
+- **RU:** — 3〉 обкладывать, окружать, облачать — с (Ins.), окружать со всех сторон. Обычно Act. *parihita* обложенный, окруженный.
   <sub>attested</sub>
 
 **mit_T204_4)** — 4〉 Act. schliessen als Kunstausdruck für den Abschluss einer Recitation in der Liturgie.
@@ -475,7 +475,7 @@
 
 **mit_T204_caus_2)** — 2〉 umgeben, — bekleiden mit (Instr.).
 
-- **RU:** — 2〉 окружать, — облачать в (Instr.).
+- **RU:** — 2〉 окружать, — облачать в (Ins.).
   <sub>attested</sub>
 
 **mit_T204_desid)** — Desid. (*˚dhitsate*). im Begriff stehen sich Etwas (Acc.) umzulegen.

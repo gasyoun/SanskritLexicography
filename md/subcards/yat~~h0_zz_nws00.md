@@ -5,7 +5,7 @@
 
 **NWS-01)** *yat* [Gen , unsp] ( yátate I Ā ) march or fly together or in line. ṚV . to conform or comply with (instr). ṚV . Caus (or cl. X, yātáyati or ° te ): to strive to obtain anything (acc) from (abl). Mālav
 
-- **RU:** [NWS:] *yat* ( yátate I Ā ) маршировать или лететь вместе или в строю. ṚV. подчиняться, соглашаться с (Instr.). ṚV. Caus. (или кл. X, yātáyati или °te): стремиться получить что-л. (Acc.) от (Abl.). Mālav MW : 840
+- **RU:** [NWS:] *yat* ( yátate I Ā ) маршировать или лететь вместе или в строю. ṚV. подчиняться, соглашаться с (Ins.). ṚV. Caus. (или кл. X, yātáyati или °te): стремиться получить что-л. (Acc.) от (Abl.). Mālav MW : 840
   <sub>attested</sub>
 
 **NWS-02)** [Gen , unsp] (se) diriger. [ polysémie ambivalente à partir de. Renou 1997, S. 58 . ]
@@ -15,17 +15,17 @@
 
 **NWS-03)** [Ved , unsp] Akt und Kaus: Menschen (Akk) verbinden, vereinigen, verbünden (zu Freundschaft oder Bündniss). med: verbunden gehen, in geschlossenen Reihen ziehen (nebeneinander oder hintereinander). med: sich vereinigen mit (Instr). med: zusammen stimmen mit (Instr). wetteifern mit (Instr). med: miteinander im Streite sein. med: in Streit gerathen mit (Lok). med: auf e. Ort (Lok, Akk) oder e. Menschen (Akk) zustreben, ihn zu erreichen suchen. sich anstrengen. [ enthalten in áyatat . ] Kaus med: sich verbünden. Kaus: jemandem (Dat) etwas (Akk) darreichen. Schulden (Akk) einziehen. Kaus: vergelten
 
-- **RU:** [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединёнными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Instr.). Med.: соглашаться с (Instr.). Соперничать с (Instr.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
+- **RU:** [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединенными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Ins.). Med.: соглашаться с (Ins.). Соперничать с (Ins.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
   <sub>attested</sub>
 
-**NWS-04)** [Ved , unsp] ( I ) sich anstrengen. Kaus: a) zur Thätigkeit anspornen; b) vergelten (= apagamaya (Sāyaṇa)). ṚV 3,59,1 , ṚV 10,127,7
+**NWS-04)** [Ved , unsp] ( I ) sich anstrengen. Kaus: a) zur Thätigkeit anspornen; b) vergelten (= apagamaya (Sāyaṇa)). [ṚV 3,59,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01) , [ṚV 10,127,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07)
 
-- **RU:** [NWS:] (I) прилагать усилия. Caus.: a) побуждать к деятельности; b) воздавать (= apagamaya (Sāyaṇa)). ṚV 3,59,1, ṚV 10,127,7. Hillebrandt 1885 : 110
+- **RU:** [NWS:] (I) прилагать усилия. Caus.: a) побуждать к деятельности; b) воздавать (= apagamaya (Sāyaṇa)). [ṚV 3,59,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01), [ṚV 10,127,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07). Hillebrandt 1885 : 110
   <sub>attested</sub>
 
-**NWS-05)** [Ved , unsp] ( I ) P: zum Nacheifern reizen, e. gutes Beispiel geben. ṚV 7,36,2 . Ā: a) eifern, wetteifern mit (Instr); in Eifer geraten über, eifersüchtig sein auf (Lok); eifern um (Akk), sich streitig machen; b) sich beeifern, der Erste sein wollen, ungeduldig sein auf, sich drängen zu (Lok); c) sich beeifern, vorwärts streben, dringen, eilen, in Eile kommen (ziehen); aufmarschieren, antreten. ṚV 10,62,11 , ṚV 8,20,12 , ṚV 10,113,7 , ṚV 1,85,8 , ṚV 10,75,3 , ṚV 10,18,6 . Kaus: a) U: anspornen, aneifern; b) P: zu zahlen veranlassen (+ zu supplierendem ṛṇam ). ṚV 3,59,1 , ṚV 5,32,12 , ṚV 10,127,7 , ṚV 5,3,9
+**NWS-05)** [Ved , unsp] ( I ) P: zum Nacheifern reizen, e. gutes Beispiel geben. [ṚV 7,36,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02) . Ā: a) eifern, wetteifern mit (Instr); in Eifer geraten über, eifersüchtig sein auf (Lok); eifern um (Akk), sich streitig machen; b) sich beeifern, der Erste sein wollen, ungeduldig sein auf, sich drängen zu (Lok); c) sich beeifern, vorwärts streben, dringen, eilen, in Eile kommen (ziehen); aufmarschieren, antreten. [ṚV 10,62,11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.062.html#rv10.062.11) , [ṚV 8,20,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12) , [ṚV 10,113,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.113.html#rv10.113.07) , [ṚV 1,85,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.08) , [ṚV 10,75,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.075.html#rv10.075.03) , [ṚV 10,18,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.06) . Kaus: a) U: anspornen, aneifern; b) P: zu zahlen veranlassen (+ zu supplierendem ṛṇam ). [ṚV 3,59,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01) , [ṚV 5,32,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.12) , [ṚV 10,127,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07) , [ṚV 5,3,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.003.html#rv05.003.09)
 
-- **RU:** [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. ṚV 7,36,2. Ā.: a) ревностно стараться, соперничать с (Instr.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперёд, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. ṚV 10,62,11, ṚV 8,20,12, ṚV 10,113,7, ṚV 1,85,8, ṚV 10,75,3, ṚV 10,18,6. Caus.: a) U.: подстёгивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). ṚV 3,59,1, ṚV 5,32,12, ṚV 10,127,7, ṚV 5,3,9. Geldner 1907 : 140
+- **RU:** [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. [ṚV 7,36,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.036.html#rv07.036.02). Ā.: a) ревностно стараться, соперничать с (Ins.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперед, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. [ṚV 10,62,11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.062.html#rv10.062.11), [ṚV 8,20,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.12), [ṚV 10,113,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.113.html#rv10.113.07), [ṚV 1,85,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.08), [ṚV 10,75,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.075.html#rv10.075.03), [ṚV 10,18,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.06). Caus.: a) U.: подстегивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). [ṚV 3,59,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.059.html#rv03.059.01), [ṚV 5,32,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.032.html#rv05.032.12), [ṚV 10,127,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.127.html#rv10.127.07), [ṚV 5,3,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.003.html#rv05.003.09). Geldner 1907 : 140
   <sub>attested</sub>
 
 **NWS-06)** *+ adhi , Ā: anlegen, anstecken. ṚV 1,64,4 .* [Ved , unsp] + ádhi : 1) med: sich etwas (Akk) anlegen (zum Schmucke); 2) Kaus med: e. Ort (Akk) erreichen. Ved , unsp
@@ -50,12 +50,12 @@
 
 **NWS-10)** *+ nis , khaus ( niryātayati ): to ṛorgive, pardon, set ṛree.* [Gen , unsp (s.v. niryat )] – ( niryātayati , ° teti ; also ° dayati ) gives, presents [act., with acc. of thing, dat. or gen. of person; pass., with instr., rarely gen., of giver, also, rarely, recipient in nom., both giver and gift instr.]; ( niryātita , ppp.) [generally the gift is nom., the giver instr., and the recipient gen. (dat.), or loc.]. SaddhP 108.11 , Mvu i.295.15 . Buddh , unsp ; BHSD : 303 (s.v. niryātayati )
 
-- **RU:** [NWS:] *+ nis , khaus ( niryātayati ): to ṛorgive, pardon, set ṛree.* (niryātayati, °teti; также °dayati) — давать, преподносить [Act., с Acc. вещи, Dat. или Gen. лица; Pass., с Instr., редко Gen. дающего, также, редко, получатель в Nom., и дающий и дар в Instr.]; (niryātita, ppp.) [как правило, дар в Nom., дающий в Instr., получатель в Gen. (Dat.) или Loc.]. SaddhP 108.11, Mvu i.295.15. BHSD : 303 (s.v. niryātayati)
+- **RU:** [NWS:] *+ nis , khaus ( niryātayati ): to ṛorgive, pardon, set ṛree.* (niryātayati, °teti; также °dayati) — давать, преподносить [Act., с Acc. вещи, Dat. или Gen. лица; Pass., с Ins., редко Gen. дающего, также, редко, получатель в Nom., и дающий и дар в Ins.]; (niryātita, ppp.) [как правило, дар в Nom., дающий в Ins., получатель в Gen. (Dat.) или Loc.]. SaddhP 108.11, Mvu i.295.15. BHSD : 303 (s.v. niryātayati)
   <sub>attested</sub>
 
-**NWS-11)** *– ( niryātita ): given. chīī 2.1 (īndeḷ) .* [Epigr , unsp (s.v. niryātita )] + pari , ( páriyatta ): umringt. ṚV 7,83,8 . Ved , unsp
+**NWS-11)** *– ( niryātita ): given. chīī 2.1 (īndeḷ) .* [Epigr , unsp (s.v. niryātita )] + pari , ( páriyatta ): umringt. [ṚV 7,83,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.08) . Ved , unsp
 
-- **RU:** [NWS:] *– ( niryātita ): given. chīī 2.1 (īndeḷ) .* + pari, (páriyatta): окружённый. ṚV 7,83,8. Hillebrandt 1885 : 110
+- **RU:** [NWS:] *– ( niryātita ): given. chīī 2.1 (īndeḷ) .* + pari, (páriyatta): окруженный. [ṚV 7,83,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.08). Hillebrandt 1885 : 110
   <sub>attested</sub>
 
 **NWS-12)** *– umstellen, umṣingeln. ṚV 7,83,8 .* [Ved , unsp] + pári : umstellen, umringen (Akk). Ved , unsp
@@ -73,14 +73,14 @@
 - **RU:** [NWS:] *+ vi : to make special eṛṛort ṛor. chāṇaṬ ad khā ī.12 .* — устраивать, обеспечивать. KA 1.11.20. Kangle 1969 : 333 (s.v. viyat)
   <sub>attested</sub>
 
-**NWS-15)** *+ sam : encounter (rarely ‘as ṛriends’, generally ‘as enemies’), contend, engage in contest or striṛe. ṚV , bh(ṃṭh) , chhū .* [Gen , unsp (s.v. saṃyat )] – wetteifern mit (Instr), zu gleichen suchen. ṚV 5,37,1 . Ved , unsp
+**NWS-15)** *+ sam : encounter (rarely ‘as ṛriends’, generally ‘as enemies’), contend, engage in contest or striṛe. ṚV , bh(ṃṭh) , chhū .* [Gen , unsp (s.v. saṃyat )] – wetteifern mit (Instr), zu gleichen suchen. [ṚV 5,37,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.01) . Ved , unsp
 
-- **RU:** [NWS:] *+ sam : encounter (rarely ‘as ṛriends’, generally ‘as enemies’), contend, engage in contest or striṛe. ṚV , bh(ṃṭh) , chhū .* — соперничать с (Instr.), стараться сравняться. ṚV 5,37,1. Geldner 1907 : 140
+- **RU:** [NWS:] *+ sam : encounter (rarely ‘as ṛriends’, generally ‘as enemies’), contend, engage in contest or striṛe. ṚV , bh(ṃṭh) , chhū .* — соперничать с (Ins.), стараться сравняться. [ṚV 5,37,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.037.html#rv05.037.01). Geldner 1907 : 140
   <sub>attested</sub>
 
 **NWS-16)** *– (+ acc. oṛ content).* [Ved , unsp (s.v. saṃyat -)] + sám : 1) Menschen (Akk) vereinigen; 2) med: sich aneinander reihen; 3) med: sich vereinen od. zusammentreffen mit (Instr); 4) med: mit einander in Streit gerathen. Ved , unsp
 
-- **RU:** [NWS:] *– (+ acc. oṛ content).* + sám: 1) объединять людей (Acc.); 2) med.: выстраиваться в ряд; 3) med.: объединяться или встречаться с (Instr.); 4) med.: вступать в ссору друг с другом. Graßmann 1873 (1996) : 1079
+- **RU:** [NWS:] *– (+ acc. oṛ content).* + sám: 1) объединять людей (Acc.); 2) med.: выстраиваться в ряд; 3) med.: объединяться или встречаться с (Ins.); 4) med.: вступать в ссору друг с другом. Graßmann 1873 (1996) : 1079
   <sub>attested</sub>
 
 **NWS-17)** [Gen , unsp] [ yatta ] endeavoured, striven. Mbh , Kāvya(MW) . engaged in, intent upon, prepared for, ready to. R , Hariv . + loc., dat., acc. or inf. with prati . watchful, cautious. MW : 841 (s.v. yatta )
@@ -93,9 +93,9 @@
 - **RU:** [NWS:] *yat* суффикс ya. Windisch 1883 : 146
   <sub>lexicographic</sub>
 
-**NWS-19)** [Ved , unsp] sich eifrig bemühen zu (+ Ptz). ṚV 1,95,7
+**NWS-19)** [Ved , unsp] sich eifrig bemühen zu (+ Ptz). [ṚV 1,95,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.095.html#rv01.095.07)
 
-- **RU:** [NWS:] усердно стараться (+ прич.). ṚV 1,95,7. Geldner 1907 (N) : 234
+- **RU:** [NWS:] усердно стараться (+ прич.). [ṚV 1,95,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.095.html#rv01.095.07). Geldner 1907 (N) : 234
   <sub>attested</sub>
 
 **NWS-20)** [Śā , Ling] kṛtya ya . Pāṇ III.1.97 . taddhita ya . Pāṇ IV.1.137
@@ -125,5 +125,5 @@
 
 **NWS-25)** *ya* [Buddh , unsp] [ yat khalu , or yaṃ khalu ] with a 2d (or polite 3d) person form of jñā (regularly opt.): please be informed; allow me to inform you. [ a courteous introduction to a statement made usually to a king or the like. Mvu ii.454.1 . ] BHSD : 442 (s.v. yat khalu )
 
-- **RU:** [NWS:] *ya* [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращённому обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
+- **RU:** [NWS:] *ya* [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращенному обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
   <sub>attested</sub>

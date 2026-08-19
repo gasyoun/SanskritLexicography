@@ -11,7 +11,7 @@
 
 - **RU:** — *ni*
  1) определять меру: *nimita* к пояснение от *nigha*
-[P. 3,3,87.](https://ashtadhyayi.com/sutraani/3/3/87) *cakṣurnimita* определённый на глаз
+[P. 3,3,87.](https://ashtadhyayi.com/sutraani/3/3/87) *cakṣurnimita* определенный на глаз
 [TBR. 1,1,4,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,4,1) *durnimita* плохо измеренный, неправильный: *pada*
 [RAGH. 7,10](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,10) = [KUMĀRAS. 7,61.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,61)
   <sub>attested</sub>

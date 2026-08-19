@@ -19,12 +19,12 @@ _PWG article — 2 sub-card(s), 5 sense(s) · RU 5/5 · EN 0/5_
 
 **NWS: MW)** aśmarīghna Gen , unsp > Subst m the tree Crataeva Roxburghii (used as a lithontriptic). Lex(MW) . MW : 114 (s.v. aśmarī )
 
-- **RU:** aśmarīghna Gen, unsp — Subst m дерево Crataeva Roxburghii (используемое как средство, растворяющее камни). Lex(MW). MW : 114 (s.v. aśmarī)
+- **RU:** aśmarīghna Gen., unsp — Subst m дерево Crataeva Roxburghii (используемое как средство, растворяющее камни). Lex(MW). MW : 114 (s.v. aśmarī)
   <sub>lexicographic</sub>
 
 **NWS: MW)** aśmarīhara Gen , unsp > Subst m the tree Pentaptera Arjuna or another plant (used as a lithontriptic). Lex(MW) . MW : 114 (s.v. aśmarī )
 
-- **RU:** aśmarīhara Gen, unsp — Subst m дерево Pentaptera Arjuna или другое растение (используемое как средство, растворяющее камни). Lex(MW). MW : 114 (s.v. aśmarī)
+- **RU:** aśmarīhara Gen., unsp — Subst m дерево Pentaptera Arjuna или другое растение (используемое как средство, растворяющее камни). Lex(MW). MW : 114 (s.v. aśmarī)
   <sub>lexicographic</sub>
 
 ## aśmarī

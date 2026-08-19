@@ -40,7 +40,7 @@
 
 **pref-ud2-3)** — 3〉 seinen Unmuth gegen Jmd (Acc.) auslassen, Jmd schmähen. Metrisch auch Med.
 
-- **RU:** 3〉 выражать своё недовольство против кого-либо (Acc.), поносить кого-либо. Метрич. также Med.
+- **RU:** 3〉 выражать свое недовольство против кого-либо (Acc.), поносить кого-либо. Метрич. также Med.
   <sub>attested</sub>
 
 **pref-abhi-nis)** — Mit *abhinis* Act. aussagen in Bezug auf (Acc.).
@@ -85,7 +85,7 @@
 
 **pref-ud3-1)** — 1〉 heraussagen, reden, sprechen, aussagen, ansagen, verkünden; sprechen zu Jmd (Acc. [BHAṬṬ.]) *prodita* gesprochen.
 
-- **RU:** 1〉 произносить, говорить, высказывать, возвещать, объявлять; говорить к кому-либо (Acc. [BHAṬṬ.]) *prodita* — произнесённый.
+- **RU:** 1〉 произносить, говорить, высказывать, возвещать, объявлять; говорить к кому-либо (Acc. [BHAṬṬ.]) *prodita* — произнесенный.
   <sub>attested</sub>
 
 **pref-ud3-2)** — 2〉 die Stimme ertönen lassen (von Thieren und Vögeln), rauschen (vom Wasser).
@@ -105,7 +105,7 @@
 
 **pref-ud3-5)** — 5〉 anbieten, ausbieten zum Verkauf; mit Instr. des Preises.
 
-- **RU:** 5〉 предлагать, выставлять на продажу; с Instr. цены.
+- **RU:** 5〉 предлагать, выставлять на продажу; с Ins. цены.
   <sub>attested</sub>
 
 **pref-ud3-caus)** — Caus. Act. ertönen lassen, spielen (ein musikalisches Instrument). Ohne Object musiciren. *pravādyanti* mit act. Bed. (!).
@@ -215,7 +215,7 @@
 
 **pref-vi2-2)** — 2〉 Act. Med. (älter) sich mit Jmd (Instr., ausnahmsweise Acc.) in einen Wortstreit einlassen über (Loc., ausnahmsweise Acc.), sich gegenseitig widersprechen. *vivadamāna* auch strittig, *vivadita* (!) Pl. im Streite liegend.
 
-- **RU:** 2〉 Act. Med. (старш.) — вступать с кем-либо (Instr., в виде исключения Acc.) в словесный спор о (Loc., в виде исключения Acc.), противоречить друг другу. *vivadamāna* также — спорный, *vivadita* (!) Pl. — находящийся в состоянии спора.
+- **RU:** 2〉 Act. Med. (старш.) — вступать с кем-либо (Ins., в виде исключения Acc.) в словесный спор о (Loc., в виде исключения Acc.), противоречить друг другу. *vivadamāna* также — спорный, *vivadita* (!) Pl. — находящийся в состоянии спора.
   <sub>attested</sub>
 
 **pref-vi2-3)** — 3〉 Act. sich unterhalten.
@@ -250,7 +250,7 @@
 
 **pref-sam2-1)** — 1〉 Act. (metrisch) Med. zusammen —, zu einander sagen, — von (Acc.), sich unterreden mit (Instr.), sich bereden über (Loc.). *svena* *kratunā* mit sich zu Rathe gehen.
 
-- **RU:** 1〉 Act. (метрич.) Med. — говорить вместе, говорить друг другу о (Acc.), беседовать с (Instr.), совещаться о (Loc.). *svena* *kratunā* — совещаться с самим собой.
+- **RU:** 1〉 Act. (метрич.) Med. — говорить вместе, говорить друг другу о (Acc.), беседовать с (Ins.), совещаться о (Loc.). *svena* *kratunā* — совещаться с самим собой.
   <sub>attested</sub>
 
 **pref-sam2-2)** — 2〉 einen Pact schliessen. Nur *samudya*.
@@ -265,7 +265,7 @@
 
 **pref-sam2-4)** — 4〉 Act. Med. übereinstimmen, zustimmen, seine Zustimmung zu Etwas (Acc. [ŚIŚ. 13,3]) geben; zutreffen, so v. a. zusammen einen Sinn geben [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (im Prākrit). *samudita* allgemein angenommen, gebräuchlich geworden.
 
-- **RU:** 4〉 Act. Med. — соглашаться, давать своё согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так преим. — совместно составлять смысл [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
+- **RU:** 4〉 Act. Med. — соглашаться, давать свое согласие на что-либо (Acc. [ŚIŚ. 13,3]); соответствовать, так преим. — совместно составлять смысл [308,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?308) (в Prākrit). *samudita* — общепринятый, вошедший в употребление.
   <sub>attested</sub>
 
 **pref-sam2-5)** — 5〉 Act. Med. sprechen, sagen zu (Acc.) [NAIṢ. 5,12]. *samudita* angeredet.
@@ -285,7 +285,7 @@
 
 **pref-sam2-caus-1)** — 1〉 Act. sich unterreden lassen mit (Instr.).
 
-- **RU:** 1〉 Act. — позволять беседовать с собой (Instr.).
+- **RU:** 1〉 Act. — позволять беседовать с собой (Ins.).
   <sub>attested</sub>
 
 **pref-sam2-caus-2)** — 2〉 Med. eine Unterredung hervorrufen über (Loc.).
@@ -295,7 +295,7 @@
 
 **pref-sam2-caus-3)** — 3〉 Act. sich über Etwas einigen (*saṃvādya* [GAUT.]), einstimmen. *saṃvādita* worüber man sich geeinigt hat.
 
-- **RU:** 3〉 Act. — договариваться о чём-либо (*saṃvādya* [GAUT.]), соглашаться. *saṃvādita* — то, о чём договорились.
+- **RU:** 3〉 Act. — договариваться о чем-либо (*saṃvādya* [GAUT.]), соглашаться. *saṃvādita* — то, о чем договорились.
   <sub>attested</sub>
 
 **pref-sam2-caus-4)** — 4〉 zutreffend angeben. Nur Absol.
@@ -318,9 +318,9 @@
 - **RU:** С *upasam* в *upasaṃvāda*.
   <sub>attested</sub>
 
-**pref-sam-abhi)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15).
+**pref-sam-abhi)** — Mit *parisam* Act. sich gemeinschaftlich über Jmd (Acc.) äussern [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15) = [≈Вульг. 13.2.74](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A002_S074) = ≈крит. 13,2.73c.
 
-- **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15).
+- **RU:** С *parisam* Act. — совместно высказываться о ком-либо (Acc.) [MBH. 13,159,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,159,15) = [≈Вульг. 13.2.74](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A002_S074) = ≈крит. 13,2.73c.
   <sub>attested</sub>
 
 **pref-sam-anu2)** — Mit *pratisam* Med. sich mit Jmd (Acc.) einverstanden erklären.
@@ -335,7 +335,7 @@
 
 **pref-vi-sam-1)** — 1〉 seiner Zusage untreu werden.
 
-- **RU:** 1〉 нарушать своё обещание, изменять данному слову.
+- **RU:** 1〉 нарушать свое обещание, изменять данному слову.
   <sub>attested</sub>
 
 **pref-vi-sam-2)** — 2〉 Einwendungen machen, widersprechen.
@@ -350,7 +350,7 @@
 
 **pref-vi-sam-ppp-1)** — 1〉 dessen Unzufriedenheit erregt worden ist.
 
-- **RU:** 1〉 тот, чьё недовольство было вызвано.
+- **RU:** 1〉 тот, чье недовольство было вызвано.
   <sub>attested</sub>
 
 **pref-vi-sam-ppp-2)** — 2〉 woran man Etwas auszusetzen hat, nicht allgemein anerkannt.

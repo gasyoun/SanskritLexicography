@@ -9,18 +9,18 @@
 [H. 1034.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1034)
 
 - **RU:** — *nis*
- 1) «выступать вперед, показываться, обнаруживаться»: *nirjagāma kathaṃ yaśaḥ*
-[Spr. 3651.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3651) *nirgata* «выступающий вперед»
+ 1) выступать вперед, показываться, обнаруживаться: *nirjagāma kathaṃ yaśaḥ*
+[Spr. 3651.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3651) *nirgata* выступающий вперед
 [H. 1034.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1034)
   <sub>attested</sub>
 
 **4 (Nachtrag))** — 4)
-[MBH. 3,15399](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15399) ist wohl *nigacchanti* zu lesen; dagegen ist *nirjagāma nidrām* er schlief ein
+[MBH. 3,15399](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15399) = [≈Вульг. 3.259.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U16_A259_S030) = ≈крит. 03,245.29a ist wohl *nigacchanti* zu lesen; dagegen ist *nirjagāma nidrām* er schlief ein
 [KATHĀS. 64,164](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,164) durch das Metrum gesichert. — caus. aufbrechen heissen
 [BHĀG. P. 10,71,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,13)
 
 - **RU:** — 4)
-[MBH. 3,15399](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15399), по-видимому, следует читать как *nigacchanti*; напротив, *nirjagāma nidrām* «он заснул»
-[KATHĀS. 64,164](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,164) подтверждается размером стиха. — caus. «называться выступлением в путь»
+[MBH. 3,15399](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15399) = [≈Вульг. 3.259.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U16_A259_S030) = ≈крит. 03,245.29a, по-видимому, следует читать как *nigacchanti*; напротив, *nirjagāma nidrām* он заснул
+[KATHĀS. 64,164](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,164) подтверждается размером стиха. — caus. называться выступлением в путь
 [BHĀG. P. 10,71,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,71,13)
   <sub>attested</sub>

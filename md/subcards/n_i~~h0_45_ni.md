@@ -53,5 +53,5 @@
 
 **addendum)** — Vgl. *ninayana*, wo statt der 2ten Bed. das Vollführen, Vollbringen zu setzen ist.
 
-- **RU:** — ср. *ninayana*, где вместо второго знач. следует читать «совершение, выполнение».
+- **RU:** — ср. *ninayana*, где вм. второго знач. следует читать совершение, выполнение.
   <sub>attested</sub>

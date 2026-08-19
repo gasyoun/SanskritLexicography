@@ -9,7 +9,7 @@
 [6,6,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.006.html#rv06.006.03) *vi me manaścarati dūraādhīḥ*
 [9,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.009.html#rv06.009.06) *mā te mano viṣvadrya1gvi cārīt*
 [7,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.025.html#rv07.025.01) *śabdāḥ sparśāstathā gandhā vicaranti manaḥpriyāḥ*
-[MBH. 12,3766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3766) *dhvaniḥ*
+[MBH. 12,3766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3766) = [≈Вульг. 12.102.14](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A102_S014) = ≈крит. 12,103.14a *dhvaniḥ*
 [VARĀH. BṚH. S. 19,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,13) *amniḥ*
 [31 (30),13.]
 
@@ -19,7 +19,7 @@
 [6,6,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.006.html#rv06.006.03) *vi me manaścarati dūraādhīḥ*
 [9,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.009.html#rv06.009.06) *mā te mano viṣvadrya1gvi cārīt*
 [7,25,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.025.html#rv07.025.01) *śabdāḥ sparśāstathā gandhā vicaranti manaḥpriyāḥ*
-[MBH. 12,3766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3766) *dhvaniḥ*
+[MBH. 12,3766.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3766) = [≈Вульг. 12.102.14](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A102_S014) = ≈крит. 12,103.14a *dhvaniḥ*
 [VARĀH. BṚH. S. 19,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,13) *amniḥ*
 [31 (30),13.]
   <sub>attested</sub>
@@ -29,18 +29,18 @@
 [M. 9,302](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,302); vgl.
 [AIT. BR. 7,14](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,14), wo der schlafende, der erwachende, der sich aufrichtende und der gehende König mit den vier Weltaltern verglichen wird. *vicaranti mahīpālā yātrārthaṃ vijigīṣavaḥ*
 [R. 3,22,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,7) *tato drauṇirmahṛvīryaḥ pārthasya vicariṣyataḥ . vivaraṃ sūkṣmamālokya jyāṃ ciccheda kṣureṇa ha ..*
-[MBH. 4,1906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1906) *anena tvaṃ yadāstreṇa saṃgrāme vicariṣyasi*
-[3,1696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1696) *vyacaratpṛtanāntare*
-[7,488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.488)
+[MBH. 4,1906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1906) = [≈Вульг. 4.59.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A059_S006) = ≈крит. 04,54.6c *anena tvaṃ yadāstreṇa saṃgrāme vicariṣyasi*
+[3,1696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1696) = [≈Вульг. 3.41.32](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A041_S032) = ≈крит. 03,42.30c *vyacaratpṛtanāntare*
+[7,488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.488) = [≈Вульг. 7.13.29](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A013_S029) = ≈крит. 07,12.28c
 
 - **RU:** — 2) выступать в поход, совершать нападение: *kaliḥ prasupto bhavati sa (rājā) jāgraddvāparaṃ yugam . karmasvabhyudyatastretā vicaraṃstu*
 ([KULL.]: *[yadā] yathāśāstraṃ punaḥ karmāṇyanutiṣṭhanvicarati) kṛtaṃ yugam ..*
 [M. 9,302](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,302); ср.
 [AIT. BR. 7,14](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,14), где спящий, пробуждающийся, поднимающийся и выступающий в поход царь сравнивается с четырьмя мировыми эпохами. *vicaranti mahīpālā yātrārthaṃ vijigīṣavaḥ*
 [R. 3,22,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,7) *tato drauṇirmahṛvīryaḥ pārthasya vicariṣyataḥ . vivaraṃ sūkṣmamālokya jyāṃ ciccheda kṣureṇa ha ..*
-[MBH. 4,1906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1906) *anena tvaṃ yadāstreṇa saṃgrāme vicariṣyasi*
-[3,1696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1696) *vyacaratpṛtanāntare*
-[7,488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.488)
+[MBH. 4,1906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1906) = [≈Вульг. 4.59.6](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A059_S006) = ≈крит. 04,54.6c *anena tvaṃ yadāstreṇa saṃgrāme vicariṣyasi*
+[3,1696.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1696) = [≈Вульг. 3.41.32](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A041_S032) = ≈крит. 03,42.30c *vyacaratpṛtanāntare*
+[7,488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.488) = [≈Вульг. 7.13.29](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A013_S029) = ≈крит. 07,12.28c
   <sub>attested</sub>
 
 **3)** — 3) zerrinnen, ablaufen: *vṛtrasya niṇyaṃ vi carantyāpaḥ*
@@ -55,14 +55,14 @@
 **4)** — 4) herumstreichen, sich ergehen, laufen: *sūryā māsā vicarantā*
 [ṚV. 10,92,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.12)
 [AV. 20,127,11.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.11) *sūrya eko vicarate*
-[MBH. 3,17353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17353) *utpatanta ivākāśe vyacaraṃste hayottamāḥ*
-[758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.758) *antarīkṣacaro hyasmi kāmato vicarāmi ca*
+[MBH. 3,17353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17353) = [≈Вульг. 3.313.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A313_S068) = ≈крит. 03,297.47c *utpatanta ivākāśe vyacaraṃste hayottamāḥ*
+[758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.758) = [≈Вульг. 3.19.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A019_S009) = ≈крит. 03,20.9a *antarīkṣacaro hyasmi kāmato vicarāmi ca*
 [HIḌ. 2,31.] *tamasātīre vicaratoḥ — krauñcayoḥ*
 [R. 1,2,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,12)
 [N. 1,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,18) *vicaritamṛgayūthāni — vanāni*
 [VIKR. 155.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?155) *rātrau na vicareyuste grāmeṣu nagareṣu ca*
 [M. 10,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,54) *tīrtheṣvitastatastasyā vicacāra*
-[MBH. 3,15558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15558) [2486.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2486) *mṛgavyādho vicarangahane vane*
+[MBH. 3,15558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15558) = [≈Вульг. 3.263.38](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A263_S038) = крит. — [2486.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2486) = [≈Вульг. 3.64.86](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S086) = ≈крит. 03,61.81a *mṛgavyādho vicarangahane vane*
 [N. 11,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,25) *(katham) padbhyāṃ rāmo mahāraṇye vatso me vicariṣyati*
 [R. 2,12,91.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,91) [96,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,22) [3,3,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,3,18)
 [BHARTṚ. 1,22.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,22)
@@ -80,14 +80,14 @@
 - **RU:** — 4) странствовать, бродить, разгуливать: *sūryā māsā vicarantā*
 [ṚV. 10,92,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.12)
 [AV. 20,127,11.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av20.127.html#av20.127.11) *sūrya eko vicarate*
-[MBH. 3,17353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17353) *utpatanta ivākāśe vyacaraṃste hayottamāḥ*
-[758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.758) *antarīkṣacaro hyasmi kāmato vicarāmi ca*
+[MBH. 3,17353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17353) = [≈Вульг. 3.313.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U22_A313_S068) = ≈крит. 03,297.47c *utpatanta ivākāśe vyacaraṃste hayottamāḥ*
+[758.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.758) = [≈Вульг. 3.19.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A019_S009) = ≈крит. 03,20.9a *antarīkṣacaro hyasmi kāmato vicarāmi ca*
 [HIḌ. 2,31.] *tamasātīre vicaratoḥ — krauñcayoḥ*
 [R. 1,2,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,12)
 [N. 1,18.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,18) *vicaritamṛgayūthāni — vanāni*
 [VIKR. 155.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?155) *rātrau na vicareyuste grāmeṣu nagareṣu ca*
 [M. 10,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,54) *tīrtheṣvitastatastasyā vicacāra*
-[MBH. 3,15558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15558) [2486.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2486) *mṛgavyādho vicarangahane vane*
+[MBH. 3,15558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15558) = [≈Вульг. 3.263.38](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A263_S038) = крит. — [2486.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2486) = [≈Вульг. 3.64.86](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S086) = ≈крит. 03,61.81a *mṛgavyādho vicarangahane vane*
 [N. 11,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,25) *(katham) padbhyāṃ rāmo mahāraṇye vatso me vicariṣyati*
 [R. 2,12,91.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,91) [96,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,22) [3,3,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,3,18)
 [BHARTṚ. 1,22.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,22)
@@ -109,16 +109,16 @@
 [5,63,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.063.html#rv05.063.02) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.063.html#rv05.063.05) [9,68,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.068.html#rv09.068.04) [10,140,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.140.html#rv10.140.02) *vicarati yadi mārgaṃ cottaraṃ medinījaḥ*
 [VARĀH. BṚH. S. 6,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,13) [7,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,2) *vicaranbhadvayam*
 [8,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,16) *vanaṃ tacca vyacaranta samantataḥ*
-[MBH. 1,3931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3931) *kathaṃ śūnyamimaṃ deśamekākī vicariṣyati*
-[3,1575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1575) *triśaṅkucaritāmāśāmagastyo vicariṣyati*
+[MBH. 1,3931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3931) = [≈Вульг. 1.99.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A099_S012) = ≈крит. 01,93.12a *kathaṃ śūnyamimaṃ deśamekākī vicariṣyati*
+[3,1575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1575) = [≈Вульг. 3.39.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A039_S025) = крит. — *triśaṅkucaritāmāśāmagastyo vicariṣyati*
 [HARIV. 4010.](https://sanskrit-lexicon-scans.github.io/hariv?4010) *vicariṣyanti lokāṃstrīn*
 [R. 1,47,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,9)
 [SUND. 4,24.] *nagarāṇi ca rāṣṭrāṇi saritaśca mahāgirīn . āśramān*
 [R. 1,51,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,22) [2,31,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,4) [3,23,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,44) [24,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,24,7)
 [MEGH. 113.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?113)
 [RAGH. 2,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,8) *vyacaratpṛtanām*
-[MBH. 7,495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.495) *vicīrṇāni vanāni*
-[MBH. 3,11432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11432)
+[MBH. 7,495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.495) = [≈Вульг. 7.14.1](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A014_S001) = ≈крит. 07,13.1c *vicīrṇāni vanāni*
+[MBH. 3,11432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11432) = [≈Вульг. 3.154.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A154_S023) = ≈крит. 03,152.21c
 [R. 3,73,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,25)
 
 - **RU:** — 5) проходить насквозь, обходить, обходить странствуя, пробегать; проникать, пронизывать; с acc.: *puro vibhindannacaradvi dāsīḥ*
@@ -127,16 +127,16 @@
 [5,63,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.063.html#rv05.063.02) [5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.063.html#rv05.063.05) [9,68,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.068.html#rv09.068.04) [10,140,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.140.html#rv10.140.02) *vicarati yadi mārgaṃ cottaraṃ medinījaḥ*
 [VARĀH. BṚH. S. 6,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?6,13) [7,2.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,2) *vicaranbhadvayam*
 [8,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,16) *vanaṃ tacca vyacaranta samantataḥ*
-[MBH. 1,3931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3931) *kathaṃ śūnyamimaṃ deśamekākī vicariṣyati*
-[3,1575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1575) *triśaṅkucaritāmāśāmagastyo vicariṣyati*
+[MBH. 1,3931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3931) = [≈Вульг. 1.99.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A099_S012) = ≈крит. 01,93.12a *kathaṃ śūnyamimaṃ deśamekākī vicariṣyati*
+[3,1575.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1575) = [≈Вульг. 3.39.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A039_S025) = крит. — *triśaṅkucaritāmāśāmagastyo vicariṣyati*
 [HARIV. 4010.](https://sanskrit-lexicon-scans.github.io/hariv?4010) *vicariṣyanti lokāṃstrīn*
 [R. 1,47,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,9)
 [SUND. 4,24.] *nagarāṇi ca rāṣṭrāṇi saritaśca mahāgirīn . āśramān*
 [R. 1,51,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,22) [2,31,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,31,4) [3,23,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,23,44) [24,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,24,7)
 [MEGH. 113.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?113)
 [RAGH. 2,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,8) *vyacaratpṛtanām*
-[MBH. 7,495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.495) *vicīrṇāni vanāni*
-[MBH. 3,11432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11432)
+[MBH. 7,495.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.495) = [≈Вульг. 7.14.1](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A014_S001) = ≈крит. 07,13.1c *vicīrṇāni vanāni*
+[MBH. 3,11432.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11432) = [≈Вульг. 3.154.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A154_S023) = ≈крит. 03,152.21c
 [R. 3,73,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,73,25)
   <sub>attested</sub>
 
@@ -148,24 +148,24 @@
   <sub>attested</sub>
 
 **7)** — 7) verfahren, auftreten, zu Werke gehen: *nāhamevaṃ care loke yathā tvamabhimanyase . apatyahetorvicare tacca kṛcchragataṃ mayā ..*
-[MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) *na garvamāsādya svaprabhutayā vicaraṇīyam*
+[MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) = [≈Вульг. 1.229.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A229_S015) = ≈крит. 01,220.15c *na garvamāsādya svaprabhutayā vicaraṇīyam*
 [PAÑCAT. 26,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,3)
 
 - **RU:** — 7) поступать, действовать, вести себя: *nāhamevaṃ care loke yathā tvamabhimanyase . apatyahetorvicare tacca kṛcchragataṃ mayā ..*
-[MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) *na garvamāsādya svaprabhutayā vicaraṇīyam*
+[MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) = [≈Вульг. 1.229.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U19_A229_S015) = ≈крит. 01,220.15c *na garvamāsādya svaprabhutayā vicaraṇīyam*
 [PAÑCAT. 26,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,3)
   <sub>attested</sub>
 
 **8)** — 8) leben, sein Leben zubringen: *veśavāgbuddhisārūpyamācaranvicarediha*
 [M. 4,18.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,18) *adhyātmaratirāsīno nirāpekṣo nirāmiṣaḥ . ātmanaiva sahāyena sukhārthī vicarediha ..*
 [6,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,49) [52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,52) *tasmāttvaṃ nartanaḥ pārtha strīmadhye mānavarjitaḥ . apumāniti vikhyātaḥ ṣaṇḍhavadvicariṣyasi ..*
-[MBH. 3,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1866) *teṣāṃ madhye vicaran*
+[MBH. 3,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1866) = [≈Вульг. 3.46.49](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S049) = крит. — *teṣāṃ madhye vicaran*
 [PAÑCAT. 68,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,25)
 
 - **RU:** — 8) жить, проводить жизнь: *veśavāgbuddhisārūpyamācaranvicarediha*
 [M. 4,18.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,18) *adhyātmaratirāsīno nirāpekṣo nirāmiṣaḥ . ātmanaiva sahāyena sukhārthī vicarediha ..*
 [6,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,49) [52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,52) *tasmāttvaṃ nartanaḥ pārtha strīmadhye mānavarjitaḥ . apumāniti vikhyātaḥ ṣaṇḍhavadvicariṣyasi ..*
-[MBH. 3,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1866) *teṣāṃ madhye vicaran*
+[MBH. 3,1866.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1866) = [≈Вульг. 3.46.49](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S049) = крит. — *teṣāṃ madhye vicaran*
 [PAÑCAT. 68,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,25)
   <sub>attested</sub>
 
@@ -186,7 +186,7 @@
   <sub>attested</sub>
 
 **11)** — 11) üben, vollführen, vollbringen: *mṛgayāṃ vyacarat*
-[MBH. 3,12654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12654) *yuddhaṃ viceratuḥ*
+[MBH. 3,12654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12654) = [≈Вульг. 3.184.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A184_S003) = ≈крит. 03,182.3c *yuddhaṃ viceratuḥ*
 [R. 6,79,59.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,59) *rāghave — viṣaṃ kṣiptvāhijihmatāṃ vicariṣyati*
 [2,43,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,2) *prāyaścittena — vicīrṇena*
 [PAÑCAT. I,307.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,307) *sa tena (nistriṃśena) vicaranmārgānekaḥ* sich Wege bahnen
@@ -194,7 +194,7 @@
 [10148.](https://sanskrit-lexicon-scans.github.io/hariv?10148) — caus.
 
 - **RU:** — 11) упражняться, выполнять, совершать: *mṛgayāṃ vyacarat*
-[MBH. 3,12654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12654) *yuddhaṃ viceratuḥ*
+[MBH. 3,12654.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12654) = [≈Вульг. 3.184.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A184_S003) = ≈крит. 03,182.3c *yuddhaṃ viceratuḥ*
 [R. 6,79,59.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,79,59) *rāghave — viṣaṃ kṣiptvāhijihmatāṃ vicariṣyati*
 [2,43,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,2) *prāyaścittena — vicīrṇena*
 [PAÑCAT. I,307.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,307) *sa tena (nistriṃśena) vicaranmārgānekaḥ* прокладывать себе пути
@@ -204,13 +204,13 @@
 
 **caus-1)** 1) laufen —, herumstreichen lassen: *tato vicārya bahuśo rathamārgeṣu tānhayān . anodayatsame deśe*
 [ARJ. 6,17.] *(cārān) udyāneṣu vihāreṣu* u. s. w. *vicārayet*
-[MBH. 1,5605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5605) *vicārya sa tato dṛṣṭiṃ kānane*
+[MBH. 1,5605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5605) = [≈Вульг. 1.140.16](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S016) = ≈крит. 12,138.11a *vicārya sa tato dṛṣṭiṃ kānane*
 [R. 4,13,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,44) *buddhiratra vicāryatām* den Geist herum gehen lassen so v. a. nachdenken
 [1,41,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,9)
 
 - **RU:** 1) заставлять бегать —, заставлять бродить: *tato vicārya bahuśo rathamārgeṣu tānhayān . anodayatsame deśe*
 [ARJ. 6,17.] *(cārān) udyāneṣu vihāreṣu* и т.д. *vicārayet*
-[MBH. 1,5605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5605) *vicārya sa tato dṛṣṭiṃ kānane*
+[MBH. 1,5605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5605) = [≈Вульг. 1.140.16](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S016) = ≈крит. 12,138.11a *vicārya sa tato dṛṣṭiṃ kānane*
 [R. 4,13,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,44) *buddhiratra vicāryatām* давать разуму блуждать, т.е. преим. размышлять
 [1,41,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,9)
   <sub>attested</sub>
@@ -225,12 +225,12 @@
 **caus-3)** — 3) in Gedanken hin und her gehen lassen, erwägen, gegen einander abwägen, in Betracht ziehen, prüfen, nachdenken: *āyatiṃ sarvakāryāṇāṃ tadātvaṃ ca vicārayet*
 [M. 7,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,178) *vicārya tasya vā vṛttam*
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
-[MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
+[MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) = [≈Вульг. 12.103.33](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A103_S033) = ≈крит. 12,104.32a *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] zu [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] zu [SĀṂKHYAK. 69.] *suvicārya*
-[MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Ohne obj. *vyacīcaram*
+[KAIY.] zu [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) = [≈Вульг. 12.320.102](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A320_S102) = ≈крит. 12,308.102c [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] zu [SĀṂKHYAK. 69.] *suvicārya*
+[MED. Anh. 3.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) [MED. Anh. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,4) Ohne obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* hin und her denkend
-[MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
+[MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255) = [≈Вульг. 5.9.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A009_S027) = крит. —
 [ŚĀK. 66,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,13) *vicāryatām*
 [MṚCCH. 149,22.] *vicārya punaḥ punaḥ*
 [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [10,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,13) [19,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?19,28)
@@ -245,12 +245,12 @@
 - **RU:** — 3) мысленно взвешивать, обдумывать, сопоставлять, принимать во внимание, исследовать, размышлять: *āyatiṃ sarvakāryāṇāṃ tadātvaṃ ca vicārayet*
 [M. 7,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,178) *vicārya tasya vā vṛttam*
 [8,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,187) [401.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,401) *mitrāmitraṃ vicārayet*
-[MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) *pareṣāmātmanaścaiva yo vicārya balābalam*
+[MBH. 12,3826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3826) = [≈Вульг. 12.103.33](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A103_S033) = ≈крит. 12,104.32a *pareṣāmātmanaścaiva yo vicārya balābalam*
 [PAÑCAT. III,87.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,87) *pakṣadvayaṃ bhāṣye vicāritam*
-[KAIY.] к [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] к [SĀṂKHYAK. 69.] *suvicārya*
-[MED. Anh. 3. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) Без obj. *vyacīcaram*
+[KAIY.] к [P. 7,1,30.](https://ashtadhyayi.com/sutraani/7/1/30) [MBH. 1,4370.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4370) [12,11954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11954) = [≈Вульг. 12.320.102](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A320_S102) = ≈крит. 12,308.102c [BENF. Chr. 15,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) [P. 8,2,97.](https://ashtadhyayi.com/sutraani/8/2/97) [BHARTṚ. 1,18.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,18) [PAÑCAT. 191,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?191,10) [GAUḌAP.] к [SĀṂKHYAK. 69.] *suvicārya*
+[MED. Anh. 3.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,3) [MED. Anh. 4.](https://sanskrit-lexicon-scans.github.io/medini/app1?anh,4) Без obj. *vyacīcaram*
 [DAŚAK. 103, ult.] *śakra āste vicārayan* размышляя туда и сюда
-[MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255)
+[MBH. 5,255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.255) = [≈Вульг. 5.9.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A009_S027) = крит. —
 [ŚĀK. 66,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?66,13) *vicāryatām*
 [MṚCCH. 149,22.] *vicārya punaḥ punaḥ*
 [N. 5,15.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,15) [10,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,13) [19,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?19,28)

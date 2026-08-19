@@ -7,7 +7,7 @@
 [Spr. 830.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?830) *˚kāntidrava*
 [ŚĀK. CH. 128,18.]
 
-- **RU:** — *prod*, partic. *prodbhinna* «вырвавшийся наружу, прорвавшийся»: *˚romodgamā*
+- **RU:** — *prod*, partic. *prodbhinna* вырвавшийся наружу, прорвавшийся: *˚romodgamā*
 [Spr. 830.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?830) *˚kāntidrava*
 [ŚĀK. CH. 128,18.]
   <sub>attested</sub>

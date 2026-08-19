@@ -5,11 +5,11 @@
 
 **1)** — *vipra*
  1) richten (den Geist) auf: *saṃcaye ca vināśānte maraṇānte ca jīvite saṃyoge ca viyogānte ko nu vipraṇayenmanaḥ ..*
-[MBH. 12,3891. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3891)
+[MBH. 12,3891. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3891) = [≈Вульг. 12.104.44](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A104_S044) = ≈крит. 12,105.44a
 
 - **RU:** — *vipra*
  1) направлять (ум) на: *saṃcaye ca vināśānte maraṇānte ca jīvite saṃyoge ca viyogānte ko nu vipraṇayenmanaḥ ..*
-[MBH. 12,3891. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3891)
+[MBH. 12,3891. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3891) = [≈Вульг. 12.104.44](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A104_S044) = ≈крит. 12,105.44a
   <sub>attested</sub>
 
 **2)** — 2) verstreichen lassen: *saṃvatsaraṃ vipraṇayet*

@@ -11,7 +11,7 @@
 
 - **RU:** — *ud*
  1) поднимать, воздвигать: *unnīya vaktram*
-[BHĀG. P. 10,83,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,83,29) поднять на своё плечо, мед.
+[BHĀG. P. 10,83,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,83,29) поднять на свое плечо, мед.
 [30,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,30,31) поднять вверх, так преим. возбуждать в высокой степени: *utsavaṃ dṛśīnāmunnayan*
 [35,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,35,23) [Sp. 274, Z. 5] lies *śayane* .
   <sub>attested</sub>

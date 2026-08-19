@@ -54,20 +54,20 @@
 [AV.] pass. : *sūyate, sūyai*; partic. *suta*
 [ŚAT. BR. 9,3,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,5) [4,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,14) *sūta* (= *īrita, prerita*
 [H. an. 2,208.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,208)
-[MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72)) in *nṛṣūta*; см. auch unter *pari* und *pra* . (приводить в движение, побуждать, являть; даровать, посылать (о Савитарс воздействии); устанавливать, определять, посвящать для чего-л.; давать разрешение на что-л.; мед. посвящаться и т.д. быть допускаемым: *savitā suvāti*
+[MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72)) in *nṛṣūta*; см. также unter *pari* и *pra* . (приводить в движение, побуждать, являть; даровать, посылать (о Савитарс воздействии); устанавливать, определять, посвящать для чего-л.; давать разрешение на что-л.; мед. посвящаться и т.д. быть допускаемым: *savitā suvāti*
 [ṚV. 7,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.040.html#rv07.040.01) *śreṣṭhaṃ savaṃ savitā sāviṣannaḥ*
 [1,164,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.26) [AV. 6,1,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.001.html#av06.001.03) *devebhyo hi prathamamamṛtatvaṃ suvasi bhāgam*
 [ṚV. 4,54,2. fgg.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.054.html#rv04.054.02) [5,42,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.042.html#rv05.042.03) [82,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.082.html#rv05.082.04) *vāmamasmabhyaṃ sāvīḥ*
 [6,71,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.071.html#rv06.071.06) *yadadya sūra udite suvati savitā bhagaḥ*
 [7,66,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.066.html#rv07.066.04) [AV. 7,14,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.014.html#av07.014.03) [14,1,33.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.33) [19,8,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.008.html#av19.008.04) *yathā sindhurnadīnāṃ sāmrājyaṃ suṣuve*
-[14,1,43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.43) *suṣuvāṇa* находящийся в процессе посвящения, посвящённый
+[14,1,43.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.43) *suṣuvāṇa* находящийся в процессе посвящения, посвященный
 [TS. 2,1,9,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,1,9,1) ([P. 3,2,106](https://ashtadhyayi.com/sutraani/3/2/106), схол., wo *suṣuvāṇam* zu lesen ist).
 [5,6,3,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,4) [7,5,15,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,15,2) [TBR. 1,8,1,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,8,1,1) [ŚAT. BR. 5,4,3,23.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,3,23) [4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,4,8) [5,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,5,2,1) [PAÑCAV. BR. 18,9,1. 10,1.] pass.: *yo vai somena sūyate (= niṣpadyate* коммент.)
 [TBR. 2,7,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,7,5,1) *sūyate ha vā asya kṣatram*
 [AIT. BR. 8,5.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,5)
 [ŚAT. BR. 5,3,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,1,3) [3,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,11) [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,3,15) [9,3,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,3,4,6) *agnisavena suto bhavati* 9. *sarvaṃ vastatsutam* к всему этому вы уполномочены
 [13,4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,4,2,17) *sūyate vā eṣa yo 'gniṃ cinute*
-[TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *yasmādeveme candraṛkṣagrahasaṃvatsarādayaḥ sūyante (= abhiṣūyante āpyāyante* коммент.) so преим. быть приведённым в действие
+[TS. 5,6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,6,3,1) *yasmādeveme candraṛkṣagrahasaṃvatsarādayaḥ sūyante (= abhiṣūyante āpyāyante* коммент.) so преим. быть приведенным в действие
 [MAITRYUP. 6,16.] *mā na sāvīrmahāstrāṇi* so преим. мечи
 [BHAṬṬ. 9,50.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,50) — *prajāpateḥ sutaṃ rayiṣṭham* имя eines Саман
 [Ind. St. 3,225,a.]

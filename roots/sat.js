@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["sat"]=[{"key": "sat~~h0_zz_pw", "h": "sat", "iast": "sat", "senses": [{"tag": "xref", "de_html": "<i class=sa>sat</i> <span class=ab title=siehe unter — see under>s. u.</span> <i class=sa>sant</i>.", "ru_html": "<i class=sa>sat</i> <span class=ab title=siehe unter — see under>см.</span> <i class=sa>sant</i>.", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["sat"]=[];

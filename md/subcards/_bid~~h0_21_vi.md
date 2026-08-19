@@ -13,7 +13,7 @@
 [ṚV. 10,67,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.12) [68,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.068.html#rv10.068.04) [138,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.138.html#rv10.138.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.06)
 [AV. 1,11,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.05) [4,19,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.05) *tasya varma vibhidyāśu ca bāṇaḥ*
 [MBH. 3,709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.709) *viṣāṇaiścāvaniṃ gatvā vyabhindanrathino bahūn*
-[7,1388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1388) [4694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4694) *vibhidyedaṃ rasātalam*
+[7,1388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1388) = [≈Вульг. 7.32.16](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A032_S016) = ≈крит. 07,31.15c [4694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4694) = [≈Вульг. 7.118.11](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A118_S011) = ≈крит. 07,94.11c *vibhidyedaṃ rasātalam*
 [R. GORR. 1,42,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,42,10) [BHĀG. P. 3,13,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,31) [VARĀH. BṚH. S. 44,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?44,21) [KATHĀS. 2,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,10) *niśitaśarairvibhidyamānatvaci*
 [BHĀG. P. 1,9,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,34) *śarairativibhinnāṅgaḥ*
 [R. 6,18,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,18,44)
@@ -43,7 +43,7 @@
 [ṚV. 10,67,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.12) [68,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.068.html#rv10.068.04) [138,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.138.html#rv10.138.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.067.html#rv10.067.06)
 [AV. 1,11,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.011.html#av01.011.05) [4,19,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.019.html#av04.019.05) *tasya varma vibhidyāśu ca bāṇaḥ*
 [MBH. 3,709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.709) *viṣāṇaiścāvaniṃ gatvā vyabhindanrathino bahūn*
-[7,1388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1388) [4694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4694) *vibhidyedaṃ rasātalam*
+[7,1388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1388) = [≈Вульг. 7.32.16](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A032_S016) = ≈крит. 07,31.15c [4694.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4694) = [≈Вульг. 7.118.11](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A118_S011) = ≈крит. 07,94.11c *vibhidyedaṃ rasātalam*
 [R. GORR. 1,42,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,42,10) [BHĀG. P. 3,13,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,31) [VARĀH. BṚH. S. 44,21.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?44,21) [KATHĀS. 2,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?2,10) *niśitaśarairvibhidyamānatvaci*
 [BHĀG. P. 1,9,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,34) *śarairativibhinnāṅgaḥ*
 [R. 6,18,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,18,44)
@@ -67,12 +67,12 @@
 **2)** — 2) trennen: *śarīrādavibhinno 'sya gomukhastu bhaviṣyati* so v. a. nicht von seiner Seite kommend
 [KATHĀS. 34,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,118) *(rājñī) abhūdavibhinnaiva bhūpateḥ*
 [27,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,57) [Spr. 1801.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1801) neben *saṃbhinna* unter den Beiww. von Śiva
-[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374)
+[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Вульг. 12.286.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A286_S008) = ≈крит. 12,275.8a
 
 - **RU:** — 2) разлучать, разделять: *śarīrādavibhinno 'sya gomukhastu bhaviṣyati* так преим. не отходящий от его стороны
 [KATHĀS. 34,118.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,118) *(rājñī) abhūdavibhinnaiva bhūpateḥ*
 [27,57.](https://sanskrit-lexicon-scans.github.io/kss/index.html?27,57) [Spr. 1801.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1801) наряду с *saṃbhinna* среди эпит. от Шива
-[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374)
+[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Вульг. 12.286.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A286_S008) = ≈крит. 12,275.8a
   <sub>attested</sub>
 
 **3)** — 3) lösen, auseinandermachen: *āntrapāśaṃ vibhidya*
@@ -100,13 +100,13 @@
   <sub>attested</sub>
 
 **5)** — 5) umstimmen: *vibhetsyati manāṃsyeṣām*
-[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) pass. eine Umstimmung erfahren: *paśubuddhirvibhidyate*
+[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) = [≈Вульг. 5.6.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A006_S016) = ≈крит. 05,6.15c pass. eine Umstimmung erfahren: *paśubuddhirvibhidyate*
 [BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* umgestimmt
 [R. GORR. 2,28,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,15) untreu geworden
 [RĀJA-TAR. 6,124.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,124)
 
 - **RU:** — 5) переубеждать, склонять к перемене взглядов: *vibhetsyati manāṃsyeṣām*
-[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) pass. претерпевать перемену настроения: *paśubuddhirvibhidyate*
+[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) = [≈Вульг. 5.6.16](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A006_S016) = ≈крит. 05,6.15c pass. претерпевать перемену настроения: *paśubuddhirvibhidyate*
 [BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* переубежденный, переменивший взгляды
 [R. GORR. 2,28,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,15) ставший неверным, изменивший
 [RĀJA-TAR. 6,124.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,124)
@@ -140,12 +140,12 @@
 
 **8)** — 8) *vibhinna* vermengt mit (instr.): *vibhinnamambhojapalāśaśobhayā*
 [KIR. 4,27. 5,34.] — caus. Jmd von Jmd (abl.) entfernen, abspänstig machen
-[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108)
+[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108) = [≈Вульг. 12.111.66](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A111_S066) = ≈крит. 12,112.62a
 [R. GORR. 2,6,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,16) ([7,18] [SCHL.]). [8,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,55)
 
 - **RU:** — 8) *vibhinna* смешанный с (instr.): *vibhinnamambhojapalāśaśobhayā*
 [KIR. 4,27. 5,34.] — caus. удалять кого-либо от кого-либо (abl.), отвращать
-[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108)
+[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108) = [≈Вульг. 12.111.66](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A111_S066) = ≈крит. 12,112.62a
 [R. GORR. 2,6,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,16) ([7,18] [SCHL.]). [8,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,55)
   <sub>attested</sub>
 

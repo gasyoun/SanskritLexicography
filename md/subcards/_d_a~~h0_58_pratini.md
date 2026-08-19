@@ -21,11 +21,11 @@
   <sub>attested</sub>
 
 **2)** — 2) verfügen, befehlen: *tathā pratinidhāya*
-[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) — Statt *guṇāśrayaviśeṣaṃ pratinidhāya* bei
+[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) = [≈Вульг. 1.115.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A115_S024) = ≈крит. 01,107.23c — Statt *guṇāśrayaviśeṣaṃ pratinidhāya* bei
 [GAUḌAP.] zu [SĀṂKHYAK. 16] ist zu lesen *˚śeṣaṃ prati nidhāya* .
 
 - **RU:** — 2) распорядиться, приказать: *tathā pratinidhāya*
-[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) — Вм. *guṇāśrayaviśeṣaṃ pratinidhāya* у
+[MBH. 1,4505.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4505) = [≈Вульг. 1.115.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A115_S024) = ≈крит. 01,107.23c — Вм. *guṇāśrayaviśeṣaṃ pratinidhāya* у
 [GAUḌAP.] к [SĀṂKHYAK. 16] следует читать *˚śeṣaṃ prati nidhāya* .
   <sub>attested</sub>
 

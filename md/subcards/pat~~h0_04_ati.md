@@ -13,7 +13,7 @@
  1) пролетать мимо, пролетать над: *atha ha haṃsā niśāyāmatipetuḥ*
 [CHĀND. UP. 4,1,2.] *mā ta 'tipaptan*
 [LĀṬY. 3,10,9.] *ati sūryaṃ paraḥ śakunā iva paptima*
-?(схол. zu [P. 6,4,99](https://ashtadhyayi.com/sutraani/6/4/99)). [ṚV. 9,107,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.20) ср. u. *abhi* 2.
+?(схол. к [P. 6,4,99](https://ashtadhyayi.com/sutraani/6/4/99)). [ṚV. 9,107,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.20) ср. u. *abhi* 2.
   <sub>attested</sub>
 
 **2)** — 2) versäumen, vernachlässigen, vgl. *atipāta, atipātya* . — caus.

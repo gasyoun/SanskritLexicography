@@ -32,10 +32,10 @@
 [ŚAT. BR. 14,4,3,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,29) [32.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,32)
 [ŚVETĀŚV. UP. 5,7.] *uparyupari saṃcarantaḥ* darüber gehend
 [CHĀND. UP. 8,3,2.] *divi saṃcaramāṇāni — jyotīṃṣi*
-[MBH. 12,6669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6669) *naiva vātāḥ pravāyante na meghāḥ saṃcaranti ca* es ziehen keine Wolken auf
+[MBH. 12,6669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6669) = [≈Вульг. 12.181.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A181_S008) = ≈крит. 12,174.8a *naiva vātāḥ pravāyante na meghāḥ saṃcaranti ca* es ziehen keine Wolken auf
 [HARIV. 10758.](https://sanskrit-lexicon-scans.github.io/hariv?10758) *kalahaṃsaḥ*
 [PAÑCAT. I,335.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,335) *saṃcarantī vane*
-[MBH. 1,3932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3932)
+[MBH. 1,3932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3932) = [≈Вульг. 1.99.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A099_S013) = ≈крит. 01,93.13c
 [BHARTṚ. 1,85.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,85) *rājamārgo hi śūnyo 'yaṃ rakṣiṇaḥ saṃcaranti*
 [MṚCCH. 26,7.] *vane vyādhāḥ*
 [HIT. 39,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,4)
@@ -61,10 +61,10 @@
 [ŚAT. BR. 14,4,3,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,29) [32.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,32)
 [ŚVETĀŚV. UP. 5,7.] *uparyupari saṃcarantaḥ* проходя над этим
 [CHĀND. UP. 8,3,2.] *divi saṃcaramāṇāni — jyotīṃṣi*
-[MBH. 12,6669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6669) *naiva vātāḥ pravāyante na meghāḥ saṃcaranti ca* тучи не собираются
+[MBH. 12,6669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6669) = [≈Вульг. 12.181.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A181_S008) = ≈крит. 12,174.8a *naiva vātāḥ pravāyante na meghāḥ saṃcaranti ca* тучи не собираются
 [HARIV. 10758.](https://sanskrit-lexicon-scans.github.io/hariv?10758) *kalahaṃsaḥ*
 [PAÑCAT. I,335.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,335) *saṃcarantī vane*
-[MBH. 1,3932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3932)
+[MBH. 1,3932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3932) = [≈Вульг. 1.99.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A099_S013) = ≈крит. 01,93.13c
 [BHARTṚ. 1,85.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,85) *rājamārgo hi śūnyo 'yaṃ rakṣiṇaḥ saṃcaranti*
 [MṚCCH. 26,7.] *vane vyādhāḥ*
 [HIT. 39,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,4)
@@ -87,22 +87,22 @@
 **4)** — 4) eingehen in, sich verbreiten durch, durchdringen, durchwandern: *vṛkṣāṃ vanāni saṃ cara*
 [AV. 6,45,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.01) [8,9,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.009.html#av08.009.12) *samānajanmā kraturasti vaḥ śivaḥ sa vaḥ sarvāḥ saṃ carati prajānan*
 [22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.22) *diśaḥ*
-[13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) [MBH. 3,12923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12923) [R. 1,47,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,6) *ubhau lokau*
+[13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) [MBH. 3,12923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12923) = [≈Вульг. 3.188.119](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S119) = крит. — [R. 1,47,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,6) *ubhau lokau*
 [ŚAT. BR. 14,7,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,7)
-[MBH. 3,8411.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8411) [12717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12717) med. [2,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.271) [13,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7415) *yastu pṛthivīṃ saṃcariṣyati*
-[3,8258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8258) *nagam*
+[MBH. 3,8411.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8411) = [≈Вульг. 3.91.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A091_S006) = ≈крит. 03,89.6a [12717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12717) = [≈Вульг. 3.186.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A186_S003) = ≈крит. 03,184.3a med. [2,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.271) = [≈Вульг. 2.6.7](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A006_S007) = ≈крит. 02,6.7c [13,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7415) = [≈Вульг. 13.159.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A159_S015) = ≈крит. 13,144.12e *yastu pṛthivīṃ saṃcariṣyati*
+[3,8258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8258) = [≈Вульг. 3.85.116](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S116) = ≈крит. 03,83.99a *nagam*
 [R. 6,83,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,83,20) *imāni lokadvārāṇi yo vai saṃcarate sadā*
-[MBH. 2,2038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2038) [3,925.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.925)
+[MBH. 2,2038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2038) = [≈Вульг. 2.59.9](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A059_S009) = ≈крит. 02,53.6a [3,925.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.925) = [≈Вульг. 3.24.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A024_S007) = ≈крит. 03,25.7c
 
 - **RU:** — 4) входить в, распространяться через, пронизывать, проходить насквозь: *vṛkṣāṃ vanāni saṃ cara*
 [AV. 6,45,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.01) [8,9,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.009.html#av08.009.12) *samānajanmā kraturasti vaḥ śivaḥ sa vaḥ sarvāḥ saṃ carati prajānan*
 [22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.22) *diśaḥ*
-[13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) [MBH. 3,12923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12923) [R. 1,47,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,6) *ubhau lokau*
+[13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) [MBH. 3,12923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12923) = [≈Вульг. 3.188.119](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S119) = крит. — [R. 1,47,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,6) *ubhau lokau*
 [ŚAT. BR. 14,7,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,7)
-[MBH. 3,8411.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8411) [12717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12717) мед. [2,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.271) [13,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7415) *yastu pṛthivīṃ saṃcariṣyati*
-[3,8258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8258) *nagam*
+[MBH. 3,8411.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8411) = [≈Вульг. 3.91.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A091_S006) = ≈крит. 03,89.6a [12717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12717) = [≈Вульг. 3.186.3](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A186_S003) = ≈крит. 03,184.3a мед. [2,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.271) = [≈Вульг. 2.6.7](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U02_A006_S007) = ≈крит. 02,6.7c [13,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7415) = [≈Вульг. 13.159.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A159_S015) = ≈крит. 13,144.12e *yastu pṛthivīṃ saṃcariṣyati*
+[3,8258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8258) = [≈Вульг. 3.85.116](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S116) = ≈крит. 03,83.99a *nagam*
 [R. 6,83,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,83,20) *imāni lokadvārāṇi yo vai saṃcarate sadā*
-[MBH. 2,2038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2038) [3,925.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.925)
+[MBH. 2,2038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2038) = [≈Вульг. 2.59.9](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A059_S009) = ≈крит. 02,53.6a [3,925.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.925) = [≈Вульг. 3.24.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A024_S007) = ≈крит. 03,25.7c
   <sub>attested</sub>
 
 **5)** — 5) sich bewegen, sich aufhalten, sich befinden: *antareṇa vai yoniṃ garbhaḥ saṃcarati*
@@ -170,10 +170,10 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) übertragen, übergeben: *saṃcārayāmāsa jarāṃ tadā putre*
-[MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169)
+[MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169) = [≈Вульг. 1.75.44](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S044) = ≈крит. 01,70.41a
 
 - **RU:** — 4) передавать, вручать: *saṃcārayāmāsa jarāṃ tadā putre*
-[MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169)
+[MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169) = [≈Вульг. 1.75.44](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S044) = ≈крит. 01,70.41a
   <sub>attested</sub>
 
 **tail)** Vgl. *saṃcara, saṃcāra* u. s. w.

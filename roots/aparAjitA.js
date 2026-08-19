@@ -1,0 +1,2 @@
+window.ROOT=window.ROOT||{};window.ROOT["aparAjitA"]=[{"key": "apar_ajit_a~~h0_zz_sch", "h": "aparājitā", "iast": "aparājitā", "senses": [{"tag": "SCH Nachtrag", "de_html": "aparājitā Clitoria ternates, <span class=ls>Vās. 246,2.</span>", "ru_html": "aparājitā Clitoria ternates, <span class=ls>Vās. 246,2.</span>", "en_html": "", "dcs": null, "src": "lexicographic"}]}];
+window.COLOC=window.COLOC||{};window.COLOC["aparAjitA"]=[];

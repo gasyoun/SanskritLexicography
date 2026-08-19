@@ -19,9 +19,9 @@ Z. 3 stelle die Worte mit pass. Bed.: in die zweite Zeile nach
 стк. 9, *pītvī* ved.
 схол. к [P. 7,1,49.](https://ashtadhyayi.com/sutraani/7/1/49) *pītvānam* ved. к 48. *pāyaṃ pāyam*
 [Spr. 4341.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4341) *pīta*
- 1) *vatsapītā* (корова) от которой телёнок сосал
+ 1) *vatsapītā* (корова) от которой теленок сосал
 [Spr. 4302.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4302) — caus.: *madhūnyamṛtakalpāni pāyitau*
-[R. 7,37,1,44.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,37,1,44) стк. 7 [ed. Bomb.] правильно *pāyayan* . — desid.
+[R. 7,37,1,44.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,37,1,44) стк. 7 [Бомбейская ред.] правильно *pāyayan* . — desid.
  1) *pipāsatā mayā*
 [ŚĀK. 72.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?72) — intens.
 стк. 3 переставить слова с pass. знач.: во вторую строку после

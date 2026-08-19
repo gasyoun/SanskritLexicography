@@ -5,7 +5,7 @@
 
 **main)** 2. *vas* mit *adhi* vgl. 5. *vas* mit *adhi* und u. *samayā*.
 
-- **RU:** 2. *vas* mit *adhi* ср. 5. *vas* mit *adhi* und u. *samayā*.
+- **RU:** 2. *vas* mit *adhi* ср. 5. *vas* mit *adhi* и u. *samayā*.
   <sub>attested</sub>
 
 **sub-1)** — *apa* 1) auch [ṚV. 8,47,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.18)

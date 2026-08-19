@@ -30,23 +30,23 @@
 [KULL.] zu [M. 8,257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,257) *nirṇīta* auf's Reine gebracht, entschieden, ausgemacht, feststehend
 [AK. 3,4,26,205.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,205) *nirṇītavedaśāstrārtha*
 [Verz. d. Oxf. H. 91,b,10.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *sunirṇītārthasaṃśaya*
-[MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735)
+[MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735) = [≈Вульг. 13.167.30](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U02_A167_S030) = ≈крит. 13,153.30a
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11)
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
 
-- **RU:** — 2) выяснять, устанавливать, доискиваться до чего-л., доводить до решения, принимать решение о чём-л.: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
+- **RU:** — 2) выяснять, устанавливать, доискиваться до чего-л., доводить до решения, принимать решение о чем-л.: *yo hi kāryaṃ mahāpadi . haṭhenecchati nirṇetum*
 [R. 5,85,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,85,11) *kamapyupāyamātmanaiva nirṇīya*
 [DAŚAK.] in [BENF. Chr. 194,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *ityetadvyavahārānnirṇetuṃ na śakyate*
 [HIT. 73,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?73,22) *purāvṛttakathodgāraiḥ kathaṃ nirṇīyate paraḥ*
 [III,105.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,105) *nirṇīya śubhalagnaṃ yātrārthaṃ dadātu*
 [94,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?94,9) *vastu nirṇīyatāṃ svayam*
 [RĀJA-TAR. 6,27.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,27) *nirṇayantaḥ*
-[KULL.] zu [M. 8,257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,257) *nirṇīta* выясненный, решённый, установленный, твёрдо определённый
+[KULL.] к [M. 8,257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,257) *nirṇīta* выясненный, решенный, установленный, твердо определенный
 [AK. 3,4,26,205.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,205) *nirṇītavedaśāstrārtha*
 [Verz. d. Oxf. H. 91,b,10.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *sunirṇītārthasaṃśaya*
-[MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735)
+[MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735) = [≈Вульг. 13.167.30](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U02_A167_S030) = ≈крит. 13,153.30a
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11)
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 216.]
   <sub>attested</sub>
 
 **Nachträge)** — Vgl. *nirṇaya, nirṇayana, nirṇetar* fg.

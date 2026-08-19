@@ -18,10 +18,10 @@
 
 versuche nicht mit mir darüber zu reden
 [5,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,2) *tathaiva bhīmasenena lokaḥ saṃvadate bhṛśam*
-[MBH. 7,5318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5318) act.: *rājñā na saṃvadet*
-[4,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.125) *svacaraiḥ saha saṃvadet*
+[MBH. 7,5318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5318) = [≈Вульг. 7.130.6](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A130_S006) = ≈крит. 07,105.4e act.: *rājñā na saṃvadet*
+[4,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.125) = [≈Вульг. 4.4.43](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S043) = ≈крит. 04,4.36a *svacaraiḥ saha saṃvadet*
 [Spr. 1037.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1037) *tayoḥ saṃvadatorevam*
-[MBH. 5,7033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7033) [6,5606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5606)
+[MBH. 5,7033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7033) = [≈Вульг. 5.178.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S006) = ≈крит. 05,177.6a [6,5606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5606) = [≈Вульг. 6.119.23](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S023) = ≈крит. 06,114.22c
 [R. 1,74,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,74,13) [2,89,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,5)
 [R. GORR. 1,26,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,26,19) [76,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,76,15) [7,60,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,60,1)
 [Spr. 4413.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4413)
@@ -37,17 +37,17 @@ versuche nicht mit mir darüber zu reden
 [10,31,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.031.html#rv10.031.02) [AV. 6,109,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.109.html#av06.109.02) [11,4,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.004.html#av11.004.06) *sāvitre*
 [TBR. 3,10,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,10,9,5)
 [TS. 2,5,1,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,1,5) *indrāgnī u haivaitatsamūdāte*
-[ŚAT. BR. 5,2,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) [1,1,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,14) [3,1,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,1,10) [8,4,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,4,1,4) *kumāraṃ jātaṃ saṃvadanta upa vai śuśrūṣate* говорят друг другу о ребёнке: он подслушивает
+[ŚAT. BR. 5,2,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) [1,1,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,1,4,14) [3,1,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,1,1,10) [8,4,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,4,1,4) *kumāraṃ jātaṃ saṃvadanta upa vai śuśrūṣate* говорят друг другу о ребенке: он подслушивает
 [AIT. BR. 3,2.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,2)
 [NIR. 11,25.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,25) *gṛhapaterevāraṇyoḥ saṃvadante*
 [ŚAT. BR. 4,6,8,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,8,13) [14,7,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,1) *mā maitasminsaṃvadiṣṭhāḥ*
 
 не пытайся говорить со мной об этом
 [5,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,5,1,2) *tathaiva bhīmasenena lokaḥ saṃvadate bhṛśam*
-[MBH. 7,5318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5318) act.: *rājñā na saṃvadet*
-[4,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.125) *svacaraiḥ saha saṃvadet*
+[MBH. 7,5318.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5318) = [≈Вульг. 7.130.6](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A130_S006) = ≈крит. 07,105.4e act.: *rājñā na saṃvadet*
+[4,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.125) = [≈Вульг. 4.4.43](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S043) = ≈крит. 04,4.36a *svacaraiḥ saha saṃvadet*
 [Spr. 1037.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1037) *tayoḥ saṃvadatorevam*
-[MBH. 5,7033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7033) [6,5606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5606)
+[MBH. 5,7033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7033) = [≈Вульг. 5.178.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A178_S006) = ≈крит. 05,177.6a [6,5606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5606) = [≈Вульг. 6.119.23](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S023) = ≈крит. 06,114.22c
 [R. 1,74,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,74,13) [2,89,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,5)
 [R. GORR. 1,26,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,26,19) [76,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,76,15) [7,60,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,60,1)
 [Spr. 4413.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4413)
@@ -77,13 +77,13 @@ versuche nicht mit mir darüber zu reden
   <sub>attested</sub>
 
 **4)** — 4) sprechen: *yadi jñāsyāmi vakṣyāmi ajānanna tu saṃvade*
-[MBH. 13,480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.480) *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
-[4,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.915) *evaṃ samuditastena* angeredet
+[MBH. 13,480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.480) = [≈Вульг. 13.10.49](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A010_S049) = ≈крит. 13,10.43a *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
+[4,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.915) = [≈Вульг. 4.28.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A028_S003) = ≈крит. 04,27.3c *evaṃ samuditastena* angeredet
 [BHĀG. P. 3,24,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,41)
 
 - **RU:** — 4) говорить: *yadi jñāsyāmi vakṣyāmi ajānanna tu saṃvade*
-[MBH. 13,480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.480) *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
-[4,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.915) *evaṃ samuditastena* тот, к кому обратились
+[MBH. 13,480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.480) = [≈Вульг. 13.10.49](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A010_S049) = ≈крит. 13,10.43a *bhīṣmaḥsamavadattatra giraṃ sādhubhirarcitām*
+[4,915.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.915) = [≈Вульг. 4.28.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A028_S003) = ≈крит. 04,27.3c *evaṃ samuditastena* тот, к кому обратились
 [BHĀG. P. 3,24,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,41)
   <sub>attested</sub>
 
@@ -110,12 +110,12 @@ versuche nicht mit mir darüber zu reden
 **caus-2)** — 2) sich über Etwas einigen, einstimmen: *saṃvādayanniva*
 [KATHĀS. 107,79.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,79) *saṃvādyatāṃ tatsarveṣām*
 [50,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,166) *saṃvādita* worüber man sich geeinigt hat
-[MBH. 1,7931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7931)
+[MBH. 1,7931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7931) = [≈Вульг. 1.217.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U15_A217_S001) = ≈крит. 01,209.1a
 
-- **RU:** — 2) договариваться о чём-л., согласовывать: *saṃvādayanniva*
+- **RU:** — 2) договариваться о чем-л., согласовывать: *saṃvādayanniva*
 [KATHĀS. 107,79.](https://sanskrit-lexicon-scans.github.io/kss/index.html?107,79) *saṃvādyatāṃ tatsarveṣām*
-[50,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,166) *saṃvādita* то, о чём договорились
-[MBH. 1,7931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7931)
+[50,166.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,166) *saṃvādita* то, о чем договорились
+[MBH. 1,7931.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7931) = [≈Вульг. 1.217.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U15_A217_S001) = ≈крит. 01,209.1a
   <sub>attested</sub>
 
 **caus-3)** — 3) zutreffend angeben: *saṃvādya rūpasaṃkhyādīn*
@@ -133,13 +133,13 @@ versuche nicht mit mir darüber zu reden
   <sub>attested</sub>
 
 **caus-5)** — 5) ertönen lassen (ein musikalisches Instrument): *tūryāṇi*
-[MBH. 1,7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7056) *vāditrāṇi*
-[7909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7909) *vīṇām*
+[MBH. 1,7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7056) = [≈Вульг. 1.186.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A186_S010) = ≈крит. 01,177.10a *vāditrāṇi*
+[7909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7909) = [≈Вульг. 1.216.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U15_A216_S002) = ≈крит. 01,208.2c *vīṇām*
 [KATHĀS. 21,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,4)
 
 - **RU:** — 5) заставлять звучать (музыкальный инструмент): *tūryāṇi*
-[MBH. 1,7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7056) *vāditrāṇi*
-[7909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7909) *vīṇām*
+[MBH. 1,7056.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7056) = [≈Вульг. 1.186.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A186_S010) = ≈крит. 01,177.10a *vāditrāṇi*
+[7909.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7909) = [≈Вульг. 1.216.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U15_A216_S002) = ≈крит. 01,208.2c *vīṇām*
 [KATHĀS. 21,4.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,4)
   <sub>attested</sub>
 

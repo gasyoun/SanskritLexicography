@@ -10,7 +10,7 @@
 
 **5)** — 5〉 *na me vairo nivasate* [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) fehlerhaft für *na me vairaṃ pravasati*.
 
-- **RU:** 5) *na me vairo nivasate* [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) ошибочно вместо *na me vairaṃ pravasati*.
+- **RU:** 5) *na me vairo nivasate* [HARIV. 6049](https://sanskrit-lexicon-scans.github.io/hariv?6049) ошибочно вм. *na me vairaṃ pravasati*.
   <sub>attested</sub>
 
 **main)** — Caus.
@@ -20,7 +20,7 @@
 
 **1)** — 1〉 verweilen lassen, beherbergen, aufnehmen (in seinem Hause).
 
-- **RU:** 1) давать пристанище, приютить, принимать (в своём доме).
+- **RU:** 1) давать пристанище, приютить, принимать (в своем доме).
   <sub>attested</sub>
 
 **2)** — 2〉 bewohnt machen, bevölkern.
@@ -47,7 +47,7 @@
 — 1〉 zusammen wohnen, — leben mit (Instr.). *samāgame* in Verein mit (Gen.) leben.
 
 - **RU:** — С *saṃni*
-1) жить вместе, — совместно с (Instr.). *samāgame* жить сообща с (Gen.).
+1) жить вместе, — совместно с (Ins.). *samāgame* жить сообща с (Gen.).
   <sub>attested</sub>
 
 **2)** — 2〉 wohnen in (Loc.).
@@ -55,9 +55,9 @@
 - **RU:** 2) обитать в (Loc.).
   <sub>attested</sub>
 
-**main)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18).
+**main)** — Mit *nis* ausleben, zu Ende leben; mit dem Acc. *vāsam* oder *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18) = [≈Вульг. 3.1.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A001_S025) = ≈крит. 03,1.23a.
 
-- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18).
+- **RU:** — С *nis*: дожить до конца, прожить до конца; с Acc. *vāsam* или *˚vāsam* [MBH. 3,25,18](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,25,18) = [≈Вульг. 3.1.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A001_S025) = ≈крит. 03,1.23a.
   <sub>attested</sub>
 
 **main)** — Caus.
@@ -84,7 +84,7 @@
 — 1〉 verweilen, leben mit (Instr.). *saṃsargitayā* verkehren mit (Acc.).
 
 - **RU:** — С *pari*
-1) пребывать, жить с (Instr.). *saṃsargitayā* общаться с (Acc.).
+1) пребывать, жить с (Ins.). *saṃsargitayā* общаться с (Acc.).
   <sub>attested</sub>
 
 **2)** — 2〉 *paryuṣita*
@@ -104,7 +104,7 @@
 
 **2c)** — c〉 von einem Worte so v. a. nicht zur Zeit gelöst.
 
-- **RU:** c) о слове так преим.: не разрешённый вовремя.
+- **RU:** c) о слове так преим.: не разрешенный вовремя.
   <sub>attested</sub>
 
 **main)** — Caus. über Nacht stehen lassen.
@@ -116,12 +116,12 @@
 — 1〉 (für die Nacht seine Wohnung verlassen) verreisen, sich entfernen.
 
 - **RU:** — С *pra*
-1) (покинуть на ночь своё жилище) отправляться в путь, удаляться.
+1) (покинуть на ночь свое жилище) отправляться в путь, удаляться.
   <sub>attested</sub>
 
-**2)** — 2〉 verschwinden, aufhören, nicht mehr vorhanden sein [HARIV. 2,50,84. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?2). Von der Sonne so v. a. nicht mehr scheinen.
+**2)** — 2〉 verschwinden, aufhören, nicht mehr vorhanden sein [HARIV. 2,50,84.](https://sanskrit-lexicon-scans.github.io/hariv?2) [HARIV. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?3). Von der Sonne so v. a. nicht mehr scheinen.
 
-- **RU:** 2) исчезать, прекращаться, переставать существовать [HARIV. 2,50,84. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?2). О солнце так преим.: более не светить.
+- **RU:** 2) исчезать, прекращаться, переставать существовать [HARIV. 2,50,84.](https://sanskrit-lexicon-scans.github.io/hariv?2) [HARIV. 3,2,30](https://sanskrit-lexicon-scans.github.io/hariv?3). О солнце так преим.: более не светить.
   <sub>attested</sub>
 
 **3)** — 3〉 verweilten, sich aufhalten.
@@ -146,7 +146,7 @@
 
 **5b)** — b〉 verschwunden, verwischt; heliakisch untergegangen.
 
-- **RU:** b) исчезнувший, стёршийся; закатившийся гелиактически (о светиле).
+- **RU:** b) исчезнувший, стершийся; закатившийся гелиактически (о светиле).
   <sub>attested</sub>
 
 **5c)** — c〉 heimgegangen, gestorben [HARṢAC. 153,9].
@@ -156,7 +156,7 @@
 
 **main)** — Caus. entfernen, Jmd aus seinem Wohnort vertreiben, verbannen. — *˚pravāsitaḥ* [KATHĀS. 73,22](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,22) fehlerhaft für *˚pravāsataḥ*.
 
-- **RU:** — Caus. удалять, изгонять кого-либо из места жительства, ссылать. — *˚pravāsitaḥ* [KATHĀS. 73,22](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,22) ошибочно вместо *˚pravāsataḥ*.
+- **RU:** — Caus. удалять, изгонять кого-либо из места жительства, ссылать. — *˚pravāsitaḥ* [KATHĀS. 73,22](https://sanskrit-lexicon-scans.github.io/kss/index.html?73,22) ошибочно вм. *˚pravāsataḥ*.
   <sub>attested</sub>
 
 **main)** — Desid. *pravivatsati* zu verreisen beabsichtigen [ŚIŚ. 15,120 (86)], im Begriff stehen sich wegzubegeben aus (Abl.) [CARAKA. 5,12] (*pravivatsatām* zu lesen).
@@ -188,7 +188,7 @@
 
 **3)** — 3〉 *vipravasita* _n._ impers. Loc. nachdem der und der (Instr.) fortgegangen war.
 
-- **RU:** 3) *vipravasita* _n._ impers. Loc. после того как такой-то (Instr.) удалился.
+- **RU:** 3) *vipravasita* _n._ impers. Loc. после того как такой-то (Ins.) удалился.
   <sub>attested</sub>
 
 **1)** — Caus.
@@ -210,7 +210,7 @@
 
 **main)** — Mit *prati* seinen Wohnsitz —, seinen Standort haben.
 
-- **RU:** — С *prati*: иметь своё местожительство —, своё местопребывание.
+- **RU:** — С *prati*: иметь свое местожительство —, свое местопребывание.
   <sub>attested</sub>
 
 **main)** — Caus.
@@ -247,7 +247,7 @@
 
 **4)** — 4〉 *vi-vatsyantaḥ* [ĀŚV. ŚR. 11,5,1] fehlerhaft für *vi-vartsyantaḥ*.
 
-- **RU:** 4) *vi-vatsyantaḥ* [ĀŚV. ŚR. 11,5,1] ошибочно вместо *vi-vartsyantaḥ*.
+- **RU:** 4) *vi-vatsyantaḥ* [ĀŚV. ŚR. 11,5,1] ошибочно вм. *vi-vartsyantaḥ*.
   <sub>attested</sub>
 
 **5)** — 5〉 *vyuṣita*
@@ -267,7 +267,7 @@
 
 **5c)** — c〉 am Ende eines Comp. bewohnt von.
 
-- **RU:** c) в конце Comp. заселённый .
+- **RU:** c) в конце Comp. заселенный .
   <sub>attested</sub>
 
 **6)** — 6〉 *vyuṣṭa*
@@ -299,14 +299,14 @@
 
 **main)** — Mit *nirvi*, *nirvyuṣita* zugebracht, verlebt.
 
-- **RU:** — С *nirvi*, *nirvyuṣita* проведённый, прожитый.
+- **RU:** — С *nirvi*, *nirvyuṣita* проведенный, прожитый.
   <sub>attested</sub>
 
 **1)** — Mit *sam*
 — 1〉 Act. Med. sich beisammen aufhalten, zusammen wohnen, mit Jmd verkehren; die Person im Instr. im Instr.
 
 - **RU:** — С *sam*
-1) Act. Med. находиться вместе, жить сообща, общаться с кем-либо; лицо в Instr. в Instr.
+1) Act. Med. находиться вместе, жить сообща, общаться с кем-либо; лицо в Ins. в Ins.
   <sub>attested</sub>
 
 **1-cont)** — Mit *saha* oder im Acc.
@@ -321,7 +321,7 @@
 
 **3)** — 3〉 sich aufhalten, seinen Wohnsitz haben, leben an einem Orte (Loc.) [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
 
-- **RU:** 3) пребывать, иметь своё местожительство, жить в каком-либо месте (Loc.) [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
+- **RU:** 3) пребывать, иметь свое местожительство, жить в каком-либо месте (Loc.) [Spr. 7843](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7843).
   <sub>attested</sub>
 
 **4)** — 4〉 zubringen, mit Acc. der Zeit.
@@ -338,7 +338,7 @@
 — 1〉 zusammen wohnen lassen, zusammenbringen, — mit (Instr. oder Instr. mit *saha*).
 
 - **RU:** — Caus.
-1) давать жить вместе, сводить, — с (Instr. или Instr. с *saha*).
+1) давать жить вместе, сводить, — с (Ins. или Ins. с *saha*).
   <sub>attested</sub>
 
 **2)** — 2〉 beherbergen.

@@ -182,7 +182,7 @@
 — 1〉 Med. eines Sinnes —, einträchtig sein, sich einigen, sich vertragen mit (Loc., *Instr. oder *Acc.).
 
 - **RU:** — С *sam*
-— 1〉 Med. быть единодушным —, согласным, приходить к согласию, ладить с (Loc., *Instr. или *Acc.).
+— 1〉 Med. быть единодушным —, согласным, приходить к согласию, ладить с (Loc., *Ins. или *Acc.).
   <sub>attested</sub>
 
 **Mit T65 (2))** — 2〉 Med. Jmd (Dat.) gehorchen [AIT. BR. 8,25](https://sanskrit-lexicon-scans.github.io/aitbr/app1?8,25).

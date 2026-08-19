@@ -10,7 +10,7 @@
 
 **PW1_2)** — 2〉 einsaugen. so v. a. sich zu eigen machen, geniessen: so v. a. sich zu eigen machen, geniessen: mit Augen, Ohren (Instr.) einsaugen. so v. a. sich laben an. *jagatāṃ matam* der Leute Meinungen einsaugen. so v. a. ablauschen.
 
-- **RU:** — 2〉 всасывать. Так преим. усваивать, наслаждаться; так преим. усваивать, наслаждаться: глазами, ушами (Instr.) всасывать. Так преим. упиваться (чем-л.). *jagatāṃ matam* впитывать мнения людей. Так преим. подслушивать, улавливать на слух.
+- **RU:** — 2〉 всасывать. Так преим. усваивать, наслаждаться; так преим. усваивать, наслаждаться: глазами, ушами (Ins.) всасывать. Так преим. упиваться (чем-л.). *jagatāṃ matam* впитывать мнения людей. Так преим. подслушивать, улавливать на слух.
   <sub>attested</sub>
 
 **PW1_3)** — 3〉 aussaugen. so v. a. erschöpfen (einen Schatz), absorbiren, verschwinden machen.
@@ -40,7 +40,7 @@
 
 **PW1_4a_gamma)** — γ〉 ausgesogen, so v. a. erschöpft (Schatz), absorbirt [KĀD. 257,14].
 
-- **RU:** — γ〉 высосанный, так преим. истощённый (сокровище), поглощённый [KĀD. 257,14].
+- **RU:** — γ〉 высосанный, так преим. истощенный (сокровище), поглощенный [KĀD. 257,14].
   <sub>attested</sub>
 
 **PW1_4b)** — b〉 mit act Bed.
@@ -55,17 +55,17 @@
 
 **PW1_4b_beta)** — β〉 getränkt in Oel eingetaucht (Waffe).
 
-- **RU:** — β〉 пропитанный маслом, погружённый в масло (об оружии).
+- **RU:** — β〉 пропитанный маслом, погруженный в масло (об оружии).
   <sub>attested</sub>
 
-**PW1_4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
+**PW1_4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A049_S007) = ≈крит. 12,49.7a fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
 
-- **RU:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) ошибочно вместо *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) следует соединять с *˚ātmanipītanidraḥ*.
+- **RU:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A049_S007) = ≈крит. 12,49.7a ошибочно вм. *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) следует соединять с *˚ātmanipītanidraḥ*.
   <sub>attested</sub>
 
 **PW1_caus)** — Caus. *pāyayati, ˚te* (*pāpayati* fehlerhaft) tränken, zu trinken geben; mit doppeltem Acc. ([CARAKA. 6,11]) oder mit partitivem Gen. (nur in der älteren Sprache) des Trankes: Jmd (Instr.) saugen lassen an (Acc.) *pāyita*
 
-- **RU:** — Caus. *pāyayati, ˚te* (*pāpayati* ошибочно) поить, давать пить; с двойным Acc. ([CARAKA. 6,11]) или с партитивным Gen. (только в более древнем языке) питья: заставлять кого-л. (Instr.) сосать (Acc.) *pāyita*
+- **RU:** — Caus. *pāyayati, ˚te* (*pāpayati* ошибочно) поить, давать пить; с двойным Acc. ([CARAKA. 6,11]) или с партитивным Gen. (только в более древнем языке) питья: заставлять кого-л. (Ins.) сосать (Acc.) *pāyita*
   <sub>attested</sub>
 
 **PW1_caus_1)** — 1〉 was man zu trinken giebt.
@@ -80,7 +80,7 @@
 
 **PW1_caus_3)** — 3〉 getränkt, so v. a. eingetaucht in (im Comp. vorangehend).
 
-- **RU:** — 3〉 напоенный, так преим. погружённый в (в Comp. — предшествующий).
+- **RU:** — 3〉 напоенный, так преим. погруженный в (в Comp. — предшествующий).
   <sub>attested</sub>
 
 **PW1_desid)** — Desid. *pipāsati* und *pipīṣati* (nur im [ṚV.]) Etwas trinken wollen, durstig sein. *pipāsant* ([ŚĀK. 72](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?72)) und *pipāsita* durstig.
@@ -125,7 +125,7 @@
 
 **PW1_anu_2)** — 2〉 trinken an (Acc.) v. l. *ni*.
 
-- **RU:** — 2〉 прихлёбывать из (Acc.) v. l. *ni*.
+- **RU:** — 2〉 прихлебывать из (Acc.) v. l. *ni*.
   <sub>attested</sub>
 
 **PW1_anu_caus)** — Caus. nachher trinken lassen.
@@ -150,7 +150,7 @@
 
 **PW1_abhi_2)** — 2〉 *abhipīta* getränkt —, erfüllt von (Instr.).
 
-- **RU:** — 2〉 *abhipīta* напоенный, исполненный (Instr.).
+- **RU:** — 2〉 *abhipīta* напоенный, исполненный (Ins.).
   <sub>attested</sub>
 
 **PW1_ava_note)** — Mit *ava* in *avapāna*
@@ -170,12 +170,12 @@
 
 **PW1_A_1)** — 1〉 hineintrinken, einschlürfen, trinken ([57,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57)) aus (Abl.) oder an (Acc.), austrinken, einsaugen, aussaugen, einziehen (Rauch) [CARAKA. 6,20].
 
-- **RU:** — 1〉 пить, поглощая; прихлёбывать; пить ([57,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57)) из (Abl.) или из/у (Acc.), выпивать до дна, всасывать, высасывать, втягивать (дым) [CARAKA. 6,20].
+- **RU:** — 1〉 пить, поглощая; прихлебывать; пить ([57,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?57)) из (Abl.) или из/у (Acc.), выпивать до дна, всасывать, высасывать, втягивать (дым) [CARAKA. 6,20].
   <sub>attested</sub>
 
 **PW1_A_2)** — 2〉 mit Augen, Ohren (Instr.) einsaugen, so v. a. sich laben an. *āpīyatam* so v. a. man höre.
 
-- **RU:** — 2〉 глазами, ушами (Instr.) всасывать, так преим. упиваться (чем-л.). *āpīyatam* так преим. да услышат.
+- **RU:** — 2〉 глазами, ушами (Ins.) всасывать, так преим. упиваться (чем-л.). *āpīyatam* так преим. да услышат.
   <sub>attested</sub>
 
 **PW1_A_3)** — 3〉 absorbiren, verschwinden machen.
@@ -185,7 +185,7 @@
 
 **PW1_A_caus)** — Caus. einschlürfen lassen.
 
-- **RU:** — Caus. давать прихлёбывать.
+- **RU:** — Caus. давать прихлебывать.
   <sub>attested</sub>
 
 **PW1_ud)** — Mit *samā* einsaugen, aussaugen.
@@ -195,7 +195,7 @@
 
 **PW1_upa2_note)** — Mit *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,7) [11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) fehlerhaft für *utpipateḥ* vgl. **5.** *pā*.
 
-- **RU:** — С *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,7) [11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) ошибочно вместо *utpipateḥ* ср. **5.** *pā*.
+- **RU:** — С *ud*, *utpibante* [ŚAT. BR. 5,2,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,7) [11](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,4,11) ошибочно вм. *utpipateḥ* ср. **5.** *pā*.
   <sub>attested</sub>
 
 **PW1_pra_note)** — Mit *anūd* Med. herfallen über, sich stürzen auf (Acc.) [ŚAT. BR. 3,7,1,29. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,7,1,29) Also gleichfalls Verwechselung mit **5.** *pā*
@@ -215,7 +215,7 @@
 
 **PW1_vi_1)** — 1〉 hineintrinken, einschlürfen, trinken an.
 
-- **RU:** — 1〉 пить, всасывая; прихлёбывать.
+- **RU:** — 1〉 пить, всасывая; прихлебывать.
   <sub>attested</sub>
 
 **PW1_vi_2)** — 2〉 einsaugen. so v. a. absorbiren verschwinden machen [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32). (*˚ātmanipīta˚* zu verbinden).
@@ -225,7 +225,7 @@
 
 **PW1_vi_caus)** — Caus. einschlürfen lassen.
 
-- **RU:** — Caus. давать прихлёбывать.
+- **RU:** — Caus. давать прихлебывать.
   <sub>attested</sub>
 
 **PW1_sam)** — Mit *vini* begierig einsaugen, sich laben an [PRASANNAR. 139,13].
@@ -235,7 +235,7 @@
 
 **PW1_nis)** — Mit *nis* trinken aus (Abl.) austrinken, aussaugen. *niṣyīta* erschöpft [CARAKA. 1,3].
 
-- **RU:** — С *nis* пить из (Abl.), выпивать до дна, высасывать. *niṣyīta* истощённый [CARAKA. 1,3].
+- **RU:** — С *nis* пить из (Abl.), выпивать до дна, высасывать. *niṣyīta* истощенный [CARAKA. 1,3].
   <sub>attested</sub>
 
 **PW1_pari)** — Mit *pari*
@@ -265,7 +265,7 @@
 
 **PW1_prati)** — Mit *pra* sich anʼs Trinken machen trinken, einschlürfen.
 
-- **RU:** — С *pra* приниматься за питьё, пить, прихлёбывать.
+- **RU:** — С *pra* приниматься за питье, пить, прихлебывать.
   <sub>attested</sub>
 
 **PW1_prati_caus)** — Mit *anupra* Act. der Reihe nach Etwas trinken, Med. nach Jmd (Acc.) trinken.
@@ -290,7 +290,7 @@
 
 **PW1_sam2_2)** — 2〉 heraus trinken aus (Abl.) [VS. 19,73](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,73).
 
-- **RU:** — 2〉 вытягивать питьё из (Abl.) [VS. 19,73](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,73).
+- **RU:** — 2〉 вытягивать питье из (Abl.) [VS. 19,73](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,73).
   <sub>attested</sub>
 
 **PW1_sam_A)** — Mit *sam* Act. zusammen hineintrinken Med. zusammen trinken.
@@ -330,7 +330,7 @@
 
 **PW3_vi_note)** — Mit *anu*, *˚pāhi* zu [Spr. 2597](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2597) wohl nur fehlerhaft für *˚yāhi*.
 
-- **RU:** — С *anu*, *˚pāhi* к [Spr. 2597](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2597) — вероятно, лишь ошибочно вместо *˚yāhi*.
+- **RU:** — С *anu*, *˚pāhi* к [Spr. 2597](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2597) — вероятно, лишь ошибочно вм. *˚yāhi*.
   <sub>attested</sub>
 
 **PW3_anu)** — Mit *abhi*

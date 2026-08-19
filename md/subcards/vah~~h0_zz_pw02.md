@@ -15,12 +15,12 @@
 
 **5)** — 5〉 Pass. getragen werden von, so v. a. reiten auf (Instr.).
 
-- **RU:** 5) Pass. быть носимым кем-л., чем-л., отсюда преим. ехать верхом на (Instr.).
+- **RU:** 5) Pass. быть носимым кем-л., чем-л., отсюда преим. ехать верхом на (Ins.).
   <sub>attested</sub>
 
 **6)** — 6〉 entlang fahren mit der Hand (Instr.) über, streichen; mit Acc. *saṃvavāhatus* (!).
 
-- **RU:** 6) проводить рукой (Instr.) вдоль чего-л., по чему-л., поглаживать; с Acc. *saṃvavāhatus* (!).
+- **RU:** 6) проводить рукой (Ins.) вдоль чего-л., по чему-л., поглаживать; с Acc. *saṃvavāhatus* (!).
   <sub>attested</sub>
 
 **7)** — 7〉 an den Tag legen, äussern.

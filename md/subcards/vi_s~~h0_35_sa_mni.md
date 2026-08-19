@@ -14,13 +14,13 @@
 
 **2a)** — 2) partic. *˚viṣṭa*
  a) gelagert, Halt gemacht habend
-[MBH. 5,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5188)
+[MBH. 5,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5188) = [≈Вульг. 5.155.25](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A155_S025) = ≈крит. 05,152.22c
 [R. 5,74,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,25) [6,7,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,20)
 [KATHĀS. 59,75.](https://sanskrit-lexicon-scans.github.io/kss/index.html?59,75)
 
 - **RU:** — 2) partic. *˚viṣṭa*
  a) расположившийся лагерем, сделавший привал
-[MBH. 5,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5188)
+[MBH. 5,5188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5188) = [≈Вульг. 5.155.25](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A155_S025) = ≈крит. 05,152.22c
 [R. 5,74,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,25) [6,7,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,20)
 [KATHĀS. 59,75.](https://sanskrit-lexicon-scans.github.io/kss/index.html?59,75)
   <sub>attested</sub>
@@ -36,7 +36,7 @@
 [P. 5,3,56](https://ashtadhyayi.com/sutraani/5/3/56), Schol. *a˚*
 [R. 2,21,57.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,57)
 
-- **RU:** — b) покоящийся в —, заключённый в —, содержащийся в *aṅguṣṭhamātraḥ puruṣo 'ntarātmā sadā janānāṃ hṛdaye saṃniviṣṭaḥ*
+- **RU:** — b) покоящийся в —, заключенный в —, содержащийся в *aṅguṣṭhamātraḥ puruṣo 'ntarātmā sadā janānāṃ hṛdaye saṃniviṣṭaḥ*
 [KAṬHOP. 6,17.]
 [ŚVETĀŚV. UP. 3,13. 4,17.]
 [BHAG. 15,15.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?15,15)
@@ -49,12 +49,12 @@
   <sub>attested</sub>
 
 **2c)** — c) sitzend
-[MBH. 2,2000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2000)
+[MBH. 2,2000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2000) = [≈Вульг. 2.58.9](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A058_S009) = ≈крит. 02,52.9a
 [HARIV. 891.](https://sanskrit-lexicon-scans.github.io/hariv?891) *saṃniviṣṭodgama* als Umschreibung von *utthāna*
 [AK. 3,4,18,120.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,18,120)
 
 - **RU:** — c) сидящий
-[MBH. 2,2000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2000)
+[MBH. 2,2000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2000) = [≈Вульг. 2.58.9](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A058_S009) = ≈крит. 02,52.9a
 [HARIV. 891.](https://sanskrit-lexicon-scans.github.io/hariv?891) *saṃniviṣṭodgama* как описание *utthāna*
 [AK. 3,4,18,120.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,18,120)
   <sub>attested</sub>
@@ -62,16 +62,16 @@
 **2d)** — d) steckend —, gehängt an, angebracht: *˚karṇika*
 [SUŚR. 2,196,17. 297,4.]
 
-- **RU:** — d) воткнутый в —, прикреплённый к, прицепленный: *˚karṇika*
+- **RU:** — d) воткнутый в —, прикрепленный к, прицепленный: *˚karṇika*
 [SUŚR. 2,196,17. 297,4.]
   <sub>attested</sub>
 
 **2e)** — e) sich befindend auf: *satpathe*
-[MBH. 3,13788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13788) *sanātane vartmani*
+[MBH. 3,13788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13788) = [≈Вульг. 3.207.88](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A207_S088) = ≈крит. 03,198.84a *sanātane vartmani*
 [R. 5,11,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,11,22)
 
 - **RU:** — e) находящийся на: *satpathe*
-[MBH. 3,13788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13788) *sanātane vartmani*
+[MBH. 3,13788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13788) = [≈Вульг. 3.207.88](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A207_S088) = ≈крит. 03,198.84a *sanātane vartmani*
 [R. 5,11,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,11,22)
   <sub>attested</sub>
 
@@ -109,17 +109,17 @@
   <sub>attested</sub>
 
 **verb.3)** — 3) aufstellen: Truppen
-[MBH. 6,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2407) sich lagern lassen: *balaṃ dvārakāyām*
-[3,665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.665) [R. 2,85,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,15) ([92,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,92,24) [GORR.]). [KATHĀS. 46,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,48) [103,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,103)
+[MBH. 6,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2407) = [≈Вульг. 6.56.4](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A056_S004) = ≈крит. 06,52.4a sich lagern lassen: *balaṃ dvārakāyām*
+[3,665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.665) = [≈Вульг. 3.16.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A016_S007) = ≈крит. 03,17.7a [R. 2,85,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,15) ([92,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,92,24) [GORR.]). [KATHĀS. 46,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,48) [103,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,103)
 
 - **RU:** — 3) выставлять: войска
-[MBH. 6,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2407) давать расположиться лагерем: *balaṃ dvārakāyām*
-[3,665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.665) [R. 2,85,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,15) ([92,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,92,24) [GORR.]). [KATHĀS. 46,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,48) [103,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,103)
+[MBH. 6,2407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2407) = [≈Вульг. 6.56.4](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A056_S004) = ≈крит. 06,52.4a давать расположиться лагерем: *balaṃ dvārakāyām*
+[3,665.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.665) = [≈Вульг. 3.16.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A016_S007) = ≈крит. 03,17.7a [R. 2,85,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,85,15) ([92,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,92,24) [GORR.]). [KATHĀS. 46,48.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,48) [103,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?103,103)
   <sub>attested</sub>
 
 **verb.4)** — 4) einbringen, hineinstecken, thun in: *apsu śarīram*
 [M. 11,202](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,202) (*saṃniveśya* bei
-[LOIS.] zu lesen). [MBH. 13,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.237) [SUŚR. 2,55,16.] *teṣāṃ tvavayavān — saṃniveśyātmamātrāsu*
+[LOIS.] zu lesen). [MBH. 13,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.237) = [≈Вульг. 13.4.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A004_S038) = ≈крит. 13,4.37c [SUŚR. 2,55,16.] *teṣāṃ tvavayavān — saṃniveśyātmamātrāsu*
 [M. 1,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,16) *khaṃ kheṣu*
 [12,120.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,120) *hṛdīndriyāṇi*
 [ŚVETĀŚV. UP. 2,8.]
@@ -128,7 +128,7 @@
 
 - **RU:** — 4) вносить, вставлять, вкладывать в: *apsu śarīram*
 [M. 11,202](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,202) (*saṃniveśya* при
-[LOIS.] следует читать). [MBH. 13,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.237) [SUŚR. 2,55,16.] *teṣāṃ tvavayavān — saṃniveśyātmamātrāsu*
+[LOIS.] следует читать). [MBH. 13,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.237) = [≈Вульг. 13.4.38](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A004_S038) = ≈крит. 13,4.37c [SUŚR. 2,55,16.] *teṣāṃ tvavayavān — saṃniveśyātmamātrāsu*
 [M. 1,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,16) *khaṃ kheṣu*
 [12,120.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,120) *hṛdīndriyāṇi*
 [ŚVETĀŚV. UP. 2,8.]
@@ -158,12 +158,12 @@
   <sub>attested</sub>
 
 **verb.8)** — 8) Jmd einsetzen in: *svarājye*
-[MBH. 5,4978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4978)
+[MBH. 5,4978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4978) = [≈Вульг. 5.149.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A149_S014) = ≈крит. 05,147.14a
 [R. 7,54,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,54,13) [100,18.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,100,18) *tatpade cirakāṅkṣite dhātoḥ sthāna ivādeśaṃ sugrīvaṃ saṃnyaveśayat*
 [RAGH. 12,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,58)
 
 - **RU:** — 8) вводить кого-либо в, назначать на: *svarājye*
-[MBH. 5,4978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4978)
+[MBH. 5,4978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4978) = [≈Вульг. 5.149.14](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A149_S014) = ≈крит. 05,147.14a
 [R. 7,54,13.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,54,13) [100,18.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,100,18) *tatpade cirakāṅkṣite dhātoḥ sthāna ivādeśaṃ sugrīvaṃ saṃnyaveśayat*
 [RAGH. 12,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,58)
   <sub>attested</sub>

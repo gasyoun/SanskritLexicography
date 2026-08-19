@@ -13,7 +13,7 @@
 [YĀJÑ. 1,121.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,121)
 [MĀRK. P. 28,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?28,21) *dharmārthakāmānsve kāle yathāśakti na hāpayet*
 [YĀJÑ. 1,115.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,115) *ahāpayitvā pāṇḍavārtham*
-[MBH. 5,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.856) [3326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3326) *ahāpayankālam* keine Zeit verlierend, nicht säumend
+[MBH. 5,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.856) = [≈Вульг. 5.29.48](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A029_S048) = ≈крит. 05,29.41c [3326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3326) = [≈Вульг. 5.94.40](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A094_S040) = ≈крит. 05,92.39a *ahāpayankālam* keine Zeit verlierend, nicht säumend
 [KĀM. NĪTIS. 5,64.] *lokavādānna hāpayet*
 [MĀRK. P. 58,67.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?58,67)
 
@@ -22,18 +22,18 @@
 [YĀJÑ. 1,121.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,121)
 [MĀRK. P. 28,21.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?28,21) *dharmārthakāmānsve kāle yathāśakti na hāpayet*
 [YĀJÑ. 1,115.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,115) *ahāpayitvā pāṇḍavārtham*
-[MBH. 5,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.856) [3326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3326) *ahāpayankālam* не теряя времени, не медля
+[MBH. 5,856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.856) = [≈Вульг. 5.29.48](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A029_S048) = ≈крит. 05,29.41c [3326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3326) = [≈Вульг. 5.94.40](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A094_S040) = ≈крит. 05,92.39a *ahāpayankālam* не теряя времени, не медля
 [KĀM. NĪTIS. 5,64.] *lokavādānna hāpayet*
 [MĀRK. P. 58,67.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?58,67)
   <sub>attested</sub>
 
 **caus-2)** — 2) es fehlen lassen an: *śaktiṃ na hāpayiṣyanti*
-[MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
+[MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463) = [≈Вульг. 3.37.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A037_S007) = ≈крит. 03,38.7a
 [Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265 "Spr. (II) 5265: yaddūraṃ yaddurārādhyaṃ yaccādūre vyavasthitam | tatsarvaṃ tapasā sādhyaṃ tapo hi duratikramam || — (4824.) Was fern ist, was schwer zu bezwingen ist und was in der Nähe steht, Alles muss man durch Kasteiungen zu Stande bringen: den Kasteiungen entgeht man ja nicht leicht.") *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
 
 - **RU:** — 2) не проявлять, не давать чего-л., упускать: *śaktiṃ na hāpayiṣyanti*
-[MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463)
+[MBH. 3,1463.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1463) = [≈Вульг. 3.37.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A037_S007) = ≈крит. 03,38.7a
 [Spr. (II) 5265.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5265 "Spr. (II) 5265: yaddūraṃ yaddurārādhyaṃ yaccādūre vyavasthitam | tatsarvaṃ tapasā sādhyaṃ tapo hi duratikramam || — (4824.) Was fern ist, was schwer zu bezwingen ist und was in der Nähe steht, Alles muss man durch Kasteiungen zu Stande bringen: den Kasteiungen entgeht man ja nicht leicht.") *svapauruṣamahāpayan*
 [1003.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1003)
   <sub>attested</sub>

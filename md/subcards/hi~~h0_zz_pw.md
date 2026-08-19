@@ -235,7 +235,7 @@
 
 **PW-sam-2)** — 2〉 absenden. *saṃprahitavān* [R. ed. Bomb. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
 
-- **RU:** — 2〉 отправлять. *saṃprahitavān* [R. ed. Bomb. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
+- **RU:** — 2〉 отправлять. *saṃprahitavān* [R. Бомбейская ред. 4,32,12](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?4,32,12).
   <sub>attested</sub>
 
 **PW-mit-su)** — Mit *sam*

@@ -11,7 +11,7 @@
 [ŚAT. BR. 4,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,7) [10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,10)
 [KĀṬH. 13,2. 27,3.] *tato lokānvivātyasau (vāyuḥ)*
 [MBH. 12,13379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13379) nach verschiedenen Richtungen hin wehen: *viṣvagvātāśca vivavuḥ*
-[6,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.732) *vāyurvivāti hṛdayāni harannarāṇām*
+[6,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.732) = [≈Вульг. 6.19.38](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A019_S038) = ≈крит. 06,19.38a *vāyurvivāti hṛdayāni harannarāṇām*
 [ṚT. 6,22.]
 
 - **RU:** — *vi* развевать, разгонять дуновением; продувать насквозь: *vi vāta vāhi yadrapaḥ*
@@ -22,6 +22,6 @@
 [ŚAT. BR. 4,1,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,7) [10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,10)
 [KĀṬH. 13,2. 27,3.] *tato lokānvivātyasau (vāyuḥ)*
 [MBH. 12,13379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13379) веять в разные стороны: *viṣvagvātāśca vivavuḥ*
-[6,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.732) *vāyurvivāti hṛdayāni harannarāṇām*
+[6,732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.732) = [≈Вульг. 6.19.38](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A019_S038) = ≈крит. 06,19.38a *vāyurvivāti hṛdayāni harannarāṇām*
 [ṚT. 6,22.]
   <sub>attested</sub>

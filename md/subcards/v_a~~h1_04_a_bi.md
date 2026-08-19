@@ -9,13 +9,13 @@
 [ŚAT. BR. 4,1,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,6)
 [KĀṬH. 31,3.] *sukho vāto 'bhivāti mām*
 [MBH. 4,2238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2238) *purābhivāti māruto yamasya yaḥ puraḥsaraḥ*
-[12,12080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12080)
+[12,12080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12080) = [≈Вульг. 12.321.37](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A321_S037) = ≈крит. 12,309.36c
 
-- **RU:** — *abhi* «обвевать, навевать (ветром в сторону кого-л.)»: *śaṃ na iṣiro abhi vātu vātaḥ*
+- **RU:** — *abhi* обвевать, навевать (ветром в сторону кого-л.): *śaṃ na iṣiro abhi vātu vātaḥ*
 [ṚV. 7,35,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.035.html#rv07.035.04) [10,169,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.169.html#rv10.169.01)
 *pūtirenānabhivavau*
 [ŚAT. BR. 4,1,3,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,3,6)
 [KĀṬH. 31,3.] *sukho vāto 'bhivāti mām*
 [MBH. 4,2238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2238) *purābhivāti māruto yamasya yaḥ puraḥsaraḥ*
-[12,12080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12080)
+[12,12080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12080) = [≈Вульг. 12.321.37](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A321_S037) = ≈крит. 12,309.36c
   <sub>attested</sub>

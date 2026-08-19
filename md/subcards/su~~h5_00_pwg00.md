@@ -69,18 +69,18 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 *su veda*
 [KENOP. 9.] *sūrmī jvalantīṃ svāśliṣyet*
 [M. 11,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,103) *su virājate sma*
-[MBH. 4,2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2089) *svanuyāsyanti*
-[8,1321.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1321) *su śakyante*
+[MBH. 4,2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2089) = [≈Вульг. 4.65.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A065_S003) = ≈крит. 04,60.3c *svanuyāsyanti*
+[8,1321.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1321) = [≈Вульг. 8.31.72](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A031_S072) = ≈крит. 08,22.60c *su śakyante*
 [R. 2,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,4) *su samīkṣyatām*
-[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402) *su saṃdadhīta*
+[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402 "Spr. (II) 1402: ekānte sukhamāsyatāṃ paratare cetaḥ samādhīyatāṃ prāṇātmā susamīkṣyatāṃ jagadidaṃ tadvyāpitaṃ dṛśyatām | prākkarma pravilopyatāṃ citibalānnāpyuttare ś… — (3836.) Man fühle sich behaglich an einsamem Orte, richte seinen Geist auf das Höhere, denke fleissig an die Allseele, sehe diese Welt als von ihr erfüllt an, gebe durch die Macht des Geistes ein früheres Werk auf und kl…") *su saṃdadhīta*
 [1961](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1961), v. l. *su śobhante*
 [4157.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4157) *svanuṣṭhīyatām*
 [6275.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6275) *svaśikṣayat*
-[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) — [MBH. 3,14392](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14392) und [7,8603](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8603) hat die [ed. Bomb.] *tu* und *hi* st. *su* . Vor einem absol.
-[MBH. 7,5783](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5783) (*so 'bhidrutya* st. *svabhidrutya* [ed. Bomb.]). *vicintya*
+[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) — [MBH. 3,14392](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14392) = [≈Вульг. 3.228.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A228_S006) = ≈крит. 03,217.5c und [7,8603](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8603) = [≈Вульг. 7.188.30](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U07_A188_S030) = ≈крит. 07,163.26c hat die [ed. Bomb.] *tu* und *hi* st. *su* . Vor einem absol.
+[MBH. 7,5783](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5783) = [≈Вульг. 7.139.92](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A139_S092) = ≈крит. 07,114.67c (*so 'bhidrutya* st. *svabhidrutya* [ed. Bomb.]). *vicintya*
 [MṚCCH. 103,16.] *baddhvā*
 [176,1.] *cintya* und *vicārya*
-[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100) *snātvā*
+[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100 "Spr. (II) 7100: sujīrṇamannaṃ suvicakṣaṇaḥ sutaḥ suśāsitā strī nṛpatiḥ susevitaḥ | sucintya coktaṃ suvicārya yatkṛtaṃ sudīrghakāle 'pi na yāti vikriyām || — (3266.) Wohlverdaute Speise, ein wohlerfahrener Sohn, eine wohlgezogene Gattin, ein wohlbedienter Fürst, eine wohlbedachte Rede und eine wohlüberlegte Handlung halten wohl gar lange Stand.") *snātvā*
 [WEBER, KṚṢṆAJ. 291.]
 
 - **RU:** 1) самостоятельно; никогда в начале стиха; в
@@ -124,61 +124,61 @@ zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57) [VOP. 1,8.](https://san
 *su veda*
 [KENOP. 9.] *sūrmī jvalantīṃ svāśliṣyet*
 [M. 11,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,103) *su virājate sma*
-[MBH. 4,2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2089) *svanuyāsyanti*
-[8,1321.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1321) *su śakyante*
+[MBH. 4,2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2089) = [≈Вульг. 4.65.3](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A065_S003) = ≈крит. 04,60.3c *svanuyāsyanti*
+[8,1321.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1321) = [≈Вульг. 8.31.72](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A031_S072) = ≈крит. 08,22.60c *su śakyante*
 [R. 2,33,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,4) *su samīkṣyatām*
-[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402) *su saṃdadhīta*
+[Spr. (II) 1402.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1402 "Spr. (II) 1402: ekānte sukhamāsyatāṃ paratare cetaḥ samādhīyatāṃ prāṇātmā susamīkṣyatāṃ jagadidaṃ tadvyāpitaṃ dṛśyatām | prākkarma pravilopyatāṃ citibalānnāpyuttare ś… — (3836.) Man fühle sich behaglich an einsamem Orte, richte seinen Geist auf das Höhere, denke fleissig an die Allseele, sehe diese Welt als von ihr erfüllt an, gebe durch die Macht des Geistes ein früheres Werk auf und kl…") *su saṃdadhīta*
 [1961](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1961), v. l. *su śobhante*
 [4157.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4157) *svanuṣṭhīyatām*
 [6275.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6275) *svaśikṣayat*
-[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) — [MBH. 3,14392](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14392) und [7,8603](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8603) hat die [ed. Bomb.] *tu* und *hi* вместо *su* . Перед absol.
-[MBH. 7,5783](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5783) (*so 'bhidrutya* вместо *svabhidrutya* [ed. Bomb.]). *vicintya*
+[RĀJA-TAR. 4,51.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,51) — [MBH. 3,14392](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14392) = [≈Вульг. 3.228.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A228_S006) = ≈крит. 03,217.5c и [7,8603](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8603) = [≈Вульг. 7.188.30](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U07_A188_S030) = ≈крит. 07,163.26c hat die [Бомбейская ред.] *tu* и *hi* вместо *su* . Перед absol.
+[MBH. 7,5783](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5783) = [≈Вульг. 7.139.92](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A139_S092) = ≈крит. 07,114.67c (*so 'bhidrutya* вместо *svabhidrutya* [Бомбейская ред.]). *vicintya*
 [MṚCCH. 103,16.] *baddhvā*
-[176,1.] *cintya* und *vicārya*
-[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100) *snātvā*
+[176,1.] *cintya* и *vicārya*
+[Spr. (II) 7100.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7100 "Spr. (II) 7100: sujīrṇamannaṃ suvicakṣaṇaḥ sutaḥ suśāsitā strī nṛpatiḥ susevitaḥ | sucintya coktaṃ suvicārya yatkṛtaṃ sudīrghakāle 'pi na yāti vikriyām || — (3266.) Wohlverdaute Speise, ein wohlerfahrener Sohn, eine wohlgezogene Gattin, ein wohlbedienter Fürst, eine wohlbedachte Rede und eine wohlüberlegte Handlung halten wohl gar lange Stand.") *snātvā*
 [WEBER, KṚṢṆAJ. 291.]
   <sub>attested</sub>
 
 **2)** — 2) am Anfange eines comp. vor Adjectiven und Substantiven (über solche compp. handelt
 [P. 1,4,94.](https://ashtadhyayi.com/sutraani/1/4/94) [2,1,6.](https://ashtadhyayi.com/sutraani/2/1/6) [5,4,69.](https://ashtadhyayi.com/sutraani/5/4/69) [6,2,117. fgg.](https://ashtadhyayi.com/sutraani/6/2/117) [145.](https://ashtadhyayi.com/sutraani/6/2/145) [172. fgg.](https://ashtadhyayi.com/sutraani/6/2/172) [195.](https://ashtadhyayi.com/sutraani/6/2/195) [7,1,68.](https://ashtadhyayi.com/sutraani/7/1/68) [8,1,67. fg.](https://ashtadhyayi.com/sutraani/8/1/67) Vārtt. 4 zu [1,4,60.](https://ashtadhyayi.com/sutraani/1/4/60) Vārtt. 1 der [SAUNĀGA] zu [2,2,18.](https://ashtadhyayi.com/sutraani/2/2/18) [VOP. 6,88](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?6,88)). *svalaṃkṛta* schön geschmückt
-[MBH. 3,2114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2114) *surakṣita* wohl gehütet
-[2144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2144) *suprīta* hocherfreut
+[MBH. 3,2114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2114) = [≈Вульг. 3.54.11](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A054_S011) = ≈крит. 03,51.10c *surakṣita* wohl gehütet
+[2144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2144) = [≈Вульг. 3.55.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S009) = ≈крит. 03,52.8a *suprīta* hocherfreut
 [R. 1,1,76.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,76) *sūcchritadhvaja*
 [2,43,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,10) *susaṃrabdhatara*
 [6,31,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,31,44) *susādhya* gut zu handhaben
 [PAÑCAR. 1,8,33.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,33) *sumanohara* überaus reizend
-[MBH. 1,5976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5976) *sudāruṇa*
+[MBH. 1,5976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5976) = [≈Вульг. 1.152.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S001) = ≈крит. 01,139.1a *sudāruṇa*
 [R. 1,8,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,12) *susūkṣma*
 [VARĀH. BṚH. S. 11,44.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,44) *sunikhilam* ganz vollständig
 [HARIV. 7034.](https://sanskrit-lexicon-scans.github.io/hariv?7034) *suprākṛta* ganz gemein
 [R. GORR. 2,11,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,11,24) *susita* schön weiss
 [PAÑCAR. 3,11,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,11,8) *susugandha* sehr wohlriechend
 [VARĀH. BṚH. S. 48,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,32) *suduṣkara* sehr schwer zu vollbringen
-[MBH. 1,6118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6118) *sunistriṃśa* ein schönes Schwert
-[MBH. 6,5639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5639) *subhakṣya* eine prächtige Speise
-[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113) *susahāya* einen guten Gefährten habend
+[MBH. 1,6118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6118) = [≈Вульг. 1.155.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S026) = крит. — *sunistriṃśa* ein schönes Schwert
+[MBH. 6,5639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5639) = [≈Вульг. 6.119.56](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S056) = ≈крит. 06,114.51a *subhakṣya* eine prächtige Speise
+[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113 "Spr. (II) 7113: subhakṣyāṇi vicitrāṇi śithilāścaiva yoṣitaḥ | eko doṣo videśasya svajātiryadvirudhyate || — (3276.) Prächtige Speisen mannichfacher Art und geschmeidige Frauen") *susahāya* einen guten Gefährten habend
 [M. 7,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,31) *sulalāṭa* eine schöne Stirn habend
 [R. 1,1,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,12) *sukara* (s. d.) 
 leicht auszuführen, *sulabha* (s. d.) leicht zu erlangen, *susaṃtoṣa* (s. d.) leicht zu befriedigen. — *su* verhält sich wohl zum demonstrativen *sa* wie *ku* zum interrogativen *ka* . Vgl. *sutarām* .
 
 - **RU:** — 2) в начале comp. перед прилагательными и существительными (о таких compp. трактует
 [P. 1,4,94.](https://ashtadhyayi.com/sutraani/1/4/94) [2,1,6.](https://ashtadhyayi.com/sutraani/2/1/6) [5,4,69.](https://ashtadhyayi.com/sutraani/5/4/69) [6,2,117. fgg.](https://ashtadhyayi.com/sutraani/6/2/117) [145.](https://ashtadhyayi.com/sutraani/6/2/145) [172. fgg.](https://ashtadhyayi.com/sutraani/6/2/172) [195.](https://ashtadhyayi.com/sutraani/6/2/195) [7,1,68.](https://ashtadhyayi.com/sutraani/7/1/68) [8,1,67. fg.](https://ashtadhyayi.com/sutraani/8/1/67) Вартт. 4 к [1,4,60.](https://ashtadhyayi.com/sutraani/1/4/60) Вартт. 1 в [SAUNĀGA] к [2,2,18.](https://ashtadhyayi.com/sutraani/2/2/18) [VOP. 6,88](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?6,88)). *svalaṃkṛta* прекрасно украшенный
-[MBH. 3,2114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2114) *surakṣita* хорошо оберегаемый
-[2144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2144) *suprīta* весьма обрадованный
+[MBH. 3,2114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2114) = [≈Вульг. 3.54.11](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A054_S011) = ≈крит. 03,51.10c *surakṣita* хорошо оберегаемый
+[2144.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2144) = [≈Вульг. 3.55.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S009) = ≈крит. 03,52.8a *suprīta* весьма обрадованный
 [R. 1,1,76.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,76) *sūcchritadhvaja*
 [2,43,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,43,10) *susaṃrabdhatara*
 [6,31,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,31,44) *susādhya* удобный для обращения
 [PAÑCAR. 1,8,33.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,33) *sumanohara* чрезвычайно привлекательный
-[MBH. 1,5976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5976) *sudāruṇa*
+[MBH. 1,5976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5976) = [≈Вульг. 1.152.1](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S001) = ≈крит. 01,139.1a *sudāruṇa*
 [R. 1,8,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,12) *susūkṣma*
 [VARĀH. BṚH. S. 11,44.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,44) *sunikhilam* совершенно полный
 [HARIV. 7034.](https://sanskrit-lexicon-scans.github.io/hariv?7034) *suprākṛta* совсем вульгарный
 [R. GORR. 2,11,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,11,24) *susita* красиво белый
 [PAÑCAR. 3,11,8.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,11,8) *susugandha* очень благовонный
 [VARĀH. BṚH. S. 48,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,32) *suduṣkara* весьма трудно исполнимый
-[MBH. 1,6118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6118) *sunistriṃśa* прекрасный меч
-[MBH. 6,5639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5639) *subhakṣya* роскошное кушанье
-[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113) *susahāya* имеющий хорошего спутника
+[MBH. 1,6118.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6118) = [≈Вульг. 1.155.26](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S026) = крит. — *sunistriṃśa* прекрасный меч
+[MBH. 6,5639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5639) = [≈Вульг. 6.119.56](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A119_S056) = ≈крит. 06,114.51a *subhakṣya* роскошное кушанье
+[Spr. (II) 7113.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7113 "Spr. (II) 7113: subhakṣyāṇi vicitrāṇi śithilāścaiva yoṣitaḥ | eko doṣo videśasya svajātiryadvirudhyate || — (3276.) Prächtige Speisen mannichfacher Art und geschmeidige Frauen") *susahāya* имеющий хорошего спутника
 [M. 7,31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,31) *sulalāṭa* имеющий красивый лоб
 [R. 1,1,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,12) *sukara* (см.) 
 легко выполнимый, *sulabha* (см.) легко достижимый, *susaṃtoṣa* (см.) легко удовлетворяемый. — *su* относится, по-видимому, к указательному *sa* так же, как *ku* к вопросительному *ka* . ср. *sutarām* .

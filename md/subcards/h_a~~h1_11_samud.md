@@ -4,8 +4,8 @@
 
 
 **samud_1_note)** — *samud*, *samujjahuḥ*
-[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) fehlerhaft für *samujjahruḥ*, wie [ed. Bomb.] liest.
+[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) = [≈Вульг. 8.54.7](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A054_S007) = ≈крит. 08,38.7a fehlerhaft für *samujjahruḥ*, wie [ed. Bomb.] liest.
 
 - **RU:** — *samud*, *samujjahuḥ*
-[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) ошибочно вм. *samujjahruḥ*, как читает [ed. Bomb.].
+[MBH. 8,2611](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2611) = [≈Вульг. 8.54.7](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A054_S007) = ≈крит. 08,38.7a ошибочно вм. *samujjahruḥ*, как читает [Бомбейская ред.].
   <sub>attested</sub>

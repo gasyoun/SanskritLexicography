@@ -7,4 +7,4 @@
 [PAÑCAR. 3,9,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,9,4) vielleicht fehlerhaft für *abhini˚* .
 
 - **RU:** — *atini* caus. предлагать кому-л. что-л.
-[PAÑCAR. 3,9,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,9,4) возможно ошибочно вместо *abhini˚* .
+[PAÑCAR. 3,9,4.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,9,4) возможно ошибочно вм. *abhini˚* .

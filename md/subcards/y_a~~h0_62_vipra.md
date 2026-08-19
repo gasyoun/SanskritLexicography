@@ -4,8 +4,8 @@
 
 
 **1)** — *vipra* auseinandergehen, — laufen: *viprayātarathānīkāḥ*
-[MBH. 6,2131.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2131) [7,3760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3760) [9,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1055) An der ersten Stelle die [ed. Bomb.] *vipradruta˚* .
+[MBH. 6,2131.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2131) = [≈Вульг. 6.52.8](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A052_S008) = ≈крит. 06,48.8c [7,3760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3760) [9,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1055) = [≈Вульг. 9.19.58](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A019_S058) = ≈крит. 09,18.56a An der ersten Stelle die [ed. Bomb.] *vipradruta˚* .
 
 - **RU:** — *vipra* расходиться, разбегаться: *viprayātarathānīkāḥ*
-[MBH. 6,2131.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2131) [7,3760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3760) [9,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1055) An der ersten Stelle die [ed. Bomb.] *vipradruta˚* .
+[MBH. 6,2131.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2131) = [≈Вульг. 6.52.8](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A052_S008) = ≈крит. 06,48.8c [7,3760.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3760) [9,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1055) = [≈Вульг. 9.19.58](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A019_S058) = ≈крит. 09,18.56a An der ersten Stelle die [Бомбейская ред.] *vipradruta˚* .
   <sub>attested</sub>

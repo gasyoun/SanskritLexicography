@@ -7,7 +7,7 @@
 [ṚV. 1,112,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.112.html#rv01.112.13) *dyāvāpṛthivī yāthanā pari*
 [5,55,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.055.html#rv05.055.07) [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) *rathaḥ*
 [3,58,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.058.html#rv03.058.08) [4,15,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.015.html#rv04.015.02) [7,69,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.069.html#rv07.069.05) *vartiraśvinā pari yātamasmayū*
-[8,26,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.14) [5,75,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.07) [10,85,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.18) [AV. 13,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.04) [6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.06) [KAUŚ. 16.] [LĀṬY. 3,10,4.] [MBH. 12,8019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8019) *śanaistadā pariyayau śvetāśvaśca mahārathaḥ*
+[8,26,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.14) [5,75,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.07) [10,85,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.18) [AV. 13,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.04) [6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.06) [KAUŚ. 16.] [LĀṬY. 3,10,4.] [MBH. 12,8019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8019) = [≈Вульг. 12.224.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A224_S042) = ≈крит. 12,217.42a *śanaistadā pariyayau śvetāśvaśca mahārathaḥ*
 [14,2135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2135) *samantātpariyāto 'si*
 [R. GORR. 2,106,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,106,19) *senāṃ kṛtsnām*
 [MBH. 5,5701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5701) *mahīm*
@@ -24,7 +24,7 @@
 [ṚV. 1,112,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.112.html#rv01.112.13) *dyāvāpṛthivī yāthanā pari*
 [5,55,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.055.html#rv05.055.07) [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) *rathaḥ*
 [3,58,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.058.html#rv03.058.08) [4,15,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.015.html#rv04.015.02) [7,69,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.069.html#rv07.069.05) *vartiraśvinā pari yātamasmayū*
-[8,26,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.14) [5,75,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.07) [10,85,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.18) [AV. 13,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.04) [6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.06) [KAUŚ. 16.] [LĀṬY. 3,10,4.] [MBH. 12,8019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8019) *śanaistadā pariyayau śvetāśvaśca mahārathaḥ*
+[8,26,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.026.html#rv08.026.14) [5,75,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.075.html#rv05.075.07) [10,85,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.18) [AV. 13,2,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.04) [6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.06) [KAUŚ. 16.] [LĀṬY. 3,10,4.] [MBH. 12,8019.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8019) = [≈Вульг. 12.224.42](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A224_S042) = ≈крит. 12,217.42a *śanaistadā pariyayau śvetāśvaśca mahārathaḥ*
 [14,2135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2135) *samantātpariyāto 'si*
 [R. GORR. 2,106,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,106,19) *senāṃ kṛtsnām*
 [MBH. 5,5701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5701) *mahīm*
@@ -39,10 +39,10 @@
   <sub>attested</sub>
 
 **main-2)** — Vgl. *pariyāṇa* fgg. — caus. Jmd umherwandeln —, die Runde machen lassen: *purohitaṃ taṃ pariyāpya (= prasthāpya*
-[NĪLAK.]) [MBH. 1,7205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7205) — *pariyāpayamāṇa*
+[NĪLAK.]) [MBH. 1,7205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7205) = [≈Вульг. 1.191.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A191_S007) = ≈крит. 01,182.7a — *pariyāpayamāṇa*
 [KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
 
 - **RU:** — ср. *pariyāṇa* сл. — caus. заставлять кого-л. обходить кругом, совершать обход: *purohitaṃ taṃ pariyāpya (= prasthāpya*
-[NĪLAK.]) [MBH. 1,7205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7205) — *pariyāpayamāṇa*
-[KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
+[NĪLAK.]) [MBH. 1,7205.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7205) = [≈Вульг. 1.191.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U12_A191_S007) = ≈крит. 01,182.7a — *pariyāpayamāṇa*
+[KĀŚ.] к [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29)
   <sub>attested</sub>

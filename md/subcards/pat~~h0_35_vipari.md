@@ -6,6 +6,6 @@
 **act.)** — *vipari* zurückfliegen: *suparṇo viparipatya śrāntaḥ saṃhatya pakṣau*
 [ŚAT. BR. 14,7,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,19)
 
-- **RU:** *vipari* лететь назад, возвращаться лётом: *suparṇo viparipatya śrāntaḥ saṃhatya pakṣau*
+- **RU:** *vipari* лететь назад, возвращаться летом: *suparṇo viparipatya śrāntaḥ saṃhatya pakṣau*
 [ŚAT. BR. 14,7,1,19.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,19)
   <sub>attested</sub>

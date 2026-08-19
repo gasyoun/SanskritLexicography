@@ -99,7 +99,7 @@
 
 - **RU:** — l) распространенный, известный, = *vijñāta*
 [MED. t. 15.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,15) *bhīmeti śabdo 'sya gataḥ pṛthivyām*
-[DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* известный в знач....
+[DRAUP. 7,10.] *pattiḥ senābhitpadgayorgatā* известный в значении...
 [H. an. 2,177.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,177)
   <sub>attested</sub>
 

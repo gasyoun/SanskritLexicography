@@ -6,7 +6,7 @@
 **1)** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
 — 1〉 sich mühen, eifrig sein, arbeiten; insbes. von der Thätigkeit beim Cultus.
 
-- **RU:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] und *śamita*)
+- **RU:** **1.** √*śam* (*śamīśva, śamīdhvam, śamyati, śaśame, śaśamate*, Partic. *śamant* [[SV. 1,4,2,3,6]] и *śamita*)
 — 1〉 стараться, усердно трудиться, работать; особ. о деятельности при богослужении.
   <sub>attested</sub>
 
@@ -23,8 +23,8 @@
 **1)** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
 — 1〉 ruhig —, still werden, befriedigt sein.
 
-- **RU:** **2.** √*śam*, *śāmyati* (metrisch auch Med. und *śamet*; *Pass. impers. *śamyate, aśami*)
-— 1〉 успокаиваться, затихать, быть удовлетворённым.
+- **RU:** **2.** √*śam*, *śāmyati* (metrisch также Med. и *śamet*; *Pass. impers. *śamyate, aśami*)
+— 1〉 успокаиваться, затихать, быть удовлетворенным.
   <sub>attested</sub>
 
 **2)** — 2〉 aufhören, nachlassen, sich legen, erlöschen.
@@ -74,17 +74,17 @@
 
 **3h)** — h〉 zur Ruhe gekommen, so v. a. zum Tode befördert, gestorben, ausgestorben.
 
-- **RU:** — h〉 обретший покой, so преим. умерщвлённый, умерший, вымерший.
+- **RU:** — h〉 обретший покой, so преим. умерщвленный, умерший, вымерший.
   <sub>attested</sub>
 
 **3i)** — i〉 *śāntaṃ pāpam* (auch wiederholt) abgewehrt sei das Uebel, ein Ausruf, mit den man ein Unheil, das ein ausgesprochenes Wort bewirken könnte, abwehren will. *dhik śāntam* so v. a. behüte Gott! bei Leibe nicht! *śāntam* allein = *śāntaṃ pāpam* und auch so v. a. so wahr mir Gott helfen möge!
 
-- **RU:** — i〉 *śāntaṃ pāpam* (auch wiederholt) да отвратится зло — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесённое слово. *dhik śāntam* so преим. упаси Бог! ни в коем случае! *śāntam* allein = *śāntaṃ pāpam* und auch so преим. да поможет мне Бог!
+- **RU:** — i〉 *śāntaṃ pāpam* (также wiederholt) да отвратится зло — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесенное слово. *dhik śāntam* so преим. упаси Бог! ни в коем случае! *śāntam* allein = *śāntaṃ pāpam* и также so преим. да поможет мне Бог!
   <sub>attested</sub>
 
 **caus-intro)** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] u. s. w. wohl nur fehlerhaft)
 
-- **RU:** — Caus. *śamayati* (metrisch auch *śāmayati*; Pass. *śāmyate* [auch [VAITĀN. 10,18] und zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] и т.д. wohl nur fehlerhaft)
+- **RU:** — Caus. *śamayati* (metrisch также *śāmayati*; Pass. *śāmyate* [также [VAITĀN. 10,18] и zu [Spr. 6899](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6899)] и т.д. wohl nur fehlerhaft)
   <sub>attested</sub>
 
 **caus-1)** — 1〉 beruhigen, stillen, beschwichtigen.
@@ -124,33 +124,33 @@
 
 **anu-prefix)** — Mit *anu* hinterher ruhig werden, — aufhören, — sich legen.
 
-- **RU:** — Mit *anu* следом успокаиваться, — прекращаться, — утихать.
+- **RU:** — С *anu* следом успокаиваться, — прекращаться, — утихать.
   <sub>attested</sub>
 
 **apa-prefix)** — Mit *abhi* aufhören, sich legen.
 
-- **RU:** — Mit *abhi* прекращаться, утихать.
+- **RU:** — С *abhi* прекращаться, утихать.
   <sub>attested</sub>
 
 **abhi-prefix)** — Mit *ava*, *avaśānta* erlöschen.
 
-- **RU:** — Mit *ava*, *avaśānta* угасать.
+- **RU:** — С *ava*, *avaśānta* угасать.
   <sub>attested</sub>
 
 **ava-prefix)** — Mit *vyava*, *vyavaśānta* dass. [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
 
-- **RU:** — Mit *vyava*, *vyavaśānta* то же [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
+- **RU:** — С *vyava*, *vyavaśānta* то же [MAITR. S. 1,8,6 (123,12)] = [ĀPAST. ŚR. 6,9,2].
   <sub>attested</sub>
 
 **ava-caus)** — Mit *samava* Caus. placare.
 
-- **RU:** — Mit *samava* Caus. placare.
+- **RU:** — С *samava* Caus. placare.
   <sub>attested</sub>
 
 **ud-prefix-1)** — Mit *upa* (Med. hier und da auch in ungebundener Rede) 
 — 1〉 ruhig —, still werden.
 
-- **RU:** — Mit *upa* (Med. hier und da auch in ungebundener Rede) 
+- **RU:** — С *upa* (Med. hier и da также in ungebundener Rede) 
 — 1〉 становиться тихим, спокойным.
   <sub>attested</sub>
 
@@ -210,14 +210,14 @@
 
 **vyupa-ppp)** — Mit *abhyupa*, *˚śānta* gestillt, abgekühlt.
 
-- **RU:** — Mit *abhyupa*, *˚śānta* утолённый, охлаждённый.
+- **RU:** — С *abhyupa*, *˚śānta* утоленный, охлажденный.
   <sub>attested</sub>
 
 **ni-prefix-1)** — Mit *vyupa*
-— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
+— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S053) = ≈крит. 06,4.4a.
 
-- **RU:** — Mit *vyupa*
-— 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52).
+- **RU:** — С *vyupa*
+— 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S053) = ≈крит. 06,4.4a.
   <sub>attested</sub>
 
 **ni-prefix-2)** — 2〉 aufhören, sich legen. *duḥkhaṃ* *vyupaśāntam* [KĀRAṆḌ. 48,9].
@@ -227,13 +227,13 @@
 
 **pari-prefix)** — Mit *samupa* aufhören, sich legen [CARAKA. 6,10].
 
-- **RU:** — Mit *samupa* прекращаться, утихать [CARAKA. 6,10].
+- **RU:** — С *samupa* прекращаться, утихать [CARAKA. 6,10].
   <sub>attested</sub>
 
 **pra-prefix-1)** — Mit *ni*, *niśānta*
 — 1〉 *beruhigt, ruhig [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
 
-- **RU:** — Mit *ni*, *niśānta*
+- **RU:** — С *ni*, *niśānta*
 — 1〉 *успокоенный, тихий [H. an. 3,271](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,271). [MED. t. 119](https://sanskrit-lexicon-scans.github.io/medini/app1?t,119).
   <sub>attested</sub>
 
@@ -256,18 +256,18 @@
 
 **vi-prefix)** — Mit *praṇi* sich beruhigen [BHAṬṬ.]
 
-- **RU:** — Mit *praṇi* успокаиваться [BHAṬṬ.]
+- **RU:** — С *praṇi* успокаиваться [BHAṬṬ.]
   <sub>attested</sub>
 
 **vi-caus)** — Mit *pari* Caus. aufhören machen.
 
-- **RU:** — Mit *pari* Caus. заставлять прекращаться.
+- **RU:** — С *pari* Caus. заставлять прекращаться.
   <sub>attested</sub>
 
 **sam-prefix-1)** — Mit *pra*
 — 1〉 sich beruhigen, zur Ruhe kommen.
 
-- **RU:** — Mit *pra*
+- **RU:** — С *pra*
 — 1〉 успокаиваться, обретать покой.
   <sub>attested</sub>
 
@@ -288,7 +288,7 @@
 
 **sam-prefix-4a)** — a〉 ruhig geworden, beruhigt, ruhig.
 
-- **RU:** — a〉 ставший спокойным, умиротворённый, тихий.
+- **RU:** — a〉 ставший спокойным, умиротворенный, тихий.
   <sub>attested</sub>
 
 **sam-prefix-4b)** — b〉 ruhig, so v. a. gleichgültig, fahrlässig.
@@ -308,7 +308,7 @@
 
 **sam-prefix-4e)** — e〉 beseitigt, entfernt.
 
-- **RU:** — e〉 устранённый, удалённый.
+- **RU:** — e〉 устраненный, удаленный.
   <sub>attested</sub>
 
 **sam-prefix-4f)** — f〉 aufgehört —, sich gelegt habend, verschwunden, zu Ende gegangen, nicht da seiend, sich nicht sehen lassend.
@@ -318,12 +318,12 @@
 
 **sam-prefix-4g)** — g〉 zu Schanden geworden.
 
-- **RU:** — g〉 посрамлённый, потерпевший неудачу.
+- **RU:** — g〉 посрамленный, потерпевший неудачу.
   <sub>attested</sub>
 
 **sam-prefix-4h)** — h〉 zur ewigen Ruhe eingegangen, gestorben, todt.
 
-- **RU:** — h〉 обретший вечный покой, умерший, мёртвый.
+- **RU:** — h〉 обретший вечный покой, умерший, мертвый.
   <sub>attested</sub>
 
 **sam-caus-intro)** — Caus. (hier und da mit Dehnung des Wurzelvocals auch ohne metrische Veranlassung)
@@ -353,23 +353,23 @@
 
 **sam-caus-5)** — 5〉 sich (silbi) unterwerfen, wiedererobern.
 
-- **RU:** — 5〉 подчинять себе (sibi), отвоёвывать.
+- **RU:** — 5〉 подчинять себе (sibi), отвоевывать.
   <sub>attested</sub>
 
 **apani-prefix)** — Mit *anupra* in *anupraśaman*.
 
-- **RU:** — Mit *anupra* in *anupraśaman*.
+- **RU:** — С *anupra* in *anupraśaman*.
   <sub>attested</sub>
 
 **parini-ppp)** — Mit *saṃpra*, *saṃpraśānta* aufgehört, gewichen, geschwunden.
 
-- **RU:** — Mit *saṃpra*, *saṃpraśānta* прекратившийся, отступивший, исчезнувший.
+- **RU:** — С *saṃpra*, *saṃpraśānta* прекратившийся, отступивший, исчезнувший.
   <sub>attested</sub>
 
 **parini-2-1)** — Mit *prati*
 — 1〉 erlöschen.
 
-- **RU:** — Mit *prati*
+- **RU:** — С *prati*
 — 1〉 угасать.
   <sub>attested</sub>
 
@@ -380,19 +380,19 @@
 
 **pratyava-caus)** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) wieder an seinen Platz bringen. Vgl. **1.** *śram* mit *pravi* Caus.
 
-- **RU:** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) und *˚śāmayitvā* ([MAHĀVASTU 56,2]) снова ставить на своё место. ср. **1.** *śram* mit *pravi* Caus.
+- **RU:** — Caus. *pratiśāmya* ([VAJRACCH. 19,9]) и *˚śāmayitvā* ([MAHĀVASTU 56,2]) снова ставить на свое место. ср. **1.** *śram* mit *pravi* Caus.
   <sub>attested</sub>
 
 **visam-prefix-1)** — Mit *sam*
 — 1〉 vollständig zur Ruhe gelangen.
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 полностью обретать покой.
   <sub>attested</sub>
 
 **visam-prefix-2)** — 2〉 mit Instr. der Person (mit und ohne *saha*) Frieden schliessen mit.
 
-- **RU:** — 2〉 mit Instr. der Person (mit und ohne *saha*) заключать мир с.
+- **RU:** — 2〉 mit Ins. der Person (mit и без *saha*) заключать мир с.
   <sub>attested</sub>
 
 **visam-prefix-3)** — 3〉 erlöschen.
@@ -437,7 +437,7 @@
 
 **visam-prefix-7d)** — d〉 gestorben, todt.
 
-- **RU:** — d〉 умерший, мёртвый.
+- **RU:** — d〉 умерший, мертвый.
   <sub>attested</sub>
 
 **visam-caus-intro)** — Caus.

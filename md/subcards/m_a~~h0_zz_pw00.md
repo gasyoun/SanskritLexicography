@@ -15,7 +15,7 @@
 
 **2〉)** — 2〉 mit Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* so v. a. gleichviel, ob du gehst oder nicht; ähnlich *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* wie sollte nicht sein? [BĀLAR. 30,10].
 
-- **RU:** — 2〉 с Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* так преим. всё равно, идёшь ты или нет; подобно *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* как не быть? [BĀLAR. 30,10].
+- **RU:** — 2〉 с Imperat. *mmaivaṃ maivam-bhava* [105,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?105). *gaccha vā mā vā* так преим. всё равно, идешь ты или нет; подобно *bhavatu mā vāstu*, *santu mā santu vā*, *dehi mā dehi vā*, *niryāntu mā yantu vā*. *mā kathaṃ nu bhavatu* как не быть? [BĀLAR. 30,10].
   <sub>attested</sub>
 
 **3〉)** — 3〉 mit Potent.
@@ -35,7 +35,7 @@
 
 **6〉)** — 6〉 mit dem Praes. von *arha* metrisch, aber auch ungenau für *na*.
 
-- **RU:** — 6〉 с Praes. от *arha* метрически, но также неточно вместо *na*.
+- **RU:** — 6〉 с Praes. от *arha* метрически, но также неточно вм. *na*.
   <sub>attested</sub>
 
 **7〉)** — 7〉 mit einem Partic. praes. *mā jīvan* der verdient nicht zu leben [ŚIŚ.]

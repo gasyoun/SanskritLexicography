@@ -16,7 +16,7 @@
 [N. 13,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,16) *asaṃprāpte karmaṇi* wenn das Object nicht erreicht ist
 [P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12), Vārtt. 3. mit act. Bed.: *saṃprāpto 'haṃ tamāśramam*
 [R. 3,42,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,6) [18,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,2)
-[MBH. 3,2852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2852) *tvaksaṃprāpta* sich auf die Haut erstreckend
+[MBH. 3,2852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2852) = [≈Вульг. 3.73.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S001) = ≈крит. 03,71.1a *tvaksaṃprāpta* sich auf die Haut erstreckend
 [SUŚR. 2,64,8.]
 
 - **RU:** — *saṃpra*
@@ -32,7 +32,7 @@
 [N. 13,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,16) *asaṃprāpte karmaṇi* если объект не достигнут
 [P. 2,3,12](https://ashtadhyayi.com/sutraani/2/3/12), Вартт. 3. с act. знач.: *saṃprāpto 'haṃ tamāśramam*
 [R. 3,42,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,6) [18,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,2)
-[MBH. 3,2852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2852) *tvaksaṃprāpta* распространяющийся по коже
+[MBH. 3,2852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2852) = [≈Вульг. 3.73.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S001) = ≈крит. 03,71.1a *tvaksaṃprāpta* распространяющийся по коже
 [SUŚR. 2,64,8.]
   <sub>attested</sub>
 
@@ -41,7 +41,7 @@
 [PAÑCAT. II,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,21) *parābhūtim*
 [201.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,201) *parāṃ mudam*
 [KATHĀS. 23,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,15) *mahākratuṃ saṃprāpnuhi* (als Gewinn aufgefasst; vgl. *śataṃ kratūnāmapavighnamāpa saḥ*
-[RAGH. 3,38](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,38)) [MBH. 2,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1227) *saṃprāpsyante — vinodam*
+[RAGH. 3,38](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,38)) [MBH. 2,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1227) = [≈Вульг. 2.33.20](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U06_A033_S020) = ≈крит. 02,30.20a *saṃprāpsyante — vinodam*
 [ŚĀNTIŚ. 4,17.] *mṛtaiḥ saṃprāpyate śreyaḥ*
 [PAÑCAT. I,344.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,344) [347.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,347) *saṃprāpta* mit pass. Bed.: *pūrveṇa mama māṃdhātrā saṃprāptaṃ vyasanaṃ mahat*
 [R. 4,17,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,20) *so 'yaṃ te — bandhupraṇāśaḥ saṃprāptaḥ*
@@ -53,7 +53,7 @@
 [PAÑCAT. II,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,21) *parābhūtim*
 [201.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,201) *parāṃ mudam*
 [KATHĀS. 23,15.](https://sanskrit-lexicon-scans.github.io/kss/index.html?23,15) *mahākratuṃ saṃprāpnuhi* (понимается как приобретение; ср. *śataṃ kratūnāmapavighnamāpa saḥ*
-[RAGH. 3,38](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,38)) [MBH. 2,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1227) *saṃprāpsyante — vinodam*
+[RAGH. 3,38](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,38)) [MBH. 2,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1227) = [≈Вульг. 2.33.20](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U06_A033_S020) = ≈крит. 02,30.20a *saṃprāpsyante — vinodam*
 [ŚĀNTIŚ. 4,17.] *mṛtaiḥ saṃprāpyate śreyaḥ*
 [PAÑCAT. I,344.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,344) [347.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,347) *saṃprāpta* с pass. знач.: *pūrveṇa mama māṃdhātrā saṃprāptaṃ vyasanaṃ mahat*
 [R. 4,17,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,20) *so 'yaṃ te — bandhupraṇāśaḥ saṃprāptaḥ*
@@ -66,7 +66,7 @@
 [INDṚ. 5,4.] [HIḌ. 2,24. 4,27.] [R. 1,20,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,5) [41,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,28) [4,2,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,2,20) [ŚĀK. 61,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,7) [BHAṬṬ. 6,100.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,100) *ayaṃ sa kālaḥ saṃprāptaḥ*
 [R. 3,22,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,4) [42,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,6) [2,77,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,77,1) [4,27,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,2)
 [ARJ. 3,18.] *aparedyuḥ saṃprāpte*
-[MBH. 3,2566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2566) *tasya vāro 'dya saṃprāptastatra gantum*
+[MBH. 3,2566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2566) = [≈Вульг. 3.65.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S035) = ≈крит. 03,62.11a *tasya vāro 'dya saṃprāptastatra gantum*
 [VID. 202.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?202) *tadidaṃ saṃprāptaṃ yanmayā pūrvamīkṣitam*
 [R. 6,93,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,13) — caus. erreichen machen: *saṃprāpipan*
 [ŚAT. BR. 2,2,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,2,7)
@@ -76,7 +76,7 @@
 [INDṚ. 5,4.] [HIḌ. 2,24. 4,27.] [R. 1,20,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,5) [41,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,41,28) [4,2,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,2,20) [ŚĀK. 61,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,7) [BHAṬṬ. 6,100.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,100) *ayaṃ sa kālaḥ saṃprāptaḥ*
 [R. 3,22,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,22,4) [42,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,6) [2,77,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,77,1) [4,27,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,2)
 [ARJ. 3,18.] *aparedyuḥ saṃprāpte*
-[MBH. 3,2566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2566) *tasya vāro 'dya saṃprāptastatra gantum*
+[MBH. 3,2566.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2566) = [≈Вульг. 3.65.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S035) = ≈крит. 03,62.11a *tasya vāro 'dya saṃprāptastatra gantum*
 [VID. 202.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?202) *tadidaṃ saṃprāptaṃ yanmayā pūrvamīkṣitam*
 [R. 6,93,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,93,13) — caus. побуждать достигнуть, доводить до: *saṃprāpipan*
 [ŚAT. BR. 2,2,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,2,7)

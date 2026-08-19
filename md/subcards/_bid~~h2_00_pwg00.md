@@ -38,6 +38,6 @@
 [SARVADARŚANAS. 2,14.]
 
 - **RU:** — *sam*
-2) *saṃbhinna* соединённый; от этого nom. abstr. *˚tā* _f._
+2) *saṃbhinna* соединенный; от этого nom. abstr. *˚tā* _f._
 [SARVADARŚANAS. 2,14.]
   <sub>attested</sub>

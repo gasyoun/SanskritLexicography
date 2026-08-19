@@ -6,6 +6,6 @@
 **1)** — *samā* sich Etwas anbinden: *kavacaṃ ca samābadhya*
 [R. 6,86,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,86,25)
 
-- **RU:** — *samā* «привязывать себе что-л.»: *kavacaṃ ca samābadhya*
+- **RU:** — *samā* привязывать себе что-л.: *kavacaṃ ca samābadhya*
 [R. 6,86,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,86,25)
   <sub>attested</sub>

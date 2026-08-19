@@ -8,8 +8,8 @@
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) med.: *dhanuṣkeṇāniṣuṇā vrātyāḥ prasedhamānā yanti*
 [LĀṬY. 8,6,8.]
 
-- **RU:** — *pra* погонять вперёд, двигать вперёд: *tābhyāṃ yuktvā prāsedhatsa udajayat*
-[PAÑCAV. BR. 14,3,13.] *gāvau yuktau mo ṣu pra sedhīrmuhurinmamandhi* не езди вперёд, не продолжай движения
+- **RU:** — *pra* погонять вперед, двигать вперед: *tābhyāṃ yuktvā prāsedhatsa udajayat*
+[PAÑCAV. BR. 14,3,13.] *gāvau yuktau mo ṣu pra sedhīrmuhurinmamandhi* не езди вперед, не продолжай движения
 [ṚV. 10,27,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.20) мед.: *dhanuṣkeṇāniṣuṇā vrātyāḥ prasedhamānā yanti*
 [LĀṬY. 8,6,8.]
   <sub>attested</sub>

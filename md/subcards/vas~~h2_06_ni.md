@@ -6,28 +6,28 @@
 **T33 — anziehen über ein anderes Gewand / umthun, anlegen)** — *ni* anziehen über ein anderes Gewand
 [KĀTY. ŚR. 15,5,12.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,5,12) umthun, anlegen: *(khaḍgena) ardhaṃ vāsasaśchittvā nivasya* (so die [ed. Bomb.] und
 [N. 10,19](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,19)) *ca*
-[MBH. 3,2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2351)
+[MBH. 3,2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2351) = [≈Вульг. 3.62.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A062_S019) = ≈крит. 03,59.17a
 [R. GORR. 2,99,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,2) *vāsobhirbahusāhasrairyo vai nivasitaḥ purā* gekleidet in
 [108,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,108,32) sich kleiden, sich aufputzen: *nyavasiṣṭa tato draṣṭuṃ rāvaṇam*
 [BHAṬṬ. 15,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,7) *nivaddhvam*
 [3,44.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,44) — Vgl. 2. *nivasana*,2. *nivāsa*,2. *nivāsin* . — caus. anziehen: *vāsaḥ*
-[MBH. 3,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2631)
+[MBH. 3,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2631) = [≈Вульг. 3.66.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S024) = ≈крит. 03,63.22c
 [R. ed. GORR. 2,38,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,16) *pītairnivāsitā vastraiḥ* gekleidet in
 [5,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,22) *nānākarma˚* so v. a. beschäftigt mit
-[MBH. 13,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1385) Vgl. *nivāsa* (*ācchādane*)
+[MBH. 13,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1385) = [≈Вульг. 13.19.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S005) = ≈крит. 13,19.5c Vgl. *nivāsa* (*ācchādane*)
 [DHĀTUP. 35,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) und 2. *nivāsana* .
 
 - **RU:** — *ni* надевать поверх другой одежды,
-[KĀTY. ŚR. 15,5,12.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,5,12) накидывать, надевать: *(khaḍgena) ardhaṃ vāsasaśchittvā nivasya* (так [ed. Bomb.] и
+[KĀTY. ŚR. 15,5,12.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?15,5,12) накидывать, надевать: *(khaḍgena) ardhaṃ vāsasaśchittvā nivasya* (так [Бомбейская ред.] и
 [N. 10,19](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,19)) *ca*
-[MBH. 3,2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2351)
+[MBH. 3,2351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2351) = [≈Вульг. 3.62.19](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A062_S019) = ≈крит. 03,59.17a
 [R. GORR. 2,99,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,2) *vāsobhirbahusāhasrairyo vai nivasitaḥ purā* одетый в
 [108,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,108,32) одеваться, наряжаться, украшаться: *nyavasiṣṭa tato draṣṭuṃ rāvaṇam*
 [BHAṬṬ. 15,7.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,7) *nivaddhvam*
 [3,44.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,44) — ср. 2. *nivasana*, 2. *nivāsa*, 2. *nivāsin* . — caus. надевать: *vāsaḥ*
-[MBH. 3,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2631)
+[MBH. 3,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2631) = [≈Вульг. 3.66.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S024) = ≈крит. 03,63.22c
 [R. ed. GORR. 2,38,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,16) *pītairnivāsitā vastraiḥ* одетый в
 [5,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,22) *nānākarma˚* так преим. занятый
-[MBH. 13,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1385) ср. *nivāsa* (*ācchādane*)
+[MBH. 13,1385.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1385) = [≈Вульг. 13.19.5](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A019_S005) = ≈крит. 13,19.5c ср. *nivāsa* (*ācchādane*)
 [DHĀTUP. 35,33](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=35) и 2. *nivāsana* .
   <sub>attested</sub>

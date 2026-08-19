@@ -7,7 +7,7 @@
  1) wegführen —, hinführen wollen: *yamadholokaṃ ninīṣate*
 [KAUṢ. UP.] bei [WIND. Sancara 114,1.]
 *sa ninīṣati durbuddhirmāṃ kilaiṣa yamakṣayam*
-[MBH. 7,2617.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2617) *śivirāya ninīṣantaṃ rajjvā baddhvā ripuṃ balāt*
+[MBH. 7,2617.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2617) = [≈Вульг. 7.73.51](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A073_S051) = ≈крит. 07,51.41a *śivirāya ninīṣantaṃ rajjvā baddhvā ripuṃ balāt*
 [BHĀG. P. 1,7,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,34) *nineṣati* (!)
 [AV. 19,50,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.050.html#av19.050.05)
 
@@ -15,7 +15,7 @@
  1) желать уводить, желать вести: *yamadholokaṃ ninīṣate*
 [KAUṢ. UP.] при [WIND. Sancara 114,1.]
 *sa ninīṣati durbuddhirmāṃ kilaiṣa yamakṣayam*
-[MBH. 7,2617.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2617) *śivirāya ninīṣantaṃ rajjvā baddhvā ripuṃ balāt*
+[MBH. 7,2617.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2617) = [≈Вульг. 7.73.51](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U04_A073_S051) = ≈крит. 07,51.41a *śivirāya ninīṣantaṃ rajjvā baddhvā ripuṃ balāt*
 [BHĀG. P. 1,7,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,34) *nineṣati* (!)
 [AV. 19,50,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.050.html#av19.050.05)
   <sub>attested</sub>
@@ -42,14 +42,14 @@
   <sub>attested</sub>
 
 **desid-5)** — 5) herauszubringen versuchen, nachspüren: *ninīṣantaḥ padam*
-[MBH. 11,303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.303) *tapasā cānumānena* u. s. w. *ninīṣetparamaṃ brahma*
-[12,7478.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7478) *tathā buddhipradīpena dūrasthaṃ suvipaścitaḥ . pratyāsannaṃ ninīṣante jñeyaṃ jñānābhisaṃhitam ..*
-[7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426)
+[MBH. 11,303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.303) = [≈Вульг. 11.11.15](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A011_S015) = ≈крит. 11,10.15c *tapasā cānumānena* u. s. w. *ninīṣetparamaṃ brahma*
+[12,7478.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7478) = [≈Вульг. 12.208.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A208_S009) = ≈крит. 12,201.9c *tathā buddhipradīpena dūrasthaṃ suvipaścitaḥ . pratyāsannaṃ ninīṣante jñeyaṃ jñānābhisaṃhitam ..*
+[7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A207_S006) = ≈крит. 12,200.6a
 — Vgl. *ninīṣā, ˚ṣu* .
 
 - **RU:** — 5) пытаться выяснить, выведывать: *ninīṣantaḥ padam*
-[MBH. 11,303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.303) *tapasā cānumānena* и т.д. *ninīṣetparamaṃ brahma*
-[12,7478.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7478) *tathā buddhipradīpena dūrasthaṃ suvipaścitaḥ . pratyāsannaṃ ninīṣante jñeyaṃ jñānābhisaṃhitam ..*
-[7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426)
+[MBH. 11,303.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.303) = [≈Вульг. 11.11.15](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A011_S015) = ≈крит. 11,10.15c *tapasā cānumānena* и т.д. *ninīṣetparamaṃ brahma*
+[12,7478.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7478) = [≈Вульг. 12.208.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A208_S009) = ≈крит. 12,201.9c *tathā buddhipradīpena dūrasthaṃ suvipaścitaḥ . pratyāsannaṃ ninīṣante jñeyaṃ jñānābhisaṃhitam ..*
+[7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A207_S006) = ≈крит. 12,200.6a
 — ср. *ninīṣā, ˚ṣu* .
   <sub>attested</sub>

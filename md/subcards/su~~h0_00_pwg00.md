@@ -14,7 +14,7 @@
 [8,80,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.080.html#rv08.080.01) *suvāna* partic.; *suṣāva, suṣuma, suṣuviva* (
 [VOP. 12], Anf.), *suṣuvaṃs, suṣuvuṣas*
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) *suṣvāṇa* med.
-[4,29,2. 10,148,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.029.html#rv04.029.02) passivisch
+[4,29,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.029.html#rv04.029.02) [10,148,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.148.html#rv10.148.01) passivisch
 [9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *sota, sotana, suṣvati* 3. pl. (wohl praes.)
 [2,16,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.05) *asāvīt, asoṣṭa* und *asāvīt*
 [P. 7,2,72.](https://ashtadhyayi.com/sutraani/7/2/72)
@@ -37,7 +37,7 @@
 [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,2,15) [KĀTY. ŚR. 9,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,6,23) *soṣyatyasoṣṭa* (zugleich zu 4. *su*)
 [CHĀND. UP. 3,17,5.] *śaśvatsūyamānātsūryaḥ*
 [MAITRYUP. 6,7.] *suṣāva ca vahūnsomānsomasaṃsthāstatāna ca*
-[MBH. 1,4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4695) *sarve sunvantaḥ*
+[MBH. 1,4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4695) = [≈Вульг. 1.121.17](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A121_S017) = ≈крит. 01,112.15a *sarve sunvantaḥ*
 [P. 3,2,132](https://ashtadhyayi.com/sutraani/3/2/132), Schol. *surāṃ sunoti* so v. a. braut ebend. — *asunvan*
 [AIT. BR. 4,17](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,17) fehlerhaft für *asanvan:* s. u. 1. *san*.* — suta* partic.: *suto aśnaiḥ*
 [ṚV. 8,2,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.02) [2,11,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.11) [4,18,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.03) *aṃśu*
@@ -45,9 +45,9 @@
 [41,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.03) [6,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.040.html#rv06.040.01) *sutāsa indavaḥ*
 [8,6,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.006.html#rv08.006.21) *sute adhvare*
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) [ŚAT. BR. 12,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,5) *pibasva somaṃ sutamadya taṃ mayā*
-[MBH. 14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) *sute somasahasre*
-[1,8042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8042) *sutam*
-[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694) wohl fehlerhaft für *hutam* . masc. sg. und pl. der Saft d. h. Soma
+[MBH. 14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) = [≈Вульг. 14.10.22](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A010_S022) = ≈крит. 14,10.21c *sute somasahasre*
+[1,8042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8042) = [≈Вульг. 1.220.31](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U16_A220_S031) = ≈крит. 01,212.31c *sutam*
+[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694 "Spr. (II) 2694: dattamiṣṭaṃ tapastaptaṃ tīrthayātrā hutaṃ tathā | sarvābhayapradānasya kalāṃ nārhanti ṣoḍaśīm || — (196.) Spenden, Trankopfer vollbrachte Kasteiungen, Wallfahrten und Brandopfer sind nicht ein Sechszehntel von dem werth, was die Sicherstellung aller Geschöpfe vor jeglicher Unbill gilt.") wohl fehlerhaft für *hutam* . masc. sg. und pl. der Saft d. h. Soma
 [NAIGH. 2,7.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,7) *suṣvāṇaḥ pavate sutaḥ*
 [ṚV. 9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *parīto ṣiñcatā sutam*
 [107,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.01) [2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.02) [1,135,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.01) [2,15,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.01) [4,32,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.11) *prātaḥ sutamapibaḥ*
@@ -62,17 +62,17 @@
 [VOP.]). *sunota*
 [ṚV. 7,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.032.html#rv07.032.08) *sunotana*
 [5,34,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.034.html#rv05.034.01) *sunuta*
-[10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* und *sunvat*
+[10,14,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.014.html#rv10.014.13) *sunavat* и *sunvat*
 [27,22.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.22) *sunvant* partic.; мед. *sunve*
 3. sg. [7,29,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.029.html#rv07.029.01) [9,88,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.088.html#rv09.088.01) *sunvire, sunudhvam, sunavai*
 [8,80,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.080.html#rv08.080.01) *suvāna* partic.; *suṣāva, suṣuma, suṣuviva* (
 [VOP. 12], начало), *suṣuvaṃs, suṣuvuṣas*
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) *suṣvāṇa* мед.
-[4,29,2. 10,148,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.029.html#rv04.029.02) пассивно
+[4,29,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.029.html#rv04.029.02) [10,148,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.148.html#rv10.148.01) пассивно
 [9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *sota, sotana, suṣvati* 3. pl. (вероятно praes.)
-[2,16,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.05) *asāvīt, asoṣṭa* und *asāvīt*
+[2,16,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.05) *asāvīt, asoṣṭa* и *asāvīt*
 [P. 7,2,72.](https://ashtadhyayi.com/sutraani/7/2/72)
-[VOP. 11,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,1) [12], начало *soṣyati* und *saviṣyati*
+[VOP. 11,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,1) [12], начало *soṣyati* и *saviṣyati*
 [8,46.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,46) [12](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,12), начало *soṣyant*
 [KĀTY. ŚR. 16,6,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?16,6,10) *(abhi) saviṣyant*
 [ŚAT. BR. 9,5,1,66.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,66) infin. *sotave* (см. также *sotu*)
@@ -91,17 +91,17 @@
 [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,2,15) [KĀTY. ŚR. 9,6,23.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?9,6,23) *soṣyatyasoṣṭa* (одновременно к 4. *su*)
 [CHĀND. UP. 3,17,5.] *śaśvatsūyamānātsūryaḥ*
 [MAITRYUP. 6,7.] *suṣāva ca vahūnsomānsomasaṃsthāstatāna ca*
-[MBH. 1,4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4695) *sarve sunvantaḥ*
+[MBH. 1,4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4695) = [≈Вульг. 1.121.17](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A121_S017) = ≈крит. 01,112.15a *sarve sunvantaḥ*
 [P. 3,2,132](https://ashtadhyayi.com/sutraani/3/2/132), схол. *surāṃ sunoti* так преим. варит там же — *asunvan*
-[AIT. BR. 4,17](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,17) ошибочно вместо *asanvan:* см. 1. *san*.* — suta* partic.: *suto aśnaiḥ*
+[AIT. BR. 4,17](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,17) ошибочно вм. *asanvan:* см. 1. *san*.* — suta* partic.: *suto aśnaiḥ*
 [ṚV. 8,2,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.02) [2,11,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.011.html#rv02.011.11) [4,18,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.018.html#rv04.018.03) *aṃśu*
 [25,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.025.html#rv04.025.03) *soma*
 [41,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.041.html#rv04.041.03) [6,40,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.040.html#rv06.040.01) *sutāsa indavaḥ*
 [8,6,21.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.006.html#rv08.006.21) *sute adhvare*
 [10,94,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.094.html#rv10.094.14) [ŚAT. BR. 12,8,1,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,5) *pibasva somaṃ sutamadya taṃ mayā*
-[MBH. 14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) *sute somasahasre*
-[1,8042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8042) *sutam*
-[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694) вероятно ошибочно вместо *hutam* . masc. sg. und pl. сок т.е. Сома
+[MBH. 14,277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.277) = [≈Вульг. 14.10.22](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A010_S022) = ≈крит. 14,10.21c *sute somasahasre*
+[1,8042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8042) = [≈Вульг. 1.220.31](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U16_A220_S031) = ≈крит. 01,212.31c *sutam*
+[Spr. (II) 2694](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2694 "Spr. (II) 2694: dattamiṣṭaṃ tapastaptaṃ tīrthayātrā hutaṃ tathā | sarvābhayapradānasya kalāṃ nārhanti ṣoḍaśīm || — (196.) Spenden, Trankopfer vollbrachte Kasteiungen, Wallfahrten und Brandopfer sind nicht ein Sechszehntel von dem werth, was die Sicherstellung aller Geschöpfe vor jeglicher Unbill gilt.") вероятно ошибочно вм. *hutam* . masc. sg. и pl. сок т.е. Сома
 [NAIGH. 2,7.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,7) *suṣvāṇaḥ pavate sutaḥ*
 [ṚV. 9,6,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.006.html#rv09.006.08) *parīto ṣiñcatā sutam*
 [107,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.01) [2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.107.html#rv09.107.02) [1,135,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.01) [2,15,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.015.html#rv02.015.01) [4,32,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.11) *prātaḥ sutamapibaḥ*

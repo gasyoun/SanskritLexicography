@@ -8,9 +8,9 @@
 - **RU:** — *sam*
   <sub>attested</sub>
 
-**1)** 1) *vācaṃ tena na saṃdadhyāt* so v. a. mit dem wechsele er keine Worte [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220)
+**1)** 1) *vācaṃ tena na saṃdadhyāt* so v. a. mit dem wechsele er keine Worte [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A116_S009) = ≈крит. 12,117.9a
 
-- **RU:** 1) *vācaṃ tena na saṃdadhyāt* так преим. с тем пусть он не обменивается словами [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220)
+- **RU:** 1) *vācaṃ tena na saṃdadhyāt* так преим. с тем пусть он не обменивается словами [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A116_S009) = ≈крит. 12,117.9a
   <sub>attested</sub>
 
 **2)** — 2) hinstellen [Spr. 3729.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3729) *śraddhāṃ śrutiṣu saṃdadhe* Glauben schenken [LA. (II) 91,3.]

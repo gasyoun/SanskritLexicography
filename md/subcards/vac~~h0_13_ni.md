@@ -13,10 +13,10 @@
   <sub>attested</sub>
 
 **ni+vac 2))** — 2) schmähen: *duryodhanaṃ naikṛtikaṃ nyavocat*
-[MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320)
+[MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320) = [≈Вульг. 9.59.12](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A059_S012) = ≈крит. 09,58.12c
 
 - **RU:** — 2) поносить, хулить: *duryodhanaṃ naikṛtikaṃ nyavocat*
-[MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320)
+[MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320) = [≈Вульг. 9.59.12](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A059_S012) = ≈крит. 09,58.12c
   <sub>attested</sub>
 
 **ni+vac (Nachtrag))** — Vgl. *nivacana, nivāku* . — caus. schmähen

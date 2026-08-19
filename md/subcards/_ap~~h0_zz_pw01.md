@@ -20,7 +20,7 @@
 
 **mit_T5)** — Mit *anusaṃpra* erreichen, anlangen bei, in antreffen.
 
-- **RU:** — Mit *anusaṃpra* достигать, прибывать к, заставать в.
+- **RU:** — С *anusaṃpra* достигать, прибывать к, заставать в.
   <sub>attested</sub>
 
 **ppp_T6_1)** — Partic. *anusaṃprāpta*
@@ -43,7 +43,7 @@
 **mit_T10_1)** — Mit *abhisaṃpra*
 — 1〉 erreichen, gelangen zu.
 
-- **RU:** — Mit *abhisaṃpra*
+- **RU:** — С *abhisaṃpra*
 — 1〉 достигать, приходить к.
   <sub>attested</sub>
 
@@ -66,14 +66,14 @@
 
 **mit_T14)** — Mit *upasaṃpra* gelangen zu.
 
-- **RU:** — Mit *upasaṃpra* достигать, приходить к.
+- **RU:** — С *upasaṃpra* достигать, приходить к.
   <sub>attested</sub>
 
 **ppp_T15_1)** — Partic. *upasaṃprāpta*
 — 1〉 sich zugezogen habend, gerathen in (Acc.).
 
 - **RU:** — Partic. *upasaṃprāpta*
-— 1〉 навлёкший на себя, попавший в (Acc.).
+— 1〉 навлекший на себя, попавший в (Acc.).
   <sub>attested</sub>
 
 **ppp_T15_2)** — 2〉 herangekommen.
@@ -83,13 +83,13 @@
 
 **mit_T18)** — Mit *prati* Desid. werden um (ein Mädchen).
 
-- **RU:** — Mit *prati* Desid. добиваться (девушки).
+- **RU:** — С *prati* Desid. добиваться (девушки).
   <sub>attested</sub>
 
 **mit_T20_1)** — Mit *vi*
 — 1〉 hindurchreichen, durchdringen, erfüllen, ausfüllen.
 
-- **RU:** — Mit *vi*
+- **RU:** — С *vi*
 — 1〉 пронизывать, проникать, наполнять, заполнять.
   <sub>attested</sub>
 
@@ -102,7 +102,7 @@
 — 1〉 durchdrungen, erfüllt, angefüllt. *sūryatejasā mukham* so v. a. ganz beschienen von [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
 
 - **RU:** — Partic. *vyāpta*
-— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так преим. целиком освещённый [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
+— 1〉 пронизанный, наполненный, переполненный. *sūryatejasā mukham* так преим. целиком освещенный [154,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?154).
   <sub>attested</sub>
 
 **ppp_T22_2)** — 2〉 eingenommen, in Besitz genommen.
@@ -112,12 +112,12 @@
 
 **ppp_T22_3)** — 3〉 behaftet mit (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
 
-- **RU:** — 3〉 поражённый, страдающий (Instr.) [TARKAS. 41] (*anityatvena* zu lesen).
+- **RU:** — 3〉 пораженный, страдающий (Ins.) [TARKAS. 41] (*anityatvena* zu lesen).
   <sub>attested</sub>
 
 **ppp_T22_4)** — 4〉 in etwas Anderm eingeschlossen, — enthalten [BHĀṢĀP. 67].
 
-- **RU:** — 4〉 заключённый в чём-либо другом, — содержащийся [BHĀṢĀP. 67].
+- **RU:** — 4〉 заключенный в чем-либо другом, — содержащийся [BHĀṢĀP. 67].
   <sub>attested</sub>
 
 **ppp_T22_5)** — 5〉 wohlhabend [AIT. BR. 4,4](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4).
@@ -132,13 +132,13 @@
 
 **mit_T36)** — Mit *abhivi* Absol. *˚vyāpya* bis — (Acc.) inclusive.
 
-- **RU:** — Mit *abhivi* Absol. *˚vyāpya* вплоть до — (Acc.) включительно.
+- **RU:** — С *abhivi* Absol. *˚vyāpya* вплоть до — (Acc.) включительно.
   <sub>attested</sub>
 
 **mit_T40_1)** — Mit *sam*
 — 1〉 erlangen, theilhaftig werden. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
 
-- **RU:** — Mit *sam*
+- **RU:** — С *sam*
 — 1〉 обретать, становиться причастным. *samāptavant* [91,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?91).
   <sub>attested</sub>
 
@@ -152,9 +152,9 @@
 - **RU:** — 3〉 достигать (по величине/качеству).
   <sub>attested</sub>
 
-**ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
+**ppp_T43)** — Partic. *samāpta* vollendet, beendigt, zum Abschluss gelangt. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A086_S009) = ≈крит. 14,88.9a fehlerhaft für *mamāptaḥ*.
 
-- **RU:** — Partic. *samāpta* завершённый, оконченный, доведённый до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) fehlerhaft für *mamāptaḥ*.
+- **RU:** — Partic. *samāpta* завершенный, оконченный, доведенный до конца. — *samāptaḥ* [MBH. 14,2561](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2561) = [≈Вульг. 14.86.9](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A086_S009) = ≈крит. 14,88.9a ошибочно вм. *mamāptaḥ*.
   <sub>attested</sub>
 
 **caus_T48_1)** — Caus.
@@ -186,19 +186,19 @@
 
 **mit_T54)** — Mit *anusam* Caus. dazu vollenden, nachher zu Stande bringen.
 
-- **RU:** — Mit *anusam* Caus. дополнительно завершать, впоследствии осуществлять.
+- **RU:** — С *anusam* Caus. дополнительно завершать, впоследствии осуществлять.
   <sub>attested</sub>
 
 **mit_T56_1)** — Mit *parisam* Pass.
 — 1〉 enthalten sein in (Loc.).
 
-- **RU:** — Mit *parisam* Pass.
+- **RU:** — С *parisam* Pass.
 — 1〉 содержаться в (Loc.).
   <sub>attested</sub>
 
 **mit_T56_2)** — 2〉 sich erstrecken auf, gehören zu (Loc. oder *prati*).
 
-- **RU:** — 2〉 распространяться на, относиться к (Loc. oder *prati*).
+- **RU:** — 2〉 распространяться на, относиться к (Loc. или *prati*).
   <sub>attested</sub>
 
 **mit_T56_3)** — 3〉 das Endziel erreichen.
@@ -207,15 +207,15 @@
   <sub>attested</sub>
 
 **ppp_T61_1)** — Partic. *parisamāpta*
-— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
+— 1〉 vollständig beendigt [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S269) = ≈крит. 01,1.206a.
 
 - **RU:** — Partic. *parisamāpta*
-— 1〉 полностью завершённый [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60).
+— 1〉 полностью завершенный [MBH. 1,223,60](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,223,60) = [≈Вульг. 1.1.269](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S269) = ≈крит. 01,1.206a.
   <sub>attested</sub>
 
 **ppp_T61_2)** — 2〉 vollendet, so v. a. auf dem Höhepunkt stehend [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
 
-- **RU:** — 2〉 совершенный, завершённый, так преим. достигший высшей точки [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
+- **RU:** — 2〉 совершенный, завершенный, так преим. достигший высшей точки [ŚĀK. 105](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?105).
   <sub>attested</sub>
 
 **caus_T66)** — Caus. vollenden [JĀBĀLOP. S. 444].

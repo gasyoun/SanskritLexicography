@@ -30,7 +30,7 @@
 
 **8-mit2)** — Mit *ni*, *nivāsita* umʼs Leben gebracht. v. l. *nipātita*.
 
-- **RU:** — С *ni*, *nivāsita* лишённый жизни, погубленный. v. l. *nipātita*.
+- **RU:** — С *ni*, *nivāsita* лишенный жизни, погубленный. v. l. *nipātita*.
   <sub>attested</sub>
 
 **8-mit3)** — Mit *nis* in *nirvāsana* 3〉.
@@ -73,9 +73,9 @@
 - **RU:** — С *abhivi* VI. 6.
   <sub>attested</sub>
 
-**5-vi)** **5.** √*vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
+**5-vi)** **5.** √*vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10) = [≈Вульг. 13.1.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S004) = ≈крит. 13,1.4a.
 
-- **RU:** **5.** √*vas* VI. Aor. *avāksam* (так все рукоп. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* вместо *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10).
+- **RU:** **5.** √*vas* VI. Aor. *avāksam* (так все рукоп. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* вместо *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10) = [≈Вульг. 13.1.4](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A001_S004) = ≈крит. 13,1.4a.
   <sub>attested</sub>
 
 **5-mit-vi6)** — Mit *vi* VI. 6.

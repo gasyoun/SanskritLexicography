@@ -11,9 +11,9 @@
 [EKĀCṢARAK.] im [ŚKDR.] ist *dhā* auch ein Name Bṛhaspati's.
 
 - **RU:** 2. *dhā* (= 1. *dhā*)
- 1) _adj._ nom. ag. в конце compp.; см. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* и т.д. Сокращённо *dha* в *adomadha, garbhadha* . По
+ 1) _adj._ nom. ag. в конце compp.; см. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* и т.д. Сокращенно *dha* в *adomadha, garbhadha* . По
 [MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) *dhā = dhāraka* (так
-[ŚKDR.] и [WILS.] вместо *dvāraka*) и *brahman*; nom. звучит здесь *dhā*, а не *dhās* (как
+[ŚKDR.] и [WILS.] вм. *dvāraka*) и *brahman*; nom. звучит здесь *dhā*, а не *dhās* (как
 [ŚKDR.] и [WILS.] верно указывают). По
 [EKĀCṢARAK.] в [ŚKDR.] *dhā* также имя Брихаспатис.
   <sub>lexicographic</sub>

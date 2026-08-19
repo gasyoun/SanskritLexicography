@@ -11,14 +11,14 @@
 - **RU:** — *prati* мед.
  1) противодействовать: *rakṣāṃsi*
 [ŚAT. BR. 9,2,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,3,3) *āśramapīḍā yathā na bhaviṣyati tathā pratiyatiṣyāmahe*
-(v. l. вместо *prayati˚*)
+(v. l. вм. *prayati˚*)
   <sub>attested</sub>
 
 **2)** [ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) — caus. zurückgeben, erwiedern: *vairāṇi, vairam* so v. a. Rache nehmen
-[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256)
+[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) = [≈Вульг. 3.235.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A235_S007) = ≈крит. 03,224.7a [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256) = [≈Вульг. 9.58.11](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A058_S011) = ≈крит. 09,57.10a
 
 - **RU:** [ŚĀK. 18,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,14) — caus. возвращать, отвечать: *vairāṇi, vairam* так преим. мстить
-[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256)
+[MBH. 3,14728.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14728) = [≈Вульг. 3.235.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A235_S007) = ≈крит. 03,224.7a [9,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3256) = [≈Вульг. 9.58.11](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U03_A058_S011) = ≈крит. 09,57.10a
   <sub>attested</sub>
 
 **cross-ref)** — Vgl. *pratiyātana* .

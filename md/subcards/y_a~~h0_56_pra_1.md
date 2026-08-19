@@ -11,8 +11,8 @@ Schol. zu [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) aufbrechen heiss
 [BHAṬṬ. 3,25.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,25)
 
 - **RU:** — ср. *prayā, prayāṇi* сл., *prayāman* сл., *prayiyu, gaṇeśabhujaṃgaprayāta, caṇḍavṛṣṭi˚, bhujaṃga˚* . — caus. *prayāpayamāṇa*
-[KĀŚ.] zu [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29) *prayāpyamāṇa* und *prayāpyamāna*
-схол. zu [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) велеть выступать в поход
+[KĀŚ.] к [P. 8,4,29.](https://ashtadhyayi.com/sutraani/8/4/29) *prayāpyamāṇa* и *prayāpyamāna*
+схол. к [P. 8,4,30.](https://ashtadhyayi.com/sutraani/8/4/30) велеть выступать в поход
 [ŚAT. BR. 11,8,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,8,1,3) ср. *prayāpaṇa* сл. — desid. желать отправиться в путь: *rājānaṃ prayiyāsantam*
 [ŚAT. BR. 14,7,1,44.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,44) — caus. vom desid.: побуждать кого-л. к тому, чтобы он хотел отправиться в путь: *prayiyāsayantaḥ*
 [BHAṬṬ. 3,25.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,25)

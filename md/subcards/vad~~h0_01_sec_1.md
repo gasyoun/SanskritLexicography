@@ -13,18 +13,18 @@ v. l. *saṃdeśane, bhāṣaṇe*)
   <sub>attested</sub>
 
 **caus. 1) Etwas sagen lassen; Jmd zum Reden veranlassen)** 1) Etwas sagen —, sprechen lassen: *ativādaṃ na pravadenna vādayedyaḥ*
-[MBH. 5,1270.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1270) Jmd zum Reden veranlassen, — auffordern: *vādito 'pi na vadati*
+[MBH. 5,1270.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1270) = [≈Вульг. 5.36.11](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S011) = ≈крит. 05,36.11a Jmd zum Reden veranlassen, — auffordern: *vādito 'pi na vadati*
 [Verz. d. Oxf. H. 156,a,24.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?156)
 
 - **RU:** 1) заставлять говорить что-л., побуждать к речи: *ativādaṃ na pravadenna vādayedyaḥ*
-[MBH. 5,1270.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1270) побуждать кого-л. говорить, призывать к речи: *vādito 'pi na vadati*
+[MBH. 5,1270.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1270) = [≈Вульг. 5.36.11](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A036_S011) = ≈крит. 05,36.11a побуждать кого-л. говорить, призывать к речи: *vādito 'pi na vadati*
 [Verz. d. Oxf. H. 156,a,24.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?156)
   <sub>attested</sub>
 
 **caus. 2) ertönen lassen, spielen (Musikinstrument))** — 2) ertönen —, erklingen lassen, spielen (ein musikalisches Instrument): act., selten med.: *vīṇām*
 [ŚAT. BR. 3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6) [13,1,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,1)
 [TBR. 3,9,14,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,14,1)
-[MBH. 3,1843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1843)
+[MBH. 3,1843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1843) = [≈Вульг. 3.46.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S026) = крит. —
 [R. GORR. 2,100,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,23)
 [Spr. 1523.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1523)
 [KATHĀS. 11,3.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,3) [34,159. fg.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,159) [49,23.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,23) [32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,32)
@@ -37,7 +37,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [ŚĀṄKH. ŚR. 17,3,13. 16.]
 [LĀṬY. 4,1,7.] *vāditrāṇi*
 [M. 4,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,64)
-[MBH. 3,12097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12097)
+[MBH. 3,12097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12097) = [≈Вульг. 3.168.71](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A168_S071) = ≈крит. 03,165.9c
 [BHĀG. P. 3,24,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,7) *ātodyāni*
 [KATHĀS. 34,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,171) [37,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,72) *tūryāṇi*
 [BHĀG. P. 4,1,53.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,53) *dundubhayo nedurdevamānavavāditāḥ*
@@ -54,11 +54,11 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [PAÑCAR. 3,8,10.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,8,10) *vādayāno nakhān*
 [HARIV. 10770.](https://sanskrit-lexicon-scans.github.io/hariv?10770) Statt des acc. ausnahmsweise der loc.: *vīṇāyām*
 [KATHĀS. 106,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,12) Ohne Ergänzung musiciren: *gāyannṛtyanvādayaṃśca*
-[MBH. 1,3206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3206) [4,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.305)
+[MBH. 1,3206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3206) = [≈Вульг. 1.76.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A076_S023) = ≈крит. 01,71.21c [4,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.305) = [≈Вульг. 4.11.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S008) = ≈крит. 04,10.8a
 [HARIV. 11029.](https://sanskrit-lexicon-scans.github.io/hariv?11029)
 [R. 1,34,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,13) ([35,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,35,12) [GORR.]). [2,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,4) *vādita* _n._ Instrumentalmusik: *gītavāditarudita*
 [GOBH. 3,3,22.]
-[MBH. 4,308. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.308)
+[MBH. 4,308. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.308) = [≈Вульг. 4.11.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S011) = ≈крит. 04,10.11a
 [Spr. 1766.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1766)
 [VARĀH. BṚH. S. 33,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,23)
 [BṚH. 27 (25),9.] *vādyamāna* _n._ dass.: *bherīśaṅkhamṛdaṅgānāṃ paṇavānāṃ sahasraśaḥ . vādyamānaṃ sa (vādyamānāni* die neuere Ausg.)
@@ -67,7 +67,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 - **RU:** — 2) заставлять звучать, играть (музыкальный инструмент): act., редко мед.: *vīṇām*
 [ŚAT. BR. 3,2,4,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,4,6) [13,1,5,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,5,1)
 [TBR. 3,9,14,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,9,14,1)
-[MBH. 3,1843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1843)
+[MBH. 3,1843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1843) = [≈Вульг. 3.46.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A046_S026) = крит. —
 [R. GORR. 2,100,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,23)
 [Spr. 1523.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1523)
 [KATHĀS. 11,3.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,3) [34,159. fg.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,159) [49,23.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,23) [32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,32)
@@ -80,7 +80,7 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [ŚĀṄKH. ŚR. 17,3,13. 16.]
 [LĀṬY. 4,1,7.] *vāditrāṇi*
 [M. 4,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,64)
-[MBH. 3,12097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12097)
+[MBH. 3,12097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12097) = [≈Вульг. 3.168.71](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A168_S071) = ≈крит. 03,165.9c
 [BHĀG. P. 3,24,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,24,7) *ātodyāni*
 [KATHĀS. 34,171.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,171) [37,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,72) *tūryāṇi*
 [BHĀG. P. 4,1,53.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,53) *dundubhayo nedurdevamānavavāditāḥ*
@@ -95,13 +95,13 @@ v. l. *saṃdeśane, bhāṣaṇe*)
 [GĪT. 5,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,9) *paṭahān*
 [MĀRK. P. 82,54.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?82,54) *ghaṇṭāṃ vādayānaḥ*
 [PAÑCAR. 3,8,10.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,8,10) *vādayāno nakhān*
-[HARIV. 10770.](https://sanskrit-lexicon-scans.github.io/hariv?10770) Вместо acc. исключительно loc.: *vīṇāyām*
+[HARIV. 10770.](https://sanskrit-lexicon-scans.github.io/hariv?10770) Вм. acc. исключительно loc.: *vīṇāyām*
 [KATHĀS. 106,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?106,12) Без дополнения — музицировать: *gāyannṛtyanvādayaṃśca*
-[MBH. 1,3206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3206) [4,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.305)
+[MBH. 1,3206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3206) = [≈Вульг. 1.76.23](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A076_S023) = ≈крит. 01,71.21c [4,305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.305) = [≈Вульг. 4.11.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S008) = ≈крит. 04,10.8a
 [HARIV. 11029.](https://sanskrit-lexicon-scans.github.io/hariv?11029)
 [R. 1,34,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,34,13) ([35,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,35,12) [GORR.]). [2,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,4) *vādita* _n._ инструментальная музыка: *gītavāditarudita*
 [GOBH. 3,3,22.]
-[MBH. 4,308. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.308)
+[MBH. 4,308. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.308) = [≈Вульг. 4.11.11](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A011_S011) = ≈крит. 04,10.11a
 [Spr. 1766.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1766)
 [VARĀH. BṚH. S. 33,23.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,23)
 [BṚH. 27 (25),9.] *vādyamāna* _n._ то же: *bherīśaṅkhamṛdaṅgānāṃ paṇavānāṃ sahasraśaḥ . vādyamānaṃ sa (vādyamānāni* более новое изд.)
@@ -121,7 +121,7 @@ Schol. zu [P. 1,1,58](https://ashtadhyayi.com/sutraani/1/1/58), Vārtt. 2. [7,4,
 
 - **RU:** — 4) произносить, читать вслух: *nāndīṃ ca vādayāmāsa pradyumno gada eva ca*
 [HARIV. 8692.](https://sanskrit-lexicon-scans.github.io/hariv?8692) более новое изд. читает *nāndiṃ* и
-[NĪLAK.] трактует слово ошибочно в значении знач. музыкального инструмента.
+[NĪLAK.] трактует слово ошибочно в знач. музыкального инструмента.
   <sub>attested</sub>
 
 **caus. cross-ref)** — Vgl. *jalavādita* .

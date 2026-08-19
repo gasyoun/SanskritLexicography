@@ -5,11 +5,11 @@
 
 **5)** — *upā*
  5) *nādya śokamupādade* (so die [ed. Bomb.])
-[MBH. 7,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.268)
+[MBH. 7,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.268) = [≈Вульг. 7.9.8](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A009_S008) = ≈крит. 07,8.8a
 
 - **RU:** — *upā*
- 5) *nādya śokamupādade* (так [ed. Bomb.])
-[MBH. 7,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.268)
+ 5) *nādya śokamupādade* (так [Бомбейская ред.])
+[MBH. 7,268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.268) = [≈Вульг. 7.9.8](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A009_S008) = ≈крит. 07,8.8a
   <sub>attested</sub>
 
 **6)** — 6) *garbhaśayyāmupādāya bhūjyate paurvadehikam* von dem Augenblicke an, dass man im Mutterleibe liegt,

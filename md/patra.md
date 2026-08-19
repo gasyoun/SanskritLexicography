@@ -32,9 +32,9 @@ _PWG article — 1 sub-card(s), 12 sense(s) · RU 12/12 · EN 0/12_
 - **RU:** [NWS: Olivelle 2015 : 235] [Śā , Soc] сущ. n. юридический документ. BṛhSm 1.6.12 . иногда синоним *jayapatra* — документа о победе, выдаваемого выигравшей стороне в судебном деле
   <sub>attested</sub>
 
-**NWS-4)** [NWS: Otter 2010 : 236] [Śā , Art] leaf, foliage. s.v. pattra (pw). Meister 1988 (2.1) : 408 > Śā , Art , 11. Jh.? , Dhārā? > Subst n a kind of moulding. SamarāS 28.25c . s.v. pattra (pw)
+**NWS-4)** [NWS: Otter 2010 : 236] [Śā , Art] leaf, foliage. s.v. pattra (pw). Meister 1988 (2.1) : 408 > Śā , Art (11. Jh.? , Dhārā?) > Subst n a kind of moulding. SamarāS 28.25c . s.v. pattra (pw)
 
-- **RU:** [NWS: Otter 2010 : 236] [Śā , Art] лист, листва. s.v. pattra (pw). Meister 1988 (2.1) : 408 > [Śā , Art , 11. Jh.? , Dhārā?] сущ. n. разновидность лепного орнамента. SamarāS 28.25c . s.v. pattra (pw)
+- **RU:** [NWS: Otter 2010 : 236] [Śā , Art] лист, листва. s.v. pattra (pw). Meister 1988 (2.1) : 408 > [Śā, Art] (11. Jh.? , Dhārā?) сущ. n. разновидность лепного орнамента. SamarāS 28.25c . s.v. pattra (pw)
   <sub>lexicographic</sub>
 
 **NWS-5)** [NWS: Hoernle 1908 : 288] [Śā , Med] leaf. Hoernle 1893-1912 (I) 1.9 . esp. leaves of Cinnamomum zeylanicum , cinnamon. Hoernle 1893-1912 (I) 7.91 . [ vegetable drug. ]

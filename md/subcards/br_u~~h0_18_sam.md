@@ -12,9 +12,9 @@
 
 **2)** [R. 4,50,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,4) sich bereden, übereinkommen: *samanyeṣu bravāvahai*
 [ṚV. 1,30,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.06) zu Jmd Etwas sprechen, mit dopp. acc.: *paruṣaṃ tvāṃ samabruvam*
-[MBH. 6,5828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5828)
+[MBH. 6,5828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5828) = [≈Вульг. 6.122.11](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A122_S011) = ≈крит. 06,117.10c
 
 - **RU:** [R. 4,50,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,50,4) договариваться, приходить к соглашению: *samanyeṣu bravāvahai*
 [ṚV. 1,30,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.06) говорить кому-либо что-либо, обращаться к кому-либо (dopp. acc.): *paruṣaṃ tvāṃ samabruvam*
-[MBH. 6,5828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5828)
+[MBH. 6,5828.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5828) = [≈Вульг. 6.122.11](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A122_S011) = ≈крит. 06,117.10c
   <sub>attested</sub>

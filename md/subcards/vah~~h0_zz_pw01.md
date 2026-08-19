@@ -15,7 +15,7 @@
 
 **4)** — 4〉 heimführen, heirathen (ein Weib).
 
-- **RU:** — 4) приводить в дом, брать в жёны (женщину).
+- **RU:** — 4) приводить в дом, брать в жены (женщину).
   <sub>attested</sub>
 
 **mit1-intro)** — Mit *upā* herbeiführen.
@@ -75,7 +75,7 @@
 
 **mit5-4)** — 4〉 wegführen (die junge Frau aus dem Vaterhaus), überh. heimführen, heirathen. *udūḍhā* geehelicht.
 
-- **RU:** — 4) уводить (молодую женщину из отцовского дома), вообще приводить в дом, брать в жёны. *udūḍhā* взятая в жёны.
+- **RU:** — 4) уводить (молодую женщину из отцовского дома), вообще приводить в дом, брать в жены. *udūḍhā* взятая в жены.
   <sub>attested</sub>
 
 **mit5-5)** — 5〉 zuführen, bringen, darbringen.
@@ -85,7 +85,7 @@
 
 **mit5-6)** — 6〉 tragen, — auf (Instr.). *bhartāram* so v. a. auf sich liegen haben; *mahīm* oder *rājyam* so v. a. regieren; *manasā* im Herzen tragen, so v. a. gedenken.
 
-- **RU:** — 6) нести — на (Instr.). *bhartāram* так преим. нести на себе (какую-л. обязанность); *mahīm* или *rājyam* так преим. управлять; *manasā* носить в сердце, так преим. помнить, хранить в памяти.
+- **RU:** — 6) нести — на (Ins.). *bhartāram* так преим. нести на себе (какую-л. обязанность); *mahīm* или *rājyam* так преим. управлять; *manasā* носить в сердце, так преим. помнить, хранить в памяти.
   <sub>attested</sub>
 
 **mit5-7)** — 7〉 ertragen, erdulden.
@@ -125,12 +125,12 @@
 
 **mitT26-1)** — 1〉 verheirathen (ein Mädchen oder einen Mann), — mit (Instr.) [HEM. PAR. 1,210. 216].
 
-- **RU:** — 1) выдавать замуж / женить (девушку или мужчину), — с (Instr.) [HEM. PAR. 1,210. 216].
+- **RU:** — 1) выдавать замуж / женить (девушку или мужчину), — с (Ins.) [HEM. PAR. 1,210. 216].
   <sub>attested</sub>
 
 **mitT26-2)** — 2〉 heimführen, heirathen (ein Mädchen).
 
-- **RU:** — 2) приводить в дом, брать в жёны (девушку).
+- **RU:** — 2) приводить в дом, брать в жены (девушку).
   <sub>attested</sub>
 
 **mit29)** — Mit *prod* äussern, an den Tag legen.
@@ -150,7 +150,7 @@
 
 **mit30-2)** — 2〉 heimführen, heirathen (ein Mädchen).
 
-- **RU:** — 2) приводить в дом, брать в жёны (девушку).
+- **RU:** — 2) приводить в дом, брать в жены (девушку).
   <sub>attested</sub>
 
 **mit30-3)** — 3〉 aufheben.
@@ -185,7 +185,7 @@
 
 **mit35-1)** — 1〉 herbeiführen, bringen, verschaffen. *upoḍha* herbeigeführt, bewirkt.
 
-- **RU:** — 1) приводить, приносить, доставлять. *upoḍha* приведённый, вызванный (произведённый).
+- **RU:** — 1) приводить, приносить, доставлять. *upoḍha* приведенный, вызванный (произведенный).
   <sub>attested</sub>
 
 **mit35-2)** — 2〉 Jmd zu Etwas bringen, — verleiten; mit doppeltem Acc.
@@ -280,7 +280,7 @@
 
 **mit54-5)** — 5〉 sein Leben unterhalten, leben von (Instr.) [CAMPAKA. 147].
 
-- **RU:** — 5) поддерживать своё существование, жить за счёт (Instr.) [CAMPAKA. 147].
+- **RU:** — 5) поддерживать свое существование, жить за счет (Ins.) [CAMPAKA. 147].
   <sub>attested</sub>
 
 **mit54-6)** — 6〉 Jmd anstehen, sich geziemen für (Gen.) [HEM. PAR. 7,42].
@@ -335,7 +335,7 @@
 
 **mit68-4)** — 4〉 den Hochzeitszug oder die Braut führen (vom Vaterhaus in das des Gatten); heimführen, heirathen.
 
-- **RU:** — 4) вести свадебное шествие или вести невесту (из отцовского дома в дом супруга); приводить в дом, брать в жёны.
+- **RU:** — 4) вести свадебное шествие или вести невесту (из отцовского дома в дом супруга); приводить в дом, брать в жены.
   <sub>attested</sub>
 
 **mit69-intro)** — Mit *pra*
@@ -350,7 +350,7 @@
 
 **mit69-1a)** — a〉 weiterführen, vorwärts ziehen, — treiben ([ĀPAST. 1,11,8]).
 
-- **RU:** — a) вести дальше, тянуть вперёд, — гнать ([ĀPAST. 1,11,8]).
+- **RU:** — a) вести дальше, тянуть вперед, — гнать ([ĀPAST. 1,11,8]).
   <sub>attested</sub>
 
 **mit69-1b)** — b〉 im Fliessen entführen, wegspülen.
@@ -380,7 +380,7 @@
 
 **mit69-2a)** — a〉 vorwärts fahren, davonfahren (Med. [ṚV.]).
 
-- **RU:** — a) ехать вперёд, отъезжать (Med. [ṚV.]).
+- **RU:** — a) ехать вперед, отъезжать (Med. [ṚV.]).
   <sub>attested</sub>
 
 **mit69-2b)** — b〉 hinfliessen, fliessen.
@@ -413,9 +413,9 @@
 - **RU:** — 3) приводить в движение, запускать.
   <sub>attested</sub>
 
-**mitT76-4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) fehlerhaft für *˚pravāhinam*.
+**mitT76-4)** — 4〉 *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A005_S016) = ≈крит. 06,6.15c fehlerhaft für *˚pravāhinam*.
 
-- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) ошибочно вместо *˚pravāhinam*.
+- **RU:** — 4) *lokapravāhitam* [MBH. 6,191](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.191) = [≈Вульг. 6.5.16](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A005_S016) = ≈крит. 06,6.15c ошибочно вм. *˚pravāhinam*.
   <sub>lexicographic</sub>
 
 **mit83)** — Mit *atipra* darüber hinaus führen, — ziehen.
@@ -435,7 +435,7 @@
 
 **mit84-2)** — 2〉 vorwärts kommen.
 
-- **RU:** — 2) продвигаться вперёд.
+- **RU:** — 2) продвигаться вперед.
   <sub>attested</sub>
 
 **mit85)** — Mit *abhipra* hinführen zu.
@@ -465,7 +465,7 @@
 
 **mit93-2)** — 2〉 wegführen (die Braut aus dem Elternhause); heimführen, heirathen (ein Mädchen) überh.; eine eheliche Verbindung schliessen, — mit (Instr.) [GOBH. 2,10,6]. Med. eine Hochzeit feiern; sich verheirathen. *mitho vivahamānāḥ* untereinander heirathend [ĀPAST. 1,29,8]. *vyūḍhā* geheirathet, verheirathet.
 
-- **RU:** — 2) уводить (невесту из родительского дома); приводить в дом, брать в жёны (девушку) вообще; заключать брачный союз, — с (Instr.) [GOBH. 2,10,6]. Med. справлять свадьбу; вступать в брак. *mitho vivahamānāḥ* вступающие в брак между собой [ĀPAST. 1,29,8]. *vyūḍhā* женатый, состоящий в браке.
+- **RU:** — 2) уводить (невесту из родительского дома); приводить в дом, брать в жены (девушку) вообще; заключать брачный союз, — с (Ins.) [GOBH. 2,10,6]. Med. справлять свадьбу; вступать в брак. *mitho vivahamānāḥ* вступающие в брак между собой [ĀPAST. 1,29,8]. *vyūḍhā* женатый, состоящий в браке.
   <sub>attested</sub>
 
 **mitT101-intro)** — Caus. (*vī˚* [PAÑCAD.])
@@ -480,12 +480,12 @@
 
 **mitT101-2)** — 2〉 Med. heimführen, heirathen ein Mädchen.
 
-- **RU:** — 2) Med. приводить в дом, брать в жёны девушку.
+- **RU:** — 2) Med. приводить в дом, брать в жены девушку.
   <sub>attested</sub>
 
 **mit111-113)** — Mit **saṃvi* Med. mit Andern (Instr.) eine Ehe eingehen.
 
-- **RU:** — С **saṃvi* Med. с другими (Instr.) вступать в брак.
+- **RU:** — С **saṃvi* Med. с другими (Ins.) вступать в брак.
   <sub>lexicographic</sub>
 
 **mit114-intro)** — Mit *sam*

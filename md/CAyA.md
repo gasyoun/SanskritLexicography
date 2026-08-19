@@ -7,24 +7,24 @@ _PWG article — 4 sub-card(s), 24 sense(s) · RU 24/24 · EN 0/24_
 `_c_ay_a~~h0_zz_nws00`
 
 
-**NWS[Ved,unsp])** chāyā́ Ved , unsp > shadow. ṚV X,121,2 . Vedic Hymns I : 477
+**NWS[Ved,unsp])** chāyā́ Ved , unsp > shadow. [ṚV X,121,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.121.html#rv10.121.02) . Vedic Hymns I : 477
 
-- **RU:** тень. ṚV X,121,2 . Vedic Hymns I : 477
+- **RU:** тень. [ṚV X,121,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.121.html#rv10.121.02) . Vedic Hymns I : 477
   <sub>attested</sub>
 
-**NWS[Ved,unsp])** Ved , unsp > shadow. ṚV I,73,8 . Vedic Hymns II : 442
+**NWS[Ved,unsp])** Ved , unsp > shadow. [ṚV I,73,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.073.html#rv01.073.08) . Vedic Hymns II : 442
 
-- **RU:** тень. ṚV I,73,8 . Vedic Hymns II : 442
+- **RU:** тень. [ṚV I,73,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.073.html#rv01.073.08) . Vedic Hymns II : 442
   <sub>attested</sub>
 
-**NWS[Ved,unsp])** Ved , unsp > Subst f Schatten. ṚV 1,73,8 . Geldner 1907 : 64 > , Geldner 1907 (N) : 229
+**NWS[Ved,unsp])** Ved , unsp > Subst f Schatten. [ṚV 1,73,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.073.html#rv01.073.08) . Geldner 1907 : 64 > , Geldner 1907 (N) : 229
 
-- **RU:** Subst f тень. ṚV 1,73,8 . Geldner 1907 : 64 , Geldner 1907 (N) : 229
+- **RU:** Subst f тень. [ṚV 1,73,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.073.html#rv01.073.08) . Geldner 1907 : 64 , Geldner 1907 (N) : 229
   <sub>attested</sub>
 
-**NWS[Gen,unsp])** chāyā Gen , unsp > Subst f shade, shadow, a shady place. ṚV i, 73, 8; ii, 33, 6; vi, 16, 38 , AV , VSaṃ v, xv , AB vii, 12 , ŚB . [ 'a covered place, house'. Naigh(Y) iii, 4 . ] the shadow of a gnomon. Sūryas . shelter, protection. Hit iii, 8, 1/2 . a copy (of a MS). a little (ifc). Veṇīs vi, 13/14, 1 . (N of a Śakti). Hemādri i, 5, 197 . a metre of 4 x 19 syllables. N of Kātyāyanī. Lex(MW) . [ or Durgā. W(MW) . ] MW : 406 (s.v. chāya )
+**NWS[Gen,unsp])** chāyā Gen , unsp > Subst f shade, shadow, a shady place. [ṚV i, 73, 8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.073.html#rv01.073.08); ii, 33, 6; vi, 16, 38 , AV , VSaṃ v, xv , AB vii, 12 , ŚB . [ 'a covered place, house'. Naigh(Y) iii, 4 . ] the shadow of a gnomon. Sūryas . shelter, protection. Hit iii, 8, 1/2 . a copy (of a MS). a little (ifc). Veṇīs vi, 13/14, 1 . (N of a Śakti). Hemādri i, 5, 197 . a metre of 4 x 19 syllables. N of Kātyāyanī. Lex(MW) . [ or Durgā. W(MW) . ] MW : 406 (s.v. chāya )
 
-- **RU:** Subst f тень, тенистое место. ṚV i, 73, 8; ii, 33, 6; vi, 16, 38 , AV , VSaṃ v, xv , AB vii, 12 , ŚB . [«крытое место, дом». Naigh(Y) iii, 4 .] тень гномона. Sūryas . укрытие, защита. Hit iii, 8, 1/2 . копия (рукописи). немного (в конце сложного слова). Veṇīs vi, 13/14, 1 . (имя некой Шакти). Hemādri i, 5, 197 . метр из 4×19 слогов. имя Kātyāyanī. Lex(MW) . [или Durgā. W(MW) .] MW : 406 (s.v. chāya )
+- **RU:** Subst f тень, тенистое место. [ṚV i, 73, 8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.073.html#rv01.073.08); ii, 33, 6; vi, 16, 38 , AV , VSaṃ v, xv , AB vii, 12 , ŚB . [«крытое место, дом». Naigh(Y) iii, 4 .] тень гномона. Sūryas . укрытие, защита. Hit iii, 8, 1/2 . копия (рукописи). немного (в конце сложного слова). Veṇīs vi, 13/14, 1 . (имя некой Шакти). Hemādri i, 5, 197 . метр из 4×19 слогов. имя Kātyāyanī. Lex(MW) . [или Durgā. W(MW) .] MW : 406 (s.v. chāya )
   <sub>mixed</sub>
 
 **NWS[Gen,unsp])** Gen , unsp > séjour, refuge. Renou 1997, S. 842 . Renou 1997 : 978
@@ -104,7 +104,7 @@ _PWG article — 4 sub-card(s), 24 sense(s) · RU 24/24 · EN 0/24_
 
 **PWKVN-1)** *chāya*, *chāyā* bedeutet nach [J. BURGESS] auch Abschrift, Copie.
 
-- **RU:** *chāya*, *chāyā* по [J. BURGESS] означает также «копия, список».
+- **RU:** *chāya*, *chāyā* по [J. BURGESS] означает также копия, список.
   <sub>lexicographic</sub>
 
 **PWKVN-2)** *chāya*, *˚yā* II. 4.

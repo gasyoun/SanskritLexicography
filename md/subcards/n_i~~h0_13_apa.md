@@ -5,14 +5,14 @@
 
 **1))** — *apa*
  1) wegführen, abführen: *yatra saṃsaptakāḥ pārthamapaninyū raṇājirāt*
-[MBH. 1,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.530) [6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) [3,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.745)
+[MBH. 1,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.530) = [≈Вульг. 1.2.301](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S301) = ≈крит. 01,2.182a [6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) = [≈Вульг. 1.153.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S004) = ≈крит. 01,140.4a [3,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.745) = [≈Вульг. 3.18.29](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A018_S029) = ≈крит. 03,19.29a
 [HARIV. 4791.](https://sanskrit-lexicon-scans.github.io/hariv?4791)
 [R. 2,68,45.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,45) [3,46,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,12) [13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,13) *tamaṣyapanayet* entfernen (von einer Cerimonie)
 [M. 3,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,242)
 
 - **RU:** — *apa*
  1) уводить, отводить: *yatra saṃsaptakāḥ pārthamapaninyū raṇājirāt*
-[MBH. 1,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.530) [6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) [3,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.745)
+[MBH. 1,530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.530) = [≈Вульг. 1.2.301](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S301) = ≈крит. 01,2.182a [6015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6015) = [≈Вульг. 1.153.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A153_S004) = ≈крит. 01,140.4a [3,745.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.745) = [≈Вульг. 3.18.29](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A018_S029) = ≈крит. 03,19.29a
 [HARIV. 4791.](https://sanskrit-lexicon-scans.github.io/hariv?4791)
 [R. 2,68,45.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,45) [3,46,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,12) [13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,46,13) *tamaṣyapanayet* удалять (от обряда)
 [M. 3,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,242)
@@ -24,7 +24,7 @@ stehlen, fortnehmen, wegschleppen: *apanītāsmi bhīṣmeṇa*
 [MBH. 5,6087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6087) *apanīya śacīṃ bhāryāṃ śakyamindrasya jīvitum*
 [R. 3,54,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,26) *ayaṃ parvaṇi vegena yajñiyāśvo 'panīyate*
 [R. SCHL. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) *kena — apanītāni visāni*
-[MBH. 13,4511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4511) *yadidaṃ rājyamapanītamanāryayā*
+[MBH. 13,4511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4511) = [≈Вульг. 13.93.116](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A093_S116) = ≈крит. 13,95.55c *yadidaṃ rājyamapanītamanāryayā*
 [R. GORR. 2,117,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,117,7) *dhātuḥ suptaśaktermukhebhyaḥ śrutigaṇamapanītam*
 [BHĀG. P. 8,24,61.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,61) *yadi bhāṇḍānyapanayetkākaḥ*
 [VARĀH. BṚH. S. 94,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?94,13)
@@ -33,7 +33,7 @@ stehlen, fortnehmen, wegschleppen: *apanītāsmi bhīṣmeṇa*
 [MBH. 5,6087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6087) *apanīya śacīṃ bhāryāṃ śakyamindrasya jīvitum*
 [R. 3,54,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,26) *ayaṃ parvaṇi vegena yajñiyāśvo 'panīyate*
 [R. SCHL. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) *kena — apanītāni visāni*
-[MBH. 13,4511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4511) *yadidaṃ rājyamapanītamanāryayā*
+[MBH. 13,4511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4511) = [≈Вульг. 13.93.116](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A093_S116) = ≈крит. 13,95.55c *yadidaṃ rājyamapanītamanāryayā*
 [R. GORR. 2,117,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,117,7) *dhātuḥ suptaśaktermukhebhyaḥ śrutigaṇamapanītam*
 [BHĀG. P. 8,24,61.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,61) *yadi bhāṇḍānyapanayetkākaḥ*
 [VARĀH. BṚH. S. 94,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?94,13)
@@ -43,12 +43,12 @@ stehlen, fortnehmen, wegschleppen: *apanītāsmi bhīṣmeṇa*
 [BHAṬṬ. 16,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,30) *yantram*
 [SUŚR. 2,47,11.] *jalāyukām*
 [1,42,9.] *ātmanastu tataḥ sūto hayānāṃ ca — mama cāpanayāmāsa śalyān*
-[MBH. 5,7136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7136) *dhvajaṃ siṃhaṃ rathāttasmādapanīya*
-[4,1437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1437) [PAÑCAT. ed. orn. 52,19.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?52,19) *tailairlohāmlagandhaṃ śiraso 'panīya*
+[MBH. 5,7136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7136) = [≈Вульг. 5.179.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A179_S013) = ≈крит. 05,180.13a *dhvajaṃ siṃhaṃ rathāttasmādapanīya*
+[4,1437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1437) = [≈Вульг. 4.46.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A046_S001) = ≈крит. 04,41.1a [PAÑCAT. ed. orn. 52,19.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?52,19) *tailairlohāmlagandhaṃ śiraso 'panīya*
 [VARĀH. BṚH. S. 76,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?76,4) (im Sūtra *śaścho 'ṭi) aṭītyapanīyāmīti vaktavyam*
 Schol. zu [P. 8,4,63](https://ashtadhyayi.com/sutraani/8/4/63), Vārtt. *darpaṃ tasya*
 [HARIV. 15078.](https://sanskrit-lexicon-scans.github.io/hariv?15078) *rāmaste sumahadduḥkhaṃ śokaṃ caivāpaneṣyati*
-[MBH. 5,6047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6047)
+[MBH. 5,6047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6047) = [≈Вульг. 5.176.24](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S024) = ≈крит. 05,174.21c
 [R. 2,83,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,9) [3,35,68.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,68) *ārtānāṃ bhayam*
 [ŚĀK. 154.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?154) *no vipādam*
 [BHĀG. P. 3,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,25) *ārtim*
@@ -66,23 +66,23 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 [BHAṬṬ. 16,30.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,30) *yantram*
 [SUŚR. 2,47,11.] *jalāyukām*
 [1,42,9.] *ātmanastu tataḥ sūto hayānāṃ ca — mama cāpanayāmāsa śalyān*
-[MBH. 5,7136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7136) *dhvajaṃ siṃhaṃ rathāttasmādapanīya*
-[4,1437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1437) [PAÑCAT. ed. orn. 52,19.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?52,19) *tailairlohāmlagandhaṃ śiraso 'panīya*
+[MBH. 5,7136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7136) = [≈Вульг. 5.179.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A179_S013) = ≈крит. 05,180.13a *dhvajaṃ siṃhaṃ rathāttasmādapanīya*
+[4,1437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1437) = [≈Вульг. 4.46.1](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A046_S001) = ≈крит. 04,41.1a [PAÑCAT. ed. orn. 52,19.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?52,19) *tailairlohāmlagandhaṃ śiraso 'panīya*
 [VARĀH. BṚH. S. 76,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?76,4) (im Сутра *śaścho 'ṭi) aṭītyapanīyāmīti vaktavyam*
-схол. zu [P. 8,4,63](https://ashtadhyayi.com/sutraani/8/4/63), Вартт. *darpaṃ tasya*
+схол. к [P. 8,4,63](https://ashtadhyayi.com/sutraani/8/4/63), Вартт. *darpaṃ tasya*
 [HARIV. 15078.](https://sanskrit-lexicon-scans.github.io/hariv?15078) *rāmaste sumahadduḥkhaṃ śokaṃ caivāpaneṣyati*
-[MBH. 5,6047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6047)
+[MBH. 5,6047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6047) = [≈Вульг. 5.176.24](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S024) = ≈крит. 05,174.21c
 [R. 2,83,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,9) [3,35,68.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,68) *ārtānāṃ bhayam*
 [ŚĀK. 154.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?154) *no vipādam*
 [BHĀG. P. 3,9,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,9,25) *ārtim*
 [6,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,7,31) *tṛṣṇām*
 [MṚCCH. 19,16.] *ajñānam*
-[ŚAṂK.] zu [BṚH. ĀR. UP. S. 10.] *bhrāntim*
-[KUMĀRILA] bei [MÜLLER, SL. 182, N.] *jalena kaḥ śītamapanayati*
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 10.] *bhrāntim*
+[KUMĀRILA] у [MÜLLER, SL. 182, N.] *jalena kaḥ śītamapanayati*
 [PAÑCAT. I,353.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,353) *me kṛtaghnatādoṣam*
 [214,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?214,5) *paśutvamanayoḥ*
 [PRAB. 59,11.] *śuklapaṭasya śauklyaṃ rāgeṇa*
-схол. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* выбросить что-л. из головы: *brahmahatyākṛtaṃ pāpaṃ hṛdayādapanīyatām* so преим. не думай, что ты взял на себя вину за убийство брахмана,
+схол. к [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* выбросить что-л. из головы: *brahmahatyākṛtaṃ pāpaṃ hṛdayādapanīyatām* so преим. не думай, что ты взял на себя вину за убийство брахмана,
 [DAŚ. 1,47.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,47)
   <sub>attested</sub>
 
@@ -93,7 +93,7 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 [DHŪRTAS. 96,1.] *vadhyamālāṃ cārudattasya kaṇṭhādapanīya*
 [MṚCCH. 176,8.] *virahamivāpanayāmi payodhararodhakamurasi dukūlam*
 [GĪT. 12,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,4) *apanītakavaca*
-[MBH. 7,8192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8192) *apanītaparyāṇam — turagottamam*
+[MBH. 7,8192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8192) = [≈Вульг. 7.180.15](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A180_S015) = ≈крит. 07,155.15a *apanītaparyāṇam — turagottamam*
 [VID. 46.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?46) *apanayantu bhavatyo mṛgayāveśam* ablegen
 [ŚĀK. 24,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,15) *apanīya vibhūṣaṇāni*
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042) *apanīya tataḥ kaṇṭhātpuṣpadāma*
@@ -108,7 +108,7 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 [DHŪRTAS. 96,1.] *vadhyamālāṃ cārudattasya kaṇṭhādapanīya*
 [MṚCCH. 176,8.] *virahamivāpanayāmi payodhararodhakamurasi dukūlam*
 [GĪT. 12,4.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,4) *apanītakavaca*
-[MBH. 7,8192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8192) *apanītaparyāṇam — turagottamam*
+[MBH. 7,8192.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8192) = [≈Вульг. 7.180.15](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A180_S015) = ≈крит. 07,155.15a *apanītaparyāṇam — turagottamam*
 [VID. 46.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?46) *apanayantu bhavatyo mṛgayāveśam* слагать
 [ŚĀK. 24,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?24,15) *apanīya vibhūṣaṇāni*
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042) *apanīya tataḥ kaṇṭhātpuṣpadāma*
@@ -121,7 +121,7 @@ Schol. zu [KAP. 1,10.] [KIR. 5,46.] *hṛdayāt* sich Etwas aus dem Sinne schlag
 Schol. zu [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
 
 - **RU:** — 5) извлекать, добывать из чего-л.: *tāpasā iṅgudībhyastailamapanayanti dīpārtham*
-схол. zu [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
+схол. к [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
   <sub>attested</sub>
 
 **6))** — 6) läugnen, in Abrede stellen: *nirdiśya vā deśādikaṃ naitanmayā nirdiṣṭamiti apanayati*
@@ -129,32 +129,32 @@ Schol. zu [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?
 zu [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59)
 
 - **RU:** — 6) отрицать, отвергать: *nirdiśya vā deśādikaṃ naitanmayā nirdiṣṭamiti apanayati*
-[KULL.] zu [M. 8,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,53) *yaḥ pratyarthī yatparimāṇadhanamapanayati* тот же
-zu [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59)
+[KULL.] к [M. 8,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,53) *yaḥ pratyarthī yatparimāṇadhanamapanayati* тот же
+к [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,59)
   <sub>attested</sub>
 
 **7))** — 7) ausnehmen, ausschliessen (aus einer Regel)
 Schol. zu [ṚV. PRĀT. 11,4.]
 
 - **RU:** — 7) исключать (из правила)
-схол. zu [ṚV. PRĀT. 11,4.]
+схол. к [ṚV. PRĀT. 11,4.]
   <sub>attested</sub>
 
 **8))** — 8) *apanīta* abgeführt von so v. a. im Widerspruch stehend mit: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
 [R. 3,55,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,40)
 
-- **RU:** — 8) *apanīta* отведённый от, так преим. находящийся в противоречии с: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
+- **RU:** — 8) *apanīta* отведенный от, так преим. находящийся в противоречии с: *tattvadharmāpanītasya dṛśyate karmaṇaḥ phalam*
 [R. 3,55,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,40)
   <sub>attested</sub>
 
 **9))** — 9) *apanīta* schlecht ausgeführt, verpfuscht: *apanītaṃ sunītena yo 'rthaṃ pratyāninīṣate*
-[MBH. 5,1499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1499) _n._ ein unkluges —, schlechtes Benehmen
-[6,585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.585) [7,8294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8294) [13,4640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4640) [R. 3,66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,24) Gehört eigentlich nicht hierher, da das Wort in *apa + nīta* zu zerlegen ist (vgl. 2. *apanaya*). — Die Bed. von *apanīyate*
+[MBH. 5,1499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1499) = [≈Вульг. 5.39.54](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A039_S054) = ≈крит. 05,39.39c _n._ ein unkluges —, schlechtes Benehmen
+[6,585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.585) = [≈Вульг. 6.14.78](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S078) = ≈крит. 06,15.73c [7,8294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8294) [13,4640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4640) = [≈Вульг. 13.96.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A096_S012) = ≈крит. 13,98.12a [R. 3,66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,24) Gehört eigentlich nicht hierher, da das Wort in *apa + nīta* zu zerlegen ist (vgl. 2. *apanaya*). — Die Bed. von *apanīyate*
 [BHĀG. P. 5,18,33](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,33) ist uns nicht recht klar.
 
 - **RU:** — 9) *apanīta* плохо исполненный, скверно сделанный: *apanītaṃ sunītena yo 'rthaṃ pratyāninīṣate*
-[MBH. 5,1499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1499) _n._ неразумное —, дурное поведение
-[6,585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.585) [7,8294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8294) [13,4640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4640) [R. 3,66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,24) Собственно сюда не относится, так как слово разлагается на *apa + nīta* (ср. 2. *apanaya*). — знач. от *apanīyate*
+[MBH. 5,1499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1499) = [≈Вульг. 5.39.54](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A039_S054) = ≈крит. 05,39.39c _n._ неразумное —, дурное поведение
+[6,585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.585) = [≈Вульг. 6.14.78](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S078) = ≈крит. 06,15.73c [7,8294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8294) [13,4640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4640) = [≈Вульг. 13.96.12](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A096_S012) = ≈крит. 13,98.12a [R. 3,66,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,66,24) Собственно сюда не относится, так как слово разлагается на *apa + nīta* (ср. 2. *apanaya*). — знач. от *apanīyate*
 [BHĀG. P. 5,18,33](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,33) нам не вполне ясно.
   <sub>attested</sub>
 
@@ -164,5 +164,5 @@ Schol. zu [ṚV. PRĀT. 11,4.]
 
 - **RU:** — ср. *apanaya, ˚nayana* . — desid. желать удалить: *andhatamasamandhakāreṇāpaninīṣati*
 [PRAB. 108,18.] *imāṃ śaṅkāmapaninīṣan*
-[KULL.] zu [M. 1,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,27)
+[KULL.] к [M. 1,27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,27)
   <sub>attested</sub>

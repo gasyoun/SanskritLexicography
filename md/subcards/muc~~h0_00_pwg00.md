@@ -14,8 +14,8 @@
 - **RU:** 1. *muc*, *muñcati, ˚te*
 [DHĀTUP. 28,136.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28)
 [P. 7,1,59.](https://ashtadhyayi.com/sutraani/7/1/59)
-[VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* und *amugdhvam, muñcātu*
-[Ind. St. 5,340. 363.] *amucat* und *amukta*
+[VOP. 11,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,4) ved. *mucanti* и *amugdhvam, muñcātu*
+[Ind. St. 5,340. 363.] *amucat* и *amukta*
 [VOP. 13,1.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,1) *mucat, mauk*
 [2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?13,2) p. [VS. 1,25.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,25) *mukṣata*
   <sub>attested</sub>
@@ -43,7 +43,7 @@
 [CHĀND. UP. 6,16,2.] *mucyādhvai (mucyedhvam*
 [BṚH. ĀR. UP. 3,8,12]) [ŚAT. BR. 14,6,8,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *amoci śukro rajasaḥ parastāt* ist ausgefahren
 [AV. 13,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.08) — *amuñcaddhanuṣastasya jyām*
-[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) *muñcemāṃ bhadra nāvaṃ tvam*
+[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) = [≈Вульг. 4.5.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S020) = ≈крит. 04,5.18c *muñcemāṃ bhadra nāvaṃ tvam*
 [R. GORR. 2,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,13) [VID. 238.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?238) *mokṣyadhve svargavandīnāṃ veṇībandhān*
 [RAGH. 10,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,48) *muktabandhana*
 [Spr. 2472.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2472)
@@ -56,20 +56,20 @@
 [BHAṬṬ. 14,95](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,95) soll nach einem Schol. so v. a. *u˚ paridadhe* anlegen bedeuten. *talpe muktairavayavairaśāyiṣi* mit aufgelösten d. i. erschlafften Gliedern
 [DAŚAK.] in [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaṇṭham* die Kehle lösen so v. a. seine Stimme erheben: *kaṇṭhaṃ muñcati ca barhiṇaḥ*
 [MṚCCH. 83,6]; vgl. *muktakaṇṭha*.* prāṇān* Jmdes Lebensgeister lösen so v. a. Jmd das Leben nehmen: *eṣa me muñcatu prāṇānyadi pāpaṃ carāmyaham*
-[MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) *padātpadamamuñcantī* den Fuss nicht von der Stelle lösend d. i. bewegend
+[MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) = [≈Вульг. 3.76.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A076_S027) = ≈крит. 03,75.2a *padātpadamamuñcantī* den Fuss nicht von der Stelle lösend d. i. bewegend
 [VID. 277.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?277) *vīṇibhirmuktamārgaḥ* den Weg frei machen so v. a. aus dem Wege gehen
 [MEGH. 46](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?46), v. l. (für *datta)*.* muñca muñcasva maithilīm* lass los
-[MBH. 3,16047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16047) [10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) [15167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15167) [15793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15793) *tvaṃ saha prāṇairmuñcethāścaiva māṃ yudhi*
+[MBH. 3,16047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16047) = [≈Вульг. 3.279.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A279_S005) = ≈крит. 03,263.4e [10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) = [≈Вульг. 3.122.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A122_S025) = ≈крит. 03,122.23a [15167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15167) = [≈Вульг. 3.252.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A252_S013) = ≈крит. 03,240.13a [15793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15793) = [≈Вульг. 3.272.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S016) = ≈крит. 03,256.16c *tvaṃ saha prāṇairmuñcethāścaiva māṃ yudhi*
 [R. 3,62,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,5) *āryaṃ sacivaṃ muñcati yadi pūjyaḥ saṃyataṃ mama śyālam . moktā mādhavasenaṃ tato 'hamapi bandhanātsadyaḥ ..*
 [MĀLAV. 7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?7)
 [ŚĀK. 40,9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?40,9)
 [VID. 184.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?184)
 [KATHĀS. 22,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,194) [25,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,109) *adaṇḍyo mucyate rājñā*
 [M. 8,202.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,202)
-[MBH. 3,15794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15794) *tanmucyatāṃ pañjarabandhanādayaṃ pakṣī*
+[MBH. 3,15794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15794) = [≈Вульг. 3.272.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S017) = ≈крит. 03,256.17a *tanmucyatāṃ pañjarabandhanādayaṃ pakṣī*
 [PAÑCAT. 192,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,15) *mukta* freigelassen
 [TRIK. 3,3,177.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,177)
-[MBH. 3,15795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15795)
+[MBH. 3,15795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15795) = [≈Вульг. 3.272.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S018) = ≈крит. 03,256.18a
 [Spr. 1819.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1819)
 [VID. 267.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?267)
 [KATHĀS. 4,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,38)
@@ -79,19 +79,19 @@
 [VID. 330.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?330) *muñca naḥ sādhayāmaḥ*
 [Spr. 366.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?366) *kūpādākṛṣya mārge muktā*
 [VET. in LA. (II) 17,20.] [PAÑCAT. 128,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?128,25) *yadyetebhyo mucyase* wenn du dich von ihnen befreist
-[MBH. 3,15715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15715) *mucyate kilviṣāt*
+[MBH. 3,15715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15715) = [≈Вульг. 3.270.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S021) = ≈крит. 03,254.21a *mucyate kilviṣāt*
 [M. 11,90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,90) [79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,79) [194.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,194) [227.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,227) [239.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,239)
 [BHAG. 4,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,16) *mṛtyupāśāttvaṃ saputrā mokṣyase*
-[MBH. 1,5641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5641)
+[MBH. 1,5641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5641) = [≈Вульг. 1.140.52](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S052) = крит. —
 [RAGH. 1,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,72) *tadā pitṝṇāṃ mumuce sa bandhanāt*
 [3,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,20) [12,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,23) *yena (auṣadhena) mucyāmahe rogāt*
 [KATHĀS. 66,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,32) *nahi yogaṃ prapaśyāmi yena mucyeyamāpadaḥ*
-[MBH. 1,6127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6127) [8150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8150) [3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) [6003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6003)
+[MBH. 1,6127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6127) = [≈Вульг. 1.155.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S035) = ≈крит. 01,143.31a [8150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8150) = [≈Вульг. 1.222.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A222_S018) = ≈крит. 01,214.18a [3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) = [≈Вульг. 3.66.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S006) = крит. — [6003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6003)
 
 *mucyantu narakāt*
 [MĀRK. P. 15,76.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,76) *tasmānmuktā vayaṃ dāhāt*
-[MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) *śāpānmuktaḥ*
-[3,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2386) [ŚĀK. 111,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,7) *yadi dharmānna mucyate* wenn er nicht der Tugend verlustig geht
+[MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) = [≈Вульг. 1.150.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S014) = ≈крит. 01,137.14a *śāpānmuktaḥ*
+[3,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2386) = [≈Вульг. 3.63.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S025) = ≈крит. 03,60.23c [ŚĀK. 111,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,7) *yadi dharmānna mucyate* wenn er nicht der Tugend verlustig geht
 [Spr. 2988.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2988) Statt des abl. der instr.: *mucyate pātakaiḥ sarvaiḥ*
 [M. 11,258. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,258)
 [Spr. 3223.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3223) [4788. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4788)
@@ -99,15 +99,15 @@
 [RĀJA-TAR. 3,406.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,406)
 [MĀRK. P. 79,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?79,13) *vāmaścāsyāḥ (ūruḥ) kararuhapadairmucyamāno madīyaiḥ* frei von
 [MEGH. 94.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?94) *mucyanti bandhanaiḥ*
-[MBH. 13,1079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1079) *sa mucyetsarvakilviṣaiḥ*
-[1864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1864) *mukto 'haṃ sarvakilviṣaiḥ*
+[MBH. 13,1079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1079) = [≈Вульг. 13.16.42](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A016_S042) = ≈крит. 13,16.43a *sa mucyetsarvakilviṣaiḥ*
+[1864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1864) = [≈Вульг. 13.26.106](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S106) = ≈крит. 13,27.105a *mukto 'haṃ sarvakilviṣaiḥ*
 [3,4040.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4040) *muktamidaṃ tamasā manaḥ*
 [ŚĀK. 135.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?135)
 [RAGH. 4,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,15) *kleśādibhiḥ*
 Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [Spr. 3125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3125) Statt des abl. der gen.: *nahi me mokṣyate jīvan* er wird mir nicht lebend entrinnen
-[MBH. 3,15757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15757) [16048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16048) *nahi te mucyedantako 'pyātatāyinaḥ*
-[1695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1695) *mukta* am Ende eines comp. befreit von, ermangelnd
+[MBH. 3,15757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15757) = [≈Вульг. 3.271.41](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S041) = ≈крит. 03,255.41a [16048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16048) = [≈Вульг. 3.279.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A279_S006) = ≈крит. 03,263.5a *nahi te mucyedantako 'pyātatāyinaḥ*
+[1695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1695) = [≈Вульг. 3.41.31](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A041_S031) = ≈крит. 03,42.29c *mukta* am Ende eines comp. befreit von, ermangelnd
 [P. 2,1,38.](https://ashtadhyayi.com/sutraani/2/1/38) *yoni˚*
 [ŚVETĀŚV. UP. 1,7.] *ghanamukta ivoḍurāṭ*
 [R. 5,76,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,20) *viveka˚*
@@ -165,8 +165,8 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [Spr. 2840.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2840) *duḥkhaṃ mokṣye kadāham*
 
 - **RU:** 3. pl. *mokṣīs*
-[HARIV. 7082.](https://sanskrit-lexicon-scans.github.io/hariv?7082) *mukṣīya; mumoca, mumucmahe, mumucre, mumucāna; mokṣyati* und *˚te, moktā*
-[Кар. 2] aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) ved. *mumoktu, mumugdhi, amumuktam, mumocata* 2. pl., *mumocati*
+[HARIV. 7082.](https://sanskrit-lexicon-scans.github.io/hariv?7082) *mukṣīya; mumoca, mumucmahe, mumucre, mumucāna; mokṣyati* и *˚te, moktā*
+[Кар. 2] aus [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) ved. *mumoktu, mumugdhi, amumuktam, mumocata* 2. pl., *mumocati*
 [ṚV. 8,18,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.018.html#rv08.018.12) *mumocatam*
 [75,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.075.html#rv08.075.01) [4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.075.html#rv08.075.04) освобождать, высвобождать, избавлять; отпускать, отпустить; мед. pass. освобождаться, спасаться
 [ṚV. 1,24,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.024.html#rv01.024.12) *avanīḥ*
@@ -187,7 +187,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [CHĀND. UP. 6,16,2.] *mucyādhvai (mucyedhvam*
 [BṚH. ĀR. UP. 3,8,12]) [ŚAT. BR. 14,6,8,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,8,12) *amoci śukro rajasaḥ parastāt* выехал
 [AV. 13,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.08) — *amuñcaddhanuṣastasya jyām*
-[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) *muñcemāṃ bhadra nāvaṃ tvam*
+[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) = [≈Вульг. 4.5.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S020) = ≈крит. 04,5.18c *muñcemāṃ bhadra nāvaṃ tvam*
 [R. GORR. 2,52,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,13) [VID. 238.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?238) *mokṣyadhve svargavandīnāṃ veṇībandhān*
 [RAGH. 10,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,48) *muktabandhana*
 [Spr. 2472.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2472)
@@ -200,20 +200,20 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [BHAṬṬ. 14,95](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,95) должно, по одному схол., означать преим. *u˚ paridadhe* надевать. *talpe muktairavayavairaśāyiṣi* с распущенными т.е. расслабленными членами
 [DAŚAK.] в [BENF. Chr. 190,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *kaṇṭham* разжать горло, так что преим. возвысить голос: *kaṇṭhaṃ muñcati ca barhiṇaḥ*
 [MṚCCH. 83,6]; ср. *muktakaṇṭha*.* prāṇān* освободить жизненные силы кого-либо, т. е. лишить кого-либо жизни: *eṣa me muñcatu prāṇānyadi pāpaṃ carāmyaham*
-[MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) *padātpadamamuñcantī* не сдвигая ноги с места т.е. двигая
+[MBH. 3,2982. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) = [≈Вульг. 3.76.27](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A076_S027) = ≈крит. 03,75.2a *padātpadamamuñcantī* не сдвигая ноги с места т.е. двигая
 [VID. 277.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?277) *vīṇibhirmuktamārgaḥ* освободить путь, т. е. преим. уступить дорогу
 [MEGH. 46](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?46), v. l. (для *datta)*.* muñca muñcasva maithilīm* отпусти
-[MBH. 3,16047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16047) [10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) [15167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15167) [15793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15793) *tvaṃ saha prāṇairmuñcethāścaiva māṃ yudhi*
+[MBH. 3,16047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16047) = [≈Вульг. 3.279.5](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A279_S005) = ≈крит. 03,263.4e [10403.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10403) = [≈Вульг. 3.122.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A122_S025) = ≈крит. 03,122.23a [15167.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15167) = [≈Вульг. 3.252.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U14_A252_S013) = ≈крит. 03,240.13a [15793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15793) = [≈Вульг. 3.272.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S016) = ≈крит. 03,256.16c *tvaṃ saha prāṇairmuñcethāścaiva māṃ yudhi*
 [R. 3,62,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,5) *āryaṃ sacivaṃ muñcati yadi pūjyaḥ saṃyataṃ mama śyālam . moktā mādhavasenaṃ tato 'hamapi bandhanātsadyaḥ ..*
 [MĀLAV. 7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?7)
 [ŚĀK. 40,9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?40,9)
 [VID. 184.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?184)
 [KATHĀS. 22,194.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,194) [25,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,109) *adaṇḍyo mucyate rājñā*
 [M. 8,202.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,202)
-[MBH. 3,15794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15794) *tanmucyatāṃ pañjarabandhanādayaṃ pakṣī*
+[MBH. 3,15794.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15794) = [≈Вульг. 3.272.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S017) = ≈крит. 03,256.17a *tanmucyatāṃ pañjarabandhanādayaṃ pakṣī*
 [PAÑCAT. 192,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,15) *mukta* отпущенный на свободу
 [TRIK. 3,3,177.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,177)
-[MBH. 3,15795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15795)
+[MBH. 3,15795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15795) = [≈Вульг. 3.272.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U18_A272_S018) = ≈крит. 03,256.18a
 [Spr. 1819.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1819)
 [VID. 267.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?267)
 [KATHĀS. 4,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,38)
@@ -223,35 +223,35 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [VID. 330.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?330) *muñca naḥ sādhayāmaḥ*
 [Spr. 366.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?366) *kūpādākṛṣya mārge muktā*
 [VET. in LA. (II) 17,20.] [PAÑCAT. 128,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?128,25) *yadyetebhyo mucyase* когда ты освобождаешься от них
-[MBH. 3,15715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15715) *mucyate kilviṣāt*
+[MBH. 3,15715.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15715) = [≈Вульг. 3.270.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S021) = ≈крит. 03,254.21a *mucyate kilviṣāt*
 [M. 11,90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,90) [79.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,79) [194.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,194) [227.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,227) [239.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,239)
 [BHAG. 4,16.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,16) *mṛtyupāśāttvaṃ saputrā mokṣyase*
-[MBH. 1,5641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5641)
+[MBH. 1,5641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5641) = [≈Вульг. 1.140.52](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S052) = крит. —
 [RAGH. 1,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,72) *tadā pitṝṇāṃ mumuce sa bandhanāt*
 [3,20.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,20) [12,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,23) *yena (auṣadhena) mucyāmahe rogāt*
 [KATHĀS. 66,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?66,32) *nahi yogaṃ prapaśyāmi yena mucyeyamāpadaḥ*
-[MBH. 1,6127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6127) [8150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8150) [3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) [6003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6003)
+[MBH. 1,6127.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6127) = [≈Вульг. 1.155.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S035) = ≈крит. 01,143.31a [8150.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8150) = [≈Вульг. 1.222.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U18_A222_S018) = ≈крит. 01,214.18a [3,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2613) = [≈Вульг. 3.66.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S006) = крит. — [6003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6003)
 
 *mucyantu narakāt*
 [MĀRK. P. 15,76.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?15,76) *tasmānmuktā vayaṃ dāhāt*
-[MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) *śāpānmuktaḥ*
-[3,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2386) [ŚĀK. 111,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,7) *yadi dharmānna mucyate* когда он не лишается добродетели
-[Spr. 2988.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2988) Вместо abl. в instr.: *mucyate pātakaiḥ sarvaiḥ*
+[MBH. 1,5918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5918) = [≈Вульг. 1.150.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S014) = ≈крит. 01,137.14a *śāpānmuktaḥ*
+[3,2386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2386) = [≈Вульг. 3.63.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A063_S025) = ≈крит. 03,60.23c [ŚĀK. 111,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?111,7) *yadi dharmānna mucyate* когда он не лишается добродетели
+[Spr. 2988.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2988) Вм. abl. в instr.: *mucyate pātakaiḥ sarvaiḥ*
 [M. 11,258. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,258)
 [Spr. 3223.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3223) [4788. fg.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4788)
 [KATHĀS. 49,228.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,228) *sa śastravarmaṇāmoci cittaṃ ghairyeṇa no puraḥ*
 [RĀJA-TAR. 3,406.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,406)
 [MĀRK. P. 79,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?79,13) *vāmaścāsyāḥ (ūruḥ) kararuhapadairmucyamāno madīyaiḥ* свободный от
 [MEGH. 94.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?94) *mucyanti bandhanaiḥ*
-[MBH. 13,1079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1079) *sa mucyetsarvakilviṣaiḥ*
-[1864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1864) *mukto 'haṃ sarvakilviṣaiḥ*
+[MBH. 13,1079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1079) = [≈Вульг. 13.16.42](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A016_S042) = ≈крит. 13,16.43a *sa mucyetsarvakilviṣaiḥ*
+[1864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1864) = [≈Вульг. 13.26.106](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A026_S106) = ≈крит. 13,27.105a *mukto 'haṃ sarvakilviṣaiḥ*
 [3,4040.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.4040) *muktamidaṃ tamasā manaḥ*
 [ŚĀK. 135.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?135)
 [RAGH. 4,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,15) *kleśādibhiḥ*
-схол. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* лишённый
-[Spr. 3125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3125) Вместо abl. в gen.: *nahi me mokṣyate jīvan* он не спасётся от меня живым
-[MBH. 3,15757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15757) [16048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16048) *nahi te mucyedantako 'pyātatāyinaḥ*
-[1695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1695) *mukta* в конце comp. освобождённый от, лишённый
+схол. к [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* лишенный
+[Spr. 3125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3125) Вм. abl. в gen.: *nahi me mokṣyate jīvan* он не спасется от меня живым
+[MBH. 3,15757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15757) = [≈Вульг. 3.271.41](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S041) = ≈крит. 03,255.41a [16048.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16048) = [≈Вульг. 3.279.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A279_S006) = ≈крит. 03,263.5a *nahi te mucyedantako 'pyātatāyinaḥ*
+[1695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1695) = [≈Вульг. 3.41.31](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U04_A041_S031) = ≈крит. 03,42.29c *mukta* в конце comp. освобожденный от, лишенный
 [P. 2,1,38.](https://ashtadhyayi.com/sutraani/2/1/38) *yoni˚*
 [ŚVETĀŚV. UP. 1,7.] *ghanamukta ivoḍurāṭ*
 [R. 5,76,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,76,20) *viveka˚*
@@ -261,7 +261,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [29,173.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,173) *rodha˚ (pravahaṇa)*
 [VID. 236.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?236) *kāṭhinya˚ (uras)*
 [ŚĀK. 58.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?58) *ubhayorhastayormuktaṃ yadannamupanīyeta* т. е. преим. кушанье, которое не держат обеими руками,
-[M. 3,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,225) pass. без ближайшего определения быть освобождённым — избавленным от греха, от оков мира: *rājā bhavatyanenāstu mucyante ca sabhāsadaḥ* свободны от всякого греха
+[M. 3,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,225) pass. без ближайшего определения быть освобожденным — избавленным от греха, от оков мира: *rājā bhavatyanenāstu mucyante ca sabhāsadaḥ* свободны от всякого греха
 [M. 8,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,19) *japitvā pauruṣaṃ sūktaṃ mucyate gurutalpagaḥ*
 [11,251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,251) *yadahnā kurute pāpam — saṃdhyāṃ mucyati paścimām*
 [MBH. 1,656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.656) *tasmānna badhyate nāpi mucyate nāpi saṃsarati puruṣaḥ . saṃsarati badhyate mucyate ca nānāśrayā prakṛtiḥ ..*
@@ -270,7 +270,7 @@ Schol. zu [KAP. 1,94.] *(guṇaiḥ) etairmukto mahīpālaḥ* ermangelnd
 [M. 6,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,44) *abhipūjitalābhaiśca yatirmukto 'pi badhyate*
 [58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,58) [BHAG. 5,28.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,28) [WEBER, RĀMAT. UP. 338. 345. 357. 359.] [Spr. 3350](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3350) (одновременно жемчуг); ср. *jīvanmukta* (также
 [PAÑCAR. 1,10,83](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,10,83)). покидать (место): *na muñcati ca taṃ deśaṃ nāyako yatra dṛśyate*
-[SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* цит. при схол. zu [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
+[SĀH. D. 60,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?60,4) ad [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) [Spr. 2216.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2216) *talaṃ yasya na muñcati . atyantaśītalacchāyā sa cchāyātarurucyate* цит. при схол. к [ŚĀK. 86.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?86)
 *palitaśāraśikhaṇḍabandhaspṛṣṭamuktabhūmi* _adj._
 [DAŚAK.] в [BENF. Chr. 180,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?180) *muñca śayyām*
 [RAGH. 5,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,66) *ihaiva priyāparibhuktamukte latāvalaye*

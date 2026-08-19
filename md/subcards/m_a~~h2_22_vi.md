@@ -52,5 +52,5 @@
 
 - **RU:** — ср.
 
-*vimāna* und u. 1. *mi* mit *vi* .
+*vimāna* и u. 1. *mi* mit *vi* .
   <sub>attested</sub>

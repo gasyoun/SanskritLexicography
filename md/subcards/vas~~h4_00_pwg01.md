@@ -25,43 +25,43 @@
 
 **3a)** a) in einer Lage u. s. w. sich dauernd befinden, sich widmen, obliegen: *nābrāhmaṇe gurau śiṣyo vāsamātyantikaṃ vaset*
 [M. 2,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,242) *hṛṣṭo vāsamuvāsa ha*
-[MBH. 5,7516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7516) *caturdaśa vane vāsaṃ varṣāṇi vasato mama*
+[MBH. 5,7516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7516) = [≈Вульг. 5.192.29](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A192_S029) = ≈крит. 05,193.26a *caturdaśa vane vāsaṃ varṣāṇi vasato mama*
 [R. 2,37,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,5)
 [R. GORR. 2,60,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,60,7) *vanavāsam*
 [R. SCHL. 2,75,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,3) *udavāsam*
-[MBH. 13,354.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.354) *ajñātavāsam*
-[3,3020.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3020) *sukhavāsam*
+[MBH. 13,354.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.354) = [≈Вульг. 13.7.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A007_S011) = ≈крит. 13,7.11a *ajñātavāsam*
+[3,3020.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3020) = [≈Вульг. 3.77.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S013) = ≈крит. 03,76.12c *sukhavāsam*
 [R. 1,17,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,17) *bahuduḥkhavāsam*
 
 [BHĀG. P. 3,31,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,31,20) *rājavasatim*
-[MBH. 4,96. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.96) [109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109) [120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.120) [126. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.126)
+[MBH. 4,96. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.96) = [≈Вульг. 4.4.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S014) = ≈крит. 04,4.10c [109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109) = [≈Вульг. 4.4.27](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S027) = ≈крит. 04,4.21c [120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.120) = [≈Вульг. 4.4.38](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S038) = ≈крит. 04,4.31a [126. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.126) = [≈Вульг. 4.4.44](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S044) = ≈крит. 04,4.37c
 [Spr. 239](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?239), v. l. *brahmacaryam*
 [AIT. BR. 5,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,14)
 [ŚAT. BR. 12,2,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,2,13) [14,8,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,2,2)
 [CHĀND. UP. 4,4,3. 10,1. 8,7,3.] *brahmacaryāśramam*
 [MĀRK. P. 28,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?28,17) *āśramaśreṣṭham* d. i. *gārhasthyam*
-[MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339) *vīrāsanam*
+[MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339) = [≈Вульг. 12.61.16](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A061_S016) = ≈крит. 12,61.16a *vīrāsanam*
 [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *idaṃ vatsyāmaḥ* (z. B. *gārhasthyam* Comm.)
 [ĀŚV. GṚHY. 3,10,2.]
 
 - **RU:** a) постоянно находиться в каком-либо положении и т.д., посвящать себя чему-либо, быть занятым чем-либо: *nābrāhmaṇe gurau śiṣyo vāsamātyantikaṃ vaset*
 [M. 2,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,242) *hṛṣṭo vāsamuvāsa ha*
-[MBH. 5,7516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7516) *caturdaśa vane vāsaṃ varṣāṇi vasato mama*
+[MBH. 5,7516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7516) = [≈Вульг. 5.192.29](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A192_S029) = ≈крит. 05,193.26a *caturdaśa vane vāsaṃ varṣāṇi vasato mama*
 [R. 2,37,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,5)
 [R. GORR. 2,60,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,60,7) *vanavāsam*
 [R. SCHL. 2,75,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,3) *udavāsam*
-[MBH. 13,354.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.354) *ajñātavāsam*
-[3,3020.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3020) *sukhavāsam*
+[MBH. 13,354.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.354) = [≈Вульг. 13.7.11](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A007_S011) = ≈крит. 13,7.11a *ajñātavāsam*
+[3,3020.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3020) = [≈Вульг. 3.77.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S013) = ≈крит. 03,76.12c *sukhavāsam*
 [R. 1,17,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,17) *bahuduḥkhavāsam*
 
 [BHĀG. P. 3,31,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,31,20) *rājavasatim*
-[MBH. 4,96. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.96) [109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109) [120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.120) [126. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.126)
+[MBH. 4,96. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.96) = [≈Вульг. 4.4.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S014) = ≈крит. 04,4.10c [109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.109) = [≈Вульг. 4.4.27](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S027) = ≈крит. 04,4.21c [120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.120) = [≈Вульг. 4.4.38](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S038) = ≈крит. 04,4.31a [126. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.126) = [≈Вульг. 4.4.44](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S044) = ≈крит. 04,4.37c
 [Spr. 239](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?239), v. l. *brahmacaryam*
 [AIT. BR. 5,14.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,14)
 [ŚAT. BR. 12,2,2,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,2,2,13) [14,8,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,2,2)
 [CHĀND. UP. 4,4,3. 10,1. 8,7,3.] *brahmacaryāśramam*
 [MĀRK. P. 28,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?28,17) *āśramaśreṣṭham* т.е. *gārhasthyam*
-[MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339) *vīrāsanam*
+[MBH. 12,2339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2339) = [≈Вульг. 12.61.16](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A061_S016) = ≈крит. 12,61.16a *vīrāsanam*
 [M. 11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) *idaṃ vatsyāmaḥ* (напр. *gārhasthyam* коммент.)
 [ĀŚV. GṚHY. 3,10,2.]
   <sub>attested</sub>
@@ -93,7 +93,7 @@
 [RAGH. 6,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,40)
 [Spr. 2445.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2445) [2928.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2928)
 
-- **RU:** a) с pass. знач.: *dinamekaṃ manye tvayā sārdhamihoṣitam* проведённый, прожитый
+- **RU:** a) с pass. знач.: *dinamekaṃ manye tvayā sārdhamihoṣitam* проведенный, прожитый
 [BRAHMA-P. in LA. (III) 56,13.] impers.: *yatroṣitaṃ tvayā* где ты пребывал
 [MBH. 1,3268.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3268) *kārāgṛhe*
 [RAGH. 6,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,40)
@@ -109,54 +109,54 @@
 
 **4b-α)** α) Halt gemacht —, übernachtet —, verweilt —, sich aufgehalten —, irgendwo gelebt habend: *velātaṭeṣūṣitasainikāśvaḥ*
 [RAGH. 18,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,22) *trirātramuṣitaḥ* drei Nächte zugebracht habend
-[MBH. 3,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2306) *ekarātroṣitaḥ kaṃcidapaśyaṃ brāhmaṇaṃ pathi*
-[11945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11945) *te trirātroṣitāḥ prāptāḥ karavīraṃ purottamam* nachdem sie drei Mal übernachtet hatten
+[MBH. 3,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2306) = [≈Вульг. 3.61.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S010) = ≈крит. 03,58.10a *ekarātroṣitaḥ kaṃcidapaśyaṃ brāhmaṇaṃ pathi*
+[11945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11945) = [≈Вульг. 3.165.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A165_S007) = ≈крит. 03,161.23a *te trirātroṣitāḥ prāptāḥ karavīraṃ purottamam* nachdem sie drei Mal übernachtet hatten
 [HARIV. 5652.](https://sanskrit-lexicon-scans.github.io/hariv?5652) *pañcarātroṣitau pathi*
 [5720.](https://sanskrit-lexicon-scans.github.io/hariv?5720) [R. 1,68,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,1) ([70,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,1) [GORR.]). [R. GORR. 1,75,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,75,8) [2,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,12,1) [6,106,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,106,1) [KATHĀS. 22,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,102) *varṣākāloṣita*
 [R. 4,29,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,1) *śarvarīm — tavāśrame . uṣitāḥ snehavasatim*
 [R. SCHL. 2,54,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,36) *sukhamasmyuṣitaḥ*
 [MBH. 1,3269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3269) *tvayi*
-[3,1737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1737) [2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) [3024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3024) *uṣito 'haṃ tvayā saha* ich habe mit dir gelebt (geschlechtlich)
+[3,1737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1737) = [≈Вульг. 3.42.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S024) = ≈крит. 03,43.24a [2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S018) = ≈крит. 03,66.16c [3024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3024) = [≈Вульг. 3.77.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S017) = ≈крит. 03,76.16a *uṣito 'haṃ tvayā saha* ich habe mit dir gelebt (geschlechtlich)
 [BRAHMA-P. in LA. (III) 57,12.] [BHĀG. P. 1,10,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,27) *sukhoṣita* der die Nacht gut zugebracht hat
-[MBH. 3,3003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3003)
+[MBH. 3,3003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3003) = [≈Вульг. 3.76.48](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A076_S048) = ≈крит. 03,75.23a
 [R. 2,92,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,6) *sukhoṣito 'smi rajanīm*
 [5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,5) *ajñātavāsamuṣitāḥ*
-[MBH. 4,1.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1) *uṣitāsmi tathā bālye piturveśmani*
-[5,6034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6034) *śambarasya gṛhoṣitaḥ*
+[MBH. 4,1.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1) = [≈Вульг. 4.1.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S002) = ≈крит. 04,1.1a *uṣitāsmi tathā bālye piturveśmani*
+[5,6034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6034) = [≈Вульг. 5.176.11](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S011) = ≈крит. 05,174.10c *śambarasya gṛhoṣitaḥ*
 [HARIV. 9475.](https://sanskrit-lexicon-scans.github.io/hariv?9475)
 [RAGH. 14,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,32)
 [MĀRK. P. 16,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,20) *dīrghakāloṣitastatra girau*
 [R. 2,94,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,1) *suciroṣita* der lange bei Jmd gelebt hat
 [32,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,17) *ciroṣita* lange abwesend gewesen
 [BHĀG. P. 1,11,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,10) [14,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,39) *parisaṃvatsaroṣitāḥ* ein Jahr lang abwesend gewesen
-[MBH. 4,2359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2359) ein Jahr lang gewartet habend
-[1,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2260) [13,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4672) *abhyantaroṣita* seinen Standort habend
+[MBH. 4,2359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2359) = [≈Вульг. 4.72.24](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U05_A072_S024) = ≈крит. 04,67.23c ein Jahr lang gewartet habend
+[1,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2260) = [≈Вульг. 1.61.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A061_S030) = крит. — [13,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4672) = [≈Вульг. 13.97.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A097_S022) = ≈крит. 13,100.21c *abhyantaroṣita* seinen Standort habend
 [KĀM. NĪTIS. 17,28.]
 
 - **RU:** α) остановившийся —, переночевавший —, задержавшийся —, пробывший где-либо —, живший где-либо: *velātaṭeṣūṣitasainikāśvaḥ*
 [RAGH. 18,22.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,22) *trirātramuṣitaḥ* проведший три ночи
-[MBH. 3,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2306) *ekarātroṣitaḥ kaṃcidapaśyaṃ brāhmaṇaṃ pathi*
-[11945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11945) *te trirātroṣitāḥ prāptāḥ karavīraṃ purottamam* после того как они три раза ночевали
+[MBH. 3,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2306) = [≈Вульг. 3.61.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A061_S010) = ≈крит. 03,58.10a *ekarātroṣitaḥ kaṃcidapaśyaṃ brāhmaṇaṃ pathi*
+[11945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11945) = [≈Вульг. 3.165.7](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A165_S007) = ≈крит. 03,161.23a *te trirātroṣitāḥ prāptāḥ karavīraṃ purottamam* после того как они три раза ночевали
 [HARIV. 5652.](https://sanskrit-lexicon-scans.github.io/hariv?5652) *pañcarātroṣitau pathi*
 [5720.](https://sanskrit-lexicon-scans.github.io/hariv?5720) [R. 1,68,1](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,1) ([70,1](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,1) [GORR.]). [R. GORR. 1,75,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,75,8) [2,12,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,12,1) [6,106,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,106,1) [KATHĀS. 22,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,102) *varṣākāloṣita*
 [R. 4,29,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,29,1) *śarvarīm — tavāśrame . uṣitāḥ snehavasatim*
 [R. SCHL. 2,54,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,36) *sukhamasmyuṣitaḥ*
 [MBH. 1,3269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3269) *tvayi*
-[3,1737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1737) [2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) [3024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3024) *uṣito 'haṃ tvayā saha* я жил с тобой (в половом смысле)
+[3,1737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1737) = [≈Вульг. 3.42.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A042_S024) = ≈крит. 03,43.24a [2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S018) = ≈крит. 03,66.16c [3024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3024) = [≈Вульг. 3.77.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A077_S017) = ≈крит. 03,76.16a *uṣito 'haṃ tvayā saha* я жил с тобой (в половом смысле)
 [BRAHMA-P. in LA. (III) 57,12.] [BHĀG. P. 1,10,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,27) *sukhoṣita* хорошо проведший ночь
-[MBH. 3,3003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3003)
+[MBH. 3,3003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3003) = [≈Вульг. 3.76.48](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A076_S048) = ≈крит. 03,75.23a
 [R. 2,92,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,6) *sukhoṣito 'smi rajanīm*
 [5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,5) *ajñātavāsamuṣitāḥ*
-[MBH. 4,1.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1) *uṣitāsmi tathā bālye piturveśmani*
-[5,6034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6034) *śambarasya gṛhoṣitaḥ*
+[MBH. 4,1.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1) = [≈Вульг. 4.1.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A001_S002) = ≈крит. 04,1.1a *uṣitāsmi tathā bālye piturveśmani*
+[5,6034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6034) = [≈Вульг. 5.176.11](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S011) = ≈крит. 05,174.10c *śambarasya gṛhoṣitaḥ*
 [HARIV. 9475.](https://sanskrit-lexicon-scans.github.io/hariv?9475)
 [RAGH. 14,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,32)
 [MĀRK. P. 16,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,20) *dīrghakāloṣitastatra girau*
 [R. 2,94,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,94,1) *suciroṣita* долго живший при ком-либо
 [32,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,17) *ciroṣita* долго отсутствовавший
 [BHĀG. P. 1,11,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,10) [14,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,39) *parisaṃvatsaroṣitāḥ* отсутствовавший в течение года
-[MBH. 4,2359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2359) ждавший в течение года
-[1,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2260) [13,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4672) *abhyantaroṣita* имеющий своё место
+[MBH. 4,2359.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2359) = [≈Вульг. 4.72.24](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U05_A072_S024) = ≈крит. 04,67.23c ждавший в течение года
+[1,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2260) = [≈Вульг. 1.61.30](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A061_S030) = крит. — [13,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4672) = [≈Вульг. 13.97.22](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A097_S022) = ≈крит. 13,100.21c *abhyantaroṣita* имеющий свое место
 [KĀM. NĪTIS. 17,28.]
   <sub>attested</sub>
 
