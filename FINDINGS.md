@@ -7503,3 +7503,54 @@ a clean render-time regression are not the same verification.
 > `resolve()`. Verified: `python src/pwg_ab.py lookup "Ins."` resolves to the same
 > `Instrumental / instrumental (case)` expansion as `lookup "Instr."`. Verifiability: class A
 > (driver committed, reproducible, no gitignored input required for this specific check).
+
+### §571. The compound-position ring is not an inferred convention — Cappeller PRINTS its definition in 1887, six years before Macdonell; the whole §553–§566 census had never opened a preface
+
+📊 **A typographic census built only from digitized markup can measure a sign perfectly and
+still miss that its author defined it in words.** FINDINGS §553–§558 / §561 / §564–§566 and the
+consolidated
+[`docs/COMPOUND_MARKER_TYPOGRAPHY_CENSUS_CDSL_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/COMPOUND_MARKER_TYPOGRAPHY_CENSUS_CDSL_2026.md)
+were derived entirely by counting U+02DA / U+00B0 / U+0970 / seam characters inside
+[`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) `<k2>` and bodies.
+Zero preface citations (`grep -c 'pref' ` on the census doc = 0) — even though the org has OCRed
+Cologne front matter for **33 dictionary codes** under `GitHub/*/prefaces/` via
+[`/cologne-preface-ocr`](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-preface-ocr.md).
+Two of those prefaces state the compound convention outright:
+
+- **CCS**, Vorrede, Jena, 3 July 1887 —
+  [`ccspref05.md`](https://github.com/sanskrit-lexicon/CCS/blob/master/prefaces/ccspref05.md):
+  «Das Zeichen ○ geht immer auf das Stichwort oder einen sich von selbst verstehenden Teil
+  desselben; ○— und —○ bedeuten also resp. das Stichwort am Anfang oder am Ende eines
+  Compositums (wobei auch die Verbindung eines Verbums mit einer Präposition als solches gilt).»
+- **CAE**, "Symbols", 1891 —
+  [`caepref06.md`](https://github.com/sanskrit-lexicon/CAE/blob/master/prefaces/caepref06.md):
+  «◦— the principal word of an article to be supplied at the beginning of a compound. / —◦ the
+  same supplied at the end of a compound.»
+
+Three consequences. **(1) Priority.** §558 called Macdonell's `˚—` / `—˚` (409 / 4 258) "the
+closest historical precedent" for a positional marker; Cappeller prints the identical device in
+1887 (German) and 1891 (English), and Macdonell's dictionary is 1893. Macdonell is the largest
+attestation, not the first. **(2) Convention vs usage.** §553–554 described Cappeller as
+"leading-only in practice" — accurate as a count, wrong as a description of the system: he
+declares both positions, distinguished by which side the em-dash falls on, exactly as the pwg_ru
+[h2805_q3_deploy](https://gasyoun.github.io/vote/sheets/h2805_q3_deploy.html) cards propose.
+**(3) Glyph variance goes down to the front matter.** The same printed circle is OCRed `○`
+U+25CB in ccspref05 and `◦` U+25E6 in caepref06 — one more reason the digitization glyph
+(U+02DA vs U+00B0 vs U+0970) is an encoding artefact and not evidence about the printed sort.
+
+Negative result worth keeping: **PWG's own Vorrede does not define the ring.** Its preface pages
+only *use* `॰` in errata (pwgpref13–14, "streiche das Zeichen ॰"). So §4-1's finding that the PWG
+ring means truncation ~¾ of the time genuinely had to be counted — there was nothing to read.
+Same for KRM (pref02/24, `॰` inside Sanskrit name abbreviations) and GST (pref06, errata).
+
+**General lesson:** before a distributional census of any printed convention, grep the OCRed
+front matter for the glyph. It costs one `grep -rl` over `GitHub/*/prefaces/` and can replace an
+inference with a quotation — or prove, as with PWG, that no quotation exists.
+
+> Opus 5 (`claude-opus-5`) · 19-08-2026 · H3143. Method:
+> `grep -rl -e '˚' -e '○' -e '॰' -e '∘' --include=*.md */prefaces/ prefaces_*/` over the local
+> clones — 5 codes hit (CCS, CAE, PWG, KRM, GST), of which 2 define the sign. Coverage census of
+> `*/prefaces/` and `prefaces_*/` recorded in census §4.5. Verifiability: class A for the
+> quotations (committed OCR pages with `source_url` frontmatter pointing at the Cologne scan);
+> class B for the 33-code coverage count (derived from local clones, some staging dirs are not on
+> any remote).
