@@ -12,7 +12,7 @@
 [12,4,42.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.42) [TS. 7,5,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,7,1) [KĀṬH. 36,14. 37,1.] *gavyaṃ mīmāṃsamānāḥ pṛcchanti santi tatroṣā3 iti*
 [AIT. BR. 4,27.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,27) *mīmāṃsāṃ cakruḥ ko na ātmā kiṃ brahmeti*
 [CHĀND. UP. 5,11,1.] *mīmāṃsitvobhayam*
-[M. 4,224](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,224) (= [MBH. 12,9453](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9453) = [≈Вульг. 12.268.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A268_S004) = ≈крит. 12,260.4a). [ŚAṂK.] zu [BṚH. ĀR. UP. S. 319.] [BHĀG. P. 7,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,20) act.: *iti mīmāṃsatastasya brahmaṇaḥ saha sūnubhiḥ*
+[M. 4,224](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,224) (= [MBH. 12,9453](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9453) = [≈Вульг. 12.268.4](mbh/12.268.html#v4) = ≈крит. 12,260.4a). [ŚAṂK.] zu [BṚH. ĀR. UP. S. 319.] [BHĀG. P. 7,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,20) act.: *iti mīmāṃsatastasya brahmaṇaḥ saha sūnubhiḥ*
 [3,13,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,23) pass. *mīmāṃsyate*
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 318.] *etadviditaṃ mīmāṃsitam*
 [ŚAT. BR. 14,4,2,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,29) *amīmāṃsitakarmaṇām*
@@ -26,14 +26,14 @@
 [12,4,42.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.42) [TS. 7,5,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,7,1) [KĀṬH. 36,14. 37,1.] *gavyaṃ mīmāṃsamānāḥ pṛcchanti santi tatroṣā3 iti*
 [AIT. BR. 4,27.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,27) *mīmāṃsāṃ cakruḥ ko na ātmā kiṃ brahmeti*
 [CHĀND. UP. 5,11,1.] *mīmāṃsitvobhayam*
-[M. 4,224](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,224) (= [MBH. 12,9453](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9453) = [≈Вульг. 12.268.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A268_S004) = ≈крит. 12,260.4a). [ŚAṂK.] к [BṚH. ĀR. UP. S. 319.] [BHĀG. P. 7,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,20) act.: *iti mīmāṃsatastasya brahmaṇaḥ saha sūnubhiḥ*
+[M. 4,224](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,224) (= [MBH. 12,9453](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9453) = [≈Вульг. 12.268.4](mbh/12.268.html#v4) = ≈крит. 12,260.4a). [ŚAṂK.] к [BṚH. ĀR. UP. S. 319.] [BHĀG. P. 7,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,20) act.: *iti mīmāṃsatastasya brahmaṇaḥ saha sūnubhiḥ*
 [3,13,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,23) pass. *mīmāṃsyate*
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 318.] *etadviditaṃ mīmāṃsitam*
 [ŚAT. BR. 14,4,2,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,29) *amīmāṃsitakarmaṇām*
   <sub>attested</sub>
 
 **desid_doubt)** [BHĀG. P. 6,5,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,37) in Frage stellen, bezweifeln: *tatsarvameva putraste na mīmāṃseta karhicit*
-[MBH. 1,3878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3878) = [≈Вульг. 1.97.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A097_S015) = ≈крит. 01,92.14c mit loc. der Sache, in Beziehung auf welche die Befähigung oder Zulassung einer Person fraglich ist: *yaṃ pātre vā talpe vā mīmāṃseran*
+[MBH. 1,3878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3878) = [≈Вульг. 1.97.15](mbh/1.97.html#v15) = ≈крит. 01,92.14c mit loc. der Sache, in Beziehung auf welche die Befähigung oder Zulassung einer Person fraglich ist: *yaṃ pātre vā talpe vā mīmāṃseran*
 [TS. 6,2,6,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,6,4)
 [KĀṬH. 25,3.]
 [PAÑCAV. BR. 23,4,2.] *brāhmaṇaṃ *
@@ -44,7 +44,7 @@
 [AV. 9,6,24.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.006.html#av09.006.24)
 
 - **RU:** [BHĀG. P. 6,5,37.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,5,37) ставить под вопрос, сомневаться: *tatsarvameva putraste na mīmāṃseta karhicit*
-[MBH. 1,3878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3878) = [≈Вульг. 1.97.15](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A097_S015) = ≈крит. 01,92.14c mit loc. предмета, в отношении которого правомочность или допуск лица сомнительны: *yaṃ pātre vā talpe vā mīmāṃseran*
+[MBH. 1,3878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3878) = [≈Вульг. 1.97.15](mbh/1.97.html#v15) = ≈крит. 01,92.14c mit loc. предмета, в отношении которого правомочность или допуск лица сомнительны: *yaṃ pātre vā talpe vā mīmāṃseran*
 [TS. 6,2,6,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,6,4)
 [KĀṬH. 25,3.]
 [PAÑCAV. BR. 23,4,2.] *brāhmaṇaṃ *

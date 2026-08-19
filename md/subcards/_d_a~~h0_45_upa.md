@@ -21,7 +21,7 @@
 [M. 4,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,54) *upahitaṃ śiśirāpagamaśriyā mukulajālam — kiṃśuke*
 [RAGH. 9,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,27) *bhīme copādhitānane* steckte in
 [BHAṬṬ. 15,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,47) *hemnīvopahito maṇīḥ* hineingesetzt in, eingefasst in
-[MBH. 5,3382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3382) = [≈Вульг. 5.95.43](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A095_S043) = ≈крит. 05,93.43a *upahitanirmalavajravīthikāyām (sabhāyām)*
+[MBH. 5,3382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3382) = [≈Вульг. 5.95.43](mbh/5.95.html#v43) = ≈крит. 05,93.43a *upahitanirmalavajravīthikāyām (sabhāyām)*
 [HARIV. 12705.](https://sanskrit-lexicon-scans.github.io/hariv?12705) *puravanitānāṃ manasi kusumaśarāsanamupadadhānaḥ* den Liebesgott in's Herz setzend
 [BHĀG. P. 5,5,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,31) *hṛdi cainām (sarasvatīm) upadhātumarhasi* so v. a. beherzigen
 [RAGH. 8,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,76) anlegen (die Rosse): *upa tmani dadhāno dhuryā3śūn*
@@ -49,7 +49,7 @@
 [M. 4,54.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,54) *upahitaṃ śiśirāpagamaśriyā mukulajālam — kiṃśuke*
 [RAGH. 9,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,27) *bhīme copādhitānane* вложил в
 [BHAṬṬ. 15,47.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,47) *hemnīvopahito maṇīḥ* вставленный в, оправленный в
-[MBH. 5,3382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3382) = [≈Вульг. 5.95.43](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A095_S043) = ≈крит. 05,93.43a *upahitanirmalavajravīthikāyām (sabhāyām)*
+[MBH. 5,3382.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3382) = [≈Вульг. 5.95.43](mbh/5.95.html#v43) = ≈крит. 05,93.43a *upahitanirmalavajravīthikāyām (sabhāyām)*
 [HARIV. 12705.](https://sanskrit-lexicon-scans.github.io/hariv?12705) *puravanitānāṃ manasi kusumaśarāsanamupadadhānaḥ* помещая бога любви в сердце
 [BHĀG. P. 5,5,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,31) *hṛdi cainām (sarasvatīm) upadhātumarhasi* так преим. принять близко к сердцу
 [RAGH. 8,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,76) запрягать (коней): *upa tmani dadhāno dhuryā3śūn*
@@ -101,39 +101,39 @@
   <sub>attested</sub>
 
 **6)** — 6) herbeischaffen, herbeiführen; ertheilen: *āsanāni — prayatnopahitāni*
-[MBH. 1,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2891) = [≈Вульг. 1.70.48](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A070_S048) = ≈крит. 01,64.39c *upahitabali* v. l. für *upacita˚*
+[MBH. 1,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2891) = [≈Вульг. 1.70.48](mbh/1.70.html#v48) = ≈крит. 01,64.39c *upahitabali* v. l. für *upacita˚*
 [MEGH. 56.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?56) *sarvakāmairuhitairupapannaḥ samantataḥ (yajñaḥ)*
 [R. GORR. 1,12,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,12,34) *yadindriyaistūpahitaṃ purastātprāptānguṇānsaṃsmarate cirāya*
-[MBH. 12,7417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7417) = [≈Вульг. 12.206.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A206_S029) = ≈крит. 12,199.29c *yadā tu bhāgyakṣayapīḍitā daśāṃ naraḥ katāntopahitāṃ prapadyate*
+[MBH. 12,7417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7417) = [≈Вульг. 12.206.29](mbh/12.206.html#v29) = ≈крит. 12,199.29c *yadā tu bhāgyakṣayapīḍitā daśāṃ naraḥ katāntopahitāṃ prapadyate*
 [MṚCCH. 23,3.] *upahitasmṛtiraṅgulimudrayā* Einschalt. nach
 [ŚĀK. 135.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?135) *śabdopahitarūpa*
 [BHARTṚ.] in [SĀH. D. 32,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?32,4) *upahitaśobhā* (*ayodhyā*)
 [BHAṬṬ. 2,55.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,55) *paramasvāminā svayamupahitarājyābhiṣekaḥ* in einer Inschr. in
 [Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.] *upahita* so v. a. bereit, fertig: *niveśanaṃ ca kupyaṃ ca kṣetraṃ bhāryā suhṛjjanaḥ . etānyupahitānyāhuḥ sarvatra labhate pumān ..*
-[MBH. 12,5219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A140_S026) = ≈крит. 12,138.26a *kratāvupahite nyastaṃ haviḥ*
-[13,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2286) = [≈Вульг. 13.40.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S040) = ≈крит. 13,40.40a
+[MBH. 12,5219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](mbh/12.140.html#v26) = ≈крит. 12,138.26a *kratāvupahite nyastaṃ haviḥ*
+[13,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2286) = [≈Вульг. 13.40.40](mbh/13.40.html#v40) = ≈крит. 13,40.40a
 
 - **RU:** — 6) доставлять, приводить; даровать: *āsanāni — prayatnopahitāni*
-[MBH. 1,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2891) = [≈Вульг. 1.70.48](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A070_S048) = ≈крит. 01,64.39c *upahitabali* v. l. для *upacita˚*
+[MBH. 1,2891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2891) = [≈Вульг. 1.70.48](mbh/1.70.html#v48) = ≈крит. 01,64.39c *upahitabali* v. l. для *upacita˚*
 [MEGH. 56.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?56) *sarvakāmairuhitairupapannaḥ samantataḥ (yajñaḥ)*
 [R. GORR. 1,12,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,12,34) *yadindriyaistūpahitaṃ purastātprāptānguṇānsaṃsmarate cirāya*
-[MBH. 12,7417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7417) = [≈Вульг. 12.206.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A206_S029) = ≈крит. 12,199.29c *yadā tu bhāgyakṣayapīḍitā daśāṃ naraḥ katāntopahitāṃ prapadyate*
+[MBH. 12,7417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7417) = [≈Вульг. 12.206.29](mbh/12.206.html#v29) = ≈крит. 12,199.29c *yadā tu bhāgyakṣayapīḍitā daśāṃ naraḥ katāntopahitāṃ prapadyate*
 [MṚCCH. 23,3.] *upahitasmṛtiraṅgulimudrayā* вставка после
 [ŚĀK. 135.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?135) *śabdopahitarūpa*
 [BHARTṚ.] в [SĀH. D. 32,4.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?32,4) *upahitaśobhā* (*ayodhyā*)
 [BHAṬṬ. 2,55.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,55) *paramasvāminā svayamupahitarājyābhiṣekaḥ* в одном надпись в
 [Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.] *upahita* так преим. готовый, завершенный: *niveśanaṃ ca kupyaṃ ca kṣetraṃ bhāryā suhṛjjanaḥ . etānyupahitānyāhuḥ sarvatra labhate pumān ..*
-[MBH. 12,5219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A140_S026) = ≈крит. 12,138.26a *kratāvupahite nyastaṃ haviḥ*
-[13,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2286) = [≈Вульг. 13.40.40](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S040) = ≈крит. 13,40.40a
+[MBH. 12,5219.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](mbh/12.140.html#v26) = ≈крит. 12,138.26a *kratāvupahite nyastaṃ haviḥ*
+[13,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2286) = [≈Вульг. 13.40.40](mbh/13.40.html#v40) = ≈крит. 13,40.40a
   <sub>attested</sub>
 
 **7)** — 7) *upahita* wohl als Spion zu Jmd geschickt (vgl. *praṇi): vyaktaṃ tvamapyupahitaḥ pāṇḍavaiḥ pāpadeśaja*
-[MBH. 8,1861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1861) = [≈Вульг. 8.40.46](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A040_S046) = ≈крит. 08,27.94c [12,4159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4159) = [≈Вульг. 12.113.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A113_S006) = ≈крит. 12,114.6a [4161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4161) = [≈Вульг. 12.113.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A113_S008) = ≈крит. 12,114.8a [BENFEY] ([PAÑCAT. Bd. I, S. 581]) übersetzt das Wort an der zweiten Stelle durch diejenigen
+[MBH. 8,1861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1861) = [≈Вульг. 8.40.46](mbh/8.40.html#v46) = ≈крит. 08,27.94c [12,4159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4159) = [≈Вульг. 12.113.6](mbh/12.113.html#v6) = ≈крит. 12,114.6a [4161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4161) = [≈Вульг. 12.113.8](mbh/12.113.html#v8) = ≈крит. 12,114.8a [BENFEY] ([PAÑCAT. Bd. I, S. 581]) übersetzt das Wort an der zweiten Stelle durch diejenigen
 
 denen ihre Feinde nachgestellt haben, an der dritten durch verstellt.
 
 - **RU:** — 7) *upahita* вероятно подосланный к кому-л. в качестве шпиона (ср. *praṇi): vyaktaṃ tvamapyupahitaḥ pāṇḍavaiḥ pāpadeśaja*
-[MBH. 8,1861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1861) = [≈Вульг. 8.40.46](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A040_S046) = ≈крит. 08,27.94c [12,4159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4159) = [≈Вульг. 12.113.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A113_S006) = ≈крит. 12,114.6a [4161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4161) = [≈Вульг. 12.113.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A113_S008) = ≈крит. 12,114.8a [BENFEY] ([PAÑCAT. Bd. I, S. 581]) переводит это слово во втором месте как те,
+[MBH. 8,1861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1861) = [≈Вульг. 8.40.46](mbh/8.40.html#v46) = ≈крит. 08,27.94c [12,4159.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4159) = [≈Вульг. 12.113.6](mbh/12.113.html#v6) = ≈крит. 12,114.6a [4161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4161) = [≈Вульг. 12.113.8](mbh/12.113.html#v8) = ≈крит. 12,114.8a [BENFEY] ([PAÑCAT. Bd. I, S. 581]) переводит это слово во втором месте как те,
 
 на кого враги устроили засаду, в третьем — как притворившийся.
   <sub>attested</sub>

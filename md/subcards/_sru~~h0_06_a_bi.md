@@ -7,13 +7,13 @@
  1) hören, vernehmen: *khagānāṃ ca vikūjitam . abhīkṣṇamabhiśṛṇvatī*
 [HARIV. 4583.](https://sanskrit-lexicon-scans.github.io/hariv?4583) *jagato 'bhiśṛṇvataḥ*
 [BHĀG. P. 4,4,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,10) *tamāgatamabhiśrutya*
-[MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427) = [≈Вульг. 1.112.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A112_S003) = крит. —
+[MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427) = [≈Вульг. 1.112.3](mbh/1.112.html#v3) = крит. —
 
 - **RU:** — *abhi*
  1) слышать, воспринимать на слух: *khagānāṃ ca vikūjitam . abhīkṣṇamabhiśṛṇvatī*
 [HARIV. 4583.](https://sanskrit-lexicon-scans.github.io/hariv?4583) *jagato 'bhiśṛṇvataḥ*
 [BHĀG. P. 4,4,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,4,10) *tamāgatamabhiśrutya*
-[MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427) = [≈Вульг. 1.112.3](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A112_S003) = крит. —
+[MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427) = [≈Вульг. 1.112.3](mbh/1.112.html#v3) = крит. —
   <sub>attested</sub>
 
 **2))** — 2) partic. *˚śruta* bekannt

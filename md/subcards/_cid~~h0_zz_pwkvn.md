@@ -13,7 +13,7 @@
 - **RU:** **1.** *chid*, *chindatprāṇi* (Nomin.) — травоядное животное [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**PWKVN-lösen)** **1.** *chid* II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S117) = ≈крит. 01,1.72a. — Mit *vipra* 4.
+**PWKVN-lösen)** **1.** *chid* II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](mbh/1.1.html#v117) = ≈крит. 01,1.72a. — Mit *vipra* 4.
 
-- **RU:** **1.** *chid* II. 6. Также — разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S117) = ≈крит. 01,1.72a. — С *vipra* 4.
+- **RU:** **1.** *chid* II. 6. Также — разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](mbh/1.1.html#v117) = ≈крит. 01,1.72a. — С *vipra* 4.
   <sub>attested</sub>

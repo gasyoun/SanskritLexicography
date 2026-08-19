@@ -78,9 +78,9 @@
 [PRAB. 11,10.]
 [BHĀG. P. 3,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,30) [17,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,18) [26,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,19) [4,1,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,34) [38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,38) [13,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,15) [24,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,8) [9,20,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,20,17) [24,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,47) *sūyate*
 [CŪLIKOP.] in [Ind. St. 9,12.] *asūyata*
-[MBH. 1,2599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2599) = [≈Вульг. 1.66.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A066_S035) = ≈крит. 01,60.34a
+[MBH. 1,2599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2599) = [≈Вульг. 1.66.35](mbh/1.66.html#v35) = ≈крит. 01,60.34a
 [BHĀG. P. 4,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,39) [51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,51) *suṣuve*
-[MBH. 1,2539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2539) = [≈Вульг. 1.65.31](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A065_S031) = ≈крит. 01,59.30a [5908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5908) = [≈Вульг. 1.150.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S004) = ≈крит. 01,137.4a [3,8844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8844) [16638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16638) = [≈Вульг. 3.293.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A293_S023) = ≈крит. 03,277.23a
+[MBH. 1,2539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2539) = [≈Вульг. 1.65.31](mbh/1.65.html#v31) = ≈крит. 01,59.30a [5908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5908) = [≈Вульг. 1.150.4](mbh/1.150.html#v4) = ≈крит. 01,137.4a [3,8844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8844) [16638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16638) = [≈Вульг. 3.293.23](mbh/3.293.html#v23) = ≈крит. 03,277.23a
 [R. 2,90,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,11) [92,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,21)
 [R. GORR. 2,99,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,14) [5,36,57.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,57)
 [RAGH. 5,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,36) [7,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,54)
@@ -89,13 +89,13 @@
 [BHĀG. P. 3,23,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,48) [4,13,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,18) [6,18,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,11) [9,11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,11)
 [PAÑCAT. 238,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,6) (*suṣūve* gedr.). *suṣuvire*
 [KATHĀS. 39,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,18) *suṣāva*
-[MBH. 1,4765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4765) = [≈Вульг. 1.123.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S009) = ≈крит. 01,114.6c
+[MBH. 1,4765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4765) = [≈Вульг. 1.123.9](mbh/1.123.html#v9) = ≈крит. 01,114.6c
 [R. GORR. 1,39,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,39,16)
 [MĀRK. P. 104,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?104,6) *suṣuvus*
 [49,9.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,9) *soṣyate*
 [KATHĀS. 21,35.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,35) [34,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,43) *sūtvā*
 [BHĀG. P. 5,2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) *sūya*
-[MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) = [≈Вульг. 3.110.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A110_S036) = ≈крит. 03,110.15a pass.: *kausalyayāsāvi sukhena rāmaḥ prāk*
+[MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) = [≈Вульг. 3.110.36](mbh/3.110.html#v36) = ≈крит. 03,110.15a pass.: *kausalyayāsāvi sukhena rāmaḥ prāk*
 [BHAṬṬ. 1,14.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,14) erzeugen: *sūte*
 [M. 10,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32) [34.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,34) *suṣuve* (subj. Mann und Weib)
 [ŚĀK. 186.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?186) pass.: *akrūraḥ suṣuve tasmāt*
@@ -107,7 +107,7 @@
 [RĀJA-TAR. 4,300.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,300) *sūṣyant*
 [BHĀG. P. 3,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,13) *dhūmāt — payaḥ sūte ghanasyodgamaḥ*
 [Spr. (II) 3162.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3162 "Spr. (II) 3162: dhūmādgāḍhamalīmasācchuci payaḥ ghanasyodgamo lohasyātiśitasya jātiracalātkuṇṭhāśmamālāmayāt | kiṃ cātyantajaḍāllalāddyutimato jvālādhvajasyodbhavo ja… — (4267.) Das Aufziehen einer Wolke erzeugt aus überaus schmutzigem Rauche (dem sie ihren Ursprung verdankt) reines Wasser") *dharmaṃ sūyanti prajāḥ*
-[MBH. 3,11298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11298) = [≈Вульг. 3.149.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A149_S030) = ≈крит. 03,148.29c — partic. *sūta* mit act. Bed. = *prasūta*
+[MBH. 3,11298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11298) = [≈Вульг. 3.149.30](mbh/3.149.html#v30) = ≈крит. 03,148.29c — partic. *sūta* mit act. Bed. = *prasūta*
 [H. an. 2,208.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,208)
 [MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72) *sūtā* gekalbt habend
 [M. 8,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,242) *vanye sattve sūte* wenn ein wildes Thier Junge geworfen hat
@@ -124,9 +124,9 @@
 [PRAB. 11,10.]
 [BHĀG. P. 3,1,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,30) [17,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,18) [26,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,19) [4,1,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,34) [38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,38) [13,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,15) [24,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,8) [9,20,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,20,17) [24,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,24,47) *sūyate*
 [CŪLIKOP.] в [Ind. St. 9,12.] *asūyata*
-[MBH. 1,2599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2599) = [≈Вульг. 1.66.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A066_S035) = ≈крит. 01,60.34a
+[MBH. 1,2599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2599) = [≈Вульг. 1.66.35](mbh/1.66.html#v35) = ≈крит. 01,60.34a
 [BHĀG. P. 4,1,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,39) [51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,51) *suṣuve*
-[MBH. 1,2539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2539) = [≈Вульг. 1.65.31](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A065_S031) = ≈крит. 01,59.30a [5908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5908) = [≈Вульг. 1.150.4](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A150_S004) = ≈крит. 01,137.4a [3,8844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8844) [16638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16638) = [≈Вульг. 3.293.23](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U20_A293_S023) = ≈крит. 03,277.23a
+[MBH. 1,2539.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2539) = [≈Вульг. 1.65.31](mbh/1.65.html#v31) = ≈крит. 01,59.30a [5908.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5908) = [≈Вульг. 1.150.4](mbh/1.150.html#v4) = ≈крит. 01,137.4a [3,8844.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8844) [16638.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16638) = [≈Вульг. 3.293.23](mbh/3.293.html#v23) = ≈крит. 03,277.23a
 [R. 2,90,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,11) [92,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,21)
 [R. GORR. 2,99,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,99,14) [5,36,57.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,57)
 [RAGH. 5,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,36) [7,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,54)
@@ -135,13 +135,13 @@
 [BHĀG. P. 3,23,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,48) [4,13,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,18) [6,18,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,18,11) [9,11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,11,11)
 [PAÑCAT. 238,6](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,6) (*suṣūve* печ.). *suṣuvire*
 [KATHĀS. 39,18.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,18) *suṣāva*
-[MBH. 1,4765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4765) = [≈Вульг. 1.123.9](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A123_S009) = ≈крит. 01,114.6c
+[MBH. 1,4765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4765) = [≈Вульг. 1.123.9](mbh/1.123.html#v9) = ≈крит. 01,114.6c
 [R. GORR. 1,39,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,39,16)
 [MĀRK. P. 104,6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?104,6) *suṣuvus*
 [49,9.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,9) *soṣyate*
 [KATHĀS. 21,35.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,35) [34,43.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,43) *sūtvā*
 [BHĀG. P. 5,2,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,19) *sūya*
-[MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) = [≈Вульг. 3.110.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A110_S036) = ≈крит. 03,110.15a pass.: *kausalyayāsāvi sukhena rāmaḥ prāk*
+[MBH. 3,10004.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10004) = [≈Вульг. 3.110.36](mbh/3.110.html#v36) = ≈крит. 03,110.15a pass.: *kausalyayāsāvi sukhena rāmaḥ prāk*
 [BHAṬṬ. 1,14.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,14) производить на свет: *sūte*
 [M. 10,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,32) [34.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,34) *suṣuve* (subj. мужчина и женщина)
 [ŚĀK. 186.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?186) pass.: *akrūraḥ suṣuve tasmāt*
@@ -153,7 +153,7 @@
 [RĀJA-TAR. 4,300.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,300) *sūṣyant*
 [BHĀG. P. 3,8,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,8,13) *dhūmāt — payaḥ sūte ghanasyodgamaḥ*
 [Spr. (II) 3162.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3162 "Spr. (II) 3162: dhūmādgāḍhamalīmasācchuci payaḥ ghanasyodgamo lohasyātiśitasya jātiracalātkuṇṭhāśmamālāmayāt | kiṃ cātyantajaḍāllalāddyutimato jvālādhvajasyodbhavo ja… — (4267.) Das Aufziehen einer Wolke erzeugt aus überaus schmutzigem Rauche (dem sie ihren Ursprung verdankt) reines Wasser") *dharmaṃ sūyanti prajāḥ*
-[MBH. 3,11298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11298) = [≈Вульг. 3.149.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A149_S030) = ≈крит. 03,148.29c — partic. *sūta* с act. знач. = *prasūta*
+[MBH. 3,11298.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11298) = [≈Вульг. 3.149.30](mbh/3.149.html#v30) = ≈крит. 03,148.29c — partic. *sūta* с act. знач. = *prasūta*
 [H. an. 2,208.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,208)
 [MED. t. 72. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,72) *sūtā* отелившаяся
 [M. 8,242.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,242) *vanye sattve sūte* когда дикий зверь принес детенышей
@@ -180,7 +180,7 @@
 [MĀRK. P. 51,114.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,114) *prāsūta*
 [R. 7,35,21.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,21)
 [KATHĀS. 17,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,65) *kanyā prasūyate*
-[MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) = [≈Вульг. 3.190.49](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A190_S049) = ≈крит. 03,188.48a [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71) = [≈Вульг. 4.3.12](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A003_S012) = ≈крит. 04,3.10a
+[MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) = [≈Вульг. 3.190.49](mbh/3.190.html#v49) = ≈крит. 03,188.48a [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71) = [≈Вульг. 4.3.12](mbh/4.3.html#v12) = ≈крит. 04,3.10a
 [ṢAḌV. BR. 5,11.]
 [SUŚR. 1,367,18.]
 [Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403 "Spr. (II) 1403: ekā prasūyate mātā dvitīyā vākprasūyate | vāgjātamadhikaṃ procuḥ sodaryādapi bāndhavāt || — (542.) Einen Bruder gebiert uns die Mutter, einen andern die (freundliche) Rede")
@@ -188,7 +188,7 @@
 [PAÑCAR. 1,8,34.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,34) *gauryā prativarṣaṃ prasūyate*
 Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mithunānyeva tāḥ*
 [MĀRK. P. 49,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,10) *prasavanti*
-[MBH. 1,6077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6077) = [≈Вульг. 1.154.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A154_S021) = ≈крит. 01,142.21a *prasavantī*
+[MBH. 1,6077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6077) = [≈Вульг. 1.154.21](mbh/1.154.html#v21) = ≈крит. 01,142.21a *prasavantī*
 [M. 4,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,44) *prasuṣuve*
 [BHĀG. P. 3,17,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,2) *prāsoṣṭa*
 [RĀJA-TAR. 3,106.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,106) [4,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,39)
@@ -206,7 +206,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [MĀRK. P. 51,114.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,114) *prāsūta*
 [R. 7,35,21.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,35,21)
 [KATHĀS. 17,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,65) *kanyā prasūyate*
-[MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) = [≈Вульг. 3.190.49](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A190_S049) = ≈крит. 03,188.48a [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71) = [≈Вульг. 4.3.12](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A003_S012) = ≈крит. 04,3.10a
+[MBH. 3,13057.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13057) = [≈Вульг. 3.190.49](mbh/3.190.html#v49) = ≈крит. 03,188.48a [4,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.71) = [≈Вульг. 4.3.12](mbh/4.3.html#v12) = ≈крит. 04,3.10a
 [ṢAḌV. BR. 5,11.]
 [SUŚR. 1,367,18.]
 [Spr. (II) 1403.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1403 "Spr. (II) 1403: ekā prasūyate mātā dvitīyā vākprasūyate | vāgjātamadhikaṃ procuḥ sodaryādapi bāndhavāt || — (542.) Einen Bruder gebiert uns die Mutter, einen andern die (freundliche) Rede")
@@ -214,7 +214,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [PAÑCAR. 1,8,34.](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,8,34) *gauryā prativarṣaṃ prasūyate*
 схол. к [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mithunānyeva tāḥ*
 [MĀRK. P. 49,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,10) *prasavanti*
-[MBH. 1,6077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6077) = [≈Вульг. 1.154.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A154_S021) = ≈крит. 01,142.21a *prasavantī*
+[MBH. 1,6077.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6077) = [≈Вульг. 1.154.21](mbh/1.154.html#v21) = ≈крит. 01,142.21a *prasavantī*
 [M. 4,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,44) *prasuṣuve*
 [BHĀG. P. 3,17,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,2) *prāsoṣṭa*
 [RĀJA-TAR. 3,106.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,106) [4,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,39)
@@ -239,7 +239,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [MĀRK. P. 49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) [59,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?59,19) *dīpaḥ kajjalaṃ prasūyate*
 [Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816 "Spr. (II) 2816: dīpo bhakṣayate dhvāntaṃ kajjalaṃ ca prasūyate | yadannaṃ bhakṣayennityaṃ jāyate tādṛśī prajā || — (4186.) Eine Lampe verspeist Finsterniss und erzeugt Russ: welcherlei Speise man beständig geniesst, solche Nachkommenschaft wird erzeugt.") *taravaḥ prāsūyanta* trugen Früchte
 [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *yathā prasūyamānastu phalī dadyātphalaṃ bahu*
-[MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) = [≈Вульг. 14.18.2](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A018_S002) = ≈крит. 14,18.2a (*śāstraviṭapī*)
+[MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) = [≈Вульг. 14.18.2](mbh/14.18.html#v2) = ≈крит. 14,18.2a (*śāstraviṭapī*)
 
 *phalaṃ prasūya*
 [Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426 "Spr. (II) 5426: yaḥ sarvakālambudhaiḥ parihasyamāno mūlāṅkurādyapi na jātu puraskaroti | vyāpatsu śāstaviṭapī sa phalaṃ prasūya puṃsaḥ kilaikapada eva lunātyalakṣmīm… — (4869.) Der Baum des Wissens, welcher, wenn Thoren seiner beständig spotten, niemals Wurzeln, junge Triebe und anderes Leben zeigt, erzeugt, wie bekannt, in der Noth eine Frucht, indem er mit einem Male eines Menschen Un…")
@@ -255,7 +255,7 @@ Schol. zu [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12) *prasūyante mit
 [MĀRK. P. 49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) [59,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?59,19) *dīpaḥ kajjalaṃ prasūyate*
 [Spr. (II) 2816.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2816 "Spr. (II) 2816: dīpo bhakṣayate dhvāntaṃ kajjalaṃ ca prasūyate | yadannaṃ bhakṣayennityaṃ jāyate tādṛśī prajā || — (4186.) Eine Lampe verspeist Finsterniss und erzeugt Russ: welcherlei Speise man beständig geniesst, solche Nachkommenschaft wird erzeugt.") *taravaḥ prāsūyanta* приносили плоды
 [BHĀG. P. 4,19,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,8) *yathā prasūyamānastu phalī dadyātphalaṃ bahu*
-[MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) = [≈Вульг. 14.18.2](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A018_S002) = ≈крит. 14,18.2a (*śāstraviṭapī*)
+[MBH. 14,498.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.498) = [≈Вульг. 14.18.2](mbh/14.18.html#v2) = ≈крит. 14,18.2a (*śāstraviṭapī*)
 
 *phalaṃ prasūya*
 [Spr. (II) 5426.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5426 "Spr. (II) 5426: yaḥ sarvakālambudhaiḥ parihasyamāno mūlāṅkurādyapi na jātu puraskaroti | vyāpatsu śāstaviṭapī sa phalaṃ prasūya puṃsaḥ kilaikapada eva lunātyalakṣmīm… — (4869.) Der Baum des Wissens, welcher, wenn Thoren seiner beständig spotten, niemals Wurzeln, junge Triebe und anderes Leben zeigt, erzeugt, wie bekannt, in der Noth eine Frucht, indem er mit einem Male eines Menschen Un…")

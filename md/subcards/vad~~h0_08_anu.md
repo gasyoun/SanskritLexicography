@@ -57,11 +57,11 @@
   <sub>attested</sub>
 
 **4)** — 4) Jmd um ein Almosen ansprechen: *ye tvānuvādeyuravṛttikarśitāḥ*
-[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S015) = ≈крит. 04,6.13c
+[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](mbh/4.7.html#v15) = ≈крит. 04,6.13c
 [NĪLAK.] : *anuvāde 'yuḥ pūrvaṃ dehītyuktyā dattasyaiva kṣetrārāmādeḥ prativarṣaṃ punardehīti rājavacanaṃ yadadhikāriṇaṃ prati tadanuvādastannimittaṃ ye tvāṃ prati ayuḥ prāpnuyuḥ*
 
 - **RU:** — 4) просить кого-либо о подаянии: *ye tvānuvādeyuravṛttikarśitāḥ*
-[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S015) = ≈крит. 04,6.13c
+[MBH. 4,229.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.229) = [≈Вульг. 4.7.15](mbh/4.7.html#v15) = ≈крит. 04,6.13c
 [NĪLAK.] : *anuvāde 'yuḥ pūrvaṃ dehītyuktyā dattasyaiva kṣetrārāmādeḥ prativarṣaṃ punardehīti rājavacanaṃ yadadhikāriṇaṃ prati tadanuvādastannimittaṃ ye tvāṃ prati ayuḥ prāpnuyuḥ*
   <sub>attested</sub>
 

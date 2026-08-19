@@ -6,12 +6,12 @@
 **1)** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])
  1) am Ende eines comp. trinkend: *amṛta˚*
-[MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) = [≈Вульг. 12.287.48](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A287_S048) = ≈крит. 12,276.47a *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
-[10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) = [≈Вульг. 12.287.49](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A287_S049) = ≈крит. 12,276.48a Vgl. *agre˚, indrapātama* (mit passiver Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. und auch 1. *pa* .
+[MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) = [≈Вульг. 12.287.48](mbh/12.287.html#v48) = ≈крит. 12,276.47a *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
+[10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) = [≈Вульг. 12.287.49](mbh/12.287.html#v49) = ≈крит. 12,276.48a Vgl. *agre˚, indrapātama* (mit passiver Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. und auch 1. *pa* .
 
 - **RU:** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])
  1) в конце comp. пьющий: *amṛta˚*
-[MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) = [≈Вульг. 12.287.48](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A287_S048) = ≈крит. 12,276.47a *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
-[10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) = [≈Вульг. 12.287.49](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A287_S049) = ≈крит. 12,276.48a ср. *agre˚, indrapātama* (с пассивным знач.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* и т.д. и также 1. *pa* .
+[MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) = [≈Вульг. 12.287.48](mbh/12.287.html#v48) = ≈крит. 12,276.47a *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
+[10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) = [≈Вульг. 12.287.49](mbh/12.287.html#v49) = ≈крит. 12,276.48a ср. *agre˚, indrapātama* (с пассивным знач.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* и т.д. и также 1. *pa* .
   <sub>attested</sub>

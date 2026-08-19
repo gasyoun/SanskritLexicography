@@ -73,9 +73,9 @@
 - **RU:** — a〉 вошедший в —, содержащийся в (Acc. или Loc.).
   <sub>attested</sub>
 
-**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) = [≈Вульг. 7.36.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A036_S013) = ≈крит. 07,35.13a ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
+**11b)** — b〉 erfüllt —, verbunden mit (Instr.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Statt des unverständlichen *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) = [≈Вульг. 7.36.13](mbh/7.36.html#v13) = ≈крит. 07,35.13a ([ed. Vardh. 7,35,13]) liest [ed. Bomb. 7,36,13] *te viṃśatipade (!) yattāḥ*.
 
-- **RU:** — b〉 исполненный —, соединенный с (Ins.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Вм. непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) = [≈Вульг. 7.36.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A036_S013) = ≈крит. 07,35.13a ([ed. Vardh. 7,35,13]) [Бомбейская ред. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
+- **RU:** — b〉 исполненный —, соединенный с (Ins.) [TS. 4,4,5,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?4,4,5,2). [NYĀYAS. 3,1,68]. — Вм. непонятного *te viśantaṃ mudā yuktāḥ* [MBH. 7,1551](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1551) = [≈Вульг. 7.36.13](mbh/7.36.html#v13) = ≈крит. 07,35.13a ([ed. Vardh. 7,35,13]) [Бомбейская ред. 7,36,13] читает *te viṃśatipade (!) yattāḥ*.
   <sub>attested</sub>
 
 **caus-head)** — Caus. *veśayati*

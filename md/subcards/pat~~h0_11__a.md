@@ -11,10 +11,10 @@
 [VS. 3,49.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?3,49) *śarumāpatantam*
 [AV. 12,2,47.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.47)
 [ŚAT. BR. 3,4,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,10) *āpatataḥ — bāṇān*
-[MBH. 5,7183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7183) = [≈Вульг. 5.180.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S021) = ≈крит. 05,181.20a [7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) = [≈Вульг. 7.117.20](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A117_S020) = ≈крит. 07,93.19a *āpatatyeṣa duṣṭātmā saṃkruddhaḥ puruṣādakaḥ*
-[1,5965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5965) = [≈Вульг. 1.151.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S035) = ≈крит. 01,138.27a [5964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5964) = [≈Вульг. 1.151.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S034) = ≈крит. 01,138.26c [5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5982) = [≈Вульг. 1.152.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S007) = ≈крит. 01,139.4c [5,5962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5962) = [≈Вульг. 5.173.20](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A173_S020) = ≈крит. 05,170.19a *teṣāmāpatatāṃ vegaḥ kariṇām*
-[3,2540.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2540) = [≈Вульг. 3.65.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S009) = крит. — *adarśanādāpatitaḥ punaścādarśanaṃ gataḥ*
-[12,6473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6473) = [≈Вульг. 12.175.32](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A175_S032) = ≈крит. 12,169.30a *tripiṣṭapādāpatitaḥ*
+[MBH. 5,7183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7183) = [≈Вульг. 5.180.21](mbh/5.180.html#v21) = ≈крит. 05,181.20a [7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) = [≈Вульг. 7.117.20](mbh/7.117.html#v20) = ≈крит. 07,93.19a *āpatatyeṣa duṣṭātmā saṃkruddhaḥ puruṣādakaḥ*
+[1,5965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5965) = [≈Вульг. 1.151.35](mbh/1.151.html#v35) = ≈крит. 01,138.27a [5964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5964) = [≈Вульг. 1.151.34](mbh/1.151.html#v34) = ≈крит. 01,138.26c [5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5982) = [≈Вульг. 1.152.7](mbh/1.152.html#v7) = ≈крит. 01,139.4c [5,5962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5962) = [≈Вульг. 5.173.20](mbh/5.173.html#v20) = ≈крит. 05,170.19a *teṣāmāpatatāṃ vegaḥ kariṇām*
+[3,2540.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2540) = [≈Вульг. 3.65.9](mbh/3.65.html#v9) = крит. — *adarśanādāpatitaḥ punaścādarśanaṃ gataḥ*
+[12,6473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6473) = [≈Вульг. 12.175.32](mbh/12.175.html#v32) = ≈крит. 12,169.30a *tripiṣṭapādāpatitaḥ*
 [HARIV. 3181.](https://sanskrit-lexicon-scans.github.io/hariv?3181) [3717.](https://sanskrit-lexicon-scans.github.io/hariv?3717) *rathenāpatatastava*
 [R. 2,72,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,5)
 [RAGH. 5,50.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,50) [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44)
@@ -32,10 +32,10 @@
 [VS. 3,49.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?3,49) *śarumāpatantam*
 [AV. 12,2,47.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.002.html#av12.002.47)
 [ŚAT. BR. 3,4,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,2,10) *āpatataḥ — bāṇān*
-[MBH. 5,7183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7183) = [≈Вульг. 5.180.21](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A180_S021) = ≈крит. 05,181.20a [7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) = [≈Вульг. 7.117.20](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A117_S020) = ≈крит. 07,93.19a *āpatatyeṣa duṣṭātmā saṃkruddhaḥ puruṣādakaḥ*
-[1,5965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5965) = [≈Вульг. 1.151.35](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S035) = ≈крит. 01,138.27a [5964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5964) = [≈Вульг. 1.151.34](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A151_S034) = ≈крит. 01,138.26c [5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5982) = [≈Вульг. 1.152.7](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A152_S007) = ≈крит. 01,139.4c [5,5962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5962) = [≈Вульг. 5.173.20](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A173_S020) = ≈крит. 05,170.19a *teṣāmāpatatāṃ vegaḥ kariṇām*
-[3,2540.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2540) = [≈Вульг. 3.65.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S009) = крит. — *adarśanādāpatitaḥ punaścādarśanaṃ gataḥ*
-[12,6473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6473) = [≈Вульг. 12.175.32](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A175_S032) = ≈крит. 12,169.30a *tripiṣṭapādāpatitaḥ*
+[MBH. 5,7183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7183) = [≈Вульг. 5.180.21](mbh/5.180.html#v21) = ≈крит. 05,181.20a [7,4656.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4656) = [≈Вульг. 7.117.20](mbh/7.117.html#v20) = ≈крит. 07,93.19a *āpatatyeṣa duṣṭātmā saṃkruddhaḥ puruṣādakaḥ*
+[1,5965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5965) = [≈Вульг. 1.151.35](mbh/1.151.html#v35) = ≈крит. 01,138.27a [5964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5964) = [≈Вульг. 1.151.34](mbh/1.151.html#v34) = ≈крит. 01,138.26c [5982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5982) = [≈Вульг. 1.152.7](mbh/1.152.html#v7) = ≈крит. 01,139.4c [5,5962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5962) = [≈Вульг. 5.173.20](mbh/5.173.html#v20) = ≈крит. 05,170.19a *teṣāmāpatatāṃ vegaḥ kariṇām*
+[3,2540.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2540) = [≈Вульг. 3.65.9](mbh/3.65.html#v9) = крит. — *adarśanādāpatitaḥ punaścādarśanaṃ gataḥ*
+[12,6473.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6473) = [≈Вульг. 12.175.32](mbh/12.175.html#v32) = ≈крит. 12,169.30a *tripiṣṭapādāpatitaḥ*
 [HARIV. 3181.](https://sanskrit-lexicon-scans.github.io/hariv?3181) [3717.](https://sanskrit-lexicon-scans.github.io/hariv?3717) *rathenāpatatastava*
 [R. 2,72,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,5)
 [RAGH. 5,50.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,50) [12,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,44)
@@ -60,7 +60,7 @@
 **3)** — 3) unerwartet zum Vorschein kommen, — sich einstellen, — sich ereignen, Jmd (gen.) zustossen, unerwartet zu Theil werden, — treffen: *dvayoraikyamāpatitam*
 [SĀH. D. 24,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?24,6) *karmamadhye yā iṣṭayo vrātapatīyādyāśca āpatanti tā anuṣṭheyāḥ*
 Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?1067,5) *nūnaṃ janmāntarakṛtaṃ pāpamāpatitaṃ mahat*
-[MBH. 3,2564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2564) = [≈Вульг. 3.65.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S033) = крит. — *śakya āpatitaḥ soḍhuṃ prahāro ripuhastataḥ . soḍhumāpatitaḥ śokaḥ susūkṣmo 'pi na śakyate*
+[MBH. 3,2564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2564) = [≈Вульг. 3.65.33](mbh/3.65.html#v33) = крит. — *śakya āpatitaḥ soḍhuṃ prahāro ripuhastataḥ . soḍhumāpatitaḥ śokaḥ susūkṣmo 'pi na śakyate*
 [R. 2,62,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,16) *daivādāpatito doṣaḥ*
 
 [6,100,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,5) *haṭhāpatitāṃ lakṣmīm*
@@ -71,7 +71,7 @@ Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 [HIT. I,164.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,164) *svaśiraśchedana āpatite*
 [BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21)
 [DHŪRTAS. 89,10.] *tadidaṃ brāhmaṇasyāsya duḥkhamāpatitaṃ dhruvam*
-[MBH. 1,6117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6117) = [≈Вульг. 1.155.25](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S025) = ≈крит. 01,143.23a *āpatatyātmanaḥ prāyo doṣo 'nyasya cikīrṣitaḥ*
+[MBH. 1,6117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6117) = [≈Вульг. 1.155.25](mbh/1.155.html#v25) = ≈крит. 01,143.23a *āpatatyātmanaḥ prāyo doṣo 'nyasya cikīrṣitaḥ*
 [KATHĀS. 20,213.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,213) [22,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,239)
 [PRAB. 64,6.] *aho cirādetadasmākaṃ mahadbhojanamāpatitam*
 [PAÑCAT. 21,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,12)
@@ -79,7 +79,7 @@ Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 - **RU:** — 3) неожиданно появляться, — наступать, — случаться, постигать кого-л. (gen.), неожиданно доставаться, — выпадать на долю: *dvayoraikyamāpatitam*
 [SĀH. D. 24,6.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?24,6) *karmamadhye yā iṣṭayo vrātapatīyādyāśca āpatanti tā anuṣṭheyāḥ*
 схол. к [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app2?1067,5) *nūnaṃ janmāntarakṛtaṃ pāpamāpatitaṃ mahat*
-[MBH. 3,2564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2564) = [≈Вульг. 3.65.33](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S033) = крит. — *śakya āpatitaḥ soḍhuṃ prahāro ripuhastataḥ . soḍhumāpatitaḥ śokaḥ susūkṣmo 'pi na śakyate*
+[MBH. 3,2564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2564) = [≈Вульг. 3.65.33](mbh/3.65.html#v33) = крит. — *śakya āpatitaḥ soḍhuṃ prahāro ripuhastataḥ . soḍhumāpatitaḥ śokaḥ susūkṣmo 'pi na śakyate*
 [R. 2,62,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,62,16) *daivādāpatito doṣaḥ*
 
 [6,100,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,5) *haṭhāpatitāṃ lakṣmīm*
@@ -90,7 +90,7 @@ Schol. zu [KĀTY. ŚR. 1067,5.](https://sanskrit-lexicon-scans.github.io/katyasr
 [HIT. I,164.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,164) *svaśiraśchedana āpatite*
 [BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21)
 [DHŪRTAS. 89,10.] *tadidaṃ brāhmaṇasyāsya duḥkhamāpatitaṃ dhruvam*
-[MBH. 1,6117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6117) = [≈Вульг. 1.155.25](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S025) = ≈крит. 01,143.23a *āpatatyātmanaḥ prāyo doṣo 'nyasya cikīrṣitaḥ*
+[MBH. 1,6117.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6117) = [≈Вульг. 1.155.25](mbh/1.155.html#v25) = ≈крит. 01,143.23a *āpatatyātmanaḥ prāyo doṣo 'nyasya cikīrṣitaḥ*
 [KATHĀS. 20,213.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,213) [22,239.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,239)
 [PRAB. 64,6.] *aho cirādetadasmākaṃ mahadbhojanamāpatitam*
 [PAÑCAT. 21,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,12)

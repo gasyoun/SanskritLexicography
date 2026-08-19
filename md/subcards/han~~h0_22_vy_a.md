@@ -49,7 +49,7 @@
 [NIDĀNAS. 6,12] in [Ind. St. 10,145.] *yāṣṭīkavyāhato hariḥ*
 [BHAṬṬ. 5,24.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,24) gehemmt, gehindert: *abhiṣeka*
 [R. 2,22,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,25) ([19,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,19,20) [GORR.]). *a˚*
-[MBH. 12,6863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6863) = [≈Вульг. 12.188.20](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A188_S020) = ≈крит. 12,181.20a
+[MBH. 12,6863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6863) = [≈Вульг. 12.188.20](mbh/12.188.html#v20) = ≈крит. 12,181.20a
 [R. 7,36,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,23)
 [RAGH. 2,5.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,5) [19,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,57) [ed. Calc. 1,19.] [PRAB. 30,3.] [33,6.] [MĀRK. P. 116,5.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?116,5) [BHĀG. P. 4,9,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,22) [15,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,15,16) [5,1,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,29) [6,17,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,17,2) [9,15,18. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,18) [18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,18,46) [23,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,23,25) [10,8,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,36) [11,2,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,2,23) [PAÑCAT. 16,1](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,1) ([ed. orn. 13,7](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?13,7)). [SARVADARŚANAS. 79,17.]
 
@@ -58,22 +58,22 @@
 [NIDĀNAS. 6,12] в [Ind. St. 10,145.] *yāṣṭīkavyāhato hariḥ*
 [BHAṬṬ. 5,24.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,24) задержанный, воспрепятствованный: *abhiṣeka*
 [R. 2,22,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,25) ([19,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,19,20) [GORR.]). *a˚*
-[MBH. 12,6863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6863) = [≈Вульг. 12.188.20](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A188_S020) = ≈крит. 12,181.20a
+[MBH. 12,6863.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6863) = [≈Вульг. 12.188.20](mbh/12.188.html#v20) = ≈крит. 12,181.20a
 [R. 7,36,23.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,23)
 [RAGH. 2,5.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,5) [19,57.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,57) [ed. Calc. 1,19.] [PRAB. 30,3.] [33,6.] [MĀRK. P. 116,5.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?116,5) [BHĀG. P. 4,9,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,22) [15,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,15,16) [5,1,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,1,29) [6,17,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,17,2) [9,15,18. fg.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,15,18) [18,46.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,18,46) [23,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,23,25) [10,8,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,36) [11,2,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,2,23) [PAÑCAT. 16,1](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,1) ([ed. orn. 13,7](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?13,7)). [SARVADARŚANAS. 79,17.]
   <sub>attested</sub>
 
 **4c)** — c) im Widerspruch stehend: *dharmasya vividhā gatiḥ*
-[MBH. 14,1348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1348) = [≈Вульг. 14.48.13](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A048_S013) = ≈крит. 14,48.13a *karman*
+[MBH. 14,1348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1348) = [≈Вульг. 14.48.13](mbh/14.48.html#v13) = ≈крит. 14,48.13a *karman*
 [R. 2,106,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,17) ([113,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,113,12) [GORR.]). [SARVADARŚANAS. 78,14.] Comm. zu [NYĀYAS. 1,1,32.] [SĀH. D. 576.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?576) *a˚*
 [NĪLAK. 21.] *vyāhatatva*
-[SĀH. D. 227,3.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?227,3) — [MBH. 1,3687](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3687) = [≈Вульг. 1.93.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A093_S024) = ≈крит. 01,88.23a fehlerhaft für *vyāhṛta* (so [ed. Bomb.]) Vgl. *vyāghāta, vyāhati, vyāhantavya* . — caus. hemmen, hindern, vereiteln: *kratuśraddhāṃ vyāghātayitum*
-[MBH. 1,8109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8109) = [≈Вульг. 1.221.66](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U17_A221_S066) = ≈крит. 01,213.59c
+[SĀH. D. 227,3.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?227,3) — [MBH. 1,3687](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3687) = [≈Вульг. 1.93.24](mbh/1.93.html#v24) = ≈крит. 01,88.23a fehlerhaft für *vyāhṛta* (so [ed. Bomb.]) Vgl. *vyāghāta, vyāhati, vyāhantavya* . — caus. hemmen, hindern, vereiteln: *kratuśraddhāṃ vyāghātayitum*
+[MBH. 1,8109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8109) = [≈Вульг. 1.221.66](mbh/1.221.html#v66) = ≈крит. 01,213.59c
 
 - **RU:** — c) находящийся в противоречии: *dharmasya vividhā gatiḥ*
-[MBH. 14,1348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1348) = [≈Вульг. 14.48.13](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A048_S013) = ≈крит. 14,48.13a *karman*
+[MBH. 14,1348.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1348) = [≈Вульг. 14.48.13](mbh/14.48.html#v13) = ≈крит. 14,48.13a *karman*
 [R. 2,106,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,17) ([113,12](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,113,12) [GORR.]). [SARVADARŚANAS. 78,14.] коммент. к [NYĀYAS. 1,1,32.] [SĀH. D. 576.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?576) *a˚*
 [NĪLAK. 21.] *vyāhatatva*
-[SĀH. D. 227,3.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?227,3) — [MBH. 1,3687](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3687) = [≈Вульг. 1.93.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A093_S024) = ≈крит. 01,88.23a ошибочно вм. *vyāhṛta* (так [Бомбейская ред.]) ср. *vyāghāta, vyāhati, vyāhantavya* . — caus. задерживать, препятствовать, расстраивать: *kratuśraddhāṃ vyāghātayitum*
-[MBH. 1,8109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8109) = [≈Вульг. 1.221.66](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U17_A221_S066) = ≈крит. 01,213.59c
+[SĀH. D. 227,3.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?227,3) — [MBH. 1,3687](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3687) = [≈Вульг. 1.93.24](mbh/1.93.html#v24) = ≈крит. 01,88.23a ошибочно вм. *vyāhṛta* (так [Бомбейская ред.]) ср. *vyāghāta, vyāhati, vyāhantavya* . — caus. задерживать, препятствовать, расстраивать: *kratuśraddhāṃ vyāghātayitum*
+[MBH. 1,8109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8109) = [≈Вульг. 1.221.66](mbh/1.221.html#v66) = ≈крит. 01,213.59c
   <sub>attested</sub>

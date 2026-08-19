@@ -148,9 +148,9 @@
 - **RU:** — 2〉 отмерять; Pass. быть измеренным —, определенным [ĀRYABH. 3,1].
   <sub>attested</sub>
 
-**ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) = [≈Вульг. 12.2.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S007) = ≈крит. 12,2.7a ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
+**ava-3〉)** — 3〉 sich von Jmd oder Etwas (Acc.) eine Vorstellung machen, sich Etwas (auch Gen. [BHĀG. P.]) denken, — als oder wie (Acc. mit *iva* oder *yathā*; [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) = [≈Вульг. 12.2.7](mbh/12.2.html#v7) = ≈крит. 12,2.7a ist *vayḥ* zu *mghasya* zu ergänzen). *anumita* wovon man sich eine Vorstellung gebildet hat, was man sich gedacht hat.
 
-- **RU:** — 3〉 составить себе представление о ком-либо или о чем-либо (Acc.), думать о чем-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) = [≈Вульг. 12.2.7](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S007) = ≈крит. 12,2.7a надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чем составлено представление, что было мысленно представлено.
+- **RU:** — 3〉 составить себе представление о ком-либо или о чем-либо (Acc.), думать о чем-либо (также Gen. [BHĀG. P.]) — как или подобно (Acc. с *iva* или *yathā*; к [MBH. 12,51,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,51,8) = [≈Вульг. 12.2.7](mbh/12.2.html#v7) = ≈крит. 12,2.7a надо домыслить *vayḥ* в смысле *mghasya*). *anumita* о чем составлено представление, что было мысленно представлено.
   <sub>attested</sub>
 
 **ava-4〉)** — 4〉 aus Etwas (Abl. oder Instr.) schliessen auf (Acc.), erschliessen, folgern, schliessen, dass ist (mit doppelten Acc.). Praes. nur in den reduplicirten Formen (*anumimīran* [Comm. zu JAIM. 1,3,2]) und *anuminoti* (s. u. **1.** *mi* mit *anu*). *anumita* geschlossen, gefolgert.

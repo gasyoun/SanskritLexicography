@@ -11,7 +11,7 @@
 [PAÑCAT. 89,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?89,10) *balavatā kālenaite prabadhya nimīlitāḥ* in Fesseln schlagen
 [Spr. 776.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?776) *prabaddhavilūna*
 [P. 4,1,52](https://ashtadhyayi.com/sutraani/4/1/52), Vārtt. 3. *vākprabaddho hi saṃsāraḥ* an's Wort gekettet, vom Wort abhängend
-[MBH. 12,7804.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7804) = [≈Вульг. 12.218.32](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A218_S032) = ≈крит. 12,211.31a
+[MBH. 12,7804.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7804) = [≈Вульг. 12.218.32](mbh/12.218.html#v32) = ≈крит. 12,211.31a
 
 - **RU:** — *pra*
  1) привязывать, прикреплять
@@ -21,7 +21,7 @@
 [PAÑCAT. 89,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?89,10) *balavatā kālenaite prabadhya nimīlitāḥ* заковывать в оковы
 [Spr. 776.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?776) *prabaddhavilūna*
 [P. 4,1,52](https://ashtadhyayi.com/sutraani/4/1/52), Вартт. 3. *vākprabaddho hi saṃsāraḥ* прикованный к слову, зависящий от слова
-[MBH. 12,7804.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7804) = [≈Вульг. 12.218.32](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A218_S032) = ≈крит. 12,211.31a
+[MBH. 12,7804.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7804) = [≈Вульг. 12.218.32](mbh/12.218.html#v32) = ≈крит. 12,211.31a
   <sub>attested</sub>
 
 **2))** — 2) unterdrücken, hemmen: *prabaddhamūtra* an Harnverhaltung leidend
@@ -41,7 +41,7 @@
 [ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6) *anyanaupratibaddhām (nāvam)*
 [KĀM. NĪTIS. 7,33.] *dāmnā caivodare baddhvā pratyabandhadulūkhale*
 [HARIV. 3449.](https://sanskrit-lexicon-scans.github.io/hariv?3449) *śirasyetaṃ maṇiṃ rājā pratibadhnātu*
-[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Вульг. 10.16.34](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U02_A016_S034) = ≈крит. 10,16.33a *pītapratibaddhavatsā*
+[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Вульг. 10.16.34](mbh/10.16.html#v34) = ≈крит. 10,16.33a *pītapratibaddhavatsā*
 [RAGH. 2,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,1)
 [SUŚR. 1,161,21.] *sthūlāntrapratibaddha* befestigt an, hängend an
 [258,10. 324,3.] einfassen: *yadi maṇistrapuṇi pratibadhyate*
@@ -49,7 +49,7 @@
 [ŚIŚ. 9,8.] *pratibaddha* verknüpft, verbunden
 [KAP. 1,101.] *yo yena pratibaddhaḥ syāt*
 [Spr. 2560.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2560) versehen mit: *dīptāṅgadayugapratibaddhamahābhuja*
-[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Вульг. 11.25.6](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U02_A025_S006) = ≈крит. 11,25.6a *dharmārthapratibaddhatā*
+[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Вульг. 11.25.6](mbh/11.25.html#v6) = ≈крит. 11,25.6a *dharmārthapratibaddhatā*
 [H. 69.](https://sanskrit-lexicon-scans.github.io/abch2/app1?69) *paśuvatparatantratvena pratibaddhaḥ* so v. a. abhängig
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* dem Tode unterworfen
 [98.] *rasāntareṣu pratibaddharāgam* so v. a. harmonirend
@@ -60,7 +60,7 @@
 [ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6) *anyanaupratibaddhām (nāvam)*
 [KĀM. NĪTIS. 7,33.] *dāmnā caivodare baddhvā pratyabandhadulūkhale*
 [HARIV. 3449.](https://sanskrit-lexicon-scans.github.io/hariv?3449) *śirasyetaṃ maṇiṃ rājā pratibadhnātu*
-[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Вульг. 10.16.34](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U02_A016_S034) = ≈крит. 10,16.33a *pītapratibaddhavatsā*
+[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Вульг. 10.16.34](mbh/10.16.html#v34) = ≈крит. 10,16.33a *pītapratibaddhavatsā*
 [RAGH. 2,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,1)
 [SUŚR. 1,161,21.] *sthūlāntrapratibaddha* прикрепленный к, висящий на
 [258,10. 324,3.] вставлять в оправу: *yadi maṇistrapuṇi pratibadhyate*
@@ -68,7 +68,7 @@
 [ŚIŚ. 9,8.] *pratibaddha* связанный, соединенный
 [KAP. 1,101.] *yo yena pratibaddhaḥ syāt*
 [Spr. 2560.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2560) снабженный, наделенный: *dīptāṅgadayugapratibaddhamahābhuja*
-[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Вульг. 11.25.6](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U02_A025_S006) = ≈крит. 11,25.6a *dharmārthapratibaddhatā*
+[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Вульг. 11.25.6](mbh/11.25.html#v6) = ≈крит. 11,25.6a *dharmārthapratibaddhatā*
 [H. 69.](https://sanskrit-lexicon-scans.github.io/abch2/app1?69) *paśuvatparatantratvena pratibaddhaḥ* так: зависимый
 [ŚAṂK.] к [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* подверженный смерти
 [98.] *rasāntareṣu pratibaddharāgam* так: созвучный, гармонирующий
@@ -100,14 +100,14 @@
 **Nachtrag-4a (T102) von sich weisen)** — 4) Jmd von sich weisen, fern halten von sich: *pratyabadhnāccārthapatim*
 [DAŚAK.] in [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
 [DURGA] zu [NIR.] bei [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* so v. a. mit den B. will man Nichts zu thun haben
-[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Вульг. 8.45.38](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S038) = ≈крит. 08,30.74c *pratibaddha = manohata, pratihata, hata*
+[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Вульг. 8.45.38](mbh/8.45.html#v38) = ≈крит. 08,30.74c *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)
 [H. 439.](https://sanskrit-lexicon-scans.github.io/abch2/app1?439)
 
 - **RU:** — 4) отталкивать кого-л. от себя, держать кого-л. вдали от себя: *pratyabadhnāccārthapatim*
 [DAŚAK.] в [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
 [DURGA] к [NIR.] при [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* так: с B. не желают иметь ничего общего
-[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Вульг. 8.45.38](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S038) = ≈крит. 08,30.74c *pratibaddha = manohata, pratihata, hata*
+[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Вульг. 8.45.38](mbh/8.45.html#v38) = ≈крит. 08,30.74c *pratibaddha = manohata, pratihata, hata*
 [AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)
 [H. 439.](https://sanskrit-lexicon-scans.github.io/abch2/app1?439)
   <sub>attested</sub>

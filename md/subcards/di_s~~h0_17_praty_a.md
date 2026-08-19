@@ -19,10 +19,10 @@
   <sub>attested</sub>
 
 **2)** — 2) Jmd (acc.) Etwas wiederberichten: *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
-[MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717) = [≈Вульг. 3.234.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A234_S008) = ≈крит. 03,223.8c
+[MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717) = [≈Вульг. 3.234.8](mbh/3.234.html#v8) = ≈крит. 03,223.8c
 
 - **RU:** — 2) докладывать кому-л. (acc.) о чем-л.: *yatkathayetpatiste yadyapyaguhyaṃ parirakṣitavyam . kācitsapatnī tava vāsudevaṃ pratyādiśet*
-[MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717) = [≈Вульг. 3.234.8](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A234_S008) = ≈крит. 03,223.8c
+[MBH. 3,14717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14717) = [≈Вульг. 3.234.8](mbh/3.234.html#v8) = ≈крит. 03,223.8c
   <sub>attested</sub>
 
 **3)** — 3) Jmd vorladen: *saṃjīvakaḥ pratyādiśyatām*
@@ -60,10 +60,10 @@
   <sub>attested</sub>
 
 **5)** — 5) zurückweisen s. v. a. überwinden, besiegen: *pratyādiṣṭa*
-[MBH. 14,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2460) = [≈Вульг. 14.82.26](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A082_S026) = крит. —
+[MBH. 14,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2460) = [≈Вульг. 14.82.26](mbh/14.82.html#v26) = крит. —
 
 - **RU:** — 5) отвергать см. а. преодолевать, побеждать: *pratyādiṣṭa*
-[MBH. 14,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2460) = [≈Вульг. 14.82.26](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A082_S026) = крит. —
+[MBH. 14,2460.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2460) = [≈Вульг. 14.82.26](mbh/14.82.html#v26) = крит. —
   <sub>attested</sub>
 
 **Nachtrag)** — Vgl. *pratyādeśa* .

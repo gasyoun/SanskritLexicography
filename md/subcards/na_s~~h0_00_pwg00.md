@@ -4,9 +4,9 @@
 
 
 **1)** *naś*, *naśati* (ved., *vipraṇaśet*
-[MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) = [≈Вульг. 13.61.20](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S020) = крит. — *vinaśet*
-[3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) = [≈Вульг. 3.59.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A059_S013) = ≈крит. 03,56.13a *naśemahi*
-[7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A017_S013) = ≈крит. 07,16.13a) und *naśyati* (
+[MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) = [≈Вульг. 13.61.20](mbh/13.61.html#v20) = крит. — *vinaśet*
+[3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) = [≈Вульг. 3.59.13](mbh/3.59.html#v13) = ≈крит. 03,56.13a *naśemahi*
+[7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](mbh/7.17.html#v13) = ≈крит. 07,16.13a) und *naśyati* (
 [DHĀTUP. 26,85](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)); *nanāśa, neśus; anaśat* und *aneśat*
 [KĀŚ.] zu [P. 6,4,120.](https://ashtadhyayi.com/sutraani/6/4/120) [VOP. 11,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) *neśat; naśiṣyati* und *naṅkṣyati; naśitā* und *naṃṣṭā*
 [P. 7,2,45.](https://ashtadhyayi.com/sutraani/7/2/45) [1,60.](https://ashtadhyayi.com/sutraani/7/1/60)
@@ -23,7 +23,7 @@
 [M. 8,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,32) [232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,232)
 [YĀJÑ. 2,164.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,164) *pañcāśadvarṣanaṣṭaṃ putram*
 [SADDH. P. 4,10,a.] *mā neśuḥ paśavastava*
-[MBH. 4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008) = [≈Вульг. 4.31.9](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S009) = ≈крит. 04,30.8a *ajanāśaṃ naṣṭaḥ*
+[MBH. 4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008) = [≈Вульг. 4.31.9](mbh/4.31.html#v9) = ≈крит. 04,30.8a *ajanāśaṃ naṣṭaḥ*
 [P. 3,4,45](https://ashtadhyayi.com/sutraani/3/4/45), Sch.
 *naṣṭaṃ mṛtamatikrāntaṃ nānuśocanti paṇḍitāḥ*
 [PAÑCAT. I,378.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,378) [HIT. I,161.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,161) [MĀRK. P. 19,18.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?19,18) [AK. 2,8,2,80.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,80) *tathā sīmā na naśyati*
@@ -32,10 +32,10 @@
 [YĀJÑ. 2,58.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,58) *jāyā vivasvato nanāśa*
 [ṚV. 10,17,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.01)
 [AIT. BR. 7,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,10) *mā sma no bharatā naśan* entwischen
-[MBH. 5,2736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2736) = [≈Вульг. 5.74.20](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A074_S020) = ≈крит. 05,72.20c *neśuścitrā niśācarāḥ* (= *palāṃyitāḥ* Schol.)
+[MBH. 5,2736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2736) = [≈Вульг. 5.74.20](mbh/5.74.html#v20) = ≈крит. 05,72.20c *neśuścitrā niśācarāḥ* (= *palāṃyitāḥ* Schol.)
 [BHAṬṬ. 14,112.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,112) *naṣṭa = palāyita*
 [H. 805.](https://sanskrit-lexicon-scans.github.io/abch2/app1?805) *mārgā naṣṭā vanodbhavāḥ* sind verschwunden, nicht mehr zu sehen
-[MBH. 3,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2541) = [≈Вульг. 3.65.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S010) = ≈крит. 03,62.7a *naṅkṣyati śivastava vedapanthāḥ*
+[MBH. 3,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2541) = [≈Вульг. 3.65.10](mbh/3.65.html#v10) = ≈крит. 03,62.7a *naṅkṣyati śivastava vedapanthāḥ*
 [BHĀG. P. 3,16,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,23) *naṣṭasalilāḥ (āpagāḥ)*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) *kvaciddṛṣṭaḥ kvacinnaṣṭaḥ*
 [R. 3,50,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,7) *dṛṣṭanaṣṭa*
@@ -48,7 +48,7 @@
 [ŚUK. 39,14.] *naṣṭo vaiśravaṇaḥ sthānāttasya vīryeṇa* gekommen um Etwas
 [R. 1,14,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,18) *sā naṣṭā vāṇapurāttadā* verschwand aus
 [HARIV. 10023.](https://sanskrit-lexicon-scans.github.io/hariv?10023) *kathaṃ ca naṣṭā jñātibhyo bharturvā* so v. a. und auf welche Weise haben Verwandte und Gatte sie aus dem Gesicht verloren?
-[MBH. 3,2690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2690) = [≈Вульг. 3.68.37](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A068_S037) = ≈крит. 03,65.35a *ātmā yakṣmasya naśyati*
+[MBH. 3,2690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2690) = [≈Вульг. 3.68.37](mbh/3.68.html#v37) = ≈крит. 03,65.35a *ātmā yakṣmasya naśyati*
 [ṚV. 10,97,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.11) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.13) *neśattamo dudhitaṃ rocata dyauḥ*
 [4,1,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.001.html#rv04.001.17) [6,54,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.054.html#rv06.054.07) [VS. 16,10.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,10)
 
@@ -58,14 +58,14 @@
 [AIT. BR. 5,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,28) *yadi kapālaṃ naśyet*
 [7,9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,9) [TS. 2,6,3,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,3,5) [ŚĀṄKH. ŚR. 13,3,2.] [GṚHY. 5,8.] *prajñā naśyati*
 [M. 4,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,52) *dharmo 'naśattadā*
-[MBH. 13,1313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1313) = [≈Вульг. 13.18.16](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S016) = крит. — [3,8494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8494) = [≈Вульг. 3.94.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A094_S006) = ≈крит. 03,92.6a *tato naṅkṣyati te dharmaḥ*
+[MBH. 13,1313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1313) = [≈Вульг. 13.18.16](mbh/13.18.html#v16) = крит. — [3,8494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8494) = [≈Вульг. 3.94.6](mbh/3.94.html#v6) = ≈крит. 03,92.6a *tato naṅkṣyati te dharmaḥ*
 [KATHĀS. 15,78.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,78) *jñānāni naṅkṣanti (naṅkṣyanti* zu lesen)
-[MBH. 12,1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1860) = [≈Вульг. 12.52.13](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A052_S013) = ≈крит. 12,52.13c *mahāndharmo naśiṣyati*
-[4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) = [≈Вульг. 4.21.40](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A021_S040) = ≈крит. 04,20.26c *naṣṭo mohaḥ*
+[MBH. 12,1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1860) = [≈Вульг. 12.52.13](mbh/12.52.html#v13) = ≈крит. 12,52.13c *mahāndharmo naśiṣyati*
+[4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) = [≈Вульг. 4.21.40](mbh/4.21.html#v40) = ≈крит. 04,20.26c *naṣṭo mohaḥ*
 [BHAG. 18,73.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,73) *naṣṭasaṃjña*
-[MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) = [≈Вульг. 1.75.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S022) = ≈крит. 01,70.19c [3,2867.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2867) = [≈Вульг. 3.73.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S016) = ≈крит. 03,71.16a *naṣṭātman*
-[2361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2361) = [≈Вульг. 3.62.29](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A062_S029) = ≈крит. 03,59.25a *˚rūpa*
-[2904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2904) = [≈Вульг. 3.74.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A074_S015) = ≈крит. 03,72.15a *˚cetana*
+[MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) = [≈Вульг. 1.75.22](mbh/1.75.html#v22) = ≈крит. 01,70.19c [3,2867.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2867) = [≈Вульг. 3.73.16](mbh/3.73.html#v16) = ≈крит. 03,71.16a *naṣṭātman*
+[2361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2361) = [≈Вульг. 3.62.29](mbh/3.62.html#v29) = ≈крит. 03,59.25a *˚rūpa*
+[2904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2904) = [≈Вульг. 3.74.15](mbh/3.74.html#v15) = ≈крит. 03,72.15a *˚cetana*
 [SUŚR. 1,255,9.] *˚svaratā*
 [118,8.] *˚mati, ˚dṛṣṭi*
 [BHĀG. P. 5,26,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *˚dhī*
@@ -76,7 +76,7 @@
 [M. 3,97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,97) *naṣṭaṃ devalake dattam* 180. *tapāṃsi mama naṣṭāni vratāni me 'khilāni ca*
 [BRAHMA-P. in LA. 58,7.] *avivekini bhūpāle naśyanti guṇino guṇāḥ . pravāsarāsake kānte yathā sādhvyāḥ stanonnatiḥ ..* umsonst da sein
 [Spr. 254.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?254) *kṛtaṃ yasminna naśyati* dem eine Wohlthat nicht vergebens erwiesen worden ist
-[MBH. 1,6116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6116) = [≈Вульг. 1.155.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S024) = ≈крит. 01,143.22c *naśyatīṣuryathāviddhaḥ khe viddhamanuvidhyataḥ . tathā naśyati vai kṣipraṃ vījaṃ paraparigrahe ..*
+[MBH. 1,6116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6116) = [≈Вульг. 1.155.24](mbh/1.155.html#v24) = ≈крит. 01,143.22c *naśyatīṣuryathāviddhaḥ khe viddhamanuvidhyataḥ . tathā naśyati vai kṣipraṃ vījaṃ paraparigrahe ..*
 [M. 9,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,43) *asaṃtuṣṭhā dvijā naṣṭāḥ saṃtuṣṭā iva pārthivāḥ* sind verloren so v. a. bringen es zu Nichts
 [Spr. 277.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?277) *kṣipraṃ naśyati sānvayaḥ* geht zu Grunde
 [M. 3,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,205) [9,314.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,314) *pretya ceha ca naśyati*
@@ -90,17 +90,17 @@
 [YĀJÑ. 2,59.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,59) *naṣṭa* im Gegens. zu *puṣṭa* von Personen
 [VEDĀNTAS. (Allah.) No. 81.] med. : *aryo naśanta saniṣanta no dhiyaḥ*
 [ṚV. 9,79,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.079.html#rv09.079.01) *naśemahi sadā niśi* verschwinden, sich unsichtbar machen
-[MBH. 7,685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A017_S013) = ≈крит. 07,16.13a *apasarpata naśyadhvam* verschwindet, macht dass ihr fortkommt
+[MBH. 7,685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](mbh/7.17.html#v13) = ≈крит. 07,16.13a *apasarpata naśyadhvam* verschwindet, macht dass ihr fortkommt
 [R. 5,27,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,24) *(aśubhaṃ karma) tatsarvaṃ naśyate tatra snātamātrasya*
-[MBH. 3,7014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7014) [7069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7069) [13245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13245) = [≈Вульг. 3.193.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A193_S035) = крит. — *na cāsyā naśyate rūpam*
+[MBH. 3,7014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7014) [7069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7069) [13245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13245) = [≈Вульг. 3.193.35](mbh/3.193.html#v35) = крит. — *na cāsyā naśyate rūpam*
 [N. 17,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,7) *sa naśyeta mṛṣā vadan* zu Grunde gehen
-[MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) = [≈Вульг. 1.82.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A082_S018) = ≈крит. 01,77.18a [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) = [≈Вульг. 3.133.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A133_S028) = ≈крит. 03,133.25c *yāvanna naṅkṣyāmahe*
+[MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) = [≈Вульг. 1.82.18](mbh/1.82.html#v18) = ≈крит. 01,77.18a [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) = [≈Вульг. 3.133.28](mbh/3.133.html#v28) = ≈крит. 03,133.25c *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,11)
 
 - **RU:** *naś*, *naśati* (ved., *vipraṇaśet*
-[MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) = [≈Вульг. 13.61.20](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S020) = крит. — *vinaśet*
-[3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) = [≈Вульг. 3.59.13](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A059_S013) = ≈крит. 03,56.13a *naśemahi*
-[7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A017_S013) = ≈крит. 07,16.13a) и *naśyati* (
+[MBH. 13,3083.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3083) = [≈Вульг. 13.61.20](mbh/13.61.html#v20) = крит. — *vinaśet*
+[3,2289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2289) = [≈Вульг. 3.59.13](mbh/3.59.html#v13) = ≈крит. 03,56.13a *naśemahi*
+[7,685](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](mbh/7.17.html#v13) = ≈крит. 07,16.13a) и *naśyati* (
 [DHĀTUP. 26,85](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=26)); *nanāśa, neśus; anaśat* и *aneśat*
 [KĀŚ.] к [P. 6,4,120.](https://ashtadhyayi.com/sutraani/6/4/120) [VOP. 11,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?11,5) *neśat; naśiṣyati* и *naṅkṣyati; naśitā* и *naṃṣṭā*
 [P. 7,2,45.](https://ashtadhyayi.com/sutraani/7/2/45) [1,60.](https://ashtadhyayi.com/sutraani/7/1/60)
@@ -117,7 +117,7 @@
 [M. 8,32.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,32) [232.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,232)
 [YĀJÑ. 2,164.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,164) *pañcāśadvarṣanaṣṭaṃ putram*
 [SADDH. P. 4,10,a.] *mā neśuḥ paśavastava*
-[MBH. 4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008) = [≈Вульг. 4.31.9](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A031_S009) = ≈крит. 04,30.8a *ajanāśaṃ naṣṭaḥ*
+[MBH. 4,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1008) = [≈Вульг. 4.31.9](mbh/4.31.html#v9) = ≈крит. 04,30.8a *ajanāśaṃ naṣṭaḥ*
 [P. 3,4,45](https://ashtadhyayi.com/sutraani/3/4/45), схол.
 *naṣṭaṃ mṛtamatikrāntaṃ nānuśocanti paṇḍitāḥ*
 [PAÑCAT. I,378.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,378) [HIT. I,161.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,161) [MĀRK. P. 19,18.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?19,18) [AK. 2,8,2,80.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,8,2,80) *tathā sīmā na naśyati*
@@ -126,10 +126,10 @@
 [YĀJÑ. 2,58.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,58) *jāyā vivasvato nanāśa*
 [ṚV. 10,17,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.01)
 [AIT. BR. 7,10.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,10) *mā sma no bharatā naśan* улизнуть, ускользнуть
-[MBH. 5,2736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2736) = [≈Вульг. 5.74.20](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A074_S020) = ≈крит. 05,72.20c *neśuścitrā niśācarāḥ* (= *palāṃyitāḥ* схол.)
+[MBH. 5,2736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2736) = [≈Вульг. 5.74.20](mbh/5.74.html#v20) = ≈крит. 05,72.20c *neśuścitrā niśācarāḥ* (= *palāṃyitāḥ* схол.)
 [BHAṬṬ. 14,112.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,112) *naṣṭa = palāyita*
 [H. 805.](https://sanskrit-lexicon-scans.github.io/abch2/app1?805) *mārgā naṣṭā vanodbhavāḥ* исчезли, более не видны
-[MBH. 3,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2541) = [≈Вульг. 3.65.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A065_S010) = ≈крит. 03,62.7a *naṅkṣyati śivastava vedapanthāḥ*
+[MBH. 3,2541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2541) = [≈Вульг. 3.65.10](mbh/3.65.html#v10) = ≈крит. 03,62.7a *naṅkṣyati śivastava vedapanthāḥ*
 [BHĀG. P. 3,16,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,23) *naṣṭasalilāḥ (āpagāḥ)*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) *kvaciddṛṣṭaḥ kvacinnaṣṭaḥ*
 [R. 3,50,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,7) *dṛṣṭanaṣṭa*
@@ -142,7 +142,7 @@
 [ŚUK. 39,14.] *naṣṭo vaiśravaṇaḥ sthānāttasya vīryeṇa* лишившийся чего-либо
 [R. 1,14,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,18) *sā naṣṭā vāṇapurāttadā* исчез из
 [HARIV. 10023.](https://sanskrit-lexicon-scans.github.io/hariv?10023) *kathaṃ ca naṣṭā jñātibhyo bharturvā* так преим. и каким образом родственники и супруг потеряли ее из виду?
-[MBH. 3,2690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2690) = [≈Вульг. 3.68.37](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A068_S037) = ≈крит. 03,65.35a *ātmā yakṣmasya naśyati*
+[MBH. 3,2690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2690) = [≈Вульг. 3.68.37](mbh/3.68.html#v37) = ≈крит. 03,65.35a *ātmā yakṣmasya naśyati*
 [ṚV. 10,97,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.11) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.097.html#rv10.097.13) *neśattamo dudhitaṃ rocata dyauḥ*
 [4,1,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.001.html#rv04.001.17) [6,54,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.054.html#rv06.054.07) [VS. 16,10.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,10)
 
@@ -152,14 +152,14 @@
 [AIT. BR. 5,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?5,28) *yadi kapālaṃ naśyet*
 [7,9.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,9) [TS. 2,6,3,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,3,5) [ŚĀṄKH. ŚR. 13,3,2.] [GṚHY. 5,8.] *prajñā naśyati*
 [M. 4,52.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,52) *dharmo 'naśattadā*
-[MBH. 13,1313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1313) = [≈Вульг. 13.18.16](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S016) = крит. — [3,8494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8494) = [≈Вульг. 3.94.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A094_S006) = ≈крит. 03,92.6a *tato naṅkṣyati te dharmaḥ*
+[MBH. 13,1313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1313) = [≈Вульг. 13.18.16](mbh/13.18.html#v16) = крит. — [3,8494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8494) = [≈Вульг. 3.94.6](mbh/3.94.html#v6) = ≈крит. 03,92.6a *tato naṅkṣyati te dharmaḥ*
 [KATHĀS. 15,78.](https://sanskrit-lexicon-scans.github.io/kss/index.html?15,78) *jñānāni naṅkṣanti (naṅkṣyanti* следует читать)
-[MBH. 12,1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1860) = [≈Вульг. 12.52.13](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A052_S013) = ≈крит. 12,52.13c *mahāndharmo naśiṣyati*
-[4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) = [≈Вульг. 4.21.40](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A021_S040) = ≈крит. 04,20.26c *naṣṭo mohaḥ*
+[MBH. 12,1860.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1860) = [≈Вульг. 12.52.13](mbh/12.52.html#v13) = ≈крит. 12,52.13c *mahāndharmo naśiṣyati*
+[4,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.680) = [≈Вульг. 4.21.40](mbh/4.21.html#v40) = ≈крит. 04,20.26c *naṣṭo mohaḥ*
 [BHAG. 18,73.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,73) *naṣṭasaṃjña*
-[MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) = [≈Вульг. 1.75.22](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A075_S022) = ≈крит. 01,70.19c [3,2867.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2867) = [≈Вульг. 3.73.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A073_S016) = ≈крит. 03,71.16a *naṣṭātman*
-[2361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2361) = [≈Вульг. 3.62.29](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A062_S029) = ≈крит. 03,59.25a *˚rūpa*
-[2904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2904) = [≈Вульг. 3.74.15](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A074_S015) = ≈крит. 03,72.15a *˚cetana*
+[MBH. 1,3147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3147) = [≈Вульг. 1.75.22](mbh/1.75.html#v22) = ≈крит. 01,70.19c [3,2867.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2867) = [≈Вульг. 3.73.16](mbh/3.73.html#v16) = ≈крит. 03,71.16a *naṣṭātman*
+[2361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2361) = [≈Вульг. 3.62.29](mbh/3.62.html#v29) = ≈крит. 03,59.25a *˚rūpa*
+[2904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2904) = [≈Вульг. 3.74.15](mbh/3.74.html#v15) = ≈крит. 03,72.15a *˚cetana*
 [SUŚR. 1,255,9.] *˚svaratā*
 [118,8.] *˚mati, ˚dṛṣṭi*
 [BHĀG. P. 5,26,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,9) *˚dhī*
@@ -170,7 +170,7 @@
 [M. 3,97.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,97) *naṣṭaṃ devalake dattam* 180. *tapāṃsi mama naṣṭāni vratāni me 'khilāni ca*
 [BRAHMA-P. in LA. 58,7.] *avivekini bhūpāle naśyanti guṇino guṇāḥ . pravāsarāsake kānte yathā sādhvyāḥ stanonnatiḥ ..* существовать напрасно
 [Spr. 254.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?254) *kṛtaṃ yasminna naśyati* тому, кому благодеяние не было оказано напрасно
-[MBH. 1,6116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6116) = [≈Вульг. 1.155.24](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U09_A155_S024) = ≈крит. 01,143.22c *naśyatīṣuryathāviddhaḥ khe viddhamanuvidhyataḥ . tathā naśyati vai kṣipraṃ vījaṃ paraparigrahe ..*
+[MBH. 1,6116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6116) = [≈Вульг. 1.155.24](mbh/1.155.html#v24) = ≈крит. 01,143.22c *naśyatīṣuryathāviddhaḥ khe viddhamanuvidhyataḥ . tathā naśyati vai kṣipraṃ vījaṃ paraparigrahe ..*
 [M. 9,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,43) *asaṃtuṣṭhā dvijā naṣṭāḥ saṃtuṣṭā iva pārthivāḥ* погибли так преим. обращают в ничто
 [Spr. 277.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?277) *kṣipraṃ naśyati sānvayaḥ* погибает
 [M. 3,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,205) [9,314.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,314) *pretya ceha ca naśyati*
@@ -184,10 +184,10 @@
 [YĀJÑ. 2,59.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,59) *naṣṭa* в противоп. к *puṣṭa* о лицах
 [VEDĀNTAS. (Allah.) No. 81.] мед. : *aryo naśanta saniṣanta no dhiyaḥ*
 [ṚV. 9,79,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.079.html#rv09.079.01) *naśemahi sadā niśi* исчезнуть, стать невидимым
-[MBH. 7,685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A017_S013) = ≈крит. 07,16.13a *apasarpata naśyadhvam* исчезает, заставляет вас убираться
+[MBH. 7,685.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.685) = [≈Вульг. 7.17.13](mbh/7.17.html#v13) = ≈крит. 07,16.13a *apasarpata naśyadhvam* исчезает, заставляет вас убираться
 [R. 5,27,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,27,24) *(aśubhaṃ karma) tatsarvaṃ naśyate tatra snātamātrasya*
-[MBH. 3,7014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7014) [7069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7069) [13245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13245) = [≈Вульг. 3.193.35](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A193_S035) = крит. — *na cāsyā naśyate rūpam*
+[MBH. 3,7014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7014) [7069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7069) [13245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13245) = [≈Вульг. 3.193.35](mbh/3.193.html#v35) = крит. — *na cāsyā naśyate rūpam*
 [N. 17,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,7) *sa naśyeta mṛṣā vadan* погибнуть
-[MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) = [≈Вульг. 1.82.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A082_S018) = ≈крит. 01,77.18a [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) = [≈Вульг. 3.133.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A133_S028) = ≈крит. 03,133.25c *yāvanna naṅkṣyāmahe*
+[MBH. 1,3414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3414) = [≈Вульг. 1.82.18](mbh/1.82.html#v18) = ≈крит. 01,77.18a [3,10701.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10701) = [≈Вульг. 3.133.28](mbh/3.133.html#v28) = ≈крит. 03,133.25c *yāvanna naṅkṣyāmahe*
 [BHĀG. P. 4,17,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,17,11)
   <sub>attested</sub>

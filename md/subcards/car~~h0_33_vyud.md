@@ -15,16 +15,16 @@
 **2)** — 2) untreu dem Gatten
 
 (acc.) sein: *tāsāṃ vyuccaramāṇānām — patīn*
-[MBH. 1,4720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4720) = [≈Вульг. 1.122.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S006) = ≈крит. 01,113.6a *vyuccarantyāḥ patiṃ nāryāḥ, bhāryāṃ tathā vyuccarataḥ*
-[4732. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4732) = [≈Вульг. 1.122.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S018) = ≈крит. 01,113.18a *vyuccaraṃśca mahādoṣaṃ nara evāparādhyati*
-[12,9518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9518) = [≈Вульг. 12.269.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A269_S029) = ≈крит. 12,261.28c Ehebruch treiben mit (instr.): *vyuccarantyapi duḥśīlā dāsaiḥ paśubhireva ca*
-[3,12868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12868) = [≈Вульг. 3.188.64](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S064) = крит. —
+[MBH. 1,4720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4720) = [≈Вульг. 1.122.6](mbh/1.122.html#v6) = ≈крит. 01,113.6a *vyuccarantyāḥ patiṃ nāryāḥ, bhāryāṃ tathā vyuccarataḥ*
+[4732. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4732) = [≈Вульг. 1.122.18](mbh/1.122.html#v18) = ≈крит. 01,113.18a *vyuccaraṃśca mahādoṣaṃ nara evāparādhyati*
+[12,9518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9518) = [≈Вульг. 12.269.29](mbh/12.269.html#v29) = ≈крит. 12,261.28c Ehebruch treiben mit (instr.): *vyuccarantyapi duḥśīlā dāsaiḥ paśubhireva ca*
+[3,12868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12868) = [≈Вульг. 3.188.64](mbh/3.188.html#v64) = крит. —
 
 - **RU:** — 2) изменять супругу
 
 (acc.): *tāsāṃ vyuccaramāṇānām — patīn*
-[MBH. 1,4720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4720) = [≈Вульг. 1.122.6](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S006) = ≈крит. 01,113.6a *vyuccarantyāḥ patiṃ nāryāḥ, bhāryāṃ tathā vyuccarataḥ*
-[4732. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4732) = [≈Вульг. 1.122.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A122_S018) = ≈крит. 01,113.18a *vyuccaraṃśca mahādoṣaṃ nara evāparādhyati*
-[12,9518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9518) = [≈Вульг. 12.269.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A269_S029) = ≈крит. 12,261.28c прелюбодействовать с (instr.): *vyuccarantyapi duḥśīlā dāsaiḥ paśubhireva ca*
-[3,12868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12868) = [≈Вульг. 3.188.64](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S064) = крит. —
+[MBH. 1,4720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4720) = [≈Вульг. 1.122.6](mbh/1.122.html#v6) = ≈крит. 01,113.6a *vyuccarantyāḥ patiṃ nāryāḥ, bhāryāṃ tathā vyuccarataḥ*
+[4732. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4732) = [≈Вульг. 1.122.18](mbh/1.122.html#v18) = ≈крит. 01,113.18a *vyuccaraṃśca mahādoṣaṃ nara evāparādhyati*
+[12,9518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9518) = [≈Вульг. 12.269.29](mbh/12.269.html#v29) = ≈крит. 12,261.28c прелюбодействовать с (instr.): *vyuccarantyapi duḥśīlā dāsaiḥ paśubhireva ca*
+[3,12868.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12868) = [≈Вульг. 3.188.64](mbh/3.188.html#v64) = крит. —
   <sub>attested</sub>

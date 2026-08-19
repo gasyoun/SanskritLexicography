@@ -22,8 +22,8 @@
 [H. an. 3,275.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,275)
 [MED. t. 124. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,124) bei Seite schaffen, wegschaffen: *tamaḥ praṇītam*
 [ṚV. 1,117,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.117.html#rv01.117.17) *adya kuntyāḥ parikleśaṃ vanavāsaṃ ca kṛtsnaśaḥ . draupadyāśca parikleśaṃ praṇeṣyāmi hate tvayi ..*
-[MBH. 6,3453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3453) = [≈Вульг. 6.79.4](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A079_S004) = ≈крит. 06,75.4a *putraḥ praṇītaḥ* wohl ein ausgesetzter Sohn
-[1,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4672) = [≈Вульг. 1.120.33](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A120_S033) = ≈крит. 01,111.28a med. sich zuführen: *yadvai prāṇenānnamātmanpraṇayate tatprāṇasya prāṇatvam*
+[MBH. 6,3453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3453) = [≈Вульг. 6.79.4](mbh/6.79.html#v4) = ≈крит. 06,75.4a *putraḥ praṇītaḥ* wohl ein ausgesetzter Sohn
+[1,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4672) = [≈Вульг. 1.120.33](mbh/1.120.html#v33) = ≈крит. 01,111.28a med. sich zuführen: *yadvai prāṇenānnamātmanpraṇayate tatprāṇasya prāṇatvam*
 [ŚAT. BR. 12,9,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,1,14) *praṇīta = praveśita* hineingeführt
 [H. an.] [MED.]
 
@@ -46,8 +46,8 @@
 [H. an. 3,275.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,275)
 [MED. t. 124. fg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,124) убирать в сторону, устранять: *tamaḥ praṇītam*
 [ṚV. 1,117,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.117.html#rv01.117.17) *adya kuntyāḥ parikleśaṃ vanavāsaṃ ca kṛtsnaśaḥ . draupadyāśca parikleśaṃ praṇeṣyāmi hate tvayi ..*
-[MBH. 6,3453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3453) = [≈Вульг. 6.79.4](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A079_S004) = ≈крит. 06,75.4a *putraḥ praṇītaḥ* вероятно, брошенный (подкинутый) сын
-[1,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4672) = [≈Вульг. 1.120.33](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A120_S033) = ≈крит. 01,111.28a мед. привлекать к себе: *yadvai prāṇenānnamātmanpraṇayate tatprāṇasya prāṇatvam*
+[MBH. 6,3453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3453) = [≈Вульг. 6.79.4](mbh/6.79.html#v4) = ≈крит. 06,75.4a *putraḥ praṇītaḥ* вероятно, брошенный (подкинутый) сын
+[1,4672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4672) = [≈Вульг. 1.120.33](mbh/1.120.html#v33) = ≈крит. 01,111.28a мед. привлекать к себе: *yadvai prāṇenānnamātmanpraṇayate tatprāṇasya prāṇatvam*
 [ŚAT. BR. 12,9,1,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,1,14) *praṇīta = praveśita* введенный внутрь
 [H. an.] [MED.]
   <sub>attested</sub>
@@ -65,7 +65,7 @@
 [H. an.]
 [MED.]
 [HALĀY. 2,260.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,260) *yathā hyāhavanīyo 'gnirgārhapatyātpraṇīyate*
-[MBH. 1,3053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3053) = [≈Вульг. 1.74.66](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S066) = ≈крит. 01,68.65c [14,635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.635) = [≈Вульг. 14.21.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A021_S008) = ≈крит. 14,21.3a
+[MBH. 1,3053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3053) = [≈Вульг. 1.74.66](mbh/1.74.html#v66) = ≈крит. 01,68.65c [14,635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.635) = [≈Вульг. 14.21.8](mbh/14.21.html#v8) = ≈крит. 14,21.3a
 [PRAŚNOP. 4,3.]
 [AK. 2,7,20.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,20) *tridhā praṇīto jvalano munibhirvedapāragaiḥ*
 [HARIV. 11863.](https://sanskrit-lexicon-scans.github.io/hariv?11863) *praṇītāḥ* (sc. *āpaḥ*) das am Morgen zum Gebrauch beim Opfer geholte Wasser
@@ -88,7 +88,7 @@
 [H. an.]
 [MED.]
 [HALĀY. 2,260.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,260) *yathā hyāhavanīyo 'gnirgārhapatyātpraṇīyate*
-[MBH. 1,3053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3053) = [≈Вульг. 1.74.66](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A074_S066) = ≈крит. 01,68.65c [14,635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.635) = [≈Вульг. 14.21.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A021_S008) = ≈крит. 14,21.3a
+[MBH. 1,3053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3053) = [≈Вульг. 1.74.66](mbh/1.74.html#v66) = ≈крит. 01,68.65c [14,635.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.635) = [≈Вульг. 14.21.8](mbh/14.21.html#v8) = ≈крит. 14,21.3a
 [PRAŚNOP. 4,3.]
 [AK. 2,7,20.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,20) *tridhā praṇīto jvalano munibhirvedapāragaiḥ*
 [HARIV. 11863.](https://sanskrit-lexicon-scans.github.io/hariv?11863) *praṇītāḥ* (а именно *āpaḥ*) вода, принесенная утром для использования при жертвоприношении
@@ -101,12 +101,12 @@
 
 **3)** — 3) *daṇḍam* den Stock führen, Strafe verhängen: *yadi na praṇayedrājā daṇḍaṃ daṇḍyeṣvatandritaḥ*
 [M. 7,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,20) [19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,19) [27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,27) [31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,31) [8,238.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,238)
-[MBH. 1,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2469) = [≈Вульг. 1.64.36](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A064_S036) = ≈крит. 01,58.34a [3,1045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1045) = [≈Вульг. 3.28.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A028_S017) = ≈крит. 03,29.17a [11317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11317) = [≈Вульг. 3.150.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A150_S009) = ≈крит. 03,149.9c [12,3216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3216) = [≈Вульг. 12.85.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A085_S023) = ≈крит. 12,86.22a [15,198.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.198) = [≈Вульг. 15.5.29](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S029) = ≈крит. 15,10.2c
+[MBH. 1,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2469) = [≈Вульг. 1.64.36](mbh/1.64.html#v36) = ≈крит. 01,58.34a [3,1045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1045) = [≈Вульг. 3.28.17](mbh/3.28.html#v17) = ≈крит. 03,29.17a [11317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11317) = [≈Вульг. 3.150.9](mbh/3.150.html#v9) = ≈крит. 03,149.9c [12,3216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3216) = [≈Вульг. 12.85.23](mbh/12.85.html#v23) = ≈крит. 12,86.22a [15,198.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.198) = [≈Вульг. 15.5.29](mbh/15.5.html#v29) = ≈крит. 15,10.2c
 [RAGH. ed. Calc. 1,25.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,25) [BHĀG. P. 5,26,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,16)
 
 - **RU:** — 3) *daṇḍam* налагать наказание, карать: *yadi na praṇayedrājā daṇḍaṃ daṇḍyeṣvatandritaḥ*
 [M. 7,20.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,20) [19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,19) [27.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,27) [31.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,31) [8,238.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,238)
-[MBH. 1,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2469) = [≈Вульг. 1.64.36](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U06_A064_S036) = ≈крит. 01,58.34a [3,1045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1045) = [≈Вульг. 3.28.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A028_S017) = ≈крит. 03,29.17a [11317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11317) = [≈Вульг. 3.150.9](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A150_S009) = ≈крит. 03,149.9c [12,3216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3216) = [≈Вульг. 12.85.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A085_S023) = ≈крит. 12,86.22a [15,198.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.198) = [≈Вульг. 15.5.29](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S029) = ≈крит. 15,10.2c
+[MBH. 1,2469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2469) = [≈Вульг. 1.64.36](mbh/1.64.html#v36) = ≈крит. 01,58.34a [3,1045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1045) = [≈Вульг. 3.28.17](mbh/3.28.html#v17) = ≈крит. 03,29.17a [11317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11317) = [≈Вульг. 3.150.9](mbh/3.150.html#v9) = ≈крит. 03,149.9c [12,3216.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3216) = [≈Вульг. 12.85.23](mbh/12.85.html#v23) = ≈крит. 12,86.22a [15,198.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.198) = [≈Вульг. 15.5.29](mbh/15.5.html#v29) = ≈крит. 15,10.2c
 [RAGH. ed. Calc. 1,25.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,25) [BHĀG. P. 5,26,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,16)
   <sub>attested</sub>
 
@@ -129,10 +129,10 @@
 [PAÑCAT. ed. orn. 18,10.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?18,10) *prajānāśaṃ praṇeṣyasi*
 [BHĀG. P. 4,27,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,29)
 [NAIṢ. 1,15. 19.] *yatrādharmaṃ praṇayate durvale balavattaraḥ*
-[MBH. 12,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3482) = [≈Вульг. 12.93.35](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A093_S035) = ≈крит. 12,94.34a *na ca dharmaṃ praṇītaṃ te pathyamuktaṃ vicakṣaṇaiḥ*
+[MBH. 12,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3482) = [≈Вульг. 12.93.35](mbh/12.93.html#v35) = ≈крит. 12,94.34a *na ca dharmaṃ praṇītaṃ te pathyamuktaṃ vicakṣaṇaiḥ*
 [R. 5,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,7) *tasmāttameva praṇayetsadaiva mantraṃ prajāsaṃgrahaṇe samartham*
-[MBH. 12,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3180) = [≈Вульг. 12.83.56](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A083_S056) = ≈крит. 12,84.53a [3179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3179) = [≈Вульг. 12.83.55](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A083_S055) = ≈крит. 12,84.52a *daṇḍanītyāṃ praṇītāyāṃ sarve sidhyantyupakramāḥ* anwenden
-[452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.452) = [≈Вульг. 12.15.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A015_S029) = ≈крит. 12,15.29c *praṇīta = kṛta, vihita* gethan, vollbracht
+[MBH. 12,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3180) = [≈Вульг. 12.83.56](mbh/12.83.html#v56) = ≈крит. 12,84.53a [3179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3179) = [≈Вульг. 12.83.55](mbh/12.83.html#v55) = ≈крит. 12,84.52a *daṇḍanītyāṃ praṇītāyāṃ sarve sidhyantyupakramāḥ* anwenden
+[452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.452) = [≈Вульг. 12.15.29](mbh/12.15.html#v29) = ≈крит. 12,15.29c *praṇīta = kṛta, vihita* gethan, vollbracht
 [H. an.] [MED.] = *upasaṃpanna* zubereitet (von Speisen)
 [AK. 2,9,45.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,45)
 [H. 413.](https://sanskrit-lexicon-scans.github.io/abch2/app1?413)
@@ -149,10 +149,10 @@
 [PAÑCAT. ed. orn. 18,10.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?18,10) *prajānāśaṃ praṇeṣyasi*
 [BHĀG. P. 4,27,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,29)
 [NAIṢ. 1,15. 19.] *yatrādharmaṃ praṇayate durvale balavattaraḥ*
-[MBH. 12,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3482) = [≈Вульг. 12.93.35](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A093_S035) = ≈крит. 12,94.34a *na ca dharmaṃ praṇītaṃ te pathyamuktaṃ vicakṣaṇaiḥ*
+[MBH. 12,3482.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3482) = [≈Вульг. 12.93.35](mbh/12.93.html#v35) = ≈крит. 12,94.34a *na ca dharmaṃ praṇītaṃ te pathyamuktaṃ vicakṣaṇaiḥ*
 [R. 5,23,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,7) *tasmāttameva praṇayetsadaiva mantraṃ prajāsaṃgrahaṇe samartham*
-[MBH. 12,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3180) = [≈Вульг. 12.83.56](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A083_S056) = ≈крит. 12,84.53a [3179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3179) = [≈Вульг. 12.83.55](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A083_S055) = ≈крит. 12,84.52a *daṇḍanītyāṃ praṇītāyāṃ sarve sidhyantyupakramāḥ* применять
-[452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.452) = [≈Вульг. 12.15.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A015_S029) = ≈крит. 12,15.29c *praṇīta = kṛta, vihita* сделанный, совершенный
+[MBH. 12,3180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3180) = [≈Вульг. 12.83.56](mbh/12.83.html#v56) = ≈крит. 12,84.53a [3179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3179) = [≈Вульг. 12.83.55](mbh/12.83.html#v55) = ≈крит. 12,84.52a *daṇḍanītyāṃ praṇītāyāṃ sarve sidhyantyupakramāḥ* применять
+[452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.452) = [≈Вульг. 12.15.29](mbh/12.15.html#v29) = ≈крит. 12,15.29c *praṇīta = kṛta, vihita* сделанный, совершенный
 [H. an.] [MED.] = *upasaṃpanna* приготовленный (о пище)
 [AK. 2,9,45.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,45)
 [H. 413.](https://sanskrit-lexicon-scans.github.io/abch2/app1?413)
@@ -161,9 +161,9 @@
   <sub>attested</sub>
 
 **6)** — 6) feststellen, einsetzen, lehren; verfassen: *dyūte purāṇairvyavahāraḥ praṇītastatrātyayo nāsti na saṃprahāraḥ*
-[MBH. 2,1977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1977) = [≈Вульг. 2.56.13](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A056_S013) = ≈крит. 02,51.12a *triṃśanmuhūrtaṃ tu bhavedahaśca rātriśca saṃkhyā munibhiḥ praṇītā*
-[12,8490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8490) = [≈Вульг. 12.234.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A234_S034) = ≈крит. 12,226.35a *praṇītamṛṣibhirjñātvā dharmaṃ śāśvatamavyayam*
-[13,2542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2542) = [≈Вульг. 13.47.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A047_S043) = ≈крит. 13,47.43a *girimahastvayam . tvatpraṇīto 'dya gopānāṃ gavāṃ hetoḥ pravartyatām*
+[MBH. 2,1977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1977) = [≈Вульг. 2.56.13](mbh/2.56.html#v13) = ≈крит. 02,51.12a *triṃśanmuhūrtaṃ tu bhavedahaśca rātriśca saṃkhyā munibhiḥ praṇītā*
+[12,8490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8490) = [≈Вульг. 12.234.34](mbh/12.234.html#v34) = ≈крит. 12,226.35a *praṇītamṛṣibhirjñātvā dharmaṃ śāśvatamavyayam*
+[13,2542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2542) = [≈Вульг. 13.47.43](mbh/13.47.html#v43) = ≈крит. 13,47.43a *girimahastvayam . tvatpraṇīto 'dya gopānāṃ gavāṃ hetoḥ pravartyatām*
 [HARIV. 3864.](https://sanskrit-lexicon-scans.github.io/hariv?3864) *dharmo manunā praṇītaḥ*
 [RAGH. 14,67.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,67)
 [BHĀG. P. 6,3,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,3,19)
@@ -171,14 +171,14 @@
 [KUMĀRAS. 6,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,31) *na matpraṇītaṃ na parapraṇītaṃ suto vadatyeṣaḥ*
 [BHĀG. P. 7,5,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,28) *(āyurvedam) bhūyo 'ṣṭadhā praṇītavān* abfassen
 [SUŚR. 1,1,18.]
-[MBH. 1,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.591) = [≈Вульг. 1.2.362](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S362) = ≈крит. 01,2.228a *kramaṃ praṇīya śikṣāṃ ca praṇayitvā sa gālavaḥ*
-[12,13263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13263) = [≈Вульг. 12.342.104](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A342_S104) = ≈крит. 12,330.38a Schol. zu [P. 2,4,21.](https://ashtadhyayi.com/sutraani/2/4/21) [VOP.] Einl. *śāstraṃ ca yasyośanasā praṇītam*
+[MBH. 1,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.591) = [≈Вульг. 1.2.362](mbh/1.2.html#v362) = ≈крит. 01,2.228a *kramaṃ praṇīya śikṣāṃ ca praṇayitvā sa gālavaḥ*
+[12,13263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13263) = [≈Вульг. 12.342.104](mbh/12.342.html#v104) = ≈крит. 12,330.38a Schol. zu [P. 2,4,21.](https://ashtadhyayi.com/sutraani/2/4/21) [VOP.] Einl. *śāstraṃ ca yasyośanasā praṇītam*
 [PAÑCAT. V,76.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?5,76) [ŚAṂK.] zu [BṚH. ĀR. UP. S. 302.] [PRAB. 28,2.] [28,1.] [MÜLLER, St. 197.] [Verz. d. Oxf. H. No. 380.] [MADHUS.] in [Ind. St. 1,18,1.] [KULL.] zu [M. 1,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,5) *manupraṇītatve 'sya śāstrasya* ders. zu [M. 1,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,4)
 
 - **RU:** — 6) устанавливать, вводить в должность, учить; составлять (сочинение): *dyūte purāṇairvyavahāraḥ praṇītastatrātyayo nāsti na saṃprahāraḥ*
-[MBH. 2,1977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1977) = [≈Вульг. 2.56.13](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A056_S013) = ≈крит. 02,51.12a *triṃśanmuhūrtaṃ tu bhavedahaśca rātriśca saṃkhyā munibhiḥ praṇītā*
-[12,8490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8490) = [≈Вульг. 12.234.34](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A234_S034) = ≈крит. 12,226.35a *praṇītamṛṣibhirjñātvā dharmaṃ śāśvatamavyayam*
-[13,2542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2542) = [≈Вульг. 13.47.43](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A047_S043) = ≈крит. 13,47.43a *girimahastvayam . tvatpraṇīto 'dya gopānāṃ gavāṃ hetoḥ pravartyatām*
+[MBH. 2,1977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1977) = [≈Вульг. 2.56.13](mbh/2.56.html#v13) = ≈крит. 02,51.12a *triṃśanmuhūrtaṃ tu bhavedahaśca rātriśca saṃkhyā munibhiḥ praṇītā*
+[12,8490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8490) = [≈Вульг. 12.234.34](mbh/12.234.html#v34) = ≈крит. 12,226.35a *praṇītamṛṣibhirjñātvā dharmaṃ śāśvatamavyayam*
+[13,2542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2542) = [≈Вульг. 13.47.43](mbh/13.47.html#v43) = ≈крит. 13,47.43a *girimahastvayam . tvatpraṇīto 'dya gopānāṃ gavāṃ hetoḥ pravartyatām*
 [HARIV. 3864.](https://sanskrit-lexicon-scans.github.io/hariv?3864) *dharmo manunā praṇītaḥ*
 [RAGH. 14,67.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,67)
 [BHĀG. P. 6,3,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,3,19)
@@ -186,22 +186,22 @@
 [KUMĀRAS. 6,31.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,31) *na matpraṇītaṃ na parapraṇītaṃ suto vadatyeṣaḥ*
 [BHĀG. P. 7,5,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,28) *(āyurvedam) bhūyo 'ṣṭadhā praṇītavān* составлять (текст)
 [SUŚR. 1,1,18.]
-[MBH. 1,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.591) = [≈Вульг. 1.2.362](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U02_A002_S362) = ≈крит. 01,2.228a *kramaṃ praṇīya śikṣāṃ ca praṇayitvā sa gālavaḥ*
-[12,13263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13263) = [≈Вульг. 12.342.104](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A342_S104) = ≈крит. 12,330.38a схол. к [P. 2,4,21.](https://ashtadhyayi.com/sutraani/2/4/21) [VOP.] введ. *śāstraṃ ca yasyośanasā praṇītam*
+[MBH. 1,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.591) = [≈Вульг. 1.2.362](mbh/1.2.html#v362) = ≈крит. 01,2.228a *kramaṃ praṇīya śikṣāṃ ca praṇayitvā sa gālavaḥ*
+[12,13263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13263) = [≈Вульг. 12.342.104](mbh/12.342.html#v104) = ≈крит. 12,330.38a схол. к [P. 2,4,21.](https://ashtadhyayi.com/sutraani/2/4/21) [VOP.] введ. *śāstraṃ ca yasyośanasā praṇītam*
 [PAÑCAT. V,76.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?5,76) [ŚAṂK.] к [BṚH. ĀR. UP. S. 302.] [PRAB. 28,2.] [28,1.] [MÜLLER, St. 197.] [Verz. d. Oxf. H. No. 380.] [MADHUS.] в [Ind. St. 1,18,1.] [KULL.] к [M. 1,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,5) *manupraṇītatve 'sya śāstrasya* тот же к [M. 1,4.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,4)
   <sub>attested</sub>
 
 **7)** — 7) seine Zuneigung —, seine Freundschaft gegen Jmd an den Tag legen: *praṇayantu bhavanto māṃ yatheṣṭamabhimantritāḥ*
-[MBH. 2,1288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1288) = [≈Вульг. 2.35.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U06_A035_S003) = ≈крит. 02,32.2e *praṇayasva yathāśraddhaṃ rājankiṃ karavāṇi te*
-[3,2160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2160) = [≈Вульг. 3.55.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S025) = ≈крит. 03,52.24a *praṇayiṣyati*
-[12,9529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9529) = [≈Вульг. 12.269.40](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A269_S040) = ≈крит. 12,261.37a *dadāni kiṃ cāpi manaḥpraṇītaṃ priyātithestava* wohl was das Herz lieb hat
-[13,3503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3503) = [≈Вульг. 13.71.19](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A071_S019) = ≈крит. 13,70.18a
+[MBH. 2,1288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1288) = [≈Вульг. 2.35.3](mbh/2.35.html#v3) = ≈крит. 02,32.2e *praṇayasva yathāśraddhaṃ rājankiṃ karavāṇi te*
+[3,2160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2160) = [≈Вульг. 3.55.25](mbh/3.55.html#v25) = ≈крит. 03,52.24a *praṇayiṣyati*
+[12,9529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9529) = [≈Вульг. 12.269.40](mbh/12.269.html#v40) = ≈крит. 12,261.37a *dadāni kiṃ cāpi manaḥpraṇītaṃ priyātithestava* wohl was das Herz lieb hat
+[13,3503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3503) = [≈Вульг. 13.71.19](mbh/13.71.html#v19) = ≈крит. 13,70.18a
 
 - **RU:** — 7) выказывать свою привязанность к кому-либо, проявлять дружбу к кому-либо: *praṇayantu bhavanto māṃ yatheṣṭamabhimantritāḥ*
-[MBH. 2,1288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1288) = [≈Вульг. 2.35.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U06_A035_S003) = ≈крит. 02,32.2e *praṇayasva yathāśraddhaṃ rājankiṃ karavāṇi te*
-[3,2160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2160) = [≈Вульг. 3.55.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A055_S025) = ≈крит. 03,52.24a *praṇayiṣyati*
-[12,9529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9529) = [≈Вульг. 12.269.40](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A269_S040) = ≈крит. 12,261.37a *dadāni kiṃ cāpi manaḥpraṇītaṃ priyātithestava* вероятно, то, что дорого сердцу
-[13,3503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3503) = [≈Вульг. 13.71.19](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A071_S019) = ≈крит. 13,70.18a
+[MBH. 2,1288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1288) = [≈Вульг. 2.35.3](mbh/2.35.html#v3) = ≈крит. 02,32.2e *praṇayasva yathāśraddhaṃ rājankiṃ karavāṇi te*
+[3,2160.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2160) = [≈Вульг. 3.55.25](mbh/3.55.html#v25) = ≈крит. 03,52.24a *praṇayiṣyati*
+[12,9529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9529) = [≈Вульг. 12.269.40](mbh/12.269.html#v40) = ≈крит. 12,261.37a *dadāni kiṃ cāpi manaḥpraṇītaṃ priyātithestava* вероятно, то, что дорого сердцу
+[13,3503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3503) = [≈Вульг. 13.71.19](mbh/13.71.html#v19) = ≈крит. 13,70.18a
   <sub>attested</sub>
 
 **desid)** — Vgl. *praṇaya, ˚ṇayana, ˚ṇayanīya, ˚ṇāyya, ˚ṇī, ˚ṇetar, ṇeya*.* duṣpraṇīta* . — desid. hinführen wollen: *pra yaṃ rāye ninīṣasi*

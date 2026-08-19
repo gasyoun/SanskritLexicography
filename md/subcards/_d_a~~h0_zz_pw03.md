@@ -19,9 +19,9 @@
 - **RU:** 3〉 предаваться чему-либо (Acc.) [LALIT. 499,9]. — *prahita* и *saṃprahita* относятся к *hi*.
   <sub>attested</sub>
 
-**Mit <div n="p"> — корригенда)** — Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A020_S004) = ≈крит. 09,19.4a fehlerhaft für *pradhāvita*.
+**Mit <div n="p"> — корригенда)** — Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](mbh/9.20.html#v4) = ≈крит. 09,19.4a fehlerhaft für *pradhāvita*.
 
-- **RU:** Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A020_S004) = ≈крит. 09,19.4a ошибочно вм. *pradhāvita*.
+- **RU:** Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](mbh/9.20.html#v4) = ≈крит. 09,19.4a ошибочно вм. *pradhāvita*.
   <sub>attested</sub>
 
 **Mit <div n="p"> — 1〉)** — Mit *prati*
@@ -111,9 +111,9 @@
 - **RU:** 6〉 проявлять, обнаруживать (душевное состояние, манеру поведения) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
   <sub>attested</sub>
 
-**Mit <div n="p"> — 7〉)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S030) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+**Mit <div n="p"> — 7〉)** — 7〉 finden, ausfindig machen (ein Mittel) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](mbh/3.2.html#v30) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
 
-- **RU:** 7〉 находить, отыскивать (средство) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S030) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
+- **RU:** 7〉 находить, отыскивать (средство) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](mbh/3.2.html#v30) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
   <sub>attested</sub>
 
 **Mit <div n="p"> — 8〉)** — 8〉 schaffen, hervorbringen, bilden, gründen, bauen, errichten, anlegen, verfassen.
@@ -136,9 +136,9 @@
 - **RU:** 11〉 делать чем-либо, reddere; с двойным Acc.
   <sub>attested</sub>
 
-**Mit <div n="p"> — 12〉)** — 12〉 mit Etwas oder Jmd (Acc.) es so machen —, dahin bringen, dass (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S002) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
+**Mit <div n="p"> — 12〉)** — 12〉 mit Etwas oder Jmd (Acc.) es so machen —, dahin bringen, dass (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](mbh/4.2.html#v2) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
 
-- **RU:** 12〉 с чем-либо или с кем-либо (Acc.) сделать так —, привести к тому, чтобы (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S002) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
+- **RU:** 12〉 с чем-либо или с кем-либо (Acc.) сделать так —, привести к тому, чтобы (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](mbh/4.2.html#v2) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
   <sub>attested</sub>
 
 **Mit <div n="p"> — 13〉)** — 13〉 legen auf (Loc.) hinstellen (*agratas, adhas*), stecken —, legen in (Loc.). *hṛdaye* so v. a. dem Herzen einprägen.
@@ -161,9 +161,9 @@
 - **RU:** 16〉 *vihita* снаряженный —, наделенный (Ins.).
   <sub>attested</sub>
 
-**Mit <div n="p"> — 17〉)** — 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S014) = ≈крит. 04,5.13a fehlerhaft für *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] für *pi* (*api*).
+**Mit <div n="p"> — 17〉)** — 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](mbh/4.5.html#v14) = ≈крит. 04,5.13a fehlerhaft für *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] für *pi* (*api*).
 
-- **RU:** 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S014) = ≈крит. 04,5.13a ошибочно вм. *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] вм. *pi* (*api*).
+- **RU:** 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](mbh/4.5.html#v14) = ≈крит. 04,5.13a ошибочно вм. *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] вм. *pi* (*api*).
   <sub>attested</sub>
 
 **Mit <div n="p"> — Desid.)** — Caus. hinlegen lassen. Desid. (*˚dhitsati, ˚dhitsate*)
@@ -332,9 +332,9 @@
 - **RU:** 8〉 расставлять, раскладывать (силки); можно было бы ожидать *saṃni*.
   <sub>attested</sub>
 
-**Mit <div n="p"> — 9〉)** — 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A043_S017) = ≈крит. 02,40.16c fehlerhaft für *saṃni*, wie [ed. Bomb.] liest.
+**Mit <div n="p"> — 9〉)** — 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](mbh/2.43.html#v17) = ≈крит. 02,40.16c fehlerhaft für *saṃni*, wie [ed. Bomb.] liest.
 
-- **RU:** 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A043_S017) = ≈крит. 02,40.16c ошибочно вм. *saṃni*, как читает [Бомбейская ред.].
+- **RU:** 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](mbh/2.43.html#v17) = ≈крит. 02,40.16c ошибочно вм. *saṃni*, как читает [Бомбейская ред.].
   <sub>attested</sub>
 
 **Mit <div n="p"> — Caus.)** — Caus. Jmd Sorge tragen —, walten lassen [KĀD. 2,108,19].
@@ -378,9 +378,9 @@
 - **RU:** 7〉 Med. сводить вместе, так преим. примирять.
   <sub>attested</sub>
 
-**Mit <div n="p"> — 8〉)** — 8〉 *übereinkommen, sich verbinden —, sich vertragen —, sich aussöhnen mit (Instr., ausnahmsweise Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A005_S006) = ≈крит. 05,5.6a. Ausnahmsweise Act. *saṃhita* in freundschaftlichem Verhältniss stehend mit (Instr. oder *Instr. mit *saha*).
+**Mit <div n="p"> — 8〉)** — 8〉 *übereinkommen, sich verbinden —, sich vertragen —, sich aussöhnen mit (Instr., ausnahmsweise Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](mbh/5.5.html#v6) = ≈крит. 05,5.6a. Ausnahmsweise Act. *saṃhita* in freundschaftlichem Verhältniss stehend mit (Instr. oder *Instr. mit *saha*).
 
-- **RU:** 8〉 *договариваться, объединяться —, ладить —, мириться с (Ins., в виде исключения Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A005_S006) = ≈крит. 05,5.6a. В виде исключения Act. *saṃhita* находящийся в дружественных отношениях с (Ins. или *Ins. с *saha*).
+- **RU:** 8〉 *договариваться, объединяться —, ладить —, мириться с (Ins., в виде исключения Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](mbh/5.5.html#v6) = ≈крит. 05,5.6a. В виде исключения Act. *saṃhita* находящийся в дружественных отношениях с (Ins. или *Ins. с *saha*).
   <sub>attested</sub>
 
 **Mit <div n="p"> — 9〉)** — 9〉 *Jmd verwickeln in (Loc.).
@@ -408,9 +408,9 @@
 - **RU:** 13〉 Med. пользоваться (Ins.).
   <sub>attested</sub>
 
-**Mit <div n="p"> — 14〉)** — 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S010) = ≈крит. 03,255.10a fehlerhaft für *saṃyāya*. Zu *ātmasaṃhita* [KĀM. NĪTIS. 9,68] vgl. Comm.
+**Mit <div n="p"> — 14〉)** — 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](mbh/3.271.html#v10) = ≈крит. 03,255.10a fehlerhaft für *saṃyāya*. Zu *ātmasaṃhita* [KĀM. NĪTIS. 9,68] vgl. Comm.
 
-- **RU:** 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S010) = ≈крит. 03,255.10a ошибочно вм. *saṃyāya*. К *ātmasaṃhita* [KĀM. NĪTIS. 9,68] ср. коммент.
+- **RU:** 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](mbh/3.271.html#v10) = ≈крит. 03,255.10a ошибочно вм. *saṃyāya*. К *ātmasaṃhita* [KĀM. NĪTIS. 9,68] ср. коммент.
   <sub>attested</sub>
 
 **Mit <div n="p"> — Desid.)** — Desid. (*˚dhitsati*) zusammensetzen —, herstellen wollen.

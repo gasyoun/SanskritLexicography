@@ -7,17 +7,17 @@
  1) zielen auf, es auf Jmd abgesehen haben: *āsminpiśaṅgamindavo dadhātā venamādiśe* (dat. infin.)
 [ṚV. 9,21,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.021.html#rv09.021.05) *dadhātā ketamādiśe*
 [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.021.html#rv09.021.06) *śaktimāyasīm . cikṣepārjunamādiśya*
-[MBH. 7,1234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1234) = [≈Вульг. 7.28.9](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A028_S009) = ≈крит. 07,27.9a *tatastadvidrutaṃ sainyam — ādiśyādiśya nārācairājaghāna*
-[3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) = [≈Вульг. 3.271.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S034) = ≈крит. 03,255.34a *ādiśyādiśya tejasvī śirāṃsyeṣāṃ vyapātayat*
-[14,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2493) = [≈Вульг. 14.84.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A084_S008) = ≈крит. 14,85.7c
+[MBH. 7,1234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1234) = [≈Вульг. 7.28.9](mbh/7.28.html#v9) = ≈крит. 07,27.9a *tatastadvidrutaṃ sainyam — ādiśyādiśya nārācairājaghāna*
+[3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) = [≈Вульг. 3.271.34](mbh/3.271.html#v34) = ≈крит. 03,255.34a *ādiśyādiśya tejasvī śirāṃsyeṣāṃ vyapātayat*
+[14,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2493) = [≈Вульг. 14.84.8](mbh/14.84.html#v8) = ≈крит. 14,85.7c
 
 - **RU:** — *ā*
  1) метить в кого-л., иметь намерение против кого-л.: *āsminpiśaṅgamindavo dadhātā venamādiśe* (dat. infin.)
 [ṚV. 9,21,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.021.html#rv09.021.05) *dadhātā ketamādiśe*
 [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.021.html#rv09.021.06) *śaktimāyasīm . cikṣepārjunamādiśya*
-[MBH. 7,1234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1234) = [≈Вульг. 7.28.9](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U02_A028_S009) = ≈крит. 07,27.9a *tatastadvidrutaṃ sainyam — ādiśyādiśya nārācairājaghāna*
-[3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) = [≈Вульг. 3.271.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S034) = ≈крит. 03,255.34a *ādiśyādiśya tejasvī śirāṃsyeṣāṃ vyapātayat*
-[14,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2493) = [≈Вульг. 14.84.8](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A084_S008) = ≈крит. 14,85.7c
+[MBH. 7,1234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1234) = [≈Вульг. 7.28.9](mbh/7.28.html#v9) = ≈крит. 07,27.9a *tatastadvidrutaṃ sainyam — ādiśyādiśya nārācairājaghāna*
+[3,15750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15750) = [≈Вульг. 3.271.34](mbh/3.271.html#v34) = ≈крит. 03,255.34a *ādiśyādiśya tejasvī śirāṃsyeṣāṃ vyapātayat*
+[14,2493.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2493) = [≈Вульг. 14.84.8](mbh/14.84.html#v8) = ≈крит. 14,85.7c
   <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas anweisen, zuweisen: *sā no bhūmirā diśatu yaddhanaṃ kāmayāmahe*
@@ -42,7 +42,7 @@
 [BHĀG. P. 8,22,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,22,5) *gītavāditranṛtyāni bhūya evādideśa ha*
 [MBH. 3,1796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1796) *na cāsya vratamādiśet*
 [M. 4,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,80) [81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,81) *pareṣāṃ dharmamādiśan*
-[MBH. 5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Вульг. 5.175.9](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S009) = ≈крит. 05,172.7c *nūnaṃ tu balavālloke kṛtāntaḥ sarvamādiśet*
+[MBH. 5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Вульг. 5.175.9](mbh/5.175.html#v9) = ≈крит. 05,172.7c *nūnaṃ tu balavālloke kṛtāntaḥ sarvamādiśet*
 [R. 2,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,5) *jano janasyādiśate 'satīṃ matim*
 [BHĀG. P. 8,24,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,51) *buddhimādiśya*
 [RAGH. 12,68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,68) *aśubhanimittotpattau śāstrajñaḥ śāntimādiśet*
@@ -55,7 +55,7 @@
 [BHĀG. P. 8,22,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,22,5) *gītavāditranṛtyāni bhūya evādideśa ha*
 [MBH. 3,1796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1796) *na cāsya vratamādiśet*
 [M. 4,80.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,80) [81.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,81) *pareṣāṃ dharmamādiśan*
-[MBH. 5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Вульг. 5.175.9](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A175_S009) = ≈крит. 05,172.7c *nūnaṃ tu balavālloke kṛtāntaḥ sarvamādiśet*
+[MBH. 5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Вульг. 5.175.9](mbh/5.175.html#v9) = ≈крит. 05,172.7c *nūnaṃ tu balavālloke kṛtāntaḥ sarvamādiśet*
 [R. 2,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,24,5) *jano janasyādiśate 'satīṃ matim*
 [BHĀG. P. 8,24,51.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,51) *buddhimādiśya*
 [RAGH. 12,68.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,68) *aśubhanimittotpattau śāstrajñaḥ śāntimādiśet*
@@ -109,7 +109,7 @@
 [BHAṬṬ. 3,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,9) [7,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,28) *yadādiśati bhagavatī*
 [MĀLAV. 16,13.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?16,13)
 [HIT. 40,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,9) *śīghraṃ me yānamādiśa* bestelle mir schnell den Wagen
-[MBH. 3,2714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2714) = [≈Вульг. 3.69.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S021) = ≈крит. 03,66.19a
+[MBH. 3,2714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2714) = [≈Вульг. 3.69.21](mbh/3.69.html#v21) = ≈крит. 03,66.19a
 
 - **RU:** — 5) давать наставление, предписывать, приказывать: *ādiśati ācāryādhīno bhava (iti)*
 [GOBH. 3,1,12.] *brahmacaryam*
@@ -123,13 +123,13 @@
 [BHAṬṬ. 3,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,9) [7,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,28) *yadādiśati bhagavatī*
 [MĀLAV. 16,13.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?16,13)
 [HIT. 40,9.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,9) *śīghraṃ me yānamādiśa* быстро подготовь мне экипаж
-[MBH. 3,2714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2714) = [≈Вульг. 3.69.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S021) = ≈крит. 03,66.19a
+[MBH. 3,2714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2714) = [≈Вульг. 3.69.21](mbh/3.69.html#v21) = ≈крит. 03,66.19a
   <sub>attested</sub>
 
 **6)** — 6) Jmd anweisen, einen Befehl geben, abordnen: *ityādideśa mām*
 [R. GORR. 2,58,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,33) [6,19,74.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,74) *anveṣaṇe 'niruddhasya carānādiśa māciram*
 [HARIV. 10315.](https://sanskrit-lexicon-scans.github.io/hariv?10315) *puruṣāṃścādiśaṃ prājñānkanyāvṛttāntakarmaṇi*
-[MBH. 5,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7340) = [≈Вульг. 5.186.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A186_S013) = ≈крит. 05,187.12e *amātyaputrāṃstata ādiśadyudhi*
+[MBH. 5,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7340) = [≈Вульг. 5.186.13](mbh/5.186.html#v13) = ≈крит. 05,187.12e *amātyaputrāṃstata ādiśadyudhi*
 [R. 5,39,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,39,33) *sa tasya paricaryāyāṃ rājā kuntīṃ nijāṃ sutām . ādideśa*
 [KATHĀS. 16,37.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,37) *ādiśyantāṃ śārṅgaravamiśrāḥ śakuntalānayanāya*
 [ŚĀK. 48,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?48,21) [7,15](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,15), v. l. *velopalakṣaṇārthamādiṣṭo 'smi kāśyapena*
@@ -137,7 +137,7 @@
 [R. 5,32,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,21)
 [DHŪRTAS. 67,13.] *yantāramādiśya dhuryānviśrāmayeti saḥ*
 [RAGH. 1,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,54) [2,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,65)
-[MBH. 3,2184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2184) = [≈Вульг. 3.56.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A056_S025) = ≈крит. 03,53.15a
+[MBH. 3,2184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2184) = [≈Вульг. 3.56.25](mbh/3.56.html#v25) = ≈крит. 03,53.15a
 [R. 2,27,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,5) [66,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,14)
 [PAÑCAT. 55,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,25)
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
@@ -149,7 +149,7 @@
 - **RU:** — 6) давать кому-л. указание, отдавать приказ, направлять: *ityādideśa mām*
 [R. GORR. 2,58,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,33) [6,19,74.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,74) *anveṣaṇe 'niruddhasya carānādiśa māciram*
 [HARIV. 10315.](https://sanskrit-lexicon-scans.github.io/hariv?10315) *puruṣāṃścādiśaṃ prājñānkanyāvṛttāntakarmaṇi*
-[MBH. 5,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7340) = [≈Вульг. 5.186.13](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A186_S013) = ≈крит. 05,187.12e *amātyaputrāṃstata ādiśadyudhi*
+[MBH. 5,7340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7340) = [≈Вульг. 5.186.13](mbh/5.186.html#v13) = ≈крит. 05,187.12e *amātyaputrāṃstata ādiśadyudhi*
 [R. 5,39,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,39,33) *sa tasya paricaryāyāṃ rājā kuntīṃ nijāṃ sutām . ādideśa*
 [KATHĀS. 16,37.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,37) *ādiśyantāṃ śārṅgaravamiśrāḥ śakuntalānayanāya*
 [ŚĀK. 48,21.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?48,21) [7,15](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,15), v. l. *velopalakṣaṇārthamādiṣṭo 'smi kāśyapena*
@@ -157,7 +157,7 @@
 [R. 5,32,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,32,21)
 [DHŪRTAS. 67,13.] *yantāramādiśya dhuryānviśrāmayeti saḥ*
 [RAGH. 1,54.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,54) [2,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,65)
-[MBH. 3,2184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2184) = [≈Вульг. 3.56.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A056_S025) = ≈крит. 03,53.15a
+[MBH. 3,2184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2184) = [≈Вульг. 3.56.25](mbh/3.56.html#v25) = ≈крит. 03,53.15a
 [R. 2,27,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,27,5) [66,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,66,14)
 [PAÑCAT. 55,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?55,25)
 [HIT. 10,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?10,21)
@@ -192,27 +192,27 @@
   <sub>attested</sub>
 
 **9)** — 9) versuchen, erproben: *brahmāstramādiśam*
-[MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968) = [≈Вульг. 3.166.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A166_S016) = ≈крит. 03,162.15a
+[MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968) = [≈Вульг. 3.166.16](mbh/3.166.html#v16) = ≈крит. 03,162.15a
 
 - **RU:** — 9) пробовать, испытывать: *brahmāstramādiśam*
-[MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968) = [≈Вульг. 3.166.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U10_A166_S016) = ≈крит. 03,162.15a
+[MBH. 3,11968.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11968) = [≈Вульг. 3.166.16](mbh/3.166.html#v16) = ≈крит. 03,162.15a
   <sub>attested</sub>
 
 **addenda)** — Vgl. *anādiṣṭa, ādiś, ādiṣṭa, ādeśa* u. s. w. — caus. Jmd anzeigen, angeben: *ācaranmadirāmapi . ādeśito dharmaparaiḥ punaḥ saṃskāramarhati*
-[MBH. 12,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1227) = [≈Вульг. 12.34.20](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A034_S020) = ≈крит. 12,35.20a zeigen, anweisen (den Weg): *adhikaraṇamaṇḍapasya mārgamādeśaya*
+[MBH. 12,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1227) = [≈Вульг. 12.34.20](mbh/12.34.html#v20) = ≈крит. 12,35.20a zeigen, anweisen (den Weg): *adhikaraṇamaṇḍapasya mārgamādeśaya*
 [MṚCCH. 138,4.]
 [ŚĀK. 52,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?52,4) [61,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,15) [72,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?72,12)
 [MĀLAV. 29,8.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?29,8) *tadādeśitapanthānau*
-[MBH. 12,13147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13147) = [≈Вульг. 12.341.30](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A341_S030) = ≈крит. 12,328.27a *ādeśita = ādiṣṭa*
+[MBH. 12,13147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13147) = [≈Вульг. 12.341.30](mbh/12.341.html#v30) = ≈крит. 12,328.27a *ādeśita = ādiṣṭa*
 [MED. ṭ. 33.](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,33) — intens. erproben, in Anwendung bringen (?): *vṛṣā śuṣmeṇa bādhate vi durmatīrādediśānaḥ śaryaheva śurudhaḥ*
 [ṚV. 9,70,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.070.html#rv09.070.05)
 
 - **RU:** — ср. *anādiṣṭa, ādiś, ādiṣṭa, ādeśa* и т.д. — caus. доносить на кого-л., указывать: *ācaranmadirāmapi . ādeśito dharmaparaiḥ punaḥ saṃskāramarhati*
-[MBH. 12,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1227) = [≈Вульг. 12.34.20](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A034_S020) = ≈крит. 12,35.20a показывать, наставлять (путь): *adhikaraṇamaṇḍapasya mārgamādeśaya*
+[MBH. 12,1227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1227) = [≈Вульг. 12.34.20](mbh/12.34.html#v20) = ≈крит. 12,35.20a показывать, наставлять (путь): *adhikaraṇamaṇḍapasya mārgamādeśaya*
 [MṚCCH. 138,4.]
 [ŚĀK. 52,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?52,4) [61,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,15) [72,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?72,12)
 [MĀLAV. 29,8.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?29,8) *tadādeśitapanthānau*
-[MBH. 12,13147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13147) = [≈Вульг. 12.341.30](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A341_S030) = ≈крит. 12,328.27a *ādeśita = ādiṣṭa*
+[MBH. 12,13147.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13147) = [≈Вульг. 12.341.30](mbh/12.341.html#v30) = ≈крит. 12,328.27a *ādeśita = ādiṣṭa*
 [MED. ṭ. 33.](https://sanskrit-lexicon-scans.github.io/medini/app1?ṭ,33) — intens. испытывать, применять (?): *vṛṣā śuṣmeṇa bādhate vi durmatīrādediśānaḥ śaryaheva śurudhaḥ*
 [ṚV. 9,70,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.070.html#rv09.070.05)
   <sub>attested</sub>

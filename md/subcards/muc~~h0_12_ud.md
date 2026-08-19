@@ -14,7 +14,7 @@
 [DAŚAK.] in [BENF. Chr. 187,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *unmuktapuṣpacāpo manobhavaḥ*
 [KATHĀS. 52,201.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,201) *bhāvamāsuramunmucya*
 [BHĀG. P. 7,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,24) *ṛṇamunmucya devānāmṛṣīṇāṃ ca* die Schuld abtragen
-[MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) = [≈Вульг. 13.37.17](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A037_S017) = ≈крит. 13,37.18a Jmd befreien
+[MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) = [≈Вульг. 13.37.17](mbh/13.37.html#v17) = ≈крит. 13,37.18a Jmd befreien
 [R. 1,1,74.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,74) [6,84,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,26)
 [KATHĀS. 58,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?58,102) *bandhanāt*
 [PAÑCAT. 38,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,21) *pāśāt*
@@ -39,7 +39,7 @@
 [DAŚAK.] в [BENF. Chr. 187,2.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) *unmuktapuṣpacāpo manobhavaḥ*
 [KATHĀS. 52,201.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,201) *bhāvamāsuramunmucya*
 [BHĀG. P. 7,6,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,6,24) *ṛṇamunmucya devānāmṛṣīṇāṃ ca* уплатить долг
-[MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) = [≈Вульг. 13.37.17](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A037_S017) = ≈крит. 13,37.18a освобождать кого-л.
+[MBH. 13,2200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2200) = [≈Вульг. 13.37.17](mbh/13.37.html#v17) = ≈крит. 13,37.18a освобождать кого-л.
 [R. 1,1,74.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,74) [6,84,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,26)
 [KATHĀS. 58,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?58,102) *bandhanāt*
 [PAÑCAT. 38,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?38,21) *pāśāt*
@@ -57,18 +57,18 @@
 **add.)** — Vgl. *unmuca, unmocana* . — caus. lösen, aufbinden: *unmocanīyā veṇī*
 [MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. ablösen, abnehmen: *teṣāmunmocya caturṇāṃ śīrṣapaṭṭakān*
 [KATHĀS. 13,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,190) Jmd befreien
-[MBH. 12,5664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5664) = [≈Вульг. 12.153.49](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A153_S049) = ≈крит. 12,149.45a
+[MBH. 12,5664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5664) = [≈Вульг. 12.153.49](mbh/12.153.html#v49) = ≈крит. 12,149.45a
 [R. GORR. 1,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,79)
 [KATHĀS. 22,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,195) *bandhanāt*
 [67,46.](https://sanskrit-lexicon-scans.github.io/kss/index.html?67,46) [PAÑCAT. 37,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,20) [257,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,22) *na vikramo na cāpyartho na mitraṃ na suhṛjjanaḥ . tathonmocayate duḥkhādyathātmā sthirasaṃyamaḥ ..*
-[MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185) = [≈Вульг. 11.7.23](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A007_S023) = ≈крит. 11,7.19a
+[MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185) = [≈Вульг. 11.7.23](mbh/11.7.html#v23) = ≈крит. 11,7.19a
 
 - **RU:** — ср. *unmuca, unmocana* . — caus. развязывать, распутывать: *unmocanīyā veṇī*
 [MEGH. 89](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?89), v. l. снимать, отстегивать: *teṣāmunmocya caturṇāṃ śīrṣapaṭṭakān*
 [KATHĀS. 13,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,190) освобождать кого-л.
-[MBH. 12,5664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5664) = [≈Вульг. 12.153.49](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A153_S049) = ≈крит. 12,149.45a
+[MBH. 12,5664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5664) = [≈Вульг. 12.153.49](mbh/12.153.html#v49) = ≈крит. 12,149.45a
 [R. GORR. 1,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,79)
 [KATHĀS. 22,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,195) *bandhanāt*
 [67,46.](https://sanskrit-lexicon-scans.github.io/kss/index.html?67,46) [PAÑCAT. 37,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?37,20) [257,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?257,22) *na vikramo na cāpyartho na mitraṃ na suhṛjjanaḥ . tathonmocayate duḥkhādyathātmā sthirasaṃyamaḥ ..*
-[MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185) = [≈Вульг. 11.7.23](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A007_S023) = ≈крит. 11,7.19a
+[MBH. 11,185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.185) = [≈Вульг. 11.7.23](mbh/11.7.html#v23) = ≈крит. 11,7.19a
   <sub>attested</sub>

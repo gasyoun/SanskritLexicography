@@ -59,9 +59,9 @@
 - **RU:** — *Intens. *cecchidīti* и *cecchidyate*.
   <sub>lexicographic</sub>
 
-**Mit ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15) = [≈Вульг. 12.3.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A003_S023) = ≈крит. 12,3.23c.
+**Mit ati)** — Mit *ati*, *˚cchinna* zu stark aufgeschnitten [SUŚR. 2,19,1]. zu stark zerhauen, — verwundet [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15) = [≈Вульг. 12.3.23](mbh/12.3.html#v23) = ≈крит. 12,3.23c.
 
-- **RU:** — С *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15) = [≈Вульг. 12.3.23](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A003_S023) = ≈крит. 12,3.23c.
+- **RU:** — С *ati*, *˚cchinna* чрезмерно надрезанный [SUŚR. 2,19,1]. чрезмерно изрубленный, — израненный [MBH. 12,96,15](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,96,15) = [≈Вульг. 12.3.23](mbh/12.3.html#v23) = ≈крит. 12,3.23c.
   <sub>attested</sub>
 
 **Mit ava)** — Mit *antar* abschneiden, intercludere [28,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
@@ -293,9 +293,9 @@
 - **RU:** **1.** √*chid*, *chindatprāṇi* (Nomin.) травоядное животное [ĀPAST. ŚR. 9,13,1]. [16,8].
   <sub>lexicographic</sub>
 
-**1)** **1.** √*chid* II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S117) = ≈крит. 01,1.72a.
+**1)** **1.** √*chid* II. 6. Auch lösen, entscheiden (einen Zweifel) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](mbh/1.1.html#v117) = ≈крит. 01,1.72a.
 — Mit *vipra* 4.
 
-- **RU:** **1.** √*chid* II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S117) = ≈крит. 01,1.72a.
+- **RU:** **1.** √*chid* II. 6. Также разрешать, решать (сомнение) [MBH. 1,71,17](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17) = [≈Вульг. 1.1.117](mbh/1.1.html#v117) = ≈крит. 01,1.72a.
 — С *vipra* 4.
   <sub>attested</sub>

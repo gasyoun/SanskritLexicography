@@ -12,7 +12,7 @@
 [12,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.07) *paryacaratsveṣu veśmasu*
 [HARIV. 9025.](https://sanskrit-lexicon-scans.github.io/hariv?9025) *kaṅkāḥ śyenāstathā gṛdhrā nīcaiḥ paricaranti ca*
 [R. 6,16,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,11) *sabhām*
-[MBH. 3,2349.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2349) = [≈Вульг. 3.62.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A062_S017) = ≈крит. 03,59.15a [7,221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.221) = [≈Вульг. 7.7.53](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A007_S053) = ≈крит. 07,6.41c
+[MBH. 3,2349.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2349) = [≈Вульг. 3.62.17](mbh/3.62.html#v17) = ≈крит. 03,59.15a [7,221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.221) = [≈Вульг. 7.7.53](mbh/7.7.html#v53) = ≈крит. 07,6.41c
 [R. 5,52,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,52,5)
 
 - **RU:** — *pari*
@@ -24,7 +24,7 @@
 [12,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.012.html#rv10.012.07) *paryacaratsveṣu veśmasu*
 [HARIV. 9025.](https://sanskrit-lexicon-scans.github.io/hariv?9025) *kaṅkāḥ śyenāstathā gṛdhrā nīcaiḥ paricaranti ca*
 [R. 6,16,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,16,11) *sabhām*
-[MBH. 3,2349.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2349) = [≈Вульг. 3.62.17](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A062_S017) = ≈крит. 03,59.15a [7,221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.221) = [≈Вульг. 7.7.53](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A007_S053) = ≈крит. 07,6.41c
+[MBH. 3,2349.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2349) = [≈Вульг. 3.62.17](mbh/3.62.html#v17) = ≈крит. 03,59.15a [7,221.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.221) = [≈Вульг. 7.7.53](mbh/7.7.html#v53) = ≈крит. 07,6.41c
 [R. 5,52,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,52,5)
   <sub>attested</sub>
 
@@ -36,11 +36,11 @@
 [PĀR. GṚHY. 2,14.]
 [KAUŚ. 94.]
 [CHĀND. UP. 4,10,1. 2. 4.] *bhaveyuragnayastasya paricīrṇāstu nityaśaḥ*
-[MBH. 3,14028.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14028) = [≈Вульг. 3.214.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A214_S016) = ≈крит. 03,204.14e *yuktaḥ paricaredenam (gurum)*
+[MBH. 3,14028.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14028) = [≈Вульг. 3.214.16](mbh/3.214.html#v16) = ≈крит. 03,204.14e *yuktaḥ paricaredenam (gurum)*
 [M. 2,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,243) *brahma paryacaratkṣatram — śūdrāḥ paryacaranviśaḥ*
-[MBH. 1,3977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3977) = [≈Вульг. 1.100.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S011) = ≈крит. 01,94.9a
+[MBH. 1,3977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3977) = [≈Вульг. 1.100.11](mbh/1.100.html#v11) = ≈крит. 01,94.9a
 [HARIV. 2347.](https://sanskrit-lexicon-scans.github.io/hariv?2347) *patim*
-[MBH. 3,8581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8581) = [≈Вульг. 3.97.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A097_S012) = ≈крит. 03,95.12a — [1,2767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2767) = [≈Вульг. 1.67.131](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S131) = ≈крит. 01,104.3a [3,12922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12922) = [≈Вульг. 3.188.118](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S118) = ≈крит. 03,186.107a [13662.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13662) = [≈Вульг. 3.205.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A205_S016) = ≈крит. 03,196.14c [14684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14684) = [≈Вульг. 3.233.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S036) = ≈крит. 03,222.34a [12,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1055) = [≈Вульг. 12.30.16](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A030_S016) = ≈крит. 12,30.14c *gātrasaṃvāhanaiścaiva śramāpanayanaistathā . śakraḥ sarveṣu kāleṣu ditiṃ paricacāra ..*
+[MBH. 3,8581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8581) = [≈Вульг. 3.97.12](mbh/3.97.html#v12) = ≈крит. 03,95.12a — [1,2767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2767) = [≈Вульг. 1.67.131](mbh/1.67.html#v131) = ≈крит. 01,104.3a [3,12922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12922) = [≈Вульг. 3.188.118](mbh/3.188.html#v118) = ≈крит. 03,186.107a [13662.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13662) = [≈Вульг. 3.205.16](mbh/3.205.html#v16) = ≈крит. 03,196.14c [14684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14684) = [≈Вульг. 3.233.36](mbh/3.233.html#v36) = ≈крит. 03,222.34a [12,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1055) = [≈Вульг. 12.30.16](mbh/12.30.html#v16) = ≈крит. 12,30.14c *gātrasaṃvāhanaiścaiva śramāpanayanaistathā . śakraḥ sarveṣu kāleṣu ditiṃ paricacāra ..*
 [R. 1,46,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,11) [47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [2,40,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,25) [3,77,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,77,30)
 [BHARTṚ. 3,77.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,77)
 [KATHĀS. 4,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,136)
@@ -49,7 +49,7 @@
 [BHĀG. P. 4,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,20) *nityaṃ śastraṃ paricaran*
 [R. 3,13,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,19) *āmraṃ chittvā kuṭhāreṇa nimbaṃ paricarettu yaḥ*
 [2,35,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,14) *paricarya tathā vedam*
-[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) = [≈Вульг. 12.61.19](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A061_S019) = ≈крит. 12,61.19a Statt *bhavatoḥ paricarya*
+[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) = [≈Вульг. 12.61.19](mbh/12.61.html#v19) = ≈крит. 12,61.19a Statt *bhavatoḥ paricarya*
 [YAJÑAD. 2,46] hat
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48) : *bhavantau pari˚* . — caus.
 
@@ -61,11 +61,11 @@
 [PĀR. GṚHY. 2,14.]
 [KAUŚ. 94.]
 [CHĀND. UP. 4,10,1. 2. 4.] *bhaveyuragnayastasya paricīrṇāstu nityaśaḥ*
-[MBH. 3,14028.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14028) = [≈Вульг. 3.214.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A214_S016) = ≈крит. 03,204.14e *yuktaḥ paricaredenam (gurum)*
+[MBH. 3,14028.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14028) = [≈Вульг. 3.214.16](mbh/3.214.html#v16) = ≈крит. 03,204.14e *yuktaḥ paricaredenam (gurum)*
 [M. 2,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,243) *brahma paryacaratkṣatram — śūdrāḥ paryacaranviśaḥ*
-[MBH. 1,3977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3977) = [≈Вульг. 1.100.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A100_S011) = ≈крит. 01,94.9a
+[MBH. 1,3977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3977) = [≈Вульг. 1.100.11](mbh/1.100.html#v11) = ≈крит. 01,94.9a
 [HARIV. 2347.](https://sanskrit-lexicon-scans.github.io/hariv?2347) *patim*
-[MBH. 3,8581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8581) = [≈Вульг. 3.97.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A097_S012) = ≈крит. 03,95.12a — [1,2767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2767) = [≈Вульг. 1.67.131](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A067_S131) = ≈крит. 01,104.3a [3,12922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12922) = [≈Вульг. 3.188.118](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A188_S118) = ≈крит. 03,186.107a [13662.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13662) = [≈Вульг. 3.205.16](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A205_S016) = ≈крит. 03,196.14c [14684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14684) = [≈Вульг. 3.233.36](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U13_A233_S036) = ≈крит. 03,222.34a [12,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1055) = [≈Вульг. 12.30.16](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A030_S016) = ≈крит. 12,30.14c *gātrasaṃvāhanaiścaiva śramāpanayanaistathā . śakraḥ sarveṣu kāleṣu ditiṃ paricacāra ..*
+[MBH. 3,8581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8581) = [≈Вульг. 3.97.12](mbh/3.97.html#v12) = ≈крит. 03,95.12a — [1,2767.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2767) = [≈Вульг. 1.67.131](mbh/1.67.html#v131) = ≈крит. 01,104.3a [3,12922.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12922) = [≈Вульг. 3.188.118](mbh/3.188.html#v118) = ≈крит. 03,186.107a [13662.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13662) = [≈Вульг. 3.205.16](mbh/3.205.html#v16) = ≈крит. 03,196.14c [14684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14684) = [≈Вульг. 3.233.36](mbh/3.233.html#v36) = ≈крит. 03,222.34a [12,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1055) = [≈Вульг. 12.30.16](mbh/12.30.html#v16) = ≈крит. 12,30.14c *gātrasaṃvāhanaiścaiva śramāpanayanaistathā . śakraḥ sarveṣu kāleṣu ditiṃ paricacāra ..*
 [R. 1,46,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,46,11) [47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [2,40,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,25) [3,77,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,77,30)
 [BHARTṚ. 3,77.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,77)
 [KATHĀS. 4,136.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,136)
@@ -74,7 +74,7 @@
 [BHĀG. P. 4,8,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,8,20) *nityaṃ śastraṃ paricaran*
 [R. 3,13,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,19) *āmraṃ chittvā kuṭhāreṇa nimbaṃ paricarettu yaḥ*
 [2,35,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,14) *paricarya tathā vedam*
-[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) = [≈Вульг. 12.61.19](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A061_S019) = ≈крит. 12,61.19a Вм. *bhavatoḥ paricarya*
+[MBH. 12,2342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2342) = [≈Вульг. 12.61.19](mbh/12.61.html#v19) = ≈крит. 12,61.19a Вм. *bhavatoḥ paricarya*
 [YAJÑAD. 2,46] имеет
 [R. GORR. 2,66,48](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,66,48) : *bhavantau pari˚* . — caus.
   <sub>attested</sub>

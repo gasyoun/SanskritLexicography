@@ -27,12 +27,12 @@
   <sub>attested</sub>
 
 **3)** — 3) pass. einen Wandel erfahren: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [ed. Bomb.])
-[MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) = [≈Вульг. 13.139.42](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A139_S042) = ≈крит. 13,126.42a sich legen, vergehen: *utsāhaḥ parihanyate*
+[MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) = [≈Вульг. 13.139.42](mbh/13.139.html#v42) = ≈крит. 13,126.42a sich legen, vergehen: *utsāhaḥ parihanyate*
 [Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769 "Spr. (II) 3769: nirviśeṣaṃ yadā svāmī samaṃ bhṛtyeṣu vartate | tadodyamasamarthānāmutsāhaḥ parihīyate || — (1612.) Wenn ein Herr ohne allen Unterschied auf gleiche Weise gegen seine Diener verfährt, dann vergeht den Arbeitsfähigen der Muth zum Schaffen."), v. l. für *parihīyate* . — Statt *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40) ist *paribādho* zu vermuthen.
 
 - **RU:** — 3) pass. претерпевать изменение: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [Бомбейская ред.])
-[MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) = [≈Вульг. 13.139.42](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A139_S042) = ≈крит. 13,126.42a утихать, проходить: *utsāhaḥ parihanyate*
+[MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) = [≈Вульг. 13.139.42](mbh/13.139.html#v42) = ≈крит. 13,126.42a утихать, проходить: *utsāhaḥ parihanyate*
 [Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769 "Spr. (II) 3769: nirviśeṣaṃ yadā svāmī samaṃ bhṛtyeṣu vartate | tadodyamasamarthānāmutsāhaḥ parihīyate || — (1612.) Wenn ein Herr ohne allen Unterschied auf gleiche Weise gegen seine Diener verfährt, dann vergeht den Arbeitsfähigen der Muth zum Schaffen."), v. l. для *parihīyate* . — Вм. *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40) следует предполагать *paribādho*.
   <sub>attested</sub>

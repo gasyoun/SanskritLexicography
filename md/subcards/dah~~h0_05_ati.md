@@ -10,11 +10,11 @@
 
 **1)** 1) übermässig brennen: *atidagdha*
 [SUŚR. 2,47,19.] es Jmd überaus heiss machen: *eṣa cāti raṇe bhīṣmo dahate vai mahācamūm*
-[MBH. 6,5238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5238) = [≈Вульг. 6.112.37](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A112_S037) = ≈крит. 06,108.37a
+[MBH. 6,5238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5238) = [≈Вульг. 6.112.37](mbh/6.112.html#v37) = ≈крит. 06,108.37a
 
 - **RU:** 1) чрезмерно гореть: *atidagdha*
 [SUŚR. 2,47,19.] делать кому-л. чрезвычайно жарко: *eṣa cāti raṇe bhīṣmo dahate vai mahācamūm*
-[MBH. 6,5238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5238) = [≈Вульг. 6.112.37](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A112_S037) = ≈крит. 06,108.37a
+[MBH. 6,5238.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5238) = [≈Вульг. 6.112.37](mbh/6.112.html#v37) = ≈крит. 06,108.37a
   <sub>attested</sub>
 
 **2)** — 2) hinüberflammen über: *sa imā sarvā nadīratidadāha*

@@ -85,7 +85,7 @@ einer Wurzel *gī*)
   <sub>attested</sub>
 
 **2)** — 2) in einen Zustand gerathen, theilhaft werden: *siddhimagāt*
-[MBH. 3,10697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10697) = [≈Вульг. 3.133.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A133_S024) = ≈крит. 03,133.21c *harṣam*
+[MBH. 3,10697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10697) = [≈Вульг. 3.133.24](mbh/3.133.html#v24) = ≈крит. 03,133.21c *harṣam*
 [R. 5,91,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,25) *viṣādam*
 [6,10,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,37) *darpam*
 [KATHĀS. 5,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,135) *śucam*
@@ -97,7 +97,7 @@ einer Wurzel *gī*)
 [3,21.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,21)
 
 - **RU:** — 2) впасть в какое-либо состояние, приобщиться к чему-либо: *siddhimagāt*
-[MBH. 3,10697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10697) = [≈Вульг. 3.133.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A133_S024) = ≈крит. 03,133.21c *harṣam*
+[MBH. 3,10697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10697) = [≈Вульг. 3.133.24](mbh/3.133.html#v24) = ≈крит. 03,133.21c *harṣam*
 [R. 5,91,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,25) *viṣādam*
 [6,10,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,10,37) *darpam*
 [KATHĀS. 5,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,135) *śucam*

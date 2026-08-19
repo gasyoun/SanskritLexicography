@@ -79,7 +79,7 @@
 [N. 4,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,8) *prāptumicchanti devāstvām*
 [3,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,6) — med.
 [BHAG. 16,13.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,13)
-[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) = [≈Вульг. 1.42.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A042_S010) = ≈крит. 01,38.10a [3,1046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1046) = [≈Вульг. 3.28.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A028_S018) = ≈крит. 03,29.18a [1352.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1352) = [≈Вульг. 3.33.89](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A033_S089) = ≈крит. 03,34.85a [8254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8254) = [≈Вульг. 3.85.112](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S112) = ≈крит. 03,83.96c [13536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13536) = [≈Вульг. 3.202.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A202_S022) = ≈крит. 03,193.20a
+[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) = [≈Вульг. 1.42.10](mbh/1.42.html#v10) = ≈крит. 01,38.10a [3,1046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1046) = [≈Вульг. 3.28.18](mbh/3.28.html#v18) = ≈крит. 03,29.18a [1352.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1352) = [≈Вульг. 3.33.89](mbh/3.33.html#v89) = ≈крит. 03,34.85a [8254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8254) = [≈Вульг. 3.85.112](mbh/3.85.html#v112) = ≈крит. 03,83.96c [13536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13536) = [≈Вульг. 3.202.22](mbh/3.202.html#v22) = ≈крит. 03,193.20a
 [R. 1,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,7) [2,21,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,28) [4,34,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,28) — pass.: *prāpyate hyamṛtaṃ tataḥ*
 [M. 12,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,85) *svargo rakṣaṇātprāpyate yathā*
 [R. 1,17,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,6)
@@ -109,7 +109,7 @@
 [N. 4,8.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,8) *prāptumicchanti devāstvām*
 [3,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,6) — мед.
 [BHAG. 16,13.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,13)
-[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) = [≈Вульг. 1.42.10](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A042_S010) = ≈крит. 01,38.10a [3,1046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1046) = [≈Вульг. 3.28.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A028_S018) = ≈крит. 03,29.18a [1352.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1352) = [≈Вульг. 3.33.89](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A033_S089) = ≈крит. 03,34.85a [8254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8254) = [≈Вульг. 3.85.112](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S112) = ≈крит. 03,83.96c [13536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13536) = [≈Вульг. 3.202.22](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A202_S022) = ≈крит. 03,193.20a
+[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) = [≈Вульг. 1.42.10](mbh/1.42.html#v10) = ≈крит. 01,38.10a [3,1046.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1046) = [≈Вульг. 3.28.18](mbh/3.28.html#v18) = ≈крит. 03,29.18a [1352.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1352) = [≈Вульг. 3.33.89](mbh/3.33.html#v89) = ≈крит. 03,34.85a [8254.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8254) = [≈Вульг. 3.85.112](mbh/3.85.html#v112) = ≈крит. 03,83.96c [13536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13536) = [≈Вульг. 3.202.22](mbh/3.202.html#v22) = ≈крит. 03,193.20a
 [R. 1,39,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,7) [2,21,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,28) [4,34,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,34,28) — pass.: *prāpyate hyamṛtaṃ tataḥ*
 [M. 12,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,85) *svargo rakṣaṇātprāpyate yathā*
 [R. 1,17,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,6)
@@ -169,7 +169,7 @@
 [VIŚV. 8,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?8,17)
 [VID. 66.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?66) [333.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?333) *bhrātṛmātṛpitṛprāptam* (*dhanam*)
 [M. 9,194.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,194) *tvatprasūtiḥ priyā prāptā*
-[MBH. 1,6175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6175) = [≈Вульг. 1.157.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S018) = ≈крит. 01,145.18a *prāptaṃ dṛṣṭvāpi nidhimagrataḥ*
+[MBH. 1,6175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6175) = [≈Вульг. 1.157.18](mbh/1.157.html#v18) = ≈крит. 01,145.18a *prāptaṃ dṛṣṭvāpi nidhimagrataḥ*
 [HIT. Pr. 34.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,34) *prāpta evārthataḥ so 'rtho yato vāñchā nivartate*
 [I,179.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,179) *yācñāprāptaṃ yācitakam*
 [AK. 2,9,4.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,4) *etasminnenasi prāpte*
@@ -192,7 +192,7 @@
 [VIŚV. 8,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?8,17)
 [VID. 66.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?66) [333.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?333) *bhrātṛmātṛpitṛprāptam* (*dhanam*)
 [M. 9,194.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,194) *tvatprasūtiḥ priyā prāptā*
-[MBH. 1,6175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6175) = [≈Вульг. 1.157.18](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S018) = ≈крит. 01,145.18a *prāptaṃ dṛṣṭvāpi nidhimagrataḥ*
+[MBH. 1,6175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6175) = [≈Вульг. 1.157.18](mbh/1.157.html#v18) = ≈крит. 01,145.18a *prāptaṃ dṛṣṭvāpi nidhimagrataḥ*
 [HIT. Pr. 34.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?0,34) *prāpta evārthataḥ so 'rtho yato vāñchā nivartate*
 [I,179.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,179) *yācñāprāptaṃ yācitakam*
 [AK. 2,9,4.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,4) *etasminnenasi prāpte*
@@ -221,7 +221,7 @@
 [SUŚR. 2,64,9. 10.] *hastaprāpta* oder *karaprāpta* in die Hand gelangt, was Einem ganz sicher ist, nicht entgehen kann: *hastaprāptaṃ manye svargaṃ tava*
 [VIŚV. 9,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,5) *saṃtuṣṭe karaprāpte 'pyarthe bhavati nādaraḥ*
 [HIT. I,139.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,139) Vgl. *tasya hastagato jayaḥ*
-[MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296) = [≈Вульг. 18.6.81](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U02_A006_S081) = крит. —
+[MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296) = [≈Вульг. 18.6.81](mbh/18.6.html#v81) = крит. —
 
 - **RU:** — 3) достигший или настигший, прибывший в какое-либо место: *tṛṇāni prāptaḥ*
 [AV. 9,7,22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.007.html#av09.007.22) *aprāptā hīmāṃ bhavanti*
@@ -236,5 +236,5 @@
 [SUŚR. 2,64,9. 10.] *hastaprāpta* или *karaprāpta* попавший в руку, то, что совершенно надежно и не может ускользнуть: *hastaprāptaṃ manye svargaṃ tava*
 [VIŚV. 9,5.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?9,5) *saṃtuṣṭe karaprāpte 'pyarthe bhavati nādaraḥ*
 [HIT. I,139.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,139) ср. *tasya hastagato jayaḥ*
-[MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296) = [≈Вульг. 18.6.81](https://sanatana.in/mahabharata/listing/parva/swargarohanaparva?id=P18_U02_A006_S081) = крит. —
+[MBH. 18,296.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.296) = [≈Вульг. 18.6.81](mbh/18.6.html#v81) = крит. —
   <sub>attested</sub>

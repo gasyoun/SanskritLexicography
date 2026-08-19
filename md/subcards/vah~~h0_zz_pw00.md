@@ -317,9 +317,9 @@
 - **RU:** — 3〉 Med. уродиться в кого-л., становиться похожим.
   <sub>attested</sub>
 
-**anu_4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
+**anu_4)** — 4〉 betreiben [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](mbh/12.2.html#v12) = ≈крит. 12,2.12a (nach [KERN] *anuvahanti* St. *anuvihanti* zu lesen).
 
-- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A002_S012) = ≈крит. 12,2.12a (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
+- **RU:** — 4〉 вести, заниматься [MBH. 12,56,51](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,56,51) = [≈Вульг. 12.2.12](mbh/12.2.html#v12) = ≈крит. 12,2.12a (следует читать по [KERN] *anuvahanti* St. *anuvihanti*).
   <sub>attested</sub>
 
 **apa_intro)** — Mit *apa*
@@ -455,9 +455,9 @@
 - **RU:** — 2〉 возводить наверх.
   <sub>attested</sub>
 
-**ud_3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S051) = ≈крит. 06,4.2c.
+**ud_3)** — 3〉 heimführen, heirathen (ein Weib) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](mbh/6.3.html#v51) = ≈крит. 06,4.2c.
 
-- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U01_A003_S051) = ≈крит. 06,4.2c.
+- **RU:** — 3〉 вводить в дом, жениться (на женщине) [MBH. 6,119,34](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,119,34) = [≈Вульг. 6.3.51](mbh/6.3.html#v51) = ≈крит. 06,4.2c.
   <sub>attested</sub>
 
 **upa2_intro)** — Mit *samudā*

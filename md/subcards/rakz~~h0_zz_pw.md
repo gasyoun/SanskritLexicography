@@ -65,9 +65,9 @@
 - **RU:** — С *samabhi* сохранять, оберегать, защищать.
   <sub>attested</sub>
 
-**PW mit prati corr)** — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A002_S021) = ≈крит. 08,1.44a fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
+**PW mit prati corr)** — Mit *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](mbh/8.2.html#v21) = ≈крит. 08,1.44a fehlerhaft. Unter *kṣar* ist *avakṣarantaḥ* st. *avarakṣantaḥ* vermuthet worden, [MBH. ed. Vardh.] liest *atitakṣantaḥ* (!)
 
-- **RU:** — С *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A002_S021) = ≈крит. 08,1.44a ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* вместо *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
+- **RU:** — С *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](mbh/8.2.html#v21) = ≈крит. 08,1.44a ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* вместо *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
   <sub>attested</sub>
 
 **PW mit sampari)** — Mit *ā* behüten, beschützen, bewahren, bewachen, — vor (Abl.)

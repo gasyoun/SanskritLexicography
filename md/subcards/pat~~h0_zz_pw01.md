@@ -483,9 +483,9 @@
 - **RU:** — 2〉 преследовать, гнаться за.
   <sub>attested</sub>
 
-**mit_T136_caus_3)** — 3〉 abwerfen [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33) = [≈Вульг. 7.1.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S038) = ≈крит. 07,1.36a.
+**mit_T136_caus_3)** — 3〉 abwerfen [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33) = [≈Вульг. 7.1.38](mbh/7.1.html#v38) = ≈крит. 07,1.36a.
 
-- **RU:** — 3〉 сбрасывать [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33) = [≈Вульг. 7.1.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S038) = ≈крит. 07,1.36a.
+- **RU:** — 3〉 сбрасывать [MBH. 7,36,33](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,36,33) = [≈Вульг. 7.1.38](mbh/7.1.html#v38) = ≈крит. 07,1.36a.
   <sub>attested</sub>
 
 **desid)** — Desid. (*pra — pipatiṣati*) davoneilen wollen.
