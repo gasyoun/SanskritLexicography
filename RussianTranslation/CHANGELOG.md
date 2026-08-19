@@ -10,6 +10,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Renou H5 — MW–PWG citation lineage confirmed (H062, 19-08-2026)
+
+- **H5 (step 5 of the Renou hypothesis programme).** MW's `<ls>` citation
+  era-states are contained in PWG's 78.2% of the time (95% CI [78.0, 78.5])
+  vs 14.0% [13.6, 14.4] against AP (independent-lineage baseline); exact-match
+  67.1% vs 12.9%; mean Jaccard 0.767 vs 0.210. Containment gap 0.6422,
+  one-sided permutation p = 0.0002. First quantitative measurement of MW's
+  citation apparatus being derived from PWG/PW rather than independent.
+  [RENOU_H5_LINEAGE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_H5_LINEAGE.md)
+  (F8 in RENOU_FINDINGS.md); driver
+  [src/renou_h5_lineage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_h5_lineage.py).
+  Step 2 (MG's Step-0 votes) and step 4 (H1, gated on those votes) remain
+  pending — next free step: (6) H3 register disjointness.
+
 ### E4 ghost-headword census + E5 translation drift + V6 survival streamgraph (H2856, 18-08-2026)
 
 - **E4 — ghost-headword census.** All 106,082 PWG headwords × `corpus_lexicon.jsonl`
