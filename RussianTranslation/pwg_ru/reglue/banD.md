@@ -1,334 +1,336 @@
-# Re-glue — banD
-
-## h0
-
-**1)** <div n="1"> 1) {%связывание, соединение; повязка%}
-<ls>SUŚR. 1,54,12. 64,2. 65,18. 68,1. 19.</ls> {#vanDo viDIyate#}
-<ls n="SUŚR.">2,14,9. 376,8.</ls> {#banDaM samAcaret#}
-<ls n="SUŚR.">398,13.</ls> {#subadDasyApi BArasya pUrvabanDaH SlaTAyate#}
-<ls>MBH. 1,7979.</ls> {#sve sTAne SakawasyATa cakrabanDamakArayat#} {%привязывание%}
-<ls>HARIV. 3422.</ls> {#gobanDadAru#}
-<ls>H. 894.</ls> {#IzAbanDaM cakrabanDaM raTabanDaM taTEva ca . prARASayadameyAtmA#}
-<ls>MBH. 7,8776.</ls> {#cakra˚ = cakre banDaH#}
-<ls>P. 2,1,41</ls>, <ab>Sch.</ab>
-{#hastebanDa#} и {#hasta˚#}
-<ls n="P.">6,3,13</ls>, <ab>Sch.</ab> ударение таких <ab>Compp.</ab>
-<ls>P. 6,2,32.</ls> {#tasyeha pawwabanDo viDIyatAm#}
-<ls>KATHĀS. 12,190.</ls> <ls n="KATHĀS.">14,33.</ls>
-<ls>RĀJA-TAR. 4,718.</ls> {#Uru˚#}
-<ls n="RĀJA-TAR. 4,">575.</ls> {#keSabanDaviSezAH#} {%различные способы завязывать волосы, — прически%}
-<ls>HALĀY. 2,375.</ls> {#brahmAstreRa ca banDo vE mAruteH#}
-<ls>R. GORR. 1,4,84.</ls> {#badDO tu SarabanDena BrAtarO raRamUrDani#}
-<ls n="R. GORR.">6,20,18.</ls> <ls n="R. GORR.">5,44,13.</ls> <ls n="R. GORR. 5,44,">15.</ls> <ls>MBH. 3,16466.</ls>
-
-**2)** <div n="1">— 2) {%поимка, захват%}: {#gaja˚#}
-<ls>RAGH. 16,2.</ls> {#SakunibanDavyasanin#}
-<ls>PAÑCAT. 192,3.</ls> {%заковывание в оковы, взятие под стражу, заключение, арест%} (часто в сочетании с {#vaDa#} {%умерщвлением, смертной казнью)%}
-<ls>M. 5,49.</ls> <ls n="M.">8,310</ls> (наряду с {#niroDana#} {%заключением под стражу).%}
-<ls>MBH. 14,443.</ls>
-<ls>Spr. 3609.</ls>
-<ls>MBH. 1,165.</ls> <ls n="MBH.">5,5225.</ls> {#rAja˚#} {%взятие под стражу по повелению государя%}
-<ls>HARIV. 3294.</ls> {#vanDAnmokzayatu mAm#}
-<ls n="HARIV.">14368.</ls> <ls>MĀLAV. 75.</ls> <ls>RĀJA-TAR. 3,121.</ls> {#˚mudrA#}
-<ls n="RĀJA-TAR.">4,179.</ls>
-
-**3)** <div n="1">— 3) {%связывание, скрепление%} в самых различных сочетаниях (<ab>s. u.</ab> {#banD#} 2.): {#setorbanDaH, setu˚#} {%возведение плотины, — моста%}
-<ls>Spr. 2989.</ls>
-<ls>MBH. 3,16312.</ls>
-<ls>RĀJA-TAR. 5,91.</ls> <ls n="RĀJA-TAR. 5,">114.</ls>
-<ls>KATHĀS. 19,5.</ls> {#saritAm#} {%запруживание%}
-<ls>MĀRK. P. 68,40.</ls> {%наведение моста%} (одновременно {%сковывание)%}
-<ls>Spr. 1185.</ls> (<ab>vgl.</ab> однако <ls n="Spr.">4200</ls>). = {#gfhAdivezwana#}
-<ls>ŚABDAR.</ls> в <ls>ŚKDR.</ls> {#prAkAramUla˚#}
-<ls>MED. y. 20.</ls> {#banDocCrayacitAni (SivirARi)#} вероятно {%вал%}
-<ls>MBH. 5,5202.</ls> {#Asana˚#} (следовало бы поместить при {#Asana#} под 1, {%a%}) {%усаживание%}
-<ls>RAGH. 2,6.</ls> {#paryaNka˚#}
-<ls>KUMĀRAS. 3,45.</ls> <ls n="KUMĀRAS. 3,">59.</ls>
-<ls>AŚOKĀVAD. 32.</ls> {#prAsAdavAtAyanadfSyabanDEH — aYjaliBiH#} {%сложение полых ладоней%}
-<ls>RAGH. 14,13.</ls> {#bahuBrukuwibanDena vadanena#} {%хмурение бровей%}
-<ls>RĀJA-TAR. 5,344.</ls> {#mallabanDAntara#} {%одна из <ab>best.</ab> поз борцов%}
-<ls>MED. p. 17.</ls> {#mahAbanDa, mUlabanDa#} и {#banDa#} {%<ab>best.</ab> положений рук и ног%}
-<ls>Verz. d. Oxf. H. 235,a,21. fg.</ls> {#strIRAM, rata˚, surata˚, strI˚#} и {#banDa#} allein {%соединение%} (тел), {%поза при совокуплении%}
-<ls>TRIK. 3,3,121.</ls>
-<ls>H. an. 2,5.</ls> <ls n="H. an. 2,">355.</ls> <ls n="H. an.">3,484.</ls>
-<ls>MED. k. 21.</ls> <ls>CAURAP. 48.</ls> их насчитывается
-<ls n="RATIM.">16</ls>, <ls n="RATIM.">18.</ls> и также
-<ls n="SMARADĪP.">36</ls>
-<ls>RATIM.</ls> и <ls>SMARADĪP.</ls> в <ls>ŚKDR.</ls> <ls>Verz. d. Oxf. H. 85,b,48.</ls> {#kaTA˚#} {%завязка повествования%}, так <ab>v. a.</ab> {%введение%}
-<ls>MBH. 1,59</ls> в <ab>Unterschr.</ab>
-
-**4)** <div n="1">— 4) {%направление, устремление%}: {#deSe nABicakranAsAgrAdO cittasya banDaH#}
-<ls>Verz. d. Oxf. H. 236,b, N.</ls>
-
-**5)** <div n="1">— 5) {%связь, общение%}: {#ata eva santo nIcabanDaM varjayanti#}
-<ls>PAÑCAT. 60,19.</ls>
-
-**6)** <div n="1">— 6) в <ab>Philos.</ab> {%связанность%} (в <ab>Gegens.</ab> — антоним {#mukti, mokza#} {%освобождению)%}
-<ls>ŚVETĀŚV. UP. 6,16.</ls> <ls>KAP. 1,56. 87. 156. 3,24.</ls> <ls>BHAG. 18,30.</ls> <ls>SĀṂKHYAK. 44.</ls> <ls>NĪLAK. 10. 15. 19. 63.</ls> <ls>VṚDDHA-CĀṆ. 13,12.</ls> <ls>Verz. d. Oxf. H. 228,a, N.</ls> <ls>BHĀG. P. 4,30,19.</ls> <ls>MĀRK. P. 29,1.</ls> <ls n="MĀRK. P.">95,3.</ls> <ls n="MĀRK. P. 95,">6.</ls> <ls n="MĀRK. P. 95,">15.</ls> <ls n="MĀRK. P. 95,">17.</ls> в <is>Sāṃkhya</is> бывает троякой: {#prakfti˚, vEkArika˚, dakziRA˚#}
-<ls>TATTVAS. 46.</ls> <ab>Vgl.</ab> {#karmabanDa#}
-<ls>BHAG. 2,39.</ls> {#janma˚#}
-<ls n="BHAG. 2,">51.</ls>
-  — [PW·restate] <div n="1">— 6〉 {%удерживать кого-либо%} <ls>NAIṢ. 6,107</ls>.
-
-**7)** <div n="1">— 7) {%обретение, проявление, выражение%}: {#adehabanDAya#} {%чтобы более не принимать тела%}
-<ls>RAGH. 18,6.</ls> {#BUyastanutyajAM nAsti SarIrabanDaH#}
-<ls n="RAGH.">13,58.</ls> {#dehabanDAnamAnuzAn#} вероятно {%наделенный телом%} (т.е. = {#dehabadDa)#}
-<ls>HARIV. 9030.</ls> {#rAgabanDa#} так <ab>v. a.</ab> {%привязанность%}
-<ls>MĀLAV. 29.</ls>
-<ls>RAGH. 18,51.</ls> {#aBilAza˚#}
-<ls n="RAGH.">6,81.</ls> {#lalitaviBramabanDavicakzaRa#}
-<ls n="RAGH.">9,35.</ls>
-  — [PW·restate] <div n="1">— 7〉 {%отстранять кого-либо от себя, держать на расстоянии от себя%}. {#˚badDa#} так <ab>v. a.</ab> {%с кем не хотят иметь ничего общего%}.
-
-**8)** <div n="1">— 8) {%узы, оковы%}
-<ls>H. an. 2,242.</ls>
-<ls>MED. dh. 9.</ls> <ls>ṚV. 8,40,8.</ls> <ls n="ṚV. 8,">56,18.</ls> {#pati^rba\nDezu^ baDyate#}
-<ls n="ṚV.">10,85,28.</ls> <ls>AV. 10,5,44.</ls> {#ayasmaya#}
-<ls>VS. 12,63.</ls> <ls n="VS. 12,">64.</ls> {#prASA^tpa\SuM pra mu^Ycata ba\nDAdya\jYapa^ti\M pari^#}
-<ls>TS. 3,1,4,4.</ls> <ls n="TS.">7,5,9,2.</ls> {#deva˚#} <ab>ebend.</ab>
-<ls>KAUŚ. 39.</ls> {#ba\nDa\pA\SAH#}
-<ls>AV. 6,84,3</ls> (<ls n="AV.">5,14,10</ls> вероятно следует читать {#banDum#}).
-<ls>HIT. 21,20.</ls> {#banDe sraMsini#} (волос)
-<ls>ŚĀK. 29.</ls> {#mohAdiBiSca sa eva banDaH sudfQatAM nItaH#}
-<ls>PRAB. 13,7.</ls> {#mAtA gAQaM nibaDnAti banDaM devI nikfntati#}
-<ls n="PRAB.">106,9.</ls> {#nIvIbanDocCvasitaSiTila (vAsas)#}
-<ls>MEGH. 69.</ls> {#viSrAmaM laBatAmidaM ca SiTilajyAbanDamasmadDanuH#}
-<ls>ŚĀK. 39</ls> (<ab>vgl.</ab> {#jyApASa)#}.{# babanDustaM rajjubanDena#}
-<ls>VID. 232.</ls> {#dfzwvA banDAnsvataScyutAn#}
-<ls>KATHĀS. 37,49.</ls> {#banDAnmuktaH#}
-<ls>RĀJA-TAR. 3,122.</ls> {#DarmabanDena badDo 'smi#}
-<ls>R. 2,106,8.</ls> {#satya˚#} <lex>adj.</lex> {%тот, для кого истина является оковами, кто держится истины%}
-<ls>MBH. 1,6779.</ls>
-  — [PW·restate] <div n="1">— 8〉 {#pratibadDa#} {%запутанный, трудно разрешимый%}.
-
-**9)** <div n="1">— 9) {%сухожилие%} (в теле): {#pIvaraSca suvarRaSca dfQabanDaSca jAyate (mArjAraH)#}
-<ls>MBH. 5,5437.</ls>
-
-**10)** <div n="1">— 10) {%оправа, вместилище%}: {#ADArastvamBasAM banDaH#}
-<ls>H. 1096.</ls>
-
-**11)** <div n="1">— 11) {%залог%} или точнее {%закладывание%} (<ab>vgl.</ab> {#banDaka)#}
-<ls>H. an.</ls> <ls>MED.</ls>
-
-**13)** <div n="1">— 13) {%следствие%}: {#mA te svako 'rTo nipateta mohAttatsaMviDAtavyamarizwbanDam (= arizwbadDam)#} так <ab>v. a.</ab> {%то, что приносит благо%}
-<ls>MBH. 4,2126.</ls>
-
-**14)** <div n="1">— 14) в <ab>Rhet.</ab> {%звуковое устроение, словесное устроение%}
-<ls>KĀVYĀD. 1,47.</ls> {#˚pAruzya#}
-<ls>PRATĀPAR. 11,a,9.</ls> <ls>Verz. d. Oxf. H. 207,a,28.</ls> <ls>DHŪRTAS. 68,12.</ls> {#kAvya˚#} {%поэтическое произведение%}
-<ls>SĀH. D. 6,12.</ls> {#mfdaNgAdiDvAnabanDa#} {%строй звуков, музыка%}
-<ls>ŚATR. 10,127.</ls>
-
-**15)** <div n="1">— 15) {%болезнь, при которой веки не могут полностью сомкнуться%} (полностью {#vartmabanDa)#}
-<ls>SUŚR. 2,309,1.</ls>
-
-**16)** <div n="1">— 16) в сочетании с числительными {%часть, доля%}: {#daSa˚#} {%одна десятая%}
-<ls>M. 8,107.</ls> {#paYca˚#} (<ab>u.</ab> {#paYcabanDa#} не вполне объяснено)
-<ls>YĀJÑ. 2,171.</ls> <ab>Vgl.</ab> {#guRa#} 1,b.
-
-**Kaus./caus. tail (T123))** <div n="v">— <ab>Vgl.</ab> {#saMbanDa#} <ab>u. s. w.</ab> — <ab>caus.</ab> {%велеть привязать%}: {#paSuM raktAmbaraM kftvA yUpe taM samabanDayat#}
-<ls>R. 1,62,24.</ls> {%велеть связать; говорить, что нужно связать%}: {#kecittu tatspfzwinamiti cARqAlodakyAdiBiH sarvEH saMbanDayanti#}
-<ls>KULL.</ls> к <ls>M. 5,85.</ls>
+Re-glue — banD
+
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
+
+## омоним h0
+
+**1)** 1) связывание, соединение; повязка
+[SUŚR. 1,54,12. 64,2. 65,18. 68,1. 19.] *vandho vidhīyate*
+[2,14,9. 376,8.] *bandhaṃ samācaret*
+[398,13.] *subaddhasyāpi bhārasya pūrvabandhaḥ ślathāyate*
+[MBH. 1,7979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7979) = [≈Вульг. 1.218.14](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U15_A218_S014) = ≈крит. 01,210.14c *sve sthāne śakaṭasyātha cakrabandhamakārayat* привязывание
+[HARIV. 3422.](https://sanskrit-lexicon-scans.github.io/hariv?3422) *gobandhadāru*
+[H. 894.](https://sanskrit-lexicon-scans.github.io/abch2/app1?894) *īṣābandhaṃ cakrabandhaṃ rathabandhaṃ tathaiva ca . prāṇāśayadameyātmā*
+[MBH. 7,8776.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8776) = [≈Вульг. 7.191.22](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U07_A191_S022) = ≈крит. 07,164.132a *cakra˚ = cakre bandhaḥ*
+[P. 2,1,41](https://ashtadhyayi.com/sutraani/2/1/41), схол.
+*hastebandha* и *hasta˚*
+[6,3,13](https://ashtadhyayi.com/sutraani/6/3/13), схол. ударение таких Compp.
+[P. 6,2,32.](https://ashtadhyayi.com/sutraani/6/2/32) *tasyeha paṭṭabandho vidhīyatām*
+[KATHĀS. 12,190.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,190) [14,33.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,33)
+[RĀJA-TAR. 4,718.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,718) *ūru˚*
+[575.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,575) *keśabandhaviśeṣāḥ* различные способы завязывать волосы, — прически
+[HALĀY. 2,375.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,375) *brahmāstreṇa ca bandho vai māruteḥ*
+[R. GORR. 1,4,84.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,84) *baddhau tu śarabandhena bhrātarau raṇamūrdhani*
+[6,20,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,20,18) [5,44,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,13) [15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,44,15) [MBH. 3,16466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16466) = [≈Вульг. 3.289.4](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A289_S004) = ≈крит. 03,273.4a
+
+**2)** — 2) поимка, захват: *gaja˚*
+[RAGH. 16,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,2) *śakunibandhavyasanin*
+[PAÑCAT. 192,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?192,3) заковывание в оковы, взятие под стражу, заключение, арест (часто в сочетании с *vadha* умерщвлением, смертной казнью)
+[M. 5,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,49) [8,310](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,310) (наряду с *nirodhana* заключением под стражу).
+[MBH. 14,443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.443) = [≈Вульг. 14.16.36](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A016_S036) = ≈крит. 14,16.35c
+[Spr. 3609.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3609)
+[MBH. 1,165.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.165) = [≈Вульг. 1.1.211](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S211) = ≈крит. 01,1.152c [5,5225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5225) = [≈Вульг. 5.156.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A156_S027) = ≈крит. 05,153.27c *rāja˚* взятие под стражу по повелению государя
+[HARIV. 3294.](https://sanskrit-lexicon-scans.github.io/hariv?3294) *vandhānmokṣayatu mām*
+[14368.](https://sanskrit-lexicon-scans.github.io/hariv?14368) [MĀLAV. 75.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?75) [RĀJA-TAR. 3,121.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,121) *˚mudrā*
+[4,179.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,179)
+
+**3)** — 3) связывание, скрепление в самых различных сочетаниях (см. *bandh* 2.): *setorbandhaḥ, setu˚* возведение плотины, — моста
+[Spr. 2989.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2989)
+[MBH. 3,16312.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16312) = [≈Вульг. 3.283.44](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U19_A283_S044) = ≈крит. 03,267.44a
+[RĀJA-TAR. 5,91.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,91) [114.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,114)
+[KATHĀS. 19,5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,5) *saritām* запруживание
+[MĀRK. P. 68,40.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?68,40) наведение моста (одновременно сковывание)
+[Spr. 1185.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1185) (ср. однако [4200](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4200)). = *gṛhādiveṣṭana*
+[ŚABDAR.] в [ŚKDR.] *prākāramūla˚*
+[MED. y. 20.](https://sanskrit-lexicon-scans.github.io/medini/app1?y,20) *bandhocchrayacitāni (śivirāṇi)* вероятно вал
+[MBH. 5,5202.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5202) = [≈Вульг. 5.156.4](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U07_A156_S004) = ≈крит. 05,153.4a *āsana˚* (следовало бы поместить при *āsana* под 1, a) усаживание
+[RAGH. 2,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,6) *paryaṅka˚*
+[KUMĀRAS. 3,45.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,45) [59.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,59)
+[AŚOKĀVAD. 32.] *prāsādavātāyanadṛśyabandhaiḥ — añjalibhiḥ* сложение полых ладоней
+[RAGH. 14,13.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,13) *bahubhrukuṭibandhena vadanena* хмурение бровей
+[RĀJA-TAR. 5,344.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,344) *mallabandhāntara* одна из определ. поз борцов
+[MED. p. 17.](https://sanskrit-lexicon-scans.github.io/medini/app1?p,17) *mahābandha, mūlabandha* и *bandha* определ. положений рук и ног
+[Verz. d. Oxf. H. 235,a,21. fg.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?235) *strīṇāṃ, rata˚, surata˚, strī˚* и *bandha* allein соединение (тел), поза при совокуплении
+[TRIK. 3,3,121.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,121)
+[H. an. 2,5.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,5) [355.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,355) [3,484.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,484)
+[MED. k. 21.](https://sanskrit-lexicon-scans.github.io/medini/app1?k,21) [CAURAP. 48.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?48) их насчитывается
+[16], [18.] и также
+[36]
+[RATIM.] и [SMARADĪP.] в [ŚKDR.] [Verz. d. Oxf. H. 85,b,48.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?85) *kathā˚* завязка повествования, так преим. введение
+[MBH. 1,59](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.59) = [≈Вульг. 1.1.105](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S105) = ≈крит. 01,1.63c в подпись
+
+**4)** — 4) направление, устремление: *deśe nābhicakranāsāgrādau cittasya bandhaḥ*
+[Verz. d. Oxf. H. 236,b, N.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?236)
+
+**5)** — 5) связь, общение: *ata eva santo nīcabandhaṃ varjayanti*
+[PAÑCAT. 60,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?60,19)
+
+**6)** — 6) в филос. связанность (в противоп. — антоним *mukti, mokṣa* освобождению)
+[ŚVETĀŚV. UP. 6,16.] [KAP. 1,56. 87. 156. 3,24.] [BHAG. 18,30.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,30) [SĀṂKHYAK. 44.] [NĪLAK. 10. 15. 19. 63.] [VṚDDHA-CĀṆ. 13,12.] [Verz. d. Oxf. H. 228,a, N.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?228) [BHĀG. P. 4,30,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,30,19) [MĀRK. P. 29,1.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,1) [95,3.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?95,3) [6.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?95,6) [15.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?95,15) [17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?95,17) в Самкхйа бывает троякой: *prakṛti˚, vaikārika˚, dakṣiṇā˚*
+[TATTVAS. 46.] ср. *karmabandha*
+[BHAG. 2,39.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,39) *janma˚*
+[51.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,51)
+  — ＋ PW — 6〉 удерживать кого-либо [NAIṢ. 6,107].
+
+**7)** — 7) обретение, проявление, выражение: *adehabandhāya* чтобы более не принимать тела
+[RAGH. 18,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,6) *bhūyastanutyajāṃ nāsti śarīrabandhaḥ*
+[13,58.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,58) *dehabandhānamānuṣān* вероятно наделенный телом (т.е. = *dehabaddha)*
+[HARIV. 9030.](https://sanskrit-lexicon-scans.github.io/hariv?9030) *rāgabandha* так преим. привязанность
+[MĀLAV. 29.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?29)
+[RAGH. 18,51.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?18,51) *abhilāṣa˚*
+[6,81.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,81) *lalitavibhramabandhavicakṣaṇa*
+[9,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,35)
+  — ＋ PW — 7〉 отстранять кого-либо от себя, держать на расстоянии от себя. *˚baddha* так преим. с кем не хотят иметь ничего общего.
+
+**8)** — 8) узы, оковы
+[H. an. 2,242.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,242)
+[MED. dh. 9.](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,9) [ṚV. 8,40,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.040.html#rv08.040.08) [56,18.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.056.html#rv08.056.18) *patirbandheṣu badhyate*
+[10,85,28.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.28) [AV. 10,5,44.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.005.html#av10.005.44) *ayasmaya*
+[VS. 12,63.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,63) [64.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?12,64) *prāśātpaśuṃ pra muñcata bandhādyajñapatiṃ pari*
+[TS. 3,1,4,4.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?3,1,4,4) [7,5,9,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,9,2) *deva˚* там же
+[KAUŚ. 39.] *bandhapāśāḥ*
+[AV. 6,84,3](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.084.html#av06.084.03) ([5,14,10](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.014.html#av05.014.10) вероятно следует читать *bandhum*).
+[HIT. 21,20.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,20) *bandhe sraṃsini* (волос)
+[ŚĀK. 29.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?29) *mohādibhiśca sa eva bandhaḥ sudṛḍhatāṃ nītaḥ*
+[PRAB. 13,7.] *mātā gāḍhaṃ nibadhnāti bandhaṃ devī nikṛntati*
+[106,9.] *nīvībandhocchvasitaśithila (vāsas)*
+[MEGH. 69.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?69) *viśrāmaṃ labhatāmidaṃ ca śithilajyābandhamasmaddhanuḥ*
+[ŚĀK. 39](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?39) (ср. *jyāpāśa)*.* babandhustaṃ rajjubandhena*
+[VID. 232.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?232) *dṛṣṭvā bandhānsvataścyutān*
+[KATHĀS. 37,49.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,49) *bandhānmuktaḥ*
+[RĀJA-TAR. 3,122.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,122) *dharmabandhena baddho 'smi*
+[R. 2,106,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,106,8) *satya˚* _adj._ тот, для кого истина является оковами, кто держится истины
+[MBH. 1,6779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6779) = [≈Вульг. 1.176.21](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U11_A176_S021) = ≈крит. 01,166.17c
+  — ＋ PW — 8〉 *pratibaddha* запутанный, трудно разрешимый.
+
+**9)** — 9) сухожилие (в теле): *pīvaraśca suvarṇaśca dṛḍhabandhaśca jāyate (mārjāraḥ)*
+[MBH. 5,5437.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5437) = [≈Вульг. 5.160.113](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U08_A160_S113) = ≈крит. 05,158.30c
+
+**10)** — 10) оправа, вместилище: *ādhārastvambhasāṃ bandhaḥ*
+[H. 1096.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1096)
+
+**11)** — 11) залог или точнее закладывание (ср. *bandhaka)*
+[H. an.] [MED.]
+
+**13)** — 13) следствие: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* так преим. то, что приносит благо
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A066_S021) = ≈крит. 04,61.21c
+
+**14)** — 14) в рит. звуковое устроение, словесное устроение
+[KĀVYĀD. 1,47.] *˚pāruṣya*
+[PRATĀPAR. 11,a,9.] [Verz. d. Oxf. H. 207,a,28.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?207) [DHŪRTAS. 68,12.] *kāvya˚* поэтическое произведение
+[SĀH. D. 6,12.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?6,12) *mṛdaṅgādidhvānabandha* строй звуков, музыка
+[ŚATR. 10,127.]
+
+**15)** — 15) болезнь, при которой веки не могут полностью сомкнуться (полностью *vartmabandha)*
+[SUŚR. 2,309,1.]
+
+**16)** — 16) в сочетании с числительными часть, доля: *daśa˚* одна десятая
+[M. 8,107.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,107) *pañca˚* (u. *pañcabandha* не вполне объяснено)
+[YĀJÑ. 2,171.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,171) ср. *guṇa* 1,b.
+
+**Kaus./caus. tail (T123))** — ср. *saṃbandha* и т.д. — caus. велеть привязать: *paśuṃ raktāmbaraṃ kṛtvā yūpe taṃ samabandhayat*
+[R. 1,62,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,24) велеть связать; говорить, что нужно связать: *kecittu tatspṛṣṭinamiti cāṇḍālodakyādibhiḥ sarvaiḥ saṃbandhayanti*
+[KULL.] к [M. 5,85.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,85)
+
+**cross-ref)** — ср. *nirbandha* сл.
 
-**cross-ref)** <div n="v">— <ab>Vgl.</ab> {#nirbanDa#} <ab>fgg.</ab>
+**etym)** — *upasam* привязывать: *vetasaśākhopasaṃbaddhā bhavati*
+[TBR. 3,8,4,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,8,4,3) *bandha* (от *bandh)* _m._ гана *uñchādi (karaṇe* т.е. в знач. связь, лента) к [P. 6,1,160.](https://ashtadhyayi.com/sutraani/6/1/160)
 
-**etym)** <div n="p">— {#upasam#} {%привязывать%}: {#ve\ta\sa\SA\Kopa\saMba^dDA Bavati#}
-<ls>TBR. 3,8,4,3.</ls> {#banDa/#} (от {#banD)#} <lex>m.</lex> <is>gaṇa</is> {#uYCAdi (karaRe#} <ab>d. i.</ab> в знач. <ab>Bed.</ab> {%связь, лента)%} к <ls>P. 6,1,160.</ls>
+**header)** *bandh*, *badhnāti*
+[DHĀTUP. 31,37.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=31) imperat. *badhāna, nibadhnīhi*
+[BHĀG. P. 8,24,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36); *pratyabandhat*
+[HARIV. 3449](https://sanskrit-lexicon-scans.github.io/hariv?3449); *babandha, (ā) bedhus* ved.; *bedhiṣe* 2. pers.: *bhantsyati* (ошибочно *batsyati, va˚*
+[RĀJA-TAR. 6,269](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,269)) Кар. 4 из
+[SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *bandhiṣyati*
+[HARIV. 14323.](https://sanskrit-lexicon-scans.github.io/hariv?14323) *bandhiṣye*
+[MBH. 3,10727](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10727) = [≈Вульг. 3.134.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A134_S024) = ≈крит. 03,134.24a; *banddhum* (местами ошибочно *baddhum), bandhitum*
+[R. 2,18,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,18,23); *baddhvā*; pass. *badhyateḥ* partic. praet. *baddha* .
 
-**header)** {#banD#}¦, {#baDnAti#}
-<ls>DHĀTUP. 31,37.</ls> <ab>imperat.</ab> {#baDAna/, nibaDnIhi#}
-<ls>BHĀG. P. 8,24,36</ls>; {#pratyabanDat#}
-<ls>HARIV. 3449</ls>; {#babanDa, (A) beDu/s#} <ab>ved.</ab>; {#beDize#} 2. <ab>pers.</ab>: {#Bantsya/ti#} (ошибочно {#batsyati, va˚#}
-<ls>RĀJA-TAR. 6,269</ls>) <is>Kār.</is> 4 из
-<ls>SIDDH. K.</ls> к <ls>P. 7,2,10.</ls> {#banDizyati#}
-<ls>HARIV. 14323.</ls> {#banDizye#}
-<ls>MBH. 3,10727</ls>; {#bandDum#} (местами ошибочно {#badDum), banDitum#}
-<ls>R. 2,18,23</ls>; {#badDvA/#}; <ab>pass.</ab> {#baDyateH#} <ab>partic.</ab> <ab>praet.</ab> {#badDa#} .
+**root-head-part3)** [RĀJA-TAR. 3,126.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,126) *baddhamauna* так преим. соблюдающий молчание
+[HARIV. 8170.](https://sanskrit-lexicon-scans.github.io/hariv?8170)
+[RAGH. 13,23.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,23) *baddhapratiśrunti guhāmukhāni*
+[16,31.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,31) *yāminyeṣā bahulajaladairbaddhabhīmāndhakārā*
+[Spr. 2475.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2475)
+[KATHĀS. 46,207.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,207) *drumeṣu phalaṃ svayaṃ baddham* обнаружилось само собой
+[KUMĀRAS. 5,60.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,60) *baddhaṃ vadane gharmāmbhasāṃ jālakam* установилось, наличествует
+[ŚĀK. 29.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?29) *baddha* при начало _adj._ compp. часто (см. выше) имеет значение, сходное с *jāta*. * subaddha* при схол. к [JAIM. 1,32]
+по-видимому, означает вполне уместный, хорошо подходящий.
 
-**root-head-part3)** <ls>RĀJA-TAR. 3,126.</ls> {#badDamOna#} так <ab>v. a.</ab> {%соблюдающий молчание%}
-<ls>HARIV. 8170.</ls>
-<ls>RAGH. 13,23.</ls> {#badDapratiSrunti guhAmuKAni#}
-<ls n="RAGH.">16,31.</ls> {#yAminyezA bahulajaladErbadDaBImAnDakArA#}
-<ls>Spr. 2475.</ls>
-<ls>KATHĀS. 46,207.</ls> {#drumezu PalaM svayaM badDam#} {%обнаружилось само собой%}
-<ls>KUMĀRAS. 5,60.</ls> {#badDaM vadane GarmAmBasAM jAlakam#} {%установилось, наличествует%}
-<ls>ŚĀK. 29.</ls> {#badDa#} при <ab>Anf.</ab> <lex>adj.</lex> <ab>compp.</ab> часто (<ab>s.</ab> выше) имеет значение, сходное с {#jAta#}. {# subadDa#} при <ab>Schol.</ab> к <ls>JAIM. 1,32</ls>
-по-видимому, означает {%вполне уместный, хорошо подходящий%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *upabandha* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#upabanDa#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *saṃnibandha* и т.д.
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#saMnibanDa#} <ab>u. s. w.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *prabaddhar* сл.
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-1 (T97)› <div n="v">— <ab>Vgl.</ab> {#prabadDar#} <ab>fgg.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] —
+ 1) *prati* привязывать: *vṛkṣe nāvaṃ pratibadhnīṣva* привяжи свой корабль к дереву
+[ŚAT. BR. 1,8,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,8,1,6) *anyanaupratibaddhām (nāvam)*
+[KĀM. NĪTIS. 7,33.] *dāmnā caivodare baddhvā pratyabandhadulūkhale*
+[HARIV. 3449.](https://sanskrit-lexicon-scans.github.io/hariv?3449) *śirasyetaṃ maṇiṃ rājā pratibadhnātu*
+[MBH. 10,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.756) = [≈Вульг. 10.16.34](https://sanatana.in/mahabharata/listing/parva/sauptikaparva?id=P10_U02_A016_S034) = ≈крит. 10,16.33a *pītapratibaddhavatsā*
+[RAGH. 2,1.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,1)
+[SUŚR. 1,161,21.] *sthūlāntrapratibaddha* прикрепленный к, висящий на
+[258,10. 324,3.] вставлять в оправу: *yadi maṇistrapuṇi pratibadhyate*
+[Spr. 595.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?595) украшать, отделывать: *bahalānurāgakuruvindadalapratibaddhamadhyamiva digvalayam*
+[ŚIŚ. 9,8.] *pratibaddha* связанный, соединенный
+[KAP. 1,101.] *yo yena pratibaddhaḥ syāt*
+[Spr. 2560.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2560) снабженный, наделенный: *dīptāṅgadayugapratibaddhamahābhuja*
+[MBH. 11,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.711) = [≈Вульг. 11.25.6](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U02_A025_S006) = ≈крит. 11,25.6a *dharmārthapratibaddhatā*
+[H. 69.](https://sanskrit-lexicon-scans.github.io/abch2/app1?69) *paśuvatparatantratvena pratibaddhaḥ* так: зависимый
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 253.] *mṛtyu˚* подверженный смерти
+[98.] *rasāntareṣu pratibaddharāgam* так: созвучный, гармонирующий
+[KUMĀRAS. 7,91.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,91)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-1a (T98–T99-1) anbinden› <div n="p">—
-<div n="1"> 1) {#prati#} привязывать: {#vfkze nAvaM pratibaDnIzva#} привяжи свой корабль к дереву
-<ls>ŚAT. BR. 1,8,1,6.</ls> {#anyanOpratibadDAm (nAvam)#}
-<ls>KĀM. NĪTIS. 7,33.</ls> {#dAmnA cEvodare badDvA pratyabanDadulUKale#}
-<ls>HARIV. 3449.</ls> {#SirasyetaM maRiM rAjA pratibaDnAtu#}
-<ls>MBH. 10,756.</ls> {#pItapratibadDavatsA#}
-<ls>RAGH. 2,1.</ls>
-<ls>SUŚR. 1,161,21.</ls> {#sTUlAntrapratibadDa#} прикрепленный к, висящий на
-<ls n="SUŚR.">258,10. 324,3.</ls> вставлять в оправу: {#yadi maRistrapuRi pratibaDyate#}
-<ls>Spr. 595.</ls> украшать, отделывать: {#bahalAnurAgakuruvindadalapratibadDamaDyamiva digvalayam#}
-<ls>ŚIŚ. 9,8.</ls> {#pratibadDa#} связанный, соединенный
-<ls>KAP. 1,101.</ls> {#yo yena pratibadDaH syAt#}
-<ls>Spr. 2560.</ls> снабженный, наделенный: {#dIptANgadayugapratibadDamahABuja#}
-<ls>MBH. 11,711.</ls> {#DarmArTapratibadDatA#}
-<ls>H. 69.</ls> {#paSuvatparatantratvena pratibadDaH#} так: зависимый
-<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 253.</ls> {#mftyu˚#} подверженный смерти
-<ls n="BṚH. ĀR. UP. S.">98.</ls> {#rasAntarezu pratibadDarAgam#} так: созвучный, гармонирующий
-<ls>KUMĀRAS. 7,91.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2) устремлять, направлять: *mamedaṃ syāditi hi sarveṣāṃ tatrāśā pratibaddhā*
+[ŚAṂK.] к [BṚH. ĀR. UP. S. 270.] *svāmino yasyoparyāsthā pratibaddhā*
+[PAÑCAT. ed. orn. 60,24.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?60,24) *āśāpratibaddhacitta*
+[31,6.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?31,6)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-2a (T100) heften, richten› <div n="1">— 2) {%устремлять, направлять%}: {#mamedaM syAditi hi sarvezAM tatrASA pratibadDA#}
-<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 270.</ls> {#svAmino yasyoparyAsTA pratibadDA#}
-<ls>PAÑCAT. ed. orn. 60,24.</ls> {#ASApratibadDacitta#}
-<ls n="PAÑCAT. ed. orn.">31,6.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3) закрывать, отрезать: *pratibadhnāti hi śreyaḥ pūjyapūjāvyatikramaḥ*
+[RAGH. 1,79.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,79) *asya svargaprāptiranena duṣkṛtena pratibadhyate*
+[KULL.] к [M. 9,254.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,254) *pratibaddhaprasara*
+[MALLIN.] к [KUMĀRAS. 3,12.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,12)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-3a (T101) verschliessen, abschneiden› <div n="1">— 3) {%закрывать, отрезать%}: {#pratibaDnAti hi SreyaH pUjyapUjAvyatikramaH#}
-<ls>RAGH. 1,79.</ls> {#asya svargaprAptiranena duzkftena pratibaDyate#}
-<ls>KULL.</ls> к <ls>M. 9,254.</ls> {#pratibadDaprasara#}
-<ls>MALLIN.</ls> к <ls>KUMĀRAS. 3,12.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4) отталкивать кого-л. от себя, держать кого-л. вдали от себя: *pratyabadhnāccārthapatim*
+[DAŚAK.] в [BENF. Chr. 190,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?190) *paraiḥ pratibadhyamāno 'pi*
+[DURGA] к [NIR.] при [MUIR, ST. 2,184.] *pratibaddhāstu bāhīkāḥ* так: с B. не желают иметь ничего общего
+[MBH. 8,2108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2108) = [≈Вульг. 8.45.38](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S038) = ≈крит. 08,30.74c *pratibaddha = manohata, pratihata, hata*
+[AK. 3,1,41.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,1,41)
+[H. 439.](https://sanskrit-lexicon-scans.github.io/abch2/app1?439)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-4a (T102) von sich weisen› <div n="1">— 4) отталкивать кого-л. от себя, держать кого-л. вдали от себя: {#pratyabaDnAccArTapatim#}
-<ls>DAŚAK.</ls> в <ls>BENF. Chr. 190,6.</ls> {#parEH pratibaDyamAno 'pi#}
-<ls>DURGA</ls> к <ls>NIR.</ls> при <ls>MUIR, ST. 2,184.</ls> {#pratibadDAstu bAhIkAH#} так: с B. не желают иметь ничего общего
-<ls>MBH. 8,2108.</ls> {#pratibadDa = manohata, pratihata^, hata#}
-<ls>AK. 3,1,41.</ls>
-<ls>H. 439.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5) *pratibaddha* запутанный, трудно разрешимый
+[VARĀH. BṚH. S. 2,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?2,1)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-5a (T103) verwickelt› <div n="1">— 5) {#pratibadDa#} {%запутанный, трудно разрешимый%}
-<ls>VARĀH. BṚH. S. 2,1.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *pratibadhya (pratibandhya)* сл.
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag tail (T104)› <div n="v">— <ab>Vgl.</ab> {#pratibaDya (pratibanDya)#} <ab>fgg.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *vibandha* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag (T26)› <div n="v">— <ab>Vgl.</ab> {#vibanDa#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *abhisaṃbandha* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag (T29)› <div n="v">— <ab>Vgl.</ab> {#aBisaMbanDa#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *aṅka˚, artha˚* (также
+[VIKR. 32](https://sanskrit-lexicon-scans.github.io/vikramor/app1?32)), *ka˚, kari˚, ku˚, kūṭa˚, keśa˚, dakṣiṇā˚, paṇa˚* (также
+[DAŚAK.] в [BENF. Chr. 183,20.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?183) [BENF. Chr. 191,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191)), *pattra˚, padma˚, paśu˚, pāṇi˚, pāda˚, prema˚, premā˚, maṇi˚, rajju˚, roma˚, vatsa˚, vastra˚, vātsa˚, veṇī˚, śreṇī˚* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr› <div n="v">— <ab>Vgl.</ab> {#aNka˚, arTa˚#} (также
-<ls>VIKR. 32</ls>), {#ka˚, kari˚, ku˚, kUwa˚, keSa˚, dakziRA˚, paRa˚#} (также
-<ls>DAŚAK.</ls> в <ls>BENF. Chr. 183,20. 191,16</ls>), {#pattra˚, padma˚, paSu˚, pARi˚, pAda˚, prema˚, premA˚, maRi˚, rajju˚, roma˚, vatsa˚, vastra˚, vAtsa˚, veRI˚, SreRI˚#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi*
+— 1〉 привязывать с разных сторон; распрягать, натягивать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#}
-<div n="1">— 1〉 {%привязывать с разных сторон; распрягать, натягивать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 захватывать веревками (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%захватывать%} веревками (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 приводить в застой. *purīṣam* [CARAKA. 5,10]. *vibaddha* приходить в застой, закупориваться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%приводить в застой%}. {#purIzam#} <ls>CARAKA. 5,10</ls>. {#vibadDa#} {%приходить в застой, закупориваться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 *vibadhnanti* [MÜLLER, SL. 178] ошибочно вм. *niba˚*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {#vibaDnanti#} <ls>MÜLLER, SL. 178</ls> ошибочно вм. {#niba˚#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam*
+— 1〉 связывать вместе, соединять, привязывать. Pass. соединяться, слипаться, быть связанным с, так преим. принадлежать к (Ins. [224,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?224)), быть подразумеваемым в (Loc.). *saṃbaddha* связанный вместе; закрытый; связанный с (Ins. или в Comp. предшествующий [223,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?223)), покрытый (Ins.), наполненный (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), находящийся в связи с (в Comp. предшествующий), связанный с (в Comp. предшествующий), так преим. содержащий; связанный, так преим. находящийся здесь, наличный, пребывающий. *saṃbaddham* _Adv._ сверх того, к тому же.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
-<div n="1">— 1〉 {%связывать вместе, соединять, привязывать%}. <ab>Pass.</ab> {%соединяться, слипаться, быть связанным с,%} так <ab>v. a.</ab> {%принадлежать к%} (<ab>Instr.</ab> <ls n="Chr.">224,17</ls>), {%быть подразумеваемым в%} (<ab>Loc.</ab>). {#saMbadDa#} {%связанный вместе; закрытый; связанный с%} (<ab>Instr.</ab> или в <ab>Comp.</ab> предшествующий <ls n="Chr.">223,17</ls>), {%покрытый%} (<ab>Instr.</ab>), {%наполненный%} (в <ab>Comp.</ab> предшествующий), {%находящийся в связи с%} (в <ab>Comp.</ab> предшествующий), {%связанный с%} (в <ab>Comp.</ab> предшествующий), {%находящийся в связи с%} (в <ab>Comp.</ab> предшествующий), {%связанный с%} (в <ab>Comp.</ab> предшествующий), так <ab>v. a.</ab> {%содержащий; связанный,%} так <ab>v. a.</ab> {%находящийся здесь, наличный, пребывающий%}. {#saMbadDam#} <lex>Adv.</lex> {%сверх того, к тому же%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 добывать, доставлять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%добывать, доставлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus.
+— 1〉 велеть привязывать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
-<div n="1">— 1〉 {%велеть привязывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 велеть соединять с (Ins.) так преим. говорить, что нужно соединить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%велеть соединять [Page4-208-a] с%} (<ab>Instr.</ab>) так <ab>v. a.</ab> {%говорить, что нужно соединить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anusam*. *anusaṃbaddha* связанный с, сопровождаемый (в Comp. предшествующий).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">С {#anusam#}. {#anusaMbadDa#} {%связанный с, сопровождаемый%} (в <ab>Comp.</ab> предшествующий).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhisam* соединять с чем-либо, так преим. подразумевать под этим. Pass. быть соединенным с, так преим. принадлежать к (Ins.). *pratyekam* принадлежать к каждому, — быть подразумеваемым [225,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?225). [234,29](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?234).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBisam#} {%соединять с чем-либо,%} так <ab>v. a.</ab> {%подразумевать под этим%}. <ab>Pass.</ab> {%быть соединенным с,%} так <ab>v. a.</ab> {%принадлежать к%} (<ab>Instr.</ab>). {#pratyekam#} {%принадлежать к каждому, — быть подразумеваемым%} <ls n="Chr.">225,22</ls>. <ls n="Chr.">234,29</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upasam*, *uapasaṃddha* привязанный к тому.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upasam#}, {#uapasa/MdDa#} {%привязанный к тому%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratisam*, *pratisaṃbaddha* связанный вместе, находящийся во взаимосвязи [CARAKA. 3,8].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratisam#}, {#pratisaMbadDa#} {%связанный вместе, находящийся во взаимосвязи%} <ls>CARAKA. 3,8</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] √*bandh* IV. *bandha* 2-я Imper. [R. Бомбейская ред. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 
-**+)** [PW·restate → не привязано: цель не указана] √{#banD#}¦ IV. {#banDa#} 2-я <ab>Imper.</ab> <ls>R. ed. Bomb. 3,56,21</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* Med. вешаться (самоповешение) [R. Бомбейская ред. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} <ab>Med.</ab> {%вешаться (самоповешение)%} <ls>R. ed. Bomb. 3,45,36</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. то же [17,17].
 
-**+)** [PW·restate → не привязано: цель не указана] — С {#vini#} IV. {%оковывать, связывать%} <ls>JĀTAKAM. 31</ls>. — <ab>Caus.</ab> <ab>dass.</ab> <ls n="JĀTAKAM.">17,17</ls>.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *bandh* IV. *bandha* 2-я Imper. [R. Бомбейская ред. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21).
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] {#banD#}¦ IV. {#banDa#} 2-я <ab>Imper.</ab> <ls>R. ed. Bomb. 3,56,21</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* Med. вешаться (самоповешение) [R. Бомбейская ред. 3,45,36](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36).
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] — С {#A#} <ab>Med.</ab> {%вешаться (самоповешение)%} <ls>R. ed. Bomb. 3,45,36</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vini* IV. оковывать, связывать [JĀTAKAM. 31]. — Caus. то же [17,17].
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] — С {#vini#} IV. {%оковывать, связывать%} <ls>JĀTAKAM. 31</ls>. — <ab>Caus.</ab> <ab>dass.</ab> <ls n="JĀTAKAM.">17,17</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] bandh [R. Бомбейская ред. 3,56,21](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,56,21) bandha 2. Imper.
 
-**+)** [SCH·sch_star → не привязано: цель не указана] {%bandh%}¦ <ls>R. ed. Bomb. 3,56,21</ls> {%bandha%} 2. Imper.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С ā [Med.] вешаться, [R. Бомбейская ред. 3,45,36.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?3,45,36)
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%ā%} <ls>Med.</ls> {%вешаться%}, <ls>R. ed. Bomb. 3,45,36.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С vini оковывать, связывать, [Jātakam. 31.]
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%vini%} {%оковывать, связывать%}, <ls>Jātakam. 31.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — [Kaus.] то же, 17,17.
 
-**+)** [SCH·sch_star → не привязано: цель не указана] — <ls>Kaus.</ls> то же, 17,17.
+## омоним h2
 
-## h2
+**NW17-3)** 3) *rāgī badhnāti karmāṇi (kāryāṇi* предполагается) так преим. упускает, не делает
+[Spr. (II) 5732.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5732 "Spr. (II) 5732: rāgī badhnāti kāryāṇi nindyaṃ karma karoti ca | bhogasyākāṅkṣapā tasmādihāmutra sa duḥkhabhāk || — Ein in der Gewalt der Leidenschaft Stehender unterlässt aus Genusssucht das, was er thun sollte, und begeht eine tadelnswerthe Handlung")
 
-**NW17-3)** <div n="1"> 3) {#rAgI baDnAti karmARi (kAryARi#} предполагается) так <ab>v. a.</ab> {%упускает, не делает%}
-<ls>Spr. (II) 5732.</ls>
+**NW18)** — *anu* pass. следовать, происходить
+[PAT. a. a. O. 1,222,a.]
 
-**NW18)** <div n="p">— {#anu#} <ab>pass.</ab> {%следовать, происходить%}
-<ls>PAT. a. a. O. 1,222,a.</ls>
+**NW19)** — *ud*
 
-**NW19)** <div n="p">— {#ud#}
+**NW20-1)** 1) *vaṭavṛkṣa ātmānamudbadhya* вешаться
+[PAÑCAT. 135,3](https://sanskrit-lexicon-scans.github.io/pantankose/app2?135,3), v. l.
 
-**NW20-1)** <div n="1"> 1) {#vawavfkza AtmAnamudbaDya#} {%вешаться%}
-<ls>PAÑCAT. 135,3</ls>, <ab>v. l.</ab>
+**NW21)** — *ni*
 
-**NW21)** <div n="p">— {#ni#}
+**NW22-2)** 2) partic. *nibaddha* состоящий из многих предложений или строф, *a˚* состоящий лишь из одного предложения или одной строфы
+[VĀMANA 1,3,28. 30.]
 
-**NW22-2)** <div n="1"> 2) <ab>partic.</ab> {#nibadDa#} {%состоящий из многих предложений%} или {%строф%}, {#a˚#} {%состоящий лишь из одного предложения%} или {%одной строфы%}
-<ls>VĀMANA 1,3,28. 30.</ls>
+**head)** *bandh*
 
-**head)** {#banD#}¦
+## омоним h1
 
-## h1
+**NW56-1)** 1) *vāgbaddha* связанный в речи, т.е. преим. безмолвный, ничего не говорящий
+[KATHĀS. 124,159](https://sanskrit-lexicon-scans.github.io/kss/index.html?124,159); ср. *vāgyata* .
 
-**NW56-1)** <div n="1"> 1) {#vAgbadDa#} {%связанный в речи%}, т.е. <ab>v. a.</ab> {%безмолвный, ничего не говорящий%}
-<ls>KATHĀS. 124,159</ls>; <ab>vgl.</ab> {#vAgyata#} .
+**NW57-2)** — 2)
+[Sp. 8, Z. 28. fgg.] *chandobaddha* составленный в метре
+[SARVADARŚANAS. 169,19.] — caus.
 
-**NW57-2)** <div n="1">— 2)
-<ls>Sp. 8, Z. 28. fgg.</ls> {#CandobadDa#} {%составленный в метре%}
-<ls>SARVADARŚANAS. 169,19.</ls> — <ab>caus.</ab>
+**NW58-1)** 1)
+[KATHĀS. 77,77.](https://sanskrit-lexicon-scans.github.io/kss/index.html?77,77)
 
-**NW58-1)** <div n="1"> 1)
-<ls>KATHĀS. 77,77.</ls>
+**NW59)** — *anu*
 
-**NW59)** <div n="p">— {#anu#}
+**NW60-1)** 1) сковывать в перен. знач.
+[BHĀG. P. 10,47,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,47,42)
 
-**NW60-1)** <div n="1"> 1) {%сковывать%} в <ab>übertr.</ab> <ab>Bed.</ab>
-<ls>BHĀG. P. 10,47,42.</ls>
+**NW61-6)** — 6) продолжаться, продолжать свое действие
+[UTTARARĀMAC. 64,10], где по новейшему изд.
+([82,12]) следует читать *vipralambhaḥ*; по коммент. *anubadhnāti = mohayati* .
 
-**NW61-6)** <div n="1">— 6) {%продолжаться, продолжать свое действие%}
-<ls>UTTARARĀMAC. 64,10</ls>, где по новейшему <ab>Ausg.</ab>
-(<ls n="UTTARARĀMAC.">82,12</ls>) следует читать {#vipralamBaH#}; по <ab>Comm.</ab> {#anubaDnAti = mohayati#} .
+**NW62)** — *ā*
 
-**NW62)** <div n="p">— {#A#}
+**NW63-1)** 1) (следует добавить в начале)
+[KATHĀS. 72,279.](https://sanskrit-lexicon-scans.github.io/kss/index.html?72,279)
 
-**NW63-1)** <div n="1"> 1) (следует добавить в начале)
-<ls>KATHĀS. 72,279.</ls>
+**NW64-2)** — 2) *anyo'nyābaddhabāhavaḥ*
+[BHĀG. P. 10,22,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,6) — Вм. *kṛtvābaddhaiḥ śilābandhaiḥ*
+[RĀJA-TAR. 5,92](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,92) следует по [ed. Calc.] писать *kṛtvā baddhaiḥ śi˚*.
 
-**NW64-2)** <div n="1">— 2) {#anyo'nyAbadDabAhavaH#}
-<ls>BHĀG. P. 10,22,6.</ls> — Вм. {#kftvAbadDEH SilAbanDEH#}
-<ls>RĀJA-TAR. 5,92</ls> следует по <ls>ed. Calc.</ls> писать {#kftvA badDEH Si˚#}.
+**NW65)** — *ud*
 
-**NW65)** <div n="p">— {#ud#}
+**NW66-1)** 1) *udbadhyātmānaṃ pāśena* вешающийся
+[KATHĀS. 74,163.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,163)
 
-**NW66-1)** <div n="1"> 1) {#udbaDyAtmAnaM pASena#} {%вешающийся%}
-<ls>KATHĀS. 74,163.</ls>
+**NW67-3)** — 3) приостанавливать, задерживать, прекращать: *udbaddhavaira*
+[BHĀG. P. 10,85,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,85,43)
 
-**NW67-3)** <div n="1">— 3) {%приостанавливать, задерживать, прекращать%}: {#udbadDavEra#}
-<ls>BHĀG. P. 10,85,43.</ls>
+**NW68)** — *ni*
 
-**NW68)** <div n="p">— {#ni#}
+**NW69-2)** 2)
+[Sp. 12, Z. 8. fg.] *andhakāranīrandhranibaddha*
+[UTTARARĀMAC. 105,10 (143,2).] *yasya hāsaḥ sa cetkvāpi sākṣānnaiva nibadhyate* так преим. представляется
+[SĀH. D. 229.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?229) *atra ṭakārāḥ — kevalaṃ śaktipradarśanāya nibaddhāḥ* так преим. применяется, используется
+[219,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?219,15)
 
-**NW69-2)** <div n="1"> 2)
-<ls>Sp. 12, Z. 8. fg.</ls> {#anDakAranIranDranibadDa#}
-<ls>UTTARARĀMAC. 105,10 (143,2).</ls> {#yasya hAsaH sa cetkvApi sAkzAnnEva nibaDyate#} так <ab>v. a.</ab> {%представляется%}
-<ls>SĀH. D. 229.</ls> {#atra wakArAH — kevalaM SaktipradarSanAya nibadDAH#} так <ab>v. a.</ab> {%применяется, используется%}
-<ls n="SĀH. D.">219,15.</ls>
+**NW70)** — *upani*, ˚*baddha* составленный
+[UTTARARĀMAC. 120,7 (162,13).]
 
-**NW70)** <div n="p">— {#upani#}, ˚{#badDa#} {%составленный%}
-<ls>UTTARARĀMAC. 120,7 (162,13).</ls>
+**NW71)** — ср. *upanibandhana* .
 
-**NW71)** <div n="v">— <ab>Vgl.</ab> {#upanibanDana#} .
+**NW72)** — *pari* caus.: *vṛṣaṇādhaḥ pādapārṣṇiṃ pāṇibhyāṃ paribandhayet*
+[ŚKDR.] u. *āsana* .
 
-**NW72)** <div n="p">— {#pari#} <ab>caus.</ab>: {#vfzaRADaH pAdapArzRiM pARiByAM paribanDayet#}
-<ls>ŚKDR.</ls> <ab>u.</ab> {#Asana#} .
-
-**head)** {#banD#}¦
+**head)** *bandh*

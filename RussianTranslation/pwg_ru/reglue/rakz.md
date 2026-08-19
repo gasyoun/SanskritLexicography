@@ -1,268 +1,270 @@
-# Re-glue — rakz
-
-## h0
-
-**1)** <div n="p">— {#prati#}
-<div n="1"> 1) {%беречь, защищать%}: {#yadi SUrastaTA kzeme#} ({#kzemaM#} <ls>ed. Bomb.</ls>) {#pratirakzedyaTA Baye#}
-<ls>MBH. 12,3596.</ls> {#viSvA\ ASA\H prati^ rakza\ntyeke^#}
-<ls>AV. 10,8,36.</ls> {#satyAM#} (так <ls>ed. Bomb.</ls>) {#pratijYAM tAM pArTena pratirakzatA#} {%верно соблюдая%}
-<ls>MBH. 8,3542.</ls>
-
-**2)** <div n="1">— 2) {%бояться, спасаться от%}: {#pra\ti\rakza^nnasu\rya^m#}
-<ls>VS. 8,24.</ls>
-
-**abhi+rakṣ)** <div n="p">— {#aBi#} {%хранить, опекать, защищать%}
-<ls>ṚV. 1,136,5.</ls> <ls n="ṚV. 1,">163,5.</ls> <ls n="ṚV.">4,53,5.</ls> {#yamA^dityA a\Bi dru\ho rakza^Ta#}
-<ls n="ṚV.">8,47,1.</ls> <ls n="ṚV.">9,114,3.</ls> <ls n="ṚV.">10,86,4.</ls> <ls n="ṚV. 10,">157,4.</ls> <ls>AV. 10,6,12.</ls> <ls n="AV. 10,">7,23.</ls> <ls n="AV.">12,3,11.</ls> {#pi\teva^ pu\trAna\Bi ra^kzatAdimam#}
-<ls n="AV.">2,13,1.</ls> <ls n="AV.">3,12,8.</ls> <ls>ŚAT. BR. 2,3,4,40.</ls> <ls>ĀŚV. ŚR. 2,5,2. 12.</ls> <ls>KAUŚ. 135.</ls> <ls>CHĀND. UP. 4,17,10.</ls> {#BIzmamevABirakzantu#}
-<ls>BHAG. 1,11.</ls> {#daRqaH SAsti prajAH sarvA daRqa evABirakzati#}
-<ls>Spr. 4162.</ls> <ls n="Spr.">4920.</ls>
-<ls>MBH. 4,1535.</ls> <ls n="MBH.">5,711.</ls> <ls n="MBH.">6,543.</ls>
-<ls>HARIV. 2471.</ls> <ls n="HARIV.">7115.</ls>
-<ls>R. 2,25,3. fgg.</ls> {#DAtrI svaputravatskandaM SUlahastAByarakzata#}
-<ls>MBH. 3,14365.</ls> <ls n="MBH.">6,544.</ls> <ls n="MBH.">13,2265.</ls> {#uparyantaHpure sA#} ({#kanyakA#}) {#ca ratnamityaBirakzyate#}
-<ls>KATHĀS. 3,58.</ls> <ls n="KATHĀS.">78,131.</ls> {#balaM BIzmABirakzitam#} и потому <ab>v. a.</ab> {%командовать%}
-<ls>BHAG. 1,10.</ls>
-<ls>MBH. 4,425.</ls>
-<ls>R. 2,2,4.</ls> <ls n="R. 2,">25,6.</ls> <ls n="R. 2,">52,77.</ls>
-<ls>R. GORR. 1,35,30.</ls> <ls n="R. GORR.">2,27,24.</ls> <ls n="R. GORR.">5,43,4.</ls> <ls n="R. GORR. 5,">73,34.</ls> {#aDarmAttvaBirakza mAm#}
-<ls>MBH. 7,2081.</ls> {#evaM bahuByaH SatruByaH prajYayAtmABirakzitaH#}
-<ls>KATHĀS. 33,130.</ls>
-<ls>BHĀG. P. 1,18,24.</ls> {#tAByaH striyo 'BirakzyAH#}
-<ls>VARĀH. BṚH. S. 78,10.</ls> {#yena vIraH kurukzetramaByarakzat#}
-<ls>MBH. 4,161.</ls> {#yaH kftsnAmawavImetAM paryantasTo 'Birakzati#}
-<ls>KATHĀS. 29,135.</ls> <ls n="KATHĀS.">115,10.</ls> {#svagfhaM taM kAlaM so 'Byarakzata#}
-<ls>MBH. 13,2306.</ls>
-<ls>HARIV. 8999.</ls> {#vasuMDarAm — bAhuvIryABirakzitAm#}
-<ls>R. 2,88,18.</ls> {#fzyamUkaH — SiSunAgABirakzitaH#}
-<ls n="R.">3,76,28.</ls> <ls>KATHĀS. 39,28.</ls> {#sattvamindro 'Birakzatu#}
-<ls>SUŚR. 1,17,5.</ls> {#prARA yanme 'BirakzitAH#}
-<ls>BHĀG. P. 9,5,17.</ls> {#ye 'ByarakzanpurAtanIM tasya devasya sfzwim#}
-<ls>MBH. 13,1375.</ls> {#yo graha ivArTamaBirakzati#}
-<ls>BHĀG. P. 5,26,36.</ls> {#eza kalpataruH kasya kfte 'moGo 'Birakzyate#} {%быть опекаемым —, лелеемым%}
-<ls>KATHĀS. 90,21.</ls> {#yaTA bIjANkuraH sUkzmaH paripuzwo 'BirakzitaH#}
-<ls>Spr. 2316.</ls> {#AkAramaBirakzeta#} {%сохрани%}
-<ls>MBH. 1,5616.</ls> <ls n="MBH.">2,2183.</ls> {#AkAramaBirakzantI pratijYAM DarmasaMhitAm#}
-<ls n="MBH.">4,472.</ls> {#vra\tAni^#} {%соблюдать%}
-<ls>ṚV. 4,53,4.</ls> <ls n="ṚV.">7,83,9.</ls> <ls n="ṚV.">9,73,3.</ls>
-<div n="v">— <ab>Vgl.</ab> {#aBirakzitar#} .
-
-**adhi+rakṣ)** <div n="p">— {#aDi#} {%сторожить, опекать%}: {#trElokyaM yo 'Dirakzati#}
-<ls>HARIV. 15811.</ls> лучше {#yo hi rakzati#} более новое чтение <ab>Ausg.</ab>
-
-**anu+rakṣ)** <div n="p">— {#anu#} {%следовать за кем-л., охраняя%}
-<ls>ŚĀṄKH. ŚR. 16,10,11.</ls> {#ke pfzWato 'nvarakzanta#} ({#pfzWataScApyaBavan#} <ls>ed. Bomb.</ls>)
-<ls>MBH. 7,7330.</ls> {%опекать, защищать%}; <ab>med.</ab>
-<ls>R. 6,103,2.</ls>
-
-**ava+rakṣ)** <div n="p">— {#ava#} по видимости встречается в месте: {#ramante copahAsena puruzAH puruzEH saha #}|{# anyo'nyamavarakzanto deSe deSe samETunAH #}||
-<ls>MBH. 8,2115</ls>, где, однако, вероятнее следует читать {#avakzaranto#} орошающий, оскверняющий (семенем). Редкая стопа – ⏑ – –, появляющаяся при перестановке, могла способствовать сохранению простой описки.
-
-**caus.)** <div n="p">— <ab>caus.</ab> {#rakzayati, ararakzat#}
-<ls>P. 7,4,93</ls>, <ab>Sch.</ab>
-{%защищать%}: {#ko 'smAnatra vane rakzayizyati#}
-<ls>PAÑCAT. 70,13.</ls> {%хранить%}: {#svAkAraM rakzayedyastu sa Bftyo 'rho mahIBujAm#}
-<ls>Spr. 1367.</ls>
-
-**desid.)** <div n="p">— <ab>desid.</ab> {#rirakzizati#} {%намереваться защитить от%} (<ab>abl.</ab>): {#rirakzizantaH#}
-<ls>MBH. 5,2368.</ls> <ls n="MBH.">6,3760</ls> (следует читать {#rira˚#}).
-<ls n="MBH. 6,">4695.</ls>
-
-**intens.)** <div n="p">— <ab>intens.</ab>: {#rakzA^ Ro agne\ tava\ rakza^ReBI rAra\kzA\RaH su^maKa prIRA\naH#} {%тщательно охраняемый —, неустанно блюдомый%}
-<ls>ṚV. 4,3,14.</ls> {%неустанно охраняющий%}
-<ls>SĀY.</ls>
-
-**pari+rakṣ — основная форма)** <div n="p">— {#pari#} {%охранять, беречь, защищать, стеречь, опекать, соблюдать, сохранять, спасать, servare%}: {#Gra\MsaM rakza^nta\M pari^ vi\Svato\ gaya^m#}
-<ls>ṚV. 5,44,7.</ls> {#ji\Ga\tsuBya^ i\maM me\ pari^ rakzata#}
-<ls>AV. 8,2,20.</ls> {#parirakzedimAH prajAH#} ({#rAjA#})
-<ls>M. 7,142.</ls> <ls>MBH. 3,528.</ls> <ls n="MBH. 3,">15708.</ls> <ls>R. GORR. 2,50,5.</ls>
-[Page6-0217]
-{#tAM kanyAM vAsukiH paryarakzata#}
-<ls>MBH. 1,1642.</ls> <ls n="MBH. 1,">1940.</ls> <ls n="MBH. 1,">2948.</ls> <ls n="MBH.">3,14366.</ls> <ls n="MBH.">7,3661.</ls>
-<ls>HARIV. 9085.</ls> <ls n="HARIV.">9690.</ls> {#parirakzyamARa#}
-<ls>BHĀG. P. 5,9,21.</ls> {#parirakzita#}
-<ls n="BHĀG. P. 5,">24,28.</ls> <ls n="BHĀG. P.">9,9,40.</ls> <ls>MBH. 5,6035.</ls> {#yozitaH parirakzitum#} {%пасти%}
-<ls>M. 9,10.</ls> {#apAnaM te parjanyaH parirakzatu#}
-<ls>SUŚR. 1,17,2.</ls> {#tadidaM parirakza vapuH#}
-<ls>KUMĀRAS. 4,44.</ls> {#AtmAnaM parirakzasva#}
-<ls>MBH. 1,6195.</ls> {#SakyastenAnumAnena paro 'pi parirakzitum#} {%быть сохраненным —, спасенным%}
-<ls>Spr. 2129.</ls> {#parirakza asmadIyaprARAn#}
-<ls>PAÑCAT. ed. orn. 58,12.</ls> {#AtmAnaM parirakzasva purIM cemAM sarAkzasAm#}
-<ls>R. 5,88,24.</ls> <ls n="R. 5,">23,17.</ls> {#sItA ca parirakzitA#} {%спасенный%}
-<ls n="R. 5,">56,144.</ls> <ls>MṚCCH. 110,17.</ls> {#ayoDyAM parirakzati#} и потому <ab>v. a.</ab> {%подвластный, управляемый%}
-<ls>R. GORR. 2,109,49.</ls> <ls>HARIV. 733.</ls> <ls n="HARIV.">3714.</ls> <ls>Spr. 5063.</ls> <ls>BHĀG. P. 5,4,17.</ls> {#madBujaparirakzite 'sminvane#}
-<ls>PAÑCAT. 30,24.</ls> <ls n="PAÑCAT.">215,7.</ls> {#nahyeza rAGavasyArTe jIvitaM parirakzati#} {%щадит%}
-<ls>R. 6,4,27.</ls> {#na sma paSyAmahe kaMcidyaH prARAnparirakzati#}
-<ls>MBH. 6,4062.</ls> {%щадить, оберегать от прикосновения%}
-<ls>SUŚR. 1,98,16.</ls> {#SizwaM mAMsam — kAkeByaH paryarakzata#} {%хранить, откладывать%}
-<ls>R. 2,96,38</ls> (<ls n="GORR. 2,">105,37</ls> <ls>GORR.</ls>). {#eza cUqAmaRirdivyo mayA suparirakzitaH#}
-<ls n="R.">5,37,7.</ls> {#ye viprAH — brAhmIM vAcaM parirakzanti#}
-<ls>MBH. 13,4886.</ls> {#svaDarmaM parirakzatA#} {%верно хранящий%}
-<ls>R. 4,24,10.</ls> <ls n="R.">5,51,13.</ls> {#pratijYAm#}
-<ls>R. GORR. 2,50,8.</ls> {#lokayAtrAmimAM kftsnAM parirakzanta Asate#} и потому <ab>v. a.</ab> {%заботящийся о%}
-<ls>HARIV. 6811.</ls> {%избегать%}
-<ls>SUŚR. 2,15,12.</ls> <ab>med.</ab> с <ab>gen.</ab> {%избегать кого-л., сделать так, чтобы не встречаться с кем-л.%}
-<ls>R. 5,73,20.</ls>
+Re-glue — rakz
+
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
+
+## омоним h0
+
+**1)** — *prati*
+ 1) беречь, защищать: *yadi śūrastathā kṣeme* (*kṣemaṃ* [Бомбейская ред.]) *pratirakṣedyathā bhaye*
+[MBH. 12,3596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3596) = [≈Вульг. 12.97.16](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A097_S016) = ≈крит. 12,98.16a *viśvā āśāḥ prati rakṣantyeke*
+[AV. 10,8,36.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.008.html#av10.008.36) *satyāṃ* (так [Бомбейская ред.]) *pratijñāṃ tāṃ pārthena pratirakṣatā* верно соблюдая
+[MBH. 8,3542.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3542) = [≈Вульг. 8.70.44](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A070_S044) = ≈крит. 08,49.103a
+
+**2)** — 2) бояться, спасаться от: *pratirakṣannasuryam*
+[VS. 8,24.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,24)
+
+**abhi+rakṣ)** — *abhi* хранить, опекать, защищать
+[ṚV. 1,136,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.136.html#rv01.136.05) [163,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.163.html#rv01.163.05) [4,53,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.053.html#rv04.053.05) *yamādityā abhi druho rakṣatha*
+[8,47,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.047.html#rv08.047.01) [9,114,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.114.html#rv09.114.03) [10,86,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.04) [157,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.157.html#rv10.157.04) [AV. 10,6,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.12) [7,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.007.html#av10.007.23) [12,3,11.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.11) *piteva putrānabhi rakṣatādimam*
+[2,13,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.013.html#av02.013.01) [3,12,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.012.html#av03.012.08) [ŚAT. BR. 2,3,4,40.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,4,40) [ĀŚV. ŚR. 2,5,2. 12.] [KAUŚ. 135.] [CHĀND. UP. 4,17,10.] *bhīṣmamevābhirakṣantu*
+[BHAG. 1,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,11) *daṇḍaḥ śāsti prajāḥ sarvā daṇḍa evābhirakṣati*
+[Spr. 4162.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4162) [4920.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4920)
+[MBH. 4,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1535) = [≈Вульг. 4.49.5](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A049_S005) = ≈крит. 04,44.5a [5,711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.711) = [≈Вульг. 5.23.27](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A023_S027) = ≈крит. 05,23.26a [6,543.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.543) = [≈Вульг. 6.14.36](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S036) = ≈крит. 06,15.32a
+[HARIV. 2471.](https://sanskrit-lexicon-scans.github.io/hariv?2471) [7115.](https://sanskrit-lexicon-scans.github.io/hariv?7115)
+[R. 2,25,3. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,3) *dhātrī svaputravatskandaṃ śūlahastābhyarakṣata*
+[MBH. 3,14365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14365) = [≈Вульг. 3.226.24](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A226_S024) = ≈крит. 03,215.18c [6,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.544) = [≈Вульг. 6.14.37](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U03_A014_S037) = ≈крит. 06,15.33c [13,2265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2265) = [≈Вульг. 13.40.19](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S019) = ≈крит. 13,40.18c *uparyantaḥpure sā* (*kanyakā*) *ca ratnamityabhirakṣyate*
+[KATHĀS. 3,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,58) [78,131.](https://sanskrit-lexicon-scans.github.io/kss/index.html?78,131) *balaṃ bhīṣmābhirakṣitam* и потому преим. командовать
+[BHAG. 1,10.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?1,10)
+[MBH. 4,425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.425)
+[R. 2,2,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,2,4) [25,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,25,6) [52,77.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,77)
+[R. GORR. 1,35,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,35,30) [2,27,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,27,24) [5,43,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,43,4) [73,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,34) *adharmāttvabhirakṣa mām*
+[MBH. 7,2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2081) = [≈Вульг. 7.54.9](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A054_S009) = крит. — *evaṃ bahubhyaḥ śatrubhyaḥ prajñayātmābhirakṣitaḥ*
+[KATHĀS. 33,130.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,130)
+[BHĀG. P. 1,18,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,24) *tābhyaḥ striyo 'bhirakṣyāḥ*
+[VARĀH. BṚH. S. 78,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?78,10) *yena vīraḥ kurukṣetramabhyarakṣat*
+[MBH. 4,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.161) = [≈Вульг. 4.5.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S020) = ≈крит. 04,5.18c *yaḥ kṛtsnāmaṭavīmetāṃ paryantastho 'bhirakṣati*
+[KATHĀS. 29,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?29,135) [115,10.](https://sanskrit-lexicon-scans.github.io/kss/index.html?115,10) *svagṛhaṃ taṃ kālaṃ so 'bhyarakṣata*
+[MBH. 13,2306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2306) = [≈Вульг. 13.40.60](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S060) = ≈крит. 13,40.59a
+[HARIV. 8999.](https://sanskrit-lexicon-scans.github.io/hariv?8999) *vasuṃdharām — bāhuvīryābhirakṣitām*
+[R. 2,88,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,18) *ṛṣyamūkaḥ — śiśunāgābhirakṣitaḥ*
+[3,76,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,76,28) [KATHĀS. 39,28.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,28) *sattvamindro 'bhirakṣatu*
+[SUŚR. 1,17,5.] *prāṇā yanme 'bhirakṣitāḥ*
+[BHĀG. P. 9,5,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,17) *ye 'bhyarakṣanpurātanīṃ tasya devasya sṛṣṭim*
+[MBH. 13,1375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1375) = [≈Вульг. 13.18.78](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A018_S078) = ≈крит. 13,18.54a *yo graha ivārthamabhirakṣati*
+[BHĀG. P. 5,26,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,36) *eṣa kalpataruḥ kasya kṛte 'mogho 'bhirakṣyate* быть опекаемым —, лелеемым
+[KATHĀS. 90,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?90,21) *yathā bījāṅkuraḥ sūkṣmaḥ paripuṣṭo 'bhirakṣitaḥ*
+[Spr. 2316.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2316) *ākāramabhirakṣeta* сохрани
+[MBH. 1,5616.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5616) = [≈Вульг. 1.140.27](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S027) = крит. — [2,2183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2183) = [≈Вульг. 2.65.44](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U09_A065_S044) = ≈крит. 02,58.42a *ākāramabhirakṣantī pratijñāṃ dharmasaṃhitām*
+[4,472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.472) = [≈Вульг. 4.16.21](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A016_S021) = ≈крит. 04,15.14c *vratāni* соблюдать
+[ṚV. 4,53,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.053.html#rv04.053.04) [7,83,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.083.html#rv07.083.09) [9,73,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.073.html#rv09.073.03)
+— ср. *abhirakṣitar* .
+
+**adhi+rakṣ)** — *adhi* сторожить, опекать: *trailokyaṃ yo 'dhirakṣati*
+[HARIV. 15811.](https://sanskrit-lexicon-scans.github.io/hariv?15811) лучше *yo hi rakṣati* более новое чтение изд.
+
+**anu+rakṣ)** — *anu* следовать за кем-л., охраняя
+[ŚĀṄKH. ŚR. 16,10,11.] *ke pṛṣṭhato 'nvarakṣanta* (*pṛṣṭhataścāpyabhavan* [Бомбейская ред.])
+[MBH. 7,7330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7330) = [≈Вульг. 7.163.38](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A163_S038) = ≈крит. 07,138.34c опекать, защищать; мед.
+[R. 6,103,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,103,2)
+
+**ava+rakṣ)** — *ava* по видимости встречается в месте: *ramante copahāsena puruṣāḥ puruṣaiḥ saha *|* anyo'nyamavarakṣanto deśe deśe samaithunāḥ *||
+[MBH. 8,2115](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2115) = [≈Вульг. 8.45.45](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A045_S045) = ≈крит. 04,27.13c, где, однако, вероятнее следует читать *avakṣaranto* орошающий, оскверняющий (семенем). Редкая стопа – ⏑ – –, появляющаяся при перестановке, могла способствовать сохранению простой описки.
+
+**caus.)** — caus. *rakṣayati, ararakṣat*
+[P. 7,4,93](https://ashtadhyayi.com/sutraani/7/4/93), схол.
+защищать: *ko 'smānatra vane rakṣayiṣyati*
+[PAÑCAT. 70,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?70,13) хранить: *svākāraṃ rakṣayedyastu sa bhṛtyo 'rho mahībhujām*
+[Spr. 1367.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1367)
+
+**desid.)** — desid. *rirakṣiṣati* намереваться защитить от (abl.): *rirakṣiṣantaḥ*
+[MBH. 5,2368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2368) = [≈Вульг. 5.60.10](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U05_A060_S010) = ≈крит. 05,59.10c [6,3760](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3760) = [≈Вульг. 6.85.10](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A085_S010) = ≈крит. 06,81.9c (следует читать *rira˚*).
+[4695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4695) = [≈Вульг. 6.103.14](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A103_S014) = ≈крит. 06,99.14a
+
+**intens.)** — intens.: *rakṣā ṇo agne tava rakṣaṇebhī rārakṣāṇaḥ sumakha prīṇānaḥ* тщательно охраняемый —, неустанно блюдомый
+[ṚV. 4,3,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.003.html#rv04.003.14) неустанно охраняющий
+[SĀY.]
+
+**pari+rakṣ — основная форма)** — *pari* охранять, беречь, защищать, стеречь, опекать, соблюдать, сохранять, спасать, servare: *ghraṃsaṃ rakṣantaṃ pari viśvato gayam*
+[ṚV. 5,44,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.044.html#rv05.044.07) *jighatsubhya imaṃ me pari rakṣata*
+[AV. 8,2,20.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.20) *parirakṣedimāḥ prajāḥ* (*rājā*)
+[M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) [MBH. 3,528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.528) = [≈Вульг. 3.12.68](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A012_S068) = ≈крит. 03,13.60a [15708.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15708) = [≈Вульг. 3.270.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A270_S014) = ≈крит. 03,254.14c [R. GORR. 2,50,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,5)
+
+*tāṃ kanyāṃ vāsukiḥ paryarakṣata*
+[MBH. 1,1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1642) = [≈Вульг. 1.40.19](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A040_S019) = ≈крит. 01,36.16c [1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1940) = [≈Вульг. 1.49.8](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U05_A049_S008) = ≈крит. 01,45.7a [2948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2948) = [≈Вульг. 1.72.12](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A072_S012) = ≈крит. 01,66.10c [3,14366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14366) = [≈Вульг. 3.226.25](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A226_S025) = ≈крит. 03,215.19a [7,3661.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3661)
+[HARIV. 9085.](https://sanskrit-lexicon-scans.github.io/hariv?9085) [9690.](https://sanskrit-lexicon-scans.github.io/hariv?9690) *parirakṣyamāṇa*
+[BHĀG. P. 5,9,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,21) *parirakṣita*
+[24,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,24,28) [9,9,40.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,40) [MBH. 5,6035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6035) = [≈Вульг. 5.176.12](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A176_S012) = ≈крит. 05,174.11c *yoṣitaḥ parirakṣitum* пасти
+[M. 9,10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,10) *apānaṃ te parjanyaḥ parirakṣatu*
+[SUŚR. 1,17,2.] *tadidaṃ parirakṣa vapuḥ*
+[KUMĀRAS. 4,44.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,44) *ātmānaṃ parirakṣasva*
+[MBH. 1,6195.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6195) = [≈Вульг. 1.157.38](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U10_A157_S038) = ≈крит. 01,145.37c *śakyastenānumānena paro 'pi parirakṣitum* быть сохраненным —, спасенным
+[Spr. 2129.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2129) *parirakṣa asmadīyaprāṇān*
+[PAÑCAT. ed. orn. 58,12.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?58,12) *ātmānaṃ parirakṣasva purīṃ cemāṃ sarākṣasām*
+[R. 5,88,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,88,24) [23,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,17) *sītā ca parirakṣitā* спасенный
+[56,144.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,144) [MṚCCH. 110,17.] *ayodhyāṃ parirakṣati* и потому преим. подвластный, управляемый
+[R. GORR. 2,109,49.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,49) [HARIV. 733.](https://sanskrit-lexicon-scans.github.io/hariv?733) [3714.](https://sanskrit-lexicon-scans.github.io/hariv?3714) [Spr. 5063.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5063) [BHĀG. P. 5,4,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,4,17) *madbhujaparirakṣite 'sminvane*
+[PAÑCAT. 30,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?30,24) [215,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?215,7) *nahyeṣa rāghavasyārthe jīvitaṃ parirakṣati* щадит
+[R. 6,4,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,27) *na sma paśyāmahe kaṃcidyaḥ prāṇānparirakṣati*
+[MBH. 6,4062.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4062) = [≈Вульг. 6.90.92](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A090_S092) = ≈крит. 06,86.85a щадить, оберегать от прикосновения
+[SUŚR. 1,98,16.] *śiṣṭaṃ māṃsam — kākebhyaḥ paryarakṣata* хранить, откладывать
+[R. 2,96,38](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,38) ([105,37](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,37) [GORR.]). *eṣa cūḍāmaṇirdivyo mayā suparirakṣitaḥ*
+[5,37,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,7) *ye viprāḥ — brāhmīṃ vācaṃ parirakṣanti*
+[MBH. 13,4886.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4886) = [≈Вульг. 13.102.44](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A102_S044) = ≈крит. 13,105.44a *svadharmaṃ parirakṣatā* верно хранящий
+[R. 4,24,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,10) [5,51,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,51,13) *pratijñām*
+[R. GORR. 2,50,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,50,8) *lokayātrāmimāṃ kṛtsnāṃ parirakṣanta āsate* и потому преим. заботящийся о
+[HARIV. 6811.](https://sanskrit-lexicon-scans.github.io/hariv?6811) избегать
+[SUŚR. 2,15,12.] мед. с gen. избегать кого-л., сделать так, чтобы не встречаться с кем-л.
+[R. 5,73,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,73,20)
 
-**pra (1))** <div n="p">— {#pra#} {%сохранять, защищать от%} (<ab>abl.</ab>), {%спасать от%}: {#karkawena dvitIyena sarpAtpAnTaH prarakzitaH#}
-<ls>Spr. 147.</ls> <ls>BÜHLER'S Ausg. des PAÑCAT.</ls> liest {#jIvitaM parirakzitam#} <ab>st.</ab> {#sarpAtpAnTaH pra˚#} .
+**pra (1))** — *pra* сохранять, защищать от (abl.), спасать от: *karkaṭena dvitīyena sarpātpānthaḥ prarakṣitaḥ*
+[Spr. 147.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?147) [BÜHLER'S Ausg. des PAÑCAT.] liest *jīvitaṃ parirakṣitam* вместо *sarpātpānthaḥ pra˚* .
 
-**pra (2))** <div n="v">— <ab>Vgl.</ab> {#prarakza#} <ab>fg.</ab>
+**pra (2))** — ср. *prarakṣa* сл.
 
-**saMpari)** <div n="p">— {#saMpari#} {%защищать%}: {#lokAnsaMparirakzitum#}
-<ls>R. 7,104,3.</ls>
+**saMpari)** — *saṃpari* защищать: *lokānsaṃparirakṣitum*
+[R. 7,104,3.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,104,3)
 
-**sam (1))** <div n="p">— {#sam#} {%стеречь, сохранять, защищать, охранять, оберегать, содержать, спасать, servare%}: {#saMrakzato munigaRAnniGnato rAkzasAnmama#}
-<ls>R. 3,10,25.</ls> <ls n="R.">7,108,27.</ls> <ls>Spr. 1828.</ls> <ls>Verz. d. Oxf. H. 257,a, N. 3.</ls> {#saMrakzyamARo rAjYA#}
-<ls>M. 7,136.</ls>
-<ls>MBH. 7,230.</ls> <ls n="MBH. 7,">6059.</ls>
-<ls>R. 5,19,33.</ls>
-<ls>KATHĀS. 20,87.</ls>
-<ls>RĀJA-TAR. 3,39.</ls> {#saMrakzita#}
-<ls>HARIV. 9072.</ls>
-<ls>MṚCCH. 105,13. 110,15.</ls>
-<ls>RAGH. 4,35.</ls> <ls n="RAGH.">13,65.</ls>
-<ls>KATHĀS. 9,80.</ls> {#saMrakzetsarvataScEnaM pitA putramivOrasam#}
-<ls>M. 7,135.</ls> {#pitrA saMrakzitaM SakrAt#}
-<ls>BHAṬṬ. 8,8.</ls> {#kedArAn — mfgavarAhAdiByaH saMrakzamARamaNgiraHpravarasutam#}
-<ls>BHĀG. P. 5,9,14.</ls> {#prAREH saMrakzitEH sarvaM yato Bavati rakzitam#}
-<ls>Spr. 3163.</ls> {#kawakaM saMrakzya#}
-<ls>RĀJA-TAR. 5,218.</ls> {#anidra eva zaqrAtraM sa saMrakzanmuneH kratum#}
-<ls>R. GORR. 1,33,6.</ls> {#maDuvanaM saMrakza tvam#}
-<ls n="R. GORR.">5,63,27.</ls> {#DarmaM saMrakzate daRqastaTEvArTaM janADipa . kAmaM saMrakzate daRqaH#}
-<ls>MBH. 12,426.</ls> {#vfttaM yatnena saMrakzet#}
-<ls>Spr. 5030.</ls> {#saMrakzenmantrabIjam#}
-<ls>KĀM. NĪTIS. 11,53.</ls> {#mantraM saMrakzet#}
-<ls n="KĀM. NĪTIS.">64.</ls> {#daMpatyoH saMrakzatorgOravam#} {%сохранять%}
-<ls>Spr. 530.</ls> {#AtmanaSca parezAM ca vfttiM saMrakza#} {%обеспечь%}
-<ls>MBH. 13,3080.</ls> {%хранить, беречь%}: {#taddAnavaSarIraM te saMrakzya sTApitaM mayA#}
-<ls>KATHĀS. 45,50.</ls>
+**sam (1))** — *sam* стеречь, сохранять, защищать, охранять, оберегать, содержать, спасать, servare: *saṃrakṣato munigaṇānnighnato rākṣasānmama*
+[R. 3,10,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,25) [7,108,27.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,108,27) [Spr. 1828.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1828) [Verz. d. Oxf. H. 257,a, N.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?257) [Verz. d. Oxf. H. 3.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?3) *saṃrakṣyamāṇo rājñā*
+[M. 7,136.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,136)
+[MBH. 7,230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.230) = [≈Вульг. 7.8.11](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A008_S011) = ≈крит. 07,7.11a [6059.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6059) = [≈Вульг. 7.145.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A145_S005) = ≈крит. 07,120.4a
+[R. 5,19,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,19,33)
+[KATHĀS. 20,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,87)
+[RĀJA-TAR. 3,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,39) *saṃrakṣita*
+[HARIV. 9072.](https://sanskrit-lexicon-scans.github.io/hariv?9072)
+[MṚCCH. 105,13. 110,15.]
+[RAGH. 4,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,35) [13,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,65)
+[KATHĀS. 9,80.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,80) *saṃrakṣetsarvataścainaṃ pitā putramivaurasam*
+[M. 7,135.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,135) *pitrā saṃrakṣitaṃ śakrāt*
+[BHAṬṬ. 8,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,8) *kedārān — mṛgavarāhādibhyaḥ saṃrakṣamāṇamaṅgiraḥpravarasutam*
+[BHĀG. P. 5,9,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,9,14) *prāṇaiḥ saṃrakṣitaiḥ sarvaṃ yato bhavati rakṣitam*
+[Spr. 3163.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3163) *kaṭakaṃ saṃrakṣya*
+[RĀJA-TAR. 5,218.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,218) *anidra eva ṣaḍrātraṃ sa saṃrakṣanmuneḥ kratum*
+[R. GORR. 1,33,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,33,6) *madhuvanaṃ saṃrakṣa tvam*
+[5,63,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,63,27) *dharmaṃ saṃrakṣate daṇḍastathaivārthaṃ janādhipa . kāmaṃ saṃrakṣate daṇḍaḥ*
+[MBH. 12,426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.426) = [≈Вульг. 12.15.3](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A015_S003) = ≈крит. 12,15.3c *vṛttaṃ yatnena saṃrakṣet*
+[Spr. 5030.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5030) *saṃrakṣenmantrabījam*
+[KĀM. NĪTIS. 11,53.] *mantraṃ saṃrakṣet*
+[64.] *daṃpatyoḥ saṃrakṣatorgauravam* сохранять
+[Spr. 530.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?530) *ātmanaśca pareṣāṃ ca vṛttiṃ saṃrakṣa* обеспечь
+[MBH. 13,3080.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3080) = [≈Вульг. 13.61.17](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A061_S017) = ≈крит. 13,60.17c хранить, беречь: *taddānavaśarīraṃ te saṃrakṣya sthāpitaṃ mayā*
+[KATHĀS. 45,50.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,50)
 
-**sam (2))** <div n="v">— <ab>Vgl.</ab> {#saMrakzaRa#} <ab>fgg.</ab>
+**sam (2))** — ср. *saṃrakṣaṇa* сл.
 
-**upa+rakṣ)** <div n="p">— {#upa#} <ab>s.</ab> {#uparakzaRa; prani, ˚rakzati#}
-<ls>VOP. 8,73.</ls>
+**upa+rakṣ)** — *upa* см. *uparakṣaṇa; prani, ˚rakṣati*
+[VOP. 8,73.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,73)
 
-**vi)** <div n="p">— {#vi#} {%оберегать, защищать, сохранять%}: {#sarva^M BU\tam#}
-<ls>AV. 10,6,18.</ls> <ls n="AV.">13,2,41.</ls> {#rAjA^ rA\zwraM vi ra^kzati#}
-<ls n="AV.">11,5,17.</ls> {#anyo'nyaM samupASritya virakzanti raRAjire (na tyakzyanti raRAjiram#} <ls>ed. Bomb.</ls>)
-<ls>MBH. 7,4410.</ls> {#droRaM ca ke vyarakzanta#}
-<ls n="MBH. 7,">7329.</ls>
+**vi)** — *vi* оберегать, защищать, сохранять: *sarvaṃ bhūtam*
+[AV. 10,6,18.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.18) [13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) *rājā rāṣṭraṃ vi rakṣati*
+[11,5,17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.005.html#av11.005.17) *anyo'nyaṃ samupāśritya virakṣanti raṇājire (na tyakṣyanti raṇājiram* [Бомбейская ред.])
+[MBH. 7,4410.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4410) = [≈Вульг. 7.113.40](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A113_S040) = ≈крит. 07,88.33c *droṇaṃ ca ke vyarakṣanta*
+[7329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7329) = [≈Вульг. 7.163.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U06_A163_S037) = ≈крит. 07,138.34a
 
-**ā+rakṣ — основная форма)** <div n="p">— {#A#} {%опекать, защищать, хранить, сторожить%}: {#A mA mi^trAvaruRe\ha ra^kzatam#}
-<ls>ṚV. 7,50,1.</ls> {#dvArARi yantrErArakzitAni#}
-<ls>MBH. 15,186.</ls> {#BaratArakzitaM putrarAjyam#}
-<ls>R. 2,52,58.</ls>
+**ā+rakṣ — основная форма)** — *ā* опекать, защищать, хранить, сторожить: *ā mā mitrāvaruṇeha rakṣatam*
+[ṚV. 7,50,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.050.html#rv07.050.01) *dvārāṇi yantrairārakṣitāni*
+[MBH. 15,186.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.186) = [≈Вульг. 15.5.17](https://sanatana.in/mahabharata/listing/parva/ashramavasikaparva?id=P15_U01_A005_S017) = ≈крит. 15,9.17c *bharatārakṣitaṃ putrarājyam*
+[R. 2,52,58.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,58)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹ā+rakṣ — Nachtrag› <div n="v">— <ab>Vgl.</ab> {#Arakza#} <ab>fgg.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *ārakṣa* сл.
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹pari+rakṣ — Nachtrag› <div n="v">— <ab>Vgl.</ab> {#parirakzaka#} <ab>fgg.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *parirakṣaka* сл.
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#rakṣ#} [Gen , unsp] ( rákṣati I P ) хранить (тайну). Kathās . щадить, считаться с (чужими чувствами). Mālav . остерегаться, отражать, удалять, предотвращать, расстраивать, причинять вред. AV v, 1 . скрываться, бояться (?). ṚV x, 68, 1
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *rakṣ* [Gen , unsp] ( rákṣati I P ) хранить (тайну). Kathās . щадить, считаться с (чужими чувствами). Mālav . остерегаться, отражать, удалять, предотвращать, расстраивать, причинять вред. AV v, 1 . скрываться, бояться (?). [ṚV x, 68, 1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.068.html#rv10.068.01)
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#rakṣ (=pw rakṣ 1)#} [Gen , unsp] защищать. Renou 1997, S. 69 . лишать, причинять ущерб. Renou 1997, S. 69
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *rakṣ (=pw rakṣ 1)* [Gen , unsp] защищать. Renou 1997, S. 69 . лишать, причинять ущерб. Renou 1997, S. 69
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] защищать, оберегать кого-л. (Akk). беречь, охранять, хранить что-л. (Akk), поддерживать в его существовании. хранить, охранять божественные установления или законы (чтобы они не нарушались). [ о богах. ] оберегать кого-л. (Akk) от (Abl). med: внимательно наблюдать за (Akk, Lok). быть бдительным (на страже). Int: усердно хранить. Направительные слова ánu , abhí , ā́ , pári привносят к вышеуказанным значениям лишь едва уловимые оттенки
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] защищать, оберегать кого-л. (Acc.). беречь, охранять, хранить что-л. (Acc.), поддерживать в его существовании. хранить, охранять божественные установления или законы (чтобы они не нарушались). [ о богах. ] оберегать кого-л. (Acc.) от (Abl.). med: внимательно наблюдать за (Acc., Loc.). быть бдительным (на страже). Int: усердно хранить. Направительные слова ánu , abhí , ā́ , pári привносят к вышеуказанным значениям лишь едва уловимые оттенки
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( I ) защищать, хранить, бдеть над
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] ( I ) защищать, хранить, бдеть над
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( I U ) охранять; беречь, стеречь, защищать. <ls n="ṚV. 4,33,4">ṚV 4,33,4</ls> , <ls n="ṚV. 4,50,2">ṚV 4,50,2</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] ( I U ) охранять; беречь, стеречь, защищать. [ṚV 4,33,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.033.html#rv04.033.04) , [ṚV 4,50,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.050.html#rv04.050.02)
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] быть настороже, нести стражу. <ls n="ṚV. 10,68,1">ṚV 10,68,1</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] быть настороже, нести стражу. [ṚV 10,68,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.068.html#rv10.068.01)
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Śā , Soc] ( I P, X P ) держать надзор над, остерегаться. KA 1.16.35
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Śā , Soc] ( I P, X P ) держать надзор над, остерегаться. KA 1.16.35
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Jin, unsp] (1349 A.D. , Delhi) Kaus: велеть сохранить. Rajaśekharasuri 1935, S. 119, Z. 12
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Jin, unsp] (1349 A.D. , Delhi) Kaus: велеть сохранить. Rajaśekharasuri 1935, S. 119, Z. 12
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Jin , unsp] расстраивать (замыслы), препятствовать. PPS, S. 101, Z. 32
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Jin , unsp] расстраивать (замыслы), препятствовать. PPS, S. 101, Z. 32
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ Abl: bewahren vor, erretten vor. <ls n="ṚV. 8,48,5">ṚV 8,48,5</ls> .#} [Ved , unsp] + abhi : брать под защиту, под опеку. <ls n="ṚV. 1,163,5">ṚV 1,163,5</ls> . Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ābl: beṭahren vor, erretten vor. [ṚV 8,48,5 .* [Ved , unsp] + abhi : брать под защиту, под опеку. ṚV 1,163,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.05) . Ved , unsp
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ upa ( uparakṣita ): „kept in custody“. EI X, S. 213-224 (Index) .#} [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохраненный, содержимый. Mbh , Kāvya(MW) . Gen , unsp ; MW : 599 (s.v. parirakṣ )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ upa ( uparakṣita ): „kept in custody“. aiī ḹ, ś. 213-224 (īndeḷ) .* [Epigr , unsp (s.v. uparakṣita )] + pari ( parirakṣita ): хорошо охраняемый, сохраненный, содержимый. Mbh , Kāvya(MW) . Gen. , unsp ; MW : 599 (s.v. parirakṣ )
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ vratám : schützen, wachen über, überwachen, e. wachsames Auge haben auf, beobachten, einhalten. <ls n="ṚV. 1,62,10">ṚV 1,62,10</ls> .#} [Ved , unsp] Śā , Ling > [ rirakṣa -, Des] AiGr, I, S. 279 . * rirakṣiṣā ; ṣi опущено в результате гаплологии
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ vratám : schütṣen, ṭachen über, überṭachen, e. ṭachsames āuge haben auṛ, beobachten, einhalten. ṚV 1,62,10 .* [Ved , unsp] Śā , Ling > [ rirakṣa -, Des] AiGr, I, S. 279 . * rirakṣiṣā ; ṣi опущено в результате гаплологии
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#rakz#}¦ {#ra/kzati, ˚te#} ({#rakzye#} <ab>Fut.</ab> <ls n="Chr.">89,28</ls>)
-<div n="1">— 1〉 {%стеречь, нести стражу, сохранять, защищать, охранять%} (в т.ч. скот), {%оберегать, блюсти, щадить, содержать, спасать, servare, — от%} (<ab>Abl.</ab>), {%хранить; тщательно следить за%} (<ab>Acc.</ab>, в виде исключения <ab>Loc.</ab>), {%соблюдать%} (закон <ab>u. s. w.</ab>). Страну —, царство {%защищать,%} т.е. <ab>v. a.</ab> {%управлять%}. {#ra/kzamARa#} <ls>AV. 13,4,70</ls>. с пассивным <ab>Bed.</ab> или ошибочно вм. {#rakzya/mARa#} {#rakzita/#} {%охраняемый%} <ab>u. s. w.</ab> {#rakzitam#} <lex>Adv.</lex> {%надежно сохраненный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*rakṣ* *rakṣati, ˚te* (*rakṣye* Fut. [89,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?89))
+— 1〉 стеречь, нести стражу, сохранять, защищать, охранять (в т.ч. скот), оберегать, блюсти, щадить, содержать, спасать, servare, — от (Abl.), хранить; тщательно следить за (Acc., в виде исключения Loc.), соблюдать (закон и т.д.). Страну —, царство защищать, т.е. преим. управлять. *rakṣamāṇa* [AV. 13,4,70](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.004.html#av13.004.70). с пассивным знач. или ошибочно вм. *rakṣyamāṇa* *rakṣita* охраняемый и т.д. *rakṣitam* _Adv._ надежно сохраненный.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%блюсти,%} т.е. <ab>v. a.</ab> {%не трогать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 блюсти, т.е. преим. не трогать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%остерегаться, предотвращать;%} mit <ab>Acc.</ab> [Page5-157-c]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 остерегаться, предотвращать; mit Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>Med.</ab> {%остерегаться,%} т.е. <ab>v. a.</ab> {%бояться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 Med. остерегаться, т.е. преим. бояться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 <ab>Med.</ab> быть может, {%прятать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 Med. быть может, прятать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#rakzayati#} {%защищать, — от%} (<ab>Abl.</ab>) {%сохранять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. *rakṣayati* защищать, — от (Abl.) сохранять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> {#rirakzizati#} {%намереваться защитить от%} (<ab>Abl.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. *rirakṣiṣati* намереваться защитить от (Abl.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Intens.</ab> {#rArakzARa/#} {%усердно охраняющий%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Intens. *rārakṣāṇa* усердно охраняющий.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDi#} {%охранять, оберегать%}. <ab>v. l.</ab> {#hi rakzati#} <ab>st.</ab> {#'Dirakzati#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *adhi* охранять, оберегать. v. l. *hi rakṣati* вместо *'dhirakṣati*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#} {%следовать охраняя; оберегать, защищать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anu* следовать охраняя; оберегать, защищать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#} стеречь, оберегать, защищать, — {%от%} (<ab>Abl.</ab>), {%лелеять, холить, сохранять, соблюдать%} (законы <ab>u. s. w.</ab>) Войско {%охранять,%} т.е. <ab>v. a.</ab> {%возглавлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhi* стеречь, оберегать, защищать, — от (Abl.), лелеять, холить, сохранять, соблюдать (законы и т.д.) Войско охранять, т.е. преим. возглавлять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samaBi#} {%сохранять, оберегать, защищать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samabhi* сохранять, оберегать, защищать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#} <ls>MBH. 8,45,43</ls> ошибочно. Под {#kzar#} было предположено {#avakzarantaH#} <ab>st.</ab> {#avarakzantaH#}, <ls>MBH. ed. Vardh.</ls> читает {#atitakzantaH#} (!)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ava* [MBH. 8,45,43](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,45,43) = [≈Вульг. 8.2.21](https://sanatana.in/mahabharata/listing/parva/karnaparva?id=P08_U01_A002_S021) = ≈крит. 08,1.44a ошибочно. Под *kṣar* было предположено *avakṣarantaḥ* вместо *avarakṣantaḥ*, [MBH. ed. Vardh.] читает *atitakṣantaḥ* (!)
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} {%оберегать, защищать, сохранять, стеречь, — от%} (<ab>Abl.</ab>)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* оберегать, защищать, сохранять, стеречь, — от (Abl.)
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#} in {#uparakzaRa#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa* in *uparakṣaṇa*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prani#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prani*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#}
-<div n="1">— 1〉 {%стеречь, сохранять, защищать, охранять, оберегать, блюсти, содержать, спасать, servare, — от%} (<ab>Abl.</ab>) {%щадить, уберегать от прикосновения, хранить, соблюдать%} (закон <ab>u. s. w.</ab>), {%заботиться о%}. Город <ab>u. s. w.</ab> {%охранять,%} т.е. <ab>v. a.</ab> {%управлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari*
+— 1〉 стеречь, сохранять, защищать, охранять, оберегать, блюсти, содержать, спасать, servare, — от (Abl.) щадить, уберегать от прикосновения, хранить, соблюдать (закон и т.д.), заботиться о. Город и т.д. охранять, т.е. преим. управлять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%избегать;%} <ab>Med.</ab> mit <ab>Gen.</ab> {%избегать кого-либо, сделать так, чтобы не встретиться с кем-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 избегать; Med. mit Gen. избегать кого-либо, сделать так, чтобы не встретиться с кем-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMpari#} {%защищать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *saṃpari* защищать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#} {%сохранять, защищать от%} (<ab>Abl.</ab>), {%спасать от%} (<ab>Abl.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* сохранять, защищать от (Abl.), спасать от (Abl.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#}
-<div n="1">— 1〉 {%оберегать, защищать, соблюдать верно%} (обещание).
-<div n="1">— 2〉 {%защищаться от, бояться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prati*
+— 1〉 оберегать, защищать, соблюдать верно (обещание).
+— 2〉 защищаться от, бояться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#} {%оберегать, защищать, сохранять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi* оберегать, защищать, сохранять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#} {%стеречь, сохранять, защищать, охранять, оберегать, содержать, щадить, спасать, servare, — от%} (<ab>Abl.</ab>). {%обеспечивать, хранить, беречь%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam* стеречь, сохранять, защищать, охранять, оберегать, содержать, щадить, спасать, servare, — от (Abl.). обеспечивать, хранить, беречь.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>2.</hom> √{#˚rakz#}¦ {%сохраняющий, охраняющий%} in {#gorakz#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **2.** √*˚rakṣ* сохраняющий, охраняющий in *gorakṣ*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#rakz#}¦ (nur {#rakzIs#}) {%повреждать, ранить%} <ls>AV.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*rakṣ* (nur *rakṣīs*) повреждать, ранить [AV.]
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#rakz#}¦ mit {#samanu#} {%блюсти, охранять%} <ls>DIVYĀVAD. 104,13</ls>. <ls n="DIVYĀVAD.">105,18</ls>.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*rakṣ* mit *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>1.</hom> {#rakz#}¦ с {#samanu#} {%блюсти, охранять%} <ls>DIVYĀVAD. 104,13</ls>. <ls n="DIVYĀVAD.">105,18</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *rakṣ* с *samanu* блюсти, охранять [DIVYĀVAD. 104,13]. [105,18].
 
-**+)** [SCH·sch_star → не привязано: цель не указана] 1. {%rakṣ%}¦ с {%samanu%} блюсти, охранять, <ls>Divyāvad. 104,13; 105,18.</ls> {part=,seq=22638,type=,n=2}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1. rakṣ с samanu блюсти, охранять, [Divyāvad. 104,13; 105,18.] {part=,seq=22638,type=,n=2}
 
-## h3
+## омоним h3
 
-**bewahren behüten beschützen)** <div n="p">— {#samaBi#} {%хранить, оберегать, защищать кого-л.%}
-<ls>R. ed. Bomb. 2,12,19.</ls>
+**bewahren behüten beschützen)** — *samabhi* хранить, оберегать, защищать кого-л.
+[R. Бомбейская ред. 2,12,19.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?2,12,19)
 
-**crit)** 1. {#rakz#}¦
-<ls>Sp. 215, Z. 2</ls> <ab>v. u.</ab> следует читать <ls>Spr. 208</ls> (<ls n="Spr. (II)">567</ls> 2-го <ab>Aufl.</ab>) <ab>st.</ab> 208.
+**crit)** 1. *rakṣ*
+[Sp. 215, Z. 2] снизу следует читать [Spr. 208](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?208) ([567](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?567) 2-го Aufl.) вместо 208.
 
-**cross-ref)** <div n="p">— {#A#}, {#AtmAnamArakzati sinDuvegAt#}
-<ls>Spr. (II) 6634.</ls>
+**cross-ref)** — *ā*, *ātmānamārakṣati sindhuvegāt*
+[Spr. (II) 6634.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6634 "Spr. (II) 6634: saṃsargato doṣaguṇā bhavantītyetanmṛṣā yena jalāśrayo 'pi | sthitvānukūlaṃ niculaścalantamātmānamārakṣati sindhuvegāt || — Der Ausspruch, dass Mängel und Fehler aus der Berührung hervorgehen, ist nicht wahr, da der Nicula, obgleich er sich dem Wasser angeschlossen hat, indem er am Ufer steht, bei seiner Beweglichkeit sich vor der heftigen St…")
 
-**schützen vor)** <div n="p">— <ab>caus.</ab> {%защищать от%} (<ab>abl.</ab>)
-<ls>Spr. (II) 5221.</ls>
+**schützen vor)** — caus. защищать от (abl.)
+[Spr. (II) 5221.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?5221 "Spr. (II) 5221: yadi nāmāsya kāyasya yadantastadbahirbhavet | daṇḍmādāya loko 'yaṃ śunaḥ kākācca rakṣayet ||")
 
-## h1
+## омоним h1
 
-**head)** 2. {#rakz#}¦ (= 1. {#rakz#}) <lex>adj.</lex> в конце <ab>comp.</ab> {%охраняющий, стерегущий <ab>u. s. w.</ab>%}
-<ls>VOP. 3,136.</ls>
-<div n="v">— <ab>Vgl.</ab> {#go˚#} .
+**head)** 2. *rakṣ* (= 1. *rakṣ*) _adj._ в конце comp. охраняющий, стерегущий и т.д.
+[VOP. 3,136.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,136)
+— ср. *go˚* .
 
-## h2
+## омоним h2
 
-**head)** 3. {#rakz#}¦ (собственно {#fkz = riS, riz#}) {%повреждать, ранить%}: {#mA no^ rakzI\rdakzi^RAM nI\yamA^nAm#}
-<ls>AV. 5,7,1.</ls> — Davon {#rakzas#} .
+**head)** 3. *rakṣ* (собственно *ṛkṣ = riś, riṣ*) повреждать, ранить: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
+[AV. 5,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.01) — Davon *rakṣas* .

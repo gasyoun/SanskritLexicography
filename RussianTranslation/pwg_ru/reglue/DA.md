@@ -1,1361 +1,1361 @@
-# Re-glue — DA
-
-## h0
-
-**1)** <div n="p">— {#pratisam#}
-<div n="1"> 1) {%вновь соединять, складывать вместе%}: {#yajYam#}
-<ls>ŚAT. BR. 12,6,1,2.</ls> <ls n="ŚAT. BR. 12,6,1,">37.</ls> {#yadyAtmAnameva pratisaMDatte#} вероятно, {%собираться%}
-<ls>PRAB. 99,14</ls>, <ab>v. l.</ab>
-  — [PW·restate] класть, полагать, ставить, вставлять, вносить — в или на (<ab>Loc.</ab>). {#daRqam#} возложить посох на, так <ab>v. a.</ab> наложить наказание на (<ab>Loc.</ab> или <ab>Gen.</ab>). {#tatpadavyAM padam#} поставить ногу на его путь, так <ab>v. a.</ab> следовать его примеру, уподобляться ему <ls n="Chr.">251,7</ls>. Большей частью <ab>Act.</ab>
-  — [PW·restate] 1〉 {%ставить, класть —, помещать —, вносить в, на или при%} (<ab>Loc.</ab>), зародыш {%помещать%} в женщину (<ab>Gen.</ab>) <ls n="Chr.">71,9</ls>. Добродетели {%кому-либо%} (<ab>Loc.</ab>) {%прививать,%} взор, мысль, думы {%направлять на%} (<ab>Loc.</ab>), старание {%прилагать к%} ({#pratipAtram#}), вину {%на кого-либо%} (<ab>Loc.</ab>) {%перекладывать,%} страх {%кому-либо%} (<ab>Loc.</ab>) {%внушать%}. В позднейшем языке обычно <ab>Med.</ab> {#A/hita#} {%наложенный, помещенный внутрь%} (зародыш <ls n="Chr.">73,6</ls>).
-  — [PW·restate] <hom>2.</hom> {#DA#}¦
-<div n="1">— 1〉 <lex>Adj.</lex> на конце <ab>Comp.</ab> в <ab>Bed.</ab> <ab>Nom. ag.</ab> от <hom>1.</hom> {#DA#}.
-
-**1)a)** 1) класть, помещать, ставить; класть —, помещать в, на (<ab>loc.</ab>); <ab>act.</ab>: {#i\maM jI\veBya^H pari\DiM da^DAmi#}
-<ls>ṚV. 10,18,4.</ls> {#daDo\ yatke\tumu^pa\maM sa\matsu^#}
-<ls n="ṚV.">7,30,3.</ls> {#sADa^nnf\tena\ Diya^M daDAmi#}
-<ls n="ṚV. 7,">34,8.</ls> {#DAyyAm, nividam#} вставлять
-<ls>AIT. BR. 2,33.</ls> <ls n="AIT. BR.">4,1.</ls>
-<ls>ŚAT. BR. 1,4,1,37.</ls> <ls n="ŚAT. BR.">13,5,1,9.</ls> {#avA\nyAMstantU^nki\rato^ Da\tto a\nyAn#} (<ab>vgl.</ab> впрочем <ab>v. l.</ab>
-<ls>AV. 10,7,42</ls>) <ls>TBR. 2,5,5,3.</ls> — {#taM vo\ jamBe^ daDmaH#}
-<ls>AV. 3,27,1.</ls> {#hanvo\rhi ji\hvAmada^DAt#}
-<ls n="AV.">10,2,7.</ls> {#garBa\M jaga^tIzu DatTaH#}
-<ls>ṚV. 1,157,5.</ls> {#tasmingarBaM daDAmyaham#}
-<ls>BHAG. 14,3.</ls> {#paya^ u\sriyA^yAmaDattam#}
-<ls>ṚV. 1,180,3.</ls> {#tAnvAyurAtmani DitvA#}
-<ls>ŚAT. BR. 14,6,3,2.</ls> {#vijYAtadozezu daDAti daRqam#} возложить палку на кого-л., так <ab>v. a.</ab> наложить наказание на кого-л.
-<ls>MBH. 5,1075.</ls> {#daRqaM ca me DAsyati#}
-<ls>R. 5,28,7.</ls> {#mama vrate te hfdayaM daDAmi#}
-<ls>PĀR. GṚHY. 2,2.</ls> <ab>med.</ab>: {#daSa^ te ka\laSA^nAmaDImahi#}
-<ls>ṚV. 4,32,19.</ls> {#tvaM di\vo Da\ruRa^M Diza\ oja^sA#}
-<ls n="ṚV.">1,56,6.</ls> {#A\re ma\nyuM du^rvi\datra^sya DImahi#}
-<ls n="ṚV.">10,35,4.</ls> {#ame\ viSvA^ aDiTA indra kf\zwIH#} поставить или перевести в
-<ls n="ṚV.">4,17,7.</ls> <ls n="ṚV.">2,34,9.</ls> <ab>pass.</ab> быть поставленным —, расставленным —, устроенным —; подвергаться: {#niHSaNkaM DIyate lokEH paSya Basmacaye padam#}
-<ls>HIT. II,163.</ls> ({#karAmbujam) yattvadaDAyi sAtvatAm (mUrDni#})
-<ls>BHĀG. P. 5,18,23.</ls> {#vi\SAma^DAyi vi\Spati^rduro\Re#}
-<ls>ṚV. 7,7,4.</ls> <ls n="ṚV.">3,5,3.</ls> {#indu\rindrA^ya DIyate . viryonA^ vasa\tAvi^va#}
-<ls n="ṚV.">9,62,15.</ls> {#e\za stomo^ ma\ha u\grAya\ vAhe^ Du\rI\3^\vAtyo\ na vA\jaya^nnaDAyi#}
-<ls n="ṚV.">7,24,5.</ls> {#na te\ anta\H Sava^so DAyya\sya#}
-<ls n="ṚV.">6,29,5.</ls> {#Df\zRave^ DIyate\ DanA^#}
-<ls n="ṚV.">1,81,3.</ls> {#prA\cIna\M reto^ DIyate#} семя вносится сзади наперед
-<ls>TS. 2,5,7,3.</ls> находиться в, содержаться в: {#evaM sarvamahiMsAyAM DarmArTamapi DIyate#}
-<ls>MBH. 12,8933.</ls>
-
-**1)b)** 2) доставить к, принести к (<ab>loc.</ab>); <ab>act.</ab>: {#i\maM no^ ya\jYama\mfte^zu Dehi#}
-[Page3-0902]
-<ls>ṚV. 3,21,1.</ls> <ls n="ṚV. 3,">2,9.</ls> {#di\vi ro^ca\nAnya^Dattam#}
-<ls n="ṚV.">1,93,5.</ls> {#tatra^ tvA de\vaH sa^vi\tA da^DAtu#}
-<ls n="ṚV.">10,17,4.</ls> <ls>AV. 9,5,10.</ls> {#strEzU^yama\nyatra\ daDa\tpumA^Msamu daDadi\ha#}
-<ls n="AV.">6,11,3.</ls> {#i\ha tvA^ Deyu\rhara^yaH#}
-<ls>ṚV. 3,50,2.</ls> {#dravi^Re\ha Da^ttAt#}
-<ls n="ṚV. 3,">8,1.</ls> <ls>ŚAT. BR. 11,5,5,6.</ls> {#grIvAsu tadgaRqaM daDyAt#} тем самым он вешает себе на шею зоб
-<ls>AIT. BR. 1,25.</ls>
-
-**1)c)** 3) перевести кого-л. в место или состояние, помочь кому-л., ввести в —, привести к (<ab>loc.</ab> <ab>dat.</ab>); <ab>act.</ab>: {#a\smA~ a^mfta\tve da^DAtana#}
-<ls>ṚV. 5,55,4.</ls> <ls n="ṚV.">1,31,7.</ls> {#dyAvA^pfTi\vI ame^ DAH#}
-<ls n="ṚV. 1,">63,1.</ls> {#sto\tAra^M ma\GavA\ vasO^ DAt#}
-<ls n="ṚV.">4,17,3.</ls> {#(tam) vra\jasya^ sA\tA goma^to daDAti#}
-<ls n="ṚV.">6,10,3.</ls> {#a\nA\gA\stve a^diti\tve tu\rAsa^ i\maM ya\jYaM da^Datu\ Sroza^mARAH#}
-<ls n="ṚV.">7,51,1.</ls> {#aharRo adya suvite daDAtu#}
-<ls>TBR. 3,1,2,3</ls> in <ls>Z. f. d. K. d. M. 7,271.</ls> — {#mAki^rno duri\tAya^ DAyIH#}
-<ls>ṚV. 1,147,5.</ls> {#mA no 'hi^rbu\Dnyo^ ri\ze DA^t#}
-<ls n="ṚV.">5,41,16.</ls> {#rA\ye de\vI Di\zaRA^ DAti de\vam#}
-<ls n="ṚV.">7,90,3.</ls> {#tA na^ U\rje da^DAtana#}
-<ls n="ṚV.">10,9,1.</ls> {#sva^Sca no maGavansA\taye^ DAH#} позвольте нам достичь
-<ls n="ṚV.">3,31,19.</ls> <ab>med.</ab>: {#ye tvA^ ni\de da^Di\re df\zwavI^ryam#}
-<ls n="ṚV.">2,23,14.</ls> {#goBi^rmimi\kzuM da^Dire supA\ramindra\M jyEzWyA^ya\ DAya^se gfRA\nAH#}
-<ls n="ṚV.">3,50,3.</ls> побудить к: {#indra\M vARI^H sa\trA rAjA^naM daDire\ saha^DyE#}
-<ls n="ṚV.">7,31,12.</ls> <ls n="ṚV.">6,67,7.</ls>
-
-**2)** <div n="1">— 2) {%накладывать, прикреплять%}
-<ls>SUŚR. 1,60,13</ls> (<ab>med.</ab>). {%накладывать стрелу на лук%}: {#pratisaMDAya cAstrARi te 'nyo'nyasya — yuyuDuH#}
-<ls>MBH. 6,3313.</ls> <ls n="MBH.">7,4841.</ls> {#paSyataH pratisaMDAya viDyataH savyasAcinaH#}
-<ls n="MBH.">4,2081.</ls>
-  — [PW·restate] доставлять, переносить к (<ab>Loc.</ab>) {#Are/#} уносить далеко прочь <ls>ṚV. 10,35,4</ls>. Большей частью <ab>Act.</ab>
-  — [PW·restate] 2〉 Дрова {%подкладывать%} (в огонь) <ls n="Chr.">37,16</ls>. <ls n="Chr. 37,">20</ls>. <ls n="Chr.">38,5</ls>.
-  — [PW·pw_correct] ~~(cancels PWG)~~ <div n="1">— 2〉 *<lex>m.</lex> <ab>Bein.</ab>
-<div n="2">— a〉 <is>Brahman</is>ʼs.
-  — [PW·restate] <div n="2">— b〉 <is>Bṛhaspati</is>ʼs.
-
-**3)** <div n="1">— 3) {%направлять на, против%}: {#manyustasya kaTaM SAmyenmAM cEva pratisaMhitaH#}
-<ls>MBH. 3,1926.</ls> {#maNgalEH stutiBiSca vijayapratisaMhitEH . cAraREH stUyamAnO#}
-<ls n="MBH.">1,7655.</ls>
-  — [PW·restate] переносить кого-либо в место или в состояние, помогать достичь, приводить в или к (<ab>Loc.</ab> или <ab>Dat.</ab>) <ls>ṚV. 2,34,9. 4,17,7</ls>. Большей частью <ab>Act.</ab>
-  — [PW·restate] 3〉 {%Ставить%} (в игре).
-  — [PW·restate] <div n="1">— 3〉 <lex>f.</lex> на конце <ab>Comp.</ab> <ab>Nom.</ab> <ab>act.</ab> от <hom>1.</hom> {#DA#}.
-
-**4)** <div n="1">— 4) {%возвращать, отвечать%}: {#vfzasya nazwAMstrInpAdAn — pratisaMdaDe#}
-<ls>BHĀG. P. 1,17,42.</ls> {#yanme vyavasitaM kAnta yacca me hfdi vartate . tanme manasi pratisaMDAtamurhasi#}
-<ls>HARIV. 9240.</ls>
-  — [PW·restate] направлять на (<ab>Dat.</ab> <ls>ṚV. 7,56,19</ls>, или <ab>Loc.</ab>), к или на (<ab>Loc.</ab>). {#cintAma, matim#} или {#manas#} направлять свои мысли на, думать о (<ab>Loc.</ab> или <ab>Dat.</ab>), решать (с <ab>Dat.</ab>, <ab>Loc.</ab>, <ab>Acc.</ab> с {#prati#}, <ab>Infin.</ab>, или прямая речь с {#iti#}). Большей частью <ab>Med.</ab> {#DIyamAna#} (<ab>v. l.</ab> {#vartamAna#}) и {#Dita#} (сомнительно) тот, чей ум направлен на (<ab>Loc.</ab> или <ab>Dat.</ab>).
-  — [PW·restate] 4〉 {%Отдавать в залог%}. Только {#Ahita#} {%заложенный, отданный в заклад%}.
-
-**5)** <div n="1">— 5) {%осознавать, угадывать%}: {#vanaM gataM tu tAdfSaM piRqamupalaBya ayamasO gavayavAcya iti pratisaMDatte#}
-<ls>Z. d. d. m. G. 7,310, N. 1.</ls> {%воспринимать, постигать%}: {#aDItamapi na pratisaMdaDAti#}
-(<ab>Schol.</ab> 1: = {#smarati#},
-<ab>Schol.</ab> 2 : {#pratisaMDatte#})
-<ls>PRAB. 34,19.</ls> —
-[Page3-0930]
-<ab>Vgl.</ab> {#pratisaMDAna, ˚Di, ˚Deya#} и {#pratisaMDita#} <ab>u.</ab> {#saMDay#} mit {#prati#} .
-  — [PW·restate] предназначать, жаловать, уделять, доставлять, давать, дарить кому-либо (<ab>Dat.</ab>, <ab>Loc.</ab> или <ab>Gen.</ab>) что-либо. Большей частью <ab>Act.</ab> <ab>Pass.</ab> быть пожалованным <ab>u. s. w.</ab>, так <ab>v. a.</ab> выпадать на долю <ls>ṚV. 1,81,3</ls>.
-  — [PW·restate] 5〉 <ab>Med.</ab> {%хранить%}.
-
-**6)** <div n="1">— 6) {%обманывать кого-либо, вводить в заблуждение%}: {#anyo 'nyamaBisaMDAtum#}
-<ls>MBH. 12,5116.</ls> {#prAjYo 'BisaMDatte samyagbudDisamASrayAt#} <ab>ebend.</ab> {#aBisaMDIyate prAjYaH pramAdAdapi buDEH#}
-<ls n="MBH. 12,">5119.</ls> <ab>v. l.</ab> für {#atisaM˚#}
-<ls>ŚĀK. 32,6.</ls> <ls n="ŚĀK.">69,23.</ls> {#janaM vidvAnekaH sakalamaBisaMDAya kapawEH#}
-<ls>MĀLAT. 7,9.</ls>
-  — [PW·restate] устанавливать, определять, предписывать, constituere.
-  — [PW·restate] 6〉 <ab>Med.</ab> {%разводить%} себе огонь (на очаге или алтаре).
-
-**6-cont)** <ls>VET. 29,8.</ls> {#apamArgam#}
-<ls>ŚIŚ. 9,36.</ls> {#cumbanam#}
-<ls>RĀJA-TAR. 5,383.</ls> {#nirluRWanam#}
-<ls>SĀH. D. 40,7.</ls>
-<ls>PAÑCAT. 9,23.</ls> <ls n="PAÑCAT.">40,20.</ls> {#SOcam#} {%очищаться%}
-<ls n="PAÑCAT.">35,9.</ls> {#lajjAm#} {%выказывать стыд%}
-<ls>BHARTṚ. 1,59.</ls>
-<ls>KATHĀS. 1,45</ls> {#mEtryam#} {%заключать дружбу%}
-<ls>HIT. 25,15</ls>, <ab>v. l.</ab> {#saMDim#} {%заключать мир%}
-<ls n="HIT.">109,1.</ls> {#kalaham#} {%затевать ссору%}
-<ls>BHAṬṬ. 12,33.</ls> {#saMgrAmam#}
-<ls>RĀJA-TAR. 5,288.</ls> {#kolAhalam#} {%поднимать крик%}
-<ls>VID. 177.</ls>
-
-**7)** <div n="1">— 7) {%взять кого-либо в свою власть, подчинять себе, держать в зависимости%}: {#tAnsarvAnaBisaMdaDyAtsAmAdiBirupakramEH#}
-<ls>M. 7,159.</ls> <ls n="M. 7,">180.</ls>
-<ls>RĀJA-TAR. 4,530.</ls> {#tejasA yaSasA budDyA balenABijanena ca . yaH kapInaBisaMDatte himavAniva parvatAn ..#}
-<ls>R. 6,4,52.</ls> —
-[Page3-0929]
-  — [PW·restate] назначать кем-либо, определять —, делать кем-либо, reddere; с двойным <ab>Acc.</ab> <ls>ṚV. 7,31,12</ls>. <ls>Spr. 1060</ls>.
-  — [PW·restate] 7〉 {%Кому-либо%} (<ab>Dat.</ab>, <ab>Loc.</ab> или <ab>Gen.</ab>) {%давать, жаловать, передавать, подносить, оказывать%} (честь).
-
-**8)** <div n="1">— 8) {%стремиться привлечь к себе —, склонить кого-либо%}: {#aBisaMDAtumAreBe hanUmAnaNgadaM tataH#}
-(<ab>Schol.</ab> = {#saMDAtum#} {%примирить%} с восполнением {#saha grIveRa#})
-<ls>R. 4,54,5.</ls> {%примкнуть к, вступить в союз с%}: {#balIyasABisaMDAya#}
-<ls>KĀM. NĪTIS. 9,64.</ls>
-  — [PW·restate] делать, осуществлять, предпринимать, производить, вызывать, создавать, порождать, производить на свет. {#ca/nas#} доставлять удовлетворение, предоставлять кому-либо (<ab>Dat.</ab>) что-либо (<ab>Acc.</ab>). <ab>Aor.</ab> с {#pUrayAm, mantrayAm, varayAm#} = {#cakAra#} <ls>Ind. St. 14,144</ls>.
-  — [PW·restate] 8〉 {%Погружать в%} (<ab>Loc.</ab>), {%приводить к%} (<ab>Dat.</ab>).
-
-**9)** <div n="1">— 9) {#aBisaMhita#} am Ende eines <ab>comp.</ab> {%связанный с, находящийся в отношении к%}: {#vAkyaM GorABisaMhitam#} so <ab>v. a.</ab> {%содержащий%}
-<ls>R. 1,58,8.</ls> {#vAyasastveza me rAjannanu kAryABisaMhitaH#} <ab>viell.</ab> so <ab>v. a.</ab> {%знакомый с%}
-<ls>MBH. 12,3087.</ls> {#hIne paramake Darme sarvalokABisaMhite#} (zu {#upajIvane#} zu ziehen) {#. sarvasmindasyusAdBUte pfTivyAmupajIvane ..#} wohl so <ab>v. a.</ab> {%предназначенный для%}
-<ls n="MBH. 12,">4793.</ls>
-  — [PW·restate] держать (в руке), схватывать, нести, носить в себе (плод чрева).
-  — [PW·restate] 9〉 {%Употреблять для, применять при%} (<ab>Loc.</ab>).
-  — [PW·restate] <div n="1">— 9〉 {#upahita#}
-  — [PW·restate] <div n="2">— a〉 {%доставленный, приведенный, подведенный%}.
-  — [PW·restate] <div n="2">— b〉 {%предпринятый%} <ls>{{MBH. 13,61,40->MBH. 13,40,40||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}</ls>.
-  — [PW·restate] <div n="2">— c〉 {%соблазненный, введенный в заблуждение или обманутый%}.
-
-**10)** <div n="1">— 10) {%пользоваться чем-либо%} (<ab>instr.</ab>): {#tasmAdbalaSca kozaM ca#} (lies: {#balaM ca kozaSca) nItiScApi viDIyatAm . yaTA kAlodaye prApte samyaktEH saMdaDAmahe#} (sic) {#..#}
-<ls>MBH. 4,964.</ls>
-  — [PW·restate] носить одежду, украшение, цветок.
-  — [PW·restate] 10〉 <ab>Med.</ab> {%схватывать, брать%} <ls>Spr. 7735</ls>.
-
-**11)** <div n="1">— 11) {%отряжать, отсылать%}: {#cArAn#}
-(<ls>KULL.</ls> {#prasTApya#})
-<ls>M. 7,184</ls>; <ab>vgl.</ab> {#prativi#} .
-  — [PW·restate] нести, так <ab>v. a.</ab> поддерживать, сохранять.
-  — [PW·restate] 11〉 <ab>Med.</ab> {%принимать, получать%}. {#ga/rBam#} {%зачинать плод, concipere%}.
-
-**12)** <div n="1">— 12) {%обращаться с кем-либо%}: {#taTA viDAtuM jananIM mamArhasiyiTA — na yamakzayaM vrajet#}
-<ls>R. 2,38,17.</ls>
-  — [PW·restate] <ab>Med.</ab> принимать, воспринимать, получать, обретать <ls>ṚV. 4,32,19. 6,67,7</ls>. <ab>insbes.</ab> зачать плод, concipere. {#a/ntam#} обретать конец <ls>ṚV. 6,29,5</ls>. {#o/kas#} и {#ca/nas#} находить удовольствие —, радоваться чему-либо (<ab>Loc.</ab> или <ab>Dat.</ab>).
-  — [PW·restate] 12〉 <ab>Med.</ab> детей {%зачинать%} от женщины (<ab>Instr.</ab> или <ab>Loc.</ab>).
-
-**13)** <div n="1">— 13) {#vihita#} {%снабженный чем-либо, обладающий%}: {#annapAnEH suvihitAH#}
-<ls>R. 1,13,16.</ls> {#sarvakAmEH suvihitA#}
-<ls>MBH. 3,2711.</ls> {#adya sarve DanADyakzA DanamAdAya puzkalam . vrajantvagre suvihitA nAnAratnasamanvitAH#} wohl {%богато наделенный всем%}
-<ls>R. 1,69,2.</ls>
-  — [PW·restate] присваивать себе, принимать, так <ab>v. a.</ab> обнаруживать в себе, проявлять, навлекать на себя, иметь при себе, обладать, утверждать.
-  — [PW·restate] 13〉 {%Принимать в себя%} или {%вбирать в себя%}; учение {%принимать%} (<ab>buddh.</ab>), обет {%брать на себя, — давать%} ({#Ahita#} {%данный%}), душевному состоянию {%предаваться%}. В порядке исключения <ab>Act.</ab>
-
-**14)** <div n="1">— 14) {#viDAya budDyA dvArARi#}
-<ls>MĀRK. P. 41,20</ls> ошибочно вм. {#piDAya#} .
-  — [PW·restate] {#aDAyata#} <ls>MBH. 4,1347</ls> ошибочно вм. {#aDArayat#}.
-  — [PW·restate] 14〉 {%Порождать, производить, вызывать%} <ls n="Chr.">324,30</ls>. {#sAMmuKyam#} так <ab>v. a.</ab> {%обращаться к%}. В порядке исключения <ab>Act.</ab>
-
-**Caus.)** <div n="v">— <ab>Vgl.</ab> {#upaniDAtar#} <ab>fgg.</ab>
-
-**Caus. 1)** <div n="v">— <ab>Vgl.</ab> {#niDAtavya#} <ab>fgg.</ab>, {#durRihitEzin#} . — <ab>caus.</ab>
-<div n="1"> 1) {%заставлять вкладывать в%}: {#kumBezvetAni sImAntezu niDApayet#}
-<ls>BṚHASP.</ls> у <ls>KULL.</ls> для <ls>M. 8,250.</ls> <ls n="M. 8,">251.</ls> {%заставлять хранить%}: {#praRazwasvAmikaM rikTaM rAjA tryabdaM niDApayet#}
-<ls>M. 8,30.</ls>
-
-**Caus. 2)** <div n="1">— 2) {%назначать кого-л. кем-л.%}: {#tezu (varzezu) svAtmajAn — niDApyADipatIn#}
-<ls>BHĀG. P. 5,20,25.</ls> — <ab>intens.</ab>, по-видимому, в пассаже: {#E\ndraH prA\Ro aNge^ aNge\ ni de^DyadE\ndro^ 'pA\no #}
-{# aNge^ aNge\ vi bo^Buvat#} (вероятно, {%да утвердится%})
-<ls>TS. 1,3,10,1</ls>; <ab>vgl.</ab>
-<ls>VS. 6,20.</ls>
-
-**Desid.)** <div n="v">— <ab>Vgl.</ab> {#anapanihitam#} .
-
-**PPP-1)** <div n="1"> 1) {%разделенный, отделенный%}: {#rAtriBirantarhitO#}
-<ls>ŚAT. BR. 2,2,3,13.</ls> <ls n="ŚAT. BR.">13,8,1,20.</ls> {#a/nantarhita#} {%не разделенный никаким промежутком <ab>u. s. w.</ab>, непосредственно связанный. — следующий%}
-<ls>ŚAT. BR. 1,6,3,27.</ls> <ls n="ŚAT. BR.">6,2,3,2.</ls> {#prajA#}
-<ls n="ŚAT. BR. 6,">5,3,5.</ls> {#jAtarUpa#}
-<ls n="ŚAT. BR.">14,9,4,25.</ls>
-
-**PPP-2)** <div n="1">— 2) {%покрытый%}: {#SezvAnantarhitAyAM tvaM BUmO#} {%на голой земле%}
-<ls>R. 2,9,18.</ls> {#AsIta nAnantarhitAyAm#} (<ab>sc.</ab> {#BUmO#})
-<ls>ŚĀṄKH. GṚHY. 4,12.</ls>
-<ls>LĀṬY. 9,8,4.</ls> {#anantarhitAM nABimaBimfSet#}
-<ls>GOBH. 2,10,23.</ls> {#pAtrezu darBAntarhitezvapa Asicya#} {%в сосуды, над которыми держат пучок травы%},
-<ls>ĀŚV. GṚHY. 4,7.</ls> {%завернутый, скрытый, спрятанный, сделанный невидимым, исчезнувший, невидимый%}
-<ls>H. 1477.</ls> {#BUtezu #}
-[Page3-0906]
-{# cAntarhitaH#}
-<ls>BHĀG. P. 1,3,36.</ls> {#pAdapAntarhita#}
-<ls>ŚĀK. 9,18</ls>, <ab>v. l.</ab> {#mayA te 'ntarhitaM rUpam#}
-<ls>MBH. 3,2621.</ls> <ls n="MBH.">4,1684.</ls> {#ya u^dA\rA a\ntarhi^tAH#}
-<ls>AV. 11,9,16.</ls>
-<ls>ŚAT. BR. 13,8,2,1.</ls> {#siMhO BUtvA punarvyAGrO punaScAntarhitAvuBO#}
-<ls>SUND. 2,21.</ls>
-<ls>MBH. 1,119.</ls> <ls n="MBH. 1,">4710.</ls> <ls n="MBH.">3,2496.</ls> <ls n="MBH. 3,">2634.</ls> <ls n="MBH. 3,">2699.</ls> <ls n="MBH.">4,450.</ls> <ls n="MBH.">5,7266.</ls>
-<ls>R. 3,15,17.</ls>
-<ls>RAGH. 13,40.</ls>
-<ls>BHĀG. P. 1,16,24.</ls> С <ab>abl.</ab> {%скрытый от, недоступный чьему-л. взору%}
-<ls>ŚAT. BR. 1,9,1,24.</ls>
-<ls>VOP. 5,20.</ls>
-
-**aByava+DA)** <div n="p">— {#aByava#} {%сбивать%} (пыль): {#pOrajanASruBiH . patitEraByavahitaM praSaSAma mahIrajaH ..#}
-<ls>R. 2,40,33.</ls>
-
-**caus.)** <div n="v">— <ab>Vgl.</ab> {#avaDAtavya, ˚DAna, ˚Di#} . — <ab>caus.</ab>: {#gartezvavakAmavaDApayet#} {%велит вложить%} <ls>ĀŚV. GṚHY. 2,8. 4,4.</ls>
-
-**caus-1)** <div n="1"> 1) {%заставлять надевать%} (кого-л. одежду), {%одевать кого-л. в%}; с <ab>dopp.</ab> <ab>acc.</ab>: {#tArpyaM yajamAnaM pariDApayati#}
-<ls>TBR. 1,3,7,1.</ls>
-<ls>ŚAT. BR. 5,2,1,8.</ls>
-<ls>KĀTY. ŚR. 14,5,3.</ls>
-<ls>KAUŚ. 54.</ls>
-<ls>PĀR. GṚHY. 2,1. 2.</ls>
-<ls>RĀJA-TAR. 4,669.</ls>
-<ls>DAŚAK.</ls> в <ls>BENF. Chr. 200,7.</ls>
-
-**caus-2)** <div n="1">— 2) {%окружать, облекать чем-л.%} (<ab>instr.</ab>): {#yena^ de\vaM sa^vi\tAra\M pari^ de\vA aDA^payan#} (так надлежит восстановить чтение)
-<ls>AV. 19,24,1.</ls> {#indra^sya tvA\ varma^RA\ pari^ DApayAmaH#}
-<ls n="AV. 19,">46,4.</ls> <ls n="AV.">12,3,51.</ls> — <ab>desid.</ab> {%быть намерен надеть на себя%}: {#kfzRAjinAni pariDitsamAnAn#}
-<ls>MBH. 5,853.</ls>
-
-**caus./desid.)** <div n="v">— <ab>Vgl.</ab> {#ADAna, ADAyaka#},
-1. {#ADi#}, {#ADeya, Ahiti#}.
-[Page3-0911]
-— <ab>caus.</ab> {%велеть посадить%}: {#ADApayati#}
-<ls>KAUŚ. 75.</ls> — <ab>desid.</ab> {%желать наложить%}: {#agnim#}
-<ls>TBR. 1,1,2,2.</ls> {%желать дать —, передать%}: {#daRqamADitsatA#}
-<ls>MBH. 12,3170.</ls>
-
-**des-1)** <div n="1"> 1) {%намереваться даровать%}: {#anAmarUpAtmani rUpanAmanI viDitmamAnaH#}
-<ls>BHĀG. P. 1,10,22.</ls>
-
-**des-2)** <div n="1">— 2) {%пытаться установить, стараться представить что-либо как решенное%}: {#taTA pratizWAguRaM viDitsannAha#}
-<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. p. 118.</ls> {#evaM prARavijYAnavato japakarma viDitsyate#}
-<ls n="BṚH. ĀR. UP.">119.</ls> {#karma vakzyamARamantrajapalakzaRaM viDitsamAnaM#} (lies {#˚DitsyamAnaM#}) {#tadetAni japediti#}
-<ls n="BṚH. ĀR. UP.">66.</ls>
-
-**des-3)** <div n="1">— 3) {%намереваться совершить <ab>u. s. w.</ab>, иметь намерение%}: {#so 'haM nEvAkftaM pUrvaM careyaM viDitsamAnaH kimu tatra sADu#}
-<ls>MBH. 1,3657.</ls> {#brahmaRaH — prajAsargaM viDitsataH#}
-<ls>HARIV. 1311.</ls> {#vErasyAntaM viDitsan#}
-<ls n="HARIV.">6460.</ls> {#BagavAMstadviDitsati#}
-<ls>BHĀG. P. 3,16,35.</ls> {#viDitsita#} <lex>n.</lex> {%намерение%}
-<ls n="BHĀG. P.">1,9,16.</ls> {#viDitsamAna#} {%имеющий определенные намерения, преследующий определенные цели%}
-<ls>MBH. 3,13952.</ls> {#ka upAyaM viDitset#} so <ab>v. a.</ab> {%кто бы стал думать уже и о средстве?%}
-<ls>BHĀG. P. 4,6,7.</ls> {#AtmAnamapratidvandvamekarAjaM vyaDitsata#} {%он думал о том, чтобы стать единовластным правителем%}
-<ls n="BHĀG. P.">7,3,1.</ls>
-
-**desid)** <div n="v">— <ab>Vgl.</ab> {#samADA#} <ab>fgg.</ab> — <ab>desid.</ab> {%желать побудить кого-либо%} (<ab>acc.</ab>) {%к тому, чтобы он сосредоточился%}: {#AtmAnamasamADAya samADitsati yaH parAn#}
-<ls>MBH. 12,9586.</ls>
-
-**desid-intro)** <div n="p">— <ab>desid.</ab>
-
-**intens)** <div n="p">— <ab>intens.</ab> {#deDIyate#}
-<ls>P. 6,4,66.</ls>
-
-**intro)** <div n="p">— {#upasam#}
+Re-glue — DA
+
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
+
+## омоним h0
+
+**1)** — *pratisam*
+ 1) вновь соединять, складывать вместе: *yajñam*
+[ŚAT. BR. 12,6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,2) [37.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,37) *yadyātmānameva pratisaṃdhatte* вероятно, собираться
+[PRAB. 99,14], v. l.
+  — ＋ PW класть, полагать, ставить, вставлять, вносить — в или на (Loc.). *daṇḍam* возложить посох на, так преим. наложить наказание на (Loc. или Gen.). *tatpadavyāṃ padam* поставить ногу на его путь, так преим. следовать его примеру, уподобляться ему [251,7](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251). Большей частью Act.
+  — ＋ PW 1〉 ставить, класть —, помещать —, вносить в, на или при (Loc.), зародыш помещать в женщину (Gen.) [71,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?71). Добродетели кому-либо (Loc.) прививать, взор, мысль, думы направлять на (Loc.), старание прилагать к (*pratipātram*), вину на кого-либо (Loc.) перекладывать, страх кому-либо (Loc.) внушать. В позднейшем языке обычно Med. *āhita* наложенный, помещенный внутрь (зародыш [73,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73)).
+  — ＋ PW **2.** *dhā*
+— 1〉 _Adj._ на конце Comp. в знач. Nom. ag. от **1.** *dhā*.
+
+**1)a)** 1) класть, помещать, ставить; класть —, помещать в, на (loc.); act.: *imaṃ jīvebhyaḥ paridhiṃ dadhāmi*
+[ṚV. 10,18,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.018.html#rv10.018.04) *dadho yatketumupamaṃ samatsu*
+[7,30,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.030.html#rv07.030.03) *sādhannṛtena dhiyaṃ dadhāmi*
+[34,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.034.html#rv07.034.08) *dhāyyām, nividam* вставлять
+[AIT. BR. 2,33.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,33) [4,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,1)
+[ŚAT. BR. 1,4,1,37.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,4,1,37) [13,5,1,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,1,9) *avānyāṃstantūnkirato dhatto anyān* (ср. впрочем v. l.
+[AV. 10,7,42](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.007.html#av10.007.42)) [TBR. 2,5,5,3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?2,5,5,3) — *taṃ vo jambhe dadhmaḥ*
+[AV. 3,27,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.027.html#av03.027.01) *hanvorhi jihvāmadadhāt*
+[10,2,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.002.html#av10.002.07) *garbhaṃ jagatīṣu dhatthaḥ*
+[ṚV. 1,157,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.157.html#rv01.157.05) *tasmingarbhaṃ dadhāmyaham*
+[BHAG. 14,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,3) *paya usriyāyāmadhattam*
+[ṚV. 1,180,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.03) *tānvāyurātmani dhitvā*
+[ŚAT. BR. 14,6,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,3,2) *vijñātadoṣeṣu dadhāti daṇḍam* возложить палку на кого-л., так преим. наложить наказание на кого-л.
+[MBH. 5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Вульг. 5.33.105](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U03_A033_S105) = ≈крит. 05,33.86a *daṇḍaṃ ca me dhāsyati*
+[R. 5,28,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,28,7) *mama vrate te hṛdayaṃ dadhāmi*
+[PĀR. GṚHY. 2,2.] мед.: *daśa te kalaśānāmadhīmahi*
+[ṚV. 4,32,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19) *tvaṃ divo dharuṇaṃ dhiṣa ojasā*
+[1,56,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.056.html#rv01.056.06) *āre manyuṃ durvidatrasya dhīmahi*
+[10,35,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04) *ame viśvā adhithā indra kṛṣṭīḥ* поставить или перевести в
+[4,17,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.017.html#rv04.017.07) [2,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09) pass. быть поставленным —, расставленным —, устроенным —; подвергаться: *niḥśaṅkaṃ dhīyate lokaiḥ paśya bhasmacaye padam*
+[HIT. II,163.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,163) (*karāmbujam) yattvadadhāyi sātvatām (mūrdhni*)
+[BHĀG. P. 5,18,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,23) *viśāmadhāyi viśpatirduroṇe*
+[ṚV. 7,7,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.007.html#rv07.007.04) [3,5,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.005.html#rv03.005.03) *indurindrāya dhīyate . viryonā vasatāviva*
+[9,62,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.062.html#rv09.062.15) *eṣa stomo maha ugrāya vāhe dhurī3vātyo na vājayannadhāyi*
+[7,24,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.024.html#rv07.024.05) *na te antaḥ śavaso dhāyyasya*
+[6,29,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05) *dhṛṣṇave dhīyate dhanā*
+[1,81,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03) *prācīnaṃ reto dhīyate* семя вносится сзади наперед
+[TS. 2,5,7,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,7,3) находиться в, содержаться в: *evaṃ sarvamahiṃsāyāṃ dharmārthamapi dhīyate*
+[MBH. 12,8933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8933) = [≈Вульг. 12.250.18](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A250_S018) = ≈крит. 12,242.18a
+
+**1)b)** 2) доставить к, принести к (loc.); act.: *imaṃ no yajñamamṛteṣu dhehi*
+
+[ṚV. 3,21,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.021.html#rv03.021.01) [2,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.002.html#rv03.002.09) *divi rocanānyadhattam*
+[1,93,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.093.html#rv01.093.05) *tatra tvā devaḥ savitā dadhātu*
+[10,17,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.04) [AV. 9,5,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.10) *straiṣūyamanyatra dadhatpumāṃsamu dadhadiha*
+[6,11,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.011.html#av06.011.03) *iha tvā dheyurharayaḥ*
+[ṚV. 3,50,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.050.html#rv03.050.02) *draviṇeha dhattāt*
+[8,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.008.html#rv03.008.01) [ŚAT. BR. 11,5,5,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,6) *grīvāsu tadgaṇḍaṃ dadhyāt* тем самым он вешает себе на шею зоб
+[AIT. BR. 1,25.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,25)
+
+**1)c)** 3) перевести кого-л. в место или состояние, помочь кому-л., ввести в —, привести к (loc. dat.); act.: *asmā amṛtatve dadhātana*
+[ṚV. 5,55,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.055.html#rv05.055.04) [1,31,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.031.html#rv01.031.07) *dyāvāpṛthivī ame dhāḥ*
+[63,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.063.html#rv01.063.01) *stotāraṃ maghavā vasau dhāt*
+[4,17,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.017.html#rv04.017.03) *(tam) vrajasya sātā gomato dadhāti*
+[6,10,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.010.html#rv06.010.03) *anāgāstve adititve turāsa imaṃ yajñaṃ dadhatu śroṣamāṇāḥ*
+[7,51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.051.html#rv07.051.01) *aharṇo adya suvite dadhātu*
+[TBR. 3,1,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,2,3) in [Z. f. d. K. d. M. 7,271.] — *mākirno duritāya dhāyīḥ*
+[ṚV. 1,147,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.147.html#rv01.147.05) *mā no 'hirbudhnyo riṣe dhāt*
+[5,41,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.041.html#rv05.041.16) *rāye devī dhiṣaṇā dhāti devam*
+[7,90,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.03) *tā na ūrje dadhātana*
+[10,9,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.009.html#rv10.009.01) *svaśca no maghavansātaye dhāḥ* позвольте нам достичь
+[3,31,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.031.html#rv03.031.19) мед.: *ye tvā nide dadhire dṛṣṭavīryam*
+[2,23,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.14) *gobhirmimikṣuṃ dadhire supāramindraṃ jyaiṣṭhyāya dhāyase gṛṇānāḥ*
+[3,50,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.050.html#rv03.050.03) побудить к: *indraṃ vāṇīḥ satrā rājānaṃ dadhire sahadhyai*
+[7,31,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.12) [6,67,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.07)
+
+**2)** — 2) накладывать, прикреплять
+[SUŚR. 1,60,13] (мед.). накладывать стрелу на лук: *pratisaṃdhāya cāstrāṇi te 'nyo'nyasya — yuyudhuḥ*
+[MBH. 6,3313.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3313) = [≈Вульг. 6.76.2](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A076_S002) = ≈крит. 06,72.2c [7,4841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4841) = [≈Вульг. 7.121.36](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U05_A121_S036) = ≈крит. 07,97.34a *paśyataḥ pratisaṃdhāya vidhyataḥ savyasācinaḥ*
+[4,2081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2081) = [≈Вульг. 4.64.46](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A064_S046) = ≈крит. 04,59.41a
+  — ＋ PW доставлять, переносить к (Loc.) *āre* уносить далеко прочь [ṚV. 10,35,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.035.html#rv10.035.04). Большей частью Act.
+  — ＋ PW 2〉 Дрова подкладывать (в огонь) [37,16](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [38,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?38).
+  — ＋ PW ~~(cancels PWG)~~ — 2〉 *_m._ эпит.
+— a〉 Брахманʼs.
+  — ＋ PW — b〉 Брихаспатиʼs.
+
+**3)** — 3) направлять на, против: *manyustasya kathaṃ śāmyenmāṃ caiva pratisaṃhitaḥ*
+[MBH. 3,1926.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1926) = [≈Вульг. 3.48.12](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U05_A048_S012) = ≈крит. 03,46.12c *maṅgalaiḥ stutibhiśca vijayapratisaṃhitaiḥ . cāraṇaiḥ stūyamānau*
+[1,7655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7655) = [≈Вульг. 1.207.45](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U14_A207_S045) = ≈крит. 01,199.44a
+  — → PW переносить кого-либо в место или в состояние, помогать достичь, приводить в или к (Loc. или Dat.) [ṚV. 2,34,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.034.html#rv02.034.09) [ṚV. 4,17,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.017.html#rv04.017.07). Большей частью Act.
+  — ≈ PW 3〉 Ставить (в игре).
+  — → PW — 3〉 _f._ на конце Comp. Nom. act. от **1.** *dhā*.
+
+**4)** — 4) возвращать, отвечать: *vṛṣasya naṣṭāṃstrīnpādān — pratisaṃdadhe*
+[BHĀG. P. 1,17,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,42) *yanme vyavasitaṃ kānta yacca me hṛdi vartate . tanme manasi pratisaṃdhātamurhasi*
+[HARIV. 9240.](https://sanskrit-lexicon-scans.github.io/hariv?9240)
+  — → PW направлять на (Dat. [ṚV. 7,56,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.056.html#rv07.056.19), или Loc.), к или на (Loc.). *cintāma, matim* или *manas* направлять свои мысли на, думать о (Loc. или Dat.), решать (с Dat., Loc., Acc. с *prati*, Infin., или прямая речь с *iti*). Большей частью Med. *dhīyamāna* (v. l. *vartamāna*) и *dhita* (сомнительно) тот, чей ум направлен на (Loc. или Dat.).
+  — ʰ PW 4〉 Отдавать в залог. Только *āhita* заложенный, отданный в заклад.
+
+**5)** — 5) осознавать, угадывать: *vanaṃ gataṃ tu tādṛśaṃ piṇḍamupalabhya ayamasau gavayavācya iti pratisaṃdhatte*
+[Z. d. d. m. G. 7,310, N. 1.] воспринимать, постигать: *adhītamapi na pratisaṃdadhāti*
+(схол. 1: = *smarati*,
+схол. 2 : *pratisaṃdhatte*)
+[PRAB. 34,19.] —
+
+ср. *pratisaṃdhāna, ˚dhi, ˚dheya* и *pratisaṃdhita* u. *saṃdhay* mit *prati* .
+  — ＋ PW предназначать, жаловать, уделять, доставлять, давать, дарить кому-либо (Dat., Loc. или Gen.) что-либо. Большей частью Act. Pass. быть пожалованным и т.д., так преим. выпадать на долю [ṚV. 1,81,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.081.html#rv01.081.03).
+  — ＋ PW 5〉 Med. хранить.
+
+**6)** — 6) обманывать кого-либо, вводить в заблуждение: *anyo 'nyamabhisaṃdhātum*
+[MBH. 12,5116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5116) = [≈Вульг. 12.139.36](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A139_S036) = ≈крит. 12,137.32c *prājño 'bhisaṃdhatte samyagbuddhisamāśrayāt* там же *abhisaṃdhīyate prājñaḥ pramādādapi budhaiḥ*
+[5119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5119) = [≈Вульг. 12.139.39](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A139_S039) = ≈крит. 12,137.35a v. l. für *atisaṃ˚*
+[ŚĀK. 32,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,6) [69,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?69,23) *janaṃ vidvānekaḥ sakalamabhisaṃdhāya kapaṭaiḥ*
+[MĀLAT. 7,9.]
+  — ＋ PW устанавливать, определять, предписывать, constituere.
+  — ＋ PW 6〉 Med. разводить себе огонь (на очаге или алтаре).
+
+**6-cont)** [VET. 29,8.] *apamārgam*
+[ŚIŚ. 9,36.] *cumbanam*
+[RĀJA-TAR. 5,383.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,383) *nirluṇṭhanam*
+[SĀH. D. 40,7.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?40,7)
+[PAÑCAT. 9,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?9,23) [40,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,20) *śaucam* очищаться
+[35,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,9) *lajjām* выказывать стыд
+[BHARTṚ. 1,59.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,59)
+[KATHĀS. 1,45](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,45) *maitryam* заключать дружбу
+[HIT. 25,15](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?25,15), v. l. *saṃdhim* заключать мир
+[109,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?109,1) *kalaham* затевать ссору
+[BHAṬṬ. 12,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?12,33) *saṃgrāmam*
+[RĀJA-TAR. 5,288.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,288) *kolāhalam* поднимать крик
+[VID. 177.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?177)
+
+**7)** — 7) взять кого-либо в свою власть, подчинять себе, держать в зависимости: *tānsarvānabhisaṃdadhyātsāmādibhirupakramaiḥ*
+[M. 7,159.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,159) [180.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,180)
+[RĀJA-TAR. 4,530.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,530) *tejasā yaśasā buddhyā balenābhijanena ca . yaḥ kapīnabhisaṃdhatte himavāniva parvatān ..*
+[R. 6,4,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,52) —
+  — → PW назначать кем-либо, определять —, делать кем-либо, reddere; с двойным Acc. [ṚV. 7,31,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.031.html#rv07.031.12). [Spr. 1060](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1060).
+  — → PW 7〉 Кому-либо (Dat., Loc. или Gen.) давать, жаловать, передавать, подносить, оказывать (честь).
+
+**8)** — 8) стремиться привлечь к себе —, склонить кого-либо: *abhisaṃdhātumārebhe hanūmānaṅgadaṃ tataḥ*
+(схол. = *saṃdhātum* примирить с восполнением *saha grīveṇa*)
+[R. 4,54,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,5) примкнуть к, вступить в союз с: *balīyasābhisaṃdhāya*
+[KĀM. NĪTIS. 9,64.]
+  — → PW делать, осуществлять, предпринимать, производить, вызывать, создавать, порождать, производить на свет. *canas* доставлять удовлетворение, предоставлять кому-либо (Dat.) что-либо (Acc.). Aor. с *pūrayām, mantrayām, varayām* = *cakāra* [Ind. St. 14,144].
+  — ＋ PW 8〉 Погружать в (Loc.), приводить к (Dat.).
+
+**9)** — 9) *abhisaṃhita* am Ende eines comp. связанный с, находящийся в отношении к: *vākyaṃ ghorābhisaṃhitam* so преим. содержащий
+[R. 1,58,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,58,8) *vāyasastveṣa me rājannanu kāryābhisaṃhitaḥ* возможно so преим. знакомый с
+[MBH. 12,3087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3087) = [≈Вульг. 12.82.61](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A082_S061) = ≈крит. 12,83.60a *hīne paramake dharme sarvalokābhisaṃhite* (zu *upajīvane* zu ziehen) *. sarvasmindasyusādbhūte pṛthivyāmupajīvane ..* wohl so преим. предназначенный для
+[4793.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4793) = [≈Вульг. 12.134.12](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A134_S012) = ≈крит. 12,132.11a
+  — ＋ PW держать (в руке), схватывать, нести, носить в себе (плод чрева).
+  — ＋ PW 9〉 Употреблять для, применять при (Loc.).
+  — ʰ PW — 9〉 *upahita*
+  — ＋ PW — a〉 доставленный, приведенный, подведенный.
+  — ＋ PW — b〉 предпринятый [{{MBH. 13,61,40->MBH. 13,40,40||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}].
+  — ＋ PW — c〉 соблазненный, введенный в заблуждение или обманутый.
+
+**10)** — 10) пользоваться чем-либо (instr.): *tasmādbalaśca koṣaṃ ca* (lies: *balaṃ ca koṣaśca) nītiścāpi vidhīyatām . yathā kālodaye prāpte samyaktaiḥ saṃdadhāmahe* (sic) *..*
+[MBH. 4,964.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.964) = [≈Вульг. 4.29.8](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A029_S008) = ≈крит. 04,28.8a
+  — ＋ PW носить одежду, украшение, цветок.
+  — ＋ PW 10〉 Med. схватывать, брать [Spr. 7735](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7735).
+
+**11)** — 11) отряжать, отсылать: *cārān*
+([KULL.] *prasthāpya*)
+[M. 7,184](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,184); ср. *prativi* .
+  — ≈ PW нести, так преим. поддерживать, сохранять.
+  — ʰ PW 11〉 Med. принимать, получать. *garbham* зачинать плод, concipere.
+
+**12)** — 12) обращаться с кем-либо: *tathā vidhātuṃ jananīṃ mamārhasiyithā — na yamakṣayaṃ vrajet*
+[R. 2,38,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17)
+  — → PW Med. принимать, воспринимать, получать, обретать [ṚV. 4,32,19.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.032.html#rv04.032.19) [ṚV. 6,67,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.067.html#rv06.067.07). особ. зачать плод, concipere. *antam* обретать конец [ṚV. 6,29,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.029.html#rv06.029.05). *okas* и *canas* находить удовольствие —, радоваться чему-либо (Loc. или Dat.).
+  — → PW 12〉 Med. детей зачинать от женщины (Ins. или Loc.).
+
+**13)** — 13) *vihita* снабженный чем-либо, обладающий: *annapānaiḥ suvihitāḥ*
+[R. 1,13,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,16) *sarvakāmaiḥ suvihitā*
+[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S018) = ≈крит. 03,66.16c *adya sarve dhanādhyakṣā dhanamādāya puṣkalam . vrajantvagre suvihitā nānāratnasamanvitāḥ* wohl богато наделенный всем
+[R. 1,69,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,69,2)
+  — ＋ PW присваивать себе, принимать, так преим. обнаруживать в себе, проявлять, навлекать на себя, иметь при себе, обладать, утверждать.
+  — ＋ PW 13〉 Принимать в себя или вбирать в себя; учение принимать (будд.), обет брать на себя, — давать (*āhita* данный), душевному состоянию предаваться. В порядке исключения Act.
+
+**14)** — 14) *vidhāya buddhyā dvārāṇi*
+[MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20) ошибочно вм. *pidhāya* .
+  — ʰ PW *adhāyata* [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) ошибочно вм. *adhārayat*.
+  — ʰ PW 14〉 Порождать, производить, вызывать [324,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?324). *sāṃmukhyam* так преим. обращаться к. В порядке исключения Act.
+
+**Caus.)** — ср. *upanidhātar* сл.
+
+**Caus. 1)** — ср. *nidhātavya* сл., *durṇihitaiṣin* . — caus.
+ 1) заставлять вкладывать в: *kumbheṣvetāni sīmānteṣu nidhāpayet*
+[BṚHASP.] у [KULL.] для [M. 8,250.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,250) [251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,251) заставлять хранить: *praṇaṣṭasvāmikaṃ rikthaṃ rājā tryabdaṃ nidhāpayet*
+[M. 8,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,30)
+
+**Caus. 2)** — 2) назначать кого-л. кем-л.: *teṣu (varṣeṣu) svātmajān — nidhāpyādhipatīn*
+[BHĀG. P. 5,20,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,20,25) — intens., по-видимому, в пассаже: *aindraḥ prāṇo aṅge aṅge ni dedhyadaindro 'pāno *
+* aṅge aṅge vi bobhuvat* (вероятно, да утвердится)
+[TS. 1,3,10,1](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,3,10,1); ср.
+[VS. 6,20.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,20)
+
+**Desid.)** — ср. *anapanihitam* .
+
+**PPP-1)** 1) разделенный, отделенный: *rātribhirantarhitau*
+[ŚAT. BR. 2,2,3,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,2,3,13) [13,8,1,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,1,20) *anantarhita* не разделенный никаким промежутком и т.д., непосредственно связанный. — следующий
+[ŚAT. BR. 1,6,3,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,27) [6,2,3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,2,3,2) *prajā*
+[5,3,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,5,3,5) *jātarūpa*
+[14,9,4,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,25)
+
+**PPP-2)** — 2) покрытый: *śeṣvānantarhitāyāṃ tvaṃ bhūmau* на голой земле
+[R. 2,9,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,9,18) *āsīta nānantarhitāyām* (а именно *bhūmau*)
+[ŚĀṄKH. GṚHY. 4,12.]
+[LĀṬY. 9,8,4.] *anantarhitāṃ nābhimabhimṛśet*
+[GOBH. 2,10,23.] *pātreṣu darbhāntarhiteṣvapa āsicya* в сосуды, над которыми держат пучок травы,
+[ĀŚV. GṚHY. 4,7.] завернутый, скрытый, спрятанный, сделанный невидимым, исчезнувший, невидимый
+[H. 1477.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1477) *bhūteṣu *
+
+* cāntarhitaḥ*
+[BHĀG. P. 1,3,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,36) *pādapāntarhita*
+[ŚĀK. 9,18](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?9,18), v. l. *mayā te 'ntarhitaṃ rūpam*
+[MBH. 3,2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2621) = [≈Вульг. 3.66.14](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A066_S014) = ≈крит. 03,63.13a [4,1684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1684) = [≈Вульг. 4.54.25](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U04_A054_S025) = крит. — *ya udārā antarhitāḥ*
+[AV. 11,9,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.009.html#av11.009.16)
+[ŚAT. BR. 13,8,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,2,1) *siṃhau bhūtvā punarvyāghrau punaścāntarhitāvubhau*
+[SUND. 2,21.]
+[MBH. 1,119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.119) = [≈Вульг. 1.1.165](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S165) = крит. — [4710.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4710) = [≈Вульг. 1.121.32](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A121_S032) = ≈крит. 01,112.29a [3,2496.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2496) = [≈Вульг. 3.64.96](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A064_S096) = ≈крит. 03,61.91a [2634.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2634) = [≈Вульг. 3.67.1](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A067_S001) = ≈крит. 03,64.1a [2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2699) = [≈Вульг. 3.69.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A069_S006) = ≈крит. 03,66.5e [4,450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.450) = [≈Вульг. 4.15.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A015_S020) = ≈крит. 04,14.20a [5,7266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7266) = [≈Вульг. 5.183.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U10_A183_S019) = ≈крит. 05,184.18a
+[R. 3,15,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,17)
+[RAGH. 13,40.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,40)
+[BHĀG. P. 1,16,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,24) С abl. скрытый от, недоступный чьему-л. взору
+[ŚAT. BR. 1,9,1,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,1,24)
+[VOP. 5,20.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,20)
+
+**aByava+DA)** — *abhyava* сбивать (пыль): *paurajanāśrubhiḥ . patitairabhyavahitaṃ praśaśāma mahīrajaḥ ..*
+[R. 2,40,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,33)
+
+**caus.)** — ср. *avadhātavya, ˚dhāna, ˚dhi* . — caus.: *garteṣvavakāmavadhāpayet* велит вложить [ĀŚV. GṚHY. 2,8. 4,4.]
+
+**caus-1)** 1) заставлять надевать (кого-л. одежду), одевать кого-л. в; с dopp. acc.: *tārpyaṃ yajamānaṃ paridhāpayati*
+[TBR. 1,3,7,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,7,1)
+[ŚAT. BR. 5,2,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,1,8)
+[KĀTY. ŚR. 14,5,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?14,5,3)
+[KAUŚ. 54.]
+[PĀR. GṚHY. 2,1. 2.]
+[RĀJA-TAR. 4,669.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,669)
+[DAŚAK.] в [BENF. Chr. 200,7.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?200)
+
+**caus-2)** — 2) окружать, облекать чем-л. (instr.): *yena devaṃ savitāraṃ pari devā adhāpayan* (так надлежит восстановить чтение)
+[AV. 19,24,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.024.html#av19.024.01) *indrasya tvā varmaṇā pari dhāpayāmaḥ*
+[46,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.046.html#av19.046.04) [12,3,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.51) — desid. быть намерен надеть на себя: *kṛṣṇājināni paridhitsamānān*
+[MBH. 5,853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.853) = [≈Вульг. 5.29.45](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A029_S045) = ≈крит. 05,29.38a
+
+**caus./desid.)** — ср. *ādhāna, ādhāyaka*,
+1. *ādhi*, *ādheya, āhiti*.
+
+— caus. велеть посадить: *ādhāpayati*
+[KAUŚ. 75.] — desid. желать наложить: *agnim*
+[TBR. 1,1,2,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,1,2,2) желать дать —, передать: *daṇḍamādhitsatā*
+[MBH. 12,3170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3170) = [≈Вульг. 12.83.46](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A083_S046) = ≈крит. 12,84.43a
+
+**des-1)** 1) намереваться даровать: *anāmarūpātmani rūpanāmanī vidhitmamānaḥ*
+[BHĀG. P. 1,10,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,22)
+
+**des-2)** — 2) пытаться установить, стараться представить что-либо как решенное: *tathā pratiṣṭhāguṇaṃ vidhitsannāha*
+[ŚAṂK.] к [BṚH. ĀR. UP. p. 118.] *evaṃ prāṇavijñānavato japakarma vidhitsyate*
+[119.] *karma vakṣyamāṇamantrajapalakṣaṇaṃ vidhitsamānaṃ* (lies *˚dhitsyamānaṃ*) *tadetāni japediti*
+[66.]
+
+**des-3)** — 3) намереваться совершить и т.д., иметь намерение: *so 'haṃ naivākṛtaṃ pūrvaṃ careyaṃ vidhitsamānaḥ kimu tatra sādhu*
+[MBH. 1,3657.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3657) = [≈Вульг. 1.92.13](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A092_S013) = ≈крит. 01,87.12a *brahmaṇaḥ — prajāsargaṃ vidhitsataḥ*
+[HARIV. 1311.](https://sanskrit-lexicon-scans.github.io/hariv?1311) *vairasyāntaṃ vidhitsan*
+[6460.](https://sanskrit-lexicon-scans.github.io/hariv?6460) *bhagavāṃstadvidhitsati*
+[BHĀG. P. 3,16,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,35) *vidhitsita* _n._ намерение
+[1,9,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,16) *vidhitsamāna* имеющий определенные намерения, преследующий определенные цели
+[MBH. 3,13952.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13952) = [≈Вульг. 3.212.6](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A212_S006) = ≈крит. 03,203.6c *ka upāyaṃ vidhitset* so преим. кто бы стал думать уже и о средстве?
+[BHĀG. P. 4,6,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,7) *ātmānamapratidvandvamekarājaṃ vyadhitsata* он думал о том, чтобы стать единовластным правителем
+[7,3,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,1)
+
+**desid)** — ср. *samādhā* сл. — desid. желать побудить кого-либо (acc.) к тому, чтобы он сосредоточился: *ātmānamasamādhāya samādhitsati yaḥ parān*
+[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Вульг. 12.270.29](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A270_S029) = ≈крит. 12,262.27a
 
-**main)** <div n="p">— {#prasam#} {%накладывать%} (стрелу на лук): {#prasaMDAya SilImuKam . prezayAmAsa samare paRqitaM prati#}
-<ls>MBH. 6,3910.</ls> <ls n="MBH. 6,">5487.</ls> {#prasaMdaDe SitaM vARam#}
-<ls n="MBH. 6,">4185.</ls>
+**desid-intro)** — desid.
 
-**note-confusion)** <div n="v">— <ab>Vgl.</ab> {#pariDAna#} <ab>fgg.</ab> Смешения с {#paridA#} встречаются там и сям,
-<ab>z. B.</ab> <ls>AV. 6,55,1</ls> (тогда как
-<ls>TS. 5,7,2,3</ls> имеет правильную форму).
-<ls>ŚĀṄKH. ŚR. 8,3,5.</ls> один раз даже в
-<ls>ṚV.</ls> : {#druhe rIza^ntaM pari^ Dehi rAjan#}
-<ls n="ṚV.">2,30,9.</ls> — <ab>caus.</ab> {#pariDApayitvA#} <ab>ved.</ab>
-<ls>P. 7,1,38</ls>, <ab>Sch.</ab>
+**intens)** — intens. *dedhīyate*
+[P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 
-**pratyava+DA)** <div n="p">— {#pratyava#} {%вкладывать обратно <ab>u. s. w.</ab>%} (<ab>s. u.</ab> {#ava)H hfdayaM pravfhyottamaM pratyavadaDAti#}
-<ls>ŚAT. BR. 3,8,5,8.</ls> <ls n="ŚAT. BR.">2,4,2,24.</ls> <ls n="ŚAT. BR.">13,5,2,10.</ls>
+**intro)** — *upasam*
 
-**saMvyava+DA)** <div n="p">— {#saMvyava#}, {#asaMvyavahitam#} <lex>adv.</lex> {%непосредственно%}
-<ls>BHĀG. P. 5,6,6.</ls>
+**main)** — *prasam* накладывать (стрелу на лук): *prasaṃdhāya śilīmukham . preṣayāmāsa samare paṇḍitaṃ prati*
+[MBH. 6,3910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3910) = [≈Вульг. 6.88.24](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A088_S024) = ≈крит. 06,84.23a [5487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5487) = [≈Вульг. 6.117.36](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A117_S036) = ≈крит. 06,112.112a *prasaṃdadhe śitaṃ vāṇam*
+[4185.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4185) = [≈Вульг. 6.93.36](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A093_S036) = ≈крит. 06,89.34a
 
-**samava+DA)** <div n="p">— {#samava#}, {#asamavahitam#} <lex>adv.</lex> пожалуй {%не в непосредственной связи с%}
-<ls>ŚAT. BR. 9,4,3,15.</ls>
+**note-confusion)** — ср. *paridhāna* сл. Смешения с *paridā* встречаются там и сям,
+напр. [AV. 6,55,1](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.055.html#av06.055.01) (тогда как
+[TS. 5,7,2,3](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,2,3) имеет правильную форму).
+[ŚĀṄKH. ŚR. 8,3,5.] один раз даже в
+[ṚV.] : *druhe rīṣantaṃ pari dhehi rājan*
+[2,30,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.030.html#rv02.030.09) — caus. *paridhāpayitvā* ved.
+[P. 7,1,38](https://ashtadhyayi.com/sutraani/7/1/38), схол.
 
-**tail)** <div n="v">— <ab>Vgl.</ab> {#upadaDi, ˚DA, ˚DAna, ˚DAnIya, ˚Di, ˚Deya#} .
+**pratyava+DA)** — *pratyava* вкладывать обратно и т.д. (см. *ava)ḥ hṛdayaṃ pravṛhyottamaṃ pratyavadadhāti*
+[ŚAT. BR. 3,8,5,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,5,8) [2,4,2,24.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,24) [13,5,2,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,2,10)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#antarDA#} <ab>fgg.</ab> — <ab>caus.</ab> {%заставлять исчезать%}: {#iti rUpamantarDApitam#}
-<ab>Schol.</ab> к <ls>NALOD. 3,18.</ls>
+**saMvyava+DA)** — *saṃvyava*, *asaṃvyavahitam* _adv._ непосредственно
+[BHĀG. P. 5,6,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,6)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#apaDA#} .
+**samava+DA)** — *samava*, *asamavahitam* _adv._ пожалуй не в непосредственной связи с
+[ŚAT. BR. 9,4,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,3,15)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#pratiniDi#} .
+**tail)** — ср. *upadadhi, ˚dhā, ˚dhāna, ˚dhānīya, ˚dhi, ˚dheya* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#saMniDAna, ˚Di#} . — <ab>caus.</ab> {%приблизить, представить себе%}: {#vAsudevasya priyAM tanUm — parameRa samADinA saMniDApya#}
-<ls>BHĀG. P. 5,18,1.</ls> <ls n="BHĀG. P. 5,">17,16.</ls> <ab>pass.</ab> {%явить себя, показаться кому-л.%} (<ab>gen.</ab>) {%вблизи%}: {#yatra ha vAva BagavAnhariradyApi tatratyAnAM nijajanAnAM vAtsalyena saMniDApyata icCArUpeRa#}
-<ls n="BHĀG. P. 5,">7,8.</ls>
-[Page3-0920]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *antardhā* сл. — caus. заставлять исчезать: *iti rūpamantardhāpitam*
+схол. к [NALOD. 3,18.]
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#saMDay#} (dazu gehört {#saMDayIta, saMDayAmAsa, saMDita), ˚DA, ˚DAtar, ˚DAtavya, ˚DAna, ˚Di, ˚Deya, dvizaMhita, saMhina, sahita#} . — <ab>des.</ab> {%желать составить —, изготовить%}: {#yaTA SIrRena SIrRaM saMDitset#}
-<ls>ŚAT. BR. 11,5,8,6.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *apadhā* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#atisaMDAna#} и {#atisaMDita#} <ab>u.</ab> {#saMDay#} mit {#ati#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *pratinidhi* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#anusaMDAna#} ({%направление внимания на что-либо%}; <ab>vgl.</ab>
-<ls>DHŪRTAS. 85,8</ls>), {#anusaMDeya#} ({%то, на что следует направить свое внимание%}
-<ls>SUŚR. 1,13,4.</ls> {%искать, принимать%}: {#atra kaTopakaTanaM BArate 'nusaMDeyam#}
-<ab>Schol.</ab> к <ls>NALOD. 3,18.</ls> <ls>MALLIN.</ls> к <ls>KUMĀRAS. 6,46</ls>) и {#anusaMDita#} <ab>u.</ab> {#saMDay#} mit {#anu#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *saṃnidhāna, ˚dhi* . — caus. приблизить, представить себе: *vāsudevasya priyāṃ tanūm — parameṇa samādhinā saṃnidhāpya*
+[BHĀG. P. 5,18,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,1) [17,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,17,16) pass. явить себя, показаться кому-л. (gen.) вблизи: *yatra ha vāva bhagavānhariradyāpi tatratyānāṃ nijajanānāṃ vātsalyena saṃnidhāpyata icchārūpeṇa*
+[7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,8)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#aBisaMDaka#} (wohl von {#aBisaMDay#}) <ab>fgg.</ab> и {#aBisaMDita#} <ab>u.</ab> {#saMDay#} mit {#aBi#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *saṃdhay* (dazu gehört *saṃdhayīta, saṃdhayāmāsa, saṃdhita), ˚dhā, ˚dhātar, ˚dhātavya, ˚dhāna, ˚dhi, ˚dheya, dviṣaṃhita, saṃhina, sahita* . — того же желать составить —, изготовить: *yathā śīrṇena śīrṇaṃ saṃdhitset*
+[ŚAT. BR. 11,5,8,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,8,6)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#prasaMDi#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *atisaṃdhāna* и *atisaṃdhita* u. *saṃdhay* mit *ati* .
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> {#DA#}¦, основы настоящего времени: {#da/DA#} (<ab>Act.</ab>), {#da/D#} (<ab>Act.</ab> <ab>Med.</ab>), {#da/Da#} (<ab>Act.</ab> <ab>Med.</ab>) и {#DA/#} (<ab>Act.</ab> <ab>Med.</ab>); <ab>Absol.</ab> {#DitvA/#} (<ls>TS. 7,4,3,1.</ls> <ls n="TS. 7,4,3,">2</ls>) и {#hitvA#}; <ab>Pass.</ab> {#DIya/te, ˚Dita#} ({#Dita#} <ls>HARIV. 7799</ls> сомнительно) и {#hita/#} (<ab>s.</ab> <ab>bes.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *anusaṃdhāna* (направление внимания на что-либо; ср.
+[DHŪRTAS. 85,8]), *anusaṃdheya* (то, на что следует направить свое внимание
+[SUŚR. 1,13,4.] искать, принимать: *atra kathopakathanaṃ bhārate 'nusaṃdheyam*
+схол. к [NALOD. 3,18.] [MALLIN.] к [KUMĀRAS. 6,46](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,46)) и *anusaṃdhita* u. *saṃdhay* mit *anu* .
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {#DApayati#} для simplex не засвидетельствовано.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *abhisaṃdhaka* (wohl von *abhisaṃdhay*) сл. и *abhisaṃdhita* u. *saṃdhay* mit *abhi* .
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Desid.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *prasaṃdhi* .
 
-**+)** [PW·restate → не привязано: цель не указана] {#di/Dizati#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *dhā*, основы настоящего времени: *dadhā* (Act.), *dadh* (Act. Med.), *dadha* (Act. Med.) и *dhā* (Act. Med.); Absol. *dhitvā* ([TS. 7,4,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,1) [2](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,4,3,2)) и *hitvā*; Pass. *dhīyate, ˚dhita* (*dhita* [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) сомнительно) и *hita* (см. особ.).
 
-**+)** [PW·restate → не привязано: цель не указана] желать давать —, доставлять. <ab>Med.</ab> желать добыть себе, стремиться получить.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. *dhāpayati* для simplex не засвидетельствовано.
 
-**+)** [PW·restate → не привязано: цель не указана] желать облагать —, одарять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Med.</ab> {%желать собирать, поднимать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *didhiṣati*
 
-**+)** [PW·restate → не привязано: цель не указана] {#Ditsati#} {%желать класть —, полагать на%} (<ab>Loc.</ab>)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] желать давать —, доставлять. Med. желать добыть себе, стремиться получить.
 
-**+)** [PW·restate → не привязано: цель не указана] *<ab>Intens.</ab> {#deDIyate#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] желать облагать —, одарять.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#ati#}, {#a/tihita#} {%устраненный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Med. желать собирать, поднимать.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aDi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *dhitsati* желать класть —, полагать на (Loc.)
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Act.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *Intens. *dedhīyate*.
 
-**+)** [PW·restate → не привязано: цель не указана] ставить, прикладывать, надевать, водружать (на огонь).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *ati*, *atihita* устраненный.
 
-**+)** [PW·restate → не привязано: цель не указана] возлагать на кого-либо, жаловать кому-либо (<ab>Dat.</ab> или <ab>Loc.</ab>), наделять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *adhi*
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Med.</ab> {%принимать на себя, обнаруживать в себе%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Act.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anu#} <ab>Med.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] ставить, прикладывать, надевать, водружать (на огонь).
 
-**+)** [PW·restate → не привязано: цель не указана] класть сверх, добавлять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] возлагать на кого-либо, жаловать кому-либо (Dat. или Loc.), наделять.
 
-**+)** [PW·restate → не привязано: цель не указана] побуждать к (<ab>Dat.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Med. принимать на себя, обнаруживать в себе.
 
-**+)** [PW·restate → не привязано: цель не указана] признавать, предоставлять <ls>ṚV. 6,20,2</ls>. — {#˚DAsyati#} <ls>BĀLAR. 117,21</ls> ошибочно вм. {#˚DyAsyati#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anu* Med.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#vyanu#} <ab>Med.</ab> {%развертывать, распростирать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] класть сверх, добавлять.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#antar#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] побуждать к (Dat.).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Act.</ab> <ab>Med.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] признавать, предоставлять [ṚV. 6,20,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.020.html#rv06.020.02). — *˚dhāsyati* [BĀLAR. 117,21] ошибочно вм. *˚dhyāsyati*.
 
-**+)** [PW·restate → не привязано: цель не указана] вкладывать в (<ab>Loc.</ab>) <ls>ṚV. 1,62,9. 6,44,23. 10,54,6</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *vyanu* Med. развертывать, распростирать.
 
-**+)** [PW·restate → не привязано: цель не указана] класть, ставить между, вставлять между.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *antar*
 
-**+)** [PW·restate → не привязано: цель не указана] отделять, обособлять <ls>ṚV. 3,38,3</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Act. Med.
 
-**+)** [PW·restate → не привязано: цель не указана] исключать, устранять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] вкладывать в (Loc.) [ṚV. 1,62,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.062.html#rv01.062.09) [ṚV. 6,44,23.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.044.html#rv06.044.23) [ṚV. 10,54,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.054.html#rv10.054.06).
 
-**+)** [PW·restate → не привязано: цель не указана] покрывать, скрывать, прятать, — в (<ab>Loc.</ab>) <ls>ṚV. 7,71,5</ls>. Делать исчезающим —, невидимым, затемнять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] класть, ставить между, вставлять между.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Act.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] отделять, обособлять [ṚV. 3,38,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.038.html#rv03.038.03).
 
-**+)** [PW·restate → не привязано: цель не указана] вбирать в себя, содержать в себе.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] исключать, устранять.
 
-**+)** [PW·restate → не привязано: цель не указана] проявлять внутри —, в сердце, обнаруживать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] покрывать, скрывать, прятать, — в (Loc.) [ṚV. 7,71,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.05). Делать исчезающим —, невидимым, затемнять.
 
-**+)** [PW·restate → не привязано: цель не указана] утаивать что-либо (<ab>Acc.</ab>) от кого-либо (<ab>Abl.</ab>), лишать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Act.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Pass.</ab> становиться скрытым —, укрытым —, невидимым, исчезать. С *<ab>Abl.</ab> или <ab>Gen.</ab> лица — скрываться от кого-либо, ускользать от чьих-либо глаз.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] вбирать в себя, содержать в себе.
 
-**+)** [PW·restate → не привязано: цель не указана] {#anta/rhita#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] проявлять внутри —, в сердце, обнаруживать.
 
-**+)** [PW·restate → не привязано: цель не указана] отделенный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] утаивать что-либо (Acc.) от кого-либо (Abl.), лишать.
 
-**+)** [PW·restate → не привязано: цель не указана] покрытый, — чем-либо (в <ab>Comp.</ab> предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Pass. становиться скрытым —, укрытым —, невидимым, исчезать. С *Abl. или Gen. лица — скрываться от кого-либо, ускользать от чьих-либо глаз.
 
-**+)** [PW·restate → не привязано: цель не указана] укрытый, скрытый, спрятанный, сделанный невидимым, исчезнувший, — в (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем). С <ab>Abl.</ab> лица — скрытый от кого-либо, изъятый из чьих-либо взоров.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *antarhita*
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {%заставлять исчезнуть%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] отделенный.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#apa#} <ab>Act.</ab> {%убирать, отнимать, — от%} (<ab>Abl.</ab>), {%изгонять%} <ls>ṚV. 8,85,13</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] покрытый, — чем-либо (в Comp. предшествующем).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#api#} или {#pi#} (начиная с <ls>MANU</ls> чаще, чем {#api#})
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] укрытый, скрытый, спрятанный, сделанный невидимым, исчезнувший, — в (Loc. или в Comp. предшествующем). С Abl. лица — скрытый от кого-либо, изъятый из чьих-либо взоров.
 
-**+)** [PW·restate → не привязано: цель не указана] вставлять, втыкать, — в (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. заставлять исчезнуть.
 
-**+)** [PW·restate → не привязано: цель не указана] подносить, вручать кому-либо (<ab>Dat.</ab>), жаловать кому-либо (<ab>Loc.</ab>) <ls>ṚV. 10,56,4</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *apa* Act. убирать, отнимать, — от (Abl.), изгонять [ṚV. 8,85,13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.085.html#rv08.085.13).
 
-**+)** [PW·restate → не привязано: цель не указана] покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. <ab>Pass.</ab> быть укрытым, бесследно исчезнуть в (<ab>Loc.</ab>) <ls>MBH. 12,246,18.</ls> <ls n="MBH. 12,246,">19</ls>. <ab>Partic.</ab> {#a/pihita#} и {#pihita#} покрытый <ab>u. s. w.</ab>, сделанный невидимым, стесненный в своей деятельности.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *api* или *pi* (начиная с [MANU] чаще, чем *api*)
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> велеть покрывать чем-либо (<ab>Instr.</ab>), велеть закрывать (с двойным <ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] вставлять, втыкать, — в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#samapi#} {%покрывать полностью%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] подносить, вручать кому-либо (Dat.), жаловать кому-либо (Loc.) [ṚV. 10,56,4](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.04).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aBi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] покрывать, затыкать, запирать, закрывать, заключать, укрывать, покрывать, заслонять, скрывать. Pass. быть укрытым, бесследно исчезнуть в (Loc.) [MBH. 12,246,18.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,18) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a [19](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,246,19) = [≈Вульг. 12.9.4](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A009_S004) = ≈крит. 12,9.4a. Partic. *apihita* и *pihita* покрытый и т.д., сделанный невидимым, стесненный в своей деятельности.
 
-**+)** [PW·restate → не привязано: цель не указана] передавать кому-либо (<ab>Dat.</ab>), вручать, передавать по наследству.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. велеть покрывать чем-либо (Ins.), велеть закрывать (с двойным Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] снаряжать, приготовлять <ls>ṚV. 2,23,6. 7</ls>, <ls n="Chr.">34,9</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *samapi* покрывать полностью.
 
-**+)** [PW·restate → не привязано: цель не указана] обертывать, облагать чем-либо (<ab>Instr.</ab>), обвязывать, вязать. Обычно <ab>Med.</ab> {#a/Bihita#} привязанный, запряженный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhi*
 
-**+)** [PW·restate → не привязано: цель не указана] занимать, покрывать войсками.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] передавать кому-либо (Dat.), вручать, передавать по наследству.
 
-**+)** [PW·restate → не привязано: цель не указана] охватывать, так <ab>v. a.</ab> брать под защиту.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] снаряжать, приготовлять [ṚV. 2,23,6. 7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.023.html#rv02.023.06), [34,9](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?34).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Med.</ab> {%носить в себе, — укрывать%} <ls>BHĀG. P. 3,13,30</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] обертывать, облагать чем-либо (Ins.), обвязывать, вязать. Обычно Med. *abhihita* привязанный, запряженный.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Med.</ab> {%относиться к%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] занимать, покрывать войсками.
 
-**+)** [PW·restate → не привязано: цель не указана] обозначать, именовать; <ab>Pass.</ab> обозначаться —, именоваться, называться. {#aBihita#} обозначенный, названный, именуемый.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] охватывать, так преим. брать под защиту.
 
-**+)** [PW·restate → не привязано: цель не указана] указывать, излагать, сообщать, говорить о, излагать, что-либо говорить, произносить. {#aBihita#} указанный, обозначенный <ls n="Chr.">219,27</ls> сообщенный, изложенный, представленный, произнесенный, о чем или о ком сказано.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Med. носить в себе, — укрывать [BHĀG. P. 3,13,30](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,30).
 
-**+)** [PW·restate → не привязано: цель не указана] говорить что-либо кому-либо, — обращаться к; с двойным <ab>Acc.</ab> {#aBihita#} тот, кому что-либо сказано <ls n="Chr.">107,21</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Med. относиться к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> <ab>Med.</ab> {%велеть именовать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] обозначать, именовать; Pass. обозначаться —, именоваться, называться. *abhihita* обозначенный, названный, именуемый.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Desid.</ab> ({#˚Di/tsate#}) {%желать укутаться%} <ls>ṚV. 10,85,30</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] указывать, излагать, сообщать, говорить о, излагать, что-либо говорить, произносить. *abhihita* указанный, обозначенный [219,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?219) сообщенный, изложенный, представленный, произнесенный, о чем или о ком сказано.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#pratyaBi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] говорить что-либо кому-либо, — обращаться к; с двойным Acc. *abhihita* тот, кому что-либо сказано [107,21](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?107).
 
-**+)** [PW·restate → не привязано: цель не указана] притягивать к себе обратно, — вбирать в себя.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. Med. велеть именовать.
 
-**+)** [PW·restate → не привязано: цель не указана] отвечать, давать ответ {#pratyaBihita#} тому, кому ответили.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. (*˚dhitsate*) желать укутаться [ṚV. 10,85,30](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.085.html#rv10.085.30).
 
-**+)** [PW·restate → не привязано: цель не указана] давать свое согласие.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *pratyabhi*
 
-**+)** [PW·restate → не привязано: цель не указана] С {#samaBi#} говорить к кому-либо (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] притягивать к себе обратно, — вбирать в себя.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#ava#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] отвечать, давать ответ *pratyabhihita* тому, кому ответили.
 
-**+)** [PW·restate → не привязано: цель не указана] вкладывать, вставлять, помещать, вдвигать, погружать, заключать, — в (<ab>Loc.</ab>). {#a/vahita#} вставленный, — заключенный в (<ab>Loc.</ab>); упавший в воду.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] давать свое согласие.
 
-**+)** [PW·restate → не привязано: цель не указана] оттеснять, вдавливать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *samabhi* говорить к кому-либо (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] погружаться в (<ab>Loc.</ab>), внимать, наблюдать, сосредотачивать внимание на. От глагола <ab>fin.</ab> только {#avaDIyatAm#} 3-е <ab>Sg.</ab> <ab>Imperat.</ab> <ab>impers.</ab> {#avahita#} внимательный, наблюдательный, целиком поглощенный делом.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *ava*
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {%велеть вкладывать —, вставлять в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] вкладывать, вставлять, помещать, вдвигать, погружать, заключать, — в (Loc.). *avahita* вставленный, — заключенный в (Loc.); упавший в воду.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anvava#} {%расставлять по порядку%} <ls>ĀPAST. ŚR. 15,4,2</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] оттеснять, вдавливать.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aByava#}, {#˚hita#} осевший вниз (пыль); по <ab>Comm.</ab> поднятый вихрем.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] погружаться в (Loc.), внимать, наблюдать, сосредотачивать внимание на. От глагола fin. только *avadhīyatām* 3-е Sg. Imperat. impers. *avahita* внимательный, наблюдательный, целиком поглощенный делом.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#upAva#}, {#upA/vahita#} {%вставленный рядом, — положенный рядом%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. велеть вкладывать —, вставлять в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#paryava#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anvava* расставлять по порядку [ĀPAST. ŚR. 15,4,2].
 
-**+)** [PW·restate → не привязано: цель не указана] хранить поблизости <ls>ĀPAST. 1,3,40</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhyava*, *˚hita* осевший вниз (пыль); по коммент. поднятый вихрем.
 
-**+)** [PW·restate → не привязано: цель не указана] принимать, употреблять, вкушать <ls>ĀPAST. 1,10,28</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *upāva*, *upāvahita* вставленный рядом, — положенный рядом.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#pratyava#} {%вкладывать снова, вставлять обратно%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *paryava*
 
-**+)** [PW·restate → не привязано: цель не указана] С {#vyava#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] хранить поблизости [ĀPAST. 1,3,40].
 
-**+)** [PW·restate → не привязано: цель не указана] раскладывать тут и там.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] принимать, употреблять, вкушать [ĀPAST. 1,10,28].
 
-**+)** [PW·restate → не привязано: цель не указана] ставить между, вставлять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *pratyava* вкладывать снова, вставлять обратно.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Pass.</ab> разлучаться. {#˚DIyatAm#} <ab>impers.</ab> пусть разлучатся с (<ab>Abl.</ab>). {#˚hita#} разлученный, разделенный, — посредством (в <ab>Comp.</ab> предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *vyava*
 
-**+)** [PW·restate → не привязано: цель не указана] прерывать. <ab>Pass.</ab> подвергаться перерыву {#˚hita#} прерванный, заторможенный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] раскладывать тут и там.
 
-**+)** [PW·restate → не привязано: цель не указана] опускать, оставлять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] ставить между, вставлять.
 
-**+)** [PW·restate → не привязано: цель не указана] {#vyavahita#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Pass. разлучаться. *˚dhīyatām* impers. пусть разлучатся с (Abl.). *˚hita* разлученный, разделенный, — посредством (в Comp. предшествующем).
 
-**+)** [PW·restate → не привязано: цель не указана] удаленный, находящийся вдали <ls>BHĀG. P. 1,9,36</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] прерывать. Pass. подвергаться перерыву *˚hita* прерванный, заторможенный.
 
-**+)** [PW·restate → не привязано: цель не указана] разделенный чем-либо промежуточным, так <ab>v. a.</ab> спрятанный, скрытый от восприятия, — посредством (в <ab>Comp.</ab> предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] опускать, оставлять.
 
-**+)** [PW·restate → не привязано: цель не указана] отстоящий от чего-либо, так <ab>v. a.</ab> состоящий лишь в отношении к чему-либо, не непосредственно затронутый.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *vyavahita*
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {%разлучать%} <ls>NAIṢ. 4,109</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] удаленный, находящийся вдали [BHĀG. P. 1,9,36](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,9,36).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#saMvyava#} в {#asaMvyavahitam#} (<ls>Nachtr. 3</ls>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] разделенный чем-либо промежуточным, так преим. спрятанный, скрытый от восприятия, — посредством (в Comp. предшествующем).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#samava#} — {%складывать вместе, ставить вместе%} <ls>ĀPAST. ŚR. 15,11,10. 15,1</ls>. <ab>Vgl.</ab> {#a/samavahitam#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] отстоящий от чего-либо, так преим. состоящий лишь в отношении к чему-либо, не непосредственно затронутый.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#A#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. разлучать [NAIṢ. 4,109].
 
-**+)** [PW·restate → не привязано: номер выше диапазона PWG] 15〉 {#Ahita#} <ls>PAÑCAT. 43,4</ls> ошибочно вм. {#Avfta#} (так <ls>ed. Bomb.</ls>); {#ADAta#} <ls>CAURAP. 16</ls> равным образом ошибочно.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *saṃvyava* в *asaṃvyavahitam* ([Nachtr. 3]).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {%заставлять усаживать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *samava* — складывать вместе, ставить вместе [ĀPAST. ŚR. 15,11,10. 15,1]. ср. *asamavahitam*.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Desid.</ab> ({#˚Ditsati, ˚te#})
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *ā*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 <ab>Med.</ab> {%желать разложить%} (огонь).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] 15〉 *āhita* [PAÑCAT. 43,4](https://sanskrit-lexicon-scans.github.io/pantankose/app2?43,4) ошибочно вм. *āvṛta* (так [Бомбейская ред.]); *ādhāta* [CAURAP. 16](https://sanskrit-lexicon-scans.github.io/bhartrhari/app1?16) равным образом ошибочно.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Намереваться схватить%}. {#daRqam#} так <ab>v. a.</ab> {%приготовляться наказать%} <ls>MBH. 12,83,45</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. заставлять усаживать.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#atyA#} — {%ставить впереди, возвышать над%}. <ab>Vgl.</ab> {#atyAhita#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. (*˚dhitsati, ˚te*)
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aDyA#} — {%класть поверх%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Med. желать разложить (огонь).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#antarA#} <ab>Med.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Намереваться схватить. *daṇḍam* так преим. приготовляться наказать [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45) = [≈Вульг. 12.3.10](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A003_S010) = ≈крит. 12,3.10c.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Вставлять в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *atyā* — ставить впереди, возвышать над. ср. *atyāhita*.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 с {#hfdi#} {%иметь в своем сердце%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *adhyā* — класть поверх.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anvA#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *antarā* Med.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Класть поверх%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Вставлять в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 Дрова (в огонь) {%подкладывать дополнительно%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 с *hṛdi* иметь в своем сердце.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%Раздувать, разжигать%} (огонь).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anvā*
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%Передавать далее%} (залог). Только {#anvAhita#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Класть поверх.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#apA#} — {%отделять от%} (<ab>Abl.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Дрова (в огонь) подкладывать дополнительно.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aByA#} <ab>Act.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Раздувать, разжигать (огонь).
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Прикладывать, класть на или в%} (<ab>Loc.</ab>), {%вкладывать%} (дрова в огонь).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 Передавать далее (залог). Только *anvāhita*.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Разводить%} (огонь). {#aByAhita#} {%разведенный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *apā* — отделять от (Abl.).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#udA#}, {#udA/hitatara#} {%немного возвышенный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhyā* Act.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#upA#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Прикладывать, класть на или в (Loc.), вкладывать (дрова в огонь).
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Прикладывать к%} (<ab>Loc.</ab>), {%ставить на%} (<ab>Loc.</ab>). *{#upAhita#} {%поставленный поверх%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Разводить (огонь). *abhyāhita* разведенный.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 <ab>Med.</ab> {%схватывать%} ({#daRqam#}) <ls>MBH. 12,15,4</ls>. {#upAdA/ya#} {%беря с собой, с%} (<ab>Acc.</ab>) <ls>Chr. 28,28</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *udā*, *udāhitatara* немного возвышенный.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 <ab>Med.</ab> с {#Atmani#} [Page3-152-c] {%удерживать при себе%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *upā*
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%Кого-либо совращать —, склонять к;%} с двойным <ab>Acc.</ab> {#mA — upAdaDAH#} <ls>R. 2,35,28</ls>. {#udAdaDaH#} <ab>v. l.</ab> в <ab>Comm.</ab> из <ls>Bomb. Ausg.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Прикладывать к (Loc.), ставить на (Loc.). **upāhita* поставленный поверх.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {#upA/hita#}
-a〉 {%выставленный в качестве награды%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Med. схватывать (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4) = [≈Вульг. 12.1.15](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A001_S015) = ≈крит. 12,1.15c. *upādāya* беря с собой, с (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
-**+)** [PW·restate → не привязано: цель не указана] b〉 {%произведенный, вызванный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Med. с *ātmani* удерживать при себе.
 
-**+)** [PW·restate → не привязано: цель не указана] c〉 *= {#saMyojita#} {%соединенный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 Кого-либо совращать —, склонять к; с двойным Acc. *mā — upādadhāḥ* [R. 2,35,28](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,28). *udādadhaḥ* v. l. в коммент. из [Bomb. Ausg.]
 
-**+)** [PW·restate → не привязано: цель не указана] С {#pratyupA#} <ab>Med.</ab> {%вновь обретать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 *upāhita*
+a〉 выставленный в качестве награды.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#nyA#} — {%вносить, вставлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] b〉 произведенный, вызванный.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#nirA#} — {%вынимать, изымать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] c〉 *= *saṃyojita* соединенный.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#paryA#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *pratyupā* Med. вновь обретать.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Окружать%} (огнем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *nyā* — вносить, вставлять.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {#paryAhita#} {%тот, кого младший брат опередил в разведении священного огня,%} <ls>ĀPAST. 2,12,22</ls>. <ls>ŚR. 9,12,11</ls>. <ls>GAUT. 15,18</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *nirā* — вынимать, изымать.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anuparyA#} <ab>Act.</ab> {%раскладывать по очереди вокруг%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *paryā*
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aBiparyA#} — {%окружать%} (огнем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Окружать (огнем).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#prA#}, {#pra/ — A/hitaH#} {%приведенный к%} (<ab>Loc.</ab>) <ls>ṚV. 9,64,19</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 *paryāhita* тот, кого младший брат опередил в разведении священного огня, [ĀPAST. 2,12,22]. [ŚR. 9,12,11]. [GAUT. 15,18].
 
-**+)** [PW·restate → не привязано: цель не указана] С {#vyA#} <ab>Pass.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anuparyā* Act. раскладывать по очереди вокруг.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Разлучаться, — с%} (<ab>Instr.</ab> или {#˚tas#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhiparyā* — окружать (огнем).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Чувствовать себя неудобно —, нехорошо%}. {#vyA/hita#} {%больной%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *prā*, *pra — āhitaḥ* приведенный к (Loc.) [ṚV. 9,64,19](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.064.html#rv09.064.19).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#samA#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *vyā* Pass.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Подкладывать%} (дрова в огонь). {#samA/hita#} {%подложенный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Разлучаться, — с (Ins. или *˚tas*).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Разводить, раздувать%} (огонь).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Чувствовать себя неудобно —, нехорошо. *vyāhita* больной.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%Ставить —, класть —, втыкать на, к или в%} (<ab>Loc.</ab>). {#astram#} {%накладывать на стрелу%}. {#garBam#} {%помещать зародыш внутрь%}, так <ab>v. a.</ab> {%оплодотворять%}. {#savitus#} {%класть на солнце%}. {#dfzwim, cittam, cetas, matim, manas#} {%направлять взор, ум, мысли на%} (<ab>Loc.</ab>). {#matim#} и {#manas#} {%составлять замысел%} (дополнение в прямой речи с {#iti#}). {#AtmAnam, manas#} без дополнения {%сосредоточивать ум на одной точке, собираться с духом, брать себя в руки%}. Без <ab>Acc.</ab> {%погружаться в молитву, молиться%} <ls>BĀLAR. 110,10</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *samā*
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%Кому-либо%} (<ab>Loc.</ab>) {%что-либо возлагать%}. {#samAhita#} {%возложенный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Подкладывать (дрова в огонь). *samāhita* подложенный.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%Кому-либо%} (<ab>Loc.</ab>) {%передавать, вверять под чью-либо защиту%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Разводить, раздувать (огонь).
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%Вставлять в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Ставить —, класть —, втыкать на, к или в (Loc.). *astram* накладывать на стрелу. *garbham* помещать зародыш внутрь, так преим. оплодотворять. *savitus* класть на солнце. *dṛṣṭim, cittam, cetas, matim, manas* направлять взор, ум, мысли на (Loc.). *matim* и *manas* составлять замысел (дополнение в прямой речи с *iti*). *ātmānam, manas* без дополнения сосредоточивать ум на одной точке, собираться с духом, брать себя в руки. Без Acc. погружаться в молитву, молиться [BĀLAR. 110,10].
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 {%Соединять, связывать, объединять%}. {#samA/hita#} {%соединенный —, связанный —, снабженный%} (<ab>Instr.</ab> или в <ab>Comp.</ab> предшествующем). <ab>Pl.</ab> {%объединенный, собранный%} <ls n="Chr.">69,20</ls>. {%все вместе%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 Кому-либо (Loc.) что-либо возлагать. *samāhita* возложенный.
 
-**+)** [PW·restate → не привязано: цель не указана] 8〉 {%Приводить в порядок, исправлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 Кому-либо (Loc.) передавать, вверять под чью-либо защиту.
 
-**+)** [PW·restate → не привязано: цель не указана] 9〉 {%Порождать, производить%}. {#samAhita#} {%redditus%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 Вставлять в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 10〉 <ab>Med.</ab>
-a〉 {%надевать%} (одежду), {%принимать%} (облик).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 Соединять, связывать, объединять. *samāhita* соединенный —, связанный —, снабженный (Ins. или в Comp. предшествующем). Pl. объединенный, собранный [69,20](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?69). все вместе.
 
-**+)** [PW·restate → не привязано: цель не указана] b〉 {%зачинать во чреве, concipere%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 Приводить в порядок, исправлять.
 
-**+)** [PW·restate → не привязано: цель не указана] c〉 {%брать себе, присваивать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 Порождать, производить. *samāhita* redditus.
 
-**+)** [PW·restate → не привязано: цель не указана] d〉 {%принимать на себя, проявлять в себе, обнаруживать, показывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 10〉 Med.
+a〉 надевать (одежду), принимать (облик).
 
-**+)** [PW·restate → не привязано: цель не указана] e〉 {%направлять всё свое внимание на что-либо, всецело отдаваться чему-либо%} (с <ab>Acc.</ab>); <ab>Act.</ab> <ls>BHAṬṬ.</ls> {#samAhita#} {%всецело поглощенный чем-либо, способный всецело отдаваться чему-либо, целиком погруженный во что-либо%} (о людях и об уме), {%направляющий всё внимание на одну точку%}. Дополнение в <ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем; часто без дополнения (<ls>ĀPAST. 1,1,11. 5,7. 13,18</ls>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] b〉 зачинать во чреве, concipere.
 
-**+)** [PW·restate → не привязано: цель не указана] f〉 {%устанавливать, определять, представлять как само собой разумеющееся%}. *{#samAhita#} [Page3-153-a] {%установленный, доказанный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] c〉 брать себе, присваивать.
 
-**+)** [PW·restate → не привязано: цель не указана] g〉 {%допускать, признавать%}. {#samAhita#} {%одобренный; принятый%} <ls>ĀPAST. 1,20,8. 2,29,14</ls>. <ls>HARIV. 11392</ls>. {%согласный с%} (в <ab>Comp.</ab> предшествующем) <ls n="HARIV.">2225</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] d〉 принимать на себя, проявлять в себе, обнаруживать, показывать.
 
-**+)** [PW·restate → не привязано: цель не указана] 11〉 {#samAhita#} {%завершившийся, истекший%} <ls>MBH. 1,173,31</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] e〉 направлять всё свое внимание на что-либо, всецело отдаваться чему-либо (с Acc.); Act. [BHAṬṬ.] *samāhita* всецело поглощенный чем-либо, способный всецело отдаваться чему-либо, целиком погруженный во что-либо (о людях и об уме), направляющий всё внимание на одну точку. Дополнение в Loc. или в Comp. предшествующем; часто без дополнения ([ĀPAST. 1,1,11. 5,7. 13,18]).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Desid.</ab> ({#˚Ditsati#}) {%желать привести кого-либо%} (<ab>Acc.</ab>) {%к тому, чтобы он сосредоточился, — взял себя в руки%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] f〉 устанавливать, определять, представлять как само собой разумеющееся. **samāhita* установленный, доказанный.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anusamA#}, {#˚hita#} {%совершенно сосредоточенный, твердо направленный на одну точку%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] g〉 допускать, признавать. *samāhita* одобренный; принятый [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392](https://sanskrit-lexicon-scans.github.io/hariv?11392). согласный с (в Comp. предшествующем) [2225](https://sanskrit-lexicon-scans.github.io/hariv?2225).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aBisamA#}, {#˚hita#} {%связанный —, соединенный с%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 11〉 *samāhita* завершившийся, истекший [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31) = [≈Вульг. 1.1.219](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S219) = ≈крит. 01,1.160a.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#upasamA#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. (*˚dhitsati*) желать привести кого-либо (Acc.) к тому, чтобы он сосредоточился, — взял себя в руки.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Подкладывать%} (дрова в огонь) {{MĀN.ŚR.1,3,5.7,5.GṚHY.-><ls>MĀN. ŚR. 1,3,5. 7,5</ls>. <ls>MĀN. GṚHY. 1,23. 2,6</ls>||20160107|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/236|Inferred}}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anusamā*, *˚hita* совершенно сосредоточенный, твердо направленный на одну точку.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Разводить, раздувать, зажигать%} (огонь) <ls>GAUT.</ls> <ls>ĀPAST. 2,6,1</ls>. {#˚hita#} {%разведенный, зажженный%} <ls>SAṂHITOPAN. 44,3</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhisamā*, *˚hita* связанный —, соединенный с (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%Устанавливать, ставить на свое место%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *upasamā*
 
-**+)** [PW·restate → не привязано: цель не указана] С {#pratisamA#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Подкладывать (дрова в огонь) {{MĀN.ŚR.1,3,5.7,5.GṚHY.->[MĀN. ŚR. 1,3,5. 7,5]. [MĀN. GṚHY. 1,23. 2,6]||20160107|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/236|Inferred}}.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Снова накладывать%} (стрелу). Только {#˚hita#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Разводить, раздувать, зажигать (огонь) [GAUT.] [ĀPAST. 2,6,1]. *˚hita* разведенный, зажженный [SAṂHITOPAN. 44,3].
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Снова ставить на место, приводить в порядок, восстанавливать%}. {#˚hita#} {%<ab n="wieder">w.</ab> восстановленный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Устанавливать, ставить на свое место.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%Исправлять, устранять%} (ошибку) <ls>ŚAṂK. zu BĀDAR. 2,2,10</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *pratisamā*
 
-**+)** [PW·restate → не привязано: цель не указана] С {#ud#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Снова накладывать (стрелу). Только *˚hita*.
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%Раскладывать%} <ls>ṚV. 10,101,12</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Снова ставить на место, приводить в порядок, восстанавливать. *˚hita* слово восстановленный.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Устанавливать, воздвигать, возводить%}. Только {#u/dDita#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Исправлять, устранять (ошибку) [ŚAṂK. zu BĀDAR. 2,2,10].
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%Выставлять%}. {#u/dDita#} {%выставленный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *ud*
 
-**+)** [PW·restate → не привязано: цель не указана] С {#upa#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 Раскладывать [ṚV. 10,101,12](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.101.html#rv10.101.12).
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 {%накладывать, прикладывать, надевать, класть на%} (<ab>Loc.</ab> <ls n="Chr.">37,30</ls>. <ls>ŚULBAS. 3,47</ls>) или в (<ab>Loc.</ab>), {%ставить%} ({#aDastAt#} {%под что-либо%}), {%вставлять —, помещать в%} (<ab>Loc.</ab>), {%ставить на огонь, разводить огонь%}, так <ab>v. a.</ab> {%запрягать%} (коней). {#hfdi#} {%принимать близко к сердцу%}, так <ab>v. a.</ab> {%принять к сердцу%}. {#upAhita#} {%поставленный на%} (в <ab>Comp.</ab> предшествующем), {%наложенный, прикрепленный, вставленный, вправленный%} (драгоценный камень) в (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Устанавливать, воздвигать, возводить. Только *uddhita*.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%Подкладывать что-либо под себя, ложиться на%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Выставлять. *uddhita* выставленный.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 в грамматике {%ложиться на%} (<ab>Acc.</ab>), так <ab>v. a.</ab> непосредственно предшествовать. Только <ab>Pass.</ab> и {#upahita#} {%которому что-либо%} (<ab>Instr.</ab> или в <ab>Comp.</ab> предшествующем) {%предшествует%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *upa*
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%Кому-либо%} (<ab>Dat.</ab>) {%что-либо поручать%}. {#tadupAhita#} {%ему порученный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 накладывать, прикладывать, надевать, класть на (Loc. [37,30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?37). [ŚULBAS. 3,47]) или в (Loc.), ставить (*adhastāt* под что-либо), вставлять —, помещать в (Loc.), ставить на огонь, разводить огонь, так преим. запрягать (коней). *hṛdi* принимать близко к сердцу, так преим. принять к сердцу. *upāhita* поставленный на (в Comp. предшествующем), наложенный, прикрепленный, вставленный, вправленный (драгоценный камень) в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%Кого-либо%} (<ab>Loc.</ab>) {%чему-либо обучать, учить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Подкладывать что-либо под себя, ложиться на (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%добавлять, присоединять, — к, связывать с%} (<ab>Loc.</ab>) <ls>ŚULBAS. 1,52</ls>. {#upahita#} {%присоединяющийся к%} (<ab>Loc.</ab>), {%связанный с%} (в <ab>Comp.</ab> предшествующем) <ls>MĀLAV. 20</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 в грамматике ложиться на (Acc.), так преим. непосредственно предшествовать. Только Pass. и *upahita* которому что-либо (Ins. или в Comp. предшествующем) предшествует.
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 {%Применять%}. {#kriyA vastUpahitA#} {%усилие, примененное к благому делу%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 Кому-либо (Dat.) что-либо поручать. *tadupāhita* ему порученный.
 
-**+)** [PW·restate → не привязано: цель не указана] 8〉 {%Предполагать, допускать%}. Только <ab>Pass.</ab> и {#upahita#} {%предполагаемый, обусловленный%} (в <ab>Comp.</ab> предшествующем) <ls n="Chr.">259,1</ls>. <ls n="Chr.">260,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 Кого-либо (Loc.) чему-либо обучать, учить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anUpa#} {%накладывать вслед, прикладывать следом%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 добавлять, присоединять, — к, связывать с (Loc.) [ŚULBAS. 1,52]. *upahita* присоединяющийся к (Loc.), связанный с (в Comp. предшествующем) [MĀLAV. 20](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?20).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aByupa#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 Применять. *kriyā vastūpahitā* усилие, примененное к благому делу.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%прибавлять, докладывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 Предполагать, допускать. Только Pass. и *upahita* предполагаемый, обусловленный (в Comp. предшествующем) [259,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?259). [260,1](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?260).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%покрывать, накрывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anūpa* накладывать вслед, прикладывать следом.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Med.</ab> ставить одновременно (на огонь).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhyupa*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyupa#} {%покрывать, укрывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 прибавлять, докладывать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#tiras#} <ab>s. u. d.</ab> <ab n="Worte">W.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 покрывать, накрывать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 Med. ставить одновременно (на огонь).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 опускать, класть [Page3-153-b], откладывать, укладывать, помещать, ставить — на, у или в (<ab>Loc.</ab>), вкладывать — в (<ab>Loc.</ab>, <ab>Loc.</ab> с {#anta/r#} или {#˚antar#}), класть что-либо перед кем-либо (<ab>Dat.</ab>). {#BUmO#} или {#avawe#} (<ls>R. 3,8,20</ls>) класть в землю, в яму, отсюда <ab>v. a.</ab> погребать; класть на голову (<ab>Loc.</ab>, в виде исключения также <ab>Instr.</ab>), а также <ab>v. a.</ab> высоко поднимать <ls n="Chr.">152,12</ls>. {#manasi#} класть в сердце, отсюда <ab>v. a.</ab> думать про себя. <ab>Pass.</ab> также пребывать —, содержаться в (<ab>Loc.</ab>), переходить —, растворяться в (<ab>Loc.</ab>); {#ni/hita#} положенный <ab>u. s. w.</ab>, расположившийся (о войске), застрявший —, находящийся в (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем) <ls>ĀPAST. 1,22,6</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyupa* покрывать, укрывать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 обращать взор на (<ab>Loc.</ab>), направлять ум, мысли на (<ab>Dat.</ab>), отсюда <ab>v. a.</ab> решать. {#kriyAm#} прилагать усилие к (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *tiras* см. слово
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 складывать для хранения, хранить в (<ab>Loc.</ab>). {#hfdaye, manasi#} хранить в сердце, отсюда <ab>v. a.</ab> запечатлевать в сердце, удерживать в памяти. <ab>Med.</ab> также хранить для себя.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ni*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%прятать в%} (<ab>Loc.</ab>). {#manasA#} {%скрывать в сердце%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 опускать, класть , откладывать, укладывать, помещать, ставить — на, у или в (Loc.), вкладывать — в (Loc., Loc. с *antar* или *˚antar*), класть что-либо перед кем-либо (Dat.). *bhūmau* или *avaṭe* ([R. 3,8,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,8,20)) класть в землю, в яму, отсюда преим. погребать; класть на голову (Loc., в виде исключения также Ins.), а также преим. высоко поднимать [152,12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?152). *manasi* класть в сердце, отсюда преим. думать про себя. Pass. также пребывать —, содержаться в (Loc.), переходить —, растворяться в (Loc.); *nihita* положенный и т.д., расположившийся (о войске), застрявший —, находящийся в (Loc. или в Comp. предшествующем) [ĀPAST. 1,22,6].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%назначать кого-либо в качестве%} (<ab>Acc.</ab>), к (<ab>Dat.</ab>) или в (<ab>Loc.</ab>), {%определять на должность%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 обращать взор на (Loc.), направлять ум, мысли на (Dat.), отсюда преим. решать. *kriyām* прилагать усилие к (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 передавать, вверять, жертвовать кому-либо (<ab>Dat.</ab> или <ab>Loc.</ab>). {#AtmAnam#} вверять себя кому-либо (<ab>Loc.</ab>). {#hfdayam#} отдавать свое сердце кому-либо (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 складывать для хранения, хранить в (Loc.). *hṛdaye, manasi* хранить в сердце, отсюда преим. запечатлевать в сердце, удерживать в памяти. Med. также хранить для себя.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 {%оставлять позади, покидать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 прятать в (Loc.). *manasā* скрывать в сердце.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 8〉 полагать, отсюда <ab>v. a.</ab> удерживать, сдерживать, устранять, подавлять.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 назначать кого-либо в качестве (Acc.), к (Dat.) или в (Loc.), определять на должность (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 9〉 {%заканчивать, закрывать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 передавать, вверять, жертвовать кому-либо (Dat. или Loc.). *ātmānam* вверять себя кому-либо (Loc.). *hṛdayam* отдавать свое сердце кому-либо (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 10〉 {#nihita#} = {#nihata#} {%произнесенный низким тоном%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 оставлять позади, покидать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 11〉 {#niDAtum#} <ls>BHĀG. P. 7,8,18</ls> ошибочно вм. {#viDAtum#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 8〉 полагать, отсюда преим. удерживать, сдерживать, устранять, подавлять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 9〉 заканчивать, закрывать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%велеть посадить, поставить%} <ls>HEMĀDRI 1,704,20,21</ls>. — {%на%} (<ab>Loc.</ab>) <ls>VAITĀN.</ls> {%велеть вложить в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 10〉 *nihita* = *nihata* произнесенный низким тоном.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 велеть хранить. Возможно, как <ab>Simpl.</ab> с {#ni#} хранить <ls>CARAKA. 6,18. 27. 7,8</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 11〉 *nidhātum* [BHĀG. P. 7,8,18](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,18) ошибочно вм. *vidhātum*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%назначать кого-либо в качестве%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> ({#˚Ditsate#}) {%намереваться положить, опустить%} <ls>NAIṢ. 8,24</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 велеть посадить, поставить [HEMĀDRI 1,704,20,21]. — на (Loc.) [VAITĀN.] велеть вложить в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Intens.</ab> {#ni/deDyat#} (!) примерно: утверждаться, закрепляться. <ls>VS. 6,20</ls> и <ls>MAITR. S. 1,2,17</ls> {#ni/dIDyvat#} (<ab>s. u.</ab> {#dIDi#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 велеть хранить. Возможно, как Simpl. с *ni* хранить [CARAKA. 6,18. 27. 7,8].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDini#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 назначать кого-либо в качестве (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%класть —, налагать на%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. (*˚dhitsate*) намереваться положить, опустить [NAIṢ. 8,24].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 жаловать, даровать кому-либо (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Intens. *nidedhyat* (!) примерно: утверждаться, закрепляться. [VS. 6,20](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?6,20) и [MAITR. S. 1,2,17] *nidīdhyvat* (см. *dīdhi*).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#apani#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *adhini*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%откладывать в сторону, убирать прочь, прятать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 класть —, налагать на (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%отставлять в сторону%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 жаловать, даровать кому-либо (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%устранять, прогонять от%} (<ab>Abl.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *apani*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBini#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 откладывать в сторону, убирать прочь, прятать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%накладывать на, вкладывать в%} (<ab>Loc.</ab>). <ls>Ind. St. 15,165</ls> ({#˚hita#}). <ab>Med.</ab> {%накладывать на себя что-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 отставлять в сторону.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%касаться, приближаться с%} (<ab>Instr.</ab>), — {%к%} (<ab>Acc.</ab> или <ab>Loc.</ab>). {#aBini/hita#} {%затронутый, коснувшийся%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 устранять, прогонять от (Abl.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Pass.</ab> сливаться друг с другом (об исходном {#e#} или {#o#} с начальным {#a#}, которое элидируется). {#aBinihita#} называется такое <is>Saṃdhi</is> и покоящийся на нем тон.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhini*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#unni#} {%держать вверх —, держать в поднятом положении%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 накладывать на, вкладывать в (Loc.). [Ind. St. 15,165] (*˚hita*). Med. накладывать на себя что-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upani#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 касаться, приближаться с (Ins.), — к (Acc. или Loc.). *abhinihita* затронутый, коснувшийся.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%ставить рядом, —,%} <ab>Jmd.</ab> (<ab>Dat.</ab>) {%предлагать что-либо%}. [Page3-153-c]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 Pass. сливаться друг с другом (об исходном *e* или *o* с начальным *a*, которое элидируется). *abhinihita* называется такое Самдхи и покоящийся на нем тон.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%ложиться приближаясь на%} (<ab>Loc.</ab>) <ls>ĀŚV. GṚHY. 1,15,2</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *unni* держать вверх —, держать в поднятом положении.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 зарывать, закапывать (клад).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upani*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 передавать на хранение, вверять кого-либо кому-либо (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 ставить рядом, —, Jmd. (Dat.) предлагать что-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%приводить, приносить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 ложиться приближаясь на (Loc.) [ĀŚV. GṚHY. 1,15,2].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {%вызывать, производить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 зарывать, закапывать (клад).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#parini#} (*{#pariRi#}) {%обертывать, накладывать кругом%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 передавать на хранение, вверять кого-либо кому-либо (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#praRi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 приводить, приносить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 класть, надевать, накладывать — на (<ab>Loc.</ab>), прикладывать, приставлять (нож <ab>u. s. w.</ab>), вставлять в, отсюда <ab>v. a.</ab> вправлять в (<ab>Loc.</ab>). {#praRihita#} положенный <ab>u. s. w.</ab>, наложенный на (в <ab>Comp.</ab> предшествующем) <ls>BĀLAR. 265,3</ls>. {#veda˚#} содержащийся в <is>Veda</is>, отсюда <ab>v. a.</ab> ученый, наставленный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 вызывать, производить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%протягивать%} <ls>BHAG. 11,44</ls>. {#praRihita#} {%протянутый%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *parini* (**pariṇi*) обертывать, накладывать кругом.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%касаться, приближаться с%} (<ab>Instr.</ab>) к (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *praṇi*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 устремлять взор, ум, дух на (<ab>Loc.</ab>) <ls>HARIV. 2,14,16</ls>. С {#manas#} и <ab>Infin.</ab> отсюда <ab>v. a.</ab> решать. {#AtmA praRiDIyatAm#} отсюда <ab>v. a.</ab> пусть представит себе. {#praRihita#} направленный на (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем). {#samyakpraRihitA vAk#} уместно сказанная речь.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 класть, надевать, накладывать — на (Loc.), прикладывать, приставлять (нож и т.д.), вставлять в, отсюда преим. вправлять в (Loc.). *praṇihita* положенный и т.д., наложенный на (в Comp. предшествующем) [BĀLAR. 265,3]. *veda˚* содержащийся в Веда, отсюда преим. ученый, наставленный.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 предоставлять, передавать кому-либо (<ab>Dat.</ab>) что-либо. Только {#praRihita#} <ls>BĀLAR. 164,21</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 протягивать [BHAG. 11,44](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,44). *praṇihita* протянутый.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 приводить —, вводить в некое состояние (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 касаться, приближаться с (Ins.) к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 посылать (лазутчиков). Только {#praRihita#} посланный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 устремлять взор, ум, дух на (Loc.) [HARIV. 2,14,16](https://sanskrit-lexicon-scans.github.io/hariv?2). С *manas* и Infin. отсюда преим. решать. *ātmā praṇidhīyatām* отсюда преим. пусть представит себе. *praṇihita* направленный на (Loc. или в Comp. предшествующем). *samyakpraṇihitā vāk* уместно сказанная речь.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 8〉 {%велеть разведывать —, шпионить через%} (<ab>Instr.</ab>) при (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 предоставлять, передавать кому-либо (Dat.) что-либо. Только *praṇihita* [BĀLAR. 164,21].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 9〉 устремлять все свои мысли —, всё свое внимание на что-либо, обдумывать что-либо (<ab>Acc.</ab>). Только {#praRIDAya#} и {#praRihita#} всецело погруженный во что-либо (<ab>Loc.</ab>), целиком занятый одним делом, поглощенный одной мыслью (о людях и об уме). {#praRihitAtman#} <lex>Adj.</lex> <ls>ĀPAST. 1,4,29</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 приводить —, вводить в некое состояние (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 10〉 выяснять, разузнавать, — что именно; с двойным <ab>Acc.</ab> <ls>MBH. 7,35,21</ls>. {#praRihita#} выясненный, выведенный на свет.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 посылать (лазутчиков). Только *praṇihita* посланный.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMpraRi#} (только {#˚DAya#})
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 8〉 велеть разведывать —, шпионить через (Ins.) при (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%оставлять кого-либо позади в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 9〉 устремлять все свои мысли —, всё свое внимание на что-либо, обдумывать что-либо (Acc.). Только *praṇīdhāya* и *praṇihita* всецело погруженный во что-либо (Loc.), целиком занятый одним делом, поглощенный одной мыслью (о людях и об уме). *praṇihitātman* _Adj._ [ĀPAST. 1,4,29].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%устранять, оставлять без внимания%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 10〉 выяснять, разузнавать, — что именно; с двойным Acc. [MBH. 7,35,21](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,35,21) = [≈Вульг. 7.1.37](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U01_A001_S037) = ≈крит. 07,1.35a. *praṇihita* выясненный, выведенный на свет.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratini#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *saṃpraṇi* (только *˚dhāya*)
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%ставить на место другого, подменять, замещать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 оставлять кого-либо позади в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%распоряжаться, повелевать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 устранять, оставлять без внимания.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vini#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratini*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%раскладывать по разным местам, распределять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 ставить на место другого, подменять, замещать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%откладывать, снимать с себя, убирать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 распоряжаться, повелевать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%надевать, накладывать, ставить —, класть на или в, запасать%}. {#hfdi#} {%принимать кого-либо%} (<ab>Acc.</ab>) {%в сердце%}. {#vinihita#} {%надетый%} <ab>u. s. w.</ab> {%на%} (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vini*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 обращать взор, дух на. {#vinihita#} направленный на (<ab>Loc.</ab> или в <ab>Comp.</ab> предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 раскладывать по разным местам, распределять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 назначать кого-либо на должность (<ab>Loc.</ab>) <ls>RĀJAT. 7,367</ls>. {#vinihita#} назначенный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 откладывать, снимать с себя, убирать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {#vinihita, ˚tAtman#} <lex>Adj.</lex> {%расходящийся с кем-либо, — не согласующийся%} <ls>ĀPAST. 11,8,27</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 надевать, накладывать, ставить —, класть на или в, запасать. *hṛdi* принимать кого-либо (Acc.) в сердце. *vinihita* надетый и т.д. на (Loc. или в Comp. предшествующем).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 {#vinihita#} <ls>MBH. 6,3678</ls> ошибочно вм. {#vinihata#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 обращать взор, дух на. *vinihita* направленный на (Loc. или в Comp. предшествующем).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMni#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 назначать кого-либо на должность (Loc.) [RĀJAT. 7,367](https://sanskrit-lexicon-scans.github.io/rajatarcalc/app1?7,367). *vinihita* назначенный.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 совместно складывать в или при (<ab>Loc.</ab>), откладывать, убирать на хранение <ls n="Chr.">218,8</ls>. Класть в (<ab>Loc.</ab>), запасать, [Page3-154-a] накапливать. В более древнем языке <ab>Med.</ab> {#hfdayasaMnihita#} вложенный в сердце, пребывающий в сердце.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 *vinihita, ˚tātman* _Adj._ расходящийся с кем-либо, — не согласующийся [ĀPAST. 11,8,27].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%ставить рядом —, подле себя%} <ls>GAUT.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 *vinihita* [MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A083_S040) = ≈крит. 06,79.39a ошибочно вм. *vinihata*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Med.</ab> {%обнаруживаться —, находиться у%} (<ab>Loc.</ab>) <ls>DAŚAK. 81,8</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *saṃni*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>Med.</ab> {#dfzwim#} {%устремлять взор на%} (<ab>Loc.</ab>), {#hfdayam#} {%сосредотачиваться, направляя сердце на одну точку%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 совместно складывать в или при (Loc.), откладывать, убирать на хранение [218,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?218). Класть в (Loc.), запасать, накапливать. В более древнем языке Med. *hṛdayasaṃnihita* вложенный в сердце, пребывающий в сердце.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 <ab>Med.</ab> {%направлять кого-либо на что-либо, поручать кому-либо что-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 ставить рядом —, подле себя [GAUT.]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 <ab>Pass.</ab> и <ab>Med.</ab> быть вблизи —, присутствовать, предстоять. {#saMnihita#} находящийся поблизости, присутствующий —, находящийся здесь —, находящийся под рукой, наличный, близко предстоящий. С <ab>Dat.</ab> готовый —, снаряженный к.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 Med. обнаруживаться —, находиться у (Loc.) [DAŚAK. 81,8].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 Med. *dṛṣṭim* устремлять взор на (Loc.), *hṛdayam* сосредотачиваться, направляя сердце на одну точку.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%приближать, представлять себе%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 Med. направлять кого-либо на что-либо, поручать кому-либо что-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Pass.</ab> {%являться кому-либо%} (<ab>Gen.</ab>) {%вблизи, проявляться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 Pass. и Med. быть вблизи —, присутствовать, предстоять. *saṃnihita* находящийся поблизости, присутствующий —, находящийся здесь —, находящийся под рукой, наличный, близко предстоящий. С Dat. готовый —, снаряженный к.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nis#} {%выяснять, обнаруживать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vinis#}, {#vinirDAya#} <ls>Ind. St. 9,32</ls> ошибочно вм. {#viniDArya#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 приближать, представлять себе.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 Pass. являться кому-либо (Gen.) вблизи, проявляться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 <ab>Act.</ab> <ab>Med.</ab> {%накладывать вокруг, расставлять кругом, обкладывать%}. {#pa/rihita#} {%расставленный вокруг, окружающий%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *nis* выяснять, обнаруживать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Act.</ab> <ab>Med.</ab> надевать на себя, облачаться (в одежду, украшение) <ls n="Chr.">311,3</ls>. <ls n="Chr.">320,11</ls>. <ls n="Chr. 320,">12</ls>. Без объекта: надевать на себя одежду. {#parihita#} надетый.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vinis*, *vinirdhāya* [Ind. St. 9,32] ошибочно вм. *vinidhārya*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 обкладывать, окружать, облачать — с (<ab>Instr.</ab>), окружать со всех сторон. Обычно <ab>Act.</ab> {#pa/rihita#} обложенный, окруженный.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>Act.</ab> {%завершать — как технический термин для обозначения окончания рецитации в литургии%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 Act. Med. накладывать вокруг, расставлять кругом, обкладывать. *parihita* расставленный вокруг, окружающий.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {#paridaDe#} <ls>HARIV. 3743</ls> ошибочно вм. {#praRidaDe, paridaDyAt#}; <ls>Ind. St. 5,335</ls> ошибочно вм. {#prati˚#}. Порой также смешивается с {#paridA#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 Act. Med. надевать на себя, облачаться (в одежду, украшение) [311,3](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?311). [320,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). [12](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?320). Без объекта: надевать на себя одежду. *parihita* надетый.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 обкладывать, окружать, облачать — с (Ins.), окружать со всех сторон. Обычно Act. *parihita* обложенный, окруженный.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 велеть надеть, одевать кого-либо в; с двойным <ab>Acc.</ab> <ls>HEMĀDRI 1,603,10</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 Act. завершать — как технический термин для обозначения окончания рецитации в литургии.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%окружать, — облачать в%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 *paridadhe* [HARIV. 3743](https://sanskrit-lexicon-scans.github.io/hariv?3743) ошибочно вм. *praṇidadhe, paridadhyāt*; [Ind. St. 5,335] ошибочно вм. *prati˚*. Порой также смешивается с *paridā*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> ({#˚Ditsate#}). собираться надеть на себя что-либо (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vipari#} {%менять, заменять,%} <ab>insbes.</ab> одежду. С дополнением {#vAsas#} отсюда <ab>v. a.</ab> {%переодеваться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 велеть надеть, одевать кого-либо в; с двойным Acc. [HEMĀDRI 1,603,10].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> отворачивать, поворачивать (лицо).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 окружать, — облачать в (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pi#} <ab>s. u.</ab> {#api#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. (*˚dhitsate*). собираться надеть на себя что-либо (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#puras#} <ab>s. u. d.</ab> <ab n="Worte">W.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vipari* менять, заменять, особ. одежду. С дополнением *vāsas* отсюда преим. переодеваться.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#pra#} <ab>Med.</ab> — 1〉 {%предлагать, подносить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. отворачивать, поворачивать (лицо).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%отправлять, посылать%} (лазутчика) <ls>ṚV. 7,61,3</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pi* см. *api*.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%предаваться чему-либо%} (<ab>Acc.</ab>) <ls>LALIT. 499,9</ls>. — {#prahita#} и {#saMprahita#} относятся к {#hi#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *puras* см. слово
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {#praDApita#} <ls>MBH. 9,1074</ls> ошибочно вм. {#praDAvita#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *pra* Med. — 1〉 предлагать, подносить.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#prati#} — 1〉 {%приставлять, насаживать, прилагать, вставлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 отправлять, посылать (лазутчика) [ṚV. 7,61,3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.061.html#rv07.061.03).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%накладывать%} (стрелу), {%целиться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 предаваться чему-либо (Acc.) [LALIT. 499,9]. — *prahita* и *saṃprahita* относятся к *hi*.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%подносить%} (к губам для питья).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. *pradhāpita* [MBH. 9,1074](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1074) = [≈Вульг. 9.20.4](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A020_S004) = ≈крит. 09,19.4a ошибочно вм. *pradhāvita*.
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%ставить%} (ноги). {#sarvEH padDiH#} {%ступать на все четыре,%} так <ab>v. a.</ab> {%широко шагать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *prati* — 1〉 приставлять, насаживать, прилагать, вставлять.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%подавать, предлагать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 накладывать (стрелу), целиться.
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%давать, возвращать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 подносить (к губам для питья).
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 {%восстанавливать, приводить в порядок%} <ls>ŚĀṄKH. GṚHY. 1,15,10</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 ставить (ноги). *sarvaiḥ paddhiḥ* ступать на все четыре, так преим. широко шагать.
 
-**+)** [PW·restate → не привязано: цель не указана] 8〉 {%применять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 подавать, предлагать.
 
-**+)** [PW·restate → не привязано: цель не указана] 9〉 {%удерживать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 давать, возвращать.
 
-**+)** [PW·restate → не привязано: цель не указана] 10〉 <ab>Pass.</ab> <ab>Med.</ab> {%начинаться, приступать, наступать, наставать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 восстанавливать, приводить в порядок [ŚĀṄKH. GṚHY. 1,15,10].
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anuprati#} {%подносить вслед за другим%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 применять.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#vi#} — 1〉 {%делить, раздавать, сообщать, уделять, даровать, предоставлять кому-либо что-либо, доставлять%}. {#kAmAn#} {%удовлетворять чьи-либо желания, исполнять их%}. {#AtmanaH#} {%доставлять себе (sibi) что-либо, готовить себе%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 удерживать.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%распространять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 10〉 Pass. Med. начинаться, приступать, наступать, наставать.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%разделять, упорядочивать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anuprati* подносить вслед за другим (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%расчленять, разделять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *vi* — 1〉 делить, раздавать, сообщать, уделять, даровать, предоставлять кому-либо что-либо, доставлять. *kāmān* удовлетворять чьи-либо желания, исполнять их. *ātmanaḥ* доставлять себе (sibi) что-либо, готовить себе.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%предписывать, устанавливать, определять, назначать%}. <ab>Pass.</ab> {%быть предназначенным для%} (<ab>Gen.</ab>) <ls n="Chr.">195,24</ls>. {%означать%} (<ab>Nom.</ab>). {#devEHsa me BartA vihitaH#} {%он богами назначен мне в мужья%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 распространять.
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%проявлять, обнаруживать%} (душевное состояние, манеру поведения) <ls n="Chr.">146,6</ls>. <ls n="Chr.">170,28</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 разделять, упорядочивать.
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 {%находить, отыскивать%} (средство) <ls n="Chr.">48,23</ls>. <ls n="Chr.">159,8</ls>. <ls>MBH. 3,76,38</ls>. <ls>R. 3,40,33</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 расчленять, разделять.
 
-**+)** [PW·restate → не привязано: цель не указана] 8〉 {%создавать, производить, образовывать, основывать, строить, возводить, закладывать, составлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 предписывать, устанавливать, определять, назначать. Pass. быть предназначенным для (Gen.) [195,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195). означать (Nom.). *devaiḥsa me bhartā vihitaḥ* он богами назначен мне в мужья.
 
-**+)** [PW·restate → не привязано: цель не указана] 9〉 {%приводить в надлежащий вид, доставлять%} <ls n="Chr.">73,25</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 проявлять, обнаруживать (душевное состояние, манеру поведения) [146,6](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?146). [170,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?170).
 
-**+)** [PW·restate → не привязано: цель не указана] 10〉 {%совершать, исполнять, осуществлять, готовить, причинять, устраивать, делать, творить%}. {#mantram#} {%держать совет;%} {#rAjyam#} {%осуществлять власть, овладевать <ab n="Herrschaft">H.</ab>, управлять;%} {#sacivatAm#} {%занимать должность министра%}. {#mEtryam#} {%заключать дружбу;%} {#saMDim#} {%мир <ab n="schliessen">schl.</ab>;%} {#kalaham#} {%начинать раздор%}. {#saMgrAmam#} {%давать сражение;%} {#cumbanam#} {%целовать;%} {#kiM viDIyatAM tena#} {%что с этим делать?%}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 находить, отыскивать (средство) [48,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?48). [159,8](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?159). [MBH. 3,76,38](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,76,38) = [≈Вульг. 3.2.30](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U01_A002_S030) = ≈крит. 03,2.29a. [R. 3,40,33](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33).
 
-**+)** [PW·restate → не привязано: цель не указана] 11〉 {%делать чем-либо, reddere;%} с двойным <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 создавать, производить, образовывать, основывать, строить, возводить, закладывать, составлять.
 
-**+)** [PW·restate → не привязано: цель не указана] 12〉 {%с чем-либо или с кем-либо%} (<ab>Acc.</ab>) {%сделать так —, привести к тому, чтобы%} ({#yaTA#}) <ls>MBH. 4,29,8</ls>. <ls>R. 2,38,17</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 приводить в надлежащий вид, доставлять [73,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?73).
 
-**+)** [PW·restate → не привязано: цель не указана] 13〉 {%класть на%} (<ab>Loc.</ab>), {%ставить%} ({#agratas, aDas#}), {%вкладывать —, помещать в%} (<ab>Loc.</ab>). {#hfdaye#}, так <ab>v. a.</ab> {%запечатлевать в сердце%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 10〉 совершать, исполнять, осуществлять, готовить, причинять, устраивать, делать, творить. *mantram* держать совет; *rājyam* осуществлять власть, овладевать H., управлять; *sacivatām* занимать должность министра. *maitryam* заключать дружбу; *saṃdhim* мир schl.; *kalaham* начинать раздор. *saṃgrāmam* давать сражение; *cumbanam* целовать; *kiṃ vidhīyatāṃ tena* что с этим делать?
 
-**+)** [PW·restate → не привязано: цель не указана] 14〉 {%направлять на%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 11〉 делать чем-либо, reddere; с двойным Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 15〉 {%отряжать, посылать%} (лазутчиков).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 12〉 с чем-либо или с кем-либо (Acc.) сделать так —, привести к тому, чтобы (*yathā*) [MBH. 4,29,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,29,8) = [≈Вульг. 4.2.2](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S002) = ≈крит. 04,2.2a. [R. 2,38,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,38,17).
 
-**+)** [PW·restate → не привязано: цель не указана] 16〉 {#vihita#} {%снаряженный —, наделенный%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 13〉 класть на (Loc.), ставить (*agratas, adhas*), вкладывать —, помещать в (Loc.). *hṛdaye*, так преим. запечатлевать в сердце.
 
-**+)** [PW·restate → не привязано: цель не указана] 17〉 <ls>MBH. 4,155</ls> ошибочно вм. {#ni#} <ls>MĀRK. P. 41,20</ls>. <ls>PAÑCAD. 186,8. 237,12</ls> вм. {#pi#} ({#api#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 14〉 направлять на (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {%велеть класть%}. <ab>Desid.</ab> ({#˚Ditsati, ˚Ditsate#}) — 1〉 {%намереваться уделить кому-либо%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 15〉 отряжать, посылать (лазутчиков).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%пытаться установить, пытаться представить что-либо как решенное%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 16〉 *vihita* снаряженный —, наделенный (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%желать найти%} (средство).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 17〉 [MBH. 4,155](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.155) = [≈Вульг. 4.5.14](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A005_S014) = ≈крит. 04,5.13a ошибочно вм. *ni* [MĀRK. P. 41,20](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?41,20). [PAÑCAD. 186,8. 237,12] вм. *pi* (*api*).
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%думать о том, чтобы раздобыть что-либо%} <ls>Spr. 212</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. велеть класть. Desid. (*˚dhitsati, ˚dhitsate*) — 1〉 намереваться уделить кому-либо (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%намереваться совершить, — осуществить, намереваться%} <ab>überh.</ab> {#viDitsamAna#} {%преследующий определенные цели, корыстный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 пытаться установить, пытаться представить что-либо как решенное.
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%думать о том, чтобы сделать кого-либо чем-либо,%} с двойным <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 желать найти (средство).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#ativi#} {%распределять сверх меры%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 думать о том, чтобы раздобыть что-либо [Spr. 212](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?212).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aDivi#} {%распределять по чему-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 намереваться совершить, — осуществить, намереваться вообще *vidhitsamāna* преследующий определенные цели, корыстный.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anuvi#} — 1〉 <ab>Med.</ab> {%нанизывать по порядку%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 думать о том, чтобы сделать кого-либо чем-либо, с двойным Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 <ab>Med.</ab> {%предписывать в соответствии с%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *ativi* распределять сверх меры.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%ставить впереди после кого-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *adhivi* распределять по чему-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%осуществлять впоследствии%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anuvi* — 1〉 Med. нанизывать по порядку.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%осуществлять, производить%}. <ls n="Chr.">171,22</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Med. предписывать в соответствии с (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 <ab>Act.</ab> {%брать что-либо%} (<ab>Acc.</ab>) {%за руководство, давать себя направлять%} (<ab>Acc.</ab>) <ls>HARṢAC. 1,8</ls>. <ab>Pass.</ab> {%руководствоваться%} (<ab>Acc.</ab> или <ab>Gen.</ab>). {#˚hita#} {%руководствуясь%} (<ab>Gen.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 ставить впереди после кого-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aBivi#} — 1〉 {%полностью покрывать —, устилать чем-либо%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 осуществлять впоследствии.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%ставить —, приводить в непосредственную близость к чему-либо —, в соприкосновение с чем-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 осуществлять, производить. [171,22](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?171).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#pravi#} — 1〉 {%отделять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 Act. брать что-либо (Acc.) за руководство, давать себя направлять (Acc.) [HARṢAC. 1,8]. Pass. руководствоваться (Acc. или Gen.). *˚hita* руководствуясь (Gen.).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 <ab>Med.</ab> {%заботиться о чем-либо, думать о чем-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *abhivi* — 1〉 полностью покрывать —, устилать чем-либо (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%оказывать кому-либо всяческое внимание%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 ставить —, приводить в непосредственную близость к чему-либо —, в соприкосновение с чем-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#prativi#} — 1〉 {%упорядочивать, приводить в порядок —, готовить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *pravi* — 1〉 отделять.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%отряжать, посылать%} (лазутчика).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Med. заботиться о чем-либо, думать о чем-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%противодействовать%}. {#asya kiM prativiDAsyasi#} {%что ты будешь делать против этого?%} <ls>KĀD. 77,17</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 оказывать кому-либо всяческое внимание.
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {%оспаривать умозаключение%} <ls>ŚAṂK. zu BĀDAR. 3,4,7</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *prativi* — 1〉 упорядочивать, приводить в порядок —, готовить.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Desid.</ab> в {#prativiDitsA#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 отряжать, посылать (лазутчика).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#saMvi#} — 1〉 <ab>Med.</ab> {%распоряжаться, определять, устанавливать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 противодействовать. *asya kiṃ pratividhāsyasi* что ты будешь делать против этого? [KĀD. 77,17].
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%давать кому-либо распоряжение%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 оспаривать умозаключение [ŚAṂK. zu BĀDAR. 3,4,7].
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%вести, устраивать, заботиться о чем-либо, озаботиться чем-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. в *pratividhitsā*.
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 {#mAnasam#} {%поддерживать дух, быть в добром расположении духа%} <ls>Spr. 6641</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *saṃvi* — 1〉 Med. распоряжаться, определять, устанавливать.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%употреблять, применять;%} с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 давать кому-либо распоряжение.
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%пользоваться чем-либо%} (<ab>Instr.</ab>) <ls>PAÑCAT. 12,21</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 вести, устраивать, заботиться о чем-либо, озаботиться чем-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 {%делать чем-либо,%} с двойным <ab>Acc.</ab> <ls>NAIṢ. 8,16</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 *mānasam* поддерживать дух, быть в добром расположении духа [Spr. 6641](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?6641).
 
-**+)** [PW·restate → не привязано: цель не указана] 8〉 {%расставлять, раскладывать%} (силки); можно было бы ожидать {#saMni#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 употреблять, применять; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 9〉 <ls>MBH. 2,1510</ls> ошибочно вм. {#saMni#}, как читает <ls>ed. Bomb.</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 пользоваться чем-либо (Ins.) [PAÑCAT. 12,21](https://sanskrit-lexicon-scans.github.io/pantankose/app2?12,21).
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Caus.</ab> {%поручать кому-либо заботу —, давать кому-либо управлять%} <ls>KĀD. 2,108,19</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 делать чем-либо, с двойным Acc. [NAIṢ. 8,16].
 
-**+)** [PW·restate → не привязано: цель не указана] С {#sam#} — 1〉 {%составлять, сочетать, связывать, сшивать, соединять, сочетать — с%} (<ab>Instr.</ab>), {%смыкать%} (глаза, рану). {#DanurvARena#} {%совмещать лук со стрелой;%} с пропуском «стрелы» или «лука» (<ls>ṚV. 5,54,2</ls>) <ab>dass.</ab> или {%прицеливаться%}. <ab>Pass.</ab> {%соединяться, связываться с%} (<ab>Instr.</ab>), так <ab>v. a.</ab> {%вступать во владение%}. {#vAcam#} {%обмениваться словами с%} (<ab>Instr.</ab>) {#manas#} {%сосредоточить дух,так <ab>v. a.</ab> {%собраться%}. {#saMhita#} {%соединенный, — с, находящийся в связи с, сопровождаемый, снабженный%} (в <ab>Comp.</ab> предшествующий) <ls>ĀPAST. 1,22,1</ls>. {%имеющий отношение к, касающийся; согласующийся с, вызванный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 расставлять, раскладывать (силки); можно было бы ожидать *saṃni*.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%восстанавливать, исправлять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 [MBH. 2,1510](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1510) = [≈Вульг. 2.43.17](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U08_A043_S017) = ≈крит. 02,40.16c ошибочно вм. *saṃni*, как читает [Бомбейская ред.].
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%класть в или при%} (<ab>Loc.</ab>), {%ставить, складывать на%} (<ab>Loc.</ab>), стрелу на лук (<ab>Loc.</ab>) {%накладывать%} (с <ab>Dat.</ab> лица, на которое направлена стрела; часто также с дополнением «лук»). {#saMDAna#} = {#saMdaDAna#}. В виде исключения <ab>Act.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Caus. поручать кому-либо заботу —, давать кому-либо управлять [KĀD. 2,108,19].
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 <ab>Med.</ab> {%направлять взор на%} ({#tatas#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *sam* — 1〉 составлять, сочетать, связывать, сшивать, соединять, сочетать — с (Ins.), смыкать (глаза, рану). *dhanurvāṇena* совмещать лук со стрелой; с пропуском «стрелы» или «лука» ([ṚV. 5,54,2](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.054.html#rv05.054.02)) то же или прицеливаться. Pass. соединяться, связываться с (Ins.), так преим. вступать во владение. *vācam* обмениваться словами с (Ins.) *manas* сосредоточить дух,так преим. {%собраться. *saṃhita* соединенный, — с, находящийся в связи с, сопровождаемый, снабженный (в Comp. предшествующий) [ĀPAST. 1,22,1]. имеющий отношение к, касающийся; согласующийся с, вызванный.
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 {%совместно даровать, соединять на%} (<ab>Loc.</ab>), {%давать, дарить%}. {#nAma#} {%давать кому-либо%} (<ab>Gen.</ab>) {%имя%}. {#SradDAm#} с <ab>Med.</ab> {%доверять чему-либо%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 восстанавливать, исправлять.
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 {%заключать союз%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 класть в или при (Loc.), ставить, складывать на (Loc.), стрелу на лук (Loc.) накладывать (с Dat. лица, на которое направлена стрела; часто также с дополнением «лук»). *saṃdhāna* = *saṃdadhāna*. В виде исключения Act.
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 <ab>Med.</ab> {%сводить вместе,%} так <ab>v. a.</ab> {%примирять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 Med. направлять взор на (*tatas*).
 
-**+)** [PW·restate → не привязано: цель не указана] 8〉 *договариваться, объединяться —, ладить —, мириться с (<ab>Instr.</ab>, в виде исключения <ab>Acc.</ab>) <ls>MBH. 5,95,23</ls>. В виде исключения <ab>Act.</ab> {#saMhita#} {%находящийся в дружественных отношениях с%} (<ab>Instr.</ab> или *<ab>Instr.</ab> с {#saha#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 совместно даровать, соединять на (Loc.), давать, дарить. *nāma* давать кому-либо (Gen.) имя. *śraddhām* с Med. доверять чему-либо (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 9〉 *{%впутывать кого-либо в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 заключать союз.
 
-**+)** [PW·restate → не привязано: цель не указана] 10〉 <ab>Pass.</ab> {%содержаться —, удерживаться в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 Med. сводить вместе, так преим. примирять.
 
-**+)** [PW·restate → не привязано: цель не указана] 11〉 {%причинять кому-либо что-либо%}. {#sAhAyyam#} {%оказывать кому-либо поддержку%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 8〉 *договариваться, объединяться —, ладить —, мириться с (Ins., в виде исключения Acc.) [MBH. 5,95,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,95,23) = [≈Вульг. 5.5.6](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U01_A005_S006) = ≈крит. 05,5.6a. В виде исключения Act. *saṃhita* находящийся в дружественных отношениях с (Ins. или *Ins. с *saha*).
 
-**+)** [PW·restate → не привязано: цель не указана] 12〉 <ab>Med.</ab> {%выстоять против кого-либо%} (<ab>Acc.</ab>), {%быть в состоянии тягаться с кем-либо%} <ls n="Chr.">251,4</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 9〉 *впутывать кого-либо в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 13〉 <ab>Med.</ab> {%пользоваться%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 10〉 Pass. содержаться —, удерживаться в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 14〉 {#saMDAya#} <ls>MBH. 3,15726</ls> ошибочно вм. {#saMyAya#}. К {#AtmasaMhita#} <ls>KĀM. NĪTIS. 9,68</ls> <ab>vgl.</ab> <ab>Comm.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 11〉 причинять кому-либо что-либо. *sāhāyyam* оказывать кому-либо поддержку.
 
-**+)** [PW·restate → не привязано: цель не указана] <ab>Desid.</ab> ({#˚Ditsati#}) {%желать составить —, изготовить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 12〉 Med. выстоять против кого-либо (Acc.), быть в состоянии тягаться с кем-либо [251,4](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?251).
 
-**+)** [PW·restate → не привязано: цель не указана] С {#atisam#} — 1〉 {%поносить, порочить кого-либо%} <ls>GAUT.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 13〉 Med. пользоваться (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%водить кого-либо за нос, обманывать%}. <ab>v. l.</ab> {#aBisam#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 14〉 *saṃdhāya* [MBH. 3,15726](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15726) = [≈Вульг. 3.271.10](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U17_A271_S010) = ≈крит. 03,255.10a ошибочно вм. *saṃyāya*. К *ātmasaṃhita* [KĀM. NĪTIS. 9,68] ср. коммент.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {%затмевать кого-либо или что-либо, превосходить — в отношении%} ({#prati#}) <ls>BĀLAR. 33,2</ls>. {%наносить ущерб чему-либо;%} с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Desid. (*˚dhitsati*) желать составить —, изготовить.
 
-**+)** [PW·restate → не привязано: цель не указана] С {#aDisam#} {%объединять на или в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *atisam* — 1〉 поносить, порочить кого-либо [GAUT.]
 
-**+)** [PW·restate → не привязано: цель не указана] С {#anusam#} — 1〉 {%присоединять, нанизывать%}. Только {#˚sa/hita#} {%присоединенный к%} (<ab>Loc.</ab>). В конце <ab>Comp.</ab> {%примыкающий к, согласующийся с%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 водить кого-либо за нос, обманывать. v. l. *abhisam*.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 {%мысленно следить, направлять мысли —, внимание на что-либо, наблюдать, исследовать;%} с <ab>Acc.</ab> <ls>Ind. St. 9,125. 137. 143</ls>. <ls>BĀLAR. 34,10</ls>. В виде исключения с <ab>Loc.</ab> <ls>PRASANNAR. 66,16</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 затмевать кого-либо или что-либо, превосходить — в отношении (*prati*) [BĀLAR. 33,2]. наносить ущерб чему-либо; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 <ab>Act.</ab> {#AtmAnam#} {%сосредоточиться, взять себя в руки%}. {#anusaMDAya DiyA#} {%сосредотачиваясь%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *adhisam* объединять на или в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> ({#˚Ditsati#}) {%стремиться доказать что-либо, следовать за чем-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anusam* — 1〉 присоединять, нанизывать. Только *˚sahita* присоединенный к (Loc.). В конце Comp. примыкающий к, согласующийся с.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBisam#}
-<div n="1">— 1〉 {%схлопываться, защелкиваться в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 мысленно следить, направлять мысли —, внимание на что-либо, наблюдать, исследовать; с Acc. [Ind. St. 9,125. 137. 143]. [BĀLAR. 34,10]. В виде исключения с Loc. [PRASANNAR. 66,16].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%соединять%} стрелу с луком (<ab>Instr.</ab>), {%накладывать%} на лук.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 Act. *ātmānam* сосредоточиться, взять себя в руки. *anusaṃdhāya dhiyā* сосредотачиваясь.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%направлять%} снаряд на (<ab>Dat.</ab> или <ab>Loc.</ab>), {%целиться —, быть направленным на%} (о снаряде); mit <ab>Acc.</ab> {#aBisaMhita#} {%направленный на%} (<ab>Dat.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. (*˚dhitsati*) стремиться доказать что-либо, следовать за чем-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью%} (<ab>Acc.</ab>, исключительно <ab>Dat.</ab>) <ls>MBH. 9,16,23</ls>. {#tAda SErme 'BisaMhitam#} {%такие имеют меня своей целью%}. {#aBisaMDAya#} без объекта {%с корыстной целью%} <ls>GAUT.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhisam*
+— 1〉 схлопываться, защелкиваться в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%совместно признавать кого-либо, признавать%} <ab>überh.</ab> {#sarvalokABisaMhita#} {%признанный всем миром%} <ls>MBH. 12,132,1</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 соединять стрелу с луком (Ins.), накладывать на лук.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {%заблаговременно договариваться о чем-либо, заранее приходить к соглашению о чем-либо;%} mit <ab>Acc.</ab> <ls n="Chr.">191,17</ls>. <ls>R. 5,82,5</ls> (где, по всей видимости, следует соединить {#anyo'nyenABi˚#}).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 направлять снаряд на (Dat. или Loc.), целиться —, быть направленным на (о снаряде); mit Acc. *abhisaṃhita* направленный на (Dat.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 {%захватить кого-либо в свою власть, подчинять себе, держать в зависимости%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 ставить себе целью что-либо или кого-либо, намереваться, иметь в виду, думать о, иметь целью (Acc., исключительно Dat.) [MBH. 9,16,23](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?9,16,23) = [≈Вульг. 9.1.16](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A001_S016) = ≈крит. 09,1.16a. *tāda śairme 'bhisaṃhitam* такие имеют меня своей целью. *abhisaṃdhāya* без объекта с корыстной целью [GAUT.]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 8〉 {%стремиться привлечь кого-либо к себе, стараться расположить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 совместно признавать кого-либо, признавать вообще *sarvalokābhisaṃhita* признанный всем миром [MBH. 12,132,1](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,132,1) = [≈Вульг. 12.5.5](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A005_S005) = ≈крит. 12,5.5a.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 9〉 {%примыкать к, вступать в союз с%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 заблаговременно договариваться о чем-либо, заранее приходить к соглашению о чем-либо; mit Acc. [191,17](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?191). [R. 5,82,5](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,5) (где, по всей видимости, следует соединить *anyo'nyenābhi˚*).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 10〉 <ab>Med.</ab> [Page3-155-b] {%назначать кого-либо к чему-либо, назначать кем-либо;%} mit doppeltem <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 захватить кого-либо в свою власть, подчинять себе, держать в зависимости.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 11〉 {#˚aBisaMhita#} {%связанный с, состоящий в отношении к%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 8〉 стремиться привлечь кого-либо к себе, стараться расположить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samaBisam#}
-<div n="1">— 1〉 <ab>Med.</ab> {%вставлять в%} (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 9〉 примыкать к, вступать в союз с (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%намереваться%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 10〉 Med. назначать кого-либо к чему-либо, назначать кем-либо; mit doppeltem Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {#savayaM samaBisaMDAya#} <ls>MBH. 9,818</ls> ошибочно вм. {#savamaMSamaBi˚#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 11〉 *˚abhisaṃhita* связанный с, состоящий в отношении к.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upasam#}
-<div n="1">— 1〉 {%прибавлять, присоединять%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samabhisam*
+— 1〉 Med. вставлять в (Loc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%умножать, увеличивать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 намереваться (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%соединять с%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 *savayaṃ samabhisaṃdhāya* [MBH. 9,818](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.818) = [≈Вульг. 9.16.23](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A016_S023) = ≈крит. 09,15.23a ошибочно вм. *savamaṃśamabhi˚*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%соединять кого-либо с чем-либо%} (<ab>Instr.</ab>), таким образом <ab>v. a.</ab> {%делать причастным%}. {#upasaMhita#} {%соединенный —, снабженный чем-либо, сопровождаемый —, окруженный%} (<ab>Instr.</ab> или в <ab>Comp.</ab> предшествующем). {#kfzRopa˚#} таким образом <ab>v. a.</ab> {%окрашенный в черный цвет%}. {#deSakAlopa˚#} таким образом <ab>v. a.</ab> {%соответствующий месту и времени%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upasam*
+— 1〉 прибавлять, присоединять.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%иметь перед глазами в качестве цели%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 умножать, увеличивать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {%обманывать кого-либо, вводить в заблуждение%} <ls>MBH. 4,47,12</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 соединять с (Ins.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 {#upasaMhita#} {%преданный, приверженный%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 соединять кого-либо с чем-либо (Ins.), таким образом преим. делать причастным. *upasaṃhita* соединенный —, снабженный чем-либо, сопровождаемый —, окруженный (Ins. или в Comp. предшествующем). *kṛṣṇopa˚* таким образом преим. окрашенный в черный цвет. *deśakālopa˚* таким образом преим. соответствующий месту и времени.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prasam#} {%накладывать%} стрелу. <ab>Vgl.</ab> также {#prasaMDAna#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 иметь перед глазами в качестве цели.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratisam#}
-<div n="1">— 1〉 <ab>Act.</ab> {%вновь соединять%} <ls>ŚAT. BR. 12,6,1,2.</ls> <ls n="ŚAT. BR. 12,6,1,">37</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 обманывать кого-либо, вводить в заблуждение [MBH. 4,47,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,47,12) = [≈Вульг. 4.2.20](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A002_S020) = ≈крит. 04,2.17a.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Med.</ab> {%накладывать сверху, прикреплять, накладывать стрелу%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 7〉 *upasaṃhita* преданный, приверженный.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Med.</ab> {%возвращать, отвечать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prasam* накладывать стрелу. ср. также *prasaṃdhāna*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>act.</ab> <ab>Med.</ab> {%вновь осознавать что-либо%} <ls>Comm. zu NYĀYAS. 1,1,10. 34. 3,1,1</ls>. {%вспоминать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratisam*
+— 1〉 Act. вновь соединять [ŚAT. BR. 12,6,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,2) [37](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,6,1,37).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 <ab>Med.</ab> {%получать понимание чего-либо%} (<ab>Acc.</ab>) <ls>PRAB. 9,14</ls>, <ab>v. l.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 Med. накладывать сверху, прикреплять, накладывать стрелу.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {#pratisaMhita#} {%направленный на или против%} (<ab>Acc.</ab> или в <ab>Comp.</ab> предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 Med. возвращать, отвечать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#visam#} <ab>Med.</ab> {%губить кого-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 act. Med. вновь осознавать что-либо [Comm. zu NYĀYAS. 1,1,10. 34. 3,1,1]. вспоминать.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#DA#}¦, {#Dayati, DItvA/, DIta/#}; {%сосать что-либо%} или {%пить%} что-либо (<ab>Acc.</ab>); {%высасывать%} (также в <ab>übertr.</ab> <ab>Bed.</ab>), {%всасывать,%} таким образом <ab>v. a.</ab> {%всецело усваивать%}. <ab>Caus.</ab> {#DApa/yate#} {%кормить грудью, вскармливать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 5〉 Med. получать понимание чего-либо (Acc.) [PRAB. 9,14], v. l.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#} <ab>Caus.</ab> <ab>Act.</ab> {%прикладывать для кормления грудью%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 6〉 *pratisaṃhita* направленный на или против (Acc. или в Comp. предшествующем).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nirava#} {%высасывать%} <ls>ĀPAST. ŚR. 13,17,5</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *visam* Med. губить кого-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ud#} в *{#udDaya#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*dhā*, *dhayati, dhītvā, dhīta*; сосать что-либо или пить что-либо (Acc.); высасывать (также в перен. знач.), всасывать, таким образом преим. всецело усваивать. Caus. *dhāpayate* кормить грудью, вскармливать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#} <ab>Caus.</ab> <ab>Med.</ab> {%вскармливать грудью%}. |<sic/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anu* Caus. Act. прикладывать для кормления грудью.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nis#} {%высасывать%}. {#ni/rDItatama#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *nirava* высасывать [ĀPAST. ŚR. 13,17,5].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— Mit *{#pariRi#} и *{#praRi, ˚Dayati#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ud* в **uddhaya*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#} <ab>Caus.</ab> <ab>Act.</ab> {%давать сосать%} (<ab>Acc.</ab>) <ls>MĀN. GṚHY. 1,17</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa* Caus. Med. вскармливать грудью. |
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#} в {#˚Da/#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *nis* высасывать. *nirdhītatama*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>4.</hom> {#DA#}¦ <lex>Adj.</lex> {%сосущий%} в {#payoDA/#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Mit **pariṇi* и **praṇi, ˚dhayati*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#DA#}¦ mit {#vi#} <ab>Act.</ab> {%стараться, прилагать усилия ради%} (<ab>Dat.</ab>) <ls>KIR. 1,3,42</ls>.<info n="sup_3"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* Caus. Act. давать сосать (Acc.) [MĀN. GṚHY. 1,17].
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#DA#}¦ mit {#aBi#}, S. 152, Sp. 1, Z. 2 читай {#aBi/hita#}.
-<div n="p">— С {#aByupa#} 3〉 вычеркни <ab>Med.</ab>
-<div n="p">— С {#aBisam#} 1〉 читай (<ab>Acc.</ab>) <ab>st.</ab> (<ab>Loc.</ab>).<info n="sup_5"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prati* в *˚dha*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#DA#}¦ mit {#samA#}, {#samAhita#} у риторов таким образом <ab>v. a.</ab> {%приглушенный, подавленный%}.
-<div n="p">— С {#vini#} 6〉 {#vinihitAtman#} [Page6-302-c] в приведенном месте означает {%не уделяющий внимания кому-либо%} (<ab>Loc.</ab>).
-<div n="p">— С {#sam#}, <ab>Partic.</ab> {#saMhita/#} и {#saM/hita#}; <ab>s.</ab> также <ab>bes.</ab><info n="sup_6"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **4.** *dhā* _Adj._ сосущий в *payodhā*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#DA#}¦ mit {#aBi#} III. 5.
-<div n="p">— С {#anvava#} III. <ls>ĀPAST. ŚR. 8,11,16</ls>. <ls>GṚHY. 17,5</ls>.
-<div n="p">— С {#samA#} III. 6. *<ab>Pass.</ab> {%приходить в состояние благоговейного сосредоточения%} <ls>MAHĀVY. 81,5</ls>.
-<div n="p">— С {#aByupa#} III. 5.
-<div n="p">— С {#anuni#}, {#anuni/hitAH#} {%расположенный поочередно%} <ls>MAITR. S. 4,6,7 (89,9)</ls>.
-<div n="p">— С {#vini#} III. 6.
-<div n="p">— С {#saMpi#} {%запирать%} <ls>DIVYĀVAD. 232,19</ls>.
-<div n="p">— С {#pra#} III. *{#cittam#} (это, по всей видимости, следует добавить) {%направлять ум на что-либо%} <ls>MAHĀVY. 39,4</ls>.
-<div n="p">— С {#vi#} III. 3.
-<div n="p">— С {#sam#} III. 6.
-<div n="p">— С {#aBisam#} III. 5.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*dhā* mit *vi* Act. стараться, прилагать усилия ради (Dat.) [KIR. 1,3,42].
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] <hom>1.</hom> {#DA#}¦ mit {#vi#} <ab>Act.</ab> {%стараться, прилагать усилия ради%} (<ab>Dat.</ab>) <ls>KIR. 1,3,42</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*dhā* mit *abhi*, S. 152, Sp. 1, Z. 2 читай *abhihita*.
+— С *abhyupa* 3〉 вычеркни Med.
+— С *abhisam* 1〉 читай (Acc.) вместо (Loc.).
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] <hom>1.</hom> {#DA#}¦ mit {#aBi#}, S. 152, Sp. 1, Z. 2 читай {#aBi/hita#}. — С {#aByupa#} 3〉 вычеркни <ab>Med.</ab> — С {#aBisam#} 1〉 читай (<ab>Acc.</ab>) <ab>st.</ab> (<ab>Loc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*dhā* mit *samā*, *samāhita* у риторов таким образом преим. приглушенный, подавленный.
+— С *vini* 6〉 *vinihitātman* в приведенном месте означает не уделяющий внимания кому-либо (Loc.).
+— С *sam*, Partic. *saṃhita* и *saṃhita*; см. также особ.
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] <hom>1.</hom> {#DA#}¦ mit {#samA#}, {#samAhita#} у риторов таким образом <ab>v. a.</ab> {%приглушенный, подавленный%}. — С {#vini#} 6〉 {#vinihitAtman#} [Page6-302-c] в приведенном месте означает {%не уделяющий внимания кому-либо%} (<ab>Loc.</ab>). — С {#sam#}, <ab>Partic.</ab> {#saMhita/#} и {#saM/hita#}; <ab>s.</ab> также <ab>bes.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*dhā* mit *abhi* III. 5.
+— С *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5].
+— С *samā* III. 6. *Pass. приходить в состояние благоговейного сосредоточения [MAHĀVY. 81,5].
+— С *abhyupa* III. 5.
+— С *anuni*, *anunihitāḥ* расположенный поочередно [MAITR. S. 4,6,7 (89,9)].
+— С *vini* III. 6.
+— С *saṃpi* запирать [DIVYĀVAD. 232,19].
+— С *pra* III. **cittam* (это, по всей видимости, следует добавить) направлять ум на что-либо [MAHĀVY. 39,4].
+— С *vi* III. 3.
+— С *sam* III. 6.
+— С *abhisam* III. 5.
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] <hom>1.</hom> {#DA#}¦ mit {#aBi#} III. 5. — С {#anvava#} III. <ls>ĀPAST. ŚR. 8,11,16</ls>. <ls>GṚHY. 17,5</ls>. — С {#samA#} III. 6. *<ab>Pass.</ab> {%приходить в состояние благоговейного сосредоточения%} <ls>MAHĀVY. 81,5</ls>. — С {#aByupa#} III. 5. — С {#anuni, anuni/hitAH#} {%расположенный поочередно%} <ls>MAITR. S. 4,6,7 (89,9)</ls>. — С {#vini#} III. 6. — С {#saMpi#} {%запирать%} <ls>DIVYĀVAD. 232,19</ls>. — С {#pra#} III. {#*cittam#} (это, по всей видимости, следует добавить) {%направлять ум на что-либо%} <ls>MAHĀVY. 39,4</ls>. — С {#vi#} III. 3. — С {#sam#} III. 6. — С {#aBisam#} III. 5.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *dhā* mit *vi* Act. стараться, прилагать усилия ради (Dat.) [KIR. 1,3,42].
 
-**+)** [SCH·sch_correct → не привязано: цель не указана] 1. {%dhā%}¦  mit {%abhi%}, S. 152, Sp. 1, Z. 2 читай {%abhíhita%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *dhā* mit *abhi*, S. 152, Sp. 1, Z. 2 читай *abhihita*. — С *abhyupa* 3〉 вычеркни Med. — С *abhisam* 1〉 читай (Acc.) вместо (Loc.).
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%anvava%} <ls>Āpast. Śr. 8,11,16</ls>; Gṛhy. 17,5.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *dhā* mit *samā*, *samāhita* у риторов таким образом преим. приглушенный, подавленный. — С *vini* 6〉 *vinihitātman* в приведенном месте означает не уделяющий внимания кому-либо (Loc.). — С *sam*, Partic. *saṃhita* и *saṃhita*; см. также особ.
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%ā%} [{%vacanam%}], одобрять, <ls>Pūrṇabh. 165,2</ls> (или смешано с {%avadhārya?%}); [{%svarūpam%}] принимать (смешано с {%āsthāya?%}), <ls>Pūrṇabh. 284,12.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** *dhā* mit *abhi* III. 5. — С *anvava* III. [ĀPAST. ŚR. 8,11,16]. [GṚHY. 17,5]. — С *samā* III. 6. *Pass. приходить в состояние благоговейного сосредоточения [MAHĀVY. 81,5]. — С *abhyupa* III. 5. — С *anuni, anunihitāḥ* расположенный поочередно [MAITR. S. 4,6,7 (89,9)]. — С *vini* III. 6. — С *saṃpi* запирать [DIVYĀVAD. 232,19]. — С *pra* III. **cittam* (это, по всей видимости, следует добавить) направлять ум на что-либо [MAHĀVY. 39,4]. — С *vi* III. 3. — С *sam* III. 6. — С *abhisam* III. 5.
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%samā, samāhita%} у риторов в знач. приглушенный, подавленный. *Pass. приходить в состояние благоговейного сосредоточения, <ls>Mahāvy. 81,5.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1. dhā mit abhi, S. 152, Sp. 1, Z. 2 читай abhíhita.
 
-**+)** [SCH·sch_cancel → не привязано: цель не указана] — С {%abhyupa%} 3. вычеркни <ls>Med.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С anvava [Āpast. Śr. 8,11,16]; Gṛhy. 17,5.
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%˚samupa%} {%порождать%}, <ls>Kir. X,20.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С ā [vacanam], одобрять, [Pūrṇabh. 165,2] (или смешано с avadhārya?); [svarūpam] принимать (смешано с āsthāya?), [Pūrṇabh. 284,12.]
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%anuni, anuníhitāḥ%} {%расположенный поочередно%}, <ls>Maitr. S. 4,6,7</ls> (89,9).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С samā, samāhita у риторов в знач. приглушенный, подавленный. *Pass. приходить в состояние благоговейного сосредоточения, [Mahāvy. 81,5.]
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%˚āni%} {%прикладывать%} (инструмент), <ls>H 24,48.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С abhyupa 3. вычеркни [Med.]
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%vini%} 6. {%vinihitātman%} в приведенном месте означает: {%не уделяющий внимания кому-либо%} (Lok.).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С ˚samupa порождать, [Kir. X,20.]
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] — С {%saṃpi%} {%запирать%}, {part=,seq=16355,type=,n=20}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С anuni, anuníhitāḥ расположенный поочередно, [Maitr. S. 4,6,7] (89,9).
 
-## h10
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С ˚āni прикладывать (инструмент), [H 24,48.]
 
-**1)** <div n="1"> 1) {#nAma#} {%кому-л.%} (<ab>gen.</ab>) {%дать имя.%}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С vini 6. vinihitātman в приведенном месте означает: не уделяющий внимания кому-либо (Loc.).
 
-**4)** <div n="1"> 4) {#upasaMhita#} {%предаваться, отдаваться%}: {#parizad#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С saṃpi запирать, {part=,seq=16355,type=,n=20}
 
-**5)** <div n="1">— 5) {%составить, сочинить%} <ls>Spr. (II) 6441.</ls>
+## омоним h10
 
-**6)** <div n="1">— 6) {#kiM viDIyate tena#} {%что с этим делать?%} <ls>Spr. (II) 793.</ls>
+**1)** 1) *nāma* кому-л. (gen.) дать имя.
 
-**header)** <div n="p">— {#upasam#}
+**4)** 4) *upasaṃhita* предаваться, отдаваться: *pariṣad*
 
-**intro)** <div n="p">— {#vi#}
+**5)** — 5) составить, сочинить [Spr. (II) 6441.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?6441 "Spr. (II) 6441: śāntyarthaṃ sarvaśāstrāṇi vihitāni manīṣibhiḥ | tasmātsa sarvaśāstrajño yasya śāntaṃ manaḥ sadā || — Alle von Weisen verfassten Lehrbücher sollen zu innerer Ruhe führen: daher ist derjenige, dessen Herz stets ruhig ist, ein Kenner aller Lehrbücher.")
 
-**main)** <div n="p">— {#visam#} <ab>med.</ab> {%погубить кого-л., привести кого-л. к гибели%}
+**6)** — 6) *kiṃ vidhīyate tena* что с этим делать? [Spr. (II) 793.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?793 "Spr. (II) 793: asti jalaṃ jalarāśau kṣāraṃ tatkiṃ vidhīyate tena | laghurapi varaṃ sa kūpo yatrākaṇṭhaṃ janaḥ pibati || — Im Meere ist Wasser, das ist salzig, was fängt man damit an? Besser ist dieser winzige Brunnen, aus dem die Leute sich bis zum Halse satt trinken.")
 
-**tail)** <ls>MUIR, ST. (2te Aufl.) 1,509,9.</ls>
+**header)** — *upasam*
 
-## h1
+**intro)** — *vi*
 
-**1)** 2. {#DA#}¦ (= 1. {#DA#})
-<div n="1"> 1) <lex>adj.</lex> <ab>nom. ag.</ab> в конце <ab>compp.</ab>; <ab>s.</ab> {#kiye˚, cano˚, DAma˚, DiyaM˚, yakzmo˚, ratna˚, reto˚, vayo˚, varivo˚#} <ab>u. s. w.</ab> Сокращенно {#Da#} в {#adomaDa, garBaDa#} . По
-<ls>MED. dh. 1</ls> {#DA = DAraka#} (так
-<ls>ŚKDR.</ls> и <ls>WILS.</ls> вм. {#dvAraka#}) и {#brahman#}; <ab>nom.</ab> звучит здесь {#DA#}, а не {#DAs#} (как
-<ls>ŚKDR.</ls> и <ls>WILS.</ls> верно указывают). По
-<ls>EKĀCṢARAK.</ls> в <ls>ŚKDR.</ls> {#DA#} также имя <is>Bṛhaspati's</is>.
+**main)** — *visam* мед. погубить кого-л., привести кого-л. к гибели
 
-**2)** <div n="1">— 2) <lex>f.</lex> <ab>nom. act.</ab> в {#tiroDA, durDA, dviDa#} . <lex>adv.</lex> <ab>suff.</ab> {#DA#} после числительных ({#dviDA#} <ab>u. s. w.</ab>) также относится сюда и должно быть понято как <ab>instr.</ab>; <ab>vgl.</ab> употребление {#DAtu#} с числительными, и {#kftvas#} .
+**tail)** [MUIR, ST. (2te Aufl.) 1,509,9.]
 
-## h6
+## омоним h1
 
-**1)** <div n="1"> 1) {#vAcaM tena na saMdaDyAt#} так <ab>v. a.</ab> {%с тем пусть он не обменивается словами%} <ls>MBH. 12,4220.</ls>
-  — [PWG·pwg_internal_correction] ‹1_addendum› <div n="1"> 1) в конце добавь {#samAhitena manasA#}
-<ls>Spr. 2796.</ls> {#susamAhita#} {%весьма внимательный%}
-<ls n="Spr.">4541.</ls>
-  — [PWG·pwg_internal_correction] ‹1_addendum› <div n="1"> 1) <ab>pass.</ab> {%содержаться%}: {#Dane suKakalA yA tu sApi duHKe niDIyate#} (<ab>Conj.</ab>; <ab>vgl.</ab> <ab>u.</ab> {#vi#}
-<div n="1"> 1) ниже)
-<ls>Spr. 3614.</ls> В конце добавь: {#(tam) nidaDyAnmantriRam#}
-<ls>Spr. 5339</ls>, <ab>v. l.</ab>
-  — [PWG·pwg_internal_correction] ‹1_sub_addendum› <div n="1"> 1) {#bAlasya ca SarIraM tattEladroRyAM niDApaya#}
-<ls>R. 7,75,2.</ls>
-  — [PWG·pwg_internal_correction] ‹1_addendum› <div n="1"> 1)
-<ab>Z.</ab> 2 читай {#nave#} <ab>st.</ab> {#nava#} .
+**1)** 2. *dhā* (= 1. *dhā*)
+ 1) _adj._ nom. ag. в конце compp.; см. *kiye˚, cano˚, dhāma˚, dhiyaṃ˚, yakṣmo˚, ratna˚, reto˚, vayo˚, varivo˚* и т.д. Сокращенно *dha* в *adomadha, garbhadha* . По
+[MED. dh. 1](https://sanskrit-lexicon-scans.github.io/medini/app1?dh,1) *dhā = dhāraka* (так
+[ŚKDR.] и [WILS.] вм. *dvāraka*) и *brahman*; nom. звучит здесь *dhā*, а не *dhās* (как
+[ŚKDR.] и [WILS.] верно указывают). По
+[EKĀCṢARAK.] в [ŚKDR.] *dhā* также имя Брихаспатис.
 
-**2)** <div n="1"> 2) <ls>Spr. 2894.</ls> — <ab>desid.</ab> {%стремиться достичь чего-л., следовать за чем-л.%}: {#ekamanusaMDitsato 'paraM pracyavate#} <ls>SARVADARŚANAS. 27,11. fg. 118,16.</ls>
-  — [PWG·pwg_internal_correction] ‹2_addendum› <div n="1"> 2) {#samyakpraRihitA ca vAk#} {%уместно сказанная речь%}
-<ls>Spr. 3628.</ls>
-  — [PWG·pwg_internal_correction] ‹2_addendum› <div n="1"> 2) {#parihitanIlavastra#}
-<ls>Verz. d. Oxf. H. 282,a,12.</ls>
+**2)** — 2) _f._ nom. act. в *tirodhā, durdhā, dvidha* . _adv._ suff. *dhā* после числительных (*dvidhā* и т.д.) также относится сюда и должно быть понято как instr.; ср. употребление *dhātu* с числительными, и *kṛtvas* .
 
-**3)** <div n="1"> 3) {#dviH SaraM nABisaMDatte (rAmaH)#} <ls>Spr. 1280.</ls>
-  — [PWG·pwg_internal_correction] ‹3_addendum› <div n="1"> 3) читай {%предполагать, допускать%} и добавь
-<ls>SARVADARŚANAS. 146,16</ls>.
-  — [PWG·pwg_internal_correction] ‹3_addendum› <div n="1">— 3) {#hfdayanihitavEra#} (<ab>Conj.</ab>) {%сокрытый в сердце%}
-<ls>Spr. 2340.</ls> {#sunihita#} {%надежно сохраненный%}
-<ls n="Spr.">5010.</ls>
-  — [PWG·pwg_internal_correction] ‹3 (addendum)› <div n="1"> 3) {#aDanenArTakAmena nArTaH Sakyo viDitsitum#} (так <ls>ed. Bomb.</ls>) {%бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги%}, <ls>MBH. 12,220.</ls>
+## омоним h6
 
-**4)** <div n="1">— 4) <ab>Z.</ab> 9 читай {%назначил ее к —, поставил ее в качестве%} —.
-  — [PWG·pwg_internal_correction] ‹4_addendum› <div n="1"> 4) {#tadA ca saMniDAsye te yadA tvaM mAM smarizyasi#}
-<ls>KATHĀS. 74,324.</ls> {#rAtriH SivA kAcana saMniDatte#} ({%предстоит%})
-<ls>KUVALAY. 103,a,3.</ls> <ab>Z.</ab> 8 читай {#tayA#} <ab>st.</ab> {#tvayA#} .
+**1)** 1) *vācaṃ tena na saṃdadhyāt* так преим. с тем пусть он не обменивается словами [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A116_S009) = ≈крит. 12,117.9a
+  — ＋ PWG ‹1_addendum› 1) в конце добавь *samāhitena manasā*
+[Spr. 2796.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2796) *susamāhita* весьма внимательный
+[4541.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4541)
+  — ＋ PWG ‹1_addendum› 1) pass. содержаться: *dhane sukhakalā yā tu sāpi duḥkhe nidhīyate* (Conj.; ср. u. *vi*
+ 1) ниже)
+[Spr. 3614.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3614) В конце добавь: *(tam) nidadhyānmantriṇam*
+[Spr. 5339](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5339), v. l.
+  — ʰ PWG ‹1_sub_addendum› 1) *bālasya ca śarīraṃ tattailadroṇyāṃ nidhāpaya*
+[R. 7,75,2.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,75,2)
+  — ＋ PWG ‹1_addendum› 1)
+стк. 2 читай *nave* вместо *nava* .
 
-**6)** <div n="1">— 6) {#taTEva raTamAruhya nApsu caryA viDIyate#} <ls>Spr. 4439.</ls> {#viDAya vEram#} {%начать вражду, объявить кому-л. войну%} <ls n="Spr.">2811.</ls>
-  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6)
-<ab>Z.</ab> 10. <ab>fg.</ab> {#upahita#}
-<ls>MBH. 12,5219</ls> означает {%второстепенное благо%}; <ab>s.</ab> выше <ab>u.</ab> {#upahita#} .
-  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6) <ls>ed. Bomb.</ls> верно {#viDAtuM#} . — <ab>caus.</ab>
-  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6)
-<ab>Z.</ab> 6. <ab>fgg.</ab> <ab>vgl.</ab> {#mUlapraRihita#} .
-  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6) {%привести что-либо снова в порядок%}
-<ls>ŚĀṄKH. GṚHY. 1,15,11</ls> в <ls>Ind. St. 5,335.</ls>
+**2)** 2) [Spr. 2894.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2894) — desid. стремиться достичь чего-л., следовать за чем-л.: *ekamanusaṃdhitsato 'paraṃ pracyavate* [SARVADARŚANAS. 27,11. fg. 118,16.]
+  — ＋ PWG ‹2_addendum› 2) *samyakpraṇihitā ca vāk* уместно сказанная речь
+[Spr. 3628.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3628)
+  — ʰ PWG ‹2_addendum› 2) *parihitanīlavastra*
+[Verz. d. Oxf. H. 282,a,12.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?282)
 
-**7)** <div n="1">— 7) <ls>Ind. St. 8,310.</ls>
-  — [PWG·pwg_internal_correction] ‹7_addendum› <div n="1">— 7)
-<ls>NĪLAK.</ls> объясняет {#upahita#} в первом месте через {#upajapta#}, во втором через {#vaYcita#} .
+**3)** 3) *dviḥ śaraṃ nābhisaṃdhatte (rāmaḥ)* [Spr. 1280.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1280)
+  — § PWG ‹3_addendum› 3) читай предполагать, допускать и добавь
+[SARVADARŚANAS. 146,16].
+  — ʰ PWG ‹3_addendum› — 3) *hṛdayanihitavaira* (Conj.) сокрытый в сердце
+[Spr. 2340.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2340) *sunihita* надежно сохраненный
+[5010.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5010)
+  — ʰ PWG ‹3 (addendum)› 3) *adhanenārthakāmena nārthaḥ śakyo vidhitsitum* (так [Бомбейская ред.]) бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги, [MBH. 12,220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.220) = [≈Вульг. 12.8.19](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A008_S019) = ≈крит. 12,8.19a
 
-**8)** <div n="1">— 8) {#amAtyAnAmaTo harzamAdaDAti#}
-<ls>Spr. 4750.</ls>
-  — [PWG·pwg_internal_correction] ‹8_addendum› <div n="1"> 8) {%удерживать%}: {#(tam) sinDuM veleva pratyaDAt (= pratiruroDa#}
-<ab>Schol.</ab>) <ls>BHĀG. P. 10,78,3.</ls>
+**4)** — 4) стк. 9 читай назначил ее к —, поставил ее в качестве —.
+  — ʰ PWG ‹4_addendum› 4) *tadā ca saṃnidhāsye te yadā tvaṃ māṃ smariṣyasi*
+[KATHĀS. 74,324.](https://sanskrit-lexicon-scans.github.io/kss/index.html?74,324) *rātriḥ śivā kācana saṃnidhatte* (предстоит)
+[KUVALAY. 103,a,3.] стк. 8 читай *tayā* вместо *tvayā* .
 
-**9)** <div n="1">— 9) {#jYAnABisaMhita#} так <ab>v. a.</ab> {%распознан%} в <ab>Gegens.</ab> к {#jYeya#} <ls>MBH. 12,7426.</ls> по <ls>NĪLAK.</ls> {#jYAnaSabdenABisaMhitaM jYAnaSabdABiDeyaM brahma#} .
+**6)** — 6) *tathaiva rathamāruhya nāpsu caryā vidhīyate* [Spr. 4439.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4439) *vidhāya vairam* начать вражду, объявить кому-л. войну [2811.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2811)
+  — ＋ PWG ‹6_addendum› — 6)
+стк. 10. сл. *upahita*
+[MBH. 12,5219](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5219) = [≈Вульг. 12.140.26](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U02_A140_S026) = ≈крит. 12,138.26a означает второстепенное благо; см. выше u. *upahita* .
+  — ＋ PWG ‹6_addendum› — 6) [Бомбейская ред.] верно *vidhātuṃ* . — caus.
+  — ＋ PWG ‹6_addendum› — 6)
+стк. 6. сл. ср. *mūlapraṇihita* .
+  — ＋ PWG ‹6_addendum› — 6) привести что-либо снова в порядок
+[ŚĀṄKH. GṚHY. 1,15,11] в [Ind. St. 5,335.]
 
-**10)** <div n="1">— 10) <ls>NĪLAK.</ls> : {#yaTA tEH saha saMdaDAmahe SarAdisaMDAnaM kurmahe yadvA saKyaM kurmahe#}; он упоминает также чтение {#tezAM viDIyate#} <ab>st.</ab> {#tEH saMdaDAmahe#} .
-  — [PWG·pwg_internal_correction] ‹10_addendum› <div n="1">— 10)
-<ls>R. 1,1,26</ls> следует читать {#prARasamA#} (<ab>vgl.</ab> <ab>u.</ab> {#prARasama) hitA#};
-<ls>HARIV. 2225</ls> читает в новейшем <ab>Ausg.</ab> {#purARe kaTyate yatra vedaSrutisamAhitaH#},
-<ls>NĪLAK.</ls> : {#yatra purARe vedaH mantrabrAhmaRarASiH SrutisamAhitaH pratyakzeREva nihito dfSyate pratyakzaSrutimUlako 'yamarTaH#} .
+**7)** — 7) [Ind. St. 8,310.]
+  — ʰ PWG ‹7_addendum› — 7)
+[NĪLAK.] объясняет *upahita* в первом месте через *upajapta*, во втором через *vañcita* .
 
-**11)** <div n="1">— 11) {#ye (vAsarAH) cAlpatvaM daDati#} {%становиться кратким, казаться кратким%}
-<ls>Spr. 2519.</ls> <ls>Sp. 904.</ls> <ab>Z.</ab> 12. <ab>fg.</ab> <ls>BHARTṚ. 3,82</ls> означает {#Datte#} при правильном чтении {%reddit%}; <ab>vgl.</ab>
-<ls>Spr. 401.</ls> В конце, <ls>MBH. 4,1347</ls> читает <ls>ed. Bomb.</ls> правильно {#aDArayat#} .
+**8)** — 8) *amātyānāmatho harṣamādadhāti*
+[Spr. 4750.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4750)
+  — ʰ PWG ‹8_addendum› 8) удерживать: *(tam) sindhuṃ veleva pratyadhāt (= pratirurodha*
+схол.) [BHĀG. P. 10,78,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,78,3)
 
-**14)** <div n="1">— 14) <ab>vgl.</ab> {#dvAraM niBftaM viDAya#} (читай {#piDAya)#} <ls>PAÑCAT. 237,12.</ls> <ls n="PAÑCAT.">186,8.</ls> — <ab>desid.</ab>
+**9)** — 9) *jñānābhisaṃhita* так преим. распознан в противоп. к *jñeya* [MBH. 12,7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U03_A207_S006) = ≈крит. 12,200.6a по [NĪLAK.] *jñānaśabdenābhisaṃhitaṃ jñānaśabdābhidheyaṃ brahma* .
 
-**intro)** <div n="p">— {#aBisam#}
+**10)** — 10) [NĪLAK.] : *yathā taiḥ saha saṃdadhāmahe śarādisaṃdhānaṃ kurmahe yadvā sakhyaṃ kurmahe*; он упоминает также чтение *teṣāṃ vidhīyate* вместо *taiḥ saṃdadhāmahe* .
+  — ʰ PWG ‹10_addendum› — 10)
+[R. 1,1,26](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,26) следует читать *prāṇasamā* (ср. u. *prāṇasama) hitā*;
+[HARIV. 2225](https://sanskrit-lexicon-scans.github.io/hariv?2225) читает в новейшем изд. *purāṇe kathyate yatra vedaśrutisamāhitaḥ*,
+[NĪLAK.] : *yatra purāṇe vedaḥ mantrabrāhmaṇarāśiḥ śrutisamāhitaḥ pratyakṣeṇaiva nihito dṛśyate pratyakṣaśrutimūlako 'yamarthaḥ* .
 
-**main)** <div n="p">— {#prasam#} <ab>vgl.</ab> {#prasaMDAna#} .
+**11)** — 11) *ye (vāsarāḥ) cālpatvaṃ dadhati* становиться кратким, казаться кратким
+[Spr. 2519.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2519) [Sp. 904.] стк. 12. сл. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) означает *dhatte* при правильном чтении reddit; ср.
+[Spr. 401.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?401) В конце, [MBH. 4,1347](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1347) читает [Бомбейская ред.] правильно *adhārayat* .
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag zu Vers-Beleg› 1. {#DA#}¦
-<ab>Z.</ab> 8 {#(aBi) daDyuzI#} также <ls>ed. Bomb.</ls>; форма относится к {#DyAH#}
-<ab>Z.</ab> 25 <ls>HARIV. 7799</ls> читает новейшее <ab>Ausg.</ab> {#patiBaktyorjitASca#} <ab>st.</ab> {#patiBaktyE DitAH sma#} .
+**14)** — 14) ср. *dvāraṃ nibhṛtaṃ vidhāya* (читай *pidhāya)* [PAÑCAT. 237,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?237,12) [186,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?186,8) — desid.
 
-**+)** [PWG·pwg_internal_correction → не привязано: смысл не найден] ‹5_addendum› <div n="1">— 5) {#praTamayA mahAvyAhftyA praTamopahitA#}
-<ls>ŚĀṄKH. GṚHY. 1,16,4</ls> в <ls>Ind. St. 5,337.</ls>
+**intro)** — *abhisam*
 
-## h7
+**main)** — *prasam* ср. *prasaṃdhāna* .
 
-**1)** <div n="1"> 1) <ab>vgl.</ab> еще {#maDuDA, puzpaDa, BAgaDa#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1. *dhā*
+стк. 8 *(abhi) dadhyuṣī* также [Бомбейская ред.]; форма относится к *dhyāḥ*
+стк. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) читает новейшее изд. *patibhaktyorjitāśca* вместо *patibhaktyai dhitāḥ sma* .
 
-**2)** <div n="1">— 2) <ab>vgl.</ab> еще {#puroDA#} .
+**+)** [новый смысл, в PWG соответствия нет — смысл не найден] — 5) *prathamayā mahāvyāhṛtyā prathamopahitā*
+[ŚĀṄKH. GṚHY. 1,16,4] в [Ind. St. 5,337.]
 
-**head)** 2. {#DA#}¦
+## омоним h7
 
-## h2
+**1)** 1) ср. еще *madhudhā, puṣpadha, bhāgadha* .
 
-**main)** 3. {#DA#}¦ {#(De), Da/yati#}
-<ls>DHĀTUP. 22,6</ls>; {#aDAt, aDAsIt, adaDat#}
-<ls>P. 2,4,78.</ls> <ls n="P.">3,1,49.</ls>
-<ls>VOP. 8,86</ls>; {#daDO, daDus; DAsyati, DAtA#}; <ab>prec.</ab> {#DeyAt#}
-<ls>P. 6,4,67</ls>; {#DItvA#}; <ab>partic.</ab> <ab>pass.</ab> {#DIta/#}
-<ls>VOP. 26,124.</ls>
-<ls>AV. 7,56,3.</ls> {%сосать что-либо%} или {%что-либо%} (<ab>acc.</ab>), {%пить%}: {#sa pI\yUza^M Dayati pUrva\sUnA^m#}
-<ls>ṚV. 2,35,5.</ls> <ls n="ṚV. 2,35,">13.</ls> <ls n="ṚV.">3,1,10.</ls> {#apI^vfto aDayanmA\turUDa^H#}
-<ls n="ṚV.">10,32,8.</ls> {#(yaste stanaH) tami\ha DAta^ve kaH#}
-<ls>ṚV. 1,164,49.</ls> <ls n="ṚV.">8,59,15.</ls> <ls n="ṚV. 8,">83,1.</ls> <ls n="ṚV.">5,1,3.</ls> {#(madaH) yaM gAva^ A\saBi^rda\DuH pu\rA nU\naM ca^ sU\raya^H#}
-<ls n="ṚV.">9,99,3.</ls> <ls>VS. 8,51.</ls> <ls n="VS.">19,11.</ls> <ls n="VS.">17,87.</ls> <ls>ŚAT. BR. 12,9,2,11.</ls> <ls>KAUŚ. 93.</ls> {#yajYasya rasaM DItvA#}
-<ls>ŚAT. BR. 1,6,2,1.</ls>
-<ls>AIT. BR. 3,18.</ls> {#kamayaM DAsyati, mAmevAyaM Dayatu, mAM DAsyati#} (к <ab>Erkl.</ab> имени {#mAMDAtar#})
-<ls>MBH. 7,2276. fg.</ls> <ls n="MBH.">3,10452. fg.</ls> <ls n="MBH.">12,976. fg.</ls>
-<ls>BHĀG. P. 9,6,31.</ls> {#bAlam — DayantaM svakarANgulIH#}
-<ls>RĀJA-TAR. 5,75.</ls> {#DayatyAnanam#}
-<ls>GĪT. 12,16.</ls> {#na vArayedgAM DayantIm#}
-<ls>M. 4,59.</ls>
-<ls>YĀJÑ. 1,140.</ls> {#maDu nAnAviDamaDayat#}
-<ls>NALOD. 2,11.</ls> {#aDAdvasAmaDAsIcca ruDiraM vanavAsinAm#}
-<ls>BHAṬṬ. 15,29.</ls> {#aDizAtAM#} (<ab>pass.</ab>) {#gAvO vatsena#}
-<ls>P. 3,1,49</ls>, <ab>Sch.</ab>
-{#DItarasa#} {%тот, чей сок высосан%}
-<ls>ŚĀṄKH. BR. 16,1.</ls>
-<ls>AIT. BR. 3,27.</ls> <ls n="AIT. BR.">6,12.</ls> {#DIramaDI^rA Dayati Sva\santa^m#} {%высасывает%}
-<ls>ṚV. 1,179,4.</ls> {#tvaM no matimivADAsIrnazwA prARAnivAdaDaH#} так <ab>v. a.</ab> {%отнимать%}
-<ls>BHAṬṬ. 6,18.</ls> {#nIlendIvaradAmadIrGatarayA dfzwyA DayantI manaH#} {%всасывает%} так <ab>v. a.</ab> {%присваивать%} (<ab>Schol.</ab> 1. = {#prIRayati#})
-<ls>PRAB. 40,5.</ls> — <ab>caus.</ab> {#DApa/yate#}
-<ls>P. 1,3,89</ls>; <ab>Sch.</ab> <ls>VOP. 23,58</ls> ({#Palini kartari#}). {%кормить грудью, питать%}
-<ls>ṚV. 3,55,12.</ls> {#daSa\ garBa^M ca\rase^ DApayante#}
+**2)** — 2) ср. еще *purodhā* .
 
-**с upa — antar)** <ls n="ṚV.">5,47,4.</ls> — <ab>desid.</ab> {#Ditsati#}
-<ls>P. 7,4,54.</ls>
+**head)** 2. *dhā*
 
-**с upa — upa-pref)** <div n="p">— {#anu#} <ab>caus.</ab> {%прикладывать для сосания к%}: {#kumAraM jAtaM GftaM vEvAgre pratilehayanti stanaM vAnuDApayanti#} (по <ab>Erkll.</ab> = {#paScAtpAyayanti#})
-<ls>ŚAT. BR. 14,4,3,4.</ls>
+## омоним h2
 
-**с upa — upa-pref2)** <div n="p">— {#ud#} <ab>s.</ab> {#udDaya#} .
+**main)** 3. *dhā* *(dhe), dhayati*
+[DHĀTUP. 22,6](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22); *adhāt, adhāsīt, adadhat*
+[P. 2,4,78.](https://ashtadhyayi.com/sutraani/2/4/78) [3,1,49.](https://ashtadhyayi.com/sutraani/3/1/49)
+[VOP. 8,86](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,86); *dadhau, dadhus; dhāsyati, dhātā*; prec. *dheyāt*
+[P. 6,4,67](https://ashtadhyayi.com/sutraani/6/4/67); *dhītvā*; partic. pass. *dhīta*
+[VOP. 26,124.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,124)
+[AV. 7,56,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av07.056.html#av07.056.03) сосать что-либо или что-либо (acc.), пить: *sa pīyūṣaṃ dhayati pūrvasūnām*
+[ṚV. 2,35,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.035.html#rv02.035.05) [13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.035.html#rv02.035.13) [3,1,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.001.html#rv03.001.10) *apīvṛto adhayanmāturūdhaḥ*
+[10,32,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.032.html#rv10.032.08) *(yaste stanaḥ) tamiha dhātave kaḥ*
+[ṚV. 1,164,49.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.49) [8,59,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.059.html#rv08.059.15) [83,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.083.html#rv08.083.01) [5,1,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.001.html#rv05.001.03) *(madaḥ) yaṃ gāva āsabhirdadhuḥ purā nūnaṃ ca sūrayaḥ*
+[9,99,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.099.html#rv09.099.03) [VS. 8,51.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?8,51) [19,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?19,11) [17,87.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,87) [ŚAT. BR. 12,9,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,2,11) [KAUŚ. 93.] *yajñasya rasaṃ dhītvā*
+[ŚAT. BR. 1,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,1)
+[AIT. BR. 3,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,18) *kamayaṃ dhāsyati, māmevāyaṃ dhayatu, māṃ dhāsyati* (к пояснение имени *māṃdhātar*)
+[MBH. 7,2276. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2276) = [≈Вульг. 7.62.5](https://sanatana.in/mahabharata/listing/parva/dronaparva?id=P07_U03_A062_S005) = ≈крит. 12,29.76c [3,10452. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10452) = [≈Вульг. 3.124.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A124_S021) = ≈крит. 03,124.20c [12,976. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.976) = [≈Вульг. 12.29.83](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A029_S083) = ≈крит. 12,29.76a
+[BHĀG. P. 9,6,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,6,31) *bālam — dhayantaṃ svakarāṅgulīḥ*
+[RĀJA-TAR. 5,75.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,75) *dhayatyānanam*
+[GĪT. 12,16.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?12,16) *na vārayedgāṃ dhayantīm*
+[M. 4,59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,59)
+[YĀJÑ. 1,140.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,140) *madhu nānāvidhamadhayat*
+[NALOD. 2,11.] *adhādvasāmadhāsīcca rudhiraṃ vanavāsinām*
+[BHAṬṬ. 15,29.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,29) *adhiṣātāṃ* (pass.) *gāvau vatsena*
+[P. 3,1,49](https://ashtadhyayi.com/sutraani/3/1/49), схол.
+*dhītarasa* тот, чей сок высосан
+[ŚĀṄKH. BR. 16,1.]
+[AIT. BR. 3,27.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,27) [6,12.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,12) *dhīramadhīrā dhayati śvasantam* высасывает
+[ṚV. 1,179,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.179.html#rv01.179.04) *tvaṃ no matimivādhāsīrnaṣṭā prāṇānivādadhaḥ* так преим. отнимать
+[BHAṬṬ. 6,18.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,18) *nīlendīvaradāmadīrghatarayā dṛṣṭyā dhayantī manaḥ* всасывает так преим. присваивать (схол. 1. = *prīṇayati*)
+[PRAB. 40,5.] — caus. *dhāpayate*
+[P. 1,3,89](https://ashtadhyayi.com/sutraani/1/3/89); схол. [VOP. 23,58](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,58) (*phalini kartari*). кормить грудью, питать
+[ṚV. 3,55,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.055.html#rv03.055.12) *daśa garbhaṃ carase dhāpayante*
 
-**с upa — upa-pref3)** <div n="p">— {#upa#} <ab>caus.</ab> <ab>med.</ab> {%вскармливать грудью%}: {#va\tsamupa^ DApayete#}
-<ls>ṚV. 1,95,1.</ls>
+**с upa — antar)** [5,47,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.04) — desid. *dhitsati*
+[P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54)
 
-**с upa — upa-pref4)** <div n="p">— {#pariRi#}, {#praRiH ˚Dayati#}
-<ab>Schol.</ab> к <ls>P. 8,4,17.</ls> <ls n="P.">1,1,20.</ls>
+**с upa — upa-pref)** — *anu* caus. прикладывать для сосания к: *kumāraṃ jātaṃ ghṛtaṃ vaivāgre pratilehayanti stanaṃ vānudhāpayanti* (по пояснения = *paścātpāyayanti*)
+[ŚAT. BR. 14,4,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,4)
 
-**с upa — upa-pref5)** <div n="p">— {#nis#} {%высасывать%}: {#na ma\jjYo nirDa^yet#}
-<ls>AV. 9,5,23.</ls> {#a\gnirvi\zamahe\rnira^DAt#}
-<ls n="AV.">10,4,26.</ls> {#yaTA maDu maDukfto nirDayeyuH#}
-<ls>ŚAT. BR. 1,6,2,1.</ls> <ls n="ŚAT. BR.">4,6,9,21.</ls> солнце {#nirDayati yadidaM kiM ca Suzyati#}
-<ls n="ŚAT. BR.">2,6,3,14.</ls> {#nirDItatama#}
-<ls n="ŚAT. BR.">4,6,7,14.</ls>
+**с upa — upa-pref2)** — *ud* см. *uddhaya* .
 
-## h3
+**с upa — upa-pref3)** — *upa* caus. мед. вскармливать грудью: *vatsamupa dhāpayete*
+[ṚV. 1,95,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.095.html#rv01.095.01)
 
-**main)** {#DA#}¦ [<ab>vgl.</ab> [Page3-0904]] <ab>Z.</ab> 12. <ls>BHARTṚ. 3,82</ls> означает {#Datte#} при правильном чтении ({#aBimAnakzIvasvAntaHkaraRakariRaM saMyamAlAnalInam#}) {%reddit%}.<info n="rev"/>
+**с upa — upa-pref4)** — *pariṇi*, *praṇiḥ ˚dhayati*
+схол. к [P. 8,4,17.](https://ashtadhyayi.com/sutraani/8/4/17) [1,1,20.](https://ashtadhyayi.com/sutraani/1/1/20)
 
-## h4
+**с upa — upa-pref5)** — *nis* высасывать: *na majjño nirdhayet*
+[AV. 9,5,23.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.23) *agnirviṣamaherniradhāt*
+[10,4,26.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.26) *yathā madhu madhukṛto nirdhayeyuḥ*
+[ŚAT. BR. 1,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,1) [4,6,9,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,9,21) солнце *nirdhayati yadidaṃ kiṃ ca śuṣyati*
+[2,6,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,3,14) *nirdhītatama*
+[4,6,7,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,14)
 
-**main)** {#DA#}¦ [<ab>vgl.</ab> [Page3-0908]] с {#ava#} {%обращать свое внимание на что-либо%} (<ab>loc.</ab>): {#AtmAtmanyavaDIyatAm#} <ls>ŚĀNTIŚ. 3,11.</ls><info n="rev"/>
+## омоним h3
 
-## h5
+**main)** *dhā* [ср. ] стк. 12. [BHARTṚ. 3,82](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,82) означает *dhatte* при правильном чтении (*abhimānakṣīvasvāntaḥkaraṇakariṇaṃ saṃyamālānalīnam*) reddit.
 
-**main)** {#DA#}¦ [<ab>vgl.</ab> [Page3-0908]] с {#vyava#} <ab>pass.</ab> {%расставаться с, разлучаться с:%} {#banDuByo vyavaDIyatAm#} <ls>ŚĀNTIŚ. 3,11.</ls><info n="rev"/>
+## омоним h4
 
-## h8
+**main)** *dhā* [ср. ] с *ava* обращать свое внимание на что-либо (loc.): *ātmātmanyavadhīyatām* [ŚĀNTIŚ. 3,11.]
 
-**main)** 3. {#DA#}¦, {#DAtuM tezAM somam#} <ls>MBH. 3,14282.</ls>
+## омоним h5
 
-## h9
+**main)** *dhā* [ср. ] с *vyava* pass. расставаться с, разлучаться с: *bandhubhyo vyavadhīyatām* [ŚĀNTIŚ. 3,11.]
 
-**main)** 4. {#DA#}¦ (= 3. {#DA)#} <lex>adj.</lex> {%сосущий%} в {#payoDA#} .
+## омоним h8
 
-## h11
+**main)** 3. *dhā*, *dhātuṃ teṣāṃ somam* [MBH. 3,14282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14282) = [≈Вульг. 3.224.26](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A224_S026) = ≈крит. 03,213.37e
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachträge› 4. {#DA#}¦ (Nachträge) <ab>vgl.</ab> также {#sarva˚#} .
+## омоним h9
+
+**main)** 4. *dhā* (= 3. *dhā)* _adj._ сосущий в *payodhā* .
+
+## омоним h11
+
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4. *dhā* (Nachträge) ср. также *sarva˚* .

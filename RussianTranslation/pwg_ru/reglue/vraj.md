@@ -1,281 +1,283 @@
-# Re-glue — vraj
+Re-glue — vraj
 
-## h0
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
 
-**1)** <div n="p">— {#prati#} {%возвращаться домой%}: {#mandirAya#}
-<ls>BHAṬṬ. 8,96.</ls>
+## омоним h0
 
-**2)** <div n="1">— 2) {%следовать за кем-либо%}
-<ls>R. 5,20,13.</ls>
+**1)** — *prati* возвращаться домой: *mandirāya*
+[BHAṬṬ. 8,96.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,96)
 
-**3)** <div n="1">— 3) {%посещать, отправляться куда-л.%}
-<ls>LĀṬY. 5,4,3.</ls> {#tIrTAni#}
-<ls>MBH. 3,8266.</ls> {#kzetrARi hareH#}
-<ls>BHĀG. P. 2,3,22.</ls> {#devAlayam#}
-<ls>ŚATR. 14,86.</ls> {#lokAllokam#}
-<ls>BHĀG. P. 3,31,43.</ls> {#anuvraje vrajam#}
-<ls n="BHĀG. P.">10,25,7.</ls> {#yonim#} {%войти в%}
-<ls n="BHĀG. P.">3,30,4.</ls>
+**2)** — 2) следовать за кем-либо
+[R. 5,20,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,20,13)
 
-**4)** <div n="1">— 4) {%впадать в какое-л. состояние, переходить в какое-л. положение%}:
-[Page6-1490]
-{#mfgA mfgEH saNgamanuvrajanti#} то есть <ab>v. a.</ab> {%примыкают%}
-<ls>Spr. 2236.</ls> {#yaTAgniragnO saMkziptaH samAnatvamanuvrajet#}
-<ls>MĀRK. P. 40,29.</ls>
+**3)** — 3) посещать, отправляться куда-л.
+[LĀṬY. 5,4,3.] *tīrthāni*
+[MBH. 3,8266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8266) = [≈Вульг. 3.85.124](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U07_A085_S124) = ≈крит. 03,83.107c *kṣetrāṇi hareḥ*
+[BHĀG. P. 2,3,22.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,22) *devālayam*
+[ŚATR. 14,86.] *lokāllokam*
+[BHĀG. P. 3,31,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,31,43) *anuvraje vrajam*
+[10,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,25,7) *yonim* войти в
+[3,30,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,30,4)
 
-**5)** <div n="1">— 5) с {#punar#} {%возвращаться в эту жизнь%}
-<ls>YĀJÑ. 3,196.</ls>
+**4)** — 4) впадать в какое-л. состояние, переходить в какое-л. положение:
 
-**6)** <div n="1">— 6) о собственном {%движении%} в следующих сочетаниях речь уже не идет: {#yadi jIvanvrajeta saH#} то есть <ab>v. a.</ab> {%спастись живым%}
-<ls>R. 4,13,36.</ls> {#taM vinA ko vrajetsuKam#} то есть <ab>v. a.</ab> {%чувствовать себя хорошо%}
-<ls>HARIV. 15815.</ls>
+*mṛgā mṛgaiḥ saṅgamanuvrajanti* то есть преим. примыкают
+[Spr. 2236.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2236) *yathāgniragnau saṃkṣiptaḥ samānatvamanuvrajet*
+[MĀRK. P. 40,29.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?40,29)
 
-**anusam)** <div n="p">— {#anusam#} {%идти следом, следовать%}: {#prapAdyamAne rAjanyagreRAno 'nusaMvrajet#}
-<ls>ĀŚV. ŚR. 4,4,5.</ls>
-<ls>GOBH. 2,2,14.</ls> {#imA (gAH) anusaMvraja#}
-<ls>CHĀND. UP. 4,4,5.</ls>
+**5)** — 5) с *punar* возвращаться в эту жизнь
+[YĀJÑ. 3,196.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,196)
 
-**ati-1)** <div n="p">— {#ati#} {%проходить мимо%}: {#apareRa vedimativrajya#}
-<ls>ĀŚV. ŚR. 2,3,11. 3,1,18. 4,10,1.</ls>
+**6)** — 6) о собственном движении в следующих сочетаниях речь уже не идет: *yadi jīvanvrajeta saḥ* то есть преим. спастись живым
+[R. 4,13,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,13,36) *taṃ vinā ko vrajetsukham* то есть преим. чувствовать себя хорошо
+[HARIV. 15815.](https://sanskrit-lexicon-scans.github.io/hariv?15815)
 
-**ati-2)** <ls>KAUŚ. 24.</ls> {%простираться над%}: {#a\ti\vraja^dBiH pata\MgEH#}
+**anusam)** — *anusam* идти следом, следовать: *prapādyamāne rājanyagreṇāno 'nusaṃvrajet*
+[ĀŚV. ŚR. 4,4,5.]
+[GOBH. 2,2,14.] *imā (gāḥ) anusaṃvraja*
+[CHĀND. UP. 4,4,5.]
 
-**ati-3)** <ls>ṚV. 1,116,4.</ls> {%проходить насквозь, странствовать по, проезжать%}: {#ativrajya surAzwram#}
-<ls>BHĀG. P. 3,1,24.</ls> {#trilokIm#}
+**ati-1)** — *ati* проходить мимо: *apareṇa vedimativrajya*
+[ĀŚV. ŚR. 2,3,11. 3,1,18. 4,10,1.]
 
-**ati-4)** <ls n="BHĀG. P.">4,12,34.</ls> переправляться через (в переносном смысле <ab>übertr.</ab> <ab>Bed.</ab>): {#triguRam#}
-<ls n="BHĀG. P.">3,29,14.</ls> {#gatIstisraH#}
-<ls n="BHĀG. P.">11,29,44.</ls>
+**ati-2)** [KAUŚ. 24.] простираться над: *ativrajadbhiḥ pataṃgaiḥ*
 
-**caus)** <div n="p">— <ab>caus.</ab> {#vrAjayati (mArgasaMskAragatyoH, mArgaRasaMskAre, mArgaRasaMskArayoH; saMskAre, sarpaRe#}
-<ls>VOP.</ls>) <ls>DHĀTUP. 32,74.</ls>
+**ati-3)** [ṚV. 1,116,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.04) проходить насквозь, странствовать по, проезжать: *ativrajya surāṣṭram*
+[BHĀG. P. 3,1,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,24) *trilokīm*
 
-**etym)** <div n="v">— <ab>Vgl.</ab> {#anuvrajana, anuvrajyA#} (также
-<ls>M. 2,241</ls>, где <ls>WESTERGAARD</ls> и <ls>BENFEY</ls> принимают <ab>partic.</ab> <ab>fut.</ab> <ab>pass.</ab>).
+**ati-4)** [4,12,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,34) переправляться через (в переносном смысле перен. знач.): *triguṇam*
+[3,29,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,29,14) *gatīstisraḥ*
+[11,29,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,29,44)
 
-**head)** {#vraj#}¦, {#vra/jati#} ({#gatO#})
-<ls>DHĀTUP. 7,79.</ls> <ls n="DHĀTUP. 7,">40</ls>, <ab>v. l.</ab> {#vajrA/ja; avrAjIt#}
-<ls>P. 7,2,3.</ls>
-<ls>VOP. 8,47.</ls> <ls n="VOP. 8,">58.</ls> {#vrajizyati#}; из метрических соображений также <ab>med.</ab> {#vrajitum, vrajitvA, vrajita/#} .
+**caus)** — caus. *vrājayati (mārgasaṃskāragatyoḥ, mārgaṇasaṃskāre, mārgaṇasaṃskārayoḥ; saṃskāre, sarpaṇe*
+[VOP.]) [DHĀTUP. 32,74.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=32)
 
-**intens)** <div n="p">— <ab>intens.</ab> {#vAvrajyate = kuwilaM vrajati#}
-<ls>P. 3,1,23</ls>, <ab>Schol.</ab> <ls>VOP. 20,2.</ls> <ls n="VOP. 20,">4.</ls>
+**etym)** — ср. *anuvrajana, anuvrajyā* (также
+[M. 2,241](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,241), где [WESTERGAARD] и [BENFEY] принимают partic. fut. pass.).
 
-**pravraj-caus-1)** 1) изгнать кого-либо (<ab>acc.</ab>)
-<ls>MBH. 2,2674.</ls> <ls n="MBH.">3,2041.</ls> {#vizayAt#}
-<ls n="MBH.">4,227.</ls> <ls n="MBH.">5,930.</ls> <ls n="MBH.">14,248.</ls> {#vanam#}
-<ls>R. 2,26,19.</ls> <ls n="R. 2,">58,29.</ls>
-<ls>R. GORR. 2,8,4.</ls> <ls n="R. GORR. 2,">45,24.</ls> <ls n="R. GORR. 2,">61,6.</ls> <ls n="R. GORR. 2,">78,19.</ls>
-<ls>RAGH. 12,6.</ls> {#pravrAjyamAna#}
-<ls>R. 2,54,14</ls> (<ls n="GORR. 2,54,">16</ls> <ls>GORR.</ls>). <ls n="R. 2,">64,62.</ls> {#pravrAjita#}
-<ls>MBH. 1,170.</ls> <ls n="MBH.">5,756.</ls>
-<ls>R. 2,63,3.</ls>
-<ls>R. GORR. 2,8,27.</ls> <ls n="R. GORR. 2,">58,28.</ls>
+**head)** *vraj*, *vrajati* (*gatau*)
+[DHĀTUP. 7,79.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7) [40](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=7), v. l. *vajrāja; avrājīt*
+[P. 7,2,3.](https://ashtadhyayi.com/sutraani/7/2/3)
+[VOP. 8,47.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,47) [58.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,58) *vrajiṣyati*; из метрических соображений также мед. *vrajitum, vrajitvā, vrajita* .
+
+**intens)** — intens. *vāvrajyate = kuṭilaṃ vrajati*
+[P. 3,1,23](https://ashtadhyayi.com/sutraani/3/1/23), схол. [VOP. 20,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,2) [4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,4)
+
+**pravraj-caus-1)** 1) изгнать кого-либо (acc.)
+[MBH. 2,2674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2674) = [≈Вульг. 2.81.3](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A081_S003) = ≈крит. 02,72.3a [3,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2041) = [≈Вульг. 3.52.28](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U06_A052_S028) = крит. — *viṣayāt*
+[4,227.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.227) = [≈Вульг. 4.7.13](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A007_S013) = ≈крит. 04,6.11a [5,930.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.930) = [≈Вульг. 5.31.15](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A031_S015) = ≈крит. 05,31.13c [14,248.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.248) = [≈Вульг. 14.9.30](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U01_A009_S030) = ≈крит. 14,9.30a *vanam*
+[R. 2,26,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,26,19) [58,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,29)
+[R. GORR. 2,8,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,4) [45,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,45,24) [61,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,61,6) [78,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,78,19)
+[RAGH. 12,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,6) *pravrājyamāna*
+[R. 2,54,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,54,14) ([16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,54,16) [GORR.]). [64,62.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,64,62) *pravrājita*
+[MBH. 1,170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.170) = [≈Вульг. 1.1.216](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U01_A001_S216) = ≈крит. 01,1.157c [5,756.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.756) = [≈Вульг. 5.26.19](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U02_A026_S019) = ≈крит. 05,26.18a
+[R. 2,63,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,63,3)
+[R. GORR. 2,8,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,27) [58,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,28)
 
 **pravraj-caus-2)** 2) позволить кому-либо странствовать в качестве аскета
-<ls>BURNOUF, Intr. 46.</ls> вероятно сюда {#pravrAjayitum#}
-<ls>MBH. 13,446.</ls> {#viDivatsvocitaM karma tyAjayitum#}
-<ls>NILAK.</ls>
+[BURNOUF, Intr. 46.] вероятно сюда *pravrājayitum*
+[MBH. 13,446.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.446) = [≈Вульг. 13.10.15](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A010_S015) = ≈крит. 13,10.14a *vidhivatsvocitaṃ karma tyājayitum*
+[NILAK.]
 
-**pravraj-caus-3)** 3) {#pravrAjita#}
-<ls>MBH. 6,3142</ls> ошибочно вм. {#pravrajita#}, как читает <ls>ed. Bomb.</ls>.
+**pravraj-caus-3)** 3) *pravrājita*
+[MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a ошибочно вм. *pravrajita*, как читает [Бомбейская ред.].
 
-**pravraj-caus-head)** <div n="v">— <ab>Vgl.</ab> {#pravrajana, pravrajita, pravrajyA#} (также
-<ls>MAITRYUP. 6,28</ls>), {#pravrAj#} <ab>fgg.</ab>, {#pravrAjin#} . — <ab>caus.</ab> {#pravrAjayati#} ({#pravraja˚#}
-<ls>R. 6,82,121</ls> ошибочно).
+**pravraj-caus-head)** — ср. *pravrajana, pravrajita, pravrajyā* (также
+[MAITRYUP. 6,28]), *pravrāj* сл., *pravrājin* . — caus. *pravrājayati* (*pravraja˚*
+[R. 6,82,121](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,121) ошибочно).
 
-**pravraj-intrans)** <div n="p">— {#pra#} {%шествовать вперед, направляться; идти дальше, странствовать%}: {#pra vA vrajati pra vA DAvati#} {%идет или едет%}
-<ls>ŚAT. BR. 2,4,1,6.</ls> <ls n="ŚAT. BR.">9,4,4,17.</ls> {#tataH prANpravavrAja#}
-<ls n="ŚAT. BR.">11,6,1,3.</ls> <ls n="ŚAT. BR.">14,7,2,25.</ls> <ls n="ŚAT. BR. 14,7,">3,2.</ls> <ls n="ŚAT. BR. 14,7,3,">25.</ls> {#araRyam#}
-<ls>ŚĀṄKH. ŚR. 16,16,4.</ls>
-<ls>LĀṬY. 8,8,6.</ls>
-<ls>ĀŚV. GṚHY. 1,23,24.</ls>
-<ls>ŚR. 2,5,4.</ls> <ls>CHĀND. UP. 8,8,3.</ls> {#raTamAruhya pravavrAja#}
-<ls>PRAŚNOP. 6,1.</ls>
-<ls>KAUṢ. UP. 4,19.</ls>
-<ls>MBH. 4,138.</ls>
-<ls>R. 2,22,14.</ls> <ls n="R.">3,53,21.</ls> {#mahAraRyam#}
-<ls>MBH. 4,596.</ls> {#vane#}
-<ls>R. 3,53,16.</ls> {#vanAya#}
-<ls>MBH. 2,2613.</ls> {#grAmAya, vanAya, nASAya#}
-<ls n="MBH.">5,2605.</ls> {#puRyAdeva pravrajanti#} ({#pApAni karmARi#}) {%уходить%}
-<ls n="MBH.">3,13453.</ls> {#pravrajita#} (<ab>s.</ab> также <ab>bes.</ab>) {%эмигрировавший, ушедший%}
-<ls>R. 2,48,23.</ls> <ls n="R. 2,">51,12.</ls> <ls n="R.">5,24,5.</ls> <ls n="R.">6,19,52.</ls> {#vanam#}
-<ls n="R.">2,39,25.</ls> <ls>Spr. (II) 1562.</ls> {#DarmaH pravrajitaH#}
-<ls n="Spr. (II)">3092.</ls> {#pravrajitASva#} <lex>adj.</lex> (так <ls>ed. Bomb.</ls>) {%сбежавший%}
-<ls>MBH. 6,3142.</ls> <ab>Insbes.</ab> {%покинуть дом, чтобы странствовать как аскет%}: {#pravrajizyato 'yanam#}
-<ls>LĀṬY. 10,19,11.</ls>
-<ls>M. 6,34.</ls>
-<ls>MBH. 1,3751.</ls> <ls n="MBH.">12,306.</ls>
-<ls>BHĀG. P. 1,2,2.</ls> <ls n="BHĀG. P.">3,23,49.</ls> <ls n="BHĀG. P.">7,12,14.</ls> <ls>BURNOUF, Intr. 46.</ls> {#gfhAt#}
-<ls>M. 6,38. fg.</ls>
-<ls>BHĀG. P. 1,13,25.</ls> <ls n="BHĀG. P.">4,31,1.</ls> {#brahmAvartAt#}
-<ls n="BHĀG. P.">5,5,28.</ls> {#vanam#}
-<ls>MBH. 1,3544.</ls> {#pravrajita#} (<ab>s.</ab> также <ab>bes.</ab>) {%тот, кто покинул дом, чтобы странствовать как аскет%}
-<ls>M. 8,363</ls> (fem.). <ls n="M. 8,">407.</ls> <ls>BURNOUF, Intr. 168, N. 2.</ls> <ls>HIT. 64,4.</ls> {#gfhAt#}
-<ls>BHĀG. P. 2,1,16.</ls> {#vanam#}
-<ls n="BHĀG. P.">3,33,21.</ls>
+**pravraj-intrans)** — *pra* шествовать вперед, направляться; идти дальше, странствовать: *pra vā vrajati pra vā dhāvati* идет или едет
+[ŚAT. BR. 2,4,1,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,1,6) [9,4,4,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,4,17) *tataḥ prāṅpravavrāja*
+[11,6,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,6,1,3) [14,7,2,25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,25) [3,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,3,2) [25.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,3,25) *araṇyam*
+[ŚĀṄKH. ŚR. 16,16,4.]
+[LĀṬY. 8,8,6.]
+[ĀŚV. GṚHY. 1,23,24.]
+[ŚR. 2,5,4.] [CHĀND. UP. 8,8,3.] *rathamāruhya pravavrāja*
+[PRAŚNOP. 6,1.]
+[KAUṢ. UP. 4,19.]
+[MBH. 4,138.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.138) = [≈Вульг. 4.4.56](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U01_A004_S056) = ≈крит. 04,4.49c
+[R. 2,22,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,22,14) [3,53,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,21) *mahāraṇyam*
+[MBH. 4,596.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.596) = [≈Вульг. 4.19.40](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S040) = крит. — *vane*
+[R. 3,53,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,16) *vanāya*
+[MBH. 2,2613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2613) = [≈Вульг. 2.79.30](https://sanatana.in/mahabharata/listing/parva/sabhaparva?id=P02_U10_A079_S030) = ≈крит. 02,70.21c *grāmāya, vanāya, nāśāya*
+[5,2605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2605) = [≈Вульг. 5.72.25](https://sanatana.in/mahabharata/listing/parva/udyogaparva?id=P05_U06_A072_S025) = ≈крит. 05,70.25a *puṇyādeva pravrajanti* (*pāpāni karmāṇi*) уходить
+[3,13453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13453) = [≈Вульг. 3.200.104](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A200_S104) = крит. — *pravrajita* (см. также особ.) эмигрировавший, ушедший
+[R. 2,48,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,23) [51,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,51,12) [5,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,24,5) [6,19,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,52) *vanam*
+[2,39,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,25) [Spr. (II) 1562.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?1562 "Spr. (II) 1562: karmaṇo hi pradhānatvaṃ kiṃ kurvanti śubhā grahāḥ | vasiṣṭhadattalagno 'pi rāmaḥ pravrajito vanam || — Das Schicksal (die in einem früheren Leben vollbrachten Werke) ist ja mächtiger als alles Andere") *dharmaḥ pravrajitaḥ*
+[3092.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3092) *pravrajitāśva* _adj._ (так [Бомбейская ред.]) сбежавший
+[MBH. 6,3142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a Insbes. покинуть дом, чтобы странствовать как аскет: *pravrajiṣyato 'yanam*
+[LĀṬY. 10,19,11.]
+[M. 6,34.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,34)
+[MBH. 1,3751.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3751) = [≈Вульг. 1.94.61](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A094_S061) = ≈крит. 01,89.52a [12,306.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.306)
+[BHĀG. P. 1,2,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,2,2) [3,23,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,49) [7,12,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,12,14) [BURNOUF, Intr. 46.] *gṛhāt*
+[M. 6,38. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,38)
+[BHĀG. P. 1,13,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,13,25) [4,31,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,31,1) *brahmāvartāt*
+[5,5,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,28) *vanam*
+[MBH. 1,3544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3544) = [≈Вульг. 1.86.11](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A086_S011) = ≈крит. 01,81.10a *pravrajita* (см. также особ.) тот, кто покинул дом, чтобы странствовать как аскет
+[M. 8,363](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,363) (fem.). [407.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,407) [BURNOUF, Intr. 168, N. 2.] [HIT. 64,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?64,4) *gṛhāt*
+[BHĀG. P. 2,1,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,16) *vanam*
+[3,33,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,21)
 
-**pravraj-tail)** <div n="v">— <ab>Vgl.</ab> {#pravrAjana#} . — <ab>desid.</ab> от <ab>caus.</ab> <ab>s.</ab> {#pravivrAjayizu#} .
+**pravraj-tail)** — ср. *pravrājana* . — desid. от caus. см. *pravivrājayiṣu* .
 
-**sam)** <div n="p">— {#sam#} {%странствовать, ходить%}: {#yatrEva saMvrajannanvAhAryapacanamanusmaret#}
-<ls>ŚAT. BR. 2,3,2,4.</ls>
-<ls>KĀTY. ŚR. 4,15,32.</ls>
+**sam)** — *sam* странствовать, ходить: *yatraiva saṃvrajannanvāhāryapacanamanusmaret*
+[ŚAT. BR. 2,3,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,4)
+[KĀTY. ŚR. 4,15,32.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,15,32)
 
-**upasam)** <div n="p">— {#upasam#} {%вступать в, входить в%}: {#(na) AkIrRaM BikzukErvAnyErAgAramupasaMvrajet#}
-<ls>M. 6,51.</ls>
+**upasam)** — *upasam* вступать в, входить в: *(na) ākīrṇaṃ bhikṣukairvānyairāgāramupasaṃvrajet*
+[M. 6,51.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,51)
 
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#vipravrAjin#} .
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *vipravrājin* .
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#vraj#} [Gen , unsp] ( vrájati I P ) {%идти, ходить, двигаться, путешествовать, странствовать, перемещаться%}. ṚV . [с padbhyām или scil.: «идти пешком»; с upānadbhyām: то же, букв. «в обуви»; с dhūryais: «путешествовать с помощью вьючных животных»; с paramāṃ gatim: «достигать высшего блаженства»; с antam и gen.: «доходить до конца»; с anyena, anyatra или anyatas: «идти другим путем или в другое место»; с adhas: либо «опускаться [в ад]», либо «перевариваться [о пище]».] {%идти с целью, собираться%} (dat. inf. или прил. на -aka [напр. bhojako vrajati: «он собирается есть»]. Pāṇ ii, 3, 15; iii, 3, 10. {%становиться%}. [особ. с вин. пад. отвлеченного сущ., напр. с vināśam: «идти к гибели, погибать»; с chattratām: «становиться учеником»; с nirvṛtim: «становиться счастливым» [ср. √ gam, yā &]; с sukham: «чувствовать себя хорошо»; с jīvan: «спастись живым». Mbh, Kāvya(MW).] Caus. или X P (vrājayati): {%посылать, гнать; приготовлять, украшать%}. AĀr, DhātuPā(MW). Intens. (vāvrajyate, vāvrakti): {%идти криво%}. Pāṇ iii, 1, 23, Scholiast. MW : 1041
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *vraj* [Gen , unsp] ( vrájati I P ) идти, ходить, двигаться, путешествовать, странствовать, перемещаться. ṚV . [с padbhyām или scil.: «идти пешком»; с upānadbhyām: то же, букв. «в обуви»; с dhūryais: «путешествовать с помощью вьючных животных»; с paramāṃ gatim: «достигать высшего блаженства»; с antam и gen.: «доходить до конца»; с anyena, anyatra или anyatas: «идти другим путем или в другое место»; с adhas: либо «опускаться [в ад]», либо «перевариваться [о пище]».] идти с целью, собираться (dat. inf. или прил. на -aka [напр. bhojako vrajati: «он собирается есть»]. Pāṇ ii, 3, 15; iii, 3, 10. становиться. [особ. с вин. пад. отвлеченного сущ., напр. с vināśam: «идти к гибели, погибать»; с chattratām: «становиться учеником»; с nirvṛtim: «становиться счастливым» [ср. √ gam, yā &]; с sukham: «чувствовать себя хорошо»; с jīvan: «спастись живым». Mbh, Kāvya(MW).] Caus. или X P (vrājayati): посылать, гнать; приготовлять, украшать. AĀr, DhātuPā(MW). Intens. (vāvrajyate, vāvrakti): идти криво. Pāṇ iii, 1, 23, Scholiast. MW : 1041
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] {%идти, странствовать; идти к%} (Akk.) Graßmann 1873 (1996) : 1361
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] идти, странствовать; идти к (Acc.) Graßmann 1873 (1996) : 1361
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( I ) {%идти%} Geldner 1907 : 174
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] ( I ) идти Geldner 1907 : 174
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ ati : e. best. Zeit überschreiten s.v.a. länger brauchen als, oder ausdauern. <ls n="ṚV. 1,116,4">ṚV 1,116,4</ls> .#} [Ved , unsp] + áti: {%переходить, перелетать%}. Graßmann 1873 (1996) : 1361
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ati : e. best. Zeit überschreiten s.v.a. länger brauchen als, oder ausdauern. ṚV 1,116,4 .* [Ved , unsp] + áti: переходить, перелетать. Graßmann 1873 (1996) : 1361
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ anu : to follow the deceased husband. DhKo Ed, I: 1116 ; gam + anu .#} [Śā , Soc (s.v. anu √ vraj )] + anupra (°vrajati): {%следовать (за другим) в аскетическую жизнь%}. Lal 10.12. Buddh, unsp ; BHSD : 31 (s.v. anupravrajati)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ anu : to ṛolloṭ the deceased husband. dhhkho aid, ī: 1116 ; gam + anu .* [Śā , Soc (s.v. anu √ vraj )] + anupra (°vrajati): следовать (за другим) в аскетическую жизнь. Lal 10.12. Buddh, unsp ; BHSD : 31 (s.v. anupravrajati)
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ abhí : 1) hingehen zu (Akk); 2) ohne Akk.#} [Ved , unsp] + avapra (°vrajati): {%выходить из аскетической жизни%}. KalpM 114 V 2. Buddh, unsp ; BHSD : 73 (s.v. avapravrajati)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ abhí : 1) hingehen ṣu (ākk); 2) ohne ākk.* [Ved , unsp] + avapra (°vrajati): выходить из аскетической жизни. KalpM 114 V 2. Buddh, unsp ; BHSD : 73 (s.v. avapravrajati)
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ ā : approach („ āvrākṣīt “). Hoernle 1893-1912 (VI) 222.5 .#} [Śā , Med (s.v. ā - vraj )] + pari, Desid. (parivivrajiṣati): {%желать странствовать как нищенствующий аскет%}. Buddhac. Gen, unsp ; MW : 1330 (s.v. parivraj)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ā : approach („ āvrākṣīt “). ḥoernle 1893-1912 (Vī) 222.5 .* [Śā , Med (s.v. ā - vraj )] + pari, Desid. (parivivrajiṣati): желать странствовать как нищенствующий аскет. Buddhac. Gen., unsp ; MW : 1330 (s.v. parivraj)
 
-**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ pra : (° vrājayati ) enters ascetic life [used in non-caus. mg.]. Gv 417.15 .#} [Buddh, unsp (s.v. pravrājayati)] –, Kaus.: {%принимать (в орден)%}. Buddh, unsp ; Schlingloff 1964 : 228 (s.v. pravraj)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ pra : (° vrājayati ) enters ascetic liṛe [used in non-caus. mg.]. ghv 417.15 .* [Buddh, unsp (s.v. pravrājayati)] –, Kaus.: принимать (в орден). Buddh, unsp ; Schlingloff 1964 : 228 (s.v. pravraj)
 
-**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#abhivrájant#} [Ved , unsp] {%движущийся, приближающийся%}. <ls n="ṚV. 1,58,5">ṚV I,58,5</ls>, <ls n="ṚV. 1,144,5">ṚV I,144,5</ls>. Vedic Hymns II : 474 (s.v. vraj)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *abhivrájant* [Ved , unsp] движущийся, приближающийся. [ṚV I,58,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.058.html#rv01.058.05), [ṚV I,144,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.144.html#rv01.144.05). Vedic Hymns II : 474 (s.v. vraj)
 
-**+)** [PW·restate → не привязано: цель не указана] √{#vraj#}¦, {#vra/jati#}, {#vrajate#} (метрич.)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] √*vraj*, *vrajati*, *vrajate* (метрич.)
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 шествовать, идти, странствовать (<ls n="Chr.">30,2</ls>), — пешком (также с {#padByAm#}, {#upAnadByAm#} в обуви) или при помощи средства передвижения ({#DuryEs#}, {#vfzasTitaH#}), бежать (о конях), двигаться (о неодушевленных предметах), пройти путем (<ab>Acc.</ab>), — путем (<ab>Instr.</ab>), преодолеть <ab>best.</ab> расстояние (<ab>Acc.</ab>), идти к или направляться в (<ab>Acc.</ab>, реже <ab>Loc.</ab>, *<ab>Dat.</ab>, {#aDas#}, {#UrDvam#}, {#anyatra#}, {#anyatas#}), достигать (<ab>Acc.</ab>). {#SaraRam#} прибегать к (<ab>Acc.</ab>), {#mUrDnA pAdO#} пасть к ногам кого-либо (<ab>Gen.</ab>), {#antam#} достигать конца (<ab>Gen.</ab>); *идти за чем-либо (<ab>Dat.</ab>), так <ab>v. a.</ab> чтобы принести это; *идти чтобы (<ab>Infin.</ab>, <ab>Dat.</ab> одного <ab>Nom.</ab> <ab>act.</ab> или отглагольного <lex>Adj.</lex> на {#aka#}, как {#kAraka#}, {#Bojaka#} <ls n="Chr.">239,5</ls>). {#vrajita#} ушедший ({#anyena#} по другому пути).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 шествовать, идти, странствовать ([30,2](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?30)), — пешком (также с *padbhyām*, *upānadbhyām* в обуви) или при помощи средства передвижения (*dhuryais*, *vṛṣasthitaḥ*), бежать (о конях), двигаться (о неодушевленных предметах), пройти путем (Acc.), — путем (Ins.), преодолеть определ. расстояние (Acc.), идти к или направляться в (Acc., реже Loc., *Dat., *adhas*, *ūrdhvam*, *anyatra*, *anyatas*), достигать (Acc.). *śaraṇam* прибегать к (Acc.), *mūrdhnā pādau* пасть к ногам кого-либо (Gen.), *antam* достигать конца (Gen.); *идти за чем-либо (Dat.), так преим. чтобы принести это; *идти чтобы (Infin., Dat. одного Nom. act. или отглагольного _Adj._ на *aka*, как *kāraka*, *bhojaka* [239,5](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?239)). *vrajita* ушедший (*anyena* по другому пути).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 идти к женщине (<ab>Acc.</ab>), т. е. <ab>v. a.</ab> сожительствовать с ней <ls>CARAKA. 6,2</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 идти к женщине (Acc.), т. е. преим. сожительствовать с ней [CARAKA. 6,2].
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 бросаться на врага, также с добавлением {#vidvizam dvizato 'BimuKam#}, *{#aByari#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 бросаться на врага, также с добавлением *vidviṣam dviṣato 'bhimukham*, **abhyari*.
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 уходить, — от (<ab>Abl.</ab>), — из страны, удаляться (также о неодушевленном), истекать (о времени).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 уходить, — от (Abl.), — из страны, удаляться (также о неодушевленном), истекать (о времени).
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 с {#punar#} {%возвращаться в эту жизнь%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 с *punar* возвращаться в эту жизнь.
 
-**+)** [PW·restate → не привязано: цель не указана] 6〉 достигать, так <ab>v. a.</ab> удостаиваться; с <ab>Acc.</ab> <ab>Insbes.</ab> впадать в состояние, положение, отношение, предаваться.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 6〉 достигать, так преим. удостаиваться; с Acc. Insbes. впадать в состояние, положение, отношение, предаваться.
 
-**+)** [PW·restate → не привязано: цель не указана] 7〉 с {#jIvan#} <ab>Nomin.</ab> так <ab>v. a.</ab> выйти живым, с {#suKam#} так <ab>v. a.</ab> чувствовать себя хорошо.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 7〉 с *jīvan* Nomin. так преим. выйти живым, с *sukham* так преим. чувствовать себя хорошо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#vrAjayati#} ({#mArgasaMskAragatyoH#}, {#mArgaRasaMskAre#}, {#mArgaRasaMskArayoH#}, {#saMskAre#}, {#sarpaRe#}) {%гнать%} <ls>AIT. ĀR. 353,20</ls>. — {#avrajayat#} <ls>TĀṆḌYA-BR. 4,10,1</ls> и <ls>Comm. zu AIT. ĀR. S. 5, Z. 5. 8</ls> ошибочно вм. {#avratayat#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. *vrājayati* (*mārgasaṃskāragatyoḥ*, *mārgaṇasaṃskāre*, *mārgaṇasaṃskārayoḥ*, *saṃskāre*, *sarpaṇe*) гнать [AIT. ĀR. 353,20]. — *avrajayat* [TĀṆḌYA-BR. 4,10,1] и [Comm. zu AIT. ĀR. S. 5, Z. 5. 8] ошибочно вм. *avratayat*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— *<ab>Intens.</ab> {#vAvrajyate#} = {#kuwilaM vrajati#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — *Intens. *vāvrajyate* = *kuṭilaṃ vrajati*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ati#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ati*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 проходить мимо (<ls>VAITĀN.</ls>), пролетать мимо (о птицах).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 проходить мимо ([VAITĀN.]), пролетать мимо (о птицах).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 проходить насквозь, странствовать по, проезжать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 проходить насквозь, странствовать по, проезжать.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 переправляться (в переносном смысле <ab>Bed.</ab>) через (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 переправляться (в переносном смысле знач.) через (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vyati#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vyati*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 проходить мимо <ls>ĀPAST. 1,14,30</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 проходить мимо [ĀPAST. 1,14,30].
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 переступать (через пределы).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 переступать (через пределы).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anu*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 идти вдоль, с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 идти вдоль, с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 следовать за, сопровождать, следовать, гнаться (за мячом); с <ab>Acc.</ab> <ls>GAUT.</ls> <ls>VAITĀN.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 следовать за, сопровождать, следовать, гнаться (за мячом); с Acc. [GAUT.] [VAITĀN.]
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 посещать, направляться куда-либо; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 посещать, направляться куда-либо; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 4〉 входить в (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 4〉 входить в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 5〉 переходить в состояние, положение (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 5〉 переходить в состояние, положение (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samanu#} {%следовать совместно%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samanu* следовать совместно.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#apa#} {%уходить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *apa* уходить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhi*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 идти, — к, направляться к (<ab>Acc.</ab>) <ls>VAITĀN.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 идти, — к, направляться к (Acc.) [VAITĀN.]
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 пробегать.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 пробегать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 приходить, приближаться, шествовать к, приходить к или в, направляться, достигать; с <ab>Acc.</ab> <ls>VAITĀN.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 приходить, приближаться, шествовать к, приходить к или в, направляться, достигать; с Acc. [VAITĀN.]
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 возвращаться, возвращаться домой, снова отходить (о клизме). Часто с добавлением {#punar#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 возвращаться, возвращаться домой, снова отходить (о клизме). Часто с добавлением *punar*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#udA#} {%шествовать вперед%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *udā* шествовать вперед.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyudA#} {%двигаться в противоположном направлении%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyudā* двигаться в противоположном направлении.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upA#} {%направляться к%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upā* направляться к (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyA#} возвращаться; с <ab>Instr.</ab> пути.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyā* возвращаться; с Ins. пути.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samA#} {%возвращаться%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samā* возвращаться.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ud#} {%покидать дом%}. {#udvrajita#} {%тот, кто покинул дом%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ud* покидать дом. *udvrajita* тот, кто покинул дом.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyud#} {%двинуться навстречу кому-либо%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyud* двинуться навстречу кому-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 приступать, направляться к или в (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 приступать, направляться к или в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 следовать за кем-либо.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 следовать за кем-либо.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyupa#} бросаться на кого-либо с враждебными намерениями, нападать; [Page6-187-a] с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyupa* бросаться на кого-либо с враждебными намерениями, нападать; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nis#} {%выходить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *nis* выходить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 обходить вокруг, бродить.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 обходить вокруг, бродить.
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 обходить кругом, с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 обходить кругом, с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 бродить как бездомный нищий, начать странническую жизнь аскета; у <is>Jaina</is> так <ab>v. a.</ab> стать монахом <ls>HEM. PAR.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 бродить как бездомный нищий, начать странническую жизнь аскета; у Джайна так преим. стать монахом [HEM. PAR.]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%побудить кого-либо стать монахом%} <ls>HEM. PAR. 1,340</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. побудить кого-либо стать монахом [HEM. PAR. 1,340].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra*
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 шествовать вперед, идти дальше, уходить (<ls n="Chr.">233,24</ls>. <ls n="Chr. 233,">25</ls>), — от (<ab>Abl.</ab> <ls>BAUDH. 1,12</ls>), странствовать, отправляться в путь, — направляться в или к (<ab>Acc.</ab>, <ab>Loc.</ab> или <ab>Dat.</ab>), удаляться (о неодушевленном). {#pravrajita#} ушедший (<ls n="Chr.">233,25</ls>), сбежавший (кони), эмигрировавший, переселившийся в (<ab>Acc.</ab>)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 шествовать вперед, идти дальше, уходить ([233,24](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233). [25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), — от (Abl. [BAUDH. 1,12]), странствовать, отправляться в путь, — направляться в или к (Acc., Loc. или Dat.), удаляться (о неодушевленном). *pravrajita* ушедший ([233,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?233)), сбежавший (кони), эмигрировавший, переселившийся в (Acc.)
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 покинуть дом, чтобы странствовать как аскет <ls>ĀPAST. 2,21,18. 19</ls>. Также с <ab>Abl.</ab> места, которое оставляют, и <ab>Acc.</ab> места, куда направляются. У <is>Jaina</is> так <ab>v. a.</ab> стать монахом <ls>HEM. PAR.</ls> {#pravrajita#} тот, кто покинул дом, чтобы жить как аскет <ls>ĀPAST. 1,18,31</ls>. <ls>GAUT.</ls> также с добавлением {#vanam#} <ls>Chr. 213,23</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 покинуть дом, чтобы странствовать как аскет [ĀPAST. 2,21,18. 19]. Также с Abl. места, которое оставляют, и Acc. места, куда направляются. У Джайна так преим. стать монахом [HEM. PAR.] *pravrajita* тот, кто покинул дом, чтобы жить как аскет [ĀPAST. 1,18,31]. [GAUT.] также с добавлением *vanam* [Chr. 213,23](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?213).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> ({#pravrajayati#} ошибочно)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. (*pravrajayati* ошибочно)
 
-**+)** [PW·restate → не привязано: цель не указана] 1〉 изгнать кого-либо, — из (<ab>Abl.</ab>), — в (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 изгнать кого-либо, — из (Abl.), — в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] 2〉 побудить кого-либо странствовать как аскет, — стать монахом <ls>HEM. PAR. 1,300. 337</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 побудить кого-либо странствовать как аскет, — стать монахом [HEM. PAR. 1,300. 337].
 
-**+)** [PW·restate → не привязано: цель не указана] 3〉 {#pravrAjita#} <ls>MBH. 6,3142</ls> ошибочно вм. {#pravrajita#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3〉 *pravrājita* [MBH. 6,3142](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3142) = [≈Вульг. 6.71.18](https://sanatana.in/mahabharata/listing/parva/bhishmaparva?id=P06_U04_A071_S018) = ≈крит. 06,67.17a ошибочно вм. *pravrajita*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anupra#} {%следовать за кем-либо%} (<ab>Acc.</ab>) {%в изгнание%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anupra* следовать за кем-либо (Acc.) в изгнание.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBipra#} {%двигаться вперед по направлению к кому-либо%} <ls>ĀPAST. ŚR. 6,24,8</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhipra* двигаться вперед по направлению к кому-либо [ĀPAST. ŚR. 6,24,8].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vipra#} {%расходиться, уходить от%} (<ab>Abl.</ab>) <ls>ĀPAST. 1,29,9</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vipra* расходиться, уходить от (Abl.) [ĀPAST. 1,29,9].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#} {%возвращаться домой в%} (<ab>Dat.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prati* возвращаться домой в (Dat.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#} {%странствовать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam* странствовать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anusam#} идти следом, следовать; с <ab>Acc.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *anusam* идти следом, следовать; с Acc.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upasam#} {%входить в%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upasam* входить в (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] √{#vraj#}¦ с {#pra#} <ab>Caus.</ab> VI. 2〉 {#pravrAjita#} <ls>DIVYĀVAD. 236,27</ls>.
-<div n="p">— С {#anupra#} VI. {%отречься от домашней жизни вслед за другим, чтобы начать жизнь аскета%} <ls>DIVYĀVAD. 61,17</ls>. <ls>JĀTAKAM. 19</ls>. <ls n="JĀTAKAM.">21</ls>.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] √*vraj* с *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
+— С *anupra* VI. отречься от домашней жизни вслед за другим, чтобы начать жизнь аскета [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] {#vraj#}¦ с {#pra#} <ab>Caus.</ab> VI. 2〉 {#pravrAjita#} <ls>DIVYĀVAD. 236,27</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *vraj* с *pra* Caus. VI. 2〉 *pravrājita* [DIVYĀVAD. 236,27].
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] С {#anupra#} VI. {%вслед за другим отказаться от домашней жизни, чтобы начать аскетическую%} <ls>DIVYĀVAD. 61,17</ls>. <ls>JĀTAKAM. 19</ls>. <ls n="JĀTAKAM.">21</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anupra* VI. вслед за другим отказаться от домашней жизни, чтобы начать аскетическую [DIVYĀVAD. 61,17]. [JĀTAKAM. 19]. [21].
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] vraj с pra <ls>Kaus. 2.</ls> pravrājita <ls>Divyāvad. 236,27.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] vraj с pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
 
-**+)** [SCH·sch_star → не привязано: цель не указана] — С anupra отречься от домашней жизни вслед за другим, чтобы начать жизнь аскета, <ls>Divyāvad. 61,17</ls>; <ls>Jātakam. 19. 21.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С anupra отречься от домашней жизни вслед за другим, чтобы начать жизнь аскета, [Divyāvad. 61,17]; [Jātakam. 19. 21.]

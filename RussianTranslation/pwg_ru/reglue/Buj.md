@@ -1,421 +1,423 @@
-# Re-glue — Buj
-
-## h0
-
-**1)** 1. {#Buj#}¦, {#Buja/ti#} «гнуть, сгибать»
-<ls>DHĀTUP. 28,124.</ls> <ab>partic.</ab> {#Bugna#}
-<ls>P. 8,2,45.</ls>
-<ls>VOP. 26,88. fg.</ls> «согнутый, изогнутый, кривой»
-<ls>AK. 3,2,21.</ls> <ls n="AK. 3,2,">40.</ls>
-<ls>H. 1457.</ls> <ls n="H.">1483.</ls>
-<ls>HALĀY. 4,11.</ls> {#darBAndviguRAnBugnAn#}
-<ls>ĀŚV. GṚHY. 4,7,8.</ls> {#vAyuBugnANga#}
-<ls>MBH. 13,2281.</ls> {#kzuDA BugnaH#}
-<ls n="MBH.">12,4265.</ls> {#BaraBugnavitatabAhu#}
-<ls>VĀSAVAD. 2,4.</ls> {#nyubjo Bugne rujA#}
-<ls>AK. 2,6,2,12.</ls> {#pARiruha#}
-<ls>BHAṬṬ. 11,8.</ls> {#BruvO ca BugnO#} (<ab>masc.</ab>!) «бороздчатый, изборожденный»
-<ls>Spr. 4036.</ls> «отодвинутый в сторону»
-<ls n="Spr.">777.</ls> {#˚netra#} «вывернутые (закатившиеся) глаза»
-<ls>Verz. d. Oxf. H. 319,a,8. b, No. 758</ls> {#(Bagnanetra#} <ab>gedr.</ab>). {#Bugna#} означает «<is>Saṃdhi</is> от {#o#} и {#O#} перед нелабиальными гласными»
-<ls>ṚV. PRĀT. 2,11.</ls>
-<div n="v">— <ab>Vgl.</ab> {#Buji, Bujyu#}, 1. {#Boga#} .
+Re-glue — Buj
+
+Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
 
-**ava)** <div n="p">— {#ava#} {%загибать вниз, вгибать%}
-<ls>KAUŚ. 19.</ls> {#BagnAvaBugnaBUyizWEH (drumEH)#} {%согнутый вниз, пригнутый%}
-<ls>MBH. 1,5891.</ls>
+## омоним h0
 
-**main)** <div n="p">— {#pra#} «сгибать, нагибать»: {#dakziRaM jAnu praBujya juhoti#}
-<ls>KAUŚ. 1.</ls>
-<ls>KĀṬH.</ls> «подогнув ноги при <ab>Schol.</ab>, к <ls>KĀTY. ŚR. 10,7,4.</ls>» <ls>PAÑCAV. BR. 20,2,4.</ls> {#praBugna#}
-<ls>P. 8,4,29</ls>, <ab>Sch.</ab>
+**1)** 1. *bhuj*, *bhujati* «гнуть, сгибать»
+[DHĀTUP. 28,124.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=28) partic. *bhugna*
+[P. 8,2,45.](https://ashtadhyayi.com/sutraani/8/2/45)
+[VOP. 26,88. fg.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,88) «согнутый, изогнутый, кривой»
+[AK. 3,2,21.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,21) [40.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,40)
+[H. 1457.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1457) [1483.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1483)
+[HALĀY. 4,11.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,11) *darbhāndviguṇānbhugnān*
+[ĀŚV. GṚHY. 4,7,8.] *vāyubhugnāṅga*
+[MBH. 13,2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2281) = [≈Вульг. 13.40.35](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A040_S035) = ≈крит. 13,40.35a *kṣudhā bhugnaḥ*
+[12,4265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4265) = [≈Вульг. 12.118.8](https://sanatana.in/mahabharata/listing/parva/shantiparva?id=P12_U01_A118_S008) = ≈крит. 12,118.8a *bharabhugnavitatabāhu*
+[VĀSAVAD. 2,4.] *nyubjo bhugne rujā*
+[AK. 2,6,2,12.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,6,2,12) *pāṇiruha*
+[BHAṬṬ. 11,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,8) *bhruvau ca bhugnau* (masc.!) «бороздчатый, изборожденный»
+[Spr. 4036.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4036) «отодвинутый в сторону»
+[777.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?777) *˚netra* «вывернутые (закатившиеся) глаза»
+[Verz. d. Oxf. H. 319,a,8. b, No.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?319) [Verz. d. Oxf. H. 758](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?758) *(bhagnanetra* печ.). *bhugna* означает «Самдхи от *o* и *au* перед нелабиальными гласными»
+[ṚV. PRĀT. 2,11.]
+— ср. *bhuji, bhujyu*, 1. *bhoga* .
 
-**nis)** <div n="p">— {#nis#} {%отгибать в сторону, отодвигать в сторону, сдвигать с места%}: {#ozWO nirBujati#} {%кривит губы%}
-<ls>YĀJÑ. 2,14.</ls>
-<ls>SUŚR. 2,331,19. 337,3. 338,1.</ls>
-[Page5-0301]
-{#prAyo nirBujyate SArNgamAyasaM ca#} {%уклоняется в сторону, ускользает%}
-<ls n="SUŚR.">1,99,2.</ls> {#nirBugne netre#} {%скошенные (вращающиеся) глаза%}
-<ls n="SUŚR.">2,402,11. 17.</ls> {#SmaSAne — nirBugnasragviBUzite#} {%согнутый%}
-<ls>MBH. 13,6406.</ls>
+**ava)** — *ava* загибать вниз, вгибать
+[KAUŚ. 19.] *bhagnāvabhugnabhūyiṣṭhaiḥ (drumaiḥ)* согнутый вниз, пригнутый
+[MBH. 1,5891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5891) = [≈Вульг. 1.149.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U08_A149_S002) = крит. —
 
-**pari)** <div n="p">— {#pari#} {%охватывать, обнимать%}: {#tayA\smAnvi\Svata\stvama^ya\kzmayA pari^ Buja#}
-<ls>VS. 16,11.</ls> {#yasyAja^sra\M Sava^sA\ mAna^mu\kTaM pa^riBu\jadroda^sI vi\Svata^H sIm#}
-<ls>ṚV. 1,100,14.</ls> {#pari yadi^ndra\ roda^sI u\Be abu^BojIrmahi\nA vi\Svata^H sIm#}
-<ls n="ṚV. 1,">33,9.</ls> {#taM zoqaSaBirBogEH paryaBujat#}
-<ls>PAÑCAV. BR. 13,5,22.</ls> {#pariBugna#}
-<ls>P. 8,4,31</ls>, <ab>Sch.</ab>
-{%согнутый, изогнутый%}
-<ls>BHAṬṬ. 10,31.</ls>
+**main)** — *pra* «сгибать, нагибать»: *dakṣiṇaṃ jānu prabhujya juhoti*
+[KAUŚ. 1.]
+[KĀṬH.] «подогнув ноги при схол., к [KĀTY. ŚR. 10,7,4.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,7,4)» [PAÑCAV. BR. 20,2,4.] *prabhugna*
+[P. 8,4,29](https://ashtadhyayi.com/sutraani/8/4/29), схол.
 
-**pratyava)** <div n="p">— {#pratyava#} {%загибать назад, отгибать%}: {#rwaBAn#}
-<ls>KAUŚ. 20.</ls>
+**nis)** — *nis* отгибать в сторону, отодвигать в сторону, сдвигать с места: *oṣṭhau nirbhujati* кривит губы
+[YĀJÑ. 2,14.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,14)
+[SUŚR. 2,331,19. 337,3. 338,1.]
 
-**pravi)** <div n="p">— {#pravi#} {%изгибать, загибать%}: {#SalyavAraNgam#}
-<ls>SUŚR. 1,101,6.</ls>
+*prāyo nirbhujyate śārṅgamāyasaṃ ca* уклоняется в сторону, ускользает
+[1,99,2.] *nirbhugne netre* скошенные (вращающиеся) глаза
+[2,402,11. 17.] *śmaśāne — nirbhugnasragvibhūṣite* согнутый
+[MBH. 13,6406.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6406) = [≈Вульг. 13.141.18](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A141_S018) = ≈крит. 13,128.18c
 
-**sam)** <div n="p">— {#sam#}, <ab>partic.</ab> {#saMBugna#} {%сложенный, согнутый вместе%}
-<ls>BHAṬṬ. 4,42.</ls>
+**pari)** — *pari* охватывать, обнимать: *tayāsmānviśvatastvamayakṣmayā pari bhuja*
+[VS. 16,11.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?16,11) *yasyājasraṃ śavasā mānamukthaṃ paribhujadrodasī viśvataḥ sīm*
+[ṚV. 1,100,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.100.html#rv01.100.14) *pari yadindra rodasī ubhe abubhojīrmahinā viśvataḥ sīm*
+[33,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.09) *taṃ ṣoḍaśabhirbhogaiḥ paryabhujat*
+[PAÑCAV. BR. 13,5,22.] *paribhugna*
+[P. 8,4,31](https://ashtadhyayi.com/sutraani/8/4/31), схол.
+согнутый, изогнутый
+[BHAṬṬ. 10,31.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?10,31)
 
-**vi)** <div n="p">— {#vi#}, <ab>partic.</ab> {#viBugna#} {%загнутый, отогнутый%}
-<ls>VYUTP. 101.</ls>
+**pratyava)** — *pratyava* загибать назад, отгибать: *rṭabhān*
+[KAUŚ. 20.]
 
-**vinis)** <div n="p">— {#vinis#} {%отгибать в сторону%}: {#vAmenAkzi vinirBujya hastena#}
-<ls>SUŚR. 2,353,12.</ls>
+**pravi)** — *pravi* изгибать, загибать: *śalyavāraṅgam*
+[SUŚR. 1,101,6.]
 
-**vyā)** <div n="p">— {#vyA#}, <ab>partic.</ab> {#vyABugna#} {%согнутый, изогнутый%}: {#keSivaktravilagnastu kfzRavAhuraSoBata . vyABugna iva GarmAnte candrArDakiraRErGanaH ..#}
-<ls>HARIV. 4313.</ls>
-<ls>PRAB. 67,11</ls>, <ab>v. l.</ab>
+**sam)** — *sam*, partic. *saṃbhugna* сложенный, согнутый вместе
+[BHAṬṬ. 4,42.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,42)
 
-**ā)** <div n="p">— {#A#} вгибать, подгибать: {#paryaNkamABujya#} (сидеть) {%со скрещенными (подогнутыми) ногами%}
-<ls>Lot. de la b. l. 334.</ls> {#ABugna#} согнутый, изогнутый
-<ls>RAGH. 1,83.</ls>
-<ls>PAÑCAR. 3,6,11.</ls> оттесненный в сторону
-<ls>DAŚAK.</ls> in <ls>BENF. Chr. 198,21.</ls>
-<div n="v">— <ab>Vgl.</ab> {#ABoga#} .
+**vi)** — *vi*, partic. *vibhugna* загнутый, отогнутый
+[VYUTP. 101.]
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#Buj#}¦, {#Bu/jati#} «гнуть, сгибать».
-<div n="m">— <ab>Pass.</ab> {#Bujyate#} «быть согнутым —, упасть духом». — {#Bugna#}
-<div n="1">— 1〉 «согнутый, изогнутый, бороздчатый» (о бровях), «отодвинутый в сторону, вывернутый» (о глазах).
-<div n="1">— 2〉 «согнутый, поникший, упавший духом».
-<div n="1">— 3〉 <ab>Bez.</ab> «формы <is>Saṃdhi</is> от {#o#} и {#O#} перед нелабиальными гласными».
+**vinis)** — *vinis* отгибать в сторону: *vāmenākṣi vinirbhujya hastena*
+[SUŚR. 2,353,12.]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#} {%сгибать внутрь, пригибать%}. {#˚Bugna#} {%пригнутый, опущенный вниз%}.
+**vyā)** — *vyā*, partic. *vyābhugna* согнутый, изогнутый: *keśivaktravilagnastu kṛṣṇavāhuraśobhata . vyābhugna iva gharmānte candrārdhakiraṇairghanaḥ ..*
+[HARIV. 4313.](https://sanskrit-lexicon-scans.github.io/hariv?4313)
+[PRAB. 67,11], v. l.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyava#} {%сгибать назад, отгибать%}.
+**ā)** — *ā* вгибать, подгибать: *paryaṅkamābhujya* (сидеть) со скрещенными (подогнутыми) ногами
+[Lot. de la b. l. 334.] *ābhugna* согнутый, изогнутый
+[RAGH. 1,83.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,83)
+[PAÑCAR. 3,6,11.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,6,11) оттесненный в сторону
+[DAŚAK.] in [BENF. Chr. 198,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?198)
+— ср. *ābhoga* .
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} {%сгибать, подгибать%}. {#paryaNkamABujya#} {%со скрещенными (подогнутыми) ногами в позе сидения%} <ls>VAJRACCH. 19,9. 10</ls>. <ls>KĀRAṆḌ. 85,8. 86,8</ls>. {#ABugna#} {%согнутый, изогнутый, отодвинутый в сторону%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **1.** √*bhuj*, *bhujati* «гнуть, сгибать».
+— Pass. *bhujyate* «быть согнутым —, упасть духом». — *bhugna*
+— 1〉 «согнутый, изогнутый, бороздчатый» (о бровях), «отодвинутый в сторону, вывернутый» (о глазах).
+— 2〉 «согнутый, поникший, упавший духом».
+— 3〉 обозн. «формы Самдхи от *o* и *au* перед нелабиальными гласными».
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vyA#}, {#˚Bugna#} {%согнутый, изогнутый%}. <lex>n.</lex>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ava* сгибать внутрь, пригибать. *˚bhugna* пригнутый, опущенный вниз.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#} {%сгибать, опускать, клонить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyava* сгибать назад, отгибать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nis#} {%откладывать в сторону, отодвигать, смещать с места, выдвигать из%} (<ab>Abl.</ab> <ls>ṚV. 6,62,6</ls>). {#ozWO#} {%кривить губы%}. <ab>Pass.</ab> {%отклоняться в сторону, ускользать%}. {#nirBugna#} {%согнутый, вывернутый%} (о глазах).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* сгибать, подгибать. *paryaṅkamābhujya* со скрещенными (подогнутыми) ногами в позе сидения [VAJRACCH. 19,9. 10]. [KĀRAṆḌ. 85,8. 86,8]. *ābhugna* согнутый, изогнутый, отодвинутый в сторону.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vinis#} {%изгибать в сторону%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vyā*, *˚bhugna* согнутый, изогнутый. _n._
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#} {%охватывать, обнимать%}. {#˚Bugna#} {%согнутый, изогнутый%} <ls>BHAṬṬ.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ni* сгибать, опускать, клонить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#} {%сгибать; складывать, сворачивать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *nis* откладывать в сторону, отодвигать, смещать с места, выдвигать из (Abl. [ṚV. 6,62,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.06)). *oṣṭhau* кривить губы. Pass. отклоняться в сторону, ускользать. *nirbhugna* согнутый, вывернутый (о глазах).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С *{#vi#}, {#˚Bugna#} {%загнутый, отогнутый%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vinis* изгибать в сторону.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pravi#} {%отгибать, заворачивать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari* охватывать, обнимать. *˚bhugna* согнутый, изогнутый [BHAṬṬ.]
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#} {%обвивать, обматывать%} <ls>Comm. zu ĀPAST. ŚR. 7,11,5</ls>. {#saMBugna#} {%согнутый, свернутый вместе%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra* сгибать; складывать, сворачивать.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>2.</hom> {#Buj#}¦ в {#triBuj#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С **vi*, *˚bhugna* загнутый, отогнутый.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Buj#}¦, {#BA/jati#}, {#Bunakti#}, {#BuNkte#}, {#BuYjati#} ({#BuYjatI/#} <ab>Partic.</ab> <lex>f.</lex>). {#˚te#}, {#Bukta#} <ab>Partic.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pravi* отгибать, заворачивать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%наслаждаться, иметь нечто в пользование%}, как {%извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо%}, так и применительно к {%вкушению пищи%}; в более древнем языке с <ab>Instr.</ab>, в позднейшем по большей части с <ab>Acc.</ab> без дополнения — {%принимать пищу и есть%} (о животных: {%поедать%}); землю, страну, город (<ab>Acc.</ab>) {%вкушать, извлекать из нее пользу%}, то есть <ab>v. a.</ab> {%властвовать%} и {%овладевать%} (говорится о государе); кого-либо (<ab>Acc.</ab>) {%вкушать%}, то есть <ab>v. a.</ab> {%использовать в своих целях, эксплуатировать%} и {%вкушать плотски%}. В позднейшем языке обычно <ab>Med.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam* обвивать, обматывать [Comm. zu ĀPAST. ŚR. 7,11,5]. *saṃbhugna* согнутый, свернутый вместе.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 «иметь нечто» (<ab>Acc.</ab>, в виде исключения <ab>Instr.</ab>) «в удел, в пользование», то есть <ab>v. a.</ab> «нести наказание у кого-либо»; (<ab>Gen.</ab>) «пожинать плоды чего-либо» (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **2.** *bhuj* в *tribhuj*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Act.</ab> {%быть полезным кому-либо%} (<ab>Acc.</ab>), {%идти на пользу, приносить благо, служить%}. Единожды <ab>v. l.</ab> <ab>Med.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*bhuj*, *bhājati*, *bhunakti*, *bhuṅkte*, *bhuñjati* (*bhuñjatī* Partic. _f._). *˚te*, *bhukta* Partic.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 в <ab>Astr.</ab> «проходить, протекать», с <ab>Acc.</ab> <ls>Spr. 7740</ls> (одновременно «наслаждаться, расходовать») определенный <ab>best.</ab> период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с {#yuj#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 наслаждаться, иметь нечто в пользование, как извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо, так и применительно к вкушению пищи; в более древнем языке с Ins., в позднейшем по большей части с Acc. без дополнения — принимать пищу и есть (о животных: поедать); землю, страну, город (Acc.) вкушать, извлекать из нее пользу, то есть преим. властвовать и овладевать (говорится о государе); кого-либо (Acc.) вкушать, то есть преим. использовать в своих целях, эксплуатировать и вкушать плотски. В позднейшем языке обычно Med.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#Bojayati#}. {#˚te#} (метрически)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 «иметь нечто» (Acc., в виде исключения Ins.) «в удел, в пользование», то есть преим. «нести наказание у кого-либо»; (Gen.) «пожинать плоды чего-либо» (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%кормить кого-либо чем-либо, угощать%}; с двойным <ab>Acc.</ab> или с <ab>Acc.</ab> лица и <ab>Instr.</ab> вещи.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 Act. быть полезным кому-либо (Acc.), идти на пользу, приносить благо, служить. Единожды v. l. Med.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 в виде исключения {%давать кому-либо наслаждаться чем-либо%} <ab>überh.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 4〉 в астр. «проходить, протекать», с Acc. [Spr. 7740](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?7740) (одновременно «наслаждаться, расходовать») определенный определ. период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с *yuj*.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%употреблять в пищу, использовать как питание%} <ls>CARAKA. 6,18</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. *bhojayati*. *˚te* (метрически)
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> {#buBukzati#} (единожды), {#˚te#}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 кормить кого-либо чем-либо, угощать; с двойным Acc. или с Acc. лица и Ins. вещи.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%желать есть, быть голодным%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 в виде исключения давать кому-либо наслаждаться чем-либо вообще
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%желать насладиться —, желать приобщиться к чему-либо%} <ls>NAIṢ. 6,100</ls>. — {#buBukzita#} <ab>s.</ab> <ab>bes.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 3〉 употреблять в пищу, использовать как питание [CARAKA. 6,18].
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Intens.</ab>
-<div n="1">— 1〉 {#boBujIti#} {%наслаждаться (с усилением)%}.
-<div n="1">— 2〉 {#boBujyate#} {%быть многократно поедаемым%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. *bubhukṣati* (единожды), *˚te*
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDi#} {%съедать, поедать, наслаждаться%} <ab>überh.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 1〉 желать есть, быть голодным.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">С {#anu#}
-<div n="1">— 1〉 {%пожинать плоды чего-либо%} (<ab>Acc.</ab>), {%получать вознаграждение за%}.
-<div n="1">— 2〉 {%наслаждаться, приобщаться, принимать участие в%}.
-<div n="1">— 3〉 в <ab>Astr.</ab> {%проходить (период)%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2〉 желать насладиться —, желать приобщиться к чему-либо [NAIṢ. 6,100]. — *bubhukṣita* см. особ.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#} {%быть полезным кому-либо%} (<ab>Acc.</ab>), {%служить%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — Intens.
+— 1〉 *bobhujīti* наслаждаться (с усилением).
+— 2〉 *bobhujyate* быть многократно поедаемым.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} во 2. *{#ABoga#}, {#ABogaya/#} <ab>u. s. w.</ab>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *adhi* съедать, поедать, наслаждаться вообще
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samA#} {%наслаждаться%}, то есть <ab>v. a.</ab> {%властвовать над%} (<ab>Acc.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anu*
+— 1〉 пожинать плоды чего-либо (Acc.), получать вознаграждение за.
+— 2〉 наслаждаться, приобщаться, принимать участие в.
+— 3〉 в астр. проходить (период).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#}
-<div n="1">— 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле <ab>v. a.</ab> «пользоваться, применять, извлекать пользу из, жить за счет, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле <ab>v. a.</ab> «предаваться любви с» (вм. <ab>Acc.</ab> лица — также {#SarIram#}).
-<div n="1">— 2〉 «иметь вознаграждение за что-либо» (<ab>Acc.</ab>).
-<div n="1">— 3〉 <ab>Act.</ab> «быть полезным кому-либо» (<ab>Acc.</ab>), «служить».
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *abhi* быть полезным кому-либо (Acc.), служить.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyupa#} {%наслаждаться, поедать%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ā* во 2. **ābhoga*, *ābhogaya* и т.д.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samupa#} {%предаваться любви с%} (<ab>Acc.</ab>)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samā* наслаждаться, то есть преим. властвовать над (Acc.).
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#}
-<div n="1">— 1〉 {%есть заранее, есть прежде других%}.
-<div n="1">— 2〉 {%обходить кого-либо%} (<ab>Acc.</ab>) {%при еде, оставлять без угощения%}.
-<div n="1">— 3〉 {%поедать, съедать, пожирать, истреблять%} <ls>KĀD. 2,118,1</ls>. (<ls n="KĀD. 2,">145,6</ls>).
-<div n="1">— 4〉 {%наслаждаться, пользоваться, употреблять%}. — {#pariBujyantam#} <ls>MBH. 11,97</ls> ошибочно вм. {#˚Bfjjyantam#}. — {#paribuBukzita#} <ab>s.</ab> <ab>bes.</ab> (<ls>Nachtr. 4</ls>)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa*
+— 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле преим. «пользоваться, применять, извлекать пользу из, жить за счет, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле преим. «предаваться любви с» (вм. Acc. лица — также *śarīram*).
+— 2〉 «иметь вознаграждение за что-либо» (Acc.).
+— 3〉 Act. «быть полезным кому-либо» (Acc.), «служить».
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
-<div n="1">— 1〉 *{%приступать к еде, начинать есть%}.
-<div n="1">— 2〉 <ab>Act.</ab> {%быть услужливым, быть готовым к услугам%}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pratyupa* наслаждаться, поедать.
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#}
-<div n="1">— 1〉 «наслаждаться».
-<div n="1">— 2〉 «принимать пищу наряду с лечением» <ls>CARAKA. 1,13</ls>. {#pratiBukta#} «соблюдавший диету» <ls n="CARAKA.">6,26</ls>. «питавшийся во время лечения» (<ab>Instr.</ab>) <ls n="CARAKA. 6,">20</ls>.
-<div n="m">— <ab>Caus.</ab> {#laGvannapratiBojita#} «тот, кому при лечении давали принимать легкую пищу» <ls>BHĀVAPR. 3,21,38</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samupa* предаваться любви с (Acc.)
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#} в *{#BuktaviBukta#}.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pari*
+— 1〉 есть заранее, есть прежде других.
+— 2〉 обходить кого-либо (Acc.) при еде, оставлять без угощения.
+— 3〉 поедать, съедать, пожирать, истреблять [KĀD. 2,118,1]. ([145,6]).
+— 4〉 наслаждаться, пользоваться, употреблять. — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) = [≈Вульг. 11.3.14](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A003_S014) = ≈крит. 11,3.11c ошибочно вм. *˚bhṛjjyantam*. — *paribubhukṣita* см. особ. ([Nachtr. 4])
 
-**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
-<div n="1">— 1〉 {%наслаждаться вместе, держать общую трапезу%} <ls>AV. 3,10,7. 11,2,31</ls>. <ls>ĀPAST. 2,17,9</ls>. (вероятно, следует читать {#saMBuYjatAM#}).
-<div n="1">— 2〉 {%наслаждаться, наслаждаться плотски%}.
-<div n="1">— 3〉 в <ab>Astr.</ab> {%проходить (период)%}. {#saMBukta#} <ls>MAṆITTHA</ls> у <ls>UTPALA zu VARĀH. BṚH. 26 (24),4</ls>.
-<div n="m">— <ab>Caus.</ab> {%кормить кого-либо%} (<ab>Acc.</ab>) {%вместе с%} (<ab>Instr.</ab>).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *pra*
+— 1〉 *приступать к еде, начинать есть.
+— 2〉 Act. быть услужливым, быть готовым к услугам.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>4.</hom> {#Bu/j#}¦
-<div n="1">— 1〉 <lex>f.</lex> {%принесение пользы, содействие благу, служение на благо; наслаждение, выгода, польза; обладание, имущество%}. <ab>Dat.</ab> {#Bje/#} также как <ab>Infin.</ab>
-<div n="1">— 2〉 <lex>Adj.</lex> в конце <ab>Comp.</ab>
-<div n="2">— a〉 {%наслаждающийся, вкушающий, приобщающийся, плотски наслаждающийся%}. В сочетании со словами, обозначающими землю, — то есть <ab>v. a.</ab> {%властвующий, государь, царь%}.
-<div n="2">— b〉 {%пожинающий плоды чего-либо%}.
-<div n="2">— c〉 {%приносящий пользу, содействующий благу%}.
-<div n="2">— d〉 {%проходящий, наполняющий%} (о времени).
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *prati*
+— 1〉 «наслаждаться».
+— 2〉 «принимать пищу наряду с лечением» [CARAKA. 1,13]. *pratibhukta* «соблюдавший диету» [6,26]. «питавшийся во время лечения» (Ins.) [20].
+— Caus. *laghvannapratibhojita* «тот, кому при лечении давали принимать легкую пищу» [BHĀVAPR. 3,21,38].
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Buj#}¦ с {#upa#} <ab>Desid.</ab> «намереваться вкусить (в супружеском смысле)» <ls>HEM. PAR. 1,380</ls>.<info n="sup_5"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *vi* в **bhuktavibhukta*.
 
-**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Buj#}¦ с {#upa#} <ab>Desid.</ab> 5.<info n="sup_7"/>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *sam*
+— 1〉 наслаждаться вместе, держать общую трапезу [AV. 3,10,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.07) [AV. 11,2,31](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.002.html#av11.002.31). [ĀPAST. 2,17,9]. (вероятно, следует читать *saṃbhuñjatāṃ*).
+— 2〉 наслаждаться, наслаждаться плотски.
+— 3〉 в астр. проходить (период). *saṃbhukta* [MAṆITTHA] у [UTPALA zu VARĀH. BṚH. 26 (24),4].
+— Caus. кормить кого-либо (Acc.) вместе с (Ins.).
 
-**+)** [PWKVN·derived_sense → не привязано: цель не указана] <hom>3.</hom> {#Buj#}¦ с {#upa#} <ab>Desid.</ab> {%намереваться вкусить%} (супружески) <ls>HEM. PAR. 1,380</ls>.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **4.** *bhuj*
+— 1〉 _f._ принесение пользы, содействие благу, служение на благо; наслаждение, выгода, польза; обладание, имущество. Dat. *bhje* также как Infin.
+— 2〉 _Adj._ в конце Comp.
+— a〉 наслаждающийся, вкушающий, приобщающийся, плотски наслаждающийся. В сочетании со словами, обозначающими землю, — то есть преим. властвующий, государь, царь.
+— b〉 пожинающий плоды чего-либо.
+— c〉 приносящий пользу, содействующий благу.
+— d〉 проходящий, наполняющий (о времени).
 
-**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>3.</hom> {#Buj#}¦ с {#upa#} <ab>Desid.</ab> 5.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*bhuj* с *upa* Desid. «намереваться вкусить (в супружеском смысле)» [HEM. PAR. 1,380].
 
-**+)** [SCH·derived_sense → не привязано: цель не указана] 3. {%bhuj%}¦ с {%upa%} Desid. намереваться (супружески) вкусить, <ls>Hem. Par. 1,380.</ls> {part=,seq=20923,type=,n=2}
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** √*bhuj* с *upa* Desid. 5.
 
-## h2
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** *bhuj* с *upa* Desid. намереваться вкусить (супружески) [HEM. PAR. 1,380].
 
-**1)** <div n="p">— {#sam#}
-<div n="1"> 1) {%совместно вкушать, вкушать%}: {#daDyodanaM saMBuYjIyAtAm#}
-<ls>ŚĀṄKH. ŚR. 1. 17,7.</ls> {#apaTyEH saha saMBukte vyADirannarase yaTA#}
-<ls>DAŚ. 2,57.</ls> {#saMBoktuM vizayAn#}
-<ls>Spr. 1337.</ls> {#parEH saMBujyate rAjyam#}
-<ls n="Spr.">1728.</ls> {%вкушать плотски%}: {#samaBujyata tABiH sa yaTecCam#}
-<ls>RĀJA-TAR. 2,106.</ls> {#suganDAdityam — saMbuBuje#}
-<ls n="RĀJA-TAR.">5,283.</ls>
-[Page5-0306]
-{#saMBuktaBUrijArA#}
-<ls n="RĀJA-TAR.">6,321.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] **3.** *bhuj* с *upa* Desid. 5.
 
-**2)** <div n="1">— 2) {%оказываться полезным%}: {#sarvA^nya\jYAnsa^MBuYja\tI#} {%служа при всех жертвоприношениях%}
-<ls>AV. 3,10,7.</ls>
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 3. bhuj с upa Desid. намереваться (супружески) вкусить, [Hem. Par. 1,380.] {part=,seq=20923,type=,n=2}
 
-**3)** <div n="1">— 3) {%поедать%}: {#(SarIraM me) balimiva pariBoktuM vAyasAstarkayanti#}
-<ls>MṚCCH. 157,11.</ls> {%вкушать, пользоваться, употреблять%}: {#yadi me sa putra imaM DanaskanDaM pariBuYjIyAt#}
-<ls>SADDH. P. 4,11,a.</ls> {#apariBukta#}
-<ls n="SADDH. P. 4,">10,b.</ls> {#suravaDUpariBuktalatAgfhAH#}
-<ls>KIR. 5,5.</ls>
-<ls>ŚĀK. 41,17.</ls> <ls n="ŚĀK.">115.</ls> {#priyeRa pariBuktamavekzya gAtram#}
-<ls>ṚT. 4. 16.</ls> {#priyajanapariBukta (dukUla)#}
-<ls>SĀH. D. 43,10.</ls> {#pariBuktAmiva srajam#}
-<ls>R. GORR. 2,62,24.</ls> {#nirmAlyadAma pariBuktamanojYaganDam#} (так следует читать)
-<ls>ṚT. 4. 15.</ls> {#jIrRaM ca pariBuktaM ca yAtayAmamidaM dvayam#}
-<ls>AK. 3,4,23,147.</ls> — <ab>st.</ab> {#pariBujyantam#}
-<ls>MBH. 11,97</ls> читает <ls>ed. Bomb.</ls> {#pariBfjjantam#} (<ab>d. i.</ab> {#˚Bfjjyantam)#} . <ab>Vgl.</ab> {#pariBoktar#} <ab>fg.</ab> — <ab>desid.</ab> <ab>partic.</ab> {#paribuBukzita#} {%чрезвычайно голодный%}
-<ls>MBH. 9,1483.</ls> Может быть разложено и в {#pari + bu˚#}.
-
-**abhi+bhuj.1)** <div n="p">— {#aBi#} {%быть полезным кому-либо%} (<ab>acc.</ab>), {%служить%}: {#ime lokA anyo'nyamaBiBuYjanti#}
-<ls>ŚĀṄKH. ŚR. 16,21,21.</ls>
-
-**adhi+bhuj.1)** <div n="p">— {#aDi#} {%поедать, пожирать%}: {#SrAdDAni no 'DibuBuje prasaBaM tanUjErdattAni#} (слова манов)
-<ls>BHĀG. P. 7,8,44.</ls> {%наслаждаться%}: {#aDiBujyamAnam — rikTaM pitfpEtAmaham#}
-<ls>BHĀG. P. 5,7,8.</ls> {#rAjyamidaM svecCayADiBujyatAm (upaBujyatAm#} <ab>v. l.</ab>)
-<ls>HIT. 130,4.</ls>
-
-**anu+bhuj.1)** <div n="p">— {#anu#}
-<div n="1"> 1) {%вкушать награду за что-либо%} (<ab>acc.</ab>): {#eko 'nuBuNkte sukf- tamekaH eva ca duzkftam#}
-<ls>Spr. 3822.</ls>
-
-**anu+bhuj.2)** <div n="1">— 2) {%наслаждаться%}: {#durvinayavfkzaPalamanu- BuNkzva#}
-<ls>PAÑCAT. 259,15.</ls> {#BogAn#}
-<ls>BHĀG. P. 7,10,10.</ls> {#anvaBuNkta — candrikAm#}
-<ls>RAGH. 19,39.</ls> {#maRqanAnmaRqanamanvaBuNkta#} {%она получала одно украшение за другим%}
-<ls>KUMĀRAS. 7,5.</ls>
-
-**anu+bhuj.3)** <div n="1">— 3) {%проходить%} (в <ab>astr.</ab> смысле): {#(aNgArakaH) triBistriBiH pakzErekEkaSo rASIndvAdaSAnuBuNkte#}
-<ls>BHĀG. P. 5,22,14.</ls>
-
-**caus)** <div n="v">— <ab>Vgl.</ab> {#saMBoga#} <ab>u. s. w.</ab> — <ab>caus.</ab> {%потчевать кого-либо%} (<ab>acc.</ab>) {%чем-либо%} (<ab>instr.</ab>)
-<ls>YĀJÑ. 1,105.</ls>
-<ls>BHĀG. P. 9,5,18.</ls> {#atiTInannapAnena BftyAnatyaSanena ca . saMBojya#}
-<ls>MBH. 3,12672.</ls>
-
-**caus.1)** <div n="1"> 1) {#Bojayati#} (
-<ls>P. 1,3,87.</ls>
-<ls>VOP. 22,2</ls>) {%кормить кого-либо чем-либо, угощать%}; с двойным <ab>acc.</ab> (
-<ls>P. 1,4,52.</ls>
-<ls>VOP. 5,5</ls>) или с <ab>acc.</ab> лица и <ab>instr.</ab> предмета.
-<ls>KĀTY. ŚR. 4,6,10.</ls> <ls n="KĀTY. ŚR.">25,8,1.</ls> {#sarpirmaDuByAmftvijo Bojayet#}
-<ls>LĀṬY. 3,6,8.</ls> {#ftvijo brahmOdanaM BojayitvA#}
-<ls n="LĀṬY.">9,9,8.</ls> <ls>KAUŚ. 6. 17. 24. 43. 61.</ls> <ls>ĀŚV. GṚHY. 1,22,18. 2,3,13.</ls> <ls>PĀR. GṚHY. 2,2.</ls> {#vESyaSUdrO Bojayet#}
-<ls>M. 3,112</ls> — <ls n="M. 3,">114.</ls> <ls n="M. 3,">125.</ls> <ls n="M. 3,">129.</ls> <ls>YĀJÑ. 1,108.</ls> <ls>MBH. 1,4965.</ls> <ls n="MBH.">4,539</ls> {#(pAtrIhastA — Bojayantyuta#} следует читать с <ls>ed. Bomb.</ls>).
-<ls n="MBH. 4,">595.</ls> <ls>HARIV. 9753.</ls> <ls>DAŚ. 2,33.</ls> <ls>R. 2,61,12.</ls> <ls>KATHĀS. 36,22.</ls> <ls>PAÑCAR. 3,14,24.</ls> <ls>PAÑCAR. 3,14,24.</ls> <ls>RĀJA-TAR. 1,164.</ls> <ls>BHĀG. P. 7,15,3.</ls> <ls>PAÑCAT. 26,20.</ls> <ls>ŚUK. in LA. (II) 34,19.</ls> {#na vE svayaM tadaSnIyAdatiTiM yanna Bojayet#}
-<ls>Spr. 4355.</ls>
-<ls>MBH. 14,1852.</ls>
-<ls>R. 3,16,15.</ls> {#svadu ca BojitA#}
-<ls>KATHĀS. 21,51.</ls>
-<ls>BHĀG. P. 9,4,34.</ls>
-<ls>PAÑCAR. 1,6,52</ls> {#(nAradaM#} <ab>st.</ab> {#nArada#} следует читать). {#dvijAteH saMsTitasya tu . adEvaM BojayecCrAdDam#}
-<ls>M. 3,247.</ls> {#hayAn — aBojayan — Bojyam#}
-<ls>R. 2,91,53. fg.</ls> (<ls n="GORR. 2,">100,52</ls> <ls>GORR.</ls>). {#Bojayet — annAdyenAsakfccEtAn#}
-<ls>M. 3,233.</ls>
-<ls>MBH. 3,1007.</ls>
-<ls>VARĀH. BṚH. S. 46,32.</ls> <ls>PAÑCAT. 121,12.</ls> <ls>HIT. 25,16</ls>, <ab>v. l.</ab> <ls n="HIT.">31,21.</ls>
-[Page5-0304]
-{#Bojayate#} (без дополнения) из метрических соображений {#(BuYjApayati#} <ab>v. l.</ab>)
-<ls>Spr. 1103.</ls> {%позволять кому-либо наслаждаться чем-либо%}: {#(daMpatI) BogAnizwAn — BojayAmAsa#} ad
-<ls>MEGH. 113.</ls> {#BojayizyAmi BavatIM Buvanatrayam#}
-<ls>BHAṬṬ. 8,83.</ls> <ab>Vgl.</ab> {#BojanIya#} .
-
-**caus.2)** <div n="1">— 2) {#BuYjApayati#}
-<ls>Spr. 1103</ls>, <ab>v. l.</ab>
-
-**desid.1)** <div n="p">— <ab>desid.</ab> {%желать есть, быть голодным%}: {#annaM buBukzamARaH#}
-<ls>MBH. 13,5009.</ls> {#rAjanme dIyatAmannaM sagaRAya buBukzate#}
-<ls>BHĀG. P. 9,21,8.</ls> {%желать наслаждаться%}: {#na sa rAjyaM buBukzati#}
-<ls>MBH. 1,5667.</ls>
-
-**desid.cross-ref)** <div n="v">— <ab>Vgl.</ab> {#buBukzA, buBukzita#} (также
-<ls>NIR. 7,13.</ls>
-<ls>SUŚR. 1,242,1. 244,15.</ls>
-<ls>PAÑCAR. 4,3,202</ls>), {#buBukzu#} .
-
-**intens.1)** <div n="p">— <ab>intens.</ab> {#boBujyate#} с <ab>pass.</ab> <ab>Bed.</ab> {%многократно поедаться%}: {#boBujyate 'tiTisuhftsvajanEH sahAnnam#}
-<ls>VARĀH. BṚH. S. 19,18</ls> {#(pepIyate#} там же также <ab>pass.</ab>; согласно этому в <ab>u.</ab> 2. {#pA#} <ab>intens.</ab> слова {%с <ab>pass.</ab> <ab>Bed.</ab>%} следует переставить строкой выше перед {#pepIyate#}).
-
-**ā+bhuj.1)** <div n="p">— {#A#} <ab>s.</ab> {#ABogi#} и <ab>vgl.</ab> {#ABojin#} в {#BujagABojin#} .
-
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#pratyupaBoga#} .
-
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#samupaBoga#} .
-
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#pratiBoga#} .
-
-## h3
-
-**1)** 4. {#Buj#}¦ (= 3. {#Buj)#}
-<div n="1"> 1) <lex>f.</lex> польза, услуга, угода: наслаждение, выгода, польза (<ab>dat.</ab> рассматривать одновременно как <ab>inf.</ab>): {#hu\ve tu\vizwa^mA Bu\je#}
-<ls>ṚV. 5,73,2.</ls> {#kasta^ upo Bu\je marto^ amartye#}
-<ls n="ṚV.">1,30,20.</ls> {#Bu\je maMhi^zWama\Bi vipra^marcata#}
-<ls n="ṚV. 1,">51,1.</ls> <ls n="ṚV. 1,">127,8.</ls> <ls n="ṚV. 1,127,">11.</ls> {#ni mA\tarA^ nayati reta^se Bu\je#} seminis profectui (через аттракцию)
-<ls n="ṚV. 1,">155,3.</ls> {#i\ze Bu\je#}
-<ls n="ṚV.">8,20,8.</ls> <ls n="ṚV.">10,48,9.</ls> <ls n="ṚV.">5,48,11.</ls> {#yezA\M nAma^ tve\zaM SaSva^tA\meka\midBu\je#}
-<ls n="ṚV.">8,20,13.</ls> {#A jA\miratke^ avyata Bu\je#}
-(сведено от <ls>BENFEY</ls> к {#Buja#}) {#na pu\tra o\Ryo^H#}
-<ls n="ṚV.">9,101,14.</ls> {#indra\ dfhya^ maGava\ntvAva\didgu\je#}
-<ls n="ṚV.">10,100,1.</ls> {#tAsA\mekA\mada^Du\rmartye Buja^m#}
-<ls n="ṚV.">3,2,9.</ls> {#yA i^ndra Buja\ ABa^ra\H sva^rvA~ asu^reByaH#}
-<ls n="ṚV.">8,86,1.</ls> {#mAnta^rA\M Buja\mA rI^rizo naH#}
-<ls n="ṚV.">1,104,6.</ls> {#vasvI^rU\ pu vA\M Buja^H#}
-<ls n="ṚV.">5,74,10.</ls> {#a\gnimI^Le Bu\jAM yavi^zWam#}
-<ls n="ṚV.">10,20,2.</ls> {#vi\dyAma\ yAsA\M Bujo^ DenU\nAM na#}
-<ls n="ṚV. 10,">22,13.</ls> {#indre\ Buja^M SaSamA\nAsa^ ASata#}
-<ls n="ṚV. 10,">92,7.</ls> {#A\tmanA\ Buja^maSnutAm#} так <ab>v. a.</ab> да возрадуется он своей жизни
-<ls>AV. 8,2,8.</ls>
-
-**2a)** <div n="1">— 2) <lex>adj.</lex> в конце <ab>comp.</ab>
-<div n="2"> a) вкушающий, едящий
-<ls>H. 7.</ls> {#yajYaSizwAmfta˚#}
-<ls>BHAG. 4,31.</ls> {#Seza˚#}
-<ls>M. 3,117.</ls> {#SrAdDa˚#}
-<ls n="M. 3,">250.</ls> <ls n="M.">4,109.</ls> {#kAlapakva˚#}
-<ls n="M.">6,17.</ls> {#BEkza˚#}
-<ls n="M.">11,178.</ls> <ls n="M. 11,">255.</ls> {#viqBuj#}
-<ls n="M.">12,56.</ls> {#pUya˚#}
-<ls n="M. 12,">72.</ls> {#Gfta˚#}
-<ls>YĀJÑ. 3,26.</ls> {#anirdizwa˚#}
-<ls>HARIV. 11136.</ls> {#amfzwa˚#}
-<ls>R. 1,6,8.</ls> {#kfmi˚#}
-<ls>Spr. 411.</ls> {#apaTya˚#}
-<ls n="Spr.">1195.</ls> {#tfRANkura˚#}
-<ls n="Spr.">2460.</ls> {#pavana˚#}
-<ls n="Spr.">4723.</ls> {#asfkpiSita˚#}
-<ls>VARĀH. BṚH. S. 15,27.</ls> {#mfzwAnnamaDura˚#}
-<ls n="VARĀH. BṚH. S.">16,28.</ls> {#mAMsa˚#}
-<ls n="VARĀH. BṚH. S.">45,15.</ls> <ls n="VARĀH. BṚH. S. 45,">47.</ls> <ls n="VARĀH. BṚH. S. 45,">25.</ls> — <ls>VID. 247.</ls> <ls>KATHĀS. 33,134.</ls> <ls>RĀJA-TAR. 4,643.</ls> <ls n="RĀJA-TAR.">6,69.</ls> <ls>BHĀG. P. 4,7,4.</ls> <ls>MĀRK. P. 14,84.</ls> <ls>PAÑCAT. 102,4.</ls> <ls>LA. (II) 87,2.</ls> {#viviDAhArapAnageyAdiBoga˚#} вкушающий
-<ls>KATHĀS. 44,81.</ls> {#SamasOKya˚#}
-<ls>Spr. 1055.</ls> {#paradAra˚#}
-<ls>MĀRK. P. 14,74.</ls> в сочетании со словами, означающими землю, — царь, государь
-<ls>H. 4.</ls> {#kASyazI˚#}
-<ls>RĀJA-TAR. 1,45.</ls> В виде исключения не скомпоновано со своим <ab>obj.</ab>: {#na prakAmaBujaH SrAdDe#}
-<ls>RAGH. 1,66</ls>; <ab>vgl.</ab> {#agra˚#} .
-
-**2b)** <div n="2">— b) {%пожинающий плоды чего-либо%}: {#kilviza˚#}
-<ls>MĀRK. P. 29,30.</ls>
-
-**2c)** <div n="2">— c) {%приносящий пользу, полезный%}: {#viSva˚#}
-<ls>MAITRYUP. 5,1. 6. 9.</ls>
-
-**2d)** <div n="2">— d) {%пробегающий, наполняющий%}: {#vyakta˚ (kAla)#}
-<ls>BHĀG. P. 3,11,3.</ls> {#aviSeza˚ (kAla)#} 4.
-
-**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#a˚, agra˚, anna˚, amfta˚, kaRa˚, kaRwaka˚#}
-(<ls>HIT. 121,16</ls>). {#kravya˚, kziti˚, kzitilava˚, kzORI˚, kzmA˚, jagatI˚, taru˚, deha˚, DArA˚, pARi˚, piSita˚, puru˚, pfTivI˚, pfTvI˚, PaRi˚, vali˚, bahu˚#} (также
-<ls>SUŚR. 2,542. 5</ls>), {#BAga˚, BikzA˚, BujaMga˚, BU˚, BUmi˚, Beka˚, BEkza˚, mita˚, yajYa˚, yajYAMSa˚, lepa˚, vetana˚, stana˚, havirBuj, havizya˚#} .
-
-## h4
-
-**1)** 1. {#Buj#}¦, сюда относит
-<ls>BENFEY</ls> {#Bujyate#} со значением <ab>Bed.</ab> склоняется (лучше: падает духом)
-<ls>Spr. 938</ls>, каковое место у нас стоит под 3. {#Buj#}
-(<ls>Sp. 302, Z. 9. fgg.</ls>). {#pratyavaskandaBugna#} согнутый, павший духом
-<ls>KATHĀS. 71,109.</ls>
-
-## h5
-
-**1)** 3. {#Buj#}¦
-<div n="1"> 1)
-<ls>Sp. 302, Z. 9. fgg.</ls> <ab>vgl.</ab> выше <ab>u.</ab> 1. {#Buj#} .
-
-**2)** <div n="p">— {#anu#}
-<div n="1"> 2) {#anuBoktuM mahotsavam#} так <ab>v. a.</ab> {%принимать участие в%}
-<ls>R. 7,91,10.</ls>
-
-**3)** <div n="p">— {#samA#} {%вкушать%}: {#samABokzyanti pfTivIm#} так <ab>v. a.</ab> {%будут властвовать над%}
-<ls>BHĀG. P. 12,1,7.</ls>
-
-**4)** <div n="p">— {#samupa#}
-<ls>R. 7,26,21.</ls>
-
-**5)** <div n="p">— {#sam#}
-<div n="1"> 1) {%вкушать плотски%}
-<ls>R. 7,17,6.</ls>
-
-## h6
-
-**1)** {#Buj#}¦ с {#ni#} {%сгибать, склонять%}: {#niBujati jAnuSirasI#}
-<ls>PAT. a. a. O. 1,254,a.</ls>
-[Page7-1785]
-<div n="p">— {#pra#} {%складывать, сворачивать%}: {#praBujati vAsasI#} <ab>ebend.</ab>
-
-## h1
-
-**2)** 2. {#Buj#}¦ (= 1. {#Buj)#} <ab>s.</ab> {#tri˚#} .
-
-## h7
-
-**3)** {#Buj#}¦
-<div n="1"> 1) {#BukzizIya#}
-<ls>PAÑCAV. BR. 1,1,1.</ls> —
-<ab>Z.</ab> 4 исправить на {#Bu\jantA^#} <ab>st.</ab> {#Bu\YjantA^#} . — <ab>intens.</ab> {#boBujIti#} {%наслаждаться, вкушать%}
-<ls>Spr. (II) 4053.</ls>
-
-## h8
-
-**4)** {#Buj#}¦
-<div n="1"> 1) добавить {%обладание, имущество.%}
-<ab>Z.</ab> 5 исправить на 5, 48, 4.
+## омоним h2
+
+**1)** — *sam*
+ 1) совместно вкушать, вкушать: *dadhyodanaṃ saṃbhuñjīyātām*
+[ŚĀṄKH. ŚR. 1. 17,7.] *apathyaiḥ saha saṃbhukte vyādhirannarase yathā*
+[DAŚ. 2,57.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,57) *saṃbhoktuṃ viṣayān*
+[Spr. 1337.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1337) *paraiḥ saṃbhujyate rājyam*
+[1728.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1728) вкушать плотски: *samabhujyata tābhiḥ sa yatheccham*
+[RĀJA-TAR. 2,106.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,106) *sugandhādityam — saṃbubhuje*
+[5,283.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,283)
+
+*saṃbhuktabhūrijārā*
+[6,321.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,321)
+
+**2)** — 2) оказываться полезным: *sarvānyajñānsaṃbhuñjatī* служа при всех жертвоприношениях
+[AV. 3,10,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.010.html#av03.010.07)
+
+**3)** — 3) поедать: *(śarīraṃ me) balimiva paribhoktuṃ vāyasāstarkayanti*
+[MṚCCH. 157,11.] вкушать, пользоваться, употреблять: *yadi me sa putra imaṃ dhanaskandhaṃ paribhuñjīyāt*
+[SADDH. P. 4,11,a.] *aparibhukta*
+[10,b.] *suravadhūparibhuktalatāgṛhāḥ*
+[KIR. 5,5.]
+[ŚĀK. 41,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?41,17) [115.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?115) *priyeṇa paribhuktamavekṣya gātram*
+[ṚT. 4. 16.] *priyajanaparibhukta (dukūla)*
+[SĀH. D. 43,10.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?43,10) *paribhuktāmiva srajam*
+[R. GORR. 2,62,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,24) *nirmālyadāma paribhuktamanojñagandham* (так следует читать)
+[ṚT. 4. 15.] *jīrṇaṃ ca paribhuktaṃ ca yātayāmamidaṃ dvayam*
+[AK. 3,4,23,147.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,23,147) — вместо *paribhujyantam*
+[MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) = [≈Вульг. 11.3.14](https://sanatana.in/mahabharata/listing/parva/striparva?id=P11_U01_A003_S014) = ≈крит. 11,3.11c читает [Бомбейская ред.] *paribhṛjjantam* (т.е. *˚bhṛjjyantam)* . ср. *paribhoktar* сл. — desid. partic. *paribubhukṣita* чрезвычайно голодный
+[MBH. 9,1483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1483) = [≈Вульг. 9.27.41](https://sanatana.in/mahabharata/listing/parva/shalyaparva?id=P09_U01_A027_S041) = ≈крит. 09,26.38c Может быть разложено и в *pari + bu˚*.
+
+**abhi+bhuj.1)** — *abhi* быть полезным кому-либо (acc.), служить: *ime lokā anyo'nyamabhibhuñjanti*
+[ŚĀṄKH. ŚR. 16,21,21.]
+
+**adhi+bhuj.1)** — *adhi* поедать, пожирать: *śrāddhāni no 'dhibubhuje prasabhaṃ tanūjairdattāni* (слова манов)
+[BHĀG. P. 7,8,44.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,44) наслаждаться: *adhibhujyamānam — rikthaṃ pitṛpaitāmaham*
+[BHĀG. P. 5,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,7,8) *rājyamidaṃ svecchayādhibhujyatām (upabhujyatām* v. l.)
+[HIT. 130,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?130,4)
+
+**anu+bhuj.1)** — *anu*
+ 1) вкушать награду за что-либо (acc.): *eko 'nubhuṅkte sukṛ- tamekaḥ eva ca duṣkṛtam*
+[Spr. 3822.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3822)
+
+**anu+bhuj.2)** — 2) наслаждаться: *durvinayavṛkṣaphalamanu- bhuṅkṣva*
+[PAÑCAT. 259,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?259,15) *bhogān*
+[BHĀG. P. 7,10,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,10,10) *anvabhuṅkta — candrikām*
+[RAGH. 19,39.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,39) *maṇḍanānmaṇḍanamanvabhuṅkta* она получала одно украшение за другим
+[KUMĀRAS. 7,5.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,5)
+
+**anu+bhuj.3)** — 3) проходить (в астр. смысле): *(aṅgārakaḥ) tribhistribhiḥ pakṣairekaikaśo rāśīndvādaśānubhuṅkte*
+[BHĀG. P. 5,22,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,22,14)
+
+**caus)** — ср. *saṃbhoga* и т.д. — caus. потчевать кого-либо (acc.) чем-либо (instr.)
+[YĀJÑ. 1,105.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,105)
+[BHĀG. P. 9,5,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,5,18) *atithīnannapānena bhṛtyānatyaśanena ca . saṃbhojya*
+[MBH. 3,12672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12672) = [≈Вульг. 3.184.21](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U12_A184_S021) = ≈крит. 03,182.19c
+
+**caus.1)** 1) *bhojayati* (
+[P. 1,3,87.](https://ashtadhyayi.com/sutraani/1/3/87)
+[VOP. 22,2](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?22,2)) кормить кого-либо чем-либо, угощать; с двойным acc. (
+[P. 1,4,52.](https://ashtadhyayi.com/sutraani/1/4/52)
+[VOP. 5,5](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,5)) или с acc. лица и instr. предмета.
+[KĀTY. ŚR. 4,6,10.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,6,10) [25,8,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?25,8,1) *sarpirmadhubhyāmṛtvijo bhojayet*
+[LĀṬY. 3,6,8.] *ṛtvijo brahmaudanaṃ bhojayitvā*
+[9,9,8.] [KAUŚ. 6. 17. 24. 43. 61.] [ĀŚV. GṚHY. 1,22,18. 2,3,13.] [PĀR. GṚHY. 2,2.] *vaiśyaśūdrau bhojayet*
+[M. 3,112](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,112) — [114.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,114) [125.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,125) [129.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,129) [YĀJÑ. 1,108.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,108) [MBH. 1,4965.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4965) = [≈Вульг. 1.128.2](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A128_S002) = ≈крит. 01,119.2a [4,539](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.539) = [≈Вульг. 4.18.17](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A018_S017) = ≈крит. 04,17.17c *(pātrīhastā — bhojayantyuta* следует читать с [Бомбейская ред.]).
+[595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.595) = [≈Вульг. 4.19.39](https://sanatana.in/mahabharata/listing/parva/virataparva?id=P04_U03_A019_S039) = крит. — [HARIV. 9753.](https://sanskrit-lexicon-scans.github.io/hariv?9753) [DAŚ. 2,33.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,33) [R. 2,61,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,12) [KATHĀS. 36,22.](https://sanskrit-lexicon-scans.github.io/kss/index.html?36,22) [PAÑCAR. 3,14,24.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,14,24) [PAÑCAR. 3,14,24.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,14,24) [RĀJA-TAR. 1,164.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,164) [BHĀG. P. 7,15,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,15,3) [PAÑCAT. 26,20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?26,20) [ŚUK. in LA. (II) 34,19.] *na vai svayaṃ tadaśnīyādatithiṃ yanna bhojayet*
+[Spr. 4355.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4355)
+[MBH. 14,1852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1852) = [≈Вульг. 14.62.3](https://sanatana.in/mahabharata/listing/parva/ashwamedhikaparva?id=P14_U02_A062_S003) = ≈крит. 14,61.3c
+[R. 3,16,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,15) *svadu ca bhojitā*
+[KATHĀS. 21,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,51)
+[BHĀG. P. 9,4,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,34)
+[PAÑCAR. 1,6,52](https://sanskrit-lexicon-scans.github.io/pancar/app1?1,6,52) *(nāradaṃ* вместо *nārada* следует читать). *dvijāteḥ saṃsthitasya tu . adaivaṃ bhojayecchrāddham*
+[M. 3,247.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,247) *hayān — abhojayan — bhojyam*
+[R. 2,91,53. fg.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,53) ([100,52](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,52) [GORR.]). *bhojayet — annādyenāsakṛccaitān*
+[M. 3,233.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,233)
+[MBH. 3,1007.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1007) = [≈Вульг. 3.27.34](https://sanatana.in/mahabharata/listing/parva/vanaparva?id=P03_U03_A027_S034) = ≈крит. 03,28.32a
+[VARĀH. BṚH. S. 46,32.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,32) [PAÑCAT. 121,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?121,12) [HIT. 25,16](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?25,16), v. l. [31,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?31,21)
+
+*bhojayate* (без дополнения) из метрических соображений *(bhuñjāpayati* v. l.)
+[Spr. 1103.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1103) позволять кому-либо наслаждаться чем-либо: *(daṃpatī) bhogāniṣṭān — bhojayāmāsa* ad
+[MEGH. 113.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?113) *bhojayiṣyāmi bhavatīṃ bhuvanatrayam*
+[BHAṬṬ. 8,83.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,83) ср. *bhojanīya* .
+
+**caus.2)** — 2) *bhuñjāpayati*
+[Spr. 1103](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1103), v. l.
+
+**desid.1)** — desid. желать есть, быть голодным: *annaṃ bubhukṣamāṇaḥ*
+[MBH. 13,5009.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5009) = [≈Вульг. 13.104.55](https://sanatana.in/mahabharata/listing/parva/anushasanaparva?id=P13_U01_A104_S055) = крит. — *rājanme dīyatāmannaṃ sagaṇāya bubhukṣate*
+[BHĀG. P. 9,21,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,8) желать наслаждаться: *na sa rājyaṃ bubhukṣati*
+[MBH. 1,5667.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5667) = [≈Вульг. 1.140.78](https://sanatana.in/mahabharata/listing/parva/adiparva?id=P01_U07_A140_S078) = крит. —
+
+**desid.cross-ref)** — ср. *bubhukṣā, bubhukṣita* (также
+[NIR. 7,13.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?7,13)
+[SUŚR. 1,242,1. 244,15.]
+[PAÑCAR. 4,3,202](https://sanskrit-lexicon-scans.github.io/pancar/app1?4,3,202)), *bubhukṣu* .
+
+**intens.1)** — intens. *bobhujyate* с pass. знач. многократно поедаться: *bobhujyate 'tithisuhṛtsvajanaiḥ sahānnam*
+[VARĀH. BṚH. S. 19,18](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,18) *(pepīyate* там же также pass.; согласно этому в u. 2. *pā* intens. слова с pass. знач. следует переставить строкой выше перед *pepīyate*).
+
+**ā+bhuj.1)** — *ā* см. *ābhogi* и ср. *ābhojin* в *bhujagābhojin* .
+
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *pratyupabhoga* .
+
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *samupabhoga* .
+
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *pratibhoga* .
+
+## омоним h3
+
+**1)** 4. *bhuj* (= 3. *bhuj)*
+ 1) _f._ польза, услуга, угода: наслаждение, выгода, польза (dat. рассматривать одновременно как inf.): *huve tuviṣṭamā bhuje*
+[ṚV. 5,73,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.073.html#rv05.073.02) *kasta upo bhuje marto amartye*
+[1,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.030.html#rv01.030.20) *bhuje maṃhiṣṭhamabhi vipramarcata*
+[51,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.051.html#rv01.051.01) [127,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.08) [11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.127.html#rv01.127.11) *ni mātarā nayati retase bhuje* seminis profectui (через аттракцию)
+[155,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.155.html#rv01.155.03) *iṣe bhuje*
+[8,20,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.08) [10,48,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.048.html#rv10.048.09) [5,48,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.048.html#rv05.048.11) *yeṣāṃ nāma tveṣaṃ śaśvatāmekamidbhuje*
+[8,20,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.020.html#rv08.020.13) *ā jāmiratke avyata bhuje*
+(сведено от [BENFEY] к *bhuja*) *na putra oṇyoḥ*
+[9,101,14.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.101.html#rv09.101.14) *indra dṛhya maghavantvāvadidguje*
+[10,100,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.100.html#rv10.100.01) *tāsāmekāmadadhurmartye bhujam*
+[3,2,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.002.html#rv03.002.09) *yā indra bhuja ābharaḥ svarvā asurebhyaḥ*
+[8,86,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.086.html#rv08.086.01) *māntarāṃ bhujamā rīriṣo naḥ*
+[1,104,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.104.html#rv01.104.06) *vasvīrū pu vāṃ bhujaḥ*
+[5,74,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.074.html#rv05.074.10) *agnimīLe bhujāṃ yaviṣṭham*
+[10,20,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.020.html#rv10.020.02) *vidyāma yāsāṃ bhujo dhenūnāṃ na*
+[22,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.022.html#rv10.022.13) *indre bhujaṃ śaśamānāsa āśata*
+[92,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.092.html#rv10.092.07) *ātmanā bhujamaśnutām* так преим. да возрадуется он своей жизни
+[AV. 8,2,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.002.html#av08.002.08)
+
+**2a)** — 2) _adj._ в конце comp.
+ a) вкушающий, едящий
+[H. 7.](https://sanskrit-lexicon-scans.github.io/abch2/app1?7) *yajñaśiṣṭāmṛta˚*
+[BHAG. 4,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,31) *śeṣa˚*
+[M. 3,117.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,117) *śrāddha˚*
+[250.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,250) [4,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,109) *kālapakva˚*
+[6,17.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,17) *bhaikṣa˚*
+[11,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,178) [255.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,255) *viḍbhuj*
+[12,56.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,56) *pūya˚*
+[72.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,72) *ghṛta˚*
+[YĀJÑ. 3,26.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,26) *anirdiṣṭa˚*
+[HARIV. 11136.](https://sanskrit-lexicon-scans.github.io/hariv?11136) *amṛṣṭa˚*
+[R. 1,6,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,6,8) *kṛmi˚*
+[Spr. 411.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?411) *apathya˚*
+[1195.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1195) *tṛṇāṅkura˚*
+[2460.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2460) *pavana˚*
+[4723.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4723) *asṛkpiśita˚*
+[VARĀH. BṚH. S. 15,27.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?15,27) *mṛṣṭānnamadhura˚*
+[16,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?16,28) *māṃsa˚*
+[45,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,15) [47.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,47) [25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?45,25) — [VID. 247.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?247) [KATHĀS. 33,134.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,134) [RĀJA-TAR. 4,643.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,643) [6,69.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,69) [BHĀG. P. 4,7,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,4) [MĀRK. P. 14,84.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,84) [PAÑCAT. 102,4.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?102,4) [LA. (II) 87,2.] *vividhāhārapānageyādibhoga˚* вкушающий
+[KATHĀS. 44,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?44,81) *śamasaukhya˚*
+[Spr. 1055.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1055) *paradāra˚*
+[MĀRK. P. 14,74.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,74) в сочетании со словами, означающими землю, — царь, государь
+[H. 4.](https://sanskrit-lexicon-scans.github.io/abch2/app1?4) *kāśyaṣī˚*
+[RĀJA-TAR. 1,45.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,45) В виде исключения не скомпоновано со своим obj.: *na prakāmabhujaḥ śrāddhe*
+[RAGH. 1,66](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,66); ср. *agra˚* .
+
+**2b)** — b) пожинающий плоды чего-либо: *kilviṣa˚*
+[MĀRK. P. 29,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,30)
+
+**2c)** — c) приносящий пользу, полезный: *viśva˚*
+[MAITRYUP. 5,1. 6. 9.]
+
+**2d)** — d) пробегающий, наполняющий: *vyakta˚ (kāla)*
+[BHĀG. P. 3,11,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,11,3) *aviśeṣa˚ (kāla)* 4.
+
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *a˚, agra˚, anna˚, amṛta˚, kaṇa˚, kaṇṭaka˚*
+([HIT. 121,16](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?121,16)). *kravya˚, kṣiti˚, kṣitilava˚, kṣauṇī˚, kṣmā˚, jagatī˚, taru˚, deha˚, dhārā˚, pāṇi˚, piśita˚, puru˚, pṛthivī˚, pṛthvī˚, phaṇi˚, vali˚, bahu˚* (также
+[SUŚR. 2,542. 5]), *bhāga˚, bhikṣā˚, bhujaṃga˚, bhū˚, bhūmi˚, bheka˚, bhaikṣa˚, mita˚, yajña˚, yajñāṃśa˚, lepa˚, vetana˚, stana˚, havirbhuj, haviṣya˚* .
+
+## омоним h4
+
+**1)** 1. *bhuj*, сюда относит
+[BENFEY] *bhujyate* со значением знач. склоняется (лучше: падает духом)
+[Spr. 938](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?938), каковое место у нас стоит под 3. *bhuj*
+([Sp. 302, Z. 9. fgg.]). *pratyavaskandabhugna* согнутый, павший духом
+[KATHĀS. 71,109.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,109)
+
+## омоним h5
+
+**1)** 3. *bhuj*
+ 1)
+[Sp. 302, Z. 9. fgg.] ср. выше u. 1. *bhuj* .
+
+**2)** — *anu*
+ 2) *anubhoktuṃ mahotsavam* так преим. принимать участие в
+[R. 7,91,10.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,91,10)
+
+**3)** — *samā* вкушать: *samābhokṣyanti pṛthivīm* так преим. будут властвовать над
+[BHĀG. P. 12,1,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?12,1,7)
+
+**4)** — *samupa*
+[R. 7,26,21.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,26,21)
+
+**5)** — *sam*
+ 1) вкушать плотски
+[R. 7,17,6.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,17,6)
+
+## омоним h6
+
+**1)** *bhuj* с *ni* сгибать, склонять: *nibhujati jānuśirasī*
+[PAT. a. a. O. 1,254,a.]
+
+— *pra* складывать, сворачивать: *prabhujati vāsasī* там же
+
+## омоним h1
+
+**2)** 2. *bhuj* (= 1. *bhuj)* см. *tri˚* .
+
+## омоним h7
+
+**3)** *bhuj*
+ 1) *bhukṣiṣīya*
+[PAÑCAV. BR. 1,1,1.] —
+стк. 4 исправить на *bhujantā* вместо *bhuñjantā* . — intens. *bobhujīti* наслаждаться, вкушать
+[Spr. (II) 4053.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4053 "Spr. (II) 4053: pāpaṭhīti sakalaṃ ca vāṅnayaṃ bobudhīti na ca kiñcidapyasau | ratnabharamiva gardabhaḥ sadā vāvahīti kila bobhujīti no || — Wer alle möglichen Schriftwerke liest und Nichts davon versteht, gleicht einem Esel, der beständig eine Last Juwelen trägt und diese, wie man weiss, nie geniesst.")
+
+## омоним h8
+
+**4)** *bhuj*
+ 1) добавить обладание, имущество.
+стк. 5 исправить на 5, 48, 4.
