@@ -249,7 +249,16 @@ item in this order:**
    where the accent sits in `agni/—hotra`-type lemmas).
 2. **Homonym splitting** — `<h>` / `<hom>` density per dict: who splits
    agnihotra n. from agnihotra adj. as separate lemmas vs one article; drives
-   any headword-join between dictionaries.
+   any headword-join between dictionaries. **measured → FINDINGS
+   [§572](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2979): `<h>` density spans 0–419 per 1 000 entries across the 44 dicts —
+   8 split with inline `<hom>N.` display (mw/pw/pwg/gra/md/bhs/pwkvn/ap, 0.1–53
+   per 1 000), 14 split without inline display (cae/ccs/inm/pui/pe/lrv/bop/…,
+   up to 419 per 1 000), 22 split nothing. The high-density class (pui/inm/pe/
+   mci/lrv/bop) is genre, not policy: name-indices splitting distinct persons,
+   not sense-dictionaries splitting polysemy. `agnihotra` itself splits mfn./n.
+   in 6 dicts (file:line proof, §572) and stays one entry in ap/vcp/wil — a 1:2
+   vs 1:1 join mismatch any headword matcher must carry.**
 3. **Sense-hierarchy depth** — `<div n="…">` nesting profile (PWG's 1〉/a〉 vs
    Apte's numbered senses vs flat dicts); needed before importing any sense
    order into pwg_ru cards (extends §18's citation-density split).
