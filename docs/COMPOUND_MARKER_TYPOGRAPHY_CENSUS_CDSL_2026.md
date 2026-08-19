@@ -2,7 +2,7 @@
 
 _Created: 17-08-2026 · Last updated: 19-08-2026_
 
-Consolidates FINDINGS **§553–§558, §561, §564–§566, §571** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
+Consolidates FINDINGS **§553–§558, §561, §564–§566, §571, §575** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
 measured over the [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
 digitizations, the OCRed Cologne front matter (§4.5),
 `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
@@ -288,7 +288,19 @@ item in this order:**
    ancestor of Apte's `[za˚ ta˚]`.
 7. **Verb-root notation** — `√`, class digits, present-stem citation forms:
    who lemmatizes roots vs 3sg forms (bears directly on WhitneyRoots
-   crosswalks).
+   crosswalks). **measured → FINDINGS
+   [§575](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2984): the real split isn't root-vs-3sg-present — it's zero-grade `kf`
+   citation (19/44 dicts) vs guṇa-grade `kar` citation confined to the four
+   PW-family dicts (pw/pwg/pwkvn/sch); WhitneyRoots' own `roots.csv` header
+   has no `pw_id`/`pwg_id` column at all, so Cologne's two largest
+   dictionaries are structurally unjoinable to the root crosswalk today.
+   Class digits fragment across four incompatible devices — MD's dedicated
+   `<cl>` tag (750, machine-clean, near-identical to `roots.csv`'s own
+   `class` column), mw/wil's `<ab>cl.</ab>` text (2,129/2,055), Apte's
+   private `€1`–`€10` glyph (3,913), PWG's German "Nten `<ab>Kl.</ab>`" prose
+   (6, covering only a fraction of its root entries) — each needing its own
+   extractor before a cross-dict class table is possible.**
 8. **Inflection abbreviation** — Wilson's `(-traM)`, MD's `-tas, -m` runs,
    Whitney's `-te etc.`: the leading-hyphen *inflectional* use that §558
    showed must be separated from the compound use before any expansion pass.
