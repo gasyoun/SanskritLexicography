@@ -14,7 +14,7 @@
 
 **2)** — 2) *atyāhita* widerwärtig, unerwünscht; _n._ Widerwärtigkeit, Unglück (s. auch *atyāhita): kāryamatyāhitaṃ bhaviṣyati*
 [PRAB. 33,1.] [25,3.]
-[MBH. 4,861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.861) = [≈Вульг. 4.25.1](mbh/4.25.html#v1) = ≈крит. 04,24.1a
+[MBH. 4,861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.861) = [≈Vulg. 4.25.1](mbh/4.25.html#v1) = ≈krit. 04,24.1a
 [HARIV. 9714.](https://sanskrit-lexicon-scans.github.io/hariv?9714)
 [PAÑCAT. ed. orn. 41,6.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?41,6) [8.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?41,8)
 

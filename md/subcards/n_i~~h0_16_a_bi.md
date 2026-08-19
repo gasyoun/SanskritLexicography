@@ -10,10 +10,10 @@
 [7,88,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.088.html#rv07.088.02) *rathaṃ yena devāso anayannabhi priyam*
 [10,53,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.07) [AV. 6,47,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.047.html#av06.047.03) *sa naḥ svargamabhi neṣa lokam*
 [12,3,16.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.16) [17.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.003.html#av12.003.17) *sūto hi māmadhiratho dṛṣṭvaivābhyanayadgṛhān*
-[MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) = [≈Вульг. 5.142.16](mbh/5.142.html#v16) = ≈крит. 05,140.16c *badhamabhinīyamānaścauraḥ*
+[MBH. 5,4759.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4759) = [≈Vulg. 5.142.16](mbh/5.142.html#v16) = ≈krit. 05,140.16c *badhamabhinīyamānaścauraḥ*
 Schol. in der Einl. zu [CAURAP.] *dṛṣṭvā śaraṃ jyāmabhinīyamānam* zur Bogensehne geführt
-[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) = [≈Вульг. 3.19.20](mbh/3.19.html#v20) = ≈крит. 03,20.20c *abhinītāni śastrāṇi* herbeigebracht, herbeigeschafft
-[12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691) = [≈Вульг. 12.100.10](mbh/12.100.html#v10) = ≈крит. 12,101.9a
+[MBH. 3,769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.769) = [≈Vulg. 3.19.20](mbh/3.19.html#v20) = ≈krit. 03,20.20c *abhinītāni śastrāṇi* herbeigebracht, herbeigeschafft
+[12,3691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3691) = [≈Vulg. 12.100.10](mbh/12.100.html#v10) = ≈krit. 12,101.9a
 
 - **RU:** — *abhi*
  1) провожать, вести к, подводить к: *abhi sūyavasaṃ naya*
@@ -79,9 +79,9 @@ Schol. zu [BHAṬṬ.] bei [GOLDST.] u. *abhinīta*; its easy understanding
   <sub>attested</sub>
 
 **4)** — 4) *abhinīta* abgerichtet: *abhinītāśca (gajāḥ) śikṣābhiḥ*
-[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) = [≈Вульг. 6.46.9](mbh/6.46.html#v9) = ≈крит. 06,44.9c gebildet, klug, gescheidt, von einer Person
+[MBH. 6,1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1765) = [≈Vulg. 6.46.9](mbh/6.46.html#v9) = ≈krit. 06,44.9c gebildet, klug, gescheidt, von einer Person
 [R. 4,28,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,28,13) *abhinītataraṃ vākyam*
-[MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) = [≈Вульг. 12.26.1](mbh/12.26.html#v1) = ≈крит. 12,20.1c *etāvadabhinītārthamuktvā*
+[MBH. 12,201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.201) [768.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.768) = [≈Vulg. 12.26.1](mbh/12.26.html#v1) = ≈krit. 12,20.1c *etāvadabhinītārthamuktvā*
 [R. 2,39,36](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,39,36) ([38,45](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,45) [GORR.]). Andere Bedeutungen geben die indischen Lexicographen dem partic.; s. u. *abhinīta* .
 
 - **RU:** — 4) *abhinīta* дрессированный, обученный: *abhinītāśca (gajāḥ) śikṣābhiḥ*

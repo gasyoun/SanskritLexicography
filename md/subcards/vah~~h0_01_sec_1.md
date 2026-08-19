@@ -12,16 +12,16 @@
 [MBH. 4,1435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1435)
 [HARIV. 2433.](https://sanskrit-lexicon-scans.github.io/hariv?2433) [7300.](https://sanskrit-lexicon-scans.github.io/hariv?7300) [9359.](https://sanskrit-lexicon-scans.github.io/hariv?9359)
 [R. 2,114,8](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,114,8) ([125,18](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,125,18) [GORR.]). [7,28,24.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,28,24) [29,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,29,7) (die Pferde) ziehen lassen, lenken: *śanakairvaḥhayanhayān*
-[MBH. 7,6421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6421) = [≈Вульг. 7.148.38](mbh/7.148.html#v38) = ≈крит. 07,123.33a [8,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.688) = [≈Вульг. 8.16.51](mbh/8.16.html#v51) = ≈крит. 08,12.47a *mahāvṛṣān*
+[MBH. 7,6421.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6421) = [≈Vulg. 7.148.38](mbh/7.148.html#v38) = ≈krit. 07,123.33a [8,688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.688) = [≈Vulg. 8.16.51](mbh/8.16.html#v51) = ≈krit. 08,12.47a *mahāvṛṣān*
 [RĀJA-TAR. 4,227.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,227) Schol. zu [KĀTY. ŚR. 626,2](https://sanskrit-lexicon-scans.github.io/katyasr/app2?626,2) v. u. *vāhayāmāsa tānṛṣīn* liess sie (wie Zugthiere) ziehen
-[MBH. 5,469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.469) = [≈Вульг. 5.15.22](mbh/5.15.html#v22) = ≈крит. 05,15.21c [13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) = [≈Вульг. 13.99.11](mbh/13.99.html#v11) = ≈крит. 13,102.11a mit doppeltem acc.
+[MBH. 5,469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.469) = [≈Vulg. 5.15.22](mbh/5.15.html#v22) = ≈krit. 05,15.21c [13,4753.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4753) = [≈Vulg. 13.99.11](mbh/13.99.html#v11) = ≈krit. 13,102.11a mit doppeltem acc.
 [P. 1,4,52](https://ashtadhyayi.com/sutraani/1/4/52), Vārtt. 7. *balīvardānyavān*
 Schol. (zu Wagen) Etwas führen: *arpitavimānavāhitakāñcanakarpūravastrakoṭicaya*
 [KATHĀS. 43,250.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,250) (ein Schiff) führen, lenken: *nāvam*
-[MBH. 1,2399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2399) = [≈Вульг. 1.63.67](mbh/1.63.html#v67) = ≈крит. 01,57.54a *tarim*
-[4014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4014) = [≈Вульг. 1.100.48](mbh/1.100.html#v48) = ≈крит. 01,94.43c Ohne acc. fahren zu Wagen, sich vermittelst eines Vehikels irgendwohin begeben: *tvaritaṃ vāhyatām* (impers.) wird dem Wagenlenker zugerufen
+[MBH. 1,2399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2399) = [≈Vulg. 1.63.67](mbh/1.63.html#v67) = ≈krit. 01,57.54a *tarim*
+[4014.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4014) = [≈Vulg. 1.100.48](mbh/1.100.html#v48) = ≈krit. 01,94.43c Ohne acc. fahren zu Wagen, sich vermittelst eines Vehikels irgendwohin begeben: *tvaritaṃ vāhyatām* (impers.) wird dem Wagenlenker zugerufen
 [R. 2,40,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,31) *adhiṣṭhāya ca gāṃ loke bhuñjate vāhayanti ca*
-[MBH. 12,6705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6705) = [≈Вульг. 12.182.24](mbh/12.182.html#v24) = ≈крит. 12,175.24a *avāhayaṃstataḥ* (*ādhāvantastadā* die neuere Ausg.) *śīghraṃ bāṇasya puramantikāt*
+[MBH. 12,6705.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6705) = [≈Vulg. 12.182.24](mbh/12.182.html#v24) = ≈krit. 12,175.24a *avāhayaṃstataḥ* (*ādhāvantastadā* die neuere Ausg.) *śīghraṃ bāṇasya puramantikāt*
 [HARIV. 10476.](https://sanskrit-lexicon-scans.github.io/hariv?10476) *dakṣiṇena ca mārgeṇa savyaṃ dakṣiṇameva ca . vāhayasva mahābhāga tato drakṣyasi rāghavam ..*
 [R. 2,92,13](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,13) (in der [ed. Bomb.] wird ein Vers eingeschoben, so dass dort *vāhayasva* in der Bed. führen mit *vāhinīm* zu verbinden ist).
 
@@ -56,7 +56,7 @@ Schol. *śailānkapibhiḥ*
 [VOP. 5,5.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,5) *uṣṭravāmīśatavāhitārtha*
 [RAGH. 5,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,32)
 [RĀJA-TAR. 5,274.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,274) [Z. d. d. m. G. 14,571,7. 572,4. 8.] Jmd tragen lassen, zum Tragen anstellen: *paśuvaccaiva tānpṛṣṭhe vāhayāmāsa*
-[MBH. 1,3153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3153) = [≈Вульг. 1.75.28](mbh/1.75.html#v28) = ≈крит. 01,70.25c *na vāhayeddvijān*
+[MBH. 1,3153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3153) = [≈Vulg. 1.75.28](mbh/1.75.html#v28) = ≈krit. 01,70.25c *na vāhayeddvijān*
 [MĀRK. P. 34,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,34) sich tragen lassen so v. a. reiten auf (acc.): *turagam*
 [121,8.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?121,8) [KATHĀS. 12,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,135) *te vāhayanto 'nyo'nyam*
 [HARIV. 3749.](https://sanskrit-lexicon-scans.github.io/hariv?3749) *taṃ ca maṇḍūkairvāhyamānaṃ dṛṣṭvā*

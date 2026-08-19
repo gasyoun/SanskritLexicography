@@ -5,7 +5,7 @@
 
 **1)** — *vini* caus.
  1) kund thun, berichten, melden
-[MBH. 5,7344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7344) = [≈Вульг. 5.186.17](mbh/5.186.html#v17) = ≈крит. 05,187.16a
+[MBH. 5,7344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7344) = [≈Vulg. 5.186.17](mbh/5.186.html#v17) = ≈krit. 05,187.16a
 [R. 1,1,72](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,72) ([77](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,1,77) [GORR.]). [KATHĀS. 71,65.](https://sanskrit-lexicon-scans.github.io/kss/index.html?71,65) Jmd anmelden
 [MBH. 1,4906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4906)
 

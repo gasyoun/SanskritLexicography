@@ -5,10 +5,10 @@
 
 **1)** — *saṃni*
  1) herabfliegen, sich herablassen, herabfallen: *(śakunau) pṛthivyāṃ saṃnipetatuḥ*
-[MBH. 5,2462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2462) = [≈Вульг. 5.64.8](mbh/5.64.html#v8) = ≈крит. 05,62.13a *saṃnipatya mahābāhuḥ* sich zur Erde herablassend
+[MBH. 5,2462.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2462) = [≈Vulg. 5.64.8](mbh/5.64.html#v8) = ≈krit. 05,62.13a *saṃnipatya mahābāhuḥ* sich zur Erde herablassend
 [R. 5,62,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,62,10) *nirvindhyāyāḥ — rasābhyantaraṃ saṃnipatya (meghaḥ)*
 [MEGH. 29.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?29) *(bāṇāḥ) saṃnipeturakuṇṭhāgrā nāgeṣu ca hayeṣu ca*
-[MBH. 6,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2126) = [≈Вульг. 6.52.3](mbh/6.52.html#v3) = ≈крит. 06,48.3c *saṃnyapatanbhuvi*
+[MBH. 6,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2126) = [≈Vulg. 6.52.3](mbh/6.52.html#v3) = ≈krit. 06,48.3c *saṃnyapatanbhuvi*
 [15,647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.647) [HARIV. 5830.](https://sanskrit-lexicon-scans.github.io/hariv?5830) [6351.](https://sanskrit-lexicon-scans.github.io/hariv?6351)
 
 - **RU:** — *saṃni*
@@ -21,18 +21,18 @@
   <sub>attested</sub>
 
 **2)** — 2) zu Grunde gehen, umkommen
-[MBH. 7,434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.434) = [≈Вульг. 7.12.1](mbh/7.12.html#v1) = ≈крит. 07,11.1c
+[MBH. 7,434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.434) = [≈Vulg. 7.12.1](mbh/7.12.html#v1) = ≈krit. 07,11.1c
 
 - **RU:** — 2) погибать, гибнуть
 [MBH. 7,434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.434) = [≈Вульг. 7.12.1](mbh/7.12.html#v1) = ≈крит. 07,11.1c
   <sub>attested</sub>
 
 **3)** — 3) zusammenkommen, zusammenstossen, zusammentreffen, zusammenfallen: *śataśaḥ saṃnipatya*
-[MBH. 2,2003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2003) = [≈Вульг. 2.58.12](mbh/2.58.html#v12) = ≈крит. 02,52.12a *gajāścācalasaṃkāśāḥ saṃnipetuḥ samantataḥ*
+[MBH. 2,2003.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2003) = [≈Vulg. 2.58.12](mbh/2.58.html#v12) = ≈krit. 02,52.12a *gajāścācalasaṃkāśāḥ saṃnipetuḥ samantataḥ*
 [HARIV. 5077.](https://sanskrit-lexicon-scans.github.io/hariv?5077) *saṃnipatya prakṛtibhirmātṛgupto 'bhyaṣicyata*
 [RĀJA-TAR. 3,239.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,239) *tataḥ saṃnyapatansarve gandharvāḥ kauravaiḥ saha*
-[MBH. 3,14899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14899) = [≈Вульг. 3.241.20](mbh/3.241.html#v20) = ≈крит. 03,230.19a *saṃnipatya gajāviva*
-[7,609.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.609) = [≈Вульг. 7.15.28](mbh/7.15.html#v28) = ≈крит. 07,14.28c *antarāle saṃnipatya duṣṭasarpeṇa saha saṃgrāmaṃ vidhāya*
+[MBH. 3,14899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14899) = [≈Vulg. 3.241.20](mbh/3.241.html#v20) = ≈krit. 03,230.19a *saṃnipatya gajāviva*
+[7,609.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.609) = [≈Vulg. 7.15.28](mbh/7.15.html#v28) = ≈krit. 07,14.28c *antarāle saṃnipatya duṣṭasarpeṇa saha saṃgrāmaṃ vidhāya*
 [PAÑCAT. 238,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?238,21)
 [RĀJA-TAR. 6,344.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,344) *teṣāmanekaṃ cetsaṃnipatet*
 [ṚV. PRĀT. 15,12] (man lese *saṃnipateddvitīyam* bei
@@ -53,7 +53,7 @@
   <sub>attested</sub>
 
 **4)** — 4) sich darbieten: *na saṃnipatitaṃ dharmyamupabhogaṃ yadṛcchayā . pratyācakṣe na cāpyenamanurundhye sudurlabham ..*
-[MBH. 12,6676.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6676) = [≈Вульг. 12.181.15](mbh/12.181.html#v15) = ≈крит. 12,174.15a
+[MBH. 12,6676.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6676) = [≈Vulg. 12.181.15](mbh/12.181.html#v15) = ≈krit. 12,174.15a
 
 - **RU:** — 4) представляться, появляться: *na saṃnipatitaṃ dharmyamupabhogaṃ yadṛcchayā . pratyācakṣe na cāpyenamanurundhye sudurlabham ..*
 [MBH. 12,6676.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6676) = [≈Вульг. 12.181.15](mbh/12.181.html#v15) = ≈крит. 12,174.15a
@@ -65,7 +65,7 @@
   <sub>attested</sub>
 
 **Caus. 1)** 1) herabwerfen, herabschleudern, herabschiessen, abschiessen: *chattraṃ dhvajaṃ ca samare śarābhyāṃ saṃnyapātayat*
-[MBH. 7,7488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7488) = [≈Вульг. 7.167.16](mbh/7.167.html#v16) = ≈крит. 07,142.13c *taiḥ śarairmūrdhni susaṃnipātitaiḥ*
+[MBH. 7,7488.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7488) = [≈Vulg. 7.167.16](mbh/7.167.html#v16) = ≈krit. 07,142.13c *taiḥ śarairmūrdhni susaṃnipātitaiḥ*
 [R. 5,42,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,8) Vgl. *saṃnipātya* .
 
 - **RU:** 1) бросать вниз, низвергать, метать, выпускать (стрелу): *chattraṃ dhvajaṃ ca samare śarābhyāṃ saṃnyapātayat*
@@ -74,7 +74,7 @@
   <sub>attested</sub>
 
 **Caus. 2)** — 2) zusammenkommenlassen, versammeln, vereinigen, zusammenbringen: *tvatkṛte hi mayā vīra rājānaḥ saṃnipātitāḥ*
-[MBH. 3,2162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2162) = [≈Вульг. 3.56.3](mbh/3.56.html#v3) = ≈крит. 03,53.3a
+[MBH. 3,2162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2162) = [≈Vulg. 3.56.3](mbh/3.56.html#v3) = ≈krit. 03,53.3a
 [RAGH. 14,36.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,36) [15,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,75)
 [RĀJA-TAR. 2,159.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,159) [4,361](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,361)
 

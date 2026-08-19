@@ -20,8 +20,8 @@
   <sub>attested</sub>
 
 **3)** — 3) seinen Unmuth gegen Jmd (acc.) auslassen, Jmd schmähen
-[MBH. 4,122.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.122) = [≈Вульг. 4.4.40](mbh/4.4.html#v40) = ≈крит. 04,4.33a *nirvādairnirvadedenam*
-[5,4618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4618) = [≈Вульг. 5.138.10](mbh/5.138.html#v10) = ≈крит. 05,136.9c med. [12,12361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12361) = [≈Вульг. 12.327.50](mbh/12.327.html#v50) = ≈крит. 12,314.46c
+[MBH. 4,122.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.122) = [≈Vulg. 4.4.40](mbh/4.4.html#v40) = ≈krit. 04,4.33a *nirvādairnirvadedenam*
+[5,4618.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4618) = [≈Vulg. 5.138.10](mbh/5.138.html#v10) = ≈krit. 05,136.9c med. [12,12361.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12361) = [≈Vulg. 12.327.50](mbh/12.327.html#v50) = ≈krit. 12,314.46c
 
 - **RU:** — 3) изливать досаду на кого-л. (acc.), поносить, бранить кого-л.
 [MBH. 4,122.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.122) = [≈Вульг. 4.4.40](mbh/4.4.html#v40) = ≈крит. 04,4.33a *nirvādairnirvadedenam*

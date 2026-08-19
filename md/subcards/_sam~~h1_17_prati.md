@@ -5,7 +5,7 @@
 
 **main)** — *prati*, partic. *˚śānta* dass.: *˚śoka*
 [MBH. 12,891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.891) absol. *˚śāmya* erloschen seiend
-[454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.454) = [≈Вульг. 12.15.31](mbh/12.15.html#v31) = ≈крит. 12,15.31a Vgl. *pratiśama* .
+[454.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.454) = [≈Vulg. 12.15.31](mbh/12.15.html#v31) = ≈krit. 12,15.31a Vgl. *pratiśama* .
 
 - **RU:** — *prati*, partic. *˚śānta* то же: *˚śoka*
 [MBH. 12,891.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.891) absol. *˚śāmya* угасший

@@ -4,7 +4,7 @@
 
 
 **8)** — 8) inire (feminam), mit acc.: *striyam*
-[MBH. 13,4518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4518) = [≈Вульг. 13.93.123](mbh/13.93.html#v123) = ≈крит. 13,95.62a *ātmatanayāṃ prajānātho 'yāsīt*
+[MBH. 13,4518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4518) = [≈Vulg. 13.93.123](mbh/13.93.html#v123) = ≈krit. 13,95.62a *ātmatanayāṃ prajānātho 'yāsīt*
 [PRAB. 8,3.]
 
 - **RU:** — 8) inire (feminam), с acc.: *striyam*
@@ -26,7 +26,7 @@
   <sub>attested</sub>
 
 **10)** — 10) hinter Etwas kommen, erkennen: *tathāsya cittaṃ hyapi saṃvitarkayannararṣabhasyāsya na yāmi tattvataḥ*
-[MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234) = [≈Вульг. 4.8.4](mbh/4.8.html#v4) = ≈крит. 04,7.4c
+[MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234) = [≈Vulg. 4.8.4](mbh/4.8.html#v4) = ≈krit. 04,7.4c
 
 - **RU:** — 10) дознаться до чего-либо, распознать: *tathāsya cittaṃ hyapi saṃvitarkayannararṣabhasyāsya na yāmi tattvataḥ*
 [MBH. 4,234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.234) = [≈Вульг. 4.8.4](mbh/4.8.html#v4) = ≈крит. 04,7.4c
@@ -40,7 +40,7 @@
   <sub>attested</sub>
 
 **12)** — 12) *yāta* fehlerhaft für *jāta* in *yātamanyu*
-[MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) = [≈Вульг. 15.18.15](mbh/15.18.html#v15) = ≈крит. 15,24.15a *jāta˚* [ed. Bomb.]
+[MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) = [≈Vulg. 15.18.15](mbh/15.18.html#v15) = ≈krit. 15,24.15a *jāta˚* [ed. Bomb.]
 
 - **RU:** — 12) *yāta* ошибочно вм. *jāta* в *yātamanyu*
 [MBH. 15,509.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.509) = [≈Вульг. 15.18.15](mbh/15.18.html#v15) = ≈крит. 15,24.15a *jāta˚* [Бомбейская ред.]

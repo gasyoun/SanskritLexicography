@@ -18,7 +18,7 @@
 - **RU:** — 2) поднятый: *˚patāka* [HARIV. 16253](https://sanskrit-lexicon-scans.github.io/hariv?16253) (*samucchrita˚* новейшее изд.). *˚lāṅgūla* [HIT. ed. JOHNS. 1614] (*samunnata˚* SCHL. [76,6](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?76,6)). высоко идущий: *˚taraṃgiṇī gaṅgā* [MBH. 5,5757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5757) *unnatasānusamuddhatā jāhnavī* высоко текущий [KIR. 5,15.]
   <sub>attested</sub>
 
-**3)** — 3) gesteigert, heftig, intensiv: *tejas* [R. 1,38,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,16) *rathaghoṣa* [MBH. 13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) = [≈Вульг. 13.30.39](mbh/13.30.html#v39) = ≈крит. 13,31.36a *lavaṇajalasamuddhatasvana* wie das Meer heftig tosend [8,1212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1212) —
+**3)** — 3) gesteigert, heftig, intensiv: *tejas* [R. 1,38,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,16) *rathaghoṣa* [MBH. 13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) = [≈Vulg. 13.30.39](mbh/13.30.html#v39) = ≈krit. 13,31.36a *lavaṇajalasamuddhatasvana* wie das Meer heftig tosend [8,1212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1212) —
 
 - **RU:** — 3) усиленный, сильный, интенсивный: *tejas* [R. 1,38,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,16) *rathaghoṣa* [MBH. 13,1978.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1978) = [≈Вульг. 13.30.39](mbh/13.30.html#v39) = ≈крит. 13,31.36a *lavaṇajalasamuddhatasvana* бурлящий, как море [8,1212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1212) —
   <sub>attested</sub>
@@ -33,7 +33,7 @@
 - **RU:** — 5) переполненный, полный: *lomaharṣa˚* [R. 5,17,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,17,35) *sahajacāpaladoṣa˚* [ŚIŚ. 2,117] (= *dṛpta* [MALLIN.]).
   <sub>attested</sub>
 
-**6)** — 6) herausgenommen: *puṣkaraṃ hradādagastyena* (richtiger *samuddhṛtam* [ed. Bomb.]) [MBH. 13,4544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4544) = [≈Вульг. 13.93.149](mbh/13.93.html#v149) = ≈крит. 13,95.86a *˚nidhāna* [R. 2,33,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,18) (richtiger *samuddhṛta˚* [ed. Bomb.] und [GORR.]).
+**6)** — 6) herausgenommen: *puṣkaraṃ hradādagastyena* (richtiger *samuddhṛtam* [ed. Bomb.]) [MBH. 13,4544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4544) = [≈Vulg. 13.93.149](mbh/13.93.html#v149) = ≈krit. 13,95.86a *˚nidhāna* [R. 2,33,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,18) (richtiger *samuddhṛta˚* [ed. Bomb.] und [GORR.]).
 
 - **RU:** — 6) извлеченный: *puṣkaraṃ hradādagastyena* (правильнее *samuddhṛtam* [Бомбейская ред.]) [MBH. 13,4544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4544) = [≈Вульг. 13.93.149](mbh/13.93.html#v149) = ≈крит. 13,95.86a *˚nidhāna* [R. 2,33,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,18) (правильнее *samuddhṛta˚* [Бомбейская ред.] и [GORR.]).
   <sub>attested</sub>

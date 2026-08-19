@@ -6,7 +6,7 @@
 **1)** — *abhyupa*
  1) herbeikommen, hingehen zu, losgehen auf
 [R. 1,73,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,5) [4,62,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,62,12) *niveśāyābhyupāyāma[ḥ]*
-[MBH. 7,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1967) = [≈Вульг. 7.50.2](mbh/7.50.html#v2) = ≈крит. 07,48.40a *tau rājaputrau sahasābhyupāyācchāyeva rāhordivi candrasūryau*
+[MBH. 7,1967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1967) = [≈Vulg. 7.50.2](mbh/7.50.html#v2) = ≈krit. 07,48.40a *tau rājaputrau sahasābhyupāyācchāyeva rāhordivi candrasūryau*
 [R. 2,29,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,29,33)
 
 - **RU:** — *abhyupa*

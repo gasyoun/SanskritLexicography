@@ -51,7 +51,7 @@
   <sub>attested</sub>
 
 **Nachtrag-vi-2)** — 2) *upajāyate* entsteht als Folge
-[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](mbh/9.62.html#v22) = ≈крит. 09,61.22c ist zu streichen, da daselbst mit der [ed. Bomb.] *upayātam* gehet nach zu lesen ist.
+[SARVADARŚANAS. 2,7. 3,20.] Z. 9. fg. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Vulg. 9.62.22](mbh/9.62.html#v22) = ≈krit. 09,61.22c ist zu streichen, da daselbst mit der [ed. Bomb.] *upayātam* gehet nach zu lesen ist.
 
 - **RU:** — 2) *upajāyate* возникает как следствие
 [SARVADARŚANAS. 2,7. 3,20.] стк. 9. сл. [MBH. 9,3482](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3482) = [≈Вульг. 9.62.22](mbh/9.62.html#v22) = ≈крит. 09,61.22c следует вычеркнуть, так как там с [Бомбейская ред.] *upayātam* следует за надлежит читать.

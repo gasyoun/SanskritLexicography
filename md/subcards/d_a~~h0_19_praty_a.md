@@ -5,7 +5,7 @@
 
 **1)** — *pratyā* med.
  1) wiederempfangen, — erhalten: *śubhāśubhaṃ karma kṛtaṃ yadanyattadeva pratyādadate svadehe*
-[MBH. 12,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7415) = [≈Вульг. 12.206.27](mbh/12.206.html#v27) = ≈крит. 12,199.27a
+[MBH. 12,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7415) = [≈Vulg. 12.206.27](mbh/12.206.html#v27) = ≈krit. 12,199.27a
 
 - **RU:** — *pratyā* мед.
  1) получать обратно, снова получать: *śubhāśubhaṃ karma kṛtaṃ yadanyattadeva pratyādadate svadehe*
@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **2)** — 2) zurücknehmen so v. a. widerrufen: *na cāhaṃ śaktaḥ śāpaṃ pratyādātum*
-[MBH. 1,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.785) = [≈Вульг. 1.3.120](mbh/1.3.html#v120) = ≈крит. 01,3.124A
+[MBH. 1,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.785) = [≈Vulg. 1.3.120](mbh/1.3.html#v120) = ≈krit. 01,3.124A
 
 - **RU:** — 2) брать назад, так преим. отзывать, отменять: *na cāhaṃ śaktaḥ śāpaṃ pratyādātum*
 [MBH. 1,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.785) = [≈Вульг. 1.3.120](mbh/1.3.html#v120) = ≈крит. 01,3.124A

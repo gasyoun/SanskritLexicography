@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **2)** — 2) üben, vollziehen: *ya eva prathamaḥ kalpastamevābhyācaransaha*
-[MBH. 12,9719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9719) = [≈Вульг. 12.274.15](mbh/12.274.html#v15) = ≈крит. 12,232.10a
+[MBH. 12,9719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9719) = [≈Vulg. 12.274.15](mbh/12.274.html#v15) = ≈krit. 12,232.10a
 
 - **RU:** — 2) совершать, исполнять: *ya eva prathamaḥ kalpastamevābhyācaransaha*
 [MBH. 12,9719.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9719) = [≈Вульг. 12.274.15](mbh/12.274.html#v15) = ≈крит. 12,232.10a

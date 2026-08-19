@@ -23,7 +23,7 @@
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhathum, ūhe*
 [VOP. 8,134.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,134) *ūhiṣe, ūhire, ūhivaṃs, ūhuṣī; vakṣyati*
 [Kār. 6] aus [SIDDH. K.] zu [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) *vahiṣyati*
-[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Вульг. 1.123.40](mbh/1.123.html#v40) = ≈крит. 01,114.31a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Вульг. 1.153.42](mbh/1.153.html#v42) = ≈крит. 01,141.21a
+[MBH. 1,4796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4796) = [≈Vulg. 1.123.40](mbh/1.123.html#v40) = ≈krit. 01,114.31a [6053.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6053) = [≈Vulg. 1.153.42](mbh/1.153.html#v42) = ≈krit. 01,141.21a
 [BHĀG. P. 4,25,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,36)
 [PAÑCAT. ed. orn. 22,21.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?22,21) *voḍhā, voḍhum*
 [P. 6,3,112.](https://ashtadhyayi.com/sutraani/6/3/112) *volhave; ūḍhvā*; pass. *uhyate; ūḍha*
@@ -72,22 +72,22 @@
 [TS. 1,3,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,3,8,2) *vahataṃ* (die Füsse angeredet) *pṛṇato gṛhān*
 [AV. 1,27,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.027.html#av01.027.04) *vaha vāyo niyuto yāhyasmayuḥ*
 [ṚV. 1,135,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.135.html#rv01.135.02) [7,90,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.090.html#rv07.090.01) — *vahanti ye* (*aśvāḥ*) *ratham*
-[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720) = [≈Вульг. 3.42.7](mbh/3.42.html#v7) = ≈крит. 03,43.7a
+[MBH. 3,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1720) = [≈Vulg. 3.42.7](mbh/3.42.html#v7) = ≈krit. 03,43.7a
 [R. GORR. 2,51,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,10) *te hayāḥ — avahanmām*
-[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107) = [≈Вульг. 5.178.80](mbh/5.178.html#v80) = ≈крит. 05,179.16a
+[MBH. 5,7107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7107) = [≈Vulg. 5.178.80](mbh/5.178.html#v80) = ≈krit. 05,179.16a
 [R. 2,45,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,45,11)
 [R. GORR. 2,41,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,41,15) *hayāḥ — vahanti devamādityam*
 [BHĀG. P. 5,21,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,21,15) *puruṣāṇāṃ śatānyaṣṭau mañjūṣāmaṣṭacakrasthāṃ gurvīmūhuḥ kathaṃcana*
 [R. GORR. 1,69,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,4) *uvāha māṃ hiraṇyapuramantikāt . rathena tena mātaliḥ*
 [MBH. 3,12214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12214) *śīghraṃ māṃ vahasva*
-[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) = [≈Вульг. 3.192.39](mbh/3.192.html#v39) = ≈крит. 03,190.44A *vaha māṃ kauravānprati*
-[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) = [≈Вульг. 4.38.19](mbh/4.38.html#v19) = ≈крит. 04,36.17a *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
+[13179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13179) = [≈Vulg. 3.192.39](mbh/3.192.html#v39) = ≈krit. 03,190.44A *vaha māṃ kauravānprati*
+[4,1250.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1250) = [≈Vulg. 4.38.19](mbh/4.38.html#v19) = ≈krit. 04,36.17a *yadanena rathenaiva tvāṃ vaheyaṃ purīṃ punaḥ*
 [R. 2,52,51](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,51) ([51,19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,51,19) [GORR.]). [HARIV. 9136.](https://sanskrit-lexicon-scans.github.io/hariv?9136) *tato māmavahatsūto hayaiḥ*
-[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181) = [≈Вульг. 5.180.19](mbh/5.180.html#v19) = ≈крит. 05,181.18a
+[MBH. 5,7181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7181) = [≈Vulg. 5.180.19](mbh/5.180.html#v19) = ≈krit. 05,181.18a
 [BHĀG. P. 10,1,34](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,1,34) (med.). *tacchiśūnavahadvrajam*
 [VOP. 5,6.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,6) *grāmamajāṃ vahati*
 [SIDDH. K.] zu [P. 1,4,51.](https://ashtadhyayi.com/sutraani/1/4/51) *nahi voḍhuṃ rathaḥ śaktaḥ śarānmama*
-[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) = [≈Вульг. 1.223.4](mbh/1.223.html#v4) = ≈крит. 01,215.4a Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern: *svāhākṛtaṃ vakṣi havyam*
+[MBH. 1,8169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8169) = [≈Vulg. 1.223.4](mbh/1.223.html#v4) = ≈krit. 01,215.4a Agni führt oder geleitet die Gegenstände des Opfers zu den Göttern: *svāhākṛtaṃ vakṣi havyam*
 [ṚV. 2,3,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.11) [3,29,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.029.html#rv03.029.04) [10,15,12.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.015.html#rv10.015.12)
 [AIT. BR. 3,47.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,47) *asyāpo yajñaṃ vahanti*
 [2,20.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,20) [VS. 29,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?29,3) *kati pātrāṇi yajñaṃ vahanti*
@@ -157,8 +157,8 @@
 [5,38,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.038.html#rv05.038.01) [60,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.060.html#rv05.060.07) [8,46,26.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.26) [VS. 27,33.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?27,33) act.: *tā ha tyadvartirūhathuḥ śaśvadaśvaiḥ*
 [6,62,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.062.html#rv06.062.03) *vahannaśvaḥ* ein am Wagen ziehendes Pferd
 [M. 8,146.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,146) *kathamalpaprāṇā vakṣyantīme hayā mama*
-[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) = [≈Вульг. 3.71.15](mbh/3.71.html#v15) = ≈крит. 03,69.14a [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) = [≈Вульг. 3.71.24](mbh/3.71.html#v24) = ≈крит. 03,69.22a *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
-[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) = [≈Вульг. 4.38.2](mbh/4.38.html#v2) = ≈крит. 04,36.2a *hayāśca nāgāśca vahanti deśitāḥ*
+[MBH. 3,2786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2786) = [≈Vulg. 3.71.15](mbh/3.71.html#v15) = ≈krit. 03,69.14a [2795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2795) = [≈Vulg. 3.71.24](mbh/3.71.html#v24) = ≈krit. 03,69.22a *ālikhanta ivākāśamūhuḥ* (*hayāḥ*)
+[4,1233.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1233) = [≈Vulg. 4.38.2](mbh/4.38.html#v2) = ≈krit. 04,36.2a *hayāśca nāgāśca vahanti deśitāḥ*
 [Spr. 463.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?463)
 [R. 2,74,12](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,12) ([76,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,76,17) [GORR.]). *yānaiḥ kiṃkarasaṃyuktairuvāha madhusūdanaḥ* fuhr dahin
 [HARIV. 6952.](https://sanskrit-lexicon-scans.github.io/hariv?6952) *vahate 'yaṃ *
@@ -197,17 +197,17 @@
 **3.3)** — 3) pass. dass.: *uhyāte janā anu somapeyaṃ sukho rathaḥ*
 [ṚV. 1,120,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.120.html#rv01.120.11) *vahaturuhyamānaḥ*
 [AV. 14,2,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.002.html#av14.002.09) *vājibhiruhyamānāḥ*
-[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) = [≈Вульг. 3.269.6](mbh/3.269.html#v6) = ≈крит. 03,253.6c *uhyanto vājibhirdrutam*
-[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) = [≈Вульг. 1.133.7](mbh/1.133.html#v7) = ≈крит. 01,123.64a *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
+[MBH. 3,15672.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15672) = [≈Vulg. 3.269.6](mbh/3.269.html#v6) = ≈krit. 03,253.6c *uhyanto vājibhirdrutam*
+[1,5337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5337) = [≈Vulg. 1.133.7](mbh/1.133.html#v7) = ≈krit. 01,123.64a *uhyamāna iva vāhanocitaḥ pādacāramapi na vyabhāvayat*
 [RAGH. 11,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,10) *yugyaiḥ kṣitibhujāṃ yogyairuhyamānāḥ* (so ist zu lesen)
 [RĀJA-TAR. 5,33.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,33) *rathamuhyantaṃ divyaturagaiḥ*
 [HARIV. 6198.](https://sanskrit-lexicon-scans.github.io/hariv?6198) *sa ratho bhrājate 'tyarthamuhyamāno raṇe tadā . uhyamānamivākāśe vivānaṃ pāṇḍurairhayaiḥ* (so die [ed. Bomb.])
-[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) = [≈Вульг. 7.19.5](mbh/7.19.html#v5) = ≈крит. 07,18.5c *uhyamāna ivākāśe kālameghena candramāḥ*
+[MBH. 7,757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.757) = [≈Vulg. 7.19.5](mbh/7.19.html#v5) = ≈krit. 07,18.5c *uhyamāna ivākāśe kālameghena candramāḥ*
 [HARIV. 3757.](https://sanskrit-lexicon-scans.github.io/hariv?3757) *yāti viyatyuhyamāneva (ulkā)*
 [VARĀH. BṚH. S. 33,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,7) [24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?33,24) *tena plavena sa yayāvuhyamāno mahītale* zu Schiffe fahrend
 [MĀRK. P. 74,12.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?74,12) *srotasohyamānasya* (so ist zu lesen) vom Strome getrieben werdend
 [VIKR. 24.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?24) *mañjūṣāgato garbhastaraṃgairuhyamānakaḥ*
-[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) = [≈Вульг. 3.308.26](mbh/3.308.html#v26) = ≈крит. 03,292.26c *vedaśāstrārṇave ghora uhyamānā itastataḥ*
+[MBH. 3,17151.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17151) = [≈Vulg. 3.308.26](mbh/3.308.html#v26) = ≈krit. 03,292.26c *vedaśāstrārṇave ghora uhyamānā itastataḥ*
 [Verz. d. Oxf. H. 91,a,2.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *guṇaughairuhyamānaḥ*
 [MAITRYUP. 3,2. 6,30.]
 

@@ -10,15 +10,15 @@
 [ṚV. 9,68,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.068.html#rv09.068.05) *mahadvi jajñe akṣaraṃ pade goḥ*
 [3,55,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.055.html#rv03.055.01) *amṛtam*
 [9,74,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.074.html#rv09.074.04) *varuṇasya bhāryā yā jyeṣṭhā śukrāddevī vyajāyata*
-[MBH. 1,2616.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2616) = [≈Вульг. 1.66.52](mbh/1.66.html#v52) = ≈крит. 01,60.51c *andha eva vyājāyata*
-[2720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2720) = [≈Вульг. 1.67.84](mbh/1.67.html#v84) = ≈крит. 01,61.78c [R. 1,16,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,20) *sādhyāyāṃ vai vyajāyata*
+[MBH. 1,2616.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2616) = [≈Vulg. 1.66.52](mbh/1.66.html#v52) = ≈krit. 01,60.51c *andha eva vyājāyata*
+[2720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2720) = [≈Vulg. 1.67.84](mbh/1.67.html#v84) = ≈krit. 01,61.78c [R. 1,16,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,20) *sādhyāyāṃ vai vyajāyata*
 [HARIV. 11540.](https://sanskrit-lexicon-scans.github.io/hariv?11540) *vijajñivān . hrasvo 'timātraḥ puruṣaḥ*
 [HARIV. 308.](https://sanskrit-lexicon-scans.github.io/hariv?308) *tasya — mūrghni dhūmo vyajāyata*
 [R. 1,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,8) *vijāta = jāta* geboren
 [H. an. 3,301.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,301)
-[MBH. 12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) = [≈Вульг. 12.29.149](mbh/12.29.html#v149) = ≈крит. 12,29.141a *duḥkhānmumūrṣā me vyajāyata*
-[2,1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1899) = [≈Вульг. 2.52.43](mbh/2.52.html#v43) = ≈крит. 02,48.36c *mānātkrodho vyajāyata*
-[3,8494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8494) = [≈Вульг. 3.94.6](mbh/3.94.html#v6) = ≈крит. 03,92.6a
+[MBH. 12,1042.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1042) = [≈Vulg. 12.29.149](mbh/12.29.html#v149) = ≈krit. 12,29.141a *duḥkhānmumūrṣā me vyajāyata*
+[2,1899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1899) = [≈Vulg. 2.52.43](mbh/2.52.html#v43) = ≈krit. 02,48.36c *mānātkrodho vyajāyata*
+[3,8494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8494) = [≈Vulg. 3.94.6](mbh/3.94.html#v6) = ≈krit. 03,92.6a
 
 - **RU:** — *vi*
  1) рождаться, возникать: *narāśaṃso bhavati yadvijāyate*
@@ -39,7 +39,7 @@
   <sub>attested</sub>
 
 **2)** — 2) sich verwandeln in, werden zu: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
-[MBH. 5,7368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7368) = [≈Вульг. 5.186.41](mbh/5.186.html#v41) = ≈крит. 05,187.40c *vijāta = vikṛta*
+[MBH. 5,7368.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7368) = [≈Vulg. 5.186.41](mbh/5.186.html#v41) = ≈krit. 05,187.40c *vijāta = vikṛta*
 [H. an. 3,301.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,301)
 
 - **RU:** — 2) превращаться во что-л., становиться: *sā kanyā tapasā tena dehārdhena vyajāyata . nadī ca rājanvatseṣu kanyā caivābhavattadā ..*
@@ -58,7 +58,7 @@
 [3,3,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,3,3,8) [4,5,5,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,5,6) *kāmamā vijanitoḥ saṃbhavema*
 [TS. 2,5,1,5.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,1,5) — *tasmātputraṃ vyajāyata*
 [R. 1,70,35.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,35) *yakṣī putraṃ vyajāyata*
-[27,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,27,8) [39,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,17) [3,20,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,28) [32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,32) [MBH. 1,2554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2554) = [≈Вульг. 1.65.46](mbh/1.65.html#v46) = ≈крит. 01,59.44e [2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2621) = [≈Вульг. 1.66.57](mbh/1.66.html#v57) = ≈крит. 01,60.55a [3762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3762) = [≈Вульг. 1.95.9](mbh/1.95.html#v9) = ≈крит. 01,90.8C [3,8843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8843) [HARIV. 11535.](https://sanskrit-lexicon-scans.github.io/hariv?11535) [BHĀG. P. 9,9,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,39) *samāṃ samāṃ vijāyate*
+[27,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,27,8) [39,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,17) [3,20,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,28) [32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,20,32) [MBH. 1,2554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2554) = [≈Vulg. 1.65.46](mbh/1.65.html#v46) = ≈krit. 01,59.44e [2621.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2621) = [≈Vulg. 1.66.57](mbh/1.66.html#v57) = ≈krit. 01,60.55a [3762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3762) = [≈Vulg. 1.95.9](mbh/1.95.html#v9) = ≈krit. 01,90.8C [3,8843.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8843) [HARIV. 11535.](https://sanskrit-lexicon-scans.github.io/hariv?11535) [BHĀG. P. 9,9,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,39) *samāṃ samāṃ vijāyate*
 [P. 5,2,12.](https://ashtadhyayi.com/sutraani/5/2/12)
 [H. 1271.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1271) *vijātā* die geboren hat
 [H. 539.](https://sanskrit-lexicon-scans.github.io/abch2/app1?539)

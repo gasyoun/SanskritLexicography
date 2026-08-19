@@ -6,7 +6,7 @@
 **desid-main)** — desid. *yiyakṣati* zu opfern verlangen
 Schol. zu [P. 1,2,10.](https://ashtadhyayi.com/sutraani/1/2/10) *cāṇḍālasya yiyakṣataḥ*
 [R. GORR. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,61,14) *yiyakṣamāṇa*
-[MBH. 2,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.59) = [≈Вульг. 2.3.2](mbh/2.3.html#v2) = ≈крит. 02,3.2a
+[MBH. 2,59.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.59) = [≈Vulg. 2.3.2](mbh/2.3.html#v2) = ≈krit. 02,3.2a
 
 - **RU:** — desid. *yiyakṣati* желать принести жертву
 схол. к [P. 1,2,10.](https://ashtadhyayi.com/sutraani/1/2/10) *cāṇḍālasya yiyakṣataḥ*

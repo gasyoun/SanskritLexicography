@@ -8,7 +8,7 @@
 [4,19,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.019.html#rv04.019.04) [10,8,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.008.html#rv10.008.09) [69,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.069.html#rv10.069.11) *tīkṣṇeṣavo dūrādava bhindantyenam*
 [AV. 5,18,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.018.html#av05.018.09) *carma*
 [TS. 7,5,10,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,5,10,1) *dantidantāvabhinna*
-[MBH. 6,1774.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1774) = [≈Вульг. 6.46.18](mbh/6.46.html#v18) = ≈крит. 06,44.18a *(agnihotram) yatrāvabhinnaṃ syāt* zersprungen
+[MBH. 6,1774.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1774) = [≈Vulg. 6.46.18](mbh/6.46.html#v18) = ≈krit. 06,44.18a *(agnihotram) yatrāvabhinnaṃ syāt* zersprungen
 [ŚAT. BR. 12,4,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,8)
 
 - **RU:** — *ava* раскалывать, пронзать: *ava tmanā dhṛṣatā śambaraṃ bhinat*

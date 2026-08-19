@@ -16,7 +16,7 @@
   <sub>attested</sub>
 
 **3)** [BHĀG. P. 6,6,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,6,43) — caus. entehren, mit Geringachtung behandeln: *vimānita*
-[MBH. 1,1257.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1257) = [≈Вульг. 1.25.14](mbh/1.25.html#v14) = ≈крит. 01,21.14c [5,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2041) = [≈Вульг. 5.51.23](mbh/5.51.html#v23) = ≈крит. 05,50.23c [12,4158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4158) = [≈Вульг. 12.113.5](mbh/12.113.html#v5) = ≈крит. 12,114.5a [13,6284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6284) = [≈Вульг. 13.138.9](mbh/13.138.html#v9) = крит. —
+[MBH. 1,1257.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1257) = [≈Vulg. 1.25.14](mbh/1.25.html#v14) = ≈krit. 01,21.14c [5,2041.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2041) = [≈Vulg. 5.51.23](mbh/5.51.html#v23) = ≈krit. 05,50.23c [12,4158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4158) = [≈Vulg. 12.113.5](mbh/12.113.html#v5) = ≈krit. 12,114.5a [13,6284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6284) = [≈Vulg. 13.138.9](mbh/13.138.html#v9) = krit. —
 [R. GORR. 2,9,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,9,7) [6,82,111.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,111)
 [MṚCCH. 19,14.] *strībhirvimānitānāṃ kāpuruṣāṇāṃ vivardhate *
 

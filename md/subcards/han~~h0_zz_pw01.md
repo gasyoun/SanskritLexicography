@@ -219,7 +219,7 @@
 - **RU:** — e〉 противоречащий, находящийся в противоречии.
   <sub>attested</sub>
 
-**vi-han-4f)** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) = [≈Вульг. 1.2.139](mbh/1.2.html#v139) = ≈крит. 01,2.102c fehlerhaft für *vyāhṛta*.
+**vi-han-4f)** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) = [≈Vulg. 1.2.139](mbh/1.2.html#v139) = ≈krit. 01,2.102c fehlerhaft für *vyāhṛta*.
 
 - **RU:** — f〉 [MBH. 1,368](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.368) = [≈Вульг. 1.2.139](mbh/1.2.html#v139) = ≈крит. 01,2.102c ошибочно вм. *vyāhṛta*.
   <sub>lexicographic</sub>
@@ -229,7 +229,7 @@
 - **RU:** — Caus. см. *ghātay*.
   <sub>lexicographic</sub>
 
-**vi-han-corr)** — Mit *prativyā* nur scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Вульг. 12.100.43](mbh/12.100.html#v43) = ≈крит. 12,101.40a, da hier *pratigāhanti* die richtige Lesart ist.
+**vi-han-corr)** — Mit *prativyā* nur scheinbar [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Vulg. 12.100.43](mbh/12.100.html#v43) = ≈krit. 12,101.40a, da hier *pratigāhanti* die richtige Lesart ist.
 
 - **RU:** — С *prativyā* лишь по видимости [MBH. 12,3724](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3724) = [≈Вульг. 12.100.43](mbh/12.100.html#v43) = ≈крит. 12,101.40a, так как здесь правильным чтением является *pratigāhanti*.
   <sub>lexicographic</sub>

@@ -7,7 +7,7 @@
  1) zusammenbinden, verknüpfen: *saṃbaddhānta*
 [ŚAT. BR. 3,2,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,1,2)
 [KĀTY. ŚR. 1,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?1,3,3) *śarīraṃ ca mṛtasyaikaṃ samabadhnanta pāṇḍavāḥ* banden an
-[MBH. 4,172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.172) = [≈Вульг. 4.5.31](mbh/4.5.html#v31) = ≈крит. 04,5.27a *vartmāni saṃbadhyante* kleben zusammen
+[MBH. 4,172.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.172) = [≈Vulg. 4.5.31](mbh/4.5.html#v31) = ≈krit. 04,5.27a *vartmāni saṃbadhyante* kleben zusammen
 [SUŚR. 2,309,10.] *anyo'nyasaṃbaddha* unter sich verbunden
 [58,15.] *yathā chāyātapau nityaṃ susaṃbaddhau parasparam*
 [Spr. 2309.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2309) *yāyātsaṃbaddhasainyaughaḥ* mit geschlossener Heeresmacht
@@ -16,28 +16,28 @@
 *sā (gaṅgā) saṃbadhyamānārkaraśmisaṃgatipāvanī* sich verbindend
 [MĀRK. P. 56,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?56,2) *dantauṣṭhapuṭasaṃbaddhaṃ vaktraṃ sāpi tadākarot* geschlossen
 [R. 5,56,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,27) *sauptikaiṣīkasaṃbaddhe parvaṇi* im P., der sowohl das S. als das Ai. enthält,
-[MBH. 1,581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.581) = [≈Вульг. 1.2.352](mbh/1.2.html#v352) = ≈крит. 01,2.219a *viniṣpeturasaṃbaddhāḥ kecittatra śilīmukhāḥ* unverbunden d. i. einzeln
+[MBH. 1,581.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.581) = [≈Vulg. 1.2.352](mbh/1.2.html#v352) = ≈krit. 01,2.219a *viniṣpeturasaṃbaddhāḥ kecittatra śilīmukhāḥ* unverbunden d. i. einzeln
 [R. 3,31,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,20) *ityete trayo 'rthāścakārātsaṃbadhyante*
 Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70) *nadīmāśramasaṃbaddhām* in Verbindung stehend mit
-[MBH. 1,2871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2871) = [≈Вульг. 1.70.28](mbh/1.70.html#v28) = ≈крит. 01,64.23a *sarvaṃ ca tilasaṃbaddhaṃ nādyādastamite ravau*
+[MBH. 1,2871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2871) = [≈Vulg. 1.70.28](mbh/1.70.html#v28) = ≈krit. 01,64.23a *sarvaṃ ca tilasaṃbaddhaṃ nādyādastamite ravau*
 [M. 4,75.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,75) *saṃbaddhāḥ kṣitipāṃsubhiḥ* so v. a. bedeckt
 [R. 6,94,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,2) *snehasaṃbaddha* von Liebe erfüllt
 [BHĀG. P. 1,10,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,13) *dharmakāmārthasaṃbaddha (rāmāyaṇa)*
 [R. GORR. 1,2,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,2,45) *hetubhirnyāyasaṃbaddhaiḥ*
 [3,56,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,31) *vedasaṃbaddhāḥ (kathāḥ)* in Beziehung stehend zu, Bezug habend auf
-[MBH. 13,1781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1781) = [≈Вульг. 13.26.23](mbh/13.26.html#v23) = ≈крит. 13,27.22a *rāmasaṃbaddha (ākhyāna)*
+[MBH. 13,1781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1781) = [≈Vulg. 13.26.23](mbh/13.26.html#v23) = ≈krit. 13,27.22a *rāmasaṃbaddha (ākhyāna)*
 [R. GORR. 1,4,147.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,4,147) *devānāmeṣa vai jayaḥ — purāṇo vedasaṃbaddhaḥ* in den Veda enthalten, erwähnt
 [HARIV. 12605.](https://sanskrit-lexicon-scans.github.io/hariv?12605) *saṃbaddha* angeheftet so v. a. da seiend, vorhanden, sich befindend: *kusumamiva lobhanīyaṃ yauvanamaṅgeṣu saṃbaddham* (v. l. für *saṃnaddham)*
 [ŚĀK. 20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?20) *(tapovanāni) saṃbaddhavaikhānasakanyakāni* (nach dem Schol. = *kṛtasakhya)*
 [RAGH. 14,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,28) *saṃbaddhadarpa* _adj._
 [MBH. 3,12380.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12380) *karmāṇyakuhakārthāni yeṣāṃ vācaśca sūnṛtāḥ . yeṣāmarthāśca saṃbaddhā durgāṇyatitaranti te*
-[12,4064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4064) = [≈Вульг. 12.111.22](mbh/12.111.html#v22) = ≈крит. 12,112.22c *padāntāditi saṃbaddhameṅgrahaṇamanuvartate*
+[12,4064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4064) = [≈Vulg. 12.111.22](mbh/12.111.html#v22) = ≈krit. 12,112.22c *padāntāditi saṃbaddhameṅgrahaṇamanuvartate*
 [PAT.] zu [P. 6,1,115.](https://ashtadhyayi.com/sutraani/6/1/115) *samartha = saṃbaddhārtha*
 [AK. 3,4,15,89.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,15,89) pass. verbunden werden so v. a. gehören zu, zu ergänzen sein: *uttarapadagrahaṇaṃ bhagaśabdenaiva saṃbadhyate na tu pratyekam*
 [KĀŚ.] zu [P. 5,1,9.](https://ashtadhyayi.com/sutraani/5/1/9) Schol. zu [P. 2,4,25.](https://ashtadhyayi.com/sutraani/2/4/25) [4,2.](https://ashtadhyayi.com/sutraani/2/4/2) *vako dālbhya iti vakṣyamāṇena saṃbadhyate*
 [ŚAṂK.] zu [CHĀND. UP. 1,2,10.] [SĀH. D. 19,15.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?19,15) *ita ārabhyāgrimeṣu sūtreṣu catvāro 'rthāḥ saṃbadhyante* Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70)
 *asaṃbaddha* in keiner näheren Beziehung stehend, fern stehend, der Nichts mit Jmd oder Etwas zu schaffen hat
-[MBH. 3,1297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1297) = [≈Вульг. 3.33.34](mbh/3.33.html#v34) = ≈крит. 03,34.34c *asaṃbaddhakṛtaścaiva vyavahāraḥ*
+[MBH. 3,1297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1297) = [≈Vulg. 3.33.34](mbh/3.33.html#v34) = ≈krit. 03,34.34c *asaṃbaddhakṛtaścaiva vyavahāraḥ*
 [M. 8,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,163)
 [YĀJÑ. 2,32.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,32)
 [MṚCCH. 146,6] (u. *asaṃbaddha* falsch erklärt). unzusammenhängend, ungereimt, keinen Sinn habend: *˚pralāpa*
@@ -45,7 +45,7 @@ Schol. zu [P. 4,2,70.](https://ashtadhyayi.com/sutraani/4/2/70) *nadīmāśramas
 [MṚCCH. 146,19.] *nāman*
 [MĀRK. P. 26,14. fg.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?26,14) *sukhabaddhamasaṃbaddhaṃ tathā hyeṣa prabhāṣate* (von einem Kokila)
 [R. 2,96,14](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,14) ([105,13](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,13) [GORR.]) *saṃbaddham* wohl _adv._ in der folgenden Stelle: *avādayanta gandharvā vāditraṃ sumanoharam . jaguścāpsaraso rājño yaśaḥ saṃbaddhameva ca ..* sangen dazu
-[MBH. 9,3443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3443) = [≈Вульг. 9.61.63](mbh/9.61.html#v63) = крит. —
+[MBH. 9,3443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3443) = [≈Vulg. 9.61.63](mbh/9.61.html#v63) = krit. —
 
 - **RU:** — *sam*
  1) связывать вместе, соединять: *saṃbaddhānta*

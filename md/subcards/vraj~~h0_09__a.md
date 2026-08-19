@@ -12,10 +12,10 @@
 [32. 34.] *surākarmasvāvrājamāsīta* (*āvrajyāvrajya* Comm.)
 [LĀṬY. 5,4,11. 8,10.] *pratyudramya tvāvrajataḥ* herankommend
 [M. 2,196.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,196) *yadyanyo 'tithirāvrajet*
-[3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [YĀJÑ. 1,65.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,65) [MBH. 3,10081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10081) [4,1209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1209) = [≈Вульг. 4.37.14](mbh/4.37.html#v14) = ≈крит. 04,35.8a *gṛham* kommen in
+[3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [YĀJÑ. 1,65.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,65) [MBH. 3,10081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10081) [4,1209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1209) = [≈Vulg. 4.37.14](mbh/4.37.html#v14) = ≈krit. 04,35.8a *gṛham* kommen in
 [M. 3,111.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,111) *kāśyam* kommen —, sich begeben zu
 [KAUṢ. UP. 4,1.]
-[MBH. 3,2277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2277) = [≈Вульг. 3.59.1](mbh/3.59.html#v1) = ≈крит. 03,56.1a [4,215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.215) = [≈Вульг. 4.7.1](mbh/4.7.html#v1) = ≈крит. 04,6.1a
+[MBH. 3,2277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2277) = [≈Vulg. 3.59.1](mbh/3.59.html#v1) = ≈krit. 03,56.1a [4,215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.215) = [≈Vulg. 4.7.1](mbh/4.7.html#v1) = ≈krit. 04,6.1a
 [BHĀG. P. 3,19,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,19,24) *upadraṣṭāram*
 [NṚS. TĀP. UP.] in [Ind. St. 9,166.] *pauruṣīṃ gatim* gelangen zu
 [BHĀG. P. 8,22,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,22,25)
@@ -43,7 +43,7 @@
 [6,102,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,102,31) [BHĀG. P. 9,16,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,16,1) *saṃsṛtim*
 [1,5,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,19) von einem Klystier, das wieder abgeht,
 [SUŚR. 2,211,12.] Häufig mit *punar* verbunden: *ko nāma jīvanpunarāvrajet*
-[MBH. 3,10273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10273) = [≈Вульг. 3.117.14](mbh/3.117.html#v14) = ≈крит. 03,117.14a
+[MBH. 3,10273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10273) = [≈Vulg. 3.117.14](mbh/3.117.html#v14) = ≈krit. 03,117.14a
 [R. 2,21,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,61) [5,1,22](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,22) [56,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,31) *atra*
 [BHĀG. P. 3,30,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,30,35) *purīm*
 [10,52,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,52,5) *sattram*

@@ -11,7 +11,7 @@
   <sub>attested</sub>
 
 **1)** 1) Jmd nachziehen, Jmd an einen Ort folgen; mit acc. der Person
-[MBH. 5,664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.664) = [≈Вульг. 5.22.20](mbh/5.22.html#v20) = ≈крит. 05,22.19c [12,6516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6516) = [≈Вульг. 12.177.13](mbh/12.177.html#v13) = ≈крит. 12,171.13a [10598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10598)
+[MBH. 5,664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.664) = [≈Vulg. 5.22.20](mbh/5.22.html#v20) = ≈krit. 05,22.19c [12,6516.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6516) = [≈Vulg. 12.177.13](mbh/12.177.html#v13) = ≈krit. 12,171.13a [10598.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10598)
 [R. 2,37,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,37,26) [88,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,23) [25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,25) ([96,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,96,27) [GORR.]). *anūṣito guruṃ bhavān, anūṣito gururbhavatā, anūṣitaṃ* (impers.) *tvayā*
 [P. 3,4,72](https://ashtadhyayi.com/sutraani/3/4/72), Schol.
 
@@ -44,7 +44,7 @@
   <sub>attested</sub>
 
 **4)** — 4) *anuvatsyate*
-[MBH. 3,14758](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14758) = [≈Вульг. 3.236.18](mbh/3.236.html#v18) = ≈крит. 03,225.18c fehlerhaft für *anuvartsyate*, wie die [ed. Bomb.] liest.
+[MBH. 3,14758](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14758) = [≈Vulg. 3.236.18](mbh/3.236.html#v18) = ≈krit. 03,225.18c fehlerhaft für *anuvartsyate*, wie die [ed. Bomb.] liest.
 
 - **RU:** 4) *anuvatsyate*
 [MBH. 3,14758](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14758) = [≈Вульг. 3.236.18](mbh/3.236.html#v18) = ≈крит. 03,225.18c ошибочно вм. *anuvartsyate*, как читает [Бомбейская ред.].

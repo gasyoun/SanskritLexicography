@@ -46,32 +46,32 @@ Sch.), *maṃsthās, amaṃsata* 3. sg.; *maṃsante, maṃsīmahi, maṃsīṣ�
 [ĀŚV. GṚHY. 1,1,4.] — *yadi nānyathā manyase*
 [HIT. 21,22.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?21,22) *manyate pāpakaṃ kṛtvā na kaścidvetti māmiti*
 [Spr. 2124.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2124) [2126.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2126) *niyojyamiti menire*
-[MBH. 5,6024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6024) = [≈Вульг. 5.176.1](mbh/5.176.html#v1) = ≈крит. 05,174.1a
+[MBH. 5,6024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6024) = [≈Vulg. 5.176.1](mbh/5.176.html#v1) = ≈krit. 05,174.1a
 [R. 1,9,36.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,36)
 [DAŚ. 2,14.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?2,14)
 [KATHĀS. 13,99.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,99) *tanmanye nārthakāmau dharmasya śatatamīmapi kalāṃ spṛśata iti*
 [DAŚAK.] in [BENF. Chr. 182,15.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?182) [PAÑCAT. 18,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?18,17) *saṃjñeyamiti manvānaḥ*
 [MĀRK. P. 77,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?77,24) *eko 'hamasmītyātmānaṃ yattvaṃ kalyāṇa manyase* wenn du von dir glaubst
 [Spr. 563.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?563) *kṛtamityeva tatkāryaṃ menire*
-[MBH. 1,7709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7709) = [≈Вульг. 1.209.23](mbh/1.209.html#v23) = ≈крит. 01,201.22a *tatkiṃ manyase rājaputri mṛṣodyaṃ taditi*
+[MBH. 1,7709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7709) = [≈Vulg. 1.209.23](mbh/1.209.html#v23) = ≈krit. 01,201.22a *tatkiṃ manyase rājaputri mṛṣodyaṃ taditi*
 [UTTARARĀMAC. 81,2.] *manye* gaṇa *cādi* zu [P. 1,4,57.](https://ashtadhyayi.com/sutraani/1/4/57)
 eingeschoben oder vorgesetzt ohne Einfluss auf die Construction (also auch ohne *iti): nūnaṃ manye na doṣo 'sti naiṣadhasya*
-[MBH. 3,2288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2288) = [≈Вульг. 3.59.12](mbh/3.59.html#v12) = ≈крит. 03,56.12a
+[MBH. 3,2288.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2288) = [≈Vulg. 3.59.12](mbh/3.59.html#v12) = ≈krit. 03,56.12a
 [R. 1,57,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,8)
 [Spr. 30.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?30) [294.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?294) [783.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?783) [1823.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1823) [2959.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2959) [3189.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3189) [4237.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4237)
 [VID. 272.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?272)
 [DHŪRTAS. in LA. 72,13. 83,10. 92,1.] ironisch [P. 1,4,106.](https://ashtadhyayi.com/sutraani/1/4/106) [8,1,46](https://ashtadhyayi.com/sutraani/8/1/46) (Einfluss auf den Ton des nachfolgenden fut.). *ehi manye odanaṃ bhokṣyase bhuktaḥ so 'tithibhiḥ* Schol. *ahaṃ tava priyā manye yenaivaṃ tvaṃ prabhāṣase*
 [R. 3,51,25.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,25) — *hato cenmanyate hantum*
 [KAṬHOP. 2,19.] *prāptakālamamanyata* er glaubte, dass die Zeit gekommen sei,
-[MBH. 3,2206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2206) = [≈Вульг. 3.57.15](mbh/3.57.html#v15) = ≈крит. 03,54.14c [2261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2261) *saṃtānaṃ menire* glaubten an, erwarteten
+[MBH. 3,2206.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2206) = [≈Vulg. 3.57.15](mbh/3.57.html#v15) = ≈krit. 03,54.14c [2261.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2261) *saṃtānaṃ menire* glaubten an, erwarteten
 [R. 1,15,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,15,24) *śarīratyāgamātreṇa śuddhilābhamamanyata*
 [RAGH. 12,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,10) *dhruvasiddherāpa yathārthanāmnaḥ siddhiṃ na manyate*
 [MĀLAV. 47,22.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?47,22) *pakṣapātamatra devī manyate* vermuthet
 [12,3.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?12,3) [KATHĀS. 37,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,11) *sāṃvartakamamaṃsata*
 [BHĀG. P. 1,7,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,31) *prāyopāsanayā śāntiṃ manvānaḥ*
 [BHAṬṬ. 7,73.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,73) *kiṃ bahu manyase* so v. a. wozu stellst du grosse Betrachtungen an?
-[MBH. 13,44](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.44) = [≈Вульг. 13.1.44](mbh/13.1.html#v44) = ≈крит. 13,1.37a; vgl. *bhāṣase kiṃ bahu*
-[47.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.47) = [≈Вульг. 13.1.47](mbh/13.1.html#v47) = ≈крит. 13,1.40a
+[MBH. 13,44](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.44) = [≈Vulg. 13.1.44](mbh/13.1.html#v44) = ≈krit. 13,1.37a; vgl. *bhāṣase kiṃ bahu*
+[47.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.47) = [≈Vulg. 13.1.47](mbh/13.1.html#v47) = ≈krit. 13,1.40a
 
 - **RU:** 1) думать, полагать, воображать, представлять себе, предполагать, считать нужным: *yanna marā iti manyase*
 [ṚV. 8,82,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.082.html#rv08.082.05) *ya *
@@ -120,9 +120,9 @@ eingeschoben oder vorgesetzt ohne Einfluss auf die Construction (also auch ohne 
 [7,88,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.088.html#rv07.088.02) [ŚAT. BR. 1,5,3,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,7) [6,2,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,11) *mariṣyantaṃ cedyajamānaṃ manyeta*
 [12,5,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,2,1) *ciraṃ tanmene yadvāsaḥ paryadhāsyata* es schien ihm zu lange das Gewand zuvor umzunehmen
 [11,5,1,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,1,4) [AIT. BR. 3,27.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,27) [36.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,36) [48.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?3,48) *na te kuśalaṃ menire*
-[7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18) [KAṬHOP. 2,13.] [M. 4,248.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,248) [7,170.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,170) [171.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,171) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,173) [9,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,61) [BHAG. 2,26.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,26) [MBH. 1,5971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5971) = [≈Вульг. 1.151.41](mbh/1.151.html#v41) = крит. — [5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5996) = [≈Вульг. 1.152.21](mbh/1.152.html#v21) = ≈крит. 01,139.17a [6034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6034) = [≈Вульг. 1.153.23](mbh/1.153.html#v23) = ≈крит. 01,141.2a [6040.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6040) = [≈Вульг. 1.153.29](mbh/1.153.html#v29) = ≈крит. 01,141.8c [2,1987.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1987) = [≈Вульг. 2.57.1](mbh/2.57.html#v1) = ≈крит. 02,51.22a [3,2345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2345) = [≈Вульг. 3.62.13](mbh/3.62.html#v13) = ≈крит. 03,54.15a [2789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2789) = [≈Вульг. 3.71.18](mbh/3.71.html#v18) = ≈крит. 03,69.16c [5,5425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5425) = [≈Вульг. 5.160.101](mbh/5.160.html#v101) = ≈крит. 05,158.18a *asya duḥkhasya cotpattiṃ* (so die [ed. Bomb.]) *bhīṣmameveha manyate*
-[6079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6079) = [≈Вульг. 5.176.56](mbh/5.176.html#v56) = ≈крит. 05,175.27a *tamekaṃ dviradaṃ saṃkhye menire śataśo dvipān*
-[7,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1173) = [≈Вульг. 7.26.47](mbh/7.26.html#v47) = ≈крит. 07,25.40a *nahi tulyaṃ balaṃ manye mama rājñā*
+[7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18) [KAṬHOP. 2,13.] [M. 4,248.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,248) [7,170.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,170) [171.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,171) [173.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,173) [9,61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,61) [BHAG. 2,26.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,26) [MBH. 1,5971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5971) = [≈Vulg. 1.151.41](mbh/1.151.html#v41) = krit. — [5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5996) = [≈Vulg. 1.152.21](mbh/1.152.html#v21) = ≈krit. 01,139.17a [6034.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6034) = [≈Vulg. 1.153.23](mbh/1.153.html#v23) = ≈krit. 01,141.2a [6040.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6040) = [≈Vulg. 1.153.29](mbh/1.153.html#v29) = ≈krit. 01,141.8c [2,1987.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1987) = [≈Vulg. 2.57.1](mbh/2.57.html#v1) = ≈krit. 02,51.22a [3,2345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2345) = [≈Vulg. 3.62.13](mbh/3.62.html#v13) = ≈krit. 03,54.15a [2789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2789) = [≈Vulg. 3.71.18](mbh/3.71.html#v18) = ≈krit. 03,69.16c [5,5425.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5425) = [≈Vulg. 5.160.101](mbh/5.160.html#v101) = ≈krit. 05,158.18a *asya duḥkhasya cotpattiṃ* (so die [ed. Bomb.]) *bhīṣmameveha manyate*
+[6079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6079) = [≈Vulg. 5.176.56](mbh/5.176.html#v56) = ≈krit. 05,175.27a *tamekaṃ dviradaṃ saṃkhye menire śataśo dvipān*
+[7,1173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1173) = [≈Vulg. 7.26.47](mbh/7.26.html#v47) = ≈krit. 07,25.40a *nahi tulyaṃ balaṃ manye mama rājñā*
 [R. 1,54,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,54,11) [55,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,55,20) [61,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,20)
 [Spr. 69.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?69) [1995.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1995) [2125.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2125) [2820.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2820) [4385.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4385) [5382.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5382)
 [ŚĀK. 104,9.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?104,9)
@@ -132,15 +132,15 @@ eingeschoben oder vorgesetzt ohne Einfluss auf die Construction (also auch ohne 
 [VID. 76.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?76)
 [BHĀG. P. 3,23,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,30) [BRAHMA-P. in LA. (II) 56,13.] *na* (sc. *kiṃcit) sutānmanyate param*
 [R. 2,74,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,22) *kṣetrajñaṃ tvāṃ tāta manyāma sarve*
-[MBH. 1,3612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3612) = [≈Вульг. 1.90.13](mbh/1.90.html#v13) = ≈крит. 01,85.13c *manyanti*
-[3,13444.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13444) = [≈Вульг. 3.200.95](mbh/3.200.html#v95) = крит. — [Spr. 2932.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2932) *manyāmaḥ*
+[MBH. 1,3612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3612) = [≈Vulg. 1.90.13](mbh/1.90.html#v13) = ≈krit. 01,85.13c *manyanti*
+[3,13444.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13444) = [≈Vulg. 3.200.95](mbh/3.200.html#v95) = krit. — [Spr. 2932.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2932) *manyāmaḥ*
 [MĀRK. P. 69,55.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?69,55) *amanyat*
 [21,99.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?21,99) *manute*
 [BHĀG. P. 1,7,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,5) [4,27,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,4)
 [Spr. 2357.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2357) *amanuta* (so ist mit der [ed. Calc.] st. *anumata* zu lesen)
 [RĀJA-TAR. 2,168.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,168) *manvahe*
 [KATHĀS. 45,367.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,367) *manvāna*
-[MBH. 3,12069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12069) = [≈Вульг. 3.168.43](mbh/3.168.html#v43) = крит. — [12087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12087) = [≈Вульг. 3.168.61](mbh/3.168.html#v61) = ≈крит. 03,164.58c
+[MBH. 3,12069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12069) = [≈Vulg. 3.168.43](mbh/3.168.html#v43) = krit. — [12087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12087) = [≈Vulg. 3.168.61](mbh/3.168.html#v61) = ≈krit. 03,164.58c
 [KATHĀS. 19,38.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,38)
 [BHAṬṬ. 6,87.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,87) *amaṃsta*
 [RAGH. 3,27.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,27) [6,84.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,84)
@@ -163,22 +163,22 @@ eingeschoben oder vorgesetzt ohne Einfluss auf die Construction (also auch ohne 
 [KATHĀS. 40,23.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,23) *hato 'smi yadi māmevaṃ bhagavānapi manyate*
 [R. 2,90,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,15) *mene janma nijaṃ punaḥ*
 [29,174.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,29,174) *na māmarhasi — anyathā mantum (dhyātum*
-[MBH. 3,1857](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1857) = [≈Вульг. 3.46.40](mbh/3.46.html#v40) = крит. —) für Jemand anders halten, verkennen
+[MBH. 3,1857](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1857) = [≈Vulg. 3.46.40](mbh/3.46.html#v40) = krit. —) für Jemand anders halten, verkennen
 [INDR. 5,41.] mit *bahu* für viel halten, hochhalten, zu schätzen wissen (zahlreiche Belege u. *bahu): svānputrāngarhayāmāsa bahu mene ca pāṇḍavān*
-[MBH. 8,82.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.82) = [≈Вульг. 8.4.10](mbh/8.4.html#v10) = ≈крит. 08,3.9c
+[MBH. 8,82.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.82) = [≈Vulg. 8.4.10](mbh/8.4.html#v10) = ≈krit. 08,3.9c
 [HARIV. 6999.](https://sanskrit-lexicon-scans.github.io/hariv?6999) [7270.](https://sanskrit-lexicon-scans.github.io/hariv?7270)
 [KUMĀRAS. 6,20.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,20)
 [KATHĀS. 21,67.](https://sanskrit-lexicon-scans.github.io/kss/index.html?21,67) *kathaṃ hi bharatocchiṣṭāṃ śriyaṃ sa bahu maṃsyate*
 [R. GORR. 2,62,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,62,24) [RĀJA-TAR. 5,276.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,276) *bahu manute*
 [GĪT. 5,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?5,9) *bahumanya*
-[MBH. 3,1814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1814) = [≈Вульг. 3.45.14](mbh/3.45.html#v14) = крит. — mit *laghu* gering halten, — anschlagen: *prathamopakṛtaṃ marutvataḥ pratipattyā laghu manyate*
+[MBH. 3,1814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1814) = [≈Vulg. 3.45.14](mbh/3.45.html#v14) = krit. — mit *laghu* gering halten, — anschlagen: *prathamopakṛtaṃ marutvataḥ pratipattyā laghu manyate*
 [ŚĀK. 160.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?160) *paryaṅke cāstaraṇam* u. s. w. *tṛṇamiva laghu manyate*
 [Spr. 1738.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1738) mit *sādhu* für gut halten, gutheissen, billigen, loben: *imaṃ niṣphalamārambham — kaḥ sādhu manyeta*
 [R. GORR. 2,65,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,65,27) [3,70,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,70,14) [RĀJA-TAR. 4,497.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,497) *ā paritoṣādviduṣāṃ na sādhu manye prayogavijñānam*
 [ŚĀK. 2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?2) *na sādhu mene tāḥ sarvā bhūtale yāvatīḥ puraḥ . kāmānkāmayamāno 'sau tasya tasyopapattaye* für gut —, für entsprechend haltend
 [BHĀG. P. 4,25,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,12) *tvāmudara sādhu manye*
 [Spr. 1088.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1088) *sādhumatā* (= *kalyāṇavatā*, also instr. von *sādhumant* Schol.) *satām*
-[MBH. 5,7467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7467) = [≈Вульг. 5.191.11](mbh/5.191.html#v11) = ≈крит. 05,192.11a *kṛṣiṃ sādhviti manyate*
+[MBH. 5,7467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7467) = [≈Vulg. 5.191.11](mbh/5.191.html#v11) = ≈krit. 05,192.11a *kṛṣiṃ sādhviti manyate*
 [M. 10,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,84) *navadvāraṃ dvihastāṅghriṃ tatrāmanuta sādhviti*
 [BHĀG. P. 4,29,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,29,4) mit *asādhu* missbilligen
 [7,8,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,27) Das Prädicat kann, wenn eine Geringachtung ausgedrückt werden soll, auch im dat. stehen nach

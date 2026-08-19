@@ -33,7 +33,7 @@
 - **RU:** *jan*, *nirjāta* (чередуясь с *niryāta*) означает совершенно хорошо знакомый с, стоит, таким образом, правильно после.
   <sub>mixed</sub>
 
-**II.2)** *jan* II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Вульг. 8.2.9](mbh/8.2.html#v9) = ≈крит. 08,1.33a.
+**II.2)** *jan* II. 2. *jajñivān* lebte auf, wurde wieder lebendig [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Vulg. 8.2.9](mbh/8.2.html#v9) = ≈krit. 08,1.33a.
 
 - **RU:** *jan* II. 2. *jajñivān* ожил, снова ожил [MBH. 8,33,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?8,33,31) = [≈Вульг. 8.2.9](mbh/8.2.html#v9) = ≈крит. 08,1.33a.
   <sub>attested</sub>

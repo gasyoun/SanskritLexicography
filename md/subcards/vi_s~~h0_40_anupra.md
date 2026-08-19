@@ -18,15 +18,15 @@
 [KATHĀS. 86,93.](https://sanskrit-lexicon-scans.github.io/kss/index.html?86,93)
 [DAŚAK. 71,5.]
 [PAÑCAT. ed. orn. I,89.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app2?1,89) *tānbāṇāḥ*
-[MBH. 3,12178.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12178) = [≈Вульг. 3.172.17](mbh/3.172.html#v17) = ≈крит. 03,169.17c *bāṇairmahārathānīkam*
-[9,1337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1337) = [≈Вульг. 9.24.66](mbh/9.24.html#v66) = ≈крит. 09,23.64a *snehastvagādīn*
+[MBH. 3,12178.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12178) = [≈Vulg. 3.172.17](mbh/3.172.html#v17) = ≈krit. 03,169.17c *bāṇairmahārathānīkam*
+[9,1337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1337) = [≈Vulg. 9.24.66](mbh/9.24.html#v66) = ≈krit. 09,23.64a *snehastvagādīn*
 [SUŚR. 1,36,20.] *yato na vedā manasā sahainamanupraviśanti*
-[MBH. 5,1622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1622) = [≈Вульг. 5.43.2](mbh/5.43.html#v2) = ≈крит. 05,42.3
+[MBH. 5,1622.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1622) = [≈Vulg. 5.43.2](mbh/5.43.html#v2) = ≈krit. 05,42.3
 [HARIV. 3140.](https://sanskrit-lexicon-scans.github.io/hariv?3140) *apsu*
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 50.] *prāṇijātam*
 [298.] [BHĀG. P. 3,7,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,7,21) *devam*
 [MUIR, ST. 4,300,24.] *vajraṃ* (nom.) *daṇḍakāṣṭham* (acc.)
-[MBH. 1,795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.795) = [≈Вульг. 1.3.130](mbh/1.3.html#v130) = ≈крит. 01,3.138A *jātam* fahren in
+[MBH. 1,795.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.795) = [≈Vulg. 1.3.130](mbh/1.3.html#v130) = ≈krit. 01,3.138A *jātam* fahren in
 [MĀRK. P. 51,106.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,106)
 [KATHĀS. 62,162.](https://sanskrit-lexicon-scans.github.io/kss/index.html?62,162) [121,195.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,195)
 [PAÑCAT. ed. orn. 57,8.](https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?57,8) *yasyā yasyāstu yo bhāvastāṃ *
@@ -35,7 +35,7 @@
 [HARIV. 8332. fg.](https://sanskrit-lexicon-scans.github.io/hariv?8332)
 [Spr. 2443.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2443) *nītiśāstrāṇi* eindringen in
 [PAÑCAT. 201,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?201,23) — *āsyenānupraviṣṭo 'haṃ śarīre tava*
-[MBH. 3,12941.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12941) = [≈Вульг. 3.188.137](mbh/3.188.html#v137) = ≈крит. 03,186.124a *pṛthivīm*
+[MBH. 3,12941.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12941) = [≈Vulg. 3.188.137](mbh/3.188.html#v137) = ≈krit. 03,186.124a *pṛthivīm*
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 293.] *apsu*
 [295.] *etat*
 [BHĀG. P. 3,5,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,5,6) [6,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,6,3) [32,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,10) [4,24,64.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,64) [5,11,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,11,14) [7,9,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,12) [30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,30)
@@ -84,10 +84,10 @@
   <sub>attested</sub>
 
 **2)** — 2) nach Jmd in ein Haus, in ein Gemach treten, zu Jmd hereintreten; mit acc. der Person
-[MBH. 1,396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.396) = [≈Вульг. 1.2.167](mbh/1.2.html#v167) = ≈крит. 01,2.114a [4275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4275) = [≈Вульг. 1.106.1](mbh/1.106.html#v1) = ≈крит. 01,100.1a [7762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7762) = [≈Вульг. 1.211.16](mbh/1.211.html#v16) = ≈крит. 01,203.15a [7800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7800) = [≈Вульг. 1.212.22](mbh/1.212.html#v22) = ≈крит. 01,204.21c
+[MBH. 1,396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.396) = [≈Vulg. 1.2.167](mbh/1.2.html#v167) = ≈krit. 01,2.114a [4275.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4275) = [≈Vulg. 1.106.1](mbh/1.106.html#v1) = ≈krit. 01,100.1a [7762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7762) = [≈Vulg. 1.211.16](mbh/1.211.html#v16) = ≈krit. 01,203.15a [7800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7800) = [≈Vulg. 1.212.22](mbh/1.212.html#v22) = ≈krit. 01,204.21c
 [HARIV. 6472.](https://sanskrit-lexicon-scans.github.io/hariv?6472)
 [RĀJA-TAR. 5,410.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,410) so v. a. sich zu Jmd flüchten
-[MBH. 12,4985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4985) = [≈Вульг. 12.138.126](mbh/12.138.html#v126) = ≈крит. 12,136.119c *kṛṣṇasyānupraviṣṭāḥ* nach Kṛṣṇa hereingetreten
+[MBH. 12,4985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4985) = [≈Vulg. 12.138.126](mbh/12.138.html#v126) = ≈krit. 12,136.119c *kṛṣṇasyānupraviṣṭāḥ* nach Kṛṣṇa hereingetreten
 [HARIV. 8166.](https://sanskrit-lexicon-scans.github.io/hariv?8166) *devyāṃ gītāyāmanupraviṣṭā* geflüchtet zu
 [PRAB. 105,9.]
 
@@ -101,7 +101,7 @@
   <sub>attested</sub>
 
 **caus)** — Vgl. *anupraveśa* fg. — caus. eingehen machen: *yonim*
-[MBH. 14,487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.487) = [≈Вульг. 14.17.33](mbh/14.17.html#v33) = ≈крит. 14,17.31c
+[MBH. 14,487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.487) = [≈Vulg. 14.17.33](mbh/14.17.html#v33) = ≈krit. 14,17.31c
 
 - **RU:** — ср. *anupraveśa* сл. — caus. заставлять войти: *yonim*
 [MBH. 14,487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.487) = [≈Вульг. 14.17.33](mbh/14.17.html#v33) = ≈крит. 14,17.31c

@@ -13,14 +13,14 @@
 [BHAG. 15,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?15,8) zusammenkommen, sich vereinigen: *yathā prayānti saṃyānti srotovegena vālukāḥ*
 [Spr. 4787.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4787)
 [BHĀG. P. 8,3,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,3,23) mit Jmd (acc.) feindlich zusammenstossen, kämpfen
-[MBH. 6,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2143) = [≈Вульг. 6.52.20](mbh/6.52.html#v20) = ≈крит. 03,157.56a hingeben: *saṃyāhi yato bāṇo rathe sthitaḥ*
+[MBH. 6,2143.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2143) = [≈Vulg. 6.52.20](mbh/6.52.html#v20) = ≈krit. 03,157.56a hingeben: *saṃyāhi yato bāṇo rathe sthitaḥ*
 [HARIV. 10783.](https://sanskrit-lexicon-scans.github.io/hariv?10783) *arjunaṃ vīkṣya saṃyātaṃ jayadrathavadhaṃ prati*
-[MBH. 7,6065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6065) = [≈Вульг. 7.145.11](mbh/7.145.html#v11) = ≈крит. 07,120.10a *svapuram*
+[MBH. 7,6065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6065) = [≈Vulg. 7.145.11](mbh/7.145.html#v11) = ≈krit. 07,120.10a *svapuram*
 [HARIV. 5636.](https://sanskrit-lexicon-scans.github.io/hariv?5636) *abhayaṃ padaṃ hareḥ*
 [BHĀG. P. 5,19,23.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,19,23) kommen
 [R. 6,33,34.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,33,34) *punarapi vīravaraḥ saṃyātaḥ*
 [VET. in LA. (III) 28,15.] *vidhūmāmiha* (so die [ed. Bomb.]) *saṃyāntīmulkām*
-[MBH. 7,8881.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8881) = [≈Вульг. 7.192.73](mbh/7.192.html#v73) = ≈крит. 07,165.57a
+[MBH. 7,8881.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8881) = [≈Vulg. 7.192.73](mbh/7.192.html#v73) = ≈krit. 07,165.57a
 
 - **RU:** — *sam*
  1) вместе идти, — ехать, идти, двигаться, ездить
@@ -60,7 +60,7 @@
   <sub>attested</sub>
 
 **3)** — 3) sich richten nach (acc.): *gurumiva kṛtamagryaṃ karma* (acc.) *saṃyāti daivam* (nom.)
-[MBH. 13,341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.341) = [≈Вульг. 13.6.47](mbh/13.6.html#v47) = крит. — — *saṃyayuḥ*
+[MBH. 13,341.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.341) = [≈Vulg. 13.6.47](mbh/13.6.html#v47) = krit. — — *saṃyayuḥ*
 [HARIV. 15892](https://sanskrit-lexicon-scans.github.io/hariv?15892) fehlerhaft für *khaṃ yayuḥ*, wie die neuere Ausg. liest.
 
 - **RU:** — 3) руководствоваться, следовать (acc.): *gurumiva kṛtamagryaṃ karma* (acc.) *saṃyāti daivam* (nom.)

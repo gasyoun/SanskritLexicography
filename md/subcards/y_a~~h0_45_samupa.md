@@ -6,7 +6,7 @@
 **1)** — *samupa*
  1) zusammen herbeikommen: *janaughaḥ sumahāṃstatra samupāyātsamantataḥ*
 [R. GORR. 2,82,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,82,12) hingehen —, sich begeben zu: *mahītalam*
-[MBH. 3,1912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1912) = [≈Вульг. 3.47.34](mbh/3.47.html#v34) = ≈крит. 03,45.37c *vāhinīm*
+[MBH. 3,1912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1912) = [≈Vulg. 3.47.34](mbh/3.47.html#v34) = ≈krit. 03,45.37c *vāhinīm*
 [VARĀH. BṚH. S. 47,25.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?47,25) *astam*
 [11,34.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,34) *atastvāṃ śaraṇyaśaraṇaṃ samupayātāḥ*
 [43,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?43,1)

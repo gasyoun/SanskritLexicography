@@ -28,7 +28,7 @@
   <sub>attested</sub>
 
 **caus-2)** — 2) verstreichen lassen; zubringen (eine Zeit): *nāyaṃ yāpayituṃ* (so die [ed. Bomb.]) *kālo vidyate mādhava kvācit*
-[MBH. 6,4334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4334) = [≈Вульг. 6.96.6](mbh/6.96.html#v6) = ≈крит. 06,92.6a *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
+[MBH. 6,4334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4334) = [≈Vulg. 6.96.6](mbh/6.96.html#v6) = ≈krit. 06,92.6a *(rātrim) uṣṇairvirahajanitairaśrubhiryāpayantī*
 [MEGH. 87.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?87)
 [MĀLAV. 28,15.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,15)
 [PAÑCAT. 183,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?183,24)

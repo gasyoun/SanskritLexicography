@@ -6,7 +6,7 @@
 **2)** — 2) med. = act. (im Epos stets nur aus metrischen Rücksichten): *śṛṇuṣva suśravastamaḥ*
 [ṚV. 1,131,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.131.html#rv01.131.07) *karṇābhyāṃ bhūri śuśruve*
 [PĀR. GṚHY. 3,15.] *śṛṇuṣvaikamanā bhava*
-[MBH. 1,6520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6520) = [≈Вульг. 1.170.25](mbh/1.170.html#v25) = ≈крит. 01,158.22a [13,484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.484) = [≈Вульг. 13.10.53](mbh/13.10.html#v53) = ≈крит. 13,10.47a
+[MBH. 1,6520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6520) = [≈Vulg. 1.170.25](mbh/1.170.html#v25) = ≈krit. 01,158.22a [13,484.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.484) = [≈Vulg. 13.10.53](mbh/13.10.html#v53) = ≈krit. 13,10.47a
 [HARIV. 288.](https://sanskrit-lexicon-scans.github.io/hariv?288)
 [PAÑCAT. 186,15](https://sanskrit-lexicon-scans.github.io/pantankose/app2?186,15) (*śṛṇvekāgramanāḥ* besser ed.
 
@@ -15,21 +15,21 @@ Bomb.). *śṛṇudhvam*
 [HARIV. 10308.](https://sanskrit-lexicon-scans.github.io/hariv?10308) *ityaśṛṇmahi*
 [BHĀG. P. 10,23,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,23,48) *tatputrapautranaptṝṇāṃ gotrāṇi ca na śṛṇmahe*
 [9,3,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,32) *tacchṛṇuṣva*
-[MBH. 12,4266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4266) = [≈Вульг. 12.118.9](mbh/12.118.html#v9) = ≈крит. 12,118.9a [13,345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) = [≈Вульг. 13.7.2](mbh/13.7.html#v2) = ≈крит. 13,7.2a [14,422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.422) = [≈Вульг. 14.16.15](mbh/14.16.html#v15) = ≈крит. 14,16.14c
+[MBH. 12,4266.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4266) = [≈Vulg. 12.118.9](mbh/12.118.html#v9) = ≈krit. 12,118.9a [13,345.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.345) = [≈Vulg. 13.7.2](mbh/13.7.html#v2) = ≈krit. 13,7.2a [14,422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.422) = [≈Vulg. 14.16.15](mbh/14.16.html#v15) = ≈krit. 14,16.14c
 [R. 7,23,1,70.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,1,70)
 [MĀRK. P. 99,13.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?99,13) *śṛṇudhvaṃ ca vaco mama*
-[MBH. 1,1625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1625) = [≈Вульг. 1.40.2](mbh/1.40.html#v2) = ≈крит. 01,36.2a [2,1557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1557) = [≈Вульг. 2.44.39](mbh/2.44.html#v39) = ≈крит. 02,41.30a
+[MBH. 1,1625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1625) = [≈Vulg. 1.40.2](mbh/1.40.html#v2) = ≈krit. 01,36.2a [2,1557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1557) = [≈Vulg. 2.44.39](mbh/2.44.html#v39) = ≈krit. 02,41.30a
 [R. 6,81,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,81,14) *śṛṇvīta*
 [BHĀG. P. 3,13,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,47) *pūrveṣāṃ śṛṇvānaścaritaṃ mahat*
-[MBH. 1,2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2285) = [≈Вульг. 1.62.3](mbh/1.62.html#v3) = ≈крит. 01,56.3a [2,994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.994) = [≈Вульг. 2.26.1](mbh/2.26.html#v1) = ≈крит. 02,23.11a [13,3697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3697) = [≈Вульг. 13.77.21](mbh/13.77.html#v21) = ≈крит. 13,76.20e
+[MBH. 1,2285.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2285) = [≈Vulg. 1.62.3](mbh/1.62.html#v3) = ≈krit. 01,56.3a [2,994.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.994) = [≈Vulg. 2.26.1](mbh/2.26.html#v1) = ≈krit. 02,23.11a [13,3697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3697) = [≈Vulg. 13.77.21](mbh/13.77.html#v21) = ≈krit. 13,76.20e
 [BHĀG. P. 1,11,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,11,11) *taṃ śabdaṃ śuśruve*
 [R. 3,56,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,56,2) [5,25,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,14)
 [BHĀG. P. 7,5,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,3) *śroṣye*
-[MBH. 9,105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.105) = [≈Вульг. 9.2.49](mbh/9.2.html#v49) = ≈крит. 09,2.43c [107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.107) = [≈Вульг. 9.2.51](mbh/9.2.html#v51) = ≈крит. 09,2.46a
+[MBH. 9,105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.105) = [≈Vulg. 9.2.49](mbh/9.2.html#v49) = ≈krit. 09,2.43c [107.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.107) = [≈Vulg. 9.2.51](mbh/9.2.html#v51) = ≈krit. 09,2.46a
 [R. GORR. 2,120,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,120,22) [5,23,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,23,18) [69,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,69,26) *śvaḥ śroṣyase* (so [ed. Bomb.] st. *˚te) śirastasya saindhavasya raṇe hṛtam*
-[MBH. 7,2725.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2725) = [≈Вульг. 7.77.17](mbh/7.77.html#v17) = ≈крит. 07,54.17c *śṛṇuṣvāvahito mama*
-[13,1119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1119) = [≈Вульг. 13.17.5](mbh/13.17.html#v5) = ≈крит. 13,17.4e [14,424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.424) = [≈Вульг. 14.16.17](mbh/14.16.html#v17) = ≈крит. 14,16.16c *śuśruve* mit acc. der Sache und abl. der Person
-[1,386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.386) = [≈Вульг. 1.2.157](mbh/1.2.html#v157) = ≈крит. 01,2.106e
+[MBH. 7,2725.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2725) = [≈Vulg. 7.77.17](mbh/7.77.html#v17) = ≈krit. 07,54.17c *śṛṇuṣvāvahito mama*
+[13,1119.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1119) = [≈Vulg. 13.17.5](mbh/13.17.html#v5) = ≈krit. 13,17.4e [14,424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.424) = [≈Vulg. 14.16.17](mbh/14.16.html#v17) = ≈krit. 14,16.16c *śuśruve* mit acc. der Sache und abl. der Person
+[1,386.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.386) = [≈Vulg. 1.2.157](mbh/1.2.html#v157) = ≈krit. 01,2.106e
 
 - **RU:** — 2) мед. = act. (в эпосе всегда лишь по метрическим соображениям): *śṛṇuṣva suśravastamaḥ*
 [ṚV. 1,131,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.131.html#rv01.131.07) *karṇābhyāṃ bhūri śuśruve*
@@ -80,8 +80,8 @@ Bomb.). *śṛṇudhvam*
 [SARVADARŚANAS. 83,19.] *iti tarhi śrūyamāṇasya vidheḥ*
 [123,15.] *yatra tuśabdaḥ śrūyate* gehört — so v. a. angewandt wird
 Schol. zu [TS. PRĀT. 22,6.] — *śabdāḥ śrūyanti sarvaśaḥ*
-[MBH. 6,2515](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2515) = [≈Вульг. 6.59.7](mbh/6.59.html#v7) = ≈крит. 06,55.6a *śabdaḥ śuśruve*
-[4,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1788) = [≈Вульг. 4.57.9](mbh/4.57.html#v9) = крит. — [HARIV. 5003.](https://sanskrit-lexicon-scans.github.io/hariv?5003) [R. 1,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,5) [2,40,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,29) [76,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,21) [91,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,25) [6,19,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,4) [RAGH. 19,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,18) [KATHĀS. 11,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,66) [19,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,112) *śuśruvire giraḥ*
+[MBH. 6,2515](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2515) = [≈Vulg. 6.59.7](mbh/6.59.html#v7) = ≈krit. 06,55.6a *śabdaḥ śuśruve*
+[4,1788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1788) = [≈Vulg. 4.57.9](mbh/4.57.html#v9) = krit. — [HARIV. 5003.](https://sanskrit-lexicon-scans.github.io/hariv?5003) [R. 1,24,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,24,5) [2,40,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,29) [76,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,21) [91,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,25) [6,19,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,19,4) [RAGH. 19,18.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?19,18) [KATHĀS. 11,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,66) [19,112.](https://sanskrit-lexicon-scans.github.io/kss/index.html?19,112) *śuśruvire giraḥ*
 [RAGH. 9,44.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,44) *ityaśrāvi ca vāgdivyā*
 [KATHĀS. 46,96.](https://sanskrit-lexicon-scans.github.io/kss/index.html?46,96)
 [PRAB. 20,9.]
@@ -89,13 +89,13 @@ Schol. zu [TS. PRĀT. 22,6.] — *śabdāḥ śrūyanti sarvaśaḥ*
 [BHAṬṬ. 2,10.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,10) *parāsya śaktirvividhaiva śrūyate* man hört, — erfährt, es heisst, dass
 [ŚVETĀŚV. UP. 6,8.]
 [MAITRYUP. 2,3.] *śrūyate bhavataḥ sādhvī svasā mādrī yaśasvinī*
-[MBH. 1,4430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4430) = [≈Вульг. 1.112.6](mbh/1.112.html#v6) = крит. — *ayaṃ śrūyate gītaḥ śloko mahātmanā*
-[5,7073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7073) = [≈Вульг. 5.178.46](mbh/5.178.html#v46) = ≈крит. 05,178.22c [R. 2,107,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,11) *tairyuktaḥ śrūyatāṃ naraḥ*
+[MBH. 1,4430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4430) = [≈Vulg. 1.112.6](mbh/1.112.html#v6) = krit. — *ayaṃ śrūyate gītaḥ śloko mahātmanā*
+[5,7073.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7073) = [≈Vulg. 5.178.46](mbh/5.178.html#v46) = ≈krit. 05,178.22c [R. 2,107,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,107,11) *tairyuktaḥ śrūyatāṃ naraḥ*
 [1,1,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,9) [22,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,22,17) [6,95,57.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,95,57) [ŚĀK. 71.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?71) [Spr. (II) 2431.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2431 "Spr. (II) 2431: jīvanto 'pi mṛtāḥ pañca śrūyante kila bhārate | daridro vyādhito mūrkhaḥ pravāsī nityasevakaḥ || — (979.) Fünfe werden bekanntlich im Mahābhārata für todt erklärt, ob sie gleich lebten: der Arme, der Kranke, der Thor, der in der Fremde Lebende und der stets Andern dient.") [2933.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2933) [KATHĀS. 24,85.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,85) *bahavaḥ — jīvanmuktimāśritāḥ śrūyante raseśvarasiddhānte*
 [SARVADARŚANAS. 98,20. fg.] *śuśruve . rājaputro jigīṣuśca śrīmānyaudhiṣṭhire kule* man hörte von
 [RĀJA-TAR. 2,144.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,144) *tenābhāryeṇa sadṛśī bhāryāśrāvi vicinvatā*
 [KATHĀS. 56,240.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,240) mit gen. der Person: *tacchrūyatāṃ mama*
-[MBH. 3,12772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12772) = [≈Вульг. 3.187.30](mbh/3.187.html#v30) = ≈крит. 03,185.28a
+[MBH. 3,12772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12772) = [≈Vulg. 3.187.30](mbh/3.187.html#v30) = ≈krit. 03,185.28a
 [R. 1,4,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,28) mit *mukhāt* st. des einf. abl.
 [HIT. 39,7.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,7) pass. impers.: *odakāntātsnigdho jano 'nugantavya iti śrūyate* man hört, — liest, dass
 [ŚĀK. 54,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?54,22) *śrūyate* so v. a. ich höre

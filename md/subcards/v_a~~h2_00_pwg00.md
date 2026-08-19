@@ -18,8 +18,8 @@
   <sub>attested</sub>
 
 **2)** — 2) = 2. *vā* wehen: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ*
-[MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) = [≈Вульг. 6.3.29](mbh/6.3.html#v29) = ≈крит. 06,3.30c — *avāyat*
-[MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) = [≈Вульг. 9.17.84](mbh/9.17.html#v84) = ≈крит. 09,16.80c Druckfehler für *avārayat* .
+[MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) = [≈Vulg. 6.3.29](mbh/6.3.html#v29) = ≈krit. 06,3.30c — *avāyat*
+[MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) = [≈Vulg. 9.17.84](mbh/9.17.html#v84) = ≈krit. 09,16.80c Druckfehler für *avārayat* .
 
 - **RU:** — 2) = 2. *vā* веять: *abhīkṣṇavātā vāyante dhūmaketumavasthitāḥ* [MBH. 6,97.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.97) = [≈Вульг. 6.3.29](mbh/6.3.html#v29) = ≈крит. 06,3.30c — *avāyat* [MBH. 9,947](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.947) = [≈Вульг. 9.17.84](mbh/9.17.html#v84) = ≈крит. 09,16.80c опечатка вм. *avārayat* .
   <sub>attested</sub>

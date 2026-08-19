@@ -4,7 +4,7 @@
 
 
 **1)** — *vinis* hinausgehen, — fahren, — ziehen
-[MBH. 1,4913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4913) [2,2592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2592) = [≈Вульг. 2.79.9](mbh/2.79.html#v9) = ≈крит. 02,70.9a [4,985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.985) = [≈Вульг. 4.30.15](mbh/4.30.html#v15) = ≈крит. 04,29.15a [5,7436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7436) = [≈Вульг. 5.190.3](mbh/5.190.html#v3) = ≈крит. 05,191.3c
+[MBH. 1,4913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4913) [2,2592.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2592) = [≈Vulg. 2.79.9](mbh/2.79.html#v9) = ≈krit. 02,70.9a [4,985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.985) = [≈Vulg. 4.30.15](mbh/4.30.html#v15) = ≈krit. 04,29.15a [5,7436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7436) = [≈Vulg. 5.190.3](mbh/5.190.html#v3) = ≈krit. 05,191.3c
 [KATHĀS. 12,62.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,62) [24,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,51) [32,75.](https://sanskrit-lexicon-scans.github.io/kss/index.html?32,75) [34,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,125) [88,14.](https://sanskrit-lexicon-scans.github.io/kss/index.html?88,14)
 [RĀJA-TAR. 5,59.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,59) [327.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,327) [448.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,448) *bahis*
 [3,160.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,160) *udarāt*

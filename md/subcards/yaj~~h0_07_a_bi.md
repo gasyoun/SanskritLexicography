@@ -14,7 +14,7 @@
 
 **abhi-sense-2)** [SĀY.] *bharadvājānsārñjayo abhyayaṣṭa (= apūjayat)*
 [ṚV. 6,47,25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.25) ein Opfer (acc.) darbringen: *aśvamedhaṃ yajñaṃ vaiṣṇavaṃ śakro 'bhiyajatām*
-[MBH. 12,13217.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13217) = [≈Вульг. 12.342.58](mbh/12.342.html#v58) = ≈крит. 12,329.46M
+[MBH. 12,13217.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13217) = [≈Vulg. 12.342.58](mbh/12.342.html#v58) = ≈krit. 12,329.46M
 
 - **RU:** [SĀY.] *bharadvājānsārñjayo abhyayaṣṭa (= apūjayat)*
 [ṚV. 6,47,25.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.047.html#rv06.047.25) приносить жертву (acc.): *aśvamedhaṃ yajñaṃ vaiṣṇavaṃ śakro 'bhiyajatām*

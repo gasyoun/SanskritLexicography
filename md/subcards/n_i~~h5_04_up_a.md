@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **2-corr)** — 2)
-Z. 3. fg. [NĪLAK.] zu [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Вульг. 5.37.6](mbh/5.37.html#v6) = ≈крит. 05,37.6a : *asato duṣṭasya sattvaṃ sādhutvaṃ asataḥ mṛṣārthasya sattvaṃ satyatvaṃ vā upānayīta samarthayate* .
+Z. 3. fg. [NĪLAK.] zu [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Vulg. 5.37.6](mbh/5.37.html#v6) = ≈krit. 05,37.6a : *asato duṣṭasya sattvaṃ sādhutvaṃ asataḥ mṛṣārthasya sattvaṃ satyatvaṃ vā upānayīta samarthayate* .
 
 - **RU:** — 2)
 стк. 3. сл. [NĪLAK.] к [MBH. 5,1339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1339) = [≈Вульг. 5.37.6](mbh/5.37.html#v6) = ≈крит. 05,37.6a : *asato duṣṭasya sattvaṃ sādhutvaṃ asataḥ mṛṣārthasya sattvaṃ satyatvaṃ vā upānayīta samarthayate* .

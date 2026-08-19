@@ -4,7 +4,7 @@
 
 
 **5a-α)** α) eingegangen, eingetreten, sich begeben habend unter, eingedrungen: *niveśanam, gṛham*
-[MBH. 3,2184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2184) = [≈Вульг. 3.56.25](mbh/3.56.html#v25) = ≈крит. 03,53.15a
+[MBH. 3,2184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2184) = [≈Vulg. 3.56.25](mbh/3.56.html#v25) = ≈krit. 03,53.15a
 [R. 2,42,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,42,29)
 [ŚĀK. 34,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?34,13)
 [KATHĀS. 18,262.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,262)
@@ -23,7 +23,7 @@
 [HIT. 38,10.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?38,10) *jīvalokam*
 [17,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?17,19) *ṛṣiṣu*
 [ṚV. 10,71,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.071.html#rv10.071.03) *mahāsārthe*
-[MBH. 3,2555. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2555) = [≈Вульг. 3.65.24](mbh/3.65.html#v24) = крит. — *mlecchaprāyāñjanapadān — saugatāḥ*
+[MBH. 3,2555. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2555) = [≈Vulg. 3.65.24](mbh/3.65.html#v24) = krit. — *mlecchaprāyāñjanapadān — saugatāḥ*
 [PRAB. 87,19.] *iha*
 [ŚAT. BR. 14,4,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,2,16) *tatra*
 [R. 2,21,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,17) *puruṣe 'ntaḥ*
@@ -43,9 +43,9 @@
 [BHĀG. P. 9,18,2.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,18,2) *vāsudevapraviṣṭadhī* so v. a. versenkt in
 [3,33,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,29) *praviṣṭāḥ smaḥ pārameśvaraṃ siddhāntam* so v. a. eingeführt —, eingeweiht in
 [PRAB. 57,14.] *karmodaye buddhimatipraviṣṭām*
-[MBH. 3,12735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12735) = [≈Вульг. 3.186.21](mbh/3.186.html#v21) = ≈крит. 03,184.16a *viduṣāṃ mate* so v. a. übereinstimmend mit
-[12,6677.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6677) = [≈Вульг. 12.181.16](mbh/12.181.html#v16) = ≈крит. 12,174.16a Ohne Ergänzung eingetreten (sc. in's Haus u. s. w.) von Personen
-[3,2158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2158) = [≈Вульг. 3.55.23](mbh/3.55.html#v23) = ≈крит. 03,52.22a [4,1000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1000) = [≈Вульг. 4.31.1](mbh/4.31.html#v1) = ≈крит. 04,30.1a [KATHĀS. 18,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,83) [193.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,193) [52,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,32) [RĀJA-TAR. 5,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,58) aufgetreten (auf der Bühne)
+[MBH. 3,12735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12735) = [≈Vulg. 3.186.21](mbh/3.186.html#v21) = ≈krit. 03,184.16a *viduṣāṃ mate* so v. a. übereinstimmend mit
+[12,6677.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6677) = [≈Vulg. 12.181.16](mbh/12.181.html#v16) = ≈krit. 12,174.16a Ohne Ergänzung eingetreten (sc. in's Haus u. s. w.) von Personen
+[3,2158.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2158) = [≈Vulg. 3.55.23](mbh/3.55.html#v23) = ≈krit. 03,52.22a [4,1000.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1000) = [≈Vulg. 4.31.1](mbh/4.31.html#v1) = ≈krit. 04,30.1a [KATHĀS. 18,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,83) [193.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,193) [52,32.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,32) [RĀJA-TAR. 5,58.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,58) aufgetreten (auf der Bühne)
 [VIKR. 71,11.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?71,11) *kālapāśa* so v. a. durchgezogen
 [RĀJA-TAR. 5,13.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,13) *ambu* eingedrungen
 [271.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,271) *tamas*
@@ -150,16 +150,16 @@
 [KĀTY. ŚR. 6,3,16.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?6,3,16) *praveśyamānaṃ rājānam* (Soma)
 [LĀṬY. 5,6,1. 1,9,8.] *gṛham, niveśanam, veśma, āgāram*
 [ĀŚV. GṚHY. 1,8,8.]
-[MBH. 2,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2614) = [≈Вульг. 2.79.31](mbh/2.79.html#v31) = ≈крит. 02,70.22c [3,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1789) = [≈Вульг. 3.44.5](mbh/3.44.html#v5) = ≈крит. 03,45.5a
+[MBH. 2,2614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2614) = [≈Vulg. 2.79.31](mbh/2.79.html#v31) = ≈krit. 02,70.22c [3,1789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1789) = [≈Vulg. 3.44.5](mbh/3.44.html#v5) = ≈krit. 03,45.5a
 [R. 1,68,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,2)
 [SUŚR. 1,18,1.]
 [KATHĀS. 4,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,51) *śuddhāntam*
 [ŚĀK. 71,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,13) *yamasadane (˚sadanam* [ed. Bomb.])
-[MBH. 7,66.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.66) = [≈Вульг. 7.2.15](mbh/7.2.html#v15) = ≈крит. 07,2.15c *gehe*
+[MBH. 7,66.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.66) = [≈Vulg. 7.2.15](mbh/7.2.html#v15) = ≈krit. 07,2.15c *gehe*
 [KATHĀS. 4,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,64)
 [BHĀG. P. 3,1,6.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,6) *guhām*
 [BHAṬṬ. 7,23.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,23) *puram*
-[MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427) = [≈Вульг. 1.112.3](mbh/1.112.html#v3) = крит. —
+[MBH. 1,4427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4427) = [≈Vulg. 1.112.3](mbh/1.112.html#v3) = krit. —
 [R. 1,10,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,10,34)
 [RAGH. 5,62.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,62) *pure*
 [HARIV. 5187.](https://sanskrit-lexicon-scans.github.io/hariv?5187) *maṭhāntaḥ*
@@ -167,22 +167,22 @@
 [185.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,185) *gṛhamadhye*
 [PAÑCAT. 237,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?237,12) *sarasi*
 [256,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?256,1) *teṣu deśeṣu*
-[MBH. 12,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2631) = [≈Вульг. 12.69.36](mbh/12.69.html#v36) = ≈крит. 12,69.34a *apsu śilāṃ baddhvā*
+[MBH. 12,2631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2631) = [≈Vulg. 12.69.36](mbh/12.69.html#v36) = ≈krit. 12,69.34a *apsu śilāṃ baddhvā*
 [YĀJÑ. 2,278.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,278) *mṛtyuvaktram*
 [RĀJA-TAR. 4,293.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,293) *dvāravatīṃ pārijātaṃ varadrumam*
 [HARIV. 7664](https://sanskrit-lexicon-scans.github.io/hariv?7664) (med.). *yaṣṭiṃ puraṃ pauraiḥ* (bringen lassen)
 [VARĀH. BṚH. S. 43,24.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?43,24) *apsu daṇḍam*
 [M. 9,244.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,244) *sapattraśaramasya śarīre*
 [P. 5,4,61](https://ashtadhyayi.com/sutraani/5/4/61), Schol. *pataṃgikānāṃ puccheṣu tvayeṣīkā praveśitā*
-[MBH. 1,4332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4332) = [≈Вульг. 1.108.11](mbh/1.108.html#v11) = ≈крит. 01,101.24c *tasya pādau ca pāṇī ca śiro grīvāṃ ca sarvaśaḥ . kāye praveśayāmāsa paśoriva pinākadhṛk ..*
-[4,779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.779) = [≈Вульг. 4.22.86](mbh/4.22.html#v86) = крит. — *bṛhadvakṣastāṃ satrapāṃ praveśayanniva*
+[MBH. 1,4332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4332) = [≈Vulg. 1.108.11](mbh/1.108.html#v11) = ≈krit. 01,101.24c *tasya pādau ca pāṇī ca śiro grīvāṃ ca sarvaśaḥ . kāye praveśayāmāsa paśoriva pinākadhṛk ..*
+[4,779.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.779) = [≈Vulg. 4.22.86](mbh/4.22.html#v86) = krit. — *bṛhadvakṣastāṃ satrapāṃ praveśayanniva*
 [RĀJA-TAR. 4,435.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,435) *ardhaṃ (nidheḥ) kośe*
 [M. 8,38.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,38) *praveśitaśca taiḥ sarpaiḥ sa kṛṣṇo bhogabandhanam*
 [HARIV. 3664.](https://sanskrit-lexicon-scans.github.io/hariv?3664) *rāmeṣubhirdīrghanidrāṃ praveśitaḥ* versetzt in
 [RAGH. 12,81.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,81) *praveśaya māṃ pārameśvarīṃ dīkṣām* einführen —, einweihen in
 [RAGH. 57,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?57,15) *etasminguṇaṃ ko hi praveśayet* so v. a. beibringen
 [KATHĀS. 40,11.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,11) Ohne Angabe des Ortes Jmd hineinführen (in's Haus
-u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954) [2956.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2956) = [≈Вульг. 3.76.1](mbh/3.76.html#v1) = ≈крит. 03,74.1a [R. GORR. 1,75,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,75,11) [6,7,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,42) [KĀM. NĪTIS. 14,38] (*mṛgajātīḥ* vorführen).
+u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954) [2956.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2956) = [≈Vulg. 3.76.1](mbh/3.76.html#v1) = ≈krit. 03,74.1a [R. GORR. 1,75,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,75,11) [6,7,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,42) [KĀM. NĪTIS. 14,38] (*mṛgajātīḥ* vorführen).
 [KATHĀS. 12,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,68)
 [RĀJA-TAR. 3,205.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,205) [4,560.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,560) [6,321.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,321) [329.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,329) [336.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,336)
 [PAÑCAT. 16,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,2) *praveśyatāmeṣa samīpamāśu me*
@@ -233,7 +233,7 @@ u. s. w.) [MBH. 3,2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954
 [PAÑCAT. 16,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?16,2) *praveśyatāmeṣa samīpamāśu me*
   <sub>attested</sub>
 
-**caus-1-театр)** [MBH. 4,314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.314) = [≈Вульг. 4.12.3](mbh/4.12.html#v3) = ≈крит. 04,11.3c hereinführen auf die Bühne, auftreten lassen: *yatra pātraṃ naiva praveśyate*
+**caus-1-театр)** [MBH. 4,314.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.314) = [≈Vulg. 4.12.3](mbh/4.12.html#v3) = ≈krit. 04,11.3c hereinführen auf die Bühne, auftreten lassen: *yatra pātraṃ naiva praveśyate*
 [BHAR.] beim Schol. zu [ŚĀK. 8,20.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,20) *pratipuruṣam*
 [MṚCCH. 48,14.] *praveśaya tau*
 [ŚĀK. 27,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?27,14) [29,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?29,14) [61,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,12)

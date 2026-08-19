@@ -42,7 +42,7 @@
 [3,49,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,9) *āsīna*
 [H. 492.](https://sanskrit-lexicon-scans.github.io/abch2/app1?492)
 [M. 1,1.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,1) [2,195.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,195) [196.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,196) [3,3.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,3) [189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,189) [219.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,219) [4,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,43) [6,49.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,49) [7,91.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,91) [8,2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,2) [10.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,10) [11,111.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,111)
-[MBH. 1,2215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2215) [3287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3287) = [≈Вульг. 1.78.9](mbh/1.78.html#v9) = ≈крит. 01,73.9a
+[MBH. 1,2215.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2215) [3287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3287) = [≈Vulg. 1.78.9](mbh/1.78.html#v9) = ≈krit. 01,73.9a
 [SUND. 3,3.]
 [R. 1,4,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,13) [31,31.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,31)
 [HIT. 29,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?29,12) pass. impers.: *āsyatāmiti coktaḥ sannāsītābhimukhaṃ guroḥ*
@@ -91,10 +91,10 @@
 [VS. 17,75.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,75) *kasmiṃste loka āsate*
 [AV. 11,8,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.008.html#av11.008.10) [32.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.008.html#av11.008.32) [4,34,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.034.html#av04.034.04) [18,2,48.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.002.html#av18.002.48) *ayaṃ grāmo yasminnāsse*
 [CHĀND. UP. 4,2,4.] *yāvadromāṇi bhavanti tasyāstāvadvarṣāṇyāsate devaloke*
-[MBH. 3,12723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12723) = [≈Вульг. 3.186.9](mbh/3.186.html#v9) = ≈крит. 03,184.9c *evaṃ sarvamahaṃ kālamihāsse* (!)
-[12991.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12991) = [≈Вульг. 3.189.42](mbh/3.189.html#v42) = ≈крит. 03,187.40c *tatra (āśrame) kaścidṛṣirāsāṃ cakre*
-[1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) = [≈Вульг. 1.3.9](mbh/1.3.html#v9) = ≈крит. 01,3.8D [2,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.104) = [≈Вульг. 2.4.9](mbh/2.4.html#v9) = ≈крит. 02,4.7a [5,256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.256) = [≈Вульг. 5.9.28](mbh/5.9.html#v28) = ≈крит. 05,9.25a *icchāmi nityamevāhaṃ tvayā putra sahāsitum*
-[3,14465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14465) = [≈Вульг. 3.230.12](mbh/3.230.html#v12) = ≈крит. 03,219.12a [KATHĀS. 25,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,68) [VID. 290.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?290) [BRAHMA-P. 52,2.] [BHAṬṬ. 4,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,6) [8,79.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,79) *lokānuparyuparyāste mādhavaḥ*
+[MBH. 3,12723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12723) = [≈Vulg. 3.186.9](mbh/3.186.html#v9) = ≈krit. 03,184.9c *evaṃ sarvamahaṃ kālamihāsse* (!)
+[12991.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12991) = [≈Vulg. 3.189.42](mbh/3.189.html#v42) = ≈krit. 03,187.40c *tatra (āśrame) kaścidṛṣirāsāṃ cakre*
+[1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) = [≈Vulg. 1.3.9](mbh/1.3.html#v9) = ≈krit. 01,3.8D [2,104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.104) = [≈Vulg. 2.4.9](mbh/2.4.html#v9) = ≈krit. 02,4.7a [5,256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.256) = [≈Vulg. 5.9.28](mbh/5.9.html#v28) = ≈krit. 05,9.25a *icchāmi nityamevāhaṃ tvayā putra sahāsitum*
+[3,14465.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14465) = [≈Vulg. 3.230.12](mbh/3.230.html#v12) = ≈krit. 03,219.12a [KATHĀS. 25,68.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,68) [VID. 290.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?290) [BRAHMA-P. 52,2.] [BHAṬṬ. 4,6.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,6) [8,79.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,79) *lokānuparyuparyāste mādhavaḥ*
 [VOP. 5,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,7) *kurūnāste* er wohnt bei den Kuru
 [P. 1,4,51](https://ashtadhyayi.com/sutraani/1/4/51), Vārtt. 2, Sch.
 *dūrata ās* in der Entfernung weilen, entfernt sein
@@ -191,7 +191,7 @@ bes. häufig *sattram* sessionem (sacrificam) sedere
 [N. 17,37.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,37)
 [BHAG. 2,61.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,61) *tvakṛte bandhuvargā gatasattvā ivāsate*
 [N. 16,26.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?16,26) *tasya tapasyabhirataḥ putra āste*
-[MBH. 1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) = [≈Вульг. 1.3.9](mbh/1.3.html#v9) = ≈крит. 01,3.8D *āyuṣmānāstāmayam*
+[MBH. 1,674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.674) = [≈Vulg. 1.3.9](mbh/1.3.html#v9) = ≈krit. 01,3.8D *āyuṣmānāstāmayam*
 [VIKR. 86,14.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?86,14) *āsatām* (!) — *ājñādāne parivṛḍhau bhṛtyāvājñāparigrahe* sie waren stets Herren, wenn es galt einen Befehl zu ertheilen; Diener dagegen, wenn es galt einen Befehl zu empfangen,
 [RĀJA-TAR. 5,3.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,3)
 

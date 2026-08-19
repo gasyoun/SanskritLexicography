@@ -8,7 +8,7 @@
 - **RU:** — *sam*
   <sub>attested</sub>
 
-**1)** 1) *vācaṃ tena na saṃdadhyāt* so v. a. mit dem wechsele er keine Worte [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](mbh/12.116.html#v9) = ≈крит. 12,117.9a
+**1)** 1) *vācaṃ tena na saṃdadhyāt* so v. a. mit dem wechsele er keine Worte [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Vulg. 12.116.9](mbh/12.116.html#v9) = ≈krit. 12,117.9a
 
 - **RU:** 1) *vācaṃ tena na saṃdadhyāt* так преим. с тем пусть он не обменивается словами [MBH. 12,4220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4220) = [≈Вульг. 12.116.9](mbh/12.116.html#v9) = ≈крит. 12,117.9a
   <sub>attested</sub>

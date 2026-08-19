@@ -18,7 +18,7 @@
 - **RU:** *anadhyāya* I. 1.
   <sub>lexicographic</sub>
 
-**I.1b)** *anadhyāya* I. 1. eine zum Studium ungeeignete Zeit oder ein solcher Ort [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Вульг. 13.2.9](mbh/13.2.html#v9) = ≈крит. 13,2.9a.
+**I.1b)** *anadhyāya* I. 1. eine zum Studium ungeeignete Zeit oder ein solcher Ort [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Vulg. 13.2.8](mbh/13.2.html#v8) = ≈krit. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Vulg. 13.2.9](mbh/13.2.html#v9) = ≈krit. 13,2.9a.
 
 - **RU:** *anadhyāya* I. 1. время, непригодное для занятий, или такое же место [MBH. 13,93,117. fg.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,93,117) = [≈Вульг. 13.2.8](mbh/13.2.html#v8) = ≈крит. 13,2.8a [94,25](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,94,25) = [≈Вульг. 13.2.9](mbh/13.2.html#v9) = ≈крит. 13,2.9a.
   <sub>attested</sub>

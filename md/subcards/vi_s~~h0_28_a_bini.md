@@ -26,7 +26,7 @@
 **2)** — 2) sich in Etwas (acc.) versenken, sich ganz hingeben: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
 [DAŚAK. 78,8. 9.] ohne Ergänzung auf seinem Kopfe bestehen: *te cedabhinivekṣyanti (˚nte* [ed. Bomb.]) *nābhyupaiṣyanti me vacaḥ*
-[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Вульг. 5.77.17](mbh/5.77.html#v17) = ≈крит. 05,75.17a
+[MBH. 5,2798.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2798) = [≈Vulg. 5.77.17](mbh/5.77.html#v17) = ≈krit. 05,75.17a
 
 - **RU:** — 2) погружаться во что-либо (acc.), всецело предаваться: *dharmānabhiniviśya*
 [VOP. 5,2.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?5,2) *(gaṇikā) yāmevaṃ bhavanmano 'bhiniviśate*
@@ -41,7 +41,7 @@
 
 **3a)** a) sich festgesetzt habend an einem Orte
 [SUŚR. 1,82,12.] hartnäckig: *paraspareṇābhiniviṣṭaroṣayoḥ*
-[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Вульг. 8.82.5](mbh/8.82.html#v5) = ≈крит. 08,60.5a
+[MBH. 8,4210.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.4210) = [≈Vulg. 8.82.5](mbh/8.82.html#v5) = ≈krit. 08,60.5a
 
 - **RU:** a) утвердившийся на месте
 [SUŚR. 1,82,12.] упрямый, упорный: *paraspareṇābhiniviṣṭaroṣayoḥ*
@@ -121,7 +121,7 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) machen, dass Jmd einer Sache sein ganzes Herz zuwendet, Jmdes ganzes Verlangen auf Etwas richten: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*
-[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Вульг. 4.19.35](mbh/4.19.html#v35) = ≈крит. 04,18.26a *pratibandhavatsu viṣayeṣu*
+[MBH. 4,591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.591) = [≈Vulg. 4.19.35](mbh/4.19.html#v35) = ≈krit. 04,18.26a *pratibandhavatsu viṣayeṣu*
 [MĀLAV. 28,7.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?28,7)
 
 - **RU:** — 4) заставить кого-либо всем сердцем устремиться к чему-либо, направить всё желание кого-либо на что-либо: *(bhrātaram) goṣu govṛṣasaṃkāśaṃ matsyenābhiniveśitam*

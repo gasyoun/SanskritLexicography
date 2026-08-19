@@ -99,7 +99,7 @@
 - **RU:** — 2〉 отклонять заклинанием, заговаривать (с отвращающей целью).
   <sub>attested</sub>
 
-**Mit … schmähen (2))** — Mit *abhi* schmähen [MBH. 3,268,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,268,2) = [≈Вульг. 3.6.7](mbh/3.6.html#v7) = ≈крит. 03,7.6c. v. l. *ati*
+**Mit … schmähen (2))** — Mit *abhi* schmähen [MBH. 3,268,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,268,2) = [≈Vulg. 3.6.7](mbh/3.6.html#v7) = ≈krit. 03,7.6c. v. l. *ati*
 
 - **RU:** — С *abhi* поносить, хулить [MBH. 3,268,2](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,268,2) = [≈Вульг. 3.6.7](mbh/3.6.html#v7) = ≈крит. 03,7.6c. v. l. *ati*
   <sub>attested</sub>

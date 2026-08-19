@@ -5,7 +5,7 @@
 
 **1)** — *upa* med. (nur ein Mal act.)
  1) zu Jmd. (acc.) sprechen: *yamo 'haṃ tvāmupabruve*
-[MBH. 12,7228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7228) = [≈Вульг. 12.199.121](mbh/12.199.html#v121) = ≈крит. 12,192.120a
+[MBH. 12,7228.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7228) = [≈Vulg. 12.199.121](mbh/12.199.html#v121) = ≈krit. 12,192.120a
 
 - **RU:** — *upa* мед. (nur ein Mal act.)
  1) говорить к Jmd. (acc.), обращаться (с речью): *yamo 'haṃ tvāmupabruve*

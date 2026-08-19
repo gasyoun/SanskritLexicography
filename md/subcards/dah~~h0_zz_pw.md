@@ -25,7 +25,7 @@
 - **RU:** — c〉 жечь, отсюда преим. приводить в сильный жар —, в возбуждение, волновать (*śrotraṃ putravṛttāntena* [DAŚAK. 78,9. 10]), грызть сердце.
   <sub>attested</sub>
 
-**2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Вульг. 4.1.24](mbh/4.1.html#v24) = ≈крит. 04,1.20c), verbrennen, brennen (auch von Wunden), in Flammen stehen.
+**2)** — 2〉 Pass. *dahyate* (episch und [MĀN. GṚHY. 2,15] auch *˚ti*) verbrannt werden ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Vulg. 4.1.24](mbh/4.1.html#v24) = ≈krit. 04,1.20c), verbrennen, brennen (auch von Wunden), in Flammen stehen.
 
 - **RU:** — 2〉 Pass. *dahyate* (в эпосе и [MĀN. GṚHY. 2,15] также *˚ti*) быть сжигаемым ([MBH. 4,23,7](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?4,23,7) = [≈Вульг. 4.1.24](mbh/4.1.html#v24) = ≈крит. 04,1.20c), сгорать, гореть (также о ранах), стоять в пламени.
   <sub>attested</sub>
@@ -146,7 +146,7 @@
 - **RU:** — 2〉 вспыхивать, воспламеняться (intrans.) [ṚV. 2,1,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.001.html#rv02.001.10).
   <sub>attested</sub>
 
-**3)** — 3〉 hinterher verbrennen (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Вульг. 12.8.23](mbh/12.8.html#v23) = ≈крит. 12,8.23a.
+**3)** — 3〉 hinterher verbrennen (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Vulg. 12.8.23](mbh/12.8.html#v23) = ≈krit. 12,8.23a.
 — Mit *apa*
 
 - **RU:** — 3〉 сгорать вслед, догорать (intrans.) [MBH. 12,224,20](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,224,20) = [≈Вульг. 12.8.23](mbh/12.8.html#v23) = ≈крит. 12,8.23a.

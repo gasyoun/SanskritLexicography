@@ -22,7 +22,7 @@
   <sub>attested</sub>
 
 **3)** — 3) festsetzen, einsetzen; bestimmen: *pūrvameva bhagavatā brahmaṇā — dharmasaṃrakṣaṇārthamāśramāścatvāro 'bhinirdiṣṭāḥ*
-[MBH. 12,6991.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6991) = [≈Вульг. 12.194.16](mbh/12.194.html#v16) = ≈крит. 12,187.15c *sārpaṃ viśākhāśravaṇabharaṇyaścaṇḍālajāterabhinirdiśanti*
+[MBH. 12,6991.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6991) = [≈Vulg. 12.194.16](mbh/12.194.html#v16) = ≈krit. 12,187.15c *sārpaṃ viśākhāśravaṇabharaṇyaścaṇḍālajāterabhinirdiśanti*
 [VARĀH. BṚH. S. 97,10.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?97,10)
 
 - **RU:** — 3) устанавливать, назначать; определять: *pūrvameva bhagavatā brahmaṇā — dharmasaṃrakṣaṇārthamāśramāścatvāro 'bhinirdiṣṭāḥ*

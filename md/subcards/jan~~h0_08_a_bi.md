@@ -13,7 +13,7 @@
 [BHAG. 16,3.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,3) [4.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,4) [5.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?16,5) *dānamadhyayanam* u. s. w. *janmanaivābhyajāyathāḥ*
 [MBH. 12,2856.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2856) *yadiyaṃ kumāryabhijātā tadiyamiha pratipadyatām*
 [ĀŚV. GṚHY. 1,5.] *kāmaṃ krodham* u. s. w. *bhūmipaḥ . samyagvijetuṃ yo veda sa mahīmabhijāyate*
-[MBH. 5,4342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4342) = [≈Вульг. 5.130.42](mbh/5.130.html#v42) = ≈крит. 05,128.42a *jāyamānābhi jāyate devāntsabrāhmaṇānvaśā*
+[MBH. 5,4342.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4342) = [≈Vulg. 5.130.42](mbh/5.130.html#v42) = ≈krit. 05,128.42a *jāyamānābhi jāyate devāntsabrāhmaṇānvaśā*
 [AV. 12,4,10.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.004.html#av12.004.10)
 
 - **RU:** 1) — *abhi*: родиться для чего-либо (для деятельности, доли и т.д.) или для кого-либо; быть от рождения предназначенным для чего-либо; иметь по рождению права на что-либо; с acc.: *sa etadbhāgadheyamabhyajāyata yadagnihotram*
@@ -32,15 +32,15 @@
 **2)** — 2) geboren werden, entstehen: *te kṣipramevābhijajñire*
 [R. 1,16,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,19) *yadyonāvabhijāyate*
 [M. 2,247.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,247) *sa vai tathā vakra evābhyajāyat*
-[MBH. 3,10608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10608) = [≈Вульг. 3.130.16](mbh/3.130.html#v16) = ≈крит. 12,60.47a *ākūtyāṃ ruceryajño 'bhyajāyata*
+[MBH. 3,10608.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10608) = [≈Vulg. 3.130.16](mbh/3.130.html#v16) = ≈krit. 12,60.47a *ākūtyāṃ ruceryajño 'bhyajāyata*
 [BHĀG. P. 1,3,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,3,12) *hṛdayābhijāta*
 [5,8,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,24) *jātasneho yatra tanvābhijātaḥ*
 [3,25,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,31) *tapasā cīyate brahma tato 'nnamabhijāyate . annātprāṇaḥ*
 [MUṆḌ. UP. 1,1,8.] *tāmraṃ kārṣṇāyasaṃ cāpi taikṣṇyādevābhyajāyata*
 [R. 1,38,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,20) *kāmātkrodho 'bhijāyate*
 [BHAG. 2,62.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,62) *sarveṣāṃ tatra bhūtānāṃ lomaharṣo 'bhyajāyata*
-[MBH. 8,2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2927) = [≈Вульг. 8.59.19](mbh/8.59.html#v19) = ≈крит. 08,42.17c *abhijāta* angeboren, ererbt: *yattvasya sahajam — pitṛpaitāmahaṃ balam . abhijātabalaṃ nāma taccaturthabalaṃ smṛtam ..*
-[5,1357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1357) = [≈Вульг. 5.37.24](mbh/5.37.html#v24) = ≈крит. 05,37.22c _n._ Geburt: *abhijātakovidāḥ* Nativitätskundige
+[MBH. 8,2927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2927) = [≈Vulg. 8.59.19](mbh/8.59.html#v19) = ≈krit. 08,42.17c *abhijāta* angeboren, ererbt: *yattvasya sahajam — pitṛpaitāmahaṃ balam . abhijātabalaṃ nāma taccaturthabalaṃ smṛtam ..*
+[5,1357.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1357) = [≈Vulg. 5.37.24](mbh/5.37.html#v24) = ≈krit. 05,37.22c _n._ Geburt: *abhijātakovidāḥ* Nativitätskundige
 [BHĀG. P. 1,16,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,16,1)
 
 - **RU:** 2) — рождаться, возникать: *te kṣipramevābhijajñire*
@@ -61,9 +61,9 @@
 **3)** — 3) wiedergeboren werden: *śucīnāṃ śrīmatāṃ gehe yogabhraṣṭo 'bhijāyate*
 [BHAG. 6,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,41) *na sa bhūyo 'bhijāyate*
 [13,23.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,23) *aśvinostīrthamāsādya rūpavānabhijāyate*
-[MBH. 3,5087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5087) [13,5149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5149) = [≈Вульг. 13.106.18](mbh/13.106.html#v18) = ≈крит. 13,109.18a [5511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5511) = [≈Вульг. 13.111.113](mbh/13.111.html#v113) = ≈крит. 13,112.87a *te 'bhijātāḥ kurukṣetre brāhmaṇāḥ*
+[MBH. 3,5087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5087) [13,5149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5149) = [≈Vulg. 13.106.18](mbh/13.106.html#v18) = ≈krit. 13,109.18a [5511.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5511) = [≈Vulg. 13.111.113](mbh/13.111.html#v113) = ≈krit. 13,112.87a *te 'bhijātāḥ kurukṣetre brāhmaṇāḥ*
 [HARIV. 1293.](https://sanskrit-lexicon-scans.github.io/hariv?1293) sich wiedererzeugen: *tathāpyanudinaṃ tṛṣṇā mamaiteṣvabhijāyate*
-[MBH. 1,3514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3514) = [≈Вульг. 1.85.15](mbh/1.85.html#v15) = крит. —
+[MBH. 1,3514.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3514) = [≈Vulg. 1.85.15](mbh/1.85.html#v15) = krit. —
 
 - **RU:** 3) — возрождаться, рождаться вновь: *śucīnāṃ śrīmatāṃ gehe yogabhraṣṭo 'bhijāyate*
 [BHAG. 6,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,41) *na sa bhūyo 'bhijāyate*

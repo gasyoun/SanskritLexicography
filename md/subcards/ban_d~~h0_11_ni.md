@@ -9,11 +9,11 @@
 [KAUŚ. 80. 85. 49.]
 [MBH. 3,10030.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10030)
 [BHĀG. P. 8,24,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,36) [45.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,45)
-[MBH. 4,802.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.802) = [≈Вульг. 4.23.5](mbh/4.23.html#v5) = ≈крит. 04,22.5c
+[MBH. 4,802.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.802) = [≈Vulg. 4.23.5](mbh/4.23.html#v5) = ≈krit. 04,22.5c
 [Spr. 3585.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3585) *dāmnā nibaddhamudare — ulūkhalam*
 [HARIV. 3462.](https://sanskrit-lexicon-scans.github.io/hariv?3462) *śunaḥśephaṃ paśuṃ yūpe nibabandha*
 [R. GORR. 1,64,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,64,24) [HARIV. 7165.](https://sanskrit-lexicon-scans.github.io/hariv?7165) [7930.](https://sanskrit-lexicon-scans.github.io/hariv?7930) *nibadhyatāṃ me kavacam*
-[MBH. 7,74.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.74) = [≈Вульг. 7.2.23](mbh/7.2.html#v23) = ≈крит. 07,2.23a
+[MBH. 7,74.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.74) = [≈Vulg. 7.2.23](mbh/7.2.html#v23) = ≈krit. 07,2.23a
 [HARIV. 9460.](https://sanskrit-lexicon-scans.github.io/hariv?9460)
 [KUMĀRAS. 5,10.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?5,10)
 [KATHĀS. 28,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,159)
@@ -22,28 +22,28 @@
 [254,23.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?254,23) *nibaddha iva pāśena kiśoraḥ*
 [R. 2,40,39.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,39)
 [PRAB. 14,3.] *dharmapāśanibaddha*
-[MBH. 4,1613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1613) = [≈Вульг. 4.52.8](mbh/4.52.html#v8) = ≈крит. 04,47.8a
+[MBH. 4,1613.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1613) = [≈Vulg. 4.52.8](mbh/4.52.html#v8) = ≈krit. 04,47.8a
 [R. GORR. 2,11,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,11,28) [KATHĀS. 17,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,17) *uttarīyanibaddhagranthi*
 [PAÑCAT. 236,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?236,17) *mātā gāḍhaṃ nibadhnāti bandhaṃ devī nikṛntati*
 [PRAB. 106,9.] *vastrānte nibaddhāścuranāsikāḥ* gebunden in
 [VID. 131.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?131) *jarjarasnānaśāṭīnibaddham — alaṃkārabhāṇḍam*
 [MṚCCH. 49,11.] *jīrṇapaṭakhaṇḍanibaddhakanthā* zusammengenäht aus
 [Spr. 2044.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2044) *sūcyā sūtraṃ yathā vastre saṃsārayati vāyakaḥ . tadvatsaṃsārasūtraṃ hi tṛṣṇāsūcyā nibadhyate ..*
-[MBH. 12,7878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7878) = [≈Вульг. 12.220.5](mbh/12.220.html#v5) = ≈крит. 12,213.5c *ekanibaddhaveṇī* zusammengebunden
+[MBH. 12,7878.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7878) = [≈Vulg. 12.220.5](mbh/12.220.html#v5) = ≈krit. 12,213.5c *ekanibaddhaveṇī* zusammengebunden
 [HARIV. 7042.](https://sanskrit-lexicon-scans.github.io/hariv?7042) *dhanuṣī* sich anbinden
 [R. GORR. 2,31,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,31,28) [3,12,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,19) *dṛḍhataranibaddhamuṣṭi (kṛpāṇa)* befestigt
 [Spr. 1277.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1277) *saparivāro nibaddhaḥ* gefangen (im Netz)
 [PAÑCAT. 105,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?105,9) *arthairarthā nibadhyante gajairiva mahāgajāḥ*
 [Spr. 228.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?228) [2524.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2524) [3603.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3603)
-[MBH. 12,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.225) = [≈Вульг. 12.8.24](mbh/12.8.html#v24) = ≈крит. 12,8.24c *arthatastu nibadhyante mitrāṇi ripavastathā* so v. a. der Nutzen schafft uns Freunde wie Feinde
+[MBH. 12,225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.225) = [≈Vulg. 12.8.24](mbh/12.8.html#v24) = ≈krit. 12,8.24c *arthatastu nibadhyante mitrāṇi ripavastathā* so v. a. der Nutzen schafft uns Freunde wie Feinde
 [Spr. 4274.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4274) *ātmavantaṃ na karmāṇi nibadhnanti* fesseln, ketten
 [BHAG. 4,41.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,41) [9,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,9) [14,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?14,7) *kṛtvāpi na nibadhyate*
 [4,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,22) [18,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,17) [M. 6,74.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,74) [BHĀG. P. 4,26,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,26,8) [7,2,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,2,41) *yadyatpaśyāmi te gātram — tasmiṃstasmin — cakṣurmama nibadhyate*
 [R. 5,22,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,15) *dharmajñā dharmaśāstreṣu nibaddhā dharmasetuṣu*
-[MBH. 13,2477.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2477) = [≈Вульг. 13.45.17](mbh/13.45.html#v17) = ≈крит. 13,45.18a *guruśāstre 'nibaddhānām*
+[MBH. 13,2477.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2477) = [≈Vulg. 13.45.17](mbh/13.45.html#v17) = ≈krit. 13,45.18a *guruśāstre 'nibaddhānām*
 [1,1360.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1360) *ābaddhā mānuṣāḥ sarve sarve nibaddhāḥ karmaṇordvayoḥ . daive puruṣakāre ca* sind gekettet an
-[10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) = [≈Вульг. 10.2.2](mbh/10.2.html#v2) = ≈крит. 10,2.2c *tābhyāmubhābhyāṃ (daivena puruṣakāreṇa ca) sarvārthā nibaddhāḥ* hängen davon ab
-[73.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.73) = [≈Вульг. 10.2.4](mbh/10.2.html#v4) = ≈крит. 10,2.4c *(sadācāram) nibaddhaṃ sveṣu karmasu* gebunden an
+[10,71.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.71) = [≈Vulg. 10.2.2](mbh/10.2.html#v2) = ≈krit. 10,2.2c *tābhyāmubhābhyāṃ (daivena puruṣakāreṇa ca) sarvārthā nibaddhāḥ* hängen davon ab
+[73.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.73) = [≈Vulg. 10.2.4](mbh/10.2.html#v4) = ≈krit. 10,2.4c *(sadācāram) nibaddhaṃ sveṣu karmasu* gebunden an
 [M. 4,155.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,155)
 
 - **RU:** — *ni*
@@ -98,7 +98,7 @@ furchen
 [HARIV. 7066.](https://sanskrit-lexicon-scans.github.io/hariv?7066) *nibaddhavāṭasya śāleḥ* geschlossen, verstopft (so dass das Wasser nicht hineindringen kann)
 [KATHĀS. 34,203.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,203) *pāṣāṇacayanibaddhe kūpe* mit Steinen eingefasst
 [PAÑCAT. 211,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?211,5) *hemanibaddhacakra* mit Gold eingelegt, — verziert
-[MBH. 12,1585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1585) = [≈Вульг. 12.46.33](mbh/12.46.html#v33) = ≈крит. 12,46.33a [13,2785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2785) = [≈Вульг. 13.53.31](mbh/13.53.html#v31) = ≈крит. 13,53.30c *mandaṃ prakhyāyamānena rūpeṇāpratimena tām . nibaddhāṃ (pinaddhāṃ*
+[MBH. 12,1585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1585) = [≈Vulg. 12.46.33](mbh/12.46.html#v33) = ≈krit. 12,46.33a [13,2785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2785) = [≈Vulg. 13.53.31](mbh/13.53.html#v31) = ≈krit. 13,53.30c *mandaṃ prakhyāyamānena rūpeṇāpratimena tām . nibaddhāṃ (pinaddhāṃ*
 [R. 5,18,4](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,4)) *dhūmajālena prabhāmiva vibhāvasoḥ ..* eingehüllt in, bezogen mit
 [3,2662.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,2662) *pañcadhātunibaddhā* zusammengefügt aus
 [HARIV. 12030.](https://sanskrit-lexicon-scans.github.io/hariv?12030) *vicitrasadasatkarmanibaddhāḥ (jantavaḥ)* begleitet von, versehen mit
@@ -107,7 +107,7 @@ furchen
 [RAGH. 13,15.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,15) *aṣṭādaśasu mārgeṣu nibaddhāni (kāryāṇi)*
 [M. 8,3.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,3) *bhāṣyavārttikayornibaddhāni*
 [Verz. d. Oxf. H. No. 354.] *agrāhyamanibaddhaṃ ca vācā saṃparivarjayet* nicht in Worte gefasst so v. a. schlecht ausgedrückt
-[MBH. 13,7541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7541) = [≈Вульг. 13.162.10](mbh/13.162.html#v10) = ≈крит. 13,147.9a *anibaddhapralāpin* Unsinn schwatzend
+[MBH. 13,7541.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7541) = [≈Vulg. 13.162.10](mbh/13.162.html#v10) = ≈krit. 13,147.9a *anibaddhapralāpin* Unsinn schwatzend
 [YĀJÑ. 3,135.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,135) zusammenfügen so v. a. niederschreiben, abfassen, redigiren: *nibadhnīyāttathā sīmāṃ sarvāṃ stāṃścaiva nāmataḥ*
 [M. 8,255.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,255) *nibaddhaṃ puṇyamākhyānaṃ rāmāyaṇam*
 [R. GORR. 1,5,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,5,3) [VIKR. 36.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?36) [VARĀH. LAGHUJ. 1,2] in [Ind. St. 2,277.] [RĀJA-TAR. 1,8.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,8) [KATHĀS. 8,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,2) [5.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,5) [HALL] in der Einleit. zu [VĀSAVAD. 24.]
@@ -143,7 +143,7 @@ furchen
   <sub>attested</sub>
 
 **3)** — 3) festhalten, zurückhalten, hemmen: *nibadhnīmo 'sya pauruṣam*
-[MBH. 4,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.982) = [≈Вульг. 4.30.12](mbh/4.30.html#v12) = ≈крит. 04,29.12c *guhānibaddhapratiśabda*
+[MBH. 4,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.982) = [≈Vulg. 4.30.12](mbh/4.30.html#v12) = ≈krit. 04,29.12c *guhānibaddhapratiśabda*
 [RAGH. 2,28.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,28)
 
 - **RU:** — 3) удерживать, сдерживать, останавливать: *nibadhnīmo 'sya pauruṣam*
@@ -185,7 +185,7 @@ furchen
 
 **6)** — 6) *nibaddha* sich beziehend auf: *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.](https://sanskrit-lexicon-scans.github.io/hariv?2352) *kurukṣetranibaddhā (gāthā)*
-[MBH. 9,3029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3029) = [≈Вульг. 9.53.21](mbh/9.53.html#v21) = ≈крит. 09,52.17a
+[MBH. 9,3029.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3029) = [≈Vulg. 9.53.21](mbh/9.53.html#v21) = ≈krit. 09,52.17a
 
 - **RU:** — 6) *nibaddha* относящийся к: *rāme nibaddhāḥ (gāthāḥ)*
 [HARIV. 2352.](https://sanskrit-lexicon-scans.github.io/hariv?2352) *kurukṣetranibaddhā (gāthā)*

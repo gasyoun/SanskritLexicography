@@ -6,11 +6,11 @@
 **1)** — *ud*
  1) in die Höhe gehen, aufgehen, sich erheben, aufschiessen; von Gestirnen
 [VARĀH. BṚH. S. 7,19.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,19) [8,1.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?8,1) *śakrasyodgamya caraṇaṃ prasthito janamejayaḥ*
-[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330) = [≈Вульг. 13.6.36](mbh/13.6.html#v36) = ≈крит. 13,6.36c
+[MBH. 13,330.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.330) = [≈Vulg. 13.6.36](mbh/13.6.html#v36) = ≈krit. 13,6.36c
 [PAÑCAT. 47,18.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?47,18) *vātodgatareṇu*
 [ṚT. 1,10], v. l. *śālapota ivodgataḥ*
-[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) = [≈Вульг. 3.159.24](mbh/3.159.html#v24) = ≈крит. 03,156.23c [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942) = [≈Вульг. 1.151.12](mbh/1.151.html#v12) = крит. —; vgl. *śālamiva pravṛddham*
-[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Вульг. 3.270.9](mbh/3.270.html#v9) = ≈крит. 03,254.9a
+[MBH. 3,11690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11690) = [≈Vulg. 3.159.24](mbh/3.159.html#v24) = ≈krit. 03,156.23c [1,5942](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5942) = [≈Vulg. 1.151.12](mbh/1.151.html#v12) = krit. —; vgl. *śālamiva pravṛddham*
+[3,15703.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15703) = [≈Vulg. 3.270.9](mbh/3.270.html#v9) = ≈krit. 03,254.9a
 
 - **RU:** — *ud*
  1) подниматься вверх, восходить, вздыматься, вздыбливаться; о светилах

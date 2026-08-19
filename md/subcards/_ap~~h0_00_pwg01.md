@@ -56,9 +56,9 @@
 [VOP. 19,10.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?19,10) zu erreichen, zu erlangen streben: *sukṛtāṃ lokamīpsan*
 [AV. 9,5,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.12)
 [ŚAT. BR. 10,1,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,1,2,1) [12,1,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,1,1,1) [13,1,2,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,2,9) *viśiṣṭaṃ balamīpsantyā*
-[MBH. 1,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1090) = [≈Вульг. 1.16.22](mbh/1.16.html#v22) = ≈крит. 01,14.21a *tasya pārthivatāmīpse*
-[2,1007.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1007) = [≈Вульг. 2.26.14](mbh/2.26.html#v14) = ≈крит. 02,23.24a *tvadvadhamīpsamānāḥ*
-[3,13191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13191) = [≈Вульг. 3.192.51](mbh/3.192.html#v51) = ≈крит. 03,190.63c ved. *apsanta*
+[MBH. 1,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1090) = [≈Vulg. 1.16.22](mbh/1.16.html#v22) = ≈krit. 01,14.21a *tasya pārthivatāmīpse*
+[2,1007.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1007) = [≈Vulg. 2.26.14](mbh/2.26.html#v14) = ≈krit. 02,23.24a *tvadvadhamīpsamānāḥ*
+[3,13191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13191) = [≈Vulg. 3.192.51](mbh/3.192.html#v51) = ≈krit. 03,190.63c ved. *apsanta*
 [ṚV. 1,100,5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.100.html#rv01.100.05) : *tamapsanta śavasa utsaveṣu naro naramavase* . — partic. *īpsita*
 
 - **RU:** 4) = *āp*
@@ -81,7 +81,7 @@
 [N. 1,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?1,4)
 [R. 4,27,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,27,22) *vidadhe kāmadhukkāmānyasya yasyepsitānyathā*
 [VIŚV. 3,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app4?3,1) *labheta kāmānmanasā yathepsitān*
-[MBH. 3,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.161) = [≈Вульг. 3.3.31](mbh/3.3.html#v31) = ≈крит. 03,3.33a *yathepsitam* _adv._ nach Wunsch
+[MBH. 3,161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.161) = [≈Vulg. 3.3.31](mbh/3.3.html#v31) = ≈krit. 03,3.33a *yathepsitam* _adv._ nach Wunsch
 [AK. 2,9,57.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,9,57)
 [H. 1505.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1505)
 [BHAṬṬ. 2,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,28) _n._ Wunsch, Verlangen: *tava prasādādbhavatu — mamepsitam*

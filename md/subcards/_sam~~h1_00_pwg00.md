@@ -16,14 +16,14 @@
 [VS. 14,31.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?14,31) *imau lokāvaśāmyatām*
 [TS. 2,5,8,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,8,2) *no nvevātrāśamat* es ist noch nicht zur Ruhe gekommen
 [ŚAT. BR. 1,7,4,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,4,7) *śāmya mā śucaḥ*
-[MBH. 2,1936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1936) = [≈Вульг. 2.54.3](mbh/2.54.html#v3) = ≈крит. 02,50.3a [5,7319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [≈Вульг. 5.185.30](mbh/5.185.html#v30) = ≈крит. 05,186.29c *śāmyetpratyapakāreṇa nopakāreṇa durjanaḥ*
+[MBH. 2,1936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1936) = [≈Vulg. 2.54.3](mbh/2.54.html#v3) = ≈krit. 02,50.3a [5,7319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7319) = [≈Vulg. 5.185.30](mbh/5.185.html#v30) = ≈krit. 05,186.29c *śāmyetpratyapakāreṇa nopakāreṇa durjanaḥ*
 [KUMĀRAS. 2,40.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,40) *samatsaro 'pi śaśāma tena kṣitipālalokaḥ*
 [RAGH. 7,3.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?7,3)
 [Spr. (II) 2026.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2026 "Spr. (II) 2026: kṣīreṇātmagatodakāya hi guṇā dattāḥ purā te 'khilāḥ kṣīre tāpamavekṣya tena payasā svātmā kṛśānau hutaḥ | gantuṃ pāvakamunmanastadabhavaddṛṣṭvā tu mit… — (790.) Die Milch giebt ja zuvörderst dem Wasser, das sich zu ihm gesellt hat, alle seine guten Eigenschaften") [(I) 2132.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2132) [KATHĀS. 14,51.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,51) [PRAB. 5,14.] [BHĀG. P. 1,6,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,6,36) [BHAṬṬ. 14,106.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,106) *brahmarṣī śāmyantau* beruhigt
-[MBH. 1,6362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6362) = [≈Вульг. 1.164.11](mbh/1.164.html#v11) = ≈крит. 01,152.9a [4,651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.651) = [≈Вульг. 4.21.11](mbh/4.21.html#v11) = ≈крит. 04,20.8c
+[MBH. 1,6362.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6362) = [≈Vulg. 1.164.11](mbh/1.164.html#v11) = ≈krit. 01,152.9a [4,651.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.651) = [≈Vulg. 4.21.11](mbh/4.21.html#v11) = ≈krit. 04,20.8c
 [R. 4,44,45.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,44,45) *śāmyate*
-[MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) = [≈Вульг. 5.114.20](mbh/5.114.html#v20) = ≈крит. 05,112.20a *nahi te jātu śāmyerannṛte rājyena*
-[4678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4678) = [≈Вульг. 5.140.21](mbh/5.140.html#v21) = ≈крит. 05,138.21a *yadā śāmyanti vipruṣaḥ*
+[MBH. 5,3864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3864) = [≈Vulg. 5.114.20](mbh/5.114.html#v20) = ≈krit. 05,112.20a *nahi te jātu śāmyerannṛte rājyena*
+[4678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4678) = [≈Vulg. 5.140.21](mbh/5.140.html#v21) = ≈krit. 05,138.21a *yadā śāmyanti vipruṣaḥ*
 [ŚAT. BR. 14,2,2,28.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,28)
 [ṢAḌV. BR. 5,10.]
 [ŚĀṄKH. GṚHY. 6,6.]
@@ -33,7 +33,7 @@
 [Spr. (II) 3241.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3241 "Spr. (II) 3241: na jātu kāmaḥ kāmānāmupabhogena śāmyati | haviṣā kṛṣṇavartmeva bhūya evābhivardhate || — (1377.) Das Verlangen wird durch den Genuss der Dinge, nach denen man verlangt, nimmer gestillt: es wächst nur noch stärker an, wie Feuer durch Butter.") [(I) 4678.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4678) *vigrahaḥ*
 [KATHĀS. 56,96.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,96) *vairam*
 
-[MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) = [≈Вульг. 14.84.24](mbh/14.84.html#v24) = ≈крит. 14,85.23a (med.). *pittaṃ śarkarayā*
+[MBH. 14,2509](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2509) = [≈Vulg. 14.84.24](mbh/14.84.html#v24) = ≈krit. 14,85.23a (med.). *pittaṃ śarkarayā*
 [Spr. 3243.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3243) *vṛddhaṃ rajaḥ*
 [BHAṬṬ. 17,63.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?17,63) *śāmyannimeṣa*
 [11,31.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?11,31) *astram*
@@ -45,7 +45,7 @@
 [VARĀH. BṚH. S. 46,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,5) [48,84.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?48,84) *brāhmaṇastvanadhīyānastṛṇāgniriva śāmyati*
 [M. 3,168.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,168) *tejaḥ*
 [9,321.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,321) *tejāṃsi ca tamāṃsi ca*
-[MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) = [≈Вульг. 13.59.1](mbh/13.59.html#v1) = ≈крит. 13,58.1a *agnimārutau*
+[MBH. 13,3038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3038) = [≈Vulg. 13.59.1](mbh/13.59.html#v1) = ≈krit. 13,58.1a *agnimārutau*
 [HARIV. 95](https://sanskrit-lexicon-scans.github.io/hariv?95) (med.). [13954](https://sanskrit-lexicon-scans.github.io/hariv?13954) (*śāmyamāne tu samare pāvake* mit der neueren Ausg. zu lesen). *davāgniḥ*
 [RAGH. 2,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,14) *kopāgniḥ*
 [Spr. (II) 3422](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3422 "Spr. (II) 3422: na vittena na pāruṣyairna ca sāntvena vā śrutaiḥ | kopāgniḥ śāmyate rājaṃstoyāgniriva sāgare || — (4344.) Nicht durch Geld, nicht durch harte Worte, nicht durch Güte und nicht durch Unterweisung erlischt des Zornes Feuer, o König, eben so wenig wie das unter dem Wasser brennende Feuer im Meere.") (med.). *śaśāma dahano na punaḥ kranditadhvaniḥ*

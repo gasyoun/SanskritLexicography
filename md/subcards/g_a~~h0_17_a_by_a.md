@@ -8,7 +8,7 @@
 [ṚV. 1,164,27.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.164.html#rv01.164.27) *(tasya) pukkaso 'bhyāgāt* trat zu ihm
 [BHĀG. P. 9,21,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,21,10) *kṛṣṇasya nārado 'bhyāgādāśramam*
 [1,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,32) Jmd treffen, heimsuchen: *tvāṃ cedvyasanamabhyāgādidam*
-[MBH. 3,1120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1120) = [≈Вульг. 3.30.4](mbh/3.30.html#v4) = ≈крит. 03,31.3c
+[MBH. 3,1120.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1120) = [≈Vulg. 3.30.4](mbh/3.30.html#v4) = ≈krit. 03,31.3c
 
 - **RU:** — *abhyā*
  1) прийти, приблизиться, прийти к: *vatsamicchantī manasābhyāgāt*

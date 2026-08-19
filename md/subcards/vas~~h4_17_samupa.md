@@ -5,7 +5,7 @@
 
 **1)** — *samupa*
  1) fasten: *samupoṣita* gefastet habend
-[MBH. 13,3273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3273) = [≈Вульг. 13.64.22](mbh/13.64.html#v22) = ≈крит. 13,63.22c
+[MBH. 13,3273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3273) = [≈Vulg. 13.64.22](mbh/13.64.html#v22) = ≈krit. 13,63.22c
 [VARĀH. BṚH. S. 105,16.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?105,16)
 [BHĀG. P. 9,4,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,4,30)
 

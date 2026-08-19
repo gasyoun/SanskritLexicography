@@ -11,8 +11,8 @@
 [AIT. BR. 1,1.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,1)
 [ŚAT. BR. 1,3,5,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,10)
 [ŚĀṄKH. ŚR. 5,2,3.] [ĀŚV. ŚR. 2,17.] *āśiṣo 'nubruvāṇam*
-[MBH. 1,176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.176) = [≈Вульг. 1.1.222](mbh/1.1.html#v222) = ≈крит. 01,1.162c *etānhatvā kīdṛśaṃ tatsukhaṃ syādvindethāstadanubrūhi* sage, sprich
-[5,791.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.791) = [≈Вульг. 5.27.25](mbh/5.27.html#v25) = ≈крит. 05,27.25a *ṛte vāmīdṛśaṃ vākyaṃ kaḥ samartho hyunubruvan*
+[MBH. 1,176.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.176) = [≈Vulg. 1.1.222](mbh/1.1.html#v222) = ≈krit. 01,1.162c *etānhatvā kīdṛśaṃ tatsukhaṃ syādvindethāstadanubrūhi* sage, sprich
+[5,791.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.791) = [≈Vulg. 5.27.25](mbh/5.27.html#v25) = ≈krit. 05,27.25a *ṛte vāmīdṛśaṃ vākyaṃ kaḥ samartho hyunubruvan*
 [HARIV. 15494.](https://sanskrit-lexicon-scans.github.io/hariv?15494) Jmd Etwas vorsagen, lehren, mittheilen
 [ŚAT. BR. 11,5,4,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,4,12)
 [PĀR. GṚHY. 2,3.]
@@ -62,7 +62,7 @@ einladen zu (gen.): *somāya krītāya prohyamāṇāyānubrūhi*
   <sub>attested</sub>
 
 **anu-brū-3)** — 3) halten für, anerkennen für: *ekaḥ śāstā na dvitīyo 'sti śāstā yo hṛcchayastamahamanubravīmi*
-[MBH. 14,746. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.746) = [≈Вульг. 14.25.19](mbh/14.25.html#v19) = ≈крит. 14,25.17c *tathānubruvate tvāṃ hi* dafür halten sie ja dich
+[MBH. 14,746. fgg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.746) = [≈Vulg. 14.25.19](mbh/14.25.html#v19) = ≈krit. 14,25.17c *tathānubruvate tvāṃ hi* dafür halten sie ja dich
 [HARIV. 15319.](https://sanskrit-lexicon-scans.github.io/hariv?15319)
 
 - **RU:** — 3) считать кем-л., признавать кем-л.: *ekaḥ śāstā na dvitīyo 'sti śāstā yo hṛcchayastamahamanubravīmi*

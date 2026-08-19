@@ -9,10 +9,10 @@
 [ŚAT. BR. 5,2,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,2,3,3) [13,8,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,8,4,8)
 [R. 3,9,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,33) *idhmaṃ samāhitam*
 [AV. 10,6,35.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.006.html#av10.006.35) [6,76,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.076.html#av06.076.03) setzen —, legen —, stecken auf, an, in; Jmd Etwas auferlegen: *so 'haṃ bhāraṃ samādhāsye tvayi*
-[MBH. 7,4180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4180) = [≈Вульг. 7.110.55](mbh/7.110.html#v55) = ≈крит. 07,85.54a *tvayi bhāraḥ samāhitaḥ (= āhita*
+[MBH. 7,4180.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4180) = [≈Vulg. 7.110.55](mbh/7.110.html#v55) = ≈krit. 07,85.54a *tvayi bhāraḥ samāhitaḥ (= āhita*
 [MED. t. 225) 3,1464.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,225) *samito nāvyāhitam*
 [ṚV. 10,135,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.135.html#rv10.135.04) *samādhāyāyudhaṃ śamyām*
-[MBH. 4,157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.157) = [≈Вульг. 4.5.16](mbh/4.5.html#v16) = ≈крит. 04,5.14c *veṇyāṃ śastram*
+[MBH. 4,157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.157) = [≈Vulg. 4.5.16](mbh/4.5.html#v16) = ≈krit. 04,5.14c *veṇyāṃ śastram*
 [KĀM. NĪTIS. 7,54.] *padaṃ mūrdhni samādhatte keśarī mattadantinaḥ*
 [PAÑCAT. I,371.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,371) *astrametatsamādhāya* den Pfeil auflegen
 [R. 2,96,50.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,50)
@@ -20,17 +20,17 @@
 [R. 6,81,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,81,23) *tataḥ śaṅkhaṃ samādhāya vadane — taṃ dadhmau*
 [HARIV. 10482.](https://sanskrit-lexicon-scans.github.io/hariv?10482)
 [R. 5,82,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,82,19) *tasmādgarbhaṃ samādhatsva*
-[MBH. 1,4264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4264) = [≈Вульг. 1.105.45](mbh/1.105.html#v45) = ≈крит. 01,99.41a *ṛṣiṇā yastadā garbhastasyā dehe samāhitaḥ*
+[MBH. 1,4264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4264) = [≈Vulg. 1.105.45](mbh/1.105.html#v45) = ≈krit. 01,99.41a *ṛṣiṇā yastadā garbhastasyā dehe samāhitaḥ*
 [BRAHMA-P. in LA. 59,12.] *satye anyaḥ samāhitaḥ*
 [AV. 13,1,50.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.50) *yāvānpratyaṅsamāhitaḥ*
 [4,11,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.011.html#av04.011.08) [10,7,15.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.007.html#av10.007.15) [22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.007.html#av10.007.22) *indre sarvaṃ samāhitam*
 [29.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.001.html#av13.001.29) [11,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.007.html#av11.007.01) [2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av11.007.html#av11.007.02) [VS. 9,3.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?9,3) [CHĀND. UP. 8,1,3.] *tṛṇamuṣṭiṃ samādāya savitustaṃ samādadhat* legte in die Sonne
-[MBH. 3,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2933) = [≈Вульг. 3.75.12](mbh/3.75.html#v12) = ≈крит. 03,73.12a *balaṃ kṣatre samādadhan*
-[12706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12706) = [≈Вульг. 3.185.29](mbh/3.185.html#v29) = ≈крит. 03,183.25c [8724.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8724) *viśvā yasmintuviṣvaṇi samarye śuṣmamādadhuḥ*
+[MBH. 3,2933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2933) = [≈Vulg. 3.75.12](mbh/3.75.html#v12) = ≈krit. 03,73.12a *balaṃ kṣatre samādadhan*
+[12706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12706) = [≈Vulg. 3.185.29](mbh/3.185.html#v29) = ≈krit. 03,183.25c [8724.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8724) *viśvā yasmintuviṣvaṇi samarye śuṣmamādadhuḥ*
 [ṚV. 5,16,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.016.html#rv05.016.03) *kathaṃ cedaṃ tvayi karma samāhitam*
-[MBH. 3,2899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2899) = [≈Вульг. 3.74.10](mbh/3.74.html#v10) = ≈крит. 03,72.10a *tvamasya hetuḥ kāryasya tvayi caitatsamāhitam*
+[MBH. 3,2899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2899) = [≈Vulg. 3.74.10](mbh/3.74.html#v10) = ≈krit. 03,72.10a *tvamasya hetuḥ kāryasya tvayi caitatsamāhitam*
 [R. 4,40,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,12) Jmd übergeben. Jmdes Hut anvertrauen: *evaṃ tvayi samādhāya dharmarājam — ahamadya gamiṣyāmi*
-[MBH. 7,4253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4253) = [≈Вульг. 7.111.15](mbh/7.111.html#v15) = ≈крит. 07,86.15a einsetzen in: *tadātmasaṃbhavaṃ rājye mantrivaddhāḥ samādadhuḥ*
+[MBH. 7,4253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4253) = [≈Vulg. 7.111.15](mbh/7.111.html#v15) = ≈krit. 07,86.15a einsetzen in: *tadātmasaṃbhavaṃ rājye mantrivaddhāḥ samādadhuḥ*
 [RAGH. 17,8.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?17,8) *tatra dṛṣṭiṃ samādadhau* richtete den Blick dahin
 [R. 2,93,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,93,25) *cittam, cetaḥ, manaḥ, matim* den Geist —, die Gedanken fest auf Jmd oder Etwas (loc.) richten: *atha cittaṃ samādhātuṃ na śaknoṣi mayi sthiram*
 [BHAG. 12,9.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?12,9) *cetaḥ samādhīyatāṃ kāmyotpattivaśe svadhāmani*
@@ -40,7 +40,7 @@
 [R. GORR. 1,58,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,58,4) *yaṣṭavyameveti manaḥ samādhāya*
 [BHAG. 17,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?17,11) Vgl. u. 8. *ātmānam, manaḥ* ohne Ergänzung: seinen Geist auf einen Punkt richten, sich sammeln, sich fassen: *ātmānaṃ sa samādhāya yogāttathyamapaśyata*
 [HARIV. 579.](https://sanskrit-lexicon-scans.github.io/hariv?579)
-[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Вульг. 12.270.29](mbh/12.270.html#v29) = ≈крит. 12,262.27a *na śaśāka samādhātuṃ mano madanavepitam*
+[MBH. 12,9586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9586) = [≈Vulg. 12.270.29](mbh/12.270.html#v29) = ≈krit. 12,262.27a *na śaśāka samādhātuṃ mano madanavepitam*
 [BHĀG. P. 6,1,62.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,1,62) *manaḥ samādhāya nivṛttaśokaḥ*
 [R. 5,43,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,43,1) *samāhitena manasā*
 [BHĀG. P. 1,17,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,17,21) *˚dhī*
@@ -54,7 +54,7 @@
 [M. 6,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,43) *pañcendriya˚*
 [HARIV. 11575.](https://sanskrit-lexicon-scans.github.io/hariv?11575) Ohne Ergänzung
 [KAṬHOP. 2,24.]
-[M. 2,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,53) [104](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,104) u. s. w. [YĀJÑ. 1,26.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,26) [351.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,351) [MBH. 3,1466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1466) = [≈Вульг. 3.37.10](mbh/3.37.html#v10) = ≈крит. 03,38.9a [BHAG. 6,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,7) [R. 1,4,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,12) [8,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,16) [31,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,30) [4,31,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,31,14)
+[M. 2,53.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,53) [104](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,104) u. s. w. [YĀJÑ. 1,26.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,26) [351.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,351) [MBH. 3,1466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1466) = [≈Vulg. 3.37.10](mbh/3.37.html#v10) = ≈krit. 03,38.9a [BHAG. 6,7.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,7) [R. 1,4,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,12) [8,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,16) [31,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,30) [4,31,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,31,14)
 
 - **RU:** — *samā*
  1) подкладывать (дрова в огонь), разжигать, раздувать (огонь)
@@ -118,17 +118,17 @@
   <sub>attested</sub>
 
 **3)** — 3) vereinigen, verbinden, zusammenhalten: *naiva śakyā samādhātuṃ saṃnipāte mahācamūḥ*
-[MBH. 6,146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.146) = [≈Вульг. 6.3.78](mbh/6.3.html#v78) = ≈крит. 06,4.29a *samāhita* vereinigt. verbunden, versehen mit: *upaniṣadbhiḥ samāhitātmāsi*
+[MBH. 6,146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.146) = [≈Vulg. 6.3.78](mbh/6.3.html#v78) = ≈krit. 06,4.29a *samāhita* vereinigt. verbunden, versehen mit: *upaniṣadbhiḥ samāhitātmāsi*
 [ŚAT. BR. 14,6,11,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,6,11,1) *vedī sopadhyāyasamāhitā*
 [R. GORR. 1,33,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,33,8) *kārmukaṃ jyāsamāhitam*
 [6,7,47.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,7,47) *hemadaṇḍa˚*
 [HARIV. 9289.](https://sanskrit-lexicon-scans.github.io/hariv?9289) *śīlavṛtta˚*
-[MBH. 12,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1055) = [≈Вульг. 12.30.16](mbh/12.30.html#v16) = ≈крит. 12,30.14c *tapasyantamiha sthāṇuṃ niyamena samāhitam*
+[MBH. 12,1055.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1055) = [≈Vulg. 12.30.16](mbh/12.30.html#v16) = ≈krit. 12,30.14c *tapasyantamiha sthāṇuṃ niyamena samāhitam*
 [R. 1,25,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,25,11) vereint so v. a. alle insgesammt: *trayo lokāḥ samāhitāḥ*
 [HARIV. 12209.](https://sanskrit-lexicon-scans.github.io/hariv?12209)
-[MBH. 4,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.242) = [≈Вульг. 4.8.12](mbh/4.8.html#v12) = ≈крит. 04,7.10a
+[MBH. 4,242.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.242) = [≈Vulg. 4.8.12](mbh/4.8.html#v12) = ≈krit. 04,7.10a
 [DRAUP. 8,49.] so v. a. abgelaufen, vergangen: *kṛcchrāt drādaśarātre tu tasya rājñaḥ samāhite*
-[MBH. 1,6614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6614) = [≈Вульг. 1.171.39](mbh/1.171.html#v39) = ≈крит. 01,160.37c
+[MBH. 1,6614.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6614) = [≈Vulg. 1.171.39](mbh/1.171.html#v39) = ≈krit. 01,160.37c
 
 - **RU:** — 3) соединять, связывать, удерживать вместе: *naiva śakyā samādhātuṃ saṃnipāte mahācamūḥ*
 [MBH. 6,146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.146) = [≈Вульг. 6.3.78](mbh/6.3.html#v78) = ≈крит. 06,4.29a *samāhita* объединенный, связанный, снабженный: *upaniṣadbhiḥ samāhitātmāsi*
@@ -148,7 +148,7 @@
 
 bringen, wieder gut machen: *apaśyadbhūmibhāgāṃśca sarvataḥ susamāhitān*
 [R. 5,17,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,17,1) *na te (doṣāḥ) śakyāḥ samādhātum*
-[MBH. 15,194](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.194) = [≈Вульг. 15.5.25](mbh/15.5.html#v25) = ≈крит. 15,9.24c (= [HIT. III,38.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,38)) *utpannamāpadaṃ yastu samādhatte sa buddhimān*
+[MBH. 15,194](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.194) = [≈Vulg. 15.5.25](mbh/15.5.html#v25) = ≈krit. 15,9.24c (= [HIT. III,38.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,38)) *utpannamāpadaṃ yastu samādhatte sa buddhimān*
 [HIT. IV,6.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?4,6) *samāhita = nirvivādīkṛta* beigelegt, versöhnt
 [MED. t. 226.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,226)
 
@@ -178,7 +178,7 @@ bringen, wieder gut machen: *apaśyadbhūmibhāgāṃśca sarvataḥ susamāhit�
 [UPAG. AV. 20.] *kopaṃ samādadhe* so v. a. gerieth in Zorn
 [HARIV. 3919.](https://sanskrit-lexicon-scans.github.io/hariv?3919) *dhairyaṃ samādhāya*
 [R. 3,34,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,34,1) *trailokyavijayārthāya samadhāyaikaniścayam (tau)*
-[MBH. 1,7625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7625) = [≈Вульг. 1.207.15](mbh/1.207.html#v15) = ≈крит. 01,199.15a *mānaḥ samādhīyatām*
+[MBH. 1,7625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7625) = [≈Vulg. 1.207.15](mbh/1.207.html#v15) = ≈krit. 01,199.15a *mānaḥ samādhīyatām*
 [AMAR. 78.] *manasā yatnaḥ samādhīyatām*
 [BHARTṚ. 3,35.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,35)
 

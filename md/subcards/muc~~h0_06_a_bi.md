@@ -8,8 +8,8 @@
 - **RU:** — *abhi* отпускать: *nādharmaḥ kāraṇāpekṣī kartāramabhimuñcati*
   <sub>attested</sub>
 
-**2)** [MBH. 12,10949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10949) = [≈Вульг. 12.298.8](mbh/12.298.html#v8) = ≈крит. 12,287.8a schleudern, abschiessen: *abhyamuñcanta — śaravarṣāṇi*
-[7,3967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3967) = [≈Вульг. 7.106.9](mbh/7.106.html#v9) = ≈крит. 07,22.16a
+**2)** [MBH. 12,10949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10949) = [≈Vulg. 12.298.8](mbh/12.298.html#v8) = ≈krit. 12,287.8a schleudern, abschiessen: *abhyamuñcanta — śaravarṣāṇi*
+[7,3967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3967) = [≈Vulg. 7.106.9](mbh/7.106.html#v9) = ≈krit. 07,22.16a
 
 - **RU:** [MBH. 12,10949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10949) = [≈Вульг. 12.298.8](mbh/12.298.html#v8) = ≈крит. 12,287.8a метать, пускать (стрелу): *abhyamuñcanta — śaravarṣāṇi*
 [7,3967.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3967) = [≈Вульг. 7.106.9](mbh/7.106.html#v9) = ≈крит. 07,22.16a

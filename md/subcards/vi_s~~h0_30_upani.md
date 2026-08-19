@@ -16,7 +16,7 @@
   <sub>attested</sub>
 
 **2)** — 2) erfüllend, mit acc.: *ityetāni — sapta varṣāṇi bhāgaśaḥ . bhūtānyupaniviṣṭāni gatimanti dhruvāṇi ca ..*
-[MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Вульг. 6.6.53](mbh/6.6.html#v53) = ≈крит. 06,7.50a
+[MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Vulg. 6.6.53](mbh/6.6.html#v53) = ≈krit. 06,7.50a
 
 - **RU:** — 2) наполняющий, с acc.: *ityetāni — sapta varṣāṇi bhāgaśaḥ . bhūtānyupaniviṣṭāni gatimanti dhruvāṇi ca ..*
 [MBH. 6,248. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.248) = [≈Вульг. 6.6.53](mbh/6.6.html#v53) = ≈крит. 06,7.50a

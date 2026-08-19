@@ -5,7 +5,7 @@
 
 **4)** — *anu*
  4)
-[MBH. 7,9499](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499) = [≈Вульг. 7.202.8](mbh/7.202.html#v8) = ≈крит. 07,173.6a liest die [ed. Bomb.] *anuvrajāmi* st. *anudadāmi*.* — anudeyī* nach
+[MBH. 7,9499](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9499) = [≈Vulg. 7.202.8](mbh/7.202.html#v8) = ≈krit. 07,173.6a liest die [ed. Bomb.] *anuvrajāmi* st. *anudadāmi*.* — anudeyī* nach
 [SĀY.] Gefährtin.
 
 - **RU:** — *anu*

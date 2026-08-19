@@ -12,12 +12,12 @@
 [VOP. 26,107.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,107)
  1) fliegen, sich in der Luft schnell bewegen. dahin eilen
 [ṚV. 4,27,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.027.html#rv04.027.04) [5,59,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.059.html#rv05.059.07) *vayo antarikṣe patantaḥ*
-[10,80,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.080.html#rv10.080.05) [AV. 13,2,36.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.36) [VS. 18,52.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?18,52) [MBH. 1,8375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8375) = [≈Вульг. 1.227.47](mbh/1.227.html#v47) = ≈крит. 01,218.45a [8,1904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1904) = [≈Вульг. 8.41.31](mbh/8.41.html#v31) = крит. — *patadhvam* ebend. *patitā*
-[1907. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1907) = [≈Вульг. 8.41.34](mbh/8.41.html#v34) = ≈крит. 08,28.29a [1912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1912) = [≈Вульг. 8.41.39](mbh/8.41.html#v39) = ≈крит. 08,28.33c *patatāṃ* (vgl. *patant) varam*
-[1,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8390) = [≈Вульг. 1.228.10](mbh/1.228.html#v10) = ≈крит. 01,219.6c [4,51.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.51) = [≈Вульг. 4.2.24](mbh/4.2.html#v24) = ≈крит. 04,2.20a [BHĀG. P. 8,6,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,39) *vayasaḥ patamānasya (plavamānasya*
+[10,80,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.080.html#rv10.080.05) [AV. 13,2,36.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.36) [VS. 18,52.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?18,52) [MBH. 1,8375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8375) = [≈Vulg. 1.227.47](mbh/1.227.html#v47) = ≈krit. 01,218.45a [8,1904.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1904) = [≈Vulg. 8.41.31](mbh/8.41.html#v31) = krit. — *patadhvam* ebend. *patitā*
+[1907. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1907) = [≈Vulg. 8.41.34](mbh/8.41.html#v34) = ≈krit. 08,28.29a [1912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1912) = [≈Vulg. 8.41.39](mbh/8.41.html#v39) = ≈krit. 08,28.33c *patatāṃ* (vgl. *patant) varam*
+[1,8390.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8390) = [≈Vulg. 1.228.10](mbh/1.228.html#v10) = ≈krit. 01,219.6c [4,51.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.51) = [≈Vulg. 4.2.24](mbh/4.2.html#v24) = ≈krit. 04,2.20a [BHĀG. P. 8,6,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,6,39) *vayasaḥ patamānasya (plavamānasya*
 [R. GORR. 2,114,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,114,17)) [R. 2,105,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,105,29) *pakṣī papāta kham*
 [BHAṬṬ. 5,100.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,100) *ahaṃ patiṣyāmi vihāyasam*
-[MBH. 8,1903.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1903) = [≈Вульг. 8.41.30](mbh/8.41.html#v30) = ≈крит. 08,28.26c *teṣu teṣu patanvīro bhavaneṣu mahākapiḥ*
+[MBH. 8,1903.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1903) = [≈Vulg. 8.41.30](mbh/8.41.html#v30) = ≈krit. 08,28.26c *teṣu teṣu patanvīro bhavaneṣu mahākapiḥ*
 [R. 5,12,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,12,16) *capalamadhupaḥ puṣpamadhye papāta*
 [Spr. 822.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?822) *yadvāṃ ratho vibhiṣpatāt*
 [ṚV. 1,46,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.046.html#rv01.046.03) [2,16,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.016.html#rv02.016.03) *iṣavaḥ*
@@ -28,7 +28,7 @@
 [79,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.079.html#rv01.079.08) [ŚAT. BR. 3,6,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,6,2,6) [4,1,2,26.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,2,26) *jihvāyā agraṃ patat*
 [ṚV. 3,39,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.039.html#rv03.039.03) *keneṣitaṃ patati preṣitaṃ manaḥ*
 [KENOP. 1.] *patita* _n._ Flug
-[MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) = [≈Вульг. 8.41.37](mbh/8.41.html#v37) = ≈крит. 08,28.31c [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913) = [≈Вульг. 8.41.40](mbh/8.41.html#v40) = ≈крит. 08,28.35a
+[MBH. 8,1910.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1910) = [≈Vulg. 8.41.37](mbh/8.41.html#v37) = ≈krit. 08,28.31c [1913.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1913) = [≈Vulg. 8.41.40](mbh/8.41.html#v40) = ≈krit. 08,28.35a
 
 - **RU:** *pat*, *patati*
 [NAIGH. 2,14.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)
@@ -61,7 +61,7 @@
 **2)** — 2) sich herablassen, sich niederlassen, sich senken, sich niederwerfen, sich stürzen, sich werfen: *patati śalabhasamūha ivāśramadrumeṣu*
 [ŚĀK. 31.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?31) *patatpataṃga* die sich senkende, zum Untergang sich neigende Sonne
 [ŚIŚ. 1,12.] *aparāṃ diśamāsthāya patamāne divākare*
-[MBH. 6,4801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4801) = [≈Вульг. 6.105.32](mbh/6.105.html#v32) = ≈крит. 06,101.31a *candraḥ patati gagaṇādalpaśeṣairmayūkhaiḥ* ad
+[MBH. 6,4801.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4801) = [≈Vulg. 6.105.32](mbh/6.105.html#v32) = ≈krit. 06,101.31a *candraḥ patati gagaṇādalpaśeṣairmayūkhaiḥ* ad
 [ŚĀK. 78.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?78) *tatpādagrahāvapatatām* warfen sich nieder
 [BHĀG. P. 3,15,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,15,35) *ehi gaccha pattottiṣṭha*
 [Spr. 579.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?579) *kasmāttvaṃ pādayoḥ patito mama*
@@ -109,20 +109,20 @@
 [BHAṬṬ. 7,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,9) *mayyeva patito dhūmaketuḥ*
 [DHŪRTAS. 76,1.] *patinenāmbhasā channaḥ patamānena cāsakṛt*
 [DAŚ. 1,17.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,17) *puṣpavṛṣṭiḥ papāta ha*
-[MBH. 3,2995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2995) = [≈Вульг. 3.76.40](mbh/3.76.html#v40) = ≈крит. 03,75.15a
+[MBH. 3,2995.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2995) = [≈Vulg. 3.76.40](mbh/3.76.html#v40) = ≈krit. 03,75.15a
 [R. 1,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,19,10) *avāṅmukhasyopari puṣpavṛṣṭiḥ papāta*
 [RAGH. 2,60.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,60) *saṃtānakamayī vṛṣṭirbhavane cāsya petuṣī*
 [10,78.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?10,78) *reṇuḥ patati — āśramadrumeṣu*
 [ŚĀK. 31.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?31)
 [RAGH. 12,82.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,82)
 [MEGH. 105.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?105) *patamānāṃ saricchreṣṭhāṃ dhārayiṣye triviṣṭapāt*
-[MBH. 3,9951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9951) = [≈Вульг. 3.108.25](mbh/3.108.html#v25) = ≈крит. 03,107.23e *nadāḥ kumudāgrātpatantaḥ*
+[MBH. 3,9951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9951) = [≈Vulg. 3.108.25](mbh/3.108.html#v25) = ≈krit. 03,107.23e *nadāḥ kumudāgrātpatantaḥ*
 [BHĀG. P. 5,16,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,16,25) *yatra bhāgīrathī gaṅgā patate diśamuttarām*
-[MBH. 13,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1702) = [≈Вульг. 13.25.16](mbh/13.25.html#v16) = ≈крит. 13,26.15a *parvataiḥ patamānaiḥ*
+[MBH. 13,1702.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1702) = [≈Vulg. 13.25.16](mbh/13.25.html#v16) = ≈krit. 13,26.15a *parvataiḥ patamānaiḥ*
 [ARJ. 9. 10.] *nagāgrādiva śīrṇānāṃ śṛṅgāṇāṃ patatām*
-[MBH. 3,2540.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2540) = [≈Вульг. 3.65.9](mbh/3.65.html#v9) = крит. — *patitāni parṇāni, phalāni*
-[2816.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2816) = [≈Вульг. 3.72.9](mbh/3.72.html#v9) = ≈крит. 03,70.9a *patante (chinnā bhujāḥ)*
-[8,2544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2544) = [≈Вульг. 8.52.25](mbh/8.52.html#v25) = ≈крит. 08,36.24a [MĀRK. P. 17,4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,4) [49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) *vastrābharaṇāni patitāni*
+[MBH. 3,2540.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2540) = [≈Vulg. 3.65.9](mbh/3.65.html#v9) = krit. — *patitāni parṇāni, phalāni*
+[2816.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2816) = [≈Vulg. 3.72.9](mbh/3.72.html#v9) = ≈krit. 03,70.9a *patante (chinnā bhujāḥ)*
+[8,2544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2544) = [≈Vulg. 8.52.25](mbh/8.52.html#v25) = ≈krit. 08,36.24a [MĀRK. P. 17,4.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?17,4) [49,30.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,30) *vastrābharaṇāni patitāni*
 [VET. in LA. 14,4.] *suhṛjjane patanti na dāruṇāḥ śarāḥ*
 [ŚĀK. 156.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?156) *kṣaṇādeva brahmadaṇḍaḥ patenna kim*
 [RĀJA-TAR. 4,650. fgg.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,650) *vipruṣo 'ṅge patanti yāḥ*
@@ -130,8 +130,8 @@
 [ŚUK. in LA. 40,14.] *bhavāṅgapatitaṃ toyam*
 [R. 1,44,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,44,28) *aśru ca kapolapatitam*
 [ŚĀK. 142.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?142) *yathā ca puṣkarasyākṣāḥ patanti vaśavartinaḥ*
-[MBH. 3,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2286) = [≈Вульг. 3.59.10](mbh/3.59.html#v10) = ≈крит. 03,56.10a *vṛkṣeṣvāruhya saṃrabdhāḥ patitā viṣameṣu ca*
-[MBH. 3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Вульг. 3.65.14](mbh/3.65.html#v14) = ≈крит. 03,62.10a *parvatātpatitaḥ*
+[MBH. 3,2286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2286) = [≈Vulg. 3.59.10](mbh/3.59.html#v10) = ≈krit. 03,56.10a *vṛkṣeṣvāruhya saṃrabdhāḥ patitā viṣameṣu ca*
+[MBH. 3,2545.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2545) = [≈Vulg. 3.65.14](mbh/3.65.html#v14) = ≈krit. 03,62.10a *parvatātpatitaḥ*
 [P. 1,4,24](https://ashtadhyayi.com/sutraani/1/4/24), Sch.
 *prāsādātpatitaḥ*
 [2,1,38](https://ashtadhyayi.com/sutraani/2/1/38), Sch. *alakapatitaiḥ — mandārapuṣpaiḥ*
@@ -141,14 +141,14 @@
 [DAŚ. 1,23.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,23) *evaṃ svakarmapatitaṃ (janaṃ) bhavavaitaraṇyām*
 
 [BHĀG. P. 7,9,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,41) [4,22,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,22,13) *sa mumoha papāta ca*
-[MBH. 3,709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.709) [2375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2375) = [≈Вульг. 3.63.14](mbh/3.63.html#v14) = ≈крит. 03,60.13a [7,3318. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3318) = [≈Вульг. 7.92.59](mbh/7.92.html#v59) = ≈крит. 07,67.57a
+[MBH. 3,709.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.709) [2375.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2375) = [≈Vulg. 3.63.14](mbh/3.63.html#v14) = ≈krit. 03,60.13a [7,3318. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3318) = [≈Vulg. 7.92.59](mbh/7.92.html#v59) = ≈krit. 07,67.57a
 [DRAUP. 5,24.]
 [M. 11,112.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,112)
 [R. 1,28,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,28,26)
 [RAGH. 9,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,61)
 [KATHĀS. 35,58.](https://sanskrit-lexicon-scans.github.io/kss/index.html?35,58) *papāta sahasā bhūmau*
 [R. 2,72,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,16) [34,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,17)
-[MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) = [≈Вульг. 3.63.39](mbh/3.63.html#v39) = ≈крит. 03,60.38c
+[MBH. 3,2400.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2400) = [≈Vulg. 3.63.39](mbh/3.63.html#v39) = ≈krit. 03,60.38c
 [SUND. 4,19.]
 [RAGH. 3,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,61) *amedhye vā patenmattaḥ*
 [M. 11,96.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,96) *tāvattatpatitaṃ gṛham*
@@ -162,7 +162,7 @@
 [Spr. 855.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?855) *(śalyam) nayanādibhyaḥ patati*
 [SUŚR. 1,99,19.] *āraktā daśanā yasya śyāvā vā syuḥ patanti ca*
 [115,1.] *patitamūrdhaja*
-[MBH. 3,16157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16157) = [≈Вульг. 3.280.66](mbh/3.280.html#v66) = ≈крит. 03,264.65a *patita = panna*.* galita, cyuta*
+[MBH. 3,16157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16157) = [≈Vulg. 3.280.66](mbh/3.280.html#v66) = ≈krit. 03,264.65a *patita = panna*.* galita, cyuta*
 u. s. w. [H. 1490.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1490) [HALĀY. 4,82.](https://sanskrit-lexicon-scans.github.io/armh2/app1?4,82) = *praskanna* wohl gefallen in der Schlacht
 [H. 806.](https://sanskrit-lexicon-scans.github.io/abch2/app1?806)
 [HALĀY. 2,324.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,324)

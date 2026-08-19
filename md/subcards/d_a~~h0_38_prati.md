@@ -7,9 +7,9 @@
  1) zum Ersatz geben, heimgeben, zurückgeben: *ihaiva santaḥ prati dadma enat*
 [AV. 6,117,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.117.html#av06.117.02)
 [ŚAT. BR. 5,4,3,12.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,4,3,12) *pratidāsyāmi — puṃliṅgaṃ tava*
-[MBH. 5,7492.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7492) = [≈Вульг. 5.192.5](mbh/5.192.html#v5) = ≈крит. 05,193.4c *˚dāsye*
-[12,3290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3290) = [≈Вульг. 12.87.30](mbh/12.87.html#v30) = ≈крит. 12,88.28a *˚dāsyanti*
-[3291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3291) = [≈Вульг. 12.87.31](mbh/12.87.html#v31) = ≈крит. 12,88.29c [14,2660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2660) = [≈Вульг. 14.89.17](mbh/14.89.html#v17) = ≈крит. 14,91.16c *deyaṃ vā pratidīyatām*
+[MBH. 5,7492.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7492) = [≈Vulg. 5.192.5](mbh/5.192.html#v5) = ≈krit. 05,193.4c *˚dāsye*
+[12,3290.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3290) = [≈Vulg. 12.87.30](mbh/12.87.html#v30) = ≈krit. 12,88.28a *˚dāsyanti*
+[3291.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3291) = [≈Vulg. 12.87.31](mbh/12.87.html#v31) = ≈krit. 12,88.29c [14,2660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2660) = [≈Vulg. 14.89.17](mbh/14.89.html#v17) = ≈krit. 14,91.16c *deyaṃ vā pratidīyatām*
 [HARIV. 15092.](https://sanskrit-lexicon-scans.github.io/hariv?15092)
 [R. 5,47,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,47,20) *saṃdeśaṃ pratidāsyāmi viṣṇoḥ*
 [HARIV. 7250.](https://sanskrit-lexicon-scans.github.io/hariv?7250) *noktaṃ vacaḥ pratidadāti yadaiva pūrvam* als sie nicht antwortete auf das was man ihr sagte
@@ -31,9 +31,9 @@
   <sub>attested</sub>
 
 **2)** — 2) geben: *nivṛttaḥ pratidāsyāmi bhojanaṃ te*
-[MBH. 1,6721.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6721) = [≈Вульг. 1.175.11](mbh/1.175.html#v11) = ≈крит. 01,165.11a
+[MBH. 1,6721.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6721) = [≈Vulg. 1.175.11](mbh/1.175.html#v11) = ≈krit. 01,165.11a
 [R. 5,68,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,29) *jayaṃ te pratidāsyāmi*
-[MBH. 7,6976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6976) = [≈Вульг. 7.158.6](mbh/7.158.html#v6) = ≈крит. 07,133.6a Vgl. *apratītta, pratidāna* . — caus. dafür sorgen dass Etwas zurückgegeben werde: *satyaṃkārakṛtaṃ dravyaṃ dviguṇaṃ pratidāpayet*
+[MBH. 7,6976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6976) = [≈Vulg. 7.158.6](mbh/7.158.html#v6) = ≈krit. 07,133.6a Vgl. *apratītta, pratidāna* . — caus. dafür sorgen dass Etwas zurückgegeben werde: *satyaṃkārakṛtaṃ dravyaṃ dviguṇaṃ pratidāpayet*
 [YĀJÑ. 2,61.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,61)
 
 - **RU:** — 2) давать: *nivṛttaḥ pratidāsyāmi bhojanaṃ te*

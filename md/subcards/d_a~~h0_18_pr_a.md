@@ -4,7 +4,7 @@
 
 
 **1)** — *prā* geben, übergeben: *prādātuṃ tacca śakrastu kālaṃ cakre*
-[MBH. 1,8469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8469) = [≈Вульг. 1.230.8](mbh/1.230.html#v8) = ≈крит. 01,221.7c *jātamātrānputrāṃśca dārāṃśca bhavatāmiha . prādāyopanidhiṃ rājā pāṇḍuḥ svargamito gataḥ ..*
+[MBH. 1,8469.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8469) = [≈Vulg. 1.230.8](mbh/1.230.html#v8) = ≈krit. 01,221.7c *jātamātrānputrāṃśca dārāṃśca bhavatāmiha . prādāyopanidhiṃ rājā pāṇḍuḥ svargamito gataḥ ..*
 [4899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4899)
 
 - **RU:** — *prā* давать, передавать: *prādātuṃ tacca śakrastu kālaṃ cakre*

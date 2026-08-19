@@ -19,17 +19,17 @@
   <sub>attested</sub>
 
 **2))** — 2) Jmd (dat.) Etwas (acc.) zuführen, mittheilen: *anuneṣyāmyahaṃ vidyāṃ svayaṃ tubhyam*
-[MBH. 1,6481.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6481) = [≈Вульг. 1.169.2](mbh/1.169.html#v2) = ≈крит. 01,157.2c
+[MBH. 1,6481.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6481) = [≈Vulg. 1.169.2](mbh/1.169.html#v2) = ≈krit. 01,157.2c
 
 - **RU:** — 2) доставлять кому-л. (dat.) что-л. (acc.), сообщать: *anuneṣyāmyahaṃ vidyāṃ svayaṃ tubhyam*
 [MBH. 1,6481.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6481) = [≈Вульг. 1.169.2](mbh/1.169.html#v2) = ≈крит. 01,157.2c
   <sub>attested</sub>
 
 **3))** — 3) (an sich heranziehen) Jmd freundlich zureden, freundliche Worte an Jmd richten in der Absicht ihn günstig zu stimmen, zu gewinnen, zu versöhnen, Jmd bitten: *bhavato* (acc. pl.) *'nunayāmyevaṃ purū rājye 'bhiṣicyatām*
-[MBH. 1,3528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3528) = [≈Вульг. 1.85.29](mbh/1.85.html#v29) = ≈крит. 01,80.21c *praṇipātena sāntvena dānena ca mahāyaśāḥ . ṛtvijo 'nunayāmāsa*
-[8106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8106) = [≈Вульг. 1.221.63](mbh/1.221.html#v63) = ≈крит. 01,213.57a [3,14811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14811) = [≈Вульг. 3.238.16](mbh/3.238.html#v16) = ≈крит. 03,227.16c *anunītā hi bhīṣmeṇa*
-[5,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.52) = [≈Вульг. 5.3.12](mbh/5.3.html#v12) = ≈крит. 05,3.12c *ahaṃ tu tāṃ* (acc. pl.) *śitairvāṇairanunīya raṇe valāt*
-[53.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.53) = [≈Вульг. 5.3.13](mbh/5.3.html#v13) = ≈крит. 05,3.13c [13,5903.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5903) = [≈Вульг. 13.124.24](mbh/13.124.html#v24) = ≈крит. 13,125.23c [14,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.355) = [≈Вульг. 14.14.2](mbh/14.14.html#v2) = ≈крит. 14,14.2a [15,328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.328) = [≈Вульг. 15.10.27](mbh/15.10.html#v27) = ≈крит. 15,15.26c [HARIV. 11266.](https://sanskrit-lexicon-scans.github.io/hariv?11266) *na gacchema ṛṣerbhītā anuneṣyanti taṃ nṛpam*
+[MBH. 1,3528.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3528) = [≈Vulg. 1.85.29](mbh/1.85.html#v29) = ≈krit. 01,80.21c *praṇipātena sāntvena dānena ca mahāyaśāḥ . ṛtvijo 'nunayāmāsa*
+[8106.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8106) = [≈Vulg. 1.221.63](mbh/1.221.html#v63) = ≈krit. 01,213.57a [3,14811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14811) = [≈Vulg. 3.238.16](mbh/3.238.html#v16) = ≈krit. 03,227.16c *anunītā hi bhīṣmeṇa*
+[5,52.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.52) = [≈Vulg. 5.3.12](mbh/5.3.html#v12) = ≈krit. 05,3.12c *ahaṃ tu tāṃ* (acc. pl.) *śitairvāṇairanunīya raṇe valāt*
+[53.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.53) = [≈Vulg. 5.3.13](mbh/5.3.html#v13) = ≈krit. 05,3.13c [13,5903.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5903) = [≈Vulg. 13.124.24](mbh/13.124.html#v24) = ≈krit. 13,125.23c [14,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.355) = [≈Vulg. 14.14.2](mbh/14.14.html#v2) = ≈krit. 14,14.2a [15,328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.328) = [≈Vulg. 15.10.27](mbh/15.10.html#v27) = ≈krit. 15,15.26c [HARIV. 11266.](https://sanskrit-lexicon-scans.github.io/hariv?11266) *na gacchema ṛṣerbhītā anuneṣyanti taṃ nṛpam*
 [R. 1,8,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,20) [2,86,9](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,86,9) [87,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,87,17)
 [R. GORR. 1,23,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,23,26) *anunītā tvamasmābhiściraṃ sāntvena maithili . na ca naḥ kuruṣe vākyam*
 [5,25,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,35) [35,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,10) [6,101,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,101,24) *śirasā bhavatīmanunayāmi*

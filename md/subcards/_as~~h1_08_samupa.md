@@ -22,7 +22,7 @@
   <sub>attested</sub>
 
 **3)** — 3) in Gemeinschaft Jmd Ehre erzeigen, verehren: *keśavaṃ samupāsate . yatra brahmādayo devāḥ*
-[MBH. 3,5067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5067) = [≈Вульг. 3.82.125](mbh/3.82.html#v125) = ≈крит. 03,80.129c *nṛpatiriva — samupāsyate janena*
+[MBH. 3,5067.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5067) = [≈Vulg. 3.82.125](mbh/3.82.html#v125) = ≈krit. 03,80.129c *nṛpatiriva — samupāsyate janena*
 [MṚCCH. 33,4.] pass. mit einem sing.: *samupāsyata — śriyā*
 [RAGH. 8,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,14)
 

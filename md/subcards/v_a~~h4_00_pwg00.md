@@ -14,8 +14,8 @@
 [H. 1487](https://sanskrit-lexicon-scans.github.io/abch2/app1?1487)) [P. 6,4,2.](https://ashtadhyayi.com/sutraani/6/4/2) weben, flechten, künstlich ineinanderfügen, auch Reden, Lieder u. s. w.: *nāhaṃ tantuṃ na vi jānāmyotuṃ na yaṃ vayanti samare 'tamānāḥ*
 [ṚV. 6,9,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.009.html#rv06.009.02) *nirṇijam*
 [9,99,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.099.html#rv09.099.01) *vastrā*
-[5,47,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.06) [MBH. 1,723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.723) = [≈Вульг. 1.3.58](mbh/1.3.html#v58) = ≈крит. 01,3.61a *paṭaṃ vayantyau*
-[806.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.806) = [≈Вульг. 1.3.141](mbh/1.3.html#v141) = ≈крит. 01,3.146a *vayāmi pratyahaṃ pañca phuṭṭikāyugalāni yat*
+[5,47,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.06) [MBH. 1,723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.723) = [≈Vulg. 1.3.58](mbh/1.3.html#v58) = ≈krit. 01,3.61a *paṭaṃ vayantyau*
+[806.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.806) = [≈Vulg. 1.3.141](mbh/1.3.html#v141) = ≈krit. 01,3.146a *vayāmi pratyahaṃ pañca phuṭṭikāyugalāni yat*
 [KATHĀS. 52,99.](https://sanskrit-lexicon-scans.github.io/kss/index.html?52,99) *indrāyārkamahihatya ūvuḥ*
 [ṚV. 1,61,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.061.html#rv01.061.08) *mā tantuśchedi vayato dhiyaṃ me*
 [2,28,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.028.html#rv02.028.05) [38,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.038.html#rv02.038.04) [7,33,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.033.html#rv07.033.09) [10,53,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.053.html#rv10.053.06) [130,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.130.html#rv10.130.01) *ko asminprāṇamavayat*

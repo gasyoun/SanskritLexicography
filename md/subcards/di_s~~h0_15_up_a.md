@@ -5,7 +5,7 @@
 
 **1)** — *upā*
  1) anweisen, zuweisen: (Drupada spricht zu Yudhiṣṭhira) *bhavānvā vidhivatpāṇiṃ gṛhṇātu duhiturmama . yasya vā manyase vīra tasya kṛṣṇāmupādiśa*
-[MBH. 1,7239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7239) = [≈Вульг. 1.192.16](mbh/1.192.html#v16) = ≈крит. 01,184.16c
+[MBH. 1,7239.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7239) = [≈Vulg. 1.192.16](mbh/1.192.html#v16) = ≈krit. 01,184.16c
 
 - **RU:** — *upā*
  1) указывать, назначать: (Друпада говорит Йудхиштхира) *bhavānvā vidhivatpāṇiṃ gṛhṇātu duhiturmama . yasya vā manyase vīra tasya kṛṣṇāmupādiśa*

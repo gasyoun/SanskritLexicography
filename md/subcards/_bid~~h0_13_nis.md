@@ -14,27 +14,27 @@
 [KAUŚ. 61.] *vrīhīṇāṃ nakhairnirbhidya*
 [ŚAT. BR. 5,3,1,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?5,3,1,13) *nakhanirbhinna*
 [TBR. 1,7,3,4.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,7,3,4) *tadā devyaśmanā kukṣiṃ nirvibheda*
-[MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) = [≈Вульг. 1.176.32](mbh/1.176.html#v32) = ≈крит. 01,166.28a *nārāyaṇoruṃ nirbhidya*
+[MBH. 1,6790.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6790) = [≈Vulg. 1.176.32](mbh/1.176.html#v32) = ≈krit. 01,166.28a *nārāyaṇoruṃ nirbhidya*
 [HARIV. 4601.](https://sanskrit-lexicon-scans.github.io/hariv?4601)
 [PRAB. 116,2.]
 [DAŚAK.] in [BENF. Chr. 201,1.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?201) *snehaprasravanirbhinnamudvahantī stanāṃśukam* (so die v. l.)
 [VIKR. 150.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?150) *nirbhidyopari karṇikārakusumānyāśerate ṣaṭpadāḥ*
 [41.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?41) *ekaikaṃ yojanaṃ bhūmernirbhindantaḥ*
 [R. 1,40,15](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) ([41,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,41,16) [GORR.]). *(vyāghragaṇān) nirvibheda ca sāyakaiḥ*
-[MBH. 1,2834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2834) = [≈Вульг. 1.69.21](mbh/1.69.html#v21) = ≈крит. 01,63.15c [4563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4563) = [≈Вульг. 1.118.6](mbh/1.118.html#v6) = ≈крит. 01,109.6c [4,2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2001) = [≈Вульг. 4.62.5](mbh/4.62.html#v5) = ≈крит. 04,57.5a [2097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2097) = [≈Вульг. 4.65.11](mbh/4.65.html#v11) = ≈крит. 04,60.12a [7,4583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4583) = [≈Вульг. 7.115.44](mbh/7.115.html#v44) = ≈крит. 07,91.38a
+[MBH. 1,2834.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2834) = [≈Vulg. 1.69.21](mbh/1.69.html#v21) = ≈krit. 01,63.15c [4563.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4563) = [≈Vulg. 1.118.6](mbh/1.118.html#v6) = ≈krit. 01,109.6c [4,2001.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2001) = [≈Vulg. 4.62.5](mbh/4.62.html#v5) = ≈krit. 04,57.5a [2097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2097) = [≈Vulg. 4.65.11](mbh/4.65.html#v11) = ≈krit. 04,60.12a [7,4583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4583) = [≈Vulg. 7.115.44](mbh/7.115.html#v44) = ≈krit. 07,91.38a
 [HARIV. 6648.](https://sanskrit-lexicon-scans.github.io/hariv?6648) [10747.](https://sanskrit-lexicon-scans.github.io/hariv?10747)
 [R. 2,35,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,4) [3,55,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,10) [6,18,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,18,37)
 [RAGH. 9,61.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,61)
 [KATHĀS. 47,66.](https://sanskrit-lexicon-scans.github.io/kss/index.html?47,66) *vājinaḥ — tvakṣu nirbhidya*
 [BHAṬṬ. 9,67.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?9,67) *yayābhiyujya saṃgrāme śatruṃ nirbibhide raṇe*
 [HARIV. 12151.](https://sanskrit-lexicon-scans.github.io/hariv?12151) *na ca tatrāpyanirbhinnaḥ kaścidāsīt*
-[MBH. 6,3573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3573) = [≈Вульг. 6.81.43](mbh/6.81.html#v43) = ≈крит. 06,77.41a [7,4584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4584) = [≈Вульг. 7.115.45](mbh/7.115.html#v45) = ≈крит. 07,91.38c
+[MBH. 6,3573.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3573) = [≈Vulg. 6.81.43](mbh/6.81.html#v43) = ≈krit. 06,77.41a [7,4584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4584) = [≈Vulg. 7.115.45](mbh/7.115.html#v45) = ≈krit. 07,91.38c
 [R. 2,97,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,97,30)
 [VIKR. 144.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?144)
 [KATHĀS. 4,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,8) [22,128.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,128) [33,55.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,55) *nirbhidya mūrdhan* am Kopfe eine Oeffnung durchschlagend
 [BHĀG. P. 2,2,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,2,11) *bahudhā nirbibheda kham* so v. a. bildete eine Menge Oeffnungen
 [3,26,53.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,53) *kaṇṭakena — nirbibhedāsya locane* ausstechen
-[MBH. 3,10328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10328) = [≈Вульг. 3.120.6](mbh/3.120.html#v6) = ≈крит. 03,120.6a
+[MBH. 3,10328.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10328) = [≈Vulg. 3.120.6](mbh/3.120.html#v6) = ≈krit. 03,120.6a
 [HARIV. 1068.](https://sanskrit-lexicon-scans.github.io/hariv?1068) [1153.](https://sanskrit-lexicon-scans.github.io/hariv?1153)
 [BHĀG. P. 9,3,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,7) *hṛdayagranthim* lösen
 [5,25,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,25,8) pass. sich spalten, sich öffnen: *āṇḍaṃ nirabhidyata*

@@ -214,7 +214,7 @@
   <sub>attested</sub>
 
 **ni-prefix-1)** — Mit *vyupa*
-— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](mbh/6.3.html#v53) = ≈крит. 06,4.4a.
+— 1〉 sich beruhigen [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Vulg. 6.3.53](mbh/6.3.html#v53) = ≈krit. 06,4.4a.
 
 - **RU:** — С *vyupa*
 — 1〉 успокаиваться [MBH. 6,121,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?6,121,52) = [≈Вульг. 6.3.53](mbh/6.3.html#v53) = ≈крит. 06,4.4a.

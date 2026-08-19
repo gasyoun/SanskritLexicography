@@ -8,12 +8,12 @@
 [ṚV. 4,20,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.020.html#rv04.020.05) *kastāṃ vidvā abhi manyāte andhām*
 [10,27,11.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.027.html#rv10.027.11) [86,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.086.html#rv10.086.09) *na tveva jyāyasīṃ vṛttimabhimanyeta karhicit*
 [M. 10,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,95) *sakhyaṃ tadeva bhavatu śaśvadyadabhimanyase*
-[MBH. 1,6353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6353) = [≈Вульг. 1.164.2](mbh/1.164.html#v2) = ≈крит. 01,152.1a *na paścātte 'bhimanyante mudhāmapi*
+[MBH. 1,6353.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6353) = [≈Vulg. 1.164.2](mbh/1.164.html#v2) = ≈krit. 01,152.1a *na paścātte 'bhimanyante mudhāmapi*
 [R. 2,61,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,13) *˚mantum*
 [18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,61,18), [88,20](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,88,20) ([96,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,96,23) [GORR.]). *adhikaṃ yo 'bhimanyeta*
 [BHĀG. P. 7,14,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,14,8) *kaccinna paradārānvā rājaputro 'bhimanyate*
 [R. 2,72,45.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,45)
-[MBH. 4,412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.412) = [≈Вульг. 4.14.40](mbh/4.14.html#v40) = крит. — gern haben, mögen: *dhārmikaṃ pālanaparaṃ samyakparapuraṃjayam . rājānamabhimanyante prajāpatimiva prajāḥ ..*
+[MBH. 4,412.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.412) = [≈Vulg. 4.14.40](mbh/4.14.html#v40) = krit. — gern haben, mögen: *dhārmikaṃ pālanaparaṃ samyakparapuraṃjayam . rājānamabhimanyante prajāpatimiva prajāḥ ..*
 [Spr. 1329.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1329) *bhartāraṃ nābhimanyante vinipātagataṃ striyaḥ*
 [3643](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3643), v. l. *abhimata* gewünscht, gern gesehen, lieb,
 
@@ -39,7 +39,7 @@ genehm: *yadvābhimatamatyartham*
 [HIT. 67,20](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?67,20), v. l. *paramabhimataṃ naḥ*
 [MĀLAV. 14,19.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?14,19) *tena śroṇīmabhimatāṃ strī saumye pratipadyate*
 [HARIV. 7898.](https://sanskrit-lexicon-scans.github.io/hariv?7898) *satāṃ cābhimatāṃ sadā (giram)*
-[MBH. 4,914.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.914) = [≈Вульг. 4.28.2](mbh/4.28.html#v2) = ≈крит. 04,27.2a *anabhimata* Unangenehmes, Widerwärtiges
+[MBH. 4,914.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.914) = [≈Vulg. 4.28.2](mbh/4.28.html#v2) = ≈krit. 04,27.2a *anabhimata* Unangenehmes, Widerwärtiges
 [HIT. 9,8.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?9,8) compar.: *parārthaścetsvārthādabhimamatataraḥ*
 [Spr. 4513.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4513) *˚moda*
 [ṚT. 5,15.] gern gesehen, geliebt, lieb; von Personen: *sutāḥ satāmabhimatāḥ*
@@ -111,7 +111,7 @@ genehm: *yadvābhimatamatyartham*
 [12,5,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,5,1,16) [PAÑCAV. BR. 21,14,13.] *viśvarūpaṃ tvāṣṭramabhyamaṃsta* hatte getödtet
 [AIT. BR. 7,28.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,28) *śvānaṃ caturakṣamabhimanyasva* bringe um
 [KĀTY. ŚR. 20,1,38.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?20,1,38) — *yo 'yameko 'bhimanute (= hinasti* Schol.) *sarvān loke dhanurbhṛtaḥ* bedroht
-[MBH. 3,1388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1388) = [≈Вульг. 3.35.13](mbh/3.35.html#v13) = ≈крит. 03,36.13c *nābhimanyeta kaṃ ca na* (so die [ed. Bomb.])
+[MBH. 3,1388.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1388) = [≈Vulg. 3.35.13](mbh/3.35.html#v13) = ≈krit. 03,36.13c *nābhimanyeta kaṃ ca na* (so die [ed. Bomb.])
 [Spr. 3410.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3410)
 [BHĀG. P. 4,24,56.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,24,56)
 
@@ -133,8 +133,8 @@ genehm: *yadvābhimatamatyartham*
 
 **3)** — 3) zugeben, freistellen: *abhimate 'numate vā* (wenn sie es angenommen oder ihm überlassen haben
 [STENZ.]) [ĀŚV. GṚHY. 4,7,28.] *lokavṛddhatame kṛṣṇe yo 'rhaṇāṃ nābhimanyate* nicht zulässt
-[MBH. 2,1374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1374) = [≈Вульг. 2.38.6](mbh/2.38.html#v6) = ≈крит. 02,35.6c *vivāsyamānānasthāne nagare yo 'bhimanyate* der es zugiebt, dass sie verbannt werden,
-[1,5743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5743) = [≈Вульг. 1.142.23](mbh/1.142.html#v23) = ≈крит. 01,132.7c *sābhimatā tasya ripau vṛttiḥ sanātanī*
+[MBH. 2,1374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1374) = [≈Vulg. 2.38.6](mbh/2.38.html#v6) = ≈krit. 02,35.6c *vivāsyamānānasthāne nagare yo 'bhimanyate* der es zugiebt, dass sie verbannt werden,
+[1,5743.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5743) = [≈Vulg. 1.142.23](mbh/1.142.html#v23) = ≈krit. 01,132.7c *sābhimatā tasya ripau vṛttiḥ sanātanī*
 [Spr. 3433.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3433) *ātmānamaṅga śirasā haraye 'bhimene (= aṅgīkṛtavān* Schol.) zur Verfügung stellen
 [BHĀG. P. 2,7,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,18)
 

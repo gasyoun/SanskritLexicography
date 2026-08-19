@@ -6,8 +6,8 @@
 **1)** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])
  1) am Ende eines comp. trinkend: *amṛta˚*
-[MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) = [≈Вульг. 12.287.48](mbh/12.287.html#v48) = ≈крит. 12,276.47a *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
-[10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) = [≈Вульг. 12.287.49](mbh/12.287.html#v49) = ≈крит. 12,276.48a Vgl. *agre˚, indrapātama* (mit passiver Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. und auch 1. *pa* .
+[MBH. 12,10435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10435) = [≈Vulg. 12.287.48](mbh/12.287.html#v48) = ≈krit. 12,276.47a *viṣāgni˚, mṛtyu˚, kṣīra˚, madhuścyutānāmagrapāḥ, tuṣitājya˚*
+[10436.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10436) = [≈Vulg. 12.287.49](mbh/12.287.html#v49) = ≈krit. 12,276.48a Vgl. *agre˚, indrapātama* (mit passiver Bed.), *añjaspā, ṛtu˚, ṛdū˚, kīlāla˚, payaspā, pūrva˚, madhu˚, soma˚* u. s. w. und auch 1. *pa* .
 
 - **RU:** 2. *pā* (= 1. *pā*) _adj._ (*pā* [sic] *pātari*
 [MED. p.])

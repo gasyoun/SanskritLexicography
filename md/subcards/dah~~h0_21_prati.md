@@ -15,7 +15,7 @@
   <sub>attested</sub>
 
 **2)** [CHĀND. UP. 2,22,4.] — pass. verbrennen (intrans.): *vaiśvānaraṃ yathā prāpya pratidahyanti vai janāḥ*
-[MBH. 8,2750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2750) = [≈Вульг. 8.56.54](mbh/8.56.html#v54) = ≈крит. 08,40.56a
+[MBH. 8,2750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2750) = [≈Vulg. 8.56.54](mbh/8.56.html#v54) = ≈krit. 08,40.56a
 
 - **RU:** [CHĀND. UP. 2,22,4.] — pass. сжигать (intrans.): *vaiśvānaraṃ yathā prāpya pratidahyanti vai janāḥ*
 [MBH. 8,2750.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.2750) = [≈Вульг. 8.56.54](mbh/8.56.html#v54) = ≈крит. 08,40.56a

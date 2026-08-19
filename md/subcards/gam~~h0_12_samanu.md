@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **2)** — 2) eindringen in, durchdringen: *yadidaṃ dharmagahanaṃ buḍhyā samanugamyate*
-[MBH. 11,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.125) = [≈Вульг. 11.5.2](mbh/11.5.html#v2) = ≈крит. 11,5.2a *sarveṣu hi vedānteṣu vākyāni tātparyeṇaiva svārthasya prātipādakatvena samanugatāni*
+[MBH. 11,125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.125) = [≈Vulg. 11.5.2](mbh/11.5.html#v2) = ≈krit. 11,5.2a *sarveṣu hi vedānteṣu vākyāni tātparyeṇaiva svārthasya prātipādakatvena samanugatāni*
 [WIND. Sancara 109.]
 
 - **RU:** — 2) проникать во что-л., пронизывать: *yadidaṃ dharmagahanaṃ buḍhyā samanugamyate*

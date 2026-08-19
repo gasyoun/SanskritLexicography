@@ -23,7 +23,7 @@
 - **RU:** — 7) [Ind. St. 8,310.]
   <sub>attested</sub>
 
-**9)** — 9) *jñānābhisaṃhita* so v. a. erkannt im Gegens. zu *jñeya* [MBH. 12,7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](mbh/12.207.html#v6) = ≈крит. 12,200.6a nach [NĪLAK.] *jñānaśabdenābhisaṃhitaṃ jñānaśabdābhidheyaṃ brahma* .
+**9)** — 9) *jñānābhisaṃhita* so v. a. erkannt im Gegens. zu *jñeya* [MBH. 12,7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Vulg. 12.207.6](mbh/12.207.html#v6) = ≈krit. 12,200.6a nach [NĪLAK.] *jñānaśabdenābhisaṃhitaṃ jñānaśabdābhidheyaṃ brahma* .
 
 - **RU:** — 9) *jñānābhisaṃhita* так преим. распознан в противоп. к *jñeya* [MBH. 12,7426.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7426) = [≈Вульг. 12.207.6](mbh/12.207.html#v6) = ≈крит. 12,200.6a по [NĪLAK.] *jñānaśabdenābhisaṃhitaṃ jñānaśabdābhidheyaṃ brahma* .
   <sub>attested</sub>

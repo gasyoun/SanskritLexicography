@@ -18,7 +18,7 @@
 [24.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,24) *te purāṇi sarāṣṭrāṇi — anveṣanto nalaṃ rājannādhijagmuḥ*
 [17,45.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,45) *deśamanyaṃ durādharṣamanvaiṣan*
 [R. 4,48,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,48,7) *anveṣamāṇa*
-[MBH. 1,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5253) = [≈Вульг. 1.132.2](mbh/1.132.html#v2) = крит. — [6585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6585) = [≈Вульг. 1.171.10](mbh/1.171.html#v10) = ≈крит. 01,160.10a [3,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2379) = [≈Вульг. 3.63.18](mbh/3.63.html#v18) = ≈крит. 03,60.17a [2452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2452) = [≈Вульг. 3.64.52](mbh/3.64.html#v52) = ≈крит. 03,61.49a [12664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12664) = [≈Вульг. 3.184.13](mbh/3.184.html#v13) = ≈крит. 03,182.12e
+[MBH. 1,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5253) = [≈Vulg. 1.132.2](mbh/1.132.html#v2) = krit. — [6585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6585) = [≈Vulg. 1.171.10](mbh/1.171.html#v10) = ≈krit. 01,160.10a [3,2379.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2379) = [≈Vulg. 3.63.18](mbh/3.63.html#v18) = ≈krit. 03,60.17a [2452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2452) = [≈Vulg. 3.64.52](mbh/3.64.html#v52) = ≈krit. 03,61.49a [12664.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12664) = [≈Vulg. 3.184.13](mbh/3.184.html#v13) = ≈krit. 03,182.12e
 
 - **RU:** — *anu* искать, разыскивать, обыскивать: *yamanveṣasi rājānam*
 [N. 12,21.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?12,21) *patimanveṣatīm*

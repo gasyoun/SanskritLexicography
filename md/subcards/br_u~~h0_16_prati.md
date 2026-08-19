@@ -10,7 +10,7 @@
 [LĀṬY. 9,10,9.]
 [CHĀND. UP. 4,4,4.]
 [KAUṢ. UP. 1,1. 2. 5.]
-[MBH. 3,2737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2737) = [≈Вульг. 3.69.44](mbh/3.69.html#v44) = ≈крит. 03,67.16c [12,1962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1962)
+[MBH. 3,2737.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2737) = [≈Vulg. 3.69.44](mbh/3.69.html#v44) = ≈krit. 03,67.16c [12,1962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1962)
 [RAGH. 2,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,42)
 [KATHĀS. 11,52.](https://sanskrit-lexicon-scans.github.io/kss/index.html?11,52) [13,63.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,63) [43,220.](https://sanskrit-lexicon-scans.github.io/kss/index.html?43,220) [50,125.](https://sanskrit-lexicon-scans.github.io/kss/index.html?50,125)
 [VID. 297.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?297)

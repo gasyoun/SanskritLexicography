@@ -9,7 +9,7 @@
 [AV. 19,58,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.058.html#av19.058.03) *panthām*
 [18,3,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.04) *pathyām*
 [AIT. BR. 1,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,7) *puṇyāni tīrthāṇi nadīprasravaṇāni*
-[MBH. 12,7002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7002) = [≈Вульг. 12.194.27](mbh/12.194.html#v27) = ≈крит. 12,187.25c
+[MBH. 12,7002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7002) = [≈Vulg. 12.194.27](mbh/12.194.html#v27) = ≈krit. 12,187.25c
 
 - **RU:** — *anusam*
  1) следовать (за кем-л.), идти вдоль (чего-л.); посещать [TS. 1,5,10,14.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,5,10,14) *pṛthivīm* [AV. 19,58,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.058.html#av19.058.03) *panthām* [18,3,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.003.html#av18.003.04) *pathyām* [AIT. BR. 1,7.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,7) *puṇyāni tīrthāṇi nadīprasravaṇāni* [MBH. 12,7002.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7002) = [≈Вульг. 12.194.27](mbh/12.194.html#v27) = ≈крит. 12,187.25c
@@ -32,8 +32,8 @@
 [TBR. 3,1,1,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,7) *imāllokānkāmānnī kāmarūpyanusaṃcaran*
 [TAITT. UP. 3,10,5.] *ubhau lokau*
 [BṚH. ĀR. UP. 4,3,7.] *deśānanusaṃcarāmo vanāni ca kṛcchrāṇi*
-[MBH. 3,1366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1366) = [≈Вульг. 3.34.13](mbh/3.34.html#v13) = ≈крит. 03,35.12a *pṛthivīmanvasaṃcarat* (mit versetztem Augment)
-[1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) = [≈Вульг. 1.138.30](mbh/1.138.html#v30) = ≈крит. 08,55.10c *yathā mahāmatsya ubhe kūle anusaṃcarati* von einem Ufer zum andern reicht
+[MBH. 3,1366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1366) = [≈Vulg. 3.34.13](mbh/3.34.html#v13) = ≈krit. 03,35.12a *pṛthivīmanvasaṃcarat* (mit versetztem Augment)
+[1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) = [≈Vulg. 1.138.30](mbh/1.138.html#v30) = ≈krit. 08,55.10c *yathā mahāmatsya ubhe kūle anusaṃcarati* von einem Ufer zum andern reicht
 [ŚAT. BR. 14,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,18)
 
 - **RU:** — 3) распространяться через что-л., — вплоть до, пронизывать; проходить насквозь: *rohito raśmibhirbhūmiṃ samudramanu saṃ carat* [AV. 13,2,40.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.40) *prāṇaḥ sarvāṇyaṅgānyanu saṃcarati* [ŚAT. BR. 1,3,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,2,3) [12,7,3,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,22) *(puruṣaḥ) kasya kāmāya śarīramanu saṃcaret* [14,7,2,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,2,16) [2,3,2,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,3) солнце *imāṃ lokāṃstantramivānusaṃcarati* [14,2,2,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,22) *ye (sarpāḥ) divaṃ devīmanusaṃcaranti* [TBR. 3,1,1,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?3,1,1,7) *imāllokānkāmānnī kāmarūpyanusaṃcaran* [TAITT. UP. 3,10,5.] *ubhau lokau* [BṚH. ĀR. UP. 4,3,7.] *deśānanusaṃcarāmo vanāni ca kṛcchrāṇi* [MBH. 3,1366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1366) = [≈Вульг. 3.34.13](mbh/3.34.html#v13) = ≈крит. 03,35.12a *pṛthivīmanvasaṃcarat* (с переставленным augment'ом) [1,5515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5515) = [≈Вульг. 1.138.30](mbh/1.138.html#v30) = ≈крит. 08,55.10c *yathā mahāmatsya ubhe kūle anusaṃcarati* простирается от одного берега до другого [ŚAT. BR. 14,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,18)
@@ -47,8 +47,8 @@
   <sub>attested</sub>
 
 **5)** — 5) herumirren: *pṛthivyāmanusaṃcaranti*
-[MBH. 1,3606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3606) = [≈Вульг. 1.90.7](mbh/1.90.html#v7) = ≈крит. 01,85.7a — caus. übergehen in, werden zu: *tāṃścānusaṃcārya (tān* d. i. *devān*)
-[MBH. 12,11208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11208) = [≈Вульг. 12.301.88](mbh/12.301.html#v88) = ≈крит. 12,290.83a
+[MBH. 1,3606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3606) = [≈Vulg. 1.90.7](mbh/1.90.html#v7) = ≈krit. 01,85.7a — caus. übergehen in, werden zu: *tāṃścānusaṃcārya (tān* d. i. *devān*)
+[MBH. 12,11208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11208) = [≈Vulg. 12.301.88](mbh/12.301.html#v88) = ≈krit. 12,290.83a
 
 - **RU:** — 5) блуждать, скитаться: *pṛthivyāmanusaṃcaranti* [MBH. 1,3606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3606) = [≈Вульг. 1.90.7](mbh/1.90.html#v7) = ≈крит. 01,85.7a — caus. переходить в, становиться (чем-л.): *tāṃścānusaṃcārya (tān* т.е. *devān*) [MBH. 12,11208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11208) = [≈Вульг. 12.301.88](mbh/12.301.html#v88) = ≈крит. 12,290.83a
   <sub>attested</sub>

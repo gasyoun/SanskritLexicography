@@ -32,10 +32,10 @@
 [ŚAT. BR. 14,4,3,29.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,29) [32.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,32)
 [ŚVETĀŚV. UP. 5,7.] *uparyupari saṃcarantaḥ* darüber gehend
 [CHĀND. UP. 8,3,2.] *divi saṃcaramāṇāni — jyotīṃṣi*
-[MBH. 12,6669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6669) = [≈Вульг. 12.181.8](mbh/12.181.html#v8) = ≈крит. 12,174.8a *naiva vātāḥ pravāyante na meghāḥ saṃcaranti ca* es ziehen keine Wolken auf
+[MBH. 12,6669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6669) = [≈Vulg. 12.181.8](mbh/12.181.html#v8) = ≈krit. 12,174.8a *naiva vātāḥ pravāyante na meghāḥ saṃcaranti ca* es ziehen keine Wolken auf
 [HARIV. 10758.](https://sanskrit-lexicon-scans.github.io/hariv?10758) *kalahaṃsaḥ*
 [PAÑCAT. I,335.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,335) *saṃcarantī vane*
-[MBH. 1,3932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3932) = [≈Вульг. 1.99.13](mbh/1.99.html#v13) = ≈крит. 01,93.13c
+[MBH. 1,3932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3932) = [≈Vulg. 1.99.13](mbh/1.99.html#v13) = ≈krit. 01,93.13c
 [BHARTṚ. 1,85.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,85) *rājamārgo hi śūnyo 'yaṃ rakṣiṇaḥ saṃcaranti*
 [MṚCCH. 26,7.] *vane vyādhāḥ*
 [HIT. 39,4.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?39,4)
@@ -87,12 +87,12 @@
 **4)** — 4) eingehen in, sich verbreiten durch, durchdringen, durchwandern: *vṛkṣāṃ vanāni saṃ cara*
 [AV. 6,45,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.01) [8,9,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.009.html#av08.009.12) *samānajanmā kraturasti vaḥ śivaḥ sa vaḥ sarvāḥ saṃ carati prajānan*
 [22.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.22) *diśaḥ*
-[13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) [MBH. 3,12923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12923) = [≈Вульг. 3.188.119](mbh/3.188.html#v119) = крит. — [R. 1,47,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,6) *ubhau lokau*
+[13,2,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.41) [MBH. 3,12923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12923) = [≈Vulg. 3.188.119](mbh/3.188.html#v119) = krit. — [R. 1,47,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,6) *ubhau lokau*
 [ŚAT. BR. 14,7,1,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,7)
-[MBH. 3,8411.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8411) = [≈Вульг. 3.91.6](mbh/3.91.html#v6) = ≈крит. 03,89.6a [12717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12717) = [≈Вульг. 3.186.3](mbh/3.186.html#v3) = ≈крит. 03,184.3a med. [2,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.271) = [≈Вульг. 2.6.7](mbh/2.6.html#v7) = ≈крит. 02,6.7c [13,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7415) = [≈Вульг. 13.159.15](mbh/13.159.html#v15) = ≈крит. 13,144.12e *yastu pṛthivīṃ saṃcariṣyati*
-[3,8258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8258) = [≈Вульг. 3.85.116](mbh/3.85.html#v116) = ≈крит. 03,83.99a *nagam*
+[MBH. 3,8411.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8411) = [≈Vulg. 3.91.6](mbh/3.91.html#v6) = ≈krit. 03,89.6a [12717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12717) = [≈Vulg. 3.186.3](mbh/3.186.html#v3) = ≈krit. 03,184.3a med. [2,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.271) = [≈Vulg. 2.6.7](mbh/2.6.html#v7) = ≈krit. 02,6.7c [13,7415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7415) = [≈Vulg. 13.159.15](mbh/13.159.html#v15) = ≈krit. 13,144.12e *yastu pṛthivīṃ saṃcariṣyati*
+[3,8258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8258) = [≈Vulg. 3.85.116](mbh/3.85.html#v116) = ≈krit. 03,83.99a *nagam*
 [R. 6,83,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,83,20) *imāni lokadvārāṇi yo vai saṃcarate sadā*
-[MBH. 2,2038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2038) = [≈Вульг. 2.59.9](mbh/2.59.html#v9) = ≈крит. 02,53.6a [3,925.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.925) = [≈Вульг. 3.24.7](mbh/3.24.html#v7) = ≈крит. 03,25.7c
+[MBH. 2,2038.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2038) = [≈Vulg. 2.59.9](mbh/2.59.html#v9) = ≈krit. 02,53.6a [3,925.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.925) = [≈Vulg. 3.24.7](mbh/3.24.html#v7) = ≈krit. 03,25.7c
 
 - **RU:** — 4) входить в, распространяться через, пронизывать, проходить насквозь: *vṛkṣāṃ vanāni saṃ cara*
 [AV. 6,45,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.045.html#av06.045.01) [8,9,12.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.009.html#av08.009.12) *samānajanmā kraturasti vaḥ śivaḥ sa vaḥ sarvāḥ saṃ carati prajānan*
@@ -170,7 +170,7 @@
   <sub>attested</sub>
 
 **caus-4)** — 4) übertragen, übergeben: *saṃcārayāmāsa jarāṃ tadā putre*
-[MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169) = [≈Вульг. 1.75.44](mbh/1.75.html#v44) = ≈крит. 01,70.41a
+[MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169) = [≈Vulg. 1.75.44](mbh/1.75.html#v44) = ≈krit. 01,70.41a
 
 - **RU:** — 4) передавать, вручать: *saṃcārayāmāsa jarāṃ tadā putre*
 [MBH. 1,3169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3169) = [≈Вульг. 1.75.44](mbh/1.75.html#v44) = ≈крит. 01,70.41a

@@ -11,8 +11,8 @@
 [KUMĀRAS. 2,52.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,52) *agnim*
 [KAUŚ. 89.] *pratyānītāḥ parama bhavatā trāyatā naḥ svabhāgāḥ*
 [BHĀG. P. 7,8,42.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,42) *tūrṇaṃ pratyānayasvaitānkāmaṃ vyadhvagatānapi*
-[MBH. 2,2475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2475) = [≈Вульг. 2.74.24](mbh/2.74.html#v24) = ≈крит. 02,66.24a *punaḥ pratyānaye paśūn*
-[4,1177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1177) = [≈Вульг. 4.36.7](mbh/4.36.html#v7) = ≈крит. 04,34.7c [12,1764.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1764) = [≈Вульг. 12.49.49](mbh/12.49.html#v49) = ≈крит. 12,49.41e *kaccittribhiḥ kramaiḥ pūrvaṃ hṛtāllokānimān — punaḥ pratyānayiṣyāmaḥ* so v. a. wiedergewinnen
+[MBH. 2,2475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2475) = [≈Vulg. 2.74.24](mbh/2.74.html#v24) = ≈krit. 02,66.24a *punaḥ pratyānaye paśūn*
+[4,1177.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1177) = [≈Vulg. 4.36.7](mbh/4.36.html#v7) = ≈krit. 04,34.7c [12,1764.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1764) = [≈Vulg. 12.49.49](mbh/12.49.html#v49) = ≈krit. 12,49.41e *kaccittribhiḥ kramaiḥ pūrvaṃ hṛtāllokānimān — punaḥ pratyānayiṣyāmaḥ* so v. a. wiedergewinnen
 [HARIV. 9855.](https://sanskrit-lexicon-scans.github.io/hariv?9855)
 
 *trailokyamidamavyayam . pratyānayasva*
@@ -39,7 +39,7 @@
 **2)** — 2) wieder zugiessen, nachgiessen: *apaḥ pratyānayati*
 [ŚAT. BR. 2,3,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,16) [1,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,18) [14,2,2,40.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,40)
 [KAUŚ. 62. 109.] — desid. wieder in Ordnung zu bringen versuchen: *apanītaṃ sunītena yo 'rthaṃ pratyāninīṣate*
-[MBH. 5,1499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1499) = [≈Вульг. 5.39.54](mbh/5.39.html#v54) = ≈крит. 05,39.39c
+[MBH. 5,1499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1499) = [≈Vulg. 5.39.54](mbh/5.39.html#v54) = ≈krit. 05,39.39c
 
 - **RU:** — 2) вновь подливать, доливать: *apaḥ pratyānayati*
 [ŚAT. BR. 2,3,1,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,1,16) [1,7,1,18.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,1,18) [14,2,2,40.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,2,2,40)

@@ -120,7 +120,7 @@
 - **RU:** — 1) занимать место, избирать местом пребывания, занимать место ([PRASANNAR. 74,12]), обитать в; лежать на; с Acc.
   <sub>attested</sub>
 
-**2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32) = [≈Вульг. 3.2.74](mbh/3.2.html#v74) = ≈крит. 03,2.70c.
+**2)** — 2〉 sich halten an, so v. a. leben von, geniessen; mit Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32) = [≈Vulg. 3.2.74](mbh/3.2.html#v74) = ≈krit. 03,2.70c.
 
 - **RU:** — 2) держаться, придерживаться (чего-л.), так преим. жить за счет (чего-л.), пользоваться (чем-л.); с Acc. [MBH. 3,120,32](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,120,32) = [≈Вульг. 3.2.74](mbh/3.2.html#v74) = ≈крит. 03,2.70c.
   <sub>attested</sub>
@@ -196,7 +196,7 @@
 - **RU:** — 5) предаваться чувству (Acc.) [CARAKA. 1,8] (читать *anuvaset*).
   <sub>attested</sub>
 
-**6)** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) = [≈Вульг. 3.37.19](mbh/3.37.html#v19) = ≈крит. 03,38.16a fehlerhaft für *anuvartsyate*.
+**6)** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) = [≈Vulg. 3.37.19](mbh/3.37.html#v19) = ≈krit. 03,38.16a fehlerhaft für *anuvartsyate*.
 
 - **RU:** — 6〉 *anuvatsyate* [MBH. 3,1475](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1475) = [≈Вульг. 3.37.19](mbh/3.37.html#v19) = ≈крит. 03,38.16a ошибочно вм. *anuvartsyate*.
   <sub>mixed</sub>

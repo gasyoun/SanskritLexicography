@@ -19,7 +19,7 @@
   <sub>attested</sub>
 
 **2a)** — 2) bestreiten, anfechten: *nāhaṃ vedānvinindāmi na vivakṣyāmi karhicit*
-[MBH. 12,9607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9607) = [≈Вульг. 12.271.3](mbh/12.271.html#v3) = ≈крит. 12,263.3a med. verschieden oder gegen einander reden, sich streiten um: *vi toke apsu tanaye ca sūre 'vocanta carṣaṇayo vivācaḥ*
+[MBH. 12,9607.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9607) = [≈Vulg. 12.271.3](mbh/12.271.html#v3) = ≈krit. 12,263.3a med. verschieden oder gegen einander reden, sich streiten um: *vi toke apsu tanaye ca sūre 'vocanta carṣaṇayo vivācaḥ*
 [ṚV. 6,31,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.031.html#rv06.031.01)
 
 - **RU:** — 2) оспаривать, опровергать: *nāhaṃ vedānvinindāmi na vivakṣyāmi karhicit*

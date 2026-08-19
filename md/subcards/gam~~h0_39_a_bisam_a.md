@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **2)** — 2) zu Jmd (acc.) kommen
-[MBH. 11,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.445) = [≈Вульг. 11.16.19](mbh/11.16.html#v19) = ≈крит. 11,16.19c
+[MBH. 11,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.445) = [≈Vulg. 11.16.19](mbh/11.16.html#v19) = ≈krit. 11,16.19c
 
 - **RU:** — 2) прийти к кому-л. (acc.)
 [MBH. 11,445.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.445) = [≈Вульг. 11.16.19](mbh/11.16.html#v19) = ≈крит. 11,16.19c

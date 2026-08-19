@@ -4,7 +4,7 @@
 
 
 **5h_alpha)** — *abhisam*, partic. *˚yatta* besorgt, gelenkt von: *hayottamāḥ*
-[MBH. 7,5173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5173) = [≈Вульг. 7.127.30](mbh/7.127.html#v30) = ≈крит. 07,102.65c *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* würde nicht zum Metrum passen; vgl. simpl.
+[MBH. 7,5173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5173) = [≈Vulg. 7.127.30](mbh/7.127.html#v30) = ≈krit. 07,102.65c *abhisaṃpanna* [ed. Bomb.]; *˚saṃyata* würde nicht zum Metrum passen; vgl. simpl.
  5) h)
  α) am Ende.
 

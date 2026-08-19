@@ -9,17 +9,17 @@
   <sub>attested</sub>
 
 **1)** 1) sich ablösen, abbrechen: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
-[MBH. 12,3923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3923) = [≈Вульг. 12.105.21](mbh/12.105.html#v21) = ≈крит. 12,106.19c
+[MBH. 12,3923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3923) = [≈Vulg. 12.105.21](mbh/12.105.html#v21) = ≈krit. 12,106.19c
 
 - **RU:** 1) отрываться, обламываться: *ubhayatra prasaktasya dharme cādharma eva ca . phalārthamūlaṃ vyucchidyettena nandanti śatravaḥ ..*
 [MBH. 12,3923.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3923) = [≈Вульг. 12.105.21](mbh/12.105.html#v21) = ≈крит. 12,106.19c
   <sub>attested</sub>
 
 **2)** — 2) eine Unterbrechung erleiden, aufhören: *vinaṣṭe ca mamānuje . piṇḍaḥ pitṝṇāṃ vyucchidyet*
-[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) = [≈Вульг. 1.157.31](mbh/1.157.html#v31) = ≈крит. 01,145.31a *kīrtirme vyucchinnā* hat ihr Ende erreicht
+[MBH. 1,6188.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6188) = [≈Vulg. 1.157.31](mbh/1.157.html#v31) = ≈krit. 01,145.31a *kīrtirme vyucchinnā* hat ihr Ende erreicht
 [3,13332.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13332) *avyucchinna* ununterbrochen: *karā dinakṛtaḥ — avyucchinnā ṛjavaḥ*
 [VARĀH. BṚH. S. 29,11.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?29,11) *saubhrātra*
-[MBH. 3,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.355) = [≈Вульг. 3.10.9](mbh/3.10.html#v9) = ≈крит. 03,11.9c *ghoṣa*
+[MBH. 3,355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.355) = [≈Vulg. 3.10.9](mbh/3.10.html#v9) = ≈krit. 03,11.9c *ghoṣa*
 [HARIV. 2355.](https://sanskrit-lexicon-scans.github.io/hariv?2355) *˚pṛthupravṛtti*
 [VIKR. 110.](https://sanskrit-lexicon-scans.github.io/vikramor/app1?110) *tatraikāvayavaṃ dhyāyedavyucchinnena cetasā*
 [BHĀG. P. 2,1,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,19)

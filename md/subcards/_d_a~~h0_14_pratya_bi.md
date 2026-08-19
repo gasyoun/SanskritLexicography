@@ -13,7 +13,7 @@
 - **RU:** — 2) отвечать, возражать: *pratyabhyadhatta* [BHĀG. P. 4,3,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,3,15) *mayā pratyabhihitā* [ŚĀK. 84,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?84,14)
   <sub>attested</sub>
 
-**3)** — 3) seine Zustimmung geben: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) = [≈Вульг. 5.191.3](mbh/5.191.html#v3) = ≈крит. 05,192.3a
+**3)** — 3) seine Zustimmung geben: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) = [≈Vulg. 5.191.3](mbh/5.191.html#v3) = ≈krit. 05,192.3a
 
 - **RU:** — 3) давать свое согласие: *mayā ca pratyabhihitam* [MBH. 5,7459.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7459) = [≈Вульг. 5.191.3](mbh/5.191.html#v3) = ≈крит. 05,192.3a
   <sub>attested</sub>

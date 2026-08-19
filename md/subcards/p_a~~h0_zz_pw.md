@@ -58,7 +58,7 @@
 - **RU:** — β〉 пропитанный маслом, погруженный в масло (об оружии).
   <sub>attested</sub>
 
-**PW1_4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](mbh/12.49.html#v7) = ≈крит. 12,49.7a fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
+**PW1_4c)** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Vulg. 12.49.7](mbh/12.49.html#v7) = ≈krit. 12,49.7a fehlerhaft für *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) ist *˚ātmanipītanidraḥ* zu verbinden.
 
 - **RU:** — c〉 [MBH. 12,1722](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1722) = [≈Вульг. 12.49.7](mbh/12.49.html#v7) = ≈крит. 12,49.7a ошибочно вм. *prīta*; [BHĀG. P. 7,9,32](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,9,32) следует соединять с *˚ātmanipītanidraḥ*.
   <sub>attested</sub>

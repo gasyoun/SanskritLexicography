@@ -17,7 +17,7 @@
   <sub>attested</sub>
 
 **2)** — 2) erklären, einen Ausspruch thun, eine Anweisung —, einen Auftrag geben: *dūtairmadhurasaṃbhāṣairnaitaditi saṃdiśan*
-[MBH. 5,7435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7435) = [≈Вульг. 5.190.2](mbh/5.190.html#v2) = ≈крит. 05,191.2c [7050.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7050) = [≈Вульг. 5.178.23](mbh/5.178.html#v23) = ≈крит. 05,177.24a
+[MBH. 5,7435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7435) = [≈Vulg. 5.190.2](mbh/5.190.html#v2) = ≈krit. 05,191.2c [7050.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7050) = [≈Vulg. 5.178.23](mbh/5.178.html#v23) = ≈krit. 05,177.24a
 [ŚĀK. 54,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?54,22)
 [PRAB. 70,4.]
 [BHĀG. P. 4,25,1.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,1)
@@ -25,19 +25,19 @@
 [R. 2,82,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,22) Jmd Etwas bedeuten, zu wissen thun, auftragen: *rājā — tava saṃdiṣṭavānidam*
 [KATHĀS. 14,2.](https://sanskrit-lexicon-scans.github.io/kss/index.html?14,2) *idaṃ māṃ saṃpariṣvajya saṃdideśa*
 [R. GORR. 2,58,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,58,15) Jmd anweisen, einen Befehl ertheilen, beauftragen
-[MBH. 1,682.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.682) = [≈Вульг. 1.3.17](mbh/1.3.html#v17) = ≈крит. 01,3.15D [3,1847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1847) = [≈Вульг. 3.46.30](mbh/3.46.html#v30) = крит. — [2633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2633) = [≈Вульг. 3.66.26](mbh/3.66.html#v26) = ≈крит. 03,63.24c [2655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2655) = [≈Вульг. 3.68.2](mbh/3.68.html#v2) = ≈крит. 03,65.2c
+[MBH. 1,682.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.682) = [≈Vulg. 1.3.17](mbh/1.3.html#v17) = ≈krit. 01,3.15D [3,1847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1847) = [≈Vulg. 3.46.30](mbh/3.46.html#v30) = krit. — [2633.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2633) = [≈Vulg. 3.66.26](mbh/3.66.html#v26) = ≈krit. 03,63.24c [2655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2655) = [≈Vulg. 3.68.2](mbh/3.68.html#v2) = ≈krit. 03,65.2c
 [HARIV. 8480.](https://sanskrit-lexicon-scans.github.io/hariv?8480) [8498.](https://sanskrit-lexicon-scans.github.io/hariv?8498)
 [R. 2,100,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,100,2)
 [R. GORR. 2,38,36.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,38,36) [3,60,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,22) [4,1,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,1,32) [28,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,28,29)
 [MĀLAV. 49,12.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?49,12)
 [BHĀG. P. 3,4,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,4,32) *na tvāṃ saṃdeṣṭumarhāmi bhartṝnprati* ich brauche dir keine Anweisungen zu geben in Betreff der Gatten
-[MBH. 2,2588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2588) = [≈Вульг. 2.79.5](mbh/2.79.html#v5) = ≈крит. 02,70.5a *phālgunaṃ cāpi saṃdideśa hayānprati*
-[14,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2104) = [≈Вульг. 14.72.22](mbh/14.72.html#v22) = ≈крит. 14,71.22a *abhidūti kāciditi saṃdidiśe* gab einer Botin diesen Auftrag
+[MBH. 2,2588.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2588) = [≈Vulg. 2.79.5](mbh/2.79.html#v5) = ≈krit. 02,70.5a *phālgunaṃ cāpi saṃdideśa hayānprati*
+[14,2104.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2104) = [≈Vulg. 14.72.22](mbh/14.72.html#v22) = ≈krit. 14,71.22a *abhidūti kāciditi saṃdidiśe* gab einer Botin diesen Auftrag
 [ŚIŚ. 9,56.] Jmd Etwas anbefehlen, auftragen; mit dopp. acc.: *(tau) saṃdideśetikartavyam*
-[MBH. 3,16407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16407) = [≈Вульг. 3.286.29](mbh/3.286.html#v29) = ≈крит. 03,270.29a *saṃdiṣṭaścāsi yānarthāṃstāṃstānbrūyāstathā tathā*
+[MBH. 3,16407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16407) = [≈Vulg. 3.286.29](mbh/3.286.html#v29) = ≈krit. 03,270.29a *saṃdiṣṭaścāsi yānarthāṃstāṃstānbrūyāstathā tathā*
 [R. 2,52,59.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,59) Jmd mit einem Auftrage zu Jmd (dat.) abordnen: *viśvātmane gaurī saṃdideśa mithaḥ sakhīm*
 [KUMĀRAS. 6,1.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,1) — caus. Jmd auffordern eine Erklärung zu geben, sich über Etwas auszusprechen: *saṃdeśita*
-[MBH. 14,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.458) = [≈Вульг. 14.17.4](mbh/14.17.html#v4) = ≈крит. 14,17.4a
+[MBH. 14,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.458) = [≈Vulg. 14.17.4](mbh/14.17.html#v4) = ≈krit. 14,17.4a
 
 - **RU:** — 2) объяснять, высказываться, давать наставление —, давать поручение: *dūtairmadhurasaṃbhāṣairnaitaditi saṃdiśan*
 [MBH. 5,7435.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7435) = [≈Вульг. 5.190.2](mbh/5.190.html#v2) = ≈крит. 05,191.2c [7050.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7050) = [≈Вульг. 5.178.23](mbh/5.178.html#v23) = ≈крит. 05,177.24a

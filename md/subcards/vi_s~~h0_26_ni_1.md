@@ -5,9 +5,9 @@
 
 **i)** — i) obliegend, bedacht auf: *sve sve dharme*
 [M. 7,35.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,35) *pāṇḍavārthe*
-[MBH. 1,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.171) = [≈Вульг. 1.1.217](mbh/1.1.html#v217) = ≈крит. 01,1.158a *sarvabhūtapraśame*
-[5,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1090) = [≈Вульг. 5.33.120](mbh/5.33.html#v120) = ≈крит. 05,33.101a *śame*
-[13,3401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3401) = [≈Вульг. 13.68.7](mbh/13.68.html#v7) = ≈крит. 13,67.7c *satye*
+[MBH. 1,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.171) = [≈Vulg. 1.1.217](mbh/1.1.html#v217) = ≈krit. 01,1.158a *sarvabhūtapraśame*
+[5,1090.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1090) = [≈Vulg. 5.33.120](mbh/5.33.html#v120) = ≈krit. 05,33.101a *śame*
+[13,3401.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3401) = [≈Vulg. 13.68.7](mbh/13.68.html#v7) = ≈krit. 13,67.7c *satye*
 [HARIV. 9635.](https://sanskrit-lexicon-scans.github.io/hariv?9635) *mantrahite*
 [R. 1,7,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,7,18) *guṇe*
 [20,24](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,24) (*guṇaiḥ* versehen mit
@@ -82,12 +82,12 @@ ein Drama (Etwas) versetzen so v. a. es dort zur Erscheinung bringen
 [M. 9,288.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,288) *skandhāvāraniveśe tena ceha niveśite*
 [R. 3,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,3) *parvatam*
 [HARIV. 12407.](https://sanskrit-lexicon-scans.github.io/hariv?12407) [12410.](https://sanskrit-lexicon-scans.github.io/hariv?12410) *tatra vedīṃ ca bhūmiṃ ca devatāyatanāni ca . niveśya*
-[MBH. 13,452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.452) = [≈Вульг. 13.10.21](mbh/13.10.html#v21) = ≈крит. 13,10.18a *vihāre buddhabimbam*
+[MBH. 13,452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.452) = [≈Vulg. 13.10.21](mbh/13.10.html#v21) = ≈krit. 13,10.18a *vihāre buddhabimbam*
 [RĀJA-TAR. 3,464.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,464) *śivaliṅgāni*
 [2,131.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,131) [4,276.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,276) [VARĀH. BṚH. S. 56,14.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?56,14) *atheyaṃ* *(carmaratnabhastrikā) devateva śucau deśe niveśyārcyamānā prātaḥ prātaḥ suvarṇapūrṇaiva dṛśyate*
 [DAŚAK. 76,10. fgg.] anlegen, gründen (eine Stadt
 u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846) [5169.](https://sanskrit-lexicon-scans.github.io/hariv?5169) [5211.](https://sanskrit-lexicon-scans.github.io/hariv?5211) [6392.](https://sanskrit-lexicon-scans.github.io/hariv?6392) [R. 1,5,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,5,9) [R. GORR. 2,73,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,73,16) [7,11,48. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,11,48) [70,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,70,17) [79,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?7,79,17) [MĀRK. P. 66,10.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?66,10) *nyaveśayannāmabhiḥ svaiste deśāṃśca purāṇi ca*
-[MBH. 1,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2365) = [≈Вульг. 1.63.33](mbh/1.63.html#v33) = ≈крит. 01,57.30e *vīreṇa hradāḥ pañca niveśitāḥ*
+[MBH. 1,2365.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2365) = [≈Vulg. 1.63.33](mbh/1.63.html#v33) = ≈krit. 01,57.30e *vīreṇa hradāḥ pañca niveśitāḥ*
 [3,5097.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.5097) *āśramam*
 [R. 3,16,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,16,35) bevölkern, bewohnt machen: *purīm*
 [HARIV. 1542.](https://sanskrit-lexicon-scans.github.io/hariv?1542) [1546.](https://sanskrit-lexicon-scans.github.io/hariv?1546) [1591.](https://sanskrit-lexicon-scans.github.io/hariv?1591)
@@ -112,7 +112,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 **6)** — 6) aufstellen (ein Heer): *balaṃ janasthāne*
 [R. 3,60,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,60,31) *lubdhānmaṇḍalena*
 [KĀM. NĪTIS. 16,7.] sich lagern lassen: *deśe same senām*
-[MBH. 5,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5170) = [≈Вульг. 5.155.7](mbh/5.155.html#v7) = крит. —
+[MBH. 5,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5170) = [≈Vulg. 5.155.7](mbh/5.155.html#v7) = krit. —
 [R. 2,83,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,23) ([90,36](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,90,36) [GORR.]). [25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,25) (med. GORR. [38](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,90,38)). [26](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,83,26) ([39](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,90,39) [GORR.]). *niveśayitvā*
 [89,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,89,23)
 (*niveśya* [98,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,98,24) [GORR.]). [99,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,99,16) [5,74,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,20) [23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,74,23) [KĀM. NĪTIS. 16,1. 40.] [RAGH. 5,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,42) [16,37.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,37) [ŚĀK. 18,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?18,23) [PRAB. 82,2.]
@@ -145,7 +145,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [18,281.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,281) *kalāpacakreṣu niveśitānanam* (*bhoginam*)
 [ṚT. 1,16.] *vimānaṃ sadmaniveśitam*
 [R. 3,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,61,14) *kṣatravīryaṃ carau tasyāḥ*
-[MBH. 13,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.237) = [≈Вульг. 13.4.38](mbh/13.4.html#v38) = ≈крит. 13,4.37c *niveśitāntaḥkusumaiḥ śiroruhaiḥ*
+[MBH. 13,237.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.237) = [≈Vulg. 13.4.38](mbh/13.4.html#v38) = ≈krit. 13,4.37c *niveśitāntaḥkusumaiḥ śiroruhaiḥ*
 [ṚT. 5,8.] *ambumadhyācca vastraṃ cauraniveśitam . prāptavān*
 [KATHĀS. 10,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,107) [61,25.](https://sanskrit-lexicon-scans.github.io/kss/index.html?61,25) *(hṛdi) kukāvyahavyāhutayo niveśitāḥ*
 [Spr. 2352.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2352) *sve kha idaṃ niveśya*
@@ -165,7 +165,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
   <sub>attested</sub>
 
 **9)** — 9) schleudern —, abschiessen auf: *bhallān — tava putre*
-[MBH. 8,3146](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3146) = [≈Вульг. 8.62.1](mbh/8.62.html#v1) = крит. — (med.). *śarānmūrdhni*
+[MBH. 8,3146](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3146) = [≈Vulg. 8.62.1](mbh/8.62.html#v1) = krit. — (med.). *śarānmūrdhni*
 [R. 5,42,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,42,7)
 
 - **RU:** — 9) метать, пускать (стрелу и т. п.) в кого-либо: *bhallān — tava putre*
@@ -179,7 +179,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [R. 4,43,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,43,33) *stambhasya pṛṣṭhe tām*
 [KATHĀS. 12,175.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,175) *sthalaniveśitāṭanī dhanuṣī*
 [RAGH. 11,14.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,14) *vāme skandhe bharturbāhum*
-[MBH. 3,16852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16852) = [≈Вульг. 3.297.105](mbh/3.297.html#v105) = ≈крит. 03,281.102c *vadanaṃ haste*
+[MBH. 3,16852.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16852) = [≈Vulg. 3.297.105](mbh/3.297.html#v105) = ≈krit. 03,281.102c *vadanaṃ haste*
 [HARIV. 7066.](https://sanskrit-lexicon-scans.github.io/hariv?7066) *aṅke caraṇau*
 [ŚĀK. 69](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?69), v. l. *vāmaṃ bhujamāsanārdhe*
 [RAGH. 6,16.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?6,16) *karaṃ stanāgre*
@@ -192,7 +192,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [MĀRK. P. 63,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?63,34) *mūrdhni niveśitāḥ sarvā evājñāḥ* (als Zeichen grosser Ehrerbietung)
 [PRAB. 97,12.] *ratnottaṃseṣu rājñāmājñāṃ nyaveśayat*
 [RĀJA-TAR. 5,138.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,138) Schmucksachen, Kleidungsstücke: *ratnāni tasyā gātre*
-[MBH. 1,7692.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7692) = [≈Вульг. 1.209.6](mbh/1.209.html#v6) = ≈крит. 01,201.5a *staneṣu tanvaṃśukam*
+[MBH. 1,7692.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7692) = [≈Vulg. 1.209.6](mbh/1.209.html#v6) = ≈krit. 01,201.5a *staneṣu tanvaṃśukam*
 [ṚT. 1,7.] *kaṭītaṭaniveśitaṃ raśanākalāpam*
 [MṚCCH. 11,15.] *karṇeṣu nīlotpalāni*
 [ṚT. 3,19] (med.). *śrutimaṇḍale* (loc.) *kuṇḍale* (acc.)
@@ -202,7 +202,7 @@ u. s. w.) [HARIV. 1846. fg.](https://sanskrit-lexicon-scans.github.io/hariv?1846
 [KATHĀS. 90,56.](https://sanskrit-lexicon-scans.github.io/kss/index.html?90,56)
 [RAGH. 8,34.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,34) *īśasya padayuge prasūnāñjalim*
 [KUSUM. 1,9.] *pāśaṃ śṛṅge* befestigen
-[MBH. 3,12786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12786) = [≈Вульг. 3.187.44](mbh/3.187.html#v44) = ≈крит. 03,185.41a auftragen Zeichen u. s. w.: *tilakaṃ gaṇḍapārśve*
+[MBH. 3,12786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12786) = [≈Vulg. 3.187.44](mbh/3.187.html#v44) = ≈krit. 03,185.41a auftragen Zeichen u. s. w.: *tilakaṃ gaṇḍapārśve*
 [R. 5,37,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,37,5) *suvarṇarekheva kaṣe niveśitā*
 [MṚCCH. 48,12.] *caraṇāntaniveśitāṃ rāgalekhām*
 [MĀLAV. 46.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?46) *śāsanaṃ paṭṭe sūkṣmākṣaraniveśitam*

@@ -13,16 +13,16 @@
 [LĀṬY. 4,9,17.] — *pṛṣṭhato 'nujagāma*
 [R. 3,15,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,1)
 [ŚĀK. 81,23.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?81,23) *anu māṃ tatra gacchetsā*
-[MBH. 1,3347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3347) = [≈Вульг. 1.80.16](mbh/1.80.html#v16) = ≈крит. 01,75.14a *(tān) vāyuvaccānugacchanti*
+[MBH. 1,3347.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3347) = [≈Vulg. 1.80.16](mbh/1.80.html#v16) = ≈krit. 01,75.14a *(tān) vāyuvaccānugacchanti*
 [M. 3,189.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,189) [4,241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,241) [5,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,103) [11,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,110) [115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,115) [144.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,144) [257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,257)
-[MBH. 3,2579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2579) = [≈Вульг. 3.65.48](mbh/3.65.html#v48) = ≈крит. 03,62.21a
+[MBH. 3,2579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2579) = [≈Vulg. 3.65.48](mbh/3.65.html#v48) = ≈krit. 03,62.21a
 [R. 1,1,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,25) [3,50,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,4)
 [PAÑCAT. II,135.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,135) [90,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?90,5) [HIT. III,29.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?3,29) [ŚĀK. 58,1.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?58,1) [71,16.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,16) [136.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?71,136) [RAGH. 2,6.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,6) [VID. 89.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?89) *tatpāpaṃ śatadhā bhūtvā tadvaktṝnanugacchati*
 [M. 12,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,115) *panthānamanugacchatā*
 [R. 2,2,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,2,4) *kalindīmanugacchetāṃ nadīm*
 [55,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,4) *mārgaṃ manuṣyeśvaradharmapatnī śruterivārthaṃ smṛtiranvagacchat*
 [RAGH. 2,2.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,2) med.: *niryāntamanujagmire*
-[MBH. 1,2827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2827) = [≈Вульг. 1.69.14](mbh/1.69.html#v14) = крит. — [3,16765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16765) = [≈Вульг. 3.297.18](mbh/3.297.html#v18) = ≈крит. 03,281.17a
+[MBH. 1,2827.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2827) = [≈Vulg. 1.69.14](mbh/1.69.html#v14) = krit. — [3,16765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16765) = [≈Vulg. 3.297.18](mbh/3.297.html#v18) = ≈krit. 03,281.17a
 [R. 2,30,40.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,40) [48,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,24) pass.: *bhṛtyairanugamyate*
 [PAÑCAT. I,83.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,83) [MṚCCH. 9,16.] [ŚĀK. 101,20](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?101,20), v. l. [DAŚAK.] in [BENF. Chr. 194,9.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?194) *brāhmaṇenānugantavyo na śūdraḥ*
 [YĀJÑ. 3,26.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,26) *pūrvairayamabhipreto gato mārgo 'nugamyate*
@@ -30,12 +30,12 @@
 [M. 9,267.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,267)
 [SĀV. 5,93.]
 [N. 13,31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?13,31) [15,16.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?15,16)
-[MBH. 7,8969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8969) = [≈Вульг. 7.194.7](mbh/7.194.html#v7) = ≈крит. 07,166.7c
+[MBH. 7,8969.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.8969) = [≈Vulg. 7.194.7](mbh/7.194.html#v7) = ≈krit. 07,166.7c
 [R. 1,1,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,27) [73,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,25) [2,40,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,24) [38.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,38) [5,36,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,44)
 [PAÑCAT. 87,5.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?87,5)
 [ŚĀK. 34,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?34,7) *śokaprabhāvānugato vāṣpamokṣaḥ*
 [R. 4,24,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,3) *dharmānugatayā buddhyā*
-[MBH. 3,17471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17471) = [≈Вульг. 3.315.24](mbh/3.315.html#v24) = ≈крит. 03,299.22a mit pass. Bed.: *rājapreṣyairanugataḥ*
+[MBH. 3,17471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17471) = [≈Vulg. 3.315.24](mbh/3.315.html#v24) = ≈krit. 03,299.22a mit pass. Bed.: *rājapreṣyairanugataḥ*
 [N. 21,25.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?21,25)
 [R. 1,1,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,17) [28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,28) [3,6,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,6,10)
 [MĀLAV. 44.](https://sanskrit-lexicon-scans.github.io/malavikagni/app1?44)
@@ -45,7 +45,7 @@
 [M. 11,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,70) *anekarogānugato bahurogapurogamaḥ*
 [SUŚR. 2,445,3.] *tailaṃ kṣīrānugatam* sammt der Milch
 [43,11.] *cintānugatasarvātman*
-[MBH. 13,538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.538) = [≈Вульг. 13.12.11](mbh/13.12.html#v11) = ≈крит. 13,12.10a zugehen auf: *bhadrāsanaṃ tataścitramṛṣiranvagamannavam*
+[MBH. 13,538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.538) = [≈Vulg. 13.12.11](mbh/13.12.html#v11) = ≈krit. 13,12.10a zugehen auf: *bhadrāsanaṃ tataścitramṛṣiranvagamannavam*
 [MBH. 13,1487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1487) besuchen, durchwandern: *kānanaṃ vāpi śailaṃ vā yaṃ rāmo 'nugamiṣyati*
 [R. 2,48,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,48,10) *kṛtsnāṃ pṛthivīmanugacchata*
 [1,40,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,14) [15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,15) aufsuchen: *tujādirapi svarūpato 'nugantavyo na tu kvacitpaṭhyate*

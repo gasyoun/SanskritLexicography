@@ -16,7 +16,7 @@
   <sub>attested</sub>
 
 **2)** — 2) abschneiden, abtrennen, scheiden: *vyavacchidya tu rājānam — rathānīkena mahatā sarvataḥ paryavārayat* nachdem er ihn (von den Andern) abgeschnitten hatte
-[MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) = [≈Вульг. 7.26.40](mbh/7.26.html#v40) = ≈крит. 07,25.32c *viśaṃ kṣatrādvyavacchindyāt*
+[MBH. 7,1166.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1166) = [≈Vulg. 7.26.40](mbh/7.26.html#v40) = ≈krit. 07,25.32c *viśaṃ kṣatrādvyavacchindyāt*
 [ŚAT. BR. 12,7,3,15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,7,3,15) *rāṣṭrāt*
 [13,1,6,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,1,6,3) *yadevāsyātra kāmānāṃ vyavacchidyate*
 [6,6,4,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?6,6,4,11) [ŚĀṄKH. ŚR. 2,12,10. 11.] *vyavacchinna* unterschieden
@@ -38,7 +38,7 @@
 [ŚAT. BR. 1,3,5,13.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,13) [16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,5,16) [7,2,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,4) [9,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,9,3,3) [7,4,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,4,2,20)
 [AIT. BR. 1,11.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?1,11) *avyavacchinnadhāraughaiḥ samudraughasamairghanaiḥ*
 [HARIV. 3580.](https://sanskrit-lexicon-scans.github.io/hariv?3580) *avyavacchinnapiṇḍitaiḥ (śaraiḥ)* _adv._
-[MBH. 7,4746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4746) = [≈Вульг. 7.120.1](mbh/7.120.html#v1) = ≈крит. 07,96.1a
+[MBH. 7,4746.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4746) = [≈Vulg. 7.120.1](mbh/7.120.html#v1) = ≈krit. 07,96.1a
 
 - **RU:** 3) разрывать, разлучать; прерывать: *(śaram) śravaṇāntamupānīya vyavacchinnena muṣṭinā*
 [R. 3,50,17.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,50,17) *mantraliṅgairvyavacchinnaṃ bhajanto na viduḥ param*

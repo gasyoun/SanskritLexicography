@@ -31,9 +31,9 @@
 *pravahajjalānām*
 [KULL.] zu [M. 3,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,163) hinbrausen, wehen: *kālena śīghrāḥ pravahanti vātāḥ*
 [Spr. 3922.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3922) zuführen: *tatra divyāni puṣpāṇi prāvahatpavanastadā*
-[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) = [≈Вульг. 13.83.43](mbh/13.83.html#v43) = ≈крит. 13,82.40c *āmodam*
+[MBH. 13,3888.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3888) = [≈Vulg. 13.83.43](mbh/13.83.html#v43) = ≈krit. 13,82.40c *āmodam*
 [BHAṬṬ. 8,52.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,52) hinführen zu (acc.): *viṣayān*
-[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) = [≈Вульг. 12.301.50](mbh/12.301.html#v50) = ≈крит. 12,290.49a med. davonfahren: *pra yadvahethe mahinā rathasya*
+[MBH. 12,11170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.11170) = [≈Vulg. 12.301.50](mbh/12.301.html#v50) = ≈krit. 12,290.49a med. davonfahren: *pra yadvahethe mahinā rathasya*
 [ṚV. 1,180,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.180.html#rv01.180.09) *praitaśebhirvahamāna ojasā*
 [10,49,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.049.html#rv10.049.07) [77,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.077.html#rv10.077.06)
 
@@ -110,7 +110,7 @@
   <sub>attested</sub>
 
 **caus-4))** — 4) *lomapravāhitam*
-[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Вульг. 6.48.57](mbh/6.48.html#v57) = крит. — fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
+[MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Vulg. 6.48.57](mbh/6.48.html#v57) = krit. — fehlerhaft für *lomapravāhinam* (s. d.), wie die [ed. Bomb.] liest.
 
 - **RU:** — 4) *lomapravāhitam*
 [MBH. 6,1919](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.1919) = [≈Вульг. 6.48.57](mbh/6.48.html#v57) = крит. — ошибочно вм. *lomapravāhinam* (см.), как читает [Бомбейская ред.].

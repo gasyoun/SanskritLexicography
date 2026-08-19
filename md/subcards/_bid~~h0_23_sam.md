@@ -6,13 +6,13 @@
 **1)** — *sam*
  1) zerspalten, zerbrechen, durchbohren: *śiraḥ*
 [AV. 10,4,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.05)
-[MBH. 8,3839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3839) = [≈Вульг. 8.76.19](mbh/8.76.html#v19) = ≈крит. 08,54.17c *saṃbhinnajarjaritakoṣṭhaśiraḥkapāla*
+[MBH. 8,3839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3839) = [≈Vulg. 8.76.19](mbh/8.76.html#v19) = ≈krit. 08,54.17c *saṃbhinnajarjaritakoṣṭhaśiraḥkapāla*
 [SUŚR. 1,352,17.] *saṃbhinnacarmaghaṇṭāḥ (saṃbhinnamarma˚* [ed. Bomb.])
-[MBH. 7,4565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4565) = [≈Вульг. 7.115.26](mbh/7.115.html#v26) = ≈крит. 07,91.22c [8,499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.499) = [≈Вульг. 8.12.16](mbh/8.12.html#v16) = ≈крит. 08,8.16a *saṃbhinnamaryāda* der die Schranken durchbrochen hat
+[MBH. 7,4565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4565) = [≈Vulg. 7.115.26](mbh/7.115.html#v26) = ≈krit. 07,91.22c [8,499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.499) = [≈Vulg. 8.12.16](mbh/8.12.html#v16) = ≈krit. 08,8.16a *saṃbhinnamaryāda* der die Schranken durchbrochen hat
 [R. 2,49,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,49,5) ([46,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,46,7) [GORR.]). [67,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,67,28) *asaṃbhinnāryamaryāda*
 [Spr. 5088.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5088)
-[MBH. 15,383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.383) = [≈Вульг. 15.12.2](mbh/15.12.html#v2) = ≈крит. 15,18.2a [2,2443](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2443) = [≈Вульг. 2.73.11](mbh/2.73.html#v11) = ≈крит. 02,65.10a (wo beide Ausgg. fälschlich *asaṃbhinnārtha˚* lesen). *saṃbhinnavṛtta* der seinen guten Lebenswandel unterbrochen, — verlassen hat
-[12,788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.788) = [≈Вульг. 12.26.21](mbh/12.26.html#v21) = ≈крит. 12,20.8c
+[MBH. 15,383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.383) = [≈Vulg. 15.12.2](mbh/15.12.html#v2) = ≈krit. 15,18.2a [2,2443](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2443) = [≈Vulg. 2.73.11](mbh/2.73.html#v11) = ≈krit. 02,65.10a (wo beide Ausgg. fälschlich *asaṃbhinnārtha˚* lesen). *saṃbhinnavṛtta* der seinen guten Lebenswandel unterbrochen, — verlassen hat
+[12,788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.788) = [≈Vulg. 12.26.21](mbh/12.26.html#v21) = ≈krit. 12,20.8c
 
 - **RU:** — *sam*
  1) раскалывать, разбивать, пробивать: *śiraḥ*
@@ -39,7 +39,7 @@
 [PAÑCAR. 3,11,18.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,11,18) *kadambasaṃbhinnaḥ pavanaḥ* in Berührung gekommen
 [BHAṬṬ. 7,5.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,5) *saṃbhinno māruto yasya marmasthānāni kṛntati* so v. a. compact
 [MĀRK. P. 43,14](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?43,14) = [VĀYU-P.] in [Verz. d. Oxf. H. 51,b,6.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) *saṃbhinna* verbunden neben *vibhinna* als Beiw. Śiva's
-[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Вульг. 12.286.8](mbh/12.286.html#v8) = ≈крит. 12,275.8a
+[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Vulg. 12.286.8](mbh/12.286.html#v8) = ≈krit. 12,275.8a
 
 - **RU:** — 2) сводить вместе, приводить в соприкосновение, соединять, смешивать: *na saṃbhinatti tasmādasaṃbhinnāḥ prāṇāḥ*
 [TS. 6,2,11,2.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,2,11,2) *asaṃbhindannavadyati*

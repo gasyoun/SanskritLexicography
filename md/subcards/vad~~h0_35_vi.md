@@ -21,22 +21,22 @@
 [ŚAT. BR. 1,3,1,27.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,3,1,27) [8,6,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,6,3,3) [10,1,4,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,1,4,10) [14,8,15,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,8,15,5) *ahaṃśreyase*
 [9,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,2,7) [CHĀND. UP. 5,1,6.] [KAUṢ. UP. 2,14.] *pitrā*
 [M. 3,159.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,159)
-[MBH. 13,4277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4277) = [≈Вульг. 13.90.8](mbh/13.90.html#v8) = ≈крит. 13,90.8a *asākṣikeṣu tvartheṣu mitho vivadamānayoḥ*
+[MBH. 13,4277.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4277) = [≈Vulg. 13.90.8](mbh/13.90.html#v8) = ≈krit. 13,90.8a *asākṣikeṣu tvartheṣu mitho vivadamānayoḥ*
 [M. 8,109.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,109) [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252) [9,191.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,191) [250.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,250) *tasyā nimittam*
 [R. 3,67,10. fg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,67,10) [Spr. 3068.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3068) [KATHĀS. 24,183.](https://sanskrit-lexicon-scans.github.io/kss/index.html?24,183) [45,103.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,103) [BHĀG. P. 9,14,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,14,11) [Verz. d. Oxf. H. 50,a,4.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?50) [156,a,29.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?156) [BHAṬṬ. 8,28.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,28) [PAÑCAT. 96,25](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,25) (*vivada˚* zu lesen).
 [100,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?100,25) [II,10.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?2,10) *yasmātstriyaṃ* (acc. st. loc). *vivadadhvaṃ sabhāyām*
-[MBH. 2,2396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2396) = [≈Вульг. 2.71.17](mbh/2.71.html#v17) = ≈крит. 02,63.17a *parasparaṃ vivadamānānāmapi dharmaśāstrāṇām* sich gegenseitig widersprechend
+[MBH. 2,2396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2396) = [≈Vulg. 2.71.17](mbh/2.71.html#v17) = ≈krit. 02,63.17a *parasparaṃ vivadamānānāmapi dharmaśāstrāṇām* sich gegenseitig widersprechend
 [HIT. 19,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?19,21) *kṛtye vivadamāne* strittig
 [R. GORR. 2,79,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,79,9) Häufig auch act.: *mitho vivadatāṃ nṛṇām*
 [M. 8,178.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,178) [263.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,263) [390.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,390)
-[MBH. 3,12695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12695) = [≈Вульг. 3.185.18](mbh/3.185.html#v18) = ≈крит. 03,183.15a
+[MBH. 3,12695.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12695) = [≈Vulg. 3.185.18](mbh/3.185.html#v18) = ≈krit. 03,183.15a
 [R. GORR. 2,109,57.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,109,57) *śataṃ dadyānna vivadediti prājñasya lakṣaṇam*
 [Spr. 2935.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2935) [2938.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2938)
 [BHĀG. P. 5,14,38.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,38) [Verz. d. Oxf. H. 100,b, No. 156.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?100) [156,a,30.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?156) *itthaṃ cāhamahamikayā tayorvivadatoḥ*
 [PAÑCAT. 183,6.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?183,6) *śarīramāpadaścāpi vivadantyavihiṃsataḥ*
-[MBH. 12,9479.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9479) = [≈Вульг. 12.268.30](mbh/12.268.html#v30) = ≈крит. 12,260.29a sich in Streit einlassen mit, mit acc. der Person: *na ca tānvivadeddhīmānākruṣṭaścāpi taiḥ sadā*
+[MBH. 12,9479.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9479) = [≈Vulg. 12.268.30](mbh/12.268.html#v30) = ≈krit. 12,260.29a sich in Streit einlassen mit, mit acc. der Person: *na ca tānvivadeddhīmānākruṣṭaścāpi taiḥ sadā*
 [MĀRK. P. 34,93.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?34,93) *vivaditāḥ* im Streite liegend: *rājyahetoḥ*
-[MBH. 13,556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.556) = [≈Вульг. 13.12.29](mbh/13.12.html#v29) = ≈крит. 13,12.26a
+[MBH. 13,556.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.556) = [≈Vulg. 13.12.29](mbh/13.12.html#v29) = ≈krit. 13,12.26a
 
 - **RU:** — 2) вступать с кем-либо в словесный спор о чем-либо (loc.); мед.
 [P. 1,3,47](https://ashtadhyayi.com/sutraani/1/3/47), схол.

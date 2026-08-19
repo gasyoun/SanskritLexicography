@@ -5,7 +5,7 @@
 
 **verb)** — *pratyā* abwehren, sich erwehren einer Sache (acc.)
 [AV. 8,10,30. fgg.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.010.html#av08.010.30) med. : *pratyājaghne tadastraṃ guhyakāstreṇa*
-[MBH. 5,7173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7173) = [≈Вульг. 5.180.11](mbh/5.180.html#v11) = ≈крит. 05,181.11a *pratyāhatāstra*
+[MBH. 5,7173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7173) = [≈Vulg. 5.180.11](mbh/5.180.html#v11) = ≈krit. 05,181.11a *pratyāhatāstra*
 [RAGH. 2,41.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,41) *śāsana* von sich gewiesen, zurückgewiesen
 [HARIV. 3899.](https://sanskrit-lexicon-scans.github.io/hariv?3899)
 

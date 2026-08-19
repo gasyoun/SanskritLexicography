@@ -38,7 +38,7 @@
 - **RU:** — 14) ср. *dvāraṃ nibhṛtaṃ vidhāya* (читай *pidhāya)* [PAÑCAT. 237,12.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?237,12) [186,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?186,8) — desid.
   <sub>attested</sub>
 
-**3 (addendum))** 3) *adhanenārthakāmena nārthaḥ śakyo vidhitsitum* (so die [ed. Bomb.]) ein Armer, dem es um Geld zu thun ist, kann nicht daran denken sich Geld zu machen, [MBH. 12,220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.220) = [≈Вульг. 12.8.19](mbh/12.8.html#v19) = ≈крит. 12,8.19a
+**3 (addendum))** 3) *adhanenārthakāmena nārthaḥ śakyo vidhitsitum* (so die [ed. Bomb.]) ein Armer, dem es um Geld zu thun ist, kann nicht daran denken sich Geld zu machen, [MBH. 12,220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.220) = [≈Vulg. 12.8.19](mbh/12.8.html#v19) = ≈krit. 12,8.19a
 
 - **RU:** 3) *adhanenārthakāmena nārthaḥ śakyo vidhitsitum* (так [Бомбейская ред.]) бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги, [MBH. 12,220.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.220) = [≈Вульг. 12.8.19](mbh/12.8.html#v19) = ≈крит. 12,8.19a
   <sub>attested</sub>

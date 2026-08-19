@@ -73,7 +73,7 @@
 - **RU:** — С *abhivi* VI. 6.
   <sub>attested</sub>
 
-**5-vi)** **5.** √*vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10) = [≈Вульг. 13.1.4](mbh/13.1.html#v4) = ≈крит. 13,1.4a.
+**5-vi)** **5.** √*vas* VI. Aor. *avāksam* (so alle Hdschrr. nach [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) im Wortspiel mit *vāk* st. *avātsam* (so [HAUG]). 2〉 mit Acc. des Weibes [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10) = [≈Vulg. 13.1.4](mbh/13.1.html#v4) = ≈krit. 13,1.4a.
 
 - **RU:** **5.** √*vas* VI. Aor. *avāksam* (так все рукоп. по [AUFRECHT]) [AIT. BR. 1,28,16](https://sanskrit-lexicon-scans.github.io/aitbr_auf/app1?1,28,16) в игре слов с *vāk* вместо *avātsam* (так [HAUG]). 2〉 с Acc. женщины [MBH. 13,4,10](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?13,4,10) = [≈Вульг. 13.1.4](mbh/13.1.html#v4) = ≈крит. 13,1.4a.
   <sub>attested</sub>

@@ -7,10 +7,10 @@
 [P. 3,2,87. fg.](https://ashtadhyayi.com/sutraani/3/2/87) Declination
 [6,4,12.](https://ashtadhyayi.com/sutraani/6/4/12) [VOP. 3,111.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?3,111) *pitṛ˚, mātṛ˚, bhrātṛ˚, svasṛ˚, ācārya˚, brāhmaṇa˚*
 [CHĀND. UP. 7,15,2.] *paravīra˚*
-[MBH. 3,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2260) [2847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2847) = [≈Вульг. 3.72.40](mbh/3.72.html#v40) = ≈крит. 03,70.36c [3064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3064) = [≈Вульг. 3.79.2](mbh/3.79.html#v2) = ≈крит. 03,78.2a
+[MBH. 3,2260.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2260) [2847.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2847) = [≈Vulg. 3.72.40](mbh/3.72.html#v40) = ≈krit. 03,70.36c [3064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3064) = [≈Vulg. 3.79.2](mbh/3.79.html#v2) = ≈krit. 03,78.2a
 [R. 2,56,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,56,20)
 [BHĀG. P. 1,7,29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,29) *śaraṇāgata˚*
-[MBH. 5,1346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1346) = [≈Вульг. 5.37.13](mbh/5.37.html#v13) = ≈крит. 05,37.12c *duḥkha˚*
+[MBH. 5,1346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1346) = [≈Vulg. 5.37.13](mbh/5.37.html#v13) = ≈krit. 05,37.12c *duḥkha˚*
 
 [BHAG. 6,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,17) *lokānāmārtihā*
 [R. GORR. 1,14,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,14,26) *puṇyayajña˚*

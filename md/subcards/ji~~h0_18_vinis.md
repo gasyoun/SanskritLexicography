@@ -5,8 +5,8 @@
 
 **1)** — *vinis*
  1) gewinnen, ersiegen, erobern: *ke lokā vai vinirjitāḥ*
-[MBH. 3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) = [≈Вульг. 3.47.5](mbh/3.47.html#v5) = ≈крит. 03,45.13c *sa vinirjitya saṃgrāme himavantam*
-[2,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1037) = [≈Вульг. 2.27.28](mbh/2.27.html#v28) = крит. — *yuddhenāsmi vinirjitā*
+[MBH. 3,1883.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1883) = [≈Vulg. 3.47.5](mbh/3.47.html#v5) = ≈krit. 03,45.13c *sa vinirjitya saṃgrāme himavantam*
+[2,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1037) = [≈Vulg. 2.27.28](mbh/2.27.html#v28) = krit. — *yuddhenāsmi vinirjitā*
 [R. 3,59,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,59,5) [5,59,3](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,3) [6,100,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,100,13)
 
 - **RU:** — *vinis*
@@ -17,7 +17,7 @@
   <sub>attested</sub>
 
 **2)** — 2) besiegen, überwinden: *tāṃśca sarvānvinirjitya*
-[MBH. 3,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.466) = [≈Вульг. 3.12.6](mbh/3.12.html#v6) = крит. — [5,6085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6085)
+[MBH. 3,466.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.466) = [≈Vulg. 3.12.6](mbh/3.12.html#v6) = krit. — [5,6085.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6085)
 [BHĀG. P. 1,15,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,20) [8,12,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,12,31) *(brāhmaṇam) vivāde vā vinirjitya*
 [M. 11,205.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,205)
 

@@ -32,7 +32,7 @@ Schol. — desid. med. [BHĀG. P. 11,7,70.](https://sanskrit-lexicon-scans.githu
   <sub>attested</sub>
 
 **T46 corr.)** — *abhyud* lies sich am Leben zu erhalten suchen, sich nähren und vgl.
-[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](mbh/5.135.html#v24) = ≈крит. 05,133.21c).
+[Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Vulg. 5.135.24](mbh/5.135.html#v24) = ≈krit. 05,133.21c).
 
 - **RU:** — *abhyud* читай стараться сохранить себе жизнь, питаться и ср.
 [Spr. 4893.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4893) [5346](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5346) ([MBH. 5,4538](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4538) = [≈Вульг. 5.135.24](mbh/5.135.html#v24) = ≈крит. 05,133.21c).

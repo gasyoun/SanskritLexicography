@@ -27,7 +27,7 @@
   <sub>attested</sub>
 
 **caus-2)** — 2) Jmd Etwas beibringen: *prajñāmevāgamayati yaḥ prājñebhyaḥ sa paṇḍitaḥ*
-[MBH. 5,1247.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1247) = [≈Вульг. 5.35.66](mbh/5.35.html#v66) = ≈крит. 05,35.56a *nipuṇāgamita*
+[MBH. 5,1247.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1247) = [≈Vulg. 5.35.66](mbh/5.35.html#v66) = ≈krit. 05,35.56a *nipuṇāgamita*
 (Sch.: = *nipuṇācāryeṇābhyāsitam*)
 [ŚIŚ. 9,79.]
 
@@ -38,8 +38,8 @@
   <sub>attested</sub>
 
 **caus-3)** — 3) Kunde von Etwas (acc.) erhalten: *sarvamāgamayāmāsa pāṇḍavānāṃ viceṣṭitam . — gūḍhaiḥ praṇihitaiścaraiḥ*
-[MBH. 5,132.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.132) = [≈Вульг. 5.7.2](mbh/5.7.html#v2) = крит. — *tadapyāgamitaṃ mayā*
-[1,5434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5434) = [≈Вульг. 1.136.15](mbh/1.136.html#v15) = ≈крит. 01,126.15c *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
+[MBH. 5,132.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.132) = [≈Vulg. 5.7.2](mbh/5.7.html#v2) = krit. — *tadapyāgamitaṃ mayā*
+[1,5434.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5434) = [≈Vulg. 1.136.15](mbh/1.136.html#v15) = ≈krit. 01,126.15c *tatkuto 'sminvipine priyāpravṛttimāgamayeyam*
 [VIKR. 57,18.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?57,18) *āgamita* gelesen
 [JAṬĀDH.] im [ŚKDR.]
 

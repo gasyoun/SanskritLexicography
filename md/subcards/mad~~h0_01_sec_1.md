@@ -24,7 +24,7 @@
 [ṚV. 9,67,16.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.067.html#rv09.067.16) *imaṃ kāmaṃ mandayā gobhiraśvaiḥ* erfreue, befriedige
 [3,30,20.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.030.html#rv03.030.20) *digdhaviddhāmiva mādaya* berausche, betäube
 [ŚAT. BR. 14,9,4,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,8) *utāho tvāṃ stutayo mādayanti*
-[MBH. 3,10678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10678) = [≈Вульг. 3.133.5](mbh/3.133.html#v5) = ≈крит. 03,133.5a *gandhena mādayatīti gandhamādanam*
+[MBH. 3,10678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10678) = [≈Vulg. 3.133.5](mbh/3.133.html#v5) = ≈krit. 03,133.5a *gandhena mādayatīti gandhamādanam*
 [MALLIN.] zu [KUMĀRAS. 6,46.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?6,46)
 
 *amadayatsahakāralatā manaḥ*

@@ -4,7 +4,7 @@
 
 
 **upani+śam)** — *upani* dass.: *tadupaniśamya vacaḥ*
-[MBH. 8,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1738) = [≈Вульг. 8.37.32](mbh/8.37.html#v32) = ≈крит. 08,26.61c
+[MBH. 8,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1738) = [≈Vulg. 8.37.32](mbh/8.37.html#v32) = ≈krit. 08,26.61c
 
 - **RU:** — *upani* то же: *tadupaniśamya vacaḥ*
 [MBH. 8,1738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1738) = [≈Вульг. 8.37.32](mbh/8.37.html#v32) = ≈крит. 08,26.61c

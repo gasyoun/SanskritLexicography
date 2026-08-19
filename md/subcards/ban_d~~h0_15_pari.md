@@ -5,7 +5,7 @@
 
 **1))** — *pari*
  1) med. anbinden: *tatra tāni dṛḍhaiḥ pāśaiḥ sugāḍhaṃ paryabandhata*
-[MBH. 4,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.171) = [≈Вульг. 4.5.30](mbh/4.5.html#v30) = ≈крит. 04,5.26a sich umbinden: *mekhalām*
+[MBH. 4,171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.171) = [≈Vulg. 4.5.30](mbh/4.5.html#v30) = ≈krit. 04,5.26a sich umbinden: *mekhalām*
 [AV. 6,133,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.133.html#av06.133.05)
 
 - **RU:** — *pari*
@@ -15,7 +15,7 @@
   <sub>attested</sub>
 
 **2))** — 2) umzingeln: *tato 'sya yajñaviṣayo rakṣobhiḥ paryabadhyata*
-[MBH. 13,4785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4785) = [≈Вульг. 13.100.14](mbh/13.100.html#v14) = ≈крит. 13,103.11e
+[MBH. 13,4785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4785) = [≈Vulg. 13.100.14](mbh/13.100.html#v14) = ≈krit. 13,103.11e
 
 - **RU:** — 2) окружать, окольцовывать: *tato 'sya yajñaviṣayo rakṣobhiḥ paryabadhyata*
 [MBH. 13,4785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4785) = [≈Вульг. 13.100.14](mbh/13.100.html#v14) = ≈крит. 13,103.11e

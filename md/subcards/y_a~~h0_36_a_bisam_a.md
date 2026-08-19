@@ -4,7 +4,7 @@
 
 
 **1)** — *abhisamā* zusammen herbeikommen
-[MBH. 5,1974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1974) = [≈Вульг. 5.50.8](mbh/5.50.html#v8) = ≈крит. 05,49.8a
+[MBH. 5,1974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1974) = [≈Vulg. 5.50.8](mbh/5.50.html#v8) = ≈krit. 05,49.8a
 
 - **RU:** — *abhisamā* сойтись, собраться вместе
 [MBH. 5,1974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1974) = [≈Вульг. 5.50.8](mbh/5.50.html#v8) = ≈крит. 05,49.8a

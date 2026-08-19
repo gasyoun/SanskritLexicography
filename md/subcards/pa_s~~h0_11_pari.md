@@ -20,11 +20,11 @@
 [ṚV. 1,146,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.146.html#rv01.146.04) *somaḥ pari kratunā paśyate jāḥ*
 [9,71,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.071.html#rv09.071.09) *atha yadyudaka ātmānaṃ paripaśyet (paśyet*
 [ŚAT. BR. 14,9,4,6](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,6)). [BṚH. ĀR. UP. 6,4,6.] [CHĀND. UP. 1,4,3.] seine Gedanken auf Etwas richten: *tasya dharmādapetasya pāpāni paripaśyataḥ*
-[MBH. 1,4989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4989) = [≈Вульг. 1.128.26](mbh/1.128.html#v26) = ≈крит. 01,119.25a kennen: *etasya te duṣpraṇītasya rājan śeṣasyāhaṃ paripaśyāmyupāyam*
-[3,224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.224) = [≈Вульг. 3.4.6](mbh/3.4.html#v6) = ≈крит. 03,5.6c *nahyahaṃ paripaśyāmi vadhe kaṃ ca na śuṣmiṇaḥ . dhṛṣṭadyumnādṛte*
-[7,286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.286) = [≈Вульг. 7.9.26](mbh/7.9.html#v26) = ≈крит. 07,8.25c *sattvaṃ kṣetrajñaḥ paripaśyati*
-[12,7108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7108) = [≈Вульг. 12.199.1](mbh/12.199.html#v1) = ≈крит. 12,192.1c erkennen: *śarīrādvipramuktaṃ hi sūkṣmabhūtaṃ śarīriṇam . karmabhiḥ paripaśyanti śāstroktaiḥ śāstravedinaḥ*
-[9101.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9101) = [≈Вульг. 12.258.40](mbh/12.258.html#v40) = ≈крит. 12,250.39c [BHĀG. P. 3,32,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,30) erkennen als: *yadbhūtayoniṃ paripaśyanti dhīrāḥ*
+[MBH. 1,4989.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4989) = [≈Vulg. 1.128.26](mbh/1.128.html#v26) = ≈krit. 01,119.25a kennen: *etasya te duṣpraṇītasya rājan śeṣasyāhaṃ paripaśyāmyupāyam*
+[3,224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.224) = [≈Vulg. 3.4.6](mbh/3.4.html#v6) = ≈krit. 03,5.6c *nahyahaṃ paripaśyāmi vadhe kaṃ ca na śuṣmiṇaḥ . dhṛṣṭadyumnādṛte*
+[7,286.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.286) = [≈Vulg. 7.9.26](mbh/7.9.html#v26) = ≈krit. 07,8.25c *sattvaṃ kṣetrajñaḥ paripaśyati*
+[12,7108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7108) = [≈Vulg. 12.199.1](mbh/12.199.html#v1) = ≈krit. 12,192.1c erkennen: *śarīrādvipramuktaṃ hi sūkṣmabhūtaṃ śarīriṇam . karmabhiḥ paripaśyanti śāstroktaiḥ śāstravedinaḥ*
+[9101.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9101) = [≈Vulg. 12.258.40](mbh/12.258.html#v40) = ≈krit. 12,250.39c [BHĀG. P. 3,32,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,32,30) erkennen als: *yadbhūtayoniṃ paripaśyanti dhīrāḥ*
 [MUṆḌ. UP. 1,1,6. 2,2,7.]
 [BHĀG. P. 3,25,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,25,18) — *paripaśyate*
 [PAÑCAT. 199,10](https://sanskrit-lexicon-scans.github.io/pantankose/app2?199,10) fehlerhaft für *paripacyate* .

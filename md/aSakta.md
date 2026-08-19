@@ -12,7 +12,7 @@ _PWG article — 3 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 - **RU:** *aśakta* _Adj._ неспособный, немощный [94,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94). Дополнение (Ergänzung) — Infin. ([94,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?94)), Nom. act. в Loc. ([81,25](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81). [30](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81)) или Dat. ([28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?81)).
   <sub>lexicographic</sub>
 
-**I.)** *aśakta* I. Nom. abstr. *˚tva* _n._ [MBH. 5,163,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](mbh/5.7.html#v33) = ≈крит. 05,7.30a.
+**I.)** *aśakta* I. Nom. abstr. *˚tva* _n._ [MBH. 5,163,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Vulg. 5.7.33](mbh/5.7.html#v33) = ≈krit. 05,7.30a.
 
 - **RU:** *aśakta* I. Nom. abstr. *˚tva* _n._ [MBH. 5,163,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](mbh/5.7.html#v33) = ≈крит. 05,7.30a.
   <sub>lexicographic</sub>
@@ -22,7 +22,7 @@ _PWG article — 3 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `a_sakta~~h0_zz_pwkvn`
 
 
-**I)** *aśakta* I. Nom. abstr. *˚tva* _n._ [MBH. 5,163,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](mbh/5.7.html#v33) = ≈крит. 05,7.30a.
+**I)** *aśakta* I. Nom. abstr. *˚tva* _n._ [MBH. 5,163,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Vulg. 5.7.33](mbh/5.7.html#v33) = ≈krit. 05,7.30a.
 
 - **RU:** *aśakta* I. Nom. abstr. *˚tva* _n._ [MBH. 5,163,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](mbh/5.7.html#v33) = ≈крит. 05,7.30a.
   <sub>lexicographic</sub>
@@ -32,7 +32,7 @@ _PWG article — 3 sub-card(s), 4 sense(s) · RU 4/4 · EN 0/4_
 `a_sakta~~h0_zz_sch`
 
 
-**SCH (Nachtrag))** aśakta , Nom. abstr. ˚tva n., [MBh. 5,163,4.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](mbh/5.7.html#v33) = ≈крит. 05,7.30a
+**SCH (Nachtrag))** aśakta , Nom. abstr. ˚tva n., [MBh. 5,163,4.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Vulg. 5.7.33](mbh/5.7.html#v33) = ≈krit. 05,7.30a
 
 - **RU:** aśakta, отглаг. имя Nom. abstr. ˚tva n., [MBh. 5,163,4.](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?5,163,4) = [≈Вульг. 5.7.33](mbh/5.7.html#v33) = ≈крит. 05,7.30a
   <sub>lexicographic</sub>

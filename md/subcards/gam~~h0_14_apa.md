@@ -5,7 +5,7 @@
 
 **1)** — *apa* fortgehen, weichen, schwinden
 [AV. 6,4,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.004.html#av06.004.02) *apajagāmātha samīpāttasya*
-[MBH. 7,2087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2087) = [≈Вульг. 7.54.15](mbh/7.54.html#v15) = ≈крит. 12,250.14a
+[MBH. 7,2087.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2087) = [≈Vulg. 7.54.15](mbh/7.54.html#v15) = ≈krit. 12,250.14a
 [LA. 48,12.]
 [R. 2,21,60.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,60) [4,8,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,8,51)
 [BHĀG. P. 4,9,30.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,9,30) *tanmukhādvṛkṣacchāyāpagatā*
@@ -16,7 +16,7 @@
 [5,75,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,75,4) *nijavedapathādanāpadyapagataḥ* vom Wege abgegangen
 [BHĀG. P. 5,26,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,26,15) *cakṣuḥpathādapagatā* aus dem Gesicht gekommen
 [BHARTṚ. 1,74.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?1,74) *cāritrāpagata* vom guten Wandel abgestanden
-[MBH. 13,4284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4284) = [≈Вульг. 13.90.15](mbh/13.90.html#v15) = крит. —
+[MBH. 13,4284.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4284) = [≈Vulg. 13.90.15](mbh/13.90.html#v15) = krit. —
 
 - **RU:** — *apa* уходить, отступать, исчезать
 [AV. 6,4,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.004.html#av06.004.02) *apajagāmātha samīpāttasya*

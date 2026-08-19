@@ -8,7 +8,7 @@
 - **RU:** — *upa*
 
 **1)** 1) *yopakartṝṃśca* (d. i. *ya upa˚) hantṝṃśca tejasaivopagacchati* Jmd mit Gewalt entgegentreten, Gewalt gegen Jmd gebrauchen
-[MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Вульг. 3.28.21](mbh/3.28.html#v21) = ≈крит. 03,29.21c
+[MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Vulg. 3.28.21](mbh/3.28.html#v21) = ≈krit. 03,29.21c
 
 - **RU:** 1) *yopakartṝṃśca* (т.е. *ya upa˚) hantṝṃśca tejasaivopagacchati* выступать против кого-л. с применением силы, применять силу против кого-л.
 [MBH. 3,1049.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1049) = [≈Вульг. 3.28.21](mbh/3.28.html#v21) = ≈крит. 03,29.21c

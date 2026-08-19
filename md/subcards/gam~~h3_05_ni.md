@@ -5,7 +5,7 @@
 
 **3)** — *ni* (Nachträge)
  3)
-Z. 6 [MBH. 13,2604](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2604) = [≈Вульг. 13.48.42](mbh/13.48.html#v42) = ≈крит. 13,48.41a *niyacchati* richtig; vgl. u. *yam* mit *ni* 3). — caus. erschliessen (vgl. Nachträge)
+Z. 6 [MBH. 13,2604](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2604) = [≈Vulg. 13.48.42](mbh/13.48.html#v42) = ≈krit. 13,48.41a *niyacchati* richtig; vgl. u. *yam* mit *ni* 3). — caus. erschliessen (vgl. Nachträge)
 [PAT. a. a. O. 8,40,b.]
 
 - **RU:** — *ni* (Дополнения)

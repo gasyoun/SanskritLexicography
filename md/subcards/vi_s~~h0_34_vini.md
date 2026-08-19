@@ -34,7 +34,7 @@
   <sub>attested</sub>
 
 **5)** — 5) angelegt: *taḍāgāni*
-[MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211) = [≈Вульг. 2.5.77](mbh/2.5.html#v77) = ≈крит. 02,5.67c
+[MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211) = [≈Vulg. 2.5.77](mbh/2.5.html#v77) = ≈krit. 02,5.67c
 
 - **RU:** — 5) заложенный, устроенный: *taḍāgāni*
 [MBH. 2,211.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.211) = [≈Вульг. 2.5.77](mbh/2.5.html#v77) = ≈крит. 02,5.67c
@@ -67,7 +67,7 @@
   <sub>attested</sub>
 
 **verb.3)** — 3) aufstellen (Truppen)
-[MBH. 7,1494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1494) = [≈Вульг. 7.34.13](mbh/7.34.html#v13) = ≈крит. 07,33.12a
+[MBH. 7,1494.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1494) = [≈Vulg. 7.34.13](mbh/7.34.html#v13) = ≈krit. 07,33.12a
 [KĀM. NĪTIS. 16,6.]
 
 - **RU:** — 3) расставлять (войска)
@@ -113,8 +113,8 @@
 
 **verb.8)** — 8) bringen —, versetzen auf: *pathi viniveśitātmanām*
 [KĀM. NĪTIS. 3,38.] Jmd anstellen: *sārathye*
-[MBH. 5,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5253) = [≈Вульг. 5.157.19](mbh/5.157.html#v19) = ≈крит. 05,154.17c *kare* so v. a. tributpflichtig machen
-[2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035) = [≈Вульг. 2.27.26](mbh/2.27.html#v26) = ≈крит. 02,24.25c
+[MBH. 5,5253.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5253) = [≈Vulg. 5.157.19](mbh/5.157.html#v19) = ≈krit. 05,154.17c *kare* so v. a. tributpflichtig machen
+[2,1035.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1035) = [≈Vulg. 2.27.26](mbh/2.27.html#v26) = ≈krit. 02,24.25c
 
 - **RU:** — 8) переводить —, переносить на: *pathi viniveśitātmanām*
 [KĀM. NĪTIS. 3,38.] назначить кого-либо: *sārathye*
@@ -130,7 +130,7 @@
   <sub>attested</sub>
 
 **verb.10)** — 10) richten (Blick, Gedanken) auf Etwas: *govinde viniveśitāṃ dṛṣṭim*
-[MBH. 14,1538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1538) = [≈Вульг. 14.53.3](mbh/14.53.html#v3) = ≈крит. 14,52.3a *matiṃ puryarthe*
+[MBH. 14,1538.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1538) = [≈Vulg. 14.53.3](mbh/14.53.html#v3) = ≈krit. 14,52.3a *matiṃ puryarthe*
 [HARIV. 6415.](https://sanskrit-lexicon-scans.github.io/hariv?6415)
 
 - **RU:** — 10) направлять (взгляд, мысли) на что-либо: *govinde viniveśitāṃ dṛṣṭim*

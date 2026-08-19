@@ -30,7 +30,7 @@
 [KULL.] zu [M. 8,257.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,257) *nirṇīta* auf's Reine gebracht, entschieden, ausgemacht, feststehend
 [AK. 3,4,26,205.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,4,26,205) *nirṇītavedaśāstrārtha*
 [Verz. d. Oxf. H. 91,b,10.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?91) *sunirṇītārthasaṃśaya*
-[MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735) = [≈Вульг. 13.167.30](mbh/13.167.html#v30) = ≈крит. 13,153.30a
+[MBH. 13,7735.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7735) = [≈Vulg. 13.167.30](mbh/13.167.html#v30) = ≈krit. 13,153.30a
 [BHĀG. P. 2,1,11.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,1,11)
 [ŚAṂK.] zu [BṚH. ĀR. UP. S. 216.]
 

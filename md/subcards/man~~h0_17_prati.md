@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **2)** [CHĀND. UP. 4,3,7.] — caus. Jmd ehren: *pratimānya dhanaṃjayam*
-[MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712) = [≈Вульг. 3.41.48](mbh/3.41.html#v48) = ≈крит. 03,42.41c
+[MBH. 3,1712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1712) = [≈Vulg. 3.41.48](mbh/3.41.html#v48) = ≈krit. 03,42.41c
 [R. 3,53,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,27)
 [Spr. 2230.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2230)
 [KĀM. NĪTIS. 17,31.] Inschr. in
@@ -29,7 +29,7 @@
 
 **3)** [VARĀH. BṚH. S. 50,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,6) gut —, mit Beifall aufnehmen: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* die neuere Ausg.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
 [HARIV. 8467.](https://sanskrit-lexicon-scans.github.io/hariv?8467) *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*
-[MBH. 1,8015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8015) = [≈Вульг. 1.220.4](mbh/1.220.html#v4) = ≈крит. 01,212.4a *tatpratimānyatāṃ prathamaḥ suhṛtpraṇayaḥ*
+[MBH. 1,8015.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8015) = [≈Vulg. 1.220.4](mbh/1.220.html#v4) = ≈krit. 01,212.4a *tatpratimānyatāṃ prathamaḥ suhṛtpraṇayaḥ*
 
 - **RU:** [VARĀH. BṚH. S. 50,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?50,6) благосклонно принять, встречать одобрением: *pūrvaṃ tu bālāḥ samudāharanti (samudāvahanti* более новая изд.) *. vṛddhāśca paścātpratimānayanti sthāneṣu nityaṃ pratimānayanti ..*
 [HARIV. 8467.](https://sanskrit-lexicon-scans.github.io/hariv?8467) *prīyamāṇo haladharaḥ saṃbandhaṃ pratimānayan*

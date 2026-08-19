@@ -11,16 +11,16 @@
 **1)** 1) zurückkehren
 [TBR. 1,3,10,1.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,3,10,1)
 [GOBH. 3,6,1.]
-[MBH. 2,1181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1181) = [≈Вульг. 2.31.77](mbh/2.31.html#v77) = ≈крит. 02,28.54a [2490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2490) = [≈Вульг. 2.75.12](mbh/2.75.html#v12) = ≈крит. 02,66.37a
+[MBH. 2,1181.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1181) = [≈Vulg. 2.31.77](mbh/2.31.html#v77) = ≈krit. 02,28.54a [2490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2490) = [≈Vulg. 2.75.12](mbh/2.75.html#v12) = ≈krit. 02,66.37a
 [R. 4,33,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,33,22) [58,28.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,58,28) *punaḥ pratyāgamiṣyati*
 [2,52,78.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,78) *pratyāgata*
-[24,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,32) [MBH. 3,289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.289) = [≈Вульг. 3.7.3](mbh/3.7.html#v3) = ≈крит. 03,8.3c [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
+[24,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,32) [MBH. 3,289.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.289) = [≈Vulg. 3.7.3](mbh/3.7.html#v3) = ≈krit. 03,8.3c [DRAUP. 8,50.] *raṇātpratyāgataṃ śūram*
 [CĀṆ. 79.] *pratyājagāma nagaram*
 [MBH.] in [BENF. Chr. 62,58.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?62) *punaḥ pratyāgataḥ — gṛhamātmanaḥ*
 [INDR. 5. 51.] *snehaḥ pratihato na pratyāgacchati*
 [SUŚR. 2,200,10.] *pratyāgatāsu*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *˚prāṇa*
-[MBH. 3,8681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8681) = [≈Вульг. 3.99.65](mbh/3.99.html#v65) = крит. — *˚smṛti*
+[MBH. 3,8681.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8681) = [≈Vulg. 3.99.65](mbh/3.99.html#v65) = krit. — *˚smṛti*
 [R. 2,58,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,58,1)
 
 - **RU:** 1) возвратиться

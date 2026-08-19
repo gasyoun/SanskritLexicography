@@ -11,7 +11,7 @@
 
 Begriff sein zu gehen, zu gelangen streben
 [LĀṬY. 2,6,17.] *jigamiṣantaḥ*
-[MBH. 16,63.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.63) = [≈Вульг. 16.3.7](mbh/16.3.html#v7) = ≈крит. 16,4.6a *svargaṃ lokamajigāṃsat*
+[MBH. 16,63.](https://sanskrit-lexicon-scans.github.io/mbhcalc?16.63) = [≈Vulg. 16.3.7](mbh/16.3.html#v7) = ≈krit. 16,4.6a *svargaṃ lokamajigāṃsat*
 [ŚAT. BR. 10,2,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,2,1,1) *atha yadi mahajjigamiṣet*
 [CHĀND. UP. 5,2,4.]
 

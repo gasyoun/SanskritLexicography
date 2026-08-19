@@ -5,9 +5,9 @@
 
 **1)** — *saṃni* caus.
  1) kund thun, berichten, melden
-[MBH. 1,4064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4064) = [≈Вульг. 1.100.98](mbh/1.100.html#v98) = ≈крит. 01,94.90c [5,155.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.155) = [≈Вульг. 5.7.25](mbh/5.7.html#v25) = ≈крит. 05,7.21c
+[MBH. 1,4064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4064) = [≈Vulg. 1.100.98](mbh/1.100.html#v98) = ≈krit. 01,94.90c [5,155.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.155) = [≈Vulg. 5.7.25](mbh/5.7.html#v25) = ≈krit. 05,7.21c
 [R. 6,112,69.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,112,69) [7,31,12.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,31,12) *ciraṃ gataṃ punaḥ kanyā pitre taṃ saṃnyavedayat* meldete, dass
-[MBH. 1,3224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3224) = [≈Вульг. 1.76.41](mbh/1.76.html#v41) = ≈крит. 01,71.32c
+[MBH. 1,3224.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3224) = [≈Vulg. 1.76.41](mbh/1.76.html#v41) = ≈krit. 01,71.32c
 
 - **RU:** — *saṃni* caus.
  1) давать знать, сообщать, доносить

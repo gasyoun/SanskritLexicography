@@ -9,9 +9,9 @@
   <sub>attested</sub>
 
 **1)** 1) herbeikommen, zu Jmd oder irgendwohin kommen, — treten, besuchen: *tatra vāsāyābhyāgaman*
-[MBH. 1,7583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7583) = [≈Вульг. 1.205.29](mbh/1.205.html#v29) = ≈крит. 01,197.28a
+[MBH. 1,7583.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7583) = [≈Vulg. 1.205.29](mbh/1.205.html#v29) = ≈krit. 01,197.28a
 [R. 3,6,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,6,10) [10,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,8) *varṣamabhyājagāma*
-[MBH. 3,10979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10979) = [≈Вульг. 3.142.31](mbh/3.142.html#v31) = крит. — *yamanabhyāgamiṣyanmanyeta* welchen er voraussichtlich nicht besuchen wird
+[MBH. 3,10979.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10979) = [≈Vulg. 3.142.31](mbh/3.142.html#v31) = krit. — *yamanabhyāgamiṣyanmanyeta* welchen er voraussichtlich nicht besuchen wird
 [ŚAT. BR. 12,4,1,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,9) [2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,2,1) *tamabhyāgacchāma*
 [CHĀND. UP. 5,11,2.]
 [MBH. 1,5241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5241)
@@ -20,10 +20,10 @@
 [3,6,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,6,11) [52,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,20) *abhyāgaccha rāmasya veśma*
 [2,32,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,2) Mit *punar* wiederkehren
 [R. 1,9,54.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,54) *na punaḥ — yuddhamabhyāgamiṣyati*
-[MBH. 9,1241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1241) = [≈Вульг. 9.23.51](mbh/9.23.html#v51) = ≈крит. 09,22.48e *abhyāgata* (s. auch d.) herbeigekommen, angekommen, Ankömmling; gekommen zu, nach: *śālvebhyo 'bhyāgataḥ*
+[MBH. 9,1241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1241) = [≈Vulg. 9.23.51](mbh/9.23.html#v51) = ≈krit. 09,22.48e *abhyāgata* (s. auch d.) herbeigekommen, angekommen, Ankömmling; gekommen zu, nach: *śālvebhyo 'bhyāgataḥ*
 [SĀV. 7,3.]
 [PAÑCAT. III,241.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,241) [36,13.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,13) [44,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?44,22) *āgatābhyatāṃśca*
-[MBH. 5,912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.912) = [≈Вульг. 5.30.46](mbh/5.30.html#v46) = ≈крит. 05,30.44a
+[MBH. 5,912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.912) = [≈Vulg. 5.30.46](mbh/5.30.html#v46) = ≈krit. 05,30.44a
 [N. 11,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,20)
 [R. 3,9,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,23)
 [PAÑCAT. 25,9.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?25,9) [124,3.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?124,3) *sarvasyābhyāgato guruḥ*
@@ -69,7 +69,7 @@
 
 **2)** — 2) in einen Zustand, ein Verhältniss gerathen: *cintāmabhyāgamat*
 [R. 3,4,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,20) *poṣaṇābhyā˚* gemästet
-[MBH. 13,3515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3515) = [≈Вульг. 13.71.31](mbh/13.71.html#v31) = ≈крит. 13,70.30c
+[MBH. 13,3515.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3515) = [≈Vulg. 13.71.31](mbh/13.71.html#v31) = ≈krit. 13,70.30c
 
 - **RU:** — 2) впасть в некое состояние, отношение: *cintāmabhyāgamat*
 [R. 3,4,20.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,4,20) *poṣaṇābhyā˚* откормленный

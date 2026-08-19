@@ -22,7 +22,7 @@
 
 **PPP-siddha-4)** — 4) hergestellt, geheilt: *auṣadha˚*
 [KATHĀS. 40,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,69) *˚rūpa*
-[MBH. 1,3241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3241) = [≈Вульг. 1.76.58](mbh/1.76.html#v58) = ≈крит. 01,71.46a
+[MBH. 1,3241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3241) = [≈Vulg. 1.76.58](mbh/1.76.html#v58) = ≈krit. 01,71.46a
 
 - **RU:** — 4) изготовленный; исцеленный: *auṣadha˚* [KATHĀS. 40,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,69) *˚rūpa* [MBH. 1,3241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3241) = [≈Вульг. 1.76.58](mbh/1.76.html#v58) = ≈крит. 01,71.46a
   <sub>attested</sub>
@@ -47,13 +47,13 @@
   <sub>attested</sub>
 
 **PPP-siddha-8)** — 8) geschickt, erfahren: *mahāyuddheṣu*
-[MBH. 4,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1183) = [≈Вульг. 4.36.13](mbh/4.36.html#v13) = крит. —
+[MBH. 4,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1183) = [≈Vulg. 4.36.13](mbh/4.36.html#v13) = krit. —
 
 - **RU:** — 8) искусный, опытный: *mahāyuddheṣu* [MBH. 4,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1183) = [≈Вульг. 4.36.13](mbh/4.36.html#v13) = крит. —
   <sub>attested</sub>
 
 **PPP-siddha-9)** — 9) der das höchste Ziel erreicht hat, der Vollkommenheit erlangt hat, glückselig
-[MBH. 5,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2982) = [≈Вульг. 5.83.63](mbh/5.83.html#v63) = ≈крит. 05,81.63a [6,645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.645) = [≈Вульг. 6.17.9](mbh/6.17.html#v9) = ≈крит. 06,17.9a [13,3842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3842) = [≈Вульг. 13.81.40](mbh/13.81.html#v40) = ≈крит. 13,80.38c
+[MBH. 5,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2982) = [≈Vulg. 5.83.63](mbh/5.83.html#v63) = ≈krit. 05,81.63a [6,645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.645) = [≈Vulg. 6.17.9](mbh/6.17.html#v9) = ≈krit. 06,17.9a [13,3842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3842) = [≈Vulg. 13.81.40](mbh/13.81.html#v40) = ≈krit. 13,80.38c
 [R. GORR. 2,70,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,70,16)
 [BRAHMA-P. in LA. (III) 48,18.] [BHĀG. P. 1,19,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,36) [6,4,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,43) [16,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,50) *yoga˚*
 [BHAG. 4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) *anekajanma˚*

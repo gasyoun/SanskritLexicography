@@ -29,8 +29,8 @@
 [KAUŚ. 107.] *caturo māsāṃ chiṣyebhyaḥ prabrūyāt* lehren
 [139.] *idaṃ vāva tajjyeṣṭhāya putrāya pitrāya pitā brahma prabrūyāt*
 [CHĀND. UP. 3,11,5.] [4,10,2.] *tanme prabrūtam*
-[8,8,1.] [KAṬHOP. 1,13.] [M. 8,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,58) [10,1.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,1) [2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,2) [MBH. 3,10487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10487) = [≈Вульг. 3.126.5](mbh/3.126.html#v5) = ≈крит. 03,126.5a [4,18.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.18) = [≈Вульг. 4.1.19](mbh/4.1.html#v19) = ≈крит. 04,1.15a [316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.316) = [≈Вульг. 4.12.5](mbh/4.12.html#v5) = ≈крит. 04,11.5a [12,1963.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1963) [13,344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.344) = [≈Вульг. 13.7.1](mbh/13.7.html#v1) = ≈крит. 13,7.1c *maruttasya kathāṃ prabrūhi me* erzählen
-[14,64.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.64) = [≈Вульг. 14.4.1](mbh/14.4.html#v1) = ≈крит. 14,4.1a *tāsāmapatyāni — bhagavānprabravītu me*
+[8,8,1.] [KAṬHOP. 1,13.] [M. 8,58.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,58) [10,1.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,1) [2.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,2) [MBH. 3,10487.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10487) = [≈Vulg. 3.126.5](mbh/3.126.html#v5) = ≈krit. 03,126.5a [4,18.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.18) = [≈Vulg. 4.1.19](mbh/4.1.html#v19) = ≈krit. 04,1.15a [316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.316) = [≈Vulg. 4.12.5](mbh/4.12.html#v5) = ≈krit. 04,11.5a [12,1963.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1963) [13,344.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.344) = [≈Vulg. 13.7.1](mbh/13.7.html#v1) = ≈krit. 13,7.1c *maruttasya kathāṃ prabrūhi me* erzählen
+[14,64.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.64) = [≈Vulg. 14.4.1](mbh/14.4.html#v1) = ≈krit. 14,4.1a *tāsāmapatyāni — bhagavānprabravītu me*
 [HARIV. 9177.](https://sanskrit-lexicon-scans.github.io/hariv?9177)
 [R. 6,82,101.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,82,101)
 [MĀRK. P. 75,34.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?75,34) [101,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,2)
@@ -38,9 +38,9 @@
 [VARĀH. BṚH. S. 73,6.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?73,6) *jī veti prabruvan* ausrufend
 [Spr. 984.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?984) *yathā māṃ prabravīṣi* wie du mich nennst
 [BHĀG. P. 2,5,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,5,10) *guṇairupetaṃ sarvaistaṃ bhagavanprabravīṣi me* schildern als
-[MBH. 3,16678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16678) = [≈Вульг. 3.294.21](mbh/3.294.html#v21) = ≈крит. 03,278.21a erzählen, mit dopp. acc.: *prābravīdrāmaṃ balino yudhi vikramam*
+[MBH. 3,16678.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16678) = [≈Vulg. 3.294.21](mbh/3.294.html#v21) = ≈krit. 03,278.21a erzählen, mit dopp. acc.: *prābravīdrāmaṃ balino yudhi vikramam*
 [BHAṬṬ. 6,107.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?6,107) *atastvāṃ prabravīmyaham* darum sage ich es dir
-[MBH. 4,838.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.838) = [≈Вульг. 4.24.10](mbh/4.24.html#v10) = ≈крит. 04,23.10c
+[MBH. 4,838.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.838) = [≈Vulg. 4.24.10](mbh/4.24.html#v10) = ≈krit. 04,23.10c
 [R. GORR. 1,69,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,69,1) [3,40,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,24) *sītā rāvaṇaṃ prābravīdvacaḥ* sprach zu R. die Worte
 [BHAṬṬ. 8,85.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,85)
 

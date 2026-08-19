@@ -17,7 +17,7 @@
 **2)** — 2) dienstbereit sein; sich fügen: *iha tvā bhūryā caredupa tman*
 [ṚV. 4,4,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.09) *mamedanu kratuṃ patiḥ sehānāyā upācaret*
 [10,159,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.159.html#rv10.159.02) *upācarati tatra sma dhanānāmīśvaram* Dienste thun
-[MBH. 2,408.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.408) = [≈Вульг. 2.10.26](mbh/2.10.html#v26) = крит. —
+[MBH. 2,408.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.408) = [≈Vulg. 2.10.26](mbh/2.10.html#v26) = krit. —
 
 - **RU:** — 2) быть готовым служить; подчиняться, покоряться: *iha tvā bhūryā caredupa tman*
 [ṚV. 4,4,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.004.html#rv04.004.09) *mamedanu kratuṃ patiḥ sehānāyā upācaret*
@@ -26,7 +26,7 @@
   <sub>attested</sub>
 
 **3)** — 3) behandeln: *vyājena hi tvayā droṇa upācīrṇaḥ sutaṃ prati*
-[MBH. 18,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.95) = [≈Вульг. 18.3.15](mbh/18.3.html#v15) = ≈крит. 18,3.13c in medic. Sinne: *abhiṣyandam*
+[MBH. 18,95.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.95) = [≈Vulg. 18.3.15](mbh/18.3.html#v15) = ≈krit. 18,3.13c in medic. Sinne: *abhiṣyandam*
 [SUŚR. 2,313,17.] *jvarān*
 [416,11.]
 

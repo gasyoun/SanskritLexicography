@@ -206,7 +206,7 @@
 — 1〉 Etwas vorweg essen.
 — 2〉 Jmd (Acc.) beim Essen übergehen, ohne Essen lassen.
 — 3〉 verspeisen, auf-, verzehren [KĀD. 2,118,1]. ([145,6]).
-— 4〉 geniessen, benutzen, gebrauchen. — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) = [≈Вульг. 11.3.14](mbh/11.3.html#v14) = ≈крит. 11,3.11c fehlerhaft für *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
+— 4〉 geniessen, benutzen, gebrauchen. — *paribhujyantam* [MBH. 11,97](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.97) = [≈Vulg. 11.3.14](mbh/11.3.html#v14) = ≈krit. 11,3.11c fehlerhaft für *˚bhṛjjyantam*. — *paribubhukṣita* s. bes. ([Nachtr. 4])
 
 - **RU:** — С *pari*
 — 1〉 есть заранее, есть прежде других.

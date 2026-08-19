@@ -27,7 +27,7 @@
   <sub>attested</sub>
 
 **3)** — 3) pass. einen Wandel erfahren: *prakṛtiḥ sā mama parā na kvacitparihanyate (prati˚* [ed. Bomb.])
-[MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) = [≈Вульг. 13.139.42](mbh/13.139.html#v42) = ≈крит. 13,126.42a sich legen, vergehen: *utsāhaḥ parihanyate*
+[MBH. 13,6329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6329) = [≈Vulg. 13.139.42](mbh/13.139.html#v42) = ≈krit. 13,126.42a sich legen, vergehen: *utsāhaḥ parihanyate*
 [Spr. (II) 3769](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3769 "Spr. (II) 3769: nirviśeṣaṃ yadā svāmī samaṃ bhṛtyeṣu vartate | tadodyamasamarthānāmutsāhaḥ parihīyate || — (1612.) Wenn ein Herr ohne allen Unterschied auf gleiche Weise gegen seine Diener verfährt, dann vergeht den Arbeitsfähigen der Muth zum Schaffen."), v. l. für *parihīyate* . — Statt *pari bādho jahī mṛdhaḥ*
 [ṚV. 8,45,40](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40) ist *paribādho* zu vermuthen.
 

@@ -49,8 +49,8 @@
 [ṚV. 10,117,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.117.html#rv10.117.03) *jāyāṃ jijñāse manasā carantīm*
 [AV. 14,1,56.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av14.001.html#av14.001.56) *eka eva carennityam*
 [M. 6,42.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,42) *tasmāccarethaḥ satataṃ kṣamāśīlo jitendriyaḥ*
-[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) = [≈Вульг. 1.42.10](mbh/1.42.html#v10) = ≈крит. 01,38.10a *svargaṃ prāptāścaranti sma devaiḥ saha gatavyathāḥ*
-[3,1736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1736) = [≈Вульг. 3.42.23](mbh/3.42.html#v23) = ≈крит. 03,43.23a *sukhaṃ carati loke 'smin*
+[MBH. 1,1734.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1734) = [≈Vulg. 1.42.10](mbh/1.42.html#v10) = ≈krit. 01,38.10a *svargaṃ prāptāścaranti sma devaiḥ saha gatavyathāḥ*
+[3,1736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1736) = [≈Vulg. 3.42.23](mbh/3.42.html#v23) = ≈krit. 03,43.23a *sukhaṃ carati loke 'smin*
 [M. 2,163.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,163) *svasti caranti*
 [BHĀG. P. 3,1,35.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,35) sich befinden, stehen, sein von Gestirnen: *āśleṣāsu caran*
 [VARĀH. BṚH. S. 9,28.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?9,28) [10,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,15) [18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?10,18)
@@ -76,7 +76,7 @@
 [11,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av03.011.html#av03.011.02) [VS. 1,5.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?1,5) [2,28.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?2,28) [ŚAT. BR. 2,4,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,6) [GOBH. 3,1,15.] [ĀŚV. GṚHY. 1,8. 22.] [M. 2,187.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,187) [4,198.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,198) *śirovrataṃ vidhivadyaistu cīrṇam*
 [MUṆḌ. UP. 3,2,10.]
 [YĀJÑ. 3,299.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?3,299)
-[MBH. 1,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1929) = [≈Вульг. 1.48.19](mbh/1.48.html#v19) = ≈крит. 01,44.19c [3,7026.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7026) [8070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8070) = [≈Вульг. 3.84.92](mbh/3.84.html#v92) = ≈крит. 03,82.80a *caritavrata*
+[MBH. 1,1929.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1929) = [≈Vulg. 1.48.19](mbh/1.48.html#v19) = ≈krit. 01,44.19c [3,7026.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.7026) [8070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8070) = [≈Vulg. 3.84.92](mbh/3.84.html#v92) = ≈krit. 03,82.80a *caritavrata*
 [R. 1,3,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,1) *brahmacaryaṃ car*
 [ŚĀṄKH. GṚHY. 1,17. 2,11.]
 [M. 2,249.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,249) *mantraśrutyam*
@@ -87,16 +87,16 @@
 [ŚAT. BR. 3,9,4,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,9,4,14) [13,5,4,22.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?13,5,4,22) *mithutam*
 [4,6,7,9.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,9) [KAUŚ. 141.] [ŚĀṄKH. ŚR. 15,17,16.] [CHĀND. UP. 3,17,3.] *dharmam*
 [ĀŚV. GṚHY. 1,6.]
-[TAITT. UP. 1,11. 1.] [M. 3,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,30) [YĀJÑ. 1,60.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,60) [MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) = [≈Вульг. 1.82.21](mbh/1.82.html#v21) = ≈крит. 01,77.21c [R. 3,10,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,15) [PAÑCAT. III,178.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,178) *tapaḥ*
-[MBH. 3,8504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8504) = [≈Вульг. 3.94.16](mbh/3.94.html#v16) = ≈крит. 03,92.15c
+[TAITT. UP. 1,11. 1.] [M. 3,30.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,30) [YĀJÑ. 1,60.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,60) [MBH. 1,3417.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3417) = [≈Vulg. 1.82.21](mbh/1.82.html#v21) = ≈krit. 01,77.21c [R. 3,10,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,10,15) [PAÑCAT. III,178.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,178) *tapaḥ*
+[MBH. 3,8504.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8504) = [≈Vulg. 3.94.16](mbh/3.94.html#v16) = ≈krit. 03,92.15c
 [HARIV. 2321.](https://sanskrit-lexicon-scans.github.io/hariv?2321)
 [R. 1,57,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,2) *cirāccīrṇam — tapaḥ*
 [BHĀG. P. 5,6,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,6,3) *prakṛṣṭaṃ mayā putra puṇyaṃ cīrṇam*
-[MBH. 15,91.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.91) = [≈Вульг. 15.3.31](mbh/15.3.html#v31) = ≈крит. 15,5.15a *yathā nāsatkṛtaṃ kiṃcinmanasāpi carāmyaham*
-[3,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) = [≈Вульг. 3.76.27](mbh/3.76.html#v27) = ≈крит. 03,75.2a *pāpam*
+[MBH. 15,91.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.91) = [≈Vulg. 15.3.31](mbh/15.3.html#v31) = ≈krit. 15,5.15a *yathā nāsatkṛtaṃ kiṃcinmanasāpi carāmyaham*
+[3,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2982) = [≈Vulg. 3.76.27](mbh/3.76.html#v27) = ≈krit. 03,75.2a *pāpam*
 [BHAG. 3,36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,36) *tejovṛttam*
 [M. 9,303.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,303) *cīrṇavṛtta*
-[MBH. 13,1595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1595) = [≈Вульг. 13.23.24](mbh/13.23.html#v24) = ≈крит. 13,24.25a *tvayā caritapūrvam — nīvārabalim*
+[MBH. 13,1595.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1595) = [≈Vulg. 13.23.24](mbh/13.23.html#v24) = ≈krit. 13,24.25a *tvayā caritapūrvam — nīvārabalim*
 [ŚĀK. 96.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?96) *ko hi me bhoktukāmasya vighnaṃ carati* ein Hinderniss in den Weg legen
 [HIḌ. 3,17.]
 [HARIV. 6790.](https://sanskrit-lexicon-scans.github.io/hariv?6790) *bhaikṣam* Almosen bitten
@@ -113,7 +113,7 @@
 [BHĀG. P. 5,8,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,8,14) *(uṣṭraḥ) ekastu punaḥ pṛṣṭhe krīḍāṃ kurvanvallarīścaranyāvattiṣṭhati*
 [PAÑCAT. 229,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?229,17) Daher wohl *car* essen
 [DHĀTUP. 15,51](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=15), v. l.; vgl. jedoch u. *ā*.* tapasā indriyagrāmaṃ yaścaret* die Sinnesorgane mit Kasteiungen behandeln, kasteien
-[MBH. 14,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.544) = [≈Вульг. 14.19.13](mbh/14.19.html#v13) = крит. —
+[MBH. 14,544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.544) = [≈Vulg. 14.19.13](mbh/14.19.html#v13) = krit. —
 
 - **RU:** — 5) приступать к чему-либо, браться за что-либо, упражняться, заниматься, совершать; подвергать себя чему-либо; (в поведении) соблюдать; с acc.: *yatkiṃ cedaṃ daivye jane 'bhidrohaṃ carāmasi*
 [ṚV. 7,89,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.089.html#rv07.089.05) [10,164,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.164.html#rv10.164.04) *yena dhanena prapaṇaṃ carāmi*
@@ -163,7 +163,7 @@
   <sub>attested</sub>
 
 **6)** — 6) euphem. mit Auslassung von *mithuna* (s. u.
-[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.5) = [≈Вульг. 14.1.6](mbh/14.1.html#v6) = ≈крит. 14,1.5c): es zu thun haben mit: *ratvā caritvā*
+[5.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.5) = [≈Vulg. 14.1.6](mbh/14.1.html#v6) = ≈krit. 14,1.5c): es zu thun haben mit: *ratvā caritvā*
 [ŚAT. BR. 14,7,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,7,1,17) *yadanyasya satyanyena carati (strī)* wenn sie dem Einen gehört und mit einem Andern es thut
 [2,5,2,20.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,5,2,20)
 

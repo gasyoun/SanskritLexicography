@@ -15,12 +15,12 @@
 - **RU:** [TS. 5,7,9,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?5,7,9,1) отказываться, отпускать: *śūdrakarma tu yaḥ kuryādavahāya svakarma ca*
   <sub>attested</sub>
 
-**ava_3_zurückbleiben)** [MBH. 13,6208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6208) = [≈Вульг. 13.135.10](mbh/13.135.html#v10) = крит. — — pass. zurückbleiben: *agacchansahitāstatra na kaścidavahīyate*
+**ava_3_zurückbleiben)** [MBH. 13,6208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6208) = [≈Vulg. 13.135.10](mbh/13.135.html#v10) = krit. — — pass. zurückbleiben: *agacchansahitāstatra na kaścidavahīyate*
 
 - **RU:** [MBH. 13,6208.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6208) = [≈Вульг. 13.135.10](mbh/13.135.html#v10) = крит. — — pass. отставать: *agacchansahitāstatra na kaścidavahīyate*
   <sub>attested</sub>
 
-**ava_4_nicht_ziel)** [MBH. 3,11558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11558) = [≈Вульг. 3.157.67](mbh/3.157.html#v67) = ≈крит. 03,154.56a nicht zum Ziele kommen: *videvaste yajñe 'vahāsyate*
+**ava_4_nicht_ziel)** [MBH. 3,11558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11558) = [≈Vulg. 3.157.67](mbh/3.157.html#v67) = ≈krit. 03,154.56a nicht zum Ziele kommen: *videvaste yajñe 'vahāsyate*
 
 - **RU:** [MBH. 3,11558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11558) = [≈Вульг. 3.157.67](mbh/3.157.html#v67) = ≈крит. 03,154.56a не достигать цели: *videvaste yajñe 'vahāsyate*
   <sub>attested</sub>

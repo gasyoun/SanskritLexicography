@@ -119,9 +119,9 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 **PPP 1m)** — m) der sein Ziel erreicht hat
 [BHĀG. P. 10,22,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,27) der das höchste Ziel erreicht hat, zur Vollkommenheit gelangt —, Meister geworden in Etwas (geht im comp. voran)
 [VARĀH. BṚH. 21 (19),2.] *mantra˚*
-[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Вульг. 1.162.13](mbh/1.162.html#v13) = ≈крит. 01,150.13a *karma˚*
-[6356.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6356) = [≈Вульг. 1.164.5](mbh/1.164.html#v5) = ≈крит. 01,152.4a *tapaḥ˚*
-[7668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7668) = [≈Вульг. 1.208.6](mbh/1.208.html#v6) = ≈крит. 01,200.6c [R. 1,47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [BHĀG. P. 7,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,17) *anarthāya* Meister im Unheilstiften
+[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Vulg. 1.162.13](mbh/1.162.html#v13) = ≈krit. 01,150.13a *karma˚*
+[6356.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6356) = [≈Vulg. 1.164.5](mbh/1.164.html#v5) = ≈krit. 01,152.4a *tapaḥ˚*
+[7668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7668) = [≈Vulg. 1.208.6](mbh/1.208.html#v6) = ≈krit. 01,200.6c [R. 1,47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [BHĀG. P. 7,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,17) *anarthāya* Meister im Unheilstiften
 [KATHĀS. 28,185.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,185)
 
 - **RU:** — m) достигший своей цели
@@ -137,11 +137,11 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [H. an.] *siddho 'hyatra mahātapāḥ*
 [R. 1,31,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,3)
 [R. GORR. 1,36,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,36,12) [2,98,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,98,7) [3,6,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,6,22) Śiva
-[MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) = [≈Вульг. 14.8.17](mbh/14.8.html#v17) = ≈крит. 14,8.16c
+[MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) = [≈Vulg. 14.8.17](mbh/14.8.html#v17) = ≈krit. 14,8.16c
 [Spr. (II) 2784.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2784 "Spr. (II) 2784: dāridryāya namastubhyaṃ siddho 'haṃ tvatprasādataḥ | jagatpaśyāmi yenāhaṃ na māṃ paśyanti ke ca na || — (1148.) Ich verbeuge mich tief vor dir, o Armuth, weil ich durch deine Gnade übernatürliche Kraft erlangt habe, indem ich die Welt wohl sehe, aber selbst von Niemanden gesehen werden.")
 [KATHĀS. 5,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,135) [121,79.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,79)
 [BHĀG. P. 3,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,8) [6,12,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,12,19) *saṃkalpa˚*
-[MBH. 5,7490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7490) = [≈Вульг. 5.192.3](mbh/5.192.html#v3) = ≈крит. 05,193.2c *janmauṣadhitapomattrayoga˚*
+[MBH. 5,7490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7490) = [≈Vulg. 5.192.3](mbh/5.192.html#v3) = ≈krit. 05,193.2c *janmauṣadhitapomattrayoga˚*
 [BHĀG. P. 4,6,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,9) *nitya˚, yoga˚*
 [COLEBR. Misc. Ess. 1,381.] *asiddhasya hatā vidyā* verloren ist der Zauberspruch für den, der nicht die Zaubermacht besitzt,
 [Spr. (II) 3754](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3754 "Spr. (II) 3754: nirguṇasya hataṃ rūpaṃ duḥśīlasya hataṃ kulam | asiddhasya hatā vidyā abhogena hataṃ dhanam || — (4473.) Dem, der der Vorzüge ermangelt, ist Schönheit von keinem Nutzen") (hier anders gefasst). subst. Seher, Wahrsager, Zauberer
@@ -185,7 +185,7 @@ ergebend, — folgend, feststehend, sich als richtig erweisend, erwiesend, erwie
 [MED.] (*vyāsādi* und *bhedo devayoneḥ* als zwei Bedd.).
 [HALĀY. 1,87.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,87)
 [ĀŚV. GṚHY. 3,4,1.]
-[MBH. 1,2570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2570) = [≈Вульг. 1.66.6](mbh/1.66.html#v6) = ≈крит. 01,60.6a [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) = [≈Вульг. 3.42.35](mbh/3.42.html#v35) = ≈крит. 03,43.32a [1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1765) = [≈Вульг. 3.43.10](mbh/3.43.html#v10) = ≈крит. 03,44.10a [1786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1786) = [≈Вульг. 3.43.31](mbh/3.43.html#v31) = ≈крит. 03,44.31c [1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1830) = [≈Вульг. 3.46.13](mbh/3.46.html#v13) = крит. — [12,6788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6788) = [≈Вульг. 12.185.8](mbh/12.185.html#v8) = ≈крит. 03,203.20c [13,1777.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1777) = [≈Вульг. 13.26.19](mbh/13.26.html#v19) = ≈крит. 13,27.19c
+[MBH. 1,2570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2570) = [≈Vulg. 1.66.6](mbh/1.66.html#v6) = ≈krit. 01,60.6a [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) = [≈Vulg. 3.42.35](mbh/3.42.html#v35) = ≈krit. 03,43.32a [1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1765) = [≈Vulg. 3.43.10](mbh/3.43.html#v10) = ≈krit. 03,44.10a [1786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1786) = [≈Vulg. 3.43.31](mbh/3.43.html#v31) = ≈krit. 03,44.31c [1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1830) = [≈Vulg. 3.46.13](mbh/3.46.html#v13) = krit. — [12,6788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6788) = [≈Vulg. 12.185.8](mbh/12.185.html#v8) = ≈krit. 03,203.20c [13,1777.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1777) = [≈Vulg. 13.26.19](mbh/13.26.html#v19) = ≈krit. 13,27.19c
 [BHAG. 10,26.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?10,26) [11,21. fg.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,21) [36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,36)
 [R. 1,51,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,23) [2,70,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,70,30) [95,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,13) [112,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,2)
 [R. GORR. 2,34,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,22) [101,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,101,23)

@@ -26,13 +26,13 @@
 
 **caus)** — Vgl. *vinipāta* . — caus. niederfallen machen, hinabwerfen, hinabschleudern: *tenarkṣaṃ vinipātitam*
 [MĀRK. P. 75,57.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?75,57) *pateyaṃ* (vom Himmel zur Erde) *satsviti dhyāyanbhavatsu vinipātitaḥ*
-[MBH. 5,4065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4065) = [≈Вульг. 5.124.1](mbh/5.124.html#v1) = ≈крит. 05,122.1a *śiro 'sya vinipātyatām* werde abgehauen
-[1,5279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5279) = [≈Вульг. 1.132.28](mbh/1.132.html#v28) = ≈крит. 01,123.7c *teṣāṃ prāṇāntiko daṇḍodaivena vinipātyate*
-[1201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1201) = [≈Вульг. 1.23.5](mbh/1.23.html#v5) = ≈крит. 01,20.4c [R. 4,17,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,32) *agādhapaṅke durmedhā viṣame vinipātyate*
-[MBH. 5,1481.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1481) = [≈Вульг. 5.39.36](mbh/5.39.html#v36) = крит. — *aho pāpaṃ mahanmūrdhni tvayā me vinipātitam*
+[MBH. 5,4065.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4065) = [≈Vulg. 5.124.1](mbh/5.124.html#v1) = ≈krit. 05,122.1a *śiro 'sya vinipātyatām* werde abgehauen
+[1,5279.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5279) = [≈Vulg. 1.132.28](mbh/1.132.html#v28) = ≈krit. 01,123.7c *teṣāṃ prāṇāntiko daṇḍodaivena vinipātyate*
+[1201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1201) = [≈Vulg. 1.23.5](mbh/1.23.html#v5) = ≈krit. 01,20.4c [R. 4,17,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,17,32) *agādhapaṅke durmedhā viṣame vinipātyate*
+[MBH. 5,1481.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1481) = [≈Vulg. 5.39.36](mbh/5.39.html#v36) = krit. — *aho pāpaṃ mahanmūrdhni tvayā me vinipātitam*
 [R. GORR. 2,75,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,75,14) niedermachen, tödten, umbringen, um's Leben bringen
 [M. 11,127.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,127)
-[MBH. 4,789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.789) [13,561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.561) = [≈Вульг. 13.12.34](mbh/13.12.html#v34) = ≈крит. 13,12.30c [1950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1950) = [≈Вульг. 13.30.11](mbh/13.30.html#v11) = ≈крит. 13,31.11a [4761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4761) = [≈Вульг. 13.99.19](mbh/13.99.html#v19) = ≈крит. 13,102.19a
+[MBH. 4,789.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.789) [13,561.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.561) = [≈Vulg. 13.12.34](mbh/13.12.html#v34) = ≈krit. 13,12.30c [1950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1950) = [≈Vulg. 13.30.11](mbh/13.30.html#v11) = ≈krit. 13,31.11a [4761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4761) = [≈Vulg. 13.99.19](mbh/13.99.html#v19) = ≈krit. 13,102.19a
 [HARIV. 3724.](https://sanskrit-lexicon-scans.github.io/hariv?3724) [9097.](https://sanskrit-lexicon-scans.github.io/hariv?9097)
 [R. 1,14,33.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,33)
 [R. GORR. 1,28,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,28,19) [3,33,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,2) [6,8,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,8,11) [72,50.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,72,50)

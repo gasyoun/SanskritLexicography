@@ -8,7 +8,7 @@
 [3,4,4,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,4,4,4) *prajayaṃ prājaiṣam*
 [ŚĀṄKH. ŚR. 18,21,8.] *prāmūṃ jaya*
 [AV. 6,126,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.126.html#av06.126.03) *tānprajayāmyadya*
-[MBH. 7,70.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.70) = [≈Вульг. 7.2.19](mbh/7.2.html#v19) = ≈крит. 07,2.19c
+[MBH. 7,70.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.70) = [≈Vulg. 7.2.19](mbh/7.2.html#v19) = ≈krit. 07,2.19c
 
 - **RU:** — *pra* выигрывать, добывать победой, побеждать: *saṃvatsaraṃ tredhā vibhajya prajayati*
 [ŚAT. BR. 2,6,3,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,3,1) [1,5,3,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,5,3,3) *imāṃ lokān*

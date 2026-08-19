@@ -13,7 +13,7 @@
 [ŚAT. BR. 2,1,4,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,1,4,16) [12,8,1,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,8,1,8)
 [TBR. 1,5,6,7.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,6,7) *tābhyo gāmānayat*
 [AIT. UP. 2,2.] *taṃ gacchānaya*
-[MBH. 3,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.271) = [≈Вульг. 3.6.10](mbh/3.6.html#v10) = ≈крит. 03,7.9a [2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2281) = [≈Вульг. 3.59.5](mbh/3.59.html#v5) = ≈крит. 03,56.5a [2656. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2656) = [≈Вульг. 3.68.3](mbh/3.68.html#v3) = ≈крит. 03,65.3c [5,7530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7530) = [≈Вульг. 5.192.43](mbh/5.192.html#v43) = ≈крит. 05,193.39a
+[MBH. 3,271.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.271) = [≈Vulg. 3.6.10](mbh/3.6.html#v10) = ≈krit. 03,7.9a [2281.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2281) = [≈Vulg. 3.59.5](mbh/3.59.html#v5) = ≈krit. 03,56.5a [2656. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2656) = [≈Vulg. 3.68.3](mbh/3.68.html#v3) = ≈krit. 03,65.3c [5,7530.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7530) = [≈Vulg. 5.192.43](mbh/5.192.html#v43) = ≈krit. 05,193.39a
 [R. 1,8,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,4) [9,56.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,56)
 [R. GORR. 1,11,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,11,8) [3,49,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,49,23)
 [ŚĀK. 110,15.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?110,15)
@@ -27,26 +27,26 @@
 [R. 1,2,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,9) [2,32,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,25) [55,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,30) *udakaṃ kāñcanairghaṭaiḥ — āninyuḥ*
 [65,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,65,8) [ŚĀK. 86,18.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?86,18) [VID. 72.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?72) [PAÑCAT. 36,1.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?36,1) [40,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,15) [76,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?76,17) [96,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?96,16) [VET. in LA. 18,5. 34,1.] [KULL.] zu [M. 11,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,70) *ānayita (ānāyita?)*
 [KATHĀS. 4,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,73) *pautraśca te tripathagāṃ tridivādānayiṣyati*
-[MBH. 3,9906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9906) = [≈Вульг. 3.107.58](mbh/3.107.html#v58) = ≈крит. 03,106.28c
+[MBH. 3,9906.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.9906) = [≈Vulg. 3.107.58](mbh/3.107.html#v58) = ≈krit. 03,106.28c
 [R. 3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52)
 [AK. 2,7,20.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?2,7,20) *ānītāya svaveśmani*
 [VID. 193.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?193) *netrānītāḥ — vimānāgrabhūmīḥ*
 [MEGH. 70.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?70)
 [HIT. 20,12.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,12)
 [BHĀG. P. 4,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,5) *enāmānayeha mamāntikam*
-[MBH. 3,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2580) = [≈Вульг. 3.65.49](mbh/3.65.html#v49) = ≈крит. 03,62.21c [1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937) = [≈Вульг. 1.151.7](mbh/1.151.html#v7) = ≈крит. 01,138.5a *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
+[MBH. 3,2580.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2580) = [≈Vulg. 3.65.49](mbh/3.65.html#v49) = ≈krit. 03,62.21c [1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937) = [≈Vulg. 1.151.7](mbh/1.151.html#v7) = ≈krit. 01,138.5a *kenāpyutkṣipateva paśya bhuvanaṃ matpārśvamānīyate*
 [ŚĀK. 167.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?167) *matsakāśam*
 [PAÑCAT. 68,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,19) [20.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?68,20)
 [PRAB. 99,1.] *mama samīpam*
 [VET. in LA. 23,19.] *aṅkam* auf den Arm nehmen
-[MBH. 3,2946.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2946) = [≈Вульг. 3.75.25](mbh/3.75.html#v25) = ≈крит. 03,73.24c *mukham* zum Munde führen
-[4,639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.639) = [≈Вульг. 4.20.30](mbh/4.20.html#v30) = ≈крит. 04,19.29a *vārṣṇeyamānayāmāsa* (= caus.) *puruṣairāptakāribhiḥ*
-[MBH. 3,2282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2282) = [≈Вульг. 3.59.6](mbh/3.59.html#v6) = ≈крит. 03,56.6a *veśyābhirmunirūpābhirāneṣyata ṛṣeḥ sutam*
+[MBH. 3,2946.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2946) = [≈Vulg. 3.75.25](mbh/3.75.html#v25) = ≈krit. 03,73.24c *mukham* zum Munde führen
+[4,639.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.639) = [≈Vulg. 4.20.30](mbh/4.20.html#v30) = ≈krit. 04,19.29a *vārṣṇeyamānayāmāsa* (= caus.) *puruṣairāptakāribhiḥ*
+[MBH. 3,2282.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2282) = [≈Vulg. 3.59.6](mbh/3.59.html#v6) = ≈krit. 03,56.6a *veśyābhirmunirūpābhirāneṣyata ṛṣeḥ sutam*
 [R. 1,8,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,23) [2,32,38.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,38) (*ānayāmāsa* ohne instr. aber in caus. Bed.). *tena varāṅganābhiranāyi vidvān*
-[BHAṬṬ. 1,10.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,10) med. [MBH. 1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937) = [≈Вульг. 1.151.7](mbh/1.151.html#v7) = ≈крит. 01,138.5a [2,1985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1985) = [≈Вульг. 2.56.21](mbh/2.56.html#v21) = ≈крит. 02,51.20a [3,267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.267) = [≈Вульг. 3.6.6](mbh/3.6.html#v6) = ≈крит. 03,7.5a [5,7441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7441) = [≈Вульг. 5.190.8](mbh/5.190.html#v8) = ≈крит. 05,191.8a [14,61.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.61) = [≈Вульг. 14.3.21](mbh/14.3.html#v21) = ≈крит. 14,3.20e [R. 1,8,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,19) [59,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,7) [61,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,8) [70,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,11) [RĀJA-TAR. 5,347.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,347) [BHĀG. P. 4,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,5) Mit *punar* zurückführen, zurückbringen: *tamupādāya gaccheyam — punaścaivā nayiṣyāmi*
-[MBH. 1,6051.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6051) = [≈Вульг. 1.153.40](mbh/1.153.html#v40) = ≈крит. 01,141.19a
+[BHAṬṬ. 1,10.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,10) med. [MBH. 1,5937.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5937) = [≈Vulg. 1.151.7](mbh/1.151.html#v7) = ≈krit. 01,138.5a [2,1985.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1985) = [≈Vulg. 2.56.21](mbh/2.56.html#v21) = ≈krit. 02,51.20a [3,267.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.267) = [≈Vulg. 3.6.6](mbh/3.6.html#v6) = ≈krit. 03,7.5a [5,7441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7441) = [≈Vulg. 5.190.8](mbh/5.190.html#v8) = ≈krit. 05,191.8a [14,61.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.61) = [≈Vulg. 14.3.21](mbh/14.3.html#v21) = ≈krit. 14,3.20e [R. 1,8,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,19) [59,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,7) [61,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,8) [70,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,70,11) [RĀJA-TAR. 5,347.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,347) [BHĀG. P. 4,1,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,1,5) Mit *punar* zurückführen, zurückbringen: *tamupādāya gaccheyam — punaścaivā nayiṣyāmi*
+[MBH. 1,6051.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6051) = [≈Vulg. 1.153.40](mbh/1.153.html#v40) = ≈krit. 01,141.19a
 [RĀJA-TAR. 5,258.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,258) auch ohne *punar* in dieser Bed.
-[MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811) = [≈Вульг. 3.72.4](mbh/3.72.html#v4) = ≈крит. 03,70.4a
+[MBH. 3,2811.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2811) = [≈Vulg. 3.72.4](mbh/3.72.html#v4) = ≈krit. 03,70.4a
 [R. 1,40,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,40,9) [2,82,29](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,29) [3,55,52.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,55,52) *ānayiṣyāmi*
 [VET. in LA. 37,10.] — *ānīye*
 [DAŚAK. 85,11] ([BENF. Chr. 195,11](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?195)) fehlerhaft für *anīye* .
@@ -118,7 +118,7 @@
   <sub>attested</sub>
 
 **3)** — 3) (Opfer) bringen (vgl. *har* mit *ā): yaḥ puruṣamedhānāmāyutamānayattenāsyāyutanāyitvam*
-[MBH. 1,3773.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3773) = [≈Вульг. 1.95.20](mbh/1.95.html#v20) = ≈крит. 01,90.19A
+[MBH. 1,3773.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3773) = [≈Vulg. 1.95.20](mbh/1.95.html#v20) = ≈krit. 01,90.19A
 
 - **RU:** — 3) (жертву) приносить (ср. *har* mit *ā): yaḥ puruṣamedhānāmāyutamānayattenāsyāyutanāyitvam*
 [MBH. 1,3773.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3773) = [≈Вульг. 1.95.20](mbh/1.95.html#v20) = ≈крит. 01,90.19A
@@ -133,7 +133,7 @@
 
 **5)** — 5) bringen zu Etwas, versetzen in (vgl. simpl.): *tānānayedvaśaṃ sarvānsāmādibhirupāyaiḥ* zum Gehorsam bringen, sich unterwerfen
 [M. 7,107.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,107) [108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,108) [9,261.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,261) *hatvā cāsya camūṃ kṛtsnāṃ vaśamevānayāmahe*
-[MBH. 4,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.982) = [≈Вульг. 4.30.12](mbh/4.30.html#v12) = ≈крит. 04,29.12c *vidhvaṃsamānītāḥ* zerstört
+[MBH. 4,982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.982) = [≈Vulg. 4.30.12](mbh/4.30.html#v12) = ≈krit. 04,29.12c *vidhvaṃsamānītāḥ* zerstört
 [MĀRK. P. 14,65.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?14,65) *nakāralopoṣmarabhāvamānayedapetarāgāṃ prakṛtiṃ parigrahe*
 [ṚV. PRĀT. 11,19.] [20.]
 
@@ -163,7 +163,7 @@
 **8_addendum)** — Vgl. *ānaya* fgg., *˚nāya, ˚nāyya, ˚nīti, ˚netar*
 
 fg. — caus. herbeiführen —, kommen —, bringen lassen: *tayā tvānāyayiṣyāmi nivāsaṃ svam*
-[MBH. 1,2974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2974) = [≈Вульг. 1.73.21](mbh/1.73.html#v21) = ≈крит. 01,67.20c [5045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5045) [3,1870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1870) = [≈Вульг. 3.46.53](mbh/3.46.html#v53) = крит. — [2276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2276) = [≈Вульг. 3.60.5](mbh/3.60.html#v5) = ≈крит. 03,57.4a [2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2689) = [≈Вульг. 3.68.36](mbh/3.68.html#v36) = ≈крит. 03,65.34a [3017.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3017) = [≈Вульг. 3.77.10](mbh/3.77.html#v10) = ≈крит. 03,76.9c
+[MBH. 1,2974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2974) = [≈Vulg. 1.73.21](mbh/1.73.html#v21) = ≈krit. 01,67.20c [5045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5045) [3,1870.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1870) = [≈Vulg. 3.46.53](mbh/3.46.html#v53) = krit. — [2276.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2276) = [≈Vulg. 3.60.5](mbh/3.60.html#v5) = ≈krit. 03,57.4a [2689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2689) = [≈Vulg. 3.68.36](mbh/3.68.html#v36) = ≈krit. 03,65.34a [3017.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3017) = [≈Vulg. 3.77.10](mbh/3.77.html#v10) = ≈krit. 03,76.9c
 [R. 1,4,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,25) [8,16.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,16) [9,4.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,4) [2,74,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,74,27)
 [RAGH. 12,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,12)
 [KATHĀS. 12,3.](https://sanskrit-lexicon-scans.github.io/kss/index.html?12,3) [18,123.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,123) [197.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,197) [200.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,200)

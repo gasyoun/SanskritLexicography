@@ -7,8 +7,8 @@
 [P. 7,1,69](https://ashtadhyayi.com/sutraani/7/1/69), Sch.
 [VOP. 24,7.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,7)
  1) ergreifen, packen, sich Jmds bemeistern
-[MBH. 5,1551.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1551) = [≈Вульг. 5.40.19](mbh/5.40.html#v19) = ≈крит. 05,40.17a *kāmamanyubhyāṃ pralabdhaḥ*
-[4320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4320) = [≈Вульг. 5.130.20](mbh/5.130.html#v20) = ≈крит. 05,128.19c
+[MBH. 5,1551.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1551) = [≈Vulg. 5.40.19](mbh/5.40.html#v19) = ≈krit. 05,40.17a *kāmamanyubhyāṃ pralabdhaḥ*
+[4320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4320) = [≈Vulg. 5.130.20](mbh/5.130.html#v20) = ≈krit. 05,128.19c
 
 An beiden Stellen vielleicht auch in der Bed. 3).
 
@@ -24,8 +24,8 @@ An beiden Stellen vielleicht auch in der Bed. 3).
   <sub>attested</sub>
 
 **3)** — 3) Jmd hintergehen, anführen, foppen, zum Narren halten
-[MBH. 2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) = [≈Вульг. 2.37.28](mbh/2.37.html#v28) = ≈крит. 02,34.20c (*pralambhante* beide Ausgg., = *avalambante*
-[NĪLAK.]). [3,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2612) = [≈Вульг. 3.66.5](mbh/3.66.html#v5) = ≈крит. 03,63.5c [11,122.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.122) = [≈Вульг. 11.4.19](mbh/11.4.html#v19) = ≈крит. 11,4.14a [BHĀG. P. 3,17,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,29) [18,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,13) [4,7,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,13) [10,22,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,21) [34,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,34,13) [11,1,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,1,16)
+[MBH. 2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) = [≈Vulg. 2.37.28](mbh/2.37.html#v28) = ≈krit. 02,34.20c (*pralambhante* beide Ausgg., = *avalambante*
+[NĪLAK.]). [3,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2612) = [≈Vulg. 3.66.5](mbh/3.66.html#v5) = ≈krit. 03,63.5c [11,122.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.122) = [≈Vulg. 11.4.19](mbh/11.4.html#v19) = ≈krit. 11,4.14a [BHĀG. P. 3,17,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,29) [18,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,13) [4,7,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,13) [10,22,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,21) [34,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,34,13) [11,1,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,1,16)
 
 - **RU:** — 3) {%обманывать, вводить в заблуждение, дурачить, водить за нос кого-л.[MBH. 2,1365](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1365) = [≈Вульг. 2.37.28](mbh/2.37.html#v28) = ≈крит. 02,34.20c (*pralambhante* оба изд., = *avalambante* [NĪLAK.]). [3,2612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2612) = [≈Вульг. 3.66.5](mbh/3.66.html#v5) = ≈крит. 03,63.5c [11,122.](https://sanskrit-lexicon-scans.github.io/mbhcalc?11.122) = [≈Вульг. 11.4.19](mbh/11.4.html#v19) = ≈крит. 11,4.14a [BHĀG. P. 3,17,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,27) [29.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,17,29) [18,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,18,13) [4,7,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,7,13) [10,22,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,21) [34,13.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,34,13) [11,1,16.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,1,16)
   <sub>attested</sub>

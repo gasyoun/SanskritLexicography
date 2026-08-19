@@ -6,7 +6,7 @@
 **1)** — *saṃni* zusammen wohnen, — leben: *yādṛśaiḥ saṃnivasati*
 [Spr. 4874.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4874) *tataḥ satāṃ saṃnivasetsamāgame*
 [5116.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5116) wohnen: *yasminsaṃnivasetpure*
-[MBH. 14,564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.564) = [≈Вульг. 14.19.33](mbh/14.19.html#v33) = ≈крит. 14,19.31a
+[MBH. 14,564.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.564) = [≈Vulg. 14.19.33](mbh/14.19.html#v33) = ≈krit. 14,19.31a
 [R.] in [LA. (III) 64,18] (in den drei Ausgg., die uns zu Gebote stehen, *sa nyavasat*, nicht *saṃnyavasat)* .
 
 - **RU:** *saṃni* жить вместе, — совместно: *yādṛśaiḥ saṃnivasati*

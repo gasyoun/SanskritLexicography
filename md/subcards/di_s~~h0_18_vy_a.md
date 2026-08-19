@@ -9,7 +9,7 @@
 [6,3,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,6,3,1) [ŚAT. BR. 4,1,2,7.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,1,2,7) [LĀṬY. 8,7,5.] [KĀTY. ŚR. 22,5,15.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,5,15) *brahmā krameṇa rājyāni vyādeṣṭumupacakrame*
 [HARIV. 12490.](https://sanskrit-lexicon-scans.github.io/hariv?12490) *kaccittrailokyarājyaṃ te vyādiṣṭaṃ śūlapāṇinā*
 [9848.](https://sanskrit-lexicon-scans.github.io/hariv?9848) *naktaṃcarāṇāṃ bhūtānāṃ vyādideśa baliṃ tadā*
-[MBH. 14,1921.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1921) = [≈Вульг. 14.65.9](mbh/14.65.html#v9) = крит. — [12,9769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9769) = [≈Вульг. 12.276.8](mbh/12.276.html#v8) = ≈крит. 12,168.41a *āsanaṃ cāsya — vyādideśa*
+[MBH. 14,1921.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1921) = [≈Vulg. 14.65.9](mbh/14.65.html#v9) = krit. — [12,9769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9769) = [≈Vulg. 12.276.8](mbh/12.276.html#v8) = ≈krit. 12,168.41a *āsanaṃ cāsya — vyādideśa*
 [R. 1,52,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,2) *bhartā tu mama yadyeva lokanāthasya bhāryayā vyādiṣṭaḥ*
 [HARIV. 9960.](https://sanskrit-lexicon-scans.github.io/hariv?9960)
 
@@ -41,9 +41,9 @@
 **4)** — 4) die Weisung geben, vorschreiben, anbefehlen; Jmd (acc.) anweisen, einen Befehl, — Auftrag ertheilen, abordnen: *yadvyādiśetkāryam*
 [R. 2,21,58.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,58) *vyādiśya*
 [R. GORR. 2,68,44.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,68,44) [110,20](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,110,20) ([R. ed. SCHL. 2,101,25]). *dṛṣṭvā ca viśvakarmāṇaṃ vyādideśa pitāmahaḥ . sṛjyatāṃ prārthanīyaikā pramadeti*
-[MBH. 1,7689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7689) = [≈Вульг. 1.209.3](mbh/1.209.html#v3) = ≈крит. 01,201.3a *vyādideśātha durjayam . gaccha durjaya*
-[7,5492.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5492) = [≈Вульг. 7.133.38](mbh/7.133.html#v38) = ≈крит. 07,108.34c [HARIV. 116.](https://sanskrit-lexicon-scans.github.io/hariv?116) [10316.](https://sanskrit-lexicon-scans.github.io/hariv?10316) *vyādideśānuyātram*
-[MBH. 3,16653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16653) = [≈Вульг. 3.293.38](mbh/3.293.html#v38) = ≈крит. 03,277.38c
+[MBH. 1,7689.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7689) = [≈Vulg. 1.209.3](mbh/1.209.html#v3) = ≈krit. 01,201.3a *vyādideśātha durjayam . gaccha durjaya*
+[7,5492.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.5492) = [≈Vulg. 7.133.38](mbh/7.133.html#v38) = ≈krit. 07,108.34c [HARIV. 116.](https://sanskrit-lexicon-scans.github.io/hariv?116) [10316.](https://sanskrit-lexicon-scans.github.io/hariv?10316) *vyādideśānuyātram*
+[MBH. 3,16653.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16653) = [≈Vulg. 3.293.38](mbh/3.293.html#v38) = ≈krit. 03,277.38c
 [R. 1,67,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,67,2)
 [R. GORR. 2,86,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,86,21) [4,47,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,47,2) *putrān — vyādideśa yajñasaṃbhārakāraṇāt*
 [R. SCHL. 1,59,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,6) *anveṣaṇe 'niruddhasya carānvyādiṣṭavāṃstadā*
@@ -52,7 +52,7 @@
 [KUMĀRAS. 3,13.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,13) *śīghraṃ vyādiśa no rājanbadhāyaiṣām*
 [R. 5,89,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,89,51) *tataścarāśca vyādiṣṭāḥ pārthivena — hayā rathāśca vyādiṣṭāḥ pārthivena*
 [HARIV. 10318.](https://sanskrit-lexicon-scans.github.io/hariv?10318) *nakulaṃ sahadevaṃ ca vyādideśa dvijānprati*
-[MBH. 3,12443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12443) = [≈Вульг. 3.179.16](mbh/3.179.html#v16) = ≈крит. 03,176.16c *vyādiśatsainikānkāṃścidṛṣyaśṛṅgāya*
+[MBH. 3,12443.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12443) = [≈Vulg. 3.179.16](mbh/3.179.html#v16) = ≈krit. 03,176.16c *vyādiśatsainikānkāṃścidṛṣyaśṛṅgāya*
 [R. 1,17,30](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,17,30) (GORR. [19](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,17,19)). *vyādideśa raṇe śūrānanyān*
 [HARIV. 10139](https://sanskrit-lexicon-scans.github.io/hariv?10139) (p. 791). *vyādideśātha pūrvasyāṃ prahastaṃ dvāri rākṣasam*
 [R. 6,12,17. fgg.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,17)

@@ -4,7 +4,7 @@
 
 
 **1)** **1.** *duṣkṛta* _Adj._
-— 1〉 schlecht gethan, — gemacht, — organisirt. In Verbindung mit *karman* = **2.** *duṣkṛta* [MBH. 3,78,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,78,12) = [≈Вульг. 3.2.32](mbh/3.2.html#v32) = ≈крит. 03,2.31c.
+— 1〉 schlecht gethan, — gemacht, — organisirt. In Verbindung mit *karman* = **2.** *duṣkṛta* [MBH. 3,78,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,78,12) = [≈Vulg. 3.2.32](mbh/3.2.html#v32) = ≈krit. 03,2.31c.
 
 - **RU:** **1.** *duṣkṛta* _Adj._
 — 1〉 плохо сделанный, — исполненный, — устроенный. В сочетании с *karman* = **2.** *duṣkṛta* [MBH. 3,78,12](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,78,12) = [≈Вульг. 3.2.32](mbh/3.2.html#v32) = ≈крит. 03,2.31c.

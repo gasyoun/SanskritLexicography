@@ -4,7 +4,7 @@
 
 
 **1)** — *sam* entlassen, von sich geben: *netrodbhavaṃ saṃmumucuḥ — vāri*
-[MBH. 3,10236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10236) = [≈Вульг. 3.116.6](mbh/3.116.html#v6) = ≈крит. 03,116.6c — caus. Jmd befreien: *saṃmocitaḥ satyavatā tvayāhaṃ śāpāt*
+[MBH. 3,10236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10236) = [≈Vulg. 3.116.6](mbh/3.116.html#v6) = ≈krit. 03,116.6c — caus. Jmd befreien: *saṃmocitaḥ satyavatā tvayāhaṃ śāpāt*
 [RAGH. 5,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,56)
 
 - **RU:** — *sam* отпускать, извергать из себя: *netrodbhavaṃ saṃmumucuḥ — vāri*

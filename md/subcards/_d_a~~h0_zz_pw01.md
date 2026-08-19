@@ -103,7 +103,7 @@
 - **RU:** 1〉 Med. желать разложить (огонь).
   <sub>attested</sub>
 
-**Des. 2)** — 2〉 zu ergreifen die Absicht haben. *daṇḍam* so v. a. zu strafen sich anschicken [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45) = [≈Вульг. 12.3.10](mbh/12.3.html#v10) = ≈крит. 12,3.10c.
+**Des. 2)** — 2〉 zu ergreifen die Absicht haben. *daṇḍam* so v. a. zu strafen sich anschicken [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45) = [≈Vulg. 12.3.10](mbh/12.3.html#v10) = ≈krit. 12,3.10c.
 
 - **RU:** 2〉 Намереваться схватить. *daṇḍam* так преим. приготовляться наказать [MBH. 12,83,45](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,83,45) = [≈Вульг. 12.3.10](mbh/12.3.html#v10) = ≈крит. 12,3.10c.
   <sub>attested</sub>
@@ -193,7 +193,7 @@
 - **RU:** 1〉 Прикладывать к (Loc.), ставить на (Loc.). **upāhita* поставленный поверх.
   <sub>attested</sub>
 
-**Mit <div n="p"> 2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4) = [≈Вульг. 12.1.15](mbh/12.1.html#v15) = ≈крит. 12,1.15c. *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
+**Mit <div n="p"> 2)** — 2〉 Med. ergreifen (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4) = [≈Vulg. 12.1.15](mbh/12.1.html#v15) = ≈krit. 12,1.15c. *upādāya* mit sich nehmend, mit (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
 
 - **RU:** 2〉 Med. схватывать (*daṇḍam*) [MBH. 12,15,4](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?12,15,4) = [≈Вульг. 12.1.15](mbh/12.1.html#v15) = ≈крит. 12,1.15c. *upādāya* беря с собой, с (Acc.) [Chr. 28,28](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?28).
   <sub>attested</sub>
@@ -372,7 +372,7 @@ a〉 надевать (одежду), принимать (облик).
 - **RU:** g〉 допускать, признавать. *samāhita* одобренный; принятый [ĀPAST. 1,20,8. 2,29,14]. [HARIV. 11392](https://sanskrit-lexicon-scans.github.io/hariv?11392). согласный с (в Comp. предшествующем) [2225](https://sanskrit-lexicon-scans.github.io/hariv?2225).
   <sub>attested</sub>
 
-**Mit <div n="p"> 11)** — 11〉 *samāhita* zu Ende gegangen, abgelaufen [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31) = [≈Вульг. 1.1.219](mbh/1.1.html#v219) = ≈крит. 01,1.160a.
+**Mit <div n="p"> 11)** — 11〉 *samāhita* zu Ende gegangen, abgelaufen [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31) = [≈Vulg. 1.1.219](mbh/1.1.html#v219) = ≈krit. 01,1.160a.
 
 - **RU:** 11〉 *samāhita* завершившийся, истекший [MBH. 1,173,31](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,173,31) = [≈Вульг. 1.1.219](mbh/1.1.html#v219) = ≈крит. 01,1.160a.
   <sub>attested</sub>

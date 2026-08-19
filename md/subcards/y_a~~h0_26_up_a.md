@@ -8,17 +8,17 @@
 [ṚV. 1,171,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.171.html#rv01.171.02) [4,21,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv04.021.html#rv04.021.01) [5,53,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.053.html#rv05.053.03) *ā no devebhirupa devahūtimagne yāhi*
 [7,14,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.014.html#rv07.014.03) *upāyātaṃ dāśuṣe rathena vahantā*
 [71,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.02) [72,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.072.html#rv07.072.01) [8,81,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.081.html#rv08.081.10) *pradyumno 'yamupāyāti*
-[MBH. 3,738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.738) = [≈Вульг. 3.18.22](mbh/3.18.html#v22) = ≈крит. 03,19.22a [4,231.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.231) = [≈Вульг. 4.7.17](mbh/4.7.html#v17) = ≈крит. 04,6.15c
+[MBH. 3,738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.738) = [≈Vulg. 3.18.22](mbh/3.18.html#v22) = ≈krit. 03,19.22a [4,231.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.231) = [≈Vulg. 4.7.17](mbh/4.7.html#v17) = ≈krit. 04,6.15c
 [HARIV. 6200.](https://sanskrit-lexicon-scans.github.io/hariv?6200)
 [R. GORR. 1,12,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,12,32) [4,33,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,33,22)
 [KATHĀS. 25,268.](https://sanskrit-lexicon-scans.github.io/kss/index.html?25,268) [30,54.](https://sanskrit-lexicon-scans.github.io/kss/index.html?30,54)
 [BHĀG. P. 10,23,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,23,18) *rājamārgam*
-[MBH. 1,5451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5451) = [≈Вульг. 1.136.32](mbh/1.136.html#v32) = ≈крит. 01,126.32a *rājadhānīm*
+[MBH. 1,5451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5451) = [≈Vulg. 1.136.32](mbh/1.136.html#v32) = ≈krit. 01,126.32a *rājadhānīm*
 [R. 1,9,66](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,66) ([64](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,9,64) [GORR.]). [R. GORR. 1,2,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,2,22) [KATHĀS. 16,87.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,87) [33,89.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,89) [BHĀG. P. 3,21,48.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,48) *yajñam*
 [R. 1,73,7](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,73,7) ([75,8](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,75,8) [GORR.]). *tasyāntikam*
 [KATHĀS. 10,102.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,102) [13,12.](https://sanskrit-lexicon-scans.github.io/kss/index.html?13,12) *astam* untergehen und auch sterben
 [10,129.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,129) [RĀJA-TAR. 4,6.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,6) [5,126.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,126) *mām*
-[MBH. 7,2814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2814) = [≈Вульг. 7.79.40](mbh/7.79.html#v40) = ≈крит. 07,56.37a
+[MBH. 7,2814.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2814) = [≈Vulg. 7.79.40](mbh/7.79.html#v40) = ≈krit. 07,56.37a
 [KATHĀS. 16,17.](https://sanskrit-lexicon-scans.github.io/kss/index.html?16,17) [18,231.](https://sanskrit-lexicon-scans.github.io/kss/index.html?18,231) [20,181.](https://sanskrit-lexicon-scans.github.io/kss/index.html?20,181) [22,193.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,193) [35,13.](https://sanskrit-lexicon-scans.github.io/kss/index.html?35,13) [143.](https://sanskrit-lexicon-scans.github.io/kss/index.html?35,143) [45,209.](https://sanskrit-lexicon-scans.github.io/kss/index.html?45,209) [54,169.](https://sanskrit-lexicon-scans.github.io/kss/index.html?54,169) [56,406.](https://sanskrit-lexicon-scans.github.io/kss/index.html?56,406)
 [MĀRK. P. 72,17.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?72,17)
 [BHAṬṬ. 4,44.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?4,44)

@@ -13,10 +13,10 @@ _PWG article — 63 sub-card(s), 218 sense(s) · RU 218/218 · EN 0/218_
 [VOP. 8,70](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,70); *(vi) jānate*
 3. sg. [MBH. 13,5204.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5204) *jānātha*
 [VS. 18,60.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?18,60) *(prati) jānatha*
-[MBH. 2,842](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Вульг. 2.21.45](mbh/2.21.html#v45) = ≈крит. 02,19.41c; *jānītāt, jānata*
-[MBH. 2,2397](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2397) = [≈Вульг. 2.71.18](mbh/2.71.html#v18) = ≈крит. 02,63.18c; *abhyanujānithāḥ*
+[MBH. 2,842](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Vulg. 2.21.45](mbh/2.21.html#v45) = ≈krit. 02,19.41c; *jānītāt, jānata*
+[MBH. 2,2397](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2397) = [≈Vulg. 2.71.18](mbh/2.71.html#v18) = ≈krit. 02,63.18c; *abhyanujānithāḥ*
 2. sg. imperf.
-[14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) = [≈Вульг. 14.56.16](mbh/14.56.html#v16) = ≈крит. 14,55.16a; *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* und *jñeyāt*
+[14,1641](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) = [≈Vulg. 14.56.16](mbh/14.56.html#v16) = ≈krit. 14,55.16a; *jñāsyati, ˚te; jajñau, jajñe; ajñāsīt, ajñāsta, (pra) jñeṣam; jñāyāt* und *jñeyāt*
 [P. 6,4,68.](https://ashtadhyayi.com/sutraani/6/4/68) pass. *jñāyate, jñāsyate* und *jñāyiṣyate*
 [BHAṬṬ. 16,40.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,40) [41](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?16,41); *ajñāyi; jñāta* .
 
@@ -49,45 +49,45 @@ _PWG article — 63 sub-card(s), 218 sense(s) · RU 218/218 · EN 0/218_
 [28,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.028.html#rv10.028.07) — *nāmadheyasya ye kecidabhivādaṃ na jānate*
 [M. 2,123.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,123) *yasya mantraṃ na jānanti*
 [7,148.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,148) [9,330.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,330) *sarvaḥ sarvaṃ na jānāti*
-[MBH. 3,2815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2815) = [≈Вульг. 3.72.8](mbh/3.72.html#v8) = ≈крит. 03,70.8a *nājñāsiṣaṃ mūḍhā dvandvāhvāne phaladvayam*
-[1,4861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4861) = [≈Вульг. 1.124.28](mbh/1.124.html#v28) = ≈крит. 01,115.24c *jānatā jātimātmanaḥ*
-[3,14072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14072) = [≈Вульг. 3.216.1](mbh/3.216.html#v1) = ≈крит. 03,206.1a *tvamatra hetuṃ jānīṣe*
+[MBH. 3,2815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2815) = [≈Vulg. 3.72.8](mbh/3.72.html#v8) = ≈krit. 03,70.8a *nājñāsiṣaṃ mūḍhā dvandvāhvāne phaladvayam*
+[1,4861.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4861) = [≈Vulg. 1.124.28](mbh/1.124.html#v28) = ≈krit. 01,115.24c *jānatā jātimātmanaḥ*
+[3,14072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14072) = [≈Vulg. 3.216.1](mbh/3.216.html#v1) = ≈krit. 03,206.1a *tvamatra hetuṃ jānīṣe*
 [SĀV. 6,35.] *tasyāhaṃ tapaso vīryaṃ jānānaḥ*
-[MBH. 1,999.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.999) = [≈Вульг. 1.11.5](mbh/1.11.html#v5) = ≈крит. 01,11.5a *dharmasya jānamāno 'haṃ gatim*
-[3,1413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1413) = [≈Вульг. 3.36.3](mbh/3.36.html#v3) = крит. — *yadyetadevamajñāsyam*
-[2,2600.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2600) = [≈Вульг. 2.79.17](mbh/2.79.html#v17) = ≈крит. 02,70.17c *sevakānāṃ jāne sevāpariśramam*
+[MBH. 1,999.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.999) = [≈Vulg. 1.11.5](mbh/1.11.html#v5) = ≈krit. 01,11.5a *dharmasya jānamāno 'haṃ gatim*
+[3,1413.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1413) = [≈Vulg. 3.36.3](mbh/3.36.html#v3) = krit. — *yadyetadevamajñāsyam*
+[2,2600.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2600) = [≈Vulg. 2.79.17](mbh/2.79.html#v17) = ≈krit. 02,70.17c *sevakānāṃ jāne sevāpariśramam*
 [RĀJA-TAR. 5,197.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,197) *jñāsyatyanyavyathāṃ dhruvam*
 [198.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,198) *na cāpi jānīma taveha nātham*
-[MBH. 3,15591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15591) = [≈Вульг. 3.265.4](mbh/3.265.html#v4) = ≈крит. 03,249.4a *na kamapyatra grāme jānīmaḥ*
+[MBH. 3,15591.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15591) = [≈Vulg. 3.265.4](mbh/3.265.html#v4) = ≈krit. 03,249.4a *na kamapyatra grāme jānīmaḥ*
 [PAÑCAT. 35,17.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?35,17)
 [R. 1,1,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,7) *ajñāyamānāpi satī sukhamasmyuṣitā tvayi*
-[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Вульг. 3.69.18](mbh/3.69.html#v18) = ≈крит. 03,66.16c *abhiṣekaṃ na jānāmi* ich weiss nichts von der Weihung, habe nichts darüber gehört
+[MBH. 3,2711.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2711) = [≈Vulg. 3.69.18](mbh/3.69.html#v18) = ≈krit. 03,66.16c *abhiṣekaṃ na jānāmi* ich weiss nichts von der Weihung, habe nichts darüber gehört
 [R. 2,75,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,3) [4](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,75,4) *naiṣa jānāti naiṣadham*
-[MBH. 3,2903.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2903) = [≈Вульг. 3.74.14](mbh/3.74.html#v14) = ≈крит. 03,72.14a *nāpi jānāmi maithilīm . yastaṃ jñāsyati taṃ jñāsye dagdhaḥ svaṃ rūpamāsthitaḥ*
+[MBH. 3,2903.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2903) = [≈Vulg. 3.74.14](mbh/3.74.html#v14) = ≈krit. 03,72.14a *nāpi jānāmi maithilīm . yastaṃ jñāsyati taṃ jñāsye dagdhaḥ svaṃ rūpamāsthitaḥ*
 [R. 3,75,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,75,42) *taṃ ca pāpaṃ na jānīmo yadi dagdhaḥ purocanaḥ*
-[MBH. 1,5879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5879) = [≈Вульг. 1.148.12](mbh/1.148.html#v12) = ≈крит. 01,136.10a *na hi sa jñāyate vīro nalo jīvati vā na vā*
-[3,2769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2769) = [≈Вульг. 3.70.26](mbh/3.70.html#v26) = ≈крит. 03,68.23c *sakhīṃ te jñātumicchāmi vaikhānasaṃ kimanayā vratam — niṣevitavyam*
+[MBH. 1,5879.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5879) = [≈Vulg. 1.148.12](mbh/1.148.html#v12) = ≈krit. 01,136.10a *na hi sa jñāyate vīro nalo jīvati vā na vā*
+[3,2769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2769) = [≈Vulg. 3.70.26](mbh/3.70.html#v26) = ≈krit. 03,68.23c *sakhīṃ te jñātumicchāmi vaikhānasaṃ kimanayā vratam — niṣevitavyam*
 [ŚĀK. 15,19.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?15,19) *jānannapi hi medhāvī jaḍavalloka ācaret*
 [M. 2,110.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,110) [8,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,103) *yaśca — jānāno 'pi nabhāṣate*
-[MBH. 1,914.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.914) = [≈Вульг. 1.7.4](mbh/1.7.html#v4) = ≈крит. 01,7.4c *sā jānatī khyāpaya naḥ*
-[3,15697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15697) = [≈Вульг. 3.270.3](mbh/3.270.html#v3) = ≈крит. 03,254.3c [14064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14064) = [≈Вульг. 3.215.24](mbh/3.215.html#v24) = ≈крит. 03,205.23c *bālā yūyaṃ na jānīdhvaṃ dharmaḥ sūkṣmo hi*
-[2,1340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1340) = [≈Вульг. 2.37.3](mbh/2.37.html#v3) = ≈крит. 02,34.3a [ŚUK. 45,1.] *bhavanto jānate yathā*
+[MBH. 1,914.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.914) = [≈Vulg. 1.7.4](mbh/1.7.html#v4) = ≈krit. 01,7.4c *sā jānatī khyāpaya naḥ*
+[3,15697.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15697) = [≈Vulg. 3.270.3](mbh/3.270.html#v3) = ≈krit. 03,254.3c [14064.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14064) = [≈Vulg. 3.215.24](mbh/3.215.html#v24) = ≈krit. 03,205.23c *bālā yūyaṃ na jānīdhvaṃ dharmaḥ sūkṣmo hi*
+[2,1340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1340) = [≈Vulg. 2.37.3](mbh/2.37.html#v3) = ≈krit. 02,34.3a [ŚUK. 45,1.] *bhavanto jānate yathā*
 [BHĀG. P. 2,8,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,8,7) *jāne bhavānpurapraveśāditthaṃbhūtaḥ saṃvṛttaḥ*
 [ŚĀK. 63,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?63,7)
 [VID. 158.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?158)
 [KATHĀS. 7,6.](https://sanskrit-lexicon-scans.github.io/kss/index.html?7,6) *atha jānāti vārṣṇeyaḥ kva nu rājā nalo gataḥ*
-[MBH. 3,2902.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2902) = [≈Вульг. 3.74.13](mbh/3.74.html#v13) = ≈крит. 03,72.13a *na ca jñāyeta kasya saḥ (putraḥ)*
+[MBH. 3,2902.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2902) = [≈Vulg. 3.74.13](mbh/3.74.html#v13) = ≈krit. 03,72.13a *na ca jñāyeta kasya saḥ (putraḥ)*
 [M. 9,170.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,170) *na jāne bhoktāraṃ kamiha samupasthāsyati vidhiḥ*
 [ŚĀK. 43.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?43) [13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?13)
 [ŚṚṄGĀRAT. 4.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?4) *jānīṣe tvaṃ yathā rājā samyagvṛttaḥ sadā tvayi*
 [N. 8,13.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,13) mit einem infin. verstehen
 [P. 3,4,65.](https://ashtadhyayi.com/sutraani/3/4/65)
 Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum*
-[MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) = [≈Вульг. 2.48.19](mbh/2.48.html#v19) = ≈крит. 02,44.18c [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Вульг. 5.33.105](mbh/5.33.html#v105) = ≈крит. 05,33.86a *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
+[MBH. 2,1720.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1720) = [≈Vulg. 2.48.19](mbh/2.48.html#v19) = ≈krit. 02,44.18c [5,1075.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1075) = [≈Vulg. 5.33.105](mbh/5.33.html#v105) = ≈krit. 05,33.86a *na jāne vaktuṃ tvatkarmaitadadbhutamiti*
 [DAŚAK.] in [BENF. Chr. 187,21.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?187) — *na jānāti śvagṛdhrairjagdhimātmanaḥ*
 [M. 3,115.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,115) *evaṃ svabhāvaṃ jñātvāsām*
 [9,16.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,16) *jñāsyase balamātmīyam*
-[MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) = [≈Вульг. 4.60.2](mbh/4.60.html#v2) = крит. — *jñātvā teṣāmabhiprāyam*
+[MBH. 4,1924.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1924) = [≈Vulg. 4.60.2](mbh/4.60.html#v2) = krit. — *jñātvā teṣāmabhiprāyam*
 [BRAHMA-P. in LA. 50,17.] [HIT. 24,18.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?24,18) *āpatsu mitraṃ jānīyāt*
 [I,66.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,66) [CĀṆ. 21.] *kathaṃ hi devāñjānīyām*
 [N. 5,12.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,12) *na tvaṃ dṛṣṭvā na punaralakāṃ jñāsyase* wiedererkennen
@@ -96,10 +96,10 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [MBH. 7,6536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.6536) *mā jñāsīstvaṃ sukhī rāmo yadakārṣīt*
 [BHAṬṬ. 15,9.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?15,9) *tattāvajjānāmi kasyāyaṃ śabdaḥ* ich will in Erfahrung bringen
 [PAÑCAT. 21,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,8) *jānīhi ko nvasyā nātha ityeva*
-[MBH. 3,15586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15586) = [≈Вульг. 3.264.16](mbh/3.264.html#v16) = ≈крит. 03,248.16a [2890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2890) = [≈Вульг. 3.74.1](mbh/3.74.html#v1) = ≈крит. 03,72.1a [1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) = [≈Вульг. 1.151.6](mbh/1.151.html#v6) = ≈крит. 01,138.4a *gaccha jānīhi rāghavam* forsche nach
+[MBH. 3,15586.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15586) = [≈Vulg. 3.264.16](mbh/3.264.html#v16) = ≈krit. 03,248.16a [2890.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2890) = [≈Vulg. 3.74.1](mbh/3.74.html#v1) = ≈krit. 03,72.1a [1,5936.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5936) = [≈Vulg. 1.151.6](mbh/1.151.html#v6) = ≈krit. 01,138.4a *gaccha jānīhi rāghavam* forsche nach
 [R. 3,51,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,51,1) *mama sa jñāyatāṃ suhṛt*
-[MBH. 12,6409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6409) = [≈Вульг. 12.173.26](mbh/12.173.html#v26) = ≈крит. 12,167.24a *jānīhi bhrātaraṃ viduraṃ mama . yadi jīvati*
-[3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) = [≈Вульг. 3.6.8](mbh/3.6.html#v8) = ≈крит. 03,7.7c *jānīhi saumyaināṃ kasya vātra kuto 'pi vā*
+[MBH. 12,6409.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6409) = [≈Vulg. 12.173.26](mbh/12.173.html#v26) = ≈krit. 12,167.24a *jānīhi bhrātaraṃ viduraṃ mama . yadi jīvati*
+[3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) = [≈Vulg. 3.6.8](mbh/3.6.html#v8) = ≈krit. 03,7.7c *jānīhi saumyaināṃ kasya vātra kuto 'pi vā*
 
 - **RU:** 1) знать, ведать, иметь знание о чем-либо или о ком-либо; узнавать, замечать, осознавать, знакомиться, узнавать на опыте: *yathāmī anyo anyaṃ na jānan*
 [VS. 17,47.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,47) *nābhiṃ jānānāḥ śiśavaḥ samāyān*
@@ -169,19 +169,19 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [3,269.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.269) = [≈Вульг. 3.6.8](mbh/3.6.html#v8) = ≈крит. 03,7.7c *jānīhi saumyaināṃ kasya vātra kuto 'pi vā*
   <sub>attested</sub>
 
-**sense-1-subframe-acc-pred)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) = [≈Вульг. 3.264.14](mbh/3.264.html#v14) = ≈крит. 03,248.14c Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
+**sense-1-subframe-acc-pred)** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) = [≈Vulg. 3.264.14](mbh/3.264.html#v14) = ≈krit. 03,248.14c Mit dem acc. des obj. und praed. Jmd kennen als, wissen, innewerden, merken, dass: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
-[MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) = [≈Вульг. 3.64.76](mbh/3.64.html#v76) = ≈крит. 03,61.71c [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) = [≈Вульг. 1.151.20](mbh/1.151.html#v20) = ≈крит. 01,138.14a *vāṇān — jānāno 'pyakṣayān*
-[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) = [≈Вульг. 8.19.45](mbh/8.19.html#v45) = ≈крит. 08,14.46a [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
+[MBH. 3,2476.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2476) = [≈Vulg. 3.64.76](mbh/3.64.html#v76) = ≈krit. 03,61.71c [15605.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15605) [1,5950.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5950) = [≈Vulg. 1.151.20](mbh/1.151.html#v20) = ≈krit. 01,138.14a *vāṇān — jānāno 'pyakṣayān*
+[8,796.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.796) = [≈Vulg. 8.19.45](mbh/8.19.html#v45) = ≈krit. 08,14.46a [BENF. Chr. 22,17.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?22) [SĀV. 6,34.] *nājñāsiṣamahaṃ pūrvamanityaṃ kālaparyayam*
 [HARIV. 7091.](https://sanskrit-lexicon-scans.github.io/hariv?7091)
 [R. 1,59,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,59,2)
 [MEGH. 6.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?6) [81.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?81) *suhṛdaṃ sarvabhūtānāṃ jñātvā mām*
 [BHAG. 5,29.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?5,29) *bhaviṣyameva tajjñātvā*
 [R. 1,9,64.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,64) *jñāsyatyadya samāgatya mayātmānaṃ balādhikam*
-[MBH. 1,5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5996) = [≈Вульг. 1.152.21](mbh/1.152.html#v21) = ≈крит. 01,139.17a *yathā ca vo na jānīyādbruvato mama śāsanāt*
-[3,2739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2739) = [≈Вульг. 3.69.46](mbh/3.69.html#v46) = ≈крит. 03,67.18c *vasantaṃ tatra nājñāsīt*
-[4,2255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2255) = [≈Вульг. 4.69.16](mbh/4.69.html#v16) = ≈крит. 04,64.34a *cirāyamāṇāṃ māṃ jñātvā*
-[1,6016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6016) = [≈Вульг. 1.153.5](mbh/1.153.html#v5) = ≈крит. 01,140.5a [R. 1,42,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,1) [DAŚ. 1,39.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,39) *jñātvā mām — vighnārthaṃ samupāgatām*
+[MBH. 1,5996.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5996) = [≈Vulg. 1.152.21](mbh/1.152.html#v21) = ≈krit. 01,139.17a *yathā ca vo na jānīyādbruvato mama śāsanāt*
+[3,2739.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2739) = [≈Vulg. 3.69.46](mbh/3.69.html#v46) = ≈krit. 03,67.18c *vasantaṃ tatra nājñāsīt*
+[4,2255.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2255) = [≈Vulg. 4.69.16](mbh/4.69.html#v16) = ≈krit. 04,64.34a *cirāyamāṇāṃ māṃ jñātvā*
+[1,6016.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6016) = [≈Vulg. 1.153.5](mbh/1.153.html#v5) = ≈krit. 01,140.5a [R. 1,42,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,42,1) [DAŚ. 1,39.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,39) *jñātvā mām — vighnārthaṃ samupāgatām*
 
 - **RU:** [15584.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15584) = [≈Вульг. 3.264.14](mbh/3.264.html#v14) = ≈крит. 03,248.14c С acc. obj. и praed. — знать кого-либо как, замечать, осознавать, что: *jānīyādasthirāṃ vācamutsiktamanasāṃ tathā*
 [M. 8,71.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,71) [9,295.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,295) *tasya māṃ tanayāṃ sarve jānīta*
@@ -212,7 +212,7 @@ Sch. zu [3,1,7.](https://ashtadhyayi.com/sutraani/3/1/7) *na sa jānāti devitum
 [HARIV. 7095.](https://sanskrit-lexicon-scans.github.io/hariv?7095) *jñātumicchāmi te*
   <sub>attested</sub>
 
-**sense-1-subframe-familiar)** [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) = [≈Вульг. 3.55.19](mbh/3.55.html#v19) = ≈крит. 03,52.18c bekannt, vertraut sein: *ūrdhvā te anu sūnṛtā manastiṣṭhatu jānatī*
+**sense-1-subframe-familiar)** [MBH. 3,2154.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2154) = [≈Vulg. 3.55.19](mbh/3.55.html#v19) = ≈krit. 03,52.18c bekannt, vertraut sein: *ūrdhvā te anu sūnṛtā manastiṣṭhatu jānatī*
 [ṚV. 1,134,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.134.html#rv01.134.01) *jānanneva *
 * jānatīrnitya ā śaye*
 [140,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.140.html#rv01.140.07) [9,96,7.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.096.html#rv09.096.07) Jmd vertraulich aufsuchen: *jānīhi kṛtye kartāraṃ duhiteva pitaraṃ svam*
@@ -341,16 +341,16 @@ Sch. [VOP. 23,36.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
   <sub>attested</sub>
 
 **caus-sense-inform)** [ĀŚV. GṚHY. 4,7.] Etwas (acc.) zu wissen thun, mittheilen, verkünden: *(tam) samāgamyājñāpayatsvaṃ prayojanam*
-[MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) = [≈Вульг. 2.13.45](mbh/2.13.html#v45) = ≈крит. 02,12.34a *parīkṣya jñāpayannarthānna paścātparitapyate*
-[12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) = [≈Вульг. 12.112.17](mbh/12.112.html#v17) = ≈крит. 12,113.17c *utpātena jñāpyamāne*
+[MBH. 2,558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.558) = [≈Vulg. 2.13.45](mbh/2.13.html#v45) = ≈krit. 02,12.34a *parīkṣya jñāpayannarthānna paścātparitapyate*
+[12,4149.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4149) = [≈Vulg. 12.112.17](mbh/12.112.html#v17) = ≈krit. 12,113.17c *utpātena jñāpyamāne*
 Vārtt. 3 zu [P. 2,3,13.](https://ashtadhyayi.com/sutraani/2/3/13) Etwas (acc.) lehren: *etajjñāpayatyācāryaḥ, kiṃ jñāpyate*
 [PAT.] zu [P. 2,4,66.](https://ashtadhyayi.com/sutraani/2/4/66) [4,1,133.](https://ashtadhyayi.com/sutraani/4/1/133)
 Vārtt. 1 zu [P. 4,1,4.](https://ashtadhyayi.com/sutraani/4/1/4) *jñāpita*
 Sch. zu [JAIM. 1,1,2.] Jmd (acc.) mit Etwas (acc.) bekanntmachen: *śrāvitastvaṃ mayā guhyaṃ jñāpitaśca sanātanam . dharmam*
-[MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) = [≈Вульг. 14.16.8](mbh/14.16.html#v8) = ≈крит. 14,16.8c *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
+[MBH. 14,415.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.415) = [≈Vulg. 14.16.8](mbh/14.16.html#v8) = ≈krit. 14,16.8c *kathaṃ hi puṇḍrīkākṣo jñāpitastadidaṃ bhavet*
 [HARIV. 10038.](https://sanskrit-lexicon-scans.github.io/hariv?10038) Jmd (gen.) von Jmd (acc.) berichten: *tataste jñāpayāmāsurdhṛtarāṣṭrasya nāgarāḥ . pāṇḍavānagninā dagdhān* sie theilten dem Dhṛt. mit, dass die
 P. verbrannt wären
-[MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) = [≈Вульг. 1.147.17](mbh/1.147.html#v17) = ≈крит. 01,135.17c med. Jmd (acc.) angehen, bitten, zusprechen: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
+[MBH. 1,5864.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5864) = [≈Vulg. 1.147.17](mbh/1.147.html#v17) = ≈krit. 01,135.17c med. Jmd (acc.) angehen, bitten, zusprechen: *tasmāttvāṃ devadeveśa lokārthaṃ jñāpayāmaho . rakṣa lokāṃśca devāṃśca*
 [3,8762.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8762) *upamantrayate sa hiṃkāro jñapayate sa prastāvaḥ striyā saha śete sa udgīthaḥ*
 
 - **RU:** [ĀŚV. GṚHY. 4,7.] давать знать о чем-либо (acc.), сообщать, возвещать: *(tam) samāgamyājñāpayatsvaṃ prayojanam*
@@ -410,21 +410,21 @@ P. verbrannt wären
 *yāvanna jijñāsata ātmatattvam*
 [BHĀG. P. 5,5,5.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,5,5) *jijñāsita* was man kennen zu lernen gewünscht hat
 [1,5,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,3) [4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,5,4) *jijñāsamāno rāmasya vīryam*
-[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) = [≈Вульг. 3.99.44](mbh/3.99.html#v44) = крит. — *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
+[MBH. 3,8660.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8660) = [≈Vulg. 3.99.44](mbh/3.99.html#v44) = krit. — *dhanuṣastasya vīryaṃ hi jijñāsantaḥ*
 [R. 1,33,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,33,10) *teṣāṃ jijñāsamānānāṃ śaivaṃ dhanurupāhṛtam*
 [66,19.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,19) *jijñāsyatāṃ rathaḥ sadyo vyakta eṣa hiraṇmayaḥ*
-[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) = [≈Вульг. 3.99.14](mbh/3.99.html#v14) = ≈крит. 03,97.12a *ātmānucarasya bhāvaṃ jijñāsamānā*
+[MBH. 3,8630.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8630) = [≈Vulg. 3.99.14](mbh/3.99.html#v14) = ≈krit. 03,97.12a *ātmānucarasya bhāvaṃ jijñāsamānā*
 [RAGH. 2,26.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,26)
 [BHAṬṬ. 8,33.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,33) *evaṃ hi na śāstraviṣayo jijñāsyeta*
 Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ ca*
 [R. 3,68,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,8)
-[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) = [≈Вульг. 13.160.32](mbh/13.160.html#v32) = ≈крит. 13,145.30a *aśvān jijñāsamānaḥ*
-[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) = [≈Вульг. 3.71.11](mbh/3.71.html#v11) = ≈крит. 03,69.10a [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
+[MBH. 13,7489.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7489) = [≈Vulg. 13.160.32](mbh/13.160.html#v32) = ≈krit. 13,145.30a *aśvān jijñāsamānaḥ*
+[3,2782.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2782) = [≈Vulg. 3.71.11](mbh/3.71.html#v11) = ≈krit. 03,69.10a [BHAṬṬ. 14,91.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,91) *atha jijñāsase māṃ tvaṃ bharatasya priyāpriye*
 [R. 2,12,15.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,12,15) *ajijñāsañchivim*
-[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448) = [≈Вульг. 1.2.219](mbh/1.2.html#v219) = ≈крит. 01,2.137a
+[MBH. 1,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.448) = [≈Vulg. 1.2.219](mbh/1.2.html#v219) = ≈krit. 01,2.137a
 [R. 5,31,43.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,31,43) *śiviṃ jijñāsyāmaḥ* (sic)
-[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) = [≈Вульг. 3.197.2](mbh/3.197.html#v2) = крит. — *mayā jijñāsito hyasi*
-[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) = [≈Вульг. 13.14.341](mbh/13.14.html#v341) = ≈крит. 13,14.177a sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
+[MBH. 3,13274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13274) = [≈Vulg. 3.197.2](mbh/3.197.html#v2) = krit. — *mayā jijñāsito hyasi*
+[13,932.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.932) = [≈Vulg. 13.14.341](mbh/13.14.html#v341) = ≈krit. 13,14.177a sich Gewissheit verschaffen über: *tadetāmupasarpāmi tāvajjijñāsituṃ varam*
 [KATHĀS. 22,84.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,84)
 
 - **RU:** 1) желать познать, желать знать, желать узнать, желать ознакомиться; исследовать, испытывать, подвергать проверке: *hāsaṃ te — jijñāsāmi* я желаю знать, над чем ты смеешься
@@ -475,14 +475,14 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [TAITT. UP. 1,8.] *sthānaṃ tvihānujānīhi prajānāṃ mama ca*
 [BHĀG. P. 3,13,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,13,14) *māṃ jātamātrāṃ dhanamitranāmne — anvajānādbhāryāṃ me pitā* zusagen
 [DAŚAK.] in [BENF. Chr. 186,19.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?186) *anvajānāttato dyūtam*
-[MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) = [≈Вульг. 1.1.182](mbh/1.1.html#v182) = ≈крит. 01,1.125a *duhitustamabhiprāyamanvajānāt*
+[MBH. 1,136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.136) = [≈Vulg. 1.1.182](mbh/1.1.html#v182) = ≈krit. 01,1.125a *duhitustamabhiprāyamanvajānāt*
 [3,2955.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2955) *abhipretāṃstu me kāmāṃstvamanujñātumarhasi*
-[10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) = [≈Вульг. 3.110.56](mbh/3.110.html#v56) = ≈крит. 03,110.33c [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) = [≈Вульг. 4.23.2](mbh/4.23.html#v2) = ≈крит. 04,22.2a [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
+[10024. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10024) = [≈Vulg. 3.110.56](mbh/3.110.html#v56) = ≈krit. 03,110.33c [4,799.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.799) = [≈Vulg. 4.23.2](mbh/4.23.html#v2) = ≈krit. 04,22.2a [R. 1,57,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,17) [60,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,28) [BHĀG. P. 9,3,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,3,26) [KULL.] zu [M. 3,108.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,108) [5,70.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,70) *tato 'nujajñe* (wohl pass.) *gamanaṃ sutasya*
 [BHAṬṬ. 1,23.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?1,23)
 [SIDDH. K. 167,a,5.]
 *anujñātaviśrama*
 [ŚĀK. 32,11](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,11), v. l. *anujānātu me bhavān* gestehe es mir zu
-[MBH. 3,2047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2047) = [≈Вульг. 3.52.34](mbh/3.52.html#v34) = ≈крит. 03,49.20a
+[MBH. 3,2047.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2047) = [≈Vulg. 3.52.34](mbh/3.52.html#v34) = ≈krit. 03,49.20a
 [R. 1,21,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,17) *anujñātaṃ devyā* die Königin hat es gewährt, zugestanden
 [MĀLAV. 16,11.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?16,11) *bhavatāmananujñātaṃ ruṇaddhi mama vikramam* die von eurer Seite fehlende Einwilligung
 [R. 5,58,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,58,7) *brahma yastvananujñātamadhīyānādavāpnuyāt* ohne dazu die Einwilligung zu haben
@@ -517,7 +517,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
   <sub>attested</sub>
 
 **2)** — 2) Jmd Etwas nachsehen, verzeihen: *anupraveśe yadvīra kṛtavāṃstvaṃ mamāpriyam . sarvaṃ tadanujānāmi*
-[MBH. 1,7772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7772) = [≈Вульг. 1.211.26](mbh/1.211.html#v26) = ≈крит. 01,203.24a *tanmayā prītimatā yuvayoranujñātam*
+[MBH. 1,7772.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7772) = [≈Vulg. 1.211.26](mbh/1.211.html#v26) = ≈krit. 01,203.24a *tanmayā prītimatā yuvayoranujñātam*
 [ŚĀK. 65,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?65,4) *nūnamidānīmanujñātam*
 [MĀLAV. 42,9.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?42,9)
 
@@ -544,7 +544,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 [KĀTY. ŚR. 2,3,3.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?2,3,3) [3,5,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?3,5,5)
 [M. 3,210.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,210) [253.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,253) [9,179.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,179)
 [YĀJÑ. 1,68.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,68)
-[MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) = [≈Вульг. 2.33.23](mbh/2.33.html#v23) = ≈крит. 02,30.23e
+[MBH. 2,1230.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1230) = [≈Vulg. 2.33.23](mbh/2.33.html#v23) = ≈krit. 02,30.23e
 [PAÑCAT. 72,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?72,11)
 
 - **RU:** — 4) уполномочивать кого-л. (acc.), давать разрешение: *yadi māṃ nānujānāsi*
@@ -564,17 +564,17 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 **5)** — 5) Jmd (acc.) erlauben fortzugehen, verabschieden, entlassen: *anujānāmi *
 
 * vāṃ vīrau carataṃ yatra vāñchitam*
-[MBH. 1,8477.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8477) = [≈Вульг. 1.230.16](mbh/1.230.html#v16) = ≈крит. 01,221.15a *anujānīhi mām*
+[MBH. 1,8477.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8477) = [≈Vulg. 1.230.16](mbh/1.230.html#v16) = ≈krit. 01,221.15a *anujānīhi mām*
 [BRĀHMAṆ. 2,28.] [R. 2,34,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,23) *ācāntāṃścānujānīyāt*
 [M. 3,251.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,251) *sarathānsadhanuṣkāṃścāpyanujñāsiṣamapyaham*
-[MBH. 2,2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2699) = [≈Вульг. 2.81.28](mbh/2.81.html#v28) = ≈крит. 02,72.26c *anujāne tvām*
+[MBH. 2,2699.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2699) = [≈Vulg. 2.81.28](mbh/2.81.html#v28) = ≈krit. 02,72.26c *anujāne tvām*
 [R. 2,70,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,70,17) [3,5,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,5,11) *anujājñe*
-[MBH. 1,4136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4136) = [≈Вульг. 1.102.59](mbh/1.102.html#v59) = ≈крит. 01,96.46c [3,1472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1472) = [≈Вульг. 3.37.16](mbh/3.37.html#v16) = ≈крит. 03,38.14a [14841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14841) = [≈Вульг. 3.239.22](mbh/3.239.html#v22) = ≈крит. 03,228.22a *enamanujajñe gṛhaṃ prati*
+[MBH. 1,4136.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4136) = [≈Vulg. 1.102.59](mbh/1.102.html#v59) = ≈krit. 01,96.46c [3,1472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1472) = [≈Vulg. 3.37.16](mbh/3.37.html#v16) = ≈krit. 03,38.14a [14841.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14841) = [≈Vulg. 3.239.22](mbh/3.239.html#v22) = ≈krit. 03,228.22a *enamanujajñe gṛhaṃ prati*
 [HARIV. 9040.](https://sanskrit-lexicon-scans.github.io/hariv?9040) *ciraviproṣitāṃ mātarmāmanujñātumarhasi*
-[MBH. 3,2712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2712) = [≈Вульг. 3.69.19](mbh/3.69.html#v19) = ≈крит. 03,66.17a [2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954) *seyaṃ yāti śakuntalā patigṛhaṃ sarvairanujñāyatām*
+[MBH. 3,2712.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2712) = [≈Vulg. 3.69.19](mbh/3.69.html#v19) = ≈krit. 03,66.17a [2954.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2954) *seyaṃ yāti śakuntalā patigṛhaṃ sarvairanujñāyatām*
 [ŚĀK. 84.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?84) *anujñāta*
 [KĀTY. ŚR. 10,7,5.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?10,7,5)
-[MBH. 1,5899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5899) = [≈Вульг. 1.149.10](mbh/1.149.html#v10) = крит. — [3,2293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2293) = [≈Вульг. 3.59.17](mbh/3.59.html#v17) = ≈крит. 03,56.17a [2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2748) = [≈Вульг. 3.70.5](mbh/3.70.html#v5) = ≈крит. 03,68.5a [14842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14842) = [≈Вульг. 3.239.23](mbh/3.239.html#v23) = ≈крит. 03,228.23a
+[MBH. 1,5899.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5899) = [≈Vulg. 1.149.10](mbh/1.149.html#v10) = krit. — [3,2293.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2293) = [≈Vulg. 3.59.17](mbh/3.59.html#v17) = ≈krit. 03,56.17a [2748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2748) = [≈Vulg. 3.70.5](mbh/3.70.html#v5) = ≈krit. 03,68.5a [14842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14842) = [≈Vulg. 3.239.23](mbh/3.239.html#v23) = ≈krit. 03,228.23a
 [ŚĀK. 32,11.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?32,11)
 [PAÑCAT. 8,15.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?8,15)
 [ŚUK. 42,6.] Auch von leblosen Dingen: *rathaṃ divyamindradattam — anujñāya*
@@ -615,7 +615,7 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 
 **7)** — 7) sich Jmd (acc.) gnädig erweisen, seine Gewogenheit an den Tag legen: *anvajānātsa dharmajño munirdivyena cakṣuṣā . pāṇḍoḥ putrān — āsyatāmiti cābravīt*
 [MBH. 3,11631.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11631) *te māṃ vīryeṇa yaśasā — astraiścāpyanvajānanta*
-[12045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12045) = [≈Вульг. 3.168.19](mbh/3.168.html#v19) = ≈крит. 03,164.19a *sarvabhūteṣvanujñātaḥ śaṃkareṇa*
+[12045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12045) = [≈Vulg. 3.168.19](mbh/3.168.html#v19) = ≈krit. 03,164.19a *sarvabhūteṣvanujñātaḥ śaṃkareṇa*
 [8,823.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.823)
 
 - **RU:** — 7) оказывать милость кому-л. (acc.), проявлять расположение: *anvajānātsa dharmajño munirdivyena cakṣuṣā . pāṇḍoḥ putrān — āsyatāmiti cābravīt*
@@ -643,8 +643,8 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
 **caus-2)** — 2) Jmd (acc.) um Erlaubniss bitten: *(nādhīyīta) atithiṃ cānanujñāpya*
 [M. 4,122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,122) *sānujñāpyādhivettavyā*
 [9,82.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,82) *te kauravyamanujñāpya dhṛtarāṣṭam — dahane tu saputrāyāḥ kuntyā buddhimakārayan*
-[MBH. 1,5636.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5636) = [≈Вульг. 1.140.47](mbh/1.140.html#v47) = крит. — *sa mātaramanujñāpya tapasyeva mano dadhe*
-[2414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2414) = [≈Вульг. 1.63.82](mbh/1.63.html#v82) = ≈крит. 01,57.67c
+[MBH. 1,5636.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5636) = [≈Vulg. 1.140.47](mbh/1.140.html#v47) = krit. — *sa mātaramanujñāpya tapasyeva mano dadhe*
+[2414.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2414) = [≈Vulg. 1.63.82](mbh/1.63.html#v82) = ≈krit. 01,57.67c
 
 - **RU:** — 2) просить кого-л. (acc.) о разрешении: *(nādhīyīta) atithiṃ cānanujñāpya*
 [M. 4,122.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,122) *sānujñāpyādhivettavyā*
@@ -654,8 +654,8 @@ Sch. in [WILSON'S] [SĀṂKHYAK. S. 8.] *jijñāsamānā vaidehī tvāṃ māṃ
   <sub>attested</sub>
 
 **caus-3)** — 3) Jmd um Erlaubniss bitten fortzugehen, sich verabschieden bei (acc.): *evamāśvāsya rājānam — anujñāpya — tatraivāntaradhīyata*
-[MBH. 3,8274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8274) = [≈Вульг. 3.85.132](mbh/3.85.html#v132) = ≈крит. 03,83.114a *jagmatuśca yathākāmamanujñāpya parasparam*
-[12781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12781) = [≈Вульг. 3.187.39](mbh/3.187.html#v39) = ≈крит. 03,185.35e [HARIV. 8712.](https://sanskrit-lexicon-scans.github.io/hariv?8712) [R. 2,71,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,13) [3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16) [PAÑCAT. 233,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?233,14) — desid. act. *anujijñāsati*
+[MBH. 3,8274.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8274) = [≈Vulg. 3.85.132](mbh/3.85.html#v132) = ≈krit. 03,83.114a *jagmatuśca yathākāmamanujñāpya parasparam*
+[12781.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12781) = [≈Vulg. 3.187.39](mbh/3.187.html#v39) = ≈krit. 03,185.35e [HARIV. 8712.](https://sanskrit-lexicon-scans.github.io/hariv?8712) [R. 2,71,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,71,13) [3,9,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,9,16) [PAÑCAT. 233,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?233,14) — desid. act. *anujijñāsati*
 [P. 1,3,58.](https://ashtadhyayi.com/sutraani/1/3/58)
 
 - **RU:** — 3) просить кого-л. о разрешении уйти, прощаться с (acc.): *evamāśvāsya rājānam — anujñāpya — tatraivāntaradhīyata*
@@ -682,12 +682,12 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
 
 **1)** — *abhyanu*
  1) Etwas zugestehen, gutheissen, billigen: *ato nābhyanujānāmi gamanaṃ tatra vaḥ svayam*
-[MBH. 3,14826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14826) = [≈Вульг. 3.239.7](mbh/3.239.html#v7) = ≈крит. 03,228.7a *yacca te 'bhyanujānīyuḥ karma*
-[12,3992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3992) = [≈Вульг. 12.108.4](mbh/12.108.html#v4) = ≈крит. 12,109.4c *yaṃ ca te 'bhyanujānīyuḥ sa dharmaḥ*
-[3993.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3993) = [≈Вульг. 12.108.5](mbh/12.108.html#v5) = ≈крит. 12,109.5c *tava pitrābhyanujñātaṃ mamedaṃ śṛṇu*
+[MBH. 3,14826.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14826) = [≈Vulg. 3.239.7](mbh/3.239.html#v7) = ≈krit. 03,228.7a *yacca te 'bhyanujānīyuḥ karma*
+[12,3992.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3992) = [≈Vulg. 12.108.4](mbh/12.108.html#v4) = ≈krit. 12,109.4c *yaṃ ca te 'bhyanujānīyuḥ sa dharmaḥ*
+[3993.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3993) = [≈Vulg. 12.108.5](mbh/12.108.html#v5) = ≈krit. 12,109.5c *tava pitrābhyanujñātaṃ mamedaṃ śṛṇu*
 [R. 3,53,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,53,15) *hṛdayenābhyanujñāto yo dharmaḥ*
 [M. 2,1.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,1) *pūjāmanarhaḥ kasmāttvamabhyanujñātavānasi* zugeben, annehmen
-[MBH. 2,1363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1363) = [≈Вульг. 2.37.26](mbh/2.37.html#v26) = ≈крит. 02,34.18a
+[MBH. 2,1363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1363) = [≈Vulg. 2.37.26](mbh/2.37.html#v26) = ≈krit. 02,34.18a
 
 - **RU:** — *abhyanu*
  1) соглашаться с чем-л., одобрять, признавать: *ato nābhyanujānāmi gamanaṃ tatra vaḥ svayam*
@@ -700,14 +700,14 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
   <sub>attested</sub>
 
 **2)** — 2) Jmd ermächtigen, eine Erlaubniss ertheilen; auffordern: *māṃ vāpyabhyanujānīhi*
-[MBH. 2,1225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1225) = [≈Вульг. 2.33.18](mbh/2.33.html#v18) = ≈крит. 02,30.18a *abhyanujñāta* ermächtigt, aufgefordert
+[MBH. 2,1225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1225) = [≈Vulg. 2.33.18](mbh/2.33.html#v18) = ≈krit. 02,30.18a *abhyanujñāta* ermächtigt, aufgefordert
 [M. 3,243.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,243)
 [YĀJÑ. 1,235.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,235)
-[MBH. 1,6617.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6617) = [≈Вульг. 1.171.42](mbh/1.171.html#v42) = ≈крит. 01,160.39a [3,1813.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1813) = [≈Вульг. 3.45.13](mbh/3.45.html#v13) = крит. — [1865.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1865) = [≈Вульг. 3.46.48](mbh/3.46.html#v48) = крит. — [1881.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1881) = [≈Вульг. 3.47.3](mbh/3.47.html#v3) = ≈крит. 03,45.11a [2956.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2956) = [≈Вульг. 3.76.1](mbh/3.76.html#v1) = ≈крит. 03,74.1a
+[MBH. 1,6617.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6617) = [≈Vulg. 1.171.42](mbh/1.171.html#v42) = ≈krit. 01,160.39a [3,1813.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1813) = [≈Vulg. 3.45.13](mbh/3.45.html#v13) = krit. — [1865.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1865) = [≈Vulg. 3.46.48](mbh/3.46.html#v48) = krit. — [1881.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1881) = [≈Vulg. 3.47.3](mbh/3.47.html#v3) = ≈krit. 03,45.11a [2956.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2956) = [≈Vulg. 3.76.1](mbh/3.76.html#v1) = ≈krit. 03,74.1a
 [SĀV. 6,26.]
 [R. 1,68,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,12) [3,33,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,7) [4,21,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,21,30) [31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,21,31) [5,60,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,60,4) *anabhyanujñāta* (so ist zu lesen)
 [M. 2,229](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,229); vgl.
-[MBH. 12,3993.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3993) = [≈Вульг. 12.108.5](mbh/12.108.html#v5) = ≈крит. 12,109.5c
+[MBH. 12,3993.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3993) = [≈Vulg. 12.108.5](mbh/12.108.html#v5) = ≈krit. 12,109.5c
 
 - **RU:** — 2) уполномочивать кого-л., давать разрешение; побуждать: *māṃ vāpyabhyanujānīhi*
 [MBH. 2,1225.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1225) = [≈Вульг. 2.33.18](mbh/2.33.html#v18) = ≈крит. 02,30.18a *abhyanujñāta* уполномоченный, побуждаемый
@@ -721,8 +721,8 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
   <sub>attested</sub>
 
 **3)** — 3) Jmd entlassen, beurlauben: *śatavarṣoṣitaṃ māṃ hi na tvamabhyanujānithāḥ*
-[MBH. 14,1641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) = [≈Вульг. 14.56.16](mbh/14.56.html#v16) = ≈крит. 14,55.16a *abhyanujñāta*
-[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) = [≈Вульг. 14.56.17](mbh/14.56.html#v17) = ≈крит. 14,55.17c [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) = [≈Вульг. 3.46.28](mbh/3.46.html#v28) = крит. — [BENF. Chr. 21,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21) [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
+[MBH. 14,1641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) = [≈Vulg. 14.56.16](mbh/14.56.html#v16) = ≈krit. 14,55.16a *abhyanujñāta*
+[1642.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1642) = [≈Vulg. 14.56.17](mbh/14.56.html#v17) = ≈krit. 14,55.17c [3,1845.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1845) = [≈Vulg. 3.46.28](mbh/3.46.html#v28) = krit. — [BENF. Chr. 21,10.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?21) [HARIV. 6467.](https://sanskrit-lexicon-scans.github.io/hariv?6467) [R. 1,2,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,3) [2,68,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,68,11) [3,19,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,26) [6,97,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,97,6) [MṚCCH. 109,25.] [PAÑCAT. 95,22.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?95,22) [BHĀG. P. 1,10,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,10,8)
 
 - **RU:** — 3) отпускать кого-л., давать отпуск: *śatavarṣoṣitaṃ māṃ hi na tvamabhyanujānithāḥ*
 [MBH. 14,1641.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.1641) = [≈Вульг. 14.56.16](mbh/14.56.html#v16) = ≈крит. 14,55.16a *abhyanujñāta*
@@ -737,7 +737,7 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
   <sub>attested</sub>
 
 **5)** — 5) sich verabschieden (vgl. caus.): *sa tatheti pratiśrutya pūjayitvā ca nāradam . abhyanujñāya (˚jñāpya?) rājarṣiryayau vārāṇāsīṃ purīm ..*
-[MBH. 14,146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.146) = [≈Вульг. 14.6.27](mbh/14.6.html#v27) = ≈крит. 14,6.27a *abhyanujñātumicchāmaḥ*
+[MBH. 14,146.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.146) = [≈Vulg. 14.6.27](mbh/14.6.html#v27) = ≈krit. 14,6.27a *abhyanujñātumicchāmaḥ*
 [R. 3,12,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,12,7)
 
 - **RU:** — 5) прощаться (ср. caus.): *sa tatheti pratiśrutya pūjayitvā ca nāradam . abhyanujñāya (˚jñāpya?) rājarṣiryayau vārāṇāsīṃ purīm ..*
@@ -748,8 +748,8 @@ Vom intrans. med.: *sarpiṣo 'nujijñāsate* (vgl. simpl. 4) ebend.
 **caus)** — Vgl. *abhyanujñā* fg. — caus. sich beurlauben
 
 bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'thāpacakrame*
-[MBH. 1,6619.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6619) = [≈Вульг. 1.171.44](mbh/1.171.html#v44) = ≈крит. 01,160.41a [3,11394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11394) = [≈Вульг. 3.153.1](mbh/3.153.html#v1) = ≈крит. 03,151.1a [9,3022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3022) = [≈Вульг. 9.53.14](mbh/9.53.html#v14) = ≈крит. 09,52.14c [14,366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.366) = [≈Вульг. 14.14.13](mbh/14.14.html#v13) = ≈крит. 14,14.12e *abhyanujñāpayiṣyantastaṃ nivāsam*
-[3,17450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17450) = [≈Вульг. 3.315.3](mbh/3.315.html#v3) = ≈крит. 03,299.2e
+[MBH. 1,6619.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6619) = [≈Vulg. 1.171.44](mbh/1.171.html#v44) = ≈krit. 01,160.41a [3,11394.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11394) = [≈Vulg. 3.153.1](mbh/3.153.html#v1) = ≈krit. 03,151.1a [9,3022.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3022) = [≈Vulg. 9.53.14](mbh/9.53.html#v14) = ≈krit. 09,52.14c [14,366.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.366) = [≈Vulg. 14.14.13](mbh/14.14.html#v13) = ≈krit. 14,14.12e *abhyanujñāpayiṣyantastaṃ nivāsam*
+[3,17450.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17450) = [≈Vulg. 3.315.3](mbh/3.315.html#v3) = ≈krit. 03,299.2e
 
 - **RU:** — ср. *abhyanujñā* сл. — caus. брать отпуск, прощаться
 
@@ -764,7 +764,7 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
 
 
 **1)** — *pratyabhyanu* einen sich Verabschiedenden entlassen: *māmāmantrya dvijarṣabha . mayā pratyabhyanujñātastato yāsyasi*
-[MBH. 12,13928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13928) = [≈Вульг. 12.363.6](mbh/12.363.html#v6) = ≈крит. 12,351.6a
+[MBH. 12,13928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13928) = [≈Vulg. 12.363.6](mbh/12.363.html#v6) = ≈krit. 12,351.6a
 
 - **RU:** — *pratyabhyanu* отпускать прощающегося: *māmāmantrya dvijarṣabha . mayā pratyabhyanujñātastato yāsyasi*
 [MBH. 12,13928.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.13928) = [≈Вульг. 12.363.6](mbh/12.363.html#v6) = ≈крит. 12,351.6a
@@ -789,11 +789,11 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
 
 **1)** — *samanu*
  1) Etwas zugestehen, gutheissen, billigen: *duryodhanasya gamanaṃ samanujñātumarhasi*
-[MBH. 3,14824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14824) = [≈Вульг. 3.239.5](mbh/3.239.html#v5) = ≈крит. 03,228.5a *iti vānara mukhyasya samanujñāya śāmanam*
+[MBH. 3,14824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14824) = [≈Vulg. 3.239.5](mbh/3.239.html#v5) = ≈krit. 03,228.5a *iti vānara mukhyasya samanujñāya śāmanam*
 [R. 5,2,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,2,8) *tatheti samanujñāya*
-[MBH. 1,4972.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4972) = [≈Вульг. 1.128.9](mbh/1.128.html#v9) = ≈крит. 01,119.9a
+[MBH. 1,4972.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4972) = [≈Vulg. 1.128.9](mbh/1.128.html#v9) = ≈krit. 01,119.9a
 [HARIV. 1537.](https://sanskrit-lexicon-scans.github.io/hariv?1537) *asmābhiḥ samanujñāte damayantyā nalo vṛtaḥ* mit unserer Einwilligung
-[MBH. 3,2245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2245) = [≈Вульг. 3.58.6](mbh/3.58.html#v6) = ≈крит. 03,55.6a
+[MBH. 3,2245.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2245) = [≈Vulg. 3.58.6](mbh/3.58.html#v6) = ≈krit. 03,55.6a
 
 - **RU:** — *samanu*
  1) соглашаться с чем-л., одобрять, признавать: *duryodhanasya gamanaṃ samanujñātumarhasi*
@@ -812,9 +812,9 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
   <sub>attested</sub>
 
 **3)** — 3) Jmd ermächtigen, eine Erlaubniss ertheilen; auffordern: *evaṃ ca tvāṃ pitā — samanujñātumarhati*
-[MBH. 3,14815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14815) = [≈Вульг. 3.238.20](mbh/3.238.html#v20) = ≈крит. 03,227.20a *samanujñātavāṃśca tvaṣṭāraṃ rūpasiddhaye*
+[MBH. 3,14815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14815) = [≈Vulg. 3.238.20](mbh/3.238.html#v20) = ≈krit. 03,227.20a *samanujñātavāṃśca tvaṣṭāraṃ rūpasiddhaye*
 [HARIR. 589.] *samanujñāta*
-[MBH. 3,222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.222) = [≈Вульг. 3.4.4](mbh/3.4.html#v4) = ≈крит. 03,5.4a [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1850) = [≈Вульг. 3.46.33](mbh/3.46.html#v33) = крит. —
+[MBH. 3,222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.222) = [≈Vulg. 3.4.4](mbh/3.4.html#v4) = ≈krit. 03,5.4a [1850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1850) = [≈Vulg. 3.46.33](mbh/3.46.html#v33) = krit. —
 
 - **RU:** — 3) уполномочивать кого-л., давать разрешение; побуждать: *evaṃ ca tvāṃ pitā — samanujñātumarhati*
 [MBH. 3,14815.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14815) = [≈Вульг. 3.238.20](mbh/3.238.html#v20) = ≈крит. 03,227.20a *samanujñātavāṃśca tvaṣṭāraṃ rūpasiddhaye*
@@ -823,9 +823,9 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
   <sub>attested</sub>
 
 **4)** — 4) Jmd entlassen, beurlauben: *tasmānmāṃ tvam — samanujñātumarhasi*
-[MBH. 5,5974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5974) = [≈Вульг. 5.174.9](mbh/5.174.html#v9) = ≈крит. 05,171.9a *samanujñāsiṣaṃ kanyām*
-[5977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5977) = [≈Вульг. 5.175.2](mbh/5.175.html#v2) = ≈крит. 05,172.2a *samanujñāta*
-[1,8478.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8478) = [≈Вульг. 1.230.17](mbh/1.230.html#v17) = ≈крит. 01,221.16c [3,2232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2232) = [≈Вульг. 3.57.41](mbh/3.57.html#v41) = крит. — [SUND. 2,2.]
+[MBH. 5,5974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5974) = [≈Vulg. 5.174.9](mbh/5.174.html#v9) = ≈krit. 05,171.9a *samanujñāsiṣaṃ kanyām*
+[5977.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5977) = [≈Vulg. 5.175.2](mbh/5.175.html#v2) = ≈krit. 05,172.2a *samanujñāta*
+[1,8478.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8478) = [≈Vulg. 1.230.17](mbh/1.230.html#v17) = ≈krit. 01,221.16c [3,2232.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2232) = [≈Vulg. 3.57.41](mbh/3.57.html#v41) = krit. — [SUND. 2,2.]
 
 - **RU:** — 4) отпускать кого-л., давать отпуск: *tasmānmāṃ tvam — samanujñātumarhasi*
 [MBH. 5,5974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5974) = [≈Вульг. 5.174.9](mbh/5.174.html#v9) = ≈крит. 05,171.9a *samanujñāsiṣaṃ kanyām*
@@ -834,7 +834,7 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
   <sub>attested</sub>
 
 **5)** — 5) sich Jmd (acc.) gnädig erweisen: *gobhiśca samanujñātaḥ sarvatra ca mahīyate*
-[MBH. 13,3603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3603) = [≈Вульг. 13.73.50](mbh/13.73.html#v50) = ≈крит. 13,72.47c *brahmaṇā samanujñātāvamṛtaprāśanābubhau*
+[MBH. 13,3603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3603) = [≈Vulg. 13.73.50](mbh/13.73.html#v50) = ≈krit. 13,72.47c *brahmaṇā samanujñātāvamṛtaprāśanābubhau*
 [R. 6,4,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,4,7) — caus.
 
 - **RU:** — 5) оказывать милость кому-л. (acc.): *gobhiśca samanujñātaḥ sarvatra ca mahīyate*
@@ -843,14 +843,14 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
   <sub>attested</sub>
 
 **med-1)** 1) sich Etwas zusagen lassen, ausbitten, entgegennehmen von: *rāmāt — brahmāstraṃ samanujñāpya*
-[MBH. 1,6340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6340) = [≈Вульг. 1.163.17](mbh/1.163.html#v17) = ≈крит. 01,151.13a
+[MBH. 1,6340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6340) = [≈Vulg. 1.163.17](mbh/1.163.html#v17) = ≈krit. 01,151.13a
 
 - **RU:** 1) добиваться для себя обещания, выпрашивать, получать от: *rāmāt — brahmāstraṃ samanujñāpya*
 [MBH. 1,6340.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6340) = [≈Вульг. 1.163.17](mbh/1.163.html#v17) = ≈крит. 01,151.13a
   <sub>attested</sub>
 
 **med-2)** — 2) Jmd um Erlaubniss bitten: *samanujñāpya kālīm*
-[MBH. 5,5976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5976) = [≈Вульг. 5.175.1](mbh/5.175.html#v1) = ≈крит. 05,172.1a
+[MBH. 5,5976.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5976) = [≈Vulg. 5.175.1](mbh/5.175.html#v1) = ≈krit. 05,172.1a
 [R. 2,40,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,2)
 
 - **RU:** — 2) просить кого-л. о разрешении: *samanujñāpya kālīm*
@@ -859,7 +859,7 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
   <sub>attested</sub>
 
 **med-3)** — 3) sich beurlauben bei (acc.), sich verabschieden von: *samanujñāpya mādhavīm*
-[MBH. 1,5824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5824) = [≈Вульг. 1.146.8](mbh/1.146.html#v8) = ≈крит. 01,134.8a [3,8474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8474) = [≈Вульг. 3.93.17](mbh/3.93.html#v17) = ≈крит. 03,91.16a
+[MBH. 1,5824.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5824) = [≈Vulg. 1.146.8](mbh/1.146.html#v8) = ≈krit. 01,134.8a [3,8474.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8474) = [≈Vulg. 3.93.17](mbh/3.93.html#v17) = ≈krit. 03,91.16a
 [R. 1,74,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,74,6)
 [BHĀG. P. 3,33,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,33,33) *(rājā) gatvā kakṣāntaraṃ tvanyatsamanujñāpya janam*
 [M. 7,224.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,224) *tato 'bhigamya rājānam — samanujñāpayāmāsa nivartatu bhavāniti*
@@ -874,7 +874,7 @@ bei (acc.), Abschied nehmen von: *nṛpatiṃ tvabhyanujñāpya vasiṣṭho 'th
   <sub>attested</sub>
 
 **med-4)** — 4) Jmd freundlich begrüssen: *samanujñāpya tānsarvānāsīnānmunirabravīt*
-[MBH. 1,6423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6423) = [≈Вульг. 1.167.11](mbh/1.167.html#v11) = ≈крит. 01,155.11a
+[MBH. 1,6423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6423) = [≈Vulg. 1.167.11](mbh/1.167.html#v11) = ≈krit. 01,155.11a
 
 - **RU:** — 4) приветствовать кого-л. дружески: *samanujñāpya tānsarvānāsīnānmunirabravīt*
 [MBH. 1,6423.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6423) = [≈Вульг. 1.167.11](mbh/1.167.html#v11) = ≈крит. 01,155.11a
@@ -903,34 +903,34 @@ Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
 
 **1)** — *abhi*
  1) erkennen; merken, wahrnehmen; kennen, wissen: *nābhyajānannalam*
-[MBH. 3,2201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2201) = [≈Вульг. 3.57.10](mbh/3.57.html#v10) = ≈крит. 03,54.10c [2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) = [≈Вульг. 3.57.21](mbh/3.57.html#v21) = ≈крит. 03,54.20c
+[MBH. 3,2201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2201) = [≈Vulg. 3.57.10](mbh/3.57.html#v10) = ≈krit. 03,54.10c [2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2212) = [≈Vulg. 3.57.21](mbh/3.57.html#v21) = ≈krit. 03,54.20c
 [R. 3,68,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,68,42) [4,5,10](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,5,10) [12,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,12,29) *rāmo yadabhijānīyādabhijñānaṃ prayaccha me*
 [5,36,9.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,36,9) [BHĀG. P. 1,4,33.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,4,33) *sa tā giraḥ — nābhyajānata*
-[MBH. 18,64.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.64) = [≈Вульг. 18.2.38](mbh/18.2.html#v38) = ≈крит. 18,2.38a *prahārānnābhijānāti yo 'ṅgacchedamathāpi vā*
+[MBH. 18,64.](https://sanskrit-lexicon-scans.github.io/mbhcalc?18.64) = [≈Vulg. 18.2.38](mbh/18.2.html#v38) = ≈krit. 18,2.38a *prahārānnābhijānāti yo 'ṅgacchedamathāpi vā*
 [SUŚR. 1,113,3.] *tadabhijñāya*
 [BHĀG. P. 4,19,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,19,26) *asurebhyaḥ — bhayaṃ yo nābhijānāti*
 [R. 6,94,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,94,15) *mālyagandhānalaṃkārānvastrāṇi vividhāni ca . etānyevābhijānāti* sich auf Etwas verstehen
-[MBH. 4,76.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.76) = [≈Вульг. 4.3.17](mbh/4.3.html#v17) = ≈крит. 04,3.15c *utthānamabhijānanti sarvabhūtāni*
-[3,1207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1207) = [≈Вульг. 3.32.6](mbh/3.32.html#v6) = ≈крит. 03,33.6a *bhavānimamindradyumnaṃ rājānamabhijānāti*
+[MBH. 4,76.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.76) = [≈Vulg. 4.3.17](mbh/4.3.html#v17) = ≈krit. 04,3.15c *utthānamabhijānanti sarvabhūtāni*
+[3,1207.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1207) = [≈Vulg. 3.32.6](mbh/3.32.html#v6) = ≈krit. 03,33.6a *bhavānimamindradyumnaṃ rājānamabhijānāti*
 [13339.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13339) *buddhvābhijānāmi — na mādṛśī tvāmabhibhāṣṭumarhati*
 [15603.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15603) *ahaṃ hi nābhijānāmi bhavedevaṃ na veti vā*
-[2821.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2821) = [≈Вульг. 3.72.14](mbh/3.72.html#v14) = ≈крит. 03,70.13a *kimetannābhijānīmaḥ*
+[2821.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2821) = [≈Vulg. 3.72.14](mbh/3.72.html#v14) = ≈krit. 03,70.13a *kimetannābhijānīmaḥ*
 [HARIV. 9618.](https://sanskrit-lexicon-scans.github.io/hariv?9618) *bhaktyā māmabhijānāti yāvānyaścāsmi tattvataḥ*
 [BHAG. 18,55.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,55) *iti māṃ yo 'bhijānāti*
 [4,14.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,14) *nābhijānāti māmebhyaḥ param*
 [7,13.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,13) *abhijñāya sudevaṃ tam* nachdem er in ihm Sudeva erkannt hatte
-[MBH. 3,2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) = [≈Вульг. 3.68.31](mbh/3.68.html#v31) = ≈крит. 03,65.29a *tatra no nābhijānīyurvasato manujāḥ kvacit*
-[17433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17433) = [≈Вульг. 3.314.15](mbh/3.314.html#v15) = ≈крит. 03,298.15a *nābhijajñe sa nṛpatirduhitrarthe samāgatam*
-[2875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2875) = [≈Вульг. 3.73.24](mbh/3.73.html#v24) = ≈крит. 03,71.22e *sa āgacchanneva svapatirityabhijñātaḥ*
+[MBH. 3,2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) = [≈Vulg. 3.68.31](mbh/3.68.html#v31) = ≈krit. 03,65.29a *tatra no nābhijānīyurvasato manujāḥ kvacit*
+[17433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17433) = [≈Vulg. 3.314.15](mbh/3.314.html#v15) = ≈krit. 03,298.15a *nābhijajñe sa nṛpatirduhitrarthe samāgatam*
+[2875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2875) = [≈Vulg. 3.73.24](mbh/3.73.html#v24) = ≈krit. 03,71.22e *sa āgacchanneva svapatirityabhijñātaḥ*
 [ŚUK. 45,4.] *iha tvāṃ nābhijānāti bālamevāpavāhitam* er weiss nicht, dass du hier bist,
 [HARIV. 9237.](https://sanskrit-lexicon-scans.github.io/hariv?9237) *ahaṃ tamabhijānāmi hṛtaṃ śyenena mūṣikam* ich weiss, dass er geraubt worden ist,
-[MBH. 1,8396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8396) = [≈Вульг. 1.228.16](mbh/1.228.html#v16) = ≈крит. 01,219.12c *atithiṃ samanuprāptamabhijānantu*
-[13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) = [≈Вульг. 13.19.67](mbh/13.19.html#v67) = ≈крит. 13,20.40a *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
+[MBH. 1,8396.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8396) = [≈Vulg. 1.228.16](mbh/1.228.html#v16) = ≈krit. 01,219.12c *atithiṃ samanuprāptamabhijānantu*
+[13,1447.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1447) = [≈Vulg. 13.19.67](mbh/13.19.html#v67) = ≈krit. 13,20.40a *sairiṃdhrīmabhijānīṣva — devarūpiṇīm*
 
-[3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) = [≈Вульг. 3.65.73](mbh/3.65.html#v73) = ≈крит. 03,62.42c [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) = [≈Вульг. 3.68.31](mbh/3.68.html#v31) = ≈крит. 03,65.29a [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) = [≈Вульг. 3.297.10](mbh/3.297.html#v10) = ≈крит. 03,281.10a *nābhijānāti me — śālvagataṃ manaḥ*
+[3,2604.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2604) = [≈Vulg. 3.65.73](mbh/3.65.html#v73) = ≈krit. 03,62.42c [2684.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2684) = [≈Vulg. 3.68.31](mbh/3.68.html#v31) = ≈krit. 03,65.29a [16757.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16757) = [≈Vulg. 3.297.10](mbh/3.297.html#v10) = ≈krit. 03,281.10a *nābhijānāti me — śālvagataṃ manaḥ*
 [BENF. Chr. 15,5.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?15) *ahamakṣeṣvabhijñātaḥ pṛthivyāmapi . hṛdayajñaḥ* bekannt als
-[MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) = [≈Вульг. 2.49.39](mbh/2.49.html#v39) = ≈крит. 02,44.18a *māmabhijānāsi — mithyāpralāpinam* halten für
-[1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337) = [≈Вульг. 1.80.6](mbh/1.80.html#v6) = ≈крит. 01,75.5c
+[MBH. 2,1763.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1763) = [≈Vulg. 2.49.39](mbh/2.49.html#v39) = ≈krit. 02,44.18a *māmabhijānāsi — mithyāpralāpinam* halten für
+[1,3337.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3337) = [≈Vulg. 1.80.6](mbh/1.80.html#v6) = ≈krit. 01,75.5c
 
 - **RU:** — *abhi*
  1) познавать, узнавать; замечать, воспринимать; знать, ведать: *nābhyajānannalam*
@@ -965,10 +965,10 @@ Sch. [VOP. 23,35.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,
   <sub>attested</sub>
 
 **2)** — 2) anerkennen, gutheissen, einräumen, zugeben: *yadannaṃ nābhijānāti yadbhojyaṃ nābhinandati tatsarvaṃ varjayāmyaham*
-[MBH. 13,5871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5871) = [≈Вульг. 13.123.14](mbh/13.123.html#v14) = ≈крит. 13,124.14c *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
+[MBH. 13,5871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5871) = [≈Vulg. 13.123.14](mbh/13.123.html#v14) = ≈krit. 13,124.14c *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
 [R. 4,30,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,12) *evamuktastu rājā sa tathyamityabhijajñavān*
-[MBH. 1,3420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3420) = [≈Вульг. 1.82.24](mbh/1.82.html#v24) = ≈крит. 01,77.24c *na putramabhijānāmi tvayi jātam* ich erkenne das von dir geborene Kind nicht als meinen Sohn an
-[3060.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3060) = [≈Вульг. 1.74.73](mbh/1.74.html#v73) = ≈крит. 01,68.72a
+[MBH. 1,3420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3420) = [≈Vulg. 1.82.24](mbh/1.82.html#v24) = ≈krit. 01,77.24c *na putramabhijānāmi tvayi jātam* ich erkenne das von dir geborene Kind nicht als meinen Sohn an
+[3060.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3060) = [≈Vulg. 1.74.73](mbh/1.74.html#v73) = ≈krit. 01,68.72a
 
 - **RU:** — 2) признавать, одобрять, допускать, соглашаться: *yadannaṃ nābhijānāti yadbhojyaṃ nābhinandati tatsarvaṃ varjayāmyaham*
 [MBH. 13,5871.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5871) = [≈Вульг. 13.123.14](mbh/13.123.html#v14) = ≈крит. 13,124.14c *śubhaṃ vā yadi vā pāpaṃ yena vākyamudīritam . satyamityabhijānāti sa loke puruṣottamaḥ ..*
@@ -1005,10 +1005,10 @@ Sch. *saṃbhaviṣyāva ekasyāmabhijānāsi mātari*
 [HARIV. 9992.](https://sanskrit-lexicon-scans.github.io/hariv?9992)
 [PRAB. 24,16.]
 [SADDH. P. 4,13,b.] med.
-[MBH. 5,7258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7258) = [≈Вульг. 5.183.11](mbh/5.183.html#v11) = ≈крит. 05,184.11c *˚jñāya*
-[1,5441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5441) = [≈Вульг. 1.136.22](mbh/1.136.html#v22) = ≈крит. 01,126.22a [MṚCCH. 134,4.] [HIT. 14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [KATHĀS. 5,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,107) [8,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,29) [10,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,176) *˚jñāyamānatva*
+[MBH. 5,7258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7258) = [≈Vulg. 5.183.11](mbh/5.183.html#v11) = ≈krit. 05,184.11c *˚jñāya*
+[1,5441.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5441) = [≈Vulg. 1.136.22](mbh/1.136.html#v22) = ≈krit. 01,126.22a [MṚCCH. 134,4.] [HIT. 14,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?14,21) [KATHĀS. 5,107.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,107) [8,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?8,29) [10,176.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,176) *˚jñāyamānatva*
 Sch. zu [KAP. 1,64.] *˚jñāta*
-[MBH. 5,4078.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4078) = [≈Вульг. 5.124.14](mbh/5.124.html#v14) = ≈крит. 05,122.11c [6079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6079) = [≈Вульг. 5.176.56](mbh/5.176.html#v56) = ≈крит. 05,175.27a
+[MBH. 5,4078.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4078) = [≈Vulg. 5.124.14](mbh/5.124.html#v14) = ≈krit. 05,122.11c [6079.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6079) = [≈Vulg. 5.176.56](mbh/5.176.html#v56) = ≈krit. 05,175.27a
 [ŚĀK. 107,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?107,2)
 [KATHĀS. 4,81.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,81) *˚jñātavān*
 [10,175.](https://sanskrit-lexicon-scans.github.io/kss/index.html?10,175)
@@ -1033,7 +1033,7 @@ Sch. zu [KAP. 1,64.] *˚jñāta*
 
 
 **1)** — *samabhi* erkennen: *indrasenāṃ saha bhrātrā samabhijñāya*
-[MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945) = [≈Вульг. 3.75.24](mbh/3.75.html#v24) = ≈крит. 03,73.23c
+[MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945) = [≈Vulg. 3.75.24](mbh/3.75.html#v24) = ≈krit. 03,73.23c
 
 - **RU:** — *samabhi* познавать, узнавать: *indrasenāṃ saha bhrātrā samabhijñāya*
 [MBH. 3,2945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2945) = [≈Вульг. 3.75.24](mbh/3.75.html#v24) = ≈крит. 03,73.23c
@@ -1046,23 +1046,23 @@ Sch. zu [KAP. 1,64.] *˚jñāta*
 
 **1)** — *ava* geringachten, verachten: *avajānanti* (Gegens. *bhajanti) māṃ mūḍhā mānuṣīṃ tanumāśritam*
 [BHAG. 9,11.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,11) *kaccittvāṃ nāvajānanti yājakāḥ patitaṃ yathā*
-[MBH. 2,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.179) = [≈Вульг. 2.5.45](mbh/2.5.html#v45) = ≈крит. 02,5.35a [3,8853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8853)
+[MBH. 2,179.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.179) = [≈Vulg. 2.5.45](mbh/2.5.html#v45) = ≈krit. 02,5.35a [3,8853.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8853)
 [HARIV. 7095.](https://sanskrit-lexicon-scans.github.io/hariv?7095)
 [RAGH. 1,77.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,77)
 [BHĀG. P. 4,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,24) *˚jñāya*
-[MBH. 3,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1037) = [≈Вульг. 3.28.9](mbh/3.28.html#v9) = ≈крит. 03,29.9a
+[MBH. 3,1037.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1037) = [≈Vulg. 3.28.9](mbh/3.28.html#v9) = ≈krit. 03,29.9a
 [R. 1,14,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,14,22) [3,42,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,42,38)
 [HIT. II,94.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,94) *˚jñātum*
 [PAÑCAT. I,110.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,110) *putro 'pyavajñāyate*
 [III,195.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?3,195) *tayāvajajñe*
 [BHAṬṬ. 3,8.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?3,8) *avajānāsi me tejaḥ*
 [R. 1,76,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,76,3) *avajñāyaiva tāṃ vācam*
-[MBH. 3,17273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17273) = [≈Вульг. 3.312.33](mbh/3.312.html#v33) = ≈крит. 03,296.32a *avajñāta*
+[MBH. 3,17273.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.17273) = [≈Vulg. 3.312.33](mbh/3.312.html#v33) = ≈krit. 03,296.32a *avajñāta*
 [AK. 3,2,56.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,56)
 [H. 1479.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1479)
 [BHĀG. P. 1,14,39.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,14,39) [18,28.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,18,28) *avajñātā bhaviṣyāmi bāndhavānām*
-[MBH. 5,6033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6033) = [≈Вульг. 5.176.10](mbh/5.176.html#v10) = ≈крит. 05,174.9c [13,3869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3869) = [≈Вульг. 13.82.19](mbh/13.82.html#v19) = ≈крит. 13,81.18a *avajñātā ca lokeṣu*
-[1,6161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6161) = [≈Вульг. 1.157.4](mbh/1.157.html#v4) = ≈крит. 01,145.4c *yaddānamapattrebhyaśca dīyate . asatkṛtamavajñātaṃ tattāmasamudāhṛtam* eine Gabe, bei der man eine Geringachtung an den Tag legt,
+[MBH. 5,6033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6033) = [≈Vulg. 5.176.10](mbh/5.176.html#v10) = ≈krit. 05,174.9c [13,3869.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3869) = [≈Vulg. 13.82.19](mbh/13.82.html#v19) = ≈krit. 13,81.18a *avajñātā ca lokeṣu*
+[1,6161.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6161) = [≈Vulg. 1.157.4](mbh/1.157.html#v4) = ≈krit. 01,145.4c *yaddānamapattrebhyaśca dīyate . asatkṛtamavajñātaṃ tattāmasamudāhṛtam* eine Gabe, bei der man eine Geringachtung an den Tag legt,
 [BHAG. 17,22.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?17,22)
 
 - **RU:** — *ava* пренебрегать, презирать: *avajānanti* (противоп. *bhajanti) māṃ mūḍhā mānuṣīṃ tanumāśritam*
@@ -1106,13 +1106,13 @@ Sch. zu [KAP. 1,64.] *˚jñāta*
 [AV. 6,119,3.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.119.html#av06.119.03) *grāmyāṇāṃ paśūnāṃ vāca ājānāti* versteht
 [PAÑCAV. BR. 10,2.] — *tadājñāya patīnāmanapekṣatām*
 [BHĀG. P. 1,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,15,50) *taṃ viṣīdantamājñāya rākṣasam* bemerken, dass
-[MBH. 3,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.448) = [≈Вульг. 3.11.63](mbh/3.11.html#v63) = ≈крит. 03,12.63a
+[MBH. 3,448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.448) = [≈Vulg. 3.11.63](mbh/3.11.html#v63) = ≈krit. 03,12.63a
 [R. 2,69,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,3) [78,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,13) *kalimāgatamājñāya*
 [BHĀG. P. 1,1,21.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,1,21) erfahren, vernehmen, hören
 [BHĀG. P. 9,8,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,8,4) *śakrasya matamājñāya*
 [INDR. 3,1.] *tasya svaramājñāya*
 [R. 3,64,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,64,3) *bhrāturvacanamājñāya*
-[MBH. 1,5940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5940) = [≈Вульг. 1.151.10](mbh/1.151.html#v10) = крит. — [3,1431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1431) = [≈Вульг. 3.36.21](mbh/3.36.html#v21) = ≈крит. 03,37.19a
+[MBH. 1,5940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5940) = [≈Vulg. 1.151.10](mbh/1.151.html#v10) = krit. — [3,1431.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1431) = [≈Vulg. 3.36.21](mbh/3.36.html#v21) = ≈krit. 03,37.19a
 [R. 1,9,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,61) [2,78,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,78,10) *śāsanamājñāya bhrātuḥ*
 [32,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,32,1) [34,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,34,12) *na jagāma tayokto 'pi bhrāturājñāya śāsanam* nachdem er den Befehl des Bruders vernommen, indem er sich nach dem
 
@@ -1155,22 +1155,22 @@ Befehl des Bruders richtete
 [HIT. 92,1.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?92,1)
 [ŚĀK. 61,14](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14), v. l.
 [DAŚAK.] in [BENF. Chr. 188,8.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?188) *yathājñāpayase*
-[MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) = [≈Вульг. 2.78.8](mbh/2.78.html#v8) = крит. — *kimājñāpayanti*
+[MBH. 2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) = [≈Vulg. 2.78.8](mbh/2.78.html#v8) = krit. — *kimājñāpayanti*
 [ŚĀK. 28,12.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?28,12) *yadājñāpayati bhagavān*
 [112,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?112,17) [7,22.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?7,22) [61,14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?61,14) [HIT. 98,21.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?98,21) [R. 2,52,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,23) [3,18,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,18,11) *yogamājñāpayaṃ tatra janasya*
 [HARIV. 9704.](https://sanskrit-lexicon-scans.github.io/hariv?9704) *yātrām*
 [R. 2,82,21.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,21) *ghoṣaṇām*
 [PAÑCAT. 261,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?261,8) *sadṛśaṃ kulasaṃbandhaṃ yadājñāpayathaḥ svayam*
 [R. 1,72,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,72,10) *kimājñāpayase*
-[MBH. 3,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1836) = [≈Вульг. 3.46.19](mbh/3.46.html#v19) = крит. — *ājñāpayadhvamiṣṭāni*
-[15025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15025) = [≈Вульг. 3.246.17](mbh/3.246.html#v17) = ≈крит. 03,235.16a *ājñāptum*
+[MBH. 3,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1836) = [≈Vulg. 3.46.19](mbh/3.46.html#v19) = krit. — *ājñāpayadhvamiṣṭāni*
+[15025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15025) = [≈Vulg. 3.246.17](mbh/3.246.html#v17) = ≈krit. 03,235.16a *ājñāptum*
 [R. 4,40,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,8) *sarvamājñāpyatāmāśu*
-[MBH. 13,1430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1430) = [≈Вульг. 13.19.50](mbh/13.19.html#v50) = ≈крит. 13,20.25a *taṃ ha ciraṃ vasetyājñāpayāṃ cakāra*
+[MBH. 13,1430.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1430) = [≈Vulg. 13.19.50](mbh/13.19.html#v50) = ≈krit. 13,20.25a *taṃ ha ciraṃ vasetyājñāpayāṃ cakāra*
 [CHĀND. UP. 5,3,7.] *ājñāpayatu māṃ guruḥ*
-[MBH. 1,5265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5265) = [≈Вульг. 1.132.14](mbh/1.132.html#v14) = ≈крит. 01,123.43a [2,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1008) = [≈Вульг. 2.26.15](mbh/2.26.html#v15) = ≈крит. 02,23.24c
+[MBH. 1,5265.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5265) = [≈Vulg. 1.132.14](mbh/1.132.html#v14) = ≈krit. 01,123.43a [2,1008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1008) = [≈Vulg. 2.26.15](mbh/2.26.html#v15) = ≈krit. 02,23.24c
 [R. 1,66,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,66,3) [4,24,19.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,19) *senām*
-[MBH. 1,7652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7652) = [≈Вульг. 1.207.42](mbh/1.207.html#v42) = ≈крит. 01,199.41a *sphītaṃ rāṣṭram — nityamājñāpayanbhāsi divi deveśvaro yathā*
-[2,1800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1800) = [≈Вульг. 2.50.16](mbh/2.50.html#v16) = ≈крит. 02,46.16c *hṛṣṭamājñāpayasva ca*
+[MBH. 1,7652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7652) = [≈Vulg. 1.207.42](mbh/1.207.html#v42) = ≈krit. 01,199.41a *sphītaṃ rāṣṭram — nityamājñāpayanbhāsi divi deveśvaro yathā*
+[2,1800.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1800) = [≈Vulg. 2.50.16](mbh/2.50.html#v16) = ≈krit. 02,46.16c *hṛṣṭamājñāpayasva ca*
 [R. 5,22,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,22,24) *ājñāpayitum*
 [4,19,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,19,23) [40,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,40,7) *ājñāpita*
 [R. 2,82,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,30)
@@ -1181,10 +1181,10 @@ Befehl des Bruders richtete
 [ŚĀK. 50,7.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?50,7)
 [DEV. 6,5.] *pitṝnājñāpayiṣyanti putrāḥ karmaṇi*
 [HARIV. 11195.](https://sanskrit-lexicon-scans.github.io/hariv?11195) *tathā tathā vidhānāya svayamājñāpayasva mām*
-[MBH. 1,5316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5316) = [≈Вульг. 1.132.65](mbh/1.132.html#v65) = ≈крит. 01,123.43c *ājñāpaya māṃ svagṛhāya* heisse mich nach Hause gehen
+[MBH. 1,5316.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5316) = [≈Vulg. 1.132.65](mbh/1.132.html#v65) = ≈krit. 01,123.43c *ājñāpaya māṃ svagṛhāya* heisse mich nach Hause gehen
 [PAÑCAT. 242,24.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?242,24) *māṃ dṛṣṭvā badhāyājñāpayiṣyati* er wird den Befehl ertheilen mich zu tödten
 [R. 5,1,79.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,1,79) *ājñāpitaṃ māmaśane*
-[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Вульг. 1.162.13](mbh/1.162.html#v13) = ≈крит. 01,150.13a
+[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Vulg. 1.162.13](mbh/1.162.html#v13) = ≈krit. 01,150.13a
 
 - **RU:** 1) приказывать, повелевать, распоряжаться чем-либо, наставлять кого-либо (acc.), обращать к кому-либо приказание: *bhakṣyatāmiti suvyaktaṃ prabhurājñāpayiṣyati*
 [R. 5,25,48.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,25,48) [4,24,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,24,24) *anyathā na tu yaṣṭavyaṃ vayamājñāpayāmahe*
@@ -1252,12 +1252,12 @@ Befehl des Bruders richtete
 
 
 **1)** — *samā* erkennen, kennen lernen, bemerken: *abhiprāyaṃ samājñāya*
-[MBH. 4,1736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1736) = [≈Вульг. 4.55.40](mbh/4.55.html#v40) = ≈крит. 04,50.3a *bhāvacchandaṃ samājñāya*
-[13,1422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1422) = [≈Вульг. 13.19.42](mbh/13.19.html#v42) = ≈крит. 13,20.17a *mṛtasaṃjīvanī vidyā mayā samājñātā*
+[MBH. 4,1736.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1736) = [≈Vulg. 4.55.40](mbh/4.55.html#v40) = ≈krit. 04,50.3a *bhāvacchandaṃ samājñāya*
+[13,1422.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1422) = [≈Vulg. 13.19.42](mbh/13.19.html#v42) = ≈krit. 13,20.17a *mṛtasaṃjīvanī vidyā mayā samājñātā*
 [VET. 18,13. 12.] *te samājñāya saṃprāptaṃ yajñiyaṃ turagottamam*
 [MBH. 14,2142.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2142) *mahārathaḥ samājñātaḥ* bekannt als grosser Held
-[3,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.680) = [≈Вульг. 3.16.22](mbh/3.16.html#v22) = ≈крит. 03,17.22a *samājñātānṛddhimataḥ pratirūpānvaśe sthitān*
-[13,2214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2214) = [≈Вульг. 13.38.13](mbh/13.38.html#v13) = ≈крит. 13,38.13a *mahārathasamājñāta* (vgl. gaṇa *kṛtādi* zu [P. 2,1,59](https://ashtadhyayi.com/sutraani/2/1/59)
+[3,680.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.680) = [≈Vulg. 3.16.22](mbh/3.16.html#v22) = ≈krit. 03,17.22a *samājñātānṛddhimataḥ pratirūpānvaśe sthitān*
+[13,2214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2214) = [≈Vulg. 13.38.13](mbh/13.38.html#v13) = ≈krit. 13,38.13a *mahārathasamājñāta* (vgl. gaṇa *kṛtādi* zu [P. 2,1,59](https://ashtadhyayi.com/sutraani/2/1/59)
 ) als grosser Held bekannt
 [14,2141.](https://ashtadhyayi.com/sutraani/2/14/2141) *bāhuyuddham — kriyābalasamājñātam* bei dem Gewandtheit und Kraft erkannt werden
 [HARIV. 4697.](https://sanskrit-lexicon-scans.github.io/hariv?4697)
@@ -1280,7 +1280,7 @@ Befehl des Bruders richtete
 [23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,82,23) *badhe tasya samājñapte rāvaṇena*
 [5,48,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,48,1) *saṃmārjanopalepanamaṇḍanādikaṃ karma samājñāpayati*
 [PAÑCAT. 116,21.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?116,21) *vivāham — samājñāpayata*
-[MBH. 5,6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6072) = [≈Вульг. 5.176.49](mbh/5.176.html#v49) = ≈крит. 05,175.20c *tvām — samājñāpayati*
+[MBH. 5,6072.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6072) = [≈Vulg. 5.176.49](mbh/5.176.html#v49) = ≈krit. 05,175.20c *tvām — samājñāpayati*
 [HIT. 93,5.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?93,5) *māṃ samājñāpayasva ca*
 [R. 6,21,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,21,37) *tataḥ samājñāpayadāśu sarvānānāyinastadvicaye*
 [RAGH. 16,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?16,75) *kaṃsenāpi samājñaptaścāṇūraḥ pūrvameva tu . yoddhavyaṃ saha kṛṣṇena tvayā yatnavateti vai ..*
@@ -1343,7 +1343,7 @@ Sch.
 **1)** — *samupa* ersinnen, ausfindig machen: *svayaṃ samupajānanhi paurajānapadārcanam *
 
 * . sa sukhaṃ prekṣate rājā*
-[MBH. 12,5241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5241) = [≈Вульг. 12.140.48](mbh/12.140.html#v48) = ≈крит. 05,178.24a
+[MBH. 12,5241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5241) = [≈Vulg. 12.140.48](mbh/12.140.html#v48) = ≈krit. 05,178.24a
 
 - **RU:** — *samupa* измышлять, изобретать: *svayaṃ samupajānanhi paurajānapadārcanam *
 
@@ -1407,8 +1407,8 @@ Sch.
 [21,11.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?21,11) [33,14.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?33,14) *nipuṇataraṃ parijñāya*
 [115,16.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?115,16) *anubandhaṃ parijñāya deśakālau ca tattvataḥ*
 [M. 8,126.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,126) *tattu sarvam — dharmarājena — āptairāśu parijñātaṃ bhāradvājacikīrṣitam*
-[MBH. 7,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.467) = [≈Вульг. 7.13.8](mbh/7.13.html#v8) = ≈крит. 07,12.7c *paryajānanna caiva te*
-[3,10334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10334) = [≈Вульг. 3.120.12](mbh/3.120.html#v12) = ≈крит. 03,120.12a [R. 5,56,134.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,134) [HIT. I,51.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,51) [II,85.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,85) [20,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,13) [KATHĀS. 4,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,73) [VET. 9,10.] *āvāmihāgatau — parijñātuṃ balaṃ kṛtsnaṃ tavedam*
+[MBH. 7,467.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.467) = [≈Vulg. 7.13.8](mbh/7.13.html#v8) = ≈krit. 07,12.7c *paryajānanna caiva te*
+[3,10334.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10334) = [≈Vulg. 3.120.12](mbh/3.120.html#v12) = ≈krit. 03,120.12a [R. 5,56,134.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,56,134) [HIT. I,51.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,51) [II,85.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?2,85) [20,13.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,13) [KATHĀS. 4,73.](https://sanskrit-lexicon-scans.github.io/kss/index.html?4,73) [VET. 9,10.] *āvāmihāgatau — parijñātuṃ balaṃ kṛtsnaṃ tavedam*
 [R. 6,1,24.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,1,24) *devairapi na śakyastvaṃ parijñātuṃ kuto mayā*
 [MBH. 3,6099.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.6099) *tvaṃ mayā parijñātaḥ*
 [PAÑCAT. 99,8.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?99,8) *parijñātastvaṃ mayā samyaṅna suhṛt*
@@ -1417,8 +1417,8 @@ Sch.
 [HIT. 29,17.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?29,17) *parijñāyate katareṇa digvibhāgena gataḥ sa jālmaḥ* weiss man genau?
 [VIKR. 5,14.](https://sanskrit-lexicon-scans.github.io/vikramor/app2?5,14) *parijñāta* bekannt: *parijñātasya karmabhiḥ*
 [R. 4,42,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,42,10) *madhyadeśa˚*
-[MBH. 12,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6310) = [≈Вульг. 12.171.18](mbh/12.171.html#v18) = ≈крит. 12,165.15c *parijñātānvanaspatīn*
-[13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) = [≈Вульг. 13.104.25](mbh/13.104.html#v25) = ≈крит. 13,107.49c (vgl. [M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39), wo st. dessen *prajñāta)*.* svena nāmnā parijñātam*
+[MBH. 12,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6310) = [≈Vulg. 12.171.18](mbh/12.171.html#v18) = ≈krit. 12,165.15c *parijñātānvanaspatīn*
+[13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) = [≈Vulg. 13.104.25](mbh/13.104.html#v25) = ≈krit. 13,107.49c (vgl. [M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39), wo st. dessen *prajñāta)*.* svena nāmnā parijñātam*
 [HARIV. 2821.](https://sanskrit-lexicon-scans.github.io/hariv?2821)
 
 - **RU:** — *pari* замечать, распознавать, узнавать, выяснять, удостоверяться, точно знать: *indro dakṣaṃ pari jānādaḥīnām*
@@ -1468,7 +1468,7 @@ Sch.
 [ŚAT. BR. 3,2,3,1. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,2,3,1) *vācā hi mugdhaṃ prajñāyate 'thātra prajñāte yathāpūrvaṃ karoti* denn mittelst der Rede kann man sich im Unklaren zurechtfinden, und hat man sich zurechtgefunden (d. h. kennt man die Ordnung), so vollzieht man die Handlungen nach der Reihe
 [4,5,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,5,1,3) [6,7,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,8) [11,5,5,4. fgg.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,5,4) *svargyamagniṃ naciketaḥ prajānan*
 [KAṬHOP. 1,14.] *jyeṣṭhaścenna prajānāti kanīyānkiṃ kariṣyati*
-[MBH. 1,8407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8407) = [≈Вульг. 1.228.27](mbh/1.228.html#v27) = ≈крит. 01,218.3a partic. praes.: *prajānatīva na diśo mināti*
+[MBH. 1,8407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8407) = [≈Vulg. 1.228.27](mbh/1.228.html#v27) = ≈krit. 01,218.3a partic. praes.: *prajānatīva na diśo mināti*
 [ṚV. 1,124,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.124.html#rv01.124.03) *pura etu prajānan*
 [10,17,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.017.html#rv10.017.06) *devebhyo havyaṃ vahatu prajānan*
 [16,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.016.html#rv10.016.09) [AV. 2,26,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av02.026.html#av02.026.02) *imāṃ śālāṃ bṛhaspatirni minotu prajānan*
@@ -1478,10 +1478,10 @@ Sch.
 [R. 2,72,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,72,14) *prajñā = prajānatī*
 [H. 522.](https://sanskrit-lexicon-scans.github.io/abch2/app1?522) unterscheiden, erkennen: *yayā dharmamadharmaṃ ca kāryaṃ cākāryameva ca . ayathāvatprajānāti buddhiḥ sā pārtha rājasī ..*
 [BHAG. 18,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,31) *vācyāvācye hi kupito na prajānāti karhicit*
-[MBH. 3,1069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1069) = [≈Вульг. 3.29.41](mbh/3.29.html#v41) = ≈крит. 03,30.40a *tataḥ sa tamasāviṣṭo na sma *
+[MBH. 3,1069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1069) = [≈Vulg. 3.29.41](mbh/3.29.html#v41) = ≈krit. 03,30.40a *tataḥ sa tamasāviṣṭo na sma *
 
 * kiṃcitprajajñivān*
-[4,1948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1948) = [≈Вульг. 4.60.26](mbh/4.60.html#v26) = ≈крит. 04,55.24c *garjitena ca daityānāṃ na prājñāyata kiṃ ca na*
+[4,1948.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1948) = [≈Vulg. 4.60.26](mbh/4.60.html#v26) = ≈krit. 04,55.24c *garjitena ca daityānāṃ na prājñāyata kiṃ ca na*
 [ARJ. 8,6.]
 
 - **RU:** — *pra* распознавать, понимать: особ. распознавать путь, или направление, или также способ действия; уметь найти что-либо, ориентироваться, быть осведомленным, разбираться: *pra nīcīragne aruṣīrajānan*
@@ -1512,16 +1512,16 @@ Sch.
 [ARJ. 8,6.]
   <sub>attested</sub>
 
-**main-verb-2-gewahr)** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) = [≈Вульг. 3.95.22](mbh/3.95.html#v22) = ≈крит. 03,93.21a gewahr werden: *na ca kiṃcitprajajñivān*
+**main-verb-2-gewahr)** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) = [≈Vulg. 3.95.22](mbh/3.95.html#v22) = ≈krit. 03,93.21a gewahr werden: *na ca kiṃcitprajajñivān*
 
 - **RU:** [MBH. 3,8532.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8532) = [≈Вульг. 3.95.22](mbh/3.95.html#v22) = ≈крит. 03,93.21a замечать, обнаруживать: *na ca kiṃcitprajajñivān*
   <sub>attested</sub>
 
-**main-verb-3-wissen-von)** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) = [≈Вульг. 3.217.10](mbh/3.217.html#v10) = ≈крит. 03,207.10a wissen von, erfahren von: *na hi prajānāmi tava pravṛttim*
+**main-verb-3-wissen-von)** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) = [≈Vulg. 3.217.10](mbh/3.217.html#v10) = ≈krit. 03,207.10a wissen von, erfahren von: *na hi prajānāmi tava pravṛttim*
 [BHAG. 11,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,31) *nānyaṃ prajñāsyate kaṃcinmānavaṃ pitṛvarjitam*
 [R. 1,8,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,8) *na prājñāyanta pāṇḍavāḥ* man hat nichts von den
 P. erfahren, man weiss nichts von ihnen
-[MBH. 4,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.87) = [≈Вульг. 4.4.5](mbh/4.4.html#v5) = ≈крит. 04,4.5a *damayantyā gataḥ sārdhaṃ na prājñāyata karhicit* (v. l. *kasyacit*)
+[MBH. 4,87.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.87) = [≈Vulg. 4.4.5](mbh/4.4.html#v5) = ≈krit. 04,4.5a *damayantyā gataḥ sārdhaṃ na prājñāyata karhicit* (v. l. *kasyacit*)
 [N. 17,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,3) *na ca striyaṃ prajānāti kaścidaprāptayauvanaḥ* weiss nichts von einem Weibe, tritt in kein näheres Verhältniss zu ihr
 
 - **RU:** [14109.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.14109) = [≈Вульг. 3.217.10](mbh/3.217.html#v10) = ≈крит. 03,207.10a знать о чем-либо, узнавать о чем-либо: *na hi prajānāmi tava pravṛttim*
@@ -1532,7 +1532,7 @@ P. не узнали ничего о них, ничего о них не зна�
 [N. 17,3.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,3) *na ca striyaṃ prajānāti kaścidaprāptayauvanaḥ* ничего не знает о женщине, не вступает с ней в более близкие отношения
   <sub>attested</sub>
 
-**main-verb-4-ausfindig)** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) = [≈Вульг. 1.64.38](mbh/1.64.html#v38) = ≈крит. 01,58.36c ausfindig machen: *āyatanaṃ naḥ prajānīhi*
+**main-verb-4-ausfindig)** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) = [≈Vulg. 1.64.38](mbh/1.64.html#v38) = ≈krit. 01,58.36c ausfindig machen: *āyatanaṃ naḥ prajānīhi*
 
 - **RU:** [MBH. 1,2471.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2471) = [≈Вульг. 1.64.38](mbh/1.64.html#v38) = ≈крит. 01,58.36c разыскивать, обнаруживать: *āyatanaṃ naḥ prajānīhi*
   <sub>attested</sub>
@@ -1540,7 +1540,7 @@ P. не узнали ничего о них, ничего о них не зна�
 **main-verb-5-ppp)** [AIT. UP. 2,1.] — *prajñāta* unterschieden, deutlich zu erkennen: *āsīdidaṃ tamobhatūmaprajñātamalakṣaṇam*
 [M. 1,5.](https://sanskrit-lexicon-scans.github.io/manu/index.html?1,5) bekannt (
 [H. 1493](https://sanskrit-lexicon-scans.github.io/abch2/app1?1493)), anerkannt; kenntlich, deutlich; gewöhnlich: *pradakṣiṇāni kurvīta prajñātāṃśca vanaspatīn*
-[M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39) (vgl. [MBH. 13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) = [≈Вульг. 13.104.25](mbh/13.104.html#v25) = ≈крит. 13,107.49c, wo st. dessen *parijñāta)*.* anuṣṭubhaḥ* (im Gegens. zu künstlich erzeugtem Metrum)
+[M. 4,39](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,39) (vgl. [MBH. 13,4979](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4979) = [≈Vulg. 13.104.25](mbh/13.104.html#v25) = ≈krit. 13,107.49c, wo st. dessen *parijñāta)*.* anuṣṭubhaḥ* (im Gegens. zu künstlich erzeugtem Metrum)
 [AIT. BR. 4,4.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?4,4) *etaddha nveva prajñātaṃ kaurupañcālaṃ yaccaturavattam*
 [ŚAT. BR. 1,7,2,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,7,2,8)
 [KĀTY. ŚR. 22,11,26.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,11,26)
@@ -1633,9 +1633,9 @@ P. не узнали ничего о них, ничего о них не зна�
 
 
 **main)** — *saṃpra* unterscheiden, erkennen, genau kennen: *na diśaḥ saṃprajānāmi nākāśaṃ na ca medinīm*
-[MBH. 12,1872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1872) = [≈Вульг. 12.52.25](mbh/12.52.html#v25) = ≈крит. 12,52.25a
+[MBH. 12,1872.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.1872) = [≈Vulg. 12.52.25](mbh/12.52.html#v25) = ≈krit. 12,52.25a
 [HARIV. 13555.](https://sanskrit-lexicon-scans.github.io/hariv?13555) *bahūni yajñarūpāṇi nānākarmaphalāni ca .. tāni yaḥ saṃprajānāti*
-[MBH. 12,2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2319) = [≈Вульг. 12.60.52](mbh/12.60.html#v52) = ≈крит. 12,60.50a *vitarkavicārānandāsmitānugamātsaṃprajñātaḥ (samādhiḥ)*
+[MBH. 12,2319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2319) = [≈Vulg. 12.60.52](mbh/12.60.html#v52) = ≈krit. 12,60.50a *vitarkavicārānandāsmitānugamātsaṃprajñātaḥ (samādhiḥ)*
 [YOGAS. 1,17.]
 
 - **RU:** — *saṃpra* различать, распознавать, точно знать: *na diśaḥ saṃprajānāmi nākāśaṃ na ca medinīm*
@@ -1657,7 +1657,7 @@ P. не узнали ничего о них, ничего о них не зна�
 [AV. 18,4,51.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.51) [52.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av18.004.html#av18.004.52) *vācam*
 [19,4,4.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av19.004.html#av19.004.04) *ādhānāpratijñāta* dessen Feueranlegung nicht genehmigt d. h. ohne Erfolg geblieben ist (andere Erkll. in den Scholien)
 [KĀTY. ŚR. 4,11,1.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?4,11,1) *kaccinna pāne dyūte vā krīḍāsu pramadāsu ca . pratijānanti pūrvāhṇe vyayaṃ vyasanajaṃ tava ..*
-[MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) = [≈Вульг. 2.5.69](mbh/2.5.html#v69) = ≈крит. 02,5.59a *ṛṇe deye pratijñāte* wenn die Schuld anerkannt worden ist (Gegens. *apahnava*)
+[MBH. 2,203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.203) = [≈Vulg. 2.5.69](mbh/2.5.html#v69) = ≈krit. 02,5.59a *ṛṇe deye pratijñāte* wenn die Schuld anerkannt worden ist (Gegens. *apahnava*)
 [M. 8,139.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,139) *śataṃ pratijānīte*
 [P. 1,3,46](https://ashtadhyayi.com/sutraani/1/3/46), Sch.
 *pratijñāta* angenehm, erwünscht: *pratijñāto ma eṣa varaḥ*
@@ -1680,28 +1680,28 @@ P. не узнали ничего о них, ничего о них не зна�
   <sub>attested</sub>
 
 **2)** — 2) zusagen, versprechen: *pratijajñe badhaṃ cāpi sarvakṣatrasya*
-[MBH. 3,10201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10201) = [≈Вульг. 3.115.16](mbh/3.115.html#v16) = крит. —
+[MBH. 3,10201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10201) = [≈Vulg. 3.115.16](mbh/3.115.html#v16) = krit. —
 [HARIV. 6825.](https://sanskrit-lexicon-scans.github.io/hariv?6825)
 [BHAṬṬ. 14,64.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?14,64) *kāryam*
 [MBH. 5,6021.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.6021) *pratijñāya vanavāsamimaṃ guroḥ*
 [R. 2,109,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,24) [3,19,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,19,17) [4,30,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,30,13) *tasmai niśācaraiśvaryaṃ pratijajñe*
 [RAGH. ed. Calc. 12,69.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?12,69) *pratijānāmi te vākyam*
-[MBH. 3,2780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2780) = [≈Вульг. 3.71.9](mbh/3.71.html#v9) = ≈крит. 03,69.8a *pratijajñe ca bhūpena tatastatsvāminigrahaḥ*
+[MBH. 3,2780.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2780) = [≈Vulg. 3.71.9](mbh/3.71.html#v9) = ≈krit. 03,69.8a *pratijajñe ca bhūpena tatastatsvāminigrahaḥ*
 [RĀJA-TAR. 4,281.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,281) *pratijñāto hi bhavatā duḥkhapratiśamo mama*
-[MBH. 5,7485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7485) = [≈Вульг. 5.191.29](mbh/5.191.html#v29) = ≈крит. 05,192.29c [7,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2648) = [≈Вульг. 7.75.1](mbh/7.75.html#v1) = ≈крит. 07,53.1a
+[MBH. 5,7485.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7485) = [≈Vulg. 5.191.29](mbh/5.191.html#v29) = ≈krit. 05,192.29c [7,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2648) = [≈Vulg. 7.75.1](mbh/7.75.html#v1) = ≈krit. 07,53.1a
 [R. 1,60,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,60,26) [3,13,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,13,8)
 
 *sthirā mayā pratijñātā pratijñā*
 [2,109,25.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,109,25) *pratijñātaṃ ca rāmeṇa tadā bālibadhaṃ prati*
 [1,1,61.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,1,61) *pratijajñe ca rājyāya* er sagte ihm die Herrschaft zu
-[MBH. 1,7234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7234) = [≈Вульг. 1.192.11](mbh/1.192.html#v11) = ≈крит. 01,184.11a *pratijānīṣva taṃ kartum*
+[MBH. 1,7234.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7234) = [≈Vulg. 1.192.11](mbh/1.192.html#v11) = ≈krit. 01,184.11a *pratijānīṣva taṃ kartum*
 [ARJ. 5,8.] *arjunaḥ pratijānīte — karṇam — hantāsmi*
-[MBH. 2,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2546) = [≈Вульг. 2.77.33](mbh/2.77.html#v33) = ≈крит. 02,68.33a
+[MBH. 2,2546.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2546) = [≈Vulg. 2.77.33](mbh/2.77.html#v33) = ≈krit. 02,68.33a
 [HARIV. 7244.](https://sanskrit-lexicon-scans.github.io/hariv?7244) *pratyajñāsta*
 [BHAṬṬ. 8,26.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,26) *pratijñātaṃ hi nastathā*
-[MBH. 4,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.153) = [≈Вульг. 4.5.12](mbh/4.5.html#v12) = ≈крит. 04,5.11c *yadanyasya pratijñāya punaranyasya dīyate (kanyā)*
+[MBH. 4,153.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.153) = [≈Vulg. 4.5.12](mbh/4.5.html#v12) = ≈krit. 04,5.11c *yadanyasya pratijñāya punaranyasya dīyate (kanyā)*
 [M. 9,99.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,99) *evaṃ me pratijānīhi*
-[MBH. 4,706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.706) = [≈Вульг. 4.22.13](mbh/4.22.html#v13) = ≈крит. 04,21.13c
+[MBH. 4,706.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.706) = [≈Vulg. 4.22.13](mbh/4.22.html#v13) = ≈krit. 04,21.13c
 [R. 1,21,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,21,14) [38,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,38,12) [2,23,29.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,23,29) *pratijānāmi te vīra satyenāyudhamālabhe . yathā rāmaṃ raṇe pāpaṃ pātayiṣyāmi*
 [3,33,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,3) [26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,33,26) *tebhyaḥ pratijñāya nalaḥ kariṣya iti*
 [MBH. 3,2135.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2135) *sahasrākṣe pratijñāya*
@@ -1709,7 +1709,7 @@ P. не узнали ничего о них, ничего о них не зна�
 [65,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,13) *māmevaiṣyasisatyaṃ te pratijāne* ich sage es dir zu, verspreche es dir
 [BHAG. 18,65.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,65) *pratijānāmi te satyaṃ na jīvanpratiyāsyati*
 [R. 6,12,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,12,13) *satyaṃ me pratijānīhi*
-[MBH. 5,7491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7491) = [≈Вульг. 5.192.4](mbh/5.192.html#v4) = ≈крит. 05,193.3c *pratijñāta = aṅgīkṛta*
+[MBH. 5,7491.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7491) = [≈Vulg. 5.192.4](mbh/5.192.html#v4) = ≈krit. 05,193.3c *pratijñāta = aṅgīkṛta*
 u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,58) [H. 1488.](https://sanskrit-lexicon-scans.github.io/abch2/app1?1488)
 
 - **RU:** — 2) обещать, давать обет: *pratijajñe badhaṃ cāpi sarvakṣatrasya*
@@ -1752,12 +1752,12 @@ u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
 [CHĀND. UP. 4,1,8.] *ko nu tvānuśaśāsetyanye manuṣyebhya iti ha pratijajñe*
 [9,2.] *kiṃ pibasīti pṛṣṭvā puṃsavanaṃ puṃsavanamiti triḥ pratijānīyāt*
 [ĀŚV. GṚHY. 1,13.] *tatheti pratijñāya* an einigen Stellen bestätigen, an andern zusagen, sich einverstanden erklären
-[MBH. 1,7700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7700) = [≈Вульг. 1.209.14](mbh/1.209.html#v14) = ≈крит. 01,201.13a
+[MBH. 1,7700.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7700) = [≈Vulg. 1.209.14](mbh/1.209.html#v14) = ≈krit. 01,201.13a
 [HARIV. 15294.](https://sanskrit-lexicon-scans.github.io/hariv?15294) [15532.](https://sanskrit-lexicon-scans.github.io/hariv?15532)
 [R. 2,90,9.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,90,9) [112,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,26)
 [PAÑCAT. 54,25.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?54,25) [226,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?226,7) *tatheti pratijñāya sāvitryā vacanam*
 [SĀV. 1,16.] *anāmayaṃ pratijāne tavāham* ich bestätige dir mein Wohlsein so. v. a. ja, ich bin wohl
-[MBH. 5,690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.690) = [≈Вульг. 5.23.6](mbh/5.23.html#v6) = ≈крит. 05,23.6c *tata ekena vṛddhaśṛgālena pratijñātam mayā — etanmaraṇaṃ kartavyam*
+[MBH. 5,690.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.690) = [≈Vulg. 5.23.6](mbh/5.23.html#v6) = ≈krit. 05,23.6c *tata ekena vṛddhaśṛgālena pratijñātam mayā — etanmaraṇaṃ kartavyam*
 [HIT. 40,19.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?40,19)
 
 - **RU:** — 3) подтверждать, утверждать (в знак согласия), отвечать, мед.
@@ -1776,10 +1776,10 @@ u. s. w. [AK. 3,2,58.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3
   <sub>attested</sub>
 
 **4)** — 4) behaupten, aussagen, statuiren, annehmen: *ke yūyaṃ puṣpavantaśca — bibhrataḥ kṣātramojaśca brāhmaṇyaṃ pratijānatha* wie könnt ihr behaupten, dass ihr Brahmanen seid?
-[MBH. 2,842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Вульг. 2.21.45](mbh/2.21.html#v45) = ≈крит. 02,19.41c *ityetatpratijānāmi*
-[4,37.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.37) = [≈Вульг. 4.2.10](mbh/4.2.html#v10) = ≈крит. 04,2.8a *tāṃ pratijñāṃ pratijñāya purā*
+[MBH. 2,842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.842) = [≈Vulg. 2.21.45](mbh/2.21.html#v45) = ≈krit. 02,19.41c *ityetatpratijānāmi*
+[4,37.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.37) = [≈Vulg. 4.2.10](mbh/4.2.html#v10) = ≈krit. 04,2.8a *tāṃ pratijñāṃ pratijñāya purā*
 [R. 6,85,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,85,8) *kuśalāḥ pratijānānta ye vai tattvavido janāḥ*
-[MBH. 3,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1236) = [≈Вульг. 3.32.35](mbh/3.32.html#v35) = ≈крит. 03,33.32c *pratijñātārtha* Behauptung
+[MBH. 3,1236.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1236) = [≈Vulg. 3.32.35](mbh/3.32.html#v35) = ≈krit. 03,33.32c *pratijñātārtha* Behauptung
 [YĀJÑ. 2,7.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,7) *ityādīṇāṃ yaṇo 'nunāsikatvaṃ na pratijñāyate* statuirt —, angenommen werden
 Sch. zu [P. 7,1,1.](https://ashtadhyayi.com/sutraani/7/1/1) [SIDDH. K.] zu [P. 3,1,11.](https://ashtadhyayi.com/sutraani/3/1/11) *iha śāstre kāryārthamakāro vivṛtaḥ pratijñātaḥ*
 Sch. zu [P. 8,4,68.](https://ashtadhyayi.com/sutraani/8/4/68) [Ind. St. 4,139. 152. 206.]
@@ -1808,9 +1808,9 @@ Sch.
   <sub>attested</sub>
 
 **6)** — 6) erkennen, erfahren, gewahrwerden: *droṇaṃ ca pratyajānata* (nach der Beschreibung)
-[MBH. 1,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5170) = [≈Вульг. 1.131.38](mbh/1.131.html#v38) = ≈крит. 01,122.22c *diśo na pratijānāmi*
-[2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2089) = [≈Вульг. 1.56.6](mbh/1.56.html#v6) = крит. — *pratijānīhi yena mokṣamavāpsyasi*
-[13,4839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4839) = [≈Вульг. 13.101.27](mbh/13.101.html#v27) = ≈крит. 13,104.27a *pratijānīhi na me bhaktaḥ praṇaśyati*
+[MBH. 1,5170.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5170) = [≈Vulg. 1.131.38](mbh/1.131.html#v38) = ≈krit. 01,122.22c *diśo na pratijānāmi*
+[2089.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2089) = [≈Vulg. 1.56.6](mbh/1.56.html#v6) = krit. — *pratijānīhi yena mokṣamavāpsyasi*
+[13,4839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4839) = [≈Vulg. 13.101.27](mbh/13.101.html#v27) = ≈krit. 13,104.27a *pratijānīhi na me bhaktaḥ praṇaśyati*
 [BHAG. 9,31.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?9,31) *na kṣutpipāse kālaṃ vā pratyajānaṃ tadā*
 [HARIV. 1036.](https://sanskrit-lexicon-scans.github.io/hariv?1036)
 
@@ -1825,7 +1825,7 @@ Sch.
 **7)** — 7) mit Wehmuth zurückdenken an; nur in dieser Bed. wird
 [P. 1,3,46.](https://ashtadhyayi.com/sutraani/1/3/46)
 [VOP. 23,37](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,37) das act. anerkannt. Wir haben für diese Bed. nur eine Belegstelle und zwar für med.: *na cātītāni śocanti na caiva pratijānate*
-[MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438) = [≈Вульг. 12.233.1](mbh/12.233.html#v1) = ≈крит. 12,224.74a
+[MBH. 12,8438.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8438) = [≈Vulg. 12.233.1](mbh/12.233.html#v1) = ≈krit. 12,224.74a
 
 - **RU:** — 7) с грустью вспоминать о; только в этом знач.
 [P. 1,3,46.](https://ashtadhyayi.com/sutraani/1/3/46)
@@ -1846,9 +1846,9 @@ Sch.
 
 
 **1))** — *saṃprati* zusagen: *tvayā vai saṃpratijñāte sindhurājabadhe*
-[MBH. 7,2652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2652) = [≈Вульг. 7.75.5](mbh/7.75.html#v5) = ≈крит. 07,53.5c *yathā vaḥ saṃpratijñātam*
-[5,5416.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5416) = [≈Вульг. 5.160.92](mbh/5.160.html#v92) = ≈крит. 05,157.15a *tatheti saṃpratijñāya* (auf die Aufforderung *tathā kuru*)
-[3,1912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1912) = [≈Вульг. 3.47.34](mbh/3.47.html#v34) = ≈крит. 03,45.37c
+[MBH. 7,2652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2652) = [≈Vulg. 7.75.5](mbh/7.75.html#v5) = ≈krit. 07,53.5c *yathā vaḥ saṃpratijñātam*
+[5,5416.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5416) = [≈Vulg. 5.160.92](mbh/5.160.html#v92) = ≈krit. 05,157.15a *tatheti saṃpratijñāya* (auf die Aufforderung *tathā kuru*)
+[3,1912.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1912) = [≈Vulg. 3.47.34](mbh/3.47.html#v34) = ≈krit. 03,45.37c
 
 - **RU:** — *saṃprati* обещать, давать согласие: *tvayā vai saṃpratijñāte sindhurājabadhe*
 [MBH. 7,2652.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.2652) = [≈Вульг. 7.75.5](mbh/7.75.html#v5) = ≈крит. 07,53.5c *yathā vaḥ saṃpratijñātam*
@@ -1916,7 +1916,7 @@ wünschen: *tadvijijñāsasva*
 
 
 **1)** — *prativi* stets sich klug verhalten: *smaranti sukṛtānyeva na vairāṇi kṛtānyapi . santaḥ prativijānantaḥ*
-[MBH. 2,2424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2424) = [≈Вульг. 2.72.9](mbh/2.72.html#v9) = ≈крит. 02,65.9a [2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2442) = [≈Вульг. 2.73.10](mbh/2.73.html#v10) = ≈крит. 02,65.9a
+[MBH. 2,2424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2424) = [≈Vulg. 2.72.9](mbh/2.72.html#v9) = ≈krit. 02,65.9a [2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2442) = [≈Vulg. 2.73.10](mbh/2.73.html#v10) = ≈krit. 02,65.9a
 
 - **RU:** — *prativi* всегда вести себя благоразумно: *smaranti sukṛtānyeva na vairāṇi kṛtānyapi . santaḥ prativijānantaḥ*
 [MBH. 2,2424.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2424) = [≈Вульг. 2.72.9](mbh/2.72.html#v9) = ≈крит. 02,65.9a [2442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2442) = [≈Вульг. 2.73.10](mbh/2.73.html#v10) = ≈крит. 02,65.9a
@@ -1928,7 +1928,7 @@ wünschen: *tadvijijñāsasva*
 
 
 **1)** — *saṃvi* Jmd (gen.) zusprechen, rathen: *ādau pravartite cakre tathaivādiparāyaṇe . vartasva puruṣavyāghra saṃvijānāmi te 'nagha ..*
-[MBH. 12,2451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2451) = [≈Вульг. 12.65.35](mbh/12.65.html#v35) = ≈крит. 12,65.35a — caus. kundmachen, hersagen: *atha kṛtvā kṣaṇācchlokametaṃ taṃ saṃvyajijñapat*
+[MBH. 12,2451.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.2451) = [≈Vulg. 12.65.35](mbh/12.65.html#v35) = ≈krit. 12,65.35a — caus. kundmachen, hersagen: *atha kṛtvā kṣaṇācchlokametaṃ taṃ saṃvyajijñapat*
 [RĀJA-TAR. 3,180.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,180)
 
 - **RU:** — *saṃvi* обращаться к кому-л. (gen.) увещевать, советовать: *ādau pravartite cakre tathaivādiparāyaṇe . vartasva puruṣavyāghra saṃvijānāmi te 'nagha ..*
@@ -1981,7 +1981,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 **2)** — 2) Jmd Etwas anweisen, bestimmen: *yannaḥ pitā saṃjānīte tasmiṃstiṣṭhāmahe vayam*
 [AIT. BR. 7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18)
 [BHĀG. P. 9,16,34.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,16,34) *indriyaṃ ghnāṇasaṃjñātaṃ nāsiketyabhisaṃjñikā* der für den Geruch bestimmte Sinn
-[MBH. 12,9095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9095) = [≈Вульг. 12.258.34](mbh/12.258.html#v34) = ≈крит. 12,250.33a
+[MBH. 12,9095.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.9095) = [≈Vulg. 12.258.34](mbh/12.258.html#v34) = ≈krit. 12,250.33a
 
 - **RU:** — 2) указывать кому-л. что-л., предназначать: *yannaḥ pitā saṃjānīte tasmiṃstiṣṭhāmahe vayam*
 [AIT. BR. 7,18.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?7,18)
@@ -2047,7 +2047,7 @@ Sch. *saṃjānīṣva svamīśā ca*
   <sub>attested</sub>
 
 **caus_2)** — 2) Jmd beruhigen, zufriedenstellen: *ravistu saṃjñāpayate lokānraśmibhirulvanaiḥ*
-[MBH. 12,12567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12567) = [≈Вульг. 12.331.58](mbh/12.331.html#v58) = ≈крит. 12,318.57a *nāgarikavṛttyā saṃjñāpayainām*
+[MBH. 12,12567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12567) = [≈Vulg. 12.331.58](mbh/12.331.html#v58) = ≈krit. 12,318.57a *nāgarikavṛttyā saṃjñāpayainām*
 [ŚĀK. 60,2.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?60,2) *ahamenāṃ saṃjñāpayāmi*
 ([WEBER]: ich werde sie schon wieder zum Bewusstsein bringen)
 [MĀLAV. 58,17.](https://sanskrit-lexicon-scans.github.io/malavikagni/app2?58,17)
@@ -2066,7 +2066,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [ŚĀṄKH. ŚR. 4,14,14.]
 [ĀŚV. GṚHY. 1,11.]
 [KAUŚ. 44.] *saṃjñāpya turagaṃ vidhivadyājakāstadā*
-[MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Вульг. 14.89.2](mbh/14.89.html#v2) = ≈крит. 14,91.2c *saṃjñaptamaśvam*
+[MBH. 14,2645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2645) = [≈Vulg. 14.89.2](mbh/14.89.html#v2) = ≈krit. 14,91.2c *saṃjñaptamaśvam*
 [HARIV. 11236. fgg.](https://sanskrit-lexicon-scans.github.io/hariv?11236) *paśūnpaśya tvayādhvare . saṃjñāpitān*
 
 [BHĀG. P. 4,25,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,25,7) *saṃjñapitaḥ paśuḥ*
@@ -2518,7 +2518,7 @@ Sch. *saṃjānīṣva svamīśā ca*
 [69,34.](https://sanskrit-lexicon-scans.github.io/kss/index.html?69,34) *ka evaṃ jānīte* mit folgendem fut. wer weiss, ob nicht
 [Spr. 3573.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3573) *naitā jānanti pitaraṃ na kulaṃ na ca mātaram* sie wissen nichts vom Vater u. s. w. so v. a. sie achten nicht des Vaters u. s. w.
 [1646.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1646) sich erinnern, mit gen.: *hṛdayaṃ tatra jānāti kartuścaiva kṛtasya ca*
-[MBH. 12,5169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5169) = [≈Вульг. 12.139.89](mbh/12.139.html#v89) = ≈крит. 12,137.85a annehmen, als bekannt voraussetzen
+[MBH. 12,5169.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.5169) = [≈Vulg. 12.139.89](mbh/12.139.html#v89) = ≈krit. 12,137.85a annehmen, als bekannt voraussetzen
 [Spr. 2491.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2491) [5227.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5227) halten für: *khalagiraṃ jānāti satyām*
 [2858.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2858) *svajanaiḥ svātmavajjanturjñāyate guṇavānparaiḥ*
 [3324.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3324) *jajñe* pass.

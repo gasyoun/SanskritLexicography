@@ -16,7 +16,7 @@
 [R. 1,8,27](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,27) (GORR. [28](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,8,28)). *tadvidhatsva me* (*bhojanam*)
 [R. 1,52,22.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,52,22) *mithyāsau vihitendriyaḥ*
 [BHAṬṬ. 5,19.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?5,19) *hetunānena nāmaratvaṃ vidhīyate*
-[MBH. 1,7640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7640) = [≈Вульг. 1.207.30](mbh/1.207.html#v30) = ≈крит. 01,199.29c *svatejo vyadadhacchakre*
+[MBH. 1,7640.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7640) = [≈Vulg. 1.207.30](mbh/1.207.html#v30) = ≈krit. 01,199.29c *svatejo vyadadhacchakre*
 [3,8723.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8723) *tasya tasyācalāṃ śraddhāṃ tāmeva vidadhāmyaham*
 [BHAG. 7,21.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?7,21) *vidhehi vighnādhipa maṅgalāni*
 [TRIK. 1,1,1.](https://sanskrit-lexicon-scans.github.io/medini/app2?1,1,1) *siṃhatvam* Löwennatur verleihen, in einen Löwen verwandeln
@@ -26,10 +26,10 @@
 [BHAṬṬ. 19,2.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?19,2) *kāmān* Jmds Wünsche gewähren, erfüllen: *eko bahūnāṃ yo vidadhāti kāmān*
 [KAṬHOP. 5. 13] (= [ŚVETĀŚV. UP. 6,13).] [RAGH. ed. Calc. 1,82.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,82) *vidadhe kāmān*
 [R. 1,53,1.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,53,1) *sarvakāmaiḥ suvihitaiḥ*
-[MBH. 3,3024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3024) = [≈Вульг. 3.77.17](mbh/3.77.html#v17) = ≈крит. 03,76.16a *vidhāsyāmo vayaṃ tatra taveṣṭim*
-[10448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10448) = [≈Вульг. 3.124.17](mbh/3.124.html#v17) = ≈крит. 03,124.17a *svacchando 'tra vidhīyatām*
+[MBH. 3,3024.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3024) = [≈Vulg. 3.77.17](mbh/3.77.html#v17) = ≈krit. 03,76.16a *vidhāsyāmo vayaṃ tatra taveṣṭim*
+[10448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10448) = [≈Vulg. 3.124.17](mbh/3.124.html#v17) = ≈krit. 03,124.17a *svacchando 'tra vidhīyatām*
 [R. 1,39,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,39,11) *ātmanaḥ* sich verschaffen, sich bereiten: *vidadhāti nidhiṃ śreṣṭhaṃ pāralaukikamātmanaḥ*
-[MBH. 13,3209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3209) = [≈Вульг. 13.63.10](mbh/13.63.html#v10) = ≈крит. 13,62.10a
+[MBH. 13,3209.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3209) = [≈Vulg. 13.63.10](mbh/13.63.html#v10) = ≈krit. 13,62.10a
 
 - **RU:** — *vi*
  1) раздавать, распределять; сообщать, даровать, уделять кому-либо что-либо, доставлять: *nūnaṃ devebhyo vi hi dhāti ratnam*
@@ -120,12 +120,12 @@
 [M. 2,13.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,13) *prāṅnābhivardhanātpuṃso jātakarma vidhīyate*
 [29.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,29) [65.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,65) [174.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,174) [190.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,190) [241.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,241) [3,19.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,19) [121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,121) [5,43.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,43) [59.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,59) [61.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,61) [118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,118) [8,290.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,290) *śiphāvidalarajjvādyairvidadhyānnṛpatirdamam*
 [9,230.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,230) [YĀJÑ. 1,72.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,72) [2,53.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,53) [165.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,165) *sva nugupteṣu deśeṣu rakṣāṃ vai vyadadhattataḥ*
-[MBH. 1,4503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4503) = [≈Вульг. 1.115.22](mbh/1.115.html#v22) = ≈крит. 01,107.21a *īśvaro vidadhātīha kalyāṇaṃ yacca pāpakam*
-[3,1141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1141) = [≈Вульг. 3.30.25](mbh/3.30.html#v25) = ≈крит. 03,31.24a *vidadhāti vibhajyeha phalaṃ pūrvakṛtaṃ nṛṇām*
-[1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) = [≈Вульг. 3.32.21](mbh/3.32.html#v21) = ≈крит. 03,33.19a *yaccānyadapi kartavyaṃ tadvidhatsva*
-[2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) = [≈Вульг. 2.78.8](mbh/2.78.html#v8) = крит. — [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
-[MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) = [≈Вульг. 3.172.30](mbh/3.172.html#v30) = ≈крит. 03,169.30a *vihitaṃ yatsurarṣibhiḥ*
-[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) = [≈Вульг. 13.23.1](mbh/13.23.html#v1) = ≈крит. 13,24.1c [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) [BENF. Chr. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *svaśabdena yatra guṇavṛddhī vidhīyete*
+[MBH. 1,4503.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4503) = [≈Vulg. 1.115.22](mbh/1.115.html#v22) = ≈krit. 01,107.21a *īśvaro vidadhātīha kalyāṇaṃ yacca pāpakam*
+[3,1141.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1141) = [≈Vulg. 3.30.25](mbh/3.30.html#v25) = ≈krit. 03,31.24a *vidadhāti vibhajyeha phalaṃ pūrvakṛtaṃ nṛṇām*
+[1222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1222) = [≈Vulg. 3.32.21](mbh/3.32.html#v21) = ≈krit. 03,33.19a *yaccānyadapi kartavyaṃ tadvidhatsva*
+[2,2567.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2567) = [≈Vulg. 2.78.8](mbh/2.78.html#v8) = krit. — [HARIV. 10449.](https://sanskrit-lexicon-scans.github.io/hariv?10449) *vidhattāṃ bhagavānantam*
+[MBH. 3,12191.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12191) = [≈Vulg. 3.172.30](mbh/3.172.html#v30) = ≈krit. 03,169.30a *vihitaṃ yatsurarṣibhiḥ*
+[13,1572.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1572) = [≈Vulg. 13.23.1](mbh/13.23.html#v1) = ≈krit. 13,24.1c [PAÑCAT. I,217.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,217) [VEDĀNTAS. (Allah.) No. 12.] Schol. zu [KAP. 1,16. Einl.] zu [JAIM.] [DAŚAK.] in [BENF. Chr. 181,4.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?181) [BENF. Chr. 185,6.](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?185) *svaśabdena yatra guṇavṛddhī vidhīyete*
 Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://ashtadhyayi.com/sutraani/1/1/54) [KĀŚ.] zu [P. 1,2,33.](https://ashtadhyayi.com/sutraani/1/2/33) *nākāle vihito mṛtyurmartyānām*
 [N. 11,7.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,7) *vidhatse svena vīryeṇa śreyo dharmādilakṣaṇam*
 [BHĀG. P. 1,7,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,7,24) *śūdrasya tu savarṇaiva nānyā bhāryā vidhīyate*
@@ -140,7 +140,7 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [BHARTṚ. 2,51.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?2,51) *yathā devaiḥ sa me bhartā vihitaḥ* zum Gatten bestimmt
 [N. 5,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?5,19)
 [BRĀHMAṆ. 1. 25. 26.]
-[MBH. 5,7309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7309) = [≈Вульг. 5.185.20](mbh/5.185.html#v20) = ≈крит. 05,186.19c *yajñaśiṣṭāśanaṃ hyetatsatāmannaṃ vidhīyate* gilt für
+[MBH. 5,7309.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7309) = [≈Vulg. 5.185.20](mbh/5.185.html#v20) = ≈krit. 05,186.19c *yajñaśiṣṭāśanaṃ hyetatsatāmannaṃ vidhīyate* gilt für
 [M. 3,118.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,118) *lavaṇaṃ kaṭukaṃ cchedi vihitaṃ kaṭu cocyate*
 [SUŚR. 1,227,9.]
 
@@ -182,8 +182,8 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [RAGH. 1,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,29) *aṅgāni campakadalaiḥ sa vidhāya dhātā*
 [ŚṚṄGĀRAT. 3.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app2?3)
 [HARIV. 7871.](https://sanskrit-lexicon-scans.github.io/hariv?7871) *(rathe) manasā vihite*
-[MBH. 5,7130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7130) = [≈Вульг. 5.179.7](mbh/5.179.html#v7) = ≈крит. 05,180.7a *taṃ dvīpaṃ makarāvāsaṃ vihitaṃ viśvakarmaṇā*
-[1,1305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1305) = [≈Вульг. 1.27.2](mbh/1.27.html#v2) = крит. — *sārasenāpi vihitaṃ ramyaṃ krauñcapuraṃ mahat*
+[MBH. 5,7130.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7130) = [≈Vulg. 5.179.7](mbh/5.179.html#v7) = ≈krit. 05,180.7a *taṃ dvīpaṃ makarāvāsaṃ vihitaṃ viśvakarmaṇā*
+[1,1305.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1305) = [≈Vulg. 1.27.2](mbh/1.27.html#v2) = krit. — *sārasenāpi vihitaṃ ramyaṃ krauñcapuraṃ mahat*
 [HARIV. 5231.](https://sanskrit-lexicon-scans.github.io/hariv?5231) *śakreṇa vihitaṃ durgam*
 
 [PAÑCAT. I,261.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,261) *svanāmnā vidadhe puram*
@@ -224,20 +224,20 @@ Schol. zu [P. 1,1,3.](https://ashtadhyayi.com/sutraani/1/1/3) [54.](https://asht
 [M. 7,142.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,142) *vidadhyāddhitamātmanaḥ*
 [57.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,57) [MBH. 4,2259.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2259) *dharmaviguṇāḥ kriyāḥ . vayameva vidadhmaścet*
 [RĀJA-TAR. 4,60.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,60) *tathā vidadhyām — kṛtyamāśu*
-[MBH. 5,7452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7452) = [≈Вульг. 5.190.19](mbh/5.190.html#v19) = ≈крит. 05,191.18a *vidhāsye tatra tattvataḥ*
-[7453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7453) = [≈Вульг. 5.190.20](mbh/5.190.html#v20) = ≈крит. 05,191.18e *vihitāñjali*
+[MBH. 5,7452.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7452) = [≈Vulg. 5.190.19](mbh/5.190.html#v19) = ≈krit. 05,191.18a *vidhāsye tatra tattvataḥ*
+[7453.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7453) = [≈Vulg. 5.190.20](mbh/5.190.html#v20) = ≈krit. 05,191.18e *vihitāñjali*
 [ŚIŚ. 9,14.] *ūrdhvabāhū vidhāya* so v. a. die Arme in die Höhe heben
 [PAÑCAT. 40,19.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?40,19) *teneyaṃ vihitā pūrvaṃ māyā*
-[MBH. 3,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2557) = [≈Вульг. 3.65.26](mbh/3.65.html#v26) = крит. — *upāyaḥ*
+[MBH. 3,2557.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2557) = [≈Vulg. 3.65.26](mbh/3.65.html#v26) = krit. — *upāyaḥ*
 [N. 24,33.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,33)
 [R. 3,40,33.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,40,33) *anudhyānena japyena vidhāsyāmaḥ śivaṃ tava*
-[MBH. 3,57.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.57) = [≈Вульг. 3.2.11](mbh/3.2.html#v11) = ≈крит. 03,2.11a *na tveva rāmasya vidhāya pāpam* ein Leid anthun
+[MBH. 3,57.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.57) = [≈Vulg. 3.2.11](mbh/3.2.html#v11) = ≈krit. 03,2.11a *na tveva rāmasya vidhāya pāpam* ein Leid anthun
 [R. 3,54,27.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,54,27) *kathaṃ nu śastreṇa vadho madvidhasya vidhīyate*
 [DAŚ. 1,26.](https://sanskrit-lexicon-scans.github.io/bchrest1/app2?1,26) *ataḥ sarvaṃ vidhīyate*
 [VET. 1,8.] *vidadhadīdṛśameva*
 [SĀH. D. 12,14.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?12,14) *tathā bhadre vidhīyatām* so werde gethan, so geschehe es
-[MBH. 3,2173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2173) = [≈Вульг. 3.56.14](mbh/3.56.html#v14) = крит. — [2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) = [≈Вульг. 3.56.16](mbh/3.56.html#v16) = крит. — *tathā vidhatsva kalyāṇi yathā śreyo hi no bhavet* richte es so ein, dass
-[2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2520) = [≈Вульг. 3.64.120](mbh/3.64.html#v120) = ≈крит. 03,61.115a *yathā kālātyayo na syāttathā sādhu vidhīyatām*
+[MBH. 3,2173.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2173) = [≈Vulg. 3.56.14](mbh/3.56.html#v14) = krit. — [2175.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2175) = [≈Vulg. 3.56.16](mbh/3.56.html#v16) = krit. — *tathā vidhatsva kalyāṇi yathā śreyo hi no bhavet* richte es so ein, dass
+[2520.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2520) = [≈Vulg. 3.64.120](mbh/3.64.html#v120) = ≈krit. 03,61.115a *yathā kālātyayo na syāttathā sādhu vidhīyatām*
 [R. 1,2,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,8)
 [RAGH. 3,66.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,66) *˚toyakṣudbhayāni vidadhāti* verursacht, bewirkt
 [VARĀH. BṚH. S. 7,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?7,18) *(śaśiputraḥ) sapramadaṃ śayanaṃ vidhatte*

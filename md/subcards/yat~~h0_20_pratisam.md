@@ -5,7 +5,7 @@
 
 **1)** — *pratisam* med. bekämpfen
 [ŚAT. BR. 11,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,3) partic. *˚yatta* vollkommen vorbereitet, — gerüstet
-[MBH. 7,3534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3534) = [≈Вульг. 7.95.49](mbh/7.95.html#v49) = ≈крит. 07,70.49a
+[MBH. 7,3534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.3534) = [≈Vulg. 7.95.49](mbh/7.95.html#v49) = ≈krit. 07,70.49a
 
 - **RU:** — *pratisam* мед. сражаться с, бороться против
 [ŚAT. BR. 11,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,4,1,3) partic. *˚yatta* вполне подготовленный, — вооруженный

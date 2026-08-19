@@ -8,8 +8,8 @@
 [ṚV. 2,3,10.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.003.html#rv02.003.10) *aśmānamupanītamṛbhvā*
 [1,121,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.121.html#rv01.121.09) [TBR. 1,5,9,2.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,9,2) [3.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?1,5,9,3) [ŚAT. BR. 2,3,2,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,3,2,2) [3,8,4,5.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?3,8,4,5) *upanayata medhyā dura āśāsānā medhapatibhyāṃ medham*
 [AIT. BR. 2,6.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,6) *goṣūpanītāsu*
-[MBH. 13,3668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3668) = [≈Вульг. 13.76.4](mbh/13.76.html#v4) = ≈крит. 13,75.4c [2,1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1830) = [≈Вульг. 2.51.10](mbh/2.51.html#v10) = ≈крит. 02,47.8a [14,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2830) = [≈Вульг. 14.91.22](mbh/14.91.html#v22) = ≈крит. 14,94.21c *mahatyā senayā rājā damayantīmupānayat*
-[3,3063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3063) = [≈Вульг. 3.79.1](mbh/3.79.html#v1) = ≈крит. 03,78.1a *upaninyurmahābhāgāṃ duhitṛtvena jāhnavīm*
+[MBH. 13,3668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3668) = [≈Vulg. 13.76.4](mbh/13.76.html#v4) = ≈krit. 13,75.4c [2,1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1830) = [≈Vulg. 2.51.10](mbh/2.51.html#v10) = ≈krit. 02,47.8a [14,2830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2830) = [≈Vulg. 14.91.22](mbh/14.91.html#v22) = ≈krit. 14,94.21c *mahatyā senayā rājā damayantīmupānayat*
+[3,3063.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3063) = [≈Vulg. 3.79.1](mbh/3.79.html#v1) = ≈krit. 03,78.1a *upaninyurmahābhāgāṃ duhitṛtvena jāhnavīm*
 [HARIV. 1421.](https://sanskrit-lexicon-scans.github.io/hariv?1421) *vidhinaivopanītastvam*
 [MṚCCH. 109,12.] *upo nayasva vṛṣaṇā* herbeilenken
 [ṚV. 3,35,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.035.html#rv03.035.03) *tamṛco manuṣyalokamupanayante*
@@ -27,7 +27,7 @@
 [ŚĀK. 31,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?31,6)
 [VARĀH. BṚH. S. 94,15.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?94,15) *yadannamupanīyate*
 [M. 3,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,225)
-[MBH. 1,582.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.582) = [≈Вульг. 1.2.353](mbh/1.2.html#v353) = ≈крит. 01,2.219c [5,1294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1294) = [≈Вульг. 5.36.35](mbh/5.36.html#v35) = ≈крит. 05,36.33a [13,6599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6599) = [≈Вульг. 13.143.36](mbh/13.143.html#v36) = ≈крит. 13,131.35c *sa śucīnyannapānāni guṇavanti ca rāghave . arghaṃ copānayat*
+[MBH. 1,582.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.582) = [≈Vulg. 1.2.353](mbh/1.2.html#v353) = ≈krit. 01,2.219c [5,1294.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1294) = [≈Vulg. 5.36.35](mbh/5.36.html#v35) = ≈krit. 05,36.33a [13,6599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6599) = [≈Vulg. 13.143.36](mbh/13.143.html#v36) = ≈krit. 13,131.35c *sa śucīnyannapānāni guṇavanti ca rāghave . arghaṃ copānayat*
 [R. GORR. 2,47,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,47,13) [3,52,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,51) [MṚCCH. 42,3.] *āryasyāsanamupanaya*
 [144,25.] *sūtasyābharaṇāni dhanuścopanīya*
 [ŚĀK. 8,13.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?8,13) [90,17.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?90,17)

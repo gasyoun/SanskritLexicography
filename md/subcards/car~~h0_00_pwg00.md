@@ -8,12 +8,12 @@
 [BHĀG. P. 4,28,52](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,28,52)), *cere* (
 [BHĀG. P. 3,1,19](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,1,19)); *cariṣyati, ˚te; acārīt, (pari) cacārīt* (
 [CHĀND. UP. 4,10,2]); *caritvā, cartvā* (
-[MBH. 5,3790](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3790) = [≈Вульг. 5.111.19](mbh/5.111.html#v19) = ≈крит. 05,109.16c), *cīrtvā* (
-[MBH. 13,495](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.495) = [≈Вульг. 13.10.64](mbh/13.10.html#v64) = ≈крит. 13,10.57a); *caritum* (
+[MBH. 5,3790](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3790) = [≈Vulg. 5.111.19](mbh/5.111.html#v19) = ≈krit. 05,109.16c), *cīrtvā* (
+[MBH. 13,495](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.495) = [≈Vulg. 13.10.64](mbh/13.10.html#v64) = ≈krit. 13,10.57a); *caritum* (
 [ŚAT. BR. 2,4,2,6.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,4,2,6)
-[MBH. 1,1714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1714) = [≈Вульг. 1.41.23](mbh/1.41.html#v23) = ≈крит. 01,37.23c [3,10068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10068) = [≈Вульг. 3.111.11](mbh/3.111.html#v11) = ≈крит. 03,111.11a
+[MBH. 1,1714.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1714) = [≈Vulg. 1.41.23](mbh/1.41.html#v23) = ≈krit. 01,37.23c [3,10068.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10068) = [≈Vulg. 3.111.11](mbh/3.111.html#v11) = ≈krit. 03,111.11a
 [R. 2,21,23](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,21,23)), *cartum*
-[MBH. 3,10069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10069) = [≈Вульг. 3.111.12](mbh/3.111.html#v12) = крит. — [13529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13529) = [≈Вульг. 3.201.28](mbh/3.201.html#v28) = ≈крит. 03,192.23c [13,5612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5612) = [≈Вульг. 13.115.19](mbh/13.115.html#v19) = ≈крит. 13,116.19c
+[MBH. 3,10069.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.10069) = [≈Vulg. 3.111.12](mbh/3.111.html#v12) = krit. — [13529.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13529) = [≈Vulg. 3.201.28](mbh/3.201.html#v28) = ≈krit. 03,192.23c [13,5612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.5612) = [≈Vulg. 13.115.19](mbh/13.115.html#v19) = ≈krit. 13,116.19c
 [R. 3,14,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,14,15)
 [BHĀG. P. 5,2,15](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,2,15)), *caradhyai, caritave, carase; carita* (s. auch bes.), *cīrṇa* (s. auch bes.).
 
@@ -61,12 +61,12 @@
 [ŚĀṄKH. ŚR. 14,50,4.] *svasti te sūrya carase* (infin.) *rathāya*
 [AV. 13,2,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av13.002.html#av13.002.06)
 [ṚV. 1,92,9.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.092.html#rv01.092.09) [5,47,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.04) — *kṣitāvaṭasi rājendra antarikṣe carāmyaham*
-[MBH. 1,3071.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3071) = [≈Вульг. 1.74.84](mbh/1.74.html#v84) = ≈крит. 01,69.3c *divā careyuḥ kāryārthaṃ cihnitā rājaśāsanaiḥ*
+[MBH. 1,3071.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3071) = [≈Vulg. 1.74.84](mbh/1.74.html#v84) = ≈krit. 01,69.3c *divā careyuḥ kāryārthaṃ cihnitā rājaśāsanaiḥ*
 [M. 10,55.](https://sanskrit-lexicon-scans.github.io/manu/index.html?10,55) *stenānām — nibhṛtaṃ caratāṃ kṣitau*
 [9,263.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,263) *kathamekā — cariṣyati vane*
-[MBH. 3,2355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2355) = [≈Вульг. 3.62.23](mbh/3.62.html#v23) = ≈крит. 03,59.21a
+[MBH. 3,2355.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2355) = [≈Vulg. 3.62.23](mbh/3.62.html#v23) = ≈krit. 03,59.21a
 [R. 1,3,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,3,5) [9,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,26) *caramāṇastu so 'raṇye*
-[MBH. 3,12655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12655) = [≈Вульг. 3.184.4](mbh/3.184.html#v4) = ≈крит. 03,182.4a *samīkṣya vasudhāṃ caret*
+[MBH. 3,12655.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12655) = [≈Vulg. 3.184.4](mbh/3.184.html#v4) = ≈krit. 03,182.4a *samīkṣya vasudhāṃ caret*
 [M. 6,68.](https://sanskrit-lexicon-scans.github.io/manu/index.html?6,68) *naktaṃcarāścarante*
 [SĀV. 5,74.] *vediṃ paritaśchāyāścaranti*
 [ŚĀK. 75.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?75) *ayomukhānāṃ śūlānāmagre caritumicchasi*
@@ -152,7 +152,7 @@
 [N. 17,4.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?17,4) [24,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?24,19)
 [R. 1,65,26.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,26) [3,7,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,13) [18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,18) [43,11.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,43,11) *ādityacaritāllokān*
 [SUND. 4,24.] *caramāṇaḥ phalāhāraḥ kṛtsnaṃ jagadidam*
-[MBH. 3,12927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12927) = [≈Вульг. 3.188.123](mbh/3.188.html#v123) = ≈крит. 03,186.110a
+[MBH. 3,12927.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12927) = [≈Vulg. 3.188.123](mbh/3.188.html#v123) = ≈krit. 03,186.110a
 [HARIV. 4597.](https://sanskrit-lexicon-scans.github.io/hariv?4597) *śikhī carati bhacakram* durchläuft die ganze Ekliptik
 [VARĀH. BṚH. S. 46,15 (16).](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?46,15) *tāṃ caransa nadīm* dem Flusse entlang gehend
 [HARIV. 3632.](https://sanskrit-lexicon-scans.github.io/hariv?3632) *padavīṃ caradhvam* gehet dem Wege entlang, folget der Spur
@@ -187,10 +187,10 @@
 [MUṆḌ. UP. 1,2,5] (med.). *carantīnāṃ ca kāmataḥ* derer die nach ihren Gelüsten verfahren
 [M. 5,90.](https://sanskrit-lexicon-scans.github.io/manu/index.html?5,90) *evaṃ caran*
 [9,324.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,324) *nāhamevaṃ care loke yathā tvamabhimanyase*
-[MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) = [≈Вульг. 1.229.15](mbh/1.229.html#v15) = ≈крит. 01,220.15c *tvām — tathā carantam*
-[3,1363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1363) = [≈Вульг. 3.34.10](mbh/3.34.html#v10) = ≈крит. 03,35.9a *samairhi viṣamaṃ yastu caredvaimūlyato 'pi vā*
+[MBH. 1,8442.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.8442) = [≈Vulg. 1.229.15](mbh/1.229.html#v15) = ≈krit. 01,220.15c *tvām — tathā carantam*
+[3,1363.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1363) = [≈Vulg. 3.34.10](mbh/3.34.html#v10) = ≈krit. 03,35.9a *samairhi viṣamaṃ yastu caredvaimūlyato 'pi vā*
 [M. 9,287.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,287) *ātmavatsarvabhūteṣu yaścaret*
-[MBH. 14,534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.534) = [≈Вульг. 14.19.3](mbh/14.19.html#v3) = ≈крит. 14,19.3c *tasyāṃ tvaṃ sādhu nācaraḥ*
+[MBH. 14,534.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.534) = [≈Vulg. 14.19.3](mbh/14.19.html#v3) = ≈krit. 14,19.3c *tasyāṃ tvaṃ sādhu nācaraḥ*
 [RAGH. 1,76.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?1,76) Namentlich häufig
 
 - **RU:** — 3) вести себя, держать себя; поступать, действовать: *ubhe enaṃ dviṣṭo nabhasī carantam* гнушаться его поведением

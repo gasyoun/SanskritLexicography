@@ -8,7 +8,7 @@
 [KAUŚ. 50.]
 [ŚĀṄKH. ŚR. 17,10,4.] *camasaṃ pūrṇamaṅguliparvaṇā maulyena sarvataḥ pramitam*
 [KĀTY. ŚR. 22,8,6.](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,8,6) *pramīyamāṇamāmaṃ ca pacyamānaṃ tathaiva ca*
-[MBH. 2,1901.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1901) = [≈Вульг. 2.52.45](mbh/2.52.html#v45) = ≈крит. 02,48.38c *pramita* am Ende eines comp. so und so viel messend, — gross u. s. w.: *karavīrakamupanyasedaṅgulapramitam*
+[MBH. 2,1901.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1901) = [≈Vulg. 2.52.45](mbh/2.52.html#v45) = ≈krit. 02,48.38c *pramita* am Ende eines comp. so und so viel messend, — gross u. s. w.: *karavīrakamupanyasedaṅgulapramitam*
 [VARĀH. BṚH. S. 58,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?58,13) [69,13.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?69,13) *adhyardhahastapramito daṇḍaḥ*
 [72,3.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?72,3) *māsapramitaḥ pratipaccandramāḥ* so v. a. einmal im Monat vorkommend
 [P. 2,1,28](https://ashtadhyayi.com/sutraani/2/1/28), Sch.
@@ -31,7 +31,7 @@ abgemessen so v. a. mässig, gering, wenig: *pramitākṣarāṇi vadan*
   <sub>attested</sub>
 
 **2))** — 2) bilden, schaffen: *pramimāṇa*
-[MBH. 7,9457.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9457) = [≈Вульг. 7.201.64](mbh/7.201.html#v64) = ≈крит. 07,172.58a viell. zurechtmachen: *sa mṛjyamāno daśabhiḥ sukarmabhiḥ pra madhyamāsu mātṛṣu prame* (loc. infin.) *sacā*
+[MBH. 7,9457.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9457) = [≈Vulg. 7.201.64](mbh/7.201.html#v64) = ≈krit. 07,172.58a viell. zurechtmachen: *sa mṛjyamāno daśabhiḥ sukarmabhiḥ pra madhyamāsu mātṛṣu prame* (loc. infin.) *sacā*
 [ṚV. 9,70,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.070.html#rv09.070.04)
 
 - **RU:** — 2) образовывать, творить: *pramimāṇa*

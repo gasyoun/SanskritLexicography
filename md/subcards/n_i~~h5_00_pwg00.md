@@ -27,7 +27,7 @@
   <sub>attested</sub>
 
 **4-am-Ende)** — 4) am Ende, *bhasmasānnītaḥ*
-[MBH. 15,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.951) = [≈Вульг. 15.35.13](mbh/15.35.html#v13) = ≈крит. 15,43.13a
+[MBH. 15,951.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.951) = [≈Vulg. 15.35.13](mbh/15.35.html#v13) = ≈krit. 15,43.13a
 [HARIV. 3662.](https://sanskrit-lexicon-scans.github.io/hariv?3662) [5950.](https://sanskrit-lexicon-scans.github.io/hariv?5950)
 
 - **RU:** — 4) в конце, *bhasmasānnītaḥ*
@@ -37,7 +37,7 @@
 
 **12-anders-auslegen)** — 12) *anyathā* anders auslegen
 [LA. (II) 91,7.] — Z. 3 vom Schluss, die [ed. Bomb.] liest
-[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) = [≈Вульг. 7.202.66](mbh/7.202.html#v66) = ≈крит. 07,173.54a *bhettuṃ* st. *netuṃ* .
+[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) = [≈Vulg. 7.202.66](mbh/7.202.html#v66) = ≈krit. 07,173.54a *bhettuṃ* st. *netuṃ* .
 
 - **RU:** — 12) *anyathā* иначе истолковывать
 [LA. (II) 91,7.] — стк. 3 vom Schluss, die [Бомбейская ред.] liest

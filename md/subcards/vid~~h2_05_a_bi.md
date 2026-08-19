@@ -6,8 +6,8 @@
 **1)** — *abhi*
  1) auffinden: *apaḥ*
 [ŚAT. BR. 11,1,6,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,1,6,16) *abhyavindat*
-[MBH. 13,4945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4945) = [≈Вульг. 13.103.40](mbh/13.103.html#v40) = ≈крит. 13,106.39a *śarma*
-[2,1933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1933) = [≈Вульг. 2.53.26](mbh/2.53.html#v26) = ≈крит. 02,49.25c *trātāraṃ nābhyavindata*
+[MBH. 13,4945.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.4945) = [≈Vulg. 13.103.40](mbh/13.103.html#v40) = ≈krit. 13,106.39a *śarma*
+[2,1933.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1933) = [≈Vulg. 2.53.26](mbh/2.53.html#v26) = ≈krit. 02,49.25c *trātāraṃ nābhyavindata*
 [R. 5,68,13.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,68,13)
 
 - **RU:** — *abhi*
@@ -21,7 +21,7 @@
 **2)** — 2) kennen: *ye *
 
 * dharmamabhivindate*
-[MBH. 3,13698.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13698) = [≈Вульг. 3.206.47](mbh/3.206.html#v47) = ≈крит. 03,197.43a
+[MBH. 3,13698.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13698) = [≈Vulg. 3.206.47](mbh/3.206.html#v47) = ≈krit. 03,197.43a
 
 - **RU:** — 2) знать: *ye *
 

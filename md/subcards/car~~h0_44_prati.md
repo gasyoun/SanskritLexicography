@@ -11,7 +11,7 @@
   <sub>attested</sub>
 
 **sense 2)** [TS. 2,2,9,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,9,7) — caus. in Umlauf bringen, verbreiten: *bṛhaspatimate caiva lokeṣu praticārite*
-[MBH. 12,12742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12742) = [≈Вульг. 12.335.50](mbh/12.335.html#v50) = ≈крит. 12,322.47a
+[MBH. 12,12742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12742) = [≈Vulg. 12.335.50](mbh/12.335.html#v50) = ≈krit. 12,322.47a
 
 - **RU:** [TS. 2,2,9,7.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,2,9,7) — caus. пускать в оборот, распространять: *bṛhaspatimate caiva lokeṣu praticārite*
 [MBH. 12,12742.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12742) = [≈Вульг. 12.335.50](mbh/12.335.html#v50) = ≈крит. 12,322.47a

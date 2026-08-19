@@ -100,7 +100,7 @@ voraussagen, anzeigen: *yugapatprāptau parāmṛddhiṃ vadanti*
   <sub>attested</sub>
 
 **1) d) behaupten, annehmen)** — d) behaupten, annehmen: *śamārthinaḥ kālagatiṃ vadanti*
-[MBH. 13,25.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.25) = [≈Вульг. 13.1.25](mbh/13.1.html#v25) = ≈крит. 13,1.18a *śatamekādhikameke sahasramapare vadanti ketūnām*
+[MBH. 13,25.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.25) = [≈Vulg. 13.1.25](mbh/13.1.html#v25) = ≈krit. 13,1.18a *śatamekādhikameke sahasramapare vadanti ketūnām*
 [VARĀH. BṚH. S. 11,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?11,5) [21,5.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?21,5) [23,4.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?23,4)
 [PRAB. 112,15.]
 [SARVADARŚANAS. 126,14.]
@@ -119,7 +119,7 @@ voraussagen, anzeigen: *yugapatprāptau parāmṛddhiṃ vadanti*
 [ŚVETĀŚV. UP. 6,1.]
 [AV. PRĀT. 3,65.]
 [M. 3,182.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,182) [213.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,213) [284.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,284) [4,221.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,221) [8,103.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,103) [9,172.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,172) [12,123.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,123)
-[MBH. 3,8351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8351) = [≈Вульг. 3.88.26](mbh/3.88.html#v26) = ≈крит. 03,86.23a
+[MBH. 3,8351.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8351) = [≈Vulg. 3.88.26](mbh/3.88.html#v26) = ≈krit. 03,86.23a
 [R. 5,52,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,52,18)
 [ŚĀK. 38.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?38) [165.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?165)
 [ŚRUT. 25.]
@@ -145,10 +145,10 @@ voraussagen, anzeigen: *yugapatprāptau parāmṛddhiṃ vadanti*
 u. s. w.); tönen, schallen, klingen: *vayo vadantaḥ*
 [ṚV. 2,43,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.043.html#rv02.043.01) [10,146,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.146.html#rv10.146.02) Frösche
 [7,103,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.103.html#rv07.103.05) [6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.103.html#rv07.103.06) *yathā vadatyeṣaḥ — śālāvṛkaḥ*
-[MBH. 3,15674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15674) = [≈Вульг. 3.269.8](mbh/3.269.html#v8) = ≈крит. 03,253.8a *yathā vadanti śāntāyāṃ diśi vai mṛgapakṣiṇaḥ*
-[16875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16875) = [≈Вульг. 3.298.17](mbh/3.298.html#v17) = ≈крит. 03,282.17a *krūram*
-[15669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15669) = [≈Вульг. 3.269.3](mbh/3.269.html#v3) = ≈крит. 03,253.3a *sārasāḥ — vadanti madhurā vācaḥ*
-[11612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11612) = [≈Вульг. 3.158.89](mbh/3.158.html#v89) = ≈крит. 03,155.75c *kaśā hasteṣu yadvadān*
+[MBH. 3,15674.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15674) = [≈Vulg. 3.269.8](mbh/3.269.html#v8) = ≈krit. 03,253.8a *yathā vadanti śāntāyāṃ diśi vai mṛgapakṣiṇaḥ*
+[16875.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16875) = [≈Vulg. 3.298.17](mbh/3.298.html#v17) = ≈krit. 03,282.17a *krūram*
+[15669.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15669) = [≈Vulg. 3.269.3](mbh/3.269.html#v3) = ≈krit. 03,253.3a *sārasāḥ — vadanti madhurā vācaḥ*
+[11612.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11612) = [≈Vulg. 3.158.89](mbh/3.158.html#v89) = ≈krit. 03,155.75c *kaśā hasteṣu yadvadān*
 [ṚV. 1,37,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.037.html#rv01.037.03) *grāvā yatra vadati*
 [83,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.083.html#rv01.083.06) *dundubhiḥ*
 [AV. 12,1,41.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av12.001.html#av12.001.41) *vīṇāḥ*
@@ -175,13 +175,13 @@ u. s. w.); tönen, schallen, klingen: *vayo vadantaḥ*
 **2) Medialformen: a) sagen, sprechen)** — 2) med.
  a) sagen, sprechen: *vadasva yatte vādyam*
 [ŚAT. BR. 4,3,1,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,3,1,1) [9,2,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,2,1,17) [4,2,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,2,17) [14,3,1,30.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,3,1,30) *sa kathaṃ vadase śatrūnyudhyasva gadayeti hi*
-[MBH. 9,1901.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1901) = [≈Вульг. 9.33.6](mbh/9.33.html#v6) = ≈крит. 09,32.5c [1,4527.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4527) [5125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5125) = [≈Вульг. 1.130.58](mbh/1.130.html#v58) = ≈крит. 01,154.9c [3,16893.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16893) = [≈Вульг. 3.298.35](mbh/3.298.html#v35) = ≈крит. 03,282.35a [4,287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.287) = [≈Вульг. 4.10.8](mbh/4.10.html#v8) = ≈крит. 04,9.7c [13,999.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.999) = [≈Вульг. 13.14.408](mbh/13.14.html#v408) = ≈крит. 13,15.31a
+[MBH. 9,1901.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.1901) = [≈Vulg. 9.33.6](mbh/9.33.html#v6) = ≈krit. 09,32.5c [1,4527.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4527) [5125.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5125) = [≈Vulg. 1.130.58](mbh/1.130.html#v58) = ≈krit. 01,154.9c [3,16893.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16893) = [≈Vulg. 3.298.35](mbh/3.298.html#v35) = ≈krit. 03,282.35a [4,287.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.287) = [≈Vulg. 4.10.8](mbh/4.10.html#v8) = ≈krit. 04,9.7c [13,999.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.999) = [≈Vulg. 13.14.408](mbh/13.14.html#v408) = ≈krit. 13,15.31a
 [R. 5,59,18.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,59,18)
 [KATHĀS. 49,159.](https://sanskrit-lexicon-scans.github.io/kss/index.html?49,159)
 [MĀRK. P. 49,2.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?49,2) [134,22.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?134,22) *prativākyaṃ vadasva*
-[MBH. 3,2732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2732) = [≈Вульг. 3.69.39](mbh/3.69.html#v39) = ≈крит. 03,67.11a *satyaṃ vade*
-[13722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13722) = [≈Вульг. 3.207.22](mbh/3.207.html#v22) = ≈крит. 03,198.21c *vṛṣaparvāṇamavadanta* sprachen zu
-[11544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11544) = [≈Вульг. 3.157.53](mbh/3.157.html#v53) = ≈крит. 03,154.42a *vadasvainaṃ nideśānmama śāsanam*
+[MBH. 3,2732.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2732) = [≈Vulg. 3.69.39](mbh/3.69.html#v39) = ≈krit. 03,67.11a *satyaṃ vade*
+[13722.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.13722) = [≈Vulg. 3.207.22](mbh/3.207.html#v22) = ≈krit. 03,198.21c *vṛṣaparvāṇamavadanta* sprachen zu
+[11544.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11544) = [≈Vulg. 3.157.53](mbh/3.157.html#v53) = ≈krit. 03,154.42a *vadasvainaṃ nideśānmama śāsanam*
 [R. 7,23,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,23,2,7) *devānāṃ tvāmahaṃ vacanādvade* ich spreche zu dir im Namen der Götter
 [MĀRK. P. 66,24.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?66,24) besprechen, sprechen über, mittheilen, angeben: *brahmavādyamavadetām*
 [TS. 2,5,8,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?2,5,8,3) *vadasva tadvibhūtīḥ*

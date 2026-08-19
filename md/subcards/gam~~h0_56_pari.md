@@ -11,12 +11,12 @@
 [5,64,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.064.html#rv05.064.01) *tāni ratho bhūtvā paryagacchattāni parigatyātmannadhatta*
 [ŚAT. BR. 9,4,1,2.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,1,2) [15.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,4,1,15) [5,1,36.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,5,1,36) [8,2,4,16.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?8,2,4,16) — *tāvāśramānnadīścaiva vanāni ca sarāṃsi ca . tasyāṃ niśi vicinvantau daṃpatī parijagmatuḥ ..*
 [SĀV. 6,3.]
-[MBH. 1,7918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7918) = [≈Вульг. 1.216.11](mbh/1.216.html#v11) = ≈крит. 01,208.10a *aśokavṛkṣam*
-[3,2507.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2507) = [≈Вульг. 3.64.107](mbh/3.64.html#v107) = ≈крит. 03,61.102a [R. 2,55,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,24) *taṃ hayaṃ tatra parigamya pradakṣiṇam*
+[MBH. 1,7918.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7918) = [≈Vulg. 1.216.11](mbh/1.216.html#v11) = ≈krit. 01,208.10a *aśokavṛkṣam*
+[3,2507.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2507) = [≈Vulg. 3.64.107](mbh/3.64.html#v107) = ≈krit. 03,61.102a [R. 2,55,24.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,55,24) *taṃ hayaṃ tatra parigamya pradakṣiṇam*
 [1,13,34.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,13,34) *meruṃ parigantum*
 [5,3,37.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,3,37) *yathā hi merurbhagavatā* (d. i. *sūryeṇa) nityaśaḥ parigamyate*
 [MBH. 3,8783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8783) *sarvaloko hyayaṃ manye buddhyā parigatastvayā*
-[12,8319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8319) = [≈Вульг. 12.229.6](mbh/12.229.html#v6) = ≈крит. 12,222.6a [R. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,14) [4,52,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,52,12) *senāparigata* von einem Heere umgeben
+[12,8319.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8319) = [≈Vulg. 12.229.6](mbh/12.229.html#v6) = ≈krit. 12,222.6a [R. 1,61,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,14) [4,52,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,52,12) *senāparigata* von einem Heere umgeben
 [RAGH. ed. Calc. 1,38.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?1,38) *latāparigatairdrumaiḥ*
 [R. 6,15,5.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,15,5) *valkadukūlakuthādibhiḥ parigataḥ*
 [BHAṬṬ. 10,1.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?10,1) *viśadaprabhāparigataḥ*
@@ -61,11 +61,11 @@
   <sub>attested</sub>
 
 **4)** — 4) in einen Zustand übergehen, theilhaft werden, erlangen: *vṛṣalatvaṃ parigatāḥ*
-[MBH. 13,2103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2103) = [≈Вульг. 13.33.21](mbh/13.33.html#v21) = ≈крит. 13,33.19a [2105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2105) = [≈Вульг. 13.33.23](mbh/13.33.html#v23) = ≈крит. 13,33.19c [14,832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.832) = [≈Вульг. 14.29.16](mbh/14.29.html#v16) = ≈крит. 14,29.16c *mānuṣatām*
-[13,6738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6738) = [≈Вульг. 13.145.56](mbh/13.145.html#v56) = ≈крит. 13,133.55a *śāntim*
+[MBH. 13,2103.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2103) = [≈Vulg. 13.33.21](mbh/13.33.html#v21) = ≈krit. 13,33.19a [2105.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2105) = [≈Vulg. 13.33.23](mbh/13.33.html#v23) = ≈krit. 13,33.19c [14,832.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.832) = [≈Vulg. 14.29.16](mbh/14.29.html#v16) = ≈krit. 14,29.16c *mānuṣatām*
+[13,6738.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.6738) = [≈Vulg. 13.145.56](mbh/13.145.html#v56) = ≈krit. 13,133.55a *śāntim*
 
-[2,1761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1761) = [≈Вульг. 2.49.37](mbh/2.49.html#v37) = ≈крит. 02,45.36c *parigatavedana*
-[12,12070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12070) = [≈Вульг. 12.321.27](mbh/12.321.html#v27) = ≈крит. 12,309.26a *parigata = prāpta*
+[2,1761.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1761) = [≈Vulg. 2.49.37](mbh/2.49.html#v37) = ≈krit. 02,45.36c *parigatavedana*
+[12,12070.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12070) = [≈Vulg. 12.321.27](mbh/12.321.html#v27) = ≈krit. 12,309.26a *parigata = prāpta*
 [TRIK. 3,3,171.](https://sanskrit-lexicon-scans.github.io/medini/app2?3,3,171)
 [MED. t. 205.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,205)
 
@@ -81,9 +81,9 @@
 
 **5)** — 5) *parigata* (umgeben) erfüllt, in Besitz genommen, behaftet: *parigataḥ kṣudhā*
 [PAÑCAT. I,55.](https://sanskrit-lexicon-scans.github.io/pantankose/app1?1,55) *kṣudhāpari˚*
-[MBH. 14,2717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2717) = [≈Вульг. 14.90.29](mbh/14.90.html#v29) = ≈крит. 14,93.6a *śvāsahikkā˚*
+[MBH. 14,2717.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.2717) = [≈Vulg. 14.90.29](mbh/14.90.html#v29) = ≈krit. 14,93.6a *śvāsahikkā˚*
 [SUŚR. 2,501,9.] *cintā˚*
-[MBH. 3,15091.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15091) = [≈Вульг. 3.249.22](mbh/3.249.html#v22) = ≈крит. 03,238.21a [8,3609.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3609) = [≈Вульг. 8.72.16](mbh/8.72.html#v16) = ≈крит. 08,50.48a *hrī˚*
+[MBH. 3,15091.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15091) = [≈Vulg. 3.249.22](mbh/3.249.html#v22) = ≈krit. 03,238.21a [8,3609.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3609) = [≈Vulg. 8.72.16](mbh/8.72.html#v16) = ≈krit. 08,50.48a *hrī˚*
 [HIT. I,128.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app1?1,128) [MṚCCH. 8,11.] *adhvaśrama˚*
 [MEGH. 17.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?17) *bhramaṇaparigataṃ bhaikṣam*
 [ŚĀNTIŚ. 4,7.]

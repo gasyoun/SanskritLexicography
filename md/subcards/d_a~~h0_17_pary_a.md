@@ -5,7 +5,7 @@
 
 **1)** — *paryā* med.
  1) sich aneignen, lernen: *prajñāṃ paryādadīta*
-[MBH. 12,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3256) = [≈Вульг. 12.86.29](mbh/12.86.html#v29) = ≈крит. 12,87.29a
+[MBH. 12,3256.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3256) = [≈Vulg. 12.86.29](mbh/12.86.html#v29) = ≈krit. 12,87.29a
 
 - **RU:** — *paryā* мед.
  1) усваивать, учиться: *prajñāṃ paryādadīta*
@@ -31,7 +31,7 @@
   <sub>attested</sub>
 
 **4)** — 4) ergreifen, fassen: *paryādadānaṃ cāstrāṇi*
-[MBH. 5,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1940) = [≈Вульг. 5.49.22](mbh/5.49.html#v22) = ≈крит. 05,48.22a
+[MBH. 5,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1940) = [≈Vulg. 5.49.22](mbh/5.49.html#v22) = ≈krit. 05,48.22a
 
 - **RU:** — 4) схватывать, брать: *paryādadānaṃ cāstrāṇi*
 [MBH. 5,1940.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1940) = [≈Вульг. 5.49.22](mbh/5.49.html#v22) = ≈крит. 05,48.22a

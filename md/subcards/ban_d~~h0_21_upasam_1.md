@@ -4,7 +4,7 @@
 
 
 **13)** — 13) Folge: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* so v. a. was Heil bringt
-[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](mbh/4.66.html#v21) = ≈крит. 04,61.21c
+[MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Vulg. 4.66.21](mbh/4.66.html#v21) = ≈krit. 04,61.21c
 
 - **RU:** — 13) следствие: *mā te svako 'rtho nipateta mohāttatsaṃvidhātavyamariṣṭbandham (= ariṣṭbaddham)* так преим. то, что приносит благо
 [MBH. 4,2126.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.2126) = [≈Вульг. 4.66.21](mbh/4.66.html#v21) = ≈крит. 04,61.21c

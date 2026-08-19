@@ -9,10 +9,10 @@
 [AV. 5,7,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.07) med. heraus —, herablocken: *vi tvadāpo na parvatasya pṛṣṭhādukthebhirindrānayanta yajñaiḥ*
 [ṚV. 6,24,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv06.024.html#rv06.024.06) verscheuchen, vertreiben, entfernen, Jmd Etwas benehmen; act.: *bhrātṛvyānyadvyanaiṣīḥ samastān*
 [HARIV. 7591.](https://sanskrit-lexicon-scans.github.io/hariv?7591) *bhāramenaṃ vineṣyāmi pāṇḍavānām*
-[MBH. 6,2579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2579) = [≈Вульг. 6.59.71](mbh/6.59.html#v71) = ≈крит. 06,55.69a *agniste tejo mā vi nait* nehme nicht weg, raube nicht
+[MBH. 6,2579.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2579) = [≈Vulg. 6.59.71](mbh/6.59.html#v71) = ≈krit. 06,55.69a *agniste tejo mā vi nait* nehme nicht weg, raube nicht
 [TS. 1,1,10,3.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?1,1,10,3) *krodham*
 [ŚĀṄKH. BR. 12,3.] *ahaṃ hi te vineṣyāmi yuddhaśraddhāmitaḥ param*
-[MBH. 5,3475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3475) = [≈Вульг. 5.97.21](mbh/5.97.html#v21) = ≈крит. 05,95.21a *darpamasyāḥ*
+[MBH. 5,3475.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.3475) = [≈Vulg. 5.97.21](mbh/5.97.html#v21) = ≈krit. 05,95.21a *darpamasyāḥ*
 [R. 3,62,29.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,62,29)
 [BHĀG. P. 9,10,7.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,10,7) *āyāsam*
 [R. 2,69,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,69,3) *duḥkham*
@@ -20,20 +20,20 @@
 [RAGH. 2,49.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,49) *varṇavikriyām*
 [15,48.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?15,48) *ūḍhahāsam . sadyo 'subhiḥ saha vineṣyati*
 [BHĀG. P. 2,7,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,7,25) [7,8,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,54) *vinītaśalyāṃsturagān*
-[MBH. 7,4346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4346) = [≈Вульг. 7.112.55](mbh/7.112.html#v55) = ≈крит. 07,87.55a *vinītakilviṣa*
-[5,7518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7518) = [≈Вульг. 5.192.31](mbh/5.192.html#v31) = ≈крит. 05,193.28a *˚nidra*
+[MBH. 7,4346.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4346) = [≈Vulg. 7.112.55](mbh/7.112.html#v55) = ≈krit. 07,87.55a *vinītakilviṣa*
+[5,7518.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7518) = [≈Vulg. 5.192.31](mbh/5.192.html#v31) = ≈krit. 05,193.28a *˚nidra*
 [RAGH. 5,72.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,72) [9,71.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?9,71) *˚kheda*
 [13,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?13,35) *˚moha* (gedr. *nivītamoha*)
-[MBH. 12,8949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8949) = [≈Вульг. 12.251.9](mbh/12.251.html#v9) = ≈крит. 06,24.70a *vinīta = hṛta, apanīta*
+[MBH. 12,8949.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8949) = [≈Vulg. 12.251.9](mbh/12.251.html#v9) = ≈krit. 06,24.70a *vinīta = hṛta, apanīta*
 [H. an. 3,299.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,299)
 [MED. t. 154. fgg.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,154) med.: *vyaneṣyathā dhārtarāṣṭrasya darpam*
-[MBH. 5,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.785) = [≈Вульг. 5.27.19](mbh/5.27.html#v19) = ≈крит. 05,27.19a Dieses ist nach
+[MBH. 5,785.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.785) = [≈Vulg. 5.27.19](mbh/5.27.html#v19) = ≈krit. 05,27.19a Dieses ist nach
 [P. 1,3,37](https://ashtadhyayi.com/sutraani/1/3/37) und [VOP. 23,29](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,29) nur dann am Platze, wenn das Subject Etwas an ihm Haftendes (aber kein körperliches Leiden) vertreibt: *krodhaṃ vinayate* er verscheucht, unterdrückt seinen Zorn
 [P.], Sch. [VOP.]; aber *gaḍuṃ (gaṇḍaṃ) vinayati* er vertreibt sich den Kropf (eine Beule) diess. *vyanayanta*
 [R. 2,76,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,23) *vinayante sma tadyodhā madhubhirvijayaśramam*
 [RAGH. 4,65.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?4,65) *vineṣye vā priyānprāṇān* so v. a. sterben
 [BHAṬṬ. 8,21.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?8,21) *granthiṃ vinīya hṛdayasya*
-[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) = [≈Вульг. 5.36.4](mbh/5.36.html#v4) = ≈крит. 05,36.4a *vinīya tamāyāsam*
+[MBH. 5,1263.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1263) = [≈Vulg. 5.36.4](mbh/5.36.html#v4) = ≈krit. 05,36.4a *vinīya tamāyāsam*
 [R. 5,72,1.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,72,1)
 [KUMĀRAS. 1,9.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,9)
 [KĀM. NĪTIS. 12,18.]
@@ -113,7 +113,7 @@
   <sub>attested</sub>
 
 **6)** — 6) lenken: *vinayantaṃ javenāśvān*
-[MBH. 4,599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.599) = [≈Вульг. 4.19.43](mbh/4.19.html#v43) = ≈крит. 04,18.32c
+[MBH. 4,599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.599) = [≈Vulg. 4.19.43](mbh/4.19.html#v43) = ≈krit. 04,18.32c
 
 - **RU:** — 6) направлять, управлять: *vinayantaṃ javenāśvān*
 [MBH. 4,599.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.599) = [≈Вульг. 4.19.43](mbh/4.19.html#v43) = ≈крит. 04,18.32c
@@ -126,13 +126,13 @@
 [an. 3,299.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?3,299)
 [MED. t. 154.](https://sanskrit-lexicon-scans.github.io/medini/app1?t,154) *vinītaistu vrajennityamāśugaiḥ*
 [M. 4,68.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,68) *nāvinītairvrajeddhuryaiḥ*
-[67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,67) [MBH. 4,368. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.368) = [≈Вульг. 4.13.44](mbh/4.13.html#v44) = ≈крит. 04,12.31a [SUŚR. 2,421,13.] *tapasvisaṃsargavinītasattve *
+[67.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,67) [MBH. 4,368. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.368) = [≈Vulg. 4.13.44](mbh/4.13.html#v44) = ≈krit. 04,12.31a [SUŚR. 2,421,13.] *tapasvisaṃsargavinītasattve *
 
 * tapovane*
 [RAGH. 14,75.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,75) züchtigen: *gaṇāñjanapadānapi . svadharmāccalitānrājā vinīya sthāpayetpathi*
 [YĀJÑ. 1,360.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,360)
 [KUMĀRAS. 3,41.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,41) erziehen, unterrichten, unterweisen: *gadāsicarmagrahaṇeṣu śūrānastreṣu śikṣāsu rathāśvayānevinayet*
-[MBH. 3,12585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12585) = [≈Вульг. 3.183.29](mbh/3.183.html#v29) = ≈крит. 03,180.28a [12,3974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3974)
+[MBH. 3,12585.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12585) = [≈Vulg. 3.183.29](mbh/3.183.html#v29) = ≈krit. 03,180.28a [12,3974.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.3974)
 [RAGH. 3,29.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,29) [5,10.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?5,10)
 [KUMĀRAS. 1,34.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,34)
 [KATHĀS. 5,139.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,139) [9,72.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,72)
@@ -147,10 +147,10 @@
 [RAGH. 3,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,35) *mithyā*
 [M. 4,196.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,196) *vinītaḥ praviśetsabhām*
 [8,1.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,1) *vācā bhṛśaṃ vīnītaḥ:* (sic) *syāddhṛdayena tathā kṣuraḥ*
-[MBH. 1,5606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Вульг. 1.140.17](mbh/1.140.html#v17) = ≈крит. 12,138.10a *prājñena vinītena jñānavijñānavedinā*
+[MBH. 1,5606.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5606) = [≈Vulg. 1.140.17](mbh/1.140.html#v17) = ≈krit. 12,138.10a *prājñena vinītena jñānavijñānavedinā*
 [M. 9,41.](https://sanskrit-lexicon-scans.github.io/manu/index.html?9,41)
 [YĀJÑ. 1,308.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?1,308)
-[MBH. 3,3059.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3059) = [≈Вульг. 3.78.30](mbh/3.78.html#v30) = ≈крит. 03,77.28c
+[MBH. 3,3059.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.3059) = [≈Vulg. 3.78.30](mbh/3.78.html#v30) = ≈krit. 03,77.28c
 [ARJ. 2,10.]
 [R. 1,4,27.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,27) [2,33,27](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,33,27) [4,61,42.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,61,42)
 [BHARTṚ. 3,47.](https://sanskrit-lexicon-scans.github.io/bhartrhari/app2?3,47)
@@ -222,8 +222,8 @@
 
 **8)** — 8) zu Ende bringen, verbringen: *kathamapi yāminīṃ vinīya*
 [GĪT. 8,1.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?8,1) durchführen, ausführen: *suvinītena karmaṇā*
-[MBH. 13,2201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2201) = [≈Вульг. 13.37.18](mbh/13.37.html#v18) = ≈крит. 13,37.19c *tarkayā suvinītayā*
-[4,892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.892) = [≈Вульг. 4.26.10](mbh/4.26.html#v10) = ≈крит. 04,25.10a
+[MBH. 13,2201.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2201) = [≈Vulg. 13.37.18](mbh/13.37.html#v18) = ≈krit. 13,37.19c *tarkayā suvinītayā*
+[4,892.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.892) = [≈Vulg. 4.26.10](mbh/4.26.html#v10) = ≈krit. 04,25.10a
 
 - **RU:** — 8) завершать, проводить (время): *kathamapi yāminīṃ vinīya*
 [GĪT. 8,1.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?8,1) проводить в жизнь, осуществлять: *suvinītena karmaṇā*

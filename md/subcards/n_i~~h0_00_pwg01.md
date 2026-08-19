@@ -15,10 +15,10 @@
   <sub>attested</sub>
 
 **6)** — 6) hintragen, wegtragen, forttragen, hintragen zu
-[MBH. 3,11008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11008) = [≈Вульг. 3.142.60](mbh/3.142.html#v60) = крит. — *sarvaḥ praiṣyajanastatra ratnāni vividhāni ca — nināya*
+[MBH. 3,11008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11008) = [≈Vulg. 3.142.60](mbh/3.142.html#v60) = krit. — *sarvaḥ praiṣyajanastatra ratnāni vividhāni ca — nināya*
 [R. GORR. 2,83,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,83,22) *saparvatavanoddeśām — laṅkāmapi sanāgāśvāṃ nayituṃ śaktirasti me*
 [5,35,35.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,35,35) *jānāmi gamane śaktiṃ nayituṃ māṃ ca te kape* 40. *āruhemāṃ mama śroṇiṃ neṣyāmi tvāṃ vihāyasā*
-[MBH. 1,5966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5966) = [≈Вульг. 1.151.36](mbh/1.151.html#v36) = ≈крит. 01,138.28a
+[MBH. 1,5966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5966) = [≈Vulg. 1.151.36](mbh/1.151.html#v36) = ≈krit. 01,138.28a
 [VID. 280.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?280) *śivena naya (aśva) māṃ pathā*
 [31.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?31) [37.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?37) [28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?28) *nayasva — tvaṃ māṃ tasyā niveśanam*
 [MĀRK. P. 16,19.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?16,19) *taṃ tathā nīyamānamavalokya*
@@ -31,7 +31,7 @@
 [VID. 289.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?289)
 
 Die Bed. ertragen scheint das Wort in der folgenden Stelle zu haben: *priyāpriye cātmasamaṃ nayīta*
-[MBH. 5,1264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1264) = [≈Вульг. 5.36.5](mbh/5.36.html#v5) = ≈крит. 01,82.7a
+[MBH. 5,1264.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.1264) = [≈Vulg. 5.36.5](mbh/5.36.html#v5) = ≈krit. 01,82.7a
 
 - **RU:** — 6) нести, уносить, относить, приносить к кому-либо
 [MBH. 3,11008.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11008) = [≈Вульг. 3.142.60](mbh/3.142.html#v60) = крит. — *sarvaḥ praiṣyajanastatra ratnāni vividhāni ca — nināya*
@@ -64,7 +64,7 @@ Die Bed. ertragen scheint das Wort in der folgenden Stelle zu haben: *priyāpriy
 
 **8)** — 8) *vyavahārān* Processe führen, leiten (vom König als Richter)
 [YĀJÑ. 2,19.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,19) *kriyām* eine heilige Handlung führen, leiten: *evaṃ śāstreṣu bhinneṣu bahudhā nīyate kriyā*
-[MBH. 3,11252.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11252) = [≈Вульг. 3.148.6](mbh/3.148.html#v6) = ≈крит. 03,147.34a
+[MBH. 3,11252.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11252) = [≈Vulg. 3.148.6](mbh/3.148.html#v6) = ≈krit. 03,147.34a
 
 - **RU:** — 8) *vyavahārān* вести, руководить судебными делами (о царе как судье)
 [YĀJÑ. 2,19.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,19) *kriyām* вести, руководить священным обрядом: *evaṃ śāstreṣu bhinneṣu bahudhā nīyate kriyā*
@@ -109,7 +109,7 @@ Nach [VOP. 23,28](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?23,2
 [252.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,252) [256. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,256) [YĀJÑ. 2,151. fg.](https://sanskrit-lexicon-scans.github.io/yajnavalkya/app1?2,151) *yathā nayatyasṛkpātairmṛgasya mṛgayuḥ padam . nayettathānumānena dharmasya nṛpatiḥ padam ..*
 [M. 8,44.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,44) Nach [P. 1,3,36](https://ashtadhyayi.com/sutraani/1/3/36) in der Bed. *jñāna* (vgl. u. 11) med.: *tattvaṃ nayate = niścinoti*
 Schol. — In der Stelle: *na śaktastāni (asurāṇāṃ trīṇi purāṇi) maghavā netuṃ sarvāyudhairapi*
-[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) = [≈Вульг. 7.202.66](mbh/7.202.html#v66) = ≈крит. 07,173.54a ist wohl *jetuṃ* st. *netuṃ* zu lesen.
+[MBH. 7,9557](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.9557) = [≈Vulg. 7.202.66](mbh/7.202.html#v66) = ≈krit. 07,173.54a ist wohl *jetuṃ* st. *netuṃ* zu lesen.
 
 - **RU:** — 12) выяснять что-либо, доходить до чего-либо, устанавливать: *sīmāṃ prati samutpanne vivāde grāmayordvayoḥ . jyaiṣṭhe māsi nayetsīmāṃ suprakāśeṣu setuṣu ..*
 [M. 8,245.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,245) *etairliṅgairnayetsīmāṃ rājā*

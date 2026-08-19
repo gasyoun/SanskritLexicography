@@ -10,11 +10,11 @@
 [CHĀND. UP. 1,2,9.] *vyādāya* mit offenem Munde: *svapiti*
 [P. 3,4,21](https://ashtadhyayi.com/sutraani/3/4/21), Vārtt. *śṛṇvantaḥ*
 [BHĀG. P. 3,16,14.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,16,14) med. *vyādadāna*
-[MBH. 3,11502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11502) = [≈Вульг. 3.157.11](mbh/3.157.html#v11) = ≈крит. 03,154.7c partic. *vyātta* und *vyādita* geöffnet: *vyāttāsya*
-[MBH. 3,2420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2420) = [≈Вульг. 3.64.20](mbh/3.64.html#v20) = ≈крит. 03,61.19c *vyāttānana*
+[MBH. 3,11502.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11502) = [≈Vulg. 3.157.11](mbh/3.157.html#v11) = ≈krit. 03,154.7c partic. *vyātta* und *vyādita* geöffnet: *vyāttāsya*
+[MBH. 3,2420.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2420) = [≈Vulg. 3.64.20](mbh/3.64.html#v20) = ≈krit. 03,61.19c *vyāttānana*
 [BHAG. 11,24.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,24)
 [R. 3,7,8.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,7,8) *vyāditāsya*
-[MBH. 2,946.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.946) = [≈Вульг. 2.24.24](mbh/2.24.html#v24) = ≈крит. 02,22.23a [3,11115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11115) = [≈Вульг. 3.145.53](mbh/3.145.html#v53) = крит. — [6,5326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5326) = [≈Вульг. 6.114.39](mbh/6.114.html#v39) = ≈крит. 06,110.38a [5448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5448) = [≈Вульг. 6.116.73](mbh/6.116.html#v73) = ≈крит. 06,112.71c [13,7317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7317) = [≈Вульг. 13.156.27](mbh/13.156.html#v27) = ≈крит. 13,141.24a
+[MBH. 2,946.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.946) = [≈Vulg. 2.24.24](mbh/2.24.html#v24) = ≈krit. 02,22.23a [3,11115.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.11115) = [≈Vulg. 3.145.53](mbh/3.145.html#v53) = krit. — [6,5326.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5326) = [≈Vulg. 6.114.39](mbh/6.114.html#v39) = ≈krit. 06,110.38a [5448.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.5448) = [≈Vulg. 6.116.73](mbh/6.116.html#v73) = ≈krit. 06,112.71c [13,7317.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.7317) = [≈Vulg. 13.156.27](mbh/13.156.html#v27) = ≈krit. 13,141.24a
 [HARIV. 16005. fg.](https://sanskrit-lexicon-scans.github.io/hariv?16005) *vyātta* _n._ das geöffnete Maul, Rachen: *(ahiḥ) vyāttaṃ na saṃ yamat*
 [AV. 6,56,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.056.html#av06.056.01) [10,4,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.08) [5,42.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.005.html#av10.005.42)
 [VS. 31,22.](https://sanskrit-lexicon-scans.github.io/vajasasa/app1?31,22)

@@ -13,7 +13,7 @@
   <sub>attested</sub>
 
 **ni+vac 2))** — 2) schmähen: *duryodhanaṃ naikṛtikaṃ nyavocat*
-[MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320) = [≈Вульг. 9.59.12](mbh/9.59.html#v12) = ≈крит. 09,58.12c
+[MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320) = [≈Vulg. 9.59.12](mbh/9.59.html#v12) = ≈krit. 09,58.12c
 
 - **RU:** — 2) поносить, хулить: *duryodhanaṃ naikṛtikaṃ nyavocat*
 [MBH. 9,3320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.3320) = [≈Вульг. 9.59.12](mbh/9.59.html#v12) = ≈крит. 09,58.12c

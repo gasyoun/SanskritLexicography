@@ -15,7 +15,7 @@
 [Spr. 2312.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2312) *bhadram*
 [BHĀG. P. 4,14,24.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,14,24) *anvavindata* med.
 [8,8,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,8,19) [10,8,47.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,8,47) [11,7,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,7,20) *śāradvatīṃ tato bhāryāṃ kṛpīṃ droṇo 'nvavindata* so v. a. ehelichte
-[MBH. 1,5114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5114) = [≈Вульг. 1.130.47](mbh/1.130.html#v47) = ≈крит. 01,121.12c nach Jmd finden
+[MBH. 1,5114.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5114) = [≈Vulg. 1.130.47](mbh/1.130.html#v47) = ≈krit. 01,121.12c nach Jmd finden
 [TS. 7,1,6,1.](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?7,1,6,1) pass. vorhanden —, da sein: *sa ghā vide anvindro gaveṣaṇaḥ*
 [ṚV. 1,132,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.132.html#rv01.132.03) *trayodaśo māso nānuvidyate*
 [AIT. BR. 2,12.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,12) *anuvitta* aufgefunden, vorhanden

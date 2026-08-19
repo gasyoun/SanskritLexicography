@@ -15,7 +15,7 @@
   <sub>attested</sub>
 
 **halten_für)** — *pra* halten für: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
-[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Вульг. 12.8.13](mbh/12.8.html#v13) = ≈крит. 12,8.13c
+[MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Vulg. 12.8.13](mbh/12.8.html#v13) = ≈krit. 12,8.13c
 
 - **RU:** — *pra* считать за, принимать за: *abhiśastaṃ prapaśyanti daridraṃ pārśvataḥ sthitam*
 [MBH. 12,214.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.214) = [≈Вульг. 12.8.13](mbh/12.8.html#v13) = ≈крит. 12,8.13c

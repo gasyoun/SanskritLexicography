@@ -21,7 +21,7 @@
   <sub>attested</sub>
 
 **2)** — 2) ablegen, niederlegen, wegstellen: *vinidhāya tato bhāraṃ saṃnidhāya phalāni ca*
-[MBH. 1,2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) = [≈Вульг. 1.73.31](mbh/1.73.html#v31) = ≈крит. 01,67.30a *pātram*
+[MBH. 1,2984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2984) = [≈Vulg. 1.73.31](mbh/1.73.html#v31) = ≈krit. 01,67.30a *pātram*
 [SUŚR. 2,152,4.]
 
 - **RU:** — 2) отложить, положить, поставить в сторону: *vinidhāya tato bhāraṃ saṃnidhāya phalāni ca*
@@ -39,7 +39,7 @@
 [GĪT. 11,9.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,9) *hṛdi* Jmd in's Herz schliessen: *hṛdi vinidhāya harim*
 [31.](https://sanskrit-lexicon-scans.github.io/gitagov/app1?11,31) einsetzen in: *yatrāhaṃ* (Indra spricht) *devānāmaindre vinihitaḥ pade*
 [HARIV. 3988](https://sanskrit-lexicon-scans.github.io/hariv?3988) — *vinihita*
-[MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Вульг. 6.83.40](mbh/6.83.html#v40) = ≈крит. 06,79.39a fehlerhaft für *vinihata* .
+[MBH. 6,3678](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.3678) = [≈Vulg. 6.83.40](mbh/6.83.html#v40) = ≈krit. 06,79.39a fehlerhaft für *vinihata* .
 
 - **RU:** — 3) надеть, наложить, поставить —, положить на, в
 [RĀJA-TAR. 2,104.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?2,104) *madanaripuṇā mūrdhni dhavalaṃ kapālaṃ yasyoccairvinihitam*

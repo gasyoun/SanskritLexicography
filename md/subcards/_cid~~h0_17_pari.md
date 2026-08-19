@@ -18,7 +18,7 @@
   <sub>attested</sub>
 
 **2)** — 2) abschneiden: *vāsaso 'rdhaṃ paricchidya*
-[MBH. 3,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2593) = [≈Вульг. 3.65.62](mbh/3.65.html#v62) = ≈крит. 03,62.32c zerschneiden, verstümmeln: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
+[MBH. 3,2593.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2593) = [≈Vulg. 3.65.62](mbh/3.65.html#v62) = ≈krit. 03,62.32c zerschneiden, verstümmeln: *te nipetuḥ paricchinnā bhūmau rāmasya sāyakaiḥ*
 [R. 3,32,26.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,32,26)
 
 - **RU:** 2) отрезать: *vāsaso 'rdhaṃ paricchidya*

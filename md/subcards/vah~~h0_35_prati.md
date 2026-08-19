@@ -15,7 +15,7 @@
   <sub>attested</sub>
 
 **2))** — Vgl. *prativāha, pratīvāha, prativoḍhavya* . — caus. hinführen im Fliessen, hinschwemmen: *kimarthaṃ ca saricchreṣṭhā tamṛṣiṃ pratyavāhayat*
-[MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358) = [≈Вульг. 9.42.1](mbh/9.42.html#v1) = ≈крит. 09,41.1c
+[MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358) = [≈Vulg. 9.42.1](mbh/9.42.html#v1) = ≈krit. 09,41.1c
 
 - **RU:** — ср. *prativāha, pratīvāha, prativoḍhavya* . — caus. нести в потоке, смывать в направлении (к чему-либо): *kimarthaṃ ca saricchreṣṭhā tamṛṣiṃ pratyavāhayat*
 [MBH. 9,2358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?9.2358) = [≈Вульг. 9.42.1](mbh/9.42.html#v1) = ≈крит. 09,41.1c

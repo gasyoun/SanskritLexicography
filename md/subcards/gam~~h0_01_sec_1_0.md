@@ -31,7 +31,7 @@
 
 **b))** — b) hingegangen, abgeschieden: *mā gatānāmā dīdhīthā ye nayanti parāvatam*
 [AV. 8,1,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.08) *na hyeṣa sthāsyati ciraṃ gata eva narādhamaḥ* jam periit
-[MBH. 5,472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.472) = [≈Вульг. 5.15.25](mbh/5.15.html#v25) = ≈крит. 05,15.23c
+[MBH. 5,472.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.472) = [≈Vulg. 5.15.25](mbh/5.15.html#v25) = ≈krit. 05,15.23c
 
 - **RU:** — b) ушедший, отошедший (скончавшийся): *mā gatānāmā dīdhīthā ye nayanti parāvatam*
 [AV. 8,1,8.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av08.001.html#av08.001.08) *na hyeṣa sthāsyati ciraṃ gata eva narādhamaḥ* уже скончался
@@ -63,7 +63,7 @@
 [AK. 3,2,45.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,45) sehr häufig am Anf. eines adj. comp.: *gataklama*
 [M. 7,225.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,225)
 [N. 11,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?11,1) *gatendriya*
-[MBH. 3,15033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15033) = [≈Вульг. 3.246.25](mbh/3.246.html#v25) = ≈крит. 03,235.24a *˚cetana*
+[MBH. 3,15033.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15033) = [≈Vulg. 3.246.25](mbh/3.246.html#v25) = ≈krit. 03,235.24a *˚cetana*
 [N. 9,20.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?9,20) [10,19.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?10,19) *˚cetas*
 [8,1.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?8,1) *˚saṃkalpa*
 [4,28.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?4,28) *˚sattva*
@@ -127,7 +127,7 @@
 [M. 7,147.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,147) *sabhām*
 [8,95.](https://sanskrit-lexicon-scans.github.io/manu/index.html?8,95) *vāṇanikṛttāni śirāṃsi dviṣatām — sphurantyākuñcitoṣṭhāni gāṃ gatāni*
 [R. 3,31,21.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,31,21)
-[MBH. 2,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.458) = [≈Вульг. 2.11.41](mbh/2.11.html#v41) = крит. — *putrāṃstasya gato nṛpaḥ*
+[MBH. 2,458.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.458) = [≈Vulg. 2.11.41](mbh/2.11.html#v41) = krit. — *putrāṃstasya gato nṛpaḥ*
 [R. 1,57,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,13) *bhartāram* zu einem Gatten gelangt
 [ŚĀK. 88.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?88) *(ādityam) madhyaṃ nabhaso gatam*
 [M. 4,37.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,37) *śmaśrūṇi gatānyāsyam* in den Mund gerathene Barthaare

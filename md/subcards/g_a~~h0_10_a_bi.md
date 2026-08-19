@@ -5,14 +5,14 @@
 
 **1)** — *abhi*
  1) herbeikommen; zugehen auf, herantreten zu, hingehen nach, anlangen bei: *pāvake vinivṛtte tu nīlo rājā 'bhyagāttadā*
-[MBH. 2,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1162) = [≈Вульг. 2.31.58](mbh/2.31.html#v58) = ≈крит. 02,28.36a
+[MBH. 2,1162.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1162) = [≈Vulg. 2.31.58](mbh/2.31.html#v58) = ≈krit. 02,28.36a
 [R. 1,20,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,20,2) *abhi sidhmo ajigādasya śatrūn*
 [ṚV. 1,33,13.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.033.html#rv01.033.13) *abhi prayāṃsi gahi*
 [8,49,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.049.html#rv08.049.04) *abhi yadvāṃ viśvapsnyo jigāti*
 [7,71,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.071.html#rv07.071.04) *drapsaḥ samudramabhi yajjigāti*
 [10,123,8.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.123.html#rv10.123.08) *tāsāmekāmidabhyaṃhuro gāt*
 [5,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.005.html#rv10.005.06) *gandharvarājo 'psarasamabhyagāt*
-[MBH. 3,1803.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1803) = [≈Вульг. 3.45.3](mbh/3.45.html#v3) = крит. —
+[MBH. 3,1803.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1803) = [≈Vulg. 3.45.3](mbh/3.45.html#v3) = krit. —
 [N. 7,6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app1?7,6)
 [RAGH. 11,35.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?11,35)
 [VID. 6.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?6) [329.](https://sanskrit-lexicon-scans.github.io/bchrest1/app3?329)
@@ -42,8 +42,8 @@
 
 **2)** — 2) gelangen zu, theilhaft werden: *śvetaṃ lindu mābhigām*
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*
-[MBH. 3,16625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16625) = [≈Вульг. 3.293.10](mbh/3.293.html#v10) = ≈крит. 03,277.10a — *tasya yauvanamabhyagāt*
-[MBH. 2,696](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.696) = [≈Вульг. 2.17.20](mbh/2.17.html#v20) = ≈крит. 02,16.19c fehlerhaft für *atyagāt* .
+[MBH. 3,16625.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.16625) = [≈Vulg. 3.293.10](mbh/3.293.html#v10) = ≈krit. 03,277.10a — *tasya yauvanamabhyagāt*
+[MBH. 2,696](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.696) = [≈Vulg. 2.17.20](mbh/2.17.html#v20) = ≈krit. 02,16.19c fehlerhaft für *atyagāt* .
 
 - **RU:** — 2) достигать чего-либо, приобщаться к чему-либо: *śvetaṃ lindu mābhigām*
 [CHĀND. UP. 8,14,1.] *sāvitrī tuṣṭimabhyagāt*

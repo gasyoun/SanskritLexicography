@@ -4,12 +4,12 @@
 
 
 **2)** — 2) in Jmd oder in Etwas Jmd oder Etwas erkennen, kennen als (oft so v. a. erklären für, nennen): *kathaṃ māṃ vetsi cāṇḍālam*
-[MBH. 13,1880. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1880) = [≈Вульг. 13.27.15](mbh/13.27.html#v15) = ≈крит. 13,28.14a *tapodhanaṃ vetsi na māmupasthitam*
+[MBH. 13,1880. fg.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1880) = [≈Vulg. 13.27.15](mbh/13.27.html#v15) = ≈krit. 13,28.14a *tapodhanaṃ vetsi na māmupasthitam*
 [ŚĀK. 76.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?76) *atha tu vetsi śuci vratamātmanaḥ* rein wissen
 [123.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?123) *anantalokāptimatho pratiṣṭhāṃ viddhi tvamenaṃ nihitaṃ guhāyām* wisse dass
 [KAṬHOP. 1,14.] *avināśi tu tadviddhi*
 [BHAG. 2,17.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?2,17) [13,19.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?13,19) [18,21.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?18,21)
-[MBH. 1,6012.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6012) = [≈Вульг. 1.153.1](mbh/1.153.html#v1) = ≈крит. 01,140.1a [3,2156.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2156) = [≈Вульг. 3.55.21](mbh/3.55.html#v21) = ≈крит. 03,52.20a [2222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2222) = [≈Вульг. 3.57.31](mbh/3.57.html#v31) = крит. — [2433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2433) = [≈Вульг. 3.64.33](mbh/3.64.html#v33) = ≈крит. 03,61.31c [2611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2611) = [≈Вульг. 3.66.4](mbh/3.66.html#v4) = ≈крит. 03,63.4a [2833.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2833) = [≈Вульг. 3.72.26](mbh/3.72.html#v26) = ≈крит. 03,70.23c
+[MBH. 1,6012.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6012) = [≈Vulg. 1.153.1](mbh/1.153.html#v1) = ≈krit. 01,140.1a [3,2156.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2156) = [≈Vulg. 3.55.21](mbh/3.55.html#v21) = ≈krit. 03,52.20a [2222.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2222) = [≈Vulg. 3.57.31](mbh/3.57.html#v31) = krit. — [2433.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2433) = [≈Vulg. 3.64.33](mbh/3.64.html#v33) = ≈krit. 03,61.31c [2611.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2611) = [≈Vulg. 3.66.4](mbh/3.66.html#v4) = ≈krit. 03,63.4a [2833.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2833) = [≈Vulg. 3.72.26](mbh/3.72.html#v26) = ≈krit. 03,70.23c
 [R. 1,61,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,61,17) [2,30,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,30,6) [40,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,40,7) [3,41,3.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,41,3)
 [MEGH. 97.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?97)
 
@@ -53,10 +53,10 @@
 [MEGH. 111.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?111)
 [RAGH. 3,43.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,43) med.: *vedate*
 [ŚVETĀŚV. UP. 5,6.] *vidmahe*
-[MBH. 1,3895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3895) = [≈Вульг. 1.97.32](mbh/1.97.html#v32) = ≈крит. 01,92.31a statt des zweiten acc. der nom. mit *iti*, z. B. *śikhaṇḍīti *
+[MBH. 1,3895.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3895) = [≈Vulg. 1.97.32](mbh/1.97.html#v32) = ≈krit. 01,92.31a statt des zweiten acc. der nom. mit *iti*, z. B. *śikhaṇḍīti *
 
 * ca tāṃ viduḥ*
-[MBH. 5,7407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7407) = [≈Вульг. 5.188.19](mbh/5.188.html#v19) = ≈крит. 05,189.17a
+[MBH. 5,7407.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7407) = [≈Vulg. 5.188.19](mbh/5.188.html#v19) = ≈krit. 05,189.17a
 [R. 1,57,8.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,57,8) *stena ityeva taṃ viduḥ*
 [Spr. 4915.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4915)
 [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *māṃ viditvā hṛteti* wenn er erfährt, dass
@@ -106,7 +106,7 @@
 [R. 1,48,17](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,48,17) ([49,17](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,49,17) [GORR.]). [ŚĀK. 14,4.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?14,4) *sa tu tadvyājamavidan*
 [KATHĀS. 37,214.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,214) *svaṃ tu nāṅgabhedaṃ viveda saḥ*
 [39,156.](https://sanskrit-lexicon-scans.github.io/kss/index.html?39,156) mit einem zweiten acc.: *tāṃ viditvā ciragatām*
-[MBH. 1,5962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5962) = [≈Вульг. 1.151.32](mbh/1.151.html#v32) = ≈крит. 01,138.24a *na viveda tayoratṛptayoḥ priyamatyantaviluptadarśanam*
+[MBH. 1,5962.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.5962) = [≈Vulg. 1.151.32](mbh/1.151.html#v32) = ≈krit. 01,138.24a *na viveda tayoratṛptayoḥ priyamatyantaviluptadarśanam*
 [KUMĀRAS. 4,2.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?4,2) [7,54.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?7,54) *na viveda gatāṃ niśām*
 [KATHĀS. 64,49.](https://sanskrit-lexicon-scans.github.io/kss/index.html?64,49)
 [RĀJA-TAR. 3,147.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,147) [405.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?3,405) [5,95.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,95) *nātmānaṃ vividurviddhamiṣubhiḥ*
@@ -130,7 +130,7 @@
 [VĀLAKH. 2,9.] *yā na vetti sadā puṃsāṃ caturāṇāṃ ratikramam*
 [VET. in LA. (III) 16,20.] *na vetti duḥkhamaṇvapi*
 [Spr. 4762.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4762) *na duḥkhamucitaṃ kiṃcidrājā veda yathā janaḥ*
-[MBH. 4,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.21) = [≈Вульг. 4.1.22](mbh/4.1.html#v22) = ≈крит. 04,1.18c *duḥkhaṃ vanavāsasya vetsyati*
+[MBH. 4,21.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.21) = [≈Vulg. 4.1.22](mbh/4.1.html#v22) = ≈krit. 04,1.18c *duḥkhaṃ vanavāsasya vetsyati*
 [R. 2,52,90](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,52,90) ([29](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,52,29) [GORR.]). *na viveda duḥkham*
 [RAGH. 14,56.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?14,56) *nāvidadbhayam*
 [BHĀG. P. 4,27,18.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,27,18) *taddīrghakālaṃ vettāsi* so v. a. daran wirst du lange denken müssen
@@ -179,19 +179,19 @@
 
 **7)** — 7) wissen wollen, prüfen
 [ŚAT. BR. 12,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,3) [9,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,3,4) *tāṃ veda* (2. sg. imper.) so v. a. erkundige dich nach ihr
-[MBH. 3,2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) = [≈Вульг. 3.68.35](mbh/3.68.html#v35) = ≈крит. 03,65.33a
+[MBH. 3,2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) = [≈Vulg. 3.68.35](mbh/3.68.html#v35) = ≈krit. 03,65.33a
 
 - **RU:** — 7) желать узнать, испытывать, проверять
 [ŚAT. BR. 12,4,1,3.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,4,1,3) [9,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?12,9,3,4) *tāṃ veda* (2. sg. imper.) так преим. осведомись о ней
 [MBH. 3,2688.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2688) = [≈Вульг. 3.68.35](mbh/3.68.html#v35) = ≈крит. 03,65.33a
   <sub>attested</sub>
 
-**8)** — 8) *vidita* kennen gelernt, gekannt, bekannt als Kār. zu [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56) [VOP. 26,131.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,131) [AV. 4,27,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.027.html#av04.027.07) *yau viditāviṣubhṛtāmasiṣṭhau* [28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.028.html#av04.028.02) *yaddevairviditaṃ purā* [6,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.012.html#av06.012.02) [ŚAT. BR. 7,2,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,1,11) [9,1,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,17) [11,5,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,8) [NIR. 11,33.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,33) [P. 5,1,43.](https://ashtadhyayi.com/sutraani/5/1/43) [MBH. 3,2691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2691) = [≈Вульг. 3.68.38](mbh/3.68.html#v38) = ≈крит. 03,65.36c [5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Вульг. 5.175.9](mbh/5.175.html#v9) = ≈крит. 05,172.7c *tubhyam* [7045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7045) = [≈Вульг. 5.178.18](mbh/5.178.html#v18) = ≈крит. 05,177.19a [7116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7116) = [≈Вульг. 5.178.89](mbh/5.178.html#v89) = ≈крит. 05,179.25c *tava*
+**8)** — 8) *vidita* kennen gelernt, gekannt, bekannt als Kār. zu [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56) [VOP. 26,131.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,131) [AV. 4,27,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.027.html#av04.027.07) *yau viditāviṣubhṛtāmasiṣṭhau* [28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.028.html#av04.028.02) *yaddevairviditaṃ purā* [6,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.012.html#av06.012.02) [ŚAT. BR. 7,2,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,1,11) [9,1,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,17) [11,5,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,8) [NIR. 11,33.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,33) [P. 5,1,43.](https://ashtadhyayi.com/sutraani/5/1/43) [MBH. 3,2691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2691) = [≈Vulg. 3.68.38](mbh/3.68.html#v38) = ≈krit. 03,65.36c [5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Vulg. 5.175.9](mbh/5.175.html#v9) = ≈krit. 05,172.7c *tubhyam* [7045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7045) = [≈Vulg. 5.178.18](mbh/5.178.html#v18) = ≈krit. 05,177.19a [7116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7116) = [≈Vulg. 5.178.89](mbh/5.178.html#v89) = ≈krit. 05,179.25c *tava*
 
 - **RU:** — 8) *vidita* узнанный, познанный, известный как Кар. к [P. 8,2,56.](https://ashtadhyayi.com/sutraani/8/2/56) [VOP. 26,131.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,131) [AV. 4,27,7.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.027.html#av04.027.07) *yau viditāviṣubhṛtāmasiṣṭhau* [28,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av04.028.html#av04.028.02) *yaddevairviditaṃ purā* [6,12,2.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av06.012.html#av06.012.02) [ŚAT. BR. 7,2,1,11.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?7,2,1,11) [9,1,1,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?9,1,1,17) [11,5,3,8.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?11,5,3,8) [NIR. 11,33.](https://sanskrit-lexicon-scans.github.io/nirukta/app1?11,33) [P. 5,1,43.](https://ashtadhyayi.com/sutraani/5/1/43) [MBH. 3,2691.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2691) = [≈Вульг. 3.68.38](mbh/3.68.html#v38) = ≈крит. 03,65.36c [5,5984.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5984) = [≈Вульг. 5.175.9](mbh/5.175.html#v9) = ≈крит. 05,172.7c *tubhyam* [7045.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7045) = [≈Вульг. 5.178.18](mbh/5.178.html#v18) = ≈крит. 05,177.19a [7116.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7116) = [≈Вульг. 5.178.89](mbh/5.178.html#v89) = ≈крит. 05,179.25c *tava*
   <sub>attested</sub>
 
-**8)** [7258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7258) = [≈Вульг. 5.183.11](mbh/5.183.html#v11) = ≈крит. 05,184.11c [12,4297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4297) = [≈Вульг. 12.119.12](mbh/12.119.html#v12) = ≈крит. 12,119.12c [R. 1,2,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,37) [68,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,6) [2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17) [R. GORR. 1,70,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,2) [3,35,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,38) [37,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,22) [4,9,66.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,66) [10,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,14) [5,18,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,31) *viditāgama*
+**8)** [7258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7258) = [≈Vulg. 5.183.11](mbh/5.183.html#v11) = ≈krit. 05,184.11c [12,4297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4297) = [≈Vulg. 12.119.12](mbh/12.119.html#v12) = ≈krit. 12,119.12c [R. 1,2,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,37) [68,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,6) [2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17) [R. GORR. 1,70,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,2) [3,35,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,38) [37,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,22) [4,9,66.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,66) [10,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,14) [5,18,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,31) *viditāgama*
 
 - **RU:** [7258.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7258) = [≈Вульг. 5.183.11](mbh/5.183.html#v11) = ≈крит. 05,184.11c [12,4297.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4297) = [≈Вульг. 12.119.12](mbh/12.119.html#v12) = ≈крит. 12,119.12c [R. 1,2,37.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,37) [68,6.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,68,6) [2,35,17.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,35,17) [R. GORR. 1,70,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,70,2) [3,35,38.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,35,38) [37,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,37,22) [4,9,66.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,66) [10,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,10,14) [5,18,31.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,18,31) *viditāgama*
   <sub>attested</sub>
@@ -267,7 +267,7 @@
 
 - **RU:** [KATHĀS. 123,294.](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,294) [158](https://sanskrit-lexicon-scans.github.io/kss/index.html?123,158) (где следует читать *avidito* вместо *avedito*, как показывает уже размер стиха). *avidite pituḥ* без ведома отца
 
-**8)** [MBH. 5,5971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5971) = [≈Вульг. 5.174.6](mbh/5.174.html#v6) = ≈крит. 05,171.6a *tasmādaviditaṃ tasya gantavyaṃ krodhanasya naḥ* ohne sein Wissen
+**8)** [MBH. 5,5971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5971) = [≈Vulg. 5.174.6](mbh/5.174.html#v6) = ≈krit. 05,171.6a *tasmādaviditaṃ tasya gantavyaṃ krodhanasya naḥ* ohne sein Wissen
 
 - **RU:** [MBH. 5,5971.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.5971) = [≈Вульг. 5.174.6](mbh/5.174.html#v6) = ≈крит. 05,171.6a *tasmādaviditaṃ tasya gantavyaṃ krodhanasya naḥ* без его ведома
 
@@ -279,7 +279,7 @@
 
 - **RU:** [ŚAT. BR. 10,6,1,10.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,6,1,10)
 
-**8)** [MBH. 4,70.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.70) = [≈Вульг. 4.3.11](mbh/4.3.html#v11) = ≈крит. 04,3.9c *trayaṃ suviditaṃ kuryāt*
+**8)** [MBH. 4,70.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.70) = [≈Vulg. 4.3.11](mbh/4.3.html#v11) = ≈krit. 04,3.9c *trayaṃ suviditaṃ kuryāt*
 
 - **RU:** [MBH. 4,70.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.70) = [≈Вульг. 4.3.11](mbh/4.3.html#v11) = ≈крит. 04,3.9c *trayaṃ suviditaṃ kuryāt*
 
