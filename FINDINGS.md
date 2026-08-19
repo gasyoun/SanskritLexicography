@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§573 — gloss-language layering:
+_Created: 26-06-2026 · Last updated: 19-08-2026 (§574 — gloss-language layering:
 `{%…%}` is not "German-or-English" — Burnouf (bur) wraps French prose in it,
 Sircar (ieg) wraps front-matter dedications in it, and Cappeller's own English
 dictionary (cae) plus MW use zero `{%…%}` at all despite dense English glosses;
@@ -34,7 +34,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §573) whatever its section, so existing numbers never shift; when a finding is later
+(currently §575) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -294,6 +294,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§570. Renaming a stored abbreviation stem (`Instr.`→`Ins.`) silently breaks tooltip lookup against an external authoritative table still keyed on the old stem](#570-renaming-a-stored-abbreviation-stem-instrins-silently-breaks-tooltip-lookup-against-an-external-authoritative-table-still-keyed-on-the-old-stem) — a render-time tooltip resolver looks the stored token up against an external ground-truth table; renaming the stored stem without updating that table silently orphans the tooltip.
 - 🔴 [§571. The compound-position ring is not an inferred convention — Cappeller PRINTS its definition in 1887, six years before Macdonell](#571-the-compound-position-ring-is-not-an-inferred-convention--cappeller-prints-its-definition-in-1887-six-years-before-macdonell-the-whole-553566-census-had-never-opened-a-preface) — Cappeller's Vorrede (CCS 1887) and Symbols page (CAE 1891) both print the ring's definition in words, six years before Macdonell (1893); the §553–§566 census had counted the device without ever reading a preface.
 - 🟢 [§572. Homonym-splitting density spans 0 to 419 per 1 000 entries across the 44 dicts — general dictionaries cluster at 20–65, name-indices at 89–419, and 22 dicts split none](#572-homonym-splitting-density-spans-0-to-419-per-1-000-entries-across-the-44-dicts--general-dictionaries-cluster-at-2065-name-indices-at-89419-and-22-dicts-split-none-hom-inline-markers-over-count-h-metadata-by-up-to-36) — 8 dicts print inline `<hom>N.` numbering, 14 split without displaying it, 22 split nothing; the high-density class (pui/inm/pe/mci/lrv/bop) is genre — name-indices splitting distinct persons, not sense-dictionaries splitting polysemy. `agnihotra` splits mfn./n. in 6 dicts and stays one entry in ap/vcp/wil — a 1:2-vs-1:1 join mismatch any headword matcher must carry.
+- 🔴 [§573. The leading hyphen has two senses, but no dictionary marks which — Wilson is 100 % inflectional, Macdonell is 83 % compound-member/2 % inflectional/15 % a third (taddhita) class the two-way split cannot hold](#573-the-leading-hyphen-has-two-senses-but-no-dictionary-marks-which--wilson-is-100--inflectional-macdonell-is-83--compound-member2--inflectional15--a-third-taddhita-class-the-two-way-split-cannot-hold) — Wilson 49,487/49,487 leading-hyphen runs read as inflection; MD's `{@-X@}` overloads compound-member/inflection/taddhita-derivational; Whitney's Roots and Grammar use two different devices under one name. Ships a 4-rule markup-context disambiguation table.
+- 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -7769,7 +7771,7 @@ one word rather than five different gods/kings/sages named Indra.
 > public [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) checkout with
 > the one-line `grep -o` commands above; no literature claim, per §557).
 
-### §573. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary
+### §574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary
 
 🟢 **The `{%…%}` span is the CDSL digitizers' generic "running prose / translation" wrapper, not a language-typed tag.** Measured over all 44
 [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)

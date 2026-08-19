@@ -308,7 +308,7 @@ item in this order:**
 10. **Gloss-language layering** — German/English/Latin/Russian mixing per
     dict (`{%…%}` vs plain), for router/translation passes. **measured →
     FINDINGS
-    [§573](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+    [§574](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
     (H2987): `{%…%}` is not a language-typed tag — pwg/pw carry German at
     66.0 %/64.9 % of entries, but bur (Burnouf) wraps **French** prose in it
     (100 % of entries, a third Western language the task's own framing
