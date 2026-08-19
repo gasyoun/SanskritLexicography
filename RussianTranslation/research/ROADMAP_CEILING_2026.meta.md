@@ -1,6 +1,6 @@
 # ROADMAP_CEILING_2026.meta.md — metadoc for `ROADMAP_CEILING_2026.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-08-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)
@@ -65,7 +65,14 @@ it. Kept per the standing "one metadoc per important document" convention
   re-rules the ceiling wholesale.
 
 ## Deprecation status
-`active` — Wave 0 in progress per the doc's phasing, Waves 1–2 not started.
+`active` — truth-passed 19-08-2026 (H3001). **Wave 0 is complete**, not "in
+progress": H335 closed 08-07-2026 and this reading was stale from that date.
+Wave 1 is now minted — C2 phase 1 as H3168, C4 as H3169, C8 as H3170 — after six
+weeks in which the doc's own "handoffs are minted after H335 lands" promise had
+nothing watching for H335 landing. Wave 2 stays coverage-gated at ~50 % translation
+and is deliberately unminted, except its gold-set prerequisite (H3172), which is
+not coverage-gated. Residual programme:
+[docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
 
 ## Related documents
 - [ROADMAP_ACL_LESSONS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.md) — "Roadmap B," the explicit companion this doc cross-references.

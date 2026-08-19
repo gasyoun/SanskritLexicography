@@ -1,6 +1,6 @@
 # HERITAGE_INRIA_ROADMAP.meta.md — metadoc for `HERITAGE_INRIA_ROADMAP.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-08-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md).
@@ -28,8 +28,8 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
 
 | # | Improvement | Why | Status |
 |---|---|---|---|
-| 1 | Phase 3 — ingest `DATA/*.tsv` pada/compound/transition frequencies, diff against VisualDCS M1–M8 and `corpus_lexicon`, register in PROJECT_INTERLINKS | Explicitly queued in the subject ("⬜ queued, own H###") — cheapest remaining phase, mirror-only, no gate | parked — needs its own H### mint when picked up |
-| 2 | Phase 6 — segmenter-as-service cross-validation vs DharmaMitra GPU morphology | Queued in the subject; unlocks a second morphology witness for csl-atlas/RussianTranslation | parked — needs its own H### mint when picked up |
+| 1 | ~~Phase 3 — ingest `DATA/*.tsv` frequencies~~ | — | ✅ **done 26-07-2026** ([H1490](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1490-Sonnet_SanskritLexicography_heritage-freq-tables-ingest_22.07.26.md), Sonnet 5 `claude-sonnet-5`) — this row was stale from 26-07-2026 until the 19-08-2026 truth-pass |
+| 2 | Phase 6 — segmenter-as-service cross-validation vs DharmaMitra GPU morphology | Queued in the subject; unlocks a second morphology witness for csl-atlas/RussianTranslation | 🟡 **minted 19-08-2026** — [H3171 (Sonnet 5) — Heritage phase 6: segmenter-as-service cross-validation](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3171-Sonnet_SanskritLexicography_heritage-phase6-segmenter-service_19.08.26.md) |
 | 3 | Transcribe Gérard Huet's exact reply wording (attribution phrasing, conditions) into this repo | Subject flags this explicitly as "not transcribed into this repo yet" — a rights-precision gap | parked — needs the actual email text located first |
 | 4 | kosha ingest of Heritage's 928k surplus forms (flagged as Phase 4 follow-on, explicitly "not built") | Left as a GTD `@DECIDE`, not built, per the subject's own phase-4 row | parked — MG `@DECIDE`, tracked in GTD |
 
@@ -59,7 +59,12 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
   since it also documents the LGPLLR×BY-SA rights ruling other sessions may need to cite.
 
 ## Deprecation status
-`active` — Phases 0–2, 4–5 done; Phases 3 and 6 queued with no handoff minted yet.
+`active` — truth-passed 19-08-2026 (H3001). **Phases 0–5 all done** (3 landed
+26-07-2026 under H1490; the earlier "phases 3 and 6 queued with no handoff minted"
+reading was stale from that date). Phase 6 is the single remaining phase and is now
+minted as H3171. Note that the **subject document's body was accurate throughout** —
+this metadoc was the stale surface, which is the inverse of the usual failure and
+worth remembering when auditing this estate.
 
 ## Related documents
 - [SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md) — companion external-stack roadmap (the SCL side, first mature external computational-Sanskrit stack).
