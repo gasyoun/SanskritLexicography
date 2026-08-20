@@ -1,6 +1,6 @@
 # DATA_REUSE_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 01-08-2026_
+_Created: 18-07-2026 · Last updated: 20-08-2026_
 
 Companion record for [docs/manuals/DATA_REUSE_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md).
 
@@ -15,12 +15,12 @@ Authored 10-07-2026 (H479/H535), consolidated H604. Refreshed 18-07-2026 under [
 ## Verification
 
 ```
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
+COMMANDS_SPOT_RUN: 6
 ```
 
-Executed 18-07-2026 by the fact-check pass: the full era-wide `wc -l` sweep (all 53 list files), `head -c 3 | xxd` BOM checks on the named pairs, and the digit-key measurements behind the key2 verdicts.
+H3059 (20-08-2026): now-2026 25 txt (was 23); BOM still 6; union 323,425 data rows; AP 88,867; headword_index.tsv 98,639 data rows; Indische Sprüche 7,537; relationships_rollup.tsv is an 11-row subtype table summing to 6,374 (not 5,603 per-sense rows).
 
 ## Improvement backlog
 
@@ -49,6 +49,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Subject manual authored (H479/H535); consolidated H604 11-07-2026 | Fable 5 (`claude-fable-5`) / Opus 4.8 (`claude-opus-4-8`) |

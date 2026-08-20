@@ -1,6 +1,6 @@
 # Researcher Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 18-07-2026_
+_Created: 10-07-2026 · Last updated: 20-08-2026_
 
 For the **lexicographer, digital-humanities researcher, or historian of
 dictionaries** who wants to understand the intellectual programme here, cite its
@@ -71,8 +71,8 @@ English article-based monograph.
 
 **Book** (M01 — venue locked 06-07-2026: de Gruyter *Lexicographica. Series Maior*
 primary, Brill's Indological Library fallback): *Digital Sanskrit Lexicography* —
-a locked 14-chapter architecture with 12 chapters drafted as of 18-07-2026 (only
-the two data chapters, Ch. 3 and Ch. 11, remain unwritten) in
+a locked 14-chapter architecture with **all 14 chapter files present** as of
+20-08-2026 (`ch01`–`ch14` plus intro, five part-bridges, conclusion) in
 [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK)
 ([BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md),
 [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md);
@@ -99,9 +99,9 @@ working notes/reviews live in
 The eight root registries (FINDINGS + its seven epistemic siblings) are not bookkeeping — they *are* the reproducibility
 apparatus a DSH/lexicography reviewer asks for and rarely gets. Cite findings by
 their stable `§N` number — **with the finding's date or title alongside**: the
-stability is a norm with known breaches (as of 18-07-2026 the registry carries
-fresh duplicate pairs at §80, §86 and §87, pending the same renumber repair
-H616 ran on §70–§75, and FINDINGS §92 itself measured ~65 wrong §-refs in a
+stability is a norm with known breaches (H616 repaired §70–§75; the 18-07-2026
+duplicate pairs at §80/§86/§87 are gone as of 20-08-2026 — 231 unique `### §N`
+headings, max §577 — and FINDINGS §92 itself measured ~65 wrong §-refs in a
 downstream register), so a bare number is not yet a safe citation key:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
