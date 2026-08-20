@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 01-08-2026_
+_Created: 18-07-2026 · Last updated: 20-08-2026_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -15,10 +15,12 @@ Authored 11-07-2026 (H606). Refreshed 18-07-2026 under H1245. Headless-first rew
 ## Verification
 
 ```
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
+COMMANDS_SPOT_RUN: 6
 ```
+
+H3059 (20-08-2026): `probe_log.py --help`, `preflight_remaining_gates.py --help`, `nominal_grammar.py --help`, `reverse_index.py --help`, plus the four review selftests used by the sibling review manual. Store file absent in this worktree (gitignored) — 11,603 remains the 24-07-2026 dated figure. Headless/manifest-v2 §0 still matches RUN_FREQ_MAX.
 
 ## Improvement backlog
 
@@ -58,6 +60,7 @@ Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree o
 
 | Date | Change | By |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | §2d: autostart residual + human `@DO` for logged-off stored credentials; links windows/README inventory | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | §2d dual dashboards (local 5 s · web 60 s) + doc map row; interlinked with progress_dashboard + dashboard_server UIs (H2032 follow-up) | Grok 4.5 (grok-4.5) |

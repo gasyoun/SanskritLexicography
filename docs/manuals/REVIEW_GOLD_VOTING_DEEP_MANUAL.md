@@ -1,9 +1,9 @@
 # Review / gold / voting-sheet deep manual — the human-judgment subsystem
 
-_Created: 25-07-2026 · Last updated: 25-07-2026_
+_Created: 25-07-2026 · Last updated: 20-08-2026_
 
 The subsystem deep manual for the RussianTranslation **human-review machinery**:
-the G5/G6/G7 release gates, the 14-script gold chain, the HTML voting sheets,
+the G5/G6/G7 release gates, the 15-script gold chain, the HTML voting sheets,
 and the H1404 **binding standard** that ties every downloaded `decisions.json`
 to the exact sheet generation it was voted in. Authored by Fable 5
 (`claude-fable-5`) under
@@ -72,9 +72,11 @@ Five rules that prevent every historical failure in this subsystem:
 | G7 | independent second review + agreement | 80 of the 320 | agreement queue + Cohen κ | `gold_agreement.py` release mode (needs ≥1 κ pair) |
 | G10 | edition cut | — | — | waits for G5/G6/G7 |
 
-### 2.2 The 14-script gold chain (`src/gold_*.py`)
+### 2.2 The 15-script gold chain (`src/gold_*.py`)
 
-Verified 25-07-2026 against the code (defaults quoted from argparse/constants):
+Verified 25-07-2026 against the code (defaults quoted from argparse/constants);
+re-counted 20-08-2026: **15** `gold_*.py` files (the 14 below plus
+[`gold_evidence_panel.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_evidence_panel.py)):
 
 | Stage | Script | In → out | Key contract |
 |---|---|---|---|
@@ -92,6 +94,7 @@ Verified 25-07-2026 against the code (defaults quoted from argparse/constants):
 | G7 | `gold_double_review_verify.py` | queue CSV | second-columns blank, count == sample-size, stratum balance ≤1 |
 | G7 | `gold_ingest_double_review.py` | filled wide CSV → long rows merged into labels jsonl | second reviewer must differ; dedup on `(id, reviewer_id)` |
 | report | `gold_agreement.py` | labels jsonl → `human_precision_report.md` + `double_review_agreement.md` | unweighted Cohen κ over the FIRST TWO labels per id; `--fixture` is the test escape |
+| panel | `gold_evidence_panel.py` | gold row → evidence panel HTML fragment | added after the 25-07-2026 14-script census (15th file, 20-08-2026) |
 
 Support cast: `triage_review_queue.py` (G5 bucketing of judge verdicts — see
 §5.3 for the generations trap), `run_batch.py` (`review_csv` /
@@ -103,14 +106,14 @@ LLM-judged fidelity track — adjacent, NOT part of G5/G6/G7).
 
 | Piece | File | Role |
 |---|---|---|
-| Emitter | `csl_pyutil.render_review_sheet` v0.3.1 (external; requirements.txt tracks its `main` branch, so re-verify `csl_pyutil.__version__` when anchors misbehave) | the ONE sheet template (V1–V8 standard); never forked |
+| Emitter | `csl_pyutil.render_review_sheet` (external; repo-root [requirements.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/requirements.txt) pins `csl-pyutil@v0.17.1`; this pass `csl_pyutil.__version__` = **0.20.0** — re-verify when anchors misbehave) | the ONE sheet template (V1–V8 standard, V9 evidence preflight in later tags); never forked |
 | Repo lookups | [`src/review_sheet_standard.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_sheet_standard.py) | V4 entry links, SLP1→IAST, shared config, `DA_RATING` |
 | Binding | [`src/review_binding.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_binding.py) | `content_hash()` · `stamp()` · `write_lock()` · retro locks |
 | Schema | [`schemas/decisions.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/decisions.schema.json) | the export shape, `content_hash` required |
 | Gate | [`src/validate_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/validate_decisions.py) | refuses unbound/mismatched/drifted exports |
 | Router | [`src/apply_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/apply_decisions.py) | validator-first; G5→run_batch, G6→gold_ingest |
 | Locks | `review/locks/<sheet_id>.lock.json` (tracked) | sheet_id + hash + card ids; the durable anchor |
-| Generators | `build_g5_review_sheet.py` · `build_g6_mqm_gold_sheet.py` · `build_h180_review_sheets.py` · `build_kochergina_sheet.py` · `build_renou_pilot_sheet.py` · `h178_eval_bakeoff.py` | all stamp + lock at generation time |
+| Generators | `build_g5_review_sheet.py` · `build_g6_mqm_gold_sheet.py` · `build_h180_review_sheets.py` · `build_kochergina_sheet.py` · `build_renou_pilot_sheet.py` · `h178_eval_bakeoff.py` plus later sheets (reglue, RV-divergence, abbrev, style, …) — **13** `src/build_*sheet*.py` as of 20-08-2026 | all stamp + lock at generation time |
 
 ## 3. The sheet lifecycle, stage by stage
 
@@ -304,13 +307,12 @@ the id scheme it is keyed on — bind to review_id, never to a positional ord.**
 - The repo is PUBLIC. Sheets embed unpublished RU translation → **gitignored**
   (`review/g5_*_sheet.html`, `review/g6_*_sheet.html`, plus the older
   per-family patterns). Locks, schema, generators, this manual → committed.
-- Exactly **two** sheets are tracked (D7, re-derived from
-  `git ls-files 'RussianTranslation/review/*.html'` 25-07-2026):
-  the Kochergina 4-row correction sheet and the Renou 70-card pilot — both
-  sample-sized scholarly excerpts, kept tracked deliberately; the false "all
-  sheets are gitignored" claim in RUSSIANTRANSLATION_DEEP_MANUAL.md §9 was
-  amended in this pass. `/publish-safety-check` verdict for all H1404 surfaces:
-  **GO** (25-07-2026, recorded in the metadoc).
+- Tracked HTML is **not** "exactly two" any more. Re-derived 20-08-2026 from
+  `git ls-files 'RussianTranslation/review/*.html'`: **7** files — the Kochergina
+  4-row correction sheet, the Renou 70-card pilot, and five
+  `rv_divergence_gate_2026-07-29*.html` / `…-07-30-v5.html` generations. Bulk
+  store-text sheets stay gitignored. `/publish-safety-check` verdict for all
+  H1404 surfaces: **GO** (25-07-2026, recorded in the metadoc).
 - Downloaded exports (`review/*_decisions.json`) are personal working
   artifacts — gitignored by pattern; the tracked exceptions are historical
   evidence files. `review/voted.md` and `review/decisions.md` are the human's
@@ -342,7 +344,9 @@ date; re-derive, never trust: tracked-sheet set via `git ls-files`, queue/store
 sizes via the files themselves, selftests via
 `python src/review_binding.py --selftest`,
 `python src/validate_decisions.py --selftest`,
-`python src/apply_decisions.py --selftest` (all three green as of 25-07-2026).
+`python src/apply_decisions.py --selftest` (all three green as of 25-07-2026;
+re-run 20-08-2026: binding / validate / apply / changelog-guard selftests OK;
+`validate_decisions.py review/decisions.json` still REJECTED UNBOUND).
 On substantive edits: tick the metadoc backlog, add a revision row, bump the
 staleness block. The freshness detector
 ([Uprava/tools/manual_staleness.py](https://github.com/gasyoun/Uprava/blob/main/tools/manual_staleness.py))

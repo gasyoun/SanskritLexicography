@@ -27,6 +27,8 @@ key2 is extracted by stopping the capture at the `¦` headword separator, stripp
 - **Order is normalised Sanskrit collation** (varṇa-krama over SLP1), *not* the
   inconsistent legacy order of the THEN files — compare by **set**
   (`comm`/`sort -u`/the script's set-diff), not a raw line `diff`.
-- **PD** is not in csl-orig locally → no NOW file. **PWK** is from csl-orig `pw`
-  (Böhtlingk's *kürzere Fassung*).
+- **PD** is not in csl-orig (`CODE2DIR['PD']=None`); NOW files are written from
+  `PD_SRC` when that path exists
+  (`PD-unique-key1-104959.txt`, `PD-unique-key2-104968.txt`, H1365). **PWK** is
+  from csl-orig `pw` (Böhtlingk's *kürzere Fassung*).
 - Counts drift as csl-orig is corrected; re-run the script to refresh.

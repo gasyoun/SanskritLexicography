@@ -1,6 +1,6 @@
 # MANUAL_LEXICON_WORKSPACE_AGENTS.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 01-08-2026_
+_Created: 18-07-2026 · Last updated: 20-08-2026_
 
 Companion record for [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root thin sheet).
 
@@ -15,10 +15,12 @@ Authored 10-07-2026 (H479), consolidated H604. Re-thinned 18-07-2026 under [H124
 ## Verification
 
 ```
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
 COMMANDS_SPOT_RUN: 2
 ```
+
+H3059 (20-08-2026): every canonical-doc path in §2 exists; `probe_log.py --help` exits 0. Thin-sheet contract still holds (no state snapshot). Live-pointer in §4 still correct.
 
 ## Improvement backlog
 
@@ -46,6 +48,7 @@ Re-checked on each [/workspace-manual](https://github.com/gasyoun/claude-config/
 
 | Date | Change | By |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Sheet authored (H479); consolidated H604 11-07-2026 | Fable 5 (`claude-fable-5`) |

@@ -1,6 +1,6 @@
 # Руководство для студента — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 24-07-2026_
+_Created: 10-07-2026 · Last updated: 20-08-2026_
 
 Для **студента санскрита** (в первую очередь русскоязычного, из круга
 samskrte.ru / Общества ревнителей санскрита), который прошел базовую морфологию и
@@ -124,5 +124,9 @@ python src\reverse_index.py --show "m·8n*"       # все слова с той 
   [boesp2](https://github.com/sanskrit-lexicon-scans/boesp2).
 - Общая карта репозитория: корневой
   [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md).
+- Инвентарь того, что уже есть (44 словаря, 23 интерфейса, учебные наборы
+  P1–P12):
+  [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md).
+  P12 — кроссворд и bandha-разборы на samskrtam.ru (H2943).
 
 _Dr. Mārcis Gasūns_

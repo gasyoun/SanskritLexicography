@@ -1,6 +1,6 @@
 # MAINTAINER_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 01-08-2026_
+_Created: 18-07-2026 · Last updated: 20-08-2026_
 
 Companion record for [docs/manuals/MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md).
 
@@ -15,9 +15,9 @@ Authored 10-07-2026 (H479/H535 quartet), consolidated 11-07-2026 (H604). Refresh
 ## Verification
 
 ```
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
+COMMANDS_SPOT_RUN: 3
 ```
 
 No quoted command was executed this pass — the dashboard/build commands all regenerate tracked outputs (fenced out of a docs-only run); each was verified read-only against its script's argparse and the CI YAML instead.
@@ -26,7 +26,7 @@ No quoted command was executed this pass — the dashboard/build commands all re
 
 | # | Item | Status |
 |---|---|---|
-| 1 | FINDINGS duplicate-§N repair (§80/§86/§87 pairs, observed 18-07-2026) — rerun the H616 renumber, then soften the §3 breach warning | open (queued via GTD, H1245) |
+| 1 | FINDINGS duplicate-§N repair (§80/§86/§87 pairs, observed 18-07-2026) — rerun the H616 renumber, then soften the §3 breach warning | ✅ observed closed H3059 (20-08-2026) — 0 duplicate `### §N` headings; warning kept as history |
 | 2 | When the dashboards gain a third registry renderer or the release cadence changes, §3/§7 need a same-PR update | open (standing) |
 
 ## Known limitations
@@ -49,6 +49,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | Subproject map: Task Scheduler task names + optional human `@DO` for logged-off; links windows/README | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | Subproject map: progress_dashboard = public web kitchen (60 s); local ops row 5 s localhost; links to §2d + README | Grok 4.5 (grok-4.5) |

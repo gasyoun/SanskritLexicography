@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+
+- **H3059 workspace-manual refresh** (Grok 4.6 `grok-4.6`): fact-checked all 10 SanskritLexicography manuals against `origin/master` and bumped sibling `LAST_VERIFIED` blocks. Real drifts fixed: `now-2026/` is 25 `.txt` (PD key1+key2 from `PD_SRC`, not "PD absent"); HeadwordLists script census 25→30; gold chain 14→15 (`gold_evidence_panel.py`); book `chapters/` has all 14 `ch01`–`ch14` files; `relationships_rollup.tsv` is an 11-row subtype table summing to 6,374; tracked review HTML is 7 files; csl-pyutil pin/version restamped; FINDINGS duplicate `### §N` headings are gone. RU-register manuals got count/pointer fixes only (no Fable rewrite).
+
 ## [1.144.86] - 2026-08-20
 ### Added
 
