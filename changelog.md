@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.86] - 2026-08-20
+### Added
+
+- **`/ask` plan: DE|RU full-width vote layout for the re-glue sheet** (Grok 4.6 `grok-4.6`, 20-08-2026): 22 rulings, autonomy gate PASS. Index [PLAN_RussianTranslation_REGLUE_VOTE_DE_RU_SPLIT_2026-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_RussianTranslation_REGLUE_VOTE_DE_RU_SPLIT_2026-08.md). Execution [H3199 (Sonnet 5) — Wave 1: DE|RU split vote layout for h180_reglue v6 and G5 pin-ids recut](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3199-Sonnet_SanskritLexicography_reglue-vote-de-ru-split_20.08.26.md). Does not change the store or typology; v5 stays hosted until v6 is built.
+
 ## [1.144.84] - 2026-08-19
 
 ### Added — H3152, MG's six reglue2 review points
