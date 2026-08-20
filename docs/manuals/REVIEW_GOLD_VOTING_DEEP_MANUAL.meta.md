@@ -1,6 +1,6 @@
 # REVIEW_GOLD_VOTING_DEEP_MANUAL.md — metadoc
 
-_Created: 25-07-2026 · Last updated: 01-08-2026_
+_Created: 25-07-2026 · Last updated: 20-08-2026_
 
 Companion record for
 [REVIEW_GOLD_VOTING_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md).
@@ -8,7 +8,7 @@ Companion record for
 ## Purpose · audience · provenance
 
 - **Purpose:** the deep operator manual for the RussianTranslation
-  human-review subsystem — G5/G6/G7 gates, the 14-script gold chain, the HTML
+  human-review subsystem — G5/G6/G7 gates, the 15-script gold chain, the HTML
   voting sheets, and the H1404 sheet↔decisions.json binding standard (voted.md
   item 8's ask).
 - **Audience:** maintainer/operator (EN core, §1–§7); the human reviewer
@@ -23,9 +23,9 @@ Companion record for
 ## Staleness contract (H1246 detector)
 
 ```text
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
+COMMANDS_SPOT_RUN: 6
 ```
 
 ## Verification block — what ran, 25-07-2026 (authoring pass)
@@ -81,6 +81,7 @@ secret grep clean, no personal data (reviewer fields empty).
 
 | Date | Change | Model |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | Manual + metadoc authored; binding standard shipped; starter packet generated (Wave 1, H1404) | Fable 5 (`claude-fable-5`) |
 

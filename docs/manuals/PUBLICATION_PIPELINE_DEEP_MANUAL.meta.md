@@ -1,6 +1,6 @@
 # PUBLICATION_PIPELINE_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 01-08-2026_
+_Created: 18-07-2026 · Last updated: 20-08-2026_
 
 Companion record for [docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) (subsystem deep manual, H608).
 
@@ -15,19 +15,19 @@ Authored 11-07-2026 (H608), touched 14-07 and 18-07 (H740 verdict). Refreshed 18
 ## Verification
 
 ```
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
+COMMANDS_SPOT_RUN: 3
 ```
 
-Executed 18-07-2026: `pytest docs_site/test_docs_site.py -q` — 4 passed in 3.7 s (with the pinned `zettelkastenwiki` installed).
+H3059 (20-08-2026): `pytest docs_site/test_docs_site.py -q` — 4 passed in 0.59 s; `build_site.py` still 103 lines; wiki/research still 10 files; papers/ is 27 `.md` + 9 `.csv`; `chapters/` now has all 14 `ch01`–`ch14` files plus intro, 5 bridges, conclusion.
 
 ## Improvement backlog
 
 | # | Item | Status |
 |---|---|---|
 | 1 | ~~Resolve CONTRADICTIONS §6 (the `10.5281/zenodo.15834721` mint status) with one online Zenodo check, then fix whichever doc is wrong~~ | ✅ done (H1364, 20-07-2026) — BOOK_PLAN was right, false DOI; FAIR_RELEASE_1 + csl-observatory CITATION.cff corrected |
-| 2 | Once Ch. 3 / Ch. 11 are written, the §4 tables need the terminal update | open |
+| 2 | Once Ch. 3 / Ch. 11 are written, the §4 tables need the terminal update | ✅ done H3059 (20-08-2026) — both chapter files present; tables restamped |
 
 ## Known limitations
 
@@ -49,6 +49,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 11-07-2026 | Subject manual authored (H608); H740 verdict spliced 18-07-2026 | Fable 5 (`claude-fable-5`) |

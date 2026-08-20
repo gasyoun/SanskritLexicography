@@ -1,6 +1,6 @@
 # HeadwordLists deep manual — SanskritLexicography
 
-_Created: 11-07-2026 · Last updated: 18-07-2026_
+_Created: 11-07-2026 · Last updated: 20-08-2026_
 
 Subsystem depth for
 [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)
@@ -22,7 +22,7 @@ record throughout.
 | Family | Where | What | Status |
 |---|---|---|---|
 | 2014 exports | [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) | 31 `.txt`: key1/key2 exports for 16 dict codes + 2 `fehlerhaft` + SCH accents + the HK join + the Huet list | **frozen** (extracted 2014-10-05) |
-| 2026 regenerations | [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) | 23 `.txt`: current csl-orig key1+key2 for 15 dicts (PD absent) | regenerable |
+| 2026 regenerations | [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) | 25 `.txt` (20-08-2026): current key1+key2 for 15 csl-orig dicts **plus PD** from `PD_SRC` (not csl-orig) | regenerable |
 | Cross-dict union | [union/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) | the merged 323,425-headword index + fold/coverage sidecars — **the print target** | regenerable |
 | Alternate/feminine candidates | [f_candidates/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/f_candidates) | MW + SKD fem↔masc / orphan-fem / variant TSVs (print-readiness item F) | regenerable |
 | External spines | [Catalan-Pujol/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/Catalan-Pujol) + [Huet-INRIA-Wordlist-vs-Cologne.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md) | Pujol Sanskrit–Catalan lemma list; INRIA Heritage 2014 stem list; their CDSL/DCS coverage studies | raw lists **frozen imports**; analyses regenerable |
@@ -56,14 +56,19 @@ mw-apte-mcdonell-hk.txt                no N; Harvard-Kyoto; MW ∪ Apte ∪ Macd
   newline — that off-by-one is why prose in older docs sometimes cites one
   less (e.g. "61,266 lines" for the 61,267-entry Catalan file). All 23
   `now-2026/` exports **do** end with a trailing newline, so `wc -l` = `N`
-  exactly there. Trust the filename.
+  exactly there (25 files as of 20-08-2026). Trust the filename.
 - **key1** = normalized machine key (raw `<k1>`, accent-stripped). Use for
   matching, dedup, joins. **key2** = print/citation form (keeps `/` udātta,
   `-`/`—` compound markers, `(...)`, `*`, `˚`). Use for editorial review,
   citation, scan checking. Semantics:
   [GLOSSARY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md).
-- Seven dicts ship **key2 only** (BHS, BUR, CAE, CCS, INM, MD, SCH); PD exists
-  only in `then-2014/` (not in csl-orig); `fehlerhaft` exists only for PWG/PWK
+- Seven dicts ship **key2 only** (BHS, BUR, CAE, CCS, INM, MD, SCH); PD is still
+  **not in csl-orig** (`CODE2DIR['PD']=None`) but NOW files ship when `PD_SRC`
+  is present —
+  [PD-unique-key1-104959.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/PD-unique-key1-104959.txt)
+  and
+  [PD-unique-key2-104968.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/PD-unique-key2-104968.txt)
+  (H1365); `fehlerhaft` exists only for PWG/PWK
   (PWG 1,661 + PWK 2,227 XML records — these are the "PWG/PWK error lists" the
   root README warns about, 5.3 MB and 2.7 MB).
 - **Two MW key2 snapshots** sit in `then-2014/`
@@ -104,7 +109,8 @@ Scripts read csl-orig at `CSL_ORIG_V02` (default
 `C:/Users/user/Documents/GitHub/csl-orig/v02`) and `sanskrit-util` at
 `SANSKRIT_UTIL_PY`. The `DICT`→csl-orig mapping is in `headword_diff.py`'s
 `CODE2DIR`: note **PWK = csl-orig `pw`** (Böhtlingk's *kürzere Fassung*) and
-**PD = None** (the Deccan dictionary has no csl-orig source).
+**PD = None** (Deccan is not in csl-orig; NOW files come from `PD_SRC` when that
+path exists — H1365).
 
 **The count-drift trap.** csl-orig is continuously corrected, so two
 regeneration runs weeks apart differ by a handful of lines: the on-disk
@@ -113,14 +119,17 @@ carries 88,867 while the later NOW_VS_THEN run measured 88,869 from the same
 recipe. Neither is wrong — each `N` is true *for its run date*. Cite the file
 you actually used, never "the AP count"; refresh both together when it matters.
 
-## 3. Script census — all 25, what they read and write
+## 3. Script census — all 30, what they read and write
 
 All scripts are **read-only toward their sources** (csl-orig, VisualDCS, the
 mirror, sibling repos) and write only derived outputs inside `HeadwordLists/`
 — every one is safe to re-run; there are no seeders or wipers here. One
 write-location exception: `build_p2_sheet.py` writes its HTML review sheet to
-the repo-root `review/` directory, not inside `HeadwordLists/`. All 25 follow
+the repo-root `review/` directory, not inside `HeadwordLists/`. All 30 follow
 the repo Windows-encoding rule (`sys.stdout.reconfigure(encoding='utf-8')`).
+Census 20-08-2026: 16 root + 5 Catalan-Pujol + 9 works_catalogue (was 25:
+`heritage_freq_diff.py` plus `adjudicate_p2.py`, `build_p2_spotcheck_sheet.py`,
+`p2_precision_gate.py`, `test_parse_ncc.py`).
 
 **Root — export/diff/union/print-readiness (10):**
 
@@ -137,12 +146,13 @@ the repo Windows-encoding rule (`sys.stdout.reconfigure(encoding='utf-8')`).
 | [huet_coverage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/huet_coverage.py) | Huet list, csl-orig, DCS | the Huet study; exports the **only Velthuis→IAST→SLP1 transcoder** — other scripts import it |
 | [heritage_stem_extract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_stem_extract.py) | mirror `DICO/*.html` | `heritage_current_stems.txt` |
 
-**Root — Heritage phases 1–5 (5):**
+**Root — Heritage phases 1–5 plus freq-diff (6):**
 [heritage_coverage_current.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_coverage_current.py) (current-vs-2014 stem coverage) ·
 [heritage_mw_crosswalk.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_mw_crosswalk.py) (→ `mw_heritage_crosswalk.tsv`) ·
 [heritage_crosswalk_report.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_crosswalk_report.py) (coverage vs DCS + kosha frequency) ·
 [heritage_dico_gloss_extract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_dico_gloss_extract.py) (→ `heritage_dico_gloss.tsv`) ·
-[heritage_forms_oracle.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.py) (Heritage `SL_morph.xml` vs kosha forms — **comparison only, never merges**).
+[heritage_forms_oracle.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle.py) (Heritage `SL_morph.xml` vs kosha forms — **comparison only, never merges**) ·
+[heritage_freq_diff.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_freq_diff.py) (Heritage frequency tables vs now).
 
 **Catalan-Pujol/ (5):** `coverage_by_dict.py` · `match_rate.py` ·
 `make_uncovered_lists.py` · `coverage_vs_dcs.py` (dict × DCS cross-tab →
@@ -150,13 +160,17 @@ the repo Windows-encoding rule (`sys.stdout.reconfigure(encoding='utf-8')`).
 `accent_compare.py` — see the
 [Catalan-Pujol study](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md).
 
-**works_catalogue/ (5):** [parse_acc.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_acc.py) ·
+**works_catalogue/ (9):** [parse_acc.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_acc.py) ·
 [parse_ncc.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py) ·
 [build_works_crosswalk.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_works_crosswalk.py) ·
 [build_p2_sheet.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_sheet.py) (HTML review sheet) ·
 [apply_p2_decisions.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/apply_p2_decisions.py)
 (the one script with an input gate: it requires a human `decisions.json` from
-the review sheet — don't invoke without one).
+the review sheet — don't invoke without one) ·
+[adjudicate_p2.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/adjudicate_p2.py) ·
+[build_p2_spotcheck_sheet.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_spotcheck_sheet.py) ·
+[p2_precision_gate.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/p2_precision_gate.py) ·
+[test_parse_ncc.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py).
 
 ## 4. Encoding — the measured BOM census
 
@@ -170,7 +184,7 @@ The org "csl-orig never has BOMs" rule does **not** hold here. Full census
 - `then-2014/21562-huet-velthius.txt`
 - `Catalan-Pujol/61267-Sanskrit-Catalan-Words-List.txt`
 
-Everything else — all of `now-2026/`, all other `then-2014/` exports, the HK
+Everything else — all of `now-2026/` (25 files, 20-08-2026), all other `then-2014/` exports, the HK
 join, all TSVs — has no BOM. Rules: check `head -c 3 file | xxd` before
 transforming; **preserve the file's existing BOM state on write**; never
 silently add or strip one
@@ -320,7 +334,7 @@ Cologne). The uncovered residue is bucketed in
 ## 11. Traps checklist (the ones that actually bite)
 
 1. Filename `N` is the true count; in `then-2014/` files `wc -l` = `N − 1`
-   (no trailing newline), while all 23 `now-2026/` exports end with one, so
+   (no trailing newline), while all 25 `now-2026/` exports end with one, so
    `wc -l` = `N` there (§1).
 2. BOM is inconsistent — 6 files have it; check + preserve (§4).
 3. key1 joins, key2 displays — never the reverse (§1, §5).

@@ -1,6 +1,6 @@
 # Publication pipeline — deep manual (papers · Brill book · docs_site)
 
-_Created: 11-07-2026 · Last updated: 20-07-2026_
+_Created: 11-07-2026 · Last updated: 20-08-2026_
 
 The subsystem deep manual for the **publication layer** of this workspace: the
 [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
@@ -27,8 +27,8 @@ All counts and states below verified against the tree on **11-07-2026**.
 
 | Asset | What it is | Contents (as of 11-07-2026) |
 |---|---|---|
-| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Working directory for article manuscripts homed in *this* repo | 21 `.md` + 3 evidence `.csv` (A36) + `a31_origin_census.py` + the `a31/` and `sanskrit_in_numbers/` subdirectories, as of 18-07-2026 — drafts/memos for A30, A31, A33–A36, A40, A42, A43, A58 plus scoping notes |
-| [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Build folder for the single-authored monograph **M01**, *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph* | [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) · [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) · [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) · [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) · [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) · [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) (12 of ~14 chapters drafted as of 18-07-2026 — only the data chapters ch03/ch11 unwritten) |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Working directory for article manuscripts homed in *this* repo | 27 `.md` + 9 evidence `.csv` as of 20-08-2026 + `a31_origin_census.py` + the `a31/` and `sanskrit_in_numbers/` subdirectories — drafts/memos for A30, A31, A33–A36, A40, A42, A43, A58, A67 plus scoping notes |
+| [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Build folder for the single-authored monograph **M01**, *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph* | [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) · [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) · [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) · [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) · [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) · [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) (all 14 chapter files `ch01`–`ch14` present as of 20-08-2026, plus intro, 5 part-bridges, conclusion) |
 | [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | ZettelkastenWiki static-site builder publishing the pwg_ru research-conventions docs | [build_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py) (103 lines) · [test_docs_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/test_docs_site.py) (4 tests) · [wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research) (10 docs, copies — sync caveats in §5.1) |
 
 One registry rules them all:
@@ -156,7 +156,7 @@ map is BOOK_PLAN §2/§3.
 | [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) | chapter → article → venue → publisher → copyright matrix | all 15 sources unpublished ⇒ copyright 100% author-held today; **no chapter rights-blocked** |
 | [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) | the 37-work manuals library read against the plan (grounding map, gap analysis, positioning) | no cuts; mandatory reframes on the pre-merge Ch. 2/3/12/13/14 (BOOK_PLAN §11 wording — the crosswalk's own §0 says "2, 3, 7, 14"; the two lists never got reconciled, resolve against BOOK_PLAN §11 + the renumbered §3); the Ch. 7 keep-vs-merge fork it parked was **ruled 10-07-2026** (merged into Ch. 6); top referee risk = corpus-absence induction |
 | [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) | folder-local changelog | every book-folder change logs here under `[Unreleased]`, *in addition to* the repo-root [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md) |
-| [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) | converted book-form chapters | 12 of ~14 exist as of 18-07-2026 (H430 samples 09-07 + the H846–H866 conversion wave 13-07; ch02 also gained §6 'The corpus as a bounded witness', H1078/PR #505). Remaining writing = the data chapters ch03/ch11 + Introduction/glue (A61 ruling: Introduction-argument, never a chapter) |
+| [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) | converted book-form chapters | all 14 chapter files exist as of 20-08-2026 (`ch01`–`ch14`; H430 samples 09-07 + the H846–H866 conversion wave 13-07; ch02 also gained §6 'The corpus as a bounded witness', H1078/PR #505). Remaining glue = Introduction-argument (A61: never a numbered chapter) + part-bridges (five files present) + conclusion |
 
 The book is a **gluing job, not a drafting job**: the 15 approved articles
 map onto 14 chapters (13 one-to-one; Ch. 6 merges A02+A33), ~13 of the 15
@@ -238,7 +238,9 @@ updated against the registry:
 2. **Rights table** — built (§4.3); only the rolling at-acceptance check
    remains.
 3. **≥1–2 chapters "under review" at proposal time** — pending: nothing is
-   submitted yet; A36 is the nearest (5/5, ready to send).
+   submitted yet; A36 remains 5/5 in
+   [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
+   (article-submit freeze until 2026-11-01 — this manual does not ask for a send).
 4. **κ / second annotator** for the `reviewed` evidence grade — open; the
    A44 IRR study (κ=0.336 five-way, 10-07-2026) is the nearest methodology
    precedent.
@@ -290,7 +292,7 @@ Two sync caveats measured 11-07-2026:
 
 ```
 python docs_site/build_site.py [out_dir]      # default out: docs_site/_site
-python -m pytest docs_site/test_docs_site.py  # 4 tests
+python -m pytest docs_site/test_docs_site.py  # 4 tests (re-run 20-08-2026: 4 passed in 0.59s)
 ```
 
 - Requires `zettelkastenwiki`, pinned in

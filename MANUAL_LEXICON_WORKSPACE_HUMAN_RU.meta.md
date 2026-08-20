@@ -1,6 +1,6 @@
 # MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 01-08-2026_
+_Created: 18-07-2026 · Last updated: 20-08-2026_
 
 Companion record for [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md) (root thin sheet, Russian).
 
@@ -15,10 +15,12 @@ Authored 10-07-2026 (H479), consolidated H604. Re-thinned 18-07-2026 under [H124
 ## Verification
 
 ```
-LAST_VERIFIED: 01-08-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 20-08-2026
+VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
+COMMANDS_SPOT_RUN: 1
 ```
+
+H3059: cited paths exist; "семь манускриптов" → four audience + four deep + two root sheets; leftover "H442/H462 не закрыты" aligned with §3. Terminology vs FEATURES_INDEX: 15+ Cologne lists here vs 44-dict org inventory — different scopes, not a clash. No Fable rewrite (fact-check only).
 
 ## Improvement backlog
 
@@ -46,6 +48,7 @@ Re-checked on each [/workspace-manual](https://github.com/gasyoun/claude-config/
 
 | Date | Change | By |
 |---|---|---|
+| 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Sheet authored (H479); consolidated H604 11-07-2026 | Fable 5 (`claude-fable-5`) |

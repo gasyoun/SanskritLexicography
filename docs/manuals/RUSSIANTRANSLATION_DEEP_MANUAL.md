@@ -1,6 +1,6 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 01-08-2026_
+_Created: 11-07-2026 · Last updated: 20-08-2026_
 
 **LAST_VERIFIED:** 01-08-2026 · Grok 4.5 (`grok-4.5`) · [H2071](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2071-Grok_SanskritLexicography_rt-deep-manual-manifest-v2-steps-rewrite_01.08.26.md) — census residual “steps 4–7 still narrate historical Workflow” **closed**: §5 steps 4–9 document headless CLI + manifest v2 only; Workflow is forensics / historical note only (see §0 line 1 and step 4 historical note).
 
@@ -24,7 +24,7 @@ and the command output of the scripts themselves.
 
 1. Route = **headless CLI, manifest v2** (`execution_route: claude-cli-headless`). Max-Workflow is forensics only.
 2. Generation model = **Sonnet 5 (`claude-sonnet-5`)**, pinned in the harness — not the interactive session model.
-3. Store = gitignored `src/pwg_ru_translated.jsonl` (**11,603** sense rows as of 24-07-2026); never commit bulk RU.
+3. Store = gitignored `src/pwg_ru_translated.jsonl` (**11,603** sense rows as of 24-07-2026; **not present in a worktree/clone** — this pass could not re-count); never commit bulk RU.
 4. Live queue = [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) — not this manual.
 5. Trust order: **command output** > `.ai_state.md` > dated docs.
 

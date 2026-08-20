@@ -1,6 +1,6 @@
 # SanskritLexicography workspace manual — for agents
 
-_Created: 10-07-2026 · Last updated: 18-07-2026_
+_Created: 10-07-2026 · Last updated: 20-08-2026_
 
 Human twin (Russian):
 [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md).
