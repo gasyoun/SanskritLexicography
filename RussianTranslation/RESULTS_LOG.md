@@ -4,6 +4,26 @@ _Created: 09-07-2026 · Last updated: 21-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 21-08-2026 — H3228 (Grok 4.6) — c1 live-gate NO-GO (weekly Pro cap); ADAna/ABIra named skip
+
+Grok 4.6 (`grok-4.6`). Budgeted monster sitting for ledger targets `nominal:ADAna` + `nominal:ABIra`. `/pwg-live-gate` on **c1** (MG: c4 dead). Warm-up `rate_limit` at 11 868 ms; envelope `api_error_status` 429, result `You've hit your weekly limit · resets Aug 23, 2pm (Europe/Moscow)`. Measured never ran. Canary not started. `--allow-over-cost` not used. Paid translation **$0**. Probe ration 1 of 2 for 21-08 UTC; do not burn the second slot against the same weekly cap.
+
+| Gate | Result |
+|---|---|
+| `gate_reason` | `HEALTH_NOGO` |
+| verdict | **NO-GO** |
+| profile / model | c1 / `claude-sonnet-5` |
+| `run_id` | `h963-c1-single-profile-gate0/2026-08-21T06:43:26Z-pid38172` |
+| warm-up | 11 868 ms, `rate_limit`, 1 167 B, `duration_api_ms` 0 |
+| measured | absent |
+| canary | not run |
+| ADAna preflight | `over_ceiling` true · `$10.31` · `defer_monster` `_a_d_ana` (jsonl match) |
+| ABIra preflight | `over_ceiling` true · `$7.03` · `defer_monster` `_a_b_ira` (jsonl `_a_d_ara` is `ADAra` — **do not translate**) |
+| windows | both named skip |
+| store / TM / coordinator | untouched |
+
+Packet: [H3228_C1_LIVE_GATE_NOGO_21-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3228/H3228_C1_LIVE_GATE_NOGO_21-08-2026.md). Resume after 2026-08-23 14:00 Europe/Moscow with a **fresh** c1 gate. Handoff: [H3228 (Grok 4.6) — Budgeted monster session: nominal ADAna + ABIra via prepare --allow-over-cost](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3228-Grok_SanskritLexicography_adana-abira-monster-allow-over-cost_21.08.26.md).
+
 ## 21-08-2026 — H3217 (Grok 4.6) — commit deferred_monsters.jsonl
 
 Grok 4.6 (`grok-4.6`). MG ruled **commit** (not drop) on the untracked H304 cap-and-defer ledger that sat on the shared main checkout since 15-08-2026. [PR #1846](https://github.com/gasyoun/SanskritLexicography/pull/1846) · [v1.144.88](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.88). File: [deferred_monsters.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/deferred_monsters.jsonl). Operator doc [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) now matches [window_common.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py) ("committed, not gitignored"). Do not gitignore or relocate.
