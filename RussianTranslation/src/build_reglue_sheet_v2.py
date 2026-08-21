@@ -84,7 +84,7 @@ UNBOUND_LABEL = "новый смысл, в PWG соответствия нет"
 # re-escaping CDSL markup into a wall of text. print_panel is the canonical
 # article-site render (<ls> -> Cologne link + bibliography tooltip, {#…#} ->
 # italic IAST, Russian highlighted); EXTRA_CSS/legend_html come with it.
-from g5_card_render import print_panel, EXTRA_CSS as G5_CSS, legend_html as g5_legend
+from g5_card_render import print_panel, print_panel_de, EXTRA_CSS as G5_CSS, legend_html as g5_legend
 # H2844 P1: which store newlines are the printed column's line-wrap (collapse)
 # and which are structure (keep). Pure functions over the store string.
 from line_collapse import COMPACT, EXPANDED, collapse, store_digest
@@ -99,7 +99,7 @@ REVIEW = os.path.join(DATA, "review")
 # The 16-08 generation was built but never published; its inputs (the wave-3
 # reglue jsons) moved the same day, so it can no longer be reproduced and its
 # lock was retired rather than re-bound. 17-08 is the generation that ships.
-GENERATED = "2026-08-19"
+GENERATED = "2026-08-21"
 
 ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5), ("yat", 5),
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
@@ -251,6 +251,10 @@ EXTRA_CSS = G5_CSS + """  .tchip { display:inline-block; padding:1px 7px; border
   .cflow .clusters li { display:inline; }
   .cflow .clusters li::after { content:" · "; color:#5c6773; }
   .cflow .clusters li:last-child::after { content:""; }
+  .unplaced { margin: 10px 0 0; padding: 8px 10px; border: 1px dashed #3a4048; border-radius: 8px; }
+  .unplaced > .hd { font-weight: 700; color: #9aa0aa; margin-bottom: 6px; }
+  .chips { margin-top: 6px; }
+  .col-de .ins-chip { margin: 2px 4px 2px 0; }
 """
 
 #: build_article_site renders an UNRESOLVED citation as `<span class=ls …>`
@@ -385,15 +389,16 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
         for s in hom["senses"]:
             pwg_body, st = render_body(s.get("pwg_ru", ""), mode, nl)
             ls_stats += st
+            pair = "%s:%s" % (hom["h"], s["sense"])
             if compact:
-                block = ['<span class="csense"><span class="cmark">%s)</span>%s'
-                         % (esc(s["sense"]), pwg_body)]
+                block = ['<span class="csense" data-pair="%s"><span class="cmark">%s)</span>%s'
+                         % (esc(pair), esc(s["sense"]), pwg_body)]
             else:
                 # H3152 B4 (MG review 5a): «значение PWG 2» read both as "PWG's
                 # second meaning" and as "the meaning called PWG 2". Name the
                 # relation instead of the thing.
-                block = ['<div class="sense"><div class="hd">%s</div>%s'
-                         % (esc(BOUND_LABEL % s["sense"]), pwg_body)]
+                block = ['<div class="sense" data-pair="%s"><div class="hd">%s</div>%s'
+                         % (esc(pair), esc(BOUND_LABEL % s["sense"]), pwg_body)]
             for sup in s["supplements"]:
                 h, st2, kl = render_supplement(sup, mode, nl)
                 ls_stats += st2
@@ -403,9 +408,9 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
             block.append("</span>" if compact else "</div>")
             chunks.append("".join(block))
         if hom["new_senses"]:
-            chunks.append('<span class="csense"><span class="cmark">＋</span>'
+            chunks.append('<span class="csense" data-pair="unplaced"><span class="cmark">＋</span>'
                           if compact else
-                          '<div class="sense"><div class="hd">'
+                          '<div class="sense" data-pair="unplaced"><div class="hd">'
                           '＋ новые значения (нет значения PWG для привязки)</div>')
             for sup in hom["new_senses"]:
                 h, st2, kl = render_supplement(sup, mode, nl)
@@ -424,6 +429,60 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
            % (ls_stats[HIT], ls_stats[MINTABLE], ls_stats[NO_LOCUS], n_placed, n_new,
               klass_stats["adds"], klass_stats["restates"], klass_stats["cancels"]))
     return cov + body, ls_stats, klass_stats, n_placed, n_new
+
+
+def render_de_body(raw, mode=EXPANDED, nl=None):
+    """German PWG skeleton as print view — collapse wraps, no Cyrillic mark."""
+    text, n_col, n_kept = collapse(raw or "", mode)
+    if nl is not None:
+        nl["collapsed"] += n_col
+        nl["kept"] += n_kept
+    return _mark_gaps(print_panel_de(text))
+
+
+def insertion_chip(sup, pair):
+    """Typology chip on the DE column: sign + layer, full German `de` in tooltip."""
+    head, _klass = _supp_head(sup)
+    de = sup.get("de") or ""
+    return ('<span class="ins-chip chip" data-pair="%s">%s'
+            '<span class="chip-tip">%s</span></span>'
+            % (esc(pair), head, esc(de)))
+
+
+def render_de_column(obj, mode=EXPANDED, nl=None):
+    """Left column: original PWG German + insertion chips. Not gā.de.md."""
+    chunks = []
+    compact = mode == COMPACT
+    n_chips = 0
+    for hom in obj["homonyms"]:
+        chunks.append("<h4>омоним %s</h4>" % esc(hom["h"]))
+        for s in hom["senses"]:
+            pair = "%s:%s" % (hom["h"], s["sense"])
+            pwg_body, _st = render_de_body(s.get("pwg_de", ""), mode, nl)
+            chips = "".join(insertion_chip(sup, pair) for sup in s["supplements"])
+            n_chips += len(s["supplements"])
+            chip_wrap = ('<span class="chips">%s</span>' % chips) if chips else ""
+            if compact:
+                chunks.append(
+                    '<span class="csense" data-pair="%s"><span class="cmark">%s)</span>%s%s</span>'
+                    % (esc(pair), esc(s["sense"]), pwg_body, chip_wrap))
+            else:
+                chunks.append(
+                    '<div class="sense" data-pair="%s"><div class="hd">PWG %s</div>%s%s</div>'
+                    % (esc(pair), esc(s["sense"]), pwg_body, chip_wrap))
+        if hom["new_senses"]:
+            chips = "".join(insertion_chip(sup, "unplaced") for sup in hom["new_senses"])
+            n_chips += len(hom["new_senses"])
+            if compact:
+                chunks.append(
+                    '<span class="csense" data-pair="unplaced"><span class="cmark">＋</span>%s</span>'
+                    % chips)
+            else:
+                chunks.append(
+                    '<div class="unplaced" data-pair="unplaced"><div class="hd">'
+                    "некуда вставить</div>%s</div>" % chips)
+    body = ('<div class="cflow">%s</div>' % "".join(chunks)) if compact else "".join(chunks)
+    return body, n_chips
 
 
 # --------------------------------------------------------------------- build
@@ -477,9 +536,12 @@ def build():
         expanded, ls_stats, klass_stats, n_placed, n_new = render_card(
             key1, obj, EXPANDED, nl)
         compact, _, _, _, _ = render_card(key1, obj, COMPACT, None)
+        de_exp, n_chips = render_de_column(obj, EXPANDED, None)
+        de_cmp, _ = render_de_column(obj, COMPACT, None)
         totals += ls_stats
         totals += klass_stats
         per_card_klass[key1] = klass_stats
+        totals["chips"] += n_chips
 
         bodies_after.extend(card_bodies(obj))
         raw_after.append(raw)
@@ -505,15 +567,12 @@ def build():
                 'неверно типизировано или неверно привязано. Ниже оцените 1–5 общую '
                 'сформированность карточки.)</span>'),
             "note_placeholder": "если отклоняете: какое дополнение, какой правильный подтип/значение",
-            "panels": [
-                ("1 · склеенная карточка — печатный вид, метки типологии, связанные "
-                 "цитаты («компактно» вверху страницы переключает на печатную колонку)",
-                 '<div class="render-expanded">%s</div>'
-                 '<div class="render-compact">%s</div>' % (expanded, compact)),
-                ("2 · та же карточка как разметка store — цвета = части статьи; "
-                 "цитируйте отсюда в заметке",
-                 anatomy.highlight(raw)),
-            ],
+            "panels": [],
+            "left": ('<div class="render-expanded">%s</div>'
+                     '<div class="render-compact">%s</div>' % (de_exp, de_cmp)),
+            "right": ('<div class="render-expanded">%s</div>'
+                      '<div class="render-compact">%s</div>' % (expanded, compact)),
+            "store_markup": anatomy.highlight(raw),
         })
     digests = digest_guard(bodies_before, bodies_after, raw_before, raw_after)
     # U7 (H2846) — MG: "typology always needs to be supported by statistics".
@@ -553,15 +612,16 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v5-2026-08-19"
+    sheet_id = "h180-reglue-spotcheck-v6-2026-08-21"
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v5.decisions.json")
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v6.decisions.json")
     config.update({
         "sheet_id": sheet_id,
-        "title": "H180 · выборочная проверка склейки с учётом содержания (v3)",
-        "subtitle": ("15 пилотных карточек с показанной типологией склейки, "
-                     "подключёнными ссылками Cologne, разбитыми для чтения "
-                     "цепочками значений NWS и свёрнутыми переносами строк "
+        "split_layout": True,
+        "title": "H180 · выборочная проверка склейки с учётом содержания (v6)",
+        "subtitle": ("15 пилотных карточек: слева исходный PWG с чипами вставки, "
+                     "справа русская склейка, разметка store за ссылкой. "
+                     "Типология, ссылки Cologne, цепочки NWS, свёртка переносов "
                      "печатной колонки" + MODE_SWITCH),
         "footer": ("«Типология верна» = метки и привязка каждого дополнения верны · "
                    "«Неверно типизировано/привязано» = что-то определено или "
@@ -610,20 +670,26 @@ def main():
         deterministic=totals[HIT] + totals[NO_LOCUS], lookup=totals[MINTABLE],
         agent=0, human=len(items),
         evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
-        rules=["ls_resolver", "citation_tm", "h180-reglue-v5", "line_collapse"])
+        rules=["ls_resolver", "citation_tm", "h180-reglue-v6", "line_collapse",
+               "split_layout"])
     doc = render_review_sheet(items, config, extras=True, screening=sc)
     doc, chash = stamp(doc)
     if 'id="modecompact"' not in doc or "render-compact" not in doc:
         raise SystemExit("the compact/expanded control did not survive rendering")
+    if "card-split" not in doc or 'class="col-de"' not in doc:
+        raise SystemExit("split_layout did not survive rendering")
+    if 'class="anatomy"' in re.sub(
+            r'<details class="store-details"[^>]*>.*?</details>', "", doc, flags=re.S):
+        raise SystemExit("anatomy leaked outside closed details")
 
-    sample = os.path.join(REVIEW, "h180_reglue_v5_sample.jsonl")
+    sample = os.path.join(REVIEW, "h180_reglue_v6_sample.jsonl")
     # newline="\n": the tracked sample is LF in git, and a Windows run without
     # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
     with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
-    out = os.path.join(REVIEW, "h180_reglue_v5_sheet.html")
+    out = os.path.join(REVIEW, "h180_reglue_v6_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
     write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED, source_html=out)
@@ -746,6 +812,38 @@ def selftest():
           "the supplement is present in both renderings")
     check('class="csupp"' in cmp_html,
           "in compact the supplement sits inline behind its sense marker")
+
+    # H3207 — left column is original PWG German + chips, not the glued .de.md
+    obj_de = {
+        "homonyms": [{
+            "h": "h0", "new_senses": [{
+                "subtype": "nws_at_sense", "badge": "NWS", "op": "add",
+                "ru": "новый смысл", "de": "ein neuer Sinn", "sign": "＋",
+            }],
+            "senses": [{
+                "sense": "1",
+                "pwg_ru": "идти",
+                "pwg_de": "{#gA#} {%gehen, kommen%}",
+                "supplements": [{
+                    "subtype": "restate", "badge": "PW", "op": "restate",
+                    "ru": "то же короче",
+                    "de": "FULLGERMANWANDERN restates PWG",
+                    "sign": "≈",
+                }],
+            }],
+        }],
+    }
+    de_html, n_chips = render_de_column(obj_de, EXPANDED)
+    check(n_chips == 2, "one chip per attached supplement plus one unplaced")
+    check(de_html.count('class="ins-chip') == 2, "each supplement is one insertion chip")
+    check("FULLGERMANWANDERN" in de_html, "full German de is in the tooltip, not truncated")
+    check("некуда вставить" in de_html, "unplaced new_senses land in the leftover block")
+    printviews = "".join(re.findall(r'<div class="printview">.*?</div>', de_html, re.S))
+    print_text = re.sub(r"<[^>]+>", "", printviews)
+    check(not re.search(r"[А-Яа-яЁё]", print_text),
+          "no Russian bodies in .printview of the DE column: %r" % print_text[:80])
+    check("gehen" in de_html and "идти" not in de_html.split("ins-chip")[0],
+          "left column shows PWG German, not the glued Russian")
 
     print("build_reglue_sheet_v2 selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1

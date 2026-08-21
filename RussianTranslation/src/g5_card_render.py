@@ -423,6 +423,15 @@ def print_panel(ru_text):
     return '<div class="printview">%s</div>' % annotate(mark_cyrillic(rendered))
 
 
+def print_panel_de(de_text):
+    """German print view — same Cologne `<ls>` / `{#…#}` pipeline as
+    :func:`print_panel`, without the Cyrillic highlighter (that wrap is for
+    the RU column; running it on PWG German would paint nothing useful and
+    would fail the split-layout 'no Russian bodies in .col-de' gate)."""
+    rendered = site_render(de_text or "", "html", "de")
+    return '<div class="printview">%s</div>' % annotate(rendered)
+
+
 def store_panel(ru_text):
     """Panel 2 — the same line as RAW STORE MARKUP, colour-coded by part class so
     it cannot be mistaken for panel 1. This is the text to quote in a note."""
