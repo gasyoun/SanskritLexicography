@@ -1,8 +1,19 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 14-08-2026_
+_Created: 09-07-2026 · Last updated: 21-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 21-08-2026 — H3217 (Grok 4.6) — commit deferred_monsters.jsonl
+
+Grok 4.6 (`grok-4.6`). MG ruled **commit** (not drop) on the untracked H304 cap-and-defer ledger that sat on the shared main checkout since 15-08-2026. [PR #1846](https://github.com/gasyoun/SanskritLexicography/pull/1846) · [v1.144.88](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.88). File: [deferred_monsters.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/deferred_monsters.jsonl). Operator doc [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) now matches [window_common.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py) ("committed, not gitignored"). Do not gitignore or relocate.
+
+| target | reason | source | date | est_tokens | est_usd | est_usd/card | keys |
+|---|---|---|---|---|---|---|---|
+| `nominal:ADAna` | `cost_gate_over_ceiling` | `coordinator.prepare` | 2026-08-15 | 5 464 800 | 10.31 | 10.31 | `_a_d_ana` |
+| `nominal:ABIra` | `cost_gate_over_ceiling` | `coordinator.prepare` | 2026-08-15 | 5 794 200 | 10.93 | 3.64 | `_a_d_ara` |
+
+Handoff: [H3217 (Grok 4.6) — Commit deferred_monsters.jsonl (MG ruling: ledger is the queue)](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3217-Grok_SanskritLexicography_commit-deferred-monsters-ledger_21.08.26.md).
 
 ## 14-08-2026 — H2727 (Grok 4.6) — Wave-2 5000-key drain
 
