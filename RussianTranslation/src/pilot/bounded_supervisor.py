@@ -67,6 +67,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+import agent_ops_map_pwg as _agent_ops_map_pwg  # noqa: E402  vendored Uprava map_pwg
+
 SCHEMA = 'pwg.bounded_supervisor.v1'
 
 # Stop reasons — the loop stops on the FIRST of these to fire.
@@ -623,6 +625,11 @@ class BoundedSupervisor:
             'empty_streak': self.empty_streak,
             'next_index': self.next_index,
             'completed_window_ids': list(self.completed_window_ids),
+            # H3229 additive overlay. Missing on old receipts is None via .get, never 0.
+            'agent_ops_code': _agent_ops_map_pwg.map_pwg_stop(
+                self.stop_reason,
+                {'cost_evaluable': self._durable_cost_evaluable},
+            ),
         }
 
 

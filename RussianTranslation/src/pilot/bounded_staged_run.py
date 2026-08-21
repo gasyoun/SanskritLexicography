@@ -78,6 +78,7 @@ import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
 from call_reservation import CallReservationLedger, run_ids  # noqa: E402
 from bounded_supervisor import BoundedSupervisor, strict_cost_fn   # noqa: E402
+import agent_ops_map_pwg as _agent_ops_map_pwg  # noqa: E402  vendored Uprava map_pwg
 
 SCHEMA = 'pwg.bounded_staged_run.v1'
 
@@ -1017,6 +1018,12 @@ def run(args):
                            resume=args.resume, call_counter=call_ledger.spent,
                            usage_counter=call_ledger.usage)
     summary = sup.run()
+    if isinstance(summary, dict) and 'agent_ops_code' not in summary:
+        summary = dict(summary)
+        summary['agent_ops_code'] = _agent_ops_map_pwg.map_pwg_stop(
+            summary.get('stop_reason'),
+            {'cost_evaluable': summary.get('cost_evaluable')},
+        )
     report = {'schema': SCHEMA, 'run_id': run_id, 'plan_view': view, 'summary': summary}
     if args.report:
         mao.atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=1) + '\n')
