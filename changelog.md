@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H3229 additive `summary.agent_ops_code` on the PWG bounded envelope** (Grok 4.6 `grok-4.6`, 21-08-2026). Vendored mapper [`agent_ops_map_pwg.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/agent_ops_map_pwg.py) (canon [Uprava `map_pwg.py`](https://github.com/gasyoun/Uprava/blob/main/tools/agent_ops/map_pwg.py)); `bounded_supervisor.summary()` writes the field; old receipts without it still parse (`.get` → `None`, never `0`). Does not retune `HARD_TIMEOUT_MS` or `$2`. [H3229](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3229-Grok_Uprava_agent-ops-w1-budgets-failures-envelope_21.08.26.md).
+
 ## [1.144.90] - 2026-08-21
 ### Added
 
