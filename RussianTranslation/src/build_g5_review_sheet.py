@@ -185,6 +185,23 @@ def card_panels(ru, de, tags=None):
     return panels
 
 
+def card_split_surfaces(ru, de, tags=None):
+    """H3207 split_layout: left = German source, right = print RU (+ tag
+    legend), store anatomy behind details. No insertion chips (ruling 9)."""
+    left = cardrender.de_panel(de)
+    right = cardrender.print_panel(ru)
+    legend = cardrender.card_legend_html(
+        cardrender.card_tags(ru) if tags is None else tags)
+    if legend:
+        right += legend
+    store = cardrender.store_panel(ru)
+    if cardrender.same_text(ru):
+        store += ('<div class="panelnote">Текст тот же, что в печатной колонке — '
+                  'эта строка не несёт разметки, кроме показанной цветом; '
+                  'нужна только для точной цитаты в заметке.</div>')
+    return left, right, store
+
+
 #: Facet order = the order the reader meets the slots in `[Ved, unsp] [ifc]`.
 FACET_SLOTS = [("diasystem", "Диасистема"), ("domain", "Домен"),
                ("position", "Позиция в сложном слове")]
@@ -307,6 +324,32 @@ def _selftest():
     check("показано {shown} из {total}" in doc, "the count line is Russian")
     check("in fine compositi" in doc, "the in-card legend is in the rendered sheet")
     check(doc.count("<script>") == doc.count("</script>"), "the document's scripts balance")
+
+    split_items = []
+    for i, (ru, de) in enumerate(_FIXTURE_CARDS):
+        tags = cardrender.card_tags(ru)
+        left, right, store = card_split_surfaces(ru, de, tags)
+        split_items.append({
+            "id": "fix:%d" % i, "filt": "na", "title": "t", "badges": [],
+            "question": "q", "facets": tags, "panels": [],
+            "left": left, "right": right, "store_markup": store,
+        })
+    split_doc = render_review_sheet(split_items, {
+        "sheet_id": "selftest-split", "title": "t", "subtitle": "s", "footer": "f",
+        "approve_label": "A", "reject_label": "R", "filters": [("na", "na")],
+        "generated": GENERATED, "split_layout": True,
+        "extra_css": cardrender.EXTRA_CSS},
+        extras=True,
+        screening=screening_block(
+            deterministic=0, lookup=0, agent=0, human=len(split_items),
+            evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+            rules=[]))
+    check('class="card-split"' in split_doc and 'class="col-de"' in split_doc,
+          "G5 split_layout emits the two-column grid")
+    check('class="ins-chip"' not in split_doc, "G5 split_layout has no insertion chips")
+    check("<details" in split_doc and " open" not in
+          (re.search(r"<details[^>]*>", split_doc).group(0) if re.search(r"<details[^>]*>", split_doc) else ""),
+          "G5 store markup sits in a closed details element")
     print("SELFTEST", "PASS" if ok else "FAIL")
     return 0 if ok else 1
 
@@ -419,7 +462,9 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
                          "Reject = нет (почему — в заметку) · Defer = отложить "
                          "в needs_review)</span>"),
             "note_placeholder": "если отклонено → что именно не так; частичная правка — тоже сюда",
-            "panels": card_panels(ru, de, tags),
+            "panels": [],
+            **dict(zip(("left", "right", "store_markup"),
+                       card_split_surfaces(ru, de, tags))),
         })
 
     force_lock = False
@@ -464,17 +509,18 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
                                       n_german, n_mflag))
     config = {
         "sheet_id": SHEET_ID,
+        "split_layout": True,
         "title": "G5 · печатная годность — живая очередь, партия 1v3",
         "subtitle": subtitle,
         "footer": ("Одобрить = готово к печати (<code>run_batch</code> пометит как "
                    "<code>approved</code>) · Отклонить = не годен · Отложить = в "
                    "<code>needs_review</code>. Экспорт валидируется против "
                    "<code>review/locks/%s.lock.json</code> перед любым применением.<br>"
-                   "Пометы NWS расшифрованы прямо на карточке (панель 4) и "
+                   "Пометы NWS расшифрованы в правой колонке и "
                    "фильтруются полосой фасетов над карточками; полный словарь "
                    "со статистикой — <a href=\"%s\" target=\"_blank\" "
                    "rel=\"noopener\"><code>NWS_TAG_VOCABULARY_CENSUS_2026-07.md</code></a>.<br>"
-                   "Цвета в панелях 2–3 (разметка store и немецкий источник): %s"
+                   "Слева немецкий источник, справа печать; разметка store — за ссылкой. Цвета: %s"
                    % (SHEET_ID, cardrender.CENSUS_URL, cardrender.legend_html())),
         "approve_label": "Готово к печати", "reject_label": "Не годно",
         "filters": [(s, _stratum_ru(s)) for s in strata],
