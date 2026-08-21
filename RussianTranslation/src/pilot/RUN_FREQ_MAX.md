@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 07-08-2026_
+_Created: 09-07-2026 · Last updated: 21-08-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -245,7 +245,8 @@ tracked-file drift and is wired into `window_selftest.py`
 - **H304 hardening (07-07-2026) — four operator-memory rules are now code paths:**
   (1) **cap-and-defer** — `coordinator.py claim/prepare` act on the `perf_preflight` cost
   gate: an over-ceiling (kAla-class) window is parked in
-  `deferred_monsters.jsonl` (local-only run artifact) and refused (`prepare
+  [`deferred_monsters.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/deferred_monsters.jsonl)
+  (committed append-only ledger, not gitignored — H304 + MG 21-08-2026) and refused (`prepare
   --allow-over-cost` only inside a dedicated human-budgeted monster session — MG ruling
   07-07-2026); (2) **gate-outcome memory** — the RU audit writes
   `output/requeue.defect.fshas.txt` and `requeue_from_audit.py` denylists those fragment

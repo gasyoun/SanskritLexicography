@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.88] - 2026-08-21
+### Added
+
+- **H3217 — commit `deferred_monsters.jsonl`** (Grok 4.6 `grok-4.6`, MG 21-08-2026): the H304 cap-and-defer ledger is the queue of over-ceiling (kAla-class) windows. Two 15-08-2026 `coordinator.prepare` rows (`nominal:ADAna`, `nominal:ABIra`) were untracked on the shared main checkout because [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) called the file a "local-only run artifact" while [`window_common.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_common.py) says committed. Operator doc now matches the code comment. Do not gitignore or relocate.
+
 ## [1.144.87] - 2026-08-21
 ### Changed
 
