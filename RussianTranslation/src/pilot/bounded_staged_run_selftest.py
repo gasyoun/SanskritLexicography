@@ -197,6 +197,7 @@ def test_d_clean_completion(td):
     sup = bsr.build_supervisor(windows, os.path.join(td, 'd.json'), _ceilings(), runner, audit)
     summ = sup.run()
     assert summ['stop_reason'] == STOP_CLEAN_TARGET, summ
+    assert summ.get('agent_ops_code') is None, summ  # success is not a failure code
     assert summ['windows_done'] == 3, summ
     assert runner.order == ['no_pwg_w02', 'no_pwg_w03', 'no_pwg_w05'], runner.order
     assert summ['completed_window_ids'] == ['no_pwg_w02', 'no_pwg_w03', 'no_pwg_w05'], summ
@@ -249,6 +250,7 @@ def test_f_ceiling_exhaustion(td):
                                _ceilings(max_calls=5), runner, audit)
     summ = sup.run()
     assert summ['stop_reason'] == STOP_CALL_COUNT, summ
+    assert summ.get('agent_ops_code') == 'A1', summ
     assert summ['calls_spent'] == 6 and summ['windows_done'] == 3, summ   # 3 windows * 2 calls
     print('  (f) a call-count ceiling stops the run mid-queue: PASS')
 
@@ -268,6 +270,7 @@ def test_g_cost_fail_closed(td):
                                _ceilings(cost_ceiling=100), runner, audit)
     summ = sup.run()
     assert summ['stop_reason'] == STOP_COST_UNEVALUABLE, summ
+    assert summ.get('agent_ops_code') == 'A6', summ
     assert runner.order == ['no_pwg_w02', 'no_pwg_w03'], runner.order   # stops on the unpriceable one
     # pre-run fail-closed: a cost ceiling requested but the economy ledger cannot price it.
     empty_ledger = {'aggregate': {'cost_per_clean_band': None}}
@@ -294,6 +297,7 @@ def test_h_consecutive_empty(td):
                                _ceilings(empty_streak=3), runner, audit)
     summ = sup.run()
     assert summ['stop_reason'] == STOP_CONSECUTIVE_EMPTY, summ
+    assert summ.get('agent_ops_code') == 'A2', summ
     assert summ['empty_streak'] == 3, summ
     print('  (h) a consecutive non-productive streak stops the run: PASS')
 
@@ -1445,8 +1449,22 @@ def test_u_auto_promote_until(td):
           'with bound record; expired/tampered refusals: PASS')
 
 
+def test_old_receipt_without_agent_ops_code_still_parses(td):
+    """H3229: parsers must treat a missing field as None, never 0."""
+    old = {
+        'schema': 'pwg.bounded_supervisor.v1',
+        'stop_reason': 'clean_target',
+        'windows_done': 1,
+        'cost_evaluable': True,
+    }
+    assert 'agent_ops_code' not in old
+    assert old.get('agent_ops_code') is None
+    print('  old receipts without agent_ops_code still parse: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
+        test_old_receipt_without_agent_ops_code_still_parses(td)
         test_a_plan_scope(td)
         test_b_dry_run_no_generation_call(td)
         test_c_historical_jobs_excluded(td)
