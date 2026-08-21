@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.90] - 2026-08-21
 ### Added
 
 - **H3228 — c1 live-gate NO-GO packet** (Grok 4.6 `grok-4.6`, 21-08-2026): budgeted monster sitting for `nominal:ADAna` + `nominal:ABIra` stopped at `/pwg-live-gate` on c1. Warm-up 429 weekly Pro cap (resets 23-08 14:00 Europe/Moscow). Zero paid translation. Live ABIra key is `_a_b_ira`, not jsonl `_a_d_ara`. Packet [H3228_C1_LIVE_GATE_NOGO_21-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3228/H3228_C1_LIVE_GATE_NOGO_21-08-2026.md).
