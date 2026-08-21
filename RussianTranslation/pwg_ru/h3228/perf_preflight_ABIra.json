@@ -1,0 +1,88 @@
+{
+  "schema": "pwg.performance_preflight.v1",
+  "root": "ABIra",
+  "lang": "ru",
+  "nominal": true,
+  "selected_keys": [
+    "_a_b_ira"
+  ],
+  "tm_sidecar": "RussianTranslation/src/pilot/translation_memory.ru.json",
+  "tm_available": true,
+  "tm_auto": true,
+  "tm_hits": [],
+  "tm_cards": 0,
+  "frag_tm_sidecar": "RussianTranslation/src/pilot/translation_memory.frag.ru.jsonl",
+  "frag_tm_available": true,
+  "frag_tm_entries": 0,
+  "frag_tm_cards": [],
+  "frag_tm_fragments": 0,
+  "fragment_hit_groups": {},
+  "degenerate_passthrough_keys": [],
+  "near_degenerate_candidates": [],
+  "presplit_keys": [
+    "_a_b_ira"
+  ],
+  "batch_count": 0,
+  "agent_expected_after_tm": 15,
+  "output_budget": 90,
+  "selfheal_group_budget": 12,
+  "recommended_action": "run-now-low",
+  "warnings": [
+    "presplit keys need fragment fallback, but translation_memory.frag.ru.jsonl is empty; run `python src/pilot/translation_memory.py build-frags --lang ru` after a heal Workflow emits frag_prov; no fragment provenance available yet",
+    "COST-GATE: est ~3726000 tokens / ~$7.03 (~$7.03 per translated card, ceiling $2.00) тАФ window-level gate is high; use cost_partition.run_now and route cost_partition.defer_monster to a human-budgeted lane before launching (H191)."
+  ],
+  "generator_log": [
+    "  tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) тАФ no source-SHA matches (all cards will translate)",
+    "  presplit: _a_b_ira portrait alone (26514 B) exceeds the 12000 B call-weight cap тАФ one fragment per call",
+    "  presplit: _a_b_ira (53 <ls> exceeds output budget 90) -> direct fragment translation",
+    "  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=15"
+  ],
+  "cost_gate": {
+    "est_agents_with_realism": 20.2,
+    "realism_factor": 1.35,
+    "est_tokens": 3726000,
+    "est_cost_usd": 7.03,
+    "cards_to_translate": 1,
+    "est_cost_per_card_usd": 7.03,
+    "per_card_ceiling_usd": 2.0,
+    "window_ceiling_usd": 25.0,
+    "over_ceiling": true,
+    "verdict": "OVER-CEILING",
+    "rate_basis": "Sonnet 5 list rates; token estimate is model-independent"
+  },
+  "cost_partition": {
+    "schema": "pwg.performance_preflight.cost_partition.v1",
+    "per_card_ceiling_usd": 2.0,
+    "run_now": [],
+    "defer_monster": [
+      "_a_b_ira"
+    ],
+    "totals": {
+      "run_now": {
+        "agent_expected_after_tm": 0,
+        "est_agents_with_realism": 0.0,
+        "est_tokens": 0,
+        "est_cost_usd": 0.0
+      },
+      "defer_monster": {
+        "agent_expected_after_tm": 15,
+        "est_agents_with_realism": 20.2,
+        "est_tokens": 3726000,
+        "est_cost_usd": 7.03
+      }
+    },
+    "per_card": {
+      "_a_b_ira": {
+        "key": "_a_b_ira",
+        "agent_expected_after_tm": 15,
+        "est_agents_with_realism": 20.2,
+        "est_tokens": 3726000,
+        "est_cost_usd": 7.03,
+        "est_cost_per_card_usd": 7.03,
+        "tm_resolved": false,
+        "degenerate_passthrough": false
+      }
+    },
+    "recommendation": "run run_now; route defer_monster to the human-budgeted lane"
+  }
+}
