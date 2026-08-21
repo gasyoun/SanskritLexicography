@@ -10,6 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+- **H3228 — c1 live-gate NO-GO** (Grok 4.6 `grok-4.6`, 21-08-2026). Weekly Pro cap on c1 (resets 23-08 14:00 Europe/Moscow). ADAna/ABIra named skip; live ABIra key `_a_b_ira` not jsonl `_a_d_ara`. Packet [H3228_C1_LIVE_GATE_NOGO_21-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3228/H3228_C1_LIVE_GATE_NOGO_21-08-2026.md).
 - **H3217 — committed `src/pilot/deferred_monsters.jsonl`** (Grok 4.6 `grok-4.6`, MG 21-08-2026). Two 15-08-2026 cap-and-defer rows (`nominal:ADAna`, `nominal:ABIra`). Operator runbook no longer calls the ledger a local-only artifact.
 
 ## [1.144.82] - 2026-08-19
