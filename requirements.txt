@@ -8,7 +8,7 @@ rapidfuzz
 # Shared review-sheet HTML emitter (H925) — RussianTranslation/src/build_renou_pilot_sheet.py
 # Pinned to the SAME tag .github/workflows/ci.yml installs (H2889 / #1802): this said
 # @main while CI pinned v0.7.0, so CI was green on a version no contributor had.
-csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.17.1
+csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@h3207-split-layout
 
 # Unconditional top-level imports across tracked scripts
 requests

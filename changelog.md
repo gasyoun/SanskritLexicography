@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.89] - 2026-08-21
+### Added
+
+- **H3207 — DE|RU split vote layout for the re-glue sheet (v6)** (Grok 4.6 `grok-4.6`, override of a Sonnet-named file): csl-pyutil 0.22.0 `split_layout` flag (wide main, two columns, store in closed `<details>`, current-card votes in the V17 bar). [h180_reglue_v6](https://gasyoun.github.io/vote/sheets/h180_reglue_v6.html) shows original PWG German with insertion chips on the left and glued Russian on the right. `digest_guard` unchanged (sense bodies `7c9d3081…`). G5 `--pin-ids` recut **stopped** (1/150 digest drift on `row:001509:subcard:_sam~~h0_zz_nws00#NWS-1`) — report [H3207_WAVE1_SPLIT_LAYOUT_REPORT_2026-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/H3207_WAVE1_SPLIT_LAYOUT_REPORT_2026-08.md). v5 stays hosted.
+
 ## [1.144.88] - 2026-08-21
 ### Added
 
