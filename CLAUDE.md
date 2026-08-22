@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+_Created: 06-08-2026 · Last updated: 22-08-2026_
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 > Org-level conventions (the wider `sanskrit-lexicon` ecosystem, the csl-orig
