@@ -284,7 +284,11 @@ item in this order:**
    well as by §18.**
 4. **Citation apparatus density** — `<ls>` per entry, per dict: which
    dictionaries *prove* senses and which assert; the §18 measurement extended
-   from 4 dictionaries to all 44.
+   from 4 dictionaries to all 44. **measured → FINDINGS
+   [§579](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2981): cliff, not spectrum — pwg 94.4 % / 6.50 per entry (801 788 total),
+   mw 79.1 %, ap90 31.2 %; 22 dicts carry zero `<ls>`; GRA cites heavily in print
+   but wraps only 12.0 % in markup.
 5. **Cross-reference conventions** — `см. / s. / vide / Vgl. / q.v. / =` — the
    internal reference graph of each dict, and its ring interaction (`˚`-refs).
    **measured → FINDINGS

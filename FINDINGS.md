@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 22-08-2026 (§578 — accent digitization is three incompatible devices: `/` in `<k2>` of exactly 9 dicts, svarita `\` un-digitized outside 17 lemma marks, German-school acute-vowel translit that never reaches the headword field; the pw-family pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash a sense disambiguator any join must preserve)
+_Created: 26-06-2026 · Last updated: 22-08-2026 (§579 — citation density is a cliff: pwg 94.4 % of entries cite at 6.50 `<ls>`/entry and alone carries 801 788 elements, 16 dicts cite at all, 22 have literally zero; tag presence misclassifies GRA, whose printed proof lives in prose brackets)
 (см./s./vide/Vgl./q.v./=) are four unrelated edge types, not one convention:
 `s.`/`siehe` and `=` are genuine graph edges to a real headword, `Vgl.` is a
 weaker "compare" edge frequently pointing at a citation not a lemma, `q.v.`
@@ -313,6 +313,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
 - 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
 - 🔴 [§577. A citation resolver that mints a well-formed URL is not evidence the address exists — `ls_resolver` happily places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for a split or a wrapper](#577-a-citation-resolver-that-mints-a-well-formed-url-is-not-evidence-the-address-exists--ls_resolver-happily-places-v-9999999-so-resolves-cannot-be-the-acceptance-test-for-a-split-or-a-wrapper) — the resolver is a formatter, not a validator: it range-checks nothing. Any pass that INVENTS an address (splitting a multi-address `<ls>`, wrapping a bare citation) and accepts it because a URL came back will mint links that work and point at the wrong place — a worse failure than no link, because it looks right. Measured on pwg.txt: a resolve-only rule proposed 2,838 splits, of which 0 were correct; page references `11087 (p. 572)`, note markers `83, N. 6` and Oxford column letters `100,a. 101,b` all "resolve". The correct population was in `pw` (141), not `pwg` (0).
+- 🟢 [§579. Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them](#579-citation-density-is-a-cliff-not-a-spectrum--16-dicts-wrap-citations-in-ls-22-have-literally-zero-and-pwg-alone-carries-801-788-of-them-tag-presence-misclassifies-gra-whose-printed-proof-lives-in-prose) — extends §18's four-dict measurement to all 44: pwg 94.4 % of entries cite at 6.50/entry (801 788 elements, more than the next five dicts combined), mw 79.1 %, ap90 31.2 %; 22 koṣa/index dicts carry zero `<ls>`; pw-vs-pwg is abridgement depth (38.8 % vs 94.4 %); GRA proves in prose + `〔p. N〕` brackets while its `<ls>` share is only 12.0 % — the corpus's biggest citation-extraction residual.
 - 🟢 [§578. Accent digitization is three incompatible devices and svarita is essentially un-digitized](#578-accent-digitization-is-three-incompatible-devices-and-svarita-is-essentially-un-digitized) — `/` is headword-field accentuation in exactly 9 of the 44 dicts (mw 47 589, pw 21 543, pwg 20 876, cae 11 313, ccs 8 476, gra 10 699, lan 2 226, sch 1 124, pwkvn 2 108 lemmas), `\` svarita survives in 17 lemma marks total (pw 5, pwg 10, pwkvn 2), and stc/fri/bur/md-style transliteration carries accent as acute vowels that never reach `<k2>`; the pw-family homonym pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash itself a sense disambiguator any join must preserve.
 - 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
 ## Grammar & morphology data
@@ -8320,3 +8321,88 @@ public csl-orig checkout. Driver logic is the method paragraph above
 (field-after-tag parser + span flavors + noise strippers); counts reconcile:
 per-dict `k2_slash ≤ k2_total`, and all 17 svarita marks are individually
 line-cited.
+
+### §579. Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them; tag-presence misclassifies GRA, whose printed proof lives in prose
+
+Extends the [§18](#18-vedic-citation-density-separates-the-dictionary-traditions)
+four-dictionary measurement (PWG ≈ MW ≫ AP90 ≫ Kochergina) to every v02
+dictionary (`csl-orig/v02/*/DICT.txt`; Kochergina itself is not in v02 —
+koch.jsonl stays local-only per §574, so the fourth tradition keeps its §18
+number). Method: same entry parser as §578 (head-line fields + body until
+`<LEND>`); count `<ls …>` elements per ENTRY over head line and body joined;
+page-ref subclass = an `<ls>` whose body matches explicit page markers
+(`p./pp./S. N`, `col. N`, `pag. N`) — verse addresses such as
+`<ls>P. 1,1,14</ls>` are source citations, not page refs.
+
+| dict | entries | entries w/ `<ls>` | share % | total `<ls>` | ls/entry | w/ page mark |
+|---|---:|---:|---:|---:|---:|---:|
+| pwg | 123 366 | 116 519 | **94.4** | **801 788** | 6.50 | 56 554 |
+| ieg | 7 932 | 7 339 | 92.5 | 11 390 | 1.44 | 0 |
+| bhs | 17 839 | 16 291 | 91.3 | 48 419 | 2.71 | 1 |
+| sch | 29 125 | 26 034 | 89.4 | 31 041 | 1.07 | 1 057 |
+| mw | 286 525 | 226 712 | 79.1 | 320 828 | 1.12 | 102 |
+| ben | 17 310 | 13 234 | 76.5 | 49 234 | 2.84 | 0 |
+| pwkvn | 24 976 | 13 576 | 54.4 | 17 627 | 0.71 | 1 148 |
+| lan | 4 944 | 2 546 | 51.5 | 5 912 | 1.20 | 0 |
+| pw | 170 556 | 66 188 | 38.8 | 98 485 | 0.58 | 5 347 |
+| ap | 90 843 | 28 696 | 31.6 | 68 273 | 0.75 | 700 |
+| ap90 | 34 882 | 10 867 | 31.2 | 43 892 | 1.26 | 464 |
+| lrv | 53 441 | 9 086 | 17.0 | 16 650 | 0.31 | 0 |
+| gra | 12 785 | 1 539 | 12.0 | 2 341 | 0.18 | 50 |
+| ae | 11 359 | 771 | 6.8 | 1 141 | 0.10 | 267 |
+| bor | 24 609 | 377 | 1.5 | 526 | 0.02 | 0 |
+| md | 20 749 | 53 | 0.3 | 58 | 0.00 | 0 |
+| wil | 44 577 | 6 | 0.0 | 6 | 0.00 | 1 |
+
+The remaining 22 dicts — abch acc acph acsj armh bop bur cae ccs fri gst inm
+krm mci mw72 mwe nmmb pe pgn pui shs skd snp stc vcp vei yat (zero `<ls>`
+elements at all) — assert without any citation markup: the koṣa tradition
+(skd/vcp/shs/amara-family), the poetic-index pairs cae/ccs, and the
+name-indices (pe/pui/inm/mci/lrv) prove nothing because they claim nothing.
+
+**Top/bottom deciles:** top = {pwg, ieg, bhs, sch}, bottom = {stc, vcp, vei,
+yat} (of 44 ranked by share).
+
+**Three readings the raw ranking would hide:**
+
+1. **PWG is not first among equals — it is half of the corpus.** Its 801 788
+   `<ls>` elements exceed the next five dicts (mw 320 828, pw 98 485,
+   bhs 48 419, ap 68 273, ap90 43 892) *combined*. Any citation-graph build
+   (§576 edges, ls_resolver links) is demographically a PWG project.
+2. **pw vs pwg is abridgement depth, not school.** Same Böhtlingk tradition,
+   yet pw cites in only 38.8 % of entries at 0.58/entry against pwg's
+   94.4 % / 6.50 — the seven-volume PW proved senses the abridged PW chose to
+   assert.
+3. **Tag presence is a markup artefact for GRA.** Grassmann's printed entries
+   teem with realia citations, but they live as prose plus `〔p. N〕` brackets:
+   gra has `<ls>` in only 12.0 % of entries (0.18/entry) while its body text
+   carries thousands of unwrapped citations. Classifying GRA "asserting" from
+   markup alone would be wrong — it is the corpus's biggest
+   citation-extraction residual (its 50 page-marked `<ls>` show the shape:
+   gra.txt L3401 `<ls>Cu. 〔p. 411〕</ls>`).
+
+**Page-marker subclass:** 65 000-ish elements corpus-wide carry explicit page
+references (pwg 56 554 = 7.1 % of its own, pw 5 347, pwkvn 1 148,
+sch 1 057, ap 700, ap90 464) — these are the resolvable-to-scan candidates;
+the rest resolve only through a work's internal numbering (sūtra/verse
+addresses).
+
+**Specimens (file:line):** pwg.txt L3 `<ls>P. 1,1,14</ls>` (sūtra address);
+mw.txt L50826 `<ls>Saṃhitop. p. 7</ls>`, mw.txt L89247
+`<ls>Siddh. ii, p. 393, l. 21</ls>` (work + page + line);
+ap90.txt L2215 `<ls>Bṛ. S. 33</ls>`, ap90.txt L3703 `<ls>K. P. 10</ls>`;
+gra.txt L3401 `<ls>Cu. 〔p. 411〕</ls>`, gra.txt L5592
+`<ls>Max Müller the sixth hymn 〔p. 4〕</ls>` (prose-work + bracketed page);
+gra.txt L7901 `<ls>Pauli, Körpertheile 〔p. 24〕</ls>`.
+
+**Residue:** counting is element-level per entry; multi-entry lines do not
+occur (one head line per entry, verified by the §578 parser); `<j>` and
+`<div>`-nested `<ls>` counted where they fall inside the entry body; per
+§548, PWG's `<ls>` counts split into incompatible families (cleaned-string vs
+work-family) — this census reports the raw markup family, which partitions
+every dictionary but must not be equated with either §548 family; per §557 no
+claim is made about dictionaries whose printed editions cite differently from
+their digital markup (GRA being the standing example).
+
+Verifiability: class A — reproducible greps over the public csl-orig
+checkout; every specimen line-cited above.
