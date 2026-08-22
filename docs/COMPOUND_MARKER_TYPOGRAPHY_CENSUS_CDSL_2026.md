@@ -246,7 +246,16 @@ item in this order:**
 1. **Accent digitization** — `/` (udātta) and `\` (svarita) in `<k2>` and
    bodies: which dicts carry Vedic accent, on what fraction of lemmas, and
    whether accent survives in compounds (PWG vs MW vs GRA vs MD disagree on
-   where the accent sits in `agni/—hotra`-type lemmas).
+   where the accent sits in `agni/—hotra`-type lemmas). **measured → FINDINGS
+   [§578](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2978): three devices, not one — `/` headword accentuation in exactly 9 of 44 dicts
+   (mw 47 589 / 16.6 %, pw 21 543, pwg 20 876, cae+ccs 28 % each, gra 83.7 %, lan 45 %,
+   sch 3.9 %, pwkvn 8.4 %); `\` svarita survives in 17 lemma marks corpus-wide;
+   stc/fri/bur/md carry accent only as acute-vowel translit that never reaches `<k2>`.
+   The compound disagreement resolves into data: pw-family slashes sit in the first member
+   100 % of the time and the pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash a
+   sense disambiguator; GRA puts ~20 % of compound accents in the later member
+   (`gotra-Bi/d`); MW mirrors with em-dash (`agni/—hotra<h>1` vs `agni—hotra/<h>2`).
 2. **Homonym splitting** — `<h>` / `<hom>` density per dict: who splits
    agnihotra n. from agnihotra adj. as separate lemmas vs one article; drives
    any headword-join between dictionaries. **measured → FINDINGS

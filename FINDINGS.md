@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 19-08-2026 (§577 — a resolver that mints a well-formed URL is not evidence the address exists: `ls_resolver` places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for an INVENTED address; a resolve-only split rule proposed 2,838 pwg lines of which 0 were correct, while the real population was 141 lines in pw; §576 — cross-reference markers
+_Created: 26-06-2026 · Last updated: 22-08-2026 (§578 — accent digitization is three incompatible devices: `/` in `<k2>` of exactly 9 dicts, svarita `\` un-digitized outside 17 lemma marks, German-school acute-vowel translit that never reaches the headword field; the pw-family pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash a sense disambiguator any join must preserve)
 (см./s./vide/Vgl./q.v./=) are four unrelated edge types, not one convention:
 `s.`/`siehe` and `=` are genuine graph edges to a real headword, `Vgl.` is a
 weaker "compare" edge frequently pointing at a citation not a lemma, `q.v.`
@@ -313,6 +313,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
 - 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
 - 🔴 [§577. A citation resolver that mints a well-formed URL is not evidence the address exists — `ls_resolver` happily places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for a split or a wrapper](#577-a-citation-resolver-that-mints-a-well-formed-url-is-not-evidence-the-address-exists--ls_resolver-happily-places-v-9999999-so-resolves-cannot-be-the-acceptance-test-for-a-split-or-a-wrapper) — the resolver is a formatter, not a validator: it range-checks nothing. Any pass that INVENTS an address (splitting a multi-address `<ls>`, wrapping a bare citation) and accepts it because a URL came back will mint links that work and point at the wrong place — a worse failure than no link, because it looks right. Measured on pwg.txt: a resolve-only rule proposed 2,838 splits, of which 0 were correct; page references `11087 (p. 572)`, note markers `83, N. 6` and Oxford column letters `100,a. 101,b` all "resolve". The correct population was in `pw` (141), not `pwg` (0).
+- 🟢 [§578. Accent digitization is three incompatible devices and svarita is essentially un-digitized](#578-accent-digitization-is-three-incompatible-devices-and-svarita-is-essentially-un-digitized) — `/` is headword-field accentuation in exactly 9 of the 44 dicts (mw 47 589, pw 21 543, pwg 20 876, cae 11 313, ccs 8 476, gra 10 699, lan 2 226, sch 1 124, pwkvn 2 108 lemmas), `\` svarita survives in 17 lemma marks total (pw 5, pwg 10, pwkvn 2), and stc/fri/bur/md-style transliteration carries accent as acute vowels that never reach `<k2>`; the pw-family homonym pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash itself a sense disambiguator any join must preserve.
 - 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
 ## Grammar & morphology data
 
@@ -8237,3 +8238,85 @@ Evidence: `RussianTranslation/src/ls_split.py::splittable` and its selftest (eve
 refusal is pinned on a real `pwg.txt` line), `nws_citation_wrap.py::_accept`
 (`_MAX_BOOK`), and `ls_split_changefile.py --dict pwg|pw --count`. Full write-up:
 `RussianTranslation/pwg_ru/H3152_REGLUE2_CITATION_LAYER_TYPOLOGY_REPORT_19-08-2026.md`.
+
+### §578. Accent digitization is three incompatible devices and svarita is essentially un-digitized — `/` lives in `<k2>` of exactly 9 dicts, `\` survives in 17 lemma marks total, and the German-school translit dicts carry accent as acute vowels that never reach the headword field
+
+Measured over all 44 v02 dictionaries (`csl-orig/v02/*/DICT.txt`, main files;
+cae front/middle/back parts not included — residue). Method: parse each entry's
+head line fields (`<k1>`/`<k2>`, unclosed-tag convention) and body until
+`<LEND>`; count `/` and `\` inside `<k2>` and inside each dictionary's own
+Sanskrit-span flavors (`{#…#}`, `<s>…</s>`, `{@…@}`) after stripping
+self-closing tags (`<info lex="m"/>`), tag internals (attributes such as
+`<per n="3ten/dritten">`) and `{%…%}` English italics — the noise classes that
+inflate naive greps by orders of magnitude (mw alone has 106 693 raw
+slash-bearing body lines, most of them markup).
+
+**Device 1 — slash in the headword field (`<k2>`), 9 dicts:**
+
+| dict | entries | `<k2>` w/ `/` | share |
+|---|---:|---:|---:|
+| mw | 286 525 | 47 589 | 16.6 % |
+| pw | 170 556 | 21 543 | 12.6 % |
+| pwg | 123 366 | 20 876 | 16.9 % |
+| cae | 40 069 | 11 313 | 28.2 % |
+| ccs | 30 010 | 8 476 | 28.2 % |
+| gra | 12 785 | 10 699 | **83.7 %** |
+| lan | 4 944 | 2 226 | 45.0 % |
+| sch | 29 125 | 1 124 | 3.9 % |
+| pwkvn | 24 976 | 2 108 | 8.4 % |
+
+The other 34 dicts have zero slash accents anywhere (ap, wil, vcp, shs, skd,
+bop, pe, pui, lrv, mci, …). Gra's 83.7 % is what a genuinely Vedic lexicon
+looks like when accent survives digitization; sch's 3.9 % shows the same Vedic
+ambition reduced to fragments.
+
+**Device 2 — acute-vowel transliteration, slashes absent:** stc 13 116,
+gra 11 418, bur 9 018, md 6 651, fri 6 102, lan 2 920 entries carry accented
+vowels (á/í/ú) in body prose but plain unaccented `<k2>` fields. Specimen:
+md.txt L1147 `<k1>agnihotra<k2>agnihotra` (no accent) vs md.txt L1148 body
+`{#agnihotra#}¦ <hom>1.</hom> agni-hotrá, <lex>n.</lex>` — the accent exists
+only in prose, so a k2-keyed join loses it silently.
+
+**Device 3 — svarita `\` is essentially un-digitized:** exactly **17 lemma
+marks corpus-wide** — pw 5 (`tva\` L197505, `tu\a\` L197510, `sa\ma\ha\`
+L501712, plus `{#tA\pi\n#}` L586274 and `{#ma\ryA\s#}` L636099 in bodies),
+pwkvn 2 (mirroring pw: `tA\pi\n` L18667, `ma\ryA\s` L68035), pwg 10 — all pwg
+occurrences sit inside Vedic *quotation* spans, not lemmas
+(`{#ra\yiM Ba\rAMSa\…#}` L44 ff.). No dictionary digitizes svarita as a
+systematic layer.
+
+**Where the accent sits in compounds — the handoff's disagreement, resolved by
+specimen:** the slash position IS the homonym disambiguator in the PW family.
+pw.txt L2563/L2568, pwg.txt L2413/L2421, cae.txt L770/L773, ccs.txt L656/L660
+all print the same pair: `<k2>agnihotra/` (n., final accent) vs
+`<k2>agni/hotra` (mfn., first-member accent). In pw/pwg/cae/ccs/pwkvn the
+compound slash lands in the first member **100 % of the time** (later-member
+count 0). MW mirrors the device with an em-dash division:
+mw.txt L4137 `<k2>agni/—hotra<h>1`, L4146 `<k2>agni—hotra/<h>2` — 41 539
+first-member vs 6 050 later-member. GRA is the outlier: hyphenated members
+with the accent free to land in the second member — gra.txt L18949
+`gotra-Bi/d`, L33018 `ni/tya-stotra`, L17301 `kzRo/tra`; 8 583 first vs
+**2 116 later-member (~20 %)**. lan hyphenates but keeps final placement:
+lan.txt L173 `agni-hotra/`. Any cross-dict headword join must therefore carry
+the slash as data, not strip it: normalizing `agni/hotra` to `agnihotra`
+merges two distinct senses in every PW-family dict.
+
+**Noise classes excluded (the "distinguish accent from other slashes" rule):**
+self-closing tags (`<info lex="m"/>`), tag attributes (`n="3ten/dritten"`),
+ccs.txt L1 Windows path residue `E:\SANSKRIT\CAPPELLE\CCS.AL1`, and gra
+revision metadata (`<chg type="chg" n="194">`). SLP1 cross-check per
+SANSKRIT_CONTEXT_PRIMER: post-vocalic `/` marks udātta on the preceding vowel
+(`aha/m` → ahám), consistent across all 9 slash dicts.
+
+**Residue:** cae part-files uncounted; gra's own agnihotra entry not located
+under that exact spelling (case/spelling drift — device verified via
+gotra/stotra/aMSa families); `{@…@}` hits in ap are `<ab>Comp.</ab>` markup
+artifacts, ap carries zero real accent marks; etymology_stats holds no entry
+text. Per §557's Mylius rule the acute-body counts are reported as measured
+occurrences, not asserted as a complete accent inventory of those editions.
+
+Verifiability: class A — every grep and quoted line reproducible from the
+public csl-orig checkout. Driver logic is the method paragraph above
+(field-after-tag parser + span flavors + noise strippers); counts reconcile:
+per-dict `k2_slash ≤ k2_total`, and all 17 svarita marks are individually
+line-cited.
