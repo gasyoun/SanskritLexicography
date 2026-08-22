@@ -4,6 +4,20 @@ _Created: 09-07-2026 · Last updated: 21-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 22-08-2026 - H3291 (Fable) - full DH-standards audit: released pack verified green; wave-1 gate FAIL confirmed honest; wave-2 payload lost (regenerable)
+
+Fable tier (`claude-fable-5` class), zero paid calls. Audited revision `a552a529c`. Memo: [FULL_DH_STANDARDS_AUDIT_PWG_RU_22-08-2026.md](FULL_DH_STANDARDS_AUDIT_PWG_RU_22-08-2026.md).
+
+| Check | Result |
+|---|---|
+| Released pack byte identity (GitHub==Zenodo==committed SHA256SUMS) | **CONFIRMED**, all assets match |
+| TMX 1.4 / TEI Lex-0 / JSONL / OntoLex on released bytes | all valid; pyshacl conforms vs schemas/pwg_tm_ontolex.shacl.ttl |
+| H2684 wave-1 independent gate FAIL (serious 2.5%) | **CONFIRMED honest** - 20 decisive rows re-adjudicated; even zeroing 2 borderline overcalls leaves 2.0% > 1% |
+| Named defect class | deterministic fill renders placeholder `Jmd` as <RU:poruchat> - template bug, pre-regeneration fix required |
+| Wave-2 payloads (162,107 promoted) | **UNVERIFIABLE** - gitignored wave2_b/ deleted from disk, receipt-only survival; drafted=0 so deterministically regenerable (H3299) |
+| Human overlay after store drift 811bbc21->96afca3d | intact - 5 reviewed rows present; drift explained by #1776 repairs |
+| LANG_PARITY ledger | 5 stale-hash violations fixed in this PR (R3.6) |
+
 ## 21-08-2026 — H3228 (Grok 4.6) — c1 live-gate NO-GO (weekly Pro cap); ADAna/ABIra named skip
 
 Grok 4.6 (`grok-4.6`). Budgeted monster sitting for ledger targets `nominal:ADAna` + `nominal:ABIra`. `/pwg-live-gate` on **c1** (MG: c4 dead). Warm-up `rate_limit` at 11 868 ms; envelope `api_error_status` 429, result `You've hit your weekly limit · resets Aug 23, 2pm (Europe/Moscow)`. Measured never ran. Canary not started. `--allow-over-cost` not used. Paid translation **$0**. Probe ration 1 of 2 for 21-08 UTC; do not burn the second slot against the same weekly cap.
