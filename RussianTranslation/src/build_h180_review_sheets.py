@@ -131,6 +131,12 @@ def load_store():
 
 def build_typology(by_sub):
     rows = [json.loads(l) for l in io.open(REL, encoding="utf-8") if l.strip()]
+    # U7 (H2846/H3090) — "typology always needs to be supported by statistics".
+    # Population totals over ALL supplements (pre-sampling `rows`, NOT the
+    # downsampled `sample` — the H2846 fail mode), so every chip can carry its
+    # subtype's count + share of the full population.
+    subtype_totals = collections.Counter(r["relationship"]["subtype"] for r in rows)
+    grand_total = sum(subtype_totals.values())
     # CORE: the 7 five-layer roots yield ~640 supplements — far too many for a κ
     # pass. Stratify by (layer, subtype) and cap ~8 per stratum so every subtype is
     # represented (κ needs coverage of each class), aiming for ~a few dozen.
@@ -173,6 +179,11 @@ def build_typology(by_sub):
             "badges": [OP_LABEL[TYPOLOGY[rel["subtype"]][0]] if rel["subtype"] in TYPOLOGY
                        else rel["subtype"],
                        "5-слойный" if r["key1"] in FIVE_LAYER else "хвост"],
+            # U7: one entry per item — each card proposes exactly one subtype
+            # (unlike the reglue sheet's per-card multiple classes).
+            "typology": [{"label": rel["subtype"], "n": subtype_totals[rel["subtype"]],
+                          "share": (subtype_totals[rel["subtype"]] / grand_total)
+                          if grand_total else 0.0}],
             "question": (f'Верен ли предложенный подтип <b>«{esc(rel["subtype"])}»</b> '
                          f'для этой суб-карточки? <span class="muted">(отклонить → напишите '
                          f'верный подтип в заметке, для κ)</span>'),
