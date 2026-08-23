@@ -219,7 +219,7 @@ def selftest():
         {"key1": "x", "subcard": "x~~h0_zz_sch01", "layer": "sch",
          "sense_tag": "2", "de": "{%neu%}"},
     ]
-    out, _roll, _placement_roll, dup_pairs = classify_store(recs)
+    out, _roll, _placement_roll, dup_pairs, _lang = classify_store(recs)
 
     check(len(out) == 4, "one sidecar row per qualifying store row (%d)" % len(out))
     keys = [r["row_key"] for r in out]
