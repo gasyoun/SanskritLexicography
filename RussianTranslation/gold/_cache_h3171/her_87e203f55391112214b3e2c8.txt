@@ -1,0 +1,62 @@
+[200] [https://sanskrit.uohyd.ac.in/cgi-bin/SKT/sktreader?lex=MW&cache=t&st=f&us=f&font=roma&t=SL&text=ucCantu&topic=&corpmode=&corpdir=&sentno=]
+
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Sanskrit Reader Companion</title>
+<meta name="author" content="Gérard Huet">
+<meta property="dc:datecopyrighted" content="2026">
+<meta property="dc:rightsholder" content="Gérard Huet">
+<meta name="keywords" content="sanskrit,dictionary,heritage,dictionnaire,sanscrit,india,inde,indology,linguistics,panini,digital humanities,digital libraries,cultural heritage,computational linguistics,hypertext lexicon">
+<link rel="stylesheet" type="text/css" href="/SKT/DICO/style.css" media="screen,tv">
+<link rel="shortcut icon" href="/SKT/IMAGES/favicon.ico">
+<script type="text/javascript" src="/SKT/DICO/utf82VH.js"></script>
+<script type="text/javascript" src="/SKT/DICO/util.js"></script>
+</head>
+<body class="chamois_back">
+<h1 class="title">The Sanskrit Reader Companion</h1>
+<table class="chamois_back" border="0" cellpadding="0%" cellspacing="15pt" width="100%">
+<tr><td>
+<p align="center">
+<div class="latin16"><a class="green" href="/cgi-bin/SKT/sktgraph?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=ucCantu;topic=;abs=f;cpts=;mode=g">&#x2713;</a> Show Summary of Solutions
+</p>
+Input:
+<span class="roma16o">ucchantu</span><hr>
+<br>
+Sentence: 
+<span class="deva16" lang="sa">&#x0909;&#x091A;&#x094D;&#x091B;&#x0928;&#x094D;&#x0924;&#x0941;</span><br>
+may be analysed as:</div><br>
+<hr>
+<span class="blue">Solution 1 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=ucCantu;topic=;abs=f;cpts=;mode=p;n=1">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>ucchantu</b></span><table class="carmin_back">
+<tr><th><span class="latin12"><th><table class="carmin_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/230.html#H_vas#4"><i>vas_4</i></a>]{imp. [6] ac. pl. 3}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="magenta">1</span><span class="blue"> solution kept among </span><span class="magenta">1</span><br>
+<br>
+<hr>
+<br>
+<br>
+</td></tr></table>
+<table class="pad60">
+<tr><td></td></tr></table>
+<div class="enpied">
+<table class="bandeau"><tr><td>
+<a href="https://ocaml.org"><img src="/SKT/IMAGES/icon_ocaml.png" alt="Le chameau Ocaml" height="50"></a>
+</td><td>
+<table class="center">
+<tr><td>
+<a href="/SKT/index.en.html"><b>Top</b></a> | 
+<a href="/SKT/DICO/index.en.html"><b>Index</b></a> | 
+<a href="/SKT/DICO/grammar.en.html"><b>Grammar</b></a> | 
+<a href="/SKT/DICO/sandhi.en.html"><b>Sandhi</b></a> | 
+<a href="/SKT/DICO/reader.en.html"><b>Reader</b></a> | 
+<a href="/SKT/DICO/corpus.en.html"><b>Corpus</b></a>
+</td></tr><tr><td>
+© Gérard Huet 1994-2026</td></tr></table></td><td>
+<a href="https://www.inria.fr/"><img src="/SKT/IMAGES/logo_inria.png" alt="Logo Inria" height="50"></a>
+<br></td></tr></table></div>
+</body>
+</html>

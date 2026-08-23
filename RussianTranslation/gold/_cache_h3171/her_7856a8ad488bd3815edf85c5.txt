@@ -1,0 +1,130 @@
+[200] [https://sanskrit.uohyd.ac.in/cgi-bin/SKT/sktreader?lex=MW&cache=t&st=f&us=f&font=roma&t=SL&text=pramAdamoha&topic=&corpmode=&corpdir=&sentno=]
+
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Sanskrit Reader Companion</title>
+<meta name="author" content="Gérard Huet">
+<meta property="dc:datecopyrighted" content="2026">
+<meta property="dc:rightsholder" content="Gérard Huet">
+<meta name="keywords" content="sanskrit,dictionary,heritage,dictionnaire,sanscrit,india,inde,indology,linguistics,panini,digital humanities,digital libraries,cultural heritage,computational linguistics,hypertext lexicon">
+<link rel="stylesheet" type="text/css" href="/SKT/DICO/style.css" media="screen,tv">
+<link rel="shortcut icon" href="/SKT/IMAGES/favicon.ico">
+<script type="text/javascript" src="/SKT/DICO/utf82VH.js"></script>
+<script type="text/javascript" src="/SKT/DICO/util.js"></script>
+</head>
+<body class="chamois_back">
+<h1 class="title">The Sanskrit Reader Companion</h1>
+<table class="chamois_back" border="0" cellpadding="0%" cellspacing="15pt" width="100%">
+<tr><td>
+<p align="center">
+<div class="latin16"><a class="green" href="/cgi-bin/SKT/sktgraph?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=pramAdamoha;topic=;abs=f;cpts=;mode=g">&#x2713;</a> Show Summary of Solutions
+</p>
+Input:
+<span class="roma16o">pram&#257;damoha</span><hr>
+<br>
+Sentence: 
+<span class="deva16" lang="sa">&#x092A;&#x094D;&#x0930;&#x092E;&#x093E;&#x0926;&#x092E;&#x094B;&#x0939;</span><br>
+may be analysed as:</div><br>
+<hr>
+<span class="blue">Solution 1 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=pramAdamoha;topic=;abs=f;cpts=;mode=p;n=1">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>pram&#257;da</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/169.html#H_pramaada"><i>pram&#257;da</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="7"><b>moha</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/208.html#H_moha"><i>moha</i></a>]{m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="magenta">1</span><span class="blue"> solution kept among </span><span class="magenta">5</span><br>
+<span class="blue">Filtering efficiency: </span>
+<span class="magenta">100%</span>
+<br>
+<br>
+<span class="red">Additional candidate solutions</span><br>
+<hr>
+<span class="blue">Solution 2 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=pramAdamoha;topic=;abs=f;cpts=;mode=p;n=2">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>pram&#257;</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/169.html#H_pramaa#2"><i>pram&#257;_2</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="5"><b>dama</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/115.html#H_dama"><i>dama</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;<span class="magenta">a</span><span class="green">|</span><span class="magenta">&#363;</span><span class="blue"> &rarr; </span><span class="red">o</span>&rang;]
+<br>
+[ <span class="blue" title="8"><b>&#363;ha</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/45.html#H_uuha"><i>&#363;ha</i></a>]{m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="blue">Solution 3 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=pramAdamoha;topic=;abs=f;cpts=;mode=p;n=3">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>pram&#257;</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/169.html#H_pramaa#2"><i>pram&#257;_2</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="5"><b>da</b></span><table class="kaki_back">
+<tr><th><span class="latin12"><th><table class="kaki_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/114.html#H_da"><i>da</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="7"><b>moha</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/208.html#H_moha"><i>moha</i></a>]{m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="blue">Solution 4 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=pramAdamoha;topic=;abs=f;cpts=;mode=p;n=4">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>pram&#257;</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/169.html#H_pramaa#2"><i>pram&#257;_2</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;<span class="magenta">&#257;</span><span class="green">|</span><span class="magenta">&#257;</span><span class="blue"> &rarr; </span><span class="red">&#257;</span>&rang;]
+<br>
+[ <span class="blue" title="4"><b>&#257;da</b></span><table class="kaki_back">
+<tr><th><span class="latin12"><th><table class="kaki_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/27.html#H_aada"><i>&#257;da</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="7"><b>moha</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/208.html#H_moha"><i>moha</i></a>]{m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="blue">Solution 5 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=pramAdamoha;topic=;abs=f;cpts=;mode=p;n=5">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>pram&#257;</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/169.html#H_pramaa#2"><i>pram&#257;_2</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;<span class="magenta">&#257;</span><span class="green">|</span><span class="magenta">a</span><span class="blue"> &rarr; </span><span class="red">&#257;</span>&rang;]
+<br>
+[ <span class="blue" title="4"><b>ada</b></span><table class="kaki_back">
+<tr><th><span class="latin12"><th><table class="kaki_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/4.html#H_ada"><i>ada</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="7"><b>moha</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/208.html#H_moha"><i>moha</i></a>]{m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<br>
+<br>
+</td></tr></table>
+<table class="pad60">
+<tr><td></td></tr></table>
+<div class="enpied">
+<table class="bandeau"><tr><td>
+<a href="https://ocaml.org"><img src="/SKT/IMAGES/icon_ocaml.png" alt="Le chameau Ocaml" height="50"></a>
+</td><td>
+<table class="center">
+<tr><td>
+<a href="/SKT/index.en.html"><b>Top</b></a> | 
+<a href="/SKT/DICO/index.en.html"><b>Index</b></a> | 
+<a href="/SKT/DICO/grammar.en.html"><b>Grammar</b></a> | 
+<a href="/SKT/DICO/sandhi.en.html"><b>Sandhi</b></a> | 
+<a href="/SKT/DICO/reader.en.html"><b>Reader</b></a> | 
+<a href="/SKT/DICO/corpus.en.html"><b>Corpus</b></a>
+</td></tr><tr><td>
+© Gérard Huet 1994-2026</td></tr></table></td><td>
+<a href="https://www.inria.fr/"><img src="/SKT/IMAGES/logo_inria.png" alt="Logo Inria" height="50"></a>
+<br></td></tr></table></div>
+</body>
+</html>
