@@ -1,6 +1,6 @@
 # ARCHITECTURE — ось привязки в сайдкаре pwg_ru
 
-_Created: 16-08-2026 · Last updated: 16-08-2026_
+_Created: 16-08-2026 · Last updated: 23-08-2026_
 
 Обложка и решения: [PLAN_SanskritLexicography_PWG_RU_PLACEMENT_AXIS_SPLIT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_PLACEMENT_AXIS_SPLIT.md).
 
@@ -29,6 +29,13 @@ _Created: 16-08-2026 · Last updated: 16-08-2026_
 в двух полях гарантированно разойдётся (решение 7).
 
 ## Контракт полей
+
+На верхнем уровне каждой строки сайдкара (с H3300):
+
+| поле | смысл |
+|---|---|
+| `row_key` | **уникальный** ключ строки: `"<subcard>::<sense_tag>#<dup_ordinal>"`. Магазин повторяет пары `(subcard, sense_tag)` (149 пар, 722 строки), поэтому голая пара — не ключ: словарь по ней терял все строки кроме последней (FINDINGS §551). |
+| `dup_ordinal` | номер вхождения этой пары при обходе магазина в файловом порядке (с 0). Пишется и читается одинаково, так что соединение «строка сайдкара ↔ своя строка магазина» точное. Читатели обязаны терпеть строки **без** этих полей (легаси-сайдкар) и падать обратно на пару. Гейт: W7a/W7b в [`placement_axis_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/placement_axis_check.py). |
 
 Внутри `relationship` в `pwg_ru_relationships.jsonl`:
 

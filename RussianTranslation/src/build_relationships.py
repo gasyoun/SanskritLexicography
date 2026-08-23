@@ -25,6 +25,14 @@ Outputs : src/pwg_ru_relationships.jsonl   (one row per sub-card sense that
           rather than senses themselves)
           pwg_ru/relationships_rollup.tsv   (aggregate by subtype/op/direction/layer)
 
+H3300: every row also carries a UNIQUE `row_key` (`"<subcard>::<sense_tag>#<n>"`)
+plus its `dup_ordinal` — the 0-based occurrence of that `(subcard, sense_tag)`
+pair in store order. The store itself repeats pairs (149 pairs, 722 rows today),
+and until H3300 every consumer that built a dict keyed on the bare pair silently
+dropped all but the last row (FINDINGS §551: 133 pairs, 468 of 6,009 rows
+shadowed on the wave-1 baseline). Readers join on `row_key`/`dup_ordinal` when
+present and stay tolerant of legacy rows without them.
+
 Run: python src/build_relationships.py
 """
 import sys, os, io, json, collections
@@ -35,8 +43,21 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # RussianTranslation/
 STORE = os.path.join(HERE, "pwg_ru_translated.jsonl")
-OUT_JSONL = os.path.join(HERE, "pwg_ru_relationships.jsonl")
-OUT_TSV = os.path.join(ROOT, "pwg_ru", "relationships_rollup.tsv")
+
+# H3300: the sidecar is gitignored, local-only runtime data belonging to the MAIN
+# checkout — exactly like the canonical store (store_path.py, the H255 class of
+# loss). A linked-worktree run must refresh the persistent copy, not vanish with
+# the worktree; readers resolve the same way, so writer and readers agree.
+from store_path import canonical_store, main_worktree_root          # noqa: E402
+
+_MAIN = main_worktree_root(HERE)
+STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
+OUT_JSONL = (os.path.join(_MAIN, "RussianTranslation", "src",
+                          "pwg_ru_relationships.jsonl") if _MAIN
+             else os.path.join(HERE, "pwg_ru_relationships.jsonl"))
+OUT_TSV = ((os.path.join(_MAIN, "RussianTranslation", "pwg_ru",
+                         "relationships_rollup.tsv")) if _MAIN
+           else os.path.join(ROOT, "pwg_ru", "relationships_rollup.tsv"))
 
 # H1624 G4: single classifier shared with promote / annotate_edition_rel.
 from edition_rel import (
@@ -45,14 +66,17 @@ from edition_rel import (
 )
 
 
-def main():
-    recs = []
-    with io.open(STORE, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if line:
-                recs.append(json.loads(line))
+def row_key(subcard, sense_tag, ordinal):
+    """The unique H3300 key for one sidecar row."""
+    return "%s::%s#%d" % (subcard, sense_tag, ordinal)
 
+
+def classify_store(recs):
+    """Classify every qualifying store row -> (out, roll, placement_roll, dup_pairs).
+
+    The single writer loop, extracted so the H3300 selftest exercises exactly
+    what `main()` writes and nothing else.
+    """
     pwg_gender = build_pwg_gender_index(recs)
     pwg_senses = build_pwg_sense_index(recs)   # H2879: the placement axis
 
@@ -60,6 +84,11 @@ def main():
     roll = collections.Counter()
     lang_counter = collections.Counter()
     placement_roll = collections.Counter()
+    # H3300: occurrence ordinal per (subcard, sense_tag) pair, in store order —
+    # the disambiguator readers join back on. Counted over ALL qualifying rows
+    # so writer and every reader compute the same number from the same file.
+    pair_seen = collections.Counter()
+    dup_pairs = collections.Counter()
     for d in recs:
         layer = d.get("layer")
         if layer == "pwg" and not pwg_correction_marker(d.get("sense_tag")):
@@ -104,13 +133,33 @@ def main():
                 rel[k] = v
         if er.get("subtype") == "foreign_fragment" and er.get("source_lang"):
             lang_counter[er["source_lang"]] += 1
+        pair = (d["subcard"], str(d.get("sense_tag")))
+        ordinal = pair_seen[pair]
+        pair_seen[pair] += 1
+        if ordinal:                       # not the first occurrence
+            dup_pairs[pair] = pair_seen[pair]
         out.append({
             "subcard": d["subcard"], "key1": d["key1"],
             "sense_tag": str(d.get("sense_tag")),
+            # H3300: unique row identity + the join disambiguator.
+            "row_key": row_key(pair[0], pair[1], ordinal),
+            "dup_ordinal": ordinal,
             "layer": layer, "relationship": rel,
         })
         roll[(er["subtype"], er["op"], er["direction"], layer)] += 1
         placement_roll[er["placement_reason"]] += 1
+    return out, roll, placement_roll, dup_pairs, lang_counter
+
+
+def main():
+    recs = []
+    with io.open(STORE, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if line:
+                recs.append(json.loads(line))
+
+    out, roll, placement_roll, dup_pairs, lang_counter = classify_store(recs)
 
     with io.open(OUT_JSONL, "w", encoding="utf-8") as fh:
         for r in out:
@@ -123,6 +172,13 @@ def main():
             fh.write(f"{subtype}\t{op}\t{direction}\t{layer}\t{n}\n")
 
     print(f"non-pwg sub-card senses classified : {len(out)}")
+    # H3300 shadow census: pairs are still allowed to repeat (that is a fact of
+    # the store, which stays untouched); what must go to zero is rows being
+    # UNREACHABLE in consumers — every row now carries its unique `row_key`.
+    n_dup_rows = sum(v for v in dup_pairs.values())
+    print(f"(subcard, sense_tag) duplicate pairs : {len(dup_pairs)} "
+          f"({n_dup_rows} rows live under them; each carries a unique row_key)")
+    print(f"unique row_keys                      : {len(set(r['row_key'] for r in out))} of {len(out)}")
     print(f"foreign-fragment languages         : {dict(lang_counter)}")
     print(f"wrote {OUT_JSONL}")
     print(f"wrote {OUT_TSV}")
@@ -139,5 +195,52 @@ def main():
         print(f"  {subtype:16s} {op:9s} {direction:9s} {layer:6s} {n}")
 
 
+# --------------------------------------------------------------------- selftest
+def selftest():
+    """H3300: the writer's key contract over a synthetic duplicated-pair store."""
+    ok = True
+
+    def check(cond, msg):
+        nonlocal ok
+        print(("  ok   " if cond else "  FAIL ") + msg)
+        ok = ok and bool(cond)
+
+    # A store whose PW sub-card repeats one (subcard, sense_tag) pair 3x — the
+    # FINDINGS §551 shape (worst real case was 25 rows under one pair).
+    recs = [
+        {"key1": "x", "subcard": "x~~h0_00_pwg00", "layer": "pwg",
+         "sense_tag": "1", "de": "<lex>m.</lex> {%x%}"},
+        {"key1": "x", "subcard": "x~~h0_zz_pw01", "layer": "pw",
+         "sense_tag": "1", "de": "{%erstes%}"},
+        {"key1": "x", "subcard": "x~~h0_zz_pw01", "layer": "pw",
+         "sense_tag": "1", "de": "{%zweites%}"},
+        {"key1": "x", "subcard": "x~~h0_zz_pw01", "layer": "pw",
+         "sense_tag": "1", "de": "{%drittes%}"},
+        {"key1": "x", "subcard": "x~~h0_zz_sch01", "layer": "sch",
+         "sense_tag": "2", "de": "{%neu%}"},
+    ]
+    out, _roll, _placement_roll, dup_pairs, _lang = classify_store(recs)
+
+    check(len(out) == 4, "one sidecar row per qualifying store row (%d)" % len(out))
+    keys = [r["row_key"] for r in out]
+    check(len(set(keys)) == len(keys), "row_keys are unique across the sidecar")
+    dup = [r for r in out if r["subcard"] == "x~~h0_zz_pw01"
+           and r["sense_tag"] == "1"]
+    check([r["dup_ordinal"] for r in dup] == [0, 1, 2],
+          "dup_ordinal counts occurrences in store order: %r"
+          % [r["dup_ordinal"] for r in dup])
+    check(all(r["row_key"] == row_key(r["subcard"], r["sense_tag"],
+                                      r["dup_ordinal"]) for r in out),
+          "row_key is exactly row_key(subcard, sense_tag, dup_ordinal)")
+    check(list(dup_pairs) == [("x~~h0_zz_pw01", "1")],
+          "the repeated pair is reported: %r" % dict(dup_pairs))
+    # a single-occurrence pair still gets ordinal 0 — uniform shape, no special case
+    solo = [r for r in out if r["layer"] == "sch"][0]
+    check(solo["dup_ordinal"] == 0 and solo["row_key"].endswith("#0"),
+          "first occurrence of every pair carries ordinal 0")
+    print("build_relationships selftest:", "PASS" if ok else "FAIL")
+    return 0 if ok else 1
+
+
 if __name__ == "__main__":
-    main()
+    sys.exit(selftest() if "--selftest" in sys.argv else main())

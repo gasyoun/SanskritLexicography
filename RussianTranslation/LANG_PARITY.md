@@ -1463,8 +1463,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H3152 (19-08-2026, Opus 5 `claude-opus-5`). An insertion point is a property of the STRUCTURE, not of the language, so the two glue renderings must agree on it exactly — that is asserted, not assumed: the parity gate parses the emitted markdown rather than comparing the shared object (an object-level comparison would be true by construction and prove nothing). The delta sign is deliberately computed from the GERMAN originals on both sides, because the restatement relation holds between the sources and not between their translations; the Russian card therefore shows a sign derived from German, and that is intended, not a leak. LANG_TITLE/LANG_HOM/LANG_LEGEND/LANG_BOUND/LANG_UNBOUND are the per-language substitution points. Pinned by build_reglue.selftest (German bodies on the German card, identical insertion points) and by the 15-headword pilot build, which reports parity for every card.",
     "tracking": "",
     "verified_sha256": {
-      "src/build_reglue.py": "e891a7b9e486b2f049f58e43077e07882d2a9f8ee8a94c61a07fe14083827655",
-      "src/reglue_delta.py": "e7dcc0f24822ed2e80f2e055495b509050e5ecdb40355a0b7db174d7cd9e2a6b"
+      "src/build_reglue.py": "03b6e34e2a029d3067c6c044bf9b6f2b75d2f53bff3b12d490a204ec9f4471ce",
+      "src/reglue_delta.py": "c8ad912c2a0514add9549a282c7a15a099cd5248a14073c9ace417f0f73266f6"
     }
   },
   {
@@ -1884,7 +1884,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/edition_rel.py": "49cb49fd7bded3083b0abeea2b3b3e48f9b66d28bb1c8b55713cd1888e461f52",
       "src/annotate_edition_rel.py": "54141c6723ca144eead648e4cf70ade4de667d1df2be94f9554a1c10f23f5ed6",
-      "src/build_relationships.py": "57a467f7e0805b94bcf77e3f63c8429d9737ed74730e13c885a4627c51200da1",
+      "src/build_relationships.py": "53140ea267c66a1f7a1b05a8b0f1ce098109190c14acebce0b6ea98d5ed97a1b",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7"
     }

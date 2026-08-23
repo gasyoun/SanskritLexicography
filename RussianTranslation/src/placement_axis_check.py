@@ -26,8 +26,16 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-STORE = os.path.join(HERE, "pwg_ru_translated.jsonl")
-REL = os.path.join(HERE, "pwg_ru_relationships.jsonl")
+# H3300: both inputs live in the MAIN checkout (gitignored); resolving them
+# relative to HERE made this gate unrunnable — and the sheet unverifiable — in
+# any linked worktree, i.e. exactly the sanctioned workflow.
+from store_path import canonical_store, main_worktree_root          # noqa: E402
+
+STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
+_MAIN = main_worktree_root(HERE)
+REL = (os.path.join(_MAIN, "RussianTranslation", "src",
+                    "pwg_ru_relationships.jsonl") if _MAIN
+       else os.path.join(HERE, "pwg_ru_relationships.jsonl"))
 
 from edition_rel import (  # noqa: E402
     build_pwg_sense_index, homonym_of, lead_int, normalize_sense_tag,
@@ -266,14 +274,23 @@ def main():
     # it, and that cue must still be findable in the row's DE. A row pulled out
     # of the additive class without a reproducible printed instruction is an
     # invented relationship, not a recorded one.
+    # H3300: DE fetched by the pair's occurrence ordinal, not bare pair —
+    # duplicated pairs must not show each other's body to this gate.
     de_by_key = {}
+    _seen = collections.Counter()
     for d in store:
         if (d.get("layer") or "") == "sch":
-            de_by_key[(d.get("subcard"), str(d.get("sense_tag")))] = d.get("de")
+            k = (d.get("subcard"), str(d.get("sense_tag")))
+            de_by_key[k + (_seen[k],)] = d.get("de")
+            de_by_key[k] = d.get("de")          # legacy fallback view
+            _seen[k] += 1
     bad_w3 = []
     for r in w3:
         marker = r["relationship"].get("correction_marker")
-        de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag"))))
+        de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag")),
+                            r.get("dup_ordinal")))
+        if de is None:
+            de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag"))))
         if not marker or sch_correction_marker(de) is None:
             bad_w3.append((r.get("subcard"), marker))
     print("W3a corrective SCH rows with no reproducible printed cue: %d"
@@ -317,6 +334,73 @@ def main():
         notes.append("W3e %d SCH rows keep a correction clause in a "
                      "non-leading section and stay additive by the "
                      "conservative default: %r" % (len(residue), residue))
+
+    # ---- W7 — sidecar key uniqueness (H3300, FINDINGS §551) --------------
+    # §551: 133 `(subcard, sense_tag)` pairs repeated in the sidecar, so every
+    # consumer that built a dict on the bare pair silently dropped all but the
+    # last row (468 of 6,009 rows on the wave-1 baseline; worst case 25:1).
+    # The fix is writer-side: every row now carries `row_key` (unique) +
+    # `dup_ordinal` (the pair's occurrence index in store order), and readers
+    # join on it. Pairs still repeat — that is a fact of the untouched store;
+    # what must never come back is a row without its own key.
+    pair_counts = collections.Counter(
+        (r.get("subcard"), str(r.get("sense_tag"))) for r in rel)
+    dup_pairs = {k: v for k, v in pair_counts.items() if v > 1}
+    rows_under_dups = sum(dup_pairs.values())
+    print("W7  sidecar rows=%d · duplicate pairs=%d · rows under them=%d"
+          % (len(rel), len(dup_pairs), rows_under_dups))
+
+    no_key = [r for r in rel if "row_key" not in r or "dup_ordinal" not in r]
+    print("W7a rows missing row_key/dup_ordinal: %d" % len(no_key))
+    if no_key:
+        fail("W7a", "%d rows carry no unique key (pre-H3300 sidecar? "
+                    "regenerate with src/build_relationships.py), e.g. %r"
+             % (len(no_key), [r.get("subcard") for r in no_key[:5]]))
+    else:
+        keys = collections.Counter(r["row_key"] for r in rel)
+        colliding = {k: v for k, v in keys.items() if v > 1}
+        print("W7a colliding row_keys: %d" % len(colliding))
+        if colliding:
+            fail("W7a", "%d row_keys are not unique, e.g. %r"
+                 % (len(colliding), list(colliding)[:5]))
+        malformed = [
+            r["row_key"] for r in rel
+            if r["row_key"] != "%s::%s#%d" % (r.get("subcard"),
+                                              r.get("sense_tag"),
+                                              r["dup_ordinal"])]
+        print("W7a malformed row_keys: %d" % len(malformed))
+        if malformed:
+            fail("W7a", "%d row_keys disagree with (subcard, sense_tag, "
+                        "dup_ordinal), e.g. %r" % (len(malformed),
+                                                   malformed[:5]))
+
+    # W7b — the ordinals must be exactly the file-order occurrence counts of
+    # each pair: that is the whole join contract readers rely on.
+    bad_ord = []
+    seen_ord = collections.Counter()
+    for r in rel:
+        k = (r.get("subcard"), str(r.get("sense_tag")))
+        if r.get("dup_ordinal") != seen_ord[k]:
+            bad_ord.append((r["row_key"] if "row_key" in r else k,
+                            r.get("dup_ordinal"), seen_ord[k]))
+        seen_ord[k] += 1
+    print("W7b ordinals out of sequence: %d" % len(bad_ord))
+    if bad_ord:
+        fail("W7b", "%d dup_ordinals do not count occurrences in file order, "
+                    "e.g. %r" % (len(bad_ord), bad_ord[:5]))
+
+    # W7c — the shadow census, restated against consumers: with unique keys in
+    # place nothing is unreachable, but the number stays printed so the
+    # published before/after (§551: 468 shadowed on the wave-1 baseline → 0)
+    # keeps reconciling on every future run.
+    by_layer = collections.Counter()
+    for r in rel:
+        k = (r.get("subcard"), str(r.get("sense_tag")))
+        if dup_pairs.get(k):
+            by_layer[r.get("layer")] += 1
+    print("W7c rows under duplicate pairs by layer: "
+          + (" ".join("%s=%d" % kv for kv in sorted(by_layer.items()))
+             or "(none)"))
 
     print()
     if failures:
