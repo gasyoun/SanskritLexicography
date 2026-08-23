@@ -131,22 +131,58 @@ def homonym_of(subcard):
     return m.group(1) if m else "h0"
 
 
+class RelSidecar:
+    """The relationship sidecar, looked up WITHOUT dict-shadowing (H3300).
+
+    ``load()`` used to fold the whole sidecar into ``rel[(subcard, sense_tag)]``
+    — last row wins — so on duplicated pairs every earlier row silently
+    disappeared from every card (FINDINGS §551: 133 pairs, 468 of 6,009 rows).
+    Rows written since H3300 carry a unique ``row_key``/``dup_ordinal`` and are
+    joined exactly by ``(subcard, sense_tag, dup_ordinal)``, where the ordinal
+    is the pair's occurrence count in file order on BOTH sides. Legacy rows
+    without an ordinal fall back to the historical bare-pair view, so an old
+    sidecar keeps working.
+    """
+
+    def __init__(self, path):
+        self._legacy = {}          # (subcard, sense_tag) -> relationship
+        self._by_pair_ord = {}     # (subcard, sense_tag, dup_ordinal) -> rel
+        with io.open(path, encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                r = json.loads(line)
+                key = (r["subcard"], r["sense_tag"])
+                self._legacy[key] = r["relationship"]
+                if "dup_ordinal" in r:
+                    self._by_pair_ord[key + (r["dup_ordinal"],)] = \
+                        r["relationship"]
+
+    def get(self, subcard, sense_tag, dup_ordinal=None):
+        if dup_ordinal is not None:
+            hit = self._by_pair_ord.get((subcard, sense_tag, dup_ordinal))
+            if hit is not None:
+                return hit
+        return self._legacy.get((subcard, sense_tag))
+
+
 def load():
     store = collections.defaultdict(list)          # key1 -> [record]
+    pair_seen = collections.Counter()
     with io.open(STORE, encoding="utf-8") as fh:
         for line in fh:
             line = line.strip()
             if line:
                 d = json.loads(line)
+                # H3300: this row's occurrence ordinal for its (subcard,
+                # sense_tag) pair, in file order — the exact number the writer
+                # stamped as the row's dup_ordinal.
+                pair = (d["subcard"], str(d.get("sense_tag")))
+                d["_pair_ordinal"] = pair_seen[pair]
+                pair_seen[pair] += 1
                 store[d["key1"]].append(d)
-    rel = {}                                        # (subcard, sense_tag) -> relationship
-    with io.open(REL, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if line:
-                r = json.loads(line)
-                rel[(r["subcard"], r["sense_tag"])] = r["relationship"]
-    return store, rel
+    return store, RelSidecar(REL)
 
 
 def reglue_one(key1, records, rel):
@@ -199,7 +235,9 @@ def reglue_one(key1, records, rel):
         if layer == "pwg" and not pwg_correction_marker(d.get("sense_tag")):
             continue
         st = str(d.get("sense_tag"))
-        r = rel.get((d["subcard"], st))
+        # H3300: exact join on the pair's occurrence ordinal — a duplicated
+        # pair's second row now reaches the card with ITS OWN typology.
+        r = rel.get(d["subcard"], st, d.get("_pair_ordinal"))
         if not r:
             continue
         ip = r["insertion_point"]

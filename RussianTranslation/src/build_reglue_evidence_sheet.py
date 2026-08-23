@@ -119,8 +119,8 @@ def ru_html(text):
 
 
 def build_items():
-    store, rel = ro.load()
-    idx = ro.pwg_sense_index(store)
+    index, rel = ro.load()
+    idx = ro.pwg_sense_index(index.records)
 
     # Build the CHECKABLE pool: a real PWG target sense, and enough German on
     # both sides to compare. Everything else is a structural fact to report, not
@@ -139,7 +139,9 @@ def build_items():
         if r.get("layer") == "pwg":
             continue
         census["total"] += 1
-        rec = store.get((r["subcard"], str(r["sense_tag"])))
+        # H3300: exact join — dup_ordinal picks THIS row's own store body, not
+        # an arbitrary last-written sibling under the same (subcard, sense_tag).
+        rec = index.lookup(r["subcard"], r["sense_tag"], r.get("dup_ordinal"))
         if not rec:
             continue
         ip = r["relationship"]["insertion_point"]
@@ -206,7 +208,12 @@ def build_items():
                    m["pwg_chars"], m["supp_chars"]))
 
             items.append({
-                "id": "%s::%s" % (r["subcard"], r["sense_tag"]),
+                # H3300: the id IS the sidecar row's unique key. The bare
+                # `%s::%s` pair collided across duplicated pairs — the committed
+                # lock literally carried `vas~~h0_zz_pw01::1` twice, so two
+                # cards shared one vote slot.
+                "id": r.get("row_key")
+                      or "%s::%s" % (r["subcard"], r["sense_tag"]),
                 "filt": layer,
                 "title": "%s · %s → смысл %s" % (slp1_iast(r["key1"]), layer.upper(),
                                                  ip.get("target_sense")),
