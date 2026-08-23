@@ -15,6 +15,12 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **H3090 U7 typology chips carry count + population share in the h180 typology sheet** (OxAlpha `x-preview-f-free`, 23-08-2026): `build_typology()` now computes `subtype_totals` from the pre-sampling population (6374 supplements) and every card carries `item["typology"]` `{label, n, share}`; regenerated under csl-pyutil 0.22.0 — 81/81 cards render e.g. `foreign_fragment (n=109, 2%)`. Deliberate unvoted re-cut (`REVIEW_LOCK_FORCE=1`, sheet 🟡); stays file:///-only. [H3090](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3090-OxAlpha_SanskritLexicography_h180-typology-kappa-u7-share_18.08.26.md).
+
+### Fixed
+- **CI csl-pyutil pin repaired** (same PR): `h3207-split-layout` branch was deleted from Cologne after the v0.22.0 merge (#37), so both pip installs (`requirements.txt`, `.github/workflows/ci.yml`) failed everywhere including master — repinned to the exact merged commit `7ea07775ed9553aa11b66fcfe6524251bad9065b` (= v0.22.0 content).
+
+### Added
 - **H3229 additive `summary.agent_ops_code` on the PWG bounded envelope** (Grok 4.6 `grok-4.6`, 21-08-2026). Vendored mapper [`agent_ops_map_pwg.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/agent_ops_map_pwg.py) (canon [Uprava `map_pwg.py`](https://github.com/gasyoun/Uprava/blob/main/tools/agent_ops/map_pwg.py)); `bounded_supervisor.summary()` writes the field; old receipts without it still parse (`.get` → `None`, never `0`). Does not retune `HARD_TIMEOUT_MS` or `$2`. [H3229](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3229-Grok_Uprava_agent-ops-w1-budgets-failures-envelope_21.08.26.md).
 
 ## [1.144.90] - 2026-08-21
