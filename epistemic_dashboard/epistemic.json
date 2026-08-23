@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-03T21:39:34Z",
+ "generated_at": "2026-08-23T19:53:17Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 172,
+  "total": 233,
   "by_importance": {
-   "3": 54,
-   "2": 93,
-   "1": 25
+   "3": 75,
+   "2": 128,
+   "1": 30
   },
   "by_origin": {
    "auto": 0,
-   "human": 172
+   "human": 233
   }
  },
  "layers": [
@@ -101,15 +101,15 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 13,
+   "total": 14,
    "by_importance": {
     "3": 2,
-    "2": 8,
+    "2": 9,
     "1": 2
    },
    "by_origin": {
     "auto": 0,
-    "human": 13
+    "human": 14
    },
    "categories": 3,
    "interlinks": 6,
@@ -191,6 +191,12 @@
      "importance": 1,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#13-corpuslexicon-row-count-1093391-vs-1091528"
+    },
+    {
+     "title": "§14. ls-citation-graph MW lane: CANON-CORE builds on it, CITE-4AXIS rejects it as an artifact-generator",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#14-ls-citation-graph-mw-lane-canon-core-builds-on-it-cite-4axis-rejects-it-as-an-artifact-generator"
     }
    ]
   },
@@ -198,18 +204,18 @@
    "key": "GAPS",
    "act": "not-yet-knowing (the frontier)",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
-   "total": 14,
+   "total": 15,
    "by_importance": {
     "3": 1,
     "2": 6,
-    "1": 7
+    "1": 8
    },
    "by_origin": {
     "auto": 5,
-    "human": 9
+    "human": 10
    },
    "categories": 3,
-   "interlinks": 11,
+   "interlinks": 12,
    "entries": [
     {
      "title": "§1. Derivative ī/ū gen.pl accent split (D3) — n=2, unresolvable",
@@ -290,6 +296,12 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#14-which--ī-stems-are-the-monosyllabic-type-and-which--at-citations-are-genuine--ant-stems"
     },
     {
+     "title": "§15. BLI B1 gold pass-1 labels not yet collected — real P@1/P@5/MRR on the stratified frame is unmeasured",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#15-bli-b1-gold-pass-1-labels-not-yet-collected--real-p1p5mrr-on-the-stratified-frame-is-unmeasured"
+    },
+    {
      "title": "§13. No Russian Uttarakāṇḍa (or Kiṣkindhā, or Yuddha) exists — 1,765 PWG `R.` book-7 citations wait on a translator",
      "importance": 2,
      "origin": "human",
@@ -301,18 +313,18 @@
    "key": "DEAD_ENDS",
    "act": "abandoning an approach",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
-   "total": 14,
+   "total": 15,
    "by_importance": {
     "3": 10,
-    "2": 3,
-    "1": 0
+    "2": 4,
+    "1": 1
    },
    "by_origin": {
     "auto": 1,
-    "human": 13
+    "human": 14
    },
    "categories": 4,
-   "interlinks": 13,
+   "interlinks": 14,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -340,7 +352,7 @@
     },
     {
      "title": "§8b. Fitting a continuous locus index for the **full Mahābhārata** against any free bulk e-text — ✅ REOPENED & DONE for ALL 18 PARVANS (the \"no free vulgate\" premise was refuted, 12-07-2026)",
-     "importance": null,
+     "importance": 1,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8b-fitting-a-continuous-locus-index-for-the-full-mahābhārata-against-any-free-bulk-e-text---reopened--done-for-all-18-parvans-the-no-free-vulgate-premise-was-refuted-12-07-2026"
     },
@@ -397,6 +409,12 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#13-building-a-bombaycorpus-verse-concordance-for-pwgs-r-book-7--abandoned-before-the-ocr-was-spent"
+    },
+    {
+     "title": "§14. Waiting on Druzhinin's Russian Aṣṭāṅgahṛdaya to reach the `guda` chapters — abandoned on the translator's own pace",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#14-waiting-on-druzhinins-russian-aṣṭāṅgahṛdaya-to-reach-the-guda-chapters--abandoned-on-the-translators-own-pace"
     }
    ]
   },
@@ -607,19 +625,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 186,
+  "rows": 189,
   "auto": 120,
-  "human": 66,
+  "human": 69,
   "by_importance": {
    "3": 25,
-   "2": 35,
-   "1": 10
+   "2": 37,
+   "1": 12
   },
   "layers": 7,
-  "entry_rows": 72,
+  "entry_rows": 75,
   "candidates": 6,
   "categories": 21,
-  "interlinks": 60,
-  "findings": 172
+  "interlinks": 62,
+  "findings": 233
  }
 }
