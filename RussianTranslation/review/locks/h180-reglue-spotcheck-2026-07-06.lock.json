@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h180-reglue-spotcheck-2026-07-06",
-  "content_hash": "sha256:1a9cac241970d81948017a23383f0ea37d8033ba18a8923e0d58fe3c96a09128",
+  "content_hash": "sha256:f846aa8331d10a28318ee213443504eace7358a3b0543c75d0e2045f0689a7ef",
   "generated": "2026-07-06",
   "gate": null,
   "n_items": 15,
@@ -24,6 +24,6 @@
   ],
   "source_html": "h180_reglue_sheet.html",
   "mode": "stamped",
-  "created": "2026-08-18",
+  "created": "2026-08-23",
   "tool": "review_binding.py (H1404 binding standard)"
 }

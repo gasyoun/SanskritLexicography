@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h180-learner-threshold-2026-07-06",
-  "content_hash": "sha256:ebb7ceed08b2adea6f5f8576cd5a72acb095a9885cf4b5a928029fbd71f3c08e",
+  "content_hash": "sha256:4c35fa8a59d895ba8078277df83ba69967af492795d3f0e371864eec7ed49aa3",
   "generated": "2026-07-06",
   "gate": null,
   "n_items": 60,
@@ -69,6 +69,6 @@
   ],
   "source_html": "h180_learner_sheet.html",
   "mode": "stamped",
-  "created": "2026-08-18",
+  "created": "2026-08-23",
   "tool": "review_binding.py (H1404 binding standard)"
 }

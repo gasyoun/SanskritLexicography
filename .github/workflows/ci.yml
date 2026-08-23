@@ -154,7 +154,7 @@ jobs:
         # its ordering form: a step that runs the whole suite has to be preceded by
         # every dependency the named steps install piecemeal, and nothing enforced
         # that. Keep this install ABOVE the truth gate.
-        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@h3207-split-layout"
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@7ea07775ed9553aa11b66fcfe6524251bad9065b"
       - name: Complete subsystem test suite (H2252 truth gate)
         working-directory: RussianTranslation
         run: |
