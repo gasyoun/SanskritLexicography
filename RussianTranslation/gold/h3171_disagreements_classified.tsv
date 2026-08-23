@@ -1,0 +1,106 @@
+id	surface	gold	witness	panel	class	note	witness_output
+0	sarva-BUtezu	sarvaBUta	H	correct	policy	compound entry vs members sarva+bhUta	BU;BUta;Bu;Uta;av;sarva;uta;vA
+0	sarva-BUtezu	sarvaBUta	D	correct	policy	compound entry vs members sarva+bhUta	BUta;sarva
+2	nivAryate	nivAray	H	correct	policy	root vR (+preverb ni) vs adjudicated causative stem nivAray — phase-4 kamp/kampay pattern	ni;vf
+3	marjya	marjya	H	correct	error	Word-mode no analysis (gerundive marjya)	-
+3	marjya	marjya	D	correct	policy	root mfj vs gerundive-stem marjya	mfj
+8	mahAkapi	mahAkapi	H	correct	policy	members mahat+kapi (tat-sandhi mahA-) vs entry mahAkapi	kapi;mahat
+9	mahAraTa	mahAraTa	H	correct	policy	members mahat+ratha vs entry mahAraTa	mahat;ratha
+9	mahAraTa	mahAraTa	D	correct	error	mahArata — aspiration h dropped, dental t for retroflex T	mahArata
+10	sUtikAgni	sUtikAgni	H	correct	policy	members sUtikA+agni vs entry sUtikAgni	agni;sUtikA
+11	sarva-BUtASaya-sTita	sTita	H	correct	policy	participle sthit / root sthA vs adjudicated ppp sTita; + surplus fragments ASa/BU/Bu/Uta/av	ASa;ASaya;BU;BUta;Bu;Uta;av;sarva;sthA;sthita;uta;vA;ya
+11	sarva-BUtASaya-sTita	sTita	D	correct	error	final member sTita absent from segmentation (§95 misalignment class)	ASaya;BUta;sarva
+12	brahmanirvARa	brahmanirvARa	H	correct	policy	members brahman+nirvARa vs entry brahmanirvARa	brahman;nirvARa
+12	brahmanirvARa	brahmanirvARa	D	correct	policy	members brahman+nirvARa vs entry brahmanirvARa	brahman;nirvARa
+13	mokza-kAma	mokzakAma	H	correct	policy	members mokza+kAma vs entry mokzakAma	kAma;mokza
+13	mokza-kAma	mokzakAma	D	correct	policy	members mokza+kAma vs entry mokzakAma	kAma;mokza
+15	snA	snA	H	correct	error	Word-mode no analysis (verbal noun snA)	-
+16	evaM	evam	H	correct	error	Word-mode no analysis (indeclinable evam)	-
+17	Barata-SrezWa	BarataSrezWa	H	correct	policy	members Barata+SrezWa vs entry BarataSrezWa	Barata;SrezWa
+17	Barata-SrezWa	BarataSrezWa	D	correct	policy	members Barata+SrezWa vs entry BarataSrezWa	Barata;SrezWa
+18	niSITadIpa	niSITadIpa	H	correct	error	niSItha — aspirate lexeme variant for niSITa member	dIpa;niSItha
+18	niSITadIpa	niSITadIpa	D	correct	policy	members niSITa+dIpa vs entry niSITadIpa	dIpa;niSITa
+19	ugratejas	ugratejas	H	correct	policy	members ugra+tejas vs entry ugratejas; + surplus ij/teja/ugratA	ij;teja;tejas;ugra;ugratA
+19	ugratejas	ugratejas	D	correct	policy	members ugra+tejas vs entry ugratejas	tejas;ugra
+20	para-puraYjaya	parapuraMjaya	H	correct	policy	members para+puraMjaya vs entry parapuraMjaya	para;puraMjaya
+23	brahma-nirvARa	brahmanirvARa	H	correct	policy	members brahman+nirvARa vs entry brahmanirvARa	brahman;nirvARa
+23	brahma-nirvARa	brahmanirvARa	D	correct	policy	members brahman+nirvARa vs entry brahmanirvARa	brahman;nirvARa
+25	fjutA	fjutA	H	correct	error	Word-mode no analysis (fjutA)	-
+25	fjutA	fjutA	D	correct	error	shattered fjU+tA (§95 shatter class)	fju;tA
+27	Atma-yoga	Atmayoga	H	correct	policy	members Atman+yoga vs entry Atmayoga	Atman;yoga
+27	Atma-yoga	Atmayoga	D	correct	policy	members Atman+yoga vs entry Atmayoga	Atman;yoga
+28	Aharanti	Ahf	H	correct	policy	prefixed root split A+hf as two tokens vs composite Ahf	A;hf
+29	tadanantaram	tadanantara	H	correct	policy	members tad+anantara vs entry tadanantara	anantara;tad
+29	tadanantaram	tadanantara	D	correct	policy	members tad+anantaraM (inflection residue -M on lemma)	anantaraM;tad
+30	cikradad	krand	H	correct	error	Word-mode no analysis (reduplicated perfect cikradad)	-
+32	praharaDvam	prahf	H	correct	policy	roots pra+hf split vs composite prahf; + surplus	hf;pra
+32	praharaDvam	prahf	D	correct	policy	intensive-stem prahara vs root prahf; + surplus fragment dva	dva;prahara
+34	maharzi	maharzi	H	correct	policy	members mahat+fzi vs entry maharzi	fzi;mahat
+34	maharzi	maharzi	D	correct	policy	members mahat+fzi vs entry maharzi	fzi;mahat
+35	aByuvAca	aBivac	H	correct	error	Word-mode no analysis (augmented imperfect aByuvAca)	-
+37	SaraRArTin	SaraRArTin	H	correct	policy	members SaraRa+arthin vs entry SaraRArTin (sandhi spelling)	SaraRa;arthin
+37	SaraRArTin	SaraRArTin	D	correct	policy	members SaraRa+artin vs entry; artin loses h (spelling note)	SaraRa;artin
+38	mahezvAsa	mahezvAsa	H	correct	policy	three-way split mahat+izu+Asa vs entry mahezvAsa; + surplus	Asa;izu;mahat
+38	mahezvAsa	mahezvAsa	D	correct	policy	members izvAsa+mahat vs entry mahezvAsa	izvAsa;mahat
+39	durDA	durDA	H	correct	error	Word-mode no analysis (durDA)	-
+39	durDA	durDA	D	correct	error	durdA — dental d for retroflex-aspirate D of gold durDA	durdA
+41	jYAna-yoga	jYAnayoga	H	correct	policy	members jYAna+yoga vs entry jYAnayoga	jYAna;yoga
+41	jYAna-yoga	jYAnayoga	D	correct	policy	members jYAna+yoga vs entry jYAnayoga	jYAna;yoga
+43	bAnDaveByaH	bAnDava	H	correct	convention	bAndhava — standard dh spelling vs adjudicated D variant; + surplus iBa/iBya	bAndhava;iBa;iBya
+44	niDi	niDi	H	correct	error	Word-mode no analysis (noun niDi)	-
+44	niDi	niDi	D	correct	policy	root niD vs noun-stem niDi	niD
+45	kaTaM-rUpa	rUpa	H	correct	error	Word-mode no analysis (kaTaM-rUpa)	-
+45	kaTaM-rUpa	rUpa	D	correct	error	kataMrUpa — garbled kaTaM and missed seam	kataMrUpa
+46	mahy	mahi	H	correct	error	Word-mode no analysis (locative mahy)	-
+49	kAma-rUpa	kAmarUpa	H	correct	policy	members kAma+rUpa vs entry kAmarUpa	kAma;rUpa
+50	agnija	agnija	D	correct	policy	members agni+ja vs entry agnija	agni;ja
+51	maruDanvasu	maruDanvan	H	correct	policy	members maru+dhanvan vs entry maruDanvan; + surplus asu/dhanu	asu;dhanu;dhanvan;maru
+51	maruDanvasu	maruDanvan	D	correct	policy	members maru+danvan vs entry maruDanvan	danvan;maru
+53	sahArjunena	sahArjuna	H	correct	policy	members saha+arjuna vs entry sahArjuna; + surplus ina	arjuna;ina;saha
+53	sahArjunena	sahArjuna	D	correct	policy	members saha+arjuna vs entry sahArjuna	arjuna;saha
+54	brahma-nirvARam	brahmanirvARa	H	correct	policy	members brahman+nirvARa vs entry brahmanirvARa	brahman;nirvARa
+54	brahma-nirvARam	brahmanirvARa	D	correct	policy	members brahman+nirvARa vs entry brahmanirvARa	brahman;nirvARa
+56	mad-BAva	madBAva	H	correct	policy	pronoun stem asmad vs compound form mad; + surplus BU	BAva;BU;asmad
+56	mad-BAva	madBAva	D	correct	policy	member lemmas mad+bAVAa recover entry by join; set-match misses	BAva;mad
+57	harzamARa	hfz	H	correct	policy	members harza+mARa vs adjudicated root hfz (glossary went to root)	harza;mARa
+58	ftayug	ftayuj	H	correct	error	Word-mode no analysis (ftayug)	-
+58	ftayug	ftayuj	D	correct	policy	members fta+yuj vs entry ftayuj	fta;yuj
+62	CattraM	Cattra	H	correct	error	Word-mode no analysis (CattraM)	-
+64	viBAgaSaH	viBAgaSaH	H	correct	convention	viBAgaSas (nominative -s listed as stem) vs adjudicated stem viBAgaSaH — visarga/s notation	viBAgaSas
+66	mahardDi	mahardDi	H	correct	policy	members mahat+fddhi vs entry mahardDi	fddhi;mahat
+66	mahardDi	mahardDi	D	correct	error	maharddi — aspiration of geminate ddh reduced to dd	maharddi
+68	jIva-BUta	jIvaBUta	H	correct	policy	members jIva+BUta vs entry jIvaBUta; + heavy surplus BU/Bu/Uta/av/uta/vA	BU;BUta;Bu;Uta;av;jIva;uta;vA
+68	jIva-BUta	jIvaBUta	D	correct	policy	root BU vs participle BUta; entry jIvaBUta not modeled	BU;jIva
+70	apUrvAyAH	apUrva	D	correct	policy	inflected fem apUrvA given as lemma vs stem apUrva	apUrvA
+71	sTira-budDi	sTirabudDi	H	correct	policy	members sthira+buddhi vs entry sTirabudDi	buddhi;sthira
+71	sTira-budDi	sTirabudDi	D	correct	error	shattered bud;di;ra;t (§95 shatter class)	bud;di;ra;t
+75	durlaBatvAt	durlaBatva	D	correct	error	shattered durlaBa+tva and lost dh (labDh->laBa)	durlaBa;tva
+78	jagan-nivAsa	jagannivAsa	H	correct	policy	members jagat+nivAsa vs entry jagannivAsa (n-assimilation sandhi)	jagat;nivAsa
+79	yaTepsita	yaTepsita	H	correct	policy	members yathA+Ipsita vs entry yaTepsita (t+I->Te sandhi)	Ap;Ipsita;yathA
+79	yaTepsita	yaTepsita	D	correct	error	shattered/mangled Ips+yata (yathA misread)	Ips;yata
+80	BaktAyAH	Bakta	D	correct	policy	root Baj vs ppp Bakta — phase-4 tyaj/tyakta pattern	Baj
+83	kuru-nandana	kurunandana	H	correct	policy	members kuru+nandana vs entry kurunandana	kuru;nandana
+83	kuru-nandana	kurunandana	D	correct	policy	members kuru+nandana vs entry kurunandana	kuru;nandana
+84	bAhya-sparSa	bAhyasparSa	H	correct	policy	members bAhya+sparSa vs entry bAhyasparSa	bAhya;sparSa
+84	bAhya-sparSa	bAhyasparSa	D	correct	policy	members bAhya+sparSa vs entry bAhyasparSa	bAhya;sparSa
+86	ukTa-ukTa	ukTa	H	correct	error	Word-mode no analysis (ukTa-ukTa)	-
+86	ukTa-ukTa	ukTa	D	correct	policy	root vac vs ppp ukTa — phase-4 suppletive pattern	vac
+90	bfhatsAman	bfhatsAman	H	correct	policy	members bfhat+sAman vs entry bfhatsAman	bfh;bfhat;sAman
+92	sravitave	sru	H	correct	error	Word-mode no analysis (infinitive sravitave)	-
+93	raTin	raTin	H	correct	error	rathin — intrusive h (lexeme confusion rathin/raTin)	rathin
+93	raTin	raTin	D	correct	error	ratin — dental t for retroflex T	ratin
+94	tvad	tvad	H	correct	error	Word-mode no analysis (pronoun oblique tvad)	-
+94	tvad	tvad	D	correct	policy	pronominal stem tva vs tvad (DCS tvad vs PAninian stem — dcs_sh alignment doc)	tva
+97	SrAvayatpati	SrAvayatpati	H	correct	policy	causative root Sru+pati vs entry SrAvayatpati	Sru;pati
+97	SrAvayatpati	SrAvayatpati	D	correct	policy	causative stem SrAvay+pati vs entry SrAvayatpati	SrAvay;pati
+99	sva-Darma	svaDarma	H	correct	policy	members sva+dharma(dharman) vs entry svaDarma	dharma;dharman;sva
+99	sva-Darma	svaDarma	D	correct	policy	member sva recovered; dharma garbled to darman	darman;sva
+100	sva-jana	svajana	H	correct	policy	members sva+jana vs entry svajana	jana;sva
+100	sva-jana	svajana	D	correct	policy	members sva+jana vs entry svajana	jana;sva
+101	vAc	vAc	H	correct	error	Word-mode no analysis (indeclinable vAc)	-
+102	nIcIr	nyAYc	H	correct	error	Word-mode no analysis (nIcIr)	-
+106	anu-vi-A-cal	cal	H	correct	error	Word-mode no analysis (multi-prefix anu-vi-A-cal)	-
+106	anu-vi-A-cal	cal	D	correct	policy	whole compounded anuviAcal vs glossary rightmost-member rule cal	anuviAcal
+107	kalpAntezu	kalpAnta	H	correct	policy	members kalpa+anta vs entry kalpAnta; + surplus aM	aM;anta;kalpa
+107	kalpAntezu	kalpAnta	D	correct	policy	members kalpa+anta vs entry kalpAnta	anta;kalpa
+108	karmAntara	karmAntara	H	correct	policy	members karman+antara vs entry karmAntara	Antara;antara;karman
