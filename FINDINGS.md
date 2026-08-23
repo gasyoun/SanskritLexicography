@@ -6528,6 +6528,26 @@ hold, and the first voter to try would discover that.
 > Opus 5 (`claude-opus-5`) · 16-08-2026 · H2880. Measured over the wave-1
 > baseline sidecar rebuilt from `origin/master` (6 009 rows) and the wave-2
 > sidecar (6 374 rows), same store `sha256 811bbc21…`.
+
+**Both halves fixed — H3300, 23-08-2026.** The writer
+[`build_relationships.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_relationships.py)
+now stamps every sidecar row with a unique `row_key` (`"<subcard>::<sense_tag>#<ordinal>"`)
+plus `dup_ordinal` (the pair's occurrence index in store order), and every
+dicting consumer joins on it while staying tolerant of legacy bare-pair rows:
+`build_reglue.RelSidecar`, [`reglue_delta.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/reglue_delta.py),
+and the evidence sheet (whose committed lock carried `vas~~h0_zz_pw01::1`
+**twice** and `vid~~h0_zz_pw01::2` twice — two cards sharing one vote slot;
+`vas::1` now votes as `#0` and `#11`). Refreshed sidecar: 6 374 rows / 133
+duplicate pairs / **601 rows under them** (layer split pw 559 · nws 26 · pwkvn 14 · sch 2,
+§551's split exactly, grown from 468 by the wave-2/3 row additions), zero
+unreachable. Gates W7a–W7c in
+[`placement_axis_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/placement_axis_check.py)
+assert key presence/uniqueness/well-formedness and file-order ordinals.
+The lock half is closed by a deliberate unvoted re-cut bound at
+`sha256:961f8b4a…`, proven reproducible by a second force-free run rendering
+the same hash through the collision guard; sample movement vs the published cut
+is attributed on identical inputs to exactly the duplicated-pair rows regaining
+their own German body in the `pw/restate` pool (236 → 257 members).
 ### §552. SCH does almost only supplement PWG — 3.3 % of its rows correct it — but the signal that proves it is a printed imperative, not the gender conflict the roadmap predicted
 
 🟠 **`classify_edition_rel` could return only `sch_star` or `derived_sense` for
