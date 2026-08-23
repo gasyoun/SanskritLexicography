@@ -1,0 +1,66 @@
+id	surface_slp1	gold	root	panel	heritage_stems	dm_lemmas	verdict_hint
+0	sarva-BUtezu	sarvaBUta		correct	BU;BUta;Bu;Uta;av;sarva;uta;vA	BUta;sarva	her:policy?,dm:policy?
+2	nivAryate	nivAray	vAray	correct	ni;vf	nivAray	dm:policy?
+3	marjya	marjya		correct	-	mfj	-
+8	mahAkapi	mahAkapi		correct	kapi;mahat	mahAkapi	dm:policy?
+9	mahAraTa	mahAraTa		correct	mahat;ratha	mahArata	-
+10	sUtikAgni	sUtikAgni		correct	agni;sUtikA	sUtikAgni	her:policy?,dm:policy?
+11	sarva-BUtASaya-sTita	sTita		correct	ASa;ASaya;BU;BUta;Bu;Uta;av;sarva;sthA;sthita;uta;vA;ya	ASaya;BUta;sarva	-
+12	brahmanirvARa	brahmanirvARa		correct	brahman;nirvARa	brahman;nirvARa	her:policy?,dm:policy?
+13	mokza-kAma	mokzakAma		correct	kAma;mokza	kAma;mokza	her:policy?,dm:policy?
+15	snA	snA	snA	correct	-	snA	dm:policy?
+16	evaM	evam		correct	-	evaM	dm:policy?
+17	Barata-SrezWa	BarataSrezWa		correct	Barata;SrezWa	Barata;SrezWa	her:policy?,dm:policy?
+18	niSITadIpa	niSITadIpa		correct	dIpa;niSItha	dIpa;niSITa	dm:policy?
+19	ugratejas	ugratejas		correct	ij;teja;tejas;ugra;ugratA	tejas;ugra	her:policy?,dm:policy?
+20	para-puraYjaya	parapuraMjaya		correct	para;puraMjaya	parapuraMjaya	her:policy?,dm:policy?
+23	brahma-nirvARa	brahmanirvARa		correct	brahman;nirvARa	brahman;nirvARa	her:policy?,dm:policy?
+25	fjutA	fjutA		correct	-	fju;tA	dm:policy?
+27	Atma-yoga	Atmayoga		correct	Atman;yoga	Atman;yoga	-
+28	Aharanti	Ahf	hf	correct	A;hf	Ahf	dm:policy?
+29	tadanantaram	tadanantara		correct	anantara;tad	anantaraM;tad	her:policy?,dm:policy?
+30	cikradad	krand	krand	correct	-	krand	dm:policy?
+32	praharaDvam	prahf	hf	correct	hf;pra	dva;prahara	her:policy?
+34	maharzi	maharzi		correct	fzi;mahat	fzi;mahat	-
+35	aByuvAca	aBivac	vac	correct	-	aBivac	dm:policy?
+37	SaraRArTin	SaraRArTin		correct	SaraRa;arthin	SaraRa;artin	-
+38	mahezvAsa	mahezvAsa		correct	Asa;izu;mahat	izvAsa;mahat	-
+39	durDA	durDA		correct	-	durdA	-
+41	jYAna-yoga	jYAnayoga		correct	jYAna;yoga	jYAna;yoga	her:policy?,dm:policy?
+43	bAnDaveByaH	bAnDava		correct	bAndhava;iBa;iBya	bAnDava	dm:policy?
+44	niDi	niDi		correct	-	niD	dm:policy?
+45	kaTaM-rUpa	rUpa		correct	-	kataMrUpa	-
+46	mahy	mahi		correct	-	mahi	dm:policy?
+49	kAma-rUpa	kAmarUpa		correct	kAma;rUpa	kAmarUpa	her:policy?,dm:policy?
+50	agnija	agnija		correct	agnija	agni;ja	her:policy?,dm:policy?
+51	maruDanvasu	maruDanvan		correct	asu;dhanu;dhanvan;maru	danvan;maru	her:policy?,dm:policy?
+53	sahArjunena	sahArjuna		correct	arjuna;ina;saha	arjuna;saha	-
+54	brahma-nirvARam	brahmanirvARa		correct	brahman;nirvARa	brahman;nirvARa	her:policy?,dm:policy?
+56	mad-BAva	madBAva		correct	BAva;BU;asmad	BAva;mad	dm:policy?
+57	harzamARa	hfz	hfz	correct	harza;mARa	hfz	dm:policy?
+58	ftayug	ftayuj		correct	-	fta;yuj	dm:policy?
+62	CattraM	Cattra		correct	-	Cattra	dm:policy?
+64	viBAgaSaH	viBAgaSaH		correct	viBAgaSas	viBAgaSaH	dm:policy?
+66	mahardDi	mahardDi		correct	fddhi;mahat	maharddi	-
+68	jIva-BUta	jIvaBUta		correct	BU;BUta;Bu;Uta;av;jIva;uta;vA	BU;jIva	her:policy?,dm:policy?
+70	apUrvAyAH	apUrva		correct	apUrva	apUrvA	her:policy?
+71	sTira-budDi	sTirabudDi		correct	buddhi;sthira	bud;di;ra;t	-
+75	durlaBatvAt	durlaBatva		correct	ad;durlaBatva	durlaBa;tva	her:policy?,dm:policy?
+78	jagan-nivAsa	jagannivAsa		correct	jagat;nivAsa	jagannivAsa	dm:policy?
+79	yaTepsita	yaTepsita		correct	Ap;Ipsita;yathA	Ips;yata	-
+80	BaktAyAH	Bakta		correct	Baj;Bakta	Baj	her:policy?
+83	kuru-nandana	kurunandana		correct	kuru;nandana	kuru;nandana	her:policy?,dm:policy?
+84	bAhya-sparSa	bAhyasparSa		correct	bAhya;sparSa	bAhya;sparSa	her:policy?,dm:policy?
+86	ukTa-ukTa	ukTa		correct	-	vac	-
+90	bfhatsAman	bfhatsAman		correct	bfh;bfhat;sAman	bfhatsAman	her:policy?,dm:policy?
+92	sravitave	sru	sru	correct	-	sru	dm:policy?
+93	raTin	raTin		correct	rathin	ratin	-
+94	tvad	tvad		correct	-	tva	dm:policy?
+97	SrAvayatpati	SrAvayatpati		correct	Sru;pati	SrAvay;pati	dm:policy?
+99	sva-Darma	svaDarma		correct	dharma;dharman;sva	darman;sva	her:policy?,dm:policy?
+100	sva-jana	svajana		correct	jana;sva	jana;sva	her:policy?,dm:policy?
+101	vAc	vAc		correct	-	vAc	dm:policy?
+102	nIcIr	nyAYc		correct	-	nyAMc	dm:policy?
+106	anu-vi-A-cal	cal	cal	correct	-	anuviAcal	-
+107	kalpAntezu	kalpAnta		correct	aM;anta;kalpa	anta;kalpa	-
+108	karmAntara	karmAntara		correct	Antara;antara;karman	karmAntara	dm:policy?

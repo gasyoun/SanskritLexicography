@@ -1,0 +1,96 @@
+[200] [https://sanskrit.uohyd.ac.in/cgi-bin/SKT/sktreader?lex=MW&cache=t&st=f&us=f&font=roma&t=SL&text=vijYAnasahita&topic=&corpmode=&corpdir=&sentno=]
+
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Sanskrit Reader Companion</title>
+<meta name="author" content="Gérard Huet">
+<meta property="dc:datecopyrighted" content="2026">
+<meta property="dc:rightsholder" content="Gérard Huet">
+<meta name="keywords" content="sanskrit,dictionary,heritage,dictionnaire,sanscrit,india,inde,indology,linguistics,panini,digital humanities,digital libraries,cultural heritage,computational linguistics,hypertext lexicon">
+<link rel="stylesheet" type="text/css" href="/SKT/DICO/style.css" media="screen,tv">
+<link rel="shortcut icon" href="/SKT/IMAGES/favicon.ico">
+<script type="text/javascript" src="/SKT/DICO/utf82VH.js"></script>
+<script type="text/javascript" src="/SKT/DICO/util.js"></script>
+</head>
+<body class="chamois_back">
+<h1 class="title">The Sanskrit Reader Companion</h1>
+<table class="chamois_back" border="0" cellpadding="0%" cellspacing="15pt" width="100%">
+<tr><td>
+<p align="center">
+<div class="latin16"><a class="green" href="/cgi-bin/SKT/sktgraph?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=vijYAnasahita;topic=;abs=f;cpts=;mode=g">&#x2713;</a> Show Summary of Solutions
+</p>
+Input:
+<span class="roma16o">vij&#241;&#257;nasahita</span><hr>
+<br>
+Sentence: 
+<span class="deva16" lang="sa">&#x0935;&#x093F;&#x091C;&#x094D;&#x091E;&#x093E;&#x0928;&#x0938;&#x0939;&#x093F;&#x0924;</span><br>
+may be analysed as:</div><br>
+<hr>
+<span class="blue">Solution 1 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=vijYAnasahita;topic=;abs=f;cpts=;mode=p;n=1">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>vij&#241;&#257;na</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/237.html#H_vij~naana"><i>vij&#241;&#257;na</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="7"><b>sahita</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/290.html#H_sahita#2"><i>sahita_2</i></a>]{m. sg. voc. | n. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="blue">Solution 2 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=vijYAnasahita;topic=;abs=f;cpts=;mode=p;n=2">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>vij&#241;&#257;na</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/237.html#H_vij~naana"><i>vij&#241;&#257;na</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="7"><b>sahita</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/290.html#H_sahita#1"><i>sahita_1</i></a> { pp. }[<a class="navy" href="/SKT/MW/289.html#H_sah#1"><i>sah_1</i></a>]]{n. sg. voc. | m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<span class="magenta">2</span><span class="blue"> solutions kept among </span><span class="magenta">3</span><br>
+<span class="blue">Filtering efficiency: </span>
+<span class="magenta">50%</span>
+<br>
+<br>
+<span class="red">Additional candidate solutions</span><br>
+<hr>
+<span class="blue">Solution 3 : <a class="green" href="/cgi-bin/SKT/sktparser?t=SL;lex=MW;font=roma;cache=t;st=f;us=f;text=vijYAnasahita;topic=;abs=f;cpts=;mode=p;n=3">&#x2713;</a></span><br>
+[ <span class="blue" title="0"><b>vij&#241;&#257;</b></span><table class="yellow_back">
+<tr><th><span class="latin12"><th><table class="yellow_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/237.html#H_vij~naa#2"><i>vij&#241;&#257;_2</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="5"><b>nasa</b></span><table class="kaki_back">
+<tr><th><span class="latin12"><th><table class="kaki_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/134.html#H_nasa"><i>nasa</i></a>]{iic.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+[ <span class="blue" title="9"><b>hita</b></span><table class="lawngreen_back">
+<tr><th><span class="latin12"><th><table class="lawngreen_back">
+<tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/314.html#H_hita#1"><i>hita_1</i></a> { pp. }[<a class="navy" href="/SKT/MW/314.html#H_hi#2"><i>hi_2</i></a>]]{n. sg. voc. | m. sg. voc.}</span></th></tr><tr><th><span class="latin12">[<a class="navy" href="/SKT/MW/315.html#H_hita#2"><i>hita_2</i></a> { pp. }[<a class="navy" href="/SKT/MW/129.html#H_dhaa#1"><i>dh&#257;_1</i></a>]]{n. sg. voc. | m. sg. voc.}</span></th></tr></table></th></span></th></tr></table>&lang;&rang;]
+<br>
+<br>
+<hr>
+<br>
+<br>
+</td></tr></table>
+<table class="pad60">
+<tr><td></td></tr></table>
+<div class="enpied">
+<table class="bandeau"><tr><td>
+<a href="https://ocaml.org"><img src="/SKT/IMAGES/icon_ocaml.png" alt="Le chameau Ocaml" height="50"></a>
+</td><td>
+<table class="center">
+<tr><td>
+<a href="/SKT/index.en.html"><b>Top</b></a> | 
+<a href="/SKT/DICO/index.en.html"><b>Index</b></a> | 
+<a href="/SKT/DICO/grammar.en.html"><b>Grammar</b></a> | 
+<a href="/SKT/DICO/sandhi.en.html"><b>Sandhi</b></a> | 
+<a href="/SKT/DICO/reader.en.html"><b>Reader</b></a> | 
+<a href="/SKT/DICO/corpus.en.html"><b>Corpus</b></a>
+</td></tr><tr><td>
+© Gérard Huet 1994-2026</td></tr></table></td><td>
+<a href="https://www.inria.fr/"><img src="/SKT/IMAGES/logo_inria.png" alt="Logo Inria" height="50"></a>
+<br></td></tr></table></div>
+</body>
+</html>
