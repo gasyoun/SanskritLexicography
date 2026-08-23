@@ -35,6 +35,10 @@ RussianTranslation/src/*.jsonl.tmp
 # Renou Step-0 pilot sample IS committed (small, 70 items, evidence for the review
 # sheet) — exception to the blanket src/*.jsonl rule above. See RENOU_HYPOTHESES.md.
 !RussianTranslation/src/renou_pilot_sample.jsonl
+# C2 phase 1 per-sense attestation window (H3168) — committed derived asset
+# (the deliverable itself), exception to the blanket src/*.jsonl rule above;
+# regenerate with ceiling_c2p1_window.py.
+!RussianTranslation/src/pwg_sense_attestation_window.jsonl
 # H4 citation-bias intermediate — regenerate with renou_h4_citation_bias.py; the
 # write-up (RENOU_H4_CITATION_BIAS.md) and figures are the committed deliverables.
 RussianTranslation/src/h4_citation_bias.json
