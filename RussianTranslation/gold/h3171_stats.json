@@ -1,0 +1,47 @@
+{
+ "generated_at": "2026-08-23T13:21:25.812354+00:00",
+ "n_rows": 110,
+ "heritage": {},
+ "dharmamitra": {},
+ "engine_vs_engine": {
+  "agree": 60,
+  "n": 110,
+  "pct": 54.5,
+  "wilson95": [
+   0.452,
+   0.635
+  ]
+ },
+ "heritage_vs_adjudication": {
+  "agree": 32,
+  "n": 93,
+  "pct": 34.4,
+  "wilson95": [
+   0.255,
+   0.445
+  ]
+ },
+ "dharmamitra_vs_adjudication": {
+  "agree": 49,
+  "n": 93,
+  "pct": 52.7,
+  "wilson95": [
+   0.426,
+   0.625
+  ]
+ },
+ "both_witnesses_vs_adjudication": {
+  "agree": 28,
+  "n": 93,
+  "pct": 30.1,
+  "wilson95": [
+   0.217,
+   0.401
+  ]
+ },
+ "coverage": {
+  "heritage_analyzed_of_gold": 93,
+  "dm_nonempty_of_gold": 93,
+  "n_adjudicated_correct": 93
+ }
+}
