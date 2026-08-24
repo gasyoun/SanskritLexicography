@@ -7,6 +7,9 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-08-24
+
+
 ### Fixed — 21-07-2026 (H1381, headline-figure propagation: 5.6M→5.7M, 50,953→52,498, 210→208)
 
 - **The known supersession finally propagated to the points of use** (Fable 5

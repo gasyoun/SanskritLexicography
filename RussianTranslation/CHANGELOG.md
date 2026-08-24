@@ -10,10 +10,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.92] - 2026-08-24
+
+
 - **H3291 — full DH-standards audit** (Fable tier, 22-08-2026). Released `pwg-tm-canonical-v1.0.0` pack verified byte-identical (GitHub==Zenodo==committed SHA256SUMS) and all four formats valid on the released bytes; H2684 wave-1 independent gate FAIL confirmed honest by re-adjudication of all 20 decisive rows; wave-2 gitignored payloads lost — receipt-only survival, deterministically regenerable ([H3299](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3299-Fable_SanskritLexicography_pwgtm-wave2-regenerate-regate_22.08.26.md)); DATA_LICENSE pack-scope enumeration added. Memo [FULL_DH_STANDARDS_AUDIT_PWG_RU_22-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FULL_DH_STANDARDS_AUDIT_PWG_RU_22-08-2026.md).
 - **H3228 — c1 live-gate NO-GO** (Grok 4.6 `grok-4.6`, 21-08-2026). Weekly Pro cap on c1 (resets 23-08 14:00 Europe/Moscow). ADAna/ABIra named skip; live ABIra key `_a_b_ira` not jsonl `_a_d_ara`. Packet [H3228_C1_LIVE_GATE_NOGO_21-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3228/H3228_C1_LIVE_GATE_NOGO_21-08-2026.md).
 - **H3217 — committed `src/pilot/deferred_monsters.jsonl`** (Grok 4.6 `grok-4.6`, MG 21-08-2026). Two 15-08-2026 cap-and-defer rows (`nominal:ADAna`, `nominal:ABIra`). Operator runbook no longer calls the ledger a local-only artifact.
-
 ## [1.144.82] - 2026-08-19
 
 ### Roadmap truth-pass: `freq_route.py` was listed as unbuilt (H3001, 19-08-2026)

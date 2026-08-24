@@ -12,6 +12,9 @@ against it.
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-08-24
+
+
 ### Fixed — canonical dataset recovered from the fast-forward's untracked-backup — 18-07-2026
 
 **The "data loss" of `266820-reverse-Gasuns.txt` (H733 audit, 11-07-2026) is resolved: the
