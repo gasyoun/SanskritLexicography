@@ -170,13 +170,16 @@ This is the real structure the composition `@DECIDE` should rule on: per-record 
 
 ## 5. Composition `@DECIDE` (parked — do not act until ruled)
 
+**RULED 24-08-2026 (M.G.): Option A — measurements-only standing policy.** Derived statistics (probe scores, coverage counts, BLI/WSD evals) remain permitted; no composed corpus, no republication, nothing enters PWG entries. Option B may be revisited only if written license clarification arrives via the parked [outreach draft](https://github.com/gasyoun/Uprava/blob/main/handoffs/OUTREACH_2026-08-24_dharmamitra_mitra-parallel-license-api.md).
+
+
 Filed in [GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) (23-08-2026). The fork:
 
 - **Option A — measurements-only standing policy.** We keep consuming mitra-parallel for derived statistics (probe scores, coverage counts, BLI/WSD evals) and never redistribute or compose. No share-alike exposure, no dependence on resolving §2.2.
 - **Option B — federated composed layer, CC BY-SA 4.0 out.** Compose a Tib/Ch cross-lingual lookup layer (or publish extracts), released under CC BY-SA 4.0 with full attribution + URI per §3(a), gated on the team clarifying the missing in-repo LICENSE (§2.2) — ideally in writing via the parked outreach draft.
 - **Option C — wait-and-see.** Defer everything until the outreach reply lands; keep only Option A activities meanwhile.
 
-Recommendation recorded in the GTD row: **A now, B only after written license clarification arrives**, i.e. effectively A-until-reply. Ruling is MG's alone.
+Recommendation recorded in the GTD row was **A now, B only after written license clarification arrives** — ruled as recommended on 24-08-2026.
 
 ## 6. Fence compliance
 
