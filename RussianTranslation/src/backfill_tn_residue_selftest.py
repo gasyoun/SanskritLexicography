@@ -14,12 +14,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import backfill_tn_residue as repair
-
-
-def write_jsonl(path, rows):
-    with open(path, 'w', encoding='utf-8', newline='\n') as fh:
-        for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False) + '\n')
+from rt_io import write_jsonl  # noqa: E402
 
 
 def raw(path, text):

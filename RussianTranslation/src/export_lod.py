@@ -47,6 +47,11 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+from rt_io import iter_jsonl  # noqa: E402
+
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 DEFAULT_CARDS = os.path.join(HERE, 'assembled_cards.jsonl')
 DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -144,21 +149,6 @@ def extract_ls(text):
 
 def cite_slug(raw):
     return iri_local(re.sub(r'\s+', '-', (raw or '').strip()))[:160]
-
-
-def iter_jsonl(path, limit=None):
-    if not path or not os.path.exists(path):
-        return
-    n = 0
-    with open(path, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            yield json.loads(line)
-            n += 1
-            if limit and n >= limit:
-                break
 
 
 def iter_cards(args):
