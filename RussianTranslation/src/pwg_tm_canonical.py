@@ -18,6 +18,19 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+# PR-A: the JSON/JSONL implementations live in rt_io; re-exported here so
+# every `import pwg_tm_canonical as C` consumer keeps its surface.
+from rt_io import (  # noqa: E402,F401
+    load_json,
+    read_jsonl,
+    save_json,
+    write_json,
+    write_jsonl,
+)
+
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SCHEMA_PATH = os.path.join(ROOT, 'schemas', 'pwg_tm_canonical.schema.json')
 DEFAULT_PUBLICATION = os.path.join(
@@ -73,30 +86,6 @@ def sha256_file(path):
 def sha256_json(obj):
     blob = json.dumps(obj, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
     return sha256_text(blob)
-
-
-def read_jsonl(path):
-    rows = []
-    with open(path, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                rows.append(json.loads(line))
-    return rows
-
-
-def write_json(path, obj):
-    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
-    with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
-        f.write('\n')
-
-
-def write_jsonl(path, rows):
-    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
-    with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
 def load_schema():

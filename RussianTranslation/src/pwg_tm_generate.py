@@ -34,6 +34,7 @@ import pwg_tm_canonical as C  # noqa: E402
 import pwg_tm_fragmentize as F  # noqa: E402
 import pwg_tm_gates as G  # noqa: E402
 import pwg_tm_wave2_policy as W2  # noqa: E402
+from rt_io import append_jsonl, save_json  # noqa: E402
 
 ROUTE_ID = 'grok-4.6'
 MODEL_ID = 'grok-4.6'
@@ -239,18 +240,7 @@ def load_checkpoint(path):
         return json.load(f)
 
 
-def save_json(path, obj):
-    C.write_json(path, obj)
-
-
 _FID_RE = re.compile(r'"fragment_id"\s*:\s*"([^"]+)"')
-
-
-def append_jsonl(path, rows):
-    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
-    with open(path, 'a', encoding='utf-8', newline='\n') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
 def load_seen_ids(out_dir):

@@ -30,6 +30,7 @@ sys.path.insert(0, HERE)
 # relative to HERE made this gate unrunnable — and the sheet unverifiable — in
 # any linked worktree, i.e. exactly the sanctioned workflow.
 from store_path import canonical_store, main_worktree_root          # noqa: E402
+from rt_io import read_jsonl                                        # noqa: E402
 
 STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
 _MAIN = main_worktree_root(HERE)
@@ -51,16 +52,6 @@ def sha256_of(path):
         for chunk in iter(lambda: fh.read(1 << 20), b""):
             h.update(chunk)
     return h.hexdigest()
-
-
-def read_jsonl(path):
-    out = []
-    with io.open(path, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if line:
-                out.append(json.loads(line))
-    return out
 
 
 def main():

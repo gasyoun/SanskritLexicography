@@ -32,6 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 from rv_org_root import find_github_root, vedaweb_dir  # noqa: E402
+from rt_io import write_jsonl  # noqa: E402
 
 GITHUB_ROOT = find_github_root(HERE)
 VEDAWEB_DIR = vedaweb_dir(HERE)
@@ -469,13 +470,6 @@ def run_validate():
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
-
-def write_jsonl(path, records):
-    with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        for rec in records:
-            f.write(json.dumps(rec, ensure_ascii=False))
-            f.write('\n')
-
 
 def run_build():
     doc = load_lemmatization()
