@@ -48,11 +48,22 @@ for p in (HERE, SRC):
 import data_root as dr                     # noqa: E402
 import lane_guard                          # noqa: E402
 import lane_spotcheck_tick                 # noqa: E402
+import profile_lane                        # noqa: E402
 
 SCHEMA = 'pwg.scheduler_tick.v1'
 
 # R5.1 (MG 02-08-2026): the profile fallback roster, in ruling order.
+# Overridable without code edits (MG 24-08-2026): $PWG_PROFILE_ROSTER=c1,c4 sets
+# the order outright; $PWG_PROFILE_SLOT=c1 rotates the active slot to the front.
 DEFAULT_ROSTER = ('c4', 'c1', 'c5', 'c6')
+
+
+def effective_roster(cfg=None, env=None):
+    """Config roster → profile_lane knob ($PWG_PROFILE_ROSTER / active slot) → R5.1 default."""
+    cfg = cfg or {}
+    return (cfg.get('roster')
+            or profile_lane.active_roster(env=env, default_roster=DEFAULT_ROSTER)
+            or DEFAULT_ROSTER)
 
 # §270: a reservation-ledger row with wall clock at/over this and NO api duration
 # is the hang signature (observed cluster 180 04x-180 23x ms at the 180 s kill).
@@ -276,7 +287,7 @@ def tick(cfg, runners):
         # 3. live gate with the R5.1 fallback roster
         profile = None
         gate_trail = []
-        for slot in cfg.get('roster') or DEFAULT_ROSTER:
+        for slot in effective_roster(cfg):
             go, detail = runners.gate_probe(slot)
             gate_trail.append({'profile': slot, 'go': go})
             if go:
