@@ -48,10 +48,21 @@ TM_CONTEXT = {
 
 # H2684 independent-gate serious-error class: unsafe short-gloss source reuse.
 # Inner text of {%...%} or a bare token, lowercased.
+# H3434 wave-3: R15 gate convicted bare function-word spans ({%an%} x7,
+# {%einen%} x2, …) re-entering via exact-source reuse. Every added token is a
+# pure German function word / article / pronoun slot admitted from the
+# tracked-corpus census (canonical.v1.jsonl source-side spans; see
+# wave3_receipt/denylist_census.json for the full measured table).
 SHORT_GLOSS_DENYLIST = frozenset({
     'jmd', 'jmdm', 'jmdn', 'jemand',
     'die', 'der', 'das', 'den', 'dem', 'des',
     'gewachsen',
+    'etwas', 'ein', 'einen', 'eine', 'sich', 'man', 'nicht',
+    'als', 'und', 'oder', 'wie',
+    'am', 'ans', 'im', 'in', 'zum', 'zur',
+    'an', 'auf', 'aus', 'bei', 'bis', 'durch', 'für', 'gegen',
+    'mit', 'nach', 'ohne', 'über', 'um', 'unter', 'von', 'vor',
+    'zu', 'vom', 'beim',
 })
 
 _INNER = re.compile(r'\{%\s*(.*?)\s*%\}', re.S)
@@ -126,6 +137,12 @@ def selftest():
     assert is_denied_short_gloss('{%Jmd%}')
     assert is_denied_short_gloss('{%die%}')
     assert is_denied_short_gloss('{%gewachsen%}')
+    # H3434 wave-3 additions: bare function-word spans stay unfilled
+    assert is_denied_short_gloss('{%an%}')
+    assert is_denied_short_gloss('{%einen%}')
+    assert is_denied_short_gloss('{%Etwas%}')
+    assert is_denied_short_gloss('{%sich%}')
+    assert is_denied_short_gloss('{%zu%}')
     assert not is_denied_short_gloss('{%Feuer, Gott des Feuers.%}')
     assert not allow_exact_source_reuse('{%Jmd%}', 'definition_gloss')
     assert allow_exact_source_reuse('{%Feuer.%}', 'definition_gloss')
