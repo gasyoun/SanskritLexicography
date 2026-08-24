@@ -137,7 +137,7 @@ language-states axis in this repo (ARCHITECTURE §3.4). Everything is `rv_renou_
 
 ## Step 6 — tests and wave-1a close-out
 
-**Touches:** new `tests/test_rv_spine.py`; updates `changelog.md`, `.ai_state.md`.
+**Touches:** new `tests/test_rv_spine.py`; updates `CHANGELOG.md`, `.ai_state.md`.
 **Depends on:** steps 1–5.
 
 Tests asserting every hard invariant above (see VERIFICATION §2). Then the standard close-out:
@@ -283,7 +283,7 @@ as SHARED / INTENTIONAL-DIVERGENCE / GAP before calling the step done —
 
 ## Step 16 — close-out
 
-**Touches:** `changelog.md`, `.ai_state.md`, `REUSE_MAP.md`, `RESULTS_LOG.md`.
+**Touches:** `CHANGELOG.md`, `.ai_state.md`, `REUSE_MAP.md`, `RESULTS_LOG.md`.
 
 Run the full existing test suite plus the new tests; `lang_parity_check.py` must pass. Persist
 every results table produced (coverage, divergence-class distribution, per-language precision)

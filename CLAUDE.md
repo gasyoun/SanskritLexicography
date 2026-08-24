@@ -143,7 +143,7 @@ editorial/cross-reference ones translate to Russian, both decided 10-07-2026):
 
 - Markdown is the primary authored format (roadmap, changelog, lectures, the
   `mw_ru` docs). Keep it lint-clean and link-check-clean (see CI above).
-- [`changelog.md`](changelog.md) uses dated maintenance snapshots; keep upcoming
+- [`CHANGELOG.md`](CHANGELOG.md) uses dated maintenance snapshots; keep upcoming
   work under `[Unreleased]` until it gets a dated entry.
 - [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) frames the research direction
   (evidence-graded lexicography, csl-atlas review, paper pipeline P1–P6) and is

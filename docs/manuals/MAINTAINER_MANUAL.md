@@ -221,7 +221,7 @@ Concurrent sessions (Claude *and* Codex) have collided in this exact tree before
   `check-merge-conflict`, plus the local
   `russian-translation-review-changelog` guard
   (`review_changelog_guard.py --staged`).
-- **Releases:** promote [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md)
+- **Releases:** promote [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md)
   `[Unreleased]` → `[X.Y.Z] - DATE`, annotated tag `vX.Y.Z`, `gh release create`.
   Release cadence follows the changelog's own rule: keep upcoming work under `[Unreleased]`, and **cut a new version every time the changelog is updated** — agent-cut releases are the norm (v1.20.0/v1.21.0 both agent-cut 18-07-2026). The old “never tag unprompted” stance is retired (see HANDOFF.md).
 
@@ -251,7 +251,7 @@ material.
 
 ## 9. Where to look when you're lost
 
-- **"What changed"** → [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md)
+- **"What changed"** → [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md)
   + the closest `.ai_state.md`.
 - **"Did someone already build this?"** → org
   [SHARED_CODE.md](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md),

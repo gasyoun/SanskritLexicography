@@ -46,7 +46,7 @@ Conventions to keep when touching data:
   that isn't in this repo fails CI link-check. Note it as external instead.
 - **Run a link check** before opening the PR (CI runs a Markdown link-check
   job too); fix any broken relative link.
-- Add a `changelog.md` `[Unreleased]` entry for anything notable.
+- Add a `CHANGELOG.md` `[Unreleased]` entry for anything notable.
 
 ## Hygiene
 

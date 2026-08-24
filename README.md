@@ -51,7 +51,7 @@ Where to read what.
 - [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md) — this file: overview and entry points.
 - [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) — research direction, publication plan, FAIR/standards gaps.
 - [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md) — capability inventory (what exists across the ecosystem, with stable IDs).
-- [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md) — what changed, by dated snapshot.
+- [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md) — what changed, by dated snapshot.
 
 **Manuals (by audience)** — deep, standalone guides in
 [docs/manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals)
