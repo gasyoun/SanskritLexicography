@@ -5,9 +5,14 @@ Runs the repository's own D-K two-phase protocol (`max_account_orchestrator.live
 at >= v1.9.17 (natural, schema-carrying, load-representative prompt) against the exact
 generation model.
 
-    python src/pilot/h963_c4_gate0_probe.py                 # c4 (unchanged default)
+    python src/pilot/h963_c4_gate0_probe.py                 # default: $PWG_PROFILE_SLOT / .env, fallback c4
     python src/pilot/h963_c4_gate0_probe.py --account c5
     python src/pilot/h963_c4_gate0_probe.py --account c5 --config-dir <path>
+
+The default account resolves through `profile_lane` (MG 24-08-2026): the real
+environment wins, then RussianTranslation/.env, and only bare invocation with
+nothing configured falls back to the historical c4. An explicit --account
+always wins over every config source.
 
 PROFILE SCOPE (25-07-2026)
 --------------------------
@@ -86,6 +91,7 @@ from headless_worker import claude_argv_prefix  # noqa: E402
 # ledger reserves each call BEFORE it is issued and raises CallLimitReached instead, which is
 # exactly the discipline a one-no-reroll-attempt gate wants.
 from call_reservation import CallLimitReached, CallReservationLedger  # noqa: E402
+import profile_lane  # noqa: E402  - one-knob active-slot resolver (.env / $PWG_PROFILE_SLOT)
 
 
 def resolve_claude_bin():
@@ -380,8 +386,15 @@ def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS,
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="H963 Gate-0 single-profile D-K health attempt")
-    ap.add_argument("--account", default=ACCOUNT,
-                    help="profile slot to gate (default %s)" % ACCOUNT)
+    # MG 24-08-2026: the DEFAULT account resolves through the one-knob profile
+    # resolver ($PWG_PROFILE_SLOT / RussianTranslation/.env) and only falls back
+    # to the historical c4 when nothing is configured. ACCOUNT itself stays the
+    # literal 'c4' — it is also the historical-campaign identity compared below,
+    # so an env-selected lane still gets its own per-account paths.
+    default_account = profile_lane.active_profile() or ACCOUNT
+    ap.add_argument("--account", default=default_account,
+                    help="profile slot to gate (default: $PWG_PROFILE_SLOT or .env, fallback %s)"
+                         % ACCOUNT)
     ap.add_argument("--config-dir", default=None,
                     help="that profile's CLAUDE_CONFIG_DIR (default: derived from --account)")
     ap.add_argument("--evidence-dir", default=None,
