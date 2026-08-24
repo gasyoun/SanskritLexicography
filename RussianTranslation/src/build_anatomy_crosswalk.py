@@ -20,6 +20,11 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+from rt_io import load_json  # noqa: E402
+
 CSL_ATLAS_PARSE_RULES = os.path.join(HERE, '..', '..', '..', 'csl-atlas', 'data', 'parse-rules', 'pwg.json')
 PORTRAIT_SCHEMA = os.path.join(HERE, '..', 'schemas', 'pwg_ru_lexicographic_portrait.schema.json')
 
@@ -81,11 +86,6 @@ INLINE_MARKERS = {
     '{%...%}': 'German-vs-Latin gloss switch',
     '〉 (U+3009)': 'sense-closing glyph, folded into the div/sense-number stream (MARK regex in microstructure.py)',
 }
-
-
-def load_json(path):
-    with open(path, encoding='utf-8') as f:
-        return json.load(f)
 
 
 def build_matrix():

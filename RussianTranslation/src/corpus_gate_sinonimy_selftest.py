@@ -24,17 +24,12 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import corpus_gate as cg  # noqa: E402
+from rt_io import write_jsonl  # noqa: E402
 
 
 def _reset_index():
     cg._SINONIMY_SYN_IDX = None
     cg._SINONIMY_SENSE_IDX = None
-
-
-def write_jsonl(path, rows):
-    with open(path, 'w', encoding='utf-8', newline='\n') as fh:
-        for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
 def test_self_exclusion_and_dedup():
