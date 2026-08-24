@@ -1,0 +1,1152 @@
+{
+ "input_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\input",
+ "lang": "ru",
+ "tm_sidecar": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\translation_memory.ru.json",
+ "tm_entries_loaded": 1,
+ "cards": 212,
+ "lanes": {
+  "_cards_with_en_source_words": 143,
+  "E_prose": 205,
+  "C_short_residue": 7
+ },
+ "residue_len_hist": {
+  "1": 2,
+  "2": 3,
+  "3": 2,
+  "4": 2,
+  "5": 9,
+  "6": 5,
+  "7": 1,
+  "8": 5,
+  "12": 5,
+  "14": 2,
+  "16": 2,
+  "18": 1,
+  "19": 1,
+  "20": 4,
+  "22": 1,
+  "24": 2,
+  "25": 2,
+  "27": 1,
+  "29": 1,
+  "30": 1,
+  "34": 1,
+  "36": 1,
+  "37": 4,
+  "40": 1,
+  "43": 1,
+  "44": 1,
+  "45": 3,
+  "47": 1,
+  "48": 1,
+  "50": 1,
+  "53": 2,
+  "54": 1,
+  "55": 1,
+  "62": 2,
+  "64": 1,
+  "66": 1,
+  "70": 1,
+  "72": 4,
+  "74": 4,
+  "77": 2,
+  "80": 2,
+  "82": 2,
+  "87": 3,
+  "88": 2,
+  "89": 2,
+  "90": 1,
+  "94": 1,
+  "95": 2,
+  "97": 1,
+  "99": 2,
+  "100": 1,
+  "102": 3,
+  "105": 2,
+  "106": 2,
+  "116": 1,
+  "119": 2,
+  "125": 2,
+  "126": 1,
+  "127": 2,
+  "130": 1,
+  "136": 2,
+  "137": 1,
+  "140": 2,
+  "142": 1,
+  "144": 2,
+  "150": 1,
+  "163": 1,
+  "165": 1,
+  "169": 2,
+  "176": 2,
+  "179": 2,
+  "182": 3,
+  "184": 1,
+  "186": 1,
+  "189": 2,
+  "195": 2,
+  "213": 2,
+  "223": 1,
+  "230": 2,
+  "231": 3,
+  "232": 1,
+  "243": 2,
+  "260": 1,
+  "262": 1,
+  "263": 2,
+  "272": 1,
+  "276": 1,
+  "289": 3,
+  "292": 1,
+  "305": 2,
+  "306": 2,
+  "308": 2,
+  "324": 2,
+  "330": 1,
+  "353": 1,
+  "356": 1,
+  "401": 1,
+  "429": 2,
+  "435": 1,
+  "448": 1,
+  "481": 2,
+  "515": 1,
+  "526": 1,
+  "532": 3,
+  "538": 2,
+  "542": 1,
+  "558": 1,
+  "614": 1,
+  "636": 2,
+  "652": 1,
+  "734": 1,
+  "769": 1,
+  "799": 1,
+  "832": 2,
+  "837": 1,
+  "890": 1,
+  "969": 2,
+  "1035": 1,
+  "1134": 1,
+  "1423": 1,
+  "1811": 1
+ },
+ "vocab_size": 5390,
+ "vocab_top": [
+  [
+   "v",
+   1328
+  ],
+  [
+   "a",
+   1046
+  ],
+  [
+   "unsp",
+   770
+  ],
+  [
+   "der",
+   610
+  ],
+  [
+   "of",
+   574
+  ],
+  [
+   "mit",
+   571
+  ],
+  [
+   "mw",
+   559
+  ],
+  [
+   "in",
+   556
+  ],
+  [
+   "subst",
+   520
+  ],
+  [
+   "n",
+   475
+  ],
+  [
+   "ved",
+   434
+  ],
+  [
+   "zu",
+   410
+  ],
+  [
+   "von",
+   398
+  ],
+  [
+   "die",
+   390
+  ],
+  [
+   "the",
+   381
+  ],
+  [
+   "to",
+   329
+  ],
+  [
+   "i",
+   316
+  ],
+  [
+   "b",
+   311
+  ],
+  [
+   "das",
+   301
+  ],
+  [
+   "m",
+   287
+  ],
+  [
+   "eines",
+   279
+  ],
+  [
+   "k",
+   274
+  ],
+  [
+   "gen",
+   267
+  ],
+  [
+   "f",
+   252
+  ],
+  [
+   "im",
+   244
+  ],
+  [
+   "hoernle",
+   241
+  ],
+  [
+   "or",
+   236
+  ],
+  [
+   "c",
+   234
+  ],
+  [
+   "so",
+   233
+  ],
+  [
+   "des",
+   211
+  ],
+  [
+   "p",
+   209
+  ],
+  [
+   "sich",
+   205
+  ],
+  [
+   "am",
+   204
+  ],
+  [
+   "d",
+   184
+  ],
+  [
+   "oder",
+   182
+  ],
+  [
+   "auch",
+   175
+  ],
+  [
+   "ein",
+   166
+  ],
+  [
+   "ii",
+   166
+  ],
+  [
+   "e",
+   164
+  ],
+  [
+   "with",
+   147
+  ],
+  [
+   "nach",
+   143
+  ],
+  [
+   "an",
+   143
+  ],
+  [
+   "adj",
+   138
+  ],
+  [
+   "sa",
+   136
+  ],
+  [
+   "eine",
+   129
+  ],
+  [
+   "akk",
+   123
+  ],
+  [
+   "den",
+   116
+  ],
+  [
+   "and",
+   116
+  ],
+  [
+   "als",
+   114
+  ],
+  [
+   "mfn",
+   114
+  ],
+  [
+   "r",
+   111
+  ],
+  [
+   "graßmann",
+   111
+  ],
+  [
+   "vi",
+   110
+  ],
+  [
+   "auf",
+   107
+  ],
+  [
+   "nicht",
+   99
+  ],
+  [
+   "einer",
+   98
+  ],
+  [
+   "dem",
+   97
+  ],
+  [
+   "sense",
+   96
+  ],
+  [
+   "geldner",
+   96
+  ],
+  [
+   "ist",
+   92
+  ],
+  [
+   "mbh",
+   92
+  ],
+  [
+   "für",
+   91
+  ],
+  [
+   "med",
+   91
+  ],
+  [
+   "ende",
+   89
+  ],
+  [
+   "vya",
+   86
+  ],
+  [
+   "h",
+   85
+  ],
+  [
+   "j",
+   82
+  ],
+  [
+   "renou",
+   80
+  ],
+  [
+   "bei",
+   77
+  ],
+  [
+   "instr",
+   72
+  ],
+  [
+   "one",
+   70
+  ],
+  [
+   "buddh",
+   70
+  ],
+  [
+   "lex",
+   70
+  ],
+  [
+   "by",
+   68
+  ],
+  [
+   "as",
+   68
+  ],
+  [
+   "g",
+   63
+  ],
+  [
+   "index",
+   61
+  ],
+  [
+   "zum",
+   61
+  ],
+  [
+   "ka",
+   60
+  ],
+  [
+   "aus",
+   59
+  ],
+  [
+   "t",
+   59
+  ],
+  [
+   "nur",
+   59
+  ],
+  [
+   "z",
+   59
+  ],
+  [
+   "type",
+   58
+  ],
+  [
+   "sam",
+   57
+  ],
+  [
+   "sp",
+   56
+  ],
+  [
+   "machen",
+   54
+  ],
+  [
+   "wie",
+   54
+  ],
+  [
+   "part",
+   53
+  ],
+  [
+   "seq",
+   52
+  ],
+  [
+   "bhsd",
+   52
+  ],
+  [
+   "soc",
+   51
+  ],
+  [
+   "at",
+   49
+  ],
+  [
+   "iii",
+   48
+  ],
+  [
+   "vorangehend",
+   48
+  ],
+  [
+   "etwas",
+   48
+  ],
+  [
+   "ling",
+   47
+  ],
+  [
+   "ta",
+   47
+  ],
+  [
+   "werden",
+   47
+  ],
+  [
+   "einem",
+   46
+  ],
+  [
+   "be",
+   45
+  ],
+  [
+   "pa",
+   45
+  ],
+  [
+   "ei",
+   44
+  ],
+  [
+   "l",
+   44
+  ],
+  [
+   "lesen",
+   44
+  ],
+  [
+   "ya",
+   43
+  ],
+  [
+   "durch",
+   43
+  ],
+  [
+   "salben",
+   43
+  ],
+  [
+   "tag",
+   43
+  ],
+  [
+   "bh",
+   42
+  ],
+  [
+   "is",
+   42
+  ],
+  [
+   "pr",
+   42
+  ],
+  [
+   "sein",
+   42
+  ],
+  [
+   "lok",
+   42
+  ],
+  [
+   "ak",
+   42
+  ],
+  [
+   "source",
+   42
+  ],
+  [
+   "rya",
+   41
+  ],
+  [
+   "from",
+   41
+  ],
+  [
+   "o",
+   41
+  ],
+  [
+   "asthma",
+   40
+  ],
+  [
+   "ra",
+   40
+  ],
+  [
+   "gattin",
+   40
+  ],
+  [
+   "praj",
+   40
+  ],
+  [
+   "vedic",
+   39
+  ],
+  [
+   "wird",
+   38
+  ],
+  [
+   "noch",
+   38
+  ],
+  [
+   "art",
+   38
+  ],
+  [
+   "ti",
+   38
+  ],
+  [
+   "wohl",
+   37
+  ],
+  [
+   "ed",
+   37
+  ],
+  [
+   "dat",
+   37
+  ],
+  [
+   "initiation",
+   36
+  ],
+  [
+   "huti",
+   36
+  ],
+  [
+   "w",
+   36
+  ],
+  [
+   "dh",
+   36
+  ],
+  [
+   "iv",
+   36
+  ],
+  [
+   "schmücken",
+   36
+  ],
+  [
+   "nähe",
+   36
+  ],
+  [
+   "for",
+   35
+  ],
+  [
+   "tsa",
+   35
+  ],
+  [
+   "man",
+   34
+  ],
+  [
+   "hillebrandt",
+   34
+  ],
+  [
+   "lassen",
+   34
+  ],
+  [
+   "jetzt",
+   34
+  ],
+  [
+   "zeit",
+   34
+  ],
+  [
+   "on",
+   33
+  ],
+  [
+   "ni",
+   33
+  ],
+  [
+   "hymns",
+   33
+  ],
+  [
+   "pl",
+   33
+  ],
+  [
+   "vom",
+   32
+  ],
+  [
+   "all",
+   32
+  ],
+  [
+   "indekl",
+   32
+  ],
+  [
+   "fehlerhaft",
+   31
+  ],
+  [
+   "windisch",
+   31
+  ],
+  [
+   "va",
+   31
+  ],
+  [
+   "erscheinen",
+   31
+  ],
+  [
+   "berühren",
+   31
+  ],
+  [
+   "flammen",
+   31
+  ],
+  [
+   "ma",
+   30
+  ],
+  [
+   "x",
+   30
+  ],
+  [
+   "ohne",
+   30
+  ],
+  [
+   "kath",
+   30
+  ],
+  [
+   "saghna",
+   30
+  ],
+  [
+   "jmd",
+   30
+  ],
+  [
+   "pw",
+   30
+  ],
+  [
+   "grunde",
+   30
+  ],
+  [
+   "mvu",
+   30
+  ],
+  [
+   "ross",
+   30
+  ],
+  [
+   "zur",
+   29
+  ],
+  [
+   "sircar",
+   29
+  ],
+  [
+   "beim",
+   29
+  ],
+  [
+   "jemand",
+   29
+  ],
+  [
+   "used",
+   28
+  ],
+  [
+   "rivelex",
+   28
+  ],
+  [
+   "mannes",
+   28
+  ],
+  [
+   "um",
+   28
+  ],
+  [
+   "bhr",
+   28
+  ],
+  [
+   "av",
+   28
+  ],
+  [
+   "up",
+   28
+  ],
+  [
+   "unter",
+   28
+  ],
+  [
+   "numbered",
+   28
+  ],
+  [
+   "ergänzung",
+   28
+  ],
+  [
+   "nun",
+   28
+  ],
+  [
+   "y",
+   27
+  ],
+  [
+   "meyer",
+   27
+  ],
+  [
+   "kaus",
+   27
+  ],
+  [
+   "wesen",
+   27
+  ],
+  [
+   "sijns",
+   26
+  ],
+  [
+   "teacher",
+   26
+  ],
+  [
+   "bha",
+   26
+  ],
+  [
+   "number",
+   26
+  ],
+  [
+   "touch",
+   26
+  ],
+  [
+   "bedeutung",
+   25
+  ],
+  [
+   "la",
+   25
+  ],
+  [
+   "tak",
+   25
+  ],
+  [
+   "form",
+   25
+  ],
+  [
+   "jin",
+   25
+  ],
+  [
+   "zerbrechen",
+   25
+  ],
+  [
+   "leuchten",
+   25
+  ],
+  [
+   "hin",
+   25
+  ]
+ ],
+ "per_key": {
+  "AcArya": "E_prose",
+  "Ahuti": "E_prose",
+  "Akfti": "E_prose",
+  "Bakza": "E_prose",
+  "Bezaja": "E_prose",
+  "BrU": "E_prose",
+  "SoDana": "E_prose",
+  "Srama": "E_prose",
+  "SudDi": "E_prose",
+  "SvAsa": "E_prose",
+  "_a_b_ira": "E_prose",
+  "_a_d_ana": "E_prose",
+  "_ac_arya": "E_prose",
+  "_ahuti": "E_prose",
+  "_akfti": "E_prose",
+  "_ba_yj": "E_prose",
+  "_badramusta": "E_prose",
+  "_bakza": "E_prose",
+  "_bezaja": "E_prose",
+  "_br_u": "E_prose",
+  "_dva_ms": "E_prose",
+  "_odbilya": "E_prose",
+  "_s_a": "E_prose",
+  "_s_aluqa": "E_prose",
+  "_so_dana": "E_prose",
+  "_srama": "E_prose",
+  "_sud_di": "E_prose",
+  "_sv_asa": "E_prose",
+  "_svetakar_ra": "E_prose",
+  "aDama": "E_prose",
+  "aDastAt": "E_prose",
+  "a_dama": "E_prose",
+  "a_dast_at": "E_prose",
+  "a_ngaja": "E_prose",
+  "a_smagar_baja": "E_prose",
+  "a_yj": "E_prose",
+  "ac": "E_prose",
+  "agnit_ir_ta": "C_short_residue",
+  "akza": "E_prose",
+  "amfta": "E_prose",
+  "anar_ta": "E_prose",
+  "apr_apta~000d~~h0_zz_pw": "E_prose",
+  "apr_apta~000d~~h0_zz_pwkvn": "E_prose",
+  "apr_apta~000d~~h0_zz_sch": "E_prose",
+  "apr_apta~~h0_zz_pw": "E_prose",
+  "apr_apta~~h0_zz_pwkvn": "E_prose",
+  "apr_apta~~h0_zz_sch": "E_prose",
+  "arvant~000d~~h0_zz_nws00": "E_prose",
+  "arvant~000d~~h0_zz_pw": "E_prose",
+  "arvant~~h0_zz_nws00": "E_prose",
+  "arvant~~h0_zz_pw": "E_prose",
+  "as_a_dya~000d~~h0_zz_nws00": "E_prose",
+  "as_a_dya~000d~~h0_zz_pw": "E_prose",
+  "as_a_dya~000d~~h0_zz_pwkvn": "E_prose",
+  "as_a_dya~000d~~h0_zz_sch": "E_prose",
+  "as_a_dya~~h0_zz_nws00": "E_prose",
+  "as_a_dya~~h0_zz_pw": "E_prose",
+  "as_a_dya~~h0_zz_pwkvn": "E_prose",
+  "as_a_dya~~h0_zz_sch": "E_prose",
+  "asa_mskfta~000d~~h0_zz_nws00": "E_prose",
+  "asa_mskfta~000d~~h0_zz_pw": "E_prose",
+  "asa_mskfta~~h0_zz_nws00": "E_prose",
+  "asa_mskfta~~h0_zz_pw": "E_prose",
+  "avy_ahata~000d~~h0_zz_nws00": "E_prose",
+  "avy_ahata~000d~~h0_zz_pw": "E_prose",
+  "avy_ahata~~h0_zz_nws00": "E_prose",
+  "avy_ahata~~h0_zz_pw": "E_prose",
+  "avyagra~000d~~h0_zz_pw": "E_prose",
+  "avyagra~~h0_zz_pw": "E_prose",
+  "b_ahlika~000d~~h0_zz_pw": "E_prose",
+  "b_ahlika~~h0_zz_pw": "E_prose",
+  "dIkzA": "E_prose",
+  "d_ikz_a": "E_prose",
+  "darBa": "E_prose",
+  "dar_ba": "E_prose",
+  "dar_imu_ka": "E_prose",
+  "divA": "E_prose",
+  "div_a": "E_prose",
+  "dq_canary_puregloss": "E_prose",
+  "dr_ava_ra": "E_prose",
+  "durg_a~000d~~h0_zz_nws00": "E_prose",
+  "durg_a~000d~~h0_zz_sch": "E_prose",
+  "durg_a~~h0_zz_nws00": "E_prose",
+  "durg_a~~h0_zz_sch": "E_prose",
+  "ezwa": "E_prose",
+  "ftekarmam": "E_prose",
+  "g_ora": "E_prose",
+  "hanta": "E_prose",
+  "harinma_ri": "E_prose",
+  "idAnIm": "E_prose",
+  "id_an_im": "E_prose",
+  "jAtavedas": "E_prose",
+  "j_atavedas": "E_prose",
+  "j_u": "E_prose",
+  "jalp": "E_prose",
+  "jval": "E_prose",
+  "k_a_s": "E_prose",
+  "k_alika": "E_prose",
+  "k_antap_az_a_ra~000d~~h0_zz_nws00": "E_prose",
+  "k_antap_az_a_ra~000d~~h0_zz_pw": "C_short_residue",
+  "k_antap_az_a_ra~~h0_zz_nws00": "E_prose",
+  "k_antap_az_a_ra~~h0_zz_pw": "C_short_residue",
+  "k_ontika": "E_prose",
+  "kajjalik_a~000d~~h0_zz_pw": "E_prose",
+  "kajjalik_a~~h0_zz_pw": "E_prose",
+  "kakz_ivant": "E_prose",
+  "kilima": "E_prose",
+  "kr_urar_avin": "C_short_residue",
+  "kramu": "E_prose",
+  "kranda": "E_prose",
+  "l_alay": "E_prose",
+  "las": "E_prose",
+  "lel_ay": "C_short_residue",
+  "lipikara": "E_prose",
+  "log_akza": "E_prose",
+  "loman": "E_prose",
+  "mah_ahigan_d_a": "E_prose",
+  "maraRa": "E_prose",
+  "mara_ra": "E_prose",
+  "martya": "E_prose",
+  "ml_a": "E_prose",
+  "nUnam": "E_prose",
+  "n_i_dra": "E_prose",
+  "n_unam": "E_prose",
+  "nakzatra": "E_prose",
+  "nanda": "E_prose",
+  "nizkula": "E_prose",
+  "p_avana": "E_prose",
+  "par_rin": "E_prose",
+  "pari_b_ava": "E_prose",
+  "patnI": "E_prose",
+  "patn_i": "E_prose",
+  "pf_tak": "E_prose",
+  "pippal_ayana": "E_prose",
+  "prAtar": "E_prose",
+  "pr_atar": "E_prose",
+  "prada": "E_prose",
+  "prajYA": "E_prose",
+  "praj_y_a": "E_prose",
+  "prajas": "E_prose",
+  "pramanyu": "E_prose",
+  "prasU": "E_prose",
+  "pras_u": "E_prose",
+  "purast_at": "E_prose",
+  "rAtra": "E_prose",
+  "rAzwra": "E_prose",
+  "r_atra": "E_prose",
+  "r_azwra": "E_prose",
+  "ras": "E_prose",
+  "retas": "E_prose",
+  "roza": "E_prose",
+  "sAhasra": "E_prose",
+  "s_ahasra": "E_prose",
+  "s_aptamika": "E_prose",
+  "s_ari": "C_short_residue",
+  "saKi": "E_prose",
+  "sa_b_ajay": "E_prose",
+  "sa_ki": "E_prose",
+  "sa_mgopana": "E_prose",
+  "sa_msargin": "E_prose",
+  "sadana": "E_prose",
+  "sakft": "E_prose",
+  "samIpa": "E_prose",
+  "sam_ipa": "E_prose",
+  "sara_g_a": "E_prose",
+  "sarvatra": "E_prose",
+  "somasa_ms_t_a": "E_prose",
+  "spfS": "E_prose",
+  "spf_s": "E_prose",
+  "sur_arha": "E_prose",
+  "sva_b_ava": "E_prose",
+  "t_araja": "E_prose",
+  "tip": "E_prose",
+  "tubar_i": "C_short_residue",
+  "udame_ga": "E_prose",
+  "upakalpa": "E_prose",
+  "vAhana": "E_prose",
+  "v_ahana": "E_prose",
+  "v_ajin": "E_prose",
+  "v_avad_uka": "E_prose",
+  "va_yc": "E_prose",
+  "vadana": "E_prose",
+  "vazawk_ara": "E_prose",
+  "vel_a": "E_prose",
+  "vfd_damanu": "E_prose",
+  "vfzwi": "E_prose",
+  "vi_bindu": "E_prose",
+  "vi_d": "E_prose",
+  "vi_sa": "E_prose",
+  "vi_svaha": "E_prose",
+  "vi_svasfj": "E_prose",
+  "vicitra": "E_prose",
+  "vinASa": "E_prose",
+  "vin_a_sa": "E_prose",
+  "vinikfntana": "E_prose",
+  "vraRa": "E_prose",
+  "vra_ra": "E_prose",
+  "vya_sana": "E_prose",
+  "vyatyaya": "E_prose",
+  "vyavasTA": "E_prose",
+  "vyavas_t_a": "E_prose",
+  "yOvana": "E_prose",
+  "y_ovana": "E_prose",
+  "ya_tepsita": "E_prose",
+  "yajus": "E_prose",
+  "yamadruma": "E_prose",
+  "yatna": "E_prose",
+  "zazwivrata": "E_prose",
+  "zoqaSa": "E_prose",
+  "zoqaSan": "E_prose",
+  "zoqa_sa": "E_prose",
+  "zoqa_san": "E_prose"
+ }
+}
