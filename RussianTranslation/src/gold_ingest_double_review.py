@@ -14,6 +14,11 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+import rt_io  # noqa: E402
+
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BASE_LABELS = os.path.join(ROOT, 'gold', 'human_gold_labels.jsonl')
 REQUIRED_SECOND = (
@@ -39,14 +44,10 @@ def read_csv(path):
 
 
 def read_jsonl(path):
-    rows = []
+    """Tolerant reader: missing file yields [] (rt_io's parser underneath)."""
     if not os.path.exists(path):
-        return rows
-    with open(path, encoding='utf-8') as f:
-        for line in f:
-            if line.strip():
-                rows.append(json.loads(line))
-    return rows
+        return []
+    return rt_io.read_jsonl(path)
 
 
 def second_row(row, line_no):
