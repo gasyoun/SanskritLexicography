@@ -155,7 +155,7 @@ map is BOOK_PLAN §2/§3.
 | [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) | draft proposal to the Brill guideline checklist (ToC + per-chapter summaries, comparables, counts, rights disclosure) | remaining `[VERIFY]` items are the author's: final title, submission date, editors-in-post check, word count at manuscript stage |
 | [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) | chapter → article → venue → publisher → copyright matrix | all 15 sources unpublished ⇒ copyright 100% author-held today; **no chapter rights-blocked** |
 | [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) | the 37-work manuals library read against the plan (grounding map, gap analysis, positioning) | no cuts; mandatory reframes on the pre-merge Ch. 2/3/12/13/14 (BOOK_PLAN §11 wording — the crosswalk's own §0 says "2, 3, 7, 14"; the two lists never got reconciled, resolve against BOOK_PLAN §11 + the renumbered §3); the Ch. 7 keep-vs-merge fork it parked was **ruled 10-07-2026** (merged into Ch. 6); top referee risk = corpus-absence induction |
-| [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) | folder-local changelog | every book-folder change logs here under `[Unreleased]`, *in addition to* the repo-root [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md) |
+| [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) | folder-local changelog | every book-folder change logs here under `[Unreleased]`, *in addition to* the repo-root [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md) |
 | [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) | converted book-form chapters | all 14 chapter files exist as of 20-08-2026 (`ch01`–`ch14`; H430 samples 09-07 + the H846–H866 conversion wave 13-07; ch02 also gained §6 'The corpus as a bounded witness', H1078/PR #505). Remaining glue = Introduction-argument (A61: never a numbered chapter) + part-bridges (five files present) + conclusion |
 
 The book is a **gluing job, not a drafting job**: the 15 approved articles
@@ -349,7 +349,7 @@ To deploy the research site when a human green-lights it:
    `findings/`, `episteme/`, `md/`), commit with a `deploy:` message, push.
 4. Verify `https://gasyoun.github.io/SanskritLexicography/research/` serves,
    and log the deploy in the repo
-   [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md).
+   [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md).
 
 A manual-writing or documentation session **never** performs steps 3–4
 (H608 hard constraint: document publishing actions, don't take them).
@@ -365,7 +365,7 @@ Finishing any unit of publication work means updating the registries in the
 |---|---|
 | Paper status/readiness change, new paper, new review memo | [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) row (via [/articles-update](https://github.com/gasyoun/claude-config/blob/main/commands/articles-update.md)) + dashboard regen (`python Uprava/tools/build_dashboard_data.py`) |
 | Venue choice, byline confirmation, read-and-sign, DOI mint | [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@DECIDE`/`@DO` row |
-| Book-folder change | folder [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) `[Unreleased]` + repo [changelog.md](https://github.com/gasyoun/SanskritLexicography/blob/master/changelog.md) |
+| Book-folder change | folder [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) `[Unreleased]` + repo [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md) |
 | Repo changelog edited | the [/cut-release](https://github.com/gasyoun/claude-config/blob/main/commands/cut-release.md) follow-through when a release is due (entries park under `[Unreleased]` until then) |
 | Multi-session work spun off | `Uprava/handoffs/` H### file + registry row (mint via [/handoff-mint](https://github.com/gasyoun/claude-config/blob/main/commands/handoff-mint.md)) |
 | Measured gotcha / derived dataset / reusable classification | the hub sweep — [/artifact-propagate](https://github.com/gasyoun/claude-config/blob/main/commands/artifact-propagate.md) or [/findings-append](https://github.com/gasyoun/claude-config/blob/main/commands/findings-append.md) |

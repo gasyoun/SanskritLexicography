@@ -17,7 +17,7 @@ contract it tightens.
 | source base | `f96361ca` — the same commit the H858/#729 work branched from, so the two ran in parallel all day |
 | carried over | 2 unmerged `ai-wip:` commits + ~3 935 uncommitted insertions across 25 files + 5 new modules |
 | new modules | `call_reservation.py`, `promotion_journal.py`, `coordinator_hardening_selftest.py`, + 2 selftests |
-| conflicts on rebase | **4** — `h963_c4_gate0_probe.py`, `window_selftest.py`, `PIPELINE_HISTORY.md`, `changelog.md` |
+| conflicts on rebase | **4** — `h963_c4_gate0_probe.py`, `window_selftest.py`, `PIPELINE_HISTORY.md`, `CHANGELOG.md` |
 | applied cleanly | 23 files, including `headless_worker.py` and `promote_final_cards.py` — the H858 work is untouched |
 
 ### How the four conflicts were resolved
@@ -35,7 +35,7 @@ contract it tightens.
 - **`window_selftest.py`** — both sides added tests. Kept master's file and re-inserted
   Codex's two (`test_threaded_gate_exception_requeues_full_window`,
   `test_quarantine_replace_failure_preserves_previous_destination`).
-- **`changelog.md`, `PIPELINE_HISTORY.md`** — append-at-top docs; both sides' entries kept.
+- **`CHANGELOG.md`, `PIPELINE_HISTORY.md`** — append-at-top docs; both sides' entries kept.
 
 ## Defects found in the branch as delivered
 
