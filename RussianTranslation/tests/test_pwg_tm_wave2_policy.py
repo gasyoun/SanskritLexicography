@@ -31,6 +31,10 @@ def test_source_lexicon_skips_denied_short_gloss(tmp_path):
 
 
 def test_apply_targets_does_not_reuse_jmd():
+    """H3299: a poisoned lexicon entry for {%Jmd%} must never leak the verb
+    phrase — since the placeholder-fill fix the fragment renders as
+    placeholder-style RU (deterministic rule shadows the lexicon), it does
+    not stay unfilled any more."""
     frags = [{
         'fragment_id': 'g1',
         'fragment_class': 'definition_gloss',
@@ -39,8 +43,9 @@ def test_apply_targets_does_not_reuse_jmd():
     }]
     lexicon = {Gen.source_lexicon_key('definition_gloss', '{%Jmd%}'): '{%поручать кому-л.%}'}
     filled, stats = Gen.apply_targets(frags, {}, {}, lexicon)
-    assert filled[0].get('target_string') in (None, '')
-    assert (filled[0].get('generation') or {}).get('origin') == 'unfilled'
+    assert filled[0].get('target_string') == '{%кто-л.%}'
+    assert (filled[0].get('generation') or {}).get('origin') == 'placeholder'
+    assert '{%поручать' not in str(filled[0].get('target_string'))
     assert stats['source_reuse'] == 0
 
 
