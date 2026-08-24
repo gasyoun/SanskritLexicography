@@ -120,6 +120,10 @@ def slp1_to_ascii(s):
 # to an unmarked LLM-verdict.
 SOURCES_PRESENT = set()
 
+# Consolidated lazy-cache for the five auxiliary indexes (PR-B). The sinonimy
+# pair stays on its own module globals because its selftest resets them by name.
+_INDEX_CACHE = {}
+
 
 def evidence_status():
     """'ok' if >=1 independent correctness authority (INDEP) is loaded; else
@@ -130,24 +134,41 @@ def evidence_status():
     return 'ok' if any(c in SOURCES_PRESENT for c in INDEP) else 'evidence_unavailable'
 
 
-def load_index():
-    idx = defaultdict(lambda: defaultdict(list))
-    SOURCES_PRESENT.clear()
-    for code in INDEP + [REF]:
-        path = os.path.join(HERE, code + '.jsonl')
-        if not os.path.exists(path):
-            continue
+def _iter_source_rows(codes, track_present=False):
+    """Yield (code, parsed_row) for every row of every present source jsonl."""
+    for code in codes:
+        yield from _iter_jsonl_path(os.path.join(HERE, code + '.jsonl'), code=code,
+                                    track_present=track_present)
+
+
+def _iter_jsonl_path(path, code=None, track_present=False):
+    """Yield (code, parsed_row) for a single UTF-8 JSONL path; nothing if absent."""
+    if not os.path.exists(path):
+        return
+    if track_present:
         SOURCES_PRESENT.add(code)
-        with open(path, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                e = json.loads(line)
-                k = form_key(e.get('slp1', ''))
-                if k:
-                    idx[k][code].append(e.get('gloss', ''))
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                yield code, json.loads(line)
+
+
+def _load_gloss_index(codes, track_present=False):
+    """slp1-keyed {key: {code: [gloss, ...]}} index shared by INDEP/REF and
+    the SPECIALIST glossaries (identical shape, different code lists)."""
+    idx = defaultdict(lambda: defaultdict(list))
+    for code, e in _iter_source_rows(codes, track_present=track_present):
+        k = form_key(e.get('slp1', ''))
+        if k:
+            idx[k][code].append(e.get('gloss', ''))
     return idx
+
+
+def load_index():
+    SOURCES_PRESENT.clear()
+    return _load_gloss_index(INDEP + [REF], track_present=True)
+
 
 def lookup(idx, key1, key2=None):
     hit = idx.get(form_key(key1))
@@ -160,27 +181,10 @@ def lookup(idx, key1, key2=None):
     return indep, kow
 
 # ---- specialist name-glossaries (corroborating evidence, not INDEP) ---------
-_SPECIALIST_IDX = None
 def load_specialist_index():
-    global _SPECIALIST_IDX
-    if _SPECIALIST_IDX is not None:
-        return _SPECIALIST_IDX
-    idx = defaultdict(lambda: defaultdict(list))
-    for code in SPECIALIST:
-        path = os.path.join(HERE, code + '.jsonl')
-        if not os.path.exists(path):
-            continue
-        with open(path, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                e = json.loads(line)
-                k = form_key(e.get('slp1', ''))
-                if k:
-                    idx[k][code].append(e.get('gloss', ''))
-    _SPECIALIST_IDX = idx
-    return idx
+    if 'specialist' not in _INDEX_CACHE:
+        _INDEX_CACHE['specialist'] = _load_gloss_index(SPECIALIST)
+    return _INDEX_CACHE['specialist']
 
 def lookup_specialist(key1, key2=None):
     sidx = load_specialist_index()
@@ -192,31 +196,20 @@ def lookup_specialist(key1, key2=None):
             for c in SPECIALIST for g in hit.get(c, [])[:MAX_GLOSS_PER_SOURCE]]
 
 # ---- Hindi sense index (soft third-language signal, separate from INDEP) ------
-_SENSE_IDX = None
 def load_sense_index():
     """apte_hi / vedic_rituals_hi indexed under BOTH the faithful citation key and
     the bare stem (build_indic.to_stem) — apte-hi prints nominatives (agniH), PWG
     keys on stems (agni)."""
-    global _SENSE_IDX
-    if _SENSE_IDX is not None:
-        return _SENSE_IDX
+    if 'sense' in _INDEX_CACHE:
+        return _INDEX_CACHE['sense']
     idx = defaultdict(lambda: defaultdict(list))
-    for code in SENSE:
-        path = os.path.join(HERE, code + '.jsonl')
-        if not os.path.exists(path):
-            continue
-        with open(path, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                e = json.loads(line)
-                rec = {'pos': e.get('pos', ''), 'gloss': e.get('gloss', ''),
-                       'dev': e.get('dev', ''), 'attribution': e.get('attribution', '')}
-                for k in {form_key(e.get('slp1', '')), form_key(e.get('stem', ''))}:
-                    if k:
-                        idx[k][code].append(rec)
-    _SENSE_IDX = idx
+    for code, e in _iter_source_rows(SENSE):
+        rec = {'pos': e.get('pos', ''), 'gloss': e.get('gloss', ''),
+               'dev': e.get('dev', ''), 'attribution': e.get('attribution', '')}
+        for k in {form_key(e.get('slp1', '')), form_key(e.get('stem', ''))}:
+            if k:
+                idx[k][code].append(rec)
+    _INDEX_CACHE['sense'] = idx
     return idx
 
 def lookup_sense(key1, key2=None):
@@ -233,24 +226,15 @@ def lookup_sense(key1, key2=None):
 # Non-Cologne indic-dict koshas (Amarakosha etc.), built by build_kosha.py. They
 # fill `skd_vcp_synonyms`: Sanskrit synonyms that corroborate WHICH sense a PWG
 # headword carries. NEVER Russian, never a correctness verdict (like SKD/VCP).
-_KOSHA_IDX = None
 def load_kosha_index():
-    global _KOSHA_IDX
-    if _KOSHA_IDX is not None:
-        return _KOSHA_IDX
+    if 'kosha' in _INDEX_CACHE:
+        return _INDEX_CACHE['kosha']
     idx = defaultdict(set)
-    path = os.path.join(HERE, 'kosha_syn.jsonl')
-    if os.path.exists(path):
-        with open(path, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                e = json.loads(line)
-                k = form_key(e.get('slp1', ''))
-                if k:
-                    idx[k].update(e.get('syn_dev', []))
-    _KOSHA_IDX = idx
+    for _code, e in _iter_source_rows(['kosha_syn']):
+        k = form_key(e.get('slp1', ''))
+        if k:
+            idx[k].update(e.get('syn_dev', []))
+    _INDEX_CACHE['kosha'] = idx
     return idx
 
 def lookup_synonyms(key1, key2=None, limit=12):
@@ -259,24 +243,15 @@ def lookup_synonyms(key1, key2=None, limit=12):
     return sorted(syn)[:limit]
 
 # ---- Meulenbeld plant → Latin binomial (SNP) --------------------------------
-_PLANT_IDX = None
 def load_plant_index():
-    global _PLANT_IDX
-    if _PLANT_IDX is not None:
-        return _PLANT_IDX
+    if 'plant' in _INDEX_CACHE:
+        return _INDEX_CACHE['plant']
     idx = {}
-    path = os.path.join(HERE, 'meulenbeld_plants.jsonl')
-    if os.path.exists(path):
-        with open(path, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                e = json.loads(line)
-                for k in {form_key(e.get('slp1', '')), form_key(e.get('stem', ''))}:
-                    if k and e.get('binomials'):
-                        idx.setdefault(k, e['binomials'])
-    _PLANT_IDX = idx
+    for _code, e in _iter_source_rows(['meulenbeld_plants']):
+        for k in {form_key(e.get('slp1', '')), form_key(e.get('stem', ''))}:
+            if k and e.get('binomials'):
+                idx.setdefault(k, e['binomials'])
+    _INDEX_CACHE['plant'] = idx
     return idx
 
 def lookup_binomials(key1, key2=None):
@@ -310,38 +285,29 @@ def load_sinonimy_index():
         return _SINONIMY_SYN_IDX, _SINONIMY_SENSE_IDX
     syn_idx = defaultdict(set)
     sense_idx = defaultdict(list)
-    if not os.path.exists(_SINONIMY_PATH):
-        _SINONIMY_SYN_IDX = syn_idx
-        _SINONIMY_SENSE_IDX = sense_idx
-        return syn_idx, sense_idx
-    with open(_SINONIMY_PATH, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            e = json.loads(line)
-            row_type = e.get('type', '')
-            if row_type in ('synonym_group_lemma', 'synonym_group_gloss'):
-                members_raw = e.get('members', [])
-                # Normalize, dedup (preserve first-seen IAST form per SLP1 key)
-                seen = {}
-                members_norm = []
-                for m in members_raw:
-                    k = _sinonimy_key(m)
-                    if k and k not in seen:
-                        seen[k] = m
-                        members_norm.append((k, m))
-                # Reverse-index: each member ← all other members (self-exclude)
-                for i, (ki, _) in enumerate(members_norm):
-                    syn_idx[ki].update(m for j, (_, m) in enumerate(members_norm) if j != i)
-            elif row_type == 'sense_inventory':
-                lemma = e.get('lemma', '')
-                if lemma:
-                    k = _sinonimy_key(lemma)
-                    if k:
-                        senses = e.get('senses', [])
-                        if senses:
-                            sense_idx[k].extend(senses)
+    for _code, e in _iter_jsonl_path(_SINONIMY_PATH):
+        row_type = e.get('type', '')
+        if row_type in ('synonym_group_lemma', 'synonym_group_gloss'):
+            members_raw = e.get('members', [])
+            # Normalize, dedup (preserve first-seen IAST form per SLP1 key)
+            seen = {}
+            members_norm = []
+            for m in members_raw:
+                k = _sinonimy_key(m)
+                if k and k not in seen:
+                    seen[k] = m
+                    members_norm.append((k, m))
+            # Reverse-index: each member ← all other members (self-exclude)
+            for i, (ki, _) in enumerate(members_norm):
+                syn_idx[ki].update(m for j, (_, m) in enumerate(members_norm) if j != i)
+        elif row_type == 'sense_inventory':
+            lemma = e.get('lemma', '')
+            if lemma:
+                k = _sinonimy_key(lemma)
+                if k:
+                    senses = e.get('senses', [])
+                    if senses:
+                        sense_idx[k].extend(senses)
     _SINONIMY_SYN_IDX = syn_idx
     _SINONIMY_SENSE_IDX = sense_idx
     return syn_idx, sense_idx
@@ -598,29 +564,25 @@ def cmd_card(idx, args):
 
 COVERAGE_SEED = 20260615   # fixed seed → reproducible random samples
 
-def cmd_coverage(idx, args):
-    n = int(args[0]) if args else None
-    rng = random.Random(COVERAGE_SEED)
-    all_keys = [k for k in read_keys(None)]
+def _select_sample(rng, n):
+    """(keys, label) — RANDOM sample when n < total: PWG keys are SLP1-sorted
+    and the a- section is over-covered (esp. KOW), so a first-N slice badly
+    overstates coverage. Shared by cmd_coverage / cmd_tune; consumes exactly
+    one rng draw so both commands stay reproducible under COVERAGE_SEED."""
+    all_keys = list(read_keys(None))
     total = len(all_keys)
-    # RANDOM sample, not first-N: PWG keys are SLP1-sorted and the a- section is
-    # over-covered (esp. KOW), so a first-N slice badly overstates coverage.
     if n and n < total:
         keys = rng.sample(all_keys, n)
         label = 'random sample %d / %d (seed %d)' % (n, total, COVERAGE_SEED)
     else:
         keys = all_keys
         label = 'full %d' % total
-    # KOW (Kossovich) is alphabetically INCOMPLETE — its headwords start with
-    # only a handful of SLP1 letters (WIL-seeded, scattered). Coverage averaged
-    # over the whole alphabet dilutes its real density: outside its letter-zone
-    # KOW is absent by construction, not because a headword is missing. So report
-    # KOW both overall and WITHIN its attested zone.
-    kow_zone = set(k[0] for k, h in idx.items() if REF in h and k)
-    sidx = load_sense_index()
-    kidx = load_kosha_index()
-    pidx = load_plant_index()
-    sin_syn_idx, sin_sense_idx = load_sinonimy_index()
+    return keys, label
+
+
+def _coverage_counts(keys, idx, sidx, kidx, pidx, sin_syn_idx, sin_sense_idx,
+                     kow_zone):
+    """Per-signal hit counts over the sampled keys (pure computation)."""
     tot = per = kow_n = kow_zone_n = sense_n = syn_n = plant_n = 0
     sin_syn_n = sin_sense_n = 0
     persrc = defaultdict(int)
@@ -652,6 +614,29 @@ def cmd_coverage(idx, args):
             sin_syn_n += 1
         if fk in sin_sense_idx:
             sin_sense_n += 1
+    return {
+        'tot': tot, 'per': per, 'persrc': persrc,
+        'kow_n': kow_n, 'kow_zone_n': kow_zone_n,
+        'sense_n': sense_n, 'sensesrc': sensesrc,
+        'syn_n': syn_n, 'plant_n': plant_n,
+        'sin_syn_n': sin_syn_n, 'sin_sense_n': sin_sense_n,
+    }
+
+
+def cmd_coverage(idx, args):
+    n = int(args[0]) if args else None
+    rng = random.Random(COVERAGE_SEED)
+    keys, label = _select_sample(rng, n)
+    # KOW (Kossovich) is alphabetically INCOMPLETE — its headwords start with
+    # only a handful of SLP1 letters (WIL-seeded, scattered). Coverage averaged
+    # over the whole alphabet dilutes its real density: outside its letter-zone
+    # KOW is absent by construction, not because a headword is missing. So report
+    # KOW both overall and WITHIN its attested zone.
+    kow_zone = set(k[0] for k, h in idx.items() if REF in h and k)
+    counts = _coverage_counts(
+        keys, idx, load_sense_index(), load_kosha_index(), load_plant_index(),
+        *load_sinonimy_index(), kow_zone=kow_zone)
+    tot = counts['tot']
     # corpus signal: its own random sub-sample of the scanned keys (the corpus
     # query is the slow part, so it stays capped) — representative, not first-300.
     corpus_n = min(300, len(keys))
@@ -659,43 +644,36 @@ def cmd_coverage(idx, args):
     corp_hit = sum(1 for k in corp_keys if corpus_examples(k, 1))
     print('PWG headwords scanned: %d (%s)' % (tot, label))
     print('--- signal 1: correctness coverage (any independent dict) ---')
-    print('  covered: %d (%.1f%%)' % (per, 100.0 * per / tot))
+    print('  covered: %d (%.1f%%)' % (counts['per'], 100.0 * counts['per'] / tot))
     for c in INDEP:
-        print('    %-8s %6d (%.1f%%)' % (NAME[c], persrc[c], 100.0 * persrc[c] / tot))
+        print('    %-8s %6d (%.1f%%)' % (NAME[c], counts['persrc'][c], 100.0 * counts['persrc'][c] / tot))
     print('--- signal 2: reference coverage (KOW) ---')
-    print('  KOW over all PWG:   %d (%.1f%%)' % (kow_n, 100.0 * kow_n / tot))
+    print('  KOW over all PWG:   %d (%.1f%%)' % (counts['kow_n'], 100.0 * counts['kow_n'] / tot))
     print('  KOW within its letter-zone [%s]: %d / %d (%.1f%%) — zone = %.1f%% of scanned;'
-          % (''.join(sorted(kow_zone)), kow_n, kow_zone_n,
-             100.0 * kow_n / max(kow_zone_n, 1), 100.0 * kow_zone_n / tot))
+          % (''.join(sorted(kow_zone)), counts['kow_n'], counts['kow_zone_n'],
+             100.0 * counts['kow_n'] / max(counts['kow_zone_n'], 1),
+             100.0 * counts['kow_zone_n'] / tot))
     print('    outside the zone KOW is absent by construction, not a missing entry.')
     print('--- corpus signal (random sample of %d): %d had >=1 aligned verse (%.1f%%)'
           % (corpus_n, corp_hit, 100.0 * corp_hit / max(corpus_n, 1)))
     print('--- Hindi SENSE signal (soft, third-language; not correctness) ---')
-    print('  any Hindi gloss: %d (%.1f%%)' % (sense_n, 100.0 * sense_n / tot))
+    print('  any Hindi gloss: %d (%.1f%%)' % (counts['sense_n'], 100.0 * counts['sense_n'] / tot))
     for c in SENSE:
-        print('    %-22s %6d (%.1f%%)' % (SENSE_NAME[c], sensesrc[c], 100.0 * sensesrc[c] / tot))
+        print('    %-22s %6d (%.1f%%)' % (SENSE_NAME[c], counts['sensesrc'][c], 100.0 * counts['sensesrc'][c] / tot))
     print('--- Sanskrit kosha synonyms (Sanskrit-side corroboration, Rule 5) ---')
-    print('  kosha synonym set: %d (%.1f%%)' % (syn_n, 100.0 * syn_n / tot))
+    print('  kosha synonym set: %d (%.1f%%)' % (counts['syn_n'], 100.0 * counts['syn_n'] / tot))
     print('--- Meulenbeld/SNP Latin binomials (botanical) ---')
-    print('  plant w/ binomial: %d (%.1f%%)' % (plant_n, 100.0 * plant_n / tot))
+    print('  plant w/ binomial: %d (%.1f%%)' % (counts['plant_n'], 100.0 * counts['plant_n'] / tot))
     print('--- Sinonimy (Leonchenko, SPECIALIST/SENSE corroboration) ---')
-    print('  synonym set:  %d (%.1f%%)' % (sin_syn_n, 100.0 * sin_syn_n / tot))
-    print('  sense entry:  %d (%.1f%%)' % (sin_sense_n, 100.0 * sin_sense_n / tot))
+    print('  synonym set:  %d (%.1f%%)' % (counts['sin_syn_n'], 100.0 * counts['sin_syn_n'] / tot))
+    print('  sense entry:  %d (%.1f%%)' % (counts['sin_sense_n'], 100.0 * counts['sin_sense_n'] / tot))
 
 def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent
     dicts, the head-term token Jaccard distribution — calibrates THRESHOLD."""
     n = int(args[0]) if args else 4000
     rng = random.Random(COVERAGE_SEED)
-    all_keys = [k for k in read_keys(None)]
-    total = len(all_keys)
-    # RANDOM sample, not first-N (PWG is SLP1-sorted; the a- section is skewed).
-    if n and n < total:
-        keys = rng.sample(all_keys, n)
-        label = 'random sample %d / %d (seed %d)' % (n, total, COVERAGE_SEED)
-    else:
-        keys = all_keys
-        label = 'full %d' % total
+    keys, label = _select_sample(rng, n)
     buckets = defaultdict(int); pairs = 0
     for k in keys:
         hit = idx.get(form_key(k)) or {}
