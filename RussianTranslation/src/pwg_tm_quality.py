@@ -38,6 +38,60 @@ FORBIDDEN_INDEPENDENT_JUDGES = frozenset({
     'grok-4.6', 'grok-4.6-draft', 'grok-4.6-live', 'self', 'self_score',
     'self-score',
 })
+
+# ---- H3299 step 4: pinned per-defect-class severity rubric -------------------
+# The judge labels every adjudicated row with exactly ONE defect_class; the
+# serious_error verdict is DERIVED from this table and is never re-judged per
+# fragment class or stratum bucket. H2684 convicted the same {%Jmd%}
+# corruption as serious in one cell and non-serious in another — under this
+# rubric that inconsistency is a machine-checkable violation
+# (check_severity_consistency), not a judgment call.
+# Historical adjudication files written before H3299 carry no defect_class;
+# they stay byte-untouched evidence and are NOT re-verified under this rule.
+SEVERITY_RUBRIC = {
+    'none': False,                             # faithful + equivalent
+    'placeholder_rendered_as_content': True,   # {%Jmd%} -> invented verb phrase
+    'wrong_lexical_meaning': True,
+    'sense_absent_or_inverted': True,
+    'sanskrit_dropped_or_altered': True,
+    'unfaithful_to_source': True,
+    'german_residue': False,                   # minor: DE word left in RU
+    'markup_drift': False,                     # minor: preserved-span drift
+    'register_or_style': False,                # minor: meaning holds, style off
+    'target_typo': False,                      # minor: typo in RU only
+}
+RUBRIC_UNKNOWN = object()
+
+
+def rubric_serious(defect_class):
+    """Pinned severity for a defect class; RUBRIC_UNKNOWN if unlisted."""
+    if defect_class not in SEVERITY_RUBRIC:
+        return RUBRIC_UNKNOWN
+    return SEVERITY_RUBRIC[defect_class]
+
+
+def _as_bool_sev(sev):
+    return sev in (True, 1, 'yes', 'serious')
+
+
+def check_severity_consistency(rows):
+    """Same defect class ⇒ same severity, everywhere, regardless of bucket."""
+    violations = []
+    for i, row in enumerate(rows):
+        adj = row.get('adjudication') or row
+        sev = adj.get('serious_error')
+        if sev is None:
+            continue
+        dc = adj.get('defect_class')
+        expected = rubric_serious(dc)
+        if expected is RUBRIC_UNKNOWN:
+            violations.append(
+                'row %d: unknown defect_class %r' % (i, dc))
+        elif bool(_as_bool_sev(sev)) != bool(expected):
+            violations.append(
+                'row %d: defect_class %r is pinned serious=%s but '
+                'serious_error=%r' % (i, dc, expected, sev))
+    return violations
 BLIND_DROP = (
     'generation', 'gate_receipt', 'gate_status', 'confidence_tier',
     'trust_level', 'reuse_policy', 'promotion_status', 'quarantine_reasons',
@@ -173,6 +227,7 @@ def blind_packet(rows):
             'fidelity': None,
             'equivalence': None,
             'serious_error': None,
+            'defect_class': None,
             'notes': '',
             'judge_id': None,
             'judge_model': None,
@@ -289,6 +344,12 @@ def verify(sample_n=SAMPLE_N, adjudication=None, sample_meta=None):
     scores = score_adjudication(adjudication)
     report['scores'] = scores
     report['independent'] = True
+    report['rubric'] = 'pinned'
+    rubric_violations = check_severity_consistency(adjudication)
+    if rubric_violations:
+        report['rubric_violations'] = rubric_violations
+        report['reasons'].append(
+            'severity rubric violated on %d row(s)' % len(rubric_violations))
     ok, reasons = floors_hold(scores)
     report['reasons'].extend(reasons)
     report['ok'] = ok and not report['reasons']
@@ -492,6 +553,33 @@ def _selftest():
     assert empty['independent_gate'] == 'not_run'
     p, lo, hi = wilson(392, 400)
     assert 0.95 < p < 1.0 and lo < p < hi
+    # H3299 rubric pins: same defect class => same severity everywhere
+    assert rubric_serious('placeholder_rendered_as_content') is True
+    assert rubric_serious('german_residue') is False
+    assert rubric_serious('no_such_class') is RUBRIC_UNKNOWN
+    consistent = [
+        {'fragment_class': 'definition_gloss',
+         'adjudication': {'serious_error': True,
+                          'defect_class': 'placeholder_rendered_as_content'}},
+        {'fragment_class': 'sense',
+         'adjudication': {'serious_error': True,
+                          'defect_class': 'placeholder_rendered_as_content'}},
+        {'fragment_class': 'sense',
+         'adjudication': {'serious_error': False, 'defect_class': 'none'}},
+    ]
+    assert check_severity_consistency(consistent) == []
+    # the H2684 inconsistency shape: same class in a second bucket judged
+    # non-serious must be a violation, not a judgment call
+    flipped = consistent[:1] + [{
+        'fragment_class': 'recurring_formula',
+        'adjudication': {'serious_error': False,
+                         'defect_class': 'placeholder_rendered_as_content'},
+    }]
+    v = check_severity_consistency(flipped)
+    assert len(v) == 1 and 'pinned serious=True' in v[0], v
+    unknown = [{'adjudication': {'serious_error': True,
+                                 'defect_class': 'mystery'}}]
+    assert len(check_severity_consistency(unknown)) == 1
     print('pwg_tm_quality: PASS')
     return 0
 
