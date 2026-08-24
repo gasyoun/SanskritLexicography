@@ -2150,7 +2150,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H2684 Track B is the Wave-1 German to Russian fragment TM route. The runner is opt-in via --route grok-4.6 and does not change default headless or EN production routes. An EN fragment wave needs its own prompt, residue gate, and independent judge packet; it is not a silent same-session port.",
     "tracking": "H2684",
     "verified_sha256": {
-      "src/pwg_tm_generate.py": "8f6b00da6ebd05d69543ab3c4815625bb7894741ae76512df21e30a42d0ecb89",
+      "src/pwg_tm_generate.py": "49e2dde17f9b3ee0c6c648ca710dff6b1a8ba18a62fa2d5520b4f1328645d8fd",
       "src/pwg_tm_gates.py": "bba9ba290b16220a64a59602889cda105f29704fde3c35191408bcd147ae7331",
       "src/pwg_tm_quality.py": "5e518d037dcf4ca15b0d23bbadafbe3c315c14b2cbbb68151d86cc46280b3c99"
     }
