@@ -1,0 +1,139 @@
+{
+  "schema": "pwg.tm.quality.report.v1",
+  "sample_n_required": 400,
+  "floors": {
+    "fidelity": 0.98,
+    "equivalence": 0.95,
+    "serious_error": 0.01
+  },
+  "independent": true,
+  "independent_gate": "fail",
+  "self_score_present": false,
+  "ok": false,
+  "reasons": [
+    "fidelity 0.6475 < 0.98",
+    "equivalence 0.6075 < 0.95"
+  ],
+  "sample": {
+    "schema": "pwg.tm.quality.sample.v1",
+    "n_requested": 400,
+    "n_drawn": 400,
+    "seed": 3434,
+    "pool": 197925,
+    "buckets": {
+      "('citation', 'low', 'complex', 'machine_gated', 'accepted')": 8436,
+      "('citation', 'low', 'simple', 'machine_gated', 'accepted')": 47588,
+      "('citation', 'mid', 'simple', 'machine_gated', 'accepted')": 32189,
+      "('citation', 'zero_or_missing', 'simple', 'machine_gated', 'accepted')": 32,
+      "('definition_gloss', 'low', 'complex', 'machine_gated', 'accepted')": 86,
+      "('definition_gloss', 'low', 'complex', 'uncertain', 'rejected')": 2078,
+      "('definition_gloss', 'low', 'simple', 'machine_gated', 'accepted')": 195,
+      "('definition_gloss', 'low', 'simple', 'uncertain', 'rejected')": 8816,
+      "('definition_gloss', 'mid', 'complex', 'uncertain', 'rejected')": 1,
+      "('definition_gloss', 'mid', 'simple', 'machine_gated', 'accepted')": 125,
+      "('definition_gloss', 'mid', 'simple', 'uncertain', 'rejected')": 5170,
+      "('definition_gloss', 'zero_or_missing', 'simple', 'uncertain', 'rejected')": 7,
+      "('example', 'low', 'complex', 'machine_gated', 'accepted')": 6252,
+      "('example', 'low', 'simple', 'machine_gated', 'accepted')": 25901,
+      "('example', 'mid', 'complex', 'machine_gated', 'accepted')": 2,
+      "('example', 'mid', 'simple', 'machine_gated', 'accepted')": 15587,
+      "('example', 'zero_or_missing', 'simple', 'machine_gated', 'accepted')": 7,
+      "('grammar_label', 'low', 'complex', 'machine_gated', 'accepted')": 1650,
+      "('grammar_label', 'low', 'simple', 'machine_gated', 'accepted')": 7705,
+      "('grammar_label', 'mid', 'simple', 'machine_gated', 'accepted')": 3526,
+      "('grammar_label', 'zero_or_missing', 'simple', 'machine_gated', 'accepted')": 3,
+      "('recurring_formula', 'low', 'complex', 'machine_gated', 'accepted')": 1423,
+      "('recurring_formula', 'low', 'complex', 'uncertain', 'rejected')": 48,
+      "('recurring_formula', 'low', 'simple', 'machine_gated', 'accepted')": 7073,
+      "('recurring_formula', 'low', 'simple', 'uncertain', 'rejected')": 183,
+      "('recurring_formula', 'mid', 'simple', 'machine_gated', 'accepted')": 4109,
+      "('recurring_formula', 'mid', 'simple', 'uncertain', 'rejected')": 122,
+      "('recurring_formula', 'zero_or_missing', 'simple', 'machine_gated', 'accepted')": 2,
+      "('sense', 'low', 'complex', 'machine_gated', 'accepted')": 61,
+      "('sense', 'low', 'complex', 'uncertain', 'rejected')": 6876,
+      "('sense', 'low', 'simple', 'machine_gated', 'accepted')": 52,
+      "('sense', 'low', 'simple', 'uncertain', 'rejected')": 6901,
+      "('sense', 'mid', 'complex', 'machine_gated', 'accepted')": 12,
+      "('sense', 'mid', 'complex', 'uncertain', 'rejected')": 2317,
+      "('sense', 'mid', 'simple', 'machine_gated', 'accepted')": 27,
+      "('sense', 'mid', 'simple', 'uncertain', 'rejected')": 3360,
+      "('sense', 'zero_or_missing', 'complex', 'uncertain', 'rejected')": 2,
+      "('sense', 'zero_or_missing', 'simple', 'uncertain', 'rejected')": 1
+    },
+    "by_class": {
+      "citation": 52,
+      "definition_gloss": 86,
+      "example": 48,
+      "grammar_label": 41,
+      "recurring_formula": 74,
+      "sense": 99
+    },
+    "by_accept": {
+      "accepted": 266,
+      "rejected": 134
+    },
+    "complete_n": true,
+    "streamed": true
+  },
+  "scores": {
+    "n": 400,
+    "labelled": 400,
+    "fidelity": {
+      "k": 259,
+      "p": 0.6475,
+      "lo": 0.5994796194705074,
+      "hi": 0.6927141515525868
+    },
+    "equivalence": {
+      "k": 243,
+      "p": 0.6075,
+      "lo": 0.5588404787053632,
+      "hi": 0.6541143035657054
+    },
+    "serious_error": {
+      "k": 3,
+      "p": 0.0075,
+      "lo": 0.002553842962985239,
+      "hi": 0.021816108027700218
+    },
+    "per_class": {
+      "citation": {
+        "n": 52,
+        "fid": 52,
+        "eq": 52,
+        "serious": 0
+      },
+      "definition_gloss": {
+        "n": 86,
+        "fid": 38,
+        "eq": 37,
+        "serious": 1
+      },
+      "example": {
+        "n": 48,
+        "fid": 48,
+        "eq": 48,
+        "serious": 0
+      },
+      "grammar_label": {
+        "n": 41,
+        "fid": 41,
+        "eq": 41,
+        "serious": 0
+      },
+      "recurring_formula": {
+        "n": 74,
+        "fid": 33,
+        "eq": 32,
+        "serious": 0
+      },
+      "sense": {
+        "n": 99,
+        "fid": 47,
+        "eq": 33,
+        "serious": 2
+      }
+    }
+  },
+  "rubric": "pinned"
+}
