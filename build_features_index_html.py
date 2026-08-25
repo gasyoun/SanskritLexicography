@@ -9,12 +9,18 @@ two never drift. Pure stdlib, no dependencies.
 
 Usage:
     python build_features_index_html.py [--src FEATURES_INDEX.md] [--out features_index.html]
+    python build_features_index_html.py [--src FEATURES_INDEX.md] --emit-json features_index.json
+
+--emit-json writes a machine-readable sidecar of the sections-I-IV rows
+(id / section / title / repo? / url?) instead of the HTML page — consumed by
+the Sangram atlas bundle builder (contract 1.1.1 feature_ids join).
 
 Auto-generated output; do not hand-edit features_index.html — edit the Markdown
 source and re-run.
 """
 import argparse
 import html
+import json
 import re
 import sys
 
@@ -22,6 +28,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+GITHUB_REPO_RE = re.compile(r"https?://(?:www\.)?github\.com/([^/\s)/]+)/([^/\s)#]+)")
+JSON_SECTIONS = {"data", "dictionaries", "interfaces", "tools"}
 CODE_RE = re.compile(r"`([^`]+)`")
 BOLD_RE = re.compile(r"\*\*([^*]+)\*\*")
 ITAL_RE = re.compile(r"(?<!\*)\*(?!\*)([^*]+)\*(?!\*)")
@@ -373,20 +381,79 @@ TEMPLATE = """<!doctype html>
 """
 
 
+def extract_row_id(first_cell):
+    """First identifier-shaped token of the ID cell ("🟢 A1", "? E43" mojibake,
+    "MW") — covers sections I-IV including the code-keyed II roster."""
+    cleaned = first_cell.replace("?", " ")
+    match = re.search(r"[A-Za-z][A-Za-z0-9]*", cleaned)
+    return match.group(0) if match else None
+
+
+def emit_json_rows(sections):
+    """One object per sections-I-IV row: id, section, title, repo?, url?. No P/Q."""
+    rows = []
+    for sec in sections:
+        if category_of(sec) not in JSON_SECTIONS:
+            continue
+        headers = [strip_md(h) for h in sec["headers"]]
+        home_idx = next(
+            (n for n, h in enumerate(headers) if "home" in h.lower()), len(headers) - 1
+        )
+        for cells in sec["rows"]:
+            plain = [strip_md(c) for c in cells]
+            if not plain:
+                continue
+            rid = extract_row_id(plain[0])
+            if not rid or rid.lower() == "id":
+                continue
+            src_cell = (
+                cells[home_idx]
+                if 0 <= home_idx < len(cells)
+                else cells[-1]
+            )
+            obj = {
+                "id": rid,
+                "section": sec["h2"],
+                "title": plain[1] if len(plain) > 1 else "",
+            }
+            link = LINK_RE.search(src_cell)
+            if link:
+                obj["url"] = link.group(2)
+                repo_match = GITHUB_REPO_RE.match(link.group(2))
+                if repo_match:
+                    obj["repo"] = f"{repo_match.group(1)}/{repo_match.group(2)}"
+            rows.append(obj)
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--src", default="FEATURES_INDEX.md")
     ap.add_argument("--out", default="features_index.html")
+    ap.add_argument(
+        "--emit-json",
+        metavar="PATH",
+        help="write the sections-I-IV row sidecar (id/section/title/repo/url) "
+        "to PATH instead of the HTML page",
+    )
     args = ap.parse_args()
     with open(args.src, "r", encoding="utf-8") as fh:
         md_text = fh.read()
     glance, sections = parse(md_text)
+    if args.emit_json:
+        rows = emit_json_rows(sections)
+        with open(args.emit_json, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump(rows, fh, ensure_ascii=False, indent=2)
+            fh.write("\n")
+        print(f"Wrote {args.emit_json}: {len(rows)} rows.")
+        return 0
     out_html = build_html(glance, sections, args.src)
     with open(args.out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(out_html)
     total = sum(len(s["rows"]) for s in sections)
     print(f"Wrote {args.out}: {len(sections)} tables, {total} rows.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
