@@ -155,6 +155,33 @@ reason (the token is a proper name, the sentence is corrupt, the lemma assignmen
 The **`NONE` rate is a reported number, not an annotator error** — it measures how much of
 real corpus usage the PWG numbered senses fail to cover, which is itself a C1 finding.
 
+**Pass 1 starts with the 48-row pilot, not the 200-row frame.** The frame's real cost is
+not 200 decisions: it presents **1,537 sense-menu options** in total — median 3 per row in
+`I2-5`, 7 in `I6-9`, **12 in `I10+`** (max 16) — each on top of a Sanskrit sentence. Spending
+that in one sitting, before anyone has checked the instrument works, is how an annotation
+budget gets burned on a frame with a defect in it. So the first ask is
+[`src/eval/wsd_frame_c1_pilot_48.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_pilot_48.tsv):
+**one row per lemma, so every sense menu in the frame is inspected exactly once** — 48 rows,
+352 options, 23% of the frame's reading load, cut by
+[`pilot_wsd_frame.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/pilot_wsd_frame.py).
+
+It is a **strict subset with `row_id` and `occ_id` preserved**, so its labels merge straight
+into the full gold; nothing is thrown away by starting small. One row per lemma is the right
+unit for an instrument check because a bad menu shows up on its first row, not its fourth.
+
+What the pilot is looking for, before the remaining 152 rows are worth anyone's time:
+
+- a **high `NONE` rate** — the PWG numbered inventory does not cover real corpus usage, and
+  the frame's premise needs revisiting rather than more rows;
+- **menus that cannot be answered** — glosses too close to tell apart in context (§3 removed
+  the textually-identical class, but near-synonymy is a judgment the gate cannot make);
+- **`I10+` proving disproportionately slow or unreliable** — if 12–16-option menus are where
+  the disagreements concentrate, that band needs a different instrument, not more rows;
+- whether per-row time makes the remaining 152 rows worth their cost at all.
+
+The pilot is **too small for a per-band rate** (14–18 rows per band; the gate says so) and is
+not itself the gold set. Its job is to decide whether the other 152 rows get annotated.
+
 **Pass 2 — model as annotator 2.** A frozen, documented model annotates the same frame
 independently, from the same instructions, with no access to pass 1. Standing constraint
 (MG, 08-07-2026): human second-annotator recruiting is parked for 2026 — **do not resurface
@@ -237,7 +264,15 @@ python sample_wsd_frame.py --store ../pwg_ru_translated.jsonl \
 python check_wsd_frame.py wsd_frame_c1_200.tsv --max-per-lemma 6
 ```
 
-Every script carries a fixture-based `selftest` subcommand and all three pass.
+The pilot slice (§5), cut from the frozen frame without touching the corpus database:
+
+```sh
+python pilot_wsd_frame.py --frame wsd_frame_c1_200.tsv \
+    --out wsd_frame_c1_pilot_48.tsv --per-lemma 1 --seed 20260825
+python check_wsd_frame.py wsd_frame_c1_pilot_48.tsv --max-per-lemma 1
+```
+
+Every script carries a fixture-based `selftest` subcommand and all four pass.
 [`check_wsd_frame.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/check_wsd_frame.py)
 is the gate: label-column leakage, duplicate tokens, two rows sharing a sentence, a broken
 per-lemma cap, menus that offer fewer than two distinguishable options, and POS dominance
@@ -267,6 +302,10 @@ each time; the probe does one `GROUP BY` pass instead and caches the counts.
 - **DCS sandhied text is the context.** The annotator reads the sandhied sentence, not a
   segmented one; for a few rows the target `form` is fused with its neighbour.
 - **Agreement is human–model** (§5), never inter-annotator.
+- **The frame is expensive to annotate, and that is a property of PWG, not of the sampling.**
+  1,537 menu options over 200 rows, concentrated in `I10+` (12–16 options a row). The pilot
+  (§5) exists because of it; if the pilot shows the cost is not repaid, the honest move is to
+  report C1 on 48 rows with wide intervals rather than to grind out 152 more.
 - **Labels do not exist yet.** Everything above describes an annotation *input*. Until pass 1
   runs, C1, card 4 and card 5's accuracy stay blocked.
 
