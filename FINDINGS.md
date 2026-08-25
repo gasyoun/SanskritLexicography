@@ -1262,6 +1262,45 @@ volume markers) that need a human bibliographer, not a smarter regex.
 > **Source:** H1350 step W1.6 — [`extend_ls_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/extend_ls_coverage.py)
 > · [`pwg_ls_unresolved.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/pwg_ls_unresolved.tsv). — RussianTranslation (pwg_ru) · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
 
+### §583. "How many senses does this PWG lemma have?" is undefined until you fix the layer — the naive count runs 10–40× high
+
+🔴 **Counting distinct `sense_tag` per `key1` in the pwg_ru store does not count senses.**
+Three defects compound, and each is invisible on its own:
+
+1. **The store spans five dictionary layers** — `pwg` 5,594 rows, `pw` 5,205, `nws` 432,
+   `sch` 210, `pwkvn` 162 (of 11,603), and **97 of 254 lemmas straddle more than one**.
+   A cross-layer count conflates "PWG sense 2" with "the same word as printed in PW".
+2. **Many tags are not senses.** Inside `pwg` alone the tag vocabulary carries structural
+   apparatus (`main`, `intro`, `head`, `tail`, `header`, `note`, `addendum`, `cross-ref`,
+   `Nachtrag`) and derived-stem slots (`caus`, `desid`, `caus-1`, `*_verb`).
+3. **Tags are not normalized** — `1` and `1)` are stored as distinct tags, inflating 23
+   lemmas by pure punctuation.
+
+Measured, the same lemma under three definitions:
+
+| lemma | rows | all-layer tags | `pwg` tags | `pwg` numeric senses |
+|---|---:|---:|---:|---:|
+| `han` | 597 | 430 | 90 | **11** |
+| `gam` | 673 | 410 | 69 | **8** |
+| `viś` | 537 | 397 | 96 | **14** |
+| store max | | 430 | 96 | **16** (`vah`) |
+
+Implication: the naive count says PWG polysemy is **bimodal**, with a tail of 300–430-sense
+verb roots too large for any human to choose among — which drives real design decisions
+(H3172's first cut built a separate free-gloss annotation tier for that tail, with an
+unavoidable shortlist-bias problem, because the tail looked unavoidable). **The tail is an
+artifact.** Under "numbered sense within one layer" the store-wide maximum is 16 and every
+PWG lemma is hand-checkable. A second trap rides along: cross-layer duplicate subcards
+produce menu options that are *textually identical* (`[1] раздувание, вздутие` vs
+`[PW] раздувание, вздутие`), which is unanswerable rather than merely redundant — two
+annotators pick at random and the resulting κ measures coin-flips. Any card reasoning about
+PWG polysemy, sense inventories, or MFS chance level must state its layer and tag class
+first; `distinct sense_tag` alone is not a sense count.
+
+> **Source:** H3172 — [`probe_wsd_strata.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/probe_wsd_strata.py)
+> §"What counts as a sense" · protocol [WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md)
+> §2–§3. — RussianTranslation (pwg_ru) · 25-08-2026 · Opus 5 (`claude-opus-5`)
+
 ## Etymology & derivation
 
 ### §33. Indigenous dictionaries agree on derivation; Wilson is the outlier

@@ -1,6 +1,13 @@
 # Gold-slice needs — PWG→RU research-capability roadmap
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 25-08-2026_
+
+> **Status, 25-08-2026 — read this before picking up any gold-gated card.**
+> The three evaluation-spine gold sets now have **frames and protocols; none has
+> labels.** Every one of them is waiting on the same single human action, MG's
+> pass-1 annotation. See [§ Where each set actually stands](#where-each-set-actually-stands-25-08-2026)
+> at the foot of this document, which supersedes the "does not exist yet" framing
+> of the tables above.
 
 Which cards of the [30-capability roadmap](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md)
 are blocked on a **frozen, adjudicated human gold slice** that does not exist yet,
@@ -50,6 +57,44 @@ agreement computation — is the prerequisite the rest of the spine and card 30 
 paper matrix) depend on. Cards 2 (aligner-agreement gate) and 5 (MFS emitter) are
 the local-only spine work that does NOT wait on gold; card 5's *emitter* shipped in
 H775, only its accuracy number waits.
+
+## Where each set actually stands (25-08-2026)
+
+Recorded by [H3172](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md)
+(**Opus 5**, `claude-opus-5`), whose brief was to build all three sets in one
+adjudication pass. Two of the three turned out to be already built up to the
+human gate; the third was genuinely missing and is now built to the same point.
+**The blocker on all three is identical and is not an engineering task.**
+
+| Set | Card | Frame / protocol | Labels | Blocked on |
+|---|---|---|---|---|
+| **A/B/C translation quality** | 1 (COMET-QE calibration) | [`gold/grade_gold.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/grade_gold.jsonl) — 320 rows, strata + memo, shipped H1457 22-07-2026 | agent-adjudicated, **preliminary** | a human pass, and a **frozen model** annotator 2 (see below) |
+| **BLI Sa→Ru** | 3 | [protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) + [500-row frame](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_frame_b1_stratified_500.tsv) + review sheet, shipped H2401/H2551 | **none** | MG pass 1 — sheet has been awaiting a vote since **12-08-2026** |
+| **Token-in-context WSD** | 4, and card 5's accuracy | [protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) + [200-row frame](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_200.tsv), shipped H3172 25-08-2026 | **none** | MG pass 1 |
+
+**The κ already on record is not the κ the roadmap wants.** The A/B/C set reports
+Cohen's κ = **−0.0044** ([`gold/GRADE_GOLD_MEMO.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/GRADE_GOLD_MEMO.md)),
+but its "rater 2" was `tm_grade.qe_proxy()`, a surface-shape heuristic that scored
+317/320 rows `A`. That reproduces [FINDINGS §70](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+rather than impugning the labels — but it is not a frozen model annotator, so the
+number cannot be compared with the other two sets. The shared **annotator-2 freeze
+record** that makes all three comparable is specified once, in
+[§5 of the WSD protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md).
+
+**What a human actually does, once:** annotate pass 1 on the BLI sheet and on the
+WSD frame. Nothing else in the evaluation spine moves until then, and no agent may
+substitute for it — a script that writes pass-1 labels is the rule-based-arm trap
+([/gold-adjudicate](https://github.com/gasyoun/claude-config/blob/main/commands/gold-adjudicate.md)
+Phase 0) and would turn every downstream number into a rubber stamp.
+
+**A finding worth not rediscovering.** "How many senses does a PWG lemma have?" has
+no single answer, and the naive one is wrong by an order of magnitude: counted across
+the store's five dictionary layers `han` shows 430 sense tags, counted within `pwg`
+it shows 90, and counted as *numbered senses within one layer* it shows **11**. The
+store-wide maximum under the correct definition is 16. Any future card that reasons
+about PWG polysemy should read
+[§2 of the WSD protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md)
+before trusting a sense count.
 
 ## Related
 
