@@ -593,20 +593,9 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 [R. 1,51,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,25) ([52,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,52,24) [GORR.]). *jñānavijñāna˚*
 [BHĀG. P. 11,19,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,19,3)
 
-**cross-ref-T175-T176)** — Vgl. *prasiddhi* .
-
 **cross-ref-T48-T49)** — Vgl. *saṃsiddhi, sāṃsiddhya* .
 
-**derivative-T177-T181)** — *saṃpra*, partic. *˚siddha* zubereitet: *ghṛtaṃ pibetklītakasaṃprasiddham*
-[SUŚR. 2,108,19.]
-
-**derivative-T182)** — *sam*
- 1) gelingen, zu Stande kommen: *yasyārabdhaṃ sarvameva saṃsidhyati*
-[PAÑCAT. 201,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?201,7)
-— 2) das höchste Ziel erreichen, glückselig werden: *japyenaiva tu saṃsidhyedbrāhmaṇaḥ*
-[M. 2,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,87)
-[BHĀG. P. 11,18,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,18,25) *saṃsidhyasva*
-[MBH. 3,12025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12025) — partic. *saṃsiddha*
+**cross-ref-T175-T176)** — Vgl. *prasiddhi* .
 
 **derivative-T57-T58)** — Vgl. *arthasiddha, manoratha˚, mantra˚, yathā˚, rasa˚, śveta˚, sarvārtha˚, saha˚, sva˚* .
 
@@ -619,6 +608,17 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 
 **derivative-T68-T72)** — *anu* partic. *˚siddha* allmählich zu Stande gekommen: *tapasā kramānusiddhena*
 [BHĀG. P. 4,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,8)
+
+**derivative-T177-T181)** — *saṃpra*, partic. *˚siddha* zubereitet: *ghṛtaṃ pibetklītakasaṃprasiddham*
+[SUŚR. 2,108,19.]
+
+**derivative-T182)** — *sam*
+ 1) gelingen, zu Stande kommen: *yasyārabdhaṃ sarvameva saṃsidhyati*
+[PAÑCAT. 201,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?201,7)
+— 2) das höchste Ziel erreichen, glückselig werden: *japyenaiva tu saṃsidhyedbrāhmaṇaḥ*
+[M. 2,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,87)
+[BHĀG. P. 11,18,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,18,25) *saṃsidhyasva*
+[MBH. 3,12025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12025) — partic. *saṃsiddha*
 
 **nis-sidh-1)** — *abhi*
  1) gelingen, zu Stande kommen: *artho 'bhisidhyati*
