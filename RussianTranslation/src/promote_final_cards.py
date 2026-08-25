@@ -648,6 +648,19 @@ def merge_store_rows(existing_rows, promoted_rows, override_reviewed=False):
     incoming = {}
     for row in promoted_rows:
         incoming.setdefault(row['subcard'], []).append(row)
+    # H3500: a promote batch carrying the same (sense_tag, ru) twice under one
+    # subcard used to append BOTH copies on merge - the origin of the 60
+    # byte-identical duplicate rows the H3456 benchmark surfaced. Collapse
+    # incoming duplicates keep-best-ranked before any comparison.
+    for sub, rows_ in list(incoming.items()):
+        if len(rows_) < 2:
+            continue
+        best = {}
+        for row in rows_:
+            key = (row.get('sense_tag'), row.get('ru'))
+            if key not in best or _attempt_quality([row]) > _attempt_quality([best[key]]):
+                best[key] = row
+        incoming[sub] = list(best.values())
     existing_by_sub = {}
     for row in existing_rows:
         existing_by_sub.setdefault(row.get('subcard'), []).append(row)
@@ -662,7 +675,11 @@ def merge_store_rows(existing_rows, promoted_rows, override_reviewed=False):
     blocked = set(downgraded) | set(protected)
     replaced_subs = set(incoming) - blocked
     kept = [row for row in existing_rows if row.get('subcard') not in replaced_subs]
-    landed = [row for row in promoted_rows if row['subcard'] not in blocked]
+    # H3500: land from the COLLAPSED incoming, never from raw promoted_rows -
+    # a batch carrying byte-identical duplicates must not re-enter via the tail.
+    landed = [row for sub, rows_ in sorted(incoming.items())
+              if sub not in blocked
+              for row in rows_]
     return kept + landed, downgraded, protected
 
 
