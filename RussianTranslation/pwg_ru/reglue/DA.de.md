@@ -1330,9 +1330,6 @@ Z. 25 [HARIV. 7799](https://sanskrit-lexicon-scans.github.io/hariv?7799) liest d
 **с upa — antar)** [5,47,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.047.html#rv05.047.04) — desid. *dhitsati*
 [P. 7,4,54.](https://ashtadhyayi.com/sutraani/7/4/54)
 
-**с upa — upa-pref)** — *anu* caus. zum Saugen anlegen an: *kumāraṃ jātaṃ ghṛtaṃ vaivāgre pratilehayanti stanaṃ vānudhāpayanti* (nach den Erkll. = *paścātpāyayanti*)
-[ŚAT. BR. 14,4,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,4)
-
 **с upa — upa-pref2)** — *ud* s. *uddhaya* .
 
 **с upa — upa-pref3)** — *upa* caus. med. aufsäugen: *vatsamupa dhāpayete*
@@ -1347,6 +1344,9 @@ Schol. zu [P. 8,4,17.](https://ashtadhyayi.com/sutraani/8/4/17) [1,1,20.](https:
 [ŚAT. BR. 1,6,2,1.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,2,1) [4,6,9,21.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,9,21) die Sonne *nirdhayati yadidaṃ kiṃ ca śuṣyati*
 [2,6,3,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?2,6,3,14) *nirdhītatama*
 [4,6,7,14.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?4,6,7,14)
+
+**с upa — upa-pref)** — *anu* caus. zum Saugen anlegen an: *kumāraṃ jātaṃ ghṛtaṃ vaivāgre pratilehayanti stanaṃ vānudhāpayanti* (nach den Erkll. = *paścātpāyayanti*)
+[ŚAT. BR. 14,4,3,4.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,4,3,4)
 
 ## Homonym h3
 

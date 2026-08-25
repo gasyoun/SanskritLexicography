@@ -126,6 +126,29 @@ def lead_int(st):
     return m.group(1) if m else None
 
 
+def sense_sort_key(st):
+    """Skeleton ordering for one sense tag (H3501).
+
+    `lead_int` only matches a LEADING digit, so a prefixed tag like `verb.10`
+    used to fall to the lexicographic bucket and sorted 1, 10, 2, … — sense 10
+    rendered before sense 2 on the viS card (MG review point 1). The same
+    defect sat in every preverb branch with ten-plus senses (`sam 1` …
+    `sam 12` in gA/DA). Two buckets, as before — a leading digit goes first,
+    numerically — but the second bucket is now ordered by FAMILY (everything
+    before the tag's first integer) with numeric order inside the family and
+    unnumbered members (`verb.intro`, `prati`) after numbered ones. Families
+    never merge: a preverb branch keeps its place among the other branches,
+    exactly where the old whole-string sort put it.
+    """
+    st = str(st)
+    m = re.search(r"(\d+)", st) if not lead_int(st) else None
+    if m:
+        return (1, st[:m.start()], False, int(m.group(1)), st[m.end():])
+    if lead_int(st):
+        return (0, "", False, int(lead_int(st)), "")
+    return (1, st, True, 0, "")
+
+
 def homonym_of(subcard):
     m = re.search(r"~~(h\d+)", subcard or "")
     return m.group(1) if m else "h0"
@@ -211,8 +234,7 @@ def reglue_one(key1, records, rel):
                 and not pwg_correction_marker(d.get("sense_tag"))]
 
     def sort_key(d):
-        si = lead_int(d.get("sense_tag"))
-        return (0, int(si)) if si else (1, str(d.get("sense_tag")))
+        return sense_sort_key(d.get("sense_tag"))
 
     for d in sorted(pwg_rows, key=sort_key):
         h = hom_slot(homonym_of(d["subcard"]))
@@ -573,6 +595,23 @@ def selftest():
     def check(cond, msg):
         print(("  ok   " if cond else "  FAIL ") + msg)
         ok[0] = ok[0] and bool(cond)
+
+    # ---- H3501: prefixed numeric senses sort numerically, not lexicographically
+    check([t for t in sorted(["verb.1", "verb.10", "verb.2", "verb.intro"],
+                             key=sense_sort_key)]
+          == ["verb.1", "verb.2", "verb.10", "verb.intro"],
+          "prefixed tags sort numerically: verb.10 after verb.2, intro last")
+    check(sorted(["2", "10"], key=sense_sort_key) == ["2", "10"],
+          "bare numeric tags still sort numerically")
+    # a preverb branch is a FAMILY of its own: it keeps its place among the
+    # other branches, never interleaves with the bare skeleton numbers
+    check([t for t in sorted(["3", "sam 2", "sam 10", "prati"],
+                             key=sense_sort_key)]
+          == ["3", "prati", "sam 2", "sam 10"],
+          "a preverb branch stays its own family, numeric inside (gA/DA class)")
+    check([t for t in sorted(["caus-1", "mit-nis", "intro"], key=sense_sort_key)]
+          == ["caus-1", "intro", "mit-nis"],
+          "the unnumbered bucket keeps its own order after the numbered one")
 
     obj = {"key1": "gA", "homonyms": [{
         "h": "h0",
