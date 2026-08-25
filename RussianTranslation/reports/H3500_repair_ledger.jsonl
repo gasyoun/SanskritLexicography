@@ -1,0 +1,19 @@
+{"fix": "class1a_dedupe", "key1": "dah", "subcard": "dah~~h0_zz_pw", "sense_tag": "2", "kept_index": 11102, "dropped_index": 11116, "kept_rank": [0, 0, 0, 30], "dropped_rank": [0, 0, 0, 30], "ru_sha_prefix": "bc7385034e8894ac"}
+{"fix": "class1a_dedupe", "key1": "han", "subcard": "han~~h0_zz_pw02", "sense_tag": "<ab>Caus.</ab> <ab>s. u.</ab> {#GAtay#}", "kept_index": 4615, "dropped_index": 4649, "kept_rank": [0, 0, 1, 53], "dropped_rank": [0, 0, 1, 53], "ru_sha_prefix": "148e101cf5549213"}
+{"fix": "class1a_dedupe", "key1": "vas", "subcard": "vas~~h0_zz_pw02", "sense_tag": "main", "kept_index": 8931, "dropped_index": 8940, "kept_rank": [0, 0, 1, 27], "dropped_rank": [0, 0, 1, 27], "ru_sha_prefix": "26f4d15520841a52"}
+{"fix": "class1a_dedupe", "key1": "vas", "subcard": "vas~~h0_zz_pw02", "sense_tag": "main", "kept_index": 8931, "dropped_index": 8969, "kept_rank": [0, 0, 1, 27], "dropped_rank": [0, 0, 1, 27], "ru_sha_prefix": "26f4d15520841a52"}
+{"fix": "class1a_dedupe", "key1": "vid", "subcard": "vid~~h0_zz_pw00", "sense_tag": "2", "kept_index": 10598, "dropped_index": 10602, "kept_rank": [0, 0, 1, 27], "dropped_rank": [0, 0, 1, 27], "ru_sha_prefix": "26f4d15520841a52"}
+{"fix": "class2_bare_vgl", "index": 432, "subcard": "_bid~~h0_zz_sch", "before": "Mit {%upapra%}, vgl. <ls>Pischel, Ved. Stud. I,72.</ls>", "after": "Mit {%upapra%}, ср. <ls>Pischel, Ved. Stud. I,72.</ls>"}
+{"fix": "class3_advisory_marker", "index": 11236, "subcard": "pf_tv_i", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11259, "subcard": "sa_mkalik_a", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11260, "subcard": "sa_mkalik_a", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11265, "subcard": "sattA", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11275, "subcard": "ucita", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11287, "subcard": "utTa", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11296, "subcard": "vAsA", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11300, "subcard": "vAsa", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11308, "subcard": "vaSA", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11312, "subcard": "vaSa", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11320, "subcard": "vasA", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11341, "subcard": "y_avat", "advisory_enrichment": "bhsd"}
+{"fix": "class3_advisory_marker", "index": 11429, "subcard": "_scandra~~h0_zz_nws00", "advisory_enrichment": "nws"}
