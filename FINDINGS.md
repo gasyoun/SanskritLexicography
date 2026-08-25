@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 24-08-2026 (§580 — AP90's `<pc>` field is a
+_Created: 26-06-2026 · Last updated: 25-08-2026 (§581 — kosha static cards stale on two axes: bare-page PWG scan_url → volume 1, case-folded query.key → wrong Devanagari; earlier: §580 — AP90's `<pc>` field is a
 third, distinct shape from mw/pwg — page-column-letter `NNNN-a/b/c`, not comma
 or vol-page — csl-atlas's scan-URL builder silently resolved 0% of AP90 until
 fixed, now 99.29%; §579 — citation density is a cliff: pwg 94.4 % of entries cite at 6.50 `<ls>`/entry and alone carries 801 788 elements, 16 dicts cite at all, 22 have literally zero; tag presence misclassifies GRA, whose printed proof lives in prose brackets)
@@ -52,7 +52,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §580) whatever its section, so existing numbers never shift; when a finding is later
+(currently §582) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -316,6 +316,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟢 [§574. Gloss-language layering: `{%…%}` is not "German-or-English" — it also carries French (Burnouf) and editorial prose (Sircar), and the Latin `<ab>` layer is itself language-specific per dictionary](#574-gloss-language-layering-is-not-german-or-english--it-also-carries-french-burnouf-and-editorial-prose-sircar-and-the-latin-ab-layer-is-itself-language-specific-per-dictionary) — `bur` wraps French prose in `{%…%}` at 100 % of entries; `mw`/`cae` use zero `{%…%}` despite dense glosses, needing tail-text extraction not tag-grepping; `<ab>` is Latin in mw but German in gra; koch.jsonl is 99.98 % Russian by construction.
 - 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
 - 🔴 [§577. A citation resolver that mints a well-formed URL is not evidence the address exists — `ls_resolver` happily places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for a split or a wrapper](#577-a-citation-resolver-that-mints-a-well-formed-url-is-not-evidence-the-address-exists--ls_resolver-happily-places-v-9999999-so-resolves-cannot-be-the-acceptance-test-for-a-split-or-a-wrapper) — the resolver is a formatter, not a validator: it range-checks nothing. Any pass that INVENTS an address (splitting a multi-address `<ls>`, wrapping a bare citation) and accepts it because a URL came back will mint links that work and point at the wrong place — a worse failure than no link, because it looks right. Measured on pwg.txt: a resolve-only rule proposed 2,838 splits, of which 0 were correct; page references `11087 (p. 572)`, note markers `83, N. 6` and Oxford column letters `100,a. 101,b` all "resolve". The correct population was in `pw` (141), not `pwg` (0).
+- 🟠 [§581. kosha's committed static cards are stale on two axes that the template silently trusts — every PWG `scan_url` (48,540) is bare-page and serves volume 1, and `query.key` is case-folded so capital-initial lemmas render the wrong Devanagari (`Darma` → दर्म)](#581-koshas-committed-static-cards-are-stale-on-two-axes-that-the-template-silently-trusts-every-pwg-scan_url-48540-is-bare-page-and-serves-volume-1-and-querykey-is-case-folded-so-capital-initial-lemmas-render-the-wrong-devanagari-darma-दरम)
 - 🟠 [§580. AP90's `<pc>` field is a third, distinct shape from mw/pwg — page-column-letter (`NNNN-a/b/c`), not comma or vol-page — and a tool that assumes one shape silently drops 100% of a dict's scan links](#580-ap90s-pc-field-is-a-third-distinct-shape-from-mwpwg--page-column-letter-nnnn-abc-not-comma-or-vol-page--and-a-tool-that-assumes-one-shape-silently-drops-100-of-a-dicts-scan-links) — csl-atlas's Cologne scan-URL builder trusted only mw's `page,column` and pwg's `vol-page` shapes, so AP90 (page-column-*letter*) silently resolved 0% of 34,882 entries despite correct scan-directory registration; fixed 24-08-2026, now 99.29%; a residual 246 entries carry a *fourth* shape (`NNNN-N` numeric suffix), unresolved. Corrects §23's aside that AP90's `<pc>` is "numeric `<pc>0002-1`" — that's the 0.7% residual, not the dominant convention.
 - 🟢 [§579. Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them](#579-citation-density-is-a-cliff-not-a-spectrum--16-dicts-wrap-citations-in-ls-22-have-literally-zero-and-pwg-alone-carries-801-788-of-them-tag-presence-misclassifies-gra-whose-printed-proof-lives-in-prose) — extends §18's four-dict measurement to all 44: pwg 94.4 % of entries cite at 6.50/entry (801 788 elements, more than the next five dicts combined), mw 79.1 %, ap90 31.2 %; 22 koṣa/index dicts carry zero `<ls>`; pw-vs-pwg is abridgement depth (38.8 % vs 94.4 %); GRA proves in prose + `〔p. N〕` brackets while its `<ls>` share is only 12.0 % — the corpus's biggest citation-extraction residual.
 - 🟢 [§578. Accent digitization is three incompatible devices and svarita is essentially un-digitized](#578-accent-digitization-is-three-incompatible-devices-and-svarita-is-essentially-un-digitized) — `/` is headword-field accentuation in exactly 9 of the 44 dicts (mw 47 589, pw 21 543, pwg 20 876, cae 11 313, ccs 8 476, gra 10 699, lan 2 226, sch 1 124, pwkvn 2 108 lemmas), `\` svarita survives in 17 lemma marks total (pw 5, pwg 10, pwkvn 2), and stc/fri/bur/md-style transliteration carries accent as acute vowels that never reach `<k2>`; the pw-family homonym pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash itself a sense disambiguator any join must preserve.
@@ -8473,3 +8474,41 @@ convention.
 > [`data/metalex/L8_SCAN_LINK_CENSUS.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/metalex/L8_SCAN_LINK_CENSUS.md)
 > (H2368 census, re-measured H2368-A10) +
 > [`scripts/lib/cologne-links.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lib/cologne-links.mjs). — csl-atlas / csl-orig · 2026-08-24
+
+### §581. kosha's committed static cards are stale on two axes that the template silently trusts — every PWG `scan_url` (48,540) is bare-page and serves volume 1, and `query.key` is case-folded so capital-initial lemmas render the wrong Devanagari (`Darma` → दर्म)
+
+🟠 **Observed (H3457, 25-08-2026, Fable 5 `claude-fable-5`).** The 50,355 cards under
+[kosha docs/cards/](https://github.com/gasyoun/kosha/tree/main/docs/cards) are the
+DB-free source of truth for the static `/w/` pages and the Pages tier cannot regenerate
+them (no `kosha.db` there). Two of their fields predate later fixes and nothing in the
+render path re-derives them:
+
+1. **PWG `scan_url` is `servepdf.php?page=1737`, never `page=7-1737`.** `grep -ho
+   'PWGScan[^"]*page=[0-9-]*' docs/cards/*.json` → 48,540 bare, 0 with a volume. H839
+   (13-07-2026) proved Cologne's `servepdf.php` has no `vol=` parameter and that a bare
+   column key silently resolves to **volume 1** — so `gam` (L 119742, printed at
+   7-1737) linked to volume 1 column 1737. `kosha.scan_resolver.scan_url` already
+   refuses to emit a PWG URL without `vol`; the cards were generated before that guard.
+   Fix shape without a DB: a committed L → (vol, col) sidecar derived from csl-orig
+   `<L>…<pc>V-CCCC` (122,730 rows, 636 headers lack a parsable `<pc>`), overlaid at
+   render time — [kosha data/pwg_scan/pwg_L_pc.tsv](https://github.com/gasyoun/kosha/blob/main/data/pwg_scan/pwg_L_pc.tsv),
+   manifest row `pwg-print-anchors`. Live-verified 11/11 keys via `servepdf.php?…&api=1`
+   (each names its own volume's pdf; the raw link is 429-throttled per IP, §-cross:
+   Uprava SERVER_OUTAGES row for the host).
+2. **`query.key` is case-folded** — the `Darma` card holds `"key": "darma"`, `rAma` →
+   `"rama"`, `yA` → `"ya"`, while the card token / filename keeps the exact SLP1.
+   `render_word_page` derives `slp1`, Devanagari, IAST, `<title>` and the meta
+   description from `query.key`, so the public page for धर्म shows **दर्म**. Any
+   lookup keyed on `query.key` (frequency, favorites, sense layers) misses every
+   capital-initial lemma; key on the token-decoded SLP1 instead. Filed as
+   [kosha#433](https://github.com/gasyoun/kosha/issues/433) (fix candidates: derive the
+   key from the token in the template, or regenerate cards with the exact key).
+
+**Rule.** A committed card set is a snapshot of the generator at its build date; when a
+resolver or key contract changes after that date, either regenerate the cards or overlay
+the corrected field at render time — never assume the template's inputs moved with the
+code. Before trusting a card field, grep the whole set for the pre-fix shape.
+
+> **Source:** kosha
+> [`docs/H3457_WPAGE_UX_STAGING_PACKET_25.08.26.md`](https://github.com/gasyoun/kosha/blob/main/docs/H3457_WPAGE_UX_STAGING_PACKET_25.08.26.md)
+> §1 / §4 + [`app/word_page_ux.py`](https://github.com/gasyoun/kosha/blob/main/app/word_page_ux.py). — kosha / csl-orig · 2026-08-25
