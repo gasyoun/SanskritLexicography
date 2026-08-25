@@ -259,7 +259,12 @@ EXTRA_CSS = G5_CSS + """  .tchip { display:inline-block; padding:1px 7px; border
 
 #: build_article_site renders an UNRESOLVED citation as `<span class=ls …>`
 #: (attribute values deliberately unquoted). Mark it with WHY it is unresolved.
-_UNRESOLVED_LS = re.compile(r"(<span class=ls[^>]*>)(.*?)(</span>)", re.S)
+#: H3501: the coordinate triple's CRITICAL address renders as `<span class=lsc …>`
+#: and `class=ls[^>]*` prefix-matched it too — so every ≈крит. address carried ⚑
+#: "mintable". It is not: mbh_locus.bori_href is None by design (the BORI e-text
+#: is © BORI 1999, not redistributable, no deep link is ever invented), so a
+#: critical address is deliberately unlinkable — ∅-class, never work.
+_UNRESOLVED_LS = re.compile(r"(<span class=(lsc|ls)[^>]*>)(.*?)(</span>)", re.S)
 _TAGS = re.compile(r"<[^>]+>")
 
 
@@ -268,11 +273,14 @@ def _mark_gaps(html_body):
     stats = collections.Counter()
 
     def sub(m):
-        visible = _TAGS.sub("", m.group(2))
-        status = MINTABLE if re.search(r"\d", visible) else NO_LOCUS
+        visible = _TAGS.sub("", m.group(3))
+        if m.group(2) == "lsc":
+            status = NO_LOCUS          # deliberate: no target will ever exist
+        else:
+            status = MINTABLE if re.search(r"\d", visible) else NO_LOCUS
         stats[status] += 1
         mark = "⚑" if status == MINTABLE else "∅"
-        return "%s%s<sup>%s</sup>%s" % (m.group(1), m.group(2), mark, m.group(3))
+        return "%s%s<sup>%s</sup>%s" % (m.group(1), m.group(3), mark, m.group(4))
 
     out = _UNRESOLVED_LS.sub(sub, html_body)
     stats[HIT] = out.count("<a class=ls ")
@@ -714,6 +722,20 @@ def selftest():
         nonlocal ok
         print(("  ok   " if cond else "  FAIL ") + msg)
         ok = ok and bool(cond)
+
+    # ---- H3501: a critical address (span.lsc) is ∅-class, never ⚑ mintable —
+    # mbh_locus.bori_href is None by design, no BORI deep link will ever exist
+    _crit = ('<span class=lsc title="этот стих есть и в критическом издании">'
+             ' = ≈крит. 05,147.14a</span>')
+    out, st = _mark_gaps(_crit)
+    check("⚑" not in out and "<sup>∅</sup>" in out,
+          "the ≈крит address carries ∅, not the mintable flag")
+    check(st[NO_LOCUS] == 1 and st[MINTABLE] == 0,
+          "…and is counted as no-locus (%s)" % dict(st))
+    _unres = '<span class=ls title="t">KĀTH. 24,5.</span>'
+    out2, st2 = _mark_gaps(_unres)
+    check("<sup>⚑</sup>" in out2 and st2[MINTABLE] == 1,
+          "a digit-bearing UNRESOLVED citation stays mintable ⚑")
 
     # the H2827 motivating case — gā, NWS, five clusters visible in the first line
     ga = ("{#gā (=pw gā 1)#} идти, приходить, странствовать. уходить. приходить "

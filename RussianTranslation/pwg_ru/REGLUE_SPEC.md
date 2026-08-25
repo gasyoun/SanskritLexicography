@@ -173,6 +173,7 @@ distinct things:
 |---|---|---|
 | ⚑ | a real locus no pattern covers | **yes** — the mintable gap |
 | ∅ | a bare abbreviation (`GORR.`, `ed. Bomb.`) with no locus | **no** — nothing to point at, ever |
+| ∅ | an `≈крит.` address (`<span class=lsc>`) | **no** — deliberate: `mbh_locus.bori_href` is `None` by design (the BORI e-text is © BORI 1999, not redistributable), so no target will ever exist. H3501: the old digit-test flagged all 508 of them ⚑ on every card, overstating the mintable gap by exactly that count |
 
 Collapsing them into one "unresolved" count overstates the backlog by about a
 fifth. Per-card totals sit in a coverage strip above the card.
