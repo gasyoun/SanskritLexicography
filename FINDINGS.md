@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 24-08-2026 (§580 — AP90's `<pc>` field is a
+_Created: 26-06-2026 · Last updated: 25-08-2026 (§581 — kosha static cards stale on two axes: bare-page PWG scan_url → volume 1, case-folded query.key → wrong Devanagari; earlier: §580 — AP90's `<pc>` field is a
 third, distinct shape from mw/pwg — page-column-letter `NNNN-a/b/c`, not comma
 or vol-page — csl-atlas's scan-URL builder silently resolved 0% of AP90 until
 fixed, now 99.29%; §579 — citation density is a cliff: pwg 94.4 % of entries cite at 6.50 `<ls>`/entry and alone carries 801 788 elements, 16 dicts cite at all, 22 have literally zero; tag presence misclassifies GRA, whose printed proof lives in prose brackets)
@@ -8473,3 +8473,41 @@ convention.
 > [`data/metalex/L8_SCAN_LINK_CENSUS.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/metalex/L8_SCAN_LINK_CENSUS.md)
 > (H2368 census, re-measured H2368-A10) +
 > [`scripts/lib/cologne-links.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lib/cologne-links.mjs). — csl-atlas / csl-orig · 2026-08-24
+
+### §581. kosha's committed static cards are stale on two axes that the template silently trusts — every PWG `scan_url` (48,540) is bare-page and serves volume 1, and `query.key` is case-folded so capital-initial lemmas render the wrong Devanagari (`Darma` → दर्म)
+
+**Observed (H3457, 25-08-2026, Fable 5 `claude-fable-5`).** The 50,355 cards under
+[kosha docs/cards/](https://github.com/gasyoun/kosha/tree/main/docs/cards) are the
+DB-free source of truth for the static `/w/` pages and the Pages tier cannot regenerate
+them (no `kosha.db` there). Two of their fields predate later fixes and nothing in the
+render path re-derives them:
+
+1. **PWG `scan_url` is `servepdf.php?page=1737`, never `page=7-1737`.** `grep -ho
+   'PWGScan[^"]*page=[0-9-]*' docs/cards/*.json` → 48,540 bare, 0 with a volume. H839
+   (13-07-2026) proved Cologne's `servepdf.php` has no `vol=` parameter and that a bare
+   column key silently resolves to **volume 1** — so `gam` (L 119742, printed at
+   7-1737) linked to volume 1 column 1737. `kosha.scan_resolver.scan_url` already
+   refuses to emit a PWG URL without `vol`; the cards were generated before that guard.
+   Fix shape without a DB: a committed L → (vol, col) sidecar derived from csl-orig
+   `<L>…<pc>V-CCCC` (122,730 rows, 636 headers lack a parsable `<pc>`), overlaid at
+   render time — [kosha data/pwg_scan/pwg_L_pc.tsv](https://github.com/gasyoun/kosha/blob/main/data/pwg_scan/pwg_L_pc.tsv),
+   manifest row `pwg-print-anchors`. Live-verified 11/11 keys via `servepdf.php?…&api=1`
+   (each names its own volume's pdf; the raw link is 429-throttled per IP, §-cross:
+   Uprava SERVER_OUTAGES row for the host).
+2. **`query.key` is case-folded** — the `Darma` card holds `"key": "darma"`, `rAma` →
+   `"rama"`, `yA` → `"ya"`, while the card token / filename keeps the exact SLP1.
+   `render_word_page` derives `slp1`, Devanagari, IAST, `<title>` and the meta
+   description from `query.key`, so the public page for धर्म shows **दर्म**. Any
+   lookup keyed on `query.key` (frequency, favorites, sense layers) misses every
+   capital-initial lemma; key on the token-decoded SLP1 instead. Filed as
+   [kosha#433](https://github.com/gasyoun/kosha/issues/433) (fix candidates: derive the
+   key from the token in the template, or regenerate cards with the exact key).
+
+**Rule.** A committed card set is a snapshot of the generator at its build date; when a
+resolver or key contract changes after that date, either regenerate the cards or overlay
+the corrected field at render time — never assume the template's inputs moved with the
+code. Before trusting a card field, grep the whole set for the pre-fix shape.
+
+> **Source:** kosha
+> [`docs/H3457_WPAGE_UX_STAGING_PACKET_25.08.26.md`](https://github.com/gasyoun/kosha/blob/main/docs/H3457_WPAGE_UX_STAGING_PACKET_25.08.26.md)
+> §1 / §4 + [`app/word_page_ux.py`](https://github.com/gasyoun/kosha/blob/main/app/word_page_ux.py). — kosha / csl-orig · 2026-08-25
