@@ -1,0 +1,16 @@
+{
+  "block:machine-key-unalignable": 3,
+  "block:page-date-coerced-repaired": 3,
+  "block:printed-iast-collapses-variants": 15,
+  "block:spreadsheet-name-error": 5,
+  "block:total": 9587,
+  "heading:bound-prefix-or-stem": 995,
+  "heading:bound-suffix": 37,
+  "heading:combining-mark-residue": 1,
+  "heading:hk-differs-from-slp1": 5733,
+  "heading:legacy-font-latin-leak": 3,
+  "heading:machine-key-anomalous": 1,
+  "heading:machine-key-hk-confirmed": 9930,
+  "heading:spreadsheet-name-error": 6,
+  "heading:total": 11418
+}
