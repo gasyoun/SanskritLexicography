@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.95] - 2026-08-25
+
+### Added
+- **H3172 follow-up — a 48-row pilot slice, because the 200-row frame is too large an ask** (Opus 5 `claude-opus-5`, 25-08-2026): MG pushed back that 200 rows is a huge task, and measuring it agreed — the frame's cost is not 200 decisions but **1,537 sense-menu options**, median 3 per row in `I2-5`, 7 in `I6-9` and **12 in `I10+`** (max 16), each on top of a Sanskrit sentence, while 500 BLI cards are already unvoted. New [`pilot_wsd_frame.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/pilot_wsd_frame.py) (fixture selftest, no corpus DB needed) cuts [`wsd_frame_c1_pilot_48.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_pilot_48.tsv): **one row per lemma, so every sense menu in the frame is inspected exactly once** — 48 rows across 48 lemmas, 352 options, **23%** of the frame's reading load, and it passes the same [`check_wsd_frame.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/check_wsd_frame.py) gate. The pilot is a **strict subset with `row_id`/`occ_id` preserved**, so its labels merge straight into the full gold and nothing is discarded by starting small; one row per lemma is the right unit for an instrument check because a bad menu shows on its first row, not its fourth. [The 200-row frame is unchanged](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_200.tsv) — this changes the *ask*, not the sampling. Protocol §5 now names what the pilot is looking for before the remaining 152 rows are worth anyone's time (a high `NONE` rate meaning PWG's numbered inventory does not cover real usage; menus too close to tell apart in context; `I10+` proving where disagreement concentrates) and states the honest fallback: if the cost is not repaid, report C1 on 48 rows with wide intervals rather than grinding out 152 more. Review sheet, when built, is sized to the pilot, not the frame.
+
 ## [1.144.94] - 2026-08-25
 
 ### Added
