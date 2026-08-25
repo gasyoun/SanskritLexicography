@@ -1,6 +1,10 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 25-08-2026 (§581 — a dictionary index's
+_Created: 26-06-2026 · Last updated: 25-08-2026 (§584 — a style pass applied to
+CommentaryStrategies' `data/lexical/chN.json` never reaches the apparatus or the
+print master: `build_sarga_apparatus.py` prefers the aggregate twins in
+`data/sundara_commentary_to_add.json`, so 37 H3492 rewrites showed as 4 changed
+apparatus lines until a twin-sync landed them; §581 — a dictionary index's
 "SLP1" column can be Harvard-Kyoto, and joining it as SLP1 silently drops half
 the headings; NFD-stripping the Vedic acute destroys ś; §582 — the damage in a
 digitized index is not always OCR: KEWA's came from a Russian-locale spreadsheet,
@@ -57,7 +61,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §584) whatever its section, so existing numbers never shift; when a finding is later
+(currently §585) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -325,6 +329,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§581. A dictionary index's "SLP1" column can be Harvard-Kyoto — KEWA's is, and joining it as SLP1 silently drops half the headings; separately, NFD-stripping the Vedic acute destroys ś](#581-a-dictionary-indexs-slp1-column-can-be-harvard-kyoto--kewas-is-and-joining-it-as-slp1-silently-drops-half-the-headings-separately-nfd-stripping-the-vedic-acute-destroys-ś) — KEWA's second machine-key column reads like SLP1 and is Harvard-Kyoto (ś=`z`, ṣ=`S`, ṇ=`N`, `ai`/`au`); joining it as SLP1 silently drops 5,733 of 11,418 headings, just over half, with no error anywhere — 99.99 % confirmed by round-tripping the whole column through the canonical transcoder. Second trap in the same file: NFD + "drop every U+0301" destroys **ś**, which decomposes to `s` + acute, turning every *śa*-word into an *sa*-word before the join.
 - 🟠 [§582. The damage in a digitized index is not always OCR — KEWA's came from a Russian-locale spreadsheet, which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`](#582-the-damage-in-a-digitized-index-is-not-always-ocr--kewas-came-from-a-russian-locale-spreadsheet-which-turned-page-ranges-into-dates-and-leading-hyphen-headwords-into-имя) — 9,587 of 9,588 lines parse first-pattern: there is no OCR noise to census. The real damage is a spreadsheet round-trip in a ru-RU locale — three page ranges stored back as dates (`10-11` → `10.ноя`) and five leading-hyphen headings as `#ИМЯ?` — and both classes are fully recoverable from a redundant column. An OCR-shaped audit finds none of them and reports the file clean.
 - 🔴 [§583. "How many senses does this PWG lemma have?" is undefined until you fix the layer — the naive count runs 10–40× high](#583-how-many-senses-does-this-pwg-lemma-have-is-undefined-until-you-fix-the-layer--the-naive-count-runs-1040-high) — counting distinct `sense_tag` per `key1` in the pwg_ru store conflates five dictionary layers (97 of 254 lemmas straddle more than one), swallows structural apparatus (`main`, `intro`, `Nachtrag`) and derived-stem slots (`caus`, `desid`), and treats `1` and `1)` as different senses: `han` reads as 430 senses naively, 90 within `pwg`, and **11** as numbered senses in one layer. The apparent bimodality — an unpickable 300–430-sense verb-root tail — is an artifact; the store-wide maximum under the correct definition is **16**. A related trap: cross-layer duplicate subcards yield menu options that are textually identical (`[1] раздувание, вздутие` vs `[PW] раздувание, вздутие`), which is unanswerable, so any κ over them measures coin-flips.
+- 🟠 [§584. A style pass applied to CommentaryStrategies' `data/lexical/chN.json` never reaches the apparatus or the print master — `build_sarga_apparatus.py` prefers the aggregate twins in `data/sundara_commentary_to_add.json`, so the source you edited is the one that loses the dedup](#584-a-style-pass-applied-to-commentarystrategies-datalexicalchnjson-never-reaches-the-apparatus-or-the-print-master--build_sarga_apparatuspy-prefers-the-aggregate-twins-in-datasundara_commentary_to_addjson-so-the-source-you-edited-is-the-one-that-loses-the-dedup) — H3498 (Fable 5 `claude-fable-5`, 25-08-2026).
 - 🟢 [§579. Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them](#579-citation-density-is-a-cliff-not-a-spectrum--16-dicts-wrap-citations-in-ls-22-have-literally-zero-and-pwg-alone-carries-801-788-of-them-tag-presence-misclassifies-gra-whose-printed-proof-lives-in-prose) — extends §18's four-dict measurement to all 44: pwg 94.4 % of entries cite at 6.50/entry (801 788 elements, more than the next five dicts combined), mw 79.1 %, ap90 31.2 %; 22 koṣa/index dicts carry zero `<ls>`; pw-vs-pwg is abridgement depth (38.8 % vs 94.4 %); GRA proves in prose + `〔p. N〕` brackets while its `<ls>` share is only 12.0 % — the corpus's biggest citation-extraction residual.
 - 🟢 [§578. Accent digitization is three incompatible devices and svarita is essentially un-digitized](#578-accent-digitization-is-three-incompatible-devices-and-svarita-is-essentially-un-digitized) — `/` is headword-field accentuation in exactly 9 of the 44 dicts (mw 47 589, pw 21 543, pwg 20 876, cae 11 313, ccs 8 476, gra 10 699, lan 2 226, sch 1 124, pwkvn 2 108 lemmas), `\` svarita survives in 17 lemma marks total (pw 5, pwg 10, pwkvn 2), and stc/fri/bur/md-style transliteration carries accent as acute vowels that never reach `<k2>`; the pw-family homonym pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash itself a sense disambiguator any join must preserve.
 - 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
@@ -8593,3 +8598,56 @@ and month abbreviations first; it costs one command.
 
 > **Source:** [KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md)
 > §2 (H3169, Opus 5 `claude-opus-5`). — SanskritLexicography / SamudraManthanam · 2026-08-25
+
+### §584. A style pass applied to CommentaryStrategies' `data/lexical/chN.json` never reaches the apparatus or the print master — `build_sarga_apparatus.py` prefers the aggregate twins in `data/sundara_commentary_to_add.json`, so the source you edited is the one that loses the dedup
+
+H3492 (Fable 5 `claude-fable-5`, 25-08-2026) rewrote 37 lexical notes in
+`data/lexical/ch2.json`…`ch5.json`, the files every handoff and the repo
+CLAUDE.md name as *the* source ("edit JSON, never the generated outputs"). The
+audit went 0 → all-keep-cards-clean, the PR merged, the release was cut. Then
+`python scripts/build_sarga_apparatus.py 2 3 4 5` changed **4 lines** in
+`sarga_02.json`, 4 in `sarga_04.json`, 0 in `sarga_05.json` — the apparatus
+and the print master still carried the old texts.
+
+Cause, in the builder's own docstring: the lexical layer is
+`data/sundara_commentary_to_add.json` (book-level aggregate, `subtype !=
+cross_text`) **∪** `data/lexical/ch{N}.json`, "deduped on
+`(shloka, lemma_iast)`" — and the aggregate wins the dedup. The aggregate holds
+a *copy* of nearly every `chN.json` card (sargas 2–5: 14/10/7/7 twins for
+16/13/8/7 cards). So the file the conventions say to edit is exactly the file
+whose edits are discarded whenever a twin exists. H2833 had hit the same wall
+on sarga 1 and solved it with a one-off
+[`scripts/sync_grintser_pass_book_s1.py`](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/sync_grintser_pass_book_s1.py)
+("build_sarga_apparatus.py prefers them over data/lexical/ch1.json in its
+dedup, so the pass must land here too") — recorded in that script's
+docstring and nowhere a sarga-2 session would read it.
+
+Two corollaries measured the same day:
+
+1. **A lemma typo lives twice.** `V.3.5 lemma_iast = bhujagācārita` (verse:
+   *bhujagācaritām*) and `V.3.12 vasvokaṣārā` (verse: *vasvokasārā*) were wrong in
+   `ch3.json` *and* in the aggregate twin; fixing one leaves a dedup key that no
+   longer matches, so the apparatus would then show **both** the old and the new
+   card. Any `lemma_iast` repair must touch both files in one commit.
+2. **The print master had been stale for nine days.** `data/book/sundarakanda_print_master.md`
+   was last regenerated 10-07 (before H2833 on 16-08); the 25-08 rebuild diffed
+   402 lines, most of them H2833's sarga-1 texts arriving late. CI's
+   "every generator reproduces its artifact" gate does not cover
+   `build_sarga_apparatus.py` / `build_book_apparatus.py`, so nothing flags a
+   source–derived drift there.
+
+**Rule:** after any edit to `data/lexical/chN.json`, run
+`python scripts/sync_grintser_pass_book.py --chapter N --handoff <id>`
+([generalised in H3498](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/sync_grintser_pass_book.py))
+or otherwise land the same change on the aggregate twin, then rebuild
+`build_sarga_apparatus.py N` and `build_book_apparatus.py`, and check the
+derived diff is the size you expect — a 4-line apparatus diff after a
+14-card rewrite is the signature of this trap, not of a small change. Verified
+fix: 31 twins synced, apparatus diffs 28/26/16/14 lines, remaining `MW:` inline
+in apparatus lexical notes = the 7 `reject`/`park` cards only.
+
+> **Source:** [CommentaryStrategies PR #197](https://github.com/gasyoun/CommentaryStrategies/pull/197)
+> (H3498, Fable 5 `claude-fable-5`) after
+> [PR #195](https://github.com/gasyoun/CommentaryStrategies/pull/195) (H3492);
+> report [data/lexical/style_pass_h3492/REPORT.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/lexical/style_pass_h3492/REPORT.md).
+> — CommentaryStrategies · 2026-08-25
