@@ -357,6 +357,45 @@ def resolve_safe_mode(manifest, claude_bin='claude'):
     return True
 
 
+def _is_npm_claude_placeholder(exe):
+    """True only for npm's literal placeholder script (never for real PE or fixtures)."""
+    try:
+        with open(exe, 'rb') as fh:
+            return b'native binary not installed' in fh.read(256)
+    except OSError:
+        return False
+
+
+def ensure_windows_native_binary(base):
+    """Self-heal npm's placeholder bin/claude.exe before spawn (Uprava FINDINGS §542).
+
+    A reinstall that skips the native-binary download leaves npm's ~500-byte
+    placeholder script, which dies at exec time with an opaque Windows error,
+    indistinguishable in call envelopes from quota/auth failures. Fires only on
+    the placeholder's own error-text signature -- never on real binaries or
+    small hermetic-test fixtures; repairs via the package's own install.cjs and
+    fails loud with the manual command when that cannot heal it.
+    """
+    if os.name != 'nt':
+        return
+    exe = os.path.join(base, 'bin', 'claude.exe')
+    if not os.path.isfile(exe) or not _is_npm_claude_placeholder(exe):
+        return
+    node = shutil.which('node')
+    if node:
+        try:
+            subprocess.run([node, 'install.cjs'], cwd=base,
+                           capture_output=True, timeout=600)
+        except (OSError, subprocess.SubprocessError):
+            pass
+    if os.path.isfile(exe) and not _is_npm_claude_placeholder(exe):
+        return
+    raise FileNotFoundError(
+        'refusing to spawn against npm placeholder %s; install.cjs did not '
+        'repair it -- run manually: node "%s"'
+        % (exe, os.path.join(base, 'install.cjs')))
+
+
 def claude_argv_prefix(claude_bin):
     """Return the argv prefix that invokes the Claude CLI directly (Windows-safe).
 
@@ -380,6 +419,7 @@ def claude_argv_prefix(claude_bin):
     node = shutil.which('node')
     shim_dir = os.path.dirname(os.path.abspath(resolved)) or '.'
     base = os.path.join(shim_dir, 'node_modules', '@anthropic-ai', 'claude-code')
+    ensure_windows_native_binary(base)
     entries = sorted(glob.glob(os.path.join(base, 'cli*.cjs')) +
                      glob.glob(os.path.join(base, 'cli*.js')))
     if node and entries:
