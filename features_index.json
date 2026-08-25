@@ -1,0 +1,985 @@
+[
+  {
+    "id": "A1",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "corpus_lexicon",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "A2",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "SanskritRussian glossary (3-layer)",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "A3",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "mw_en_tm.json",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "A4",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "lemma / root glossary (DCS)",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "A5",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "jamison_brereton_en_2014.json",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_jamison_brereton_extract.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "A6",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "rv_renou_evp_witness.jsonl",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_renou_evp_witness.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "B5",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "mw_roots.tsv",
+    "url": "https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv",
+    "repo": "sanskrit-lexicon/csl-orig"
+  },
+  {
+    "id": "B6",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "mw_etymology.tsv / pwg_etymology.tsv",
+    "url": "https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_etymology.tsv",
+    "repo": "sanskrit-lexicon/csl-orig"
+  },
+  {
+    "id": "B7",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "etymology_stats",
+    "url": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02",
+    "repo": "sanskrit-lexicon/csl-orig"
+  },
+  {
+    "id": "B8",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "etymology-oracle.json",
+    "url": "https://github.com/sanskrit-lexicon/csl-atlas",
+    "repo": "sanskrit-lexicon/csl-atlas"
+  },
+  {
+    "id": "B9",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "root_crosswalk.csv + class_concordance.csv",
+    "url": "https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk",
+    "repo": "sanskrit-lexicon/MWS"
+  },
+  {
+    "id": "B10",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Whitney_DCS_audit.json",
+    "url": "https://github.com/gasyoun/WhitneyRoots",
+    "repo": "gasyoun/WhitneyRoots"
+  },
+  {
+    "id": "B11",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "corpus_class_verdicts.json",
+    "url": "https://github.com/gasyoun/WhitneyRoots",
+    "repo": "gasyoun/WhitneyRoots"
+  },
+  {
+    "id": "B12",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "dcs_ppp_verified.tsv",
+    "url": "https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Glagolnye-formy",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "C13",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "union_headwords.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "C14",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "mw_heritage_crosswalk.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "C15",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "DCS↔CDSL crosswalk",
+    "url": "https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/dcs_cdsl_xref.tsv",
+    "repo": "sanskrit-lexicon/csl-apidev"
+  },
+  {
+    "id": "C16",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "union coverage_additions.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "C17",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "csl-atlas alignment-confidence.json",
+    "url": "https://github.com/sanskrit-lexicon/csl-atlas",
+    "repo": "sanskrit-lexicon/csl-atlas"
+  },
+  {
+    "id": "C18",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "csl-atlas low-confidence review set",
+    "url": "https://github.com/sanskrit-lexicon/csl-atlas",
+    "repo": "sanskrit-lexicon/csl-atlas"
+  },
+  {
+    "id": "C19",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "semdom ↔ Amarakosha crosswalk",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/SEMDOM_AK_CROSSWALK_2026.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "D19",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "heritage_forms_oracle.tsv.gz",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "D20",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "heritage_dico_gloss.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "D21",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "heritage_forms_oracle_disagreements.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "D22",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "heritage_only_forms.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "D23",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "heritage_mirror/DATA/ frequency tables",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/heritage_mirror",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "D24",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "sanhw1.xlsx (Sanskrit-Hybrid Word)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E25",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "VisualDCS DCS ingest + lemma summary",
+    "url": "https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/import_dcs_conllu.py",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "E26",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "kosha frequency layer",
+    "url": "https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "E27",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "dcs_form2lemma.tsv",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "E28",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "dcs_lemma2root.tsv",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "E29",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "vidyut_form2lemma.tsv",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "E30",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "surface_dcs_misses.tsv",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "E31",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Zaliznyak grammar index",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E32",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "correction_events_release.csv",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "E38",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "<ls> citation-frequency graph",
+    "url": "https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/citations",
+    "repo": "sanskrit-lexicon/csl-atlas"
+  },
+  {
+    "id": "E39",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "markup-tag census",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E40",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "headword overlap matrix + unique counts",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E47",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "witness-independence map + corroboration re-audit",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E41",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "correction_events_{all,typed,final}.csv",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory/tree/main/observatory/site/src/data",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "E42",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Kompozity names.csv",
+    "url": "https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/README.md",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "E43",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "kosha corpus sandhi (programme)",
+    "url": "https://github.com/gasyoun/kosha/blob/main/SANDHI_PROGRAMME.md",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "E43",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "code-duplication census + LOC/language-mix per repo",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/code_duplication_census.md",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "E44",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "POS distribution per text",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pos_distribution_per_text.tsv",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "E45",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "sense/polysemy distribution per dict (11/44 general lexica)",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/sense_polysemy_per_dict.tsv",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "E46",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "paradigm-cell coverage per root",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/paradigm_cell_coverage_per_root.tsv",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "E49",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "definition typology (synonym / equivalent / encyclopedic)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E50",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Rāmāyaṇa edition-alignment family (Gorresio · Bombay · Southern↔critical)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_bombay_inventory.tsv",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "E48",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "kosha Pāṇinian sūtra↔corpus concordance",
+    "url": "https://github.com/gasyoun/kosha/blob/main/data/concordance/paninian_concordance.tsv",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "E51",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "nominal case×number grid per declension class",
+    "url": "https://github.com/gasyoun/VisualDCS/blob/main/visual/paradigm_nominal.json",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "E52",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "attested declension cells per lemma (Sangram G2)",
+    "url": "https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/declension_cell_coverage",
+    "repo": "gasyoun/SanskritGrammar"
+  },
+  {
+    "id": "F33",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Indische Sprüche",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "F34",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "ortho-drift reform maps",
+    "url": "https://github.com/drdhaval2785/SanskritSpellCheck/tree/master/ortho_drift",
+    "repo": "drdhaval2785/SanskritSpellCheck"
+  },
+  {
+    "id": "F35",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "do-not-file corpus",
+    "url": "https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/nochange/do_not_file_suppress.txt",
+    "repo": "drdhaval2785/SanskritSpellCheck"
+  },
+  {
+    "id": "F36",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "csl-santam Tamil SQLite",
+    "url": "https://github.com/sanskrit-lexicon/csl-santam",
+    "repo": "sanskrit-lexicon/csl-santam"
+  },
+  {
+    "id": "F37",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "OCR'd dictionary front-matter",
+    "url": "https://github.com/gasyoun/csl-guides",
+    "repo": "gasyoun/csl-guides"
+  },
+  {
+    "id": "F43",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "allngramtxt.txt char-n-gram oracle",
+    "url": "https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/ngram",
+    "repo": "sanskrit-lexicon/CORRECTIONS"
+  },
+  {
+    "id": "F44",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "INDOLOGY-L mailing-list archive atlas",
+    "url": "https://github.com/gasyoun/IndologyArchiveAtlas",
+    "repo": "gasyoun/IndologyArchiveAtlas"
+  },
+  {
+    "id": "F45",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Laukika-nyāya (Jacob's \"Handful of Popular Maxims\")",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/data/laukika_nyaya.jsonl",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "F46",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "VK wall archive — «Общество ревнителей санскрита» (vk-ors)",
+    "url": "https://github.com/gasyoun/IndologyScholars/tree/main/vk-ors",
+    "repo": "gasyoun/IndologyScholars"
+  },
+  {
+    "id": "F47",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "PWG literary-source scan-index campaign registry",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory/tree/main/data/pwg_scan_index_tracker",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "F48",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "Sanskrit definition-generation benchmark (defgen) + gloss-grounded WSD pilot",
+    "url": "https://github.com/gasyoun/kosha/blob/main/docs/DEFGEN_MW_GLOSS_EVAL_PROTOCOL.md",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "F49",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "ЛЭС-1990 static dump (les-1990)",
+    "url": "https://github.com/gasyoun/les-1990",
+    "repo": "gasyoun/les-1990"
+  },
+  {
+    "id": "MW",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Monier-Williams Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php"
+  },
+  {
+    "id": "PWG",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Grosses Petersburger Wörterbuch",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/index.php"
+  },
+  {
+    "id": "PW",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Sanskrit-Wörterbuch in kürzerer Fassung",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PWScan/2020/web/index.php"
+  },
+  {
+    "id": "GRA",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Wörterbuch zum Rig-Veda",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/index.php"
+  },
+  {
+    "id": "AP90",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Apte Practical Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/index.php"
+  },
+  {
+    "id": "AP",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Practical Sanskrit-English Dictionary (rev.)",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/APScan/2020/web/index.php"
+  },
+  {
+    "id": "MW72",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Monier-Williams Sanskrit-English (1st ed.)",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MW72Scan/2020/web/index.php"
+  },
+  {
+    "id": "WIL",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Wilson Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/index.php"
+  },
+  {
+    "id": "YAT",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Yates Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/YATScan/2020/web/index.php"
+  },
+  {
+    "id": "GST",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Goldstücker Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/GSTScan/2020/web/index.php"
+  },
+  {
+    "id": "BEN",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Benfey Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/index.php"
+  },
+  {
+    "id": "LAN",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Lanman's Sanskrit Reader Vocabulary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LANScan/2020/web/index.php"
+  },
+  {
+    "id": "LRV",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Vaidya Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/index.php"
+  },
+  {
+    "id": "CAE",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Cappeller Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/CAEScan/2020/web/index.php"
+  },
+  {
+    "id": "MD",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Macdonell Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MDScan/2020/web/index.php"
+  },
+  {
+    "id": "SHS",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Śabda-Sāgara Sanskrit-English Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SHSScan/2020/web/index.php"
+  },
+  {
+    "id": "PD",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Encyclopedic Dictionary of Sanskrit on Historical Principles",
+    "url": "https://sanskrit-lexicon.uni-koeln.de/scans/PDScan/2020/web/index.php"
+  },
+  {
+    "id": "MWE",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Monier-Williams English-Sanskrit Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWEScan/2020/web/index.php"
+  },
+  {
+    "id": "BOR",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Borooah English-Sanskrit Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BORScan/2020/web/index.php"
+  },
+  {
+    "id": "AE",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Apte Student's English-Sanskrit Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/index.php"
+  },
+  {
+    "id": "BUR",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Burnouf Dictionnaire Sanscrit-Français",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/index.php"
+  },
+  {
+    "id": "STC",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Stchoupak Dictionnaire Sanscrit-Français",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/2020/web/index.php"
+  },
+  {
+    "id": "BOP",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Bopp Glossarium Sanscritum",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BOPScan/2020/web/index.php"
+  },
+  {
+    "id": "SKD",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Śabdakalpadruma",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/index.php"
+  },
+  {
+    "id": "VCP",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Vācaspatyam",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/index.php"
+  },
+  {
+    "id": "CCS",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Cappeller Sanskrit Wörterbuch",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/index.php"
+  },
+  {
+    "id": "SCH",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Schmidt Nachträge zum Sanskrit-Wörterbuch",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/index.php"
+  },
+  {
+    "id": "ARMH",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Abhidhānaratnamālā of Halāyudha",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ARMHScan/2020/web/index.php"
+  },
+  {
+    "id": "ABCH",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Abhidhānacintāmaṇi of Hemacandra",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/index.php"
+  },
+  {
+    "id": "ACPH",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Abhidhānacintāmaṇipariśiṣṭa",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/index.php"
+  },
+  {
+    "id": "ACSJ",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Abhidhānacintāmaṇiśiloñcha of Jinadeva",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/index.php"
+  },
+  {
+    "id": "NMMB",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Nāmamālikā of Bhoja",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/index.php"
+  },
+  {
+    "id": "INM",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Index to the Names in the Mahābhārata",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/INMScan/2020/web/index.php"
+  },
+  {
+    "id": "VEI",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Vedic Index of Names and Subjects",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/VEIScan/2020/web/index.php"
+  },
+  {
+    "id": "PUI",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "The Purāṇa Index",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/index.php"
+  },
+  {
+    "id": "BHS",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Buddhist Hybrid Sanskrit Dictionary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/index.php"
+  },
+  {
+    "id": "FRI",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Friš Sanskrit Reader Vocabulary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/index.php"
+  },
+  {
+    "id": "ACC",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Aufrecht's Catalogus Catalogorum",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/index.php"
+  },
+  {
+    "id": "KRM",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Kṛdantarūpamālā",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/KRMScan/2020/web/index.php"
+  },
+  {
+    "id": "IEG",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Indian Epigraphical Glossary",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/index.php"
+  },
+  {
+    "id": "SNP",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Meulenbeld's Sanskrit Names of Plants",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SNPScan/2020/web/index.php"
+  },
+  {
+    "id": "PE",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Puranic Encyclopedia",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PEScan/2020/web/index.php"
+  },
+  {
+    "id": "PGN",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Names in the Gupta Inscriptions",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/index.php"
+  },
+  {
+    "id": "MCI",
+    "section": "II. Dictionaries — the 44 digitised from canonical source text",
+    "title": "Mahābhārata Cultural Index",
+    "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MCIScan/2020/web/index.php"
+  },
+  {
+    "id": "G1",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Cologne Digital Sanskrit Dictionaries (CDSL)",
+    "url": "https://github.com/sanskrit-lexicon/csl-websanlexicon",
+    "repo": "sanskrit-lexicon/csl-websanlexicon"
+  },
+  {
+    "id": "G2",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "C-SALT / Kosh API",
+    "url": "https://github.com/sanskrit-lexicon/csl-apidev",
+    "repo": "sanskrit-lexicon/csl-apidev"
+  },
+  {
+    "id": "G3",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "kosha — translator-first dictionary",
+    "url": "https://github.com/gasyoun/kosha",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "H4",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Samudra Manthanam",
+    "url": "https://github.com/gasyoun/SamudraManthanam",
+    "repo": "gasyoun/SamudraManthanam"
+  },
+  {
+    "id": "H5",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Sanskrit→Russian Glossary",
+    "url": "https://github.com/gasyoun/SanskritRussian",
+    "repo": "gasyoun/SanskritRussian"
+  },
+  {
+    "id": "H6",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Russian Rāmāyaṇa portal",
+    "url": "https://github.com/gasyoun/RussianRamayana",
+    "repo": "gasyoun/RussianRamayana"
+  },
+  {
+    "id": "H7",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Sanskrit Karaoke",
+    "url": "https://github.com/gasyoun/SanskritKaraoke",
+    "repo": "gasyoun/SanskritKaraoke"
+  },
+  {
+    "id": "H8",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Systema in-cabinet reading packs («Старт чтения»)",
+    "url": "https://github.com/gasyoun/Systema-Sanscriticum/blob/main/app/Http/Controllers/ReadingPackController.php",
+    "repo": "gasyoun/Systema-Sanscriticum"
+  },
+  {
+    "id": "I8",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "CSL Observatory",
+    "url": "https://github.com/sanskrit-lexicon/csl-observatory",
+    "repo": "sanskrit-lexicon/csl-observatory"
+  },
+  {
+    "id": "I9",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "VisualDCS — verb-form frequency",
+    "url": "https://github.com/gasyoun/VisualDCS",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "I10",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "VisualDCS — paradigm browser",
+    "url": "https://github.com/gasyoun/VisualDCS",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "I11",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "BookIndex / Zalizniakiada",
+    "url": "https://github.com/gasyoun/BookIndex",
+    "repo": "gasyoun/BookIndex"
+  },
+  {
+    "id": "I12",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "IndologyScholars — forum archive",
+    "url": "https://github.com/gasyoun/IndologyScholars",
+    "repo": "gasyoun/IndologyScholars"
+  },
+  {
+    "id": "I14",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "VisualDCS — nominal paradigm",
+    "url": "https://github.com/gasyoun/VisualDCS",
+    "repo": "gasyoun/VisualDCS"
+  },
+  {
+    "id": "I13",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "vk-ors wall retrospective",
+    "url": "https://github.com/gasyoun/IndologyScholars/tree/main/vk-ors",
+    "repo": "gasyoun/IndologyScholars"
+  },
+  {
+    "id": "J13",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "CSL Guides",
+    "url": "https://github.com/sanskrit-lexicon/csl-guides",
+    "repo": "sanskrit-lexicon/csl-guides"
+  },
+  {
+    "id": "J14",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "CommentaryStrategies essays",
+    "url": "https://github.com/gasyoun/CommentaryStrategies",
+    "repo": "gasyoun/CommentaryStrategies"
+  },
+  {
+    "id": "J15",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "SamudraManthanam corpus-FAQ",
+    "url": "https://github.com/gasyoun/ZettelkastenWiki",
+    "repo": "gasyoun/ZettelkastenWiki"
+  },
+  {
+    "id": "J16",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "PWG article dashboard",
+    "url": "https://github.com/gasyoun/SanskritLexicography",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "J17",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Uprava articles dashboard",
+    "url": "https://github.com/gasyoun/Uprava",
+    "repo": "gasyoun/Uprava"
+  },
+  {
+    "id": "J21",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "kosha data & tools directory",
+    "url": "https://github.com/gasyoun/kosha/blob/main/scripts/build_directory.py",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "K18",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "CSL App (Flutter)",
+    "url": "https://github.com/sanskrit-lexicon/csl-app",
+    "repo": "sanskrit-lexicon/csl-app"
+  },
+  {
+    "id": "K19",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Systema Sanscriticum",
+    "url": "https://github.com/gasyoun/Systema-Sanscriticum",
+    "repo": "gasyoun/Systema-Sanscriticum"
+  },
+  {
+    "id": "K20",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "csl-santam — Tamil lexicon search",
+    "url": "https://github.com/sanskrit-lexicon/csl-santam",
+    "repo": "sanskrit-lexicon/csl-santam"
+  },
+  {
+    "id": "L1",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "sanskrit-util",
+    "url": "https://github.com/sanskrit-lexicon/sanskrit-util",
+    "repo": "sanskrit-lexicon/sanskrit-util"
+  },
+  {
+    "id": "L10",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "KeySwap (in sanskrit-util)",
+    "url": "https://github.com/sanskrit-lexicon/sanskrit-util/tree/main/tools/KeySwap",
+    "repo": "sanskrit-lexicon/sanskrit-util"
+  },
+  {
+    "id": "L2",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "csl-pywork correction pipeline",
+    "url": "https://github.com/sanskrit-lexicon/csl-pywork/tree/main/v02/makotemplates/pywork",
+    "repo": "sanskrit-lexicon/csl-pywork"
+  },
+  {
+    "id": "L3",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "web-endpoint template",
+    "url": "https://github.com/sanskrit-lexicon/csl-websanlexicon/tree/main/v02/makotemplates/web/webtc",
+    "repo": "sanskrit-lexicon/csl-websanlexicon"
+  },
+  {
+    "id": "L4",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "kosha/app/render.py",
+    "url": "https://github.com/gasyoun/kosha/blob/main/app/render.py",
+    "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "L5",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "ls_resolver.py + nws_ls_markup.py (H1809, H1909)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L6",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "build_vidyut_fallback.py",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L7",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "RU translation kit",
+    "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L11",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "pwg_ru headless control plane (H1618)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cohort_engine.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L8",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "ZettelkastenWiki",
+    "url": "https://github.com/gasyoun/ZettelkastenWiki",
+    "repo": "gasyoun/ZettelkastenWiki"
+  },
+  {
+    "id": "L9",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "CI & hygiene templates",
+    "url": "https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md",
+    "repo": "gasyoun/github-spine"
+  },
+  {
+    "id": "M10",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "Samsaadhanii / SCL (Amba Kulkarni, UoHyd)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "M11",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "Sanskrit Heritage (Gérard Huet, INRIA)",
+    "url": "https://github.com/darkone23/Heritage_Resources",
+    "repo": "darkone23/Heritage_Resources"
+  },
+  {
+    "id": "M12",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "DharmaMitra (Berkeley)",
+    "url": "https://dharmamitra.org/"
+  },
+  {
+    "id": "M13",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "VedaWeb (Cologne / UZH, CC BY 4.0)",
+    "url": "https://vedaweb.uni-koeln.de/rigveda/"
+  },
+  {
+    "id": "M14",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "vidyut (Ambuda)",
+    "url": "https://github.com/ambuda-org/vidyut",
+    "repo": "ambuda-org/vidyut"
+  }
+]
