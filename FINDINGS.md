@@ -1,6 +1,11 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 24-08-2026 (§580 — AP90's `<pc>` field is a
+_Created: 26-06-2026 · Last updated: 25-08-2026 (§581 — a dictionary index's
+"SLP1" column can be Harvard-Kyoto, and joining it as SLP1 silently drops half
+the headings; NFD-stripping the Vedic acute destroys ś; §582 — the damage in a
+digitized index is not always OCR: KEWA's came from a Russian-locale spreadsheet,
+which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`;
+§580 — AP90's `<pc>` field is a
 third, distinct shape from mw/pwg — page-column-letter `NNNN-a/b/c`, not comma
 or vol-page — csl-atlas's scan-URL builder silently resolved 0% of AP90 until
 fixed, now 99.29%; §579 — citation density is a cliff: pwg 94.4 % of entries cite at 6.50 `<ls>`/entry and alone carries 801 788 elements, 16 dicts cite at all, 22 have literally zero; tag presence misclassifies GRA, whose printed proof lives in prose brackets)
@@ -8473,3 +8478,76 @@ convention.
 > [`data/metalex/L8_SCAN_LINK_CENSUS.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/metalex/L8_SCAN_LINK_CENSUS.md)
 > (H2368 census, re-measured H2368-A10) +
 > [`scripts/lib/cologne-links.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lib/cologne-links.mjs). — csl-atlas / csl-orig · 2026-08-24
+
+### §581. A dictionary index's "SLP1" column can be Harvard-Kyoto — KEWA's is, and joining it as SLP1 silently drops half the headings; separately, NFD-stripping the Vedic acute destroys ś
+
+The OCRed KEWA heading index
+(`SamudraManthanam/Index/lib/x86_64-win64/Data/KEWA.txt`, 9,587 blocks →
+11,418 headings) ships **two** slashed machine-key columns per heading. The
+second sits exactly where an SLP1 column would sit and reads like SLP1 —
+`aMzaH`, `akSauhiNI`, `akSNoti`. It is **Harvard-Kyoto**: ś is `z` (SLP1 `S`),
+ṣ is `S` (SLP1 `z`), ṇ is `N` (SLP1 `R`), ṭ is `T` (SLP1 `w`), and the
+diphthongs stay `ai`/`au` (SLP1 `E`/`O`).
+
+Converting HK→SLP1 and comparing against the canonical
+[`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)
+transcoder's output on the IAST column agrees on **9,930 of 9,931 headings
+(99.99 %)** — the one exception, `hvātar-` keyed `hvaAtar`, is a source typo.
+The two encodings coincide on every letter outside that set, so **5,684
+headings look fine and 5,733 are silently wrong** if the column is joined
+against SLP1 data such as `csl-orig`. Just over half a dictionary, lost with no
+error anywhere.
+
+**Implication:** never infer a machine-key column's scheme from the fact that
+it is ASCII and sits beside IAST. Test it — one round-trip through the
+canonical transcoder over the whole column tells you in seconds, and the
+agreement rate is the proof. HK and SLP1 are *both* ASCII, *both* lowercase-ish
+and differ on exactly the letters a Sanskrit index is full of.
+
+**The second trap, in the same file.** KEWA marks the udātta with a combining
+acute (U+0301) over the accented vowel. The obvious way to strip it —
+`unicodedata.normalize("NFD", s)`, drop every U+0301, recompose — also destroys
+**ś**, because ś decomposes to `s` + U+0301 too. Every *śa*-word silently
+becomes an *sa*-word before the join. The first pipeline run reported 5,731
+"transcoder disagreements" that were entirely this bug and nothing else. Strip
+the acute only when the base letter is a vowel (`a i u e o`, plus the vocalic
+`ṛ`/`ḷ` written base + dot-below):
+[`kewa_accent.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/etym/kewa_accent.py).
+The same trap is waiting in any accented-IAST source — SCH's accented headwords,
+Grassmann, Renou.
+
+> **Source:** [KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md)
+> §2a (H3169, Opus 5 `claude-opus-5`). — SanskritLexicography / SamudraManthanam · 2026-08-25
+
+### §582. The damage in a digitized index is not always OCR — KEWA's came from a Russian-locale spreadsheet, which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`
+
+H3169 was scoped to census "OCR noise (broken diacritics, run-together
+headings, page-furniture lines)" in the KEWA index. **There is none.** 9,587 of
+9,588 lines parse against the first pattern tried; the exception is the header
+comment. No hyphenation debris, no running heads, no column bleed.
+
+What the file does carry is the signature of a round-trip through a spreadsheet
+opened in a **Russian locale**:
+
+| Class | Rows | Damage | Recovery |
+|---|---:|---|---|
+| page-range → date | 3 | `10-11` stored back as `10.ноя`; also `11.дек`, `дек.13` | the image filename kept it: `2-010-11-05.jpg` → pages 10–11 |
+| leading hyphen → formula error | 5 blocks | `-ā`, `-īm`, `-tṛp`, `-dhṛk`, `-prāṇi` parsed as formulas, stored as `#ИМЯ?` (`#NAME?`) | the machine-key column was not damaged and carries the true form |
+| legacy-font Latin leak | 3 | a Devanāgarī consonant present as literal `Z` (`मद्गुZअ-`, `Zअरणः`) — the legacy-font code point for श/ष never mapped | none; flagged, key marked unusable |
+
+All eight Cyrillic-contaminated rows in the file come from those two classes,
+and both are **fully recoverable** from a redundant column that the spreadsheet
+did not touch.
+
+**Implication, and it generalizes past this file:** audit a digitized asset for
+the pipeline it actually went through, not the pipeline its provenance note
+names. A `#NAME?`, a `#ИМЯ?`, a `10.ноя`, a right-aligned number that should be
+text, a leading `-`/`+`/`=` turned into an error — these say *spreadsheet*, and
+they cluster on exactly the rows a Sanskrit index is most likely to have
+(bound forms beginning with a hyphen, page *ranges*). An OCR-shaped audit —
+diacritic checks, character-confusion matrices, line-shape heuristics — will
+find none of them and report the file clean. Grep for the locale's error tokens
+and month abbreviations first; it costs one command.
+
+> **Source:** [KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md)
+> §2 (H3169, Opus 5 `claude-opus-5`). — SanskritLexicography / SamudraManthanam · 2026-08-25

@@ -1,0 +1,27 @@
+{
+  "rows": 11418,
+  "matched": 9005,
+  "matched_pct": 78.87,
+  "by_match_basis": {
+    "ambiguous-multi": 46,
+    "as-stem-disambiguated": 129,
+    "exact": 2023,
+    "finite-form->root": 632,
+    "inflected-form->stem": 634,
+    "key-unusable": 16,
+    "routes-disagree": 612,
+    "sandhi/diacritic-normalized": 5670,
+    "unmatched": 2413,
+    "unmatched-diagnostic:feminine-in-stem": 118,
+    "unmatched-diagnostic:no-nearby-pwg-headword": 1921,
+    "unmatched-diagnostic:present-stem->root": 358
+  },
+  "sources": {
+    "pwg_key1": "SanskritLexicography/HeadwordLists/now-2026/PWG-unique-key1-106082.txt",
+    "pwg_key1_rows": 106082,
+    "dcs_form2lemma": "SanskritRussian/dcs_form2lemma.tsv",
+    "dcs_present": true,
+    "vidyut_form2lemma": "SanskritRussian/vidyut_form2lemma.tsv",
+    "vidyut_present": true
+  }
+}

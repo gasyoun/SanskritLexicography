@@ -1,0 +1,14 @@
+{
+  "pwg_key1_headwords": 106082,
+  "lane_modern_ie_kewa": 7157,
+  "lane_traditional_cologne": 11087,
+  "both_lanes": 1665,
+  "modern_only": 5492,
+  "traditional_only": 9422,
+  "pwg_with_no_lane": 89503,
+  "note": "Lanes are reported, never merged - the C4 ruling keeps *traditional* (Cologne) and *modern IE* (KEWA/EWA) as separately labelled fields.",
+  "sources": {
+    "modern_ie": "kewa_pwg_crosswalk.tsv",
+    "traditional": "csl-orig/v02/pwg/pwg_etymology.tsv"
+  }
+}
