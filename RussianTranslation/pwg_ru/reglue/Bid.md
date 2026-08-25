@@ -447,7 +447,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Mit ˚samud — прорываться наружу, [Harṣac. 153,15; 167,9.]
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] Mit upapra, vgl. [Pischel, Ved. Stud. I,72.]
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] Mit upapra, ср. [Pischel, Ved. Stud. I,72.]
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] Mit ˚vini, vinibhinna [S II,267,18] — опечатка вм. vinirbhinna.
 

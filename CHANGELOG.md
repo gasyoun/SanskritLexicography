@@ -15,6 +15,10 @@ not an error.
 ## [Unreleased]
 
 ## [1.144.97] - 2026-08-25
+
+### Fixed
+- **H3522 — the h180 vote sheet re-cut as v7 with the crit-address gap marks live** (OxAlpha, 25-08-2026): H3501's residual. The blocker dissolved on inspection — csl-pyutil was never drifted; the local clone sat on v0.21.0 while [v0.22.0](https://github.com/gasyoun/csl-pyutil) (split_layout DE|RU chrome, H3207) was already on origin/main, so both sheet builders' gates pass unchanged after a fast-forward. Regenerating v6 itself correctly refused: eview_binding.write_lock\ raised \LockCollision\ — an awaiting-vote sheet cannot be silently replaced, and four days of store drift had moved the inputs anyway (Bid: one untranslated «vgl.» → «ср.», now refreshed in the committed card). Following the v4→v5→v6 precedent, this is a deliberate **v7 re-cut**: \sheet_id h180-reglue-spotcheck-v7-2026-08-25\, fresh lock, [REVIEW_SHEETS_INDEX](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md) row supersedes v6 (kept published for comparison). Measured on the rendered sheet: all **994** \= ≈крит. \ addresses carry ∅ and none carries ⚑ — the mintable-gap count no longer includes deliberately-unlinkable critical addresses ([REGLUE_SPEC §8.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md)).
+
 ### Fixed
 - **H3510 — LANG_PARITY ledger re-stamped after H3500; required `RussianTranslation gates` check green again on master** (Fable 5 `claude-fable-5`, 25-08-2026): #1884 changed `src/promote_final_cards.py` (`merge_store_rows` incoming-dup collapse keyed on `(sense_tag, ru)`) without refreshing the 17 ledger entries that hash it, so `test_lang_parity_ledger_complete` failed on every PR since. Re-derived on the call graph — `promote_en.py` never imports `merge_store_rows`, so the RU-only key cannot reach the EN lane — every verdict stands; receipt [`src/pilot/h3500_parity_restamp.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h3500_parity_restamp.py), window selftest 213/213.
 

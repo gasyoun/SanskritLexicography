@@ -99,7 +99,7 @@ REVIEW = os.path.join(DATA, "review")
 # The 16-08 generation was built but never published; its inputs (the wave-3
 # reglue jsons) moved the same day, so it can no longer be reproduced and its
 # lock was retired rather than re-bound. 17-08 is the generation that ships.
-GENERATED = "2026-08-21"
+GENERATED = "2026-08-25"
 
 ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5), ("yat", 5),
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
@@ -620,9 +620,9 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v6-2026-08-21"
+    sheet_id = "h180-reglue-spotcheck-v7-2026-08-25"
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v6.decisions.json")
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v7.decisions.json")
     config.update({
         "sheet_id": sheet_id,
         "split_layout": True,
@@ -690,14 +690,14 @@ def main():
             r'<details class="store-details"[^>]*>.*?</details>', "", doc, flags=re.S):
         raise SystemExit("anatomy leaked outside closed details")
 
-    sample = os.path.join(REVIEW, "h180_reglue_v6_sample.jsonl")
+    sample = os.path.join(REVIEW, "h180_reglue_v7_sample.jsonl")
     # newline="\n": the tracked sample is LF in git, and a Windows run without
     # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
     with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
-    out = os.path.join(REVIEW, "h180_reglue_v6_sheet.html")
+    out = os.path.join(REVIEW, "h180_reglue_v7_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
     write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED, source_html=out)
