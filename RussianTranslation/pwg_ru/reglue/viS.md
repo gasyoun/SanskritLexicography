@@ -590,9 +590,6 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 [KUMĀRAS. 1,50.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?1,50) перенести куда-либо
 [RĀJA-TAR. 5,39.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,39)
 
-**verb.10)** — 10) направлять на (loc.): *manaḥ*
-[BHĀG. P. 9,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,15)
-
 **verb.2)** — 2) опускать, ставить: *tatra taṃ girim*
 [R. 6,84,30.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?6,84,30)
 [HARIV. 12404.](https://sanskrit-lexicon-scans.github.io/hariv?12404) [12406.](https://sanskrit-lexicon-scans.github.io/hariv?12406) *tvamiha — devarājena maināka parighaḥ saṃniveśitaḥ*
@@ -629,6 +626,9 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 **verb.9)** — 9) возлагать на кого-либо что-либо, поручать: *tatsaṃniveśitadhureṇa bhartrā*
 [ŚĀK. 95](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?95), v. l. *dvidhā kṛtvā tayorvarṣaṃ puṣkaraḥ saṃnyaveśayat*
 [MĀRK. P. 53,20.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?53,20)
+
+**verb.10)** — 10) направлять на (loc.): *manaḥ*
+[BHĀG. P. 9,9,15.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?9,9,15)
 
 **verb.intro)** — ср. *saṃniveśa* . — caus.
  1) вводить (в дом и т.д.), расквартировывать: *kṛṣṇaṃ svapuraṃ saṃnyaveśayat* (*saṃpraveśayat* более новое изд.)

@@ -544,15 +544,9 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 
 **PPP-siddha-9)** — 9) достигший высшей цели, обретший совершенство, блаженный [MBH. 5,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2982) = [≈Вульг. 5.83.63](mbh/5.83.html#v63) = ≈крит. 05,81.63a [6,645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.645) = [≈Вульг. 6.17.9](mbh/6.17.html#v9) = ≈крит. 06,17.9a [13,3842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3842) = [≈Вульг. 13.81.40](mbh/13.81.html#v40) = ≈крит. 13,80.38c [R. GORR. 2,70,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,70,16) [BRAHMA-P. in LA. (III) 48,18.] [BHĀG. P. 1,19,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,36) [6,4,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,43) [16,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,50) *yoga˚* [BHAG. 4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) *anekajanma˚* [6,45.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,45) *tapaścaraṇa˚* [R. 1,51,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,25) ([52,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,52,24) [GORR.]). *jñānavijñāna˚* [BHĀG. P. 11,19,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,19,3)
 
-**cross-ref-T175-T176)** — ср. *prasiddhi*.
-
 **cross-ref-T48-T49)** — ср. *saṃsiddhi, sāṃsiddhya*.
 
-**derivative-T177-T181)** — *saṃpra*, partic. *˚siddha* приготовленный: *ghṛtaṃ pibetklītakasaṃprasiddham* [SUŚR. 2,108,19.]
-
-**derivative-T182)** — *sam*
-1) удаваться, осуществляться: *yasyārabdhaṃ sarvameva saṃsidhyati* [PAÑCAT. 201,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?201,7)
-— 2) достигать высшей цели, обретать блаженство: *japyenaiva tu saṃsidhyedbrāhmaṇaḥ* [M. 2,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,87) [BHĀG. P. 11,18,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,18,25) *saṃsidhyasva* [MBH. 3,12025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12025) — partic. *saṃsiddha*
+**cross-ref-T175-T176)** — ср. *prasiddhi*.
 
 **derivative-T57-T58)** — ср. *arthasiddha, manoratha˚, mantra˚, yathā˚, rasa˚, śveta˚, sarvārtha˚, saha˚, sva˚*.
 
@@ -561,6 +555,12 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 — 2) *sādhayati* [P. 6,1,49](https://ashtadhyayi.com/sutraani/6/1/49); см. 1. *sādh*.
 
 **derivative-T68-T72)** — *anu* partic. *˚siddha* постепенно осуществившийся: *tapasā kramānusiddhena* [BHĀG. P. 4,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,23,8)
+
+**derivative-T177-T181)** — *saṃpra*, partic. *˚siddha* приготовленный: *ghṛtaṃ pibetklītakasaṃprasiddham* [SUŚR. 2,108,19.]
+
+**derivative-T182)** — *sam*
+1) удаваться, осуществляться: *yasyārabdhaṃ sarvameva saṃsidhyati* [PAÑCAT. 201,7.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?201,7)
+— 2) достигать высшей цели, обретать блаженство: *japyenaiva tu saṃsidhyedbrāhmaṇaḥ* [M. 2,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,87) [BHĀG. P. 11,18,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,18,25) *saṃsidhyasva* [MBH. 3,12025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12025) — partic. *saṃsiddha*
 
 **nis-sidh-1)** — *abhi*
 1) удаваться, осуществляться: *artho 'bhisidhyati* [MBH. 12,7427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7427) = [≈Вульг. 12.207.7](mbh/12.207.html#v7) = ≈крит. 12,200.7a
