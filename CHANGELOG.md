@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **H3510 — LANG_PARITY ledger re-stamped after H3500; required `RussianTranslation gates` check green again on master** (Fable 5 `claude-fable-5`, 25-08-2026): #1884 changed `src/promote_final_cards.py` (`merge_store_rows` incoming-dup collapse keyed on `(sense_tag, ru)`) without refreshing the 17 ledger entries that hash it, so `test_lang_parity_ledger_complete` failed on every PR since. Re-derived on the call graph — `promote_en.py` never imports `merge_store_rows`, so the RU-only key cannot reach the EN lane — every verdict stands; receipt [`src/pilot/h3500_parity_restamp.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h3500_parity_restamp.py), window selftest 213/213.
+
 ## [1.144.96] - 2026-08-25
 
 ### Fixed
