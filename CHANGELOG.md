@@ -12,7 +12,10 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
-## [Unreleased]
+## [1.144.98] - 2026-08-25
+
+### Fixed
+- **H3500 — the 3 pwg_ru TM defect classes from the H3456 akshara.ru benchmark fixed at generator + store level** (OxAlpha `opencode/x-preview-f-free`, 25-08-2026): 5 byte-identical duplicate rows dropped keep-best (`sense_tag` joins the dedupe cluster key — identical ru under different zz-tags is tagger noise, not duplication); canonical [`pwg_ru_entry_join.assemble_entry`](RussianTranslation/src/pwg_ru_entry_join.py) collapses PWG-homograph duplicate blocks at entry join (B090 `vasin` proof: naive join 207→103 chars) — consumers must never bare-join per-key1; `merge_store_rows` now collapses incoming dups by `(sense_tag, ru)` AND lands from the collapsed set (the old tail re-appended raw promoted rows, the origin of the copies); 13 BHSD advisory rows carry an additive `advisory_enrichment` marker. Store 11,603→11,598 rows, mass −0.006%, scanner gate green on both SL store and [pwg-ru-data](https://github.com/gasyoun/pwg-ru-data/pull/1) TM. Manual residuals (3 `<is>`-genitive rewordings, 53 degenerate-tag copies) documented in the [H3500 report](RussianTranslation/reports/H3500_PWGRU_TM_DEFECT_FIX_25-08-2026.md). Follow-through: H3510 re-stamped LANG_PARITY (#1886).
 
 ## [1.144.97] - 2026-08-25
 
