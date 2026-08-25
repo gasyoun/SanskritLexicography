@@ -658,8 +658,37 @@ def _atomic_extend_jsonl(path, rows, lang, fault_hook=None):
         raise
 
 
+class TmBuildRefused(RuntimeError):
+    """build() declined to write the canonical TM sidecar from a foreign store.
+
+    The 26-07-2026 incident: a scratch/selftest store was built with out=None,
+    tm_path() resolved the CANONICAL sidecar, and one synthetic entry
+    (`window_selftest_scratch_store.jsonl`) replaced the production TM — lane A
+    then sat dry for a month while promotions accumulated in the real store.
+    The canonical sidecar is only ever written from the canonical store."""
+
+
+def _canonical_source_ok(store_path):
+    """True when `store_path` IS the canonical store (the only out=None source)."""
+    import store_path as sp
+    try:
+        canonical = sp.canonical_store(os.path.join(
+            os.path.dirname(os.path.abspath(__file__)),
+            'pwg_ru_translated.jsonl'))
+        return os.path.samefile(store_path, canonical)
+    except OSError:
+        return False
+
+
 def build(store_path, lang, out=None, fault_hook=None, timestamp=None,
           journal_path=None):
+    if out is None and not _canonical_source_ok(store_path) \
+            and os.environ.get('PWG_TM_BUILD_ALLOW_FOREIGN_STORE') != '1':
+        raise TmBuildRefused(
+            'refusing to write the canonical %s TM sidecar from non-canonical '
+            'store %r — pass an explicit out= for scratch builds (or set '
+            'PWG_TM_BUILD_ALLOW_FOREIGN_STORE=1 deliberately)'
+            % (lang, store_path))
     entries, skipped = reconstruct_cards(store_path, lang)
     payload = {
         'schema': CARD_SCHEMA,
