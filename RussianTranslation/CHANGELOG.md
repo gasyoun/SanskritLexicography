@@ -9,6 +9,7 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
+- **Headless spawn self-heals the 500-byte `claude.exe` npm placeholder before any paid call (OxAlpha `opencode/x-preview-f-free`, 25-08-2026).** Uprava FINDINGS §542 recurrence showed npm reinstalls re-create the placeholder and the CLI dies at exec time with an opaque Windows error that call envelopes cannot separate from quota/auth failures. `headless_worker.ensure_windows_native_binary()` now fires on the placeholder's own error-text signature inside `claude_argv_prefix` (never on real binaries or hermetic fixtures), repairs via the package's own `install.cjs`, and fails loud with the manual command when unhealed.
 
 ## [1.144.92] - 2026-08-24
 
