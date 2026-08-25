@@ -1,6 +1,11 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 24-08-2026 (§580 — AP90's `<pc>` field is a
+_Created: 26-06-2026 · Last updated: 25-08-2026 (§581 — a dictionary index's
+"SLP1" column can be Harvard-Kyoto, and joining it as SLP1 silently drops half
+the headings; NFD-stripping the Vedic acute destroys ś; §582 — the damage in a
+digitized index is not always OCR: KEWA's came from a Russian-locale spreadsheet,
+which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`;
+§580 — AP90's `<pc>` field is a
 third, distinct shape from mw/pwg — page-column-letter `NNNN-a/b/c`, not comma
 or vol-page — csl-atlas's scan-URL builder silently resolved 0% of AP90 until
 fixed, now 99.29%; §579 — citation density is a cliff: pwg 94.4 % of entries cite at 6.50 `<ls>`/entry and alone carries 801 788 elements, 16 dicts cite at all, 22 have literally zero; tag presence misclassifies GRA, whose printed proof lives in prose brackets)
@@ -52,7 +57,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §580) whatever its section, so existing numbers never shift; when a finding is later
+(currently §583) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -317,6 +322,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§575. Root citation is not "root vs 3sg present" — it's zero-grade `kf` (19/44 dicts) vs guṇa-grade `kar` (pw/pwg/pwkvn/sch), which WhitneyRoots' `roots.csv` cannot join at all; class digits fragment across four incompatible devices](#575-root-citation-is-not-root-vs-3sg-present--its-zero-grade-kf-1944-dicts-vs-guṇa-grade-kar-pwpwgpwkvnsch-which-whitneyroots-rootscsv-cannot-join-at-all-class-digits-fragment-across-four-incompatible-devices) — the same root ("to do") is lemmatized as `kf` in 19 dicts and as `kar` in the four PW-family dicts (pw/pwg/pwkvn/sch); `roots.csv`'s header has no pw_id/pwg_id column at all, so Cologne's two largest dictionaries (643K/593K lines) are currently unjoinable. Class digits: MD's `<cl>` tag, MW/WIL's `<ab>cl.</ab>` text, Apte's `€1`–`€10` glyph, PWG's German "Kl." prose — four devices, none shared.
 - 🔴 [§577. A citation resolver that mints a well-formed URL is not evidence the address exists — `ls_resolver` happily places `ṚV. 99,999,999`, so "it resolves" cannot be the acceptance test for a split or a wrapper](#577-a-citation-resolver-that-mints-a-well-formed-url-is-not-evidence-the-address-exists--ls_resolver-happily-places-v-9999999-so-resolves-cannot-be-the-acceptance-test-for-a-split-or-a-wrapper) — the resolver is a formatter, not a validator: it range-checks nothing. Any pass that INVENTS an address (splitting a multi-address `<ls>`, wrapping a bare citation) and accepts it because a URL came back will mint links that work and point at the wrong place — a worse failure than no link, because it looks right. Measured on pwg.txt: a resolve-only rule proposed 2,838 splits, of which 0 were correct; page references `11087 (p. 572)`, note markers `83, N. 6` and Oxford column letters `100,a. 101,b` all "resolve". The correct population was in `pw` (141), not `pwg` (0).
 - 🟠 [§580. AP90's `<pc>` field is a third, distinct shape from mw/pwg — page-column-letter (`NNNN-a/b/c`), not comma or vol-page — and a tool that assumes one shape silently drops 100% of a dict's scan links](#580-ap90s-pc-field-is-a-third-distinct-shape-from-mwpwg--page-column-letter-nnnn-abc-not-comma-or-vol-page--and-a-tool-that-assumes-one-shape-silently-drops-100-of-a-dicts-scan-links) — csl-atlas's Cologne scan-URL builder trusted only mw's `page,column` and pwg's `vol-page` shapes, so AP90 (page-column-*letter*) silently resolved 0% of 34,882 entries despite correct scan-directory registration; fixed 24-08-2026, now 99.29%; a residual 246 entries carry a *fourth* shape (`NNNN-N` numeric suffix), unresolved. Corrects §23's aside that AP90's `<pc>` is "numeric `<pc>0002-1`" — that's the 0.7% residual, not the dominant convention.
+- 🔴 [§581. A dictionary index's "SLP1" column can be Harvard-Kyoto — KEWA's is, and joining it as SLP1 silently drops half the headings; separately, NFD-stripping the Vedic acute destroys ś](#581-a-dictionary-indexs-slp1-column-can-be-harvard-kyoto--kewas-is-and-joining-it-as-slp1-silently-drops-half-the-headings-separately-nfd-stripping-the-vedic-acute-destroys-ś) — KEWA's second machine-key column reads like SLP1 and is Harvard-Kyoto (ś=`z`, ṣ=`S`, ṇ=`N`, `ai`/`au`); joining it as SLP1 silently drops 5,733 of 11,418 headings, just over half, with no error anywhere — 99.99 % confirmed by round-tripping the whole column through the canonical transcoder. Second trap in the same file: NFD + "drop every U+0301" destroys **ś**, which decomposes to `s` + acute, turning every *śa*-word into an *sa*-word before the join.
+- 🟠 [§582. The damage in a digitized index is not always OCR — KEWA's came from a Russian-locale spreadsheet, which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`](#582-the-damage-in-a-digitized-index-is-not-always-ocr--kewas-came-from-a-russian-locale-spreadsheet-which-turned-page-ranges-into-dates-and-leading-hyphen-headwords-into-имя) — 9,587 of 9,588 lines parse first-pattern: there is no OCR noise to census. The real damage is a spreadsheet round-trip in a ru-RU locale — three page ranges stored back as dates (`10-11` → `10.ноя`) and five leading-hyphen headings as `#ИМЯ?` — and both classes are fully recoverable from a redundant column. An OCR-shaped audit finds none of them and reports the file clean.
 - 🟢 [§579. Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them](#579-citation-density-is-a-cliff-not-a-spectrum--16-dicts-wrap-citations-in-ls-22-have-literally-zero-and-pwg-alone-carries-801-788-of-them-tag-presence-misclassifies-gra-whose-printed-proof-lives-in-prose) — extends §18's four-dict measurement to all 44: pwg 94.4 % of entries cite at 6.50/entry (801 788 elements, more than the next five dicts combined), mw 79.1 %, ap90 31.2 %; 22 koṣa/index dicts carry zero `<ls>`; pw-vs-pwg is abridgement depth (38.8 % vs 94.4 %); GRA proves in prose + `〔p. N〕` brackets while its `<ls>` share is only 12.0 % — the corpus's biggest citation-extraction residual.
 - 🟢 [§578. Accent digitization is three incompatible devices and svarita is essentially un-digitized](#578-accent-digitization-is-three-incompatible-devices-and-svarita-is-essentially-un-digitized) — `/` is headword-field accentuation in exactly 9 of the 44 dicts (mw 47 589, pw 21 543, pwg 20 876, cae 11 313, ccs 8 476, gra 10 699, lan 2 226, sch 1 124, pwkvn 2 108 lemmas), `\` svarita survives in 17 lemma marks total (pw 5, pwg 10, pwkvn 2), and stc/fri/bur/md-style transliteration carries accent as acute vowels that never reach `<k2>`; the pw-family homonym pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash itself a sense disambiguator any join must preserve.
 - 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
@@ -8473,3 +8480,76 @@ convention.
 > [`data/metalex/L8_SCAN_LINK_CENSUS.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/metalex/L8_SCAN_LINK_CENSUS.md)
 > (H2368 census, re-measured H2368-A10) +
 > [`scripts/lib/cologne-links.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lib/cologne-links.mjs). — csl-atlas / csl-orig · 2026-08-24
+
+### §581. A dictionary index's "SLP1" column can be Harvard-Kyoto — KEWA's is, and joining it as SLP1 silently drops half the headings; separately, NFD-stripping the Vedic acute destroys ś
+
+The OCRed KEWA heading index
+(`SamudraManthanam/Index/lib/x86_64-win64/Data/KEWA.txt`, 9,587 blocks →
+11,418 headings) ships **two** slashed machine-key columns per heading. The
+second sits exactly where an SLP1 column would sit and reads like SLP1 —
+`aMzaH`, `akSauhiNI`, `akSNoti`. It is **Harvard-Kyoto**: ś is `z` (SLP1 `S`),
+ṣ is `S` (SLP1 `z`), ṇ is `N` (SLP1 `R`), ṭ is `T` (SLP1 `w`), and the
+diphthongs stay `ai`/`au` (SLP1 `E`/`O`).
+
+Converting HK→SLP1 and comparing against the canonical
+[`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)
+transcoder's output on the IAST column agrees on **9,930 of 9,931 headings
+(99.99 %)** — the one exception, `hvātar-` keyed `hvaAtar`, is a source typo.
+The two encodings coincide on every letter outside that set, so **5,684
+headings look fine and 5,733 are silently wrong** if the column is joined
+against SLP1 data such as `csl-orig`. Just over half a dictionary, lost with no
+error anywhere.
+
+**Implication:** never infer a machine-key column's scheme from the fact that
+it is ASCII and sits beside IAST. Test it — one round-trip through the
+canonical transcoder over the whole column tells you in seconds, and the
+agreement rate is the proof. HK and SLP1 are *both* ASCII, *both* lowercase-ish
+and differ on exactly the letters a Sanskrit index is full of.
+
+**The second trap, in the same file.** KEWA marks the udātta with a combining
+acute (U+0301) over the accented vowel. The obvious way to strip it —
+`unicodedata.normalize("NFD", s)`, drop every U+0301, recompose — also destroys
+**ś**, because ś decomposes to `s` + U+0301 too. Every *śa*-word silently
+becomes an *sa*-word before the join. The first pipeline run reported 5,731
+"transcoder disagreements" that were entirely this bug and nothing else. Strip
+the acute only when the base letter is a vowel (`a i u e o`, plus the vocalic
+`ṛ`/`ḷ` written base + dot-below):
+[`kewa_accent.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/etym/kewa_accent.py).
+The same trap is waiting in any accented-IAST source — SCH's accented headwords,
+Grassmann, Renou.
+
+> **Source:** [KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md)
+> §2a (H3169, Opus 5 `claude-opus-5`). — SanskritLexicography / SamudraManthanam · 2026-08-25
+
+### §582. The damage in a digitized index is not always OCR — KEWA's came from a Russian-locale spreadsheet, which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`
+
+H3169 was scoped to census "OCR noise (broken diacritics, run-together
+headings, page-furniture lines)" in the KEWA index. **There is none.** 9,587 of
+9,588 lines parse against the first pattern tried; the exception is the header
+comment. No hyphenation debris, no running heads, no column bleed.
+
+What the file does carry is the signature of a round-trip through a spreadsheet
+opened in a **Russian locale**:
+
+| Class | Rows | Damage | Recovery |
+|---|---:|---|---|
+| page-range → date | 3 | `10-11` stored back as `10.ноя`; also `11.дек`, `дек.13` | the image filename kept it: `2-010-11-05.jpg` → pages 10–11 |
+| leading hyphen → formula error | 5 blocks | `-ā`, `-īm`, `-tṛp`, `-dhṛk`, `-prāṇi` parsed as formulas, stored as `#ИМЯ?` (`#NAME?`) | the machine-key column was not damaged and carries the true form |
+| legacy-font Latin leak | 3 | a Devanāgarī consonant present as literal `Z` (`मद्गुZअ-`, `Zअरणः`) — the legacy-font code point for श/ष never mapped | none; flagged, key marked unusable |
+
+All eight Cyrillic-contaminated rows in the file come from those two classes,
+and both are **fully recoverable** from a redundant column that the spreadsheet
+did not touch.
+
+**Implication, and it generalizes past this file:** audit a digitized asset for
+the pipeline it actually went through, not the pipeline its provenance note
+names. A `#NAME?`, a `#ИМЯ?`, a `10.ноя`, a right-aligned number that should be
+text, a leading `-`/`+`/`=` turned into an error — these say *spreadsheet*, and
+they cluster on exactly the rows a Sanskrit index is most likely to have
+(bound forms beginning with a hyphen, page *ranges*). An OCR-shaped audit —
+diacritic checks, character-confusion matrices, line-shape heuristics — will
+find none of them and report the file clean. Grep for the locale's error tokens
+and month abbreviations first; it costs one command.
+
+> **Source:** [KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md)
+> §2 (H3169, Opus 5 `claude-opus-5`). — SanskritLexicography / SamudraManthanam · 2026-08-25

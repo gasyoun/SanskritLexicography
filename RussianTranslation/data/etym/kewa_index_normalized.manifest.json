@@ -1,0 +1,22 @@
+{
+  "file": "kewa_index_normalized.tsv",
+  "rows": 11418,
+  "columns": [
+    "kewa_seq",
+    "vol",
+    "page",
+    "heading_idx",
+    "deva",
+    "iast_printed",
+    "iast_plain",
+    "slp1",
+    "hk_file",
+    "hk_slp1",
+    "key_source",
+    "flags"
+  ],
+  "sha256": "2721b7f2dc67ecabc796ddedb922b3a2b6f8adc6fce49dec9e8a1578e3d7bb52",
+  "source": "KEWA.txt",
+  "committed": false,
+  "why_not_committed": "carries KEWA heading text; regenerate with kewa_normalize.py"
+}

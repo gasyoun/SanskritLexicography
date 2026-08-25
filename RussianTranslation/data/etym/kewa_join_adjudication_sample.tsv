@@ -1,0 +1,73 @@
+match_basis	kewa_seq	vol	page	deva	iast_printed	kewa_slp1	pwg_key1	witness	lemma_route	flags
+finite-form->root	79	I	22	अचति	ácati	acati	aYc	dcs	aYc	
+finite-form->root	389	I	57	अवति	ávati	avati	av	dcs	av	
+finite-form->root	812	I	104	उनोति	unóti	unoti	u	dcs	u	
+finite-form->root	2050	I	278	क्रमते	krámate	kramate	kram	dcs	kram	
+finite-form->root	2665	I	367	चञ्चति	cáñcati	caYcati	caYc	dcs	caYc	
+finite-form->root	3383	I	476	तन्दते	tandate	tandate	tand	dcs	tand	
+finite-form->root	4088	I	568	गाहते	gā́hate	gAhate	gAh	dcs	gAh	
+finite-form->root	4131	II	13-14	ददाति	dádāti	dadAti	dA	dcs	dA	
+finite-form->root	4162	II	19	दमिता	damitā́	damitA	dam	dcs	dam	
+finite-form->root	4280	II	38	दाश्नोति	dāśnóti	dASnoti	dAS	dcs	dAS	
+finite-form->root	4758	II	136	नमति	námati	namati	nam	dcs	nam	
+finite-form->root	4862	II	157-158	निंसते	níṃsate	niMsate	niMs	dcs	niMs	
+finite-form->root	4866	II	158	निक्तः	niktáḥ	niktaH	nij	dcs	nij	
+finite-form->root	5807	II	380	प्रीणाति	prīṇā́ti	prIRAti	prI	dcs	prI	
+finite-form->root	6965	III	12	यष्टा	yáṣṭā	yazwA	yaj	dcs	yaj	
+finite-form->root	7382	III	108-109	लुम्पति	lumpáti	lumpati	lup	dcs	lup	
+finite-form->root	8375	III	372-374	शृणोति	śṛṇóti	SfRoti	Sru	dcs	Sru	
+finite-form->root	8487	III	401	श्वसिति	śvásiti	Svasiti	Svas	dcs	Svas	
+finite-form->root	8608	III	430	सपर्यति	saparyáti	saparyati	sapary	dcs	sapary	
+finite-form->root	9257	III	595	हिनस्ति	hinásti	hinasti	hiMs	dcs	hiMs	
+ambiguous-multi	144	I	29-30	अद्भिः	adbhíḥ	adBiH	ad|ap	dcs	ad|ap	
+ambiguous-multi	350	I	52-53	अर्वाङ्	arvā́ṅ	arvAN	arvAYc|arvAk	dcs	arvAYc|arvAk	
+ambiguous-multi	997	I	127	एतत्	etát	etat	etad|maDu	dcs	etad|maDu	
+ambiguous-multi	1169	I	150	कदली	kadalī	kadalI	kadala|kadalin	dcs	kadala|kadalin	
+ambiguous-multi	1277	I	167	करी	karī	karI	kara|karin	dcs	kara|karin	
+ambiguous-multi	1902	I	259	कृत्या	kṛtyā́	kftyA	kfti|kftya	dcs	kfti|kftya	
+ambiguous-multi	3955	I	557	ईट्टे	ī́ṭṭe	Iwwe	IS|Iq	dcs	IS|Iq	
+ambiguous-multi	4381	II	53-54	दुवः	dúvaḥ	duvaH	dU|du|duvas	dcs	dU|du|duvas	
+ambiguous-multi	4432	II	63	देववान्	devávān	devavAn	devavant|devavat	dcs	devavant|devavat	
+ambiguous-multi	4434	II	64	देवा	devā́	devA	deva|iti	dcs	deva|iti	
+ambiguous-multi	4575	II	95	धर्मा	dharmā́	DarmA	Darma|Darman	dcs	Darma|Darman	
+ambiguous-multi	5083	II	204	पथ्या	pathyā́	paTyA	paTin|paTya	dcs	paTin|paTya	
+ambiguous-multi	5225	II	240-241	पश्यति	páśyati	paSyati	dfS|paS	dcs	dfS|paS	
+ambiguous-multi	5312	II	263-264	पाली	pālī	pAlI	pAli|pAlin	dcs	pAli|pAlin	
+ambiguous-multi	5782	II	375	प्राङ्	prā́ṅ	prAN	prAYc|prAk	dcs	prAYc|prAk	
+ambiguous-multi	6941	III	6-7	यन्ता	yantā́	yantA	i|yam	dcs	i|yam	
+ambiguous-multi	7068	III	36-37	रण्यति	ráṇyati	raRyati	raR|ran	dcs	raR|ran	
+ambiguous-multi	7946	III	251-252	वृषा	vṛ́ṣā	vfzA	vfza|vfzan	dcs	vfza|vfzan	
+ambiguous-multi	8603	III	429	संध्या	saṃdhyā́	saMDyA	saMDi|taTAviDa	dcs	saMDi|taTAviDa	
+ambiguous-multi	9243	III	592	हासते	hāsate	hAsate	hA|hAs	dcs	hA|hAs	
+exact	164	I	32	अन-	ana-	ana	ana	PWG-key1	an|ana|anas	bound-prefix-or-stem|routes-disagree
+exact	422	I	61	अश्र-	aśrá-	aSra	aSra	PWG-key1	asra	bound-prefix-or-stem|routes-disagree
+exact	484	I	68	अही	ahī́	ahI	ahI	PWG-key1	ahi	routes-disagree
+sandhi/diacritic-normalized	657	I	87	इनः	ináḥ	inaH	ina	rule	in|ina	routes-disagree
+exact	1562	I	209-210	किम्	kím	kim	kim	PWG-key1	ka|kim	routes-disagree
+exact	1654	I	222	कुटी	kuṭī	kuwI	kuwI	PWG-key1	kuwI|kuwi	routes-disagree
+sandhi/diacritic-normalized	2772	I	383	चायमानः	cā́yamānaḥ	cAyamAnaH	cAyamAna	rule	cAy	routes-disagree
+sandhi/diacritic-normalized	2841	I	393	चीर्णः	cīrṇaḥ	cIrRaH	cIrRa	rule	car	routes-disagree
+exact	3676	I	524	तृषा	tṛṣā	tfzA	tfzA	PWG-key1	tfz|tfzA	routes-disagree
+exact	6186	II	490	भा-	bhā-	BA	BA	PWG-key1	BA|BAs	bound-prefix-or-stem|routes-disagree
+exact	6447	II	570-572	मधु	mádhu	maDu	maDu	PWG-key1	maDu|rUpa	routes-disagree
+sandhi/diacritic-normalized	9584	III	640	आमः	āmáḥ	AmaH	Ama	rule	Am|Ama	routes-disagree
+inflected-form->stem	5966	II	415-416	बर्हिः	barhíḥ	barhiH	barhis	dcs	barhis	
+inflected-form->stem	7337	III	98	लाजाः	lājā́ḥ	lAjAH	lAja	dcs	lAja	
+inflected-form->stem	8107	III	295	शनैः	śánaiḥ	SanEH	SanEs	dcs	SanEs	
+inflected-form->stem	8257	III	342	शिरः	śiraḥ	SiraH	Siras	dcs	Sira|Siras	as-stem-disambiguated
+inflected-form->stem	9465	III	630	अमू-	amū-	amU	adas	dcs	adas	bound-prefix-or-stem
+inflected-form->stem	9504	III	634	अर्शः	árśaḥ	arSaH	arSas	dcs	arSas	as-stem-disambiguated
+sandhi/diacritic-normalized	201	I	36	अन्त्यः	ántyaḥ	antyaH	antya	rule	antya	
+sandhi/diacritic-normalized	2290	I	311	खेटम्	kheṭam	Kewam	Kewa	rule	Kewa	
+sandhi/diacritic-normalized	2497	I	342	गूथः	gūthaḥ	gUTaH	gUTa	rule		
+sandhi/diacritic-normalized	3271	I	456	टङ्कः	ṭaṅkaḥ	waNkaH	waNka	rule	waNka	
+sandhi/diacritic-normalized	8261	III	342	शिरिः	śiriḥ	SiriH	Siri	rule		
+sandhi/diacritic-normalized	9319	III	608-609	हेरम्बः	herambaḥ	herambaH	heramba	rule	heramba	
+unmatched	1680	I	224	कुड्यपुच्छा	kuḍyapucchā	kuqyapucCA				
+unmatched	2250	I	307	खल्लते	khallate	Kallate				
+unmatched	2884	I	398	चूला	cūlā	cUlA				
+unmatched	4094	I	568	घोषति	ghóṣati	Gozati				
+unmatched	6297	II	525	भेरण्डकः	bheraṇḍakaḥ	BeraRqakaH				
+unmatched	8302	III	351	शीरी	śīrī	SIrI				
+exact	5118	II	217	परिंश	pariṃśá	pariMSa	pariMSa	PWG-key1	pariMSa	
+exact	6999	III	21	युप्-	yup-	yup	yup	PWG-key1	yup	bound-prefix-or-stem

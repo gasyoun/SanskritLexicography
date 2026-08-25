@@ -1,0 +1,5 @@
+# The normalized index carries the printed KEWA headings themselves.
+# It stays local-only while the Mayrhofer permission terms are untranscribed
+# (see docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md, Rights).
+# Regenerate with: python RussianTranslation/src/etym/kewa_normalize.py
+kewa_index_normalized.tsv

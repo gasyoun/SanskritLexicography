@@ -1,6 +1,6 @@
 # Roadmap A — beyond the ceiling: what the PWG→RU dictionary cannot answer, and what we bolt on
 
-_Created: 08-07-2026 · Last updated: 19-08-2026_
+_Created: 08-07-2026 · Last updated: 25-08-2026_
 
 > **Truth-pass 19-08-2026** ([H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md)).
 > This roadmap said *"Handoffs for Wave 1 items are minted after H335 lands."*
@@ -35,7 +35,7 @@ The dictionary answers "what senses exist and where are they cited" superbly; it
   | Item | Handoff |
   |---|---|
   | C2 phase 1 — dating join, deterministic | ✅ [H3168 — Ceiling C2 phase 1: per-sense attestation window](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3168-OxAlpha_SanskritLexicography_ceiling-c2p1-sense-attestation-window_19.08.26.md) (shipped 23-08-2026) |
-  | C4 — KEWA normalization + dhātu-aware join | [H3169 (Opus 5) — Ceiling C4: KEWA index normalization and join](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3169-Opus_SanskritLexicography_ceiling-c4-kewa-normalize-join_19.08.26.md) |
+  | C4 — KEWA normalization + dhātu-aware join | ✅ [H3169 (Opus 5) — Ceiling C4: KEWA index normalization and join](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3169-Opus_SanskritLexicography_ceiling-c4-kewa-normalize-join_19.08.26.md) (shipped 25-08-2026 — 11,418 headings normalized, 78.9 % joined to PWG, memo [KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md); the *modern IE* lane only — EWA still to come, crosswalk shape recorded in §7) |
   | C8 — license-gated probe + outreach draft | [H3170 (Sonnet 5) — Ceiling C8: DharmaMitra probe plus outreach draft](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3170-Sonnet_SanskritLexicography_ceiling-c8-dharmamitra-probe-outreach_19.08.26.md) |
 
 - **Wave 2 (after ~50% translation coverage):** C1 embedding WSD baseline, C2 phase 2 (curated dating table), C1 DharmaMitra probe. **Deliberately not minted** — minting coverage-gated work now would produce handoffs that sit blocked and rot. The **gold set** C1 needs is *not* coverage-gated and is minted separately as [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md): building the yardstick early is what makes the coverage checkpoint actionable when it arrives.
