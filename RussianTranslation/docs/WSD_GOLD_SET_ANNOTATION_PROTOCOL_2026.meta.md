@@ -52,11 +52,11 @@ paper — §8's limitations are that paper's honest-caveats section in draft.
 
 ## Improvement backlog (ranked)
 
-1. **Emit the pass-1 review sheet.** The BLI set has one; this does not. Deliberately deferred
-   here: the BLI sheet has been awaiting MG's vote since 12-08-2026, so a second unvoted sheet
-   adds queue, not throughput. Build it when MG's BLI pass lands, via
-   `csl_pyutil.render_review_sheet` ≥ 0.9.0 with `screening=`, `manifest=` and the V11 timer —
-   the legibility hook blocks anything older.
+1. **Emit the pass-1 review sheet — for the 48-row pilot, not the 200-row frame.** The BLI set
+   has a sheet; this does not. Build it via `csl_pyutil.render_review_sheet` ≥ 0.9.0 with
+   `screening=`, `manifest=` and the V11 timer — the legibility hook blocks anything older.
+   Size it to the pilot: 48 cards is a sitting, 200 is not, and the timer data from a 48-card
+   sheet is exactly what decides whether the remaining 152 are worth building a sheet for.
 2. **Widen the lemma base past 48.** The pool is capped by how much of PWG `pwg_ru` has
    translated (254 lemmas). Every further translated polysemous headword widens the frame;
    re-cut with a new seed and re-run the gate.
@@ -85,5 +85,6 @@ hand.
 | Date | Change | Model |
 |---|---|---|
 | 25-08-2026 | Created with the protocol (H3172): sense definition + layer measurement, degenerate-menu exclusion, band design, shared annotator-2 freeze record, scorer contract | Opus 5 (`claude-opus-5`) |
+| 25-08-2026 | §5 pilot step added after MG pushed back that 200 rows is too large an ask — measured the real load (1,537 menu options, median 12 in `I10+`) and cut a 48-row one-row-per-lemma instrument check via `pilot_wsd_frame.py`; the 200-row frame is unchanged and the pilot is a strict subset of it | Opus 5 (`claude-opus-5`) |
 
 _Dr. Mārcis Gasūns_
