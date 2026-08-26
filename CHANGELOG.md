@@ -12,6 +12,11 @@ lane then dropped to 0.0.1–0.0.42 snapshot tags (18-06 … 02-07) before resum
 at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentional,
 not an error.
 
+## [Unreleased]
+
+### Changed
+- **H3555 — D3 gen.pl accent split measured at full-corpus n: GAPS §1 closed, CONTRADICTIONS §1 ruled Tier 1 (Fable 5 `claude-fable-5`, 26-08-2026).** The discriminating probe H3538 named: a whole-corpus census of Rigveda genitive plurals from the Zurich glossed corpus (`rigveda/versions/zurich.xlsx` in the public [VedaWebProject/vedaweb-data](https://github.com/VedaWebProject/vedaweb-data) GitHub mirror, CC BY 4.0 — the API host is still WAF-blocked, HTTP 418 re-probed 26-08-2026). 2,159 gen.pl tokens → 477 in long-ī/ū + `nām` shape. Verdict: **Whitney §319a and §320/§356 are both correct — their scopes are disjoint.** Oxytone derivative ī/ū-stem NOUNS are 44/44 stem-final (`nadī́nām`-type, zero exceptions); the devī́-declension adjective/participle class §319a actually describes genuinely vacillates (`bahvīnā́m` ×2 — Whitney's own example — confirmed ending-accented, vs ~11 stem-final tokens); monosyllables shift by the separate §355 rule (8/8); barytones never move (62/62); `máh-` is the one mixed lemma (4:1). The D3 cell of the ZALIZNYAK a–f accent axis is unblocked: emit stem_final as RULE for derivative ī/ū noun lemmas. Verdict of record: [docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md) · findings residue [FINDINGS §587/§588](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (the ruling; the vedaweb-data mirror method) · script [WhitneyRoots scripts/d3_genpl_probe.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/d3_genpl_probe.py) · handoff [H3555](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3555-Fable_SanskritLexicography_d3-genpl-accent-probe_26.08.26.md).
+
 ## [1.144.98] - 2026-08-25
 
 ### Fixed

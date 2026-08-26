@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 12-08-2026_
+_Created: 08-07-2026 · Last updated: 26-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -17,14 +17,6 @@ Then `Why it matters:`, `Blocker:`, `How to close:`, and a `> **Source:**` line.
 
 ## A. Blocked on data we don't yet have
 *Gaps that stay open until an outage lifts, more correction eras accrue, or a walled dataset is downloaded — the blocker is data, not method.*
-
-### §1. Derivative ī/ū gen.pl accent split (D3) — n=2, unresolvable
-🟡 ✍️ **We have NOT measured the empirical `-īnā́m` vs `-ī́nām` split at usable n.**
-Why it matters: it is the one unresolved cell blocking the ZALIZNYAK_INDEX a–f accent axis emission; would settle Whitney's own §319a/§356 contradiction ([CONTRADICTIONS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)).
-Blocker: needs a wider VedaWeb 2.0 pull — blocked mid-run by a `vedaweb.uni-koeln.de` outage; only n=2 attested forms (`raTI`, `vaDU`) so far.
-How to close: resume the VedaWeb export per [`SERVER_OUTAGES.md`](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md), grow n, split by adjective (`bahvī́`) vs noun (`nadī́`) type.
-↔ Interlinks: closing this gap rules [CONTRADICTIONS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (Whitney's own §319a/§356 self-contradiction) · [RECIPES §1](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (Whitney accent validation) is the pass that would consume the wider pull.
-> **Source:** [FINDINGS §54](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#54-whitney-accent-axis-validates-at-1719-matrix-cells-go-against-attested-rv-accents) · [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09)
 
 ### §2. Error population of 40 of 43 dictionaries
 🟠 ✍️ **We have NOT estimated the error-prone-record population for 40 of 43 dicts.**
