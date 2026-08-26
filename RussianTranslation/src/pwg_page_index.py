@@ -38,6 +38,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+from store_write import locked_store_rewrite  # H2146/H3350 locked writer
+
 # L-id may be a float (Cologne supplement/Nachtrag records, e.g. 26305.290);
 # <h> homonym marker is optional. Mirrors pwg_mask.py HEADER_RE.
 HEADER_RE = re.compile(r'^<L>([\d.]+)<pc>(\d+)-(\d+)<k1>(.*?)<k2>(.*?)(?:<h>(\d+))?\s*$')
@@ -182,11 +184,10 @@ def annotate_cards(entries, store):
         r['page_all'] = [f'{v}-p{p:04d}' for v, p in pages]
         matched += 1
 
-    tmp = store + '.tmp'
-    with io.open(tmp, 'w', encoding='utf-8') as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
-    os.replace(tmp, store)
+    # H3350: the in-place pc annotation rewrites the canonical store only
+    # through the H2146 lock (PromoteClaim + fsynced backup + atomic replace);
+    # ClaimBusy from a concurrent promote/mutator propagates loudly.
+    locked_store_rewrite(store, rows, tag='pwgidx')
     return matched, unmatched, len(rows)
 
 
