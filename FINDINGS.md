@@ -1,6 +1,11 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 26-08-2026 (§585 — paired totals N/N+1 for
+_Created: 26-06-2026 · Last updated: 26-08-2026 (§587 — derivative ī/ū-stem
+gen.pl accent ruled at full-corpus n: oxytone noun stems 44/44 stem-final,
+devī́-declension adjective/participle feminines genuinely mixed — Whitney §319a
+vs §320/§356 are disjoint scopes, CONTRADICTIONS §1 ruled, GAPS §1 closed;
+§588 — the VedaWebProject/vedaweb-data GitHub mirror replaces the WAF-blocked
+VedaWeb API for bulk corpus pulls; §585 — paired totals N/N+1 for
 the same TSV are the header-row signature: `union_headwords.tsv` is 323,426
 lines incl. header, so the headword count of record is 323,425 (CONTRADICTIONS
 §10 ruled); §586 — 285,799 vs 285,950 are exact sums of the SAME now-2026 lists
@@ -8714,3 +8719,46 @@ stage either way.
 > **Source:** [CONTRADICTIONS.md §12](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
 > ruling + verdict table [docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md)
 > (H3538, Fable 5 `claude-fable-5`). — SanskritLexicography · 2026-08-26
+
+### §587. Derivative ī/ū-stem gen.pl accent: oxytone nouns are 44/44 stem-final, the devī́-declension adjective/participle class genuinely vacillates — Whitney §319a and §320/§356 have disjoint scopes
+
+🟠 **Whitney's "self-contradiction" on the `-īnā́m` vs `-ī́nām` gen.pl
+dissolves under word-class control, at full-corpus n.** Census of all 2,159
+gen.pl tokens of the accented RV (Zurich glossed corpus, Casaretto et al.
+2025): **independent derivative ī/ū-stem nouns (nadī́-, tanū́-, rathī́-,
+vadhū́- …) keep the accent on the stem vowel — 44/44 oxytone tokens
+`-ī́nām`, zero exceptions** (§320/§356 confirmed); **devī́-declension
+feminines of adjectives/participles — §319a's own word class — genuinely
+vacillate** (~9 ending vs ~11 stem-final tokens, with §319a's own example
+`bahvīnā́m` attested ending-accented ×2: 01.095.04, 06.075.05); monosyllabic
+roots (dhī́-, śrī́-) shift 8/8 by the separate §355 rule; barytones never
+move (62/62); máh- is the one genuinely mixed lemma (mahī́nām ×4 vs mahīnā́m
+×1). The D3 cell of the ZALIZNYAK a–f accent axis emits stem_final as a
+*rule* for derivative ī/ū noun lemmas; the per-lemma-variant encoding is
+reserved for the devī́-declension class and máh-. Tier 1 (whole-corpus
+census, reproducible script). Full per-lemma tables:
+[docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md);
+script [d3_genpl_probe.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/d3_genpl_probe.py).
+
+> **Source:** [CONTRADICTIONS.md §1](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+> ruled + [GAPS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) closed
+> (H3555, Fable 5 `claude-fable-5`). — SanskritLexicography/WhitneyRoots · 2026-08-26
+
+### §588. The VedaWebProject/vedaweb-data GitHub mirror replaces the WAF-blocked VedaWeb API for bulk corpus pulls
+
+🟠 **When `vedaweb.uni-koeln.de` answers HTTP 418 (WAF block, ongoing since
+12-07-2026, re-probed 26-08-2026), do not wait out the outage — the full
+corpus data is public in the
+[VedaWebProject/vedaweb-data](https://github.com/VedaWebProject/vedaweb-data)
+GitHub repo.** `rigveda/versions/zurich.xlsx` (12.6 MB, 164,768 token rows
+× 32 columns) is the same Zurich morphologically glossed RV (Casaretto et
+al. 2025, CC BY 4.0) the API serves as corpus resource
+`66695e4a14f6d337f7788740`, with per-token case/number/gender
+(`belege::kasus/numerus/genus bestof`), surface form, pāda, locus, and
+classical lemma — everything the accent-validation and D3 probes needed
+from the API, minus pagination and rate limits. One `git clone` (or raw
+download) beats any API resume plan; the mirror is Tier 1 primary data.
+
+> **Source:** probe method in [docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md)
+> · [SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md) vedaweb row
+> (H3555, Fable 5 `claude-fable-5`). — SanskritLexicography · 2026-08-26
