@@ -39,6 +39,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+from store_write import locked_store_rewrite  # H2146/H3350 locked writer
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 MANIFEST = os.path.join(HERE, 'pipeline_versions.json')
@@ -379,16 +381,13 @@ def cmd_backfill(args):
         print('backfill: would stamp %d unversioned row(s) with prompt=%s glossary=%s script=%s'
               % (changed, versions['prompt'], versions['glossary'], versions['script']))
         return 0
-    import shutil, datetime
-    backup = args.store + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-    shutil.copy2(args.store, backup)
-    tmp = args.store + '.tmp'
-    with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
-    os.replace(tmp, args.store)
+    # H3350: rewrite through the H2146 lock (store_write) — PromoteClaim
+    # serialization, fsynced per-run backup, atomic replace. ClaimBusy from a
+    # concurrent promote/mutator propagates loudly instead of last-writer-wins.
+    backup = locked_store_rewrite(args.store, rows, tag='pverbackfill')
     print('backfill: stamped %d row(s) (backfilled=true) → %s; backup: %s'
-          % (changed, os.path.basename(args.store), os.path.basename(backup)))
+          % (changed, os.path.basename(args.store),
+             os.path.basename(backup) if backup else '(fresh store)'))
     return 0
 
 
