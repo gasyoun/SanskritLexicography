@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.100] - 2026-08-27
+- **H3590 whole-store PWG→RU translation audit (Fable 5 `claude-fable-5`).** New [`RussianTranslation/src/audit_store_gates.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_store_gates.py) re-runs the RU HARD gates over every live-store row and diffs src vs the `pwg-ru-data/tm/` mirror. 5 head-line-loss rows found unqueued; the R4.1 store SAN-LOSS trigger shown to be a literal-marker grep with its scheduled task Disabled (FINDINGS §589); 289-row `Instr.`→`Ins.` src/mirror drift by an unidentified writer (GAPS §16). Report [PWG_RU_TRANSLATION_STORE_AUDIT_27-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/PWG_RU_TRANSLATION_STORE_AUDIT_27-08-2026.md); issue #1902; PRs #1901 #1903 (the latter restores FINDINGS Index parity §587–§589 + marker §590).
+
 ## [1.144.99] - 2026-08-26
 
 ### Changed
