@@ -1,6 +1,12 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 25-08-2026 (§584 — a style pass applied to
+_Created: 26-06-2026 · Last updated: 26-08-2026 (§585 — paired totals N/N+1 for
+the same TSV are the header-row signature: `union_headwords.tsv` is 323,426
+lines incl. header, so the headword count of record is 323,425 (CONTRADICTIONS
+§10 ruled); §586 — 285,799 vs 285,950 are exact sums of the SAME now-2026 lists
+at two pipeline stages (raw export vs union-ingested), the 151-key gap is the
+union build's key collapse, vintage drift refuted (CONTRADICTIONS §12 ruled);
+§584 — a style pass applied to
 CommentaryStrategies' `data/lexical/chN.json` never reaches the apparatus or the
 print master: `build_sarga_apparatus.py` prefers the aggregate twins in
 `data/sundara_commentary_to_add.json`, so 37 H3492 rewrites showed as 4 changed
@@ -61,7 +67,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §585) whatever its section, so existing numbers never shift; when a finding is later
+(currently §587) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -330,6 +336,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§582. The damage in a digitized index is not always OCR — KEWA's came from a Russian-locale spreadsheet, which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`](#582-the-damage-in-a-digitized-index-is-not-always-ocr--kewas-came-from-a-russian-locale-spreadsheet-which-turned-page-ranges-into-dates-and-leading-hyphen-headwords-into-имя) — 9,587 of 9,588 lines parse first-pattern: there is no OCR noise to census. The real damage is a spreadsheet round-trip in a ru-RU locale — three page ranges stored back as dates (`10-11` → `10.ноя`) and five leading-hyphen headings as `#ИМЯ?` — and both classes are fully recoverable from a redundant column. An OCR-shaped audit finds none of them and reports the file clean.
 - 🔴 [§583. "How many senses does this PWG lemma have?" is undefined until you fix the layer — the naive count runs 10–40× high](#583-how-many-senses-does-this-pwg-lemma-have-is-undefined-until-you-fix-the-layer--the-naive-count-runs-1040-high) — counting distinct `sense_tag` per `key1` in the pwg_ru store conflates five dictionary layers (97 of 254 lemmas straddle more than one), swallows structural apparatus (`main`, `intro`, `Nachtrag`) and derived-stem slots (`caus`, `desid`), and treats `1` and `1)` as different senses: `han` reads as 430 senses naively, 90 within `pwg`, and **11** as numbered senses in one layer. The apparent bimodality — an unpickable 300–430-sense verb-root tail — is an artifact; the store-wide maximum under the correct definition is **16**. A related trap: cross-layer duplicate subcards yield menu options that are textually identical (`[1] раздувание, вздутие` vs `[PW] раздувание, вздутие`), which is unanswerable, so any κ over them measures coin-flips.
 - 🟠 [§584. A style pass applied to CommentaryStrategies' `data/lexical/chN.json` never reaches the apparatus or the print master — `build_sarga_apparatus.py` prefers the aggregate twins in `data/sundara_commentary_to_add.json`, so the source you edited is the one that loses the dedup](#584-a-style-pass-applied-to-commentarystrategies-datalexicalchnjson-never-reaches-the-apparatus-or-the-print-master--build_sarga_apparatuspy-prefers-the-aggregate-twins-in-datasundara_commentary_to_addjson-so-the-source-you-edited-is-the-one-that-loses-the-dedup) — H3498 (Fable 5 `claude-fable-5`, 25-08-2026).
+- 🟠 [§585. Paired totals N and N+1 for the same TSV artifact are the header-row signature — read line 1 before hypothesizing regeneration drift](#585-paired-totals-n-and-n1-for-the-same-tsv-artifact-are-the-header-row-signature--read-line-1-before-hypothesizing-regeneration-drift) — `union_headwords.tsv` holds 323,426 physical lines of which line 1 is the column header, so the headword count of record is 323,425; every published 323,426 counted file lines, every 323,425 counted headwords, and the months-open CONTRADICTIONS §10 closed with one `wc -l` + `head -1` — H3538 (Fable 5 `claude-fable-5`, 26-08-2026).
+- 🟠 [§586. Two conflicting family totals can be exact sums of the SAME files at two pipeline stages — the 285,799 vs 285,950 gap is the union build's key collapse, not vintage drift](#586-two-conflicting-family-totals-can-be-exact-sums-of-the-same-files-at-two-pipeline-stages--the-285799-vs-285950-gap-is-the-union-builds-key-collapse-not-vintage-drift) — 285,950 = 106,082+151,349+28,519 (raw now-2026 export `wc -l`) and 285,799 = 106,054+151,314+28,431 (union-ingested rows); the 151-key gap is the build's key collapse (PWG −28, PWK −35, SCH −88), vintage/key-mixing REFUTED; quote either figure only with its stage named — H3538 (Fable 5 `claude-fable-5`, 26-08-2026).
 - 🟢 [§579. Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them](#579-citation-density-is-a-cliff-not-a-spectrum--16-dicts-wrap-citations-in-ls-22-have-literally-zero-and-pwg-alone-carries-801-788-of-them-tag-presence-misclassifies-gra-whose-printed-proof-lives-in-prose) — extends §18's four-dict measurement to all 44: pwg 94.4 % of entries cite at 6.50/entry (801 788 elements, more than the next five dicts combined), mw 79.1 %, ap90 31.2 %; 22 koṣa/index dicts carry zero `<ls>`; pw-vs-pwg is abridgement depth (38.8 % vs 94.4 %); GRA proves in prose + `〔p. N〕` brackets while its `<ls>` share is only 12.0 % — the corpus's biggest citation-extraction residual.
 - 🟢 [§578. Accent digitization is three incompatible devices and svarita is essentially un-digitized](#578-accent-digitization-is-three-incompatible-devices-and-svarita-is-essentially-un-digitized) — `/` is headword-field accentuation in exactly 9 of the 44 dicts (mw 47 589, pw 21 543, pwg 20 876, cae 11 313, ccs 8 476, gra 10 699, lan 2 226, sch 1 124, pwkvn 2 108 lemmas), `\` svarita survives in 17 lemma marks total (pw 5, pwg 10, pwkvn 2), and stc/fri/bur/md-style transliteration carries accent as acute vowels that never reach `<k2>`; the pw-family homonym pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash itself a sense disambiguator any join must preserve.
 - 🟠 [§576. Cross-reference markers are three unrelated graphs, not one — `s.`/`Vgl.`/`q.v.`/`=` each point differently, "vide" is a false positive almost everywhere it was expected, and the ring rides inside an xref target far beyond Kochergina](#576-cross-reference-markers-are-three-unrelated-graphs-not-one--svglqv-each-point-differently-vide-is-a-false-positive-almost-everywhere-it-was-expected-and-the-ring-rides-inside-an-xref-target-far-beyond-kochergina) — `s.`/`siehe` and `=` are real graph edges to another headword; `Vgl.` is a weaker "compare" edge, often targeting a citation not a lemma; `q.v.` (the same printed abbreviation) fragments into four incompatible tag shapes across mw/cae/bhs/ap/ap90/wil/mw72/lrv/inm; `vide` is genuine Sanskrit *vidé* in pwg/pw (false positive) and vanishes to zero in ccs/sch under a word-boundary check; gra's bare `<ab>s.</ab>` (1,643) is grammatical Singular, not "see" — the real xref is `<ab n="siehe">s.</ab>` (663). Ring-in-target (§556) recurs at <1% in pwg/pw/mw/sch, not koch-specific.
@@ -8651,3 +8659,58 @@ in apparatus lexical notes = the 7 `reject`/`park` cards only.
 > [PR #195](https://github.com/gasyoun/CommentaryStrategies/pull/195) (H3492);
 > report [data/lexical/style_pass_h3492/REPORT.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/lexical/style_pass_h3492/REPORT.md).
 > — CommentaryStrategies · 2026-08-25
+
+### §585. Paired totals N and N+1 for the same TSV artifact are the header-row signature — read line 1 before hypothesizing regeneration drift
+
+🟠 **When two published counts for one tabular file differ by exactly 1, the
+first probe is `head -1`, not a rebuild.** The union headword total circulated
+for months as both 323,425 (SanskritLexicography surfaces + kosha's own
+`datasets.json`) and 323,426 (kosha README twice, three archived handoffs) —
+open as CONTRADICTIONS §10, with regeneration drift as a live hypothesis.
+Measured directly on the canonical asset:
+[union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv)
+holds **323,426 physical lines**, line 1 is the column header
+(`slp1 · iast · n_dicts · dicts · gender · fem_fold`), the file ends in a
+newline — so **data rows = 323,425**, the headword count of record. Every
+323,425 witness counts headwords; every 323,426 witness counts file lines (or a
+header-inclusive load). Both sides were "right"; neither named what it counted.
+
+Implication: an exactly-1 gap between counts of the same artifact is a *shape*
+signature, and it is the cheapest contradiction class there is — one `wc -l`
+plus one `head -1` closes it (class A, auto-reproducible). Rebuilding the
+pipeline to explain it is the expensive wrong move. Corollary for prose: a
+count published next to a tabular artifact should say which of the two it is —
+"323,425 headwords (323,426 file lines incl. header)".
+
+> **Source:** [CONTRADICTIONS.md §10](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+> ruling + verdict table [docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md)
+> (H3538, Fable 5 `claude-fable-5`). — SanskritLexicography · 2026-08-26
+
+### §586. Two conflicting family totals can be exact sums of the SAME files at two pipeline stages — the 285,799 vs 285,950 gap is the union build's key collapse, not vintage drift
+
+🟠 **Before explaining a totals mismatch as "different vintages" or "mixed key
+types", test whether both figures are exact sums of the same file set at two
+pipeline stages.** The Petersburg-family naive sum was published as 285,799
+(MODULES_OWNED, "+70.2 % inflation" module) and 285,950 (WAVE1_SUMMARY +
+roadmap) — open as CONTRADICTIONS §12, with vintage drift and key1/key2 mixing
+as the live hypotheses. Both identities verified by direct count:
+**285,950 = 106,082 (PWG) + 151,349 (PWK) + 28,519 (SCH)** — the raw
+[now-2026](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026)
+export files' `wc -l`, each equal to its filename `N`; **285,799 = 106,054 +
+151,314 + 28,431** — the union-*ingested* per-dictionary row counts that
+MODULES_OWNED itself publishes. The 151-key gap is the union build's key
+collapse (PWG −28, PWK −35, SCH −88), not drift; the vintage/key-mixing
+hypothesis is REFUTED. The inflation headline is internally consistent —
+numerator and denominator both come from the ingested stage.
+
+Implication: a pipeline with a lossy stage (dedup, fold, key collapse) mints a
+*legitimate* pair of totals for every artifact that crosses it, and any prose
+quoting one without naming the stage will eventually "contradict" prose quoting
+the other. The discriminating probe is arithmetic on the candidate stage sums
+(class A) — cheaper than any provenance archaeology. Cite 285,799 beside
+union/de-dup figures, 285,950 when counting raw export lines, and name the
+stage either way.
+
+> **Source:** [CONTRADICTIONS.md §12](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+> ruling + verdict table [docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md)
+> (H3538, Fable 5 `claude-fable-5`). — SanskritLexicography · 2026-08-26

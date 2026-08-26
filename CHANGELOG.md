@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **H3538 — CONTRADICTIONS wave-1 adjudication: all 12 open rows ruled or explicitly bounded, with stated evidence tiers (Fable 5 `claude-fable-5`, 26-08-2026).** Ruling pass over [CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) under the org evidence ladder, standing rule "missing evidence is INCONCLUSIVE, never PASS". Two ✅ rulings: **§10** — `union_headwords.tsv` 323,426 file lines vs 323,425 headwords are both true; line 1 is the header row, data rows = headword count of record; **§12** — 285,799 vs 285,950 are exact naive sums of the SAME now-2026 Petersburg lists at two pipeline stages (union-ingested vs raw export; 151-key collapse PWG −28 / PWK −35 / SCH −88; vintage/key-mixing hypothesis refuted). §2/§5/§6/§7 provisional picks confirmed 🟡 (canonical-text corrections parked for review sheets, never applied directly); §9 ruled text-wins-over-label — the `SOUTHERN_FILES` tag on Rāmāyaṇa kāṇḍas 6–7 is a mislabel (concordance 99.8 %/95.5 % vs 1.2–3.0 % for true southern kāṇḍas), relabel parked against [issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822); §1/§11/§13/§14 INCONCLUSIVE with the one discriminating probe named each; §4 human-gated (transliteration policy). Verdict table: [docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md). Reusable method residue: [FINDINGS §585/§586](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (paired N/N+1 totals = header-row signature; same-lists-two-pipeline-stages naive-sum class). Handoff count corrected: the open set was 12 rows, not 11.
+
 ## [1.144.97] - 2026-08-25
 
 ### Fixed
