@@ -1,0 +1,215 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-08-26 09:18:06",
+  "artifacts": [
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritLexicography-h3555-29974/docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md",
+      "repo": "/Users/mac/Documents/GitHub/SanskritLexicography-h3555-29974",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - dated probe report, not a hub-listed capability; README owns repo orientation, discovery routes via FINDINGS 587/588 + GAPS/CONTRADICTIONS 1 (PR #1895)"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - changes no agent behavior and adds no sync rule; a one-off census verdict, registries carry it"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - not orientation material; a fresh session reaches it via FINDINGS/GAPS, not the cold-start table"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "closed by PR #1895 itself - FINDINGS 587/588, GAPS 1 (CLOSED), CONTRADICTIONS 1 (Tier 1 ruling), RECIPES 1 ARE the governing domain docs, all edited in the same PR"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - dated one-off report, not a long-lived manual/roadmap; no metadoc owed"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3555-29974/CHANGELOG.md:20: - **H3555 — D3 gen.pl accent split measured at full-corpus n: GAPS §1 closed, CONTRADICTIONS §1 ruled Tier 1 (Fable 5 `claude-fable-5`, 26-08-2026).** The discr"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3555-29974/.ai_state.md:1277: [docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md);"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - no per-person task issue touches the D3 accent question"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - creates and closes no human action; fully agent-side work"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "satisfied this session - H3555 closed via handoff_close.py --commit (row flipped, archived, plumbing commit on Uprava origin/main); local main clone grep is stale"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - one-off census script, not a reusable capability; the reproducible method is FINDINGS 588"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - SL<->WhitneyRoots edge pre-exists; VedaWebProject/vedaweb-data is an external upstream, not an org repo edge"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - no destructive-risk fact surfaced; the vedaweb 418 outage row lives in SERVER_OUTAGES (updated this pass, Uprava 70dd07bc2)"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - verified by grep: no D3/gen.pl question row exists (only Q2607-101, the unrelated kosha GRA<->VedaWeb concordance roadmap)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - operational research result, refines no MEGABOOK thesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - no enforcement change"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - SL section covers ongoing tracks; a single probe report does not stale it; release 1.144.99 noted in CHANGELOG"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - artifact is not a new long-lived hub/registry"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "closed via PR #1895 on the SL side (FINDINGS 587/588 + GAPS 1 + CONTRADICTIONS 1 + RECIPES 1); data findings live in SL per convention, Uprava FINDINGS is infra-only"
+        }
+      ]
+    }
+  ]
+}
