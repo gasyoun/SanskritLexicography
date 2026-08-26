@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 26-08-2026 (§587 — derivative ī/ū-stem
+_Created: 26-06-2026 · Last updated: 27-08-2026 (§589 — the R4.1 store SAN-LOSS freeze trigger is a literal-marker grep, four real SAN-LOSS rows live in the pwg_ru store unseen, spot-check task Disabled; §587 — derivative ī/ū-stem
 gen.pl accent ruled at full-corpus n: oxytone noun stems 44/44 stem-final,
 devī́-declension adjective/participle feminines genuinely mixed — Whitney §319a
 vs §320/§356 are disjoint scopes, CONTRADICTIONS §1 ruled, GAPS §1 closed;
@@ -8762,3 +8762,11 @@ download) beats any API resume plan; the mirror is Tier 1 primary data.
 > **Source:** probe method in [docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/D3_GENPL_ACCENT_PROBE_26-08-2026.md)
 > · [SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md) vedaweb row
 > (H3555, Fable 5 `claude-fable-5`). — SanskritLexicography · 2026-08-26
+
+### §589. The R4.1 "any SAN-LOSS reaching the store" freeze trigger is a marker grep, not a gate — four real SAN-LOSS rows sit in the pwg_ru store unseen
+
+🔴 **`store_san_loss_scan()` in [`RussianTranslation/src/pilot/spot_check_daily.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/spot_check_daily.py) implements the unconditional lane-freeze condition as a regex for the literal strings `SAN-LOSS` / `UNMAPPED` inside `ru`. It never recomputes `{#…#}` span preservation against `de`.** Re-running the actual gate ([`markup_fidelity_gates.markup_span_flags`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/markup_fidelity_gates.py), the RU thresholds) over all 11 620 rows of the live store finds **4 SAN-LOSS + 1 LS-LOSS rows** (`dA` desiderative head-line with four P./VOP. citations, `dA`+`anu` preverb head, `mA` hom. 5 root variant, `pat` present stem, `asvatantra` fem. ending) — identical in the `pwg-ru-data/tm/` mirror, so they pre-date H3500 and passed every window close; `spot_check_daily` reports `san_loss_in_store=False` for the same store. Compounding it: the `PWG-RU spotcheck pc lane` scheduled task is **Disabled** on the box and `pwg-ru-data/telemetry/` holds zero `spotcheck_*.json` — the surveillance H2264 re-wired after H2246 found it dead is dead again, and its sample frame (`*.PROMOTED.json` auto-promotion records) is empty for supervised windows anyway. Store-level runner: [`RussianTranslation/src/audit_store_gates.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_store_gates.py) (exit 1 on any hard flag; also diffs src against the mirror — see [GAPS §16](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) for the 289-row `Instr.`→`Ins.` drift it surfaced). Pattern class: a control whose predicate is a *label* of the defect rather than the defect (cf. §263 informal-label invisibility).
+
+> **Source:** [reports/PWG_RU_TRANSLATION_STORE_AUDIT_27-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/PWG_RU_TRANSLATION_STORE_AUDIT_27-08-2026.md)
+> · [H3590](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3590-Fable_RussianTranslation_pwg-ru-translation-store-audit_27.08.26.md)
+> (Fable 5 `claude-fable-5`). — SanskritLexicography · 2026-08-27

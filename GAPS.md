@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 26-08-2026_
+_Created: 08-07-2026 · Last updated: 27-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -66,6 +66,13 @@ How to close: a proper-noun lookup table validated against a Sanskrit onomastico
 > **Source:** [FINDINGS §60](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#60-practical-russian-transcription-of-sanskrit-names-has-no-safe-reverse-transliteration) · [RussianTranslation](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09)
 
 ---
+
+### §16. 289 rows of the live pwg_ru store carry an `Instr.`→`Ins.` / `Akk.`→`Acc.` case-label rewrite that no repo script produces and the mirror lacks
+🟠 ✍️ **We do NOT know what rewrote 289 `ru` rows of `RussianTranslation/src/pwg_ru_translated.jsonl` between 17:25 and 23:03 on 25-08-2026.** Exactly half the `<ab>Instr.</ab>` occurrences (239/478) became `<ab>Ins.</ab>`, plus `Akk.`→`Acc.` and trailing-dot insertions in `zz_nws`/`zz_sch`/`zz_pw` sub-cards; the [`pwg-ru-data/tm/`](https://github.com/gasyoun/pwg-ru-data/tree/main/tm) mirror (H3500's 11 598-row state) is uniform `Instr.`, and no script in SanskritLexicography, pwg-ru-data or the H3361 window dir writes `Ins.`. The repo canon runs the other way ([`pwg_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab.py) `RENAME_ALIASES = {'Ins.': 'Instr.'}`), so render is unaffected but the store is half-normalised away from its own canonical label and the mirror is one window (+18 ids) and one rewrite behind.
+Why it matters: refreshing the mirror from src cements an unowned half-rewrite; re-normalising src from the mirror discards a change someone may have intended. Either way the released TM pack must not be cut from a store whose label set is non-uniform.
+Blocker: no writer identified; no provenance stamp changed on the 289 rows (only `ru`).
+How to close: a human should decide the canonical case-label set (`Instr.` per `pwg_ab.py`, or the Latin `Ins.`/`Acc.` family); then run the chosen normalisation over the WHOLE store with a ledger row, refresh the mirror, and re-run [`audit_store_gates.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_store_gates.py) to prove `changed_ru=0`.
+> **Source:** [FINDINGS §589](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) · [reports/PWG_RU_TRANSLATION_STORE_AUDIT_27-08-2026.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/PWG_RU_TRANSLATION_STORE_AUDIT_27-08-2026.md) · [H3590](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3590-Fable_RussianTranslation_pwg-ru-translation-store-audit_27.08.26.md) (Fable 5 `claude-fable-5`, 27-08-2026)
 
 ## ⚙️ Auto-seeded candidates (unconfirmed — `seed_gaps.py`, 08-07-2026)
 
