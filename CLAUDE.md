@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 22-08-2026_
+_Created: 06-08-2026 · Last updated: 27-08-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -102,6 +102,12 @@ source references (`<ls>`) are deliberately left untouched. Do not "fix" that �
 it is intentional. Most content in this directory is in Russian.
 
 ## RussianTranslation/ — pwg_ru (PWG→RU/EN, a separate pipeline from mw_ru above)
+
+**This directory is the code home for the private `pwg-ru-data` repo** — `pwg-ru-data`
+holds the data (rights-fenced storage for the pwg_ru pipeline's outputs), and every
+tool, prompt, pipeline stage, and doc that operates on it lives here in
+`RussianTranslation/`. A session that lands in `pwg-ru-data` reads its own `CLAUDE.md`
+pointer back to this repo before doing anything else (H3564, ruling F6).
 
 A second, independent translation effort in the same directory: PWG
 (Böhtlingk-Roth, "Petersburg Dictionary") → Russian (primary) and English
