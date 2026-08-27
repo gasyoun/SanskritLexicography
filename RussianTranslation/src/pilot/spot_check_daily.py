@@ -54,6 +54,7 @@ SCHEMA = 'pwg.spotcheck_daily.v1'
 # single-sourced content policies (promote_final_cards owns TN_RE; canary_gate owns
 # the SAN-LOSS literal class) — import, never restate (H2158 lesson).
 import promote_final_cards as pfc  # noqa: E402
+import markup_fidelity_gates  # noqa: E402 — real span-survival gate (H3593/FINDINGS §589)
 
 SAN_LOSS_RE = re.compile(r'SAN-LOSS|UNMAPPED')
 CONTENT_FIELDS = pfc.CONTENT_MASS_FIELDS
@@ -172,8 +173,16 @@ def check_card(key, rows):
 
 
 def store_san_loss_scan(store):
-    """ANY SAN-LOSS/UNMAPPED literal anywhere in the store's ru/en fields (R4.1's
-    unconditional freeze trigger) — full scan, not sample-bounded."""
+    """ANY row where the real span-survival gate fires SAN-LOSS (R4.1's unconditional
+    freeze trigger) — full scan, not sample-bounded.
+
+    Calls markup_fidelity_gates.markup_span_flags(de, ru, check_ab=False) per row — the
+    exact gate + threshold audit_store_gates.py runs over the RU path — instead of
+    grepping the literal ``SAN-LOSS``/``UNMAPPED`` marker string in ``ru``. The marker-grep
+    never recomputes ``{#...#}`` span preservation, so a real head-line SAN-LOSS row (source
+    spans silently dropped, no literal marker text) returned ``san_loss_in_store=False``
+    (FINDINGS §589, SanskritLexicography#1902).
+    """
     hits = []
     if not os.path.exists(store):
         return hits
@@ -183,10 +192,10 @@ def store_san_loss_scan(store):
                 row = json.loads(line)
             except ValueError:
                 continue
-            for field in ('ru', 'en'):
-                value = row.get(field)
-                if isinstance(value, str) and SAN_LOSS_RE.search(value):
-                    hits.append({'subcard': row.get('subcard'), 'field': field})
+            de, ru = row.get('de') or '', row.get('ru') or ''
+            for flag in markup_fidelity_gates.markup_span_flags(de, ru, check_ab=False):
+                if flag.startswith('SAN-LOSS'):
+                    hits.append({'subcard': row.get('subcard'), 'field': 'ru', 'flag': flag})
     return hits
 
 
@@ -310,8 +319,13 @@ def selftest():
              'provenance': {'total_senses': 1}},
             {'subcard': 'rootA~~b', 'ru': 'плохой {T3}', 'h': 'b', 'grammar': 'm',
              'layer': 'pwg'},                                  # sev-3 tn_residue
-            {'subcard': 'rootB~~c', 'ru': 'x SAN-LOSS y', 'h': 'c', 'grammar': 'f',
-             'layer': 'zzz'},                                  # sev-3 san_loss + sev-1 layer
+            {'subcard': 'rootB~~c', 'de': '{#a#} {#b#} {#c#}', 'ru': 'x SAN-LOSS y',
+             'h': 'c', 'grammar': 'f', 'layer': 'zzz'},         # sev-3 san_loss + sev-1 layer
+            # H3593 regression (SanskritLexicography#1902, FINDINGS §589): a real dA-shaped
+            # head-line SAN-LOSS with NO literal marker text in `ru` — the marker-grep this
+            # replaces returned san_loss_in_store=False for exactly this shape.
+            {'subcard': 'dA~~h0_regress', 'de': '{#di/tsati#} {#ditsate#} P. 7,4,54.',
+             'ru': 'желать дать', 'h': 'dA', 'grammar': 'v', 'layer': 'pwg'},
         ]
         with open(store, 'w', encoding='utf-8', newline='\n') as f:
             for r in rows:
@@ -327,6 +341,10 @@ def selftest():
         assert not any(d['key'] == 'rootA~~a' and d['severity'] == 3
                        for d in rep['defects']), 'clean card flagged'
         assert rep['sev3_count'] >= 2 and rep['san_loss_in_store'] is True
+        san_hit_subcards = {h['subcard'] for h in store_san_loss_scan(store)}
+        assert 'dA~~h0_regress' in san_hit_subcards, (
+            'real span-loss with no literal marker must be caught by the gate, not '
+            'missed like the old marker-grep: %r' % san_hit_subcards)
         assert rep['judge'] == 'skipped'
         # determinism: same date -> same sample
         rep2 = build_report(today, 1.0, td, store)
