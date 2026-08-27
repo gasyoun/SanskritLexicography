@@ -13,6 +13,8 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+
+## [1.144.101] - 2026-08-27
 - **H3258 — dual-changelog version gate (Grok 4.6 `grok-4.6`, 27-08-2026).** Root [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md) and [RussianTranslation/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md) share the 1.144.x series. [`Uprava/tools/cut_release.py`](https://github.com/gasyoun/Uprava/blob/main/tools/cut_release.py) now refuses a number already used in either file, in `CITATION.cff`, or on `git ls-remote --tags` (exit 5). Replay of the 19-08 collision (`--version 1.144.79`) fails loud; neither changelog is deleted. Windows `CHANGELOG.md`/`changelog.md` is one NTFS file — `git add` the `git ls-files` spelling. Independent 1.0.x files under ReverseDictionary and Digital_Sanskrit_Lexicography-BOOK stay out of the union. Documented in this [CLAUDE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md). Uprava FINDINGS §571.
 
 ## [1.144.100] - 2026-08-27
