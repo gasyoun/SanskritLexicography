@@ -1,6 +1,8 @@
 # Statistics for the Sanskrit Lexicon — a 12-month org-wide census & analytics roadmap 2026–2027
 
-_Created: 12-07-2026 · Last updated: 31-07-2026_
+_Created: 12-07-2026 · Last updated: 27-08-2026_
+
+> **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
 **What this is.** The *measurement* counterpart to the two existing hubs. Where
 [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)

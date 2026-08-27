@@ -1,6 +1,8 @@
 # ROADMAP_ACC_NCC — Catalogue-of-Works asset (Aufrecht × New Catalogus Catalogorum)
 
-_Created: 03-07-2026 · Last updated: 26-07-2026_
+_Created: 03-07-2026 · Last updated: 27-08-2026_
+
+> **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
 Goal: build a **catalogue-of-works data asset** by joining **ACC** (Aufrecht's
 *Catalogus Catalogorum*, Cologne) as the spine with **NCC** (*New Catalogus
