@@ -1,6 +1,8 @@
 # ROADMAP — PWG_RU_UNFREEZE (SanskritLexicography, 2026 H2)
 
-_Created: 17-07-2026 · Last updated: 17-07-2026_
+_Created: 17-07-2026 · Last updated: 27-08-2026_
+
+> **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). D4 addendum: this file joined the Wave 1 FLAG list after 21-08. Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
 Waves, sequencing, and freezes for the **PWG_RU_UNFREEZE** plan. Index + rulings: [PLAN_SanskritLexicography_PWG_RU_UNFREEZE_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_UNFREEZE_2026H2.md).
 
