@@ -1,6 +1,8 @@
 # ROADMAP — VedaWeb 2.0 data reuse across the Sanskrit Lexicon repos
 
-_Created: 03-07-2026 · Last updated: 01-08-2026_
+_Created: 03-07-2026 · Last updated: 27-08-2026_
+
+> **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
 Scope ruled by M.G. 03-07-2026 (4 decisions, elicited in-session): **full breadth**
 (validation + persistent feed + GRA crosswalk + meter/translation layers) · feed home =
