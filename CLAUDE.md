@@ -75,6 +75,18 @@ Dictionary codes seen here: AP, BHS, BUR, CAE, CCS, GRA, INM, MD, MW, PD, PWG,
 PWK, SCH, SKD, VCP, VEI (see [`README.md`](README.md) for the full ecosystem
 table in [`../CLAUDE.md`](../CLAUDE.md)).
 
+## Dual changelog — shared 1.144.x namespace (H3258)
+
+This repo has **two** Keep-a-Changelog files that share the **same** version
+series. `/cut-release` must treat them as one namespace:
+
+- [CHANGELOG.md](CHANGELOG.md) — repo-level
+- [RussianTranslation/CHANGELOG.md](RussianTranslation/CHANGELOG.md) — pwg_ru project
+
+The mechanical gate is [`Uprava/tools/cut_release.py`](https://github.com/gasyoun/Uprava/blob/main/tools/cut_release.py): before writing a heading it unions both files, `CITATION.cff` `version:`, and `git ls-remote --tags`. An explicit `--version` already used fails with exit 5 (replay: `python Uprava/tools/cut_release.py . --version 1.144.79` — H3144 cut that number from the nested file on 19-08-2026 while H3152 claimed it in the root file). Auto-bump stops after 5 tries. **Do not delete one changelog to resolve a collision.**
+
+**Windows alias.** `CHANGELOG.md` and `changelog.md` are the same NTFS file; git tracks one spelling. Always `git add` the path `git ls-files` reports (Uprava FINDINGS §74 / §100 / §173 / §348). `ReverseDictionary/CHANGELOG.md` and `Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md` keep an independent `1.0.x` series and are **not** in this union.
+
 ## Encoding — BOM is inconsistent, check before editing
 
 The org rule is "csl-orig files never have BOMs," but **that does not hold here**.
