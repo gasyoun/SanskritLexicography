@@ -19,7 +19,8 @@ Every one of the ten Grok 4.5 serious flags is typed, span-localised and repaire
 | Rows that become `uncertain` (untranslated German residue) | 9 |
 | Same mechanism elsewhere in the sample, unflagged and out of scope | 5 rows (13/400 carry it; 8 were flagged) |
 | Paid Claude generations | **0** |
-| Grok 4.5 after-score | **not run** — authorised 28-08-2026, tool built, blocked on OpenRouter credit (H3611) |
+| Grok 4.5 after-score (independent) | **0/10 serious** — run 28-08-2026, $0.138366, `cost_evaluable: true` (H3611) |
+| Projected n=400 if the repairs were applied | serious 2.50 %→**0.00 %** PASS, but fidelity 99.50 %→**97.25 %** — **gate still FAILS** |
 | Wave-1 Track B artefacts byte-identical before/after | yes (20 files) |
 
 ## Every serious error is one `{%…%}` span
@@ -131,7 +132,7 @@ Only `taruRa` (row 13) comes out fully clean and stays a promotion candidate, be
 
 The handoff allows at most one paid Claude generation **if any row is still empty**. No row was empty — all ten carried a target, and the defect was that the target was wrong, not missing. The paid branch therefore never opened. `paid_claude_calls: 0` in the receipt is a measured field, not an aspiration.
 
-## Grok 4.5 after-score: not run
+## Grok 4.5 after-score: not run in the H2877 pass
 
 `XAI_API_KEY` is unset — absent from the process environment and from the one untracked `src/.env`, which carries `DEEPSEEK_API_KEY` and `OPENROUTER_API_KEY` and nothing else. The handoff's fence for that case is explicit: leave repairs as candidates, do not self-score. So the sidecar carries `after_score: null` and `after_score_status: "candidate_unscored"` on all ten rows, and no Claude adjudication was performed on Claude's own repairs.
 
@@ -153,21 +154,36 @@ MG authorised a paid re-score on 28-08-2026, naming **Grok 4.6**. Two facts resh
 
 The tool is [`src/pwg_tm_serious10_rescore.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_serious10_rescore.py). It follows the H3299 protocol rather than inventing one: each row is judged **blind** in its own call — the judge never sees that a repair happened, what the previous target was, or how H2877 classified it (`--selftest` asserts that absence) — the judge labels exactly one `defect_class`, and `serious_error` is **derived locally** from `SEVERITY_RUBRIC`, never taken from the model's reply (also selftest-asserted).
 
-**It did not run.** The OpenRouter account is out of credit:
+It first failed on money: the OpenRouter account was $0.26 overdrawn and *every* model returned HTTP 402, not only Grok — an account balance, not a model gate, with nothing charged. A funded key was supplied on 28-08-2026 and the run went through.
 
-```text
-credits: total_credits 45, total_usage 45.261790443
-x-ai/grok-4.5                    HTTP 402  Insufficient credits
-deepseek/deepseek-chat           HTTP 402  Insufficient credits
-meta-llama/llama-3.2-1b-instruct HTTP 402  Insufficient credits
-```
+### Result: 0/10 serious — and the gate fails anyway, on a different floor
 
-Every model 402s, not only Grok, so this is an account balance and not a model gate. **Nothing was charged** — the requests are rejected before generation, and `total_usage` is unchanged from the pre-attempt probe.
+| Judge | Serious | Fidelity pass | Equivalence correct | Defect classes |
+|---|---|---|---|---|
+| `x-ai/grok-4.5` — **independent** | **0 / 10** | 1 / 10 | 1 / 10 | `german_residue` 9 · `none` 1 |
+| `x-ai/grok-4.6` — self-score, non-independent | 1 / 10 | 1 / 10 | 1 / 10 | `german_residue` 8 · `none` 1 · `sense_absent_or_inverted` 1 |
 
-Two ways to finish it, either of which needs a human:
+`independence_errors` returns `[]` on the 4.5 file and flags **all ten** rows of the 4.6 file — the guard fires exactly as designed. Severity-consistency violations: none on either. Spend: **$0.138366** total ($0.052628 independent + $0.085738 self-score, 10,541 input / 16,471 output tokens over 20 calls), so this receipt is `cost_evaluable: true` — the first in this programme, against H2684's `calls: 65` with zero tokens.
 
-1. **Top up the OpenRouter balance**, then run `pwg_tm_serious10_rescore.py run`. Ten rows × two judges is a few cents at $2 / $6 per M tokens, and this route records real tokens and USD, so its receipt is `cost_evaluable: true` — unlike H2684, whose ledger carries `calls: 65` with zero tokens and `cost_evaluable: false`.
-2. **Run it as a session judge**, which is what H2684 in fact did. `pwg_tm_serious10_rescore.py packet` emits [`serious10_blind_packet.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_blind_packet.jsonl) and a self-contained [`serious10_judge_brief.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_judge_brief.md) that a Grok 4.5 session executes with no key and no credit at all.
+**Every serious error is gone.** The nine reverts all score `german_residue`, which the H3299 rubric pins non-serious, and `taruRa` scores `none` — clean, exactly as the copy-through repair intended. The prediction the repair rested on is confirmed by an independent judge, not asserted.
+
+**But the repair trades one failing floor for another.** Splice those verdicts over the frozen sample (`pwg_tm_serious10_rescore.py project`) and:
+
+| Floor | Before (H2684) | Projected with the 10 repairs | |
+|---|---|---|---|
+| fidelity ≥ 98 % | 398/400 = **99.50 %** PASS | 389/400 = **97.25 %** | **FAIL** |
+| equivalence ≥ 95 % | 382/400 = 95.50 % PASS | 383/400 = 95.75 % | PASS |
+| serious_error ≤ 1 % | 10/400 = **2.50 %** FAIL | 0/400 = **0.00 %** | PASS |
+
+All ten rows scored `fidelity: pass` *before* the repair — the judge considered a wrong Russian gloss faithful-but-inequivalent. Restoring the German makes nine of them unfaithful, so fidelity drops 2.25 points straight through its floor. **The gate still fails; it has merely moved from the serious-error ceiling to the fidelity floor.**
+
+That is the substantive finding of this pass, and it is a limit on the method, not a defect in it. Withdrawing a false claim is the right deterministic cure for a *serious* error and it demonstrably works. It cannot make Wave 1 pass, because nine of these rows do not need a withdrawal — they need an actual Russian translation of `{%Jmd%}`, `{%die%}`, `{%gewachsen%}`, `{%mit%}`, `{%thun%}`, `{%Antritt, Anfang, Beginn%}`, `{%beginnt%}` and `{%an sich, zu sich, auf sich%}`. Only `taruRa` is genuinely finished.
+
+The two judges agree on 9 of 10 rows (0.90 class, 0.90 severity). The single split is `vid`: 4.5 calls it `german_residue` (non-serious), 4.6 calls it `sense_absent_or_inverted` (serious). Since 4.6 generated the target it is judging, its verdict carries no independent weight here — but the disagreement marks `vid` as the one row worth a human eye if these are ever promoted.
+
+Artefacts: [`serious10_rescore_grok45.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_rescore_grok45.jsonl) · [`serious10_rescore_grok46.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_rescore_grok46.jsonl) · [`serious10_rescore_receipt.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_rescore_receipt.json) · [`serious10_projection.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_projection.json).
+
+A no-cost alternative remains available for any future re-score: `pwg_tm_serious10_rescore.py packet` emits [`serious10_blind_packet.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_blind_packet.jsonl) and a self-contained [`serious10_judge_brief.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_judge_brief.md) that a Grok 4.5 session executes with no key at all — which is what H2684 itself did.
 
 ## What this does not claim
 
