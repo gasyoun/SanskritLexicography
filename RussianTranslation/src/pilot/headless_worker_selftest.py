@@ -23,7 +23,10 @@ import headless_worker as h
 import gen_opt_harness2 as generator
 import proc_tree
 from call_reservation import CallReservationLedger
-from execution_contract import ActiveCallClaim, config_dir_fingerprint
+from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
+                                PRODUCTION_NO_OUTPUT_PROGRESS_MS,
+                                assert_progress_window_below_ceiling,
+                                config_dir_fingerprint, progress_window_ms_for)
 
 
 class MemoryCallLedger:
@@ -2039,6 +2042,14 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h3157_refusal_is_not_reported_as_malformed_output()
     test_h3157_malformed_structured_channel_is_still_malformed()
     test_h3157_failed_paid_envelope_is_captured()
+    test_h2878_zero_byte_spawn_dies_on_the_progress_window()
+    test_h2878_emitting_spawn_survives_its_progress_window()
+    test_h2878_hard_timeout_stays_distinct_from_a_progress_kill()
+    test_h2878_window_is_derived_from_the_output_format_not_a_literal()
+    test_h2878_hard_timeout_ceiling_is_unchanged()
+    test_h2878_a_window_that_could_never_fire_is_refused()
+    test_h2878_a_killed_attempt_records_which_bound_ended_it()
+    test_h2878_emitting_spawn_survives_the_production_window()
     print('headless_worker_selftest: PASS')
 
 
@@ -2160,6 +2171,203 @@ def test_h3157_failed_paid_envelope_is_captured():
             h.claude_argv_prefix = original_prefix
             h.FAILED_ENVELOPE_DIR = original_dir
     print('  H3157 (c): a failed PAID envelope is persisted with its classification')
+
+
+
+
+# ---------------------------------------------------------------------------
+# H2878 (issue #1680, FINDINGS §378) -- the no-output-progress watchdog.
+#
+# The defect these pin: a TOTAL-WALL constant cannot separate a hung call from a slow one.
+# H2313 proved it from the other side (300 000 ms sat below p90 of the COMPLETED spawn
+# distribution, so it killed healthy calls), and raising it to 600 000 ms bought no ability
+# to notice a spawn that died silently in second three. These tests pin the second,
+# ORTHOGONAL bound -- longest stretch with no result bytes -- and, just as importantly, pin
+# that arming it never became a licence to re-fit the ceiling.
+
+_SILENT_CHILD = 'import time; time.sleep(%d)'
+_EMITTING_CHILD = ("import sys, time\n"
+                   "for _ in range(%d):\n"
+                   "    sys.stdout.write('.'); sys.stdout.flush(); time.sleep(%s)\n"
+                   "sys.stdout.write('DONE'); sys.stdout.flush()\n")
+
+
+def test_h2878_zero_byte_spawn_dies_on_the_progress_window():
+    """A spawn that never produces a result byte dies on the WINDOW, not on the ceiling.
+
+    The red half of red-then-green: before H2878 `run_tree_kill` had no window at all, so
+    this child was held for the full wall budget and came back as an undifferentiated
+    `timeout` with nothing to say about whether it had ever been alive.
+    """
+    reading = {}
+    started = time.monotonic()
+    try:
+        proc_tree.run_tree_kill([sys.executable, '-c', _SILENT_CHILD % 30],
+                                capture_output=True, timeout=30,
+                                progress_window_ms=500, progress_out=reading)
+    except subprocess.TimeoutExpired as exc:
+        elapsed = time.monotonic() - started
+        assert exc.killed_reason == 'no_output_progress', exc.killed_reason
+        assert exc.bytes_seen == 0, exc.bytes_seen
+        assert 500 <= exc.quiet_ms < 5000, exc.quiet_ms
+        # The point of the whole unit: it died on its SILENCE, nowhere near the wall budget.
+        assert elapsed < 5, elapsed
+        assert reading['killed_reason'] == 'no_output_progress', reading
+        print('  H2878: a 0-byte spawn dies on the progress window at %d ms '
+              '(wall budget 30 000 ms, untouched)' % exc.quiet_ms)
+        return
+    raise AssertionError('a 0-byte spawn survived its no-output-progress window')
+
+
+def test_h2878_emitting_spawn_survives_its_progress_window():
+    """A slow-but-EMITTING spawn is not a hang, and must survive several windows' worth.
+
+    This is the fence "do not treat a slow-but-emitting call as hung" made mechanical: the
+    child runs for ~3 s against a 1 000 ms window, i.e. it outlives its own window three
+    times over purely by continuing to say something.
+    """
+    reading = {}
+    result = proc_tree.run_tree_kill(
+        [sys.executable, '-c', _EMITTING_CHILD % (15, '0.2')],
+        capture_output=True, timeout=30, progress_window_ms=1000, progress_out=reading)
+    assert result.returncode == 0, result.returncode
+    assert result.stdout.endswith('DONE'), result.stdout
+    assert reading['bytes_seen'] >= 15, reading
+    assert reading['quiet_ms'] < 1000, reading
+    assert reading['killed_reason'] is None, reading
+    assert reading['elapsed_ms'] >= 3000, reading   # outlived its window 3x over
+    print('  H2878: an emitting spawn survives %d ms against a 1 000 ms window '
+          '(longest silence %d ms)' % (reading['elapsed_ms'], reading['quiet_ms']))
+
+
+def test_h2878_hard_timeout_stays_distinct_from_a_progress_kill():
+    """The backstop still fires, and still names itself as the backstop.
+
+    `killed_reason` is the field that makes a killed call readable after the fact. If both
+    bounds reported the same token the unit would have produced telemetry that repeats what
+    §378 already complained about.
+    """
+    try:
+        proc_tree.run_tree_kill([sys.executable, '-c', _SILENT_CHILD % 30],
+                                capture_output=True, timeout=1, progress_out={})
+    except subprocess.TimeoutExpired as exc:
+        assert exc.killed_reason == 'hard_timeout', exc.killed_reason
+        assert exc.bytes_seen == 0, exc.bytes_seen
+        print('  H2878: the total-wall backstop still fires and reports `hard_timeout`')
+        return
+    raise AssertionError('the wall ceiling did not fire')
+
+
+def test_h2878_window_is_derived_from_the_output_format_not_a_literal():
+    """The window is a FUNCTION of the spawn shape, and both paid lanes go through it.
+
+    #983 catalogued the failure this prevents: one number restated in five places, so
+    changing one of them is inert. A window pinned by a literal at each call site would be
+    worse than that -- it could be armed against a BUFFERED format, where stdout is
+    legitimately silent for the whole call and a 90 s window kills every healthy spawn.
+    """
+    import max_account_orchestrator as mao        # lazy: it resolves paths at import time
+    assert PRODUCTION_NO_OUTPUT_PROGRESS_MS == 90000, PRODUCTION_NO_OUTPUT_PROGRESS_MS
+    # A buffered format cannot be watched for stalled output -- observe only.
+    assert progress_window_ms_for('json') is None
+    # A streaming one can, and arms at the ruled default by doing nothing else.
+    assert progress_window_ms_for('stream-json') == PRODUCTION_NO_OUTPUT_PROGRESS_MS
+    # Both paid lanes derive theirs; neither carries a literal.
+    assert h.WORKER_PROGRESS_WINDOW_MS == progress_window_ms_for(h.WORKER_OUTPUT_FORMAT)
+    assert mao.PROBE_PROGRESS_WINDOW_MS == progress_window_ms_for(mao.PROBE_OUTPUT_FORMAT)
+    # And today both run a buffered format, so neither is armed. This assertion is the
+    # safety interlock, not a wish: if a lane switches to `stream-json` it arms itself.
+    assert h.WORKER_PROGRESS_WINDOW_MS is None, h.WORKER_PROGRESS_WINDOW_MS
+    assert mao.PROBE_PROGRESS_WINDOW_MS is None, mao.PROBE_PROGRESS_WINDOW_MS
+    print('  H2878: the window is derived from `--output-format` (json -> observe only, '
+          'stream-json -> %d ms), never a copied literal' % PRODUCTION_NO_OUTPUT_PROGRESS_MS)
+
+
+def test_h2878_hard_timeout_ceiling_is_unchanged():
+    """H2299's standing ban, pinned: adding the window re-fit NOTHING.
+
+    The whole reason this unit exists is that the previous two attempts to make killed calls
+    readable both ended in moving the ceiling. 600 000 ms is the H2313 owner ruling of
+    06-08-2026 and this handoff had no mandate to touch it.
+    """
+    assert PRODUCTION_HARD_TIMEOUT_MS == 600000, PRODUCTION_HARD_TIMEOUT_MS
+    assert h.HARD_TIMEOUT_MS == PRODUCTION_HARD_TIMEOUT_MS
+    assert generator.KILL_CEIL_MS == PRODUCTION_HARD_TIMEOUT_MS
+    # The window is a DIFFERENT quantity, not a smaller ceiling: it must sit strictly below
+    # the backstop, and it must not have replaced it anywhere.
+    assert PRODUCTION_NO_OUTPUT_PROGRESS_MS < PRODUCTION_HARD_TIMEOUT_MS
+    print('  H2878: PRODUCTION_HARD_TIMEOUT_MS unchanged at %d ms (no ceiling re-fit)'
+          % PRODUCTION_HARD_TIMEOUT_MS)
+
+
+def test_h2878_a_window_that_could_never_fire_is_refused():
+    """A window at or above the wall ceiling is a silent no-op, so it is refused.
+
+    Same stance H2254 took for the ceiling itself: a request that cannot do what it says is
+    an error, not something to accept and quietly ignore.
+    """
+    assert_progress_window_below_ceiling(None, 'unset')                 # observe only: fine
+    assert_progress_window_below_ceiling(90000, 'ruled default')
+    for bad in (PRODUCTION_HARD_TIMEOUT_MS, PRODUCTION_HARD_TIMEOUT_MS + 1, 0, -1):
+        try:
+            assert_progress_window_below_ceiling(bad, 'test')
+        except ValueError:
+            continue
+        raise AssertionError('a %r ms progress window was accepted' % bad)
+    print('  H2878: a window at/above the ceiling (or non-positive) is refused, not ignored')
+
+
+def test_h2878_a_killed_attempt_records_which_bound_ended_it():
+    """The worker carries the reading onto the attempt row.
+
+    Before H2878 every killed attempt was `returncode: 124` and a classification, so a
+    silent hang and a call the lane would still have been waiting on left identical rows --
+    the exact unreadability FINDINGS §378 recorded against the 13-08 c1 reading.
+    """
+    def stalled_runner(argv, **_kwargs):
+        exc = subprocess.TimeoutExpired(argv, 90)
+        exc.killed_reason = 'no_output_progress'
+        exc.bytes_seen = 0
+        exc.quiet_ms = 90012
+        raise exc
+
+    payload, status, code = execute(manifest(), stalled_runner)
+    assert code == 0 and payload['summary']['kill_timeouts'] >= 1, status
+    killed = [a for a in status['attempts'] if a.get('returncode') == 124]
+    assert killed, status['attempts']
+    assert killed[0]['killed_reason'] == 'no_output_progress', killed[0]
+    assert killed[0]['bytes_seen'] == 0 and killed[0]['quiet_ms'] == 90012, killed[0]
+
+    # A runner that does NOT watch leaves the row exactly as it was -- absent, not null.
+    def bare_runner(argv, **_kwargs):
+        raise subprocess.TimeoutExpired(argv, 1)
+
+    _payload, bare_status, _code = execute(manifest(), bare_runner)
+    bare = [a for a in bare_status['attempts'] if a.get('returncode') == 124]
+    assert bare and 'killed_reason' not in bare[0], bare[0]
+    print('  H2878: a killed attempt records killed_reason/bytes_seen/quiet_ms; an unwatched '
+          'runner is byte-for-byte unchanged')
+
+
+def test_h2878_emitting_spawn_survives_the_production_window():
+    """The acceptance leg at the REAL 90 s window, opt-in because it costs 90+ s of wall.
+
+    The scaled test above pins the behaviour; this pins the ACCEPTANCE sentence literally --
+    an emitting spawn survives 90 s. Set H2878_LONG_SELFTEST=1 to run it.
+    """
+    if os.environ.get('H2878_LONG_SELFTEST') != '1':
+        print('  H2878: 90 s acceptance leg SKIPPED (set H2878_LONG_SELFTEST=1 to run)')
+        return
+    reading = {}
+    result = proc_tree.run_tree_kill(
+        [sys.executable, '-c', _EMITTING_CHILD % (100, '1.0')],
+        capture_output=True, timeout=PRODUCTION_HARD_TIMEOUT_MS // 1000,
+        progress_window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS, progress_out=reading)
+    assert result.returncode == 0 and result.stdout.endswith('DONE'), result.stdout
+    assert reading['elapsed_ms'] >= 95000, reading
+    assert reading['killed_reason'] is None, reading
+    print('  H2878: an emitting spawn survived %d ms against the production 90 000 ms window '
+          '(longest silence %d ms)' % (reading['elapsed_ms'], reading['quiet_ms']))
 
 
 if __name__ == '__main__':
