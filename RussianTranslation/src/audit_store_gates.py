@@ -34,6 +34,7 @@ from markup_fidelity_gates import (  # noqa: E402
     markup_wrapper_soft_flags,
     missing_target_flag,
 )
+from pwg_tm_gates import surface_form_flags  # noqa: E402
 
 DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 DEFAULT_MIRROR = os.path.normpath(os.path.join(
@@ -65,6 +66,7 @@ def gate_rows(rows):
     hard = collections.Counter()
     soft = collections.Counter()
     flagged = []
+    surface = []
     dups = collections.defaultdict(list)
     for row in rows:
         de = row.get('de') or ''
@@ -81,11 +83,17 @@ def gate_rows(rows):
             flagged.append({'key1': row.get('key1'), 'subcard': row.get('subcard'),
                             'sense_tag': row.get('sense_tag'), 'line': row['_line'],
                             'review_status': row.get('review_status'), 'flags': flags})
+        sflags = surface_form_flags(de, ru)
+        if sflags:
+            surface.append({'key1': row.get('key1'), 'subcard': row.get('subcard'),
+                            'sense_tag': row.get('sense_tag'), 'line': row['_line'],
+                            'flags': sflags})
         if ru:
             dups[dup_key(ru)].append(row_id(row))
     clusters = {k: v for k, v in dups.items() if len(v) > 1}
     byte_identical = sum(1 for v in clusters.values() if len(set(v)) < len(v))
     return {'rows': len(rows), 'hard': dict(hard), 'soft': dict(soft), 'flagged': flagged,
+            'surface': surface,
             'identical_ru_clusters': len(clusters), 'byte_identical_id_dups': byte_identical}
 
 
@@ -122,6 +130,18 @@ def main():
     print('identical-ru clusters=%d byte-identical id dups=%d' % (g['identical_ru_clusters'], g['byte_identical_id_dups']))
     for f in g['flagged']:
         print('  %-14s %-28s %-10s L%-6d %s' % (f['key1'], f['subcard'], (f['sense_tag'] or '')[:10], f['line'], ' '.join(f['flags'])))
+    surf = g.get('surface') or []
+    print('=== GAPS §17 surface-form (does not change exit; TM gate owns promotion)')
+    print('surface_rows=%d GLOSS-DE-RESIDUE=%d AB-MUTATED=%d' % (
+        len(surf),
+        sum(1 for r in surf if 'GLOSS-DE-RESIDUE' in r['flags']),
+        sum(1 for r in surf if 'AB-MUTATED' in r['flags'])))
+    for f in surf[:12]:
+        print('  %-14s %-28s %-10s L%-6d %s' % (
+            f['key1'], f['subcard'], (f['sense_tag'] or '')[:10], f['line'],
+            ' '.join(f['flags'])))
+    if len(surf) > 12:
+        print('   ... %d more (see --json)' % (len(surf) - 12))
 
     if not args.no_mirror and os.path.exists(args.mirror):
         mirror_rows = load_rows(args.mirror)

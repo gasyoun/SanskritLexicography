@@ -2,13 +2,16 @@
 """Deterministic PWG TM fragment promotion gates (H2684 Track B).
 
 Source anchoring, markup parity, Sanskrit preservation, completeness,
-duplication, German residue, and provenance. Never a quality self-score.
+duplication, German residue, GAPS §17 surface-form (German `{%…%}` /
+mutated `<ab>`), and provenance. Never a quality self-score.
 
   python src/pwg_tm_gates.py --selftest
+  python src/pwg_tm_gates.py --scan PATH.jsonl
 """
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -41,6 +44,9 @@ PRESERVE_SPAN_RE = re.compile(
     r'<lang\b[^>]*>.*?</lang>|<is\b[^>]*>.*?</is>|\{#.*?#\}',
     re.S,
 )
+GLOSS_INNER_RE = re.compile(r'\{%(.*?)%\}', re.S)
+AB_SPAN_RE = re.compile(r'<ab\b[^>]*>.*?</ab>', re.S)
+LATIN_RE = re.compile(r'[A-Za-zÄÖÜäöüß]')
 
 COPY_SAFE = {
     'grammar_label': 'latin-or-tag copy-through is allowed',
@@ -118,6 +124,43 @@ def residue_flags(fragment):
     return flags
 
 
+def german_gloss_flags(target):
+    """GAPS §17: a `{%…%}` span whose inner text is still German/Latin, not Russian.
+
+    Promotion requires zero German gloss wrappers in the target. A span with
+    Cyrillic and no German letters/function-words is treated as translated.
+    """
+    for inner in GLOSS_INNER_RE.findall(target or ''):
+        if DE_LETTER_RE.search(inner) or DE_FUNC_RE.search(inner):
+            return ['GLOSS-DE-RESIDUE']
+        if LATIN_RE.search(inner) and not CYR_RE.search(inner):
+            return ['GLOSS-DE-RESIDUE']
+    return []
+
+
+def ab_identity_flags(source, target):
+    """GAPS §17: every `<ab>…</ab>` in the target must be byte-identical to its source.
+
+    Positional pairing; a count mismatch is also a mutation (AB-LOSS only fires
+    on abs-drop ≥ 2, so a single rewritten abbreviation would otherwise pass).
+    """
+    src_abs = AB_SPAN_RE.findall(source or '')
+    tgt_abs = AB_SPAN_RE.findall(target or '')
+    if not src_abs and not tgt_abs:
+        return []
+    if len(src_abs) != len(tgt_abs):
+        return ['AB-MUTATED']
+    for a, b in zip(src_abs, tgt_abs):
+        if a != b:
+            return ['AB-MUTATED']
+    return []
+
+
+def surface_form_flags(source, target):
+    """Both GAPS §17 predicates. Shared by pwg.tm.gate.v1 and audit_store_gates."""
+    return german_gloss_flags(target) + ab_identity_flags(source, target)
+
+
 def provenance_flags(fragment):
     prov = fragment.get('generation') or fragment.get('provenance') or {}
     if not isinstance(prov, dict):
@@ -168,6 +211,9 @@ def gate_fragment(fragment, sibling_dup=None):
     hard.extend(sanskrit_flags(src, tgt))
     hard.extend(completeness_flags(fragment))
     hard.extend(residue_flags(fragment))
+    if klass not in COPY_SAFE:
+        hard.extend(german_gloss_flags(tgt))
+    hard.extend(ab_identity_flags(src, tgt))
     hard.extend(provenance_flags(fragment))
     if sibling_dup:
         hard.extend(sibling_dup)
@@ -259,16 +305,84 @@ def _selftest():
     applied = apply_gate(empty, gate_fragment(empty))
     assert applied['promotion_status'] == 'quarantine'
     assert applied['quarantine_reasons']
+    # GAPS §17 canaries (H2684 / 27-08 sidecar): untranslated German gloss + mutated <ab>.
+    upakrama = dict(good, fragment_id='t-upakrama',
+                    source_string='4〉 {%Antritt, Anfang, Beginn%}',
+                    source_hash=C.sha256_text('4〉 {%Antritt, Anfang, Beginn%}'),
+                    target_string='4〉 {%Antritt, Anfang, Beginn%}')
+    assert 'GLOSS-DE-RESIDUE' in gate_fragment(upakrama)['hard'], gate_fragment(upakrama)
+    atmasat = dict(good, fragment_id='t-atmasat',
+                   source_string='{%an sich, zu sich, auf sich%} {%thun%}',
+                   source_hash=C.sha256_text('{%an sich, zu sich, auf sich%} {%thun%}'),
+                   target_string='{%an sich, zu sich, auf sich%} {%класть%}')
+    assert 'GLOSS-DE-RESIDUE' in gate_fragment(atmasat)['hard'], gate_fragment(atmasat)
+    tarura = dict(good, fragment_id='t-tarura', fragment_class='recurring_formula',
+                  source_string='<ab>v. a.</ab>',
+                  source_hash=C.sha256_text('<ab>v. a.</ab>'),
+                  target_string='<ab>т. е.</ab>')
+    assert 'AB-MUTATED' in gate_fragment(tarura)['hard'], gate_fragment(tarura)
+    ab_ok = dict(good, fragment_id='t-abok', fragment_class='recurring_formula',
+                 source_string='<ab>v. a.</ab>',
+                 source_hash=C.sha256_text('<ab>v. a.</ab>'),
+                 target_string='<ab>v. a.</ab>')
+    assert 'AB-MUTATED' not in gate_fragment(ab_ok)['hard'], gate_fragment(ab_ok)
     print('pwg_tm_gates: PASS')
     return 0
+
+
+def scan_fragments(path):
+    """Census GAPS §17 predicates over a fragment jsonl (promoted dump or sample)."""
+    n = 0
+    gloss = []
+    ab = []
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            frag = json.loads(line)
+            n += 1
+            src = frag.get('source_string') or ''
+            tgt = frag.get('target_string') or ''
+            rec = {
+                'key1': ((frag.get('source_locator') or {}).get('key1')
+                         or frag.get('entry_id')),
+                'fragment_id': frag.get('fragment_id') or frag.get('record_id'),
+                'fragment_class': frag.get('fragment_class'),
+                'flags': surface_form_flags(src, tgt),
+            }
+            if 'GLOSS-DE-RESIDUE' in rec['flags']:
+                gloss.append(rec)
+            if 'AB-MUTATED' in rec['flags']:
+                ab.append(rec)
+    return {'rows': n, 'gloss_de_residue': gloss, 'ab_mutated': ab}
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument('--selftest', action='store_true')
+    ap.add_argument('--scan', metavar='JSONL',
+                    help='census GAPS §17 surface-form flags over a fragment jsonl')
     args = ap.parse_args(argv)
     if args.selftest:
         return _selftest()
+    if args.scan:
+        result = scan_fragments(args.scan)
+        print('=== pwg.tm.gate.v1 GAPS §17 census: %s' % args.scan)
+        print('rows=%d GLOSS-DE-RESIDUE=%d AB-MUTATED=%d' % (
+            result['rows'], len(result['gloss_de_residue']), len(result['ab_mutated'])))
+        for rec in (result['gloss_de_residue'] + result['ab_mutated'])[:30]:
+            print('  %-16s %-22s %s %s' % (
+                rec.get('key1') or '', (rec.get('fragment_class') or '')[:22],
+                rec.get('fragment_id') or '', ' '.join(rec['flags'])))
+        print('CENSUS_JSON: %s' % json.dumps({
+            'rows': result['rows'],
+            'gloss_de_residue': len(result['gloss_de_residue']),
+            'ab_mutated': len(result['ab_mutated']),
+            'gloss_keys': sorted({r.get('key1') for r in result['gloss_de_residue']}),
+            'ab_keys': sorted({r.get('key1') for r in result['ab_mutated']}),
+        }, ensure_ascii=False))
+        return 1 if (result['gloss_de_residue'] or result['ab_mutated']) else 0
     ap.print_help()
     return 2
 
