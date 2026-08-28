@@ -928,6 +928,31 @@ def classify_process(proc):
     return 'process', proc.returncode or 1
 
 
+# H3627: the CLI's own names for "I could not produce output matching the schema after N
+# attempts". It exits NON-ZERO for this, which `classify_process` reads as 'process' — a
+# window-fatal fault. But the call is a defect of THIS GROUP's payload, not of the run: the
+# profile is healthy, the route is healthy, and every other key in the window is unaffected.
+# Treating it as fatal is what discarded 19 paid successes when the 20th call tripped it
+# (FINDINGS §596). Matched on the envelope, never on stderr text, so a prose mention of the
+# phrase in some other error cannot smuggle a real failure into the park lane.
+STRUCTURED_EXHAUSTED_SUBTYPE = 'error_max_structured_output_retries'
+STRUCTURED_EXHAUSTED_TERMINAL = 'structured_output_retry_exhausted'
+
+
+def structured_output_exhausted(wrapper):
+    """True when the CLI envelope says it exhausted its structured-output retries.
+
+    Read from the parsed envelope's own fields only. A missing/unparseable envelope is
+    False — an unknown non-zero exit stays window-fatal, because 'we could not tell' must
+    not silently become 'keep spending'.
+    """
+    if not isinstance(wrapper, dict):
+        return False
+    if wrapper.get('subtype') == STRUCTURED_EXHAUSTED_SUBTYPE:
+        return True
+    return wrapper.get('terminal_reason') == STRUCTURED_EXHAUSTED_TERMINAL
+
+
 # H2077 / #947: reasons meaning "the CALL died", not "the card is defective". A fragment missing
 # for one of these leaves an otherwise healthy card incomplete, so the audit must not file it as a
 # content defect — that denylists the card AND discards the frag_prov fshas of the fragments that
@@ -1060,6 +1085,10 @@ class HeadlessEngine:
         self.safe_mode = resolve_safe_mode(manifest, claude)
         self.run = runner or run_tree_kill
         self.attempts = []
+        # H3627: salvage state -- rows completed so far and how many were healed.
+        # Read by execute() when a HardFailure aborts the window mid-run.
+        self.partial_rows = []
+        self.partial_healed = 0
         self.failures = {}
         self.translate_calls = 0
         self.heal_calls = 0
@@ -1250,6 +1279,21 @@ class HeadlessEngine:
         self.call_reservation.finalize(reservation, telemetry)
         self._accumulate_usage(telemetry)
         if proc.returncode:
+            # H3627 / FINDINGS §596: structured-output exhaustion is a defect of THIS group's
+            # payload, not of the window. Park it the way a refusal/malformed envelope is
+            # parked -- record the attempt, keep the raw envelope, and return so the remaining
+            # batches still run. Everything else non-zero stays window-fatal.
+            if structured_output_exhausted(wrapper):
+                raw_path = write_failed_envelope(
+                    label, 'structured_output_exhausted', proc.stdout,
+                    'CLI exhausted structured-output retries (rc=%s)' % proc.returncode)
+                attempt = {'label': label, 'keys': keys, 'returncode': proc.returncode,
+                           'elapsed_ms': elapsed,
+                           'classification': 'structured_output_exhausted'}
+                if raw_path:
+                    attempt['raw_envelope_path'] = raw_path
+                self.attempts.append(attempt)
+                return None, 'structured_output_exhausted:rc=%s' % proc.returncode
             classification, code = classify_process(proc)
             if classification == 'connection':
                 self.conn_errors += 1
@@ -1566,7 +1610,10 @@ class HeadlessEngine:
         return card
 
     def run_all(self):
-        rows = []
+        # H3627 / FINDINGS §596: rows and the heal count live on the ENGINE, not in locals, so a
+        # HardFailure raised mid-window does not take the already-paid-for cards down with the
+        # stack. `execute()` reads them back to write a partial output instead of nothing.
+        rows = self.partial_rows
         healed = 0
         presplit = set(self.m.get('presplit_keys') or [])
         for index, batch in enumerate(self.m.get('batches') or []):
@@ -1576,6 +1623,7 @@ class HeadlessEngine:
                 if card:
                     resolved[key] = card
                     healed += 1
+                    self.partial_healed = healed
             for key in batch:
                 row = {'key': key, 'card': resolved.get(key), 'judge': None,
                        'judge_sonnet': None, 'escalated': key in pending and key in resolved}
@@ -1590,6 +1638,7 @@ class HeadlessEngine:
                 row['error'] = self.failures.get(key, 'unknown')
             else:
                 healed += 1
+                self.partial_healed = healed
             rows.append(row)
         return rows, healed, len(presplit)
 
@@ -1666,8 +1715,42 @@ def execute(manifest, claude='claude', timeout=DEFAULT_TIMEOUT_S, runner=None,
                 active_claim=active_claim)
             results, healed, presplit = engine.run_all()
     except HardFailure as exc:
-        return None, {'classification': exc.classification, 'error': exc.detail,
-                      'attempts': engine.attempts, 'usage': engine.usage}, exc.code
+        # H3627 / FINDINGS §596: a window that dies on call N must not throw away calls 1..N-1.
+        # Everything already resolved is on the engine, so build the SAME payload shape as a
+        # clean run and let main() write it — the cards are then promotable through the normal
+        # path instead of being paid for and discarded. `window_aborted` marks it as partial so
+        # no reader mistakes a truncated window for a complete one.
+        payload = None
+        if engine is not None:
+            payload = _finish_payload(manifest, engine, list(engine.partial_rows),
+                                      engine.partial_healed,
+                                      len(set(manifest.get('presplit_keys') or [])))
+            payload['summary']['window_aborted'] = {
+                'classification': exc.classification, 'error': exc.detail,
+                'cards_salvaged': sum(1 for row in engine.partial_rows if row.get('card'))}
+        return payload, {'classification': exc.classification, 'error': exc.detail,
+                         'attempts': engine.attempts, 'usage': engine.usage,
+                         'partial_output': payload is not None}, exc.code
+    payload = _finish_payload(manifest, engine, results, healed, presplit)
+    status = {'classification': ('completed_with_residuals'
+                                 if payload['summary']['null_keys'] else 'success'),
+              'attempts': engine.attempts, 'null_keys': payload['summary']['null_keys'],
+              # H2251: what the spawn ACTUALLY did, which is not the same fact as
+              # `meta.execution.cli_safe_mode` (what the manifest REQUESTED). They differ
+              # exactly in the loud-downgrade case H2189 built the stderr warning for --
+              # a CLI that cannot parse the flag. That warning is ephemeral; this is the
+              # durable record, so a run whose savings were never actually taken can be
+              # identified afterwards from its own artifacts instead of a lost console.
+              'cli_safe_mode_effective': engine.safe_mode}
+    return payload, status, 0
+
+
+def _finish_payload(manifest, engine, results, healed, presplit):
+    """Assemble the output payload from whatever the engine resolved.
+
+    Shared by the clean path and the H3627 salvage path, so a partial window produces a
+    byte-compatible artifact rather than a second, divergent shape.
+    """
     for key, card in manifest.get('tm_resolved', {}).items():
         results.append({'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                         'escalated': False, 'tm': True})
@@ -1706,17 +1789,7 @@ def execute(manifest, claude='claude', timeout=DEFAULT_TIMEOUT_S, runner=None,
     output_meta['execution_manifest_schema'] = manifest.get('schema')
     output_meta['execution'] = manifest.get('execution')
     output_meta['provenance_classes'] = manifest.get('key_provenance')
-    payload = {'meta': output_meta, 'summary': summary, 'results': results}
-    status = {'classification': 'completed_with_residuals' if failures else 'success',
-              'attempts': engine.attempts, 'null_keys': list(failures),
-              # H2251: what the spawn ACTUALLY did, which is not the same fact as
-              # `meta.execution.cli_safe_mode` (what the manifest REQUESTED). They differ
-              # exactly in the loud-downgrade case H2189 built the stderr warning for --
-              # a CLI that cannot parse the flag. That warning is ephemeral; this is the
-              # durable record, so a run whose savings were never actually taken can be
-              # identified afterwards from its own artifacts instead of a lost console.
-              'cli_safe_mode_effective': engine.safe_mode}
-    return payload, status, 0
+    return {'meta': output_meta, 'summary': summary, 'results': results}
 
 
 def main(argv=None):
