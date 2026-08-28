@@ -1,6 +1,6 @@
 # PWG TM Wave 1 Track B — the 10 serious-error rows: taxonomy and sidecar repair
 
-_Created: 27-08-2026 · Last updated: 27-08-2026_
+_Created: 27-08-2026 · Last updated: 28-08-2026_
 
 Opus 5 (`claude-opus-5`), [H2877](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2877-Opus_RussianTranslation_pwg-tm-w1-serious-error-10-repair_16.08.26.md). Gate under repair: the H2684 independent n=400 sample recorded in [PWG_TM_GROK46_WAVE1_TRACK_B_14-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_GROK46_WAVE1_TRACK_B_14-08-2026.md).
 
@@ -19,7 +19,7 @@ Every one of the ten Grok 4.5 serious flags is typed, span-localised and repaire
 | Rows that become `uncertain` (untranslated German residue) | 9 |
 | Same mechanism elsewhere in the sample, unflagged and out of scope | 5 rows (13/400 carry it; 8 were flagged) |
 | Paid Claude generations | **0** |
-| Grok 4.5 after-score | **not run** — no `XAI_API_KEY` on this box |
+| Grok 4.5 after-score | **not run** — authorised 28-08-2026, tool built, blocked on OpenRouter credit (H3611) |
 | Wave-1 Track B artefacts byte-identical before/after | yes (20 files) |
 
 ## Every serious error is one `{%…%}` span
@@ -135,9 +135,39 @@ The handoff allows at most one paid Claude generation **if any row is still empt
 
 `XAI_API_KEY` is unset — absent from the process environment and from the one untracked `src/.env`, which carries `DEEPSEEK_API_KEY` and `OPENROUTER_API_KEY` and nothing else. The handoff's fence for that case is explicit: leave repairs as candidates, do not self-score. So the sidecar carries `after_score: null` and `after_score_status: "candidate_unscored"` on all ten rows, and no Claude adjudication was performed on Claude's own repairs.
 
-An OpenRouter key **is** present and could in principle reach a Grok 4.5 slug. It was deliberately not used: that is a different route from the one the H2684 gate recorded (`grok-4.5` direct, 8 shards × 50), it is an unbudgeted paid call on a money path this handoff never authorised, and a re-score on an unrecorded route is not comparable to the before-score it would be measured against. Firing it is a human decision, not an agent one.
+An OpenRouter key **is** present and could in principle reach a Grok slug. It was deliberately not used *in this pass*: that is a different route from the one the H2684 gate recorded (`grok-4.5` direct, 8 shards × 50), it would have been an unbudgeted paid call on a money path this handoff never authorised, and a re-score on an unrecorded route is not comparable to the before-score it would be measured against. Firing it is a human decision, not an agent one.
+
+> **Superseded 28-08-2026 — the spend was authorised, and the attempt is now blocked on account credit rather than on policy.** See the section below and [H3611](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3611-Opus_RussianTranslation_pwg-tm-w1-serious10-rescore_28.08.26.md).
 
 What a future Grok 4.5 pass has to decide is narrow and stated: whether withdrawing a false Russian claim in favour of an untranslated German span clears `serious_error` for that row, or merely converts it into a fidelity miss. The nine reverts stand or fall together on that one question; `taruRa` is independent of it.
+
+Under the H3299 pinned rubric that question already has a *pinned* answer — `german_residue` is listed non-serious, while `placeholder_rendered_as_content` and `wrong_lexical_meaning` are serious — so the expected result is that all nine reverts clear `serious_error`. That is a prediction, not a measurement, and confirming or refuting it is exactly what the re-score is for.
+
+## The authorised re-score (28-08-2026): built, blocked on credit
+
+MG authorised a paid re-score on 28-08-2026, naming **Grok 4.6**. Two facts reshaped that instruction, and both are recorded rather than quietly worked around.
+
+**Grok 4.6 cannot be the independent judge — this repo's own gate refuses it.** [`src/pwg_tm_quality.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_quality.py) carries `FORBIDDEN_INDEPENDENT_JUDGES`, and `independence_errors()` rejects any `judge_model` beginning `grok-4.6`, because Grok 4.6 generated these Wave-1 targets. A 4.6 adjudication is a **self-score** by definition and cannot pass `verify`. It is still worth having — it was what was asked for, and 4.5-vs-4.6 agreement is informative — so the tool runs it into its own file, flags it non-independent, and never feeds it to the gate.
+
+**`x-ai/grok-4.5` is reachable on the same key at the same price**, so the independent judge that actually answers the question needs no new credential.
+
+The tool is [`src/pwg_tm_serious10_rescore.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_serious10_rescore.py). It follows the H3299 protocol rather than inventing one: each row is judged **blind** in its own call — the judge never sees that a repair happened, what the previous target was, or how H2877 classified it (`--selftest` asserts that absence) — the judge labels exactly one `defect_class`, and `serious_error` is **derived locally** from `SEVERITY_RUBRIC`, never taken from the model's reply (also selftest-asserted).
+
+**It did not run.** The OpenRouter account is out of credit:
+
+```text
+credits: total_credits 45, total_usage 45.261790443
+x-ai/grok-4.5                    HTTP 402  Insufficient credits
+deepseek/deepseek-chat           HTTP 402  Insufficient credits
+meta-llama/llama-3.2-1b-instruct HTTP 402  Insufficient credits
+```
+
+Every model 402s, not only Grok, so this is an account balance and not a model gate. **Nothing was charged** — the requests are rejected before generation, and `total_usage` is unchanged from the pre-attempt probe.
+
+Two ways to finish it, either of which needs a human:
+
+1. **Top up the OpenRouter balance**, then run `pwg_tm_serious10_rescore.py run`. Ten rows × two judges is a few cents at $2 / $6 per M tokens, and this route records real tokens and USD, so its receipt is `cost_evaluable: true` — unlike H2684, whose ledger carries `calls: 65` with zero tokens and `cost_evaluable: false`.
+2. **Run it as a session judge**, which is what H2684 in fact did. `pwg_tm_serious10_rescore.py packet` emits [`serious10_blind_packet.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_blind_packet.jsonl) and a self-contained [`serious10_judge_brief.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/serious10/serious10_judge_brief.md) that a Grok 4.5 session executes with no key and no credit at all.
 
 ## What this does not claim
 
