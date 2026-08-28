@@ -1720,8 +1720,17 @@ def execute(manifest, claude='claude', timeout=DEFAULT_TIMEOUT_S, runner=None,
         # clean run and let main() write it — the cards are then promotable through the normal
         # path instead of being paid for and discarded. `window_aborted` marks it as partial so
         # no reader mistakes a truncated window for a complete one.
+        # ...but NOT for an infrastructure failure. H2056 #944: a hung 429 must never be
+        # recorded as a result — on rate_limit / authentication / connection / timeout /
+        # budget_exceeded the run is compromised rather than merely truncated, the remaining
+        # keys were never attempted, and publishing a payload would let a starved window read
+        # as output. Those keep the pre-existing `payload=None` contract. Salvage is for a
+        # per-call defect (`process`) that leaves the profile and route healthy.
+        salvageable = (engine is not None
+                       and not is_infra_failure(exc.classification)
+                       and any(row.get('card') for row in engine.partial_rows))
         payload = None
-        if engine is not None:
+        if salvageable:
             payload = _finish_payload(manifest, engine, list(engine.partial_rows),
                                       engine.partial_healed,
                                       len(set(manifest.get('presplit_keys') or [])))
