@@ -1676,6 +1676,7 @@ def main():
 
     _test_h2079_945_probe_emits_api_time()
     _test_h2326_1172_probe_raw_envelope_capture()
+    _test_h2878_probe_records_the_no_output_progress_reading()
     print('max_account_orchestrator_selftest: PASS')
 
 
@@ -1914,6 +1915,90 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             m.run_tree_kill, m._probe_call, m.PROBE_RAW_DIR = _rtk, _pc, _raw_dir
     print('  H2326 #1172: non-success probe parks the raw envelope + matched pattern; '
           'success lane writes nothing')
+
+
+
+
+def _test_h2878_probe_records_the_no_output_progress_reading():
+    """H2878 (issue #1680, FINDINGS §378): every probe records whether it was ALIVE.
+
+    `elapsed_ms` cannot answer that. The 13-08 c1 reading -- 300 198 ms, 0 output bytes --
+    was recorded as a bare `timeout`, and nothing in the row could say whether the route was
+    hung or whether the production lane (which kills at twice that) would still have been
+    waiting on it. `bytes_seen` + `quiet_ms` + `killed_reason` are that missing half.
+
+    Offline by construction: no paid call. The runner is stubbed on both sides -- one spawn
+    that completes and one that is killed on its silence -- and the assertions run all the
+    way to the event row, because a field the runner produces and `append_event` refuses is
+    telemetry that does not exist.
+    """
+    _rtk = m.run_tree_kill
+    try:
+        # (a) a spawn that COMPLETED: the reading rides back on `progress_out`, and a healthy
+        #     row carries no `killed_reason` at all (append_event drops None, so the shape of
+        #     a successful row is unchanged from before H2878).
+        envelope = ('{"type":"result","subtype":"success","is_error":false,'
+                    '"result":"{\\"ok\\":true}"}')
+
+        def completing(*_a, **kwargs):
+            out = kwargs.get('progress_out')
+            if out is not None:
+                out.update({'bytes_seen': len(envelope), 'stderr_bytes_seen': 0,
+                            'quiet_ms': 41_512, 'killed_reason': None,
+                            'elapsed_ms': 44_000})
+            return types.SimpleNamespace(returncode=0, stdout=envelope, stderr='')
+
+        m.run_tree_kill = completing
+        detail = {}
+        _lat, cls, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                       call_reservation=MemoryCallLedger(), detail_out=detail)
+        assert cls == 'success', cls
+        assert detail['bytes_seen'] == len(envelope), detail
+        assert detail['quiet_ms'] == 41_512, detail
+        assert 'killed_reason' not in detail, detail        # healthy row shape unchanged
+
+        # (b) a spawn KILLED on its silence: the runner attaches the reading to the
+        #     TimeoutExpired -- which is what lets every existing `except TimeoutExpired`
+        #     keep working while gaining something to say.
+        def stalled(*_a, **_k):
+            exc = subprocess.TimeoutExpired(['claude'], 90)
+            exc.killed_reason = 'no_output_progress'
+            exc.bytes_seen = 0
+            exc.quiet_ms = 90_004
+            exc.output = ''
+            exc.stderr = ''
+            raise exc
+
+        m.run_tree_kill = stalled
+        detail = {}
+        _lat, cls, obytes = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                          call_reservation=MemoryCallLedger(),
+                                          detail_out=detail)
+        assert cls == 'timeout', cls          # classification unchanged; only the WHY is new
+        assert obytes == 0, obytes
+        assert detail['killed_reason'] == 'no_output_progress', detail
+        assert detail['bytes_seen'] == 0 and detail['quiet_ms'] == 90_004, detail
+    finally:
+        m.run_tree_kill = _rtk
+
+    # (c) the three fields must survive `append_event`, whose ALLOWED set REFUSES unknown
+    #     keys. A reading the runner produces and the writer rejects is not telemetry.
+    with tempfile.TemporaryDirectory() as td:
+        path = os.path.join(td, 'events.jsonl')
+        row = ro.append_event(
+            path, stage='probe', event='probe_call', classification='timeout',
+            bytes_seen=0, quiet_ms=90_004, killed_reason='no_output_progress')
+        assert row['killed_reason'] == 'no_output_progress', row
+        written = ro.read_events(path)
+        assert len(written) == 1 and written[0]['quiet_ms'] == 90_004, written
+        # and a healthy row still omits them entirely rather than writing nulls
+        healthy = ro.append_event(
+            path, stage='probe', event='probe_call', classification='success',
+            bytes_seen=120, quiet_ms=41_512, killed_reason=None)
+        assert 'killed_reason' not in healthy, healthy
+
+    print('  H2878 #1680: every probe records bytes_seen/quiet_ms, a stalled kill names '
+          'itself `no_output_progress`, and all three survive append_event')
 
 
 if __name__ == '__main__':

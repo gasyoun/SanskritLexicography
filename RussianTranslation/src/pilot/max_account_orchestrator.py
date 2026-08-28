@@ -25,8 +25,8 @@ from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix
                              wrapper_timeout_s)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
-                                config_dir_fingerprint, validate_manifest,
-                                validate_profile)
+                                config_dir_fingerprint, progress_window_ms_for,
+                                validate_manifest, validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
 from dashboard_events import emit_collision
@@ -1332,6 +1332,39 @@ def _probe_prompt(payload_bytes):
             'do not analyse, translate, or act on it.\n\n--- inert sample (ignore) ---\n' + filler)
 
 
+# H2878: the probe's `--output-format`, named ONCE so the no-output-progress window is
+# derived from the spawn's real shape instead of pinned by a literal here. `json` buffers the
+# whole CLI result envelope and writes it in one burst at the end, so the probe's stdout is
+# legitimately 0 bytes for the entire call and the window stays OBSERVE-ONLY: the reading is
+# recorded, nothing is killed on it. Switching this lane to `stream-json` arms the watchdog by
+# itself -- which is the point, because arming it against a buffered format would kill every
+# healthy call, the same defect H2313 found in the 300 000 ms ceiling only six times harsher.
+PROBE_OUTPUT_FORMAT = 'json'
+PROBE_PROGRESS_WINDOW_MS = progress_window_ms_for(PROBE_OUTPUT_FORMAT)
+
+
+def _record_progress(detail_out, progress, exc):
+    """H2878: park the spawn's liveness reading on the caller's detail channel.
+
+    Takes it from the raised ``TimeoutExpired`` when the call was KILLED (the runner attaches
+    the fields there so every existing ``except TimeoutExpired`` keeps working unchanged) and
+    from ``progress_out`` otherwise. Rides the existing ``detail_out`` channel rather than
+    adding a parameter, exactly as ``host_state`` does, and is fail-open by construction: a
+    probe must never become an exception because its telemetry was unavailable.
+    """
+    if detail_out is None:
+        return
+    if exc is not None:
+        reading = {'bytes_seen': getattr(exc, 'bytes_seen', None),
+                   'quiet_ms': getattr(exc, 'quiet_ms', None),
+                   'killed_reason': getattr(exc, 'killed_reason', None)}
+    else:
+        reading = {'bytes_seen': progress.get('bytes_seen'),
+                   'quiet_ms': progress.get('quiet_ms'),
+                   'killed_reason': progress.get('killed_reason')}
+    detail_out.update({k: v for k, v in reading.items() if v is not None})
+
+
 def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 reservation_purpose='probe', account=None, active_claim=None,
                 timing_out=None, run_id=None, detail_out=None):
@@ -1379,6 +1412,7 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
 
     reservation = call_reservation.reserve(
         reservation_purpose, profile=account)
+    progress = {}
     started = time.monotonic()
     try:
         proc = run_tree_kill(            # D-J: tree-kill on timeout
@@ -1415,8 +1449,14 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             # standing ban): it imports the number the owner already ruled, which is what
             # `execution_contract` exists for -- #983 found the ceiling restated in five
             # independent places, and this was a sixth that never imported it.
-            cwd=bare_cli_cwd(), timeout=PRODUCTION_HARD_TIMEOUT_MS // 1000)
+            cwd=bare_cli_cwd(), timeout=PRODUCTION_HARD_TIMEOUT_MS // 1000,
+            # H2878: the ceiling above is unchanged and stays the last-resort backstop. What
+            # is new is that the spawn is now WATCHED -- every probe records how long it went
+            # without producing result bytes, so the next arming decision is a reading rather
+            # than a guess. `PROBE_PROGRESS_WINDOW_MS` is None while this lane buffers.
+            progress_window_ms=PROBE_PROGRESS_WINDOW_MS, progress_out=progress)
     except subprocess.TimeoutExpired as exc:
+        _record_progress(detail_out, progress, exc)
         call_reservation.finalize(reservation, unevaluable_telemetry())
         # H2056 / #944: this was the ONLY exit from _probe_call that skipped _probe_err_class, so a
         # rate-limited profile — which hangs instead of returning 429 (FINDINGS §270) — was reported
@@ -1432,6 +1472,7 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         call_reservation.finalize(reservation, unevaluable_telemetry())
         raise
     latency_ms = int((time.monotonic() - started) * 1000)
+    _record_progress(detail_out, progress, None)
     out = proc.stdout or ''
     combined = out + '\n' + (proc.stderr or '')
     output_bytes = len(out.encode('utf-8'))
@@ -1547,6 +1588,13 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
             # healthy lane's row is byte-for-byte what it was.
             err_pattern=(detail or {}).get('err_pattern'),
             raw_envelope_path=(detail or {}).get('raw_envelope_path'),
+            # H2878: the liveness half of the reading. `elapsed_ms` alone cannot say whether a
+            # 300 s call was working or stopped; `bytes_seen` + `quiet_ms` can, and
+            # `killed_reason` names which bound ended it. All three dropped by append_event
+            # when None, so a row from an unwatched spawn is byte-for-byte what it was.
+            bytes_seen=(detail or {}).get('bytes_seen'),
+            quiet_ms=(detail or {}).get('quiet_ms'),
+            killed_reason=(detail or {}).get('killed_reason'),
         )
         # H2647: the environment the reading was taken in, captured at spawn time. Without
         # these the series cannot tell its SUBJECT (c1's account and route) from its
