@@ -241,9 +241,12 @@ honour the resolved evidence root, which is the same #1034 defect one file over.
 ## Residual
 
 1. ~~**The c1 probe**~~ — **fired 28-08-2026 17:22Z, PASS**, see the postscript above.
-2. **`HEALTH_PROBE_LOG` does not honour `--evidence-dir`** — module-file-relative, so a
-   probe run outside the canonical checkout silently drops its cross-account row. Same class
-   as #1034, which fixed only the events root.
+2. ~~**`HEALTH_PROBE_LOG` does not honour `--evidence-dir`**~~ — **closed 28-08-2026, H3642**:
+   `max_account_orchestrator.resolve_health_probe_log()` now resolves it through the same
+   explicit/`$PWG_EVIDENCE_DIR`/checkout-relative-default precedence as
+   `resolve_evidence_root`, and `h963_c4_gate0_probe.main()` rebinds both `HEALTH_PROBE_LOG`
+   and `PROBE_RAW_DIR` after its own durable-root assert (which now also covers the rebound
+   canonical-log target). Default resolution stays byte-identical.
 3. **Arming the window for real** needs a lane on `--output-format stream-json`. That is a
    change to the paid call's shape and to envelope parsing, out of this unit's scope, and it
    would invalidate the existing gate's comparability if done casually. The interlock is in

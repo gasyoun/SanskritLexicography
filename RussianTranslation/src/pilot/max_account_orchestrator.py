@@ -1191,8 +1191,35 @@ PROBE_LANE = 'claude-cli-headless/readiness-schema'
 # twice. The per-account `events_path` file is kept untouched alongside it — gate reports
 # (H1110/H1447/H858) cite it by path and its exact-run_id read discipline (#729) must not
 # change.
-HEALTH_PROBE_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                'output', 'health_probe_log.jsonl')
+#
+# H3642: this used to be pinned to `HERE/output` unconditionally — the #1034 defect one
+# file over. #1034 taught `h963_c4_gate0_probe.resolve_evidence_root` to route the
+# per-account events series through an explicit `--evidence-dir` / `$PWG_EVIDENCE_DIR` /
+# checkout-relative-default precedence so it survives a disposable worktree; this
+# constant never followed, so a paid probe run with a perfectly durable `--evidence-dir`
+# still wrote its canonical cross-account row into the worktree and lost it on cleanup
+# (measured 28-08-2026 under H2878). `resolve_health_probe_log` gives this constant the
+# SAME precedence. The DEFAULT branch is unchanged on purpose: 21 rows of c4 history and
+# the H1110/H1447/H858 reports cite `HERE/output/health_probe_log.jsonl` by exact path.
+def resolve_health_probe_log(explicit_root=None):
+    """Where the canonical cross-account health_probe_log.jsonl actually lives.
+
+    Same three-tier precedence as `h963_c4_gate0_probe.resolve_evidence_root`: an
+    already-resolved durable root the caller passed (its own `--evidence-dir` or
+    `$PWG_EVIDENCE_DIR` resolution), else `$PWG_EVIDENCE_DIR` read directly (so a bare
+    import of this module without going through that CLI still honours the env tier),
+    else the historical checkout-relative default."""
+    if explicit_root is not None:
+        return os.path.join(str(explicit_root), 'health_probe_log.jsonl')
+    env = os.environ.get('PWG_EVIDENCE_DIR')
+    if env and env.strip():
+        return os.path.join(os.path.abspath(os.path.expanduser(env.strip())),
+                            'health_probe_log.jsonl')
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        'output', 'health_probe_log.jsonl')
+
+
+HEALTH_PROBE_LOG = resolve_health_probe_log()
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 # H2326 (#1172): where a non-success probe envelope's tail is parked. Same gitignored `output/` dir
 # the canonical health log already lives in, so nothing here is committable. Module-level so a
