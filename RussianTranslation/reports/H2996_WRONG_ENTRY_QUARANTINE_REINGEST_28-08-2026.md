@@ -134,6 +134,12 @@ re-serve the very cards just quarantined — the trap
 defect requeues. Every worklist unit therefore carries `--no-tm` as an explicit
 requirement. **Refreshing the mirror is owed and not done here.**
 
+> **Discharged 28-08-2026 by H3627.** The mirror is now a byte-identical copy of the
+> store (`only_mirror` 167 -> 0, sha `19fcf5258e5e...`), refreshed by
+> [`src/refresh_tm_mirror.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/refresh_tm_mirror.py)
+> under guards that accounted for all 167 mirror-only rows before the copy. Protocol:
+> [reports/H3627_TM_MIRROR_REFRESH_REINGEST_QUEUE_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3627_TM_MIRROR_REFRESH_REINGEST_QUEUE_28-08-2026.md).
+
 ## Artifacts
 
 - Apply pass: [src/apply_key1_repair.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/apply_key1_repair.py) — dry-run by default, `--selftest` 8/8
@@ -159,6 +165,13 @@ lane's queued work. Whoever queues these must check that file first. Coverage is
 already established independently: all 61 lemmas exist as PWG `<k1>` headwords,
 and all 61 are now absent from the store, so the adapter's
 "already-promoted" dedup will not drop them.
+
+> **Discharged 28-08-2026 by H3627.** The adapter gained `--out`, so the shared file
+> was never touched (verified byte-unchanged) and the queue landed in
+> `src/pilot/output/H3627_reingest_worklist.json`: **61/61 runnable, 100% PWG
+> coverage, 0 already promoted** — reproducing the coverage claim above. The
+> caution was understated: four consumers read that shared path, and the H963 C4
+> call graph row D7 shows the file is not in fact regenerable in a clean worktree.
 
 **Two debts this pass does not discharge:** the `pwg-ru-data` TM mirror refresh
 (above), and the historical flattening site.
