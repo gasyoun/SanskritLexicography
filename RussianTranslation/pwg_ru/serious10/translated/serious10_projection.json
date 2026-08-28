@@ -27,14 +27,14 @@
   "projected": {
     "n": 400,
     "fidelity": {
-      "k": 397,
-      "p": 0.9925,
+      "k": 396,
+      "p": 0.99,
       "floor": 0.98,
       "pass": true
     },
     "equivalence": {
-      "k": 391,
-      "p": 0.9775,
+      "k": 390,
+      "p": 0.975,
       "floor": 0.95,
       "pass": true
     },
