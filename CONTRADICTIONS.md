@@ -230,4 +230,20 @@ Blocks: quoting the "NOT-A-RISK / regenerable" grade as licence to overwrite eit
 > **Source:** [reports/H3627_TM_MIRROR_REFRESH_REINGEST_QUEUE_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3627_TM_MIRROR_REFRESH_REINGEST_QUEUE_28-08-2026.md) · 28-08-2026 · Opus 5 `claude-opus-5`
 
 
+### §16. Style-guide §12.2 says never translate an apparatus span; the independent gate rewards translating one, because the span is a clause fragment and not apparatus
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| Ratified style guide [§12.2](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (✅ principle, H2876) | A span consisting ENTIRELY of apparatus is **never** translated as a gloss; `sanskrit_util.classify_german_metalanguage` classes bare `mit` as `function_word`, so `{%mit%}` → «с» is forbidden | detector call in [`src/pwg_tm_serious10_translate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_serious10_translate.py) `whole_span_apparatus()` |
+| H3628 independent re-score (Grok 4.5, 28-08-2026) | With `{%mit%}` → «с» the `upakrama` row scores `none` / fidelity **pass**; with the German kept per §12.2 the same row scores `german_residue` / fidelity **fail** | [`pwg_ru/serious10/translated/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/serious10/translated) receipts, both runs |
+
+The two do not actually disagree about `mit` — they disagree about **what the span is**. In PWG `upakrama` 4 the German reads `{#upopakramatvAdupadravasya#} {%weil%} {#upadrava#} {%mit%} {#upa#} {%beginnt%}` — one Śaṃkara clause, "because *upadrava* begins with *upa*", chopped into three `{%…%}` spans by the interleaved Sanskrit. `{%mit%}` is therefore a **fragment of a running clause**, not a standalone apparatus token, but §12.2's test ("is the whole span apparatus?") cannot see the difference: a one-word span containing only a preposition looks identical either way. Same root cause as [GAPS §18](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) — discontinuous glosses fragmented at markup boundaries.
+
+Status: 🟡 **open — resolved in favour of the ratified rule for now.** H3628 keeps `{%mit%}` in German and does not translate it. The cost was measured, not guessed: projected fidelity 99.25 % → 99.00 %, still clear of the 98 % floor, so compliance costs 0.25 points and blocks nothing.
+
+Blocks: nothing today. What a human should decide is whether §12.2 gains a carve-out for spans that are adjacent to `{#…#}` on both sides (i.e. clause fragments), or whether the fragmentizer is fixed first so the clause arrives as one span and the question disappears. The second is the better fix and is already written up as GAPS §18.
+
+> **Source:** [pwg_ru/PWG_TM_W1_SERIOUS10_TRANSLATED_GATE_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_W1_SERIOUS10_TRANSLATED_GATE_28-08-2026.md) · [H3628](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3628-Opus_RussianTranslation_pwg-tm-w1-serious10-translate_28.08.26.md) (Opus 5 `claude-opus-5`). — SanskritLexicography · 2026-08-28
+
+
 _Dr. Mārcis Gasūns_

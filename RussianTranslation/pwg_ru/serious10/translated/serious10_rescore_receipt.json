@@ -11,17 +11,17 @@
     "scores": {
       "n": 10,
       "serious": 0,
-      "fidelity_pass": 9,
-      "equivalence_correct": 9,
+      "fidelity_pass": 8,
+      "equivalence_correct": 8,
       "defect_classes": {
-        "none": 9,
-        "german_residue": 1
+        "none": 8,
+        "german_residue": 2
       }
     },
     "spend": {
       "input_tokens": 10550,
-      "output_tokens": 6315,
-      "cost_usd": 0.0552908,
+      "output_tokens": 7781,
+      "cost_usd": 0.057776400000000006,
       "calls": 10
     },
     "cost_evaluable": true
@@ -36,18 +36,18 @@
     "scores": {
       "n": 10,
       "serious": 1,
-      "fidelity_pass": 9,
-      "equivalence_correct": 8,
+      "fidelity_pass": 8,
+      "equivalence_correct": 7,
       "defect_classes": {
-        "none": 8,
-        "german_residue": 1,
+        "none": 7,
+        "german_residue": 2,
         "wrong_lexical_meaning": 1
       }
     },
     "spend": {
       "input_tokens": 10550,
-      "output_tokens": 18133,
-      "cost_usd": 0.126634,
+      "output_tokens": 16318,
+      "cost_usd": 0.116512,
       "calls": 10
     }
   },
@@ -64,5 +64,5 @@
       }
     ]
   },
-  "total_cost_usd": 0.181925
+  "total_cost_usd": 0.174288
 }
