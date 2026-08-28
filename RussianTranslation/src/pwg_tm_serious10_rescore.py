@@ -421,6 +421,75 @@ def cmd_packet(args):
     return 0
 
 
+def score_floors(rows):
+    """Fidelity / equivalence / serious rates against the pinned floors."""
+    n = len(rows) or 1
+    fid = sum(1 for r in rows
+              if (r.get('adjudication') or {}).get('fidelity')
+              in ('pass', True, 1))
+    eq = sum(1 for r in rows
+             if (r.get('adjudication') or {}).get('equivalence')
+             in ('correct', True, 1))
+    ser = sum(1 for r in rows
+              if (r.get('adjudication') or {}).get('serious_error'))
+    return {
+        'n': len(rows),
+        'fidelity': {'k': fid, 'p': fid / n, 'floor': Q.FLOORS['fidelity'],
+                     'pass': fid / n >= Q.FLOORS['fidelity']},
+        'equivalence': {'k': eq, 'p': eq / n, 'floor': Q.FLOORS['equivalence'],
+                        'pass': eq / n >= Q.FLOORS['equivalence']},
+        'serious_error': {'k': ser, 'p': ser / n,
+                          'floor': Q.FLOORS['serious_error'],
+                          'pass': ser / n <= Q.FLOORS['serious_error']},
+    }
+
+
+def cmd_project(args):
+    """What the n=400 gate becomes if the 10 repairs were applied to the dump.
+
+    Splices the re-scored verdicts over the frozen H2684 adjudication and
+    re-derives all three floors. A PROJECTION over the existing sample - not a
+    new draw, and no dump byte is touched.
+    """
+    def rows_of(path):
+        return [json.loads(line) for line in io.open(path, encoding='utf-8')
+                if line.strip()]
+
+    before = rows_of(args.adjudication)
+    after = {r['record_id']: r for r in rows_of(args.rescore)}
+    projected = []
+    for row in before:
+        if row['record_id'] in after:
+            row = dict(row)
+            row['adjudication'] = after[row['record_id']]['adjudication']
+        projected.append(row)
+
+    out = {
+        'schema': 'pwg.tm.serious10.projection.v1',
+        'handoff': HANDOFF,
+        'note': ('projection over the frozen H2684 sample; no dump modified, '
+                 'no new sample drawn'),
+        'rescored_rows': len(after),
+        'before': score_floors(before),
+        'projected': score_floors(projected),
+    }
+    for label in ('before', 'projected'):
+        s = out[label]
+        print('%s (n=%d)' % (label.upper(), s['n']))
+        for name in ('fidelity', 'equivalence', 'serious_error'):
+            f = s[name]
+            print('  %-14s %3d/%d = %6.2f%%  floor %s%.0f%%  %s'
+                  % (name, f['k'], s['n'], 100 * f['p'],
+                     '<=' if name == 'serious_error' else '>=',
+                     100 * f['floor'], 'PASS' if f['pass'] else 'FAIL'))
+    if args.out:
+        with io.open(args.out, 'w', encoding='utf-8', newline='\n') as fh:
+            json.dump(out, fh, ensure_ascii=False, indent=2)
+            fh.write('\n')
+        print('wrote %s' % args.out)
+    return 0
+
+
 def selftest():
     assert INDEPENDENT_JUDGE == 'x-ai/grok-4.5'
     # The guard must accept 4.5 and reject 4.6 - the whole point of two files.
@@ -471,6 +540,10 @@ def main(argv=None):
     pk = sub.add_parser('packet')
     pk.add_argument('--sidecar', required=True)
     pk.add_argument('--out', required=True)
+    pj = sub.add_parser('project')
+    pj.add_argument('--adjudication', required=True)
+    pj.add_argument('--rescore', required=True)
+    pj.add_argument('--out')
     args = ap.parse_args(argv)
     if args.selftest or not args.cmd:
         return selftest()
@@ -478,6 +551,8 @@ def main(argv=None):
         return cmd_run(args)
     if args.cmd == 'packet':
         return cmd_packet(args)
+    if args.cmd == 'project':
+        return cmd_project(args)
     ap.print_help()
     return 2
 

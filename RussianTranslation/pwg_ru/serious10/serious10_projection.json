@@ -1,0 +1,48 @@
+{
+  "schema": "pwg.tm.serious10.projection.v1",
+  "handoff": "H3611",
+  "note": "projection over the frozen H2684 sample; no dump modified, no new sample drawn",
+  "rescored_rows": 10,
+  "before": {
+    "n": 400,
+    "fidelity": {
+      "k": 398,
+      "p": 0.995,
+      "floor": 0.98,
+      "pass": true
+    },
+    "equivalence": {
+      "k": 382,
+      "p": 0.955,
+      "floor": 0.95,
+      "pass": true
+    },
+    "serious_error": {
+      "k": 10,
+      "p": 0.025,
+      "floor": 0.01,
+      "pass": false
+    }
+  },
+  "projected": {
+    "n": 400,
+    "fidelity": {
+      "k": 389,
+      "p": 0.9725,
+      "floor": 0.98,
+      "pass": false
+    },
+    "equivalence": {
+      "k": 383,
+      "p": 0.9575,
+      "floor": 0.95,
+      "pass": true
+    },
+    "serious_error": {
+      "k": 0,
+      "p": 0.0,
+      "floor": 0.01,
+      "pass": true
+    }
+  }
+}
