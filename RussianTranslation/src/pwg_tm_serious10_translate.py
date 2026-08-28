@@ -17,13 +17,24 @@ is which:
     covers, each carrying its own rationale. These are model output and are
     marked as such; the independent Grok 4.5 judge scores them, never Claude.
 
-One span is neither: PWG's `viSveSa` 2 reads
-`{%die%} <is>Viśve Devāḥ</is> {%zur Gottheit habend%}` - a single discontinuous
-gloss the fragmentizer split at the `<is>` boundary, leaving a bare German
-article as a standalone fragment. Russian has no articles, so its faithful
-target is an ELISION, not a word. It is emitted as an empty gloss span and
-logged, rather than invented (inventing content for it is the original H2684
-defect).
+Two spans are neither, and both keep their German deliberately:
+
+  * `{%die%}` - PWG's `viSveSa` 2 reads
+    `{%die%} <is>Viśve Devāḥ</is> {%zur Gottheit habend%}`, ONE discontinuous
+    gloss the fragmentizer split at the `<is>` boundary, orphaning a bare
+    article. Russian has no articles, so no faithful word-level target exists.
+    All three candidates were measured against the judge: inventing a word is
+    the original H2684 defect, eliding to `{%%}` scores `sense_absent_or_
+    inverted` (serious), keeping the German scores `german_residue`
+    (non-serious). The least-bad one is kept. GAPS §18.
+  * `{%mit%}` - ratified style-guide §12.2 forbids translating a span that is
+    ENTIRELY apparatus, and the canonical detector classes bare `mit` as a
+    `function_word`. «с» reads correctly and the judge passed the row with it,
+    but the rule wins; the tension is filed as CONTRADICTIONS §16.
+
+`--selftest` enforces §12.2 mechanically against
+`sanskrit_util.classify_german_metalanguage` rather than trusting this list, so
+no future authored entry can smuggle an apparatus span in as a gloss.
 
   python src/pwg_tm_serious10_translate.py --selftest
   python src/pwg_tm_serious10_translate.py apply --sidecar <in> --out <dir>
@@ -66,10 +77,16 @@ AUTHORED = {
         'upakrama 4 - three near-synonyms for commencement. Antritt is entry '
         'upon / setting out, Anfang the general beginning, Beginn the onset; '
         'вступление / начало / зачин keeps the same three-step gradation.'),
-    '{%mit%}': (
-        '{%с%}',
-        'Instrumental preposition inside the Śaṃkara gloss '
-        '"upadrava mit upa beginnt" - upadrava begins WITH upa.'),
+    # {%mit%} is deliberately ABSENT. Semantically it is the preposition of
+    # Śaṃkara's clause "upadrava mit upa beginnt", and rendering it «с» reads
+    # correctly - the independent judge scored the row `none` / fidelity:pass
+    # with it in place. But ratified style-guide §12.2 forbids translating a
+    # span consisting ENTIRELY of apparatus as a gloss, and
+    # `sanskrit_util.classify_german_metalanguage` classes bare `mit` as a
+    # `function_word`. The ratified rule wins over the better reading. The
+    # tension is filed in CONTRADICTIONS §16: §12.2's whole-span test cannot
+    # distinguish an apparatus token from a fragment of a clause broken up by
+    # interleaved {#...#} Sanskrit - the GAPS §18 root cause.
     '{%beginnt%}': (
         '{%начинается%}',
         'Finite verb of the same gloss; reflexive начинается is the Russian '
@@ -99,6 +116,18 @@ AUTHORED = {
 # So the German is retained deliberately: it is the only option that neither
 # invents content nor reads as sense-loss. The real fix is upstream - rejoin
 # discontinuous glosses across <is> before fragmenting - not here.
+# Ratified style-guide §12.2: a span consisting ENTIRELY of apparatus is never
+# translated as a gloss. Membership is not asserted here - `--selftest` proves
+# it against the canonical detector, `sanskrit_util.classify_german_metalanguage`.
+APPARATUS_KEPT = {
+    '{%mit%}': (
+        '{%mit%}',
+        'Whole-span `function_word` per the canonical §12 detector, so §12.2 '
+        'forbids rendering it as a gloss - even though «с» reads correctly '
+        'here and the independent judge passed the row with it. CONTRADICTIONS '
+        '§16 records why the rule misfires on this span.'),
+}
+
 UNREPAIRABLE = {
     '{%die%}': (
         '{%die%}',
@@ -147,6 +176,9 @@ def resolve(span):
         return '{%' + pinned + '%}', 'placeholder_ru', (
             'Shipped H3299 table PLACEHOLDER_RU: an argument-slot placeholder '
             'renders placeholder-style Russian, never a verb phrase.')
+    if span in APPARATUS_KEPT:
+        ru, why = APPARATUS_KEPT[span]
+        return ru, 'apparatus_not_translated', why
     if span in UNREPAIRABLE:
         ru, why = UNREPAIRABLE[span]
         return ru, 'unrepairable_kept_german', why
@@ -237,7 +269,45 @@ def cmd_apply(args):
     return 1 if unresolved else 0
 
 
+APPARATUS_CATEGORIES = frozenset(
+    {'function_word', 'grammar_label', 'recurring_formula'})
+
+
+def whole_span_apparatus(span):
+    """§12.2 test: is this span ENTIRELY German apparatus?
+
+    Delegates to the canonical detector rather than keeping a second token
+    table (style guide §12.1: the library is the source of truth).
+    """
+    try:
+        from sanskrit_util import classify_german_metalanguage
+    except ImportError:
+        return None
+    inner = span[2:-2].strip()
+    hits = classify_german_metalanguage(inner) or []
+    covered = sum(h['end'] - h['start'] for h in hits
+                  if h.get('category') in APPARATUS_CATEGORIES)
+    return bool(hits) and covered >= len(inner)
+
+
+def style_violations():
+    """Any span we render as a gloss that §12.2 says is apparatus."""
+    bad = []
+    for span in AUTHORED:
+        if whole_span_apparatus(span):
+            bad.append(span)
+    return bad
+
+
 def selftest():
+    # §12.2, enforced against the canonical detector rather than asserted:
+    # nothing in AUTHORED may be a whole-span apparatus token.
+    bad = style_violations()
+    assert not bad, 'style-guide §12.2 violation - apparatus authored as a gloss: %r' % bad
+    # And the two spans the detector does convict are kept, not translated.
+    assert whole_span_apparatus('{%mit%}') is not False
+    assert resolve('{%mit%}')[:2] == ('{%mit%}', 'apparatus_not_translated')
+
     # The shipped table must win, and must not be re-authored here.
     ru, prov, _ = resolve('{%Jmd%}')
     assert (ru, prov) == ('{%кто-л.%}', 'placeholder_ru'), (ru, prov)
