@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.117] - 2026-08-29
+
 - **GAPS §17 is now a gate, not a judge item — H3644 (Grok 4.6 `grok-4.6`, 28-08-2026).** [`pwg.tm.gate.v1`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_gates.py) fails a promoted fragment whose `{%…%}` inner text is still German (`GLOSS-DE-RESIDUE`) or whose `<ab>…</ab>` tokens are not byte-identical to source (`AB-MUTATED`). Canaries `upakrama` / `AtmasAt` / `taruRa` fail as specified. Census of the frozen H2684 n=400 sample: **6 + 81**. New `coordinator.py claim --kind defect-repair` (`--root` + `--keys`, prepare stamps `--no-tm`) so the next session does not improvise `gen_opt_harness2 --keys`. The three remaining SAN-LOSS store rows (`mA` / `pat` / `asvatantra`) are **minor** head-line omission, not the medium `dA` class; parked for G5, no paid window, store untouched. Report [reports/H3644_GAPS17_DEFECT_REPAIR_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3644_GAPS17_DEFECT_REPAIR_28-08-2026.md). FINDINGS §601. GAPS §17 closed.
 
 ## [1.144.116] - 2026-08-28
