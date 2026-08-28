@@ -196,10 +196,55 @@ number worth reading off it is `quiet_ms` on a *successful* call: on the current
 empirical confirmation that a stalled-output window cannot be armed against this format —
 the finding above, measured rather than argued. It must not be turned into a constant.
 
+## Postscript — the probe WAS fired, and it settles the finding (28-08-2026, 17:22Z)
+
+The owner waived the `claude1` fence and authorised the run. It was fired from a worktree at
+`origin/master` (the canonical checkout is 12 commits behind on `salvage/sha256-sidecars` and
+holds 14 staged `.sha256` files that exist nowhere else, so it was not touched) with
+`--evidence-dir C:\Users\user\.pwg_ru_evidence` — the guard's own sanctioned durable root,
+not an override.
+
+**GATE-0 VERDICT: PASS.** Warm-up 20 754 ms, measured 14 587 ms, both `success`, both far
+below the 80 000 ms `production_v3` ceiling. Series:
+[H2878_C1_PROBE_EVENTS_28-08-2026.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2878/H2878_C1_PROBE_EVENTS_28-08-2026.jsonl).
+
+The liveness half — the reason the probe was owed at all:
+
+| purpose | elapsed_ms | output_bytes | bytes_seen | quiet_ms | silent share | killed_reason |
+|---|---|---|---|---|---|---|
+| warmup | 20 754 | 1 768 | 1 768 | **20 083** | **96.8 %** | — |
+| measured | 14 587 | 1 757 | 1 757 | **13 774** | **94.4 %** | — |
+
+**This converts FINDINGS §595 from a derivation into a measurement.** Two independent
+healthy, successful calls spent **94–97 % of their wall clock producing not one result
+byte**, and `bytes_seen` equals `output_bytes` exactly in both rows — every byte arrived in a
+single burst at the end, which is precisely the buffered-envelope behaviour the finding
+predicted and the reason a stalled-output window cannot be armed against this format.
+
+Extrapolate to the lane this actually protects: H2313 puts a healthy **card** spawn at p50
+189 327 ms. At the measured ~95 % silent share that is roughly **180 s of continuous
+silence** inside a perfectly healthy call — **twice** the 90 000 ms window. Arming it would
+not have been marginal; it would have killed the median healthy call outright.
+
+The reading is evidence and stays evidence. **No constant was derived from it, and none may
+be:** it measures the CLI's output *shape*, not a latency budget. The two ceilings it passed
+(`PRODUCTION_HARD_TIMEOUT_MS` 600 000 ms, `PROBE_LATENCY_CEILING_MS` 80 000 ms) are untouched.
+
+One deliberate, disclosed gap: because the code ran from a worktree,
+`max_account_orchestrator.HEALTH_PROBE_LOG` — which resolves relative to the module file, not
+to `--evidence-dir` — wrote its cross-account copy inside that worktree and did not reach the
+canonical `src/pilot/output/health_probe_log.jsonl`. The per-account series above is the
+durable primary record and is complete; the canonical log is simply missing this one row
+(that write is best-effort by construction). Worth a follow-up: `HEALTH_PROBE_LOG` should
+honour the resolved evidence root, which is the same #1034 defect one file over.
+
 ## Residual
 
-1. **The c1 probe above** — owed to a non-`claude1` session.
-2. **Arming the window for real** needs a lane on `--output-format stream-json`. That is a
+1. ~~**The c1 probe**~~ — **fired 28-08-2026 17:22Z, PASS**, see the postscript above.
+2. **`HEALTH_PROBE_LOG` does not honour `--evidence-dir`** — module-file-relative, so a
+   probe run outside the canonical checkout silently drops its cross-account row. Same class
+   as #1034, which fixed only the events root.
+3. **Arming the window for real** needs a lane on `--output-format stream-json`. That is a
    change to the paid call's shape and to envelope parsing, out of this unit's scope, and it
    would invalidate the existing gate's comparability if done casually. The interlock is in
    place: such a lane arms itself.
