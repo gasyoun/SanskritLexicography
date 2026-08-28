@@ -1677,6 +1677,7 @@ def main():
     _test_h2079_945_probe_emits_api_time()
     _test_h2326_1172_probe_raw_envelope_capture()
     _test_h2878_probe_records_the_no_output_progress_reading()
+    _test_h3642_health_probe_log_follows_evidence_root()
     print('max_account_orchestrator_selftest: PASS')
 
 
@@ -1999,6 +2000,81 @@ def _test_h2878_probe_records_the_no_output_progress_reading():
 
     print('  H2878 #1680: every probe records bytes_seen/quiet_ms, a stalled kill names '
           'itself `no_output_progress`, and all three survive append_event')
+
+
+def _test_h3642_health_probe_log_follows_evidence_root():
+    """H3642: HEALTH_PROBE_LOG must resolve through the SAME precedence
+    `h963_c4_gate0_probe.resolve_evidence_root` uses (explicit root, then
+    $PWG_EVIDENCE_DIR, then the historical checkout-relative default) — the #1034
+    defect one file over. #1034 fixed the per-account events series; this constant
+    stayed pinned to `HERE/output` regardless, so a paid probe with a perfectly
+    durable `--evidence-dir` still lost its canonical cross-account row to the
+    disposable worktree it was run from (measured 28-08-2026 under H2878).
+
+    `resolve_health_probe_log`'s own precedence is pinned here; the end-to-end rebind
+    inside `h963_c4_gate0_probe.main()` (including the sibling durable-root guard on
+    the derived target) is pinned by that module's own `--selftest`."""
+    import max_account_orchestrator as m
+
+    saved_env = os.environ.pop('PWG_EVIDENCE_DIR', None)
+    try:
+        # (1) no explicit root, no env — BYTE-IDENTICAL to the historical default. 21
+        # rows of c4 history and the H1110/H1447/H858 reports cite this exact path.
+        here = os.path.dirname(os.path.abspath(m.__file__))
+        default_log = m.resolve_health_probe_log()
+        assert default_log == os.path.join(here, 'output', 'health_probe_log.jsonl'), default_log
+        assert default_log == m.HEALTH_PROBE_LOG, (
+            'the module-level constant must be computed by the same function it exposes')
+        assert m.PROBE_RAW_DIR == os.path.dirname(m.HEALTH_PROBE_LOG), (
+            'PROBE_RAW_DIR must be derived from HEALTH_PROBE_LOG, not resolved independently')
+
+        with tempfile.TemporaryDirectory() as td:
+            durable = os.path.join(td, 'durable-evidence')
+
+            # (2) explicit root beats everything, including a set env var.
+            os.environ['PWG_EVIDENCE_DIR'] = os.path.join(td, 'from-env')
+            explicit_log = m.resolve_health_probe_log(durable)
+            assert explicit_log == os.path.join(durable, 'health_probe_log.jsonl'), explicit_log
+
+            # (3) env alone (no explicit root) is honoured too — a caller that never
+            # goes through h963_c4_gate0_probe's CLI still gets the durable root.
+            env_log = m.resolve_health_probe_log()
+            assert env_log == os.path.join(os.path.abspath(os.path.join(td, 'from-env')),
+                                           'health_probe_log.jsonl'), env_log
+            os.environ.pop('PWG_EVIDENCE_DIR', None)
+
+            # (4) the rebind a caller performs (mirroring h963_c4_gate0_probe.main())
+            # relocates BOTH HEALTH_PROBE_LOG and its derived PROBE_RAW_DIR outside the
+            # checkout, and `_emit` (global lookup, not a captured default) honours it
+            # immediately — no re-import needed.
+            _saved_log, _saved_raw, _rtk = m.HEALTH_PROBE_LOG, m.PROBE_RAW_DIR, m.run_tree_kill
+            try:
+                m.HEALTH_PROBE_LOG = m.resolve_health_probe_log(durable)
+                m.PROBE_RAW_DIR = os.path.dirname(m.HEALTH_PROBE_LOG)
+                assert m.PROBE_RAW_DIR == durable, m.PROBE_RAW_DIR
+
+                m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(
+                    returncode=0, stdout='{"type":"result","subtype":"success",'
+                    '"is_error":false,"structured_output":{"ok":true}}', stderr='')
+                ev = os.path.join(td, 'events.jsonl')
+                m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                             latency_ceiling_ms=65000, events_path=ev, run_id='h3642-live',
+                             account='c1', call_reservation=MemoryCallLedger())
+                canonical_rows = ro.read_events(m.HEALTH_PROBE_LOG)
+                assert canonical_rows and all(r.get('run_id') == 'h3642-live'
+                                              for r in canonical_rows), canonical_rows
+                assert not m.HEALTH_PROBE_LOG.startswith(here), (
+                    'the canonical row must land under the durable root, not the checkout')
+            finally:
+                m.HEALTH_PROBE_LOG, m.PROBE_RAW_DIR, m.run_tree_kill = \
+                    _saved_log, _saved_raw, _rtk
+    finally:
+        os.environ.pop('PWG_EVIDENCE_DIR', None)
+        if saved_env is not None:
+            os.environ['PWG_EVIDENCE_DIR'] = saved_env
+
+    print('  H3642: HEALTH_PROBE_LOG follows explicit/env/default precedence like the '
+          'per-account events root; PROBE_RAW_DIR derives from it; default byte-identical')
 
 
 if __name__ == '__main__':
