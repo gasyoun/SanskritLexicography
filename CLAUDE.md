@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 27-08-2026_
+_Created: 06-08-2026 · Last updated: 28-08-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -170,6 +170,20 @@ editorial/cross-reference ones translate to Russian, both decided 10-07-2026):
   chat and in GitHub issue/PR/release bodies. Do not put repository file paths
   in bare backticks when a human is expected to click them. In GitHub bodies,
   use full `blob`/`tree` URLs; relative links do not resolve reliably there.
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs live as GitHub issues in `gasyoun/SanskritLexicography`, driven by the `gh` CLI; PRs are **not** a triage surface. See [docs/agents/issue-tracker.md](docs/agents/issue-tracker.md).
+
+### Triage labels
+
+The five canonical triage roles (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`) are used as-is. See [docs/agents/triage-labels.md](docs/agents/triage-labels.md).
+
+### Domain docs
+
+Single-context layout: `CONTEXT.md` + `docs/adr/` at the repo root (created lazily); `CLAUDE.md` carries the current domain vocabulary. See [docs/agents/domain.md](docs/agents/domain.md).
 
 ## Operational hazard notes
 
