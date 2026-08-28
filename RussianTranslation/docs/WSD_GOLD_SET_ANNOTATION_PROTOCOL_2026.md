@@ -1,6 +1,6 @@
 # WSD gold-set design and annotation protocol (token-in-context, ceiling C1)
 
-_Created: 25-08-2026 · Last updated: 25-08-2026_
+_Created: 25-08-2026 · Last updated: 28-08-2026_
 
 Design of record for the **token-in-context word-sense-disambiguation gold set** that
 [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)
@@ -160,7 +160,16 @@ not 200 decisions: it presents **1,537 sense-menu options** in total — median 
 `I2-5`, 7 in `I6-9`, **12 in `I10+`** (max 16) — each on top of a Sanskrit sentence. Spending
 that in one sitting, before anyone has checked the instrument works, is how an annotation
 budget gets burned on a frame with a defect in it. So the first ask is
-[`src/eval/wsd_frame_c1_pilot_48.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_pilot_48.tsv):
+[`src/eval/wsd_frame_c1_pilot_48.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_pilot_48.tsv)
+— annotated **not in the TSV** but on its review sheet,
+[wsd_gold_c1_pilot_48](https://gasyoun.github.io/vote/sheets/wsd_gold_c1_pilot_48.html)
+(built by
+[`build_wsd_c1_pilot_48_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_wsd_c1_pilot_48_sheet.py),
+the twin of the BLI set's
+[`build_bli_gold_b1_500_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py)).
+A frame is an annotation *input*; asking a human to adjudicate inside a TSV is
+the defect `/review-sheet` Phase 0-pre exists to forbid (MG, 28-08-2026:
+"This format is for agents, not humans"):
 **one row per lemma, so every sense menu in the frame is inspected exactly once** — 48 rows,
 352 options, 23% of the frame's reading load, cut by
 [`pilot_wsd_frame.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/pilot_wsd_frame.py).

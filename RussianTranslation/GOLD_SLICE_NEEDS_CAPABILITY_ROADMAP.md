@@ -1,6 +1,6 @@
 # Gold-slice needs — PWG→RU research-capability roadmap
 
-_Created: 12-07-2026 · Last updated: 25-08-2026_
+_Created: 12-07-2026 · Last updated: 28-08-2026_
 
 > **Status, 25-08-2026 — read this before picking up any gold-gated card.**
 > The three evaluation-spine gold sets now have **frames and protocols; none has
@@ -70,7 +70,7 @@ human gate; the third was genuinely missing and is now built to the same point.
 |---|---|---|---|---|
 | **A/B/C translation quality** | 1 (COMET-QE calibration) | [`gold/grade_gold.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/grade_gold.jsonl) — 320 rows, strata + memo, shipped H1457 22-07-2026 | agent-adjudicated, **preliminary** | a human pass, and a **frozen model** annotator 2 (see below) |
 | **BLI Sa→Ru** | 3 | [protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) + [500-row frame](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_frame_b1_stratified_500.tsv) + review sheet, shipped H2401/H2551 | **none** | MG pass 1 — sheet has been awaiting a vote since **12-08-2026** |
-| **Token-in-context WSD** | 4, and card 5's accuracy | [protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) + [200-row frame](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_200.tsv), shipped H3172 25-08-2026 | **none** | MG pass 1 |
+| **Token-in-context WSD** | 4, and card 5's accuracy | [protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) + [200-row frame](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/wsd_frame_c1_200.tsv), shipped H3172 25-08-2026 | **none** | MG pass 1 — [48-card pilot sheet](https://gasyoun.github.io/vote/sheets/wsd_gold_c1_pilot_48.html), published 28-08-2026 |
 
 **The κ already on record is not the κ the roadmap wants.** The A/B/C set reports
 Cohen's κ = **−0.0044** ([`gold/GRADE_GOLD_MEMO.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/GRADE_GOLD_MEMO.md)),
@@ -81,8 +81,15 @@ number cannot be compared with the other two sets. The shared **annotator-2 free
 record** that makes all three comparable is specified once, in
 [§5 of the WSD protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md).
 
-**What a human actually does, once:** annotate pass 1 on the BLI sheet and on the
-WSD frame. Nothing else in the evaluation spine moves until then, and no agent may
+**What a human actually does, once:** annotate pass 1 on two interactive sheets —
+[wsd_gold_c1_pilot_48](https://gasyoun.github.io/vote/sheets/wsd_gold_c1_pilot_48.html)
+(48 cards, 🟡, the cheaper entry: it is an *instrument check* that decides whether
+the remaining 152 frame rows are worth annotating at all) and
+[bli_gold_b1_500_v2](https://gasyoun.github.io/vote/sheets/bli_gold_b1_500_v2.html)
+(500 cards, 🔴). Neither is annotated in its `.tsv` frame: a frame is an annotation
+*input*, and asking a human to adjudicate inside a machine format is the defect
+`/review-sheet` Phase 0-pre forbids (MG, 28-08-2026).
+Nothing else in the evaluation spine moves until then, and no agent may
 substitute for it — a script that writes pass-1 labels is the rule-based-arm trap
 ([/gold-adjudicate](https://github.com/gasyoun/claude-config/blob/main/commands/gold-adjudicate.md)
 Phase 0) and would turn every downstream number into a rubber stamp.
