@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 25-08-2026 (H3510: re-stamp of the 17 entries hashing `src/promote_final_cards.py` after H3500 (#1884) merged its `merge_store_rows` incoming-dup collapse un-stamped and turned the required gate red on master; the `(sense_tag, ru)` key cannot reach the EN lane — `promote_en.py` never calls `merge_store_rows` — so every verdict stands. Earlier same day, H3169: `src/pilot/deterministic_lane_census.py` landed with #1873 on 24-08-2026 unclassified and left the coverage guard red on master; exempted as a read-only reporter, with the lane-B hardcoded-`russian` defect in its own `--lang en` report named in the reason. Prior 19-08-2026 update: H3157: the §498 refusal-vs-`malformed_output` split, the paid failed-envelope capture, and the health probe adopting the generation lane's TASK SHAPE block — all language-neutral, SHARED stands; hashes re-verified.)_
+_Created: 04-07-2026 · Last updated: 28-08-2026 (H2996: wrong_entry_quarantine_reingest_h2996 added as INTENTIONAL-DIVERGENCE — the pwg_ru wrong-entry quarantine/re-ingest pass is RU-only because the EN lane has no persistent translated store to carry the defect; re-verdict if EN ever gains one. Prior 25-08-2026 update: H3510: re-stamp of the 17 entries hashing `src/promote_final_cards.py` after H3500 (#1884) merged its `merge_store_rows` incoming-dup collapse un-stamped and turned the required gate red on master; the `(sense_tag, ru)` key cannot reach the EN lane — `promote_en.py` never calls `merge_store_rows` — so every verdict stands. Earlier same day, H3169: `src/pilot/deterministic_lane_census.py` landed with #1873 on 24-08-2026 unclassified and left the coverage guard red on master; exempted as a read-only reporter, with the lane-B hardcoded-`russian` defect in its own `--lang en` report named in the reason. Prior 19-08-2026 update: H3157: the §498 refusal-vs-`malformed_output` split, the paid failed-envelope capture, and the health probe adopting the generation lane's TASK SHAPE block — all language-neutral, SHARED stands; hashes re-verified.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -2198,6 +2198,22 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "eae6eb85822c5fe350d53861ba44515ff386162b3cf4d8edd6d2597f31d0d0c7",
       "src/pilot/window_selftest.py": "efd0d4c6b81adcb1d7727d23993e2c26f0913637118e59efe11ab32743f3c735"
+    }
+  },
+  {
+    "id": "wrong_entry_quarantine_reingest_h2996",
+    "mechanism": "H2996 apply pass for the wrong-entry ingest defect: quarantines store rows whose content belongs to a flattened look-alike article, parks the intended lemmas in a re-ingest worklist, fixes a malformed key1 in place, and refreshes the relationships sidecar the store write invalidates",
+    "files": [
+      "src/apply_key1_repair.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "H2996 (28-08-2026, Opus 5 `claude-opus-5`): the defect is a property of the pwg_ru STORE — the ingest fetched a case-flattened look-alike PWG article (advan for aDvan, vasa for vAsA) and stored its content under the intended lemma's subcard (FINDINGS §562). There is no EN counterpart to port to: the EN lane has no persistent translated store at all (audit_window_en.py audits per-window artifacts; no pwg_en_translated.jsonl exists on disk or in any resolver), so there is no EN row set that could carry the defect and nothing is owed. This is a divergence by absence of a surface, not an unported fix — hence INTENTIONAL-DIVERGENCE rather than GAP with a dangling tracking ref. If EN ever gains a persistent store, this entry must be re-verdicted: the flattening class would apply there identically, and the same quarantine+worklist mechanism would need porting. The pass carries no --lang/'english'/FIELD[ selector, so the coverage guard does not reach it; this entry is the deliberate classification policy §1 requires anyway.",
+    "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H2996-Opus_SanskritLexicography_pwg-ru-wrong-entry-reingest-apply-vote_17.08.26.md",
+    "verified_sha256": {
+      "src/apply_key1_repair.py": "3c16e6d67eacf6dd8298ec0515eb8c68a1d718461dc3b7aea81450e0e53f64ba"
     }
   }
 ]
