@@ -212,4 +212,22 @@ Blocks: quoting CANON-CORE's "none cited by all 11" in A50 §4 or any paper with
 > **Source:** [H1866 referee report](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/HYPOTHESIS_PROMOTIONS_JULY_2026_REFEREE.md) §Contradiction · 05-08-2026 · Fable 5 `claude-fable-5`
 
 
+### §15. `nominal_batch_worklist.json`: one audit calls it a NOT-A-RISK regenerable worklist, the other shows it cannot be rebuilt at all
+
+🟠 ✍️ **Two in-repo audits grade the same gitignored file oppositely, and the optimistic one is the better known.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [CONCURRENCY_REAUDIT_2026-07-09.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CONCURRENCY_REAUDIT_2026-07-09.md) (09-07-2026) | `verb_batch_worklist.json` / `nominal_batch_worklist.json` — "LWW (advisory) — **NOT-A-RISK** — Regenerable worklists." | concurrency table row |
+| [H963 C4 call graph](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_PIPELINE_CALL_GRAPH_2026-07-16.md) row D7 (16-07-2026) | "Regenerable only where FOUR external inputs coexist … **In a clean worktree it is NOT regenerable.**" | D7, deviations table |
+
+Status: 🟢 **resolved 28-08-2026 (H3627) in favour of D7**, which names its four inputs (the gitignored store, `scale_manifest.freq.json`, out-of-repo `csl-orig/v02`, out-of-repo `VisualDCS`) while the re-audit asserts regenerability without a rebuild test. The re-audit is also narrower than it reads: it grades *concurrent-write* risk (last-writer-wins between two lanes), not *recoverability* after a write. Both can hold — a lost race is survivable only if the loser can rebuild, and D7 shows it often cannot. H3627 fixed the mechanism rather than the prose: [`nominals_worklist.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nominals_worklist.py) gained `--out`, so a non-default run no longer touches the shared file at all.
+
+Blocks: quoting the "NOT-A-RISK / regenerable" grade as licence to overwrite either worklist. Four consumers read the nominal path (FINDINGS §592); treat both worklists as shared singletons until the re-audit row is amended.
+
+> **Source:** [reports/H3627_TM_MIRROR_REFRESH_REINGEST_QUEUE_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3627_TM_MIRROR_REFRESH_REINGEST_QUEUE_28-08-2026.md) · 28-08-2026 · Opus 5 `claude-opus-5`
+
+
 _Dr. Mārcis Gasūns_
