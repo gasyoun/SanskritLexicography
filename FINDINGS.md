@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 27-08-2026 (§590 — a function-word denylist cannot fence a reuse lexicon: `{%thun%}` still returns `{%класть%}` policy-ON, and the denylist catches only 8 of the 13 rows carrying the mechanism while intercepting 4 correct fills; §589 — the R4.1 store SAN-LOSS freeze trigger is a literal-marker grep, four real SAN-LOSS rows live in the pwg_ru store unseen, spot-check task Disabled; §587 — derivative ī/ū-stem
+_Created: 26-06-2026 · Last updated: 28-08-2026 (§562 постскриптум H2996 — применено: карантин 159 строк, 61 лемма в переингест-worklist, отложенных 0, стор 11 621 → 11 462; `junk_key1` починен на месте, а не карантинирован — печатный заголовок и есть целевая лемма, а PWG-записи для `durgA` не существует; §590 — a function-word denylist cannot fence a reuse lexicon: `{%thun%}` still returns `{%класть%}` policy-ON, and the denylist catches only 8 of the 13 rows carrying the mechanism while intercepting 4 correct fills; §589 — the R4.1 store SAN-LOSS freeze trigger is a literal-marker grep, four real SAN-LOSS rows live in the pwg_ru store unseen, spot-check task Disabled; §587 — derivative ī/ū-stem
 gen.pl accent ruled at full-corpus n: oxytone noun stems 44/44 stem-final,
 devī́-declension adjective/participle feminines genuinely mixed — Whitney §319a
 vs §320/§356 are disjoint scopes, CONTRADICTIONS §1 ruled, GAPS §1 closed;
@@ -7112,6 +7112,31 @@ arśas, aśru, kalaśa, menā, parihāra, rāmaṭha, vedikā). Детектор
 переименование ключей; голосуется листом
 [key1_repair_vote_2026-08-17.html](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/key1_repair_vote_2026-08-17.html)
 (issue [#1767](https://github.com/gasyoun/SanskritLexicography/issues/1767)); стор не тронут.
+
+**Постскриптум 28-08-2026 (H2996) — применено.** Голосование не понадобилось:
+все 56 карточек прошли гейт печатного заголовка, отложенных — **0**. Карантин
+159 строк (44 `wrong_entry` · 8 `wrong_entry_xref` · 3 `wrong_entry_dup`),
+стор 11 621 → 11 462 (−159, ожидаемо: карантин не удаляет — строки сохранены
+дословно с блоком `_quarantine`); 61 целевая лемма поставлена в переингест-
+worklist. Ни одной строки, тронутой человеком, не удалено (все 161 были
+`ai_translated`, `reviewer: None`). Гейты: `window_selftest` 213/213 до и после,
+`placement_axis_check` OK. LANG_PARITY: правка RU-only — EN-стора не существует,
+а два производных RU-файла (`.enriched`, `.renou`) не содержат ни одной
+карантинной строки. **Уточнение к §562:** `junk_key1` (`durg_a~~h0_zz_sch`) —
+единственный класс, который НЕ карантинится: его печатный заголовок и есть
+целевая лемма (`durgā`), т.е. контент верен, испорчен только ключ; к тому же
+карточка слоя `sch`, и обход всех 123 366 записей PWG показал, что для `durgA`
+записи-источника нет — переингест было бы нечем закрыть. Исправлено на месте
+(`key1 = durgA`). Переводы НЕ выполнялись: переингест идёт штатным пайплайном,
+платное окно требует live-gate GO, поэтому вердикты волны 4 (§559) по этим ~60
+леммам остаются недействительными до тех окон. Протокол:
+[reports/H2996_WRONG_ENTRY_QUARANTINE_REINGEST_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H2996_WRONG_ENTRY_QUARANTINE_REINGEST_28-08-2026.md);
+проход [src/apply_key1_repair.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/apply_key1_repair.py).
+Историческое место уплощения ключа **не найдено** и исправленным не считается —
+worklist обезврежен конструктивно (точный SLP1-ключ + контракт «сопоставлять
+`<k1>` строго, без сворачивания регистра»).
+
+> Opus 5 (`claude-opus-5`) · 28-08-2026 · постскриптум H2996.
 
 > Fable 5 (`claude-fable-5`) · 17-08-2026 · три свидетеля на группу
 > (key1 / subcard-декод / печатный заголовок + iast через sanskrit_util);
