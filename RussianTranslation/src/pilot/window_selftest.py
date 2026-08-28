@@ -2336,6 +2336,95 @@ def test_release_manifest_hash_validation():
         run([sys.executable, os.path.join(SRC, 'validate_release.py'), edition], expect=1)
 
 
+
+def test_h3627_structured_output_exhaustion_is_parked_not_window_fatal():
+    """A CLI that exhausts its structured-output retries has failed THIS GROUP, not the window.
+
+    It exits NON-ZERO, which `classify_process` reads as 'process' -- window-fatal. That is how
+    a 23-key window threw away 19 already-paid successes when call 20 tripped the validator
+    (FINDINGS 596). The predicate must fire on either envelope field the CLI uses, and must NOT
+    fire on an unknown non-zero exit: 'we could not tell' has to stay fatal, or an unrecognised
+    failure would silently keep spending.
+    """
+    import headless_worker as hw
+    if not hw.structured_output_exhausted({'subtype': 'error_max_structured_output_retries'}):
+        fail('the subtype form must be recognised')
+    if not hw.structured_output_exhausted(
+            {'terminal_reason': 'structured_output_retry_exhausted'}):
+        fail('the terminal_reason form must be recognised')
+    for hostile in (None, {}, 'structured_output_retry_exhausted',
+                    {'subtype': 'error_other'},
+                    {'terminal_reason': 'success'},
+                    {'error': 'structured_output_retry_exhausted somewhere in prose'}):
+        if hw.structured_output_exhausted(hostile):
+            fail('must not fire on %r -- an unknown non-zero exit stays window-fatal' % (hostile,))
+
+
+def test_h3627_aborted_window_still_yields_its_paid_cards():
+    """A window that dies on call N must still emit calls 1..N-1.
+
+    `execute()` used to return payload=None on HardFailure, so `main()` wrote no --output at
+    all and every card the window had already paid for was discarded (FINDINGS 596). The
+    engine now carries them on `partial_rows`, and the salvage path builds the SAME payload
+    shape as a clean run via `_finish_payload`, so the cards stay promotable.
+    """
+    import headless_worker as hw
+
+    class StubEngine(object):
+        translate_calls = 3
+        heal_calls = 1
+        budget_stops = 0
+        usage = {'priced_calls': 3}
+        kill_timeouts = 0
+        conn_errors = 0
+        attempts = [{'label': 'b0', 'classification': 'success'}]
+        safe_mode = True
+
+    manifest = {'schema': hw.SCHEMA_V2,
+                'meta': {'root': 'h3627-selftest', 'lang': 'ru',
+                         'selected_keys': ['done_key', 'never_reached']},
+                'execution': {}, 'key_provenance': {}}
+    resolved = [{'key': 'done_key', 'card': {'key1': 'done_key'}, 'judge': None,
+                 'judge_sonnet': None, 'escalated': False}]
+    payload = hw._finish_payload(manifest, StubEngine(), list(resolved), 1, 0)
+
+    keys = {row['key']: row for row in payload['results']}
+    if not keys.get('done_key', {}).get('card'):
+        fail('the already-paid card must survive the abort, got %r' % (payload['results'],))
+    if keys.get('never_reached', {}).get('card') is not None:
+        fail('an unreached key must be present but null, not fabricated')
+    if keys['never_reached'].get('error') != 'unaccounted-key':
+        fail('an unreached key must be marked unaccounted-key, got %r' % keys['never_reached'])
+    if payload['summary']['ok'] != 1 or payload['summary']['null'] != 1:
+        fail('summary must count 1 ok / 1 null, got %r' % payload['summary'])
+    for field in ('meta', 'summary', 'results'):
+        if field not in payload:
+            fail('salvage payload must keep the clean-run shape; missing %r' % field)
+
+    engine = object.__new__(hw.HeadlessEngine)
+    engine.partial_rows = []
+    engine.partial_healed = 0
+    if not hasattr(engine, 'partial_rows'):
+        fail('the engine must expose partial_rows for the salvage path')
+
+
+def test_h3627_salvage_never_publishes_an_infra_starved_window():
+    """Salvage must NOT extend to an infrastructure failure.
+
+    H2056 #944 pins that a hung 429 is never recorded as a result: on rate_limit /
+    authentication / connection / timeout / budget_exceeded the run is COMPROMISED, not merely
+    truncated -- the remaining keys were never attempted -- so publishing a payload would let a
+    starved window read as output. Salvage exists for a per-call defect (`process`) that leaves
+    the profile and route healthy. This pins the boundary, which the first cut of the H3627
+    salvage got wrong by returning a payload for every HardFailure.
+    """
+    import headless_worker as hw
+    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded'):
+        if not hw.is_infra_failure(reason):
+            fail('%r must be an infra failure, or salvage will publish a starved window' % reason)
+    if hw.is_infra_failure('process'):
+        fail("'process' must NOT be infra -- it is exactly the salvageable per-call defect")
+
 def test_lang_parity_ledger_complete():
     """LANG_PARITY.md's ledger must have a verdict for every entry (SHARED /
     INTENTIONAL-DIVERGENCE with a note / GAP with a tracking ref), and no tracked
@@ -9283,6 +9372,9 @@ def main():
         test_stale_refusal_preserves_requeue,
         test_fixture_audit_does_not_clobber_live_status,
         test_release_manifest_hash_validation,
+        test_h3627_structured_output_exhaustion_is_parked_not_window_fatal,
+        test_h3627_aborted_window_still_yields_its_paid_cards,
+        test_h3627_salvage_never_publishes_an_infra_starved_window,
         test_lang_parity_ledger_complete,
         test_lang_parity_coverage,
         test_card_coverage_lang_symmetric,
