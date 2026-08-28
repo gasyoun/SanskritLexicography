@@ -355,7 +355,7 @@ def expire_stale_leases(state):
 
 
 def translation_lease(lease):
-    return lease.get('kind') in ('verb', 'nominal')
+    return lease.get('kind') in ('verb', 'nominal', 'defect-repair')
 
 
 def _validate_reserved_keys(value):
@@ -928,6 +928,31 @@ def claim(args):
                 raise SystemExit('no missing-rootmap candidate')
             target = blocked[0]
             details = {'blocked_missing_rootmap_count': len(blocked)}
+        elif args.kind == 'defect-repair':
+            keys = [k.strip() for k in (args.keys or '').split(',') if k.strip()]
+            root = (args.root or '').strip()
+            if not keys:
+                raise SystemExit(
+                    'defect-repair requires --keys=k1,k2 (already-promoted sub-cards)')
+            if not root:
+                raise SystemExit(
+                    'defect-repair requires --root <already-promoted-root>')
+            reserved = set(active_reserved_nominal_keys(state, strict=False))
+            for lease in state.get('leases', []):
+                if (lease.get('kind') == 'defect-repair'
+                        and not terminal_state(lease.get('state'))):
+                    reserved.update(lease.get('reserved_keys') or [])
+            overlap = sorted(set(keys) & reserved)
+            if overlap:
+                raise SystemExit(
+                    'defect-repair keys already reserved: %s' % ','.join(overlap))
+            target = 'defect-repair:%s' % root
+            run_keys = [safe_name(k) for k in keys]
+            details = {
+                'keys': keys, 'run_keys': run_keys,
+                'keymap': dict(zip(run_keys, keys)),
+                'root': root, 'no_tm': True,
+            }
         else:
             raise SystemExit('unknown kind: %s' % args.kind)
 
@@ -964,7 +989,7 @@ def claim(args):
             'artifact_dir': adir,
             'details': details,
         }
-        if args.kind == 'nominal':
+        if args.kind in ('nominal', 'defect-repair'):
             lease['reserved_keys'] = list(keys)
         os.makedirs(adir, exist_ok=True)
         state['leases'].append(lease)
@@ -1216,8 +1241,28 @@ def prepare(args, run_child=None):
                        root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
                        '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
                       timeout=remaining_operation_timeout(deadline, 'prepare'))
+        elif lease['kind'] == 'defect-repair':
+            details = lease.get('details') or {}
+            keys = details.get('keys') or lease.get('reserved_keys') or []
+            root = details.get('root')
+            if not keys or not root:
+                raise SystemExit('defect-repair lease needs details.root and details.keys')
+            key_arg = ','.join(keys)
+            preflight_path = os.path.join(adir, 'preflight.json')
+            p = run_child([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
+                           root, '--keys=%s' % key_arg, '--json'],
+                          timeout=remaining_operation_timeout(deadline, 'prepare'))
+            atomic_write_text(preflight_path, p.stdout)
+            enforce_cost_gate(preflight_path, lease.get('target'),
+                              allow_over_cost=getattr(args, 'allow_over_cost', False))
+            harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
+            manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
+            run_child([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
+                       root, '--keys=%s' % key_arg, '--no-tm',
+                       '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
+                      timeout=remaining_operation_timeout(deadline, 'prepare'))
         else:
-            raise SystemExit('prepare is only for verb/nominal translation leases')
+            raise SystemExit('prepare is only for verb/nominal/defect-repair translation leases')
     except BaseException as exc:
         block_operation(args.lease_id, token, 'preparing', exc)
         raise
@@ -2550,13 +2595,21 @@ def main(argv=None):
     sub = ap.add_subparsers(dest='cmd', required=True)
     s = sub.add_parser('status')
     s.set_defaults(func=status)
-    c = sub.add_parser('claim')
+    c = sub.add_parser(
+        'claim',
+        help='reserve a translation (verb/nominal) or defect-repair lease')
     c.add_argument('--lane', required=True)
-    c.add_argument('--kind', required=True, choices=('verb', 'nominal', 'rootmap'))
+    c.add_argument(
+        '--kind', required=True,
+        choices=('verb', 'nominal', 'rootmap', 'defect-repair'),
+        help='defect-repair: already-promoted root + --keys; prepare stamps --no-tm '
+             '(do not improvise gen_opt_harness2 --keys)')
     c.add_argument('--owner', required=True)
     c.add_argument('--lease-id')
     c.add_argument('--batch-size', type=int, default=12)
     c.add_argument('--ttl-seconds', type=int, default=LEASE_TTL_SECONDS)
+    c.add_argument('--keys', help='comma-separated sub-card keys (required for defect-repair)')
+    c.add_argument('--root', help='already-promoted root (required for defect-repair)')
     c.set_defaults(func=claim)
     p = sub.add_parser('prepare')
     p.add_argument('lease_id')
