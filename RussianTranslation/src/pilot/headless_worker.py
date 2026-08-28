@@ -28,8 +28,8 @@ import german_anchor  # noqa: E402  (H858 Part B: source-anchored repair of a dr
 from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
 from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V1,
                                 SCHEMA_V2, assert_timeout_within_ceiling,
-                                config_dir_fingerprint, validate_manifest,
-                                validate_profile)  # noqa: E402
+                                config_dir_fingerprint, progress_window_ms_for,
+                                validate_manifest, validate_profile)  # noqa: E402
 from call_reservation import (CallLimitReached, CallReservationLedger,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)  # noqa: E402
 
@@ -72,6 +72,22 @@ HARD_TIMEOUT_MS = PRODUCTION_HARD_TIMEOUT_MS
 # asking for nothing gets the maximum, and asking for more than the maximum is an error
 # instead of a rounding. Any lower `--timeout` still binds exactly as before.
 DEFAULT_TIMEOUT_S = HARD_TIMEOUT_MS // 1000
+
+# H2878 (issue #1680, FINDINGS §378): the no-output-progress window for the generation spawn.
+#
+# HARD_TIMEOUT_MS above is unchanged and stays the last-resort backstop. This is the second,
+# orthogonal bound the H2313 ruling explicitly left as residual: the ceiling caps TOTAL WALL
+# CLOCK and therefore cannot tell a hung route from a slow one, while this caps the longest
+# stretch in which the spawn produced no result bytes.
+#
+# It is DERIVED from the spawn's own `--output-format` rather than pinned here, and this lane
+# runs `--output-format json`, which buffers the entire envelope to the end of the call. So it
+# resolves to None -- observe only. Every generation call still RECORDS `bytes_seen` and
+# `quiet_ms` on its attempt, which is what turns arming this later into a measurement instead
+# of a bet. Arming a 90 s stalled-output window against a buffered format would kill healthy
+# spawns wholesale (measured healthy range 49 404-511 908 ms, p50 189 327).
+WORKER_OUTPUT_FORMAT = 'json'
+WORKER_PROGRESS_WINDOW_MS = progress_window_ms_for(WORKER_OUTPUT_FORMAT)
 
 # H2254: the SUPERVISOR's wrapper timeout must sit strictly ABOVE the per-call ceiling.
 #
@@ -1049,6 +1065,8 @@ class HeadlessEngine:
         self.heal_calls = 0
         self.kill_timeouts = 0
         self.conn_errors = 0
+        # H2878: per-call liveness readings (label / elapsed_ms / bytes_seen / quiet_ms).
+        self.progress_readings = []
         # R3 (C-12/C-13): the manifest agent budgets were write-only -- emitted, validated-adjacent,
         # never read by the executor. Enforce them here. None = unbounded (back-compat). The
         # `--max-agents` override caps the TOTAL across both lanes and binds even without budgets.
@@ -1138,9 +1156,15 @@ class HeadlessEngine:
             self.heal_calls += 1
         else:
             self.translate_calls += 1
+        progress = {}
         try:
             proc = self.run(argv, input=prompt, text=True, encoding='utf-8',
-                            capture_output=True, timeout=self.timeout, cwd=self.cli_cwd)
+                            capture_output=True, timeout=self.timeout, cwd=self.cli_cwd,
+                            # H2878: watch the spawn's output progress. The window is None on
+                            # this buffered lane, so nothing new can be killed here -- what
+                            # changes is that a killed call can finally say WHY it was killed.
+                            progress_window_ms=WORKER_PROGRESS_WINDOW_MS,
+                            progress_out=progress)
         except subprocess.TimeoutExpired as exc:
             # A timeout happened after a real spawn. No trustworthy wrapper survived, so count the
             # call and fail closed on cost instead of leaving a paid timeout looking like $0.
@@ -1159,6 +1183,14 @@ class HeadlessEngine:
             attempt = {'label': label, 'keys': keys, 'returncode': 124,
                        'elapsed_ms': int((time.monotonic() - started) * 1000),
                        'classification': classification}
+            # H2878: which bound ended this call, and what the spawn had produced when it did.
+            # Before this every killed attempt read `returncode: 124` and nothing else, so a
+            # silent hang and a slow-but-working call left identical rows. Absent keys are
+            # skipped, so an attempt from a runner that does not watch is unchanged.
+            attempt.update({name: value for name, value in (
+                ('killed_reason', getattr(exc, 'killed_reason', None)),
+                ('bytes_seen', getattr(exc, 'bytes_seen', None)),
+                ('quiet_ms', getattr(exc, 'quiet_ms', None))) if value is not None})
             cleanup = getattr(exc, 'cleanup_trouble', None)
             if cleanup:                                # D-J: diagnostic only, about cleanup not cause
                 attempt['cleanup_trouble'] = cleanup
@@ -1175,6 +1207,13 @@ class HeadlessEngine:
             self._accumulate_usage(telemetry)
             raise
         elapsed = int((time.monotonic() - started) * 1000)
+        # H2878: the same reading on the SUCCESS path. A completed call's longest silence is
+        # the only evidence that says whether a window would have been safe to arm against
+        # this lane -- which is why it is recorded before any window ever is.
+        self.progress_readings.append(
+            {'label': label, 'elapsed_ms': elapsed,
+             'bytes_seen': progress.get('bytes_seen'),
+             'quiet_ms': progress.get('quiet_ms')})
         try:
             wrapper = parse_cli_wrapper(proc.stdout)
         except ValueError:

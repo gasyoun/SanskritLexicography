@@ -116,6 +116,86 @@ def assert_timeout_within_ceiling(value_ms, source, ceiling_ms=PRODUCTION_HARD_T
             'ruling backed by measured evidence.' % (source, requested, ceiling_ms))
 
 
+# H2878 (issue #1680, FINDINGS §378): the no-output-progress window, in milliseconds.
+#
+# This is NOT a second ceiling and NOT a re-fit of PRODUCTION_HARD_TIMEOUT_MS (H2299 ban).
+# It measures a DIFFERENT quantity. The hard timeout bounds TOTAL WALL CLOCK; this bounds
+# the longest stretch during which the spawn produced no result bytes. The comment above
+# PRODUCTION_HARD_TIMEOUT_MS states the reason in full and names this as its own residual:
+# a total-wall cap "cannot make that distinction from a single constant. Separating 'hung'
+# from 'very slow' for real needs a no-output-progress watchdog (kill on stalled output,
+# not on total elapsed time), left as residual work."
+#
+# 90 000 ms is the H2878 handoff's ruled default. It is deliberately NOT derived from the
+# H2313 wall distribution -- deriving a stalled-output window from total-wall percentiles
+# would be the exact category error this constant exists to end. It is a liveness bound:
+# a healthy streaming spawn that has said nothing for a minute and a half is not slow, it
+# is stopped. PRODUCTION_HARD_TIMEOUT_MS remains the last-resort backstop underneath it.
+PRODUCTION_NO_OUTPUT_PROGRESS_MS = 90000
+
+# The two kill reasons a bounded spawn can report. They are DISTINCT on purpose: before
+# H2878 every killed call came back as a bare `timeout`, so a hung route and a call the
+# production lane would still have been waiting on were the same event row (the 13-08 c1
+# reading -- 300 198 ms, 0 output bytes -- is exactly that shape).
+KILLED_REASON_HARD_TIMEOUT = 'hard_timeout'
+KILLED_REASON_NO_OUTPUT_PROGRESS = 'no_output_progress'
+KILLED_REASONS = (KILLED_REASON_HARD_TIMEOUT, KILLED_REASON_NO_OUTPUT_PROGRESS)
+
+# WHICH `--output-format` values can emit PARTIAL output before the call ends.
+#
+# This set is the whole reason the watchdog is not armed blind. Every production spawn in
+# this tree (`headless_worker`, `_probe_call`, `gen_opt_harness2`) runs
+# `claude -p --output-format json`, which buffers the entire CLI result envelope and writes
+# it in ONE burst when the call finishes. On that shape stdout is legitimately 0 bytes for
+# the whole call, and the H2313 evidence says a healthy card spawn runs 49 404-511 908 ms
+# (p50 189 327). Arming a 90 s stalled-output window against it would kill every healthy
+# call -- the identical defect H2313 diagnosed in the 300 000 ms ceiling ("killing HEALTHY
+# card spawns, not hung ones"), only six times more aggressive. `stream-json` is the format
+# that emits incrementally, and on it the window means what it says.
+#
+# So the window is DERIVED from the spawn's output format rather than pinned by a literal
+# at each call site: a lane that switches to `stream-json` arms the watchdog by doing so,
+# and no lane can arm it against a buffered format by copying a constant.
+STREAMING_OUTPUT_FORMATS = frozenset({'stream-json'})
+
+
+def progress_window_ms_for(output_format, window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS):
+    """The no-output-progress window to ARM for a spawn with this ``--output-format``.
+
+    Returns ``window_ms`` for a format that emits incrementally, and ``None`` -- observe
+    only, never kill -- for a buffered one. ``None`` does not mean "unmeasured": the runner
+    still records ``bytes_seen`` and ``quiet_ms`` for every spawn, which is what turns a
+    future arming decision into a reading instead of a guess.
+    """
+    return window_ms if output_format in STREAMING_OUTPUT_FORMATS else None
+
+
+def assert_progress_window_below_ceiling(window_ms, source,
+                                         ceiling_ms=PRODUCTION_HARD_TIMEOUT_MS):
+    """Fail closed on a progress window at or above the total-wall ceiling.
+
+    A window that is not STRICTLY below the hard timeout can never fire -- the backstop
+    would always kill first -- so configuring one is a silent no-op, which is precisely the
+    failure mode #983 catalogued for the ceiling itself. ``None`` (observe only) passes.
+    """
+    if window_ms is None:
+        return
+    try:
+        requested = int(window_ms)
+    except (TypeError, ValueError):
+        raise ValueError('%s: no-output-progress window must be an integer number of '
+                         'milliseconds (got %r)' % (source, window_ms))
+    if requested <= 0:
+        raise ValueError('%s requests a %d ms no-output-progress window; a non-positive '
+                         'window would kill every spawn on its first poll' % (source, requested))
+    if requested >= ceiling_ms:
+        raise ValueError(
+            '%s requests a %d ms no-output-progress window, at or above the %d ms total-wall '
+            'ceiling. It could never fire -- the hard timeout would always kill first -- so '
+            'this is REFUSED rather than accepted as a silent no-op.'
+            % (source, requested, ceiling_ms))
+
+
 def canonical_config_dir(path):
     return os.path.normcase(os.path.realpath(os.path.abspath(path)))
 

@@ -46,6 +46,15 @@ ALLOWED = {
     # the envelope body itself never enters the event row.
     'err_pattern', 'raw_envelope_path',
 
+    # H2878 (issue #1680): the no-output-progress reading for the spawn behind this row.
+    # `elapsed_ms` says how long the call took; these say whether it was ALIVE for that long.
+    # `bytes_seen` is result bytes on stdout, `quiet_ms` the LONGEST stretch in which none
+    # arrived, and `killed_reason` distinguishes a stalled-output kill from the total-wall
+    # backstop -- the distinction FINDINGS §378 named as missing and the 13-08 c1 reading
+    # (300 198 ms, 0 output bytes, recorded as a bare `timeout`) needed and did not have.
+    # Three bounded integers/enums; no payload, no path, no provider text.
+    'bytes_seen', 'quiet_ms', 'killed_reason',
+
     # H2647: the BOX's state at the moment the reading was taken, so a row can tell its
     # SUBJECT (the account and route) from its ENVIRONMENT (this machine). Without these a
     # probe that died of local memory starvation is indistinguishable from one refused by
