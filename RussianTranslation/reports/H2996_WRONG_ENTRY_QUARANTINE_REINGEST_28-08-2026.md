@@ -77,19 +77,62 @@ the printed-head evidence.
 
 ## Gates
 
-| gate | before | after |
-|---|---|---|
-| `window_selftest.py` | 213/213 pass | 213/213 pass |
-| `placement_axis_check.py` | OK (6374 sidecar rows, 661 placed) | OK, A3/A5 stop-conditions clear |
-| store row count | 11 621 | 11 462 (−159, expected) |
-| human-touched rows removed | — | **0** (all 161 were `ai_translated`, `reviewer: None`) |
+| gate | before | after the store write | after the sidecar refresh |
+|---|---|---|---|
+| `window_selftest.py` | 213/213 pass | 213/213 pass | 213/213 pass |
+| `placement_axis_check.py` | OK (6374 sidecar rows, 661 placed) | **FAIL A2, exit 1 — 30 dangling rows** | OK (6320 sidecar rows, 633 placed), A2=0 |
+| store row count | 11 621 | 11 462 (−159, expected) | 11 462 |
+| human-touched rows removed | — | **0** (all 161 were `ai_translated`, `reviewer: None`) | 0 |
 
-**LANG_PARITY: RU-only by construction.** There is no EN translated store — the
-EN lane audits window artifacts, not a persistent store — so this repair has no
-EN twin to port. The two derived RU siblings next to the store
-(`pwg_ru_translated.enriched.jsonl`, `pwg_ru_translated.renou.jsonl`, 217 rows
-each) were checked and carry **0** of the 159 quarantined rows, so no derivative
-re-publishes a quarantined card.
+### The placement gate went red first, and was recorded green in error
+
+Quarantining 159 store rows orphaned 30 rows of the derived sidecar
+`src/pwg_ru_relationships.jsonl`, whose `placement: true` pointed at senses that
+had just left the store. `placement_axis_check.py` builds its sense index **from
+the store**, so those orphans failed its A2 check and the gate exited 1.
+
+The first version of this report, the FINDINGS §562 postscript, the changelog
+entry and the issue comment all recorded that gate as "OK". They were wrong. The
+measurement error was reading `$?` after a *pipeline* — which returns the exit
+status of `tail`, not of the gate — and then reading the absence of the
+`placement_axis_check: OK` line as if it were present. CI cannot catch this:
+[ci.yml](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)
+runs only `window_selftest.py`, and the placement gate is a manual check over a
+gitignored store.
+
+**Fixed at the root, not papered over.** The sidecar is a pure derivative of the
+store — `build_relationships.py` does no re-translation, all 6 374 rows were
+`confidence: "llm"`, and it carries no human/gold/editorial field — so the repair
+is to rebuild it, which destroys no human verdict. `apply_key1_repair.py` now
+does that automatically after the store write (`--no-sidecar-refresh` opts out),
+so the breakage cannot recur silently. A pre-regeneration backup of the sidecar
+was taken. After the rebuild: 6 374 → 6 320 rows, 661 → 633 placed, A2 = 0,
+exit 0.
+
+**LANG_PARITY verdict: `INTENTIONAL-DIVERGENCE` (RU-only).** Stated in the
+binding vocabulary of
+[LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+§1 rather than as loose prose: there is no EN translated store — the EN lane
+audits window artifacts, not a persistent store — so the repair has no EN twin
+to port and the divergence is by construction, not a `GAP`.
+
+### Derived artifacts: two clean, two not
+
+| derivative | quarantined rows still present |
+|---|---|
+| `pwg_ru_translated.enriched.jsonl` (217 rows) | 0 |
+| `pwg_ru_translated.renou.jsonl` (217 rows) | 0 |
+| `pwg_ru_relationships.jsonl` (6 374 rows) | 30 dangling placements — **repaired by regeneration above** |
+| `pwg-ru-data/tm/pwg_ru_translated.jsonl` (11 620 rows) | **all 159, plus both old-key `durg_a~~h0_zz_sch` rows — NOT repaired here** |
+
+The TM mirror lives in the separate [pwg-ru-data](https://github.com/gasyoun/pwg-ru-data)
+repo and is outside this handoff's fence, so it was not touched.
+`audit_store_gates.py` measures the drift: `only_src` 7 → 9, `only_mirror`
+6 → 167. This matters because a re-ingest window run with `--tm=auto` would
+re-serve the very cards just quarantined — the trap
+`requeue_from_audit.py` documents and avoids by always passing `--no-tm` for
+defect requeues. Every worklist unit therefore carries `--no-tm` as an explicit
+requirement. **Refreshing the mirror is owed and not done here.**
 
 ## Artifacts
 
@@ -105,6 +148,20 @@ The 61 lemmas are **queued, not translated**. Re-ingest runs through the
 standard pipeline and a paid window needs a live-gate GO — this pass writes no
 translation and calls no model. Until those windows run, the store simply has
 159 fewer wrong rows; it does not yet have the 61 right articles.
+
+**They are also not yet in a production queue.** The queueing adapter is
+`python src/pilot/nominals_worklist.py <the ROOTS .txt>` — these are nominals,
+so the verb drain cannot take them — and the roots file is exactly the SLP1
+wordlist that adapter consumes. It was **not run**, because it overwrites the
+shared `src/pilot/output/nominal_batch_worklist.json`, and the copy on disk
+(691 KB, 14-07-2026) belongs to another lane; clobbering it would destroy that
+lane's queued work. Whoever queues these must check that file first. Coverage is
+already established independently: all 61 lemmas exist as PWG `<k1>` headwords,
+and all 61 are now absent from the store, so the adapter's
+"already-promoted" dedup will not drop them.
+
+**Two debts this pass does not discharge:** the `pwg-ru-data` TM mirror refresh
+(above), and the historical flattening site.
 
 Each worklist unit carries the exact SLP1 key and an explicit consumer contract:
 match the PWG `<k1>` field **exactly, never case-folded** — the flattened lookup

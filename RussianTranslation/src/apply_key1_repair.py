@@ -102,14 +102,32 @@ WORKLIST_SCHEMA = 'pwg_ru.wrong_entry_reingest_worklist.v1'
 LEDGER_SCHEMA = 'pwg_ru.key1_repair_apply.v1'
 STORE_TAG = 'h2996_key1_repair'
 
-# The consumer contract for the worklist. The historical defect was a
-# case-flattened lookup, so the worklist carries the exact SLP1 key and says
-# so: a consumer must match the PWG <k1> field exactly and must never
-# lowercase or otherwise fold the key on the way in.
+# The consumer contract for the worklist. Three things a discharging window
+# must honour, each of them a defect this pass had to reason about:
+#
+#   * the exact SLP1 key — the historical defect was a case-flattened lookup,
+#     so a consumer matches the PWG <k1> field exactly and never folds case;
+#   * --no-tm — the `pwg-ru-data` TM mirror still holds the 159 rows this pass
+#     quarantined, so a --tm=auto window would re-serve the very cards that
+#     were just removed (the trap requeue_from_audit.py documents and avoids
+#     by always passing --no-tm for defect requeues);
+#   * a live-gate GO — these are paid windows.
+#
+# The queueing adapter is `src/pilot/nominals_worklist.py <ROOTS.txt>` (these
+# are nominals, not verb roots, so the verb drain cannot take them). NOTE: that
+# adapter overwrites the SHARED `src/pilot/output/nominal_batch_worklist.json`,
+# so whoever queues these must first confirm they are not destroying another
+# lane's queued worklist.
 WORKLIST_NOTE = ('re-ingest the PWG article of this exact SLP1 lemma; match '
                  '<k1> EXACTLY (never case-folded — the flattened lookup is '
-                 'the H2996/FINDINGS-562 defect). Translation runs through '
-                 'the standard pipeline; a paid window needs a live-gate GO.')
+                 'the H2996/FINDINGS-562 defect). Queue via '
+                 '`python src/pilot/nominals_worklist.py '
+                 '<H2996 ROOTS .txt>` (nominals, not verb roots; that adapter '
+                 'overwrites the shared nominal_batch_worklist.json — check '
+                 'before clobbering). The window MUST run --no-tm: the '
+                 'pwg-ru-data TM mirror still holds the quarantined rows and '
+                 '--tm=auto would re-serve them. Paid window needs a '
+                 'live-gate GO.')
 
 
 def load_jsonl(path):
@@ -238,6 +256,74 @@ def plan(proposals, rows):
     return events, drop, fixes, worklist
 
 
+def refresh_relationships_sidecar():
+    """Rebuild `pwg_ru_relationships.jsonl` from the repaired store.
+
+    The sidecar is a PURE derivative of the store (build_relationships.py:
+    "no re-translation, pure metadata over the already-translated store";
+    every row is ``confidence: 'llm'``, no human verdict lives in it). Removing
+    159 store rows therefore orphans every sidecar row that pointed at them —
+    and `placement_axis_check.py` builds its sense index from the STORE, so
+    those orphans fail its A2 check ("placement=true rows whose target is
+    absent from PWG"). The first H2996 run left 30 such rows and turned a green
+    gate red.
+
+    That gate is the reason this refresh belongs INSIDE the pass rather than in
+    a runbook step: it is a manual gate over a gitignored store, CI never runs
+    it, so nothing else would have caught the breakage.
+    """
+    import subprocess
+    print('\nrefreshing the relationships sidecar (derivative of the store)…')
+    proc = subprocess.run(
+        [sys.executable, os.path.join(HERE, 'build_relationships.py')],
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+        encoding='utf-8', errors='replace')
+    tail = (proc.stdout or '').strip().splitlines()[-1:] or ['(no output)']
+    print('  build_relationships exit=%d  %s' % (proc.returncode, tail[0]))
+    if proc.returncode:
+        print('  WARNING: the sidecar was NOT refreshed — placement_axis_check '
+              'will fail A2 until it is. Run build_relationships.py by hand.',
+              file=sys.stderr)
+    return proc.returncode
+
+
+def rebuild_artifacts(args):
+    """Regenerate the worklist + roots from the ledger, without touching the store.
+
+    Once the pass has run, it is idempotent-empty: every proposal reports "no
+    live store rows carry this proposal any more", so a plain re-run would
+    emit an EMPTY worklist. The ledger is the durable record of what was
+    quarantined, so the worklist is rebuilt from it.
+    """
+    events = load_jsonl(LEDGER)
+    worklist = OrderedDict()
+    for ev in events:
+        if ev.get('action') != 'quarantine':
+            continue
+        for lem in ev['intended_lemmas']:
+            unit = worklist.setdefault(lem, {
+                'schema': WORKLIST_SCHEMA, 'handoff': 'H2996',
+                'worklist_note': WORKLIST_NOTE,
+                'key1': lem, 'layers': ['pwg'],
+                'displaced_by': [], 'quarantined_subcards': [],
+                'evidence': 'FINDINGS §562; issue #1767',
+            })
+            if ev['key1'] not in unit['displaced_by']:
+                unit['displaced_by'].append(ev['key1'])
+            for sub in ev.get('subcards') or []:
+                if decode_subcard(sub) == lem and \
+                        sub not in unit['quarantined_subcards']:
+                    unit['quarantined_subcards'].append(sub)
+    write_jsonl(WORKLIST, list(worklist.values()))
+    with open(ROOTS, 'w', encoding='utf-8', newline='\n') as f:
+        for lem in worklist:
+            f.write(lem + '\n')
+    print('rebuilt from %d ledger events: %s (%d lemmas)'
+          % (len(events), WORKLIST, len(worklist)))
+    print('rebuilt: %s' % ROOTS)
+    return 0
+
+
 def write_jsonl(path, records):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     tmp = path + '.tmp'
@@ -306,6 +392,8 @@ def run(args):
     bak = store_write.locked_store_rewrite(store, kept, STORE_TAG)
     print('\nstore rewritten     : %s' % store)
     print('backup              : %s' % bak)
+    if not args.no_sidecar_refresh:
+        refresh_relationships_sidecar()
     print('quarantine          : %s (%d rows)' % (QUARANTINE, len(quarantined)))
     print('ledger              : %s (%d events)' % (LEDGER, len(events)))
     print('worklist            : %s (%d lemmas)' % (WORKLIST, len(worklist)))
@@ -403,10 +491,18 @@ def main(argv=None):
     ap.add_argument('--proposals', default=PROPOSALS)
     ap.add_argument('--write', action='store_true',
                     help='apply (default: dry-run report only)')
+    ap.add_argument('--no-sidecar-refresh', action='store_true',
+                    help='skip rebuilding pwg_ru_relationships.jsonl after the '
+                         'store write (leaves placement_axis_check A2 red)')
+    ap.add_argument('--rebuild-artifacts', action='store_true',
+                    help='regenerate the worklist + roots from the ledger '
+                         '(the pass is idempotent-empty once applied)')
     ap.add_argument('--selftest', action='store_true')
     args = ap.parse_args(argv)
     if args.selftest:
         return selftest()
+    if args.rebuild_artifacts:
+        return rebuild_artifacts(args)
     return run(args)
 
 
