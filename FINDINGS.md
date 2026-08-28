@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 27-08-2026 (§590 — a function-word denylist cannot fence a reuse lexicon: `{%thun%}` still returns `{%класть%}` policy-ON, and the denylist catches only 8 of the 13 rows carrying the mechanism while intercepting 4 correct fills; §589 — the R4.1 store SAN-LOSS freeze trigger is a literal-marker grep, four real SAN-LOSS rows live in the pwg_ru store unseen, spot-check task Disabled; §587 — derivative ī/ū-stem
+_Created: 26-06-2026 · Last updated: 28-08-2026 (§562 постскриптум H2996 — применено: карантин 159 строк, 61 лемма в переингест-worklist, отложенных 0, стор 11 621 → 11 462; `junk_key1` починен на месте, а не карантинирован — печатный заголовок и есть целевая лемма, а PWG-записи для `durgA` не существует; §590 — a function-word denylist cannot fence a reuse lexicon: `{%thun%}` still returns `{%класть%}` policy-ON, and the denylist catches only 8 of the 13 rows carrying the mechanism while intercepting 4 correct fills; §589 — the R4.1 store SAN-LOSS freeze trigger is a literal-marker grep, four real SAN-LOSS rows live in the pwg_ru store unseen, spot-check task Disabled; §587 — derivative ī/ū-stem
 gen.pl accent ruled at full-corpus n: oxytone noun stems 44/44 stem-final,
 devī́-declension adjective/participle feminines genuinely mixed — Whitney §319a
 vs §320/§356 are disjoint scopes, CONTRADICTIONS §1 ruled, GAPS §1 closed;
@@ -7112,6 +7112,59 @@ arśas, aśru, kalaśa, menā, parihāra, rāmaṭha, vedikā). Детектор
 переименование ключей; голосуется листом
 [key1_repair_vote_2026-08-17.html](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/key1_repair_vote_2026-08-17.html)
 (issue [#1767](https://github.com/gasyoun/SanskritLexicography/issues/1767)); стор не тронут.
+
+**Постскриптум 28-08-2026 (H2996) — применено.** Голосование не понадобилось:
+все 56 карточек прошли гейт печатного заголовка, отложенных — **0**. Карантин
+159 строк (44 `wrong_entry` · 8 `wrong_entry_xref` · 3 `wrong_entry_dup`),
+стор 11 621 → 11 462 (−159, ожидаемо: карантин не удаляет — строки сохранены
+дословно с блоком `_quarantine`); 61 целевая лемма поставлена в переингест-
+worklist. Ни одной строки, тронутой человеком, не удалено (все 161 были
+`ai_translated`, `reviewer: None`). LANG_PARITY: вердикт
+**INTENTIONAL-DIVERGENCE** (запись `wrong_entry_quarantine_reingest_h2996`) —
+EN-стора не существует вовсе, портировать некуда; при появлении EN-стора вердикт
+пересматривается.
+
+**Гейты — и ошибка измерения, которую пришлось исправлять.** `window_selftest`
+213/213 до и после. `placement_axis_check` сначала **упал**: карантин 159 строк
+осиротил 30 строк производного сайдкара `src/pwg_ru_relationships.jsonl`, чей
+`placement: true` указывал на смыслы, только что покинувшие стор, а гейт строит
+индекс смыслов **из стора** — A2 FAIL, exit 1. В первой версии отчёта, этого
+постскриптума, changelog и комментария к issue гейт был записан как «OK». Это
+было неверно: exit-код читался после **конвейера** (`| tail`), то есть измерялся
+`tail`, а не гейт, и отсутствие строки `placement_axis_check: OK` было принято
+за её наличие. CI это не ловит — там гоняется только `window_selftest`, а
+placement-гейт ручной и над gitignored-стором. Починено в корне: сайдкар —
+**чистая производная** стора (`build_relationships.py` ничего не переводит, все
+6374 строки `confidence: llm`, ни одного человеческого поля), поэтому он просто
+перестраивается, и `apply_key1_repair.py` теперь делает это сам после записи
+стора (`--no-sidecar-refresh` отключает). После перестройки: 6374 → 6320 строк,
+661 → 633 placed, A2 = 0, **exit 0**.
+
+**Производные: две чистые, две нет.** `.enriched` и `.renou` (по 217 строк) не
+содержат ни одной карантинной строки. Сайдкар содержал 30 висячих привязок —
+починен выше. **TM-зеркало `pwg-ru-data/tm/` по-прежнему держит все 159
+карантинных строк** (`only_mirror` 6 → 167) — оно в другом репозитории, вне
+забора этого handoff'а, и НЕ обновлено. Это важно: окно переингеста с
+`--tm=auto` пере-выдаст ровно те карточки, которые только что вынесены в
+карантин (ловушка, которую `requeue_from_audit.py` обходит обязательным
+`--no-tm`), поэтому каждая единица worklist'а несёт требование `--no-tm`.
+Обновление зеркала — долг, не закрытый здесь.
+
+**Уточнение к §562:** `junk_key1` (`durg_a~~h0_zz_sch`) —
+единственный класс, который НЕ карантинится: его печатный заголовок и есть
+целевая лемма (`durgā`), т.е. контент верен, испорчен только ключ; к тому же
+карточка слоя `sch`, и обход всех 123 366 записей PWG показал, что для `durgA`
+записи-источника нет — переингест было бы нечем закрыть. Исправлено на месте
+(`key1 = durgA`). Переводы НЕ выполнялись: переингест идёт штатным пайплайном,
+платное окно требует live-gate GO, поэтому вердикты волны 4 (§559) по этим ~60
+леммам остаются недействительными до тех окон. Протокол:
+[reports/H2996_WRONG_ENTRY_QUARANTINE_REINGEST_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H2996_WRONG_ENTRY_QUARANTINE_REINGEST_28-08-2026.md);
+проход [src/apply_key1_repair.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/apply_key1_repair.py).
+Историческое место уплощения ключа **не найдено** и исправленным не считается —
+worklist обезврежен конструктивно (точный SLP1-ключ + контракт «сопоставлять
+`<k1>` строго, без сворачивания регистра»).
+
+> Opus 5 (`claude-opus-5`) · 28-08-2026 · постскриптум H2996.
 
 > Fable 5 (`claude-fable-5`) · 17-08-2026 · три свидетеля на группу
 > (key1 / subcard-декод / печатный заголовок + iast через sanskrit_util);
