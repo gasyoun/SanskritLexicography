@@ -1,0 +1,84 @@
+{
+ "classification": "process",
+ "error": "",
+ "attempts": [
+  {
+   "label": "b0",
+   "keys": [
+    "_anana"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 250854,
+   "classification": "success"
+  },
+  {
+   "label": "b1",
+   "keys": [
+    "anukamp_a"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 111168,
+   "classification": "success"
+  },
+  {
+   "label": "b2",
+   "keys": [
+    "_apta"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 235450,
+   "classification": "success"
+  },
+  {
+   "label": "b3",
+   "keys": [
+    "a_sru"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 235497,
+   "classification": "success"
+  },
+  {
+   "label": "b4",
+   "keys": [
+    "_atura"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 72494,
+   "classification": "success"
+  },
+  {
+   "label": "b5",
+   "keys": [
+    "havyav_aha"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 96664,
+   "classification": "success"
+  },
+  {
+   "label": "b6",
+   "keys": [
+    "h_uti"
+   ],
+   "returncode": 3221225794,
+   "elapsed_ms": 53,
+   "classification": "process"
+  }
+ ],
+ "usage": {
+  "input_tokens": 22,
+  "output_tokens": 91212,
+  "cache_read_tokens": 347611,
+  "cache_creation_tokens": 235849,
+  "subagent_tokens": 674694,
+  "usage_evaluable": false,
+  "observed_cost_usd": 0.0,
+  "cost_evaluable": false,
+  "priced_calls": 7,
+  "missing_usage_calls": 1
+ },
+ "partial_output": true,
+ "manifest_sha256": "24703b15a6d16f3f0d2e4179fa69e36d706c3494b3226d1613150cc3d9a0c64d",
+ "result_sha256": "2dafe00d3032a508de2878ec4775d38857a531353bb3f85348a3b639f4db354d"
+}
