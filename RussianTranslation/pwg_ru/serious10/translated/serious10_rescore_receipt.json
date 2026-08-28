@@ -1,0 +1,68 @@
+{
+  "schema": "pwg.tm.serious10.rescore.receipt.v1",
+  "handoff": "H3611",
+  "repairs_from": "H2877",
+  "protocol": "H3299 pinned severity rubric; serious_error DERIVED, blind, one call per row",
+  "route": "openrouter",
+  "independent": {
+    "judge_model": "x-ai/grok-4.5",
+    "independence_errors": [],
+    "severity_consistency_violations": [],
+    "scores": {
+      "n": 10,
+      "serious": 0,
+      "fidelity_pass": 9,
+      "equivalence_correct": 9,
+      "defect_classes": {
+        "none": 9,
+        "german_residue": 1
+      }
+    },
+    "spend": {
+      "input_tokens": 10550,
+      "output_tokens": 6315,
+      "cost_usd": 0.0552908,
+      "calls": 10
+    },
+    "cost_evaluable": true
+  },
+  "authorised_self_score": {
+    "judge_model": "x-ai/grok-4.6",
+    "authorised_by": "MG 28-08-2026",
+    "is_independent": false,
+    "why_not": "Grok 4.6 generated the Wave-1 targets; pwg_tm_quality.FORBIDDEN_INDEPENDENT_JUDGES rejects it",
+    "independence_errors_expected_nonempty": 10,
+    "severity_consistency_violations": [],
+    "scores": {
+      "n": 10,
+      "serious": 1,
+      "fidelity_pass": 9,
+      "equivalence_correct": 8,
+      "defect_classes": {
+        "none": 8,
+        "german_residue": 1,
+        "wrong_lexical_meaning": 1
+      }
+    },
+    "spend": {
+      "input_tokens": 10550,
+      "output_tokens": 18133,
+      "cost_usd": 0.126634,
+      "calls": 10
+    }
+  },
+  "agreement": {
+    "n": 10,
+    "defect_class_agreement": 0.9,
+    "severity_agreement": 0.9,
+    "disagreements": [
+      {
+        "record_id": "pwg.frag.v1:sense:c3c9cd88694d804ebd7b5222c0afb78e3d3623ad5ae8c2fbf520db43f88b70a8",
+        "entry_id": "pwg.entry:vid",
+        "x-ai/grok-4.5": "none",
+        "x-ai/grok-4.6": "wrong_lexical_meaning"
+      }
+    ]
+  },
+  "total_cost_usd": 0.181925
+}
