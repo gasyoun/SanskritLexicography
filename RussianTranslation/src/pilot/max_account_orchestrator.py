@@ -1213,7 +1213,10 @@ def resolve_health_probe_log(explicit_root=None):
         return os.path.join(str(explicit_root), 'health_probe_log.jsonl')
     env = os.environ.get('PWG_EVIDENCE_DIR')
     if env and env.strip():
-        return os.path.join(os.path.abspath(os.path.expanduser(env.strip())),
+        # realpath, not abspath: on macOS a $PWG_EVIDENCE_DIR under /var/folders (a
+        # symlink to /private/var/folders) must normalize to the same bytes the
+        # probe's own resolve_evidence_root produces, or the two resolvers disagree.
+        return os.path.join(os.path.realpath(os.path.expanduser(env.strip())),
                             'health_probe_log.jsonl')
     return os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         'output', 'health_probe_log.jsonl')

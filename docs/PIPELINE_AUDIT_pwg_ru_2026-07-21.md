@@ -212,3 +212,13 @@ claim lock, and add cohort dispatch.
 4. Add the atomic promotion receipt and startup reconciliation.
 5. Add the campaign-wide call/cost reservation ledger.
 6. Only then implement Fable 5's cohort scheduler and measure 1/2/3-profile scaling.
+
+**Status 29-08-2026 — sequence complete (H1437 closed).** Steps 1–2: the Codex hardening pass +
+H1386 (v1.54.0). Steps 3–5: reservation ledger + run binding in the cohort/orchestrator path,
+promotion receipt + startup reconciliation via H1554 Track B (#694) and the paid-route hardening
+block in `RussianTranslation/AGENTS.md` (25-07). Step 6: `cohort_engine.py` (H1618 Track 2, #704)
++ `--cohort-width` on `bounded_staged_run.py` (PR #843, Grok PASS via H1654), hardened by H1940
+Phase 2 (#899/#900/#911). 29-08 closeout battery on master tip: all nine offline gates green,
+bench deterministic — see
+[`pwg_ru/h1437/H1437_PHASE4_CLOSEOUT_2026-08-29.md`](../RussianTranslation/pwg_ru/h1437/H1437_PHASE4_CLOSEOUT_2026-08-29.md).
+Live cohort width>1 stays refused pending live serial acceptance + Codex sign-off.
