@@ -81,6 +81,12 @@ rejoin the requeue queue honestly and this lane promotes onto the 11 462 base. T
 this lane are unaffected either way — they were never promoted and are absent from both
 generations. Do NOT merge onto an unverified base and assume the lane doc's numbers.
 
+> **Reconciled 29-08 (H3690 Step 0, free, zero paid calls):** the Mac estate holds only the
+> 11 462 base — full verdict in
+> [`pwg-ru-data/docs/H3690_STORE_LINEAGE_RECONCILE_29-08-2026.md`](https://github.com/gasyoun/pwg-ru-data/blob/main/docs/H3690_STORE_LINEAGE_RECONCILE_29-08-2026.md);
+> the (a)/(b) decision is a Windows-box check at fire time. The 14 inputs are now really in
+> `pwg-ru-data/raws/` (offline regen, `_s_ulin` byte-identical to the staging artifact).
+
 ## 4. Where the fire can physically happen
 
 Verified absent on the 29-08 Mac estate: `max_orchestrator.sqlite` (the validated-profile
