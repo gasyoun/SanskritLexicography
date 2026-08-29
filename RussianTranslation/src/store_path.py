@@ -145,6 +145,38 @@ def canonical_sidecar(local_default, sidecar_rel=SIDECAR_REL):
     return local_default
 
 
+# the `pwg-ru-data` mirror repo — a SIBLING of the SanskritLexicography checkout
+DATA_REPO_NAME = 'pwg-ru-data'
+
+
+def canonical_data_repo(start_dir, repo_name=DATA_REPO_NAME):
+    """Resolve the sibling `pwg-ru-data` repo from the MAIN checkout, not the executing one.
+
+    H3658: the same defect class as `canonical_store`. `refresh_tm_mirror.py` and
+    `audit_store_gates.py` both derived the TM mirror (and the refresh ledger) as
+    `<their own src/>/../../../pwg-ru-data`. From a linked worktree that either resolves to a
+    path that does not exist (a worktree parked outside `GitHub/`) or — when the worktree
+    happens to sit beside the main checkout — to the real mirror while the *store* half was
+    still worktree-local, so a STALE local store could be mirrored and audited green while
+    `promote_final_cards.py` wrote the canonical one. Mirror and ledger have exactly ONE home
+    per checkout tree.
+
+    `$PWG_RU_DATA_REPO` pins it explicitly (tests / a deliberately-isolated diagnostic), the
+    twin of `$PWG_RU_STORE`.
+    """
+    env = os.environ.get('PWG_RU_DATA_REPO')
+    if env:
+        return env
+    root = main_worktree_root(start_dir)
+    if not root:
+        try:
+            root = _git(os.path.abspath(start_dir), 'rev-parse', '--show-toplevel')
+        except (OSError, RuntimeError, subprocess.SubprocessError):
+            # non-git tree: the pre-H3658 relative walk, unchanged
+            return os.path.normpath(os.path.join(start_dir, '..', '..', '..', repo_name))
+    return os.path.normpath(os.path.join(root, '..', repo_name))
+
+
 def selftest():
     import tempfile
     # 1. explicit env override always wins
@@ -242,6 +274,23 @@ def selftest():
     finally:
         globals()['main_worktree_root'] = _orig
         del os.environ['PWG_RU_TM_DIR']
+    # 6. canonical_data_repo (H3658): env override -> MAIN checkout's sibling -> legacy walk.
+    os.environ['PWG_RU_DATA_REPO'] = os.path.join('scratch', 'data')
+    assert canonical_data_repo(os.path.join('WT', 'src')) == os.path.join('scratch', 'data')
+    del os.environ['PWG_RU_DATA_REPO']
+    try:
+        globals()['main_worktree_root'] = lambda start: os.path.join('MAIN', 'checkout')
+        got = canonical_data_repo(os.path.join('WT', 'linked', 'RussianTranslation', 'src'))
+        want = os.path.normpath(os.path.join('MAIN', DATA_REPO_NAME))
+        assert got == want, got
+    finally:
+        globals()['main_worktree_root'] = _orig
+    with tempfile.TemporaryDirectory() as d:
+        # a non-git tree keeps the pre-H3658 three-level relative walk, byte for byte
+        nested = os.path.join(d, 'RussianTranslation', 'src')
+        os.makedirs(nested)
+        want = os.path.normpath(os.path.join(d, '..', DATA_REPO_NAME))
+        assert canonical_data_repo(nested) == want, canonical_data_repo(nested)
     print('store_path selftest: PASS (env-override wins, worktree->main, non-git falls back '
           'to local; sidecars H1339-B04 likewise)')
     return True
