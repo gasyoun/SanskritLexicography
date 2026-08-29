@@ -864,6 +864,9 @@ def normalize_batch(manifest, keys, structured):
             if card:
                 card['key1'] = key
         error = None
+        # H3665: `german_anchor_repairs: 0` was unfalsifiable -- it could mean "no card dropped
+        # a german span" or "the repair was never reached". This trace separates the two.
+        anchor = None
         if card is None:
             error = 'missing-or-mismatched-key'
         else:
@@ -894,9 +897,13 @@ def normalize_batch(manifest, keys, structured):
                         and count_card(candidate, '{#') == inp['sk']):
                     card, unmapped = candidate, cand_unmapped
                     card['german_anchor'] = german_anchor.stamp(info)
+                    anchor = {'invoked': True, 'outcome': 'repaired'}
                 else:
                     error = 'fidelity-reject: german-anchor %s' % (
                         'verify-failed' if ok else info.get('reason', 'refused'))
+                    anchor = {'invoked': True,
+                              'outcome': ('verify-failed' if ok
+                                          else 'refused:%s' % info.get('reason', 'refused'))}
                     card = None
             if card is not None:
                 if (count_card_field(card, field, '<ls') != inp['ls']
@@ -909,10 +916,26 @@ def normalize_batch(manifest, keys, structured):
                     # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
                     error = 'unmapped-token-reject'
                     card = None
+        # H3665: the two states `german_anchor_repairs` alone cannot tell apart.
+        #   not-reached          -- the card was nulled by a LATER guard (the target-field count
+        #                           at line ~902, or the C-42 unmapped check) while the german-only
+        #                           count above passed, so the repair branch was never entered.
+        #                           This is `hasita~~h0_zz_pw` on no_pwg_w09 (H3659): german 2/2,
+        #                           russian short, repairs 0 -- and 0 meant "never invoked", not
+        #                           "nothing to repair".
+        #   repaired-then-rejected -- the repair DID fire and fixed the german echo, but the card
+        #                           still died downstream; the stamp goes with `card = None`, so
+        #                           the stamp-derived `german_anchor_repairs` silently loses it.
+        if anchor is None and error in ('translation-fidelity-reject', 'unmapped-token-reject'):
+            anchor = {'invoked': False, 'outcome': 'not-reached', 'nulled_by': error}
+        elif anchor is not None and anchor['outcome'] == 'repaired' and card is None:
+            anchor = {'invoked': True, 'outcome': 'repaired-then-rejected', 'nulled_by': error}
         row = {'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                'escalated': False}
         if error:
             row['error'] = error
+        if anchor:
+            row['german_anchor_trace'] = anchor
         rows.append(row)
     return rows
 
@@ -1088,6 +1111,11 @@ class HeadlessEngine:
         # H3627: salvage state -- rows completed so far and how many were healed.
         # Read by execute() when a HardFailure aborts the window mid-run.
         self.partial_rows = []
+        # H3665: `normalize_batch`'s per-key german_anchor trace, kept on the ENGINE because
+        # `resolve_group` consumes its rows for `card`/`error` only and drops everything else.
+        # Re-attached to the output rows in `_finish_payload`, so the summary can tell
+        # "nothing to repair" from "the repair was never reached".
+        self.german_anchor_traces = {}
         self.partial_healed = 0
         self.failures = {}
         self.translate_calls = 0
@@ -1345,6 +1373,8 @@ class HeadlessEngine:
                     break
                 continue
             for row in normalize_batch(self.m, pending, structured):
+                if row.get('german_anchor_trace'):
+                    self.german_anchor_traces[row['key']] = row['german_anchor_trace']
                 if row['card']:
                     resolved[row['key']] = row['card']
                 else:
@@ -1766,6 +1796,10 @@ def _finish_payload(manifest, engine, results, healed, presplit):
     for key, card in manifest.get('degenerate_resolved', {}).items():
         results.append({'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                         'escalated': False, 'degenerate_passthrough': True})
+    for row in results:
+        trace = getattr(engine, 'german_anchor_traces', {}).get(row['key'])
+        if trace:
+            row['german_anchor_trace'] = trace
     seen = {row['key'] for row in results}
     for key in manifest['meta']['selected_keys']:
         if key not in seen:
@@ -1788,6 +1822,20 @@ def _finish_payload(manifest, engine, results, healed, presplit):
                                          'reinjected': row['card']['german_anchor']['reinjected']}
                                         for row in results
                                         if (row.get('card') or {}).get('german_anchor')],
+               # H3665: `german_anchor_repairs: 0` is not evidence of a healthy lane on its own --
+               # it is the SAME number whether nothing needed repairing or the repair was never
+               # reached. These two make it falsifiable and are asserted together by
+               # `headless_worker_selftest.test_h3665_german_anchor_counter_is_falsifiable`:
+               #   invocations 0 + not_reached [] -> genuinely nothing to repair
+               #   invocations 0 + not_reached [k] -> the repair never ran on a card that died a
+               #                                      fidelity death (the H3659 `hasita` case)
+               'german_anchor_invocations': sum(
+                   bool((row.get('german_anchor_trace') or {}).get('invoked')) for row in results),
+               'german_anchor_not_reached': [
+                   row['key'] for row in results
+                   if (row.get('german_anchor_trace') or {}).get('outcome') == 'not-reached'],
+               'german_anchor_outcomes': {row['key']: row['german_anchor_trace']['outcome']
+                                          for row in results if row.get('german_anchor_trace')},
                'translate_agents_spent': engine.translate_calls,
                'heal_agents_spent': engine.heal_calls,
                'budget_stops': engine.budget_stops,

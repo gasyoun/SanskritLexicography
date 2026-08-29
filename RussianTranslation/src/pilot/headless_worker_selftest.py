@@ -1275,6 +1275,67 @@ def test_normalize_batch_german_anchor_repair():
           'non-drop refused; translation-side drop still rejected')
 
 
+def test_h3665_german_anchor_counter_is_falsifiable():
+    """H3665: `german_anchor_repairs: 0` must never again be readable as "the lane is healthy".
+
+    H3144 read a window's `0` as *no card dropped a german span*. On no_pwg_w09 (H3659) a card
+    DID die a fidelity death -- `hasita~~h0_zz_pw` -> `translation-fidelity-reject` -- with
+    `german_anchor_repairs: 0` on the same summary, because the repair is gated on the
+    GERMAN-only count (`headless_worker.py` ~L879) and a target-field-only drop is nulled by a
+    LATER guard (~L906) that the repair branch never sees. Zero was unfalsifiable: it is the
+    same number for "nothing to repair" and "never invoked".
+
+    Three states, three distinct summaries -- this is the assertion that fails if a rejected
+    card ever leaves both counters silently at zero again:
+
+      1. clean card             -> repairs 0, invocations 0, not_reached []      (honest zero)
+      2. german-side drop       -> repairs 1, invocations 1, not_reached []      (repair ran)
+      3. translation-side drop  -> repairs 0, invocations 0, not_reached [key]   (NEVER reached)
+
+    The `hasita` shape is case 3, replayed offline in
+    `pwg_ru/h3665/replay_hasita_german_anchor.py`: german echo faithful, so `german_anchor.plan`
+    returns `nothing-missing` even when invoked -- the wiring gap and a coverage gap, not one bug.
+    """
+    def runner_for(german, russian):
+        def runner(argv, **_kwargs):
+            card = {'key1': 'agni', 'records': [{'grammar': '{T1} m.', 'senses': [
+                {'tag': '1', 'german': german, 'russian': russian}]}]}
+            return proc(stdout=json.dumps({'structured_output': {'cards': [card]}}))
+        return runner
+
+    clean, _s, _c = execute(manifest(), runner_for('{T1} Feuer', '{T1} огонь'))
+    assert clean['summary']['german_anchor_repairs'] == 0, clean['summary']
+    assert clean['summary']['german_anchor_invocations'] == 0, clean['summary']
+    assert clean['summary']['german_anchor_not_reached'] == [], clean['summary']
+
+    repaired, _s, _c = execute(manifest(), runner_for('Feuer', '{T1} огонь'))
+    assert repaired['summary']['german_anchor_repairs'] == 1, repaired['summary']
+    assert repaired['summary']['german_anchor_invocations'] == 1, repaired['summary']
+    assert repaired['summary']['german_anchor_not_reached'] == [], repaired['summary']
+    assert repaired['summary']['german_anchor_outcomes'] == {'agni': 'repaired'}, repaired['summary']
+
+    # The H3659 `hasita` shape. Without the H3665 counters this summary is byte-identical to
+    # `clean` on every german_anchor field -- which is exactly how the defect stayed invisible
+    # across H858 -> H3144 -> H3157 -> H3659.
+    bypassed, _s, _c = execute(manifest(), runner_for('{T1} Feuer', 'огонь'))
+    assert bypassed['summary']['failures'] == {'agni': 'translation-fidelity-reject'}, bypassed['summary']
+    assert bypassed['summary']['german_anchor_repairs'] == 0, bypassed['summary']
+    assert bypassed['summary']['german_anchor_invocations'] == 0, bypassed['summary']
+    assert bypassed['summary']['german_anchor_not_reached'] == ['agni'], bypassed['summary']
+    assert bypassed['summary']['german_anchor_outcomes'] == {'agni': 'not-reached'}, bypassed['summary']
+
+    # A silent zero is now impossible: a nulled card is EITHER accounted to an invocation or
+    # named in not_reached. Assert the invariant itself, not just these three fixtures.
+    for payload in (clean, repaired, bypassed):
+        summary = payload['summary']
+        for key, reason in summary['failures'].items():
+            if reason in ('translation-fidelity-reject', 'unmapped-token-reject'):
+                assert (key in summary['german_anchor_not_reached']
+                        or summary['german_anchor_outcomes'].get(key)), (key, summary)
+    print('  H3665 german_anchor counter: repairs/invocations/not_reached separate '
+          '"nothing to repair" from "never invoked"; the hasita bypass is now named')
+
+
 def test_headless_heal_stitch_translation_fidelity_reject():
     """H1152 parity (C1): the headless selfheal stitch (twin of the JS selfHeal check) must reject
     a COMPLETE stitched card whose german echo is faithful but whose TARGET field dropped a span.
@@ -2018,6 +2079,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_null_owner_fragment_tm_refused_before_any_call()
     test_normalize_batch_translation_fidelity_reject()
     test_normalize_batch_german_anchor_repair()
+    test_h3665_german_anchor_counter_is_falsifiable()
     test_headless_heal_stitch_translation_fidelity_reject()
     test_h2a_heal_budget_stop_is_not_a_content_defect()
     test_h2a_fragment_key_match_is_exact_not_prefix()
