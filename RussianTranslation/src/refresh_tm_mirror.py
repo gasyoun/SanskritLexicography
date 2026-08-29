@@ -28,7 +28,7 @@ session has read and adjudicated, and G2 keeps blocking on everything else. Pref
 `--force`, which waives the guard wholesale and leaves nothing to audit.
 
   python src/refresh_tm_mirror.py [--src PATH] [--mirror PATH] [--apply] [--force]
-                                  [--ack-superseded FILE] [--max-drop N] [--handoff H####]
+                                  [--ack-superseded FILE] [--max-drop N] --handoff H####
 
 Dry-run by default: prints the classification and the guard verdicts, writes nothing.
 `--selftest` runs the guards over synthetic fixtures.
@@ -47,8 +47,14 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'pwg-ru-data'))
-DEFAULT_SRC = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+from store_path import canonical_data_repo, canonical_store  # noqa: E402
+# H3658: mirror + ledger resolve off the MAIN checkout, never the executing worktree.
+DATA = canonical_data_repo(HERE)
+# H3658: the ONE canonical store (H255 loss mode) - not this checkout's possibly-stale copy.
+DEFAULT_SRC = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 DEFAULT_MIRROR = os.path.join(DATA, 'tm', 'pwg_ru_translated.jsonl')
 DEFAULT_LEDGER = os.path.join(DATA, 'tm', 'mirror_refresh_ledger.jsonl')
 
@@ -231,7 +237,10 @@ def main():
                     help='jsonl of mirror-only rows a session has read and adjudicated as '
                          'superseded by a newer store row; matched on the same row id')
     ap.add_argument('--ledger', default=DEFAULT_LEDGER)
-    ap.add_argument('--handoff', default='H3627')
+    ap.add_argument('--handoff', default=None,
+                    help='handoff ID that owns this refresh; stamped into the mirror backup '
+                         'filename and the ledger row. H3658: this defaulted to H3627, so '
+                         'every later refresh silently mislabelled its own provenance.')
     ap.add_argument('--max-drop', type=int, default=500)
     ap.add_argument('--apply', action='store_true', help='actually copy src over the mirror')
     ap.add_argument('--force', action='store_true', help='copy even if a guard blocks')
@@ -240,6 +249,12 @@ def main():
 
     if args.selftest:
         return selftest()
+
+    if not args.handoff:
+        # H3658: was `default='H3627'`, so every refresh after that handoff stamped the
+        # wrong provenance into the mirror backup filename and the ledger row. Required for
+        # a real run; --selftest above needs no provenance and returns before this.
+        ap.error('--handoff is required (the H### that owns this refresh)')
 
     src_rows = load(args.src)
     mirror_rows = load(args.mirror)

@@ -178,6 +178,10 @@ jobs:
           python src/mfs_baseline.py --selftest
           python src/government_census.py selftest
           python src/government_sidecar.py --selftest
+          # H3658: the degenerate-xref RU renderer + its drift guard against pwg_ab_ru.RU_MAP.
+          python src/pilot/xref_vocab.py
+          python src/store_path.py --selftest
+          python src/refresh_tm_mirror.py --selftest
           python src/pilot/build_article_site.py --selftest
           python src/pilot/build_edition_diff_site.py --selftest
           python research/build_observatory.py --check
