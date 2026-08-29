@@ -9,6 +9,8 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
+
+## [1.144.120] - 2026-08-29
 - **FINDINGS §606 — the paid lane's `--permission-mode plan` is a sandbox misuse, and it is what breaks structured output; `--tools ""` is the real primitive (Opus 5 (`claude-opus-5`), 29-08-2026).** Plan mode is spawned for a permission posture, not planning, and has now cost two paid failures six weeks apart: §498's task refusal (repaired in the prompt, plan mode kept) and §604's emit failure (`b1` 5 exhausted structured-output retries $0.2372, `b1.retry1` refusal $0.3051). The prompt is exonerated — it never names `StructuredOutput` and its one shape instruction matches the schema's `required:['cards']` — so no prompt edit could ever have closed this half. CLI 2.1.251 documents `--tools ""` to disable all built-in tools: stronger containment, no planning semantics, one line at `headless_worker.py`. Owed before reliance: one canary proving the synthesized `StructuredOutput` survives `--tools ""`.
 
 ## [1.144.119] - 2026-08-29
