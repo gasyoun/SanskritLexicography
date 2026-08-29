@@ -97,10 +97,38 @@ which is precisely what PR #789 refused to do when it left ~46–54 count-mismat
 review rather than risk a positional swap corrupting content. That refusal is a standing ruling,
 so `_apta` was not touched. It needs one of:
 
-1. a re-translation of the affected senses (a model call — blocked with Lane A on host RAM), or
+1. a re-translation of the affected senses (a model call — blocked with Lane A, see §5), or
 2. human review of the seven senses listed above.
 
-## 5. What was NOT done, and why
+## 5. Lane A is blocked twice over, and the second blocker is the harder one
+
+Lane A (the 16 never-attempted keys) did not run. Two independent blockers, found in this order:
+
+1. **Host RAM.** The handoff's hard precondition is ≥ ~4 GB free physical memory. Measured
+   **2.38 GB, then 1.61 GB** of 15.85 GB with 6 live `claude.exe` (~2.9 GB resident) — the same
+   condition that produced H3654's `0xC0000142` (`STATUS_DLL_INIT_FAILED`) at 53 ms. Clearing this
+   is mechanical: close harness windows and re-measure.
+2. **A cost-bounded window on this lane is currently *unrunnable*, whatever the RAM does.** While
+   this session worked, [H3659](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3659-Opus_SanskritLexicography_h3157-residual-c1-paid-no-pwg-window_28.08.26.md)
+   fired the c1 gate for real and got a clean **GO** (health 23 252 ms, route 7 296 ms, canary
+   `LIVE_GO`) — and the window still stopped `STOP_COST_UNEVALUABLE` with **zero generation
+   calls**. `bounded_supervisor` tests `budget_cap is not None and not _durable_cost_evaluable` at
+   the top of the drain loop, before pulling any work; `--cost-ceiling` sets `budget_cap`, and
+   Max-route calls carry no usage telemetry, so the reservation ledger is never priced and the
+   first iteration ends the run. FINDINGS §602.
+
+That is decisive for this handoff, because H3658 explicitly instructs Lane A to **"check the cost
+gate before spending"** — i.e. to run bounded. A bounded run cannot start. The disclosed escape is
+`--allow-unbounded` (calls and windows still bind; only dollars go unmeasurable), which H3659
+deliberately did not take because the authorization on record said *bounded*, and swapping one for
+the other on an agent's judgment is the H2851 guard-tunnelling defect. The same reasoning binds
+here, so Lane A stops rather than escaping the guard.
+
+**And the ration moved.** When this session checked, nothing had been logged for the 29-08 UTC day.
+H3659 has since spent one — c1 is now at **1 of 2** for the day, so a further attempt should not be
+fired casually, and the ≥ 6 h spacing runs from H3659's probe, not from the 28-08 one.
+
+## 6. What was NOT done, and why
 
 * **Nothing was promoted into the live store.** `_atura`'s repair is proven in-memory only. The
   promotion should happen once, together with Lane A's 16 keys, rather than writing the store
@@ -112,7 +140,7 @@ so `_apta` was not touched. It needs one of:
 * **The English lane is unchanged.** `render_xref_ru` fires only for `field == 'russian'`; an EN
   twin would need its own vocabulary ruling.
 
-## 6. Caveat on the flag numbers
+## 7. Caveat on the flag numbers
 
 The before/after flag sets above come from `prompt_rule_audit.semantic_risks` run directly on the
 card, not from the full `audit_window` pass that produced
