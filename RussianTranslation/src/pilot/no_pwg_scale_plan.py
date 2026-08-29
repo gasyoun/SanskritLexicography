@@ -55,6 +55,60 @@ def sha256_path(path):
     return h.hexdigest()
 
 
+INPUT_SIDECAR_SUFFIXES = ('.raw.txt', '.portrait.json')
+
+
+def park_input_sidecars(subcards, artifact_dir):
+    """Copy every selected key's INPUT sidecars next to the window's manifest (§612).
+
+    The durable evidence root preserved everything a paid window PRODUCED -- output,
+    status, calls, manifest, preflight, receipt, failed envelopes -- and nothing it
+    CONSUMED. The `.raw.txt` / `.portrait.json` pair lives in the checkout-relative,
+    gitignored `src/pilot/input/`, so it dies with the planning worktree (§603's class).
+    `audit_window.py` hashes those files, and refuses `collect/gates/glue` when they are
+    absent -- which is how `no_pwg_w09`'s two audit-clean cards became permanently
+    unpromotable after 8 priced calls had already been spent on them.
+
+    Parking them beside `execution_manifest.<root>.json` puts them on the same durable
+    path every other window artifact already travels, at a cost of two small files per
+    key. Returns `{key: {'raw': sha, 'portrait': sha}}` for the caller to record.
+
+    Fail-CLOSED: a missing sidecar is raised HERE, at plan time, before a single call is
+    paid for. Discovering it after the window has run is exactly the loss this prevents,
+    and by then no unpaid work can recover it.
+    """
+    gen_dir = os.path.join(SRC, 'pilot', 'input')
+    dest = os.path.join(artifact_dir, 'input')
+    missing = []
+    for key in subcards:
+        for suffix in INPUT_SIDECAR_SUFFIXES:
+            if not os.path.isfile(os.path.join(gen_dir, key + suffix)):
+                missing.append(key + suffix)
+    if missing:
+        raise SystemExit(
+            'FAIL: input sidecars missing before any spend (FINDINGS 612) -- the window\n'
+            '  would run, then be unpromotable because audit_window.py cannot re-derive\n'
+            '  its inputs. Regenerate via _pilot_gen_merged.py and re-plan.\n'
+            '  source dir : %s\n'
+            '  missing    : %s' % (gen_dir, ', '.join(missing)))
+    os.makedirs(dest, exist_ok=True)
+    parked = {}
+    for key in subcards:
+        entry = {}
+        for suffix, label in zip(INPUT_SIDECAR_SUFFIXES, ('raw', 'portrait')):
+            src_path = os.path.join(gen_dir, key + suffix)
+            dst_path = os.path.join(dest, key + suffix)
+            with open(src_path, 'rb') as fh:
+                blob = fh.read()
+            tmp = dst_path + '.tmp'
+            with open(tmp, 'wb') as fh:
+                fh.write(blob)
+            os.replace(tmp, dst_path)
+            entry[label] = hashlib.sha256(blob).hexdigest()
+        parked[key] = entry
+    return parked
+
+
 def read_store_keys(path=STORE):
     keys = set()
     if not os.path.exists(path):
@@ -329,12 +383,18 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
             execution = json.load(f)
         if execution.get('meta', {}).get('selected_keys') != subcards:
             raise SystemExit('FAIL: %s manifest key drift' % root)
+        # FINDINGS 612: park the CONSUMED half of the window beside the produced half,
+        # before any call is paid for. Without this the sidecars die with the planning
+        # worktree and audit_window.py can never re-validate the cards.
+        parked_sidecars = park_input_sidecars(
+            subcards, os.path.dirname(execution_manifest))
         headless_meta = {
             'execution_manifest': os.path.relpath(execution_manifest, RT).replace('\\', '/'),
             'manifest_sha256': sha256_path(execution_manifest),
             'harness_sha256': sha256_path(harness),
             'presplit_keys': execution.get('presplit_keys') or [],
             'projected_calls': preflight.get('agent_expected_after_tm'),
+            'input_sidecars': parked_sidecars,
         }
         if args.headless:
             coordinator.register_prepared_lease(
