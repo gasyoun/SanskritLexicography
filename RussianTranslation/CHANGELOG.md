@@ -9,6 +9,8 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
+
+## [1.144.123] - 2026-08-29
 - **FINDINGS §607 amended — round 3 refutes the scale hypothesis too; the `gl_ana` failure does not reproduce at all (Opus 5 (`claude-opus-5`), 29-08-2026).** Arm E replayed the pipeline's own `build_prompt_joined` output for `gl_ana` — byte-identical 15 836 B production prompt, real schema, `--permission-mode plan`, the exact failing combination — and got a valid `structured_output` in 3 turns. Two corrections land with it: `batches` is one key per batch, so `b1` was never a 5-card call, and the 14.5 KB figure was the whole prompt dict rather than what was sent. Plan mode, schema shape and scale are now all refuted; the verdict is transient-until-shown-otherwise. Three named mechanisms, $1.538 of canary, all three wrong — a single unreproduced failure is evidence of a failure, not of a mechanism.
 
 ## [1.144.122] - 2026-08-29
