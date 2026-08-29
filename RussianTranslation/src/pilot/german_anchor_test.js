@@ -41,6 +41,8 @@ let TNMASK_MISMATCHES = 0
 const TNMASK_DETAIL = []
 let GERMAN_ANCHOR_REPAIRS = 0
 const GERMAN_ANCHOR_DETAIL = []
+let GERMAN_ANCHOR_INVOCATIONS = 0        // H3665: was the repair even reached?
+const GERMAN_ANCHOR_NOT_REACHED = []     // H3665: cards nulled by a LATER guard
 const GA_TOKEN_RE = eval(one('GA_TOKEN_RE'))
 const gaTokens = eval('(' + one('gaTokens') + ')')
 const gaSenses = eval('(' + one('gaSenses') + ')')
@@ -127,7 +129,7 @@ check('the stamp never carries braces (it must not read as a {Tn} residue downst
 // ==== accept()-level: the real null class, end to end through the real restore ============
 // `avyagra` shape: source has one {#..#} span (the headword) and one <ls>; the model's german
 // echo drops the {#..#}. Pre-H858 this nulled the card ({# 0/1) and a requeue reproduced it.
-const reset = () => { GERMAN_ANCHOR_REPAIRS = 0; GERMAN_ANCHOR_DETAIL.length = 0; for (const k in FAIL) delete FAIL[k] }
+const reset = () => { GERMAN_ANCHOR_REPAIRS = 0; GERMAN_ANCHOR_DETAIL.length = 0; GERMAN_ANCHOR_INVOCATIONS = 0; GERMAN_ANCHOR_NOT_REACHED.length = 0; for (const k in FAIL) delete FAIL[k] }
 const masked = (german, translation) => ({
   key1: 'av', iast: 'av', notes: '',
   records: [{ h: 'av', grammar: '', senses: [{ tag: '1', german: german, [TARGET_FIELD]: translation }] }],
@@ -161,6 +163,28 @@ reset()
 r = accept(masked('unverwirrt {T2}', 'невозмутимый {T2}'), 'av')
 check('accept(): a repaired german does NOT launder a translation-side drop',
   r === null && /translation-fidelity-reject/.test(FAIL.av || ''), JSON.stringify(FAIL))
+
+// CONTROL 2b (H3665): the shape that made `german_anchor_repairs: 0` unfalsifiable. The german
+// echo is FAITHFUL and only the translation dropped the span, so accept() never enters the
+// repair branch at all -- repairs 0 AND invocations 0, exactly like a clean window. The
+// not_reached list is the only thing that tells the two apart. Python twin:
+// headless_worker_selftest.test_h3665_german_anchor_counter_is_falsifiable.
+reset()
+r = accept(masked('{T1} unverwirrt {T2}', 'невозмутимый {T2}'), 'av')
+check('accept(): a translation-only drop is NAMED as never having reached the repair',
+  r === null && /translation-fidelity-reject/.test(FAIL.av || '')
+    && GERMAN_ANCHOR_REPAIRS === 0 && GERMAN_ANCHOR_INVOCATIONS === 0
+    && JSON.stringify(GERMAN_ANCHOR_NOT_REACHED) === JSON.stringify(['av']),
+  JSON.stringify({ fail: FAIL.av, repairs: GERMAN_ANCHOR_REPAIRS,
+                   invocations: GERMAN_ANCHOR_INVOCATIONS, notReached: GERMAN_ANCHOR_NOT_REACHED }))
+
+// CONTROL 2c (H3665): a german-side drop that IS repaired counts as an invocation and is
+// absent from not_reached -- so invocations can never be read as "something went wrong".
+reset()
+r = accept(masked('unverwirrt {T2}', '{T1} невозмутимый {T2}'), 'av')
+check('accept(): a repaired card counts one invocation and nothing not-reached',
+  r !== null && GERMAN_ANCHOR_INVOCATIONS === 1 && GERMAN_ANCHOR_NOT_REACHED.length === 0,
+  JSON.stringify({ invocations: GERMAN_ANCHOR_INVOCATIONS, notReached: GERMAN_ANCHOR_NOT_REACHED }))
 
 // CONTROL 3: a card whose german is not a pure drop still rejects, with the reason recorded.
 reset()
