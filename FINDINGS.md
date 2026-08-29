@@ -9085,3 +9085,25 @@ Both are why the H3663 promotion narrowed its **input** — whole clean chunks c
 > **Source:** `python src/pilot/audit_window.py src/pilot/output/wf_output.no_pwg_w09.json --root no_pwg_w09 --write-requeue --window-tag no_pwg_w09` · directory searches of the checkout, the H3659 worktree and the `c1/h3659` evidence root
 > · [H3659](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3659-Opus_SanskritLexicography_h3157-residual-c1-paid-no-pwg-window_28.08.26.md)
 > (Opus 5 `claude-opus-5`) · third recurrence of §603’s checkout-relative class, first one that is unrecoverable; complements §611 (H3663), which rules on what the audit’s own verdict line does and does not authorise. — SanskritLexicography · 2026-08-29
+
+### §614 — `markup_wrapper_dropped` is two different defects, and only the count-match probe tells them apart (29-08-2026, H3663 residual — a predicted repair that recovered 1 card of 8, not most of them)
+
+H3658's Lane B cleared `_atura` deterministically: its `{%…%}` gloss wrappers had been rendered as `«…»`, and `fix_wrapper_defects.fix_d3` rewrapped 9 spans under PR #789's exact DE-gloss/RU-guillemet count-match rule. On that evidence H3663's 8 defect cards — dominated by the same `markup_wrapper_dropped` flag — were predicted to be largely recoverable the same way, and that prediction was written into the H3663 packet, changelog and close summary before it was tested.
+
+**It was wrong, and the measurement says why.** Across the 8 cards' **92 senses** there were **zero** `«…»` spans. `fix_d3` correctly did nothing; the only repairs that fired were 6 `R1_yo` ё removals via `ru_style_sweep.apply_no_yo`.
+
+| card | DE `{%…%}` | RU `{%…%}` | RU `«…»` | dropped |
+|---|---:|---:|---:|---:|
+| `jar_ayu` | 13 | **0** | 0 | 13 |
+| `_sr_avaka` | 13 | **0** | 0 | 13 |
+| `_s_ulin` | 6 | **0** | 0 | 6 |
+| `v_iqu` | 4 | 3 | 0 | 1 |
+| `r_ama_wa` / `ut_ta` / `y_atu` / `v_as_a` | 3 / 6 / 11 / 1 | 3 / 6 / 11 / 1 | 0 | **0** |
+
+So the one flag name covers at least three situations:
+
+1. **Guillemet drift** — the wrapper survived as `«…»`. Deterministically repairable, and the count-match rule proves the mapping is 1:1. This is the `_atura` case.
+2. **Wholesale omission** — the RU carries the translated gloss text with **no wrapper at all** (`jar_ayu`, `_sr_avaka`, `_s_ulin`: every wrapper missing). Nothing to rewrap; restoring them means guessing gloss boundaries inside translated prose, which is exactly what PR #789 refused when it left its ~46–54 count-mismatch rows for manual review.
+3. **Not a wrapper problem at all** — four of the eight have `dropped = 0`, i.e. their wrappers are intact and their defect classification comes from other risks entirely (`suspicious_lexicographic_with_text_signal` and friends). The flag in the top-risks list was never the reason they were held back.
+
+**Net result of the repair pass: 1 card of 8 recovered** (`v_iqu`, flipped clean by the ё fix alone, store 11 515 → 11 519). The cheap diagnostic that would have predicted this in seconds is the table above — count `{%…%}` in DE vs RU and `«…»` in RU **before** promising a repair class. `fix_d3` returning `eligible=False` is not a failure to investigate; it is the tool correctly reporting that this is not its defect.

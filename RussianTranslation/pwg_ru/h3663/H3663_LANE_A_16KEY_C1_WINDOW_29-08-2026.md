@@ -168,4 +168,42 @@ so an earlier reading of "1 of 2 attempts used" was wrong, and this probe is the
    rounds and still landed in the null bucket.
 3. Promoted rows are `ai_translated`, so they stay out of the citable edition until G5 human review.
 
+## 10. The repair pass — 1 card of 8, and why the prediction was wrong (29-08-2026)
+
+§9 above predicted that the 8 defects, being dominated by `markup_wrapper_dropped` /
+`gloss_wrapper_became_guillemet`, would largely fall to the same deterministic repairs that
+cleared `_atura` in H3658 Lane B. **That prediction was wrong**, and the measurement is more
+useful than the prediction was.
+
+Applying `fix_d1` + `fix_d3` ([`fix_wrapper_defects.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/fix_wrapper_defects.py))
+and `apply_no_yo` ([`ru_style_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_style_sweep.py))
+to all 8 cards fired **6 ё removals and zero wrapper repairs**. Across their **92 senses there
+are zero `«…»` spans** — so `fix_d3` had nothing to rewrap and correctly reported
+`eligible=False` everywhere.
+
+| card | DE `{%…%}` | RU `{%…%}` | RU `«…»` | dropped |
+|---|---:|---:|---:|---:|
+| `jar_ayu` | 13 | **0** | 0 | 13 |
+| `_sr_avaka` | 13 | **0** | 0 | 13 |
+| `_s_ulin` | 6 | **0** | 0 | 6 |
+| `v_iqu` | 4 | 3 | 0 | 1 |
+| `r_ama_wa` | 3 | 3 | 0 | **0** |
+| `ut_ta` | 6 | 6 | 0 | **0** |
+| `y_atu` | 11 | 11 | 0 | **0** |
+| `v_as_a` | 1 | 1 | 0 | **0** |
+
+`_atura`'s wrappers had *drifted* to guillemets; these were simply **never emitted**. Restoring
+them would mean guessing gloss boundaries inside translated prose — the exact move PR #789
+refused. And four of the eight have `dropped = 0`: their wrappers are intact and the flag was
+never their reason for being held back. Written up as FINDINGS §614.
+
+**Recovered: `v_iqu`**, flipped clean by the ё fix alone. Promoted `--merge` with the union block
+list rebuilt from the re-audit dirs; **store 11 515 → 11 519** (4 sense rows). Gates re-run and
+green: mirror `ed8265065ddf` → `3022239c63ac`, `audit_store_gates` **11 519** rows
+`only_src=0 only_mirror=0 changed_ru=0`, `placement_axis_check` OK.
+
+**Standing after both passes: 8 of 16 promoted** (`ar_sas` `h_uti` `k_anana` `kzu_d_a` `majj_a`
+`men_a` `satt_a` `v_iqu`), 7 defect, 1 transient. The 7 remaining need re-translation or human
+review; no deterministic rule in this repo addresses them, and none should be invented for them.
+
 _Dr. Mārcis Gasūns_
