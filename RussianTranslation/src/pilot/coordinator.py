@@ -999,7 +999,9 @@ def claim(args):
 
 
 def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_path,
-                            artifact_path=None, owner='no_pwg_scale_plan'):
+                            artifact_path=None, owner='no_pwg_scale_plan',
+                            profile_slot=None, config_dir=None,
+                            executor_lane=None):
     """Register an already-generated deterministic nominal window without consuming a runtime slot."""
     with DirLock(paths()['lock']):
         state = load_state()
@@ -1041,6 +1043,11 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
             'preflight_path': os.path.abspath(preflight_path),
             'preflight_sha256': sha256_file(preflight_path),
             'preflight_allow_over_cost': False,
+            # H3677: the profile binding `prepare` records, so a planner-registered lease
+            # and a coordinator-prepared one carry the same production-eligibility facts.
+            'profile_slot': profile_slot,
+            'config_dir': config_dir,
+            'executor_lane': executor_lane,
         }
         state['leases'].append(lease)
         save_state(state)

@@ -246,6 +246,22 @@ def audit_command(workflow_output, root, execution_manifest=None):
     return command
 
 
+def binding_args(args):
+    """The profile binding `coordinator.prepare` hands to `gen_opt_harness2`, or `[]`.
+
+    An unbound manifest is schema v1, which `bounded_staged_run` refuses in production
+    (FINDINGS 604). Kept byte-identical to `coordinator.prepare`'s own list so a planner
+    lease and a coordinator lease are production-eligible on the same terms.
+    """
+    if not args.profile_slot:
+        return []
+    return ['--profile-slot=%s' % args.profile_slot,
+            '--config-dir=%s' % os.path.abspath(args.config_dir),
+            '--execution-route=%s' % args.execution_route,
+            '--executor-lane=%s' % args.executor_lane,
+            '--validation-method=%s' % args.validation_method]
+
+
 def prepare_window(args, index, heads, still_null_keys, tail_mode):
     root = '%s%02d' % (args.prefix, index)
     print('preparing %s: %d headword(s)%s' %
@@ -297,6 +313,12 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     ]
     if execution_manifest:
         gen_cmd.append('--manifest-out=' + execution_manifest)
+        # H3677 (FINDINGS 604 gate 3): without the coordinator's profile binding
+        # `gen_opt_harness2` stamps `pwg.headless_execution_manifest.v1`, and production
+        # refuses anything but v2 -- so every planner-prepared lease was unrunnable and
+        # H3659 had to rebuild the manifest by hand before it could spend. Same five flags
+        # `coordinator.prepare` passes, in the same order, so the two paths cannot drift.
+        gen_cmd.extend(binding_args(args))
     run_cmd(gen_cmd)
     preflight = preflight_json(root, subcards)
     if preflight_path:
@@ -317,7 +339,11 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
         if args.headless:
             coordinator.register_prepared_lease(
                 root, 'no_pwg_windows100', subcards, harness, execution_manifest,
-                preflight_path, artifact_path=os.path.dirname(execution_manifest))
+                preflight_path, artifact_path=os.path.dirname(execution_manifest),
+                profile_slot=args.profile_slot,
+                config_dir=(os.path.abspath(args.config_dir)
+                            if args.config_dir else None),
+                executor_lane=args.executor_lane)
     wf_out = os.path.join(OUT, 'wf_output.%s.json' % root)
     wf_out_rel = os.path.relpath(wf_out, RT).replace('\\', '/')
     manifest_rel = (os.path.relpath(execution_manifest, RT).replace('\\', '/')
@@ -413,11 +439,28 @@ def main(argv=None):
                     help='durable pwg.no_pwg_residual.v1 JSONL registry')
     ap.add_argument('--include-residuals', action='store_true',
                     help='explicitly retry keys whose latest residual status is blocked')
+    # H3677: the coordinator's profile binding. Without it the emitted manifest is v1 and
+    # production refuses it -- see FINDINGS 604 and `binding_args`.
+    ap.add_argument('--profile-slot',
+                    help='validated account slot to bind the execution manifest to (e.g. c1). '
+                         'Required with --config-dir for a production-eligible v2 manifest')
+    ap.add_argument('--config-dir',
+                    help='CLI config dir whose fingerprint seals the manifest; '
+                         'supply together with --profile-slot')
+    ap.add_argument('--execution-route', default='claude-cli-headless',
+                    help='execution route stamped into the manifest (default %(default)s; '
+                         'the headless executor refuses any other)')
+    ap.add_argument('--executor-lane', default='serial-whole-card',
+                    help='executor lane stamped into the manifest (default %(default)s)')
+    ap.add_argument('--validation-method', default='audit_window+final_schema',
+                    help='validation method stamped into the manifest (default %(default)s)')
     args = ap.parse_args(argv)
 
     if args.headless:
         os.environ['PWG_COORDINATOR_DIR'] = os.path.abspath(args.coordinator_dir)
 
+    if bool(args.profile_slot) != bool(args.config_dir):
+        raise SystemExit('FAIL: --profile-slot and --config-dir must be supplied together')
     if args.window_size < 1 or args.window_size > 30:
         raise SystemExit('FAIL: --window-size must be between 1 and 30 for H255')
     if args.gen_model_version in ('sonnet', 'claude-sonnet'):

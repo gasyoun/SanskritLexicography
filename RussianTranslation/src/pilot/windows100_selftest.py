@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import io
 import json
 import os
 import sys
@@ -75,7 +76,47 @@ def main():
             assert 'lock busy' in str(exc)
         else:
             raise AssertionError('live promotion conflict was not refused')
+    _test_planner_binding()
     print('windows100_selftest: PASS')
+
+
+def _test_planner_binding():
+    """H3677 / FINDINGS 604 gate 3: the planner must stamp a PRODUCTION-eligible manifest.
+
+    Unbound, `gen_opt_harness2` emits `pwg.headless_execution_manifest.v1` and
+    `bounded_staged_run` refuses it, so every planner-prepared lease was unrunnable and
+    H3659 had to rebuild the manifest by hand before it could spend. The binding is
+    asserted against `coordinator.prepare`'s own list rather than a copied literal, so the
+    two paths cannot drift apart again.
+    """
+    import argparse
+    args = argparse.Namespace(profile_slot=None, config_dir=None,
+                              execution_route='claude-cli-headless',
+                              executor_lane='serial-whole-card',
+                              validation_method='audit_window+final_schema')
+    assert planner.binding_args(args) == [], 'unbound planner must pass no binding'
+
+    args.profile_slot, args.config_dir = 'c1', os.path.join('.', 'cfg')
+    bound = planner.binding_args(args)
+    assert bound[0] == '--profile-slot=c1', bound
+    assert bound[1] == '--config-dir=%s' % os.path.abspath(os.path.join('.', 'cfg')), bound
+    assert bound[2:] == ['--execution-route=claude-cli-headless',
+                         '--executor-lane=serial-whole-card',
+                         '--validation-method=audit_window+final_schema'], bound
+
+    # The flag NAMES and their order must match what `coordinator.prepare` builds, or a
+    # planner lease and a coordinator lease stop being production-eligible on equal terms.
+    src = io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'coordinator.py'), encoding='utf-8').read()
+    for flag in ('--profile-slot=', '--config-dir=', '--execution-route=claude-cli-headless',
+                 '--executor-lane=', '--validation-method=audit_window+final_schema'):
+        assert flag in src, 'coordinator no longer passes %s' % flag
+
+    # And the lease must carry the binding, exactly as `prepare` records it.
+    import inspect
+    sig = inspect.signature(coordinator.register_prepared_lease).parameters
+    for name in ('profile_slot', 'config_dir', 'executor_lane'):
+        assert name in sig, 'register_prepared_lease drops %s' % name
 
 
 if __name__ == '__main__':
