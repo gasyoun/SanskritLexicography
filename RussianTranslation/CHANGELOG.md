@@ -9,6 +9,8 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
+
+## [1.144.129] - 2026-08-29
 - **H3685 — akshara close-out tail closed: 3 genitive rewordings + homograph block reconciliation.** The 3 English-genitive prose leaks H3500 deliberately left unfixed (`Arjuna's`/`Savitar's`/`Indra's` inside `<is>` spans) are re-derived from each row's own German source and applied to the canonical committed store (`pwg-ru-data` PR). The "42 information homograph blocks" mission text is reconciled against the live store (now 34, post H3591/H3627/H3690 cleanup) rather than force-matched — enumerated + schema-checked in `reports/H3685_homograph_blocks_29-08-2026.json`. 7 additional genitive leaks surfaced by the re-scan (`Śiva's`/`Bṛhaspati's`/`Viṣṇu's`) are out of this handoff's named scope and left for a follow-up. Report: [`reports/H3685_AKSHARA_CLOSEOUT_TAIL_29-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3685_AKSHARA_CLOSEOUT_TAIL_29-08-2026.md).
 
 ## [1.144.128] - 2026-08-29
