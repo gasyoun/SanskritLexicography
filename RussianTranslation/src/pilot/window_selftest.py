@@ -897,6 +897,53 @@ def test_grammar_field_restore_behavioral():
         shutil.rmtree(d, ignore_errors=True)
 
 
+
+def test_h3675_target_anchor_repair_behavioral():
+    """H3675: the TARGET-side twin of the anchored repair, on the real emitted harness.
+
+    The half of the span-drop class `german_anchor` was never built to catch: the german echo
+    comes back faithful and the translation drops a span, so `count_card_field` nulls the card
+    while the german-side repair is never even reached (FINDINGS §605/§608). MG ruled
+    `reanchor` over an explicit requeue on 29-08-2026.
+
+    Same two-part pin as its german sibling: (1) the twin + its telemetry are emitted into the
+    harness at all; (2) the behavioural half runs the REAL emitted taPlan/taReanchor/taStamp
+    AND the REAL accept() + restoreCard (`target_anchor_test.js`), so it cannot drift from the
+    generator. The Python twin of the same cases is `target_anchor.selftest()`, run by
+    `test_h3675_target_anchor_selftest` below — both lanes are interpolated from ONE authored
+    source (`target_anchor.js_source()`), the C-01/C-17 lesson.
+    """
+    import gen_opt_harness2 as gh
+    saved_ip, saved_kill = gh.input_paths, gh.KILL
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, 'ta~~h0_zz_pw.raw.txt')
+        pp = os.path.join(d, 'ta~~h0_zz_pw.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW ===\n\n{#ta#}¦ {%m%}\n— 1〉 {%a%}.')
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp)
+        gh.KILL = False
+        js, _ = gh.build('zz_tanchor', ['ta~~h0_zz_pw'], None, 12000,
+                         nominal=True, grammar_on=False, tm_path=None)
+        for needle in ('const taPlan = ', 'const taReanchor = ', 'const taStamp = ',
+                       'TARGET_ANCHOR_REPAIRS', 'target_anchor_repairs', 'target-anchor '):
+            if needle not in js:
+                fail('H3675 target-anchor repair not emitted into the harness (missing %r)' % needle)
+        harness = os.path.join(d, 'tanchor_harness.js')
+        with open(harness, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(js)
+        test_js = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'target_anchor_test.js')
+        p = subprocess.run(['node', test_js, harness],
+                           capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('target-anchor repair behavioral test failed:\n%s\n%s' % (p.stdout, p.stderr))
+    finally:
+        gh.input_paths, gh.KILL = saved_ip, saved_kill
+
+
 def test_german_anchor_repair_behavioral():
     """H858 Part B: the anchored repair of a masked span dropped from the model's `german` echo.
 
@@ -1233,6 +1280,29 @@ def test_c4_gate0_probe_run_scope():
     # The label must never again BE the run id: two invocations must not collide.
     if probe.new_run_id(now=0, pid=1) == probe.new_run_id(now=0, pid=2):
         fail('#729 regression: run ids collide, so one run can read another run\'s readings')
+
+
+
+def test_h3675_target_anchor_selftest():
+    """H3675: the Python half of the target-side repair, and its LANG_PARITY guarantee.
+
+    `target_anchor` is SHARED. It takes the target field as a PARAMETER and anchors against
+    `german`, so the RU and EN lanes run byte-identical logic; the module must never name a
+    language. This asserts that mechanically rather than trusting it, exactly as
+    `test_german_anchor_selftest` does for the source-side twin.
+    """
+    import target_anchor
+    target_anchor.selftest()
+    if 'russian' in target_anchor._JS or 'english' in target_anchor._JS:
+        fail('target_anchor must stay language-agnostic (SHARED under LANG_PARITY.md)')
+    for target in ('russian', 'english'):
+        card = {'records': [{'senses': [{'german': '{T1} Feuer {T2}', target: 'x {T2}'}]}]}
+        ok, info = target_anchor.reanchor(card, target)
+        sense = card['records'][0]['senses'][0]
+        if not ok or sense[target] != '{T1} x {T2}':
+            fail('target_anchor repaired differently for target field %r: %r' % (target, info))
+        if sense['german'] != '{T1} Feuer {T2}':
+            fail('target_anchor wrote the german anchor field for target %r' % target)
 
 
 def test_german_anchor_selftest():
@@ -9456,6 +9526,8 @@ def main():
         test_c4_gate0_probe_run_scope,
         test_german_anchor_selftest,
         test_german_anchor_repair_behavioral,
+        test_h3675_target_anchor_selftest,
+        test_h3675_target_anchor_repair_behavioral,
         test_h_reconstructed_regression_guard,
         test_h1283_a1_pid_alive_and_dirlock_owner,
         test_h1420_p2_win32_openprocess_error_leans_alive,

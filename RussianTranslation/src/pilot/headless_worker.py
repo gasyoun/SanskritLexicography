@@ -25,6 +25,7 @@ if _SRC not in sys.path:
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
 import german_anchor  # noqa: E402  (H858 Part B: source-anchored repair of a dropped `german` span)
+import target_anchor  # noqa: E402  (H3675: the target-side twin -- a span dropped from the TRANSLATION)
 from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
 from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V1,
                                 SCHEMA_V2, assert_timeout_within_ceiling,
@@ -864,6 +865,9 @@ def normalize_batch(manifest, keys, structured):
             if card:
                 card['key1'] = key
         error = None
+        german_stamp = None
+        # H3675: the target-side repair's own trace, twin of `anchor` below.
+        target = None
         # H3665: `german_anchor_repairs: 0` was unfalsifiable -- it could mean "no card dropped
         # a german span" or "the repair was never reached". This trace separates the two.
         anchor = None
@@ -891,12 +895,16 @@ def normalize_batch(manifest, keys, structured):
                 ok, info = german_anchor.reanchor(masked, inp.get('skeleton') or '')
                 candidate, cand_unmapped = None, []
                 if ok:
-                    candidate = restore_card(masked, field, phs, cand_unmapped)
+                    # H3675: restore a COPY. `restore_card` unmasks in place, so restoring
+                    # `masked` itself would consume the `{Tn}` tokens the target-side repair
+                    # below still needs as its anchor -- the same reason `masked` exists at all.
+                    candidate = restore_card(copy.deepcopy(masked), field, phs, cand_unmapped)
                 if (candidate is not None
                         and count_card(candidate, '<ls') == inp['ls']
                         and count_card(candidate, '{#') == inp['sk']):
                     card, unmapped = candidate, cand_unmapped
-                    card['german_anchor'] = german_anchor.stamp(info)
+                    german_stamp = german_anchor.stamp(info)
+                    card['german_anchor'] = german_stamp
                     anchor = {'invoked': True, 'outcome': 'repaired'}
                 else:
                     error = 'fidelity-reject: german-anchor %s' % (
@@ -908,10 +916,43 @@ def normalize_batch(manifest, keys, structured):
             if card is not None:
                 if (count_card_field(card, field, '<ls') != inp['ls']
                         or count_card_field(card, field, '{#') != inp['sk']):
-                    # H1152 parity (C1): german echo is faithful, but the translation dropped a
-                    # span -- requeue instead of promoting a lossy card.
-                    error = 'translation-fidelity-reject'
-                    card = None
+                    # H1152 parity (C1) found this class; H3675 repairs it instead of only
+                    # naming it. The german echo is faithful and the TRANSLATION dropped a
+                    # span -- until now an unconditional requeue, and a requeue reproduces the
+                    # drop for the same reason it does on the german side (it is a property of
+                    # the emission, not of transport). `target_anchor` re-injects the missing
+                    # tokens using THIS SAME sense's german as the anchor, then this identical
+                    # count runs again as the verifier: accepted only when the card becomes
+                    # exactly faithful on BOTH sides, refused cards fall through to the
+                    # identical reject as before, and a card that passed above never enters
+                    # this branch. MG ruled `reanchor` over an explicit requeue on 29-08-2026.
+                    t_ok, t_info = target_anchor.reanchor(masked, field)
+                    t_candidate, t_unmapped = None, []
+                    if t_ok:
+                        t_candidate = restore_card(copy.deepcopy(masked), field, phs, t_unmapped)
+                    if (t_candidate is not None
+                            and count_card(t_candidate, '<ls') == inp['ls']
+                            and count_card(t_candidate, '{#') == inp['sk']
+                            and count_card_field(t_candidate, field, '<ls') == inp['ls']
+                            and count_card_field(t_candidate, field, '{#') == inp['sk']):
+                        card, unmapped = t_candidate, t_unmapped
+                        # Re-restoring from `masked` produced a fresh dict, so a german repair
+                        # already applied to this card must be re-stamped onto it or the
+                        # provenance of the machine-patched german is silently lost.
+                        if german_stamp:
+                            card['german_anchor'] = german_stamp
+                        card['target_anchor'] = target_anchor.stamp(t_info)
+                        target = {'invoked': True, 'outcome': 'repaired'}
+                    else:
+                        # The reject string keeps its `translation-fidelity-reject` prefix so
+                        # every existing reader (summaries, RUN_LOG greps, the H3665 counters)
+                        # still matches, and carries the refusal reason for diagnosis.
+                        error = 'translation-fidelity-reject: target-anchor %s' % (
+                            'verify-failed' if t_ok else t_info.get('reason', 'refused'))
+                        target = {'invoked': True,
+                                  'outcome': ('verify-failed' if t_ok
+                                              else 'refused:%s' % t_info.get('reason', 'refused'))}
+                        card = None
                 elif unmapped:
                     # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
                     error = 'unmapped-token-reject'
@@ -926,7 +967,8 @@ def normalize_batch(manifest, keys, structured):
         #   repaired-then-rejected -- the repair DID fire and fixed the german echo, but the card
         #                           still died downstream; the stamp goes with `card = None`, so
         #                           the stamp-derived `german_anchor_repairs` silently loses it.
-        if anchor is None and error in ('translation-fidelity-reject', 'unmapped-token-reject'):
+        if anchor is None and (error or '').startswith(
+                ('translation-fidelity-reject', 'unmapped-token-reject')):
             anchor = {'invoked': False, 'outcome': 'not-reached', 'nulled_by': error}
         elif anchor is not None and anchor['outcome'] == 'repaired' and card is None:
             anchor = {'invoked': True, 'outcome': 'repaired-then-rejected', 'nulled_by': error}
@@ -936,6 +978,8 @@ def normalize_batch(manifest, keys, structured):
             row['error'] = error
         if anchor:
             row['german_anchor_trace'] = anchor
+        if target:
+            row['target_anchor_trace'] = target
         rows.append(row)
     return rows
 
@@ -1116,6 +1160,7 @@ class HeadlessEngine:
         # Re-attached to the output rows in `_finish_payload`, so the summary can tell
         # "nothing to repair" from "the repair was never reached".
         self.german_anchor_traces = {}
+        self.target_anchor_traces = {}     # H3675, same reason
         self.partial_healed = 0
         self.failures = {}
         self.translate_calls = 0
@@ -1375,6 +1420,8 @@ class HeadlessEngine:
             for row in normalize_batch(self.m, pending, structured):
                 if row.get('german_anchor_trace'):
                     self.german_anchor_traces[row['key']] = row['german_anchor_trace']
+                if row.get('target_anchor_trace'):
+                    self.target_anchor_traces[row['key']] = row['target_anchor_trace']
                 if row['card']:
                     resolved[row['key']] = row['card']
                 else:
@@ -1800,6 +1847,9 @@ def _finish_payload(manifest, engine, results, healed, presplit):
         trace = getattr(engine, 'german_anchor_traces', {}).get(row['key'])
         if trace:
             row['german_anchor_trace'] = trace
+        trace = getattr(engine, 'target_anchor_traces', {}).get(row['key'])
+        if trace:
+            row['target_anchor_trace'] = trace
     seen = {row['key'] for row in results}
     for key in manifest['meta']['selected_keys']:
         if key not in seen:
@@ -1836,6 +1886,18 @@ def _finish_payload(manifest, engine, results, healed, presplit):
                    if (row.get('german_anchor_trace') or {}).get('outcome') == 'not-reached'],
                'german_anchor_outcomes': {row['key']: row['german_anchor_trace']['outcome']
                                           for row in results if row.get('german_anchor_trace')},
+               # H3675: the target-side twin. `repairs` is stamp-derived like the german one;
+               # `invocations`/`outcomes` keep it falsifiable the same way (FINDINGS 608).
+               'target_anchor_repairs': sum(bool((row.get('card') or {}).get('target_anchor'))
+                                            for row in results),
+               'target_anchor_detail': [{'key': row['key'],
+                                         'reinjected': row['card']['target_anchor']['reinjected']}
+                                        for row in results
+                                        if (row.get('card') or {}).get('target_anchor')],
+               'target_anchor_invocations': sum(
+                   bool((row.get('target_anchor_trace') or {}).get('invoked')) for row in results),
+               'target_anchor_outcomes': {row['key']: row['target_anchor_trace']['outcome']
+                                          for row in results if row.get('target_anchor_trace')},
                'translate_agents_spent': engine.translate_calls,
                'heal_agents_spent': engine.heal_calls,
                'budget_stops': engine.budget_stops,

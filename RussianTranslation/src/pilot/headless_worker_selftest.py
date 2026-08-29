@@ -186,8 +186,11 @@ def test_h2b_translate_budget_preserves_attempt_content_note():
     m = manifest()
     m['budgets'] = {'max_translate_agents': 1}
     m['runtime'] = dict(m['runtime'], whole_attempts=2, binary_split=False)
+    # H3675: a plain target-side DROP is now repaired, so it is no longer a content reject.
+    # A DUPLICATED target token is not a drop, `target_anchor` refuses it, and the card still
+    # rejects -- which is the content defect this test actually needs.
     dropped = {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
-        {'tag': '1', 'german': '{T1} Feuer', 'russian': 'огонь'}]}]}
+        {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} {T1} огонь'}]}]}
 
     def content_reject_runner(argv, **kwargs):
         return proc(stdout=json.dumps({'structured_output': {'cards': [dropped]}}))
@@ -195,7 +198,7 @@ def test_h2b_translate_budget_preserves_attempt_content_note():
     payload, status, code = execute(m, content_reject_runner)
     assert code == 0 and payload is not None, (code, status)
     assert payload['summary']['budget_stops'] == 1, payload['summary']
-    assert payload['summary']['failures']['agni'] == 'translation-fidelity-reject', (
+    assert payload['summary']['failures']['agni'].startswith('translation-fidelity-reject'), (
         'retry budget clobbered attempt-1 content diagnosis: %r'
         % payload['summary']['failures']['agni'])
     print('  H2b preserve: retry budget leaves attempt-1 translation-fidelity-reject observable')
@@ -1218,10 +1221,15 @@ def test_null_owner_fragment_tm_refused_before_any_call():
 
 
 def test_normalize_batch_translation_fidelity_reject():
-    """H1152 parity (C1): normalize_batch must reject a card whose `german` echo is faithful but
-    whose TARGET field dropped an <ls>/{#..#} span. Was german-only (count_card), so a
-    translation-column span drop reached the store on the headless production route (the
-    live H1070 r102 pattern: german 33/33, english 32/33). A faithful card still passes."""
+    """H1152 parity (C1): a card whose `german` echo is faithful but whose TARGET field dropped
+    an <ls>/{#..#} span must never reach the store unrepaired. Was german-only (count_card), so
+    a translation-column span drop reached the store on the headless production route (the live
+    H1070 r102 pattern: german 33/33, english 32/33).
+
+    **H3675 changes the remedy, not the guarantee.** A pure drop is now REPAIRED by
+    `target_anchor` (MG ruling, 29-08-2026) instead of unconditionally requeued; anything that
+    is not a pure drop still rejects. What the store may receive is unchanged: only cards that
+    count exactly right on both sides."""
     m = manifest()   # inputs.agni ls=1 sk=0; placeholder_maps.agni=['<ls>RV.</ls>']; field=russian
     faithful = {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
         {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} огонь'}]}]}
@@ -1229,9 +1237,22 @@ def test_normalize_batch_translation_fidelity_reject():
         {'tag': '1', 'german': '{T1} Feuer', 'russian': 'огонь'}]}]}   # <ls> kept in de, dropped in ru
     ok = h.normalize_batch(m, ['agni'], {'cards': [faithful]})
     assert ok[0].get('error') is None and ok[0]['card'], ok
-    bad = h.normalize_batch(m, ['agni'], {'cards': [dropped]})
-    assert bad[0].get('error') == 'translation-fidelity-reject' and bad[0]['card'] is None, bad
-    print('  C1 normalize_batch: german-faithful but target-dropped card -> translation-fidelity-reject')
+    assert 'target_anchor' not in ok[0]['card'], ok[0]['card']
+
+    repaired = h.normalize_batch(m, ['agni'], {'cards': [dropped]})
+    row = repaired[0]
+    assert row.get('error') is None and row['card'], row
+    assert row['card']['records'][0]['senses'][0]['russian'] == '<ls>RV.</ls> огонь', row['card']
+    assert row['card']['target_anchor'] == {'reinjected': ['T1'], 'head': ['T1']}, row['card']
+
+    # Not a pure drop -> refused, and the reject keeps its prefix plus the refusal reason.
+    dup = {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
+        {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} {T1} огонь'}]}]}
+    bad = h.normalize_batch(m, ['agni'], {'cards': [dup]})
+    assert bad[0]['card'] is None, bad
+    assert bad[0].get('error') == 'translation-fidelity-reject: target-anchor duplicate-token', bad
+    print('  C1 normalize_batch: target-side drop repaired+stamped (H3675); a non-drop still '
+          'rejects with its reason; a faithful card is untouched')
 
 
 def test_normalize_batch_german_anchor_repair():
@@ -1267,12 +1288,18 @@ def test_normalize_batch_german_anchor_repair():
     dup = h.normalize_batch(m, ['agni'], {'cards': [card('{T1} {T1} Feuer', '{T1} огонь')]})
     assert dup[0]['card'] is None and 'german-anchor duplicate-token' in dup[0].get('error', ''), dup
 
-    # The repair must not launder a TRANSLATION-side drop (H1152 C1 still owns that class).
-    ru_drop = h.normalize_batch(m, ['agni'], {'cards': [card('Feuer', 'огонь')]})
-    assert ru_drop[0]['card'] is None, ru_drop
-    assert ru_drop[0].get('error') == 'translation-fidelity-reject', ru_drop
+    # BOTH sides dropped: the german repair runs first, then H3675's target repair anchors
+    # against the german it just fixed. The card survives carrying BOTH stamps -- the german
+    # provenance must not be lost when the target repair re-restores from `masked`.
+    both = h.normalize_batch(m, ['agni'], {'cards': [card('Feuer', 'огонь')]})
+    row = both[0]
+    assert row.get('error') is None and row['card'], row
+    assert row['card']['german_anchor'] == {'reinjected': ['T1'], 'head': ['T1']}, row['card']
+    assert row['card']['target_anchor'] == {'reinjected': ['T1'], 'head': ['T1']}, row['card']
+    assert row['card']['records'][0]['senses'][0]['german'] == '<ls>RV.</ls> Feuer', row['card']
+    assert row['card']['records'][0]['senses'][0]['russian'] == '<ls>RV.</ls> огонь', row['card']
     print('  H858 normalize_batch: dropped german span repaired+stamped; clean card untouched; '
-          'non-drop refused; translation-side drop still rejected')
+          'non-drop refused; a card dropped on BOTH sides keeps both stamps (H3675)')
 
 
 def test_h3665_german_anchor_counter_is_falsifiable():
@@ -1316,20 +1343,35 @@ def test_h3665_german_anchor_counter_is_falsifiable():
 
     # The H3659 `hasita` shape. Without the H3665 counters this summary is byte-identical to
     # `clean` on every german_anchor field -- which is exactly how the defect stayed invisible
-    # across H858 -> H3144 -> H3157 -> H3659.
-    bypassed, _s, _c = execute(manifest(), runner_for('{T1} Feuer', 'огонь'))
-    assert bypassed['summary']['failures'] == {'agni': 'translation-fidelity-reject'}, bypassed['summary']
+    # across H858 -> H3144 -> H3157 -> H3659. Since H3675 the card is REPAIRED by the
+    # target-side anchor, so the shape that still bypasses the german repair is one the target
+    # repair refuses: a duplicated target token is not a drop.
+    hasita, _s, _c = execute(manifest(), runner_for('{T1} Feuer', 'огонь'))
+    assert hasita['summary']['failures'] == {}, hasita['summary']
+    assert hasita['summary']['german_anchor_repairs'] == 0, hasita['summary']
+    assert hasita['summary']['german_anchor_invocations'] == 0, hasita['summary']
+    assert hasita['summary']['target_anchor_repairs'] == 1, hasita['summary']
+    assert hasita['summary']['target_anchor_invocations'] == 1, hasita['summary']
+    assert hasita['summary']['target_anchor_outcomes'] == {'agni': 'repaired'}, hasita['summary']
+
+    bypassed, _s, _c = execute(manifest(), runner_for('{T1} Feuer', '{T1} {T1} огонь'))
+    assert bypassed['summary']['failures'] == {
+        'agni': 'translation-fidelity-reject: target-anchor duplicate-token'}, bypassed['summary']
     assert bypassed['summary']['german_anchor_repairs'] == 0, bypassed['summary']
     assert bypassed['summary']['german_anchor_invocations'] == 0, bypassed['summary']
     assert bypassed['summary']['german_anchor_not_reached'] == ['agni'], bypassed['summary']
     assert bypassed['summary']['german_anchor_outcomes'] == {'agni': 'not-reached'}, bypassed['summary']
+    assert bypassed['summary']['target_anchor_repairs'] == 0, bypassed['summary']
+    assert bypassed['summary']['target_anchor_invocations'] == 1, bypassed['summary']
+    assert bypassed['summary']['target_anchor_outcomes'] == {
+        'agni': 'refused:duplicate-token'}, bypassed['summary']
 
     # A silent zero is now impossible: a nulled card is EITHER accounted to an invocation or
     # named in not_reached. Assert the invariant itself, not just these three fixtures.
-    for payload in (clean, repaired, bypassed):
+    for payload in (clean, repaired, hasita, bypassed):
         summary = payload['summary']
         for key, reason in summary['failures'].items():
-            if reason in ('translation-fidelity-reject', 'unmapped-token-reject'):
+            if reason.startswith(('translation-fidelity-reject', 'unmapped-token-reject')):
                 assert (key in summary['german_anchor_not_reached']
                         or summary['german_anchor_outcomes'].get(key)), (key, summary)
     print('  H3665 german_anchor counter: repairs/invocations/not_reached separate '
