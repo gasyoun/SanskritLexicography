@@ -2038,8 +2038,10 @@ def _test_h3642_health_probe_log_follows_evidence_root():
 
             # (3) env alone (no explicit root) is honoured too — a caller that never
             # goes through h963_c4_gate0_probe's CLI still gets the durable root.
+            # realpath (not abspath): the sibling resolve_evidence_root resolves
+            # symlinks, so both resolvers must agree byte-for-byte (macOS /var/folders).
             env_log = m.resolve_health_probe_log()
-            assert env_log == os.path.join(os.path.abspath(os.path.join(td, 'from-env')),
+            assert env_log == os.path.join(os.path.realpath(os.path.join(td, 'from-env')),
                                            'health_probe_log.jsonl'), env_log
             os.environ.pop('PWG_EVIDENCE_DIR', None)
 

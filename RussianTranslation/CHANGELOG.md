@@ -10,6 +10,31 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Closed — H1437 bounded cohort scheduler: Phase-4 closeout battery on master tip; one macOS-only gate blocker fixed
+
+- **H1437 closeout (OxAlpha — GLM 5.3 Flash (`glm-5.3-flash`), 29-08-2026, offline only).**
+  The handoff's implementation was already fully landed (Phase 0 red tests; Phase 1
+  run/attempt binding + campaign reservation ledger; promotion receipt + reconcile via H1554
+  Track B #694; Phase 2 `cohort_engine.py` via H1618 #704; Phase 3 `--cohort-width` +
+  live-refusal gate via #843 with the Grok PASS verdict from archived H1654; post-merge
+  hardening #899/#900/#911). This pass re-ran the Phase-4 battery on the current tip: all nine
+  offline gates green (`window_selftest` 219/219, `cohort_engine_selftest` 10 pins,
+  `lang_parity_check` 104 entries no drift), `h1339_offline_bench` deterministic (signature
+  `5cfcedea…`, median 2.430 s), cohort widths 1/2/3 byte-identical with `peak_concurrency>=2`
+  and observed wall times serial 0.618 s vs 0.316 s / 0.308 s under delayed fake workers.
+  Evidence: [`pwg_ru/h1437/H1437_PHASE4_CLOSEOUT_2026-08-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1437/H1437_PHASE4_CLOSEOUT_2026-08-29.md).
+  Live width>1 stays refused pending live serial acceptance + Codex sign-off.
+- **Fixed — `resolve_health_probe_log` env tier now `realpath`, not `abspath` (H3642
+  follow-up, macOS-only defect).** #1936 pinned the env tier with `os.path.abspath` while the
+  sibling `h963_c4_gate0_probe.resolve_evidence_root` — which it documents as mirroring — uses
+  `Path(...).resolve()`. On macOS, a `$PWG_EVIDENCE_DIR` under `/var/folders` (symlink to
+  `/private/var/folders`) made the two resolvers disagree byte-for-byte, and the two H3642
+  selftests contradicted each other (fixing `window_selftest` red-flipped
+  `max_account_orchestrator_selftest`). The env tier now normalizes with `os.path.realpath`;
+  explicit-tier (already-resolved) and default-tier (byte-identical history) semantics
+  unchanged; the orchestrator selftest pin corrected to the sibling-consistent expectation.
+  Windows behavior unchanged (`realpath == abspath` without symlinks).
+
 ## [1.144.129] - 2026-08-29
 - **H3685 — akshara close-out tail closed: 3 genitive rewordings + homograph block reconciliation.** The 3 English-genitive prose leaks H3500 deliberately left unfixed (`Arjuna's`/`Savitar's`/`Indra's` inside `<is>` spans) are re-derived from each row's own German source and applied to the canonical committed store (`pwg-ru-data` PR). The "42 information homograph blocks" mission text is reconciled against the live store (now 34, post H3591/H3627/H3690 cleanup) rather than force-matched — enumerated + schema-checked in `reports/H3685_homograph_blocks_29-08-2026.json`. 7 additional genitive leaks surfaced by the re-scan (`Śiva's`/`Bṛhaspati's`/`Viṣṇu's`) are out of this handoff's named scope and left for a follow-up. Report: [`reports/H3685_AKSHARA_CLOSEOUT_TAIL_29-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3685_AKSHARA_CLOSEOUT_TAIL_29-08-2026.md).
 
