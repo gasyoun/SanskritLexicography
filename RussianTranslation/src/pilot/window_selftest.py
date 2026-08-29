@@ -1358,6 +1358,70 @@ def test_h960_dropped_sanskrit_span():
         fail('dropped_sanskrit_span must be LOW / non-high-confidence, got %r' % row)
 
 
+def test_h3659_input_sidecars_parked_beside_manifest():
+    """FINDINGS 612: a window's INPUT sidecars are parked with its manifest, fail-closed.
+
+    The evidence root kept everything a paid window PRODUCED and nothing it CONSUMED, so
+    once the planning worktree died `audit_window.py` could not re-derive the inputs it
+    hashes -- and `no_pwg_w09`'s two audit-clean cards were unpromotable after 8 priced
+    calls. Two guarantees are pinned here because both failure modes are silent:
+
+      1. present sidecars are COPIED (content-identical, sha recorded), so the window
+         stays auditable after its checkout is gone;
+      2. a MISSING sidecar raises at plan time -- before any spend. Discovering it after
+         the window ran is the unrecoverable case, so this must never degrade to a warn.
+    """
+    import no_pwg_scale_plan as nps
+    tmp = tempfile.mkdtemp(prefix='h3659_sidecars_')
+    try:
+        gen_dir = os.path.join(nps.SRC, 'pilot', 'input')
+        os.makedirs(gen_dir, exist_ok=True)
+        keys = ['zz~~h0_zz_selftest_a', 'zz~~h0_zz_selftest_b']
+        written = []
+        try:
+            for i, key in enumerate(keys):
+                raw = os.path.join(gen_dir, key + '.raw.txt')
+                por = os.path.join(gen_dir, key + '.portrait.json')
+                with open(raw, 'w', encoding='utf-8') as fh:
+                    fh.write('raw body %d\n' % i)
+                with open(por, 'w', encoding='utf-8') as fh:
+                    fh.write('[{"portrait_kind": "selftest", "n": %d}]' % i)
+                written += [raw, por]
+
+            parked = nps.park_input_sidecars(keys, tmp)
+            for key in keys:
+                for suffix in nps.INPUT_SIDECAR_SUFFIXES:
+                    src_p = os.path.join(gen_dir, key + suffix)
+                    dst_p = os.path.join(tmp, 'input', key + suffix)
+                    if not os.path.isfile(dst_p):
+                        fail('sidecar %s was not parked beside the manifest' % (key + suffix))
+                    with open(src_p, 'rb') as a, open(dst_p, 'rb') as b:
+                        if a.read() != b.read():
+                            fail('parked %s differs from its source' % (key + suffix))
+                if sorted(parked.get(key, {})) != ['portrait', 'raw']:
+                    fail('parked record for %s lacks both sha entries: %r'
+                         % (key, parked.get(key)))
+
+            # 2. fail-closed on a missing sidecar -- at plan time, before any spend.
+            os.remove(os.path.join(gen_dir, keys[0] + '.portrait.json'))
+            written.remove(os.path.join(gen_dir, keys[0] + '.portrait.json'))
+            try:
+                nps.park_input_sidecars(keys, tmp)
+            except SystemExit as exc:
+                if 'FINDINGS 612' not in str(exc):
+                    fail('missing-sidecar refusal does not cite its finding: %s' % exc)
+            else:
+                fail('a missing input sidecar did not refuse -- the window would run '
+                     'and then be unpromotable, which is the unrecoverable case')
+        finally:
+            for path in written:
+                if os.path.isfile(path):
+                    os.remove(path)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    print('  H3659/612: input sidecars parked beside the manifest; missing one refuses')
+
+
 def test_no_pwg_worklist_runnable_lane():
     """H214: the worklist exposes a no_pwg_runnable lane for PW/SCH/PWKVN-only lemmas and does
     NOT reclassify a true miss (absent from every layer) as runnable, nor mix it into the
@@ -9429,6 +9493,7 @@ def main():
         test_tnmask_persist_and_offline_detect,
         test_h960_dropped_sanskrit_span,
         test_no_pwg_worklist_runnable_lane,
+        test_h3659_input_sidecars_parked_beside_manifest,
         test_no_pwg_layer_and_profile_survive_promotion,
         test_prompt_rule_audit_template,
         test_prompt_rule_audit_missing_blocks,
