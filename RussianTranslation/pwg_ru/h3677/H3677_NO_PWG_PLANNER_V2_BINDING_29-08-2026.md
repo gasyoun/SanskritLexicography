@@ -99,11 +99,15 @@ audited before any store write.
 
 ## Two things a human should know before authorizing
 
-1. **`darv_i` and `gl_ana` already have paid, unpromoted cards** from H3659, preserved in
-   `out.w09.json` in the durable evidence root. Re-running all five re-derives them at roughly
-   5 calls; neither is a member of the target-side drop class, so neither can contribute to the
-   success criterion. A three-key window (`hasita`, `jaw_ayus`, `kast_ur_i`, `--max-calls 8`) buys
-   the same verdict for less, at the cost of leaving those two cards unaudited a while longer.
+1. **Run all five — `darv_i` and `gl_ana` are NOT recoverable work.** They carry paid,
+   unpromoted cards from H3659 in `out.w09.json`, and a three-key window (`hasita`, `jaw_ayus`,
+   `kast_ur_i`) looks like the cheaper buy. It is not:
+   [§612](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) established
+   the same day that those two cards are **permanently unpromotable** — the input sidecars
+   `audit_window` hashes died with the H3659 worktree and exist in none of the three places they
+   could have survived, and every workaround is closed on principle. Re-running them inside this
+   window is the only way they ever reach the store, and it regenerates the sidecars that make
+   them promotable. Budget the full `--max-calls 13`.
 2. **The Plan-Mode refusal class fired on `gl_ana` in the last window.** The standing rule is that
    a second refusal-class event on the same profile is a STOP and a diagnosis task, never a third
    attempt — so the window may legitimately end early rather than complete.
