@@ -52,6 +52,9 @@ const TNMASK_DETAIL = []
 // german_anchor_test.js.
 let GERMAN_ANCHOR_REPAIRS = 0
 const GERMAN_ANCHOR_DETAIL = []
+let TARGET_ANCHOR_REPAIRS = 0            // H3675: accept() now runs a target-side repair too
+let TARGET_ANCHOR_INVOCATIONS = 0
+const TARGET_ANCHOR_DETAIL = []
 let GERMAN_ANCHOR_INVOCATIONS = 0        // H3665: was the repair even reached?
 const GERMAN_ANCHOR_NOT_REACHED = []     // H3665: cards nulled by a LATER guard
 // Direct eval so the extracted functions close over the locals above.
@@ -73,6 +76,14 @@ const block = name => {
 const gaPlan = eval('(' + block('gaPlan') + ')')
 const gaReanchor = eval('(' + block('gaReanchor') + ')')
 const gaStamp = eval('(' + one('gaStamp') + ')')
+// H3675: accept() now also runs the target-side repair, so its twin must be extracted too.
+const TA_TOKEN_RE = eval(one('TA_TOKEN_RE'))
+const taTokens = eval('(' + one('taTokens') + ')')
+const taSenses = eval('(' + one('taSenses') + ')')
+const taSpans = eval('(' + one('taSpans') + ')')
+const taPlan = eval('(' + block('taPlan') + ')')
+const taReanchor = eval('(' + block('taReanchor') + ')')
+const taStamp = eval('(' + one('taStamp') + ')')
 const accept = eval('(' + am[0].replace(/^const accept = /, '') + ')')
 
 let failed = 0
