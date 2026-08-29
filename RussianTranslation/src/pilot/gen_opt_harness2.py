@@ -896,6 +896,7 @@ def mw_tm_block(root, mw_tm_path):
 
 # H1425 W2: single source, shared with audit_window_en.xref_only (was an independent copy in each).
 from xref_vocab import DEGENERATE_XREF_WORDS as _DEGENERATE_WORDS  # noqa: E402
+from xref_vocab import render_xref_ru  # noqa: E402
 _DEGENERATE_CORRECTION_RE = re.compile(r'\b(lies|lesen|streichen)\b', re.I)
 
 
@@ -1004,18 +1005,26 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     if identity is None:
         return None       # R7: the source-record identity cannot be proven -> reject the pass-through
     rec_h, rec_grammar = identity
+    # H3658: P3 (H1422) left the target field EMPTY here so verbatim German could never leak
+    # into the russian/english column. Correct about German, but it also meant every xref stub
+    # failed the window audit on `empty_russian` + `dropped_sanskrit_span` and landed on
+    # requeue.defect.keys.txt — permanently unpromotable, and (the guard being all-or-nothing)
+    # able to block a whole paid batch. `pa_tin` in H3654 is exactly that. `render_xref_ru`
+    # rebuilds the apparatus instead: `{#..#}` spans and `<ab>`/`<ls>`/`<hom>` regions verbatim
+    # (the article site resolves `<ab>` to Russian itself via pwg_ab_ru.RU_MAP), only a BARE
+    # closed-vocabulary German word rewritten. It returns None on anything it cannot render, and
+    # that falls straight back to P3's empty field — so the German-leak guarantee is unchanged.
+    rendered = render_xref_ru(body) if field == 'russian' else None
     sense = {
         'tag': 'xref',
         'german': body,
-        # P3 (H1422): body is German (plus the {#..#}/<ls>/<ab> markup) -- there is
-        # nothing here to translate, so the target field stays empty rather than
-        # silently carrying verbatim German into the russian/english column. The
-        # German is still visible via the 'german' key above for editorial reference.
-        field: '',
+        field: rendered or '',
         'equivalence_type': 'explanatory',
         'source_type': 'lexicographic',
         'stratum': '',
-        'differentia': 'Deterministic pass-through: cross-reference stub with no translatable gloss.',
+        'differentia': ('Deterministic pass-through: cross-reference apparatus rendered in '
+                        'Russian; no gloss content.') if rendered else
+                       'Deterministic pass-through: cross-reference stub with no translatable gloss.',
     }
     return {
         'key1': key,

@@ -35,10 +35,12 @@ from markup_fidelity_gates import (  # noqa: E402
     missing_target_flag,
 )
 from pwg_tm_gates import surface_form_flags  # noqa: E402
+from store_path import canonical_data_repo, canonical_store  # noqa: E402
 
-DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
-DEFAULT_MIRROR = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'pwg-ru-data', 'tm', 'pwg_ru_translated.jsonl'))
+# H3658: audit the ONE canonical store, not the executing checkout's possibly-stale copy —
+# promote_final_cards.py resolves canonically, so an un-ported auditor greens a different file.
+DEFAULT_STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
+DEFAULT_MIRROR = os.path.join(canonical_data_repo(HERE), 'tm', 'pwg_ru_translated.jsonl')
 FLAG_NAME = re.compile(r'[(:]')
 
 

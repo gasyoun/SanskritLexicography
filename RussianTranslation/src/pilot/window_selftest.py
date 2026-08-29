@@ -3385,24 +3385,55 @@ def test_degenerate_passthrough_accounted():
 
 
 def test_degenerate_passthrough_no_german_in_target():
-    """P3 (H1422): a degenerate cross-reference stub has nothing translatable, so the
-    target-language field must stay empty rather than silently carrying verbatim German
-    (e.g. 'vgl.', 's.', 'ff.' -- particles the german_residue_scan/GERMAN_RESIDUE wordlists
-    do not even cover, so the leak was previously undetectable by any existing audit)."""
+    """P3 (H1422) as amended by H3658: a degenerate cross-reference stub must never carry
+    verbatim German in the target field ('vgl.', 's.', 'ff.' -- particles the
+    german_residue_scan/GERMAN_RESIDUE wordlists do not even cover, so the leak was
+    previously undetectable by any existing audit).
+
+    P3 bought that guarantee by leaving the field EMPTY, which then auto-failed every such
+    card on empty_russian + dropped_sanskrit_span. H3658 keeps the guarantee and drops the
+    emptiness: the RU lane now renders the apparatus (bare closed-vocabulary German -> Russian,
+    `{#..#}` spans and whole <ab>/<ls>/<hom> regions verbatim), and falls back to the empty
+    field whenever it cannot. The EN lane is unchanged -- an EN vocabulary is not ruled."""
     import gen_opt_harness2 as gh
-    for field in ('russian', 'english'):
-        card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', '=== LAYER: PW ===\n\nvgl. {#agni#}',
-                                              '[]', field)
-        if not card:
-            fail('inline vgl.-stub should qualify for conservative degenerate pass-through')
-        sense = card['records'][0]['senses'][0]
-        if sense.get(field) != '':
-            fail('degenerate pass-through target field %r must be empty, got %r'
-                 % (field, sense.get(field)))
-        if 'vgl' not in sense.get('german', ''):
-            fail('the german field must still carry the original source text for editorial reference')
+    raw = '=== LAYER: PW ===\n\nvgl. {#agni#}'
 
+    # EN: unchanged, still the P3 empty field.
+    card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', raw, '[]', 'english')
+    if not card:
+        fail('inline vgl.-stub should qualify for conservative degenerate pass-through')
+    sense = card['records'][0]['senses'][0]
+    if sense.get('english') != '':
+        fail('the EN degenerate lane must still emit an empty target field, got %r'
+             % sense.get('english'))
 
+    # RU: rendered, and the German particle is GONE rather than carried.
+    card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', raw, '[]', 'russian')
+    sense = card['records'][0]['senses'][0]
+    ru = sense.get('russian') or ''
+    if not ru:
+        fail('H3658: the RU degenerate lane must render the apparatus, not leave it empty')
+    if 'vgl' in ru.lower():
+        fail('verbatim German particle leaked into the russian field: %r' % ru)
+    if '\u0441\u0440.' not in ru:
+        fail('bare `vgl.` must render as «ср.», got %r' % ru)
+    if '{#agni#}' not in ru:
+        fail('the {#..#} Sanskrit span must survive into the target field, got %r' % ru)
+    if 'vgl' not in sense.get('german', ''):
+        fail('the german field must still carry the original source text for editorial reference')
+
+    # An <ab> token stays German ON PURPOSE -- the article site resolves it via
+    # pwg_ab_ru.RU_MAP, so rewriting it here would double-translate it.
+    tagged = '=== LAYER: PW ===\n\n{#paTin#} <ab>s. u.</ab> {#paT#}.'
+    card = gh.degenerate_passthrough_card('paTin~~h0_zz_pw', tagged, '[]', 'russian')
+    ru = card['records'][0]['senses'][0]['russian']
+    if '<ab>s. u.</ab>' not in ru:
+        fail('an <ab> token must be copied verbatim for the site to resolve, got %r' % ru)
+
+    # Fail closed: an unrenderable residue falls back to P3's empty field rather than leaking.
+    import xref_vocab
+    if xref_vocab.render_xref_ru('Bedeutung {#agni#}') is not None:
+        fail('an out-of-vocabulary German word must not be rendered')
 def test_degenerate_passthrough_rejects_glosses():
     import gen_opt_harness2 as gh
     import perf_preflight as pp
