@@ -41,6 +41,9 @@ let TNMASK_MISMATCHES = 0
 const TNMASK_DETAIL = []
 let GERMAN_ANCHOR_REPAIRS = 0
 const GERMAN_ANCHOR_DETAIL = []
+let TARGET_ANCHOR_REPAIRS = 0            // H3675: accept() now runs a target-side repair too
+let TARGET_ANCHOR_INVOCATIONS = 0
+const TARGET_ANCHOR_DETAIL = []
 let GERMAN_ANCHOR_INVOCATIONS = 0        // H3665: was the repair even reached?
 const GERMAN_ANCHOR_NOT_REACHED = []     // H3665: cards nulled by a LATER guard
 const GA_TOKEN_RE = eval(one('GA_TOKEN_RE'))
@@ -50,6 +53,14 @@ const gaSpans = eval('(' + one('gaSpans') + ')')
 const gaPlan = eval('(' + block('gaPlan') + ')')
 const gaReanchor = eval('(' + block('gaReanchor') + ')')
 const gaStamp = eval('(' + one('gaStamp') + ')')
+// H3675: accept() now also runs the target-side repair, so its twin must be extracted too.
+const TA_TOKEN_RE = eval(one('TA_TOKEN_RE'))
+const taTokens = eval('(' + one('taTokens') + ')')
+const taSenses = eval('(' + one('taSenses') + ')')
+const taSpans = eval('(' + one('taSpans') + ')')
+const taPlan = eval('(' + block('taPlan') + ')')
+const taReanchor = eval('(' + block('taReanchor') + ')')
+const taStamp = eval('(' + one('taStamp') + ')')
 // The REAL restore machinery, so the accept()-level cases below run the true masked -> restored
 // round trip rather than an identity mock (this is what proves the repair lands a real citation).
 const RESTORE_SPEC = eval('(' + one('RESTORE_SPEC') + ')')
@@ -129,7 +140,7 @@ check('the stamp never carries braces (it must not read as a {Tn} residue downst
 // ==== accept()-level: the real null class, end to end through the real restore ============
 // `avyagra` shape: source has one {#..#} span (the headword) and one <ls>; the model's german
 // echo drops the {#..#}. Pre-H858 this nulled the card ({# 0/1) and a requeue reproduced it.
-const reset = () => { GERMAN_ANCHOR_REPAIRS = 0; GERMAN_ANCHOR_DETAIL.length = 0; GERMAN_ANCHOR_INVOCATIONS = 0; GERMAN_ANCHOR_NOT_REACHED.length = 0; for (const k in FAIL) delete FAIL[k] }
+const reset = () => { GERMAN_ANCHOR_REPAIRS = 0; GERMAN_ANCHOR_DETAIL.length = 0; GERMAN_ANCHOR_INVOCATIONS = 0; GERMAN_ANCHOR_NOT_REACHED.length = 0; TARGET_ANCHOR_REPAIRS = 0; TARGET_ANCHOR_INVOCATIONS = 0; TARGET_ANCHOR_DETAIL.length = 0; for (const k in FAIL) delete FAIL[k] }
 const masked = (german, translation) => ({
   key1: 'av', iast: 'av', notes: '',
   records: [{ h: 'av', grammar: '', senses: [{ tag: '1', german: german, [TARGET_FIELD]: translation }] }],
@@ -157,12 +168,17 @@ r = accept(masked('{T1} unverwirrt {T2}', '{T1} невозмутимый {T2}'),
 check('accept(): a faithful card is untouched and carries NO repair stamp',
   r !== null && r.german_anchor === undefined && GERMAN_ANCHOR_REPAIRS === 0)
 
-// CONTROL 2: the repair must not launder a TRANSLATION-side drop. german is repaired, but the
-// russian/english still lacks the span -> H1152's translation-fidelity-reject must still fire.
+// CONTROL 2: the german repair must not by itself launder a TRANSLATION-side drop. Since
+// H3675 the card IS saved -- by the target-side twin, which stamps itself separately -- so
+// what this control now pins is that the two repairs stay distinct and both are recorded.
+// The target twin's own behavioural pin is target_anchor_test.js.
 reset()
 r = accept(masked('unverwirrt {T2}', 'невозмутимый {T2}'), 'av')
-check('accept(): a repaired german does NOT launder a translation-side drop',
-  r === null && /translation-fidelity-reject/.test(FAIL.av || ''), JSON.stringify(FAIL))
+check('accept(): a german-side repair does not silently cover a translation-side drop',
+  r !== null && r.german_anchor && r.target_anchor
+    && JSON.stringify(r.german_anchor.reinjected) === JSON.stringify(['T1'])
+    && JSON.stringify(r.target_anchor.reinjected) === JSON.stringify(['T1']),
+  JSON.stringify({ german: r && r.german_anchor, target: r && r.target_anchor, fail: FAIL.av }))
 
 // CONTROL 2b (H3665): the shape that made `german_anchor_repairs: 0` unfalsifiable. The german
 // echo is FAITHFUL and only the translation dropped the span, so accept() never enters the
@@ -170,8 +186,8 @@ check('accept(): a repaired german does NOT launder a translation-side drop',
 // not_reached list is the only thing that tells the two apart. Python twin:
 // headless_worker_selftest.test_h3665_german_anchor_counter_is_falsifiable.
 reset()
-r = accept(masked('{T1} unverwirrt {T2}', 'невозмутимый {T2}'), 'av')
-check('accept(): a translation-only drop is NAMED as never having reached the repair',
+r = accept(masked('{T1} unverwirrt {T2}', '{T1} {T1} невозмутимый {T2}'), 'av')
+check('accept(): a translation-side failure is NAMED as never having reached the german repair',
   r === null && /translation-fidelity-reject/.test(FAIL.av || '')
     && GERMAN_ANCHOR_REPAIRS === 0 && GERMAN_ANCHOR_INVOCATIONS === 0
     && JSON.stringify(GERMAN_ANCHOR_NOT_REACHED) === JSON.stringify(['av']),

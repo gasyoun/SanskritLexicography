@@ -45,6 +45,7 @@ from agent_budget import derive_agent_budget
 import pwg_mask
 import card_fields                                    # C-01: the one restore/promote field set
 import german_anchor                                  # H858 Part B: the anchored-repair twin, authored once
+import target_anchor                                  # H3675: the target-side twin, same rule
 from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
@@ -1838,6 +1839,10 @@ const GERMAN_ANCHOR_DETAIL = []
 // twin (headless_worker.normalize_batch), so a summary from either route is read the same way.
 let GERMAN_ANCHOR_INVOCATIONS = 0
 const GERMAN_ANCHOR_NOT_REACHED = []
+// H3675: the target-side repair's own telemetry, same shape as the german one.
+let TARGET_ANCHOR_REPAIRS = 0
+let TARGET_ANCHOR_INVOCATIONS = 0
+const TARGET_ANCHOR_DETAIL = []
 const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))
@@ -1874,6 +1879,7 @@ const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
 // the Python lane omitting `grammar` while this JS lane hard-coded rec.grammar + s.german).
 const TOKEN_FIDELITY_SPEC = %(token_fidelity_spec)s
 %(german_anchor_js)s
+%(target_anchor_js)s
 const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { for (const f of TOKEN_FIDELITY_SPEC.record) a = a.concat((rec[f] || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) for (const f of TOKEN_FIDELITY_SPEC.sense) a = a.concat((s[f] || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
 // Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
@@ -1967,6 +1973,7 @@ const accept = (c, k) => {
   // tokens, which restoreCard consumes — after it a dropped span is indistinguishable from
   // prose and can no longer be anchored. Python twin: headless_worker.normalize_batch.
   const masked = JSON.parse(JSON.stringify(c))
+  let germanStamp = null
   c = restoreCard(c, k)
   // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a mismatch
   // means misalignment / dropped {Tn}. Reject -> deterministic requeue, never emit garbled.
@@ -1981,14 +1988,15 @@ const accept = (c, k) => {
     // never enters this branch, so clean cards are byte-untouched.
     GERMAN_ANCHOR_INVOCATIONS++
     const rep = gaReanchor(masked, INPUTS[k].skeleton || '')
-    const cand = rep.ok ? restoreCard(masked, k) : null
+    const cand = rep.ok ? restoreCard(JSON.parse(JSON.stringify(masked)), k) : null
     const cls = cand ? countOf(cand, /<ls\\b/g) : -1, csk = cand ? countOf(cand, /\\{#/g) : -1
     if (cand && cls === INPUTS[k].ls && csk === INPUTS[k].sk) {
       // `masked` was snapshotted AFTER the tnmask block above, so the repaired card already
       // carries the same H1226 pre-restore pairing — the stamp keeps describing what the model
       // actually emitted, never the repaired text.
       c = cand
-      c.german_anchor = gaStamp(rep)
+      germanStamp = gaStamp(rep)          // H3675: survives the target repair's re-restore
+      c.german_anchor = germanStamp
       GERMAN_ANCHOR_REPAIRS++
       GERMAN_ANCHOR_DETAIL.push({ key: k, reinjected: c.german_anchor.reinjected })
       log('german-anchor repair: ' + k + ' re-injected ' + c.german_anchor.reinjected.join(',') + ' from source')
@@ -2013,11 +2021,33 @@ const accept = (c, k) => {
   // translation-only drop can no longer hide behind a clean source echo.
   const lsT = countOfField(c, TARGET_FIELD, /<ls\\b/g), skT = countOfField(c, TARGET_FIELD, /\\{#/g)
   if (lsT !== INPUTS[k].ls || skT !== INPUTS[k].sk) {
-    // H3665: the german-only guard above passed, so the repair branch was never entered --
-    // this card is invisible to `german_anchor_repairs` in BOTH directions. Name it.
+    // H3665: the german-only guard above passed, so the german repair branch was never
+    // entered -- this card is invisible to `german_anchor_repairs` in BOTH directions.
     GERMAN_ANCHOR_NOT_REACHED.push(k)
-    noteFail(k, 'translation-fidelity-reject: <ls> ' + lsT + '/' + INPUTS[k].ls + ', {# ' + skT + '/' + INPUTS[k].sk)
-    return null
+    // H3675: repair-then-verify on the TARGET side. The german echo is faithful, so THIS
+    // sense's german still carries every {Tn} in order and is a sound anchor; re-inject the
+    // dropped ones and re-run this same count as the verifier. Refused cards fall through to
+    // the identical reject as before. MG ruled `reanchor` over an explicit requeue 29-08-2026.
+    TARGET_ANCHOR_INVOCATIONS++
+    const trep = taReanchor(masked, TARGET_FIELD)
+    const tcand = trep.ok ? restoreCard(JSON.parse(JSON.stringify(masked)), k) : null
+    const tls = tcand ? countOf(tcand, /<ls\\b/g) : -1, tsk = tcand ? countOf(tcand, /\\{#/g) : -1
+    const tlsT = tcand ? countOfField(tcand, TARGET_FIELD, /<ls\\b/g) : -1
+    const tskT = tcand ? countOfField(tcand, TARGET_FIELD, /\\{#/g) : -1
+    if (!(tcand && tls === INPUTS[k].ls && tsk === INPUTS[k].sk
+          && tlsT === INPUTS[k].ls && tskT === INPUTS[k].sk)) {
+      noteFail(k, 'translation-fidelity-reject: <ls> ' + lsT + '/' + INPUTS[k].ls + ', {# ' + skT + '/' + INPUTS[k].sk +
+        '; target-anchor ' + (trep.ok ? 'verify-failed' : (trep.reason || 'refused')))
+      return null
+    }
+    c = tcand
+    // The re-restore produced a fresh object, so a german repair already applied to this card
+    // must be re-stamped or its provenance is silently lost.
+    if (germanStamp) c.german_anchor = germanStamp
+    c.target_anchor = taStamp(trep)
+    TARGET_ANCHOR_REPAIRS++
+    TARGET_ANCHOR_DETAIL.push({ key: k, reinjected: c.target_anchor.reinjected })
+    log('target-anchor repair: ' + k + ' re-injected ' + c.target_anchor.reinjected.join(',') + ' into ' + TARGET_FIELD)
   }
   // H960 SAN-LOSS shortfall guard (H920's deferred deepest fix). The ls/sk fidelity check
   // above is blind to a whole dropped sense that carries neither a citation nor a {#..#} span
@@ -2526,6 +2556,10 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   // on a card that died a fidelity death (the `hasita` no_pwg_w09 shape).
                   german_anchor_invocations: GERMAN_ANCHOR_INVOCATIONS,
                   german_anchor_not_reached: GERMAN_ANCHOR_NOT_REACHED,
+                  // H3675: the target-side twin's telemetry.
+                  target_anchor_repairs: TARGET_ANCHOR_REPAIRS,
+                  target_anchor_invocations: TARGET_ANCHOR_INVOCATIONS,
+                  target_anchor_detail: TARGET_ANCHOR_DETAIL,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -2542,6 +2576,8 @@ return { meta: META, summary, results: out }
         # here, for the same reason as the two constants above -- a hand-copied second lane is
         # exactly how restoreCard (C-01) and cardTokens (C-17) drifted apart.
         'german_anchor_js': german_anchor.js_source(),
+        # H3675: the target-side twin, authored in target_anchor.py for the same reason.
+        'target_anchor_js': target_anchor.js_source(),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
         # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
         # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.
