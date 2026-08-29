@@ -33,8 +33,15 @@ sys.stderr.reconfigure(encoding="utf-8")
 REGISTRIES = ["FINDINGS.md", "CONTRADICTIONS.md", "DEAD_ENDS.md", "GAPS.md",
               "ASSUMPTIONS.md", "RECIPES.md", "STALENESS.md", "GLOSSARY.md"]
 
-HEADING = re.compile(r"^#{2,4}\s*§\s*(\d+)([a-z]?)\.", re.M)
-INDEX_ENTRY = re.compile(r"\[§\s*(\d+)([a-z]?)\.")
+# H3677: the separator after the number is `.` by convention, but an em dash, en dash,
+# hyphen or colon is used often enough to matter -- and a heading this pattern misses is
+# invisible to ALL THREE things this gate exists for: the duplicate-number check, Index
+# parity, and the next-free marker's `max heading + 1`. On 29-08-2026 `### §611 — the
+# window audit's ...` was written with an em dash, so a SECOND §611 merged the same day
+# and the gate reported OK; the collision surfaced only when a human read the file.
+# A number-shaped heading must be counted whatever punctuation follows it.
+HEADING = re.compile(r"^#{2,4}\s*§\s*(\d+)([a-z]?)\s*[.—–:-]", re.M)
+INDEX_ENTRY = re.compile(r"\[§\s*(\d+)([a-z]?)\s*[.—–:-]")
 MARKER = re.compile(r"currently\s*§\s*(\d+)")
 
 
