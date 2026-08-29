@@ -52,6 +52,8 @@ const TNMASK_DETAIL = []
 // german_anchor_test.js.
 let GERMAN_ANCHOR_REPAIRS = 0
 const GERMAN_ANCHOR_DETAIL = []
+let GERMAN_ANCHOR_INVOCATIONS = 0        // H3665: was the repair even reached?
+const GERMAN_ANCHOR_NOT_REACHED = []     // H3665: cards nulled by a LATER guard
 // Direct eval so the extracted functions close over the locals above.
 const countOf = eval('(' + one('countOf') + ')')
 const countOfField = eval('(' + one('countOfField') + ')')

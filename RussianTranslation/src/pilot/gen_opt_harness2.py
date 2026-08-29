@@ -1833,6 +1833,11 @@ const TNMASK_DETAIL = []
 // away, and only lands when it verifies exactly source-faithful, so there is nothing to arm.
 let GERMAN_ANCHOR_REPAIRS = 0
 const GERMAN_ANCHOR_DETAIL = []
+// H3665: `german_anchor_repairs: 0` reads the same whether nothing needed repairing or the
+// repair was never reached. The batch lane keeps the same two extra counters as the headless
+// twin (headless_worker.normalize_batch), so a summary from either route is read the same way.
+let GERMAN_ANCHOR_INVOCATIONS = 0
+const GERMAN_ANCHOR_NOT_REACHED = []
 const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))
@@ -1974,6 +1979,7 @@ const accept = (c, k) => {
     // Accepted only when the repair makes the card exactly source-faithful; anything else
     // falls through to the identical reject as before. A card that passed the count above
     // never enters this branch, so clean cards are byte-untouched.
+    GERMAN_ANCHOR_INVOCATIONS++
     const rep = gaReanchor(masked, INPUTS[k].skeleton || '')
     const cand = rep.ok ? restoreCard(masked, k) : null
     const cls = cand ? countOf(cand, /<ls\\b/g) : -1, csk = cand ? countOf(cand, /\\{#/g) : -1
@@ -2007,6 +2013,9 @@ const accept = (c, k) => {
   // translation-only drop can no longer hide behind a clean source echo.
   const lsT = countOfField(c, TARGET_FIELD, /<ls\\b/g), skT = countOfField(c, TARGET_FIELD, /\\{#/g)
   if (lsT !== INPUTS[k].ls || skT !== INPUTS[k].sk) {
+    // H3665: the german-only guard above passed, so the repair branch was never entered --
+    // this card is invisible to `german_anchor_repairs` in BOTH directions. Name it.
+    GERMAN_ANCHOR_NOT_REACHED.push(k)
     noteFail(k, 'translation-fidelity-reject: <ls> ' + lsT + '/' + INPUTS[k].ls + ', {# ' + skT + '/' + INPUTS[k].sk)
     return null
   }
@@ -2513,6 +2522,10 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   tnmask_detail: TNMASK_DETAIL,
                   german_anchor_repairs: GERMAN_ANCHOR_REPAIRS,
                   german_anchor_detail: GERMAN_ANCHOR_DETAIL,
+                  // H3665: repairs 0 + invocations 0 + not_reached [k] == the repair never ran
+                  // on a card that died a fidelity death (the `hasita` no_pwg_w09 shape).
+                  german_anchor_invocations: GERMAN_ANCHOR_INVOCATIONS,
+                  german_anchor_not_reached: GERMAN_ANCHOR_NOT_REACHED,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
