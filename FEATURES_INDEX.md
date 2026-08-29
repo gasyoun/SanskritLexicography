@@ -358,7 +358,7 @@ IDs use the **`Q`** prefix. **Origin:** **N** ours-novel / non-textbook · **S**
 method in an in-house implementation · **A** adapted from a named external source · **X** external,
 consumed not implemented. Rows collapse tight method-families; the exhaustive ~70-method sweep behind
 this section (every path verified) is recorded in
-[H1202](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1202-Opus_SanskritLexicography_features-index-methods-algorithms-section-q_17.07.26.md).
+[H1202](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1202-Opus_SanskritLexicography_features-index-methods-algorithms-section-q_17.07.26.md).
 Several rows pair with a tool/stack entry above — Q2 ↔ L1 (`sanskrit-util`), Q15–Q16 ↔ M14 (`vidyut`),
 Q5 ↔ Charles Li's helayo.
 
