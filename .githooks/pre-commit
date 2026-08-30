@@ -14,6 +14,16 @@
 #
 # Escape hatch: ALLOW_MAIN_TREE_COMMIT=1 git commit ...  (deliberate override,
 # e.g. for a genuinely solo quick fix with no concurrent session risk).
+# Structured alternative (H3424): grant a trust slice covering exactly this
+# one action, never the whole escape class (fail-closed default):
+#   APPROVAL_CONFIG_JSON='{"mode":"delegated","trust":["main-tree commit"]}' git commit ...
+#
+# Wired 29-08-2026 (Uprava H3424 follow-through, H3701): before refusing, the
+# block below consults tools/approval_config.py --decide "main-tree commit".
+# Until THIS repo vendors tools/approval_config.py the lane is inert and the
+# plain block stands — fail closed either way. tools/shared_tree_guard_onboard.py
+# copies this hook into newly-onboarded sibling repos, so the emitted form
+# must stay wired.
 
 CANONICAL_MAIN_TREE="C:/Users/user/Documents/GitHub/SanskritLexicography"
 
@@ -27,6 +37,17 @@ norm_toplevel=$(printf '%s' "$toplevel" | tr 'A-Z' 'a-z' | tr '\\' '/')
 norm_canonical=$(printf '%s' "$CANONICAL_MAIN_TREE" | tr 'A-Z' 'a-z' | tr '\\' '/')
 
 if [ "$norm_toplevel" = "$norm_canonical" ]; then
+  # Trust-slice lane (H3424): ask the data-defined approval config whether
+  # this lane covers exactly "main-tree commit" before refusing.
+  AC_STATUS=0
+  AC_SCRIPT="$toplevel/tools/approval_config.py"
+  if [ -f "$AC_SCRIPT" ] && command -v python3 >/dev/null 2>&1; then
+    python3 "$AC_SCRIPT" --decide "main-tree commit" >&2 || AC_STATUS=$?
+  else
+    echo "pre-commit: approval_config.py unavailable — falling back to the plain block." >&2
+    AC_STATUS=1
+  fi
+  if [ "$AC_STATUS" -ne 0 ]; then
   echo "" >&2
   echo "BLOCKED: direct commit in the shared SanskritLexicography main tree." >&2
   echo "" >&2
@@ -36,10 +57,16 @@ if [ "$norm_toplevel" = "$norm_canonical" ]; then
   echo "" >&2
   echo "  git worktree add -b <branch> ../SanskritLexicography-<slug> origin/master" >&2
   echo "" >&2
+  echo "Structured alternative (H3424): grant a trust slice covering exactly" >&2
+  echo "this one action, never the whole escape class (fail-closed default):" >&2
+  echo "  APPROVAL_CONFIG_JSON='{\"mode\":\"delegated\",\"trust\":[\"main-tree commit\"]}' git commit ..." >&2
+  echo "" >&2
   echo "Deliberate override (solo quick fix, no concurrent-session risk):" >&2
   echo "  ALLOW_MAIN_TREE_COMMIT=1 git commit ..." >&2
   echo "" >&2
   exit 1
+  fi
+  echo "pre-commit: main-tree commit approved by approval config (trust slice above)." >&2
 fi
 
 exit 0
