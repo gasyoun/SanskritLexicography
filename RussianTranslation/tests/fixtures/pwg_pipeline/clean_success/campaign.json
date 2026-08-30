@@ -1,0 +1,29 @@
+{
+  "campaign_id": "clean_success",
+  "scope": "pwg-tm-fixture",
+  "language": "ru",
+  "route": "xai-tm",
+  "requested_model": "grok-4.6",
+  "max_calls": 8,
+  "cost_ceiling_usd": 4.0,
+  "promotable": true,
+  "promote": true,
+  "jobs": [
+    {
+      "kind": "card",
+      "source_identity": "pwg.agni.1",
+      "fragment_id": "pwg.agni.1.f1",
+      "fragment_class": "definition_gloss",
+      "source_string": "Feuer, Gott des Feuers",
+      "script": [{"mode": "ok"}]
+    },
+    {
+      "kind": "fragment",
+      "source_identity": "pwg.agni.2",
+      "fragment_id": "pwg.agni.2.f1",
+      "fragment_class": "definition_gloss",
+      "source_string": "Opferfeuer",
+      "script": [{"mode": "ok"}]
+    }
+  ]
+}
