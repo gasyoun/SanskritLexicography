@@ -13,6 +13,9 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+<!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+
+## [1.144.131] - 2026-08-30
 - **/ask — Claude Code hardening wave planned + minted (Fable 5 `claude-fable-5`, 30-08-2026).** Five-layer plan for the eight-handoff known-defect repair wave over the pwg_ru pipeline: [PLAN](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_CLAUDE_HARDENING_WAVE_2026H2.md) (+ meta) / [ROADMAP](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/ROADMAP_SanskritLexicography_CLAUDE_HARDENING_WAVE_2026H2.md) / [ARCHITECTURE](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/ARCHITECTURE_SanskritLexicography_CLAUDE_HARDENING_WAVE.md) / [IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/IMPLEMENTATION_SanskritLexicography_CLAUDE_HARDENING_WAVE.md) / [VERIFICATION](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/VERIFICATION_SanskritLexicography_CLAUDE_HARDENING_WAVE.md). 16 forks all separately ruled; autonomy gate PASS (exit 0). Handoffs H3747–H3754 minted in one batch (verified on Uprava `origin/main`): W0 #1864 gate-RED repair → W1 gate-evidence contract (#1803/#1800/#1798) → parallel W2 H1811-remainder+sibling_root, W3 provenance census (#1804), W4 homonym remap (#1801/#1767), W5 relation labels (#1736), W6 fragmentizer rejoin (GAPS §18), W7 perf top-10. Complementary to the queued OxAlpha discovery review (H3547).
 
 ## [1.144.117] - 2026-08-29
