@@ -65,10 +65,18 @@ def scan_body(text):
             for m in _HIT.finditer(prose)]
 
 
+#: The store FILE the gate guards, resolved the canonical way (H805). H3547:
+#: ``gate()`` used to pass the bare ``HERE`` directory to ``canonical_store``, so on
+#: the main checkout (and in CI) the resolver handed back the directory itself, the
+#: open raised ``IsADirectoryError``, and the live-store leg silently degraded to the
+#: selftest's "skip — store not on this machine" branch while still reporting PASS.
+_DEFAULT_STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
+
+
 def gate(store_path=None, field="ru"):
     """``(hits, rows_scanned)`` over the whole store. ``hits`` empty means pass."""
     hits, rows = [], 0
-    with io.open(store_path or canonical_store(HERE), encoding="utf-8") as fh:
+    with io.open(store_path or _DEFAULT_STORE, encoding="utf-8") as fh:
         for line in fh:
             line = line.strip()
             if not line:
@@ -116,6 +124,15 @@ def selftest():
     # ---- no substring false positives
     check(scan_body("Akkusativ") == [], "a longer word is not a bare marker")
     check(scan_body("Instrumental") == [], "Instrumental is not Instr")
+
+    # ---- H3547 regression: the default target must be the store FILE, never
+    # a directory. The old `canonical_store(HERE)` call resolved to the src/
+    # directory itself on the main checkout (canonical_store returns its
+    # local_default unchanged there), so open() raised IsADirectoryError and
+    # the live-store leg below silently skipped while the gate reported PASS.
+    check(_DEFAULT_STORE.endswith("pwg_ru_translated.jsonl"),
+          "default gate target is the store file, not a directory: %r"
+          % _DEFAULT_STORE)
 
     # ---- the live store, which is the actual acceptance
     try:
