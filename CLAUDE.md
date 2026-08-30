@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 28-08-2026_
+_Created: 06-08-2026 · Last updated: 31-08-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -148,6 +148,16 @@ of every fix as SHARED / INTENTIONAL-DIVERGENCE / GAP before closing a
 session, mechanically enforced by a selftest gate:
 [`RussianTranslation/LANG_PARITY.md`](RussianTranslation/LANG_PARITY.md).
 Live session journal: [`RussianTranslation/.ai_state.md`](RussianTranslation/.ai_state.md).
+**Control plane (H3714, Wave 1, 31-08-2026):**
+[`RussianTranslation/src/pwg_pipeline/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src/pwg_pipeline) is the
+supported facade for the PWG lifecycle — one transactional campaign database, one shared
+paid-call kernel, pure audit, and journal-only promotion. It is a *strangler layer*: the
+proven Claude headless engine is shadowed, not rewritten, and the legacy PWG-TM writers
+still run (see
+[`compat.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_pipeline/compat.py) for the verb map and the
+criterion that would disable them). Wave 1 closed **PARTIAL** — no provider canary and no
+independent review receipt yet, so no cutover:
+[WAVE1_REPORT](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WAVE1_REPORT_RussianTranslation_PWG_CONTROL_PLANE_31-08-2026.md).
 Control-plane tools (FEATURES_INDEX **L11**):
 [`cohort_engine.py`](RussianTranslation/src/pilot/cohort_engine.py) (offline multi-profile),
 [`no_pwg_residual_ledger.py`](RussianTranslation/src/pilot/no_pwg_residual_ledger.py) (C-49).

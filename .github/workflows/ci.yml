@@ -205,6 +205,22 @@ jobs:
           python src/pwg_tm_migrate_v1.py --verify
           python src/pwg_tm_fragmentize.py --verify
           python src/pwg_tm_priority.py --verify --limit 5000
+      - name: PWG control-plane Wave-1 offline gate (H3714)
+        working-directory: RussianTranslation
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m pytest -q \
+            tests/test_pwg_pipeline_model.py \
+            tests/test_pwg_pipeline_repository.py \
+            tests/test_pwg_pipeline_validation.py \
+            tests/test_pwg_pipeline_replay.py \
+            tests/test_pwg_pipeline_faults.py \
+            tests/test_pwg_pipeline_compat.py \
+            tests/test_pwg_pipeline_review.py \
+            tests/test_pwg_pipeline_canary.py
+          python -m pwg_pipeline replay --matrix tests/fixtures/pwg_pipeline --exact
+          python -m pwg_pipeline compat
       - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
         working-directory: RussianTranslation
         run: |

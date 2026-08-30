@@ -1,0 +1,22 @@
+{
+  "schema": "pwg.pipeline.replay_matrix_manifest.v1",
+  "description": "The four frozen Wave-1 replay campaigns (R4.2).",
+  "campaigns": [
+    {
+      "name": "clean_success",
+      "proves": "exact card/fragment completion and scratch promotion"
+    },
+    {
+      "name": "partial_requeue",
+      "proves": "mixed clean/null/defect results with identity-exact apply intents"
+    },
+    {
+      "name": "provider_timeout",
+      "proves": "a terminal reserved call with no retry and no promotable artifact"
+    },
+    {
+      "name": "promotion_interrupt",
+      "proves": "recovery after store commit and before database commit"
+    }
+  ]
+}
