@@ -9,7 +9,9 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
+<!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.130] - 2026-08-30
 ### Planned — H3714 PWG translation control-plane strangler
 
 - **Architecture audit and execution packet (Codex Sol (`gpt-5.6-sol`), 30-08-2026; no paid calls).** The `/ask` interview resolved all 27 design rulings and found a mixed verdict: preserve the proven Claude manifest/worker/gates and promotion-journal primitives, but replace the divergent PWG-TM/xAI control path with one transactional campaign database, one shared xAI/DeepSeek paid-call kernel, pure audit, and journal-only promotion. The audit also fenced direct unreserved xAI dispatch, misleading fragment-level accounting, non-atomic refill/migration writes, conflicting promotion authorities, and 79 canonical rows containing 609 unresolved `{Tn}` occurrences in nested payloads. The six-layer durable packet starts at [PLAN_RussianTranslation_PWG_CONTROL_PLANE_STRANGLER_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_PWG_CONTROL_PLANE_STRANGLER_2026H2.md); execution is queued as [H3714](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3714-Codex_SanskritLexicography_pwg-control-plane-strangler-wave1_30.08.26.md). No production code, canonical data, prompt, translation policy, or live provider call changed in this planning pass.
