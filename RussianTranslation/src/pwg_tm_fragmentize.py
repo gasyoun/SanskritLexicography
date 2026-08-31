@@ -35,6 +35,29 @@ NATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
 SA_FULL = SAN_RE
 GLOSS_FULL = GLOSS_RE
 
+# H3753 (GAPS §18): GLOSS_RE matches each `{%...%}` run independently, so a
+# gloss whose two halves sit on either side of a single `<is>...</is>` span
+# (source/siglum text, common inside PWG definitions) was emitted as two
+# unrelated fragments — one of them often a bare orphan like `{%die%}` with
+# no lexical content (viSveSa 2: `{%die%} <is>Viśve Devāḥ</is>
+# {%zur Gottheit habend%}` is ONE gloss). Rejoin such pairs into a single
+# `{%...%}` span, chains included, before the gloss extraction below so the
+# whole gloss is fragmented and translated as one unit; the other extractors
+# (citation/example/<ab>/<lex>) still see the untouched text.
+_IS_GLOSS_JOIN = re.compile(
+    r'\{%(.*?)%\}\s*(<is\b[^>]*>.*?</is>)\s*\{%(.*?)%\}', re.S)
+
+
+def _rejoin_is_interrupted_glosses(text):
+    if not text or '<is' not in text:
+        return text
+    prev = None
+    while prev != text:
+        prev = text
+        text = _IS_GLOSS_JOIN.sub(
+            lambda m: '{%%%s %s %s%%}' % m.groups(), text)
+    return text
+
 # H2876: the German-apparatus token inventories now live in ONE canonical place —
 # sanskrit-util (GERMAN_GRAMMAR_AB / GERMAN_FORMULA_AB / GERMAN_FORMULA_PHRASES,
 # loaded via the src/sanskrit_util.py shim). This module keeps NO private copy.
@@ -117,8 +140,10 @@ def extract_from_sense(parent, tag, german, russian, rec_h, ordinal, mapped):
     rows = []
     rows.append(fragment_row(
         parent, 'sense', german, russian, ordinal, tag, rec_h, mapped))
-    for i, (src, tgt) in enumerate(_pair(_spans(GLOSS_FULL, german),
-                                         _spans(GLOSS_FULL, russian)), 1):
+    gloss_german = _rejoin_is_interrupted_glosses(german)
+    gloss_russian = _rejoin_is_interrupted_glosses(russian)
+    for i, (src, tgt) in enumerate(_pair(_spans(GLOSS_FULL, gloss_german),
+                                         _spans(GLOSS_FULL, gloss_russian)), 1):
         rows.append(fragment_row(
             parent, 'definition_gloss', src, tgt, ordinal * 1000 + i, tag, rec_h, mapped))
     lex_pairs = _pair(_spans(LEX_FULL, german), _spans(LEX_FULL, russian))
