@@ -101,8 +101,10 @@ def test_pwg_page_index_annotate_is_locked(tmp_path):
 
     _held_claim_refuses(store, lambda: pwg_page_index.annotate_cards([], store))
 
-    matched, unmatched, total = pwg_page_index.annotate_cards([], store)
-    assert (matched, unmatched, total) == (0, 2, 2)
+    # H3751 / #1801: `ambiguous` is its own counter now -- it used to be folded into
+    # `matched`, so the operator statistic reported success on the homograph-pooled guess.
+    matched, ambiguous, unmatched, total = pwg_page_index.annotate_cards([], store)
+    assert (matched, ambiguous, unmatched, total) == (0, 0, 2, 2)
     backups = [f for f in os.listdir(str(tmp_path)) if '.pwgidx.' in f]
     assert backups, 'locked annotate must leave its per-run backup'
 

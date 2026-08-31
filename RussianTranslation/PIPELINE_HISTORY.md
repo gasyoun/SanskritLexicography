@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 10-08-2026_
+_Created: 04-07-2026 · Last updated: 31-08-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -1018,6 +1018,24 @@ editor-facing:
 [pwg_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md);
 deep manual:
 [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
+
+### H3751 — `~~h<N>` was never a homonym number, and the counter that watched it said "matched" (31-08-2026)
+
+Do not read a sub-card key's `~~h<N>` as a printed homonym. It is the 0-based
+`enumerate` position `_pilot_gen_merged.gen_root_split` assigned over the
+headword's PWG record list, and that list interleaves homonyms with `<h>`-less
+Nachträge from later volumes (`Ap` = four records, zero `<h>`; `As` =
+`<h>1`/`<h>2`/`<h>3` plus two more `<h>2` Nachträge). `pwg_page_index` compared
+it against the source `<h>` — which starts at 1 — so `~~h0_` never matched,
+selection fell back to every record sharing the `key1`, and the card's
+`column`/`volume`/`page` came from the **lowest column across all homographs**:
+1,278 of 5,205 mappable pwg-layer rows, shipped into the DE edition graph beside
+a `pwglex:homonym` label ([#1801](https://github.com/gasyoun/SanskritLexicography/issues/1801)).
+Resolve **positionally** through [`pwg_homonym.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_homonym.py)
+— the one module that knows what the token means — and omit the scalars rather
+than guess when the index addresses no record. The rewrite was ledgered (1,969
+rows, `delta == ledger`, `changed_ru=0`); the sub-card key text is deliberately
+unchanged, because it is the identity of 11k promoted rows. FINDINGS §617.
 
 ## Where to go next
 
