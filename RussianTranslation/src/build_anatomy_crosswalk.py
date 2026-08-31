@@ -20,12 +20,14 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 from rt_io import load_json  # noqa: E402
 
-CSL_ATLAS_PARSE_RULES = os.path.join(HERE, '..', '..', '..', 'csl-atlas', 'data', 'parse-rules', 'pwg.json')
+CSL_ATLAS_PARSE_RULES = os.path.join(GITHUB, 'csl-atlas', 'data', 'parse-rules', 'pwg.json')
 PORTRAIT_SCHEMA = os.path.join(HERE, '..', 'schemas', 'pwg_ru_lexicographic_portrait.schema.json')
 
 # Portrait field a machine tag surfaces as, in microstructure.py's output

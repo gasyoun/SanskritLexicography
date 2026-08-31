@@ -27,7 +27,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-WROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'WhitneyRoots'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+WROOT = os.path.normpath(os.path.join(GITHUB, 'WhitneyRoots'))
 CROSSWALK = os.path.join(WROOT, 'crosswalk', 'roots.csv')
 GRAMMAR_REFS = os.path.join(WROOT, 'src', 'grammar_refs.json')
 LOCAL = os.path.join(HERE, 'whitney_grammar.json')

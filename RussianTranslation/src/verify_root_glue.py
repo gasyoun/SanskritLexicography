@@ -35,12 +35,14 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 sys.path.insert(0, os.path.join(HERE, '..', 'research'))
 sys.path.insert(0, HERE)
 import root_segment_proto as RS                       # noqa: E402  segment()/glue()/read_record()
 from safe_filename import safe_name                    # noqa: E402
 
-PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
+PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
 INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
 NAMED_GIANT = ['55166', '21814', '72578']              # bhū + both gam homonyms (the doc's probes)

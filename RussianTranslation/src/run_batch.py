@@ -33,6 +33,8 @@ from store_write import locked_store_rewrite  # H2146/H3350 locked writer
 from promote_lock import PromoteClaim
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
 STORE = os.environ.get('PWG_RU_STORE') or os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -62,7 +64,7 @@ def _prompt_set_sha():
 
 
 def _pwg_commit():
-    repo = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig'))
+    repo = os.path.normpath(os.path.join(GITHUB, 'csl-orig'))
     try:
         r = subprocess.run(['git', '-C', repo, 'rev-parse', '--short', 'HEAD'],
                            capture_output=True, text=True, timeout=10)
