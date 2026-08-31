@@ -542,7 +542,31 @@ def main(argv=None):
     ap.add_argument('--show', metavar='SIDECAR', help='pretty-print one evidence sidecar')
     ap.add_argument('--registry', action='store_true',
                     help='print the legitimate-empty registry (the W1 spike output)')
+    ap.add_argument('--require', action='append', metavar='GATE_ID[=PATH]', default=[],
+                    help='CI consumer check: fail unless this gate left a passing, '
+                         'non-vacuous sidecar. PATH defaults to the gate default_sidecar.')
+    ap.add_argument('--require-verdict', default='pass',
+                    help='verdict --require expects (default: pass)')
     args = ap.parse_args(argv)
+    if args.require:
+        # ARCHITECTURE §1: after W1, a missing sidecar means the gate did not run the
+        # contract — itself a FAIL. This is the CI half of that sentence.
+        failures = []
+        for spec in args.require:
+            gate_id, _, path = spec.partition('=')
+            path = path or default_sidecar(gate_id)
+            try:
+                payload = require_sidecar(path, gate_id=gate_id,
+                                          verdict=args.require_verdict)
+            except (MissingEvidenceError, KeyError) as exc:
+                failures.append(str(exc))
+            else:
+                print('evidence OK  %-30s %s (%d unit(s), %d evaluation(s), %d hit(s))'
+                      % (gate_id, payload['vacuity'], payload['units_examined'],
+                         payload['evaluations'], payload['hits']))
+        for line in failures:
+            print('MISSING GATE EVIDENCE: %s' % line, file=sys.stderr)
+        return 1 if failures else 0
     if args.show:
         print(json.dumps(load_sidecar(args.show), ensure_ascii=False, indent=2))
         return 0
