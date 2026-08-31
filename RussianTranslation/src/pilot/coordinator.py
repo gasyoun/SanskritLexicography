@@ -294,11 +294,18 @@ def load_state():
 
 
 def prepare_state_for_save(state, updated_at=None):
-    """Normalize state exactly once so promotion can seal the bytes before replacement."""
+    """Normalize state exactly once so promotion can seal the bytes before replacement.
+
+    Returns (paths, running) -- `running` is the running-translation-lease scan this
+    function already had to do to compute runtime_mode/runtime_limit. save_state passes
+    it on to write_dashboard so the immediately-following dashboard write does not repeat
+    an expire_stale_leases + running_translation_leases scan over an unchanged state
+    (H3754 W7: measured redundant full-lease-list rescans in the claim/save hot path).
+    """
     p = ensure_dirs()
     expire_stale_leases(state)
     normalize_lease_reservations(state)
-    running = running_translation_leases(state)
+    running = running_translation_leases(state, skip_expire=True)
     state['runtime_mode'] = ('staged-probed' if any(
         lease.get('runtime_mode') == 'staged-probed' for lease in running) else 'standard')
     state['runtime_limit'] = (max(
@@ -306,7 +313,7 @@ def prepare_state_for_save(state, updated_at=None):
         default=TRANSLATION_LIMIT) if state['runtime_mode'] == 'staged-probed'
                               else TRANSLATION_LIMIT)
     state['updated_at'] = updated_at or utc_now()
-    return p
+    return p, running
 
 
 def serialized_state(state):
@@ -314,9 +321,11 @@ def serialized_state(state):
 
 
 def save_state(state, updated_at=None):
-    p = prepare_state_for_save(state, updated_at=updated_at)
+    p, running = prepare_state_for_save(state, updated_at=updated_at)
     atomic_write_json(p['state'], state, indent=1)
-    write_dashboard(state)
+    # expire_stale_leases already ran (inside prepare_state_for_save, above); reuse it.
+    reserved = reserved_translation_leases(state, skip_expire=True)
+    write_dashboard(state, running=running, reserved=reserved)
 
 
 def terminal_state(state):
@@ -438,16 +447,23 @@ def active_reserved_nominal_keys(state, exclude_lease_id=None, strict=True):
     return reserved
 
 
-def reserved_translation_leases(state):
-    expire_stale_leases(state)
+def reserved_translation_leases(state, skip_expire=False):
+    """`skip_expire=True` is an opt-in for a caller that already ran expire_stale_leases
+    on this exact state object earlier in the same synchronous call (H3754 W7: the
+    default re-scan is a measured hotspot when several derived views are read back to
+    back in the claim/save path -- see prepare_state_for_save / save_state)."""
+    if not skip_expire:
+        expire_stale_leases(state)
     return [
         lease for lease in state.get('leases', [])
         if translation_lease(lease) and not terminal_state(lease.get('state'))
     ]
 
 
-def running_translation_leases(state):
-    expire_stale_leases(state)
+def running_translation_leases(state, skip_expire=False):
+    """See reserved_translation_leases' skip_expire note."""
+    if not skip_expire:
+        expire_stale_leases(state)
     return [
         lease for lease in state.get('leases', [])
         if translation_lease(lease) and lease.get('state') in ('running', 'auditing')
@@ -2551,10 +2567,16 @@ def daily_close(args):
         raise SystemExit(1)
 
 
-def write_dashboard(state, daily=None):
+def write_dashboard(state, daily=None, running=None, reserved=None):
+    """`running`/`reserved` let a caller that already scanned this exact state (e.g.
+    save_state, right after prepare_state_for_save) pass the result through instead of
+    triggering another expire_stale_leases + full lease-list scan (H3754 W7)."""
     p = ensure_dirs()
     leases = state.get('leases', [])
-    running = running_translation_leases(state)
+    if running is None:
+        running = running_translation_leases(state)
+    if reserved is None:
+        reserved = reserved_translation_leases(state)
     runtime_mode = ('staged-probed' if any(
         lease.get('runtime_mode') == 'staged-probed' for lease in running) else 'standard')
     runtime_limit = (state.get('runtime_limit', STAGED_TRANSLATION_LIMIT)
@@ -2564,7 +2586,7 @@ def write_dashboard(state, daily=None):
         'schema': DASHBOARD_SCHEMA,
         'generated_at': utc_now(),
         'translation_limit': state.get('translation_limit', TRANSLATION_LIMIT),
-        'reserved_translation_leases': len(reserved_translation_leases(state)),
+        'reserved_translation_leases': len(reserved),
         'running_translation_leases': len(running),
         'runtime_limit': runtime_limit,
         'runtime_mode': runtime_mode,
