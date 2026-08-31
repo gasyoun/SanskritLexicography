@@ -626,6 +626,91 @@ def pin_prompt_compiler_golden():
             pc.FIXTURE_DIR = prior
 
 
+# --------------------------------------------------------------------------- #
+# G9 (#1798) — released interop artifact validity
+# --------------------------------------------------------------------------- #
+
+ROOT = os.path.dirname(SRC)
+DUPE_FIXTURE = os.path.join(SRC, 'fixtures', 'interop_duplicate_ids')
+CLEAN_FIXTURE = os.path.join(SRC, 'fixtures', 'assembled_card.fixture.jsonl')
+
+
+@pin('interop_validity (G9, #1798)')
+def pin_interop_validity():
+    import subprocess
+
+    import validate_interop as vi
+
+    with scratch_evidence() as td:
+        # (a) THE RED PIN. A TEI with a repeated xml:id and a Turtle with a repeated
+        #     subject. Pre-fix master printed `interop validation OK` over both: ET has
+        #     no ID awareness, and validate_ontolex never parsed Turtle at all — it was
+        #     text.count('ontolex:LexicalEntry'), which passes on a file consisting
+        #     solely of that literal string.
+        side = os.path.join(td, 'dupe.evidence.json')
+        assert vi.main(['--dir', DUPE_FIXTURE, '--evidence', side]) == 1
+        payload = ge.load_sidecar(side)
+        assert payload['verdict'] == 'fail', payload
+        by_name = {p['name']: p for p in payload['predicates_evaluated']}
+        assert by_name['tei_entry_id_uniqueness']['hits'] == 1, by_name
+        assert by_name['ontolex_subject_uniqueness']['hits'] == 1, by_name
+        assert payload['notes']['tei_distinct_ids'] == 2, payload
+        assert payload['notes']['ontolex_distinct_subjects'] == 2, payload
+
+        # (b) The clean export of the committed one-card fixture still validates, and
+        #     the record now carries distinct-id counts rather than a bare entry count.
+        clean = os.path.join(td, 'clean')
+        subprocess.run([sys.executable, os.path.join(SRC, 'export_interop.py'), 'all',
+                        '--cards', CLEAN_FIXTURE, '--out-dir', clean],
+                       check=True, capture_output=True)
+        side2 = os.path.join(td, 'clean.evidence.json')
+        assert vi.main(['--dir', clean, '--evidence', side2]) == 0
+        payload2 = ge.require_sidecar(side2, gate_id='interop_validity')
+        assert payload2['vacuity'] == 'worked' and payload2['hits'] == 0, payload2
+        assert payload2['notes']['tei_distinct_ids'] == 1, payload2
+        assert_missing_sidecar_fails(side2, 'interop_validity')
+
+        # (c) An EMPTY release dir. This gate has no legitimately-empty input class — a
+        #     release with zero entries is never valid — so it fails rather than passing
+        #     vacuously, and every named input is recorded as absent.
+        empty = os.path.join(td, 'empty')
+        os.makedirs(empty)
+        side3 = os.path.join(td, 'empty.evidence.json')
+        assert vi.main(['--dir', empty, '--evidence', side3]) == 1
+        payload3 = ge.load_sidecar(side3)
+        assert payload3['verdict'] == 'fail' and payload3['vacuity'] == 'vacuous', payload3
+        assert all(i['exists'] is False for i in payload3['inputs_examined']), payload3
+
+
+@pin('interop_validity on OUR data (release/, #1798)')
+def pin_interop_validity_on_release():
+    """The own-data half: the SHIPPED artifacts, not a fixture.
+
+    Skips (loudly) when `release/tei_lex0.xml` is absent from the checkout. The RDF half
+    is deliberately not re-parsed here — a 650k-triple rdflib parse is minutes, and the
+    TEI half is the same finding on the same 12,374 ids.
+    """
+    import validate_interop as vi
+
+    tei = os.path.join(ROOT, 'release', 'tei_lex0.xml')
+    if not os.path.exists(tei):
+        print('     (skipped: %s is not in this checkout)' % tei)
+        return
+    try:
+        vi.validate_tei(tei)
+    except ValueError as exc:
+        # #1798 measured 120,173 ids / 106,082 distinct / 12,374 duplicated values.
+        # Reproduced here against the shipped bytes, through the gate that used to
+        # report them as validating.
+        assert '12374 duplicated value(s)' in str(exc), str(exc)
+        assert 'pwg-ac x6' in str(exc), str(exc)
+    else:
+        raise AssertionError(
+            'release/tei_lex0.xml validated clean — either it was re-cut (step 2 of '
+            '#1798, a publication decision) or the duplicate-id predicate regressed. '
+            'Re-measure before changing this pin.')
+
+
 def main():
     failures = []
     for name, fn in PINS:
