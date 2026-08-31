@@ -570,6 +570,62 @@ def pin_corpus_gate_coverage():
             cg.SOURCES_PRESENT.update(prior)
 
 
+# --------------------------------------------------------------------------- #
+# C3-1 — prompt-compiler golden reconstruction
+# --------------------------------------------------------------------------- #
+
+@pin('prompt_compiler_golden (C3-1)')
+def pin_prompt_compiler_golden():
+    import shutil
+
+    import prompt_compiler as pc
+
+    with scratch_evidence() as td:
+        fixtures = os.path.join(td, 'fixtures')
+        os.makedirs(fixtures)
+        for name in pc.GOLDEN_NAMES:
+            shutil.copy(os.path.join(pc.FIXTURE_DIR, name), os.path.join(fixtures, name))
+        prior = pc.FIXTURE_DIR
+        pc.FIXTURE_DIR = fixtures                       # hermetic: never the tracked dir
+        try:
+            side = os.path.join(td, 'pc.evidence.json')
+
+            # (a) Committed goldens intact: the selftest passes and the record says the
+            #     goldens were NOT rewritten, so the reconstruction really was against
+            #     stored bytes.
+            assert pc.selftest(evidence_path=side) == 0
+            payload = ge.require_sidecar(side, gate_id='prompt_compiler_golden')
+            assert payload['notes']['goldens_rewritten'] == [], payload
+            assert not payload['warnings'], payload['warnings']
+            assert len(payload['inputs_examined']) == 2, payload
+            assert all(i['sha256'] for i in payload['inputs_examined']), payload
+            assert_missing_sidecar_fails(side, 'prompt_compiler_golden')
+
+            # (b) THE C3-1 SHAPE. Perturb a golden; write_golden_fixtures() overwrites it
+            #     and the selftest then "compares" against what it just wrote — and still
+            #     prints PASS, exactly as on pre-fix master. The predicate is unchanged
+            #     (fixing the self-comparison is out of W1 scope); what is new is that the
+            #     record names the rewritten file and carries the C3-1 warning, so a green
+            #     line can no longer imply a comparison that did not happen.
+            victim = os.path.join(fixtures, pc.GOLDEN_NAMES[0])
+            with open(victim, 'a', encoding='utf-8') as f:
+                f.write('\n')
+            assert pc.selftest(evidence_path=side) == 0
+            payload2 = ge.load_sidecar(side)
+            assert payload2['notes']['goldens_rewritten'] == [pc.GOLDEN_NAMES[0]], payload2
+            assert any('C3-1' in w and 'against itself' in w
+                       for w in payload2['warnings']), payload2['warnings']
+            # ...and the weak predicate is recorded APART from the two strong ones, with
+            # its weakness named in the record rather than in a comment nobody reads.
+            golden = [p for p in payload2['predicates_evaluated']
+                      if p['name'] == 'golden_request_id_reconstruction'][0]
+            assert 'self-referential' in golden['detail'], golden
+            names = {p['name'] for p in payload2['predicates_evaluated']}
+            assert 'live_builder_oracle' in names and 'identity_mutation' in names, names
+        finally:
+            pc.FIXTURE_DIR = prior
+
+
 def main():
     failures = []
     for name, fn in PINS:
