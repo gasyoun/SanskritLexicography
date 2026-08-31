@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-25T14:23:37Z",
+ "generated_at": "2026-08-31T02:51:38Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 238,
+  "total": 270,
   "by_importance": {
-   "3": 77,
-   "2": 131,
+   "3": 103,
+   "2": 137,
    "1": 30
   },
   "by_origin": {
    "auto": 0,
-   "human": 238
+   "human": 270
   }
  },
  "layers": [
@@ -101,15 +101,15 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 14,
+   "total": 16,
    "by_importance": {
     "3": 2,
-    "2": 9,
+    "2": 10,
     "1": 2
    },
    "by_origin": {
     "auto": 0,
-    "human": 14
+    "human": 16
    },
    "categories": 3,
    "interlinks": 6,
@@ -197,6 +197,18 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#14-ls-citation-graph-mw-lane-canon-core-builds-on-it-cite-4axis-rejects-it-as-an-artifact-generator"
+    },
+    {
+     "title": "§15. `nominal_batch_worklist.json`: one audit calls it a NOT-A-RISK regenerable worklist, the other shows it cannot be rebuilt at all",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#15-nominalbatchworklistjson-one-audit-calls-it-a-not-a-risk-regenerable-worklist-the-other-shows-it-cannot-be-rebuilt-at-all"
+    },
+    {
+     "title": "§16. Style-guide §12.2 says never translate an apparatus span; the independent gate rewards translating one, because the span is a clause fragment and not apparatus",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#16-style-guide-122-says-never-translate-an-apparatus-span-the-independent-gate-rewards-translating-one-because-the-span-is-a-clause-fragment-and-not-apparatus"
     }
    ]
   },
@@ -204,25 +216,19 @@
    "key": "GAPS",
    "act": "not-yet-knowing (the frontier)",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
-   "total": 15,
+   "total": 17,
    "by_importance": {
     "3": 1,
-    "2": 6,
+    "2": 7,
     "1": 8
    },
    "by_origin": {
     "auto": 5,
-    "human": 10
+    "human": 12
    },
    "categories": 3,
-   "interlinks": 12,
+   "interlinks": 11,
    "entries": [
-    {
-     "title": "§1. Derivative ī/ū gen.pl accent split (D3) — n=2, unresolvable",
-     "importance": 1,
-     "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#1-derivative-īū-genpl-accent-split-d3--n2-unresolvable"
-    },
     {
      "title": "§2. Error population of 40 of 43 dictionaries",
      "importance": 2,
@@ -252,6 +258,24 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#6-cyrillic-only-sanskrit-name-glossaries--no-join-key-exists"
+    },
+    {
+     "title": "§16. 289 rows of the live pwg_ru store carry an `Instr.`→`Ins.` / `Akk.`→`Acc.` case-label rewrite that no repo script produces and the mirror lacks",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#16-289-rows-of-the-live-pwgru-store-carry-an-instrins--akkacc-case-label-rewrite-that-no-repo-script-produces-and-the-mirror-lacks"
+    },
+    {
+     "title": "§17. Nothing gates a *promoted* pwg_ru fragment on its own surface form — untranslated German and translated `<ab>` tokens both reached the promoted tier",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#17-nothing-gates-a-promoted-pwgru-fragment-on-its-own-surface-form--untranslated-german-and-translated-ab-tokens-both-reached-the-promoted-tier"
+    },
+    {
+     "title": "§18. The fragmentizer splits DISCONTINUOUS glosses at `<is>` boundaries, orphaning fragments that cannot be translated at all",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#18-the-fragmentizer-splits-discontinuous-glosses-at-is-boundaries-orphaning-fragments-that-cannot-be-translated-at-all"
     },
     {
      "title": "§7. `dcs-stem-cooccurrence-full` (353,352 stem-pair rows) is uncharacterised",
@@ -625,19 +649,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 189,
+  "rows": 193,
   "auto": 120,
-  "human": 69,
+  "human": 73,
   "by_importance": {
    "3": 25,
-   "2": 37,
+   "2": 39,
    "1": 12
   },
   "layers": 7,
-  "entry_rows": 75,
+  "entry_rows": 79,
   "candidates": 6,
   "categories": 21,
-  "interlinks": 62,
-  "findings": 238
+  "interlinks": 61,
+  "findings": 270
  }
 }
