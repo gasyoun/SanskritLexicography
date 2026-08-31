@@ -526,6 +526,73 @@ def test_h5_corrupt_status_report_is_a_typed_audit_error():
           'error and fails closed, not a silent unknown')
 
 
+def test_h3754_save_state_dashboard_reuse_matches_full_rescan():
+    """H3754 W7 -- save_state now threads the running/reserved lease scans it already
+    computed in prepare_state_for_save through to write_dashboard instead of letting
+    write_dashboard rescan (and re-run expire_stale_leases) from scratch. Pin that the
+    reused-scan path and a from-scratch write_dashboard() call agree byte-for-byte on a
+    state with a mix of terminal, running, and TTL-expiring leases, and that
+    reserved/running_translation_leases(skip_expire=True) never diverges from the
+    default full-rescan call when nothing changed the lease list in between."""
+    with tempfile.TemporaryDirectory() as tmp:
+        saved_coord_dir = os.environ.get('PWG_COORDINATOR_DIR')
+        os.environ['PWG_COORDINATOR_DIR'] = os.path.join(tmp, 'coord')
+        try:
+            past = (coordinator.datetime.datetime.now(coordinator.datetime.timezone.utc)
+                    - coordinator.datetime.timedelta(hours=8)).isoformat(
+                        timespec='seconds').replace('+00:00', 'Z')
+            state = coordinator.default_state()
+            state['leases'] = [
+                {'id': 'promoted-1', 'kind': 'verb', 'target': 'root1', 'state': 'promoted'},
+                {'id': 'running-1', 'kind': 'verb', 'target': 'root2', 'state': 'running'},
+                {'id': 'claimed-expiring', 'kind': 'verb', 'target': 'root3',
+                 'state': 'claimed', 'created_at': past, 'expires_at': past},
+            ]
+
+            # save_state's internal skip_expire=True reuse must match a plain full rescan.
+            reused_running = coordinator.running_translation_leases(state, skip_expire=True)
+            fresh_running = coordinator.running_translation_leases(state)
+            if reused_running != fresh_running:
+                raise AssertionError('skip_expire reuse diverged on running leases: %r vs %r'
+                                     % (reused_running, fresh_running))
+            reused_reserved = coordinator.reserved_translation_leases(state, skip_expire=True)
+            fresh_reserved = coordinator.reserved_translation_leases(state)
+            if reused_reserved != fresh_reserved:
+                raise AssertionError('skip_expire reuse diverged on reserved leases: %r vs %r'
+                                     % (reused_reserved, fresh_reserved))
+
+            coordinator.save_state(state)
+            with open(coordinator.paths()['dashboard'], encoding='utf-8') as f:
+                via_save_state = json.load(f)
+
+            # A from-scratch write_dashboard(state) (no running/reserved passed) must
+            # produce the identical payload modulo its own fresh generated_at stamp.
+            coordinator.write_dashboard(state)
+            with open(coordinator.paths()['dashboard'], encoding='utf-8') as f:
+                via_full_rescan = json.load(f)
+            via_save_state.pop('generated_at', None)
+            via_full_rescan.pop('generated_at', None)
+            if via_save_state != via_full_rescan:
+                raise AssertionError(
+                    'reused-scan dashboard diverged from a from-scratch rescan:\n'
+                    'reused=%r\nrescan=%r' % (via_save_state, via_full_rescan))
+
+            # And the TTL-expired lease must actually have flipped to terminal -- the
+            # optimization must not have skipped the one expire_stale_leases call that
+            # matters (the one inside prepare_state_for_save).
+            expired = [l for l in state['leases'] if l['id'] == 'claimed-expiring'][0]
+            if expired['state'] != 'expired':
+                raise AssertionError('TTL-expired lease was not expired by save_state: %r'
+                                     % expired)
+        finally:
+            if saved_coord_dir is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = saved_coord_dir
+    print('  H3754 W7: save_state/write_dashboard scan reuse matches a full rescan '
+          'byte-for-byte; TTL expiry still fires exactly once')
+
+
 def main():
     test_preflight_fail_closed()
     test_record_output_batch_progress()
@@ -535,6 +602,7 @@ def main():
     test_h8_claim_preflight_timeout_unwinds_clean()
     test_h4_claim_rejects_duplicate_lease_id()
     test_h5_corrupt_status_report_is_a_typed_audit_error()
+    test_h3754_save_state_dashboard_reuse_matches_full_rescan()
     print('coordinator_hardening_selftest: PASS')
 
 
