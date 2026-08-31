@@ -153,6 +153,23 @@ def sidecar_for(report_path):
     return str(report_path) + SIDECAR_SUFFIX
 
 
+#: Where gates that have no report file of their own put their sidecar. Under
+#: ``src/pilot/output/`` (gitignored telemetry, never a tracked artifact), and
+#: redirectable so a selftest or a CI step can point the whole family at scratch.
+EVIDENCE_DIR_ENV = 'PWG_GATE_EVIDENCE_DIR'
+_DEFAULT_EVIDENCE_DIR = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'output', 'gate_evidence')
+
+
+def evidence_dir():
+    return os.environ.get(EVIDENCE_DIR_ENV) or _DEFAULT_EVIDENCE_DIR
+
+
+def default_sidecar(gate_id):
+    """Sidecar path for a gate whose verdict is an exit code, not a report file."""
+    return os.path.join(evidence_dir(), gate_id + SIDECAR_SUFFIX)
+
+
 class GateEvidence(object):
     """What one gate examined, what it evaluated, and what it concluded."""
 
