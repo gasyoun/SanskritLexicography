@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-31T03:47:57Z",
+ "generated_at": "2026-08-31T04:33:15Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 272,
+  "total": 274,
   "by_importance": {
    "2": 137,
-   "1": 31,
-   "3": 104
+   "1": 32,
+   "3": 105
   },
   "stale": 0
  },
@@ -2458,6 +2458,24 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#618-a-939-row-static-io-in-loop-census-overstated-coordinatorpys-real-hotspots-by-roughly-two-orders-of-magnitude--cprofile-on-a-realistic-fixture-found-exactly-one"
+  },
+  {
+   "n": 619,
+   "title": "`pwg_tm_fragmentize.py`'s GLOSS_RE split 73 discontinuous glosses at `<is>` boundaries, orphaning half of each as an untranslatable fragment — GAPS §18 graduated and closed",
+   "section": "External platforms & services",
+   "importance": 1,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#619-pwg_tm_fragmentizepys-gloss_re-split-73-discontinuous-glosses-at-is-boundaries-orphaning-half-of-each-as-an-untranslatable-fragment--gaps-18-graduated-and-closed"
+  },
+  {
+   "n": 620,
+   "title": "Splitting one overloaded field into two axes does not fix it unless the OLD field's value also changes — readers take the old name alone",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#620-splitting-one-overloaded-field-into-two-axes-does-not-fix-it-unless-the-old-fields-value-also-changes--readers-take-the-old-name-alone"
   }
  ]
 }
