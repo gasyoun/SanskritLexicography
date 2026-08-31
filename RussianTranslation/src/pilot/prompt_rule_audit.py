@@ -40,6 +40,7 @@ if SRC not in sys.path:
 from workflow_payload import workflow_payload
 from foreign_literal_guards import LATIN_WORDS, FRENCH_WORDS
 from government_census import extract_government
+import gate_evidence
 
 GERMAN_RESIDUE = re.compile(
     r'\b(?:der|die|das|den|dem|des|und|oder|mit|ohne|von|für|nicht|eine|einer|'
@@ -1004,7 +1005,7 @@ def build_report(paths):
     }
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--template', default=DEFAULT_TEMPLATE,
                         help='committed workflow template to audit')
@@ -1020,7 +1021,8 @@ def main():
                         help='exit non-zero when --cards finds any semantic risk')
     parser.add_argument('--fail-on-high-risk', action='store_true',
                         help='exit non-zero when --cards finds any high-confidence mechanical risk')
-    args = parser.parse_args()
+    parser.add_argument('--evidence', default=None, help=argparse.SUPPRESS)
+    args = parser.parse_args(argv)
     paths = [os.path.abspath(args.template)]
     if args.harness:
         harness = os.path.abspath(args.harness)
@@ -1051,6 +1053,52 @@ def main():
                 item['medium_count'], ', '.join(item['top_risks'])))
     print('report json  : %s' % os.path.relpath(json_path, ROOT))
     print('report md    : %s' % os.path.relpath(md_path, ROOT))
+
+    # W1 (H3748, #1803 C3-4). The rule set and the phrase matching below are unchanged.
+    # What changes is the accounting: every audited target is a named, hashed input whose
+    # `units` is 0 when the file is ABSENT, and the phrase predicate's `evaluations` is
+    # scanned_targets x rules -- so an audit of a missing template now shows zero work
+    # instead of zero findings. C3-4 is exactly that confusion: `--fail-on-missing` exits
+    # 0 when the audited template does not exist, because "no missing phrases" is what a
+    # file nobody opened produces.
+    ev = gate_evidence.GateEvidence(
+        'prompt_rule_audit', 'committed prompt-template rule phrases (C3-4)')
+    for target in prompt_report['targets']:
+        ev.add_input('template:%s' % os.path.basename(target['path']),
+                     path=target['path'], units=1 if target['exists'] else 0)
+    ev.add_predicate('required_phrases',
+                     evaluations=prompt_report['scanned_target_count'] * len(RULES),
+                     hits=prompt_report['missing_rule_count'])
+    if args.cards:
+        risks = report['card_risks']
+        ev.add_input('cards', path=risks['path'], units=risks.get('key_count')
+                     or risks.get('risky_key_count') or 0)
+        ev.add_predicate('semantic_risks', evaluations=risks.get('key_count') or 0,
+                         hits=risks['risk_count'])
+    ev.note('missing_files', prompt_report['missing_files'])
+    ev.note('rule_count', len(RULES))
+    gating = args.fail_on_missing or args.fail_on_risk or args.fail_on_high_risk
+    failed = bool(
+        (args.fail_on_missing and prompt_report['missing_rule_count'])
+        or (args.fail_on_risk and args.cards and report['card_risks']['risk_count'])
+        or (args.fail_on_high_risk and args.cards
+            and report['card_risks'].get('high_confidence_count', 0)))
+    ev.set_verdict('fail' if failed else 'pass')
+    vacuous = None
+    if gating:
+        # Only a run asked to GATE is policed. Without a --fail-on-* flag this module is
+        # a report generator, and a report over an absent template is a (useless) report,
+        # not a false green light.
+        try:
+            ev.assert_nonvacuous()
+        except gate_evidence.VacuousGateError as exc:
+            vacuous = exc
+            ev.set_verdict('fail')
+    ev.emit(args.evidence or gate_evidence.sidecar_for(json_path))
+    if vacuous is not None:
+        print('PROMPT RULE AUDIT: %s' % vacuous, file=sys.stderr)
+        sys.exit(1)
+
     if args.fail_on_missing and prompt_report['missing_rule_count']:
         sys.exit(1)
     if args.fail_on_risk and args.cards and report['card_risks']['risk_count']:

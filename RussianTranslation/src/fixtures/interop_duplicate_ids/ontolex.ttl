@@ -1,0 +1,25 @@
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/3.0/lexinfo#> .
+@prefix pwg: <https://example.org/pwg/ru/> .
+
+pwg:a a ontolex:LexicalEntry ;
+  ontolex:canonicalForm [ ontolex:writtenRep "a"@sa-Latn ] ;
+  ontolex:sense pwg:a_sense_1 .
+pwg:a_sense_1 a ontolex:LexicalSense ;
+  lexinfo:termElement "dict" ;
+  pwg:sourceRef "koch" ;
+  ontolex:usage "первая буква алфавита"@ru .
+pwg:ac a ontolex:LexicalEntry ;
+  ontolex:canonicalForm [ ontolex:writtenRep "ac"@sa-Latn ] ;
+  ontolex:sense pwg:ac_sense_1 .
+pwg:ac_sense_1 a ontolex:LexicalSense ;
+  lexinfo:termElement "dict" ;
+  pwg:sourceRef "koch" ;
+  ontolex:usage "сгибать"@ru .
+pwg:ac a ontolex:LexicalEntry ;
+  ontolex:canonicalForm [ ontolex:writtenRep "ac"@sa-Latn ] ;
+  ontolex:sense pwg:ac_sense_2 .
+pwg:ac_sense_2 a ontolex:LexicalSense ;
+  lexinfo:termElement "dict" ;
+  pwg:sourceRef "fri" ;
+  ontolex:usage "to bend, a SECOND entry MERGED onto the same subject"@ru .

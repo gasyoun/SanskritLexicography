@@ -1,0 +1,855 @@
+#!/usr/bin/env python
+"""Per-gate vacuous-PASS RED pins for the W1 gate-evidence contract (H3748, #1803).
+
+One pin per gate named in [#1803](https://github.com/gasyoun/SanskritLexicography/issues/1803),
+plus G9 from [#1798](https://github.com/gasyoun/SanskritLexicography/issues/1798). Every pin
+asserts the same two things about the retrofitted gate:
+
+1. **The sidecar exists and is non-vacuous.** ``gate_evidence.require_sidecar`` refuses a
+   missing record, a record for another gate, and a record stamped ``vacuity='vacuous'``.
+   This half is RED on pre-fix master for **all ten** gates, for the plainest possible
+   reason: pre-fix master emits no sidecar at all, so there is nothing to require. That is
+   the ARCHITECTURE §1 consumer contract — "a missing sidecar after W1 means the gate did
+   not run the contract, and that is itself a FAIL".
+2. **The gate's own vacuity behaviour.** Where a gate has a genuinely vacuous PASS class,
+   the pin drives it and asserts it is now a FAIL. Where the spike ruled the emptiness
+   *legitimate* (see ``LEGITIMATE_EMPTY`` and
+   ``docs/SPIKE_PWG_GATE_EVIDENCE_LEGITIMATE_EMPTY_CLASSES_31-08-2026.md``), the pin asserts
+   the PASS survives **but is stamped** ``vacuity='declared_empty'`` with a named reason —
+   the difference from pre-fix master being that the emptiness is now asserted by the gate
+   author rather than inferred from silence. A pin never manufactures a red where the spike
+   says the input class is legally empty.
+
+Fixture-only and hermetic: every pin runs against a temporary directory and redirects
+``PWG_GATE_EVIDENCE_DIR``, so no pin touches a live telemetry sidecar.
+
+    python src/pilot/gate_evidence_selftest.py
+"""
+import contextlib
+import json
+import os
+import sys
+import tempfile
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = os.path.dirname(HERE)
+for _p in (HERE, SRC):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
+import gate_evidence as ge                                          # noqa: E402
+
+PINS = []
+
+
+def pin(name):
+    def wrap(fn):
+        PINS.append((name, fn))
+        return fn
+    return wrap
+
+
+@contextlib.contextmanager
+def scratch_evidence():
+    """A temp dir that is also the gate-evidence sidecar root for the duration."""
+    prior = os.environ.get(ge.EVIDENCE_DIR_ENV)
+    with tempfile.TemporaryDirectory() as td:
+        os.environ[ge.EVIDENCE_DIR_ENV] = os.path.join(td, 'gate_evidence')
+        try:
+            yield td
+        finally:
+            if prior is None:
+                os.environ.pop(ge.EVIDENCE_DIR_ENV, None)
+            else:
+                os.environ[ge.EVIDENCE_DIR_ENV] = prior
+
+
+def assert_missing_sidecar_fails(path, gate_id):
+    """The half that is RED on pre-fix master for every gate: no sidecar, no pass."""
+    try:
+        ge.require_sidecar(path + '.absent', gate_id=gate_id)
+    except ge.MissingEvidenceError:
+        return
+    raise AssertionError('%s: a missing sidecar must FAIL the consumer' % gate_id)
+
+
+# --------------------------------------------------------------------------- #
+# C8-4 — launch-failure ledger completeness
+# --------------------------------------------------------------------------- #
+
+@pin('launch_ledger (C8-4)')
+def pin_launch_ledger():
+    import check_launch_ledger as cll
+
+    def write_ledger(path, body):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write('# ledger\n\n```json launch_failure_ledger\n%s\n```\n' % body)
+
+    entry = """[{"id": "L1", "handoff": "H3748", "date": "2026-08-31",
+      "title": "t", "lane": "pc", "model": "m", "orchestrator": "o",
+      "symptoms": "s", "classification": "gate-bug", "root_cause": "rc",
+      "guardrail": "g", "residual_status": "fixed", "residual_risk": "none",
+      "expected": {"agents": 1, "tokens": 1}, "actual": {"agents": 1, "tokens": 1},
+      "passes": 1}]"""
+
+    with scratch_evidence() as td:
+        # (a) A REAL audit: one complete entry, gate green, and the sidecar now says so
+        #     with a count. Pre-fix master printed the same green line over any number
+        #     of entries including zero.
+        ledger = os.path.join(td, 'LAUNCH_FUCKUPS.md')
+        write_ledger(ledger, entry)
+        side = os.path.join(td, 'real.evidence.json')
+        assert cll.main(['--ledger', ledger, '--evidence', side]) == 0
+        payload = ge.require_sidecar(side, gate_id='launch_ledger')
+        assert payload['units_examined'] == 1, payload
+        assert payload['evaluations'] == 1 and payload['hits'] == 0, payload
+        assert payload['vacuity'] == 'worked', payload
+        assert_missing_sidecar_fails(side, 'launch_ledger')
+
+        # (b) The empty ledger. The spike ruled this LEGITIMATE — the ledger records
+        #     incidents, so having none is a clean history. So the PASS survives, but it
+        #     is no longer silent: the record is stamped declared_empty with the named
+        #     class and a reason. That stamp is what pre-fix master could not produce.
+        empty = os.path.join(td, 'EMPTY.md')
+        write_ledger(empty, '[]')
+        side2 = os.path.join(td, 'empty.evidence.json')
+        assert cll.main(['--ledger', empty, '--evidence', side2]) == 0
+        payload2 = ge.require_sidecar(side2, gate_id='launch_ledger')
+        assert payload2['vacuity'] == 'declared_empty', payload2
+        assert payload2['expected_empty'][0]['class'] == 'no_launch_failures_recorded'
+        assert payload2['units_examined'] == 0 and payload2['evaluations'] == 0
+
+        # (c) A real violation still fails, unchanged — the predicate logic is untouched.
+        bad = os.path.join(td, 'BAD.md')
+        write_ledger(bad, '[{"id": "L2"}]')
+        side3 = os.path.join(td, 'bad.evidence.json')
+        assert cll.main(['--ledger', bad, '--evidence', side3]) == 1
+        payload3 = ge.load_sidecar(side3)
+        assert payload3['verdict'] == 'fail' and payload3['hits'] > 0, payload3
+
+
+# --------------------------------------------------------------------------- #
+# C8-3 — duplicated changelog entries (root-only scope)
+# --------------------------------------------------------------------------- #
+
+@pin('changelog_duplicate_bullets (C8-3)')
+def pin_changelog_duplicate_bullets():
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(SRC)), 'scripts'))
+    import changelog_dupe_evidence_gate as cdg
+
+    def write(path, body):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(body)
+
+    clean = '# Changelog\n\n## [1.0.1]\n\n- first entry\n\n## [1.0.0]\n\n- second entry\n'
+
+    with scratch_evidence() as td:
+        # (a) A repo with a root changelog AND an unguarded sibling — this repo's own
+        #     dual-changelog shape. The gate still checks only the root (W1 changes no
+        #     scope), but the sibling is now a NAMED, hashed input with units=0 and a
+        #     warning. Pre-fix master's green line said nothing about it at all.
+        repo = os.path.join(td, 'repo')
+        write(os.path.join(repo, 'CHANGELOG.md'), clean)
+        write(os.path.join(repo, 'RussianTranslation', 'CHANGELOG.md'),
+              '# Changelog\n\n## [1.0.1]\n\n- dupe\n\n## [1.0.0]\n\n- dupe\n')
+        side = os.path.join(td, 'a.evidence.json')
+        assert cdg.main(['--repo', repo, '--evidence', side]) == 0
+        payload = ge.require_sidecar(side, gate_id='changelog_duplicate_bullets')
+        assert payload['units_examined'] == 2, payload
+        assert payload['evaluations'] == 2 and payload['hits'] == 0, payload
+        unexamined = [i for i in payload['inputs_examined']
+                      if i['name'].startswith('unexamined_changelog:')]
+        assert len(unexamined) == 1 and unexamined[0]['units'] == 0, payload
+        assert unexamined[0]['sha256'], 'the unexamined sibling is still hashed'
+        assert any('C8-3' in w for w in payload['warnings']), payload['warnings']
+        assert_missing_sidecar_fails(side, 'changelog_duplicate_bullets')
+
+        # (b) A real duplicate in the root still fails, predicate untouched, and the
+        #     hit count lands in the record.
+        repo2 = os.path.join(td, 'repo2')
+        write(os.path.join(repo2, 'CHANGELOG.md'),
+              '# Changelog\n\n## [1.0.1]\n\n- same entry\n\n## [1.0.0]\n\n- same entry\n')
+        side2 = os.path.join(td, 'b.evidence.json')
+        assert cdg.main(['--repo', repo2, '--evidence', side2]) == 1
+        payload2 = ge.load_sidecar(side2)
+        assert payload2['verdict'] == 'fail' and payload2['hits'] == 1, payload2
+
+        # (c) A repo with NO changelog: the spike ruled that legitimately empty, so the
+        #     PASS survives — stamped, with the named class.
+        repo3 = os.path.join(td, 'repo3')
+        os.makedirs(repo3)
+        side3 = os.path.join(td, 'c.evidence.json')
+        assert cdg.main(['--repo', repo3, '--evidence', side3]) == 0
+        payload3 = ge.require_sidecar(side3, gate_id='changelog_duplicate_bullets')
+        assert payload3['vacuity'] == 'declared_empty', payload3
+        assert payload3['expected_empty'][0]['class'] == 'no_changelog_in_repo'
+
+
+# --------------------------------------------------------------------------- #
+# C8-7 — run-observability exactly-once census
+# --------------------------------------------------------------------------- #
+
+@pin('run_observability_census (C8-7)')
+def pin_run_observability_census():
+    import run_observability as ro
+
+    def event(**kw):
+        row = {'schema': ro.SCHEMA}
+        row.update(kw)
+        return row
+
+    def write_events(path, rows):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r) + '\n')
+
+    with scratch_evidence() as td:
+        events = os.path.join(td, 'events.jsonl')
+        census = os.path.join(td, 'census.json')
+
+        # (a) An EMPTY events log. Pre-fix master wrote a census whose every counter was
+        #     zero and whose shape was identical to a real run's -- nothing recorded that
+        #     it had read no events. The spike ruled a fresh box legitimate, so the PASS
+        #     survives, now stamped declared_empty.
+        write_events(events, [])
+        ro.write_census(events, census)
+        payload = ge.require_sidecar(ge.sidecar_for(census),
+                                     gate_id='run_observability_census')
+        assert payload['vacuity'] == 'declared_empty', payload
+        assert payload['expected_empty'][0]['class'] == 'no_events_logged'
+        assert_missing_sidecar_fails(ge.sidecar_for(census), 'run_observability_census')
+
+        # (b) A real log: the record now separates the call-level events the dedup RAN
+        #     OVER from the deduped result, which is exactly the C8-7 blind spot. Three
+        #     model_call events, one an exact re-append -> 3 evaluated, 2 distinct.
+        rows = [
+            event(event='model_call', call_id='c1', elapsed_ms=10, classification='success'),
+            event(event='model_call', call_id='c1', elapsed_ms=10, classification='success'),
+            event(event='model_call', call_id='c2', elapsed_ms=20, classification='success'),
+            event(event='run_summary', cards=2, clean=2, calls=2),
+        ]
+        write_events(events, rows)
+        out = ro.write_census(events, census)
+        assert out['model_call_events'] == 3 and out['model_calls'] == 2, out
+        payload2 = ge.require_sidecar(ge.sidecar_for(census),
+                                      gate_id='run_observability_census')
+        assert payload2['vacuity'] == 'worked' and payload2['units_examined'] == 4, payload2
+        dedup = [p for p in payload2['predicates_evaluated'] if p['name'] == 'call_id_dedup'][0]
+        assert dedup['evaluations'] == 3 and dedup['hits'] == 0, dedup
+
+        # (c) A CONFLICTING re-append (same call_id, different data) is a hit and a FAIL.
+        rows.append(event(event='model_call', call_id='c1', elapsed_ms=999,
+                          classification='timeout'))
+        write_events(events, rows)
+        ro.write_census(events, census)
+        payload3 = ge.load_sidecar(ge.sidecar_for(census))
+        assert payload3['verdict'] == 'fail' and payload3['hits'] == 1, payload3
+
+
+# --------------------------------------------------------------------------- #
+# C6-05 — R4.1 daily spot check
+# --------------------------------------------------------------------------- #
+
+@pin('spot_check_daily (C6-05)')
+def pin_spot_check_daily():
+    import time
+
+    import spot_check_daily as scd
+
+    with scratch_evidence() as td:
+        records = os.path.join(td, 'records')
+        out = os.path.join(td, 'telemetry')
+        os.makedirs(records)
+        store = os.path.join(td, 'store.jsonl')
+        now = int(time.time())
+        date = scd.utc_date(now)
+
+        with open(store, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(json.dumps({'subcard': 'r~~a', 'ru': 'перевод', 'h': 'r',
+                                'grammar': 'n', 'layer': 'pwg',
+                                'review_status': 'ai_translated'},
+                               ensure_ascii=False) + '\n')
+
+        # (a) A DAY WITH NO PROMOTIONS. Pre-fix master wrote a spotcheck report with
+        #     population=0/sev3=0 and exited 0, and lane_guard read that as "clean" —
+        #     a green surveillance day in which nothing whatsoever was examined. The
+        #     spike ruled the emptiness legitimate (there was nothing to sample), so
+        #     the PASS survives, now stamped with the named class.
+        report = os.path.join(out, 'spotcheck_%s.json' % date)
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', os.path.join(td, 'absent.jsonl')])
+        payload = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
+        assert payload['vacuity'] == 'declared_empty', payload
+        assert payload['expected_empty'][0]['class'] == 'no_promotions_for_date'
+        assert payload['notes']['population'] == 0, payload
+        assert_missing_sidecar_fails(ge.sidecar_for(report), 'spot_check_daily')
+
+        # (a2) The half-empty day the same shape hides: promotions absent but the store
+        #      IS scanned. The record says so precisely — card_gates evaluated 0 cards
+        #      while store_san_loss evaluated 1 row — instead of one undifferentiated
+        #      "clean". The emptiness that IS present is still declared by name.
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', store])
+        half = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
+        by_name = {p['name']: p for p in half['predicates_evaluated']}
+        assert by_name['card_gates']['evaluations'] == 0, half
+        assert by_name['store_san_loss']['evaluations'] == 1, half
+        assert half['expected_empty'][0]['class'] == 'no_promotions_for_date', half
+
+        # (b) A real clean day: one promoted card, gates green — and the record now
+        #     carries the denominators (1 promotion record, 1 store row, 1 sampled card).
+        scd._mk_promotion(records, 'w1', ['r~~a'], now)
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', store])
+        payload2 = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
+        assert payload2['vacuity'] == 'worked', payload2
+        gates = {p['name']: p for p in payload2['predicates_evaluated']}
+        assert gates['card_gates']['evaluations'] == 1, gates
+        assert gates['store_san_loss']['evaluations'] == 1, gates
+        assert payload2['hits'] == 0 and payload2['verdict'] == 'pass', payload2
+
+        # (c) The all-errors judge day C6-05 names. The gate's own verdict is untouched
+        #     (that predicate fix is out of W1 scope) — but judged=0 is now recorded and
+        #     the record carries the warning, so "clean" no longer hides "never judged".
+        broken = json.dumps(sys.executable) + ' -c "print(41+"'
+        rep = scd.build_report(date, 1.0, records, store, judge_cmd=broken, workdir=td)
+        assert rep['judged'] == 0 and rep['judge_errors'] == 1, rep
+        ev = scd.write_evidence(rep, records, store, os.path.join(td, 'judge.evidence.json'))
+        assert ev.verdict == 'pass', 'W1 does not change the verdict'
+        assert any('C6-05' in w for w in ev.warnings), ev.warnings
+        judge = [p for p in ev.predicates if p['name'] == 'judge'][0]
+        assert judge['evaluations'] == 0, judge
+
+        # (d) A sev-3 day still fails, predicate untouched.
+        with open(store, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(json.dumps({'subcard': 'r~~a', 'ru': 'плохой {T3}', 'h': 'r',
+                                'grammar': 'n', 'layer': 'pwg'},
+                               ensure_ascii=False) + '\n')
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', store])
+        payload4 = ge.load_sidecar(ge.sidecar_for(report))
+        assert payload4['verdict'] == 'fail' and payload4['hits'] > 0, payload4
+
+
+# --------------------------------------------------------------------------- #
+# C2-2 — R4.1 surveillance freshness
+# --------------------------------------------------------------------------- #
+
+@pin('lane_spotcheck_freshness (C2-2)')
+def pin_lane_spotcheck_freshness():
+    import lane_spotcheck_tick as lst
+
+    with scratch_evidence() as td:
+        telemetry = os.path.join(td, 'telemetry')
+        os.makedirs(telemetry)
+        side = os.path.join(td, 'fresh.evidence.json')
+
+        # (a) NO reports at all. This gate has no legitimately-empty class: the verdict
+        #     is INCONCLUSIVE, never a pass, so require_sidecar(verdict='pass') refuses
+        #     it. Pre-fix master returned a bare None with no record of having looked.
+        assert lst.fresh_spotcheck(telemetry, evidence_path=side) is None
+        payload = ge.load_sidecar(side)
+        assert payload['verdict'] == 'inconclusive', payload
+        assert payload['notes']['surveillance_live'] is False, payload
+        try:
+            ge.require_sidecar(side, gate_id='lane_spotcheck_freshness')
+        except ge.MissingEvidenceError:
+            pass
+        else:
+            raise AssertionError('no surveillance must not satisfy a pass-requiring consumer')
+        assert_missing_sidecar_fails(side, 'lane_spotcheck_freshness')
+
+        # (b) THE C2-2 SHAPE: a 0-byte spotcheck_<date>.json. The predicate is unchanged
+        #     and still blesses it — that defect stays filed — but the record now names
+        #     the file, hashes it, and warns that a 0-byte input was examined. Pre-fix
+        #     master returned the path and left no trace that nothing was read.
+        zero = os.path.join(telemetry, 'spotcheck_2026-08-31.json')
+        open(zero, 'w', encoding='utf-8').close()
+        got = lst.fresh_spotcheck(telemetry, evidence_path=side)
+        assert got == zero, got
+        payload2 = ge.require_sidecar(side, gate_id='lane_spotcheck_freshness')
+        assert payload2['notes']['surveillance_live'] is True, payload2
+        candidate = [i for i in payload2['inputs_examined']
+                     if i['name'].startswith('spotcheck:')][0]
+        assert candidate['size_bytes'] == 0 and candidate['sha256'], candidate
+        assert any('0-byte' in w for w in payload2['warnings']), payload2['warnings']
+
+        # (c) A stale report is a counted MISS, not an unexamined absence: the predicate
+        #     ran over one candidate and rejected it.
+        stale = lst.fresh_spotcheck(telemetry, now=__import__('time').time() + 72 * 3600,
+                                    evidence_path=side)
+        assert stale is None
+        payload3 = ge.load_sidecar(side)
+        window = payload3['predicates_evaluated'][0]
+        assert window['evaluations'] == 1 and window['hits'] == 1, window
+        assert payload3['verdict'] == 'inconclusive', payload3
+
+
+# --------------------------------------------------------------------------- #
+# C6-01 — human gold precision + double-review agreement
+# --------------------------------------------------------------------------- #
+
+@pin('gold_agreement (C6-01)')
+def pin_gold_agreement():
+    import gold_agreement as ga
+
+    def write_labels(path, rows):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+
+    def row(rid, reviewer, label, period='p1', kind='k1'):
+        return {'id': rid, 'reviewer': reviewer, 'human_label': label,
+                'period': period, 'kind': kind}
+
+    with scratch_evidence() as td:
+        labels = os.path.join(td, 'labels.jsonl')
+        out = os.path.join(td, 'reports')
+        side = os.path.join(td, 'gold.evidence.json')
+        agreement = os.path.join(out, 'double_review_agreement.md')
+
+        # (a) SINGLE-review corpus: no pair to compute kappa over. Pre-fix master wrote
+        #     `| Cohen kappa | n/a |` into the watched gold/ directory and exited 0 —
+        #     indistinguishable from a measured agreement. The spike ruled the emptiness
+        #     legitimate (precision is still fully measured), so the PASS survives,
+        #     stamped by name, with kappa_pairs evaluations=0 recorded beside a real
+        #     precision count.
+        write_labels(labels, [row('i1', 'a', 'correct'), row('i2', 'a', 'wrong-sense')])
+        ga.main([labels, out, '--fixture', '--evidence', side])
+        payload = ge.require_sidecar(side, gate_id='gold_agreement')
+        # The gate is not vacuous overall — precision WAS measured — but the half that
+        # is empty is now named rather than reported as a bare `n/a` in the markdown.
+        assert payload['vacuity'] == 'worked', payload
+        assert payload['expected_empty'][0]['class'] == 'no_double_reviewed_items'
+        by_name = {p['name']: p for p in payload['predicates_evaluated']}
+        assert by_name['kappa_pairs']['evaluations'] == 0, by_name
+        assert by_name['precision']['evaluations'] == 2, by_name
+        assert by_name['precision']['hits'] == 1, by_name
+        assert payload['notes']['cohen_kappa'] is None, payload
+        assert_missing_sidecar_fails(side, 'gold_agreement')
+
+        # (b) A real double-reviewed pair: the record carries the kappa AND the input's
+        #     sha256, so the number in the markdown can be tied to the bytes it came from.
+        write_labels(labels, [row('i1', 'a', 'correct'), row('i1', 'b', 'correct'),
+                              row('i2', 'a', 'correct'), row('i2', 'b', 'wrong-sense')])
+        ga.main([labels, out, '--fixture', '--evidence', side])
+        payload2 = ge.require_sidecar(side, gate_id='gold_agreement')
+        assert payload2['vacuity'] == 'worked', payload2
+        assert {p['name']: p for p in payload2['predicates_evaluated']
+                }['kappa_pairs']['evaluations'] == 2, payload2
+        assert payload2['inputs_examined'][0]['sha256'], payload2
+        assert os.path.exists(agreement)
+
+        # (c) THE C6-01 SHAPE: no --fixture and a non-default input path. The expression
+        #     is unchanged, so release_mode is still silently False and the >=1-kappa-pair
+        #     guard still disarms — but the record now says so out loud instead of writing
+        #     an LLM-panel kappa into gold/ under a green line.
+        ga.main([labels, out, '--evidence', side])
+        payload3 = ge.load_sidecar(side)
+        assert payload3['notes']['release_mode'] is False, payload3
+        assert any('C6-01' in w and 'DISARMED' in w for w in payload3['warnings']), \
+            payload3['warnings']
+
+
+# --------------------------------------------------------------------------- #
+# C3-4 — prompt-rule audit over the committed template
+# --------------------------------------------------------------------------- #
+
+@pin('prompt_rule_audit (C3-4)')
+def pin_prompt_rule_audit():
+    import prompt_rule_audit as pra
+
+    with scratch_evidence() as td:
+        prior_out = pra.OUT
+        pra.OUT = os.path.join(td, 'out')                  # hermetic: never the live dir
+        try:
+            side = os.path.join(td, 'pra.evidence.json')
+            absent = os.path.join(td, 'no_such_template.js')
+
+            # (a) THE C3-4 RED. --fail-on-missing over an ABSENT template exited 0 on
+            #     pre-fix master: a file nobody opened has no missing phrases, so the
+            #     gate reported a clean audit of nothing. The contract turns that PASS
+            #     into a hard FAIL — this gate has no legitimately-empty input class.
+            try:
+                pra.main(['--template', absent, '--harness', '',
+                          '--fail-on-missing', '--evidence', side])
+            except SystemExit as exc:
+                assert exc.code == 1, exc.code
+            else:
+                raise AssertionError('a --fail-on-missing audit of an absent template '
+                                     'must now FAIL')
+            payload = ge.load_sidecar(side)
+            assert payload['verdict'] == 'fail', payload
+            assert payload['vacuity'] == 'vacuous', payload
+            assert payload['inputs_examined'][0]['units'] == 0, payload
+            assert payload['evaluations'] == 0, payload
+            assert absent in payload['notes']['missing_files'], payload
+
+            # (b) The SAME absent template WITHOUT a --fail-on-* flag is not a gate run
+            #     at all — it is a report generator — so it is not policed. The record
+            #     still says, in the same terms, that it examined nothing.
+            side2 = os.path.join(td, 'report.evidence.json')
+            pra.main(['--template', absent, '--harness', '', '--evidence', side2])
+            payload2 = ge.load_sidecar(side2)
+            assert payload2['verdict'] == 'pass' and payload2['vacuity'] == 'vacuous', payload2
+
+            # (c) The REAL committed template: a genuine audit, with the phrase predicate
+            #     evaluated over scanned_targets x rules.
+            side3 = os.path.join(td, 'real.evidence.json')
+            pra.main(['--template', pra.DEFAULT_TEMPLATE, '--harness', '',
+                      '--fail-on-missing', '--evidence', side3])
+            payload3 = ge.require_sidecar(side3, gate_id='prompt_rule_audit')
+            assert payload3['vacuity'] == 'worked', payload3
+            assert payload3['evaluations'] == payload3['notes']['rule_count'], payload3
+            assert payload3['inputs_examined'][0]['sha256'], payload3
+            assert_missing_sidecar_fails(side3, 'prompt_rule_audit')
+        finally:
+            pra.OUT = prior_out
+
+
+# --------------------------------------------------------------------------- #
+# C2-5 — external-dictionary coverage census
+# --------------------------------------------------------------------------- #
+
+@pin('corpus_gate_coverage (C2-5)')
+def pin_corpus_gate_coverage():
+    import corpus_gate as cg
+
+    counts = {'tot': 100, 'per': 0, 'persrc': {}, 'kow_n': 0, 'kow_zone_n': 0,
+              'sense_n': 0, 'sensesrc': {}, 'syn_n': 0, 'plant_n': 0,
+              'sin_syn_n': 0, 'sin_sense_n': 0}
+    prior = set(cg.SOURCES_PRESENT)
+    with scratch_evidence() as td:
+        try:
+            # (a) THE C2-5 SHAPE: not one independent authority built. Pre-fix master
+            #     printed '0 (0.0%)' for every signal and exited 0 — a measured zero and
+            #     an unbuilt source printed identically. Now the verdict is INCONCLUSIVE
+            #     (this gate has no legitimately-empty class, so emptiness never passes),
+            #     the missing sources are named inputs with exists=false, and the record
+            #     carries the reason.
+            cg.SOURCES_PRESENT.clear()
+            ev = cg.coverage_evidence({}, counts, 0, 0, set(), 'unit')
+            side = ev.emit(os.path.join(td, 'cov.evidence.json'))
+            payload = ge.load_sidecar(side)
+            assert payload['verdict'] == 'inconclusive', payload
+            assert payload['notes']['evidence_status'] == 'evidence_unavailable', payload
+            assert any('C2-5' in w and 'UNMEASURED' in w for w in payload['warnings']), \
+                payload['warnings']
+            try:
+                ge.require_sidecar(side, gate_id='corpus_gate_coverage')
+            except ge.MissingEvidenceError:
+                pass
+            else:
+                raise AssertionError('an unbuilt-source census must not satisfy a '
+                                     'pass-requiring consumer')
+            assert_missing_sidecar_fails(side, 'corpus_gate_coverage')
+
+            # (b) With an independent authority present the census is a real measurement
+            #     again — same numbers, now with evidence_status=ok and no warning.
+            cg.SOURCES_PRESENT.add(cg.INDEP[0])
+            covered = dict(counts, per=42)
+            ev2 = cg.coverage_evidence({'k': {cg.INDEP[0]: ['gloss']}}, covered,
+                                       10, 3, set('a'), 'unit')
+            side2 = ev2.emit(os.path.join(td, 'cov2.evidence.json'))
+            payload2 = ge.require_sidecar(side2, gate_id='corpus_gate_coverage')
+            assert payload2['notes']['evidence_status'] == 'ok', payload2
+            assert not payload2['warnings'], payload2['warnings']
+            by_name = {p['name']: p for p in payload2['predicates_evaluated']}
+            assert by_name['independent_dict_coverage'] == {
+                'name': 'independent_dict_coverage', 'evaluations': 100, 'hits': 42}
+            assert by_name['corpus_examples']['evaluations'] == 10
+            src = [i for i in payload2['inputs_examined']
+                   if i['name'] == 'source:%s' % cg.INDEP[0]][0]
+            assert src['units'] == 1, src
+        finally:
+            cg.SOURCES_PRESENT.clear()
+            cg.SOURCES_PRESENT.update(prior)
+
+
+# --------------------------------------------------------------------------- #
+# C3-1 — prompt-compiler golden reconstruction
+# --------------------------------------------------------------------------- #
+
+@pin('prompt_compiler_golden (C3-1)')
+def pin_prompt_compiler_golden():
+    import shutil
+
+    import prompt_compiler as pc
+
+    with scratch_evidence() as td:
+        fixtures = os.path.join(td, 'fixtures')
+        os.makedirs(fixtures)
+        for name in pc.GOLDEN_NAMES:
+            shutil.copy(os.path.join(pc.FIXTURE_DIR, name), os.path.join(fixtures, name))
+        prior = pc.FIXTURE_DIR
+        pc.FIXTURE_DIR = fixtures                       # hermetic: never the tracked dir
+        try:
+            side = os.path.join(td, 'pc.evidence.json')
+
+            # (a) Committed goldens intact: the selftest passes and the record says the
+            #     goldens were NOT rewritten, so the reconstruction really was against
+            #     stored bytes.
+            assert pc.selftest(evidence_path=side) == 0
+            payload = ge.require_sidecar(side, gate_id='prompt_compiler_golden')
+            assert payload['notes']['goldens_rewritten'] == [], payload
+            assert not payload['warnings'], payload['warnings']
+            assert len(payload['inputs_examined']) == 2, payload
+            assert all(i['sha256'] for i in payload['inputs_examined']), payload
+            assert_missing_sidecar_fails(side, 'prompt_compiler_golden')
+
+            # (b) THE C3-1 SHAPE. Perturb a golden; write_golden_fixtures() overwrites it
+            #     and the selftest then "compares" against what it just wrote — and still
+            #     prints PASS, exactly as on pre-fix master. The predicate is unchanged
+            #     (fixing the self-comparison is out of W1 scope); what is new is that the
+            #     record names the rewritten file and carries the C3-1 warning, so a green
+            #     line can no longer imply a comparison that did not happen.
+            victim = os.path.join(fixtures, pc.GOLDEN_NAMES[0])
+            with open(victim, 'a', encoding='utf-8') as f:
+                f.write('\n')
+            assert pc.selftest(evidence_path=side) == 0
+            payload2 = ge.load_sidecar(side)
+            assert payload2['notes']['goldens_rewritten'] == [pc.GOLDEN_NAMES[0]], payload2
+            assert any('C3-1' in w and 'against itself' in w
+                       for w in payload2['warnings']), payload2['warnings']
+            # ...and the weak predicate is recorded APART from the two strong ones, with
+            # its weakness named in the record rather than in a comment nobody reads.
+            golden = [p for p in payload2['predicates_evaluated']
+                      if p['name'] == 'golden_request_id_reconstruction'][0]
+            assert 'self-referential' in golden['detail'], golden
+            names = {p['name'] for p in payload2['predicates_evaluated']}
+            assert 'live_builder_oracle' in names and 'identity_mutation' in names, names
+        finally:
+            pc.FIXTURE_DIR = prior
+
+
+# --------------------------------------------------------------------------- #
+# G9 (#1798) — released interop artifact validity
+# --------------------------------------------------------------------------- #
+
+ROOT = os.path.dirname(SRC)
+DUPE_FIXTURE = os.path.join(SRC, 'fixtures', 'interop_duplicate_ids')
+CLEAN_FIXTURE = os.path.join(SRC, 'fixtures', 'assembled_card.fixture.jsonl')
+
+
+@pin('interop_validity (G9, #1798)')
+def pin_interop_validity():
+    import subprocess
+
+    import validate_interop as vi
+
+    with scratch_evidence() as td:
+        # (a) THE RED PIN. A TEI with a repeated xml:id and a Turtle with a repeated
+        #     subject. Pre-fix master printed `interop validation OK` over both: ET has
+        #     no ID awareness, and validate_ontolex never parsed Turtle at all — it was
+        #     text.count('ontolex:LexicalEntry'), which passes on a file consisting
+        #     solely of that literal string.
+        side = os.path.join(td, 'dupe.evidence.json')
+        assert vi.main(['--dir', DUPE_FIXTURE, '--evidence', side]) == 1
+        payload = ge.load_sidecar(side)
+        assert payload['verdict'] == 'fail', payload
+        by_name = {p['name']: p for p in payload['predicates_evaluated']}
+        assert by_name['tei_entry_id_uniqueness']['hits'] == 1, by_name
+        assert by_name['ontolex_subject_uniqueness']['hits'] == 1, by_name
+        assert payload['notes']['tei_distinct_ids'] == 2, payload
+        assert payload['notes']['ontolex_distinct_subjects'] == 2, payload
+
+        # (b) The clean export of the committed one-card fixture still validates, and
+        #     the record now carries distinct-id counts rather than a bare entry count.
+        clean = os.path.join(td, 'clean')
+        subprocess.run([sys.executable, os.path.join(SRC, 'export_interop.py'), 'all',
+                        '--cards', CLEAN_FIXTURE, '--out-dir', clean],
+                       check=True, capture_output=True)
+        side2 = os.path.join(td, 'clean.evidence.json')
+        assert vi.main(['--dir', clean, '--evidence', side2]) == 0
+        payload2 = ge.require_sidecar(side2, gate_id='interop_validity')
+        assert payload2['vacuity'] == 'worked' and payload2['hits'] == 0, payload2
+        assert payload2['notes']['tei_distinct_ids'] == 1, payload2
+        assert_missing_sidecar_fails(side2, 'interop_validity')
+
+        # (c) An EMPTY release dir. This gate has no legitimately-empty input class — a
+        #     release with zero entries is never valid — so it fails rather than passing
+        #     vacuously, and every named input is recorded as absent.
+        empty = os.path.join(td, 'empty')
+        os.makedirs(empty)
+        side3 = os.path.join(td, 'empty.evidence.json')
+        assert vi.main(['--dir', empty, '--evidence', side3]) == 1
+        payload3 = ge.load_sidecar(side3)
+        assert payload3['verdict'] == 'fail' and payload3['vacuity'] == 'vacuous', payload3
+        assert all(i['exists'] is False for i in payload3['inputs_examined']), payload3
+
+
+@pin('interop_validity on OUR data (release/, #1798)')
+def pin_interop_validity_on_release():
+    """The own-data half: the SHIPPED artifacts, not a fixture.
+
+    Skips (loudly) when `release/tei_lex0.xml` is absent from the checkout. The RDF half
+    is deliberately not re-parsed here — a 650k-triple rdflib parse is minutes, and the
+    TEI half is the same finding on the same 12,374 ids.
+    """
+    import validate_interop as vi
+
+    tei = os.path.join(ROOT, 'release', 'tei_lex0.xml')
+    if not os.path.exists(tei):
+        print('     (skipped: %s is not in this checkout)' % tei)
+        return
+    try:
+        vi.validate_tei(tei)
+    except ValueError as exc:
+        # #1798 measured 120,173 ids / 106,082 distinct / 12,374 duplicated values.
+        # Reproduced here against the shipped bytes, through the gate that used to
+        # report them as validating.
+        assert '12374 duplicated value(s)' in str(exc), str(exc)
+        assert 'pwg-ac x6' in str(exc), str(exc)
+    else:
+        raise AssertionError(
+            'release/tei_lex0.xml validated clean — either it was re-cut (step 2 of '
+            '#1798, a publication decision) or the duplicate-id predicate regressed. '
+            'Re-measure before changing this pin.')
+
+
+# --------------------------------------------------------------------------- #
+# #1800 — the promote claim wraps the read-modify-write span
+# --------------------------------------------------------------------------- #
+
+@pin('promote claim spans read-modify-write (#1800)')
+def pin_promote_claim_spans_rmw():
+    """Replays H2889's measured C5-2 scenario, plus the C5-3 / C5-4 lock holes.
+
+    C5-2 as measured: byte-identical 11-row fixture stores; one card yielding one short
+    row. ``--merge`` exited 1 with *REFUSED: would shed 99.7% of store content mass
+    (6895 -> 20 chars) ... at row delta 11 -> 2*, while ``--ready-partial-report --apply``
+    exited 0, ``rows_written 2``, store rewritten 11 -> 2, no warning and no ``--force``.
+    Two flags of the SAME entry point disagreeing by 99.7 % of content mass, in silence.
+    """
+    import promote_final_cards as pfc
+    from promote_lock import PromoteClaim, ClaimBusy
+
+    with scratch_evidence() as td:
+        store = os.path.join(td, 'store.jsonl')
+        # An 11-row store with real content mass, and a promote that would leave 2 rows.
+        rows = [{'key1': 'k%d' % i, 'subcard': 'k%d~~a' % i, 'h': 'k%d' % i,
+                 'sense_tag': '1', 'grammar': 'n', 'de': 'deutsch %d' % i,
+                 'ru': 'русский перевод номер %d, довольно длинный' % i,
+                 'layer': 'pwg', 'review_status': 'ai_translated'}
+                for i in range(11)]
+        with open(store, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+        before_bytes = open(store, 'rb').read()
+
+        # A "clean subset" naming ONE key, whose promotion would replace the store with
+        # two short rows — the 99.7 % shed.
+        keep = [{'key1': 'k0', 'subcard': 'k0~~a', 'h': 'k0', 'sense_tag': '1',
+                 'grammar': 'n', 'de': 'x', 'ru': 'y', 'layer': 'pwg',
+                 'review_status': 'ai_translated'}]
+
+        # Drive merge_store_rows' output directly through the guarded window by calling
+        # the promote path with a stubbed row builder — the guards are what is under test.
+        prior_merge = pfc.merge_store_rows
+        prior_collect = pfc.collect_cards
+        prior_rows_for = pfc.rows_for
+        prior_validate = pfc.validate_promotion_entry
+        try:
+            pfc.collect_cards = lambda paths: ({'k0~~a': {'card': {}, 'meta': {}}}, [], set())
+            pfc.rows_for = lambda subkey, entry, status, ver: list(keep)
+            pfc.validate_promotion_entry = lambda subkey, entry: None
+            pfc.merge_store_rows = lambda existing, incoming, override_reviewed=False: (
+                list(incoming), [], [])
+
+            wf = os.path.join(td, 'wf_output.zz.json')
+            with open(wf, 'w', encoding='utf-8') as f:
+                json.dump({'results': []}, f)
+
+            # (a) THE RED PIN. Pre-fix this returned status='applied', rows_written 2, and
+            #     rewrote the store 11 -> 2. It now hits the content-mass gate its --merge
+            #     sibling always had, refuses, and leaves the store byte-identical.
+            result = pfc.promote_ready_partial_clean(
+                {'clean_keys': ['k0~~a']}, dry_run=False, store=store,
+                gen_model_version='claude-opus-5', wf_glob=wf)
+            assert result['status'] == 'refused_content_mass', result
+            assert '99.7%' in result['refusal'] or 'content mass' in result['refusal'], result
+            assert open(store, 'rb').read() == before_bytes, 'store must be untouched'
+
+            # (b) ...and --force still overrides it, exactly as it does on --merge. The fix
+            #     closes a silent divergence between two flags; it does not remove the
+            #     deliberate operator override.
+            forced = pfc.promote_ready_partial_clean(
+                {'clean_keys': ['k0~~a']}, dry_run=False, store=store,
+                gen_model_version='claude-opus-5', wf_glob=wf, force=True)
+            assert forced['status'] == 'applied', forced
+            assert forced['rows_written'] == 1, forced
+
+            # (c) THE CLAIM NOW COVERS THE READ. With a rival holding the claim, the apply
+            #     path raises ClaimBusy before it reads anything. Pre-fix it read and
+            #     merged happily and only collided at the write — by which point its merge
+            #     had already been computed against a snapshot the rival had superseded.
+            with PromoteClaim(store):
+                try:
+                    pfc.promote_ready_partial_clean(
+                        {'clean_keys': ['k0~~a']}, dry_run=False, store=store,
+                        gen_model_version='claude-opus-5', wf_glob=wf, force=True)
+                except ClaimBusy:
+                    pass
+                else:
+                    raise AssertionError('an apply under a rival claim must raise ClaimBusy')
+        finally:
+            pfc.merge_store_rows = prior_merge
+            pfc.collect_cards = prior_collect
+            pfc.rows_for = prior_rows_for
+            pfc.validate_promotion_entry = prior_validate
+
+        # (d) C5-3: lane_guard's EXECUTING revert now takes the claim (its dry run does
+        #     not). Under a rival claim the revert refuses instead of racing the promote
+        #     it is reverting.
+        import lane_guard
+        import spot_check_daily as scd
+        import time as _time
+        records = os.path.join(td, 'records')
+        os.makedirs(records)
+        scd._mk_promotion(records, 'w1', ['k0~~a'], int(_time.time()))
+        recs = scd.day_promotion_records(records, scd.utc_date(_time.time()))
+        quarantine = os.path.join(td, 'q.jsonl')
+        removed, _prot, _keys = lane_guard.revert_windows(recs, store, quarantine)
+        assert removed, 'dry run must still compute the revert without a claim'
+        with PromoteClaim(store):
+            try:
+                lane_guard.revert_windows(recs, store, quarantine, execute=True)
+            except ClaimBusy:
+                pass
+            else:
+                raise AssertionError('an executing revert under a rival claim must refuse')
+
+        # (e) C5-4: both sides of the TM denylist take the sidecar lock, so a denial can
+        #     no longer be deleted by a concurrent unblock's read-modify-replace.
+        import inspect
+
+        import translation_memory as tm
+        source = inspect.getsource(tm.stamp_denylist_from_last_audit)
+        assert '_sidecar_lock' in source, \
+            'the denial side must hold the same lock the unblock side holds (C5-4)'
+
+
+def main():
+    failures = []
+    for name, fn in PINS:
+        try:
+            fn()
+        except Exception as exc:                    # noqa: BLE001 — report every pin
+            failures.append((name, exc))
+            print('  RED  %s: %s: %s' % (name, type(exc).__name__, exc))
+        else:
+            print('  ok   %s' % name)
+    if failures:
+        print('gate_evidence_selftest: %d/%d pin(s) RED' % (len(failures), len(PINS)))
+        return 1
+    print('gate_evidence_selftest: PASS (%d gate pin(s) — sidecar present and '
+          'non-vacuous, vacuous PASS refused, declared emptiness stamped)' % len(PINS))
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
