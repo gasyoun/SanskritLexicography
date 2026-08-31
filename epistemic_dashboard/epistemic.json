@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-31T04:33:17Z",
+ "generated_at": "2026-08-31T06:33:27Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 274,
+  "total": 275,
   "by_importance": {
-   "3": 105,
+   "3": 106,
    "2": 137,
    "1": 32
   },
   "by_origin": {
    "auto": 0,
-   "human": 274
+   "human": 275
   }
  },
  "layers": [
@@ -216,18 +216,18 @@
    "key": "GAPS",
    "act": "not-yet-knowing (the frontier)",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
-   "total": 17,
+   "total": 18,
    "by_importance": {
-    "3": 1,
+    "3": 2,
     "2": 7,
     "1": 8
    },
    "by_origin": {
     "auto": 5,
-    "human": 12
+    "human": 13
    },
    "categories": 3,
-   "interlinks": 11,
+   "interlinks": 12,
    "entries": [
     {
      "title": "§2. Error population of 40 of 43 dictionaries",
@@ -240,6 +240,12 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#3-heritage-inflected-form-morphology-xml--never-ingested"
+    },
+    {
+     "title": "§19. Which prompt, glossary and script bytes produced the 10,773 pre-04-07-2026 pwg_ru rows",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#19-which-prompt-glossary-and-script-bytes-produced-the-10773-pre-04-07-2026-pwgru-rows"
     },
     {
      "title": "§4. Homonym token frequency beyond the 26+5 splittable groups",
@@ -649,19 +655,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 193,
+  "rows": 194,
   "auto": 120,
-  "human": 73,
+  "human": 74,
   "by_importance": {
-   "3": 25,
+   "3": 26,
    "2": 39,
    "1": 12
   },
   "layers": 7,
-  "entry_rows": 79,
+  "entry_rows": 80,
   "candidates": 6,
   "categories": 21,
-  "interlinks": 61,
-  "findings": 274
+  "interlinks": 62,
+  "findings": 275
  }
 }
