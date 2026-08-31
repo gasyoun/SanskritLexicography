@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-31T02:51:38Z",
+ "generated_at": "2026-08-31T03:48:22Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 270,
+  "total": 272,
   "by_importance": {
-   "3": 103,
+   "3": 104,
    "2": 137,
-   "1": 30
+   "1": 31
   },
   "by_origin": {
    "auto": 0,
-   "human": 270
+   "human": 272
   }
  },
  "layers": [
@@ -662,6 +662,6 @@
   "candidates": 6,
   "categories": 21,
   "interlinks": 61,
-  "findings": 270
+  "findings": 272
  }
 }

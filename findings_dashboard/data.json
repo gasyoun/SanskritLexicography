@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-31T02:51:37Z",
+ "generated_at": "2026-08-31T03:47:57Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 270,
+  "total": 272,
   "by_importance": {
    "2": 137,
-   "1": 30,
-   "3": 103
+   "1": 31,
+   "3": 104
   },
   "stale": 0
  },
@@ -2440,6 +2440,24 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#616-pwg-tm-has-a-paid-path-outside-the-reservation-kernel-while-its-green-reconciliation-ignores-nested-unresolved-placeholders"
+  },
+  {
+   "n": 617,
+   "title": "An index and a number that look alike: `~~h<N>` is an `enumerate` position, and the code that read it as a printed homonym reported success precisely when it guessed",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#617-an-index-and-a-number-that-look-alike-hn-is-an-enumerate-position-and-the-code-that-read-it-as-a-printed-homonym-reported-success-precisely-when-it-guessed"
+  },
+  {
+   "n": 618,
+   "title": "A 939-row static I/O-in-loop census overstated coordinator.py's real hotspots by roughly two orders of magnitude — cProfile on a realistic fixture found exactly one",
+   "section": "External platforms & services",
+   "importance": 1,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#618-a-939-row-static-io-in-loop-census-overstated-coordinatorpys-real-hotspots-by-roughly-two-orders-of-magnitude--cprofile-on-a-realistic-fixture-found-exactly-one"
   }
  ]
 }
