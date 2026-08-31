@@ -191,10 +191,25 @@ subtypes collapse to three colour-coded classes:
 | **≈ restatement** (amber) | `restate` | PW says the same thing more briefly — **no new meaning** |
 | **✕ cancels / corrects** (red) | `pw_correct` · `pw_cancels` | PWG's value is overridden; never silently dropped |
 
+> **Read with §13 (H3752).** Three of those names — `restate`, `nws_at_sense`,
+> `a2a` — now take an `_unplaced` twin when no PWG sense was identified, and on
+> the live corpus **most rows carry the twin** (`restate` 562 placed against
+> 4,637 `restate_unplaced`). A twin belongs to the **same class** as its base
+> name, which is what `edition_rel.base_subtype()` is for; the table above is
+> read through it rather than extended with three more rows.
+
 This is not decoration — it is the finding. Across the 15 pilot cards: **1,534
-restatements vs 250 additions vs 1 correction**. Roughly **86 %** of everything
-glued onto PWG is PW abridging what PWG already said. A reviewer who cannot see
-that at a glance will read a card as far richer than it is.
+restatements vs 250 additions vs 1 correction**. A reviewer who cannot see that
+at a glance will read a card as far richer than it is.
+
+> **The «roughly 86 %» that used to stand here has been withdrawn** (§9.1, and
+> issue [#1736](https://github.com/gasyoun/SanskritLexicography/issues/1736)
+> point 2). It was true as *"86 % of supplements came from the PW layer"* and
+> false as *"86 % of the re-glue paraphrases PWG"* — the second is a claim about
+> content, and content was never measured: the label was stamped from the layer
+> without consulting the attachment. What is measured, since §13: **637 of 6,326
+> supplements (10.1 %) have an identified PWG sense at all**, and only those can
+> support any statement about restating it.
 
 **Ordering ruling (answers "are the glued-in entries ABOVE all old?"):** no. PWG
 remains the skeleton (§1) and supplements are rendered *beneath* the PWG sense
