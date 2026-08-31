@@ -711,6 +711,128 @@ def pin_interop_validity_on_release():
             'Re-measure before changing this pin.')
 
 
+# --------------------------------------------------------------------------- #
+# #1800 — the promote claim wraps the read-modify-write span
+# --------------------------------------------------------------------------- #
+
+@pin('promote claim spans read-modify-write (#1800)')
+def pin_promote_claim_spans_rmw():
+    """Replays H2889's measured C5-2 scenario, plus the C5-3 / C5-4 lock holes.
+
+    C5-2 as measured: byte-identical 11-row fixture stores; one card yielding one short
+    row. ``--merge`` exited 1 with *REFUSED: would shed 99.7% of store content mass
+    (6895 -> 20 chars) ... at row delta 11 -> 2*, while ``--ready-partial-report --apply``
+    exited 0, ``rows_written 2``, store rewritten 11 -> 2, no warning and no ``--force``.
+    Two flags of the SAME entry point disagreeing by 99.7 % of content mass, in silence.
+    """
+    import promote_final_cards as pfc
+    from promote_lock import PromoteClaim, ClaimBusy
+
+    with scratch_evidence() as td:
+        store = os.path.join(td, 'store.jsonl')
+        # An 11-row store with real content mass, and a promote that would leave 2 rows.
+        rows = [{'key1': 'k%d' % i, 'subcard': 'k%d~~a' % i, 'h': 'k%d' % i,
+                 'sense_tag': '1', 'grammar': 'n', 'de': 'deutsch %d' % i,
+                 'ru': 'русский перевод номер %d, довольно длинный' % i,
+                 'layer': 'pwg', 'review_status': 'ai_translated'}
+                for i in range(11)]
+        with open(store, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+        before_bytes = open(store, 'rb').read()
+
+        # A "clean subset" naming ONE key, whose promotion would replace the store with
+        # two short rows — the 99.7 % shed.
+        keep = [{'key1': 'k0', 'subcard': 'k0~~a', 'h': 'k0', 'sense_tag': '1',
+                 'grammar': 'n', 'de': 'x', 'ru': 'y', 'layer': 'pwg',
+                 'review_status': 'ai_translated'}]
+
+        # Drive merge_store_rows' output directly through the guarded window by calling
+        # the promote path with a stubbed row builder — the guards are what is under test.
+        prior_merge = pfc.merge_store_rows
+        prior_collect = pfc.collect_cards
+        prior_rows_for = pfc.rows_for
+        prior_validate = pfc.validate_promotion_entry
+        try:
+            pfc.collect_cards = lambda paths: ({'k0~~a': {'card': {}, 'meta': {}}}, [], set())
+            pfc.rows_for = lambda subkey, entry, status, ver: list(keep)
+            pfc.validate_promotion_entry = lambda subkey, entry: None
+            pfc.merge_store_rows = lambda existing, incoming, override_reviewed=False: (
+                list(incoming), [], [])
+
+            wf = os.path.join(td, 'wf_output.zz.json')
+            with open(wf, 'w', encoding='utf-8') as f:
+                json.dump({'results': []}, f)
+
+            # (a) THE RED PIN. Pre-fix this returned status='applied', rows_written 2, and
+            #     rewrote the store 11 -> 2. It now hits the content-mass gate its --merge
+            #     sibling always had, refuses, and leaves the store byte-identical.
+            result = pfc.promote_ready_partial_clean(
+                {'clean_keys': ['k0~~a']}, dry_run=False, store=store,
+                gen_model_version='claude-opus-5', wf_glob=wf)
+            assert result['status'] == 'refused_content_mass', result
+            assert '99.7%' in result['refusal'] or 'content mass' in result['refusal'], result
+            assert open(store, 'rb').read() == before_bytes, 'store must be untouched'
+
+            # (b) ...and --force still overrides it, exactly as it does on --merge. The fix
+            #     closes a silent divergence between two flags; it does not remove the
+            #     deliberate operator override.
+            forced = pfc.promote_ready_partial_clean(
+                {'clean_keys': ['k0~~a']}, dry_run=False, store=store,
+                gen_model_version='claude-opus-5', wf_glob=wf, force=True)
+            assert forced['status'] == 'applied', forced
+            assert forced['rows_written'] == 1, forced
+
+            # (c) THE CLAIM NOW COVERS THE READ. With a rival holding the claim, the apply
+            #     path raises ClaimBusy before it reads anything. Pre-fix it read and
+            #     merged happily and only collided at the write — by which point its merge
+            #     had already been computed against a snapshot the rival had superseded.
+            with PromoteClaim(store):
+                try:
+                    pfc.promote_ready_partial_clean(
+                        {'clean_keys': ['k0~~a']}, dry_run=False, store=store,
+                        gen_model_version='claude-opus-5', wf_glob=wf, force=True)
+                except ClaimBusy:
+                    pass
+                else:
+                    raise AssertionError('an apply under a rival claim must raise ClaimBusy')
+        finally:
+            pfc.merge_store_rows = prior_merge
+            pfc.collect_cards = prior_collect
+            pfc.rows_for = prior_rows_for
+            pfc.validate_promotion_entry = prior_validate
+
+        # (d) C5-3: lane_guard's EXECUTING revert now takes the claim (its dry run does
+        #     not). Under a rival claim the revert refuses instead of racing the promote
+        #     it is reverting.
+        import lane_guard
+        import spot_check_daily as scd
+        import time as _time
+        records = os.path.join(td, 'records')
+        os.makedirs(records)
+        scd._mk_promotion(records, 'w1', ['k0~~a'], int(_time.time()))
+        recs = scd.day_promotion_records(records, scd.utc_date(_time.time()))
+        quarantine = os.path.join(td, 'q.jsonl')
+        removed, _prot, _keys = lane_guard.revert_windows(recs, store, quarantine)
+        assert removed, 'dry run must still compute the revert without a claim'
+        with PromoteClaim(store):
+            try:
+                lane_guard.revert_windows(recs, store, quarantine, execute=True)
+            except ClaimBusy:
+                pass
+            else:
+                raise AssertionError('an executing revert under a rival claim must refuse')
+
+        # (e) C5-4: both sides of the TM denylist take the sidecar lock, so a denial can
+        #     no longer be deleted by a concurrent unblock's read-modify-replace.
+        import inspect
+
+        import translation_memory as tm
+        source = inspect.getsource(tm.stamp_denylist_from_last_audit)
+        assert '_sidecar_lock' in source, \
+            'the denial side must hold the same lock the unblock side holds (C5-4)'
+
+
 def main():
     failures = []
     for name, fn in PINS:
