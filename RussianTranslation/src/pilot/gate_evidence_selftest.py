@@ -250,6 +250,91 @@ def pin_run_observability_census():
         assert payload3['verdict'] == 'fail' and payload3['hits'] == 1, payload3
 
 
+# --------------------------------------------------------------------------- #
+# C6-05 — R4.1 daily spot check
+# --------------------------------------------------------------------------- #
+
+@pin('spot_check_daily (C6-05)')
+def pin_spot_check_daily():
+    import time
+
+    import spot_check_daily as scd
+
+    with scratch_evidence() as td:
+        records = os.path.join(td, 'records')
+        out = os.path.join(td, 'telemetry')
+        os.makedirs(records)
+        store = os.path.join(td, 'store.jsonl')
+        now = int(time.time())
+        date = scd.utc_date(now)
+
+        with open(store, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(json.dumps({'subcard': 'r~~a', 'ru': 'перевод', 'h': 'r',
+                                'grammar': 'n', 'layer': 'pwg',
+                                'review_status': 'ai_translated'},
+                               ensure_ascii=False) + '\n')
+
+        # (a) A DAY WITH NO PROMOTIONS. Pre-fix master wrote a spotcheck report with
+        #     population=0/sev3=0 and exited 0, and lane_guard read that as "clean" —
+        #     a green surveillance day in which nothing whatsoever was examined. The
+        #     spike ruled the emptiness legitimate (there was nothing to sample), so
+        #     the PASS survives, now stamped with the named class.
+        report = os.path.join(out, 'spotcheck_%s.json' % date)
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', os.path.join(td, 'absent.jsonl')])
+        payload = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
+        assert payload['vacuity'] == 'declared_empty', payload
+        assert payload['expected_empty'][0]['class'] == 'no_promotions_for_date'
+        assert payload['notes']['population'] == 0, payload
+        assert_missing_sidecar_fails(ge.sidecar_for(report), 'spot_check_daily')
+
+        # (a2) The half-empty day the same shape hides: promotions absent but the store
+        #      IS scanned. The record says so precisely — card_gates evaluated 0 cards
+        #      while store_san_loss evaluated 1 row — instead of one undifferentiated
+        #      "clean". The emptiness that IS present is still declared by name.
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', store])
+        half = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
+        by_name = {p['name']: p for p in half['predicates_evaluated']}
+        assert by_name['card_gates']['evaluations'] == 0, half
+        assert by_name['store_san_loss']['evaluations'] == 1, half
+        assert half['expected_empty'][0]['class'] == 'no_promotions_for_date', half
+
+        # (b) A real clean day: one promoted card, gates green — and the record now
+        #     carries the denominators (1 promotion record, 1 store row, 1 sampled card).
+        scd._mk_promotion(records, 'w1', ['r~~a'], now)
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', store])
+        payload2 = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
+        assert payload2['vacuity'] == 'worked', payload2
+        gates = {p['name']: p for p in payload2['predicates_evaluated']}
+        assert gates['card_gates']['evaluations'] == 1, gates
+        assert gates['store_san_loss']['evaluations'] == 1, gates
+        assert payload2['hits'] == 0 and payload2['verdict'] == 'pass', payload2
+
+        # (c) The all-errors judge day C6-05 names. The gate's own verdict is untouched
+        #     (that predicate fix is out of W1 scope) — but judged=0 is now recorded and
+        #     the record carries the warning, so "clean" no longer hides "never judged".
+        broken = json.dumps(sys.executable) + ' -c "print(41+"'
+        rep = scd.build_report(date, 1.0, records, store, judge_cmd=broken, workdir=td)
+        assert rep['judged'] == 0 and rep['judge_errors'] == 1, rep
+        ev = scd.write_evidence(rep, records, store, os.path.join(td, 'judge.evidence.json'))
+        assert ev.verdict == 'pass', 'W1 does not change the verdict'
+        assert any('C6-05' in w for w in ev.warnings), ev.warnings
+        judge = [p for p in ev.predicates if p['name'] == 'judge'][0]
+        assert judge['evaluations'] == 0, judge
+
+        # (d) A sev-3 day still fails, predicate untouched.
+        with open(store, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(json.dumps({'subcard': 'r~~a', 'ru': 'плохой {T3}', 'h': 'r',
+                                'grammar': 'n', 'layer': 'pwg'},
+                               ensure_ascii=False) + '\n')
+        scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
+                  '--out-dir', out, '--store', store])
+        payload4 = ge.load_sidecar(ge.sidecar_for(report))
+        assert payload4['verdict'] == 'fail' and payload4['hits'] > 0, payload4
+
+
 def main():
     failures = []
     for name, fn in PINS:
