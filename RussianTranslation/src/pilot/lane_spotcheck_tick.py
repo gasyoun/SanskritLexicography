@@ -39,6 +39,7 @@ for p in (HERE, SRC):
         sys.path.insert(0, p)
 
 import data_root as dr                         # noqa: E402
+import gate_evidence as ge                     # noqa: E402
 import lane_guard                              # noqa: E402
 import spot_check_daily as scd                 # noqa: E402
 
@@ -51,16 +52,42 @@ def spotcheck_path(telemetry_dir, date):
     return os.path.join(telemetry_dir, 'spotcheck_%s.json' % date)
 
 
-def fresh_spotcheck(telemetry_dir, now=None, max_age=SPOTCHECK_MAX_AGE_SECONDS):
+def fresh_spotcheck(telemetry_dir, now=None, max_age=SPOTCHECK_MAX_AGE_SECONDS,
+                    evidence_path=None):
     """Path of the newest spotcheck report still inside the freshness window, else
     None. Pure filesystem read — nonstop_scheduler uses this to fail CLOSED on
-    auto-promote when R4.1 surveillance is not actually running."""
+    auto-promote when R4.1 surveillance is not actually running.
+
+    W1 (H3748, #1803 C2-2): the predicate is unchanged — it is still a filename prefix
+    and an mtime, and it still accepts a 0-byte or truncated report, which is the live
+    half of C2-2 and stays filed. What is new is the evidence sidecar
+    :func:`fresh_spotcheck_evidence` builds: every candidate is named, sized and hashed,
+    so a report this gate blessed **without reading a byte of it** is now visible as a
+    0-byte input with a warning, instead of vanishing behind a returned path.
+    """
+    path, ev = fresh_spotcheck_evidence(telemetry_dir, now=now, max_age=max_age)
+    ev.emit(evidence_path or ge.default_sidecar('lane_spotcheck_freshness'))
+    return path
+
+
+def fresh_spotcheck_evidence(telemetry_dir, now=None, max_age=SPOTCHECK_MAX_AGE_SECONDS):
+    """(fresh_path_or_None, GateEvidence) — the freshness answer plus what produced it.
+
+    Verdict vocabulary follows this module's own exit-code contract: a fresh report is
+    ``pass``; **no candidate at all is ``inconclusive``, never a pass** — "a surveillance
+    job that dies must not read as a pass". So this gate has no legitimately-empty input
+    class, and a declared-empty PASS here would launder a refusal into a green light.
+    """
     now = time.time() if now is None else now
+    ev = ge.GateEvidence('lane_spotcheck_freshness',
+                         'R4.1 surveillance freshness window (C2-2)')
     best = None
     try:
-        names = os.listdir(telemetry_dir)
+        names = sorted(os.listdir(telemetry_dir))
     except OSError:
-        return None
+        names = []
+        ev.add_input('telemetry_dir', path=telemetry_dir, units=0, exists=False)
+    candidates = 0
     for name in names:
         if not (name.startswith('spotcheck_') and name.endswith('.json')):
             continue
@@ -69,9 +96,21 @@ def fresh_spotcheck(telemetry_dir, now=None, max_age=SPOTCHECK_MAX_AGE_SECONDS):
             age = now - os.path.getmtime(path)
         except OSError:
             continue
+        candidates += 1
+        # Hashing here is the whole point: the predicate below reads only the mtime,
+        # so without this the record could not say WHICH bytes were blessed.
+        ev.add_input('spotcheck:%s' % name, path=path, units=1)
+        ev.note('age_seconds:%s' % name, int(age))
         if age <= max_age and (best is None or age < best[0]):
             best = (age, path)
-    return best[1] if best else None
+    ev.add_predicate('within_freshness_window', evaluations=candidates,
+                     hits=candidates - (1 if best else 0))
+    ev.note('max_age_seconds', max_age)
+    ev.note('fresh_report', os.path.basename(best[1]) if best else None)
+    ev.note('surveillance_live', bool(best))
+    ev.set_verdict('pass' if best else 'inconclusive')
+    ev.assert_nonvacuous()
+    return (best[1] if best else None), ev
 
 
 def tick(lane, data_root, date=None, fraction=0.10, judge_cmd=None, execute=False,

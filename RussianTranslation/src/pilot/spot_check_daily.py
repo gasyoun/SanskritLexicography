@@ -48,6 +48,7 @@ for p in (HERE, SRC):
         sys.path.insert(0, p)
 
 from store_path import canonical_store  # noqa: E402
+import gate_evidence as ge  # noqa: E402
 
 SCHEMA = 'pwg.spotcheck_daily.v1'
 
@@ -183,20 +184,32 @@ def store_san_loss_scan(store):
     spans silently dropped, no literal marker text) returned ``san_loss_in_store=False``
     (FINDINGS §589, SanskritLexicography#1902).
     """
+    return store_san_loss_census(store)[0]
+
+
+def store_san_loss_census(store):
+    """(hits, rows_scanned) — same scan, plus the denominator.
+
+    W1 (H3748, #1803): the hit list alone cannot distinguish "scanned 11,603 rows, found
+    no span loss" from "the store was not there". The scan itself is unchanged; the row
+    count is the evidence that it happened.
+    """
     hits = []
+    scanned = 0
     if not os.path.exists(store):
-        return hits
+        return hits, scanned
     with open(store, encoding='utf-8') as f:
         for line in f:
             try:
                 row = json.loads(line)
             except ValueError:
                 continue
+            scanned += 1
             de, ru = row.get('de') or '', row.get('ru') or ''
             for flag in markup_fidelity_gates.markup_span_flags(de, ru, check_ab=False):
                 if flag.startswith('SAN-LOSS'):
                     hits.append({'subcard': row.get('subcard'), 'field': 'ru', 'flag': flag})
-    return hits
+    return hits, scanned
 
 
 def judge_card(judge_cmd, key, rows, workdir):
@@ -226,7 +239,7 @@ def build_report(date, fraction, records_dir, store, judge_cmd=None, workdir=Non
     defects = []
     for key in sampled:
         defects.extend(check_card(key, rows_by_key.get(key) or []))
-    san_hits = store_san_loss_scan(store)
+    san_hits, store_rows = store_san_loss_census(store)
     judge_results = []
     if judge_cmd:
         for key in sampled:
@@ -247,11 +260,60 @@ def build_report(date, fraction, records_dir, store, judge_cmd=None, workdir=Non
         'sampled': sampled,
         'defects': defects,
         'sev3_count': len(sev3),
+        # W1 accounting (#1803 C6-05): the denominators. `store_rows` is how many store
+        # rows the SAN-LOSS scan actually read, `judged`/`judge_errors` how many sampled
+        # cards the judge returned a verdict for vs failed on. An all-errors judge day is
+        # judged=0 -- the shape C6-05 names, now countable instead of silent.
+        'store_rows': store_rows,
+        'judged': sum(1 for j in judge_results if j.get('status') == 'judged'),
+        'judge_errors': sum(1 for j in judge_results if j.get('status') == 'judge_error'),
         'san_loss_in_store': bool(san_hits),
         'san_loss_hits': san_hits[:100],
         'judge': ({'cmd_template': judge_cmd, 'results': judge_results} if judge_cmd
                   else 'skipped'),
     }
+
+
+def write_evidence(report, records_dir, store, evidence_path):
+    """The W1 gate-evidence sidecar for one spot-check report (#1803 C6-05).
+
+    Predicate logic untouched: the verdict below is exactly `sev3_count` plus the store
+    SAN-LOSS flag, the same two facts `lane_guard` already reads. What is new is that the
+    record names what was examined -- how many promotion records, how many store rows,
+    how many sampled cards each gate ran over -- so a clean day cannot be confused with a
+    day on which nothing was checked. A date with zero auto-promotions is the one declared
+    legitimate emptiness; an all-errors judge day is stamped as a warning, because
+    "inconclusive is never PASS" is this module's own contract.
+    """
+    ev = ge.GateEvidence('spot_check_daily',
+                         'R4.1 daily spot check over promoted cards (C6-05)')
+    ev.add_input('promotion_records', path=records_dir,
+                 units=len(report['promotion_records']))
+    ev.add_input('store', path=store, units=report['store_rows'])
+    sampled = len(report['sampled'])
+    ev.add_predicate('card_gates', evaluations=sampled, hits=report['sev3_count'])
+    ev.add_predicate('store_san_loss', evaluations=report['store_rows'],
+                     hits=len(report.get('san_loss_hits') or []))
+    if report['judge'] != 'skipped':
+        ev.add_predicate('judge', evaluations=report['judged'],
+                         hits=sum(1 for d in report['defects'] if d.get('check') == 'judge'))
+        if report['judge_errors']:
+            ev.warnings.append(
+                'C6-05: %d of %d sampled card(s) came back judge_error — inconclusive, '
+                'and this gate does not (yet) trip R4.1 on them'
+                % (report['judge_errors'], sampled))
+    ev.note('population', report['population'])
+    ev.note('fraction', report['fraction'])
+    ev.set_verdict('fail' if (report['sev3_count'] or report['san_loss_in_store'])
+                   else 'pass')
+    if not report['population']:
+        ev.declare_expected_empty(
+            'no_promotions_for_date',
+            'no auto-promotion landed on %s: sampling 10%% of nothing is not a failure '
+            'of the sampler' % report['date'])
+    ev.assert_nonvacuous()
+    ev.emit(evidence_path)
+    return ev
 
 
 def main(argv=None):
@@ -284,6 +346,7 @@ def main(argv=None):
         json.dump(report, f, ensure_ascii=False, indent=1)
         f.write('\n')
     os.replace(tmp, out)
+    write_evidence(report, args.records_dir, store, ge.sidecar_for(out))
     print('spot-check %s: population=%d sampled=%d sev3=%d san_loss_in_store=%s -> %s'
           % (args.date, report['population'], len(report['sampled']),
              report['sev3_count'], report['san_loss_in_store'], out))

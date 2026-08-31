@@ -115,6 +115,8 @@ jobs:
             RussianTranslation/src/pilot/windows100_selftest.py \
             RussianTranslation/src/pilot/run_observability.py \
             RussianTranslation/src/pilot/run_observability_selftest.py \
+            RussianTranslation/src/pilot/gate_evidence.py \
+            RussianTranslation/src/pilot/gate_evidence_selftest.py \
             RussianTranslation/src/pilot/build_edition_diff_site.py
           git ls-files ':(glob)RussianTranslation/src/eval/*.py' | xargs python -m py_compile
       - name: Sa->Ru gloss pipeline unit tests (H1349 waves 1-4)
@@ -298,6 +300,39 @@ jobs:
           python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05
+      - name: W1 gate-evidence contract (H3748, #1803 / #1800 / #1798)
+        working-directory: RussianTranslation
+        run: |
+          # The contract itself: a zero-work PASS is a hard FAIL, declared emptiness is
+          # named rather than silent, and a missing sidecar FAILS the consumer.
+          python src/pilot/gate_evidence.py --selftest
+          # The eleven per-gate RED pins (nine from #1803, G9 from #1798) plus the #1800
+          # promote read-modify-write replay. Hermetic: every pin runs in a temp dir with
+          # PWG_GATE_EVIDENCE_DIR redirected, so none touches a live telemetry sidecar.
+          python src/pilot/gate_evidence_selftest.py
+          # G9 must be RED on a duplicate-entry-id artifact. #1798 measured 12,374
+          # duplicated ids in the SHIPPED release/ bytes; this fixture is the same shape
+          # in three entries, so the gate has teeth without a 23MB/32MB parse.
+          # --evidence redirects the sidecar out of the committed fixture dir.
+          if python src/validate_interop.py --dir src/fixtures/interop_duplicate_ids                --evidence "$RUNNER_TEMP/g9_dupe.evidence.json"; then
+            echo "expected the duplicate-entry-id fixture to FAIL G9"
+            exit 1
+          fi
+      - name: Gate evidence must EXIST for the gates this job ran (ARCHITECTURE §1)
+        working-directory: RussianTranslation
+        run: |
+          # "A missing sidecar after W1 means the gate did not run the contract — itself
+          # a FAIL." The gates below actually executed earlier in this job, so their
+          # sidecars must be on disk, passing, and non-vacuous. A gate that regresses to
+          # emitting nothing turns this step red rather than going quiet.
+          #
+          # check_launch_ledger ran in "Validate PWG production runtime" above;
+          # prompt_compiler's golden selftest was not in this job at all before W1 and is
+          # run here so its evidence exists to be required.
+          python src/pilot/prompt_compiler.py
+          python src/pilot/gate_evidence.py \
+            --require launch_ledger \
+            --require prompt_compiler_golden
       - name: Validate nonstop multilane runtime (H2175 wave 1)
         working-directory: RussianTranslation
         run: |
@@ -426,6 +461,9 @@ jobs:
         run: |
           python src/export_interop.py all --cards src/fixtures/assembled_card.fixture.jsonl --out-dir "$RUNNER_TEMP/interop_fixture"
           python src/validate_interop.py --dir "$RUNNER_TEMP/interop_fixture"
+          # G9's own evidence must exist beside the artifacts it validated (H3748 / #1798).
+          python src/pilot/gate_evidence.py \
+            --require "interop_validity=$RUNNER_TEMP/interop_fixture/interop_validation.evidence.json"
           python src/release_readiness.py --release-dir "$RUNNER_TEMP/interop_fixture" --out "$RUNNER_TEMP/readiness_report.md"
           python src/preflight_remaining_gates.py --release-dir "$RUNNER_TEMP/interop_fixture" --readiness-out "$RUNNER_TEMP/preflight_readiness_report.md" --skip-local-human-artifacts
           python src/make_edition_cut.py edition_fixture --cards src/fixtures/assembled_card.fixture.jsonl --release-root "$RUNNER_TEMP/release_fixture" --source-release "$RUNNER_TEMP/release_fixture/source"

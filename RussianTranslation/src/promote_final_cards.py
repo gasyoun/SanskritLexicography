@@ -220,22 +220,61 @@ def promote_ready_partial_clean(lease_or_report, *, dry_run=True, store=None,
     if not rows:
         result['status'] = 'error_no_rows'
         return result
-    existing_rows = []
-    if os.path.exists(store):
-        with open(store, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    existing_rows.append(json.loads(line))
-    # H2146: the clean-subset path never overrides human-reviewed rows — wave-1 agents
-    # must not be able to strip a reviewer stamp; protected subcards keep their store rows.
-    rows_to_write, downgraded, protected = merge_store_rows(existing_rows, rows)
-    if protected:
-        print('⚠ overlay-preserve: store keeps its HUMAN-REVIEWED rows for %d subcard(s); '
-              'incoming machine attempt dropped: %s'
-              % (len(protected), ', '.join(protected[:10])))
+    # H3748 (#1800 C5-2). Two things changed here, and nothing else.
+    #
+    # 1. THE CLAIM NOW WRAPS THE READ. It used to be taken AFTER the store was read and
+    #    merged, so the merge was computed against a snapshot a rival promote could have
+    #    superseded — the exact "read-existing-store / merge-in-new-rows / os.replace
+    #    window" promote_lock.py says it exists to serialize.
+    # 2. THE THREE REFUSAL GATES ARE HERE. `--merge` refused an 11 -> 2 row promote with
+    #    "would shed 99.7% of store content mass"; this flag of the SAME entry point
+    #    applied it, exit 0, `rows_written 2`, no warning and no --force, because
+    #    `merge_store_rows` contains none of the gates and this path called nothing else.
+    #    Measured on byte-identical fixture stores (issue #1800, C5-2).
+    #
+    # The gates are the promote lane's, imported not restated: duplicate sense identity,
+    # >50% row shrink, content-mass shed. `force` overrides the last two exactly as
+    # --force does on --merge; a duplicate identity is never overridable.
     claim_cm = PromoteClaim(store)
     with claim_cm:
+        existing_rows = []
+        if os.path.exists(store):
+            with open(store, encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        existing_rows.append(json.loads(line))
+        # H2146: the clean-subset path never overrides human-reviewed rows — wave-1 agents
+        # must not be able to strip a reviewer stamp; protected subcards keep their store rows.
+        rows_to_write, downgraded, protected = merge_store_rows(existing_rows, rows)
+        if protected:
+            print('⚠ overlay-preserve: store keeps its HUMAN-REVIEWED rows for %d subcard(s); '
+                  'incoming machine attempt dropped: %s'
+                  % (len(protected), ', '.join(protected[:10])))
+
+        identities = [(r.get('key1'), r.get('subcard'), r.get('h'),
+                       r.get('sense_tag'), r.get('de')) for r in rows_to_write]
+        duplicates = [i for i, n in collections.Counter(identities).items() if n > 1]
+        if duplicates:
+            result['status'] = 'refused_duplicate_identity'
+            result['duplicate_identities'] = len(duplicates)
+            return result
+        # Gate ORDER matches the --merge lane deliberately: content mass first, row count
+        # second. The two flags must not merely both refuse — they must refuse with the
+        # SAME message, or an operator comparing them still sees two different tools.
+        try:
+            refuse_content_mass_shrink(existing_rows, rows_to_write, force=force)
+        except PromotionContractError as exc:
+            result['status'] = 'refused_content_mass'
+            result['refusal'] = str(exc)
+            return result
+        before_rows = len(existing_rows)
+        if before_rows and len(rows_to_write) < before_rows * 0.5 and not force:
+            result['status'] = 'refused_row_shrink'
+            result['rows_before'] = before_rows
+            result['rows_after'] = len(rows_to_write)
+            return result
+
         if os.path.exists(store):
             bak = _backup_path(store, True)
             _fsynced_backup(store, bak)
@@ -714,6 +753,18 @@ def refuse_content_mass_shrink(existing_rows, rows_to_write, force=False):
     (before_mass, after_mass); raises ``PromotionContractError`` unless ``force``."""
     before = content_mass(existing_rows)
     after = content_mass(rows_to_write)
+    refuse_content_mass_loss(before, after, len(existing_rows), len(rows_to_write),
+                             force=force)
+    return before, after
+
+
+def refuse_content_mass_loss(before, after, rows_before, rows_after, force=False):
+    """The same gate over MASSES already measured.
+
+    H3748 (#1800 C5-1): promote_en mutates its row list in place, so it cannot hand this
+    gate a `before` list without copying ~11.6k dicts. It can hand over the scalar it took
+    at read time. One threshold, one field list, one refusal message -- the whole point of
+    factoring this out rather than restating it there."""
     if before and after < before * (1 - CONTENT_MASS_MAX_LOSS):
         if force:
             print('content-mass guard: --force overrides a %d -> %d char shrink (%.1f%%)'
@@ -724,8 +775,7 @@ def refuse_content_mass_shrink(existing_rows, rows_to_write, force=False):
                 'row delta %d -> %d — a content loss the row-count guards cannot see '
                 '(H2153 / #977). Inspect, or --force for a deliberate reduction.'
                 % (100.0 * (before - after) / before, before, after,
-                   '/'.join(CONTENT_MASS_FIELDS), len(existing_rows), len(rows_to_write)))
-    return before, after
+                   '/'.join(CONTENT_MASS_FIELDS), rows_before, rows_after))
 
 
 def tn_residue(card, rec, sense):
@@ -1277,6 +1327,28 @@ def main():
                 rp_report = json.load(f)
         except (OSError, json.JSONDecodeError) as e:
             sys.exit('REFUSED: cannot load --ready-partial-report: %s' % e)
+        # H3748 (#1800 C5-2): this dispatch used to sit ABOVE validate_store_target and
+        # above every H2089 route guard, so `--ready-partial-report --apply` reached the
+        # live canonical store (--store defaults to DEFAULT_STORE, which resolves to it
+        # even from a worktree) through a door its --merge sibling cannot use. An apply is
+        # a promote; it takes the same two checks a promote takes.
+        if args.apply:
+            try:
+                validate_store_target(args.store, args.init_store)
+            except PromotionContractError as exc:
+                sys.exit('REFUSED: %s' % exc)
+            _def = os.path.normpath(os.path.abspath(DEFAULT_STORE))
+            _tgt = os.path.normpath(os.path.abspath(args.store))
+            if _tgt == _def:
+                override = (args.allow_raw_default_merge
+                            or os.environ.get('PWG_ALLOW_RAW_MERGE_DEFAULT_STORE') == '1')
+                if not args.promotion_id and not override:
+                    sys.exit(
+                        'REFUSED: --ready-partial-report --apply into the default pwg_ru '
+                        'store without --promotion-id (H2089 route-bypass, #1800 C5-2). '
+                        'Use coordinator --batch-manifest + --journal, or pass '
+                        '--promotion-id, or --allow-raw-default-merge / '
+                        'PWG_ALLOW_RAW_MERGE_DEFAULT_STORE=1')
         result = promote_ready_partial_clean(
             rp_report, dry_run=not args.apply, store=args.store,
             gen_model_version=args.gen_model_version,
@@ -1284,7 +1356,9 @@ def main():
             wf_glob=os.path.join(ROOT, args.glob) if args.glob else None,
             force=args.force)
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        if result.get('status') in ('refused_defect', 'error_no_store',
+        if result.get('status') in ('refused_defect', 'refused_duplicate_identity',
+                                    'refused_row_shrink', 'refused_content_mass',
+                                    'error_no_store',
                                     'error_no_model_version', 'error_no_wf',
                                     'error_conflicts', 'error_no_rows'):
             sys.exit(2)
