@@ -29,6 +29,10 @@ RussianTranslation/src/_review_queue.triage.csv
 RussianTranslation/src/*.jsonl
 RussianTranslation/src/*.jsonl.backup.*
 RussianTranslation/src/*.jsonl.tmp
+# One-off backup that missed both the `*.jsonl.backup.*` and `*.bak`
+# conventions above (found untracked 31-08-2026) -- exact-path rather than a
+# new glob, since it's a single anomaly, not a new naming pattern.
+RussianTranslation/src/pwg_ru_translated.jsonl.h3500-backup-25-08
 # Gorresio e-text: small PD-derived canonical asset (H1656) — committed,
 # exception to the blanket src/*.jsonl rule above.
 !RussianTranslation/src/gorresio_etext.jsonl
