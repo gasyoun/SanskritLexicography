@@ -30,6 +30,7 @@ import microstructure as M
 import dict_merge as dm
 import corpus_gate as cg
 import nws_split
+import pwg_homonym
 from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -370,9 +371,11 @@ def sense_chunks(head_lines, cit_budget):
     return chunks
 
 
-def head_sense_parts(key, head_lines, hom, n_hom):
+def head_sense_parts(key, head_lines, hom, n_hom, hom_label=None):
     """The PWG simple-verb head, split at sense boundaries to citation-light single-pass parts.
-    hom = homonym index (0-based); when a headword has >1 homonym the label says so.
+    hom = ENUMERATE index over the headword's PWG records (0-based), NOT a homonym number
+    (#1801). `hom_label` is the caller's already-resolved printed label (e.g. ' homonym 3');
+    only when it is not supplied does the positional fallback apply.
     -> [(section_label, blob), ...]."""
     parts = []
     chunks = sense_chunks(head_lines, HEAD_CIT_BUDGET)
@@ -381,7 +384,8 @@ def head_sense_parts(key, head_lines, hom, n_hom):
         if ch.get('batch_of'):
             batch_counts[ch['batch_of']] = batch_counts.get(ch['batch_of'], 0) + 1
     batch_seen = {}
-    htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
+    htag = hom_label if hom_label is not None else ((' record %d/%d' % (hom + 1, n_hom))
+                                                    if n_hom > 1 else '')
     top = 0                                           # running top-level sense number across chunks
     for i, chunk in enumerate(chunks):
         ch = chunk['lines']
@@ -495,6 +499,11 @@ def gen_root_split(key, pwg_idx, verbose=True):
     if not bufs:
         return None
     segmented = []
+    # #1801: `hom` below is an ENUMERATE index over these records, never a homonym number.
+    # Read the printed `<h>` and `<pc>` off each record header while we still have it, so
+    # the translator header and the rootmap carry the true values instead of `hom + 1`
+    # (which is right only when the record list happens to be 1..n with no Nachträge).
+    printed = [pwg_homonym.header_locus(buf[0]) for buf in bufs]
     for buf in bufs:
         dl = [l for l in buf if not (l.startswith('<L>') or l.startswith('<LEND>'))]
         cards = RS.segment(dl)
@@ -506,6 +515,24 @@ def gen_root_split(key, pwg_idx, verbose=True):
     n_hom = len(bufs)
     submap = []
     npfx_total = 0
+
+    def hom_fields(hom):
+        """The enumerate index PLUS the record's own printed homonym/column (#1801).
+
+        `hom` stays the sub-card key's index (it is the identity of every already-promoted
+        store row); `hom_printed`/`pc` are what the page actually says, so a consumer never
+        has to guess the two are the same number again. `hom_printed` is None for a record
+        PWG prints without an `<h>` marker -- an honest absence, not a 0.
+        """
+        h, pc = printed[hom] if hom < len(printed) else (None, None)
+        return {'hom': hom, 'hom_printed': h, 'pc': pc}
+
+    def homonym_tag(hom):
+        """Translator-facing homonym label: the PRINTED number, never `hom + 1`."""
+        if n_hom <= 1:
+            return ''
+        h = printed[hom][0] if hom < len(printed) else None
+        return ' homonym %s' % h if h else ' (unnumbered PWG record %d of %d)' % (hom + 1, n_hom)
 
     def clean_old_subcards():
         """Remove stale generated sub-card inputs for this root before rewriting them."""
@@ -525,11 +552,12 @@ def gen_root_split(key, pwg_idx, verbose=True):
         if npfx >= MIN_SPLIT:                       # giant homonym -> head parts + prefix sub-cards
             npfx_total += npfx
             head_pf = subcard_portrait(key, '')   # simple-verb head -> root corpus evidence
-            for part, (label, blob, meta) in enumerate(head_sense_parts(key, cards[0]['lines'], hom, n_hom)):
+            for part, (label, blob, meta) in enumerate(head_sense_parts(key, cards[0]['lines'], hom, n_hom, homonym_tag(hom))):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
                 write(sub, blob, head_pf)
-                entry = {'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
+                entry = {'subkey': sub, 'seg_index': 0, 'part': part,
                          'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key}
+                entry.update(hom_fields(hom))
                 entry.update(meta)
                 submap.append(entry)
             for seg, c in enumerate(cards[1:], start=1):
@@ -545,7 +573,7 @@ def gen_root_split(key, pwg_idx, verbose=True):
                     sub = '%s~~h%d_%02d_%s%s' % (root, hom, seg, tok,
                                                  '_%d' % part if len(chunks) > 1 else '')
                     pp = ' part %d/%d' % (part + 1, len(chunks)) if len(chunks) > 1 else ''
-                    htag = (' homonym %d' % (hom + 1)) if n_hom > 1 else ''
+                    htag = homonym_tag(hom)
                     if kind == 'secondary':
                         hdr = ('PWG-ROOT SUBCARD%s — root=%s SECONDARY %s%s (caus./desid./intens. '
                                'of the simple verb)' % (htag, key, label, pp))
@@ -553,16 +581,17 @@ def gen_root_split(key, pwg_idx, verbose=True):
                         hdr = ('PWG-ROOT SUBCARD%s — root=%s upasarga=%s%s (prefixed verb nested in '
                                'the %s root article; root_key links it back)' % (htag, key, upa, pp, key))
                     write(sub, '=== LAYER: %s ===\n\n%s' % (hdr, '\n'.join(ch)), sub_pf)
-                    submap.append({'subkey': sub, 'hom': hom, 'seg_index': seg, 'part': part,
-                                   'kind': kind, 'section': kind, 'upasarga': upa,
-                                   'label': label, 'root_key': key})
+                    submap.append(dict({'subkey': sub, 'seg_index': seg, 'part': part,
+                                        'kind': kind, 'section': kind, 'upasarga': upa,
+                                        'label': label, 'root_key': key}, **hom_fields(hom)))
         else:                                       # small homonym -> keep whole (chunked if long)
             small_pf = subcard_portrait(key, '')
-            for part, (label, blob, meta) in enumerate(head_sense_parts(key, dl, hom, n_hom)):
+            for part, (label, blob, meta) in enumerate(head_sense_parts(key, dl, hom, n_hom, homonym_tag(hom))):
                 sub = '%s~~h%d_00_%s' % (root, hom, label)
                 write(sub, blob, small_pf)
-                entry = {'subkey': sub, 'hom': hom, 'seg_index': 0, 'part': part,
+                entry = {'subkey': sub, 'seg_index': 0, 'part': part,
                          'kind': 'head', 'section': label, 'upasarga': '', 'root_key': key}
+                entry.update(hom_fields(hom))
                 entry.update(meta)
                 submap.append(entry)
     head_parts = [s for s in submap if s['kind'] == 'head']   # for the verbose line
@@ -570,8 +599,9 @@ def gen_root_split(key, pwg_idx, verbose=True):
     for part, (label, blob) in enumerate(supplement_parts(key)):
         sub = '%s~~h0_zz_%s' % (root, label)
         write(sub, blob)
-        submap.append({'subkey': sub, 'hom': 0, 'seg_index': 99, 'part': part,
-                       'kind': 'supplement', 'section': label, 'upasarga': '', 'root_key': key})
+        submap.append(dict({'subkey': sub, 'seg_index': 99, 'part': part,
+                            'kind': 'supplement', 'section': label, 'upasarga': '',
+                            'root_key': key}, **hom_fields(0)))
     npfx = npfx_total
     json.dump({'root': key, 'safe': root, 'sub_cards': submap},
               open(os.path.join(OUT, root + '.rootmap.json'), 'w', encoding='utf-8'),
