@@ -847,6 +847,12 @@ def rows_for(subkey, entry, review_status, model_version):
                 # H1624 G4: edition-relationship flags (H180 typology machine class).
                 # PW gender-correction needs a PWG peer; promote stamps the layer rule
                 # default (restate for pw); annotate_edition_rel fills pw_correct later.
+                # H3752: promotion sees ONE card, so there are no peer rows to build
+                # a sense index from and nothing can be placed here — the stamp comes
+                # out `restate_unplaced`, which is exactly what `placement: False`
+                # already said at this point. `annotate_edition_rel` runs over the
+                # whole store, builds the index, and promotes the label to the plain
+                # `restate` wherever a target really resolves.
                 'edition_rel': classify_edition_rel(
                     layer, sense.get('tag'), de,
                     key1=key1, subcard=subkey),

@@ -38,7 +38,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 sys.path.insert(0, SRC)
-from edition_rel import edition_rel_for_row, build_pwg_gender_index, SUBTYPES  # noqa: E402
+from edition_rel import (  # noqa: E402
+    ALL_SUBTYPES, SUBTYPES, base_subtype, build_pwg_gender_index,
+    build_pwg_sense_index, edition_rel_for_row,
+)
 from store_path import canonical_store  # noqa: E402
 
 STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
@@ -144,9 +147,14 @@ def build_model(rows):
     counts = Counter()
     for key1, key_rows in by_key.items():
         idx = build_pwg_gender_index(key_rows)
+        # H3752: the sense index was never built here, so `placement` was False
+        # on every row this page rendered — while the `attach` grouping below
+        # happily filed supplements under a target sense. The badge and the
+        # grouping disagreed. Both now read the same lookup.
+        sidx = build_pwg_sense_index(key_rows)
         pwg_senses, attach, new = [], {}, []
         for r in key_rows:
-            rel = edition_rel_for_row(r, idx)
+            rel = edition_rel_for_row(r, idx, sidx)
             counts[rel['subtype']] += 1
             layer = r.get('layer') or 'pwg'
             entry = {
@@ -169,8 +177,12 @@ def build_model(rows):
 
 def _badge(entry):
     st = entry['subtype']
+    # H3752: colour by the base label — an unplaced restate is still a restate —
+    # but PRINT the full label, which is the whole point: the reader must see
+    # that no PWG sense was identified for this supplement.
     return ('<span class="badge" data-subtype="%s" style="background:%s">%s &middot; %s</span>'
-            % (st, BADGE_COLOR.get(st, BADGE_COLOR['unknown']), html.escape(entry['label']), st))
+            % (st, BADGE_COLOR.get(base_subtype(st), BADGE_COLOR['unknown']),
+               html.escape(entry['label']), st))
 
 
 def render_key(key1, m):
@@ -236,7 +248,8 @@ DE text shown here is read-only -- never re-translated, never rewritten.</p>
 def render_page(model, counts):
     nav = ''.join('<a href="#%s">%s</a>' % (html.escape(k, quote=True), html.escape(k)) for k in sorted(model))
     body = '\n'.join(render_key(k, model[k]) for k in sorted(model))
-    counts_html = ''.join('<li>%s: %d</li>' % (st, counts[st]) for st in SUBTYPES if counts.get(st))
+    counts_html = ''.join('<li>%s: %d</li>' % (st, counts[st])
+                          for st in ALL_SUBTYPES if counts.get(st))   # H3752
     return PAGE_TEMPLATE % {'nav': nav, 'body': body, 'counts': counts_html}
 
 
@@ -244,14 +257,28 @@ def selftest():
     model, counts = build_model(FIXTURE_ROWS)
     assert set(model) == {'kfz', 'vAh'}, sorted(model)
     page = render_page(model, counts)
+    # H3752: `a2a` is `a2a_unplaced` here, and that is the fixture telling the
+    # truth rather than a regression — its PWKVN row points at sense 4 while the
+    # `kfz` skeleton has only senses 1 and 2, so there is no target to relate to.
     expected = {'base', 'restate', 'pw_correct', 'sch_star', 'derived_sense',
-                'a2a', 'nws_at_sense', 'foreign_fragment'}
+                'a2a_unplaced', 'nws_at_sense', 'foreign_fragment'}
     for st in expected:
         assert ('data-subtype="%s"' % st) in page, 'missing badge for subtype %r' % st
     # every subtype rendered is a KNOWN edition_rel subtype -- no new typology invented
     found = set(re.findall(r'data-subtype="([a-z0-9_]+)"', page))
-    assert found <= set(SUBTYPES), 'unknown subtype(s) rendered: %r' % (found - set(SUBTYPES))
+    assert found <= set(ALL_SUBTYPES), \
+        'unknown subtype(s) rendered: %r' % (found - set(ALL_SUBTYPES))
     assert found == expected, 'expected all 8 non-unknown subtypes, got %r' % found
+    # …and the reason is the one just given: sense 4 is absent from the skeleton.
+    assert 'a2a' not in found, 'the unplaced a2a must not also render as placed'
+    # H3752, the latent defect this exposed: `build_model` never built the sense
+    # index, so NOTHING on this page could ever be placed. With it built, the two
+    # supplements that really do point at a live PWG sense keep their plain label
+    # — which is what proves the index is wired, not merely imported.
+    assert counts['restate'] >= 1 and counts.get('restate_unplaced', 0) == 0, \
+        'a supplement at a real PWG sense must stay `restate`: %r' % dict(counts)
+    assert counts['nws_at_sense'] >= 1, \
+        'the NWS row at sense 2 must be placed: %r' % dict(counts)
     # DE not rewritten: the fixture's own gloss text passes through verbatim (unwrapped, not translated)
     for needle in ('to pull, sense one', 'to draw, sense two', 'gender corrected',
                    'addendum to an addendum', 'desiderative derived form', 'testword'):

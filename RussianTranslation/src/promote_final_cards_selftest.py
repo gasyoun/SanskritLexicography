@@ -167,7 +167,12 @@ def selftest():
                   'wf_file': 'wf_output.json'}
     prow = list(rows_for('g~~h0_zz_pw01', pw_entry, 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]
-    assert prow['edition_rel']['subtype'] == 'restate', prow['edition_rel']
+    # H3752: promotion sees one card and has no peer rows, so no PWG sense can be
+    # identified here and the provisional stamp is the unplaced twin — agreeing
+    # with the `placement: False` this row already carried. `direction` is the
+    # layer's property and survives, which is what keeps the stamp useful.
+    assert prow['edition_rel']['subtype'] == 'restate_unplaced', prow['edition_rel']
+    assert prow['edition_rel']['placement'] is False, prow['edition_rel']
     assert prow['edition_rel']['direction'] == 'abridging', prow['edition_rel']
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
