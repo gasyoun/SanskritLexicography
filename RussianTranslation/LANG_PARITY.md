@@ -2277,7 +2277,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pwg_page_index.py": "12423c8b1943a1e1455504b73a6244af6f81095f099fe75798969ca16c0faffb",
       "src/_pilot_gen_merged.py": "697c7d8f294228a8546fa0dbf8b4e4ef16840d2909afa076373caeb106d14831",
       "src/h3751_apply_homonym_locus.py": "d3fde194db14beb0591e14a60f75efba8cbebdda2a9d4b9d7fe3f30881ea219a",
-      "src/h3751_homonym_census.py": "d4dcbb7d5656fce5e144ece1055ce02a5929668c99b33be919b653ba2d6e049b"
+      "src/h3751_homonym_census.py": "24008d4bda90df7487f937e952557b208b7aed0686f6e709588b7f4b1ed04107"
     }
   }
 ]
