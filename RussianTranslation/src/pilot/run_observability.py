@@ -5,6 +5,12 @@ import datetime
 import json
 import math
 import os
+import sys
+
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+import gate_evidence as ge                                          # noqa: E402
 
 
 SCHEMA = 'pwg.run_event.v1'
@@ -126,6 +132,7 @@ def build_census(rows):
     # toward calls, latency, or classification — they feed only the per-key repeated-failure map.
     seen_calls = {}                 # call_id -> (elapsed_ms, classification) of the first event
     conflicting = set()
+    model_call_events = 0           # call-level events the dedup ran over (W1 accounting)
     census_rows = []                # deduped call rows + measured probe + other (latency+classification)
     probe = {'warmup': [], 'measured': []}   # D-K: probe calls broken out, distinguishable from translation
     quota = []                      # rate-limit observations incl. the WARM-UP probe (total quota)
@@ -149,6 +156,7 @@ def build_census(rows):
         if purpose == WARMUP_PURPOSE:                  # D-K: warm-up EXCLUDED from latency + classification
             continue
         if ev == 'model_call' and r.get('call_id') is not None:
+            model_call_events += 1
             cid = r['call_id']
             sig = (r.get('elapsed_ms'), r.get('classification'))
             if cid not in seen_calls:
@@ -176,6 +184,12 @@ def build_census(rows):
     return {
         'schema': 'pwg.bug_census.v1', 'generated_at': utc_now(),
         'events': len(rows), 'classification_counts': dict(sorted(classes.items())),
+        # W1 (H3748, #1803 C8-7): `model_calls` is the DEDUPED count; this is how many
+        # call-level events the dedup was actually applied to. The two being equal is the
+        # evidence that no re-append was swallowed, and the gap is the evidence that some
+        # were. Pre-W1 only the deduped side was reported, so a census over zero events
+        # and a census over 900 printed the same shape.
+        'model_call_events': model_call_events,
         'model_calls': len(seen_calls), 'conflicting_call_ids': sorted(conflicting),
         'probe': probe,                 # D-K: warm-up + measured probe calls, distinct from translation
         'quota_observations': len(quota),   # total rate-limit observations incl. the warm-up probe
@@ -191,12 +205,39 @@ def build_census(rows):
     }
 
 
-def write_census(events_path, output_path):
-    payload = build_census(read_events(events_path))
+def write_census(events_path, output_path, evidence_path=None):
+    """Write the bug census, and beside it the W1 gate-evidence sidecar.
+
+    #1803 row C8-7: the census counters bypass the exactly-once dedup they document, so a
+    re-appended event inflates cards/clean/calls -- and the census printed the same shape
+    over an empty log as over a real run. The counting logic is unchanged; what is new is
+    that the run now records how many events it read, how many call-level events the dedup
+    ran over, and how many conflicted. A census over an EMPTY log is the one declared
+    legitimate emptiness (a fresh box before the first run).
+    """
+    rows = read_events(events_path)
+    payload = build_census(rows)
     tmp = output_path + '.tmp.%d' % os.getpid()
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
         f.write('\n')
     os.replace(tmp, output_path)
+
+    ev = ge.GateEvidence('run_observability_census',
+                         'exactly-once bug census over the append-only events log (C8-7)')
+    ev.add_input('events', path=events_path, units=len(rows))
+    ev.add_predicate('call_id_dedup', evaluations=payload['model_call_events'],
+                     hits=len(payload['conflicting_call_ids']))
+    ev.add_predicate('unaccounted_keys', evaluations=len(rows),
+                     hits=len(payload['unaccounted_keys']))
+    ev.note('model_calls_deduped', payload['model_calls'])
+    ev.note('cards', payload['cards'])
+    ev.set_verdict('pass' if not payload['conflicting_call_ids'] else 'fail')
+    if not rows:
+        ev.declare_expected_empty(
+            'no_events_logged',
+            'a fresh box before the first run: every census counter is honestly zero')
+    ev.assert_nonvacuous()
+    ev.emit(evidence_path or ge.sidecar_for(output_path))
     return payload

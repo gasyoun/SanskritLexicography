@@ -26,6 +26,7 @@ Fixture-only and hermetic: every pin runs against a temporary directory and redi
     python src/pilot/gate_evidence_selftest.py
 """
 import contextlib
+import json
 import os
 import sys
 import tempfile
@@ -186,6 +187,67 @@ def pin_changelog_duplicate_bullets():
         payload3 = ge.require_sidecar(side3, gate_id='changelog_duplicate_bullets')
         assert payload3['vacuity'] == 'declared_empty', payload3
         assert payload3['expected_empty'][0]['class'] == 'no_changelog_in_repo'
+
+
+# --------------------------------------------------------------------------- #
+# C8-7 — run-observability exactly-once census
+# --------------------------------------------------------------------------- #
+
+@pin('run_observability_census (C8-7)')
+def pin_run_observability_census():
+    import run_observability as ro
+
+    def event(**kw):
+        row = {'schema': ro.SCHEMA}
+        row.update(kw)
+        return row
+
+    def write_events(path, rows):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r) + '\n')
+
+    with scratch_evidence() as td:
+        events = os.path.join(td, 'events.jsonl')
+        census = os.path.join(td, 'census.json')
+
+        # (a) An EMPTY events log. Pre-fix master wrote a census whose every counter was
+        #     zero and whose shape was identical to a real run's -- nothing recorded that
+        #     it had read no events. The spike ruled a fresh box legitimate, so the PASS
+        #     survives, now stamped declared_empty.
+        write_events(events, [])
+        ro.write_census(events, census)
+        payload = ge.require_sidecar(ge.sidecar_for(census),
+                                     gate_id='run_observability_census')
+        assert payload['vacuity'] == 'declared_empty', payload
+        assert payload['expected_empty'][0]['class'] == 'no_events_logged'
+        assert_missing_sidecar_fails(ge.sidecar_for(census), 'run_observability_census')
+
+        # (b) A real log: the record now separates the call-level events the dedup RAN
+        #     OVER from the deduped result, which is exactly the C8-7 blind spot. Three
+        #     model_call events, one an exact re-append -> 3 evaluated, 2 distinct.
+        rows = [
+            event(event='model_call', call_id='c1', elapsed_ms=10, classification='success'),
+            event(event='model_call', call_id='c1', elapsed_ms=10, classification='success'),
+            event(event='model_call', call_id='c2', elapsed_ms=20, classification='success'),
+            event(event='run_summary', cards=2, clean=2, calls=2),
+        ]
+        write_events(events, rows)
+        out = ro.write_census(events, census)
+        assert out['model_call_events'] == 3 and out['model_calls'] == 2, out
+        payload2 = ge.require_sidecar(ge.sidecar_for(census),
+                                      gate_id='run_observability_census')
+        assert payload2['vacuity'] == 'worked' and payload2['units_examined'] == 4, payload2
+        dedup = [p for p in payload2['predicates_evaluated'] if p['name'] == 'call_id_dedup'][0]
+        assert dedup['evaluations'] == 3 and dedup['hits'] == 0, dedup
+
+        # (c) A CONFLICTING re-append (same call_id, different data) is a hit and a FAIL.
+        rows.append(event(event='model_call', call_id='c1', elapsed_ms=999,
+                          classification='timeout'))
+        write_events(events, rows)
+        ro.write_census(events, census)
+        payload3 = ge.load_sidecar(ge.sidecar_for(census))
+        assert payload3['verdict'] == 'fail' and payload3['hits'] == 1, payload3
 
 
 def main():
