@@ -29,7 +29,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 
 HEADER_RE = re.compile(r'^<L>([\d.]+)<pc>(.*?)<k1>(.*?)<k2>(.*?)(?:<h>(\d+))?\s*$')
 S_TARGET_RE = re.compile(r'<ab>s\.</ab>\s*(?:also\s+|and\s+|or\s+)?(?:√\s*)?\{#([^#}]*)#\}')

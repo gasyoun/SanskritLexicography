@@ -15,7 +15,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 import corpus_harvest as ch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SM = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'SamudraManthanam',
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+SM = os.path.normpath(os.path.join(GITHUB, 'SamudraManthanam',
                                    'web', 'corpus_builder', 'jsonl'))
 LEX = os.path.join(HERE, 'corpus_lexicon.jsonl')
 OUT = os.path.join(HERE, 'gold_sample.jsonl')

@@ -26,7 +26,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 
 # untranslatable PAIRED spans (tag + content both go) — order matters.
 # Opening tags use \b[^>]*> so ATTRIBUTED tags (<ls n="ṚV.">…</ls>) are masked

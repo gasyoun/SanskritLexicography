@@ -19,7 +19,9 @@ import corpus_gate as cg
 from safe_filename import candidate_names
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-V02 = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+V02 = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02'))
 NWS_DIR = os.path.join(HERE, 'pilot', 'nws')       # scraped JSON, one file per headword
 
 # Local Cologne csl layers, indexed from csl-orig/v02/<code>/<code>.txt by SLP1

@@ -36,11 +36,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 sys.path.insert(0, HERE)
 from nominal_grammar import (zaliznyak_index, nominal_grammar_for, _GENDER_POMETA,
                              paradigm_for, render_paradigm)
 
-PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
+PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 IDX_JSON = os.path.join(HERE, 'reverse_paradigm_index.json')
 STATS_TSV = os.path.join(HERE, 'paradigm_stats.tsv')
 HW_TSV = os.path.join(HERE, 'headword_index.tsv')

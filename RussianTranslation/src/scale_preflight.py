@@ -33,11 +33,13 @@ sys.stderr.reconfigure(encoding='utf-8')
 from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 OUT = os.path.join(HERE, 'pilot', 'output')
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
 INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
 FREQ = os.path.join(OUT, 'scale_manifest.freq.json')
-PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
+PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 _DIVP = re.compile(r'^<div n="p">')
 
 

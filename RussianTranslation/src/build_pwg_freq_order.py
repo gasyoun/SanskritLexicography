@@ -27,8 +27,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 DEFAULT_FEED = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'kosha', 'data', 'frequency', 'lemma_frequency.tsv'))
+    GITHUB, 'kosha', 'data', 'frequency', 'lemma_frequency.tsv'))
 HEADWORDS = os.path.join(HERE, 'headword_index.tsv')
 DCS_FREQ = os.path.join(HERE, 'dcs_freq.json')
 OUT_TSV = os.path.join(HERE, 'pwg_freq_order.tsv')
@@ -36,7 +38,7 @@ OUT_REPORT = os.path.join(HERE, 'pwg_freq_order.report.json')
 
 # sanskrit_util is the canonical transcoder (SHARED_CODE §; SLP1-native CDSL keys).
 sys.path.insert(0, os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'sanskrit-util', 'py')))
+    GITHUB, 'sanskrit-util', 'py')))
 from sanskrit_util import from_slp1  # noqa: E402
 
 

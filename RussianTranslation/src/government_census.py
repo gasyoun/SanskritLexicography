@@ -34,8 +34,10 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 DEFAULT_SOURCE = os.path.normpath(
-    os.path.join(HERE, "..", "..", "..", "csl-orig", "v02", "pwg", "pwg.txt")
+    os.path.join(GITHUB, "csl-orig", "v02", "pwg", "pwg.txt")
 )
 
 GOV_CASES = ("acc", "loc", "instr", "gen", "dat", "abl")

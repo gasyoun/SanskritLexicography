@@ -38,7 +38,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-CSL = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+CSL = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02'))
 CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
 STATES = ('I', 'II', 'III', 'IV', 'V')
 _ORDER = {s: i for i, s in enumerate(STATES)}
