@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 28-08-2026_
+_Created: 08-07-2026 · Last updated: 31-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -89,6 +89,7 @@ Why it matters: every such fragment is permanently unpromotable, and the pipelin
 Blocker: none technical — a census is a grep over the source side; the repair is a fragmentizer change, and re-fragmenting is a Wave-2+ act.
 How to close: count source-side glosses whose `{%…%}` spans are separated only by an `<is>…</is>` run, graduate the number to a FINDINGS row, then rejoin those spans into one fragment BEFORE fragmenting so the gloss is translated as a unit.
 > **Source:** [pwg_ru/PWG_TM_W1_SERIOUS10_TRANSLATED_GATE_28-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_W1_SERIOUS10_TRANSLATED_GATE_28-08-2026.md) · [H3628](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3628-Opus_RussianTranslation_pwg-tm-w1-serious10-translate_28.08.26.md) (Opus 5 `claude-opus-5`). — SanskritLexicography · 2026-08-28
+> **CLOSED 31-08-2026 — graduated to [FINDINGS §619](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** [H3753](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3753-Sonnet_SanskritLexicography_pwg-fragmentizer-rejoin_30.08.26.md) (Sonnet 5 `claude-sonnet-5`) censused the live TM publication (2,392 records / 11,129 senses): **73 `<is>`-interrupted gloss events in 58 senses across 53 records**, then rejoined those spans into one `{%...%}` fragment before extraction (`_rejoin_is_interrupted_glosses` in [`pwg_tm_fragmentize.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_fragmentize.py)), RED-pinned on the `viSveSa` case. Live re-fragmentize: `definition_gloss` 15,781 → 15,708, total fragments 112,133 → 112,060 (−73, exact). Re-fragmenting/re-promoting the existing store stays Wave-2+, out of scope here.
 
 ## ⚙️ Auto-seeded candidates (unconfirmed — `seed_gaps.py`, 08-07-2026)
 

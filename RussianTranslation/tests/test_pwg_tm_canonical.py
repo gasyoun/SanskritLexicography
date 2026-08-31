@@ -90,6 +90,34 @@ def test_migrate_verify_fixture_path():
     assert ok, msg
 
 
+def test_is_interrupted_gloss_rejoined_before_fragmenting():
+    """H3753 (GAPS §18) RED-pin: viSveSa 2 — `{%die%} <is>Viśve
+    Devaḥ</is> {%zur Gottheit habend%}` is ONE gloss. Before the fix
+    GLOSS_RE matched the two halves independently, emitting a bare German
+    article `{%die%}` as a standalone, untranslatable definition_gloss
+    fragment. The rejoin must merge them into a single fragment that still
+    carries the <is> span, and must never emit `{%die%}` alone."""
+    german = '{%die%} <is>Viśve Devaḥ</is> {%zur Gottheit habend%}'
+    russian = '{%%}' + german[len('{%die%} '):]  # untranslated placeholder, same shape
+    rows = F.extract_from_sense(
+        {'record_id': 'r1', 'entry_id': 'pwg.entry:viSveSa', 'lang': 'ru'},
+        '2', german, russian, '', 1, mapped=True)
+    glosses = [r for r in rows if r['fragment_class'] == 'definition_gloss']
+    assert len(glosses) == 1, glosses
+    assert glosses[0]['source_string'] == (
+        '{%die <is>Viśve Devaḥ</is> zur Gottheit habend%}')
+    assert glosses[0]['source_string'] != '{%die%}'
+    assert not any(g['source_string'].strip() == '{%die%}' for g in glosses)
+
+
+def test_rejoin_is_interrupted_glosses_chain_and_noop():
+    assert F._rejoin_is_interrupted_glosses('') == ''
+    plain = '{%no interruption here%}'
+    assert F._rejoin_is_interrupted_glosses(plain) == plain
+    chain = '{%a%} <is>x</is> {%b%} <is>y</is> {%c%}'
+    assert F._rejoin_is_interrupted_glosses(chain) == '{%a <is>x</is> b <is>y</is> c%}'
+
+
 def test_priority_limit_is_unique_and_reproducible():
     if not os.path.exists(P.HEADWORD_INDEX) or not os.path.exists(P.FREQ_ORDER):
         pytest.skip('frequency/index assets absent')
