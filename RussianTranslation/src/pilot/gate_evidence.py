@@ -85,11 +85,11 @@ VERDICTS = ('pass', 'fail', 'inconclusive')
 #: An empty tuple is a deliberate claim, not an omission: that gate has NO
 #: legitimately-empty input class, so any emptiness there is a defect.
 LEGITIMATE_EMPTY = {
-    # C2-2 — freshness of R4.1 surveillance reports.
-    'lane_spotcheck_freshness': (
-        'no_telemetry_dir',        # surveillance never ran on this box — fails CLOSED already
-        'no_spotcheck_reports',    # dir exists, no reports yet — also fails closed
-    ),
+    # C2-2 — freshness of R4.1 surveillance reports. No legitimately-empty class: with
+    # no candidate report this gate does not PASS on emptiness, it goes INCONCLUSIVE
+    # (its own family's contract — see lane_spotcheck_tick's exit-code docstring), and
+    # nonstop_scheduler then fails closed on auto-promote.
+    'lane_spotcheck_freshness': (),
     # C6-01 — human gold precision + double-review agreement.
     'gold_agreement': (
         'no_double_reviewed_items',   # single-review corpus: kappa is n/a, precision still real

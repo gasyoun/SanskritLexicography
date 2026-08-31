@@ -335,6 +335,60 @@ def pin_spot_check_daily():
         assert payload4['verdict'] == 'fail' and payload4['hits'] > 0, payload4
 
 
+# --------------------------------------------------------------------------- #
+# C2-2 — R4.1 surveillance freshness
+# --------------------------------------------------------------------------- #
+
+@pin('lane_spotcheck_freshness (C2-2)')
+def pin_lane_spotcheck_freshness():
+    import lane_spotcheck_tick as lst
+
+    with scratch_evidence() as td:
+        telemetry = os.path.join(td, 'telemetry')
+        os.makedirs(telemetry)
+        side = os.path.join(td, 'fresh.evidence.json')
+
+        # (a) NO reports at all. This gate has no legitimately-empty class: the verdict
+        #     is INCONCLUSIVE, never a pass, so require_sidecar(verdict='pass') refuses
+        #     it. Pre-fix master returned a bare None with no record of having looked.
+        assert lst.fresh_spotcheck(telemetry, evidence_path=side) is None
+        payload = ge.load_sidecar(side)
+        assert payload['verdict'] == 'inconclusive', payload
+        assert payload['notes']['surveillance_live'] is False, payload
+        try:
+            ge.require_sidecar(side, gate_id='lane_spotcheck_freshness')
+        except ge.MissingEvidenceError:
+            pass
+        else:
+            raise AssertionError('no surveillance must not satisfy a pass-requiring consumer')
+        assert_missing_sidecar_fails(side, 'lane_spotcheck_freshness')
+
+        # (b) THE C2-2 SHAPE: a 0-byte spotcheck_<date>.json. The predicate is unchanged
+        #     and still blesses it — that defect stays filed — but the record now names
+        #     the file, hashes it, and warns that a 0-byte input was examined. Pre-fix
+        #     master returned the path and left no trace that nothing was read.
+        zero = os.path.join(telemetry, 'spotcheck_2026-08-31.json')
+        open(zero, 'w', encoding='utf-8').close()
+        got = lst.fresh_spotcheck(telemetry, evidence_path=side)
+        assert got == zero, got
+        payload2 = ge.require_sidecar(side, gate_id='lane_spotcheck_freshness')
+        assert payload2['notes']['surveillance_live'] is True, payload2
+        candidate = [i for i in payload2['inputs_examined']
+                     if i['name'].startswith('spotcheck:')][0]
+        assert candidate['size_bytes'] == 0 and candidate['sha256'], candidate
+        assert any('0-byte' in w for w in payload2['warnings']), payload2['warnings']
+
+        # (c) A stale report is a counted MISS, not an unexamined absence: the predicate
+        #     ran over one candidate and rejected it.
+        stale = lst.fresh_spotcheck(telemetry, now=__import__('time').time() + 72 * 3600,
+                                    evidence_path=side)
+        assert stale is None
+        payload3 = ge.load_sidecar(side)
+        window = payload3['predicates_evaluated'][0]
+        assert window['evaluations'] == 1 and window['hits'] == 1, window
+        assert payload3['verdict'] == 'inconclusive', payload3
+
+
 def main():
     failures = []
     for name, fn in PINS:
