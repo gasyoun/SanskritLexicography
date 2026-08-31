@@ -161,6 +161,21 @@ independent review receipt yet, so no cutover:
 Control-plane tools (FEATURES_INDEX **L11**):
 [`cohort_engine.py`](RussianTranslation/src/pilot/cohort_engine.py) (offline multi-profile),
 [`no_pwg_residual_ledger.py`](RussianTranslation/src/pilot/no_pwg_residual_ledger.py) (C-49).
+**Gate-evidence contract (H3748, W1, 31-08-2026):** every pwg_ru gate builds its verdict
+*through* [`RussianTranslation/src/pilot/gate_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gate_evidence.py)
+— hashed inputs, predicate evaluation + hit counts, a JSON sidecar, and
+`assert_nonvacuous()`, which turns a PASS that examined nothing into a hard FAIL
+([#1803](https://github.com/gasyoun/SanskritLexicography/issues/1803)). Emptiness that is
+legitimate is **declared by pre-registered name** (`LEGITIMATE_EMPTY` + the spike,
+[SPIKE_PWG_GATE_EVIDENCE_LEGITIMATE_EMPTY_CLASSES_31-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/SPIKE_PWG_GATE_EVIDENCE_LEGITIMATE_EMPTY_CLASSES_31-08-2026.md)),
+never inferred from silence. **Adding or touching a gate: build its verdict through a
+`GateEvidence` record and register its `gate_id`** — CI's
+`gate_evidence.py --require <gate_id>` fails when a gate leaves no sidecar. G9
+(`validate_interop.py`) is expected **RED on the shipped
+[`RussianTranslation/release/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release) artifacts**: they carry 12,374
+duplicated entry ids ([#1798](https://github.com/gasyoun/SanskritLexicography/issues/1798));
+re-cutting them is a publication decision (Zenodo DOI), not a code fix.
+
 **`<ab>`/`<ls>` tooltips + RU-column abbreviation purity** (a pwg_ru-specific
 policy, distinct from mw_ru's "leave `<gram>` untouched" rule above —
 grammatical-category abbreviations stay international Latin with a tooltip,
