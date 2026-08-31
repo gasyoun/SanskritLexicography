@@ -16,8 +16,8 @@ authors:
     affiliation: "Институт лингвистических исследований РАН (ИЛИ РАН)"
 repository-code: "https://github.com/gasyoun/SanskritLexicography"
 license: "CC-BY-SA-4.0"
-version: 1.144.130
-date-released: 2026-08-30
+version: 1.144.132
+date-released: 2026-08-31
 keywords:
   - sanskrit
   - russian
