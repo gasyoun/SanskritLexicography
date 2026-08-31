@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-31T04:33:15Z",
+ "generated_at": "2026-08-31T06:32:58Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 274,
+  "total": 275,
   "by_importance": {
    "2": 137,
    "1": 32,
-   "3": 105
+   "3": 106
   },
   "stale": 0
  },
@@ -2476,6 +2476,15 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#620-splitting-one-overloaded-field-into-two-axes-does-not-fix-it-unless-the-old-fields-value-also-changes--readers-take-the-old-name-alone"
+  },
+  {
+   "n": 621,
+   "title": "A version string with no hash behind it is indistinguishable from a measurement — and the reconstruction that would repair it fails 8 of the 9 stamps that can test it",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#621-a-version-string-with-no-hash-behind-it-is-indistinguishable-from-a-measurement--and-the-reconstruction-that-would-repair-it-fails-8-of-the-9-stamps-that-can-test-it"
   }
  ]
 }

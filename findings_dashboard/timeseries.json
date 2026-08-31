@@ -106,11 +106,11 @@
     "queue_decay_pct": 0.5
    },
    "registry": {
-    "total": 274,
+    "total": 275,
     "by_importance": {
      "2": 137,
      "1": 32,
-     "3": 105
+     "3": 106
     },
     "stale": 0
    }

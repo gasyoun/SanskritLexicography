@@ -1,0 +1,1173 @@
+{
+  "store": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pwg_ru_translated.jsonl",
+  "rows": 11519,
+  "counts": {
+    "measured": 737,
+    "asserted": 10773,
+    "absent": 9
+  },
+  "share": {
+    "measured": 6.4,
+    "asserted": 93.52,
+    "absent": 0.08
+  },
+  "per_era": {
+    "2026-07": {
+      "measured": 651,
+      "asserted": 2217,
+      "absent": 0
+    },
+    "2026-06": {
+      "measured": 0,
+      "asserted": 8556,
+      "absent": 0
+    },
+    "undated": {
+      "measured": 0,
+      "asserted": 0,
+      "absent": 9
+    },
+    "2026-08": {
+      "measured": 86,
+      "asserted": 0,
+      "absent": 0
+    }
+  },
+  "per_generator": {
+    "gen_opt_harness2.batched-masked": {
+      "measured": 682,
+      "asserted": 10773,
+      "absent": 0
+    },
+    "autosplit_requeue.topup": {
+      "measured": 55,
+      "asserted": 0,
+      "absent": 9
+    }
+  },
+  "reasons": [
+    {
+      "class": "asserted",
+      "reason": "backfilled=true, 0/3 content hashes",
+      "rows": 10773
+    },
+    {
+      "class": "measured",
+      "reason": "prompt/glossary/script content hashes present",
+      "rows": 737
+    },
+    {
+      "class": "absent",
+      "reason": "no generated_at and no input hash",
+      "rows": 9
+    }
+  ],
+  "spans": {
+    "measured": [
+      "2026-07-04T20:36:49Z",
+      "2026-08-29T08:49:35Z"
+    ],
+    "asserted": [
+      "2026-06-29T11:40:48Z",
+      "2026-07-04T05:43:33Z"
+    ]
+  },
+  "stamps": [
+    {
+      "prompt_version": "1.0.0",
+      "prompt_sha": "e7059f46842e156d",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "6d2a4293c7c81ccf",
+      "script_version": "1.0.0",
+      "script_sha": "435a596ac5ef77c5",
+      "rows": 331,
+      "first": "2026-07-04T20:36:49Z",
+      "last": "2026-07-11T14:08:20Z",
+      "roots": 4
+    },
+    {
+      "prompt_version": "1.0.0",
+      "prompt_sha": "e7059f46842e156d",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "6d2a4293c7c81ccf",
+      "script_version": "1.0.0",
+      "script_sha": "ef6b1686d36abdb8",
+      "rows": 122,
+      "first": "2026-07-11T17:44:58Z",
+      "last": "2026-07-11T18:29:23Z",
+      "roots": 4
+    },
+    {
+      "prompt_version": "1.0.0",
+      "prompt_sha": "a12469490a9d4139",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "90aeaabd28675878",
+      "script_version": "1.1.0",
+      "script_sha": "a4047e086ea0f9ae",
+      "rows": 100,
+      "first": "2026-07-12T15:04:36Z",
+      "last": "2026-07-14T04:10:54Z",
+      "roots": 9
+    },
+    {
+      "prompt_version": "1.0.0",
+      "prompt_sha": "7d2e1e83f492eece",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "ca1c632639627174",
+      "script_version": "1.0.0",
+      "script_sha": "435a596ac5ef77c5",
+      "rows": 61,
+      "first": "2026-07-10T17:22:42Z",
+      "last": "2026-07-10T17:22:42Z",
+      "roots": 1
+    },
+    {
+      "prompt_version": "1.1.0",
+      "prompt_sha": "dc0e1e2b65ca9731",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "6d2a4293c7c81ccf",
+      "script_version": "1.1.0",
+      "script_sha": "db1177db36f20d7d",
+      "rows": 44,
+      "first": "2026-08-27T18:59:07Z",
+      "last": "2026-08-29T08:49:35Z",
+      "roots": 2
+    },
+    {
+      "prompt_version": "1.0.0",
+      "prompt_sha": "eb081209a5ea01a2",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "ca1c632639627174",
+      "script_version": "1.0.0",
+      "script_sha": "7bf00f4f5be69b1e",
+      "rows": 23,
+      "first": "2026-07-06T06:29:07Z",
+      "last": "2026-07-06T20:56:05Z",
+      "roots": 2
+    },
+    {
+      "prompt_version": "1.1.0",
+      "prompt_sha": "dc0e1e2b65ca9731",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "6d2a4293c7c81ccf",
+      "script_version": "1.1.0",
+      "script_sha": "2e646e35de9931f6",
+      "rows": 22,
+      "first": "2026-08-25T14:40:34Z",
+      "last": "2026-08-25T14:40:34Z",
+      "roots": 1
+    },
+    {
+      "prompt_version": "1.1.0",
+      "prompt_sha": "31656e0197b6c806",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "bb4626344404b1c1",
+      "script_version": "1.1.0",
+      "script_sha": "db1177db36f20d7d",
+      "rows": 20,
+      "first": "2026-08-28T15:21:25Z",
+      "last": "2026-08-28T15:21:25Z",
+      "roots": 1
+    },
+    {
+      "prompt_version": "1.0.0",
+      "prompt_sha": "cd082096fa24de73",
+      "glossary_version": "1.0.0",
+      "glossary_sha": "602841ea2c644659",
+      "script_version": "1.0.0",
+      "script_sha": "f3eeaccfbbc0868e",
+      "rows": 14,
+      "first": "2026-07-09T18:56:38Z",
+      "last": "2026-07-09T18:58:36Z",
+      "roots": 2
+    }
+  ],
+  "absent_rows": [
+    {
+      "line": 10774,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10775,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10776,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10777,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10778,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10779,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10780,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10781,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    },
+    {
+      "line": 10782,
+      "key1": "vid",
+      "key": null,
+      "generator": "autosplit_requeue.topup"
+    }
+  ],
+  "reconstruction": {
+    "window": [
+      "2026-06-01",
+      "2026-09-01"
+    ],
+    "commits_touching_components": 99,
+    "series": [
+      {
+        "commit": "18a62350",
+        "date": "2026-08-31T07:38:49+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "d82ba443c4786e8a"
+      },
+      {
+        "commit": "7435178e",
+        "date": "2026-08-31T02:30:05Z",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "a99771b5a9258065"
+      },
+      {
+        "commit": "280b7d3d",
+        "date": "2026-08-31T04:40:12+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "fd19c1de922b134e"
+      },
+      {
+        "commit": "3d6ef3b5",
+        "date": "2026-08-26T07:18:30+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "db1177db36f20d7d"
+      },
+      {
+        "commit": "2ed74f51",
+        "date": "2026-08-25T16:32:35+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "2e646e35de9931f6"
+      },
+      {
+        "commit": "67971aa1",
+        "date": "2026-08-24T12:53:59+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "c6c99f32c10e98fb"
+      },
+      {
+        "commit": "500340cf",
+        "date": "2026-08-24T12:39:32+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "8a9a7a31b92b71cf"
+      },
+      {
+        "commit": "2dc2be83",
+        "date": "2026-08-15T07:48:13+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "ebb543599bcdc005"
+      },
+      {
+        "commit": "60bd69d1",
+        "date": "2026-08-09T14:22:34+03:00",
+        "prompt_sha": "31656e0197b6c806",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "d33e714e14665d77"
+      },
+      {
+        "commit": "0d199233",
+        "date": "2026-08-03T14:51:45+03:00",
+        "prompt_sha": "dfde1ab85c772e55",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "95a406717a808267"
+      },
+      {
+        "commit": "ce68fd46",
+        "date": "2026-08-02T05:55:46+03:00",
+        "prompt_sha": "dfde1ab85c772e55",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "e7cb20007b3f2e2b"
+      },
+      {
+        "commit": "00fb8bb7",
+        "date": "2026-08-02T04:56:29+03:00",
+        "prompt_sha": "dfde1ab85c772e55",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "fd08168d1329ec54"
+      },
+      {
+        "commit": "ad9d5bfe",
+        "date": "2026-08-01T16:27:05+03:00",
+        "prompt_sha": "dfde1ab85c772e55",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "e32d5d2f2fe61741"
+      },
+      {
+        "commit": "d4a3305e",
+        "date": "2026-08-01T13:36:08+03:00",
+        "prompt_sha": "dfde1ab85c772e55",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "66bba47387c3d0be"
+      },
+      {
+        "commit": "8ec2bf06",
+        "date": "2026-07-30T21:18:22+03:00",
+        "prompt_sha": "dfde1ab85c772e55",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "e0e5bada66c6b770"
+      },
+      {
+        "commit": "af299375",
+        "date": "2026-07-30T11:50:47+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "e0e5bada66c6b770"
+      },
+      {
+        "commit": "310b7c58",
+        "date": "2026-07-26T08:12:18+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "b0e19b0e4c0c88b2"
+      },
+      {
+        "commit": "87e0546c",
+        "date": "2026-07-26T07:27:57+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "cf3ab4619195ab9f"
+      },
+      {
+        "commit": "156f243d",
+        "date": "2026-07-25T17:19:05+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "2746d5a3e07fa7ee"
+      },
+      {
+        "commit": "b90429e4",
+        "date": "2026-07-25T10:22:43+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "905a33399a089929"
+      },
+      {
+        "commit": "747c3da9",
+        "date": "2026-07-25T09:57:51+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "3d64c243d73d26aa"
+      },
+      {
+        "commit": "8fa1bae7",
+        "date": "2026-07-25T09:51:00+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "f378e43f53fd3e1d"
+      },
+      {
+        "commit": "e3f16528",
+        "date": "2026-07-25T09:44:42+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "ac05eba08e0efc71"
+      },
+      {
+        "commit": "977557e5",
+        "date": "2026-07-25T09:35:51+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "9dac5a8c63a74c08"
+      },
+      {
+        "commit": "ed15c267",
+        "date": "2026-07-25T09:23:35+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "dc016b911843d3b6"
+      },
+      {
+        "commit": "bd45079c",
+        "date": "2026-07-24T07:05:51+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "3fe73c07fdda8386"
+      },
+      {
+        "commit": "2a3dd7a8",
+        "date": "2026-07-22T03:56:12+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "49eaa298e4876e61"
+      },
+      {
+        "commit": "4826068c",
+        "date": "2026-07-21T11:04:35+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "fbb6444ea175e78a"
+      },
+      {
+        "commit": "9750543f",
+        "date": "2026-07-20T01:03:53+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "643535aa8fff799f"
+      },
+      {
+        "commit": "207363b4",
+        "date": "2026-07-19T23:27:55+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "6522b30c523445bb"
+      },
+      {
+        "commit": "254baa07",
+        "date": "2026-07-19T22:43:35+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "d96bc940bdc110cf"
+      },
+      {
+        "commit": "e893ea3c",
+        "date": "2026-07-19T10:58:39+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "9da83ea0f58d4272"
+      },
+      {
+        "commit": "f72323c0",
+        "date": "2026-07-19T08:52:48+03:00",
+        "prompt_sha": "e2b0fdcaa464af28",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "baed5b58437164dc"
+      },
+      {
+        "commit": "25749e88",
+        "date": "2026-07-19T08:39:39+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "baed5b58437164dc"
+      },
+      {
+        "commit": "635a26a4",
+        "date": "2026-07-18T14:57:44+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "2ac502b5378632b7"
+      },
+      {
+        "commit": "01ac867c",
+        "date": "2026-07-17T02:55:42+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "c38321c7eb0705d0"
+      },
+      {
+        "commit": "dd1b3cee",
+        "date": "2026-07-17T02:27:06+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "821990b106b2e9e9"
+      },
+      {
+        "commit": "9dd1c980",
+        "date": "2026-07-14T16:12:59+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "a4fe6bf91e32141d"
+      },
+      {
+        "commit": "3851e940",
+        "date": "2026-07-12T17:26:11+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "92e8a31cf057fde8"
+      },
+      {
+        "commit": "d190bc9f",
+        "date": "2026-07-12T05:49:15+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "a7a5c5c932ad96cc"
+      },
+      {
+        "commit": "34e16086",
+        "date": "2026-07-11T18:12:44+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "6acc55e5d2e4fbdd"
+      },
+      {
+        "commit": "b1ec0247",
+        "date": "2026-07-11T00:05:33+03:00",
+        "prompt_sha": "ad76706ff0130afe",
+        "glossary_sha": "bb4626344404b1c1",
+        "script_sha": "469b1476f9a9955c"
+      },
+      {
+        "commit": "790752da",
+        "date": "2026-07-09T20:04:30+03:00",
+        "prompt_sha": "4cf92fa665498f66",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "469b1476f9a9955c"
+      },
+      {
+        "commit": "5972a9b8",
+        "date": "2026-07-09T10:39:08+03:00",
+        "prompt_sha": "4cf92fa665498f66",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "d155810ca57ce5fb"
+      },
+      {
+        "commit": "4d38d355",
+        "date": "2026-07-09T10:17:03+03:00",
+        "prompt_sha": "4cf92fa665498f66",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "8d2a827ff20b150f"
+      },
+      {
+        "commit": "9b44daf7",
+        "date": "2026-07-08T22:37:00+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "8d2a827ff20b150f"
+      },
+      {
+        "commit": "e5dc234c",
+        "date": "2026-07-08T00:00:00+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "90051bbc570f8efd"
+      },
+      {
+        "commit": "4b63fcea",
+        "date": "2026-07-07T20:29:26+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "2e40da807a27b233"
+      },
+      {
+        "commit": "46fe6b62",
+        "date": "2026-07-06T08:47:21+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "859c289ae2f47023"
+      },
+      {
+        "commit": "68e17b6c",
+        "date": "2026-07-06T08:44:44+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "3914655fade6495f"
+      },
+      {
+        "commit": "e8144ca9",
+        "date": "2026-07-05T20:03:24+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "4f7775928632c4e2"
+      },
+      {
+        "commit": "8cf1edc7",
+        "date": "2026-07-05T15:38:15+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "5a379a2fa1389377"
+      },
+      {
+        "commit": "b541b20b",
+        "date": "2026-07-05T15:13:40+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "1b55c0a173489cd7"
+      },
+      {
+        "commit": "20b1464c",
+        "date": "2026-07-05T10:00:28+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "d50cc4ba5e8de694"
+      },
+      {
+        "commit": "d8b2c4d2",
+        "date": "2026-07-04T18:28:06+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "96cc7497e2e57fbc"
+      },
+      {
+        "commit": "9e2ecc9b",
+        "date": "2026-07-04T16:07:00+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "009067266828e19d"
+      },
+      {
+        "commit": "33582c43",
+        "date": "2026-07-03T22:56:27+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "a985a73761a0feab"
+      },
+      {
+        "commit": "374ea753",
+        "date": "2026-07-02T16:12:16+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "e0865c586b2da938"
+      },
+      {
+        "commit": "173443d8",
+        "date": "2026-07-01T20:02:08+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "e0013cc8e7d1b99d"
+      },
+      {
+        "commit": "8038f11a",
+        "date": "2026-07-01T10:31:20+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "793c99521e51c235"
+      },
+      {
+        "commit": "ca76e8e0",
+        "date": "2026-07-01T10:25:25+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "6e73bfac6c3f5380"
+      },
+      {
+        "commit": "28c0ef34",
+        "date": "2026-06-30T05:28:00+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "1e80e8e0fd85a1db"
+      },
+      {
+        "commit": "204c403e",
+        "date": "2026-06-29T11:45:46+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "2c8ac996068e109c"
+      },
+      {
+        "commit": "e2c745f1",
+        "date": "2026-06-26T23:14:18+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "7901ebb0c6f58d28"
+      },
+      {
+        "commit": "17379e0f",
+        "date": "2026-06-26T22:54:50+03:00",
+        "prompt_sha": "fae9f5717e9fa62a",
+        "glossary_sha": "ca1c632639627174",
+        "script_sha": "05b3a91f1f623176"
+      },
+      {
+        "commit": "dd1604db",
+        "date": "2026-06-26T17:23:31+03:00",
+        "prompt_sha": "08312de615d2cb8e",
+        "glossary_sha": "c5edde238d28f614",
+        "script_sha": "05b3a91f1f623176"
+      },
+      {
+        "commit": "89fdd0d4",
+        "date": "2026-06-26T11:29:59+03:00",
+        "prompt_sha": "582fd811dc98544d",
+        "glossary_sha": "c5edde238d28f614",
+        "script_sha": "05b3a91f1f623176"
+      },
+      {
+        "commit": "181230bf",
+        "date": "2026-06-26T11:09:03+03:00",
+        "prompt_sha": "582fd811dc98544d",
+        "glossary_sha": "a3751d0e754357ef",
+        "script_sha": "05b3a91f1f623176"
+      },
+      {
+        "commit": "8f4bc9d1",
+        "date": "2026-06-24T23:35:08+03:00",
+        "prompt_sha": "582fd811dc98544d",
+        "glossary_sha": "na",
+        "script_sha": "05b3a91f1f623176"
+      },
+      {
+        "commit": "095bee19",
+        "date": "2026-06-24T23:16:56+03:00",
+        "prompt_sha": "69e5b1fd8fd783e1",
+        "glossary_sha": "na",
+        "script_sha": "05b3a91f1f623176"
+      },
+      {
+        "commit": "571ee538",
+        "date": "2026-06-24T22:40:29+03:00",
+        "prompt_sha": "4f17ec898f3faeb8",
+        "glossary_sha": "na",
+        "script_sha": "ddc49628299f5c5c"
+      },
+      {
+        "commit": "7c0041a3",
+        "date": "2026-06-24T20:51:23+03:00",
+        "prompt_sha": "0a5f4099d5c3691d",
+        "glossary_sha": "na",
+        "script_sha": "7f8fd59d5d901d1d"
+      },
+      {
+        "commit": "6bb3d6c6",
+        "date": "2026-06-24T18:28:05+03:00",
+        "prompt_sha": "f51a35a48accd2da",
+        "glossary_sha": "na",
+        "script_sha": "7f8fd59d5d901d1d"
+      },
+      {
+        "commit": "7a9d0f31",
+        "date": "2026-06-23T12:59:09+03:00",
+        "prompt_sha": "cff4d369d6ba6b65",
+        "glossary_sha": "na",
+        "script_sha": "7f8fd59d5d901d1d"
+      },
+      {
+        "commit": "fbfd04a8",
+        "date": "2026-06-23T09:49:19+03:00",
+        "prompt_sha": "7a6f55938cea85ba",
+        "glossary_sha": "na",
+        "script_sha": "7f8fd59d5d901d1d"
+      },
+      {
+        "commit": "c1d04225",
+        "date": "2026-06-20T11:06:19+03:00",
+        "prompt_sha": "afe82bd2e1666dac",
+        "glossary_sha": "na",
+        "script_sha": "7f8fd59d5d901d1d"
+      },
+      {
+        "commit": "9cdbb211",
+        "date": "2026-06-20T09:21:06+03:00",
+        "prompt_sha": "afe82bd2e1666dac",
+        "glossary_sha": "na",
+        "script_sha": "3cea0618d78d8730"
+      },
+      {
+        "commit": "d18d4de3",
+        "date": "2026-06-19T20:04:05+03:00",
+        "prompt_sha": "afe82bd2e1666dac",
+        "glossary_sha": "na",
+        "script_sha": "6112c035da65dbe3"
+      },
+      {
+        "commit": "8f1da576",
+        "date": "2026-06-19T10:13:08+03:00",
+        "prompt_sha": "afe82bd2e1666dac",
+        "glossary_sha": "na",
+        "script_sha": "2693270759d6d316"
+      },
+      {
+        "commit": "c76e2c68",
+        "date": "2026-06-19T10:03:41+03:00",
+        "prompt_sha": "afe82bd2e1666dac",
+        "glossary_sha": "na",
+        "script_sha": "0187e1a46ada4e5e"
+      },
+      {
+        "commit": "4ace354b",
+        "date": "2026-06-18T05:02:19+03:00",
+        "prompt_sha": "afe82bd2e1666dac",
+        "glossary_sha": "na",
+        "script_sha": "adbf838c7a00bf72"
+      },
+      {
+        "commit": "1dad0dd6",
+        "date": "2026-06-17T17:56:01+03:00",
+        "prompt_sha": "288d314cd42baa73",
+        "glossary_sha": "na",
+        "script_sha": "adbf838c7a00bf72"
+      },
+      {
+        "commit": "1bb1ec15",
+        "date": "2026-06-17T09:47:04+03:00",
+        "prompt_sha": "fc8c07377f87d070",
+        "glossary_sha": "na",
+        "script_sha": "adbf838c7a00bf72"
+      },
+      {
+        "commit": "da6cfa26",
+        "date": "2026-06-16T23:17:47+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "adbf838c7a00bf72"
+      },
+      {
+        "commit": "3baf2f8a",
+        "date": "2026-06-16T19:10:54+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "b726043d01cf5a12"
+      },
+      {
+        "commit": "26b51f02",
+        "date": "2026-06-16T10:40:58+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "d60aefac4e47db54"
+      },
+      {
+        "commit": "86887f9b",
+        "date": "2026-06-15T19:08:17+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "0ee8c833501b0e33"
+      },
+      {
+        "commit": "5b074a48",
+        "date": "2026-06-15T16:49:05+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "4b096c3782958257"
+      },
+      {
+        "commit": "a398326f",
+        "date": "2026-06-15T16:18:19+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "072953cc9bf98225"
+      },
+      {
+        "commit": "a96001cf",
+        "date": "2026-06-15T16:07:39+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "e79ed457eac789b7"
+      },
+      {
+        "commit": "7c83732c",
+        "date": "2026-06-15T15:25:56+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "604f3584d5fa9a8e"
+      },
+      {
+        "commit": "dc853447",
+        "date": "2026-06-15T14:55:22+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "e24ceb2210a75054"
+      },
+      {
+        "commit": "96c33c9b",
+        "date": "2026-06-15T05:04:18+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "0f54f7d86aeb4cbe"
+      },
+      {
+        "commit": "29ef1e08",
+        "date": "2026-06-15T04:47:30+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "3adf7ecb267a1fb1"
+      },
+      {
+        "commit": "085119d6",
+        "date": "2026-06-14T18:53:55+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "34172ce184f155c1"
+      },
+      {
+        "commit": "aeccc465",
+        "date": "2026-06-14T18:32:36+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "1c0630849cb880d9"
+      },
+      {
+        "commit": "50c6be3e",
+        "date": "2026-06-14T14:24:17+03:00",
+        "prompt_sha": "cb9cca0abfaf63c2",
+        "glossary_sha": "na",
+        "script_sha": "na"
+      },
+      {
+        "commit": "fb48bb5d",
+        "date": "2026-06-14T13:45:40+03:00",
+        "prompt_sha": "fd10fc61ffd63178",
+        "glossary_sha": "na",
+        "script_sha": "na"
+      },
+      {
+        "commit": "384fedba",
+        "date": "2026-06-14T13:37:01+03:00",
+        "prompt_sha": "231913769601f97e",
+        "glossary_sha": "na",
+        "script_sha": "na"
+      }
+    ],
+    "checks": [
+      {
+        "first": "2026-07-04T20:36:49Z",
+        "rows": 331,
+        "prompt": {
+          "sha": "e7059f46842e156d",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "6d2a4293c7c81ccf",
+          "reproduced": false
+        },
+        "script": {
+          "sha": "435a596ac5ef77c5",
+          "reproduced": false
+        },
+        "strict_commit": "d8b2c4d2",
+        "strict_match": {
+          "prompt": false,
+          "glossary": false,
+          "script": false
+        }
+      },
+      {
+        "first": "2026-07-11T17:44:58Z",
+        "rows": 122,
+        "prompt": {
+          "sha": "e7059f46842e156d",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "6d2a4293c7c81ccf",
+          "reproduced": false
+        },
+        "script": {
+          "sha": "ef6b1686d36abdb8",
+          "reproduced": false
+        },
+        "strict_commit": "34e16086",
+        "strict_match": {
+          "prompt": false,
+          "glossary": false,
+          "script": false
+        }
+      },
+      {
+        "first": "2026-07-12T15:04:36Z",
+        "rows": 100,
+        "prompt": {
+          "sha": "a12469490a9d4139",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "90aeaabd28675878",
+          "reproduced": false
+        },
+        "script": {
+          "sha": "a4047e086ea0f9ae",
+          "reproduced": false
+        },
+        "strict_commit": "3851e940",
+        "strict_match": {
+          "prompt": false,
+          "glossary": false,
+          "script": false
+        }
+      },
+      {
+        "first": "2026-07-10T17:22:42Z",
+        "rows": 61,
+        "prompt": {
+          "sha": "7d2e1e83f492eece",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "ca1c632639627174",
+          "reproduced": true
+        },
+        "script": {
+          "sha": "435a596ac5ef77c5",
+          "reproduced": false
+        },
+        "strict_commit": "790752da",
+        "strict_match": {
+          "prompt": false,
+          "glossary": true,
+          "script": false
+        }
+      },
+      {
+        "first": "2026-08-27T18:59:07Z",
+        "rows": 44,
+        "prompt": {
+          "sha": "dc0e1e2b65ca9731",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "6d2a4293c7c81ccf",
+          "reproduced": false
+        },
+        "script": {
+          "sha": "db1177db36f20d7d",
+          "reproduced": true
+        },
+        "strict_commit": "3d6ef3b5",
+        "strict_match": {
+          "prompt": false,
+          "glossary": false,
+          "script": true
+        }
+      },
+      {
+        "first": "2026-07-06T06:29:07Z",
+        "rows": 23,
+        "prompt": {
+          "sha": "eb081209a5ea01a2",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "ca1c632639627174",
+          "reproduced": true
+        },
+        "script": {
+          "sha": "7bf00f4f5be69b1e",
+          "reproduced": false
+        },
+        "strict_commit": "46fe6b62",
+        "strict_match": {
+          "prompt": false,
+          "glossary": true,
+          "script": false
+        }
+      },
+      {
+        "first": "2026-08-25T14:40:34Z",
+        "rows": 22,
+        "prompt": {
+          "sha": "dc0e1e2b65ca9731",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "6d2a4293c7c81ccf",
+          "reproduced": false
+        },
+        "script": {
+          "sha": "2e646e35de9931f6",
+          "reproduced": true
+        },
+        "strict_commit": "2ed74f51",
+        "strict_match": {
+          "prompt": false,
+          "glossary": false,
+          "script": true
+        }
+      },
+      {
+        "first": "2026-08-28T15:21:25Z",
+        "rows": 20,
+        "prompt": {
+          "sha": "31656e0197b6c806",
+          "reproduced": true
+        },
+        "glossary": {
+          "sha": "bb4626344404b1c1",
+          "reproduced": true
+        },
+        "script": {
+          "sha": "db1177db36f20d7d",
+          "reproduced": true
+        },
+        "strict_commit": "3d6ef3b5",
+        "strict_match": {
+          "prompt": true,
+          "glossary": true,
+          "script": true
+        }
+      },
+      {
+        "first": "2026-07-09T18:56:38Z",
+        "rows": 14,
+        "prompt": {
+          "sha": "cd082096fa24de73",
+          "reproduced": false
+        },
+        "glossary": {
+          "sha": "602841ea2c644659",
+          "reproduced": false
+        },
+        "script": {
+          "sha": "f3eeaccfbbc0868e",
+          "reproduced": false
+        },
+        "strict_commit": "790752da",
+        "strict_match": {
+          "prompt": false,
+          "glossary": false,
+          "script": false
+        }
+      }
+    ],
+    "stamps_total": 9,
+    "stamps_fully_reproduced": 1,
+    "stamps_partially_reproduced": 4,
+    "stamps_strict_all_three": 1,
+    "stamps_strict_any": 5,
+    "shallow": "true",
+    "earliest_commit": "2026-06-12T20:33:47+03:00"
+  },
+  "corroboration": {
+    "sidecars": 130,
+    "by_class": {
+      "asserted": {
+        "rows": 10773,
+        "sidecar_present": 10773,
+        "input_confirmed": 10100,
+        "input_conflict": 673
+      },
+      "absent": {
+        "rows": 9,
+        "sidecar_present": 0,
+        "input_confirmed": 0,
+        "input_conflict": 0
+      },
+      "measured": {
+        "rows": 737,
+        "sidecar_present": 471,
+        "input_confirmed": 471,
+        "input_conflict": 0
+      }
+    }
+  }
+}
