@@ -130,6 +130,64 @@ def pin_launch_ledger():
         assert payload3['verdict'] == 'fail' and payload3['hits'] > 0, payload3
 
 
+# --------------------------------------------------------------------------- #
+# C8-3 — duplicated changelog entries (root-only scope)
+# --------------------------------------------------------------------------- #
+
+@pin('changelog_duplicate_bullets (C8-3)')
+def pin_changelog_duplicate_bullets():
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(SRC)), 'scripts'))
+    import changelog_dupe_evidence_gate as cdg
+
+    def write(path, body):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(body)
+
+    clean = '# Changelog\n\n## [1.0.1]\n\n- first entry\n\n## [1.0.0]\n\n- second entry\n'
+
+    with scratch_evidence() as td:
+        # (a) A repo with a root changelog AND an unguarded sibling — this repo's own
+        #     dual-changelog shape. The gate still checks only the root (W1 changes no
+        #     scope), but the sibling is now a NAMED, hashed input with units=0 and a
+        #     warning. Pre-fix master's green line said nothing about it at all.
+        repo = os.path.join(td, 'repo')
+        write(os.path.join(repo, 'CHANGELOG.md'), clean)
+        write(os.path.join(repo, 'RussianTranslation', 'CHANGELOG.md'),
+              '# Changelog\n\n## [1.0.1]\n\n- dupe\n\n## [1.0.0]\n\n- dupe\n')
+        side = os.path.join(td, 'a.evidence.json')
+        assert cdg.main(['--repo', repo, '--evidence', side]) == 0
+        payload = ge.require_sidecar(side, gate_id='changelog_duplicate_bullets')
+        assert payload['units_examined'] == 2, payload
+        assert payload['evaluations'] == 2 and payload['hits'] == 0, payload
+        unexamined = [i for i in payload['inputs_examined']
+                      if i['name'].startswith('unexamined_changelog:')]
+        assert len(unexamined) == 1 and unexamined[0]['units'] == 0, payload
+        assert unexamined[0]['sha256'], 'the unexamined sibling is still hashed'
+        assert any('C8-3' in w for w in payload['warnings']), payload['warnings']
+        assert_missing_sidecar_fails(side, 'changelog_duplicate_bullets')
+
+        # (b) A real duplicate in the root still fails, predicate untouched, and the
+        #     hit count lands in the record.
+        repo2 = os.path.join(td, 'repo2')
+        write(os.path.join(repo2, 'CHANGELOG.md'),
+              '# Changelog\n\n## [1.0.1]\n\n- same entry\n\n## [1.0.0]\n\n- same entry\n')
+        side2 = os.path.join(td, 'b.evidence.json')
+        assert cdg.main(['--repo', repo2, '--evidence', side2]) == 1
+        payload2 = ge.load_sidecar(side2)
+        assert payload2['verdict'] == 'fail' and payload2['hits'] == 1, payload2
+
+        # (c) A repo with NO changelog: the spike ruled that legitimately empty, so the
+        #     PASS survives — stamped, with the named class.
+        repo3 = os.path.join(td, 'repo3')
+        os.makedirs(repo3)
+        side3 = os.path.join(td, 'c.evidence.json')
+        assert cdg.main(['--repo', repo3, '--evidence', side3]) == 0
+        payload3 = ge.require_sidecar(side3, gate_id='changelog_duplicate_bullets')
+        assert payload3['vacuity'] == 'declared_empty', payload3
+        assert payload3['expected_empty'][0]['class'] == 'no_changelog_in_repo'
+
+
 def main():
     failures = []
     for name, fn in PINS:
