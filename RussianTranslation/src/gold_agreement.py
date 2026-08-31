@@ -10,6 +10,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if os.path.join(HERE, 'pilot') not in sys.path:
+    sys.path.insert(0, os.path.join(HERE, 'pilot'))
+import gate_evidence as ge                                          # noqa: E402
+
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 INP = os.path.join(ROOT, 'gold', 'human_gold_labels.jsonl')
 PRECISION = os.path.join(ROOT, 'gold', 'human_precision_report.md')
@@ -74,16 +78,25 @@ def stats(final, meta, filt):
     return n, good, labs['partial'], err, p, lo, hi
 
 
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument('jsonl_path', nargs='?', default=INP)
     ap.add_argument('out_dir', nargs='?', default=os.path.join(ROOT, 'gold'))
     ap.add_argument('--fixture', action='store_true',
                     help='allow tiny fixture data; release mode requires double review')
-    args = ap.parse_args()
+    ap.add_argument('--evidence', default=None, help=argparse.SUPPRESS)
+    args = ap.parse_args(argv)
     path = args.jsonl_path
     out_dir = args.out_dir
     release_mode = not args.fixture and os.path.abspath(path) == os.path.abspath(INP)
+    # W1 (H3748, #1803 C6-01). The release-mode expression above is unchanged, and so is
+    # its defect: `release_mode` is False for ANY non-default input path, so a run over a
+    # non-default path silently drops the >=1-kappa-pair guard while still writing into
+    # the watched gold/ directory. The evidence record makes that state legible — it says
+    # which file was read, its sha256, whether the guard was armed, and (below) warns when
+    # a non-fixture run disarmed it.
+    ev = ge.GateEvidence('gold_agreement',
+                         'human gold precision + double-review agreement (C6-01)')
     precision_path = os.path.join(out_dir, 'human_precision_report.md')
     agreement_path = os.path.join(out_dir, 'double_review_agreement.md')
     rows = load(path)
@@ -121,8 +134,30 @@ def main():
               '| percent agreement | %.1f%% |' % (100 * po),
               '| Cohen kappa | %s |' % ('n/a' if kap is None else '%.3f' % kap)]
     open(agreement_path, 'w', encoding='utf-8').write('\n'.join(alines) + '\n')
+
+    ev.add_input('labels', path=path, units=len(rows))
+    ev.add_predicate('precision', evaluations=n, hits=err)
+    ev.add_predicate('kappa_pairs', evaluations=pair_n, hits=0)
+    ev.note('unique_items', len(final))
+    ev.note('release_mode', release_mode)
+    ev.note('cohen_kappa', None if kap is None else round(kap, 3))
+    ev.note('written', [os.path.basename(precision_path), os.path.basename(agreement_path)])
+    if not args.fixture and not release_mode:
+        ev.warnings.append(
+            'C6-01: --fixture was not passed and the input is not the default gold path, '
+            'so the >=1-kappa-pair release guard is DISARMED for this run (%s)' % path)
+    ev.set_verdict('pass')
+    if not pair_n:
+        ev.declare_expected_empty(
+            'no_double_reviewed_items',
+            'single-review corpus: there is no pair to compute Cohen kappa over, and the '
+            'precision half is still fully measured over %d item(s)' % len(final))
+    ev.assert_nonvacuous()
+    ev.emit(args.evidence or ge.sidecar_for(agreement_path))
+
     print('human precision report → %s' % precision_path)
     print('double-review agreement → %s' % agreement_path)
+    print(ev.summary())
 
 
 if __name__ == '__main__':

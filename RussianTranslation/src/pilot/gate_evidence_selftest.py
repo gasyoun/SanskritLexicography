@@ -389,6 +389,72 @@ def pin_lane_spotcheck_freshness():
         assert payload3['verdict'] == 'inconclusive', payload3
 
 
+# --------------------------------------------------------------------------- #
+# C6-01 — human gold precision + double-review agreement
+# --------------------------------------------------------------------------- #
+
+@pin('gold_agreement (C6-01)')
+def pin_gold_agreement():
+    import gold_agreement as ga
+
+    def write_labels(path, rows):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+
+    def row(rid, reviewer, label, period='p1', kind='k1'):
+        return {'id': rid, 'reviewer': reviewer, 'human_label': label,
+                'period': period, 'kind': kind}
+
+    with scratch_evidence() as td:
+        labels = os.path.join(td, 'labels.jsonl')
+        out = os.path.join(td, 'reports')
+        side = os.path.join(td, 'gold.evidence.json')
+        agreement = os.path.join(out, 'double_review_agreement.md')
+
+        # (a) SINGLE-review corpus: no pair to compute kappa over. Pre-fix master wrote
+        #     `| Cohen kappa | n/a |` into the watched gold/ directory and exited 0 —
+        #     indistinguishable from a measured agreement. The spike ruled the emptiness
+        #     legitimate (precision is still fully measured), so the PASS survives,
+        #     stamped by name, with kappa_pairs evaluations=0 recorded beside a real
+        #     precision count.
+        write_labels(labels, [row('i1', 'a', 'correct'), row('i2', 'a', 'wrong-sense')])
+        ga.main([labels, out, '--fixture', '--evidence', side])
+        payload = ge.require_sidecar(side, gate_id='gold_agreement')
+        # The gate is not vacuous overall — precision WAS measured — but the half that
+        # is empty is now named rather than reported as a bare `n/a` in the markdown.
+        assert payload['vacuity'] == 'worked', payload
+        assert payload['expected_empty'][0]['class'] == 'no_double_reviewed_items'
+        by_name = {p['name']: p for p in payload['predicates_evaluated']}
+        assert by_name['kappa_pairs']['evaluations'] == 0, by_name
+        assert by_name['precision']['evaluations'] == 2, by_name
+        assert by_name['precision']['hits'] == 1, by_name
+        assert payload['notes']['cohen_kappa'] is None, payload
+        assert_missing_sidecar_fails(side, 'gold_agreement')
+
+        # (b) A real double-reviewed pair: the record carries the kappa AND the input's
+        #     sha256, so the number in the markdown can be tied to the bytes it came from.
+        write_labels(labels, [row('i1', 'a', 'correct'), row('i1', 'b', 'correct'),
+                              row('i2', 'a', 'correct'), row('i2', 'b', 'wrong-sense')])
+        ga.main([labels, out, '--fixture', '--evidence', side])
+        payload2 = ge.require_sidecar(side, gate_id='gold_agreement')
+        assert payload2['vacuity'] == 'worked', payload2
+        assert {p['name']: p for p in payload2['predicates_evaluated']
+                }['kappa_pairs']['evaluations'] == 2, payload2
+        assert payload2['inputs_examined'][0]['sha256'], payload2
+        assert os.path.exists(agreement)
+
+        # (c) THE C6-01 SHAPE: no --fixture and a non-default input path. The expression
+        #     is unchanged, so release_mode is still silently False and the >=1-kappa-pair
+        #     guard still disarms — but the record now says so out loud instead of writing
+        #     an LLM-panel kappa into gold/ under a green line.
+        ga.main([labels, out, '--evidence', side])
+        payload3 = ge.load_sidecar(side)
+        assert payload3['notes']['release_mode'] is False, payload3
+        assert any('C6-01' in w and 'DISARMED' in w for w in payload3['warnings']), \
+            payload3['warnings']
+
+
 def main():
     failures = []
     for name, fn in PINS:
