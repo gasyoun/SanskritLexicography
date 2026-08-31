@@ -455,6 +455,121 @@ def pin_gold_agreement():
             payload3['warnings']
 
 
+# --------------------------------------------------------------------------- #
+# C3-4 — prompt-rule audit over the committed template
+# --------------------------------------------------------------------------- #
+
+@pin('prompt_rule_audit (C3-4)')
+def pin_prompt_rule_audit():
+    import prompt_rule_audit as pra
+
+    with scratch_evidence() as td:
+        prior_out = pra.OUT
+        pra.OUT = os.path.join(td, 'out')                  # hermetic: never the live dir
+        try:
+            side = os.path.join(td, 'pra.evidence.json')
+            absent = os.path.join(td, 'no_such_template.js')
+
+            # (a) THE C3-4 RED. --fail-on-missing over an ABSENT template exited 0 on
+            #     pre-fix master: a file nobody opened has no missing phrases, so the
+            #     gate reported a clean audit of nothing. The contract turns that PASS
+            #     into a hard FAIL — this gate has no legitimately-empty input class.
+            try:
+                pra.main(['--template', absent, '--harness', '',
+                          '--fail-on-missing', '--evidence', side])
+            except SystemExit as exc:
+                assert exc.code == 1, exc.code
+            else:
+                raise AssertionError('a --fail-on-missing audit of an absent template '
+                                     'must now FAIL')
+            payload = ge.load_sidecar(side)
+            assert payload['verdict'] == 'fail', payload
+            assert payload['vacuity'] == 'vacuous', payload
+            assert payload['inputs_examined'][0]['units'] == 0, payload
+            assert payload['evaluations'] == 0, payload
+            assert absent in payload['notes']['missing_files'], payload
+
+            # (b) The SAME absent template WITHOUT a --fail-on-* flag is not a gate run
+            #     at all — it is a report generator — so it is not policed. The record
+            #     still says, in the same terms, that it examined nothing.
+            side2 = os.path.join(td, 'report.evidence.json')
+            pra.main(['--template', absent, '--harness', '', '--evidence', side2])
+            payload2 = ge.load_sidecar(side2)
+            assert payload2['verdict'] == 'pass' and payload2['vacuity'] == 'vacuous', payload2
+
+            # (c) The REAL committed template: a genuine audit, with the phrase predicate
+            #     evaluated over scanned_targets x rules.
+            side3 = os.path.join(td, 'real.evidence.json')
+            pra.main(['--template', pra.DEFAULT_TEMPLATE, '--harness', '',
+                      '--fail-on-missing', '--evidence', side3])
+            payload3 = ge.require_sidecar(side3, gate_id='prompt_rule_audit')
+            assert payload3['vacuity'] == 'worked', payload3
+            assert payload3['evaluations'] == payload3['notes']['rule_count'], payload3
+            assert payload3['inputs_examined'][0]['sha256'], payload3
+            assert_missing_sidecar_fails(side3, 'prompt_rule_audit')
+        finally:
+            pra.OUT = prior_out
+
+
+# --------------------------------------------------------------------------- #
+# C2-5 — external-dictionary coverage census
+# --------------------------------------------------------------------------- #
+
+@pin('corpus_gate_coverage (C2-5)')
+def pin_corpus_gate_coverage():
+    import corpus_gate as cg
+
+    counts = {'tot': 100, 'per': 0, 'persrc': {}, 'kow_n': 0, 'kow_zone_n': 0,
+              'sense_n': 0, 'sensesrc': {}, 'syn_n': 0, 'plant_n': 0,
+              'sin_syn_n': 0, 'sin_sense_n': 0}
+    prior = set(cg.SOURCES_PRESENT)
+    with scratch_evidence() as td:
+        try:
+            # (a) THE C2-5 SHAPE: not one independent authority built. Pre-fix master
+            #     printed '0 (0.0%)' for every signal and exited 0 — a measured zero and
+            #     an unbuilt source printed identically. Now the verdict is INCONCLUSIVE
+            #     (this gate has no legitimately-empty class, so emptiness never passes),
+            #     the missing sources are named inputs with exists=false, and the record
+            #     carries the reason.
+            cg.SOURCES_PRESENT.clear()
+            ev = cg.coverage_evidence({}, counts, 0, 0, set(), 'unit')
+            side = ev.emit(os.path.join(td, 'cov.evidence.json'))
+            payload = ge.load_sidecar(side)
+            assert payload['verdict'] == 'inconclusive', payload
+            assert payload['notes']['evidence_status'] == 'evidence_unavailable', payload
+            assert any('C2-5' in w and 'UNMEASURED' in w for w in payload['warnings']), \
+                payload['warnings']
+            try:
+                ge.require_sidecar(side, gate_id='corpus_gate_coverage')
+            except ge.MissingEvidenceError:
+                pass
+            else:
+                raise AssertionError('an unbuilt-source census must not satisfy a '
+                                     'pass-requiring consumer')
+            assert_missing_sidecar_fails(side, 'corpus_gate_coverage')
+
+            # (b) With an independent authority present the census is a real measurement
+            #     again — same numbers, now with evidence_status=ok and no warning.
+            cg.SOURCES_PRESENT.add(cg.INDEP[0])
+            covered = dict(counts, per=42)
+            ev2 = cg.coverage_evidence({'k': {cg.INDEP[0]: ['gloss']}}, covered,
+                                       10, 3, set('a'), 'unit')
+            side2 = ev2.emit(os.path.join(td, 'cov2.evidence.json'))
+            payload2 = ge.require_sidecar(side2, gate_id='corpus_gate_coverage')
+            assert payload2['notes']['evidence_status'] == 'ok', payload2
+            assert not payload2['warnings'], payload2['warnings']
+            by_name = {p['name']: p for p in payload2['predicates_evaluated']}
+            assert by_name['independent_dict_coverage'] == {
+                'name': 'independent_dict_coverage', 'evaluations': 100, 'hits': 42}
+            assert by_name['corpus_examples']['evaluations'] == 10
+            src = [i for i in payload2['inputs_examined']
+                   if i['name'] == 'source:%s' % cg.INDEP[0]][0]
+            assert src['units'] == 1, src
+        finally:
+            cg.SOURCES_PRESENT.clear()
+            cg.SOURCES_PRESENT.update(prior)
+
+
 def main():
     failures = []
     for name, fn in PINS:
