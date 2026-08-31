@@ -184,6 +184,11 @@ jobs:
           python src/pilot/xref_vocab.py
           python src/store_path.py --selftest
           python src/refresh_tm_mirror.py --selftest
+          # H3751 / #1801: `~~h<N>` is an enumerate index, never a printed homonym number.
+          # Multi-homograph fixture pins, verified RED against pre-fix master 7435178e0 --
+          # replay that proof locally with `python src/h3751_redpin_prefix_proof.py`, which
+          # is NOT run here because this job's checkout is shallow and has no such rev.
+          python src/pwg_page_index.py --selftest
           python src/pilot/build_article_site.py --selftest
           python src/pilot/build_edition_diff_site.py --selftest
           python research/build_observatory.py --check

@@ -176,6 +176,13 @@ never inferred from silence. **Adding or touching a gate: build its verdict thro
 duplicated entry ids ([#1798](https://github.com/gasyoun/SanskritLexicography/issues/1798));
 re-cutting them is a publication decision (Zenodo DOI), not a code fix.
 
+**Printed-locus invariant (H3751, 31-08-2026):** `~~h<N>` in a pwg_ru sub-card key is a
+0-based `enumerate` index over a headword's PWG records, **never** a printed homonym
+number — comparing it against the source `<h>` (which starts at 1) is the #1801 defect
+that put another homograph's column on 1,278 store rows. Resolve it positionally through
+[`RussianTranslation/src/pwg_homonym.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_homonym.py),
+and never re-spell the key: it is the identity of 11k already-promoted rows. FINDINGS §617.
+
 **`<ab>`/`<ls>` tooltips + RU-column abbreviation purity** (a pwg_ru-specific
 policy, distinct from mw_ru's "leave `<gram>` untouched" rule above —
 grammatical-category abbreviations stay international Latin with a tooltip,
