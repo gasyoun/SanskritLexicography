@@ -20,7 +20,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'pwg-ru-data'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+DATA = os.path.normpath(os.path.join(GITHUB, 'pwg-ru-data'))
 DEFAULT_SRC = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 DEFAULT_MIRROR = os.path.join(DATA, 'tm', 'pwg_ru_translated.jsonl')
 LEDGER = os.path.join(DATA, 'tm', 'h3591_restore_ledger.jsonl')

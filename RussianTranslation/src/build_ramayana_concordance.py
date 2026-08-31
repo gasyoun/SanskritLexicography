@@ -90,10 +90,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 DEFAULT_CORPUS_DIR = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'SamudraManthanam', 'web', 'corpus_builder', 'jsonl'))
+    GITHUB, 'SamudraManthanam', 'web', 'corpus_builder', 'jsonl'))
 DEFAULT_DCS_SQLITE = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'VisualDCS', 'src', 'DCS-data-2026', 'dcs_full.sqlite'))
+    GITHUB, 'VisualDCS', 'src', 'DCS-data-2026', 'dcs_full.sqlite'))
 
 OUT_SC = os.path.join(HERE, 'ramayana_southern_critical_concordance.tsv')
 OUT_GINV = os.path.join(HERE, 'ramayana_gorresio_inventory.tsv')

@@ -29,11 +29,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 G = os.path.normpath(os.path.join(HERE, '..', 'glossary'))
 # Default: the vidyut kosha data inside the sibling kosha repo
 # (GitHub/kosha/data/vidyut/kosha); override with argv[1].
 DEFAULT_KOSHA = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'kosha', 'data', 'vidyut', 'kosha'))
+    GITHUB, 'kosha', 'data', 'vidyut', 'kosha'))
 
 def pos_of(entry):
     t = type(entry).__name__

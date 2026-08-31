@@ -38,6 +38,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+from sibling_root import sibling_root  # noqa: E402
+
 # store path relative to a checkout toplevel (main worktree root)
 STORE_REL = 'RussianTranslation/src/pwg_ru_translated.jsonl'
 
@@ -172,8 +174,10 @@ def canonical_data_repo(start_dir, repo_name=DATA_REPO_NAME):
         try:
             root = _git(os.path.abspath(start_dir), 'rev-parse', '--show-toplevel')
         except (OSError, RuntimeError, subprocess.SubprocessError):
-            # non-git tree: the pre-H3658 relative walk, unchanged
-            return os.path.normpath(os.path.join(start_dir, '..', '..', '..', repo_name))
+            # non-git tree: the H1811/#1804 canonical resolver (marker upward-walk,
+            # same relative guess only as its own last resort), replacing the bare
+            # pre-H3658 3-up guess this function used to make directly.
+            return os.path.normpath(os.path.join(sibling_root(start_dir), repo_name))
     return os.path.normpath(os.path.join(root, '..', repo_name))
 
 

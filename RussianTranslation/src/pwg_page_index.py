@@ -39,13 +39,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from store_write import locked_store_rewrite  # H2146/H3350 locked writer
+from sibling_root import sibling_root
 
 # L-id may be a float (Cologne supplement/Nachtrag records, e.g. 26305.290);
 # <h> homonym marker is optional. Mirrors pwg_mask.py HEADER_RE.
 HEADER_RE = re.compile(r'^<L>([\d.]+)<pc>(\d+)-(\d+)<k1>(.*?)<k2>(.*?)(?:<h>(\d+))?\s*$')
 # internal column-break marker inside a long entry, e.g. [Page1-0002]
 PAGEBREAK_RE = re.compile(r'\[Page(\d+)-(\d+)\]')
-DEFAULT_SRC = os.path.join('..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
+HERE = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_SRC = os.path.join(sibling_root(HERE), 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 DEFAULT_STORE = 'pwg_ru_translated.jsonl'
 
 

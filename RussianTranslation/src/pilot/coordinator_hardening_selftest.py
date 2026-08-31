@@ -483,6 +483,49 @@ def test_h4_claim_rejects_duplicate_lease_id():
           'free); a distinct id still claims')
 
 
+def test_h5_corrupt_status_report_is_a_typed_audit_error():
+    """H5 (H1811) -- a missing/corrupt window_status.json or audit_window.report.json
+    alongside a clean-looking audit exit code (0 or 1) used to be swallowed to `{}`, so
+    the lease was recorded with a meaningless 'unknown' audit state and NOTHING said why.
+    process_record_output now appends an explicit audit_errors entry naming which file was
+    unreadable despite the exit code. RED on pre-H5 master: audit_errors stays empty for
+    exactly this case, because the corruption was never distinguished from an audit that
+    legitimately returned an unrecognised state.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        wf_src = os.path.join(tmp, 'wf_result.json')
+        with open(wf_src, 'w', encoding='utf-8') as f:
+            json.dump({'result': {'results': []}}, f)
+        lease = {'id': 'h5-corrupt', 'kind': 'verb', 'target': 'root',
+                 'artifact_dir': os.path.join(tmp, 'artifact')}
+        args = SimpleNamespace(lease_id='h5-corrupt', workflow_result=wf_src,
+                               allow_stale=False, transcript_dir=None)
+        original_run_audit = coordinator.run_audit
+        # rc=0 ("clean") with window_status.json / audit_window.report.json left unwritten --
+        # the exact corrupt/missing shape H5 targets, not a crash the caller would already
+        # have to explain.
+        coordinator.run_audit = lambda argv, timeout=None: SimpleNamespace(
+            returncode=0, stdout='', stderr='')
+        try:
+            coordinator.process_record_output(lease, args)
+        finally:
+            coordinator.run_audit = original_run_audit
+        errors = lease.get('audit_errors') or []
+        if not any('window_status.json unreadable' in e for e in errors):
+            raise AssertionError(
+                'a missing window_status.json with a clean rc must be a named audit '
+                'error, not a silent unknown: %r' % errors)
+        if not any('audit_window.report.json unreadable' in e for e in errors):
+            raise AssertionError(
+                'a missing audit_window.report.json with a clean rc must be a named '
+                'audit error, not a silent unknown: %r' % errors)
+        if lease.get('clean_output') is not None:
+            raise AssertionError(
+                'a lease with a named audit error must not be promotable: %r' % lease)
+    print('  H5: corrupt/missing status+report with a clean rc records a typed audit '
+          'error and fails closed, not a silent unknown')
+
+
 def main():
     test_preflight_fail_closed()
     test_record_output_batch_progress()
@@ -491,6 +534,7 @@ def main():
     test_h8_claim_preflight_timeout_is_bounded()
     test_h8_claim_preflight_timeout_unwinds_clean()
     test_h4_claim_rejects_duplicate_lease_id()
+    test_h5_corrupt_status_report_is_a_typed_audit_error()
     print('coordinator_hardening_selftest: PASS')
 
 

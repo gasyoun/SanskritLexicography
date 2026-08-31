@@ -154,8 +154,12 @@ def _canonical_to_slp1():
     re-typed SLP1 table as the org's single worst duplication, and a subtly wrong
     private map here would corrupt the frame silently rather than loudly.
     """
+    _src_dir = os.path.normpath(os.path.join(os.path.dirname(__file__), '..'))
+    if _src_dir not in sys.path:
+        sys.path.insert(0, _src_dir)
+    from sibling_root import sibling_root
     for candidate in (
-        os.path.join(os.path.dirname(__file__), '..', '..', '..', '..', 'sanskrit-util', 'py'),
+        os.path.join(sibling_root(os.path.dirname(__file__)), 'sanskrit-util', 'py'),
         r'C:\Users\user\Documents\GitHub\sanskrit-util\py',
     ):
         p = os.path.abspath(candidate)

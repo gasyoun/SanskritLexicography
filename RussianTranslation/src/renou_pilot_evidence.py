@@ -43,12 +43,14 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 sys.path.insert(0, HERE)
 
 import build_dcs_renou as bdr   # noqa: E402  (text→state resolution + corpus paths)
 
 REGISTER_TSV_DEFAULT = os.path.normpath(os.path.join(
-    HERE, '..', '..', '..', 'SanskritGrammar', 'data', 'pwg_register_genre',
+    GITHUB, 'SanskritGrammar', 'data', 'pwg_register_genre',
     'pwg_register_genre.tsv'))
 
 
