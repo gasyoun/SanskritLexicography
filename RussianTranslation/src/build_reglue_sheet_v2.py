@@ -76,6 +76,8 @@ from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href, DA
 from sheet_screening import screening_block
 from ls_links import LsLinks, HIT, NO_LOCUS, MINTABLE
 import reglue_delta as rd   # H3152: one delta sign instead of four labels
+# H3752: resolve `<subtype>_unplaced` back to the label TYPOLOGY is keyed on.
+from edition_rel import base_subtype
 
 #: H3152 B4 (MG review 5a) — say which relation holds, not just which number.
 BOUND_LABEL = "привязано к смыслу PWG %s"
@@ -340,8 +342,15 @@ def _supp_head(sup):
     does not.
     """
     subtype = sup.get("subtype", "?")
+    # H3752: the sidecar now emits `restate_unplaced` / `nws_at_sense_unplaced` /
+    # `a2a_unplaced` when no PWG sense was identified. TYPOLOGY deliberately does
+    # NOT grow a twin row for each — the unplaced fact is already on the card as
+    # the `PLACEMENT_REASON_LABEL` chip below (H2879 S6), and a second copy of it
+    # in this table is exactly the drift REGLUE_SPEC §10 warned about. The lookup
+    # resolves through the base name, so the gloss and the class stay right.
     op, direction, klass, gloss = TYPOLOGY.get(
-        subtype, (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
+        base_subtype(subtype),
+        (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
     sign = sup.get("sign") or rd.ABRIDGE
     tip = sup.get("delta_tip") or gloss
     lang = (' <span class="tchip t-meta">‹<code>%s</code>›</span>' % esc(sup["lang"])
@@ -772,11 +781,25 @@ def selftest():
     check(from_spec <= set(TYPOLOGY), "every ADDENDA_TYPOLOGY subtype is classified")
     # H2880: the sidecar is the authority on what can appear, so read it rather
     # than trusting the literal above to stay in step with the classifier.
-    from edition_rel import SUBTYPES as _SUBTYPES
-    unclassified = {s for s in _SUBTYPES
-                    if s not in ("base", "unknown")} - set(TYPOLOGY)
+    # H3752: read ALL_SUBTYPES, which includes the unplaced twins, and resolve
+    # each through `base_subtype` — that is the contract this file relies on, so
+    # it is the one asserted. A twin that failed to strip back would land in the
+    # "неклассифицированный подтип" fallback and print a wrong class on a card.
+    from edition_rel import ALL_SUBTYPES as _SUBTYPES
+    unclassified = {base_subtype(s) for s in _SUBTYPES
+                    if base_subtype(s) not in ("base", "unknown")} - set(TYPOLOGY)
     check(not unclassified,
           "every classifier subtype is in TYPOLOGY (missing: %r)" % unclassified)
+    for _s in ("restate_unplaced", "nws_at_sense_unplaced", "a2a_unplaced"):
+        _op, _dir, _kl, _gl = TYPOLOGY.get(
+            base_subtype(_s), (None, None, "restates", "неклассифицированный подтип"))
+        check(_gl != "неклассифицированный подтип",
+              "an unplaced twin must not fall through to the fallback: %r" % _s)
+    # …and the class it resolves to is the PLACED one's: an unplaced restate is
+    # still an abridgement, not an addition. Reading it as `adds` would turn the
+    # #1736 defect into a green ＋ chip, which is worse than the amber one.
+    check(TYPOLOGY[base_subtype("restate_unplaced")][2] == "restates",
+          "an unplaced restate keeps the ≈ class")
 
     # ---------------------------------------------------------------- H2844 P1
     # The newline-collapse fixtures. Three things must hold at once: an

@@ -25,7 +25,8 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 from edition_rel import (
-    edition_rel_for_row, build_pwg_gender_index, classify_edition_rel,
+    edition_rel_for_row, build_pwg_gender_index, build_pwg_sense_index,
+    classify_edition_rel,
 )
 from store_path import canonical_store
 from store_write import locked_store_rewrite
@@ -64,9 +65,16 @@ def selftest():
 def run(store, dry_run, no_backup):
     rows = load_rows(store)
     idx = build_pwg_gender_index(rows)
+    # H3752: this pass has the WHOLE store in hand, so it can and must build the
+    # sense index too. Without it every row was stamped `placement: False` — and
+    # now that the label follows the attachment, it would also stamp the
+    # `_unplaced` twin on rows the sidecar can prove ARE placed, i.e. write a
+    # fresh wrong label into the canonical store. The index is one pass over rows
+    # already in memory.
+    sidx = build_pwg_sense_index(rows)
     counts = Counter()
     for r in rows:
-        rel = edition_rel_for_row(r, idx)
+        rel = edition_rel_for_row(r, idx, sidx)
         r['edition_rel'] = rel
         counts[rel['subtype']] += 1
     print('=== EDITION_REL ANNOTATION ===')

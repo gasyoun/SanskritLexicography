@@ -51,6 +51,7 @@ from sheet_screening import citation_evidence_panel, screening_block
 # H2847 reglue rebuild established, instead of inventing a second vocabulary
 # (h180's relationships data uses a strict subset of TYPOLOGY's keys).
 from build_reglue_sheet_v2 import TYPOLOGY, OP_LABEL
+from edition_rel import base_subtype   # H3752: resolve `<subtype>_unplaced`
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -143,7 +144,11 @@ def build_typology(by_sub):
     core_pool = collections.defaultdict(list)
     for r in rows:
         if r["key1"] in FIVE_LAYER:
-            core_pool[(r["layer"], r["relationship"]["subtype"])].append(r)
+            # H3752: stratify on the BASE label. `_unplaced` is the placement
+            # result, not a different kind of relation, and splitting each
+            # stratum in two would halve the per-class coverage κ needs. The
+            # card still DISPLAYS the exact label it proposes, below.
+            core_pool[(r["layer"], base_subtype(r["relationship"]["subtype"]))].append(r)
     core = []
     for key in sorted(core_pool):
         pool = sorted(core_pool[key], key=lambda r: (r["subcard"], r["sense_tag"]))
@@ -176,7 +181,8 @@ def build_typology(by_sub):
             "filt": r["layer"],
             "title": f'{slp1_iast(r["key1"])} · {r["layer"]} · sense {r["sense_tag"]}',
             "title_href": pwg_entry_href(root),
-            "badges": [OP_LABEL[TYPOLOGY[rel["subtype"]][0]] if rel["subtype"] in TYPOLOGY
+            "badges": [OP_LABEL[TYPOLOGY[base_subtype(rel["subtype"])][0]]
+                       if base_subtype(rel["subtype"]) in TYPOLOGY   # H3752
                        else rel["subtype"],
                        "5-слойный" if r["key1"] in FIVE_LAYER else "хвост"],
             # U7: one entry per item — each card proposes exactly one subtype

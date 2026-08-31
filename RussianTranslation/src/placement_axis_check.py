@@ -39,8 +39,10 @@ REL = (os.path.join(_MAIN, "RussianTranslation", "src",
        else os.path.join(HERE, "pwg_ru_relationships.jsonl"))
 
 from edition_rel import (  # noqa: E402
-    build_pwg_sense_index, homonym_of, lead_int, normalize_sense_tag,
-    pwg_correction_marker, sch_correction_marker, _max_numeric_sense,
+    ALL_SUBTYPES, SENSE_ASSERTING, base_subtype, build_pwg_sense_index,
+    homonym_of, is_unplaced_label, lead_int, normalize_sense_tag,
+    placement_label_consistent, pwg_correction_marker, sch_correction_marker,
+    _max_numeric_sense,
 )
 
 REASONS = ("found", "no_target_marker", "out_of_range", "not_found")
@@ -325,6 +327,80 @@ def main():
         notes.append("W3e %d SCH rows keep a correction clause in a "
                      "non-leading section and stay additive by the "
                      "conservative default: %r" % (len(residue), residue))
+
+    # ---- W5 — the label follows the attachment (H3752, issue #1736) -------
+    # A1 above proves the *insertion point* of an unplaced row asserts nothing.
+    # W5 proves the same of its LABEL, which A1 never looked at: 4,132 rows read
+    # `restate` ("PW пересказывает этот смысл PWG") while their own target_sense
+    # said `*new`. Every chip, rollup row and headline percentage takes `subtype`
+    # on its own, so the boolean beside it never reached the reader.
+    w5_rows = [(r, r["relationship"]) for r in rel]
+
+    # W5a — STOP: the invariant. The suffix is present exactly when a
+    # sense-asserting relation has no identified target. Both directions are
+    # checked, so neither a stale label nor a stale flag survives a rebuild.
+    inconsistent = [
+        (r.get("row_key") or r.get("subcard"), rr.get("subtype"),
+         rr.get("placement"))
+        for r, rr in w5_rows
+        if not placement_label_consistent(rr.get("subtype"),
+                                          bool(rr.get("placement")))]
+    print("W5a rows whose label and placement disagree: %d" % len(inconsistent))
+    if inconsistent:
+        fail("W5a", "STOP — %d rows assert a relation to a sense that was "
+                    "never identified (issue #1736), e.g. %r"
+                    % (len(inconsistent), inconsistent[:5]))
+
+    # W5b — the population, printed so the repair stays reconcilable against
+    # the issue's own 16-08-2026 measurement on every future run.
+    w5_unplaced = collections.Counter()
+    w5_placed = collections.Counter()
+    for _r, rr in w5_rows:
+        st = rr.get("subtype") or ""
+        base = base_subtype(st)
+        if base not in SENSE_ASSERTING:
+            continue
+        (w5_unplaced if is_unplaced_label(st) else w5_placed)[base] += 1
+    print("W5b sense-asserting labels · unplaced %d / placed %d · %s"
+          % (sum(w5_unplaced.values()), sum(w5_placed.values()),
+             " ".join("%s=%d+%d" % (k, w5_placed[k], w5_unplaced[k])
+                      for k in sorted(SENSE_ASSERTING))))
+
+    # W5c — STOP: the fix must not have emptied the corpus. `direction` and `op`
+    # are properties of the layer and the row (REGLUE_SPEC §10) and must survive
+    # on every relabelled row — losing them is issue #1736's rejected variant B,
+    # which drops the ＋/≈/✕ distinction from ~90 % of supplements.
+    stripped = [r.get("row_key") or r.get("subcard") for r, rr in w5_rows
+                if is_unplaced_label(rr.get("subtype") or "")
+                and not (rr.get("direction") and rr.get("op"))]
+    print("W5c relabelled rows that lost direction/op: %d" % len(stripped))
+    if stripped:
+        fail("W5c", "STOP — %d relabelled rows dropped the layer axis, e.g. %r"
+                    % (len(stripped), stripped[:5]))
+
+    # W5d — no invented vocabulary: every emitted label is a declared one.
+    undeclared = sorted({rr.get("subtype") for _r, rr in w5_rows
+                         if rr.get("subtype") not in ALL_SUBTYPES})
+    print("W5d labels outside the declared vocabulary: %d" % len(undeclared))
+    if undeclared:
+        fail("W5d", "the sidecar emits undeclared labels: %r" % undeclared[:5])
+
+    # W5e — an unplaced label must never sit on a row whose target resolves;
+    # A1's structural twin, now on the label side.
+    mislabelled = []
+    for r, rr in w5_rows:
+        if not is_unplaced_label(rr.get("subtype") or ""):
+            continue
+        ip = rr.get("insertion_point") or {}
+        nt = normalize_sense_tag(ip.get("target_sense"))
+        key = (r.get("key1") or "", ip.get("homonym", "h0"))
+        if nt != "*new" and nt in senses.get(key, set()):
+            mislabelled.append((r.get("subcard"), nt))
+    print("W5e unplaced labels whose target nonetheless resolves: %d"
+          % len(mislabelled))
+    if mislabelled:
+        fail("W5e", "%d rows are labelled unplaced but point at a real sense, "
+                    "e.g. %r" % (len(mislabelled), mislabelled[:5]))
 
     # ---- W7 — sidecar key uniqueness (H3300, FINDINGS §551) --------------
     # §551: 133 `(subcard, sense_tag)` pairs repeated in the sidecar, so every
