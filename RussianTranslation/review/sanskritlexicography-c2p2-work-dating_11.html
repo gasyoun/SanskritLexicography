@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark">
+<meta name="generator" content="csl-pyutil/0.22.0">
+<title>C2 phase 2 — the eleven dating decisions the evidence cannot settle — 11 items</title>
+<style>
+  :root { color-scheme: dark; --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:88px; background:#11141a !important; color:#e6e6e6 !important;
+                  -webkit-text-fill-color:#e6e6e6; border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  textarea.note::placeholder { color:var(--muted); opacity:1; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+
+  .screening-banner { margin: 0 20px 12px; padding: 10px 14px; border-radius: 8px;
+    border: 1px solid var(--accent); background: #152033; font-size: 12px; line-height: 1.45;
+    color: var(--text); max-width: 980px; }
+  .screening-banner code { font-size: 11px; color: var(--accent); }
+  .screening-banner .sc-d { color: var(--defer); font-weight: 700; }
+
+  .idchip { font-family:ui-monospace,Consolas,monospace; font-size:11px; color:var(--muted);
+            background:var(--panel2); border:1px solid var(--border); padding:2px 7px;
+            border-radius:6px; user-select:all; }
+  .card header { gap:10px; }
+  .hw a.hwlink { color:inherit; text-decoration:underline dotted; text-underline-offset:3px; }
+  .hw a.hwlink:hover { color:var(--accent); }
+  mark.hl { background:#453407; color:#ffd75e; padding:0 2px; border-radius:3px; }
+  .savebanner { max-width:980px; margin:10px auto 0; padding:8px 20px; font-size:12.5px; }
+  .savebanner code { background:var(--panel2); border:1px solid var(--border); padding:1px 6px; border-radius:5px; }
+  .ratingrow { display:flex; align-items:center; gap:6px; margin-top:10px; flex-wrap:wrap; }
+  .ratinglabel { font-size:12px; color:var(--muted); margin-right:4px; }
+  button.rate { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                width:34px; padding:6px 0; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.rate.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  button.rate.active.below { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .rate-state { font-size:12px; color:var(--muted); margin-left:4px; }
+  .badge-typology { border:1px solid var(--accent); color:var(--text); font-weight:600; }
+  :root { --fs:1.5; }
+  header.top h1 { font-size:calc(16px * var(--fs)) !important; }
+  header.top .sub { font-size:calc(12px * var(--fs)) !important; }
+  .tally, button.dl, button.vote, button.rate, textarea.note, .reject-label-select,
+  #strictReviewerWrap, #strictReviewerWrap input { font-size:calc(13px * var(--fs)) !important; }
+  .filterbar button, .fsctl button, .fsctl .fsval, .chip, .vote-state, .rate-state,
+  .ratinglabel, .rejectlabellabel, footer.hint, div.legend,
+  #strictReviewError { font-size:calc(12px * var(--fs)) !important; }
+  .card .hw { font-size:calc(18px * var(--fs)) !important; }
+  .badge, .panel h4, kbd, .idchip { font-size:calc(11px * var(--fs)) !important; }
+  .question { font-size:calc(14px * var(--fs)) !important; }
+  .panel { font-size:calc(13px * var(--fs)) !important; }
+  .panel pre { font-size:calc(13.5px * var(--fs)) !important; line-height:1.55; }
+  .panel .anatomy { font-size:calc(12.5px * var(--fs)) !important; }
+  .savebanner { font-size:calc(12.5px * var(--fs)) !important; }
+  .fsctl { display:flex; align-items:center; gap:4px; }
+  .fsctl button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                  padding:6px 10px; border-radius:14px; cursor:pointer; line-height:1; }
+  .fsctl .fsval { color:var(--muted); min-width:3.4em; text-align:center; }
+  @media (max-width: 640px) {
+    header.top { padding: 10px 14px; flex-direction: column; align-items: stretch; }
+    header.top h1 { font-size: 15px; }
+    .tally { gap: 8px; font-size: 11px; }
+    .toolbar { padding: 8px 14px; }
+    main { padding: 8px 12px; }
+    .card { padding: 12px; }
+    .filterbar { flex-wrap: wrap; }
+    button.dl, button.vote, button.rate, .fsctl button, #saveBtn, #handinBtn, #pauseBtn {
+      min-height: 44px; min-width: 44px; padding: 10px 14px;
+    }
+    .controls { flex-wrap: wrap; }
+    .panel { padding: 8px 10px; }
+    textarea.note { min-height: 60px; }
+  }
+  .tally .time { color:var(--muted); }
+  .dl.handin { background:#243447; }
+  .tally .pausebtn { background:none; border:1px solid var(--border); color:var(--muted);
+                     border-radius:6px; padding:0 6px; margin-left:4px; cursor:pointer;
+                     font-size:inherit; font-family:inherit; line-height:1.6; }
+  .tally .pausebtn.on { color:#ffd479; border-color:#ffd479; }
+  .tally .time.paused { opacity:.45; }
+  .handin-said { color:var(--muted); font-size:12px; margin-left:10px; }
+  .card.kbd-active { outline:2px solid var(--accent); outline-offset:3px; }
+  .tally .tstate { color:var(--muted); font-size:.85em; margin-left:4px; }
+  .tally .tstate.idle { color:var(--defer); }
+  .flowprog { display:inline-flex; align-items:center; gap:8px; color:var(--muted); font-size:12px; }
+  .flowprog .bar { display:inline-block; width:120px; height:6px; border-radius:3px;
+                   background:var(--panel2); border:1px solid var(--border); overflow:hidden; }
+  .flowprog .bar i { display:block; height:6px; background:var(--accent); width:0; }
+  .dl.flowundo { background:#243447; }
+  .flowtoast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%);
+               background:var(--panel2); border:1px solid var(--border); color:var(--text);
+               padding:8px 14px; border-radius:8px; font-size:13px; z-index:50;
+               opacity:0; pointer-events:none; transition:opacity .18s; }
+  .flowtoast.on { opacity:1; }
+  .voteprog { flex:1 0 100%; order:99; background:var(--panel);
+              border-top:1px solid var(--border); margin:6px -20px -14px; padding:8px 20px;
+              display:flex; align-items:center; gap:12px; font-size:12px; color:var(--muted); }
+  .voteprog .bar { flex:1 1 auto; height:8px; border-radius:4px; background:var(--panel2);
+                   border:1px solid var(--border); overflow:hidden; }
+  .voteprog .bar i { display:block; height:100%; width:0; background:var(--ok); transition:width .2s; }
+  .voteprog b { color:var(--text); font-weight:700; }
+  .voteprog .eta { white-space:nowrap; }
+  .votebar { position:sticky; bottom:0; z-index:9; background:var(--panel);
+             border-top:1px solid var(--border); padding:10px 20px; margin-top:24px;
+             display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .votebar .spacer { flex:1 1 auto; }
+  .card { scroll-margin-top:96px; }
+  @media (max-width: 640px) { .voteprog { padding:6px 12px; } .votebar { padding:8px 12px; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>C2 phase 2 — the eleven dating decisions the evidence cannot settle — 11 items</h1>
+    <div class="sub">Generated 2026-09-01 &middot; sheet_id <code>c2p2-work-dating-2026-09-01</code> &middot; bound <code class="bindchip" title="content_hash — binds this sheet's decisions.json export to exactly this HTML">sha256:2c674bf1e203…</code> &middot; Curated per-work dating table for PWG's 45 cited works (H3790). Each card proposes one reading in a full sentence; approving adopts it, rejecting takes the named alternative. Nothing here is a claim about when a SENSE emerged.</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="time" title="active time on this sheet (while the tab is visible)">&#9201; <span class="count" id="t-total">0:00</span><span class="tstate" id="t-state"></span></span>
+    <button type="button" class="pausebtn" id="pauseBtn" title="pause the clock — a break is not review time">&#9208;</button>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">11</span></span>
+  </div>
+<div class="voteprog" id="voteProg"><span id="voteProgText"></span><span class="bar"><i id="voteProgBar"></i></span><span class="eta" id="voteProgEta"></span></div>
+</header>
+<aside class="screening-banner" role="status" data-screening="1"><strong>Screening (H1649)</strong> — only human-required cards are below. Off the plate: <span class="sc-a">deterministic 0</span> · <span class="sc-b">dataset lookup 0</span> · <span class="sc-c">agent adjudication 0</span> (total screened 0). Human cards: <span class="sc-d">11</span>. Evidence: <code>RussianTranslation/research/C2P2_WORK_DATING_TABLE.md</code>. Rules: Every evidence-decidable row was applied to work_dating_table.json and reported, not voted: the seven map-date conflicts (AMAR, GĪT. GOV, KATHĀS, RĀJAN, Spr, SĀH. D, VOP) are corrections carrying a citation, and no card asks about them., The eleven cards here are the residue: where named scholars disagree, or where the project must pick a convention no evidence can decide..</aside>
+<div class="savebanner">&#128229; Your export downloads as <code>c2p2-work-dating-2026-09-01_decisions.json</code> &rarr; save it to <code>RussianTranslation\review\c2p2-work-dating-2026-09-01_decisions.json</code> (the <code>sheet_id</code> inside the file is <code>c2p2-work-dating-2026-09-01</code> — that is how a later session knows which sheet these decisions belong to).</div>
+<div class="toolbar">
+  <button data-submit="1" class="dl" id="downloadBtn">Download decisions.json</button><button data-submit="1" class="dl handin" id="handinBtn" title="stop the clock and export the votes made so far; the rest stay saved in this browser">Hand in what I got</button><span class="handin-said" id="handinSaid"></span><button data-submit="1" class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="fsctl" title="text size — persists in this browser"><button type="button" id="fsDown" aria-label="smaller text">A&minus;</button><span class="fsval" id="fsVal"></span><button type="button" id="fsUp" aria-label="larger text">A+</button></div>
+  <button data-submit="1" type="button" class="dl flowundo" id="flowUndoBtn" title="undo the last decision (z)">&#8630; Undo</button>
+  <span class="flowprog" id="flowProg"><span class="bar"><i id="flowBar"></i></span><span id="flowProgText"></span><span id="flowEta"></span></span>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="contested">scholars disagree</button><button data-filter="convention">project convention</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="C2P2-D1" data-filt="contested">
+    <header><div class="hw">Ṛgveda — which end of the composition span anchors a window <span class="badge">1 sigla</span><span class="badge">56,218 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D1</span></header>
+    <div class="question"><b>Ṛgveda — which end of the composition span anchors a window</b><div class="muted" style="margin-top:6px;font-weight:normal">The Ṛgveda was composed over roughly five centuries and collected later. A window needs one number for its earliest bound.</div><div style="margin-top:8px">Approve = <b>Anchor ṚV at the start of the composition span, c. 1500 BCE, so that «earliest» means the earliest the cited material could exist.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · ṚV = Ṛgveda</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Witzel 1995 places the hymns, principally the family books II–VII, at c. 1500–1200 BCE.</li><li style="margin-bottom:4px">Witzel 1997 places the saṃhitā as collected at c. 1200–1000 BCE.</li><li style="margin-bottom:4px">ls_source_map.json currently uses 1125 BCE — inside the span, but neither end of it.</li><li style="margin-bottom:4px">ṚV carries 56,218 citations, more than any other siglum: this bound propagates further than any other single choice in the table.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Take the composition start (1500 BCE). An attestation window is a lower bound on when the cited language existed, and the redaction date understates that.</div><div class="muted" style="margin-top:6px">Would be reversed by: A decision that windows should describe the books Böhtlingk-Roth held rather than the language they contain.</div></div><div class="panel"><h4>Sigla this decision moves (1)</h4><ul style="margin:0;padding-left:18px"><li><b>ṚV</b> — Ṛgveda · curated -1500…-1000 · phase-1 point -1125 · 56,218 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>witzel1995</b> — Witzel, Michael. 1995. «Early Indian history: Linguistic and textual parameters.» In George Erdosy (ed.), The Indo-Aryans of Ancient South Asia: Language, Material Culture and Ethnicity, 85–125. Berlin: de Gruyter.</li><li><b>witzel1997</b> — Witzel, Michael. 1997. «The Development of the Vedic Canon and its Schools: The Social and Political Milieu.» In Michael Witzel (ed.), Inside the Texts, Beyond the Texts: New Approaches to the Study of the Vedas, 257–345. Cambridge, MA: Harvard Oriental Series, Opera Minora 2.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D2" data-filt="contested">
+    <header><div class="hw">Mahābhārata and Rāmāyaṇa — full growth span, or a conventional point <span class="badge">2 sigla</span><span class="badge">105,044 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D2</span></header>
+    <div class="question"><b>Mahābhārata and Rāmāyaṇa — full growth span, or a conventional point</b><div class="muted" style="margin-top:6px;font-weight:normal">Both epics grew over some eight centuries. Phase 1 gave each a single point date (80 CE and 70 CE), which is a date nobody defends for either.</div><div style="margin-top:8px">Approve = <b>Enter both epics as their full spans — MBh 400 BCE – 400 CE, Rām 400 BCE – 300 CE — so a window that rests on an epic visibly says «somewhere in eight centuries» rather than pretending to a year.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · MBH = Mahābhārata · R = Rāmāyaṇa</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Brockington 1998 gives roughly 400 BCE – 400 CE for the Mahābhārata&#x27;s growth, with layers distinguishable on linguistic grounds.</li><li style="margin-bottom:4px">Hiltebeitel 2001 argues instead for a compressed composition around 150 BCE – 0 CE.</li><li style="margin-bottom:4px">MBH carries 67,238 citations and R another 37,806: together the two largest dated sources in the map.</li><li style="margin-bottom:4px">A span makes many windows very wide; a point makes them precise and wrong.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Take the full spans. The project&#x27;s whole honesty contract is that a window is a bound, not a date; a fake point date is the one thing the contract forbids.</div><div class="muted" style="margin-top:6px">Would be reversed by: Evidence that a downstream consumer needs a single sortable number per work and cannot carry an interval.</div></div><div class="panel"><h4>Sigla this decision moves (2)</h4><ul style="margin:0;padding-left:18px"><li><b>MBH</b> — Mahābhārata · curated -400…400 · phase-1 point 80 · 67,238 citations</li><li><b>R</b> — Rāmāyaṇa · curated -400…300 · phase-1 point 70 · 37,806 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>brockington1998</b> — Brockington, John. 1998. The Sanskrit Epics (Handbuch der Orientalistik II.12). Leiden: Brill.</li><li><b>hiltebeitel2001</b> — Hiltebeitel, Alf. 2001. Rethinking the Mahābhārata: A Reader&#x27;s Guide to the Education of the Dharma King. Chicago: University of Chicago Press.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D3" data-filt="contested">
+    <header><div class="hw">Pāṇini — mid-5th or mid-4th century BCE <span class="badge">1 sigla</span><span class="badge">25,291 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D3</span></header>
+    <div class="question"><b>Pāṇini — mid-5th or mid-4th century BCE</b><div class="muted" style="margin-top:6px;font-weight:normal">The Aṣṭādhyāyī&#x27;s date has a standing century of slack, and P carries 25,291 citations.</div><div style="margin-top:8px">Approve = <b>Carry Pāṇini as the range 500–350 BCE rather than committing to either end.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · P = Pāṇini, Aṣṭādhyāyī</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Cardona 1997 surveys the evidence; the surviving bracket is mid-5th to mid-4th century BCE.</li><li style="margin-bottom:4px">Scharfe 1977 places Pāṇini in the 4th century within the history of grammatical literature.</li><li style="margin-bottom:4px">ls_source_map.json uses 400 BCE, a midpoint of the two.</li><li style="margin-bottom:4px">Separately: the map labels P&#x27;s period «Vedic (Brāhmaṇa–Upaniṣad)» while giving it Renou class II — an inconsistency inherited from phase 1 and not corrected by this table.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Carry the range. Nothing downstream needs the extra precision, and the range is what the survey literature actually supports.</div><div class="muted" style="margin-top:6px">Would be reversed by: A citation-level use that must sort Pāṇini against a 5th-century work.</div></div><div class="panel"><h4>Sigla this decision moves (1)</h4><ul style="margin:0;padding-left:18px"><li><b>P</b> — Pāṇini, Aṣṭādhyāyī · curated -500…-350 · phase-1 point -400 · 25,291 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>cardona1997</b> — Cardona, George. 1997. Pāṇini: A Survey of Research. 2nd ed. Delhi: Motilal Banarsidass. (1st ed. The Hague: Mouton, 1976.)</li><li><b>scharfe1977</b> — Scharfe, Hartmut. 1977. Grammatical Literature (A History of Indian Literature V.2). Wiesbaden: Otto Harrassowitz.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D4" data-filt="contested">
+    <header><div class="hw">Yāska&#x27;s Nirukta — pre-Pāṇinian, or later <span class="badge">1 sigla</span><span class="badge">3,678 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D4</span></header>
+    <div class="question"><b>Yāska&#x27;s Nirukta — pre-Pāṇinian, or later</b><div class="muted" style="margin-top:6px;font-weight:normal">Whether Yāska precedes Pāṇini moves the Nirukta by up to three centuries.</div><div style="margin-top:8px">Approve = <b>Carry NIR as 700–400 BCE, a range wide enough to hold both positions, and do not treat it as a fixed pre-Pāṇinian anchor.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · NIR = Nirukta (Yāska)</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Sarup 1920–27 places Yāska well before Pāṇini, around the 7th century BCE.</li><li style="margin-bottom:4px">Kahrs 1998 treats the nirvacana tradition as a continuum and is markedly more cautious about a single early date for the Nirukta as transmitted.</li><li style="margin-bottom:4px">NIR carries 3,678 citations — material, but far from the largest.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Carry the range. The early date rests on the tradition rather than on independent evidence.</div><div class="muted" style="margin-top:6px">Would be reversed by: A study that specifically needs the Nirukta as a pre-Pāṇinian datum.</div></div><div class="panel"><h4>Sigla this decision moves (1)</h4><ul style="margin:0;padding-left:18px"><li><b>NIR</b> — Nirukta (Yāska) · curated -700…-400 · phase-1 point -500 · 3,678 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>kahrs1998</b> — Kahrs, Eivind. 1998. Indian Semantic Analysis: The nirvacana Tradition. Cambridge: Cambridge University Press.</li><li><b>sarup1920</b> — Sarup, Lakshman. 1920–1927. The Nighaṇṭu and the Nirukta. Lahore / London: Oxford University Press.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D5" data-filt="contested">
+    <header><div class="hw">Yājñavalkya-Smṛti — Kane&#x27;s early date or Olivelle&#x27;s late one <span class="badge">1 sigla</span><span class="badge">4,004 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D5</span></header>
+    <div class="question"><b>Yājñavalkya-Smṛti — Kane&#x27;s early date or Olivelle&#x27;s late one</b><div class="muted" style="margin-top:6px;font-weight:normal">Two standard authorities barely overlap: Kane puts it in the 1st–3rd century CE, Olivelle in the 4th–5th.</div><div style="margin-top:8px">Approve = <b>Follow Olivelle 2019 and carry YĀJÑ as 300–500 CE, later than Manu.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · YĀJÑ = Yājñavalkya-Smṛti</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Kane 1930–62 places the Yājñavalkya-Smṛti in the early centuries CE.</li><li style="margin-bottom:4px">Olivelle 2019 argues on textual and legal-historical grounds for the 4th–5th century, later than the Mānava-Dharmaśāstra.</li><li style="margin-bottom:4px">The project already follows Olivelle 2005 for Manu, so following Kane here would mean mixing two dharmaśāstra chronologies.</li><li style="margin-bottom:4px">YĀJÑ carries 4,004 citations.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Follow Olivelle, for internal consistency with the Manu row and because his is the later critical treatment.</div><div class="muted" style="margin-top:6px">Would be reversed by: A specialist reading of the relative chronology that puts Yājñavalkya before Manu.</div></div><div class="panel"><h4>Sigla this decision moves (1)</h4><ul style="margin:0;padding-left:18px"><li><b>YĀJÑ</b> — Yājñavalkya-Smṛti · curated 100…500 · phase-1 point 300 · 4,004 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>kane1930</b> — Kane, P. V. 1930–1962. History of Dharmaśāstra, 5 vols. Poona: Bhandarkar Oriental Research Institute.</li><li><b>olivelle2019</b> — Olivelle, Patrick. 2019. Yājñavalkya: A Treatise on Dharma. Murty Classical Library of India. Cambridge, MA: Harvard University Press.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D6" data-filt="contested">
+    <header><div class="hw">Amarakośa — the standard reference calls the date unsolved <span class="badge">1 sigla</span><span class="badge">16,156 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D6</span></header>
+    <div class="question"><b>Amarakośa — the standard reference calls the date unsolved</b><div class="muted" style="margin-top:6px;font-weight:normal">Vogel 1979 says in as many words that Amarasiṃha&#x27;s date «has not been solved to the present day». The map nevertheless gives 450 CE, and 16,156 citations rest on it.</div><div style="margin-top:8px">Approve = <b>Carry AK as the wide range 400–700 CE and label it contested, rather than keeping a confident-looking 450.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · AK = Amarakośa</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Vogel 1979: 309–310 — «The problem of his date has occupied the minds of Sanskritists since Paolino da San Bartolomeo (1748–1805) but has not been solved to the present day.»</li><li style="margin-bottom:4px">The indigenous tradition placing Amarasiṃha among Vikramāditya&#x27;s nine jewels «would have made him a contemporary of the astronomer Varāhamihira, who lived in the 6th century» (Vogel 1979: 310).</li><li style="margin-bottom:4px">This quote is re-readable without a library: Vogel is held in this repository.</li><li style="margin-bottom:4px">AK is the fourth-largest dated source in the map.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Take the wide range. This is the clearest case in the table of a confident-looking number with no scholarly warrant behind it.</div><div class="muted" style="margin-top:6px">Would be reversed by: A later study that actually settles Amarasiṃha&#x27;s date.</div></div><div class="panel"><h4>Sigla this decision moves (1)</h4><ul style="margin:0;padding-left:18px"><li><b>AK</b> — Amarakośa · curated 400…700 · phase-1 point 450 · 16,156 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>vogel1979</b> — Vogel, Claus. 1979. Indian Lexicography (A History of Indian Literature V.4). Wiesbaden: Otto Harrassowitz. ISBN 3-447-02010-5.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D7" data-filt="contested">
+    <header><div class="hw">Kālidāsa — the Gupta consensus, or the minority early date <span class="badge">4 sigla</span><span class="badge">21,370 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D7</span></header>
+    <div class="question"><b>Kālidāsa — the Gupta consensus, or the minority early date</b><div class="muted" style="margin-top:6px;font-weight:normal">Four sigla (Kumārasambhava, Meghadūta, Raghuvaṃśa, Abhijñānaśākuntala) move together on one author&#x27;s date.</div><div style="margin-top:8px">Approve = <b>Follow the Gupta consensus and carry all four as 375–470 CE.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · KUMĀRAS = Kumārasambhava · MEGH = Meghadūta · RAGH = Raghuvaṃśa · ŚĀK = Abhijñānaśākuntala</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Lienhard 1984 places Kālidāsa in the Gupta period, c. 400–450 CE.</li><li style="margin-bottom:4px">Warder&#x27;s Indian Kāvya Literature surveys the competing placements including the minority Vikramāditya attachment.</li><li style="margin-bottom:4px">The four sigla carry 2,692 + 2,363 + 9,728 + 6,587 = 21,370 citations between them.</li><li style="margin-bottom:4px">Phase 1 already used 420 CE for all four, which is inside the Gupta consensus.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Follow the Gupta consensus. The early date is a minority position resting on the same Vikramāditya legend that Vogel treats sceptically for Amarasiṃha.</div><div class="muted" style="margin-top:6px">Would be reversed by: Nothing currently in view; this is the least live of the eleven.</div></div><div class="panel"><h4>Sigla this decision moves (4)</h4><ul style="margin:0;padding-left:18px"><li><b>KUMĀRAS</b> — Kumārasambhava · curated 375…470 · phase-1 point 420 · 2,692 citations</li><li><b>MEGH</b> — Meghadūta · curated 375…470 · phase-1 point 420 · 2,363 citations</li><li><b>RAGH</b> — Raghuvaṃśa · curated 375…470 · phase-1 point 420 · 9,728 citations</li><li><b>ŚĀK</b> — Abhijñānaśākuntala · curated 375…470 · phase-1 point 420 · 6,587 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>lienhard1984</b> — Lienhard, Siegfried. 1984. A History of Classical Poetry: Sanskrit — Pali — Prakrit (A History of Indian Literature III.1). Wiesbaden: Otto Harrassowitz.</li><li><b>warder_ikl</b> — Warder, A. K. 1972–2004. Indian Kāvya Literature, 8 vols. Delhi: Motilal Banarsidass.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D8" data-filt="contested">
+    <header><div class="hw">Suśruta-Saṃhitā — early core or later redaction as the anchor <span class="badge">1 sigla</span><span class="badge">12,450 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D8</span></header>
+    <div class="question"><b>Suśruta-Saṃhitā — early core or later redaction as the anchor</b><div class="muted" style="margin-top:6px;font-weight:normal">The Suśruta is a stratified medical text: an old core, a later Uttaratantra, and a redaction. Phase 1 anchored it at the redaction (400 CE).</div><div style="margin-top:8px">Approve = <b>Carry SUŚR as 200 BCE – 500 CE, spanning core to redaction, so a window resting on it does not silently claim the whole text is 5th-century.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · SUŚR = Suśruta-Saṃhitā</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Meulenbeld 1999–2002 describes an early core reaching back to the last centuries BCE, an Uttaratantra added later, and a redaction attributed to Nāgārjuna.</li><li style="margin-bottom:4px">SUŚR carries 12,450 citations, and PWG&#x27;s citations do not distinguish the strata.</li><li style="margin-bottom:4px">The C2P1 hand-check sample shows two senses whose entire window is «400…400» from Suśruta alone — a false precision the span would remove.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Take the span, on the same reasoning as the epics: PWG cites the work, not a stratum, so the window cannot be narrower than the work.</div><div class="muted" style="margin-top:6px">Would be reversed by: A citation-level mapping that could tell Suśruta strata apart — none exists today.</div></div><div class="panel"><h4>Sigla this decision moves (1)</h4><ul style="margin:0;padding-left:18px"><li><b>SUŚR</b> — Suśruta-Saṃhitā · curated -200…500 · phase-1 point 400 · 12,450 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>meulenbeld1999</b> — Meulenbeld, G. Jan. 1999–2002. A History of Indian Medical Literature, vols. IA–IIB. Groningen: Egbert Forsten.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D9" data-filt="contested">
+    <header><div class="hw">Purāṇas — does the project date them at all <span class="badge">3 sigla</span><span class="badge">40,579 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D9</span></header>
+    <div class="question"><b>Purāṇas — does the project date them at all</b><div class="muted" style="margin-top:6px;font-weight:normal">Rocher&#x27;s standing point is that a Purāṇa is a continuously re-edited text and cannot be dated as a whole. Three sigla (VP, MĀRK. P, BHĀG. P) are affected.</div><div style="margin-top:8px">Approve = <b>Keep dated ranges for the three Purāṇas but mark them explicitly as redaction-band estimates carrying Rocher&#x27;s caveat, not composition dates.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · BHĀG. P = Bhāgavata-Purāṇa · MĀRK. P = Mārkaṇḍeya-Purāṇa · VP = Viṣṇu-Purāṇa</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Rocher 1986 is the standard reference and its caution is methodological, not a gap in the evidence.</li><li style="margin-bottom:4px">Hardy 1983 nevertheless supports a 9th–10th century South Indian placement for the Bhāgavata specifically.</li><li style="margin-bottom:4px">The three carry 3,677 + 6,419 + 30,483 = 40,579 citations; BHĀG. P alone is the third-largest dated source and sets many windows&#x27; latest bound.</li><li style="margin-bottom:4px">Dropping them would push 30k+ citations into the undated bucket.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Keep them with the caveat. Rocher&#x27;s point argues against precision, not against any estimate, and the coverage cost of dropping them is severe.</div><div class="muted" style="margin-top:6px">Would be reversed by: A finding that Purāṇa citations in PWG are systematically drawn from late recensions.</div></div><div class="panel"><h4>Sigla this decision moves (3)</h4><ul style="margin:0;padding-left:18px"><li><b>BHĀG. P</b> — Bhāgavata-Purāṇa · curated 850…1000 · phase-1 point 950 · 30,483 citations</li><li><b>MĀRK. P</b> — Mārkaṇḍeya-Purāṇa · curated 250…600 · phase-1 point 550 · 6,419 citations</li><li><b>VP</b> — Viṣṇu-Purāṇa · curated 300…500 · phase-1 point 450 · 3,677 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>hardy1983</b> — Hardy, Friedhelm. 1983. Viraha-Bhakti: The Early History of Kṛṣṇa Devotion in South India. Delhi: Oxford University Press.</li><li><b>rocher1986</b> — Rocher, Ludo. 1986. The Purāṇas (A History of Indian Literature II.3). Wiesbaden: Otto Harrassowitz.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D10" data-filt="convention">
+    <header><div class="hw">Spr. and ŚKDR. — two sigla that cannot date anything <span class="badge">2 sigla</span><span class="badge">33,086 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D10</span></header>
+    <div class="question"><b>Spr. and ŚKDR. — two sigla that cannot date anything</b><div class="muted" style="margin-top:6px;font-weight:normal">«Spr.» is Böhtlingk&#x27;s own 1863–1873 anthology and «ŚKDR.» a Calcutta compilation of 1821–1858. Both were given ordinary point dates (600 CE and 1830 CE) in phase 1 and both therefore set window bounds that mean nothing about the language.</div><div style="margin-top:8px">Approve = <b>Exclude both from window computation entirely, keeping them in the store as citations with dating_valid false.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · Spr = Indische Sprüche (Böhtlingk anthology) · ŚKDR = Śabdakalpadruma</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Indische Sprüche is the PWG editor&#x27;s own anthology; its verses span the whole of Sanskrit literature, so the anthology&#x27;s date bounds nothing (Sternbach 1974).</li><li style="margin-bottom:4px">The Śabdakalpadruma was printed in Böhtlingk-Roth&#x27;s own lifetime; its 1830 date is a publication fact, not a language fact.</li><li style="margin-bottom:4px">Measured on phase 1&#x27;s store: 11,771 of 43,990 windows (26.8%) contain one of the two — 7,508 cite ŚKDR., 4,653 cite Spr.</li><li style="margin-bottom:4px">2,873 windows have NO other dated work: excluding the two makes those windows vanish rather than shrink.</li><li style="margin-bottom:4px">9,082 windows have their latest bound set by one of the two.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Exclude. A window with a false bound is worse than a missing window, and the 2,873 that would vanish were never carrying information in the first place.</div><div class="muted" style="margin-top:6px">Would be reversed by: A downstream consumer that needs maximal window coverage and can tolerate a flagged bad bound.</div></div><div class="panel"><h4>Sigla this decision moves (2)</h4><ul style="margin:0;padding-left:18px"><li><b>Spr</b> — Indische Sprüche (Böhtlingk anthology) · curated 1863…1873 · phase-1 point 600 · 12,976 citations</li><li><b>ŚKDR</b> — Śabdakalpadruma · curated 1821…1858 · phase-1 point 1830 · 20,110 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>bohtlingk1870</b> — Böhtlingk, Otto. 1870–1873. Indische Sprüche: Sanskrit und Deutsch. 2nd ed., 3 vols. St. Petersburg: Kaiserliche Akademie der Wissenschaften. (1st ed. 1863–1865.)</li><li><b>radhakanta1821</b> — Rādhākāntadeva Bahādur. 1821–1858. Śabdakalpadruma, 5 vols. Calcutta.</li><li><b>sternbach1974</b> — Sternbach, Ludwik. 1974. Subhāṣita, Gnomic and Didactic Literature (A History of Indian Literature IV.1). Wiesbaden: Otto Harrassowitz.</li><li><b>vogel1979</b> — Vogel, Claus. 1979. Indian Lexicography (A History of Indian Literature V.4). Wiesbaden: Otto Harrassowitz. ISBN 3-447-02010-5.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="C2P2-D11" data-filt="convention">
+    <header><div class="hw">Siglum identity — one work cited under several sigla <span class="badge">4 sigla</span><span class="badge">11,182 citations</span></div><span class="idchip" title="card id — cite this id back when discussing this card">C2P2-D11</span></header>
+    <div class="question"><b>Siglum identity — one work cited under several sigla</b><div class="muted" style="margin-top:6px;font-weight:normal">BHAG and GĪT are both the Bhagavadgītā. R, R. GORR and R. SCHL are three printed editions of one Rāmāyaṇa. Phase 1 counts each siglum as a separate dated work.</div><div style="margin-top:8px">Approve = <b>Collapse them for counting: n_dated_works should count WORKS, so the Gītā counts once and the Rāmāyaṇa once however many editions a sense cites.</b></div><div class="muted" style="margin-top:8px;font-weight:normal">Sigla in this card · BHAG = Bhagavadgītā · GĪT = Bhagavadgītā · R. GORR = Rāmāyaṇa (Gorresio rec.) · R. SCHL = Rāmāyaṇa (Schlegel rec.)</div></div>
+    <div class="panel"><h4>What the evidence says</h4><ul style="margin:0;padding-left:18px"><li style="margin-bottom:4px">Gorresio 1843–1858 and Schlegel 1829–1846 are 19th-century editions of the Bengal and Northern recensions; PWG cites them because its editors read them.</li><li style="margin-bottom:4px">The dates are identical across each group, so bounds do not change — only n_dated_works does, and it is used as a confidence signal.</li><li style="margin-bottom:4px">Affected volumes: BHAG 2,584 + GĪT 1,207; R 37,806 + R. GORR 7,145 + R. SCHL 246.</li><li style="margin-bottom:4px">A sense citing R and R. GORR currently reports two dated works and looks better corroborated than one citing R alone.</li></ul></div><div class="panel"><h4>Recommendation</h4><div>Collapse for counting. The field is read as «how many independent works attest this», and two editions of one epic are not two witnesses.</div><div class="muted" style="margin-top:6px">Would be reversed by: A use of n_dated_works purely as a citation-density proxy, where sigla are the right unit.</div></div><div class="panel"><h4>Sigla this decision moves (4)</h4><ul style="margin:0;padding-left:18px"><li><b>BHAG</b> — Bhagavadgītā · curated -200…200 · phase-1 point 200 · 2,584 citations</li><li><b>GĪT</b> — Bhagavadgītā · curated -200…200 · phase-1 point 200 · 1,207 citations</li><li><b>R. GORR</b> — Rāmāyaṇa (Gorresio rec.) · curated -400…300 · phase-1 point 70 · 7,145 citations</li><li><b>R. SCHL</b> — Rāmāyaṇa (Schlegel rec.) · curated -400…300 · phase-1 point 70 · 246 citations</li></ul></div><div class="panel"><h4>Sources cited on these rows</h4><ul style="margin:0;padding-left:18px"><li><b>brockington1998</b> — Brockington, John. 1998. The Sanskrit Epics (Handbuch der Orientalistik II.12). Leiden: Brill.</li><li><b>gorresio1843</b> — Gorresio, Gaspare (ed.). 1843–1858. Rāmāyaṇa: poema indiano di Valmici, 10 vols. Paris: Imprimerie Nationale.</li><li><b>malinar2007</b> — Malinar, Angelika. 2007. The Bhagavadgītā: Doctrines and Contexts. Cambridge: Cambridge University Press.</li><li><b>schlegel1829</b> — Schlegel, August Wilhelm von (ed.). 1829–1846. Rāmāyaṇa id est carmen epicum de Ramae rebus gestis. Bonn: Weber.</li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Adopt the proposal</button>
+      <button class="vote reject" data-vote="reject">&#10060; Take the alternative</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <div class="rejectlabelrow" style="display:none;margin-top:8px"><span class="rejectlabellabel" style="font-size:12px;color:var(--muted);margin-right:6px">Reason</span><select class="reject-label-select" style="background:#11141a;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:13px"><option value="">— select —</option><option value="C2P2-D1">Anchor at the collection instead (c. 1000 BCE), so «earliest» means the earliest the text as Böhtlingk-Roth read it existed</option><option value="C2P2-D2">Keep a single conventional point date per epic and record the span only as a note</option><option value="C2P2-D3">Commit to the 4th-century date (c. 350 BCE) as the project&#x27;s working position</option><option value="C2P2-D4">Adopt the early pre-Pāṇinian date (c. 700 BCE) as the project position</option><option value="C2P2-D5">Follow Kane&#x27;s History of Dharmaśāstra and keep the 1st–3rd century CE placement</option><option value="C2P2-D6">Keep a single working date of 450 CE and note the uncertainty only in prose</option><option value="C2P2-D7">Treat the Vikramāditya-era early date (1st century BCE) as live and widen all four ranges to hold it</option><option value="C2P2-D8">Keep the redaction date (c. 400 CE) as the single anchor</option><option value="C2P2-D9">Treat the Purāṇas as undated for windowing purposes, the way Spr. and ŚKDR. would be under D10</option><option value="C2P2-D10">Keep both in the window but flag every affected window as carrying a known-invalid bound</option><option value="C2P2-D11">Keep counting sigla, and rename the field so it says sigla rather than works</option></select></div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+</main>
+<div class="votebar" id="voteBar"><span class="spacer"></span></div>
+<footer class="hint">Approve = adopt the proposal as the project's working position. Reject = take the alternative named in the select. Every range in the underlying table carries a scholarly citation; a date without one would be a gap, not a guess. Keyboard: <kbd>a</kbd> Adopt the proposal &middot; <kbd>r</kbd> Take the alternative
+  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = accept the proposed change/answer shown on the card (no separate "approve as-is" —
+  approving means agreeing as written). <b>Reject</b> = keep the current entry/answer unchanged.
+  <b>Defer</b> = not sure yet, decide later. The note field is for requesting a partial tweak instead
+  of an outright reject.
+</div>
+<script>
+(function () {
+  var SHEET_ID = "c2p2-work-dating-2026-09-01";
+  var CONTENT_HASH = "sha256:2c674bf1e203629f054b56b90c9122d76d874df9c0563b5c4fbffee2a62db837";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var GENERATED = "2026-09-01";
+  var ids = ["C2P2-D1", "C2P2-D2", "C2P2-D3", "C2P2-D4", "C2P2-D5", "C2P2-D6", "C2P2-D7", "C2P2-D8", "C2P2-D9", "C2P2-D10", "C2P2-D11"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
+  }
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  // H1523 residual / csl-pyutil#1 Part 1: always re-read the live textarea on vote
+  // and before export so a second vote click (or a missed `input` event) cannot
+  // drop a note that is still visible in the card.
+  function syncNoteFromDom(id) {
+    state[id] = state[id] || {};
+    var card = document.querySelector('.card[data-id="' + id + '"]');
+    if (!card) return;
+    var ta = card.querySelector('textarea.note');
+    if (ta) state[id].note = ta.value;
+  }
+  function vote(id, d) { syncNoteFromDom(id); state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    ids.forEach(function (id) { syncNoteFromDom(id); });
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, content_hash: CONTENT_HASH, generated: "2026-09-01", decided: decided, time_total_seconds: __timeTotal(),
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '', time_seconds: __timeFor(id), reject_label: rec.reject_label || null }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'start'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'start'}); }
+    else return;
+    e.preventDefault();
+  });
+
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    if (typeof syncNoteFromDom === 'function') {
+      ids.forEach(function (id) { syncNoteFromDom(id); });
+    }
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, content_hash: CONTENT_HASH, generated: new Date().toISOString(), decided: decided, time_total_seconds: __timeTotal(),
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '', time_seconds: __timeFor(id), reject_label: rec.reject_label || null }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+
+  var REJECT_LABELS = [["C2P2-D1", "Anchor at the collection instead (c. 1000 BCE), so \u00abearliest\u00bb means the earliest the text as B\u00f6htlingk-Roth read it existed"], ["C2P2-D2", "Keep a single conventional point date per epic and record the span only as a note"], ["C2P2-D3", "Commit to the 4th-century date (c. 350 BCE) as the project's working position"], ["C2P2-D4", "Adopt the early pre-P\u0101\u1e47inian date (c. 700 BCE) as the project position"], ["C2P2-D5", "Follow Kane's History of Dharma\u015b\u0101stra and keep the 1st\u20133rd century CE placement"], ["C2P2-D6", "Keep a single working date of 450 CE and note the uncertainty only in prose"], ["C2P2-D7", "Treat the Vikram\u0101ditya-era early date (1st century BCE) as live and widen all four ranges to hold it"], ["C2P2-D8", "Keep the redaction date (c. 400 CE) as the single anchor"], ["C2P2-D9", "Treat the Pur\u0101\u1e47as as undated for windowing purposes, the way Spr. and \u015aKDR. would be under D10"], ["C2P2-D10", "Keep both in the window but flag every affected window as carrying a known-invalid bound"], ["C2P2-D11", "Keep counting sigla, and rename the field so it says sigla rather than works"]];
+  function applyRejectLabelUI(card) {
+    var row = card.querySelector('.rejectlabelrow'); if (!row) return;
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    row.style.display = rec.decision === 'reject' ? '' : 'none';
+    var sel = row.querySelector('select'); if (sel) sel.value = rec.reject_label || '';
+  }
+  function setRejectLabel(id, v) { state[id] = state[id] || {}; state[id].reject_label = v || null; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id');
+    var sel = card.querySelector('.rejectlabelrow select');
+    if (sel) sel.addEventListener('change', function () { setRejectLabel(id, sel.value); applyRejectLabelUI(card); });
+    applyRejectLabelUI(card);
+  });
+  var _origApplyCardUI = applyCardUI;
+  applyCardUI = function (card) { _origApplyCardUI(card); applyRejectLabelUI(card); };
+
+  var FS_KEY = STORE_KEY + ':fs', FS_DEFAULT = 1.5;
+  function fsGet() {
+    var v = parseFloat(localStorage.getItem(FS_KEY));
+    return (isFinite(v) && v >= 0.7 && v <= 3) ? v : FS_DEFAULT;
+  }
+  function fsApply(v) {
+    document.documentElement.style.setProperty('--fs', String(v));
+    document.getElementById('fsVal').textContent = Math.round(v * 100) + '%';
+  }
+  function fsSet(v) {
+    v = Math.min(3, Math.max(0.7, Math.round(v * 10) / 10));
+    localStorage.setItem(FS_KEY, String(v)); fsApply(v);
+  }
+  fsApply(fsGet());
+  document.getElementById('fsDown').addEventListener('click', function () { fsSet(fsGet() - 0.1); });
+  document.getElementById('fsUp').addEventListener('click', function () { fsSet(fsGet() + 0.1); });
+
+  var TIME_KEY = STORE_KEY + ':timing';
+  var __timing = { total: 0, per: {} };
+  try {
+    var __t0 = JSON.parse(localStorage.getItem(TIME_KEY) || 'null');
+    if (__t0 && typeof __t0.total === 'number') __timing = __t0;
+  } catch (e) {}
+  if (!__timing.per) __timing.per = {};
+  function __timeFor(id) { return Math.round(__timing.per[id] || 0); }
+  function __timeTotal() { return Math.round(__timing.total || 0); }
+  function __timeFmt(s) {
+    s = Math.round(s); var m = Math.floor(s / 60);
+    return (m >= 60 ? Math.floor(m / 60) + ':' + ('0' + (m - Math.floor(m / 60) * 60)).slice(-2) : m)
+      + ':' + ('0' + (s - m * 60)).slice(-2);
+  }
+  function __timeShow() {
+    var el = document.getElementById('t-total');
+    if (el) el.textContent = __timeFmt(__timing.total);
+  }
+  var __timeLast = Date.now(), __timeDirty = 0;
+  var __timeCards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  function __timeActiveId() {
+    var mid = window.innerHeight / 2, best = null, bestd = Infinity;
+    for (var i = 0; i < __timeCards.length; i++) {
+      var c = __timeCards[i];
+      if (c.style.display === 'none') continue;
+      var r = c.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) continue;
+      var center = (Math.max(r.top, 0) + Math.min(r.bottom, window.innerHeight)) / 2;
+      var d = Math.abs(center - mid);
+      if (d < bestd) { bestd = d; best = c; }
+    }
+    return best ? best.getAttribute('data-id') : null;
+  }
+  function __timeFlush() {
+    try { localStorage.setItem(TIME_KEY, JSON.stringify(__timing)); } catch (e) {}
+  }
+  // V12 (H2858): the clock is stoppable. `paused` rides in the same persisted
+  // record as the totals, so a reviewer who pauses and closes the tab does not
+  // come back to a clock that ran all night.
+  var __timePaused = !!__timing.paused;
+  // V15 (H2887): a legacy record carries `paused` and no reason — read it as
+  // manual, so an auto-rearm can never lift a pause the curator set by hand.
+  var __timePauseReason = __timePaused ? (__timing.pause_reason || 'manual') : null;
+  function __timePauseSet(v, reason) {
+    __timePaused = !!v;
+    __timing.paused = __timePaused;
+    __timePauseReason = __timePaused ? (reason || 'manual') : null;
+    __timing.pause_reason = __timePauseReason;
+    __timeLast = Date.now(); __timeFlush();
+  }
+  setInterval(function () {
+    var now = Date.now(), dt = (now - __timeLast) / 1000;
+    __timeLast = now;
+    if (document.hidden || __timePaused || dt <= 0 || dt > 4) return;
+    __timing.total += dt;
+    var id = __timeActiveId();
+    if (id) __timing.per[id] = (__timing.per[id] || 0) + dt;
+    __timeDirty += dt;
+    if (__timeDirty >= 5) { __timeDirty = 0; __timeFlush(); }
+    __timeShow();
+  }, 1000);
+  document.addEventListener('visibilitychange', function () { __timeLast = Date.now(); });
+  window.addEventListener('beforeunload', __timeFlush);
+  __timeShow();
+
+  var HANDIN_SAID = 'handed in {n} of {total} — clock stopped, the rest stay saved in this browser';
+  var __handinBtn = document.getElementById('handinBtn');
+  var __handinSaid = document.getElementById('handinSaid');
+
+  var __pauseBtn = document.getElementById('pauseBtn');
+  function __pauseShow() {
+    __pauseBtn.classList.toggle('on', __timePaused);
+    __pauseBtn.innerHTML = __timePaused ? '&#9654;' : '&#9208;';
+    var chip = document.querySelector('.tally .time');
+    if (chip) chip.classList.toggle('paused', __timePaused);
+  }
+  __pauseBtn.addEventListener('click', function () { __timePauseSet(!__timePaused); __pauseShow(); });
+  __pauseShow();
+  __handinBtn.addEventListener('click', function () {
+    ids.forEach(function (id) { syncNoteFromDom(id); });
+    __timePauseSet(true, 'export'); __pauseShow();
+    var items = ids.map(function (id) {
+      var rec = state[id] || {};
+      var item = { id: id, decision: rec.decision || null };
+      item.note = rec.note || '';
+      item.time_seconds = __timeFor(id);
+      item.reject_label = rec.reject_label || null;
+      return item;
+    });
+    var decided = items.filter(function (it) { return !!it.decision; }).length;
+    var payload = { sheet_id: SHEET_ID, content_hash: CONTENT_HASH, generated: GENERATED, decided: decided,
+      partial: true, complete: false, undecided: items.length - decided, items: items };
+    payload.time_total_seconds = __timeTotal();
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions_partial.json';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+    __handinSaid.textContent = HANDIN_SAID.replace('{n}', decided).replace('{total}', items.length);
+  });
+
+  // --- V15 session flow (H2887) ---------------------------------------------
+  var FLOW_IDLE_SECONDS = 90;
+  var FLOW_ETA = 'about {minutes} min left';
+  var FLOW_ETA_ROUGH = 'about {minutes} min left (rough)';
+  var FLOW_CLOCK_RUNNING = 'running';
+  var FLOW_CLOCK_PAUSED = 'paused';
+  var FLOW_CLOCK_IDLE = 'idle';
+  var FLOW_PROGRESS = 'decided {n} of {total}';
+  var FLOW_UNDO_SAID = 'undo: {id} back to {decision}';
+  var FLOW_UNDO_EMPTY = 'nothing to undo';
+  var FLOW_UNDO_NONE = 'no decision';
+  var FLOW_RESUMED = 'resumed at card {n} of {total}';
+  var __flowToast = document.getElementById('flowToast');
+  var __flowToastTimer = null;
+  function __flowSay(text) {
+    if (!__flowToast) return;
+    __flowToast.textContent = text;
+    __flowToast.classList.add('on');
+    clearTimeout(__flowToastTimer);
+    __flowToastTimer = setTimeout(function () { __flowToast.classList.remove('on'); }, 2600);
+  }
+  var __flowCenterId = __timeActiveId;
+  function __flowIdxOf(id) {
+    var vis = visibleCards();
+    for (var i = 0; i < vis.length; i++) {
+      if (vis[i].getAttribute('data-id') === id) return i;
+    }
+    return -1;
+  }
+  function __flowCardById(id) {
+    var found = null;
+    cardsEl.forEach(function (c) { if (c.getAttribute('data-id') === id) found = c; });
+    return found;
+  }
+  // The visible ring IS the target of a/r/d — that identity is the whole point
+  // of this layer, so nothing may move `activeIdx` without repainting.
+  function __flowPaint() {
+    cardsEl.forEach(function (c) { c.classList.remove('kbd-active'); });
+    var vis = visibleCards();
+    if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    if (activeIdx < 0) activeIdx = 0;
+    vis[activeIdx].classList.add('kbd-active');
+  }
+  function __flowSync() {
+    var id = __flowCenterId();
+    if (id) { var at = __flowIdxOf(id); if (at !== -1) activeIdx = at; }
+    __flowPaint();
+  }
+  var __flowScrollTimer = null;
+  window.addEventListener('scroll', function () {
+    if (__flowScrollTimer) return;
+    __flowScrollTimer = setTimeout(function () { __flowScrollTimer = null; __flowSync(); }, 120);
+  });
+  // Both bars reset `activeIdx` to 0 as they re-filter; re-derive it from the
+  // viewport on the next tick, or defect 2 returns wearing a filter.
+  ['filterbar'].forEach(function (barId) {
+    var bar = document.getElementById(barId);
+    if (bar) bar.addEventListener('click', function () { setTimeout(__flowSync, 0); });
+  });
+  function __flowClockShow() {
+    var el = document.getElementById('t-state');
+    if (!el) return;
+    var label = FLOW_CLOCK_RUNNING;
+    if (__timePaused) label = (__timePauseReason === 'idle') ? FLOW_CLOCK_IDLE : FLOW_CLOCK_PAUSED;
+    el.textContent = label;
+    el.classList.toggle('idle', !!__timePaused && __timePauseReason === 'idle');
+  }
+  // The V12 ⏸ button drives the clock straight through __timePauseSet, so the
+  // three-state label has to ride along with V12's own repaint or it goes stale
+  // the moment the curator pauses by hand.
+  var __flowOrigPauseShow = __pauseShow;
+  __pauseShow = function () { __flowOrigPauseShow(); __flowClockShow(); };
+  var __flowIdleTimer = null;
+  function __flowIdleArm() {
+    clearTimeout(__flowIdleTimer);
+    __flowIdleTimer = setTimeout(function () {
+      if (__timePaused) return;
+      __timePauseSet(true, 'idle');
+    __pauseShow();
+      __flowClockShow();
+    }, FLOW_IDLE_SECONDS * 1000);
+  }
+  function __flowRearm() {
+    if (__timePaused && __timePauseReason !== 'manual') {
+      __timePauseSet(false);
+    __pauseShow();
+    }
+    __flowClockShow();
+    __flowIdleArm();
+  }
+  // The export GESTURES, caught in the capture phase on `document` so this runs
+  // before any handler bound to the buttons themselves — including the strict
+  // layer's, which calls stopImmediatePropagation() on its own element.
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (!t || !t.closest || !t.closest('#downloadBtn, #saveBtn, #handinBtn')) return;
+    __timePauseSet(true, 'export');
+    __pauseShow();
+    __flowClockShow();
+  }, true);
+  ['keydown', 'pointerdown', 'scroll'].forEach(function (evt) {
+    document.addEventListener(evt, function () { __flowRearm(); }, true);
+  });
+  var __flowUndoStack = [];
+  function __flowUndo() {
+    var last = __flowUndoStack.pop();
+    if (!last) { __flowSay(FLOW_UNDO_EMPTY); return; }
+    state[last.id] = state[last.id] || {};
+    if (last.prev) state[last.id].decision = last.prev;
+    else delete state[last.id].decision;
+    save();
+    var card = __flowCardById(last.id);
+    if (card) {
+      applyCardUI(card);
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var at = __flowIdxOf(last.id);
+      if (at !== -1) activeIdx = at;
+      __flowPaint();
+    }
+    __flowSay(FLOW_UNDO_SAID.replace('{id}', last.id)
+      .replace('{decision}', last.prev || FLOW_UNDO_NONE));
+  }
+  var __flowUndoBtn = document.getElementById('flowUndoBtn');
+  if (__flowUndoBtn) __flowUndoBtn.addEventListener('click', __flowUndo);
+  function __flowFirstUndecided() {
+    var vis = visibleCards();
+    for (var i = 0; i < vis.length; i++) {
+      var id = vis[i].getAttribute('data-id');
+      if (!(state[id] && state[id].decision)) return i;
+    }
+    return -1;
+  }
+  function __flowAdvance() {
+    var at = __flowFirstUndecided();
+    if (at === -1) { __flowPaint(); return; }
+    activeIdx = at;
+    visibleCards()[at].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    __flowPaint();
+  }
+  function __flowDecided() {
+    var n = 0;
+    ids.forEach(function (id) { if (state[id] && state[id].decision) n++; });
+    return n;
+  }
+  function __flowEtaText(decided, total) {
+    var secs = [];
+    ids.forEach(function (id) {
+      if (!(state[id] && state[id].decision)) return;
+      var s = __timing.per[id] || 0;
+      if (s > 0) secs.push(s);
+    });
+    if (!secs.length) return '';
+    secs.sort(function (a, b) { return a - b; });
+    var mid = Math.floor(secs.length / 2);
+    var med = (secs.length % 2) ? secs[mid] : (secs[mid - 1] + secs[mid]) / 2;
+    var left = Math.max(0, total - decided);
+    if (!left) return '';
+    var minutes = Math.max(1, Math.round(med * left / 60));
+    return (secs.length >= 5 ? FLOW_ETA : FLOW_ETA_ROUGH).replace('{minutes}', minutes);
+  }
+  function __flowProgress() {
+    var n = __flowDecided(), total = ids.length;
+    var txt = document.getElementById('flowProgText');
+    if (txt) txt.textContent = FLOW_PROGRESS.replace('{n}', n).replace('{total}', total);
+    var bar = document.getElementById('flowBar');
+    if (bar) bar.style.width = (total ? Math.round(100 * n / total) : 0) + '%';
+    var etaEl = document.getElementById('flowEta');
+    if (etaEl) etaEl.textContent = __flowEtaText(n, total);
+  }
+  var __flowOrigTally = tally;
+  tally = function () { __flowOrigTally(); __flowProgress(); };
+  var __flowOrigVote = vote;
+  vote = function (id, d) {
+    var rec = state[id] || {};
+    __flowUndoStack.push({ id: id, prev: rec.decision || null });
+    if (__flowUndoStack.length > 100) __flowUndoStack.shift();
+    __flowOrigVote(id, d);
+    __flowRearm();
+    __flowAdvance();
+  };
+  var __flowOrigNote = noteChange;
+  noteChange = function (id, t) { __flowOrigNote(id, t); __flowRearm(); };
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'z' || e.key === 'Z') { __flowUndo(); e.preventDefault(); return; }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') __flowPaint();
+  });
+  __flowProgress();
+  __flowSync();
+  __flowClockShow();
+  __flowIdleArm();
+  (function () {
+    if (!__flowDecided()) return;
+    var at = __flowFirstUndecided();
+    if (at === -1) return;
+    var vis = visibleCards();
+    activeIdx = at;
+    vis[at].scrollIntoView({ block: 'start' });
+    __flowPaint();
+    __flowSay(FLOW_RESUMED.replace('{n}', at + 1).replace('{total}', vis.length));
+  })();
+
+  var VOTE_TOTAL = 0;
+  var VOTE_PROGRESS = '{n} of {total} across the whole sheet';
+  var VOTE_ETA = 'about {minutes} min left for all {total}';
+  var VOTE_ETA_ROUGH = 'about {minutes} min left for all {total} (rough)';
+  var VOTE_DONE = 'all {total} decided';
+  (function () {
+    var bar = document.getElementById('voteBar');
+    if (!bar) return;
+    // The build tagged exactly the submit controls this document actually has.
+    // Navigation (filters, facets, the type-scale control) is untagged and stays
+    // on top, where it is used BEFORE deciding.
+    var moved = document.querySelectorAll('[data-submit]');
+    for (var i = 0; i < moved.length; i++) bar.appendChild(moved[i]);
+  })();
+  // One record backs every pack of a packset — STORE_KEY and TIME_KEY are keyed
+  // on sheet_id, not on the pack — so this page can count and time the WHOLE
+  // instrument without loading a single other pack.
+  function __voteDecidedAll() {
+    var n = 0;
+    for (var k in state) {
+      if (Object.prototype.hasOwnProperty.call(state, k) && state[k] && state[k].decision) n++;
+    }
+    return n;
+  }
+  function __voteSecs() {
+    var per = (typeof __timing !== 'undefined' && __timing && __timing.per) ? __timing.per : null;
+    var out = [];
+    if (!per) return out;
+    for (var k in per) {
+      if (!Object.prototype.hasOwnProperty.call(per, k)) continue;
+      if (!(state[k] && state[k].decision)) continue;
+      if (per[k] > 0) out.push(per[k]);
+    }
+    return out;
+  }
+  function __voteEta(decided, total) {
+    var left = Math.max(0, total - decided);
+    if (!left) return VOTE_DONE.replace('{total}', total);
+    var secs = __voteSecs();
+    if (!secs.length) return '';
+    secs.sort(function (a, b) { return a - b; });
+    var mid = Math.floor(secs.length / 2);
+    var med = (secs.length % 2) ? secs[mid] : (secs[mid - 1] + secs[mid]) / 2;
+    var minutes = Math.max(1, Math.round(med * left / 60));
+    return (secs.length >= 5 ? VOTE_ETA : VOTE_ETA_ROUGH)
+      .replace('{minutes}', minutes).replace('{total}', total);
+  }
+  function __voteProgress() {
+    var total = VOTE_TOTAL || ids.length;
+    var n = VOTE_TOTAL ? __voteDecidedAll() : ids.filter(function (id) {
+      return state[id] && state[id].decision; }).length;
+    if (n > total) n = total;
+    var t = document.getElementById('voteProgText');
+    if (t) t.innerHTML = VOTE_PROGRESS.replace('{n}', '<b>' + n + '</b>')
+                                      .replace('{total}', '<b>' + total + '</b>');
+    var b = document.getElementById('voteProgBar');
+    if (b) b.style.width = (total ? Math.round(100 * n / total) : 0) + '%';
+    var e = document.getElementById('voteProgEta');
+    if (e) e.textContent = __voteEta(n, total);
+  }
+  var __voteOrigTally = tally;
+  tally = function () { __voteOrigTally(); __voteProgress(); };
+  __voteProgress();
+})();
+</script>
+<div class="flowtoast" id="flowToast" role="status"></div>
+</body>
+</html>

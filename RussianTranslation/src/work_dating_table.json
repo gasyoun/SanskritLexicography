@@ -1,0 +1,804 @@
+{
+  "_meta": {
+    "title": "Ceiling C2 phase 2 — curated per-work dating table with scholarly sources",
+    "handoff": "H3790",
+    "created": "01-09-2026",
+    "covers": "every siglum in RussianTranslation/src/ls_source_map.json (45)",
+    "honesty_contract": "A range here is a claim about when a WORK was composed/compiled, as stated by the named scholarly source. It is never a claim about when a SENSE emerged. Phase 1's windows remain «per Boehtlingk-Roth's citations» — a fact about the dictionary, not about the language.",
+    "verification_legend": {
+      "on-disk-quote": "quoted from a source held in this repository, with its printed page; re-readable without a library",
+      "reference-only": "the dating is the position of the named standard reference work; the bibliographic reference is given, page-level verification against the printed source is an open residual"
+    },
+    "confidence_legend": {
+      "anchored": "a hard chronological anchor exists (the author dates himself, a dated colophon or manuscript, a dated translation as terminus ante quem, a securely dated patron)",
+      "consensus": "the standard handbooks agree on a range; no live scholarly dispute worth a decision",
+      "contested": "named scholars hold materially different positions; the project must choose one — carried to an @DECIDE, never self-ruled here",
+      "invalid": "the siglum is not a datable Sanskrit work at all (a modern compilation or a 19th-century anthology); it carries no chronological information and must not set a window bound"
+    },
+    "map_date_conflict": "true where the curated range does NOT contain ls_source_map.json's point date. These are evidence-decidable corrections, recorded here and reported; ls_source_map.json itself is NOT rewritten — phase 1's committed store consumed it, and re-windowing under this table is a separate, tracked step.",
+    "not_done_here": [
+      "ls_source_map.json is not modified",
+      "pwg_sense_attestation_window.jsonl is not re-derived or rewritten",
+      "no sense-emergence claim is made anywhere"
+    ],
+    "c7_caveat": "Carried forward from C2 phase 1 unchanged: 115,354 citation instances across 2,607 distinct sigla resolve to no work in ls_source_map.json. Every window is therefore a conservative lower bound, and this table widens nothing about that residue — a work absent from the map is absent from this table too."
+  },
+
+  "sources": {
+    "vogel1979": {
+      "citation": "Vogel, Claus. 1979. Indian Lexicography (A History of Indian Literature V.4). Wiesbaden: Otto Harrassowitz. ISBN 3-447-02010-5.",
+      "on_disk": "literature/md/Lexicography-Manuals/A history of Indian literature_ Vol_ 5.md",
+      "note": "OCR of the printed volume; the running heads preserve the printed page numbers cited below."
+    },
+    "witzel1989": {
+      "citation": "Witzel, Michael. 1989. «Tracing the Vedic dialects.» In Colette Caillat (ed.), Dialectes dans les littératures indo-aryennes, 97–265. Paris: Collège de France / de Boccard."
+    },
+    "witzel1995": {
+      "citation": "Witzel, Michael. 1995. «Early Indian history: Linguistic and textual parameters.» In George Erdosy (ed.), The Indo-Aryans of Ancient South Asia: Language, Material Culture and Ethnicity, 85–125. Berlin: de Gruyter."
+    },
+    "witzel1997": {
+      "citation": "Witzel, Michael. 1997. «The Development of the Vedic Canon and its Schools: The Social and Political Milieu.» In Michael Witzel (ed.), Inside the Texts, Beyond the Texts: New Approaches to the Study of the Vedas, 257–345. Cambridge, MA: Harvard Oriental Series, Opera Minora 2.",
+      "note": "The five-level periodization (Rgvedic → Mantra → Samhita prose → Brahmana prose → Sutra) used for every Vedic row below."
+    },
+    "olivelle1998": {
+      "citation": "Olivelle, Patrick. 1998. The Early Upanisads: Annotated Text and Translation. New York: Oxford University Press."
+    },
+    "olivelle2005": {
+      "citation": "Olivelle, Patrick. 2005. Manu's Code of Law: A Critical Edition and Translation of the Mānava-Dharmaśāstra. New York: Oxford University Press."
+    },
+    "olivelle2019": {
+      "citation": "Olivelle, Patrick. 2019. Yājñavalkya: A Treatise on Dharma. Murty Classical Library of India. Cambridge, MA: Harvard University Press."
+    },
+    "kane1930": {
+      "citation": "Kane, P. V. 1930–1962. History of Dharmaśāstra, 5 vols. Poona: Bhandarkar Oriental Research Institute."
+    },
+    "brockington1998": {
+      "citation": "Brockington, John. 1998. The Sanskrit Epics (Handbuch der Orientalistik II.12). Leiden: Brill."
+    },
+    "hiltebeitel2001": {
+      "citation": "Hiltebeitel, Alf. 2001. Rethinking the Mahābhārata: A Reader's Guide to the Education of the Dharma King. Chicago: University of Chicago Press."
+    },
+    "gonda1977": {
+      "citation": "Gonda, Jan. 1977. The Ritual Sūtras (A History of Indian Literature I.2). Wiesbaden: Otto Harrassowitz."
+    },
+    "cardona1997": {
+      "citation": "Cardona, George. 1997. Pāṇini: A Survey of Research. 2nd ed. Delhi: Motilal Banarsidass. (1st ed. The Hague: Mouton, 1976.)"
+    },
+    "scharfe1977": {
+      "citation": "Scharfe, Hartmut. 1977. Grammatical Literature (A History of Indian Literature V.2). Wiesbaden: Otto Harrassowitz."
+    },
+    "kahrs1998": {
+      "citation": "Kahrs, Eivind. 1998. Indian Semantic Analysis: The nirvacana Tradition. Cambridge: Cambridge University Press."
+    },
+    "sarup1920": {
+      "citation": "Sarup, Lakshman. 1920–1927. The Nighaṇṭu and the Nirukta. Lahore / London: Oxford University Press."
+    },
+    "rocher1986": {
+      "citation": "Rocher, Ludo. 1986. The Purāṇas (A History of Indian Literature II.3). Wiesbaden: Otto Harrassowitz.",
+      "note": "Rocher's standing methodological caution — a Purāṇa is a fluid, repeatedly re-edited text, so dating one «as a whole» is not a well-formed question — governs all three Purāṇa rows below."
+    },
+    "hardy1983": {
+      "citation": "Hardy, Friedhelm. 1983. Viraha-Bhakti: The Early History of Kṛṣṇa Devotion in South India. Delhi: Oxford University Press."
+    },
+    "meulenbeld1999": {
+      "citation": "Meulenbeld, G. Jan. 1999–2002. A History of Indian Medical Literature, vols. IA–IIB. Groningen: Egbert Forsten."
+    },
+    "pingree1981": {
+      "citation": "Pingree, David. 1981. Jyotiḥśāstra: Astral and Mathematical Literature (A History of Indian Literature VI.4). Wiesbaden: Otto Harrassowitz."
+    },
+    "lienhard1984": {
+      "citation": "Lienhard, Siegfried. 1984. A History of Classical Poetry: Sanskrit — Pali — Prakrit (A History of Indian Literature III.1). Wiesbaden: Otto Harrassowitz."
+    },
+    "warder_ikl": {
+      "citation": "Warder, A. K. 1972–2004. Indian Kāvya Literature, 8 vols. Delhi: Motilal Banarsidass."
+    },
+    "gerow1977": {
+      "citation": "Gerow, Edwin. 1977. Indian Poetics (A History of Indian Literature V.3). Wiesbaden: Otto Harrassowitz."
+    },
+    "sternbach1974": {
+      "citation": "Sternbach, Ludwik. 1974. Subhāṣita, Gnomic and Didactic Literature (A History of Indian Literature IV.1). Wiesbaden: Otto Harrassowitz."
+    },
+    "edgerton1924": {
+      "citation": "Edgerton, Franklin. 1924. The Panchatantra Reconstructed, 2 vols. New Haven: American Oriental Society."
+    },
+    "olivelle1997": {
+      "citation": "Olivelle, Patrick. 1997. The Pañcatantra: The Book of India's Folk Wisdom. Oxford: Oxford University Press."
+    },
+    "stein1900": {
+      "citation": "Stein, M. A. 1900. Kalhaṇa's Rājataraṅgiṇī: A Chronicle of the Kings of Kaśmīr, 2 vols. Westminster: Archibald Constable."
+    },
+    "miller1977": {
+      "citation": "Miller, Barbara Stoler. 1977. Love Song of the Dark Lord: Jayadeva's Gītagovinda. New York: Columbia University Press."
+    },
+    "malinar2007": {
+      "citation": "Malinar, Angelika. 2007. The Bhagavadgītā: Doctrines and Contexts. Cambridge: Cambridge University Press."
+    },
+    "bohtlingk1870": {
+      "citation": "Böhtlingk, Otto. 1870–1873. Indische Sprüche: Sanskrit und Deutsch. 2nd ed., 3 vols. St. Petersburg: Kaiserliche Akademie der Wissenschaften. (1st ed. 1863–1865.)",
+      "note": "The publication fact IS the finding: Spr. is Böhtlingk's own anthology, not a Sanskrit work."
+    },
+    "radhakanta1821": {
+      "citation": "Rādhākāntadeva Bahādur. 1821–1858. Śabdakalpadruma, 5 vols. Calcutta.",
+      "note": "A 19th-century Sanskrit-language encyclopaedic compilation, contemporary with Böhtlingk-Roth themselves."
+    },
+    "gorresio1843": {
+      "citation": "Gorresio, Gaspare (ed.). 1843–1858. Rāmāyaṇa: poema indiano di Valmici, 10 vols. Paris: Imprimerie Nationale."
+    },
+    "schlegel1829": {
+      "citation": "Schlegel, August Wilhelm von (ed.). 1829–1846. Rāmāyaṇa id est carmen epicum de Ramae rebus gestis. Bonn: Weber."
+    }
+  },
+
+  "decisions": {
+    "C2P2-D1": "Ṛgveda anchor: does the window's earliest use the composition span's start (c. -1500) or the collection/redaction (c. -1000)?",
+    "C2P2-D2": "Growth-span epics (MBh, Rām): does a work spanning centuries enter the window as its full span, or as a single conventional point date?",
+    "C2P2-D3": "Pāṇini: mid-5th century BCE or mid-4th century BCE?",
+    "C2P2-D4": "Yāska's Nirukta: pre-Pāṇinian (c. -700…-500) or later?",
+    "C2P2-D5": "Yājñavalkya-Smṛti: Kane's 1st–3rd century CE or Olivelle's 4th–5th century CE?",
+    "C2P2-D6": "Amarakośa: Vogel states the date problem is unsolved — which working range does the project adopt?",
+    "C2P2-D7": "Kālidāsa (4 sigla): the Gupta consensus c. 400–450 CE, or the minority Vikramāditya-era early date?",
+    "C2P2-D8": "Suśruta-Saṃhitā: the early core or the Nāgārjuna redaction as the anchor?",
+    "C2P2-D9": "Purāṇas (3 sigla): does the project assign point dates at all, given Rocher's caution?",
+    "C2P2-D10": "Dating-invalid sigla (Spr., ŚKDR.): drop from windows entirely, or keep with a flag?",
+    "C2P2-D11": "Siglum identity: BHAG/GĪT are one work; R/R. GORR/R. SCHL are three editions of one work — does the window count them once or three times?"
+  },
+
+  "works": {
+    "ṚV": {
+      "name": "Ṛgveda",
+      "map_date": -1125,
+      "earliest": -1500,
+      "latest": -1000,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D1",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "witzel1995", "claim": "The Ṛgvedic hymns, principally the family books II–VII, belong to c. 1500–1200 BCE; the collection is arranged later.", "verified": "reference-only"},
+        {"ref": "witzel1997", "claim": "Level 1 of the five-level periodization; the saṃhitā as collected belongs to c. 1200–1000 BCE.", "verified": "reference-only"}
+      ],
+      "note": "The map's single point -1125 sits inside the span but is neither the composition start nor the redaction. 56,218 citations — the largest single contributor to `earliest` in the whole store — so which end is chosen is not cosmetic."
+    },
+    "AV": {
+      "name": "Atharvaveda",
+      "map_date": -940,
+      "earliest": -1200,
+      "latest": -900,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "witzel1997", "claim": "Level 2 («Mantra language»), with the Ṛgveda-khilas and the mantras of the Yajurveda-saṃhitās: c. 1200–1000 BCE.", "verified": "reference-only"},
+        {"ref": "witzel1989", "claim": "Dialect-geographical placement of the Śaunaka and Paippalāda recensions within that layer.", "verified": "reference-only"}
+      ],
+      "note": "Śaunaka and Paippalāda are recensions of one collection; PWG cites the Śaunaka vulgate."
+    },
+    "VS": {
+      "name": "Vājasaneyi-Saṃhitā",
+      "map_date": -900,
+      "earliest": -1200,
+      "latest": -800,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "witzel1997", "claim": "The mantra material belongs to level 2 (Mantra language, c. 1200–1000 BCE); the Śukla-Yajurveda collection is paired with the Śatapatha-Brāhmaṇa and so reaches into level 4.", "verified": "reference-only"}
+      ],
+      "note": "A stratified text: mantras early, arrangement late. The range spans both, deliberately."
+    },
+    "TS": {
+      "name": "Taittirīya-Saṃhitā",
+      "map_date": -1000,
+      "earliest": -1000,
+      "latest": -800,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "witzel1997", "claim": "Level 3 («Saṃhitā prose»), with MS and KS: c. 1000–800 BCE.", "verified": "reference-only"}
+      ],
+      "note": "The map's -1000 is the earliest edge of the accepted range, not a midpoint."
+    },
+    "ŚAT. BR": {
+      "name": "Śatapatha-Brāhmaṇa",
+      "map_date": -800,
+      "earliest": -800,
+      "latest": -600,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "witzel1997", "claim": "Level 4 («Brāhmaṇa prose»): c. 800–600 BCE; ŚB is among the latest of that layer, and its books XIII–XIV later still.", "verified": "reference-only"}
+      ],
+      "note": "Mādhyandina and Kāṇva recensions; PWG cites the Mādhyandina (Weber's edition)."
+    },
+    "AIT. BR": {
+      "name": "Aitareya-Brāhmaṇa",
+      "map_date": -700,
+      "earliest": -900,
+      "latest": -600,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "witzel1997", "claim": "Stratified: AB I–V belongs with the Saṃhitā-prose layer, AB VI–VIII is a later appendix.", "verified": "reference-only"}
+      ],
+      "note": "The map's single -700 hides the I–V / VI–VIII split; PWG's citations do not distinguish them."
+    },
+    "KĀTY. ŚR": {
+      "name": "Kātyāyana-śrautasūtra",
+      "map_date": -400,
+      "earliest": -500,
+      "latest": -200,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "gonda1977", "claim": "The śrautasūtras belong to the Sūtra period; the Kātyāyana ŚS, attached to the Śukla-Yajurveda, is one of the later members of the class.", "verified": "reference-only"},
+        {"ref": "witzel1997", "claim": "Level 5 (Sūtra), the last Vedic layer.", "verified": "reference-only"}
+      ],
+      "note": null
+    },
+    "NIR": {
+      "name": "Nirukta (Yāska)",
+      "map_date": -500,
+      "earliest": -700,
+      "latest": -400,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D4",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "sarup1920", "claim": "Places Yāska well before Pāṇini, around the 7th century BCE.", "verified": "reference-only"},
+        {"ref": "kahrs1998", "claim": "Treats the nirvacana tradition as a continuum and is markedly more cautious about a single early date for the Nirukta as we have it.", "verified": "reference-only"}
+      ],
+      "note": "The contest is Yāska's position relative to Pāṇini; it moves the row by up to three centuries."
+    },
+    "P": {
+      "name": "Pāṇini, Aṣṭādhyāyī",
+      "map_date": -400,
+      "earliest": -500,
+      "latest": -350,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D3",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "cardona1997", "claim": "Surveys the evidence and the range of proposed dates; the mid-5th to mid-4th century BCE bracket is the surviving one.", "verified": "reference-only"},
+        {"ref": "scharfe1977", "claim": "Places Pāṇini in the 4th century BCE within the history of the grammatical literature.", "verified": "reference-only"}
+      ],
+      "note": "25,291 citations. ls_source_map.json labels P's period «Vedic (Brāhmaṇa–Upaniṣad)» while giving it Renou class II — a label inconsistency inherited from phase 1, not corrected here."
+    },
+    "MBH": {
+      "name": "Mahābhārata",
+      "map_date": 80,
+      "earliest": -400,
+      "latest": 400,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D2",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "brockington1998", "claim": "The epic grew over roughly eight centuries, c. 400 BCE to 400 CE, with layers distinguishable on linguistic grounds.", "verified": "reference-only"},
+        {"ref": "hiltebeitel2001", "claim": "Argues instead for a compressed composition, roughly 150 BCE to the turn of the era, by a committee-like group.", "verified": "reference-only"}
+      ],
+      "note": "67,238 citations — the single largest dated source in the map. Collapsing an 800-year growth span to the point 80 CE is the largest single distortion in phase 1's windows."
+    },
+    "HARIV": {
+      "name": "Harivaṃśa",
+      "map_date": 200,
+      "earliest": 100,
+      "latest": 300,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "brockington1998", "claim": "The Harivaṃśa is a khila (appendix) to the Mahābhārata, later than the epic's main growth and before the developed Purāṇas.", "verified": "reference-only"}
+      ],
+      "note": null
+    },
+    "R": {
+      "name": "Rāmāyaṇa",
+      "map_date": 70,
+      "earliest": -400,
+      "latest": 300,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D2",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "brockington1998", "claim": "Books II–VI form the older core; books I and VII are later additions, the whole spanning roughly the 5th/4th century BCE to the 3rd century CE.", "verified": "reference-only"}
+      ],
+      "note": "37,806 citations. Same growth-span problem as MBh."
+    },
+    "R. GORR": {
+      "name": "Rāmāyaṇa (Gorresio rec.)",
+      "map_date": 70,
+      "earliest": -400,
+      "latest": 300,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": "C2P2-D11",
+      "map_date_conflict": false,
+      "same_work_as": ["R"],
+      "sources": [
+        {"ref": "gorresio1843", "claim": "Gorresio's is a printed edition of the Bengal recension, published 1843–1858 — an editorial artefact of the 19th century, not a separately datable Sanskrit work.", "verified": "reference-only"},
+        {"ref": "brockington1998", "claim": "The recension's own text belongs to the Rāmāyaṇa's transmission, so its composition date is the Rāmāyaṇa's.", "verified": "reference-only"}
+      ],
+      "note": "The DATE belongs to the work; the SIGLUM names an edition. PWG cites it because Böhtlingk-Roth read that edition."
+    },
+    "R. SCHL": {
+      "name": "Rāmāyaṇa (Schlegel rec.)",
+      "map_date": 70,
+      "earliest": -400,
+      "latest": 300,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": "C2P2-D11",
+      "map_date_conflict": false,
+      "same_work_as": ["R"],
+      "sources": [
+        {"ref": "schlegel1829", "claim": "Schlegel's edition of the Northern recension, Bonn 1829–1846 — again an edition, not a distinct work.", "verified": "reference-only"},
+        {"ref": "brockington1998", "claim": "Composition date is the Rāmāyaṇa's.", "verified": "reference-only"}
+      ],
+      "note": "246 citations — the rarest siglum in the map."
+    },
+    "M": {
+      "name": "Manusmṛti",
+      "map_date": 150,
+      "earliest": 100,
+      "latest": 300,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "olivelle2005", "claim": "Places the Mānava-Dharmaśāstra in the 2nd–3rd century CE, the work of a single author working with earlier material.", "verified": "reference-only"},
+        {"ref": "kane1930", "claim": "The older Dharmaśāstra chronology, which placed Manu somewhat earlier, is superseded by Olivelle's critical edition.", "verified": "reference-only"}
+      ],
+      "note": "22,575 citations. One of the better-anchored large sources."
+    },
+    "YĀJÑ": {
+      "name": "Yājñavalkya-Smṛti",
+      "map_date": 300,
+      "earliest": 100,
+      "latest": 500,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D5",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "kane1930", "claim": "Places the Yājñavalkya-Smṛti in the early centuries CE, roughly 1st–3rd.", "verified": "reference-only"},
+        {"ref": "olivelle2019", "claim": "Argues on textual and legal-historical grounds for the 4th–5th century CE, later than Manu.", "verified": "reference-only"}
+      ],
+      "note": "The two positions barely overlap; the range given is their union, which is why this is a decision and not a consensus row."
+    },
+    "BHAG": {
+      "name": "Bhagavadgītā",
+      "map_date": 200,
+      "earliest": -200,
+      "latest": 200,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": "C2P2-D11",
+      "map_date_conflict": false,
+      "same_work_as": ["GĪT"],
+      "sources": [
+        {"ref": "malinar2007", "claim": "Places the Gītā's composition in the last centuries BCE to the first century CE, within the Mahābhārata's growth.", "verified": "reference-only"},
+        {"ref": "brockington1998", "claim": "The Gītā is an insertion into the Bhīṣmaparvan, later than the epic's oldest layer.", "verified": "reference-only"}
+      ],
+      "note": "The map's 200 CE is the late edge. BHAG and GĪT are the SAME work under two PWG sigla — see C2P2-D11."
+    },
+    "GĪT": {
+      "name": "Bhagavadgītā",
+      "map_date": 200,
+      "earliest": -200,
+      "latest": 200,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": "C2P2-D11",
+      "map_date_conflict": false,
+      "same_work_as": ["BHAG"],
+      "sources": [
+        {"ref": "malinar2007", "claim": "Same work as BHAG; the two sigla are Böhtlingk-Roth's, not two texts.", "verified": "reference-only"}
+      ],
+      "note": "1,207 citations under this siglum, 2,584 under BHAG."
+    },
+    "VP": {
+      "name": "Viṣṇu-Purāṇa",
+      "map_date": 450,
+      "earliest": 300,
+      "latest": 500,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D9",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "rocher1986", "claim": "Among the older Purāṇas, commonly placed in the 4th–5th century CE — but Rocher's standing point is that a Purāṇa is a continuously re-edited text and cannot be dated as a whole.", "verified": "reference-only"}
+      ],
+      "note": null
+    },
+    "MĀRK. P": {
+      "name": "Mārkaṇḍeya-Purāṇa",
+      "map_date": 550,
+      "earliest": 250,
+      "latest": 600,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D9",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "rocher1986", "claim": "An early Purāṇa whose Devīmāhātmya section (chs. 81–93) is a distinctly later insertion, usually placed around the 6th century CE.", "verified": "reference-only"}
+      ],
+      "note": "The map's 550 is effectively the Devīmāhātmya's date applied to the whole Purāṇa."
+    },
+    "BHĀG. P": {
+      "name": "Bhāgavata-Purāṇa",
+      "map_date": 950,
+      "earliest": 850,
+      "latest": 1000,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": "C2P2-D9",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "hardy1983", "claim": "South Indian provenance, composed in the 9th–10th century CE under the influence of Tamil Āḷvār devotion.", "verified": "reference-only"},
+        {"ref": "rocher1986", "claim": "Accepts the 9th–10th century placement as the best supported for this Purāṇa.", "verified": "reference-only"}
+      ],
+      "note": "30,483 citations — the third-largest dated source, and the one that pushes many windows' `latest` into the 10th century."
+    },
+    "SUŚR": {
+      "name": "Suśruta-Saṃhitā",
+      "map_date": 400,
+      "earliest": -200,
+      "latest": 500,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D8",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "meulenbeld1999", "claim": "A stratified text: an early core reaching back to the last centuries BCE, an Uttaratantra added later, and a redaction attributed to Nāgārjuna in the first half of the 1st millennium CE.", "verified": "reference-only"}
+      ],
+      "note": "12,450 citations. The map's 400 is the redaction date; the core is far older."
+    },
+    "VARĀH": {
+      "name": "Varāhamihira",
+      "map_date": 550,
+      "earliest": 505,
+      "latest": 587,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "same_work_as": ["VARĀH. BṚH. S"],
+      "sources": [
+        {"ref": "pingree1981", "claim": "Varāhamihira's Pañcasiddhāntikā uses an epoch of 505 CE and he died in 587 CE — one of the few securely dated authors in the whole map.", "verified": "reference-only"}
+      ],
+      "note": "An author siglum, not a work siglum: 123 citations that PWG did not assign to a named title."
+    },
+    "VARĀH. BṚH. S": {
+      "name": "Varāhamihira, Bṛhatsaṃhitā",
+      "map_date": 550,
+      "earliest": 505,
+      "latest": 587,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "same_work_as": ["VARĀH"],
+      "sources": [
+        {"ref": "pingree1981", "claim": "The Bṛhatsaṃhitā is Varāhamihira's own, within his securely dated lifetime.", "verified": "reference-only"}
+      ],
+      "note": "14,292 citations — the best-anchored large source in the map, and therefore the most useful fixed point in any window that contains it."
+    },
+    "AK": {
+      "name": "Amarakośa",
+      "map_date": 450,
+      "earliest": 400,
+      "latest": 700,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D6",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "vogel1979", "locus": "309–310", "claim": "«The problem of his date has occupied the minds of Sanskritists since Paolino da San Bartolomeo (1748–1805) but has not been solved to the present day.» Indigenous tradition puts Amarasiṃha among the nine jewels of Vikramāditya's court, which «would have made him a contemporary of the astronomer Varāhamihira, who lived in the 6th century».", "verified": "on-disk-quote"}
+      ],
+      "note": "16,156 citations resting on a date the standard reference calls unsolved. This is the clearest case in the table of a confident-looking number with no scholarly warrant behind it."
+    },
+    "H": {
+      "name": "Hemacandra, Abhidhānacintāmaṇi",
+      "map_date": 1150,
+      "earliest": 1088,
+      "latest": 1172,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "vogel1979", "locus": "331", "claim": "Hemacandra's dates are given as 1088–1172; his kośas were written as appendices to the Siddhahemacandra grammar, composed at the direction of Siddharāja Jayasiṃha.", "verified": "on-disk-quote"}
+      ],
+      "note": "The map's 1150 falls inside the author's lifetime — correct, and narrowable to it."
+    },
+    "H. an": {
+      "name": "Hemacandra, Anekārthasaṃgraha",
+      "map_date": 1150,
+      "earliest": 1088,
+      "latest": 1172,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "same_work_as": [],
+      "sources": [
+        {"ref": "vogel1979", "locus": "331", "claim": "Same author, same lifetime; the Anekārthasaṃgraha is Hemacandra's homonymic kośa.", "verified": "on-disk-quote"}
+      ],
+      "note": "A different work from H, by the same author — unlike BHAG/GĪT, these two sigla are correctly distinct."
+    },
+    "HALĀY": {
+      "name": "Halāyudha, Abhidhānaratnamālā",
+      "map_date": 950,
+      "earliest": 925,
+      "latest": 956,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "vogel1979", "locus": "321", "claim": "«The earliest lexicographer to be datable with some measure of certainty is Bhaṭṭa Halāyudha.» Born in the former half of the 10th century; the Abhidhānaratnamālā is his FIRST work, written before the Kavirahasya, which he composed at the court of Kṛṣṇa III Rāṣṭrakūṭa of Mānyakheṭa (c. 940–956).", "verified": "on-disk-quote"}
+      ],
+      "note": "The map's 950 is right, and the Vogel reasoning tightens it to a ~30-year bracket."
+    },
+    "TRIK": {
+      "name": "Trikāṇḍaśeṣa",
+      "map_date": 1150,
+      "earliest": 1100,
+      "latest": 1160,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "vogel1979", "locus": "331", "claim": "«Certainly prior to ś. 1081 [1159/60] wrote Puruṣottamadeva»; as he seems not to have known Hemacandra (1088–1172), nor Hemacandra him, «he flourished in all probability during the first half of the 12th century».", "verified": "on-disk-quote"}
+      ],
+      "note": "8,819 citations, now carrying a dated terminus ante quem rather than a round number."
+    },
+    "MED": {
+      "name": "Medinīkośa",
+      "map_date": 1200,
+      "earliest": 1200,
+      "latest": 1275,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "vogel1979", "locus": "347", "claim": "«now attributable with confidence to the 13th century»: it cites Maheśvara's Viśvaprakāśa, dated ś. 1033 = 1111/12 CE, and is itself cited in Jyotirīśvara's Varṇaratnākara of the first quarter of the 14th century, so «there is good reason to place it somewhere between 1200 and 1275».", "verified": "on-disk-quote"}
+      ],
+      "note": "A textbook two-sided anchor — a cited source and a citing source. The strongest kośa row in the table."
+    },
+    "RĀJAN": {
+      "name": "Rājanighaṇṭu",
+      "map_date": 1300,
+      "earliest": 1375,
+      "latest": 1500,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "vogel1979", "locus": "376", "claim": "Narahari, son of Īśvarasūri and pupil of Śrīkaṇṭha, «flourished in Kashmir after 1375, probably in the 15th century, since he names Madanapāla's Madanavinoda among his sources».", "verified": "on-disk-quote"}
+      ],
+      "note": "CORRECTION: the map's 1300 is at least 75 years too early and falls outside the sourced range. 6,778 citations affected."
+    },
+    "ŚKDR": {
+      "name": "Śabdakalpadruma",
+      "map_date": 1830,
+      "earliest": 1821,
+      "latest": 1858,
+      "confidence": "invalid",
+      "dating_valid": false,
+      "decide": "C2P2-D10",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "radhakanta1821", "claim": "Rādhākāntadeva's Śabdakalpadruma was published at Calcutta in five volumes between 1821 and 1858 — a 19th-century encyclopaedic compilation contemporary with Böhtlingk-Roth's own work.", "verified": "reference-only"},
+        {"ref": "vogel1979", "locus": "373, 375", "claim": "Vogel treats the Śabdakalpadruma as a modern compilation drawing on the earlier kośa literature, not as a witness to any earlier stage of the language.", "verified": "on-disk-quote"}
+      ],
+      "note": "DATING-INVALID. 20,110 citations. A ŚKDR citation says Böhtlingk-Roth found the word in a book printed in their own lifetime; it carries no information about when the word or sense existed. In phase 1 it silently sets `latest` to 1830 — the C2P1 hand-check sample shows windows of exactly 1830…1830 and 400…1830 produced this way."
+    },
+    "Spr": {
+      "name": "Indische Sprüche (Böhtlingk anthology)",
+      "map_date": 600,
+      "earliest": 1863,
+      "latest": 1873,
+      "confidence": "invalid",
+      "dating_valid": false,
+      "decide": "C2P2-D10",
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "bohtlingk1870", "claim": "Indische Sprüche is Böhtlingk's OWN anthology of Sanskrit gnomic verse, St. Petersburg 1863–1865, 2nd ed. 1870–1873 — the editor of PWG citing his own collection.", "verified": "reference-only"},
+        {"ref": "sternbach1974", "claim": "The subhāṣita anthologies draw verses from sources spanning the whole of Sanskrit literature; an anthology's own date bounds nothing about the verses in it.", "verified": "reference-only"}
+      ],
+      "note": "DATING-INVALID, and the most misleading row in the map. 12,976 citations carry a fabricated 600 CE anchor: a Spr. verse may be Vedic-adjacent gnomic material or 17th-century, and the anthology cannot tell you which. The C2P1 sample row `ruc / sense #0` takes its window latest of 600 from exactly this."
+    },
+    "KATHĀS": {
+      "name": "Kathāsaritsāgara",
+      "map_date": 1050,
+      "earliest": 1063,
+      "latest": 1081,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "warder_ikl", "claim": "Somadeva composed the Kathāsaritsāgara in Kashmir for Queen Sūryavatī, wife of King Ananta, in the years around 1063–1081 CE.", "verified": "reference-only"}
+      ],
+      "note": "The map's 1050 is a decade early and just outside the sourced bracket — a minor correction, not a distortion. 25,016 citations."
+    },
+    "RĀJA-TAR": {
+      "name": "Rājataraṅgiṇī",
+      "map_date": 1150,
+      "earliest": 1148,
+      "latest": 1150,
+      "confidence": "anchored",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "stein1900", "claim": "Kalhaṇa states his own date of composition; Stein's introduction fixes it at 1148–1149/50 CE — the single most precisely dated work in the map.", "verified": "reference-only"}
+      ],
+      "note": "10,269 citations under a two-year bracket. Where a window's `latest` is set by RĀJA-TAR, that bound is as good as this dataset gets."
+    },
+    "GĪT. GOV": {
+      "name": "Gītagovinda",
+      "map_date": 1048,
+      "earliest": 1170,
+      "latest": 1200,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "miller1977", "claim": "Jayadeva was a court poet of Lakṣmaṇasena of Bengal, placing the Gītagovinda in the last third of the 12th century.", "verified": "reference-only"},
+        {"ref": "lienhard1984", "claim": "Places Jayadeva in the second half of the 12th century within the history of lyric kāvya.", "verified": "reference-only"}
+      ],
+      "note": "CORRECTION: the map's 1048 is roughly 130 years too early. Impact is nil in practice — the map records 0 citations for this siglum — but the row would corrupt any future re-window."
+    },
+    "HIT": {
+      "name": "Hitopadeśa",
+      "map_date": 1000,
+      "earliest": 800,
+      "latest": 1373,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "warder_ikl", "claim": "Nārāyaṇa's Hitopadeśa is a Bengal reworking of Pañcatantra material; its terminus ante quem is the oldest dated manuscript, of 1373 CE.", "verified": "reference-only"},
+        {"ref": "sternbach1974", "claim": "Places the Hitopadeśa within the later didactic-narrative tradition dependent on the Pañcatantra.", "verified": "reference-only"}
+      ],
+      "note": "A wide but honest bracket; the map's 1000 is a convention inside it, not a result."
+    },
+    "PAÑCAT": {
+      "name": "Pañcatantra",
+      "map_date": 300,
+      "earliest": 200,
+      "latest": 550,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "edgerton1924", "claim": "Reconstructs a lost archetype behind the surviving recensions and places it in the early centuries CE.", "verified": "reference-only"},
+        {"ref": "olivelle1997", "claim": "The Pahlavi translation made for Khusrau I (r. 531–579) is a hard terminus ante quem for the archetype; the text we cite is a later recension.", "verified": "reference-only"}
+      ],
+      "note": "8,992 citations. The Pahlavi TAQ is one of the few externally verifiable anchors in the whole table."
+    },
+    "KUMĀRAS": {
+      "name": "Kumārasambhava",
+      "map_date": 420,
+      "earliest": 375,
+      "latest": 470,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D7",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "lienhard1984", "claim": "Places Kālidāsa in the Gupta period, around 400–450 CE.", "verified": "reference-only"},
+        {"ref": "warder_ikl", "claim": "Surveys the competing placements, including the minority view attaching him to a 1st-century BCE Vikramāditya.", "verified": "reference-only"}
+      ],
+      "note": "One of four Kālidāsa sigla that move together."
+    },
+    "MEGH": {
+      "name": "Meghadūta",
+      "map_date": 420,
+      "earliest": 375,
+      "latest": 470,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D7",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "lienhard1984", "claim": "Kālidāsa, Gupta period, c. 400–450 CE.", "verified": "reference-only"}
+      ],
+      "note": "Moves with the other three Kālidāsa sigla."
+    },
+    "RAGH": {
+      "name": "Raghuvaṃśa",
+      "map_date": 420,
+      "earliest": 375,
+      "latest": 470,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D7",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "lienhard1984", "claim": "Kālidāsa, Gupta period, c. 400–450 CE.", "verified": "reference-only"}
+      ],
+      "note": "9,728 citations — the largest of the Kālidāsa group."
+    },
+    "ŚĀK": {
+      "name": "Abhijñānaśākuntala",
+      "map_date": 420,
+      "earliest": 375,
+      "latest": 470,
+      "confidence": "contested",
+      "dating_valid": true,
+      "decide": "C2P2-D7",
+      "map_date_conflict": false,
+      "sources": [
+        {"ref": "lienhard1984", "claim": "Kālidāsa, Gupta period, c. 400–450 CE.", "verified": "reference-only"}
+      ],
+      "note": "Moves with the other three Kālidāsa sigla."
+    },
+    "AMAR": {
+      "name": "Amaru-śataka",
+      "map_date": 450,
+      "earliest": 650,
+      "latest": 800,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "lienhard1984", "claim": "Amaru belongs to the developed lyric śataka tradition; he is quoted by the poeticians from Ānandavardhana onward, which places him no later than the early 9th century and most probably in the 7th–8th.", "verified": "reference-only"},
+        {"ref": "warder_ikl", "claim": "Places the Amaru-śataka in the same later-7th to 8th-century band on stylistic and citation grounds.", "verified": "reference-only"}
+      ],
+      "note": "CORRECTION: the map's 450 is 200–350 years too early and sits outside the sourced range. 511 citations."
+    },
+    "SĀH. D": {
+      "name": "Sāhityadarpaṇa",
+      "map_date": 1400,
+      "earliest": 1300,
+      "latest": 1384,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "gerow1977", "claim": "Viśvanātha Kavirāja's Sāhityadarpaṇa belongs to the 14th century, within the late scholastic phase of Sanskrit poetics.", "verified": "reference-only"}
+      ],
+      "note": "MINOR CORRECTION: the map's 1400 sits just past the 14th century. 4,645 citations; the practical effect on any window is under two decades."
+    },
+    "VOP": {
+      "name": "Vopadeva, Mugdhabodha",
+      "map_date": 1250,
+      "earliest": 1260,
+      "latest": 1300,
+      "confidence": "consensus",
+      "dating_valid": true,
+      "decide": null,
+      "map_date_conflict": true,
+      "sources": [
+        {"ref": "scharfe1977", "claim": "Vopadeva worked under the Yādava kings of Devagiri in the later 13th century; the Mugdhabodha is his grammar.", "verified": "reference-only"}
+      ],
+      "note": "MINOR CORRECTION of a decade. 5,861 citations. ls_source_map.json gives VOP Renou class II (grammatical) with period «Medieval» — consistent."
+    }
+  }
+}
