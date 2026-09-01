@@ -2,7 +2,7 @@
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix
 
-_Created: 12-07-2026 · Last updated: 01-09-2026 (H3825: wave-2 print booklet shipped)_
+_Created: 12-07-2026 · Last updated: 01-09-2026 (H3825: wave-2 print booklet shipped; waves 3–4 deferred to 2027 by MG the same day)_
 
 > **What this is.** A plan to build the Sanskrit analog of Duden's *Sprache in Zahlen* — the
 > quantitative "language in numbers" appendix that closes the [Duden Universalwörterbuch](https://www.duden.de/)
@@ -177,15 +177,25 @@ Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-S
     `make check-source`.
   - **Web render — still owed**, and it belongs to wave 4's publish gate, not here.
 
-### Wave 3 — EN + DE + monograph appendix (gates on wave 2)
-*Unblocked by:* the frozen RU portrait.
+> **Waves 3 and 4 are DEFERRED TO 2027 (MG, 01-09-2026: «волны 3-4 тоже до 2027»,
+> extending the same day's «работа по сути откладывается до 2027» over the учебник).**
+> This is a calendar decision, not a blocker: nothing technical stands in the way, and
+> both waves' own gates below are unchanged and still accurate. An agent does **not**
+> start either wave, does not mint a handoff for it, and does not offer it as a next
+> action before 2027 — regardless of what the gates say. What closes in 2026 is
+> waves 0–2: the modules, the RU portrait, and its print booklet. The booklet's home
+> repo carries the same ruling in its
+> [`.ai_state.md`](https://github.com/gasyoun/gasuns-sanskrit-manual/blob/main/.ai_state.md).
+
+### Wave 3 — EN + DE + monograph appendix (gates on wave 2) — **deferred to 2027**
+*Unblocked by:* the frozen RU portrait. *Held by:* the 2027 deferral above.
 
 - Translate to **EN** (monograph register) and **DE** (the Duden/Böhtlingk parallel).
 - Fold the EN portrait into **M01** as the *Sanskrit in Numbers* appendix; wire it into the
   monograph's evidence-graded-lexicography spine.
 
-### Wave 4 — Publish (gates on rights + design)
-*Unblocked by:* [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) GO; a Zenodo dataset DOI.
+### Wave 4 — Publish (gates on rights + design) — **deferred to 2027**
+*Unblocked by:* [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) GO; a Zenodo dataset DOI. *Held by:* the 2027 deferral above.
 
 - Design pass; per-figure trust blocks; Zenodo deposit of the module datasets ([`/data-release`](https://github.com/gasyoun/claude-config/blob/main/commands/data-release.md) + [`/cut-release`](https://github.com/gasyoun/claude-config/blob/main/commands/cut-release.md)); GO/NO-GO before samskrte.ru go-live.
 
