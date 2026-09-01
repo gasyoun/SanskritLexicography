@@ -62,6 +62,7 @@ future session does **not** re-litigate them.
 | D4 | Primary language | **Russian primary; English + German after** | The samskrte.ru student audience is Tier 0; EN serves the monograph, DE closes the loop with the Duden/Böhtlingk German heritage. |
 | D5 | Public portrait home | **samskrte.ru (web) + PDF booklet as an appendix to the Gasuns Sanskrit Manual** | Puts the portrait in front of the paying student audience and inside the учебник — the exact structural place *Sprache in Zahlen* holds in the Duden. |
 | D6 | Which Böhtlingk exactly | **The whole Petersburg family (PWG + PW + PWK + SCH)** | Portrays the tradition as it actually layered (cf. [A49](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)); accepts the fuzzy-union caveat below in exchange for completeness. |
+| D7 | Manual home (ruled 01-09-2026, MG: «учебнику давать, но приватный») | **Own book repo, PRIVATE: [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual)** | Closes the §8.1 `@DECIDE` (approve + private). Book-repo precedent: [buhler-sanskrit-book](https://github.com/gasyoun/buhler-sanskrit-book). Name + render toolchain (Pandoc → XeLaTeX) were the agent-side technical fork per the decision card; recorded in the new repo's README. Unblocks the wave-2 PDF booklet render. |
 
 **Caveat forced by D2 + D6 (state it on the portrait's face).** Summing family headword counts
 double-counts massively — PWK abridges PWG, PW abridges further, SCH is addenda. The honest
@@ -163,8 +164,10 @@ Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-S
   dataset; written **home-agnostically** because the §8 Manual-home `@DECIDE` is still open
   (the fork is surfaced in the portrait's §11, not settled).
 - Two renders from one source: an interactive **web page for samskrte.ru** and a **print PDF
-  booklet** sized as an appendix to the Gasuns Sanskrit Manual. **Still owed** — the PDF
-  render gates on the §8 Manual-home `@DECIDE`; the web render belongs to wave 4's
+  booklet** sized as an appendix to the Gasuns Sanskrit Manual. **Still owed but unblocked**
+  (01-09-2026, ruling D7): the booklet's home is the private
+  [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual) repo
+  (Pandoc → XeLaTeX toolchain proposed in its README); the web render belongs to wave 4's
   publish gate.
 
 ### Wave 3 — EN + DE + monograph appendix (gates on wave 2)
@@ -219,10 +222,11 @@ Considered and ruled out — a future session should not re-propose these withou
 
 ## 8. Open decisions / prerequisites
 
-1. **Gasuns Sanskrit Manual — repo + build path.** No dedicated repo was found in the org for the
-   учебник that the PDF booklet appends to (D5). **`@DECIDE`:** name its repo/build (is it a
-   Systema-Sanscriticum asset, an ORS-FAQ asset, or a separate LaTeX/book project?). Blocks
-   wave 2's PDF render only — not wave 0/1.
+1. ~~**Gasuns Sanskrit Manual — repo + build path.**~~ **DONE (ruled 01-09-2026, MG:
+   «учебнику давать, но приватный» — ruling D7).** The учебник gets its own **private**
+   book repo: [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual)
+   (scaffolded same pass: README + proposed Pandoc → XeLaTeX toolchain). The wave-2 PDF
+   render is no longer blocked.
 2. ~~**PW / PD now-2026 re-export.**~~ **DONE (verified 29-07-2026).** The kleineres PW
    now-2026 re-export already exists —
    [`now-2026/PD-unique-key1-104959.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/PD-unique-key1-104959.txt) /
