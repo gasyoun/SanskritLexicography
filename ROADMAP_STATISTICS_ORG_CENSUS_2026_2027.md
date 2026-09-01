@@ -1,8 +1,14 @@
 # Statistics for the Sanskrit Lexicon — a 12-month org-wide census & analytics roadmap 2026–2027
 
-_Created: 12-07-2026 · Last updated: 27-08-2026_
+_Created: 12-07-2026 · Last updated: 01-09-2026_
 
 > **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
+
+> **Q1→Q2 quarter boundary, 01-09-2026** ([H3793](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3793-Opus_SanskritLexicography_statistics-org-census-q2-analytical-layer_31.08.26.md), Opus 5 `claude-opus-5[1m]`). Q1 delivery is stated per register, and the Q2 analytical layer is designed against Part I's named gaps, in
+> [Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md).
+> Three things in *this* file were found stale by that pass and are corrected below: the WS2.4 figures (Part II quoted the superseded 15-dict wave), the Q1-target verdicts, and the backup risk (now closed). Two it could **not** fix from here: the machine feed
+> [`stats_census_register.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/stats_census_register.csv),
+> which drives the six live dashboard pages, is stamped 12–18-07-2026 and understates three rows; and the register is counted three ways (this file's prose ~48, the Part IV KPI 48, the feed **59**), so no KPI percentage is computable until one denominator is adopted.
 
 **What this is.** The *measurement* counterpart to the two existing hubs. Where
 [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)
@@ -195,9 +201,19 @@ and gets one handoff at execution time.
   separate `@DO`. Directly attacks ATLAS_FAIR **G1** (no persistent
   identifiers). 📦.
 
-**Q1 targets:** 100 % of *descriptive* rows → ✅; ≥1 single-copy giant backed up; ≥6
-observatory stat-pages live ✅ (6 shipped, H817 WS1.3); FAIR release #1 metadata
-prepared, deposit `@DO` (Zenodo account gate, H817 WS1.4).
+**Q1 targets — measured at the quarter boundary, 01-09-2026 (H3793):**
+
+| Target | Verdict | Evidence |
+|---|---|---|
+| 100 % of *descriptive* rows → ✅ | **MISSED** — 9 `not_started` + 8 `partial` in the feed, but 4 are L7 (deliberately deferred) and 2 externally gated (Vedic accent → VedaWeb; meter/prosody → SanskritKaraoke). Genuinely in-scope misses: **form→lemma ambiguity (L2)** and **translation velocity + QA-judge κ (L4)** | feed counts, §3.2 of the Q1/Q2 pass |
+| ≥1 single-copy giant backed up | **✅ MET, exceeded** — `corpus_lexicon.jsonl` is now **three-copy** (git twin in `pwg-ru-data` H3316 · `D:\Backups` mirror H1998 · digest-verified off-machine `samskrtam.ru/guhya` [H3389](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3389-OxAlpha_Uprava_kosha-guhya-restricted-backup-upload_23.08.26.md), restore-rehearsed 43 s, sha256 triple-match) | [SHADOW_ASSETS_POINTERS.md](https://github.com/gasyoun/Uprava/blob/main/SHADOW_ASSETS_POINTERS.md) |
+| ≥6 observatory stat-pages live | **✅ MET** — 36 pages in [`observatory/site/src/`](https://github.com/sanskrit-lexicon/csl-observatory/tree/main/observatory/site/src); the WS1.3 census family is 6, plus 3 dedicated stat pages under H1524 | csl-observatory tree |
+| FAIR release #1 metadata prepared, deposit `@DO` | **✅ metadata · ✗ deposit** — and the stated rationale is now contradicted by a live repo-wide Zenodo integration ([CONTRADICTIONS §17](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md), opened 01-09-2026) | [data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md) § Status |
+
+**Two register rows are capped, not pending** — sense/polysemy at 11/44 dicts (33 dicts carry
+no structural sense markers) and corpus root-class (accent collapse). "Drive every ○ and ◐ to
+✅" is unachievable as written; the register needs a **capped** status distinct from
+**partial** before the KPI can stop chasing an unreachable 100 %.
 
 ### Q2 · Oct–Dec 2026 — "The analytical layer"
 
@@ -213,14 +229,34 @@ prepared, deposit `@DO` (Zenodo account gate, H817 WS1.4).
   over the 912-text `<ls>` graph. ➡️ takes **A50** (what the tradition cites) to 4/5. 📊.
 - **WS2.4 — Definition typology.** Synonym-gloss vs equivalent vs encyclopedic per dict —
   the classic microstructural axis the ATLAS_FAIR audit flags as absent. 📄.
-  **◐ first-pass 24-07-2026 (H1483):** rubric + 15-dict distribution (926,759 records) +
-  stratified gold 63/79=79.7% in
-  [data/DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md).
-  Remaining: Wilson `E.` peel, sense-level split, ATLAS 300×7 double-key pool.
+  **◐ 24-07-2026 (H1483), two waves — cite the current one:** the H1483 first pass covered
+  15 core dicts / 926,759 records at gold 63/79 = 79.7 %; the committed `--all` table
+  **supersedes it** at **44/44 csl-orig dicts · 1,496,157 `<L>` records · gold 55/79 = 69.6 %**
+  in [data/DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md)
+  (accuracy falls as scope widens from 15 core dicts to all 44 — the expected direction, not a
+  classifier regression). Gold is single-pass, **not** double-keyed, so 69.6 % is not a
+  publication-grade precision. Remaining: Wilson `E.` peel, sense-level split, ATLAS 300×7
+  double-key pool — only the last raises precision to a citable figure.
 - **WS2.5 — FAIR release #2** (analytical datasets, DOIs). 📦.
 
-**Q2 targets:** A40 → 5/5 and A50 → 4/5 (assisted); ≥4 analytical dashboard pages; FAIR
-release #2.
+**Q2 targets — restated 01-09-2026 (H3793) against measured readiness.** Full design, with
+the prior art already committed for each workstream, in
+[Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md) §5.
+
+| Target | Restated | Why |
+|---|---|---|
+| A40 → 5/5 | keep, but **not counted as portfolio progress** | MG ruled «A38 counts, drop A40 from the fifteen» 29-07-2026 ([ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)) — the uplift no longer advances the degree set |
+| A50 → 4/5 | keep — this is the live one | 3/5 today, unmoved since the 12-07 baseline; WS2.3 is its direct feed, **after** the §14 resolver probe |
+| ≥4 analytical dashboard pages | keep, **conditional** on refreshing the machine feed first | the pages render from `stats_census_register.csv`, stale since 12–18-07-2026 and wrong in three rows |
+| FAIR release #2 | **hold** | blocked by [CONTRADICTIONS §17](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) — a human decides the rights posture first |
+
+**Sequencing note (the one re-ordering that matters).** WS2.3 must follow the
+[CONTRADICTIONS §14](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+probe, not precede it: MW resolves to **5 coarse placeholder nodes** in the `<ls>` graph while
+PWG contributes **536,172 of 828,505** resolved citations (64.7 %), so any centrality,
+co-citation or community statistic computed on the graph as it stands measures resolver
+coverage as much as canon shape — and would have to be recomputed after the 10-dict (or
+apparatus-fed) re-run lands.
 
 ### Q3 · Jan–Mar 2027 — "Publishable-novel + open the product stream"
 
@@ -287,16 +323,38 @@ per the shared-tree guard.
 
 | KPI | Baseline (12-07-2026) | Target (30-06-2027) |
 |---|--:|--:|
-| Statistics register ✅ | ~28 / 48 (~58 %) | 48 / 48 (100 %) |
+| Statistics register ✅ ⚠️ **denominator disputed** — see note below | ~28 / 48 (~58 %) | 48 / 48 (100 %) |
 | Live dashboard stat-pages | 0 dedicated | ~20 (all 7 layers) |
 | FAIR datasets with DOIs | 0 | ~15 (every derived stat dataset) |
 | Single-copy giants backed up | 0 / 1 genuine | 1 / 1 |
 | Papers advanced | A40 4/5 · A50 3/5 · A08 4/5 | A40 5/5 · A50 4/5 · A08 5/5 · ≥1 new |
 
+**⚠️ The register KPI has no denominator of record (01-09-2026, H3793).** The register is
+counted three ways and none agrees: this file's Part 0 scoreboard prose says ~48 (~32 ✅ · ~6 ◐
+· ~10 ○), the KPI row above says 48, and the machine feed
+[`stats_census_register.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/stats_census_register.csv)
+— the only machine-readable surface, and the one the public dashboard pages render from —
+carries **59 rows (42 done · 8 partial · 9 not_started)**. A percentage cannot be reported
+until one is adopted; the feed's 59 is the only candidate a script can recompute. The feed is
+also stale (stamped 12–18-07-2026) and understates three rows: L1 definition typology reads
+`not_started` though it is ◐ over all 44 dicts, and L2 paradigm-cell coverage and L3
+POS-per-text read `partial` though both are ✅ since H817/H1524.
+
 **Risks & mitigations.**
 
-- **Backup gap (highest).** `corpus_lexicon.jsonl` is single-copy and not rebuildable —
-  Q1-WS1.1, MG-gated (H235). Everything else in §2 regenerates from git-tracked sources.
+- ~~**Backup gap (highest).** `corpus_lexicon.jsonl` is single-copy and not rebuildable —
+  Q1-WS1.1, MG-gated (H235).~~ **✅ CLOSED — verified 01-09-2026 (H3793).** The file is
+  **three-copy**: a git-tracked twin in `pwg-ru-data` (H3316), a `D:\Backups` mirror (H1998),
+  and a digest-verified off-machine copy at `samskrtam.ru/guhya`
+  ([H3389](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3389-OxAlpha_Uprava_kosha-guhya-restricted-backup-upload_23.08.26.md);
+  restore rehearsed in 43 s, sha256 triple-match), recorded in
+  [SHADOW_ASSETS_POINTERS.md](https://github.com/gasyoun/Uprava/blob/main/SHADOW_ASSETS_POINTERS.md).
+  Q2 does not inherit this risk. Everything else in §2 regenerates from git-tracked sources.
+- **Rights posture is stated two ways (new, 01-09-2026).** A repo-wide Zenodo/GitHub
+  integration is live and minting while `DATA_LICENSE.md` and `data/FAIR_RELEASE_1.md` both say
+  it is deliberately not used —
+  [CONTRADICTIONS §17](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
+  Not a stop for measurement work; it does hold WS2.5 until a human settles it.
 - **Salami / self-overlap.** The analytical layer feeds A40/A50/A08; enforce the ARTICLES
   anti-salami discipline — a statistic feeds the paper that already owns its question.
 - **Product stream gated on creds.** Systema DB env + Telegram harvest depend on host
@@ -311,6 +369,8 @@ per the shared-tree guard.
 
 ## Related
 
+- [`Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md) — the Q1→Q2 quarter-boundary pass: Q1 delivery per register, the Q2 analytical layer against Part I's gaps, and the contradictions carried forward
+- [`CONTRADICTIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) — §10–§14 and §17, the figure and posture disagreements this roadmap's numbers inherit
 - [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md) — what assets exist (the register's asset IDs)
 - [`DATA_LAYERS_CENSUS.md`](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md) — what data sits uncounted on disk (the §3 stats-to-add table this roadmap operationalizes)
 - [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) — the publications / evidence-graph programme this feeds

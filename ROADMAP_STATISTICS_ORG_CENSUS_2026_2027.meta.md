@@ -1,6 +1,6 @@
 # ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.meta.md — metadoc for `ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md`
 
-_Created: 18-07-2026 · Last updated: 24-07-2026_
+_Created: 18-07-2026 · Last updated: 01-09-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md).
@@ -29,16 +29,27 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
 
 | # | Improvement | Why | Status |
 |---|---|---|---|
-| 1 | L1 "Definition typology (synonym vs equivalent vs encyclopedic)" — ◐ first-pass (H1483, 24-07-2026) | Flagged as an "ATLAS_FAIR micro-gap"; first-pass rubric + 15-dict distribution + gold 63/79=79.7% now in `data/DEFINITION_TYPOLOGY_WS2_4_2026.md` | first-pass landed; double-key 300×7 pool + Wilson `E.` peel still open |
+| 0 | **Adopt one denominator for the register, and refresh the machine feed** (01-09-2026, H3793) | The subject is counted three ways — Part 0 prose ~48, Part IV KPI 48, and the machine feed [`stats_census_register.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/stats_census_register.csv) **59** — so the KPI percentage is not computable. The feed is also stale (12–18-07-2026) and understates three rows. It is the surface the public dashboard pages render from. | **open — highest-value; it is the Q2 entry condition** |
+| 1 | L1 "Definition typology (synonym vs equivalent vs encyclopedic)" — ◐ (H1483, 24-07-2026) | Flagged as an "ATLAS_FAIR micro-gap". **Superseded twice:** first pass 15 dicts / 926,759 records / gold 63/79 = 79.7 %; current committed `--all` table 44/44 dicts / 1,496,157 records / gold **55/79 = 69.6 %** in [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md). The subject's Part II quoted the superseded wave until 01-09-2026 | all-dict pass landed; double-key 300×7 pool + Wilson `E.` peel + sense-level split still open — only the pool yields a citable precision |
 | 2 | L2 "Form→lemma ambiguity rate" — ○ not started | Named directly in the subject's L2 table as the one remaining morphology-layer gap | parked — no handoff minted yet |
 | 3 | L3 "Meter / prosody statistics" — ○ not started | Named in the subject's L3 table; natural home is SanskritKaraoke per the "Where" column | parked — no handoff minted yet, likely SanskritKaraoke-side work |
 | 4 | L3 "Vedic accent coverage" — ○ not started, pending VedaWeb reuse | Explicitly gated on VedaWeb M13 in the subject's own table | parked — depends on [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md) Phase 2/6 landing first |
 
 ## Known limitations / caveats
-- Only Part 0 (L1–L3 of 7 layers) was read closely when this metadoc was authored — L4–L7
-  (translation, review/QA, publication, and any further layers) exist in the doc but were not
-  individually audited here; a future metadoc pass should extend the backlog once those
-  sections are read.
+- ~~Only Part 0 (L1–L3 of 7 layers) was read closely when this metadoc was authored~~ —
+  **closed 01-09-2026 (H3793):** all seven registers were audited against live artifacts at the
+  Q1→Q2 quarter boundary; the per-register delivery statement is
+  [`Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md).
+- **Two register rows are capped, not pending** — sense/polysemy (11/44 dicts; the other 33
+  carry no structural sense markers) and corpus root-class (accent collapse). The subject's
+  contract "drive every ○ and ◐ to ✅" is unachievable as written; the register needs a
+  **capped** status distinct from **partial**.
+- **The subject's figures inherit live disagreements.**
+  [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  §11 (kosha.db build drift, L2) and §13 (`corpus_lexicon` rows, L4) are 🔴 unresolved, and
+  §14 (MW resolves to 5 placeholder nodes in the `<ls>` graph) gates the Q2 network-statistics
+  workstream. §10 and §12 were **ruled** 26-08-2026 — cite 323,425 and name the pipeline stage
+  for the Petersburg naive sum.
 - Counts in the register are dated "as of the 06–12-07-2026 census re-measure" per the doc's
   own caveat — re-verify before citing in a paper if it has been more than a few weeks.
 - This doc is explicitly **not** the publications roadmap (that's
@@ -74,5 +85,6 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
 | Date | Event | Who |
 |---|---|---|
 | 18-07-2026 | Metadoc created (backfill sweep) | Sonnet 5 (`claude-sonnet-5`), H968 |
+| 01-09-2026 | Q1→Q2 quarter-boundary pass: all seven registers audited against live artifacts; backlog row 0 added (register denominator + stale machine feed); L1 typology row corrected to the superseding all-dict wave; capped-vs-partial and the inherited contradictions recorded | Opus 5 (`claude-opus-5[1m]`), H3793 |
 
 _Dr. Mārcis Gasūns_
