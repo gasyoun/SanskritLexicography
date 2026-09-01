@@ -114,6 +114,44 @@
     },
     "stale": 0
    }
+  },
+  {
+   "date": "2026-09-01",
+   "source": "build",
+   "metrics": {
+    "dcs_cdsl_linkage_pct": 81.4,
+    "glossary_vidyut_coverage_pct": null,
+    "pwg_citation_coverage_pct": 83.6,
+    "queue_verdicts": {
+     "PASS": 139,
+     "DROP": 1,
+     "SCAN-FIRST": 43,
+     "EDITORIAL": 16,
+     "DNF": 1
+    },
+    "queue_pass_by_dict": {
+     "SHS": 53,
+     "YAT": 32,
+     "ACC": 17,
+     "PWG": 14,
+     "MCI": 10,
+     "SKD": 4,
+     "WIL": 5,
+     "PW": 1,
+     "VCP": 1,
+     "GST": 2
+    },
+    "queue_decay_pct": 0.5
+   },
+   "registry": {
+    "total": 277,
+    "by_importance": {
+     "2": 137,
+     "1": 32,
+     "3": 108
+    },
+    "stale": 0
+   }
   }
  ]
 }

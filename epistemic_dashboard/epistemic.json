@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-31T06:33:27Z",
+ "generated_at": "2026-09-01T19:07:49Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 275,
+  "total": 277,
   "by_importance": {
-   "3": 106,
+   "3": 108,
    "2": 137,
    "1": 32
   },
   "by_origin": {
    "auto": 0,
-   "human": 275
+   "human": 277
   }
  },
  "layers": [
@@ -101,15 +101,15 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 16,
+   "total": 17,
    "by_importance": {
-    "3": 2,
+    "3": 3,
     "2": 10,
     "1": 2
    },
    "by_origin": {
     "auto": 0,
-    "human": 16
+    "human": 17
    },
    "categories": 3,
    "interlinks": 6,
@@ -209,6 +209,12 @@
      "importance": null,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#16-style-guide-122-says-never-translate-an-apparatus-span-the-independent-gate-rewards-translating-one-because-the-span-is-a-clause-fragment-and-not-apparatus"
+    },
+    {
+     "title": "§17. Repo-wide Zenodo archival: two governance docs say it is deliberately NOT used; the committed configuration says it is live and has minted 143 times",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#17-repo-wide-zenodo-archival-two-governance-docs-say-it-is-deliberately-not-used-the-committed-configuration-says-it-is-live-and-has-minted-143-times"
     }
    ]
   },
@@ -655,19 +661,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 194,
+  "rows": 195,
   "auto": 120,
-  "human": 74,
+  "human": 75,
   "by_importance": {
-   "3": 26,
+   "3": 27,
    "2": 39,
    "1": 12
   },
   "layers": 7,
-  "entry_rows": 80,
+  "entry_rows": 81,
   "candidates": 6,
   "categories": 21,
   "interlinks": 62,
-  "findings": 275
+  "findings": 277
  }
 }
