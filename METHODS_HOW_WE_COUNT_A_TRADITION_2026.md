@@ -1,6 +1,6 @@
 # How we count a tradition — counting conventions of the Sanskrit lexicographic corpus
 
-_Created: 31-07-2026 · Last updated: 31-07-2026_
+_Created: 31-07-2026 · Last updated: 01-09-2026_
 
 **What this is.** The org publishes counts of dictionaries, headwords, entries, lemmas,
 senses, citations and corpus attestations across papers (A01–A58), the book
@@ -250,7 +250,7 @@ rows rather than picked between.
 | 12 | Apte key1 | **88,869** · 88,867 | Two-headword edit between extraction runs; census table authoritative; the open gate (pin a csl-orig SHA) is tracked at ch03 §2.4/A40 §2. |
 | 13 | SCH | 28,519 · 28,455 · 28,431 | key2 (§2.3) · entries ([RussianTranslation/DICTIONARY_CHAIN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DICTIONARY_CHAIN.md)) · union-contributing keys (§2.4). |
 | 14 | kosha.db inflections / tables | 6,917,018 (10 tables) · 6,916,522 (8 tables) | **Manifest and live-build census describe different builds under one name → §11.** |
-| 15 | corpus_lexicon rows | 1,093,391 · 1,091,528 | **Unexplained 1,863-row gap (hub/roadmap vs [A42](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A42_corpus_lexicon_resource.md)) → §13.** |
+| 15 | corpus_lexicon rows | **1,093,391** · 1,091,528 | **RECONCILED 01-09-2026 (H3793) — two builds, not a gap.** 1,091,528 = the 2026-06-26 recompute; **1,093,391** = the post-[H309](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H309-Sonnet_RussianTranslation_corpus-lexicon-reharvest-gaps_07.07.26.md) targeted re-harvest of 08-07-2026 (+1,863 rows over a 780-group population — the difference is exactly 1,863). Measured Tier 1 on the canonical file: 1,093,391 records, 0 blank lines, terminating newline present, `sha256:9f3d852f…` matching the LFS oid §13 had recorded. **Count of record 1,093,391 — name the build.** This row's own "unexplained" verdict was the error: [A42](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A42_corpus_lexicon_resource.md) states the reconciliation in its `data_source:` front-matter and claims-table row 2. [CONTRADICTIONS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) ✅ ruled. |
 | 16 | MW record count | 286,561 · 286,560 · 286,525 | C7 row 1 — snapshot-pinned, all three canonical for their commit; conflation forbidden. |
 
 ---
@@ -264,6 +264,19 @@ logs a contradiction rather than choosing:
 **§12** (Petersburg naive sum 285,799 vs 285,950), **§13** (corpus_lexicon 1,093,391 vs
 1,091,528) — filed in the same pass as this report, with a kosha `[integrity]` issue for
 the two kosha-owned rows.
+
+**Three of the four have since been ruled, and only §11 remains unreconcilable.** §10 and
+§12 were ruled 26-08-2026 (H3538) — both pairs true under different scopes/stages. **§13 was
+ruled 01-09-2026 (H3793) by direct measurement of the canonical file: 1,093,391 records, the
+two figures being the 2026-06-26 recompute and the post-H309 re-harvest.** §11 stays 🔴,
+awaiting one dated `kosha.db` rebuild with per-table `COUNT(*)`.
+
+**A caution this section earned.** §13 was filed as an *unexplained* gap when the losing
+witness, [A42](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A42_corpus_lexicon_resource.md),
+carried the reconciliation in its own front-matter and claims table. Two published figures
+differing is not yet a contradiction: **read each witness's own provenance block first**, and
+file only what survives that read. A pair logged as unreconcilable costs future sessions real
+probe effort, so the bar for filing one is the same bar as for ruling one.
 
 ## 5. Known stale surfaces (queued fixes, out of this report's scope)
 

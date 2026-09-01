@@ -1,6 +1,6 @@
 # RECIPES — reproduction recipes for the Sanskrit-data findings & datasets
 
-_Created: 08-07-2026 · Last updated: 26-08-2026_
+_Created: 08-07-2026 · Last updated: 01-09-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS cites *a number*; this file holds the act it cannot: **reproducing** — the exact runnable path back to that number. One recipe per derived dataset or heavy FINDINGS row, so a fact can be re-checked rather than trusted. This is what [`STALENESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md)'s "Re-check recipe" column points at. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/RECIPES.md`](https://github.com/gasyoun/Uprava/blob/main/RECIPES.md).
 
@@ -45,7 +45,7 @@ Env/runtime: Python, offline once DCS CoNLL-U + CDSL keys are local; it is a LOD
 
 ### §3. DeepSeek word-alignment grounding cross-check (6.6% ungrounded) → reproduce
 🟠 ✍️ (reproduces [FINDINGS §65](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#65-66--of-the-deepseek-corpus-word-alignments-ground-to-nothing-in-their-verse))
-Inputs: `corpus_lexicon.jsonl` (1,091,528 word-pairs — GITIGNORED, single copy on MG disk), L0 verse units rebuilt by [`src/build_l0.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_l0.py) (99,733 units / 116 works) from SamudraManthanam.
+Inputs: `corpus_lexicon.jsonl` (1,091,528 word-pairs **at the 2026-06-26 build this recipe was run on**; the current post-H309 build holds **1,093,391** — [CONTRADICTIONS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) ✅ ruled 01-09-2026, so re-running this recipe today measures the larger population — GITIGNORED, and **no longer single-copy**: three copies incl. one digest-verified off-machine, see [SHADOW_ASSETS_POINTERS.md](https://github.com/gasyoun/Uprava/blob/main/SHADOW_ASSETS_POINTERS.md)), L0 verse units rebuilt by [`src/build_l0.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_l0.py) (99,733 units / 116 works) from SamudraManthanam.
 Command: [`src/tm_align.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_align.py) cross-checks each pair against its L0 verse; feed `alignment_confidence` into [`tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py).
 Expected: mean grounding 0.684, 93.4% grounded, 6.6% score 0; grade A 5.7%→5.3%, C 0.3%→0.9% — ties back to FINDINGS §65.
 Env/runtime: Python, offline; corpus_lexicon is restricted-tier (published-RU-translation rights), regenerable via `build_corpus_lexicon.py` but single-copy.
