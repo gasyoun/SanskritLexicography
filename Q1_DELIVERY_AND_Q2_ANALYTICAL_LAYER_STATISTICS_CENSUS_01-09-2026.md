@@ -115,9 +115,12 @@ agreement κ (◐ — two-judge design exists, κ never reported). **κ is the h
 two** because it is the only rows in this register that would let a paper state a reliability
 figure, and it is cheap: the judge outputs already exist.
 
-**Blocked.** The `corpus_lexicon` row count is **CONTRADICTIONS §13** (1,093,391 vs
-1,091,528, a 1,863-row gap) — 🔴 unresolved, INCONCLUSIVE 26-08-2026 because the canonical
-file is a git-LFS pointer on this box. See §6.
+**~~Blocked~~ — unblocked the same day.** The `corpus_lexicon` row count was
+**CONTRADICTIONS §13** (1,093,391 vs 1,091,528). **Ruled 01-09-2026 by direct measurement:**
+the canonical file is no longer an LFS pointer, hashes to the exact oid §13 had recorded, and
+holds **1,093,391** records. The two figures are two *builds* — the 2026-06-26 recompute and
+the post-H309 re-harvest of 08-07-2026 (+1,863 rows). L4 velocity and coverage-trajectory work
+may proceed on 1,093,391, naming the build. See §6.
 
 ### L5 · Roots & etymology
 
@@ -383,8 +386,14 @@ were filed) and what it forbids.
 | **§10** | Union headwords **323,425** vs 323,426 | ✅ **RULED 26-08-2026** (H3538, Tier 1) — both true under different scopes; line 1 of `union_headwords.tsv` is a column header, so data rows = 323,425. **The headword count of record is 323,425.** | Do not cite kosha-side prose that still reads 323,426 as a headword count. The residual is a kosha `[integrity]` wording fix, not a re-measurement. |
 | **§11** | kosha.db manifest build vs live-build census (496-row inflection gap; `heritage_anchor` present in one, absent in the other) | 🔴 **unresolved**; adjudicated **INCONCLUSIVE** 26-08-2026 — no kosha.db build exists on this box to measure | Do not publish an L2 morphology statistic that names "kosha.db" without naming *which build*. METHODS §2.8's rule ("a kosha.db count names its build") is currently impossible to follow, and an analytical layer that averages the two builds would erase the disagreement. Discriminating act: one dated `scripts/build_db.py` rebuild with per-table `COUNT(*)` published. |
 | **§12** | Petersburg naive sum **285,799** vs 285,950 | ✅ **RULED 26-08-2026** (H3538, Tier 1) — both are exact naive sums of the same now-2026 lists at **two pipeline stages**; the 151-row gap is the union build's key collapse (PWG −28, PWK −35, SCH −88) | Cite 285,799 beside union/de-dup figures and 285,950 when counting raw export lines — and **name the stage either way**. The "+70.2 % inflation" headline is only readable with the stage named. |
-| **§13** | `corpus_lexicon` rows **1,093,391** vs 1,091,528 | 🔴 **unresolved**; INCONCLUSIVE 26-08-2026 — the canonical file is a 134-byte git-LFS pointer locally | Do not build an L4 translation-velocity or coverage-trajectory statistic on either figure without stating which. **Now cheap to settle:** the off-machine `samskrtam.ru/guhya` copy (H3389, sha256 triple-match) is a third witness that did not exist when §13 was adjudicated — one `wc -l` against it decides the count of record. Filed as a residual in §8. |
+| **§13** | `corpus_lexicon` rows **1,093,391** vs 1,091,528 | ✅ **RULED 01-09-2026, this pass, Tier 1 (measured)** — two *builds*, not a gap: 1,091,528 = the 2026-06-26 recompute, **1,093,391** = the post-H309 re-harvest of 08-07-2026, +1,863 rows over a 780-group population. The canonical file is no longer an LFS pointer; both local copies are byte-identical and hash to `sha256:9f3d852f…`, the exact oid §13 itself recorded, holding 1,093,391 records with 0 blank lines and a terminating newline (so no `wc -l` off-by-one) | Cite **1,093,391** and **name the build**. A pre-H309 analysis keeps 1,091,528 *provided it says so* — the L4 coverage findings were genuinely computed on the older build and now carry that stamp. L4 velocity work is unblocked. **And a caution:** §13 was filed as an *unexplained* gap while A42 — the witness filed as losing — documented the reconciliation in its own front-matter and claims table. Read the losing witness's provenance block before filing a pair as unreconcilable. |
 | **§17** | Whole-repo Zenodo integration **live** vs `DATA_LICENSE.md` + `FAIR_RELEASE_1.md` saying it is *deliberately not used* | 🔴 **new, opened this pass** | Do not mint FAIR release #2 DOIs while the repository's rights posture is stated two ways in committed files. Human decision, not an agent ruling. |
+
+**Update, same day: §13 is ruled.** It was settled a few hours after this document first
+shipped, by the probe named in its own row — which is the point of naming the discriminating
+act rather than logging a dispute. Of the five rows, **§11 is now the only one still 🔴 on
+measurement grounds** (it needs one dated `kosha.db` rebuild), and §17 is 🔴 on a decision a
+human owns. Three (§10, §12, §13) are ruled.
 
 **Why this table is here rather than in a footnote.** Three of the five rows constrain a
 specific Q2 workstream (§11 → WS2.2's morphology inputs, §13 → WS2.1/L4 trajectories,
@@ -409,10 +418,11 @@ Q2 page should print. Carrying them as prose in a preamble is how they get paper
 
 | Residual | Where it belongs | Cost |
 |---|---|---|
-| Refresh `stats_census_register.csv`: 3 status corrections + restamp `as_of_date` + adopt 59 as the count of record | csl-observatory (Q2 entry condition §4.1) | small, mechanical |
+| ~~Refresh `stats_census_register.csv`: 3 status corrections + restamp `as_of_date` + adopt 59 as the count of record~~ | ✅ **DONE 01-09-2026** — [csl-observatory#199](https://github.com/sanskrit-lexicon/csl-observatory/pull/199), released `v1.13.2`; register now 44 done · 7 partial · 8 not_started. `capped` recorded as prose, not a fourth status value | — |
 | Form→lemma ambiguity rate (L2) — never had a handoff | descriptive residual, not Q2 | unscoped |
 | Translation velocity + QA-judge κ (L4) | descriptive residual, not Q2; κ is the cheap half | small (κ), medium (velocity) |
-| Settle §13 with a `wc -l` against the `samskrtam.ru/guhya` copy | unblocks L4 trajectories | trivial once the copy is reachable |
+| ~~Settle §13~~ | ✅ **DONE 01-09-2026** — ruled by direct measurement of the canonical file (1,093,391 records, sha256-matched to §13's own oid); two builds, not a gap. Losing witnesses in FINDINGS / RECIPES / the RU deep manual now carry their build stamp | — |
+| **A42 leads with the superseded 1,091,528** in its abstract, title figure and §data table while its own front-matter and claims row 2 carry 1,093,391 | **human-gated** — which figure a paper leads with is authorial, not an agent's call; no urgency under the article-submit freeze to 2026-11-01 | small, but not ours |
 | Settle §11 with one dated `kosha.db` rebuild + per-table `COUNT(*)` | unblocks L2 statistics and METHODS §2.8 | small, kosha-side |
 | Sequence the §14 MW-resolver probe (10-dict re-run or apparatus-fed MW) **before** WS2.3 | Q2 WS2.3 precondition | medium |
 | Add a **capped** status distinct from **partial** to the register | Q2 entry condition §4.4 | small |
