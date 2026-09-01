@@ -2,7 +2,7 @@
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix
 
-_Created: 12-07-2026 · Last updated: 29-07-2026_
+_Created: 12-07-2026 · Last updated: 01-09-2026_
 
 > **What this is.** A plan to build the Sanskrit analog of Duden's *Sprache in Zahlen* — the
 > quantitative "language in numbers" appendix that closes the [Duden Universalwörterbuch](https://www.duden.de/)
@@ -152,13 +152,20 @@ Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-S
   tatpuruṣa/bahuvrīhi split is explicitly NOT auto-classified (would risk fabricated percentages)
   and is left as a flagged follow-up with a hand-typing sample included.
 
-### Wave 2 — The RU portrait (gates on wave 1 + Manual home)
+### Wave 2 — The RU portrait (gates on wave 1 + Manual home) — ✅ RU source text DONE 01-09-2026; renders remain
 *Unblocked by:* all 10 module datasets; confirmation of the Manual repo/build (see §8).
 
 - Assemble the 10 modules into the **«Санскрит в цифрах»** page: RU prose in the *Sprache in
   Zahlen* register (a question header per module, a chart, a trust block: source · n · date).
+  **Shipped 01-09-2026** under [H3792](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3792-Fable_SanskritLexicography_sanskrit-in-numbers-w2-ru-portrait_31.08.26.md)
+  (Fable 5 `claude-fable-5`): [`papers/sanskrit_in_numbers/WAVE2_PORTRAIT_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/sanskrit_in_numbers/WAVE2_PORTRAIT_RU.md)
+  — all 10 modules, a question header + trust block each, every number traced to its module
+  dataset; written **home-agnostically** because the §8 Manual-home `@DECIDE` is still open
+  (the fork is surfaced in the portrait's §11, not settled).
 - Two renders from one source: an interactive **web page for samskrte.ru** and a **print PDF
-  booklet** sized as an appendix to the Gasuns Sanskrit Manual.
+  booklet** sized as an appendix to the Gasuns Sanskrit Manual. **Still owed** — the PDF
+  render gates on the §8 Manual-home `@DECIDE`; the web render belongs to wave 4's
+  publish gate.
 
 ### Wave 3 — EN + DE + monograph appendix (gates on wave 2)
 *Unblocked by:* the frozen RU portrait.
