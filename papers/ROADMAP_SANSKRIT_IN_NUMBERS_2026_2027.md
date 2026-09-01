@@ -2,7 +2,7 @@
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix
 
-_Created: 12-07-2026 · Last updated: 01-09-2026_
+_Created: 12-07-2026 · Last updated: 01-09-2026 (H3825: wave-2 print booklet shipped)_
 
 > **What this is.** A plan to build the Sanskrit analog of Duden's *Sprache in Zahlen* — the
 > quantitative "language in numbers" appendix that closes the [Duden Universalwörterbuch](https://www.duden.de/)
@@ -164,11 +164,18 @@ Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-S
   dataset; written **home-agnostically** because the §8 Manual-home `@DECIDE` is still open
   (the fork is surfaced in the portrait's §11, not settled).
 - Two renders from one source: an interactive **web page for samskrte.ru** and a **print PDF
-  booklet** sized as an appendix to the Gasuns Sanskrit Manual. **Still owed but unblocked**
-  (01-09-2026, ruling D7): the booklet's home is the private
-  [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual) repo
-  (Pandoc → XeLaTeX toolchain proposed in its README); the web render belongs to wave 4's
-  publish gate.
+  booklet** sized as an appendix to the Gasuns Sanskrit Manual.
+  - **Print booklet — SHIPPED 01-09-2026** under
+    [H3825](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3825-Opus_gasuns-sanskrit-manual_sanskrit-in-numbers-pdf-booklet-render_01.09.26.md)
+    (Opus 5 `claude-opus-5`), in the private
+    [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual) repo the D7
+    ruling gave it: 9 pages B5, one command (`make` / `./build.ps1`), release
+    [v0.1.0](https://github.com/gasyoun/gasuns-sanskrit-manual/releases/tag/v0.1.0). The
+    proposed Pandoc → XeLaTeX toolchain is no longer a proposal — it is built and documented
+    (the org's first LaTeX/PDF build). The portrait source stays here as the source of record;
+    the booklet repo holds a byte-identical copy whose divergence is caught mechanically by
+    `make check-source`.
+  - **Web render — still owed**, and it belongs to wave 4's publish gate, not here.
 
 ### Wave 3 — EN + DE + monograph appendix (gates on wave 2)
 *Unblocked by:* the frozen RU portrait.
