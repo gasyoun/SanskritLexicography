@@ -1,6 +1,6 @@
 # Q1 delivery and the Q2 analytical layer — organisation statistics census, quarter boundary 01-09-2026
 
-_Created: 01-09-2026 · Last updated: 01-09-2026_
+_Created: 01-09-2026 · Last updated: 02-09-2026_
 
 **What this is.** The quarter-boundary pass on
 [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md):
@@ -422,7 +422,7 @@ Q2 page should print. Carrying them as prose in a preamble is how they get paper
 | Form→lemma ambiguity rate (L2) — never had a handoff | descriptive residual, not Q2 | unscoped |
 | Translation velocity + QA-judge κ (L4) | descriptive residual, not Q2; κ is the cheap half | small (κ), medium (velocity) |
 | ~~Settle §13~~ | ✅ **DONE 01-09-2026** — ruled by direct measurement of the canonical file (1,093,391 records, sha256-matched to §13's own oid); two builds, not a gap. Losing witnesses in FINDINGS / RECIPES / the RU deep manual now carry their build stamp | — |
-| **A42 leads with the superseded 1,091,528** in its abstract, title figure and §data table while its own front-matter and claims row 2 carry 1,093,391 | **human-gated** — which figure a paper leads with is authorial, not an agent's call; no urgency under the article-submit freeze to 2026-11-01 | small, but not ours |
+| ~~**A42 leads with the superseded 1,091,528**~~ | ✅ **DONE 02-09-2026** — put to a human as an authorial choice; **MG ruled «count of record»**, so A42's abstract, claim 1, §4.1 headline row and claims-table row 2 now lead with **1,093,391**. The §4.1–§4.3 distributions stay at the 1,091,528-row build and are labelled: the `kind` split sums to *that* build, and rescaling a distribution to a total it was never computed over would manufacture a subtler inconsistency than the one being fixed | — |
 | Settle §11 with one dated `kosha.db` rebuild + per-table `COUNT(*)` | unblocks L2 statistics and METHODS §2.8 | small, kosha-side |
 | Sequence the §14 MW-resolver probe (10-dict re-run or apparatus-fed MW) **before** WS2.3 | Q2 WS2.3 precondition | medium |
 | Add a **capped** status distinct from **partial** to the register | Q2 entry condition §4.4 | small |

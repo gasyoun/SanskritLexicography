@@ -5,12 +5,12 @@ status: draft (skeleton, 3/5) — scaffolded 2026-06-26, advanced 2026-07-08 (H3
 readiness: 3/5
 venue: "Письменные памятники Востока / Вопросы языкознания (ВЯ) / CLARIN-LRE / ComputEL / LoResMT (added 04-07-2026, ACL Anthology scan — both live, on-topic for low-resource classical-language alignment)"
 author: "Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru — venue + byline to confirm (a human decides)"
-data_source: "RussianTranslation/src/corpus_lexicon.jsonl (built & verified; 1,091,528 alignments at the 2026-06-26 recompute; 1,093,391 after the H309 targeted re-harvest of 08-07-2026) — evaluation figures from RussianTranslation/gold/PR_MEMO_A42.md (P 84.4% / R 95.4% / coverage 98.9%, LLM-estimated, human packets pending)"
+data_source: "RussianTranslation/src/corpus_lexicon.jsonl — headline count of record 1,093,391 alignments (shipped build, after the H309 targeted re-harvest of 08-07-2026); the §4.1–§4.3 distributional breakdowns describe the earlier 1,091,528-row build of 2026-06-26 and are labelled as such. Both figures verified against the file 01-09-2026 (sha256 9f3d852f…, 1,093,391 records) — CONTRADICTIONS §13 ruled. Evaluation figures from RussianTranslation/gold/PR_MEMO_A42.md (P 84.4% / R 95.4% / coverage 98.9%, LLM-estimated on the 2026-06-26 build, human packets pending)"
 ---
 
 # A Word-Aligned Sanskrit→Russian Corpus Lexicon: a 1.09-Million-Pair Open Alignment Resource
 
-_Created: 26-06-2026 · Last updated: 08-08-2026_
+_Created: 26-06-2026 · Last updated: 02-09-2026_
 
 > **Draft status (2026-07-08, H353; scaffolded 2026-06-26).** Manuscript skeleton built
 > directly on the verified data asset
@@ -41,14 +41,17 @@ _Created: 26-06-2026 · Last updated: 08-08-2026_
 
 ## Abstract
 
-We present a word-aligned Sanskrit→Russian lexicon of **1,091,528 token-pair
+We present a word-aligned Sanskrit→Russian lexicon of **1,093,391 token-pair
 alignments** drawn from **116 works** spanning roughly **−1125 to 1374 CE**, the
 first large, openly-documented Sanskrit-to-Russian alignment resource. Each
 alignment records a Sanskrit content word (in SLP1 and IAST surface form) and the
 Russian word or phrase that renders it *in a specific translated passage*, stamped
 with the work's period, genre, and median date, and tagged by whether the Russian
 evidence is a running **translation** (990,499 rows, 90.7%) or a **commentary** note
-(101,029 rows, 9.3%). The resource is *induced*, not hand-aligned: for each
+(101,029 rows, 9.3%). The distributional breakdowns in §4.1–§4.3, including that
+translation/commentary split, describe the **1,091,528-row build of 2026-06-26**; the
+shipped build adds **+1,863** rows confined to one Medieval-commentary re-harvest
+population (§4, H309) and moves no figure below materially. The resource is *induced*, not hand-aligned: for each
 verse-aligned Sanskrit↔Russian pair in an existing parallel corpus, a large language
 model is prompted, under a strict JSON contract and a Cyrillic-presence guard, to
 emit the per-word renderings attested in that translation; a length-preserving SLP1
@@ -86,7 +89,7 @@ example `agni` renders as the proper name *Агни* 1,111 times and as the comm
 
 Our claims:
 
-1. **A first large, open Sa→Ru alignment resource.** 1,091,528 word-pair
+1. **A first large, open Sa→Ru alignment resource.** 1,093,391 word-pair
    alignments over 116 works, openly documented and reproducible from committed code.
 2. **Diachronically and generically stratified.** Every row carries period, genre,
    and median-date stamps and a translation-vs-commentary tag, so the resource
@@ -247,13 +250,19 @@ stratum and does not materially move any figure below.
 
 | quantity | value |
 |---|--:|
-| token-pair alignments (rows) | **1,091,528** |
+| **token-pair alignments (rows), shipped build** | **1,093,391** |
+| — of which measured in the breakdowns below (2026-06-26 build) | 1,091,528 |
 | distinct works | **116** |
 | distinct SLP1 keys (Sanskrit side) | **190,838** |
 | distinct Russian renderings | **253,275** |
 | `kind = translation` | **990,499** (90.7%) |
 | `kind = commentary` | **101,029** (9.3%) |
 | date span (per-row `date`, CE) | **−1125 … 1374** |
+
+The two row-count lines are one file at two builds, not two populations: the
+`kind` split and every distributional figure in §4.1–§4.3 sums against the
+1,091,528-row measurement and is left at it deliberately, rather than being
+rescaled to a total it was not computed over.
 
 ### 4.2 Diachronic and generic distribution
 By period: Epic / early-Classical **769,971** · Ṛgvedic **156,748** · Vedic
@@ -484,8 +493,8 @@ flagged as such):
 
 | # | Claim | Figure(s) | Artifact | Status |
 |--:|---|---|---|---|
-| 1 | Scale and shape (rows, works, keys, kind split, date span) | 1,091,528 rows · 116 works · 190,838 keys · 90.7%/9.3% · −1125…1374 | `corpus_lexicon.jsonl` (gitignored) via [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) `status` | ⚠️ regenerable, not committed (size + rights); recomputed 2026-06-26 |
-| 2 | Post-H309 build size | 1,093,391 rows (+1,863 in the 780-group re-harvest population) | [PR_MEMO_A42.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/PR_MEMO_A42.md) + [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) affected-group census | ✅ committed |
+| 1 | Scale and shape — **distributional breakdowns** (works, keys, kind split, date span) | over 1,091,528 rows · 116 works · 190,838 keys · 90.7%/9.3% · −1125…1374 | `corpus_lexicon.jsonl` (gitignored) via [build_corpus_lexicon.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) `status` | ⚠️ regenerable, not committed (size + rights); recomputed 2026-06-26 — **deliberately not rescaled** to the shipped total it was not computed over |
+| 2 | **Headline row count (count of record)** | **1,093,391 rows** — the shipped post-H309 build (+1,863 over row 1, all inside a 780-group re-harvest population) | measured directly on the file 01-09-2026: 1,093,391 records, 0 blank lines, terminating newline present, `sha256:9f3d852f…` matching the oid recorded in [CONTRADICTIONS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md); corroborated by [PR_MEMO_A42.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/PR_MEMO_A42.md) + [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) affected-group census | ✅ committed; **§13 ruled 01-09-2026** — this is the figure the abstract and §4.1 now lead with (MG, 02-09-2026) |
 | 3 | Precision 84.4% (CI 80.0–87.9), n=320, stratified period×kind, seed 42 | §4.4 | [precision_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/precision_report.md) + frozen [gold_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl) | ✅ committed; ⬜ LLM-judged, human packets pending |
 | 4 | Word-level recall 95.4% (CI 92.2–97.3), n=280 translated lemmata (287 sampled) / 32 groups, seed 42 | §4.5 | [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) + frozen [recall_set.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_set.jsonl) | ✅ committed; ⬜ LLM-adjudicated, human spot-check pending |
 | 5 | Medieval recall 84.0% → 95.1% after the targeted H309 re-harvest (same 8 frozen groups) | §4.5 | [recall_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/recall_report.md) re-measurement table | ✅ committed |

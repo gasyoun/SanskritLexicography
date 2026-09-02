@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 01-09-2026_
+_Created: 08-07-2026 · Last updated: 02-09-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -205,7 +205,7 @@ Tier 1, measured directly on the canonical asset. The 26-08-2026 blocker is gone
 
 **Consumers:** cite **1,093,391** and name the build. A pre-H309 analysis legitimately keeps 1,091,528 *provided it says so* — the coverage and traceability findings below were genuinely run on the 06-26 build and are not wrong, only unstamped; they carry the build name as of this pass.
 
-Blocks: nothing measurement-side any more. One **publication-facing residual, human-gated:** A42's abstract, title figure and §data table lead with the superseded **1,091,528** while the same paper's front-matter and claims row 2 carry **1,093,391** — an internal inconsistency a referee would catch. Which figure a paper leads with is an authorial choice, not an agent's, so it parks; the article-submit freeze to 2026-11-01 means nothing is urgent.
+Blocks: **nothing — fully closed 02-09-2026.** The measurement side was settled 01-09; the one publication-facing residual (A42 leading with the superseded 1,091,528 while its own front-matter carried 1,093,391) was an authorial choice, so it was put to a human and **MG ruled «count of record» on 02-09-2026**. Applied the same pass: A42's abstract, claim 1, §4.1 headline row and claims-table row 2 now lead with **1,093,391**. The §4.1–§4.3 distributional breakdowns are **deliberately left at the 1,091,528-row 2026-06-26 measurement and labelled as such** — the `kind` split (990,499 + 101,029) sums to that build, and rescaling a distribution to a total it was never computed over would have manufactured a second, subtler inconsistency in the course of fixing the first.
 > **Source:** filed from the [H1871 methods report](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §3 row 15 · 31-07-2026 · Fable 5 `claude-fable-5`. Adjudicated INCONCLUSIVE 26-08-2026 (H3538, Fable 5 `claude-fable-5`). **Ruled 01-09-2026 by direct measurement — [H3793](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3793-Opus_SanskritLexicography_statistics-org-census-q2-analytical-layer_31.08.26.md), Opus 5 `claude-opus-5[1m]`.**
 
 ### §14. ls-citation-graph MW lane: CANON-CORE builds on it, CITE-4AXIS rejects it as an artifact-generator
