@@ -43,3 +43,10 @@ This file orients Codex and other non-Claude agent sessions. The section between
 - Gitignored/off-git canonical assets are registered as pointer rows in the org-private [shadow-assets registry](https://github.com/gasyoun/Uprava/blob/main/SHADOW_ASSETS_POINTERS.md).
 
 [/generated-block]
+
+## Repo-curated orientation (hand-owned - outside the generated block)
+
+| Read when | Surface |
+|---|---|
+| Touching PWG sense segmentation, enumeration markers, or anything that re-splits a `pwg_ru` card | [RussianTranslation/src/microstructure.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py) is the ONE sanctioned reading of PWG's **four** enumeration tiers (H3948) — never re-derive a tier from a marker's shape. A marker whose tier is genuinely ambiguous in the printed source is left unsplit and counted as an unresolved class, never guessed. Changing a tier rule ⇒ re-run [microstructure_four_tier_selftest.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure_four_tier_selftest.py) and re-measure in the same PR. |
+| Asked "should we re-segment the store?" | Already measured, without writing a row: [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) → [reports/H3948_four_tier_store_impact.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3948_four_tier_store_impact.json) — **3,212 of 11,462 `pwg_ru` rows affected (28.02 %)**, of which 12 are precisely resolvable, 990 unaffected and 2,210 unresolvable. The answer is a **range of 12–3,212 rows**, and the re-translation call belongs to a human ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §453). **No row has been rewritten.** |
