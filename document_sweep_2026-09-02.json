@@ -1,0 +1,215 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-09-02 21:11:46",
+  "artifacts": [
+    {
+      "artifact": "C:\\Users\\user\\Documents\\GitHub\\SL-h3959rel-952324\\RussianTranslation\\src\\pwg_ab_ru.py",
+      "repo": "C:\\Users\\user\\Documents\\GitHub\\SL-h3959rel-952324",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "repo README is the ecosystem/dictionary-code table; a pipeline-internal render module has never had a row there and adding one would be inventory noise"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SL-h3959rel-952324\\CLAUDE.md:195: [`RussianTranslation/src/pwg_ab_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab_ru.py) —"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "AGENTS.md carries only the generated public-safe hazard block; the agent-facing rule went to CLAUDE.md, which is where it is read"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "style guide of record rows 3.2-3.5 re-stated + open-contradiction block flipped to RULED; ABBREVIATIONS_RU.meta.md created (PR #2046)"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the metadoc belongs to the governing POLICY doc, not the module: ABBREVIATIONS_RU.meta.md created this pass; pwg_ab_ru.py is its executable twin and its docstring carries the contract"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "entry landed in RussianTranslation/CHANGELOG.md (the pwg_ru half of the shared 1.144.x namespace) and was cut as 1.144.143 + tag v1.144.143; the root CHANGELOG.md is the repo-level half and this is a pwg_ru change"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "RussianTranslation/.ai_state.md carries the completed entry; the pwg_ru workstream journals there, not in the root file"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no tracking issue was ever opened for H3959; handoff_close reported no issue metadata"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "creates no human action and closes none -- the residual store sweep is agent work already owned by H3947"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "H3959 row is terminal on origin/main and the file is archived"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "L16 added (15 -> 16 tools)"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no cross-repo data edge created or changed -- the module reads one local store and PWG's own pwgab table, both pre-existing edges"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no destructive-risk fact surfaced -- read-only census, zero store writes"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "answers no logged question and repeats no known question pattern"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no thesis refinement -- operational render-layer policy for one pipeline, not one of the 21 theses"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no hook changed; census is an in-tool gate, not an enforcement hook"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "SanskritLexicography section refresh belongs to /repo-status; this one change does not make it stale"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a new long-lived hub or registry"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "CONTRADICTIONS SS4 flipped to RULED in PR #2045, verdict quoted verbatim; no new premise, gap, dead end or term"
+        }
+      ]
+    }
+  ]
+}
