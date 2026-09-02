@@ -97,7 +97,7 @@
         "examples_sa": { "type": "array", "items": { "type": "string" } },
         "government": {
           "type": "array",
-          "description": "OPTIONAL (H1624 G2). Structured case-government (Rektion) markers extracted from the DE sense segment via government_census.extract_government — floor only, never invented. Empty array when the sense governs nothing. Same hit shape as pwg_ru_final_card.schema.json sense.government.",
+          "description": "OPTIONAL (H1624 G2). Structured case-government (Rektion) markers extracted from the DE sense segment via government_census.extract_government — floor only, never invented. Empty array when the sense governs nothing. Same hit shape as pwg_ru_final_card.schema.json sense.government. Non-government cases (nom/voc) are dropped per case by extract_government (both the parenthesis and the 'mit' branch) and live in the sibling form_notes field instead; a marker left with no government case emits no hit at all, and its span stays readable in form_labels/form_notes.",
           "items": {
             "type": "object",
             "required": ["cases", "variation", "kind"],
