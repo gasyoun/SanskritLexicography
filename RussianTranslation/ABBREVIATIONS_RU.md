@@ -181,7 +181,7 @@ costs one row.
 | `pers.` | 1 | `pwgab` reads "Person / persisch" — grammatical vs domain, undecidable |
 | `ind.` | 1 | `pwgab` reads "indisch / Indikativ" — domain vs grammatical, undecidable |
 
-### Store-residue verdict (releases H3947)
+### Store-residue verdict (scoped by H3959, SWEPT by H3969 — releases H3947)
 
 **65 store rows need a sweep, scoped as follows.** The `<ab>` policy is render-time
 by design and no `<ab>` span needs a store write. But re-running the H2849 class of
@@ -193,6 +193,40 @@ all markup — finds **120 hits across 65 distinct rows** still in the `ru` fiel
 the sweep direction is German→Latin (`Akk`→`Acc.`, `Lok`→`Loc.`), the same direction
 H2849 used and the one MG's ruling forbids only for Bucket A. Scoping and running
 that sweep is **not** H3959.
+
+#### The sweep as it actually ran (H3969, 02-09-2026)
+
+Re-measured before writing anything, and the number had grown: **142 hits across 76
+rows**, because the H3959 census above listed only `Akk`/`Lok`/`Ausgabe`/`Präs` while
+`Instr` ×22 is the same German-only class with the same H2849 target. All of it was
+swept in one pass by
+[`src/h3969_german_latin_sweep.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h3969_german_latin_sweep.py)
+(`census` · `--apply` · `--selftest`), `ru` field only, store resolved through
+`store_path.canonical_store()`:
+
+| Token found | Count | Shipped as |
+|---|--:|---|
+| `Akk` | 110 | `Acc.` |
+| `Instr` | 22 | `Ins.` (H2849's naming choice, `pwg_ab.RENAME_ALIASES` keeps the tooltip) |
+| `Lok` | 8 | `Loc.` |
+| `Präs` | 1 | `Praes.` — the ASCII Latin twin; `Präs = Fut.` in `key1=yAvat` |
+
+**141 substitutions over 75 rows** — `nws` 58 rows, `sch` 15, `pwg` 2. Store row count
+unchanged (11,519 before and after); the German source column `de` untouched. Post-sweep
+the check reports **1 hit / 1 row**, and the independent
+[`src/ru_case_marker_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ru_case_marker_gate.py)
+passes over all 11,519 rows.
+
+**Declared residue — `Ausgabe` ×1** (`key1=nI`, layer `pwg`): *"…dieses Beispiels hat
+aber die vollständige Ausgabe der `<ls>`SIDDH. K.…"* is a German **prose clause** left
+untranslated in the `ru` field, not a grammatical marker. It has no Bucket B Latin
+terminus technicus; routing it to `Ed.` would be an editorial decision, and translating
+the clause is a translation job, not a marker sweep. Named here rather than guessed.
+
+**Adjacent, deliberately not swept:** `Istr` (`key1=Cid`, layer `nws`, in
+`(голову, Akk, ногой, Istr)`) is a source-side typo for `Instr`, outside every measured
+token set. Correcting typos is a different pass; it is recorded here so the next scan
+does not treat it as new.
 
 ## German case-abbreviation compliance sweep (H2849, 19-08-2026)
 
