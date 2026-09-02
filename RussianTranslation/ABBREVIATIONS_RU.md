@@ -1,6 +1,6 @@
 # PWG `<ab>`/`<ls>` abbreviations — tooltips and RU-column purity
 
-_Created: 10-07-2026 · Last updated: 19-08-2026_
+_Created: 10-07-2026 · Last updated: 02-09-2026_
 
 > Consolidated Russian style guide of record (all ratified rules, with provenance and the
 > open 10-07 vs 19-07 abbreviation contradiction surfaced):
@@ -94,14 +94,103 @@ Latin status — `s.`/`s. u.` ("see"), `Vgl.` ("compare"), `Bed.` ("meaning"),
 ("epithet") and (implicitly, via `N. pr.`) "proper noun". The curated mapping
 lives in
 [`RussianTranslation/src/pwg_ab_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab_ru.py)
-(`RU_MAP`, ~95 entries as of this writing). Anything NOT in `RU_MAP` falls back
-to the original token (still gets a tooltip) — an unclassified/rare token
-never regresses, it just isn't (yet) translated.
+(`RU_MAP`, 122 entries since H3959). ~~Anything NOT in `RU_MAP` falls back to the
+original token~~ — that fallback was the defect MG's 02-09-2026 ruling outlawed;
+see the next section.
 
-Live coverage (see the [abbreviations dashboard](https://gasyoun.github.io/SanskritLexicography/abbreviations.html)
-for the current numbers): **~43% of `<ab>` occurrences translated to Russian,
-~52% kept Latin (Bucket B), ~5% unresolved** (rare tokens not in PWG's own
-`pwgab` table at all — typically OCR noise or non-standard local abbreviations).
+## Ruling 02-09-2026: "none remain German" — the residue is closed (H3959)
+
+MG voted the [registry-contradictions sheet](https://gasyoun.github.io/vote/sheets/uprava_registry_contradictions_02-09-26.html)
+on 02-09-2026 (3 cards, all approved, 120 s):
+
+> **«It's mixed. Some remain Latin, none remain German, most German become Russian
+> and do not become Latin»**
+
+That is the two-bucket policy above, approved, plus one constraint it had never
+asserted and one direction correction:
+
+1. **"Some remain Latin" = Bucket B, unchanged.** Grammatical categories keep the
+   international Latin siglum. Not up for revision.
+2. **"Most German become Russian" = Bucket A, unchanged in principle.**
+3. **"and do not become Latin" — a direction correction.** The H2849 sweep's
+   German→Latin direction (`Akk`→`Acc.`, `Lok`→`Loc.`) is right for Bucket B and
+   **forbidden for Bucket A**: an editorial German abbreviation goes to Russian,
+   never to Latin.
+4. **"None remain German" — the new constraint, and the defect.** The 10-07
+   design fell back to the raw token for anything not in `RU_MAP`, so a residue of
+   Bucket-A tokens rendered as German inside Russian prose *by design*.
+
+### The four-bucket census (H3959, 02-09-2026)
+
+Method: every `<ab>…</ab>` span in the `ru` field of all 11,519 rows of
+[`src/pwg_ru_translated.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src), whitespace-normalised, counted by
+occurrence and by distinct token, then classified against the three explicit sets in
+[`src/pwg_ab_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab_ru.py).
+Reproduce with `python pwg_ab_ru.py census` (exit 1 if any A-unmapped token survives).
+
+Total: **12,194 occurrences / 272 distinct tokens.**
+
+| Bucket | Occurrences | % | Distinct | % |
+|---|---:|---:|---:|---:|
+| B — stays international Latin | 6,465 | 53.0 % | 137 | 50.4 % |
+| A-mapped — renders Russian from `RU_MAP` | 5,711 | 46.8 % | 121 | 44.5 % |
+| residue — declared undecided | 18 | 0.1 % | 14 | 5.1 % |
+| **A-unmapped — renders raw German** | **0** | **0.0 %** | **0** | **0.0 %** |
+
+The three sets are now spelled out rather than inferred: `RU_MAP` (Bucket A),
+`BUCKET_B` (138 grammatical sigla), `RESIDUE` (14 declared-undecided tokens). They
+are disjoint, and anything outside all three is by definition A-unmapped — which is
+what `census` fails on. Before H3959 that fourth bucket held 26 distinct tokens /
+409 occurrences; the largest were `u.` (93, "unter"), `v. l.` (283, *varia lectio*)
+and `ved.` (57, "vedisch").
+
+All 122 `RU_MAP` values are Cyrillic — `census` asserts this, so no Bucket-A token
+can be routed to Latin without failing the check.
+
+### Judgment calls worth naming
+
+- **`u.` → `под`.** PWG's own `pwgab` expands it as *unter*, not *und* — the
+  preposition of the "see under ⟨headword⟩" formula, so a Russian preposition, not `см.`
+- **`v. l.` → `разночт.`** *Varia lectio* is Latin, but it is **editorial**, not a
+  grammatical category, so "some remain Latin" (= Bucket B) does not cover it.
+  Russian textology has its own established siglum.
+- **`ved.` → `вед.`, `metr.`, `euphem.`, `myst.`, `etymol.`, `Patron.`** — register,
+  domain and usage labels, the same class as `buddh.`/`astr.`/`liturg.` and `Bein.`,
+  which already translated.
+- **`unregelm.`, `ungramm.`, `Ortsadv.`** are grammar *properties* spelled as German
+  adjectives, not the Latin termini technici `Acc.`/`caus.` — Bucket A, not B.
+- **`Präs.`, `instrans.`** stay Bucket B: `Präs.` is the tense category (orthography
+  is not the criterion), `instrans.` is PWG's own typo for *intransitiv*.
+
+### Declared residue — 14 tokens, 18 occurrences
+
+Two admissible reasons only: no entry in PWG's own `pwgab` table, or a `pwgab`
+entry that is itself ambiguous or garbled. A guessed Russian gloss for a garbled
+token would put invented Russian into a dictionary; a declared undecided token
+costs one row.
+
+| Token | Occ. | Why undecided |
+|---|---:|---|
+| `e.` · `H.` · `o. W.` · `o.` | 2 each | no `pwgab` entry (`o.` is probably *oben*, but PWG never declares it) |
+| `M.` · `Fr.` · `schl.` · `r. V.` · `d. r. V.` | 1 each | no `pwgab` entry |
+| `3.` | 1 | no `pwgab` entry — numeric markup artifact |
+| `geder.` | 1 | `pwgab` itself reads "gedeutet?" — garbled source |
+| `d.` | 1 | `pwgab` reads "der / die / das" — ambiguous definite article |
+| `pers.` | 1 | `pwgab` reads "Person / persisch" — grammatical vs domain, undecidable |
+| `ind.` | 1 | `pwgab` reads "indisch / Indikativ" — domain vs grammatical, undecidable |
+
+### Store-residue verdict (releases H3947)
+
+**65 store rows need a sweep, scoped as follows.** The `<ab>` policy is render-time
+by design and no `<ab>` span needs a store write. But re-running the H2849 class of
+check — German markers **outside** any `<ab>` tag, excluding `{#…#}` SLP1 spans and
+all markup — finds **120 hits across 65 distinct rows** still in the `ru` field:
+`Akk` ×110, `Lok` ×8, `Ausgabe` ×1, `Präs` ×1. By layer: `nws` 48 rows, `sch` 15,
+`pwg` 2 — i.e. it is almost entirely the Grassmann/NWS-derived material H2849's
+694-row pass did not reach, not PWG's own text. These are Bucket **B** markers, so
+the sweep direction is German→Latin (`Akk`→`Acc.`, `Lok`→`Loc.`), the same direction
+H2849 used and the one MG's ruling forbids only for Bucket A. Scoping and running
+that sweep is **not** H3959.
 
 ## German case-abbreviation compliance sweep (H2849, 19-08-2026)
 
@@ -215,12 +304,14 @@ lookaround context checks (see their docstrings for the exact mechanism):
   anywhere in the corpus (pwgab's table only stores one meaning per token
   string), that occurrence would be mistranslated. Not observed in a spot
   check but not exhaustively verified either.
-- **`RU_MAP` is a first pass covering the highest-frequency tokens (~95 of
-  266 distinct)**, not an exhaustive audit of the full `pwgab` table (791
-  entries) or even of all 266 tokens actually used in the corpus so far. The
-  dashboard's "не найдены в таблице pwgab" bucket (~5% of occurrences, rare/
-  OCR-noise tokens) and any newly-appearing rare Bucket-A tokens as the corpus
-  grows are natural additions to `RU_MAP` over time — append, don't rebuild.
+- ~~**`RU_MAP` is a first pass covering the highest-frequency tokens (~95 of 266
+  distinct)**~~ — **closed by H3959, 02-09-2026.** Every one of the 272 distinct
+  tokens the corpus actually uses is now classified into exactly one of `RU_MAP`,
+  `BUCKET_B` or `RESIDUE`, and `python pwg_ab_ru.py census` fails if any falls
+  outside all three. It is still *not* an audit of the full `pwgab` table (791
+  entries): a token that first appears as the corpus grows will surface as
+  A-unmapped on the next census run, which is the intended way to catch it —
+  append, don't rebuild.
 * **Scope is `pwg_ru` only.** `mw_ru`'s `<gram>` tag has a *documented*
   "deliberately left untouched, do not fix" convention in the org
   [`CLAUDE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md)
