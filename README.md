@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21306715.svg)](https://doi.org/10.5281/zenodo.21306715)
 
-_Created: 14-06-2026 · Last updated: 31-07-2026_
+_Created: 14-06-2026 · Last updated: 03-09-2026_
 
 A **data and research workspace** for Sanskrit digital lexicography — not a
 software project. Its focus is Cologne Digital Sanskrit Lexicon headword lists,
@@ -106,6 +106,7 @@ disagreeing, not-yet-knowing, abandoning, reproducing, decaying, defining):
 - [RussianTranslation/NWS_AUDIT_REPORT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NWS_AUDIT_REPORT.md) — living cumulative report of the NWS attribution-parser audit (per-section roll-up, real-loss taxonomy, source errata).
 - [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) — how a PWG entry is assembled from up to 5 dictionary layers (PWG/PW/SCH/PWKVN/NWS), the fixed merge order in `dict_merge.py`, and a measured co-occurrence tally showing no-PWG combinations (esp. PW-only) are common, not edge cases.
 - [RussianTranslation/LITERATURE_FOR_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LITERATURE_FOR_PWG_RU.md) — the reference-shelf harvest for the Sanskrit→Russian PWG translation, mined by pipeline insertion point; with the per-manual audit [RussianTranslation/MANUALS_FOR_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FOR_PWG_RU.md) and the five-manual theory deep-dive [RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md).
+- [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) — the measured store impact of PWG's **four** enumeration tiers (H3948): how many existing `pwg_ru` rows corrected segmentation *would* change, reported as a range (12 precise · 990 unaffected · 2,210 unresolvable out of the 3,212 affected rows of 11,462) rather than a single number; the tier rules themselves live in [RussianTranslation/src/microstructure.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py) and the verdict in [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §453. **Nothing was rewritten** — the re-translation call is a human decision.
 - [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md) — provenance for the large reference assets.
 - [literature/md/INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/INDEX.md) — cross-repo relevance map for the research literature collection.
 
