@@ -4,11 +4,11 @@
  "records_scanned": 123366,
  "records_changed": 24137,
  "keys_affected": 18351,
- "store_rows_scanned": 11603,
- "store_rows_flagged": 10881,
- "store_unique_keys": 254,
- "store_unique_keys_flagged": 49,
- "store_sha256_after": "200cde941773a821c94ddc84a2976a645b1eea44b8e596cd954a6c81bac80bb7",
+ "store_rows_scanned": 11519,
+ "store_rows_flagged": 10902,
+ "store_unique_keys": 221,
+ "store_unique_keys_flagged": 52,
+ "store_sha256_after": "58c2172607c34928b417178d50ee80823956c4ccdde5f4d49ab8b0407e06faf0",
  "per_record_deltas": [
   {
    "record_id": "2",
