@@ -11,6 +11,107 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.144] - 2026-09-03
+
+- H3947: the `pwg-ru-data/tm/` mirror refreshed from the canonical store — **`changed_ru`
+  75 → 0**, `only_src` and `only_mirror` 0 throughout, store and mirror both 11,519 rows
+  before and after. The 75 rows were exactly H3969's German→Latin sweep (`Akk`→`Acc.`,
+  `Instr`→`Ins.`, `Lok`→`Loc.`, `Präs`), which had landed in the store while the mirror
+  still served the pre-sweep Russian; a TM pack cut in between would have shipped the
+  German. Bytes published as [pwg-ru-data `eaeb870`](https://github.com/gasyoun/pwg-ru-data/commit/eaeb870).
+  **The mission's premise had moved and was re-measured rather than assumed:** the
+  `only_mirror: 167` of [FINDINGS §593](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md),
+  minted 28-08, was already 0 — cleared by the two H3663 refreshes on 29-08
+  (11,482 → 11,515 → 11,519) and the H3751 no-op on 31-08.
+  Guards all PASS before the copy (G1 human-touched · G2 content-loss · G3 shrink, 0-row
+  delta against a cap of 500); `refresh_tm_mirror.py --selftest` 13 → 17/17 cases green.
+  Source resolved through `store_path.canonical_store()` to the **main checkout** even
+  though the run executed from a `D:` worktree — the [FINDINGS §600](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  trap, already defaulted away by H3658. Ledger row `H3947` / `20260902T202344Z`, mirror
+  sha `58c2172607c3` → `79d72dbcb4b3`, backup
+  `pwg_ru_translated.jsonl.h3947.20260902T202344Z.bak`.
+  **New [FINDINGS §628](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  — a sync ledger that counts only rows cannot see a content-only sync.** Every counter
+  `refresh_tm_mirror.py` writes derives from `rid()` = `(key1, subcard, sense_tag,
+  de[:80])`, which excludes `ru` — the field the mirror exists to serve — so this refresh's
+  ledger row carries the same nine zero/unchanged values as the H3751 no-op, and the mirror
+  being Git LFS leaves `git log` mute too. Only the opaque sha pair separates them.
+  `audit_store_gates.py` already measures `changed_ru` one tool over; carrying it into the
+  ledger is the proposed fix, not applied here (the handoff fences tooling and content
+  changes). No row translated or regenerated, no store row deleted, no TM pack cut; the
+  three hard-flagged `SAN-LOSS` rows (`mA`, `pat`, `asvatantra`) and the GAPS §17 residue
+  (264 rows: 244 `GLOSS-DE-RESIDUE` + 22 `AB-MUTATED`) untouched.
+- H3969: German markers **outside** `<ab>` in the store's `ru` field swept German→Latin —
+  **141 substitutions over 75 rows** in `src/pwg_ru_translated.jsonl`, resolved through
+  `store_path.canonical_store()` (the main checkout, never the worktree copy).
+  By token: `Akk`→`Acc.` ×110 · `Instr`→`Ins.` ×22 · `Lok`→`Loc.` ×8 · `Präs`→`Praes.` ×1.
+  By layer: `nws` 58 rows · `sch` 15 · `pwg` 2. Store row count unchanged (11,519 before
+  and after); the `de` German source column and every `<ab>`, `<ls>` and `{#…#}` span
+  untouched. Pre-sweep class check 142 hits / 76 rows → post-sweep 1 hit / 1 row.
+  Declared residue: `Ausgabe` ×1 (`key1=nI`, layer `pwg`) — a German prose clause, not a
+  grammatical marker, so it has no Bucket B Latin form and a routing to `Ed.` would be an
+  editorial call, not a marker substitution. Sweep is reproducible via
+  `src/h3969_german_latin_sweep.py` (census · `--apply` · `--selftest`, 13 cases).
+  H3959's scoped 120/65 grew to 142/76 because that census listed only
+  `Akk`/`Lok`/`Ausgabe`/`Präs`; `Instr` is the same German-only class with the same H2849
+  target and was swept with them. Releases the H3947 TM-mirror-refresh gate.
+- **H3948 — `microstructure.py` now segments all FOUR PWG enumeration tiers, and the store impact is MEASURED, not applied (Opus 5 `claude-opus-5`, 03-09-2026; read-only against the store, zero provider calls, no store writes).** [FINDINGS §453](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) said the four-tier finding was "not yet applied to the production parser". It is now applied — through the *same* code path §447 built for the tier it already handled, not a parallel splitter: one `MARK` regex widened to `(?<![^\s—])(?:(?P<t>\d{1,2}|[a-z])[)〉]|(?P<g>[α-ωϑϰ]|[IV]+)〉)`, one `ADJACENT_MARKERS` widened in step, `sense_path()` extended with `div`/`sub2`. Tier order: `div` roman → `n` digit → `sub` latin → `sub2` greek. **The closer asymmetry is deliberate:** the two old tiers accept `)` or `〉`, the two new ones accept only the `〉` glyph — an ASCII-closed greek or roman marker is not attested in PWG, and admitting one would invent a rule.
+  **Three occurrence counts, three methods, none reconciled into one** (the handoff forbade "fixing" a count that disagrees): **~1,474** = §453's own figure (raw `〉`-glyph hits, no lookbehind, no protected-span filtering) · **1,546 over 393 records** = this session reproducing that H1350 probe method on today's corpus · **1,455** (1,426 greek + 29 roman) = the genuine method — glyph-closed **and** `MARK` lookbehind **and** outside every `protected()` span. The single roman marker the genuine method drops is a phantom `U〉` inside the Sanskrit span `{#juhU〉ma/si#}`. `seen_by_old_parser = 0`: the two-tier parser matched **none** of the 1,455.
+  **The number this handoff exists to produce — a range, not a figure: between 12 and 3,212 rows.** Query, stated plainly: segment all 123,366 PWG records twice (pre-H3948 two-tier vs four-tier), collect the `key1` values whose leaf-sense **id list** differs, then join `pwg_ru` store rows on `key1` alone — because [§454](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) already proved `(key1, h)` is not a usable join key. Corpus: **331 of 106,082 distinct `key1`** change segmentation. Store: **11,462 rows over 209 `key1`**, 9 of them in the changed set → **CONSERVATIVE 3,212 / 11,462 = 28.02 %** (95 % CI 27.21–28.85 %), deliberately an upper bound. Resolving each row's `sense_tag` against pre-H3948 sense ids splits it: **12 rows (0.10 %,** 95 % CI 0.06–0.18 %**) provably move**, 990 resolve to a sense the fix leaves alone, and **2,210 resolve to no pre-H3948 sense id at all** — that unresolved class is what makes the range wide. Most-affected `key1`: `gam`×673, `han`×596, `viS`×537, `vas`×405, `vad`×297, `hA`×247, `siD`×187, `yat`×159, `man`×111.
+  **Fence held, mechanically.** No store row was written, requeued or re-segmented — the store's sha256 `19fcf5258e5ea384…` is byte-identical before and after the measuring pass; [`pwg_tm_fragmentize.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_fragmentize.py) (§619) was not touched. Three ambiguity classes are **declared, not guessed**: the 2,210 unresolvable tags; the 48 glued-marker probe records (two consumers pre-normalise differently — `leaf_senses()` un-glues via `ADJACENT_MARKERS`, `portrait()`/`split_senses()` does not, pre-existing since H1456); and, structurally, any unattested glyph falls through rather than being coerced into a tier.
+  **Before/after, four real entries, in full** ([`pwg_four_tier_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_diff.py) prints both segmentations whole — sense ids are *not* comparable across parsers, since a roman division restarts digit numbering): `hvA` 21 → 25 · `akzara` 17 → 22 (the old parser's single `4b` blob is really `4bα 4bβ 4bγ 4bδ 4bε`) · `ati` 6 → 12 · `Gana` 25 → 26. Pinned by [`microstructure_four_tier_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure_four_tier_selftest.py): 11/11 unit + 5/5 corpus over all 123,366 records and the 393 H1350 probe records in 9.6 s, and `--prove-revert` turns **6 tests red** against a deliberately reverted two-tier parser.
+  **Two schemas widened, no data migrated:** [`pwg_ru_lexicographic_portrait.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_ru_lexicographic_portrait.schema.json) and its additive superset [`pwg_portrait_structural.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_portrait_structural.schema.json) both declare `div`/`sub2` and allow `n: null`, because a **childless roman division is itself the leaf** (a parent division's pre-sense head text still gets `n = '0'`, which `leaf_senses()` skips).
+  **Read the portrait-validator 0 → 2 diff correctly — it is a stale committed baseline, not a regression.** The tracked `reports/pwg_portrait_validation.json` claims `passes: 123366` with every failure bucket at 0; re-running the **pre-H3948** parser against today's schema gives `pass: 123364, schema-violation: 2` (records 19236, 81366). The committed 0 predates H1624 G2 adding `government` to portrait senses. Post-H3948 the numbers are **identical to that measured baseline** — H3948 introduces no portrait regression. Those 2 are a latent extractor/schema disagreement found in passing and **left unfixed as out of scope**: `government_census.extract_government` skips a parenthesised hit only when *all* its cases are non-government and applies no such filter at all in the `MIT_RE` branch, so `nom` reaches `sense.government.cases`, which the structural schema's enum forbids.
+  Evidence: [`pwg_enum_tier_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_enum_tier_census.py) · [`pwg_four_tier_store_impact.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) → [`reports/H3948_four_tier_store_impact.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3948_four_tier_store_impact.json). Full write-up appended to [FINDINGS §453](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+- **H3981 — `extract_government()` now drops non-government cases per case, in both
+  branches; the last 2 portrait schema violations are closed (Opus 5 `claude-opus-5`,
+  03-09-2026; deterministic, zero provider calls, no store writes).** The extractor and
+  the schemas had disagreed since H1624 G2 first put `government` on portrait senses:
+  [`src/government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py)
+  skipped a parenthesis only when **all** its cases were non-government, so a mixed
+  `(<ab>nom.</ab> oder <ab>acc.</ab>)` survived with `nom` still in `cases` (record
+  81366, `key1=yaTAvftta`), and the `MIT_RE` branch applied no non-government filter at
+  all, so `mit dem <ab>nom.</ab>` yielded `['nom']` (record 19236, `key1=ko`). Both
+  violated the `sense.government.items.cases` enum `["acc","loc","instr","gen","dat","abl"]`
+  that
+  [`schemas/pwg_portrait_structural.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_portrait_structural.schema.json)
+  and
+  [`schemas/pwg_ru_final_card.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_ru_final_card.schema.json)
+  share, and contradicted
+  [`src/government_sidecar.py:55`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_sidecar.py#L55),
+  which states the exclusion already happens.
+  **The fix filters the hits; the schemas were right.** A shared `_gov_only()` helper is
+  applied per hit in **both** branches, a marker left with no government case emits no hit,
+  and `variation`/`kind`/`connector` are derived from the *filtered* list — a group naming
+  two cases but governing one is `paren-single`, `variation` false, connector empty. `span`
+  still carries the verbatim source snippet, so the dropped token stays auditable. Both
+  enums are unchanged; the two schema descriptions now name `form_notes` as the nom/voc home.
+  **Zero information loss, verified rather than assumed:** in both defect records the
+  dropped `nom` is already present in the sense's `form_notes`
+  (`{"case":"nom","kind":"bare_ab"}` and `{"case":"nom","kind":"paren_ab"}`), because
+  `form_labels.extract_form_notes()` scans the same DE segment independently — so the fix is
+  pure subtraction, not a re-routing.
+  **Blast radius measured before the edit:** 2,417 parenthesis hits + 1,556 `mit` hits over
+  the corpus, of which exactly one mixed paren group and one all-nongov `mit` marker — two
+  occurrences, matching the two reported violations exactly. No shipped artifact under
+  [`release/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release)
+  carries `nom`/`voc` inside a `government` array, so nothing needs re-cutting.
+  **The stale receipt is regenerated.**
+  [`reports/pwg_portrait_validation.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/pwg_portrait_validation.json)
+  had claimed 0 violations since 01-08-2026 only because it predated H1624 G2; it now
+  genuinely reports **123,366 records / 123,366 passes / 0 parse-error / 0 schema-violation /
+  0 unexpected-but-attested / 0 unclassified**, and `--assert-total` exits 0. Eight new
+  regression assertions in `selftest_extract_government()` pin both defect shapes plus a
+  three-case group that loses one non-government member and stays a variation.
+  **Declared divergence, not an oversight:** the census path `scan_entry()` keeps the same
+  unfiltered `mit` branch, because its tallies are frozen in
+  [`src/census_stats.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/census_stats.json)
+  and quoted in `RESULTS_LOG.md`, `CHANGELOG.md`, `GRAMMAR_LAYER.md`,
+  `CAPABILITY_OBSERVATORY.md` and the A51 methods draft. Aligning it moves `mit-phrase`
+  1556 → 1555 and invalidates five published citations — a re-freeze plus citation update,
+  i.e. a publication decision rather than a code fix, for a 1-in-3,973 correction. The
+  divergence and its exact size are now written into `scan_entry()`'s docstring instead of
+  being implicit.
 ## [1.144.143] - 2026-09-02
 
 - **H3959 — the `<ab>` German residue in the RU column is closed; MG's 02-09-2026 ruling rules [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (Opus 5 `claude-opus-5`, 02-09-2026; read-only against the store, zero provider calls, no store writes).** MG voted the [registry-contradictions sheet](https://gasyoun.github.io/vote/sheets/uprava_registry_contradictions_02-09-26.html): «some remain Latin, none remain German, most German become Russian and do not become Latin». That keeps the 10-07 two-bucket policy, rejects the 19-07 `Caus.` = `кауз.` reading, and adds one constraint the policy never asserted — *none remain German*.
@@ -4153,23 +4254,6 @@ boundary, not a constant):
   Full `window_selftest.py` (107 tests) and `lang_parity_check.py` (37
   entries) both green.
 - Unblocks H389 (medium50 windows), H388 B-arm, and the H151 verb-root drain.
-### H429 — PWG page/column co-location index (`<pc>` → who shared a printed column/page)
-- New [`src/pwg_page_index.py`](src/pwg_page_index.py) parses the `<pc>`
-  volume-column marker on every entry header in
-  [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
-  (123,366 entries, 100% coverage) and emits three views:
-  [`pwg_columns.tsv`](src/pwg_columns.tsv) — column mode, 8,171 Böhtlingk-Roth
-  *Spalten* → entry IDs + headwords; [`pwg_pages.tsv`](src/pwg_pages.tsv) —
-  2-column page mode, 4,329 physical pages (`page = ⌈col/2⌉`, as printed);
-  [`pwg_entry_locations.tsv`](src/pwg_entry_locations.tsv) — reverse lookup,
-  entry → start column, page, all spanned columns (incl. cross-volume Nachträge).
-- `--annotate` adds `volume`/`column`/`page`/`pc_all`/`page_all` to the
-  gitignored `pwg_ru_translated.jsonl` cards (11,239/11,261 matched;
-  22 non-source-headword forms unmatched), idempotently.
-- Served from kosha's DB as the `/api/v1/page` + `/api/v1/neighbors` endpoints
-  (kosha H434, [PR #33](https://github.com/gasyoun/kosha/pull/33)); this is the
-  raw-source view of the same co-location concept.
-  ([PR #286](https://github.com/gasyoun/SanskritLexicography/pull/286)).
 
 ### H409 — `has_meaning()` short-token stemmer gap fixed, RATIO-scoring regression caught and reverted
 - New [`corpus_gate.ru_has_content()`](src/corpus_gate.py): relaxes the
