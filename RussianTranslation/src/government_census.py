@@ -70,6 +70,19 @@ LEX_RE = re.compile(r"<lex>([^<]+)</lex>")
 SENSE_SPLIT_RE = re.compile(r"\d+〉")
 
 
+def _gov_only(cases):
+    """Drop non-government cases (``nom``/``voc``) from ONE marker's case list.
+
+    The single place that turns "cases named in this span" into "cases this marker
+    governs". Applied per hit in BOTH branches of extract_government() — a marker
+    that names a mix (``(<ab>nom.</ab> oder <ab>acc.</ab>)``) keeps only its
+    government half, and a marker left with nothing is not a government marker at
+    all. The dropped nom/voc are not lost: form_labels.extract_form_notes() scans
+    the same DE text independently and already records them in the sibling
+    ``form_notes`` field (axis ``case_form``)."""
+    return [c for c in cases if c not in NONGOV_CASES]
+
+
 def extract_government(text):
     """Deterministic case-government (Rektion) extractor for one sense's German text
     (H335 W3(b) / H338). Reuses this module's census regexes so there is exactly one
@@ -80,25 +93,43 @@ def extract_government(text):
       {cases: [...], variation: bool, connector: "und"/"oder"/"", kind: str, span: str}
 
     ``<ls>...</ls>`` citation spans are stripped first (a case abbreviation could in
-    principle appear inside a citation siglum). Parenthesized non-government cases
-    (``nom.``/``voc.``, usually citation-form notes) are NOT government and are
-    excluded from the result — this is a floor, not a ceiling: a multi-case ``mit``
-    continuation after the first case is not chased (matches the census undercount).
+    principle appear inside a citation siglum). Non-government cases (``nom.``/``voc.``,
+    usually citation-form notes) are NOT government and are dropped **per case, in both
+    branches**, via _gov_only(); a hit left with no case is skipped entirely. This is a
+    floor, not a ceiling: a multi-case ``mit`` continuation after the first case is not
+    chased (matches the census undercount).
+
+    ``variation``/``kind``/``connector`` describe the FILTERED case list, so they can
+    never contradict ``cases`` downstream: a group that named two cases but governs one
+    is ``paren-single``, ``variation`` False, ``connector`` "". ``span`` still carries
+    the verbatim source snippet, so the dropped token stays auditable.
+
+    Filtering per case (not only when ALL cases are non-government) is what keeps the
+    output inside the ``["acc","loc","instr","gen","dat","abl"]`` enum that both
+    schemas/pwg_portrait_structural.schema.json and schemas/pwg_ru_final_card.schema.json
+    declare for ``sense.government[].cases``. Before this, two corpus records escaped it:
+    19236 ``ko`` (``mit dem <ab>nom.</ab>`` — the mit-branch had no filter at all) and
+    81366 ``yaTAvftta`` (``(<ab>nom.</ab> oder <ab>acc.</ab>)`` — the all-nongov guard
+    let a mixed group through with ``nom`` still in ``cases``).
     """
     text_nols = LS_RE.sub("", text or "")
     hits = []
     for m in PAREN_RE.finditer(text_nols):
-        cases = _cases(m.group(1))
-        if all(c in NONGOV_CASES for c in cases):
+        cases = _gov_only(_cases(m.group(1)))
+        if not cases:
             continue
         connectors = sorted(set(c.lower() for c in CONNECTOR_RE.findall(m.group(1))))
+        variation = len(cases) > 1
         kind = "paren-single" if len(cases) == 1 else "paren-variation"
         hits.append({
-            "cases": cases, "variation": len(cases) > 1,
-            "connector": "/".join(connectors), "kind": kind, "span": m.group(0),
+            "cases": cases, "variation": variation,
+            "connector": "/".join(connectors) if variation else "",
+            "kind": kind, "span": m.group(0),
         })
     for m in MIT_RE.finditer(text_nols):
-        cases = _cases(m.group(1))
+        cases = _gov_only(_cases(m.group(1)))
+        if not cases:
+            continue
         hits.append({
             "cases": cases, "variation": False, "connector": "",
             "kind": "mit-phrase", "span": m.group(0),
@@ -144,7 +175,19 @@ def sense_units(entry_lines):
 
 
 def scan_entry(header, entry_lines):
-    """Return list of hit dicts for one <L> entry."""
+    """Return list of hit dicts for one <L> entry (the CENSUS tally, not the extractor).
+
+    Deliberate divergence from extract_government(): the census keeps every marker it
+    sees and only *labels* an all-nongov parenthesis ``paren-nongov`` (a kind excluded
+    from entries_with/units_with/pos_entry downstream); it does NOT drop nom/voc from a
+    mixed group, and its mit-phrase branch applies no nongov filter at all. Measured
+    size of the divergence over the current source: 1 mit-phrase marker (``mit dem
+    <ab>nom.</ab>``, record 19236) and 1 mixed paren group (``(<ab>nom.</ab> oder
+    <ab>acc.</ab>)``, record 81366) out of 3,973 markers. Aligning the census would move
+    the frozen census_stats.json tallies (mit-phrase 1556 -> 1555), which are quoted in
+    RESULTS_LOG.md, CHANGELOG.md, GRAMMAR_LAYER.md, CAPABILITY_OBSERVATORY.md and the
+    A51 methods draft — a re-freeze plus citation update, i.e. a publication decision,
+    not a code fix. Left as-is on purpose; only the extractor was corrected."""
     hits = []
     head_line = entry_lines[0] if entry_lines else ""
     pos = classify_pos(head_line, "\n".join(entry_lines))
@@ -478,6 +521,33 @@ def selftest_extract_government():
         "[Page6-043-a] (<ab>Instr.</ab>).")
     assert n2 == [{"cases": ["instr"], "variation": False, "connector": "",
                    "kind": "paren-single", "span": "(<ab>Instr.</ab>)"}], n2
+
+    # --- non-government filtering is PER CASE, in BOTH branches -------------------
+    # Record 81366 (yaTAvftta): a mixed group used to survive with "nom" still in
+    # cases, violating the schemas' government enum. nom is dropped, the surviving
+    # single case demotes the hit to paren-single and clears the connector, and the
+    # span keeps the verbatim source so the dropped token stays auditable.
+    mixed = extract_government("{%so beschaffen%} (<ab>nom.</ab> oder <ab>acc.</ab>) {#x#}")
+    assert mixed == [{"cases": ["acc"], "variation": False, "connector": "",
+                      "kind": "paren-single",
+                      "span": "(<ab>nom.</ab> oder <ab>acc.</ab>)"}], mixed
+    # Record 19236 (ko): the mit-branch had no nongov filter at all -> ['nom'].
+    assert extract_government("{#ka#} mit dem <ab>nom.</ab> {#x#}") == [], "mit-nom must be nongov"
+    assert extract_government("mit der <ab>Voc.</ab>") == [], "cap mit-voc must be nongov"
+    # A mixed mit-phrase (not attested today) keeps only its government case.
+    mixed_mit = extract_government("mit dem <ab>gen.</ab>")
+    assert mixed_mit[0]["cases"] == ["gen"], mixed_mit
+    # A three-case group losing one non-government member stays a variation.
+    tri = extract_government("(<ab>nom.</ab>, <ab>acc.</ab> und <ab>gen.</ab>)")
+    assert tri[0]["cases"] == ["acc", "gen"], tri
+    assert tri[0]["variation"] is True and tri[0]["kind"] == "paren-variation", tri
+    assert tri[0]["connector"] == "und", tri
+    # Every emitted case is inside the schemas' government enum.
+    for _t in ("(<ab>nom.</ab> oder <ab>acc.</ab>)", "mit dem <ab>nom.</ab>",
+               "(<ab>voc.</ab>)", "(<ab>loc.</ab> und <ab>gen.</ab>)"):
+        for _h in extract_government(_t):
+            assert all(c in GOV_CASES for c in _h["cases"]), (_t, _h)
+
     print("extract_government selftest: OK")
 
 
