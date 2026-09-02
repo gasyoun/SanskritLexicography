@@ -1,6 +1,6 @@
 # ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.meta.md — metadoc for `ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 02-09-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md).
@@ -31,10 +31,10 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
 
 | # | Improvement | Why | Status |
 |---|---|---|---|
-| 1 | G1 FAIR sprint — Zenodo DOI + CITATION.cff across atlas/standards/VisualDCS/observatory, ORCID registered | Flagged High severity; Q3 2026 roadmap item 1; blocks every paper citing a dataset DOI | parked — Q3 2026 roadmap item, no handoff minted yet |
-| 2 | G2 TEI Lex-0 pilot (MW + SKD sample, schema-validated) | Flagged High severity; reviewers will ask "where is the TEI?" | parked — Q4 2026 roadmap item 3 |
-| 3 | G4 double-keying / κ reporting for the community review pool | Flagged High severity — single-reviewer bottleneck makes reviewed claims' reliability unmeasurable | parked — Q3 2026 roadmap item 3 |
-| 4 | P1 submission to IJL | First paper in the pipeline, gates the book proposal (needs 2 published/under-review chapters) | parked — Q3 2026 roadmap item 4, tracked in ARTICLES.md as its own Axx |
+| 1 | G1 FAIR sprint — Zenodo DOI + CITATION.cff across atlas/standards/VisualDCS/observatory, ORCID registered | Flagged High severity; Q3 2026 roadmap item 1; blocks every paper citing a dataset DOI | **partial (02-09-2026)** — CITATION.cff + .zenodo.json staged in all four repos, most ORCID iDs added; Zenodo connection + first DOI mint still open |
+| 2 | G2 TEI Lex-0 pilot (MW + SKD sample, schema-validated) | Flagged High severity; reviewers will ask "where is the TEI?" | **done (verified 02-09-2026)** — `csl-standards/data/pilot/tei-lex0/`, ahead of its Q4 2026 slot |
+| 3 | G4 double-keying / κ reporting for the community review pool | Flagged High severity — single-reviewer bottleneck makes reviewed claims' reliability unmeasurable | parked — Q3 2026 roadmap item 3, no review-pool UI found in csl-atlas as of 02-09-2026 |
+| 4 | P1 submission to IJL | First paper in the pipeline, gates the book proposal (needs 2 published/under-review chapters) | parked — Q3 2026 roadmap item 4, tracked in ARTICLES.md as its own Axx (A16, last known 5/5 pending signoff per 15-08-2026 compile) |
 
 ## Known limitations / caveats
 - The Part II thesis (evidence-graded lexicography) and Part III paper pipeline are the
@@ -77,5 +77,6 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
 | Date | Event | Who |
 |---|---|---|
 | 18-07-2026 | Metadoc created (backfill sweep) | Sonnet 5 (`claude-sonnet-5`), H968 |
+| 02-09-2026 | Truth-pass: Q3 2026 roadmap items converted to real checkboxes with dated evidence; TEI Lex-0 marked done, G5 gold sample marked done, FAIR sprint marked partial | Sonnet 5 (`claude-sonnet-5`), H3795 |
 
 _Dr. Mārcis Gasūns_

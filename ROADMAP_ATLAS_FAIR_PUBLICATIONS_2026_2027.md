@@ -1,7 +1,22 @@
 # Digital Sanskrit Lexicography 2026–2027
 ## Review of csl-atlas, a research programme, and a 12-month publication roadmap
 
-_Created: 12-06-2026 · Last updated: 24-07-2026_
+_Created: 12-06-2026 · Last updated: 02-09-2026_
+
+> **Truth-pass 02-09-2026** (Sonnet 5 `claude-sonnet-5`, H3795). **Verdict: live-with-residual.**
+> Checked against `csl-atlas`/`csl-standards`/`VisualDCS`/`csl-observatory` origin/main and the
+> MWS A16 status row in [Uprava ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
+> Confirmed shipped since this roadmap was written: G5 200-entry MW gold sample closed
+> (macro P 0.860 / R 0.870 / F1 0.876, mean κ 0.817 — MWS `G5_SCORES.md`, 03-07-2026); TEI Lex-0
+> pilot already exists (`csl-standards/data/pilot/tei-lex0/`, ahead of its Q4 2026 slot);
+> `CITATION.cff` + `.zenodo.json` staged in atlas/standards/VisualDCS/observatory with most ORCID
+> iDs added. Confirmed still open: no Zenodo connection / first DOI minted yet (atlas README's own
+> "Pending author actions" note), no PROV-O crosswalk page, no student-facing review-pool UI found,
+> no record of the H5 `divaraTa→diviraTa` maker proposal being sent to Cologne. Q3 2026's five
+> items are converted to real checkboxes below so the drain census can see the residual; Q4
+> 2026–Q2 2027 stay prose (paper-submission states are a human/editorial call, not a repo-state
+> fact, and were not re-verified item-by-item this pass — check `ARTICLES.md` A16/A18/etc. before
+> treating those quarters as done).
 
 Decisions baked in: primary venue = lexicography journals (IJL, Lexicographica, Lexikos, Dictionaries); book = English article-based monograph; student deliverable = frequency-graded learner's reading layer; review capacity = student/community review pool.
 
@@ -141,11 +156,11 @@ The payload is the tension and its resolution. Apresyan's method was always vuln
 ## Part IV — 12-month roadmap (Q3 2026 → Q2 2027)
 
 ### Q3 2026 (Jul–Sep) — *Unblock, harden, submit P1*
-1. **FAIR sprint (G1, G3, G6)**: Zenodo DOI for atlas data release v1; CITATION.cff in csl-atlas, csl-standards, VisualDCS, csl-observatory; ORCID registered and added to papers; PROV-O crosswalk page for evidence labels; per-dataset licence fields.
-2. **Gold-standard sprint (G5)**: 200-entry MW gold sample, double-annotated; precision/recall per block type; appendix to P1.
-3. **Community review pool v1**: convert the three blocked packets (R2 ×10, H4 ×105, xref ×50) into a student-facing review UI (atlas already renders packets; add submission + double-keying + κ report). Recruit 5–10 students (samskrtam.ru network, Sanskrit students' lists). *The review tasks are the pedagogy*: each packet teaches dictionary reading.
-4. **Submit P1 to IJL** (gold-sample results folded in).
-5. Clear H5 maker proposal (divaraTa → diviraTa) to Cologne makers.
+- [ ] **FAIR sprint (G1, G3, G6)**: Zenodo DOI for atlas data release v1; CITATION.cff in csl-atlas, csl-standards, VisualDCS, csl-observatory; ORCID registered and added to papers; PROV-O crosswalk page for evidence labels; per-dataset licence fields. **Partial (02-09-2026):** `CITATION.cff` + `.zenodo.json` exist in all four repos with most ORCID iDs filled; atlas's own README still lists "Pending author actions" — no Zenodo connection, no first DOI minted, no PROV-O crosswalk page, no per-dataset licence field audited.
+- [x] **Gold-standard sprint (G5)**: 200-entry MW gold sample, double-annotated; precision/recall per block type; appendix to P1. **DONE 03-07-2026** — MWS `G5_SCORES.md`: macro P 0.860 / R 0.870 / F1 0.876, mean κ 0.817, folded into A16 PAPER.md.
+- [ ] **Community review pool v1**: convert the three blocked packets (R2 ×10, H4 ×105, xref ×50) into a student-facing review UI (atlas already renders packets; add submission + double-keying + κ report). Recruit 5–10 students (samskrtam.ru network, Sanskrit students' lists). *The review tasks are the pedagogy*: each packet teaches dictionary reading. No submission/double-keying UI found in `csl-atlas` as of 02-09-2026.
+- [ ] **Submit P1 to IJL** (gold-sample results folded in). Last known state (Uprava `ARTICLES.md`, compiled 15-08-2026): A16 5/5, ready-to-send pending MG's citation-dossier read-and-sign — not re-verified this pass; check `ARTICLES.md` A16 row before treating as sent.
+- [ ] Clear H5 maker proposal (divaraTa → diviraTa) to Cologne makers. No record found in Uprava handoffs/FINDINGS of this proposal having been sent.
 
 ### Q4 2026 (Oct–Dec) — *Sense inheritance + learner's layer v1*
 1. **P2 written and submitted** (R2 data is restored and reproducible; checkpoint rows now adjudicated by the pool).
