@@ -42,11 +42,44 @@ PCT = re.compile(r'\{%(.*?)%\}', re.S)
 # protect full citation/italic-Sanskrit spans too — a sense marker must never be
 # found inside <ls>…</ls> (e.g. 'Lebensb. 233 (3).' is not a sense '3)').
 PROT = re.compile(r'<ls\b[^>]*>.*?</ls>|<is\b[^>]*>.*?</is>|<[^>]+>|\{#.*?#\}|\{%.*?%\}', re.S)
-MARK = re.compile(r'(?<![^\s—])(\d{1,2}|[a-z])[)〉]')   # preceded by space/—/start (NOT '(': that's citation-internal)
 # '〉' (RIGHT ANGLE BRACKET, "〉") is PWG's own closing sense-marker glyph --
 # 87,680 occurrences in v02/pwg/pwg.txt (H879), overwhelmingly "digit〉"/"letter〉"
 # (e.g. "1〉", "a〉"). ASCII ')' was the only variant ever matched here; senses
-# marked with the angle form fell through to a single un-split segment.
+# marked with the angle form fell through to a single un-split segment (§447).
+#
+# H3948 / FINDINGS §453 -- PWG nests FOUR enumeration tiers, not two. The two
+# added here follow §447's shape (one regex, one split_senses pass), but NOT
+# §453's draft pattern `([0-9]{1,3}|[a-z]|[α-ωϑϰ]|[IVU])[)〉]`, which the
+# corpus census refutes on three counts. Measured over all 123,366 <L> records
+# with this module's own lookbehind + protected() spans applied
+# (`python pwg_enum_tier_census.py`):
+#
+#   class        raw    lookbehind_ok   genuine   verdict
+#   greek/glyph  1,516      1,426        1,426    real tier 3
+#   greek/ascii     27          4            4    FALSE -- cross-refs ("u. δ)")
+#   roman/glyph     48         29           29    real division tier
+#   roman/ascii 21,537          5            0    FALSE -- "(Volume I)" &c.
+#   digit3/ascii   340        241           22    FALSE -- "S. 367)", "(1917)"
+#   digit3/glyph     0          0            0    the class does not exist
+#
+# Hence: (a) both new tiers are GLYPH-ONLY -- admitting ASCII ')' would inject
+# ~11k false roman splits into live segmentation; (b) digit width stays {1,2},
+# since no 3-digit glyph marker exists at all and widening buys only 22 false
+# splits off page/year references; (c) roman markers are multi-character
+# ([IV]+, attested I II III IV V), so §453's single-char [IVU] class misses 18
+# of the 29 -- and its 'U' is a phantom: the corpus's one "U〉" sits inside a
+# {#…#} Sanskrit span and is not a marker.
+GREEK = 'α-ωϑϰ'
+MARK = re.compile(
+    r'(?<![^\s—])(?:(?P<t>\d{1,2}|[a-z])[)〉]|(?P<g>[' + GREEK + r']|[IV]+)〉)'
+)   # preceded by space/—/start (NOT '(': that's citation-internal)
+ROMAN_TOK = re.compile(r'^[IV]+$')
+GREEK_TOK = re.compile(r'^[' + GREEK + r']$')
+
+
+def mark_token(m):
+    """The bare marker token of a MARK match, whichever tier matched."""
+    return m.group('t') or m.group('g')
 
 
 def header(buf):
@@ -111,27 +144,74 @@ def protected(body):
     return [(m.start(), m.end()) for m in PROT.finditer(body)]
 
 
+def _division_is_childless(marks, i):
+    """True when the roman division at marks[i] has no deeper marker under it.
+
+    16 of the corpus's 29 roman divisions are childless (measured, H3948) -- e.g.
+    {#sahas#} I〉/II〉/III〉 carry their sense text directly. Emitting those as
+    n='0' heads the way a parent division is emitted would silently drop 16
+    divisions of real content out of leaf_senses(), so the head/leaf decision is
+    made per occurrence from the structure actually present, never guessed.
+    """
+    for _, tok in marks[i + 1:]:
+        if ROMAN_TOK.match(tok):
+            break
+        return False
+    return True
+
+
 def split_senses(body):
-    """Slice the body at sense markers that are NOT inside a protected span."""
+    """Slice the body at sense markers that are NOT inside a protected span.
+
+    Four tiers (H3948 / FINDINGS §453), outermost first:
+
+        I〉      roman division -- ABOVE the digit tier, not a fourth sub-level
+        1〉 1)   digit sense
+        a〉 a)   latin sub-sense
+        α〉      greek sub-sub-sense
+
+    A node is {'div', 'n', 'sub', 'sub2', 'text'}. 'div' and 'sub2' are None for
+    the two tiers that existed before this change, so every pre-existing (n, sub)
+    consumer keeps its exact old values on every pre-existing record.
+    """
     spans = protected(body)
     def inside(p):
         return any(a <= p < b for a, b in spans)
-    marks = [(m.start(), m.group(1)) for m in MARK.finditer(body) if not inside(m.start())]
+    marks = [(m.start(), mark_token(m)) for m in MARK.finditer(body) if not inside(m.start())]
     if not marks:
-        return [{'n': '1', 'sub': None, 'text': body}]
-    out, cur_n = [], '1'
+        return [{'div': None, 'n': '1', 'sub': None, 'sub2': None, 'text': body}]
+    out, cur_div, cur_n, cur_sub = [], None, '1', None
     head = body[:marks[0][0]].strip()
     if clean_de(head):
-        out.append({'n': '0', 'sub': None, 'text': head})  # pre-sense head (grammar/general)
+        # pre-sense head (grammar/general)
+        out.append({'div': None, 'n': '0', 'sub': None, 'sub2': None, 'text': head})
     for i, (pos, tok) in enumerate(marks):
         end = marks[i + 1][0] if i + 1 < len(marks) else len(body)
         text = body[pos:end]
-        if tok.isdigit():
-            cur_n = tok
-            out.append({'n': tok, 'sub': None, 'text': text})
+        if ROMAN_TOK.match(tok):
+            cur_div, cur_n, cur_sub = tok, '1', None
+            childless = _division_is_childless(marks, i)
+            out.append({'div': tok, 'n': None if childless else '0',
+                        'sub': None, 'sub2': None, 'text': text})
+        elif tok.isdigit():
+            cur_n, cur_sub = tok, None
+            out.append({'div': cur_div, 'n': tok, 'sub': None, 'sub2': None, 'text': text})
+        elif GREEK_TOK.match(tok):
+            out.append({'div': cur_div, 'n': cur_n, 'sub': cur_sub, 'sub2': tok, 'text': text})
         else:
-            out.append({'n': cur_n, 'sub': tok, 'text': text})
+            cur_sub = tok
+            out.append({'div': cur_div, 'n': cur_n, 'sub': tok, 'sub2': None, 'text': text})
     return out
+
+
+def sense_path(seg):
+    """Flat sense id for a split_senses/sense_node node: div + n + sub + sub2.
+
+    Pre-H3948 nodes carry div=sub2=None, so this returns exactly the old
+    ``n + (sub or '')`` string for every sense the old parser could see -- the
+    ids of the 11.6k already-promoted store rows do not move.
+    """
+    return ''.join(seg.get(k) or '' for k in ('div', 'n', 'sub', 'sub2'))
 
 
 FUNC_DE = set('der die das den dem des ein eine einen einem eines und oder aber auf in an zu von '
@@ -184,7 +264,8 @@ def sense_node(seg):
     form_notes = extract_form_notes(seg['text'])
     # H1624 G3: full citation edges (additive; raw <ls> stays in DE / gloss).
     citation_edges = extract_citation_edges(seg['text'])
-    return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
+    return {'div': seg.get('div'), 'n': seg['n'], 'sub': seg['sub'],
+            'sub2': seg.get('sub2'), 'equivalents_de': de,
             'gloss_de': gloss[:200], 'equivalence_type': eq, 'grammar': grammar,
             'ab_labels': sorted(set(ab_labels)), 'diasystem': sorted(dia),
             'citations': sorted(set(cites)),
@@ -248,7 +329,7 @@ def pretty(p):
         if s['n'] == '0':
             print('   · [head] %s' % s['gloss_de'][:120])
             continue
-        tag = s['n'] + (s['sub'] or '')
+        tag = sense_path(s)
         strat = (' {%s}' % ', '.join(sorted(s['diasystem']))) if s.get('diasystem') else ''
         eqs = ' = ' + ' · '.join(s['equivalents_de']) if s['equivalents_de'] else ''
         print('   %-4s [%s]%s%s' % (tag + ')', s['equivalence_type'], eqs, strat))
@@ -312,13 +393,19 @@ def ls_citations(text):
 # missing space so split_senses sees both markers; scoped to this export's
 # own body copy only, never touching the shared split_senses/MARK used by
 # sense_node/portrait elsewhere in this file.
-ADJACENT_MARKERS = re.compile(r'([)〉])(?=(?:\d{1,2}|[a-z])[)〉])')
+# H3948: the lookahead must know all four tiers, or a glued chain splits only
+# as far as the tiers it recognises — the corpus carries 'c〉α〉', '4〉b〉α〉',
+# 'II〉1〉a〉'. Mirrors MARK's own closer rules: ASCII ')' for digit/latin only.
+ADJACENT_MARKERS = re.compile(
+    r'([)〉])(?=(?:\d{1,2}|[a-z])[)〉]|(?:[' + GREEK + r']|[IV]+)〉)')
 
 
 def leaf_senses(buf):
     """Yield (slp1, hom, sense_id, gloss_de, ls_loci) for one PWG record's
     numbered/lettered leaf senses. `sense_id` = the microstructure sense path
-    (n + sub, e.g. '1a'/'1b'/'3a'). Note: PWG Nachträge (supplement) entries
+    (div + n + sub + sub2, e.g. '1a'/'1b'/'3a', and since H3948 also '2aα',
+    'II1a', or a bare 'III' for a childless roman division). Note: PWG
+    Nachträge (supplement) entries
     reference an existing sense by number in their OWN <L> record (e.g. a
     bare "1〉b〉 <ls>…</ls>" addendum) — such a record contributes an
     ADDITIONAL row under the same (slp1, hom, sense_id) key, not a merge; a
@@ -331,7 +418,7 @@ def leaf_senses(buf):
     for seg in split_senses(body):
         if seg['n'] == '0':
             continue  # pre-sense head text — not a numbered/lettered leaf sense
-        sense_id = seg['n'] + (seg['sub'] or '')
+        sense_id = sense_path(seg)
         gloss_de = clean_de(seg['text'])[:200]
         ls_loci = ';'.join(ls_citations(seg['text']))
         yield slp1, h, sense_id, gloss_de, ls_loci
