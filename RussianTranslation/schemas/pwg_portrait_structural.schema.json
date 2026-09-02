@@ -80,8 +80,19 @@
         "citations_resolved", "strata", "examples_sa"
       ],
       "properties": {
-        "n": { "type": "string" },
+        "div": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }],
+          "description": "H3948 (FINDINGS Sec.453): roman division tier (I> II> III>), null when the record has no divisions. Mirrors 'div' in the base RU schema."
+        },
+        "n": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }],
+          "description": "Digit tier. null when the sense IS a childless roman division (H3948) -- the division is then itself the leaf and carries no digit of its own; '0' marks a parent division's pre-sense head text, which leaf_senses() skips."
+        },
         "sub": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "sub2": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }],
+          "description": "H3948 (FINDINGS Sec.453): greek sub-sub-sense tier (alpha> beta> gamma>), null when the latin sub-sense has no greek children."
+        },
         "equivalents_de": { "type": "array", "items": { "type": "string" } },
         "gloss_de": { "type": "string" },
         "equivalence_type": { "enum": ["equivalent", "explanatory", "none"] },
