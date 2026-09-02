@@ -2,6 +2,12 @@
 
 _Created: 08-07-2026 · Last updated: 02-09-2026_
 
+> **Truth-pass 02-09-2026** (H3775) — `roadmap_handoff_truth.py --check` flagged this
+> page drained but still living: **6 of 6 referenced handoffs have shipped, zero remain OPEN**.
+> Kept at this path per MG ruling 31-08-2026 (do not archive) — the strategy/plan
+> layer still holds even though its backlog has fully closed. A future session
+> reopening work here should mint a fresh H### rather than un-close these.
+
 > **Status correction 02-09-2026** ([H3794 (Sonnet 5) — PWG ceiling residual Wave B: the cheap derivables](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3794-Sonnet_SanskritLexicography_pwg-ceiling-residual-waveb-derivables_31.08.26.md)):
 > B1's gold-set *build* is no longer Wave 2 — [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md)
 > shipped the 300-row Sa→Ru BLI frame ahead of the coverage gate (shipped 25-08-2026, PR
