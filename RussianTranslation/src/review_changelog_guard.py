@@ -10,6 +10,16 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 CHANGELOG = "RussianTranslation/CHANGELOG.md"
+# H3355: [Unreleased] bullets are hook-blocked; entries land in changelog_queue/ and
+# are consumed at release-cut. A queued entry in the same diff satisfies this guard
+# (02-09-2026, H3864 — the guard predated the queue and refused every queued audit).
+CHANGELOG_QUEUE_PREFIX = "changelog_queue/"
+
+
+def has_changelog_touch(changed):
+    if CHANGELOG in changed:
+        return True
+    return any(p.startswith(CHANGELOG_QUEUE_PREFIX) and p.endswith(".md") for p in changed)
 BYPASS_MARKER = "Changelog: not applicable"
 REVIEW_PATTERNS = (
     "RussianTranslation/*REVIEW*.md",
@@ -71,7 +81,7 @@ def check(paths):
     review_files = sorted(p for p in changed if is_review_file(p))
     if not review_files:
         return 0
-    if CHANGELOG in changed:
+    if has_changelog_touch(changed):
         return 0
     unwaived = [p for p in review_files if not has_bypass_marker(p)]
     if not unwaived:
@@ -93,6 +103,11 @@ def selftest():
         assert check(["RussianTranslation/CODE_REVIEW_2026-07-04.md"]) == 1
     assert check(["RussianTranslation/CODE_REVIEW_2026-07-04.md", CHANGELOG]) == 0
     assert check(["RussianTranslation/README.md"]) == 0
+    assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
+                  "changelog_queue/2026-09-02-x.md"]) == 0
+    with contextlib.redirect_stderr(io.StringIO()):
+        assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
+                      "changelog_queue/README.txt"]) == 1
     with tempfile.TemporaryDirectory() as d:
         path = os.path.join(d, "REVIEW.md")
         with open(path, "w", encoding="utf-8") as f:
