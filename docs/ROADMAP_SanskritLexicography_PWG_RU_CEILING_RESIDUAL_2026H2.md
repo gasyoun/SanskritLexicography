@@ -2,6 +2,12 @@
 
 _Created: 19-08-2026 · Last updated: 02-09-2026_
 
+> **Truth-pass 02-09-2026** (H3775) — `roadmap_handoff_truth.py --check` flagged this
+> page drained but still living: **8 of 8 referenced handoffs have shipped, zero remain OPEN**.
+> Kept at this path per MG ruling 31-08-2026 (do not archive) — the strategy/plan
+> layer still holds even though its backlog has fully closed. A future session
+> reopening work here should mint a fresh H### rather than un-close these.
+
 Index: [PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
 
 **Status 02-09-2026 ([H3794](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3794-Sonnet_SanskritLexicography_pwg-ceiling-residual-waveb-derivables_31.08.26.md)): R1–R5 are all ✅ shipped** — every unit below closed before H3794 was picked up; H3794's residual work was verifying that and correcting the four source roadmaps' stale status text (CEILING, HERITAGE, RESEARCH_CAPABILITY, ACL_LESSONS), not new engineering.
