@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 02-09-2026_
+_Created: 06-08-2026 · Last updated: 03-09-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -161,6 +161,22 @@ independent review receipt yet, so no cutover:
 Control-plane tools (FEATURES_INDEX **L11**):
 [`cohort_engine.py`](RussianTranslation/src/pilot/cohort_engine.py) (offline multi-profile),
 [`no_pwg_residual_ledger.py`](RussianTranslation/src/pilot/no_pwg_residual_ledger.py) (C-49).
+**Enumeration tiers are FOUR, not two (H3948, 02-09-2026):** PWG numbers senses on four
+distinct printed tiers, and
+[`RussianTranslation/src/microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py)
+is the one sanctioned reading of all four — never re-derive a tier from a marker's shape.
+Sync rule: **changing a tier rule in `microstructure.py` ⇒ re-run
+[`microstructure_four_tier_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure_four_tier_selftest.py)
+and re-measure with
+[`pwg_four_tier_store_impact.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py)
+in the same PR** — the measured impact
+([reports/H3948_four_tier_store_impact.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3948_four_tier_store_impact.json),
+3,212 of 11,462 rows affected = 28.02 %) is what any re-segmentation decision rests on.
+**A marker whose tier is genuinely ambiguous in the printed source is left unsplit and
+counted as an unresolved class — never guessed** ([FINDINGS §453](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md));
+2,210 of those 3,212 rows are unresolvable, so a blind bulk re-segmentation would rewrite
+them on a guess.
+
 **Gate-evidence contract (H3748, W1, 31-08-2026):** every pwg_ru gate builds its verdict
 *through* [`RussianTranslation/src/pilot/gate_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gate_evidence.py)
 — hashed inputs, predicate evaluation + hit counts, a JSON sidecar, and
