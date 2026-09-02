@@ -5,6 +5,8 @@ _Created: 10-07-2026 · Last updated: 02-09-2026_
 > Consolidated Russian style guide of record (all ratified rules, with provenance and the
 > open 10-07 vs 19-07 abbreviation contradiction surfaced):
 > [PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (H1859).
+> Provenance of the three rulings behind this file, its limitations, and the ranked
+> improvement backlog: [ABBREVIATIONS_RU.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.meta.md).
 
 ## Why this exists
 

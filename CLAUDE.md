@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 31-08-2026_
+_Created: 06-08-2026 · Last updated: 02-09-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -187,7 +187,22 @@ and never re-spell the key: it is the identity of 11k already-promoted rows. FIN
 policy, distinct from mw_ru's "leave `<gram>` untouched" rule above —
 grammatical-category abbreviations stay international Latin with a tooltip,
 editorial/cross-reference ones translate to Russian, both decided 10-07-2026):
-[`RussianTranslation/ABBREVIATIONS_RU.md`](RussianTranslation/ABBREVIATIONS_RU.md).
+[`RussianTranslation/ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md).
+
+**Abbreviation invariant (H3959, MG ruling 02-09-2026):** «some remain Latin, none
+remain German, most German become Russian and do not become Latin». Every `<ab>`
+token the corpus uses belongs to exactly one of three **explicit, disjoint** sets in
+[`RussianTranslation/src/pwg_ab_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab_ru.py) —
+`RU_MAP` (Bucket A, renders Russian; every value **must** be Cyrillic), `BUCKET_B`
+(grammatical categories, stay Latin), `RESIDUE` (declared undecided, with a per-token
+reason). "Not in `RU_MAP`" no longer means "Bucket B": that inference was the defect
+this ruling outlawed. **Sync rule — adding or reclassifying a token means running
+`python pwg_ab_ru.py census` in the same PR**; it exits 1 on any token outside all
+three sets or any non-Cyrillic `RU_MAP` value, and a new token appearing as the corpus
+grows is meant to surface there. Do **not** route a Bucket-A token to Latin — that is
+the exact direction the ruling forbids, and the German→Latin direction of the H2849
+sweep applies to Bucket B only. Ruling record: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md);
+consolidated style rules 3.1–3.5: [`pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md).
 
 ## Authoring conventions
 
