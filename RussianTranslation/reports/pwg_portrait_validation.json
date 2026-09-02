@@ -1,12 +1,23 @@
 {
  "schema": "pwg_portrait_validation/0.1",
  "total_records": 123366,
- "passes": 123366,
+ "passes": 123364,
  "buckets": {
   "parse-error": 0,
-  "schema-violation": 0,
+  "schema-violation": 2,
   "unexpected-but-attested": 0
  },
  "unclassified": 0,
- "failures": []
+ "failures": [
+  {
+   "record_id": "19236",
+   "failure_type": "schema-violation",
+   "detail": "'nom' is not one of ['acc', 'loc', 'instr', 'gen', 'dat', 'abl']\n\nFailed validating 'enum' in schema['properties']['senses']['items']['properties']['government']['items']['properties']['cases']['items"
+  },
+  {
+   "record_id": "81366",
+   "failure_type": "schema-violation",
+   "detail": "'nom' is not one of ['acc', 'loc', 'instr', 'gen', 'dat', 'abl']\n\nFailed validating 'enum' in schema['properties']['senses']['items']['properties']['government']['items']['properties']['cases']['items"
+  }
+ ]
 }

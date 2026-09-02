@@ -55,8 +55,10 @@
         "examples_sa"
       ],
       "properties": {
-        "n": { "type": "string" },
+        "div": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "n": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
         "sub": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "sub2": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
         "equivalents_de": { "type": "array", "items": { "type": "string" } },
         "gloss_de": { "type": "string" },
         "equivalence_type": {
