@@ -1,6 +1,6 @@
 # PLAN — PWG→RU research-ceiling residual programme, 2026 H2 (index)
 
-_Created: 19-08-2026 · Last updated: 19-08-2026_
+_Created: 19-08-2026 · Last updated: 02-09-2026_
 
 Authored by Opus 5 (`claude-opus-5`) under
 [H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md).
@@ -73,13 +73,15 @@ CEILING decision log (MG, 08-07-2026), not re-opened:
 
 ## Residual units
 
-| # | Unit | Handoff | Gate |
-|---|---|---|---|
-| R1 | C2 phase 1 — per-sense attestation window | [H3168 (Sonnet 5) — Ceiling C2 phase 1: per-sense attestation window](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3168-Sonnet_SanskritLexicography_ceiling-c2p1-sense-attestation-window_19.08.26.md) | none — deterministic |
-| R2 | C4 — KEWA normalization + dhātu-aware join | [H3169 (Opus 5) — Ceiling C4: KEWA index normalization and join](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3169-Opus_SanskritLexicography_ceiling-c4-kewa-normalize-join_19.08.26.md) | rights known, not blocking (derived use only) |
-| R3 | C8 — DharmaMitra license-gated probe + outreach draft | [H3170 (Sonnet 5) — Ceiling C8: DharmaMitra probe plus outreach draft](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3170-Sonnet_SanskritLexicography_ceiling-c8-dharmamitra-probe-outreach_19.08.26.md) | none for measuring; composition is an `@DECIDE` |
-| R4 | Heritage phase 6 — segmenter-as-service cross-validation | [H3171 (Sonnet 5) — Heritage phase 6: segmenter-as-service cross-validation](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3171-Sonnet_SanskritLexicography_heritage-phase6-segmenter-service_19.08.26.md) | none — "can run whenever" |
-| R5 | Shared gold sets (WSD 200 + COMET-QE slice + BLI 300) | [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md) | none — the ruled protocol needs no second human |
+**All five ✅ shipped as of 02-09-2026** — verified by [H3794 (Sonnet 5) — PWG ceiling residual Wave B: the cheap derivables](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3794-Sonnet_SanskritLexicography_pwg-ceiling-residual-waveb-derivables_31.08.26.md).
+
+| # | Unit | Handoff | Status | Gate |
+|---|---|---|---|---|
+| R1 | C2 phase 1 — per-sense attestation window | [H3168 (OxAlpha) — Ceiling C2 phase 1: per-sense attestation window](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3168-OxAlpha_SanskritLexicography_ceiling-c2p1-sense-attestation-window_19.08.26.md) | ✅ shipped 23-08-2026 | none — deterministic |
+| R2 | C4 — KEWA normalization + dhātu-aware join | [H3169 (Opus 5) — Ceiling C4: KEWA index normalization and join](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3169-Opus_SanskritLexicography_ceiling-c4-kewa-normalize-join_19.08.26.md) | ✅ shipped 25-08-2026 | rights known, not blocking (derived use only) |
+| R3 | C8 — DharmaMitra license-gated probe + outreach draft | [H3170 (OxAlpha) — Ceiling C8: DharmaMitra probe plus outreach draft](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3170-OxAlpha_SanskritLexicography_ceiling-c8-dharmamitra-probe-outreach_19.08.26.md) | ✅ shipped 24-08-2026 | none for measuring; composition is an `@DECIDE` |
+| R4 | Heritage phase 6 — segmenter-as-service cross-validation | [H3171 (OxAlpha) — Heritage phase 6: segmenter-as-service cross-validation](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3171-OxAlpha_SanskritLexicography_heritage-phase6-segmenter-service_19.08.26.md) | ✅ shipped 23-08-2026 | none — "can run whenever" |
+| R5 | Shared gold sets (WSD 200 + COMET-QE slice + BLI 300) | [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md) | ✅ shipped 25-08-2026 — frames/protocols only, no labels (per-set κ deferred to a human pass) | none — the ruled protocol needs no second human |
 
 ## Not mintable — recorded so they stop being invisible
 
