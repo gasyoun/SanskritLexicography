@@ -2,6 +2,12 @@
 
 _Created: 09-07-2026 · Last updated: 02-09-2026_
 
+> **Truth-pass 02-09-2026** (H3775) — `roadmap_handoff_truth.py --check` flagged this
+> page drained but still living: **6 of 6 referenced handoffs have shipped, zero remain OPEN**.
+> Kept at this path per MG ruling 31-08-2026 (do not archive) — the strategy/plan
+> layer still holds even though its backlog has fully closed. A future session
+> reopening work here should mint a fresh H### rather than un-close these.
+
 > **⚠️ Shared blocker, updated 02-09-2026** (originally surfaced 19-08-2026, [H3001 (Opus 5) — Stale-roadmap slice 3: full /ask replan of stale Tier-1 roadmaps](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3001-Opus_multi_stale-roadmap-s3-tier1-ask-replan_17.08.26.md); status corrected by [H3794 (Sonnet 5) — PWG ceiling residual Wave B: the cheap derivables](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3794-Sonnet_SanskritLexicography_pwg-ceiling-residual-waveb-derivables_31.08.26.md)).
 > Card 1 (COMET-QE calibration) needs a frozen human A/B/C slice; card 3 (BLI
 > evaluation of `corpus_lexicon`) needs a 300-item Sa→Ru gold set. Both, plus
