@@ -1,0 +1,132 @@
+{
+  "conservative_ci95": [
+    0.272082955501637,
+    0.2885249635890994
+  ],
+  "corpus": "/Users/mac/Documents/GitHub/csl-orig/v02/pwg/pwg.txt",
+  "corpus_changed_key1": 331,
+  "corpus_distinct_key1": 106082,
+  "corpus_records": 123366,
+  "finding": "FINDINGS Sec.453",
+  "handoff": "H3948",
+  "join": "key1 only (FINDINGS Sec.454; store h holds '<div n=\"1\">')",
+  "limit": null,
+  "read_only": true,
+  "store": {
+    "bad_json_lines": 0,
+    "conservative_rows_key1_only": 3212,
+    "distinct_key1": 209,
+    "rows": 11462,
+    "sha256": "19fcf5258e5ea384baa6aa0883e5495edd83d1ec0cb9f0cbf70bfd912b69bb9c",
+    "store_key1_not_in_corpus_changed_set": 200,
+    "store_key1_that_changed": 9,
+    "tag_resolved_changed_rows": 12,
+    "tag_resolved_unchanged_rows": 990,
+    "tag_unresolved_rows": 2210,
+    "tag_unresolved_top_shapes": [
+      [
+        "main",
+        40
+      ],
+      [
+        "caus",
+        18
+      ],
+      [
+        "caus-1",
+        18
+      ],
+      [
+        "caus-2",
+        17
+      ],
+      [
+        "intro",
+        17
+      ],
+      [
+        "cross-ref",
+        13
+      ],
+      [
+        "caus-3",
+        9
+      ],
+      [
+        "caus-4",
+        9
+      ],
+      [
+        "caus-intro",
+        7
+      ],
+      [
+        "header",
+        7
+      ],
+      [
+        "e",
+        6
+      ],
+      [
+        "f",
+        6
+      ],
+      [
+        "1)",
+        6
+      ],
+      [
+        "anu",
+        6
+      ],
+      [
+        "c",
+        5
+      ]
+    ],
+    "top_changed_key1_by_rows": [
+      [
+        "gam",
+        673
+      ],
+      [
+        "han",
+        596
+      ],
+      [
+        "viS",
+        537
+      ],
+      [
+        "vas",
+        405
+      ],
+      [
+        "vad",
+        297
+      ],
+      [
+        "hA",
+        247
+      ],
+      [
+        "siD",
+        187
+      ],
+      [
+        "yat",
+        159
+      ],
+      [
+        "man",
+        111
+      ]
+    ]
+  },
+  "store_path": "/Users/mac/Documents/GitHub/pwg-ru-data/tm/pwg_ru_translated.jsonl",
+  "tag_resolved_ci95": [
+    0.0005990063463700215,
+    0.001829214884245967
+  ]
+}
