@@ -1,6 +1,6 @@
 # ROADMAP — PWG_RU_UNFREEZE (SanskritLexicography, 2026 H2)
 
-_Created: 17-07-2026 · Last updated: 27-08-2026_
+_Created: 17-07-2026 · Last updated: 02-09-2026_
 
 > **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). D4 addendum: this file joined the Wave 1 FLAG list after 21-08. Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
@@ -29,11 +29,24 @@ All offline except W1-L. Ordered by dependency, not priority.
 | **W1-B** | Offline false-flag rate for `SANLOSS_*` / `TNMASK_*`, with an arming recommendation | Sonnet 4.6 (`claude-sonnet-4-6`) | no | — |
 | **W1-C** | H858 `grammar`-field `{Tn}` stranding fix (`restoreCard`) | Sonnet 4.6 (`claude-sonnet-4-6`) | no | — |
 | **W1-D** | H1070's three EN guards, offline | Sonnet 4.6 (`claude-sonnet-4-6`) | no | — |
-| **W1-E** | ReverseDictionary dataset recovery + rights ledger | Opus 4.8 (`claude-opus-4-8[1m]`) | no | — (publish stays human `@DECIDE`) |
+| **W1-E** | ReverseDictionary dataset recovery + rights ledger | Opus 4.8 (`claude-opus-4-8[1m]`) | no | ✅ **SHIPPED 17/18-07-2026 — do not re-mint** (see the note below the table) |
 | **W1-F** | Handoff backlog triage (30 live rows) | Sonnet 4.6 (`claude-sonnet-4-6`) | no | — |
 | **W1-L** | Bounded c4 ladder as **CORRECTNESS_PROOF** | Opus 4.8 (`claude-opus-4-8[1m]`) | **yes, ≤3 calls** | owned by [H1110](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1110-Opus_SanskritLexicography_pwg-ru-post-h1080-audit-fix-skills-c4-restart_17.07.26.md) — **not re-minted here** |
 
 **W1-L is deliberately not a new handoff.** [H1110](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1110-Opus_SanskritLexicography_pwg-ru-post-h1080-audit-fix-skills-c4-restart_17.07.26.md) was minted 17-07-2026 and already owns the post-H1080 audit + bounded c4 restart, with its own atomic claim step. Minting a second handoff for the same ladder is the duplicate-mint this org has a registry check for. This roadmap only **binds its reporting vocabulary** (§4) and its budget (≤3 paid calls, home route, threshold untouched, two-profile).
+
+**W1-E shipped in July 2026 and its publish question is already ruled.** Both halves are done and merged:
+[H736](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H736-Fable_SanskritLexicography_reverse-dictionary-dataset-recovery_11.07.26.md)
+recovered the canonical `266820-reverse-Gasuns.txt` on 18-07-2026 ([PR #531](https://github.com/gasyoun/SanskritLexicography/pull/531),
+[v1.17.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.17.0)) — the "data loss" was a stranded 07-07 fast-forward
+backup, and the file verifies at 4,135,335 bytes / 266,820 data lines / SHA-256 `925e696f…e150b9970`, mirrored to drive D.
+[H1153](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1153-Opus_SanskritLexicography_revdict-rights-ledger-unresolvable-residue_17.07.26.md)
+built [`ReverseDictionary/RIGHTS_LEDGER.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/RIGHTS_LEDGER.md)
+on 17-07-2026 ([PR #529](https://github.com/gasyoun/SanskritLexicography/pull/529)) — three buckets, 14,471 / 266,820 = 5.4% stated as a
+**lower bound**, all five unmarked sources listed with their own licence facts.
+**MG resolved the publish `@DECIDE` on 19-07-2026:** publish the full ~266,820-headword merged list openly, no subtraction; the ledger
+ships as documentation rather than as a filter. This row is left in the table for the historical record of Wave 1's scope — it is **not**
+open work. Reading the bare row as a to-do minted a duplicate handoff (H3789) on 31-08-2026, six weeks after delivery.
 
 Wave 1 can run **W1-A … W1-F fully in parallel** — they touch disjoint files. W1-L is independent of all of them.
 
@@ -48,7 +61,7 @@ Wave 1 can run **W1-A … W1-F fully in parallel** — they touch disjoint files
 | **`promote_en.py` / the first EN store merge** | a live judge-tier profile frees | Ruling 5 is scaffolding-only. The store carries **0 EN rows**; W1-D must not change that. |
 | **Arming either hard-reject** | owner ruling on W1-B's rate | Owner-gated by construction ([`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) comments say so at both flags). |
 | **The 468 re-translation** | a later *authorized live run* | Debt D-1. Offline waves cannot discharge it; pretending otherwise re-creates the C-05 hazard. |
-| **Any ReverseDictionary publish** | human `@DECIDE` on W1-E's ledger | The PD-only subset cannot be *certified* on available data. |
+| ~~**Any ReverseDictionary publish**~~ — **UNFROZEN 19-07-2026** | ~~human `@DECIDE` on W1-E's ledger~~ | MG ruled: publish the full merged list openly, no subtraction. The PD-only subset still cannot be *certified* on available data, so the ledger's lower-bound caveat ships **with** the data as documentation, not as a filter. Separate open human call: [`.doc.pdf/Reverse-Kochergina.mdx`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/.doc.pdf/) in-copyright on public `master` (H734-class). |
 | **The 30 s threshold, 180 s kill ceiling, profile count** | — | Ruling 2 fixes them. [FINDINGS §80](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) already ruled "lower the ceiling" empirically dead. |
 | **The canonical store** | — | Wave 1 is read-only against it. No deliverable mutates it. |
 
@@ -78,7 +91,7 @@ Each Wave-2 branch is named with its trigger. **None is authorized by this plan*
 | **Human** completes [GTD:579](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) foreign-route provisioning | [H909](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H909-Opus_SanskritLexicography_h818-foreign-route-paired-probe-analysis_14.07.26.md) resumes on the paired A-B-B-A JSONL; a route PASS then feeds the one-account canary→10→20 ladder | Human `@DO`. Note GTD:579's own re-scoping: packet finding **C-15** says the 180 s kill ceiling is **route-independent**, so a route fix alone may not unblock the drain. W1-A is one of the two free measurements GTD:579 asks to run *before* spending that effort — this plan delivers it. |
 | **Human** authenticates c5/c6 | Ladder rungs 3–6 become discussable — **and only then** is "four-profile" a word this repo may write | Human `@DO`. Latency remains an independent gate; the logins alone do not pass the ladder. |
 | A live judge-tier profile frees | FU1 Phase 2: `promote_en` → `annotate_dcs_freq` → judge → human gold, with W1-D's guards already in place | Live capacity. W1-D exists precisely so this is a run, not a re-adjudication. |
-| Human `@DECIDE` on W1-E's ledger | Publish / restrict / seek per-source lists for the 5 unresolvable sources | Human `@DECIDE`. |
+| ~~Human `@DECIDE` on W1-E's ledger~~ — **ANSWERED 19-07-2026** | MG chose *publish openly, no subtraction*. Funding per-source headword lists for the five silent sources stays the only path to a certified subtraction, and is now an optional future spend rather than a gate. | Done — no longer a trigger. |
 
 ---
 
