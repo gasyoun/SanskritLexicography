@@ -1,6 +1,11 @@
 # Roadmap B — what ACL Anthology / comparable projects teach: BLI evaluation, sense benchmark, Lexical Linked Data
 
-_Created: 08-07-2026 · Last updated: 09-08-2026_
+_Created: 08-07-2026 · Last updated: 02-09-2026_
+
+> **Status correction 02-09-2026** ([H3794 (Sonnet 5) — PWG ceiling residual Wave B: the cheap derivables](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3794-Sonnet_SanskritLexicography_pwg-ceiling-residual-waveb-derivables_31.08.26.md)):
+> B1's gold-set *build* is no longer Wave 2 — [H3172 (Opus 5) — Shared gold sets unblocking WSD and BLI](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3172-Opus_SanskritLexicography_pwgru-shared-gold-wsd-bli_19.08.26.md)
+> shipped the 300-row Sa→Ru BLI frame ahead of the coverage gate (shipped 25-08-2026, PR
+> [#1879](https://github.com/gasyoun/SanskritLexicography/pull/1879)), the same "building the yardstick isn't coverage-gated, only running it is" reasoning as CEILING's C2 phase 2. **The frame has no labels yet** — MG pass-1 human annotation, tracked in [RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESEARCH_CAPABILITY_ROADMAP_2026-07-09.md) — so B1 scoring stays in Wave 2 (see B1 and Phasing below).
 
 Three ACL-adjacent literatures map directly onto layers this repo already has. This roadmap folds the ground-truth corrections verified 08-07-2026 (what exists vs what the naive reading assumed) and MG's same-day rulings (decision log at the bottom). Companion: [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md) (the "what we can't answer" side) and the standing [ACL_ANTHOLOGY_MONITOR.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ACL_ANTHOLOGY_MONITOR.md) (complement, don't duplicate). Sequencing: **H335 audit → quick wins in parallel with translation → benchmark/graph phases after ~50% coverage.**
 
@@ -16,7 +21,7 @@ Three ACL-adjacent literatures map directly onto layers this repo already has. T
 
 `corpus_lexicon.jsonl` (1.09 M Sa↔Ru pairs, SLP1) *is* bilingual lexicon induction from parallel text — but it has coverage numbers, not a BLI evaluation. ACL's 25-year literature (IBM/fast_align → embedding BLI) gives the standard: **P@1 and MRR against a gold set**. Cheap, publishable upgrade.
 
-- **Gold set** (~500 lemma→RU pairs, stratified by frequency band): MG annotates pass 1; a frozen, documented model (Fable 5, fixed prompt + version) annotates pass 2 independently; `/gold-adjudicate` computes κ and MG adjudicates disagreements. Honest label: *human–model agreement* (human recruiting parked for 2026 — do not resurface).
+- **Gold set** (~500 lemma→RU pairs, stratified by frequency band): MG annotates pass 1; a frozen, documented model (Fable 5, fixed prompt + version) annotates pass 2 independently; `/gold-adjudicate` computes κ and MG adjudicates disagreements. Honest label: *human–model agreement* (human recruiting parked for 2026 — do not resurface). **✅ Frame shipped 25-08-2026 (H3172):** the 300-row Sa→Ru frame + protocol exist; labels (MG pass 1) are the open residual, not an engineering task.
 - **Harness**: deterministic scorer (P@1, P@5, MRR) over `corpus_lexicon` ranked candidates; the same harness later scores any embedding-BLI or DharmaMitra candidate system (shared with ceiling-roadmap C1's design).
 - **Paper slot**: this is an obvious `Axx` (BLI for a morphologically rich low-resource pair with a 19th-c. dictionary as silver standard) — route through `/paper-scaffold` when the numbers exist.
 
