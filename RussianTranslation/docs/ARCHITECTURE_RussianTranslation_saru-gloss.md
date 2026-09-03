@@ -1,6 +1,6 @@
 # ARCHITECTURE — Sa→Ru gloss layer
 
-_Created: 19-07-2026 · Last updated: 19-07-2026_
+_Created: 19-07-2026 · Last updated: 03-09-2026_
 
 Index: [PLAN_RussianTranslation_saru-gloss-quality_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_saru-gloss-quality_2026H2.md).
 
@@ -41,11 +41,25 @@ precedence:
    `source='vidyut'`.
 3. **Morpheme-marker recovery** — forms carrying a corpus boundary mark (`A+gam`) split on `[+-]`;
    joined string retried as a form, else rightmost element if it is a known root/lemma. `source='marker'`.
+3b. **Marker head-form recovery (H3876)** — same split, but the rightmost element is itself
+   *inflected* (`A-brahma-BuvanAt` → `BuvanAt`), so it is lemmatized through the **DCS**
+   form→lemma map. Two measured guards: DCS keys only (vidyut lemmatizes compound-internal
+   elements at 35/42, and wave 2 put the whole vidyut tier at 71.8 %) and head length ≥ 3
+   (every 1–2 char head resolved to a pronoun homograph). Recovers 1,018 forms / 1,783 tokens
+   of the 1,389-form marker residual. `source='marker-head'` — a separate tag, because this is
+   the layer's weakest evidence and must stay filterable. Nothing is segmented here: the
+   corpus's own marks supply the decomposition, which is why this is **not** the wave-3 cheda
+   route that returned NO-GO. Evidence:
+   [REPORT_H3876_saru_marker_head_recovery_03-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/REPORT_H3876_saru_marker_head_recovery_03-09-2026.md).
 4. **Unresolved** — kept in Layer 1, characterised in the failure typology.
 
 Provenance is carried per record (`source` field). **This tiering is exactly what wave 2 measures
-per-tier** — the architecture's central untested assumption is that these three heuristics produce
-correct lemmatization, and no number has ever tested it.
+per-tier** — the architecture's central assumption is that these heuristics produce correct
+lemmatization. Wave 2 tested the first three (dcs 94.9 % · vidyut 71.8 % · marker 93.3 % lemma
+precision, 3-judge panel, n=110:
+[gold/saru_gloss_precision_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/saru_gloss_precision_report.md));
+`marker-head` is registered in the `TIERS` tuple of the sampler and the aggregator but has only a
+single-judge number so far (25/25 lemma) — the panel run for it is still owed.
 
 ## Component boundaries after this span
 
