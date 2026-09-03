@@ -34,7 +34,9 @@ import glob
 import hashlib
 import json
 import os
+import subprocess
 import sys
+import zipfile
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -110,7 +112,170 @@ def component_sha(patterns, root=ROOT):
     return h.hexdigest()[:16]
 
 
-def stamp(manifest=None, model_version=None, root=ROOT):
+# --- forward provenance: git source state + component blob archive (H3982) ---
+# Implements SPEC_PWG_RU_PROVENANCE_BACKFILL_31-08-2026.md section 2.3. The census
+# root cause is that the pipeline runs against an UNCOMMITTED working tree, so the
+# committed history cannot describe it and a *_sha resolves to bytes nobody kept.
+# Two additions close that, both on the generation path:
+#   1. every stamp says which commit the run believed it was on, and whether the
+#      bytes on disk differed from it (a dirty run stays legal; a hidden one does not);
+#   2. the component bytes themselves are archived, content-addressed, at the moment
+#      the hash is computed — so every future *_sha expands back into real files.
+BLOB_DIRNAME = os.path.join('reports', 'pipeline_blobs')
+BLOB_ARCHIVE_SCHEMA = 'pwg_ru.pipeline_blob.v1'
+
+
+def blob_archive_dir(root=ROOT):
+    """Where component blobs live: ``$PWG_RU_BLOB_DIR`` -> canonical checkout -> local.
+
+    Resolved the way ``store_path.canonical_store`` resolves the store, and for the
+    same reason: a ``<name>_sha`` written into the CANONICAL store must resolve on the
+    machine that holds that store. An archive under the running worktree would be
+    deleted with the worktree while the rows it explains survive in the shared store —
+    the H255 loss mode, one layer down, and exactly the "hash that resolves to nothing"
+    this work exists to prevent. ``$PWG_RU_BLOB_DIR`` pins a directory for tests and
+    deliberately-isolated runs (its own variable, as ``$PWG_RU_TM_DIR`` is for sidecars).
+    """
+    env = os.environ.get('PWG_RU_BLOB_DIR')
+    if env:
+        return env
+    try:
+        from store_path import main_worktree_root
+        main = main_worktree_root(root)
+    except Exception:
+        main = None
+    if main:
+        return os.path.join(main, 'RussianTranslation', BLOB_DIRNAME)
+    return os.path.join(root, BLOB_DIRNAME)
+
+
+def _git(root, *args):
+    """Run a read-only git command in ``root``; None when git/repo is unavailable."""
+    try:
+        out = subprocess.run(('git', '-C', root) + args, capture_output=True,
+                             encoding='utf-8', errors='replace', timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if out.returncode != 0:
+        return None
+    return out.stdout
+
+
+def git_source_state(root=ROOT):
+    """``{source_commit, worktree_dirty[, dirty_component_sha]}`` for a stamp.
+
+    ``source_commit`` is the commit the run BELIEVED it was on — the honest answer
+    is the HEAD sha, never a claim that the bytes equal that commit. ``worktree_dirty``
+    states whether they did. When dirty, ``dirty_component_sha`` is a 16-hex identity
+    over the working-tree delta (porcelain status + tracked diff), so two dirty runs
+    of the same commit are distinguishable in the store.
+
+    Outside a git checkout every field degrades honestly: commit None, dirty None.
+    Never raises — a provenance stamp must not be able to fail a translation run.
+    """
+    head = _git(root, 'rev-parse', 'HEAD')
+    porcelain = _git(root, 'status', '--porcelain')
+    state = {'source_commit': head.strip() if head else None}
+    if porcelain is None:
+        state['worktree_dirty'] = None
+        return state
+    dirty = bool(porcelain.strip())
+    state['worktree_dirty'] = dirty
+    if dirty:
+        h = hashlib.sha256()
+        h.update(porcelain.encode('utf-8'))
+        h.update((_git(root, 'diff', 'HEAD') or '').encode('utf-8'))
+        state['dirty_component_sha'] = h.hexdigest()[:16]
+    return state
+
+
+def archive_component_blob(sha, patterns, root=ROOT, archive_dir=None):
+    """Write the component's file SET to ``<archive>/<sha>.zip``, once.
+
+    Content-addressed and write-once: the name IS the hash ``component_sha``
+    recorded in the row, so resolving a stamp is a file lookup, not a git
+    archaeology exercise. Entries are stored at their repo-relative path with a
+    fixed timestamp so the same byte set always produces the same archive.
+    Returns the zip path, or None when there is nothing to archive (sha 'na').
+    """
+    if not sha or sha == 'na':
+        return None
+    archive_dir = archive_dir or blob_archive_dir(root)
+    dest = os.path.join(archive_dir, '%s.zip' % sha)
+    if os.path.exists(dest):
+        return dest
+    files = component_files(patterns, root)
+    if not files:
+        return None
+    os.makedirs(archive_dir, exist_ok=True)
+    tmp = dest + '.%d.tmp' % os.getpid()
+    try:
+        with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as z:
+            for f in files:
+                rel = os.path.relpath(f, root).replace('\\', '/')
+                info = zipfile.ZipInfo(rel, date_time=(1980, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o644 << 16
+                with open(f, 'rb') as fh:
+                    z.writestr(info, fh.read())
+            meta = json.dumps({'schema': BLOB_ARCHIVE_SCHEMA, 'component_sha': sha,
+                               'files': [os.path.relpath(f, root).replace('\\', '/')
+                                         for f in files]},
+                              ensure_ascii=False, sort_keys=True, indent=1)
+            minfo = zipfile.ZipInfo('.blobmeta.json', date_time=(1980, 1, 1, 0, 0, 0))
+            minfo.compress_type = zipfile.ZIP_DEFLATED
+            minfo.external_attr = 0o644 << 16
+            z.writestr(minfo, meta.encode('utf-8'))
+        os.replace(tmp, dest)
+    finally:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+    return dest
+
+
+def resolve_blob(sha, root=ROOT, archive_dir=None):
+    """Path to the archived bytes behind a recorded ``*_sha``, or None."""
+    if not sha or sha == 'na':
+        return None
+    archive_dir = archive_dir or blob_archive_dir(root)
+    path = os.path.join(archive_dir, '%s.zip' % sha)
+    return path if os.path.exists(path) else None
+
+
+def store_blob_coverage(store_path, root=ROOT, archive_dir=None):
+    """Which component hashes in a store resolve to archived bytes.
+
+    Split by era, because they answer different questions: rows stamped by the
+    forward path (``source_commit`` present) MUST resolve — an unresolvable hash
+    there is the same provenance gap one layer down, and the H3982 acceptance
+    fails on it. Pre-H3982 rows cannot resolve and are counted, never blamed.
+    """
+    seen_fwd, seen_legacy = set(), set()
+    rows = fwd_rows = 0
+    for _ln, row in iter_store(store_path):
+        pipeline = row_pipeline(row)
+        if not pipeline:
+            continue
+        rows += 1
+        forward = pipeline.get('source_commit') is not None \
+            or pipeline.get('worktree_dirty') is not None
+        if forward:
+            fwd_rows += 1
+        for name in COMPONENTS:
+            sha = pipeline.get('%s_sha' % name)
+            if sha and sha != 'na':
+                (seen_fwd if forward else seen_legacy).add(sha)
+    missing = sorted(s for s in seen_fwd if not resolve_blob(s, root, archive_dir))
+    legacy_missing = sorted(s for s in seen_legacy
+                            if not resolve_blob(s, root, archive_dir))
+    return {'rows_with_pipeline': rows, 'forward_rows': fwd_rows,
+            'forward_hashes': len(seen_fwd), 'forward_unresolved': missing,
+            'legacy_hashes': len(seen_legacy),
+            'legacy_unresolved_count': len(legacy_missing)}
+
+
+def stamp(manifest=None, model_version=None, root=ROOT, archive=True,
+          archive_dir=None, git_state=True):
     """Build the ``provenance.pipeline`` dict to embed in a translated row.
 
     Flat keys per component (``<name>_version`` / ``<name>_sha``) plus an echoed
@@ -127,13 +292,27 @@ def stamp(manifest=None, model_version=None, root=ROOT):
     they inspect the manifest — they cannot repair provenance already written into
     the store. H1957 removed the memo: the ~0.27 s/promote it saved does not buy
     anything worth a false provenance record.
+
+    H3982 adds the forward half of the provenance fix (spec 2.3): ``archive`` writes
+    each component's bytes into the content-addressed blob archive at the moment the
+    hash is computed, so a recorded ``<name>_sha`` stays expandable into real files
+    forever; ``git_state`` records the commit the run BELIEVED it was on plus whether
+    the working tree differed from it. Both default on — a stamp that quietly omitted
+    them would recreate the era-A loss this spec exists to stop. Pass ``archive=False``
+    only in a read-only context (a report re-deriving a hash), never on a path that
+    writes a store row.
     """
     manifest = manifest or load_manifest()
     out = {'schema': PIPELINE_SCHEMA}
     for name in COMPONENTS:
         comp = manifest['components'][name]
         out['%s_version' % name] = comp['version']
-        out['%s_sha' % name] = component_sha(comp['files'], root)
+        sha = component_sha(comp['files'], root)
+        out['%s_sha' % name] = sha
+        if archive:
+            archive_component_blob(sha, comp['files'], root, archive_dir)
+    if git_state:
+        out.update(git_source_state(root))
     if model_version:
         out['model_version'] = model_version
     return out
@@ -391,6 +570,45 @@ def cmd_backfill(args):
     return 0
 
 
+def cmd_blobs(args):
+    """Inspect the content-addressed component archive (H3982)."""
+    adir = args.archive_dir or blob_archive_dir()
+    if args.sha:
+        path = resolve_blob(args.sha, archive_dir=adir)
+        if not path:
+            print('MISSING %s (no blob in %s)' % (args.sha, adir))
+            return 1
+        if args.extract:
+            os.makedirs(args.extract, exist_ok=True)
+            with zipfile.ZipFile(path) as z:
+                z.extractall(args.extract)
+            print('extracted %s -> %s' % (args.sha, args.extract))
+        else:
+            with zipfile.ZipFile(path) as z:
+                for n in sorted(z.namelist()):
+                    print('%10d  %s' % (z.getinfo(n).file_size, n))
+        return 0
+    if args.store:
+        cov = store_blob_coverage(args.store, archive_dir=adir)
+        if args.json:
+            print(json.dumps(cov, ensure_ascii=False, sort_keys=True))
+        else:
+            print('rows_with_pipeline=%d forward_rows=%d forward_hashes=%d '
+                  'forward_unresolved=%d legacy_hashes=%d legacy_unresolved=%d'
+                  % (cov['rows_with_pipeline'], cov['forward_rows'],
+                     cov['forward_hashes'], len(cov['forward_unresolved']),
+                     cov['legacy_hashes'], cov['legacy_unresolved_count']))
+            for s in cov['forward_unresolved']:
+                print('  UNRESOLVED (forward) %s' % s)
+        return 1 if cov['forward_unresolved'] else 0
+    blobs = sorted(glob.glob(os.path.join(adir, '*.zip')))
+    total = sum(os.path.getsize(b) for b in blobs)
+    print('%d blob(s), %d bytes, in %s' % (len(blobs), total, adir))
+    for b in blobs:
+        print('  %s  %d bytes' % (os.path.basename(b)[:-4], os.path.getsize(b)))
+    return 0
+
+
 def selftest():
     import tempfile
     d = tempfile.mkdtemp()
@@ -466,6 +684,61 @@ def selftest():
     assert rows[0]['provenance']['pipeline']['backfilled'] is True
     assert rows[0]['provenance']['pipeline']['prompt_version'] == '1.0.0'
     assert 'backfilled' not in rows[1]['provenance']['pipeline']  # pre-stamped untouched
+    # --- H3982: forward provenance (blob archive + git source state) -------------
+    adir = os.path.join(d, 'reports', 'pipeline_blobs')
+    st3 = stamp(manifest, model_version='claude-opus-5', root=d)
+    # the tempdir is not a git checkout: every git field degrades honestly, never raises
+    assert st3['source_commit'] is None and st3['worktree_dirty'] is None, st3
+    # every recorded hash resolves to real archived bytes -- a hash that resolves to
+    # nothing is the same provenance gap one layer down (H3982 acceptance)
+    for _name in COMPONENTS:
+        blob = resolve_blob(st3['%s_sha' % _name], root=d)
+        assert blob and blob.startswith(adir), (_name, blob)
+    with zipfile.ZipFile(resolve_blob(st3['script_sha'], root=d)) as _z:
+        assert _z.read('src/s.py') == b's'
+        assert json.loads(_z.read('.blobmeta.json'))['schema'] == BLOB_ARCHIVE_SCHEMA
+    # deterministic + write-once: re-archiving the same sha does not rewrite the file
+    _p = resolve_blob(st3['glossary_sha'], root=d)
+    _before = open(_p, 'rb').read()
+    assert archive_component_blob(st3['glossary_sha'],
+                                  manifest['components']['glossary']['files'], d) == _p
+    assert open(_p, 'rb').read() == _before, 'blob archive must be write-once'
+    # editing a component yields a NEW sha with its own blob; the old one survives
+    open(os.path.join(d, 'glossaries', 'g.tsv'), 'w').write('g-EDITED')
+    st4 = stamp(manifest, root=d)
+    assert st4['glossary_sha'] != st3['glossary_sha']
+    assert resolve_blob(st4['glossary_sha'], root=d)
+    assert resolve_blob(st3['glossary_sha'], root=d), 'archiving must never evict'
+    # archive=False is the read-only path: no new blob appears for a fresh sha
+    open(os.path.join(d, 'glossaries', 'g.tsv'), 'w').write('g-AGAIN')
+    st5 = stamp(manifest, root=d, archive=False, git_state=False)
+    assert resolve_blob(st5['glossary_sha'], root=d) is None
+    assert 'source_commit' not in st5, 'git_state=False must add no git keys'
+    # coverage splits eras: a forward row must resolve, a legacy row is counted only
+    cov_store = os.path.join(d, 'cov.jsonl')
+    with open(cov_store, 'w', encoding='utf-8') as f:
+        f.write(json.dumps({'provenance': {'pipeline': dict(st3, source_commit='deadbeef')}}) + '\n')
+        f.write(json.dumps({'provenance': {'pipeline': {'prompt_sha': 'ffffffffffffffff'}}}) + '\n')
+    cov = store_blob_coverage(cov_store, root=d)
+    assert cov['forward_rows'] == 1 and cov['forward_unresolved'] == [], cov
+    assert cov['legacy_hashes'] == 1 and cov['legacy_unresolved_count'] == 1, cov
+    # a forward row whose hash was never archived is the failure the gate must catch
+    with open(cov_store, 'a', encoding='utf-8') as f:
+        f.write(json.dumps({'provenance': {'pipeline': {
+            'prompt_sha': 'abababababababab', 'worktree_dirty': True}}}) + '\n')
+    assert store_blob_coverage(cov_store, root=d)['forward_unresolved'] == \
+        ['abababababababab']
+    # git_source_state on a real checkout: HEAD recorded, dirt reported as dirt
+    if _git(d, 'init', '-q') is not None:
+        _git(d, 'add', '-A'); _git(d, '-c', 'user.email=t@t', '-c', 'user.name=t',
+                                   'commit', '-qm', 'x')
+        clean = git_source_state(d)
+        assert clean['source_commit'] and clean['worktree_dirty'] is False, clean
+        open(os.path.join(d, 'src', 's.py'), 'w').write('s-DIRTY')
+        dirty = git_source_state(d)
+        assert dirty['worktree_dirty'] is True and dirty['dirty_component_sha'], dirty
+        assert dirty['source_commit'] == clean['source_commit'], \
+            'a dirty tree still BELIEVES it is on HEAD -- that is what we record'
     print('pipeline_version selftest OK')
 
 
@@ -484,13 +757,19 @@ def main():
     bf.add_argument('--store', default=os.path.join(HERE, 'pwg_ru_translated.jsonl'))
     bf.add_argument('--prompt'); bf.add_argument('--glossary'); bf.add_argument('--script')
     bf.add_argument('--dry-run', action='store_true')
+    bl = sub.add_parser('blobs')
+    bl.add_argument('sha', nargs='?')
+    bl.add_argument('--store')
+    bl.add_argument('--archive-dir', dest='archive_dir')
+    bl.add_argument('--extract')
+    bl.add_argument('--json', action='store_true')
     ap.add_argument('--selftest', action='store_true')
     args = ap.parse_args()
     if args.selftest:
         return selftest()
     handler = {'show': cmd_show, 'check': cmd_check, 'freeze': cmd_freeze,
                'stale': cmd_stale, 'stamp-md': cmd_stamp_md,
-               'backfill': cmd_backfill}.get(args.cmd)
+               'backfill': cmd_backfill, 'blobs': cmd_blobs}.get(args.cmd)
     if not handler:
         ap.print_help(); return 0
     return handler(args)
