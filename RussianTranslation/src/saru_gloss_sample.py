@@ -32,7 +32,7 @@ G = os.path.normpath(os.path.join(HERE, '..', 'glossary'))
 RES = os.path.join(G, 'surface_resolution.tsv')
 OUT = os.path.join(HERE, '..', 'gold', 'saru_gloss_sample.jsonl')
 SEED = 42
-TIERS = ('dcs', 'vidyut', 'marker')
+TIERS = ('dcs', 'vidyut', 'marker', 'marker-head')
 
 
 def freq_band(n):
