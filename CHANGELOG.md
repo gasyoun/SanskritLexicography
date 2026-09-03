@@ -15,6 +15,28 @@ not an error.
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.148] - 2026-09-03
+
+- **H3876 — marker-residual recovery, tier `marker-head` (Opus 5 `claude-opus-5`, 03-09-2026).**
+  The 1,389 unresolved Sa→Ru forms carrying `+`/`-` morpheme marks are recovered **1,018 forms /
+  1,783 tokens** by lemmatizing the rightmost element through the *existing* DCS form→lemma map:
+  `A-brahma-BuvanAt` fell through only because `BuvanAt` is an ablative of `Buvana` — in neither
+  the bare-root nor the bare-lemma inventory, but a DCS form key all along. Nothing is segmented,
+  so the wave-3 `vidyut.cheda` NO-GO stands untouched. Token coverage 87.11 % → **87.28 %**,
+  resolved forms 111,996 → 113,014 (58.7 % → 59.2 %), typology row 1,389/2,312 → 371/529,
+  +17 lemma and +3 root entries, nothing lost. Two guards, each bought with a measurement: DCS
+  form keys only (all 42 vidyut-sourced heads adjudicated exhaustively — 35/42, with 7 bogus
+  lemmas like `vart`→`varDi`; wave 2 independently put the vidyut tier at 71.8 %) and head length
+  ≥ 3 (every 1–2 char head resolved to a pronoun homograph, `zA`→`tad`). Lemma precision **25/25**
+  on the canonical D5 tier × frequency sample (single-judge, not the 3-judge panel — that run is
+  still owed) against the wave-2 `marker` baseline of 93.3 %; layer impact 27 top-1 gloss flips in
+  40,387 lemma entries (0.067 %), 23 of them ties between two one-occurrence glosses, one mild
+  degradation (`saMsiD`). The gloss axis is the honest weak point — a compound's Russian attaches
+  to its head lemma, systematic lemma defect #3 the wave-2 panel already named, extended here to
+  1,018 more forms and not solved. `marker-head` registered in the `TIERS` tuple of
+  `saru_gloss_sample.py` + `saru_gloss_aggregate.py` so the next panel measures it; 10 new
+  regression tests. Published `.tsv`/`.jsonl` untouched (D8 fence). Report:
+  [docs/REPORT_H3876_saru_marker_head_recovery_03-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/REPORT_H3876_saru_marker_head_recovery_03-09-2026.md).
 ## [1.144.146] - 2026-09-03
 
 - **H3984: GAPS §14 graduated for the NOUN universe — both pooled declension classes split on an external lexical signal, not a character rule.** The long-ī bucket splits by IAST vowel-nucleus count on the NFC citation form (one nucleus = one syllable): **17 lemma_ids / 6,373 tokens** monosyllabic (śrī/strī/dhī type) against **4,477 / 58,295** polysyllabic (devī/nadī type). The `-ant` bucket splits on MW + PWG csl-json headword **entry-id sets** — shared ids mean one lexeme spelled twice, disjoint ids mean two headwords: **191 / 8,851** one-lexeme-two-spellings, **0 / 0** two-headwords, **51 / 2,384** `at_only`, **1 / 1** `ant_only`, **36 / 70** unresolved (no dictionary witness, left pooled). Reach **243 of 279 NOUN lemma_ids (87.1 %)**. Both re-bucketings reconcile against Sangram G2 exactly (`reconciles: true`, six checks, **no total moves**). A presence-only test inverted the pinned `bhagavat`/`bhagavant` pair — PWG indexes भगवत् and भगवन्त् under the identical id pair `53806,80057`; comparing id sets is the whole finding. The ADJ mass outside G2's NOUN-only universe (36,768 `-ant` tokens) is declared **unreached, not estimated** — it needs the 921 MB DCS master, absent on this box. Builder [`split_pooled_nominal_classes.py`](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/split_pooled_nominal_classes.py), reports [`nominal_pooled_class_split.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/nominal_pooled_class_split.md) + [`nominal_g2_reconciliation_split.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/nominal_g2_reconciliation_split.md) ([VisualDCS PR #123](https://github.com/gasyoun/VisualDCS/pull/123)); FINDINGS §630 added, [GAPS §14](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) flipped 🟠 → 🟡. Opus 5 (`claude-opus-5`).
