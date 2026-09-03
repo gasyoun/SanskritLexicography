@@ -21,6 +21,13 @@ Exact-substring match against the known BEFORE text guards against silent
 corruption if the store has drifted since H3500/H3685 were written - the
 script refuses (exit 1) rather than fuzzy-patching.
 
+H4040 (04-09-2026): ``--write`` no longer rewrites the store with a raw
+tmp+``os.replace`` — it routes through ``store_write.locked_store_rewrite``
+(the H2146 lock: PromoteClaim across the read-guard-write window, unique
+fsynced backup, atomic LF-only replace), and the default store resolves
+through ``store_path.canonical_store`` so a worktree run never writes a
+worktree-local copy (H255 loss mode).
+
   python src/h3685_genitive_fix.py [STORE] [--write] [--ledger PATH]
 """
 from __future__ import annotations
@@ -35,7 +42,11 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_STORE = os.path.join(HERE, "pwg_ru_translated.jsonl")
+sys.path.insert(0, HERE)
+from store_path import canonical_store  # noqa: E402
+from store_write import locked_store_rewrite  # noqa: E402
+
+DEFAULT_STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
 DEFAULT_LEDGER = os.path.join(HERE, "h3685_genitive_fix_ledger.jsonl")
 
 # (key1, subcard, sense_tag) -> (before_substring, after_substring)
@@ -104,12 +115,13 @@ def main() -> int:
               f"{e['before']!r} -> {e['after']!r}")
 
     if args.write:
-        tmp = args.store + ".h3685.tmp"
-        with io.open(tmp, "w", encoding="utf-8", newline="\n") as f:
-            for r in repaired:
-                f.write(json.dumps(r, ensure_ascii=False,
-                                   sort_keys=True) + "\n")
-        os.replace(tmp, args.store)
+        # H4040: the H2146 lock (PromoteClaim + unique fsynced backup + atomic
+        # replace) replaces the raw tmp+os.replace write. sort_keys is kept so
+        # the payload bytes stay identical to the historical serialization.
+        locked_store_rewrite(
+            args.store, repaired, tag='h3685',
+            serialize=lambda row: json.dumps(row, ensure_ascii=False,
+                                             sort_keys=True))
         with io.open(args.ledger, "w", encoding="utf-8", newline="\n") as f:
             for e in events:
                 f.write(json.dumps(e, ensure_ascii=False) + "\n")
