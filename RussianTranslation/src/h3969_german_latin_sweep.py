@@ -34,6 +34,12 @@ Run::
     python src/h3969_german_latin_sweep.py census      # count, change nothing
     python src/h3969_german_latin_sweep.py --apply     # rewrite the store in place
     python src/h3969_german_latin_sweep.py --selftest
+
+H4040 (04-09-2026): ``--apply`` no longer rewrites the store with a raw
+tmp+``os.replace`` — it routes through ``store_write.locked_store_rewrite``
+(the H2146 lock: PromoteClaim across the read-guard-write window, unique
+fsynced backup, atomic LF-only replace). The ``census`` positional was only
+ever a CLI shape, never a fence; the lock is the fence.
 """
 import argparse
 import collections
@@ -49,6 +55,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from store_path import canonical_store  # noqa: E402
+from store_write import locked_store_rewrite  # noqa: E402
 
 #: German-only markers and the Latin form each becomes. Bucket B only.
 #: ``Akk``/``Lok`` reuse H2849's shipped targets verbatim; ``Praes.`` is the ASCII
@@ -157,24 +164,28 @@ def census(store_path=None, field="ru"):
 
 
 def apply_sweep(store_path=None, field="ru"):
-    """Rewrite the store in place. Returns ``(rows_changed, subs, by_token, by_layer)``."""
+    """Rewrite the store. Returns ``(rows_changed, subs, by_token, by_layer)``.
+
+    H4040: the whole rewrite goes through ``locked_store_rewrite`` (H2146
+    lock + unique fsynced backup + atomic replace); the old raw
+    ``io.open(tmp, 'w')`` + ``os.replace`` pair is gone.
+    """
     store_path = store_path or _DEFAULT_STORE
-    tmp = store_path + ".h3969.tmp"
+    rows = []
     rows_changed = subs = 0
     by_token, by_layer = collections.Counter(), collections.Counter()
-    with io.open(tmp, "w", encoding="utf-8", newline="\n") as out:
-        for row in _rows(store_path):
-            body = row.get(field) or ""
-            new, applied = sweep_body(body)
-            if applied:
-                row[field] = new
-                rows_changed += 1
-                subs += len(applied)
-                by_layer[row.get("layer") or "?"] += 1
-                for token, _latin in applied:
-                    by_token[token] += 1
-            out.write(json.dumps(row, ensure_ascii=False) + "\n")
-    os.replace(tmp, store_path)
+    for row in _rows(store_path):
+        body = row.get(field) or ""
+        new, applied = sweep_body(body)
+        if applied:
+            row[field] = new
+            rows_changed += 1
+            subs += len(applied)
+            by_layer[row.get("layer") or "?"] += 1
+            for token, _latin in applied:
+                by_token[token] += 1
+        rows.append(row)
+    locked_store_rewrite(store_path, rows, tag='h3969')
     return rows_changed, subs, by_token, by_layer
 
 
@@ -215,6 +226,21 @@ def selftest():
     check("praes", sweep_body("(Präs.)")[0], "(Praes.)")
     check("two hits one row", sweep_body("(Akk, Lok)")[0], "(Acc., Loc.)")
     check("de field never seen here", sweep_body("")[0], "")
+    # H4040: apply_sweep writes through locked_store_rewrite — a real temp-store
+    # apply must land (substitution applied, unique .bak backup left behind).
+    import glob
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        sp = os.path.join(td, "pwg_ru_translated.jsonl")
+        with io.open(sp, "w", encoding="utf-8") as fh:
+            fh.write(json.dumps({"ru": "идти (Akk)", "layer": "x"},
+                                ensure_ascii=False) + "\n")
+        changed, subs, _bt, _bl = apply_sweep(sp)
+        check("apply changed rows", changed, 1)
+        check("apply substitutions", subs, 1)
+        check("apply landed", "Acc." in io.open(sp, encoding="utf-8").read(), True)
+        baks = glob.glob(os.path.join(td, "*.bak"))
+        check("apply left one backup", len(baks), 1)
     print("SELFTEST %s" % ("PASS" if ok else "FAIL"))
     return 0 if ok else 1
 
