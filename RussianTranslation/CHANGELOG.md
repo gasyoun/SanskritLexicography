@@ -11,6 +11,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.146] - 2026-09-03
+
+- H3985: new `data/cyrillic_proper_noun_slp1.tsv` (534 Cyrillic→SLP1 proper-noun rows, tiers onomasticon 446 / lexicon 50 / IAST-witness-only 38) plus its builder `tools/h3985_cyr_slp1_table.py`, seed inventory `tools/h3985_seed_inventory.py`, and validation report `reports/H3985_cyr_slp1_validation.json`; coverage of the fully-Cyrillic name indices Erman-Temkin 36.4%, Kadambari 33.1%, Potapova 39.3%; the 20 pure-Cyrillic seeds are left explicitly unkeyed.
 ## [1.144.144] - 2026-09-03
 
 - H3947: the `pwg-ru-data/tm/` mirror refreshed from the canonical store — **`changed_ru`
