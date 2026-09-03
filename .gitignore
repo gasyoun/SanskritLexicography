@@ -150,3 +150,12 @@ RussianTranslation/experiments/H2675_w1_prep/*.manifest.json
 RussianTranslation/experiments/H2675_w1_prep/calls.jsonl
 RussianTranslation/experiments/H2675_w1_prep/first200.remaining.txt
 
+
+# H3982: pwg_ru component blob archive — the bytes behind every recorded
+# `<name>_sha`. Content-addressed, write-once, and RUNTIME data in the same
+# sense as the pwg_ru store itself (RussianTranslation/src/*.jsonl above):
+# it grows one ~300 KB zip per distinct pipeline state, and its unique value
+# is precisely the states git never had (uncommitted working trees). The
+# README in that directory is the committed contract; the zips are not.
+RussianTranslation/reports/pipeline_blobs/*.zip
+RussianTranslation/reports/pipeline_blobs/*.tmp
