@@ -1,0 +1,369 @@
+{
+  "corpus_records": 123366,
+  "finding": "FINDINGS Sec.453",
+  "handoff": "H3948",
+  "read_only": true,
+  "rows": [
+    {
+      "class": "parent-split",
+      "column": "2-0666",
+      "de_digest": "408ce4db",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "gam",
+      "key1": "gam",
+      "line": 3264,
+      "page": "2-p0333",
+      "post_h3948_digests": [
+        "d865d68b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "39e0307a"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "1h",
+      "subcard": "gam~~h0_01_sec_1_1",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 2
+    },
+    {
+      "class": "parent-split",
+      "column": "2-0685",
+      "de_digest": "da39a3ee",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "gam",
+      "key1": "gam",
+      "line": 3838,
+      "page": "2-p0343",
+      "post_h3948_digests": [
+        "602237ec",
+        "b5e3cfcf"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "09be5ead",
+        "653109f0"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "1g",
+      "subcard": "gam~~h2_01_sec_1",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 2
+    },
+    {
+      "class": "parent-split",
+      "column": "7-1586",
+      "de_digest": "6648429c",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "hā",
+      "key1": "hA",
+      "line": 3914,
+      "page": "7-p0793",
+      "post_h3948_digests": [
+        "74e9bef1",
+        "a045d17b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "a045d17b",
+        "abc2298d"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "3c",
+      "subcard": "h_a~~h0_00_pwg00",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "7-1586",
+      "de_digest": "b55a374a",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "vihā",
+      "key1": "hA",
+      "line": 4149,
+      "page": "7-p0793",
+      "post_h3948_digests": [
+        "74e9bef1",
+        "a045d17b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "a045d17b",
+        "abc2298d"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "3c",
+      "subcard": "h_a~~h1_20_vi",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "7-1494",
+      "de_digest": "da39a3ee",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "han",
+      "key1": "han",
+      "line": 4196,
+      "page": "7-p0747",
+      "post_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9bbd1a5e",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9f554ed2",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "4a",
+      "subcard": "han~~h0_11_a_bi",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "7-1494",
+      "de_digest": "4e3e5e51",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "āhan",
+      "key1": "han",
+      "line": 4214,
+      "page": "7-p0747",
+      "post_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9bbd1a5e",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9f554ed2",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "4a",
+      "subcard": "han~~h0_16__a_0",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "7-1494",
+      "de_digest": "a3da7018",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "vyāhan",
+      "key1": "han",
+      "line": 4235,
+      "page": "7-p0747",
+      "post_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9bbd1a5e",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9f554ed2",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "4a",
+      "subcard": "han~~h0_22_vy_a",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "7-1494",
+      "de_digest": "085f7aec",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "vi-ni-han",
+      "key1": "han",
+      "line": 4307,
+      "page": "7-p0747",
+      "post_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9bbd1a5e",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "462b5bd3",
+        "8d4a2f42",
+        "9f554ed2",
+        "a07135ed",
+        "b171f27b"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "4a",
+      "subcard": "han~~h0_36_vini",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "7-0999",
+      "de_digest": "e1f37955",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "sidh",
+      "key1": "siD",
+      "line": 7768,
+      "page": "7-p0500",
+      "post_h3948_digests": [
+        "c4334e14"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "34fce7a4"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "2d",
+      "subcard": "si_d~~h1_00_pwg02",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 7
+    },
+    {
+      "class": "parent-split",
+      "column": "6-0649",
+      "de_digest": "a953203b",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "vad",
+      "key1": "vad",
+      "line": 8245,
+      "page": "6-p0325",
+      "post_h3948_digests": [
+        "fb59750e"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "60132afb"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "1a",
+      "subcard": "vad~~h0_zz_pw00",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 6
+    },
+    {
+      "class": "parent-split",
+      "column": "6-0827",
+      "de_digest": "7cc9b9a3",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "vas",
+      "key1": "vas",
+      "line": 9061,
+      "page": "6-p0414",
+      "post_h3948_digests": [
+        "a902aca7"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "7f4245ff"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "4b",
+      "subcard": "vas~~h4_00_pwg01",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 6
+    },
+    {
+      "class": "parent-split",
+      "column": "6-0024",
+      "de_digest": "5714b667",
+      "de_digest_in_old_tag": false,
+      "flag": "сегментация под вопросом",
+      "iast": "yat",
+      "key1": "yat",
+      "line": 10275,
+      "page": "6-p0012",
+      "post_h3948_digests": [
+        "b51b4648",
+        "b51b4648",
+        "b716559a"
+      ],
+      "post_h3948_ids_carrying_this_row_text": [],
+      "pre_h3948_digests": [
+        "2851fe3f",
+        "47f94607",
+        "5a93ad81"
+      ],
+      "pre_h3948_ids_carrying_this_row_text": [],
+      "reason": "the row's sense id survived H3948, but its body moved into new greek children (alpha/beta/gamma); the paid RU text now spans several senses and no single post-H3948 id is correct for this row",
+      "review_status": "ai_translated",
+      "reviewer": null,
+      "sense_tag": "5h",
+      "subcard": "yat~~h0_00_pwg00",
+      "tag_vocabulary": "sense-path-like",
+      "volume": 6
+    }
+  ],
+  "rows_with_a_unique_post_h3948_home": 0,
+  "ruling": "MG 03-09-2026, option 2 of the three-option brief",
+  "store_path": "/Users/mac/Documents/GitHub/pwg-ru-data/tm/pwg_ru_translated.jsonl",
+  "store_rows": 11462,
+  "store_sha256": "19fcf5258e5ea384baa6aa0883e5495edd83d1ec0cb9f0cbf70bfd912b69bb9c",
+  "tag_resolved_changed_rows": 12,
+  "tag_resolved_unchanged_rows": 990
+}
