@@ -124,10 +124,29 @@ def load_maps():
 
 
 _mark = re.compile(r'[+\-]')
+# H3876: a 1-2 char SLP1 head is a single syllable and is overwhelmingly a homograph of
+# some pronoun/particle rather than the compound's real head. Every such head measured in
+# the 1,389-form residual was wrong (`zA` -> `tad` x3, `ar` -> `arv`), none was right.
+MIN_HEAD_LEN = 3
+
+
 def marker_recover(slp1, f2l, l2r, roots_set, lemmas_set):
     """Corpus forms carry morpheme marks (A+gam = ā+√gam). Recover a lemma from the
     marked structure: (1) the joined string may already be a known form; (2) the rightmost
-    element is often a bare root or lemma. Returns (lemma, upos, root_or_None) or None."""
+    element is often a bare root or lemma; (3) H3876 — the rightmost element is often
+    itself INFLECTED (`A-brahma-BuvanAt` -> `BuvanAt`), so probe it through the same
+    form->lemma map that resolves whole corpus forms.
+
+    Returns (lemma, upos, root_or_None, tier) or None, where tier is `marker` for the
+    bare-root/bare-lemma heads (1)-(2) and `marker-head` for the inflected head (3) —
+    a separate tag so the weaker tier stays filterable in surface_resolution.tsv and in
+    the per-entry provenance the site renders.
+
+    Probe (3) trusts DCS form keys only. The vidyut supplement is built to lemmatize
+    whole corpus forms DCS missed; used on a compound-INTERNAL element out of context it
+    measured 35/42 correct (7 outright bogus lemmas: `vart` -> `varDi`, `sarp` -> `sarb`,
+    `Bar` -> `Barv`, ...) against ~99 % for the DCS half, for 59 of 1,845 tokens. Evidence:
+    docs/REPORT_H3876_saru_marker_head_recovery_03-09-2026.md."""
     if '+' not in slp1 and '-' not in slp1:
         return None
     parts = [p for p in _mark.split(slp1) if p]
@@ -137,12 +156,17 @@ def marker_recover(slp1, f2l, l2r, roots_set, lemmas_set):
     cands = f2l.get(joined)
     if cands:                                   # e.g. A+gam -> Agam is a known form
         lemma, upos, _, _ = cands[0]
-        return lemma, upos, l2r.get(lemma)
+        return lemma, upos, l2r.get(lemma), 'marker'
     right = norm(parts[-1])
     if right in roots_set:                      # rightmost is a bare verb root
-        return right, 'verb', right
+        return right, 'verb', right, 'marker'
     if right in lemmas_set:                      # rightmost is a known lemma (stem)
-        return right, 'noun', l2r.get(right)
+        return right, 'noun', l2r.get(right), 'marker'
+    if len(right) >= MIN_HEAD_LEN:              # rightmost is itself inflected (H3876)
+        hcands = f2l.get(right)
+        if hcands and hcands[0][3] == 'dcs':
+            lemma, upos, _, _ = hcands[0]
+            return lemma, upos, l2r.get(lemma), 'marker-head'
     return None
 
 
@@ -221,7 +245,7 @@ def main():
                       encoding='utf-8', newline='\n')
     resolution.write('form_slp1\tsa\tn\ttier\tlemma\tupos\troot\ttop_ru\n')
 
-    n_forms = n_hit = n_miss = n_amb = n_mark = 0
+    n_forms = n_hit = n_miss = n_amb = n_mark = n_head = 0
     with open(os.path.join(G, 'surface_glossary.jsonl'), encoding='utf-8') as f:
         for line in f:
             d = json.loads(line)
@@ -235,11 +259,12 @@ def main():
                 # tier 3: recover from corpus morpheme markers (A+gam = a+gam)
                 rec = marker_recover(slp1, f2l, l2r, roots_set, lemmas_set)
                 if rec:
-                    lem, upos, root = rec
+                    lem, upos, root, tier = rec
                     if root:
                         l2r.setdefault(lem, root)
-                    cands = [(lem, upos, 1, 'marker')]
+                    cands = [(lem, upos, 1, tier)]
                     n_mark += 1
+                    n_head += (tier == 'marker-head')
                 else:
                     unresolved.write(f"{slp1}\t{d['sa']}\t{d['n']}\t{top_ru}\n")
                     n_miss += 1
@@ -283,7 +308,8 @@ def main():
                              f"{upos}\t{root or ''}\t{top_ru}\n")
             n_forms += 1
     dcs_misses.close(); unresolved.close(); amb.close(); resolution.close()
-    print(f'[D] surface forms: hit={n_hit} (marker-recovered={n_mark}) miss={n_miss} '
+    print(f'[D] surface forms: hit={n_hit} (marker-recovered={n_mark}, of which '
+          f'inflected-head={n_head}) miss={n_miss} '
           f'(hit%={100*n_hit/(n_hit+n_miss):.1f}); homograph-flagged={n_amb}',
           file=sys.stderr)
     print(f'[D] {len(lemma_tab)} lemmas, {len(root_tab)} roots', file=sys.stderr)
