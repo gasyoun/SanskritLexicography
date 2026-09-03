@@ -220,6 +220,19 @@ the exact direction the ruling forbids, and the German→Latin direction of the 
 sweep applies to Bucket B only. Ruling record: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md);
 consolidated style rules 3.1–3.5: [`pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md).
 
+## Cyrillic proper nouns — a lookup table, never reverse-transliteration rules
+
+Russian scholarly indices print names in Cyrillic; there is no safe rule that turns Cyrillic back into
+SLP1 (FINDINGS §60 stands). The only sanctioned mapping is the lookup table
+[RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 534 rows, every key derived from an
+IAST witness printed beside the Cyrillic form in the source, **zero rule-derived keys**.
+
+**Sync rule:** changing the table means re-running its builder [RussianTranslation/tools/h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py)
+and refreshing [RussianTranslation/reports/H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json) **in the same PR** — the report's
+`rule_derived_keys: 0` is the invariant that makes the table citable. Never hand-add a row for a name whose
+IAST witness you cannot point at; the 20 pure-Cyrillic indices stay unkeyed until an onomasticon covers them
+([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) §6).
+
 ## Authoring conventions
 
 - Markdown is the primary authored format (roadmap, changelog, lectures, the
