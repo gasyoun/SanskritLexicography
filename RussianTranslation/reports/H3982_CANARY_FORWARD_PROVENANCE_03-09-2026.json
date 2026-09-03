@@ -1,0 +1,23 @@
+{
+ "archive_dir": "/Users/mac/Documents/GitHub/SanskritLexicography/RussianTranslation/reports/pipeline_blobs",
+ "component_hashes_resolved": [
+  "31656e0197b6c806",
+  "bb4626344404b1c1",
+  "d82ba443c4786e8a"
+ ],
+ "coverage": {
+  "forward_hashes": 3,
+  "forward_rows": 1,
+  "forward_unresolved": [],
+  "legacy_hashes": 0,
+  "legacy_unresolved_count": 0,
+  "rows_with_pipeline": 1
+ },
+ "dirty_component_sha": "3a3275488183cea4",
+ "rows_checked": 1,
+ "rows_promoted": 1,
+ "schema": "pwg_ru.h3982_canary.v1",
+ "source_commit": "0637dd4f2136eb1eb5e69052fbc8c4f44cae5c24",
+ "store": "/var/folders/17/xycv_hps0w5_b67s84q43vr40000gp/T/h3982_canary_store_xz2nx96g.jsonl",
+ "worktree_dirty": true
+}
