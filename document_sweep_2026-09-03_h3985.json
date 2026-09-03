@@ -1,0 +1,215 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-09-03 13:48:56",
+  "artifacts": [
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv",
+      "repo": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254",
+      "kind": "dataset",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/README.md:110: - [RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_no"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/CLAUDE.md:227: [RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/AGENTS.md:53: | Mapping a Russian-language name index onto Sanskrit keys | Use the lookup table [RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gas"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "GAPS.md §6 IS the governing doc for this workstream and was edited in the same pass (0 -> HALF-CLOSED 03-09-2026, pointing at the table and FINDINGS §629); no other manual/roadmap owns Cyrillic name keying"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/data/cyrillic_proper_noun_slp1.meta.md:1: # cyrillic_proper_noun_slp1.meta.md — metadoc for `cyrillic_proper_noun_slp1.tsv`"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "carried by RussianTranslation/CHANGELOG.md, already promoted and released as v1.144.146 (root CHANGELOG.md v1.144.145 covers the builder/probe half) -- both cut this pass, nothing left under [Unreleased]"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/.ai_state.md:25: - **H3985 (Opus 5, 🟡2 medium) — validated Cyrillic→SLP1 proper-noun table: ✅ MERGED 03-09-2026** ([PR #2059](https://github.com/gasyoun/SanskritLexicography/pul"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "H3985 has no tracking issue in any repo; no per-person task issue is affected"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "the sweep created no human action and closed none -- the one open human question (which onomasticon to use for the 20 purely-Cyrillic indices) is parked in the metadoc improvement backlog, not a dated @DO"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "H3985 was filled, registered and already closed this pass -- its terminal row lives in handoffs/REGISTRY_ARCHIVE.md, so handoffs/README.md correctly no longer carries it"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/dd446e07-3303-4a61-a639-bf27c1bcb8a6/scratchpad/ghshadow/SanskritLexicography/FEATURES_INDEX.md:60: | ⚪ A7 | `cyrillic_proper_noun_slp1.tsv` | Validated Cyrillic→SLP1 **proper-noun lookup** — every key derived from an IAST witness printed beside the Cyrillic n"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/dd446e07-3303-4a61-a639-bf27c1bcb8a6/scratchpad/ghshadow/kosha/data/manifest/datasets.json:2407: \"source_path\": \"RussianTranslation/data/cyrillic_proper_noun_slp1.tsv\","
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/dd446e07-3303-4a61-a639-bf27c1bcb8a6/scratchpad/ghshadow/Uprava/DATA_LAYERS_CENSUS.md:167: | **Translation/corpus** | Russian name indices with inline IAST (Эрман–Тёмкин, Кадамбари, Потапова) | how many Cyrillic proper nouns are recoverable as SLP1 ke"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/dd446e07-3303-4a61-a639-bf27c1bcb8a6/scratchpad/ghshadow/Uprava/PROJECT_INTERLINKS.md:255: [`RussianTranslation/data/cyrillic_proper_noun_slp1.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_no"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no destructive-risk fact surfaced: the builder is read-only over csl-orig and writes one TSV plus one JSON report"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/dd446e07-3303-4a61-a639-bf27c1bcb8a6/scratchpad/ghshadow/Uprava/QUESTIONS_LOG.md:99: | Q2607-24 | 10-07-2026 | 09-08-2026 | PROCESS-META | CommentaryStrategies | «А в X (MANUAL / README / CLAUDE.md / GEMINI / ROADMAP / GTD / .ai_state / FEATURES"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational deliverable, not a thesis refinement -- MEGABOOK takes thesis edits only"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no enforcement changed; no hook added, removed or reclassified"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/dd446e07-3303-4a61-a639-bf27c1bcb8a6/scratchpad/ghshadow/Uprava/REPO_STATUS_ROLLUP.md:143: - **A five-year-old \"unsafe\" verdict on Cyrillic→Sanskrit was half-closed by refusing to write a single rule.** [H3985](https://github.com/gasyoun/Uprava/blob/m"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "a 90 KB derived dataset, not a long-lived hub/registry needing staleness tracking -- registration home is the kosha manifest, which was updated"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "closed via SanskritLexicography FINDINGS §629 (new) + a CORRECTED block under §495 + GAPS.md §6 flipped 0 -> HALF-CLOSED, all shipped in PR #2060 this pass"
+        }
+      ]
+    }
+  ]
+}
