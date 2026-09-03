@@ -5,7 +5,14 @@ MG ruling 27-08-2026 (GAPS §16): `Instr.` stays canonical. Every src-store row 
 differs from the same row in `pwg-ru-data/tm/` gets the mirror's `ru`; rows only in src
 (the H3361 window) are kept; then the mirror is refreshed from src. Backup + ledger always.
 
-  python src/restore_store_rows_from_mirror.py [--src PATH] [--mirror PATH] [--dry-run]
+H4040 (04-09-2026): the posture flips from write-by-default (``--dry-run`` opt-in) to
+the house dry-run-default convention — the store is only touched with an explicit
+``--write``. The in-place ``io.open(src, 'w')`` truncate-then-write rewrite is replaced
+by ``store_write.locked_store_rewrite`` (the H2146 lock: PromoteClaim across the
+read-guard-write window, unique fsynced backup, atomic LF-only replace), which also
+supplies the backup the ledger records.
+
+  python src/restore_store_rows_from_mirror.py [--src PATH] [--mirror PATH] [--write]
 """
 import argparse
 import hashlib
@@ -21,6 +28,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 from sibling_root import sibling_root  # noqa: E402
+from store_write import locked_store_rewrite  # noqa: E402
 GITHUB = sibling_root(HERE)
 DATA = os.path.normpath(os.path.join(GITHUB, 'pwg-ru-data'))
 DEFAULT_SRC = os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -49,7 +57,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--src', default=DEFAULT_SRC)
     ap.add_argument('--mirror', default=DEFAULT_MIRROR)
-    ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--write', action='store_true',
+                    help='mutate the store (default: dry run)')
     a = ap.parse_args()
     src, mir = load(a.src), load(a.mirror)
     mir_by = {}
@@ -68,21 +77,23 @@ def main():
             r['ru'] = m.get('ru')
             restored += 1
     print('src rows=%d mirror rows=%d restored=%d only_src(kept)=%d' % (len(src), len(mir), restored, only_src))
-    if a.dry_run:
+    if not a.write:
+        print('dry run: no changes written (pass --write to mutate)')
         return
     stamp = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
-    bak = a.src + '.h3591.%s.bak' % stamp
-    shutil.copy2(a.src, bak)
-    with io.open(a.src, 'w', encoding='utf-8', newline='\n') as f:
-        for r in src:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    # H4040: locked rewrite (PromoteClaim + unique fsynced backup + atomic
+    # replace) replaces the in-place truncate-then-write; its unique backup is
+    # the one the ledger records.
+    bak = locked_store_rewrite(a.src, src, tag='h3591')
     shutil.copy2(a.src, a.mirror)
     with io.open(LEDGER, 'a', encoding='utf-8', newline='\n') as f:
         f.write(json.dumps({'handoff': 'H3591', 'ts': stamp, 'ruling': 'MG 27-08-2026 keep Instr. (GAPS §16)',
                             'restored_rows': restored, 'kept_only_src_rows': only_src, 'src_rows': len(src),
-                            'backup': os.path.basename(bak), 'src_sha256': sha(a.src), 'mirror_sha256': sha(a.mirror),
+                            'backup': os.path.basename(bak) if bak else None, 'src_sha256': sha(a.src),
+                            'mirror_sha256': sha(a.mirror),
                             'rows': entries}, ensure_ascii=False) + '\n')
-    print('backup=%s  src_sha=%s  mirror refreshed (identical=%s)' % (bak, sha(a.src)[:12], sha(a.src) == sha(a.mirror)))
+    print('backup=%s  src_sha=%s  mirror refreshed (identical=%s)' % (os.path.basename(bak) if bak else '(fresh store)',
+                                                                      sha(a.src)[:12], sha(a.src) == sha(a.mirror)))
 
 
 if __name__ == '__main__':
