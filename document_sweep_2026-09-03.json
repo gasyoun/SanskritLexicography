@@ -1,0 +1,629 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-09-03 01:48:42",
+  "artifacts": [
+    {
+      "artifact": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/RussianTranslation/src/microstructure.py",
+      "repo": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography",
+      "kind": "dataset",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/README.md:109: - [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/CLAUDE.md:166: [`RussianTranslation/src/microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py)"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/AGENTS.md:51: | Touching PWG sense segmentation, enumeration markers, or anything that re-splits a `pwg_ru` card | [RussianTranslation/src/microstructure.py](https://github.c"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "LANG_PARITY.md carries the four-tier note (shipped in PR #2053)"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/RussianTranslation/src/microstructure.meta.md (file does not exist)"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/CHANGELOG.md:275: - **German apparatus metalanguage is now library-detected, and a card that translates it as prose fails the gate** (Fable 5 `claude-fable-5`, 16-08-2026): [H287"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/.ai_state.md:25: - **H3948 (Opus 5, 🔴3 hard) — PWG four-tier enumeration + measured store impact: ✅ MERGED 03-09-2026** ([PR #2053](https://github.com/gasyoun/SanskritLexicograp"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no tracking issue exists for H3948 - handoff_close flagged it; nothing to comment on"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/GTD_NEXT_ACTIONS.md:120: - MG `@DECIDE` (major, к 10-09-2026) — Пересегментировать ли уже переведённые карточки `pwg_ru` под четырёхярусную нумерацию PWG. Затронуто 3 212 из 11 462 стро"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/handoffs/README.md:112: | H004 | A16 | [H004-Fable_MWS_mw_microstructure_en_26.06.26](https://github.com/gasyoun/Uprava/blob/main/handoffs/H004-Fable_MWS_mw_microstructure_en_26.06.26."
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/FEATURES_INDEX.md:291: | L17 | PWG four-tier enumeration reader + store-impact meter (H3948) | PWG numbers senses on **four** distinct printed enumeration tiers, not two; [microstruct"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/kosha/data/manifest/datasets.json:1988: \"notes\": \"Wave-1 of PLAN_KOSHA_SENSE_RECONCILIATION_2026H2 (H1455). The middle arrow headword→SENSE→attestation, a SIDECAR left-joined at build time — MW/kosha "
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/DATA_LAYERS_CENSUS.md:168: | **Translation/corpus** | `pwg_ru` store (11,462 promoted rows) | rows whose sense segmentation changes once PWG's **four** enumeration tiers are read correctl"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/PROJECT_INTERLINKS.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/DANGER_FACTS.md:217: | **A “fix the segmentation” pass over `pwg_ru` is a destructive rewrite of paid translation work, not a cleanup: the corrected four-tier PWG enumeration rule c"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/QUESTIONS_LOG.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational measurement of an existing thesis, not a thesis refinement"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/claude-config/HOOKS_INDEX.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/REPO_STATUS_ROLLUP.md:143: - **PWG's enumeration turned out to be four-tiered, and the cost of having read it as two was measured without rewriting a single row.** [H3948](https://github."
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/tools/hub_manifest.json (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "SL FINDINGS 453 written in PR #2053 - epistemic residue already registered"
+        }
+      ]
+    },
+    {
+      "artifact": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/RussianTranslation/src/pwg_four_tier_store_impact.py",
+      "repo": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography",
+      "kind": "dataset",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/README.md:109: - [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/CLAUDE.md:171: [`pwg_four_tier_store_impact.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py)"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/AGENTS.md:52: | Asked \"should we re-segment the store?\" | Already measured, without writing a row: [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/g"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "LANG_PARITY.md carries the four-tier note (shipped in PR #2053)"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/RussianTranslation/src/pwg_four_tier_store_impact.meta.md (file does not exist)"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/CHANGELOG.md, /private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/changelog.md exist, no mention of artifact"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/.ai_state.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no tracking issue exists for H3948 - handoff_close flagged it; nothing to comment on"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/GTD_NEXT_ACTIONS.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/handoffs/README.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/FEATURES_INDEX.md:291: | L17 | PWG four-tier enumeration reader + store-impact meter (H3948) | PWG numbers senses on **four** distinct printed enumeration tiers, not two; [microstruct"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/kosha/data/manifest/datasets.json (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/DATA_LAYERS_CENSUS.md:168: | **Translation/corpus** | `pwg_ru` store (11,462 promoted rows) | rows whose sense segmentation changes once PWG's **four** enumeration tiers are read correctl"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/PROJECT_INTERLINKS.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "closed this pass in DANGER_FACTS.md + context_facts.yaml (paid-work-overwrite trap)"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/QUESTIONS_LOG.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational measurement of an existing thesis, not a thesis refinement"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/claude-config/HOOKS_INDEX.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/REPO_STATUS_ROLLUP.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/tools/hub_manifest.json (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "SL FINDINGS 453 written in PR #2053 - epistemic residue already registered"
+        }
+      ]
+    },
+    {
+      "artifact": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/RussianTranslation/reports/H3948_four_tier_store_impact.json",
+      "repo": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography",
+      "kind": "dataset",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/README.md:109: - [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/CLAUDE.md:164: **Enumeration tiers are FOUR, not two (H3948, 02-09-2026):** PWG numbers senses on four"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/AGENTS.md:51: | Touching PWG sense segmentation, enumeration markers, or anything that re-splits a `pwg_ru` card | [RussianTranslation/src/microstructure.py](https://github.c"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "LANG_PARITY.md carries the four-tier note (shipped in PR #2053)"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/RussianTranslation/reports/H3948_four_tier_store_impact.meta.md (file does not exist)"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/CHANGELOG.md, /private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/changelog.md exist, no mention of artifact"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/.ai_state.md:25: - **H3948 (Opus 5, 🔴3 hard) — PWG four-tier enumeration + measured store impact: ✅ MERGED 03-09-2026** ([PR #2053](https://github.com/gasyoun/SanskritLexicograp"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no tracking issue exists for H3948 - handoff_close flagged it; nothing to comment on"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/GTD_NEXT_ACTIONS.md:120: - MG `@DECIDE` (major, к 10-09-2026) — Пересегментировать ли уже переведённые карточки `pwg_ru` под четырёхярусную нумерацию PWG. Затронуто 3 212 из 11 462 стро"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/handoffs/README.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/SanskritLexicography/FEATURES_INDEX.md:3: _Created: 04-07-2026 · Last updated: 03-09-2026 (H3948: L17 PWG four-tier enumeration reader + store-impact meter — turned «should we re-segment the store?» int"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/kosha/data/manifest/datasets.json (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/DATA_LAYERS_CENSUS.md:168: | **Translation/corpus** | `pwg_ru` store (11,462 promoted rows) | rows whose sense segmentation changes once PWG's **four** enumeration tiers are read correctl"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/PROJECT_INTERLINKS.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/DANGER_FACTS.md:217: | **A “fix the segmentation” pass over `pwg_ru` is a destructive rewrite of paid translation work, not a cleanup: the corrected four-tier PWG enumeration rule c"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/QUESTIONS_LOG.md:99: | Q2607-24 | 10-07-2026 | 09-08-2026 | PROCESS-META | CommentaryStrategies | «А в X (MANUAL / README / CLAUDE.md / GEMINI / ROADMAP / GTD / .ai_state / FEATURES"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational measurement of an existing thesis, not a thesis refinement"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/claude-config/HOOKS_INDEX.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/REPO_STATUS_ROLLUP.md:3: _Created: 06-07-2026 · Last updated: 03-09-2026 (H3948 /document sweep: SanskritLexicography section — PWG four-tier enumeration + measured store impact; previo"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/private/tmp/claude-502/-Users-mac-Documents-GitHub/f2ded2e1-0e5c-4755-8d25-2f970c967204/scratchpad/ghroot/Uprava/tools/hub_manifest.json (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "SL FINDINGS 453 written in PR #2053 - epistemic residue already registered"
+        }
+      ]
+    }
+  ]
+}
