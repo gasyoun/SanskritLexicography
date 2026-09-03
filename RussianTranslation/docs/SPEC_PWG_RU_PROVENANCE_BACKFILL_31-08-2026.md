@@ -1,8 +1,14 @@
 # SPEC — pwg_ru provenance backfill: field semantics, evidence per era, ledger format
 
-_Created: 31-08-2026 · Last updated: 31-08-2026_
+_Created: 31-08-2026 · Last updated: 03-09-2026_
 
-**Design only. Nothing here is authorized to run.** Wave unit **W3** of the
+> **§2.3 is IMPLEMENTED as of 03-09-2026** — commit
+> [`d12ef193e33b`](https://github.com/gasyoun/SanskritLexicography/commit/d12ef193e33bcc76c1e27a65298538f691ff727d) (H3982,
+> Opus 5 `claude-opus-5`). The rest of this spec — the era-A ruling, the ledger, the
+> `provenance_class` write — remains design only and unauthorized. See §2.3 below for
+> what shipped and the one naming change.
+
+**Design only apart from §2.3. Nothing else here is authorized to run.** Wave unit **W3** of the
 [CLAUDE hardening wave](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_CLAUDE_HARDENING_WAVE_2026H2.md)
 delivers the census and this specification; executing any store write below is a
 separate, separately-authorized act ([H3750](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3750-Opus_SanskritLexicography_pwg-provenance-census_30.08.26.md),
@@ -63,7 +69,29 @@ Never merged into `provenance.pipeline`. Shape:
 1 of 9 (§4). A method that scores like that may still be recorded, at `low`, but it
 may not be used to answer "which rows did prompt defect X touch".
 
-### 2.3 What a row must carry going forward (the real fix)
+### 2.3 What a row must carry going forward (the real fix) — ✅ IMPLEMENTED 03-09-2026
+
+> Shipped by H3982 in commit
+> [`d12ef193e33b`](https://github.com/gasyoun/SanskritLexicography/commit/d12ef193e33bcc76c1e27a65298538f691ff727d):
+> both items below now run inside
+> [`pipeline_version.stamp()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pipeline_version.py),
+> the single chokepoint every newly written store row passes through, so "every row
+> going forward" needed no change at any call site and no legacy row was touched.
+> Archive contract:
+> [`reports/pipeline_blobs/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/pipeline_blobs/README.md).
+> Acceptance evidence: a canary run against a deliberately dirty tree
+> ([`reports/H3982_CANARY_FORWARD_PROVENANCE_03-09-2026.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3982_CANARY_FORWARD_PROVENANCE_03-09-2026.json))
+> — `worktree_dirty: true`, `dirty_component_sha` present, and all three recorded
+> component hashes resolving to archived bytes
+> (`forward_unresolved: []`), reproducible with
+> `python src/canary_forward_provenance.py`.
+>
+> **One field was renamed against the text below: `source_worktree_dirty` shipped as
+> `worktree_dirty`** (with `source_commit` carrying the `source_` sense for the pair).
+> H3982 is the later document and its acceptance wording is the operative lock; the
+> spec name is superseded, not silently ignored. `dirty_component_sha` is written only
+> when the tree is in fact dirty.
+
 
 The census's root cause is that the pipeline runs against an uncommitted working
 tree, so the committed history cannot describe it. Two additions close that, and both
