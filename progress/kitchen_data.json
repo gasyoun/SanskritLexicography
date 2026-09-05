@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T01:47:12Z",
+  "generated_at": "2026-09-05T01:48:32Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 197126,
+    "youngest_artifact_age_seconds": 197203,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-02T19:01:43Z",
-        "age_seconds": 197126,
+        "age_seconds": 197203,
         "size": 26345513
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 714147,
+        "age_seconds": 714225,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 714147,
+        "age_seconds": 714225,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-08-29T11:57:08Z",
-        "age_seconds": 568201,
+        "age_seconds": 568279,
         "size": 3554776
       }
     }
@@ -703,7 +703,7 @@
     "total_idle_seconds": 3086157,
     "total_idle_hours": 857.27,
     "mean_gap_seconds": 617231.4,
-    "current_idle_seconds": 197126,
+    "current_idle_seconds": 197204,
     "last_idle_seconds": 1997,
     "last_idle": {
       "from": "2026-08-29T11:23:50Z",
@@ -729,9 +729,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 197126,
+        "idle_seconds": 197204,
         "idle_days": 2.28,
-        "idle_hours": 54.76
+        "idle_hours": 54.78
       }
     ],
     "recent_gaps": [
