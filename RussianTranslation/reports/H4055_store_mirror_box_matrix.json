@@ -1,0 +1,106 @@
+{
+ "handoff": "H4055",
+ "generated_at": "2026-09-05T00:12:47Z",
+ "executor": {
+  "model": "glm-5.3-flash",
+  "route": "opencode/z-ai (OxAlpha pool)"
+ },
+ "box": {
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "node": "MacBook-Air.local"
+ },
+ "provider_calls": 0,
+ "live_mutations": "none — read-only observation; fixtures ran in temp dirs",
+ "surfaces": [
+  {
+   "surface": "src store (canonical pwg_ru_translated.jsonl)",
+   "box": "MacBook-Air.local",
+   "path": "/Users/mac/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pwg_ru_translated.jsonl",
+   "timestamp": null,
+   "sha256": null,
+   "rows": null,
+   "producing_commit": null,
+   "availability": "MISSING on this box",
+   "note": "the store is gitignored and lives per-box; its absence here is the explicit missing-box state, not an error"
+  },
+  {
+   "surface": "mirror working tree (hydrated bytes)",
+   "box": "MacBook-Air.local",
+   "path": "/Users/mac/Documents/GitHub/pwg-ru-data/tm/pwg_ru_translated.jsonl",
+   "timestamp": "2026-09-03T17:32:53Z",
+   "sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+   "rows": 11519,
+   "bytes": 26345513,
+   "availability": "present",
+   "hydrated": true
+  },
+  {
+   "surface": "mirror git blob (LFS pointer — never equated with bytes)",
+   "box": "MacBook-Air.local @ /Users/mac/Documents/GitHub/pwg-ru-data",
+   "path": "tm/pwg_ru_translated.jsonl (git blob at HEAD)",
+   "timestamp": "2026-09-03T20:32:07+03:00",
+   "sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+   "rows": null,
+   "producing_commit": "2c4f770642bd1c9f766d6bb63de5636ca855fdbf",
+   "producing_commit_subject": "repair: restore full tree after empty-index accident in c810d1e (--no-checkout worktree + git add committed only durable/; tree = eaeb870 + durable/reverse-dictionary, append-only FF fix)",
+   "availability": "present",
+   "lfs_pointer": {
+    "version": "https://git-lfs.github.com/spec/v1",
+    "oid_sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+    "size": 26345513
+   },
+   "pointer_oid_equals_hydrated_sha": true
+  },
+  {
+   "surface": "mirror_refresh_ledger.jsonl (last entry)",
+   "box": "MacBook-Air.local",
+   "path": "/Users/mac/Documents/GitHub/pwg-ru-data/tm/mirror_refresh_ledger.jsonl",
+   "timestamp": "20260902T202344Z",
+   "sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+   "rows": 11519,
+   "producing_commit": "2c4f770642bd1c9f766d6bb63de5636ca855fdbf",
+   "availability": "present",
+   "last_entry": {
+    "handoff": "H3947",
+    "ts": "20260902T202344Z",
+    "src_rows": 11519,
+    "only_src_added": 0,
+    "only_mirror_dropped": 0,
+    "mirror_sha_before": "58c2172607c34928b417178d50ee80823956c4ccdde5f4d49ab8b0407e06faf0",
+    "mirror_sha_after": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65"
+   }
+  },
+  {
+   "surface": "src store (canonical)",
+   "box": "Windows build box",
+   "path": "unknown from this box",
+   "timestamp": null,
+   "sha256": null,
+   "rows": null,
+   "producing_commit": null,
+   "availability": "UNAVAILABLE — this box cannot observe it; any equality claim would be fabricated"
+  },
+  {
+   "surface": "mirror working tree",
+   "box": "Windows build box",
+   "path": "unknown from this box",
+   "timestamp": null,
+   "sha256": null,
+   "rows": null,
+   "producing_commit": null,
+   "availability": "UNAVAILABLE — this box cannot observe it"
+  }
+ ],
+ "lineage_chain": {
+  "mirror_hydrated_sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+  "ledger_last_mirror_sha_after": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+  "lfs_pointer_oid_sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+  "all_three_agree": true,
+  "origin": {
+   "ref": "origin/main",
+   "head": "2c4f770642bd1c9f766d6bb63de5636ca855fdbf",
+   "availability": "fetch ok"
+  }
+ },
+ "cross_box_equality": "NOT ASSERTED — each unobserved box stays unavailable; row counts (11,462 quarantine-era / 11,519 current-ledger) are historical sizes, never lineage"
+}
