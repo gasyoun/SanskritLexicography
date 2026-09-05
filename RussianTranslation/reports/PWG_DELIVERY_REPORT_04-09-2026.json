@@ -1,0 +1,277 @@
+{
+  "generated_for": "H4052 — PWG delivery metrics and truthful partial closeouts",
+  "surface": "pwg-ru-data durable TM mirror",
+  "store_sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+  "census": {
+    "sense_rows": 11519,
+    "headwords": 221,
+    "subcards": 2449,
+    "review_status_counts": {
+      "ai_translated": 11514,
+      "approved": 3,
+      "needs_review": 2
+    },
+    "print_ready": 3,
+    "last_generated_at": "2026-08-29T08:49:35Z",
+    "rows_with_generated_at": 11510
+  },
+  "delivery_funnel_store_level": {
+    "sense_rows": 11519,
+    "approved": 3,
+    "print_ready": 3,
+    "review_queue": null,
+    "gold": null,
+    "tm_fragments": null,
+    "released_edition": false,
+    "released_note": "no edition cut exists; G10 blocked (release_readiness local gates)"
+  },
+  "lane_a_seven_key_chain": {
+    "selected": 7,
+    "called_paid": 0,
+    "called_evidence": "H3679 close: STAGED ONLY, zero paid calls; no durable probe-log receipts for this lane after 30-08 00:00Z",
+    "audit_clean_new_windows": 0,
+    "promoted": 0,
+    "approved": 0,
+    "released": 0,
+    "fire_inputs_durable": 14,
+    "fire_inputs_files": [
+      "_s_ulin.portrait.json",
+      "_s_ulin.raw.txt",
+      "jar_ayu.portrait.json",
+      "jar_ayu.raw.txt",
+      "r_ama_wa.portrait.json",
+      "r_ama_wa.raw.txt",
+      "ut_t_apana.portrait.json",
+      "ut_t_apana.raw.txt",
+      "ut_ta.portrait.json",
+      "ut_ta.raw.txt",
+      "v_as_a.portrait.json",
+      "v_as_a.raw.txt",
+      "y_atu.portrait.json",
+      "y_atu.raw.txt"
+    ],
+    "blocked_keys": [
+      {
+        "safe_name": "jar_ayu",
+        "key1": "jarAyu",
+        "class": "defect",
+        "in_store": false,
+        "reason_code": "wrapper_never_emitted (FINDINGS §614)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      },
+      {
+        "safe_name": "r_ama_wa",
+        "key1": "rAmaWa",
+        "class": "defect",
+        "in_store": false,
+        "reason_code": "wrappers_intact_other_defect (H3663 §4)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      },
+      {
+        "safe_name": "_s_ulin",
+        "key1": "SUlin",
+        "class": "defect",
+        "in_store": false,
+        "reason_code": "wrapper_never_emitted (FINDINGS §614)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      },
+      {
+        "safe_name": "ut_ta",
+        "key1": "utTa",
+        "class": "defect",
+        "in_store": false,
+        "reason_code": "wrappers_intact_other_defect (H3663 §4)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      },
+      {
+        "safe_name": "y_atu",
+        "key1": "yAtu",
+        "class": "defect",
+        "in_store": false,
+        "reason_code": "wrappers_intact_other_defect (H3663 §4)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      },
+      {
+        "safe_name": "v_as_a",
+        "key1": "vAsA",
+        "class": "defect",
+        "in_store": false,
+        "reason_code": "wrappers_intact_other_defect (H3663 §4)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      },
+      {
+        "safe_name": "ut_t_apana",
+        "key1": "utTApana",
+        "class": "transient",
+        "in_store": false,
+        "reason_code": "transient_retry_heal_exhausted (H3663 §3)",
+        "translated_paid": "once, H3663 c1 chunks (29-08)",
+        "deterministic_repair": "ineligible — wrappers never emitted / intact (FINDINGS §614; PR #789 rule)",
+        "retranslation": "NOT executed — staged only (H3679, PR #1978); fire not run (H3690 reconciled lineage only, PR #1981)",
+        "disposition": "residual_unfired",
+        "evidence": [
+          "RussianTranslation/pwg_ru/h3663/H3663_LANE_A_16KEY_C1_WINDOW_29-08-2026.md §4/§10",
+          "RussianTranslation/pwg_ru/h3679/H3679_LANE_A_TAIL_7KEY_C1_RERUN_STAGED_29-08-2026.md",
+          "pwg-ru-data raws/ (14 fire inputs, commit dd1af94)",
+          "Uprava GTD @DO: Fire H3679 paid c1 window (active owner)"
+        ]
+      }
+    ]
+  },
+  "receipt_classification": {
+    "H3679": "staged_only",
+    "H3690": "reconciliation"
+  },
+  "durable_events": {
+    "last_mirror_refresh_ledger_entry": {
+      "handoff": "H3947",
+      "ts": "20260902T202344Z",
+      "action": "mirror refreshed from src store",
+      "src_rows": 11519,
+      "mirror_rows_before": 11519,
+      "mirror_rows_after": 11519,
+      "only_mirror_dropped": 0,
+      "dropped_quarantined": 0,
+      "dropped_id_churn": 0,
+      "dropped_superseded_acked": 0,
+      "dropped_unexplained": 0,
+      "ack_superseded_file": null,
+      "only_src_added": 0,
+      "forced": false,
+      "mirror_sha_before": "58c2172607c34928b417178d50ee80823956c4ccdde5f4d49ab8b0407e06faf0",
+      "mirror_sha_after": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+      "backup": "pwg_ru_translated.jsonl.h3947.20260902T202344Z.bak"
+    },
+    "mirror_refresh_ledger_history": [
+      {
+        "handoff": "H3627",
+        "ts": "20260828T131756Z",
+        "src_rows": 11462,
+        "mirror_rows_before": 11620,
+        "mirror_rows_after": 11462,
+        "mirror_sha_after": "19fcf5258e5ea384"
+      },
+      {
+        "handoff": "H3654",
+        "ts": "20260828T194608Z",
+        "src_rows": 11482,
+        "mirror_rows_before": 11462,
+        "mirror_rows_after": 11482,
+        "mirror_sha_after": "5ed8a96c0d621b24"
+      },
+      {
+        "handoff": "H3663",
+        "ts": "20260829T093849Z",
+        "src_rows": 11515,
+        "mirror_rows_before": 11482,
+        "mirror_rows_after": 11515,
+        "mirror_sha_after": "ed8265065ddf042d"
+      },
+      {
+        "handoff": "H3663",
+        "ts": "20260829T112443Z",
+        "src_rows": 11519,
+        "mirror_rows_before": 11515,
+        "mirror_rows_after": 11519,
+        "mirror_sha_after": "3022239c63ac5fbf"
+      },
+      {
+        "handoff": "H3751",
+        "ts": "20260831T025926Z",
+        "src_rows": 11519,
+        "mirror_rows_before": 11519,
+        "mirror_rows_after": 11519,
+        "mirror_sha_after": "58c2172607c34928"
+      },
+      {
+        "handoff": "H3947",
+        "ts": "20260902T202344Z",
+        "src_rows": 11519,
+        "mirror_rows_before": 11519,
+        "mirror_rows_after": 11519,
+        "mirror_sha_after": "79d72dbcb4b33fc8"
+      }
+    ],
+    "last_row_generated_at": "2026-08-29T08:49:35Z",
+    "note": "generated_at is the paid generation timestamp; the store rows carry no promoted_at, so promotion time is bounded by the mirror ledger."
+  },
+  "source_hashes": {
+    "store": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+    "review_csv": null,
+    "gold_csv": null,
+    "gold_labels": null
+  },
+  "delta": {
+    "audit_04_09_baseline": {
+      "sense_rows": 11519,
+      "approved_print_ready": 3,
+      "review_decisions": 5,
+      "gold_complete": "0/320",
+      "store_sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65"
+    },
+    "h3690_reconcile_29_08": {
+      "durable_mirror_rows": 11462
+    },
+    "comparable": true,
+    "explanation": "reproduces the 04-09 audit baseline exactly (rows and sha256). The durable mirror has held 11 519 rows since 29-08 11:24Z (H3663 refreshes) and converged byte-exact to the Windows canonical on 02-09 (H3947 refresh, mirror_sha 58c21726... -> 79d72dbc...); the H3690 \"11 462 durable base\" verdict is superseded by the append-only ledger, and the fire-time (a)/(b) store-base gate is satisfied on durable evidence."
+  },
+  "unknown_surfaces": [
+    "review_queue_csv",
+    "gold_csv",
+    "tm_fragments"
+  ]
+}
