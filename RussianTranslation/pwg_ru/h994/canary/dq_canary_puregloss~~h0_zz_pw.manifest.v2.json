@@ -43,7 +43,7 @@
    "dq_canary_puregloss~~h0_zz_pw": 1
   },
   "binary_split": true,
-  "output_budget": 90,
+  "output_budget": 1,
   "sense_presplit_budget": 20,
   "kill": true,
   "kill_gate": {
