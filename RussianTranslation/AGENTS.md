@@ -24,7 +24,11 @@ pipeline, with article-comparison Russian review work as the secondary track.
   calls reused it, five with zero new creation), but misses are possible and not
   explained by elapsed time alone. Budget the cold write and never make a run
   depend on a hit. **Batching is still not the fix** because wall time and
-  per-card attribution bind. Full rules:
+  per-card attribution bind. Since H4054 (04-09-2026) the one-card shape is
+  **structural**: `gen_opt_harness2.py` defaults to `OUTPUT_BUDGET = 1`, so a
+  no-flag production preparation already emits one original card per translate
+  call; multi-card packing exists only as an explicit experiment flag
+  (`--output-budget=90`). Full rules:
   [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
   § Current operating truth.
 
@@ -134,7 +138,7 @@ Canonical loop from the repo root:
 
 ```powershell
 python src\pilot\root_window_status.py <root>
-python src\pilot\gen_opt_harness2.py <root>          # batched+masked, canonical (-72..-90% cost)
+python src\pilot\gen_opt_harness2.py <root>          # one card per call (structural default, H4054), masked, TM auto
 # HEADLESS route (H1110): execute the emitted manifest v2 via headless_worker.py with
 # CLAUDE_CONFIG_DIR bound to the profile, driven by bounded_staged_run.py / the coordinator,
 # saving wf_output.json. The legacy Max-Workflow lane (run_pilot_wf.opt2.js in a Workflow) is
@@ -143,7 +147,9 @@ python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 > The legacy per-card `gen_opt_harness.py` / `run_pilot_wf.opt.js` is deprecated;
-> use `gen_opt_harness2.py` / `run_pilot_wf.opt2.js` for all production windows.
+> use `gen_opt_harness2.py` (manifest v2 via the headless route) for all
+> production windows. Multi-card packing is an explicit experiment lane only
+> (`--output-budget=90`); the production default needs no flag.
 
 Current queue: see [`.ai_state.md`](.ai_state.md) `## Next Steps` — the queue
 lives in the journal, not here.
@@ -154,7 +160,11 @@ The generated optimized harness:
 - disables translate-agent tools with `tools: []`;
 - carries provenance metadata for root, selected keys, rootmap hash, and input
   hashes;
-- is the supported in-chat Workflow route.
+- emits **one original card per translate call** with no flag (H4054, 04-09-2026:
+  `OUTPUT_BUDGET = 1` is the structural default implementing the H2152 one-card
+  ruling; the manifest's `batches` each carry exactly one key);
+- is consumed by the headless manifest-v2 route above — never run in a
+  Workflow session for production (H1110: forensics only).
 
 Any Max run where translate agents use file reads is using an obsolete harness.
 
