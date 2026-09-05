@@ -136,16 +136,21 @@ ARTIFACT_KINDS: tuple[str, ...] = (
 
 # Wave-1 adapters. `deterministic` and `imported_draft` are non-billable
 # provenance routes and must stay distinguishable in every receipt (V3).
+# H4057: `glm-flash` qualifies the z.ai GLM route offline; it is billable (real
+# paid API) but carries NO verified price card yet, so any dollar-bounded
+# campaign still fails closed at budget validation until real list prices land.
 ROUTE_XAI = 'xai-tm'
 ROUTE_DEEPSEEK = 'deepseek-tm'
+ROUTE_GLM = 'glm-flash'
 ROUTE_CLAUDE_SHADOW = 'claude-headless-shadow'
 ROUTE_DETERMINISTIC = 'deterministic-reuse'
 ROUTE_IMPORTED = 'imported-draft'
 ROUTES: tuple[str, ...] = (
-    ROUTE_XAI, ROUTE_DEEPSEEK, ROUTE_CLAUDE_SHADOW,
+    ROUTE_XAI, ROUTE_DEEPSEEK, ROUTE_GLM, ROUTE_CLAUDE_SHADOW,
     ROUTE_DETERMINISTIC, ROUTE_IMPORTED,
 )
-BILLABLE_ROUTES: frozenset[str] = frozenset({ROUTE_XAI, ROUTE_DEEPSEEK})
+BILLABLE_ROUTES: frozenset[str] = frozenset(
+    {ROUTE_XAI, ROUTE_DEEPSEEK, ROUTE_GLM})
 
 SHA_RE = re.compile(r'^[0-9a-f]{64}$')
 
@@ -396,6 +401,6 @@ __all__ = [
     'VERDICT_CLEAN', 'VERDICT_REQUEUE', 'VERDICT_DEFECT', 'VERDICT_INCONCLUSIVE',
     'INTENT_REQUEUE', 'INTENT_QUARANTINE', 'INTENT_REFILL', 'INTENT_PROMOTE',
     'JOB_KIND_CARD', 'JOB_KIND_FRAGMENT',
-    'ROUTE_XAI', 'ROUTE_DEEPSEEK', 'ROUTE_CLAUDE_SHADOW',
+    'ROUTE_XAI', 'ROUTE_DEEPSEEK', 'ROUTE_GLM', 'ROUTE_CLAUDE_SHADOW',
     'ROUTE_DETERMINISTIC', 'ROUTE_IMPORTED',
 ]

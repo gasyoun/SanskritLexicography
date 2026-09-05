@@ -149,15 +149,27 @@ class PaidCallKernel:
 
     def assert_budget(self, route: str, *, input_tokens: int,
                       max_output_tokens: int) -> float:
-        """Refuse before any provider I/O when a ceiling would be breached (V2)."""
+        """Refuse before any provider I/O when a ceiling would be breached (V2).
+
+        A route with no verified price card (H4057: ``glm-flash``) cannot be
+        bounded in dollars, so a dollar-bounded dispatch fails *closed* here --
+        before a reservation is taken -- instead of raising past the caller.
+        """
         if self.remaining_calls() <= 0:
             raise KernelRefusal(
                 'call ceiling reached for campaign %s (max_calls=%d)'
                 % (self.campaign_id, self.campaign.max_calls),
                 failure_class=FAILURE_BUDGET)
-        estimate = providers.estimate_cost_usd(
-            route, input_tokens=input_tokens,
-            max_output_tokens=max_output_tokens)
+        try:
+            estimate = providers.estimate_cost_usd(
+                route, input_tokens=input_tokens,
+                max_output_tokens=max_output_tokens)
+        except providers.ProviderError as exc:
+            raise KernelRefusal(
+                'no verified price card for route %r; a dollar-bounded campaign'
+                ' (ceiling USD %.2f) fails closed: %s'
+                % (route, self.campaign.cost_ceiling_usd, exc),
+                failure_class=FAILURE_CEILING) from exc
         projected = self.spent_usd() + estimate
         if projected > self.campaign.cost_ceiling_usd + 1e-9:
             raise KernelRefusal(
