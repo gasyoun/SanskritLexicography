@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG prefaces — dates, what they give us, how they help pwg_ru
 
 Böhtlingk & Roth's *Sanskrit-Wörterbuch* (the "Großes Petersburger Wörterbuch",
@@ -121,3 +123,5 @@ Directly relevant to our parser and translation:
 (German + English + Russian). Dates from the title pages and foreword signatures;
 volume letter-ranges and the remaining precise dates are on the per-volume title
 pages (`pwgpref12/17/20/22/25/26`).*
+
+_Dr. Mārcis Gasūns_

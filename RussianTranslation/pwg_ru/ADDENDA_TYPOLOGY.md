@@ -237,3 +237,4 @@ Promote stamps the rule default; `python src/annotate_edition_rel.py` rebuilds
 with a full PWG gender index (enables `pw_correct`). `build_relationships.py`
 reuses the same classifier for the sidecar + rollup TSV.
 
+_Dr. Mārcis Gasūns_

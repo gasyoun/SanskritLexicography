@@ -1,6 +1,8 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # HeadwordLists — now (2026) vs then (2014)
 
-Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose filename count `N` is its line count when extracted (first committed **2014-10-05**, "Cologne headwords"). This compares each against the **current** csl-orig ("now", 2026), regenerating the same field (`<k1>`/`<k2>`). The current key1 lists are written to [`now-2026/`](now-2026/). Reproduce with [`headword_diff.py`](headword_diff.py); full word-level diffs land in `_diff/`.
+Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose filename count `N` is its line count when extracted (first committed **2014-10-05**, "Cologne headwords"). This compares each against the **current** csl-orig ("now", 2026), regenerating the same field (`<k1>`/`<k2>`). The current key1 lists are written to [`now-2026/`](now-2026/). Reproduce with [`headword_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py); full word-level diffs land in `_diff/`.
 
 - **growth** = (now − then) / then. **overlap** = share of the *then* keys still present now.
 - **comparable** — the committed list and the live field share key format, so `added`/`removed`/`growth` are genuine headword changes.
@@ -9,32 +11,32 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 
 | List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |
 |---|--:|--:|--:|--:|--:|--:|---|
-| [AP-unique-key1-36030.txt](then-2014/AP-unique-key1-36030.txt) | 36030 | 88869 | 53742 | 903 | 97.5% | +146.7% | comparable |
-| [AP-unique-key2-36704.txt](then-2014/AP-unique-key2-36704.txt) | 36126 | 88829 | 56024 | 3321 | 90.8% | +145.9% | comparable |
-| [BHS-unique-key2-17784.txt](then-2014/BHS-unique-key2-17784.txt) | 17784 | 18188 | 16457 | 16053 | 9.7% | +2.3% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [BUR-unique-key2-19238.txt](then-2014/BUR-unique-key2-19238.txt) | 19238 | 19251 | 297 | 284 | 98.5% | +0.1% | comparable |
-| [CAE-unique-key2-39256.txt](then-2014/CAE-unique-key2-39256.txt) | 39256 | 39280 | 3000 | 2976 | 92.4% | +0.1% | comparable |
-| [CCS-unique-key2-29317.txt](then-2014/CCS-unique-key2-29317.txt) | 29317 | 29233 | 3328 | 3412 | 88.4% | -0.3% | comparable |
-| [GRA-unique-key1-10315.txt](then-2014/GRA-unique-key1-10315.txt) | 10315 | 11108 | 975 | 182 | 98.2% | +7.7% | comparable |
-| [GRA-unique-key2-10526.txt](then-2014/GRA-unique-key2-10526.txt) | 10526 | 11453 | 10815 | 9888 | 6.1% | +8.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [INM-unique-key2-9466.txt](then-2014/INM-unique-key2-9466.txt) | 9466 | 9454 | 89 | 101 | 98.9% | -0.1% | comparable |
-| [MD-unique-key2-20748.txt](then-2014/MD-unique-key2-20748.txt) | 20108 | 20107 | 44 | 45 | 99.8% | -0.0% | comparable |
-| [MW-unique-key1-193978.txt](then-2014/MW-unique-key1-193978.txt) | 193978 | 194084 | 754 | 648 | 99.7% | +0.1% | comparable |
-| [MW-unique-key2-198220.txt](then-2014/MW-unique-key2-198220.txt) | 198220 | 198489 | 110368 | 110099 | 44.5% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [MW-unique-key2-198231.txt](then-2014/MW-unique-key2-198231.txt) | 198231 | 198489 | 110388 | 110130 | 44.4% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [PD-unique-key1-104936.txt](then-2014/PD-unique-key1-104936.txt) | 104935 | 104959 | 602 | 578 | 99.4% | +0.0% | comparable |
-| [PD-unique-key2-104941.txt](then-2014/PD-unique-key2-104941.txt) | 104941 | 104968 | 581 | 554 | 99.5% | +0.0% | comparable |
-| [PWG-unique-key1-106085.txt](then-2014/PWG-unique-key1-106085.txt) | 106085 | 106082 | 149 | 152 | 99.9% | -0.0% | comparable |
-| [PWG-unique-key2-110402.txt](then-2014/PWG-unique-key2-110402.txt) | 110402 | 110438 | 380 | 344 | 99.7% | +0.0% | comparable |
-| [PWK-unique-key1-131918.txt](then-2014/PWK-unique-key1-131918.txt) | 131918 | 151349 | 19617 | 186 | 99.9% | +14.7% | comparable |
-| [PWK-unique-key2-133741.txt](then-2014/PWK-unique-key2-133741.txt) | 133741 | 155688 | 23265 | 1318 | 99.0% | +16.4% | comparable |
-| [SCH-unique-key2-28495.txt](then-2014/SCH-unique-key2-28495.txt) | 28495 | 28519 | 22979 | 22955 | 19.4% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [SKD-unique-key1-40551.txt](then-2014/SKD-unique-key1-40551.txt) | 40551 | 40817 | 807 | 541 | 98.7% | +0.7% | comparable |
-| [SKD-unique-key2-40595.txt](then-2014/SKD-unique-key2-40595.txt) | 40595 | 40817 | 2281 | 2059 | 94.9% | +0.5% | comparable |
-| [VCP-unique-key1-47107.txt](then-2014/VCP-unique-key1-47107.txt) | 47107 | 48636 | 2514 | 985 | 97.9% | +3.2% | comparable |
-| [VCP-unique-key2-47145.txt](then-2014/VCP-unique-key2-47145.txt) | 47145 | 48638 | 4360 | 2867 | 93.9% | +3.2% | comparable |
-| [VEI-unique-key1-3703.txt](then-2014/VEI-unique-key1-3703.txt) | 3703 | 3704 | 18 | 17 | 99.5% | +0.0% | comparable |
-| [VEI-unique-key2-3770.txt](then-2014/VEI-unique-key2-3770.txt) | 3770 | 3704 | 3703 | 3769 | 0.0% | -1.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [AP-unique-key1-36030.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/AP-unique-key1-36030.txt) | 36030 | 88869 | 53742 | 903 | 97.5% | +146.7% | comparable |
+| [AP-unique-key2-36704.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/AP-unique-key2-36704.txt) | 36126 | 88829 | 56024 | 3321 | 90.8% | +145.9% | comparable |
+| [BHS-unique-key2-17784.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/BHS-unique-key2-17784.txt) | 17784 | 18188 | 16457 | 16053 | 9.7% | +2.3% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [BUR-unique-key2-19238.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/BUR-unique-key2-19238.txt) | 19238 | 19251 | 297 | 284 | 98.5% | +0.1% | comparable |
+| [CAE-unique-key2-39256.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/CAE-unique-key2-39256.txt) | 39256 | 39280 | 3000 | 2976 | 92.4% | +0.1% | comparable |
+| [CCS-unique-key2-29317.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/CCS-unique-key2-29317.txt) | 29317 | 29233 | 3328 | 3412 | 88.4% | -0.3% | comparable |
+| [GRA-unique-key1-10315.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/GRA-unique-key1-10315.txt) | 10315 | 11108 | 975 | 182 | 98.2% | +7.7% | comparable |
+| [GRA-unique-key2-10526.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/GRA-unique-key2-10526.txt) | 10526 | 11453 | 10815 | 9888 | 6.1% | +8.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [INM-unique-key2-9466.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/INM-unique-key2-9466.txt) | 9466 | 9454 | 89 | 101 | 98.9% | -0.1% | comparable |
+| [MD-unique-key2-20748.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MD-unique-key2-20748.txt) | 20108 | 20107 | 44 | 45 | 99.8% | -0.0% | comparable |
+| [MW-unique-key1-193978.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key1-193978.txt) | 193978 | 194084 | 754 | 648 | 99.7% | +0.1% | comparable |
+| [MW-unique-key2-198220.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key2-198220.txt) | 198220 | 198489 | 110368 | 110099 | 44.5% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [MW-unique-key2-198231.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key2-198231.txt) | 198231 | 198489 | 110388 | 110130 | 44.4% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [PD-unique-key1-104936.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PD-unique-key1-104936.txt) | 104935 | 104959 | 602 | 578 | 99.4% | +0.0% | comparable |
+| [PD-unique-key2-104941.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PD-unique-key2-104941.txt) | 104941 | 104968 | 581 | 554 | 99.5% | +0.0% | comparable |
+| [PWG-unique-key1-106085.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PWG-unique-key1-106085.txt) | 106085 | 106082 | 149 | 152 | 99.9% | -0.0% | comparable |
+| [PWG-unique-key2-110402.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PWG-unique-key2-110402.txt) | 110402 | 110438 | 380 | 344 | 99.7% | +0.0% | comparable |
+| [PWK-unique-key1-131918.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PWK-unique-key1-131918.txt) | 131918 | 151349 | 19617 | 186 | 99.9% | +14.7% | comparable |
+| [PWK-unique-key2-133741.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/PWK-unique-key2-133741.txt) | 133741 | 155688 | 23265 | 1318 | 99.0% | +16.4% | comparable |
+| [SCH-unique-key2-28495.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/SCH-unique-key2-28495.txt) | 28495 | 28519 | 22979 | 22955 | 19.4% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
+| [SKD-unique-key1-40551.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/SKD-unique-key1-40551.txt) | 40551 | 40817 | 807 | 541 | 98.7% | +0.7% | comparable |
+| [SKD-unique-key2-40595.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/SKD-unique-key2-40595.txt) | 40595 | 40817 | 2281 | 2059 | 94.9% | +0.5% | comparable |
+| [VCP-unique-key1-47107.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/VCP-unique-key1-47107.txt) | 47107 | 48636 | 2514 | 985 | 97.9% | +3.2% | comparable |
+| [VCP-unique-key2-47145.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/VCP-unique-key2-47145.txt) | 47145 | 48638 | 4360 | 2867 | 93.9% | +3.2% | comparable |
+| [VEI-unique-key1-3703.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/VEI-unique-key1-3703.txt) | 3703 | 3704 | 18 | 17 | 99.5% | +0.0% | comparable |
+| [VEI-unique-key2-3770.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/VEI-unique-key2-3770.txt) | 3770 | 3704 | 3703 | 3769 | 0.0% | -1.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
 | **TOTAL (comparable, 20 lists)** | **1264957** | **1416311** | **172827** | **21473** | — | **+12.0%** | — |
 
 _Grand total of all 26 snapshots' *then* line counts: **1721983**._
@@ -109,3 +111,5 @@ removed (2867): `A(a)kOSala`, `A(a)kzEtrajYya`, `A(a)nESvaryya`, `A(a)nEpuRa`, `
 
 ### VEI-unique-key1-3703.txt — 3703 → 3704  (+18 / −17)
 removed: `SaNkuinTe`, `Salmall`, `SunaHpuCa`, `SunolAngUla`, `SvetaketuaruReya`, `aSvatTva`, `amAvAsyaSARdilyAyana`, `azAQOttarapArASarya`, `kArSkeyIputra`, `kanzya`, `kosa`, `kusurubindaOddalaki`, `nIeya`, `piakza`, `saMvartaAngirasa`, `skanDhyA`, `vAfzRivfdDa`
+
+_Dr. Mārcis Gasūns_

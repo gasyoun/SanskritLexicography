@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # DOI Plan
 
 The immutable edition cut is prepared locally under `release/edition_vN/`.
@@ -25,3 +27,5 @@ the PWG translation-memory artifact. It has its own release lane under
 [`release/sa_ru_terminology/`](release/sa_ru_terminology/) and should receive its own DOI once
 non-empty curated terms pass review. PWG TM suggestion rows should cite terminology `term_id` /
 `source_hash` values rather than embedding the terminology dataset wholesale.
+
+_Dr. Mārcis Gasūns_

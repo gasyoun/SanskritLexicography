@@ -1,3 +1,5 @@
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+
 - H4055: **a content-only mirror sync is no longer byte-shaped like a no-op.** The
   [refresh_tm_mirror.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/refresh_tm_mirror.py)
   ledger row (and a new `--receipt FILE` durable copy) now carries the content view beside
@@ -28,3 +30,5 @@
   lineage. Zero provider calls; live mirror not refreshed (02-09 already synchronized,
   `only_src=0 only_mirror=0 changed_ru=0` re-evidenced by the hash chain); canonical store
   untouched; real ledger untouched.
+
+_Dr. Mārcis Gasūns_

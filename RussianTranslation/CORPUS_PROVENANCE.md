@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Where the Russian meanings come from — provenance & traceability
 
 When you read a Russian gloss in a generated card, it has **one of two origins**.
@@ -114,3 +116,5 @@ override (RV vs AV Saṃhitā, Buddhist kāvya) and a supplement for corpus-only
 This makes "which register does this Russian meaning belong to?" answerable per sense,
 grounded in real parallel-corpus usage rather than the dictionary's `<ls>` sigla — a layer
 to build register-distribution / register×period analyses on.
+
+_Dr. Mārcis Gasūns_

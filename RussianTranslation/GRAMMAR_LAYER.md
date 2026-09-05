@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Grammar layer — the 3rd axis (Whitney) for pwg_ru
 
 _Created: 07-07-2026 · Last updated: 13-07-2026 (H781)_
@@ -231,3 +233,5 @@ grammar-join state validates. `script` component bumped 1.0.0 → 1.1.0 so cache
 self-invalidate. **Local materialisation** (the store is gitignored): re-run
 `annotate_government.py` then `annotate_stats.py` on `pwg_ru_translated.jsonl` to write the
 fields onto the working copy — the code + census sidecar are what ship.
+
+_Dr. Mārcis Gasūns_

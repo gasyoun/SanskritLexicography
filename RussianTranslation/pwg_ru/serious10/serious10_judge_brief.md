@@ -1,3 +1,5 @@
+_Created: 28-08-2026 · Last updated: 05-09-2026_
+
 # Blind judging brief - 10 PWG TM fragments
 
 _Created: 28-08-2026 - Last updated: 28-08-2026_

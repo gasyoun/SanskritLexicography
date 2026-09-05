@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handbook of Corpus Linguistics -- John  Ryan -- New Rochelle, N_Y, 2019 -- Bibliotex -- isbn13 9781682505458 -- 849818178f760f70e2b85ac96e64a702 -- Anna’s Archive
 
 **Source:** `Handbook of Corpus Linguistics -- John  Ryan -- New Rochelle, N_Y, 2019 -- Bibliotex -- isbn13 9781682505458 -- 849818178f760f70e2b85ac96e64a702 -- Anna’s Archive.pdf`  
@@ -6337,3 +6339,5 @@ Vector Space Model (VSM) 226 Verticality 279, 280, 286, 289,
 W
 WAR and RELIGION 205 Werry-Weiss Peters Rating Scale
 (WWP) 243 Wordsmith Tools 244, 250
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 03-09-2026 · Last updated: 05-09-2026_
+
 # cyrillic_proper_noun_slp1.meta.md — metadoc for `cyrillic_proper_noun_slp1.tsv`
 
 _Created: 03-09-2026 · Last updated: 03-09-2026 (H3985: table built, GAPS §6 half-closed, FINDINGS §629 added and §495 corrected)_

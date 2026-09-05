@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # `src/` — словари для корпусной сверки (этап 4 `pwg_ru`)
 
 Здесь лежат **нормализованные, ключенные по SLP1 санскритско-русские словари**,
@@ -281,3 +283,5 @@ II паниниевское · III эпическое · IV классическ
 [_nws_watch.py](https://github.com/gasyoun/SanskritLexicography/blob/5aaee0672e6465eca8a3debb082ce9cf15a20840/RussianTranslation/src/_nws_watch.py)
 — вотчер давно завершённого NWS-скрейпа, ноль ссылок во всём репозитории (ссылка — на
 последний коммит перед удалением).
+
+_Dr. Mārcis Gasūns_

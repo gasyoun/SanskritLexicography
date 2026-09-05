@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # FINDINGS — cross-repo empirical registry
 
 _Created: 26-06-2026 · Last updated: 03-09-2026 (§453 extended by H3948 — the four-tier PWG sense splitter is now live in `microstructure.py` and its store impact is MEASURED, not applied: 3,212 of 11,462 pwg_ru rows would change on the conservative key1-only join (28.02 %), but only 12 resolve to a pre-fix sense the correction actually moves and 2,210 resolve to no pre-fix sense id at all, so the re-translation decision is a range between 12 and 3,212 rows rather than a figure; the ~1,474-occurrence count is reported beside this session's own 1,455 and 1,546 with the method behind each, not reconciled into one; no store row was written, requeued or re-segmented; prior: §628 — a sync ledger that counts only rows cannot see a content-only sync: every counter `refresh_tm_mirror.py` writes is derived from a row identity that excludes `ru`, so H3947's refresh of the 75 rows H3969's German→Latin sweep changed records the same nine values as the H3751 no-op, and the mirror being Git LFS leaves `git log` mute too — the number needed, `changed_ru` 75 → 0, is already measured by `audit_store_gates.py` one tool over; prior: §627 — a feature present on 16,100 tokens can be categorically absent from a whole mood: DCS `Formation` never leaves `Mood=Ind`, so the 8,726 non-indicative past tokens are unformationed upstream and only 296 (3.39 %) are recoverable from forms tagged elsewhere; prior: §624 — a CDSL dictionary code need not name the dictionary its letters suggest: `md` is MACDONELL, not Medinī, and Medinī and Amara are not in CDSL at all, so a loader resolving the name by letter-match would have shipped an 1893 Sanskrit-English dictionary under a Sanskrit-Sanskrit kośa's header with nothing able to catch it; and the Sa→Sa kośas carry ZERO `<ls>` (0 of 42,531 ŚKDR and 0 of 50,135 VCP records), so the shared-witness bridge does not exist for them and the only sound channel is the reverse one — PWG's own citations OF them, which §623 classifies as authorities rather than witnesses, read as attributions and ranked below a real convergence; CONTRADICTIONS §13 ruled — the two corpus_lexicon row counts are two builds, 1,093,391 is the count of record, and the pre-H309 figures in this file now carry their build stamp; §623 — two of the 45 sigla PWG's attestation windows are dated over are not datable Sanskrit works at all: `Spr.` is Böhtlingk's OWN anthology (1863–1873) and `ŚKDR.` a Calcutta compilation of 1821–1858, yet between them they set a bound on 11,771 of 43,990 windows and the `latest` bound on 9,082; a 19th-century citation apparatus mixes witnesses with authorities under one `<ls>` markup, and dating every siglum silently dates the authorities too; §622 — a coverage audit measures nothing until you measure how much of the generated side came from the attested side: kosha's A3 "the engine misses 2 of 381,413 attested forms" was a 93.30 %-circular round-trip, because that generated side was itself `source='dcs'`; the same question asked of an independent generator (`inflections`, 99.99 % cologne_mwinflect, no DCS input) answers A¬G = 196,378 of 386,012 — and even that narrows 35× to 5,656 actionable rows once verbs, sandhied-surface-only keys and bare stems are subtracted as scope facts rather than defects; §621 — 93.5 % of the pwg_ru store asserts a pipeline provenance it never measured, and recomputing the component hashes from git reproduces only 1 of the 9 measured stamp classes that can test the method: the pipeline runs against an uncommitted tree, so the asserted era's tooling identity is permanently lost while its input identity stays corroborated for 10,100 rows; §620 — splitting an overloaded field into two axes is only half a fix while the OLD field keeps its false value: 4,187 rows still read `restate` two weeks after the `placement` boolean shipped beside them, because every consumer takes the name alone; derive the old field from the new one at one site and RED-pin the correspondence as a corpus STOP gate; §619 — pwg_tm_fragmentize.py rejoins 73 `<is>`-interrupted gloss spans before fragmenting, RED-pinned on viSveSa 2, GAPS §18 closed; §618 — a 939-row static I/O-in-loop census overstated coordinator.py's hotspots by ~2 orders of magnitude, cProfile found exactly one; §617 — a positional `~~h<N>` index compared against PWG's printed `<h>` put another homograph's column on 1,278 of 5,205 mappable pwg_ru rows; §611 heading normalized to the canonical `§N.` delimiter — the em-dash form broke `findings_dashboard`'s count parser, RED epistemic-integrity gate; §616 — PWG-TM live xAI bypasses the reservation kernel, while canonical reconciliation reports `ok: true` over 79 rows / 609 nested unresolved `{Tn}` occurrences; §602 — a fail-closed COST guard tests telemetry, not permission: with Max-route usage telemetry dormant, `bounded_supervisor` stops `cost_unevaluable` at the top of the drain loop and a paid window makes ZERO generation calls no matter what a human authorized, so a cost-bounded window on that lane is unrunnable rather than merely unpriced (H3659); §603 — the paid-run entry points resolve on-disk state a linked worktree cannot see, and only one of the three fails safely: the probe refuses (#1034), the window planner silently proposes an already-completed index, and `bounded_staged_run` invents an empty accounts roster — whose real copy `max_orchestrator.sqlite` is untracked AND un-gitignored in the guarded main tree; §601 — pwg.tm.gate.v1 now fails German `{%…%}` gloss residue and mutated `<ab>` on the fragment itself: H2684 n=400 sample is 6 GLOSS-DE-RESIDUE + 81 AB-MUTATED; GAPS §17 closed; §599 — a paid window can die at Windows
@@ -1252,7 +1254,7 @@ zero anomalies, full `lod_acceptance.py` A/B/C/C5/C6/D/D2/D3 gate PASS).
 
 ### §452. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong
 
-_↩ **Renumbered §448 → §452** (H1362, 20-07-2026): this H1350 block (PR [#612](https://github.com/gasyoun/SanskritLexicography/pull/612), published 13:58) and the H1361 movers (PR [#615](https://github.com/gasyoun/SanskritLexicography/pull/615), 14:38) both took §448–451; the movers are the claims named by the merged [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md), so under rule 4's citation exception they keep §448–451 and this block moves. See ruling §6._
+_↩ **Renumbered §448 → §452** (H1362, 20-07-2026): this H1350 block (PR [#612](https://github.com/gasyoun/SanskritLexicography/pull/612), published 13:58) and the H1361 movers (PR [#615](https://github.com/gasyoun/SanskritLexicography/pull/615), 14:38) both took §448–451; the movers are the claims named by the merged [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md), so under rule 4's citation exception they keep §448–451 and this block moves. See ruling §6._
 
 🟠 **The measured PWG markup census (`csl-atlas/data/parse-rules/pwg.json`) undercounts and omits real tags against the current `csl-orig/v02/pwg/pwg.txt`.**
 Evidence: a direct regex scan of the live file found 21 element names never listed in the
@@ -1275,7 +1277,7 @@ census numbers; a re-run of csl-atlas's census generator is a genuine `@DECIDE`/
 
 ### §453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unrecognised by the RU pipeline's splitter
 
-_↩ **Renumbered §449 → §453** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
+_↩ **Renumbered §449 → §453** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
 
 🟠 **PWG nests a real four-tier sense enumeration (digit → Latin letter → Greek letter → roman-numeral-like marker), but `microstructure.py`'s `MARK` regex only recognises the first two.**
 Evidence: `validate_pwg_markup.py`'s full-corpus pass found 393 records where a `〉` glyph is
@@ -1341,7 +1343,7 @@ The single roman marker that the genuine method drops and the probe method keeps
 
 ### §454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key
 
-_↩ **Renumbered §450 → §454** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
+_↩ **Renumbered §450 → §454** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
 
 🟠 **`pwg_ru_translated.jsonl`'s `h` field holds a bare homograph digit for some rows, an empty string for others, and a ROOT-WORD STRING (e.g. `"gam"`, `"han"`) for others — mixed within the same file.**
 Evidence: live inspection of the first 20,000 store rows found `h` values including `"1"`,
@@ -1364,7 +1366,7 @@ upstream pipeline stage that assigns `sense_tag`/`h` reverse-engineered first �
 
 ### §455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline
 
-_↩ **Renumbered §451 → §455** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
+_↩ **Renumbered §451 → §455** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
 
 🟡 **`pwg_sources.py`'s pwgbib-backed resolver already resolves 98.2% of `<ls>` citations (85.1% of distinct source keys) against the current `pwgbib.txt` (4,390 entries) — well above the 72.4% baseline cited in earlier planning docs (FINDINGS §20).**
 Evidence: `pwg_sources.py coverage` run 20-07-2026: 572,546 citations, 4,042 distinct source
@@ -1938,7 +1940,7 @@ catalog rows.
 
 ### §448. CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers
 
-_↩ **Renumbered from §80 → §448** (H1361, 20-07-2026): the DCS `text_sandhied` finding (§80, H759) published first (12-07-2026) and keeps §80. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
+_↩ **Renumbered from §80 → §448** (H1361, 20-07-2026): the DCS `text_sandhied` finding (§80, H759) published first (12-07-2026) and keeps §80. Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 🟠 **Corrected 15-07-2026 (same session-day as first written): the endpoint was never
 wrong.** An `api=1` probe of
@@ -2954,7 +2956,7 @@ Workflow template must abort before its first agent call rather than mislabel it
 
 ### §449. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)
 
-_↩ **Renumbered from §86 → §449** (H1361, 20-07-2026): the DCS verbal-feature-density finding (§86, H1000) is the one the inbound §86 citation names and keeps §86. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
+_↩ **Renumbered from §86 → §449** (H1361, 20-07-2026): the DCS verbal-feature-density finding (§86, H1000) is the one the inbound §86 citation names and keeps §86. Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 Any plan to put a frequency layer on the samāsa taxonomy — the
 [SamasaChakram](https://github.com/gasyoun/SamasaChakram) wheel's 58 leaf subtypes, a
@@ -3012,7 +3014,7 @@ _Dr. Mārcis Gasūns_
 
 _⚠️ **Class D — not reproducible as stated** ([H1362 verifiability ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md)): the κ=0.42 was never measured — no agreement computation exists to re-run. The finding's value is the phantom itself, not the figure._
 
-_↩ **Renumbered from §87 → §450** (H1361, 20-07-2026): the DCS text→period-map finding (§87, H1000) published first (16-07-2026), is the cited one, and keeps §87. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
+_↩ **Renumbered from §87 → §450** (H1361, 20-07-2026): the DCS text→period-map finding (§87, H1000) published first (16-07-2026), is the cited one, and keeps §87. Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 Found 17-07-2026 (Fable 5 `claude-fable-5`, H1074, while drafting A31). The P5 row and a G4 cell
 of [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
@@ -3558,7 +3560,7 @@ never assume the last listed member is the head.
 
 ### §451. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos
 
-_↩ **Renumbered from §103 → §451** (H1361, 20-07-2026): the union-corroboration finding (§103, H1363) published first and keeps §103; this DOI claim (H1364) reused the number. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
+_↩ **Renumbered from §103 → §451** (H1361, 20-07-2026): the union-corroboration finding (§103, H1363) published first and keeps §103; this DOI claim (H1364) reused the number. Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 Two committed docs disagreed on this DOI's status ([CONTRADICTIONS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)):
 [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
@@ -3624,7 +3626,7 @@ lookups.
 
 ### §456. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members (median Jaccard 0.00, 56% share zero) — and the corpus-unattested MW stratum is kośa/participle formations, not ghost-words
 
-_↩ **Renumbered §102 → §456** (H1328 collision fix, 20-07-2026): this H1328 finding (PR [#618](https://github.com/gasyoun/SanskritLexicography/pull/618)) reused §102, already held by the DCS `text_sandhied` finding (the incumbent). Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) rule 4, the later claim moves. Caught by the new epistemic-integrity gate ([issue #624](https://github.com/gasyoun/SanskritLexicography/issues/624))._
+_↩ **Renumbered §102 → §456** (H1328 collision fix, 20-07-2026): this H1328 finding (PR [#618](https://github.com/gasyoun/SanskritLexicography/pull/618)) reused §102, already held by the DCS `text_sandhied` finding (the incumbent). Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) rule 4, the later claim moves. Caught by the new epistemic-integrity gate ([issue #624](https://github.com/gasyoun/SanskritLexicography/issues/624))._
 
 Measured 20-07-2026 (H1328) by joining the MWderivations `issue15` **uttarapada** (compound
 final-member) index — 19,177 distinct MW-kept finals, classes `UTTARAPADA` + `KRT_STEM_MEMBER`,
@@ -9394,3 +9396,5 @@ Signal-B reach is **243 of 279 NOUN lemma_ids (87.1 %)**. Both re-bucketings rec
 **Not the cheda route, deliberately.** Wave 3 returned NO-GO on `vidyut.cheda` over isolated forms (36.4 % coverage at 28 % segmentation precision — a running-text segmenter shatters an OOV inflected word into a stem plus a spurious glossable particle: [gold/saru_gloss_wave3_cheda_coverage.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/saru_gloss_wave3_cheda_coverage.md)). Nothing here segments anything; the corpus's own marks supply the decomposition, which is exactly why this stratum was separable from the long-compound one. That verdict stands, and the long-compound stratum still waits on a context-aware neural segmenter over the aligned verse text.
 
 > **Source:** [H3876](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3876-Opus_SanskritRussian_marker-residual-morphology-recovery_02.09.26.md) (Opus 5 `claude-opus-5`) · report [REPORT_H3876_saru_marker_head_recovery_03-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/REPORT_H3876_saru_marker_head_recovery_03-09-2026.md) · [PR #2064](https://github.com/gasyoun/SanskritLexicography/pull/2064) + [SanskritRussian #16](https://github.com/gasyoun/SanskritRussian/pull/16) · coverage 87.11 % → 87.28 %, resolved forms 111,996 → 113,014, typology row 1,389/2,312 → 371/529 · published data unchanged (D8 republish fence). — SanskritLexicography · 03-09-2026
+
+_Dr. Mārcis Gasūns_

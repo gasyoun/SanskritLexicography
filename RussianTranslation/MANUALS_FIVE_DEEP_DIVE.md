@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The five load-bearing manuals — theoretical input for the Sanskrit–Russian dictionary
 
 A deep-dive companion to [`MANUALS_FOR_PWG_RU.md`](MANUALS_FOR_PWG_RU.md) (the
@@ -541,3 +543,5 @@ per manual. Companion to [`MANUALS_FOR_PWG_RU.md`](MANUALS_FOR_PWG_RU.md) (37-ma
 audit) and [`LITERATURE_FOR_PWG_RU.md`](LITERATURE_FOR_PWG_RU.md) (by-insertion-point
 harvest).*
 </content>
+
+_Dr. Mārcis Gasūns_

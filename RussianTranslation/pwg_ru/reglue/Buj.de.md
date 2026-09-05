@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — Buj
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -421,3 +423,5 @@ Z. 4 lies *bhujantā* st. *bhuñjantā* . — intens. *bobhujīti* geniessen
 **4)** *bhuj*
  1) füge bei das Haben, die Habe.
 Z. 5 lies 5, 48, 4.
+
+_Dr. Mārcis Gasūns_

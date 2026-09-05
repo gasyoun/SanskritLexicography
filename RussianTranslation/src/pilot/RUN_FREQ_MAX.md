@@ -919,3 +919,5 @@ The frequency queue milestone is done when:
 - the cost/quota table has enough windows to estimate the run duration;
 - every non-clean headless/legacy-Workflow/API launch in the window has a complete
   `LAUNCH_FUCKUPS.md` entry and passes `check_launch_ledger.py`.
+
+_Dr. Mārcis Gasūns_

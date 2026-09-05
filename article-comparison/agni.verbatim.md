@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # agni — verbatim Cologne entries
 
 **Gloss:** fire (m.)  
@@ -4199,3 +4201,5 @@ bhuk, Dahana, Havyavāhana, Saptārcis, Damuna,
 <sup>2</sup>{#agni#}¦ (ag-ni) {%m.%} (Gr.) a technical term for nouns ending in -{%i%} and
 <div n="lb">{%u%} {#idudagniH#} Kātan. ii. 1. 8; {#agneramo'kAraH#} Kātan. ii. 1. 50; ii. 2. 1.
 ```
+
+_Dr. Mārcis Gasūns_

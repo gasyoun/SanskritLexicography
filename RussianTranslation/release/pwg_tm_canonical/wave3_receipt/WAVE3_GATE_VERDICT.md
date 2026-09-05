@@ -1,3 +1,5 @@
+_Created: 24-08-2026 · Last updated: 05-09-2026_
+
 # R3434 independent gate verdict — FAIL overall (honest halt, no second repair); the targeted serious-error floor PASSES
 
 _Created: 24-08-2026 · Session: H3434 execution · Seed 3434 (new vs R15's 3299) · n=400 stratified over the regenerated pool_
@@ -60,3 +62,5 @@ fidelity/equivalence floors on the full-n denominator.
   (`pwg_tm_grok46_wave1_generate_h2684` INTENTIONAL-DIVERGENCE verdict re-verified, holds).
 - Regeneration: `$0`, ledger calls=0, prompt_sha256 55ae9562… unchanged;
   [reconciliation_delta_vs_h3299.md](reconciliation_delta_vs_h3299.md).
+
+_Dr. Mārcis Gasūns_

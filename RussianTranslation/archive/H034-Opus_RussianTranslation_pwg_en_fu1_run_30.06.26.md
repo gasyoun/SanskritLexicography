@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — execute FU1 (PWG→English bulk run)
 
 **For:** a fresh agent session with **Max/Workflow access** (or the autonomous account).
@@ -145,3 +147,5 @@ python src/annotate_dcs_freq.py     # re-attach dcs_freq (language-agnostic, ide
   merge: [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) · save: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py)
 - concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) ·
   journal: [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
+
+_Dr. Mārcis Gasūns_

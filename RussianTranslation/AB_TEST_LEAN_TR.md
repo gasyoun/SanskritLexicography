@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # A/B test plan — lean masked-regime TR vs full production TR
 
 **Question.** The opt2 cost is now dominated by per-batch prompt **cache-creation** of the
@@ -149,3 +151,5 @@ cards). TR (2,554) + schema (1,200) + NWS block (461) are a small slice — trim
 lost in run-to-run noise. **Keep the full TR.** If more cost reduction is wanted, the lever is
 the **card content** (dense-card handling / portrait inlining / schema), not the prompt — a
 separate optimization, separately tested.
+
+_Dr. Mārcis Gasūns_

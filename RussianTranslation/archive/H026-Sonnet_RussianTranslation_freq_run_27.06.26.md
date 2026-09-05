@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — launch the first REAL freq-queue window (pwg_ru on Max/Sonnet)
 
 Cold-start brief for the next chat. Scope: **start the real PWG→Russian bulk run**
@@ -100,3 +102,5 @@ was 640 k; sTA/BU/gam are larger). Options:
 `agni` + `akṣara` human sign-off gates remain (see the prior handoff
 [`H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md`](H025-Opus_RussianTranslation_pwg_ru_max_25.06.26.md) Track B).
 Not blocking the freq run.
+
+_Dr. Mārcis Gasūns_

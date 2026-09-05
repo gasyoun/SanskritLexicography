@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Dictionary of lexicography -- R_ R_ K_ Hartmann; Gregory James -- 1, 2002 -- Routledge -- isbn13 9780203017685 -- 32852a89bc705fa3b00728a3cb51ddfc -- Anna’s Archive
 
 **Source:** `Dictionary of lexicography -- R_ R_ K_ Hartmann; Gregory James -- 1, 2002 -- Routledge -- isbn13 9780203017685 -- 32852a89bc705fa3b00728a3cb51ddfc -- Anna’s Archive.pdf`  
@@ -6365,3 +6367,5 @@ Zgusta, L. (1971) Manual of Lexicography, TheHague : Mouton.
 Zirnmermann, H. (1983) ‘Multifunctional dictionaries’, Linguistica Computazionale 3:279– 88.
 Zöfgen, E. (1991) ‘Bilingual learner’s dictionaries’,
 in F.J.Hausmann et al. (eds) III:2888–903.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Pipeline audit: PWG Russian translation
 
 **Auditor:** Codex (GPT-5), with three independent read-only audit passes  
@@ -222,3 +224,5 @@ Phase 2 (#899/#900/#911). 29-08 closeout battery on master tip: all nine offline
 bench deterministic — see
 [`pwg_ru/h1437/H1437_PHASE4_CLOSEOUT_2026-08-29.md`](../RussianTranslation/pwg_ru/h1437/H1437_PHASE4_CLOSEOUT_2026-08-29.md).
 Live cohort width>1 stays refused pending live serial acceptance + Codex sign-off.
+
+_Dr. Mārcis Gasūns_

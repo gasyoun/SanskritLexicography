@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Lexicography _ An Introduction -- Howard Jackson -- 1, PS, 2002 -- Routledge -- isbn13 9780203467282 -- 90156474e7582e0ccc1353670d7d1019 -- Anna’s Archive
 
 **Source:** `Lexicography _ An Introduction -- Howard Jackson -- 1, PS, 2002 -- Routledge -- isbn13 9780203467282 -- 90156474e7582e0ccc1353670d7d1019 -- Anna’s Archive.epub`  
@@ -4661,3 +4663,5 @@ word [1](#008_Chapter001.xhtml_page_001)--[2](#008_Chapter001.xhtml_page_002),
 word class [6](#008_Chapter001.xhtml_page_006)--[7](#008_Chapter001.xhtml_page_007), [19](#009_Chapter002.xhtml_page_019), [26](#010_Chapter003.xhtml_page_026), [54](#012_Chapter005.xhtml_page_054), [88](#015_Chapter008.xhtml_page_088), [107](#016_Chapter009.xhtml_page_107)--[8](#016_Chapter009.xhtml_page_108)
 
 word-form [4](#008_Chapter001.xhtml_page_004)
+
+_Dr. Mārcis Gasūns_

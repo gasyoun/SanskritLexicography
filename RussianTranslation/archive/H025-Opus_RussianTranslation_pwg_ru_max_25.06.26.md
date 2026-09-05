@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff roadmap — pwg_ru on Max + lock the comparison flagship (2026-06-25)
 
 A cold-start brief for the next chat. Scope set with the user 2026-06-25.
@@ -112,3 +114,5 @@ the server fix.
   [`research/JUDGE_POLICY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_POLICY.md).)
 
 No open decisions — both tracks are cleared to execute.
+
+_Dr. Mārcis Gasūns_

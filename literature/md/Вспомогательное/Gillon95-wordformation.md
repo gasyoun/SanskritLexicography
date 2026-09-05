@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Gillon95-wordformation
 
 **Source:** `Gillon95-wordformation.pdf`  
@@ -1569,3 +1571,5 @@ Pandit, S. P. (ed). 1889. Vikramorva´s¯ıyam. Bombay: Government Central Book 
 
 ABSTRACT This paper shows that context free rules of the sort used by Elizabeth Selkirk and by Anna-Maria Di Sciullo and Edwin Williams to analyze English derivational morphology and compound formation prove to be enlightening when applied to the derivational morphology and compound formation of Classical Sanskrit. It turns out that virtually the same class of context free rules can accurately characterize the derivational morphology and compound formation found in both languages. In spite of the near co-incidence of the class of lexical structures available for the two languages, calque translations are not equally acceptable in both languages. This diﬀerence is attributable to a diﬀerence in an entire compound’s access to the argument structure of its non-head constituents: Classical Sanskrit tolerates such access, while English prohibits it.
 42
+
+_Dr. Mārcis Gasūns_

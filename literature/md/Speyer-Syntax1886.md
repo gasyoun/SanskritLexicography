@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Speyer-Syntax1886
 
 **Source:** `Speyer-Syntax1886.pdf`  
@@ -32571,3 +32573,5 @@ S*r 397; — put to the present tenBe 5 8 3 ,8 °.
 526, 527; — put to qr seeirr-
 
 OlH. UNIV. LIBRY. SYSTEM'
+
+_Dr. Mārcis Gasūns_

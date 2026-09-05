@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # agni — cleaned IAST rendering
 
 **Gloss:** fire (m.) · **Class:** non-samāsa
@@ -4118,3 +4120,5 @@ agni¦ (agní) m. [IE. MAYR. DEBRU. p. 741; TURN. 55; Pok. 293 /
 
 2agni¦ (ag-ni) m. (Gr.) a technical term for nouns ending in -i and
  u idudagniḥ Kātan. ii. 1. 8; agneramo'kāraḥ Kātan. ii. 1. 50; ii. 2. 1.
+
+_Dr. Mārcis Gasūns_

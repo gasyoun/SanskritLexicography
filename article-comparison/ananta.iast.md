@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # ananta — cleaned IAST rendering
 
 **Gloss:** endless; Viṣṇu/Śeṣa (an-+anta) · **Class:** a-samāsa (nañ)
@@ -1647,3 +1649,5 @@ anantā¦ (an-antā) f. 1A (du.) heaven and earth B the earth
  Vaija. 257. 4; anantā tu paurṇamāsyām NānārthāSaṃ. ii. 47. 8; [anantā is
  given as a synonym for kajjalī, a kind of fish, ŚabdaKaDru. citing
  the Śabdaratnāvalī; number one, MW.]
+
+_Dr. Mārcis Gasūns_

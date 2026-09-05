@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — build the non-root NOMINAL grammar layer (Scope B/C prerequisite)
 
 Date: 2026-06-29 · Audience: Claude Code (new chat) · Repo:
@@ -60,3 +62,5 @@ on the real tools that already exist in the org:
   unlock Scopes B (43,968 DCS-frequent) and C (123,366 full PWG). Nouns are cheaper/card than
   dense root sub-cards, so the $ estimates ($2–2.7k for B, $6–7k for C) may come in lower.
 - Update `GRAMMAR_LAYER.md`, `.ai_state.md`, and `../../Uprava/GTD_NEXT_ACTIONS.md` as you land phases.
+
+_Dr. Mārcis Gasūns_

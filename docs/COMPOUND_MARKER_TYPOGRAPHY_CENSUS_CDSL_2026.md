@@ -1,3 +1,5 @@
+_Created: 17-08-2026 · Last updated: 05-09-2026_
+
 # Compound-marker typography across the Sanskrit dictionaries — consolidated census
 
 _Created: 17-08-2026 · Last updated: 19-08-2026 (§576 — cross-reference conventions)_

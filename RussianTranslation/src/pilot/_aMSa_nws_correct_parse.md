@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # aṃśa — corrected NWS sub-source parse (ground truth)
 
 NWS "Kleines Zitat" format: `TAG > gloss … SOURCE:page >`.
@@ -34,3 +36,5 @@ Sircar = epigraphy (EI). Every one confirms the cite-closes-gloss reading.
 
 → Failure to log: **F12 — NWS "Kleines Zitat" off-by-one** (cite-after-gloss mis-read as cite-before-gloss),
 plus the QA judge sharing the same blind spot and false-clearing it. Add a guard to 6_merged_translate.md.
+
+_Dr. Mārcis Gasūns_

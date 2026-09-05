@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Judge A/B — Opus vs Sonnet as the QA judge model (battleground, 2026-06-24)
 
 **Question.** The scale-up's main path uses an **Opus** QA judge (per the pilot). A **Sonnet**
@@ -271,3 +273,5 @@ check*, not a blocker — let `judge_disagreements.py` surface the rare conflict
 revisit only if that rate climbs. **Methodological lesson worth keeping: do not build a synthetic
 test whose ground truth you cannot defend; for translation correctness the only honest ground
 truth is the entry in full context, adjudicated by the editor on genuine disagreements.**
+
+_Dr. Mārcis Gasūns_

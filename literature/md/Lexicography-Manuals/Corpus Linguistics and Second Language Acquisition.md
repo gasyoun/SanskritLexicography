@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Corpus Linguistics and Second Language Acquisition_ -- Xiaofei Lu -- Cognitive Science and Second Language Acquisition Series, -- Routledge, Chapman & -- isbn13 9780367517212 -- d6ff71c801f6c4b1e80a0612172aff15 -- A
 
 **Source:** `Corpus Linguistics and Second Language Acquisition_ -- Xiaofei Lu -- Cognitive Science and Second Language Acquisition Series, -- Routledge, Chapman & -- isbn13 9780367517212 -- d6ff71c801f6c4b1e80a0612172aff15 -- A.pdf`  
@@ -13945,3 +13947,5 @@ Zhang, J. 121
 Zhao, H. 52, 71 
 Zipfian distribution 47, 92, 101, 104; 
 VAC type-token 102–103
+
+_Dr. Mārcis Gasūns_

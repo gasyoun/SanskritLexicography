@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — jIv
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -214,3 +216,5 @@ Jmd ausbeuten
 **T51 block)** — *sam* caus.
 [Spr. 4992.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4992)
 [BHĀG. P. 10,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,50)
+
+_Dr. Mārcis Gasūns_

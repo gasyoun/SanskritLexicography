@@ -6,7 +6,7 @@ This file orients Codex and other non-Claude agent sessions. The section between
 ## Shared org context (generated — H1393 layer)
 
 - Encodings / key1/key2 / transcoder traps: [Sanskrit context primer](https://github.com/gasyoun/github-spine/blob/main/SANSKRIT_CONTEXT_PRIMER.md).
-- Task routing: [CLAUDE.md](CLAUDE.md) — matching section, not end-to-end.
+- Task routing: [CLAUDE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md) — matching section, not end-to-end.
 - Danger facts (destroy-work-if-missed; full text + sources in [DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md)):
   - VisualDCS/src/dcs_full.sqlite is a 0-byte DECOY; the real 921 MB DCS DB (IAST lemmas) is VisualDCS/src/DCS-data-2026/dcs_full.sqlite
   - The Bhagavadgita (MBh 6.23-40) is ABSENT from DCS; Nala (MBh 3.50+) is present — never assume canonical-text coverage

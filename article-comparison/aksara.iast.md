@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # akṣara — cleaned IAST rendering
 
 **Gloss:** imperishable; syllable; Brahman (a-+kṣara) · **Class:** a-samāsa (nañ)
@@ -813,3 +815,5 @@ akṣarā¦ (ákṣarā, akṣárā) f. [from adj. akṣára (f. -ā), originall
  81. 4; 4v name of one of the thirteen wives of Kaśyapa dityaditī
  danukadrū vinatātāmrākṣarājarāriṣṭāḥ.surabhiḥ krodhavaśāmunisurasāḥ syuḥ kaśyapagṛhiṇyaḥ
  ŚabdaRa.(Vā.) 402.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Read ORCHESTRATION_4ACCOUNT_MAX.md and PIPELINE_AUDIT_2026-07_H818.md completely.
 
 Execute the H818 Windows live acceptance on the currently checked-out PR #416 branch using the owner-authenticated Max profile already present in CLAUDE_CONFIG_DIR.
@@ -27,3 +29,5 @@ Sequence:
 10. Produce the final H818 GO/NO-GO report and update the audit/history/journals with measured evidence.
 
 Do not mark the PR ready and do not begin H841/H842/H843 unless every H818 GO criterion passes. If a criterion fails, classify it deterministically, preserve its requeue artifact, report NO-GO, and stop.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Print Entry Examples Review
 
 Date: 2026-06-28
@@ -192,3 +194,4 @@ NWS:
 | P1 slows production | Complex entries need nested sense labels and homonym blocks. | Renderer must support nested labels, not just flat `1,2,3`. | renderer |
 | P2 improves scholarly polish | `differentia` is valuable but may be too technical for main print. | Keep in digital apparatus unless editor chooses a visible "choice note" style. | human_editor |
 
+_Dr. Mārcis Gasūns_

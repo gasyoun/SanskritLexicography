@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Routledge Handbook of Teaching English to Young Learners -- Sue Garton; Fiona Copland -- Routledge Handbooks in Applied Linguistics, Hardcover, -- isbn13 9781032338972 -- 18d4135a349bdd28bbf0842d326debcb -- Anna
 
 **Source:** `The Routledge Handbook of Teaching English to Young Learners -- Sue Garton; Fiona Copland -- Routledge Handbooks in Applied Linguistics, Hardcover, -- isbn13 9781032338972 -- 18d4135a349bdd28bbf0842d326debcb -- Anna.pdf`  
@@ -28467,3 +28469,5 @@ time allocation 15, 18 – 22, 25
 TOEFL Primary and Junior tests 299, 392,  
 397, 399
 Tongpoon-Patanasorn, A. 24
+
+_Dr. Mārcis Gasūns_

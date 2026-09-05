@@ -1,6 +1,6 @@
 # Data license
 
-_Created: 13-07-2026 · Last updated: 13-07-2026_
+_Created: 13-07-2026 · Last updated: 05-09-2026_
 
 This repository's **code and tooling** (scripts under
 [`RussianTranslation/src/`](RussianTranslation/src),
@@ -9,13 +9,13 @@ MIT-licensed — see [`LICENSE`](LICENSE).
 
 **Derived statistics datasets released as part of FAIR Release #1** — the
 markup-tag frequency census
-([`data/markup_tag_census.tsv`](data/markup_tag_census.tsv)) and the
+([`data/markup_tag_census.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv)) and the
 pairwise headword-overlap matrix
-([`data/headword_overlap_matrix.tsv`](data/headword_overlap_matrix.tsv)) — are
+([`data/headword_overlap_matrix.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv)) — are
 released under **CC-BY-4.0**, matching the convention already used for the
 sibling OBS-T dataset in
 [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/DATA_LICENSE.md).
-See [`data/FAIR_RELEASE_1.md`](data/FAIR_RELEASE_1.md) for the full release
+See [`data/FAIR_RELEASE_1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md) for the full release
 package, provenance, and Zenodo deposit metadata.
 
 This CC-BY-4.0 grant covers **only** the two named derived TSV files above —

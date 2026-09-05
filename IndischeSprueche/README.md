@@ -1,6 +1,6 @@
 # Indische Sprüche (Böhtlingk)
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 05-09-2026_
 
 ## ⚠️ Read this first: canonical editions live elsewhere
 
@@ -80,7 +80,7 @@ full corpus here, not a duplicate source.
 
 ## Data
 
-[`data/indische_sprueche.jsonl`](data/indische_sprueche.jsonl) — 7,537 records,
+[`data/indische_sprueche.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl) — 7,537 records,
 one per line:
 
 ```json

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Token optimization for the pwg_ru Max bulk run — findings & decisions (2026-06-27)
 
 Goal set by M.G. (2026-06-27): the PWG→Russian bulk run on **Sonnet/Max** must
@@ -313,3 +315,5 @@ Generated per root from the committed `run_pilot_wf.js` (prompts byte-identical)
 - **dense** card (>30 `<ls>`): multi-turn, reads own files, no-abridge directive.
 - 1 automatic retry; `judge:null` (Python gates own QA); glue via
   `root_glue_translated.py`. NO per-card LLM judge.
+
+_Dr. Mārcis Gasūns_

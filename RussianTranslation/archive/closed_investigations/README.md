@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Closed investigations
 
 Archived 04-07-2026 during a documentation pass. These are self-contained,
@@ -20,3 +22,5 @@ them out of the top level. Kept for audit history, not deleted.
 For the full chronological narrative these fit into, see
 [`../../PIPELINE_HISTORY.md`](../../PIPELINE_HISTORY.md). For current
 production process, see [`../../src/pilot/RUN_FREQ_MAX.md`](../../src/pilot/RUN_FREQ_MAX.md).
+
+_Dr. Mārcis Gasūns_

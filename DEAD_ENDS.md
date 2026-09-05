@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 02-09-2026_
+_Created: 08-07-2026 · Last updated: 05-09-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -141,7 +141,7 @@ Don't retry unless: you compute the direction at corpus scale from the start —
 
 ### §9. Resolving PWG/MW `HARIV.` citations against DCS to find shared **erroneous** citations — abandoned
 
-_↩ **Renumbered from §8 → §9** (H1361, 20-07-2026): the §8 Petersburg-citation dead-end (bound to its §8b MBh-locus continuation) keeps §8. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
+_↩ **Renumbered from §8 → §9** (H1361, 20-07-2026): the §8 Petersburg-citation dead-end (bound to its §8b MBh-locus continuation) keeps §8. Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 🔴 ✍️ **Testing whether MW and PWG share a *wrong* Harivaṃśa verse number by resolving `HARIV. N` against the DCS corpus — and, the deeper trap, proposing a vulgate↔critical *concordance* as the fix.**
 
 Failed because: PWG (15,415 numbered refs, range 1–16,369) and MW (1,053 numbered refs) both cite the **Calcutta vulgate** by *continuous śloka number* (16,374 ślokas, 271 adhyāyas). DCS carries **Vaidya's critical edition** (118 adhyāyas, 6,073 ślokas ≈ ⅓ of the vulgate). Only **1 of 587** shared rare refs resolved. The obvious repair — build a vulgate↔critical concordance — **cannot work**: a concordance maps a vulgate address to a critical address *on the assumption the address is correct*, which is precisely the proposition under test. An **erroneous** citation maps to a critical verse lacking the headword; a **correct** citation pointing at vulgate-only material maps to `ABSENT`. Both emit the same observable ("not found"), so no concordance — however perfect, however verse-level — can separate *Böhtlingk wrote the wrong number* from *Vaidya cut this verse*. With ⅔ of the vulgate absent from the critical text, the `ABSENT` branch swamps the signal.
@@ -167,7 +167,7 @@ Don't retry unless: you adjudicate the citation against **the vulgate itself**, 
 
 ### §10. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом
 
-_↩ **Renumbered from §8 → §10** (H1361, 20-07-2026): §8 is kept for the citation/§8b pair; this Gemini-OCR entry is marginally older (08-07) but has no §Nb dependent, so moving it is safe. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
+_↩ **Renumbered from §8 → §10** (H1361, 20-07-2026): §8 is kept for the citation/§8b pair; this Gemini-OCR entry is marginally older (08-07) but has no §Nb dependent, so moving it is safe. Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 🟠 ✍️ **Маршрут «OCR сканов комментариев через Gemini» (H370) для слоя комментаторского диалога — оставлен, не провален.**
 What was tried: план OCR-ингеста печатных изданий Тилаки/Бхушаны/Широмани для Фазы-2.
 Why abandoned: лицензированный цифровой источник (Gita Supersite, CC BY 4.0) закрыл потребность раньше и чище — H370 закрыт как superseded 08-07-2026, Opus 4.8 (`claude-opus-4-8`); диспозиция: [SUNDARA_OCR_PHASE2_SUPERSEDED.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/docs/SUNDARA_OCR_PHASE2_SUPERSEDED.md).

@@ -1,3 +1,5 @@
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+
 # PWG delivery report (derived, H4052)
 
 Surface: `pwg-ru-data durable TM mirror` · store sha256 `79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65`

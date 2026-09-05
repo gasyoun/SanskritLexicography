@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Routledge Handbook of Applied Linguistics; Second -- Li Wei & Zhu Hua & James Simpson -- 2024 -- Routledge -- 37ee57e7cd6abf0979ffd86c8ebb077e -- Anna’s Archive
 
 **Source:** `The Routledge Handbook of Applied Linguistics; Second -- Li Wei & Zhu Hua & James Simpson -- 2024 -- Routledge -- 37ee57e7cd6abf0979ffd86c8ebb077e -- Anna’s Archive.epub`  
@@ -8185,3 +8187,5 @@ Note: Page numbers in *italic* indicate a figure and page numbers in **bold** in
 
 - [[word characteristics]{.index-term} [219--220](#Ch16.xhtml_p219){.index-locator}, [229](#Ch16.xhtml_p229){.index-locator}]{#index1.xhtml_i0198}
 :::
+
+_Dr. Mārcis Gasūns_

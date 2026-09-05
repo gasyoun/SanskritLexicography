@@ -1,9 +1,9 @@
 # ACC×NCC P0 — measured row counts
 
-_Created: 06-07-2026 · Last updated: 26-07-2026_
+_Created: 06-07-2026 · Last updated: 05-09-2026_
 
-Produced by [`parse_acc.py`](parse_acc.py) / [`parse_ncc.py`](parse_ncc.py) against the
-sources named in [`ROADMAP_ACC_NCC.md`](../../ROADMAP_ACC_NCC.md) §1. Re-run either script
+Produced by [`parse_acc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_acc.py) / [`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py) against the
+sources named in [`ROADMAP_ACC_NCC.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ACC_NCC.md) §1. Re-run either script
 to regenerate `acc.jsonl` / `ncc.jsonl` from the current source snapshot.
 
 | | ACC | NCC |
@@ -34,7 +34,7 @@ not transliterated at all). `Rāmāyaṇa` keyed as `namayana`, `Yogasūtra` as 
 The join gains 14,379 keys and loses 1 — and the lost one was a collision the corruption
 itself manufactured (NCC `Rāmamuktāvali` keyed as `namamuktavali`, colliding with ACC's
 genuinely different `Nāmamuktāvalī`). Row-level consequences downstream:
-[`NCC_KEY_REPAIR_MIGRATION_2026.md`](NCC_KEY_REPAIR_MIGRATION_2026.md).
+[`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
 
 The 643 residual non-ASCII keys are a **different and much smaller defect**, not introduced
 by this bug and not fixed by it: they carry typographic characters through from the NCC
@@ -59,3 +59,5 @@ force agreement with the interview-time count.
 ACC's counts (49,833 rows / 32,287 distinct keys) match the roadmap's figures exactly, and
 are untouched by the repair: `parse_acc.py` reads Cologne SLP1 directly and never fed a
 capitalised string to `to_slp1`.
+
+_Dr. Mārcis Gasūns_

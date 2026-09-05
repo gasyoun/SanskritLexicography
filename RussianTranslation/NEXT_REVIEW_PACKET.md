@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Next Review Packet: Fresh sTA + Print Feasibility
 
 Date: 2026-06-29
@@ -188,3 +190,5 @@ Do not start open-ended human review. Use only:
 Current packet status: executable, but not complete. The missing external input
 is fresh Max `sTA` output. A 10-root Max run is explicitly out of scope until
 Stage B produces enough audit data.
+
+_Dr. Mārcis Gasūns_

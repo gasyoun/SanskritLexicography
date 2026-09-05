@@ -1,10 +1,12 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Catalan → CDSL-uncovered: `compound(2)`  (2397 headwords)
 
 > Headwords from the *Diccionari Sànscrit–Català* not found as a `<k1>` key in any of the 43 CDSL dictionaries (`csl-orig/v02`), accent- and compound-insensitive.
 >
 > **Category:** Two-member compounds written solid; MW headwords only a selection of compounds, so these are listed under a parent lemma or omitted. Genuine lexical content.
 
-See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
+See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
 
 | # | Catalan headword | normalised SLP1 key |
 |---:|---|---|
@@ -2405,3 +2407,5 @@ See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-
 | 2395 | `ṣaḍ-viṣaya-` | `zaqvizaya` |
 | 2396 | `ṣaṭ-śāstravedin-` | `zawSAstravedin` |
 | 2397 | `ṣaṭ-padāli-` | `zawpadAli` |
+
+_Dr. Mārcis Gasūns_

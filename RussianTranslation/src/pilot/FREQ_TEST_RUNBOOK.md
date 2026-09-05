@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Freq-queue 10-article test — runbook (Max)
 
 A bounded end-to-end test of the frequency-first pipeline: **8 single-card nouns + the
@@ -159,3 +161,5 @@ scale-ready pending the prompt nits above + the `nws_split` gate wired into the 
 > now encoded** in [`run_pilot_wf.js`](run_pilot_wf.js) (HARD RULES 3/4/5) and the audit loop
 > (`run_real_test.py audit`); they are no longer pending. The findings above stay as the record
 > of *why*. The judge is now Sonnet-bulk + Opus-on-reject (see step 2).
+
+_Dr. Mārcis Gasūns_

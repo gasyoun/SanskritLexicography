@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff research — microstructure conventions across the core dictionaries (2026-06-23)
 
 **Question.** For each core dictionary, *how* are the four microstructure conventions
@@ -152,3 +154,5 @@ illustrative quotation as an *optional pedagogical* enrichment — never as the 
 backbone. This keeps `pwg_ru` aligned with its own already-built schema: only the **gloss
 default** (toward толкование) and the **citation density per layer** need new policy; the
 rest is already implemented.
+
+_Dr. Mārcis Gasūns_

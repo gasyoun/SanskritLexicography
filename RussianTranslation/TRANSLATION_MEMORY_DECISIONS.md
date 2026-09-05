@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Translation Memory Decisions
 
 _Created: 04-07-2026_
@@ -214,3 +216,5 @@ create a recurring monthly monitor with a small annotated bibliography and an
 `monthly-acl-anthology-sanskrit-nlp-monitor`. Its output should append dated
 sections to an appropriate monitor file, deduplicate prior entries, and route
 new measured findings to the correct `FINDINGS.md` when warranted.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # A Sanskrit inflection-index code — the Zaliznyak scheme for the nominal layer
 
 Zaliznyak's *Грамматический словарь* links each word to its full paradigm with a single
@@ -178,3 +180,5 @@ The index → paradigm payoff is wired via vidyut:
 `nominal_grammar.py` formats any `paradigm_for()` result as an aligned 8-case × 3-number table.
 The an-stem template (`m·8n*`, repr. atidhanvan) visibly shows the strong/weak gradation the `*`
 flag encodes: `atidhanvā` (nom sg) → `atidhanvānam` (strong) → `atidhanvanā` (weak).
+
+_Dr. Mārcis Gasūns_

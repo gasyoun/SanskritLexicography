@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # anya — verbatim Cologne entries
 
 **Gloss:** other, another (pron. adj.)  
@@ -3769,3 +3771,5 @@ défiguré ; {%-in-%} <ab>id.</ab>
 <div n="lb">{#…seveta SoPapittApanuttaye#} RasRaSa. 22. 85; {@3@} female attendant of harem, cf.
 <div n="lb">{@{#anyAhUti#}@}; {@4@} co-wife, cf. {@{#anyABiDAgrahaRa#}@}.
 ```
+
+_Dr. Mārcis Gasūns_

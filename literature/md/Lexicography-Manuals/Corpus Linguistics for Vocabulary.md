@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Corpus Linguistics for Vocabulary -- Pawe_ Szudarski -- 2017 -- f5b5884a879ededb74e838340137dbf2 -- Anna’s Archive
 
 **Source:** `Corpus Linguistics for Vocabulary -- Pawe_ Szudarski -- 2017 -- f5b5884a879ededb74e838340137dbf2 -- Anna’s Archive.pdf`  
@@ -6422,3 +6424,5 @@ Web as a corpus 15–16 Wikipedia Corpus 16, 189–98 Wordandphrase interface 22
 102, 146, 196, 218 word family 2, 36, 56, 58, 64–6, 68 wordlist 22–3, 29, 55, 57, 58, 63–6, 89–90,
 100–2, 142, 173, 190–8 WordSmith tools 19, 28, 154, 173
 Zipf’s law 55
+
+_Dr. Mārcis Gasūns_

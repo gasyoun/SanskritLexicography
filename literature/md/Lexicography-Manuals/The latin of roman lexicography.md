@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The latin of roman lexicography_ Ediz_ multilingue -- Rolando Ferri (curatore) -- Ricerche sulle lingue di frammentaria attestazione -- 7, -- Fabrizio -- isbn13 9788862273763 -- 376358c2ff4674db5940b2bbdf24085b -- A
 
 **Source:** `The latin of roman lexicography_ Ediz_ multilingue -- Rolando Ferri (curatore) -- Ricerche sulle lingue di frammentaria attestazione -- 7, -- Fabrizio -- isbn13 9788862273763 -- 376358c2ff4674db5940b2bbdf24085b -- A.pdf`  
@@ -12400,3 +12402,5 @@ www.libraweb.net
 Per leggere un fascicolo saggio di ogni nostra rivista si visiti il nostro sito web:
 To read a free sample issue of  any of  our journals visit our website:
 www.libraweb.net/periodonline.php
+
+_Dr. Mārcis Gasūns_

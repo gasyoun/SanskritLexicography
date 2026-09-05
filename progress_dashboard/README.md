@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG→RU progress & kitchen dashboard
 
 _Created: 10-07-2026 · Last updated: 06-08-2026 (H2269 dual-run: health_probe_log path)_

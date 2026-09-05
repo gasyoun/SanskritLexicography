@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Publication-Grade Sa→Ru Translation Memory — Data Statement / Datasheet
 
 _Created: 04-07-2026 · Last updated: 22-07-2026 (H1458 Track C3 — filled per Bender/Friedman + Gebru)_
@@ -145,3 +147,5 @@ python src\terminology_build.py selftest
 python src\build_release_bundles.py selftest
 python src\build_release_bundles.py --audit-rights   # the hard gate: 0 grey RU surface strings
 ```
+
+_Dr. Mārcis Gasūns_

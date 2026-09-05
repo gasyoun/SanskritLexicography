@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — vraj
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -281,3 +283,5 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] vraj mit pra [Kaus. 2.] pravrājita [Divyāvad. 236,27.]
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — Mit anupra nach einem Andern das häusliche Leben aufgeben, um ein asketisches zu beginnen, [Divyāvad. 61,17]; [Jātakam. 19. 21.]
+
+_Dr. Mārcis Gasūns_

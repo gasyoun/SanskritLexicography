@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — Bid
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -510,3 +512,5 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 **sam-sense9)** — *vi*
 5) *bṛddhānāmapi yadbuddhirbālavākyairvibhidyate*
 [BHĀG. P. 10,74,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,74,31)
+
+_Dr. Mārcis Gasūns_

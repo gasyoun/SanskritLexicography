@@ -1,3 +1,5 @@
+_Created: 24-08-2026 · Last updated: 05-09-2026_
+
 # Wave-2 regeneration reconciliation vs the lost wave-2 receipt
 
 _Created: 24-08-2026 · Session: H3299 execution (opencode/x-preview-f-free, MG-approved tier override)_
@@ -30,3 +32,5 @@ Bucket deltas sum to +9 = extracted delta; accounted delta +17 splits promoted/q
 ## Where the data lives
 
 The full promoted/quarantine dumps stay out of git (the loss class that ate `wave2_b/`); this directory carries the tracked evidence: sample, blind packet, adjudication, quality report, this reconciliation, and the enumerated placeholder fills. The dumps are deterministically regenerable (`drafted=0`, zero model calls) from the tracked queue+manifest.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — recover the full Slice-C translated output
 
 > **UPDATE 2026-06-30 (recovery session, branch `recover/slicec-top3-pat-ga-vad`):**
@@ -153,3 +155,5 @@ into the existing file instead of replacing). This stops the requeue-overwrite c
 - harness gen: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) (default budget 12000 if PR #20 merged, else 9000)
 - save: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py) (note the overwrite hazard above)
 - context: [`BRIDGE_FOLLOWUPS_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/closed_investigations/BRIDGE_FOLLOWUPS_2026-06-30.md), PR #18 (bridge)
+
+_Dr. Mārcis Gasūns_

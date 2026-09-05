@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Provenance note
 
 The files in this folder were first committed in
@@ -17,10 +19,12 @@ The headword spine of the *Diccionari Sànscrit–Català* (Òscar Pujol,
 Enciclopèdia Catalana, 2005 — the first Sanskrit→Catalan dictionary) and its
 coverage analysis against the Cologne Digital Sanskrit Lexicon (CDSL)
 wordlists. The source list is mirrored from the `sanskrit-lexicon/CORRECTIONS`
-repo. See [`Sanskrit-Catalan-Wordlist-vs-Cologne.md`](Sanskrit-Catalan-Wordlist-vs-Cologne.md)
+repo. See [`Sanskrit-Catalan-Wordlist-vs-Cologne.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md)
 for the full report.
 
 | Commit | Date | What it added |
 |---|---|---|
 | [`56564a0`](https://github.com/gasyoun/SanskritLexicography/commit/56564a05895f02015c088d8c26d26ef90cbeb596) | 2026-06-26 | Source list, report, per-category uncovered-word lists, scripts (message mislabeled — see above) |
 | [`75b917d`](https://github.com/gasyoun/SanskritLexicography/commit/75b917d1cc1f954d59eb301a33f41074ec210259) | 2026-06-26 | Made the three analysis scripts repo-portable |
+
+_Dr. Mārcis Gasūns_

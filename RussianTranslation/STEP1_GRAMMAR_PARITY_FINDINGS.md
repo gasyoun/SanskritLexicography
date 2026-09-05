@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Step 1 Grammar-Parity Re-run: Speed & Cost Findings
 
 **Date:** 2026-06-29  
@@ -101,3 +103,5 @@ The 3-part i run (68+68+68) merged cleanly to 204/204 cards with PASS gates. The
 2. **Do not attempt pw\*/sch consolidation now.** The structural cost overhead on those cards is real but modest (<$0.50 total across 5 roots). Fixing it requires a dedicated pw\* batch harness and is Step 2+ work.
 3. **Target batch size: 8–12 cards for dense roots, 5–7 for sparse.** The 9 k-token budget used here hit this range naturally for most batches.
 4. **Use `--allow-stale` for audit on split+merged outputs.** The merged file only has hashes for the last-merged-in part; `--allow-stale` is safe when the harnesses were freshly generated in the same session.
+
+_Dr. Mārcis Gasūns_

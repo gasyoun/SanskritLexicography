@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Full PWG->Russian 30-Day SLA Plan
 
 _Created: 04-07-2026_
@@ -146,3 +148,4 @@ After the first **48 hours** of SLA operation:
 - The final daily log records the full-scope counts, residuals, and publication
   validation result.
 
+_Dr. Mārcis Gasūns_

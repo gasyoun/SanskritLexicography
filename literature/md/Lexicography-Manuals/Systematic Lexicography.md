@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Systematic Lexicography (Oxford Linguistics) -- Juri Derenick Apresjan, Kevin Windle -- Oxford linguistics] Systematic lexicography, Oxford _, 2008 -- isbn13 9780191564987 -- fa668e4824b4a4c63fae025a80fbac78 -- Anna
 
 **Source:** `Systematic Lexicography (Oxford Linguistics) -- Juri Derenick Apresjan, Kevin Windle -- Oxford linguistics] Systematic lexicography, Oxford _, 2008 -- isbn13 9780191564987 -- fa668e4824b4a4c63fae025a80fbac78 -- Anna.pdf`  
@@ -16595,3 +16597,5 @@ Zholkovsky, A. 101, 115, 116, 120, 145, 146, 215,
 216, 231, 266
 Ziﬀ, P. 163
 Zolotova, G. 250 n. 13, 251 n. 18
+
+_Dr. Mārcis Gasūns_

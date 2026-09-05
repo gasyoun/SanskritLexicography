@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Anschreiben — Einreichung bei den *Beiträgen zur Geschichte der Sprachwissenschaft*
 
 *(Deutsche Fassung des Anschreibens. Der Aufsatz selbst ist in englischer Sprache verfasst — die Zeitschrift veröffentlicht in deutscher, englischer, französischer, spanischer und italienischer Sprache.)*
@@ -64,3 +66,5 @@ mit freundlichen Grüßen
 Mārcis Gasūns
 Unabhängiger Forscher
 gasyoun@ya.ru · ORCID: 0000-0003-4513-884X
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Correlatives Cross-Linguistically
 
 **Source:** `Correlatives Cross-Linguistically.pdf`  
@@ -13665,3 +13667,5 @@ Y yes-no question  133 yes-no relative  132–137
 In the Language Faculty and Beyond series the following titles have been published thus far or are scheduled for publication:
 2 Aroui, Jean-Louis and Andy Arleo (eds.): Towards a Typology of Poetic Forms. From language to metrics and beyond. xiv, 401 pp. + index. Expected September 2009
 1 Lipták, Anikó (ed.): Correlatives Cross-Linguistically. 2009. vii, 375 pp.
+
+_Dr. Mārcis Gasūns_

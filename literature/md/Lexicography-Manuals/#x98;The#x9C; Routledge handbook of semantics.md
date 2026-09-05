@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # #x98;The#x9C; Routledge handbook of semantics -- Nick Riemer -- 1, 20150730 -- Routledge -- isbn13 9780367867591 -- 39709d45a5519dcde344840ca8b4b599 -- Anna’s Archive
 
 **Source:** `#x98;The#x9C; Routledge handbook of semantics -- Nick Riemer -- 1, 20150730 -- Routledge -- isbn13 9780367867591 -- 39709d45a5519dcde344840ca8b4b599 -- Anna’s Archive.epub`  
@@ -11365,3 +11367,5 @@ McRae, K. and M. N. Jones 2012. Semantic memory. In D. Reisberg (ed.), *The Oxfo
 - [[Z Rule]{.term} [78](#14_ch4.xhtml_p78){.index-locator}]{#45_index.xhtml_ie944}
 - [[Zalizniak, A.[]{#45_index.xhtml_p534 .pagebreak aria-label=" page 534. " role="doc-pagebreak"}]{.term} [275](#28_ch15.xhtml_p275){.index-locator}, [277](#28_ch15.xhtml_p277){.index-locator}]{#45_index.xhtml_ie945}
 :::
+
+_Dr. Mārcis Gasūns_

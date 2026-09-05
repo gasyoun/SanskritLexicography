@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Arabic Lexicographical Tradition _ From the 2nd_8th to -- Ramzi Baalbaki -- Brill Academic Publishers, Leiden, 2014 -- Koninklijke Brill N_V_ -- isbn13 9781306858328 -- fdf564c786c0425b4562228d535d52d6 -- Anna’s
 
 **Source:** `The Arabic Lexicographical Tradition _ From the 2nd_8th to -- Ramzi Baalbaki -- Brill Academic Publishers, Leiden, 2014 -- Koninklijke Brill N_V_ -- isbn13 9781306858328 -- fdf564c786c0425b4562228d535d52d6 -- Anna’s.pdf`  
@@ -27527,3 +27529,5 @@ Zīnat al-fuḍalāʾ fī l-farq bayna l-ḍād wa-l-ẓāʾ
 Ramzi Baalbaki - 978-90-04-27401-3
 Downloaded from Brill.com02/08/2023 11:21:33AM
 via Universite degli Studi di Milano
+
+_Dr. Mārcis Gasūns_

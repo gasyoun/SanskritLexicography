@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Genetic, not historical: how the 19th-century European Sanskrit dictionaries order senses — and how Apte and Kochergina differ
 
 **A33 · research note / short communication · draft 2026-06-24 · target: Lexikos / IJL / eLex**
@@ -243,3 +245,5 @@ Indology and Tamil Studies, University of Cologne.
   useful control); confirm the AP90 Vedic-siglum recall against a hand-checked sample.
 - Decide venue (Lexikos vs IJL vs eLex) and trim to that length — MG `@DECIDE`, tracked
   in GTD.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — yat
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -337,3 +339,5 @@ Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ**
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] *yat* am Ende hinzuzufügen: vgl. *ayatant* .
 — *anvā* vgl. *anvāyātya* oben.
+
+_Dr. Mārcis Gasūns_

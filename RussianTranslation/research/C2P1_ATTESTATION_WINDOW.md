@@ -1,3 +1,5 @@
+_Created: 23-08-2026 · Last updated: 05-09-2026_
+
 # C2 phase 1 — per-sense attestation window (PWG × ls_source_map)
 
 _Created: 23-08-2026 · Handoff [H3168](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3168-OxAlpha_SanskritLexicography_ceiling-c2p1-sense-attestation-window_19.08.26.md) · Roadmap item [C2](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)_
@@ -107,3 +109,5 @@ Every 1759-th windowed sense in file order, with the verbatim `<ls>` elements fr
 - **sTARqila / sense #1 (no 2)** — raw (1): `<ls>P. 4,3,76</ls>` → dated: Pāṇini, Aṣṭādhyāyī (window -400…-400)
 - **ruc / sense #0 (no 4)** — raw (2): `<ls>Spr. (II) 6939</ls>; <ls>ṚV. 1,165,12</ls>` → dated: Indische Sprüche (gnomic anthology), Ṛgveda (window -1125…600)
 <!-- c2p1:generated:end -->
+
+_Dr. Mārcis Gasūns_

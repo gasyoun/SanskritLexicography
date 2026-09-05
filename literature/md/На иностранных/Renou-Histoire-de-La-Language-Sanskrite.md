@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Renou-Histoire-de-La-Language-Sanskrite
 
 **Source:** `Renou-Histoire-de-La-Language-Sanskrite.pdf`  
@@ -11551,3 +11553,5 @@ Sanskrit bouddhique : généralités 206 La littérature ext1'acanonique 210 Gra
 SPÉCIMENS DE TEXTES SANSKRITS •• • • • • . . . . . . • . . . . . • • . . •• . • . • • • • • • INDEX DES AUTEURS ?IWDERNES CITÉS. • . . • . • . . . . .. . . . . . . . . . . . . .... • INDEX DES MATIERES CARTE DE L'INDE
 
 237 239 243
+
+_Dr. Mārcis Gasūns_

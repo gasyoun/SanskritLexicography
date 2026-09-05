@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # anya — other — PD minimal mode (sense skeleton)
 
 Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
@@ -81,3 +83,5 @@ Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, 
 - **{#anyAhUti#}**
 - **4** — co-wife, cf
 - **{#anyABiDAgrahaRa#}**
+
+_Dr. Mārcis Gasūns_

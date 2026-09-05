@@ -1,3 +1,5 @@
+_Created: 24-08-2026 · Last updated: 05-09-2026_
+
 # R15 independent gate verdict — FAIL (honest halt, no second repair)
 
 _Created: 24-08-2026 · Session: H3299 execution · Seed 3299 · n=400 stratified over the regenerated pool_
@@ -35,3 +37,5 @@ One repair was permitted before the independent gate (the Jmd/Etwas placeholder 
 1. Extend `SHORT_GLOSS_DENYLIST` to the corpus-harvested function-word inventory (kills re-ingest of (1)/(2) at the policy layer).
 2. Correct `FORMULA_RU['v. a.']` → «особенно» + selftest pin.
 3. Re-drain ($0) and run a fresh seeded independent gate; expect the serious class to collapse to the residual wave-1 sense fills, which need their own adjudication path.
+
+_Dr. Mārcis Gasūns_

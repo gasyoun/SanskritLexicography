@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — Ap
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -333,3 +335,5 @@ Z. 3 *pratyekaṃ parisamāpyate* so v. a. erstreckt sich auf Jedes, gehört zu 
 ## Homonym h1
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] *āp* [vgl. ] Z. 19 v. u. lies *kaścāsau* st. *kasyāsau*.
+
+_Dr. Mārcis Gasūns_

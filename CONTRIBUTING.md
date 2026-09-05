@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Contributing to SanskritLexicography
 
 > Part of the [Sanskrit Lexicon](https://github.com/sanskrit-lexicon) project. Inherits the [org-wide contribution standard](https://github.com/sanskrit-lexicon/COLOGNE/blob/main/CONTRIBUTING.md).
@@ -28,12 +30,12 @@ Conventions to keep when touching data:
 
 - **Filename counts are real.** `HeadwordLists/` uses
   `{DICT}-unique-{key1|key2}-{N}.txt` where `N` is the entry count; update `N` if
-  the count changes. See [HeadwordLists/README.md](HeadwordLists/README.md).
+  the count changes. See [HeadwordLists/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/README.md).
 - **Encoding: UTF-8, and check the BOM.** BOM presence is inconsistent across
   exports here — `head -c 3 file | xxd` before editing and preserve the file's
   existing BOM state; do not silently add or strip one.
 - **Large reference assets** get a provenance row in
-  [REFERENCES.md](REFERENCES.md) (source, date, producer, size).
+  [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md) (source, date, producer, size).
 
 ## Documentation changes
 
@@ -51,19 +53,21 @@ Conventions to keep when touching data:
 ## Hygiene
 
 - Keep Markdown lint-clean: no trailing whitespace, newline at end of file,
-  valid YAML. The [pre-commit hooks](.pre-commit-config.yaml) and
-  [CI](.github/workflows/ci.yml) enforce this.
+  valid YAML. The [pre-commit hooks](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml) and
+  [CI](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml) enforce this.
 - Don't commit large binaries or generated data casually — confirm intent first.
 
 ## New here and not a programmer?
 
 If you know some Sanskrit but not git/GitHub/Claude yet, start with
-[ONBOARDING_NEW_CONTRIBUTOR_RU.md](ONBOARDING_NEW_CONTRIBUTOR_RU.md) (Russian) — a
+[ONBOARDING_NEW_CONTRIBUTOR_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ONBOARDING_NEW_CONTRIBUTOR_RU.md) (Russian) — a
 step-by-step ladder from a first error-report to full contributor, with a beginner-safe
 first task. This document above assumes you already know the basic PR flow.
 
 ## See also
 
-- [CLAUDE.md](CLAUDE.md) — repo conventions (key1/key2, BOM, external-refs rule).
-- [HANDOFF.md](HANDOFF.md) — retired orientation note, now a pointer to the current manuals.
-- [README.md](README.md) — the Documentation map (where to read what).
+- [CLAUDE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CLAUDE.md) — repo conventions (key1/key2, BOM, external-refs rule).
+- [HANDOFF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HANDOFF.md) — retired orientation note, now a pointer to the current manuals.
+- [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md) — the Documentation map (where to read what).
+
+_Dr. Mārcis Gasūns_

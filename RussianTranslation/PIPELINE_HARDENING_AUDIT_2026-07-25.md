@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG Russian pipeline hardening audit — 2026-07-25
 
 **Audited revision:** `f96361caa4279dde579de6ea0ca3d40784ea0863`
@@ -326,3 +328,4 @@ quota, real 403 recovery, translation quality, canonical store/TM contents,
 publication export, real power-loss behavior, EN end-to-end promotion, legacy
 Workflow execution, and multi-profile live scheduling were not audited.
 
+_Dr. Mārcis Gasūns_

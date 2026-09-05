@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG translation economics & timeline (measured 2026-07-01)
 
 Grounded from the FU1 PWG→English run on **Sonnet 5 (`claude-sonnet-5`)** and repo counts.
@@ -85,3 +87,5 @@ masking/segmentation, per-card cache-create paid once) costs ~**1.3–1.5×**, n
 two passes if you ever want both delivered together. But for "finish RU ASAP," RU-only first wins.
 The FU1 plan already reserves bilingual single-pass for *future* roots where RU and EN extend
 together; the standing decision is EN-only-after-RU for the primary push.
+
+_Dr. Mārcis Gasūns_

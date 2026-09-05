@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Renou register glossaries
 
 Register-specific vocabulary lists extracted from the Renou-tagged dictionaries by
@@ -63,3 +65,5 @@ python renou_glossary.py kavya --prov ls --min-dicts 3 --format md
 Registers: see `renou_register.REGISTERS` (rgveda · atharva · yajus · brahmana ·
 upanisad · sutra · vyakarana · **epig** · epic · purana · tantra · smrti · karika ·
 **bhasya** · katha · natya · kavya · bauddha · jaina · hors_inde).
+
+_Dr. Mārcis Gasūns_

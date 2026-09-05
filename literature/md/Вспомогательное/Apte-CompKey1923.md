@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Apte-CompKey1923
 
 **Source:** `Apte-CompKey1923.pdf`  
@@ -7698,3 +7700,5 @@ W~~lf . !ir~~ cr.q~J'if~~
 N. D.-'1\he etudent may oorrect tho other sentences similarly·
 ....... . ...
 3. ..
+
+_Dr. Mārcis Gasūns_

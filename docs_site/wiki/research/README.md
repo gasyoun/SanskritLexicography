@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # research/ — lexicographic design studies (gate the scale-up)
 
 Comparative studies of the core Sanskrit dictionaries (PWG, PW, MW, GRA, AP90, SCH, FRI)
@@ -43,3 +45,5 @@ fresh worktree):
 Each chat reads its brief, the OCRed prefaces, and probe entries from `csl-orig/v02/`,
 appends a `## RESULTS` section to its doc, and commits. Findings then fold into the
 merged-translate prompt + the root segmenter/glue **before** the translation scale-up.
+
+_Dr. Mārcis Gasūns_

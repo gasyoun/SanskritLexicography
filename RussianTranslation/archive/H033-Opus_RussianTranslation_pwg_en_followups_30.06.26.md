@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — PWG→English follow-ups (after the 16-root pilot)
 
 **For:** a fresh agent session (or the autonomous account). **Context:** the PWG→English
@@ -120,3 +122,5 @@ store carrying `de` + `ru` + `en` per sense (+ the `dcs_freq` block already adde
   sample [`PWG_EN_PILOT_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/PWG_EN_PILOT_2026-06-30.md)
 - loop/concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
 - prior Slice-C recovery handoff: [`H035-Sonnet_RussianTranslation_slicec_recovery_30.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/recover/slicec-top3-pat-ga-vad/RussianTranslation/H035-Sonnet_RussianTranslation_slicec_recovery_30.06.26.md)
+
+_Dr. Mārcis Gasūns_

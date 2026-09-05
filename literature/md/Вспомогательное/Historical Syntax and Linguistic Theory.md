@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Historical Syntax and Linguistic Theory
 
 **Source:** `Historical Syntax and Linguistic Theory.pdf`  
@@ -15316,3 +15318,5 @@ movement 118 phrase 81, 85, 86, 88, 90, 137, 361 question 73 n. 7, 78, 80–2, 8
 369
 word order, see also verb-Wrst, verb-second: OV 47, 59, 60, 70, 74, 330, 345 SOV 164, 198 n., 202, 347 SOVAux 65 SV 319, 324 SVO 48, 49, 50, 53, 57, 165, 202, 319 VO 47, 59, 60, 330, 345, 346 VOS 55, 165 VSO 48, 49, 50, 51, 53, 57, 62, 319 VS 314, 319, 324 XSV 78 XVS 78
 Yoruba 331, 332, 333, 335, 336, 337, 338, 339, 340, 341
+
+_Dr. Mārcis Gasūns_

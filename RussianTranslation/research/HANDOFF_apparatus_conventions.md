@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff research — apparatus conventions across the core dictionaries (2026-06-24)
 
 **Question.** Extending [`HANDOFF_microstructure_conventions.md`](HANDOFF_microstructure_conventions.md)
@@ -174,3 +176,5 @@ layer already supplies chronology.**
 - Sense order → [`HANDOFF_sense_ordering.md`](HANDOFF_sense_ordering.md).
 - Root nesting/splitting → [`ROOT_ENTRY_ARCHITECTURE.md`](ROOT_ENTRY_ARCHITECTURE.md).
 - What `pwg_ru` already implements → [`../DICTIONARY_CHAIN.md`](../DICTIONARY_CHAIN.md), [`../APRESJAN.md`](../APRESJAN.md).
+
+_Dr. Mārcis Gasūns_

@@ -1413,3 +1413,5 @@ One block per (stanza × translator). Judge each `form → span` proposal: is th
 > Dressed in the udder and on fire, I fancy; well-dressed, I fancy, is this recent present. / Drink, Indra, of the curd of noon's libation with favour, Thunderer, thou whose deeds are mighty.
 
 - `juṣāṇáḥ` (√juṣ-, freq 233) → **mighty**  _conf 0.564_
+
+_Dr. Mārcis Gasūns_

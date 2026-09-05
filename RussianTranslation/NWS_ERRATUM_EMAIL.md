@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # NWS erratum email — draft for the Halle/Marburg team
 
 **Purpose.** Source-data defects surfaced by an automated quality pass over the
@@ -63,3 +65,5 @@ bei. Für Rückfragen oder die Methodik stehen wir gerne zur Verfügung. Vielen
 Dank für Ihre wertvolle Arbeit am Nachtragswörterbuch.
 
 Mit freundlichen Grüßen
+
+_Dr. Mārcis Gasūns_

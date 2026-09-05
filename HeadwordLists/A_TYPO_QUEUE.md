@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Item A — typo queue, all dicts (ready to file)
 
 All **122** body-confirmed FILE-FIRST typos across **11** dictionaries, consolidated from [SanskritSpellCheck](https://github.com/gasyoun/SanskritSpellCheck) (`corrections_draft/<DICT>/<DICT>_file_first_sf.txt`). Each was classified TYPO from the dictionary's **own entry text** and source-confirmed; the consonant-class flags (retroflex / sibilant / aspirate / b↔v) are the high-precision ones. The **print spine (MW, PWG)** is listed first.
@@ -132,3 +134,5 @@ Per dict: **MW** 4 · **PWG** 12 · **SHS** 37 · **YAT** 27 · **ACC** 22 · **
 | VCP | `camIkara` | camīkara | `cAmIkara` | cāmīkara | vowel length (a↔ā) | `[dcs=3 ndicts=2 body=realword]` VCP: camIkara pu0 kftasvarABiDe svarRasyotpattisTAne SabdArTaci0 yadyogAt svarRaM cAmIkaramityucyate . |
 
 _Total 122 across 11 dicts. Source-of-truth + filing workflow live in SanskritSpellCheck; this is the print-readiness (item A) consolidated view. The MW+PWG spine subset is the minimum to clear before the spine goes to print._
+
+_Dr. Mārcis Gasūns_

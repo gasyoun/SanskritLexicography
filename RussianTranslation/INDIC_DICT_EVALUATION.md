@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # indic-dict / stardict-sanskrit — evaluation for the Sa→Ru compilation
 
 What [`indic-dict/stardict-sanskrit`](https://github.com/indic-dict/stardict-sanskrit)
@@ -166,3 +168,5 @@ on file. Coverage lines added to `corpus_gate.py coverage`.
 
 All four stay **query/annotate-only** and **gitignored** like the other gate inputs;
 none is a translation source and none touches csl-orig.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # anya — cleaned IAST rendering
 
 **Gloss:** other, another (pron. adj.) · **Class:** non-samāsa
@@ -3650,3 +3652,5 @@ anyā¦ (anyā) f. 1A one of the three types of heroine svānyā sādhāraṇast
  cf. anyākara; 2 name of a medicinal plant ghṛtakṣīraguḍānyārdrakvāthaḥ siddhena cūrṇitā.
  …seveta śophapittāpanuttaye RasRaSa. 22. 85; 3 female attendant of harem, cf.
  anyāhūti; 4 co-wife, cf. anyābhidhāgrahaṇa.
+
+_Dr. Mārcis Gasūns_

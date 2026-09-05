@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # H963 — single-profile c4 Gate-0 health attempt (fresh dated D-K reading)
 
 _Created: 16-07-2026 · Last updated: 02-08-2026 (**EIGHTH READING: GATE-0 PASS — measured 43 815 ms, the fastest decomposed c4 reading on record, and the canary then passed too, so the gate returned `LIVE_GO`. The 31-07 rate-limit root cause below is HISTORICAL: quota stopped binding when auth was restored on 01-08**)_

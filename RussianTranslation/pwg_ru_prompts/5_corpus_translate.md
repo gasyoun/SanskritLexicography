@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru — stage 5: corpus-first per-sense translation (LOCKED)
 
 The production translate prompt for the corpus-first pipeline (Sonnet 4.6 on Max).
@@ -70,3 +72,5 @@ card whose NWS owners disagree with the deterministic owner parse (the F12 slide
 e.g. idam swapping Geldner↔Graßmann) is **rejected** — its `.merged.md` is moved
 aside to `.merged.REJECTED.md` and re-queued, and the audit exits non-zero. Keep
 this gate in the scale loop (it is the deterministic backstop the lone sev-3 needs).
+
+_Dr. Mārcis Gasūns_

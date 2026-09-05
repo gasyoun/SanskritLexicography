@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Literature Collection - Markdown Index
 
 This directory contains markdown files for the literature collection: most are full-text
@@ -80,3 +82,5 @@ digest covers.
 
 Generated: 2026-06-26 · Digests added 15-07-2026 · Nine full texts restored 21-07-2026 · Alexey_Vigasin/ (27 files) added 22-07-2026
 Total files referenced: 103
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 | metric | arm A — Claude-native | arm B — DeepSeek + same controller |
 |---|---|---|
 | generator model | workers claude-sonnet-5 / controller claude-opus-4-8 | deepseek-chat |
@@ -21,3 +23,5 @@
 | fidelity-reject | 2 | 12 |
 | soft:tnmask-mismatch | 2 | 11 |
 | translation-fidelity-reject | 4 | 13 |
+
+_Dr. Mārcis Gasūns_

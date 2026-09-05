@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # ananta — verbatim Cologne entries
 
 **Gloss:** endless; Viṣṇu/Śeṣa (an-+anta)  
@@ -1780,3 +1782,5 @@ on this inference).
 <div n="lb">given as a synonym for {%kajjalī%}, a kind of fish, ŚabdaKaDru. citing
 <div n="lb">the {%Śabdaratnāvalī%}; number one, MW.]
 ```
+
+_Dr. Mārcis Gasūns_

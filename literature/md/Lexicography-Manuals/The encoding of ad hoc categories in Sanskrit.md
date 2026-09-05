@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The encoding of ad hoc categories in Sanskrit_ A synchronic -- Inglese, Guglielmo; Geupel, Ulrich -- Folia Linguistica, #s39-1, 52, pages 225-252, -- doi 10_1515_flih-2018-0005 -- 9073775f98c0b3ce578749fc6bcd3f03 --
 
 **Source:** `The encoding of ad hoc categories in Sanskrit_ A synchronic -- Inglese, Guglielmo; Geupel, Ulrich -- Folia Linguistica, #s39-1, 52, pages 225-252, -- doi 10_1515_flih-2018-0005 -- 9073775f98c0b3ce578749fc6bcd3f03 --.pdf`  
@@ -1392,3 +1394,5 @@ Guglielmo Inglese and Ulrich Geupel
 Brought to you by | University of Sussex Library
 Authenticated
 Download Date | 8/9/18 3:08 PM
+
+_Dr. Mārcis Gasūns_

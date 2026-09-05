@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Literature harvest for `pwg_ru` (German → Russian)
 
 What the `literature/` reference shelf gives the **German→Russian** translation of
@@ -410,3 +412,5 @@ the **lexicalized-participle keying** rule.
 (16 + 9 + ~37 sources = the whole shelf) via per-source close reading. Highest-value adds:
 the §6 sense-distinctness test battery (judge), the §1b/§7 correlative map (translator),
 and the §1c/§7 German→Russian + compound-type glossary tables.*
+
+_Dr. Mārcis Gasūns_

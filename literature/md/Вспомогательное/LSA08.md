@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # LSA08
 
 **Source:** `LSA08.pdf`  
@@ -378,3 +380,5 @@ structures. Studies in the Linguistic Sciences 19.1 Lahiri, Utpal (2002) Questio
 Hindi. In Veneeta Dayal and Anoop Mahajan (eds.) Clause structure in South Asian languages, Dordrecht: Kluwer Academic Publishers, pp.291-313. Macdonnell, Arthur (1916/2004) A Vedic grammar for students. Delhi: Motilal Banarsidass. Reinhart, Tanya (2007) Interface Strategies. Cambridge: M.I.T. Press. Rizzi, Luigi (1997) On the fine structure of the left periphery. In L. Haegeman, ed. Elements of
 grammar. Dordrecht: Kluwer Academic Publishers, 281-337. Safir, Kenneth (1986) Relatrive clauses in a theory of binding and levels. Linguistic Inquiry, 17.4, 663-689. Schäufele, Steven W. (1990). Free word-order syntax: the challenge from VedicSanskrit to contemporary syntactic theories. Unpublished dissertation, University of Illinois ChampaignUrbana.
 9
+
+_Dr. Mārcis Gasūns_

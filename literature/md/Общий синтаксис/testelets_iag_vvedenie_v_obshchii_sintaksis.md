@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # testelets_iag_vvedenie_v_obshchii_sintaksis
 
 **Source:** `testelets_iag_vvedenie_v_obshchii_sintaksis.pdf`  
@@ -20804,3 +20806,5 @@ mentizer) СР - группа комплементайзера (com­
 plementizer phrase) D - детерминатор (determiner) DP - группа детерминатора (determin­
 er phrase) EIC - коэффициент раннего
 распознавания (Early Immediate Constituent ratio) I(nfl) - вершина, носитель финитных глагольных категорий (inflection) IP — финитная группа, клауза (inflec­ tion phrase) LE — принцип левого края (left edge) N — существительное (noun) NP - именная группа (noun phrase) Р - предлог (preposition) Pro — анафорическое местоимение (pronoun) РР - предложная группа (preposition phrase) R - принцип восстановимости (recoverability) Refl — рефлексив SC - малая клауза (small clause) S - предложение или клауза (sentence) S' — придаточное предложение Т - принцип телеграфа (Telegraph) VP — глагольная группа (verb phrase) V — глагол (verb)
+
+_Dr. Mārcis Gasūns_

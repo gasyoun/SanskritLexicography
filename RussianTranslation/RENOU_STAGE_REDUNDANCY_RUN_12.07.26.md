@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 ## Series A — assembled_cards chain (full check, every row)
 
 - rows (all four stages zipped in lockstep): **120173** — equal lengths
@@ -49,3 +51,4 @@
 ### PWG
 - old underscore chain: **absent** (canonical `pwg.renou.jsonl` only — already clean)
 
+_Dr. Mārcis Gasūns_

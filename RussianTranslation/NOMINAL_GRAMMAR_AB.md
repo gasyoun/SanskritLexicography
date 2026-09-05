@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # A/B test — nominal grammar layer injected into the translation harness
 
 **Question.** Does injecting the nominal grammar layer (`nominal_grammar.py`: stem class,
@@ -88,3 +90,5 @@ auto-adopt now.
 - judge: `src/pilot/gen_nominal_judge.py` → `run_nominal_judge.js`; verdicts
   `src/pilot/output/nominal_ab_verdict.json`
 - harness: `gen_opt_harness2.py --nominal [--no-grammar] --keys=…`
+
+_Dr. Mārcis Gasūns_

@@ -121,3 +121,5 @@ point (§3b) is a real methodological contribution beyond this corpus — the LS
 gives it a second famous instance to generalise over.
 
 _Review: Claude Fable 5 (`claude-fable-5`) · paper: Dr. Mārcis Gasūns_
+
+_Dr. Mārcis Gasūns_

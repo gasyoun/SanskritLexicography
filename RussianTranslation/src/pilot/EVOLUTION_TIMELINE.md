@@ -105,3 +105,5 @@ no stale `wf_output.json`, root-scoped output, requeue keys stay root-scoped).
 4. **Cost is a correctness constraint here.** The 10M-tokens/root blowup forced
    the translate-only + free-gates architecture. Tier matters: Sonnet for bulk,
    Opus only on the hard residue.
+
+_Dr. Mārcis Gasūns_

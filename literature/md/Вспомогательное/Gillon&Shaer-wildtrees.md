@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Gillon&Shaer-wildtrees
 
 **Source:** `Gillon&Shaer-wildtrees.pdf`  
@@ -1191,3 +1193,5 @@ initial occurrences of vocatives were the most common, but that these forms also
 26 Thanks to Ewald Lang for his timely reminder of ‘integrated’ and ‘non-integrated’
 possibilities for peripheral elements in German. 27 Note that we have resisted labelling such elements in Sanskrit as complementizers,
 since it is unclear whether they have the same formal characteristics as their counterparts in other languages that are identified as such. On this matter as it pertains to Vedic Sanskrit, see esp. Schäufele (1990:146)
+
+_Dr. Mārcis Gasūns_

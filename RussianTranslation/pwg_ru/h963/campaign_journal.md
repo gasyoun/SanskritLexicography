@@ -459,3 +459,5 @@ summaries above without rewriting the historical checkpoints.
 - **Retained mechanical finding:** the 180-second clamp saturates for 113/114 current candidate
   skeletons, so the current kill budget has little admission-policy discrimination above 1,556 bytes.
   This is telemetry and policy input, not proof that large cards cannot be translated.
+
+_Dr. Mārcis Gasūns_

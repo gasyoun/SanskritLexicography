@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — banD
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -334,3 +336,5 @@ scheint ganz am Platz seiend, wohl angebracht zu bedeuten.
 [ŚKDR.] u. *āsana* .
 
 **head)** *bandh*
+
+_Dr. Mārcis Gasūns_

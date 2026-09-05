@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Meenakshi, *Epic Syntax* / Sanskrit syntax (1983)
 
 **Machine OCR** (RapidOCR/ONNX, 200 dpi, 121 pp) of the previously un-OCR'd image PDF. Expect artifacts: lost macrons/diacritics (ā ū ṛ ś ṣ ṇ → a u r s s n), ß→SS, two-column interleave, and noisy Devanagari. Use as a searchable text layer, verify against the source PDF before citing.
@@ -8842,3 +8844,5 @@ of
 vesmani
 vesmani
 119.16
+
+_Dr. Mārcis Gasūns_

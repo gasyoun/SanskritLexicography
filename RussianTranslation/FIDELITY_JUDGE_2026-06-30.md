@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG→Russian fidelity — first measured number (Opus judge, interim)
 
 **Date:** 2026-06-30 · **Decision context:** all ~1,989 bulk cards carry `judge=null`; the
@@ -82,3 +84,5 @@ the `fix_german_connectives` pass), not meaning. The human G6 gold remains the g
 
 Evidence: [`fidelity_verdicts_2026-06-30.json`](fidelity_verdicts_2026-06-30.json) (raw 100
 verdicts), `src/pilot/output/fidelity_aggregate.json` (regenerable).
+
+_Dr. Mārcis Gasūns_

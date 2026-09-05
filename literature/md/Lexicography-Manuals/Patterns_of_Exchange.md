@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Patterns_of_Exchange
 
 **Source:** `Patterns_of_Exchange.pdf`  
@@ -6848,3 +6850,5 @@ Withington, N. (1968). Travel report, in W. Foster (ed.), Early Travels in India
 Wright, D. (2002). Great Britain vii. British travelers to Persia, Encyclopaedia Iranica, Online Edition.
 Wrigley, E. und Schoﬁeld, R. (1981). The Population History of England, 1541-1871: A Reconstruction, Cambridge University Press, Cambridge.
 Yule, H. und Burnell, A. (1902). Hobson-Jobson. A Glossary of Colloquial Anglo-Indian Words and Phrases, and of Kindred Terms, Etymological, Historical, Geographical and Discursive, 2 edn, John Murray, London.
+
+_Dr. Mārcis Gasūns_

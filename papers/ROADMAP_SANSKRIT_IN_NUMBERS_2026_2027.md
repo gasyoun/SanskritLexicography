@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # «Санскрит в цифрах» — a quantitative portrait of Sanskrit, after Duden's *Sprache in Zahlen*
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix

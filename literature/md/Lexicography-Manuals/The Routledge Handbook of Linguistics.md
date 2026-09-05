@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Routledge Handbook of Linguistics (Routledge Handbooks -- Allan, Keith; -- Routledge handbooks in linguistics 6, 2016 -- Routledge, Taylor et -- isbn13 9780367868079 -- 49f80b813eeb9e8c1503eb7d1a34d8b8 -- Anna’s
 
 **Source:** `The Routledge Handbook of Linguistics (Routledge Handbooks -- Allan, Keith; -- Routledge handbooks in linguistics 6, 2016 -- Routledge, Taylor et -- isbn13 9780367868079 -- 49f80b813eeb9e8c1503eb7d1a34d8b8 -- Anna’s.pdf`  
@@ -32843,3 +32845,5 @@ Yawelmani 97, 102
 Yimas 252, 256, 260
 Yoruba 8
 zone of proximal development 335
+
+_Dr. Mārcis Gasūns_

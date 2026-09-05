@@ -1,3 +1,5 @@
+_Created: 14-08-2026 · Last updated: 05-09-2026_
+
 # H2685 Track C receipt — lossless TMX / TEI Lex-0 / OntoLex + FAIR pack
 
 _Created: 14-08-2026 · Last updated: 14-08-2026 (DOI minted)_

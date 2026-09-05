@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Print + DH + Speed Readiness Review
 
 Date: 2026-06-28
@@ -115,3 +117,5 @@ python src\release_readiness.py
 ```
 
 Do not cut an immutable edition until G5/G6/G7 pass.
+
+_Dr. Mārcis Gasūns_

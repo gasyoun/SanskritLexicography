@@ -1,6 +1,6 @@
 # ACC × NCC P2 — agent adjudication of all 49,019 Tier C/D rows
 
-_Created: 26-07-2026 · Last updated: 26-07-2026_
+_Created: 26-07-2026 · Last updated: 05-09-2026_
 
 Handoff [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md)
 · executor **Opus 5 1M (`claude-opus-5[1m]`)** · ruling **MG, 26-07-2026, option В2**
@@ -92,8 +92,8 @@ overlap went 8,397 → 22,775 distinct keys.
 **Everything from §1 onwards therefore describes the PRE-REPAIR run**, kept as the
 record of what was adjudicated on 26-07-2026 and of how the defect was found. It is
 not the current state of the crosswalk. For that, and for the full before/after
-migration, see [`NCC_KEY_REPAIR_MIGRATION_2026.md`](NCC_KEY_REPAIR_MIGRATION_2026.md);
-for current counts, [`P1_COUNTS.md`](P1_COUNTS.md) / [`P2_COUNTS.md`](P2_COUNTS.md).
+migration, see [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md);
+for current counts, [`P1_COUNTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P1_COUNTS.md) / [`P2_COUNTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_COUNTS.md).
 
 | | this report (pre-repair) | after H1671 |
 |---|---:|---:|

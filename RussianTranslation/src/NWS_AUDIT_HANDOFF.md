@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # NWS section-audit — handoff runbook
 
 Paste the block below into each new chat, changing only the section letter on
@@ -74,3 +76,5 @@ PARALLEL-STREAM HYGIENE (several letters at once):
 - Do NOT commit anything under pilot/input, pilot/output, or pilot/nws — it's
   gitignored corpus data. Only the two docs (and code, if a TRUE new bug is
   found and confirmed) get committed.
+
+_Dr. Mārcis Gasūns_

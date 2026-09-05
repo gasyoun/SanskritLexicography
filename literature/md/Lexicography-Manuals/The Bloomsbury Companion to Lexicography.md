@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Bloomsbury Companion to Lexicography -- Howard Jackson (editor) -- Bloomsbury companions, London [u_a, 2013 -- Bloomsbury Academic, An imprint of -- isbn13 9781441114150 -- bffe63bd84e9257acc253f15e193349c -- An
 
 **Source:** `The Bloomsbury Companion to Lexicography -- Howard Jackson (editor) -- Bloomsbury companions, London [u_a, 2013 -- Bloomsbury Academic, An imprint of -- isbn13 9781441114150 -- bffe63bd84e9257acc253f15e193349c -- An.pdf`  
@@ -20050,3 +20052,5 @@ user studies 26–7, 45, 172, 175, 195
 video clip 37, 43, 261–3, 269, 280, 348, 358, 
 368
 word sketch 83–6, 89, 93
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Tubb-ScholasticSans-2007
 
 **Source:** `Tubb-ScholasticSans-2007.pdf`  
@@ -11672,3 +11674,5 @@ text
 words carried over, 1 65, 1 66 words implied, xxvii
 words supplied, xxvi, 1 65 , 1 66
 . yat as conj unction, 263
+
+_Dr. Mārcis Gasūns_

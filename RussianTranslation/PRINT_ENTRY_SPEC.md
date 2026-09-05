@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Printed Bilingual Entry Specification
 
 Date: 2026-06-28
@@ -150,3 +152,5 @@ A future renderer must:
 - This spec does not change schemas or prompts.
 - This spec does not make the current dataset print-ready; G5/G6/G7/G10 still
   gate publication.
+
+_Dr. Mārcis Gasūns_

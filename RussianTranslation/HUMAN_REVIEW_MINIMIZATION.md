@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Human Review Minimization
 
 Date: 2026-06-28 (G6b gate added 26-07-2026 per ruling R4, H1633)
@@ -208,3 +210,5 @@ the agreement report exists.
 7. G6b 400-row store gold cut + test–retest complete (H1665).
 8. `release_readiness.py`.
 9. Immutable `edition_vN` cut only after G5/G6/G6b/G7 pass.
+
+_Dr. Mārcis Gasūns_

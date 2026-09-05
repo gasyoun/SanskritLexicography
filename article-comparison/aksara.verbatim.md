@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # akṣara — verbatim Cologne entries
 
 **Gloss:** imperishable; syllable; Brahman (a-+kṣara)  
@@ -926,3 +928,5 @@ document écrit ; divinité suprême ; <ab>n.</ab> de divers dieux.
 <div n="lb">{#danukadrU vinatAtAmrAkzarAjarArizwAH.suraBiH kroDavaSAmunisurasAH syuH kaSyapagfhiRyaH#}
 <div n="lb">ŚabdaRa.(Vā.) 402.
 ```
+
+_Dr. Mārcis Gasūns_

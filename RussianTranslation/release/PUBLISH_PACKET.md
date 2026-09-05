@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Publish Packet — Publication-Grade Sa→Ru TM + Curated Terminology (D13)
 
 _Created: 22-07-2026 (H1458 Track C5) · Sonnet 5 `claude-sonnet-5` · Last updated: 16-08-2026_
@@ -95,3 +97,5 @@ outreach, since the remaining 127 have no attribution on file at all yet.
 - Enabling GitHub Pages, flipping repository visibility, or registering a DOI — all human actions.
 - Treating "4 sources have a documented translator" as equivalent to "4 sources are cleared" —
   documentation is a prerequisite for outreach, not clearance itself.
+
+_Dr. Mārcis Gasūns_

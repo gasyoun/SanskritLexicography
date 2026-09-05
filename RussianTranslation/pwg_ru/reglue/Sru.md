@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — Sru
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -193,3 +195,5 @@ Re-glue — Sru
 — *vi* см. 2. *viśruti* .
 — *sam* стекаться: *yadvastāvadhi saṃśrutam*
 [AV. 1,3,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.003.html#av01.003.06)
+
+_Dr. Mārcis Gasūns_

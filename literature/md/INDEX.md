@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Literature Index — repo relevance map
 
 Each file tagged with the repos/projects it directly serves.
@@ -147,3 +149,5 @@ Systematic Lexicography · Dictionary of lexicography · Bloomsbury Companion ·
 ---
 
 *65 files · generated 2026-06-26*
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Corpus harvest layer (pwg_ru)
 
 How the parallel corpus becomes **attested Russian senses** for each PWG
@@ -83,3 +85,5 @@ Rigveda / kāvya / later texts are processed. **Do not assemble print cards whos
 - A frequency floor + the content filter to keep only well-attested senses.
 - Proper-name handling: a foreign name pymorphy3 doesn't know (e.g. Дашаратха)
   currently classes as content; harmless at low counts, refine if needed.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Source Permissions for the Russian Edition
 
 _Created: 2026-06 · Last updated: 08-08-2026_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # BU — PWG <-> MW merged root article (L=55166)
 
 41 prefixes total: **33 in both**, 7 PWG-only, 1 MW-only.
@@ -45,3 +47,5 @@
 | `sam+anu+BU` | empfinden, geniessen | sam-anu-√ BU ¦ P. -Bavati to enjoy together, f |
 | `sam+ud+BU` | hervorgehen, entspringen, entstehen | sam-ud-√ BU ¦ P. -Bavati , to spring up from,  |
 | `sam+pari+BU` | geringachten | sam-pari-√ BU ¦ P. -Bavati , to despise, conte |
+
+_Dr. Mārcis Gasūns_

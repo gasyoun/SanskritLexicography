@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Doing Linguistics with a Corpus_ Methodological -- Jesse Egbert, Tove Larsson, Douglas Biber -- Cambridge elements_ Corpus linguistics, Cambridge -- isbn13 9781108744850 -- 88a1248502090c01817a65aa87ee48a0 -- Anna’s
 
 **Source:** `Doing Linguistics with a Corpus_ Methodological -- Jesse Egbert, Tove Larsson, Douglas Biber -- Cambridge elements_ Corpus linguistics, Cambridge -- isbn13 9781108744850 -- 88a1248502090c01817a65aa87ee48a0 -- Anna’s.pdf`  
@@ -4606,3 +4608,5 @@ Jesse Egbert, Tove Larsson and Douglas Biber
 A full series listing is available at: www.cambridge.org/corpuslinguistics
 terms of use, available at https://www.cambridge.org/core/terms. https://doi.org/10.1017/9781108888790
 Downloaded from https://www.cambridge.org/core. IP address: 196.157.101.186, on 08 Nov 2020 at 17:02:14, subject to the Cambridge Core
+
+_Dr. Mārcis Gasūns_

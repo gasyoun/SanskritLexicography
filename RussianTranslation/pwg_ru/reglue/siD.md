@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — siD
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -571,3 +573,5 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 1) удаваться, происходить, осуществляться [M. 11,237.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,237) *śarīrayātrāpi ca te na prasidhyedakarmaṇaḥ* [BHAG. 3,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,8) *na brāhmaṇaḥ sādhayate havyaṃ daivātprasidhyati* [MBH. 13,1536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1536) = [≈Вульг. 13.22.6](mbh/13.22.html#v6) = ≈крит. 13,23.6a *prasidhyatā samāgamena* [Spr. (II) 272.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?272 "Spr. (II) 272: anāturotkaṇṭhitayoḥ prasidhyatā samāgamenāpi ratirna māṃ prati | parasparaprāptinirāśayorvaraṃ śarīranāśo 'pi samānarāgayoḥ || — (3459.) Wenn zwei Personen, von denen die eine Nichts von Liebe fühlt, die andere aber vor Sehnsucht vergeht, bei zu Stande kommender Vereinigung sogar dem Liebesgenuss sich hingeben, so ist dieses in meinen Augen wenige…") *arthaḥ* [3618.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3618) [VARĀH. BṚH. S. 104,61.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,61) *yatkarma svayameva prasidhyati* [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *tāsāmāyācitam — tvatprasādātprasidhyatām* (в конце Шлока!) [R. GORR. 2,1,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,1,40)
 
 **sam-sidh-2)** — 2) вытекать, находить свое объяснение: *sarvaṃ vedātprasidhyati* [M. 12,97. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,97) *tathaikavṛttitā tayoḥ svaraśca me prasidhyati* Кар. к [P. 3,1,122.](https://ashtadhyayi.com/sutraani/3/1/122) — partic. *prasiddha*
+
+_Dr. Mārcis Gasūns_

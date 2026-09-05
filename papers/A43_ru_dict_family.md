@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 ---
 paper_id: A43
 title: "Russian Sanskrit Lexicography as a Digitized Comparable Family: Five Dictionaries, One Headword Space"

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # VERIFY_H189 — deterministic H191 verification
 
 _Created: 05-07-2026 · Executor: Codex/GPT-5 · No Max/Workflow run performed._

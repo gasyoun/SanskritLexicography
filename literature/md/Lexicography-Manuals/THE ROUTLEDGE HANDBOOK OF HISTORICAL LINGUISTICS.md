@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS,CLAIRE -- Claire Bowern; Bethwyn Evans; Routledge -- Routledge Handbooks in Linguistics, 1, 2014 -- isbn13 9780367250294 -- 0dd928eb06eee27a6a8c81db29ae95eb -- Anna’s
 
 **Source:** `THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS,CLAIRE -- Claire Bowern; Bethwyn Evans; Routledge -- Routledge Handbooks in Linguistics, 1, 2014 -- isbn13 9780367250294 -- 0dd928eb06eee27a6a8c81db29ae95eb -- Anna’s.pdf`  
@@ -4352,7 +4354,8 @@ qa
 SBJ.
 AGR
 j, IMP 
- (?also )
+ (?also 
+)
 -ej, -
 (2) Athabascan (conjunct)
 Auxiliary complex
@@ -4379,9 +4382,11 @@ PRON.
 *	
 *n	
 ñi
-, d, l, Ø
+
+, d, l, Ø
 -ñ PERF
-- PROG
+-
+ PROG
 The morphological parallelism and phonological similarities among corresponding af xes 
 are suggestive, but the most compelling evidence for actual relationship comes from those 
 sound correspondences which can be accounted for by independently motivated regular 
@@ -4414,7 +4419,8 @@ club
 black
 s’n
 dark blue/green
-añ
+
+añ
 many
 o’n, òn
 many
@@ -4437,7 +4443,8 @@ volume; Pakendorf, this volume) prehistoric population movements are becoming be
 understood, putting contact-based explanations for language change on a  rmer footing. 
 Consequently substratum and superstratum hypotheses, long considered a somewhat 
 disreputable last resort (Lass 1997; Honti 2007), are becoming empirically falsi able and are 
-being advanced more con dently (Matras and Sakel 2007; Gvozdanovi 2012; Lucas, this 
+being advanced more con dently (Matras and Sakel 2007; Gvozdanovi
+ 2012; Lucas, this 
 volume). Campbell (1997: Ch. 9) identi es 21 linguistic areas in the Americas alone;  ne-
 grained areal analyses have been worked out for South Asia (Masica 1976), Mainland 
 Southeast Asia (En eld 2005), the Balkans (Friedman 2006), and Amazonia (Aikhenvald 
@@ -5964,7 +5971,8 @@ Greenberg, Joseph H. and Merritt Ruhlen. 1992. Linguistic origins of Native Amer
 American 267: 94–99.
 Grimshaw, Jane and C. Rosen. 1990. Obeying the Binding Theory. In Lyn Frazier and Jill de Villiers 
 (eds) Language processing and language acquisition. Boston: Kluwer, 357–367.
-Gvozdanovi, Jadranka. 2012. Criteria for differentiating inherent and contact-induced changes in 
+Gvozdanovi
+, Jadranka. 2012. Criteria for differentiating inherent and contact-induced changes in 
 linguistic reconstruction. In van Kemenade and de Haas (eds), 49–86.
 Haas, Mary R. 1958. Algonkian–Ritwan: The end of a controversy. International Journal of American 
 Linguistics 24: 159–173.
@@ -11719,7 +11727,8 @@ de ned distance measure to compare lexemes between languages. This measure can 
 to identify cognate candidates (Dunn and Terrill 2012), but more often it is used to give an 
 estimate of the amount of evolutionary change between lexemes which are a priori presumed 
 to be cognate. Lexical similarity methods are particularly suited to investigation of dialect 
-data, since the presumption of cognacy is well justi ed (Proki 2010). In general, lexical 
+data, since the presumption of cognacy is well justi ed (Proki
+ 2010). In general, lexical 
 similarity measures work best at relatively shallow time depths (Greenhill 2011).
 
 ---
@@ -12773,7 +12782,8 @@ Paradis, Emmanuel, Julien Claude and Korbinian Strimmer. 2004. APE: analyses of 
 evolution in R language. Bioinformatics 20: 289–290.
 Pritchard, Jonathan K., Matthew Stephens and Peter Donnelly. 2000. Inference of population structure 
 using multilocus genotype data. Genetics 155(2): 945–959.
-Proki, Jelena. 2010. Families and resemblances. Zutphen: Groningen Dissertations in Lingusitics.
+Proki
+, Jelena. 2010. Families and resemblances. Zutphen: Groningen Dissertations in Lingusitics.
 Pybus, Oliver G. 2006. Model selection and the molecular clock. PLoS Biology 4(5): e151.
 Reesink, Ger and Michael Dunn. 2012. Systematic typological comparison as a tool for investigating 
 language history. In Nicholas Evans and Marian Klamer (eds) Melanesian languages on the edge of
@@ -15848,7 +15858,10 @@ by which the rhyme of the  nal syllable of a verbal stem is deleted to mark plu
 (4) a 
 latáf-ka-n ‘to kick something’; PL. lát-ka-n
 b 
-yiáp-li-n ‘to tear something down’; PL. yí-i-n
+yi
+áp-li-n ‘to tear something down’; PL. yí
+-
+i-n
 c 
 koyóf- -n ‘to cut something’; PL. kóy-li-n
 d 
@@ -36369,7 +36382,8 @@ remained productive in the prehistories of each daughter branch.
 Indo-European
 653
 The PIE pronominal system and numerals will not be discussed here. For an overview see 
-Fortson (2010a: 140–147), and for more detailed treatments G. Schmidt (1978), Gvozdanovi 
+Fortson (2010a: 140–147), and for more detailed treatments G. Schmidt (1978), Gvozdanovi
+ 
 (1992), and Katz (1998).
 2.4 Preverbs, verbal morphology and syntax
 There was a class of locational/spatial (secondarily temporal) adverbials that variously 
@@ -36529,7 +36543,8 @@ Benjamin W. Fortson IV
 ——2006. Convergence in the formation of Indo-European subgroups: phylogeny and chronology. In 
 Peter Forster and Colin Renfrew (eds) Phylogenetic methods and the prehistory of languages. 
 Cambridge: McDonald Institute for Archaeological Research, 139–151.
-Gvozdanovi, Jadranka (ed.) 1992. Indo-European numerals. Berlin: de Gruyter.
+Gvozdanovi
+, Jadranka (ed.) 1992. Indo-European numerals. Berlin: de Gruyter.
 Hopper, Paul J. 1973. Glottalized and murmured consonants in Proto-Indo-European. Glossa 7: 
 141–166.
 Jakobson, Roman. 1957. Typological studies and their contribution to historical comparative linguistics. 
@@ -36958,7 +36973,8 @@ Table 31.2. Vowels and vowel-semivowel sequences have been reconstructed as: *a,
 PAn lexical reconstructions and represent keyboard adaptations of phonetic symbols, established 
 before the days of Unicode fonts. Phonetic values vary depending upon the researcher, but some 
 have claimed the following: *e schwa [	]; *S a voiceless palatal fricative [ç]; *C a voiceless 
-palatal affricate [tç]; *z a voiced palatal affricate []; *j a voiced velar fricative []; *R a voiced 
+palatal affricate [tç]; *z a voiced palatal affricate [
+]; *j a voiced velar fricative []; *R a voiced 
 uvular trill [Ã]; *L a voiced lateral fricative []; and so on (see Ross 1992 for discussion).
 Table 31.2 Proto-Austronesian consonants (adapted from Ross 1992; Adelaar 2005)
 Labial
@@ -38856,7 +38872,8 @@ Sora
 Mundari
 *su(	)k 
 ‘hair’
-ok
+
+ok
 s$k
 (ok)
 hu
@@ -44029,3 +44046,5 @@ imprints
 imprintsimprints
 imprints
 imprints
+
+_Dr. Mārcis Gasūns_
