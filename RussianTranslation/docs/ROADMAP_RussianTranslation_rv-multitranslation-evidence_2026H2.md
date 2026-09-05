@@ -16,7 +16,7 @@ is reproducible byte-for-byte and can be re-run at zero risk.
 
 | # | Deliverable | Unblocked by |
 |---|---|---|
-| W1.1 | **Griffith English layer.** Extract the `p.en` blocks from [`rvlinks/RV_sa-hn-ru-de-en_1.html`](https://github.com/sanskrit-lexicon/rvlinks/blob/main/RV_sa-hn-ru-de-en_1.html) keyed by the `p.stamp` locus (`rv01.001.01`), normalise to the VedaWeb `location` form (`1.1.1`), emit `griffith_en_1896.json` with the same shape as the three existing translation JSONs | nothing — the HTML is committed |
+| W1.1 | **Griffith English layer.** Extract the `p.en` blocks from `rvlinks/RV_sa-hn-ru-de-en_1.html` keyed by the `p.stamp` locus (`rv01.001.01`), normalise to the VedaWeb `location` form (`1.1.1`), emit `griffith_en_1896.json` with the same shape as the three existing translation JSONs | nothing — the HTML is committed |
 | W1.2 | **The spine.** `rv_stanza_translations.jsonl` (10,552 stanzas x 4 renderings) + `rv_lemma_occurrences.jsonl` (lemma -> its 164,758 token occurrences), joining on `location`. Normalised: the denormalised form measures ~65 MB, this one ~18 MB | W1.1 |
 | W1.3 | **Flat mirror + schema.** `rv_translation_spine.tsv` (one row per lemma × stanza × translator) and `schemas/rv_translation_spine.schema.json` | W1.2 |
 | W1.4 | **Renou locus index.** Parse Elizarenkova's commentary for the 2,213 Renou mentions; emit `rv_renou_citation_index.jsonl` with locus, the Russian context sentence, and — for the 368 that have one — the quoted French fragment | nothing |

@@ -1529,7 +1529,7 @@ budget**, so the gate provides no differentiation and a ceiling change moves eve
 
 ### Independently corroborated by H2011, from the opposite direction — and it bounds this fix
 
-[H2011](#02-08-2026-h2011-at-the-old-180-s-ceiling--c4-gate-pass-canary-pass-and-the-first-per-card-observed-economics-on-the-production-route)
+[H2011](#02-08-2026-h2011-at-the-old-180-s-ceiling-c4-gate-pass-canary-pass-and-the-first-per-card-observed-economics-on-the-production-route)
 ran the same morning and reached the same place by spending instead of reading. Its decisive
 control: **calls 2–4 were the *identical* fragment `rAtra_f0`, at 180.0 / 180.1 / 142.6 s
 success.** Same input, same lane, same profile — three outcomes. Held against this entry's

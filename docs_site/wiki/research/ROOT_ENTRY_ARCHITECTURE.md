@@ -159,7 +159,7 @@ presence of a separate headword.
 Before building anything: per the "check prior art first" rule, swept the sibling repos.
 The root-record prefix segmenter sketched in §"Implementation sketch" above is **already
 built** by Jim Funderburk in [`PWG/verbs01/`](https://github.com/sanskrit-lexicon/PWG/tree/main/verbs01) (flagged in
-[`SHARED_CODE.md`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/SHARED_CODE.md) §4 "verb/preverb morphology"). It does **more** than the sketch
+`SHARED_CODE.md` §4 "verb/preverb morphology"). It does **more** than the sketch
 asked for, on real data, and its outputs are committed.
 
 ### What `verbs01` already computes

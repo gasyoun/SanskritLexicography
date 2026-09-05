@@ -14,7 +14,7 @@ morphology store was touched by either witness.
 
 | | Witness A: Heritage segmenter/lemmatizer | Witness B: DharmaMitra ByT5 morphology |
 |---|---|---|
-| Engine | Gérard Huet's Sanskrit Heritage Platform v3.77 [2026-03-15] | `chronbmm/sanskrit5-multitask` ByT5 multi-task analyzer, pinned revision `c0d2ada` ([csl-atlas contract](https://github.com/gasyoun/csl-atlas/blob/master/scripts/lib/dharmamitra_infer.py)) |
+| Engine | Gérard Huet's Sanskrit Heritage Platform v3.77 [2026-03-15] | `chronbmm/sanskrit5-multitask` ByT5 multi-task analyzer, pinned revision `c0d2ada` (csl-atlas contract) |
 | Access | **UoHyd mirror** `https://sanskrit.uohyd.ac.in/cgi-bin/SKT/sktreader`, Word mode, SLP1 input, MW lexicon — live service, not Anubis-walled (the Inria primary is; per [FINDINGS §41](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)/§47 it was never touched) | **Local pinned-revision inference**, SLM task (`unsandhied-lemma-morphosyntax`), CPU |
 | Why this access path | The mirror hosts the real platform (same CGI family as sanskrit.inria.fr); live-service etiquette applied: every response cached, 2 s throttle, identifying User-Agent | The live `dharmamitra.org/api/tagging/` was probed same-day and returned **identity echoes for every input, including sandhi-bearing sentences** (`rāmasya putraḥ vanam agacchat → rāmasya_putraḥ_vanam_agacchat_`, identical under all three mode strings) — the [FINDINGS §95](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) short-input failure class is now chronic at the API. Local inference of the pinned model is the documented reproducible fallback |
 

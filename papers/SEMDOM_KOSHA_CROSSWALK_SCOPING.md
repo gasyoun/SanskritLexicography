@@ -57,7 +57,7 @@ semdom↔WordNet mapping, human-verified. Build handoff:
 | UoHyd SCL Amarakosha net | [sanskrit.uohyd.ac.in/scl/amarakosha](https://sanskrit.uohyd.ac.in/scl/amarakosha/index.html) | per-word synonyms/hypernyms/knowledge-net (richest relational layer) | — | GPL v2+ | fetched; consume via API per [REUSE_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REUSE_INDEX.md), don't clone |
 | semdom↔WordNet bridge | [lmorgadodacosta/sil-semantic-domains-wordnet-mapping](https://github.com/lmorgadodacosta/sil-semantic-domains-wordnet-mapping) | semdom code ↔ PWN offset/OMW | ~75% of domains matched | CC BY-SA 4.0 | fetched |
 | Verse-keyed Amarakosha JSON (fallback) | [ashtadhyayi-com/data kosha/amara.json](https://github.com/ashtadhyayi-com/data/blob/master/kosha/amara.json) | one record per verse keyed `kanda.varga.verse`, Devanagari | — | **no licence file** — avoid as primary | fetched |
-| Wider kosha corpus (extension) | [sanskrit-kosha/kosha](https://github.com/sanskrit-kosha/kosha) (Dhaval Patel) | dozens of koshas incl. AK commentaries, shared [annotation format](https://github.com/sanskrit-kosha/kosha/blob/master/docs/annotation_thoughts.md) | — | per-file | listing fetched |
+| Wider kosha corpus (extension) | [sanskrit-kosha/kosha](https://github.com/sanskrit-kosha/kosha) (Dhaval Patel) | dozens of koshas incl. AK commentaries, shared annotation format | — | per-file | listing fetched |
 
 What we do **not** have, checked this pass: no Amarakosha varga data in the
 [kosha data-hub manifest](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)

@@ -25,7 +25,7 @@ sources), not effort. See [§4](#4-the-residue-is-unresolvable-by-agent-effort).
 Provenance for every figure and status below: [`ACL_DH_COMPATIBILITY_ANALYSIS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
 §3.1 + §5 (the H270 measurement, 07-07-2026) and [`SCHEMA.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/SCHEMA.md)'s
 source-code table. This pass added no new measurement — the canonical list is not on
-disk (see [§3](#3-the-canonical-list-is-not-recovered--escalated-as-data-loss)), so no
+disk (see [§3](#3-the-canonical-list-is-not-recovered-escalated-as-data-loss)), so no
 count could be re-run. It sorts the existing, SHA-anchored evidence into the rights
 buckets the licensing ruling turns on.
 

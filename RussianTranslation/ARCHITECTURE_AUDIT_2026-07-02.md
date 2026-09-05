@@ -31,7 +31,7 @@ true by construction?
 **Analysis model:** Fable 5 (`claude-fable-5`), including the three parallel audit
 subagents (failure-history mining, peripheral-module map, dead-code sweep — all inherited
 `claude-fable-5`). Live-validation generation: the harness-pinned `sonnet` alias (see
-[FABLE_S10_RUN_NOTE](#live-validation) below for the resolved version of the run).
+FABLE_S10_RUN_NOTE below for the resolved version of the run).
 
 ---
 

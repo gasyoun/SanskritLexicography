@@ -39,7 +39,7 @@ Each L1 unit becomes one TMX `<tu>`:
 TMX emits the **L1** (word/phrase) layer by default; **Slice 3** adds the **L0**
 verse-segment layer (real `<tu segtype="block">` segment pairs) via `build --l0`,
 and a real word-alignment cross-check — see
-[the L0 + alignment section](#l0-verse-segment-layer--alignment-cross-check-slice-3)
+[the L0 + alignment section](#l0-verse-segment-layer-alignment-cross-check-slice-3)
 below. The composite A/B/C grade is
 assigned by **Slice 2** ([`src/tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py),
 below); `build_tmx build --grades <sidecar>` stamps those real grades. Without a

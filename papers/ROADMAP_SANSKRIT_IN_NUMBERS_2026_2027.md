@@ -86,7 +86,7 @@ Counts from this repo's [`HeadwordLists/now-2026/`](https://github.com/gasyoun/S
 | PWG | große Petersburger Wörterbuch (Böhtlingk-Roth, 1855–75) | **110,438** | the 7-volume "big" PW — the *Universalwörterbuch*-scale anchor |
 | PWK | Böhtlingk, kürzere Fassung (1879–89) | **155,688** | the abridgement is *larger* by headword count (finer splitting) |
 | SCH | Schmidt, *Nachträge* | **28,519** | addenda layer |
-| PW / PD | kleineres PW | **104,968** (now-2026 re-export) | prerequisite satisfied — see [§8](#8-open-decisions--prerequisites) |
+| PW / PD | kleineres PW | **104,968** (now-2026 re-export) | prerequisite satisfied — see [§8](#8-open-decisions-prerequisites) |
 
 The de-duplicated union is **not** the sum; it comes from the A40/A55 overlap matrix.
 

@@ -4,7 +4,7 @@ _Created: 07-08-2026 · Last updated: 07-08-2026_
 
 Executed by **Opus 5** (`claude-opus-5`) in an isolated worktree off `origin/master`
 `1c68e5068`. **Zero model calls. $0.00 spent.** The three-call / $3.00 reservation this
-handoff authorized is **unspent and intact** — see [§4](#4-section-b--the-live-proof-did-not-fire-and-that-is-the-finding).
+handoff authorized is **unspent and intact** — see [§4](#4-section-b-the-live-proof-did-not-fire-and-that-is-the-finding).
 
 Handoff: [H2254 (Opus 5) — PWG-RU budget convergence, bounded 300-second policy, and
 safe-mode live proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2254-Opus_RussianTranslation_budget-runbook-300s-live-proof_03.08.26.md),
