@@ -42,6 +42,13 @@
     "repo": "gasyoun/SanskritLexicography"
   },
   {
+    "id": "A7",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "cyrillic_proper_noun_slp1.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
     "id": "B5",
     "section": "I. Data assets — query it, someone already spent the compute",
     "title": "mw_roots.tsv",
@@ -357,6 +364,13 @@
     "repo": "gasyoun/SanskritGrammar"
   },
   {
+    "id": "E53",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "curated dating table for PWG's cited works (C2 phase 2)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/work_dating_table.json",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
     "id": "F33",
     "section": "I. Data assets — query it, someone already spent the compute",
     "title": "Indische Sprüche",
@@ -439,6 +453,13 @@
     "title": "ЛЭС-1990 static dump (les-1990)",
     "url": "https://github.com/gasyoun/les-1990",
     "repo": "gasyoun/les-1990"
+  },
+  {
+    "id": "F50",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "SanskritScienceBench (SSB) pilot task pack",
+    "url": "https://github.com/gasyoun/Uprava/blob/main/tasks/ROADMAP_VERIFIABLE_SANSKRIT_SCIENCE_BENCH_2026H2.md",
+    "repo": "gasyoun/Uprava"
   },
   {
     "id": "MW",
@@ -933,6 +954,48 @@
     "section": "IV. Tools — import the toolkit, call the external stacks",
     "title": "pwg_ru headless control plane (H1618)",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cohort_engine.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L12",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "pwg_ru TM integrity kit (H3500)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L13",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "Gate-evidence contract (H3748, W1)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gate_evidence.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L14",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "PWG printed-locus resolver (H3751)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/issues/1801",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L15",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "pwg_ru provenance census (H3750)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L16",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "PWG <ab> abbreviation bucketer (H3959)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L17",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "PWG four-tier enumeration reader + store-impact meter (H3948)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
     "repo": "gasyoun/SanskritLexicography"
   },
   {
