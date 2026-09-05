@@ -113,11 +113,14 @@ def test_unknown_route_or_kind_is_refused():
                   source_identity='x', source_hash=CLEAN_SHA)
 
 
-def test_only_the_two_paid_routes_are_billable():
+def test_only_paid_routes_are_billable():
+    # H4057: glm-flash qualifies as a third billable route (real paid API,
+    # offline-qualified). Provenance routes must never become billable.
     assert model.BILLABLE_ROUTES == frozenset(
-        {model.ROUTE_XAI, model.ROUTE_DEEPSEEK})
+        {model.ROUTE_XAI, model.ROUTE_DEEPSEEK, model.ROUTE_GLM})
     assert model.ROUTE_CLAUDE_SHADOW not in model.BILLABLE_ROUTES
     assert model.ROUTE_DETERMINISTIC not in model.BILLABLE_ROUTES
+    assert model.ROUTE_IMPORTED not in model.BILLABLE_ROUTES
 
 
 def test_fault_points_cover_every_named_irreversible_boundary():

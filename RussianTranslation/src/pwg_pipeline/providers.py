@@ -10,6 +10,8 @@ Wave-1 adapters:
 
 * :class:`XaiTmAdapter` -- the PWG-TM route, migrated first.
 * :class:`DeepSeekTmAdapter` -- the bounded fallback lane.
+* :class:`GlmFlashAdapter` -- the z.ai GLM route, offline-qualified (H4057);
+  billable, but with no price card, so dollar-bounded runs fail closed.
 * :class:`ClaudeHeadlessShadowAdapter` -- read-only evidence over the proven
   headless worker; it refuses to execute anything.
 * :class:`FakeAdapter` -- fixture-driven, used by every offline gate.
@@ -38,8 +40,24 @@ DEEPSEEK_BASE_URL = 'https://api.deepseek.com'
 DEEPSEEK_DEFAULT_MODEL = 'deepseek-v4-flash'
 DEEPSEEK_KEY_ENV = 'DEEPSEEK_API_KEY'
 
+# H4057: the z.ai OpenAI-compatible GLM route. The default model id is the
+# actually-resolved installed identity, read from OpenCode configuration
+# metadata (default model ``zai-coding-plan/glm-5.3-flash`` in
+# ``~/.config/opencode/opencode.jsonc``, 05-09-2026): the ``zai-coding-plan``
+# prefix is an OpenCode routing namespace; the wire model id is
+# ``glm-5.3-flash``. Local records disagreeing on slug spelling are resolved in
+# favour of this observed value -- never re-spelled by hand.
+GLM_BASE_URL = 'https://api.z.ai/api/paas/v4'
+GLM_DEFAULT_MODEL = 'glm-5.3-flash'
+GLM_KEY_ENV = 'ZAI_API_KEY'
+
 # Provider list prices, USD per million tokens. Used ONLY to estimate a ceiling
 # before dispatch; the sealed cost always prefers provider-reported usage.
+# H4057: there is deliberately NO glm-flash entry. A verified z.ai price card
+# does not exist in this repository, so the GLM route has no borrowable price:
+# unknown cost stays unknown, ``estimate_cost_usd`` refuses, and a
+# dollar-bounded campaign fails closed before any reservation (never xAI,
+# DeepSeek or Claude prices borrowed for GLM).
 PRICE_PER_MTOK_USD: dict[str, dict[str, float]] = {
     model.ROUTE_XAI: {'input': 3.0, 'output': 15.0},
     model.ROUTE_DEEPSEEK: {'input': 0.28, 'output': 0.42},
@@ -273,6 +291,23 @@ class DeepSeekTmAdapter(_OpenAICompatibleAdapter):
     default_model = DEEPSEEK_DEFAULT_MODEL
 
 
+class GlmFlashAdapter(_OpenAICompatibleAdapter):
+    """The z.ai GLM route (H4057): same OpenAI wire, own credential + route.
+
+    Offline-qualified only. It shares the reservation ledger, request/response
+    schema, receipts and timeout behaviour through
+    :class:`_OpenAICompatibleAdapter` and adds no orchestration of its own.
+    Cost is *not* derivable: no price card exists for this route, so a
+    dollar-bounded run refuses closed at the kernel's budget gate.
+    """
+
+    name = 'glm'
+    route = model.ROUTE_GLM
+    base_url = GLM_BASE_URL
+    key_env = GLM_KEY_ENV
+    default_model = GLM_DEFAULT_MODEL
+
+
 class ClaudeHeadlessShadowAdapter:
     """Read-only evidence over the proven Claude headless lane (R3.4).
 
@@ -376,6 +411,7 @@ class FakeAdapter:
 ADAPTERS: dict[str, type] = {
     'xai': XaiTmAdapter,
     'deepseek': DeepSeekTmAdapter,
+    'glm': GlmFlashAdapter,
     'claude-shadow': ClaudeHeadlessShadowAdapter,
 }
 
@@ -401,7 +437,8 @@ def estimate_cost_usd(route: str, *, input_tokens: int,
 __all__ = [
     'SCHEMA', 'ProviderError', 'ProviderUnavailable', 'ProviderRequest',
     'ProviderResponse', 'ProviderAdapter', 'XaiTmAdapter', 'DeepSeekTmAdapter',
-    'ClaudeHeadlessShadowAdapter', 'FakeAdapter', 'ADAPTERS', 'adapter_for',
+    'GlmFlashAdapter', 'ClaudeHeadlessShadowAdapter', 'FakeAdapter',
+    'ADAPTERS', 'adapter_for',
     'normalized_usage', 'estimate_cost_usd', 'PRICE_PER_MTOK_USD',
-    'XAI_KEY_ENV', 'DEEPSEEK_KEY_ENV',
+    'XAI_KEY_ENV', 'DEEPSEEK_KEY_ENV', 'GLM_KEY_ENV',
 ]
