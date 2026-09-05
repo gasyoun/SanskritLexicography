@@ -34,10 +34,10 @@ also this book's two-traditions thesis made visible inside a single European ent
 
 **Theoretical framing:** primarily *data-grounded* (the analytic apparatus is built from
 MW outward); the three dominant metalexicographic traditions —
-[Wiegand](#appendix-a--the-wiegand-theoretic-reading-condensed) (1989, 2002),
-[Atkins & Rundell](#appendix-b--the-atkins-rundell-practical-lexicography-reading-condensed)
+[Wiegand](#appendix-a-the-wiegand-theoretic-reading-condensed) (1989, 2002),
+[Atkins & Rundell](#appendix-b-the-atkins-rundell-practical-lexicography-reading-condensed)
 (2008), and
-[Hausmann](#appendix-c--the-hausmann-wiegand-comment-class-reading-condensed) (1977,
+[Hausmann](#appendix-c-the-hausmann-wiegand-comment-class-reading-condensed) (1977,
 1985) — are applied in the appendices and used in §7 as convergent triangulation, not as
 the primary lens.
 
@@ -50,7 +50,7 @@ Atkins-Rundell production/retrieval typology. But each framework also **imposes
 categories**. Wiegand's "fully integrated microstructure" presupposes a sense-hierarchy
 that MW's `<e>1A` continuation-by-adjacency pattern does not quite realise. Hausmann's
 four comment-classes lacked a category for MW's lexicographer-hedge (I add one in
-[Appendix C](#appendix-c--the-hausmann-wiegand-comment-class-reading-condensed)).
+[Appendix C](#appendix-c-the-hausmann-wiegand-comment-class-reading-condensed)).
 Atkins-Rundell's typology of dictionary purposes assumes a 21st-century user.
 
 I therefore make the **grounded reading primary**: the analytical apparatus is built from
@@ -70,7 +70,7 @@ applications here were performed by the same analyst on the same data, so conver
 evidence of category-fit rather than of independent replication. This **triangulation**
 (§7) is the chapter's methodological backbone: one grounded analysis corroborated by
 three independent framings, condensed here into
-[Appendices A–C](#appendix-a--the-wiegand-theoretic-reading-condensed); the body of the
+[Appendices A–C](#appendix-a-the-wiegand-theoretic-reading-condensed); the body of the
 chapter is the grounded reading plus the triangulation.
 
 ## 2. Data and method
@@ -163,7 +163,7 @@ The hedge is the **single most distinctive block** in MW's design — although t
 *concept* of an inline lexicographer-only marker predates MW (typographically) in
 Cappeller 1891 (asterisk) and Benfey 1866 (dagger); MW's contribution is to promote it
 into the tagged source-citation slot
-([Appendix C §C.2](#appendix-c--the-hausmann-wiegand-comment-class-reading-condensed)).
+([Appendix C §C.2](#appendix-c-the-hausmann-wiegand-comment-class-reading-condensed)).
 
 ### Construct 5 — *Infrastructure*
 
@@ -429,10 +429,10 @@ dictionaries**, and I propose it as a general analytical category.
 
 I now corroborate the grounded reading against the three dominant metalexicographic
 traditions. The full treatments are in
-[Appendix A (Wiegand)](#appendix-a--the-wiegand-theoretic-reading-condensed),
-[Appendix B (Atkins-Rundell)](#appendix-b--the-atkins-rundell-practical-lexicography-reading-condensed),
+[Appendix A (Wiegand)](#appendix-a-the-wiegand-theoretic-reading-condensed),
+[Appendix B (Atkins-Rundell)](#appendix-b-the-atkins-rundell-practical-lexicography-reading-condensed),
 and
-[Appendix C (Hausmann-Wiegand)](#appendix-c--the-hausmann-wiegand-comment-class-reading-condensed).
+[Appendix C (Hausmann-Wiegand)](#appendix-c-the-hausmann-wiegand-comment-class-reading-condensed).
 Here I report only what the triangulation establishes.
 
 ### 7.1 The construct map
@@ -556,7 +556,7 @@ Three concrete implications:
   [ABCH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/abch),
   [ACPH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acph),
   [ACSJ](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acsj) (see
-  [Appendix B §B.6](#appendix-b--the-atkins-rundell-practical-lexicography-reading-condensed)).
+  [Appendix B §B.6](#appendix-b-the-atkins-rundell-practical-lexicography-reading-condensed)).
 - **For cross-dictionary work:** each CDSL dict
   ([PWG](https://github.com/sanskrit-lexicon/PWG), [AP](https://github.com/sanskrit-lexicon/ap),
   [WIL](https://github.com/sanskrit-lexicon/WIL), [SKD](https://github.com/sanskrit-lexicon/SKD),
@@ -837,7 +837,7 @@ if the user is an academic Sanskritist.
 does not fit MW's *third* strategy: a polysemous lemma gets one `<e>1` entry **plus** a
 tail of `<e>1A` continuation records sharing the headword and relying on adjacency for
 cohesion (the paradigm is
-[L10 *áṃśa*](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt#L55)
+L10 *áṃśa*
 with its nine continuations). I name these **adjacency-sub-entries**: display headword
 suppressed in 66.1%, grammar suppressed in 99.7%, `<info>` present in 98.6%, avg fullness
 4.76. The print-era motive was compactness — a continuation costs a line, not a full
