@@ -30,8 +30,14 @@ session has read and adjudicated, and G2 keeps blocking on everything else. Pref
   python src/refresh_tm_mirror.py [--src PATH] [--mirror PATH] [--apply] [--force]
                                   [--ack-superseded FILE] [--max-drop N] --handoff H####
 
-Dry-run by default: prints the classification and the guard verdicts, writes nothing.
-`--selftest` runs the guards over synthetic fixtures.
+  Dry-run by default: prints the classification and the guard verdicts, writes nothing.
+  `--selftest` runs the guards over synthetic fixtures.
+
+H4055: the ledger row (and optional `--receipt FILE`) now carries the content view —
+`src_sha256`, `noop`, `shared_ids`/`ru_equal`/`changed_ru` and capped `changed_ru_keys` —
+beside the existing row-set counters, and the copy is written through
+`store_write.locked_store_rewrite` and verified byte-identical, so a content-only sync is
+no longer byte-shaped like a no-op (both used to show all-zero row counters).
 """
 import argparse
 import collections
@@ -51,6 +57,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 from store_path import canonical_data_repo, canonical_store  # noqa: E402
+from store_write import locked_store_rewrite  # noqa: E402  (H4055: the ONE sanctioned rewrite path)
 # H3658: mirror + ledger resolve off the MAIN checkout, never the executing worktree.
 DATA = canonical_data_repo(HERE)
 # H3658: the ONE canonical store (H255 loss mode) - not this checkout's possibly-stale copy.
@@ -106,6 +113,27 @@ def classify(src_rows, mirror_rows, quarantine_ids=frozenset(), superseded_ids=f
         else:
             buckets['unexplained'].append(row)
     return {'only_mirror': only_mirror, 'only_src': only_src, 'buckets': buckets}
+
+
+def semantic_diff(src_rows, mirror_rows):
+    """H4055: content-sensitive view the row-set counters cannot see.
+
+    Two stores can agree on EVERY row id (only_src=0 only_mirror=0) and still
+    differ in content — the same key carrying a different `ru`. This diffs the
+    shared ids by `ru` exactly as audit_store_gates.diff_stores does (same rid,
+    last-row-wins dicts), so the receipt can tell a content-only update from a
+    byte-identical no-op: both have all-zero row-set counters, only changed_ru
+    separates them.
+    """
+    src = {rid(r): r for r in src_rows}
+    mir = {rid(r): r for r in mirror_rows}
+    shared = set(src) & set(mir)
+    changed = [k for k in sorted(shared)
+               if (src[k].get('ru') or '') != (mir[k].get('ru') or '')]
+    return {'shared_ids': len(shared),
+            'ru_equal': len(shared) - len(changed),
+            'changed_ru': len(changed),
+            'changed_keys': [list(k) for k in changed]}
 
 
 def run_guards(src_rows, mirror_rows, report, max_drop):
@@ -222,8 +250,201 @@ def selftest():
     long_de = 'x' * 200
     check('rid truncates de at 80 chars', rid(row('k', 's', '1', long_de, 'r'))[3] == 'x' * 80)
 
+    # 9. H4055 content-sensitive identity: same row ids, different ru
+    src = [row('k', 's', '1', 'de1', 'ru-OLD')]
+    mir = [row('k', 's', '1', 'de1', 'ru-NEW')]
+    sem = semantic_diff(src, mir)
+    check('content-only: shared_ids=1', sem['shared_ids'] == 1)
+    check('content-only: changed_ru=1', sem['changed_ru'] == 1)
+    check('content-only: changed key is the rid',
+          sem['changed_keys'] == [['k', 's', '1', 'de1']])
+    check('no-op: changed_ru=0', semantic_diff(src, list(src))['changed_ru'] == 0)
+
+    # 10. H4055 end-to-end receipts over scratch stores (acceptance fixtures):
+    #     a content-only update and a byte-identical no-op BOTH have all-zero
+    #     row-set counters; only changed_ru and the shas separate them.
+    import tempfile as _tf2
+
+    def _fixture(td, name, mid_ru):
+        rows = [row('k1', 's', '1', 'de1', 'ru-one'),
+                row('k2', 's', '1', 'de2', mid_ru),
+                row('k3', 's', '1', 'de3', 'ru-three')]
+        sp = os.path.join(td, 'src_%s.jsonl' % name)
+        mp = os.path.join(td, 'mirror_%s.jsonl' % name)
+        with io.open(sp, 'w', encoding='utf-8', newline='\n') as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+        return sp, mp
+
+    with _tf2.TemporaryDirectory() as td:
+        led = os.path.join(td, 'ledger.jsonl')
+        # 10a. byte-identical no-op: all counters zero, changed_ru zero, no sha move
+        sp, mp = _fixture(td, 'noop', 'ru-two')
+        import shutil as _sh
+        _sh.copy2(sp, mp)
+        e = run_refresh(sp, mp, led, 'H4055T', apply=True,
+                        receipt=os.path.join(td, 'noop_receipt.json'))
+        check('noop receipt: changed_ru=0', e['changed_ru'] == 0)
+        check('noop receipt: noop=True', e['noop'] is True)
+        check('noop receipt: sha unchanged',
+              e['mirror_sha_after'] == e['mirror_sha_before'])
+        check('noop: mirror bytes == src bytes',
+              open(mp, 'rb').read() == open(sp, 'rb').read())
+        rec = json.load(io.open(os.path.join(td, 'noop_receipt.json'), encoding='utf-8'))
+        check('noop durable receipt agrees', rec['changed_ru'] == 0 and rec['noop'] is True)
+
+        # 10b. content-only update: same rid set (row-set counters stay zero),
+        #      changed_ru=1, shas move, and the written mirror is still a
+        #      BYTE-exact copy of src.
+        sp2, mp2 = _fixture(td, 'content', 'ru-two-CHANGED')
+        _sh.copy2(sp2, mp2)
+        with io.open(mp2, encoding='utf-8', newline='\n') as f:
+            mir_rows = [json.loads(l) for l in f if l.strip()]
+        mir_rows[1]['ru'] = 'ru-two-STALE'
+        with io.open(mp2, 'w', encoding='utf-8', newline='\n') as f:
+            for r in mir_rows:
+                f.write(json.dumps(r, ensure_ascii=False) + '\n')
+        e2 = run_refresh(sp2, mp2, led, 'H4055T', apply=True,
+                         receipt=os.path.join(td, 'content_receipt.json'))
+        check('content-only receipt: changed_ru=1', e2['changed_ru'] == 1)
+        check('content-only receipt: noop=False', e2['noop'] is False)
+        check('content-only: row-set counters stay 0',
+              e2['only_src_added'] == 0 and e2['only_mirror_dropped'] == 0)
+        check('content-only: sha moved',
+              e2['mirror_sha_after'] != e2['mirror_sha_before'])
+        check('content-only: stale key in receipt',
+              e2['changed_ru_keys'] == [['k2', 's', '1', 'de2']])
+        check('content-only: mirror bytes == src bytes',
+              open(mp2, 'rb').read() == open(sp2, 'rb').read())
+        rec2 = json.load(io.open(os.path.join(td, 'content_receipt.json'), encoding='utf-8'))
+        check('content-only durable receipt agrees', rec2['changed_ru'] == 1)
+        led_rows = [json.loads(l) for l in io.open(led, encoding='utf-8') if l.strip()]
+        check('ledger rows carry changed_ru', [r['changed_ru'] for r in led_rows] == [0, 1])
+        check('ledger rows carry src identity', all(r.get('src_sha256') for r in led_rows))
+
     print('selftest %d/%d' % (state['ok'], state['total']))
     return 0 if state['ok'] == state['total'] else 1
+
+
+def run_refresh(src, mirror, ledger, handoff, apply=False, force=False,
+                max_drop=500, quarantine=None, ack_superseded=None,
+                receipt=None, receipt_max_keys=100):
+    """One refresh decision, and — on ``apply`` — the byte-exact locked copy.
+
+    Returns the H4055 receipt entry dict (``None`` only when a guard blocked an
+    un-forced run). H4055 changes vs the pre-receipt ledger row:
+
+    * the entry carries ``src_sha256`` and the content view (``shared_ids`` /
+      ``ru_equal`` / ``changed_ru`` / capped ``changed_ru_keys``) beside the
+      existing row-set counters, so a content-only sync is no longer
+      byte-shaped like a no-op (all-zero counters on both used to look alike);
+    * ``noop`` is true iff src bytes were already byte-identical to the mirror
+      before the copy — a no-op refresh moves no sha;
+    * the mirror is written through ``store_write.locked_store_rewrite``
+      (PromoteClaim + unique fsynced backup + atomic replace) as RAW-LINE
+      passthrough, then verified byte-identical to src: the mirror's contract
+      is a straight copy, never a re-serialization. Any drift restores the
+      backup and raises.
+    """
+    src_rows = load(src)
+    mirror_rows = load(mirror)
+    quarantine_ids = set()
+    if quarantine and os.path.exists(quarantine):
+        quarantine_ids = set(rid(r) for r in load(quarantine))
+        print('quarantine  %s  rows=%d' % (quarantine, len(quarantine_ids)))
+
+    superseded_ids = set()
+    if ack_superseded:
+        superseded_ids = set(rid(r) for r in load(ack_superseded))
+        print('ack-superseded %s  rows=%d' % (ack_superseded, len(superseded_ids)))
+
+    report = classify(src_rows, mirror_rows, quarantine_ids, superseded_ids)
+    b = report['buckets']
+    sem = semantic_diff(src_rows, mirror_rows)
+    print('src     %s  rows=%d' % (src, len(src_rows)))
+    print('mirror  %s  rows=%d' % (mirror, len(mirror_rows)))
+    print('only_src=%d only_mirror=%d changed_ru=%d' % (
+        len(report['only_src']), len(report['only_mirror']), sem['changed_ru']))
+    print('  mirror-only quarantined  %d' % len(b['quarantined']))
+    print('  mirror-only id-churn     %d' % len(b['id_churn']))
+    print('  mirror-only superseded   %d  (acknowledged)' % len(b['superseded']))
+    print('  mirror-only unexplained  %d' % len(b['unexplained']))
+    for r in b['unexplained'][:20]:
+        print('    ! %s | %s | %s | %s' % (r.get('key1'), r.get('subcard'),
+                                           r.get('sense_tag'), (r.get('ru') or '')[:60]))
+
+    guards = run_guards(src_rows, mirror_rows, report, max_drop)
+    print('guards:')
+    blocked = False
+    for name, good, detail in guards:
+        print('  %-18s %-6s %s' % (name, 'PASS' if good else 'BLOCK', detail))
+        blocked = blocked or not good
+
+    if blocked and not force:
+        print('\nBLOCKED — a guard refused. Re-read the rows above; --force overrides.')
+        return None
+    if blocked:
+        print('\n--force: copying past a blocking guard.')
+
+    stamp = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+    before_sha = sha256_file(mirror)
+    src_sha = sha256_file(src)
+    backup = None
+    if apply:
+        with io.open(src, 'rb') as f:
+            raw = f.read()
+        if not raw.endswith(b'\n'):
+            raise ValueError(
+                'src %s is not LF-only JSONL with a trailing newline; a byte-exact '
+                'mirror copy is impossible — refusing to re-serialize' % src)
+        lines = raw.decode('utf-8').split('\n')[:-1]
+        backup = locked_store_rewrite(mirror, lines, tag=handoff.lower())
+        after_sha = sha256_file(mirror)
+        if after_sha != src_sha:
+            if backup and os.path.exists(backup):
+                shutil.copy2(backup, mirror)
+            raise RuntimeError(
+                'mirror rewrite drifted from src bytes (%s -> %s, expected %s); '
+                'backup restored' % (before_sha[:12], after_sha[:12], src_sha[:12]))
+    else:
+        print('\nDRY RUN — nothing written. Re-run with --apply to refresh the mirror.')
+        after_sha = before_sha
+
+    entry = {'handoff': handoff, 'ts': stamp,
+             'action': 'mirror refreshed from src store',
+             'mode': 'apply' if apply else 'dry-run',
+             'src_rows': len(src_rows), 'mirror_rows_before': len(mirror_rows),
+             'mirror_rows_after': len(load(mirror)) if apply else len(mirror_rows),
+             'only_mirror_dropped': len(report['only_mirror']),
+             'dropped_quarantined': len(b['quarantined']),
+             'dropped_id_churn': len(b['id_churn']),
+             'dropped_superseded_acked': len(b['superseded']),
+             'dropped_unexplained': len(b['unexplained']),
+             'ack_superseded_file': (os.path.basename(ack_superseded)
+                                     if ack_superseded else None),
+             'only_src_added': len(report['only_src']),
+             'src_sha256': src_sha,
+             'noop': before_sha == src_sha,
+             'shared_ids': sem['shared_ids'],
+             'ru_equal': sem['ru_equal'],
+             'changed_ru': sem['changed_ru'],
+             'changed_ru_keys': sem['changed_keys'][:receipt_max_keys],
+             'changed_ru_keys_truncated': len(sem['changed_keys']) > receipt_max_keys,
+             'forced': bool(force),
+             'mirror_sha_before': before_sha, 'mirror_sha_after': after_sha,
+             'backup': os.path.basename(backup) if backup else None}
+    if apply:
+        with io.open(ledger, 'a', encoding='utf-8', newline='\n') as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + '\n')
+        print('\nrefreshed. backup=%s' % (os.path.basename(backup) if backup else 'none'))
+        print('mirror sha %s -> %s' % (before_sha[:12], after_sha[:12]))
+        print('ledger += %s' % ledger)
+    if receipt:
+        with io.open(receipt, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(entry, f, ensure_ascii=False, indent=1)
+            f.write('\n')
+        print('receipt -> %s' % receipt)
+    return entry
 
 
 def main():
@@ -237,6 +458,11 @@ def main():
                     help='jsonl of mirror-only rows a session has read and adjudicated as '
                          'superseded by a newer store row; matched on the same row id')
     ap.add_argument('--ledger', default=DEFAULT_LEDGER)
+    ap.add_argument('--receipt', default=None,
+                    help='H4055: also write the full receipt entry as a durable JSON file '
+                         'here (the ledger row carries the same fields)')
+    ap.add_argument('--receipt-max-keys', type=int, default=100,
+                    help='cap on changed_ru row keys carried into the receipt')
     ap.add_argument('--handoff', default=None,
                     help='handoff ID that owns this refresh; stamped into the mirror backup '
                          'filename and the ledger row. H3658: this defaulted to H3627, so '
@@ -256,75 +482,11 @@ def main():
         # a real run; --selftest above needs no provenance and returns before this.
         ap.error('--handoff is required (the H### that owns this refresh)')
 
-    src_rows = load(args.src)
-    mirror_rows = load(args.mirror)
-    quarantine_ids = set()
-    if os.path.exists(args.quarantine):
-        quarantine_ids = set(rid(r) for r in load(args.quarantine))
-        print('quarantine  %s  rows=%d' % (args.quarantine, len(quarantine_ids)))
-
-    superseded_ids = set()
-    if args.ack_superseded:
-        superseded_ids = set(rid(r) for r in load(args.ack_superseded))
-        print('ack-superseded %s  rows=%d' % (args.ack_superseded, len(superseded_ids)))
-
-    report = classify(src_rows, mirror_rows, quarantine_ids, superseded_ids)
-    b = report['buckets']
-    print('src     %s  rows=%d' % (args.src, len(src_rows)))
-    print('mirror  %s  rows=%d' % (args.mirror, len(mirror_rows)))
-    print('only_src=%d only_mirror=%d' % (len(report['only_src']), len(report['only_mirror'])))
-    print('  mirror-only quarantined  %d' % len(b['quarantined']))
-    print('  mirror-only id-churn     %d' % len(b['id_churn']))
-    print('  mirror-only superseded   %d  (acknowledged)' % len(b['superseded']))
-    print('  mirror-only unexplained  %d' % len(b['unexplained']))
-    for r in b['unexplained'][:20]:
-        print('    ! %s | %s | %s | %s' % (r.get('key1'), r.get('subcard'),
-                                           r.get('sense_tag'), (r.get('ru') or '')[:60]))
-
-    guards = run_guards(src_rows, mirror_rows, report, args.max_drop)
-    print('guards:')
-    blocked = False
-    for name, good, detail in guards:
-        print('  %-18s %-6s %s' % (name, 'PASS' if good else 'BLOCK', detail))
-        blocked = blocked or not good
-
-    if blocked and not args.force:
-        print('\nBLOCKED — a guard refused. Re-read the rows above; --force overrides.')
-        return 1
-    if blocked:
-        print('\n--force: copying past a blocking guard.')
-
-    if not args.apply:
-        print('\nDRY RUN — nothing written. Re-run with --apply to refresh the mirror.')
-        return 0
-
-    stamp = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
-    before_sha = sha256_file(args.mirror)
-    backup = '%s.%s.%s.bak' % (args.mirror, args.handoff.lower(), stamp)
-    shutil.copy2(args.mirror, backup)
-    shutil.copy2(args.src, args.mirror)
-    after_sha = sha256_file(args.mirror)
-    entry = {'handoff': args.handoff, 'ts': stamp,
-             'action': 'mirror refreshed from src store',
-             'src_rows': len(src_rows), 'mirror_rows_before': len(mirror_rows),
-             'mirror_rows_after': len(load(args.mirror)),
-             'only_mirror_dropped': len(report['only_mirror']),
-             'dropped_quarantined': len(b['quarantined']),
-             'dropped_id_churn': len(b['id_churn']),
-             'dropped_superseded_acked': len(b['superseded']),
-             'dropped_unexplained': len(b['unexplained']),
-             'ack_superseded_file': (os.path.basename(args.ack_superseded)
-                                     if args.ack_superseded else None),
-             'only_src_added': len(report['only_src']),
-             'forced': bool(args.force),
-             'mirror_sha_before': before_sha, 'mirror_sha_after': after_sha,
-             'backup': os.path.basename(backup)}
-    with io.open(args.ledger, 'a', encoding='utf-8', newline='\n') as f:
-        f.write(json.dumps(entry, ensure_ascii=False) + '\n')
-    print('\nrefreshed. backup=%s' % os.path.basename(backup))
-    print('mirror sha %s -> %s' % (before_sha[:12], after_sha[:12]))
-    print('ledger += %s' % args.ledger)
-    return 0
+    entry = run_refresh(args.src, args.mirror, args.ledger, args.handoff,
+                        apply=args.apply, force=args.force, max_drop=args.max_drop,
+                        quarantine=args.quarantine, ack_superseded=args.ack_superseded,
+                        receipt=args.receipt, receipt_max_keys=args.receipt_max_keys)
+    return 0 if entry is not None else 1
 
 
 if __name__ == '__main__':
