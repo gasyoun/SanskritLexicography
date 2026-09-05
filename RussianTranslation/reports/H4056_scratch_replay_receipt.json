@@ -1,0 +1,50 @@
+{
+  "schema": "h4056-scratch-replay-receipt/v1",
+  "handoff": "H4056",
+  "sheet_id": "h4056-evidence-packet-2026-09-05",
+  "reviewer_in_exports": "H4056-scratch-replay (agent, not human)",
+  "n_ids": 10,
+  "n_checks": 9,
+  "n_passed": 9,
+  "all_passed": true,
+  "checks": [
+    {
+      "ok": true,
+      "label": "committed lock binds the packet generation"
+    },
+    {
+      "ok": true,
+      "label": "lock gate is H4056-DEMO (no production route)"
+    },
+    {
+      "ok": true,
+      "label": "default route PARKS (gate H4056-DEMO, rc=2, nothing written)"
+    },
+    {
+      "ok": true,
+      "label": "explicit G5 route applies in scratch (rc=0)"
+    },
+    {
+      "ok": true,
+      "label": "stable-key routing: every review_id carries exactly its approve→approved / reject→reject / defer→needs_review"
+    },
+    {
+      "ok": true,
+      "label": "stale export refused: content_hash mismatch"
+    },
+    {
+      "ok": true,
+      "label": "rejected export changed nothing (review CSV byte-identical)"
+    },
+    {
+      "ok": true,
+      "label": "canonical store byte-identical after the replay"
+    },
+    {
+      "ok": true,
+      "label": "replay ran entirely in scratch (/var/folders/17/xycv_hps0w5_b67s84q43vr40000gp/T/h4056_replay_67w2fgd8)"
+    }
+  ],
+  "scratch_dir": "/var/folders/17/xycv_hps0w5_b67s84q43vr40000gp/T/h4056_replay_67w2fgd8",
+  "store_sha256_after": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65"
+}
