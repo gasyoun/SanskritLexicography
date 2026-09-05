@@ -5951,6 +5951,141 @@ def test_presplit_cite_floor_and_single_ceil():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def _h4054_synth_inputs(gh, d, specs):
+    """Write the H4054 synthetic raw/portrait fixtures and return a monkeypatched
+    gh.input_paths serving exactly those keys (H823-test pattern)."""
+    real_ip = gh.input_paths
+    paths = {}
+    for key, n_ls in specs:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        lines = ['=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n',
+                 '{#%s#}¦ <lex>Adj.</lex>\n' % key.split('~~')[0]]
+        for i in range(1, n_ls + 1):
+            lines.append('— %d〉 {%%Bedeutung %d%%} <ls>Ref. %d</ls>.\n' % (i, i, i))
+        if n_ls == 0:
+            lines.append('— 1〉 {%Bedeutung eins%}.\n')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(''.join(lines))
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        paths[key] = (rp, pp)
+    return (lambda k, input_dir=None: paths[k] if k in paths else real_ip(k))
+
+
+def test_default_call_shape_is_one_card_per_call():
+    """H4054: the NO-FLAG production preparation must emit ONE ORIGINAL CARD PER TRANSLATE
+    CALL. The ruled shape (H2152, 02-08-2026; RUN_FREQ_MAX § call shape; AGENTS.md one-card
+    policy) used to live only in whoever typed the command while the generator default was
+    OUTPUT_BUDGET=90 — the structural default is now 1. Proves (a) the module default is
+    literally 1 on a fresh import, (b) a default-budget multi-key build produces exactly one
+    card per batch, and (c) the explicit experiment lane still packs: --output-budget=90
+    puts the same small cards into ONE batch."""
+    import gen_opt_harness2 as gh
+    d = tempfile.mkdtemp()
+    keys = ['a~~h0_zz_pw', 'b~~h0_zz_pw', 'c~~h0_zz_pw']
+    saved_ob = gh.OUTPUT_BUDGET
+    saved_ip = gh.input_paths
+    try:
+        # (a) structural default, proven outside this process (monkeypatch-proof).
+        out = subprocess.run(
+            [sys.executable, '-c', 'import gen_opt_harness2 as g; print(g.OUTPUT_BUDGET)'],
+            cwd=os.path.dirname(os.path.abspath(gh.__file__)),
+            capture_output=True, text=True, encoding='utf-8')
+        if out.returncode or out.stdout.strip() != '1':
+            fail('fresh-import gen_opt_harness2.OUTPUT_BUDGET must be 1 (one card per call); '
+                 'got rc=%s stdout=%r stderr=%r' % (out.returncode, out.stdout, out.stderr))
+        if gh.OUTPUT_BUDGET != 1:
+            fail('in-process OUTPUT_BUDGET is %r, not the import default 1' % (gh.OUTPUT_BUDGET,))
+        gh.input_paths = _h4054_synth_inputs(gh, d, list(zip(keys, (2, 0, 5))))
+        # (b) no-flag build: one original card per batch.
+        js, batches, manifest = gh.build('zz', keys, None, 12000, nominal=True,
+                                         grammar_on=False, tm_path=None, return_manifest=True)
+        meta = manifest['meta']
+        if meta.get('output_budget') != 1:
+            fail('meta.output_budget must record the structural default 1; got %r'
+                 % (meta.get('output_budget'),))
+        owed = [k for b in batches for k in b]
+        if sorted(owed) != sorted(keys):
+            fail('every original card must stay owed by the batch lane; got %r' % (batches,))
+        if any(len(b) != 1 for b in batches):
+            fail('no-flag production preparation must emit ONE card per translate call; '
+                 'got batches=%r' % (batches,))
+        if meta.get('batch_count') != len(keys):
+            fail('batch_count must equal the card count under the one-card default; got %r'
+                 % (meta.get('batch_count'),))
+        if meta.get('presplit_keys'):
+            fail('small cards (max 5 <ls>) must NOT presplit under the default '
+                 '(PRESPLIT_SOLO_CITE_FLOOR governs, not the batch budget); got %r'
+                 % (meta['presplit_keys'],))
+        # (c) explicit experiment batching still packs the same small cards.
+        gh.OUTPUT_BUDGET = 90
+        js2, batches2, manifest2 = gh.build('zz', keys, None, 12000, nominal=True,
+                                            grammar_on=False, tm_path=None, return_manifest=True)
+        if manifest2['meta'].get('output_budget') != 90:
+            fail('explicit --output-budget=90 must be honoured verbatim; got %r'
+                 % (manifest2['meta'].get('output_budget'),))
+        if not any(len(b) > 1 for b in batches2):
+            fail('explicit batching must pack >1 small card per batch; got %r' % (batches2,))
+        if sorted(k for b in batches2 for k in b) != sorted(keys):
+            fail('explicit batching must still owe every card; got %r' % (batches2,))
+    finally:
+        gh.input_paths = saved_ip
+        gh.OUTPUT_BUDGET = saved_ob
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_large_card_presplit_and_heal_under_one_card_default():
+    """H4054: under the one-card default, presplit and heal routing must be UNCHANGED for a
+    LARGE source. A 45-<ls> citation giant exceeds PRESPLIT_SOLO_CITE_FLOOR=40 (the per-card
+    trigger since H2160, independent of the batch budget), so it still routes to the
+    fragment lane — grouped at the PRESPLIT_GROUP_* budgets (sense cap 18), NOT one fragment
+    per call — while the heal path keeps SELFHEAL_GROUP_BUDGET=12. The companion small card
+    stays a whole-card solo batch."""
+    import gen_opt_harness2 as gh
+    import re as _re
+    d = tempfile.mkdtemp()
+    giant, small = 'g~~h0_zz_pw', 's~~h0_zz_pw'
+    saved_ob = gh.OUTPUT_BUDGET
+    saved_ip = gh.input_paths
+    try:
+        gh.input_paths = _h4054_synth_inputs(gh, d, [(giant, 45), (small, 3)])
+        js, batches, manifest = gh.build('zz', [giant, small], None, 12000, nominal=True,
+                                         grammar_on=False, tm_path=None, return_manifest=True)
+        meta = manifest['meta']
+        if meta.get('output_budget') != 1:
+            fail('default build must run at output_budget 1; got %r'
+                 % (meta.get('output_budget'),))
+        if giant not in (meta.get('presplit_keys') or []):
+            fail('a 45-<ls> giant must presplit under the default (cite floor 40 is the '
+                 'per-card trigger); got presplit=%r batches=%r'
+                 % (manifest.get('presplit_keys'), batches))
+        if any(giant in b for b in batches):
+            fail('a presplit giant must not also ride a whole-card batch; got %r' % (batches,))
+        if not any(small in b for b in batches) or any(len(b) != 1 for b in batches):
+            fail('the small card must stay a whole-card ONE-card batch; got %r' % (batches,))
+        groups = meta.get('selfheal_cards', {}).get(giant, 0)
+        if groups < 3:
+            fail('the giant\'s fragment lane must group at the PRESPLIT_GROUP_* budgets '
+                 '(45 fragments / sense cap 18 => >=3 groups), not one fragment per call; '
+                 'got %d group(s)' % groups)
+        if meta.get('selfheal_group_budget') != 12:
+            fail('heal routing must keep SELFHEAL_GROUP_BUDGET=12; got %r'
+                 % (meta.get('selfheal_group_budget'),))
+        m = _re.search(r'^const FRAGS = (\{.*\})$', js, _re.M)
+        if not m:
+            fail('could not parse the emitted FRAGS const')
+        frags = json.loads(m.group(1))
+        for g in frags.get(giant, []):
+            if len(g) > 18:
+                fail('presplit fragment group exceeds the PRESPLIT_GROUP_SENSE_CAP=18: %d'
+                     % len(g))
+    finally:
+        gh.input_paths = saved_ip
+        gh.OUTPUT_BUDGET = saved_ob
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_nominal_key_echo_tolerance_scoped():
     """H220: nominal / no-PWG windows must tolerate the model echoing the CLEAN SLP1 headword
     (nominal_keymap[stem], e.g. 'CAyA') instead of the mangled sub-card stem
@@ -9454,6 +9589,8 @@ def main():
         test_kill_gate_wired,
         test_no_fallback_single_gets_ceil_kill_budget,
         test_presplit_cite_floor_and_single_ceil,
+        test_default_call_shape_is_one_card_per_call,
+        test_large_card_presplit_and_heal_under_one_card_default,
         test_presplit_cite_floor_is_not_masked_by_batch_budget,
         test_nominal_key_echo_tolerance_scoped,
         test_selfheal_no_fallback_preserves_upstream_reason,

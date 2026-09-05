@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 21-08-2026_
+_Created: 09-07-2026 · Last updated: 05-09-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -166,14 +166,19 @@ tracked-file drift and is wired into `window_selftest.py`
   [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md);
   measurement in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md)
   + [Uprava FINDINGS §284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
-- **Call shape: ONE card per call — and shape is not the lever (H2152, 02-08-2026).** Quota and
-  the per-call wall-clock ceiling (`HARD_TIMEOUT_MS`) bind in **opposite** directions: a quota
+- **Call shape: ONE card per call — and shape is not the lever (H2152, 02-08-2026).** Quota
+  and the per-call wall-clock ceiling (`HARD_TIMEOUT_MS`) bind in **opposite** directions: a quota
   ceiling penalises *many* calls, a wall-clock ceiling penalises *large* ones. Whichever binds
   decides the shape, and as of 02-08 it is wall clock, so the small shape wins — which is also what MG's
-  instrument-everything mandate asks for, so the two are not in conflict. `--output-budget=1`
-  is the existing one-card lane; nothing needs building. **Do not flip to batching to save
-  cost:** batching also makes one unevaluable call destroy per-card attribution for *all* N
-  cards in it. Full reasoning: [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
+  instrument-everything mandate asks for, so the two are not in conflict. **Since H4054
+  (04-09-2026) the shape is structural: the generator default is `OUTPUT_BUDGET = 1`, so a
+  no-flag production preparation already emits one original card per translate call** — the
+  safe shape no longer depends on whoever types the command. Deliberate multi-card packing
+  survives only as an EXPLICIT experiment/calibration lane (`--output-budget=90` reproduces
+  the 2026-07-03 calibrated packing; `calibrate_perf_harness.py` arms pass it explicitly).
+  **Do not flip to batching to save cost:** batching also makes one unevaluable call destroy
+  per-card attribution for *all* N cards in it. Full reasoning:
+  [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
   > **Ceiling status, later the same day: `HARD_TIMEOUT_MS` is now 300 000, and the two lanes
   > diverged.** The heal lane WAS being killed by an outgrown bound — `heal:nakzatra#g2`
   > returned at **176 952 ms**, 3 048 ms inside the old 180 000. But `translate b0` died at
@@ -211,8 +216,10 @@ tracked-file drift and is wired into `window_selftest.py`
   source"; the `_zz_pw` / `_zz_sch` / `_zz_pwkvn` / `_zz_nws00` card-ID suffixes are the live
   per-layer routing (H178 A-4b).
 - The optimized **translate-only** harness is generated per root by
-  [`gen_opt_harness2.py`](gen_opt_harness2.py) and executed headless. It masks and batches
-  raw/portrait inputs, disables translate-agent tools, auto-uses translation-memory
+  [`gen_opt_harness2.py`](gen_opt_harness2.py) and executed headless. It masks the
+  raw/portrait inputs and emits one original card per translate call (structural
+  `--output-budget=1` default, H4054), disables translate-agent tools, auto-uses
+  translation-memory
   sidecars when present, presplits over-budget dense cards into the selfheal lane, and
   returns provenance metadata used by the audit stale guard.
 - Article-site/root dashboard lazy loading is already shipped; do not spend performance time
@@ -375,23 +382,33 @@ the preflight warns to run
 `python src\pilot\translation_memory.py build-frags --lang ru` after a heal run emits
 `frag_prov`; if no matching `wf_output*.json` contains `frag_prov`, the warning says so.
 
-Generate the harness for the root. **Default: the batched + masked v2 harness**
-([`gen_opt_harness2.py`](gen_opt_harness2.py)) — masks each card (pwg_mask), packs
-several per agent call, and restores `{Tn}` to source markup in-JS so the result is a
-canonical `wf_output.json` (audit consumes it unchanged, no extra step). Measured
-**−72 % cost on a full mixed root** (gam: original per-card **\$16.14 → \$4.45**; a clean
-small batch is −90 %). Current defaults: `--output-budget=90`, selfheal on,
+Generate the harness for the root. **Default: the masked v2 harness, ONE CARD PER CALL**
+([`gen_opt_harness2.py`](gen_opt_harness2.py)) — masks each card (pwg_mask), emits one
+original card per translate call (structural default `--output-budget=1`, H4054 04-09-2026:
+the H2152 one-card ruling as code, no flag needed), and restores `{Tn}` to source markup
+in-JS so the result is a canonical `wf_output.json` (audit consumes it unchanged, no extra
+step). Current defaults: `--output-budget=1` (one card per call), selfheal on,
 binary-split on, presplit routing on, and `--tm=auto` (uses
 `translation_memory.<lang>.json` + `translation_memory.frag.<lang>.jsonl` when present;
-`--no-tm` is the explicit opt-out). Refresh TM after every promotion/heal harvest:
+`--no-tm` is the explicit opt-out). Multi-card packing is an EXPLICIT experiment lane only:
+`--output-budget=90` reproduces the 2026-07-03 calibrated packing; legacy byte mode stays
+reachable via `--budget=N` (e.g. FU1 `--budget=6000`) or `--output-budget=off`. (History:
+the famous **−72 %** gam measurement, `\$16.14 → \$4.45`, compared BATCHED vs legacy
+per-card in the batched-default era — it does not describe today's one-card default.)
+Presplit
+and heal routing are independent of the batch budget: `PRESPLIT_SOLO_CITE_FLOOR=40` and
+`SENSE_PRESPLIT_BUDGET=20` are the per-card triggers, `SELFHEAL_GROUP_BUDGET=12` the heal
+grouping — none of them re-derived from the batch budget. Refresh TM after every
+promotion/heal harvest:
 `python src\pilot\translation_memory.py build --lang ru` and, when fragment provenance was
 created, `python src\pilot\translation_memory.py build-frags --lang ru`. See
 [`../../TLONLY_PROTOTYPE.md`](../../TLONLY_PROTOTYPE.md).
 
 ```powershell
-python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, TM auto, output-budget 90)
+python src\pilot\gen_opt_harness2.py sTA            # default (one card per call, masked, TM auto)
 # -> writes the optimized harness and manifest inputs; do not run the JS manually in Max
-# --output-budget=N tunes citation-weighted output packing (default 90).
+# --output-budget=N is the EXPLICIT experiment batching lane (90 = the 2026-07-03 calibrated
+#   packing); the production default needs no flag and is one card per call (H4054).
 # --budget=N without --output-budget keeps legacy byte-mode packing.
 # --no-tm disables automatic card/fragment translation-memory reuse.
 # A batch retries only its still-unresolved cards; a card whose restored <ls>/{#..#}
@@ -529,8 +546,13 @@ Preparation and audit subprocesses do not hold the global state lock. Their pers
 
 **Default to one bounded headless window at a time; treat ordinary 3-wide as an
 upper bound, not a target, and use `max-wide=1` for the bounded paid route.**
-Each generated window may internally fan out to ~8–14 calls, so N concurrent roots
-can still peak at N×~12 Sonnet calls on a single Max account. Slice D launched 18 at once →
+Under the one-card default (H4054) a generated window's call count equals its card
+count (a root that batched to ~8–14 calls now fans to one call per card), so N
+concurrent roots multiply Sonnet calls on a single Max account even faster than the
+historical N×~12 arithmetic. Concurrent WIDTH is still bounded the same way — the
+profile's `ActiveCallClaim` serializes one active call per profile, and the advisory
+`--max-wide` / `--stagger-ms` dispatch hints bound intra-process fan-out. Slice D
+launched 18 at once →
 ~140–250 peak agents → ~80+ `Server is temporarily limiting requests` 429s → 117 transient
 null cards. H317 then showed that even **3 concurrent medium windows** can collapse if the
 session/provider is already unstable (0/38 clean, and the solo retry still saw repeated
