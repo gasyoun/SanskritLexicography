@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T19:15:45Z",
+  "generated_at": "2026-09-05T00:35:14Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": true,
+    "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 838,
+    "youngest_artifact_age_seconds": 192806,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-02T19:01:43Z",
-        "age_seconds": 838,
+        "age_seconds": 192806,
         "size": 26345513
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 517860,
+        "age_seconds": 709828,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 517860,
+        "age_seconds": 709828,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-08-29T11:57:08Z",
-        "age_seconds": 371914,
+        "age_seconds": 563882,
         "size": 3554776
       }
     }
@@ -52,8 +52,8 @@
     "pending": 29,
     "newest_card_at": "2026-08-29T08:49:35Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 4.43,
-    "campaign_days": 66
+    "days_since_last_card": 6.66,
+    "campaign_days": 68
   },
   "yield_quality": {
     "measured": true,
@@ -520,10 +520,10 @@
   "promote_vs_generate": {
     "measured": true,
     "weekly": {
-      "cards_generated": 64,
+      "cards_generated": 0,
       "clean_windows": 0,
-      "windows_total": 1,
-      "clean_window_pct": 0.0,
+      "windows_total": 0,
+      "clean_window_pct": null,
       "promote_events": 0
     },
     "lifetime": {
@@ -703,7 +703,7 @@
     "total_idle_seconds": 3086157,
     "total_idle_hours": 857.27,
     "mean_gap_seconds": 617231.4,
-    "current_idle_seconds": null,
+    "current_idle_seconds": 192807,
     "last_idle_seconds": 1997,
     "last_idle": {
       "from": "2026-08-29T11:23:50Z",
@@ -729,9 +729,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 0,
-        "idle_days": 0.0,
-        "idle_hours": 0.0
+        "idle_seconds": 192807,
+        "idle_days": 2.23,
+        "idle_hours": 53.56
       }
     ],
     "recent_gaps": [
@@ -855,37 +855,10 @@
     }
   },
   "calendar": {
-    "start": "2026-05-06",
-    "end": "2026-09-02",
+    "start": "2026-05-09",
+    "end": "2026-09-05",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-05-06",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-05-07",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-05-08",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-05-09",
         "cards": 0,
@@ -1938,6 +1911,33 @@
         "idle_hours": 0,
         "level": 0,
         "idle": false
+      },
+      {
+        "date": "2026-09-03",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-09-04",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-09-05",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6026,
@@ -1949,6 +1949,21 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.144.147",
+        "date": "2026-09-03",
+        "bullets": []
+      },
+      {
+        "version": "1.144.146",
+        "date": "2026-09-03",
+        "bullets": []
+      },
+      {
+        "version": "1.144.144",
+        "date": "2026-09-03",
+        "bullets": []
+      },
       {
         "version": "1.144.143",
         "date": "2026-09-02",
@@ -2000,21 +2015,6 @@
       },
       {
         "version": "1.144.127",
-        "date": "2026-08-29",
-        "bullets": []
-      },
-      {
-        "version": "1.144.126",
-        "date": "2026-08-29",
-        "bullets": []
-      },
-      {
-        "version": "1.144.125",
-        "date": "2026-08-29",
-        "bullets": []
-      },
-      {
-        "version": "1.144.124",
         "date": "2026-08-29",
         "bullets": []
       }
