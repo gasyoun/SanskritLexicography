@@ -80,16 +80,17 @@ SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in do
 # 448 fragments -> 174 groups (~2.6 frags/group) -> the framework re-cached ~230x ->
 # cache-write was 60% of a $80 / 3-card bill. The fix: group PRESPLIT cards at a budget
 # close to the proven-safe whole-card ceiling instead. A single fragment-lane agent() call
-# can safely emit as much as the batch lane already emits for a whole card (OUTPUT_BUDGET=90
-# citation-units / SENSE_PRESPLIT_BUDGET=20 senses); staying just UNDER both keeps the same
-# retry-cap safety while packing ~6x more fragments per call. Measured on pril10_w1's real
+# can safely emit as much as the calibrated whole-card packing emits for a whole card
+# (--output-budget=90 citation-units, or SENSE_PRESPLIT_BUDGET=20 senses); staying just
+# UNDER both keeps the same retry-cap safety while packing ~6x more fragments per call. Measured on pril10_w1's real
 # fragment weights: 60/18 takes 174 -> 69 groups (kAla 32->11, antara 32->9), i.e. the
 # framework is re-cached ~2.5x fewer times, at zero new output-size risk (each group stays
 # smaller than a batch the batch lane already runs). The heal-of-a-failed-whole-card path
 # keeps SELFHEAL_GROUP_BUDGET; only the presplit-PRIMARY grouping uses these.
 PRESPLIT_GROUP_CITE_BUDGET = 60  # --presplit-group-budget=N: citation-weighted (1+<ls>) cap
-                   #  per presplit-lane agent() call. 60 < OUTPUT_BUDGET 90 -> each call is
-                   #  strictly lighter than a batch the batch lane already handles.
+                   #  per presplit-lane agent() call. 60 < the calibrated 90 whole-card
+                   #  packing (--output-budget=90) -> each call is strictly lighter than a
+                   #  batch the batch lane already handles.
 PRESPLIT_GROUP_SENSE_CAP = 18    # AND at most this many fragments (== senses emitted) per call,
                    #  so a run of many tiny (0-<ls>) fragments can't silently pack >18 senses
                    #  into one call and re-trigger the sense-density failure. 18 < the
@@ -127,18 +128,29 @@ BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole 
                    #  batch — isolates a single poison card without re-billing the cards around
                    #  it. Bottoms out at single cards, which fall through to selfheal as before.
                    #  --no-binary-split restores the flat-retry loop.
-OUTPUT_BUDGET = 90 # DEFAULT 90 citation-weighted units since 2026-07-03 (raised from the
-                   #  untuned S10-era 60 after a calibration A/B on the hA root: 90 clearly
-                   #  won on both cost and quality — 60 agents/4.03M tok/496s vs 60's
-                   #  66 agents/4.68M tok/1082s, both 56/56 ok with 0 null — see
-                   #  KNOB_CALIBRATION_2026-07-03.md): size the main batches by estimated
-                   #  OUTPUT complexity (1 + <ls> count per card — same metric as
-                   #  --selfheal-budget) instead of INPUT bytes (skeleton+portrait). Input
-                   #  bytes don't predict StructuredOutput failure (TOKEN_LEVER_FINDING_2026-06-30:
-                   #  the portrait-slim byte lever was a non-lever); citation density does.
-                   #  Byte mode is still reachable: an EXPLICIT --budget=N (without
-                   #  --output-budget) or --output-budget=off — keeps documented byte-budget
-                   #  invocations (e.g. FU1 --budget=6000) exact.
+OUTPUT_BUDGET = 1  # DEFAULT 1 citation-weighted unit since H4054 (04-09-2026): ONE ORIGINAL
+                   #  CARD PER TRANSLATE CALL, with no flag — the ruled production shape
+                   #  (H2152, 02-08-2026: the per-call wall clock binds, and one unevaluable
+                   #  batch call destroys per-card attribution for ALL N cards in it; the
+                   #  one-card operator policy in RUN_FREQ_MAX.md / AGENTS.md now matches the
+                   #  generated call shape structurally instead of relying on whoever types
+                   #  the command). At budget 1 no second card ever fits a group (any card
+                   #  weighs >= 1), so `_group_by_budget` emits exactly one card per batch;
+                   #  an over-budget giant card simply takes its own group and is
+                   #  never dropped. Presplit routing is INDEPENDENT of this number —
+                   #  PRESPLIT_SOLO_CITE_FLOOR=40 is the per-card citation trigger since
+                   #  H2160 and SENSE_PRESPLIT_BUDGET=20 the sense trigger — so budget 1
+                   #  does NOT force ordinary cards into the heal lane (H255/H823).
+                   #  EXPLICIT batching stays available for calibration experiments:
+                   #  --output-budget=N (e.g. --output-budget=90 reproduces the 2026-07-03
+                   #  calibrated packing — 90 citation-weighted units, raised from the
+                   #  untuned S10-era 60 after the hA-root A/B in
+                   #  KNOB_CALIBRATION_2026-07-03.md — sized by estimated OUTPUT complexity
+                   #  (1 + <ls> per card) instead of INPUT bytes, which don't predict
+                   #  StructuredOutput failure: TOKEN_LEVER_FINDING_2026-06-30), or legacy
+                   #  byte mode via an EXPLICIT --budget=N (without --output-budget) or
+                   #  --output-budget=off — keeps documented byte-budget invocations
+                   #  (e.g. FU1 --budget=6000) exact.
 BATCH_MAX_OUTPUT_TOKENS = None  # opt-in manifest-bound Message Batches ceiling
 SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECOND, orthogonal
                    #  presplit trigger added 2026-07-04 (H155, tyaj~~h0_zz_pw stall). The
@@ -158,8 +170,8 @@ SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECO
                    #  into zero. Threshold 20 sits on a clean shelf: only ~0.2% of cards carry
                    #  >20 senses (survey 2026-07-04), and every known-good whole-card head is far
                    #  below it (sam 6, pari 8). Senses are far heavier per unit than citations
-                   #  (sam translates fine at 34 <ls>), so this budget is intentionally much
-                   #  lower than OUTPUT_BUDGET and independent of byte/citation batching mode.
+#  (sam translates fine at 34 <ls>), so this budget is intentionally independent of
+#  OUTPUT_BUDGET and of byte/citation batching mode.
 PRESPLIT_SOLO_CITE_FLOOR = 40  # --presplit-solo-cite-floor=N. THE citation presplit threshold,
                    #  and since H2160 the only one: a card presplits when (1 + <ls>) exceeds this
                    #  value. It is a per-CARD fail-solo fact — >=40 citation-units is well above
@@ -1377,18 +1389,21 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             presplit.append(k)
             why = []
             if cite_hit:
-                why.append('%d <ls> exceeds output budget %d' % (inputs[k]['ls'], cite_budget))
+                why.append('%d <ls> exceeds the per-card citation presplit floor %d '
+                           '(PRESPLIT_SOLO_CITE_FLOOR, independent of the %s output budget)'
+                           % (inputs[k]['ls'], PRESPLIT_SOLO_CITE_FLOOR, cite_budget))
             if sense_hit:
                 why.append('%d senses/fragments exceed sense budget %d'
                            % (frag_n[k], SENSE_PRESPLIT_BUDGET))
             print('  presplit: %s (%s) -> direct fragment translation' % (k, '; '.join(why)))
     batch_keys = [k for k in keys if k not in presplit and k not in tm_keys and k not in degenerate_keys]
 
-    # --output-budget=N (default 60): size batches by citation-weighted OUTPUT complexity
-    # (1 + <ls> per card) instead of input bytes — bytes don't predict StructuredOutput
-    # failure (a dense card's masked bytes can be small while its sense/citation count is
-    # what blows the retry cap). Byte mode (explicit --budget=N / --output-budget=off)
-    # keeps the original input-byte behavior.
+    # --output-budget=N (default 1 = one original card per call, H4054): size batches by
+    # citation-weighted OUTPUT complexity (1 + <ls> per card) instead of input bytes — bytes
+    # don't predict StructuredOutput failure (a dense card's masked bytes can be small while
+    # its sense/citation count is what blows the retry cap). An EXPLICIT --output-budget=N>1
+    # is the experiment/calibration batching lane; byte mode (explicit --budget=N /
+    # --output-budget=off) keeps the original input-byte behavior.
     #
     # Fallback isolation (2026-07-04, collateral-null fix): a card with NO selfheal fallback
     # (split_plan() < 2 fragments, or a lossy fragment mask — see the `frags` loop above)

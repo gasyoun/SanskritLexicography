@@ -137,6 +137,10 @@ def build(profile_slot, config_dir, outdir, root, key=CANARY_KEY,
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'), root,
            '--nominal', '--no-grammar', '--keys=%s' % key,
            '--synthetic-keys=%s' % key,
+           # H4054: pin the canary's call shape so the golden artifact stays diff-stable
+           # against future generator-default drift (the one-key canary is one card per call
+           # under any default).
+           '--output-budget=1',
            '--profile-slot=%s' % profile_slot,
            '--execution-route=claude-cli-headless',
            '--executor-lane=serial-whole-card',
