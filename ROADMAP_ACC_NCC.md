@@ -1,6 +1,6 @@
 # ROADMAP_ACC_NCC — Catalogue-of-Works asset (Aufrecht × New Catalogus Catalogorum)
 
-_Created: 03-07-2026 · Last updated: 27-08-2026_
+_Created: 03-07-2026 · Last updated: 05-09-2026_
 
 > **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
@@ -86,9 +86,9 @@ consumption pattern.
 - **Deliverable:** `HeadwordLists/works_catalogue/acc.jsonl`, `ncc.jsonl` + row counts logged.
 
 ### P1 — Full-fuzzy matching engine (tiered, scored) ✅ DONE ([PR #205](https://github.com/gasyoun/SanskritLexicography/pull/205), 06-07-2026)
-[`build_works_crosswalk.py`](HeadwordLists/works_catalogue/build_works_crosswalk.py) emits
+[`build_works_crosswalk.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_works_crosswalk.py) emits
 `crosswalk_candidates.jsonl.gz` (**260,416 rows**), each tier + score — see
-[`P1_COUNTS.md`](HeadwordLists/works_catalogue/P1_COUNTS.md) for the measured breakdown.
+[`P1_COUNTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P1_COUNTS.md) for the measured breakdown.
 Figures below are the **26-07-2026 re-run on repaired NCC keys** (H1671); the pre-repair
 column is kept because every earlier document in this repo quotes it:
 
@@ -102,7 +102,7 @@ column is kept because every earlier document in this repo quotes it:
 Tier D shrank by 42,091 rows because it was never mostly a fuzzy tier: it was where the
 corrupted keys landed, one edit away from their own correct spelling. Full row-for-row
 migration, including every one of the 3,711 candidate rows the repair removed:
-[`NCC_KEY_REPAIR_MIGRATION_2026.md`](HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
+[`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
 
 - **Deliverable:** `crosswalk_candidates.jsonl.gz` with per-tier counts (measured, logged — no silent caps).
 
@@ -148,7 +148,7 @@ migration, including every one of the 3,711 candidate rows the repair removed:
   (`parse_ncc.match_key_for` now case-folds + NFC-normalizes before transliteration, pinned by
   [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py)).
   The P0/P1/P2 tables above are the post-repair numbers; the before/after is
-  [`NCC_KEY_REPAIR_MIGRATION_2026.md`](HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
+  [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
 - **Status (26-07-2026, H1671, Opus 5 1M `claude-opus-5[1m]`): re-adjudicated on the repaired
   candidate set — 10,614 Tier C/D rows (was 49,019), 920 approve / 9,694 reject.** The two
   rules that carried the old run (`exact_after_key_repair` 40,757, `fold_after_key_repair`

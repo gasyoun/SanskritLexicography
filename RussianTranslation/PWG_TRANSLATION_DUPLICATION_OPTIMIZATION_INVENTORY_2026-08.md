@@ -1,3 +1,5 @@
+_Created: 02-08-2026 · Last updated: 05-09-2026_
+
 # PWG translation — duplication map & unjustified-code optimization inventory
 
 _Created: 02-08-2026 · Last updated: 03-08-2026 (H2227 OPT-2 markup gates; H2228 OPT-7 last-audit denylist; H2229 OPT-8 kitchen banner; H2226 OPT-4 closed)_

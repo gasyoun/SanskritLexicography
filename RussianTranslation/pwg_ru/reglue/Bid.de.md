@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — Bid
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -510,3 +512,5 @@ Sch. *iṅgudīphala˚ (upala)* zerbrechend, zermalmend
 **sam-sense9)** — *vi*
  5) *bṛddhānāmapi yadbuddhirbālavākyairvibhidyate*
 [BHĀG. P. 10,74,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,74,31)
+
+_Dr. Mārcis Gasūns_

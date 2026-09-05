@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — rakz
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -268,3 +270,5 @@ Re-glue — rakz
 
 **head)** 3. *rakṣ* (собственно *ṛkṣ = riś, riṣ*) повреждать, ранить: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.01) — Davon *rakṣas* .
+
+_Dr. Mārcis Gasūns_

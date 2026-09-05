@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # mitrenina_fdsl
 
 **Source:** `mitrenina_fdsl.pdf`  
@@ -1140,3 +1142,5 @@ References
 Zoerner, Cyrill E. 1995. Coordination: The Syntax of &P. Ph.D. dissertation, University of California, Irvine.
 Zwart, Jan-Wouter. 2002. Issues Relating to a Derivational Theory of Binding. In S. D. Epstein & D. Seely (eds.), Derivation and Explanation in the Minimalist Program, 269-304. OXford: Blackwell.
 Zweig, Eytan. 2008. Dependent Plurals and Plural Meaning. Ph.D. dissertation, New York University.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru — changelog
 
 How the Russian edition of the Petersburg Dictionary (PWG, Böhtlingk–Roth)
@@ -6114,3 +6116,5 @@ boundary, not a constant):
   ([pwg_ru_prompts/](pwg_ru_prompts/)) (translate → 2 QA judges → re-translate →
   corpus check). Headline format rule: PWG `{%…%}` wraps both German glosses
   (translate) and Latin (leave). Model unified to Opus 4.8.
+
+_Dr. Mārcis Gasūns_

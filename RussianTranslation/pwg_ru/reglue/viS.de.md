@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — viS
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -1278,3 +1280,5 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] 1) mit instr. [ṚV. 10,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.01)
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] — 2) [ṚV. 10,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.055.html#rv10.055.02)
+
+_Dr. Mārcis Gasūns_

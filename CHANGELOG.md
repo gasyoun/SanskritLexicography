@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Changelog
 
 All notable changes to SanskritLexicography are documented here.
@@ -119,7 +121,7 @@ not an error.
 ## [1.144.98] - 2026-08-25
 
 ### Fixed
-- **H3500 — the 3 pwg_ru TM defect classes from the H3456 akshara.ru benchmark fixed at generator + store level** (OxAlpha `opencode/x-preview-f-free`, 25-08-2026): 5 byte-identical duplicate rows dropped keep-best (`sense_tag` joins the dedupe cluster key — identical ru under different zz-tags is tagger noise, not duplication); canonical [`pwg_ru_entry_join.assemble_entry`](RussianTranslation/src/pwg_ru_entry_join.py) collapses PWG-homograph duplicate blocks at entry join (B090 `vasin` proof: naive join 207→103 chars) — consumers must never bare-join per-key1; `merge_store_rows` now collapses incoming dups by `(sense_tag, ru)` AND lands from the collapsed set (the old tail re-appended raw promoted rows, the origin of the copies); 13 BHSD advisory rows carry an additive `advisory_enrichment` marker. Store 11,603→11,598 rows, mass −0.006%, scanner gate green on both SL store and [pwg-ru-data](https://github.com/gasyoun/pwg-ru-data/pull/1) TM. Manual residuals (3 `<is>`-genitive rewordings, 53 degenerate-tag copies) documented in the [H3500 report](RussianTranslation/reports/H3500_PWGRU_TM_DEFECT_FIX_25-08-2026.md). Follow-through: H3510 re-stamped LANG_PARITY (#1886).
+- **H3500 — the 3 pwg_ru TM defect classes from the H3456 akshara.ru benchmark fixed at generator + store level** (OxAlpha `opencode/x-preview-f-free`, 25-08-2026): 5 byte-identical duplicate rows dropped keep-best (`sense_tag` joins the dedupe cluster key — identical ru under different zz-tags is tagger noise, not duplication); canonical [`pwg_ru_entry_join.assemble_entry`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ru_entry_join.py) collapses PWG-homograph duplicate blocks at entry join (B090 `vasin` proof: naive join 207→103 chars) — consumers must never bare-join per-key1; `merge_store_rows` now collapses incoming dups by `(sense_tag, ru)` AND lands from the collapsed set (the old tail re-appended raw promoted rows, the origin of the copies); 13 BHSD advisory rows carry an additive `advisory_enrichment` marker. Store 11,603→11,598 rows, mass −0.006%, scanner gate green on both SL store and [pwg-ru-data](https://github.com/gasyoun/pwg-ru-data/pull/1) TM. Manual residuals (3 `<is>`-genitive rewordings, 53 degenerate-tag copies) documented in the [H3500 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3500_PWGRU_TM_DEFECT_FIX_25-08-2026.md). Follow-through: H3510 re-stamped LANG_PARITY (#1886).
 
 ### Changed
 - **H3538 — CONTRADICTIONS wave-1 adjudication: all 12 open rows ruled or explicitly bounded, with stated evidence tiers (Fable 5 `claude-fable-5`, 26-08-2026).** Ruling pass over [CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) under the org evidence ladder, standing rule "missing evidence is INCONCLUSIVE, never PASS". Two ✅ rulings: **§10** — `union_headwords.tsv` 323,426 file lines vs 323,425 headwords are both true; line 1 is the header row, data rows = headword count of record; **§12** — 285,799 vs 285,950 are exact naive sums of the SAME now-2026 Petersburg lists at two pipeline stages (union-ingested vs raw export; 151-key collapse PWG −28 / PWK −35 / SCH −88; vintage/key-mixing hypothesis refuted). §2/§5/§6/§7 provisional picks confirmed 🟡 (canonical-text corrections parked for review sheets, never applied directly); §9 ruled text-wins-over-label — the `SOUTHERN_FILES` tag on Rāmāyaṇa kāṇḍas 6–7 is a mislabel (concordance 99.8 %/95.5 % vs 1.2–3.0 % for true southern kāṇḍas), relabel parked against [issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822); §1/§11/§13/§14 INCONCLUSIVE with the one discriminating probe named each; §4 human-gated (transliteration policy). Verdict table: [docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md). Reusable method residue: [FINDINGS §585/§586](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (paired N/N+1 totals = header-row signature; same-lists-two-pipeline-stages naive-sum class). Handoff count corrected: the open set was 12 rows, not 11.
@@ -1279,7 +1281,7 @@ not an error.
   PWG carries **319** explicit `R. ed. Bomb.` citations across all books, only 14
   of them in book 7 — Böhtlingk names the Bombay edition well outside the book-7
   default. Corrected in
-  [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md)
+  [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md)
   and `pwg_ru/COVERED_TEXTS_RU.md`.
 
 ## [1.89.0] — 2026-07-27
@@ -1295,7 +1297,7 @@ not an error.
   Russian uttarakāṇḍa, and none is in the RussianRamayana pipeline. Full numbers,
   including the 1,781 plain `R.` book-7 citations (127 of them naming a sarga
   >100 that a 100-sarga text cannot carry):
-  [`RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md).
+  [`RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md).
 - **`RussianTranslation/src/ramayana_bombay_inventory.tsv`** — Bombay (1859)
   structural inventory, 658 sargas across all 7 kāṇḍas (kāṇḍa → sarga →
   n_verses → volume/page/folio span + flags), read off the ramayanabom
@@ -1436,7 +1438,7 @@ not an error.
   quoted verbatim from `<w>.verbatim.md`. 0 contradicted, 19 confirmed (14
   L-severity auto-accepted, 5 H/M-severity routed to a blind spot-check), 13
   genuinely need a human. Reduced human ask: 18 of 32 — see
-  [`article-comparison/README.md`](article-comparison/README.md#source-check-pass-h1683-26-07-2026--reduced-human-ask)
+  [`article-comparison/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/README.md#source-check-pass-h1683-26-07-2026--reduced-human-ask)
   for the full table and the correction against H1664's ~8 pre-execution
   estimate. No edit was applied to any `pd-min.ru.md`, no vote was cast.
 
@@ -1902,7 +1904,7 @@ PR: [#769](https://github.com/gasyoun/SanskritLexicography/pull/769) · Handoff:
   H1624 G4 subtype (`base`/`restate`/`pw_correct`/`sch_star`/`derived_sense`/`a2a`/
   `nws_at_sense`/`foreign_fragment`) — no new typology, no re-translation, DE text
   read-only. `--selftest` uses a synthetic fixture (never real store content — N9) and
-  is wired into CI. See [RESULTS_LOG.md](RESULTS_LOG.md) 26-07-2026 for the pilot
+  is wired into CI. See [RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RESULTS_LOG.md) 26-07-2026 for the pilot
   subtype counts (7 REGLUE_SPEC roots, 1077 rows). Partial N14 close — see
   [`pwg_ru/REGLUE_SPEC.md`](pwg_ru/REGLUE_SPEC.md) Sec.7.
 
@@ -1994,7 +1996,7 @@ PR: [#769](https://github.com/gasyoun/SanskritLexicography/pull/769) · Handoff:
   [pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md)
   (+ metadoc): field inventory after H1624 G1–G6 — **derived / voted / undecided**
   with confidence, design fence, G5 (H1306) and G7 (Palsule) blockers, form_notes
-  and form_labels. Cross-linked from [pwg_ru.md](RussianTranslation/pwg_ru.md) §8.0 / §8.4 and deep
+  and form_labels. Cross-linked from [pwg_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) §8.0 / §8.4 and deep
   manual §2c.
 - Does **not** invent style or abbrev policy; does not rewrite the store.
 
@@ -2723,7 +2725,7 @@ still hold; 49 stale hashes re-verified and updated. Selftests: `window_selftest
 - Each fix carries a regression test in `tests/test_saru_gloss_pipeline.py` (wired into the CI
   RussianTranslation-gates job); `vidyut`/`indic_transliteration` are now imported lazily so
   the pure helpers are testable without the heavy deps. Before/after in
-  [RESULTS_LOG.md](RESULTS_LOG.md); the pipeline `glossary/README.md` is now a build runbook
+  [RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RESULTS_LOG.md); the pipeline `glossary/README.md` is now a build runbook
   pointing at the canonical [gasyoun/SanskritRussian](https://github.com/gasyoun/SanskritRussian)
   doc. Published data is **not** regenerated (D8 fences republish behind a human GO).
 
@@ -4342,7 +4344,7 @@ Section backfilled 11-07-2026 from the
   śāstric formula equivalents, synonym-string cardinality, comma/semicolon sense-grouping,
   manner/position forcing, plus a soft judge check. `node --check` clean.
 - **Runbook + docs updated:** `RUN_FREQ_MAX.md` window loop (SECTION warning + fidelity-gate
-  step); [`MANUALS_FIVE_DEEP_DIVE.md`](RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md) closing
+  step); [`MANUALS_FIVE_DEEP_DIVE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md) closing
   section rewritten as a per-finding pipeline-status table (live / ported / deferred);
   `pwg_ru.md` gains a theoretical-basis pointer to the literature docs.
 
@@ -4350,19 +4352,19 @@ Section backfilled 11-07-2026 from the
 
 ### Added — literature shelf mined for the Sanskrit→Russian dictionary
 - **Per-manual audit + theory deep-dive for pwg_ru.** Three new docs under
-  `RussianTranslation/`: [`LITERATURE_FOR_PWG_RU.md`](RussianTranslation/LITERATURE_FOR_PWG_RU.md)
+  `RussianTranslation/`: [`LITERATURE_FOR_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LITERATURE_FOR_PWG_RU.md)
   (three-pass full-text harvest of the whole `literature/md/` shelf, distilled by pipeline
-  insertion point), [`MANUALS_FOR_PWG_RU.md`](RussianTranslation/MANUALS_FOR_PWG_RU.md) (all
+  insertion point), [`MANUALS_FOR_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FOR_PWG_RU.md) (all
   **37** `Lexicography-Manuals/` walked one at a time — 19 drive theory, 2 marginal, 15 serve
   other repos, 1 OCR-blocked), and
-  [`MANUALS_FIVE_DEEP_DIVE.md`](RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md) (detailed,
+  [`MANUALS_FIVE_DEEP_DIVE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md) (detailed,
   text-grounded theory of the five load-bearing manuals — Apresjan, Riemer, Hartmann & James,
   Gonda–Vogel, Klosa — for making a Sanskrit–Russian dictionary).
 - **Harvest folded into the live pipeline:** the pwg_ru translator and QA-judge prompts plus a
   new hand-curated glossary `RussianTranslation/glossaries/de_ru_translation_aids.md` (samāsa
   types, case-absolute constructions, śāstric formulas, the *yad…tad* correlative map, the
   19th-c. German orthography decoder).
-- **Literature index refreshed.** [`literature/md/INDEX.md`](literature/md/INDEX.md) gains the
+- **Literature index refreshed.** [`literature/md/INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/INDEX.md) gains the
   **⚠ blocked** convention (5 files un-mineable until re-OCR'd / re-extracted), RuTrans tags on
   Renou/Apresjan/Tubb, and ✓-fixed notes on the two re-sliced NLP-proceedings bundles
   (Adapting-NLP, Performance-POS). README documentation-map updated to point at the new docs.
@@ -4380,7 +4382,7 @@ Section backfilled 11-07-2026 from the
 ## [0.0.26] - 2026-06-26
 
 ### Added — accent disagreements rendered for adjudication (item C)
-- [`accent_review.py`](HeadwordLists/accent_review.py) → [`Catalan-Pujol/accent_disagreements.tsv`](HeadwordLists/Catalan-Pujol/accent_disagreements.tsv):
+- [`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py) → [`Catalan-Pujol/accent_disagreements.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/accent_disagreements.tsv):
   the **63** Pujol-vs-Cologne accent-position disagreements (32 vs GRA, 31 vs MW), each
   rendered as **accented IAST on both sides** (`bhagá` vs `bhága`) with the vowel ordinal and
   a `recommend` column (Cologne RV/MW canonical). The print list (the union) already uses the
@@ -4392,13 +4394,13 @@ Section backfilled 11-07-2026 from the
 ## [0.0.25] - 2026-06-26
 
 ### Changed — typo queue extended to all 122; coverage additions cross-tagged
-- **A — all 122 typos.** [`assemble_typo_queue.py`](HeadwordLists/assemble_typo_queue.py) now
-  auto-discovers every dict's FILE-FIRST queue → [`A_TYPO_QUEUE.md`](HeadwordLists/A_TYPO_QUEUE.md)
+- **A — all 122 typos.** [`assemble_typo_queue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/assemble_typo_queue.py) now
+  auto-discovers every dict's FILE-FIRST queue → [`A_TYPO_QUEUE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/A_TYPO_QUEUE.md)
   is the full **122 across 11 dicts** (spine MW 4 + PWG 12 first, then SHS 37, YAT 27, ACC 22,
   MCI 10, SKD 3, WIL 3, PW 2, GST 1, VCP 1), each with IAST + error type + entry-body evidence.
-- **B — cross-tagged.** [`crosstag_additions.py`](HeadwordLists/crosstag_additions.py) tags the 416
+- **B — cross-tagged.** [`crosstag_additions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/crosstag_additions.py) tags the 416
   priority additions with Catalan/Huet external attestation
-  ([`union/coverage_additions_crosstagged.tsv`](HeadwordLists/union/coverage_additions_crosstagged.tsv)).
+  ([`union/coverage_additions_crosstagged.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/coverage_additions_crosstagged.tsv)).
   **Only 25/416 (6 %) are externally corroborated, and ~8 are genuine real words** (`karkandhū`
   jujube, `maṇikā` jar, `cittamātra`, `nistaraṅga`…); the rest are verb roots / Pāṇinian affixes
   (`ghañ`, `ktvā`) Catalan/Huet also headword. **Conclusion: CDSL coverage of attested vocabulary
@@ -4406,10 +4408,10 @@ Section backfilled 11-07-2026 from the
 ## [0.0.24] - 2026-06-26
 
 ### Added — MW+PWG typo queue assembled (item A)
-- [`assemble_typo_queue.py`](HeadwordLists/assemble_typo_queue.py) consolidates the print
+- [`assemble_typo_queue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/assemble_typo_queue.py) consolidates the print
   spine's body-confirmed FILE-FIRST typos from
   [SanskritSpellCheck](https://github.com/gasyoun/SanskritSpellCheck) into
-  [`A_TYPO_QUEUE.md`](HeadwordLists/A_TYPO_QUEUE.md): **16 (MW 4 + PWG 12)**, each with SLP1 +
+  [`A_TYPO_QUEUE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/A_TYPO_QUEUE.md): **16 (MW 4 + PWG 12)**, each with SLP1 +
   IAST, an **error-type** label (n→ṇ, vowel-length, sibilant, b↔v, aspirate) and the
   dictionary's **own entry-body evidence**. PWG's are mostly **b↔v** (Fraktur-OCR). Verify on
   scan → flip `n`→`y` → file to csl-corrections (workflow stays in SanskritSpellCheck). The
@@ -4417,10 +4419,10 @@ Section backfilled 11-07-2026 from the
 ## [0.0.23] - 2026-06-26
 
 ### Added — coverage additions ranked by DCS band (item B)
-- [`coverage_additions.py`](HeadwordLists/coverage_additions.py) → DCS-corpus lemmas absent
+- [`coverage_additions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/coverage_additions.py) → DCS-corpus lemmas absent
   from all 15 CDSL dicts (the union, with folded feminines added back to the baseline),
-  ranked by frequency band: [`COVERAGE_ADDITIONS.md`](HeadwordLists/COVERAGE_ADDITIONS.md) +
-  [`union/coverage_additions.tsv`](HeadwordLists/union/coverage_additions.tsv).
+  ranked by frequency band: [`COVERAGE_ADDITIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) +
+  [`union/coverage_additions.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/coverage_additions.tsv).
 - **21,759 absent**, but the high-frequency end is **lemmatisation artifacts** (causative `-ay`
   stems, prefixed/desiderative roots, bīja, indeclinables — flagged by a `kind` column), not
   real gaps. Genuine **nominal** additions concentrate low-band; the **actionable priority =
@@ -4429,9 +4431,9 @@ Section backfilled 11-07-2026 from the
 ## [0.0.22] - 2026-06-26
 
 ### Added — gloss pre-screen of the low-confidence fold candidates
-- [`screen_candidates.py`](HeadwordLists/screen_candidates.py) pulls the short **MW gloss** for
+- [`screen_candidates.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/screen_candidates.py) pulls the short **MW gloss** for
   both forms of each of the 426 low-confidence `-ā/-ī` fold candidates →
-  [`union/low_candidates_screened.tsv`](HeadwordLists/union/low_candidates_screened.tsv). Result:
+  [`union/low_candidates_screened.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/low_candidates_screened.tsv). Result:
   **419 likely-distinct** (reject at a glance — `ārā` "awl" vs `āra` "brass"; `īṣā` "carriage-pole"
   vs `īṣa` "the month Āśvina") and **7 MAYBE-related** to eyeball (`tālikā`/`tālika` same gloss;
   `adharmā`/`adharma`). Cuts the editor's low-set review from 426 to ~7; the gloss is the first MW
@@ -4443,7 +4445,7 @@ Section backfilled 11-07-2026 from the
   **all 15 dicts** with a source (adds the 7 key2-only dicts BHS/BUR/CAE/CCS/INM/MD/SCH to
   the original 8) → **323,425** headwords (was 295,298), 180,989 in ≥2 dicts.
 - **Fold candidates ranked for review.** The `-ā`/`-ī` candidates in
-  [`union/fold_candidates.tsv`](HeadwordLists/union/fold_candidates.tsv) now carry a
+  [`union/fold_candidates.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/fold_candidates.tsv) now carry a
   `confidence` (+ `n_shared_dicts`, `masc_gender`): **3,569 high** (the masculine base is
   itself `mfn`, so the `-ā/-ī` genuinely is its feminine — `parā←para`) vs **426 low** (masc
   `m`-only → likely a distinct lexeme like `āśā`≠`āśa`). Review high first. 237 `-inī`
@@ -4451,15 +4453,15 @@ Section backfilled 11-07-2026 from the
 ## [0.0.20] - 2026-06-26
 
 ### Added — cross-dict UNION headword index (scope E) with feminine fold (F)
-- **Scope decided = union**, feminines folded under the masculine. [`build_union.py`](HeadwordLists/build_union.py)
+- **Scope decided = union**, feminines folded under the masculine. [`build_union.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py)
   merges the 8 key1 dicts (AP GRA MW PWG PWK SKD VCP VEI) from `now-2026/` into a single
   **295,298-headword** index with per-headword **provenance** (which dicts attest it) and
   **gender** aggregated from each dict's `<lex>` (parsed per multi-line `<L>` record).
-  → [`union/UNION.md`](HeadwordLists/union/UNION.md), `union/union_headwords.tsv`
+  → [`union/UNION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md), `union/union_headwords.tsv`
   (`slp1, iast, n_dicts, dicts, gender, fem_fold`).
 - **Feminine fold, gender-driven and split for safety:** only the unambiguous **`-inī`→`-in`**
   (238, gender-confirmed) is auto-folded — the masculine base gets an `mf(ī)` marker; the
-  **3,993 `-ā`/`-ī`** cases go to [`union/fold_candidates.tsv`](HeadwordLists/union/fold_candidates.tsv)
+  **3,993 `-ā`/`-ī`** cases go to [`union/fold_candidates.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/fold_candidates.tsv)
   for editor review, because a feminine `-ā` noun often shares a stem with an unrelated
   masculine `-a` (e.g. `āśā` "hope" ≠ feminine of `āśa` "corner"). Auto-fold audit in
   `union/folded_feminines.tsv`. Covers the 8 key1 dicts; key2-only dicts mergeable next.
@@ -4467,11 +4469,11 @@ Section backfilled 11-07-2026 from the
 
 ### Added — item-F candidate lists (`alternate_headwords.py` + `f_candidates/`)
 - Generated the editor worklists for PRINT_READINESS item **F**:
-  [`alternate_headwords.py`](HeadwordLists/alternate_headwords.py) emits, from the 2026
+  [`alternate_headwords.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/alternate_headwords.py) emits, from the 2026
   key1 sets, feminine↔masculine pairs, orphan feminines, variant-spelling pairs
   (b~v / ś~ṣ / geminate), and multi-`<k2>` alternate groups (SLP1 + IAST) into
   [`f_candidates/`](HeadwordLists/f_candidates/), summarised in
-  [`ALTERNATE_HEADWORDS.md`](HeadwordLists/ALTERNATE_HEADWORDS.md). **MW: 5,036
+  [`ALTERNATE_HEADWORDS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/ALTERNATE_HEADWORDS.md). **MW: 5,036
   feminine↔masculine pairs, 22,298 orphan feminines, 1,217 variant pairs, 0 multi-`<k2>`**
   (alternate comma-lists negligible). SKD generated as a union-case sample. These are
   candidates to filter (morphological-shape pairing includes semantic non-pairs); the
@@ -4480,7 +4482,7 @@ Section backfilled 11-07-2026 from the
 
 ### Changed — PRINT_READINESS: add alternate/feminine headword gate (F)
 - New checklist item **F — alternate & feminine headword policy** in
-  [`PRINT_READINESS.md`](HeadwordLists/PRINT_READINESS.md). MW (2026) is **~14 % ā/ī-stems**
+  [`PRINT_READINESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/PRINT_READINESS.md). MW (2026) is **~14 % ā/ī-stems**
   (18,186 `-ā` + 9,148 `-ī`) and CDSL headwords feminines *inconsistently* — only 24 % of
   `-ā` feminines have a separate masculine base, 30 % of `-inī` have the `-in`. Pujol/INRIA
   list feminines separately; the corpus attests feminines CDSL omits. Plus variant/alternate
@@ -4498,7 +4500,7 @@ Section backfilled 11-07-2026 from the
   capture at the `¦` separator, strip `{#..#}`, split comma-lists → clean **print/citation
   form** keeping `/` accent, `-`/`—`, `(...)`, `*`, `˚` (e.g. `aMSa—karaRa`; SKD recovered
   40,817 vs the 64 MB blob). 23 now-2026 files (key1+key2; PD has no source).
-- **[`HeadwordLists/PRINT_READINESS.md`](HeadwordLists/PRINT_READINESS.md)** — consolidates
+- **[`HeadwordLists/PRINT_READINESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/PRINT_READINESS.md)** — consolidates
   the A–E checks for publishing a printed headword list, with per-dictionary verdicts.
   **MW/PWG are the print-ready spine** (stable, +0.1 %/−0.0 % since 2014); the gates are
   human/editorial — **A** clear SanskritSpellCheck's 122 fileable typos (the "don't print
@@ -4997,3 +4999,5 @@ not previously recorded here.)_
 - 2026-05-29 ai-wip: add .github/dependabot.yml for GitHub Actions auto-updates
 - 2026-05-29 ai-wip: add CODE_OF_CONDUCT.md (Contributor Covenant 2.1)
 - 2026-05-29 ai-wip: add CI workflow (generic-text)
+
+_Dr. Mārcis Gasūns_

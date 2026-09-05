@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Delbruck Altindische_Syntax 1888
 
 **Source:** `Delbruck Altindische_Syntax 1888.pdf`  
@@ -20275,3 +20277,5 @@ _
 This preservation photocopy was made at BookLab . Inc. in compliance with copyright law. The
 paper meets the requirements of ANSI/NISO 239.48-1992 ( Permanence of Paper)
 Austin 1995
+
+_Dr. Mārcis Gasūns_

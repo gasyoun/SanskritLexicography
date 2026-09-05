@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — jIv
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -213,3 +215,5 @@ Re-glue — jIv
 **T51 block)** — *sam* caus.
 [Spr. 4992.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?4992)
 [BHĀG. P. 10,15,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,15,50)
+
+_Dr. Mārcis Gasūns_

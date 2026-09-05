@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — Cid
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -511,3 +513,5 @@ Z. 2 lies [M.] st. [MBH.]
 **1)** 2. *chid* _f._ nom. act. das Zerschneiden, Zunichtemachen: *bhava˚*
 [HEM.]
 [YOGAŚ. 3,141.]
+
+_Dr. Mārcis Gasūns_

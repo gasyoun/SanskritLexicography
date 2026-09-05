@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Print-bridge follow-ups — assessment (both are NOT quick fixes)
 
 After the print bridge (PR #18) two follow-ups were flagged. On investigation, neither is a
@@ -48,3 +50,5 @@ work starts, not before.
 Both follow-ups are real but neither is a follow-up-sized change: one is a coordination boundary
 (autonomous account owns Slice-C requeue), the other is blocked on a data-model layer that the
 edition/renderer stage will build anyway and is inert until then.
+
+_Dr. Mārcis Gasūns_

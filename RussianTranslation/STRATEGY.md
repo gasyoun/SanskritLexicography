@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru — strategy & operating notes (2026-06-15)
 
 ## 0. Mandate: this becomes a PRINTED dictionary — quality > quantity
@@ -86,3 +88,5 @@ corpus senses and cross-card consistency — they are provisional, not final.
 See also [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md),
 [PIPELINE_ARCHITECTURE.md](PIPELINE_ARCHITECTURE.md),
 [SAMUDRA_INTEGRATION.md](SAMUDRA_INTEGRATION.md), [PILOT_RESULTS.md](PILOT_RESULTS.md).
+
+_Dr. Mārcis Gasūns_

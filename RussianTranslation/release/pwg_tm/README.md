@@ -1,3 +1,5 @@
+_Created: 14-08-2026 · Last updated: 05-09-2026_
+
 # PWG TM canonical v1 — four-format FAIR pack (H2685)
 
 _Created: 14-08-2026 · Last updated: 14-08-2026 (Zenodo concept 10.5281/zenodo.21932900)_

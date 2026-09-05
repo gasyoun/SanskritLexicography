@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — Sam
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -590,3 +592,5 @@ u. s. w. [NAIGH. 3,6.](https://sanskrit-lexicon-scans.github.io/nirukta/app2?3,6
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] **1.** *śam* mit *ni* VI. erlöschen [DHARMAŚARM. 13,41].
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] 1. śam mit ni erlöschen, [Dharmaśarm. 13,41.] {part=,seq=25149,type=,n=2}
+
+_Dr. Mārcis Gasūns_

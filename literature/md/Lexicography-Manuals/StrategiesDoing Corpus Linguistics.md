@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # StrategiesDoing Corpus Linguistics_ Second edition -- Unknown -- 2024 -- Routledge -- 6e65113c86eb019d59ccde9e75477027 -- Anna’s Archive
 
 **Source:** `StrategiesDoing Corpus Linguistics_ Second edition -- Unknown -- 2024 -- Routledge -- 6e65113c86eb019d59ccde9e75477027 -- Anna’s Archive.epub`  
@@ -3855,3 +3857,5 @@ The "way forward" that we have outlined here is most reflective of our own inter
 [^15]: must be careful as to how we select them in the corpus, though -- and the best way to do so is to get a set of randomly selected relative clause sentences and continue our classification based on that.
 
 [^16]:
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Register, not just period: Renou's subsections as an orthogonal axis for evidence-graded Sanskrit lexicography — and the inscriptional vocabulary that corpus methods miss
 
 **A34 · research note / short communication · draft 2026-06-26 · target: Lexikos / IJL / eLex**
@@ -263,3 +265,5 @@ extends.
   corpus-absent cell is a stale 63.0 % hand-copy from an earlier DCS-index generation;
   the committed glossary gives 68.3 % — see the verification memo). Re-check §3.5's
   bauddha 12.4 % from the same regenerated table.
+
+_Dr. Mārcis Gasūns_

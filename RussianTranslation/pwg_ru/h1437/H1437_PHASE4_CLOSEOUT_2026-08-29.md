@@ -1,3 +1,5 @@
+_Created: 29-08-2026 · Last updated: 05-09-2026_
+
 # H1437 — Phase 4 closeout evidence (offline battery on master tip)
 
 _Created: 29-08-2026_

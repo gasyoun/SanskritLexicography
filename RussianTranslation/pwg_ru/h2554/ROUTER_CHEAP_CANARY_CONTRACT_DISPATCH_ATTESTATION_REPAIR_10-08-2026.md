@@ -1,3 +1,5 @@
+_Created: 11-08-2026 · Last updated: 05-09-2026_
+
 # router.cheap canary contract + exact-dispatch attestation repair
 
 _Created: 10-08-2026_

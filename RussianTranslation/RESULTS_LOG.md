@@ -3483,3 +3483,5 @@ ceiling, different driving config dir — that separates self-contention from ac
 in a single call, which no amount of re-probing from this seat can.
 
 Model: Opus 5 (`claude-opus-5`).
+
+_Dr. Mārcis Gasūns_

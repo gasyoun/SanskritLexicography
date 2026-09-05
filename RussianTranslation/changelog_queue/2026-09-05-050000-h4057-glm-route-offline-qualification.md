@@ -1,3 +1,5 @@
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+
 - H4057: **the GLM 5.3 Flash route is offline-qualified behind the existing paid-call kernel —
   qualification can no longer be blocked on an absent adapter, and unknown cost can no longer
   reach dispatch.** New
@@ -29,3 +31,5 @@
   authorized headless route. Proven by
   [`tests/test_pwg_pipeline_glm_route.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_pwg_pipeline_glm_route.py)
   (13 tests); `pytest -k pwg_pipeline` 142 passed.
+
+_Dr. Mārcis Gasūns_

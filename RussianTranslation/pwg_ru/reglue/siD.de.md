@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — siD
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -640,3 +642,5 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 **sam-sidh-2)** — 2) sich ergeben, seine Erklärung finden: *sarvaṃ vedātprasidhyati*
 [M. 12,97. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,97) *tathaikavṛttitā tayoḥ svaraśca me prasidhyati*
 Kār. zu [P. 3,1,122.](https://ashtadhyayi.com/sutraani/3/1/122) — partic. *prasiddha*
+
+_Dr. Mārcis Gasūns_

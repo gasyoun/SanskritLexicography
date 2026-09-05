@@ -1,10 +1,12 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Catalan → CDSL-uncovered: `prefixed-root`  (107 headwords)
 
 > Headwords from the *Diccionari Sànscrit–Català* not found as a `<k1>` key in any of the 43 CDSL dictionaries (`csl-orig/v02`), accent- and compound-insensitive.
 >
 > **Category:** Preverb + root combinations (`abhi-saṃ-ā-√gam`) that CDSL keeps only inside MW entries, never as separate `<k1>` keys.
 
-See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
+See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
 
 | # | Catalan headword | normalised SLP1 key |
 |---:|---|---|
@@ -115,3 +117,5 @@ See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-
 | 105 | `vi-√vrṣ` | `vivrz` |
 | 106 | `vy-ā-√mil` | `vyAmil` |
 | 107 | `vy-ati-√tṛ` | `vyatitf` |
+
+_Dr. Mārcis Gasūns_

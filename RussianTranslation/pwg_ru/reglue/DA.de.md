@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — DA
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -1371,3 +1373,5 @@ Schol. zu [P. 8,4,17.](https://ashtadhyayi.com/sutraani/8/4/17) [1,1,20.](https:
 ## Homonym h11
 
 **+)** [neue Bedeutung, in PWG ohne Entsprechung — цель не указана] 4. *dhā* (Nachträge) vgl. auch *sarva˚* .
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — viS
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -1274,3 +1276,5 @@ GORR. [21,23](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,21,23)). 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 1) с instr. [ṚV. 10,56,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.056.html#rv10.056.01)
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2) [ṚV. 10,55,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.055.html#rv10.055.02)
+
+_Dr. Mārcis Gasūns_

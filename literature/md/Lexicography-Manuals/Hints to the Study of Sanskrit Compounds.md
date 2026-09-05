@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Hints to the Study of Sanskrit Compounds -- Nārāyaṇa Govinda Rātānjanakar -- Second Edition, 1896 -- Tukārām Jāvaji, Proprieter of Jāvaji Dādāji's -- 0c6f7a60889943253aa1e761af99b814 -- Anna’s Archive
 
 **Source:** `Hints to the Study of Sanskrit Compounds -- Nārāyaṇa Govinda Rātānjanakar -- Second Edition, 1896 -- Tukārām Jāvaji, Proprieter of Jāvaji Dādāji's -- 0c6f7a60889943253aa1e761af99b814 -- Anna’s Archive.pdf`  
@@ -36,3 +38,5 @@ About Google Book Search
 Google’s mission is to organize the world’s information and to make it universally accessible and useful. Google Book Search helps readers
 discover the world’s books while helping authors and publishers reach new audiences. You can search through the full text of this book on the web
 at http://books.google.com/
+
+_Dr. Mārcis Gasūns_

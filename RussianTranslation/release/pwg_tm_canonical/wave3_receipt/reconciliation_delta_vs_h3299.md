@@ -1,3 +1,5 @@
+_Created: 24-08-2026 · Last updated: 05-09-2026_
+
 # Wave-3 regeneration reconciliation vs the H3299 regen
 
 _Created: 24-08-2026 · Session: H3434 execution (OxAlpha, opencode/x-preview-f-free)_
@@ -44,3 +46,5 @@ The full promoted/quarantine dumps stay out of git (regenerable, `$0`) in the se
 out-dir. This directory carries the tracked evidence: sample + meta (seed 3434), blind
 packet, adjudication, quality report, census, verdict. The dumps are deterministically
 regenerable from the tracked queue+manifest with the repaired policy.
+
+_Dr. Mārcis Gasūns_

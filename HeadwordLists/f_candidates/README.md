@@ -1,8 +1,10 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # f_candidates/ — item-F alternate & feminine headword worklists
 
-Machine-generated *candidate* lists for [PRINT_READINESS.md](../PRINT_READINESS.md) item
-**F**, summarised in [ALTERNATE_HEADWORDS.md](../ALTERNATE_HEADWORDS.md). Produced by
-[`../alternate_headwords.py`](../alternate_headwords.py) from the 2026 key1 sets in
+Machine-generated *candidate* lists for [PRINT_READINESS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/PRINT_READINESS.md) item
+**F**, summarised in [ALTERNATE_HEADWORDS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/ALTERNATE_HEADWORDS.md). Produced by
+[`../alternate_headwords.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/alternate_headwords.py) from the 2026 key1 sets in
 [`../now-2026/`](../now-2026/). Per dictionary `<D>` (currently MW, SKD):
 
 | file | columns | what it is |
@@ -16,3 +18,5 @@ Machine-generated *candidate* lists for [PRINT_READINESS.md](../PRINT_READINESS.
 morphological-shape based, so it includes semantic non-pairs (e.g. `ā`↔`a`) and
 coincidental homographs the editor must drop. The fold/keep/merge policy is human.
 Regenerate for any dict: `python alternate_headwords.py <DICT>`.
+
+_Dr. Mārcis Gasūns_

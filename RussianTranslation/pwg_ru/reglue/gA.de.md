@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — gA
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -760,3 +762,5 @@ Schol.
 
 **prefix_vi.umfallen)** — *vipari* umfallen, umstürzen: *kathaṃ svayaṃ vai śakaṭaṃ viparyagāt*
 [BHĀG. P. 10,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,8)
+
+_Dr. Mārcis Gasūns_

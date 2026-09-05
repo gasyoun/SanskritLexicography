@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/review/h178_da_sheet.html
 1) Direct Assessment надо давать под, а не над. Не шкалой, а чтобы можно было кликнуть от 1 до 5, где 5 хорошо, а 3 - порог для одобрения
 2) Перегенерировать все остальные голосовальные листы в C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\review, после того, как будут отработаны голоса из первого листа. Это большая работа отработать их, но голосовать в других листах до этого нет смысла.
@@ -7,3 +9,5 @@ file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/r
 6) Окно для комментариев сделать на 2 строчки выше, чтобы больше текста влезало
 7) Русские слова в перевод выделить цветом, чтобы сразу было видно, на что именно смотреть
 8) Нужен стандарт для листов голосования. Где он? Как потом понять, что decisions.JSON относится именно к h178_da_sheet.html - и мне и агенту?
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # siD sense-duplicate investigation — verdict: faithful, not over-production
 
 **Date:** 2026-06-30 · **Trigger:** Slice D `siD` failed the `sense_dupes` gate (the lone
@@ -61,3 +63,5 @@ prefix-participle numbering spaces), parallel to the existing secondary-conjugat
 (`section_of()`), but that needs reliable level markers in the rendered tags or the source
 markup (`<lex>f.</lex>`, `<lex>n.</lex>`, prefix `{#pra#}` headers). Until then, `_dupe_exempt`
 is the honest, auditable escape hatch for verified cases.
+
+_Dr. Mārcis Gasūns_

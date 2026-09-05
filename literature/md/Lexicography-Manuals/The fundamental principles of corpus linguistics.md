@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The fundamental principles of corpus linguistics -- Tony McEnery, Vaclav Brezina -- Cambridge University Press, Cambridge, United Kingdom, 2022 -- isbn13 9781009428279 -- 5b7492c4075a5e9ac41ce6ccdb8bac10 -- Anna’s A
 
 **Source:** `The fundamental principles of corpus linguistics -- Tony McEnery, Vaclav Brezina -- Cambridge University Press, Cambridge, United Kingdom, 2022 -- isbn13 9781009428279 -- 5b7492c4075a5e9ac41ce6ccdb8bac10 -- Anna’s A.pdf`  
@@ -16529,3 +16531,5 @@ https://doi.org/10.1017/9781107110625.014 Published online by Cambridge Universi
 <!-- page 333 -->
 
 https://doi.org/10.1017/9781107110625.014 Published online by Cambridge University Press
+
+_Dr. Mārcis Gasūns_

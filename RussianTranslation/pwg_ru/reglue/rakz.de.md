@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — rakz
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -268,3 +270,5 @@ schützen: *ko 'smānatra vane rakṣayiṣyati*
 
 **head)** 3. *rakṣ* (eigentlich *ṛkṣ = riś, riṣ*) beschädigen, verletzen: *mā no rakṣīrdakṣiṇāṃ nīyamānām*
 [AV. 5,7,1.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.007.html#av05.007.01) — Davon *rakṣas* .
+
+_Dr. Mārcis Gasūns_

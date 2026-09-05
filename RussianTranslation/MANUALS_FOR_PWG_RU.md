@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Lexicography-Manuals, one at a time — what each gives `pwg_ru` before the bulk run
 
 A per-manual companion to [`LITERATURE_FOR_PWG_RU.md`](LITERATURE_FOR_PWG_RU.md).
@@ -322,3 +324,5 @@ Ferri preservation rules) — exactly the queue already in `.ai_state.md`.
 [`../literature/md/INDEX.md`](../literature/md/INDEX.md) → Lexicography-Manuals/ (37 files).*
 </content>
 </invoke>
+
+_Dr. Mārcis Gasūns_

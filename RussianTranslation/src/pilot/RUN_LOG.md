@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG → Russian — Max run log
 
 One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
@@ -957,3 +959,5 @@ Dropping to ≤3-wide took non-null from ~10 % to ~78 % — the *generation* rec
 **Documented residual (7, not requeued this session — first attempt, not yet at the H442 requeue-once ceiling):** `arvant`/`asaMskfta`/`darvI`/`glāna`/`hasita`/`jawāyus`~~pw (fidelity-reject, the known span-drop class — a `--max-wide` requeue will NOT fix these per the H834/H858 diagnosis, they need the unshipped Tier-1 german-field source-anchoring fix) + `bAhlika`~~pw (kill-timeout, API-hard, presplit-cohort precedent). **Not requeued** — per the drain-loop's "one permitted `--no-tm` requeue" rule, a requeue is for *transient* nulls; 6 of these 7 are the *deterministic* fidelity-reject class (requeuing would reproduce the identical failure), and the 7th (`bAhlika`) is the well-documented CEIL-hard presplit case. Next session: either wait for the Tier-1 fidelity fix, or continue the queue (`no_pwg_scale_plan.py --window-size 20 --limit-windows 1`, any `--start-index` not colliding on disk — it is a label only) past this stretch.
 
 ---
+
+_Dr. Mārcis Gasūns_

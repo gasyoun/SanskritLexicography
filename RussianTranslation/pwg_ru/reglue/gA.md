@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 Re-glue — gA
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -759,3 +761,5 @@ Re-glue — gA
 
 **prefix_vi.umfallen)** — *vipari* падать, опрокидываться: *kathaṃ svayaṃ vai śakaṭaṃ viparyagāt*
 [BHĀG. P. 10,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,8)
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 19-08-2026 · Last updated: 05-09-2026_
+
 Re-glue (deutsch) — Sru
 
 Zeichen: **＋** neue Bedeutungsnuance · **→** neue Rektion (Kasus) · **ʰ** neue Form · **§** neue Quelle · **≈** dasselbe, nur kürzer
@@ -193,3 +195,5 @@ u. s. w.) [TBR. 1,6,9,5.](https://sanskrit-lexicon-scans.github.io/taittiriyabr/
 — *vi* s. 2. *viśruti* .
 — *sam* zusammenfliessen: *yadvastāvadhi saṃśrutam*
 [AV. 1,3,6.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av01.003.html#av01.003.06)
+
+_Dr. Mārcis Gasūns_

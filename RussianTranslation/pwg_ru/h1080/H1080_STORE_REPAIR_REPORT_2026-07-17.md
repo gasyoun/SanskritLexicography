@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # H1080 PWG→Russian store repair — 17 July 2026
 
 The canonical store was repaired atomically without any model or production-generation call.
@@ -31,3 +33,5 @@ Follow-up [PR #511](https://github.com/gasyoun/SanskritLexicography/pull/511) co
 manifest-v2/profile/global-call/probe-policy hardening and superseded closed PR #495. The next step
 is a separately authorized fresh c4 health probe; a `GO` permits only serial retranslation of the
 two quarantined keys before a tiny nominal window, while `NO-GO` keeps the quarantine and stops.
+
+_Dr. Mārcis Gasūns_

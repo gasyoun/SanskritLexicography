@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Failure gallery — how it looked when it went wrong, and after the fix
 
 A curated record of real defects this project hit, each with the **bad sample**,
@@ -286,3 +288,5 @@ exact same parse and rubber-stamp it — so when a format is ambiguous, **arm th
 the parse rule explicitly**, and disambiguate with an independent signal (here, each
 scholar's field). `anna` was immune only because its NWS entries each lead with a literal
 lemma (`annada … MW:45 >`), making the boundaries unambiguous.
+
+_Dr. Mārcis Gasūns_

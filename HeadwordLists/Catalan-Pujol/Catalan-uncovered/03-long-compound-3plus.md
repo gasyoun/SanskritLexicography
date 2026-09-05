@@ -1,10 +1,12 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Catalan → CDSL-uncovered: `long-compound(3+)`  (600 headwords)
 
 > Headwords from the *Diccionari Sànscrit–Català* not found as a `<k1>` key in any of the 43 CDSL dictionaries (`csl-orig/v02`), accent- and compound-insensitive.
 >
 > **Category:** Three-or-more-member compounds; heavily **Advaita-Vedānta / philosophical** vocabulary that MW does not headword separately.
 
-See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
+See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
 
 | # | Catalan headword | normalised SLP1 key |
 |---:|---|---|
@@ -608,3 +610,5 @@ See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-
 | 598 | `yogi-hṛd-bhāvita-` | `yogihfdBAvita` |
 | 599 | `yukta-vad-bhāva-` | `yuktavadBAva` |
 | 600 | `ṣaḍ-vidha-liṅga-` | `zaqviDaliNga` |
+
+_Dr. Mārcis Gasūns_

@@ -1,6 +1,6 @@
 # Statistics for the Sanskrit Lexicon — a 12-month org-wide census & analytics roadmap 2026–2027
 
-_Created: 12-07-2026 · Last updated: 01-09-2026_
+_Created: 12-07-2026 · Last updated: 05-09-2026_
 
 > **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
@@ -190,7 +190,7 @@ and gets one handoff at execution time.
 - **WS1.4 — FAIR release #1. Metadata prepared 13-07-2026 (Sonnet 5
   `claude-sonnet-5`, H817); deposit itself parked `@DO` (Zenodo account/token,
   MG-gated).** `CITATION.cff` + `DATA_LICENSE.md` added to this repo;
-  [`data/FAIR_RELEASE_1.md`](data/FAIR_RELEASE_1.md) packages the markup-tag
+  [`data/FAIR_RELEASE_1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md) packages the markup-tag
   census (E39) + headword-overlap matrix (E40) as one curated, file-level
   Zenodo deposit (CC-BY-4.0, deposit-ready metadata JSON included) —
   deliberately **not** a whole-repo GitHub→Zenodo integration, since this repo

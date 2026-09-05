@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Root-entry architecture — decision + handoff research (2026-06-23)
 
 ## The problem
@@ -417,3 +419,5 @@ build #3 hardening folds them into "both".
 upstream; PWG linker hardened; Apte oracle independent. Remaining: Apte roles (b)/(c)/(d)
 beyond the oracle, the per-gloss `keep` alignment, and the `_pilot_gen_merged` `--root-split`
 hook to run the frequency-first queue.
+
+_Dr. Mārcis Gasūns_

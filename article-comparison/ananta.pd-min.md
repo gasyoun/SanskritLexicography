@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # ananta — endless / Viṣṇu — PD minimal mode (sense skeleton)
 
 Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
@@ -106,3 +108,5 @@ Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, 
 - **ii** — mystic name of the syllable aḥ
 - **5** — name of a vein (of a horse)
 - **6** — full-moon day
+
+_Dr. Mārcis Gasūns_

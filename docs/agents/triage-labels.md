@@ -1,3 +1,5 @@
+_Created: 28-08-2026 · Last updated: 05-09-2026_
+
 # Triage Labels
 
 The skills speak in terms of five canonical triage roles. This file maps those roles to the actual label strings used in this repo's issue tracker.
@@ -15,3 +17,5 @@ When a skill mentions a role (e.g. "apply the AFK-ready triage label"), use the 
 The repo also carries domain-specific labels (`pwg_ru`, `text-correction`, `handoff`, `python`, `dependencies`, `github_actions`) alongside the GitHub defaults (`bug`, `enhancement`, ...); the canonical five above are the only ones the triage skills require.
 
 Edit the right-hand column to match whatever vocabulary you actually use.
+
+_Dr. Mārcis Gasūns_

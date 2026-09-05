@@ -1,3 +1,5 @@
+_Created: 14-08-2026 · Last updated: 05-09-2026_
+
 # Datasheet — PWG TM canonical v1 four-format pack
 
 _Created: 14-08-2026 · Last updated: 14-08-2026 (DOI minted)_

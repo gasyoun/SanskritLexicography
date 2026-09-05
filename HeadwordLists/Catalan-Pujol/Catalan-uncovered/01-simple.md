@@ -1,10 +1,12 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Catalan → CDSL-uncovered: `simple`  (1421 headwords)
 
 > Headwords from the *Diccionari Sànscrit–Català* not found as a `<k1>` key in any of the 43 CDSL dictionaries (`csl-orig/v02`), accent- and compound-insensitive.
 >
 > **Category:** Single, non-compound lemmas absent from every CDSL dictionary: rare derivatives, orthographic variants, solid sandhi-forms, and a few truncated stem fragments. Spot-checked as genuinely absent from MW (e.g. `āmraka-`, `bhikṣāśana-`, `ārṇa-`).
 
-See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
+See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.
 
 | # | Catalan headword | normalised SLP1 key |
 |---:|---|---|
@@ -1429,3 +1431,5 @@ See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-
 | 1419 | `yogāṅgānuṣṭhāna-` | `yogANgAnuzWAna` |
 | 1420 | `yoṣāgni-` | `yozAgni` |
 | 1421 | `ṣoḍaśānta-` | `zoqaSAnta` |
+
+_Dr. Mārcis Gasūns_

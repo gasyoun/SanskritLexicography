@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # AGENTS.md — RussianTranslation repo-local instructions
 
 This file extends the org-level Sanskrit Lexicon instructions for this repo only.
@@ -297,3 +299,5 @@ Maintain `.ai_state.md` using the existing section structure:
 During work, record logical milestones, persistent bugs, and changed hypotheses.
 On handoff, make next steps concrete. Avoid letting `.ai_state.md` diverge from
 the actual operational state.
+
+_Dr. Mārcis Gasūns_

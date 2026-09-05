@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Routledge Handbook of Syntax (Routledge Handbooks in -- Andrew Carnie, Dan Siddiqi, Yosuke Sato -- Routledge Handbooks in Linguistics, 1, 2014 -- isbn13 9780415533942 -- 10bf4d483686c3a79b69fc33b168ee84 -- Anna’
 
 **Source:** `The Routledge Handbook of Syntax (Routledge Handbooks in -- Andrew Carnie, Dan Siddiqi, Yosuke Sato -- Routledge Handbooks in Linguistics, 1, 2014 -- isbn13 9780415533942 -- 10bf4d483686c3a79b69fc33b168ee84 -- Anna’.pdf`  
@@ -39585,3 +39587,5 @@ interface 369–70
 Yoshida, Masaya 199, 203, 207
 Zanuttini, Raffaella 312
 Zwicky, A. 613
+
+_Dr. Mārcis Gasūns_

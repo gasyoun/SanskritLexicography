@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Runbook — translate the full a-section on the Max workflow harness
 
 Goal: translate all **12,156** a-section cards (PWG+PW+SCH+PWKVN+NWS merged) to Russian
@@ -68,3 +70,5 @@ All 12,156 have a `<safe>.merged.md` and **zero** `*.merged.REJECTED.md` remain
   not failures (the owner is verbatim from the map); only "MISATTRIBUTION" quarantines.
 - Window quota: on Max, large windows can hit the weekly cap — if so, drop `N` and
   resume; everything is resumable off the rendered `.merged.md` set.
+
+_Dr. Mārcis Gasūns_

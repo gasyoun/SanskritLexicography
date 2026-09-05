@@ -1,6 +1,6 @@
 # NCC `match_key` repair — what moved, row for row
 
-_Created: 26-07-2026 · Last updated: 26-07-2026_
+_Created: 26-07-2026 · Last updated: 05-09-2026_
 
 Handoff [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
 · executor **Opus 5 1M (`claude-opus-5[1m]`)** · closes
@@ -10,14 +10,14 @@ measured but deliberately not acted on by
 (whose non-goals forbade re-running P1).
 
 New totals live in their own generated files —
-[`P0_COUNTS.md`](P0_COUNTS.md), [`P1_COUNTS.md`](P1_COUNTS.md),
-[`P2_COUNTS.md`](P2_COUNTS.md), [`P2_PRECISION.md`](P2_PRECISION.md). This file is the
+[`P0_COUNTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P0_COUNTS.md), [`P1_COUNTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P1_COUNTS.md),
+[`P2_COUNTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_COUNTS.md), [`P2_PRECISION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_PRECISION.md). This file is the
 **before/after**: new totals alone cannot show whether the repair found true links or merely
 reshuffled artefacts, and that is the only question worth asking about a 91,156-row swing.
 
 ## 1. The fix
 
-One line in [`parse_ncc.py`](parse_ncc.py): case-fold (and NFC-normalize) the IAST headword
+One line in [`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py): case-fold (and NFC-normalize) the IAST headword
 *before* transliteration, because `sanskrit_util.to_slp1` is case-preserving and has no
 uppercase IAST keys, so a capital fell through its `.get(ch, ch)` default into the SLP1
 string, where `slp1_simplify` read it as a different phoneme.
@@ -31,7 +31,7 @@ string, where `slp1_simplify` read it as a different phoneme.
 | Bhāgavata | `bhhagavata` | `bhagavata` | `B` = bh |
 | Śivastotra | `śivastotra` | `sivastotra` | `Ś` not transliterated at all |
 
-Pinned by [`test_parse_ncc.py`](test_parse_ncc.py), which asserts both the correct key and
+Pinned by [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py), which asserts both the correct key and
 the absence of the specific corrupt one, so a regression fails by name instead of surfacing
 two pipeline stages later as an unexplained recall drop.
 
@@ -126,7 +126,7 @@ Two mechanisms, no third:
 
 ## 6. Adjudication (P2) — re-run, and what it invalidates
 
-[`adjudicate_p2.py`](adjudicate_p2.py) had carried its own in-memory copy of the key repair
+[`adjudicate_p2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/adjudicate_p2.py) had carried its own in-memory copy of the key repair
 as a workaround; it now delegates to `parse_ncc.match_key_for` so the two cannot drift.
 
 | | before (H1657) | after |
@@ -153,12 +153,12 @@ that no longer exists, and 3,550 of its rows are not even candidates any more. I
 human work — that was checked before this handoff ran, per its own prerequisite. The
 replacement is a fresh 698-card sample over the 17 new strata, seeded and planned before the
 draw:
-[`p2_spotcheck_manifest.json`](p2_spotcheck_manifest.json) →
+[`p2_spotcheck_manifest.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/p2_spotcheck_manifest.json) →
 `review/sanskritlexicography-acc_ncc_p2_spotcheck.html` (local, gitignored).
 
 No stratum is measured yet, so all 10,614 rows remain `defer` / agent-proposed and **none is
 promoted into the crosswalk**. The precision bar is still unset — the
-[`P2_PRECISION.md`](P2_PRECISION.md) consequence table prices each candidate bar.
+[`P2_PRECISION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_PRECISION.md) consequence table prices each candidate bar.
 
 ## 7. Downstream — kosha
 
@@ -170,7 +170,7 @@ Flagged rather than left to land silently, per H1671's prerequisite note.
 ## 8. Upstream — is `to_slp1` itself the bug?
 
 Audited across the org; reported in full in
-[`FINDINGS.md`](../../FINDINGS.md) and filed upstream. Short version: `to_slp1` maps
+[`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) and filed upstream. Short version: `to_slp1` maps
 lowercase IAST and passes everything else through verbatim, which is defensible for a
 transcoder — but the passthrough is **silent**, undocumented, and lands in an output alphabet
 where case is *phonemic*, so a wrong answer looks exactly like a right one. The library

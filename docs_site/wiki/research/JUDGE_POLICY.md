@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Judge-model policy for the pwg_ru scale-up (decided 2026-06-25)
 
 **Decision.** The bulk QA judge = **Sonnet**. **Opus** is retained for the **repass of rejects**
@@ -91,3 +93,5 @@ run 4 (209 cards)** — a ~0.5 % conflict rate, i.e. the adjudication queue is e
 The two models almost never disagree, so there is barely anything left to test. The gate is
 therefore mostly a **standing production check**, not a blocker: review the sampled semantic
 queue each mechanically clean window and revisit only if the sampled defect rate climbs.
+
+_Dr. Mārcis Gasūns_

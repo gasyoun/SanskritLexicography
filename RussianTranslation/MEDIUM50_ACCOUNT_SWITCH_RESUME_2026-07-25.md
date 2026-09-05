@@ -51,3 +51,5 @@ with **no** --max-agents on multi-key windows.
 3. Audit each window; /pwg-window-close only after clean audit.
 
 _Do not copy canary --max-agents 1 onto multi-key windows (H1610/H1618)._
+
+_Dr. Mārcis Gasūns_

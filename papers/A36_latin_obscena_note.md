@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Latin discretion-screen in nineteenth-century Sanskrit lexicography: a history, and a metalanguage-relative method for measuring it
 
 **Mārcis Gasūns** · independent researcher · gasyoun@ya.ru · ORCID [0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)
@@ -772,3 +774,5 @@ in plain (often crude) German. (Full inventory: [`A36_blunt_german.csv`](A36_blu
   [`github.com/sanskrit-lexicon/csl-orig`](https://github.com/sanskrit-lexicon/csl-orig).
 
 *(Citation style to be normalised to the Nodus / BGS house style on submission.)*
+
+_Dr. Mārcis Gasūns_
