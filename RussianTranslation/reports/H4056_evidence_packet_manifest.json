@@ -1,0 +1,149 @@
+{
+  "schema": "h4056-evidence-packet-manifest/v1",
+  "handoff": "H4056",
+  "sheet_id": "h4056-evidence-packet-2026-09-05",
+  "generated": "2026-09-05",
+  "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash)",
+  "voting_requested": false,
+  "lock_gate": "H4056-DEMO",
+  "store": {
+    "path": "/Users/mac/Documents/GitHub/pwg-ru-data/tm/pwg_ru_translated.jsonl",
+    "sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+    "rows": 11519
+  },
+  "corpus_records": 123366,
+  "h3948_segmentation_quarantine": {
+    "changed_key1": 331,
+    "method": "pwg_four_tier_store_impact.scan_corpus/changed_keys, read-only"
+  },
+  "funnel": {
+    "rows": 11519,
+    "not_ai_translated": 5,
+    "no_stable_identity": 0,
+    "corpus_evidence_quarantine": 1768,
+    "de_missing": 3,
+    "german_residue_or_machine_flags": 1644,
+    "h3948_segmentation_quarantine": 2515,
+    "eligible": 5584
+  },
+  "selection": "build_g5_review_sheet.pick round-robin over sorted roots, n=10",
+  "tm": {
+    "method": "translation_memory.build from the store into scratch; lookup content-addressed; canonical denylist applied read-only",
+    "denylist_addresses": 7,
+    "hits": 10,
+    "misses": 0
+  },
+  "cards": [
+    {
+      "review_id": "row:000002:subcard:_ap~~h0_00_pwg01#note",
+      "key1": "Ap",
+      "subcard": "_ap~~h0_00_pwg01",
+      "sense_tag": "note",
+      "h": "<div n=\"v\">",
+      "iast": "āp",
+      "digest16": "7189b14142f6d321",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:000244:subcard:_bid~~h0_00_pwg00#1",
+      "key1": "Bid",
+      "subcard": "_bid~~h0_00_pwg00",
+      "sense_tag": "1",
+      "h": "Bid",
+      "iast": "bhid",
+      "digest16": "cf249f2d1bc0f8df",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:000449:subcard:_buj~~h0_01_ava#ava",
+      "key1": "Buj",
+      "subcard": "_buj~~h0_01_ava",
+      "sense_tag": "ava",
+      "h": "ava",
+      "iast": "bhuj",
+      "digest16": "15065bf8d9cf16c6",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:000557:subcard:_cid~~h0_00_pwg00#5",
+      "key1": "Cid",
+      "subcard": "_cid~~h0_00_pwg00",
+      "sense_tag": "5",
+      "h": "Cid",
+      "iast": "chid",
+      "digest16": "821f5cfd2775a0b6",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:000718:subcard:_d_a~~h0_01_sec_1#caus.",
+      "key1": "DA",
+      "subcard": "_d_a~~h0_01_sec_1",
+      "sense_tag": "caus.",
+      "h": "dhā",
+      "iast": "dhā",
+      "digest16": "6e9863509c1e4a31",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:001509:subcard:_sam~~h0_zz_nws00#NWS-1",
+      "key1": "Sam",
+      "subcard": "_sam~~h0_zz_nws00",
+      "sense_tag": "NWS-1",
+      "h": "śam",
+      "iast": "śam",
+      "digest16": "8fb42aac1fbb51af",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:001682:subcard:_sru~~h0_00_pwg01#2",
+      "key1": "Sru",
+      "subcard": "_sru~~h0_00_pwg01",
+      "sense_tag": "2",
+      "h": "śru",
+      "iast": "śru",
+      "digest16": "3ef33fdae742eb3a",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:001897:subcard:br_u~~h0_00_pwg00#1",
+      "key1": "brU",
+      "subcard": "br_u~~h0_00_pwg00",
+      "sense_tag": "1",
+      "h": "brū",
+      "iast": "brū",
+      "digest16": "46f506f5b64e9e07",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:002006:subcard:car~~h0_00_pwg00#header",
+      "key1": "car",
+      "subcard": "car~~h0_00_pwg00",
+      "sense_tag": "header",
+      "h": "car",
+      "iast": "car",
+      "digest16": "1a47b127391df1d1",
+      "tm": "hit"
+    },
+    {
+      "review_id": "row:002263:subcard:d_a~~h0_00_pwg00#A. Präsensformen",
+      "key1": "dA",
+      "subcard": "d_a~~h0_00_pwg00",
+      "sense_tag": "A. Präsensformen",
+      "h": "dā 1",
+      "iast": "dā",
+      "digest16": "945269cec6805346",
+      "tm": "hit"
+    }
+  ],
+  "artifacts": {
+    "html": {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h4056-drain/RussianTranslation/review/h4056_evidence_packet_sheet.html",
+      "content_hash": "sha256:234772d2b800b3be00989f86248f3192c258157f81f6506fc51d84f1e8c11a4c",
+      "committed": false,
+      "reason": "embeds unpublished store RU/DE (default-deny)"
+    },
+    "lock": "review/locks/h4056-evidence-packet-2026-09-05.lock.json"
+  },
+  "provider_calls": 0,
+  "canonical_store_writes": 0
+}
