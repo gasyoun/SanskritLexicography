@@ -1,6 +1,8 @@
 # Fifty Thousand Corrections: An Error-Origin Typology of Twelve Years of Collaborative Sanskrit Dictionary Maintenance
 
-_Created: 17-07-2026 · Last updated: 17-07-2026_
+_Created: 17-07-2026 · Last updated: 06-09-2026_
+
+Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru
 
 > Draft manuscript for **Lexikos** (A31/P5 in the project's publication pipeline).
 > Empirical basis: the released OBS-T correction-event corpus
@@ -22,19 +24,19 @@ _Created: 17-07-2026 · Last updated: 17-07-2026_
 ## Abstract
 
 Retro-digitised dictionaries are corrected continuously after release, and every
-correction quietly asserts a claim about *where the error came from*: the
+correction asserts a claim about *where the error came from*: the
 nineteenth-century compositor, the twenty-first-century typist, or the
-digitisation project's own markup tooling. We make that claim explicit. Building
+digitisation project's own markup tooling. I make that claim explicit. Building
 on a released twelve-year corpus of 52,498 correction events to the Cologne
-Digital Sanskrit Lexicon (CDSL, 43 dictionaries, 2014–2026), we define an
-**error-origin typology** — *print-source*, *digitization*,
-*conversion-markup*, *undetermined* — and attribute every event to it with
+Digital Sanskrit Lexicon (CDSL, 43 dictionaries, 2014–2026), I define an
+error-origin typology (*print-source*, *digitization*,
+*conversion-markup*, *undetermined*) and attribute every event to it with
 anchored, reproducible rules: the correctors' own per-event testimony where the
 historical correction form recorded it, and one structural rule (the tag and
 record-id layer does not exist in any printed book). Rules classify 58.4 % of
 the corpus and abstain on the rest; on a stratified hand-checked sample,
 per-class precision is 0.90–0.97 (micro-average 0.93). Three findings follow.
-First, **evidence complementarity**: the 2014–2019 correction form preserves
+First, evidence complementarity: the 2014–2019 correction form preserves
 origin testimony for 98.9 % of its events, while the 2019–2026 git history —
 positionally richer in every other respect — supports origin attribution for
 only 23.1 %. What a workflow asks its correctors determines what a project can
@@ -43,9 +45,9 @@ digitisation-era typing slips (41.5 % of all events), not by faults of the
 nineteenth-century originals (3.8 %) — the books were better than their digital
 copies before correction. Third, print-source shares vary by an order of
 magnitude across dictionaries (0.5 %–46.9 % of classified events), but the high
-shares are **single-collator campaign fingerprints**: in the dictionaries where
+shares are single-collator campaign fingerprints: in the dictionaries where
 print errors dominate, one careful proofreader with the scan open contributed
-94–100 % of the print-error reports. We close with concrete recommendations for
+94–100 % of the print-error reports. I close with concrete recommendations for
 correction-workflow design in retro-digitisation projects, the first being:
 ask the person with the scan open to record the origin, because nobody
 downstream can reconstruct it.
@@ -59,7 +61,7 @@ Sanskrit Lexicon; quality assurance; crowdsourcing; metalexicography.
 A digitised historical dictionary has three authors: the lexicographer who
 wrote it, the compositor who set it in type, and the project that keyed,
 converted and marked it up a century later. When a user reports that an entry
-is wrong, the repair fixes the text — but the *error* belonged to one of those
+is wrong, the repair fixes the text, but the *error* belonged to one of those
 three hands, and the difference matters. An error inherited from the printed
 book is a bibliographical fact about the 1866 edition; a keying slip is a
 quality-assurance fact about the digitisation campaign; a broken tag is an
@@ -79,7 +81,7 @@ error entered the production chain. This paper adds that third axis and asks
 what twelve years of collaborative maintenance can teach working lexicographers
 about the error genetics of retro-digitised dictionaries.
 
-The answer turns out to hinge less on the dictionaries than on the correction
+The answer hinges less on the dictionaries than on the correction
 *workflow*. The CDSL collected corrections in two regimes: a public web form
 (2014–2019) whose submitters wrote a short free-text justification for every
 report, and a source git repository (2019–2026) whose commits batch hundreds of
@@ -89,7 +91,8 @@ of origin evidence the project possesses, and the git era, for all its
 positional precision, records almost none (§6.1). That asymmetry is the
 methodological heart of this paper, and its most exportable lesson.
 
-Our contributions: (i) a four-class **error-origin typology** for
+The contribution of this paper is the origin axis itself, delivered in four
+parts: (i) a four-class **error-origin typology** for
 retro-digitised dictionaries, with anchored classification rules that abstain
 rather than guess (§4); (ii) a validated census of the full 52,498-event CDSL
 correction corpus under that typology, with per-class precision measured on a
@@ -103,12 +106,12 @@ practical recommendations for correction-workflow design (§7).
 The CDSL's maintenance loop is described in detail in the project's workflow
 documentation
 ([correction-workflow.md](https://github.com/sanskrit-lexicon/csl-corrections/blob/main/docs/correction-workflow.md))
-and analysed as a contributor ecosystem in a companion paper (A15); here we
+and analysed as a contributor ecosystem in a companion paper (A15); here I
 give only what the origin axis needs.
 
 **The form era (2014–2019).** A public correction form invited any user to
 report an error: dictionary, headword, the wrong text, the proposed fix, and a
-free-text comment. 24,441 events survive from this era. Crucially, the
+free-text comment. 24,441 events survive from this era. The
 reporting user typically had the page scan open beside the digital text — the
 CDSL interface links every entry to its scan — so the comment routinely records
 a judgment nobody else could later make: whether the *print itself* was wrong
@@ -150,12 +153,12 @@ the encoding unification of the mixed Devanagari/Harvard-Kyoto form archive,
 and the resource release with baselines are the subject of the OBS-T resource
 paper (A12) and its design specification
 ([ERROR_TYPOLOGY_DESIGN.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/docs/ERROR_TYPOLOGY_DESIGN.md));
-we consume them and do not restate them.
+I consume them and do not restate them.
 
-Two properties of the corpus carry directly into our design. First, its
+Two properties of the corpus carry directly into my design. First, its
 **evidence-label discipline**: every location label is marked `derived` (a
 deterministic join succeeded) or `inferred` (join failed, label
-`unattributed`), and no figure hides the distinction. We adopt the same
+`unattributed`), and no figure hides the distinction. I adopt the same
 discipline for origin. Second, its **layer stamp**: every event records whether
 it came from the correction form or the git history, which is what lets §6.1
 measure the two regimes against each other.
@@ -195,9 +198,9 @@ An *editorial* class (enhancements and normalisations that repair no error) was
 designed and then dropped: the only candidate anchor — 89 form events whose
 comments note a variant reading — sits under the corrector's own "typo" type
 token, so no anchored rule separates editorial intent from a transcription
-slip. The class exists in the data (our validation sample surfaced
+slip. The class exists in the data (my validation sample surfaced
 citation-format normalisations filed as "typos"; §5), but it cannot be
-extracted mechanically at acceptable precision, and we prefer a missing class
+extracted mechanically at acceptable precision, and I prefer a missing class
 to a fabricated one. It is future work under campaign-level attribution (§8).
 
 ### 4.2 Rules, and the abstention discipline
@@ -238,7 +241,7 @@ old/new strings, the corrector's comment, the OBS-T location and edit-type
 The annotator of record for this pass is the drafting model (Fable 5,
 `claude-fable-5`), a single annotator; a second, human annotation pass is the
 standing gate shared with the corpus's location-axis gold sample, and until it
-lands we report precision, not agreement (§8).
+lands I report precision, not agreement (§8).
 
 **Table 2.** Per-class precision on the hand-checked sample
 ([a31_origin_validation_metrics.csv](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/a31/a31_origin_validation_metrics.csv)).
@@ -252,7 +255,7 @@ lands we report precision, not agreement (§8).
 | undetermined (abstention correctness) | 30 | 21 | 0.700 |
 
 The failure modes are instructive, not random. All five classified errors are
-**editorial events wearing an error costume**: citation-format normalisations
+editorial events recorded as error repairs: citation-format normalisations
 filed under "typo" or even "print error  reformat for consistency", an
 editorial supplement wrapped in a change tag, and one block of untranscribed
 Greek — print content the keying pass skipped — whose repair the structural
@@ -260,8 +263,8 @@ rule read as tag-layer work. The abstention misses run the other way: 9 of the
 30 `undetermined` rows *could* have been classified (all as
 `conversion-markup`) by reading the git commit message, which names the
 markup-enrichment campaign the edit belongs to. Rule-level abstention is thus
-conservative in exactly the direction we want — its errors are recall lost,
-not fabricated classes — and campaign-level attribution is the obvious next
+conservative in exactly the direction I want: its errors are recall lost,
+not fabricated classes. Campaign-level attribution is the obvious next
 increment (§8).
 
 ## 6. Results
@@ -278,14 +281,14 @@ increment (§8).
 | git era (n = 28,057) | 0 | 0 | 6,495 (23.1 %) | 21,562 (76.9 %) |
 
 The split could hardly be sharper. The correction form yields origin evidence
-for **98.9 %** of its events — because it asked a human, at the moment of
+for 98.9 % of its events, because it asked a human, at the moment of
 comparison with the scan, to say what they were looking at. The git era, whose
 positional evidence is *better* in every other axis (its location joins are
 100 % derived, against 28.8 % for the form era), supports origin attribution
-for only **23.1 %** of its events, and all of it through the structural
+for only 23.1 % of its events, and all of it through the structural
 markup/meta rule rather than through anyone's testimony. The two regimes are
 evidence-complementary mirror images: the form knew *why*, the repository
-knows *where*. Neither alone can support a full error genetics — and the
+knows *where*. Neither alone can support a full error genetics, and the
 project's move from form to repository, rational on every engineering ground,
 silently traded away the origin record.
 
@@ -306,7 +309,7 @@ since transcription errors, unlike compositors' errors, are systematically
 detectable against the scan and largely automatable away (spelling, diacritic
 and case slips dominate the digitization class: 8,374 + 3,693 + 3,743 events).
 
-### 6.3 Print-error discovery is a collation campaign, not a background hum
+### 6.3 Print-error discovery is a collation campaign
 
 **Table 4.** Print-source share by dictionary (dictionaries with ≥ 30
 classified events, ranked by share; full table in
@@ -330,8 +333,8 @@ Read naïvely, Table 4 says Benfey's and Burnouf's 1866 printings were an order
 of magnitude worse than the Petersburg Academy's. The last column forbids the
 naïve reading: in every dictionary with a high print-source share, a *single
 corrector* contributed 94–100 % of the print-error reports. These are
-signatures of **systematic scan-against-text collation campaigns** — one
-careful proofreader, one dictionary, the scan open — not population estimates
+signatures of systematic scan-against-text collation campaigns (one
+careful proofreader, one dictionary, the scan open), not population estimates
 of press quality. What the table really measures is where such a collation was
 carried out, and what it found when it was: *where someone systematically
 collated, print errors were 13–47 % of what they caught*. In the
@@ -389,8 +392,8 @@ an axis.
 
 **Single-annotator validation, and no κ.** The precision figures in Table 2
 are one annotator's judgments, and that annotator is the drafting model. No
-inter-annotator agreement exists yet for this axis — nor, it must be said
-plainly, for any axis of the underlying corpus: the corpus's own gold sample
+inter-annotator agreement exists yet for this axis, nor for any axis of the
+underlying corpus: the corpus's own gold sample
 ([gold_sample.csv](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/validation/gold_sample.csv))
 still awaits its second annotator. Both κ gates are the same recruiting
 problem and are tracked as one action in the project's planning registry. A
@@ -405,15 +408,15 @@ git era's classified subset is markup-only by construction. The form-era
 numbers (98.9 % classified) are the load-bearing ones.
 
 **Testimony is trusted, and testimony can be sloppy.** The rules inherit the
-correctors' own judgments, including their errors: our validation surfaced
+correctors' own judgments, including their errors: my validation surfaced
 "print error" applied to a formatting normalisation. Measured precision
 (0.93–0.97 on the testimony classes) bounds but does not eliminate this.
 
 **Editorial events hide in the error classes.** The dropped editorial class
-(§4.1) means some share of "digitization" events — our sample suggests a few
-per cent — are normalisations, not error repairs. Campaign-level attribution
+(§4.1) means some share of "digitization" events (my sample suggests a few
+per cent) are normalisations, not error repairs. Campaign-level attribution
 from git commit messages (which name enrichment campaigns explicitly, and
-which our abstention analysis shows would reclassify roughly a third of a
+which my abstention analysis shows would reclassify roughly a third of a
 sample's undetermined rows) is the designed next increment.
 
 **Corrected ≠ wrong.** The corpus records repairs the community chose to make.
@@ -429,7 +432,7 @@ markup layer in a substantial minority; from the nineteenth-century press in a
 small share that balloons only where someone deliberately went looking for it.
 The deeper finding is about the record itself. Origin evidence exists at
 exactly one moment — when a person with the scan open decides what they are
-seeing — and the CDSL's history demonstrates both outcomes: a humble web form
+seeing — and the CDSL's history demonstrates both outcomes: a plain web form
 that captured that moment 24,000 times, and a technically superior successor
 workflow that let it evaporate. Lexicographic error genetics, this corpus
 suggests, is less a matter of forensic reconstruction than of asking one extra
@@ -469,5 +472,6 @@ question at the right time.
 > and
 > [a31/a31_apply_judgments.py](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/a31/a31_apply_judgments.py)
 > from the released OBS-T snapshot; none are hand-edited.
+> Author-voice pass 06-09-2026 ([SIGNOFF_A31_author_pass.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/SIGNOFF_A31_author_pass.md)), Fable 5.1 (`claude-fable-5-1`), H3857.
 
 _Dr. Mārcis Gasūns_
