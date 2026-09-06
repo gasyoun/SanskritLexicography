@@ -55,4 +55,10 @@ From no_pwg_residuals.jsonl (all rows `blocked`, `updated_at` 2026-07-15 — PRE
 - Residuals: (1) human re-login of claude4/claude5/claude6 profiles (or wait out the c1 rate-limit), (2) relaunch = `bounded_staged_run.py --plan output\h4213_wave_plan.json ... --execute --stop-before-promote --max-windows 1` (add canary receipt per H2159: canary window `h4213_can02`/_atmavat prep exists — lease may need re-prep after expiry), (3) still_null file restored from backup (37 lines verified).
 - CAVEAT: lease `no_pwg_w10` claimed 13:12Z — if a 6 h expiry applies it lapses ~19:12Z; re-run the planner real-prep (artifacts regeneration is deterministic) if expired.
 
+### §6.1 Evening ruling + auto-launch (18:2x MSK)
+
+- **MG: «claude 4 5 6 is off the game for now»** — the re-login residual is cancelled; the wave rides c1 only.
+- Live probe: c1 HTTP 429, «resets 7:10pm (Europe/Moscow)».
+- One-shot Task Scheduler job **`PWG-RU h4213 heal wave`** armed for **19:15 MSK** (5 min after reset): `output\h4213_wave_launch.ps1` — probe c1 → drop stale leases → canary prep+run (`_atmavat`, fresh lease) → `canary_gate.py judge` → wave re-prep (6 keys) → `bounded_staged_run --execute --stop-before-promote --canary-receipt`. Every gate stops honestly with a NO-GO line in `output\h4213_wave_launch.log`; still_null restored after prep.
+
 _Dr. Mārcis Gasūns_
