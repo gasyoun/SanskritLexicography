@@ -1536,6 +1536,68 @@ def test_mask_preamble_carries_task_shape():
                  '(%r) — that is the exact shape the model refused twice' % banned)
 
 
+def test_gloss_wrapper_prompt_preservation_h4270():
+    """H4015 residual (H4270): the generation prompt must order {%…%} wrapper preservation.
+
+    Two independent c1 windows lost the German {%…%} gloss wrappers in the Russian output on
+    _apta (8 wrappers in, 1 kept, zero «») while every {Tn}-masked span survived — because
+    pwg_mask.mask keeps DE {%…%} spans INLINE (unmasked), so nothing told the model the
+    wrapper is markup it must reproduce. H3658 Lane B ruled the class not deterministically
+    repairable post-hoc and PR #789 forbids guessing gloss boundaries, so the prompt is the
+    fix: an explicit preservation rule + a worked example, pinned here on MASK_PREAMBLE (the
+    shared source of the manifest-v2 preamble and the generated JS) and end-to-end on a mini
+    manifest whose golden output requires {%…%} spans.
+    """
+    import gen_opt_harness2 as gh
+    from gen_opt_harness2 import MASK_PREAMBLE as preamble
+
+    # 1) The rule, on the shared source text.
+    for needle in ('{%…%}', 'GLOSS-DE-RESIDUE', 'MUST reappear',
+                   'Never drop the wrapper', 'never replace it with «…»',
+                   'never leave the'):
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the gloss-wrapper clause %r — the model will keep '
+                 'stripping {%…%} wrappers and every window re-defects (H4015, twice)' % needle)
+    # 2) The worked example, spans verbatim.
+    for needle in ('a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.',
+                   'а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.'):
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the gloss-wrapper worked example %r' % needle)
+
+    # 3) End-to-end mini manifest: the DE {%…%} span stays inline in the masked skeleton AND
+    #    the generated JS prompt carries the rule (ensure_ascii escapes the Cyrillic example;
+    #    the ASCII skeleton of the clause survives verbatim).
+    raw = '<L>1<pc>1<k1>a<k2>a<h>1\n{#a#}¦ a) {%eins%} <is>Arhant</is> <ls>H. 25</ls>.\n'
+    d = tempfile.mkdtemp()
+    keys = ['zz_key_a', 'zz_key_b']
+    saved_ip = gh.input_paths
+    try:
+        for k in keys:
+            with open(os.path.join(d, k + '.raw.txt'), 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(os.path.join(d, k + '.portrait.json'), 'w', encoding='utf-8') as f:
+                f.write('{}')
+        gh.input_paths = lambda k, input_dir=None: (
+            os.path.join(d, k + '.raw.txt'), os.path.join(d, k + '.portrait.json'))
+        js, _batches = gh.build('zz', keys, None, 12000, nominal=True,
+                                grammar_on=False, tm_path=None)
+        import re as _re
+        if 'GLOSS WRAPPERS' not in js or '{%ein%}' not in js:
+            fail('generated JS prompt lost the gloss-wrapper rule/example — the paid lane '
+                 'would translate bare prose again (H4015 class)')
+        inputs = json.loads(_re.search(r'^const INPUTS = (.*)$', js, _re.M).group(1))
+        for k in keys:
+            skel = inputs[k]['skeleton']
+            if '{%eins%}' not in skel:
+                fail('masked skeleton dropped the DE gloss wrapper for %s: %r — golden output '
+                     'cannot carry {%…%} spans the input no longer shows' % (k, skel))
+            if '{T' not in skel:
+                fail('masked skeleton lost its {Tn} spans for %s: %r' % (k, skel))
+    finally:
+        gh.input_paths = saved_ip
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_health_probe_shares_the_production_task_shape():
     """H3157 repair (a) / FINDINGS §498 rule 1: the cheap gate half must be able to fail the
     way the expensive half fails.
@@ -9639,6 +9701,7 @@ def main():
         # the TASK SHAPE block had never executed. An unregistered test is indistinguishable
         # from a passing one in every report that matters.
         test_mask_preamble_carries_task_shape,
+        test_gloss_wrapper_prompt_preservation_h4270,
         test_health_probe_shares_the_production_task_shape,
         test_semantic_risk_checker,
         test_h1152_guard1_en_polyseme_checklist,
