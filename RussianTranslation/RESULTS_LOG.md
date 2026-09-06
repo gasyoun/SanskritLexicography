@@ -1,8 +1,24 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 21-08-2026_
+_Created: 09-07-2026 · Last updated: 06-09-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 06-09-2026 - H4270 (OxAlpha GLM 5.3 Flash) - gloss-wrapper prompt hardening + one `_apta` c1 re-test: funded defect fixed, new single-sense defect named, audit requeue (no ship)
+
+OxAlpha (`glm-5.3-flash`, opencode lane), 1 paid call on c1 (window 139.9 s; fresh 18:37Z GO receipt reused, probe ration 2/2). Record: [pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md](pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md).
+
+| Metric | H4015 (old prompt) | H4270 (hardened prompt) |
+|---|---:|---:|
+| RU `{%…%}` wrappers (DE 8: 7 DE + 1 EN-masked) | 1 | **8** |
+| `markup_wrapper_dropped` | ×2 (hard requeue) | **0** |
+| `<ls>` paired refs preserved | 7/7 | 7/7 |
+| `{#…#}` spans preserved | 8/8 | 8/8 |
+| `«…»` guillemets | 0 | 0 |
+| Semantic risk score / high-confidence | 67 / 0 | 170 / **1** |
+| Audit verdict | requeue (wrapper drop) | **requeue — NEW defect: masked EN span translated** (`{%equation of a degree%}`→`{%уравнение степени%}`, sense 4b) |
+
+Named stop: AUDIT_DEFECT_REQUEUE 3rd occurrence — residual to MG (rule-tightening + 4th window, or option b/c). Store untouched.
 
 ## 22-08-2026 - H3291 (Fable) - full DH-standards audit: released pack verified green; wave-1 gate FAIL confirmed honest; wave-2 payload lost (regenerable)
 
