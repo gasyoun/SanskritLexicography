@@ -1,4 +1,4 @@
-_Created: 06-09-2026 · Last updated: 06-09-2026_
+_Created: 06-09-2026 · Last updated: 06-09-2026 (§5 box census)_
 
 # PWG-RU selfheal heal pass — the 20 registry-blocked cards, routing table + box runbook
 
@@ -41,5 +41,25 @@ From [no_pwg_residuals.jsonl](https://github.com/gasyoun/pwg-ru-data/blob/main/g
 5. **Close:** `audit_window.py` → `promote_final_cards.py` with EXPLICIT `--glob` → registry outcome rows → `RUN_LOG.md` entry (healed/still-null table per class) → store/TM verification.
 
 **Estimate:** 2-4 h box time if the probe is green same-day; multi-day if the host is degraded again (H895-era 40 s probes).
+
+## 5. Box census (Windows, 06-09-2026) — steps 1-2 executed, freeze confirmed still active
+
+**Freeze re-checked:** [gatelogs/lane_freeze_pc.json](https://github.com/gasyoun/pwg-ru-data/blob/main/gatelogs/lane_freeze_pc.json) still exists (`executed: true`); an unrelated automated recheck re-stamped it today (2026-09-06, same reasons) as an in-flight uncommitted change in the `pwg-ru-data` main checkout — not touched by this pass, out of scope for H4204 and not this session's WIP to commit. **No requeue, promote, or registry flip executed** (steps 3-4 stay gated).
+
+**`audit_window.py` could not run as literally specced:** it audits one `wf_output` file against an `--execution-manifest` contract from a live Max-Workflow/headless run; this worktree's `RussianTranslation/src/pilot/output/` is empty (gitignored, local-only per [[pwg-ru-store-worktree-persistence]]) and the main checkout's `output/` holds only already-merged `.merged.md` cards, not a fresh unaudited `wf_output`. No window is currently in flight to audit. This is a genuine constraint, not a skipped step — recorded so a later session doesn't re-attempt the identical call.
+
+**Substitute census run:** [`h4204_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h4204_census.py) (read-only, touches neither registry nor store) reconciles the 20 `no_pwg_residuals.jsonl` keys against `pwg-ru-data/tm/pwg_ru_translated.jsonl` by `(root, dict_code)` presence — a weaker signal than a `failure_reasons` audit (it does not confirm the specific flagged sense healed, only that *some* entry for that root+dictionary now exists in the store):
+
+| Key | Registry reason | Root+dict present in store? |
+|---|---|---|
+| `durg_a~~h0_zz_sch` | likely_circular_gloss | **yes** |
+| `gagana~~h0_zz_nws00` | STRANDED-ANCHOR/circular-gloss | **yes** |
+| `mahat~~h0_zz_pw` | content defect (circular-gloss/STRANDED-ANCHOR) | **yes** |
+| `sa_m_dy_a~~h0_zz_sch` | content defect (circular-gloss/STRANDED-ANCHOR) | **yes** |
+| remaining 16 keys (presplit, span-drop, no-fallback, kill-timeout, `k_antap_az_a_ra`, `kajjalik_a`, `_kowa`, `_sibi`, `a_sud_da`, `aklizwa`) | see §3 | no |
+
+**Disposition — no flip drafted from this signal alone.** The 4 "present" hits are all in the §3 "content-defect manual" class, whose registry reason is a **quality** flaw (circular gloss / stranded anchor), not a missing-fallback mechanism the Aug/Sep fixes address — store presence there is ambiguous (could be the flagged defective content itself, promoted under the pre-H3593 "promote regardless of flag" guardrail the freeze doc footnotes) and is exactly the SAN-LOSS shape the pc-lane freeze exists to catch. Flipping on ambiguous evidence is the explicit fail condition in Acceptance. **Recommendation:** the 4 hits get a manual content spot-check (not a mechanical flip) once the freeze lifts and `audit_window.py` can run against a real window; §3's per-class dispositions stand unchanged otherwise. The other 16 keys show no store presence at all, consistent with §3's blocked classes.
+
+**Steps 3-4 remain fully gated** — `lane_freeze_pc.json` still exists; no human unfreeze ruling has landed. This closes H4204's ungated scope (steps 1-2); the requeue windows in §4 wait on that ruling.
 
 _Dr. Mārcis Gasūns_
