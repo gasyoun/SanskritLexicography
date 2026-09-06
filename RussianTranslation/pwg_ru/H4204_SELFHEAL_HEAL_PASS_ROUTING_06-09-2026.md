@@ -47,4 +47,12 @@ From [no_pwg_residuals.jsonl](https://github.com/gasyoun/pwg-ru-data/blob/main/g
 - **Census LANDED** — a box drain session executed H4204 steps 1-2 hours after this doc shipped: freeze confirmed still active, store-presence check found **4 ambiguous content-defect hits, no flips** ([close a4d8ce644](https://github.com/gasyoun/Uprava/commit/a4d8ce644), [PR #2082](https://github.com/gasyoun/SanskritLexicography/pull/2082)).
 - **MG ruled: «(b) hold until the H4204 census lands»** — condition met same day → **unfreeze pre-authorized**; the human act is deleting `lane_freeze_pc.json` on the box; requeues then follow §4 behind a green probe.
 
+## 6. Wave execution state (H4213, 06-09-2026 evening)
+
+- **Freeze DELETED** (per MG ruling (b) + delegation; verified absent after deletion; pc generation task Disabled, spotcheck Ready).
+- **Wave prep COMPLETE**: lease `no_pwg_w10` state `prepared` (coordinator state.json) — 6 keys (`asa_mskfta`, `avy_ahata`, `avyagra`, `b_ahlika`, `k_antap_az_a_ra`, `kajjalik_a` ~~h0_zz_pw), v2 manifest sealed to profile c1, harness 110146 B, **FRAGS armed at `AUTOSPLIT_LS_BUDGET=6`** (dry-run proof: 4 fallback-having cards vs the registry's zero).
+- **Launch TERMINAL-STOPPED by live account health**: fleet probe → c1 `rate_limit` (STOP, zero translation spend, no-retry rule honored); c4/c5/c6 `not logged in` (auth lapsed during the freeze). Re-login is interactive OAuth on the box — human-only.
+- Residuals: (1) human re-login of claude4/claude5/claude6 profiles (or wait out the c1 rate-limit), (2) relaunch = `bounded_staged_run.py --plan output\h4213_wave_plan.json ... --execute --stop-before-promote --max-windows 1` (add canary receipt per H2159: canary window `h4213_can02`/_atmavat prep exists — lease may need re-prep after expiry), (3) still_null file restored from backup (37 lines verified).
+- CAVEAT: lease `no_pwg_w10` claimed 13:12Z — if a 6 h expiry applies it lapses ~19:12Z; re-run the planner real-prep (artifacts regeneration is deterministic) if expired.
+
 _Dr. Mārcis Gasūns_
