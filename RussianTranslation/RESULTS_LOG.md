@@ -3485,3 +3485,29 @@ in a single call, which no amount of re-probing from this seat can.
 Model: Opus 5 (`claude-opus-5`).
 
 _Dr. Mārcis Gasūns_
+
+---
+
+## 06-09-2026 — c1 `_apta` re-translation window: gate GO ×2 legs, window success, audit re-defects the card (H4015)
+
+OxAlpha (`glm-5.3-flash`) executing [H4015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4015-OxAlpha_SanskritLexicography_hapta-1key-retranslation-window_03.09.26.md).
+**Store untouched at 11 519 rows; nothing promoted; `_apta` stays on the defect list.**
+
+| leg | result |
+|---|---|
+| gate attempt 1, 12:27:57Z | NO-GO — warm-up `rate_limit`, 429 "session limit · resets 7:10pm MSK"; fail-closed, no measured leg; 1 call, cost not evaluable |
+| gate attempt 2, 18:28:42Z | PASS — measured 25 736 ms vs 80 000; spacing honoured: 6 h 0 m 45 s after attempt 1 (MG chat ruling: wait out the wall; the 19:10 reset alone did not reopen the lane) |
+| canary | GO — 31.3 s, 3/3 senses, `null_keys: []` |
+| window `_apta` | success — 137.2 s, first attempt, result sha `f9f133e8…` |
+
+Ration closed 06-09 at **2 of 2 probe attempts**; durable evidence root `~/.pwg_ru_evidence/c1`.
+The card itself: DE **8** `{%…%}` gloss wrappers → RU **1**, zero «» — wrappers dropped, not
+converted (`{%ein%}` → plain `некий`, `<is>`/`<ls>` refs all preserved). `audit_window.py`
+unit gates 1/1 clean, but `requeue.defect.keys.txt` contains `_apta` — the promotable verdict.
+**Named stop: AUDIT_DEFECT_REQUEUE — the sanctioned recipe reproduces the defect, now 2 windows
+running (H3654 b2, H4015).** Promotion and the H3654 defect-list removal correctly not attempted.
+
+Record: [`pwg_ru/h4015/H4015_C1_WINDOW_RESULT_06-09-2026.md`](pwg_ru/h4015/H4015_C1_WINDOW_RESULT_06-09-2026.md).
+Spend: 5 paid calls, cost not evaluable (FINDINGS §597). Model: generation `claude-sonnet-5`.
+
+_Dr. Mārcis Gasūns_

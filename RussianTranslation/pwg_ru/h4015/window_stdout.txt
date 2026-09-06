@@ -1,0 +1,1 @@
+{"classification": "success", "attempts": [{"label": "b0", "keys": ["_apta"], "returncode": 0, "elapsed_ms": 137220, "classification": "success"}], "null_keys": [], "cli_safe_mode_effective": true, "manifest_sha256": "d2372672ea1fd131d8e30ea9307fd4aa18402f9c8d2d47c747d2d1f2bdc2f443", "result_sha256": "f9f133e8baf4da479c87863eb74261ccd400543e1c727e9faafcb2d9a9046308"}

@@ -1,0 +1,32 @@
+========================================================================
+H963 Gate-0 — single-profile c1 D-K health attempt
+========================================================================
+date (UTC)        : 2026-09-06T12:27:43Z
+profile           : c1  (D:\ClaudeTools\profiles\claude1\.claude)
+exact model       : claude-sonnet-5
+payload_bytes arg : 6491
+actual prompt B   : 8617  (floor 5000 B / 5 KiB=5120)
+ceiling           : 80000 ms (strict: either reading >= 80000 ms => NO-GO)
+run_id            : h963-c1-single-profile-gate0/2026-09-06T12:27:43Z-pid15164   (unique to THIS run — #729)
+campaign          : h963-c1-single-profile-gate0   (grouping label only, never a read scope)
+evidence root     : C:\Users\user\.pwg_ru_evidence   (source: PWG_EVIDENCE_DIR)
+events            : C:\Users\user\.pwg_ru_evidence\c1\h963_c1_gate0_probe_events.jsonl   (per-account series)
+health log        : C:\Users\user\.pwg_ru_evidence\health_probe_log.jsonl   (canonical cross-account, H3642)
+call ledger       : C:\Users\user\.pwg_ru_evidence\c1\h963_c1_gate0_calls.json
+preflight         : C:\Users\user\.pwg_ru_evidence\c1\h963_c1_gate0_preflight.json
+claude bin        : C:\Users\user\AppData\Roaming\npm\claude.cmd
+host state        : 3082 MB free of 16229 MB phys · commit 26231/32458 MB (80.8%) · node+claude 3 · python 7
+resolved argv     : ['C:\\Program Files\\nodejs\\node.EXE', 'C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\cli-wrapper.cjs']
+------------------------------------------------------------------------
+wall clock        : 13.8 s
+------------------------------------------------------------------------
+RAW READINGS (append-only telemetry, THIS run only — run_id h963-c1-single-profile-gate0/2026-09-06T12:27:43Z-pid15164):
+  purpose=warmup   elapsed_ms=13754   classification=rate_limit output_bytes=1185
+------------------------------------------------------------------------
+live_probe fail-closed: warm-up probe rate_limit -> STOP (auth/model/output/rate-limit/timeout)
+
+GATE-0 VERDICT: NO-GO
+  - warm-up classification=rate_limit (not success)
+  - measured reading absent (probe stopped before it ran)
+
+STOP. No canary. No production window. No reroll.
