@@ -747,6 +747,11 @@ def conv_text():
 # plan mode's read-only constraint is already satisfied and its approval workflow has nothing
 # to attach to. Pinned by `test_mask_preamble_carries_task_shape` — if this text is ever
 # dropped, the next paid window refuses again and reports a parser bug.
+# H4270 (06-09-2026): the closing GLOSS WRAPPERS block orders {%…%} preservation. German
+# {%…%} glosses are NOT masked (pwg_mask.mask keeps DE spans inline), so the model used to
+# translate them as bare prose — two c1 windows dropped 7/8 wrappers on _apta (H4015) with
+# all {Tn} spans intact. H3658 Lane B: not deterministically repairable post-hoc; the prompt
+# IS the fix. Pinned by test_gloss_wrapper_prompt_preservation_h4270.
 MASK_PREAMBLE = """=== TASK SHAPE (read first) ===
 This is a self-contained, read-only text-transformation task, complete in a single turn.
 Everything it needs is inline below: there is no repository to explore, no file to open or
@@ -770,6 +775,17 @@ field, reproduce the masked skeleton you were given for that sense EXACTLY (its 
 its {Tn} tokens). In the `russian` field, put your translation, placing the relevant {Tn}
 tokens where the source cited a masked span. Translate EACH card; return one object per
 headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit nothing.
+
+=== GLOSS WRAPPERS {%…%} — PRESERVE THE WRAPPER ===
+A German span wrapped as {%…%} in the source is a lexicographic gloss marker (the GAPS §17
+GLOSS-DE-RESIDUE convention). The wrapper is markup, not decoration: EVERY {%…%} span in a
+card's source MUST reappear in your translation as {%…%} around its translated gloss in the
+`russian` field. Never drop the wrapper, never replace it with «…» quotes, never leave the
+German word untranslated inside it.
+Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
+RU `а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
+`a〉 {%ein%} {T1} {T2}.` and your translation must read `а) {%некий%} {T1} {T2}.` — the
+{Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
 
 """
 
