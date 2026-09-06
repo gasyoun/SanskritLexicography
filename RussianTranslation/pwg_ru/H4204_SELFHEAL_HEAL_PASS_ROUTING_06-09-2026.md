@@ -20,7 +20,7 @@ Plan of record for [H4204](https://github.com/gasyoun/Uprava/blob/main/handoffs/
 
 ## 3. Routing table — the 20 registered keys
 
-From [no_pwg_residuals.jsonl](https://github.com/gasyoun/pwg-ru-data/blob/main/gatelogs/no_pwg_residuals.jsonl) (all rows `blocked`, `updated_at` 2026-07-15 — PRE-dates the Aug fixes). Dispositions are the census hypothesis; the box census (§4 step 1) confirms or corrects each row before any flip.
+From no_pwg_residuals.jsonl (all rows `blocked`, `updated_at` 2026-07-15 — PRE-dates the Aug fixes). Dispositions are the census hypothesis; the box census (§4 step 1) confirms or corrects each row before any flip.
 
 | Class | Keys | Registry reason | Fix that addresses it | Disposition |
 |---|---|---|---|---|
