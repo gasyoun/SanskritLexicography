@@ -42,4 +42,9 @@ From [no_pwg_residuals.jsonl](https://github.com/gasyoun/pwg-ru-data/blob/main/g
 
 **Estimate:** 2-4 h box time if the probe is green same-day; multi-day if the host is degraded again (H895-era 40 s probes).
 
+## 5. Post-publication status (06-09-2026, same day)
+
+- **Census LANDED** — a box drain session executed H4204 steps 1-2 hours after this doc shipped: freeze confirmed still active, store-presence check found **4 ambiguous content-defect hits, no flips** ([close a4d8ce644](https://github.com/gasyoun/Uprava/commit/a4d8ce644), [PR #2082](https://github.com/gasyoun/SanskritLexicography/pull/2082)).
+- **MG ruled: «(b) hold until the H4204 census lands»** — condition met same day → **unfreeze pre-authorized**; the human act is deleting `lane_freeze_pc.json` on the box; requeues then follow §4 behind a green probe.
+
 _Dr. Mārcis Gasūns_
