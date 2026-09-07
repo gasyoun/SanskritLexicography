@@ -26,9 +26,9 @@ SECOND WITNESS (H4339). Monier-Williams cites the same Böhtlingk coordinates an
 many of them in a structured field of its own (`<info westergaard="dIDIN,24.68,…"/>`).
 Where Böhtlingk left a coordinate ambiguous and MW claims it for exactly one root, the
 row is filled from MW and MARKED as such — `[MW]` in the tooltip, `source` in the data.
-Where both dictionaries name a single root, they can be compared: 632 of 814 agree
-outright (77.6%), 695 (85.4%) once the regular guṇa alternation `arj`/`ṛj` is counted as
-the citation-form variation it is. The 182 remaining are LISTED in the concordance's
+Where both dictionaries name a single root, they can be compared: 633 of 814 agree
+outright (77.8%), 696 (85.5%) once the regular guṇa alternation `arj`/`ṛj` is counted as
+the citation-form variation it is. The 181 remaining are LISTED in the concordance's
 `_mw_disagreements` and nothing is auto-resolved: a row Böhtlingk attributed keeps HIS
 root, and the only rows carrying MW's spelling (`mw-respell`) are ones where Palsule has
 no entry under Böhtlingk's spelling, so there was never a PWG row there to displace.
@@ -36,15 +36,18 @@ no entry under Böhtlingk's spelling, so there was never a PWG row there to disp
 A PROSE CITATION IS NOT ALWAYS AN ATTRIBUTION (adjudication, 07-09-2026). MW's `kzal`
 article cites `Dhātup. xx, 21` inside `<ab>v.l.</ab> for √ kzar` — a sentence that gives
 the coordinate to `kṣar` and names `kṣal` as the rejected reading. Harvested raw it put
-`kṣal` on 20,21. Prose on a `v.l.` line now claims nothing, and 20,21 is DROPPED rather
-than re-attributed: MW assigns it in words this parser does not read, and inventing that
+`kṣal` on 20,21 (and `taṭ` on 32,43, the same shape). BUT WHICH SIDE OF THE CITATION THE
+NOTE SITS ON DECIDES WHAT IT MEANS: `juq`'s `<ls>…xxviii, 37</ls> (<ab>v.l.</ab> √ jun)`
+puts the note AFTER, so 28,37 is the headword's and `jun` is the variant. So the guard is
+clause-scoped, not line-scoped, and those two coordinates are DROPPED rather than
+re-attributed: MW assigns them in words this parser does not read, and inventing that
 attribution would be the fabrication this pipeline exists to refuse.
 
 DATA HONESTY — COVERAGE AND ACCURACY ARE DIFFERENT NUMBERS.
-  Coverage: 1,464 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.6%) — 1,226
-  (70.0%) attributed by Böhtlingk himself, 238 added by the MW witness above (220 of them
-  backed by MW's structured field, 18 by running prose alone — a weaker class, counted
-  apart as `_stats.coords_filled_from_mw_prose_only`). The remaining 287 are coordinates
+  Coverage: 1,465 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.7%) — 1,226
+  (70.0%) attributed by Böhtlingk himself, 239 added by the MW witness above (220 of them
+  backed by MW's structured field, 19 by running prose alone — a weaker class, counted
+  apart as `_stats.coords_filled_from_mw_prose_only`). The remaining 286 are coordinates
   neither dictionary resolves unambiguously, or roots
   absent from Palsule's artha index. Filter `source == 'pwg'` for the H1333 table.
   Accuracy: measured, not asserted. Böhtlingk often prints the dhātupāṭha's own artha in
