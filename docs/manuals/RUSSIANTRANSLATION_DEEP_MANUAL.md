@@ -173,7 +173,7 @@ editor for the sole operator of these drafts.
 
 | ID | Question | Primary detail link |
 |---|---|---|
-| Q1 | RU/DE/(EN) sense text | [article site](https://gasyoun.github.io/SanskritLexicography/) · [store local](../../RussianTranslation/src/pwg_ru_translated.jsonl) · [pwg_ru §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) |
+| Q1 | RU/DE/(EN) sense text | [article site](https://gasyoun.github.io/SanskritLexicography/) · store local · [pwg_ru §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) |
 | Q2 | Edition layer | [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) · [_pilot_gen_merged.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_gen_merged.py) |
 | Q3 | Sense order | [audit_window.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) · [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/AGENTS.md) |
 | Q4 | Mask | [pwg_mask.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py) |
@@ -185,16 +185,16 @@ editor for the sole operator of these drafts.
 | Q11 | Declension | [ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md) · [NOMINAL_GRAMMAR_AB.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NOMINAL_GRAMMAR_AB.md) |
 | Q12 | Supplement typology | [relationships_rollup.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/relationships_rollup.tsv) · [REGLUE_SPEC.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md) · [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md) |
 | Q13 | Provenance | [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) · [H1110](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1110-Opus_SanskritLexicography_pwg-ru-post-h1080-audit-fix-skills-c4-restart_17.07.26.md) |
-| Q14 | review / gold | [HUMAN_GOLD_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md) · [h178 sheet](../../RussianTranslation/review/h178_da_sheet.html) · [h180 typology](../../RussianTranslation/review/h180_typology_sheet.html) |
+| Q14 | review / gold | [HUMAN_GOLD_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md) · h178 sheet · h180 typology |
 | Q15 | Residue / markup | [H1302 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1302_GERMAN_RESIDUE_SWEEP_REPORT_2026-07-19.md) · [FAILURE_MODES…](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md) |
 
 ### Cannot answer yet — primary detail links
 
 | ID | Question | Primary detail link |
 |---|---|---|
-| N1 | Unified ab RU canon | [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) · [proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md) · [sheet](../../RussianTranslation/review/h1303_abbrev_sheet.html) |
-| N2 | Style doublets / v. l. / *im Comp.* | [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md) · [STYLE_RESEARCH…](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md) · [sheet](../../RussianTranslation/review/h1306_style_sheet.html) |
-| N3 | Print G5–G10 | [HUMAN_GOLD_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md) · [readiness](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/readiness_report.md) · [h180 sheets](../../RussianTranslation/review/h180_typology_sheet.html) |
+| N1 | Unified ab RU canon | [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) · [proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md) · sheet |
+| N2 | Style doublets / v. l. / *im Comp.* | [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md) · [STYLE_RESEARCH…](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md) · sheet |
+| N3 | Print G5–G10 | [HUMAN_GOLD_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md) · [readiness](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/readiness_report.md) · h180 sheets |
 | N4 | Full PWG→RU | [H1339](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1339/H1339_TIER_B_STATUS_2026-07-19.md) · [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) |
 | N5 | Sense WSD/freq | [H335](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H335-Fable_RussianTranslation_pipeline-capability-audit_08.07.26.md) · [sense-corpus-join](https://github.com/gasyoun/claude-config/blob/main/commands/sense-corpus-join.md) |
 | N6 | Sense #1 = most common? | [RENOU_H6_ZIPF.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_H6_ZIPF.md) |
@@ -207,9 +207,9 @@ editor for the sole operator of these drafts.
 | N13 | AI better than human | [HUMAN_GOLD_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md) · [JUDGE_POLICY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_POLICY.md) |
 | N14 | Edition timeline UI | [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) · [edition_deltas.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/edition_deltas.tsv) |
 | N15 | Every <ls> scan | [CITATION_COVERAGE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CITATION_COVERAGE.md) · [cologne-link-target](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-link-target.md) |
-| N16 | Learner filter product | [REGLUE_SPEC.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md) · [h180_learner](../../RussianTranslation/review/h180_learner_sheet.html) |
+| N16 | Learner filter product | [REGLUE_SPEC.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md) · h180_learner |
 | N17 | Paid drain *now* | [RESULTS_LOG](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md) · [PROBE_LOG](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/GENERATION_API_PROBE_LOG.md) · [H1447](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/H1447_C4_LIVE_GATE_2026-07-22.md) |
-| N18 | Glyph quarantine truth | [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) · [GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) · [quarantine local](../../RussianTranslation/src/pwg_ru_translated.jsonl.h1080_quarantine.jsonl) |
+| N18 | Glyph quarantine truth | [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) · [GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) · quarantine local |
 
 **Rule:** do not claim N* as product answers. Prefer Q* with the linked artifact open.
 
@@ -230,7 +230,7 @@ Full table: [pwg_ru.md §8.0](https://github.com/gasyoun/SanskritLexicography/bl
 | Parallel data | grammar/Zaliznyak (not in prompt) | — |
 | Post-LLM | — | ru/en, evidence*, review_status, provenance, site tooltips |
 
-Example pre-LLM inputs (local): [nakzatra.raw.txt](../../RussianTranslation/src/pilot/input/nakzatra.raw.txt) · [nakzatra.portrait.json](../../RussianTranslation/src/pilot/input/nakzatra.portrait.json).
+Example pre-LLM inputs (local): nakzatra.raw.txt · nakzatra.portrait.json.
 
 ## 3. mw_ru — the finished pipeline (post-mortem chapter)
 

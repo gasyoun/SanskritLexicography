@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 > Org-level conventions (the wider `sanskrit-lexicon` ecosystem, the csl-orig
 > correction workflow, GitHub issue taxonomy, `.ai_state.md` protocol, Windows
-> encoding rules) live in [`../CLAUDE.md`](../CLAUDE.md) and are loaded
+> encoding rules) live in [`../CLAUDE.md`](../Uprava-h4060-drain/CLAUDE.md) and are loaded
 > automatically. This file covers only what is specific to **this** repository.
 
 ## What this repository is
@@ -73,7 +73,7 @@ which contain full XML records, not bare headwords), `SCH-accents-IAST-{N}.txt`
 
 Dictionary codes seen here: AP, BHS, BUR, CAE, CCS, GRA, INM, MD, MW, PD, PWG,
 PWK, SCH, SKD, VCP, VEI (see [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md) for the full ecosystem
-table in [`../CLAUDE.md`](../CLAUDE.md)).
+table in [`../CLAUDE.md`](../Uprava-h4060-drain/CLAUDE.md)).
 
 ## Dual changelog — shared 1.144.x namespace (H3258)
 
