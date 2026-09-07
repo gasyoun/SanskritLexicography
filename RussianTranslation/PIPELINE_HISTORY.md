@@ -38,9 +38,30 @@ crosswalk from 65.3% to 70.0%. What is left is Böhtlingk's own doubled spelling
 does not cover. Those are **dropped, not resolved by citation count**: a majority vote would
 have bought perhaps five more points and made every number in the table unfalsifiable.
 
-Final: 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%), shipped
-as tooltip text with Palsule's printed page — Palsule has no online edition, so there is no
-href to give, and inventing one was the failure mode the spec named first.
+Coverage: 1,226 / 1,751 distinct coordinates (70.0%; 1,144 = 65.3% without the two
+filters), 1,441 / 2,760 citations (52.2%), shipped as tooltip text with Palsule's printed
+page — Palsule has no online edition, so there is no href to give, and inventing one was
+the failure mode the spec named first.
+
+**The verifier pass is the more useful half of this entry.** An independent adversarial
+review (Fable 5.1) reproduced every number exactly and then found the documentation
+wrong where the code was right. Two of the three spot-checks this session published —
+`snih` 26,91 → *snehane*, `sthā` 22,30 → *sthāne* — named arthas that are in the record
+but are **not what PWG attests at those coordinates**: Böhtlingk prints `(prItO)` and
+`({#gatinivfttO#})` right beside those citations. The tooltips were never wrong; the
+evidence offered for them was. Chasing that down produced the check the pass should have
+had from the start — Böhtlingk's parenthesized artha is an *independent witness* of what
+a coordinate means, so agreement with it is a measurable accuracy rate rather than an
+anecdote: **139/232 exact (59.9%)**, 174/232 (75.0%) allowing citation-form variation.
+The same review caught an 8-item truncation that had silently dropped `sattāyām` — bhū's
+canonical artha, the first entry of the entire dhātupāṭha — from `DHĀTUP. 1,1` while
+`artha_count` still reported 11; removing it raised measured agreement by 2.6 points,
+which is how one knows the defect was substantive and not cosmetic.
+
+**Transferable, second:** a coverage number and an accuracy number are different claims,
+and a crosswalk that reports only coverage is reporting the easy half. Look for a witness
+already inside the source that says what the mapping *should* produce — here it had been
+sitting in parentheses next to every citation all along.
 
 **Transferable:** when a crosswalk between an old dictionary and an index looks impossible for
 want of a third table, check whether the dictionary is itself an edition of the thing being

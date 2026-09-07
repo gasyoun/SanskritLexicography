@@ -178,30 +178,62 @@ def test_dhatup_palsule_coordinate_parse():
 
 
 def test_dhatup_palsule_lookup():
-    """H1333: the committed concordance resolves a coordinate to Palsule's own
-    artha gloss for that root. `snih` at DHĀTUP. 26,91 must carry `snehane`; the
-    Westergaard gaṇa-level href is untouched by the enrichment."""
+    """H1333: the concordance resolves a coordinate to Palsule's artha glosses for the
+    root Böhtlingk numbers there.
+
+    The assertions use the artha PWG ITSELF prints in parentheses beside the citation —
+    `{#sni/hyati (prItO)#} <ls>DHĀTUP. 26,91</ls>` and `<ls>DHĀTUP. 22,30</ls>
+    ({#gatinivfttO#})` — because that is an independent witness of what the coordinate
+    means. (An earlier cut of this test asserted `snehane` / `sthāne`: both are in the
+    record, but neither is what PWG attests at that coordinate, so they pinned the
+    lookup without testing its correctness. H1333 verifier, 07-09-2026.)"""
     if not dhp.available():
         print('  .. skipped test_dhatup_palsule_lookup (concordance absent)')
         return
     rec = dhp.record('', 'DHĀTUP. 26,91')
     if not rec or rec.get('root_iast') != 'snih':
         fail('DHĀTUP. 26,91 record: %r' % rec)
-    if 'snehane' not in (rec.get('arthas') or []):
-        fail('snih artha glosses missing snehane: %r' % rec.get('arthas'))
+    if 'prītau' not in (rec.get('arthas') or []):
+        fail('26,91 must carry PWG-attested prītau, got %r' % rec.get('arthas'))
+    rec2 = dhp.record('DHĀTUP. 22,', '30.')
+    if not rec2 or 'gatinivṛttau' not in (rec2.get('arthas') or []):
+        fail('22,30 must carry PWG-attested gatinivṛttau, got %r'
+             % (rec2 or {}).get('arthas'))
+    # aṅg 5,38: PWG's German gloss «gehen» = gatau.
+    rec3 = dhp.record('', 'DHĀTUP. 5,38')
+    if not rec3 or 'gatau' not in (rec3.get('arthas') or []):
+        fail('5,38 aṅg must carry gatau, got %r' % (rec3 or {}).get('arthas'))
     tip = dhp.palsule_for('', 'DHĀTUP. 26,91')
     if not tip or 'Palsule √snih' not in tip or 'P175' not in tip:
         fail('tooltip: %r' % tip)
     # NEVER a fabricated href: Palsule has no online edition, the datum is text.
     if 'http' in tip:
         fail('Palsule tooltip must not carry a URL: %r' % tip)
-    # sthā 22,30 -> sthāne (a second, independent coordinate)
-    tip2 = dhp.palsule_for('DHĀTUP. 22,', '30.')
-    if not tip2 or 'sthāne' not in tip2:
-        fail('DHĀTUP. 22,30 tooltip: %r' % tip2)
     # a coordinate Böhtlingk lists under two root spellings is DROPPED, not guessed
     if dhp.record('', 'DHĀTUP. 2,8') is not None:
         fail('conflicted coordinate 2,8 must not resolve')
+
+
+def test_dhatup_palsule_record_is_complete_and_clean():
+    """H1333 verifier fixes: `arthas` is stored in FULL (an 8-item cut silently dropped
+    bhū's canonical `sattāyām` from DHĀTUP. 1,1 while artha_count still said 11), and no
+    displayed root carries the footnote digits the XLS captured (`gādh39`)."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_palsule_record_is_complete_and_clean')
+        return
+    import re as _re
+    rec = dhp.record('', 'DHĀTUP. 1,1')
+    if not rec or rec.get('root_iast') != 'bhū':
+        fail('1,1 record: %r' % rec)
+    if 'sattāyām' not in (rec.get('arthas') or []):
+        fail('bhū 1,1 must carry sattāyām, got %r' % rec.get('arthas'))
+    if len(rec['arthas']) != rec['artha_count']:
+        fail('arthas truncated: %d stored vs artha_count %d'
+             % (len(rec['arthas']), rec['artha_count']))
+    for coord, r in dhp._load().items():
+        if _re.search(r'\d$', r.get('palsule_root') or ''):
+            fail('%s: footnote digits leaked into palsule_root %r'
+                 % (coord, r['palsule_root']))
 
 
 def test_dhatup_palsule_wired_into_tooltip():
@@ -232,6 +264,7 @@ def main():
         test_h2005_ed_bomb_ru_display_not_resolve,
         test_dhatup_palsule_coordinate_parse,
         test_dhatup_palsule_lookup,
+        test_dhatup_palsule_record_is_complete_and_clean,
         test_dhatup_palsule_wired_into_tooltip,
     ]
     for t in tests:
