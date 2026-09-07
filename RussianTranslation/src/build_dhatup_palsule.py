@@ -275,6 +275,19 @@ _L_MW = re.compile(r'^<L>([\d.]+)<pc>[^<]*<k1>([^<]*)<k2>')
 #: running prose, and where the two channels differ the field is the one to believe.
 _MW_WESTERGAARD = re.compile(r'<info\b[^>]*\bwestergaard="([^"]*)"')
 
+#: A variant-reading note, and the reason the prose channel cannot be trusted raw
+#: (H4339 adjudication, 07-09-2026). MW's `kzal` article says, in full:
+#:   `<hom>1.</hom> <s>kzal</s> ¦ <ab>v.l.</ab> for √ <s>kzar</s>, <ls>Dhātup. xx, 21</ls>.`
+#: That sentence ASSIGNS 20,21 to `kzar` and names `kzal` as the rejected reading — so
+#: harvesting the citation as a `kzal` claim inverts MW's own statement. This is the
+#: `pad`/3,1 defect exactly, and the field-first rule does not catch it here because no
+#: `<info westergaard>` anywhere numbers 20,21, so the prose fallback runs unguarded.
+#: A line carrying this marker contributes NO prose claimant. Deliberately line-scoped
+#: and deliberately blunt: over-suppression drops a coordinate (the conservative
+#: failure, which this file already accepts at `2,8`), under-suppression ships a root
+#: the source disowns.
+_MW_VL = re.compile(r'<ab>\s*v\.\s*l\.\s*</ab>')
+
 _ROMAN_VALUES = {'i': 1, 'v': 5, 'x': 10, 'l': 50, 'c': 100}
 
 
@@ -297,7 +310,7 @@ def roman_to_int(s):
 
 
 def read_mw_coords(mw):
-    """mw.txt -> (prose, field, field_seen, n_entries_seen).
+    """mw.txt -> (prose, field, field_seen, n_entries_seen, vl_dropped).
 
     Two INDEPENDENT channels, deliberately not merged here — the caller's policy
     decides which one speaks for a coordinate:
@@ -321,12 +334,25 @@ def read_mw_coords(mw):
       `field_seen`    -> every coordinate the field mentions at all, whoever it names.
                          A coordinate MW itself has numbered is one where prose must
                          NOT be consulted as a fallback: MW has already spoken.
+      `vl_dropped`    -> coordinates whose only prose mention sat on a `<ab>v.l.</ab>`
+                         line and was therefore refused (see `_MW_VL`). Reported so the
+                         suppression is a published number, not a silent filter.
+
+    CONTAINMENT IS CASE-FOLDED, and that is worth stating because SLP1 case is not
+    decoration: folding conflates ā/a, ī/i, ū/u, ṝ/ṛ, ś/s, ṅ/n and ṇ/r. It is permissive
+    (it can only admit claimants a strict test would refuse, never swap one), and the
+    9 fills that depend on it — 2,19 `Urd`/`urda`, 5,53, 9,67, 9,74, 14,9, 26,109,
+    28,28, 31,14, 32,63 — are ones where the case-sensitive claimant set is EMPTY, so
+    no row's attribution turns on the fold. `pad` still fails against `ata` either way.
+    Kept because MW and Westergaard genuinely differ on vowel case in citation forms;
+    documented because relying on it undocumented would be luck, not design.
 
     MW uses the same Cologne markup as PWG (`<L>…<k1>KEY<k2>` opens, `<LEND>` closes),
     only the citation syntax differs (Roman gaṇa)."""
     prose = defaultdict(set)
     field = defaultdict(set)
     field_seen = set()
+    vl_dropped = set()
     key = None
     entries = 0
     with open(mw, encoding='utf-8') as f:
@@ -341,11 +367,20 @@ def read_mw_coords(mw):
                 continue
             if key is None:
                 continue
+            is_vl = bool(_MW_VL.search(line))
             for rx in (_MW_DHATUP, _MW_DHATUP_N_FULL, _MW_DHATUP_N_GANA):
                 for mm in rx.finditer(line):
                     gana = roman_to_int(mm.group(1))
-                    if gana is not None:
-                        prose['%d,%s' % (gana, mm.group(2))].add(key)
+                    if gana is None:
+                        continue
+                    coord = '%d,%s' % (gana, mm.group(2))
+                    if is_vl:
+                        # MW is naming this article as the REJECTED reading of the
+                        # coordinate. Recording it as a claimant would ship the one
+                        # root the source explicitly disowns.
+                        vl_dropped.add(coord)
+                        continue
+                    prose[coord].add(key)
             for mm in _MW_WESTERGAARD.finditer(line):
                 for part in mm.group(1).split(';'):
                     bits = part.split(',')
@@ -358,7 +393,7 @@ def read_mw_coords(mw):
                     field_seen.add(coord)
                     if key.lower() in (bits[0] or '').lower():
                         field[coord].add(key)
-    return prose, field, field_seen, entries
+    return prose, field, field_seen, entries, vl_dropped
 
 
 def mw_claimants(prose, field, field_seen):
@@ -367,9 +402,26 @@ def mw_claimants(prose, field, field_seen):
     Where MW has numbered a coordinate in its own structured field, that statement is
     what MW says and the prose channel is not consulted — including when the field
     names nobody usable, in which case the coordinate simply has no MW claimant. This
-    is stricter than counting prose citations (241 usable fills instead of 193, because
-    removing spurious prose claimants also *un*-ambiguates coordinates) and it is the
-    reading that gets 3,1 right."""
+    is the reading that gets 3,1 right, and it yields MORE usable fills than a
+    prose-first policy (241 against 193 when this pass was first measured), because
+    removing spurious claimants also *un*-ambiguates coordinates two prose citations had
+    made look contested.
+
+    TWO DIFFERENT QUANTITIES, DO NOT CONFLATE THEM. Prose-first produces more
+    single-claimant COORDINATES (`_stats.mw_coords_single_claimant_prose_first`, 1245
+    against this policy's 1056) and fewer usable FILLS, because most of its extra
+    claimants are on coordinates PWG already resolved — they add confident-looking
+    noise to the cross-validation, not coverage. The claimant counterfactual is
+    published because it is re-derivable from the artifact; the fill counterfactual is
+    a measurement of an earlier build and is quoted as such.
+
+    THE FALLBACK IS THE WEAK BRANCH, and it is measured, not assumed away. Where no
+    `<info westergaard>` numbers a coordinate anywhere in MW, prose IS consulted — that
+    is a genuinely different evidence class from a field claim, and it is counted apart
+    (`coords_filled_from_mw_prose_only`). Prose that sits on a variant-reading line is
+    refused outright (`_MW_VL`): the `pad`/3,1 defect recurs in this branch, and at
+    20,21 it shipped a root MW's own sentence disowns until the H4339 adjudication pass
+    caught it."""
     out = {}
     for coord in set(prose) | set(field_seen):
         claim = field.get(coord) if coord in field_seen else prose.get(coord)
@@ -531,6 +583,9 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
         'mw_available': False, 'mw_source': None, 'mw_entries': 0,
         'mw_coords_cited': 0, 'mw_coords_cited_in_prose': 0,
         'mw_coords_in_westergaard_field': 0, 'mw_coords_single_claimant': 0,
+        'mw_coords_single_claimant_prose_first': 0,
+        'mw_prose_claims_refused_variant_reading': 0,
+        'coords_filled_from_mw_prose_only': 0,
         'mw_coords_overlapping_pwg': 0, 'mw_only_coords': 0,
         'coords_filled_from_mw': 0, 'coords_filled_from_mw_respell': 0,
         'mw_candidates_without_palsule_row': 0,
@@ -543,11 +598,17 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
                          'second-witness pass skipped\n' % mw)
         return empty, []
 
-    prose, field, field_seen, mw_entries = read_mw_coords(mw)
+    prose, field, field_seen, mw_entries, vl_dropped = read_mw_coords(mw)
     # "Unambiguous" is deliberately the strictest reading available: exactly ONE article
     # claims the coordinate in whichever channel speaks for it. A coordinate with two
     # claimants is not used at all rather than resolved by a rule nobody has measured.
     mw_single = mw_claimants(prose, field, field_seen)
+    # The counterfactual the docs compare against, computed here so it is a published
+    # number rather than a claim: what a prose-first policy would have called
+    # unambiguous. It is LOWER, which is the point — spurious prose claimants make
+    # coordinates look contested that MW's own field settles.
+    prose_first = {c for c in set(prose) | set(field_seen)
+                   if len(prose.get(c) or field.get(c) or ()) == 1}
 
     agree = disagree = variant = 0
     disagreements = []
@@ -580,6 +641,7 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
         })
 
     filled = respelled = no_row = 0
+    prose_only_fills = 0
     for coord in sorted(set(coords) - set(table), key=_coord_key):
         mw_r = mw_single.get(coord)
         if not mw_r:
@@ -601,6 +663,10 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
             no_row += 1
             continue
         table[coord] = row
+        if coord not in field_seen:
+            # No MW field numbers this coordinate anywhere: the fill rests on running
+            # prose alone. Weaker evidence than a field claim, so it is counted apart.
+            prose_only_fills += 1
         if source == 'mw':
             filled += 1
         else:
@@ -626,10 +692,13 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
         'mw_coords_cited_in_prose': len(prose),
         'mw_coords_in_westergaard_field': len(field_seen),
         'mw_coords_single_claimant': len(mw_single),
+        'mw_coords_single_claimant_prose_first': len(prose_first),
+        'mw_prose_claims_refused_variant_reading': len(vl_dropped),
         'mw_coords_overlapping_pwg': overlap,
         'mw_only_coords': len(mw_all) - overlap,
         'coords_filled_from_mw': filled,
         'coords_filled_from_mw_respell': respelled,
+        'coords_filled_from_mw_prose_only': prose_only_fills,
         'mw_candidates_without_palsule_row': no_row,
         'cross_validated': examined,
         'cross_agree': agree,
