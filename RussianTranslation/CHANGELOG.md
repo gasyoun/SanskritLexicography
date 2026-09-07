@@ -13,6 +13,346 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.150] - 2026-09-07
+
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+- H4055: **a content-only mirror sync is no longer byte-shaped like a no-op.** The
+  [refresh_tm_mirror.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/refresh_tm_mirror.py)
+  ledger row (and a new `--receipt FILE` durable copy) now carries the content view beside
+  the existing row-set counters — `src_sha256`, `noop`, `shared_ids`/`ru_equal`/
+  `changed_ru` and capped `changed_ru_keys` (semantic row identity = the shared
+  `rid()` = `key1|subcard|sense_tag|de[:80]`, identical to `audit_store_gates.diff_stores`).
+  The H3751 refresh of 31-08 was the live demonstration of the defect: every row counter 0,
+  yet `mirror_sha 3022239c63ac → 58c2172607c3` — nothing in the receipt could say why.
+  The copy itself now goes through
+  [`store_write.locked_store_rewrite`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_write.py)
+  (PromoteClaim + unique fsynced backup + atomic replace) as raw-line passthrough, verified
+  **byte-identical to src after the write** (any drift restores the backup and raises) — the
+  mirror stays a straight copy, never a re-serialization. Selftest 17 → 35/35: the two
+  acceptance fixtures (content-only update and byte-identical no-op, both with all-zero
+  row-set counters) now separate on `changed_ru` 1 vs 0 and on sha movement; proven by
+  [h4055_store_lineage_evidence.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h4055_store_lineage_evidence.py)
+  with durable receipts
+  ([content-only](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4055_receipt_content_only.json),
+  [no-op](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4055_receipt_noop.json)).
+  The src/mirror/box evidence matrix
+  ([json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4055_store_mirror_box_matrix.json),
+  [md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4055_store_mirror_box_matrix.md))
+  records the 04/05-09 state: Mac store **MISSING** (gitignored, per-box — the explicit
+  missing-box state), mirror hydrated sha256 = H3947 ledger `mirror_sha_after` = LFS pointer
+  oid `79d72dbcb4b3…` at [pwg-ru-data `2c4f770`](https://github.com/gasyoun/pwg-ru-data/commit/2c4f770642bd1c9f766d6bb63de5636ca855fdbf)
+  (pointer ≠ bytes; all three agree), Windows-box observations UNAVAILABLE, cross-box
+  equality NOT ASSERTED, row counts (11,462 / 11,519) recorded as historical sizes, never
+  lineage. Zero provider calls; live mirror not refreshed (02-09 already synchronized,
+  `only_src=0 only_mirror=0 changed_ru=0` re-evidenced by the hash chain); canonical store
+  untouched; real ledger untouched.
+_Dr. Mārcis Gasūns_
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+- H4052: **delivery outcomes are now a derived, evidence-coded report — staging can no longer
+  pass for translation.** New
+  [pwg_delivery_report.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_delivery_report.py)
+  derives the whole digest from the EXISTING readers — `release_readiness.review_counts`/
+  `gold_counts`, `store_flags.is_print_ready`, `store_path.canonical_store` — over whatever
+  surface the box actually has (env override → canonical store → the pwg-ru-data durable TM
+  mirror), and applies the H4052 evidence rule: **missing evidence is unknown, never zero**
+  (on the 04-09 Mac box the review-queue CSV, gold CSV and RU TM sidecar are absent → reported
+  `unknown`, with the surface named). Counts sense rows, subcards (distinct `key1+subcard`)
+  and headwords (distinct `key1`) separately; carries source hashes, the append-only
+  `mirror_refresh_ledger` history and `max(provenance.generated_at)` as the
+  last-paid-generation bound. The delivered-translation assertion
+  (`classify_receipt` / `is_delivered_translation`) fails closed: only a
+  promotion-journal-terminal stage (`store_committed`/`complete`) backed by BOTH a changed
+  canonical-store fingerprint AND a promotion id classifies as delivered — a STAGED ONLY
+  receipt (H3679: merged PR, zero paid calls), a lineage reconciliation (H3690), a docs-only
+  commit and any unknown stage all classify as what they are, pinned by the in-file selftest.
+  Committed digest
+  ([json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/PWG_DELIVERY_REPORT_04-09-2026.json),
+  [md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/PWG_DELIVERY_REPORT_04-09-2026.md))
+  reproduces the 04-09 audit baseline exactly (11,519 rows; sha256 `79d72dbcb4b3…` byte-equal
+  to the audit's store hash; approved 3 / print-ready 3 / ai_translated 11,514 /
+  needs_review 2), and gives all seven Lane A keys one evidence-backed disposition each:
+  `residual_unfired` — translated once in H3663, deterministic repair measured ineligible
+  (FINDINGS §614), re-translation staged only (PR #1978), paid fire never executed
+  (chain funnel selected=7, paid calls=0), all seven absent from the store; the 14 durable
+  fire inputs in `pwg-ru-data/raws/` verified present. The ledger history supersedes the
+  H3690 "11 462 durable base" verdict: the durable mirror has held 11,519 rows since
+  29-08 11:24Z (H3663 refreshes) and converged byte-exact to the audit's store hash on 02-09
+  (H3947 refresh `mirror_sha 58c217… → 79d72db…`), so the fire-time store-base gate is
+  satisfied on durable evidence. Remaining work stays visibly active: the Uprava GTD
+  `@DO — Fire H3679's paid c1 window` row remains the bounded owner. Zero provider calls;
+  canonical store untouched (mirror read-only).
+_Dr. Mārcis Gasūns_
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+- H4056: **the first PWG evidence packet — demonstration, not voting.** Per the
+  04-09-2026 ruling (voting premature until alignment/corpus/TM evidence is
+  assessed), [build_h4056_evidence_packet.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h4056_evidence_packet.py)
+  selects ten machine-eligible cards from the live store through the REAL gates —
+  decided-exclusion, `visible_german`, `machine_flags` D1/D3/D4, corpus-evidence
+  quarantine, and the H3948 four-tier segmentation quarantine recomputed
+  read-only (331 changed key1 over 123,366 records, matching the committed H3948
+  report) — funnel 11,519 → **5,584 eligible**, ten drawn round-robin (n=10).
+  Each card renders the print-facing Russian beside the German source with
+  citation apparatus and a machine-verdict panel (gates, corpus
+  supports/silent/contradicts, generation provenance, TM-lookup result); the
+  card TM is built FROM the store into scratch and resolved through the real
+  content-addressed lookup with the canonical denylist applied: **10/10 HIT,
+  zero provider calls**. Voting is not requested: the artifact carries a visible
+  «ЭТО НЕ ГОЛОСОВАНИЕ» banner with every vote/download/note control
+  CSS-disabled, and its lock is minted gate `H4056-DEMO`, which
+  `apply_decisions` PARKS — the packet has no production apply route by
+  construction. The scratch replay (temp-dir copies of lock/CSV/store,
+  reviewer `H4056-scratch-replay (agent, not human)`) passes **8/8**: default
+  route parks rc=2; explicit G5 route applies with stable-key routing
+  (approve→approved / reject→reject / defer→needs_review); a stale-hash export
+  is refused and leaves the CSV byte-identical; the canonical store sha256 is
+  unchanged. Evidence:
+  [manifest](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4056_evidence_packet_manifest.json),
+  [replay receipt](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4056_scratch_replay_receipt.json),
+  [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4056_evidence_packet_report.md),
+  lock `review/locks/h4056-evidence-packet-2026-09-05.lock.json`; the viewable
+  HTML stays gitignored (unpublished store RU/DE). No prior sheet or vote
+  touched; Wave-1 dump untouched; store writes 0.
+_Dr. Mārcis Gasūns_
+_Created: 05-09-2026 · Last updated: 05-09-2026_
+- H4057: **the GLM 5.3 Flash route is offline-qualified behind the existing paid-call kernel —
+  qualification can no longer be blocked on an absent adapter, and unknown cost can no longer
+  reach dispatch.** New
+  [`GlmFlashAdapter`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_pipeline/providers.py)
+  (route `glm-flash`, operator name `glm`) shares the `_OpenAICompatibleAdapter` body — same
+  reservation ledger, strict request/response schema, raw response receipts, usage provenance,
+  timeout, serialized bounded calls — with the actually-resolved identity `glm-5.3-flash`
+  (OpenCode default `zai-coding-plan/glm-5.3-flash`, read from config metadata, not from chat
+  memory; local slug spellings disagree, the observed value wins). **No price card is installed:**
+  `estimate_cost_usd` refuses the route, the kernel now converts that refusal into an accounted
+  `KernelRefusal(cost_ceiling)` BEFORE any reservation (previously an uncaught `ProviderError`
+  past `assert_budget`), and token usage without a card normalizes to `cost_basis: unevaluable`
+  — no Claude/xAI/DeepSeek price is borrowed, so a dollar-bounded GLM campaign fails closed with
+  0 dispatches and 0 reservations. Offline replay
+  ([tool](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h4057_glm_route_qualification.py),
+  sealed
+  [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4057_glm_route_qualification.json),
+  verdict `QUALIFIED_OFFLINE`): pure gloss / Sanskrit `{#…#}` / apparatus `<ls>`+Nachtr. /
+  homonyms / long card parse with source strings verbatim; malformed, missing-usage and
+  route-substitution replies each fail terminally accounted; the kernel mechanics run against a
+  `synthetic-qualification-only` price card, stamped so no receipt can be misread as observed
+  economics. Zero provider calls, zero Claude CLI invocations, canonical store untouched.
+  The sealed 30-card live manifest builder, the three-gate rubric (model-route validity /
+  mechanical fidelity / independent semantic quality) and the exact capped live instructions
+  stay in the
+  [qualification packet](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/H4057_GLM_ROUTE_QUALIFICATION_PACKET_05-09-2026.md),
+  staged behind separately-authorized prerequisites (canary-fence extension ruling, verified
+  z.ai list prices, `ZAI_API_KEY`, endpoint confirmation). Production remains on the current
+  authorized headless route. Proven by
+  [`tests/test_pwg_pipeline_glm_route.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_pwg_pipeline_glm_route.py)
+  (13 tests); `pytest -k pwg_pipeline` 142 passed.
+_Dr. Mārcis Gasūns_
+- H4053: **the missing bounded report-only sample translate path exists — "translate N
+  pre-selected quarantine keys, report only, never promote" is now a runnable, offline-proven
+  workflow with a frozen 30-card packet.** New
+  [`src/pwg_quarantine_sample30.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_quarantine_sample30.py)
+  (`freeze` / `run` / `selftest`) on the shared paid-call kernel: exact supplied key list or
+  frozen packet only, immutable input hashes, isolated caller-supplied evidence dir,
+  `promotable=False` campaigns, **no promote/apply code path in the module at all**. Proven
+  6/6 offline against the fake provider
+  ([pytest](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_h4053_quarantine_sample30.py)):
+  max-call reservation strictly before provider I/O (ceiling refusal = `budget_refusal`, 0
+  provider calls on the refused slot); resume without duplicate provider spend (crash-injected
+  run: interrupted call with no sealed response is terminally accounted
+  `interrupted_no_provider_io` and re-executes under a derived resume key in a fresh `-rN`
+  campaign namespace; a call WITH a sealed response is left open for human reconciliation and
+  never re-dispatched — 2+4 dispatches deliver 6 cards, each translated exactly once); per-row
+  attribution (call_id, reservation, request/response SHA-256, usage, served model); store/
+  mirror/queue hashed before+after and refused on drift, absent surfaces recorded as
+  `guard_absent_surfaces`, never fabricated; dry run = zero dispatches, zero reservations.
+  Frozen nested sample
+  [`reports/H4053_quarantine_sample30_frozen.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4053_quarantine_sample30_frozen.json):
+  exactly 30 distinct identities from the 01-08 200-row sample (freeze seed 20260904); all 200
+  parent identities still resolve in the fresh 10,902-row quarantine — `unavailable` and
+  `deterministic_substitutions` empty. Label discipline preserved in code and packet:
+  10,902/11,519 is a **segmentation-change flag, NOT an observed bad-translation rate**; every
+  row ships `ru_quality_verdict: unknown_not_measured`, the five review classes
+  (segmentation_only / semantic_mistranslation / sanskrit_loss / apparatus / ambiguous) are
+  assigned only by independent human review after actual paid generation. Runbook with exact
+  dry-run, replay and separately-gated execute commands:
+  [`pwg_ru/h4053/H4053_QUARANTINE_SAMPLE30_RUNBOOK.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4053/H4053_QUARANTINE_SAMPLE30_RUNBOOK.md).
+  Recorded dependency: `glm-flash` still has no price card, so a dollar-bounded GLM execute
+  fails closed (`cost_ceiling`) before any reservation — live execute stays blocked until real
+  GLM list prices land; no Claude Code invocation from the GLM lane. Zero provider calls and
+  zero store writes were made by this work; the quality verdict remains unmeasured by design.
+# H4270 — gloss-wrapper prompt hardening + one `_apta` c1 re-test: funded defect fixed, new single-sense defect named, audit requeue (no ship)
+_Date: 06-09-2026 · Executor: OxAlpha (`glm-5.3-flash`, opencode lane) · 1 paid call on c1_
+- `MASK_PREAMBLE` (gen_opt_harness2.py) gains the GLOSS WRAPPERS `{%…%}` preservation block
+  (GAPS §17 GLOSS-DE-RESIDUE convention) with the `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.`
+  → `а) {%некий%} …` worked example; pinned by `test_gloss_wrapper_prompt_preservation_h4270`
+  (rule clauses + worked example + end-to-end mini-manifest fixture asserting DE `{%…%}` stays
+  inline in the masked skeleton and the rule survives into the generated JS). Canary golden
+  manifest regenerated for the intended prompt change (`canary_manifest_build_selftest` PASS);
+  `window_selftest` 221/222 (only the red-by-design parity gate fails).
+- Live re-test on `_apta` (c1, manifest `h4270rh`, nominal, `--budget=1 --no-grammar --no-tm`,
+  sha `9523136b…`): window success 139.9 s first attempt; **7/7 DE wrappers preserved**
+  (H4015: 1/8), zero `markup_wrapper_dropped`, `<ls>`/`{#…#}`/`{#jawA#}` intact, zero «».
+- Audit still requeues — on a NEW high-confidence defect the fix exposed: sense 4b, the model
+  wrapped and translated a MASKED English span (`{%equation of a degree%}` →
+  `{%уравнение степени%}`) instead of echoing `{Tn}` for deterministic verbatim restore
+  (`foreign_gloss_translated`). `COVERAGE-OVER(17/7)` identical to H4015 (pre-existing).
+  **AUDIT_DEFECT_REQUEUE, 3rd occurrence — named stop, no re-burn; store untouched;
+  `_apta` stays on `H3654_defect_keys.txt`.** Decision to MG: one-clause rule tightening
+  (`{Tn}` stays verbatim, never translate/wrap a masked span) + 4th-window authorization,
+  or option b (hand-marking) / option c (unwrapped-acceptance).
+- Record: pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md
+# H4277 — the c1 readiness probe was refusing itself as a prompt injection: root cause from the transcript, provenance bridge, zero paid calls
+_Created: 07-09-2026 · Last updated: 07-09-2026_
+_Date: 07-09-2026 · Executor: Opus 5 (`claude-opus-5`), interactive · 0 paid calls_
+- **Root cause of the 07-09 01:41Z `content`-class NO-GO, read off evidence already on disk.**
+  The measured call's session transcript (`session_id` from the raw envelope →
+  `<config-dir>\projects\D--pwg-ru-cli-cwd\<id>.jsonl`) records the model refusing the probe as
+  *"a prompt-injection attempt layered on ambient context"* and naming three reasons — plan
+  mode's turn-ending rule, "no actual translation cards were provided", and the surrounding
+  system-reminders — then emitting `{"ok": false}` through `StructuredOutput` on purpose. So the
+  NO-GO was **FALSE**: c1 was healthy, the gate fail-closed correctly on a bad reading, and the
+  defect was in `_probe_prompt`. Cost of the false reading: $0.19 and one of two rationed daily
+  attempts. Hypothesis (b) of the NO-GO doc (the H4277 `{Tn}` clause) is ruled out — the
+  objection is that there are *no cards at all*, not that any rule is wrong.
+- **Why it is bimodal on byte-identical bytes.** H3157's prepend produced a prompt whose halves
+  read as adversarial: a task-shape block promising `=== CARD <key> ===` blocks, then zero cards,
+  then a differently-voiced order to emit one fixed string. That is the textual signature of an
+  injection, so each call *decides* whether to trust the second instruction — the warm-up 16 s
+  earlier took the cooperative reading, the measured call took the adversarial one.
+- **Fix: `_PROBE_PROVENANCE_BRIDGE`** in `max_account_orchestrator.py`, between the production
+  block and the filler, answering each objection in the harness's own voice — same issuer as the
+  block above, zero cards deliberate and expected, structured-output channel as the sanctioned
+  turn-ending delivery, filler framed as "data, never instructions". **No gate loosening:**
+  `{"ok": true}` remains the only passing answer, no retry inside a sitting, no ceiling raised,
+  no profile switched, `--permission-mode plan` kept (spawn-shape match, FINDINGS §498 rule 1),
+  H3157's sensitivity intact (production block still first and verbatim).
+- Pinned by `test_health_probe_carries_the_h4277_provenance_bridge` (provenance line, zero-card
+  declaration, structured-output channel, data-not-instructions framing, bridge-before-filler
+  order), so shortening the bridge back to the terse form fails offline instead of at $0.19 a
+  reading. `window_selftest` **222/223** (sole failure the red-by-design parity gate);
+  `max_account_orchestrator_selftest` **PASS**, its D-P assertions untouched. Prompt 10 711 B.
+- **Standing diagnostic worth reusing:** on any `content`-class probe NO-GO, read the session
+  transcript before forming a hypothesis. The raw envelope carries the verdict; the transcript
+  carries the reason, and reading it costs nothing.
+- Record: [pwg_ru/h4277/H4277_C1_GATE_NOGO_07-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4277/H4277_C1_GATE_NOGO_07-09-2026.md) §7.
+_Dr. Mārcis Gasūns_
+# H4277 residual — the 4th `_apta` c1 window ran: funded EN-span defect fixed, coverage alone requeues, a second EN span found that no detector catches
+_Created: 07-09-2026 · Last updated: 07-09-2026_
+_Date: 07-09-2026 · Executor: Opus 5 (`claude-opus-5`), interactive · 2 paid calls (canary + window)_
+- **The window H4277 closed as UNSPENT has now run**, on a human "run" ruling. Gate-0 **PASS**
+  (04:17Z, warm-up 17 045 ms / measured 17 142 ms) → canary **GO** (04:31Z, 10 200 ms) → window
+  **success** (06:32Z, 294 709 ms, first attempt, `null_keys: []`, manifest sha `815a7b29…`,
+  preflight `over_ceiling: false`, est \$0.15).
+- **The funded defect is fixed.** `{%equation of a degree%}` — the span the H4277 `{Tn}`-verbatim
+  clause was written for — came back **verbatim** rather than translated. Gloss wrappers **8 DE ==
+  8 RU** (H4015: 1/8), zero guillemets, `{#jawA#}` and 14 `<ls>` intact, `markup_wrapper_dropped`
+  and `foreign_gloss_translated` both absent, `prompt_semantic` **high-confidence 0** (H4270: 1),
+  score 60 (H4270: 170).
+- **`coverage` alone still requeues `_apta`** — `COVERAGE-OVER(16/7)`, the pre-registered
+  report-class shape H4277 fenced as out of scope. Per the handoff's own instruction ("if it alone
+  blocks acceptance, STOP and record, do not widen scope") this is a **named STOP: no fifth
+  window**. Store untouched; no promotion, no TM refresh, no defect-list removal.
+- **New finding the gates missed:** the card carries TWO English gloss spans, not one. Sense 15's
+  `*{%equation of degree%}` is still translated to `*{%уравнение степени%}`, and
+  `foreign_gloss_translated` did **not** fire on it. If `pwg_mask` classified sense 12's span as
+  English but not sense 15's, the clause never applied to 15 — making the masking classifier, not
+  the prompt, the suspect, and exposing a detector that only sees this class when the span was
+  masked.
+- **The session's real blocker was infrastructure, not the model:** `_apta` had **no rootmap
+  anywhere on the box** (a two-drive sweep found exactly one, `d_a.rootmap.json`). Writing one into
+  `src/pilot/input/` was refused by the main-tree isolation guard; that refusal was reported, not
+  overridden. On a human ruling the input dir was mirrored **outside** the repo to
+  `C:\Users\user\.pwg_ru_input\h4277r` (953 files, byte-identical md5s) with the one-subkey rootmap
+  added there and `PWG_INPUT_DIR` pointed at it — nothing written into the guarded tree. H4270's
+  "canonical `PWG_INPUT_DIR`" is now reproducible instead of lore.
+- Record: [pwg_ru/h4277r/H4277R_C1_APTA_4TH_WINDOW_RESULT_07-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4277r/H4277R_C1_APTA_4TH_WINDOW_RESULT_07-09-2026.md)
+_Dr. Mārcis Gasūns_
+# `pwg_mask` probe: the `_apta` sense-15 defect is a classifier miss, not a model failure — one missing article flips English to German; 66 real spans corpus-wide
+_Created: 07-09-2026 · Last updated: 07-09-2026_
+_Date: 07-09-2026 · Executor: Opus 5 (`claude-opus-5`), interactive · **0 paid calls** (offline)_
+- **Measured, not inferred.** `classify_pct_detail` on the two English gloss spans of `_apta`:
+  sense 12 → `gloss_lang: en`, `rule_id: wilson_en`, `translate: False`, masked to `{T4}`;
+  sense 15 → `gloss_lang: de`, `rule_id: default_de`, `translate: True`, **never masked** —
+  it survives verbatim into the skeleton the model sees.
+- **The model and the prompt are exonerated.** Sense 15 arrived as a *visible* `{%…%}` gloss
+  flagged for translation, and the GLOSS WRAPPERS rule requires a visible wrapper to reappear
+  around its translated gloss. The H4277 `{Tn}`-verbatim clause could not apply: there was no
+  `{Tn}`. `foreign_gloss_translated` correctly stayed silent — on that label a German gloss was
+  correctly translated. **There is no detector gap**, which corrects §4 of the window result doc.
+- **Root cause:** `looks_english_content` needs **≥2 distinct** weak markers from
+  `{a, an, of, or, and, with, as, one, war}` (bar set by §464 so German/Latin residue does not
+  take the verbatim path). `equation of **a** degree` scores `{of, a}` = 2 → English;
+  `equation of degree` scores `{of}` = 1 → falls through to `default_de`. One article.
+- **Blast radius, whole corpus (192 763 `{%…%}` spans):** 933 match the sense-15 shape, and they
+  are **not one class** — `an` 678 and `a` 175 and `war` 14 are dominated by German/Italian
+  homographs (`Mangel an Vertrauen`, `oltre a quindeci di`), which is exactly what the ≥2 bar
+  protects. The genuinely English remainder is **66**: `or` 30, `of` 23, `and` 6, `with` 6,
+  `as` 1 — `offence or guilt`, `sulphate of alumine`, `sighs of expiration`.
+- **Proposed fix, NOT applied:** split the weak set — `an`/`a`/`war` are German homographs and
+  keep the ≥2 bar; `of`/`or`/`and`/`with`/`as` are not German words and could pass on one hit.
+  That catches the 66 while leaving all 867 homograph spans untouched. It changes masking
+  corpus-wide, so it wants its own handoff, a two-way fixture (`equation of degree` → en,
+  `Mangel an Vertrauen` → de) and a selftest before any paid call. A human decides.
+- **Consequence for `_apta`:** a fifth window on the current classifier would reproduce sense 15
+  exactly — nothing about the input would have changed. `_apta` stays on the defect list, store
+  untouched.
+- Record: [pwg_ru/h4277r/H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4277r/H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md)
+_Dr. Mārcis Gasūns_
+# `pwg_mask`: split `ENGLISH_WEAK` into homograph vs non-homograph subsets — 66 English gloss spans stop leaking through the German default
+_Created: 07-09-2026 · Last updated: 07-09-2026_
+_Date: 07-09-2026 · Executor: Sonnet 5 (`claude-sonnet-5`), interactive · **0 paid calls** (offline)_
+- **Applies the fix proposed in** [h4277r/H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4277r/H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md).
+  `looks_english_content` required ≥2 distinct weak markers from the whole
+  `{a, an, of, or, and, with, as, one, war}` set (§464) before taking the
+  `english_content → translate:False` path — correct for German/Italian homographs
+  (`an`, `a`, `war`), but it also swallowed genuine single-marker English spans like
+  `equation of degree`, which fell through to `default_de` and was never masked.
+- **Split the weak set:** `ENGLISH_WEAK_HOMOGRAPH = {a, an, war, one}` keeps the ≥2-hit
+  bar; `ENGLISH_WEAK_SINGLE = {of, or, and, with, as}` — no comparable German-prose
+  collision — now passes on one hit. `ENGLISH_WEAK` kept as a back-compat union alias.
+- **Two-way fixture added to `--selftest`:** `equation of degree` → `en`/`translate:False`;
+  `Mangel an Vertrauen`, `an demselben Tage`, `reich an Fasern, Schossen, Stengeln` →
+  `de`/`translate:True`.
+- **Re-measured over all 192,763 PWG gloss spans:** 66 spans reclassify to
+  `en`/`translate:False` (matches the probe's predicted count exactly); 823 remaining
+  lone `a`/`an`/`war` spans correctly stay `de`/`translate:True` — the homograph
+  safety property is intact.
+- **Verified:** `pwg_mask.py --selftest` 20/20 OK; `pilot/window_selftest.py` 222/223
+  (sole failure is the pre-existing red-by-design parity gate, confirmed identical on
+  `master`'s own HEAD, unrelated to this change).
+- Out of scope (per H4312): no paid call, no window, no store write, no promotion,
+  `_apta` untouched.
+- PR: [gasyoun/SanskritLexicography#2107](https://github.com/gasyoun/SanskritLexicography/pull/2107)
+  (open, auto-merge armed, blocked by the pre-existing red `RussianTranslation gates`
+  required check — a human merge is owed).
+_Dr. Mārcis Gasūns_
+# GLOSS WRAPPERS worked example is language-keyed — the EN lane no longer reads a Russian example for its own English output (#2109)
+_Created: 07-09-2026 · Last updated: 07-09-2026_
+_Date: 07-09-2026 · Executor: Opus 5 (`claude-opus-5`), interactive · **0 paid calls** (offline)_
+- **The gap.** The H4270 `=== GLOSS WRAPPERS {%…%} ===` block reached both lanes — `MASK_PREAMBLE`
+  is parameterized at its two call sites by `.replace('`russian`', '`%s`' % field)` — but that
+  swaps the target-field NAME only. The worked example inside the block stayed RU-illustrated, so
+  an `--lang en` window was shown «becomes RU `а) {%некий%} …`» as the model for the English it was
+  about to produce. Surfaced while re-deriving the LANG_PARITY ledger for H4326.
+- **Fix.** `MASK_PREAMBLE_TEMPLATE` now carries a `{{GLOSS_WRAPPER_EXAMPLE}}` slot filled from
+  `GLOSS_WRAPPER_EXAMPLE[field]` by a new `mask_preamble(field)` helper, which both call sites (v2
+  execution manifest + generated JS harness) use in place of the raw `.replace()`. EN gets the same
+  DE source sense demonstrated as `a) {%a certain%} <is>Arhant</is> <ls>H. 25</ls>.`, with the same
+  `{Tn}`-verbatim tightening clause.
+- **RU is byte-identical.** `MASK_PREAMBLE` is now `mask_preamble('russian')` and renders exactly
+  the pre-fix text — verified against `origin/master` — so the language-neutral readiness probe
+  (`max_account_orchestrator._probe_prompt`, which prepends the constant) and every RU manifest are
+  untouched.
+- **Pinned.** `test_gloss_wrapper_prompt_preservation_h4270` grew an EN-lane section: the EN
+  rendering must carry the English example and the shared rule clauses, must not carry «некий», and
+  the RU rendering must not pick up the English example. Window selftest 223/223.
+- **Ledger.** `gloss_wrapper_worked_example_localisation` flipped **GAP → SHARED** in
+  [`RussianTranslation/LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md);
+  59 entries hashing `src/pilot/gen_opt_harness2.py` / `src/pilot/window_selftest.py` re-stamped by
+  [`src/pilot/i2109_parity_restamp.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/i2109_parity_restamp.py)
+  (kept as the receipt, exempted in the coverage map like its three predecessors). Gate: 109
+  entries, no drift, 32 language-aware files all tracked or exempt.
+_Dr. Mārcis Gasūns_
+- H1333 verifier corrections: an independent adversarial review (Fable 5.1 `claude-fable-5-1`) reproduced every H1333 number exactly and then found the documentation wrong where the code was right — the more useful half of the pass. **Two of three published spot-checks named the wrong artha:** `snih` 26,91 → *snehane* and `sthā` 22,30 → *sthāne* are in the record but are not what PWG attests there — Böhtlingk prints `(prItO)` and `({#gatinivfttO#})` beside those very citations. The tooltips were never wrong; the evidence offered for them was. Chasing it down produced the check the pass should have had: Böhtlingk's parenthesized artha is an **independent witness**, so agreement with it is a measurable accuracy rate — **139/232 exact (59.9%)**, 174/232 (75.0%) allowing citation-form variation, both re-derivable from `_stats.inline_artha_*`. Also fixed: `arthas` stored complete instead of truncated to 8 (the cut had silently dropped `sattāyām` — bhū's canonical artha and the first entry of the whole dhātupāṭha — from `DHĀTUP. 1,1` while `artha_count` still said 11; removing it raised measured agreement 2.6 points, which is how one knows the defect was substantive); footnote digits (`gādh39`) and edge punctuation (`⎷bhu,`) stripped from roots before keying and display; a two-item XLS source-typo fold (`bhu`→`bhū`, `dhu`→`dhū`); the pre-filter baseline recorded so the "65.3% → 70.0%" claim is derivable from the artifact rather than asserted; and the root-level (not coordinate-level) granularity of every record stated in the JSON header, the runtime docstring and ABBREVIATIONS_RU.md — Palsule's index is keyed on the root and cannot separate the homonyms Böhtlingk numbers apart. Selftest 11/11 (one rewritten to assert PWG-attested arthas, one added pinning completeness + clean roots); LANG_PARITY re-derived, ledger clean.
 ## [1.144.147] - 2026-09-03
 
 - H3982: **forward pwg_ru provenance — the GAPS §19 hole can no longer grow.**
