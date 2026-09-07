@@ -29,7 +29,11 @@ Outputs (committed, metadata only — loci, counts, scores; never translation te
   src/ramayana_southern_critical_concordance.tsv
       verse-level, CONTENT-BASED: char-n-gram similarity + per-kāṇḍa monotonic
       anchoring (LIS). Columns: s_kanda s_sarga s_verse c_kanda c_sarga c_verse
-      score class;  class ∈ matched | fuzzy | moved | southern_only.
+      score class;  class ∈ matched | fuzzy | moved | southern_only |
+      self_aligned_critical. Kāṇḍas 6-7 (CRITICAL_KEYED_FILES) are ALWAYS
+      self_aligned_critical — that corpus text already IS the critical
+      edition (H3538/H3960, SL#822), so its 99.8%/99.9% identity is NOT
+      recension agreement; never read those rows as matched/fuzzy/moved.
   src/ramayana_gorresio_inventory.tsv
       Gorresio structural inventory: kanda sarga n_verses volume page_first
       page_last (from ksverse.js; no OCR involved).
@@ -110,6 +114,20 @@ SOUTHERN_FILES = {
     2: '02_ramayana-ayodhyakanda.jsonl',
     3: '03_ramayana-aranyakanda.jsonl',
     5: '05_ramayana-sundarakanda.jsonl',
+}
+# Corpus files under Southern-style names that CONTENT measurement shows are
+# the Baroda CRITICAL edition, not the Southern recension (H3538 adjudication,
+# applied H3960, SL#822): kāṇḍa 6 99.8% and kāṇḍa 7 99.9% (95.5% at score
+# 1.0) identical `sarga.verse` to the DCS critical text, against 1.2-3.0% for
+# the true Southern kāṇḍas above; 0 `ru` segments in either (no translation
+# exists to key against them — FINDINGS §481). `load_southern()` still loads
+# these alongside SOUTHERN_FILES (same directory, same shape) so callers that
+# only need the raw text — build-bombay's kāṇḍa-7 numbering study,
+# build-gorresio's structural coverage — keep working; `cmd_build`'s
+# Southern<->Critical concordance is the one place that must NOT present
+# these as recension agreement, because it would be aligning the critical
+# text against itself.
+CRITICAL_KEYED_FILES = {
     6: '06_ramayana-yuddhakanda.jsonl',
     7: '07_ramayana-uttarakanda.jsonl',
 }
@@ -158,9 +176,13 @@ def grams(s, n=4):
 # ---------------------------------------------------------------------------
 
 def load_southern(corpus_dir):
-    """{kanda: [(sarga, verse, normtext), ...]} in corpus order."""
+    """{kanda: [(sarga, verse, normtext), ...]} in corpus order.
+
+    Loads SOUTHERN_FILES and CRITICAL_KEYED_FILES from the same directory —
+    callers that must distinguish genuine Southern text from the critical
+    text under kāṇḍas 6-7 consult CRITICAL_KEYED_FILES directly."""
     out = {}
-    for kanda, fname in SOUTHERN_FILES.items():
+    for kanda, fname in {**SOUTHERN_FILES, **CRITICAL_KEYED_FILES}.items():
         path = os.path.join(corpus_dir, fname)
         rows = []
         with open(path, encoding='utf-8') as fh:
@@ -450,6 +472,18 @@ def cmd_build(args):
         stats = defaultdict(int)
         for kanda in sorted(southern):
             rows = align_kanda(southern[kanda], critical.get(kanda, []))
+            if kanda in CRITICAL_KEYED_FILES:
+                # H3538/H3960 (SL#822): this corpus file IS the critical
+                # edition under a Southern filename — aligning it against the
+                # critical text is self-alignment, not recension evidence.
+                # Keep the measured rows (they are the audit trail for the
+                # 99.8%/99.9% identity finding) but never let a consumer read
+                # them as matched/fuzzy/moved recension agreement.
+                rows = [(s_sarga, s_verse, c_sarga, c_verse, score,
+                         'self_aligned_critical' if cls != 'southern_only'
+                         else cls)
+                        for s_sarga, s_verse, c_sarga, c_verse, score, cls
+                        in rows]
             for s_sarga, s_verse, c_sarga, c_verse, score, cls in rows:
                 w.writerow([kanda, s_sarga, s_verse,
                             kanda if c_sarga != '' else '', c_sarga, c_verse,
@@ -693,12 +727,26 @@ def cmd_selftest(_args):
     check(len(sc) > 15000, 'southern<->critical has %d verse rows (>15000)' % len(sc))
     matched = [r for r in sc if r['class'] in ('matched', 'fuzzy')]
     share = len(matched) / len(sc)
-    check(share >= 0.5,
-          'aligned share %.1f%% >= 50%%' % (100 * share))
+    check(share >= 0.4,
+          'aligned share %.1f%% >= 40%% (kāṇḍas 1/2/3/5 only — 6-7 are '
+          'self_aligned_critical, not recension evidence)' % (100 * share))
     check(any(r['s_kanda'] == '2' and r['s_sarga'] == '91' for r in sc),
           'fixture R. 2,91 (southern) present')
     check(not any(r['s_kanda'] == '4' for r in sc),
           'kanda 4 (kiskindha) correctly absent from southern side')
+    # H3538/H3960 (SL#822): kāṇḍas 6-7 are the critical edition under a
+    # Southern filename — their rows must NEVER read as matched/fuzzy/moved.
+    for kk in ('6', '7'):
+        k_rows = [r for r in sc if r['s_kanda'] == kk]
+        bad_cls = {r['class'] for r in k_rows} - {'self_aligned_critical',
+                                                    'southern_only'}
+        check(k_rows and not bad_cls,
+              'kanda %s rows are self_aligned_critical or southern_only, '
+              'never matched/fuzzy/moved (got extra classes %r)'
+              % (kk, bad_cls))
+    sac = [r for r in sc if r['class'] == 'self_aligned_critical']
+    check(len(sac) > 7000,
+          'self_aligned_critical rows for kāṇḍas 6-7: %d (>7000)' % len(sac))
     last = {}
     mono_ok = True
     for r in sc:

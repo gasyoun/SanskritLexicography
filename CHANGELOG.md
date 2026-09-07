@@ -17,6 +17,9 @@ not an error.
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.154] - 2026-09-07
+
+- **H3960 — Rāmāyaṇa kāṇḍas 6–7 relabeled Baroda critical edition, text kept.** `SOUTHERN_FILES` in [`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py) now holds only kāṇḍas 1/2/3/5; kāṇḍas 6–7 moved to a new `CRITICAL_KEYED_FILES` constant (H3538 adjudication, applied). The committed `ramayana_southern_critical_concordance.tsv` was re-run: the 7,116 kāṇḍa-6/7 rows now carry class `self_aligned_critical` instead of `matched`/`fuzzy`/`moved` — a byte-for-byte diff confirmed only that one column changed, no verse text touched. `CONTRADICTIONS.md` §9 ruled and applied, `COVERED_TEXTS_RU.md` corrected (incl. a flag that the `build-gorresio` kāṇḍa-6/7 Gorresio↔"Southern" verse map still keys against this critical-edition numbering — out of this fix's fence), [issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822) closed.
 ## [1.144.149] - 2026-09-07
 
 - H4054: one-card production call shape made structural — `gen_opt_harness2.py` defaults to `OUTPUT_BUDGET = 1` (H2152 one-card ruling landed as code; a no-flag production preparation emits one original card per translate call), multi-card packing demoted to an explicit experiment lane (`--output-budget=90`), canary builder pins `--output-budget=1` + golden refreshed, canary presplit reason print names `PRESPLIT_SOLO_CITE_FLOOR` instead of the batch budget, runbook/AGENTS/pwg-drain/pwg-bounded-run skill surfaces agree, two new window_selftest fixtures pin small-card one-card batches and large-card presplit/heal routing (221/221 hermetic).
