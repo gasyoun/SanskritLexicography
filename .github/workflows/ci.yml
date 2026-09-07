@@ -386,6 +386,14 @@ jobs:
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py
+      - name: Griffith EN alignment gate (H2361/H3949)
+        working-directory: RussianTranslation
+        run: |
+          # SKIPs cleanly when corpus.db isn't checked out alongside this repo
+          # (it lives in SamudraManthanam) -- see the module docstring. mandala 8
+          # sukta 49-103 is a named, dated grandfathered exception; any other
+          # block falling below the floor is a real regression and fails the gate.
+          python src/audit_griffith_en_alignment.py --selftest
       - name: Validate roadmap
         working-directory: RussianTranslation
         run: python src/roadmap_check.py
