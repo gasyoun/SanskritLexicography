@@ -341,6 +341,43 @@ def test_dhatup_roman_gana_reading():
             fail('roman_to_int(%r) should be None' % bad)
 
 
+def test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim():
+    """H4339 adjudication (07-09-2026): a prose citation on a `<ab>v.l.</ab>` line
+    states which reading MW REJECTS, so harvesting it inverts the source.
+
+    Coordinate 20,21 is the case that shipped wrong and was caught by the independent
+    verifier. MW's article reads, in full:
+
+        <hom>1.</hom> <s>kzal</s> ¦ <ab>v.l.</ab> for √ <s>kzar</s>, <ls>Dhātup. xx, 21</ls>.
+
+    PWG could not choose between `kzal` and `kzar`, no `<info westergaard>` numbers
+    20,21 anywhere, so the prose fallback ran — and filled the coordinate with `kzal`,
+    the one root that sentence disowns. Both roots are in Palsule, so the wrong one was
+    reachable. The coordinate is now DROPPED rather than guessed: MW attributes it to
+    `kzar` in words the parser does not read, and inventing that attribution would be
+    the fabrication this file exists to prevent."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_mw_variant_reading (concordance absent)')
+        return
+    rec = dhp.record('', 'DHĀTUP. 20,21')
+    if rec is not None and rec.get('source') in ('mw', 'mw-respell'):
+        fail('20,21 shipped from MW as %r — it sits on a v.l. line MW itself '
+             'assigns to kṣar' % rec.get('palsule_root'))
+    st = dhp.stats()
+    if not st.get('mw_prose_claims_refused_variant_reading'):
+        fail('the v.l. refusal is not being counted — %r'
+             % st.get('mw_prose_claims_refused_variant_reading'))
+    # The prose-only fills are the weak branch and must stay a published, small number:
+    # if this ever approaches the field-backed count, the field-first rule has stopped
+    # being what the coverage rests on.
+    prose_only = st.get('coords_filled_from_mw_prose_only')
+    total_mw = (st.get('coords_filled_from_mw', 0)
+                + st.get('coords_filled_from_mw_respell', 0))
+    if prose_only is None or prose_only > total_mw * 0.25:
+        fail('prose-only fills %r of %r MW fills — the fallback is carrying the pass'
+             % (prose_only, total_mw))
+
+
 def test_dhatup_palsule_wired_into_tooltip():
     """H1333: the shared _ls_tooltip layer (which the H1301 review sheets reuse)
     returns the Palsule enrichment, and a non-DHĀTUP. citation is unaffected."""
@@ -373,6 +410,7 @@ def main():
         test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg,
         test_dhatup_mw_tooltip_marks_the_second_witness,
         test_dhatup_roman_gana_reading,
+        test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim,
         test_dhatup_palsule_wired_into_tooltip,
     ]
     for t in tests:
