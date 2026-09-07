@@ -1,6 +1,6 @@
 # PWG `<ab>`/`<ls>` abbreviations — tooltips and RU-column purity
 
-_Created: 10-07-2026 · Last updated: 02-09-2026_
+_Created: 10-07-2026 · Last updated: 07-09-2026_
 
 > Consolidated Russian style guide of record (all ratified rules, with provenance and the
 > open 10-07 vs 19-07 abbreviation contradiction surfaced):
@@ -373,23 +373,25 @@ All work extends the existing Cologne-port resolver
 | `P.` (Pāṇini) | 25351 | 25065 | 98.9% | 25349 | — (n/a) |
 | `Spr.` (1st ed) | 13133 | 12953 | 98.6% | 13133 | — (n/a) |
 | `Spr. (II)` (2nd ed) | 8684 | 8684 | 100.0% | 8684 | 8395 |
-| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1441 |
+| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1934 |
 
 - **Full-form Pāṇini `P. a,p,s` (3-param):** 25061 / 25061 linked (**100.0%**) — the H1307 DoD target.
 - **`Spr. (II) N` (2nd ed):** 8684 / 8684 linked (**100.0%**), 8395 full-text enriched (96.7% of linked).
-- **`DHĀTUP. x,y` → Palsule (H1333):** 2657 / 2760 citations carry a gaṇa,serial coordinate
-  (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1441 of those (54.2%)**
-  resolve to a Palsule artha-index record — 1226 of the 1751 distinct coordinates PWG cites
-  (**70.0%**). The shortfall is honest and of two kinds: coordinates Böhtlingk lists under two
-  root spellings (`skand`/`skund`, `cut`/`cyut` — 271, dropped rather than guessed) and roots
-  absent from Palsule's artha index (254, e.g. `edh`, `vīj`). Enrichment is **tooltip text
-  only** — Palsule has no online edition — and the gaṇa-level Westergaard link is unchanged.
+- **`DHĀTUP. x,y` → Palsule (H1333 + H4339):** 2657 / 2760 citations carry a gaṇa,serial
+  coordinate (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1934 of those
+  (72.8%)** resolve to a Palsule artha-index record — **1467 of the 1751 distinct coordinates
+  PWG cites (83.8%)**, of which 1226 (70.0%) are Böhtlingk's own attribution and 241 come from
+  the Monier-Williams second witness added by H4339 (marked `[MW]` in the tooltip, `source` in
+  the data). The remaining shortfall is honest and of two kinds: coordinates neither dictionary
+  attributes unambiguously (`skand`/`skund`, `cut`/`cyut`) and roots absent from Palsule's artha
+  index (`edh`, `vīj`). Enrichment is **tooltip text only** — Palsule has no online edition —
+  and the gaṇa-level Westergaard link is unchanged.
 
 _Denominator: full source [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) — the RU store
 `src/pwg_ru_translated.jsonl` was absent on this machine, so per H1307 Prerequisite 1 the
 count uses the whole PWG corpus (a superset of the RU-translated subset). Recompute against
 the store when present: `python src/ls_coverage.py --md` (raw JSON → gitignored
-`pwg_ru/eval/ls_coverage.json`). Generated 19-07-2026; DHĀTUP.→Palsule row 07-09-2026 (H1333)._
+`pwg_ru/eval/ls_coverage.json`). Generated 19-07-2026; DHĀTUP.→Palsule row re-run 07-09-2026 (H1333, then H4339)._
 
 ### Pāṇini `P.` → ashtadhyayi.com
 
@@ -493,6 +495,77 @@ H1301 review sheets inherit it) — no second resolver. Fixtures in
 [`src/pilot/ls_enrichment_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ls_enrichment_selftest.py).
 Natural owner as a dataset/paper: article **A39**
 ([Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)).
+
+### `DHĀTUP.` second coordinate witness — Monier-Williams — H4339, 07-09-2026
+
+H1333 stopped at **1,226 / 1,751 coordinates (70.0%)** because Böhtlingk is his own only
+witness: where he spells one root two ways (`skand`/`skund`), his text cannot say which he
+numbered, and the coordinate was dropped rather than guessed. The
+[reuse survey](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/REUSE_SURVEY_DHATUPATHA_COORDINATE_SOURCES_07-09-2026.md)
+found the second witness already in the estate: **Monier-Williams cites the same Böhtlingk
+coordinates**, with the gaṇa in Roman numerals (`Dhātup. xxiv, 68` = 24,68).
+
+**Two channels, and the structured one wins.** MW carries the coordinate twice: in running
+prose (`<ls>Dhātup. iii, 1</ls>`) and in its own editorial field
+(`<info westergaard="ata,3.1,01.0033"/>`). They are not equally trustworthy, and the case that
+settles it is coordinate **3,1**: MW's `pad` article cites `Dhātup. iii, 1` only to note that
+`padati` is a variant reading for `badati` — reading the prose would hand 3,1 to `pad`, while
+MW's own field at that very article names `ata` (= PWG's `at`, which is right). So the rule is
+**field first**: where MW has numbered a coordinate itself, prose is not consulted at all — not
+even as a fallback when the field names nobody usable. That is stricter than counting prose
+citations and it also yields *more* usable coordinates (241 against 193), because removing
+spurious claimants un-ambiguates coordinates that two prose citations had made look contested.
+
+A field claimant counts only when the article's own headword occurs inside the Westergaard root
+token the field names (`dIDI` in `dIDIN`, `cyut` in `ScyutiR`, and `pad` **not** in `ata`).
+Westergaard's citation forms carry anubandhas at both ends, and stripping them by rule is
+exactly the **H328** negative result (a naive it-stripped join matched 454/930) — so containment
+is the test and the misses are accepted. One such conservative miss is `2,8` itself: MW's field
+does number it (`skudi,2.8`, i.e. for `skund`), but `skudi` carries the nasal as an
+anubandha-marked infix, so the headword is not contained in it and the coordinate stays dropped.
+
+**Coverage: 1,226 → 1,467 of 1,751 (70.0% → 83.8%).** Two fill classes, never merged:
+
+| `source` | rows | what it means |
+|---|--:|---|
+| `pwg` | 1226 | Böhtlingk's own attribution — H1333's rule, unchanged |
+| `mw` | 143 | PWG named no single root; MW claims the coordinate for exactly one |
+| `mw-respell` | 98 | PWG named a root Palsule does not gloss; MW spells it as Palsule does (`vark`/`vṛk`) |
+
+`mw-respell` is the materially weaker class — it prefers one dictionary's citation form over the
+other's — so it is stamped apart, keeps `pwg_root_slp1` on the record, and renders as `[MW sp.]`
+against plain `[MW]`. A PWG row is unmarked. **MW never overrides a shipped PWG row**; a
+`mw-respell` row displaces nothing, because PWG had no Palsule-glossable row there at all.
+
+**Cross-validation — the confirmation H1333 never had.** Where both dictionaries resolve a
+coordinate to a single root, they can be compared: **633 of 814 agree outright (77.8%)**, and
+**696 (85.5%)** counting the regular guṇa alternation as the citation-form variation it is —
+reported as a separate, deliberately weaker number, exactly like the loose artha rate, never
+folded into the strict one. The 181 differences are **published in full** in the artifact's
+`_mw_disagreements` (with `shipped_reading`, so what a reader sees is never in doubt) and
+classified rather than resolved:
+
+| shape | n | example | reading |
+|---|--:|---|---|
+| `guṇa ar~ṛ` | 63 | 6,16 `arj`/`ṛj` | one root, two citation conventions |
+| `other` | 51 | 11,11 `tup`/`tump` | nasal infixes and genuinely different roots |
+| `one letter` | 39 | 2,5 `nāth`/`nādh` | variant readings — the H328 class, the interesting ones |
+| `stem~root` | 28 | 32,69 `pālay`/`pāl` | derived stem against root |
+
+**Note the survey's numbers are superseded.** It reported 1,309 MW coordinates and 749/802
+(93.4%) agreement; this build reads 1,467 (three citation splittings plus MW's dotted article
+ids, which the PWG-shaped `<L>` pattern skips) and compares 814 pairs at 77.8%. The rate did not
+fall because the data got worse — the sample got larger and the comparison stricter, and the
+extra pairs are dominated by the `guṇa ar~ṛ` bucket. Both numbers are re-derivable; this one is
+the artifact's.
+
+**MW does not touch the artha axis.** Its glosses are English, so accuracy is still measured
+against PWG's own parenthesized artha, and it is now measured **per source**: the H1333 figure
+(139/232 = 59.9% strict, 75.0% loose) means exactly what it did, with the MW rows scored
+separately (36/71 = 50.7% strict, 67.6% loose) beside it.
+
+**Re-derive:** `python src/build_dhatup_palsule.py` (all `_stats` above), and
+`python src/build_dhatup_palsule.py --mw ""` rebuilds the PWG-only H1333 table byte-for-byte.
 
 ## Mechanical RU style rules (no-ё, terse metalanguage) — H1305
 

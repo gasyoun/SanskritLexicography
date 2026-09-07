@@ -37,9 +37,31 @@ ones have been excluded.
 
 The stored `arthas` list is COMPLETE; only the tooltip limits what it displays.
 
+SECOND COORDINATE WITNESS — MONIER-WILLIAMS (H4339). Böhtlingk is not the only
+dictionary that cites his own dhātupāṭha numbering: MW cites the same coordinates with
+the gaṇa in Roman numerals (`Dhātup. xxiv, 68` = 24,68), inside the article of the root
+it numbers, `<k1>` in the same SLP1. That buys two things H1333 could not have:
+
+  1. COVERAGE. A coordinate PWG drops — because Böhtlingk spells the root two ways
+     (`skand`/`skund`) or because Palsule has no row for his spelling — is filled from
+     MW when MW has exactly ONE claimant article. Never when MW is itself ambiguous.
+  2. CROSS-VALIDATION. Where PWG and MW each resolve a coordinate to a single root,
+     they can be compared. That agreement rate (`_stats.cross_*`) is the independent
+     confirmation of the coordinate→root half that H1333 shipped without.
+
+PROVENANCE IS STAMPED, NEVER BLURRED. Every record carries `source`: `pwg` (read off
+Böhtlingk's own article, H1333's rule), `mw` (PWG had no single claimant, MW did) or
+`mw-respell` (PWG's root is absent from Palsule and MW spells it differently). The
+tooltip says so out loud. Disagreements between the two dictionaries are LISTED
+(`_mw_disagreements`), never resolved by picking a winner.
+
+MW does not touch the artha axis: its glosses are English, so the accuracy measurement
+stays PWG's own parenthesized artha, and it is reported per source so the H1333 number
+(139/232) remains readable after the MW rows land.
+
 Raw XLS stays local (gitignored `pwg_ru/eval/`); the DERIVED table is what ships.
 
-  python src/build_dhatup_palsule.py [--xls PATH] [--pwg PATH] [--out PATH]
+  python src/build_dhatup_palsule.py [--xls PATH] [--pwg PATH] [--mw PATH] [--out PATH]
 """
 import argparse
 import json
@@ -47,7 +69,7 @@ import os
 import re
 import sys
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -61,6 +83,7 @@ GH = sibling_root(HERE)
 
 DEFAULT_XLS = os.path.join(REPO, 'pwg_ru', 'eval', 'Palsule_Artha_24_01_2014.xlsx')
 DEFAULT_PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
+DEFAULT_MW = os.path.join(GH, 'csl-orig', 'v02', 'mw', 'mw.txt')
 DEFAULT_OUT = os.path.join(HERE, 'data', 'dhatup_palsule.json')
 
 _L = re.compile(r'^<L>(\d+)<pc>[^<]*<k1>([^<]*)<k2>')
@@ -225,18 +248,154 @@ def read_pwg_coords(pwg):
     return coords, entries
 
 
-def audit_inline_artha(pwg, table):
+#: MW writes Böhtlingk's gaṇa as a lowercase Roman numeral and splits the citation
+#: across the `n=` attribute in the same three ways PWG does:
+#:   <ls>Dhātup. xxiv, 68</ls>            -> 24,68
+#:   <ls n="Dhātup.">xxxiv, 40</ls>       -> 34,40
+#:   <ls n="Dhātup. xxxiii,">92.</ls>     -> 33,92
+#: All three are the same citation; missing any of them silently shrinks the witness.
+_MW_DHATUP = re.compile(
+    r'<ls\b[^>]*>\s*Dh[āaĀA]tup\.\s*([ivxlcIVXLC]+)\s*,\s*(\d+)')
+_MW_DHATUP_N_FULL = re.compile(
+    r'<ls\b[^>]*\bn\s*=\s*"Dh[āaĀA]tup\."[^>]*>\s*([ivxlcIVXLC]+)\s*,\s*(\d+)')
+_MW_DHATUP_N_GANA = re.compile(
+    r'<ls\b[^>]*\bn\s*=\s*"Dh[āaĀA]tup\.\s*([ivxlcIVXLC]+)\s*,\s*"[^>]*>\s*(\d+)')
+
+#: MW numbers 23,194 of its articles with a dotted id (`<L>92747.1<pc>`), which the
+#: `_L` regex above — written for PWG, where the shape is rarer — does not accept. A
+#: separate pattern keeps H1333's PWG numbers byte-stable while the MW pass sees the
+#: whole dictionary. (PWG has 636 such articles of its own; widening `_L` would move
+#: the shipped H1333 baseline, so that is left as its own change, not smuggled in here.)
+_L_MW = re.compile(r'^<L>([\d.]+)<pc>[^<]*<k1>([^<]*)<k2>')
+
+#: MW's own structured cross-reference to Westergaard's *Radices* — the edition whose
+#: numbering `DHĀTUP. x,y` IS: `<info westergaard="dIDIN,24.68,02.0084"/>` = the root
+#: `dIDIN` at Westergaard 24.68 (and Pāṇinian 02.0084). Several are semicolon-joined.
+#: This is MW editorially numbering an article, as against merely quoting a citation in
+#: running prose, and where the two channels differ the field is the one to believe.
+_MW_WESTERGAARD = re.compile(r'<info\b[^>]*\bwestergaard="([^"]*)"')
+
+_ROMAN_VALUES = {'i': 1, 'v': 5, 'x': 10, 'l': 50, 'c': 100}
+
+
+def roman_to_int(s):
+    """`xxiv` -> 24. None for anything that is not a Roman numeral we can read.
+
+    Böhtlingk's dhātupāṭha runs to gaṇa 35, so `i`–`c` covers the whole range; a
+    subtractive pair (`iv`, `ix`, `xl`) is handled by the look-ahead."""
+    s = (s or '').lower()
+    if not s:
+        return None
+    total = 0
+    for i, c in enumerate(s):
+        v = _ROMAN_VALUES.get(c)
+        if v is None:
+            return None
+        nxt = _ROMAN_VALUES.get(s[i + 1]) if i + 1 < len(s) else 0
+        total += -v if (nxt or 0) > v else v
+    return total or None
+
+
+def read_mw_coords(mw):
+    """mw.txt -> (prose, field, field_seen, n_entries_seen).
+
+    Two INDEPENDENT channels, deliberately not merged here — the caller's policy
+    decides which one speaks for a coordinate:
+
+      `prose[coord]`  -> {headword} for every article citing `Dhātup. R, N` in running
+                         text. This is the survey's channel, and it is the noisy one: a
+                         quotation is not an attribution. MW's `pad` article cites
+                         `Dhātup. iii, 1` only to say `padati` is a variant reading for
+                         `badati`, which would hand coordinate 3,1 to the wrong root.
+      `field[coord]`  -> {headword} from MW's OWN structured statement
+                         `<info westergaard="ata,3.1,01.0033"/>` — an editorial claim,
+                         not prose — kept only when the article's headword occurs in the
+                         Westergaard root token the field names. That test is what
+                         rejects `pad` at 3,1: the field there names `ata` (= PWG's
+                         `at`), so `pad` is not a claimant for its own citation.
+                         Westergaard's citation forms carry anubandhas on both ends
+                         (`ata` = at, `ScyutiR` = cyut, `dIDIN` = dIDI), so containment
+                         is the honest test — stripping them by rule is exactly the
+                         H328 negative result (a naive it-stripped join matched
+                         454/930) and is not attempted.
+      `field_seen`    -> every coordinate the field mentions at all, whoever it names.
+                         A coordinate MW itself has numbered is one where prose must
+                         NOT be consulted as a fallback: MW has already spoken.
+
+    MW uses the same Cologne markup as PWG (`<L>…<k1>KEY<k2>` opens, `<LEND>` closes),
+    only the citation syntax differs (Roman gaṇa)."""
+    prose = defaultdict(set)
+    field = defaultdict(set)
+    field_seen = set()
+    key = None
+    entries = 0
+    with open(mw, encoding='utf-8') as f:
+        for line in f:
+            m = _L_MW.match(line)
+            if m:
+                key = m.group(2)
+                entries += 1
+                continue
+            if line.startswith('<LEND>'):
+                key = None
+                continue
+            if key is None:
+                continue
+            for rx in (_MW_DHATUP, _MW_DHATUP_N_FULL, _MW_DHATUP_N_GANA):
+                for mm in rx.finditer(line):
+                    gana = roman_to_int(mm.group(1))
+                    if gana is not None:
+                        prose['%d,%s' % (gana, mm.group(2))].add(key)
+            for mm in _MW_WESTERGAARD.finditer(line):
+                for part in mm.group(1).split(';'):
+                    bits = part.split(',')
+                    if len(bits) < 2 or '.' not in bits[1]:
+                        continue
+                    gana, serial = bits[1].split('.', 1)
+                    if not (gana.isdigit() and serial.isdigit()):
+                        continue
+                    coord = '%d,%d' % (int(gana), int(serial))
+                    field_seen.add(coord)
+                    if key.lower() in (bits[0] or '').lower():
+                        field[coord].add(key)
+    return prose, field, field_seen, entries
+
+
+def mw_claimants(prose, field, field_seen):
+    """coord -> the ONE root MW attributes it to. FIELD FIRST, prose only as fallback.
+
+    Where MW has numbered a coordinate in its own structured field, that statement is
+    what MW says and the prose channel is not consulted — including when the field
+    names nobody usable, in which case the coordinate simply has no MW claimant. This
+    is stricter than counting prose citations (241 usable fills instead of 193, because
+    removing spurious prose claimants also *un*-ambiguates coordinates) and it is the
+    reading that gets 3,1 right."""
+    out = {}
+    for coord in set(prose) | set(field_seen):
+        claim = field.get(coord) if coord in field_seen else prose.get(coord)
+        if claim and len(claim) == 1:
+            out[coord] = next(iter(claim))
+    return out
+
+
+def audit_inline_artha(pwg, table, sources=None):
     """Measure the table against PWG's OWN parenthesized artha beside each citation.
 
     Returns (agree, disagree, examined, samples). A coordinate counts as agreeing when
     the SLP1 artha PWG prints next to the citation, transliterated, appears in the
     Palsule artha set the table carries for it. Disagreements are returned verbatim so
-    they can be read rather than summarized."""
+    they can be read rather than summarized.
+
+    `sources` restricts the measurement to rows of a given provenance (H4339). The
+    PWG-derived and MW-derived rows are measured apart because pooling them would
+    quietly move H1333's published accuracy number."""
     agree = disagree = loose = 0
     samples = []
     for line, coord in _iter_citation_lines(pwg):
         rec = table.get(coord)
         if not rec:
+            continue
+        if sources is not None and rec.get('source', 'pwg') not in sources:
             continue
         for pos, m in _inline_artha(line, coord):
             got = slp1_root_iast(m).replace('/', '').replace('\\', '')
@@ -308,7 +467,216 @@ def _inline_artha(line, coord):
         yield 'after', after.group(1)
 
 
-def build(xls, pwg):
+def _coord_key(coord):
+    """Numeric sort key so 3,7 precedes 3,70 and 12,1 follows 3,70."""
+    return [int(x) for x in coord.split(',')]
+
+
+def _same_root(a, b):
+    """Do two SLP1 headwords name the same root once transliterated and normalized?"""
+    return _norm(slp1_root_iast(a)) == _norm(slp1_root_iast(b))
+
+
+def _disagreement_shape(a, b):
+    """Name the KIND of difference between two dictionaries' root spellings.
+
+    Descriptive only — nothing downstream resolves a coordinate by this. It exists
+    because the raw disagreement count conflates two very different things:
+
+      `guṇa ar~ṛ`   Two citation conventions for one root: PWG prints the guṇa grade
+                    (`arj`, `vart`, `bhar`), MW the ṛ grade (`ṛj`, `vṛt`, `bhṛ`). This
+                    is the single largest bucket and it is not a dispute about which
+                    root is meant, so it is also counted into `cross_agree_with_variant`
+                    — as a SEPARATE, deliberately weaker number, never folded into the
+                    strict rate.
+      `stem~root`   One spells the derived/causative stem, the other the root
+                    (`pālay`/`pāl`, `puṣpy`/`puṣpya`, `goṣṭ`/`goṣṭha`).
+      `one letter`  A genuine variant reading of the H328 class — `nāth`/`nādh`,
+                    `mlich`/`mlech`, `ran`/`raṇ`. These are the interesting ones.
+      `other`       Everything else, including nasal infixes (`tup`/`tump`,
+                    `stabh`/`stambh`) and outright different roots."""
+    if a.replace('ar', 'ṛ', 1) == b or b.replace('ar', 'ṛ', 1) == a:
+        return 'guṇa ar~ṛ'
+    if a.replace('al', 'ḷ', 1) == b or b.replace('al', 'ḷ', 1) == a:
+        return 'guṇa al~ḷ'
+    if a in b or b in a:
+        return 'stem~root'
+    if len(a) == len(b) and sum(x != y for x, y in zip(a, b)) == 1:
+        return 'one letter'
+    return 'other'
+
+
+def _mw_pass(mw, palsule, coords, table, pwg_root):
+    """H4339. Fill PWG's dropped coordinates from MW, and cross-validate the rest.
+
+    MUTATES `table` — MW-derived rows are added, PWG-derived rows are never touched or
+    overwritten. Returns (stats, disagreements).
+
+    TWO FILL CLASSES, KEPT APART:
+      `mw`         — PWG had NO single claimant (Böhtlingk's double spellings), MW has
+                     exactly one. This is the coverage win.
+      `mw-respell` — PWG resolved the coordinate, but Palsule has no row for Böhtlingk's
+                     spelling and MW spells the root differently (`kvel`/`kṣvel`), and
+                     Palsule DOES have MW's. Materially weaker than `mw`: it prefers one
+                     dictionary's citation form over the other's, so it is stamped
+                     separately and counted separately, never merged into `mw`.
+
+    NOT A FILL CLASS: PWG and MW agreeing on a root Palsule simply does not gloss. MW
+    adds nothing there and the coordinate stays dropped.
+
+    THE 53 DISAGREEMENTS ARE NOT RESOLVED HERE. Where both dictionaries resolve a
+    coordinate to a single, different root, the PWG row stands (it is Böhtlingk's own
+    numbering) and the conflict is reported verbatim for adjudication."""
+    empty = {
+        'mw_available': False, 'mw_source': None, 'mw_entries': 0,
+        'mw_coords_cited': 0, 'mw_coords_cited_in_prose': 0,
+        'mw_coords_in_westergaard_field': 0, 'mw_coords_single_claimant': 0,
+        'mw_coords_overlapping_pwg': 0, 'mw_only_coords': 0,
+        'coords_filled_from_mw': 0, 'coords_filled_from_mw_respell': 0,
+        'mw_candidates_without_palsule_row': 0,
+        'cross_validated': 0, 'cross_agree': 0, 'cross_disagree': 0,
+        'cross_agreement_rate': 0.0, 'cross_agree_with_variant': 0,
+        'cross_agreement_rate_with_variant': 0.0, 'cross_disagreement_shapes': {},
+    }
+    if not mw or not os.path.exists(mw):
+        sys.stderr.write('build_dhatup_palsule: MW not found at %s — '
+                         'second-witness pass skipped\n' % mw)
+        return empty, []
+
+    prose, field, field_seen, mw_entries = read_mw_coords(mw)
+    # "Unambiguous" is deliberately the strictest reading available: exactly ONE article
+    # claims the coordinate in whichever channel speaks for it. A coordinate with two
+    # claimants is not used at all rather than resolved by a rule nobody has measured.
+    mw_single = mw_claimants(prose, field, field_seen)
+
+    agree = disagree = variant = 0
+    disagreements = []
+    for coord in sorted(pwg_root, key=_coord_key):
+        mw_r = mw_single.get(coord)
+        if not mw_r:
+            continue
+        if _same_root(pwg_root[coord], mw_r):
+            agree += 1
+            variant += 1
+            continue
+        disagree += 1
+        pwg_i = slp1_root_iast(pwg_root[coord])
+        mw_i = slp1_root_iast(mw_r)
+        shape = _disagreement_shape(pwg_i, mw_i)
+        if shape == 'guṇa ar~ṛ':
+            variant += 1
+        disagreements.append({
+            'coord': coord,
+            'pwg_root_slp1': pwg_root[coord],
+            'pwg_root_iast': pwg_i,
+            'mw_root_slp1': mw_r,
+            'mw_root_iast': mw_i,
+            # What KIND of difference this is — read off the pair, so a reader
+            # adjudicating them can start with the 'variant reading' bucket and leave
+            # the regular alternations alone. Never used to resolve anything.
+            'shape': shape,
+            # Filled in after the fills below.
+            'shipped_reading': None,
+        })
+
+    filled = respelled = no_row = 0
+    for coord in sorted(set(coords) - set(table), key=_coord_key):
+        mw_r = mw_single.get(coord)
+        if not mw_r:
+            continue
+        pwg_r = pwg_root.get(coord)
+        if pwg_r is not None and _same_root(pwg_r, mw_r):
+            continue
+        source = 'mw-respell' if pwg_r is not None else 'mw'
+        extra = {'mw_root_slp1': mw_r}
+        if pwg_r is not None:
+            extra['pwg_root_slp1'] = pwg_r
+            extra['pwg_root_iast'] = slp1_root_iast(pwg_r)
+        else:
+            # What Böhtlingk could not choose between, kept on the record so a reader
+            # can see exactly which ambiguity MW is being trusted to break.
+            extra['pwg_claimants'] = sorted(coords[coord])
+        row = _palsule_record(palsule, mw_r, source, extra)
+        if row is None:
+            no_row += 1
+            continue
+        table[coord] = row
+        if source == 'mw':
+            filled += 1
+        else:
+            respelled += 1
+
+    # Which reading a reader actually sees for a disputed coordinate: `pwg` when
+    # Böhtlingk's attribution shipped (MW's dissent recorded, not acted on),
+    # `mw-respell` when Palsule had no row for Böhtlingk's spelling so MW's spelling is
+    # what the table could gloss at all, `dropped` when neither shipped. This states
+    # what the artifact says; it does not resolve the disagreement.
+    for d in disagreements:
+        d['shipped_reading'] = (table[d['coord']]['source'] if d['coord'] in table
+                                else 'dropped')
+
+    mw_all = set(prose) | set(field_seen)
+    overlap = len(mw_all & set(coords))
+    examined = agree + disagree
+    stats = {
+        'mw_available': True,
+        'mw_source': os.path.relpath(mw, GH),
+        'mw_entries': mw_entries,
+        'mw_coords_cited': len(mw_all),
+        'mw_coords_cited_in_prose': len(prose),
+        'mw_coords_in_westergaard_field': len(field_seen),
+        'mw_coords_single_claimant': len(mw_single),
+        'mw_coords_overlapping_pwg': overlap,
+        'mw_only_coords': len(mw_all) - overlap,
+        'coords_filled_from_mw': filled,
+        'coords_filled_from_mw_respell': respelled,
+        'mw_candidates_without_palsule_row': no_row,
+        'cross_validated': examined,
+        'cross_agree': agree,
+        'cross_disagree': disagree,
+        'cross_agreement_rate': (round(100.0 * agree / examined, 1)
+                                 if examined else 0.0),
+        # The weaker companion number, on the same pattern as the loose artha rate:
+        # additionally counting the regular guṇa ar~ṛ alternation as agreement, since
+        # `arj`/`ṛj` is two citation conventions for one root, not two roots.
+        'cross_agree_with_variant': variant,
+        'cross_agreement_rate_with_variant': (round(100.0 * variant / examined, 1)
+                                              if examined else 0.0),
+        'cross_disagreement_shapes': dict(sorted(
+            Counter(d['shape'] for d in disagreements).items(),
+            key=lambda kv: (-kv[1], kv[0]))),
+    }
+    return stats, disagreements
+
+
+def _palsule_record(palsule, root_slp1, source, extra=None):
+    """One table row, or None when Palsule has no entry for that root spelling."""
+    root_iast = slp1_root_iast(root_slp1)
+    rec = palsule.get(_norm(root_iast))
+    if not rec:
+        return None
+    row = {
+        'root_slp1': root_slp1,
+        'root_iast': root_iast,
+        # Which dictionary attributed this coordinate to this root. `pwg` is H1333's
+        # rule (Böhtlingk's own article); the `mw*` values are H4339's second witness.
+        # A consumer that must not mix them filters on this key.
+        'source': source,
+        'palsule_root': rec['root_iast'],
+        'pages': rec['pages'],
+        'pada': rec['pada'],
+        # Stored in FULL. An earlier cut truncated to 8, which silently dropped
+        # `sattāyām` from DHĀTUP. 1,1 — bhū's canonical artha and the first entry of
+        # the whole dhātupāṭha — while `artha_count` still said 11. The tooltip does
+        # its own display-time limiting; the data layer keeps everything.
+        'arthas': rec['arthas'],
+        'artha_count': len(rec['arthas']),
+    }
+    row.update(extra or {})
+    return row
+
+
+def build(xls, pwg, mw=None):
     palsule, xls_rows, typo_folds = read_palsule(xls)
     coords, entries = read_pwg_coords(pwg)
 
@@ -323,6 +691,10 @@ def build(xls, pwg):
     table = {}
     conflicts = []
     unmatched = []
+    #: coord -> the ONE root PWG attributes it to, whether or not Palsule has that root.
+    #: The cross-validation below compares this against MW, so a coordinate PWG resolved
+    #: but Palsule could not gloss still counts as a comparable PWG verdict.
+    pwg_root = {}
     resolved_by_head = 0
     for coord, roots in sorted(coords.items(), key=lambda kv: [int(x) for x in kv[0].split(',')]):
         if len(roots) > 1:
@@ -343,25 +715,16 @@ def build(xls, pwg):
             root_slp1 = head[0]
         else:
             root_slp1 = next(iter(roots))
-        root_iast = slp1_root_iast(root_slp1)
-        rec = palsule.get(_norm(root_iast))
-        if not rec:
+        pwg_root[coord] = root_slp1
+        row = _palsule_record(palsule, root_slp1, 'pwg')
+        if row is None:
             unmatched.append({'coord': coord, 'root_slp1': root_slp1,
-                              'root_iast': root_iast})
+                              'root_iast': slp1_root_iast(root_slp1)})
             continue
-        table[coord] = {
-            'root_slp1': root_slp1,
-            'root_iast': root_iast,
-            'palsule_root': rec['root_iast'],
-            'pages': rec['pages'],
-            'pada': rec['pada'],
-            # Stored in FULL. An earlier cut truncated to 8, which silently dropped
-            # `sattāyām` from DHĀTUP. 1,1 — bhū's canonical artha and the first entry of
-            # the whole dhātupāṭha — while `artha_count` still said 11. The tooltip does
-            # its own display-time limiting; the data layer keeps everything.
-            'arthas': rec['arthas'],
-            'artha_count': len(rec['arthas']),
-        }
+        table[coord] = row
+
+    linked_pwg = len(table)
+    mw_stats, mw_disagreements = _mw_pass(mw, palsule, coords, table, pwg_root)
 
     stats = {
         'built': date.today().strftime('%d-%m-%Y'),
@@ -375,13 +738,24 @@ def build(xls, pwg):
         'coords_conflicted': len(conflicts),
         'coords_resolved_by_head_line': resolved_by_head,
         'coords_unmatched': len(unmatched),
+        # PWG-derived rows only — H1333's shipped number, deliberately still readable
+        # after the MW rows land beside it.
+        'coords_linked_pwg': linked_pwg,
+        'match_rate_pwg': (round(100.0 * linked_pwg / len(coords), 1)
+                           if coords else 0.0),
         'coords_linked': len(table),
         'match_rate': round(100.0 * len(table) / len(coords), 1) if coords else 0.0,
         'coords_linked_without_filters': unfiltered_linked,
         'match_rate_without_filters': (round(100.0 * unfiltered_linked / len(coords), 1)
                                        if coords else 0.0),
     }
-    agree, disagree, examined, samples, loose = audit_inline_artha(pwg, table)
+    stats.update(mw_stats)
+    # The artha measurement stays on the PWG-derived rows, so the H1333 number
+    # (139/232 = 59.9%) means the same thing before and after H4339. MW rows are
+    # measured separately: PWG's parenthesized artha is still an independent witness
+    # for them, but pooling the two would silently redefine the shipped accuracy figure.
+    agree, disagree, examined, samples, loose = audit_inline_artha(
+        pwg, table, sources=('pwg',))
     stats['inline_artha_examined'] = examined
     stats['inline_artha_agree'] = agree
     stats['inline_artha_disagree'] = disagree
@@ -390,17 +764,31 @@ def build(xls, pwg):
     stats['inline_artha_agree_loose'] = loose
     stats['inline_artha_agreement_rate_loose'] = (round(100.0 * loose / examined, 1)
                                                   if examined else 0.0)
-    return table, stats, conflicts, unmatched, samples
+    m_agree, _m_dis, m_examined, mw_artha_samples, m_loose = audit_inline_artha(
+        pwg, table, sources=('mw', 'mw-respell'))
+    stats['inline_artha_examined_mw'] = m_examined
+    stats['inline_artha_agree_mw'] = m_agree
+    stats['inline_artha_agreement_rate_mw'] = (round(100.0 * m_agree / m_examined, 1)
+                                               if m_examined else 0.0)
+    stats['inline_artha_agree_loose_mw'] = m_loose
+    stats['inline_artha_agreement_rate_loose_mw'] = (
+        round(100.0 * m_loose / m_examined, 1) if m_examined else 0.0)
+    return (table, stats, conflicts, unmatched, samples, mw_disagreements,
+            mw_artha_samples)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--xls', default=DEFAULT_XLS)
     ap.add_argument('--pwg', default=DEFAULT_PWG)
+    ap.add_argument('--mw', default=DEFAULT_MW,
+                    help='Monier-Williams, the second coordinate witness (H4339). '
+                         'Pass --mw "" to rebuild the H1333 PWG-only table.')
     ap.add_argument('--out', default=DEFAULT_OUT)
     a = ap.parse_args()
 
-    table, stats, conflicts, unmatched, artha_samples = build(a.xls, a.pwg)
+    (table, stats, conflicts, unmatched, artha_samples,
+     mw_disagreements, mw_artha_samples) = build(a.xls, a.pwg, a.mw)
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     payload = {
         '_README': (
@@ -417,8 +805,19 @@ def main():
             'Coordinates whose citing articles disagree on the root are DROPPED, not '
             'guessed. ACCURACY: _stats.inline_artha_* measures the table against the '
             'artha PWG itself prints beside the citation — an independent witness. '
-            'Coverage and accuracy are different numbers; both are in _stats.'),
+            'Coverage and accuracy are different numbers; both are in _stats. '
+            'PROVENANCE (H4339): every row carries `source` — `pwg` is Böhtlingk\'s own '
+            'attribution (H1333), `mw` is a coordinate PWG could not disambiguate that '
+            'Monier-Williams claims for exactly one root, `mw-respell` is a coordinate '
+            'PWG resolved to a root Palsule does not gloss where MW\'s spelling of it '
+            'is in Palsule. Filter on `source` to get the PWG-only table back. Where '
+            'both dictionaries resolve a coordinate to a DIFFERENT single root, the PWG '
+            'reading stands and the conflict is listed in `_mw_disagreements` for '
+            'adjudication — never resolved by picking a winner.'),
         '_stats': stats,
+        # Listed, not resolved. Each row is a live disagreement between two Böhtlingk-
+        # numbering witnesses about which root a coordinate belongs to.
+        '_mw_disagreements': mw_disagreements,
         'table': table,
     }
     with open(a.out, 'w', encoding='utf-8') as f:
@@ -434,6 +833,15 @@ def main():
     if artha_samples:
         print('sample inline-artha disagreements: %s'
               % json.dumps(artha_samples[:5], ensure_ascii=False))
+    if mw_artha_samples:
+        print('sample inline-artha disagreements (MW-derived rows): %s'
+              % json.dumps(mw_artha_samples[:3], ensure_ascii=False))
+    if mw_disagreements:
+        print('PWG/MW root disagreements (%d, listed in full in _mw_disagreements): %s'
+              % (len(mw_disagreements),
+                 ', '.join('%s PWG=%s MW=%s' % (d['coord'], d['pwg_root_iast'],
+                                                d['mw_root_iast'])
+                           for d in mw_disagreements[:8])))
 
 
 if __name__ == '__main__':
