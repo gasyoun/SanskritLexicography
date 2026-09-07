@@ -1558,6 +1558,15 @@ def test_gloss_wrapper_prompt_preservation_h4270():
         if needle not in preamble:
             fail('MASK_PREAMBLE lost the gloss-wrapper clause %r — the model will keep '
                  'stripping {%…%} wrappers and every window re-defects (H4015, twice)' % needle)
+    # 1b) H4277 (a′): the tightening clause — the H4270 window over-applied the rule to a
+    #     MASKED English span ({%equation of a degree%} -> {%уравнение степени%}, sense 4b,
+    #     high-confidence foreign_gloss_translated) instead of echoing {Tn} for restore.
+    for needle in ('applies ONLY to {%…%} spans you can SEE in your masked source',
+                   'stays {Tn} VERBATIM in both fields', 'never translate it',
+                   'never wrap it in {%…%}'):
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the {Tn}-verbatim tightening clause %r — the model will '
+                 'over-apply the wrapper rule to masked spans again (H4270 sense 4b)' % needle)
     # 2) The worked example, spans verbatim.
     for needle in ('a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.',
                    'а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.'):
