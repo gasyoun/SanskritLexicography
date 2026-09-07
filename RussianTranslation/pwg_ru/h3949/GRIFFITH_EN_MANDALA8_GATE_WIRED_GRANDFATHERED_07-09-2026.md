@@ -1,6 +1,6 @@
 # Griffith EN alignment selftest wired into CI; mandala 8 sukta 49-103 grandfathered, not repaired
 
-_Created: 07-09-2026 · Last updated: 07-09-2026_
+_Created: 07-09-2026 · Last updated: 07-09-2026 (independent verifier pass, same day)_
 
 H3949, following up [H2361](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2361/GRIFFITH_EN_RV_MANDALA8_VALAKHILYA_MISALIGNMENT_07-08-2026.md).
 Sonnet 5 (`claude-sonnet-5`).
@@ -8,11 +8,18 @@ Sonnet 5 (`claude-sonnet-5`).
 ## What changed
 
 1. [`src/audit_griffith_en_alignment.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_griffith_en_alignment.py)
-   `--selftest` is now wired into `.github/workflows/ci.yml` (job "RussianTranslation
-   gates", step "Griffith EN alignment gate (H2361/H3949)"). It SKIPs cleanly when
-   `corpus.db` is not checked out (the normal CI case, since it lives in
-   `SamudraManthanam`), so this is a no-op gate in CI today and a real gate anywhere
-   `SAMUDRA_CORPUS_DB` points at a live checkout.
+   `--selftest` is wired into `.github/workflows/ci.yml` (job "RussianTranslation
+   gates", step "Griffith EN alignment gate (H2361/H3949)"), pointed via
+   `SAMUDRA_CORPUS_DB` at a committed fixture,
+   [`tests/fixtures/rigveda_sa_fixture.db`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/fixtures/rigveda_sa_fixture.db)
+   (~4.6 MB — a full, unmodified copy of just the Rigveda `#sa` rows from the real
+   `corpus.db`, verified byte-for-byte to reproduce the real DB's per-mandala
+   numbers). **Correction (independent verifier, same day):** the gate as first
+   wired pointed at the default path (`SamudraManthanam/web/corpus.db`), which
+   is a separate ~600 MB repo never checked out in this repo's CI — so it always
+   took the `SKIP: corpus.db absent` branch and never actually ran the comparison
+   in CI, contrary to what this doc first claimed as "the live green proof." The
+   fixture above fixes that: CI now executes the real check on real data.
 2. `mandala 8` and `  8.49-8.103` are now GRANDFATHERED by name and date in the
    script's `GRANDFATHERED` dict — printed as `GRANDFATHERED ...` (not silently
    dropped), and excluded from the set that can fail the run. Any other block
@@ -37,10 +44,11 @@ key it actually belongs to." That constant-shift hypothesis was checked and is
 | 85 | 96 | 9 | 21 | mismatch |
 | 92 | 103 | 14 | 14 | matches (coincidence at the tail boundary) |
 
-Full table: 31 of 44 hymns in Griffith's 49-92 range do **not** land on the verse
-count a constant +11 shift predicts (script: `find_offset.py` / `full_map_check.py`,
-not committed — reproducible from `griffith_en_1896.json` + `corpus.db` per the
-method below). The shape is consistent with Griffith's published hymn *boundaries*
+Full table: 25 of 44 hymns in Griffith's 49-92 range do **not** land on the verse
+count a constant +11 shift predicts (19 match, per an independent verifier's
+re-derivation — this doc originally said 13/44 match; the verifier's recount is
+the corrected number here). Script not committed — reproducible from
+`griffith_en_1896.json` + `corpus.db` per the method below. The shape is consistent with Griffith's published hymn *boundaries*
 diverging from the critical/PWG (Aufrecht-descended) numbering across the whole
 stretch — not only where the vālakhilya hymns are inserted — which is a much
 larger philological correspondence problem than a single offset constant.
@@ -62,26 +70,33 @@ python src/audit_griffith_en_alignment.py --selftest   # exits 0, prints GRANDFA
 Method used to rule out the constant offset: for each Griffith sukta `S` in
 49..92, compare `len([v for v in griffith_en_1896.json if sukta==S and text != '-en-'])`
 against `len([v for v in corpus.db#sa if sukta==S+11])`. A real constant-offset
-repair would need every one of the 44 to match; 13 do.
+repair would need every one of the 44 to match; 19 do, 25 don't — still a
+majority mismatch, same conclusion.
 
 ## RU lane control (unaffected, evidence)
 
 `#ru` and `#sa` in `corpus.db` are read from the same source row and were checked
 directly (not inferred): 340/344 anchored stanzas in 8.49-8.103 carry the deity
-name in Russian at the same key (98.8%), 0 rows missing `#ru`. `_fetch_ru` in
-`citation_tm.py` is untouched by this pass.
+name in Russian at the same key (98.8%), 0 rows missing `#ru`. An independent
+verifier's own re-derivation (different Russian anchor regex set) got 358/368 =
+97.3% — same ballpark and conclusion (RU lane unaffected), noted here as a minor
+discrepancy rather than a disagreement. `_fetch_ru` in `citation_tm.py` is
+untouched by this pass.
 
 ## Evidence of done
 
 - CI run: see [`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)
-  step "Griffith EN alignment gate (H2361/H3949)" — next push/PR CI run is the
-  live green proof; local run above reproduces the same exit 0.
-- Deliberately broken run: mandala 1's agreement count was forced to 0 locally,
-  confirmed `FAIL mandala 1: 0/981 = 0.0% < 70% floor` and exit 1, then reverted
-  (not committed — the revert is the diff you see in this PR).
-- Per-mandala report before and after this change is byte-identical (the change
-  is to the gate's verdict logic, not the underlying data): `8.49-8.103` is
-  `73/368 = 19.8%` in both.
+  step "Griffith EN alignment gate (H2361/H3949)", now run with
+  `SAMUDRA_CORPUS_DB=tests/fixtures/rigveda_sa_fixture.db` — this PR's own CI run
+  is the live green proof that the comparison actually executes (not a SKIP).
+- Fixture fidelity: `python src/audit_griffith_en_alignment.py --selftest` run
+  once against the real `corpus.db` and once with `SAMUDRA_CORPUS_DB` pointed at
+  the fixture — identical per-mandala numbers both times (`8.49-8.103` is
+  `73/368 = 19.8%` in both).
+- Deliberately broken run: mandala 1's agreement count was forced to 0 in a
+  local, uncommitted copy of the script, run against the fixture DB, confirmed
+  `FAIL mandala 1: 0/981 = 0.0% < 70% floor` and exit 1, then reverted (`git
+  diff --stat` confirmed clean before committing).
 
 ## Residual (not closed by this handoff)
 
