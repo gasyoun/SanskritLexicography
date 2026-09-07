@@ -15,8 +15,12 @@ residue is ordinary translation looseness) and collapses where the columns
 drift, so the rate localises the damage without anyone reading 10,552 stanzas.
 
 Needs the corpus DB for the Sanskrit side (`SAMUDRA_CORPUS_DB`, default
-`SamudraManthanam/web/corpus.db`); exits 0 with a SKIP when it is absent, so
-this is safe to wire into a CI lane that checks out only this repo.
+`SamudraManthanam/web/corpus.db`); exits 0 with a SKIP when it is absent. CI
+does not check out the ~600 MB real corpus.db (separate repo) -- it points
+`SAMUDRA_CORPUS_DB` at `RussianTranslation/tests/fixtures/rigveda_sa_fixture.db`
+instead, a committed, unmodified copy of just the Rigveda `#sa` rows (~4.6 MB,
+H3949 07-09-2026) that reproduces the real DB's numbers exactly, so the gate
+actually executes in CI rather than permanently SKIPping.
 
   python src/audit_griffith_en_alignment.py            # per-mandala report
   python src/audit_griffith_en_alignment.py --selftest # gate: exit 1 on a NEW broken block

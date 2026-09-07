@@ -388,11 +388,20 @@ jobs:
         run: python src/pilot/ls_enrichment_selftest.py
       - name: Griffith EN alignment gate (H2361/H3949)
         working-directory: RussianTranslation
+        env:
+          # The real corpus.db (~600 MB, lives in the separate SamudraManthanam
+          # repo) is too large to check out here just for this one check. This
+          # fixture is a full, unmodified copy of its Rigveda `#sa` rows only
+          # (~4.6 MB, tests/fixtures/rigveda_sa_fixture.db, H3949 07-09-2026) --
+          # same numbers as the real DB, verified at build time -- so this step
+          # actually executes the comparison in CI instead of permanently
+          # SKIPping (H4356: the H3949 close-out verifier found the gate as
+          # first wired always took the SKIP path and never ran for real).
+          SAMUDRA_CORPUS_DB: tests/fixtures/rigveda_sa_fixture.db
         run: |
-          # SKIPs cleanly when corpus.db isn't checked out alongside this repo
-          # (it lives in SamudraManthanam) -- see the module docstring. mandala 8
-          # sukta 49-103 is a named, dated grandfathered exception; any other
-          # block falling below the floor is a real regression and fails the gate.
+          # mandala 8 sukta 49-103 is a named, dated grandfathered exception;
+          # any other block falling below the floor is a real regression and
+          # fails the gate.
           python src/audit_griffith_en_alignment.py --selftest
       - name: Validate roadmap
         working-directory: RussianTranslation
