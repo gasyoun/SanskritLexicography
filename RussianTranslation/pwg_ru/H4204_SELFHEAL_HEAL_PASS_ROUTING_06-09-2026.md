@@ -1,4 +1,4 @@
-_Created: 06-09-2026 · Last updated: 06-09-2026_
+_Created: 06-09-2026 · Last updated: 07-09-2026_
 
 # PWG-RU selfheal heal pass — the 20 registry-blocked cards, routing table + box runbook
 
@@ -60,5 +60,11 @@ From no_pwg_residuals.jsonl (all rows `blocked`, `updated_at` 2026-07-15 — PRE
 - **MG: «claude 4 5 6 is off the game for now»** — the re-login residual is cancelled; the wave rides c1 only.
 - Live probe: c1 HTTP 429, «resets 7:10pm (Europe/Moscow)».
 - One-shot Task Scheduler job **`PWG-RU h4213 heal wave`** armed for **19:15 MSK** (5 min after reset): `output\h4213_wave_launch.ps1` — probe c1 → drop stale leases → canary prep+run (`_atmavat`, fresh lease) → `canary_gate.py judge` → wave re-prep (6 keys) → `bounded_staged_run --execute --stop-before-promote --canary-receipt`. Every gate stops honestly with a NO-GO line in `output\h4213_wave_launch.log`; still_null restored after prep.
+
+### §6.2 Night launch attempt — gate RED, wave not fired (07-09-2026 03:1x MSK, H4213 OxAlpha session)
+
+- The armed 19:15 job had terminal-stopped pre-spend: canary re-prep hit `headless window id already exists: h4213can02` — stale coordinator **artifacts** dir survives the script's lease-drop (script cleaned state.json only). Orphan dirs `h4213can02` + `no_pwg_w10` removed; live ps1 patched to clean artifacts before prep.
+- Canary re-prepped deterministically (`_atmavat` stream, manifest v2, 93,762 B). Warm-up probe then failed **2×** (00:10Z `refusal` — sonnet-5 reads the c1 profile's Stop-hook `⭐ Next:` footer + StructuredOutput demand as prompt injection; retry `content`). RED = STOP per §4 step 3; **zero window spend** (~$0.9 probes only), registry + store untouched, all 6 keys still `blocked`.
+- Root cause is profile-context noise on c1 (last successful warm-up 2026-08-29), a human-owned credential-bearing surface. Unblock: quiet the hook noise on headless profiles, then re-run ps1 steps 3-8. Full evidence: RUN_LOG 2026-09-07 entry.
 
 _Dr. Mārcis Gasūns_
