@@ -786,6 +786,10 @@ Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
 RU `а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
 `a〉 {%ein%} {T1} {T2}.` and your translation must read `а) {%некий%} {T1} {T2}.` — the
 {Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
+This rule applies ONLY to {%…%} spans you can SEE in your masked source. A {Tn} masked span
+stays {Tn} VERBATIM in both fields — never translate it, never wrap it in {%…%} or any other
+markup, never reconstruct its content; the deterministic post-step restores the original
+span exactly.
 
 """
 
