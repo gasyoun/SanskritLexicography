@@ -3893,6 +3893,17 @@ word, or an `-en`/`-eln`/`-ern` verb ending, excluding genuine binomial shape), 
 > limitation recorded in
 > [`RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md) §5.
 
+> **Partial fix landed 07-09-2026 (H4312, Sonnet 5 `claude-sonnet-5`, PR
+> [#2107](https://github.com/gasyoun/SanskritLexicography/pull/2107)).** The dominant
+> `english_content` FP source — the ≥2-distinct-weak-marker bar applied uniformly across
+> `{a, an, of, or, and, with, as, one, war}` — is split: `a`/`an`/`war`/`one` (German/Italian
+> homographs) keep the ≥2 bar, `of`/`or`/`and`/`with`/`as` (no German-prose collision) now
+> pass on one hit. Re-measured over the full 192,763-span corpus: 66 spans correctly
+> reclassify `en`, 823 remaining lone `a`/`an`/`war` spans correctly stay `de` — the
+> homograph-guard property this finding motivated is intact. This does **not** close §464:
+> the `botany_binomial` (68 spans, 5 German) and `homograph_ambig` (8 spans) contributors are
+> untouched, and the 66-span fix is a narrow slice of the original 122-span FP count.
+
 ---
 
 ### §465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it
