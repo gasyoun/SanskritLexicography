@@ -39,7 +39,7 @@ does not cover. Those are **dropped, not resolved by citation count**: a majorit
 have bought perhaps five more points and made every number in the table unfalsifiable.
 
 Coverage: 1,226 / 1,751 distinct coordinates (70.0%; 1,144 = 65.3% without the two
-filters), 1,441 / 2,760 citations (52.2%), shipped as tooltip text with Palsule's printed
+filters), 1,441 / 2,760 citations (52.2%; 54.2% of the 2,657 that carry a coordinate at all) — both re-derivable from `python src/ls_coverage.py --md`, which is where the citation-level tally lives; the builder counts coordinates, not citation occurrences, shipped as tooltip text with Palsule's printed
 page — Palsule has no online edition, so there is no href to give, and inventing one was
 the failure mode the spec named first.
 
