@@ -14,34 +14,34 @@
   "coords_unmatched": 254,
   "coords_linked_pwg": 1226,
   "match_rate_pwg": 70.0,
-  "coords_linked": 1464,
-  "match_rate": 83.6,
+  "coords_linked": 1465,
+  "match_rate": 83.7,
   "coords_linked_without_filters": 1144,
   "match_rate_without_filters": 65.3,
   "mw_available": true,
   "mw_source": "csl-orig/v02/mw/mw.txt",
   "mw_entries": 286525,
-  "mw_coords_cited": 1453,
-  "mw_coords_cited_in_prose": 1404,
+  "mw_coords_cited": 1465,
+  "mw_coords_cited_in_prose": 1457,
   "mw_coords_in_westergaard_field": 1307,
-  "mw_coords_single_claimant": 1056,
-  "mw_coords_single_claimant_prose_first": 1245,
-  "mw_prose_claims_refused_variant_reading": 162,
-  "mw_coords_overlapping_pwg": 1334,
-  "mw_only_coords": 119,
-  "coords_filled_from_mw": 139,
-  "coords_filled_from_mw_respell": 99,
-  "coords_filled_from_mw_prose_only": 18,
+  "mw_coords_single_claimant": 1064,
+  "mw_coords_single_claimant_prose_first": 1192,
+  "mw_prose_claims_refused_variant_reading": 22,
+  "mw_coords_overlapping_pwg": 1339,
+  "mw_only_coords": 126,
+  "coords_filled_from_mw": 141,
+  "coords_filled_from_mw_respell": 98,
+  "coords_filled_from_mw_prose_only": 19,
   "mw_candidates_without_palsule_row": 25,
   "cross_validated": 814,
-  "cross_agree": 632,
-  "cross_disagree": 182,
-  "cross_agreement_rate": 77.6,
-  "cross_agree_with_variant": 695,
-  "cross_agreement_rate_with_variant": 85.4,
+  "cross_agree": 633,
+  "cross_disagree": 181,
+  "cross_agreement_rate": 77.8,
+  "cross_agree_with_variant": 696,
+  "cross_agreement_rate_with_variant": 85.5,
   "cross_disagreement_shapes": {
    "guṇa ar~ṛ": 63,
-   "other": 52,
+   "other": 51,
    "one letter": 39,
    "stem~root": 28
   },
@@ -51,11 +51,11 @@
   "inline_artha_agreement_rate": 59.9,
   "inline_artha_agree_loose": 174,
   "inline_artha_agreement_rate_loose": 75.0,
-  "inline_artha_examined_mw": 69,
+  "inline_artha_examined_mw": 71,
   "inline_artha_agree_mw": 36,
-  "inline_artha_agreement_rate_mw": 52.2,
+  "inline_artha_agreement_rate_mw": 50.7,
   "inline_artha_agree_loose_mw": 48,
-  "inline_artha_agreement_rate_loose_mw": 69.6
+  "inline_artha_agreement_rate_loose_mw": 67.6
  },
  "_mw_disagreements": [
   {
@@ -1389,15 +1389,6 @@
    "mw_root_iast": "tūṇ",
    "shape": "one letter",
    "shipped_reading": "pwg"
-  },
-  {
-   "coord": "33,27",
-   "pwg_root_slp1": "ABaRqana",
-   "pwg_root_iast": "ābhaṇḍana",
-   "mw_root_slp1": "Bal",
-   "mw_root_iast": "bhal",
-   "shape": "other",
-   "shipped_reading": "mw-respell"
   },
   {
    "coord": "33,28",
@@ -31297,50 +31288,6 @@
     "SuW"
    ]
   },
-  "9,58": {
-   "root_slp1": "luRW",
-   "root_iast": "luṇṭh",
-   "source": "mw",
-   "palsule_root": "luṇṭh",
-   "pages": [
-    "P168",
-    "P173",
-    "P174",
-    "P175",
-    "P177",
-    "P178",
-    "P185",
-    "P200"
-   ],
-   "pada": [
-    "(KṣKk om.)",
-    "M",
-    "S",
-    "V",
-    "MKtH",
-    "KtH",
-    "PJV"
-   ],
-   "arthas": [
-    "ālasye",
-    "ālasye gatipratighāte ca",
-    "ālasye pratighāte ca",
-    "khoṭe",
-    "gatipratighāte",
-    "gatipratighāte ālasye ca",
-    "gatau",
-    "gatyālasya-steya-khoṭe",
-    "caurye",
-    "pratighāte",
-    "steye"
-   ],
-   "artha_count": 11,
-   "mw_root_slp1": "luRW",
-   "pwg_claimants": [
-    "luRW",
-    "ruRW"
-   ]
-  },
   "9,67": {
    "root_slp1": "tUq",
    "root_iast": "tūḍ",
@@ -34529,6 +34476,38 @@
    "pwg_root_slp1": "cart",
    "pwg_root_iast": "cart"
   },
+  "28,37": {
+   "root_slp1": "juq",
+   "root_iast": "juḍ",
+   "source": "mw",
+   "palsule_root": "juḍ",
+   "pages": [
+    "P175",
+    "P183",
+    "P186",
+    "P194"
+   ],
+   "pada": [
+    "PKkKtHV",
+    "all (ex. KkV)",
+    "PKkŚāH",
+    "CJKt"
+   ],
+   "arthas": [
+    "gatau",
+    "node",
+    "preraṇe",
+    "bandhane",
+    "bandhe",
+    "vyabhicāre"
+   ],
+   "artha_count": 6,
+   "mw_root_slp1": "juq",
+   "pwg_claimants": [
+    "jun",
+    "juq"
+   ]
+  },
   "28,38": {
    "root_slp1": "mfq",
    "root_iast": "mṛḍ",
@@ -35594,6 +35573,34 @@
    "pwg_root_slp1": "par",
    "pwg_root_iast": "par"
   },
+  "32,21": {
+   "root_slp1": "Samb",
+   "root_iast": "śamb",
+   "source": "mw",
+   "palsule_root": "śamb",
+   "pages": [
+    "P175",
+    "P189",
+    "P198"
+   ],
+   "pada": [
+    "V",
+    "KṣMH"
+   ],
+   "arthas": [
+    "gatau",
+    "mardane",
+    "saṁbandhane",
+    "saṁbandhe"
+   ],
+   "artha_count": 4,
+   "mw_root_slp1": "Samb",
+   "pwg_claimants": [
+    "sAmb",
+    "saMbanDana",
+    "samb"
+   ]
+  },
   "32,62": {
    "root_slp1": "cul",
    "root_iast": "cul",
@@ -35975,6 +35982,43 @@
     "vrUz"
    ]
   },
+  "32,130": {
+   "root_slp1": "paRq",
+   "root_iast": "paṇḍ",
+   "source": "mw",
+   "palsule_root": "paṇḍ",
+   "pages": [
+    "P175",
+    "P176",
+    "P181",
+    "P182",
+    "P197",
+    "P198",
+    "P201",
+    "P202"
+   ],
+   "pada": [
+    "all (ex. V)",
+    "S",
+    "Kṣ"
+   ],
+   "arthas": [
+    "gatau",
+    "gatyām",
+    "dhāraṇe",
+    "nāśane",
+    "saṁghāte",
+    "saṁhatau",
+    "hiṁsā-gatyoḥ",
+    "hiṁsāyām"
+   ],
+   "artha_count": 8,
+   "mw_root_slp1": "paRq",
+   "pwg_claimants": [
+    "paRq",
+    "piRqay"
+   ]
+  },
   "33,4": {
    "root_slp1": "qip",
    "root_iast": "ḍip",
@@ -36099,44 +36143,6 @@
     "kuw",
     "truw"
    ]
-  },
-  "33,27": {
-   "root_slp1": "Bal",
-   "root_iast": "bhal",
-   "source": "mw-respell",
-   "palsule_root": "bhal",
-   "pages": [
-    "P168",
-    "P175",
-    "P180",
-    "P183",
-    "P186",
-    "P191",
-    "P201",
-    "P202"
-   ],
-   "pada": [
-    "all (ex. V; C om.)",
-    "V"
-   ],
-   "arthas": [
-    "ābhaṇḍane",
-    "gatau",
-    "dāna-hiṁsā-paribhāṣaṇeṣu",
-    "dāne",
-    "dāne vadhe nīrūpaṇe",
-    "nīrūpaṇe",
-    "paribhāṣana-hiṁsā-dāneṣu",
-    "paribhāṣaṇe",
-    "bādivat (=dāne vadhe nīrūpaṇe)",
-    "vadhe",
-    "hiṁsā-dana-paribhāṣaṇeṣu",
-    "hiṁsāyām"
-   ],
-   "artha_count": 12,
-   "mw_root_slp1": "Bal",
-   "pwg_root_slp1": "ABaRqana",
-   "pwg_root_iast": "ābhaṇḍana"
   },
   "33,30": {
    "root_slp1": "vfz",
