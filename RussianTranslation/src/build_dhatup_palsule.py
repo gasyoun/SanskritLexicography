@@ -301,8 +301,16 @@ _MW_VL = re.compile(r'<ab>\s*(?:v\.\s*l\.|w\.\s*r\.)\s*</ab>')
 #:                 citation, not this one. KEEP — line-scoping destroyed a cross-validation
 #:                 pair that AGREED with Böhtlingk.
 #:
-#: So the test is clause-scoped: a note disqualifies a citation only when it precedes it
-#: with no `;` or `)` closing the clause in between. Residual and left alone deliberately:
+#:   paRq, 32,130 `pile up (<ab>v.l.</ab> for <s>piRq</s>), <ls n="Dhātup.">xxxii, 130</ls>`
+#:                 note before, and the `)` only closes the parenthesis the note ITSELF
+#:                 sits in — it does not end the clause, which runs on to the citation.
+#:                 REFUSE. (Both dictionaries agree 32,130 is `piṇḍ`'s: PWG's `paRq`
+#:                 article says `v. l. für {#piRq#}` and its `piRqay` article attributes
+#:                 32,130 positively. A `)` counted blindly shipped `paṇḍ` anyway.)
+#:
+#: So the test is clause-scoped WITH PARENTHESIS DEPTH: a note disqualifies a citation
+#: when it precedes it and nothing between them ends its clause — a `;`, or a `)` that
+#: closes a parenthesis opened BEFORE the note. Residual and left alone deliberately:
 #: a note in a trailing parenthesis is genuinely ambiguous in MW's own usage (`juq`'s
 #: names the variant, `SloR`'s 13,15 `(<ab>w.r.</ab> for <s>pER</s>)` reads the other way),
 #: so those are kept and the ambiguity is declared rather than guessed.
@@ -332,16 +340,32 @@ def roman_to_int(s):
 def _vl_governs(line, at):
     """Does a variant-reading note disqualify the citation starting at `at`?
 
-    True only when the LAST such note before the citation is still in the same clause —
-    nothing between them closes it. See `_MW_CLAUSE_END` for the three articles that
-    fix each half of this rule."""
+    True only when the LAST such note before the citation is still in the same clause.
+    Depth matters: the `)` that closes the parenthesis the note itself sits in does NOT
+    end the clause (that is `paRq` at 32,130, which shipped a root both dictionaries
+    disown when the paren was counted blindly), whereas a `)` closing a parenthesis
+    opened before the note does. See `_MW_CLAUSE_END` for the four articles that fix
+    this rule."""
     pre = line[:at]
     last = None
     for m in _MW_VL.finditer(pre):
         last = m
     if last is None:
         return False
-    return not _MW_CLAUSE_END.search(pre[last.end():])
+    head = pre[:last.start()]
+    # How deep inside parentheses the note itself sits. Those closers belong to the
+    # note's own context and are transparent; anything shallower ends the clause.
+    depth = max(0, head.count('(') - head.count(')'))
+    for ch in pre[last.end():]:
+        if ch == '(':
+            depth += 1
+        elif ch == ')':
+            if depth == 0:
+                return False
+            depth -= 1
+        elif ch == ';':
+            return False
+    return True
 
 
 def read_mw_coords(mw):
@@ -446,8 +470,8 @@ def mw_claimants(prose, field, field_seen):
     made look contested.
 
     TWO DIFFERENT QUANTITIES, DO NOT CONFLATE THEM. Prose-first produces more
-    single-claimant COORDINATES (`_stats.mw_coords_single_claimant_prose_first`, 1245
-    against this policy's 1056) and fewer usable FILLS, because most of its extra
+    single-claimant COORDINATES (`_stats.mw_coords_single_claimant_prose_first`, 1192
+    against this policy's 1062) and fewer usable FILLS, because most of its extra
     claimants are on coordinates PWG already resolved — they add confident-looking
     noise to the cross-validation, not coverage. The claimant counterfactual is
     published because it is re-derivable from the artifact; the fill counterfactual is

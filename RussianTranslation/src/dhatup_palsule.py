@@ -26,9 +26,9 @@ SECOND WITNESS (H4339). Monier-Williams cites the same Böhtlingk coordinates an
 many of them in a structured field of its own (`<info westergaard="dIDIN,24.68,…"/>`).
 Where Böhtlingk left a coordinate ambiguous and MW claims it for exactly one root, the
 row is filled from MW and MARKED as such — `[MW]` in the tooltip, `source` in the data.
-Where both dictionaries name a single root, they can be compared: 633 of 814 agree
-outright (77.8%), 696 (85.5%) once the regular guṇa alternation `arj`/`ṛj` is counted as
-the citation-form variation it is. The 181 remaining are LISTED in the concordance's
+Where both dictionaries name a single root, they can be compared: 633 of 815 agree
+outright (77.7%), 696 (85.4%) once the regular guṇa alternation `arj`/`ṛj` is counted as
+the citation-form variation it is. The 182 remaining are LISTED in the concordance's
 `_mw_disagreements` and nothing is auto-resolved: a row Böhtlingk attributed keeps HIS
 root, and the only rows carrying MW's spelling (`mw-respell`) are ones where Palsule has
 no entry under Böhtlingk's spelling, so there was never a PWG row there to displace.
@@ -38,8 +38,10 @@ article cites `Dhātup. xx, 21` inside `<ab>v.l.</ab> for √ kzar` — a senten
 the coordinate to `kṣar` and names `kṣal` as the rejected reading. Harvested raw it put
 `kṣal` on 20,21 (and `taṭ` on 32,43, the same shape). BUT WHICH SIDE OF THE CITATION THE
 NOTE SITS ON DECIDES WHAT IT MEANS: `juq`'s `<ls>…xxviii, 37</ls> (<ab>v.l.</ab> √ jun)`
-puts the note AFTER, so 28,37 is the headword's and `jun` is the variant. So the guard is
-clause-scoped, not line-scoped, and those two coordinates are DROPPED rather than
+puts the note AFTER, so 28,37 is the headword's and `jun` is the variant — and a `)` that
+merely closes the note's OWN parenthesis ends nothing (`paRq` at 32,130, which both
+dictionaries give to `piṇḍ`). So the guard is clause-scoped with parenthesis depth, not
+line-scoped, and those three coordinates are DROPPED rather than
 re-attributed: MW assigns them in words this parser does not read, and inventing that
 attribution would be the fabrication this pipeline exists to refuse.
 

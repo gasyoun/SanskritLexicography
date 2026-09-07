@@ -359,7 +359,11 @@ def test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim():
     if not dhp.available():
         print('  .. skipped test_dhatup_mw_variant_reading (concordance absent)')
         return
-    for coord, away_to in (('20,21', 'kṣar'), ('32,43', 'tāḍ')):
+    # 32,130 is the depth case: the `)` closes the parenthesis the note itself sits in,
+    # so it ends nothing and the note still governs the citation after it. PWG agrees —
+    # its `paRq` article says `v. l. für {#piRq#}` and its `piRqay` article attributes
+    # 32,130 positively — so shipping `paṇḍ` was a root BOTH dictionaries disown.
+    for coord, away_to in (('20,21', 'kṣar'), ('32,43', 'tāḍ'), ('32,130', 'piṇḍ')):
         rec = dhp.record('', 'DHĀTUP. %s' % coord)
         if rec is not None and rec.get('source') in ('mw', 'mw-respell'):
             fail('%s shipped from MW as %r — MW\'s own sentence assigns it to %s and '

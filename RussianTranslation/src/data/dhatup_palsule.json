@@ -21,27 +21,27 @@
   "mw_available": true,
   "mw_source": "csl-orig/v02/mw/mw.txt",
   "mw_entries": 286525,
-  "mw_coords_cited": 1465,
-  "mw_coords_cited_in_prose": 1457,
+  "mw_coords_cited": 1461,
+  "mw_coords_cited_in_prose": 1441,
   "mw_coords_in_westergaard_field": 1307,
-  "mw_coords_single_claimant": 1064,
+  "mw_coords_single_claimant": 1062,
   "mw_coords_single_claimant_prose_first": 1192,
-  "mw_prose_claims_refused_variant_reading": 22,
-  "mw_coords_overlapping_pwg": 1339,
-  "mw_only_coords": 126,
-  "coords_filled_from_mw": 141,
-  "coords_filled_from_mw_respell": 98,
+  "mw_prose_claims_refused_variant_reading": 57,
+  "mw_coords_overlapping_pwg": 1337,
+  "mw_only_coords": 124,
+  "coords_filled_from_mw": 140,
+  "coords_filled_from_mw_respell": 99,
   "coords_filled_from_mw_prose_only": 19,
   "mw_candidates_without_palsule_row": 25,
-  "cross_validated": 814,
+  "cross_validated": 815,
   "cross_agree": 633,
-  "cross_disagree": 181,
-  "cross_agreement_rate": 77.8,
+  "cross_disagree": 182,
+  "cross_agreement_rate": 77.7,
   "cross_agree_with_variant": 696,
-  "cross_agreement_rate_with_variant": 85.5,
+  "cross_agreement_rate_with_variant": 85.4,
   "cross_disagreement_shapes": {
    "guṇa ar~ṛ": 63,
-   "other": 51,
+   "other": 52,
    "one letter": 39,
    "stem~root": 28
   },
@@ -1389,6 +1389,15 @@
    "mw_root_iast": "tūṇ",
    "shape": "one letter",
    "shipped_reading": "pwg"
+  },
+  {
+   "coord": "33,27",
+   "pwg_root_slp1": "ABaRqana",
+   "pwg_root_iast": "ābhaṇḍana",
+   "mw_root_slp1": "Bal",
+   "mw_root_iast": "bhal",
+   "shape": "other",
+   "shipped_reading": "mw-respell"
   },
   {
    "coord": "33,28",
@@ -35982,43 +35991,6 @@
     "vrUz"
    ]
   },
-  "32,130": {
-   "root_slp1": "paRq",
-   "root_iast": "paṇḍ",
-   "source": "mw",
-   "palsule_root": "paṇḍ",
-   "pages": [
-    "P175",
-    "P176",
-    "P181",
-    "P182",
-    "P197",
-    "P198",
-    "P201",
-    "P202"
-   ],
-   "pada": [
-    "all (ex. V)",
-    "S",
-    "Kṣ"
-   ],
-   "arthas": [
-    "gatau",
-    "gatyām",
-    "dhāraṇe",
-    "nāśane",
-    "saṁghāte",
-    "saṁhatau",
-    "hiṁsā-gatyoḥ",
-    "hiṁsāyām"
-   ],
-   "artha_count": 8,
-   "mw_root_slp1": "paRq",
-   "pwg_claimants": [
-    "paRq",
-    "piRqay"
-   ]
-  },
   "33,4": {
    "root_slp1": "qip",
    "root_iast": "ḍip",
@@ -36143,6 +36115,44 @@
     "kuw",
     "truw"
    ]
+  },
+  "33,27": {
+   "root_slp1": "Bal",
+   "root_iast": "bhal",
+   "source": "mw-respell",
+   "palsule_root": "bhal",
+   "pages": [
+    "P168",
+    "P175",
+    "P180",
+    "P183",
+    "P186",
+    "P191",
+    "P201",
+    "P202"
+   ],
+   "pada": [
+    "all (ex. V; C om.)",
+    "V"
+   ],
+   "arthas": [
+    "ābhaṇḍane",
+    "gatau",
+    "dāna-hiṁsā-paribhāṣaṇeṣu",
+    "dāne",
+    "dāne vadhe nīrūpaṇe",
+    "nīrūpaṇe",
+    "paribhāṣana-hiṁsā-dāneṣu",
+    "paribhāṣaṇe",
+    "bādivat (=dāne vadhe nīrūpaṇe)",
+    "vadhe",
+    "hiṁsā-dana-paribhāṣaṇeṣu",
+    "hiṁsāyām"
+   ],
+   "artha_count": 12,
+   "mw_root_slp1": "Bal",
+   "pwg_root_slp1": "ABaRqana",
+   "pwg_root_iast": "ābhaṇḍana"
   },
   "33,30": {
    "root_slp1": "vfz",
