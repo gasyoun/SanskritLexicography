@@ -373,13 +373,13 @@ All work extends the existing Cologne-port resolver
 | `P.` (Pāṇini) | 25351 | 25065 | 98.9% | 25349 | — (n/a) |
 | `Spr.` (1st ed) | 13133 | 12953 | 98.6% | 13133 | — (n/a) |
 | `Spr. (II)` (2nd ed) | 8684 | 8684 | 100.0% | 8684 | 8395 |
-| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1930 |
+| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1933 |
 
 - **Full-form Pāṇini `P. a,p,s` (3-param):** 25061 / 25061 linked (**100.0%**) — the H1307 DoD target.
 - **`Spr. (II) N` (2nd ed):** 8684 / 8684 linked (**100.0%**), 8395 full-text enriched (96.7% of linked).
 - **`DHĀTUP. x,y` → Palsule (H1333 + H4339):** 2657 / 2760 citations carry a gaṇa,serial
-  coordinate (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1930 of those
-  (72.6%)** resolve to a Palsule artha-index record — **1465 of the 1751 distinct coordinates
+  coordinate (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1933 of those
+  (72.8%)** resolve to a Palsule artha-index record — **1465 of the 1751 distinct coordinates
   PWG cites (83.7%)**, of which 1226 (70.0%) are Böhtlingk's own attribution and 239 come from
   the Monier-Williams second witness added by H4339 (marked `[MW]` in the tooltip, `source` in
   the data). The remaining shortfall is honest and of two kinds: coordinates neither dictionary
@@ -529,8 +529,8 @@ anubandha-marked infix, so the headword is not contained in it and the coordinat
 | `source` | rows | what it means |
 |---|--:|---|
 | `pwg` | 1226 | Böhtlingk's own attribution — H1333's rule, unchanged |
-| `mw` | 141 | PWG named no single root; MW claims the coordinate for exactly one |
-| `mw-respell` | 98 | PWG named a root Palsule does not gloss; MW spells it as Palsule does (`vark`/`vṛk`) |
+| `mw` | 140 | PWG named no single root; MW claims the coordinate for exactly one |
+| `mw-respell` | 99 | PWG named a root Palsule does not gloss; MW spells it as Palsule does (`vark`/`vṛk`) |
 
 `mw-respell` is the materially weaker class — it prefers one dictionary's citation form over the
 other's — so it is stamped apart, keeps `pwg_root_slp1` on the record, and renders as `[MW sp.]`
@@ -538,23 +538,23 @@ against plain `[MW]`. A PWG row is unmarked. **MW never overrides a shipped PWG 
 `mw-respell` row displaces nothing, because PWG had no Palsule-glossable row there at all.
 
 **Cross-validation — the confirmation H1333 never had.** Where both dictionaries resolve a
-coordinate to a single root, they can be compared: **633 of 814 agree outright (77.8%)**, and
-**696 (85.5%)** counting the regular guṇa alternation as the citation-form variation it is —
+coordinate to a single root, they can be compared: **633 of 815 agree outright (77.7%)**, and
+**696 (85.4%)** counting the regular guṇa alternation as the citation-form variation it is —
 reported as a separate, deliberately weaker number, exactly like the loose artha rate, never
-folded into the strict one. The 181 differences are **published in full** in the artifact's
+folded into the strict one. The 182 differences are **published in full** in the artifact's
 `_mw_disagreements` (with `shipped_reading`, so what a reader sees is never in doubt) and
 classified rather than resolved:
 
 | shape | n | example | reading |
 |---|--:|---|---|
 | `guṇa ar~ṛ` | 63 | 6,16 `arj`/`ṛj` | one root, two citation conventions |
-| `other` | 51 | 11,11 `tup`/`tump` | nasal infixes and genuinely different roots |
+| `other` | 52 | 11,11 `tup`/`tump` | nasal infixes and genuinely different roots |
 | `one letter` | 39 | 2,5 `nāth`/`nādh` | variant readings — the H328 class, the interesting ones |
 | `stem~root` | 28 | 32,69 `pālay`/`pāl` | derived stem against root |
 
 **Note the survey's numbers are superseded.** It reported 1,309 MW coordinates and 749/802
-(93.4%) agreement; this build reads 1,465 (three citation splittings plus MW's dotted article
-ids, which the PWG-shaped `<L>` pattern skips) and compares 814 pairs at 77.8%. The rate did not
+(93.4%) agreement; this build reads 1,461 (three citation splittings plus MW's dotted article
+ids, which the PWG-shaped `<L>` pattern skips) and compares 815 pairs at 77.7%. The rate did not
 fall because the data got worse — the sample got larger and the comparison stricter, and the
 extra pairs are dominated by the `guṇa ar~ṛ` bucket. Both numbers are re-derivable; this one is
 the artifact's.
@@ -589,22 +589,35 @@ sides of the citation:
 | `juq` 28,37 | `<ls n="Dhātup. xxviii,">37</ls> (<ab>v.l.</ab> √ <s>jun</s>)` | note **after** — the coordinate is the headword's, `jun` is the variant | **keep** |
 | `dAs` 27,32 | `(<ab>v.l.</ab> for <s>dAS</s>, <ls>Vop.</ls>; <ab>ib.</ab> <ls>…xxvii, 32</ls>)` | note before, but a `;` ends its clause — it governs the *Vop.* citation | **keep** |
 
-So the test is **clause-scoped**: a note disqualifies a citation only when it precedes it with no `;` or `)`
-closing the clause in between. Refusals fell 162 → **22**, and the line-scoped version's collateral is
-undone — 28,37 ships again, and 27,32 is back in the cross-validation *as an agreement*, which is why the
-strict rate returns to 77.8% rather than the 77.6% a blunter guard produced by deleting a correct pair.
-`w.r.` (wrong reading) is read as the same construction.
+**Pass 3 found the clause rule counted the wrong parenthesis.** A fourth article settles the last half:
 
-**Net cost against the first build: exactly two coordinates, both demonstrably wrong** — 1467 → 1465
-(83.8% → 83.7%). Nothing else moved: `mw-respell` 98, cross-validation 633/814, 181 disagreements, the
-four shapes and the artha rates are all unchanged. Neither coordinate is **re-attributed**: MW gives 20,21
-to `kṣar` in words this parser does not read, and inventing that attribution would be the fabrication the
-pipeline exists to refuse. Pinned by the added selftest
-`test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim`, which asserts both directions.
+| article | text | what it means | verdict |
+|---|---|---|---|
+| `paRq` 32,130 | `pile up (<ab>v.l.</ab> for <s>piRq</s>), <ls n="Dhātup.">xxxii, 130</ls>` | the `)` closes the parenthesis the note ITSELF sits in — it does not end the clause, which runs on to the citation | **refuse** |
 
-**Residual, declared rather than guessed:** a note in a *trailing parenthesis* is genuinely ambiguous in
+Counting that `)` blindly shipped `paṇḍ` at 32,130 — a root **both** dictionaries disown. PWG's own `paRq`
+article reads `v. l. für {#piRq#}`, and its `piRqay` article attributes 32,130 positively. So the rule is
+clause-scoped **with parenthesis depth**: a note disqualifies a citation when nothing between them ends its
+clause — a `;`, or a `)` closing a parenthesis opened *before* the note. `w.r.` (wrong reading) is read as
+the same construction.
+
+Refusals across the three passes went 162 → 22 → **57**, and the line-scoped version's collateral is
+undone: 28,37 ships again and 27,32 is back in the cross-validation *as an agreement*.
+
+**Net cost against the first build: three coordinates, each a root its own source disowns** — 1467 → 1465
+(83.8% → 83.7%), with `mw` 143 → 140 and `mw-respell` 98 → 99 (removing spurious claimants un-ambiguates
+as well as subtracts, so one coordinate gained a single claimant and shipped). No coordinate is
+**re-attributed**: MW gives 20,21 to `kṣar` in words this parser does not read, and inventing that
+attribution would be the fabrication the pipeline exists to refuse. Pinned by the added selftest
+`test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim`, which asserts every direction.
+
+**Residual, declared rather than guessed.** A note in a *trailing parenthesis* is genuinely ambiguous in
 MW's own usage — `juq`'s `(v.l. √ jun)` names the variant, while `SloR`'s 13,15 `(w.r. for pER)` reads the
-other way. Those are kept, and 13,15 is field-spoken anyway.
+other way. Those are kept, and 13,15 is field-spoken anyway. The known cost of that policy is **32,21**,
+which ships MW's `śamb` where PWG attributes the coordinate to `samb` and calls the other form the variant:
+MW's own note there is a bare trailing `(v.l.)` that names nobody, so refusing it would be a guess in the
+opposite direction. Recorded here rather than resolved. One further misfire is harmless: 15,32's note
+*names* the variant and is refused anyway, but that coordinate is field-spoken, so prose is never consulted.
 
 Three things the first pass left undisclosed and these now publish:
 
@@ -615,7 +628,7 @@ Three things the first pass left undisclosed and these now publish:
    ṝ/ṛ, ś/s, ṇ/r). It is *permissive* — it can only admit claimants, never swap one — and the 9 fills that
    depend on it are ones where the strict claimant set is empty, so no attribution turns on it (verified
    independently). `pad` still fails against `ata` either way.
-3. **`mw_coords_single_claimant_prose_first`** (1192 against field-first's 1064) makes the policy
+3. **`mw_coords_single_claimant_prose_first`** (1192 against field-first's 1062) makes the policy
    comparison re-derivable from the artifact. It is computed on the **unguarded** prose channel, because
    the policy being compared against is the one that shipped before the guard existed — measuring it on
    the guarded channel would publish a hybrid that never ran. Note these are different quantities:
