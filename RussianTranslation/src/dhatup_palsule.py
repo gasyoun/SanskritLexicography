@@ -22,10 +22,22 @@ Böhtlingk numbers apart: `DHĀTUP. 26,91` is the divādi `snih`, and its record
 arthas of every `snih` in Palsule. The tooltip therefore answers "what does Palsule
 record for this root", not "what does Palsule record at exactly this coordinate".
 
+SECOND WITNESS (H4339). Monier-Williams cites the same Böhtlingk coordinates and states
+many of them in a structured field of its own (`<info westergaard="dIDIN,24.68,…"/>`).
+Where Böhtlingk left a coordinate ambiguous and MW claims it for exactly one root, the
+row is filled from MW and MARKED as such — `[MW]` in the tooltip, `source` in the data.
+Where both dictionaries name a single root, they can be compared: 633 of 814 agree
+outright (77.8%), 696 (85.5%) once the regular guṇa alternation `arj`/`ṛj` is counted as
+the citation-form variation it is. The 181 remaining are LISTED in the concordance's
+`_mw_disagreements` and nothing is auto-resolved: a row Böhtlingk attributed keeps HIS
+root, and the only rows carrying MW's spelling (`mw-respell`) are ones where Palsule has
+no entry under Böhtlingk's spelling, so there was never a PWG row there to displace.
+
 DATA HONESTY — COVERAGE AND ACCURACY ARE DIFFERENT NUMBERS.
-  Coverage: 1,226 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (70.0%). The rest are
-  coordinates Böhtlingk lists under two root spellings (`skand`/`skund`) — dropped rather
-  than guessed — or roots absent from Palsule's artha index.
+  Coverage: 1,467 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.8%) — 1,226
+  (70.0%) attributed by Böhtlingk himself, 241 added by the MW witness above. The
+  remaining 284 are coordinates neither dictionary resolves unambiguously, or roots
+  absent from Palsule's artha index. Filter `source == 'pwg'` for the H1333 table.
   Accuracy: measured, not asserted. Böhtlingk often prints the dhātupāṭha's own artha in
   parentheses beside the citation, which is an independent witness; over the 232
   coordinates where he does, the artha he names is in our record 139 times exactly
@@ -54,6 +66,14 @@ _JSON = os.path.join(HERE, 'data', 'dhatup_palsule.json')
 #: ls_resolver.generate_href joins them. Both `DHĀTUP. 26,91` in one element and the
 #: continuation split `n="DHĀTUP. 26," / visible "91"` normalize to the same coord.
 _COORD = re.compile(r'^DH[ĀA]TUP\.\s*([0-9]+)\s*,\s*([0-9]+)')
+
+#: Provenance marks rendered into the tooltip (H4339). Deliberately sigla, not prose:
+#: this module is SHARED across the RU/DE/EN editions per LANG_PARITY.md, so the text
+#: must not be in one of them. `[MW]` = Böhtlingk left the coordinate ambiguous and
+#: Monier-Williams claims it for exactly one root; `[MW sp.]` = Böhtlingk's own root is
+#: absent from Palsule's index and MW's spelling of it is the one Palsule glosses.
+#: A PWG-attributed row (H1333's rule) carries no mark — it is the unmarked default.
+_SOURCE_MARK = {'pwg': '', 'mw': '[MW]', 'mw-respell': '[MW sp.]'}
 
 _TABLE = None
 _STATS = None
@@ -114,14 +134,23 @@ def palsule_for(n_attr, visible, artha_limit=4):
 
     Shape: `DHĀTUP. 26,91 — Palsule √snih (P175, P186, …): gatau, prītau, snehane, …`.
     The page siglum is Palsule's own printed page, which is the citable address in
-    the absence of an online edition."""
+    the absence of an online edition.
+
+    PROVENANCE IS SHOWN, NOT HIDDEN (H4339). A row Böhtlingk himself attributes reads
+    as above. A row that exists only because Monier-Williams broke a tie Böhtlingk left
+    open says so — `Palsule √skand [MW]` — because the reader is then looking at a
+    second dictionary's attribution, and that is a different epistemic claim."""
     c = coord(n_attr, visible)
     if c is None:
         return None
     rec = _load().get(c)
     if not rec:
         return None
-    parts = ['DHĀTUP. %s' % c, 'Palsule √%s' % rec.get('palsule_root', '')]
+    root = 'Palsule √%s' % rec.get('palsule_root', '')
+    mark = _SOURCE_MARK.get(rec.get('source') or 'pwg')
+    if mark:
+        root += ' %s' % mark
+    parts = ['DHĀTUP. %s' % c, root]
     pages = rec.get('pages') or []
     if pages:
         parts[-1] += ' (%s)' % ', '.join(pages[:6])

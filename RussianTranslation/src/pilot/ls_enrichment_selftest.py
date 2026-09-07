@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Fixture selftest for the <ls> link-enrichment (H1307 Pāṇini + Spr. (II);
-H1333 DHĀTUP. -> Palsule).
+H1333 DHĀTUP. -> Palsule; H4339 the Monier-Williams second coordinate witness).
 
 No network and no RU store are needed. The Pāṇini/edition-guard assertions are
 pure resolver logic; the Spr. (II) full-text lookup uses the tracked, public
@@ -209,7 +209,12 @@ def test_dhatup_palsule_lookup():
     # NEVER a fabricated href: Palsule has no online edition, the datum is text.
     if 'http' in tip:
         fail('Palsule tooltip must not carry a URL: %r' % tip)
-    # a coordinate Böhtlingk lists under two root spellings is DROPPED, not guessed
+    # A coordinate Böhtlingk lists under two root spellings is DROPPED, not guessed.
+    # 2,8 (skand/skund) stays dropped after H4339 as well, and for a reason worth
+    # knowing: MW's Westergaard field DOES number it (`skudi,2.8`), but `skudi` carries
+    # the nasal as an anubandha-marked infix, so the article headword is not contained
+    # in it and the claimant test — deliberately containment, never a stripping rule
+    # (H328) — declines to confirm. A conservative miss, not a resolution.
     if dhp.record('', 'DHĀTUP. 2,8') is not None:
         fail('conflicted coordinate 2,8 must not resolve')
 
@@ -234,6 +239,106 @@ def test_dhatup_palsule_record_is_complete_and_clean():
         if _re.search(r'\d$', r.get('palsule_root') or ''):
             fail('%s: footnote digits leaked into palsule_root %r'
                  % (coord, r['palsule_root']))
+
+
+def test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg():
+    """H4339: the MW second witness may ADD coordinates, never rewrite Böhtlingk's.
+
+    Three separable claims, each of which would be a real defect if it failed:
+      1. every row declares a provenance the consumer knows how to read;
+      2. the PWG-derived row count still equals H1333's shipped number, so the MW pass
+         demonstrably added rows instead of moving existing ones;
+      3. where the two dictionaries disagree, a row Böhtlingk attributed keeps HIS root.
+         MW's dissent is published for adjudication, never acted on. The one case where
+         MW's spelling does ship is `mw-respell` — Palsule has no entry under
+         Böhtlingk's spelling, so there was no PWG row to displace — and such a row must
+         still carry `pwg_root_slp1`, so the reading it set aside stays recoverable."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg')
+        return
+    import json as _json
+    table = dhp._load()
+    st = dhp.stats()
+    known = set(dhp._SOURCE_MARK)
+    seen = {}
+    for c, r in table.items():
+        src = r.get('source')
+        if src not in known:
+            fail('%s: unknown provenance %r (known: %s)' % (c, src, sorted(known)))
+        seen[src] = seen.get(src, 0) + 1
+    if seen.get('pwg') != st.get('coords_linked_pwg'):
+        fail('pwg rows %r != _stats.coords_linked_pwg %r'
+             % (seen.get('pwg'), st.get('coords_linked_pwg')))
+    if seen.get('mw') != st.get('coords_filled_from_mw'):
+        fail('mw rows %r != _stats.coords_filled_from_mw %r'
+             % (seen.get('mw'), st.get('coords_filled_from_mw')))
+    if len(table) != st.get('coords_linked'):
+        fail('table size %d != _stats.coords_linked %r' % (len(table), st['coords_linked']))
+
+    with open(dhp._JSON, encoding='utf-8') as f:
+        payload = _json.load(f)
+    dis = payload.get('_mw_disagreements')
+    if not dis:
+        fail('_mw_disagreements must be published, not summarized away')
+    for d in dis:
+        for k in ('coord', 'pwg_root_slp1', 'mw_root_slp1', 'shape', 'shipped_reading'):
+            if not d.get(k):
+                fail('disagreement %r missing %s' % (d.get('coord'), k))
+        row = table.get(d['coord'])
+        if row is None:
+            if d['shipped_reading'] != 'dropped':
+                fail('%s: shipped_reading %r but no row' % (d['coord'], d['shipped_reading']))
+            continue
+        if row['source'] == 'pwg' and row['root_slp1'] != d['pwg_root_slp1']:
+            fail('%s: MW overrode a PWG row (%r shipped, PWG says %r)'
+                 % (d['coord'], row['root_slp1'], d['pwg_root_slp1']))
+        if row['source'] == 'mw':
+            fail('%s: a disputed coordinate cannot be a pure MW fill — PWG named a root'
+                 % d['coord'])
+        if row['source'] == 'mw-respell' and not row.get('pwg_root_slp1'):
+            fail('%s: mw-respell row must keep the PWG reading it set aside' % d['coord'])
+        if row['source'] != d['shipped_reading']:
+            fail('%s: shipped_reading %r != row source %r'
+                 % (d['coord'], d['shipped_reading'], row['source']))
+
+
+def test_dhatup_mw_tooltip_marks_the_second_witness():
+    """H4339: a reader can tell a Böhtlingk attribution from an MW one at a glance.
+
+    2,19 (ūrd/urd — Böhtlingk spells it both ways and claims neither) is MW-derived and
+    must carry `[MW]`; 26,91 (snih) is Böhtlingk's own and must stay unmarked."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_mw_tooltip_marks_the_second_witness')
+        return
+    rec = dhp.record('', 'DHĀTUP. 2,19')
+    if not rec or rec.get('source') != 'mw':
+        print('  .. skipped: 2,19 is not MW-derived in this build (%r)'
+              % (rec or {}).get('source'))
+        return
+    tip = dhp.palsule_for('', 'DHĀTUP. 2,19')
+    if '[MW]' not in (tip or ''):
+        fail('MW-derived tooltip must mark its witness: %r' % tip)
+    if 'http' in (tip or ''):
+        fail('no fabricated href, MW rows included: %r' % tip)
+    plain = dhp.palsule_for('', 'DHĀTUP. 26,91')
+    if 'MW' in (plain or ''):
+        fail('a PWG-attributed tooltip must carry no MW mark: %r' % plain)
+
+
+def test_dhatup_roman_gana_reading():
+    """H4339: MW writes Böhtlingk's gaṇa as a Roman numeral, and the whole range 1–35
+    must read back exactly — an off-by-one here silently files a root under the wrong
+    gaṇa, which no later check would catch."""
+    sys.path.insert(0, SRC)
+    import build_dhatup_palsule as bld   # noqa: E402
+    for roman, want in (('i', 1), ('iv', 4), ('v', 5), ('ix', 9), ('x', 10),
+                        ('xxiv', 24), ('xxxiii', 33), ('xxxv', 35), ('XXVI', 26)):
+        got = bld.roman_to_int(roman)
+        if got != want:
+            fail('roman_to_int(%r) = %r, want %r' % (roman, got, want))
+    for bad in ('', 'abc', '26'):
+        if bld.roman_to_int(bad) is not None:
+            fail('roman_to_int(%r) should be None' % bad)
 
 
 def test_dhatup_palsule_wired_into_tooltip():
@@ -265,6 +370,9 @@ def main():
         test_dhatup_palsule_coordinate_parse,
         test_dhatup_palsule_lookup,
         test_dhatup_palsule_record_is_complete_and_clean,
+        test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg,
+        test_dhatup_mw_tooltip_marks_the_second_witness,
+        test_dhatup_roman_gana_reading,
         test_dhatup_palsule_wired_into_tooltip,
     ]
     for t in tests:
