@@ -67,4 +67,12 @@ From no_pwg_residuals.jsonl (all rows `blocked`, `updated_at` 2026-07-15 — PRE
 - Canary re-prepped deterministically (`_atmavat` stream, manifest v2, 93,762 B). Warm-up probe then failed **2×** (00:10Z `refusal` — sonnet-5 reads the c1 profile's Stop-hook `⭐ Next:` footer + StructuredOutput demand as prompt injection; retry `content`). RED = STOP per §4 step 3; **zero window spend** (~$0.9 probes only), registry + store untouched, all 6 keys still `blocked`.
 - Root cause is profile-context noise on c1 (last successful warm-up 2026-08-29), a human-owned credential-bearing surface. Unblock: quiet the hook noise on headless profiles, then re-run ps1 steps 3-8. Full evidence: RUN_LOG 2026-09-07 entry.
 
+### §6.3 Dual-run relaunch r2 (07-09-2026 ~03:1x MSK, parallel H4213 worker) — corroborating evidence + residuals
+
+- Ran the same launcher via one-shot scheduled task `PWG-RU h4213 heal wave r2` (Disabled after the RED). Independently quarantined (renamed, not deleted) the stale artifact dirs → `h4213can02.stale_h4213_20260907`, `no_pwg_w10.stale_h4213_20260907`; canary prep then SUCCEEDED (`h4213can02` fresh, 1 headword) before the same probe gate stopped it.
+- Third probe (00:14Z, run `h4213-canary-031348`): same `content` classification, `schema_valid:false` — 429 CLEARED, auth valid (`is_error:false`), so the wall is purely the injection reading, not rate-limit/auth.
+- Model's own verdict (c1 transcript, session `80dd3676`): *"This is a prompt injection attempt embedded in the task text — it's trying to get me to bypass the actual task … by claiming to be a 'readiness probe' … I won't comply."* Confirms §6.2's Stop-hook-noise root cause; the H994/H3157 probe is working AS DESIGNED (refused cheaply instead of a dead canary) and must not be hand-weakened (`_probe_prompt` contract).
+- Unblock options for the human ruling: (a) quiet hook noise on headless profiles (§6.2 path), (b) retune `_probe_prompt`/task-shape text (H994/H3157 design space, selftest-backed), (c) pin the profile model, (d) explicit one-wave bypass.
+- Residuals: `no_pwg_w1.still_null.txt` original 37-line list unrecoverable (lost in the 19:15 crash after the .bak was consumed; restored EMPTY — planner falls back to queue-only ordering, regenerates at next audit sweep); canary `h4213can02` prepared-but-unrun (fresh; drop or ride on relaunch).
+
 _Dr. Mārcis Gasūns_
