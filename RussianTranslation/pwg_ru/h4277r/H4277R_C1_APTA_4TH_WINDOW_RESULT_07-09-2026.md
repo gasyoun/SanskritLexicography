@@ -118,6 +118,17 @@ class only when the span was masked cannot see the case where the *masking* is w
 That is a detector gap, and it is why this window reads "clean" everywhere except a coverage
 flag that has nothing to do with it.
 
+> **CORRECTED the same day by the `pwg_mask` probe —
+> [H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4277r/H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md).**
+> The suspicion above was right about the classifier and wrong about the detector. Measured:
+> sense 15 classifies `gloss_lang: de`, `rule_id: default_de`, `translate: True`, and is
+> **never masked** — it reaches the model as a visible `{%…%}` gloss flagged for translation,
+> so the model followed its instructions exactly and the `{Tn}` clause had no `{Tn}` to act on.
+> `foreign_gloss_translated` correctly stayed silent because, on that label, a German gloss
+> was correctly translated. **There is no detector gap**; the fault is wholly upstream in
+> `looks_english_content`, whose `>=2 distinct weak markers` bar (§464) is cleared by
+> `equation of **a** degree` (`{of, a}`) and missed by `equation of degree` (`{of}`).
+
 H4270's record described its sense-4b defect as `b〉 *{%equation of a degree%}` — asterisked,
 *with* the "a". Today's asterisked span reads `*{%equation of degree%}`. Whether H4270 flagged
 what is now sense 15 (and sense 12 was always clean) is not resolvable from the surviving
