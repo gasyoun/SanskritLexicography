@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Fixture selftest for the H1307 <ls> link-enrichment (Pāṇini + Spr. (II)).
+"""Fixture selftest for the <ls> link-enrichment (H1307 Pāṇini + Spr. (II);
+H1333 DHĀTUP. -> Palsule).
 
 No network and no RU store are needed. The Pāṇini/edition-guard assertions are
 pure resolver logic; the Spr. (II) full-text lookup uses the tracked, public
@@ -21,6 +22,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 import ls_resolver as lsr        # noqa: E402
 import pwg_sources as pwgsrc     # noqa: E402
 import spr_fulltext as spr       # noqa: E402
+import dhatup_palsule as dhp     # noqa: E402
 
 _PANINI = 'https://ashtadhyayi.com/sutraani'
 _BOESP2 = 'sanskrit-lexicon-scans.github.io/boesp2'
@@ -163,6 +165,62 @@ def test_h2005_ed_bomb_ru_display_not_resolve():
     # (guarded by construction: _ls_html calls _ls_href(..., vis) not display)
 
 
+def test_dhatup_palsule_coordinate_parse():
+    """H1333: both citation splittings normalize to the same `x,y` coordinate, and
+    a gaṇa-only `DHĀTUP.` (no serial) is NOT keyed — Palsule needs the root."""
+    if dhp.coord('', 'DHĀTUP. 26,91') != '26,91':
+        fail('DHĀTUP. 26,91 -> %r' % dhp.coord('', 'DHĀTUP. 26,91'))
+    if dhp.coord('DHĀTUP. 22,', '30.') != '22,30':
+        fail('continuation DHĀTUP. 22, + 30. -> %r' % dhp.coord('DHĀTUP. 22,', '30.'))
+    for bad in ('DHĀTUP.', 'DHĀTUP. 26', 'P. 7,4,71', 'Spr. (II) 2756'):
+        if dhp.coord('', bad) is not None:
+            fail('%r should not key a Palsule lookup, got %r' % (bad, dhp.coord('', bad)))
+
+
+def test_dhatup_palsule_lookup():
+    """H1333: the committed concordance resolves a coordinate to Palsule's own
+    artha gloss for that root. `snih` at DHĀTUP. 26,91 must carry `snehane`; the
+    Westergaard gaṇa-level href is untouched by the enrichment."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_palsule_lookup (concordance absent)')
+        return
+    rec = dhp.record('', 'DHĀTUP. 26,91')
+    if not rec or rec.get('root_iast') != 'snih':
+        fail('DHĀTUP. 26,91 record: %r' % rec)
+    if 'snehane' not in (rec.get('arthas') or []):
+        fail('snih artha glosses missing snehane: %r' % rec.get('arthas'))
+    tip = dhp.palsule_for('', 'DHĀTUP. 26,91')
+    if not tip or 'Palsule √snih' not in tip or 'P175' not in tip:
+        fail('tooltip: %r' % tip)
+    # NEVER a fabricated href: Palsule has no online edition, the datum is text.
+    if 'http' in tip:
+        fail('Palsule tooltip must not carry a URL: %r' % tip)
+    # sthā 22,30 -> sthāne (a second, independent coordinate)
+    tip2 = dhp.palsule_for('DHĀTUP. 22,', '30.')
+    if not tip2 or 'sthāne' not in tip2:
+        fail('DHĀTUP. 22,30 tooltip: %r' % tip2)
+    # a coordinate Böhtlingk lists under two root spellings is DROPPED, not guessed
+    if dhp.record('', 'DHĀTUP. 2,8') is not None:
+        fail('conflicted coordinate 2,8 must not resolve')
+
+
+def test_dhatup_palsule_wired_into_tooltip():
+    """H1333: the shared _ls_tooltip layer (which the H1301 review sheets reuse)
+    returns the Palsule enrichment, and a non-DHĀTUP. citation is unaffected."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_palsule_wired_into_tooltip (concordance absent)')
+        return
+    sys.path.insert(0, HERE)
+    import build_article_site as bas   # noqa: E402
+    got = bas._ls_tooltip('n="DHĀTUP. 26,"', '91')
+    if not got or 'Palsule √snih' not in got:
+        fail('_ls_tooltip DHĀTUP. -> %r' % got)
+    # gaṇa-only DHĀTUP. falls back to the pwgbib source title, never to Palsule
+    plain = bas._ls_tooltip('', 'DHĀTUP.')
+    if plain and 'Palsule' in plain:
+        fail('gaṇa-only DHĀTUP. must not carry a Palsule record: %r' % plain)
+
+
 def main():
     tests = [
         test_panini_full_form,
@@ -172,6 +230,9 @@ def main():
         test_spr_second_ed_number,
         test_spr_fulltext_lookup,
         test_h2005_ed_bomb_ru_display_not_resolve,
+        test_dhatup_palsule_coordinate_parse,
+        test_dhatup_palsule_lookup,
+        test_dhatup_palsule_wired_into_tooltip,
     ]
     for t in tests:
         t()

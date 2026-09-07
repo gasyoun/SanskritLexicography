@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 31-08-2026_
+_Created: 04-07-2026 · Last updated: 07-09-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,43 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1333 — the concordance was inside the dictionary all along (07-09-2026)
+
+H1307 shipped the `<ls>` enrichment for Pāṇini and `Spr. (II)` and had to stop at its third
+arm: `DHĀTUP. x,y` → Palsule. The reason was recorded as a data absence — no machine-readable
+Palsule-numbered dhātupāṭha, no Böhtlingk→Palsule concordance anywhere in the org — and the
+plan that followed from it was a data acquisition: get Palsule as a spreadsheet, then join
+gaṇa + normalized dhātu, and expect the H328 ablaut problem (a naive it-stripped join matched
+454 of 930 Whitney roots) to eat most of the coverage.
+
+MG supplied the XLS on 07-09. It turned out to be Palsule's *artha* index — 8,170 rows of
+`<artha> : ⎷<root>` with a printed page — and it carries **no Böhtlingk coordinate at all**,
+which by the spec's own reasoning was the bad branch. It was not, because the spec had the
+join backwards. **PWG is Böhtlingk.** A `DHĀTUP. x,y` citation is not an external reference
+to be reconciled; it stands inside the article of the very root it numbers, and that
+article's `<k1>` key is the dhātu. The coordinate→root half is therefore *read off the source
+text*, exactly and with no normalization at all — the ablaut risk that shaped the whole plan
+never touches it. Only root→Palsule is a join, and it is a join of one citation form against
+itself in two transliterations.
+
+The work that remained was not matching but **disambiguation**, and it is where the honest
+numbers come from. A coordinate is quoted by more than one article: the root's, and any
+nominal article that glosses it (`{#loqana#}¦ <lex>n.</lex> … als Erkl. von {#bAD#}
+<ls>DHĀTUP. 2,4</ls>`). Two filters, both readable off the markup — a head-line citation
+outranks a body one, and a `<lex>`-bearing claimant loses to the verbal article — take the
+crosswalk from 65.3% to 70.0%. What is left is Böhtlingk's own doubled spellings
+(`skand`/`skund`, `cut`/`cyut`, 271 coordinates) and 254 roots Palsule's artha index simply
+does not cover. Those are **dropped, not resolved by citation count**: a majority vote would
+have bought perhaps five more points and made every number in the table unfalsifiable.
+
+Final: 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%), shipped
+as tooltip text with Palsule's printed page — Palsule has no online edition, so there is no
+href to give, and inventing one was the failure mode the spec named first.
+
+**Transferable:** when a crosswalk between an old dictionary and an index looks impossible for
+want of a third table, check whether the dictionary is itself an edition of the thing being
+crosswalked. Half of this join was always sitting in the corpus that needed it.
 
 ### H2152/H2158 — the ceiling was never the problem: every call re-writes its own cache (02-08-2026)
 
