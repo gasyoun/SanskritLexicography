@@ -359,10 +359,29 @@ def test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim():
     if not dhp.available():
         print('  .. skipped test_dhatup_mw_variant_reading (concordance absent)')
         return
-    rec = dhp.record('', 'DHĀTUP. 20,21')
-    if rec is not None and rec.get('source') in ('mw', 'mw-respell'):
-        fail('20,21 shipped from MW as %r — it sits on a v.l. line MW itself '
-             'assigns to kṣar' % rec.get('palsule_root'))
+    for coord, away_to in (('20,21', 'kṣar'), ('32,43', 'tāḍ')):
+        rec = dhp.record('', 'DHĀTUP. %s' % coord)
+        if rec is not None and rec.get('source') in ('mw', 'mw-respell'):
+            fail('%s shipped from MW as %r — MW\'s own sentence assigns it to %s and '
+                 'names this root the rejected reading'
+                 % (coord, rec.get('palsule_root'), away_to))
+
+    # ...AND THE INVERSE MUST SURVIVE. A first, line-scoped version of the guard read
+    # any `v.l.` on the line as disqualifying and so destroyed two correct rows. Which
+    # side of the citation the note sits on is what it means:
+    #   juq  `<ls n="Dhātup. xxviii,">37</ls> (<ab>v.l.</ab> √ <s>jun</s>)`   note AFTER
+    #        -> 28,37 is the headword's, `jun` is the variant. Must SHIP.
+    #   dAs  `(<ab>v.l.</ab> for <s>dAS</s>, <ls>Vop.</ls>; <ab>ib.</ab> <ls>xxvii, 32</ls>)`
+    #        -> a `;` ends the note's clause, so it governs the Vop. citation, not this
+    #        one. 27,32 agrees with Böhtlingk and must stay in the cross-validation.
+    juq = dhp.record('', 'DHĀTUP. 28,37')
+    if not juq or juq.get('source') != 'mw':
+        fail('28,37 must ship from MW (the v.l. note follows the citation and names '
+             'the OTHER root) — got %r' % (juq and juq.get('source')))
+    das = dhp.record('', 'DHĀTUP. 27,32')
+    if not das or das.get('source') != 'pwg':
+        fail('27,32 must keep Böhtlingk\'s own attribution — got %r'
+             % (das and das.get('source')))
     st = dhp.stats()
     if not st.get('mw_prose_claims_refused_variant_reading'):
         fail('the v.l. refusal is not being counted — %r'

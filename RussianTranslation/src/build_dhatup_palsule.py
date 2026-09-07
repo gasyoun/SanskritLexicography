@@ -282,11 +282,31 @@ _MW_WESTERGAARD = re.compile(r'<info\b[^>]*\bwestergaard="([^"]*)"')
 #: harvesting the citation as a `kzal` claim inverts MW's own statement. This is the
 #: `pad`/3,1 defect exactly, and the field-first rule does not catch it here because no
 #: `<info westergaard>` anywhere numbers 20,21, so the prose fallback runs unguarded.
-#: A line carrying this marker contributes NO prose claimant. Deliberately line-scoped
-#: and deliberately blunt: over-suppression drops a coordinate (the conservative
-#: failure, which this file already accepts at `2,8`), under-suppression ships a root
-#: the source disowns.
-_MW_VL = re.compile(r'<ab>\s*v\.\s*l\.\s*</ab>')
+#: `w.r.` (wrong reading) is the same construction under a different siglum.
+_MW_VL = re.compile(r'<ab>\s*(?:v\.\s*l\.|w\.\s*r\.)\s*</ab>')
+
+#: WHICH SIDE OF THE CITATION THE NOTE SITS ON DECIDES WHAT IT MEANS, and a first,
+#: line-scoped version of this guard got that wrong in both directions (found by the
+#: second adjudication pass, 07-09-2026). Three real articles, three different answers:
+#:
+#:   kzal, 20,21   `<s>kzal</s> ¦ <ab>v.l.</ab> for √ <s>kzar</s>, <ls>Dhātup. xx, 21</ls>`
+#:                 note BEFORE the citation, same clause -> the headword IS the rejected
+#:                 reading and the coordinate belongs to someone else. REFUSE.
+#:   juq, 28,37    `<ls n="Dhātup. xxviii,">37</ls> (<ab>v.l.</ab> √ <s>jun</s>)`
+#:                 note AFTER the citation -> the coordinate is the headword's and `jun`
+#:                 is the variant. The exact inverse. KEEP — line-scoping destroyed this
+#:                 correct row.
+#:   dAs, 27,32    `(<ab>v.l.</ab> for <s>dAS</s>, <ls>Vop.</ls>; <ab>ib.</ab> <ls …>xxvii, 32</ls>)`
+#:                 note before, but a `;` ends its clause first -> it governs the `Vop.`
+#:                 citation, not this one. KEEP — line-scoping destroyed a cross-validation
+#:                 pair that AGREED with Böhtlingk.
+#:
+#: So the test is clause-scoped: a note disqualifies a citation only when it precedes it
+#: with no `;` or `)` closing the clause in between. Residual and left alone deliberately:
+#: a note in a trailing parenthesis is genuinely ambiguous in MW's own usage (`juq`'s
+#: names the variant, `SloR`'s 13,15 `(<ab>w.r.</ab> for <s>pER</s>)` reads the other way),
+#: so those are kept and the ambiguity is declared rather than guessed.
+_MW_CLAUSE_END = re.compile(r'[;)]')
 
 _ROMAN_VALUES = {'i': 1, 'v': 5, 'x': 10, 'l': 50, 'c': 100}
 
@@ -307,6 +327,21 @@ def roman_to_int(s):
         nxt = _ROMAN_VALUES.get(s[i + 1]) if i + 1 < len(s) else 0
         total += -v if (nxt or 0) > v else v
     return total or None
+
+
+def _vl_governs(line, at):
+    """Does a variant-reading note disqualify the citation starting at `at`?
+
+    True only when the LAST such note before the citation is still in the same clause —
+    nothing between them closes it. See `_MW_CLAUSE_END` for the three articles that
+    fix each half of this rule."""
+    pre = line[:at]
+    last = None
+    for m in _MW_VL.finditer(pre):
+        last = m
+    if last is None:
+        return False
+    return not _MW_CLAUSE_END.search(pre[last.end():])
 
 
 def read_mw_coords(mw):
@@ -350,6 +385,7 @@ def read_mw_coords(mw):
     MW uses the same Cologne markup as PWG (`<L>…<k1>KEY<k2>` opens, `<LEND>` closes),
     only the citation syntax differs (Roman gaṇa)."""
     prose = defaultdict(set)
+    prose_raw = defaultdict(set)
     field = defaultdict(set)
     field_seen = set()
     vl_dropped = set()
@@ -367,14 +403,16 @@ def read_mw_coords(mw):
                 continue
             if key is None:
                 continue
-            is_vl = bool(_MW_VL.search(line))
             for rx in (_MW_DHATUP, _MW_DHATUP_N_FULL, _MW_DHATUP_N_GANA):
                 for mm in rx.finditer(line):
                     gana = roman_to_int(mm.group(1))
                     if gana is None:
                         continue
                     coord = '%d,%s' % (gana, mm.group(2))
-                    if is_vl:
+                    # The unguarded channel, kept so the prose-first counterfactual is
+                    # the policy that actually shipped before this guard, not a hybrid.
+                    prose_raw[coord].add(key)
+                    if _vl_governs(line, mm.start()):
                         # MW is naming this article as the REJECTED reading of the
                         # coordinate. Recording it as a claimant would ship the one
                         # root the source explicitly disowns.
@@ -393,7 +431,7 @@ def read_mw_coords(mw):
                     field_seen.add(coord)
                     if key.lower() in (bits[0] or '').lower():
                         field[coord].add(key)
-    return prose, field, field_seen, entries, vl_dropped
+    return prose, field, field_seen, entries, vl_dropped, prose_raw
 
 
 def mw_claimants(prose, field, field_seen):
@@ -598,17 +636,25 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
                          'second-witness pass skipped\n' % mw)
         return empty, []
 
-    prose, field, field_seen, mw_entries, vl_dropped = read_mw_coords(mw)
+    (prose, field, field_seen, mw_entries,
+     vl_dropped, prose_raw) = read_mw_coords(mw)
     # "Unambiguous" is deliberately the strictest reading available: exactly ONE article
     # claims the coordinate in whichever channel speaks for it. A coordinate with two
     # claimants is not used at all rather than resolved by a rule nobody has measured.
     mw_single = mw_claimants(prose, field, field_seen)
-    # The counterfactual the docs compare against, computed here so it is a published
-    # number rather than a claim: what a prose-first policy would have called
-    # unambiguous. It is LOWER, which is the point — spurious prose claimants make
-    # coordinates look contested that MW's own field settles.
-    prose_first = {c for c in set(prose) | set(field_seen)
-                   if len(prose.get(c) or field.get(c) or ()) == 1}
+    # The counterfactual the docs compare against, published so the policy comparison
+    # is re-derivable instead of asserted. Computed on `prose_raw` — the UNGUARDED
+    # channel — because the policy being compared against is the one that shipped
+    # before the v.l. guard existed; measuring it on the guarded channel would publish
+    # a hybrid that never ran (caught by the second adjudication pass).
+    #
+    # It is HIGHER than field-first, and that is not a point against field-first: a
+    # prose citation is easy to come by, so prose-first calls more coordinates
+    # "unambiguous" while filling fewer of them, because most of its extra claimants
+    # land on coordinates PWG had already resolved. Confident-looking noise in the
+    # cross-validation, not coverage.
+    prose_first = {c for c in set(prose_raw) | set(field_seen)
+                   if len(prose_raw.get(c) or field.get(c) or ()) == 1}
 
     agree = disagree = variant = 0
     disagreements = []
