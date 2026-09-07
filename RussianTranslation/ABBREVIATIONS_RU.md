@@ -456,7 +456,7 @@ which quotes the coordinate only as a gloss (`{#loqana#}¦ <lex>n.</lex> … als
 ambiguous (Böhtlingk's own double spellings, `skand`/`skund`) is **dropped, never resolved by
 citation count**.
 
-**Coverage:** 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%).
+**Coverage:** 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%; 54.2% of the 2,657 that carry a coordinate at all) — both re-derivable from `python src/ls_coverage.py --md`, which is where the citation-level tally lives; the builder counts coordinates, not citation occurrences.
 Without the two filters the same build links 1,144 (65.3%), so they are worth 4.7 points —
 `_stats.match_rate_without_filters` in the committed table, not an assertion.
 
