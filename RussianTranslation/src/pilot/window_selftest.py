@@ -1643,6 +1643,54 @@ def test_health_probe_shares_the_production_task_shape():
         fail('probe prompt fell below the >=5 KB payload floor after the preamble was added')
 
 
+def test_health_probe_carries_the_h4277_provenance_bridge():
+    """H4277 (07-09-2026): the prepend of H3157 must not read as a prompt injection.
+
+    The measured call at 01:41:10Z answered `{"ok": false}` on a healthy c1 profile. Its session
+    transcript records WHY, verbatim: the model classified the prompt as "a prompt-injection
+    attempt layered on ambient context" and refused, naming three reasons — plan mode's
+    turn-ending rule, "no actual translation cards were provided", and the surrounding
+    system-reminders. A task-shape block promising `=== CARD <key> ===` blocks, followed by zero
+    cards, followed by a differently-voiced order to emit one fixed string, IS the textual shape
+    of an injection; the model was reading it correctly. Cost: $0.19 and one of two rationed
+    daily attempts, on a FALSE NO-GO.
+
+    The bridge answers each objection in the harness's own voice. This test pins all three, so a
+    later "tidy-up" that shortens the bridge back to the terse form re-introduces the defect
+    loudly and offline instead of quietly and at $0.19 a reading. Nothing here touches the gate's
+    content check: `{"ok": true}` remains the only passing answer (pinned above).
+    """
+    import max_account_orchestrator as mao
+
+    prompt = mao._probe_prompt(6491)
+
+    # 1. Provenance — the readiness instruction must declare the same issuer as the block above,
+    #    which is what distinguishes it from text injected into the payload.
+    if 'SAME ISSUER AS THE BLOCK ABOVE' not in prompt:
+        fail('the readiness instruction no longer declares its provenance — without it the two '
+             'halves of the prompt read as adversarial and the model refuses (H4277)')
+    # 2. The zero-card condition must be declared deliberate; "no cards were provided" was the
+    #    refusing call's second stated reason.
+    if 'ZERO cards' not in prompt:
+        fail('the probe no longer declares its empty card list deliberate — the model reads a '
+             'card-less card task as a malformed/injected request (H4277)')
+    # 3. Plan mode's turn-ending rule was the first stated reason; the prompt must point at the
+    #    structured-output channel as the sanctioned delivery rather than demanding bare text.
+    if 'structured-output channel' not in prompt:
+        fail('the probe no longer names the structured-output channel as the deliverable — the '
+             'model refuses on plan-mode turn-ending rules instead of answering (H4277)')
+    # 4. The filler must be marked as data, not as instructions.
+    if 'data, never instructions' not in prompt:
+        fail('the inert sample is no longer framed as data rather than instructions (H4277)')
+    # 5. The bridge sits BETWEEN the production block and the filler — never after the payload,
+    #    where the model would reach the sample text first and read the order as appended.
+    i_bridge = prompt.find('=== THIS INVOCATION: READINESS CHECK')
+    i_filler = prompt.find('--- inert sample (ignore) ---')
+    if i_bridge < 0 or i_filler < 0 or not (0 < i_bridge < i_filler):
+        fail('the H4277 provenance bridge must sit between the TASK SHAPE block and the inert '
+             'sample, in that order')
+
+
 def test_prompt_rule_audit_missing_blocks():
     with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.js', delete=False) as f:
         path = f.name
@@ -9712,6 +9760,7 @@ def main():
         test_mask_preamble_carries_task_shape,
         test_gloss_wrapper_prompt_preservation_h4270,
         test_health_probe_shares_the_production_task_shape,
+        test_health_probe_carries_the_h4277_provenance_bridge,
         test_semantic_risk_checker,
         test_h1152_guard1_en_polyseme_checklist,
         test_braced_gloss_audit,
