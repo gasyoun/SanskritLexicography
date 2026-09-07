@@ -1572,6 +1572,30 @@ def test_gloss_wrapper_prompt_preservation_h4270():
                    'а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.'):
         if needle not in preamble:
             fail('MASK_PREAMBLE lost the gloss-wrapper worked example %r' % needle)
+    # 2b) #2109: the EN lane must see the demonstration in the language it produces. The rule
+    #     itself was always shared (`.replace('`russian`', field)` reaches both lanes), but the
+    #     worked example stayed RU-illustrated, so an `--lang en` window read a Russian target
+    #     string as the model for its own English output. Both renderings are pinned here.
+    en_preamble = gh.mask_preamble('english')
+    for needle in ('a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.',
+                   'EN `a) {%a certain%} <is>Arhant</is> <ls>H. 25</ls>.`',
+                   'must read `a) {%a certain%} {T1} {T2}.`',
+                   '`english` field'):
+        if needle not in en_preamble:
+            fail('the EN-lane preamble lost %r — an --lang en window is back to being shown a '
+                 'Russian worked example for its own English output (#2109)' % needle)
+    if 'некий' in en_preamble:
+        fail('the EN-lane preamble still carries the Russian worked example (#2109) — the '
+             'example must be keyed to `field`, not copied from the RU rendering')
+    if 'a certain' in preamble:
+        fail('the RU-lane preamble picked up the English worked example (#2109)')
+    # The rule text itself stays byte-identical across lanes apart from the field name and the
+    # example, so the shared-verdict half of the ledger pair keeps holding.
+    for needle in ('GLOSS-DE-RESIDUE', 'MUST reappear', 'Never drop the wrapper',
+                   'applies ONLY to {%…%} spans you can SEE in your masked source',
+                   'stays {Tn} VERBATIM in both fields'):
+        if needle not in en_preamble:
+            fail('the EN-lane preamble lost the shared wrapper rule %r' % needle)
 
     # 3) End-to-end mini manifest: the DE {%…%} span stays inline in the masked skeleton AND
     #    the generated JS prompt carries the rule (ensure_ascii escapes the Cyrillic example;
