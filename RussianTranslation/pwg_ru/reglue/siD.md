@@ -7,7 +7,7 @@ Re-glue — siD
 ## омоним h0
 
 **1)** — *saṃprati* удерживать кого-л., не допускать кого-л.: *tathaiva suhṛdaṃ prājñaṃ kurvāṇaṃ karma pāpakam . prājñāḥ saṃpratiṣedhanti yathāśakti punaḥ punaḥ ..*
-[MBH. 10,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.184) = [≈Вульг. 10.4.12](mbh/10.4.html#v12) = ≈крит. 10,4.11e
+[MBH. 10,184.](https://sanskrit-lexicon-scans.github.io/mbhcalc?10.184) = ≈Вульг. 10.4.12 = ≈крит. 10,4.11e
   — → PW — 1〉 достигать цели, попадать (в цель); с Loc.
 
 **2)** — 2) противоположный, противоречащий
@@ -23,7 +23,7 @@ Re-glue — siD
 [ṚV. 1,23,15.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.023.html#rv01.023.15)
 
 **ava)** — *ava* отражать, удерживать от (abl.)
-[MBH. 7,7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) = [≈Вульг. 7.165.30](mbh/7.165.html#v30) = ≈крит. 07,42.11a (*apa˚* [Бомбейская ред.]).
+[MBH. 7,7397](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) = ≈Вульг. 7.165.30 = ≈крит. 07,42.11a (*apa˚* [Бомбейская ред.]).
 
 **desid.)** — desid. от caus. *siṣedhayiṣati*
 [P. 8,3,61](https://ashtadhyayi.com/sutraani/8/3/61), схол.
@@ -33,8 +33,8 @@ Re-glue — siD
 **samud)** — *samud* см. *samutsedha* .
 
 **upa)** — *upa* отражать, удерживать от (abl.): *vārddhakṣatrirupāsedhatpravaṇādiva kuñjaraḥ*
-[MBH. 7,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1748) = [≈Вульг. 7.42.8](mbh/7.42.html#v8) = ≈крит. 07,41.7a вероятно, следует читать *˚kṣatrirapāsedhat — kuñjaram*; ср.
-[7397.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) = [≈Вульг. 7.165.30](mbh/7.165.html#v30) = ≈крит. 07,42.11a
+[MBH. 7,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1748) = ≈Вульг. 7.42.8 = ≈крит. 07,41.7a вероятно, следует читать *˚kṣatrirapāsedhat — kuñjaram*; ср.
+[7397.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.7397) = ≈Вульг. 7.165.30 = ≈крит. 07,42.11a
 
 **vi)** — *vi*, *gaṅgāṃ visedhati (gatau)*
 [P. 8,3,113](https://ashtadhyayi.com/sutraani/8/3/113), схол. [VOP. 8,45.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,45)
@@ -42,15 +42,15 @@ Re-glue — siD
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — ср. *pratiṣeddhar* сл. — caus.
  1) отражать, удерживать, отклонять: *amātyān*
 [ĀŚV. GṚHY. 4,8,33.] *nahyetām — śapantīṃ pratyaṣedhayat*
-[MBH. 1,1594.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1594) = [≈Вульг. 1.37.6](mbh/1.37.html#v6) = ≈крит. 01,33.6a [2,1787.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1787) = [≈Вульг. 2.50.3](mbh/2.50.html#v3) = ≈крит. 02,46.3a [4,468](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.468) = [≈Вульг. 4.16.17](mbh/4.16.html#v17) = ≈крит. 04,15.12c (*pratyaṣe˚* mit der [Бомбейская ред.] zu lesen).
+[MBH. 1,1594.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1594) = ≈Вульг. 1.37.6 = ≈крит. 01,33.6a [2,1787.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1787) = ≈Вульг. 2.50.3 = ≈крит. 02,46.3a [4,468](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.468) = ≈Вульг. 4.16.17 = ≈крит. 04,15.12c (*pratyaṣe˚* mit der [Бомбейская ред.] zu lesen).
 [HARIV. 946.](https://sanskrit-lexicon-scans.github.io/hariv?946) [14247.](https://sanskrit-lexicon-scans.github.io/hariv?14247)
 [R. 2,96,42](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,96,42) ([105,41](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,105,41) [GORR.]). [4,9,63.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,9,63) *astrāṇi*
-[MBH. 5,7171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7171) = [≈Вульг. 5.180.9](mbh/5.180.html#v9) = ≈крит. 05,181.9a *mṛtyuśca pratiṣedhitaḥ*
+[MBH. 5,7171.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7171) = ≈Вульг. 5.180.9 = ≈крит. 05,181.9a *mṛtyuśca pratiṣedhitaḥ*
 [R. 5,78,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,78,14)
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — 2) запрещать что-л., воспрещать, не дозволять: *mārgaṃ vātasya*
 [HARIV. 10443.](https://sanskrit-lexicon-scans.github.io/hariv?10443) *vidhāvapratiṣedhite*
-[MBH. 12,350.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.350) = [≈Вульг. 12.12.19](mbh/12.12.html#v19) = ≈крит. 12,12.18c коммент. к [TS. PRĀT. 13,3.] отрицать
+[MBH. 12,350.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.350) = ≈Вульг. 12.12.19 = ≈крит. 12,12.18c коммент. к [TS. PRĀT. 13,3.] отрицать
 [SARVADARŚANAS. 8,19.]
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *sidh (=pw sidh 1)* [Gen , unsp] ( sédhati I P ) отгонять, сдерживать, препятствовать. ṚV , KauśS . предписывать, наставлять. DhātuPā(MW) . обернуться хорошо, счастливо. ṚV . Pass. ( sidhyate ): быть прогнанным, отраженным. Mbh. MW : 1215
@@ -143,7 +143,7 @@ Re-glue — siD
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *samud* в *samutsedha*.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = [≈Вульг. 7.1.44](mbh/7.1.html#v44) = ≈крит. 07,1.42a. Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *upa* отражать, — удерживать от (Abl.) [MBH. 7,42,8](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?7,42,8) = ≈Вульг. 7.1.44 = ≈крит. 07,1.42a. Правильно *upa* [{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8].
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — С *ni*
 — 1〉 прогонять.
@@ -318,7 +318,7 @@ Re-glue — siD
 [9,21.](https://sanskrit-lexicon-scans.github.io/kss/index.html?9,21) *īpsitam*
 [22,170.](https://sanskrit-lexicon-scans.github.io/kss/index.html?22,170) *samīhitam*
 [37,29.](https://sanskrit-lexicon-scans.github.io/kss/index.html?37,29) *mānasaḥ saṃkalpaḥ*
-[MBH. 5,2339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2339) = [≈Вульг. 5.59.12](mbh/5.59.html#v12) = ≈крит. 05,58.12a (мед.). [BHĀG. P. 8,24,60.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,60)
+[MBH. 5,2339](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2339) = ≈Вульг. 5.59.12 = ≈крит. 05,58.12a (мед.). [BHĀG. P. 8,24,60.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,24,60)
 
 *pratijñā*
 [KATHĀS. 38,41.](https://sanskrit-lexicon-scans.github.io/kss/index.html?38,41) *yatne kṛte yadi na sidhyati ko 'tra doṣaḥ*
@@ -332,9 +332,9 @@ Re-glue — siD
 **2c)** — c) обозн. одного из созвездий определ. [MED.] [KOṢṬHĪPR.] в [ŚKDR.]
 
 **2d)** — d) имя собств.
- α) pl. народа [MBH. 6,364](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.364) = [≈Вульг. 6.9.56](mbh/6.9.html#v56) = ≈крит. 06,10.54c ([VP. 192).]
-— β) одного Девагандхарва [MBH. 1,2554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2554) = [≈Вульг. 1.65.46](mbh/1.65.html#v46) = ≈крит. 01,59.44e
-— γ) одного Раджарши [MBH. 2,320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.320) = [≈Вульг. 2.8.9](mbh/2.8.html#v9) = ≈крит. 02,8.8c одного правителя [RĀJA-TAR. 1,276.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,276) одного брата Джаджджа [4,519.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,519) одного брахмана [TĀRAN. 4. 24.]
+ α) pl. народа [MBH. 6,364](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.364) = ≈Вульг. 6.9.56 = ≈крит. 06,10.54c ([VP. 192).]
+— β) одного Девагандхарва [MBH. 1,2554.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2554) = ≈Вульг. 1.65.46 = ≈крит. 01,59.44e
+— γ) одного Раджарши [MBH. 2,320.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.320) = ≈Вульг. 2.8.9 = ≈крит. 02,8.8c одного правителя [RĀJA-TAR. 1,276.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?1,276) одного брата Джаджджа [4,519.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?4,519) одного брахмана [TĀRAN. 4. 24.]
 
 **2e)** — e) = *vyavahāra* (вероятно, _adj._ в знач. имеющее силу) [ŚABDAR.] в [ŚKDR.] = *kṛṣṇadhustūra* и *guḍa* [RĀJAN.] в [ŚKDR.]
 
@@ -365,8 +365,8 @@ a) волшебная сила, сверхъестественная мощь: *
 
 **8)** — 8) достигать своей цели, иметь успех (о лицах): *sidhyanti karmasu mahatsvapi yanniyojyāḥ*
 [Spr. (II) 7050.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7050 "Spr. (II) 7050: sithyanti karmasu mahatsvapi yanniyojyāḥ saṃbhāvanāguṇavehi tamīśvarāṇām | kiṃ vābhaviṣyadaruṇastamasāṃ vibhettā | taṃ cetasahasrakiraṇo dhuri nākariṣ… — (5233.) Wenn Untergebene sogar mit grossen Thaten zu Stande kommen, so erkenne darin eine löbliche Eigenschaft ihrer Gebieter, dass diese nämlich ihnen Solches zutrauen. Würde wohl Aruṇa der Verscheucher der Finsterniss…") [3435](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3435) (или zu 7). *anarthāḥ saṃśayāvasthāḥ sidhyante muktasaṃśayāḥ*
-[MBH. 3,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1244) = [≈Вульг. 3.32.43](mbh/3.32.html#v43) = ≈крит. 03,33.40c достигать высшей цели, становиться совершенным, блаженным
-[29.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.29) = [≈Вульг. 3.1.29](mbh/3.1.html#v29) = ≈крит. 03,1.27a [8203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8203) = [≈Вульг. 3.85.61](mbh/3.85.html#v61) = ≈крит. 03,83.58c [R. 7,36,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,45) [ŚATR. 1,285.] [BHĀG. P. 4,12,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,49) [5,18,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,10) [6,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,4) — partic. *siddha*
+[MBH. 3,1244.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1244) = ≈Вульг. 3.32.43 = ≈крит. 03,33.40c достигать высшей цели, становиться совершенным, блаженным
+[29.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.29) = ≈Вульг. 3.1.29 = ≈крит. 03,1.27a [8203.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.8203) = ≈Вульг. 3.85.61 = ≈крит. 03,83.58c [R. 7,36,45.](https://sanskrit-lexicon-scans.github.io/ramayanabom/app1/?7,36,45) [ŚATR. 1,285.] [BHĀG. P. 4,12,49.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,12,49) [5,18,10.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,18,10) [6,14,4.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,14,4) — partic. *siddha*
 
 **PPP 1)** 1) _adj._
 
@@ -400,7 +400,7 @@ a) волшебная сила, сверхъестественная мощь: *
 [TRIK. 2,7,11.](https://sanskrit-lexicon-scans.github.io/medini/app2?2,7,11)
 [H. 412.](https://sanskrit-lexicon-scans.github.io/abch2/app1?412)
 [M. 3,84.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,84) [121.](https://sanskrit-lexicon-scans.github.io/manu/index.html?3,121)
-[MBH. 13,2769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2769) = [≈Вульг. 13.53.15](mbh/13.53.html#v15) = ≈крит. 13,53.14a
+[MBH. 13,2769.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.2769) = ≈Вульг. 13.53.15 = ≈крит. 13,53.14a
 [HARIV. 8441.](https://sanskrit-lexicon-scans.github.io/hariv?8441)
 [R. 1,65,5.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,65,5) [3,52,51.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,52,51)
 [SUŚR. 2,66,14.]
@@ -408,7 +408,7 @@ a) волшебная сила, сверхъестественная мощь: *
 [BHĀG. P. 4,13,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,13,36) *ardha˚*
 [MĀRK. P. 51,33.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?51,33) *su˚*
 [Spr. (II) 4216.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?4216 "Spr. (II) 4216: prajñāśareṇābhihatasya jantościkitsakāḥ santi cauṣadhāni | na homamantrā na ca maṅgalāni nātharvaṇā nāpyagadāḥ susiddhāḥ || — (4577.) Für den, der mit dem Pfeile des Verstandes verwundet ward, giebt es keine Aerzte und keine Heilkräuter, keine Opfersprüche, keine Amulete, keine Beschwörer und auch keine künstlich zubereiteten Arzeneien.") *anala˚*
-[MBH. 3,2943.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2943) = [≈Вульг. 3.75.22](mbh/3.75.html#v22) = ≈крит. 03,73.21e *ukhā˚*
+[MBH. 3,2943.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2943) = ≈Вульг. 3.75.22 = ≈крит. 03,73.21e *ukhā˚*
 [H. 411.](https://sanskrit-lexicon-scans.github.io/abch2/app1?411) *sṛgālavinnā˚*
 [SUŚR. 2,38,7.] *bastāṇḍa˚*
 [155,1.]
@@ -469,20 +469,20 @@ zu [MAHĀBH.] ([1,12,a] lith. изд.) ist *siddha = nitya* так преим. �
 **PPP 1m)** — m) достигший своей цели
 [BHĀG. P. 10,22,27.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,22,27) достигший высшей цели, ставший совершенным, — мастером в чем-л. (стоит в comp. на первом месте)
 [VARĀH. BṚH. 21 (19),2.] *mantra˚*
-[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = [≈Вульг. 1.162.13](mbh/1.162.html#v13) = ≈крит. 01,150.13a *karma˚*
-[6356.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6356) = [≈Вульг. 1.164.5](mbh/1.164.html#v5) = ≈крит. 01,152.4a *tapaḥ˚*
-[7668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7668) = [≈Вульг. 1.208.6](mbh/1.208.html#v6) = ≈крит. 01,200.6c [R. 1,47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [BHĀG. P. 7,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,17) *anarthāya* мастер в причинении вреда
+[MBH. 1,6310.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6310) = ≈Вульг. 1.162.13 = ≈крит. 01,150.13a *karma˚*
+[6356.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6356) = ≈Вульг. 1.164.5 = ≈крит. 01,152.4a *tapaḥ˚*
+[7668.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7668) = ≈Вульг. 1.208.6 = ≈крит. 01,200.6c [R. 1,47,11.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,47,11) [BHĀG. P. 7,3,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,3,17) *anarthāya* мастер в причинении вреда
 [KATHĀS. 28,185.](https://sanskrit-lexicon-scans.github.io/kss/index.html?28,185)
 
 **PPP 1n)** — n) ставший совершенным, так преим. обретший сверхъестественные силы, более не подвластный законам природы; = *mukta*
 [H. an.] *siddho 'hyatra mahātapāḥ*
 [R. 1,31,3.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,31,3)
 [R. GORR. 1,36,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,36,12) [2,98,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,98,7) [3,6,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,6,22) Шива
-[MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) = [≈Вульг. 14.8.17](mbh/14.8.html#v17) = ≈крит. 14,8.16c
+[MBH. 14,196.](https://sanskrit-lexicon-scans.github.io/mbhcalc?14.196) = ≈Вульг. 14.8.17 = ≈крит. 14,8.16c
 [Spr. (II) 2784.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?2784 "Spr. (II) 2784: dāridryāya namastubhyaṃ siddho 'haṃ tvatprasādataḥ | jagatpaśyāmi yenāhaṃ na māṃ paśyanti ke ca na || — (1148.) Ich verbeuge mich tief vor dir, o Armuth, weil ich durch deine Gnade übernatürliche Kraft erlangt habe, indem ich die Welt wohl sehe, aber selbst von Niemanden gesehen werden.")
 [KATHĀS. 5,135.](https://sanskrit-lexicon-scans.github.io/kss/index.html?5,135) [121,79.](https://sanskrit-lexicon-scans.github.io/kss/index.html?121,79)
 [BHĀG. P. 3,23,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,23,8) [6,12,19.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,12,19) *saṃkalpa˚*
-[MBH. 5,7490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7490) = [≈Вульг. 5.192.3](mbh/5.192.html#v3) = ≈крит. 05,193.2c *janmauṣadhitapomattrayoga˚*
+[MBH. 5,7490.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.7490) = ≈Вульг. 5.192.3 = ≈крит. 05,193.2c *janmauṣadhitapomattrayoga˚*
 [BHĀG. P. 4,6,9.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,6,9) *nitya˚, yoga˚*
 [COLEBR. Misc. Ess. 1,381.] *asiddhasya hatā vidyā* утрачено заклинание для того, кто не обладает магической силой,
 [Spr. (II) 3754](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3754 "Spr. (II) 3754: nirguṇasya hataṃ rūpaṃ duḥśīlasya hataṃ kulam | asiddhasya hatā vidyā abhogena hataṃ dhanam || — (4473.) Dem, der der Vorzüge ermangelt, ist Schönheit von keinem Nutzen") (здесь понято иначе). subst. провидец, прорицатель, чародей
@@ -502,7 +502,7 @@ zu [MAHĀBH.] ([1,12,a] lith. изд.) ist *siddha = nitya* так преим. �
 [MED.] (*vyāsādi* и *bhedo devayoneḥ* als zwei знач.).
 [HALĀY. 1,87.](https://sanskrit-lexicon-scans.github.io/armh2/app1?1,87)
 [ĀŚV. GṚHY. 3,4,1.]
-[MBH. 1,2570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2570) = [≈Вульг. 1.66.6](mbh/1.66.html#v6) = ≈крит. 01,60.6a [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) = [≈Вульг. 3.42.35](mbh/3.42.html#v35) = ≈крит. 03,43.32a [1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1765) = [≈Вульг. 3.43.10](mbh/3.43.html#v10) = ≈крит. 03,44.10a [1786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1786) = [≈Вульг. 3.43.31](mbh/3.43.html#v31) = ≈крит. 03,44.31c [1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1830) = [≈Вульг. 3.46.13](mbh/3.46.html#v13) = крит. — [12,6788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6788) = [≈Вульг. 12.185.8](mbh/12.185.html#v8) = ≈крит. 03,203.20c [13,1777.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1777) = [≈Вульг. 13.26.19](mbh/13.26.html#v19) = ≈крит. 13,27.19c
+[MBH. 1,2570.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.2570) = ≈Вульг. 1.66.6 = ≈крит. 01,60.6a [3,1748.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1748) = ≈Вульг. 3.42.35 = ≈крит. 03,43.32a [1765.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1765) = ≈Вульг. 3.43.10 = ≈крит. 03,44.10a [1786.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1786) = ≈Вульг. 3.43.31 = ≈крит. 03,44.31c [1830.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1830) = ≈Вульг. 3.46.13 = крит. — [12,6788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.6788) = ≈Вульг. 12.185.8 = ≈крит. 03,203.20c [13,1777.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1777) = ≈Вульг. 13.26.19 = ≈крит. 13,27.19c
 [BHAG. 10,26.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?10,26) [11,21. fg.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,21) [36.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?11,36)
 [R. 1,51,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,23) [2,70,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,70,30) [95,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,95,13) [112,2.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,112,2)
 [R. GORR. 2,34,22.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,34,22) [101,23.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,101,23)
@@ -534,7 +534,7 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 
 **PPP-siddha-3)** — 3) изготовленный, приготовленный: *parvatāntarasaṃsiddhe bahupādapasaṃvṛte . dhātusaṃrañjitaśile same* [HARIV. 11860.](https://sanskrit-lexicon-scans.github.io/hariv?11860) *kāñcana* сделанное золото [KATHĀS. 35,83.](https://sanskrit-lexicon-scans.github.io/kss/index.html?35,83) приготовленный (о пище): *phalaniryūha˚* [R. 2,91,66](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,91,66) ([100,64](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,100,64) [GORR.]). *lavaṇodaka˚* [HALĀY. 2,167.](https://sanskrit-lexicon-scans.github.io/armh2/app1?2,167) *ukhā˚* [168.]
 
-**PPP-siddha-4)** — 4) изготовленный; исцеленный: *auṣadha˚* [KATHĀS. 40,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,69) *˚rūpa* [MBH. 1,3241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3241) = [≈Вульг. 1.76.58](mbh/1.76.html#v58) = ≈крит. 01,71.46a
+**PPP-siddha-4)** — 4) изготовленный; исцеленный: *auṣadha˚* [KATHĀS. 40,69.](https://sanskrit-lexicon-scans.github.io/kss/index.html?40,69) *˚rūpa* [MBH. 1,3241.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3241) = ≈Вульг. 1.76.58 = ≈крит. 01,71.46a
 
 **PPP-siddha-5)** — 5) готовый к (dat.): *pretabhāvāya* [R. 4,21,32.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,21,32)
 
@@ -542,9 +542,9 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 
 **PPP-siddha-7)** — 7) удовлетворенный [R. 2,92,30.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,92,30) [R. GORR. 1,61,4.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,61,4)
 
-**PPP-siddha-8)** — 8) искусный, опытный: *mahāyuddheṣu* [MBH. 4,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1183) = [≈Вульг. 4.36.13](mbh/4.36.html#v13) = крит. —
+**PPP-siddha-8)** — 8) искусный, опытный: *mahāyuddheṣu* [MBH. 4,1183.](https://sanskrit-lexicon-scans.github.io/mbhcalc?4.1183) = ≈Вульг. 4.36.13 = крит. —
 
-**PPP-siddha-9)** — 9) достигший высшей цели, обретший совершенство, блаженный [MBH. 5,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2982) = [≈Вульг. 5.83.63](mbh/5.83.html#v63) = ≈крит. 05,81.63a [6,645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.645) = [≈Вульг. 6.17.9](mbh/6.17.html#v9) = ≈крит. 06,17.9a [13,3842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3842) = [≈Вульг. 13.81.40](mbh/13.81.html#v40) = ≈крит. 13,80.38c [R. GORR. 2,70,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,70,16) [BRAHMA-P. in LA. (III) 48,18.] [BHĀG. P. 1,19,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,36) [6,4,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,43) [16,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,50) *yoga˚* [BHAG. 4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) *anekajanma˚* [6,45.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,45) *tapaścaraṇa˚* [R. 1,51,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,25) ([52,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,52,24) [GORR.]). *jñānavijñāna˚* [BHĀG. P. 11,19,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,19,3)
+**PPP-siddha-9)** — 9) достигший высшей цели, обретший совершенство, блаженный [MBH. 5,2982.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2982) = ≈Вульг. 5.83.63 = ≈крит. 05,81.63a [6,645.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.645) = ≈Вульг. 6.17.9 = ≈крит. 06,17.9a [13,3842.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.3842) = ≈Вульг. 13.81.40 = ≈крит. 13,80.38c [R. GORR. 2,70,16.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,70,16) [BRAHMA-P. in LA. (III) 48,18.] [BHĀG. P. 1,19,36.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?1,19,36) [6,4,43.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,4,43) [16,50.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?6,16,50) *yoga˚* [BHAG. 4,38.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?4,38) *anekajanma˚* [6,45.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?6,45) *tapaścaraṇa˚* [R. 1,51,25](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,51,25) ([52,24](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?1,52,24) [GORR.]). *jñānavijñāna˚* [BHĀG. P. 11,19,3.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,19,3)
 
 **cross-ref-T48-T49)** — ср. *saṃsiddhi, sāṃsiddhya*.
 
@@ -565,12 +565,12 @@ _f._ [R. 3,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,2,7) [
 — 2) достигать высшей цели, обретать блаженство: *japyenaiva tu saṃsidhyedbrāhmaṇaḥ* [M. 2,87.](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,87) [BHĀG. P. 11,18,25.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?11,18,25) *saṃsidhyasva* [MBH. 3,12025.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.12025) — partic. *saṃsiddha*
 
 **nis-sidh-1)** — *abhi*
-1) удаваться, осуществляться: *artho 'bhisidhyati* [MBH. 12,7427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7427) = [≈Вульг. 12.207.7](mbh/12.207.html#v7) = ≈крит. 12,200.7a
+1) удаваться, осуществляться: *artho 'bhisidhyati* [MBH. 12,7427.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.7427) = ≈Вульг. 12.207.7 = ≈крит. 12,200.7a
 
 **nis-sidh-2)** — 2) обретать, достигать, приобретать; с acc. [CHĀND. UP. 7,4,3.]
 
 **sam-sidh-1)** — *pra*
-1) удаваться, происходить, осуществляться [M. 11,237.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,237) *śarīrayātrāpi ca te na prasidhyedakarmaṇaḥ* [BHAG. 3,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,8) *na brāhmaṇaḥ sādhayate havyaṃ daivātprasidhyati* [MBH. 13,1536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1536) = [≈Вульг. 13.22.6](mbh/13.22.html#v6) = ≈крит. 13,23.6a *prasidhyatā samāgamena* [Spr. (II) 272.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?272 "Spr. (II) 272: anāturotkaṇṭhitayoḥ prasidhyatā samāgamenāpi ratirna māṃ prati | parasparaprāptinirāśayorvaraṃ śarīranāśo 'pi samānarāgayoḥ || — (3459.) Wenn zwei Personen, von denen die eine Nichts von Liebe fühlt, die andere aber vor Sehnsucht vergeht, bei zu Stande kommender Vereinigung sogar dem Liebesgenuss sich hingeben, so ist dieses in meinen Augen wenige…") *arthaḥ* [3618.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3618) [VARĀH. BṚH. S. 104,61.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,61) *yatkarma svayameva prasidhyati* [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *tāsāmāyācitam — tvatprasādātprasidhyatām* (в конце Шлока!) [R. GORR. 2,1,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,1,40)
+1) удаваться, происходить, осуществляться [M. 11,237.](https://sanskrit-lexicon-scans.github.io/manu/index.html?11,237) *śarīrayātrāpi ca te na prasidhyedakarmaṇaḥ* [BHAG. 3,8.](https://sanskrit-lexicon-scans.github.io/bhagavadgita/app1?3,8) *na brāhmaṇaḥ sādhayate havyaṃ daivātprasidhyati* [MBH. 13,1536.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.1536) = ≈Вульг. 13.22.6 = ≈крит. 13,23.6a *prasidhyatā samāgamena* [Spr. (II) 272.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?272 "Spr. (II) 272: anāturotkaṇṭhitayoḥ prasidhyatā samāgamenāpi ratirna māṃ prati | parasparaprāptinirāśayorvaraṃ śarīranāśo 'pi samānarāgayoḥ || — (3459.) Wenn zwei Personen, von denen die eine Nichts von Liebe fühlt, die andere aber vor Sehnsucht vergeht, bei zu Stande kommender Vereinigung sogar dem Liebesgenuss sich hingeben, so ist dieses in meinen Augen wenige…") *arthaḥ* [3618.](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?3618) [VARĀH. BṚH. S. 104,61.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?104,61) *yatkarma svayameva prasidhyati* [VOP. 24,8.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?24,8) *tāsāmāyācitam — tvatprasādātprasidhyatām* (в конце Шлока!) [R. GORR. 2,1,40.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,1,40)
 
 **sam-sidh-2)** — 2) вытекать, находить свое объяснение: *sarvaṃ vedātprasidhyati* [M. 12,97. fg.](https://sanskrit-lexicon-scans.github.io/manu/index.html?12,97) *tathaikavṛttitā tayoḥ svaraśca me prasidhyati* Кар. к [P. 3,1,122.](https://ashtadhyayi.com/sutraani/3/1/122) — partic. *prasiddha*
 

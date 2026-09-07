@@ -20,4 +20,4 @@ _Date: 06-09-2026 · Executor: OxAlpha (`glm-5.3-flash`, opencode lane) · 1 pai
   `_apta` stays on `H3654_defect_keys.txt`.** Decision to MG: one-clause rule tightening
   (`{Tn}` stays verbatim, never translate/wrap a masked span) + 4th-window authorization,
   or option b (hand-marking) / option c (unwrapped-acceptance).
-- Record: [pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md](../RussianTranslation/pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md)
+- Record: pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md

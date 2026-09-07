@@ -6,7 +6,7 @@ Plan of record for [H4204](https://github.com/gasyoun/Uprava/blob/main/handoffs/
 
 ## 1. Why the cards could not heal (mechanism, verified 06-09)
 
-- `gen_opt_harness2.py` arms the FRAGS heal fallback only when `split_plan(raw)` yields ≥2 fragments; the call at the frags loop uses the module default `LS_BUDGET=18` ([autosplit_requeue.py:56](../../src/pilot/autosplit_requeue.py)). A card with one sense and ≤18 `<ls>` never splits → no fallback → `no-selfheal-fallback` at preflight, zero in-harness recovery if its call dies.
+- `gen_opt_harness2.py` arms the FRAGS heal fallback only when `split_plan(raw)` yields ≥2 fragments; the call at the frags loop uses the module default `LS_BUDGET=18` (autosplit_requeue.py:56). A card with one sense and ≤18 `<ls>` never splits → no fallback → `no-selfheal-fallback` at preflight, zero in-harness recovery if its call dies.
 - Cards that DID split but whose heal groups resolved nothing record `selfheal-nothing-resolved` (the 6-key presplit cohort ran 2× consecutively; groups hit the 45 s/180 s kill floor).
 - **The knob already exists**: `AUTOSPLIT_LS_BUDGET` overrides the split budget, and `plan()` honours it per call. Local proof (06-09): a synthetic 1-sense/20-`<ls>` card → 2 fragments at default, **4 fragments at `AUTOSPLIT_LS_BUDGET=6`**. No new code required; a manifest-visible `--frag-ls-budget` flag is optional hardening, only if the census proves the env-var route insufficient for provenance.
 - Fallback-isolation re-batching (2026-07-04) is **structurally obsolete**: H4054 (05-09) made one-card-per-call the default (`OUTPUT_BUDGET 90→1`), so no shared batches remain. The live levers are FRAGS-arming + heal-group budgets only.

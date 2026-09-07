@@ -1769,9 +1769,9 @@ PRs: [#784](https://github.com/gasyoun/SanskritLexicography/pull/784) (+ [#769](
 
 ### Added — H1666: Wave-2 coverage monitor + monthly cloud routine (26-07-2026)
 
-- [`research/WAVE2_COVERAGE_MONITOR.md`](research/WAVE2_COVERAGE_MONITOR.md) tracks
+- `research/WAVE2_COVERAGE_MONITOR.md` tracks
   `verb_worklist.py`'s promoted/749-DCS-root % against
-  [ROADMAP_ACL_LESSONS_2026.md](research/ROADMAP_ACL_LESSONS_2026.md)'s Wave-2
+  ROADMAP_ACL_LESSONS_2026.md's Wave-2
   "~50% coverage" trigger — currently 48/749 ≈ 6.4%, stalled since 04-07-2026. A
   monthly `claude.ai` cloud routine (RemoteTrigger) recomputes and appends a row,
   and flags a GTD `@DECIDE` in Uprava once coverage crosses 50%. Registered in
@@ -1906,7 +1906,7 @@ PR: [#769](https://github.com/gasyoun/SanskritLexicography/pull/769) · Handoff:
   read-only. `--selftest` uses a synthetic fixture (never real store content — N9) and
   is wired into CI. See [RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RESULTS_LOG.md) 26-07-2026 for the pilot
   subtype counts (7 REGLUE_SPEC roots, 1077 rows). Partial N14 close — see
-  [`pwg_ru/REGLUE_SPEC.md`](pwg_ru/REGLUE_SPEC.md) Sec.7.
+  `pwg_ru/REGLUE_SPEC.md` Sec.7.
 
 ### Added — H1632 PWG-sense × DCS attestation pilot join (26-07-2026)
 

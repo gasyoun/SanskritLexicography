@@ -121,7 +121,7 @@ Codes follow the **CDSL abbreviation scheme**; the canonical, authoritative
 code→dictionary mapping is on the
 [CDSL site](https://www.sanskrit-lexicon.uni-koeln.de/). Titles below were
 cross-checked against that site and the org-level
-[../../CLAUDE.md](../../CLAUDE.md) table.
+[../../CLAUDE.md](../../Uprava-h4060-drain/CLAUDE.md) table.
 
 | Code | Dictionary | Keys present here |
 |---|---|---|

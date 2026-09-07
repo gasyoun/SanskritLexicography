@@ -161,7 +161,7 @@ layer already supplies chronology.**
   the senses, the citations, the `(von)` etymology, and the homonym split; Koch supplies
   only the *Russian apparatus idiom* and, where PWG omits grammar (verb class), a
   fill-in. This mirrors handoff C's verdict ("the spine wins") and the
-  [`DICTIONARY_CHAIN.md`](../DICTIONARY_CHAIN.md) layering.
+  `DICTIONARY_CHAIN.md` layering.
 - **Two axes are already done in code.** Chronology/genre = the precomputed **Renou I–V**
   layer (`renou_oldest` + `ls`/`dcs` provenance). Sense order = handoff B's verdict (keep
   PWG's own `<div n>` order). Neither needs new policy.
@@ -175,6 +175,6 @@ layer already supplies chronology.**
 - Structural conventions → [`HANDOFF_microstructure_conventions.md`](HANDOFF_microstructure_conventions.md).
 - Sense order → [`HANDOFF_sense_ordering.md`](HANDOFF_sense_ordering.md).
 - Root nesting/splitting → [`ROOT_ENTRY_ARCHITECTURE.md`](ROOT_ENTRY_ARCHITECTURE.md).
-- What `pwg_ru` already implements → [`../DICTIONARY_CHAIN.md`](../DICTIONARY_CHAIN.md), [`../APRESJAN.md`](../APRESJAN.md).
+- What `pwg_ru` already implements → `../DICTIONARY_CHAIN.md`, `../APRESJAN.md`.
 
 _Dr. Mārcis Gasūns_
