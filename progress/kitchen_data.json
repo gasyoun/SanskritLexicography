@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T06:37:32Z",
+  "generated_at": "2026-09-07T06:38:46Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": false,
+    "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 62222,
+    "youngest_artifact_age_seconds": 41,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,26 +17,26 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-02T19:01:43Z",
-        "age_seconds": 387346,
+        "age_seconds": 387420,
         "size": 26345513
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 904368,
+        "age_seconds": 904442,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 904368,
+        "age_seconds": 904442,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-06T13:20:28Z",
-        "age_seconds": 62222,
-        "size": 3555486
+        "mtime": "2026-09-07T06:38:02Z",
+        "age_seconds": 41,
+        "size": 3564688
       }
     }
   },
@@ -111,95 +111,93 @@
   },
   "gates": {
     "measured": true,
-    "gate_summaries": 3769,
-    "exit0": 1972,
-    "exit0_pct": 52.3,
+    "gate_summaries": 3787,
+    "exit0": 1988,
+    "exit0_pct": 52.5,
     "recent_shown": 200,
     "recent": [
       {
-        "ts": "2026-08-29T11:23:49Z",
-        "root": "h3627-reingest",
-        "summary": "prompt_semantic exit=1 requeue=1",
-        "returncode": 1,
-        "requeue": [
-          "v_as_a"
-        ]
-      },
-      {
-        "ts": "2026-08-29T11:23:49Z",
-        "root": "h3627-reingest",
-        "summary": "sense_loss exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:49Z",
-        "root": "h3627-reingest",
-        "summary": "ru_style exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
-        "summary": "final_schema exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
-        "summary": "nws exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
-        "summary": "translation exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
-        "summary": "stage2_mechanical exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
-        "summary": "coverage exit=1 requeue=1",
-        "returncode": 1,
-        "requeue": [
-          "_sr_avaka"
-        ]
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
-        "summary": "sense_dupes exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
+        "ts": "2026-09-07T06:37:48Z",
+        "root": "_apta",
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
+        "ts": "2026-09-07T06:37:48Z",
+        "root": "_apta",
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-08-29T11:23:50Z",
-        "root": "h3627-reingest",
+        "ts": "2026-09-07T06:37:48Z",
+        "root": "_apta",
+        "summary": "ru_style exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "final_schema exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "nws exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "translation exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "stage2_mechanical exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "coverage exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "_apta"
+        ]
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "sense_dupes exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "prompt_semantic exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
+        "summary": "sense_loss exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-07T06:38:02Z",
+        "root": "_apta",
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
@@ -725,18 +723,18 @@
     "measured": true,
     "min_idle_seconds": 120,
     "list_len": 12,
-    "gap_count": 5,
-    "total_idle_seconds": 3086157,
-    "total_idle_hours": 857.27,
-    "mean_gap_seconds": 617231.4,
-    "current_idle_seconds": 62222,
-    "last_idle_seconds": 1997,
+    "gap_count": 6,
+    "total_idle_seconds": 3844596,
+    "total_idle_hours": 1067.94,
+    "mean_gap_seconds": 640766.0,
+    "current_idle_seconds": null,
+    "last_idle_seconds": 758439,
     "last_idle": {
-      "from": "2026-08-29T11:23:50Z",
-      "to": "2026-08-29T11:57:07Z",
-      "seconds": 1997,
-      "after_root": "h3627-reingest",
-      "before_root": "no_pwg_w09",
+      "from": "2026-08-29T11:57:08Z",
+      "to": "2026-09-07T06:37:47Z",
+      "seconds": 758439,
+      "after_root": "no_pwg_w09",
+      "before_root": "_apta",
       "reason": "unknown",
       "reason_source": "default"
     },
@@ -749,15 +747,15 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 317700,
-        "idle_days": 3.68,
-        "idle_hours": 88.25
+        "idle_seconds": 1076139,
+        "idle_days": 12.46,
+        "idle_hours": 298.93
       },
       {
         "month": "2026-09",
-        "idle_seconds": 62222,
-        "idle_days": 0.72,
-        "idle_hours": 17.28
+        "idle_seconds": 0,
+        "idle_days": 0.0,
+        "idle_hours": 0.0
       }
     ],
     "recent_gaps": [
@@ -804,6 +802,15 @@
         "seconds": 1997,
         "after_root": "h3627-reingest",
         "before_root": "no_pwg_w09",
+        "reason": "unknown",
+        "reason_source": "default"
+      },
+      {
+        "from": "2026-08-29T11:57:08Z",
+        "to": "2026-09-07T06:37:47Z",
+        "seconds": 758439,
+        "after_root": "no_pwg_w09",
+        "before_root": "_apta",
         "reason": "unknown",
         "reason_source": "default"
       }
@@ -854,6 +861,15 @@
         "before_root": "no_pwg_w09",
         "reason": "unknown",
         "reason_source": "default"
+      },
+      {
+        "from": "2026-08-29T11:57:08Z",
+        "to": "2026-09-07T06:37:47Z",
+        "seconds": 758439,
+        "after_root": "no_pwg_w09",
+        "before_root": "_apta",
+        "reason": "unknown",
+        "reason_source": "default"
       }
     ],
     "reasons": {
@@ -866,13 +882,13 @@
         "waiting_requeue",
         "unknown"
       ],
-      "gap_count": 5,
+      "gap_count": 6,
       "reason_counts": {
-        "unknown": 4,
+        "unknown": 5,
         "health_nogo": 1
       },
       "known_reason_count": 1,
-      "unknown_reason_count": 4,
+      "unknown_reason_count": 5,
       "log_entries": 0,
       "log_path": "idle_reason_log.jsonl",
       "note": "Reasons from operator log or measured auto-rules only; historical silence stays unknown"
@@ -1877,8 +1893,8 @@
         "date": "2026-08-29",
         "cards": 37,
         "windows": 0,
-        "idle_seconds": 54225,
-        "idle_hours": 15.06,
+        "idle_seconds": 130068,
+        "idle_hours": 36.13,
         "level": 3,
         "idle": false
       },
@@ -1886,87 +1902,87 @@
         "date": "2026-08-30",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-08-31",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-01",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-02",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-03",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-04",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-05",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-06",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-07",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 75843,
+        "idle_hours": 21.07,
         "level": 0,
-        "idle": false
+        "idle": true
       }
     ],
     "max_cards": 6026,
     "active_days": 21,
-    "idle_days": 33
+    "idle_days": 42
   },
   "changelog": {
     "measured": true,
