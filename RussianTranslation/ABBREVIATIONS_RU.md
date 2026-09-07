@@ -456,9 +456,26 @@ which quotes the coordinate only as a gloss (`{#loqana#}¦ <lex>n.</lex> … als
 ambiguous (Böhtlingk's own double spellings, `skand`/`skund`) is **dropped, never resolved by
 citation count**.
 
-**Result:** 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%).
-Spot-verified against PWG's own German glosses: `snih` 26,91 → *snehane*, `sthā` 22,30 →
-*sthāne*, `aṅg` 5,38 → *gatau* (PWG «gehen»).
+**Coverage:** 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%).
+Without the two filters the same build links 1,144 (65.3%), so they are worth 4.7 points —
+`_stats.match_rate_without_filters` in the committed table, not an assertion.
+
+**Accuracy is a different number, and it is measured.** Böhtlingk frequently prints the
+dhātupāṭha's own artha in SLP1 parentheses beside the citation — `{#sni/hyati (prItO)#}
+<ls>DHĀTUP. 26,91</ls>`, `<ls>DHĀTUP. 22,30</ls> ({#gatinivfttO#})` — which is an
+**independent witness**: it comes from PWG, our glosses come from the XLS. Over the 232
+coordinates where he prints one, the artha he names is in our record **139 times exactly
+(59.9%)** and 174 times allowing for citation-form variation (75.0% — a deliberately weak
+test that accepts `ched` for *chede* and `mandāyāṃ gatau` for *mandāyāṁ gatau*). Both
+numbers are re-derivable: `python src/build_dhatup_palsule.py` → `_stats.inline_artha_*`.
+
+**A record is root-level, not coordinate-level.** Palsule's artha index is keyed on the
+root, so it cannot separate the homonyms Böhtlingk numbers apart: `DHĀTUP. 26,91` is the
+divādi `snih`, but its record carries the arthas of *every* `snih` in Palsule. Read a
+tooltip as «what Palsule records for this root», never «what Palsule records at exactly
+this coordinate». This is the main reason the strict agreement rate is 59.9% and not
+higher — the right artha is nearly always present, alongside others that belong to a
+homonym.
 
 **No fabricated links.** Palsule's *Concordance* has no online edition, so the datum ships as
 hover text carrying the printed page siglum (`DHĀTUP. 26,91 — Palsule √snih (P175, P186, …):
