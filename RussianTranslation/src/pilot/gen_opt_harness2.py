@@ -752,7 +752,7 @@ def conv_text():
 # translate them as bare prose — two c1 windows dropped 7/8 wrappers on _apta (H4015) with
 # all {Tn} spans intact. H3658 Lane B: not deterministically repairable post-hoc; the prompt
 # IS the fix. Pinned by test_gloss_wrapper_prompt_preservation_h4270.
-MASK_PREAMBLE = """=== TASK SHAPE (read first) ===
+MASK_PREAMBLE_TEMPLATE = """=== TASK SHAPE (read first) ===
 This is a self-contained, read-only text-transformation task, complete in a single turn.
 Everything it needs is inline below: there is no repository to explore, no file to open or
 write, no command to run, and nothing outside this message is consulted or modified. The
@@ -782,16 +782,51 @@ GLOSS-DE-RESIDUE convention). The wrapper is markup, not decoration: EVERY {%…
 card's source MUST reappear in your translation as {%…%} around its translated gloss in the
 `russian` field. Never drop the wrapper, never replace it with «…» quotes, never leave the
 German word untranslated inside it.
-Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
-RU `а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
-`a〉 {%ein%} {T1} {T2}.` and your translation must read `а) {%некий%} {T1} {T2}.` — the
-{Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
+{{GLOSS_WRAPPER_EXAMPLE}}
 This rule applies ONLY to {%…%} spans you can SEE in your masked source. A {Tn} masked span
 stays {Tn} VERBATIM in both fields — never translate it, never wrap it in {%…%} or any other
 markup, never reconstruct its content; the deterministic post-step restores the original
 span exactly.
 
 """
+
+
+# #2109 (07-09-2026): the wrapper RULE above is shared by construction — both lanes read the
+# same constant, parameterized only by `.replace('`russian`', field)`. Its worked example was
+# not: an `--lang en` window was shown a Russian target string as the model for its own
+# English output. The example is now language-keyed next to `field`, so each lane sees a
+# demonstration in the language it must produce. Pinned (both lanes) by
+# test_gloss_wrapper_prompt_preservation_h4270.
+GLOSS_WRAPPER_EXAMPLE = {
+    'russian': """Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
+RU `а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
+`a〉 {%ein%} {T1} {T2}.` and your translation must read `а) {%некий%} {T1} {T2}.` — the
+{Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
+""",
+    'english': """Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
+EN `a) {%a certain%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
+`a〉 {%ein%} {T1} {T2}.` and your translation must read `a) {%a certain%} {T1} {T2}.` — the
+{Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
+""",
+}
+
+
+def mask_preamble(field='russian'):
+    """The masked-regime preamble for one lane: target field name + worked example keyed to it.
+
+    `field` is the per-sense translation field ('russian' | 'english'), i.e. exactly what
+    build() derives from `--lang`. Unknown values fall back to the RU rendering, which is what
+    MASK_PREAMBLE itself is.
+    """
+    example = GLOSS_WRAPPER_EXAMPLE.get(field, GLOSS_WRAPPER_EXAMPLE['russian'])
+    return (MASK_PREAMBLE_TEMPLATE
+            .replace('{{GLOSS_WRAPPER_EXAMPLE}}', example.rstrip('\n'))
+            .replace('`russian`', '`%s`' % field))
+
+
+# The RU rendering stays the module constant: it is what the language-neutral readiness probe
+# (max_account_orchestrator._probe_prompt) prepends, and what the RU lane ships.
+MASK_PREAMBLE = mask_preamble('russian')
 
 
 def _rename_sense_field(schema, old, new):
@@ -1631,7 +1666,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'execution': execution,
         'key_provenance': key_provenance,
         'prompt': {
-            'preamble': MASK_PREAMBLE.replace('`russian`', '`%s`' % field),
+            'preamble': mask_preamble(field),
             'grammar': single_grammar,
             'grammars': grammars,
             'translation': tr,
@@ -2620,7 +2655,7 @@ return { meta: META, summary, results: out }
         'tgt_lang': 'English' if lang == 'en' else 'Russian',
         'gen_label': 'Sonnet 5' if lang == 'en' else 'Sonnet',
         'model': 'claude-sonnet-5',
-        'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
+        'preamble': json.dumps(mask_preamble(field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
         'iasts': json.dumps({k: _portrait_key_iast((v.get('portrait') or ''), k)
