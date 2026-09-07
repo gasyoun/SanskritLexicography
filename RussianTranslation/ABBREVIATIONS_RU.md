@@ -373,16 +373,23 @@ All work extends the existing Cologne-port resolver
 | `P.` (Pāṇini) | 25351 | 25065 | 98.9% | 25349 | — (n/a) |
 | `Spr.` (1st ed) | 13133 | 12953 | 98.6% | 13133 | — (n/a) |
 | `Spr. (II)` (2nd ed) | 8684 | 8684 | 100.0% | 8684 | 8395 |
-| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | — (n/a) |
+| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1441 |
 
 - **Full-form Pāṇini `P. a,p,s` (3-param):** 25061 / 25061 linked (**100.0%**) — the H1307 DoD target.
 - **`Spr. (II) N` (2nd ed):** 8684 / 8684 linked (**100.0%**), 8395 full-text enriched (96.7% of linked).
+- **`DHĀTUP. x,y` → Palsule (H1333):** 2657 / 2760 citations carry a gaṇa,serial coordinate
+  (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1441 of those (54.2%)**
+  resolve to a Palsule artha-index record — 1226 of the 1751 distinct coordinates PWG cites
+  (**70.0%**). The shortfall is honest and of two kinds: coordinates Böhtlingk lists under two
+  root spellings (`skand`/`skund`, `cut`/`cyut` — 271, dropped rather than guessed) and roots
+  absent from Palsule's artha index (254, e.g. `edh`, `vīj`). Enrichment is **tooltip text
+  only** — Palsule has no online edition — and the gaṇa-level Westergaard link is unchanged.
 
 _Denominator: full source [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) — the RU store
 `src/pwg_ru_translated.jsonl` was absent on this machine, so per H1307 Prerequisite 1 the
 count uses the whole PWG corpus (a superset of the RU-translated subset). Recompute against
 the store when present: `python src/ls_coverage.py --md` (raw JSON → gitignored
-`pwg_ru/eval/ls_coverage.json`). Generated 19-07-2026._
+`pwg_ru/eval/ls_coverage.json`). Generated 19-07-2026; DHĀTUP.→Palsule row 07-09-2026 (H1333)._
 
 ### Pāṇini `P.` → ashtadhyayi.com
 
@@ -422,25 +429,53 @@ of linked `Spr. (II)` refs left unenriched fall in the JSONL's numbering gaps (p
 lone source-data typo, `Spr. (II) 15802`, beyond the edition's range — it links but cannot
 enrich, never mis-enriches).
 
-### `DHĀTUP.` → Palsule — SPEC'D-NOT-WIRED (acquisition spec)
+### `DHĀTUP.` → Palsule — WIRED 07-09-2026 (H1333)
 
-MG's N15 asks that `DHĀTUP. x,y` citations cite the Palsule list. **Verdict: cannot be
-wired from existing data — spec only.** A local hunt (SanskritGrammar
+MG's N15 asked that `DHĀTUP. x,y` citations cite the Palsule list. H1307 could only ship an
+**acquisition spec**: no machine-readable Palsule-numbered dhātupāṭha and no
+Böhtlingk/Westergaard→Palsule concordance existed anywhere in the org (hunt: SanskritGrammar
 [`PALSULE_AUDIT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md),
 WhitneyRoots, [kosha datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json),
-SanskritLexicography [FINDINGS §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md))
-found **no** machine-readable Palsule-numbered dhātupāṭha and **no** Böhtlingk/Westergaard→Palsule
-concordance anywhere in the org. The only machine-readable list is the vidyut dhātupāṭha
-(2,259 dhātus, keyed by gaṇa.sūtra, SLP1) — a *different* numbering. PWG's `DHĀTUP. x,y` is
-Böhtlingk's own gaṇa-arranged edition (x=gaṇa, y=serial-within-gaṇa); Palsule assigns its
-own ~3,690-entry numbering. The current resolver already links `DHĀTUP. x,y` to the
-Westergaard scan viewer at gaṇa level (2,659/2,760 = 96.3%); that stays. **Acquisition spec
-to deliver Palsule references:** (a) digitize Palsule's numbered list from the print source
-(G.B. Palsule, *The Sanskrit Dhātupāṭhas*); (b) build a verified Böhtlingk-`DHĀTUP.`↔vidyut
-gaṇa.sūtra crosswalk; (c) normalize ablaut/citation-form (per FINDINGS §90 and the H328
-negative result: a naive it-stripped join matched only 454/930 Whitney roots). Natural owner:
-article **A39** ([Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)).
-**No fabricated links.**
+[FINDINGS §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)).
+**H1333 closes the arm** from the XLS MG supplied (Palsule's *artha* index, rights cleared by
+MG 07-09-2026; raw file stays gitignored in `pwg_ru/eval/`, only the derived table ships).
+
+**The join, and why it is not the one the spec feared.** The XLS carries **no** Böhtlingk
+coordinate — 8,170 rows of `<artha> : ⎷<root> <pada>` with a Palsule page, keyed on the root.
+But PWG *is* Böhtlingk: a `<ls>DHĀTUP. x,y</ls>` sits inside the article of the very root it
+numbers, and that article's `<k1>` key is the dhātu in SLP1. So the coordinate→root half is
+**read off Böhtlingk's own text**, not guessed — the ablaut-normalization risk the H328
+negative result flagged (a naive it-stripped join matched 454/930 Whitney roots) never binds
+it. Only root→Palsule is a join, across two transliterations of the same citation form.
+
+**Two filters, both honest.** A coordinate is kept only when its citing articles agree on the
+root. Where they disagree, a head-line citation outranks a body one (Böhtlingk states the
+numbering on the root's own head line), and a nominal claimant — an article carrying `<lex>`,
+which quotes the coordinate only as a gloss (`{#loqana#}¦ <lex>n.</lex> … als Erkl. von
+{#bAD#} <ls>DHĀTUP. 2,4</ls>`) — is dropped in favour of the verbal one. What remains
+ambiguous (Böhtlingk's own double spellings, `skand`/`skund`) is **dropped, never resolved by
+citation count**.
+
+**Result:** 1,226 / 1,751 distinct coordinates (70.0%), 1,441 / 2,760 citations (52.2%).
+Spot-verified against PWG's own German glosses: `snih` 26,91 → *snehane*, `sthā` 22,30 →
+*sthāne*, `aṅg` 5,38 → *gatau* (PWG «gehen»).
+
+**No fabricated links.** Palsule's *Concordance* has no online edition, so the datum ships as
+hover text carrying the printed page siglum (`DHĀTUP. 26,91 — Palsule √snih (P175, P186, …):
+gatau, prītau, snehane, …`), never as an href. The existing gaṇa-level Westergaard scan link
+(2,659/2,760 = 96.3%) is **untouched** — Palsule is an addition, not a replacement.
+
+**Where it lives:** builder
+[`src/build_dhatup_palsule.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dhatup_palsule.py)
+→ committed table
+[`src/data/dhatup_palsule.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/data/dhatup_palsule.json)
+→ runtime
+[`src/dhatup_palsule.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/dhatup_palsule.py),
+wired into the shared `build_article_site._ls_tooltip` beside the `Spr. (II)` case (so the
+H1301 review sheets inherit it) — no second resolver. Fixtures in
+[`src/pilot/ls_enrichment_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ls_enrichment_selftest.py).
+Natural owner as a dataset/paper: article **A39**
+([Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)).
 
 ## Mechanical RU style rules (no-ё, terse metalanguage) — H1305
 

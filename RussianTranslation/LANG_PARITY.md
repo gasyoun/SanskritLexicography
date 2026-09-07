@@ -689,10 +689,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H1308 (19-07-2026, Opus 4.8 claude-opus-4-8). government_index() reads s['de_raw'] (the German SOURCE sense text, identical across the RU and EN editions) via the shared extract_government() — the same authoritative reference set ab_frequency()/ls_stats() use — and marker spans render through the shared _render() layer. No RU/EN branch anywhere in the government surface; a future EN site build would show the identical government index. Language-neutral analysis layer, exactly like the H775 government sidecar precedent. Pinned by build_article_site.py --selftest (selftest_government).",
+    "note": "H1308 (19-07-2026, Opus 4.8 claude-opus-4-8). government_index() reads s['de_raw'] (the German SOURCE sense text, identical across the RU and EN editions) via the shared extract_government() — the same authoritative reference set ab_frequency()/ls_stats() use — and marker spans render through the shared _render() layer. No RU/EN branch anywhere in the government surface; a future EN site build would show the identical government index. Language-neutral analysis layer, exactly like the H775 government sidecar precedent. Pinned by build_article_site.py --selftest (selftest_government). H1333 re-stamp (07-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/build_article_site.py` drifted by exactly two additions — an import of `dhatup_palsule` and a three-line fallback inside `_ls_tooltip` that consults it AFTER the Spr. (II) branch and BEFORE `_ls_title`. Nothing else in the file moved: no existing branch, constant or `--lang` path was touched, `_ls_href` and `_ls_visible_display` are byte-identical, and the new call keys on the citation coordinate `DHĀTUP. x,y` with a Sanskrit-only payload, so no verdict this entry holds can move. `src/pilot/ls_enrichment_selftest.py` drifted by three ADDED tests and their registration in the runner list — test-only, no production behaviour on either lane. Ledgered in its own right as `dhatup_palsule_enrichment_h1333` (SHARED).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
+      "src/pilot/build_article_site.py": "bf4865f1e1b96868237e3d44827d0b57277c06f0636f42cba4354c4e1d4ed0d5"
     }
   },
   {
@@ -1389,6 +1389,29 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     }
   },
   {
+    "id": "dhatup_palsule_enrichment_h1333",
+    "mechanism": "H1333 <ls> DHĀTUP. x,y -> Palsule artha-index enrichment: a committed concordance (src/data/dhatup_palsule.json, built by src/build_dhatup_palsule.py from MG's supplied Palsule artha XLS) maps a Böhtlingk gaṇa,serial coordinate to the root's Palsule page(s) and artha glosses; src/dhatup_palsule.py serves it as hover text through the shared build_article_site._ls_tooltip, beside the Spr. (II) case. The existing gaṇa-level Westergaard href is untouched, and no Palsule href is invented (no online edition exists).",
+    "files": [
+      "src/dhatup_palsule.py",
+      "src/build_dhatup_palsule.py",
+      "src/pilot/build_article_site.py",
+      "src/ls_coverage.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H1333 (07-09-2026, Opus 5 `claude-opus-5`). SHARED by construction: the lookup key is the citation coordinate `DHĀTUP. x,y` parsed off the n= attribute + visible text, and the payload is Sanskrit (the dhātu and its artha glosses in IAST) plus Palsule's printed page siglum. Neither the key nor the value touches a target-language field, and `palsule_for()` is called from `_ls_tooltip` on the single pre-`--lang` path both editions already share with the H1307 Spr. (II) enrichment — the RU-only `_ls_visible_display` substitution (ed_bomb_ru_display_h2005) runs on the DISPLAY string and never on the resolver input, so it cannot reach this lookup. The concordance itself is derived from PWG's own text (the coordinate sits in the root's article, whose <k1> key is the dhātu) joined to the XLS on the root's citation form, so it is a property of the source dictionary, not of either translation. Coverage is partial and honestly reported: 1226 / 1751 distinct coordinates (70.0%), 1441 / 2760 citations (52.2%); coordinates Böhtlingk lists under two root spellings are DROPPED rather than resolved by citation count, and a miss returns None so the citation renders exactly as before on both lanes. Pinned by three fixtures in src/pilot/ls_enrichment_selftest.py.",
+    "hashes": {},
+    "verified_sha256": {
+      "src/dhatup_palsule.py": "264935dc329ee9b706d1c5878ccfb25686febd559c5abdb3102e8b8f82b4da2d",
+      "src/build_dhatup_palsule.py": "a4401cd4ca802fbb3803a03e015c70ca39ec8c8f6c3b240b0da5eccad3416fc7",
+      "src/pilot/build_article_site.py": "bf4865f1e1b96868237e3d44827d0b57277c06f0636f42cba4354c4e1d4ed0d5",
+      "src/ls_coverage.py": "5bf5fee2aaa69dafef262ac9cf261d22cce0c5714f01cd33c8be6351bdbe8218"
+    }
+  },
+  {
     "id": "ls_link_enrichment_panini_spr_h1307",
     "mechanism": "H1307 <ls> link enrichment: Pāṇini P. gains guarded chapter/book browse patterns (2-param a,p -> /sutraani/a/p, 1-param a -> /sutraani/a; pada 1-4 / adhyaya 1-8 guarded so page-refs like 'P. II, S. 3' and bogus 'P. 1,23' never mislink); Spr. (II) N gains a full-text hover tooltip (IAST + German from the Indische Sprüche corpus) via spr_fulltext, with a 1st-ed edition guard (plain Spr. N never resolves against the 2nd-ed corpus); the shared _render()/_ls_tooltip layer carries both.",
     "files": [
@@ -1401,12 +1424,12 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H1307 (19-07-2026). The enrichment is render-time and keys only on the citation abbreviation + numbers (P. adhyaya/pada/sutra, Spr. (II) saying number) — never on RU/EN translation prose — so both language editions' <ls> link-targets and tooltips share it with no --lang branch. The Spr. (II) saying text is identical across editions. Pinned by src/pilot/ls_enrichment_selftest.py. H2005 (01-08-2026, Grok 4.5): `_ls_visible_display` adds RU-only *visible* substitution for `ed. Bomb.` → «Бомбейская ред.»; href/title/`source_key` still use stored Latin (SHARED resolution path). Display divergence is intentional and covered by the sibling entry `ed_bomb_ru_display_h2005`. Re-stamped hash after that edit; SHARED for link enrichment stands.",
+    "note": "H1307 (19-07-2026). The enrichment is render-time and keys only on the citation abbreviation + numbers (P. adhyaya/pada/sutra, Spr. (II) saying number) — never on RU/EN translation prose — so both language editions' <ls> link-targets and tooltips share it with no --lang branch. The Spr. (II) saying text is identical across editions. Pinned by src/pilot/ls_enrichment_selftest.py. H2005 (01-08-2026, Grok 4.5): `_ls_visible_display` adds RU-only *visible* substitution for `ed. Bomb.` → «Бомбейская ред.»; href/title/`source_key` still use stored Latin (SHARED resolution path). Display divergence is intentional and covered by the sibling entry `ed_bomb_ru_display_h2005`. Re-stamped hash after that edit; SHARED for link enrichment stands. H1333 re-stamp (07-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/build_article_site.py` drifted by exactly two additions — an import of `dhatup_palsule` and a three-line fallback inside `_ls_tooltip` that consults it AFTER the Spr. (II) branch and BEFORE `_ls_title`. Nothing else in the file moved: no existing branch, constant or `--lang` path was touched, `_ls_href` and `_ls_visible_display` are byte-identical, and the new call keys on the citation coordinate `DHĀTUP. x,y` with a Sanskrit-only payload, so no verdict this entry holds can move. `src/pilot/ls_enrichment_selftest.py` drifted by three ADDED tests and their registration in the runner list — test-only, no production behaviour on either lane. Ledgered in its own right as `dhatup_palsule_enrichment_h1333` (SHARED).",
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
       "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
-      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
+      "src/pilot/build_article_site.py": "bf4865f1e1b96868237e3d44827d0b57277c06f0636f42cba4354c4e1d4ed0d5"
     }
   },
   {
@@ -1421,11 +1444,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H2845 (16-08-2026, Opus 5 `claude-opus-5`). The lookup key is the citation's parvan + verse number read off the already-resolved scan href, and the verdict comes from a text-vs-text comparison of two Sanskrit witnesses — neither consults RU/EN translation prose, and `_etext_html` never receives `lang`. Both editions therefore get byte-identical e-text hrefs, marks and tooltips. The tooltip string itself is English-only today, exactly as the existing `title=\"Cologne scan / text\"` is; if the RU column ever localises citation tooltips it becomes one shared substitution point, not a divergence introduced here. Pinned by src/ls_links.py's selftest (both the table-present and table-absent branches) and by src/g5_card_render.py's e-text checks.",
+    "note": "H2845 (16-08-2026, Opus 5 `claude-opus-5`). The lookup key is the citation's parvan + verse number read off the already-resolved scan href, and the verdict comes from a text-vs-text comparison of two Sanskrit witnesses — neither consults RU/EN translation prose, and `_etext_html` never receives `lang`. Both editions therefore get byte-identical e-text hrefs, marks and tooltips. The tooltip string itself is English-only today, exactly as the existing `title=\"Cologne scan / text\"` is; if the RU column ever localises citation tooltips it becomes one shared substitution point, not a divergence introduced here. Pinned by src/ls_links.py's selftest (both the table-present and table-absent branches) and by src/g5_card_render.py's e-text checks. H1333 re-stamp (07-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/build_article_site.py` drifted by exactly two additions — an import of `dhatup_palsule` and a three-line fallback inside `_ls_tooltip` that consults it AFTER the Spr. (II) branch and BEFORE `_ls_title`. Nothing else in the file moved: no existing branch, constant or `--lang` path was touched, `_ls_href` and `_ls_visible_display` are byte-identical, and the new call keys on the citation coordinate `DHĀTUP. x,y` with a Sanskrit-only payload, so no verdict this entry holds can move. `src/pilot/ls_enrichment_selftest.py` drifted by three ADDED tests and their registration in the runner list — test-only, no production behaviour on either lane. Ledgered in its own right as `dhatup_palsule_enrichment_h1333` (SHARED).",
     "tracking": "",
     "verified_sha256": {
       "src/ls_links.py": "1594100634c0629cc02a94cdf9aaecf79d655cdb3a1ec4fa0842af6188a33a7c",
-      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
+      "src/pilot/build_article_site.py": "bf4865f1e1b96868237e3d44827d0b57277c06f0636f42cba4354c4e1d4ed0d5"
     }
   },
   {
@@ -1442,12 +1465,12 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H3152 (19-08-2026, Opus 5 `claude-opus-5`). The lookup is a text-vs-text join between two Sanskrit witnesses and never consults translation prose, so every edition gets the SAME coordinates, the same IAST href and the same presence verdict. Unlike H2845's `E` mark, however, the triple prints WORDS, so it cannot be byte-identical across editions and is NOT claimed to be: `_TRIPLE_STRINGS` carries ru/de/en chrome and `_triple_strings(lang)` is the single substitution point, exactly the shared-substitution-point future that the H2845 entry anticipated. Shipping it unlocalised would have put Russian labels on the German and English cards; the parity gate caught that before merge. Pinned by build_article_site.selftest_citations, which asserts German and English chrome on the DE/EN editions AND that all three carry identical coordinates and the identical IAST href.",
+    "note": "H3152 (19-08-2026, Opus 5 `claude-opus-5`). The lookup is a text-vs-text join between two Sanskrit witnesses and never consults translation prose, so every edition gets the SAME coordinates, the same IAST href and the same presence verdict. Unlike H2845's `E` mark, however, the triple prints WORDS, so it cannot be byte-identical across editions and is NOT claimed to be: `_TRIPLE_STRINGS` carries ru/de/en chrome and `_triple_strings(lang)` is the single substitution point, exactly the shared-substitution-point future that the H2845 entry anticipated. Shipping it unlocalised would have put Russian labels on the German and English cards; the parity gate caught that before merge. Pinned by build_article_site.selftest_citations, which asserts German and English chrome on the DE/EN editions AND that all three carry identical coordinates and the identical IAST href. H1333 re-stamp (07-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/build_article_site.py` drifted by exactly two additions — an import of `dhatup_palsule` and a three-line fallback inside `_ls_tooltip` that consults it AFTER the Spr. (II) branch and BEFORE `_ls_title`. Nothing else in the file moved: no existing branch, constant or `--lang` path was touched, `_ls_href` and `_ls_visible_display` are byte-identical, and the new call keys on the citation coordinate `DHĀTUP. x,y` with a Sanskrit-only payload, so no verdict this entry holds can move. `src/pilot/ls_enrichment_selftest.py` drifted by three ADDED tests and their registration in the runner list — test-only, no production behaviour on either lane. Ledgered in its own right as `dhatup_palsule_enrichment_h1333` (SHARED).",
     "tracking": "",
     "verified_sha256": {
       "src/mbh_locus.py": "d46dea2aade8bcaa097a3124576446bad5eb731d0425494334d8c700e322ed14",
       "src/build_mbh_verse_pages.py": "b9c148f95cbe721ec2725b27cdec6001e4b1bc82487bc07b2f7f08ecabcf39b1",
-      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967"
+      "src/pilot/build_article_site.py": "bf4865f1e1b96868237e3d44827d0b57277c06f0636f42cba4354c4e1d4ed0d5"
     }
   },
   {
@@ -1480,11 +1503,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "ru"
     ],
     "verdict": "INTENTIONAL-DIVERGENCE",
-    "note": "H2005 (01-08-2026, Grok 4.5 `grok-4.5`, Sonnet-tier handoff override). MG R4 (H1305) ruled `ed. Bomb.` → «Бомбейская ред.»; store rewrite of in-ls text would break pwg_sources. EN has no equivalent Cyrillic display form. Pinned by ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve.",
+    "note": "H2005 (01-08-2026, Grok 4.5 `grok-4.5`, Sonnet-tier handoff override). MG R4 (H1305) ruled `ed. Bomb.` → «Бомбейская ред.»; store rewrite of in-ls text would break pwg_sources. EN has no equivalent Cyrillic display form. Pinned by ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve. H1333 re-stamp (07-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/build_article_site.py` drifted by exactly two additions — an import of `dhatup_palsule` and a three-line fallback inside `_ls_tooltip` that consults it AFTER the Spr. (II) branch and BEFORE `_ls_title`. Nothing else in the file moved: no existing branch, constant or `--lang` path was touched, `_ls_href` and `_ls_visible_display` are byte-identical, and the new call keys on the citation coordinate `DHĀTUP. x,y` with a Sanskrit-only payload, so no verdict this entry holds can move. `src/pilot/ls_enrichment_selftest.py` drifted by three ADDED tests and their registration in the runner list — test-only, no production behaviour on either lane. Ledgered in its own right as `dhatup_palsule_enrichment_h1333` (SHARED).",
     "tracking": "H2005",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "ebd28461ed089d29245877c956878df8914a94592d902b7b060703ff5d79d967",
-      "src/pilot/ls_enrichment_selftest.py": "f60dc7df6005ecef81e855f83b431bb0c8397b456211b0ffcdc0f4e646f15df6"
+      "src/pilot/build_article_site.py": "bf4865f1e1b96868237e3d44827d0b57277c06f0636f42cba4354c4e1d4ed0d5",
+      "src/pilot/ls_enrichment_selftest.py": "06803ee79442b91819a56f4b35fd1238a50f77f36d50d356f159fb9944c7d540"
     }
   },
   {
