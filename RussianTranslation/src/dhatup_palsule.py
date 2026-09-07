@@ -15,10 +15,25 @@ NO FABRICATED LINK (H1333 step 3). Palsule's *Concordance* has no online edition
 the Palsule datum ships as tooltip text carrying the page siglum (`P167`), never as
 an href to a page that does not exist.
 
-DATA HONESTY. The concordance covers 1,226 of the 1,751 `DHĀTUP. x,y` coordinates
-PWG actually cites (70.0%). The rest are either coordinates Böhtlingk lists under two
-root spellings (`skand`/`skund`) — dropped rather than guessed — or roots absent from
-Palsule's artha index. A miss returns None and the citation renders exactly as before.
+WHAT A RECORD ACTUALLY IS (read before trusting one). It is keyed by coordinate, but its
+content is everything Palsule records for that ROOT SPELLING. Palsule's artha index is
+keyed on the root, not on a gaṇa,serial pair, so it cannot separate the homonyms
+Böhtlingk numbers apart: `DHĀTUP. 26,91` is the divādi `snih`, and its record carries the
+arthas of every `snih` in Palsule. The tooltip therefore answers "what does Palsule
+record for this root", not "what does Palsule record at exactly this coordinate".
+
+DATA HONESTY — COVERAGE AND ACCURACY ARE DIFFERENT NUMBERS.
+  Coverage: 1,226 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (70.0%). The rest are
+  coordinates Böhtlingk lists under two root spellings (`skand`/`skund`) — dropped rather
+  than guessed — or roots absent from Palsule's artha index.
+  Accuracy: measured, not asserted. Böhtlingk often prints the dhātupāṭha's own artha in
+  parentheses beside the citation, which is an independent witness; over the 232
+  coordinates where he does, the artha he names is in our record 139 times exactly
+  (59.9%) and 174 times allowing for citation-form variation (75.0%, a deliberately weak
+  test — `ched`/`chede`, `mandāyāṃ gatau`/`mandāyāṁ gatau`). Re-derive with
+  `python src/build_dhatup_palsule.py` (see `_stats.inline_artha_*`).
+
+A miss returns None and the citation renders exactly as before.
 
 Language-independent (the dhātu and its artha are the same in the DE/RU/EN editions),
 so this is SHARED per LANG_PARITY.md and the H1301 review-sheet emitter inherits it
@@ -97,7 +112,7 @@ def palsule_for(n_attr, visible, artha_limit=4):
     """Tooltip text for a `DHĀTUP. x,y` citation, or None when it is not one / is
     not in the concordance.
 
-    Shape: `DHĀTUP. 26,91 — Palsule √snih (P175, P186, …): snehane, prītau, …`.
+    Shape: `DHĀTUP. 26,91 — Palsule √snih (P175, P186, …): gatau, prītau, snehane, …`.
     The page siglum is Palsule's own printed page, which is the citable address in
     the absence of an online edition."""
     c = coord(n_attr, visible)
