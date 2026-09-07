@@ -4600,9 +4600,22 @@ read is a handoff premised on nothing. Related: §471 (a class label that is a f
 the matcher, not about the corpus), §472 (a tier decided once per group and stamped on
 rows).
 
-Integrity issue: [SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822).
+Integrity issue: [SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822) — closed 07-09-2026.
 
-_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+**Relabel applied (H3960, 07-09-2026):** `SOUTHERN_FILES` in
+[`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)
+now holds only kāṇḍas 1/2/3/5; kāṇḍas 6–7 moved to a new `CRITICAL_KEYED_FILES`
+constant. The committed
+[`ramayana_southern_critical_concordance.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_southern_critical_concordance.tsv)
+was re-run: the two kāṇḍas' 7,116 rows now carry class `self_aligned_critical`
+instead of `matched`/`fuzzy`/`moved` — a byte-for-byte diff confirmed only that
+one column changed, no verse text touched (text kept, per the MG ruling).
+`CONTRADICTIONS.md` §9 and `COVERED_TEXTS_RU.md` updated to match; the
+`build-gorresio` kāṇḍa-6/7 Gorresio↔"Southern" verse map still keys against
+this critical-edition numbering under a "Southern" label — flagged, not
+re-keyed (out of this fix's fence).
+
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]` · relabel applied 07-09-2026 by [H3960](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3960-Sonnet_SanskritLexicography_ramayana-kanda67-critical-relabel_02.09.26.md), Claude Code Sonnet 5 (`claude-sonnet-5`)_
 
 ### §482. A count column with no stated provenance is not data — it is a ranking, and the difference decides whether you may divide by it
 
