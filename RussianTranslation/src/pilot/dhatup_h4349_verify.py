@@ -24,9 +24,14 @@ ART = os.path.join(SRC, 'data', 'dhatup_palsule.json')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 PW = os.path.join(GH, 'csl-orig', 'v02', 'pw', 'pw.txt')
 
-if not all(os.path.exists(x) for x in (ART, PWG, PW)):
-    print('dhatup_h4349_verify: artifact or csl-orig corpus absent — skipped')
-    raise SystemExit(0)
+# Fail CLOSED. Exiting 0 on a missing corpus gives any caller without csl-orig a
+# green run that executed zero checks — a second verifier scored exactly that on a
+# /tmp worktree. `--skip-if-absent` restores the old behaviour for callers that
+# genuinely cannot supply the corpora and say so out loud.
+_missing = [x for x in (ART, PWG, PW) if not os.path.exists(x)]
+if _missing:
+    print('dhatup_h4349_verify: cannot verify — absent: %s' % ', '.join(_missing))
+    raise SystemExit(0 if '--skip-if-absent' in sys.argv else 2)
 
 d = json.load(open(ART, encoding='utf-8'))
 table, st = d['table'], d['_stats']
@@ -116,8 +121,10 @@ for coord, roots in ev.items():
               any('{#%s#}' % root in l for l in lines),
               '%d citing lines' % len(lines))
 check('PWG never cites 33,67', '33,67' not in cited)
-check('pw uses the Böhtlingk v. l. construction at a DHĀTUP citation, so the guard '
-      'is not hypothetical',
+# NB: this asserts the CONSTRUCTION exists in pw, NOT that the guard fires on it.
+# The guard is order-shadowed by the same-book screen and refuses 0 as shipped.
+check('pw contains the Böhtlingk v. l. construction at a DHĀTUP citation (the guard '
+      'is standing, not live — it refuses 0 today)',
       any('DHĀTUP. 31,32<' in l and 'v. l.' in l
           for l in open(PW, encoding='utf-8').read().splitlines()))
 
