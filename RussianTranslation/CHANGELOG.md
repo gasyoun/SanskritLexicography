@@ -13,6 +13,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [1.144.160] - 2026-09-08
+
+- H4386 (/document sweep): [FINDINGS §637](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) — **a defaultless keyword-only signature does not close a permissive-call-site defect.** Registering the reusable half of the H4386 hardening: an independent adversarial verifier passed `same_book_conflicted=frozenset()` into the newly defaultless `_sibling_pass` and rebuilt the exact wrong row H4349 shipped (1466 rows, `32,56 → cukk`), because the shipped defect was never a *missing* argument but a call site passing the permissive value; a merely-truthy always-contains `pwg_cited` passed `if not pwg_cited` and shipped both bad rows at 1467. The close is to validate the screening value's type **and** emptiness where it is used, name the one legitimate exemption as a module-level sentinel so it is greppable at every call site, and check the call sites in the source via `ast`. Same entry records the refuted premise: four counterfactual builds show only **2 of the 4** screens change the shipped table. `FEATURES_INDEX.md` L18 and `RussianTranslation/.ai_state.md` refreshed to match.
 ## [1.144.159] - 2026-09-08
 
 - Griffith EN alignment CI gate (H2361/H3949) actually executes now: it pointed at a corpus.db never checked out in this repo's CI and always took the SKIP path. Wired against a committed 4.6 MB Rigveda-Sanskrit-only fixture (`RussianTranslation/tests/fixtures/rigveda_sa_fixture.db`) instead, verified to reproduce the real corpus.db's numbers exactly.
