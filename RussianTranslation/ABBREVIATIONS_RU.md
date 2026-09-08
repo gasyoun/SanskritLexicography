@@ -1,6 +1,6 @@
 # PWG `<ab>`/`<ls>` abbreviations — tooltips and RU-column purity
 
-_Created: 10-07-2026 · Last updated: 07-09-2026_
+_Created: 10-07-2026 · Last updated: 08-09-2026_
 
 > Consolidated Russian style guide of record (all ratified rules, with provenance and the
 > open 10-07 vs 19-07 abbreviation contradiction surfaced):
@@ -373,25 +373,28 @@ All work extends the existing Cologne-port resolver
 | `P.` (Pāṇini) | 25351 | 25065 | 98.9% | 25349 | — (n/a) |
 | `Spr.` (1st ed) | 13133 | 12953 | 98.6% | 13133 | — (n/a) |
 | `Spr. (II)` (2nd ed) | 8684 | 8684 | 100.0% | 8684 | 8395 |
-| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1933 |
+| `DHĀTUP.` | 2760 | 2659 | 96.3% | 2760 | 1935 |
 
 - **Full-form Pāṇini `P. a,p,s` (3-param):** 25061 / 25061 linked (**100.0%**) — the H1307 DoD target.
 - **`Spr. (II) N` (2nd ed):** 8684 / 8684 linked (**100.0%**), 8395 full-text enriched (96.7% of linked).
-- **`DHĀTUP. x,y` → Palsule (H1333 + H4339):** 2657 / 2760 citations carry a gaṇa,serial
-  coordinate (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1933 of those
-  (72.8%)** resolve to a Palsule artha-index record — **1465 of the 1751 distinct coordinates
-  PWG cites (83.7%)**, of which 1226 (70.0%) are Böhtlingk's own attribution and 239 come from
+- **`DHĀTUP. x,y` → Palsule (H1333 + H4339 + H4349):** 2657 / 2760 citations carry a gaṇa,serial
+  coordinate (the rest are gaṇa-only `DHĀTUP.`, which has no root to key on); **1935 of those
+  (72.8%)** resolve to a Palsule artha-index record — **1467 of the 1751 distinct coordinates
+  PWG cites (83.8%)**, of which 1226 (70.0%) are Böhtlingk's own attribution, 239 come from
   the Monier-Williams second witness added by H4339 (marked `[MW]` in the tooltip, `source` in
-  the data). The remaining shortfall is honest and of two kinds: coordinates neither dictionary
+  the data), and 2 from pw, Böhtlingk's own abridgement, added by H4349 (`[pw]`). The remaining
+  shortfall is honest and of two kinds: coordinates no dictionary
   attributes unambiguously (`skand`/`skund`, `cut`/`cyut`) and roots absent from Palsule's artha
-  index (`edh`, `vīj`). Enrichment is **tooltip text only** — Palsule has no online edition —
-  and the gaṇa-level Westergaard link is unchanged.
+  index (`edh`, `vīj`). H4349 also closed the last untried PWG-family source and found it empty:
+  PWG's 636 dotted-id articles, invisible to the H1333 scan, cite **one** coordinate between
+  them, and PWG itself contests it. Enrichment is **tooltip text only** — Palsule has no online
+  edition — and the gaṇa-level Westergaard link is unchanged.
 
 _Denominator: full source [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) — the RU store
 `src/pwg_ru_translated.jsonl` was absent on this machine, so per H1307 Prerequisite 1 the
 count uses the whole PWG corpus (a superset of the RU-translated subset). Recompute against
 the store when present: `python src/ls_coverage.py --md` (raw JSON → gitignored
-`pwg_ru/eval/ls_coverage.json`). Generated 19-07-2026; DHĀTUP.→Palsule row re-run 07-09-2026 (H1333, then H4339)._
+`pwg_ru/eval/ls_coverage.json`). Generated 19-07-2026; DHĀTUP.→Palsule row re-run 08-09-2026 (H1333, H4339, then H4349)._
 
 ### Pāṇini `P.` → ashtadhyayi.com
 
@@ -636,7 +639,111 @@ Three things the first pass left undisclosed and these now publish:
    first measured), because its extra claimants mostly land on coordinates PWG had already resolved.
 
 **Re-derive:** `python src/build_dhatup_palsule.py` (all `_stats` above), and
-`python src/build_dhatup_palsule.py --mw ""` rebuilds the PWG-only H1333 table byte-for-byte.
+`python src/build_dhatup_palsule.py --mw "" --pw "" --no-pwg-dotted` rebuilds the PWG-only
+H1333 table byte-for-byte (H4349 added the two later switches; `--mw ""` alone now also runs the
+pw pass, which fills three coordinates MW would otherwise have taken).
+
+### `DHĀTUP.` third and fourth witnesses — PWG's dotted-id articles and pw — H4349, 08-09-2026
+
+H4339 left two PWG-family sources untouched, and this section reports what each is actually
+worth. Both are stamped with their own `source` token and neither is ever merged into `pwg`,
+so H1333's table and H4339's table are both still recoverable by filtering.
+
+**Coverage: 1,465 → 1,467 of 1,751 (83.7% → 83.8%).** Two rows, and the small number is the
+finding rather than a disappointment — see below.
+
+| `source` | rows | what it means |
+|---|--:|---|
+| `pwg` | 1226 | Böhtlingk's own attribution — H1333's rule, unchanged |
+| `mw` | 140 | PWG named no single root; MW claims the coordinate for exactly one |
+| `mw-respell` | 99 | PWG named a root Palsule does not gloss; MW spells it as Palsule does |
+| `pw` | 2 | Böhtlingk's own abridgement resolves a coordinate PWG left unresolved |
+| `pwg-dotted` | 0 | reserved, measured, and empty — see the negative result below |
+
+#### The dotted-id class is one coordinate, not a hidden corpus
+
+`_L`, the pattern H1333 measured PWG on, accepts an all-digit `<L>` id. **636 of PWG's 123,366
+articles carry a dotted id** (`<L>26305.560<pc>`) and are invisible to it, which looked like a
+large unread evidence class. It is not. Those 636 articles cite **exactly one `DHĀTUP.`
+coordinate between them** — `15,89`, in `4. kar`.
+
+That coordinate was already contested without them. `<L>18794` heads it `kfv`, and Böhtlingk's
+own prose there says the root is `kṛv`, that it *has been placed under* `1. kar`, and that its
+final `-v` "has not the slightest justification"; `<L>69734` claims it for `kar` again in the
+Nachträge. Two readings, stated by the same lexicographer — precisely the shape H1333's
+multi-claimant filter refuses to resolve. A dotted-id citation is **the same book**, so letting
+it fill that coordinate would break the tie by adding a vote, which is what the filter exists
+not to do. It is refused by an explicit same-book guard
+(`_stats["pwg-dotted_refused_same_book_conflict"] == 1`) and not merely by the accident that
+its head line also lacks a `√`.
+
+So the class ships nothing, and that emptiness is **pinned by a regression**
+(`test_dhatup_pwg_dotted_class_is_measured_and_empty`): if a corpus update ever puts real
+coordinates into that id space, `pwg-dotted_coords_cited` moves and the test fails. `_L` itself
+is deliberately **not** widened — doing so would move H1333's shipped `pwg_entries` for no gain.
+
+#### pw cites 40 coordinates and yields 2, because the screening is strict
+
+pw is the *Sanskrit-Wörterbuch in kürzerer Fassung* — Böhtlingk's own abridgement, so a
+coordinate there is the same author's numbering, the strongest evidence class available after
+pwg itself. But abridging **moved the citations**: where pwg states a coordinate on the root's
+own head line, pw very often states it on the head line of the *artha* noun instead
+(`{#uttrAsana#}¦ <lex>n.</lex> … <ls>DHĀTUP. 9,15</ls>` — "uttrāsana" is a meaning, not a root).
+
+| what pw's 40 citations are | n |
+|---|--:|
+| head line of a noun being glossed — refused | 19 |
+| body quotation, not an attribution — refused | 5 |
+| outside the attested coordinate space — refused (adjudicated below) | 2 |
+| single verbal claimant, coordinate already in the table | 12 |
+| single verbal claimant, root absent from Palsule's index | 2 |
+| **shipped** (`32,56` cukk · `33,67` tras) | **2** |
+
+**The `<lex>` test alone was not enough, and this is the load-bearing correction.** PWG
+discriminates a noun article by the *presence* of a `<lex>` part-of-speech tag; pw abridges and
+often omits it. `{#DAnya#}¦ (von {#Dana#}) {%das Reichsein%} <ls>DHĀTUP. 20,3</ls>` is a noun
+meaning "wealth" with no `<lex>` anywhere, and a negative test admits it as a root — pw's
+citation for a coordinate PWG gives to `jal`. Böhtlingk marks verbal articles **positively**
+instead, with `√` on the head line (`*√{#cukk#}¦, {#cukkayati#}`), and that marker separates all
+37 head-line claimants cleanly. The pass therefore *requires* the marker rather than merely not
+forbidding it. Requiring it is what keeps meanings out of the root column.
+
+**Cross-validation is weak here and is reported as weak.** Only 8 coordinates have both a PWG
+attribution and a screened pw claimant; 1 agrees outright (12.5%), 3 counting citation-form
+variation (37.5%) — `vṛkṣ`/`varkṣ` (guṇa) and `karṇ`/`karṇay` (root against denominative stem).
+The remaining 5 (`darp`/`dramp`, `huḍ`/`bhruḍ`, `prath`/`parth`, `kaḍ`/`khaḍ`, `grabh`/`gṛhay`)
+are genuine differences between Böhtlingk's two editions and are published in
+`_sibling_disagreements`, never resolved. **8 comparisons is too few to read as a quality
+verdict on either edition**, and it is stated here so nobody quotes 12.5% as one.
+
+#### Adjudication — `DHĀTUP. 1,840` and `1,960` are refused
+
+pw's Nachträge carry two citations that no other witness echoes:
+
+- `√{#can#}¦ II. {#ca/nati#} ({#hiMsArTa#}) <ls>DHĀTUP. 1,840</ls>` — a genuine verbal article,
+  `√`-marked, and Palsule does gloss `can`. It would have shipped.
+- `{#Kadana#}¦ II. <lex>n.</lex> {%das Festsein%} <ls>DHĀTUP. 1,960</ls>` — a noun, refused by
+  the head-line test in any case.
+
+**Verdict: neither is a point in this coordinate space, and both are dropped.** The reason is
+measured, not argued from plausibility: across the whole of pwg and mw, **gaṇa 1 is cited
+exactly three times and every time as `1,1`** — bhū, the first root of the dhātupāṭha. The
+attested ceiling for gaṇa 1 is therefore 1. A gaṇa whose serials stop at 1 does not have an
+840th root, so `1,840` and `1,960` are some other numbering of Westergaard that the supplement
+reaches for twice — a citation-split artifact, exactly as H4349 suspected. Admitting them would
+mint two coordinates no witness can ever confirm and would collide with any genuine future
+`1,840`.
+
+The ceiling is **derived from the corpus at build time** (`coordinate_ceilings`), never typed as
+a constant, and it is derived from PWG's citations alone — the source being screened must not be
+allowed to widen the space it is screened against. Both refusals are published with the ceiling
+they failed in the artifact's `_out_of_coordinate_space`, so the adjudication is re-derivable
+rather than asserted, and a regression asserts that they are neither shipped nor silently
+dropped.
+
+**Re-derive:** `python src/build_dhatup_palsule.py` (all `_stats` above);
+`python src/build_dhatup_palsule.py --mw "" --pw "" --no-pwg-dotted` rebuilds the PWG-only H1333
+table byte-for-byte (1226 rows, verified as a zero diff, not as a matching row count).
 
 ## Mechanical RU style rules (no-ё, terse metalanguage) — H1305
 

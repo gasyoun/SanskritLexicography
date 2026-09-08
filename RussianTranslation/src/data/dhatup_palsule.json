@@ -1,7 +1,7 @@
 {
- "_README": "DHĀTUP. gaṇa,serial -> what Palsule records FOR THAT ROOT SPELLING. Built by src/build_dhatup_palsule.py (H1333). GRANULARITY: keyed by coordinate, but the content is the union of every XLS row whose root normalizes to the same spelling. Palsule's artha index is keyed on the root, not on gaṇa,serial, so it CANNOT separate the homonyms Böhtlingk numbers apart: 26,91 is the divādi snih, but its arthas are every snih in Palsule. Read a record as \"what Palsule says about this root\", never as \"what Palsule says at exactly this coordinate\". The coordinate->root half is read off PWG itself (the citation sits in the root's own article, <k1> is the dhātu); only root->Palsule is a join. Coordinates whose citing articles disagree on the root are DROPPED, not guessed. ACCURACY: _stats.inline_artha_* measures the table against the artha PWG itself prints beside the citation — an independent witness. Coverage and accuracy are different numbers; both are in _stats. PROVENANCE (H4339): every row carries `source` — `pwg` is Böhtlingk's own attribution (H1333), `mw` is a coordinate PWG could not disambiguate that Monier-Williams claims for exactly one root, `mw-respell` is a coordinate PWG resolved to a root Palsule does not gloss where MW's spelling of it is in Palsule. Filter on `source` to get the PWG-only table back. Where both dictionaries resolve a coordinate to a DIFFERENT single root, the PWG reading stands and the conflict is listed in `_mw_disagreements` for adjudication — never resolved by picking a winner.",
+ "_README": "DHĀTUP. gaṇa,serial -> what Palsule records FOR THAT ROOT SPELLING. Built by src/build_dhatup_palsule.py (H1333). GRANULARITY: keyed by coordinate, but the content is the union of every XLS row whose root normalizes to the same spelling. Palsule's artha index is keyed on the root, not on gaṇa,serial, so it CANNOT separate the homonyms Böhtlingk numbers apart: 26,91 is the divādi snih, but its arthas are every snih in Palsule. Read a record as \"what Palsule says about this root\", never as \"what Palsule says at exactly this coordinate\". The coordinate->root half is read off PWG itself (the citation sits in the root's own article, <k1> is the dhātu); only root->Palsule is a join. Coordinates whose citing articles disagree on the root are DROPPED, not guessed. ACCURACY: _stats.inline_artha_* measures the table against the artha PWG itself prints beside the citation — an independent witness. Coverage and accuracy are different numbers; both are in _stats. PROVENANCE (H4339): every row carries `source` — `pwg` is Böhtlingk's own attribution (H1333), `mw` is a coordinate PWG could not disambiguate that Monier-Williams claims for exactly one root, `mw-respell` is a coordinate PWG resolved to a root Palsule does not gloss where MW's spelling of it is in Palsule. Filter on `source` to get the PWG-only table back. Where both dictionaries resolve a coordinate to a DIFFERENT single root, the PWG reading stands and the conflict is listed in `_mw_disagreements` for adjudication — never resolved by picking a winner. TWO MORE PWG-FAMILY SOURCES (H4349), each stamped apart and never merged into `pwg`: `pwg-dotted` is a coordinate cited only by one of PWG's 636 dotted-id articles, which the H1333 scan's all-digit <L> pattern cannot see; `pw` is a coordinate from Böhtlingk's own abridgement, the Sanskrit-Wörterbuch in kürzerer Fassung. Both are admitted only on a single VERBAL head-line claimant — pw states most of its DHĀTUP. citations on the head line of the artha noun rather than the root, so the <lex> nominal test that is a refinement for PWG is load-bearing there. Both are screened against the attested coordinate space (the highest serial PWG itself cites in that gaṇa); refusals are listed in `_out_of_coordinate_space` with the ceiling they failed, never silently dropped.",
  "_stats": {
-  "built": "07-09-2026",
+  "built": "08-09-2026",
   "source_xls": "Palsule_Artha_24_01_2014.xlsx",
   "source_pwg": "csl-orig/v02/pwg/pwg.txt",
   "xls_artha_rows": 8170,
@@ -14,8 +14,8 @@
   "coords_unmatched": 254,
   "coords_linked_pwg": 1226,
   "match_rate_pwg": 70.0,
-  "coords_linked": 1465,
-  "match_rate": 83.7,
+  "coords_linked": 1467,
+  "match_rate": 83.8,
   "coords_linked_without_filters": 1144,
   "match_rate_without_filters": 65.3,
   "mw_available": true,
@@ -45,6 +45,52 @@
    "one letter": 39,
    "stem~root": 28
   },
+  "coords_linked_after_mw": 1465,
+  "pwg-dotted_available": true,
+  "pwg-dotted_source": "csl-orig/v02/pwg/pwg.txt",
+  "pwg-dotted_articles": 636,
+  "pwg-dotted_coords_cited": 1,
+  "pwg-dotted_coords_single_verbal_claimant": 0,
+  "pwg-dotted_refused_out_of_coordinate_space": 0,
+  "pwg-dotted_refused_nominal_head": 0,
+  "pwg-dotted_refused_body_only": 0,
+  "pwg-dotted_refused_multiple_claimants": 0,
+  "pwg-dotted_refused_same_book_conflict": 1,
+  "pwg-dotted_coords_overlapping_shipped": 0,
+  "pwg-dotted_candidates_without_palsule_row": 0,
+  "coords_filled_from_pwg-dotted": 0,
+  "pwg-dotted_cross_validated": 0,
+  "pwg-dotted_cross_agree": 0,
+  "pwg-dotted_cross_disagree": 0,
+  "pwg-dotted_cross_agreement_rate": 0.0,
+  "pwg-dotted_cross_agree_modulo_citation_form": 0,
+  "pwg-dotted_cross_agreement_rate_modulo_citation_form": 0.0,
+  "pwg-dotted_cross_disagreement_shapes": {},
+  "pw_available": true,
+  "pw_source": "csl-orig/v02/pw/pw.txt",
+  "pw_articles": 170556,
+  "pw_coords_cited": 40,
+  "pw_coords_single_verbal_claimant": 14,
+  "pw_refused_out_of_coordinate_space": 2,
+  "pw_refused_nominal_head": 19,
+  "pw_refused_body_only": 5,
+  "pw_refused_multiple_claimants": 0,
+  "pw_refused_same_book_conflict": 0,
+  "pw_coords_overlapping_shipped": 25,
+  "pw_candidates_without_palsule_row": 4,
+  "coords_filled_from_pw": 2,
+  "pw_cross_validated": 8,
+  "pw_cross_agree": 1,
+  "pw_cross_disagree": 7,
+  "pw_cross_agreement_rate": 12.5,
+  "pw_cross_agree_modulo_citation_form": 3,
+  "pw_cross_agreement_rate_modulo_citation_form": 37.5,
+  "pw_cross_disagreement_shapes": {
+   "other": 5,
+   "guṇa ar~ṛ": 1,
+   "stem~root": 1
+  },
+  "coords_refused_out_of_coordinate_space": 2,
   "inline_artha_examined": 232,
   "inline_artha_agree": 139,
   "inline_artha_disagree": 93,
@@ -1695,6 +1741,93 @@
    "mw_root_iast": "varṇ",
    "shape": "stem~root",
    "shipped_reading": "mw-respell"
+  }
+ ],
+ "_sibling_disagreements": [
+  {
+   "coord": "16,3",
+   "source": "pw",
+   "pwg_root_slp1": "vfkz",
+   "pwg_root_iast": "vṛkṣ",
+   "sibling_root_slp1": "varkz",
+   "sibling_root_iast": "varkṣ",
+   "shape": "guṇa ar~ṛ"
+  },
+  {
+   "coord": "28,28",
+   "source": "pw",
+   "pwg_root_slp1": "darp",
+   "pwg_root_iast": "darp",
+   "sibling_root_slp1": "dramp",
+   "sibling_root_iast": "dramp",
+   "shape": "other"
+  },
+  {
+   "coord": "28,102",
+   "source": "pw",
+   "pwg_root_slp1": "huq",
+   "pwg_root_iast": "huḍ",
+   "sibling_root_slp1": "Bruq",
+   "sibling_root_iast": "bhruḍ",
+   "shape": "other"
+  },
+  {
+   "coord": "32,20",
+   "source": "pw",
+   "pwg_root_slp1": "praT",
+   "pwg_root_iast": "prath",
+   "sibling_root_slp1": "parT",
+   "sibling_root_iast": "parth",
+   "shape": "other"
+  },
+  {
+   "coord": "32,44",
+   "source": "pw",
+   "pwg_root_slp1": "kaq",
+   "pwg_root_iast": "kaḍ",
+   "sibling_root_slp1": "Kaq",
+   "sibling_root_iast": "khaḍ",
+   "shape": "other"
+  },
+  {
+   "coord": "35,45",
+   "source": "pw",
+   "pwg_root_slp1": "graB",
+   "pwg_root_iast": "grabh",
+   "sibling_root_slp1": "gfhay",
+   "sibling_root_iast": "gṛhay",
+   "shape": "other"
+  },
+  {
+   "coord": "35,71",
+   "source": "pw",
+   "pwg_root_slp1": "karR",
+   "pwg_root_iast": "karṇ",
+   "sibling_root_slp1": "karRay",
+   "sibling_root_iast": "karṇay",
+   "shape": "stem~root"
+  }
+ ],
+ "_out_of_coordinate_space": [
+  {
+   "coord": "1,960",
+   "gana": 1,
+   "serial": 960,
+   "attested_ceiling": 1,
+   "claimants": [
+    "Kadana"
+   ],
+   "verdict": "refused: not a point in the attested coordinate space"
+  },
+  {
+   "coord": "1,840",
+   "gana": 1,
+   "serial": 840,
+   "attested_ceiling": 1,
+   "claimants": [
+    "can"
+   ],
+   "verdict": "refused: not a point in the attested coordinate space"
   }
  ],
  "table": {
@@ -36943,6 +37076,64 @@
    "mw_root_slp1": "varR",
    "pwg_root_slp1": "varRay",
    "pwg_root_iast": "varṇay"
+  },
+  "32,56": {
+   "root_slp1": "cukk",
+   "root_iast": "cukk",
+   "source": "pw",
+   "palsule_root": "cukk",
+   "pages": [
+    "P167",
+    "P194"
+   ],
+   "pada": [
+    "V",
+    "all (ex. KkV)"
+   ],
+   "arthas": [
+    "artau",
+    "vyathane"
+   ],
+   "artha_count": 2,
+   "pw_root_slp1": "cukk"
+  },
+  "33,67": {
+   "root_slp1": "tras",
+   "root_iast": "tras",
+   "source": "pw",
+   "palsule_root": "tras",
+   "pages": [
+    "P170",
+    "P177",
+    "P181",
+    "P182",
+    "P183",
+    "P187",
+    "P192"
+   ],
+   "pada": [
+    "PKkKt",
+    "Śā",
+    "KṣS",
+    "PKkH",
+    "V",
+    "CHV",
+    "all (ex. KkV; C om.)"
+   ],
+   "arthas": [
+    "udvege",
+    "udvejane",
+    "grahaṇe",
+    "grahe",
+    "dhāraṇe",
+    "dhṛtau",
+    "dhṛtau grahe niṣedhe",
+    "niṣedhe",
+    "bhaye",
+    "vāraṇe"
+   ],
+   "artha_count": 10,
+   "pw_root_slp1": "tras"
   }
  }
 }
