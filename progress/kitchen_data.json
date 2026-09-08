@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T06:52:56Z",
+  "generated_at": "2026-09-08T13:08:37Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": true,
+    "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 891,
+    "youngest_artifact_age_seconds": 109831,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-02T19:01:43Z",
-        "age_seconds": 388270,
+        "age_seconds": 497210,
         "size": 26345513
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 905292,
+        "age_seconds": 1014232,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 905292,
+        "age_seconds": 1014232,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-09-07T06:38:02Z",
-        "age_seconds": 891,
+        "age_seconds": 109831,
         "size": 3564688
       }
     }
@@ -52,8 +52,8 @@
     "pending": 29,
     "newest_card_at": "2026-08-29T08:49:35Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 8.92,
-    "campaign_days": 70
+    "days_since_last_card": 10.18,
+    "campaign_days": 72
   },
   "yield_quality": {
     "measured": true,
@@ -727,7 +727,7 @@
     "total_idle_seconds": 3844596,
     "total_idle_hours": 1067.94,
     "mean_gap_seconds": 640766.0,
-    "current_idle_seconds": null,
+    "current_idle_seconds": 109832,
     "last_idle_seconds": 758439,
     "last_idle": {
       "from": "2026-08-29T11:57:08Z",
@@ -753,9 +753,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 0,
-        "idle_days": 0.0,
-        "idle_hours": 0.0
+        "idle_seconds": 109832,
+        "idle_days": 1.27,
+        "idle_hours": 30.51
       }
     ],
     "recent_gaps": [
@@ -895,19 +895,10 @@
     }
   },
   "calendar": {
-    "start": "2026-05-11",
-    "end": "2026-09-07",
+    "start": "2026-05-12",
+    "end": "2026-09-08",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-05-11",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-05-12",
         "cards": 0,
@@ -1978,6 +1969,15 @@
         "idle_hours": 21.07,
         "level": 0,
         "idle": true
+      },
+      {
+        "date": "2026-09-08",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6026,
@@ -1989,6 +1989,26 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.144.156",
+        "date": "2026-09-07",
+        "bullets": []
+      },
+      {
+        "version": "1.144.155",
+        "date": "2026-09-07",
+        "bullets": []
+      },
+      {
+        "version": "1.144.151",
+        "date": "2026-09-07",
+        "bullets": []
+      },
+      {
+        "version": "1.144.150",
+        "date": "2026-09-07",
+        "bullets": []
+      },
       {
         "version": "1.144.147",
         "date": "2026-09-03",
@@ -2027,35 +2047,6 @@
       {
         "version": "1.144.132",
         "date": "2026-08-31",
-        "bullets": []
-      },
-      {
-        "version": "1.144.130",
-        "date": "2026-08-30",
-        "bullets": [
-          {
-            "title": "Planned — H3714 PWG translation control-plane strangler",
-            "summary": ""
-          },
-          {
-            "title": "Closed — H1437 bounded cohort scheduler: Phase-4 closeout battery on master tip; one macOS-only gate blocker fixed",
-            "summary": ""
-          }
-        ]
-      },
-      {
-        "version": "1.144.129",
-        "date": "2026-08-29",
-        "bullets": []
-      },
-      {
-        "version": "1.144.128",
-        "date": "2026-08-29",
-        "bullets": []
-      },
-      {
-        "version": "1.144.127",
-        "date": "2026-08-29",
         "bullets": []
       }
     ]

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T06:52:52Z",
-  "snapshot_date": "2026-09-07",
+  "generated_at": "2026-09-08T13:08:25Z",
+  "snapshot_date": "2026-09-08",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -11,6 +11,7 @@
       "universe": 1882,
       "dcs_attested": 749,
       "promoted": 48,
+      "pct": 6.41,
       "runnable": 0,
       "blocked": 701
     },
@@ -66,6 +67,21 @@
     "total_headwords": 106082,
     "total_measured": false,
     "pct": 41.4
+  },
+  "translation_progress": {
+    "measured": true,
+    "promoted": 89,
+    "target": 5788,
+    "pct": 1.54,
+    "verb": {
+      "promoted": 48,
+      "target": 749
+    },
+    "nominal": {
+      "promoted": 41,
+      "target": 5039
+    },
+    "note": "promoted cards / target headwords across both lanes -- distinct from coverage.pct, which is DCS-attestation scope, not translation output"
   },
   "corpus": {
     "measured": true,
