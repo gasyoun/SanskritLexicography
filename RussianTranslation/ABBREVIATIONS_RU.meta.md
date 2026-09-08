@@ -56,5 +56,6 @@ a dead end.*
 | Date | Change | By |
 |---|---|---|
 | 02-09-2026 | Created during the H3959 propagation sweep; records all three rulings and the backlog above. | Opus 5 (`claude-opus-5`) |
+| 08-09-2026 | H4349 rewrote the `DHĀTUP.` third/fourth-witness section twice: first as a coverage gain, then — after an independent verifier refuted both shipped rows — as the two-part negative result it always was. A second verifier pass corrected two further claims in it: the whole-file "byte-for-byte identical" wording (only the `table` payload is) and the variant-reading guard, which is order-shadowed and refuses nothing today. | Opus 5 (`claude-opus-5`) |
 
 _Dr. Mārcis Gasūns_
