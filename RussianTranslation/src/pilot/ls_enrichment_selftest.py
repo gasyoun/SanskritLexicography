@@ -303,19 +303,21 @@ def test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg():
 
 
 def test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg():
-    """H4349: pw may fill a coordinate the table lacks; it may not restate one.
+    """H4349: pw is screened as the SAME AUTHOR, and today it fills nothing.
 
-    pw is Böhtlingk's own abridgement, so its rows are stamped `pw` and kept apart from
-    `pwg` — same-author is not same-statement, and a consumer reconstructing H1333 or
-    H4339 filters on `source`. Four separable claims:
-      1. the coverage totals in `_stats` add up to the table actually shipped, so a
-         reader cannot be told a number the artifact does not contain;
-      2. no `pw` row sits on a coordinate PWG resolved — the pass fills gaps only;
-      3. every `pw` row's root is one Palsule glosses (that is what makes it a row);
-      4. the two out-of-space citations are REFUSED and PUBLISHED with the ceiling they
-         failed. `1,840` and `1,960` are the live cases: PWG and MW cite gaṇa 1 only as
-         `1,1`, so a gaṇa-1 serial of 840 is a citation-split artifact, not a root. A
-         build that quietly shipped or quietly dropped them would fail here."""
+    The first cut of this pass treated pw as an independent witness, the way H4339
+    treats MW, and shipped two rows an independent verifier refuted: `32,56 → cukk`
+    (PWG splits that coordinate between `cakk` and a `v. l.` `cikk`, and puts `cukk` at
+    `34,21`) and `33,67 → tras` (PWG never cites `33,67`; the identical article is its
+    `33,88`). Both are now refused by screens this test pins:
+      1. the coverage totals in `_stats` add up to the table actually shipped;
+      2. no shipped coordinate lies outside the set PWG cites — `match_rate` divides by
+         that set, so a row outside it is counted against a denominator excluding it;
+      3. any `pw` row that ever does ship fills a gap and carries its own provenance;
+      4. `1,840` and `1,960` are REFUSED and PUBLISHED with the ceiling they failed.
+         PWG and MW cite gaṇa 1 only as `1,1`, so a gaṇa-1 serial of 840 is a
+         citation-split artifact. A build that quietly shipped OR quietly dropped them
+         fails here."""
     if not dhp.available():
         print('  .. skipped test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg')
         return
@@ -323,6 +325,14 @@ def test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg():
     table = dhp._load()
     st = dhp.stats()
 
+    for coord in ('32,56', '33,67'):
+        if coord in table:
+            fail('%s was refuted by an independent verifier and must not ship: %r'
+                 % (coord, table[coord].get('root_slp1')))
+    if st.get('coords_filled_from_pw') != 0:
+        fail('pw filled %r coordinates; every candidate is currently refused by the '
+             'same-book, membership or ceiling screen — a new fill needs adjudicating'
+             % st.get('coords_filled_from_pw'))
     pw_rows = {c: r for c, r in table.items() if r['source'] == 'pw'}
     if len(pw_rows) != st.get('coords_filled_from_pw'):
         fail('pw rows %d != _stats.coords_filled_from_pw %r'
@@ -386,6 +396,12 @@ def test_dhatup_pwg_dotted_class_is_measured_and_empty():
         fail('the dotted-id class shipped %r rows; it must ship none until the one '
              'contested coordinate is adjudicated'
              % st.get('coords_filled_from_pwg-dotted'))
+    if st.get('pw_refused_same_book_conflict') != 11:
+        fail('pw same-book refusals moved: %r (was 11)'
+             % st.get('pw_refused_same_book_conflict'))
+    if st.get('pw_refused_not_cited_by_pwg') != 3:
+        fail('pw membership refusals moved: %r (was 3)'
+             % st.get('pw_refused_not_cited_by_pwg'))
     if st.get('pwg-dotted_refused_same_book_conflict') != 1:
         fail('15,89 must be refused by the same-book guard, not by accident: %r'
              % st.get('pwg-dotted_refused_same_book_conflict'))
@@ -418,6 +434,9 @@ def test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349():
     if (counts.get('mw'), counts.get('mw-respell')) != (140, 99):
         fail('H4339 composition moved: mw=%r mw-respell=%r'
              % (counts.get('mw'), counts.get('mw-respell')))
+    if len(table) != 1465:
+        fail('H4349 must leave H4339\'s coverage exactly where it found it until a '
+             'sibling fill survives screening: %d rows' % len(table))
     if st.get('coords_linked_after_mw') != 1226 + 140 + 99:
         fail('_stats.coords_linked_after_mw %r != the 1465 rows H4339 shipped'
              % st.get('coords_linked_after_mw'))
