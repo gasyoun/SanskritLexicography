@@ -696,8 +696,19 @@ candidates: **same author is not a second witness.**
 | a coordinate PWG's own multi-claimant filter refused — refused | 11 |
 | a coordinate PWG never cites — refused | 3 |
 | outside the attested coordinate space — refused | 2 |
-| survives every screen, but the table already has the coordinate | 8 |
+| survives every screen — 7 the table already holds, 1 whose root Palsule does not gloss | 8 |
 | **shipped** | **0** |
+
+All six terms and their sum are asserted since H4386, in `ls_enrichment_selftest.py`
+(`test_dhatup_pw_refusal_split_matches_the_published_table`) and again in
+`dhatup_h4349_verify.py` against a count of pw's citations re-read from the corpus. Before that
+only two of the six were pinned anywhere, so this table could drift from `_stats` in silence —
+and an earlier version of it summed to 42 against its own header of 40. The sum is asserted as a
+**partition**: every cited coordinate leaves the screen chain through exactly one bucket, so the
+six above plus the two empty ones (`pw_refused_multiple_claimants`,
+`pw_refused_variant_reading`) must add to `pw_coords_cited`. The last row's split (7 + 1) is
+`pw_coords_overlapping_shipped` and `pw_candidates_without_palsule_row`; the earlier wording,
+"the table already has the coordinate", was true of 7 of the 8, not 8.
 
 **The `<lex>` test alone was not enough.** PWG discriminates a noun article by the *presence* of
 a `<lex>` tag; pw abridges and often omits it. `{#DAnya#}¦ (von {#Dana#}) {%das Reichsein%}
@@ -780,9 +791,81 @@ that a pw claim is not obviously the better reading even where PWG is silent.
   citation is explicitly a variant reading, and if H1333's own pass applied the guard added here,
   `32,56` would resolve cleanly to `cakk`. Applying it there would move the shipped H1333
   baseline, which H4349 is not permitted to do — so it is recorded as a candidate for a future
-  handoff rather than smuggled in.
+  handoff rather than smuggled in. **Adjudicated 08-09-2026 (H4386): measured, and declined.
+  See below.**
+
+#### `32,56` adjudicated — the cure is worse than the residue (H4386, 08-09-2026)
+
+H4349 left `32,56` open because it was forbidden to move H1333's baseline. H4386 was permitted
+to decide it, and did — by building the counterfactual rather than reasoning about it. **The
+verdict is: do not apply H4349's variant-reading guard to H1333's own PWG pass.** The diagnosis
+was right and the remedy is wrong, and the numbers say so.
+
+Counterfactual A — the guard as written for the sibling passes, applied to PWG's own claimants
+(drop any head-line claimant whose citation is followed by `<ab>v. l.</ab>`, then resolve as
+H1333 does). 331 of PWG's head-line claimants carry that note, and **241 of 1751 coordinates
+move**:
+
+| what happens to the coordinate | n |
+|---|--:|
+| newly resolved — the tie was a `v. l.` against a plain claimant | 93 |
+| **lost entirely — the sole claimant carried the note** | **130** |
+| reattributed to a different root | 18 |
+
+The 130 are decisive. In the sibling passes the guard only ever refuses a *fill*, so its worst
+case is a coordinate left empty; run against PWG itself it **deletes attributions for which PWG
+is the only witness** (`2,15 mud`, `3,12 khād`, `5,35 valg`, `7,40 vraj` …). A note that marks a
+headword as a variant reading in a same-author *sibling* is not the same speech act as the same
+note inside the article that Böhtlingk numbers — and 130 deletions is what the difference costs.
+
+Counterfactual B — the narrow reading, `v. l.` as a tie-breaker among multi-claimant coordinates
+only, never erasing a sole claimant: **0 lost, 93 gained, 18 still reattributed**, and `32,56`
+does resolve to `cakk`. But of the 18 reattributions, **12 hand the coordinate to a nominal
+claimant** — `19,2 vyath → saṃcalana`, `23,40 vad → vyakta`, `28,1 tud → vyathana`,
+`31,1 krī → vinimaya`, `32,119 mlakṣ → mlecchana` — because dropping the verbal claimant lets
+the artha-noun article that merely quotes the number win by default. That is the `pad`/3,1 defect
+class in a new place, and it means the narrow variant is not a screen ordering away from correct:
+"verbal beats nominal" would have to run *before* the tie-break, and then be re-verified.
+
+The coverage arithmetic, published as required rather than folded into anything: counterfactual B
+would take 1465/1751 (83.7%) to **1496/1751 (85.4%)** — 74 of the 93 gains have a Palsule row, 43
+of those are coordinates the MW pass already fills, leaving **31 net new** — and would **change
+17 attributions already shipped**. That is a re-baseline of H1333 and H4339 together, with 17 rows
+whose provenance flips, not a residue fix.
+
+**Decision: `32,56` stays dropped, the guard stays out of the PWG pass, and coverage stays
+1465/1751.** The re-baseline is real work with a real yield and it is somebody's next handoff,
+with the ordering question (verbal-beats-nominal before the `v. l.` tie-break) as its first
+task; it is not a screen-hardening pass's business to move a shipped baseline by 31 rows and flip
+17 more on the way past. Re-derive both counterfactuals from the corpus by re-reading
+`read_pwg_coords` with a fourth slot for `_BOEHTLINGK_VL` matches after the citation — the
+measurement is 20 seconds of work and no part of it is stored, deliberately: a number nobody can
+re-derive is a number nobody should trust.
 - **The `√` marker is pw's convention**, not a law; a dictionary that marks roots differently
   needs its own test rather than this one reused.
+
+#### Two hardenings that carry the screens forward (H4386, 08-09-2026)
+
+**The screens are mandatory.** `_sibling_pass`'s `same_book_conflicted` and `pwg_cited` were
+keyword arguments defaulting to `frozenset()`, and the membership test read
+`if pwg_cited and coord not in …`, so a pass that simply forgot one was silently *unscreened* —
+which is not a hypothetical: it is how the first cut shipped `32,56 → cukk`, passing the
+same-book screen to the `pwg-dotted` call and not to the `pw` one. Both are now keyword-only with
+no default (omitting one is a `TypeError` at the call site), the membership test is
+unconditional, and an empty `pwg_cited` — the old default reached by hand — raises, because the
+set being screened against is also the denominator `match_rate` divides by. `dhatup_h4349_verify.py`
+asserts all of this off the builder's **syntax tree**, without importing it.
+
+**The artifact is pinned to its builder.** Nothing used to prove `src/data/dhatup_palsule.json`
+came from the committed `build_dhatup_palsule.py`: one harness reads the JSON, the other the JSON
+plus the corpora, and neither rebuilds, so a stale or hand-edited artifact stayed green — H4349's
+verifier had to rebuild by hand to establish the two agreed. `_stats.builder_sha256` now carries
+the sha256 of the builder's own source, checked corpus-free in `ls_enrichment_selftest.py` and
+again in the standalone verifier. **Change the builder without rebuilding and CI fails.** The pin
+says "this artifact was written by this code", not "this is what the code would produce from
+today's corpora" — that second question is what the corpus-backed checks are for. On landing,
+the rebuilt artifact was byte-identical to the shipped one but for the new key: same 1465 rows,
+same 1226/140/99 split, same disagreement and refusal lists.
 
 **Re-derive:** `python src/build_dhatup_palsule.py` (all `_stats` above);
 `python src/build_dhatup_palsule.py --mw "" --pw "" --no-pwg-dotted` rebuilds the PWG-only H1333

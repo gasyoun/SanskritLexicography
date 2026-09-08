@@ -64,6 +64,7 @@ Raw XLS stays local (gitignored `pwg_ru/eval/`); the DERIVED table is what ships
   python src/build_dhatup_palsule.py [--xls PATH] [--pwg PATH] [--mw PATH] [--out PATH]
 """
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -936,9 +937,21 @@ def coordinate_ceilings(coords):
 
 
 def _sibling_pass(label, source_coords, articles, source_path, palsule,
-                  pwg_root, table, ceilings, same_book_conflicted=frozenset(),
-                  pwg_cited=frozenset()):
+                  pwg_root, table, ceilings, *, same_book_conflicted,
+                  pwg_cited):
     """H4349. Fill still-empty coordinates from a PWG-family sibling. MUTATES `table`.
+
+    H4386: BOTH SCREENS ARE MANDATORY, keyword-only and defaultless. They used to
+    default to `frozenset()`, and the membership screen used to be written
+    `if pwg_cited and coord not in pwg_cited`, so a caller that simply forgot one got
+    a silently UNSCREENED pass rather than an error. That is not a hypothetical: it is
+    precisely the defect H4349 shipped in PR #2148, where `same_book_conflicted` was
+    passed to the `pwg-dotted` call and not to the `pw` one, putting `32,56 → cukk`
+    into the artifact against both pwg's and mw's reading. A missing screen is now a
+    `TypeError` at the call site, and an EMPTY `pwg_cited` — the same permissive state
+    reached by passing the old default explicitly — is a `ValueError`, because the
+    citation set this pass is screened against is also the denominator `match_rate`
+    divides by, and an empty denominator is never a legitimate screening space.
 
     `label` is the provenance token stamped on every row this pass adds (`pwg-dotted`
     or `pw`). Rows already in `table` — PWG's, MW's, or an earlier sibling's — are
@@ -980,6 +993,16 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
     the Böhtlingk family that note marks the article's own headword as the rejected
     reading, so harvesting it ships the one root the source declines to endorse.
     """
+    if not pwg_cited:
+        raise ValueError(
+            '_sibling_pass(%r): pwg_cited is empty. The membership screen would admit '
+            'every coordinate, including ones outside the denominator match_rate '
+            'divides by — the exact shape that shipped 33,67. Pass the set PWG cites.'
+            % label)
+    if not isinstance(same_book_conflicted, (set, frozenset)):
+        raise TypeError('_sibling_pass(%r): same_book_conflicted must be a set of '
+                        'coordinates PWG\'s own filter refused, got %r'
+                        % (label, type(same_book_conflicted).__name__))
     empty = {
         '%s_available' % label: False, '%s_source' % label: None,
         '%s_articles' % label: 0, '%s_coords_cited' % label: 0,
@@ -1028,7 +1051,10 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
                 'verdict': 'refused: not a point in the attested coordinate space',
             })
             continue
-        if pwg_cited and coord not in pwg_cited:
+        # H4386: unconditional. The old `if pwg_cited and …` made an empty set mean
+        # "screen off" rather than "screen against nothing", which is why the empty
+        # case is now refused at entry instead of being quietly honoured here.
+        if coord not in pwg_cited:
             not_cited += 1
             continue
         head = [r for r, c in roots.items() if c[0]]
@@ -1150,6 +1176,27 @@ def _palsule_record(palsule, root_slp1, source, extra=None):
     return row
 
 
+def builder_fingerprint():
+    """sha256 of THIS file's bytes — the pin between artifact and builder (H4386).
+
+    Nothing used to prove `src/data/dhatup_palsule.json` came from the committed
+    builder: the selftest reads only the JSON and `dhatup_h4349_verify.py` reads the
+    JSON plus the corpora, so an artifact could be edited by hand, or left stale beside
+    a changed builder, and every harness stayed green. H4349's independent verifier had
+    to rebuild by hand to establish that the two agreed. Stamping the digest into
+    `_stats` makes that check mechanical and corpus-free: change the builder without
+    rebuilding, and `ls_enrichment_selftest.py` fails.
+
+    The digest is over the SOURCE, not the output, so it says "this artifact was
+    written by this code", not "this artifact is what this code would produce today
+    from today's corpora" — a corpus change still moves the numbers, which is what the
+    counts in `_stats` and the corpus-backed checks in `dhatup_h4349_verify.py` are
+    for. No circularity: the digest is never written into the file it hashes.
+    """
+    with open(os.path.abspath(__file__), 'rb') as f:
+        return hashlib.sha256(f.read()).hexdigest()
+
+
 def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     palsule, xls_rows, typo_folds = read_palsule(xls)
     coords, entries = read_pwg_coords(pwg)
@@ -1229,6 +1276,9 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
 
     stats = {
         'built': date.today().strftime('%d-%m-%Y'),
+        # H4386. Pins this artifact to the builder that wrote it; verified without the
+        # corpora by ls_enrichment_selftest.py.
+        'builder_sha256': builder_fingerprint(),
         'source_xls': os.path.basename(xls),
         'source_pwg': os.path.relpath(pwg, GH),
         'xls_artha_rows': xls_rows,

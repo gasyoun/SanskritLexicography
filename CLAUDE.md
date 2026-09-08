@@ -169,9 +169,14 @@ Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
   corpora **without importing the builder**; exits **2** when csl-orig is
   absent — a green run with zero checks was a real defect) **and**
   `ls_enrichment_selftest.py` in the same PR, and passes `same_book_conflicted`
-  + `pwg_cited` to the new pass — they are opt-in kwargs with permissive
-  defaults, and forgetting them is exactly how the first cut shipped two wrong
-  rows.
+  + `pwg_cited` to the new pass. **Since H4386 both are keyword-only with no
+  default** — forgetting one is a `TypeError`, not an unscreened pass, which is
+  exactly how the first cut shipped two wrong rows — and an empty `pwg_cited`
+  raises rather than admitting everything. **The artifact is pinned to its
+  builder:** `_stats.builder_sha256` carries the sha256 of
+  `build_dhatup_palsule.py`, so a builder change without a rebuild fails the
+  selftest; rebuild and commit the JSON in the same PR
+  (`python src/build_dhatup_palsule.py --xls <the gitignored Palsule XLS>`).
 - **`<ab>`/`<ls>` tooltips + RU-column purity** (grammatical abbreviations
   stay Latin with a tooltip, editorial ones translate to Russian):
   [`ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md).
