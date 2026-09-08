@@ -731,7 +731,7 @@ same-author source as an independent one.**
    `set(table) ⊆ cited` directly — it could not see this before, because it derived the ceilings
    from `cited` and then tested only against the ceilings.
 
-A third, latent defect was reported in the same pass and is now closed: **pw uses the
+A third, latent defect was reported in the same pass and is now guarded — though the guard is **order-shadowed and refuses nothing as shipped**, which the first version of this section did not say. `pw_refused_variant_reading` is `0`, and a second independent verifier proved the guard inert by deleting it and getting a byte-identical artifact. The reason is screen order: pw has exactly one such citation, `31,32`, and PWG cites that coordinate for three claimants (`plI` pwg:254914, `lvI` pwg:420914, `vlI` pwg:470515), so the same-book screen refuses it first. Removing the same-book screen makes the variant-reading guard fire. It is kept as a **standing** guard, not a live one: the construction is real in pw and the next sibling pass need not be same-book conflicted. **pw uses the
 variant-reading construction at a `DHĀTUP.` citation** — `*√{#plI#}¦, {#plinAti#} ({#gatO#}).
 <ls>DHĀTUP. 31,32</ls>, <ab>v. l.</ab>` (pw:309560) — and the pass had no equivalent of H4339's
 MW guard. In the Böhtlingk family the note follows the citation and marks the *article's own
