@@ -180,6 +180,6 @@ What this analysis is *for*:
 
 ---
 
-*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented (≈11,535 carry an accent counting all variants). Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5; §7 compares accent position against the accented `<k2>` of GRA and MW.*
+*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented (**4,697** normalised keys carry an accent counting all variants — the earlier ≈11,535 was the phantom count from the pre-H4353 key, which read the acute of `ś` as an udātta). Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5; §7 compares accent position against the accented `<k2>` of GRA and MW.*
 
 _Dr. Mārcis Gasūns_
