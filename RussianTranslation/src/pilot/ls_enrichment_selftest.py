@@ -411,6 +411,211 @@ def test_dhatup_pwg_dotted_class_is_measured_and_empty():
         fail('the pwg-dotted siglum must be registered so a future row renders marked')
 
 
+def test_dhatup_sibling_screens_are_mandatory_not_opt_in():
+    """H4386: a sibling pass constructed without the screens RAISES rather than ships.
+
+    Both screens used to be keyword arguments defaulting to `frozenset()`, and the
+    membership screen was written `if pwg_cited and coord not in pwg_cited`, so
+    forgetting either one produced a silently UNSCREENED pass — which is not a
+    hypothetical failure mode but the one H4349 actually shipped in PR #2148, where
+    `same_book_conflicted` reached the `pwg-dotted` call and not the `pw` call and
+    `32,56 → cukk` went into the artifact against both pwg and mw.
+
+    Three things are pinned, because each is a different way back to the permissive
+    state: omitting a screen is a TypeError (keyword-only and defaultless); passing the
+    OLD default explicitly is a ValueError for `pwg_cited`, whose empty set used to
+    mean "screen off" rather than "screen against nothing"; and a non-set
+    `same_book_conflicted` is a TypeError rather than a silently non-membership-testing
+    object. No corpora and no artifact are needed — this is a signature contract."""
+    import build_dhatup_palsule as bld   # noqa: E402
+    import inspect
+
+    sig = inspect.signature(bld._sibling_pass)
+    for name in ('same_book_conflicted', 'pwg_cited'):
+        p = sig.parameters[name]
+        if p.default is not inspect.Parameter.empty:
+            fail('_sibling_pass.%s has default %r — a caller that forgets it gets an '
+                 'unscreened pass, which is how 32,56 shipped' % (name, p.default))
+        if p.kind is not inspect.Parameter.KEYWORD_ONLY:
+            fail('_sibling_pass.%s must be keyword-only so it cannot be supplied by '
+                 'position and mistaken for the other screen' % name)
+
+    args = ('pw', {'1,1': {}}, 1, 'pw.txt', {}, {}, {}, {1: 1})
+    try:
+        bld._sibling_pass(*args)
+    except TypeError:
+        pass
+    else:
+        fail('_sibling_pass ran with no screens at all')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset())
+    except TypeError:
+        pass
+    else:
+        fail('_sibling_pass ran without pwg_cited')
+    try:
+        bld._sibling_pass(*args, pwg_cited=frozenset({'1,1'}))
+    except TypeError:
+        pass
+    else:
+        fail('_sibling_pass ran without same_book_conflicted')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset(),
+                          pwg_cited=frozenset())
+    except ValueError:
+        pass
+    else:
+        fail('an EMPTY pwg_cited was accepted — that is the old permissive path under '
+             'a new name: every coordinate admitted, including ones outside the '
+             'denominator match_rate divides by')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=None,
+                          pwg_cited=frozenset({'1,1'}))
+    except TypeError:
+        pass
+    else:
+        fail('same_book_conflicted=None was accepted as a screen')
+
+    # THE TWO ROUTES AN ADVERSARIAL VERIFIER FOUND STILL OPEN after the first H4386 cut,
+    # and the reason they matter more than the signature: the shipped H4349 defect was
+    # never a MISSING argument. It was a CALL SITE passing the permissive value — the
+    # same-book screen reached the `pwg-dotted` call and not the `pw` one — and a
+    # defaultless signature cannot see that.
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset(),
+                          pwg_cited=frozenset({'1,1'}))
+    except ValueError:
+        pass
+    else:
+        fail('an EMPTY same_book_conflicted was accepted. The first cut checked '
+             'pwg_cited only, and a verifier rebuilt with this exact call and shipped '
+             '32,56 → cukk — the H4349 defect reproduced against the hardened code')
+
+    class _AlwaysContains(object):
+        def __contains__(self, item):
+            return True
+
+        def __bool__(self):
+            return True
+
+    for bogus in (_AlwaysContains(), ['1,1'], {'1,1': True}):
+        try:
+            bld._sibling_pass(*args, same_book_conflicted=frozenset({'9,9'}),
+                              pwg_cited=bogus)
+        except TypeError:
+            continue
+        fail('pwg_cited=%r was accepted: `if not pwg_cited` is a truthiness test, not a '
+             'screening-space test, so an always-contains object screens nothing while '
+             'looking non-empty' % type(bogus).__name__)
+
+    # The one sanctioned exemption is named, so it is greppable at every call site.
+    if not isinstance(bld.NO_SAME_BOOK_CONFLICTS, frozenset):
+        fail('NO_SAME_BOOK_CONFLICTS must be a frozenset the screen logic can use')
+    if bld.NO_SAME_BOOK_CONFLICTS:
+        fail('NO_SAME_BOOK_CONFLICTS must be empty — it is an exemption, not a set')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=bld.NO_SAME_BOOK_CONFLICTS,
+                          pwg_cited=frozenset({'1,1'}))
+    except ValueError:
+        fail('the named exemption must be accepted where a bare frozenset() is not — '
+             'otherwise a different-author source has no way to say so')
+    except TypeError:
+        fail('the named exemption tripped the type check')
+
+
+def test_dhatup_artifact_is_pinned_to_its_builder():
+    """H4386: a stale artifact committed beside a changed builder fails here.
+
+    Nothing used to connect `src/data/dhatup_palsule.json` to the code that wrote it.
+    This selftest reads only the JSON and `dhatup_h4349_verify.py` reads the JSON plus
+    the corpora; neither rebuilds, so a hand-edited or stale artifact stayed green and
+    H4349's verifier had to rebuild manually to establish that the two agreed. The
+    builder now stamps the sha256 of its own source into `_stats.builder_sha256`, and
+    this recomputes it from the committed file — corpus-free, so it runs everywhere CI
+    does.
+
+    What it does NOT claim: that the artifact is what the builder would produce from
+    today's corpora. It says the artifact came from THIS code. A corpus change moves
+    the counts, and that is what the corpus-backed checks in `dhatup_h4349_verify.py`
+    are for. Failing here means: rebuild (`python src/build_dhatup_palsule.py`) and
+    commit the artifact together with the builder change."""
+    import hashlib
+    if not dhp.available():
+        print('  .. skipped test_dhatup_artifact_is_pinned_to_its_builder')
+        return
+    builder = os.path.join(SRC, 'build_dhatup_palsule.py')
+    if not os.path.exists(builder):
+        fail('the builder is missing at %s — the artifact has nothing to be pinned to'
+             % builder)
+    with open(builder, 'rb') as f:
+        digest = hashlib.sha256(f.read()).hexdigest()
+    stamped = dhp.stats().get('builder_sha256')
+    if not stamped:
+        fail('_stats.builder_sha256 is absent: the artifact predates the H4386 pin, '
+             'so nothing proves which code wrote it. Rebuild.')
+    if stamped != digest:
+        fail('the artifact was built by a DIFFERENT build_dhatup_palsule.py '
+             '(stamped %s…, committed file %s…). Rebuild and commit both together, or '
+             'the JSON is stale.' % (stamped[:12], digest[:12]))
+
+
+def test_dhatup_pw_refusal_split_matches_the_published_table():
+    """H4386: all six published pw refusal terms and their sum are pinned.
+
+    `ABBREVIATIONS_RU.md` publishes pw's 40 citations as 12 nominal-head / 4 body-only
+    / 11 same-book-conflicted / 3 not-cited-by-PWG / 2 out-of-coordinate-space / 8
+    surviving every screen. Only two of those six were asserted anywhere, so the doc
+    could drift from `_stats` in silence — and an earlier version of that table summed
+    to 42 against its own header of 40, which is exactly the drift this catches.
+
+    The sum is asserted as a PARTITION, not as an accident of six numbers: every one of
+    pw's cited coordinates leaves the screen chain through exactly one bucket, so the
+    eight buckets (the six published ones plus the two that are empty today,
+    multiple-claimants and variant-reading) must add to `pw_coords_cited`. A future
+    screen that forgets to count its refusals fails here even if every published number
+    still looks right."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_pw_refusal_split_matches_the_published_table')
+        return
+    st = dhp.stats()
+    published = {
+        'pw_refused_nominal_head': 12,
+        'pw_refused_body_only': 4,
+        'pw_refused_same_book_conflict': 11,
+        'pw_refused_not_cited_by_pwg': 3,
+        'pw_refused_out_of_coordinate_space': 2,
+        'pw_coords_single_verbal_claimant': 8,
+    }
+    for key, want in sorted(published.items()):
+        if st.get(key) != want:
+            fail('%s is %r, ABBREVIATIONS_RU.md publishes %d — one of the two is now '
+                 'wrong; re-adjudicate before changing either' % (key, st.get(key), want))
+    if sum(published.values()) != 40:
+        fail('the published split no longer sums to 40: %r' % published)
+    if st.get('pw_coords_cited') != 40:
+        fail('pw now cites %r coordinates, not the published 40' % st.get('pw_coords_cited'))
+    buckets = dict(published)
+    buckets['pw_refused_multiple_claimants'] = st.get('pw_refused_multiple_claimants')
+    buckets['pw_refused_variant_reading'] = st.get('pw_refused_variant_reading')
+    total = sum(v for v in buckets.values() if isinstance(v, int))
+    if total != st.get('pw_coords_cited'):
+        fail('the screen chain is not a partition: buckets %r sum to %d, pw cites %r'
+             % (buckets, total, st.get('pw_coords_cited')))
+    # The 8 survivors ship nothing, and the reason is itemised rather than netted:
+    # 7 coordinates the table already holds, 1 whose root Palsule does not gloss.
+    if st.get('coords_filled_from_pw') != 0:
+        fail('pw now fills %r coordinates; the published table says 0 shipped'
+             % st.get('coords_filled_from_pw'))
+    if st.get('pw_candidates_without_palsule_row') != 1:
+        fail('pw survivors without a Palsule row moved: %r (was 1)'
+             % st.get('pw_candidates_without_palsule_row'))
+    already = (published['pw_coords_single_verbal_claimant']
+               - st.get('pw_candidates_without_palsule_row', 0)
+               - st.get('coords_filled_from_pw', 0))
+    if already != 7:
+        fail('survivors already in the table: %d, published reasoning says 7' % already)
+
+
 def test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349():
     """H4349: the two shipped baselines stay derivable FROM the artifact.
 
@@ -578,6 +783,9 @@ def main():
         test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg,
         test_dhatup_pwg_dotted_class_is_measured_and_empty,
         test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349,
+        test_dhatup_sibling_screens_are_mandatory_not_opt_in,
+        test_dhatup_artifact_is_pinned_to_its_builder,
+        test_dhatup_pw_refusal_split_matches_the_published_table,
     ]
     for t in tests:
         t()

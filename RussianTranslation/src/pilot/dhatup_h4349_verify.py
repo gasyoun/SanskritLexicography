@@ -6,6 +6,8 @@ without importing the builder — so a bug in the builder's own bookkeeping cann
 this pass. Deliberately re-counts the denominator (PWG's cited coordinates) with a
 freshly written regex rather than reusing the module's.
 """
+import ast
+import hashlib
 import json
 import re
 import sys
@@ -127,6 +129,123 @@ check('pw contains the Böhtlingk v. l. construction at a DHĀTUP citation (the 
       'is standing, not live — it refuses 0 today)',
       any('DHĀTUP. 31,32<' in l and 'v. l.' in l
           for l in open(PW, encoding='utf-8').read().splitlines()))
+
+# --- H4386: the artifact is pinned to the builder that wrote it -------------------
+# Re-derived here as well as in ls_enrichment_selftest.py, because the two harnesses
+# fail for different callers: the selftest runs corpus-free in CI, this one runs where
+# the corpora are and is the file a reviewer runs by hand.
+BUILDER = os.path.join(SRC, 'build_dhatup_palsule.py')
+_digest = hashlib.sha256(open(BUILDER, 'rb').read()).hexdigest()
+check('artifact is stamped with the sha256 of the builder that wrote it',
+      st.get('builder_sha256') == _digest,
+      'stamped %s… committed %s…' % (str(st.get('builder_sha256'))[:12], _digest[:12]))
+
+# --- H4386: the two sibling screens are mandatory, read off the builder's source ---
+# This file's whole premise is that a bug in the builder's own bookkeeping must not be
+# able to make it pass, and that applies to the builder's SIGNATURE as much as to its
+# counts — a screen that silently defaults is a bookkeeping bug with a wider blast
+# radius than a miscount.
+# Parsed with `ast`, not grepped: the builder DOCUMENTS the permissive shapes it used
+# to have, at length and deliberately, so a substring search cannot tell the warning
+# from the thing it warns about — it would force the code to stay undocumented to stay
+# green. `ast` sees the syntax tree, and still never imports or executes the builder.
+_tree = ast.parse(open(BUILDER, encoding='utf-8').read())
+_fn = next((n for n in ast.walk(_tree)
+            if isinstance(n, ast.FunctionDef) and n.name == '_sibling_pass'), None)
+check('_sibling_pass exists to be checked', _fn is not None)
+if _fn is not None:
+    _kwonly = [a.arg for a in _fn.args.kwonlyargs]
+    _defaults = {a.arg: d for a, d in zip(_fn.args.kwonlyargs, _fn.args.kw_defaults)}
+    _positional = [a.arg for a in _fn.args.args]
+    check('both screens are keyword-only',
+          {'same_book_conflicted', 'pwg_cited'} <= set(_kwonly),
+          'kwonly=%r positional=%r' % (_kwonly, _positional))
+    check('neither screen has a default — omitting one is a TypeError, not an '
+          'unscreened pass',
+          all(_defaults.get(k) is None for k in ('same_book_conflicted', 'pwg_cited')),
+          repr({k: ast.dump(v) for k, v in _defaults.items() if v is not None}))
+    # The membership screen must be a plain `coord not in pwg_cited`, never
+    # `pwg_cited and coord not in pwg_cited` — that conjunction is what made an empty
+    # set mean "screen off" instead of "screen against nothing".
+    _guarded = [n for n in ast.walk(_fn)
+                if isinstance(n, ast.If) and isinstance(n.test, ast.BoolOp)
+                and any(isinstance(v, ast.Name) and v.id == 'pwg_cited'
+                        for v in n.test.values)]
+    check('the membership screen is unconditional, not `if pwg_cited and …`',
+          not _guarded, '%d conjunction-guarded screens' % len(_guarded))
+    # And the empty set — the old default, now reachable only by passing it — is
+    # refused at entry rather than honoured as a screen. Checked below as a loop over
+    # BOTH screen names, which is what the first cut got wrong: it refused an empty
+    # `pwg_cited` and let an empty `same_book_conflicted` through, and the same-book
+    # side is the one that shipped 32,56.
+
+# THE CALL SITES, not just the signature — an adversarial verifier's refutation of the
+# first H4386 cut. The shipped H4349 defect was never a missing argument; it was a call
+# site passing the permissive value, and a signature check cannot see that. Every call
+# to `_sibling_pass` must name both screens, and neither may be an empty literal.
+_calls = [n for n in ast.walk(_tree) if isinstance(n, ast.Call)
+          and isinstance(n.func, ast.Name) and n.func.id == '_sibling_pass']
+check('every _sibling_pass call site names both screens',
+      all({'same_book_conflicted', 'pwg_cited'} <= {k.arg for k in c.keywords if k.arg}
+          for c in _calls),
+      '%d call sites' % len(_calls))
+
+
+def _is_empty_literal(node):
+    """`frozenset()` / `set()` with no arguments — the shape that shipped 32,56."""
+    return (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+            and node.func.id in ('frozenset', 'set')
+            and not node.args and not node.keywords)
+
+
+_empty_at_call = [(c.lineno, k.arg) for c in _calls for k in c.keywords
+                  if k.arg in ('same_book_conflicted', 'pwg_cited')
+                  and _is_empty_literal(k.value)]
+check('no call site passes an empty screen literal', not _empty_at_call,
+      repr(_empty_at_call))
+# And the empty/type refusal must cover BOTH screens. The first cut checked `pwg_cited`
+# alone, so `same_book_conflicted=frozenset()` still shipped 32,56 → cukk against the
+# hardened code — the same defect, one screen over. Found structurally: the validation
+# must be a loop over both screen names whose body raises.
+if _fn is not None:
+    _validating = [n for n in ast.walk(_fn) if isinstance(n, ast.For)
+                   and any(isinstance(b, ast.Raise) for b in ast.walk(n))]
+    _covered = set()
+    for _loop in _validating:
+        for _c in ast.walk(_loop.iter):
+            if isinstance(_c, ast.Constant) and _c.value in ('same_book_conflicted',
+                                                             'pwg_cited'):
+                _covered.add(_c.value)
+    check('the screen validation covers BOTH screens, not pwg_cited alone',
+          _covered == {'same_book_conflicted', 'pwg_cited'},
+          'covered %r — the H4349 defect was on the same-book side' % sorted(_covered))
+
+# --- H4386: pw's published refusal split is a partition of its 40 citations --------
+# The six terms ABBREVIATIONS_RU.md publishes, plus the two empty buckets, must add to
+# the coordinate count re-counted from pw.txt with the pattern written at the top of
+# this file — so the doc cannot drift from _stats, and _stats cannot drift from pw.
+pw_cited = set()
+with open(PW, encoding='utf-8') as f:
+    for line in f:
+        for rx in (CITE, CONT):
+            for m in rx.finditer(line):
+                pw_cited.add('%s,%s' % (m.group(1), m.group(2)))
+check('pw cites %d coordinates, re-counted from the corpus' % len(pw_cited),
+      len(pw_cited) == st['pw_coords_cited'] == 40,
+      '_stats says %d' % st['pw_coords_cited'])
+_split = {'pw_refused_nominal_head': 12, 'pw_refused_body_only': 4,
+          'pw_refused_same_book_conflict': 11, 'pw_refused_not_cited_by_pwg': 3,
+          'pw_refused_out_of_coordinate_space': 2,
+          'pw_coords_single_verbal_claimant': 8}
+check('all six published pw refusal terms hold',
+      all(st.get(k) == v for k, v in _split.items()),
+      repr({k: st.get(k) for k, v in _split.items() if st.get(k) != v}))
+_buckets = sum(st.get(k, 0) for k in list(_split)
+               + ['pw_refused_multiple_claimants', 'pw_refused_variant_reading'])
+check('the screen chain partitions all 40 citations', _buckets == len(pw_cited),
+      'buckets sum to %d' % _buckets)
+check('the published sum is the header it is printed under',
+      sum(_split.values()) == 40)
 
 print()
 print('coverage %d/%d = %s%%  ·  per-source %s'

@@ -696,8 +696,19 @@ candidates: **same author is not a second witness.**
 | a coordinate PWG's own multi-claimant filter refused — refused | 11 |
 | a coordinate PWG never cites — refused | 3 |
 | outside the attested coordinate space — refused | 2 |
-| survives every screen, but the table already has the coordinate | 8 |
+| survives every screen — 7 the table already holds, 1 whose root Palsule does not gloss | 8 |
 | **shipped** | **0** |
+
+All six terms and their sum are asserted since H4386, in `ls_enrichment_selftest.py`
+(`test_dhatup_pw_refusal_split_matches_the_published_table`) and again in
+`dhatup_h4349_verify.py` against a count of pw's citations re-read from the corpus. Before that
+only two of the six were pinned anywhere, so this table could drift from `_stats` in silence —
+and an earlier version of it summed to 42 against its own header of 40. The sum is asserted as a
+**partition**: every cited coordinate leaves the screen chain through exactly one bucket, so the
+six above plus the two empty ones (`pw_refused_multiple_claimants`,
+`pw_refused_variant_reading`) must add to `pw_coords_cited`. The last row's split (7 + 1) is
+`pw_coords_overlapping_shipped` and `pw_candidates_without_palsule_row`; the earlier wording,
+"the table already has the coordinate", was true of 7 of the 8, not 8.
 
 **The `<lex>` test alone was not enough.** PWG discriminates a noun article by the *presence* of
 a `<lex>` tag; pw abridges and often omits it. `{#DAnya#}¦ (von {#Dana#}) {%das Reichsein%}
@@ -731,7 +742,7 @@ same-author source as an independent one.**
    `set(table) ⊆ cited` directly — it could not see this before, because it derived the ceilings
    from `cited` and then tested only against the ceilings.
 
-A third, latent defect was reported in the same pass and is now guarded — though the guard is **order-shadowed and refuses nothing as shipped**, which the first version of this section did not say. `pw_refused_variant_reading` is `0`, and a second independent verifier proved the guard inert by deleting it and getting a byte-identical artifact. The reason is screen order: pw has exactly one such citation, `31,32`, and PWG cites that coordinate for three claimants (`plI` pwg:254914, `lvI` pwg:420914, `vlI` pwg:470515), so the same-book screen refuses it first. Removing the same-book screen makes the variant-reading guard fire. It is kept as a **standing** guard, not a live one: the construction is real in pw and the next sibling pass need not be same-book conflicted. **pw uses the
+A third, latent defect was reported in the same pass and is now guarded — though the guard is **order-shadowed and refuses nothing as shipped**, which the first version of this section did not say. `pw_refused_variant_reading` is `0`, and a second independent verifier proved the guard inert by deleting it and getting a byte-identical artifact. The reason is screen order: pw has exactly one such citation, `31,32`, and PWG cites that coordinate for three claimants (`plI` pwg:254914, `lvI` pwg:420914, `vlI` pwg:470515), so the same-book screen refuses it first. Removing the same-book screen makes the variant-reading guard's COUNTER fire (`pw_refused_variant_reading` 0 → 1) — but not the artifact: an adversarial verifier rebuilt with the same-book screen off, and with both it and the variant guard off, and got the same 1466-row table either way (H4386, 08-09-2026). So the guard changes no shipped row even un-shadowed, and the earlier wording here, which said only that it "fires", read as more than that. It is kept as a **standing** guard, not a live one: the construction is real in pw and the next sibling pass need not be same-book conflicted. **pw uses the
 variant-reading construction at a `DHĀTUP.` citation** — `*√{#plI#}¦, {#plinAti#} ({#gatO#}).
 <ls>DHĀTUP. 31,32</ls>, <ab>v. l.</ab>` (pw:309560) — and the pass had no equivalent of H4339's
 MW guard. In the Böhtlingk family the note follows the citation and marks the *article's own
@@ -780,9 +791,121 @@ that a pw claim is not obviously the better reading even where PWG is silent.
   citation is explicitly a variant reading, and if H1333's own pass applied the guard added here,
   `32,56` would resolve cleanly to `cakk`. Applying it there would move the shipped H1333
   baseline, which H4349 is not permitted to do — so it is recorded as a candidate for a future
-  handoff rather than smuggled in.
+  handoff rather than smuggled in. **Adjudicated 08-09-2026 (H4386): measured, and declined.
+  See below.**
+
+#### `32,56` adjudicated — the cure is worse than the residue (H4386, 08-09-2026)
+
+H4349 left `32,56` open because it was forbidden to move H1333's baseline. H4386 was permitted
+to decide it, and did — by building the counterfactual rather than reasoning about it. **The
+verdict is: do not apply H4349's variant-reading guard to H1333's own PWG pass.** The diagnosis
+was right and the remedy is wrong, and the numbers say so.
+
+Counterfactual A — the guard as written for the sibling passes, applied to PWG's own claimants
+(drop any head-line claimant whose citation is followed by `<ab>v. l.</ab>`, then resolve as
+H1333 does). 331 of PWG's head-line claimants carry that note, and **241 of 1751 coordinates
+move**:
+
+| what happens to the coordinate | n |
+|---|--:|
+| newly resolved — the tie was a `v. l.` against a plain claimant | 93 |
+| **lost entirely — the sole claimant carried the note** | **130** |
+| reattributed to a different root | 18 |
+
+The 130 are decisive. In the sibling passes the guard only ever refuses a *fill*, so its worst
+case is a coordinate left empty; run against PWG itself it **deletes attributions for which PWG
+is the only witness** (`2,15 mud`, `3,12 khād`, `5,35 valg`, `7,40 vraj` …). A note that marks a
+headword as a variant reading in a same-author *sibling* is not the same speech act as the same
+note inside the article that Böhtlingk numbers — and 130 deletions is what the difference costs.
+
+Counterfactual B — the narrow reading, `v. l.` as a tie-breaker among multi-claimant coordinates
+only, never erasing a sole claimant: **0 lost, 93 gained, 18 still reattributed**, and `32,56`
+does resolve to `cakk`. But **all 18 reattributions hand the coordinate to a claimant that is
+not a verbal head line** — 8 to an article the builder's own `<lex>` head-line test flags as
+nominal, and the other 10 to an article that never cites the coordinate on its head line at all
+and merely quotes it in the body (`19,2 vyath → saṃcalana`, `23,40 vad → vyakta`,
+`28,1 tud → vyathana`, `31,1 krī → vinimaya`, `32,119 mlakṣ → mlecchana`) — because dropping the
+verbal claimant lets the artha-noun article win by default. That is the `pad`/3,1 defect class in
+a new place, and it means the narrow variant is not a screen ordering away from correct:
+"verbal beats nominal" would have to run *before* the tie-break, and then be re-verified.
+
+> An earlier draft of this paragraph said "12 of the 18 hand the coordinate to a nominal
+> claimant". An adversarial verifier could not reproduce 12 under any mechanical definition —
+> it got 8 by the `<lex>` flag and 17 by "no `√` on the head line" — and it was right: 12 was a
+> hand-count of names that read like artha-nouns, not a derived number. The 8 + 10 = 18 split
+> above is mechanical and re-derivable. Publishing a number nobody can re-derive is the exact
+> defect class this handoff exists to close, so the correction is recorded rather than
+> overwritten.
+
+The coverage arithmetic, published as required rather than folded into anything: counterfactual B
+would take 1465/1751 (83.7%) to **1496/1751 (85.4%)** — 74 of the 93 gains have a Palsule row, 43
+of those are coordinates the MW pass already fills, leaving **31 net new** — and would **change
+17 attributions already shipped**. That is a re-baseline of H1333 and H4339 together, with 17 rows
+whose provenance flips, not a residue fix.
+
+**Decision: `32,56` stays dropped, the guard stays out of the PWG pass, and coverage stays
+1465/1751.** The re-baseline is real work with a real yield and it is somebody's next handoff,
+with the ordering question (verbal-beats-nominal before the `v. l.` tie-break) as its first
+task; it is not a screen-hardening pass's business to move a shipped baseline by 31 rows and flip
+17 more on the way past. Re-derive both counterfactuals from the corpus by re-reading
+`read_pwg_coords` with a fourth slot for `_BOEHTLINGK_VL` matches after the citation — the
+measurement is 20 seconds of work and no part of it is stored, deliberately: a number nobody can
+re-derive is a number nobody should trust.
 - **The `√` marker is pw's convention**, not a law; a dictionary that marks roots differently
   needs its own test rather than this one reused.
+
+#### Two hardenings that carry the screens forward (H4386, 08-09-2026)
+
+**The screens are mandatory.** `_sibling_pass`'s `same_book_conflicted` and `pwg_cited` were
+keyword arguments defaulting to `frozenset()`, and the membership test read
+`if pwg_cited and coord not in …`, so a pass that simply forgot one was silently *unscreened* —
+which is not a hypothetical: it is how the first cut shipped `32,56 → cukk`, passing the
+same-book screen to the `pwg-dotted` call and not to the `pw` one. Both are now keyword-only with
+no default (omitting one is a `TypeError` at the call site), the membership test is
+unconditional, and an empty `pwg_cited` — the old default reached by hand — raises, because the
+set being screened against is also the denominator `match_rate` divides by. `dhatup_h4349_verify.py`
+asserts all of this off the builder's **syntax tree**, without importing it.
+
+**What an independent verifier found, including where it refuted the first cut.** H4386's
+verifier rebuilt the artifact four times with one screen disabled each, and the result is not
+the clean four-for-four the handoff's acceptance line assumed:
+
+| screen disabled | effect on the shipped table |
+|---|---|
+| same-book conflict | **1466 (+1)** — `32,56 → cukk` ships, `source=pw` |
+| `pwg_cited` membership | **1466 (+1)** — `33,67 → tras` ships, `source=pw` |
+| coordinate ceiling | **no change** — `1,840` / `1,960` move bucket, table identical |
+| variant reading | **no change at all** — table identical, `_stats` diff empty |
+
+Two of the four are load-bearing on the output; the ceiling screen is order-shadowed by the
+membership screen and changes only which bucket two malformed citations are *reported* in (the
+builder's own comment says so, and calls it a reporting decision); the variant guard refuses
+nothing as shipped and moves no row even when un-shadowed. That is recorded rather than
+smoothed over: a screen kept for a reason other than its current yield is fine, a screen
+*claimed* to be load-bearing when it is not is the drift this handoff exists to stop.
+
+**And the first cut of the mandatory-screen change was itself refuted.** Making the parameters
+defaultless fixes the *signature*, and the shipped H4349 defect was never a missing argument —
+it was a **call site** passing the permissive value. The verifier rebuilt against the hardened
+code with `same_book_conflicted=frozenset()` at the call site and shipped `32,56 → cukk` again;
+a `pwg_cited` that is merely truthy and always-contains (a list, a dict, a four-line
+`__contains__` class) passed `if not pwg_cited` and screened nothing, shipping both bad rows.
+Both are closed now: each screen must be a real `set`/`frozenset` **and** non-empty, the one
+legitimate exemption is the named `NO_SAME_BOOK_CONFLICTS` sentinel so it is greppable at every
+call site rather than indistinguishable from the mistake, and `dhatup_h4349_verify.py` now
+checks the **call sites** as well as the signature — every call names both screens, none passes
+an empty literal, and the validation covers both names rather than `pwg_cited` alone.
+
+**The artifact is pinned to its builder.** Nothing used to prove `src/data/dhatup_palsule.json`
+came from the committed `build_dhatup_palsule.py`: one harness reads the JSON, the other the JSON
+plus the corpora, and neither rebuilds, so a stale or hand-edited artifact stayed green — H4349's
+verifier had to rebuild by hand to establish the two agreed. `_stats.builder_sha256` now carries
+the sha256 of the builder's own source, checked corpus-free in `ls_enrichment_selftest.py` and
+again in the standalone verifier. **Change the builder without rebuilding and CI fails.** The pin
+says "this artifact was written by this code", not "this is what the code would produce from
+today's corpora" — that second question is what the corpus-backed checks are for. On landing,
+the rebuilt artifact was byte-identical to the shipped one but for the new key: same 1465 rows,
+same 1226/140/99 split, same disagreement and refusal lists.
 
 **Re-derive:** `python src/build_dhatup_palsule.py` (all `_stats` above);
 `python src/build_dhatup_palsule.py --mw "" --pw "" --no-pwg-dotted` rebuilds the PWG-only H1333
