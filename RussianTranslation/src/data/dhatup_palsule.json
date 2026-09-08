@@ -14,8 +14,8 @@
   "coords_unmatched": 254,
   "coords_linked_pwg": 1226,
   "match_rate_pwg": 70.0,
-  "coords_linked": 1467,
-  "match_rate": 83.8,
+  "coords_linked": 1465,
+  "match_rate": 83.7,
   "coords_linked_without_filters": 1144,
   "match_rate_without_filters": 65.3,
   "mw_available": true,
@@ -56,6 +56,8 @@
   "pwg-dotted_refused_body_only": 0,
   "pwg-dotted_refused_multiple_claimants": 0,
   "pwg-dotted_refused_same_book_conflict": 1,
+  "pwg-dotted_refused_not_cited_by_pwg": 0,
+  "pwg-dotted_refused_variant_reading": 0,
   "pwg-dotted_coords_overlapping_shipped": 0,
   "pwg-dotted_candidates_without_palsule_row": 0,
   "coords_filled_from_pwg-dotted": 0,
@@ -70,15 +72,17 @@
   "pw_source": "csl-orig/v02/pw/pw.txt",
   "pw_articles": 170556,
   "pw_coords_cited": 40,
-  "pw_coords_single_verbal_claimant": 14,
+  "pw_coords_single_verbal_claimant": 8,
   "pw_refused_out_of_coordinate_space": 2,
-  "pw_refused_nominal_head": 19,
-  "pw_refused_body_only": 5,
+  "pw_refused_nominal_head": 12,
+  "pw_refused_body_only": 4,
   "pw_refused_multiple_claimants": 0,
-  "pw_refused_same_book_conflict": 0,
-  "pw_coords_overlapping_shipped": 25,
-  "pw_candidates_without_palsule_row": 4,
-  "coords_filled_from_pw": 2,
+  "pw_refused_same_book_conflict": 11,
+  "pw_refused_not_cited_by_pwg": 3,
+  "pw_refused_variant_reading": 0,
+  "pw_coords_overlapping_shipped": 23,
+  "pw_candidates_without_palsule_row": 1,
+  "coords_filled_from_pw": 0,
   "pw_cross_validated": 8,
   "pw_cross_agree": 1,
   "pw_cross_disagree": 7,
@@ -37076,64 +37080,6 @@
    "mw_root_slp1": "varR",
    "pwg_root_slp1": "varRay",
    "pwg_root_iast": "varṇay"
-  },
-  "32,56": {
-   "root_slp1": "cukk",
-   "root_iast": "cukk",
-   "source": "pw",
-   "palsule_root": "cukk",
-   "pages": [
-    "P167",
-    "P194"
-   ],
-   "pada": [
-    "V",
-    "all (ex. KkV)"
-   ],
-   "arthas": [
-    "artau",
-    "vyathane"
-   ],
-   "artha_count": 2,
-   "pw_root_slp1": "cukk"
-  },
-  "33,67": {
-   "root_slp1": "tras",
-   "root_iast": "tras",
-   "source": "pw",
-   "palsule_root": "tras",
-   "pages": [
-    "P170",
-    "P177",
-    "P181",
-    "P182",
-    "P183",
-    "P187",
-    "P192"
-   ],
-   "pada": [
-    "PKkKt",
-    "Śā",
-    "KṣS",
-    "PKkH",
-    "V",
-    "CHV",
-    "all (ex. KkV; C om.)"
-   ],
-   "arthas": [
-    "udvege",
-    "udvejane",
-    "grahaṇe",
-    "grahe",
-    "dhāraṇe",
-    "dhṛtau",
-    "dhṛtau grahe niṣedhe",
-    "niṣedhe",
-    "bhaye",
-    "vāraṇe"
-   ],
-   "artha_count": 10,
-   "pw_root_slp1": "tras"
   }
  }
 }

@@ -46,24 +46,38 @@ re-attributed: MW assigns them in words this parser does not read, and inventing
 attribution would be the fabrication this pipeline exists to refuse.
 
 DATA HONESTY — COVERAGE AND ACCURACY ARE DIFFERENT NUMBERS.
-  Coverage: 1,467 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.8%) — 1,226
-  (70.0%) attributed by Böhtlingk himself, 239 added by the MW witness above (220 of them
-  backed by MW's structured field, 19 by running prose alone — a weaker class, counted
-  apart as `_stats.coords_filled_from_mw_prose_only`), and 2 added by pw, Böhtlingk's own
-  abridgement (H4349). The remaining 284 are coordinates
-  no dictionary resolves unambiguously, or roots
+  Coverage: 1,465 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.7%) — 1,226
+  (70.0%) attributed by Böhtlingk himself and 239 added by the MW witness above (220 of
+  them backed by MW's structured field, 19 by running prose alone — a weaker class,
+  counted apart as `_stats.coords_filled_from_mw_prose_only`). The remaining 286 are
+  coordinates no dictionary resolves unambiguously, or roots
   absent from Palsule's artha index. Filter `source == 'pwg'` for the H1333 table.
 
-  WHY pw ADDS TWO ROWS AND NOT FORTY (H4349). pw cites 40 `DHĀTUP.` coordinates, but it
-  is an abridgement and it moves its citations: where pwg states a coordinate on the
-  root's own head line, pw very often states it on the head line of the *artha* noun
-  instead (`{#uttrAsana#}¦ <lex>n.</lex> … <ls>DHĀTUP. 9,15</ls>`). Nineteen of the forty
-  are that shape and are refused; five are body quotations; two — `1,840` and `1,960` —
-  name a serial in a gaṇa whose attested serials stop at 1, so they are not points in
-  this coordinate space at all and are refused with their ceiling recorded. Of the
-  fourteen that survive, twelve are coordinates the table already had. The yield is
-  small because the screening is strict, and the refusals are published rather than
-  netted out: see `_stats.pw_refused_*` and `_out_of_coordinate_space`.
+  WHY pw ADDS NOTHING (H4349), and why that is the finding rather than a failure. pw is
+  the *Sanskrit-Wörterbuch in kürzerer Fassung* — Böhtlingk's own abridgement — so it
+  looked like the strongest untapped source after pwg itself. It cites 40 `DHĀTUP.`
+  coordinates and contributes **none**, because the same authorship that makes it strong
+  evidence is what disqualifies almost every candidate:
+    · 12 state the coordinate on the head line of the *artha* noun rather than the root
+      (`{#uttrAsana#}¦ <lex>n.</lex> … <ls>DHĀTUP. 9,15</ls>`) — pw abridges and moves
+      its citations, and it often omits `<lex>` while doing so, which is why the pass
+      turns on Böhtlingk's positive `√` marker instead of on the absence of a tag;
+    · 4 are body quotations, not attributions;
+    · 11 name a coordinate PWG's own multi-claimant filter refused. **A same-author
+      source may not break Böhtlingk's tie by adding one of Böhtlingk's votes** — the
+      first cut of this pass omitted that screen and shipped `32,56 → cukk`, a
+      coordinate pwg splits between `cakk` and a `v. l.` `cikk`, and whose `cukk` pwg
+      places at `34,21`;
+    · 3 name a coordinate pwg never cites at all. Böhtlingk renumbered between editions:
+      pw's `2. √tras, trāsayati (dhāraṇe, grahaṇe, vāraṇe)` at `33,67` is pwg's
+      `2. tras, trāsayati "halten"` at `33,88` — one article, three matching glosses,
+      two serials. The first cut shipped that too, and since `match_rate` divides by the
+      set pwg cites, it counted a row its own denominator excluded;
+    · 2 — `1,840` and `1,960` — name a serial in a gaṇa whose attested serials stop at 1;
+    · of the 8 that survive every screen, all 8 are coordinates the table already had.
+  Every refusal is published rather than netted out (`_stats.pw_refused_*`,
+  `_out_of_coordinate_space`), because a source that yields nothing is only a useful
+  finding if the reasons are inspectable.
   Accuracy: measured, not asserted. Böhtlingk often prints the dhātupāṭha's own artha in
   parentheses beside the citation, which is an independent witness; over the 232
   coordinates where he does, the artha he names is in our record 139 times exactly
