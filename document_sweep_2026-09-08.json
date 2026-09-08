@@ -2,11 +2,11 @@
   "tool": "tools/document_check.py",
   "skill": "/document",
   "legacy_name": "/artifact-propagate",
-  "generated": "2026-09-08 17:40:45",
+  "generated": "2026-09-08 21:46:47",
   "artifacts": [
     {
-      "artifact": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/RussianTranslation/src/pilot/dhatup_h4349_verify.py",
-      "repo": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648",
+      "artifact": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/RussianTranslation/ABBREVIATIONS_RU.md",
+      "repo": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660",
       "kind": "doc",
       "surfaces": [
         {
@@ -14,8 +14,8 @@
           "phase": 1,
           "label": "README.md",
           "scope": "repo",
-          "status": "n/a",
-          "evidence": "README orients headword lists and dictionary codes; a pwg_ru verifier script is not a README-level surface"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/README.md (file exists, no mention of artifact found)"
         },
         {
           "id": "claude_md",
@@ -23,15 +23,15 @@
           "label": "CLAUDE.md",
           "scope": "repo",
           "status": "present",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/CLAUDE.md:167: [`dhatup_h4349_verify.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/dhatup_h4349_verify.py)"
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/CLAUDE.md:182: [`ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md)."
         },
         {
           "id": "cold_start",
           "phase": 1,
           "label": "Cold-start doc (GEMINI.md / equivalent)",
           "scope": "repo",
-          "status": "n/a",
-          "evidence": "AGENTS.md mirrors the public-safe hazard block only; the sync rule went to CLAUDE.md where agents read it"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/AGENTS.md exist, no mention of artifact"
         },
         {
           "id": "sibling_domain_docs",
@@ -39,15 +39,15 @@
           "label": "Sibling domain docs (manual/roadmap/method docs)",
           "scope": "repo",
           "status": "n/a",
-          "evidence": "ABBREVIATIONS_RU.md IS the governing sibling doc (full two-part write-up); LANG_PARITY.md carries the SHARED verdict"
+          "evidence": "ABBREVIATIONS_RU.md IS the governing domain doc for this workstream — it carries the adjudication itself; CLAUDE.md holds the sync rule"
         },
         {
           "id": "metadoc",
           "phase": 1,
           "label": "Metadoc (<name>.meta.md)",
           "scope": "repo",
-          "status": "n/a",
-          "evidence": "the governing doc ABBREVIATIONS_RU.md has a metadoc and got its revision row; a single verifier script does not warrant its own"
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/RussianTranslation/ABBREVIATIONS_RU.meta.md:1: # ABBREVIATIONS_RU.meta.md — metadoc for the PWG `<ab>`/`<ls>` abbreviation policy"
         },
         {
           "id": "changelog",
@@ -55,15 +55,15 @@
           "label": "CHANGELOG.md -> release (/cut-release)",
           "scope": "repo",
           "status": "present",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/CHANGELOG.md:23: - H4349: **the last two untried PWG-family coordinate sources are now measured — one is empty, and saying so is the result.** H4339 left the `DHĀTUP.`→Palsule c"
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/CHANGELOG.md:25: - H4349 (second verifier pass, verdict **pass** with corrections): a second independent adversarial verifier reviewed the merged correction at `d1fa56ad` and re"
         },
         {
           "id": "ai_state",
           "phase": 1,
           "label": ".ai_state.md",
           "scope": "repo",
-          "status": "n/a",
-          "evidence": "completed entry added under the H4349 heading"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/.ai_state.md (file exists, no mention of artifact found)"
         },
         {
           "id": "issues",
@@ -71,31 +71,31 @@
           "label": "Issues (per-person task issues)",
           "scope": "repo",
           "status": "n/a",
-          "evidence": "no tracking issue for H4349; PRs 2148/2149/2150 are the record"
+          "evidence": "no tracking issue names H4386; handoff_close reported none to close"
         },
         {
           "id": "gtd",
           "phase": 2,
           "label": "Uprava/GTD_NEXT_ACTIONS.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "residue is agent work, so it was minted as H4386 rather than written as a GTD row"
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/GTD_NEXT_ACTIONS.md:1633: | agent | trivial | — | `@DO` **Wire `pwg_ab_ru.py census` into the `RussianTranslation gates` CI job** (H3959 sweep residual). A gate with an exit code and no "
         },
         {
           "id": "handoffs_registry",
           "phase": 2,
           "label": "Uprava/handoffs/README.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "H4349 closed and registered; H4386 minted for the residue"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/handoffs/README.md (file exists, no mention of artifact found)"
         },
         {
           "id": "features_index",
           "phase": 2,
           "label": "SanskritLexicography/FEATURES_INDEX.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "L18 row added for the concordance and its screens"
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography/FEATURES_INDEX.md:295: | L16 | PWG `<ab>` abbreviation bucketer (H3959) | The RU-column abbreviation policy as three **explicit, disjoint** sets in [`pwg_ab_ru.py`](https://github.com"
         },
         {
           "id": "kosha_manifest",
@@ -118,8 +118,8 @@
           "phase": 2,
           "label": "Uprava/PROJECT_INTERLINKS.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "no cross-repo edge changed; csl-orig was already a read-only input"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/PROJECT_INTERLINKS.md (file exists, no mention of artifact found)"
         },
         {
           "id": "skills_index",
@@ -142,16 +142,16 @@
           "phase": 2,
           "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "read-only over csl-orig; no destructive path"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/DANGER_FACTS.md, /Users/mac/Documents/GitHub/Uprava/context_facts.yaml exist, no mention found -- destructive-risk fact? supply --reason danger_facts=... if not applicable"
         },
         {
           "id": "questions_log",
           "phase": 2,
           "label": "Uprava/QUESTIONS_LOG.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "answers no logged question and repeats no logged pattern"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/QUESTIONS_LOG.md (file exists, no mention of artifact found)"
         },
         {
           "id": "megabook",
@@ -159,7 +159,7 @@
           "label": "Uprava/MEGABOOK.md",
           "scope": "org",
           "status": "n/a",
-          "evidence": "operational lexicography method, not a thesis refinement"
+          "evidence": "operational hardening of one builder, no thesis refinement"
         },
         {
           "id": "skills_manual_ru",
@@ -174,24 +174,24 @@
           "phase": 2,
           "label": "claude-config HOOKS_INDEX.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "no hook changed; the fail-closed exit is in the verifier script, not enforcement"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/claude-config/HOOKS_INDEX.md (file exists, no mention of artifact found)"
         },
         {
           "id": "repo_status_rollup",
           "phase": 2,
           "label": "Uprava/REPO_STATUS_ROLLUP.md",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "repo section refreshed by the release, not by this artifact"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/REPO_STATUS_ROLLUP.md (file exists, no mention of artifact found)"
         },
         {
           "id": "hub_manifest",
           "phase": 2,
           "label": "Uprava/tools/hub_manifest.json",
           "scope": "org",
-          "status": "n/a",
-          "evidence": "not a long-lived hub or registry"
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/tools/hub_manifest.json (file exists, no mention of artifact found)"
         },
         {
           "id": "auto_derived_views",
@@ -207,7 +207,214 @@
           "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
           "scope": "org",
           "status": "n/a",
-          "evidence": "FINDINGS 636 added: a same-author edition is not a second witness"
+          "evidence": "closed — FINDINGS §637 appended (permissive-call-site defect + the refuted four-screen premise)"
+        }
+      ]
+    },
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/RussianTranslation/src/build_dhatup_palsule.py",
+      "repo": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/README.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/CLAUDE.md:157: [`build_dhatup_palsule.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dhatup_palsule.py)"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/AGENTS.md exist, no mention of artifact"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "ABBREVIATIONS_RU.md IS the governing domain doc for this workstream — it carries the adjudication itself; CLAUDE.md holds the sync rule"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/RussianTranslation/src/build_dhatup_palsule.meta.md (file does not exist)"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/CHANGELOG.md:38: - H1333: `DHĀTUP. x,y` → Palsule wired — H1307's third `<ls>` arm goes from acquisition spec to working enrichment. MG's supplied XLS (Palsule's *artha* index, "
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-h4386-48660/.ai_state.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no tracking issue names H4386; handoff_close reported none to close"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/GTD_NEXT_ACTIONS.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/handoffs/README.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography/FEATURES_INDEX.md:297: | L18 | `DHĀTUP.`→Palsule coordinate concordance + sibling-source screens (H1333/H4339/H4349) | Resolves a `DHĀTUP. x,y` citation to its dhātu, artha glosses an"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/PROJECT_INTERLINKS.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/DANGER_FACTS.md, /Users/mac/Documents/GitHub/Uprava/context_facts.yaml exist, no mention found -- destructive-risk fact? supply --reason danger_facts=... if not applicable"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/QUESTIONS_LOG.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational hardening of one builder, no thesis refinement"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/claude-config/HOOKS_INDEX.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/REPO_STATUS_ROLLUP.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/tools/hub_manifest.json (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "closed — FINDINGS §637 appended (permissive-call-site defect + the refuted four-screen premise)"
         }
       ]
     }
