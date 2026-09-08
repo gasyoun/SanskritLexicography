@@ -152,6 +152,26 @@ Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
   number (source `<h>` starts at 1 — conflating them was #1801). Resolve
   positionally via
   [`pwg_homonym.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_homonym.py); never re-spell the key. FINDINGS §617.
+- **`DHĀTUP.`→Palsule concordance — a same-author source is not an
+  independent witness (H4349):** the concordance in
+  [`build_dhatup_palsule.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dhatup_palsule.py)
+  fills a coordinate from PWG first, then from **sibling passes** that run
+  beside it rather than widening `_L` in place. MW may break a PWG tie — it is
+  a different author, which is the whole coverage argument of H4339. **pw and
+  PWG's dotted-id articles may not**: both are Böhtlingk, so a same-book
+  claimant adds a vote to a tie the multi-claimant filter exists to drop, and
+  may not invent a coordinate PWG never cites (Böhtlingk renumbered between
+  editions — pw's `33,67` is pwg's `33,88`). Both classes are measured and
+  **empty**; that is the result, not a gap. **Sync:** any change to the builder
+  or a new sibling pass re-runs
+  [`dhatup_h4349_verify.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/dhatup_h4349_verify.py)
+  (17 checks, re-derives every published number from the artifact and the raw
+  corpora **without importing the builder**; exits **2** when csl-orig is
+  absent — a green run with zero checks was a real defect) **and**
+  `ls_enrichment_selftest.py` in the same PR, and passes `same_book_conflicted`
+  + `pwg_cited` to the new pass — they are opt-in kwargs with permissive
+  defaults, and forgetting them is exactly how the first cut shipped two wrong
+  rows.
 - **`<ab>`/`<ls>` tooltips + RU-column purity** (grammatical abbreviations
   stay Latin with a tooltip, editorial ones translate to Russian):
   [`ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md).
