@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 08-09-2026_
 
 # HeadwordLists
 
@@ -90,7 +90,7 @@ then **cross-tagged** with Catalan/Huet external attestation
 externally corroborated, ~8 genuine real words — CDSL coverage is essentially complete.
 
 **Accent adjudication (item C):** [`Catalan-Pujol/accent_disagreements.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/accent_disagreements.tsv)
-([`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py)) — the 63 Pujol-vs-Cologne udātta-position disagreements
+([`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py)) — the 76 Pujol-vs-Cologne udātta-position disagreements
 rendered as accented IAST on both sides (`bhagá` vs `bhága`), recommend = Cologne/RV canonical.
 The print list uses the Cologne accents; this is the QA list for the Catalan editors.
 

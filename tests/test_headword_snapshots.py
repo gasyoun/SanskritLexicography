@@ -108,7 +108,7 @@ OTHER_FLOORS = {
     "HeadwordLists/mw_heritage_crosswalk.tsv": 185804,
     "HeadwordLists/Catalan-Pujol/61267-Sanskrit-Catalan-Words-List.txt": 61267,
     "HeadwordLists/Catalan-Pujol/Catalan-uncovered-by-CDSL.txt": 4696,
-    "HeadwordLists/Catalan-Pujol/accent_disagreements.tsv": 64,
+    "HeadwordLists/Catalan-Pujol/accent_disagreements.tsv": 77,
     "HeadwordLists/works_catalogue/acc.jsonl": 49833,
     "HeadwordLists/works_catalogue/ncc.jsonl": 152526,
     "HeadwordLists/works_catalogue/works_crosswalk.tsv": 249803,
