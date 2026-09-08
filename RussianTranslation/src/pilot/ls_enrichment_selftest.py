@@ -302,6 +302,127 @@ def test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg():
                  % (d['coord'], d['shipped_reading'], row['source']))
 
 
+def test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg():
+    """H4349: pw may fill a coordinate the table lacks; it may not restate one.
+
+    pw is Böhtlingk's own abridgement, so its rows are stamped `pw` and kept apart from
+    `pwg` — same-author is not same-statement, and a consumer reconstructing H1333 or
+    H4339 filters on `source`. Four separable claims:
+      1. the coverage totals in `_stats` add up to the table actually shipped, so a
+         reader cannot be told a number the artifact does not contain;
+      2. no `pw` row sits on a coordinate PWG resolved — the pass fills gaps only;
+      3. every `pw` row's root is one Palsule glosses (that is what makes it a row);
+      4. the two out-of-space citations are REFUSED and PUBLISHED with the ceiling they
+         failed. `1,840` and `1,960` are the live cases: PWG and MW cite gaṇa 1 only as
+         `1,1`, so a gaṇa-1 serial of 840 is a citation-split artifact, not a root. A
+         build that quietly shipped or quietly dropped them would fail here."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg')
+        return
+    import json as _json
+    table = dhp._load()
+    st = dhp.stats()
+
+    pw_rows = {c: r for c, r in table.items() if r['source'] == 'pw'}
+    if len(pw_rows) != st.get('coords_filled_from_pw'):
+        fail('pw rows %d != _stats.coords_filled_from_pw %r'
+             % (len(pw_rows), st.get('coords_filled_from_pw')))
+    if st.get('coords_linked') != len(table):
+        fail('_stats.coords_linked %r != table size %d'
+             % (st.get('coords_linked'), len(table)))
+    expected = (st.get('coords_linked_after_mw', 0)
+                + st.get('coords_filled_from_pw', 0)
+                + st.get('coords_filled_from_pwg-dotted', 0))
+    if expected != len(table):
+        fail('H4339 rows + H4349 fills = %d, table has %d' % (expected, len(table)))
+
+    with open(dhp._JSON, encoding='utf-8') as f:
+        payload = _json.load(f)
+    for c, r in pw_rows.items():
+        if r.get('pwg_root_slp1'):
+            fail('%s: a pw row displaced a PWG attribution (%r)'
+                 % (c, r['pwg_root_slp1']))
+        if not r.get('pw_root_slp1') or not r.get('arthas'):
+            fail('%s: pw row missing its provenance root or its Palsule arthas' % c)
+
+    out = payload.get('_out_of_coordinate_space')
+    if not out:
+        fail('_out_of_coordinate_space must be published, not netted out')
+    for x in out:
+        if x['coord'] in table:
+            fail('%s was refused as out-of-space and shipped anyway' % x['coord'])
+        if not x.get('attested_ceiling') or x['serial'] <= x['attested_ceiling']:
+            fail('%s: refused without a ceiling that explains the refusal (%r)'
+                 % (x['coord'], x.get('attested_ceiling')))
+    if {x['coord'] for x in out} != {'1,840', '1,960'}:
+        fail('out-of-space set moved: %r' % sorted(x['coord'] for x in out))
+
+
+def test_dhatup_pwg_dotted_class_is_measured_and_empty():
+    """H4349: PWG's 636 dotted-id articles cite ONE coordinate, and it ships nothing.
+
+    This pins a negative result, which is the only kind of result that rots silently.
+    The `_L` pattern H1333 measured PWG on accepts an all-digit `<L>` id, so 636 of
+    PWG's articles are invisible to it; the widened pass exists to say how much that
+    hides. The answer is one coordinate — `15,89`, claimed by `4. kar` — and PWG
+    already contests it (`<L>18794` heads it `kfv`, and Böhtlingk's own prose there
+    says the root is `kṛv`, placed under `kar`, its final `-v` unjustified). A
+    same-book pass may not break a tie its own book declared, so it is refused.
+
+    If a corpus update ever puts real coordinates into that id space, `coords_cited`
+    moves and this test fails — which is the point. It is not asserting that the class
+    is worthless; it is asserting that today's emptiness is measured, not assumed."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_pwg_dotted_class_is_measured_and_empty')
+        return
+    st = dhp.stats()
+    if st.get('pwg-dotted_articles') != 636:
+        fail('dotted-id article count moved: %r (was 636)'
+             % st.get('pwg-dotted_articles'))
+    if st.get('pwg-dotted_coords_cited') != 1:
+        fail('dotted-id articles now cite %r coordinates, not 1 — re-adjudicate before '
+             'trusting the class' % st.get('pwg-dotted_coords_cited'))
+    if st.get('coords_filled_from_pwg-dotted'):
+        fail('the dotted-id class shipped %r rows; it must ship none until the one '
+             'contested coordinate is adjudicated'
+             % st.get('coords_filled_from_pwg-dotted'))
+    if st.get('pwg-dotted_refused_same_book_conflict') != 1:
+        fail('15,89 must be refused by the same-book guard, not by accident: %r'
+             % st.get('pwg-dotted_refused_same_book_conflict'))
+    if any(r['source'] == 'pwg-dotted' for r in dhp._load().values()):
+        fail('a pwg-dotted row is in the table but _stats says none were filled')
+    if 'pwg-dotted' not in dhp._SOURCE_MARK:
+        fail('the pwg-dotted siglum must be registered so a future row renders marked')
+
+
+def test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349():
+    """H4349: the two shipped baselines stay derivable FROM the artifact.
+
+    Not a rebuild — the selftest has no corpus — but the weaker claim that still
+    catches a silent drift: H1333's 1226 PWG rows and 59.9% artha accuracy, and
+    H4339's 1465-row composition, must still be readable off `_stats` and must still
+    match what the table contains row by row."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349')
+        return
+    table = dhp._load()
+    st = dhp.stats()
+    counts = {}
+    for r in table.values():
+        counts[r['source']] = counts.get(r['source'], 0) + 1
+    if counts.get('pwg') != 1226:
+        fail('H1333 baseline moved: %r PWG rows, not 1226' % counts.get('pwg'))
+    if (st.get('inline_artha_agree'), st.get('inline_artha_examined')) != (139, 232):
+        fail('H1333 artha accuracy moved: %r of %r'
+             % (st.get('inline_artha_agree'), st.get('inline_artha_examined')))
+    if (counts.get('mw'), counts.get('mw-respell')) != (140, 99):
+        fail('H4339 composition moved: mw=%r mw-respell=%r'
+             % (counts.get('mw'), counts.get('mw-respell')))
+    if st.get('coords_linked_after_mw') != 1226 + 140 + 99:
+        fail('_stats.coords_linked_after_mw %r != the 1465 rows H4339 shipped'
+             % st.get('coords_linked_after_mw'))
+
+
 def test_dhatup_mw_tooltip_marks_the_second_witness():
     """H4339: a reader can tell a Böhtlingk attribution from an MW one at a glance.
 
@@ -435,6 +556,9 @@ def main():
         test_dhatup_roman_gana_reading,
         test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim,
         test_dhatup_palsule_wired_into_tooltip,
+        test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg,
+        test_dhatup_pwg_dotted_class_is_measured_and_empty,
+        test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349,
     ]
     for t in tests:
         t()

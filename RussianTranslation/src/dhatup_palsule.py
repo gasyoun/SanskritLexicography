@@ -46,12 +46,24 @@ re-attributed: MW assigns them in words this parser does not read, and inventing
 attribution would be the fabrication this pipeline exists to refuse.
 
 DATA HONESTY — COVERAGE AND ACCURACY ARE DIFFERENT NUMBERS.
-  Coverage: 1,465 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.7%) — 1,226
+  Coverage: 1,467 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.8%) — 1,226
   (70.0%) attributed by Böhtlingk himself, 239 added by the MW witness above (220 of them
   backed by MW's structured field, 19 by running prose alone — a weaker class, counted
-  apart as `_stats.coords_filled_from_mw_prose_only`). The remaining 286 are coordinates
-  neither dictionary resolves unambiguously, or roots
+  apart as `_stats.coords_filled_from_mw_prose_only`), and 2 added by pw, Böhtlingk's own
+  abridgement (H4349). The remaining 284 are coordinates
+  no dictionary resolves unambiguously, or roots
   absent from Palsule's artha index. Filter `source == 'pwg'` for the H1333 table.
+
+  WHY pw ADDS TWO ROWS AND NOT FORTY (H4349). pw cites 40 `DHĀTUP.` coordinates, but it
+  is an abridgement and it moves its citations: where pwg states a coordinate on the
+  root's own head line, pw very often states it on the head line of the *artha* noun
+  instead (`{#uttrAsana#}¦ <lex>n.</lex> … <ls>DHĀTUP. 9,15</ls>`). Nineteen of the forty
+  are that shape and are refused; five are body quotations; two — `1,840` and `1,960` —
+  name a serial in a gaṇa whose attested serials stop at 1, so they are not points in
+  this coordinate space at all and are refused with their ceiling recorded. Of the
+  fourteen that survive, twelve are coordinates the table already had. The yield is
+  small because the screening is strict, and the refusals are published rather than
+  netted out: see `_stats.pw_refused_*` and `_out_of_coordinate_space`.
   Accuracy: measured, not asserted. Böhtlingk often prints the dhātupāṭha's own artha in
   parentheses beside the citation, which is an independent witness; over the 232
   coordinates where he does, the artha he names is in our record 139 times exactly
@@ -81,13 +93,26 @@ _JSON = os.path.join(HERE, 'data', 'dhatup_palsule.json')
 #: continuation split `n="DHĀTUP. 26," / visible "91"` normalize to the same coord.
 _COORD = re.compile(r'^DH[ĀA]TUP\.\s*([0-9]+)\s*,\s*([0-9]+)')
 
-#: Provenance marks rendered into the tooltip (H4339). Deliberately sigla, not prose:
-#: this module is SHARED across the RU/DE/EN editions per LANG_PARITY.md, so the text
-#: must not be in one of them. `[MW]` = Böhtlingk left the coordinate ambiguous and
-#: Monier-Williams claims it for exactly one root; `[MW sp.]` = Böhtlingk's own root is
-#: absent from Palsule's index and MW's spelling of it is the one Palsule glosses.
+#: Provenance marks rendered into the tooltip (H4339, extended H4349). Deliberately
+#: sigla, not prose: this module is SHARED across the RU/DE/EN editions per
+#: LANG_PARITY.md, so the text must not be in one of them.
+#:   `[MW]`     Böhtlingk left the coordinate ambiguous and Monier-Williams claims it
+#:              for exactly one root.
+#:   `[MW sp.]` Böhtlingk's own root is absent from Palsule's index and MW's spelling
+#:              of it is the one Palsule glosses.
+#:   `[pw]`     the coordinate comes from Böhtlingk's own abridgement, the
+#:              Sanskrit-Wörterbuch in kürzerer Fassung — the same author, not a second
+#:              opinion, which is why the siglum is the dictionary's own short name.
+#:   `[pwg°]`   the coordinate is cited only by one of PWG's dotted-id articles, which
+#:              the H1333 scan cannot see. Reserved and rendered, but EMPTY in the
+#:              shipped table: those 636 articles cite one coordinate between them and
+#:              it is one PWG itself leaves contested (see build_dhatup_palsule.py,
+#:              `read_pwg_dotted_coords`). The mark exists so that a corpus update
+#:              which puts real coordinates into that id space renders correctly on
+#:              arrival rather than falling back to the unmarked PWG default.
 #: A PWG-attributed row (H1333's rule) carries no mark — it is the unmarked default.
-_SOURCE_MARK = {'pwg': '', 'mw': '[MW]', 'mw-respell': '[MW sp.]'}
+_SOURCE_MARK = {'pwg': '', 'mw': '[MW]', 'mw-respell': '[MW sp.]',
+                'pw': '[pw]', 'pwg-dotted': '[pwg°]'}
 
 _TABLE = None
 _STATS = None
