@@ -112,6 +112,20 @@ _HEAD_LEX = re.compile(r'<lex\b')
 #: rather than merely not-forbidding it is what keeps meanings out of the root column.
 _HEAD_RADICAL = re.compile('√')
 
+#: THE BÖHTLINGK-FAMILY VARIANT-READING MARKER, and the third thing an independent
+#: verifier had to find before this pass was safe. H4339 learned on MW that a citation
+#: standing next to a `v.l.` note is often the source DISOWNING the headword; pwg and pw
+#: write the same note in German with a space (`<ab>v. l.</ab>`), and they put it AFTER
+#: the citation to mark the article's own headword as the rejected reading:
+#:   `√{#cikk#}¦, {#cikka/yati#} … <ls>DHĀTUP. 32,56</ls>, <ab>v. l.</ab>`
+#:   `*√{#plI#}¦, {#plinAti#} ({#gatO#}). <ls>DHĀTUP. 31,32</ls>, <ab>v. l.</ab>`
+#: Both say "this spelling is a variant", so harvesting either as a claim ships the one
+#: root the source is declining to endorse. The trailing position is the opposite of
+#: MW's leading `v.l. for √X` construction, which is why this is a separate pattern and
+#: not a reuse of `_MW_VL`: the two dictionaries put the note on different sides and it
+#: means different things there. Counted, never silently applied.
+_BOEHTLINGK_VL = re.compile(r'<ab>\s*(?:v\.\s*l\.|w\.\s*r\.)\s*</ab>')
+
 #: SLP1 -> IAST for the root citation form only (consonants + simple vowels).
 _S2I = {
     'A': 'ā', 'I': 'ī', 'U': 'ū', 'f': 'ṛ', 'F': 'ṝ', 'x': 'ḷ', 'X': 'ḹ',
@@ -823,7 +837,7 @@ def _scan_coords(path, dotted_only=False):
     shipped baseline and the code that produces them stays where a reader can see it
     untouched.
     """
-    coords = defaultdict(lambda: defaultdict(lambda: [0, 0, 0, 0]))
+    coords = defaultdict(lambda: defaultdict(lambda: [0, 0, 0, 0, 0]))
     key = None
     at_head = False
     in_scope = False
@@ -853,6 +867,11 @@ def _scan_coords(path, dotted_only=False):
                         coords[coord][key][2] += 1
                     if radical:
                         coords[coord][key][3] += 1
+                    # Scoped to what FOLLOWS the citation on its own line, which is
+                    # where the Böhtlingk family puts the note that disowns the
+                    # headword. A note earlier in the line governs something else.
+                    if _BOEHTLINGK_VL.search(line, mm.end()):
+                        coords[coord][key][4] += 1
             at_head = False
     return coords, articles
 
@@ -917,7 +936,8 @@ def coordinate_ceilings(coords):
 
 
 def _sibling_pass(label, source_coords, articles, source_path, palsule,
-                  pwg_root, table, ceilings, same_book_conflicted=frozenset()):
+                  pwg_root, table, ceilings, same_book_conflicted=frozenset(),
+                  pwg_cited=frozenset()):
     """H4349. Fill still-empty coordinates from a PWG-family sibling. MUTATES `table`.
 
     `label` is the provenance token stamped on every row this pass adds (`pwg-dotted`
@@ -930,16 +950,35 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
     citation is a quotation, an unmarked head line is a noun being glossed, and two
     marked claimants is an ambiguity this pass has no standing to break.
 
-    `same_book_conflicted` is the guard that keeps the `pwg-dotted` pass honest. MW and
-    pw are different books, so a claim of theirs on a coordinate PWG left contested is
-    new evidence and may fill it — that is the whole coverage argument of H4339. PWG's
-    own dotted-id articles are not a different book: a citation there belongs in PWG's
-    claimant set, and letting it fill a coordinate PWG's multi-claimant filter
-    deliberately dropped would resolve a conflict by adding a vote, which is precisely
-    what that filter refuses to do. Coordinates PWG conflicted on are therefore closed
-    to a same-book pass and counted apart. (`15,89` is the live case, and it is worth
-    knowing it was ALSO refused by the `√` test — the guard is not what happens to save
-    it today, which is why it is stated as a rule rather than left to the accident.)
+    TWO SCREENS THAT AN INDEPENDENT VERIFIER HAD TO ADD, both of which this pass
+    originally got wrong and shipped two bad rows for. They are stated at length
+    because each is a rule about what kind of evidence a SAME-AUTHOR source is.
+
+    `same_book_conflicted` — coordinates PWG's own multi-claimant filter refused. MW is
+    a different author, so its claim on a coordinate Böhtlingk left contested is new
+    evidence and may fill it; that is the whole coverage argument of H4339. **Neither
+    sibling here is a different author.** PWG's dotted-id articles are literally the
+    same book, and pw is the same man's abridgement of it — `read_pw_coords` says so in
+    as many words. Letting either fill a coordinate PWG's filter dropped resolves
+    Böhtlingk's own conflict by adding one of Böhtlingk's own votes, which is exactly
+    what that filter exists not to do. The first cut applied this to `pwg-dotted` only,
+    and pw duly shipped `32,56 → cukk` — a coordinate PWG splits between `cakk` and a
+    `v. l.` `cikk`, and whose `cukk` PWG places at `34,21` instead.
+
+    `pwg_cited` — the coordinates PWG actually cites. The ceiling screen bounds a
+    serial against the highest one attested in its gaṇa, which is necessary and not
+    sufficient: `33,67` clears gaṇa 33's ceiling of 130 and PWG still never cites it,
+    because Böhtlingk renumbered that article between editions (pw's
+    `2. √tras, trāsayati (dhāraṇe, grahaṇe, vāraṇe)` at `33,67` is pwg's
+    `2. tras, trāsayati "halten" (v. l. "ergreifen; zurückhalten")` at `33,88` — same
+    article, same three glosses, two serials). Admitting it shipped a coordinate
+    outside the very denominator `match_rate` divides by, so the published rate counted
+    a row its own denominator excluded. A sibling may fill a gap in PWG's citations; it
+    may not invent a citation PWG does not make.
+
+    A claimant whose citation is followed by `<ab>v. l.</ab>` is refused outright: in
+    the Böhtlingk family that note marks the article's own headword as the rejected
+    reading, so harvesting it ships the one root the source declines to endorse.
     """
     empty = {
         '%s_available' % label: False, '%s_source' % label: None,
@@ -950,6 +989,8 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
         '%s_refused_body_only' % label: 0,
         '%s_refused_multiple_claimants' % label: 0,
         '%s_refused_same_book_conflict' % label: 0,
+        '%s_refused_not_cited_by_pwg' % label: 0,
+        '%s_refused_variant_reading' % label: 0,
         '%s_coords_overlapping_shipped' % label: 0,
         '%s_candidates_without_palsule_row' % label: 0,
         'coords_filled_from_%s' % label: 0,
@@ -964,12 +1005,19 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
 
     claims = {}
     out_of_space = []
-    nominal = body_only = multi = same_book = 0
+    nominal = body_only = multi = same_book = not_cited = variant = 0
     for coord, roots in source_coords.items():
         gana, serial = _coord_key(coord)
         if coord in same_book_conflicted:
             same_book += 1
             continue
+        # ORDER MATTERS, and it is a reporting decision rather than a logical one.
+        # Both screens below refuse `1,840` and `1,960`; running the ceiling first keeps
+        # them in `_out_of_coordinate_space` with the ceiling that explains WHY they are
+        # not coordinates at all, which is the published adjudication. The membership
+        # screen then reports what it alone catches: coordinates Böhtlingk cites in one
+        # edition and not the other (`33,67`, `17,24`), which is a different finding —
+        # a renumbering between editions, not a malformed citation.
         if serial > ceilings.get(gana, 0):
             out_of_space.append({
                 'coord': coord,
@@ -980,6 +1028,9 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
                 'verdict': 'refused: not a point in the attested coordinate space',
             })
             continue
+        if pwg_cited and coord not in pwg_cited:
+            not_cited += 1
+            continue
         head = [r for r, c in roots.items() if c[0]]
         if not head:
             body_only += 1
@@ -988,6 +1039,11 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
         if not verbal:
             nominal += 1
             continue
+        endorsed = [r for r in verbal if not roots[r][4]]
+        if not endorsed:
+            variant += 1
+            continue
+        verbal = endorsed
         if len(verbal) != 1:
             multi += 1
             continue
@@ -1047,6 +1103,8 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
         '%s_refused_body_only' % label: body_only,
         '%s_refused_multiple_claimants' % label: multi,
         '%s_refused_same_book_conflict' % label: same_book,
+        '%s_refused_not_cited_by_pwg' % label: not_cited,
+        '%s_refused_variant_reading' % label: variant,
         '%s_coords_overlapping_shipped' % label: len(set(source_coords) & set(table)),
         '%s_candidates_without_palsule_row' % label: no_row,
         'coords_filled_from_%s' % label: filled,
@@ -1150,10 +1208,14 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     ceilings = coordinate_ceilings(coords)
     dotted_coords, dotted_articles = (read_pwg_dotted_coords(pwg) if pwg_dotted
                                       else ({}, 0))
+    # Both siblings are Böhtlingk, so both get the same-book screen; both are screened
+    # against the coordinates PWG actually cites, which is the denominator `match_rate`
+    # divides by and therefore the space a fill is allowed to live in.
+    conflicted = frozenset(c['coord'] for c in conflicts)
+    pwg_cited = frozenset(coords)
     dotted_stats, dotted_disagreements, dotted_out = _sibling_pass(
         'pwg-dotted', dotted_coords, dotted_articles, pwg, palsule, pwg_root,
-        table, ceilings,
-        same_book_conflicted=frozenset(c['coord'] for c in conflicts))
+        table, ceilings, same_book_conflicted=conflicted, pwg_cited=pwg_cited)
     if pw and os.path.exists(pw):
         pw_coords, pw_articles = read_pw_coords(pw)
     else:
@@ -1163,7 +1225,7 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
         pw_coords, pw_articles = {}, 0
     pw_stats, pw_disagreements, pw_out = _sibling_pass(
         'pw', pw_coords, pw_articles, pw or DEFAULT_PW, palsule, pwg_root,
-        table, ceilings)
+        table, ceilings, same_book_conflicted=conflicted, pwg_cited=pwg_cited)
 
     stats = {
         'built': date.today().strftime('%d-%m-%Y'),
@@ -1194,9 +1256,11 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     stats.update(pw_stats)
     # Recomputed AFTER the sibling passes. `coords` is PWG's citation set and stays the
     # denominator: a sibling fills coordinates PWG cites but never resolved, so the
-    # numerator grows while the denominator does not. A sibling-only coordinate cannot
-    # enter here — the ceiling screen keeps every candidate inside PWG's own space —
-    # but the asymmetry is stated rather than left to be inferred.
+    # numerator grows while the denominator does not. The `pwg_cited` screen above is
+    # what MAKES that true — the first cut asserted it from the ceiling screen alone and
+    # was wrong, shipping `33,67`, a coordinate absent from the denominator it was then
+    # counted against. The invariant is now enforced at the point of the fill and
+    # asserted again by `src/pilot/dhatup_h4349_verify.py`.
     stats['coords_linked'] = len(table)
     stats['match_rate'] = (round(100.0 * len(table) / len(coords), 1)
                            if coords else 0.0)
