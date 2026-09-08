@@ -40,27 +40,31 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import git_ops  # noqa: E402
+
+_GIT_OPS = git_ops.GitOperations()
+
 
 def git_bytes(repo: Path, *args: str, stdin: bytes | None = None) -> bytes:
     """Run git and return raw stdout bytes (blob content must not be decoded).
 
     The org rule is `encoding='utf-8'` on output-capturing subprocess calls; this
-    one is a DELIBERATE exception. Decoding here would destroy the very bytes the
-    census measures — a CR byte must be counted in the blob, not in some decoded
-    approximation of it. Decoding happens explicitly, per call site, in git_text.
+    one is a DELIBERATE exception, taken via `git_ops.exec(text=False)`: decoding
+    here would destroy the very bytes the census measures — a CR byte must be
+    counted in the blob, not in some decoded approximation of it. Decoding
+    happens explicitly, per call site, in git_text.
     """
-    proc = subprocess.run(
-        ["git", "-C", str(repo), *args],
-        input=stdin,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
-    if proc.returncode != 0:
+    try:
+        r = _GIT_OPS.exec(repo, list(args), timeout_s=60, text=False,
+                          input_bytes=stdin)
+    except git_ops.GitTimeout as exc:
+        raise RuntimeError(str(exc)) from exc
+    if not r.ok:
         raise RuntimeError(
-            f"git {' '.join(args)} failed ({proc.returncode}): "
-            f"{proc.stderr.decode('utf-8', 'replace').strip()}"
+            f"git {' '.join(args)} failed ({r.exit_code}): {(r.stderr or '').strip()}"
         )
-    return proc.stdout
+    return r.stdout
 
 
 def git_text(repo: Path, *args: str, stdin: bytes | None = None) -> str:
@@ -194,7 +198,7 @@ def cr_candidates(repo: Path, ref: str) -> list[str]:
     proc = subprocess.run(
         ["git", "-C", str(repo), "grep", "-I", "-l", "-z", "-F", "\r", ref],
         stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-    )
+    timeout=60)
     # exit 1 == "no matches", which is the clean case, not an error
     if proc.returncode not in (0, 1):
         raise RuntimeError(
