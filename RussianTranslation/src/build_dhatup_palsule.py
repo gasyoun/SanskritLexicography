@@ -84,6 +84,7 @@ GH = sibling_root(HERE)
 DEFAULT_XLS = os.path.join(REPO, 'pwg_ru', 'eval', 'Palsule_Artha_24_01_2014.xlsx')
 DEFAULT_PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 DEFAULT_MW = os.path.join(GH, 'csl-orig', 'v02', 'mw', 'mw.txt')
+DEFAULT_PW = os.path.join(GH, 'csl-orig', 'v02', 'pw', 'pw.txt')
 DEFAULT_OUT = os.path.join(HERE, 'data', 'dhatup_palsule.json')
 
 _L = re.compile(r'^<L>(\d+)<pc>[^<]*<k1>([^<]*)<k2>')
@@ -97,6 +98,19 @@ _DHATUP_N = re.compile(r'<ls\b[^>]*\bn\s*=\s*"DH[ĀA]TUP\.\s*(\d+)\s*,\s*"[^>]*>
 #: — the coordinate belongs to the root, not to the noun. Root articles carry no
 #: <lex> on the head line (they carry the finite form, and often a √).
 _HEAD_LEX = re.compile(r'<lex\b')
+
+#: THE POSITIVE TEST, and the one the H4349 sibling pass actually turns on. PWG's own
+#: pass discriminates a root article from a noun article by the ABSENCE of a `<lex>`
+#: part-of-speech tag on the head line, which works because PWG tags its nouns. pw
+#: abridges, and often does not: `{#DAnya#}¦ (von {#Dana#}) {%das Reichsein%} <ls>DHĀTUP.
+#: 20,3</ls>` is a noun meaning "wealth" with no `<lex>` anywhere, and the negative test
+#: passes it through as a root — pw's citation for a coordinate PWG gives to `jal`.
+#: Böhtlingk marks a verbal article positively instead, with `√` on its head line
+#: (`*√{#cukk#}¦, {#cukkayati#}`), and that marker separates all 37 head-line claimants
+#: of pw's DHĀTUP. citations cleanly: every `<lex>`-tagged claimant lacks it, every
+#: untagged noun lacks it, and the 15 that carry it are roots. Requiring the marker
+#: rather than merely not-forbidding it is what keeps meanings out of the root column.
+_HEAD_RADICAL = re.compile('√')
 
 #: SLP1 -> IAST for the root citation form only (consonants + simple vowels).
 _S2I = {
@@ -266,7 +280,10 @@ _MW_DHATUP_N_GANA = re.compile(
 #: separate pattern keeps H1333's PWG numbers byte-stable while the MW pass sees the
 #: whole dictionary. (PWG has 636 such articles of its own; widening `_L` would move
 #: the shipped H1333 baseline, so that is left as its own change, not smuggled in here.)
-_L_MW = re.compile(r'^<L>([\d.]+)<pc>[^<]*<k1>([^<]*)<k2>')
+_L_ANY = re.compile(r'^<L>([\d.]+)<pc>[^<]*<k1>([^<]*)<k2>')
+#: Kept as the MW-facing name it was born with (H4339); H4349 gave it the neutral
+#: alias above because PWG's own dotted-id articles and pw need the same widening.
+_L_MW = _L_ANY
 
 #: MW's own structured cross-reference to Westergaard's *Radices* — the edition whose
 #: numbering `DHĀTUP. x,y` IS: `<info westergaard="dIDIN,24.68,02.0084"/>` = the root
@@ -788,6 +805,266 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
     return stats, disagreements
 
 
+#: The WIDENED article-id space, and why it is a separate pass rather than a wider `_L`
+#: (H4349). `_L` accepts an all-digit `<L>` id only, which is what H1333 measured PWG on;
+#: 636 of PWG's 123,366 articles carry a dotted id (`<L>26305.560<pc>`) and are invisible
+#: to it. Widening `_L` in place would move H1333's shipped `pwg_entries`, so the dotted
+#: articles are read by a pass that runs BESIDE the H1333 pass, exactly like the MW one.
+#: MEASURED RESULT, and the reason this class ships nothing: those 636 articles cite
+#: exactly ONE `DHĀTUP.` coordinate between them. See `read_pwg_dotted_coords`.
+def _scan_coords(path, dotted_only=False):
+    """path -> ({coord: {root_slp1: [head, body, head_nominal]}}, n_articles_seen).
+
+    The same reader as `read_pwg_coords` — same head-line weighting, same `<lex>`
+    nominal flag, same two citation-splitting patterns — over the `[\\d.]+` id space
+    instead of the all-digit one, so it can be pointed at PWG's dotted-id articles or
+    at a sibling dictionary in the same Cologne markup. `read_pwg_coords` is
+    deliberately NOT re-expressed in terms of this function: H1333's numbers are a
+    shipped baseline and the code that produces them stays where a reader can see it
+    untouched.
+    """
+    coords = defaultdict(lambda: defaultdict(lambda: [0, 0, 0, 0]))
+    key = None
+    at_head = False
+    in_scope = False
+    articles = 0
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            m = _L_ANY.match(line)
+            if m:
+                in_scope = ('.' in m.group(1)) if dotted_only else True
+                key = m.group(2) if in_scope else None
+                at_head = in_scope
+                articles += 1 if in_scope else 0
+                continue
+            if line.startswith('<LEND>'):
+                key = None
+                continue
+            if key is None:
+                continue
+            slot = 0 if at_head else 1
+            nominal = bool(at_head and _HEAD_LEX.search(line))
+            radical = bool(at_head and _HEAD_RADICAL.search(line))
+            for rx in (_DHATUP, _DHATUP_N):
+                for mm in rx.finditer(line):
+                    coord = '%s,%s' % (mm.group(1), mm.group(2))
+                    coords[coord][key][slot] += 1
+                    if nominal:
+                        coords[coord][key][2] += 1
+                    if radical:
+                        coords[coord][key][3] += 1
+            at_head = False
+    return coords, articles
+
+
+def read_pwg_dotted_coords(pwg):
+    """PWG's 636 dotted-id articles -> the coordinates they cite (H4349).
+
+    THE ANSWER IS ONE COORDINATE, and it is worth stating plainly because the
+    expectation going in was a large hidden evidence class: 636 articles, one
+    `DHĀTUP.` citation between them — `15,89`, claimed by `4. kar` in
+    `<L>26305.560<pc>2-1103<k1>kar`. That coordinate was already contested without
+    this pass (`<L>18794` heads it `kfv`; `<L>69734` claims it for `kar` again), and
+    Böhtlingk's own prose in the `kfv` article says the root is `kṛv`, placed under
+    `kar`, with its final `-v` unjustified — two readings, stated by the same
+    lexicographer, which is exactly the shape the multi-claimant filter refuses to
+    resolve by counting votes. So the dotted-id pass adds a third citation to an
+    already-dropped coordinate and ships nothing.
+
+    That is a negative result, not a wasted pass. Before it, "the dotted-id articles
+    are unread" was an open hypothesis about the size of the gap; after it, the gap is
+    measured at one coordinate and pinned by a regression, so a corpus update that
+    puts real coordinates into that id space fails a test instead of passing silently.
+    """
+    return _scan_coords(pwg, dotted_only=True)
+
+
+def read_pw_coords(pw):
+    """pw.txt (Sanskrit-Wörterbuch in kürzerer Fassung) -> coordinates it cites.
+
+    Böhtlingk's own abridgement, so a coordinate here is the same author's numbering
+    rather than a second opinion — but the abridgement REDISTRIBUTES its citations:
+    where pwg states a coordinate on the root's own head line, pw very often states it
+    on the head line of the *artha* noun instead (`{#uttrAsana#}¦ <lex>n.</lex> …
+    <ls>DHĀTUP. 9,15</ls>`). Harvesting a pw claimant without the `<lex>` nominal test
+    would therefore ship meanings as roots — nine of pw's seventeen otherwise-unfilled
+    coordinates are exactly that. The nominal discriminator PWG needed as a refinement
+    is load-bearing here.
+    """
+    return _scan_coords(pw)
+
+
+def coordinate_ceilings(coords):
+    """gaṇa -> the highest serial PWG itself ever cites in that gaṇa.
+
+    THE GUARD AGAINST A CITATION-SPLIT ARTIFACT, derived from the corpus and never
+    typed as a constant. pw's Nachträge carry `<ls>DHĀTUP. 1,840</ls>` (√{#can#}) and
+    `<ls>DHĀTUP. 1,960</ls>` ({#Kadana#}); PWG cites gaṇa 1 exactly twice and MW once,
+    every time as the single coordinate `1,1` — bhū, the first root of the dhātupāṭha.
+    A gaṇa whose attested serials stop at 1 does not have an 840th root, so those two
+    numbers are not points in this coordinate space at all: they are some other
+    numbering of Westergaard that the supplement reaches for twice. Admitting them
+    would mint two coordinates no witness can confirm and would collide with any
+    genuine future `1,840`. They are refused, listed, and counted — never quietly kept
+    and never quietly dropped.
+    """
+    ceil = {}
+    for coord in coords:
+        gana, serial = _coord_key(coord)
+        if serial > ceil.get(gana, 0):
+            ceil[gana] = serial
+    return ceil
+
+
+def _sibling_pass(label, source_coords, articles, source_path, palsule,
+                  pwg_root, table, ceilings, same_book_conflicted=frozenset()):
+    """H4349. Fill still-empty coordinates from a PWG-family sibling. MUTATES `table`.
+
+    `label` is the provenance token stamped on every row this pass adds (`pwg-dotted`
+    or `pw`). Rows already in `table` — PWG's, MW's, or an earlier sibling's — are
+    never touched or overwritten, so H1333's and H4339's shipped artifacts survive this
+    pass byte-for-byte and a consumer that wants either of them filters on `source`.
+
+    A coordinate is used only when the sibling gives it ONE claimant on the head line
+    of an article Böhtlingk marks as verbal with `√` (see `_HEAD_RADICAL`): a body
+    citation is a quotation, an unmarked head line is a noun being glossed, and two
+    marked claimants is an ambiguity this pass has no standing to break.
+
+    `same_book_conflicted` is the guard that keeps the `pwg-dotted` pass honest. MW and
+    pw are different books, so a claim of theirs on a coordinate PWG left contested is
+    new evidence and may fill it — that is the whole coverage argument of H4339. PWG's
+    own dotted-id articles are not a different book: a citation there belongs in PWG's
+    claimant set, and letting it fill a coordinate PWG's multi-claimant filter
+    deliberately dropped would resolve a conflict by adding a vote, which is precisely
+    what that filter refuses to do. Coordinates PWG conflicted on are therefore closed
+    to a same-book pass and counted apart. (`15,89` is the live case, and it is worth
+    knowing it was ALSO refused by the `√` test — the guard is not what happens to save
+    it today, which is why it is stated as a rule rather than left to the accident.)
+    """
+    empty = {
+        '%s_available' % label: False, '%s_source' % label: None,
+        '%s_articles' % label: 0, '%s_coords_cited' % label: 0,
+        '%s_coords_single_verbal_claimant' % label: 0,
+        '%s_refused_out_of_coordinate_space' % label: 0,
+        '%s_refused_nominal_head' % label: 0,
+        '%s_refused_body_only' % label: 0,
+        '%s_refused_multiple_claimants' % label: 0,
+        '%s_refused_same_book_conflict' % label: 0,
+        '%s_coords_overlapping_shipped' % label: 0,
+        '%s_candidates_without_palsule_row' % label: 0,
+        'coords_filled_from_%s' % label: 0,
+        '%s_cross_validated' % label: 0, '%s_cross_agree' % label: 0,
+        '%s_cross_disagree' % label: 0, '%s_cross_agreement_rate' % label: 0.0,
+        '%s_cross_agree_modulo_citation_form' % label: 0,
+        '%s_cross_agreement_rate_modulo_citation_form' % label: 0.0,
+        '%s_cross_disagreement_shapes' % label: {},
+    }
+    if not source_coords and not articles:
+        return empty, [], []
+
+    claims = {}
+    out_of_space = []
+    nominal = body_only = multi = same_book = 0
+    for coord, roots in source_coords.items():
+        gana, serial = _coord_key(coord)
+        if coord in same_book_conflicted:
+            same_book += 1
+            continue
+        if serial > ceilings.get(gana, 0):
+            out_of_space.append({
+                'coord': coord,
+                'gana': gana,
+                'serial': serial,
+                'attested_ceiling': ceilings.get(gana),
+                'claimants': sorted(roots),
+                'verdict': 'refused: not a point in the attested coordinate space',
+            })
+            continue
+        head = [r for r, c in roots.items() if c[0]]
+        if not head:
+            body_only += 1
+            continue
+        verbal = [r for r in head if roots[r][3] and not roots[r][2]]
+        if not verbal:
+            nominal += 1
+            continue
+        if len(verbal) != 1:
+            multi += 1
+            continue
+        claims[coord] = verbal[0]
+
+    # Shapes that are two citation conventions for one root rather than two roots:
+    # `vṛkṣ`/`varkṣ` is the regular guṇa alternation, `karṇ`/`karṇay` is the root
+    # against the denominative stem pw happens to head its article with. Folded into a
+    # COMPANION rate, never into the strict one — same treatment H4339 gives the guṇa
+    # shape in the MW cross-validation, so the two witnesses stay comparable.
+    _CITATION_FORM = ('guṇa ar~ṛ', 'guṇa al~ḷ', 'stem~root')
+    agree = disagree = lenient = 0
+    disagreements = []
+    for coord in sorted(set(claims) & set(pwg_root), key=_coord_key):
+        if _same_root(pwg_root[coord], claims[coord]):
+            agree += 1
+            lenient += 1
+            continue
+        disagree += 1
+        if _disagreement_shape(slp1_root_iast(pwg_root[coord]),
+                               slp1_root_iast(claims[coord])) in _CITATION_FORM:
+            lenient += 1
+        disagreements.append({
+            'coord': coord,
+            'source': label,
+            'pwg_root_slp1': pwg_root[coord],
+            'pwg_root_iast': slp1_root_iast(pwg_root[coord]),
+            'sibling_root_slp1': claims[coord],
+            'sibling_root_iast': slp1_root_iast(claims[coord]),
+            'shape': _disagreement_shape(slp1_root_iast(pwg_root[coord]),
+                                         slp1_root_iast(claims[coord])),
+        })
+
+    filled = no_row = 0
+    for coord in sorted(set(claims) - set(table), key=_coord_key):
+        root = claims[coord]
+        extra = {'%s_root_slp1' % label: root}
+        if coord in pwg_root:
+            extra['pwg_root_slp1'] = pwg_root[coord]
+            extra['pwg_root_iast'] = slp1_root_iast(pwg_root[coord])
+        row = _palsule_record(palsule, root, label, extra)
+        if row is None:
+            no_row += 1
+            continue
+        table[coord] = row
+        filled += 1
+
+    examined = agree + disagree
+    stats = {
+        '%s_available' % label: True,
+        '%s_source' % label: os.path.relpath(source_path, GH),
+        '%s_articles' % label: articles,
+        '%s_coords_cited' % label: len(source_coords),
+        '%s_coords_single_verbal_claimant' % label: len(claims),
+        '%s_refused_out_of_coordinate_space' % label: len(out_of_space),
+        '%s_refused_nominal_head' % label: nominal,
+        '%s_refused_body_only' % label: body_only,
+        '%s_refused_multiple_claimants' % label: multi,
+        '%s_refused_same_book_conflict' % label: same_book,
+        '%s_coords_overlapping_shipped' % label: len(set(source_coords) & set(table)),
+        '%s_candidates_without_palsule_row' % label: no_row,
+        'coords_filled_from_%s' % label: filled,
+        '%s_cross_validated' % label: examined,
+        '%s_cross_agree' % label: agree,
+        '%s_cross_disagree' % label: disagree,
+        '%s_cross_agreement_rate' % label: (round(100.0 * agree / examined, 1)
+                                            if examined else 0.0),
+        '%s_cross_agree_modulo_citation_form' % label: lenient,
+        '%s_cross_agreement_rate_modulo_citation_form' % label: (
+            round(100.0 * lenient / examined, 1) if examined else 0.0),
+        '%s_cross_disagreement_shapes' % label: dict(sorted(
+            Counter(d['shape'] for d in disagreements).items(),
+            key=lambda kv: (-kv[1], kv[0]))),
+    }
+    return stats, disagreements, out_of_space
+
+
 def _palsule_record(palsule, root_slp1, source, extra=None):
     """One table row, or None when Palsule has no entry for that root spelling."""
     root_iast = slp1_root_iast(root_slp1)
@@ -815,7 +1092,7 @@ def _palsule_record(palsule, root_slp1, source, extra=None):
     return row
 
 
-def build(xls, pwg, mw=None):
+def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     palsule, xls_rows, typo_folds = read_palsule(xls)
     coords, entries = read_pwg_coords(pwg)
 
@@ -864,6 +1141,29 @@ def build(xls, pwg, mw=None):
 
     linked_pwg = len(table)
     mw_stats, mw_disagreements = _mw_pass(mw, palsule, coords, table, pwg_root)
+    linked_after_mw = len(table)
+
+    # H4349. Two more PWG-FAMILY sources, run after MW so they can only fill what is
+    # still empty, each stamped with its own token and each measured on its own. The
+    # ceiling is derived from PWG's citations alone — the sibling being screened must
+    # not be allowed to widen the space it is screened against.
+    ceilings = coordinate_ceilings(coords)
+    dotted_coords, dotted_articles = (read_pwg_dotted_coords(pwg) if pwg_dotted
+                                      else ({}, 0))
+    dotted_stats, dotted_disagreements, dotted_out = _sibling_pass(
+        'pwg-dotted', dotted_coords, dotted_articles, pwg, palsule, pwg_root,
+        table, ceilings,
+        same_book_conflicted=frozenset(c['coord'] for c in conflicts))
+    if pw and os.path.exists(pw):
+        pw_coords, pw_articles = read_pw_coords(pw)
+    else:
+        if pw:
+            sys.stderr.write('build_dhatup_palsule: pw not found at %s — '
+                             'kuerzere-Fassung pass skipped\n' % pw)
+        pw_coords, pw_articles = {}, 0
+    pw_stats, pw_disagreements, pw_out = _sibling_pass(
+        'pw', pw_coords, pw_articles, pw or DEFAULT_PW, palsule, pwg_root,
+        table, ceilings)
 
     stats = {
         'built': date.today().strftime('%d-%m-%Y'),
@@ -889,6 +1189,19 @@ def build(xls, pwg, mw=None):
                                        if coords else 0.0),
     }
     stats.update(mw_stats)
+    stats['coords_linked_after_mw'] = linked_after_mw
+    stats.update(dotted_stats)
+    stats.update(pw_stats)
+    # Recomputed AFTER the sibling passes. `coords` is PWG's citation set and stays the
+    # denominator: a sibling fills coordinates PWG cites but never resolved, so the
+    # numerator grows while the denominator does not. A sibling-only coordinate cannot
+    # enter here — the ceiling screen keeps every candidate inside PWG's own space —
+    # but the asymmetry is stated rather than left to be inferred.
+    stats['coords_linked'] = len(table)
+    stats['match_rate'] = (round(100.0 * len(table) / len(coords), 1)
+                           if coords else 0.0)
+    stats['coords_refused_out_of_coordinate_space'] = (
+        len(dotted_out) + len(pw_out))
     # The artha measurement stays on the PWG-derived rows, so the H1333 number
     # (139/232 = 59.9%) means the same thing before and after H4339. MW rows are
     # measured separately: PWG's parenthesized artha is still an independent witness
@@ -912,8 +1225,12 @@ def build(xls, pwg, mw=None):
     stats['inline_artha_agree_loose_mw'] = m_loose
     stats['inline_artha_agreement_rate_loose_mw'] = (
         round(100.0 * m_loose / m_examined, 1) if m_examined else 0.0)
+    sibling = {
+        'disagreements': dotted_disagreements + pw_disagreements,
+        'out_of_coordinate_space': dotted_out + pw_out,
+    }
     return (table, stats, conflicts, unmatched, samples, mw_disagreements,
-            mw_artha_samples)
+            mw_artha_samples, sibling)
 
 
 def main():
@@ -923,11 +1240,18 @@ def main():
     ap.add_argument('--mw', default=DEFAULT_MW,
                     help='Monier-Williams, the second coordinate witness (H4339). '
                          'Pass --mw "" to rebuild the H1333 PWG-only table.')
+    ap.add_argument('--pw', default=DEFAULT_PW,
+                    help="Sanskrit-Woerterbuch in kuerzerer Fassung, Boehtlingk's own "
+                         'abridgement and the third coordinate witness (H4349). '
+                         'Pass --pw "" to skip it.')
+    ap.add_argument('--no-pwg-dotted', action='store_true',
+                    help="Skip the pass over PWG's 636 dotted-id articles (H4349).")
     ap.add_argument('--out', default=DEFAULT_OUT)
     a = ap.parse_args()
 
     (table, stats, conflicts, unmatched, artha_samples,
-     mw_disagreements, mw_artha_samples) = build(a.xls, a.pwg, a.mw)
+     mw_disagreements, mw_artha_samples, sibling) = build(
+         a.xls, a.pwg, a.mw, a.pw, pwg_dotted=not a.no_pwg_dotted)
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     payload = {
         '_README': (
@@ -952,11 +1276,31 @@ def main():
             'is in Palsule. Filter on `source` to get the PWG-only table back. Where '
             'both dictionaries resolve a coordinate to a DIFFERENT single root, the PWG '
             'reading stands and the conflict is listed in `_mw_disagreements` for '
-            'adjudication — never resolved by picking a winner.'),
+            'adjudication — never resolved by picking a winner.'
+            ' TWO MORE PWG-FAMILY SOURCES (H4349), each stamped apart and never '
+            'merged into `pwg`: `pwg-dotted` is a coordinate cited only by one of '
+            'PWG\'s 636 dotted-id articles, which the H1333 scan\'s all-digit <L> '
+            'pattern cannot see; `pw` is a coordinate from Böhtlingk\'s own '
+            'abridgement, the Sanskrit-Wörterbuch in kürzerer Fassung. Both are '
+            'admitted only on a single VERBAL head-line claimant — pw states most of '
+            'its DHĀTUP. citations on the head line of the artha noun rather than the '
+            'root, so the <lex> nominal test that is a refinement for PWG is '
+            'load-bearing there. Both are screened against the attested coordinate '
+            'space (the highest serial PWG itself cites in that gaṇa); refusals are '
+            'listed in `_out_of_coordinate_space` with the ceiling they failed, never '
+            'silently dropped.'),
         '_stats': stats,
         # Listed, not resolved. Each row is a live disagreement between two Böhtlingk-
         # numbering witnesses about which root a coordinate belongs to.
         '_mw_disagreements': mw_disagreements,
+        # The same shape for the H4349 siblings, kept in their own key so a consumer
+        # reading H4339's disagreement list is unaffected by their arrival.
+        '_sibling_disagreements': sibling['disagreements'],
+        # Citations that name a point outside the attested coordinate space. Published
+        # because "we dropped two numbers" is a claim a reader must be able to check:
+        # each row carries the gaṇa, the serial, the ceiling it exceeded and who cited
+        # it, so the adjudication is re-derivable rather than asserted.
+        '_out_of_coordinate_space': sibling['out_of_coordinate_space'],
         'table': table,
     }
     with open(a.out, 'w', encoding='utf-8') as f:
