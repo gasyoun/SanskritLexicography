@@ -742,7 +742,7 @@ same-author source as an independent one.**
    `set(table) ⊆ cited` directly — it could not see this before, because it derived the ceilings
    from `cited` and then tested only against the ceilings.
 
-A third, latent defect was reported in the same pass and is now guarded — though the guard is **order-shadowed and refuses nothing as shipped**, which the first version of this section did not say. `pw_refused_variant_reading` is `0`, and a second independent verifier proved the guard inert by deleting it and getting a byte-identical artifact. The reason is screen order: pw has exactly one such citation, `31,32`, and PWG cites that coordinate for three claimants (`plI` pwg:254914, `lvI` pwg:420914, `vlI` pwg:470515), so the same-book screen refuses it first. Removing the same-book screen makes the variant-reading guard fire. It is kept as a **standing** guard, not a live one: the construction is real in pw and the next sibling pass need not be same-book conflicted. **pw uses the
+A third, latent defect was reported in the same pass and is now guarded — though the guard is **order-shadowed and refuses nothing as shipped**, which the first version of this section did not say. `pw_refused_variant_reading` is `0`, and a second independent verifier proved the guard inert by deleting it and getting a byte-identical artifact. The reason is screen order: pw has exactly one such citation, `31,32`, and PWG cites that coordinate for three claimants (`plI` pwg:254914, `lvI` pwg:420914, `vlI` pwg:470515), so the same-book screen refuses it first. Removing the same-book screen makes the variant-reading guard's COUNTER fire (`pw_refused_variant_reading` 0 → 1) — but not the artifact: an adversarial verifier rebuilt with the same-book screen off, and with both it and the variant guard off, and got the same 1466-row table either way (H4386, 08-09-2026). So the guard changes no shipped row even un-shadowed, and the earlier wording here, which said only that it "fires", read as more than that. It is kept as a **standing** guard, not a live one: the construction is real in pw and the next sibling pass need not be same-book conflicted. **pw uses the
 variant-reading construction at a `DHĀTUP.` citation** — `*√{#plI#}¦, {#plinAti#} ({#gatO#}).
 <ls>DHĀTUP. 31,32</ls>, <ab>v. l.</ab>` (pw:309560) — and the pass had no equivalent of H4339's
 MW guard. In the Böhtlingk family the note follows the citation and marks the *article's own
@@ -820,12 +820,22 @@ note inside the article that Böhtlingk numbers — and 130 deletions is what th
 
 Counterfactual B — the narrow reading, `v. l.` as a tie-breaker among multi-claimant coordinates
 only, never erasing a sole claimant: **0 lost, 93 gained, 18 still reattributed**, and `32,56`
-does resolve to `cakk`. But of the 18 reattributions, **12 hand the coordinate to a nominal
-claimant** — `19,2 vyath → saṃcalana`, `23,40 vad → vyakta`, `28,1 tud → vyathana`,
-`31,1 krī → vinimaya`, `32,119 mlakṣ → mlecchana` — because dropping the verbal claimant lets
-the artha-noun article that merely quotes the number win by default. That is the `pad`/3,1 defect
-class in a new place, and it means the narrow variant is not a screen ordering away from correct:
+does resolve to `cakk`. But **all 18 reattributions hand the coordinate to a claimant that is
+not a verbal head line** — 8 to an article the builder's own `<lex>` head-line test flags as
+nominal, and the other 10 to an article that never cites the coordinate on its head line at all
+and merely quotes it in the body (`19,2 vyath → saṃcalana`, `23,40 vad → vyakta`,
+`28,1 tud → vyathana`, `31,1 krī → vinimaya`, `32,119 mlakṣ → mlecchana`) — because dropping the
+verbal claimant lets the artha-noun article win by default. That is the `pad`/3,1 defect class in
+a new place, and it means the narrow variant is not a screen ordering away from correct:
 "verbal beats nominal" would have to run *before* the tie-break, and then be re-verified.
+
+> An earlier draft of this paragraph said "12 of the 18 hand the coordinate to a nominal
+> claimant". An adversarial verifier could not reproduce 12 under any mechanical definition —
+> it got 8 by the `<lex>` flag and 17 by "no `√` on the head line" — and it was right: 12 was a
+> hand-count of names that read like artha-nouns, not a derived number. The 8 + 10 = 18 split
+> above is mechanical and re-derivable. Publishing a number nobody can re-derive is the exact
+> defect class this handoff exists to close, so the correction is recorded rather than
+> overwritten.
 
 The coverage arithmetic, published as required rather than folded into anything: counterfactual B
 would take 1465/1751 (83.7%) to **1496/1751 (85.4%)** — 74 of the 93 gains have a Palsule row, 43
@@ -855,6 +865,36 @@ no default (omitting one is a `TypeError` at the call site), the membership test
 unconditional, and an empty `pwg_cited` — the old default reached by hand — raises, because the
 set being screened against is also the denominator `match_rate` divides by. `dhatup_h4349_verify.py`
 asserts all of this off the builder's **syntax tree**, without importing it.
+
+**What an independent verifier found, including where it refuted the first cut.** H4386's
+verifier rebuilt the artifact four times with one screen disabled each, and the result is not
+the clean four-for-four the handoff's acceptance line assumed:
+
+| screen disabled | effect on the shipped table |
+|---|---|
+| same-book conflict | **1466 (+1)** — `32,56 → cukk` ships, `source=pw` |
+| `pwg_cited` membership | **1466 (+1)** — `33,67 → tras` ships, `source=pw` |
+| coordinate ceiling | **no change** — `1,840` / `1,960` move bucket, table identical |
+| variant reading | **no change at all** — table identical, `_stats` diff empty |
+
+Two of the four are load-bearing on the output; the ceiling screen is order-shadowed by the
+membership screen and changes only which bucket two malformed citations are *reported* in (the
+builder's own comment says so, and calls it a reporting decision); the variant guard refuses
+nothing as shipped and moves no row even when un-shadowed. That is recorded rather than
+smoothed over: a screen kept for a reason other than its current yield is fine, a screen
+*claimed* to be load-bearing when it is not is the drift this handoff exists to stop.
+
+**And the first cut of the mandatory-screen change was itself refuted.** Making the parameters
+defaultless fixes the *signature*, and the shipped H4349 defect was never a missing argument —
+it was a **call site** passing the permissive value. The verifier rebuilt against the hardened
+code with `same_book_conflicted=frozenset()` at the call site and shipped `32,56 → cukk` again;
+a `pwg_cited` that is merely truthy and always-contains (a list, a dict, a four-line
+`__contains__` class) passed `if not pwg_cited` and screened nothing, shipping both bad rows.
+Both are closed now: each screen must be a real `set`/`frozenset` **and** non-empty, the one
+legitimate exemption is the named `NO_SAME_BOOK_CONFLICTS` sentinel so it is greppable at every
+call site rather than indistinguishable from the mistake, and `dhatup_h4349_verify.py` now
+checks the **call sites** as well as the signature — every call names both screens, none passes
+an empty literal, and the validation covers both names rather than `pwg_cited` alone.
 
 **The artifact is pinned to its builder.** Nothing used to prove `src/data/dhatup_palsule.json`
 came from the committed `build_dhatup_palsule.py`: one harness reads the JSON, the other the JSON

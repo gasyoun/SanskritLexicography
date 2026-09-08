@@ -936,6 +936,22 @@ def coordinate_ceilings(coords):
     return ceil
 
 
+class _NoSameBookConflicts(frozenset):
+    """The one sanctioned way to say "this source has no same-book conflicts".
+
+    An empty `same_book_conflicted` is refused, because an empty literal at a call site
+    is exactly how `32,56 → cukk` shipped. But the exemption is legitimate for a
+    genuinely different-author source — MW's, which is the whole coverage argument of
+    H4339 — so it needs a way to be said. Saying it by NAME makes every exemption
+    greppable and reviewable; saying it with `frozenset()` makes it indistinguishable
+    from the mistake.
+    """
+
+
+#: Pass this, never a bare `frozenset()`, when a source is not same-book with PWG.
+NO_SAME_BOOK_CONFLICTS = _NoSameBookConflicts()
+
+
 def _sibling_pass(label, source_coords, articles, source_path, palsule,
                   pwg_root, table, ceilings, *, same_book_conflicted,
                   pwg_cited):
@@ -993,16 +1009,33 @@ def _sibling_pass(label, source_coords, articles, source_path, palsule,
     the Böhtlingk family that note marks the article's own headword as the rejected
     reading, so harvesting it ships the one root the source declines to endorse.
     """
-    if not pwg_cited:
-        raise ValueError(
-            '_sibling_pass(%r): pwg_cited is empty. The membership screen would admit '
-            'every coordinate, including ones outside the denominator match_rate '
-            'divides by — the exact shape that shipped 33,67. Pass the set PWG cites.'
-            % label)
-    if not isinstance(same_book_conflicted, (set, frozenset)):
-        raise TypeError('_sibling_pass(%r): same_book_conflicted must be a set of '
-                        'coordinates PWG\'s own filter refused, got %r'
-                        % (label, type(same_book_conflicted).__name__))
+    # An adversarial verifier refuted the first cut of this guard, and the refutation is
+    # worth stating because it is the SAME defect twice. Making the parameters
+    # defaultless fixes only the signature: the shipped H4349 bug was never a missing
+    # argument, it was a CALL SITE passing the permissive value. Two routes survived —
+    # `same_book_conflicted=frozenset()` (the empty check covered pwg_cited only, and
+    # the same-book side is the one that actually shipped `32,56 → cukk`), and a
+    # `pwg_cited` that is merely truthy and always-contains (a list, a dict, a four-line
+    # `__contains__` class), which passes `if not pwg_cited` and screens nothing. Both
+    # are closed here: each screen must be a real set AND non-empty.
+    for _name, _screen in (('same_book_conflicted', same_book_conflicted),
+                           ('pwg_cited', pwg_cited)):
+        if not isinstance(_screen, (set, frozenset)):
+            raise TypeError(
+                '_sibling_pass(%r): %s must be a set or frozenset of coordinates, got '
+                '%r. An object that merely supports `in` can answer True to everything '
+                'and screen nothing.' % (label, _name, type(_screen).__name__))
+        if not _screen and _screen is not NO_SAME_BOOK_CONFLICTS:
+            raise ValueError(
+                '_sibling_pass(%r): %s is empty, which admits every coordinate. '
+                'pwg_cited must be the set PWG actually cites — it is the denominator '
+                'match_rate divides by, and an empty one is how 33,67 shipped. '
+                'same_book_conflicted must be the set PWG\'s own multi-claimant filter '
+                'refused — passing it empty is how 32,56 shipped. A genuinely '
+                'different-author source with no same-book conflicts passes the '
+                'NO_SAME_BOOK_CONFLICTS sentinel, so the exemption is greppable and '
+                'deliberate rather than an empty literal at a call site.'
+                % (label, _name))
     empty = {
         '%s_available' % label: False, '%s_source' % label: None,
         '%s_articles' % label: 0, '%s_coords_cited' % label: 0,

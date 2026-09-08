@@ -476,6 +476,52 @@ def test_dhatup_sibling_screens_are_mandatory_not_opt_in():
     else:
         fail('same_book_conflicted=None was accepted as a screen')
 
+    # THE TWO ROUTES AN ADVERSARIAL VERIFIER FOUND STILL OPEN after the first H4386 cut,
+    # and the reason they matter more than the signature: the shipped H4349 defect was
+    # never a MISSING argument. It was a CALL SITE passing the permissive value — the
+    # same-book screen reached the `pwg-dotted` call and not the `pw` one — and a
+    # defaultless signature cannot see that.
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset(),
+                          pwg_cited=frozenset({'1,1'}))
+    except ValueError:
+        pass
+    else:
+        fail('an EMPTY same_book_conflicted was accepted. The first cut checked '
+             'pwg_cited only, and a verifier rebuilt with this exact call and shipped '
+             '32,56 → cukk — the H4349 defect reproduced against the hardened code')
+
+    class _AlwaysContains(object):
+        def __contains__(self, item):
+            return True
+
+        def __bool__(self):
+            return True
+
+    for bogus in (_AlwaysContains(), ['1,1'], {'1,1': True}):
+        try:
+            bld._sibling_pass(*args, same_book_conflicted=frozenset({'9,9'}),
+                              pwg_cited=bogus)
+        except TypeError:
+            continue
+        fail('pwg_cited=%r was accepted: `if not pwg_cited` is a truthiness test, not a '
+             'screening-space test, so an always-contains object screens nothing while '
+             'looking non-empty' % type(bogus).__name__)
+
+    # The one sanctioned exemption is named, so it is greppable at every call site.
+    if not isinstance(bld.NO_SAME_BOOK_CONFLICTS, frozenset):
+        fail('NO_SAME_BOOK_CONFLICTS must be a frozenset the screen logic can use')
+    if bld.NO_SAME_BOOK_CONFLICTS:
+        fail('NO_SAME_BOOK_CONFLICTS must be empty — it is an exemption, not a set')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=bld.NO_SAME_BOOK_CONFLICTS,
+                          pwg_cited=frozenset({'1,1'}))
+    except ValueError:
+        fail('the named exemption must be accepted where a bare frozenset() is not — '
+             'otherwise a different-author source has no way to say so')
+    except TypeError:
+        fail('the named exemption tripped the type check')
+
 
 def test_dhatup_artifact_is_pinned_to_its_builder():
     """H4386: a stale artifact committed beside a changed builder fails here.

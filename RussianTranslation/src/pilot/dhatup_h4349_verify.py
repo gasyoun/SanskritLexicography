@@ -174,15 +174,51 @@ if _fn is not None:
     check('the membership screen is unconditional, not `if pwg_cited and …`',
           not _guarded, '%d conjunction-guarded screens' % len(_guarded))
     # And the empty set — the old default, now reachable only by passing it — is
-    # refused at entry rather than honoured as a screen.
-    _raises = [n for n in ast.walk(_fn)
-               if isinstance(n, ast.If) and isinstance(n.test, ast.UnaryOp)
-               and isinstance(n.test.op, ast.Not)
-               and isinstance(n.test.operand, ast.Name)
-               and n.test.operand.id == 'pwg_cited'
-               and any(isinstance(b, ast.Raise) for b in n.body)]
-    check('an empty pwg_cited raises instead of admitting every coordinate',
-          bool(_raises))
+    # refused at entry rather than honoured as a screen. Checked below as a loop over
+    # BOTH screen names, which is what the first cut got wrong: it refused an empty
+    # `pwg_cited` and let an empty `same_book_conflicted` through, and the same-book
+    # side is the one that shipped 32,56.
+
+# THE CALL SITES, not just the signature — an adversarial verifier's refutation of the
+# first H4386 cut. The shipped H4349 defect was never a missing argument; it was a call
+# site passing the permissive value, and a signature check cannot see that. Every call
+# to `_sibling_pass` must name both screens, and neither may be an empty literal.
+_calls = [n for n in ast.walk(_tree) if isinstance(n, ast.Call)
+          and isinstance(n.func, ast.Name) and n.func.id == '_sibling_pass']
+check('every _sibling_pass call site names both screens',
+      all({'same_book_conflicted', 'pwg_cited'} <= {k.arg for k in c.keywords if k.arg}
+          for c in _calls),
+      '%d call sites' % len(_calls))
+
+
+def _is_empty_literal(node):
+    """`frozenset()` / `set()` with no arguments — the shape that shipped 32,56."""
+    return (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+            and node.func.id in ('frozenset', 'set')
+            and not node.args and not node.keywords)
+
+
+_empty_at_call = [(c.lineno, k.arg) for c in _calls for k in c.keywords
+                  if k.arg in ('same_book_conflicted', 'pwg_cited')
+                  and _is_empty_literal(k.value)]
+check('no call site passes an empty screen literal', not _empty_at_call,
+      repr(_empty_at_call))
+# And the empty/type refusal must cover BOTH screens. The first cut checked `pwg_cited`
+# alone, so `same_book_conflicted=frozenset()` still shipped 32,56 → cukk against the
+# hardened code — the same defect, one screen over. Found structurally: the validation
+# must be a loop over both screen names whose body raises.
+if _fn is not None:
+    _validating = [n for n in ast.walk(_fn) if isinstance(n, ast.For)
+                   and any(isinstance(b, ast.Raise) for b in ast.walk(n))]
+    _covered = set()
+    for _loop in _validating:
+        for _c in ast.walk(_loop.iter):
+            if isinstance(_c, ast.Constant) and _c.value in ('same_book_conflicted',
+                                                             'pwg_cited'):
+                _covered.add(_c.value)
+    check('the screen validation covers BOTH screens, not pwg_cited alone',
+          _covered == {'same_book_conflicted', 'pwg_cited'},
+          'covered %r — the H4349 defect was on the same-book side' % sorted(_covered))
 
 # --- H4386: pw's published refusal split is a partition of its 40 citations --------
 # The six terms ABBREVIATIONS_RU.md publishes, plus the two empty buckets, must add to
