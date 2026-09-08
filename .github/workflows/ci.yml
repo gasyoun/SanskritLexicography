@@ -79,6 +79,17 @@ jobs:
       - if: steps.check.outputs.has_python == 'true'
         run: ruff check --select=E9,F63,F7,F82 --output-format=github .
 
+  offline-contract-pins:
+    name: Offline contract pins (HeadwordLists, data, scripts, tools, dashboards)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - run: pip install pytest "sanskrit-util @ git+https://github.com/sanskrit-lexicon/sanskrit-util@e977c66ae422c0e7369e1b71cfa734b180578aa2#subdirectory=py"
+      - run: python tests/run_offline_suite.py
+
   russian-translation-gates:
     name: RussianTranslation gates
     runs-on: ubuntu-latest

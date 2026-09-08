@@ -1,0 +1,5 @@
+{"window_id": "w1", "gen_model": "m", "production_metrics": {"wall_clock_minutes": 12.5}}
+{"window_id": "w2", "production_metrics": {"wall_clock_minutes": 0}}
+
+not json at all
+{"window_id": "w3", "gen_model": "m"}
