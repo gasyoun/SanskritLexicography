@@ -2,7 +2,7 @@
   "tool": "tools/document_check.py",
   "skill": "/document",
   "legacy_name": "/artifact-propagate",
-  "generated": "2026-09-08 17:35:32",
+  "generated": "2026-09-08 17:40:45",
   "artifacts": [
     {
       "artifact": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/RussianTranslation/src/pilot/dhatup_h4349_verify.py",
@@ -14,8 +14,8 @@
           "phase": 1,
           "label": "README.md",
           "scope": "repo",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/README.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "README orients headword lists and dictionary codes; a pwg_ru verifier script is not a README-level surface"
         },
         {
           "id": "claude_md",
@@ -30,8 +30,8 @@
           "phase": 1,
           "label": "Cold-start doc (GEMINI.md / equivalent)",
           "scope": "repo",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/AGENTS.md exist, no mention of artifact"
+          "status": "n/a",
+          "evidence": "AGENTS.md mirrors the public-safe hazard block only; the sync rule went to CLAUDE.md where agents read it"
         },
         {
           "id": "sibling_domain_docs",
@@ -39,15 +39,15 @@
           "label": "Sibling domain docs (manual/roadmap/method docs)",
           "scope": "repo",
           "status": "n/a",
-          "evidence": "ABBREVIATIONS_RU.md IS the governing sibling doc and carries the full two-part write-up; LANG_PARITY.md holds the SHARED verdict"
+          "evidence": "ABBREVIATIONS_RU.md IS the governing sibling doc (full two-part write-up); LANG_PARITY.md carries the SHARED verdict"
         },
         {
           "id": "metadoc",
           "phase": 1,
           "label": "Metadoc (<name>.meta.md)",
           "scope": "repo",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/RussianTranslation/src/pilot/dhatup_h4349_verify.meta.md (file does not exist)"
+          "status": "n/a",
+          "evidence": "the governing doc ABBREVIATIONS_RU.md has a metadoc and got its revision row; a single verifier script does not warrant its own"
         },
         {
           "id": "changelog",
@@ -62,8 +62,8 @@
           "phase": 1,
           "label": ".ai_state.md",
           "scope": "repo",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography-rel-95648/.ai_state.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "completed entry added under the H4349 heading"
         },
         {
           "id": "issues",
@@ -71,31 +71,31 @@
           "label": "Issues (per-person task issues)",
           "scope": "repo",
           "status": "n/a",
-          "evidence": "no tracking issue exists for H4349; the three PRs carry the record"
+          "evidence": "no tracking issue for H4349; PRs 2148/2149/2150 are the record"
         },
         {
           "id": "gtd",
           "phase": 2,
           "label": "Uprava/GTD_NEXT_ACTIONS.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/Uprava/GTD_NEXT_ACTIONS.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "residue is agent work, so it was minted as H4386 rather than written as a GTD row"
         },
         {
           "id": "handoffs_registry",
           "phase": 2,
           "label": "Uprava/handoffs/README.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/Uprava/handoffs/README.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "H4349 closed and registered; H4386 minted for the residue"
         },
         {
           "id": "features_index",
           "phase": 2,
           "label": "SanskritLexicography/FEATURES_INDEX.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography/FEATURES_INDEX.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "L18 row added for the concordance and its screens"
         },
         {
           "id": "kosha_manifest",
@@ -118,8 +118,8 @@
           "phase": 2,
           "label": "Uprava/PROJECT_INTERLINKS.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/Uprava/PROJECT_INTERLINKS.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "no cross-repo edge changed; csl-orig was already a read-only input"
         },
         {
           "id": "skills_index",
@@ -150,8 +150,8 @@
           "phase": 2,
           "label": "Uprava/QUESTIONS_LOG.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/Uprava/QUESTIONS_LOG.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "answers no logged question and repeats no logged pattern"
         },
         {
           "id": "megabook",
@@ -174,24 +174,24 @@
           "phase": 2,
           "label": "claude-config HOOKS_INDEX.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/claude-config/HOOKS_INDEX.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "no hook changed; the fail-closed exit is in the verifier script, not enforcement"
         },
         {
           "id": "repo_status_rollup",
           "phase": 2,
           "label": "Uprava/REPO_STATUS_ROLLUP.md",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/Uprava/REPO_STATUS_ROLLUP.md (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "repo section refreshed by the release, not by this artifact"
         },
         {
           "id": "hub_manifest",
           "phase": 2,
           "label": "Uprava/tools/hub_manifest.json",
           "scope": "org",
-          "status": "missing",
-          "evidence": "/Users/mac/Documents/GitHub/Uprava/tools/hub_manifest.json (file exists, no mention of artifact found)"
+          "status": "n/a",
+          "evidence": "not a long-lived hub or registry"
         },
         {
           "id": "auto_derived_views",
@@ -207,7 +207,7 @@
           "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
           "scope": "org",
           "status": "n/a",
-          "evidence": "FINDINGS §636 added: a same-author edition is not a second witness"
+          "evidence": "FINDINGS 636 added: a same-author edition is not a second witness"
         }
       ]
     }
