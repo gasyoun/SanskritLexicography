@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 05-09-2026_
+_Created: 06-08-2026 · Last updated: 08-09-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -42,7 +42,17 @@ Markdown link-check, YAML lint, a **Python lint job that now fires** (`.py`
 files exist — the earlier "never fire because no such files exist" is stale), a
 conditional JS lint, a **RussianTranslation gates** job that compiles the
 pipeline scripts and runs their fixture selftests, and a **docs-site pytest**
-job that runs `docs_site/test_docs_site.py`. The active pre-commit hooks
+job that runs `docs_site/test_docs_site.py`, and an **offline contract-pins**
+job (H4353) that runs
+[`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py)
+— 201 pins for the 62 modules under `HeadwordLists/`, `data/`, `scripts/`,
+`tools/` and the three dashboard generators, network off, fixtures under
+`tests/fixtures` only, literal record-count floors for every headword list
+(evidence and the deliberately-uncovered list:
+[`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)).
+**Regenerating a list or changing a parser means updating the literal floor or
+the pinned vector in the same PR** — a shrink or a silent contract change fails
+CI by design. The active pre-commit hooks
 ([`.pre-commit-config.yaml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml)) are `check-yaml`,
 `end-of-file-fixer`, `trailing-whitespace` (markdown-aware), and
 `check-merge-conflict`, plus the local
