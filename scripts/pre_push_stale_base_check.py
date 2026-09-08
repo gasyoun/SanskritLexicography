@@ -313,7 +313,18 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
-from generated_artifact_paths import GENERATED_SINGLE_WRITER_PATHS  # noqa: E402
+try:
+    from generated_artifact_paths import GENERATED_SINGLE_WRITER_PATHS  # noqa: E402
+except ImportError:
+    # H4348: this file is vendored (cologne_batch_deploy.py, prepush-guard row)
+    # into 14 sibling repos that never carry tools/generated_artifact_paths.py --
+    # it is an Uprava-only declaration of --land single-writer targets. A bare
+    # import here crashed the checker at module load in every vendored repo,
+    # which .githooks/pre-push (`elif ! "$PY" "$CHECKER" ...; then status=1`)
+    # turned into a BLOCKED push, not the fail-open the guard promises when its
+    # own file is missing. Absent the module, no path is exempt -- exactly
+    # today's behaviour in every repo that predates H3073 (18-08-2026).
+    GENERATED_SINGLE_WRITER_PATHS = frozenset()
 
 # S27 telemetry (29-08-2026): persist every verdict to the clone's central
 # firing record — the "no central firing record exists anywhere" gap of the
