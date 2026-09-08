@@ -22,15 +22,14 @@ translation pipelines under
 ([`epistemic_dashboard/`](https://github.com/gasyoun/SanskritLexicography/tree/master/epistemic_dashboard), [`findings_dashboard/`](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard),
 [`progress_dashboard/`](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) — public kitchen at
 [/progress/](https://gasyoun.github.io/SanskritLexicography/progress/), local ops twin
-`dashboard_server.py` → `127.0.0.1:8765`, see
-[README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md)), plus root
-[`requirements.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/requirements.txt). Treat as **hybrid**: work spans data/docs and pipeline
-code. Orientation by audience: [`docs/manuals/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals).
+`dashboard_server.py` → `127.0.0.1:8765`). Treat as **hybrid**: work spans
+data/docs and pipeline code. Orientation by audience: [`docs/manuals/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals).
 
-No single top-level build, but tests/selftests exist and CI
-([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)) runs Markdown/YAML lint, link-check,
-Python lint, conditional JS lint, a RussianTranslation gates job, a docs-site
-pytest job, and an **offline contract-pins** job (H4353) running
+No single top-level build, but tests/selftests exist (e.g.
+[`docs_site/test_docs_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/test_docs_site.py)) and CI
+([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)) runs Markdown/YAML/Python/JS lint, link-check,
+RussianTranslation gates, docs-site pytest, and an **offline contract-pins**
+job (H4353) running
 [`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — 201 pins over 62 modules, network off,
 fixtures under `tests/fixtures` only, literal record-count floors per
 headword list (evidence:
@@ -60,7 +59,7 @@ printed form (matching/dedup/joins); key2 = closer to printed source
 checking digitized text against the scan).
 
 Dictionary codes: AP, BHS, BUR, CAE, CCS, GRA, INM, MD, MW, PD, PWG, PWK, SCH,
-SKD, VCP, VEI (full table: [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md) / org `CLAUDE.md`).
+SKD, VCP, VEI (table: [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md)).
 
 ## Dual changelog — shared 1.144.x namespace (H3258)
 
@@ -89,7 +88,7 @@ existing BOM state on write, never silently add/strip one. All UTF-8.
 
 Files too large for an editor: `sanhw1.xlsx`,
 `DCS_statistical_evaluation.htm` (~75 MB), `DCS-Moniers-roots-w-references.html`
-(~16 MB), the PWG/PWK error lists — use streaming/CLI tools, not Read.
+(~16 MB), PWG/PWK error lists — use streaming/CLI tools, not Read.
 
 ## RussianTranslation/ — mw_ru
 
@@ -108,8 +107,8 @@ data; every tool/prompt/stage/doc operating on it lives here. A session in
 (H3564, ruling F6).
 
 Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
-(secondary), headword-by-headword at scale (749 DCS-attested verb roots
-alone; ~11.6k sense rows as of 24-07-2026).
+(secondary), headword-by-headword at scale (~11.6k sense rows as of
+24-07-2026).
 
 - **Production (H1110):** headless CLI on manifest v2 (`headless_worker.py` /
   `coordinator.py` / `bounded_staged_run.py`); Max Workflow lane is forensics
@@ -129,20 +128,25 @@ alone; ~11.6k sense rows as of 24-07-2026).
   the proven headless engine; legacy PWG-TM writers still run
   ([`compat.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_pipeline/compat.py)). Wave 1 closed **PARTIAL** (no provider canary, no
   independent review, no cutover):
-  [WAVE1_REPORT](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WAVE1_REPORT_RussianTranslation_PWG_CONTROL_PLANE_31-08-2026.md).
+  [WAVE1_REPORT](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WAVE1_REPORT_RussianTranslation_PWG_CONTROL_PLANE_31-08-2026.md). Tools:
+  [`cohort_engine.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cohort_engine.py), [`no_pwg_residual_ledger.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_residual_ledger.py).
 - **Enumeration tiers are FOUR, not two (H3948):**
   [`microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py) is the one sanctioned reading of PWG's four
   printed tiers — never re-derive from a marker's shape. Tier-rule change ⇒
   re-run [`microstructure_four_tier_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure_four_tier_selftest.py) + re-measure with
-  [`pwg_four_tier_store_impact.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) same PR. A tier ambiguous in print
-  stays unsplit, counted unresolved — **never guessed** (FINDINGS §453).
+  [`pwg_four_tier_store_impact.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) same PR
+  ([report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3948_four_tier_store_impact.json): 28.02% affected). A tier ambiguous in print
+  stays unsplit, counted unresolved — **never guessed**
+  ([FINDINGS §453](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)).
 - **Gate-evidence contract (H3748):** every pwg_ru gate builds its verdict
   *through* [`gate_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gate_evidence.py) — hashed inputs, hit counts, a JSON
   sidecar, `assert_nonvacuous()` (a vacuous PASS is a hard FAIL, #1803).
   Legitimate emptiness is pre-registered by name (`LEGITIMATE_EMPTY` +
   [the spike](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/SPIKE_PWG_GATE_EVIDENCE_LEGITIMATE_EMPTY_CLASSES_31-08-2026.md)), never inferred from silence. New/changed gate registers a
   `gate_id` via `GateEvidence` — CI's `gate_evidence.py --require <gate_id>`
-  fails on a missing sidecar.
+  fails on a missing sidecar. G9 (`validate_interop.py`) is expected **RED**
+  on shipped [`release/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release) (12,374 duplicated ids, #1798) — re-cutting is a
+  publication decision, not a code fix.
 - **Printed-locus invariant (H3751):** `~~h<N>` in a pwg_ru sub-card key is a
   0-based `enumerate` index over PWG records, **never** the printed homonym
   number (source `<h>` starts at 1 — conflating them was #1801). Resolve
@@ -183,9 +187,6 @@ covers them ([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/mast
 - [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) frames the research
   direction (evidence-graded lexicography, csl-atlas review, paper pipeline
   P1–P6) and orients this repo within the broader project.
-- Per the global rule, every path/URL is a clickable Markdown link in chat
-  and GitHub issue/PR/release bodies — full `blob`/`tree` URLs there,
-  relative links don't resolve.
 
 ## Agent skills
 
