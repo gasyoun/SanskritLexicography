@@ -1153,6 +1153,223 @@ table byte-for-byte (1226 rows, verified as a zero diff);
 `python src/pilot/dhatup_h4349_verify.py` re-derives every number above from the artifact and the
 raw corpora without importing the builder.
 
+#### The seven residues closed, and the citation form that retires 83.7% (H4438, 09-09-2026)
+
+H4432 declined the re-baseline and named seven residues. All seven are ruled here. Two of the
+five corrections were applied, one was measured and **declined**, one was measured and
+**superseded**, and the fifth — the unread third citation form — turns out to be the largest
+single fact about this concordance that anybody has found: **it retires 83.7% permanently.**
+
+**Every figure below is BUILT to a scratch `--out` and diffed key by key, never added up.** The
+four numbers are reported separately because H4432 was refuted for summing them:
+
+| shipped 1465 → **1573** | rows added | rows DELETED | roots changed | source changed only |
+|---|---|---|---|---|
+| | **131** | **23** | **17** | **26** |
+
+`coords_cited` 1751 → **1890** · `coords_conflicted` 271 → 346 · `coords_linked_pwg` 1226 → 1302
+· `coords_resolved_by_head_line` 108 → 119 · `match_rate` 83.7% → **83.2%**.
+
+##### Why the smaller percentage is the better table
+
+Coverage fell and the table improved, and the two are not in tension: the denominator grew by
+139 coordinates PWG genuinely cites and the reader had never seen. The independent check is the
+one witness this concordance is allowed to consult — Monier-Williams, a different author:
+
+| | before | after |
+|---|---|---|
+| agreement with MW | 77.7 % | **80.1 %** |
+| agreement allowing a variant spelling | 85.4 % | **87.9 %** |
+| coordinates where MW and PWG disagree | 182 | **168** |
+| coordinates only MW could reach (`mw_only_coords`) | 124 | **33** |
+
+**83.7% and 83.2% are not comparable and may not be printed side by side as a regression.** The
+first is 1465/1751 over two of PWG's three citation forms; the second is 1573/1890 over all
+three. H4432's ruling that "83.7% may not be published again until this is ruled on" is
+discharged: the number is **retired**, and `dhatup_h4349_verify.py` now says so in a comment
+beside the assertion that replaced it.
+
+##### Residue 1 — the Böhtlingk `v. l.` clause test, ported and proven to change nothing
+
+`_boehtlingk_vl_governs()` mirrors MW's `_vl_governs` for the trailing-note shape: the note
+governs the citation only when nothing but punctuation stands between them. Parenthesis depth is
+tracked, markup and `{#…#}` spans are blanked before the punctuation is read (so the `.` inside
+`<ab>caus.</ab>` cannot end a clause), and an intervening `<ls>` or `;` ends the scope.
+
+The strict reading — no `.` at depth zero — leaves **148** of the 331 line-scoped notes governing.
+The handoff required that Böhtlingk's ordinary shape `</ls>. <ab>v. l.</ab> für {#X#}` be admitted,
+and it is: a census of the 185 non-governing firings shows exactly three punctuation-only
+separations, `.` (12) + `.,` (3) + `.—` (2) = 17, and 148 + 17 = **165 governing, 166 not** — the
+verifier's independent "166 of 331, 50.2%" reproduced to the coordinate.
+
+**The independent verifier refuted the justification, not the arithmetic — and the refutation is
+published here rather than filed away.** "Nothing but punctuation" is measured on a copy with
+markup and `{#…#}` / `{%…%}` spans already blanked, so in **12 of the 17** a whole lemma and its
+gloss stand between citation and note and are read as blank. Reading all 17 German lines, **8 are
+demonstrable false positives** whose note governs a *later* coordinate — including `20,13 śal`,
+which the first draft of this section and of the docstring named as proof the shape is genuine
+(śal is a variant reading for `śval`, **at 15,42**). `24,20 parj` and `21,22 pas` are right by
+accident: their governing note stands *before* the citation, not after it. The shape stays
+admitted and 165 stays the published number, because the 148/165 choice has never moved a shipped
+row and structurally cannot — which is the next paragraph.
+
+**The 165 adjudicated:** 102 bare disownings, 48 naming the winning root outright
+(`v. l. für {#X#}`), 15 naming an artha. Of the 15, eight or nine are residual misfires of the
+same class MW's guard also declares and leaves alone — `2,31 jyut`, `4,15 maṅk`, `7,40 vraj`,
+`28,23 raph`, `32,46 guṇṭh`, `32,90 sphaṭ` are variant readings *of a quoted text*, not of the
+coordinate. **None of the 165 ships a row.** The counterfactual build with the clause test wired
+in and everything else reverted is a **zero diff**: 0 added, 0 deleted, 0 roots changed, 0 source
+changed, every `_stats` key identical. The guard is standing, not live — `pw_refused_variant_reading`
+and `pwg-dotted_refused_variant_reading` are both **0**, and that is the claim, not a gap.
+
+**Why that zero diff is weaker evidence than it looks (verifier C2).** `_boehtlingk_vl_governs()`
+has exactly one call site, inside `_scan_coords()`, and `_scan_coords()` serves only the two
+sibling passes — `read_pw_coords` and `read_pwg_dotted_coords`. PWG's own head-line pass,
+`read_pwg_coords`, never calls it. The zero diff is therefore true **by construction, not by
+measurement**, and the 1999 / 331 / 165 / 166 / 148 census above characterises a population this
+function is never asked about. Both facts now stand in the docstring, so the next reader cannot
+mistake the one for the other.
+
+**The other counterfactual was BUILT, and declining it is a choice rather than an omission
+(verifier C3).** Wiring the clause test into PWG's own pass does restore `35,80 → chid`, the one
+measured regression named below. Diffed key by key against the shipped artifact, never added up:
+**38 rows added · 14 rows DELETED · 16 roots changed · 43 source changed.** Among the 14 deletions
+are `20,13`, `2,31`, `4,15` and `7,40` — precisely the misfire class the census above identifies,
+now removing evidence instead of merely being counted. Its `match_rate` **rises** to 85.2%, and
+that is the trap rather than the case for it: the denominator falls with it (1890 → 1874 cited),
+while the one rate computed against a *different author* falls — **MW cross-agreement 80.1% →
+79.4%**. The guard stays on the siblings.
+
+The 69 gains the handoff asked about are the *re-baseline's* gains, not this port's. Re-measured
+under the corrected `<lex>` scope they are **74** gains and the same **8** flips (`15,33`,
+`17,13`, `32,30`, `32,68`, `32,119`, `33,5`, `33,55`, `35,11`); under the strict 148 reading, 70.
+**They are not applied** — H4386 and H4432 both declined that re-baseline and this pass does not
+re-open it.
+
+##### Residue 2 — `_HEAD_LEX` scoped to markup BEFORE the citation: APPLIED
+
+`_head_nominal(line, at)` searches `line[:at]`. **73 of the 128** nominal flags carried no tag
+before the citation — `vell` was flagged for `15,33` off a `<lex>n.</lex>` **1148 characters**
+later in a different sense. Built alone: 1465 → **1463**, deleting `15,33 vehl` and `19,13 klav`,
+fixing **`15,32 kvel→kṣvel`** and **`32,12 naḍ→naṭ`**, one provenance change `9,76 laḍ pwg→mw`,
+`coords_conflicted` 271 → 277. Exactly the figures the handoff predicted.
+
+##### Residue 5 — the head/body discriminator: MEASURED, DECLINED, SUPERSEDED
+
+Widening `at_head` to `<div n="p">` continuations costs **9 coordinates** and buys **1** gain and
+**1** correction; widening it to the whole article costs **55** and buys **4** corrections —
+`19,54 glepana→mad`, `23,39 spardhā→hvā`, `32,13 pratiharṣa→krath`, `33,73 avakalkana→bhū`. It is
+declined because **residue 3 buys all four at zero coverage cost**, which is the cleaner
+instrument for the same defect. The measurement is kept because a declined option with no number
+beside it is not a decision.
+
+##### Residue 3 — the sole nominal head claimant: APPLIED as a DROP
+
+A coordinate whose only head-line claimant is a `<lex>` noun article used to win untested.
+`23,39` is the case: `{#sparDA#}¦ … <lex>f.</lex> … als <ab>Bed.</ab> von {#hvA#}` — a noun
+article stating in as many words that the coordinate is a *meaning of* `hvā`, while `hvā`'s own
+article claims it in the body with the matching artha. The noun is now removed from the claimant
+set and the winner is whatever single verbal claimant remains, or nothing. Six coordinates, every
+one an action noun: `7,3 taucchya→kuc`, `19,54 glepana→mad`, `20,27 saṃparcana→kuc`,
+**`23,39 spardhā→hvā`**, `32,109 niśāna→tij`, `33,73 avakalkana→bhū`. Published in
+`_dropped_sole_nominal_head` with the claimants left standing — a refusal a reader cannot inspect
+is a refusal a reader has to take on trust.
+
+**A coupling worth recording:** applied without residue 6, this screen *regresses* `32,13`
+(śrath→krath); applied with it, `32,13` is correct via `pwg`. Neither correction is safe to
+argue from its own counterfactual alone, which is why the shipped figures are the stacked build.
+
+##### Residue 6 — the third citation form: RULED **ADMIT**, with two coordinates refused
+
+`<ls n="DHĀTUP.">4,13</ls>` occurs **320 times over 270 distinct coordinates**, **141** of them
+cited no other way. Neither `_DHATUP` nor `_DHATUP_N` could see one. MW's reader in the same file
+has handled the exact analogue since H4339. The evidence for admitting:
+
+1. **281 of the 320** stand on the citing article's **own head line** — the position Böhtlingk
+   uses to state a root's numbering, not to quote someone else's.
+2. **Monier-Williams independently cites 93 of the 141** new coordinates.
+3. **138 of the 141 land inside the coordinate space PWG's other two forms already attest.**
+4. **The H4349 renumbering hypothesis does not fit this class.** That finding was *pw* — a
+   different edition — naming a coordinate PWG never cites (`pw 33,67` = `pwg 33,88`). These are
+   PWG's own citations, standing beside PWG's own first citation for the same root.
+
+Corpus-confirmed corrections it buys: **`32,105 gaj→garj`** (gaj's own article ends *«Auch
+gājayati … Vgl. garj»*), **`32,7 lal→laḍ`** (lal's article quotes *«laḍ, lāḍayati upasevāyām
+DHĀTUP. 32,7»* — the coordinate is spelled out under the other root). **Of the 17 root changes,
+MW independently backs the new root in 14 and the old in 2** — `32,105 gaj` (against PWG's own
+*«Auch gājayati … Vgl. garj»*) and `32,131 ruṣ` — and has no unambiguous claimant for
+`35,80`, the one measured regression.
+
+**The three coordinates above their gaṇa's ceiling — and why the screen keeps its teeth.** Form C
+prints no `DHĀTUP.` beside its numbers — the authority sits in the `n=` attribute — so unlike
+forms A and B it carries no local redundancy against which a wrong gaṇa would show. (The verifier
+refuted the first wording here, "an attribute is inheritable": in `27,71` the *gaṇa* is printed
+body text; what the attribute removes is the repeated source label that makes A and B read as a
+fresh citation rather than a continuation.) A form with no cross-check of its own may not certify
+its own coordinate space, so `coordinate_ceilings()` is now built from the **spelled-out** forms
+alone, and a form-C-only coordinate above that ceiling is refused unless MW names it:
+
+| coordinate | gaṇa attested to | what MW says | verdict |
+|---|---|---|---|
+| `32,133` stūp | 132 (108 coordinates) | `Dhātup. xxvi, 127; <ls n="Dhātup.">xxxii, 133</ls>` — PWG's identical pair | **admitted**, the last root of the gaṇa |
+| `27,71` rādh | 33 (32 coordinates) | `Dhātup. xxvii, 16` and `<ls n="Dhātup.">xxvi, 71</ls>` — gaṇa **26**, not 27 | **refused** — `27` carried forward from the `27,16` one clause earlier |
+| `6,113` kṣip | 25 (23 coordinates) | nothing | **refused** — Böhtlingk's own German reads *«nur im BHARTṚ. z. B. 6,113. 17,43 nachzuweisen»*: the two loci inside the parenthesis are **Bhartṛhari's**, and `26,14` is the dhātupāṭha coordinate |
+
+`27,71` is the cross-edition renumbering H4349 warned about, caught by the screen rather than
+shipped. **The screen's limit, stated rather than left to be found:** the same kṣip parenthesis
+also mis-tags `17,43`, and the ceiling does *not* refuse it — gaṇa 17's spelled-out ceiling is
+**89**, so a serial of 43 sits deep inside the attested space and no coordinate-space screen could
+ever see this defect. It is caught, but not here. It ships anyway — correctly, and by a different mechanism: `riṣ` claims `17,43`
+in **form A** on its own head line with the artha `{#hiMsAyAm#}`, `caṣ` claims it from VOP., so
+kṣip's spurious claim merely made the coordinate a three-way conflict, PWG dropped it, and MW
+resolved it to `riṣ` — which Palsule glosses `hiṁsāyām`. The ceiling screen catches a bad
+coordinate that is *invented*; it does not catch a bad claim on a coordinate that exists. That is
+what the multi-claimant filter and the independent witness are for, and here both worked — the
+ceiling gets no credit for `17,43`. Both refusals happen **before** resolution, so neither enters
+the denominator: 1892
+cited, 2 refused, **1890**. They are published in `_refused_form_c_out_of_space` with the ceiling
+each failed and who claimed it. Building the ceiling from all three forms would have let the
+defect `27,71` certify the very gaṇa space it sits above, and would have handed the sibling passes
+38 serials PWG never attests.
+
+**The named cost.** `35,80 chid→chad` is the one measured regression: `chad`'s form-C head claim
+carries a governing trailing `v. l. nur AIT. BR. 1,30`, while `chid`'s body citation matches
+Palsule's `chede`. The artifact's own inline-artha sample now flags it. Measured against the final stack, PWG
+resolves **132 coordinates it could not resolve before and 68 it no longer resolves**; of
+those 68, **14 would return if residue 1's guard were applied to PWG's own pass** — which
+H4432 declined and this pass does not re-open (`10,33`, `15,33`, `16,12`, `18,18`, `19,65`,
+`22,21`, `30,7`, `31,10`, `32,18`, `32,47`, `32,65`, `34,19`, `34,33`, `35,66`). A lost
+coordinate here is a coordinate that acquired a second genuine claimant, not a coordinate
+that lost its evidence. **MW does not rescue the 23 deletions and was not
+expected to:** read through its strict single-claimant channel it is silent on 21 of them and
+names a different root on the other 2 (`28,92 toḍana`, `31,10 knu`) — these are coordinates PWG
+itself now finds contested, and MW is contested there too. A deletion here is a refusal to pick
+between two genuine PWG claimants — `9,78` is claimed on the head line by both `kaḍ` and
+`kaṇḍ`, both glossed *«sich freuen»* — never a coordinate that lost its evidence.
+
+##### Residue 4 — `32,30` stays ambiguous
+
+Untouched. It belongs to the re-baseline this pass does not apply, and the trailing-parenthesis
+ambiguity that made it uncertain is the same one MW's guard declares and leaves alone.
+
+##### Residue 7 — `FEATURES_INDEX.md` L18 amended
+
+The baseline moved, so the row is now in scope and is amended in this pass: it names the clause
+scope, the shipped 1573/1890, and that the guard is standing rather than live.
+
+**Re-derive:** `python src/pilot/dhatup_h4438_scope_probe.py` — **39 checks**, all of them
+re-derived from `pwg.txt`, `mw.txt` and the artifact **without importing the builder**; exits 2
+when a corpus is absent, never 0. `--dump <coord>…` prints every PWG line claiming a coordinate
+in all three forms, so an adjudication quotes Böhtlingk instead of paraphrasing him.
+`python src/pilot/dhatup_h4349_verify.py` (35 checks) and `python src/pilot/ls_enrichment_selftest.py`
+(23 checks) are both re-run in this PR, as the repo's sync rule requires.
+
+##### Who certified this
+
+Implementation by Opus 5 (`claude-opus-5`). **The implementer does not self-certify** — an
+independent adversarial verifier's report is committed beside H4432's as
+[reports/H4438_INDEPENDENT_VERIFIER_REPORT_09-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4438_INDEPENDENT_VERIFIER_REPORT_09-09-2026.md).
+
 ## Mechanical RU style rules (no-ё, terse metalanguage) — H1305
 
 A separate, purely mechanical style stream lives in its own doc, not here:

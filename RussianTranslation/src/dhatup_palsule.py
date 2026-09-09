@@ -46,12 +46,21 @@ re-attributed: MW assigns them in words this parser does not read, and inventing
 attribution would be the fabrication this pipeline exists to refuse.
 
 DATA HONESTY — COVERAGE AND ACCURACY ARE DIFFERENT NUMBERS.
-  Coverage: 1,465 of the 1,751 `DHĀTUP. x,y` coordinates PWG cites (83.7%) — 1,226
-  (70.0%) attributed by Böhtlingk himself and 239 added by the MW witness above (220 of
-  them backed by MW's structured field, 19 by running prose alone — a weaker class,
-  counted apart as `_stats.coords_filled_from_mw_prose_only`). The remaining 286 are
+  Coverage: 1,573 of the 1,890 `DHĀTUP. x,y` coordinates PWG cites (83.2%) — 1,302
+  (68.9%) attributed by Böhtlingk himself and 271 added by the MW witness above (241 of
+  them backed by MW's structured field, 30 by running prose alone — a weaker class,
+  counted apart as `_stats.coords_filled_from_mw_prose_only`). The remaining 317 are
   coordinates no dictionary resolves unambiguously, or roots
   absent from Palsule's artha index. Filter `source == 'pwg'` for the H1333 table.
+
+  THE OLDER 1,465 of 1,751 (83.7%) IS RETIRED, NOT REGRESSED (H4438, 09-09-2026). PWG
+  writes its `DHĀTUP.` citations three ways and this concordance read two: the third,
+  `<ls n="DHĀTUP.">4,13</ls>`, occurs 320 times over 270 coordinates, 141 of them cited
+  no other way. The old denominator was a property of a regex set rather than of PWG, so
+  the two percentages are over different populations and are not comparable. Across the
+  same change, agreement with Monier-Williams — the one independent witness this
+  concordance is allowed to consult — rose from 77.7% to 80.1%, and `mw_only_coords`,
+  the coordinates only MW could reach, fell from 124 to 33.
 
   WHY pw ADDS NOTHING (H4349), and why that is the finding rather than a failure. pw is
   the *Sanskrit-Wörterbuch in kürzerer Fassung* — Böhtlingk's own abridgement — so it
