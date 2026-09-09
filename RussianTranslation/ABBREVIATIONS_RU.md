@@ -1211,7 +1211,7 @@ which the first draft of this section and of the docstring named as proof the sh
 (śal is a variant reading for `śval`, **at 15,42**). `24,20 parj` and `21,22 pas` are right by
 accident: their governing note stands *before* the citation, not after it. The shape stays
 admitted and 165 stays the published number, because the 148/165 choice has never moved a shipped
-row and structurally cannot — which is the next paragraph.
+row and structurally cannot, which is what the C2 paragraph below establishes.
 
 **The 165 adjudicated:** 102 bare disownings, 48 naming the winning root outright
 (`v. l. für {#X#}`), 15 naming an artha. Of the 15, eight or nine are residual misfires of the
