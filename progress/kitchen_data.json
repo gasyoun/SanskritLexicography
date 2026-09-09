@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T13:21:40Z",
+  "generated_at": "2026-09-09T07:56:22Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": false,
+    "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 110614,
+    "youngest_artifact_age_seconds": 46,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,26 +17,26 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-02T19:01:43Z",
-        "age_seconds": 497993,
+        "age_seconds": 564876,
         "size": 26345513
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1015015,
+        "age_seconds": 1081898,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1015015,
+        "age_seconds": 1081898,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-07T06:38:02Z",
-        "age_seconds": 110614,
-        "size": 3564688
+        "mtime": "2026-09-09T07:55:33Z",
+        "age_seconds": 46,
+        "size": 3565416
       }
     }
   },
@@ -52,7 +52,7 @@
     "pending": 29,
     "newest_card_at": "2026-08-29T08:49:35Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 10.19,
+    "days_since_last_card": 10.96,
     "campaign_days": 72
   },
   "yield_quality": {
@@ -538,20 +538,20 @@
     "blocked": true,
     "banner": "DO NOT START A SECOND PAID WINDOW",
     "operator_one_liner": "If the kitchen collision banner is red (or collision_guard.blocked=true): DO NOT start a second paid window on those keys/root — a live job or recent store-hit / lease collision already holds them. Wait for the live job to finish or requeue that lease; only then import another window.",
-    "collision_count": 1,
+    "collision_count": 2,
     "kind_counts": {
-      "nominal_keys_active": 1
+      "nominal_keys_active": 2
     },
     "last": {
-      "ts": "2026-09-06T13:20:28Z",
+      "ts": "2026-09-09T07:55:33Z",
       "type": "lease_collision",
-      "root": "h4213can02",
+      "root": "h4213can090910550802",
       "level": "error",
-      "summary": "DO NOT START A SECOND PAID WINDOW — nominal lease keys already active: asa_mskfta~~h0_zz_pw",
+      "summary": "DO NOT START A SECOND PAID WINDOW — nominal lease keys already active: arvant~~h0_zz_nws00",
       "kind": "nominal_keys_active",
       "overlap_count": 1,
       "overlap_sample": [
-        "asa_mskfta~~h0_zz_pw"
+        "arvant~~h0_zz_nws00"
       ]
     },
     "recent": [
@@ -565,6 +565,18 @@
         "overlap_count": 1,
         "overlap_sample": [
           "asa_mskfta~~h0_zz_pw"
+        ]
+      },
+      {
+        "ts": "2026-09-09T07:55:33Z",
+        "type": "lease_collision",
+        "root": "h4213can090910550802",
+        "level": "error",
+        "summary": "DO NOT START A SECOND PAID WINDOW — nominal lease keys already active: arvant~~h0_zz_nws00",
+        "kind": "nominal_keys_active",
+        "overlap_count": 1,
+        "overlap_sample": [
+          "arvant~~h0_zz_nws00"
         ]
       }
     ],
@@ -727,7 +739,7 @@
     "total_idle_seconds": 3844596,
     "total_idle_hours": 1067.94,
     "mean_gap_seconds": 640766.0,
-    "current_idle_seconds": 110615,
+    "current_idle_seconds": null,
     "last_idle_seconds": 758439,
     "last_idle": {
       "from": "2026-08-29T11:57:08Z",
@@ -753,9 +765,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 110615,
-        "idle_days": 1.28,
-        "idle_hours": 30.73
+        "idle_seconds": 0,
+        "idle_days": 0.0,
+        "idle_hours": 0.0
       }
     ],
     "recent_gaps": [
@@ -895,19 +907,10 @@
     }
   },
   "calendar": {
-    "start": "2026-05-12",
-    "end": "2026-09-08",
+    "start": "2026-05-13",
+    "end": "2026-09-09",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-05-12",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-05-13",
         "cards": 0,
@@ -1978,6 +1981,15 @@
         "idle_hours": 0,
         "level": 0,
         "idle": false
+      },
+      {
+        "date": "2026-09-09",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6026,
@@ -1989,6 +2001,16 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.144.160",
+        "date": "2026-09-08",
+        "bullets": []
+      },
+      {
+        "version": "1.144.159",
+        "date": "2026-09-08",
+        "bullets": []
+      },
       {
         "version": "1.144.156",
         "date": "2026-09-07",
@@ -2036,16 +2058,6 @@
       },
       {
         "version": "1.144.134",
-        "date": "2026-08-31",
-        "bullets": []
-      },
-      {
-        "version": "1.144.133",
-        "date": "2026-08-31",
-        "bullets": []
-      },
-      {
-        "version": "1.144.132",
         "date": "2026-08-31",
         "bullets": []
       }
