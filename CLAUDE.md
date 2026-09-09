@@ -106,6 +106,8 @@ gh release create vx.y.z --repo gasyoun/SanskritLexicography --title "vx.y.z" --
 
 4. Prove it landed: `python ~/Documents/GitHub/Uprava/tools/cut_release.py . --verify-tag x.y.z` (exit 1 = orphan).
 
+**Backfilling an older version? add `--latest=false` to `gh release create`.** Without it GitHub hands the Latest badge to whatever release was published most recently — so cutting `v1.0.0` today would advertise a June changelog as this repo's current release. The 09-09-2026 backfill published all 21 with the flag, which is why `v1.144.164` still holds the badge. It is only ever omitted for a genuine new release that really is the newest.
+
 Step 3 is the step that gets dropped: the PR merges, the session reports the release as
 cut, and nothing ever tags it. `--verify-releases` is the backstop, not the plan. **Never
 `git tag -f` a published tag** to repair drift — tag the right commit under the right
