@@ -836,6 +836,17 @@ a new place, and it means the narrow variant is not a screen ordering away from 
 > above is mechanical and re-derivable. Publishing a number nobody can re-derive is the exact
 > defect class this handoff exists to close, so the correction is recorded rather than
 > overwritten.
+>
+> **The replacement gloss is wrong too, and for the same reason** (H4432's independent
+> verifier, 09-09-2026). "All 18 hand the coordinate to a claimant that is not a verbal head
+> line" is a statement about the *builder's flags*, not about the articles: **8 of the 18
+> targets are verbal root articles, 6 of them carrying Böhtlingk's own `√`** — `lal` (9,76),
+> `tuj` (32,30), `bal` (32,68), `tantray` (33,5), `las` (33,55), `svar` (35,11), plus `vell`
+> (15,33) and `hvā` (23,39) unmarked. "No head-line citation" is not "nominal": Böhtlingk puts
+> a causative or a later sense of the *same root* on a `<div n="p">` continuation line, e.g.
+> `— <ab>caus.</ab> {#lAsa/yati#} … <ls>DHĀTUP. 33,55</ls>` under `las`, and the head/body
+> discriminator sees exactly one physical line after `<L>`. The mechanical 8 + 10 split stands;
+> what it *means* does not. Do not re-derive "18 nominal targets" from it.
 
 The coverage arithmetic, published as required rather than folded into anything: counterfactual B
 would take 1465/1751 (83.7%) to **1496/1751 (85.4%)** — 74 of the 93 gains have a Palsule row, 43
@@ -867,11 +878,25 @@ justified from Böhtlingk's own prose rather than from the nicer number it produ
 
 **Every published figure reproduces.** `src/pilot/dhatup_h4432_rebaseline_probe.py` restates the
 citation scan, the head-line weighting, the `<lex>` flag and H1333's resolution from this
-document's prose, imports nothing from the builder, and asserts 24 figures — 1751 cited, 271
+document's prose, imports nothing from the builder, and asserts 25 figures — 1751 cited, 271
 conflicted, 1480 resolved, 331 head-line claimants carrying the note, the blunt reading's
 **93 / 130 / 18** (241 moved), the narrow reading's **0 / 93 / 18** with `32,56 → cakk`, the funnel
 **74 → 43 → 31 → 1496/1751**, the **17** of 18 that are already shipped, and the 8 + 10 split.
-All 24 hold. H4386's arithmetic is confirmed exactly, including the corrected 8 + 10.
+All 25 hold. H4386's arithmetic is confirmed exactly, including the corrected 8 + 10.
+
+**One of those 25 figures is arithmetic that the pipeline does not produce.** `1465 + 31 =
+1496` counts the gains and assumes the 18 reattributions are free. They are not: 12 of the 18
+targets have no Palsule row, so a reattributed coordinate either changes witness or **loses its
+row outright**. Built end to end rather than added up, the narrow line-scoped guard gives
+**1493/1751 (85.3%)** — 31 rows added, **3 deleted**, 21 rows changing root and 46 more changing
+only their `source` token. The three deleted rows are `28,1 tud`, `31,1 krī` and `31,41 grath`,
+all shipped `source=pwg` today, handed to `vyathana` / `vinimaya` / `saṃdarbha`, none of which
+Palsule has and none of which MW refills. `28,1` is *tud*, the first root of the tudādi gaṇa.
+**`1496/1751 = 85.4%` is refuted; the measured figure is 1493/1751 = 85.3%**, and "17 shipped
+rows flip" undercounts — **21** shipped rows change root, because 13 of the 43 "the MW pass
+already fills" are coordinates the PWG counterfactual wins first with a *different* root
+(`26,23 jhṝ→su`, `33,63 lag→rak`, `17,43 riṣ→caṣ`, `28,84 cuṇ→chuṭ` and nine more). The funnel is
+right; it was never built, and a funnel that is never built cannot see a deletion.
 
 **And the measurement those figures describe is not a measurement of the note.** The
 Böhtlingk-family variant-reading test is **line-scoped**: `_BOEHTLINGK_VL.search(line, mm.end())`
@@ -887,10 +912,17 @@ Mirroring that rule for a trailing note — the note governs only when nothing b
 citation ends the clause: no intervening `<ls` citation, no `.` or `;` at parenthesis depth 0
 once markup and `{#…#}` / `{%…%}` braces are stripped, and the note not inside a parenthesis
 opened after the citation — **cuts the head-line claimants carrying a governing note from 331 to
-148**. 183 of 331, 55%, are notes belonging to some other citation on the same line. The narrow
-reading's 18 reattributions fall to 8, and the 10 that vanish are precisely the 10 adjudicated
-below as scope failures. The hand adjudication and the mechanical rule agree row for row, which
-is the only reason either is worth quoting.
+148**, and the narrow reading's 18 reattributions fall to 8. The 10 that vanish are precisely
+the 10 adjudicated below as scope failures: the hand adjudication and the mechanical rule agree
+row for row, which is the only reason either is worth quoting.
+
+**The 183 that fall away are not all phantoms — about 166 are.** Roughly 17 of them are genuine
+disowning notes of the shape `</ls>. <ab>v. l.</ab> für {#X#}`, which the rule above rejects
+because it stops at the `.` that closes the citation. A variant admitting exactly that shape
+leaves **165** governing claimants instead of 148 — and produces **the same eight
+reattributions**, which is what makes the eight worth trusting. So the honest statement of the
+detector's error rate is *at least half its firings*, not "183 of 331"; the 55% figure was the
+first rule's number quoted as if it were the defect's.
 
 ##### The table
 
@@ -947,13 +979,33 @@ source names as wrong is not the fix; it is a different reading of the same brok
 
 **Decision: DECLINE CONFIRMED. The guard stays out of H1333's PWG pass, coverage stays
 1465/1751 (83.7%), and `src/data/dhatup_palsule.json` is byte-identical.** Not because the
-re-baseline is worthless — 5 shipped rows are demonstrably wrong and 148 genuinely disowned
+re-baseline is worthless — 7 shipped rows are demonstrably wrong, and 148 genuinely disowned
 head-line claimants are real evidence — but because every number offered for it, 93 / 130 / 18
-and 31 net new alike, was measured with a test that is wrong 183 times in 331. Applying it now
-would move a shipped baseline on a signal this document has just shown to be 55% noise. The
-counterfactuals under the corrected test are published beside the old baseline rather than
-folded into anything: narrow + clause-scoped = **1490/1751** with 7 shipped rows flipping,
-ordered + clause-scoped = **1489/1751** with none.
+and 31 net new alike, was measured with a test that misfires on at least half of what it fires
+on. The 7: five whose article disowns the shipped root *and* names a verbal replacement
+(`15,33`, `32,30`, `32,68`, `33,55`, `35,11`, of which `32,30` is reserved rather than certain),
+plus `17,13` and `32,119`, disowned with no usable replacement, where the correct outcome is to
+drop the coordinate rather than flip it.
+
+**The four reasons the decline rests on, stated so a future reader can check each one** — and
+deliberately *not* "all 18 targets are nominal", which is false and would be re-derived as false
+by the first person to look at the articles:
+
+1. The detector is line-scoped in a corpus whose articles are one physical line, so it misfires
+   on at least half its firings; clause-scoping cuts 331 governing claimants to 148 (165 under
+   the variant that admits the `</ls>. <ab>v. l.</ab>` shape) and 18 reattributions to the same
+   8 either way.
+2. The offered baseline is not what the pipeline produces: built rather than added up, it is
+   **1493/1751**, and it **deletes** `28,1 tud`, `31,1 krī`, `31,41 grath`.
+3. The disturbance is larger than advertised — **21** shipped rows change root, not 17, plus 46
+   changing witness only.
+4. Twelve of the 17 adjudicated flips fail on the articles themselves: ten because the note
+   belongs to a different citation, two because it hands the coordinate to a derived noun.
+
+Applying the re-baseline now would move a shipped baseline on a signal this document has just
+shown to misfire more often than not. The counterfactuals under the corrected test are published
+beside the old baseline rather than folded into anything: narrow + clause-scoped =
+**1490/1751** with 7 shipped rows flipping, ordered + clause-scoped = **1489/1751** with none.
 
 ##### What the successor handoff owes, and the residues this pass names
 
@@ -963,9 +1015,14 @@ ordered + clause-scoped = **1489/1751** with none.
    re-baseline is argued again.
 2. **The `<lex>` nominal head-line test has the same line-scope defect.** `_HEAD_LEX` searches
    the whole head line, so `vell` is flagged nominal for `15,33` because `<lex>n.</lex>` appears
-   about 2 kB later in the same physical line, long after the citation — whereas `tvacana` and
+   **1148 characters** later in the same physical line, in a later sense ("das Wälzen eines
+   Pferdes") that has nothing to do with the citation — whereas `tvacana` and
    `mlecchana` carry `<lex>` *before* their citation, which is where a part-of-speech tag stands.
    Both head-line tests need the same scoping, and neither should be changed without the other.
+   Measured: **73 of the 128** `<lex>` nominal flags carry no tag before the citation at all.
+   Scoping this test alone moves the shipped table 1465 → **1463** and fixes `15,32 kvel→kṣvel`
+   and `32,12 naḍ→naṭ` — a correction that has nothing to do with the re-baseline and is not
+   made here.
 3. **`23,39 → spardhā` is a live defect of a third class.** `{#sparDA#}¦ (wie eben) <lex>f.</lex>
    … als <ab>Bed.</ab> von {#hvA#} und {#A — hvA#} <ls>DHĀTUP. 23,39</ls>` is a noun article
    saying in as many words that the coordinate is a *meaning of* `hvā`, and `hvā`'s own article
@@ -978,11 +1035,64 @@ ordered + clause-scoped = **1489/1751** with none.
    introducing that variant rather than as disowning `lañj`; the same trailing-parenthesis
    ambiguity MW's own guard declares and leaves alone. `tuj` matching the artha set word for
    word is why it is called justified, and the reservation is why it is not called certain.
+5. **The head/body discriminator is a third instance of the same line-scope defect.** `at_head`
+   is true for exactly the one physical line after `<L>`, so every later sense of a multi-sense
+   root article counts as "body" — which is why `bal`, `las`, `svar` and `tuj` are recorded as
+   having "no head-line citation" while being verbal claimants of their own coordinate inside
+   their own root article. It is not fixed here, and it is why the 8 + 10 split must never be
+   read as 18 nominal targets.
+6. **PWG writes `DHĀTUP.` citations three ways and the builder reads two — so the denominator
+   1751 is a property of a regex set, not of PWG.** `_DHATUP` and `_DHATUP_N` miss
+   `<ls n="DHĀTUP.">4,13</ls>`, which occurs **320 times over 270 distinct coordinates**; MW's
+   reader in the same file handles the exact analogue (`_MW_DHATUP_N_FULL`), so this is an
+   asymmetry between the two readers and nothing anywhere records it as deliberate. Admitting
+   the form end to end moves `coords_cited` **1751 → 1892 (+141)**, rows 1465 → 1576, changes 16
+   attributions, and moves the published rate **83.7% → 83.3%** — a larger effect than the ±31
+   this whole adjudication is about, in the opposite direction. Whether those 141 coordinates
+   are real is *not* settled here: some may be the cross-edition renumbering H4349 already
+   found. What is settled is that **83.7% may not be published again without ruling on the
+   form**, and that ruling is a handoff of its own.
+7. **`FEATURES_INDEX.md`'s L18 row still advertises the guard without its scope.** It calls the
+   fourth screen a "Böhtlingk-family variant-reading guard" with no hint that the test is
+   line-scoped, which is the one sentence a reader would need before reusing it. It is left
+   untouched here on purpose: H4432's edit scope permits `FEATURES_INDEX.md` only if the
+   baseline moves, and the baseline does not move. The successor of residue 1 amends that row
+   in the same pass that fixes the scope.
 
 **Re-derive:** `python src/pilot/dhatup_h4432_rebaseline_probe.py --xls <the gitignored Palsule
-XLS>` — 24 asserted figures, the clause-scoped counts, and the per-row scope evidence quoted
+XLS>` — 25 asserted figures, the clause-scoped counts, and the per-row scope evidence quoted
 above; `--dump-flips` prints both articles for every reattribution. It exits **2** when a corpus
 is absent, never 0.
+
+##### Who certified this, and what they refused to certify
+
+The verdict is not the implementer's. An independent adversarial verifier (Opus 5,
+`claude-opus-5`) re-derived every load-bearing number in a separate context from the raw corpora
+and the Palsule XLS, wrote its own citation scanner and its own clause rule *before* reading the
+builder's, and ran three end-to-end counterfactual builds against patched copies of the builder.
+Its report is committed verbatim as
+[reports/H4432_INDEPENDENT_VERIFIER_REPORT_09-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4432_INDEPENDENT_VERIFIER_REPORT_09-09-2026.md).
+
+It **confirmed** the baseline (its scanner reproduced the 1226-coordinate PWG set with symmetric
+difference 0), the blunt and narrow readings, the 17-of-18 membership, the 331 count, the
+clause-scoped **148** and the identical eight surviving flips — which it reached independently —
+all ten scope eliminations against the raw lines, the per-flip judgments, the `<lex>` defect, and
+**DECLINE CONFIRMED** as the decision.
+
+It **refuted** four things this document had said, and each refutation is folded in above rather
+than footnoted: `1496/1751` (the build gives 1493 and deletes three rows), "17 shipped rows flip"
+(21 change root), "all 18 targets are nominal" (8 are root articles, 6 with `√`), and "wrong 183
+times in 331" (about 166; the rule that recovers the other 17 yields the same 8 flips). It also
+found two defects nobody had claimed — the head/body discriminator's line scope, and the unread
+third citation form — both recorded as residues 5 and 6.
+
+Its own stated limits, kept rather than smoothed: it did not re-implement the MW reader
+independently, so MW-derived rows inherit any defect that reader has; it read the Palsule XLS but
+cannot check it against the printed book; it adjudicated against Böhtlingk's and Monier-Williams's
+prose, not against a dhātupāṭha edition, so "32,68 belongs to `bal`" means Böhtlingk says so; and
+it read 22 of the ~183 divergent firings in full, the rest being supported by gap statistics
+rather than by individual reading. It also reported the adjudication absent from disk — it was
+reading the main checkout, while this section lives on the H4432 branch.
 
 #### Two hardenings that carry the screens forward (H4386, 08-09-2026)
 
