@@ -43,6 +43,12 @@ ALLOWED = {
     # at the moment it was written, which no later reading of a policy table can reconstruct for
     # rows written before the repair.
     'latency_ceiling_ms',
+    # H4436 (09-09-2026): which PROFILE SURFACE the reading was taken under. The paid lane has
+    # spawned with `--safe-mode` since H2251; the probe that certifies it did not, so every
+    # latency row before this key was measured against the operator profile's full CLAUDE.md +
+    # skills + hooks surface and is not comparable with a row written after it. Absent => that
+    # older, unstripped shape.
+    'cli_safe_mode',
     # H2326 (#1172): a non-success probe classification is otherwise unreadable after the fact.
     # `err_pattern` is WHICH alternative of the classifier regex matched (`429` vs `usage limit`
     # vs `rate limit` — an account weekly cap and a per-model capacity refusal are the same
