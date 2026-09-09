@@ -19,10 +19,10 @@ import time
 import host_state
 import probe_log
 from run_observability import append_event, utc_now, write_census
-from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix,
-                             run_tree_kill, timeout_output_text,
-                             validate_preflight_artifact, windows_hidden_flags,
-                             wrapper_timeout_s)
+from headless_worker import (DEFAULT_TIMEOUT_S, SAFE_MODE_FLAG, bare_cli_cwd,
+                             claude_argv_prefix, resolve_safe_mode, run_tree_kill,
+                             timeout_output_text, validate_preflight_artifact,
+                             windows_hidden_flags, wrapper_timeout_s)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
                                 config_dir_fingerprint, progress_window_ms_for,
@@ -621,7 +621,8 @@ def profile_status(config_dir, claude='claude', call_reservation=None, account=N
             probe = run_tree_kill(               # D-J: tree-kill on timeout
                 claude_argv_prefix(claude) + [
                     '-p', 'Return exactly OK.', '--output-format', 'json',
-                    '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+                    '--model', 'claude-sonnet-5', '--permission-mode', 'plan']
+                + probe_cli_flags(claude),      # H4436: strip the profile surface
                 env=env, text=True, encoding='utf-8',
                 capture_output=True, timeout=60)
         except subprocess.TimeoutExpired:
@@ -1360,6 +1361,38 @@ def _production_task_shape_preamble():
     return MASK_PREAMBLE
 
 
+def probe_safe_mode(claude='claude'):
+    """Whether a readiness/validation call should spawn with --safe-mode (H4436).
+
+    The paid lane (`headless_worker.call`) has stripped the operator profile -- its
+    CLAUDE.md, 456 skill/command/agent entries and 65 hooks -- with `--safe-mode` since
+    H2251 (06-08-2026, default ON). The probe that certifies that lane never got the
+    flag, so it kept spawning under the FULL interactive profile of whichever
+    `CLAUDE_CONFIG_DIR` the account binds: on 09-09-2026 a c1 probe read 164 431 cached
+    prefix tokens + 60 555 created for a `{"ok": true}` task, ran 142-177 s against an
+    80 s ceiling, and finally REFUSED the task while reasoning about the operator's Stop
+    hook and `Next:` footer rule (FINDINGS §498 follow-up). The gate was pricing and
+    certifying a different call than the one it gates -- the H2299 defect class, one
+    flag to the right.
+
+    Resolution is DERIVED from the lane's own resolver with an empty manifest, i.e. the
+    lane default (`DEFAULT_CLI_SAFE_MODE`) plus the per-binary `--help` support check,
+    so the probe cannot drift from the lane and cannot die in argument parsing on a
+    CLI that lacks the flag. H2189 measured a dedicated minimal `CLAUDE_CONFIG_DIR`
+    against this flag and ruled for the flag (no second on-disk OAuth token, no second
+    `ActiveCallClaim` fingerprint) -- that ruling is why H4436 ships a flag, not a
+    profile directory.
+    """
+    return resolve_safe_mode({}, claude)
+
+
+def probe_cli_flags(claude='claude', safe_mode=None):
+    """argv tail every readiness/validation spawn appends: [--safe-mode] or []."""
+    if safe_mode is None:
+        safe_mode = probe_safe_mode(claude)
+    return [SAFE_MODE_FLAG] if safe_mode else []
+
+
 def _probe_prompt(payload_bytes):
     """A load-representative readiness prompt: the PRODUCTION TASK SHAPE block, then one clear
     task (return {"ok": true}) plus >=payload_bytes of inert, domain-shaped filler explicitly
@@ -1440,8 +1473,10 @@ def _record_progress(detail_out, progress, exc):
 
 def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 reservation_purpose='probe', account=None, active_claim=None,
-                timing_out=None, run_id=None, detail_out=None):
+                timing_out=None, run_id=None, detail_out=None, safe_mode=None):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
+    `safe_mode` None resolves through `probe_safe_mode` (the lane default); True/False pins
+    the spawn, and the choice is echoed as `detail_out['cli_safe_mode']` (H4436).
     classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'refusal' | 'content' |
     'process' | 'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
     STOP on. rc 0 alone is NOT enough: the Claude CLI result envelope must indicate success AND
@@ -1458,11 +1493,19 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             return _probe_call(
                 config_dir, claude, payload_bytes, model, call_reservation,
                 reservation_purpose, account, active_claim=claim,
-                timing_out=timing_out, run_id=run_id, detail_out=detail_out)
+                timing_out=timing_out, run_id=run_id, detail_out=detail_out,
+                safe_mode=safe_mode)
     if (not isinstance(active_claim, ActiveCallClaim)
             or not active_claim.is_live_canonical_for(fingerprint)):
         raise ValueError('probe active-call claim does not bind config directory')
     prompt = _probe_prompt(payload_bytes)
+    # H4436: resolve the profile-stripping posture ONCE, before the reservation, and echo
+    # it into the reading so a latency row says which surface it was measured under.
+    if safe_mode is None:
+        safe_mode = probe_safe_mode(claude)
+    safe_mode = bool(safe_mode)
+    if detail_out is not None:
+        detail_out['cli_safe_mode'] = safe_mode
     # H2647: capture the BOX's state at the moment of the spawn, not at emit time -- for a
     # call that can run 600 s, "what the machine looked like when we asked" is the fact that
     # explains a startup crash; what it looked like afterwards is not. Fail-open by
@@ -1491,7 +1534,8 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         proc = run_tree_kill(            # D-J: tree-kill on timeout
             claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
              '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
-             '--model', model, '--permission-mode', 'plan'],
+             '--model', model, '--permission-mode', 'plan']
+            + probe_cli_flags(claude, safe_mode),   # H4436: same posture as the lane
             input=prompt, env=env, text=True, encoding='utf-8', capture_output=True,
             # H2299: spawn from the SAME bare cwd the paid lane uses. `run_tree_kill`'s
             # `cwd` defaulted to None here, so the probe silently inherited whatever
@@ -1656,6 +1700,9 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
             duration_api_ms=api_ms,
             api_gap_ms=(latency - api_ms) if api_ms is not None else None,
             latency_ceiling_ms=latency_ceiling_ms,
+            # H4436: which profile surface this reading was taken under. A row without it
+            # predates the flag and was measured under the FULL interactive profile.
+            cli_safe_mode=(detail or {}).get('cli_safe_mode'),
             # H2326 (#1172): which classifier alternative fired, and where the provider's own
             # words were parked. Both absent on `success` (append_event drops None), so the
             # healthy lane's row is byte-for-byte what it was.

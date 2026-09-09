@@ -827,6 +827,12 @@ def main():
     # Capture the real argv + stdin the probe would send.
     _rtk2 = m.run_tree_kill
     cap = {}
+    # H4436: the probe appends the lane's --safe-mode posture, derived from
+    # headless_worker (never a literal here). Support is probed per binary via `--help`
+    # and cached; seed the cache so this offline test spawns nothing and is deterministic.
+    import headless_worker as _hw
+    _saved_support = dict(_hw._safe_mode_support)
+    _hw._safe_mode_support[sys.executable] = True
 
     def _capture(*a, **k):
         cap['argv'] = list(a[0]) if a else list(k.get('args') or [])
@@ -853,11 +859,34 @@ def main():
         # plan mode retained (matches real generation) + exact model + json-schema still present
         assert '--permission-mode' in cap['argv'] and 'plan' in cap['argv'], cap['argv']
         assert '--json-schema' in cap['argv'] and '--model' in cap['argv'], cap['argv']
+        # H4436: lane default + supported CLI => the flag is the LAST argv token and the
+        # reading says so; unsupported CLI => no flag, reading says False (the H2189
+        # stderr warning fires, by design); an explicit pin beats the resolver.
+        assert cap['argv'][-1] == _hw.SAFE_MODE_FLAG, cap['argv']
+        det = {}
+        m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                      call_reservation=MemoryCallLedger(), detail_out=det)
+        assert det.get('cli_safe_mode') is True, det
+        _hw._safe_mode_support[sys.executable] = False
+        det = {}
+        m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                      call_reservation=MemoryCallLedger(), detail_out=det)
+        assert _hw.SAFE_MODE_FLAG not in cap['argv'], cap['argv']
+        assert det.get('cli_safe_mode') is False, det
+        det = {}
+        m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                      call_reservation=MemoryCallLedger(), detail_out=det,
+                      safe_mode=True)
+        assert cap['argv'][-1] == _hw.SAFE_MODE_FLAG and det.get('cli_safe_mode') is True
+        assert m.probe_cli_flags(sys.executable, safe_mode=False) == []
+        assert m.probe_cli_flags(sys.executable, safe_mode=True) == [_hw.SAFE_MODE_FLAG]
         # _probe_prompt is deterministic and honours the payload-size floor
         assert m._probe_prompt(6491) == m._probe_prompt(6491)
         assert len(m._probe_prompt(5000)) >= 5000
     finally:
         m.run_tree_kill = _rtk2
+        _hw._safe_mode_support.clear()
+        _hw._safe_mode_support.update(_saved_support)
     print('  D-P readiness prompt: completable task ({"ok": true}) + >=5 KB inert filler; plan mode kept; degenerate x-padding gone')
 
     # H2299: the probe must spawn from the SAME bare cwd the PAID lane uses.
@@ -1867,7 +1896,10 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             cls, detail = _call('h2326-ok')
             assert cls == 'success', (cls, detail)
             assert 'err_pattern' not in detail and 'raw_envelope_path' not in detail, detail
-            assert set(detail) <= {'host_state'}, (
+            # H4436 widened this the same way H2647 did: every call now also records the
+            # profile surface it was spawned under (`cli_safe_mode`), success included —
+            # that is the point, a healthy reading must say which surface produced it.
+            assert set(detail) <= {'host_state', 'cli_safe_mode'}, (
                 'success added an unexpected detail key: %s' % sorted(detail))
             assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
 
