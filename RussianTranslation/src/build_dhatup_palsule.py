@@ -93,11 +93,42 @@ _DHATUP = re.compile(r'<ls\b[^>]*>\s*DH[ĀA]TUP\.\s*(\d+)\s*,\s*(\d+)')
 #: A `DHĀTUP. x,y` continuation carried on the n= attribute with a bare visible
 #: number (`<ls n="DHĀTUP. 26,">91</ls>`) — same citation, different splitting.
 _DHATUP_N = re.compile(r'<ls\b[^>]*\bn\s*=\s*"DH[ĀA]TUP\.\s*(\d+)\s*,\s*"[^>]*>\s*(\d+)')
+#: THE THIRD FORM, unread until H4438 and the reason `1751` was a property of a regex set
+#: rather than of PWG. Böhtlingk gives a root a second coordinate by repeating the
+#: authority in the `n=` attribute and printing the whole `gaṇa,serial` as the visible
+#: text: `√{#kaK#}¦, {#ka/Kati#} … <ls>DHĀTUP. 5,6</ls>. <ls n="DHĀTUP.">19,22</ls>.`
+#: It occurs **320 times over 270 distinct coordinates**, 141 of which no other form
+#: cites, and **281 of the 320 stand on the citing article's own head line** — the same
+#: evidential position the whole head-line method rests on. MW's reader below has
+#: handled the exact analogue (`_MW_DHATUP_N_FULL`, `<ls n="Dhātup.">xxxiv, 40</ls>`)
+#: since H4339, and nothing in this file, the verifier or the docs ever recorded the PWG
+#: side as a deliberate omission: it was an asymmetry between two readers of the same
+#: markup. Admitted after adjudication (H4438) — MW independently cites 93 of the 141
+#: new coordinates, only 3 exceed the attested ceiling of their gaṇa, and where the form
+#: changes an attribution MW confirms the NEW root 12 times to 2. Not the renumbering
+#: class H4349 found: that was pw citing a coordinate PWG never cites, whereas these are
+#: PWG's own citations standing beside PWG's own first citation for the same root.
+_DHATUP_N_FULL = re.compile(r'<ls\b[^>]*\bn\s*=\s*"DH[ĀA]TUP\."[^>]*>\s*(\d+)\s*,\s*(\d+)')
+#: THE ONE PLACE the citation forms are enumerated. Every reader iterates this tuple, so
+#: a fourth form is added once instead of at four call sites that can silently drift
+#: apart — which is exactly how the third form stayed unread through three handoffs.
+_DHATUP_FORMS = (_DHATUP, _DHATUP_N, _DHATUP_N_FULL)
 #: A part-of-speech tag on the head line marks a NOMINAL article. Böhtlingk gives
 #: such an article the dhātupāṭha coordinate only to say "this noun glosses that
 #: root" (`{#loqana#}¦ <lex>n.</lex> … als Erkl. von {#bAD#} <ls>DHĀTUP. 2,4</ls>`)
 #: — the coordinate belongs to the root, not to the noun. Root articles carry no
 #: <lex> on the head line (they carry the finite form, and often a √).
+#:
+#: SCOPED TO THE MARKUP BEFORE THE CITATION (H4438). Searching the whole physical line
+#: made the flag a position artifact rather than a part-of-speech reading: `vell` was
+#: called nominal for `15,33` because `<lex>n.</lex>` stands **1148 characters after**
+#: its citation, in a later sense of the same root article ("das Wälzen eines Pferdes"),
+#: and `lal` for `9,76` on a tag 819 characters later belonging to `{#lalita#}`. A real
+#: part-of-speech tag stands where `tvacana`, `mlecchana`, `parikalkana`, `saṃcalana`,
+#: `jñīpsā` and `saṃdarbha` put theirs — between the headword and the citation. Measured
+#: before the change: **73 of the 128** head-line nominal flags had no `<lex>` anywhere
+#: before their citation, i.e. the majority of the test's firings were artifacts. See
+#: `_head_nominal`.
 _HEAD_LEX = re.compile(r'<lex\b')
 
 #: THE POSITIVE TEST, and the one the H4349 sibling pass actually turns on. PWG's own
@@ -126,6 +157,138 @@ _HEAD_RADICAL = re.compile('√')
 #: not a reuse of `_MW_VL`: the two dictionaries put the note on different sides and it
 #: means different things there. Counted, never silently applied.
 _BOEHTLINGK_VL = re.compile(r'<ab>\s*(?:v\.\s*l\.|w\.\s*r\.)\s*</ab>')
+
+#: Any `<ls …>` opening tag — an intervening citation is the clearest possible proof that
+#: a later note is talking about something else.
+_LS_OPEN = re.compile(r'<ls\b')
+
+#: Tag spans and Sanskrit/German brace spans, blanked before punctuation is read so that
+#: the `.` in `<ab>caus.</ab>` or inside `{#Silpayoge#}` is not mistaken for the full stop
+#: that ends a clause. Blanked rather than deleted so offsets stay comparable.
+_MARKUP_SPAN = re.compile(r'<[^>]*>|\{#.*?#\}|\{%.*?%\}|\{@.*?@\}')
+
+#: A letter or a digit, in the Unicode sense — used to ask "is the text between the
+#: citation and the note punctuation only?".
+_WORDLIKE = re.compile(r'[^\W_]', re.UNICODE)
+
+
+def _blank_markup(s):
+    """`s` with every tag/brace span replaced by spaces of the same length."""
+    if '<' not in s and '{' not in s:
+        return s
+    out = list(s)
+    for m in _MARKUP_SPAN.finditer(s):
+        for i in range(m.start(), m.end()):
+            out[i] = ' '
+    return ''.join(out)
+
+
+def _head_nominal(line, at):
+    """Is the article NOMINAL as of the citation that starts at `at`? (H4438)
+
+    Scoped to the markup that PRECEDES the citation. See `_HEAD_LEX` for why the
+    whole-line reading was a position artifact in the majority of its firings."""
+    return bool(_HEAD_LEX.search(line, 0, at))
+
+
+def _head_radical(line, at):
+    """Is the article marked verbal (`√`) before the citation at `at`? (H4438)
+
+    Scoped for the same reason as `_head_nominal`, and scoped together with it because
+    the two tests are read as a pair: Böhtlingk prints `√` immediately before the
+    headword, so in practice this changes nothing (measured: zero head-line claimant
+    pairs lose the marker), but a `√` belonging to a cross-reference later in the line
+    is no more evidence about this citation than a late `<lex>` is."""
+    return bool(_HEAD_RADICAL.search(line, 0, at))
+
+
+def _boehtlingk_vl_governs(line, at):
+    """Does a TRAILING variant-reading note disqualify the citation ending at `at`? (H4438)
+
+    The Böhtlingk-family mirror of `_vl_governs`, and the correction of the third
+    line-scope defect in this builder. `_BOEHTLINGK_VL.search(line, mm.end())` asked
+    only "is there a note anywhere later on this physical line", which on Böhtlingk's
+    long articles is a question about typesetting, not about the note. Measured over
+    PWG's 1999 head-line claimant pairs: **331** carry a note somewhere after the
+    citation on the same line, and **166 of those 331 (50.2%)** have that note in a
+    different clause — a median of 87 characters away, a mean of 577, a maximum of 5802,
+    with an intervening `<ls>` citation in most of them. A test wrong in half its
+    firings is not evidence about Böhtlingk's note.
+
+    The rule, direction-rotated from `_vl_governs` (whose note stands BEFORE the
+    citation): the FIRST note after the citation governs it only when, between the two,
+    there is
+
+      (a) no other `<ls …>` citation — `17,80 cah` reads
+          `<ls>DHĀTUP. 17,80</ls>. <ls n="DHĀTUP.">32,82</ls> (<ab>v. l.</ab> für {#cap#})`,
+          where the note says `cah` is a variant for `cap` **at 32,82**;
+      (b) no `;`, and no unbalanced parenthesis: a `)` that closes a parenthesis opened
+          before the citation ends the clause, and a note sitting inside a parenthesis
+          opened after the citation (`19,2 vyath`, whose note varies the artha inside
+          `({#BayasaMcalanayoH#} <ab>v. l.</ab> …)`) is not talking about the citation;
+      (c) either no `.` at parenthesis depth zero, or a separation that is nothing but
+          punctuation ONCE THE MARKUP HAS BEEN BLANKED. This is the loosest of the three
+          and the independent verifier refuted the justification first written here, so
+          the honest version stands instead of the flattering one. The blanking that
+          keeps the `.` inside `<ab>caus.</ab>` from ending a clause also blanks whole
+          lemmas and glosses, so `{#X#} {%schleudern%}. <ab>v. l.</ab>` reads as
+          punctuation-only: in 12 of the 17 pairs this clause admits, a lemma and a gloss
+          stand between citation and note. Reading all 17 German lines, 8 are false
+          positives whose note governs a LATER coordinate — including `20,13 śal`, which
+          the first draft of this docstring named as proof the shape is genuine (śal is a
+          variant reading for `śval`, at 15,42), while `24,20 parj` and `21,22 pas` are
+          right only by accident, their governing note standing BEFORE the citation.
+          The shape is still admitted, taking the count from 148 to 165, because that
+          choice has never moved a shipped row and structurally cannot — see below.
+
+    WHERE THIS ACTUALLY RUNS, stated because the zero diff it produces would otherwise
+    read as evidence it is harmless. The one call site is `_scan_coords`, which serves
+    the two Böhtlingk SIBLINGS — `read_pw_coords` and `read_pwg_dotted_coords`. PWG's own
+    head-line pass, `read_pwg_coords`, never calls it. So `pw_refused_variant_reading == 0`
+    and `pwg-dotted_refused_variant_reading == 0` are a screen standing ready for a
+    sibling that has not yet produced a case, NOT a measurement of Böhtlingk's notes in
+    PWG, and the counterfactual build that wires this test in and changes nothing is zero
+    BY CONSTRUCTION. The 1999/331/165/166/148 figures above characterise a population
+    this function is never asked about. H4438 also BUILT the other counterfactual —
+    wiring the test into PWG's own pass — and DECLINED it on the four numbers: 38 rows
+    added, 14 DELETED, 16 roots changed, 43 source changed. It does restore
+    `35,80 → chid`, the one measured regression, and it deletes `20,13`, `2,31`, `4,15`
+    and `7,40` — the very misfires the census above identifies. `match_rate` RISES to
+    85.2%, which is the trap: the denominator falls with it (1890 → 1874 cited), while
+    the one figure computed against a different author falls — MW cross-agreement
+    80.1% → 79.4%. Recorded in ABBREVIATIONS_RU.md § residue 1 so the declining is a
+    choice on evidence rather than an omission.
+
+    Punctuation is read off a copy with tags and `{#…#}` / `{%…%}` spans blanked, so
+    the `.` inside `<ab>caus.</ab>` is not a clause end."""
+    note = _BOEHTLINGK_VL.search(line, at)
+    if note is None:
+        return False
+    raw = line[at:note.start()]
+    if _LS_OPEN.search(raw):
+        return False
+    between = _blank_markup(raw)
+    depth = 0
+    dots = 0
+    for ch in between:
+        if ch == '(':
+            depth += 1
+        elif ch == ')':
+            if depth == 0:
+                return False
+            depth -= 1
+        elif depth == 0:
+            if ch == ';':
+                return False
+            if ch == '.':
+                dots += 1
+    if depth > 0:
+        return False
+    if not dots:
+        return True
+    if '(' in between or ')' in between:
+        return False
+    return not _WORDLIKE.search(between)
 
 #: SLP1 -> IAST for the root citation form only (consonants + simple vowels).
 _S2I = {
@@ -240,7 +403,14 @@ _ARTHA_AFTER = re.compile(r'^\s*\(\{#([^#}]+)#\}\)')
 
 
 def read_pwg_coords(pwg):
-    """pwg.txt -> ({coord: {root_slp1: n_headline_citations}}, n_entries_seen).
+    """pwg.txt -> (coords, n_entries_seen, spelled_out).
+
+    `spelled_out` is the subset of coordinates at least one citation writes with the
+    gaṇa INSIDE the visible text — forms A (`<ls>DHĀTUP. 5,38</ls>`) and B
+    (`<ls n="DHĀTUP. 5,">38</ls>`). Form C (`<ls n="DHĀTUP.">5,38</ls>`, admitted by
+    H4438) attributes the source through an ATTRIBUTE, and an attribute is exactly
+    what an encoder can carry over from the citation before it. `coordinate_ceilings`
+    is built from `spelled_out` alone for that reason — see H4438_CEILING below.
 
     HEAD-LINE WEIGHTING. Böhtlingk gives a root its dhātupāṭha coordinate on the
     article's OWN head line (`{#aNg#}¦, {#a/Ngati#} … <ls>DHĀTUP. 5,38</ls>`).
@@ -249,6 +419,7 @@ def read_pwg_coords(pwg):
     when a coordinate has several claimants — an empirical discriminator, not a
     guess: it is where the lexicographer states the numbering."""
     coords = defaultdict(lambda: defaultdict(lambda: [0, 0, 0]))   # [head, body, head_nominal]
+    spelled_out = set()
     key = None
     at_head = False
     entries = 0
@@ -266,15 +437,16 @@ def read_pwg_coords(pwg):
             if key is None:
                 continue
             slot = 0 if at_head else 1
-            nominal = bool(at_head and _HEAD_LEX.search(line))
-            for rx in (_DHATUP, _DHATUP_N):
+            for rx in _DHATUP_FORMS:
                 for mm in rx.finditer(line):
                     coord = '%s,%s' % (mm.group(1), mm.group(2))
+                    if rx is not _DHATUP_N_FULL:
+                        spelled_out.add(coord)
                     coords[coord][key][slot] += 1
-                    if nominal:
+                    if at_head and _head_nominal(line, mm.start()):
                         coords[coord][key][2] += 1
             at_head = False
-    return coords, entries
+    return coords, entries, spelled_out
 
 
 #: MW writes Böhtlingk's gaṇa as a lowercase Roman numeral and splits the citation
@@ -592,15 +764,24 @@ def _iter_citation_lines(pwg):
     """Yield (line, coord) for every line carrying a DHĀTUP. x,y citation."""
     with open(pwg, encoding='utf-8') as f:
         for line in f:
-            for rx in (_DHATUP, _DHATUP_N):
+            for rx in _DHATUP_FORMS:
                 for mm in rx.finditer(line):
                     yield line, '%s,%s' % (mm.group(1), mm.group(2))
 
 
 def _inline_artha(line, coord):
-    """Yield (position, slp1_artha) for the artha PWG prints beside this citation."""
+    """Yield (position, slp1_artha) for the artha PWG prints beside this citation.
+
+    Both spellings of a whole-coordinate citation: `<ls>DH\u0100TUP. 4,13</ls>` and
+    `<ls n="DH\u0100TUP.">4,13</ls>`. Leaving the second out (H4438) would have made the
+    independent artha check silently skip the 141 coordinates only that form cites \u2014
+    an accuracy number quietly measured on a different population than the coverage
+    number beside it. The `n="DH\u0100TUP. 26,"` split form still has no artha test: its
+    visible text is a bare serial, so there is no `ga\u1e47a,serial` string to anchor on."""
+    gana, serial = coord.split(',')
     key = re.compile(r'<ls\b[^>]*>\s*DH[\u0100A]TUP\.\s*%s\s*,\s*%s\s*</ls>'
-                     % tuple(coord.split(',')))
+                     r'|<ls\b[^>]*\bn\s*=\s*"DH[\u0100A]TUP\."[^>]*>\s*%s\s*,\s*%s\s*</ls>'
+                     % (gana, serial, gana, serial))
     m = key.search(line)
     if not m:
         return
@@ -652,7 +833,7 @@ def _disagreement_shape(a, b):
     return 'other'
 
 
-def _mw_pass(mw, palsule, coords, table, pwg_root):
+def _mw_pass(mw, palsule, coords, table, pwg_root, mw_read=None):
     """H4339. Fill PWG's dropped coordinates from MW, and cross-validate the rest.
 
     MUTATES `table` — MW-derived rows are added, PWG-derived rows are never touched or
@@ -692,8 +873,10 @@ def _mw_pass(mw, palsule, coords, table, pwg_root):
                          'second-witness pass skipped\n' % mw)
         return empty, []
 
+    # H4438 reads mw.txt once, in build(), because the form-C ceiling screen needs
+    # MW's coordinate names before PWG is resolved. Re-read only if not handed one.
     (prose, field, field_seen, mw_entries,
-     vl_dropped, prose_raw) = read_mw_coords(mw)
+     vl_dropped, prose_raw) = mw_read if mw_read is not None else read_mw_coords(mw)
     # "Unambiguous" is deliberately the strictest reading available: exactly ONE article
     # claims the coordinate in whichever channel speaks for it. A coordinate with two
     # claimants is not used at all rather than resolved by a rule nobody has measured.
@@ -858,20 +1041,19 @@ def _scan_coords(path, dotted_only=False):
             if key is None:
                 continue
             slot = 0 if at_head else 1
-            nominal = bool(at_head and _HEAD_LEX.search(line))
-            radical = bool(at_head and _HEAD_RADICAL.search(line))
-            for rx in (_DHATUP, _DHATUP_N):
+            for rx in _DHATUP_FORMS:
                 for mm in rx.finditer(line):
                     coord = '%s,%s' % (mm.group(1), mm.group(2))
                     coords[coord][key][slot] += 1
-                    if nominal:
+                    if at_head and _head_nominal(line, mm.start()):
                         coords[coord][key][2] += 1
-                    if radical:
+                    if at_head and _head_radical(line, mm.start()):
                         coords[coord][key][3] += 1
-                    # Scoped to what FOLLOWS the citation on its own line, which is
-                    # where the Böhtlingk family puts the note that disowns the
-                    # headword. A note earlier in the line governs something else.
-                    if _BOEHTLINGK_VL.search(line, mm.end()):
+                    # The note that disowns the headword stands AFTER the citation in
+                    # the Böhtlingk family, and it has to stand in the same clause:
+                    # a note further down a 2 kB article is talking about a different
+                    # citation half the time it fires. See `_boehtlingk_vl_governs`.
+                    if _boehtlingk_vl_governs(line, mm.end()):
                         coords[coord][key][4] += 1
             at_head = False
     return coords, articles
@@ -927,6 +1109,16 @@ def coordinate_ceilings(coords):
     would mint two coordinates no witness can confirm and would collide with any
     genuine future `1,840`. They are refused, listed, and counted — never quietly kept
     and never quietly dropped.
+
+    H4438. `coords` here is PWG's SPELLED-OUT citations, not all of them. The third
+    citation form prints no source label beside its numbers — the authority sits in the
+    `n=` attribute — so it carries no local redundancy against which a wrong gaṇa would
+    show: PWG's `<ls n="DHĀTUP.">27,71</ls>` is MW's `xxvi, 71`, the gaṇa carried forward
+    from the `27,16` four words earlier. (The gaṇa itself IS printed there; what the
+    attribute removes is the repeated `DHĀTUP.` that makes forms A and B read as a fresh
+    citation rather than a continuation.) A form with no cross-check of its own may not
+    certify its own coordinate space: building the ceiling from it would raise gaṇa 27's
+    ceiling from an attested 33 to 71.
     """
     ceil = {}
     for coord in coords:
@@ -1232,7 +1424,57 @@ def builder_fingerprint():
 
 def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     palsule, xls_rows, typo_folds = read_palsule(xls)
-    coords, entries = read_pwg_coords(pwg)
+    coords, entries, spelled_out = read_pwg_coords(pwg)
+
+    # H4438_CEILING. The third citation form is admitted (320 occurrences, 270
+    # coordinates, 141 of them cited no other way), and 138 of those 141 land inside
+    # the space PWG's spelled-out citations already attest. Three do not, and the
+    # reason is structural rather than statistical, though not the one first written
+    # here: in `<ls n="DHĀTUP.">27,71</ls>` the gaṇa is printed body text, so "an
+    # attribute is inheritable" does not describe this example and the verifier was right
+    # to refuse it. What form C removes is the LOCAL REDUNDANCY — forms A and B repeat
+    # `DHĀTUP.` beside the numbers, and a compositor setting a fresh source label is far
+    # likelier to reset the gaṇa than one continuing a bare `27,71` after a `27,16` four
+    # words earlier. All three are refused unless MW — a
+    # DIFFERENT AUTHOR, the only witness this concordance lets break a Böhtlingk tie
+    # (H4339/H4349) — names the same coordinate:
+    #
+    #   32,133 stūp   ADMITTED. MW: `Dhātup. xxvi, 127; <ls n="Dhātup.">xxxii, 133</ls>`
+    #                 — the identical pair PWG gives. Overshoot of exactly 1 past a
+    #                 gaṇa attested by 108 coordinates up to 132: the last root of the
+    #                 gaṇa, which simply no other article happens to cite.
+    #   27,71  rādh   REFUSED. PWG reads `rādhyati … <ls n="DHĀTUP.">27,71</ls>` right
+    #                 after `<ls>DHĀTUP. 27,16</ls>`; MW reads the same two citations as
+    #                 `Dhātup. xxvii, 16` and `<ls n="Dhātup.">xxvi, 71</ls>` — gaṇa 26,
+    #                 not 27. The attribute carried 27 forward. Gaṇa 27 is attested by
+    #                 32 coordinates ending at 33; it has no 71st root. THIS IS THE
+    #                 CROSS-EDITION RENUMBERING CLASS H4349 FOUND, caught by the screen.
+    #   6,113  kṣip   REFUSED. `kṣipyati (nur im BHARTṚ. z. B. <ls n="DHĀTUP.">6,113</ls>.
+    #                 <ls n="DHĀTUP.">17,43</ls> nachzuweisen) <ls n="DHĀTUP.">26,14</ls>`
+    #                 — Böhtlingk's own German attributes the two loci inside the
+    #                 parenthesis to Bhartṛhari; 26,14 is the dhātupāṭha coordinate.
+    #                 Gaṇa 6 is attested by 23 coordinates ending at 25 (two gaps): it
+    #                 has no 113th root. MW gives kṣip no such coordinate.
+    #
+    # The screen runs BEFORE resolution, so a refused coordinate is not counted in the
+    # denominator either — it was never a point in this space. Refusals are published
+    # in `_refused_form_c_out_of_space` with the ceiling and the MW verdict that
+    # explains each one, never quietly dropped.
+    mw_read = read_mw_coords(mw) if (mw and os.path.exists(mw)) else None
+    mw_names = (set(mw_read[0]) | set(mw_read[2]) | set(mw_read[5])) if mw_read else set()
+    spelled_ceilings = coordinate_ceilings(spelled_out)
+    refused_form_c = []
+    for coord in sorted(set(coords) - spelled_out, key=lambda c: _coord_key(c)):
+        gana, serial = _coord_key(coord)
+        if serial <= spelled_ceilings.get(gana, 0):
+            continue
+        if coord in mw_names:
+            continue
+        refused_form_c.append({
+            'coord': coord, 'claimants': sorted(coords[coord]),
+            'spelled_out_ceiling': spelled_ceilings.get(gana),
+            'mw_names_it': False})
+        del coords[coord]
 
     # Baseline for the filters' measured contribution: with NO disambiguation at all,
     # every multi-claimant coordinate is simply dropped. Recorded so the "filters bought
@@ -1250,9 +1492,29 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     #: but Palsule could not gloss still counts as a comparable PWG verdict.
     pwg_root = {}
     resolved_by_head = 0
+    dropped_sole_nominal = []
     for coord, roots in sorted(coords.items(), key=lambda kv: [int(x) for x in kv[0].split(',')]):
+        head = [r for r, c in roots.items() if c[0]]
+        if len(roots) > 1 and len(head) == 1 and roots[head[0]][2]:
+            # H4438. THE NOMINAL TEST USED TO RUN ONLY AMONG SEVERAL HEAD CLAIMANTS, so
+            # a LONE `<lex>` head claimant was never tested and won by default, beating
+            # the root that states the same coordinate further down its own article.
+            # `{#sparDA#}¦ … <lex>f.</lex> … als <ab>Bed.</ab> von {#hvA#}
+            # <ls>DHĀTUP. 23,39</ls>` says in as many words that 23,39 is a MEANING of
+            # `hvā`, and `hvā`'s own article claims it with the matching artha
+            # ({#sparDAyAM Sabde ca#}); `{#avakalkana#}¦ <lex>n.</lex> {%das Mischen,
+            # Zusammenrühren%} <ls>DHĀTUP. 33,73</ls>` is one of the arthas `bhū` itself
+            # prints at 33,73 ({#avakalkane, miSraRe#}). The noun is removed from the
+            # claimant set — not merely demoted — so a single remaining claimant still
+            # resolves it; two or more remain a conflict, exactly as before, because
+            # this filter refuses meanings, it does not pick winners.
+            dropped_sole_nominal.append(
+                {'coord': coord, 'nominal_head': head[0],
+                 'nominal_head_iast': slp1_root_iast(head[0]),
+                 'remaining': sorted(r for r in roots if r != head[0])})
+            roots = {r: c for r, c in roots.items() if r != head[0]}
+            head = []
         if len(roots) > 1:
-            head = [r for r, c in roots.items() if c[0]]
             if len(head) > 1:
                 # Drop the nominal head-line claimants (`<lex>` articles quoting the
                 # coordinate as a gloss); what survives is the verbal article.
@@ -1278,14 +1540,19 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
         table[coord] = row
 
     linked_pwg = len(table)
-    mw_stats, mw_disagreements = _mw_pass(mw, palsule, coords, table, pwg_root)
+    mw_stats, mw_disagreements = _mw_pass(mw, palsule, coords, table, pwg_root,
+                                         mw_read=mw_read)
     linked_after_mw = len(table)
 
     # H4349. Two more PWG-FAMILY sources, run after MW so they can only fill what is
     # still empty, each stamped with its own token and each measured on its own. The
     # ceiling is derived from PWG's citations alone — the sibling being screened must
-    # not be allowed to widen the space it is screened against.
-    ceilings = coordinate_ceilings(coords)
+    # not be allowed to widen the space it is screened against. H4438: and from the
+    # SPELLED-OUT citations alone, so a form that repeats no source label beside its
+    # numbers cannot widen the space it is screened against
+    # (form C's own `27,71` would otherwise have raised gaṇa 27's ceiling from 33 to 71
+    # and handed the siblings 38 serials PWG never attests).
+    ceilings = coordinate_ceilings(spelled_out)
     dotted_coords, dotted_articles = (read_pwg_dotted_coords(pwg) if pwg_dotted
                                       else ({}, 0))
     # Both siblings are Böhtlingk, so both get the same-book screen; both are screened
@@ -1321,6 +1588,15 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
         'coords_cited': len(coords),
         'coords_conflicted': len(conflicts),
         'coords_resolved_by_head_line': resolved_by_head,
+        # H4438. Coordinates whose ONLY head-line claimant was a `<lex>` noun article,
+        # which used to win untested. Listed in `_dropped_sole_nominal_head`, never
+        # silently dropped: the winner is whatever single claimant remains, or nothing.
+        'coords_sole_nominal_head_dropped': len(dropped_sole_nominal),
+        # H4438. Third-citation-form coordinates refused before resolution because the
+        # serial clears the ceiling PWG's SPELLED-OUT citations attest for that gaṇa and
+        # MW does not name the coordinate either. Listed in
+        # `_refused_form_c_out_of_space` with the ceiling and the claimants.
+        'coords_refused_form_c_out_of_space': len(refused_form_c),
         'coords_unmatched': len(unmatched),
         # PWG-derived rows only — H1333's shipped number, deliberately still readable
         # after the MW rows land beside it.
@@ -1375,6 +1651,10 @@ def build(xls, pwg, mw=None, pw=None, pwg_dotted=True):
     sibling = {
         'disagreements': dotted_disagreements + pw_disagreements,
         'out_of_coordinate_space': dotted_out + pw_out,
+        # H4438: every coordinate whose lone head-line claimant was a noun article,
+        # with what was left after it was refused. Shipped so the refusal is auditable.
+        'dropped_sole_nominal_head': dropped_sole_nominal,
+        'refused_form_c_out_of_space': refused_form_c,
     }
     return (table, stats, conflicts, unmatched, samples, mw_disagreements,
             mw_artha_samples, sibling)
@@ -1435,7 +1715,29 @@ def main():
             'load-bearing there. Both are screened against the attested coordinate '
             'space (the highest serial PWG itself cites in that gaṇa); refusals are '
             'listed in `_out_of_coordinate_space` with the ceiling they failed, never '
-            'silently dropped.'),
+            'silently dropped.'
+            ' THE DENOMINATOR MOVED IN H4438 AND THE OLD ONE IS RETIRED. PWG writes '
+            '`DHĀTUP.` citations THREE ways; this builder read two until 09-09-2026, so '
+            '`coords_cited` 1751 — and the 83.7% quoted from it — was a property of a '
+            'regex set rather than of PWG. Admitting `<ls n="DHĀTUP.">4,13</ls>` (320 '
+            'occurrences, 270 coordinates, 141 of them cited by no other form) moves '
+            '`coords_cited` to 1890 — 1892 cited, less the two refused out of the '
+            'attested coordinate space — and `match_rate` to 83.2%. The two numbers are '
+            'NOT comparable and 1465/1751 must not be quoted beside 1573/1890 as if a '
+            'coverage regression had happened: the table grew by 131 rows and lost 23, '
+            '17 attributions changed, and agreement with Monier-Williams — the one '
+            'independent witness here — ROSE from 77.7% to 80.1%. '
+            'A sole `<lex>` head-line claimant is now refused as well, listed in '
+            '`_dropped_sole_nominal_head`: a noun article that quotes the coordinate to '
+            'gloss it used to win untested whenever it was the only head-line claimant. '
+            'The third citation form `<ls n="DH\u0100TUP.">4,13</ls>` is read as of '
+            'H4438 (320 occurrences, 270 coordinates, 141 cited no other way, 281 of '
+            'the 320 on the citing article\u2019s own head line, 93 of the 141 '
+            'independently cited by Monier-Williams). It spells its source in an '
+            'ATTRIBUTE, which an encoder can carry over from the citation before it, '
+            'so the coordinate-space ceiling is built from the SPELLED-OUT forms alone '
+            'and a form-C-only coordinate above that ceiling is refused unless MW names '
+            'it: see `_refused_form_c_out_of_space`.'),
         '_stats': stats,
         # Listed, not resolved. Each row is a live disagreement between two Böhtlingk-
         # numbering witnesses about which root a coordinate belongs to.
@@ -1448,6 +1750,17 @@ def main():
         # each row carries the gaṇa, the serial, the ceiling it exceeded and who cited
         # it, so the adjudication is re-derivable rather than asserted.
         '_out_of_coordinate_space': sibling['out_of_coordinate_space'],
+        # H4438. Coordinates where the only head-line claimant was a `<lex>` noun
+        # article — a gloss, not an attribution — with the claimants that were left
+        # after it was refused. Same contract as the list above: a refusal a reader
+        # cannot check is a refusal a reader has to take on trust.
+        '_dropped_sole_nominal_head': sibling['dropped_sole_nominal_head'],
+        # H4438. The third citation form's own refusals — a coordinate whose gaṇa the
+        # attribute could have carried over from the citation before it, standing above
+        # everything that gaṇa's spelled-out citations attest, with no MW to confirm it.
+        # Kept beside `_out_of_coordinate_space` because it is the same claim about the
+        # same space, made against a different citation form.
+        '_refused_form_c_out_of_space': sibling['refused_form_c_out_of_space'],
         'table': table,
     }
     with open(a.out, 'w', encoding='utf-8') as f:

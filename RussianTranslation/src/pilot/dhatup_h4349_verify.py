@@ -49,10 +49,18 @@ def check(name, ok, detail=''):
 # --- denominator, re-counted from the corpus with an independently written pattern ---
 CITE = re.compile(r'<ls\b[^>]*>\s*DH[ĀA]TUP\.\s*(\d+)\s*,\s*(\d+)')
 CONT = re.compile(r'<ls\b[^>]*\bn\s*=\s*"DH[ĀA]TUP\.\s*(\d+)\s*,\s*"[^>]*>\s*(\d+)')
+# H4438. The third form. `n="DHĀTUP."` carries the source in an ATTRIBUTE and the whole
+# coordinate in the body. It is a real citation — 320 occurrences, 281 of them on the
+# citing article's own head line — and the reader was blind to every one of them. It is
+# kept in its own pattern here, not folded into CITE, because the ceiling screen below
+# depends on knowing which coordinates the visible text spells out and which only an
+# attribute attributes.
+FULL = re.compile(r'<ls\b[^>]*\bn\s*=\s*"DH[ĀA]TUP\."[^>]*>\s*(\d+)\s*,\s*(\d+)')
 DOT = re.compile(r'^<L>\d+\.[\d.]*<pc>')
 INT = re.compile(r'^<L>\d+<pc>')
 
 cited = set()
+spelled_out = set()
 dotted_articles = 0
 with open(PWG, encoding='utf-8') as f:
     for line in f:
@@ -60,12 +68,23 @@ with open(PWG, encoding='utf-8') as f:
             if DOT.match(line):
                 dotted_articles += 1
             continue
-        for rx in (CITE, CONT):
+        for rx in (CITE, CONT, FULL):
             for m in rx.finditer(line):
-                cited.add('%s,%s' % (m.group(1), m.group(2)))
+                coord = '%s,%s' % (m.group(1), m.group(2))
+                cited.add(coord)
+                if rx is not FULL:
+                    spelled_out.add(coord)
 
-check('denominator: PWG cites %d gaṇa,serial coordinates' % len(cited),
-      len(cited) == st['coords_cited'] == 1751, '_stats says %d' % st['coords_cited'])
+# The denominator is what PWG cites MINUS what the ceiling screen refused, so this one
+# check re-derives both halves: a refusal the builder invented would show up as surplus
+# here, and a refusal it forgot would show up as deficit.
+refused_c = {r['coord'] for r in d.get('_refused_form_c_out_of_space', [])}
+check('denominator: PWG cites %d coordinates, %d refused out of space'
+      % (len(cited), len(refused_c)),
+      len(cited) == 1892 and len(cited) - len(refused_c) == st['coords_cited'] == 1890,
+      '_stats says %d' % st['coords_cited'])
+check('the citation forms that spell the gaṇa out attest 1751 of them',
+      len(spelled_out) == 1751, 're-counted %d' % len(spelled_out))
 check('PWG dotted-id article count', dotted_articles == 636 == st['pwg-dotted_articles'],
       're-counted %d' % dotted_articles)
 
@@ -73,8 +92,8 @@ check('PWG dotted-id article count', dotted_articles == 636 == st['pwg-dotted_ar
 counts = {}
 for r in table.values():
     counts[r['source']] = counts.get(r['source'], 0) + 1
-check('coverage 1465 = 1226 pwg + 140 mw + 99 mw-respell + 0 pw + 0 pwg-dotted',
-      len(table) == 1465 and counts == {'pwg': 1226, 'mw': 140, 'mw-respell': 99},
+check('coverage 1573 = 1302 pwg + 178 mw + 93 mw-respell + 0 pw + 0 pwg-dotted',
+      len(table) == 1573 and counts == {'pwg': 1302, 'mw': 178, 'mw-respell': 93},
       repr(counts))
 # THE INVARIANT THIS FILE ORIGINALLY MISSED, and the reason an independent verifier
 # refuted the first cut. `ceil` below is derived from `cited`, so testing only
@@ -84,19 +103,43 @@ check('coverage 1465 = 1226 pwg + 140 mw + 99 mw-respell + 0 pw + 0 pwg-dotted',
 # denominator that excluded it. Assert membership directly.
 check('every shipped coordinate is one PWG actually cites',
       set(table) <= cited, repr(sorted(set(table) - cited)[:5]))
+# H4438 RETIRED 83.7%. It was 1465/1751 against a denominator two of PWG's three
+# citation forms could reach; 83.2% is 1573/1890 against all three. The two are not
+# comparable and the smaller number is the better table — agreement with MW rose from
+# 77.7% to 80.1% across the same change. Quoting 83.7% again is a regression claim
+# about a coverage improvement.
 check('match_rate is the ratio it claims to be',
-      round(100.0 * len(table) / len(cited), 1) == st['match_rate'] == 83.7,
-      '%s%%' % st['match_rate'])
-check('H1333 rate still 70.0%% off the same denominator',
-      round(100.0 * counts['pwg'] / len(cited), 1) == st['match_rate_pwg'] == 70.0)
+      round(100.0 * len(table) / (len(cited) - len(refused_c)), 1)
+      == st['match_rate'] == 83.2, '%s%%' % st['match_rate'])
+check('H1333 rate is 68.9%% off the same denominator',
+      round(100.0 * counts['pwg'] / (len(cited) - len(refused_c)), 1)
+      == st['match_rate_pwg'] == 68.9, '%s%%' % st['match_rate_pwg'])
 
 # --- every shipped row is in the attested space -----------------------------------
+# H4438. The ceiling is built from `spelled_out`, NOT from `cited`. A form-C citation
+# names its source in an attribute, and an attribute is inheritable: PWG's
+# `<ls n="DHĀTUP.">27,71</ls>` is MW's `xxvi, 71` — the gaṇa carried forward from the
+# `27,16` one clause earlier. Build the ceiling from the form that can carry a gaṇa and
+# it certifies itself; gaṇa 27, attested by 32 coordinates ending at 33, would have
+# acquired a ceiling of 71 and handed the sibling passes 38 serials PWG never attests.
 ceil = {}
-for c in cited:
-    g, s = (int(x) for x in c.split(','))
-    ceil[g] = max(ceil.get(g, 0), s)
-bad = [c for c in table if (lambda g, s: s > ceil.get(g, 0))(*(int(x) for x in c.split(',')))]
-check('no shipped row lies outside the attested coordinate space', not bad, repr(bad[:5]))
+for c in spelled_out:
+    g, sr = (int(x) for x in c.split(','))
+    ceil[g] = max(ceil.get(g, 0), sr)
+bad = [c for c in table if (lambda g, sr: sr > ceil.get(g, 0))(*(int(x) for x in c.split(',')))]
+# Exactly one shipped row stands above that ceiling, and it is there because MW — a
+# different author, the only witness allowed to break a Böhtlingk tie here — prints the
+# identical pair: `Dhātup. xxvi, 127; <ls n="Dhātup.">xxxii, 133</ls>` for stūp. It is
+# the last root of a gaṇa 108 coordinates attest up to 132.
+check('the only shipped row above the spelled-out ceiling is the one MW confirms',
+      bad == ['32,133'], repr(sorted(bad)))
+check('the two the screen refused are the two the adjudication named',
+      refused_c == {'6,113', '27,71'}, repr(sorted(refused_c)))
+check('neither refused coordinate is in the table', not (refused_c & set(table)))
+for _r in d.get('_refused_form_c_out_of_space', []):
+    check('%s is published with the ceiling it failed' % _r['coord'],
+          isinstance(_r.get('spelled_out_ceiling'), int) and _r.get('claimants'),
+          'ceiling %s, claimants %r' % (_r.get('spelled_out_ceiling'), _r.get('claimants')))
 check('gaṇa 1 ceiling is 1, which is what refuses 1,840 and 1,960',
       ceil[1] == 1, 'ceiling %d' % ceil[1])
 refused = {x['coord'] for x in d['_out_of_coordinate_space']}
@@ -227,29 +270,39 @@ if _fn is not None:
 pw_cited = set()
 with open(PW, encoding='utf-8') as f:
     for line in f:
-        for rx in (CITE, CONT):
+        for rx in (CITE, CONT, FULL):
             for m in rx.finditer(line):
                 pw_cited.add('%s,%s' % (m.group(1), m.group(2)))
 check('pw cites %d coordinates, re-counted from the corpus' % len(pw_cited),
-      len(pw_cited) == st['pw_coords_cited'] == 40,
+      len(pw_cited) == st['pw_coords_cited'] == 41,
       '_stats says %d' % st['pw_coords_cited'])
-_split = {'pw_refused_nominal_head': 12, 'pw_refused_body_only': 4,
-          'pw_refused_same_book_conflict': 11, 'pw_refused_not_cited_by_pwg': 3,
+# H4438 moved this split without moving the verdict. pw's 41st citation arrives with
+# the third form, and the same-book screen absorbs five coordinates that used to be
+# refused one screen later or to pass as single verbal claimants — because PWG now
+# resolves more of the coordinates pw also cites, so more of them are same-book
+# conflicts. The sibling yield is still 0, which is the claim this file protects.
+_split = {'pw_refused_nominal_head': 11, 'pw_refused_body_only': 3,
+          'pw_refused_same_book_conflict': 16, 'pw_refused_not_cited_by_pwg': 3,
           'pw_refused_out_of_coordinate_space': 2,
-          'pw_coords_single_verbal_claimant': 8}
+          'pw_coords_single_verbal_claimant': 6}
 check('all six published pw refusal terms hold',
       all(st.get(k) == v for k, v in _split.items()),
       repr({k: st.get(k) for k, v in _split.items() if st.get(k) != v}))
 _buckets = sum(st.get(k, 0) for k in list(_split)
                + ['pw_refused_multiple_claimants', 'pw_refused_variant_reading'])
-check('the screen chain partitions all 40 citations', _buckets == len(pw_cited),
+check('the screen chain partitions all 41 citations', _buckets == len(pw_cited),
       'buckets sum to %d' % _buckets)
 check('the published sum is the header it is printed under',
-      sum(_split.values()) == 40)
+      sum(_split.values()) == 41)
+check('the sibling yield is still zero — both classes measured and empty',
+      st['coords_filled_from_pw'] == 0 and st['coords_filled_from_pwg-dotted'] == 0)
 
 print()
 print('coverage %d/%d = %s%%  ·  per-source %s'
-      % (len(table), len(cited), st['match_rate'], counts))
+      % (len(table), st['coords_cited'], st['match_rate'], counts))
+print('H4438: 3 citation forms, %d coordinates cited, %d refused out of space '
+      '(83.7%% was 1465/1751 over two forms and is retired)'
+      % (len(cited), len(refused_c)))
 print('H4349 sibling yield: pw %d, pwg-dotted %d — both classes measured and empty'
       % (st['coords_filled_from_pw'], st['coords_filled_from_pwg-dotted']))
 raise SystemExit(1 if fails else 0)
