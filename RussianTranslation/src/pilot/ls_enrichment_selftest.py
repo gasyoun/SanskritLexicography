@@ -9,6 +9,8 @@ only if that file is genuinely absent.
 
   python src/pilot/ls_enrichment_selftest.py
 """
+import io
+import json
 import os
 import sys
 
@@ -396,8 +398,8 @@ def test_dhatup_pwg_dotted_class_is_measured_and_empty():
         fail('the dotted-id class shipped %r rows; it must ship none until the one '
              'contested coordinate is adjudicated'
              % st.get('coords_filled_from_pwg-dotted'))
-    if st.get('pw_refused_same_book_conflict') != 11:
-        fail('pw same-book refusals moved: %r (was 11)'
+    if st.get('pw_refused_same_book_conflict') != 16:
+        fail('pw same-book refusals moved: %r (was 16 after H4438; 11 before it)'
              % st.get('pw_refused_same_book_conflict'))
     if st.get('pw_refused_not_cited_by_pwg') != 3:
         fail('pw membership refusals moved: %r (was 3)'
@@ -579,21 +581,21 @@ def test_dhatup_pw_refusal_split_matches_the_published_table():
         return
     st = dhp.stats()
     published = {
-        'pw_refused_nominal_head': 12,
-        'pw_refused_body_only': 4,
-        'pw_refused_same_book_conflict': 11,
+        'pw_refused_nominal_head': 11,
+        'pw_refused_body_only': 3,
+        'pw_refused_same_book_conflict': 16,
         'pw_refused_not_cited_by_pwg': 3,
         'pw_refused_out_of_coordinate_space': 2,
-        'pw_coords_single_verbal_claimant': 8,
+        'pw_coords_single_verbal_claimant': 6,
     }
     for key, want in sorted(published.items()):
         if st.get(key) != want:
             fail('%s is %r, ABBREVIATIONS_RU.md publishes %d — one of the two is now '
                  'wrong; re-adjudicate before changing either' % (key, st.get(key), want))
-    if sum(published.values()) != 40:
-        fail('the published split no longer sums to 40: %r' % published)
-    if st.get('pw_coords_cited') != 40:
-        fail('pw now cites %r coordinates, not the published 40' % st.get('pw_coords_cited'))
+    if sum(published.values()) != 41:
+        fail('the published split no longer sums to 41: %r' % published)
+    if st.get('pw_coords_cited') != 41:
+        fail('pw now cites %r coordinates, not the published 41' % st.get('pw_coords_cited'))
     buckets = dict(published)
     buckets['pw_refused_multiple_claimants'] = st.get('pw_refused_multiple_claimants')
     buckets['pw_refused_variant_reading'] = st.get('pw_refused_variant_reading')
@@ -601,8 +603,10 @@ def test_dhatup_pw_refusal_split_matches_the_published_table():
     if total != st.get('pw_coords_cited'):
         fail('the screen chain is not a partition: buckets %r sum to %d, pw cites %r'
              % (buckets, total, st.get('pw_coords_cited')))
-    # The 8 survivors ship nothing, and the reason is itemised rather than netted:
-    # 7 coordinates the table already holds, 1 whose root Palsule does not gloss.
+    # The 6 survivors ship nothing, and the reason is itemised rather than netted:
+    # 5 coordinates the table already holds, 1 whose root Palsule does not gloss.
+    # (8 = 7 + 1 before H4438: two of pw's survivors became same-book conflicts once
+    # PWG's third citation form let PWG resolve the same coordinates itself.)
     if st.get('coords_filled_from_pw') != 0:
         fail('pw now fills %r coordinates; the published table says 0 shipped'
              % st.get('coords_filled_from_pw'))
@@ -612,17 +616,26 @@ def test_dhatup_pw_refusal_split_matches_the_published_table():
     already = (published['pw_coords_single_verbal_claimant']
                - st.get('pw_candidates_without_palsule_row', 0)
                - st.get('coords_filled_from_pw', 0))
-    if already != 7:
-        fail('survivors already in the table: %d, published reasoning says 7' % already)
+    if already != 5:
+        fail('survivors already in the table: %d, published reasoning says 5' % already)
 
 
 def test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349():
-    """H4349: the two shipped baselines stay derivable FROM the artifact.
+    """The shipped composition stays derivable FROM the artifact.
 
     Not a rebuild — the selftest has no corpus — but the weaker claim that still
-    catches a silent drift: H1333's 1226 PWG rows and 59.9% artha accuracy, and
-    H4339's 1465-row composition, must still be readable off `_stats` and must still
-    match what the table contains row by row."""
+    catches a silent drift: the per-source split, the artha-accuracy pair and the row
+    total must be readable off `_stats` and must match the table row by row.
+
+    H4438 MOVED EVERY NUMBER HERE, and the reason is one line long: PWG writes its
+    dhātupāṭha citations in THREE forms and this concordance read two. Admitting
+    `<ls n="DHĀTUP.">4,13</ls>` (320 occurrences, 270 coordinates, 141 cited no other
+    way) grew the denominator from 1751 to 1890 and the table from 1465 to 1573.
+    83.7% and 83.2% are NOT COMPARABLE — different denominators, and the second is the
+    better table: over the same change, agreement with Monier-Williams, the one
+    independent witness here, rose 77.7% -> 80.1% and `mw_only_coords` fell 124 -> 33.
+    Do not "restore" a number in this function without rebuilding.
+    """
     if not dhp.available():
         print('  .. skipped test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349')
         return
@@ -631,20 +644,85 @@ def test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349():
     counts = {}
     for r in table.values():
         counts[r['source']] = counts.get(r['source'], 0) + 1
-    if counts.get('pwg') != 1226:
-        fail('H1333 baseline moved: %r PWG rows, not 1226' % counts.get('pwg'))
-    if (st.get('inline_artha_agree'), st.get('inline_artha_examined')) != (139, 232):
-        fail('H1333 artha accuracy moved: %r of %r'
+    if counts.get('pwg') != 1302:
+        fail('PWG-derived rows moved: %r, not the 1302 H4438 shipped' % counts.get('pwg'))
+    if (st.get('inline_artha_agree'), st.get('inline_artha_examined')) != (147, 250):
+        fail('artha accuracy moved: %r of %r'
              % (st.get('inline_artha_agree'), st.get('inline_artha_examined')))
-    if (counts.get('mw'), counts.get('mw-respell')) != (140, 99):
-        fail('H4339 composition moved: mw=%r mw-respell=%r'
+    if (counts.get('mw'), counts.get('mw-respell')) != (178, 93):
+        fail('MW composition moved: mw=%r mw-respell=%r'
              % (counts.get('mw'), counts.get('mw-respell')))
-    if len(table) != 1465:
-        fail('H4349 must leave H4339\'s coverage exactly where it found it until a '
-             'sibling fill survives screening: %d rows' % len(table))
-    if st.get('coords_linked_after_mw') != 1226 + 140 + 99:
-        fail('_stats.coords_linked_after_mw %r != the 1465 rows H4339 shipped'
+    if len(table) != 1573:
+        fail('the shipped table is %d rows, not the 1573 H4438 built' % len(table))
+    if st.get('coords_linked_after_mw') != 1302 + 178 + 93:
+        fail('_stats.coords_linked_after_mw %r != the 1573 rows shipped'
              % st.get('coords_linked_after_mw'))
+    if (st.get('coords_cited'), st.get('match_rate')) != (1890, 83.2):
+        fail('the denominator or the rate moved: %r cited, %r%% — 83.7%% was 1465/1751 '
+             'over two citation forms and is RETIRED'
+             % (st.get('coords_cited'), st.get('match_rate')))
+    if st.get('cross_agreement_rate') != 80.1:
+        fail('agreement with the independent witness moved: %r%% (H4438 shipped 80.1, '
+             'up from 77.7) — that number is why the smaller coverage rate is an '
+             'improvement, so it may not drift silently'
+             % st.get('cross_agreement_rate'))
+
+
+def test_dhatup_h4438_third_citation_form_refusals_are_published():
+    """H4438. The third citation form spells `DHĀTUP.` in an ATTRIBUTE, so a gaṇa can be
+    carried over from the citation before it — PWG's `<ls n="DHĀTUP.">27,71</ls>` is
+    MW's `xxvi, 71`. Two coordinates arrived that way above everything their gaṇa's
+    spelled-out citations attest, with no MW to confirm either, and both are refused
+    BEFORE resolution so they never enter the denominator.
+
+    Pinned here because a refusal nobody can inspect is a refusal a reader must take on
+    trust: each row carries the ceiling it failed and who claimed it."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_h4438_third_citation_form_refusals_are_published')
+        return
+    st = dhp.stats()
+    # The published refusal lists are payload keys, not `_stats`, and `dhp` only
+    # exposes the table and the stats — read the artifact directly.
+    payload = json.load(io.open(dhp._JSON, encoding='utf-8'))
+    if st.get('coords_refused_form_c_out_of_space') != 2:
+        fail('the form-C ceiling screen refuses %r coordinates, not the adjudicated 2'
+             % st.get('coords_refused_form_c_out_of_space'))
+    rows = (payload or {}).get('_refused_form_c_out_of_space')
+    if rows is None:
+        return
+    if sorted(r['coord'] for r in rows) != ['27,71', '6,113']:
+        fail('the refused coordinates moved: %r — 6,113 is Böhtlingk\'s own '
+             'Bhartṛhari locus, 27,71 is MW\'s 26,71 with the gaṇa carried forward'
+             % sorted(r['coord'] for r in rows))
+    for r in rows:
+        if not isinstance(r.get('spelled_out_ceiling'), int) or not r.get('claimants'):
+            fail('refusal %r ships without the ceiling or the claimants that explain it'
+                 % r)
+
+
+def test_dhatup_h4438_sole_nominal_head_claimants_are_refused():
+    """H4438. A coordinate whose ONLY head-line claimant is a `<lex>` noun article used
+    to win untested: 23,39 shipped as spardhā off an article that says in so many words
+    the coordinate is `als Bed. von {#hvA#}`. Six such coordinates are now refused and
+    the winner is whatever single verbal claimant remains, or nothing."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_h4438_sole_nominal_head_claimants_are_refused')
+        return
+    st = dhp.stats()
+    if st.get('coords_sole_nominal_head_dropped') != 6:
+        fail('the sole-nominal screen drops %r coordinates, not the adjudicated 6'
+             % st.get('coords_sole_nominal_head_dropped'))
+    # The published refusal lists are payload keys, not `_stats`, and `dhp` only
+    # exposes the table and the stats — read the artifact directly.
+    payload = json.load(io.open(dhp._JSON, encoding='utf-8'))
+    rows = (payload or {}).get('_dropped_sole_nominal_head')
+    if rows is None:
+        return
+    got = sorted((r['coord'] for r in rows), key=lambda c: [int(x) for x in c.split(',')])
+    if got != ['7,3', '19,54', '20,27', '23,39', '32,109', '33,73']:
+        fail('the refused nominal head claimants moved: %r' % got)
+    if '23,39' not in got:
+        fail('23,39 -> spardhā is the case this screen was built for and it is not here')
 
 
 def test_dhatup_mw_tooltip_marks_the_second_witness():
@@ -786,6 +864,8 @@ def main():
         test_dhatup_sibling_screens_are_mandatory_not_opt_in,
         test_dhatup_artifact_is_pinned_to_its_builder,
         test_dhatup_pw_refusal_split_matches_the_published_table,
+        test_dhatup_h4438_third_citation_form_refusals_are_published,
+        test_dhatup_h4438_sole_nominal_head_claimants_are_refused,
     ]
     for t in tests:
         t()
