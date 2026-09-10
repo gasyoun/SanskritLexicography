@@ -17,7 +17,7 @@ _Created: 10-09-2026 · Last updated: 10-09-2026_
 
 ## Limitations
 
-- The legend is a SUMMARY (24 lines), not the stock: per-headword codes do not exist here (backlog 2).
+- The legend is a SUMMARY (24 class lines: 1 stock + 23 subclasses), not the stock: per-headword codes do not exist here (backlog 2).
 - `source_page_ref` column exists for schema continuity with a future SCH-XML join and is empty by construction.
 - Subclass counts overlap (sum 197,019 > stock 187,992); the TSV transcribes, it does not de-overlap.
 

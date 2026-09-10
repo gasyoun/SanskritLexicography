@@ -4,7 +4,7 @@
 Source: yadisk:Sanskrityatina/04_Reverse/187992 headwords.txt (ASCII, CRLF,
 1,706 bytes) — the coding LEGEND of MG's 187,992-headword reverse-dictionary
 stock (Schwarz-based, sources IEG/PD/BHS/MW/SCH), NOT the headword list
-itself: 1 total/class-0 line + 22 subclass lines + 3 attested example
+itself: 1 total/class-0 line + 23 subclass lines + 3 attested example
 headwords in an ASCII fence.
 
 Outputs (beside this file's parent, LF, UTF-8, idempotent):
@@ -161,7 +161,7 @@ def main() -> int:
         "notes": [
             "The file is the CODING LEGEND of the 187,992-headword stock, not the "
             "stock itself: class 0 ('in two or more dictionaries') carries the whole "
-            "stock; the 22 subclass lines sum to more than the stock, i.e. classes "
+            "stock; the 23 subclass lines sum to more than the stock, i.e. classes "
             "OVERLAP (delta recorded in counts.subclass_sum_minus_stock).",
             "source_page_ref is empty by construction — page/column refs exist only "
             "in the sibling SCH XML research cases (separate census line, mission).",
