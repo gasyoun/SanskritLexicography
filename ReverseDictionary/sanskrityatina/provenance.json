@@ -5,7 +5,7 @@
   "source_mtime_utc": "2023-08-31T12:59:05Z",
   "source_sha256": "c269e11fa0e75d16a86e3913bc37a185c6689d68eb64547bf17040f5194bfd82",
   "source_encoding": "ASCII, CRLF line terminators",
-  "fetched_at_utc": "2026-09-10T20:44z",
+  "fetched_at_utc": "2026-09-10T20:25Z",
   "fetched_by": "H4475 (OxAlpha, opencode glm-5.3-flash), rclone yadisk:",
   "builder": "ReverseDictionary/sanskrityatina/tools/h4475_build_reverse_index.py",
   "sanskrit_util_version": "0.12.0",

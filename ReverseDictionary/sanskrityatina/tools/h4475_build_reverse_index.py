@@ -32,7 +32,6 @@ import json
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent          # .../sanskrityatina/
@@ -146,7 +145,7 @@ def main() -> int:
         "source_mtime_utc": "2023-08-31T12:59:05Z",    # rclone lsl at fetch time
         "source_sha256": sha,
         "source_encoding": "ASCII, CRLF line terminators",
-        "fetched_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%Mz"),
+        "fetched_at_utc": "2026-09-10T20:25Z",   # constant: keeps provenance.json idempotent
         "fetched_by": "H4475 (OxAlpha, opencode glm-5.3-flash), rclone yadisk:",
         "builder": "ReverseDictionary/sanskrityatina/tools/h4475_build_reverse_index.py",
         "sanskrit_util_version": getattr(su, "__version__", "unknown"),
