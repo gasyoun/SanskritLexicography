@@ -2,6 +2,11 @@
 
 _Created: 09-09-2026 · Last updated: 10-09-2026_
 
+**Update 10-09-2026:** the kosha manifest row proposed below (§ "Proposed
+kosha manifest row") is now landed — [kosha PR #551](https://github.com/gasyoun/kosha/pull/551)
+(merged), registering `zaliznyak-lectures-transcripts` in kosha's own
+`data/manifest/datasets.json`.
+
 Handoff [H4473](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4473-OxAlpha_SanskritLexicography_zaliznyak-transcripts_09.09.26.md).
 Source: private Yandex.Disk remote `yadisk:ААЗализняк-архив` (rclone WebDAV
 remote already configured on this machine, credentials at
@@ -108,6 +113,11 @@ of each was inspected live during this census (not re-vendored).
 - kosha `stenogrammy-teaching-glossary` — different private corpus (Uprava
   teaching stenograms), unrelated uploader/channel.
 - No existing kosha dataset covers Zaliznyak **lecture transcripts**.
+
+**LANDED 10-09-2026** via [kosha PR #551](https://github.com/gasyoun/kosha/pull/551)
+(merged) — the row below is now live in kosha's own
+`data/manifest/datasets.json`, filed as a follow-up worktree + PR against
+that separate guarded main-tree checkout.
 
 ## Proposed kosha manifest row (prepared, NOT yet landed)
 
