@@ -75,4 +75,21 @@ From no_pwg_residuals.jsonl (all rows `blocked`, `updated_at` 2026-07-15 — PRE
 - Unblock options for the human ruling: (a) quiet hook noise on headless profiles (§6.2 path), (b) retune `_probe_prompt`/task-shape text (H994/H3157 design space, selftest-backed), (c) pin the profile model, (d) explicit one-wave bypass.
 - Residuals: `no_pwg_w1.still_null.txt` original 37-line list unrecoverable (lost in the 19:15 crash after the .bak was consumed; restored EMPTY — planner falls back to queue-only ordering, regenerates at next audit sweep); canary `h4213can02` prepared-but-unrun (fresh; drop or ride on relaunch).
 
+### §7 Fixed-launcher attempts 4-8 (08-10.09.2026, H4213 OxAlpha relaunch) — gate still RED, four distinct failure modes
+
+After the H4342 fixed launcher (timestamped canary prefix) was applied to the live ps1 (08-09 08:30), five further attempts ran; every gate stopped honestly, **zero window spend** across all eight. Full log: [h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt](https://github.com/gasyoun/SanskritLexicography/blob/h4213-drain/RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt).
+
+| # | When (MSK) | Stage reached | Failure mode | Host state |
+|---|---|---|---|---|
+| 4 | 08-09 16:07 | canary run (warm-up) | probe latency **142.8 s > 80 s ceiling**, honest NO-GO (no re-roll) | commit 83.8%, 2.7 GB free |
+| 5 | 08-09 20:12 | launch start | no further log lines (interrupted) | — |
+| 6 | 09-09 10:55 | canary prep | **stale lease** `arvant~~h0_zz_nws00` — timestamped canary ids are not in the ps1's hardcoded 3-id lease-drop list | — |
+| 7 | 09-09 11:01 | canary run (warm-up) | probe **refusal**, 151.3 s, `schema_valid:false` | commit 84.5%, 3.2 GB free |
+| 8 | 10-09 21:32 | profile init validation | **`c1: profile validation failed: timeout`** — new earliest stop, before any probe content | 4 GB free, node procs 8→2 |
+
+- **Fix landed this session:** ps1 lease-drop now prefix-matches all `h4213can*` leases (was: 3 hardcoded legacy ids) — attempt #6's wedge class cannot recur; stale lease `h4213can090911010202` + orphan artifacts dir dropped pre-launch. Mirror: [h4342_fixes/h4213_wave_launch_FIXED.ps1](https://github.com/gasyoun/SanskritLexicography/blob/h4213-drain/RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_FIXED.ps1).
+- Failure-mode census across 8 attempts: window-id collision ×2 (FIXED, H4342-d) · stale-lease wedge ×1 (FIXED, this session) · warm-up refusal/content ×3 · probe latency ×1 · **init-validation timeout ×1 (new, 10-09)**. The trend is host/profile degradation, not harness logic: the box sits at 80-85% commit during attempts and c1 now fails validation outright.
+- Per §6.3 the probe must not be hand-weakened; the unblock ruling options stand: (a) quiet hook noise on headless profiles, (b) retune `_probe_prompt` task-shape (selftest-backed), (c) pin the profile model, (d) explicit one-wave bypass — **plus now (e) host-health work** (free memory / quieter window / move lane) and a c1 profile auth check, since attempt #8 timed out at validation before any content exchange.
+- The handoff's own RED=STOP rule + 8 honest stops = the wave stays parked pending the human ruling. No further attempts queued.
+
 _Dr. Mārcis Gasūns_
