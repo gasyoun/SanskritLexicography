@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T20:10:29Z",
+  "generated_at": "2026-09-10T20:15:44Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 130491,
+    "youngest_artifact_age_seconds": 130807,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-02T19:01:43Z",
-        "age_seconds": 695321,
+        "age_seconds": 695637,
         "size": 26345513
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1212343,
+        "age_seconds": 1212659,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1212343,
+        "age_seconds": 1212659,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-09-09T07:55:33Z",
-        "age_seconds": 130491,
+        "age_seconds": 130807,
         "size": 3565416
       }
     }
@@ -52,7 +52,7 @@
     "pending": 29,
     "newest_card_at": "2026-08-29T08:49:35Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 12.47,
+    "days_since_last_card": 12.48,
     "campaign_days": 74
   },
   "yield_quality": {
@@ -268,15 +268,15 @@
     "measured": true,
     "source_mode": "canonical",
     "ceiling_ms": 65000,
-    "probes": 79,
+    "probes": 81,
     "go_count": 60,
-    "nogo_count": 19,
-    "go_pct": 75.9,
+    "nogo_count": 21,
+    "go_pct": 74.1,
     "last": {
-      "ts": "2026-09-09T08:04:10.436Z",
+      "ts": "2026-09-10T20:13:51.909Z",
       "account": "c1",
-      "elapsed_ms": 151327,
-      "duration_api_ms": 140517,
+      "elapsed_ms": 156802,
+      "duration_api_ms": 144327,
       "ceiling_ms": 80000,
       "verdict": "NO-GO",
       "model": "claude-sonnet-5",
@@ -284,26 +284,6 @@
     },
     "last_verdict": "NO-GO",
     "recent": [
-      {
-        "ts": "2026-08-25T19:31:45.238Z",
-        "account": "c1",
-        "elapsed_ms": 23735,
-        "duration_api_ms": 12178,
-        "ceiling_ms": 80000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "health_probe_log.jsonl"
-      },
-      {
-        "ts": "2026-08-27T17:24:52.021Z",
-        "account": "c1",
-        "elapsed_ms": 101781,
-        "duration_api_ms": 93165,
-        "ceiling_ms": 80000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "health_probe_log.jsonl"
-      },
       {
         "ts": "2026-08-27T17:25:45.473Z",
         "account": "c1",
@@ -419,6 +399,26 @@
         "account": "c1",
         "elapsed_ms": 151327,
         "duration_api_ms": 140517,
+        "ceiling_ms": 80000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "health_probe_log.jsonl"
+      },
+      {
+        "ts": "2026-09-10T20:11:15.070Z",
+        "account": "c1",
+        "elapsed_ms": 101111,
+        "duration_api_ms": 90133,
+        "ceiling_ms": 80000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "health_probe_log.jsonl"
+      },
+      {
+        "ts": "2026-09-10T20:13:51.909Z",
+        "account": "c1",
+        "elapsed_ms": 156802,
+        "duration_api_ms": 144327,
         "ceiling_ms": 80000,
         "verdict": "NO-GO",
         "model": "claude-sonnet-5",
@@ -739,7 +739,7 @@
     "total_idle_seconds": 3844596,
     "total_idle_hours": 1067.94,
     "mean_gap_seconds": 640766.0,
-    "current_idle_seconds": 130492,
+    "current_idle_seconds": 130808,
     "last_idle_seconds": 758439,
     "last_idle": {
       "from": "2026-08-29T11:57:08Z",
@@ -765,9 +765,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 130492,
+        "idle_seconds": 130808,
         "idle_days": 1.51,
-        "idle_hours": 36.25
+        "idle_hours": 36.34
       }
     ],
     "recent_gaps": [
@@ -786,9 +786,8 @@
         "seconds": 171836,
         "after_root": null,
         "before_root": "dA",
-        "reason": "health_nogo",
-        "reason_source": "health_probe_overlap",
-        "reason_evidence": "probe NO-GO 101781ms @2026-08-27T17:24:52.021Z account=c1"
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-08-27T19:24:44Z",
@@ -843,9 +842,8 @@
         "seconds": 171836,
         "after_root": null,
         "before_root": "dA",
-        "reason": "health_nogo",
-        "reason_source": "health_probe_overlap",
-        "reason_evidence": "probe NO-GO 101781ms @2026-08-27T17:24:52.021Z account=c1"
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-08-27T19:24:44Z",
@@ -896,11 +894,10 @@
       ],
       "gap_count": 6,
       "reason_counts": {
-        "unknown": 5,
-        "health_nogo": 1
+        "unknown": 6
       },
-      "known_reason_count": 1,
-      "unknown_reason_count": 5,
+      "known_reason_count": 0,
+      "unknown_reason_count": 6,
       "log_entries": 0,
       "log_path": "idle_reason_log.jsonl",
       "note": "Reasons from operator log or measured auto-rules only; historical silence stays unknown"
