@@ -86,16 +86,39 @@ owner-regex fix — offline, zero calls — moves the `nws` gate from **exit 1 /
 re-generation rather than a re-judge: one paid call, and the canary gate above is already open for
 it. Report under `src/pilot/output/h4527-rejudge/` (gitignored).
 
-## A hazard found in passing — recorded before it bites someone
+## The dashboard hazard — corrected attribution (erratum, same day)
 
-`no_pwg_scale_plan.py` silently regenerates four **tracked** dashboard JSONs as a side effect of
-planning: `progress_dashboard/kitchen_data.json`, `progress_data.json`, `progress_timeseries.json`,
-`quality_timeseries.json`. Run from a checkout behind `origin/master` — the shared main tree was
-**behind 5** — that rebuild is a net **−2191 lines** on `kitchen_data.json` and walks
-`store.senses` 11519 → 11516. A session that planned a window and then committed everything it
-touched would erase curated data with no gate objecting. Reverted here (`git checkout --` on those
-four paths only, after confirming all four carried this run's own 16:06Z mtime); the shared tree is
-back to its two pre-existing H4213 edits.
+**The first version of this section blamed `no_pwg_scale_plan.py`. That was wrong**, and the
+correction matters because the real cause cannot be fixed by not running the planner.
+
+`progress_dashboard/{kitchen_data,progress_data,progress_timeseries,quality_timeseries}.json`
+are rewritten by a **long-running local daemon**, not by any command a session types:
+
+```
+python -u progress_dashboard/live_refresh.py --idle-stop 0 --interval 60
+       --active-within 900 --data-root C:\Users\user\Documents\GitHub\SanskritLexicography
+```
+
+PID 10616, started 04-09-2026, still running. Its own docstring says why it exists and why it
+behaves this way: progress and kitchen numbers derive from **gitignored** RussianTranslation
+artifacts that CI never sees, so it rebuilds them locally every `--interval` seconds whenever
+the store, window_status or ledger mtime falls inside `--active-within`, and publishes to
+`origin/gh-pages` — *"never spams master with minute-level commits"*. Any live-gate or planning
+activity in `src/pilot/` therefore re-dirties those four tracked files within 60 seconds.
+Reverting them is futile while the daemon runs; this pass reverted them once and they were back
+in under two minutes.
+
+**What is genuinely hazardous, and survives the correction:** the rebuild runs from the **shared
+main checkout**, which was **behind `origin/master` by 5 commits** all day, so the diff it leaves
+in the working tree is a net **−2191 lines** on `kitchen_data.json` and walks `store.senses`
+11519 → 11516. Those four files are tracked. A session that runs `git add -A` in this tree — the
+sweep the shared-tree guard already warns about — commits a large stale-checkout deletion it
+never looked at, on top of whatever it meant to commit.
+
+**How to stay safe:** stage explicit paths in this tree, never `git add -A`; treat a dirty
+`progress_dashboard/*.json` as the daemon's normal state rather than as your own edit; and if the
+diff ever needs to land, update the checkout first so the rebuild is derived from current
+`master` rather than from a five-commit-old tree.
 
 ## Status of the five work items
 
