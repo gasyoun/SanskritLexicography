@@ -1,0 +1,4 @@
+# Byte-parity layer (H4538): these corpus files must round-trip byte-exact
+# against the yadisk originals — SHA256SUMS.txt pins the bytes. No EOL
+# normalization, no diff mangling: the mirror stays a mirror.
+* -text
