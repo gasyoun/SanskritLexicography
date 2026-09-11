@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T16:05:37Z",
+  "generated_at": "2026-09-11T16:06:54Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 49,
+    "youngest_artifact_age_seconds": 30,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,26 +17,26 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T01:37:48Z",
-        "age_seconds": 52066,
+        "age_seconds": 52145,
         "size": 26339285
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1284052,
+        "age_seconds": 1284130,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1284052,
+        "age_seconds": 1284130,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-11T16:04:44Z",
-        "age_seconds": 49,
-        "size": 3575386
+        "mtime": "2026-09-11T16:06:22Z",
+        "age_seconds": 30,
+        "size": 3576094
       }
     }
   },
@@ -540,14 +540,14 @@
     "blocked": true,
     "banner": "DO NOT START A SECOND PAID WINDOW",
     "operator_one_liner": "If the kitchen collision banner is red (or collision_guard.blocked=true): DO NOT start a second paid window on those keys/root — a live job or recent store-hit / lease collision already holds them. Wait for the live job to finish or requeue that lease; only then import another window.",
-    "collision_count": 2,
+    "collision_count": 3,
     "kind_counts": {
-      "nominal_keys_active": 2
+      "nominal_keys_active": 3
     },
     "last": {
-      "ts": "2026-09-09T07:55:33Z",
+      "ts": "2026-09-11T16:06:22Z",
       "type": "lease_collision",
-      "root": "h4213can090910550802",
+      "root": "h4527acc03",
       "level": "error",
       "summary": "DO NOT START A SECOND PAID WINDOW — nominal lease keys already active: arvant~~h0_zz_nws00",
       "kind": "nominal_keys_active",
@@ -573,6 +573,18 @@
         "ts": "2026-09-09T07:55:33Z",
         "type": "lease_collision",
         "root": "h4213can090910550802",
+        "level": "error",
+        "summary": "DO NOT START A SECOND PAID WINDOW — nominal lease keys already active: arvant~~h0_zz_nws00",
+        "kind": "nominal_keys_active",
+        "overlap_count": 1,
+        "overlap_sample": [
+          "arvant~~h0_zz_nws00"
+        ]
+      },
+      {
+        "ts": "2026-09-11T16:06:22Z",
+        "type": "lease_collision",
+        "root": "h4527acc03",
         "level": "error",
         "summary": "DO NOT START A SECOND PAID WINDOW — nominal lease keys already active: arvant~~h0_zz_nws00",
         "kind": "nominal_keys_active",
