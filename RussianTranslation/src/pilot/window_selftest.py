@@ -9660,8 +9660,62 @@ def test_h2173_g10_declared_budgets_are_read_or_labelled():
     print('  G10: manifest budgets feed the executor; translation_limit binds from state')
 
 
+def test_h4529_width_policy_and_pool_split():
+    """H4529: width is telemetry-driven, and the two agent pools stay disjoint.
+
+    Three invariants, all offline:
+
+    1. The generator no longer OWNS the width numbers — `width_policy` does, and
+       the pinned A5/H1283 defaults are what the harness still starts from.
+    2. The policy narrows on the H255 w07 degraded fixture and refuses to widen
+       without consecutive measured-healthy load-representative windows, so no
+       code path can re-run the Slice-D/H317 unconditional width raise.
+    3. `--max-agents` below the key count is refused at generation time with the
+       C2_M50 ledger id in the message (H1610/H1618 total-vs-width footgun), and
+       the H437 all-heal window gives every card its full per-card heal ceiling.
+    """
+    import agent_budget
+    import gen_opt_harness2 as gen
+    import width_policy
+
+    assert gen.MAX_WIDE == width_policy.DEFAULT_MAX_WIDE == 3
+    assert gen.STAGGER_MS == width_policy.DEFAULT_STAGGER_MS == 2000
+    assert gen.WIDTH_DECISION is None, 'no telemetry => no decision => manifest key absent'
+
+    degraded = {'keys_total': 36, 'null_keys': 31, 'kill_timeouts': 32, 'max_wide': 0}
+    narrowed = width_policy.decide_width([degraded], current_max_wide=3)
+    assert narrowed.action == 'narrow' and narrowed.max_wide < 3, narrowed
+
+    healthy = {'keys_total': 12, 'null_keys': 0, 'kill_timeouts': 0, 'conn_errors': 0,
+               'max_wide': 3}
+    assert width_policy.decide_width([healthy] * 6, current_max_wide=3).max_wide == 3, \
+        'the adaptive ceiling is the measured A5 default; above it is calibration, not policy'
+    assert width_policy.decide_width([healthy], current_max_wide=2).action == 'hold'
+    assert width_policy.decide_width([healthy, healthy], current_max_wide=2).action == 'widen'
+    assert width_policy.probe_gate_verdict({'concurrency': 1}, 3)[0] == 'NO-GO', \
+        'an isolated warm-up cannot clear a 3-wide window (H255 w07)'
+
+    try:
+        agent_budget.refuse_starvation_override(50, 1)
+    except ValueError as exc:
+        assert 'C2_M50_W1_MAX_AGENTS1_2026-07-24' in str(exc)
+    else:
+        raise AssertionError('--max-agents=1 on a 50-key window must be refused')
+    assert agent_budget.refuse_starvation_override(50, 1, force=True).startswith('WARNING')
+
+    all_heal = agent_budget.derive_agent_budget(12, {'k%d' % i: 12 for i in range(12)})
+    per_card = agent_budget._per_card_heal_cap(12, 1.5, 3)
+    assert all_heal.max_heal_agents == 12 * per_card, 'heal pool must be the SUM of card caps'
+    assert all_heal.max_heal_agents - 11 * per_card == per_card, \
+        'the last card to heal still has its whole per-card cap (the H437 starvation class)'
+
+    width_policy.selftest()
+    agent_budget.selftest()
+
+
 def main():
     tests = [
+        test_h4529_width_policy_and_pool_split,
         test_restore_covers_every_promoted_field,
         test_h1339_b21_promoted_pairs_cover_store_write_set,
         test_h1339_b02_stitched_card_schema_complete,
