@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T05:35:29Z",
+  "generated_at": "2026-09-11T05:37:57Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": false,
+    "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 14258,
+    "youngest_artifact_age_seconds": 59,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,26 +17,26 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T01:37:48Z",
-        "age_seconds": 14258,
+        "age_seconds": 14405,
         "size": 26339285
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1246244,
+        "age_seconds": 1246391,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1246244,
+        "age_seconds": 1246391,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-09T07:55:33Z",
-        "age_seconds": 164392,
-        "size": 3565416
+        "mtime": "2026-09-11T05:36:54Z",
+        "age_seconds": 59,
+        "size": 3570274
       }
     }
   },
@@ -111,96 +111,98 @@
   },
   "gates": {
     "measured": true,
-    "gate_summaries": 3787,
-    "exit0": 1988,
-    "exit0_pct": 52.5,
+    "gate_summaries": 3796,
+    "exit0": 1995,
+    "exit0_pct": 52.6,
     "recent_shown": 200,
     "recent": [
       {
-        "ts": "2026-09-07T06:37:48Z",
+        "ts": "2026-09-07T06:38:02Z",
         "root": "_apta",
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:37:48Z",
+        "ts": "2026-09-07T06:38:02Z",
         "root": "_apta",
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:37:48Z",
+        "ts": "2026-09-07T06:38:02Z",
         "root": "_apta",
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "final_schema exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
-        "summary": "nws exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
+        "summary": "nws exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "arvant~~h0_zz_nws00"
+        ]
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "translation exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "stage2_mechanical exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
-        "summary": "coverage exit=1 requeue=1",
-        "returncode": 1,
-        "requeue": [
-          "_apta"
-        ]
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
+        "summary": "coverage exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "sense_dupes exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
-        "summary": "ru_style exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
+        "summary": "ru_style exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "arvant~~h0_zz_nws00"
+        ]
       }
     ]
   },
@@ -580,15 +582,8 @@
         ]
       }
     ],
-    "live_jobs": [
-      {
-        "external_id": "h4213can091108282902",
-        "state": "in_progress",
-        "started_at": "2026-09-11T05:33:42Z",
-        "profile_slot": "c1"
-      }
-    ],
-    "live_job_count": 1,
+    "live_jobs": [],
+    "live_job_count": 0,
     "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
@@ -742,20 +737,21 @@
     "measured": true,
     "min_idle_seconds": 120,
     "list_len": 12,
-    "gap_count": 6,
-    "total_idle_seconds": 3844596,
-    "total_idle_hours": 1067.94,
-    "mean_gap_seconds": 640766.0,
-    "current_idle_seconds": 14259,
-    "last_idle_seconds": 758439,
+    "gap_count": 7,
+    "total_idle_seconds": 4186527,
+    "total_idle_hours": 1162.92,
+    "mean_gap_seconds": 598075.286,
+    "current_idle_seconds": null,
+    "last_idle_seconds": 341931,
     "last_idle": {
-      "from": "2026-08-29T11:57:08Z",
-      "to": "2026-09-07T06:37:47Z",
-      "seconds": 758439,
-      "after_root": "no_pwg_w09",
-      "before_root": "_apta",
-      "reason": "unknown",
-      "reason_source": "default"
+      "from": "2026-09-07T06:38:02Z",
+      "to": "2026-09-11T05:36:53Z",
+      "seconds": 341931,
+      "after_root": "_apta",
+      "before_root": null,
+      "reason": "health_nogo",
+      "reason_source": "health_probe_overlap",
+      "reason_evidence": "probe NO-GO 176814ms @2026-09-08T13:10:44.381Z account=c1"
     },
     "idle_by_month": [
       {
@@ -772,9 +768,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 14259,
-        "idle_days": 0.17,
-        "idle_hours": 3.96
+        "idle_seconds": 341931,
+        "idle_days": 3.96,
+        "idle_hours": 94.98
       }
     ],
     "recent_gaps": [
@@ -831,6 +827,16 @@
         "before_root": "_apta",
         "reason": "unknown",
         "reason_source": "default"
+      },
+      {
+        "from": "2026-09-07T06:38:02Z",
+        "to": "2026-09-11T05:36:53Z",
+        "seconds": 341931,
+        "after_root": "_apta",
+        "before_root": null,
+        "reason": "health_nogo",
+        "reason_source": "health_probe_overlap",
+        "reason_evidence": "probe NO-GO 176814ms @2026-09-08T13:10:44.381Z account=c1"
       }
     ],
     "all_gaps": [
@@ -887,6 +893,16 @@
         "before_root": "_apta",
         "reason": "unknown",
         "reason_source": "default"
+      },
+      {
+        "from": "2026-09-07T06:38:02Z",
+        "to": "2026-09-11T05:36:53Z",
+        "seconds": 341931,
+        "after_root": "_apta",
+        "before_root": null,
+        "reason": "health_nogo",
+        "reason_source": "health_probe_overlap",
+        "reason_evidence": "probe NO-GO 176814ms @2026-09-08T13:10:44.381Z account=c1"
       }
     ],
     "reasons": {
@@ -899,11 +915,12 @@
         "waiting_requeue",
         "unknown"
       ],
-      "gap_count": 6,
+      "gap_count": 7,
       "reason_counts": {
-        "unknown": 6
+        "unknown": 6,
+        "health_nogo": 1
       },
-      "known_reason_count": 0,
+      "known_reason_count": 1,
       "unknown_reason_count": 6,
       "log_entries": 0,
       "log_path": "idle_reason_log.jsonl",
@@ -1954,8 +1971,8 @@
         "date": "2026-09-07",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 75843,
-        "idle_hours": 21.07,
+        "idle_seconds": 144229,
+        "idle_hours": 40.06,
         "level": 0,
         "idle": true
       },
@@ -1963,42 +1980,42 @@
         "date": "2026-09-08",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 68386,
+        "idle_hours": 19.0,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-09",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 68386,
+        "idle_hours": 19.0,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-10",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 68386,
+        "idle_hours": 19.0,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-11",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 68386,
+        "idle_hours": 19.0,
         "level": 0,
-        "idle": false
+        "idle": true
       }
     ],
     "max_cards": 6025,
     "active_days": 21,
-    "idle_days": 42
+    "idle_days": 46
   },
   "changelog": {
     "measured": true,
