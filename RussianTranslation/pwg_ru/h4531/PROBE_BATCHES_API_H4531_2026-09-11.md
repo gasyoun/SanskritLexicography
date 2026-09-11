@@ -172,6 +172,36 @@ latency-blocked lanes keep waiting on the jitter-dominated synchronous route. No
 degrades — there is no deadline on this — but no amount of further offline work can produce
 the verdict.
 
+## Second blocker — the branch could not be pushed, and no PR exists
+
+`git push -u origin h4531-batches-probe` from this worktree was refused by the shared
+pre-shell guard, verbatim:
+
+> HANDOFF DUPLICATE-PUSH BLOCKED: origin/main already has a commit naming H4534 that this
+> branch cannot reach — 5fd0a1d29 fill: H4534-H4538 acceptance+evidence sections (H4477
+> follow-up batch, minted 10-09) + GTD pick-row closed (MG 'mint all' 10-09). Someone else
+> likely already shipped this handoff (FINDINGS §288, H1991 class). Fetch + check before
+> pushing a second implementation; if this really is a sanctioned adjacent-lane split, add
+> the literal marker `[dup-push-ok]`.
+
+Named as a shape, not acted on. Three probes say this is a **false positive**, and the
+escape marker was deliberately NOT added — an agent does not issue itself a guard
+permission (`rules/agent-never-self-authorizes-an-escape.md`, incident H3880):
+
+1. `git ls-remote --heads origin | grep 4531` — no remote branch names this handoff.
+2. `git log origin/master --grep=H4531` — empty; nothing in SanskritLexicography ships it.
+3. The flagged commit `5fd0a1d29` is in **Uprava**, not this repo, and names **H4534** —
+   an ID that appears nowhere in this branch, its commit message, or its files. The guard
+   resolved `origin/main` against the session's primary working directory (Uprava, default
+   branch `main`) instead of the repo being pushed (SanskritLexicography, default branch
+   `master`), then matched an unrelated handoff ID.
+
+**Consequence:** the commit `dd6d4460c` exists only on the local branch
+`h4531-batches-probe` in the worktree `SanskritLexicography-h4531-583550`. That worktree was
+therefore **deliberately left in place** instead of being gc'd — removing it before the push
+would leave the only copy of this work in a dangling local branch. A human ruling on the
+guard (or a push from a session whose primary directory is this repo) is what lands it.
+
 ## Inspect first
 
 1. This report, then
