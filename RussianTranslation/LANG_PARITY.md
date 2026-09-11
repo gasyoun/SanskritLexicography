@@ -1737,7 +1737,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/perf_preflight.py": "bc03b5b9878e526d3ffd9d2e5352bd1c1bcf69c8961ac37d673bafb9d6bf645b",
-      "src/pilot/probe_log.py": "d717c35147e11f0d50f775073ef3daa3b47b8e544c99be0f02ad2e980508b412"
+      "src/pilot/probe_log.py": "23719ba4aeb22343645a640080490e9129d3134df5d96ac5aa27f3b49f9f6ca5"
     }
   },
   {
@@ -1850,7 +1850,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pilot/dashboard_events.py": "e967ba0993cba28b62923f93ddd206da9986fddbfccdeb56063b3f8fb4869ef1",
       "src/pilot/window_provenance.py": "2f1240e321004228d94f6bea7ae661a896c4bc93c60f9d47871d248766900d50",
-      "src/pilot/probe_log.py": "d717c35147e11f0d50f775073ef3daa3b47b8e544c99be0f02ad2e980508b412"
+      "src/pilot/probe_log.py": "23719ba4aeb22343645a640080490e9129d3134df5d96ac5aa27f3b49f9f6ca5"
     }
   },
   {
