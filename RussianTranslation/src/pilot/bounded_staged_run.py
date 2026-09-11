@@ -73,6 +73,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import bounded_supervisor as bs                      # noqa: E402
+import cohort_live_admission as cla                  # noqa: E402
 import data_root                                     # noqa: E402
 import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
@@ -90,6 +91,16 @@ COHORT_LIVE_GATE = (
     'H1437 live-acceptance gate: attempt/result/run binding, promotion-receipt '
     'reconciliation and the campaign reservation ledger must be proven on a LIVE serial '
     'window and signed off by Codex review before any cohort width > 1 may execute')
+
+# H4527: the gate above is no longer a hardcoded "never" — it is now READ from one
+# evidence-bearing acceptance record (cohort_live_admission.RECORD_RELPATH), fail-closed:
+# no record, an invalid record, a non-PASS sign-off or width > MAX_ADMITTED_WIDTH all keep
+# the Phase 3 refusal exactly as it was. The second rung below is the remaining half.
+COHORT_LIVE_WIRING = (
+    'H4527 rung 2: the --execute path builds a SERIAL bounded supervisor; live cohort '
+    'dispatch (per-profile window binding, one promote + one TM per wave, shared '
+    'reservation run-id) is not wired into it yet, so an admitted width would otherwise '
+    'run as an ordinary serial window under a misleading width label')
 
 # The exact-version contract coordinator.promote_ready enforces (rejects '', 'sonnet',
 # 'claude-sonnet'); the staged loop hardcodes this same value. Never a bare tier alias.
@@ -785,6 +796,42 @@ def run_cohort_offline(windows, width, run_window, checkpoint_path, audit=None,
     return engine.run()
 
 
+def _cohort_view(cohort_width):
+    """H4527: the dry-run cohort block — now including the live-admission verdict, so the
+    planning view answers "would --execute take this width, and if not, why" without a run.
+    Width 1 keeps the serial wording byte-for-byte."""
+    if cohort_width <= 1:
+        return {
+            'requested_width': cohort_width,
+            'mode': 'serial (production default, width 1)',
+            'live_policy': COHORT_LIVE_GATE,
+            'live_admission': {'admitted': True,
+                               'reason': 'serial route (width 1)',
+                               'record_path': cla.record_path()},
+        }
+    admitted, why, record = cla.admit(cohort_width)
+    if admitted:
+        # Record-admitted, but rung 2 (live dispatch wiring) still refuses the live path.
+        mode = ('OFFLINE-EXPERIMENTAL (record-ADMITTED width; --execute still refuses '
+                'pending live cohort dispatch wiring)')
+    else:
+        mode = ('OFFLINE-EXPERIMENTAL (fake/fixture execution only; '
+                '--execute refuses this width)')
+    return {
+        'requested_width': cohort_width,
+        'mode': mode,
+        'live_policy': COHORT_LIVE_GATE,
+        'live_wiring': COHORT_LIVE_WIRING,
+        'live_admission': {
+            'admitted': admitted,
+            'reason': why,
+            'record_path': cla.record_path(),
+            'max_admitted_width': cla.MAX_ADMITTED_WIDTH,
+            'admitted_profiles': list((record or {}).get('admitted_profiles') or []),
+        },
+    }
+
+
 def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=None,
               accounts=None, ledger=None, cohort_width=1):
     """Pure planning view (H963 objective 8): what a live run WOULD do — scoped work,
@@ -838,13 +885,7 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
         'checkpoint_path': checkpoint_path,
         'stop_policy': stop_policy,
         'live_requires': "explicit --execute AND a healthy fleet probe (STOP-on-any-NO-GO)",
-        'cohort': {
-            'requested_width': cohort_width,
-            'mode': ('serial (production default, width 1)' if cohort_width <= 1
-                     else 'OFFLINE-EXPERIMENTAL (fake/fixture execution only; '
-                          '--execute refuses this width)'),
-            'live_policy': COHORT_LIVE_GATE,
-        },
+        'cohort': _cohort_view(cohort_width),
     }
 
 
@@ -892,11 +933,24 @@ def run(args):
     # every stop policy, probe policy, model pin and promotion semantic byte-for-byte as-is.
     cohort_width = getattr(args, 'cohort_width', 1) or 1
     if args.execute and cohort_width > 1:
+        admitted, why, _rec = cla.admit(cohort_width)
+        if not admitted:
+            raise SystemExit(
+                'bounded_staged_run: --execute refuses --cohort-width %d — %s. Admission '
+                'refused: %s. The production route stays serial (width 1); cohort width > 1 '
+                'runs OFFLINE ONLY (fake/fixture workers via run_cohort_offline / the '
+                'selftest).' % (cohort_width, COHORT_LIVE_GATE, why))
+        # H4527 rung 2 — admitted by record, but the live dispatch is not wired yet. This
+        # branch exists so that a future acceptance record can NEVER turn into a silent
+        # serial run at the requested width: the live execute path below builds a SERIAL
+        # bounded supervisor, and run_cohort_offline is deliberately unreachable from it
+        # (windows scoped from the plan carry no per-profile binding, which the engine's
+        # one-job-per-profile invariant requires). Refusing loudly here is the fail-closed
+        # half of the flip; wiring the live cohort dispatch is the remaining half.
         raise SystemExit(
-            'bounded_staged_run: --execute refuses --cohort-width %d — %s. The production '
-            'route stays serial (width 1); cohort width > 1 runs OFFLINE ONLY '
-            '(fake/fixture workers via run_cohort_offline / the selftest).'
-            % (cohort_width, COHORT_LIVE_GATE))
+            'bounded_staged_run: --cohort-width %d is ADMITTED (%s) but the LIVE cohort '
+            'dispatch is not wired yet — %s. Refusing rather than running width %d as a '
+            'silent serial window.' % (cohort_width, why, COHORT_LIVE_WIRING, cohort_width))
     plan = json.load(open(args.plan, encoding='utf-8'))
     coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     coord_state = {}
