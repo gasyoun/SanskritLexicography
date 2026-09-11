@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT wdpsections (section )*>
+<!ELEMENT section (text , (sutra | subsection | section)* )>
+<!ELEMENT subsection (sutra | subsection)* >
+<!ELEMENT sutra  (root | mdproot | sense | mdpsutra)* >
+<!ELEMENT root (#PCDATA)* >
+<!ELEMENT mdproot (#PCDATA)* >
+<!ELEMENT sense (#PCDATA)* >
+<!ELEMENT mdpsutra (#PCDATA)* >
+<!ELEMENT text (#PCDATA)* >
+<!ATTLIST section id   CDATA #IMPLIED >
+<!ATTLIST section vp   CDATA #IMPLIED >
+<!ATTLIST section numroots  CDATA #IMPLIED >
+<!ATTLIST section nfound  CDATA #IMPLIED >
+<!ATTLIST sutra msid  CDATA #IMPLIED >
+<!ATTLIST sutra comment  CDATA #IMPLIED >
+<!ATTLIST root wsid   CDATA #IMPLIED >
+<!ATTLIST mdproot wsid   CDATA #IMPLIED >
+<!ATTLIST root mdp  CDATA #IMPLIED >
+<!ATTLIST root mdp1  CDATA #IMPLIED >
+<!ATTLIST root nomdp   CDATA #IMPLIED >
+<!ATTLIST sense mdp  CDATA #IMPLIED >
+
