@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T01:51:03Z",
+  "generated_at": "2026-09-11T05:32:47Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": true,
+    "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 793,
+    "youngest_artifact_age_seconds": 14097,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T01:37:48Z",
-        "age_seconds": 793,
+        "age_seconds": 14097,
         "size": 26339285
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1232779,
+        "age_seconds": 1246083,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1232779,
+        "age_seconds": 1246083,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-09-09T07:55:33Z",
-        "age_seconds": 150927,
+        "age_seconds": 164231,
         "size": 3565416
       }
     }
@@ -52,7 +52,7 @@
     "pending": 29,
     "newest_card_at": "2026-08-29T08:49:35Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 12.71,
+    "days_since_last_card": 12.86,
     "campaign_days": 74
   },
   "yield_quality": {
@@ -268,15 +268,15 @@
     "measured": true,
     "source_mode": "canonical",
     "ceiling_ms": 65000,
-    "probes": 82,
-    "go_count": 61,
+    "probes": 83,
+    "go_count": 62,
     "nogo_count": 21,
-    "go_pct": 74.4,
+    "go_pct": 74.7,
     "last": {
-      "ts": "2026-09-10T20:38:08.822Z",
+      "ts": "2026-09-11T05:32:29.406Z",
       "account": "c1",
-      "elapsed_ms": 119415,
-      "duration_api_ms": 105802,
+      "elapsed_ms": 182372,
+      "duration_api_ms": 173903,
       "ceiling_ms": 240000,
       "verdict": "GO",
       "model": "claude-sonnet-5",
@@ -284,16 +284,6 @@
     },
     "last_verdict": "GO",
     "recent": [
-      {
-        "ts": "2026-08-28T14:14:35.410Z",
-        "account": "c1",
-        "elapsed_ms": 17746,
-        "duration_api_ms": 4584,
-        "ceiling_ms": 80000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "health_probe_log.jsonl"
-      },
       {
         "ts": "2026-08-28T14:14:56.337Z",
         "account": "c1",
@@ -419,6 +409,16 @@
         "account": "c1",
         "elapsed_ms": 119415,
         "duration_api_ms": 105802,
+        "ceiling_ms": 240000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "health_probe_log.jsonl"
+      },
+      {
+        "ts": "2026-09-11T05:32:29.406Z",
+        "account": "c1",
+        "elapsed_ms": 182372,
+        "duration_api_ms": 173903,
         "ceiling_ms": 240000,
         "verdict": "GO",
         "model": "claude-sonnet-5",
@@ -739,7 +739,7 @@
     "total_idle_seconds": 3844596,
     "total_idle_hours": 1067.94,
     "mean_gap_seconds": 640766.0,
-    "current_idle_seconds": null,
+    "current_idle_seconds": 14098,
     "last_idle_seconds": 758439,
     "last_idle": {
       "from": "2026-08-29T11:57:08Z",
@@ -765,9 +765,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 0,
-        "idle_days": 0.0,
-        "idle_hours": 0.0
+        "idle_seconds": 14098,
+        "idle_days": 0.16,
+        "idle_hours": 3.92
       }
     ],
     "recent_gaps": [
