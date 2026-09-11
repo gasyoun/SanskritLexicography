@@ -1,0 +1,70 @@
+{
+  "dataset": "sanskrityatina-sch-cases",
+  "source_dir": "yadisk:Sanskrityatina/04_Reverse/Experimental/",
+  "fetched_by": "H4533 (OxAlpha, opencode glm-5.3-flash), rclone yadisk: (WebDAV backend)",
+  "builder": "ReverseDictionary/sanskrityatina/tools/h4533_build_sch_cases.py",
+  "sanskrit_util_version": "0.11.0",
+  "per_file": {
+    "SCH-fiction-3147_cases.xml": {
+      "case_class": "fiction",
+      "filename_claimed_count": 3147,
+      "parsed_count": 3148,
+      "junk_lines_skipped": 0,
+      "size_bytes": 1262800,
+      "sha256": "6c20c021d03cfcc4bda9e8ccbbeb1cca44e4d5657a542210c27aa8dc073f561b"
+    },
+    "SCH-gedruckt_86_cases.xml": {
+      "case_class": "gedruckt",
+      "filename_claimed_count": 86,
+      "parsed_count": 86,
+      "junk_lines_skipped": 0,
+      "size_bytes": 38408,
+      "sha256": "929eab0c76f46a524593353fc80116696cb75d6f43f31b4758a4e20f34a566bf"
+    },
+    "SCH-grade-12427_cases.xml": {
+      "case_class": "grade",
+      "filename_claimed_count": 12427,
+      "parsed_count": 12427,
+      "junk_lines_skipped": 0,
+      "size_bytes": 4712996,
+      "sha256": "d0e7ddacfa5793b19010fa04b448a3bc4219924327d5cdbdc198dc089f8ed0bd"
+    },
+    "SCH-pw-comparison_319_cases.xml": {
+      "case_class": "pw-comparison",
+      "filename_claimed_count": 319,
+      "parsed_count": 319,
+      "junk_lines_skipped": 0,
+      "size_bytes": 139610,
+      "sha256": "1ddaf5da7837767b7099432a961f2fd36c26e2edd301706b9fd7d8e7f1a2e80b"
+    },
+    "SCH-zu betonen-83_cases.xml": {
+      "case_class": "zu-betonen",
+      "filename_claimed_count": 83,
+      "parsed_count": 143,
+      "junk_lines_skipped": 1,
+      "size_bytes": 49578,
+      "sha256": "80137d7ae0d80860112e0d72854febda55ac277b1ddc14bd578fcf627cba0cf0"
+    },
+    "SCH-zu-lesen_181_cases.xml": {
+      "case_class": "zu-lesen",
+      "filename_claimed_count": 181,
+      "parsed_count": 181,
+      "junk_lines_skipped": 0,
+      "size_bytes": 90786,
+      "sha256": "12af0e64c7ff613cbcf6de6fca909116fd536ad24401bc5d0786df7cee6c1bdf"
+    }
+  },
+  "counts": {
+    "filename_claimed_total": 16243,
+    "parsed_total": 16304,
+    "claimed_vs_parsed_delta": 61
+  },
+  "notes": [
+    "The mint-time acceptance denominator (16,243 = sum of the six filename-embedded counts) does NOT match the actual number of <H1> entries on contact -- parsed_total is the real count, verified per-file against a direct '<H1>' occurrence grep.",
+    "SCH-fiction-3147_cases.xml carries 3148 entries, one more than its filename claims -- unexplained single-row drift, not a parser artifact (open/close <H1> tag counts balance).",
+    "SCH-zu betonen-83_cases.xml carries 143 entries, not 83: the file unions two accent-correction phrasings, 83x 'zu betonen' + 60x 'zu akzentuieren' ('so to be accented' / 'to be accentuated') -- the filename names only the first phrasing.",
+    "<hom> (homonym index, present on ~10% of rows) is read past but not emitted -- not part of the mission's TSV schema.",
+    "One key1 in the zu-betonen file ('ja|u', L=13803, pc=190-3) carries a literal source-data '|' -- passed through verbatim; from_slp1 maps unmapped characters to themselves so iast/form_key for that row inherit the glitch rather than raising.",
+    "SCH-zu betonen-83_cases.xml's raw file ends with 2 blank lines and 1 stray line containing only '+' -- source-file noise after the last real entry, skipped (blank lines silently, the '+' line counted in junk_lines_skipped), not counted as rows or as format drift."
+  ]
+}
