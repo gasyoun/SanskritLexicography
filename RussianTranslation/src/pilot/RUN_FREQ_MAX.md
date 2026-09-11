@@ -711,8 +711,10 @@ Via [h963_c4_gate0_probe.py](https://github.com/gasyoun/SanskritLexicography/blo
 restated here:** the probe reads `probe_log.POLICIES[probe_log.CURRENT_POLICY]` and prints the
 ceiling it judged by on its own `ceiling` header line — read that, not this page. The numbers
 in the H1447 table below were taken under `production_v1` (30 000 ms wall, no route ceiling)
-and are kept as **dated history**; the live policy has since been `production_v2` (65 000) and
-is now `production_v3` (80 000 ms wall **and** 45 000 ms route). A runbook that names a live
+and are kept as **dated history**; the live policy has since been `production_v2` (65 000),
+`production_v3` (80 000 ms wall **and** 45 000 ms route) and is now `production_v4` (240 000 ms
+wall, route ceiling SUBSUMED at the same number — MG's 10-09-2026 host-degradation ruling, not a
+route-health claim; see the `POLICIES` comment). A runbook that names a live
 threshold goes stale within days — this one had, and said "strict: measured ≥ 30 000 ms ⇒
 NO-GO" for two policy generations after that stopped being true (H2254).
 
