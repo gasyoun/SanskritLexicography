@@ -3,7 +3,7 @@
   "source_dir": "yadisk:Sanskrityatina/04_Reverse/Experimental/",
   "fetched_by": "H4533 (OxAlpha, opencode glm-5.3-flash), rclone yadisk: (WebDAV backend)",
   "builder": "ReverseDictionary/sanskrityatina/tools/h4533_build_sch_cases.py",
-  "sanskrit_util_version": "0.11.0",
+  "sanskrit_util_version": "0.12.0",
   "per_file": {
     "SCH-fiction-3147_cases.xml": {
       "case_class": "fiction",
