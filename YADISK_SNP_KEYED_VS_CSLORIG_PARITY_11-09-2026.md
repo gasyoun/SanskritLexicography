@@ -2,7 +2,7 @@
 
 _Created: 11-09-2026 · Last updated: 11-09-2026_
 
-**Handoff:** [H4535](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4535-OxAlpha_SanskritLexicography_snp-keyed-upgrade-cslorig_11.09.26.md) (OxAlpha, glm-5.3-flash) · **Class:** data · **Ran:** 11-09-2026, ~05:10–06:40Z, Mac box
+**Handoff:** [H4535](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4535-OxAlpha_SanskritLexicography_snp-keyed-upgrade-cslorig_11.09.26.md) (OxAlpha lane — `openrouter/deepseek/deepseek-v4.1-flash`) · **Class:** data · **Ran:** 11-09-2026, ~05:10–06:40Z, Mac box
 
 ## Verdict
 
