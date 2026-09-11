@@ -29,6 +29,11 @@ Design rules (each one is a pin in `cohort_live_admission_selftest`):
 4. **The record is evidence-bearing, not a flag.** Each half must carry at least one evidence
    pointer (run-id, packet path, blob link); a record that says `signed: true` with nothing to
    open is rejected as unfalsifiable.
+5. **The acceptance window must have run through the cohort path** (`via_cohort_path`). Once
+   rung 4 wired the live dispatch (`cohort_live_dispatch`), a width-1 window can be run either
+   on the serial supervisor or on the cohort dispatch; only the latter is evidence about the
+   code a width-2 wave will use. `bounded_staged_run --execute --cohort-path` at width 1 is
+   the run that earns this field.
 
 Read-only and side-effect-free: importing or calling this never writes, probes or spends.
 """
@@ -84,6 +89,16 @@ def validate_record(record):
     if serial.get('byte_identical_to_serial') is not True:
         return False, ('serial_acceptance.byte_identical_to_serial is not true -- the live '
                        'window did not reproduce the serial route decisions/store bytes')
+    if serial.get('via_cohort_path') is not True:
+        # H4527 rung 4. A width-1 window on the SERIAL supervisor proves the route; it proves
+        # nothing about the cohort dispatch a width-2 wave actually runs on. The acceptance
+        # window must therefore have gone through the cohort path itself
+        # (`bounded_staged_run --execute --cohort-path`, width 1) -- that is the only reading
+        # of work item 1's "one bounded headless window THROUGH THE COHORT PATH at width 1"
+        # under which the record licenses anything it has evidence for.
+        return False, ('serial_acceptance.via_cohort_path is not true -- the acceptance '
+                       'window did not run through the cohort dispatch, so it is evidence '
+                       'about the serial supervisor, not about the wiring width 2 would use')
     if not _evidence_list(serial):
         return False, ('serial_acceptance.evidence is empty -- an acceptance claim with '
                        'nothing to open is not evidence')
