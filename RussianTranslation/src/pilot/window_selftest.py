@@ -9694,6 +9694,11 @@ def test_h4529_width_policy_and_pool_split():
     assert width_policy.decide_width([healthy, healthy], current_max_wide=2).action == 'widen'
     assert width_policy.probe_gate_verdict({'concurrency': 1}, 3)[0] == 'NO-GO', \
         'an isolated warm-up cannot clear a 3-wide window (H255 w07)'
+    # The ceiling binds on every branch, including a caller that starts ABOVE it — otherwise
+    # `hold` parks a width the policy would never have chosen and only a degraded window can
+    # undo it (independent-verifier defect, 11-09-2026).
+    assert width_policy.decide_width([], current_max_wide=5, ceiling=3).max_wide == 3
+    assert width_policy.decide_width([healthy] * 4, current_max_wide=5, ceiling=3).max_wide == 3
 
     try:
         agent_budget.refuse_starvation_override(50, 1)

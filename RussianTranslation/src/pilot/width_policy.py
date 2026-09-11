@@ -166,13 +166,21 @@ def decide_width(history,
         raise ValueError('ceiling must be >= floor')
     rows = [t if isinstance(t, WindowTelemetry) else WindowTelemetry.from_window(t)
             for t in (history or [])]
+    # The ceiling binds on EVERY branch, not only on `widen`. A caller that starts above
+    # it (an explicit `--max-wide=5`) is clamped down rather than parked there forever:
+    # otherwise `hold` would quietly preserve a width the policy would never have chosen,
+    # and only a degraded window could ever bring it back. A caller that genuinely wants a
+    # wider lane raises the CEILING (gen_opt_harness2 does exactly that with an explicit
+    # --max-wide), which is a visible act, instead of smuggling the width past the policy.
     effective_current = ceiling if current_max_wide == 0 else int(current_max_wide)
+    effective_current = max(floor, min(ceiling, effective_current))
     if not rows:
         return WidthDecision(
-            max_wide=current_max_wide if current_max_wide else ceiling,
-            stagger_ms=base_stagger_ms,
+            max_wide=effective_current,
+            stagger_ms=stagger_for(effective_current, base_stagger_ms),
             action='bootstrap',
-            reason='no window telemetry yet; keeping the A5/H1283 pinned default',
+            reason=('no window telemetry yet; holding %d-wide (ceiling %d)'
+                    % (effective_current, ceiling)),
         )
 
     last = rows[-1]
@@ -212,8 +220,8 @@ def decide_width(history,
         max_wide=effective_current,
         stagger_ms=stagger_for(effective_current, base_stagger_ms),
         action='hold',
-        reason=('healthy streak %d < %d required, or already at ceiling %d'
-                % (streak, HEALTHY_WINDOWS_TO_WIDEN, ceiling)),
+        reason=('holding %d-wide: healthy streak %d < %d required, or already at ceiling %d'
+                % (effective_current, streak, HEALTHY_WINDOWS_TO_WIDEN, ceiling)),
         healthy_streak=streak,
         evidence=tuple(reversed(labels)),
     )
@@ -335,6 +343,15 @@ def selftest():
     many = [_healthy_window('w%d' % i, wide=3) for i in range(6)]
     capped = decide_width(many, current_max_wide=3)
     assert capped.max_wide == DEFAULT_MAX_WIDE and capped.action == 'hold', capped
+
+    # 5b. The ceiling binds on EVERY branch, not only on `widen` (independent-verifier
+    #     defect, 11-09-2026): a caller starting above it is clamped down, not parked.
+    assert decide_width([], current_max_wide=5, ceiling=3).max_wide == 3
+    assert decide_width([_healthy_window('a', wide=5)] * 4,
+                        current_max_wide=5, ceiling=3).max_wide == 3
+    assert decide_width([_degraded_h255_w07()], current_max_wide=5, ceiling=3).max_wide == 1
+    # An explicitly widened lane is honoured by RAISING the ceiling, which is visible.
+    assert decide_width([], current_max_wide=5, ceiling=5).max_wide == 5
 
     # 6. A thin or non-representative window is not evidence of health.
     thin = WindowTelemetry(keys_total=2, null_keys=0, max_wide=3, label='thin')
