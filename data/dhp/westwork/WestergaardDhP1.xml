@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wdpsections SYSTEM "WestergaardDhP.dtd">
+<wdpsections>
+<section id="I.A.1" vp="344" numroots="1" nfound="1"><text>1. {sd parasmEBAzaH}</text>
+<sutra msid="01.001"><root wsid="1.1" msid="01.001-01">BU</root><sense>sattAyAm</sense></sutra>
+</section>
+<section id="I.A.2" vp="344" numroots="36" nfound="36"><text>2. {sd tavargIyAntA anudattetaH}</text>
+<sutra msid="01.003"><root wsid="2.1" msid="01.003-01">eDa</root><sense>vfdDO</sense></sutra>
+<sutra msid="01.004"><root wsid="2.2" mdp1="sparDa" msid="01.004-01">sparDa</root><sense>saNGarze</sense></sutra>
+<sutra msid="01.005"><root wsid="2.3" msid="01.005-01">gADf</root><sense>pratizWAlipsayorgranTe ca</sense></sutra>
+<sutra msid="01.006"><root wsid="2.4" msid="01.006-01">bADf</root><sense>loqane</sense></sutra>
+<sutra msid="01.007"><root wsid="2.5" msid="01.007-01">nADf</root><root wsid="2.6" msid="01.007-02">nATf</root><sense mdp="yAYcopatApESvaryASIHzu">yAcYopatApESvaryASIHzu</sense></sutra>
+<sutra msid="01.008"><root wsid="2.7" msid="01.008-01">daDa</root><sense>DAraRe</sense></sutra>
+<sutra msid="01.009"><root wsid="2.8" msid="01.009-01">skudi</root><sense>ApravaRe</sense></sutra>
+<sutra msid="01.010"><root wsid="2.9" msid="01.010-01">Svidi</root><sense>SvEtye</sense></sutra>
+<sutra msid="01.011"><root wsid="2.10" msid="01.011-01">vadi</root><sense>aBivAdanastutyoH</sense></sutra>
+<sutra msid="01.012"><root wsid="2.11" msid="01.012-01">Badi</root><sense>kalyARe suKe ca</sense></sutra>
+<sutra msid="01.013"><root wsid="2.12" msid="01.013-01">madi</root><sense>stutimodamadasvapnakAntigatizu</sense></sutra>
+<sutra msid="01.014"><root wsid="2.13" msid="01.014-01">spadi</root><sense>kiYciccalane</sense></sutra>
+<sutra msid="01.015"><root wsid="2.14" msid="01.015-01">klidi</root><sense>paridevane</sense></sutra>
+<sutra msid="01.016"><root wsid="2.15" msid="01.016-01">muda</root><sense>harze</sense></sutra>
+<sutra msid="01.017"><root wsid="2.16" msid="01.017-01">dada</root><sense>dAne</sense></sutra>
+<sutra msid="01.018"><root wsid="2.17" mdp1="svada" msid="01.018-01">svada</root><root wsid="2.18" msid="01.018-02">svarda</root><sense>AsvAdane</sense></sutra>
+<sutra msid="01.019"><root wsid="2.19" msid="01.019-01">urda</root><sense>mAne krIqAyAM ca</sense></sutra>
+<sutra msid="01.020"><root wsid="2.20" msid="01.020-01,01p">kurda</root><root wsid="2.21" msid="01.020-02,02p">Kurda</root><root wsid="2.22" msid="01.020-03,03p">gurda</root><root wsid="2.23" msid="01.020-04">guda</root><sense>krIqAyAmeva</sense></sutra>
+<sutra msid="01.021"><root wsid="2.24" mdp1="sUda" msid="01.021-01">sUda</root><sense mdp="kzaraRe">kzaRane</sense></sutra>
+<sutra msid="01.022"><root wsid="2.25" msid="01.022-01">hrAda</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.023"><root wsid="2.26" msid="01.023-01">hlAdI</root><sense>suKe ca</sense></sutra>
+<sutra msid="01.024"><root wsid="2.27" msid="01.024-01">svAda</root><sense>AsvAdane</sense></sutra>
+<sutra msid="01.025"><root wsid="2.28" msid="01.025-01">parda</root><sense mdp="kutsite Sabde">kutsitaSabde</sense></sutra>
+<sutra msid="01.026"><root wsid="2.29" msid="01.026-01">yatI</root><sense>prayatne</sense></sutra>
+<sutra msid="01.027"><root wsid="2.30" msid="01.027-01">yutf</root><root wsid="2.31" msid="01.027-02">jutf</root><sense>BAsane</sense></sutra>
+<sutra msid="01.028"><root wsid="2.32" msid="01.028-01">viTf</root><root wsid="2.33" msid="01.028-02">veTf</root><sense>yAcane</sense></sutra>
+<sutra msid="01.029"><root wsid="2.34" msid="01.029-01">SraTi</root><sense>SETilye</sense></sutra>
+<sutra msid="01.030"><root wsid="2.35" msid="01.030-01">graTi</root><sense>kOwilye</sense></sutra>
+<sutra msid="01.031"><root wsid="2.36" msid="01.031-01">katTa</root><sense>SlAGAyAm</sense></sutra>
+</section>
+<section id="I.A.3" vp="344-345" numroots="37" nfound="40"><text>3. {sd tavargIyAntA udattetaH}</text>
+<sutra msid="01.033"><root wsid="3.1" msid="01.033-01">ata</root><sense>sAtatyagamane</sense></sutra>
+<sutra msid="01.034"><root wsid="3.2" msid="01.034-01">citI</root><sense>saMjYAne</sense></sutra>
+<sutra msid="01.035"><root wsid="3.3" msid="01.035-01">cyutir</root><sense>Asecane</sense></sutra>
+<sutra msid="01.036"><root wsid="3.4" msid="01.036-01">Scyutir</root><sense>kzaraRe</sense></sutra>
+<sutra msid="01.037"><root wsid="3.5" msid="01.037-01">manTa</root><sense>viloqane</sense></sutra>
+<sutra msid="01.038"><root wsid="3.6" msid="01.038-01">kuTi</root><root wsid="3.7" msid="01.038-02">puTi</root><root wsid="3.8" msid="01.038-03">luTi</root><root wsid="3.9" msid="01.038-04">maTi</root><mdproot wsid="3.X10">mAnTa</mdproot><sense mdp="hiMsAsaNkleSanayoH">hiMsAsaNkleSayoH</sense></sutra>
+<sutra msid="01.039"><root wsid="3.10" mdp1="siDa" msid="01.039-01">siDa</root><sense>gatyAm</sense></sutra>
+<sutra msid="01.040"><root wsid="3.11" mdp1="siDU" msid="01.040-01">siDU</root><sense>SAstre mANgalye ca</sense></sutra>
+<sutra msid="01.041"><root wsid="3.12" msid="01.041-01">KAdf</root><sense>BakzaRe</sense></sutra>
+<sutra msid="01.042"><root wsid="3.13" msid="01.042-01">Kada</root><sense>sTErye hiMsAyAM ca</sense></sutra>
+<sutra msid="01.043"><root wsid="3.14" msid="01.043-01">bada</root><sense>sTErye</sense></sutra>
+<sutra msid="01.044"><root wsid="3.15" msid="01.044-01">gada</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.045"><root wsid="3.16" msid="01.045-01">rada</root><sense>vileKane</sense></sutra>
+<sutra msid="01.046"><root wsid="3.17" mdp1="nada" msid="01.046-01">nada</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.047"><root wsid="3.18" msid="01.047-01">arda</root><sense>gatO yAcane ca</sense></sutra>
+<sutra msid="01.048"><root wsid="3.19" msid="01.048-01">narda</root><root wsid="3.20" msid="01.048-02">garda</root><sense>Sabde</sense></sutra>
+<sutra msid="01.049"><root wsid="3.21" msid="01.049-01">tarda</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.050"><root wsid="3.22" msid="01.050-01">karda</root><sense>kutsite Sabde</sense></sutra>
+<sutra msid="01.051"><root wsid="3.23" msid="01.051-01">Karda</root><sense>dandaSUke</sense></sutra>
+<sutra msid="01.052"><root wsid="3.24" msid="01.052-01">ati</root><root wsid="3.25" msid="01.052-02">adi</root><sense>banDane</sense></sutra>
+<sutra msid="01.053"><root wsid="3.26" msid="01.053-01">idi</root><sense>paramESvarye</sense></sutra>
+<sutra msid="01.054"><root wsid="3.27" msid="01.054-01">bidi</root><sense>avayave</sense></sutra>
+<sutra msid="01.055"><mdproot wsid="3.X28">gaqi</mdproot><sense>vadanEkadeSe</sense></sutra>
+<sutra msid="01.056"><root wsid="3.28" mdp1="nidi" msid="01.056-01">nidi</root><sense>kutsAyAm</sense></sutra>
+<sutra msid="29"><sense>--></sense></sutra>
+<sutra msid="01.057"><root wsid="3.30" mdp1="(wu) nadi" msid="01.057-01">(wu) nadi</root><sense>samfdDO</sense></sutra>
+<sutra msid="01.058"><root wsid="3.31" msid="01.058-01">cadi</root><sense>AhlAdane dIptO ca</sense></sutra>
+<sutra msid="01.059"><root wsid="3.32" msid="01.059-01">tradi</root><sense>cezwAyAm</sense></sutra>
+<sutra msid="01.060"><root wsid="3.33" msid="01.060-01">kadi</root><root wsid="3.34" msid="01.060-02">kradi</root><root wsid="3.35" msid="01.060-03">kladi</root><sense>AhvAne rodane ca</sense></sutra>
+<sutra msid="01.061"><root wsid="3.36" msid="01.061-01">klidi</root><sense>paridevane</sense></sutra>
+<sutra msid="01.062"><root wsid="3.37" msid="01.062-01">SunDa</root><sense>SudDO</sense></sutra>
+</section>
+<section id="I.A.4" vp="345-346" numroots="41" nfound="41"><text>4. {sd kavargIyAntA anudattetaH}</text>
+<sutra msid="01.064"><root wsid="4.1" msid="01.064-01">SIkf</root><sense>secane</sense></sutra>
+<sutra msid="01.065"><root wsid="4.2" msid="01.065-01">lokf</root><sense>darSane</sense></sutra>
+<sutra msid="01.066"><root wsid="4.3" msid="01.066-01">Slokf</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.067"><root wsid="4.4" msid="01.067-01">drekf</root><root wsid="4.5" msid="01.067-02">Drekf</root><sense mdp="SabdotsAhayoH">SabdotsahaM karoti</sense></sutra>
+<sutra msid="01.068"><root wsid="4.6" msid="01.068-01">rekf</root><sense>SaNkAyAm</sense></sutra>
+<sutra msid="01.069"><root wsid="4.7" msid="01.069-01,02p">sekf</root><root wsid="4.8" msid="01.069-02">srekf</root><root wsid="4.9" msid="01.069-03">sraki</root><root wsid="4.10" msid="01.069-04">Sraki</root><root wsid="4.11" msid="01.069-05">Slaki</root><sense>gatyarTAH</sense></sutra>
+<sutra msid="01.070"><root wsid="4.12" msid="01.070-01">Saki</root><sense>SaNkAyAm</sense></sutra>
+<sutra msid="01.071"><root wsid="4.13" msid="01.071-01">aki</root><sense>lakzaRe</sense></sutra>
+<sutra msid="01.072"><root wsid="4.14" msid="01.072-01">vaki</root><sense>kOwilye</sense></sutra>
+<sutra msid="01.073"><root wsid="4.15" msid="01.073-01">maki</root><sense>maRqane</sense></sutra>
+<sutra msid="01.074"><root wsid="4.16" msid="01.074-01">kaka</root><sense>lOlye</sense></sutra>
+<sutra msid="01.075"><root wsid="4.17" msid="01.075-01">kuka</root><root wsid="4.18" msid="01.075-02">vfka</root><sense>AdAne</sense></sutra>
+<sutra msid="01.076"><root wsid="4.19" msid="01.076-01,01p">caka</root><sense mdp="tfptO pratiGAte ca">tfptO</sense></sutra>
+<sutra msid="01.077"><root wsid="4.20" msid="01.077-01">kaki</root><root wsid="4.21" msid="01.077-02">vaki</root><root wsid="4.22" msid="01.077-03">Svaki</root><root wsid="4.23" msid="01.077-04">traki</root><root wsid="4.24" msid="01.077-05">QOkf</root><root wsid="4.25" msid="01.077-06">trOkf</root><root wsid="4.26" msid="01.077-07">zvazka</root><root wsid="4.27" msid="01.077-08">vaska</root><root wsid="4.28" msid="01.077-09">maska</root><root wsid="4.29" msid="01.077-10">wikf</root><root wsid="4.30" msid="01.077-11">wIkf</root><root wsid="4.31" nomdp="yes" msid="01.077-01p">tikf</root><root wsid="4.32" nomdp="yes" msid="01.077-02p">tIkf</root><root wsid="4.33" msid="01.077-12">raGi</root><root wsid="4.34" msid="01.077-13,03p">laGi</root><sense>gatyarTAH</sense></sutra>
+<sutra msid="01.078"><root wsid="4.35" msid="01.078-01">aGi</root><root wsid="4.36" msid="01.078-02">vaGi</root><root wsid="4.37" msid="01.078-03">maGi</root><sense>gatyAkzepe</sense></sutra>
+<sutra msid="01.079"><mdproot wsid="4.X38">maGi {wdp pA}</mdproot><sense>kEtave ca</sense></sutra>
+<sutra msid="01.080"><root wsid="4.38" msid="01.080-01">rAGf</root><root wsid="4.39" msid="01.080-02">lAGf</root><root wsid="4.40" msid="01.080-03">drAGf</root><sense>sAmarTye</sense></sutra>
+<sutra msid="01.081"><root wsid="4.40" msid="01.081-01">drAGf</root><sense>AyAme ca</sense></sutra>
+<sutra msid="01.082"><root wsid="4.41" msid="01.082-01">SlAGf</root><sense>katTane</sense></sutra>
+</section>
+<section id="I.A.5" vp="346" numroots="58" nfound="47"><text>5. {sd kavargIyAntA udattetaH}</text>
+<sutra msid="01.084"><root wsid="5.1" msid="01.084-01">Pakka</root><sense mdp="nIcErgatO">nicErgatO</sense></sutra>
+<sutra msid="01.085"><root wsid="5.2" msid="01.085-01">taka</root><sense>hasane</sense></sutra>
+<sutra msid="01.086"><root wsid="5.3" msid="01.086-01">taki</root><sense>kfcCrajIvane</sense></sutra>
+<sutra msid="01.087"><root wsid="5.4" msid="01.087-01">bukka</root><sense>BazaRe</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="5.5" nomdp="yes">Suka</root><sense>gatO</sense></sutra>
+<sutra msid="01.088"><root wsid="5.6" msid="01.088-01">kaKa</root><sense>hasane</sense></sutra>
+<sutra msid="01.089"><root wsid="5.7" msid="01.089-01">oKf</root><root wsid="5.8" msid="01.089-02">rAKf</root><root wsid="5.9" msid="01.089-03">lAKf</root><root wsid="5.10" msid="01.089-04">drAKf</root><root wsid="5.11" msid="01.089-05">DrAKf</root><sense>SozaRAlamarTayoH</sense></sutra>
+<sutra msid="01.090"><root wsid="5.12" msid="01.090-01">SAKf</root><root wsid="5.13" msid="01.090-02">SlAKf</root><sense>vyAptO</sense></sutra>
+<sutra msid="01.091"><root wsid="5.14" msid="01.091-01">uKa</root><root wsid="5.15" msid="01.091-02">uKi</root><root wsid="5.16" msid="01.091-03">vaKa</root><root wsid="5.17" msid="01.091-04">vaKi</root><root wsid="5.18" msid="01.091-05">maKa</root><root wsid="5.19" msid="01.091-06">maKi</root><root wsid="5.20" mdp1="naKa" msid="01.091-07">naKa</root><root wsid="5.21" mdp1="naKi" msid="01.091-08">naKi</root><root wsid="5.22" msid="01.091-09">raKa</root><root wsid="5.23" msid="01.091-10">raKi</root><root wsid="5.24" msid="01.091-11">laKa</root><root wsid="5.25" msid="01.091-12">laKi</root><root wsid="5.26" msid="01.091-13">iKa</root><root wsid="5.27" msid="01.091-14">iKi</root><root wsid="5.28" msid="01.091-15">IKi</root><root wsid="5.29" nomdp="yes" msid="01.091-02p">traKi</root><root wsid="5.30" nomdp="yes" msid="01.091-01p">traKa</root><root wsid="5.31" nomdp="yes" msid="01.091-04p">SiKi</root><root wsid="5.32" nomdp="yes" msid="01.091-">riKa</root><root wsid="5.33" nomdp="yes" msid="01.091-03p">riKi</root><root wsid="5.34" nomdp="yes" msid="01.091-">liKi</root><root wsid="5.35" msid="01.091-16">valgi</root><root wsid="5.36" msid="01.091-17">ragi</root><root wsid="5.37" msid="01.091-18">lagi</root><root wsid="5.38" msid="01.091-19">agi</root><root wsid="5.39" msid="01.091-20">vagi</root><root wsid="5.40" msid="01.091-21">magi</root><root wsid="5.41" msid="01.091-22">tagi</root><root wsid="5.42" msid="01.091-23">tvagi</root><root wsid="5.43" msid="01.091-24">Sragi</root><root wsid="5.44" nomdp="yes" msid="01.091-">Svagi</root><root wsid="5.45" msid="01.091-25">Slagi</root><root wsid="5.46" msid="01.091-26">igi</root><root wsid="5.47" msid="01.091-27">rigi</root><root wsid="5.48" msid="01.091-28">ligi</root><sense>gatyarTAH</sense></sutra>
+<sutra msid="01.092"><root wsid="5.49" msid="01.092-01">tvagi</root><sense>kampane ca</sense></sutra>
+<sutra msid="01.093"><root wsid="5.50" msid="01.093-01">yugi</root><root wsid="5.51" msid="01.093-02">jugi</root><root wsid="5.52" msid="01.093-03">vugi</root><sense>varjane</sense></sutra>
+<sutra msid="01.094"><root wsid="5.53" mdp="GaGa" msid="01.094-01">GaGa</root><sense>hasane</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="5.54">daGi</root><sense>pAlane</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="5.55">laGi</root><sense>SozaRe</sense></sutra>
+<sutra msid="01.095"><root wsid="5.56" msid="01.095-01">maGi</root><sense>maRqane</sense></sutra>
+<sutra msid="01.096"><root wsid="5.57" msid="01.096-01">SiGi</root><sense>AGrARe</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="5.58">arGa</root><sense>mUlye</sense></sutra>
+</section>
+<section id="I.A.6" vp="346-347" numroots="25" nfound="21"><text>6. {sd cavargIyAntA anudattetaH}</text>
+<sutra msid="01.098"><root wsid="6.1" msid="01.098-01">varca</root><sense>dIptO</sense></sutra>
+<sutra msid="01.099"><root wsid="6.2" mdp1="saca" msid="01.099-01">saca</root><sense mdp="secane">sevane</sense></sutra>
+<sutra msid="01.100"><root wsid="6.3" msid="01.100-01">locf</root><sense>darSane</sense></sutra>
+<sutra msid="01.101"><root wsid="6.4" msid="01.101-01">Saca</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.102"><root wsid="6.5" msid="01.102-01">Svaca</root><root wsid="6.6" msid="01.102-02">Svaci</root><root wsid="6.7" nomdp="yes" msid="01.102-">Saci</root><sense>gatO</sense></sutra>
+<sutra msid="01.103"><root wsid="6.8" msid="01.103-01">kaca</root><sense>banDane</sense></sutra>
+<sutra msid="01.104"><root wsid="6.9" msid="01.104-01">kaci</root><root wsid="6.10" msid="01.104-02">kAci</root><sense>dIptibanDanayoH</sense></sutra>
+<sutra msid="01.105"><root wsid="6.11" msid="01.105-01">maca</root><root wsid="6.12" msid="01.105-02">muci</root><sense>kalkane</sense></sutra>
+<sutra msid="01.106"><root wsid="6.13" msid="01.106-01">maci</root><sense>DAraRocCrAyapUjanezu</sense></sutra>
+<sutra msid="01.107"><root wsid="6.14" msid="01.107-01">paci</root><sense>vyaktIkaraRe</sense></sutra>
+<sutra msid="01.108"><root wsid="6.15" mdp="zwuca" mdp1="stuca" msid="01.108-01">stuca</root><sense>prasAde</sense></sutra>
+<sutra msid="01.109"><root wsid="6.16" msid="01.109-01">fja</root><sense mdp="gatisTAnArjanopArjanezu">gatisTAnArjanorjanezu</sense></sutra>
+<sutra msid="01.110"><root wsid="6.17" msid="01.110-01">fji</root><root wsid="6.18" msid="01.110-02">BfjI</root><root wsid="6.19" nomdp="yes" msid="01.110-">rija</root><sense>Barjane</sense></sutra>
+<sutra msid="01.111"><root wsid="6.20" msid="01.111-01">ejf</root><root wsid="6.21" msid="01.111-02">Brejf</root><root wsid="6.22" msid="01.111-03">BrAjf</root><sense>dIptO </sense><root wsid="6.23" nomdp="yes" msid="01.111-01p">rejf</root></sutra>
+<sutra msid="01.112"><root wsid="6.24" msid="01.112-01">Ija</root><sense>gatikutsanayoH </sense><root wsid="6.25" nomdp="yes" msid="01.112-">vaji</root></sutra>
+</section>
+<section id="I.A.7" vp="347" numroots="79" nfound="70"><text>7. {sd cavargIyAntA udattetaH}</text>
+<sutra msid="01.114"><root wsid="7.1" msid="01.114-01">Suca</root><sense>Soke</sense></sutra>
+<sutra msid="01.115"><root wsid="7.2" msid="01.115-01">kuca</root><sense>Sabde tAre</sense></sutra>
+<sutra msid="01.116"><root wsid="7.3" mdp="kuYca" msid="01.116-01">kuYca</root><root wsid="7.4" mdp="kruYca" msid="01.116-02">kruYca</root><sense mdp="kOwilyAlpIBAvayoH">kOwilyAlpaBAvayoH</sense></sutra>
+<sutra msid="01.117"><root wsid="7.5" mdp="luYca" msid="01.117-01">luYca</root><sense>apanayane</sense></sutra>
+<sutra msid="01.118"><root wsid="7.6" mdp="aYcu" msid="01.118-01">aYcu</root><sense>gatipUjanayoH</sense></sutra>
+<sutra msid="01.119"><root wsid="7.7" mdp="vaYcu" msid="01.119-01">vaYcu</root><root wsid="7.8" mdp="caYcu" msid="01.119-02">caYcu</root><root wsid="7.9" mdp="taYcu" msid="01.119-03">taYcu</root><root wsid="7.10" mdp="tvaYcu" msid="01.119-04">tvaYcu</root><root wsid="7.11" mdp="mruYcu" msid="01.119-05">mruYcu</root><root wsid="7.12" mdp="mluYcu" msid="01.119-06">mluYcu</root><root wsid="7.13" msid="01.119-07">mrucu</root><root wsid="7.14" msid="01.119-08">mlucu</root><sense>gatyarTAH </sense><root wsid="7.15" nomdp="yes" msid="01.119-">mancu</root><root wsid="7.16" nomdp="yes" msid="01.119-">muncu</root></sutra>
+<sutra msid="01.120"><root wsid="7.17" msid="01.120-01">grucu</root><root wsid="7.18" msid="01.120-02">glucu</root><root wsid="7.19" msid="01.120-03">kuju</root><root wsid="7.20" msid="01.120-04">Kuju</root><sense>steyakaraRe</sense></sutra>
+<sutra msid="01.121"><root wsid="7.21" mdp="gluYcu" msid="01.121-01">gluYcu</root><root wsid="7.22" mdp1="sajja" msid="01.121-02">sajja</root><sense>gatO</sense></sutra>
+<sutra msid="01.122"><root wsid="7.23" msid="01.122-01">guji</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.123"><root wsid="7.24" msid="01.123-01">arca</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="01.124"><root wsid="7.25" mdp="mlecCa" msid="01.124-01">mlecCa</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.125"><root wsid="7.26" mdp="lacCa" msid="01.125-01">lacCa</root><root wsid="7.27" mdp1="lAcCi" msid="01.125-02">lAcCi</root><sense>lakzaRe</sense></sutra>
+<sutra msid="01.126"><root wsid="7.28" mdp1="vAcCi" msid="01.126-01">vAcCi</root><sense>icCAyAm</sense></sutra>
+<sutra msid="01.127"><root wsid="7.29" mdp1="AcCi" msid="01.127-01">AcCi</root><sense>AyAme</sense></sutra>
+<sutra msid="01.128"><root wsid="7.30" mdp="hrIcCa" msid="01.128-01">hrIcCa</root><sense>lajjAyAm</sense></sutra>
+<sutra msid="01.129"><root wsid="7.31" msid="01.129-01">hurCA</root><sense>kOwilye</sense></sutra>
+<sutra msid="01.130"><root wsid="7.32" msid="01.130-01">murCA</root><sense>mohasamucCrAyayoH</sense></sutra>
+<sutra msid="01.131"><root wsid="7.33" msid="01.131-01">sPurCA</root><sense mdp="vistftO">vismftO</sense><root wsid="7.34" nomdp="yes" msid="01.131-">svurCA</root></sutra>
+<sutra msid="01.132"><root wsid="7.35" mdp="yucCa" msid="01.132-01">yucCa</root><sense>pramAde</sense></sutra>
+<sutra msid="01.133"><root wsid="7.36" mdp1="ucCi" msid="01.133-01">ucCi</root><sense>uYCe</sense></sutra>
+<sutra msid="01.134"><root wsid="7.37" mdp="ucCI" msid="01.134-01">ucCI</root><sense>vivAse</sense></sutra>
+<sutra msid="01.135"><root wsid="7.38" msid="01.135-01">Draja</root><root wsid="7.39" msid="01.135-02">Draji</root><root wsid="7.40" nomdp="yes" msid="01.135-">vraja</root><root wsid="7.41" nomdp="yes" msid="01.135-">vraji</root><root wsid="7.42" msid="01.135-03">Dfja</root><root wsid="7.43" msid="01.135-04">Dfji</root><root wsid="7.44" msid="01.135-05">Dvaja</root><root wsid="7.45" msid="01.135-06">Dvaji</root><sense>gatO </sense><root wsid="7.46" nomdp="yes" msid="01.135-">Drija</root></sutra>
+<sutra msid="01.136"><root wsid="7.47" msid="01.136-01">kUja</root><sense>avyakte Sabde </sense><root wsid="7.48" nomdp="yes" msid="01.136-">kuji</root></sutra>
+<sutra msid="01.137"><root wsid="7.49" msid="01.137-01">arja</root><root wsid="7.50" mdp1="sarja" msid="01.137-02">sarja</root><sense>arjane</sense></sutra>
+<sutra msid="01.138"><root wsid="7.51" msid="01.138-01">garja</root><sense>Sabde</sense></sutra>
+<sutra msid="01.139"><root wsid="7.52" msid="01.139-01">tarja</root><sense>Bartsane</sense></sutra>
+<sutra msid="01.140"><root wsid="7.53" msid="01.140-01">karja</root><sense>vyaTane</sense></sutra>
+<sutra msid="01.141"><root wsid="7.54" msid="01.141-01">Karja</root><sense>pUjane ca</sense></sutra>
+<sutra msid="01.142"><root wsid="7.55" msid="01.142-01">aja</root><sense>gatikzepaRayoH</sense></sutra>
+<sutra msid="01.143"><root wsid="7.56" msid="01.143-01">teja</root><sense>pAlane</sense></sutra>
+<sutra msid="01.144"><root wsid="7.57" msid="01.144-01">Kaja</root><sense>manTe</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="7.58">kaja</root><sense>made</sense></sutra>
+<sutra msid="01.145"><root wsid="7.59" msid="01.145-01">Kaji</root><sense>gativEkalye</sense></sutra>
+<sutra msid="01.146"><root wsid="7.60" msid="01.146-01">ejf</root><sense>kampane</sense></sutra>
+<sutra msid="01.147"><root wsid="7.61" mdp="wuosPUrjA" mdp1="(wu o) sPUrjA" msid="01.147-01">(wu o) sPUrjA</root><sense mdp="vajranirGoze">vajranizpeze</sense></sutra>
+<sutra msid="01.148"><root wsid="7.62" msid="01.148-01">kzi</root><sense>kzaye</sense></sutra>
+<sutra msid="01.149"><root wsid="7.63" msid="01.149-01">kzIja</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.150"><root wsid="7.64" msid="01.150-01">laja</root><root wsid="7.65" msid="01.150-02">laji</root><sense mdp="Barjane">Bartsane</sense></sutra>
+<sutra msid="01.151"><root wsid="7.66" msid="01.151-01">lAja</root><root wsid="7.67" msid="01.151-02">lAji</root><sense>Bartsane ca</sense></sutra>
+<sutra msid="01.152"><root wsid="7.68" msid="01.152-01">jaja</root><root wsid="7.69" msid="01.152-02">jaji</root><sense>yudDe</sense></sutra>
+<sutra msid="01.153"><root wsid="7.70" msid="01.153-01">tuja</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.154"><root wsid="7.71" msid="01.154-01">tuji</root><sense mdp="pAlane ca">pAlane</sense></sutra>
+<sutra msid="01.155"><root wsid="7.72" msid="01.155-01">gaja</root><root wsid="7.74" msid="01.155-02">gaji</root><root wsid="7.74" msid="01.155-03">gfja</root><root wsid="7.75" msid="01.155-04">gfji</root><root wsid="7.76" msid="01.155-05">muja</root><root wsid="7.77" msid="01.155-06">muji</root><sense>SabdArTAH</sense></sutra>
+<sutra msid="01.156"><root wsid="7.72" msid="01.156-01">gaja</root><sense>madane ca</sense></sutra>
+<sutra msid="01.157"><root wsid="7.78" msid="01.157-01">vaja</root><root wsid="7.79" msid="01.157-02">vraja</root><sense>gatO</sense></sutra>
+</section>
+<section id="I.A.8" vp="348" numroots="37" nfound="36"><text>8. {sd wavargIyAntA anudattetaH}</text>
+<sutra msid="01.159"><root wsid="8.1" msid="01.159-01">awwa</root><sense mdp="atikramaRahiMsayoH">atikramahiMsayoH</sense></sutra>
+<sutra msid="01.160"><root wsid="8.2" msid="01.160-01">vezwa</root><sense>vezwane</sense></sutra>
+<sutra msid="01.161"><root wsid="8.3" msid="01.161-01">cezwa</root><sense>cezwAyAm</sense></sutra>
+<sutra msid="01.162"><root wsid="8.4" msid="01.162-01">gozwa</root><root wsid="8.5" msid="01.162-02">lozwa</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.163"><root wsid="8.6" msid="01.163-01">Gawwa</root><sense>calane</sense></sutra>
+<sutra msid="01.164"><root wsid="8.7" msid="01.164-01">sPuwa</root><sense>vikasane</sense></sutra>
+<sutra msid="01.165"><root wsid="8.8" msid="01.165-01">aWi</root><sense>gatO</sense></sutra>
+<sutra msid="01.166"><root wsid="8.9" msid="01.166-01">vaWi</root><sense>ekacaryAyAm</sense></sutra>
+<sutra msid="01.167"><root wsid="8.10" msid="01.167-01">maWi</root><root wsid="8.11" msid="01.167-02">kaWi</root><sense>Soke</sense></sutra>
+<sutra msid="01.168"><root wsid="8.12" msid="01.168-01">muWi</root><sense mdp="pAlane">palAyane</sense></sutra>
+<sutra msid="01.169"><root wsid="8.13" msid="01.169-01">heWa</root><sense>vibADAyAm</sense></sutra>
+<sutra msid="01.170"><root wsid="8.14" msid="01.170-01">eWa</root><sense>ca</sense></sutra>
+<sutra msid="01.171"><root wsid="8.15" msid="01.171-01">hiqi</root><sense>gatyanAdarayoH</sense></sutra>
+<sutra msid="01.172"><root wsid="8.16" msid="01.172-01">huqi</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.173"><root wsid="8.17" msid="01.173-01">kuqi</root><sense>dAhe</sense></sutra>
+<sutra msid="01.174"><root wsid="8.18" msid="01.174-01">vaqi</root><sense>viBAjane</sense></sutra>
+<sutra msid="01.175"><root wsid="8.19" msid="01.175-01">maqi</root><sense>ca</sense></sutra>
+<sutra msid="01.176"><root wsid="8.20" msid="01.176-01">Baqi</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="01.177"><root wsid="8.21" msid="01.177-01">piqi</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.178"><root wsid="8.22" msid="01.178-01">muqi</root><sense>mArjane</sense></sutra>
+<sutra msid="01.179"><root wsid="8.23" msid="01.179-01">tuqi</root><sense>toqane</sense></sutra>
+<sutra msid="01.180"><root wsid="8.24" mdp="huqi" msid="01.180-01">huqi</root><sense mdp="varaRe">BaraRe</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="8.25">sPuqi</root><sense>vikasane</sense></sutra>
+<sutra msid="01.181"><root wsid="8.26" msid="01.181-01">caqi</root><sense>kope</sense></sutra>
+<sutra msid="01.182"><root wsid="8.27" msid="01.182-01">Saqi</root><sense>rujAyAM saNGAte ca</sense></sutra>
+<sutra msid="01.183"><root wsid="8.28" msid="01.183-01">taqi</root><sense>tAqane</sense></sutra>
+<sutra msid="01.184"><root wsid="8.29" msid="01.184-01">paqi</root><sense>gatO</sense></sutra>
+<sutra msid="01.185"><root wsid="8.30" msid="01.185-01">kaqi</root><sense>made</sense></sutra>
+<sutra msid="01.186"><root wsid="8.31" msid="01.186-01">Kaqi</root><sense>manTe</sense></sutra>
+<sutra msid="01.187"><root wsid="8.32" msid="01.187-01">heqf</root><root wsid="8.33" msid="01.187-02">hoqf</root><sense>anAdare</sense></sutra>
+<sutra msid="01.188"><root wsid="8.34" mdp="vAqf" msid="01.188-01">vAqf</root><sense>AplAvye</sense></sutra>
+<sutra msid="01.189"><root wsid="8.35" msid="01.189-01">drAqf</root><root wsid="8.36" msid="01.189-02">DrAqf</root><sense>viSaraRe</sense></sutra>
+<sutra msid="01.190"><root wsid="8.37" msid="01.190-01">SAqf</root><sense>SlAGAyAm</sense></sutra>
+</section>
+<section id="I.A.9" vp="348-350" numroots="79" nfound="71"><text>9. {sd wavargIyAntA udattetaH}</text>
+<sutra msid="01.192"><root wsid="9.1" msid="01.192-01">SOwf</root><sense>garve</sense></sutra>
+<sutra msid="01.193"><root wsid="9.2" msid="01.193-01">yOwf</root><sense mdp="banDe">saMbanDe</sense></sutra>
+<sutra msid="01.0194" comment="root order differs between mdp and wdp"><root wsid="9.3">mlewf</root><root wsid="9.4">mreqf</root><sense>unmAde </sense><root wsid="9.5" nomdp="yes">mewf</root></sutra>
+<sutra msid="01.195"><root wsid="9.6" msid="01.195-01">kawe</root><sense>varzAvaraRayoH </sense><root wsid="9.7" nomdp="yes" msid="01.195-01p">cawe</root></sutra>
+<sutra msid="01.196"><root wsid="9.8" msid="01.196-01">awa</root><root wsid="9.9" msid="01.196-02">pawa</root><sense>gatO</sense></sutra>
+<sutra msid="01.197"><root wsid="9.10" msid="01.197-01">rawa</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="01.198"><root wsid="9.11" msid="01.198-01">lawa</root><sense>bAlye</sense></sutra>
+<sutra msid="01.199"><root wsid="9.12" msid="01.199-01">Sawa</root><sense>rujAviSaraRagatyavasAdanezu</sense></sutra>
+<sutra msid="01.200"><root wsid="9.13" msid="01.200-01">vawa</root><sense>vezwane</sense></sutra>
+<sutra msid="01.201"><root wsid="9.14" msid="01.201-01">kiwa</root><root wsid="9.15" msid="01.201-02">Kiwa</root><sense>trAse</sense></sutra>
+<sutra msid="01.202"><root wsid="9.16" msid="01.202-01">Siwa</root><root wsid="9.17" mdp1="siwa" msid="01.202-02">siwa</root><sense>anAdare</sense></sutra>
+<sutra msid="01.203"><root wsid="9.18" msid="01.203-01">jawa</root><root wsid="9.19" msid="01.203-02">Jawa</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.204"><root wsid="9.20" msid="01.204-01">Bawa</root><sense>BftO</sense></sutra>
+<sutra msid="01.205"><root wsid="9.21" msid="01.205-01">tawa</root><sense>ucCrAye</sense></sutra>
+<sutra msid="01.206"><root wsid="9.22" msid="01.206-01">Kawa</root><sense>kANkzAyAm</sense></sutra>
+<sutra msid="01.207"><root wsid="9.23" mdp1="nawa" msid="01.207-01">nawa</root><sense>nftO</sense></sutra>
+<sutra msid="01.208"><root wsid="9.24" msid="01.208-01">piwa</root><sense>SabdasaNGAtayoH</sense></sutra>
+<sutra msid="01.209"><root wsid="9.25" msid="01.209-01">hawa</root><sense>dIptO</sense></sutra>
+<sutra msid="01.210"><root wsid="9.26" mdp1="sawa" msid="01.210-01">sawa</root><sense>avayave</sense></sutra>
+<sutra msid="01.211"><root wsid="9.27" msid="01.211-01">luwa</root><sense>viloqane</sense></sutra>
+<sutra msid="01.212"><root wsid="9.28" msid="01.212-01">ciwa</root><sense mdp="paraprezye">paraprEzye</sense></sutra>
+<sutra msid="01.213"><root wsid="9.29" msid="01.213-01">viwa</root><sense>Sabde</sense></sutra>
+<sutra msid="01.214"><root wsid="9.30" msid="01.214-01">biwa</root><sense>AkroSe</sense></sutra>
+<sutra msid="01.215"><root wsid="9.31" msid="01.215-01">iwa</root><root wsid="9.32" msid="01.215-02">kiwa</root><root wsid="9.33" msid="01.215-03">kawI</root><sense>gatO  </sense><root wsid="9.34" nomdp="yes" msid="01.215-01p">I</root></sutra>
+<sutra msid="01.xxxx"><root wsid="9.35">heWa</root><sense>vivADAyAM</sense></sutra>
+<sutra msid="01.216"><root wsid="9.36" msid="01.216-01">maqi</root><sense>BUzAyAm</sense></sutra>
+<sutra msid="01.217"><root wsid="9.37" msid="01.217-01">kuqi</root><sense>vEkalye</sense></sutra>
+<sutra msid="01.218"><root wsid="9.38" msid="01.218-01">muwa</root><sense>pramardane</sense></sutra>
+<sutra msid="01.219"><root wsid="9.39" mdp="cuqi" msid="01.219-01">cuqi</root><sense>alpIBAve</sense></sutra>
+<sutra msid="01.220"><root wsid="9.40" msid="01.220-01">muqi</root><sense>KaRqane</sense></sutra>
+<sutra msid="01.221"><root wsid="9.41" msid="01.221-01">ruwi</root><root wsid="9.42" msid="01.221-02">luwi</root><sense>steye</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="9.43">vawi</root><sense>viBAjane</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="9.44">sPuwir</root><sense>visaraRE</sense></sutra>
+<sutra msid="01.223"><root wsid="9.45" msid="01.223-01">paWa</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.224"><root wsid="9.46" msid="01.224-01">vaWa</root><sense>sTOlye</sense></sutra>
+<sutra msid="01.225"><root wsid="9.47" msid="01.225-01">maWa</root><mdproot wsid="9.X48">kaWa {mdp}</mdproot><sense>madanivAsayoH</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="9.48">kaWa</root><sense>kfcCrjIvane</sense></sutra>
+<sutra msid="01.226"><root wsid="9.49" msid="01.226-01">raWa</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="01.227"><root wsid="9.50" msid="01.227-01,01p">haWa</root><sense mdp="plutiSaWatvayoH">plutiSaMkutvayoH</sense></sutra>
+<sutra msid="01.228"><root wsid="9.51" msid="01.228-01">ruWa</root><root wsid="9.52" msid="01.228-02">luWa</root><sense>upaGAte </sense><root wsid="9.53" msid="01.228-03">uWa</root></sutra>
+<sutra msid="01.229"><root wsid="9.54" msid="01.229-01">piWa</root><sense mdp="hiMsAsaMkleSanayoH">hiMsAsaMkleSayoH</sense></sutra>
+<sutra msid="01.230"><root wsid="9.55" msid="01.230-01">SaWa</root><sense mdp="ketave ca">kEtave ca</sense></sutra>
+<sutra msid="01.231"><root wsid="9.56" msid="01.231-01,01p">SuWa</root><sense>gatipratiGAte</sense></sutra>
+<sutra msid="01.232"><root wsid="9.57" msid="01.232-01">kuWi</root><sense>ca</sense></sutra>
+<sutra msid="01.233"><root wsid="9.58" msid="01.233-01">luWi</root><sense>Alasye pratiGAte ca </sense><root wsid="9.59" nomdp="yes" msid="01.233-">ruWi</root></sutra>
+<sutra msid="01.234"><root wsid="9.60" msid="01.234-01">SuWi</root><sense>SozaRe</sense></sutra>
+<sutra msid="01.235"><root wsid="9.61" msid="01.235-01">ruWi</root><root wsid="9.62" msid="01.235-02">luWi</root><sense>gatO</sense></sutra>
+<sutra msid="01.236"><root wsid="9.63" mdp="cuqqa" msid="01.236-01">cuqqa</root><sense mdp="BAvakaraRe">hAvakaraRe</sense></sutra>
+<sutra msid="01.237"><root wsid="9.64" mdp="aqqa" msid="01.237-01">aqqa</root><sense>aBiyoge</sense></sutra>
+<sutra msid="01.238"><root wsid="9.65" mdp="kaqqa" msid="01.238-01">kaqqa</root><sense>kArkaSye</sense></sutra>
+<sutra msid="01.239"><root wsid="9.66" msid="01.239-01">krIqf</root><sense>vihAre</sense></sutra>
+<sutra msid="01.240"><root wsid="9.67" msid="01.240-01">tuqf</root><sense>toqane</sense></sutra>
+<sutra msid="01.241"><root wsid="9.68" msid="01.241-01">hUqf</root><mdproot wsid="9.X69">huqf</mdproot><root wsid="9.69" msid="01.241-03">hoqf</root><sense>gatO </sense><root wsid="9.70" nomdp="yes" msid="01.241-02">huqf</root><root wsid="9.71" nomdp="yes" msid="01.241-">hOqf</root></sutra>
+<sutra msid="01.242"><root wsid="9.72" msid="01.242-01">rOqf</root><sense>anAdare</sense></sutra>
+<sutra msid="01.243"><root wsid="9.73" msid="01.243-01">roqf</root><root wsid="9.74" msid="01.243-02">loqf</root><sense>unmAde</sense></sutra>
+<sutra msid="01.244"><root wsid="9.75" msid="01.244-01">aqa</root><sense mdp="udyamane">udyame</sense></sutra>
+<sutra msid="01.245"><root wsid="9.76" msid="01.245-01">laqa</root><sense>vilAse </sense><root wsid="9.77" nomdp="yes" msid="01.245-01p">lala</root><sense>IpsAyAM</sense></sutra>
+<sutra msid="01.246"><root wsid="9.78" msid="01.246-01">kaqa</root><sense>made</sense></sutra>
+<sutra msid="01.247"><root wsid="9.79" msid="01.247-01">gaqi</root><sense>vadanEkadeSe</sense></sutra>
+</section>
+<section id="I.A.10" vp="350" numroots="34" nfound="34"><text>10. {sd pavargIyAntA anudattetaH}</text>
+<sutra msid="01.249"><root wsid="10.1" msid="01.249-01">tipf</root><root wsid="10.2" msid="01.249-02">tepf</root><root wsid="10.3" mdp="zwipf" mdp1="stipf" msid="01.249-03">stipf</root><root wsid="10.4" mdp="zwepf" mdp1="stepf" msid="01.249-04">stepf</root><sense>kzaraRArTAH  </sense></sutra>
+<sutra msid="01.250"><mdpsutra>(X5. tepf) kampane ca {mdp}</mdpsutra></sutra>
+<sutra msid="01.251"><root wsid="10.5" msid="01.251-01">glepf</root><sense>dEnye</sense></sutra>
+<sutra msid="01.252"><root wsid="10.6" mdp1="(wu) vepf" msid="01.252-01">(wu) vepf</root><sense>kampane</sense></sutra>
+<sutra msid="01.253"><root wsid="10.7" msid="01.253-01">kepf</root><root wsid="10.8" msid="01.253-02">gepf</root><root wsid="10.5a" msid="01.253-03">glepf</root><sense>ca</sense></sutra>
+<sutra msid="01.254"><root wsid="10.9" msid="01.254-01">mepf</root><root wsid="10.10" msid="01.254-02">repf</root><root wsid="10.11" msid="01.254-03">lepf</root><sense>gatO</sense></sutra>
+<sutra msid="01.255"><root wsid="10.12" msid="01.255-01">trapUz</root><sense>lajjAyAm</sense></sutra>
+<sutra msid="01.256"><root wsid="10.13" msid="01.256-01">kapi</root><sense>calane</sense></sutra>
+<sutra msid="01.257"><root wsid="10.14" msid="01.257-01">rabi</root><root wsid="10.15" msid="01.257-02">labi</root><root wsid="10.16" msid="01.257-03">abi</root><sense>Sabde</sense></sutra>
+<sutra msid="01.258"><mdproot wsid="10.X17">labi</mdproot><sense>avasraMsane ca {= 15a)</sense></sutra>
+<sutra msid="01.259"><root wsid="10.17" msid="01.259-01">kabf</root><sense>varRe</sense></sutra>
+<sutra msid="01.260"><root wsid="10.18" mdp="klIbf" msid="01.260-01">klIbf</root><sense>aDArzwye</sense></sutra>
+<sutra msid="01.261"><root wsid="10.19" msid="01.261-01">kzIbf</root><sense>made</sense></sutra>
+<sutra msid="01.262"><root wsid="10.20" msid="01.262-01">SIBf</root><sense>katTane</sense></sutra>
+<sutra msid="01.263"><root wsid="10.21" mdp="cIBf" msid="01.263-01">cIBf</root><sense>ca</sense></sutra>
+<sutra msid="01.264"><root wsid="10.22" msid="01.264-01">reBf</root><sense>Sabde </sense><root wsid="10.23" nomdp="yes" msid="01.264-01p">aBi</root><root wsid="10.24" nomdp="yes" msid="01.264-02p">raBi</root><root wsid="10.25" nomdp="yes" msid="01.264-">laBi</root></sutra>
+<sutra msid="01.265"><root wsid="10.26" mdp="zwaBi" mdp1="staBi" msid="01.265-01">staBi</root><root wsid="10.27" msid="01.265-02">skaBi</root><sense>pratibanDe</sense></sutra>
+<sutra msid="01.266"><root wsid="10.28" mdp="jaBi" msid="01.266-01">jaBi</root><root wsid="10.29" msid="01.266-02">jfBi</root><sense>gAtravinAme</sense></sutra>
+<sutra msid="01.267"><root wsid="10.30" msid="01.267-01">SalBa</root><sense>katTane</sense></sutra>
+<sutra msid="01.268"><root wsid="10.31" msid="01.268-01">valBa</root><sense>Bojane</sense></sutra>
+<sutra msid="01.269"><root wsid="10.32" msid="01.269-01">galBa</root><sense>DArzwye</sense></sutra>
+<sutra msid="01.270"><root wsid="10.33" mdp="SramBu" msid="01.270-01">SramBu</root><sense>pramAde</sense></sutra>
+<sutra msid="01.271"><root wsid="10.34" mdp="zwuBu" mdp1="stuBu" msid="01.271-01">stuBu</root><sense>stamBe</sense></sutra>
+</section>
+<section id="I.A.11" vp="350" numroots="43" nfound="40"><text>11. {sd pavargIyAntA udattetaH}</text>
+<sutra msid="01.273"><root wsid="11.1" msid="01.273-01">gupU</root><sense>rakzaRe</sense></sutra>
+<sutra msid="01.274"><root wsid="11.2" msid="01.274-01">DUpa</root><sense>santApe</sense></sutra>
+<sutra msid="01.275"><root wsid="11.3" msid="01.275-02">japa</root><root wsid="11.4" msid="01.275-01">jalpa</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.276"><mdproot wsid="11.X5">japa</mdproot><sense>mAnase ca {note: wdp mentions in prev sutra}</sense></sutra>
+<sutra msid="01.277"><root wsid="11.5" msid="01.277-01">capa</root><sense>sAntvane</sense></sutra>
+<sutra msid="01.278"><root wsid="11.6" mdp1="sapa" msid="01.278-01">sapa</root><sense>samavAye</sense></sutra>
+<sutra msid="01.279"><root wsid="11.7" msid="01.279-01">rapa</root><root wsid="11.8" msid="01.279-02">lapa</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.280"><root wsid="11.9" msid="01.280-01">cupa</root><sense>mandAyAM gatO</sense></sutra>
+<sutra msid="01.281"><root wsid="11.10" msid="01.281-01">tupa</root><root wsid="11.11" mdp="tumpa" msid="01.281-02">tumpa</root><root wsid="11.12" msid="01.281-03">trupa</root><root wsid="11.13" mdp="trumpa" msid="01.281-04">trumpa</root><root wsid="11.14" msid="01.281-05">tuPa</root><root wsid="11.15" mdp="tumPa" msid="01.281-06">tumPa</root><root wsid="11.16" msid="01.281-07">truPa</root><root wsid="11.17" mdp="trumPa" msid="01.281-08">trumPa</root><sense>hiMsArTAH</sense></sutra>
+<sutra msid="01.282"><root wsid="11.18" msid="01.282-01">parpa</root><root wsid="11.19" msid="01.282-02">raPa</root><root wsid="11.20" msid="01.282-03">raPi</root><root wsid="11.21" mdp="arba" msid="01.282-04">arba</root><root wsid="11.22" msid="01.282-05">parba</root><root wsid="11.23" msid="01.282-06">larba</root><root wsid="11.24" msid="01.282-07">barba</root><root wsid="11.25" msid="01.282-08">marba</root><root wsid="11.26" msid="01.282-09">karba</root><root wsid="11.27" msid="01.282-10">Karba</root><root wsid="11.28" msid="01.282-11">garba</root><root wsid="11.29" msid="01.282-12">Sarba</root><root wsid="11.30" mdp1="sarba" msid="01.282-13">sarba</root><root wsid="11.31" msid="01.282-14">carba</root><sense>gatO </sense><root wsid="11.32" nomdp="yes" msid="01.282-">Garba</root><root wsid="11.33" nomdp="yes" msid="01.282-">tarba</root><root wsid="11.34" nomdp="yes" msid="01.282-">narba</root><root wsid="11.35" nomdp="yes" msid="01.282-13">sarba</root></sutra>
+<sutra msid="01.283"><root wsid="11.36" msid="01.283-01">kubi</root><sense mdp="CAdane">AcCAdane</sense></sutra>
+<sutra msid="01.284"><root wsid="11.37" msid="01.284-01">lubi</root><root wsid="11.38" msid="01.284-02">tubi</root><sense>ardane</sense></sutra>
+<sutra msid="01.285"><root wsid="11.39" msid="01.285-01">cubi</root><sense>vaktrasaMyoge</sense></sutra>
+<sutra msid="01.286"><root wsid="11.40" mdp1="sfBu" msid="01.286-01,03p">sfBu</root><root wsid="11.41" mdp="zfmBu" mdp1="sfmBu" msid="01.286-02,04p">sfmBu</root><sense>hiMsArTO</sense></sutra>
+<sutra msid="01.287"><root wsid="11.42" msid="01.287-01,01p">SuBa</root><root wsid="11.43" mdp="SumBa" msid="01.287-02,02p">SumBa</root><sense mdp="BAzaRe hiMsAyAM ca">BAsane ca</sense></sutra>
+</section>
+<section id="I.A.12" vp="350-351" numroots="10" nfound="10"><text>12. {sd anunAsikAntA anudattetaH}</text>
+<sutra msid="01.289"><root wsid="12.1" msid="01.289-01">GiRi</root><root wsid="12.2" msid="01.289-02">GuRi</root><root wsid="12.3" msid="01.289-03">GfRi</root><sense>grahaRe</sense></sutra>
+<sutra msid="01.290"><root wsid="12.4" msid="01.290-01">GuRa</root><root wsid="12.5" msid="01.290-02">GUrRa</root><sense>BramaRe</sense></sutra>
+<sutra msid="01.291"><root wsid="12.6" msid="01.291-01">paRa</root><sense>vyavahAre stutO ca</sense></sutra>
+<sutra msid="01.292"><root wsid="12.7" msid="01.292-01">pana</root><sense>ca</sense></sutra>
+<sutra msid="01.293"><root wsid="12.8" msid="01.293-01">BAma</root><sense>kroDe</sense></sutra>
+<sutra msid="01.294"><root wsid="12.9" msid="01.294-01">kzamUz</root><sense>sahane</sense></sutra>
+<sutra msid="01.295"><root wsid="12.10" msid="01.295-01">kamu</root><sense>kAntO</sense></sutra>
+</section>
+<section id="I.A.13" vp="351" numroots="31" nfound="30"><text>13. {sd anunAsikAntA udattetaH}</text>
+<sutra msid="01.297"><root wsid="13.1" msid="01.297-01">aRa</root><root wsid="13.2" msid="01.297-02">raRa</root><root wsid="13.3" msid="01.297-03">vaRa</root><root wsid="13.4" msid="01.297-04">BaRa</root><root wsid="13.5" msid="01.297-05">maRa</root><root wsid="13.6" msid="01.297-06">kaRa</root><root wsid="13.7" msid="01.297-07">kvaRa</root><root wsid="13.8" msid="01.297-08">vraRa</root><root wsid="13.9" msid="01.297-09">BraRa</root><root wsid="13.10" msid="01.297-10">DvaRa</root><root wsid="13.11" nomdp="yes" msid="01.297-">DaRa</root><sense>SabdArTAH</sense></sutra>
+<sutra msid="01.298"><root wsid="13.12" msid="01.298-01">oRf</root><sense>apanayane</sense></sutra>
+<sutra msid="01.299"><root wsid="13.13" msid="01.299-01">SoRf</root><sense>varRagatyoH</sense></sutra>
+<sutra msid="01.300"><root wsid="13.14" msid="01.300-01">SroRf</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.301"><root wsid="13.15" msid="01.301-01">SloRf</root><sense>ca</sense></sutra>
+<sutra msid="01.302"><root wsid="13.15a" mdp="prERf" msid="01.302-01">prERf</root><sense>gatipreraRaSlezaRezu</sense></sutra>
+<sutra msid="01.303"><root wsid="13.16" mdp1="Drana" msid="01.303-01">Drana</root><sense>Sabde</sense></sutra>
+<sutra msid="01.304"><root wsid="13.17" msid="01.304-01">kanI</root><sense>dIptikAntigatizu</sense></sutra>
+<sutra msid="01.305"><root wsid="13.18" mdp="zwana" mdp1="stana" msid="01.305-01">stana</root><root wsid="13.19" msid="01.305-02">vana</root><sense>Sabde</sense></sutra>
+<sutra msid="01.306"><root wsid="13.20" msid="01.306-01">vana</root><root wsid="13.21" mdp="zaRa" mdp1="saRa" msid="01.306-02">saRa</root><sense>samBaktO</sense></sutra>
+<sutra msid="01.307"><root wsid="13.22" msid="01.307-01">ama</root><sense>gatyAdizu</sense></sutra>
+<sutra msid="01.308"><root wsid="13.23" msid="01.308-01">drama</root><root wsid="13.24" msid="01.308-02">hamma</root><root wsid="13.25" msid="01.308-03,01p">mImf</root><sense>gatO</sense></sutra>
+<sutra msid="01.309"><root wsid="13.26" msid="01.309-01">camu</root><root wsid="13.27" msid="01.309-02">Camu</root><root wsid="13.28" msid="01.309-03">jamu</root><root wsid="13.29" msid="01.309-04">Jamu</root><sense>adane </sense><root wsid="13.30" nomdp="yes" msid="01.309-">jimu</root></sutra>
+<sutra msid="01.310"><root wsid="13.31" msid="01.310-01">kramu</root><sense>pAdavikzepe</sense></sutra>
+</section>
+<section id="I.A.14" vp="351" numroots="40" nfound="33"><text>14. {sd yaralavAntA anudattetaH}</text>
+<sutra msid="01.312"><root wsid="14.1" msid="01.312-01">aya</root><root wsid="14.2" msid="01.312-02">vaya</root><root wsid="14.3" msid="01.312-03">paya</root><root wsid="14.4" msid="01.312-04">maya</root><root wsid="14.5" msid="01.312-05">caya</root><root wsid="14.6" msid="01.312-06,01p">taya</root><root wsid="14.7" mdp1="naya" msid="01.312-07,02p">naya</root><sense>gatO </sense><root wsid="14.8" nomdp="yes" msid="01.312-">zaya</root></sutra>
+<sutra msid="01.313"><root wsid="14.9" msid="01.313-01">daya</root><sense>dAnagatirakzaRahiMsAdAnezu</sense></sutra>
+<sutra msid="01.314"><root wsid="14.10" msid="01.314-01">raya</root><sense>gatO </sense><root wsid="14.11" nomdp="yes" msid="01.314-">laya</root></sutra>
+<sutra msid="01.315"><root wsid="14.12" msid="01.315-01">UyI</root><sense>tantusaMtAne</sense></sutra>
+<sutra msid="01.316"><root wsid="14.13" msid="01.316-01">pUyI</root><sense>viSaraRe durganDe ca</sense></sutra>
+<sutra msid="01.317"><root wsid="14.14" msid="01.317-01">knUyI</root><sense mdp="Sabde undane ca">Sabde unde ca</sense></sutra>
+<sutra msid="01.318"><root wsid="14.15" msid="01.318-01">kzmAyI</root><sense>viDUnane</sense></sutra>
+<sutra msid="01.319"><root wsid="14.16" msid="01.319-01">sPAyI</root><root wsid="14.17" mdp1="(o) pyAyI" msid="01.319-02">(o) pyAyI</root><sense>vfdDO</sense></sutra>
+<sutra msid="01.320"><root wsid="14.18" msid="01.320-01">tAyf</root><sense>santAnapAlanayoH</sense></sutra>
+<sutra msid="01.321"><root wsid="14.19" mdp="Sala" msid="01.321-01">Sala</root><sense>calanasaMvaraRayoH</sense></sutra>
+<sutra msid="01.322"><root wsid="14.20" msid="01.322-01">vala</root><root wsid="14.21" msid="01.322-02">valla</root><sense>saMvaraRe saYcaraRe ca</sense></sutra>
+<sutra msid="01.323"><root wsid="14.22" msid="01.323-01">mala</root><root wsid="14.23" msid="01.323-02">malla</root><sense>DAraRe</sense></sutra>
+<sutra msid="01.324"><root wsid="14.24" msid="01.324-01">Bala</root><root wsid="14.25" msid="01.324-02">Balla</root><sense>pariBAzaRahiMsAdAnezu</sense></sutra>
+<sutra msid="01.325"><root wsid="14.26" msid="01.325-01">kala</root><sense>SabdasaMKyAnayoH</sense></sutra>
+<sutra msid="01.326"><root wsid="14.27" msid="01.326-01">kalla</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.327"><root wsid="14.28" msid="01.327-01">tevf</root><root wsid="14.29" msid="01.327-02">devf</root><sense>devane</sense></sutra>
+<sutra msid="01.328"><root wsid="14.30" mdp1="sevf" msid="01.328-01">sevf</root><root wsid="14.31" msid="01.328-02">gevf</root><root wsid="14.32" msid="01.328-03">glevf</root><root wsid="14.33" nomdp="yes" msid="01.328-05p">pevf</root><root wsid="14.34" nomdp="yes" msid="01.328-06p">mevf</root><mdproot wsid="14.X33">plevf</mdproot><root wsid="14.35" msid="01.328-05">mlevf</root><sense mdp="secane">sevane</sense><root wsid="14.36" nomdp="yes" msid="01.328-07p">Sevf</root><root wsid="14.37" nomdp="yes" msid="01.328-04p">Kevf</root><root wsid="14.38" nomdp="yes" msid="01.328-04">plevf</root><root wsid="14.39" nomdp="yes" msid="01.328-">kevf</root></sutra>
+<sutra msid="01.329"><root wsid="14.39a" msid="01.329-01">revf</root><sense>plavagatO </sense><root wsid="14.40" nomdp="yes" msid="01.329-01p">plava</root></sutra>
+</section>
+<section id="I.A.15" vp="351-352" numroots="92" nfound="93"><text>15. {sd yaralavAntA udattetaH}</text>
+<sutra msid="01.331"><root wsid="15.1" msid="01.331-01">mavya</root><sense>banDane</sense></sutra>
+<sutra msid="01.332"><root wsid="15.2" mdp="sUrkzya" msid="01.332-01">sUrkzya</root><root wsid="15.3" msid="01.332-02">Irkzya</root><root wsid="15.4" msid="01.332-03">Irzya</root><sense>IrzyArTAH</sense></sutra>
+<sutra msid="01.333"><root wsid="15.5" msid="01.333-01">haya</root><sense>gatO</sense></sutra>
+<sutra msid="01.334"><root wsid="15.6" mdp="Sucya" msid="01.334-01">Sucya</root><sense>aBizave</sense></sutra>
+<sutra msid="01.335"><root wsid="15.7" msid="01.335-01">harya</root><sense>gatikAntyoH</sense></sutra>
+<sutra msid="01.336"><root wsid="15.8" msid="01.336-01">ala</root><sense>BUzaRaparyAptivAraRezu</sense></sutra>
+<sutra msid="01.337"><root wsid="15.9" mdp1="(Yi) PalA" msid="01.337-01">(Yi) PalA</root><sense>viSaraRe</sense></sutra>
+<sutra msid="01.338"><root wsid="15.10" msid="01.338-01">mIla</root><root wsid="15.11" msid="01.338-02">SmIla</root><root wsid="15.12" msid="01.338-03">smIla</root><root wsid="15.13" msid="01.338-04">kzmIla</root><sense>nimezaRe</sense></sutra>
+<sutra msid="01.339"><root wsid="15.14" msid="01.339-01">pIla</root><sense>pratizwamBe</sense></sutra>
+<sutra msid="01.340"><root wsid="15.15" mdp1="nIla" msid="01.340-01">nIla</root><sense>varRe</sense></sutra>
+<sutra msid="01.341"><root wsid="15.16" msid="01.341-01">SIla</root><sense>samADO</sense></sutra>
+<sutra msid="01.342"><root wsid="15.17" msid="01.342-01">kIla</root><sense>banDane</sense></sutra>
+<sutra msid="01.343"><root wsid="15.18" msid="01.343-01">kUla</root><sense>AvaraRe</sense></sutra>
+<sutra msid="01.344"><root wsid="15.19" msid="01.344-01">SUla</root><sense>rujAyAM saNGAte ca</sense></sutra>
+<sutra msid="01.345"><root wsid="15.20" msid="01.345-01">tUla</root><sense>nizkarze</sense></sutra>
+<sutra msid="01.346"><root wsid="15.21" msid="01.346-01">pUla</root><sense>saMGAte</sense></sutra>
+<sutra msid="01.347"><root wsid="15.22" msid="01.347-01">mUla</root><sense>pratizWAyAm</sense></sutra>
+<sutra msid="01.348"><root wsid="15.23" msid="01.348-01">Pala</root><sense>nizpattO</sense></sutra>
+<sutra msid="01.349"><root wsid="15.24" msid="01.349-01">culla</root><sense>BAvakaraRe</sense></sutra>
+<sutra msid="01.350"><root wsid="15.25" mdp="Pulla" msid="01.350-01">Pulla</root><sense>vikasane</sense></sutra>
+<sutra msid="01.351"><root wsid="15.26" msid="01.351-01">cilla</root><sense mdp="SETilye BAvakaraRe ca">SETilye BAvakaraRe</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="15.27">tila</root><sense>gatO</sense></sutra>
+<sutra msid="01.352"><root wsid="15.28" msid="01.352-01">velf</root><root wsid="15.29" msid="01.352-02">celf</root><root wsid="15.30" msid="01.352-03">kelf</root><root wsid="15.31" msid="01.352-04">Kelf</root><root wsid="15.32" msid="01.352-05">kzvelf</root><root wsid="15.33" msid="01.352-06">vella</root><sense>calane</sense></sutra>
+<sutra msid="01.353"><root wsid="15.34" msid="01.353-01">pelf</root><root wsid="15.35" msid="01.353-03">Pelf</root><root wsid="15.36" msid="01.353-02">Self</root><sense>gatO</sense></sutra>
+<sutra msid="01.354"><root wsid="15.37" msid="01.354-01">sKala</root><sense>saMcalane</sense></sutra>
+<sutra msid="01.355"><root wsid="15.38" msid="01.355-01">Kala</root><sense>saYcaye</sense></sutra>
+<sutra msid="01.356"><root wsid="15.39" msid="01.356-01">gala</root><sense>adane</sense></sutra>
+<sutra msid="01.357"><root wsid="15.40" mdp1="sala" msid="01.357-01">sala</root><sense>gatO</sense></sutra>
+<sutra msid="01.358"><root wsid="15.41" msid="01.358-01">dala</root><sense>viSaraRe</sense></sutra>
+<sutra msid="01.359"><root wsid="15.42" msid="01.359-01">Svala</root><root wsid="15.43" msid="01.359-02">Svalla</root><sense>ASugamane</sense></sutra>
+<sutra msid="01.360"><mdproot wsid="15.X43">Kolf</mdproot><root wsid="15.44" msid="01.360-02">Korf</root><sense>gatipratiGAte</sense></sutra>
+<sutra msid="01.361"><root wsid="15.45" msid="01.361-01">Dorf</root><sense mdp="gaticAturyye">gaticAturye</sense></sutra>
+<sutra msid="01.362"><root wsid="15.46" msid="01.362-01">tsara</root><sense>CadmagatO</sense></sutra>
+<sutra msid="01.363"><root wsid="15.47" msid="01.363-01">kmara</root><sense mdp="hUrCane">hUrcCane</sense></sutra>
+<sutra msid="01.364"><root wsid="15.48" msid="01.364-01">aBra</root><root wsid="15.49" msid="01.364-02">vaBra</root><root wsid="15.50" msid="01.364-03">maBra</root><root wsid="15.51" msid="01.364-04">cara</root><sense>gatyarTAH</sense></sutra>
+<sutra msid="01.365"><root wsid="15.52" msid="01.365-01,02">zWivu</root><sense>nirasane</sense></sutra>
+<sutra msid="01.366"><root wsid="15.53" msid="01.366-01">ji</root><sense>jaye</sense></sutra>
+<sutra msid="01.367"><root wsid="15.54" msid="01.367-01">jIva</root><sense>prARaDAraRe</sense></sutra>
+<sutra msid="01.368"><root wsid="15.55" msid="01.368-01">pIva</root><root wsid="15.56" msid="01.368-02">mIva</root><root wsid="15.57" msid="01.368-03">tIva</root><root wsid="15.58" mdp1="nIva" msid="01.368-04">nIva</root><sense>sTOlye</sense></sutra>
+<sutra msid="01.369"><root wsid="15.59" mdp="kzIvu" msid="01.369-01">kzIvu</root><sense>nirasane</sense></sutra>
+<sutra msid="01.370"><root wsid="15.60" msid="01.370-01">urvI</root><root wsid="15.61" msid="01.370-02">turvI</root><root wsid="15.62" msid="01.370-03">TurvI</root><root wsid="15.63" msid="01.370-04">durvI</root><root wsid="15.64" msid="01.370-05">DurvI</root><sense>hiMsArTAH</sense></sutra>
+<sutra msid="01.371"><root wsid="15.65" msid="01.371-01">gurvI</root><sense>udyamane</sense></sutra>
+<sutra msid="01.372"><root wsid="15.66" msid="01.372-01">murvI</root><sense>banDane</sense></sutra>
+<sutra msid="01.373"><root wsid="15.67" msid="01.373-01">purva</root><root wsid="15.68" msid="01.373-02">parva</root><mdproot wsid="15.X69">Parva {mdp}</mdproot><root wsid="15.69" msid="01.373-04">marva</root><sense>pUraRe</sense></sutra>
+<sutra msid="01.374"><root wsid="15.70" msid="01.374-01">carva</root><sense>adane</sense></sutra>
+<sutra msid="01.375"><root wsid="15.71" msid="01.375-01">Barva</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.376"><root wsid="15.72" msid="01.376-01">karva</root><root wsid="15.73" msid="01.376-02">Karva</root><root wsid="15.74" msid="01.376-03">garva</root><sense>darpe</sense></sutra>
+<sutra msid="01.377"><root wsid="15.75" msid="01.377-01">arva</root><root wsid="15.76" msid="01.377-02">Sarva</root><root wsid="15.77" mdp1="sarva" msid="01.377-03">sarva</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.378"><root wsid="15.78" msid="01.378-01">ivi</root><sense>vyAptO</sense></sutra>
+<sutra msid="01.379"><root wsid="15.79" msid="01.379-01,02p">pivi</root><root wsid="15.80" msid="01.379-02,03p">mivi</root><root wsid="15.81" mdp1="nivi" msid="01.379-03,01p">nivi</root><sense>secane</sense></sutra>
+<sutra msid="01.380"><root wsid="15.82" msid="01.380-01">hivi</root><root wsid="15.83" msid="01.380-02">divi</root><root wsid="15.84" msid="01.380-03">Divi</root><root wsid="15.85" msid="01.380-04">jivi</root><sense>prIRanArTAH</sense></sutra>
+<sutra msid="01.381"><root wsid="15.86" msid="01.381-01">rivi</root><root wsid="15.87" msid="01.381-02">ravi</root><root wsid="15.88" msid="01.381-03">Davi</root><sense>gatyarTAH</sense></sutra>
+<sutra msid="01.382"><root wsid="15.89" msid="01.382-01">kfvi</root><sense>hiMsAkaraRayoSca</sense></sutra>
+<sutra msid="01.383"><root wsid="15.90" msid="01.383-01">mava</root><sense>banDane</sense></sutra>
+<sutra msid="01.384"><root wsid="15.91" msid="01.384-01">ava</root><sense mdp="rakzaRagatikAntiprItitfptyavagamapraveSaSravaRasvAmyarTayAcanakriyecCAdIptyavAptyAliNganahiMsAdAnaBAgavfdDizu">rakzaRa gati kAnti prIti tfpti avagama praveSa SravaRa svAmyarTa yAcana kriyA icCA dIpti avApti AliMgana hiMsA AdAna BAva vfdDizu</sense></sutra>
+<sutra msid="01.386a"><root wsid="15.92" msid="01.386a-01">DAvu</root><sense>gatiSudDyoH</sense></sutra>
+</section>
+<section id="I.A.16" vp="352-353" numroots="50" nfound="49"><text>16. {sd uzmAntA anudattetaH}</text>
+<sutra msid="01.387"><root wsid="16.1" msid="01.387-01">Dukza</root><root wsid="16.2" msid="01.387-02">Dikza</root><sense>sandIpanakleSanajIvanezu</sense></sutra>
+<sutra msid="01.388"><root wsid="16.3" msid="01.388-01">vfkza</root><sense>varaRe</sense></sutra>
+<sutra msid="01.389"><root wsid="16.4" msid="01.389-01">Sikza</root><sense>vidyopAdAne</sense></sutra>
+<sutra msid="01.390"><root wsid="16.5" msid="01.390-01,01p">Bikza</root><sense mdp="yAcYAyAmalABe lABe ca">BikzAyAmalABe laBe ca</sense></sutra>
+<sutra msid="01.391"><root wsid="16.6" msid="01.391-01,01p,02p">kleSa</root><sense mdp="avyaktAyAM vAci">vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.392"><root wsid="16.7" msid="01.392-01">dakza</root><sense>vfdDO SIGrArTe ca</sense></sutra>
+<sutra msid="01.393"><root wsid="16.8" msid="01.393-01">dIkza</root><sense>mORqyejyopanayananiyamavratAdeSezu</sense></sutra>
+<sutra msid="01.394"><root wsid="16.9" msid="01.394-01">Ikza</root><sense>darSane</sense></sutra>
+<sutra msid="01.395"><root wsid="16.10" msid="01.395-01">Iza</root><sense>gatihiMsAdarSanezu</sense></sutra>
+<sutra msid="01.396"><root wsid="16.11" msid="01.396-01">BAza</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.397"><root wsid="16.12" msid="01.397-01">varza</root><sense>snehane</sense></sutra>
+<sutra msid="01.398"><root wsid="16.13" msid="01.398-01">gezf</root><sense>anvicCAyAm</sense></sutra>
+<sutra msid="01.399"><root wsid="16.14" msid="01.399-01">ezf</root><sense>prayatne</sense></sutra>
+<sutra msid="01.400"><root wsid="16.15" msid="01.400-01">jezf</root><root wsid="16.16" mdp1="nezf" msid="01.400-02">nezf</root><root wsid="16.17" msid="01.400-03">ezf</root><root wsid="16.18" msid="01.400-04">prezf</root><sense>gatO</sense></sutra>
+<sutra msid="01.401"><root wsid="16.19" msid="01.401-01">rezf</root><root wsid="16.20" msid="01.401-02">hezf</root><root wsid="16.21" nomdp="yes" msid="01.401-01p">hrezf</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.402"><root wsid="16.22" msid="01.402-01">kAsf</root><sense>SabdakutsAyAm</sense></sutra>
+<sutra msid="01.403"><root wsid="16.23" msid="01.403-01">BAsf</root><sense>dIptO</sense></sutra>
+<sutra msid="01.404"><root wsid="16.24" mdp1="nAsf" msid="01.404-01">nAsf</root><root wsid="16.25" msid="01.404-02">rAsf</root><sense>Sabde</sense></sutra>
+<sutra msid="01.405"><root wsid="16.26" mdp1="nasa" msid="01.405-01">nasa</root><sense>kOwilye</sense></sutra>
+<sutra msid="01.406"><root wsid="16.27" msid="01.406-01">Byasa</root><sense>Baye</sense></sutra>
+<sutra msid="01.407"><root wsid="16.28" mdp1="(ANaH) Sasi" msid="01.407-01">(ANaH) Sasi</root><sense>icCAyAm</sense></sutra>
+<sutra msid="01.408"><root wsid="16.29" msid="01.408-01">grasu</root><root wsid="16.30" msid="01.408-02">glasu</root><sense>adane</sense></sutra>
+<sutra msid="01.409"><root wsid="16.31" msid="01.409-01">Iha</root><sense>cezwAyAm</sense></sutra>
+<sutra msid="01.410"><root wsid="16.32" msid="01.410-01">bahi</root><root wsid="16.33" msid="01.410-02">mahi</root><sense>vfdDO</sense></sutra>
+<sutra msid="01.411"><root wsid="16.34" msid="01.411-01">ahi</root><sense>gatO</sense></sutra>
+<sutra msid="01.412"><root wsid="16.35" msid="01.412-01">garha</root><root wsid="16.36" msid="01.412-02">galha</root><sense>kutsAyAm</sense></sutra>
+<sutra msid="01.413"><root wsid="16.37" mdp="barha" msid="01.413-01">barha</root><root wsid="16.38" mdp="balha" msid="01.413-02">balha</root><sense>prADAnye</sense></sutra>
+<sutra msid="01.414"><root wsid="16.39" mdp="varha" msid="01.414-01,03p">varha</root><root wsid="16.40" mdp="valha" msid="01.414-02,04p">valha</root><sense>pariBAzaRahiMsAdAnezu</sense></sutra>
+<sutra msid="01.415"><root wsid="16.41" msid="01.415-01">pliha</root><sense>gatO</sense></sutra>
+<sutra msid="01.416"><root wsid="16.42" msid="01.416-01">vehf</root><root wsid="16.43" msid="01.416-02">jehf</root><root wsid="16.44" msid="01.416-03">bAhf</root><sense>prayatne</sense></sutra>
+<sutra msid="01.417"><root wsid="16.45" msid="01.417-01,01p">drAhf</root><sense>nidrAkzaye</sense></sutra>
+<sutra msid="01.418"><root wsid="16.46" msid="01.418-01">kASf</root><sense>dIptO</sense></sutra>
+<sutra msid="01.419"><root wsid="16.47" msid="01.419-01">Uha</root><sense>vitarke</sense></sutra>
+<sutra msid="01.420"><root wsid="16.48" msid="01.420-01">gAhU</root><sense>viloqane</sense></sutra>
+<sutra msid="01.421"><root wsid="16.49" msid="01.421-01">gfhU</root><sense>grahaRe</sense></sutra>
+<sutra msid="01.422"><root wsid="16.50" msid="01.422-01">Guzi</root><sense mdp="kAntikaraRe">kAntikraraRe</sense></sutra>
+</section>
+<section id="I.A.17" vp="353-354" numroots="89" nfound="88"><text>17. {sd uzmAntA udattetaH}</text>
+<sutra msid="01.424"><root wsid="17.1" msid="01.424-01,01p">Guzir</root><sense>aviSabdane</sense></sutra>
+<sutra msid="01.425"><root wsid="17.2" msid="01.425-01">akzU</root><sense>vyAptO</sense></sutra>
+<sutra msid="01.426"><root wsid="17.3" msid="01.426-01">takzU</root><root wsid="17.4" msid="01.426-02">tvakzU</root><sense>tanUkaraRe</sense></sutra>
+<sutra msid="01.427"><root wsid="17.5" msid="01.427-01">ukza</root><sense>secane</sense></sutra>
+<sutra msid="01.428"><root wsid="17.6" msid="01.428-01">rakza</root><sense>pAlane</sense></sutra>
+<sutra msid="01.429"><root wsid="17.7" mdp1="nikza" msid="01.429-01">nikza</root><sense>cumbane</sense></sutra>
+<sutra msid="01.430"><root wsid="17.8" msid="01.430-01">tfkza</root><root wsid="17.9" mdp="stfkza" msid="01.430-02">stfkza</root><root wsid="17.10" mdp1="nakza" msid="01.430-03">nakza</root><sense>gatO</sense></sutra>
+<sutra msid="01.431"><root wsid="17.11" msid="01.431-01">vakza</root><sense>roze</sense></sutra>
+<sutra msid="01.432"><root wsid="17.12" mdp="mfkza" msid="01.432-01">mfkza</root><sense>saNGAte</sense></sutra>
+<sutra msid="01.433"><root wsid="17.13" msid="01.433-01">takza</root><sense>tvacane</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="17.14">pakza</root><sense>parigrahe</sense></sutra>
+<sutra msid="01.434"><root wsid="17.15" mdp1="sUrkza" msid="01.434-01,01p">sUrkza</root><sense mdp="Adare">anAdare</sense></sutra>
+<sutra msid="01.435"><root wsid="17.16" msid="01.435-01">kAkzi</root><root wsid="17.17" msid="01.435-02">vAkzi</root><root wsid="17.18" msid="01.435-03">mAkzi</root><sense>kANkzAyAm</sense></sutra>
+<sutra msid="01.436"><root wsid="17.19" msid="01.436-01">drAkzi</root><root wsid="17.20" msid="01.436-02">DrAkzi</root><root wsid="17.21" msid="01.436-03">DvAkzi</root><sense>GoravAsite ca</sense></sutra>
+<sutra msid="01.437"><root wsid="17.22" msid="01.437-01">cUza</root><sense>pAne</sense></sutra>
+<sutra msid="01.438"><root wsid="17.23" msid="01.438-01">tUza</root><sense>tuzwO</sense></sutra>
+<sutra msid="01.439"><root wsid="17.24" msid="01.439-01">pUza</root><sense mdp="vfdDO">puzwO</sense></sutra>
+<sutra msid="01.440"><root wsid="17.25" msid="01.440-01">mUza</root><sense>steye</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="17.26">lUza</root><root wsid="17.27">rUza</root><sense>BUzAyAM</sense></sutra>
+<sutra msid="01.441"><root wsid="17.28" msid="01.441-01">SUza</root><sense>prasave</sense></sutra>
+<sutra msid="01.442"><root wsid="17.29" msid="01.442-01">yUza</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.443"><mdpsutra>(X30. jUza) ca  {mdp}</mdpsutra></sutra>
+<sutra msid="01.444"><root wsid="17.30" msid="01.444-01">BUza</root><sense>alaNkAre </sense><root wsid="17.31" nomdp="yes" msid="01.444-">tasi</root></sutra>
+<sutra msid="01.445"><root wsid="17.32" msid="01.445-01">Uza</root><sense>rujAyAm</sense></sutra>
+<sutra msid="01.446"><root wsid="17.33" msid="01.446-01">Iza</root><sense>uYCe</sense></sutra>
+<sutra msid="01.447"><root wsid="17.34" msid="01.447-01">kaza</root><root wsid="17.35" msid="01.447-02">Kaza</root><root wsid="17.36" msid="01.447-03">Siza</root><root wsid="17.37" msid="01.447-04">jaza</root><root wsid="17.38" msid="01.447-05">Jaza</root><root wsid="17.39" msid="01.447-06">Saza</root><root wsid="17.40" msid="01.447-07">vaza</root><root wsid="17.41" msid="01.447-08">maza</root><root wsid="17.42" msid="01.447-09">ruza</root><root wsid="17.43" msid="01.447-10">riza</root><sense>hiMsArTAH</sense></sutra>
+<sutra msid="01.448"><root wsid="17.44" msid="01.448-01">Baza</root><sense>Bartsane</sense></sutra>
+<sutra msid="01.449"><root wsid="17.45" msid="01.449-01">uza</root><sense>dAhe</sense></sutra>
+<sutra msid="01.450"><root wsid="17.46" msid="01.450-01">jizu</root><root wsid="17.47" msid="01.450-02">vizu</root><root wsid="17.48" msid="01.450-03">mizu</root><sense>secane </sense><root wsid="17.49" nomdp="yes" msid="01.450-">Rizu</root></sutra>
+<sutra msid="01.451"><root wsid="17.50" msid="01.451-01">puza</root><sense>puzwO</sense></sutra>
+<sutra msid="01.452"><root wsid="17.51" msid="01.452-01">Srizu</root><root wsid="17.52" msid="01.452-02">Slizu</root><root wsid="17.53" msid="01.452-03">pruzu</root><root wsid="17.54" msid="01.452-04">pluzu</root><sense>dAhe</sense></sutra>
+<sutra msid="01.453"><root wsid="17.55" msid="01.453-01">pfzu</root><root wsid="17.56" msid="01.453-02">vfzu</root><root wsid="17.57" msid="01.453-03">mfzu</root><sense>secane</sense></sutra>
+<sutra msid="01.454"><mdpsutra>(X58. mfzu) sahane ca . itarO hiMsAsaNkleSanayoSca {mdp}</mdpsutra></sutra>
+<sutra msid="01.455"><root wsid="17.58" msid="01.455-01">Gfzu</root><sense>saNGarze</sense></sutra>
+<sutra msid="01.456"><root wsid="17.59" msid="01.456-01">hfzu</root><sense>alIke</sense></sutra>
+<sutra msid="01.457"><root wsid="17.60" msid="01.457-01">tusa</root><root wsid="17.61" msid="01.457-02">hrasa</root><root wsid="17.62" msid="01.457-03">hlasa</root><root wsid="17.63" msid="01.457-04">rasa</root><sense>Sabde</sense></sutra>
+<sutra msid="01.458"><root wsid="17.64" msid="01.458-01">lasa</root><sense>SlezaRakrIqanayoH</sense></sutra>
+<sutra msid="01.459"><root wsid="17.65" msid="01.459-01">Gasx</root><sense>adane</sense></sutra>
+<sutra msid="01.460"><root wsid="17.66" mdp="jarja" msid="01.460-01">jarja</root><root wsid="17.67" msid="01.460-02">carca</root><root wsid="17.68" msid="01.460-03">JarJa</root><sense mdp="pariBAzaRahiMsAtarjanezu">pariBAzaRatarjanayoH</sense></sutra>
+<sutra msid="01.461"><root wsid="17.69" msid="01.461-01">pisf</root><root wsid="17.70" msid="01.461-02">pesf</root><sense>gatO </sense><root wsid="17.71" nomdp="yes" mdp1="vesf" msid="01.461-04p">vesf</root></sutra>
+<sutra msid="01.462"><root wsid="17.72" msid="01.462-01">hase</root><sense>hasane</sense></sutra>
+<sutra msid="01.463"><root wsid="17.73" mdp1="niSa" msid="01.463-01">niSa</root><sense>samADO</sense></sutra>
+<sutra msid="01.464"><root wsid="17.74" msid="01.464-01">miSa</root><root wsid="17.75" msid="01.464-02">maSa</root><sense>Sabde rozakfte ca</sense></sutra>
+<sutra msid="01.465"><root wsid="17.76" msid="01.465-01">Sava</root><sense>gatO</sense></sutra>
+<sutra msid="01.466"><root wsid="17.77" msid="01.466-01">SaSa</root><sense>plutagatO</sense></sutra>
+<sutra msid="01.467"><root wsid="17.78" msid="01.467-01">Sasu</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.468"><root wsid="17.79" mdp="SaMsu" msid="01.468-01">SaMsu</root><sense>stutO</sense></sutra>
+<sutra msid="01.469"><root wsid="17.80" msid="01.469-01">caha</root><sense>parikalkane</sense></sutra>
+<sutra msid="01.470"><root wsid="17.81" msid="01.470-01">maha</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="01.471"><root wsid="17.82" msid="01.471-01">raha</root><sense>tyAge</sense></sutra>
+<sutra msid="01.472"><root wsid="17.83" msid="01.472-01">rahi</root><sense>gatO</sense></sutra>
+<sutra msid="01.473"><root wsid="17.84" msid="01.473-01">dfha</root><root wsid="17.85" msid="01.473-02">dfhi</root><root wsid="17.85a" mdp="bfha" msid="01.473-03">bfha</root><root wsid="17.85b" mdp="bfhi" msid="01.473-04">bfhi</root><sense>vfdDO</sense></sutra>
+<sutra msid="01.474"><mdpsutra>(X88. bfhi) Sabdane {mdp}</mdpsutra></sutra>
+<sutra msid="01.475"><root wsid="17.86" msid="01.475-01">tuhir</root><root wsid="17.87" msid="01.475-02">duhir</root><sense>ardane </sense><root wsid="17.88" msid="01.475-03">uhir</root></sutra>
+<sutra msid="01.476"><root wsid="17.89" msid="01.476-01">arha</root><sense>pUjAyAm</sense></sutra>
+</section>
+<section id="I.A.18" vp="354-355" numroots="23" nfound="23"><text>18. {sd dyutAdayo 'nudattetaH}</text>
+<sutra msid="01.478"><root wsid="18.1" msid="01.478-01">dyuta</root><sense>dIptO</sense></sutra>
+<sutra msid="01.479"><root wsid="18.2" msid="01.479-01">SvitA</root><sense>varRe</sense></sutra>
+<sutra msid="01.480"><root wsid="18.3" mdp1="(Yi) midA" msid="01.480-01">(Yi) midA</root><sense>snehane</sense></sutra>
+<sutra msid="01.481"><root wsid="18.4" mdp1="(Yi) svidA" msid="01.481-01">(Yi) svidA</root><sense mdp="snehasya mocane ca">snehanamocanayoH</sense></sutra>
+<sutra msid="01.482"><root wsid="18.5" msid="01.482-01">ruca</root><sense>dIptAvaBiprItO ca</sense></sutra>
+<sutra msid="01.483"><root wsid="18.6" msid="01.483-01">Guwa</root><sense mdp="parivarttane">parivartane</sense></sutra>
+<sutra msid="01.484"><root wsid="18.7" msid="01.484-01">ruwa</root><root wsid="18.8" msid="01.484-02">luwa</root><root wsid="18.9" msid="01.484-03">luWa</root><sense mdp="pratIGAte">pratiGAte</sense><root wsid="18.10" nomdp="yes" msid="01.484-">ruWa</root></sutra>
+<sutra msid="01.485"><root wsid="18.11" msid="01.485-01">SuBa</root><sense>dIptO</sense></sutra>
+<sutra msid="01.486"><root wsid="18.12" msid="01.486-01">kzuBa</root><sense>saYcalane</sense></sutra>
+<sutra msid="01.487"><root wsid="18.13" mdp1="naBa" msid="01.487-01">naBa</root><root wsid="18.14" msid="01.487-02">tuBa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.488"><root wsid="18.15" mdp="sraMsu" msid="01.488-01">sraMsu</root><root wsid="18.16" mdp="DvaMsu" msid="01.488-02">DvaMsu</root><root wsid="18.17" mdp="BraMsu" msid="01.488-03">BraMsu</root><sense>avasraMsane</sense></sutra>
+<sutra msid="01.489"><mdpsutra>(X16a. DvaMsu) gatO ca {mdp}</mdpsutra></sutra>
+<sutra msid="01.490"><root wsid="18.18" mdp="sramBu" msid="01.490-01">sramBu</root><sense>viSvAse</sense></sutra>
+<sutra msid="01.491"><root wsid="18.19" msid="01.491-01">vftu</root><sense>vartane</sense></sutra>
+<sutra msid="01.492"><root wsid="18.20" msid="01.492-01">vfDu</root><sense>vfdDO</sense></sutra>
+<sutra msid="01.493"><root wsid="18.21" msid="01.493-01">SfDu</root><sense>SabdakutsAyAm</sense></sutra>
+<sutra msid="01.494"><root wsid="18.22" msid="01.494-01">syandU</root><sense>prasravaRe</sense></sutra>
+<sutra msid="01.495"><root wsid="18.23" msid="01.495-01">kfpU</root><sense>sAmarTye</sense></sutra>
+</section>
+<section id="I.A.19" vp="355-357" numroots="83" nfound="65"><text>19. {sd GawAdayaH}</text>
+<sutra msid="01.498"><root wsid="19.1" msid="01.498-01">Gawa</root><sense>cezwAyAm</sense></sutra>
+<sutra msid="01.499"><root wsid="19.2" msid="01.499-01">vyaTa</root><sense>BayasaYcalanayoH</sense></sutra>
+<sutra msid="01.500"><root wsid="19.3" msid="01.500-01">praTa</root><sense>praKyAne</sense></sutra>
+<sutra msid="01.501"><root wsid="19.4" msid="01.501-01">prasa</root><sense>vistAre</sense></sutra>
+<sutra msid="01.502"><root wsid="19.5" msid="01.502-01">mrada</root><sense>mardane</sense></sutra>
+<sutra msid="01.503"><root wsid="19.6" msid="01.503-01">sKada</root><sense>sKadane</sense></sutra>
+<sutra msid="01.504"><root wsid="19.7" msid="01.504-01">kzaji</root><sense>gatidAnayoH</sense></sutra>
+<sutra msid="01.505"><root wsid="19.8" msid="01.505-01">dakza</root><sense mdp="gatiSAsanayoH">gatihiMsayoH</sense></sutra>
+<sutra msid="01.506"><root wsid="19.9" msid="01.506-01">krapa</root><sense>kfpAyAM gatO</sense></sutra>
+<sutra msid="01.507"><root wsid="19.10" msid="01.507-01">kadi</root><root wsid="19.11" msid="01.507-02,03p">kradi</root><root wsid="19.12" msid="01.507-03">kladi</root><sense>vEklavye</sense></sutra>
+<sutra msid="01.508"><root wsid="19.13" mdp1="(Yi) tvarA" msid="01.508-01">(Yi) tvarA</root><sense>saMBrame</sense></sutra>
+<sutra msid="01.511"><root wsid="19.14" msid="01.511-01">jvara</root><sense>roge</sense></sutra>
+<sutra msid="01.512"><root wsid="19.15" msid="01.512-01">gaqa</root><sense>secane</sense></sutra>
+<sutra msid="01.513"><root wsid="19.16" msid="01.513-01">heqa</root><sense>vezwane</sense></sutra>
+<sutra msid="01.514"><root wsid="19.17" msid="01.514-01">vawa</root><root wsid="19.18" msid="01.514-02">Bawa</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="01.515"><root wsid="19.19" msid="01.515-01">nawa</root><sense>nfttO</sense></sutra>
+<sutra msid="01.516"><root wsid="19.20" mdp="zwaka" mdp1="staka" msid="01.516-01">staka</root><sense>pratiGAte</sense></sutra>
+<sutra msid="01.517"><root wsid="19.21" msid="01.517-01,01p">caka</root><sense>tfptO</sense></sutra>
+<sutra msid="01.518"><root wsid="19.22" msid="01.518-01">kaKe</root><sense>hasane</sense></sutra>
+<sutra msid="01.519"><root wsid="19.23" msid="01.519-01">rage</root><sense>SaNkAyAm</sense></sutra>
+<sutra msid="01.520"><root wsid="19.24" msid="01.520-01">lage</root><sense>saNge</sense></sutra>
+<sutra msid="01.521"><root wsid="19.25" msid="01.521-01">hrage</root><root wsid="19.26" msid="01.521-02">hlage</root><root wsid="19.27" mdp1="sage" msid="01.521-03">sage</root><root wsid="19.28" mdp="zwage" mdp1="stage" msid="01.521-04">stage</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="01.522"><root wsid="19.29" msid="01.522-01">kage</root><sense>nocyate</sense></sutra>
+<sutra msid="01.523"><root wsid="19.30" msid="01.523-01">aka</root><root wsid="19.31" msid="01.523-02">aga</root><sense>kuwilAyAM gatO</sense></sutra>
+<sutra msid="01.524"><root wsid="19.32" msid="01.524-01">kaRa</root><root wsid="19.33" msid="01.524-02">raRa</root><sense>gatO</sense></sutra>
+<sutra msid="01.525"><root wsid="19.34" msid="01.525-01">caRa</root><root wsid="19.35" msid="01.525-02">SaRa</root><root wsid="19.36" msid="01.525-03">SraRa</root><sense mdp="dAne ca">dAne</sense></sutra>
+<sutra msid="01.526"><root wsid="19.37" mdp="SraTa" msid="01.526-01">SraTa</root><root wsid="19.38" nomdp="yes" mdp1="kraTa" msid="01.526-02">kraTa</root><root wsid="19.39" msid="01.526-02">kraTa</root><root wsid="19.40" msid="01.526-03">klaTa</root><sense>hiMsArTAH</sense></sutra>
+<sutra msid="01.527"><root wsid="19.41" msid="01.527-01">cana</root><sense>ca</sense></sutra>
+<sutra msid="01.528"><root wsid="19.42" msid="01.528-01">vanu</root><sense>ca nocyate</sense></sutra>
+<sutra msid="01.529"><root wsid="19.43" msid="01.529-01">jvala</root><sense>dIptO</sense></sutra>
+<sutra msid="01.530"><root wsid="19.44" msid="01.530-01">hvala</root><root wsid="19.45" msid="01.530-02">hmala</root><sense>calane</sense></sutra>
+<sutra msid="01.531"><root wsid="19.46" msid="01.531-01">smf</root><sense>ADyAne</sense></sutra>
+<sutra msid="01.532"><root wsid="19.47" msid="01.532-01">dF</root><sense>Baye</sense></sutra>
+<sutra msid="01.533"><root wsid="19.48" msid="01.533-01">nF</root><sense>naye</sense></sutra>
+<sutra msid="01.534"><root wsid="19.49" msid="01.534-01">SrA</root><sense>pAke</sense></sutra>
+<sutra msid="01.535"><sense>mAraRatozaRaniSAmanezu </sense><root wsid="19.50" msid="01.535-01">jYA</root></sutra>
+<sutra msid="01.536"><sense>kampane </sense><root wsid="19.51" mdp1="cali" msid="01.536-01">cali</root></sutra>
+<sutra msid="01.xxxx"><root wsid="19.52">CadirUrjane</root></sutra>
+<sutra msid="01.538"><sense>jihvonmaTane </sense><root wsid="19.53" mdp1="laqi" msid="01.538-01">laqi</root></sutra>
+<sutra msid="01.539"><root wsid="19.54" msid="01.539-01">madI</root><sense>harzaglepanayoH</sense></sutra>
+<sutra msid="01.540"><root wsid="19.55" msid="01.540-01">Dvana</root><sense>Sabde </sense><root wsid="19.56" nomdp="yes" msid="01.540-">raRa</root><root wsid="19.57" nomdp="yes" msid="01.540-02p">dali</root><root wsid="19.58" nomdp="yes" msid="01.540-05p">vali</root><root wsid="19.59" nomdp="yes" msid="01.540-06p">sKali</root><root wsid="19.60" nomdp="yes" msid="01.540-01p">trapi</root><root wsid="19.61" nomdp="yes" msid="01.540-">kzapayaSca</root></sutra>
+<sutra msid="01.541"><root wsid="19.62" msid="01.541-01">svana</root><sense>avataMsane</sense></sutra>
+<sutra msid="01.550"><root wsid="19.73" msid="01.550-01">PaRa</root><sense>gatO</sense></sutra>
+<sutra msid="01.553"><root wsid="19.74" msid="01.553-01">rAjf</root><sense>dIptO</sense></sutra>
+<sutra msid="01.555"><root wsid="19.75" mdp1="(wu) BrAjf" msid="01.555-01">(wu) BrAjf</root><root wsid="19.76" mdp1="(wu) BrASf" msid="01.555-02">(wu) BrASf</root><root wsid="19.77" mdp1="(wu) BlASf" msid="01.555-03">(wu) BlASf</root><sense>dIptO</sense></sutra>
+<sutra msid="01.557"><root wsid="19.78" msid="01.557-01">syamu</root><root wsid="19.79" msid="01.557-02">svana</root><root wsid="19.80" msid="01.557-03">Dvana</root><sense>Sabde </sense><root wsid="19.81" nomdp="yes" msid="01.557-">ztana</root></sutra>
+<sutra msid="01.558"><root wsid="19.82" mdp1="sama" msid="01.558-01">sama</root><root wsid="19.83" mdp="zwama" mdp1="stama" msid="01.558-02">stama</root><sense mdp="vEklavye">avEkalye</sense></sutra>
+</section>
+<section id="I.A.20" vp="357" numroots="30" nfound="31"><text>20. {sd jvalAdayaH}</text>
+<sutra msid="01.559"><root wsid="20.1" msid="01.559-01">jvala</root><sense>dIptO</sense></sutra>
+<sutra msid="01.560"><root wsid="20.2" msid="01.560-01">cala</root><sense mdp="kalpane">kampane</sense></sutra>
+<sutra msid="01.561"><root wsid="20.3" msid="01.561-01">jala</root><sense>GAtane</sense></sutra>
+<sutra msid="01.562"><root wsid="20.4" msid="01.562-01">wala</root><root wsid="20.5" msid="01.562-02">wvala</root><sense>vEklavye</sense></sutra>
+<sutra msid="01.563"><root wsid="20.6" mdp="zWala" mdp1="sTala" msid="01.563-01">sTala</root><sense>sTAne</sense></sutra>
+<sutra msid="01.564"><root wsid="20.7" msid="01.564-01">hala</root><sense>vileKane</sense></sutra>
+<sutra msid="01.565"><root wsid="20.8" mdp1="nala" msid="01.565-01">nala</root><sense mdp="ganDane">ganDe</sense></sutra>
+<sutra msid="01.566"><root wsid="20.9" msid="01.566-01">pala</root><sense>gatO</sense></sutra>
+<sutra msid="01.567"><root wsid="20.10" msid="01.567-01">bala</root><sense>prARane DAnyAvaroDe ca</sense></sutra>
+<sutra msid="01.568"><root wsid="20.11" msid="01.568-01">pula</root><sense>mahattve</sense></sutra>
+<sutra msid="01.569"><root wsid="20.12" msid="01.569-01">kula</root><sense>saMstyAne banDuzu ca</sense></sutra>
+<sutra msid="01.570"><root wsid="20.13" msid="01.570-01">Sala</root><root wsid="20.14" msid="01.570-02">hula</root><root wsid="20.15" msid="01.570-03">patx</root><sense>gatO</sense></sutra>
+<sutra msid="01.571"><mdpsutra>(X16. hula) hiMsAsaMvaraRayoSca {mdp}</mdpsutra></sutra>
+<sutra msid="01.572"><root wsid="20.16" msid="01.572-01">kvaTe</root><sense>nizpAke</sense></sutra>
+<sutra msid="01.573"><root wsid="20.17" msid="01.573-01">paTe</root><sense>gatO</sense></sutra>
+<sutra msid="01.574"><root wsid="20.18" msid="01.574-01">maTe</root><sense>viloqane</sense></sutra>
+<sutra msid="01.575"><root wsid="20.19" mdp1="(wu) vama" msid="01.575-01">(wu) vama</root><sense>udgiraRe</sense></sutra>
+<sutra msid="01.576"><root wsid="20.20" msid="01.576-01">Bramu</root><sense>calane</sense></sutra>
+<sutra msid="01.577"><root wsid="20.21" msid="01.577-01">kzara</root><sense>saMcalane</sense></sutra>
+<sutra msid="01.579"><root wsid="20.22" mdp1="saha" msid="01.579-01">saha</root><sense>marzaRe</sense></sutra>
+<sutra msid="01.581"><root wsid="20.23" mdp="rama" msid="01.581-01">rama</root><sense>krIqAyAm</sense></sutra>
+<sutra msid="01.583"><root wsid="20.24" mdp1="sadx" msid="01.583-01">sadx</root><sense>viSaraRagatyavasAdanezu</sense></sutra>
+<sutra msid="01.584"><root wsid="20.25" msid="01.584-01">Sadx</root><sense>SAtane</sense></sutra>
+<sutra msid="01.585"><root wsid="20.26" msid="01.585-01">kruSa</root><sense>AhvAne rodane ca</sense></sutra>
+<sutra msid="01.587"><root wsid="20.27" msid="01.587-01">kuca</root><sense>samparcanakOwilyapratizwamBavileKanezu</sense></sutra>
+<sutra msid="01.588"><root wsid="20.28" msid="01.588-01">buDa</root><sense>avagamane</sense></sutra>
+<sutra msid="01.589"><root wsid="20.29" msid="01.589-01">ruha</root><sense>bIjajanmani prAdurBAve ca</sense></sutra>
+<sutra msid="01.590"><root wsid="20.30" msid="01.590-01">kasa</root><sense>gatO</sense></sutra>
+</section>
+<section id="I.A.21" vp="357-358" numroots="31" nfound="35"><text>21. {sd svaritetaH}</text>
+<sutra msid="01.594"><root wsid="21.1" msid="01.594-01">hikka</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.595"><root wsid="21.2" mdp="aYcu" msid="01.595-01">aYcu</root><sense>gatO yAcane ca</sense></sutra>
+<sutra msid="01.596"><root wsid="21.3" mdp1="(wu) yAcf" msid="01.596-01">(wu) yAcf</root><sense>yAcYAyAm</sense></sutra>
+<sutra msid="01.597"><root wsid="21.4" msid="01.597-01">rewf</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="01.598"><root wsid="21.5" msid="01.598-01">cate</root><root wsid="21.5a" msid="01.598-02">cade</root><sense mdp="yAcane ca">yAcane</sense></sutra>
+<sutra msid="01.599"><root wsid="21.6" msid="01.599-01">proTf</root><sense>paryAptO</sense></sutra>
+<sutra msid="01.600"><root wsid="21.7" msid="01.600-01">midf</root><root wsid="21.7a" msid="01.600-02">medf</root><sense mdp="meDAhiMsanayoH">meDAhiMsayoH</sense></sutra>
+<sutra msid="01.601"><root wsid="21.7b" msid="01.601-01">meDf</root><sense>saNgame ca</sense></sutra>
+<sutra msid="01.602"><root wsid="21.8" mdp1="nidf" msid="01.602-01">nidf</root><root wsid="21.8a" mdp1="nedf" msid="01.602-02">nedf</root><sense mdp="kutsAsannikarzayoH">kutsasaMnikarzayoH</sense></sutra>
+<sutra msid="01.603"><root wsid="21.9" msid="01.603-01">SfDu</root><root wsid="21.10" msid="01.603-02">mfDu</root><sense>undane</sense></sutra>
+<sutra msid="01.604"><root wsid="21.11" msid="01.604-01">buDir</root><sense>boDane</sense></sutra>
+<sutra msid="01.605"><root wsid="21.12" mdp1="(u) bundir" msid="01.605-01">(u) bundir</root><sense>niSAmane</sense></sutra>
+<sutra msid="01.606"><root wsid="21.13" msid="01.606-01">veRf</root><sense>gatijYAnacintAniSAmanavAditragrahaRezu</sense></sutra>
+<sutra msid="01.607"><root wsid="21.14" msid="01.607-01">Kanu</root><sense>avadAraRe</sense></sutra>
+<sutra msid="01.608"><root wsid="21.15" msid="01.608-01">cIvf</root><sense>AdAnasaMvaraRayoH</sense></sutra>
+<sutra msid="01.609"><root wsid="21.16" msid="01.609-01">cAyf</root><sense mdp="pUjAniSAmanayoH">pUjaniSAmanayoH</sense></sutra>
+<sutra msid="01.610"><root wsid="21.17" msid="01.610-01">vyaya</root><sense>gatO</sense></sutra>
+<sutra msid="01.611"><root wsid="21.18" msid="01.611-01">dASf</root><sense>dAne</sense></sutra>
+<sutra msid="01.612"><root wsid="21.19" msid="01.612-01,01p">Bezf</root><sense>Baye</sense></sutra>
+<sutra msid="01.613"><root wsid="21.20" msid="01.613-01">Brezf</root><sense>gatO</sense></sutra>
+<sutra msid="01.614"><root wsid="21.21" mdp="asa" msid="01.614-01">asa</root><sense mdp="gatidIptyAdAnezu">gatO</sense></sutra>
+<sutra msid="01.615"><root wsid="21.22" msid="01.615-01">spaSa</root><sense>bADanasparSanayoH</sense></sutra>
+<sutra msid="01.616"><root wsid="21.23" msid="01.616-01">laza</root><sense>kAntO</sense></sutra>
+<sutra msid="01.617"><root wsid="21.24" msid="01.617-01">caza</root><sense>BakzaRe</sense></sutra>
+<sutra msid="01.618"><root wsid="21.25" msid="01.618-01">Caza</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="01.619"><root wsid="21.26" msid="01.619-01">Jaza</root><sense>AdAnasaMvaraRayoH</sense></sutra>
+<sutra msid="01.620"><root wsid="21.27" mdp="Blakza" msid="01.620-01">Blakza</root><sense>adane</sense></sutra>
+<sutra msid="01.621"><root wsid="21.28" msid="01.621-01">dAsf</root><sense>dAne</sense></sutra>
+<sutra msid="01.622"><root wsid="21.29" msid="01.622-01">mAhf</root><sense>mAne</sense></sutra>
+<sutra msid="01.623"><root wsid="21.30" msid="01.623-01">guhU</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="01.625"><root wsid="21.31" msid="01.625-01">SriY</root><sense>sevAyAm</sense></sutra>
+</section>
+<section id="I.A.22" vp="358-359" numroots="73" nfound="70"><text>22. {sd ajYantAH}</text>
+<sutra msid="01.627"><root wsid="22.1" msid="01.627-01">BfY</root><sense>BaraRe</sense></sutra>
+<sutra msid="01.628"><root wsid="22.2" msid="01.628-01">hfY</root><sense>haraRe</sense></sutra>
+<sutra msid="01.629"><root wsid="22.3" msid="01.629-01">DfY</root><sense>DAraRe</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="22.4">kfY</root><sense>karaRe</sense></sutra>
+<sutra msid="01.630"><root wsid="22.5" mdp1="nIY" msid="01.630-01">nIY</root><sense>prApaRe</sense></sutra>
+<sutra msid="01.632"><root wsid="22.6" msid="01.632-01">Dew</root><sense>pAne</sense></sutra>
+<sutra msid="01.633"><root wsid="22.7" msid="01.633-01">glE</root><sense>harzakzaye</sense></sutra>
+<sutra msid="01.633"><root wsid="22.8" msid="01.633-02">mlE</root><sense mdp="harzakzaye">gAtravinAme</sense></sutra>
+<sutra msid="01.634"><root wsid="22.9" msid="01.634-01">dyE</root><sense>nyakkaraRe</sense></sutra>
+<sutra msid="01.635"><root wsid="22.10" msid="01.635-01">drE</root><sense>svapne</sense></sutra>
+<sutra msid="01.636"><root wsid="22.11" msid="01.636-01">DrE</root><sense>tfptO</sense></sutra>
+<sutra msid="01.637"><root wsid="22.12" msid="01.637-01">DyE</root><sense>cintAyAm</sense></sutra>
+<sutra msid="01.638"><root wsid="22.13" msid="01.638-01">rE</root><sense>Sabde</sense></sutra>
+<sutra msid="01.639"><root wsid="22.14" msid="01.639-01,02">styE</root><root wsid="22.14a" mdp="zwyE" mdp1="styE" msid="01.639-01,02">styE</root><sense>SabdasaNGAtayoH</sense></sutra>
+<sutra msid="01.640"><root wsid="22.15" msid="01.640-01">KE</root><sense>Kadane</sense></sutra>
+<sutra msid="01.641"><root wsid="22.16" msid="01.641-01">kzE</root><root wsid="22.17" msid="01.641-02">jE</root><root wsid="22.18" mdp1="sE" msid="01.641-03">sE</root><sense>kzaye</sense></sutra>
+<sutra msid="01.642"><root wsid="22.19" msid="01.642-01">kE</root><root wsid="22.20" msid="01.642-02">gE</root><sense>Sabde</sense></sutra>
+<sutra msid="01.643"><root wsid="22.21" mdp="SE" msid="01.643-01">SE</root><root wsid="22.22" mdp="SrE" msid="01.643-02">SrE</root><sense>pAke</sense></sutra>
+<sutra msid="01.644"><root wsid="22.23" msid="01.644-01">pE</root><root wsid="22.24" mdp1="(o) vE" msid="01.644-02">(o) vE</root><sense>SozaRe</sense></sutra>
+<sutra msid="01.645"><root wsid="22.25" mdp="zwE" mdp1="stE" msid="01.645-01">stE</root><sense>vezwane</sense></sutra>
+<sutra msid="01.646"><root wsid="22.26" msid="01.646-01">dEp</root><sense>SoDane</sense></sutra>
+<sutra msid="01.647"><root wsid="22.27" msid="01.647-01">pA</root><sense>pAne</sense></sutra>
+<sutra msid="01.648"><root wsid="22.28" msid="01.648-01">GrA</root><sense>ganDopAdAne</sense></sutra>
+<sutra msid="01.649"><root wsid="22.29" msid="01.649-01">DmA</root><sense>SabdAgnisaMyogayoH</sense></sutra>
+<sutra msid="01.650"><root wsid="22.30" mdp="zWA" mdp1="sTA" msid="01.650-01">sTA</root><sense>gatinivfttO</sense></sutra>
+<sutra msid="01.651"><root wsid="22.31" msid="01.651-01">mnA</root><sense>aByAse</sense></sutra>
+<sutra msid="01.652"><root wsid="22.32" msid="01.652-01">dAR</root><sense>dAne</sense></sutra>
+<sutra msid="01.653"><root wsid="22.33" msid="01.653-01">hvf</root><sense>kOwilye</sense></sutra>
+<sutra msid="01.654"><root wsid="22.34" msid="01.654-01">svf</root><sense>SabdopatApayoH</sense></sutra>
+<sutra msid="01.655"><root wsid="22.35" msid="01.655-01">smf</root><sense>cintAyAm</sense></sutra>
+<sutra msid="01.xxxx"><root wsid="22.36">hf</root><sense>varaRe</sense></sutra>
+<sutra msid="01.656"><root wsid="22.37" msid="01.656-01">sf</root><sense>gatO</sense></sutra>
+<sutra msid="01.657"><root wsid="22.38" msid="01.657-01">f</root><sense>gatiprApaRayoH</sense></sutra>
+<sutra msid="01.658"><root wsid="22.39" msid="01.658-01">gf</root><root wsid="22.40" msid="01.658-02">Gf</root><sense>secane</sense></sutra>
+<sutra msid="01.659"><root wsid="22.41" msid="01.659-01">Dvf</root><sense>hUrcCane</sense></sutra>
+<sutra msid="01.660"><root wsid="22.42" msid="01.660-01">sru</root><sense>gatO</sense></sutra>
+<sutra msid="01.661"><root wsid="22.43" mdp1="su" msid="01.661-01">su</root><sense>prasavESvaryayoH</sense></sutra>
+<sutra msid="01.662"><root wsid="22.44" msid="01.662-01">Sru</root><sense>SravaRe</sense></sutra>
+<sutra msid="01.663"><root wsid="22.45" msid="01.663-01">Dru</root><sense>sTErye</sense></sutra>
+<sutra msid="01.664"><root wsid="22.46" msid="01.664-01">du</root><root wsid="22.47" msid="01.664-02">dru</root><sense>gatO</sense></sutra>
+<sutra msid="01.665"><root wsid="22.48" msid="01.665-01">ji</root><root wsid="22.49" msid="01.665-02">jri</root><sense>aBiBave</sense></sutra>
+<sutra msid="01.669"><root wsid="22.51" mdp1="smiN" msid="01.669-01">smiN</root><sense mdp="IzadDasane">IzadDarze</sense></sutra>
+<sutra msid="01.670"><root wsid="22.52" msid="01.670-01">guN</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.671"><root wsid="22.53" msid="01.671-01">gAN</root><sense>gatO</sense></sutra>
+<sutra msid="01.672"><root wsid="22.54" msid="01.672-01">kuN</root><root wsid="22.55" msid="01.672-02">GuN</root><root wsid="22.56" msid="01.672-03">uN</root><root wsid="22.57" msid="01.672-04">NuN</root><sense>Sabde </sense><root wsid="22.58" nomdp="yes" msid="01.672-">KuN</root></sutra>
+<sutra msid="01.673"><root wsid="22.59" msid="01.673-01">cyuN</root><root wsid="22.60" mdp="jyuN" msid="01.673-02">jyuN</root><root wsid="22.61" msid="01.673-03">pruN</root><root wsid="22.62" msid="01.673-04">pluN</root><sense>gatO</sense></sutra>
+<sutra msid="01.674"><root wsid="22.63" msid="01.674-01">ruN</root><sense>gatirezaRayoH</sense></sutra>
+<sutra msid="01.675"><root wsid="22.64" msid="01.675-01">DfN</root><sense>avaDvaMsane</sense></sutra>
+<sutra msid="01.676"><root wsid="22.65" msid="01.676-01">meN</root><sense>praRidAne</sense></sutra>
+<sutra msid="01.677"><root wsid="22.66" msid="01.677-01">deN</root><sense>rakzaRe</sense></sutra>
+<sutra msid="01.678"><root wsid="22.67" msid="01.678-01">SyEN</root><sense>gatO</sense></sutra>
+<sutra msid="01.679"><root wsid="22.68" msid="01.679-01">pyEN</root><sense>vfdDO</sense></sutra>
+<sutra msid="01.680"><root wsid="22.69" msid="01.680-01">trEN</root><sense>pAlane</sense></sutra>
+<sutra msid="01.682"><root wsid="22.70" msid="01.682-01">pUN</root><sense>pavane</sense></sutra>
+<sutra msid="01.683"><root wsid="22.71" msid="01.683-01">mUN</root><sense>banDane</sense></sutra>
+<sutra msid="01.684"><root wsid="22.72" msid="01.684-01">qIN</root><sense>vihAyasA gatO</sense></sutra>
+<sutra msid="01.686"><root wsid="22.73" msid="01.686-01">tF</root><sense>plavanataraRayoH</sense></sutra>
+</section>
+<section id="I.A.23" vp="359-360" numroots="41" nfound="42"><text>23. {sd halantAH}</text>
+<sutra msid="01.688"><root wsid="23.1" msid="01.688-01,01p">gupa</root><sense>gopane</sense></sutra>
+<sutra msid="01.689"><root wsid="23.2" msid="01.689-01">tija</root><sense>niSAne</sense></sutra>
+<sutra msid="01.690"><root wsid="23.3" msid="01.690-01">mAna</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="01.691"><root wsid="23.4" msid="01.691-01">baDa</root><sense>banDane</sense></sutra>
+<sutra msid="01.693"><root wsid="23.5" msid="01.693-01">raBa</root><sense>rABasye</sense></sutra>
+<sutra msid="01.694"><root wsid="23.6" mdp1="(qu) laBaz" msid="01.694-01">(qu) laBaz</root><sense>prAptO</sense></sutra>
+<sutra msid="01.695"><root wsid="23.7" mdp="zvaYja" mdp1="svaYja" msid="01.695-01">svaYja</root><sense>parizvaNge</sense></sutra>
+<sutra msid="01.696"><root wsid="23.8" msid="01.696-01">hada</root><sense>purIzotsarge</sense></sutra>
+<sutra msid="01.698"><root wsid="23.9" mdp="YikzvidA" mdp1="(Yi) kzvidA" msid="01.698-01">(Yi) kzvidA</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="01.699b"><root wsid="23.10" msid="01.699b-01">skandir</root><sense>gatiSozaRayoH</sense></sutra>
+<sutra msid="01.700"><root wsid="23.11" msid="01.700-01">yaBa</root><sense mdp="viparItamETune">mETune</sense></sutra>
+<sutra msid="01.701"><root wsid="23.12" mdp1="nama" msid="01.701-01">nama</root><sense mdp="prahvatve Sabde">prahvatve Sabde ca</sense></sutra>
+<sutra msid="01.702"><root wsid="23.13" msid="01.702-01">gamx</root><root wsid="23.14" msid="01.702-02">sfpx</root><sense>gatO</sense></sutra>
+<sutra msid="01.703"><root wsid="23.15" msid="01.703-01">yama</root><sense>uparame</sense></sutra>
+<sutra msid="01.704"><root wsid="23.16" msid="01.704-01">tapa</root><sense>santApe</sense></sutra>
+<sutra msid="01.705"><root wsid="23.17" msid="01.705-01">tyaja</root><sense>hAnO</sense></sutra>
+<sutra msid="01.706"><root wsid="23.18" mdp="zaYja" mdp1="saYja" msid="01.706-01">saYja</root><sense>saNge</sense></sutra>
+<sutra msid="01.707"><root wsid="23.19" msid="01.707-01">dfSir</root><sense>prekzaRe</sense></sutra>
+<sutra msid="01.708"><root wsid="23.20" mdp="daMSa" msid="01.708-01">daMSa</root><sense mdp="daMSane">daSane</sense></sutra>
+<sutra msid="01.709"><root wsid="23.21" msid="01.709-01">kfza</root><sense>vileKane</sense></sutra>
+<sutra msid="01.710"><root wsid="23.22" msid="01.710-01">daha</root><sense>BasmIkaraRe</sense></sutra>
+<sutra msid="01.711"><root wsid="23.23" msid="01.711-01">miha</root><sense>secane</sense></sutra>
+<sutra msid="01.713"><root wsid="23.24" msid="01.713-01">kita</root><sense>nivAse rogApanayane ca</sense></sutra>
+<sutra msid="01.715"><root wsid="23.25" msid="01.715-01">dAna</root><sense mdp="avaKaRqane">KaRqane</sense></sutra>
+<sutra msid="01.716"><root wsid="23.26" mdp="SAna" msid="01.716-01">SAna</root><sense>tejane</sense></sutra>
+<sutra msid="01.718"><root wsid="23.27" mdp1="(qu) pacaz" msid="01.718-01">(qu) pacaz</root><sense>pAke</sense></sutra>
+<sutra msid="01.719"><root wsid="23.28" mdp1="saca" msid="01.719-01">saca</root><sense>samavAye</sense></sutra>
+<sutra msid="01.720"><root wsid="23.29" msid="01.720-01">Baja</root><sense>sevAyAm</sense></sutra>
+<sutra msid="01.721"><root wsid="23.30" mdp="raYja" msid="01.721-01">raYja</root><sense>rAge</sense></sutra>
+<sutra msid="01.722"><root wsid="23.31" msid="01.722-01">Sapa</root><sense>AkroSe</sense></sutra>
+<sutra msid="01.723"><root wsid="23.32" msid="01.723-01">tviza</root><sense>dIptO</sense></sutra>
+<sutra msid="01.724"><root wsid="23.33" msid="01.724-01">yaja</root><sense>devapUjAsaNgatikaraRadAnezu</sense></sutra>
+<sutra msid="01.725"><root wsid="23.34" mdp="quvap" mdp1="(qu) vap" msid="01.725-01">(qu) vap</root><sense>bIjasantAne</sense></sutra>
+<sutra msid="01.726"><root wsid="23.35" msid="01.726-01">vaha</root><sense>prApaRe</sense></sutra>
+<sutra msid="01.729"><root wsid="23.36" msid="01.729-01">vasa</root><sense>nivAse</sense></sutra>
+<sutra msid="01.731"><root wsid="23.37" msid="01.731-01">veY</root><sense>tantusantAne</sense></sutra>
+<sutra msid="01.732"><root wsid="23.38" msid="01.732-01">vyeY</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="01.733"><root wsid="23.39" msid="01.733-01">hveY</root><sense>sparDAyAM Sabde ca</sense></sutra>
+<sutra msid="01.735"><root wsid="23.40" msid="01.735-01">vada</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="01.736"><root wsid="23.41" mdp1="(wu o) Svi" msid="01.736-01">(wu o) Svi</root><sense>gativfdDyoH</sense></sutra>
+</section>
+<section id="II.24" vp="360-362" numroots="73" nfound="73"><text>24. *)</text>
+<subsection>
+<sutra msid="02.001"><root wsid="24.1" msid="02.001-01">ada</root><sense>BakzaRe</sense></sutra>
+<sutra msid="02.002"><root wsid="24.2" msid="02.002-01">hana</root><sense>hiMsAgatyoH</sense></sutra>
+<sutra msid="02.004"><root wsid="24.3" msid="02.004-01">dviza</root><sense>aprItO</sense></sutra>
+<sutra msid="02.005"><root wsid="24.4" msid="02.005-01">duha</root><sense>prapUraRe</sense></sutra>
+<sutra msid="02.006"><root wsid="24.5" msid="02.006-01">diha</root><sense>upacaye</sense></sutra>
+<sutra msid="02.007"><root wsid="24.6" msid="02.007-01">liha</root><sense>AsvAdane</sense></sutra>
+<sutra msid="02.009"><root wsid="24.7" msid="02.009-01">cakziN</root><sense>vyaktAyAM vAci</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="02.011"><root wsid="24.8" msid="02.011-01">Ira</root><sense>gatO kampane ca</sense></sutra>
+<sutra msid="02.012"><root wsid="24.9" msid="02.012-01">Iqa</root><sense>stutO</sense></sutra>
+<sutra msid="02.013"><root wsid="24.10" msid="02.013-01">ISa</root><sense>ESvarye</sense></sutra>
+<sutra msid="02.014"><root wsid="24.11" msid="02.014-01">Asa</root><sense>upaveSane</sense></sutra>
+<sutra msid="02.015"><root wsid="24.12" mdp="ANaSSAsu" mdp1="(ANaH) SAsu" msid="02.015-01">(ANaH) SAsu</root><sense>icCAyAm</sense></sutra>
+<sutra msid="02.016"><root wsid="24.13" msid="02.016-01">vasa</root><sense>AcCAdane</sense></sutra>
+<sutra msid="02.017"><root wsid="24.14" msid="02.017-01">kasi</root><sense>gatiSAsanayoH</sense></sutra>
+<sutra msid="02.018"><root wsid="24.15" mdp1="nisi" msid="02.018-01">nisi</root><sense>cumbane</sense></sutra>
+<sutra msid="02.019"><root wsid="24.16" mdp1="niji" msid="02.019-01">niji</root><sense>SudDO</sense></sutra>
+<sutra msid="02.020"><root wsid="24.17" msid="02.020-01">Siji</root><sense>avyakte Sabde</sense></sutra>
+<sutra msid="02.021"><root wsid="24.18" msid="02.021-01">piji</root><sense>varRe</sense></sutra>
+<sutra msid="02.022"><root wsid="24.19" msid="02.022-01">vfjI</root><sense>varjane</sense></sutra>
+<sutra msid="02.023"><root wsid="24.20" msid="02.023-01">pfcI</root><sense>samparcane</sense></sutra>
+<sutra msid="02.025"><root wsid="24.21" mdp1="sUN" msid="02.025-01">sUN</root><sense>prARigarBavimocane</sense></sutra>
+<sutra msid="02.026"><root wsid="24.22" msid="02.026-01">SIN</root><sense>svapne</sense></sutra>
+<sutra msid="02.028"><root wsid="24.23" msid="02.028-01">yu</root><sense>miSraRe</sense></sutra>
+<sutra msid="02.029"><root wsid="24.24" msid="02.029-01">ru</root><sense>Sabde</sense></sutra>
+<sutra msid="02.030"><root wsid="24.26" mdp1="nu" msid="02.030-01">nu</root><sense>stutO</sense></sutra>
+<sutra msid="02.031"><root wsid="24.27" mdp1="(wu) kzu" msid="02.031-01">(wu) kzu</root><sense>Sabde</sense></sutra>
+<sutra msid="02.032"><root wsid="24.28" msid="02.032-01">kzRu</root><sense>tejane</sense></sutra>
+<sutra msid="02.033"><root wsid="24.29" mdp1="snu" msid="02.033-01">snu</root><sense>prasravaRe</sense></sutra>
+<sutra msid="02.036"><root wsid="24.30" msid="02.036-01">UrRuY</root><sense>AcCAdane</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="02.038"><root wsid="24.31" msid="02.038-01">dyu</root><sense>aBigamane</sense></sutra>
+<sutra msid="02.040"><root wsid="24.32" mdp1="su" msid="02.040-01">su</root><sense>prasavESvaryayoH</sense></sutra>
+<sutra msid="02.042"><root wsid="24.33" msid="02.042-01">ku</root><sense>Sabde</sense></sutra>
+<sutra msid="02.044"><root wsid="24.34" mdp="zwuY" mdp1="stuY" msid="02.044-01">stuY</root><sense>stutO</sense></sutra>
+<sutra msid="02.046"><root wsid="24.35" msid="02.046-01">brUY</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="02.048"><root wsid="24.36" msid="02.048-01">iR</root><sense>gatO</sense></sutra>
+<sutra msid="02.049"><root wsid="24.37" msid="02.049-01">iN</root><sense>aDyayane</sense></sutra>
+<sutra msid="02.050"><root wsid="24.38" msid="02.050-01">ik</root><sense>smaraRe</sense></sutra>
+<sutra msid="02.051"><root wsid="24.39" msid="02.051-01">vI</root><sense mdp="gatiprajanakAntyasanaKAdanezu">gativyAptiprajananakAntyasanaKAdnezu</sense><root wsid="24.40" nomdp="yes" msid="02.051-01p">I</root></sutra>
+<sutra msid="02.052"><root wsid="24.41" msid="02.052-01">yA</root><sense>prApaRe</sense></sutra>
+<sutra msid="02.053"><root wsid="24.42" msid="02.053-01">vA</root><sense>gatiganDanayoH</sense></sutra>
+<sutra msid="02.054"><root wsid="24.43" msid="02.054-01">BA</root><sense>dIptO</sense></sutra>
+<sutra msid="02.055"><root wsid="24.44" mdp="zRA" mdp1="snA" msid="02.055-01">snA</root><sense>SOce</sense></sutra>
+<sutra msid="02.056"><root wsid="24.45" msid="02.056-01">SrA</root><sense>pAke</sense></sutra>
+<sutra msid="02.057"><root wsid="24.46" msid="02.057-01">drA</root><sense>kutsAyAM gatO</sense></sutra>
+<sutra msid="02.058"><root wsid="24.47" msid="02.058-01">psA</root><sense>BakzaRe</sense></sutra>
+<sutra msid="02.059"><root wsid="24.48" msid="02.059-01">pA</root><sense>rakzaRe</sense></sutra>
+<sutra msid="02.060"><root wsid="24.49" msid="02.060-01">rA</root><sense>dAne</sense></sutra>
+<sutra msid="02.061"><root wsid="24.50" msid="02.061-01">lA</root><sense>AdAne</sense></sutra>
+<sutra msid="02.062"><root wsid="24.51" msid="02.062-01">dAp</root><sense>lavane</sense></sutra>
+<sutra msid="02.063"><root wsid="24.52" msid="02.063-01">KyA</root><sense>prakaTane</sense></sutra>
+<sutra msid="02.064"><root wsid="24.53" msid="02.064-01">prA</root><sense>pUraRe</sense></sutra>
+<sutra msid="02.065"><root wsid="24.54" msid="02.065-01">mA</root><sense>mAne</sense></sutra>
+<sutra msid="02.066"><root wsid="24.55" msid="02.066-01">vaca</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="02.069"><root wsid="24.56" msid="02.069-01">vida</root><sense>jYAne</sense></sutra>
+<sutra msid="02.070"><root wsid="24.57" msid="02.070-01">asa</root><sense>Buvi</sense></sutra>
+<sutra msid="02.071"><root wsid="24.58" msid="02.071-01">mfjU</root><sense>SudDO</sense></sutra>
+<sutra msid="02.072"><root wsid="24.59" msid="02.072-01">rudir</root><sense>aSruvimocane</sense></sutra>
+<sutra msid="02.074"><root wsid="24.60" mdp="Yizvap" mdp1="(Yi) svap" msid="02.074-01">(Yi) svap</root><sense>Saye</sense></sutra>
+<sutra msid="02.076"><root wsid="24.61" msid="02.076-01">Svasa</root><sense>prARane</sense></sutra>
+<sutra msid="02.077"><root wsid="24.62" msid="02.077-01">ana</root><sense>ca</sense></sutra>
+<sutra msid="02.078a"><root wsid="24.63" msid="02.078a-01">jakza</root><sense>BakzahasanayoH</sense></sutra>
+<sutra msid="02.079"><root wsid="24.64" mdp="jAgf" msid="02.079-01">jAgf</root><sense>nidrAkzaye</sense></sutra>
+<sutra msid="02.080"><root wsid="24.65" msid="02.080-01">daridrA</root><sense>durgatO</sense></sutra>
+<sutra msid="02.081"><root wsid="24.66" msid="02.081-01">cakAsf</root><sense>dIptO</sense></sutra>
+<sutra msid="02.082"><root wsid="24.67" msid="02.082-01">SAsu</root><sense>anuSizwO</sense></sutra>
+<sutra msid="02.084"><root wsid="24.68" msid="02.084-01">dIDIN</root><sense>dIptidevanayoH</sense></sutra>
+<sutra msid="02.085"><root wsid="24.69" msid="02.085-01">vevIN</root><sense mdp="vetinA tulye">vetinAtulye</sense></sutra>
+<sutra msid="02.087"><root wsid="24.70" mdp1="sasa" msid="02.087-01,01p">sasa</root><sense>zasti svapne</sense></sutra>
+<sutra msid="02.088"><root wsid="24.71" msid="02.088-01">vaSa</root><sense>kAntO</sense></sutra>
+<sutra msid="02.091"><root wsid="24.73" msid="02.091-01">hnuN</root><sense>apanayane</sense></sutra>
+</subsection>
+</section>
+<section id="III.25" vp="362" numroots="25" nfound="24"><text>25.</text>
+<sutra msid="03.001"><root wsid="25.1" msid="03.001-01">hu</root><sense mdp="dAnAdanayoH">dAne</sense></sutra>
+<sutra msid="03.002"><root wsid="25.2" mdp1="(Yi) BI" msid="03.002-01">(Yi) BI</root><sense>Baye</sense></sutra>
+<sutra msid="03.003"><root wsid="25.3" msid="03.003-01">hrI</root><sense>lajjAyAm</sense></sutra>
+<sutra msid="03.005"><root wsid="25.4" mdp="pF" msid="03.005-01">pF</root><sense>pAlanapUraRayoH</sense></sutra>
+<sutra msid="03.007"><root wsid="25.5" mdp1="(qu) BfY" msid="03.007-01">(qu) BfY</root><sense>DAraRapozaRayoH</sense></sutra>
+<sutra msid="03.009"><root wsid="25.6" msid="03.009-01">mAN</root><sense>mAne Sabde ca</sense></sutra>
+<sutra msid="03.011"><root wsid="25.7" mdp1="(o) hAN" msid="03.011-01">(o) hAN</root><sense>gatO</sense></sutra>
+<sutra msid="03.013"><root wsid="25.8" mdp1="(o) hAk" msid="03.013-01">(o) hAk</root><sense>tyAge</sense></sutra>
+<sutra msid="03.015"><root wsid="25.9" mdp1="(qu) dAY" msid="03.015-01">(qu) dAY</root><sense>dAne</sense></sutra>
+<sutra msid="03.017"><root wsid="25.10" mdp1="(qu) DAY" msid="03.017-01">(qu) DAY</root><sense>DAraRapozaRayoH</sense></sutra>
+<sutra msid="03.019"><root wsid="25.11" mdp1="nijir" msid="03.019-01">nijir</root><sense>SOcapozaRayoH</sense></sutra>
+<sutra msid="03.020"><root wsid="25.12" msid="03.020-01">vijir</root><sense>pfTagBAve</sense></sutra>
+<sutra msid="03.021"><root wsid="25.13" msid="03.021-01">vizx</root><sense>vyAptO</sense></sutra>
+<sutra msid="03.024"><root wsid="25.14" msid="03.024-01">Gf</root><sense>kzaraRadIptyoH</sense></sutra>
+<sutra msid="03.025"><root wsid="25.15" msid="03.025-01">hf</root><sense>prasahyakaraRe</sense></sutra>
+<sutra msid="03.026"><root wsid="25.16" msid="03.026-01">f</root><root wsid="25.17" msid="03.026-02">sf</root><sense>gatO</sense></sutra>
+<sutra msid="03.028"><root wsid="25.18" msid="03.028-01">Basa</root><sense>BartsanadIptyoH</sense></sutra>
+<sutra msid="03.029"><root wsid="25.19" msid="03.029-01">ki</root><sense>{20. kita {wdp}) jYAne</sense></sutra>
+<sutra msid="03.031"><root wsid="25.21" msid="03.031-01">tura</root><sense>tvaraRe</sense></sutra>
+<sutra msid="03.032"><root wsid="25.22" msid="03.032-01">Diza</root><sense>Sabde</sense></sutra>
+<sutra msid="03.033"><root wsid="25.23" msid="03.033-01">Dana</root><sense>DAnye</sense></sutra>
+<sutra msid="03.034"><root wsid="25.24" msid="03.034-01">jana</root><sense>janane</sense></sutra>
+<sutra msid="03.036"><root wsid="25.25" msid="03.036-01">gA</root><sense>stutO</sense></sutra>
+</section>
+<section id="IV.26" vp="362-365" numroots="140" nfound="139"><text>26.</text>
+<subsection>
+<sutra msid="04.001"><root wsid="26.1" msid="04.001-01">divu</root><sense>krIqAvijigIzAvyavahAradyutistutimodamadasvapnakAntigatizu</sense></sutra>
+<sutra msid="04.002"><root wsid="26.2" mdp1="sivu" msid="04.002-01">sivu</root><sense>tantusantAne</sense></sutra>
+<sutra msid="04.003"><root wsid="26.3" msid="04.003-01">srivu</root><sense>gatiSozaRayoH</sense></sutra>
+<sutra msid="04.004"><root wsid="26.4" msid="04.004-01,02">zWivu</root><sense>nirasane</sense></sutra>
+<sutra msid="04.005"><root wsid="26.5" mdp1="snusu" msid="04.005-01,04p,05p">snusu</root><sense>adane</sense></sutra>
+<sutra msid="04.006"><root wsid="26.6" msid="04.006-01">knasu</root><sense>hvaraRadIptyoH</sense></sutra>
+<sutra msid="04.007"><root wsid="26.7" msid="04.007-01">vyuza</root><sense>dAhe</sense></sutra>
+<sutra msid="04.008"><root wsid="26.8" msid="04.008-01">pluza</root><sense>ca</sense></sutra>
+<sutra msid="04.009"><root wsid="26.9" msid="04.009-01">nftI</root><sense>gAtravikzepe</sense></sutra>
+<sutra msid="04.010"><root wsid="26.10" msid="04.010-01">trasI</root><sense>udvege</sense></sutra>
+<sutra msid="04.011"><root wsid="26.11" msid="04.011-01">kuTa</root><sense>pUtIBAve</sense></sutra>
+<sutra msid="04.012"><root wsid="26.12" msid="04.012-01">puTa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="04.013"><root wsid="26.13" msid="04.013-01">guDa</root><sense>parivezwane</sense></sutra>
+<sutra msid="04.014"><root wsid="26.14" msid="04.014-01">kzipa</root><sense>preraRe</sense></sutra>
+<sutra msid="04.015"><root wsid="26.15" msid="04.015-01">puzpa</root><sense>vikasane</sense></sutra>
+<sutra msid="04.016"><root wsid="26.16" msid="04.016-01">tima</root><root wsid="26.17" mdp="stima" msid="04.016-02">stima</root><root wsid="26.17a" mdp="zwIma" mdp1="stIma" msid="04.016-03">stIma</root><sense>ArdrIBAve</sense></sutra>
+<sutra msid="04.017"><root wsid="26.18" msid="04.017-01,01p">vrIqa</root><sense>codane</sense></sutra>
+<sutra msid="04.018"><root wsid="26.19" msid="04.018-01">iza</root><sense>gatO</sense></sutra>
+<sutra msid="04.019"><root wsid="26.20" nomdp="yes" mdp1="saha" msid="04.019-01p">saha</root><root wsid="26.21" mdp1="suha" msid="04.019-01">suha</root><sense>cakyarTe</sense></sutra>
+<sutra msid="04.020"><root wsid="26.22" msid="04.020-01">jFz</root><root wsid="26.23" msid="04.020-02">JFz</root><sense>vayohAnO</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="04.022"><root wsid="26.23a" mdp1="sUN" msid="04.022-01">sUN</root><sense>prARiprasave</sense></sutra>
+<sutra msid="04.023"><root wsid="26.24" msid="04.023-01">dUN</root><sense>paritApe</sense></sutra>
+<sutra msid="04.025"><root wsid="26.25" msid="04.025-01">dIN</root><sense>kzaye</sense></sutra>
+<sutra msid="04.026"><root wsid="26.26" msid="04.026-01">qIN</root><sense>vihAyasA gatO</sense></sutra>
+<sutra msid="04.027"><root wsid="26.27" msid="04.027-01">DIN</root><sense mdp="AdAne">AdAre</sense></sutra>
+<sutra msid="04.028"><root wsid="26.28" msid="04.028-01">mIN</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="04.029"><root wsid="26.29" msid="04.029-01">rIN</root><sense>sravaRe</sense></sutra>
+<sutra msid="04.030"><root wsid="26.30" msid="04.030-01">lIN</root><sense>SlezaRe</sense></sutra>
+<sutra msid="04.031"><root wsid="26.31" msid="04.031-01">vrIN</root><sense>vfRotyarTe</sense></sutra>
+<sutra msid="04.033"><root wsid="26.32" msid="04.033-01">pIN</root><sense>pAne</sense></sutra>
+<sutra msid="04.034"><root wsid="26.33" msid="04.034-01">mAN</root><sense>mAne</sense></sutra>
+<sutra msid="04.035"><root wsid="26.34" msid="04.035-01">IN</root><sense>gatO</sense></sutra>
+<sutra msid="04.036"><root wsid="26.35" msid="04.036-01">prIN</root><sense>prItO</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="04.038"><root wsid="26.36" msid="04.038-01">So</root><sense>tanUkaraRe</sense></sutra>
+<sutra msid="04.039"><root wsid="26.37" msid="04.039-01">Co</root><sense>Cedane</sense></sutra>
+<sutra msid="04.040"><root wsid="26.38" mdp1="so" msid="04.040-01">so</root><sense>antakarmaRi</sense></sutra>
+<sutra msid="04.041"><root wsid="26.39" msid="04.041-01">do</root><sense>avaKaRqane</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="04.043"><root wsid="26.40" msid="04.043-01">janI</root><sense>prAdurBAve</sense></sutra>
+<sutra msid="04.044"><root wsid="26.41" msid="04.044-01">dIpI</root><sense>dIptO</sense></sutra>
+<sutra msid="04.045"><root wsid="26.42" msid="04.045-01">pUrI</root><sense>ApyAyane</sense></sutra>
+<sutra msid="04.046"><root wsid="26.43" msid="04.046-01">tUrI</root><sense mdp="gatitvaraRahiMsanayoH">gatitvaraRahiMsayoH</sense></sutra>
+<sutra msid="04.047"><root wsid="26.44" msid="04.047-01">DUrI</root><root wsid="26.45" msid="04.047-02">gUrI</root><sense>hiMsAgatyoH</sense></sutra>
+<sutra msid="04.048"><root wsid="26.46" msid="04.048-01">GUrI</root><root wsid="26.47" msid="04.048-02">jUrI</root><sense mdp="hiMsAvayohAnyoH">hiMsAvayohAnO</sense></sutra>
+<sutra msid="04.049"><root wsid="26.48" msid="04.049-01">SUrI</root><sense mdp="hiMsAstamBanayoH">hiMsAstamBayoH</sense></sutra>
+<sutra msid="04.050"><root wsid="26.49" msid="04.050-01">cUrI</root><sense>dAhe</sense></sutra>
+<sutra msid="04.051"><root wsid="26.50" msid="04.051-01">tapa</root><sense mdp="ESvarye vA">ESvarye</sense></sutra>
+<sutra msid="04.052"><root wsid="26.51" mdp="vftu" msid="04.052-01">vftu</root><sense>varaRe</sense></sutra>
+<sutra msid="04.053"><root wsid="26.52" msid="04.053-01">kliSa</root><sense>upatApe</sense></sutra>
+<sutra msid="04.054"><root wsid="26.53" msid="04.054-01">kASf</root><sense>dIptO</sense></sutra>
+<sutra msid="04.055"><root wsid="26.54" msid="04.055-01">vASf</root><sense>Sabde</sense></sutra>
+<sutra msid="04.057"><root wsid="26.55" msid="04.057-01">mfza</root><sense>titikzAyAm</sense></sutra>
+<sutra msid="04.058"><root wsid="26.56" mdp1="(I) Sucir" msid="04.058-01">(I) Sucir</root><sense>pUtIBAve</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="04.060"><root wsid="26.57" mdp1="naha" msid="04.060-01">naha</root><sense>banDane</sense></sutra>
+<sutra msid="04.061"><root wsid="26.58" mdp1="raYja" msid="04.061-01">raYja</root><sense>rAge</sense></sutra>
+<sutra msid="04.062"><root wsid="26.59" msid="04.062-01">Sapa</root><sense>AkroSe</sense></sutra>
+<sutra msid="04.064"><root wsid="26.60" msid="04.064-01">pada</root><sense>gatO</sense></sutra>
+<sutra msid="04.065"><root wsid="26.61" msid="04.065-01">Kida</root><sense>dEnye</sense></sutra>
+<sutra msid="04.066"><root wsid="26.62" msid="04.066-01">vida</root><sense>sattAyAm</sense></sutra>
+<sutra msid="04.067"><root wsid="26.63" msid="04.067-01">buDa</root><sense>avagamane</sense></sutra>
+<sutra msid="04.068"><root wsid="26.64" msid="04.068-01">yuDa</root><sense>samprahAre</sense></sutra>
+<sutra msid="04.069"><root wsid="26.65" mdp1="(ano) ruDa" msid="04.069-01">(ano) ruDa</root><sense>kAme</sense></sutra>
+<sutra msid="04.070"><root wsid="26.66" msid="04.070-01">aRa</root><sense>prARane</sense></sutra>
+<sutra msid="04.071"><root wsid="26.67" msid="04.071-01">mana</root><sense>jYAne</sense></sutra>
+<sutra msid="04.072"><root wsid="26.68" msid="04.072-01">yuja</root><sense>samADO</sense></sutra>
+<sutra msid="04.073"><root wsid="26.69" msid="04.073-01">sfja</root><sense>visarge</sense></sutra>
+<sutra msid="04.074"><root wsid="26.70" msid="04.074-01">liSa</root><sense>alpIBAve</sense></sutra>
+<sutra msid="04.076"><root wsid="26.71" mdp="rADo'karmakAd" msid="04.076-">rADo'karmakAd</root><sense mdp="vfdDAveva">akarmakAdvfdDAveva</sense></sutra>
+<sutra msid="04.077"><root wsid="26.72" msid="04.077-01">vyaDa</root><sense>tAqane</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="04.078"><root wsid="26.73" msid="04.078-01">puza</root><sense>puzwO</sense></sutra>
+<sutra msid="04.079"><root wsid="26.74" msid="04.079-01">Suza</root><sense>SozaRe</sense></sutra>
+<sutra msid="04.080"><root wsid="26.75" msid="04.080-01">tuza</root><sense>prItO</sense></sutra>
+<sutra msid="04.081"><root wsid="26.76" msid="04.081-01">duza</root><sense>vEkftye</sense></sutra>
+<sutra msid="04.082"><root wsid="26.77" msid="04.082-01">Sliza</root><sense>AliNgane</sense></sutra>
+<sutra msid="04.083"><root wsid="26.78" msid="04.083-01">Saka</root><sense>viBAzito marzaRe</sense></sutra>
+<sutra msid="04.084"><root wsid="26.79" mdp="zvidA" mdp1="(Yi) svidA" msid="04.084-01p">(Yi) svidA</root><sense>gAtraprakzaraRe</sense></sutra>
+<sutra msid="04.085"><root wsid="26.80" msid="04.085-01">kruDa</root><sense>kope</sense></sutra>
+<sutra msid="04.086"><root wsid="26.81" msid="04.086-01">kzuDa</root><sense>buBukzAyAm</sense></sutra>
+<sutra msid="04.087"><root wsid="26.82" msid="04.087-01">SuDa</root><sense>SOce</sense></sutra>
+<sutra msid="04.088"><root wsid="26.83" mdp1="siDu" msid="04.088-01">siDu</root><sense>saMrAdDO</sense></sutra>
+<sutra msid="04.090"><root wsid="26.84" msid="04.090-01">raDa</root><sense>hiMsAsaMrAdDyoH</sense></sutra>
+<sutra msid="04.091"><root wsid="26.85" mdp1="naSa" msid="04.091-01">naSa</root><sense>adarSane</sense></sutra>
+<sutra msid="04.092"><root wsid="26.86" msid="04.092-01">tfpa</root><sense>prIRane</sense></sutra>
+<sutra msid="04.093"><root wsid="26.87" msid="04.093-01">dfpa</root><sense mdp="harzaRamohanayoH">harzamohanayoH</sense></sutra>
+<sutra msid="04.094"><root wsid="26.88" msid="04.094-01">druha</root><sense mdp="jiGAMsAyAm">jiGAMsAyA</sense></sutra>
+<sutra msid="04.095"><root wsid="26.89" msid="04.095-01">muha</root><sense>vEcitye</sense></sutra>
+<sutra msid="04.096"><root wsid="26.90" mdp="zRuha" mdp1="snuha" msid="04.096-01">snuha</root><sense>udgiraRe</sense></sutra>
+<sutra msid="04.097"><root wsid="26.91" mdp="zRiha" mdp1="sniha" msid="04.097-01">sniha</root><sense>prItO</sense></sutra>
+<sutra msid="04.099"><root wsid="26.92" msid="04.099-01">Samu</root><sense mdp="upaSamane">upaSame</sense></sutra>
+<sutra msid="04.100"><root wsid="26.93" msid="04.100-01">tamu</root><sense>kANkzAyAm</sense></sutra>
+<sutra msid="04.101"><root wsid="26.94" msid="04.101-01">damu</root><sense mdp="upaSamane">upaSame</sense></sutra>
+<sutra msid="04.102"><root wsid="26.95" msid="04.102-01">Sramu</root><sense>tapasi Kede ca</sense></sutra>
+<sutra msid="04.103"><root wsid="26.96" msid="04.103-01">Bramu</root><sense>anavasTAne</sense></sutra>
+<sutra msid="04.104"><root wsid="26.97" msid="04.104-01">kzamU</root><sense>sahane</sense></sutra>
+<sutra msid="04.105"><root wsid="26.98" msid="04.105-01">klamu</root><sense>glAnO</sense></sutra>
+<sutra msid="04.106"><root wsid="26.99" msid="04.106-01">madI</root><sense>harze</sense></sutra>
+<sutra msid="04.108"><root wsid="26.100" msid="04.108-01">asu</root><sense>kzepaRe</sense></sutra>
+<sutra msid="04.109"><root wsid="26.101" msid="04.109-01">yasu</root><sense>prayatne</sense></sutra>
+<sutra msid="04.110"><root wsid="26.102" msid="04.110-01">jasu</root><sense>mokzaRe</sense></sutra>
+<sutra msid="04.111"><root wsid="26.103" msid="04.111-01">tasu</root><sense>upakzaye</sense></sutra>
+<sutra msid="04.112"><root wsid="26.104" msid="04.112-01">dasu</root><sense>ca</sense></sutra>
+<sutra msid="04.113"><root wsid="26.105" msid="04.113-01">vasu</root><sense>stamBe</sense></sutra>
+<sutra msid="04.114"><root wsid="26.106" msid="04.114-01">vyuza</root><sense>viBAge</sense></sutra>
+<sutra msid="04.115"><root wsid="26.107" msid="04.115-01">pluza</root><sense>dAhe</sense></sutra>
+<sutra msid="04.116"><root wsid="26.108" msid="04.116-01">bisa</root><sense>preraRe</sense></sutra>
+<sutra msid="04.117"><root wsid="26.109" msid="04.117-01">kusa</root><sense mdp="SlezaRe">saMSlezaRe</sense></sutra>
+<sutra msid="04.118"><root wsid="26.110" msid="04.118-01">busa</root><sense>utsarge</sense></sutra>
+<sutra msid="04.119"><root wsid="26.111" msid="04.119-01">musa</root><sense>KaRqane</sense></sutra>
+<sutra msid="04.120"><root wsid="26.112" msid="04.120-01">masI</root><sense mdp="parimARe">parimAne</sense></sutra>
+<sutra msid="04.121"><root wsid="26.113" msid="04.121-01">luwa</root><sense>viloqane</sense></sutra>
+<sutra msid="04.122"><root wsid="26.114" msid="04.122-01">uca</root><sense>samavAye</sense></sutra>
+<sutra msid="04.123"><root wsid="26.115" msid="04.123-01">BfSu</root><root wsid="26.115a" mdp="BraMSu" msid="04.123-02">BraMSu</root><sense>aDaHpatane</sense></sutra>
+<sutra msid="04.124"><root wsid="26.116" msid="04.124-01">vfSa</root><sense>varaRe</sense></sutra>
+<sutra msid="04.125"><root wsid="26.117" msid="04.125-01">kfSa</root><sense>tanUkaraRe</sense></sutra>
+<sutra msid="04.126"><root wsid="26.118" mdp1="(Yi) tfza" msid="04.126-01">(Yi) tfza</root><sense>pipAsAyAm</sense></sutra>
+<sutra msid="04.127"><root wsid="26.119" msid="04.127-01">hfza</root><sense>tuzwO</sense></sutra>
+<sutra msid="04.128a"><root wsid="26.120" msid="04.128a-01">ruza</root><sense>roze</sense></sutra>
+<sutra msid="04.129"><root wsid="26.121" msid="04.129-01">qipa</root><sense>kzepe</sense></sutra>
+<sutra msid="04.130"><root wsid="26.122" msid="04.130-01">kupa</root><sense>kroDe</sense></sutra>
+<sutra msid="04.131"><root wsid="26.123" msid="04.131-01">gupa</root><sense>vyAkulatve</sense></sutra>
+<sutra msid="04.132"><root wsid="26.124" mdp="yupa" msid="04.132-01">yupa</root><root wsid="26.125" mdp="rupa" msid="04.132-02">rupa</root><root wsid="26.126" mdp="lupa" msid="04.132-03">lupa</root><sense>vimohane</sense></sutra>
+<sutra msid="04.xxxx"><root wsid="26.127">ztUpa</root><sense>samucCrAye</sense></sutra>
+<sutra msid="04.133"><root wsid="26.128" msid="04.133-01">luBa</root><sense>gArDye</sense></sutra>
+<sutra msid="04.134"><root wsid="26.129" msid="04.134-01">kzuBa</root><sense>saYcalane</sense></sutra>
+<sutra msid="04.135"><root wsid="26.130" mdp1="naBa" msid="04.135-01">naBa</root><root wsid="26.131" msid="04.135-02">tuBa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="04.136"><root wsid="26.132" msid="04.136-01">klidU</root><sense>ArdrIBAve</sense></sutra>
+<sutra msid="04.137"><root wsid="26.133" mdp1="(Yi) midA" msid="04.137-01">(Yi) midA</root><sense>snehane</sense></sutra>
+<sutra msid="04.138"><root wsid="26.134" mdp1="(Yi) kzvidA" msid="04.138-01">(Yi) kzvidA</root><sense>snehanamocanayoH</sense></sutra>
+<sutra msid="04.139"><root wsid="26.135" msid="04.139-01">fDu</root><sense>vfdDO</sense></sutra>
+<sutra msid="04.140"><root wsid="26.136" msid="04.140-01">gfDu</root><sense>aBikANkzAyAm</sense></sutra>
+</subsection>
+</section>
+<section id="V.27" vp="365-366" numroots="33" nfound="34"><text>27.</text>
+<subsection>
+<sutra msid="05.001"><root wsid="27.1" mdp1="suY" msid="05.001-01">suY</root><sense>aBizave</sense></sutra>
+<sutra msid="05.002"><root wsid="27.2" mdp1="siY" msid="05.002-01">siY</root><sense>banDane</sense></sutra>
+<sutra msid="05.003"><root wsid="27.3" msid="05.003-01">SiY</root><sense>niSAne</sense></sutra>
+<sutra msid="05.004"><root wsid="27.4" mdp1="(qu) miY" msid="05.004-01">(qu) miY</root><sense>prakzepaRe</sense></sutra>
+<sutra msid="05.005"><root wsid="27.5" msid="05.005-01">ciY</root><sense>cayane</sense></sutra>
+<sutra msid="05.006"><root wsid="27.6" msid="05.006-01">stfY</root><sense>AcCAdane</sense></sutra>
+<sutra msid="05.007"><root wsid="27.7" msid="05.007-01">kfY</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="05.008"><root wsid="27.8" msid="05.008-01">vfY</root><sense>varaRe</sense></sutra>
+<sutra msid="05.009"><root wsid="27.9" mdp="DuY" msid="05.009-01">DuY</root><sense>kampane</sense></sutra>
+<sutra msid="05.011"><root wsid="27.10" mdp1="(wu) du" msid="05.011-01">(wu) du</root><sense>upatApe</sense></sutra>
+<sutra msid="05.012"><root wsid="27.11" msid="05.012-01">hi</root><sense mdp="gatO vfdDO ca">gatO vfdDO</sense></sutra>
+<sutra msid="05.013"><root wsid="27.12" msid="05.013-01">pf</root><sense>prItO</sense></sutra>
+<sutra msid="05.014"><root wsid="27.13" msid="05.014-01">spf</root><sense>prItipAlanayoH</sense></sutra>
+<sutra msid="05.015"><root wsid="27.14" msid="05.015-01">Apx</root><sense>vyAptO</sense></sutra>
+<sutra msid="05.016"><root wsid="27.15" msid="05.016-01">Sakx</root><sense>SaktO</sense></sutra>
+<sutra msid="05.017"><root wsid="27.16" msid="05.017-01">rADa</root><root wsid="27.16a" msid="05.017-02">sADa</root><sense>saMsidDO</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="05.019"><root wsid="27.17" msid="05.019-01">aSU</root><sense>vyAptO saNGAte ca</sense></sutra>
+<sutra msid="05.020"><root wsid="27.18" mdp="zwiGa" mdp1="stiGa" msid="05.020-01">stiGa</root><sense>Askandane</sense></sutra>
+<sutra msid="05.022a"><root wsid="27.19" msid="05.022a-01">tika</root><root wsid="27.19a" msid="05.022a-02">tiga</root><sense mdp="ca">gatO ca</sense></sutra>
+<sutra msid="05.022b"><root wsid="27.20" mdp1="saGa" msid="05.022b-01">saGa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="05.023"><root wsid="27.21" mdp1="(Yi) DfzA" msid="05.023-01">(Yi) DfzA</root><sense>prAgalBye</sense></sutra>
+<sutra msid="05.024"><root wsid="27.22" mdp="dunBu" mdp1="damBu" msid="05.024-01">damBu</root><sense>damBe</sense></sutra>
+<sutra msid="05.025"><root wsid="27.23" msid="05.025-01">fDu</root><sense>vfdDO</sense></sutra>
+<sutra msid="05.xxxx"><root wsid="27.24">tfpa</root><sense>prIRane</sense></sutra>
+<sutra msid="05.027"><root wsid="27.25" msid="05.027-01">aha</root><sense>vyAptO</sense></sutra>
+<sutra msid="05.028"><root wsid="27.26" msid="05.028-01">daGa</root><sense>GAtane pAlane ca</sense></sutra>
+<sutra msid="05.029"><root wsid="27.27" msid="05.029-01">camu</root><sense>BakzaRe</sense></sutra>
+<sutra msid="05.030"><root wsid="27.28" mdp="ri" msid="05.030-01">ri</root><root wsid="27.29" msid="05.030-02">kzi</root><root wsid="27.30" msid="05.030-03">ciri</root><root wsid="27.31" msid="05.030-04">jiri</root><root wsid="27.32" msid="05.030-05">dASa</root><root wsid="27.33" mdp="df" msid="05.030-06">df</root><sense>hiMsAyAm</sense></sutra>
+</subsection>
+</section>
+<section id="VI.28" vp="366-368" numroots="143" nfound="152"><text>28.</text>
+<subsection>
+<sutra msid="06.001"><root wsid="28.1" msid="06.001-01">tuda</root><sense>vyaTane</sense></sutra>
+<sutra msid="06.002"><root wsid="28.2" mdp1="nuda" msid="06.002-01">nuda</root><sense>preraRe</sense></sutra>
+<sutra msid="06.003"><root wsid="28.3" msid="06.003-01">diSa</root><sense>atisarjane</sense></sutra>
+<sutra msid="06.004"><root wsid="28.4" mdp1="Brajja" msid="06.004-01">Brajja</root><sense>pAke</sense></sutra>
+<sutra msid="06.005"><root wsid="28.5" msid="06.005-01">kzipa</root><sense>preraRe</sense></sutra>
+<sutra msid="06.006"><root wsid="28.6" msid="06.006-01">kfza</root><sense>vileKane</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="06.008"><root wsid="28.7" msid="06.008-01">fzI</root><sense>gatO</sense></sutra>
+<sutra msid="06.010"><root wsid="28.8" msid="06.010-01">juzI</root><sense>prItisevanayoH</sense></sutra>
+<sutra msid="06.011"><root wsid="28.9" mdp1="(o) vijI" msid="06.011-01">(o) vijI</root><sense>BayacalanayoH</sense></sutra>
+<sutra msid="06.012"><root wsid="28.10" mdp1="(o) lajI" msid="06.012-01">(o) lajI</root><root wsid="28.10a" mdp1="(o) lajjI" msid="06.012-02">(o) lajjI</root><sense mdp="vrIqe">vrIqAyAM</sense></sutra>
+<sutra msid="06.014"><root wsid="28.11" mdp="o:vraScU" mdp1="(o) vraScU" msid="06.014-01">(o) vraScU</root><sense>Cedane</sense></sutra>
+<sutra msid="06.015"><root wsid="28.12" msid="06.015-01">vyaca</root><sense mdp="vyAjIkaraRe">vyAjIkaraRaM</sense></sutra>
+<sutra msid="06.016"><root wsid="28.13" mdp1="ucCi" msid="06.016-01">ucCi</root><sense>uYCe</sense></sutra>
+<sutra msid="06.017"><root wsid="28.14" mdp1="ucCI" msid="06.017-01">ucCI</root><sense>vivAse</sense></sutra>
+<sutra msid="06.018"><root wsid="28.15" mdp1="fcCa" msid="06.018-01">fcCa</root><sense>gatIndriyapralayamUrtiBavezu</sense></sutra>
+<sutra msid="06.019"><root wsid="28.16" mdp1="micCa" msid="06.019-01">micCa</root><sense>utkleSe</sense></sutra>
+<sutra msid="06.020"><root wsid="28.17" mdp="jarja" msid="06.020-01">jarja</root><root wsid="28.17a" msid="06.020-02">carca</root><root wsid="28.17b" msid="06.020-03">JarJa</root><sense mdp="pariBAzaRasantarjanayoH">pariBAzaRaBartsanayoH</sense></sutra>
+<sutra msid="06.021"><root wsid="28.18" msid="06.021-01">tvaca</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="06.022"><root wsid="28.19" msid="06.022-01">fca</root><sense>stutO</sense></sutra>
+<sutra msid="06.023"><root wsid="28.20" msid="06.023-01">ubja</root><sense>Arjave</sense></sutra>
+<sutra msid="06.024"><root wsid="28.21" mdp1="ujJa" msid="06.024-01">ujJa</root><sense>utsarge</sense></sutra>
+<sutra msid="06.025"><root wsid="28.22" msid="06.025-01">luBa</root><sense>vimohane</sense></sutra>
+<sutra msid="06.026"><root wsid="28.23" msid="06.026-01">riPa</root><sense mdp="katTanayudDanindAhiMsAdAnezu">kaTanayudDanindAhiMsAdAnezu</sense></sutra>
+<sutra msid="06.027"><root wsid="28.24" msid="06.027-01">tfpa</root><root wsid="28.25" mdp1="tfmPa" msid="06.027-02">tfmPa</root><sense>tfptO</sense></sutra>
+<sutra msid="06.028"><root wsid="28.26" msid="06.028-01">tupa</root><root wsid="28.26a" mdp1="tumpa" msid="06.028-03">tumpa</root><root wsid="28.27" msid="06.028-02">tuPa</root><root wsid="28.27a" mdp1="tumPa" msid="06.028-04">tumPa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="06.029"><root wsid="28.28" msid="06.029-01">dfPa</root><root wsid="28.29" mdp1="dfmPa" msid="06.029-02">dfmPa</root><sense>utkleSe</sense></sutra>
+<sutra msid="06.030"><root wsid="28.30" msid="06.030-01">fPa</root><root wsid="28.30a" mdp1="fmPa" msid="06.030-02">fmPa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="06.031"><root wsid="28.31" msid="06.031-01">guPa</root><root wsid="28.31a" mdp1="gumPa" msid="06.031-02">gumPa</root><sense>granTe</sense></sutra>
+<sutra msid="06.032"><root wsid="28.32" msid="06.032-01">uBa</root><root wsid="28.32a" mdp1="umBa" msid="06.032-02">umBa</root><sense>pUraRe</sense></sutra>
+<sutra msid="06.033"><root wsid="28.33" msid="06.033-01">SuBa</root><root wsid="28.33a" mdp1="SumBa" msid="06.033-02">SumBa</root><sense>SoBArTe</sense></sutra>
+<sutra msid="06.034"><root wsid="28.34" msid="06.034-01">dfBI</root><sense>granTe</sense></sutra>
+<sutra msid="06.035"><root wsid="28.35" msid="06.035-01">cftI</root><sense>hiMsAgranTanayoH</sense></sutra>
+<sutra msid="06.036"><root wsid="28.36" msid="06.036-01">viDa</root><sense>viDAne</sense></sutra>
+<sutra msid="06.037"><root wsid="28.37" msid="06.037-01">juqa</root><sense>gatO</sense></sutra>
+<sutra msid="06.038"><root wsid="28.38" msid="06.038-01">mfqa</root><sense>suKane</sense></sutra>
+<sutra msid="06.039"><root wsid="28.39" msid="06.039-01">pfqa</root><sense>ca</sense></sutra>
+<sutra msid="06.040"><root wsid="28.40" msid="06.040-01">pfRa</root><sense>prIRane</sense></sutra>
+<sutra msid="06.041"><root wsid="28.41" msid="06.041-01">mfRa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="06.042"><root wsid="28.42" msid="06.042-01">tuRa</root><sense>kOwilye</sense></sutra>
+<sutra msid="06.043"><root wsid="28.43" msid="06.043-01">puRa</root><sense>karmaRi SuBe</sense></sutra>
+<sutra msid="06.044"><root wsid="28.44" msid="06.044-01">muRa</root><sense>pratijYAne</sense></sutra>
+<sutra msid="06.045"><root wsid="28.45" msid="06.045-01">kuRa</root><sense>SabdopakaraRayoH</sense></sutra>
+<sutra msid="06.046"><root wsid="28.46" msid="06.046-01">Suna</root><sense>gatO</sense></sutra>
+<sutra msid="06.047"><root wsid="28.47" msid="06.047-01">druRa</root><sense>hiMsAgatikOwilyezu</sense></sutra>
+<sutra msid="06.048"><root wsid="28.48" msid="06.048-01">GuRa</root><root wsid="28.49" msid="06.048-02">GUrRa</root><sense>BramaRe</sense></sutra>
+<sutra msid="06.049"><root wsid="28.50" mdp1="sura" msid="06.049-01">sura</root><sense>ESvaryadIptyoH</sense></sutra>
+<sutra msid="06.050"><root wsid="28.51" msid="06.050-01">kura</root><sense>Sabde</sense></sutra>
+<sutra msid="06.051"><root wsid="28.52" msid="06.051-01">Kura</root><sense mdp="cCedane">Cedane</sense></sutra>
+<sutra msid="06.052"><root wsid="28.53" msid="06.052-01">mura</root><sense>parivezwane</sense></sutra>
+<sutra msid="06.053"><root wsid="28.54" msid="06.053-01">kzura</root><sense>vileKane</sense></sutra>
+<sutra msid="06.054"><root wsid="28.55" msid="06.054-01">Gura</root><sense>BImArTaSabdayoH</sense></sutra>
+<sutra msid="06.055"><root wsid="28.56" msid="06.055-01">pura</root><sense>agragamane</sense></sutra>
+<sutra msid="06.056"><root wsid="28.57" msid="06.056-01">vfhU</root><sense>udyamane</sense></sutra>
+<sutra msid="06.057"><root wsid="28.58" msid="06.057-02">tfhU</root><root wsid="28.58a" msid="06.057-03">stfhU</root><root wsid="28.58b" mdp1="tfMhU" msid="06.057-01">tfMhU</root><sense>hiMsArTAH</sense></sutra>
+<sutra msid="06.058"><root wsid="28.59" mdp="iza" msid="06.058-01">iza</root><sense>icCAyAm</sense></sutra>
+<sutra msid="06.059"><root wsid="28.60" msid="06.059-01">miza</root><sense>spardDAyAm</sense></sutra>
+<sutra msid="06.060"><root wsid="28.61" msid="06.060-01,01p">kila</root><sense mdp="SvEtye">SvEtyakrIqanayoH</sense></sutra>
+<sutra msid="06.061"><root wsid="28.62" msid="06.061-01">tila</root><sense mdp="snehane">snehe</sense></sutra>
+<sutra msid="06.062"><root wsid="28.63" msid="06.062-01">cila</root><sense mdp="nivasane">vasane</sense></sutra>
+<sutra msid="06.063"><root wsid="28.64" msid="06.063-01">cala</root><sense>vilasane</sense></sutra>
+<sutra msid="06.064"><root wsid="28.65" msid="06.064-01">ila</root><sense mdp="svapnakzepaRayoH">svapnakzepanayoH</sense></sutra>
+<sutra msid="06.065"><root wsid="28.66" msid="06.065-01">vila</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="06.066"><root wsid="28.67" msid="06.066-01">bila</root><sense>Bedane</sense></sutra>
+<sutra msid="06.067"><root wsid="28.68" mdp1="nila" msid="06.067-01">nila</root><sense>gahane</sense></sutra>
+<sutra msid="06.068"><root wsid="28.69" msid="06.068-01">hila</root><sense>BAvakaraRe</sense></sutra>
+<sutra msid="06.069"><root wsid="28.70" msid="06.069-01">Sila</root><root wsid="28.70a" mdp1="sila" msid="06.069-02">sila</root><sense>uYCe</sense></sutra>
+<sutra msid="06.070"><root wsid="28.71" msid="06.070-01">mila</root><sense>SlezaRe</sense></sutra>
+<sutra msid="06.071"><root wsid="28.72" msid="06.071-01">liKa</root><sense>akzaravinyAse</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="06.072"><root wsid="28.73" msid="06.072-01">kuwa</root><sense>kOwilye</sense></sutra>
+<sutra msid="06.073"><root wsid="28.74" msid="06.073-01">puwa</root><sense>saMSlezaRe</sense></sutra>
+<sutra msid="06.074"><root wsid="28.75" msid="06.074-01">kuca</root><sense>saMkocane</sense></sutra>
+<sutra msid="06.075"><root wsid="28.76" msid="06.075-01">guja</root><sense>Sabde</sense></sutra>
+<sutra msid="06.076"><root wsid="28.77" msid="06.076-01">guqa</root><sense>rakzAyAm</sense></sutra>
+<sutra msid="06.077"><root wsid="28.78" msid="06.077-01">qipa</root><sense mdp="kzepe">kzape</sense></sutra>
+<sutra msid="06.078"><root wsid="28.79" msid="06.078-01">Cura</root><sense>Cedane</sense></sutra>
+<sutra msid="06.079"><root wsid="28.80" msid="06.079-01">sPuwa</root><sense>vikasane</sense></sutra>
+<sutra msid="06.080"><root wsid="28.81" msid="06.080-01">muwa</root><sense>AkzepapramardanayoH</sense></sutra>
+<sutra msid="06.081"><root wsid="28.82" msid="06.081-01">truwa</root><sense>Cedane</sense></sutra>
+<sutra msid="06.082"><root wsid="28.83" msid="06.082-01">tuwa</root><sense>kalahakarmaRi</sense></sutra>
+<sutra msid="06.083"><root wsid="28.84" msid="06.083-01">cuwa</root><root wsid="28.84a" msid="06.083-02">Cuwa</root><sense>Cedane</sense></sutra>
+<sutra msid="06.084"><root wsid="28.85" msid="06.084-01">juqa</root><sense>banDane</sense></sutra>
+<sutra msid="06.085"><root wsid="28.86" msid="06.085-01">kaqa</root><sense>made</sense></sutra>
+<sutra msid="06.086"><root wsid="28.87" mdp="luwa" msid="06.086-01">luwa</root><sense>saMSlezaRe</sense></sutra>
+<sutra msid="06.087"><root wsid="28.88" mdp="kfqa" msid="06.087-01,01p">kfqa</root><sense mdp="Ganatve">Gasane</sense></sutra>
+<sutra msid="06.088"><root wsid="28.89" msid="06.088-01">kuqa</root><sense>bAlye</sense></sutra>
+<sutra msid="06.089"><root wsid="28.90" msid="06.089-01">puqa</root><sense>utsarge</sense></sutra>
+<sutra msid="06.090"><root wsid="28.91" msid="06.090-01">Guwa</root><sense>pratIGAte</sense></sutra>
+<sutra msid="06.091"><root wsid="28.92" msid="06.091-01">tuqa</root><sense>toqane</sense></sutra>
+<sutra msid="06.092"><root wsid="28.93" msid="06.092-01">Tuqa</root><root wsid="28.94" mdp="sPuqa" mdp1="sTuqa" msid="06.092-02">sTuqa</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="06.093"><root wsid="28.95" msid="06.093-01,02p">sPura</root><sense mdp="saYcalane">sPuraRe</sense></sutra>
+<sutra msid="06.093"><root wsid="28.96" msid="06.093-02">sPula</root><sense>saYcalane</sense></sutra>
+<sutra msid="06.094"><root wsid="28.97" msid="06.094-01">sPuqa</root><root wsid="28.98" msid="06.094-02">cuqa</root><root wsid="28.99" mdp="bruqa" msid="06.094-03">bruqa</root><sense>saMvaraRe </sense><root wsid="28.100" nomdp="yes" msid="06.094-01p">kruqa</root><root wsid="28.101" nomdp="yes" msid="06.094-02p">Bfqa</root><root wsid="28.102" nomdp="yes" msid="06.094-">huqa</root></sutra>
+<sutra msid="06.096"><root wsid="28.103" msid="06.096-01">gurI</root><sense>udyamane</sense></sutra>
+<sutra msid="06.098"><root wsid="28.104" mdp1="nU" msid="06.098-01">nU</root><sense>stavane</sense></sutra>
+<sutra msid="06.099"><root wsid="28.105" msid="06.099-01">DU</root><sense>viDUnane</sense></sutra>
+<sutra msid="06.101"><root wsid="28.106" msid="06.101-01">gu</root><sense>purIzotsarge</sense></sutra>
+<sutra msid="06.102"><root wsid="28.107" msid="06.102-01">Dru</root><sense mdp="gatisTEyayoH">gatisTEryayoH</sense></sutra>
+<sutra msid="06.104"><root wsid="28.108" msid="06.104-01">kuN</root><sense>Sabde</sense></sutra>
+</subsection>
+<subsection>
+<sutra msid="06.106"><root wsid="28.109" msid="06.106-01">pfN</root><sense>vyAyAme</sense></sutra>
+<sutra msid="06.107"><root wsid="28.110" msid="06.107-01">mfN</root><sense>prARatyAge</sense></sutra>
+<sutra msid="06.109"><root wsid="28.111" msid="06.109-01">ri</root><root wsid="28.112" msid="06.109-02">pi</root><sense>gatO</sense></sutra>
+<sutra msid="06.110"><root wsid="28.113" msid="06.110-01">Di</root><sense>DAraRe</sense></sutra>
+<sutra msid="06.111"><root wsid="28.114" msid="06.111-01">kzi</root><sense>nivAsagatyoH</sense></sutra>
+<sutra msid="06.113"><root wsid="28.115" mdp1="sU" msid="06.113-01">sU</root><sense>preraRe</sense></sutra>
+<sutra msid="06.114"><root wsid="28.116" msid="06.114-01">kF</root><sense>vikzepe</sense></sutra>
+<sutra msid="06.115"><root wsid="28.117" msid="06.115-01">gF</root><sense>nigaraRe</sense></sutra>
+<sutra msid="06.117"><root wsid="28.118" msid="06.117-01">dfN</root><sense>Adare</sense></sutra>
+<sutra msid="06.118"><root wsid="28.119" msid="06.118-01">DfN</root><sense>avasTAne</sense></sutra>
+<sutra msid="06.120"><root wsid="28.120" mdp="pracCa" msid="06.120-01">pracCa</root><sense>jYIpsAyAm</sense></sutra>
+<sutra msid="06.122"><root wsid="28.121" msid="06.122-01">sfja</root><sense>visarge</sense></sutra>
+<sutra msid="06.123"><root wsid="28.122" mdp1="(wu) majjo" msid="06.123-01">(wu) majjo</root><sense>SudDO</sense></sutra>
+<sutra msid="06.124"><root wsid="28.123" msid="06.124-01">rujo</root><sense>BaNge</sense></sutra>
+<sutra msid="06.125"><root wsid="28.124" msid="06.125-01">Bujo</root><sense>kOwilye</sense></sutra>
+<sutra msid="06.126"><root wsid="28.125" msid="06.126-01">Cupa</root><sense>sparSe</sense></sutra>
+<sutra msid="06.127"><root wsid="28.126" msid="06.127-01">ruSa</root><root wsid="28.126a" msid="06.127-02">riSa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="06.128"><root wsid="28.127" msid="06.128-01">liSa</root><sense>gatO</sense></sutra>
+<sutra msid="06.129"><root wsid="28.128" msid="06.129-01">spfSa</root><sense>saMsparSane</sense></sutra>
+<sutra msid="06.xxxx"><root wsid="28.129">viCa</root><sense>gatO</sense></sutra>
+<sutra msid="06.131"><root wsid="28.130" msid="06.131-01">viSa</root><sense>praveSane</sense></sutra>
+<sutra msid="06.132"><root wsid="28.131" msid="06.132-01">mfSa</root><sense>AmarSane</sense></sutra>
+<sutra msid="06.133"><root wsid="28.132" mdp1="nuda" msid="06.133-01">nuda</root><sense>preraRe</sense></sutra>
+<sutra msid="06.134"><root wsid="28.133" mdp1="sadx" msid="06.134-01">sadx</root><sense>viSaraRagatyavasAdanezu</sense></sutra>
+<sutra msid="06.135"><root wsid="28.134" msid="06.135-01">Sadx</root><sense mdp="Satane">SAtane</sense></sutra>
+<sutra msid="06.137"><root wsid="28.135" msid="06.137-01">mila</root><sense>saNgamane</sense></sutra>
+<sutra msid="06.138"><root wsid="28.136" msid="06.138-01">mucx</root><sense>mokzaRe</sense></sutra>
+<sutra msid="06.139"><root wsid="28.137" msid="06.139-01">lupx</root><sense>Cedane</sense></sutra>
+<sutra msid="06.140"><root wsid="28.138" msid="06.140-01">vidx</root><sense>lABe</sense></sutra>
+<sutra msid="06.141"><root wsid="28.139" msid="06.141-01">lipa</root><sense>upadehe</sense></sutra>
+<sutra msid="06.142"><root wsid="28.140" mdp1="sica" msid="06.142-01">sica</root><sense>kzaraRe</sense></sutra>
+<sutra msid="06.144"><root wsid="28.141" msid="06.144-01">kftI</root><sense>Cedane</sense></sutra>
+<sutra msid="06.146"><root wsid="28.142" msid="06.146-01">Kida</root><sense>pariGAte</sense></sutra>
+<sutra msid="06.148"><root wsid="28.143" msid="06.148-01,01p">piSa</root><sense>avayave</sense></sutra>
+</subsection>
+</section>
+<section id="VII.29" vp="368" numroots="25" nfound="25"><text>29.</text>
+<sutra msid="07.001"><root wsid="29.1" msid="07.001-01">ruDir</root><sense>AvaraRe</sense></sutra>
+<sutra msid="07.002"><root wsid="29.2" msid="07.002-01">Bidir</root><sense>vidAraRe</sense></sutra>
+<sutra msid="07.003"><root wsid="29.3" msid="07.003-01">Cidir</root><sense>dvEDIkaraRe</sense></sutra>
+<sutra msid="07.004"><root wsid="29.4" msid="07.004-01">ricir</root><sense>virecane</sense></sutra>
+<sutra msid="07.005"><root wsid="29.5" mdp="vijir" msid="07.005-01">vijir</root><sense>pfTagBAve</sense></sutra>
+<sutra msid="07.006"><root wsid="29.6" msid="07.006-01">kzudir</root><sense>sampezaRe</sense></sutra>
+<sutra msid="07.007"><root wsid="29.7" msid="07.007-01">yujir</root><sense>yoge</sense></sutra>
+<sutra msid="07.009"><root wsid="29.8" mdp="ucCfdir" mdp1="(u) Cfdir" msid="07.009-01">(u) Cfdir</root><sense>dIptidevanayoH</sense></sutra>
+<sutra msid="07.010"><root wsid="29.9" mdp1="(u) tfdir" msid="07.010-01">(u) tfdir</root><sense>hiMsAnAdarayoH</sense></sutra>
+<sutra msid="07.012"><root wsid="29.10" msid="07.012-01">kftI</root><sense>vezwane</sense></sutra>
+<sutra msid="07.014"><root wsid="29.11" mdp1="(Yi) inDI" msid="07.014-01">(Yi) inDI</root><sense>dIptO</sense></sutra>
+<sutra msid="07.016"><root wsid="29.12" msid="07.016-01">Kida</root><sense>dEnye</sense></sutra>
+<sutra msid="07.017"><root wsid="29.13" msid="07.017-01">vida</root><sense>vicAraRe</sense></sutra>
+<sutra msid="07.019"><root wsid="29.14" mdp1="Sizx" msid="07.019-01">Sizx</root><sense>viSezaRe</sense></sutra>
+<sutra msid="07.020"><root wsid="29.15" msid="07.020-01">pizx</root><sense>saMcUrRane</sense></sutra>
+<sutra msid="07.021"><root wsid="29.16" mdp1="BaYjo" msid="07.021-01">BaYjo</root><sense>Amardane</sense></sutra>
+<sutra msid="07.022"><root wsid="29.17" msid="07.022-01">Buja</root><sense>pAlanAByavahArayoH</sense></sutra>
+<sutra msid="07.024"><root wsid="29.18" msid="07.024-01">tfha</root><root wsid="29.19" msid="07.024-">hisi</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="07.025"><mdproot wsid="29.X19">hisi</mdproot><sense>hiMsAyAm</sense></sutra>
+<sutra msid="07.026"><root wsid="29.20" msid="07.026-01">undI</root><sense>kledane</sense></sutra>
+<sutra msid="07.027"><root wsid="29.21" mdp1="aYjU" msid="07.027-01">aYjU</root><sense>vyaktimrakzaRakAntigatizu</sense></sutra>
+<sutra msid="07.028"><root wsid="29.22" mdp1="taYcU" msid="07.028-01">taYcU</root><sense>saNkocane</sense></sutra>
+<sutra msid="07.029"><root wsid="29.23" mdp1="(o) vijI" msid="07.029-01">(o) vijI</root><sense>BayacalanayoH</sense></sutra>
+<sutra msid="07.030"><root wsid="29.24" msid="07.030-01">vfjI</root><sense>varjane</sense></sutra>
+<sutra msid="07.031"><root wsid="29.25" msid="07.031-01">pfcI</root><sense>samparke</sense></sutra>
+</section>
+<section id="VIII.30" vp="369" numroots="10" nfound="10"><text>30.</text>
+<sutra msid="08.001"><root wsid="30.1" msid="08.001-01">tanu</root><sense>vistAre</sense></sutra>
+<sutra msid="08.002"><root wsid="30.2" mdp1="saRu" msid="08.002-01">saRu</root><sense>dAne</sense></sutra>
+<sutra msid="08.003"><root wsid="30.3" msid="08.003-01">kzaRu</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="08.004"><root wsid="30.4" msid="08.004-01">kziRu</root><sense>ca</sense></sutra>
+<sutra msid="08.005"><root wsid="30.5" msid="08.005-01">fRu</root><sense>gatO</sense></sutra>
+<sutra msid="08.006"><root wsid="30.6" msid="08.006-01">tfRu</root><sense>adane</sense></sutra>
+<sutra msid="08.007"><root wsid="30.7" msid="08.007-01">GfRu</root><sense>dIptO</sense></sutra>
+<sutra msid="08.009"><root wsid="30.8" msid="08.009-01">vanu</root><sense>yAcane</sense></sutra>
+<sutra msid="08.010"><root wsid="30.9" msid="08.010-01">manu</root><sense>avaboDane</sense></sutra>
+<sutra msid="08.012"><root wsid="30.10" mdp1="(qu) kfY" msid="08.012-01">(qu) kfY</root><sense>karaRe</sense></sutra>
+</section>
+<section id="IX.31" vp="369-370" numroots="61" nfound="60"><text>31.</text>
+<sutra msid="09.001"><root wsid="31.1" mdp1="(qu) krIY" msid="09.001-01">(qu) krIY</root><sense mdp="dravyavinimaye">dravyavinamaye</sense></sutra>
+<sutra msid="09.002"><root wsid="31.2" msid="09.002-01">prIY</root><sense>tarpaRe kAntO ca</sense></sutra>
+<sutra msid="09.003"><root wsid="31.3" msid="09.003-01">SrIY</root><sense>pAke</sense></sutra>
+<sutra msid="09.004"><root wsid="31.4" mdp="mIN" mdp1="mIY" msid="09.004-01">mIY</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.005"><root wsid="31.5" mdp1="siY" msid="09.005-01">siY</root><sense>banDane</sense></sutra>
+<sutra msid="09.006"><root wsid="31.6" msid="09.006-01">skuY</root><sense mdp="ApravaRe">AvaraRe</sense><root wsid="31.7" nomdp="yes" msid="09.006-">stamBu</root><root wsid="31.7a" nomdp="yes" msid="09.006-">stunBu</root><root wsid="31.8" nomdp="yes" msid="09.006-">skanBu</root><root wsid="31.8a" nomdp="yes" msid="09.006-">skunBu</root></sutra>
+<sutra msid="09.007"><root wsid="31.9" msid="09.007-01">yuY</root><sense>banDane</sense></sutra>
+<sutra msid="09.009"><root wsid="31.10" msid="09.009-01">knUY</root><sense>Sabde</sense></sutra>
+<sutra msid="09.010"><root wsid="31.11" msid="09.010-01">drUY</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.011"><root wsid="31.12" msid="09.011-01">pUY</root><sense>pavane</sense></sutra>
+<sutra msid="09.012"><root wsid="31.13" msid="09.012-01">lUY</root><sense>Cedane</sense></sutra>
+<sutra msid="09.013"><root wsid="31.14" msid="09.013-01">stFY</root><sense>AcCAdane</sense></sutra>
+<sutra msid="09.014"><root wsid="31.15" msid="09.014-01">kFY</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.015"><root wsid="31.16" msid="09.015-01">vFY</root><sense>varaRe</sense></sutra>
+<sutra msid="09.016"><root wsid="31.17" msid="09.016-01">DUY</root><sense>kampane</sense></sutra>
+<sutra msid="09.018"><root wsid="31.18" msid="09.018-01">SF</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.019"><root wsid="31.19" msid="09.019-01">pF</root><sense>pAlanapUraRayoH</sense></sutra>
+<sutra msid="09.020"><mdpsutra>(X20. spF) hiMsAyAm {mdp}</mdpsutra></sutra>
+<sutra msid="09.021"><root wsid="31.20" msid="09.021-01">vF</root><sense>varaRe</sense></sutra>
+<sutra msid="09.022"><root wsid="31.21" msid="09.022-01">BF</root><sense>Bartsane</sense></sutra>
+<sutra msid="09.023"><root wsid="31.22" msid="09.023-01">mF</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.024"><root wsid="31.23" msid="09.024-01">dF</root><sense>vidAraRe</sense></sutra>
+<sutra msid="09.025"><root wsid="31.24" msid="09.025-01">jF</root><sense>vayohAnO</sense></sutra>
+<sutra msid="09.026"><root wsid="31.25" msid="09.026-01">nF</root><sense>naye</sense></sutra>
+<sutra msid="09.027"><root wsid="31.26" msid="09.027-01">kF</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.028"><root wsid="31.27" msid="09.028-01">F</root><sense>gatO</sense></sutra>
+<sutra msid="09.029"><root wsid="31.28" msid="09.029-01">gF</root><sense>Sabde</sense></sutra>
+<sutra msid="09.031"><root wsid="31.29" msid="09.031-01">jyA</root><sense>vayohAnO</sense></sutra>
+<sutra msid="09.032"><root wsid="31.30" msid="09.032-01">rI</root><sense>gatirezaRayoH</sense></sutra>
+<sutra msid="09.033"><root wsid="31.31" msid="09.033-01">lI</root><sense>SlezaRe</sense></sutra>
+<sutra msid="09.034"><root wsid="31.32" msid="09.034-01">vlI</root><sense>varaRe</sense></sutra>
+<sutra msid="09.035"><mdpsutra>(X33. plI) gatO {mdp}</mdpsutra></sutra>
+<sutra msid="09.037"><root wsid="31.33" msid="09.037-01">vrI</root><sense>varaRe</sense></sutra>
+<sutra msid="09.038"><root wsid="31.34" msid="09.038-01,01p">BrI</root><sense>Baye</sense></sutra>
+<sutra msid="09.039"><root wsid="31.35" msid="09.039-01">kzIz</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.040"><root wsid="31.36" msid="09.040-01">jYA</root><sense>avaboDane</sense></sutra>
+<sutra msid="09.041"><root wsid="31.37" msid="09.041-01">banDa</root><sense>banDane</sense></sutra>
+<sutra msid="09.043"><root wsid="31.38" msid="09.043-01">vfN</root><sense>samBaktO</sense></sutra>
+<sutra msid="09.045"><root wsid="31.39" msid="09.045-01">SranTa</root><sense>vimocanapratiharzayoH</sense></sutra>
+<sutra msid="09.046"><root wsid="31.40" msid="09.046-01">manTa</root><sense>viloqane</sense></sutra>
+<sutra msid="09.047"><root wsid="31.41" msid="09.047-01">granTa</root><sense>sandarBe</sense></sutra>
+<sutra msid="09.048"><root wsid="31.42" msid="09.048-01,02p">kunTa</root><sense>saMSlezaRe</sense></sutra>
+<sutra msid="09.049"><root wsid="31.43" msid="09.049-01">mfda</root><sense>kzode</sense></sutra>
+<sutra msid="09.050"><root wsid="31.44" msid="09.050-01,01p,02p">mfqa</root><sense mdp="ca">suKe</sense></sutra>
+<sutra msid="09.051"><root wsid="31.45" msid="09.051-01">guDa</root><sense>roze</sense></sutra>
+<sutra msid="09.052"><root wsid="31.46" msid="09.052-01">kuza</root><sense>nizkarze</sense></sutra>
+<sutra msid="09.053"><root wsid="31.47" msid="09.053-01">kzuBa</root><sense>saMcalane</sense></sutra>
+<sutra msid="09.054"><root wsid="31.48" mdp1="naBa" msid="09.054-01">naBa</root><root wsid="31.49" msid="09.054-02">tuBa</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="09.055"><root wsid="31.50" mdp="kliSu" msid="09.055-01">kliSu</root><sense>vibADane</sense></sutra>
+<sutra msid="09.056"><root wsid="31.51" msid="09.056-01">aSa</root><sense>Bojane</sense></sutra>
+<sutra msid="09.057"><root wsid="31.52" mdp1="(u) Drasa" msid="09.057-01">(u) Drasa</root><sense>uYCe</sense></sutra>
+<sutra msid="09.058"><root wsid="31.53" msid="09.058-01">iza</root><sense>ABIkzRye</sense></sutra>
+<sutra msid="09.059"><root wsid="31.54" msid="09.059-01">viza</root><sense>viprayoge</sense></sutra>
+<sutra msid="09.060"><root wsid="31.55" msid="09.060-01">pruza</root><root wsid="31.56" msid="09.060-02">pluza</root><sense mdp="snehanasevanapUraRezu">snehanasecanapUraRezu</sense></sutra>
+<sutra msid="09.061"><root wsid="31.57" msid="09.061-01">puza</root><sense>puzwO</sense></sutra>
+<sutra msid="09.062"><root wsid="31.58" msid="09.062-01">muza</root><sense>steye</sense></sutra>
+<sutra msid="09.063"><root wsid="31.59" msid="09.063-01">Kaca</root><sense>BUtaprAdurBAve</sense></sutra>
+<sutra msid="09.xxxx"><root wsid="31.60">heQa</root><sense>ca</sense></sutra>
+<sutra msid="09.065"><root wsid="31.61" msid="09.065-01">graha</root><sense>upAdAne</sense></sutra>
+</section>
+<section id="X.32" vp="371-374" numroots="133" nfound="137"><text>32. {sd parasmEpadinaH}</text>
+<sutra msid="10.001"><root wsid="32.1" msid="10.001-01">cura</root><sense>steye</sense></sutra>
+<sutra msid="10.002"><root wsid="32.2" msid="10.002-01">citi</root><sense>smftyAm</sense></sutra>
+<sutra msid="10.003"><root wsid="32.3" msid="10.003-01">yatri</root><sense>saNkocane</sense></sutra>
+<sutra msid="10.004"><root wsid="32.4" msid="10.004-01">sPuqi</root><sense>parihAse</sense></sutra>
+<sutra msid="10.005"><root wsid="32.5" msid="10.005-01">lakza</root><sense mdp="darSanANkanayoH">darSanANkayoH</sense></sutra>
+<sutra msid="10.006"><root wsid="32.6" msid="10.006-01">kudri</root><sense>anftaBAzaRe</sense></sutra>
+<sutra msid="10.007"><root wsid="32.7" msid="10.007-01">laqa</root><sense>upasevAyAm</sense></sutra>
+<sutra msid="10.008"><root wsid="32.8" msid="10.008-01">midi</root><sense>snehane</sense></sutra>
+<sutra msid="10.009"><root wsid="32.9" mdp1="olaqi" msid="10.009-01">olaqi</root><sense>utkzepaRe</sense></sutra>
+<sutra msid="10.010"><root wsid="32.10" msid="10.010-01">jala</root><sense>apavAraRe</sense></sutra>
+<sutra msid="10.011"><root wsid="32.11" msid="10.011-01">pIqa</root><sense>avagAhane</sense></sutra>
+<sutra msid="10.012"><root wsid="32.12" msid="10.012-01">nawa</root><sense mdp="avasyandane">avaspandane</sense></sutra>
+<sutra msid="10.013"><root wsid="32.13" msid="10.013-01">SraTa</root><sense>prayatne</sense></sutra>
+<sutra msid="10.014"><root wsid="32.14" msid="10.014-01">baDa</root><sense>saMyamane</sense></sutra>
+<sutra msid="10.015"><root wsid="32.15" msid="10.015-01">pF</root><sense>pUraRe</sense></sutra>
+<sutra msid="10.016"><root wsid="32.16" msid="10.016-01">Urja</root><sense>balaprARanayoH</sense></sutra>
+<sutra msid="10.017"><root wsid="32.17" msid="10.017-01">pakza</root><sense>parigrahe</sense></sutra>
+<sutra msid="10.018"><mdproot wsid="32.X18">varRa {mdp}</mdproot><root wsid="32.18" msid="10.018-02">cUrRa</root><sense mdp="preraRe">prezaRe</sense></sutra>
+<sutra msid="10.019"><root wsid="32.19" msid="10.019-01">praTa</root><sense>praKyAne</sense></sutra>
+<sutra msid="10.020"><root wsid="32.20" msid="10.020-01">pfTa</root><sense>prakzepe</sense></sutra>
+<sutra msid="10.021"><root wsid="32.21" mdp1="samba" msid="10.021-01">samba</root><sense>sambanDane</sense></sutra>
+<sutra msid="10.022"><root wsid="32.22" msid="10.022-01">Bakza</root><sense>adane</sense></sutra>
+<sutra msid="10.023"><root wsid="32.23" msid="10.023-01">kuwwa</root><sense>CedanaBartsanayoH</sense></sutra>
+<sutra msid="10.024"><root wsid="32.24" msid="10.024-01">puwwa</root><root wsid="32.24a" msid="10.024-02">cuwwa</root><sense>alpIBAve</sense></sutra>
+<sutra msid="10.025"><root wsid="32.25" msid="10.025-01">awwa</root><root wsid="32.26" mdp1="suwwa" msid="10.025-02">suwwa</root><sense>anAdare</sense></sutra>
+<sutra msid="10.026"><root wsid="32.27" mdp="luRWa" msid="10.026-01">luRWa</root><sense>steye</sense></sutra>
+<sutra msid="10.027"><root wsid="32.28" msid="10.027-01">SaWa</root><root wsid="32.29" msid="10.027-02">SvaWa</root><sense mdp="asaMskAragatyoH">saMskAragatyoH</sense></sutra>
+<sutra msid="10.028"><root wsid="32.30" msid="10.028-01">tuji</root><root wsid="32.31" msid="10.028-02">piji</root><sense>hiMsAbalAdAnaniketanezu</sense></sutra>
+<sutra msid="10.029"><root wsid="32.32" msid="10.029-01">pisa</root><sense>gatO</sense></sutra>
+<sutra msid="10.030"><root wsid="32.33" mdp1="sAntva" msid="10.030-01">sAntva</root><sense>sAmaprayoge</sense></sutra>
+<sutra msid="10.031"><root wsid="32.34" mdp1="svalka" msid="10.031-01">svalka</root><root wsid="32.35" msid="10.031-02">valka</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="10.032"><root wsid="32.36" mdp="zRiha" mdp1="sniha" msid="10.032-01">sniha</root><sense>snehane</sense></sutra>
+<sutra msid="10.033"><root wsid="32.37" msid="10.033-01">smiwa</root><sense>anAdare</sense></sutra>
+<sutra msid="10.034"><root wsid="32.38" msid="10.034-01">Sliza</root><sense>SlezaRe</sense></sutra>
+<sutra msid="10.035"><root wsid="32.39" msid="10.035-01">paTi</root><sense>gatO</sense></sutra>
+<sutra msid="10.036"><root wsid="32.40" mdp="picCa" msid="10.036-01">picCa</root><sense>kuwwane</sense></sutra>
+<sutra msid="10.037"><root wsid="32.41" msid="10.037-01">Cadi</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="10.038"><root wsid="32.42" msid="10.038-01">SraRa</root><sense>dAne</sense></sutra>
+<sutra msid="10.039"><root wsid="32.43" msid="10.039-01">taqa</root><sense>AGAte</sense></sutra>
+<sutra msid="10.040"><root wsid="32.44" msid="10.040-01">Kaqa</root><root wsid="32.44a" msid="10.040-02">Kaqi</root><root wsid="32.44b" msid="10.040-03">kaqi</root><sense>Bedane</sense></sutra>
+<sutra msid="10.041"><root wsid="32.45" msid="10.041-01">kuqi</root><sense>rakzaRe</sense></sutra>
+<sutra msid="10.042"><root wsid="32.46" msid="10.042-01,01p">guqi</root><sense>vezwane</sense></sutra>
+<sutra msid="10.043"><root wsid="32.47" msid="10.043-01">Kuqi</root><sense>KaRqane</sense></sutra>
+<sutra msid="10.044"><root wsid="32.48" msid="10.044-01">vawi</root><sense>viBAjane</sense></sutra>
+<sutra msid="10.045"><root wsid="32.49" msid="10.045-01">maqi</root><sense>BUzAyAM harze ca</sense></sutra>
+<sutra msid="10.046"><root wsid="32.50" msid="10.046-01">Baqi</root><sense>kalyARe</sense></sutra>
+<sutra msid="10.047"><root wsid="32.51" msid="10.047-01">Carda</root><sense>vamane</sense></sutra>
+<sutra msid="10.048"><root wsid="32.52" msid="10.048-01">pusta</root><root wsid="32.52a" msid="10.048-02">busta</root><sense>AdarAnAdarayoH</sense></sutra>
+<sutra msid="10.049"><root wsid="32.53" msid="10.049-01">cuda</root><sense>saYcodane</sense></sutra>
+<sutra msid="10.050"><root wsid="32.54" msid="10.050-01">nakka</root><root wsid="32.55" msid="10.050-02">Dakka</root><sense>nASane</sense></sutra>
+<sutra msid="10.051"><root wsid="32.56" msid="10.051-01">cakka</root><root wsid="32.56a" msid="10.051-02">cukka</root><sense>vyaTane</sense></sutra>
+<sutra msid="10.052"><root wsid="32.57" msid="10.052-01">kzala</root><sense>SOcakarmaRi</sense></sutra>
+<sutra msid="10.053"><root wsid="32.58" msid="10.053-01">tala</root><sense>pratizWAyAm</sense></sutra>
+<sutra msid="10.054"><root wsid="32.59" msid="10.054-01">tula</root><sense>unmAne</sense></sutra>
+<sutra msid="10.055"><root wsid="32.60" msid="10.055-01">dula</root><sense>utkzepe</sense></sutra>
+<sutra msid="10.056"><root wsid="32.61" msid="10.056-01">pula</root><sense>mahattve</sense></sutra>
+<sutra msid="10.057"><root wsid="32.62" msid="10.057-01">cula</root><sense>samucCrAye</sense></sutra>
+<sutra msid="10.058"><root wsid="32.63" msid="10.058-01">mUla</root><sense mdp="rohaRe">rohane</sense></sutra>
+<sutra msid="10.059"><root wsid="32.64" msid="10.059-01">kala</root><root wsid="32.65" mdp="vila" msid="10.059-02">vila</root><sense>kzepe</sense></sutra>
+<sutra msid="10.060"><root wsid="32.66" msid="10.060-01">bila</root><sense>Bedane</sense></sutra>
+<sutra msid="10.061"><root wsid="32.67" msid="10.061-01">tila</root><sense>snehane</sense></sutra>
+<sutra msid="10.062"><root wsid="32.68" mdp="cala" msid="10.062-01">cala</root><sense>BftO</sense></sutra>
+<sutra msid="10.063"><root wsid="32.69" msid="10.063-01">pAla</root><sense>rakzaRe</sense></sutra>
+<sutra msid="10.064"><root wsid="32.70" msid="10.064-01">lUza</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.065"><root wsid="32.71" msid="10.065-01">Sulba</root><sense>mAne</sense></sutra>
+<sutra msid="10.066"><root wsid="32.72" msid="10.066-01">cuwa</root><sense>Cedane</sense></sutra>
+<sutra msid="10.067"><root wsid="32.72a" msid="10.067-01">muwa</root><sense>saMcUrRane</sense></sutra>
+<sutra msid="10.068"><mdproot wsid="32.X74">paqi {mdp}</mdproot><root wsid="32.73" msid="10.068-02">pasi</root><sense>nASane</sense></sutra>
+<sutra msid="10.069"><root wsid="32.74" mdp="vraja" msid="10.069-01">vraja</root><sense>mArgasaMskAragatyoH</sense></sutra>
+<sutra msid="10.070"><root wsid="32.75" msid="10.070-01">Sulka</root><sense>atisparSane</sense></sutra>
+<sutra msid="10.071"><root wsid="32.76" mdp="capi" msid="10.071-01">capi</root><sense>gatyAm</sense></sutra>
+<sutra msid="10.072"><root wsid="32.77" msid="10.072-01">kzapi</root><sense>kzAntyAm</sense></sutra>
+<sutra msid="10.073"><root wsid="32.78" msid="10.073-01">kzaji</root><sense>kfcCrajIvane</sense></sutra>
+<sutra msid="10.074"><root wsid="32.79" msid="10.074-01">Svarta</root><sense>gatyAm</sense></sutra>
+<sutra msid="10.075"><mdpsutra>(X80. SvaBra) ca {mdp}</mdpsutra></sutra>
+<sutra msid="10.076"><root wsid="32.80" msid="10.076-01">jYapa</root><sense mdp="micca">jYAne jYApane</sense></sutra>
+<sutra msid="10.077"><root wsid="32.81" msid="10.077-01">yama</root><sense>ca parivezaRe</sense></sutra>
+<sutra msid="10.078"><root wsid="32.82" mdp="caha" msid="10.078-01">caha</root><sense>parikalkane</sense></sutra>
+<sutra msid="10.079"><root wsid="32.83" msid="10.079-01">raha</root><sense>tyAge</sense></sutra>
+<sutra msid="10.080"><root wsid="32.84" msid="10.080-01">bala</root><sense>prARane</sense></sutra>
+<sutra msid="10.081"><root wsid="32.85" msid="10.081-01">ciY</root><sense>cayane</sense></sutra>
+<sutra msid="10.083"><root wsid="32.86" msid="10.083-01">Gawwa</root><sense mdp="calane">saMcalane</sense></sutra>
+<sutra msid="10.084"><root wsid="32.87" mdp="asta" msid="10.084-01">asta</root><sense>saNGAte</sense></sutra>
+<sutra msid="10.085"><root wsid="32.88" msid="10.085-01">Kawwa</root><sense>saMvaraRe</sense></sutra>
+<sutra msid="10.086"><root wsid="32.89" mdp1="sawwa" msid="10.086-01">sawwa</root><root wsid="32.90" msid="10.086-02">sPiwwa</root><root wsid="32.91" msid="10.086-03">cubi</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.087"><root wsid="32.93" msid="10.087-01">pUla</root><sense>saMGAte</sense></sutra>
+<sutra msid="10.088"><root wsid="32.94" msid="10.088-01">puMsa</root><sense mdp="aBivarDane">aBimarDane</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="32.95">vyapa</root><sense>kzepe</sense></sutra>
+<sutra msid="10.089"><root wsid="32.96" msid="10.089-01">waki</root><sense>banDane</sense></sutra>
+<sutra msid="10.090"><root wsid="32.97" msid="10.090-01">DUsa</root><sense mdp="kAntikaraRe">kAntIkaraRe</sense></sutra>
+<sutra msid="10.091"><root wsid="32.98" msid="10.091-01">kIwa</root><sense>varRe</sense></sutra>
+<sutra msid="10.092"><root wsid="32.99" mdp="cUrRa" msid="10.092-01">cUrRa</root><sense>saNkocane</sense></sutra>
+<sutra msid="10.093"><root wsid="32.100" msid="10.093-01">pUja</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="10.094"><root wsid="32.101" msid="10.094-01">arka</root><sense>stavane</sense></sutra>
+<sutra msid="10.095"><root wsid="32.102" msid="10.095-01">SuWa</root><sense>Alasye</sense></sutra>
+<sutra msid="10.096"><root wsid="32.103" msid="10.096-01">SuWi</root><sense>SozaRe</sense></sutra>
+<sutra msid="10.097"><root wsid="32.104" msid="10.097-01">juqa</root><sense>preraRe</sense></sutra>
+<sutra msid="10.098"><root wsid="32.105" msid="10.098-01">gaja</root><root wsid="32.106" msid="10.098-02">mArja</root><sense mdp="SabdArTe">SabdArTO</sense></sutra>
+<sutra msid="10.099"><root wsid="32.107" msid="10.099-01">Gf</root><sense>prasravaRe</sense></sutra>
+<sutra msid="10.100"><root wsid="32.108" msid="10.100-01">paci</root><sense>vistAravacane</sense></sutra>
+<sutra msid="10.101"><root wsid="32.109" msid="10.101-01">tija</root><sense>niSAne</sense></sutra>
+<sutra msid="10.102"><root wsid="32.110" msid="10.102-01">kFta</root><sense>saMSabdane</sense></sutra>
+<sutra msid="10.103"><root wsid="32.111" msid="10.103-01">varDa</root><sense>CedanapUraRayoH</sense></sutra>
+<sutra msid="10.104"><root wsid="32.112" msid="10.104-01">kubi</root><sense mdp="CAdane">AcCAdane</sense></sutra>
+<sutra msid="10.105"><root wsid="32.113" msid="10.105-01,02p">lubi</root><root wsid="32.114" msid="10.105-02,01p">tubi</root><sense mdp="adarSane">ardane</sense></sutra>
+<sutra msid="10.106"><root wsid="32.115" msid="10.106-01">hlapa</root><sense>vyaktAyAM vAci</sense></sutra>
+<sutra msid="10.107"><root wsid="32.116" msid="10.107-01">cuwi</root><sense>Cedane</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="32.117">mfqi</root><root wsid="32.117a">tuqi</root><sense>NONE</sense></sutra>
+<sutra msid="10.108"><root wsid="32.118" msid="10.108-01">ila</root><sense>preraRe</sense></sutra>
+<sutra msid="10.109"><root wsid="32.119" msid="10.109-01">mrakza</root><sense mdp="mlecCane">mrakzaRe</sense></sutra>
+<sutra msid="10.110"><root wsid="32.120" mdp="mlecCa" msid="10.110-01">mlecCa</root><sense>avyaktAyAM vAci</sense></sutra>
+<sutra msid="10.111"><root wsid="32.121" mdp="brUsa" msid="10.111-01">brUsa</root><root wsid="32.122" mdp="barha" msid="10.111-02">barha</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="32.123">garja</root><root wsid="32.123a">garda</root><sense>Sabde</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="32.124">garDa</root><sense>aBikAMkzAyAM</sense></sutra>
+<sutra msid="10.112"><root wsid="32.125" msid="10.112-01">gurda</root><root wsid="32.126" nomdp="yes" msid="10.112-01p">purva</root><sense mdp="pUrvaniketane">niketane</sense></sutra>
+<sutra msid="10.113"><root wsid="32.127" msid="10.113-01,01p">jasi</root><sense>rakzaRe</sense></sutra>
+<sutra msid="10.114"><root wsid="32.128" msid="10.114-01">Iqa</root><sense>stutO</sense></sutra>
+<sutra msid="10.115"><root wsid="32.129" msid="10.115-01">jasu</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.116"><root wsid="32.130" msid="10.116-01">piqi</root><sense>saMGAte</sense></sutra>
+<sutra msid="10.117"><root wsid="32.131" msid="10.117-01">ruza</root><sense>roze</sense></sutra>
+<sutra msid="10.118"><root wsid="32.132" msid="10.118-01">qipa</root><sense>kzepe</sense></sutra>
+<sutra msid="10.119"><root wsid="32.133" mdp="zwUpa" mdp1="stUpa" msid="10.119-01">stUpa</root><sense>samucCrAye</sense></sutra>
+</section>
+<section id="X.33" vp="374-376" numroots="130" nfound="127"><text>33.</text>
+<sutra msid="10.121"><root wsid="33.1" msid="10.121-01">cita</root><sense mdp="saYcetane">saMcatane</sense></sutra>
+<sutra msid="10.122"><root wsid="33.2" msid="10.122-01">daSi</root><sense>daMSane</sense></sutra>
+<sutra msid="10.123"><root wsid="33.3" msid="10.123-01,02p">dasi</root><sense>darSanadaMSanayoH</sense></sutra>
+<sutra msid="10.124"><root wsid="33.4" msid="10.124-01">qapa</root><root wsid="33.4a" msid="10.124-02">qipa</root><sense>saMGAte</sense></sutra>
+<sutra msid="10.125"><root wsid="33.5" msid="10.125-01">tatri</root><sense>kuwumbaDAraRe</sense></sutra>
+<sutra msid="10.126"><root wsid="33.6" msid="10.126-01">matri</root><sense>guptaBAzaRe</sense></sutra>
+<sutra msid="10.127"><root wsid="33.7" msid="10.127-01">spaSa</root><sense>grahasaMSlezaRayoH</sense></sutra>
+<sutra msid="10.128"><root wsid="33.8" msid="10.128-01">tarja</root><root wsid="33.9" msid="10.128-02">Bartsa</root><sense mdp="santarjane">tarjane</sense></sutra>
+<sutra msid="10.129"><root wsid="33.10" mdp="basta" msid="10.129-01">basta</root><root wsid="33.11" msid="10.129-02">ganDa</root><sense>ardane</sense></sutra>
+<sutra msid="10.130"><root wsid="33.12" mdp="vizka" msid="10.130-01">vizka</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.131"><root wsid="33.13" msid="10.131-01">nizka</root><sense mdp="parimARe">parimAne</sense></sutra>
+<sutra msid="10.132"><root wsid="33.14" msid="10.132-01">lala</root><sense>IpsAyAm</sense></sutra>
+<sutra msid="10.133"><root wsid="33.15" msid="10.133-01">kURa</root><sense mdp="saNkocane">saNkoce</sense></sutra>
+<sutra msid="10.134"><root wsid="33.16" msid="10.134-01">tURa</root><sense>pUraRe</sense></sutra>
+<sutra msid="10.135"><root wsid="33.17" msid="10.135-01">BrURa</root><sense mdp="ASAyAm">ASAviSaMkayoH</sense></sutra>
+<sutra msid="10.136"><root wsid="33.18" msid="10.136-01">SaWa</root><sense>SlAGAyAm</sense></sutra>
+<sutra msid="10.137"><root wsid="33.19" msid="10.137-01">yakza</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="10.138"><root wsid="33.20" msid="10.138-01">syama</root><sense>vitarke</sense></sutra>
+<sutra msid="10.139"><root wsid="33.21" msid="10.139-01">gUra</root><sense>udyamane</sense></sutra>
+<sutra msid="10.140"><root wsid="33.22" msid="10.140-01">Sama</root><root wsid="33.23" msid="10.140-02">lakza</root><sense>Alocane</sense></sutra>
+<sutra msid="10.141"><root wsid="33.24" msid="10.141-01">kutsa</root><sense mdp="avakzepaRe">avakzepane</sense></sutra>
+<sutra msid="10.142"><root wsid="33.25" msid="10.142-01">truwa</root><sense>Cedane</sense></sutra>
+<sutra msid="10.143"><root wsid="33.26" msid="10.143-01">gala</root><sense mdp="SravaRe">sravaRe</sense></sutra>
+<sutra msid="10.144"><root wsid="33.27" msid="10.144-01">Bala</root><sense>ABaRqane</sense></sutra>
+<sutra msid="10.145"><root wsid="33.28" msid="10.145-01">kUwa</root><sense mdp="apradAne">aprasAde</sense></sutra>
+<sutra msid="10.147"><root wsid="33.29" msid="10.147-01">vaYcu</root><sense>pralamBane</sense></sutra>
+<sutra msid="10.148"><root wsid="33.30" msid="10.148-01,01p">vfza</root><sense>SaktibanDane</sense></sutra>
+<sutra msid="10.149"><root wsid="33.31" msid="10.149-01,01p">mada</root><sense>tfptiyoge</sense></sutra>
+<sutra msid="10.150"><root wsid="33.32" msid="10.150-01">divu</root><sense>parikUjane</sense></sutra>
+<sutra msid="10.151"><root wsid="33.33" mdp="gf" msid="10.151-01">gf</root><sense>vijYAne</sense></sutra>
+<sutra msid="10.152"><root wsid="33.34" msid="10.152-01,01p,02p">vida</root><sense mdp="cetanAKyAnanivAsezu">cetanAKyAnavivAsezu</sense></sutra>
+<sutra msid="10.153"><root wsid="33.35" msid="10.153-01">mana</root><sense>stamBe</sense></sutra>
+<sutra msid="10.154"><root wsid="33.36" msid="10.154-01">yu</root><sense>jugupsAyAm</sense></sutra>
+<sutra msid="10.155"><root wsid="33.37" msid="10.155-01">kusma</root><sense>nAmno vA</sense></sutra>
+<sutra msid="10.156"><root wsid="33.38" msid="10.156-01">carca</root><sense mdp="aDyayane">ADyayane</sense></sutra>
+<sutra msid="10.157"><root wsid="33.39" msid="10.157-01">bukka</root><sense>BAzaRe</sense></sutra>
+<sutra msid="10.158"><root wsid="33.41" msid="10.158-01">kaRa</root><sense>nimIlane</sense></sutra>
+<sutra msid="10.159"><root wsid="33.42" msid="10.159-01">jaBi</root><sense>nASane</sense></sutra>
+<sutra msid="10.160"><root wsid="33.43" mdp1="sUda" msid="10.160-01,01p">sUda</root><sense mdp="kzaraRe">kzaRane</sense></sutra>
+<sutra msid="10.161"><root wsid="33.44" msid="10.161-01">jasu</root><sense>tAqane</sense></sutra>
+<sutra msid="10.162"><root wsid="33.45" msid="10.162-01">paSa</root><sense>banDane</sense></sutra>
+<sutra msid="10.163"><root wsid="33.46" msid="10.163-01">ama</root><sense>roge</sense></sutra>
+<sutra msid="10.164"><root wsid="33.47" msid="10.164-01">cawa</root><root wsid="33.48" msid="10.164-02">sPuwa</root><sense>Bedane</sense></sutra>
+<sutra msid="10.165"><root wsid="33.49" msid="10.165-01">Gawa</root><sense>saNGAte</sense></sutra>
+<sutra msid="10.167"><root wsid="33.51" msid="10.167-01">divu</root><sense mdp="mardane">ardane</sense></sutra>
+<sutra msid="10.168"><root wsid="33.52" msid="10.168-01">arja</root><sense>pratiyatne</sense></sutra>
+<sutra msid="10.169"><root wsid="33.53" msid="10.169-01,01p">Guzir</root><sense>viSabdane</sense></sutra>
+<sutra msid="10.170"><root wsid="33.54" mdp1="(ANaH) kranda" msid="10.170-01">(ANaH) kranda</root><sense>sAtatye</sense></sutra>
+<sutra msid="10.171"><root wsid="33.55" msid="10.171-01,01p">lasa</root><sense>Silpayoge</sense></sutra>
+<sutra msid="10.172"><root wsid="33.56" msid="10.172-01">tasi</root><root wsid="33.56a" msid="10.172-02">BUza</root><sense>alaNkAre</sense></sutra>
+<sutra msid="10.173"><root wsid="33.57" msid="10.173-01">mokza</root><sense>asane</sense></sutra>
+<sutra msid="10.174"><root wsid="33.58" msid="10.174-01">arha</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="10.175"><root wsid="33.59" msid="10.175-01">jYA</root><sense>niyoge</sense></sutra>
+<sutra msid="10.176"><root wsid="33.60" msid="10.176-01">Baja</root><sense>viSrARane</sense></sutra>
+<sutra msid="10.177"><root wsid="33.61" msid="10.177-01">SfDu</root><sense mdp="prasahane">prahasane</sense></sutra>
+<sutra msid="10.178"><root wsid="33.62" msid="10.178-01,01p,02p">yata</root><sense>nikAropaskArayoH</sense></sutra>
+<sutra msid="10.179"><mdpsutra>(X63. vasa) snehanacCedanApaharaRezu {mdp}</mdpsutra></sutra>
+<sutra msid="10.180"><mdpsutra>(X64. cara) saMSaye {mdp}</mdpsutra></sutra>
+<sutra msid="10.181"><mdpsutra>(X65. cyu) hasane {mdp}</mdpsutra></sutra>
+<sutra msid="10.184"><root wsid="33.63" msid="10.184-01">raka</root><root wsid="33.63a" msid="10.184-02">laga</root><sense>AsvAdane</sense></sutra>
+<sutra msid="10.185"><root wsid="33.64" msid="10.185-01">aYcu</root><sense>viSezaRe</sense></sutra>
+<sutra msid="10.186"><root wsid="33.65" msid="10.186-01">ligi</root><sense>citrIkaraRe</sense></sutra>
+<sutra msid="10.187"><root wsid="33.66" msid="10.187-01">muda</root><sense>saMsarge</sense></sutra>
+<sutra msid="10.188"><root wsid="33.67" msid="10.188-01">trasa</root><sense>DAraRe</sense></sutra>
+<sutra msid="10.189"><root wsid="33.68" msid="10.189-01">uDrasa</root><sense>uYCe</sense></sutra>
+<sutra msid="10.190"><root wsid="33.69" msid="10.190-01">muca</root><sense mdp="pramocane">pramocane modane ca</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="33.70">vasa</root><sense>snehaCedApaharaRezu</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="33.71">cara</root><sense>saMSaye</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="33.72">cyu</root><sense>hasane</sense></sutra>
+<sutra msid="10.192"><root wsid="33.76" msid="10.192-01">grasa</root><sense>grahaRe</sense></sutra>
+<sutra msid="10.193"><root wsid="33.77" msid="10.193-01">puza</root><sense>DAraRe</sense></sutra>
+<sutra msid="10.194"><root wsid="33.78" msid="10.194-01">dala</root><sense>vidAraRe</sense></sutra>
+<sutra msid="10.195"><root wsid="33.79" msid="10.195-14">pawa</root><root wsid="33.80" msid="10.195-17">puwa</root><root wsid="33.81" msid="10.195-26">luwa</root><root wsid="33.82" msid="10.195-09">tuji</root><root wsid="33.83" msid="10.195-23">miji</root><root wsid="33.84" msid="10.195-15">piji</root><root wsid="33.85" msid="10.195-25">luji</root><root wsid="33.86" msid="10.195-22">Baji</root><root wsid="33.87" msid="10.195-24">laGi</root><root wsid="33.88" msid="10.195-10">trasi</root><root wsid="33.89" msid="10.195-16">pisi</root><root wsid="33.90" msid="10.195-03">kusi</root><root wsid="33.91" msid="10.195-11">daSi</root><root wsid="33.92" msid="10.195-02">kuSi</root><root wsid="33.93" msid="10.195-05">Gawa</root><root wsid="33.94" msid="10.195-06">Gawi</root><root wsid="33.95" msid="10.195-21">bfhi</root><root wsid="33.96" msid="10.195-19">barha</root><root wsid="33.97" mdp="valha" mdp1="balha" msid="10.195-20">balha</root><root wsid="33.98" msid="10.195-04">gupa</root><root wsid="33.99" msid="10.195-12">DUpa</root><root wsid="33.100" mdp="vicCa" msid="10.195-29">vicCa</root><root wsid="33.101" msid="10.195-07">cIva</root><root wsid="33.102" msid="10.195-18">puTa</root><root wsid="33.103" msid="10.195-27">lokf</root><root wsid="33.104" msid="10.195-28">locf</root><root wsid="33.105" mdp1="nada" msid="10.195-13">nada</root><root wsid="33.106" msid="10.195-01">kupa</root><root wsid="33.107" msid="10.195-08">tarka</root><root wsid="33.108" msid="10.195-30">vftu</root><root wsid="33.109" msid="10.195-31">vfDu</root><sense>BAzArTAH</sense></sutra>
+<sutra msid="10.196"><root wsid="33.110" msid="10.196-01">ruwa</root><root wsid="33.111" msid="10.196-02">laji</root><root wsid="33.112" msid="10.196-03">aji</root><root wsid="33.113" msid="10.196-04">dasi</root><root wsid="33.114" msid="10.196-05">BfSi</root><root wsid="33.115" msid="10.196-06">ruSi</root><mdproot wsid="33.X116">rusi {mdp}</mdproot><root wsid="33.116" msid="10.196-08">SIka</root><root wsid="33.117" msid="10.196-09">nawa</root><root wsid="33.118" msid="10.196-10">puwi</root><root wsid="33.119" msid="10.196-11">juci</root><root wsid="33.120" msid="10.196-12">raGi</root><root wsid="33.121" nomdp="yes" msid="10.196-">laGi</root><root wsid="33.122" msid="10.196-13">ahi</root><root wsid="33.123" msid="10.196-14">rahi</root><root wsid="33.124" msid="10.196-15">mahi</root><sense>BAzArTAH </sense><root wsid="33.125" nomdp="yes" msid="10.196-03p">laqi</root><root wsid="33.126" nomdp="yes" msid="10.196-">taqa</root><root wsid="33.127" nomdp="yes" msid="10.196-">nala</root></sutra>
+<sutra msid="10.197"><root wsid="33.128" msid="10.197-01">pUrI</root><sense>ApyAyane</sense></sutra>
+<sutra msid="10.198"><root wsid="33.129" msid="10.198-01">ruja</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.199"><root wsid="33.130" mdp1="svada" msid="10.199-01">svada</root><sense>AsvAdane</sense></sutra>
+</section>
+<section id="X.34" vp="376-377" numroots="44" nfound="43"><text>34. {sd ADfzadvA}</text>
+<sutra msid="10.201"><root wsid="34.1" msid="10.201-01">yuja</root><root wsid="34.2" msid="10.201-02">pfca</root><sense>saMyamane</sense></sutra>
+<sutra msid="10.202"><root wsid="34.3" msid="10.202-01">arca</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="10.203"><root wsid="34.4" mdp1="saha" msid="10.203-01">saha</root><sense>marzaRe</sense></sutra>
+<sutra msid="10.204"><root wsid="34.5" msid="10.204-01">Ira</root><sense>kzepe</sense></sutra>
+<sutra msid="10.205"><root wsid="34.6" msid="10.205-01">lI</root><sense>dravIkaraRe</sense></sutra>
+<sutra msid="10.206"><root wsid="34.7" msid="10.206-01">vfjI</root><sense>varjane</sense></sutra>
+<sutra msid="10.207"><root wsid="34.8" msid="10.207-01">vfY</root><sense>AvaraRe</sense></sutra>
+<sutra msid="10.208"><root wsid="34.9" msid="10.208-01">jF</root><sense>vayohAnO</sense></sutra>
+<sutra msid="10.209"><root wsid="34.10" msid="10.209-01">rica</root><sense>viyojanasamparcanayoH</sense></sutra>
+<sutra msid="10.210"><root wsid="34.11" msid="10.210-01">Siza</root><sense>asarvopayoge</sense></sutra>
+<sutra msid="10.211"><root wsid="34.12" msid="10.211-01">tapa</root><sense>dAhe</sense></sutra>
+<sutra msid="10.212"><root wsid="34.13" msid="10.212-01,01p">tfpa</root><sense>tfptO</sense></sutra>
+<sutra msid="10.213"><root wsid="34.14" msid="10.213-01">CfdI</root><sense>sandIpane</sense></sutra>
+<sutra msid="10.214"><root wsid="34.15" msid="10.214-01">dfBI</root><sense>Baye</sense></sutra>
+<sutra msid="10.215"><root wsid="34.16" msid="10.215-01">dfBa</root><sense>sandarBe</sense></sutra>
+<sutra msid="10.216"><root wsid="34.17" msid="10.216-01,01p">SraTa</root><sense>mokzaRe</sense></sutra>
+<sutra msid="10.217"><root wsid="34.18" msid="10.217-01">mI</root><sense>gatO</sense></sutra>
+<sutra msid="10.218"><root wsid="34.19" mdp="granTa" msid="10.218-01">granTa</root><sense>banDane</sense></sutra>
+<sutra msid="10.219"><root wsid="34.20" msid="10.219-01">SIka</root><sense mdp="marzaRe">AmarzaRe</sense></sutra>
+<sutra msid="10.220"><root wsid="34.21" msid="10.220-01">cIka</root><sense>ca</sense></sutra>
+<sutra msid="10.221"><root wsid="34.22" msid="10.221-01">arda</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.222"><root wsid="34.23" msid="10.222-01">hisi</root><sense>hiMsAyAm</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="34.24">arha</root><sense>pUjAyAM</sense></sutra>
+<sutra msid="10.223"><root wsid="34.25" mdp1="(ANaH) sadaH" msid="10.223-01">(ANaH) sadaH</root><sense>padyarTe</sense></sutra>
+<sutra msid="10.224"><root wsid="34.26" msid="10.224-01">SunDa</root><sense>SOcakarmaRi</sense></sutra>
+<sutra msid="10.225"><root wsid="34.27" msid="10.225-01">Cada</root><sense>apavAraRe</sense></sutra>
+<sutra msid="10.226"><root wsid="34.28" msid="10.226-01">juza</root><sense>paritarkaRe</sense></sutra>
+<sutra msid="10.227"><root wsid="34.29" msid="10.227-01">DUY</root><sense>kampane</sense></sutra>
+<sutra msid="10.228"><root wsid="34.30" msid="10.228-01">prIY</root><sense>tarpaRe</sense></sutra>
+<sutra msid="10.229"><root wsid="34.31" msid="10.229-01">SranTa</root><root wsid="34.31a" msid="10.229-02">granTa</root><sense>sandarBe</sense></sutra>
+<sutra msid="10.230"><root wsid="34.32" msid="10.230-01">Apx</root><sense>lamBane</sense></sutra>
+<sutra msid="10.231"><root wsid="34.33" msid="10.231-01">tanu</root><sense>SradDopakaraRayoH</sense></sutra>
+<sutra msid="10.232"><root wsid="34.34" msid="10.232-01">vada</root><sense>sandeSavacane</sense></sutra>
+<sutra msid="10.233"><root wsid="34.35" msid="10.233-01">vaca</root><sense>pariBAzaRe</sense></sutra>
+<sutra msid="10.234"><root wsid="34.36" msid="10.234-01">mAna</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="10.235"><root wsid="34.37" msid="10.235-01">BU</root><sense mdp="prAptO AtmanepadI">prAptAvAtmanepadI</sense></sutra>
+<sutra msid="10.236"><root wsid="34.38" msid="10.236-01,01p">garha</root><sense mdp="nindane">vinindane</sense></sutra>
+<sutra msid="10.237"><root wsid="34.39" msid="10.237-01">mArga</root><sense>anvezaRe</sense></sutra>
+<sutra msid="10.238"><root wsid="34.40" msid="10.238-01">kaWi</root><sense>Soke</sense></sutra>
+<sutra msid="10.239"><root wsid="34.41" msid="10.239-01">mfjU</root><sense mdp="SOcAlaMkaraRayoH">SOcAlaMkArayoH</sense></sutra>
+<sutra msid="10.240"><root wsid="34.42" msid="10.240-01">mfza</root><sense>titikzAyAm</sense></sutra>
+<sutra msid="10.241"><root wsid="34.43" msid="10.241-01">Dfza</root><sense>prasahane</sense></sutra>
+</section>
+<section id="X.35" vp="377-379" numroots="87" nfound="86"><text>35. {sd adantAH}</text>
+<sutra msid="10.242"><root wsid="35.1" msid="10.242-01">kaTa</root><sense>vAkyaprabanDe</sense></sutra>
+<sutra msid="10.244"><root wsid="35.2" msid="10.244-01">vara</root><sense>IpsAyAm</sense></sutra>
+<sutra msid="10.245"><root wsid="35.3" msid="10.245-01">gaRa</root><sense>saMKyAne</sense></sutra>
+<sutra msid="10.246"><root wsid="35.4" msid="10.246-01">SaWa</root><root wsid="35.4a" msid="10.246-02">SvaWa</root><sense>samyagavaBAzaRe</sense></sutra>
+<sutra msid="10.247"><root wsid="35.5" msid="10.247-01">pawa</root><root wsid="35.5a" msid="10.247-02,01p">vawa</root><sense>granTe</sense></sutra>
+<sutra msid="10.248"><root wsid="35.6" msid="10.248-01">raha</root><sense>tyAge</sense></sutra>
+<sutra msid="10.249"><root wsid="35.7" mdp="stanagadI" mdp1="stana" msid="10.249-02">stana</root><root wsid="35.8" nomdp="yes" msid="10.249-">gadI</root><sense>devaSabde</sense></sutra>
+<sutra msid="10.250"><root wsid="35.9" msid="10.250-01">pata</root><sense>gatO vA</sense></sutra>
+<sutra msid="10.251"><root wsid="35.10" msid="10.251-01">paza</root><sense>anupasargAt </sense></sutra>
+<sutra msid="10.252"><root wsid="35.11" msid="10.252-01">svara</root><sense>Akzepe</sense></sutra>
+<sutra msid="10.253"><root wsid="35.12" msid="10.253-01">raca</root><sense>pratiyatne</sense></sutra>
+<sutra msid="10.254"><root wsid="35.13" msid="10.254-01">kala</root><sense>gatO saMKyAne ca</sense></sutra>
+<sutra msid="10.255"><root wsid="35.14" msid="10.255-01">caha</root><sense>parikalkane</sense></sutra>
+<sutra msid="10.256"><root wsid="35.15" msid="10.256-01">maha</root><sense>pUjAyAm</sense></sutra>
+<sutra msid="10.257"><root wsid="35.16" msid="10.257-01">sAra</root><root wsid="35.17" msid="10.257-02">kfpa</root><root wsid="35.18" msid="10.257-03">SraTa</root><sense>dOrbalye</sense></sutra>
+<sutra msid="10.258"><root wsid="35.19" msid="10.258-01">spfha</root><sense>IpsAyAm</sense></sutra>
+<sutra msid="10.259"><root wsid="35.20" msid="10.259-01">BAma</root><sense>kroDe</sense></sutra>
+<sutra msid="10.260"><root wsid="35.21" msid="10.260-01">sUca</root><sense mdp="pESunye">pESUnye</sense></sutra>
+<sutra msid="10.261"><root wsid="35.22" msid="10.261-01">Kewa</root><sense>BakzaRe</sense></sutra>
+<sutra msid="10.262"><root wsid="35.23" msid="10.262-01">kzowa</root><sense>kzepe</sense></sutra>
+<sutra msid="10.263"><root wsid="35.24" msid="10.263-01">goma</root><sense>upalepane</sense></sutra>
+<sutra msid="10.264"><root wsid="35.25" msid="10.264-01">kumAra</root><sense>krIqAyAm</sense></sutra>
+<sutra msid="10.265"><root wsid="35.26" msid="10.265-01">SIla</root><sense>upaDAraRe</sense></sutra>
+<sutra msid="10.266"><root wsid="35.27" msid="10.266-01">sAma</root><sense>sAntvaprayoge</sense></sutra>
+<sutra msid="10.267"><root wsid="35.28" msid="10.267-01">vela</root><sense>kAlopadeSe</sense></sutra>
+<sutra msid="10.268"><root wsid="35.29" msid="10.268-01">palpUla</root><sense>lavanapavanayoH</sense></sutra>
+<sutra msid="10.269"><root wsid="35.30" msid="10.269-01,01p">vAta</root><sense>suKasevanayoH</sense></sutra>
+<sutra msid="10.270"><root wsid="35.31" mdp="gaveza" msid="10.270-01">gaveza</root><sense>mArgaRe</sense></sutra>
+<sutra msid="10.271"><root wsid="35.32" msid="10.271-01">vAsa</root><sense>upasevAyAm</sense></sutra>
+<sutra msid="10.272"><root wsid="35.33" msid="10.272-01">nivAsa</root><sense>AcCAdane</sense></sutra>
+<sutra msid="10.273"><root wsid="35.34" msid="10.273-01">BAja</root><sense>pfTakkarmaRi</sense></sutra>
+<sutra msid="10.274"><root wsid="35.35" msid="10.274-01,01p">saBAja</root><sense>prItidarSanayoH</sense></sutra>
+<sutra msid="10.275"><root wsid="35.36" msid="10.275-01">Una</root><sense mdp="parihARe">parihAne</sense></sutra>
+<sutra msid="10.276"><root wsid="35.37" msid="10.276-01">Dvana</root><sense>Sabde</sense></sutra>
+<sutra msid="10.277"><root wsid="35.38" msid="10.277-01,01p">kUwa</root><sense>paritApe</sense></sutra>
+<sutra msid="10.278"><root wsid="35.39" msid="10.278-01">saNketa</root><root wsid="35.40" msid="10.278-02">grAma</root><root wsid="35.41" msid="10.278-03">kuRa</root><root wsid="35.41a" msid="10.278-04">guRa</root><sense>cAmantraRe</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="35.42">kURa</root><sense>saMkocane</sense></sutra>
+<sutra msid="10.279"><root wsid="35.43" msid="10.279-01">stena</root><sense>cOrye</sense></sutra>
+<sutra msid="10.281"><root wsid="35.44" msid="10.281-01">pada</root><sense>gatO</sense></sutra>
+<sutra msid="10.282"><root wsid="35.45" msid="10.282-01">gfha</root><sense>grahaRe</sense></sutra>
+<sutra msid="10.283"><root wsid="35.46" msid="10.283-01">mfga</root><sense>anvezaRe</sense></sutra>
+<sutra msid="10.284"><root wsid="35.47" msid="10.284-01">kuha</root><sense>vismApane</sense></sutra>
+<sutra msid="10.285"><root wsid="35.48" msid="10.285-01">SUra</root><root wsid="35.49" msid="10.285-02">vIra</root><sense>vikrAntO</sense></sutra>
+<sutra msid="10.286"><root wsid="35.50" msid="10.286-01">sTUla</root><sense>paribfMhaRe</sense></sutra>
+<sutra msid="10.287"><root wsid="35.51" msid="10.287-01">arTa</root><sense mdp="upayAcYAyAm">upayacYAyAm</sense></sutra>
+<sutra msid="10.288"><root wsid="35.52" msid="10.288-01">satra</root><sense>santAnakriyAyAm</sense></sutra>
+<sutra msid="10.289"><root wsid="35.53" msid="10.289-01">garva</root><sense>mAne</sense></sutra>
+<sutra msid="10.290"><root wsid="35.54" msid="10.290-01,01p">sUtra</root><sense>vezwane</sense></sutra>
+<sutra msid="10.291"><root wsid="35.55" msid="10.291-01">mUtra</root><sense>prasravaRe</sense></sutra>
+<sutra msid="10.292"><root wsid="35.56" msid="10.292-01">rUkza</root><sense>pAruzye</sense></sutra>
+<sutra msid="10.293"><root wsid="35.57" msid="10.293-01">pAra</root><root wsid="35.57a" msid="10.293-02">tIra</root><sense>karmasamAptO</sense></sutra>
+<sutra msid="10.294"><root wsid="35.58" msid="10.294-01">puwa</root><sense>saMsarge</sense></sutra>
+<sutra msid="10.xxxx"><root wsid="35.59">Deka</root><sense>darSane</sense></sutra>
+<sutra msid="10.295"><root wsid="35.60" mdp="katra" msid="10.295-01">katra</root><sense>SETilye</sense></sutra>
+<sutra msid="10.301"><root wsid="35.62" mdp="bazka" msid="10.301-01">bazka</root><sense>darSane</sense></sutra>
+<sutra msid="10.302"><root wsid="35.63" msid="10.302-01">citra</root><sense mdp="citrakaraRe">citrIkaraRe</sense></sutra>
+<sutra msid="10.304"><root wsid="35.64" msid="10.304-01">aMsa</root><sense>samAGAte</sense></sutra>
+<sutra msid="10.305"><root wsid="35.65" msid="10.305-01">vawa</root><sense>viBAjane</sense></sutra>
+<sutra msid="10.306"><root wsid="35.66" msid="10.306-01">laja</root><sense mdp="prakASe">prakASane</sense></sutra>
+<sutra msid="10.307"><root wsid="35.67" msid="10.307-01">miSra</root><sense>samparke</sense></sutra>
+<sutra msid="10.308"><root wsid="35.68" mdp1="saNgrAma" msid="10.308-01">saNgrAma</root><sense>yudDe</sense></sutra>
+<sutra msid="10.309"><root wsid="35.69" msid="10.309-01">stoma</root><sense>SlAGAyAm</sense></sutra>
+<sutra msid="10.310"><root wsid="35.70" msid="10.310-01,02p">Cidra</root><root wsid="35.71" nomdp="yes" msid="10.310-01p">karRa</root><sense mdp="karRaBedane">Bedane</sense></sutra>
+<sutra msid="10.311"><root wsid="35.72" msid="10.311-01,01p">anDa</root><sense>dfzwyupaGAte</sense></sutra>
+<sutra msid="10.312"><root wsid="35.73" msid="10.312-01">daRqa</root><sense>daRqanipAtane</sense></sutra>
+<sutra msid="10.313"><root wsid="35.74" msid="10.313-01">aNka</root><sense>pade lakzaRe ca</sense></sutra>
+<sutra msid="10.314"><mdproot wsid="35.X75">aNga</mdproot><sense>ca</sense></sutra>
+<sutra msid="10.315"><root wsid="35.75" msid="10.315-01">suKa</root><root wsid="35.76" msid="10.315-02">duHKa</root><sense>tatkriyAyAm</sense></sutra>
+<sutra msid="10.316"><root wsid="35.77" msid="10.316-01">rasa</root><sense>AsvAdanasnehanayoH</sense></sutra>
+<sutra msid="10.317"><root wsid="35.78" msid="10.317-01">vyaya</root><sense>vittasamutsarge</sense></sutra>
+<sutra msid="10.318"><root wsid="35.79" msid="10.318-01">rUpa</root><sense>rUpakriyAyAm</sense></sutra>
+<sutra msid="10.319"><root wsid="35.80" msid="10.319-01">Ceda</root><sense>dvEDIkaraRe</sense></sutra>
+<sutra msid="10.320"><root wsid="35.81" msid="10.320-01">lABa</root><sense>preraRe</sense></sutra>
+<sutra msid="10.321"><root wsid="35.82" msid="10.321-01">vraRa</root><sense>gAtravicUrRane</sense></sutra>
+<sutra msid="10.322"><root wsid="35.83" msid="10.322-01">varRa</root><sense>varRakriyAvistAraguRavacanezu</sense></sutra>
+<sutra msid="10.324"><mdpsutra>(X85. parRa) haritaBAve {mdp}</mdpsutra></sutra>
+<sutra msid="10.325"><mdpsutra>(X86. vizka) darSane {mdp}</mdpsutra></sutra>
+<sutra msid="10.326"><mdpsutra>(X87. kzapa) preraRe {mdp}</mdpsutra></sutra>
+<sutra msid="10.327"><mdpsutra>(X88. vasa) nivAse {mdp}</mdpsutra></sutra>
+<sutra msid="10.328"><mdpsutra>(X89. tutTa) AvaraRe {mdp}</mdpsutra></sutra>
+</section>
+</wdpsections>
+
