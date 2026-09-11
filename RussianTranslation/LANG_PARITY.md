@@ -2164,22 +2164,24 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "pwg_transport_comparison_20260811",
-    "mechanism": "Sealed three-reservation comparison of router.cheap Agent dispatch and Anthropic Messages using one byte-identical frozen PWG→RU canary, a shared transport envelope, exact Opus 5 verification, pinned pricing, deterministic audit, and a non-promotable route-comparison receipt",
+    "mechanism": "Sealed three-reservation comparison of router.cheap Agent dispatch and Anthropic Messages using one byte-identical frozen PWG→RU canary, a shared transport envelope, exact Opus 5 verification, pinned pricing, deterministic audit, a non-promotable route-comparison receipt, and (H4531) an async Message Batches arm at the 50 % batch schedule sharing the same envelope and audit",
     "files": [
       "src/pilot/route_transport.py",
       "src/pilot/anthropic_messages_route.py",
+      "src/pilot/anthropic_batches_route.py",
       "src/pilot/route_compare.py"
     ],
     "languages": [
       "ru"
     ],
     "verdict": "INTENTIONAL-DIVERGENCE",
-    "note": "The route/reservation/evidence shell does not mutate either language store and can be reused, but this command is intentionally a PWG→RU qualification: it consumes the released frozen RU canary unchanged and its deterministic content gate requires three Russian senses, Cyrillic-only output, no ё, and no unresolved PWG markers. Claiming EN parity would weaken the apples-to-apples evidence or silently apply RU audit rules to English. A future EN comparison must introduce and freeze its own canary/schema/audit contract; no production route or language lane changes here.",
+    "note": "The route/reservation/evidence shell does not mutate either language store and can be reused, but this command is intentionally a PWG→RU qualification: it consumes the released frozen RU canary unchanged and its deterministic content gate requires three Russian senses, Cyrillic-only output, no ё, and no unresolved PWG markers. Claiming EN parity would weaken the apples-to-apples evidence or silently apply RU audit rules to English. A future EN comparison must introduce and freeze its own canary/schema/audit contract; no production route or language lane changes here. H4531 added the async Message Batches arm (anthropic_batches_route.py) to the same shell: it reuses this row's RU audit_canary verbatim, so the verdict is unchanged -- the divergence is the RU content gate, not the transport.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/route_transport.py": "9f7f8472835bf3d539a19759825802a9f7b322663fa2efb7c83984904a17c503",
+      "src/pilot/route_transport.py": "2674663148f1a653e077081d02f97fdcd6984c531192a4c73096bfadb754713b",
       "src/pilot/anthropic_messages_route.py": "25dbebd32a92aaf1ce024aa1211f17b5dc47257202a487947fc39c90e76d539e",
-      "src/pilot/route_compare.py": "444b18a75f0b0464f7e6b43c5c3f7922c5d91e5100f42dd9ba5f4452b07068b7"
+      "src/pilot/route_compare.py": "444b18a75f0b0464f7e6b43c5c3f7922c5d91e5100f42dd9ba5f4452b07068b7",
+      "src/pilot/anthropic_batches_route.py": "000d0b23e699322db95dae8178ae5708da9e39a38c5990b04c12eb685b363a79"
     }
   },
   {
