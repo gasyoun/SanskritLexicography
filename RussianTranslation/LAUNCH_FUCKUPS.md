@@ -562,6 +562,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "Never pass --max-agents 1 on multi-key or heal-capable windows. Use it only for true single-spawn canaries (one key that must finish in one call) or when deliberately starving the run. Production multi-card windows rely on manifest budgets (max_translate_agents / max_heal_agents) with --max-agents omitted or set to their sum. When diagnosing only-b0/all-nulls: check budget_stops and translate_agents_spent BEFORE rate_limit/content theories. Prefer failures that retain budget_exceeded if a code fix later prevents note-overwrite (optional hardening).",
   "residual_status": "structurally-guarded",
   "residual_risk": "Bounded-run docs (H1447/H1110 ladder) still recommend --max-agents 1 for tiny canaries; copy-pasting that flag onto medium50/nominal windows re-creates the incident. c2 Pro also hit session limit mid fix-run (resets 15:30 Europe/Moscow) — separate concurrency/api residual; do not conflate with the budget flag."
+ },
+ {
+  "id": "H4527_ACCEPTANCE_PROBE_REFUSAL_2026-09-11",
+  "handoff": "H4527",
+  "date": "2026-09-11",
+  "title": "cohort acceptance window STOPped on the readiness warm-up probe while the same profile translated a real card clean 40 minutes earlier",
+  "lane": "bounded_staged_run --execute --cohort-path --cohort-width 1, profile c1 Max",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go",
+  "expected": {
+   "agents": "probe_fleet warm-up returns a schema-valid readiness answer on c1, then one nominal window (h4527acc05, 1 subcard) dispatches through the cohort path",
+   "tokens": "warm-up comparable to the same day's successful readings: 73 075 ms measured probe at 05:33Z, two dq_canary_puregloss GO windows at 15:58Z and 16:19Z"
+  },
+  "actual": {
+   "agents": "fleet probe STOP on account c1: warm-up probe content -> STOP. Zero windows dispatched, zero translation calls, the prepared lease h4527acc05 untouched.",
+   "tokens": "113 531 ms wall / 93 090 ms api against a 240 000 ms production_v4 ceiling; 8038 output tokens of which 7312 thinking; total_cost_usd 0.28122 costBasis list; the reservation ledger records cost_evaluable=false (Max-route credit billing dormant), so ledger cost is UNKNOWN, not zero"
+  },
+  "passes": 1,
+  "symptoms": "stop_reason \"tool_use\", terminal_reason \"completed\", is_error false, num_turns 2, result {\"ok\":false}, structured_output {\"ok\":false}, schema_valid false, classification content. Raw envelope: src/pilot/output/h963_c4_gate0_probe_raw_h4527-acc-091118.txt",
+  "classification": "gate-bug",
+  "root_cause": "The §6.2/§6.3 readiness-probe refusal class H4213 recorded three times (c1 profile surface noise read as injection; answer {\"ok\":false}), with a sharper mechanism now visible in the envelope: the probe ends on stop_reason \"tool_use\" after 7312 thinking tokens — the model reaches for a tool instead of answering the plain readiness question, then returns {\"ok\":false}. Latency is NOT implicated: 113 531 ms sits less than half of the 240 000 ms production_v4 ceiling, and host commit was 80.38%, the same band as the day's successful readings. The decisive new evidence is a same-day counterexample on the SAME profile: three paid calls succeeded through headless_worker.py — dq_canary_puregloss GO at 15:58Z (82 862 ms) and 16:19Z (50 824 ms), and a real nominal translation window at 17:58Z (210 912 ms, audit 1/1 clean, promoted, store 11516 -> 11521). headless_worker.py does not call probe_fleet; bounded_staged_run --execute does. So the lane, the profile, the credentials and the route are all demonstrably healthy, and the ONLY thing refusing is the readiness warm-up prompt itself.",
+  "guardrail": "Do not read a warm-up-probe content STOP as lane or profile ill-health without checking whether a non-probe route succeeded on the same profile the same day — on 11-09 it had, three times. This is the evidence H4213 §6.3 option (b) 'retune _probe_prompt task-shape (selftest-backed)' was waiting for, and it now outranks options (a)/(c)/(e): the prompt is the failing component, not the host, the hooks or the ceiling. Any retune stays selftest-backed and must not weaken what the probe asserts (H4213: 'must not be hand-weakened'). RED=STOP was honoured: no retry, and the day's 2-attempt ration for c1 is now spent (05:32Z + 18:08Z).",
+  "residual_status": "bug-hunt-handoff",
+  "residual_risk": "Every bounded_staged_run --execute path — the whole cohort-acceptance rung of H4527 — is gated behind this probe, so H4527 work item 1 cannot complete while it refuses, even though the prepared lease h4527acc05, the cohort wiring and a valid canary GO receipt were all in place. The receipt (h4527-canary-gate-091116b, judged ~16:19Z) expires ~22:19Z and the ration is spent, so the next attempt needs a fresh probe attempt on a later UTC day. Profile-surface changes remain human-owned (GTD row 0i)."
  }
 ]
 ```
