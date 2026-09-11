@@ -10,10 +10,10 @@ _Created: 11-09-2026 · Last updated: 11-09-2026_
 The yadisk `1974-SNP/snp.txt` (453 `<H1>`-keyed entries, 09-2014) and the current
 [`csl-orig/v02/snp/snp.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/snp/snp.txt)
 are the **same digitization lineage** — identical L 1–453, identical pc, identical SLP1
-headwords, 451/453 entries character-identical after encoding folding — and the csl-orig
+headwords, 450/453 entries character-identical after encoding folding (recounted by the independent 11-09-2026 verifier — third diff L176: the Greek ὀνυξ restored in csl-orig) — and the csl-orig
 copy is the **newer stage**: modern meta-line format (meta2 Feb 2018, `<div n="lb"/>`
 removal 12-2021), IAST entry bodies, the full two-part work preserved around the entries,
-one typo fixed, and the end-matter correctly unkeyed instead of glued into an entry body.
+one typo fixed and one Greek reading restored (L176 ὀνυξ), and the end-matter correctly unkeyed instead of glued into an entry body.
 Filing the yadisk file as a replacement would **destroy** those refinements — the upgrade
 proposed by [census §7 item 2](https://github.com/gasyoun/SanskritLexicography/blob/master/YADISK_05_SANSKRIT_LEXICON_TREES_CENSUS_10-09-2026.md)
 is rejected on evidence.
@@ -49,8 +49,9 @@ is exactly what bit here.
 Fold = strip markup/`[Page…]` markers, NFKD-strip diacritics, drop digits (the 2014
 digit-encoding: `a1`=ā, `s2/s4`=ṣ/ś, `n2/n3`=ṇ/ṅ, `t2/d2`=ṭ/ḍ), lowercase.
 
-- **451/453 entries character-identical.**
+- **450/453 entries character-identical** (recounted 11-09-2026 by the independent verifier; the executor's fold dropped non-ASCII letters and had hidden L176).
 - **L2**: yadisk «Index Kewensis **disagress**» → current «**disagrees**» — typo fixed in current.
+- **L176** (barbara): the 2014 file has an EMPTY `<g></g>` Greek slot («possibly <g></g> of Dioscorides»); csl-orig restores the reading — `<lang n="greek">ὀνυξ</lang>`. The Greek exists only in csl-orig.
 - **L440** (hintāla): yadisk glues the book's «Additions and Corrections» end-matter
   (~1159 folded chars, `<H/>Additions and Corrections …` abbreviations list) **inside the
   entry body** — a formation defect of the entries-only 2014 format. Current carries the
@@ -102,9 +103,11 @@ v02 pipeline at all (superseded format).
   in §5. All re-derived from fetched sources (yadisk via rclone; csl-orig local clone
   fetched to latest origin/main).
 - **Risks:** body folding strips digits+diacritics — a residual within-entry digit/space
-  transposition would survive folding in theory; the 451 exact identities + lineage
-  evidence make material divergence unlikely, but a verifier may re-run folding with a
-  stricter digit-aware map. The two L2/L440 diffs are fully explained.
+  transposition would survive folding in theory. **Verified 11-09-2026** by an independent
+  verifier (headless OxAlpha/GLM window, model-switched): folding re-run with Greek
+  preserved found the third diff L176; count corrected 451→450, and a difflib containment
+  check over all 453 pairs found **zero yadisk readings missing from csl-orig**. All three
+  diffs (L2, L176, L440) favour csl-orig.
 - **Inspect:** this file; census row 11; `git log` of v02/snp in csl-orig; the
   cologne_xml_validate output above.
 
