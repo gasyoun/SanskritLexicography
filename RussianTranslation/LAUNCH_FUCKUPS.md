@@ -562,6 +562,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "Never pass --max-agents 1 on multi-key or heal-capable windows. Use it only for true single-spawn canaries (one key that must finish in one call) or when deliberately starving the run. Production multi-card windows rely on manifest budgets (max_translate_agents / max_heal_agents) with --max-agents omitted or set to their sum. When diagnosing only-b0/all-nulls: check budget_stops and translate_agents_spent BEFORE rate_limit/content theories. Prefer failures that retain budget_exceeded if a code fix later prevents note-overwrite (optional hardening).",
   "residual_status": "structurally-guarded",
   "residual_risk": "Bounded-run docs (H1447/H1110 ladder) still recommend --max-agents 1 for tiny canaries; copy-pasting that flag onto medium50/nominal windows re-creates the incident. c2 Pro also hit session limit mid fix-run (resets 15:30 Europe/Moscow) — separate concurrency/api residual; do not conflate with the budget flag."
+ },
+ {
+  "id": "H4531_BATCHES_SUBMIT_401_2026-09-11",
+  "handoff": "H4531",
+  "date": "2026-09-11",
+  "title": "Batches API first submit refused 401 invalid-key; the pre-submit reservation burned the whole 23-call ceiling at $0 spend",
+  "lane": "anthropic-batches transport (new), root d_a, 23 one-card requests, claude-sonnet-5, run_id h4531-batches-probe",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 5 (claude-opus-5[1m]) unattended handoff worker + h4531_batches_probe.py",
+  "expected": {
+   "agents": "one Message Batch of 23 single-card requests, async, retrieved within 24 h",
+   "tokens": "ESTIMATE ~92k input / ~27.6k output, ~$0.35 at the 50 % batch schedule"
+  },
+  "actual": {
+   "agents": "zero requests processed; the provider refused the batch create call",
+   "tokens": "0 tokens, $0 billed; ledger max_calls=23 calls_spent=23 finalized_calls=0 pending_calls=23"
+  },
+  "passes": 1,
+  "symptoms": "anthropic.AuthenticationError: 401 {\"type\": \"authentication_error\", \"message\": \"API key is invalid.\"} raised from client.messages.batches.create. The independent zero-token probe h4531_auth_probe.py returns rc=4 with authenticated=false, model_available=false, reason AuthenticationError:http_401 against the same credential, so the failure is the key and not the Batches endpoint. The credential was read from the prepared secrets file, never typed.",
+  "classification": "external-api",
+  "root_cause": "The prepared ANTHROPIC_API_KEY in the lane secrets file is no longer valid (rotated, revoked, or from a different workspace). Secondary, and the part that is ours: AnthropicBatchesCall.submit reserves one ledger call per request BEFORE the provider call -- correct and required by the money contract -- so a failure that bills nothing still consumes the entire ceiling, and the retry cannot reuse the run. Inherited from anthropic_messages_route, which documents the same irreversibility.",
+  "guardrail": "h4531_auth_probe.py now exists as a zero-token authenticated GET and is the documented first step of the probe runbook, turning this class of ceiling burn into a $0 rc=4. The reservation is deliberately NOT released on a provider refusal: a release path mis-scoped by one failure class would let a genuinely billable failure look free. A retry uses a fresh run directory (a fresh run_id), never a raised ceiling on the burnt run.",
+  "residual_status": "open-paused",
+  "residual_risk": "H4531 cannot reach a GO/NO-GO verdict until a valid key reaches C:\\Users\\user\\.secrets\\anthropic.env (human, ~2 min). The H1403 ledger #8 / A8 Batches blind spot therefore stays OPEN; no DEAD_ENDS entry was written, because nothing about the route was measured. The burnt ledger run h4531-batches-probe keeps 23 pending reservations against $0 of real spend -- do not read them as cost."
  }
 ]
 ```
