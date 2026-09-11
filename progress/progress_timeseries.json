@@ -114,7 +114,7 @@
     },
     {
       "date": "2026-09-11",
-      "generated_at": "2026-09-11T18:05:02Z",
+      "generated_at": "2026-09-11T18:07:08Z",
       "verb_promoted": 48,
       "verb_dcs_attested": 749,
       "senses": 11521,
@@ -127,10 +127,10 @@
       "g5_open": 145,
       "g5_total": 150,
       "kitchen_yield_clean_pct": 0.63,
-      "kitchen_health_last_verdict": "GO",
-      "kitchen_health_last_go": 1,
-      "kitchen_idle_hours": 1175.35,
-      "kitchen_current_idle_hours": null
+      "kitchen_health_last_verdict": "NO-GO",
+      "kitchen_health_last_go": 0,
+      "kitchen_idle_hours": 430.54,
+      "kitchen_current_idle_hours": 95.18
     }
   ]
 }
