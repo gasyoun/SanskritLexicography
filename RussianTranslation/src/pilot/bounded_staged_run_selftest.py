@@ -989,11 +989,23 @@ def test_q3_execute_requires_canary_go_receipt_h2159(td):
 
 
 def test_q_cohort_width_cli_and_live_refusal(td):
-    """H1437 Phase 3: --cohort-width is EXPERIMENTAL / OFFLINE-ONLY. The parser defaults it
-    to 1 (the serial route, byte-for-byte unchanged); the --execute path REFUSES any width
-    > 1 with a message naming the missing live-acceptance gate, BEFORE touching the plan,
-    the db, the coordinator or the fleet; old programmatic callers whose Namespace never
-    defines cohort_width keep working (getattr default 1)."""
+    """H1437 Phase 3 + **H4527 deliberate flip**: --cohort-width is still OFFLINE-ONLY on the
+    live route, but the refusal is no longer a hardcoded "never" — it is now READ from one
+    evidence-bearing acceptance record (`cohort_live_admission`), fail-closed.
+
+    The contract this pin now asserts, in order:
+      * the parser still defaults the width to 1 (the serial route, byte-for-byte unchanged);
+      * with NO acceptance record (the state on master today) `--execute` width > 1 refuses
+        exactly as before, naming the H1437 live-acceptance gate AND the admission reason,
+        BEFORE touching the plan, the db, the coordinator or the fleet;
+      * with a VALID record, width 2 is ADMITTED yet still refused at rung 2 (live cohort
+        dispatch unwired) — it must never degrade into a silent serial window;
+      * width 3 stays refused by the code cap even with a record that asks for it;
+      * old programmatic callers whose Namespace never defines cohort_width keep working
+        (getattr default 1).
+
+    H4527 note: this pin was edited DELIBERATELY together with the gate (the handoff's own
+    "no silent (q)-pin edit" fail condition)."""
     ap = bsr.build_parser()
     args = ap.parse_args(['--plan', 'p.json', '--coord-dir', 'cd'])
     assert hasattr(args, 'cohort_width'), 'the CLI never defines --cohort-width'
@@ -1001,28 +1013,68 @@ def test_q_cohort_width_cli_and_live_refusal(td):
 
     # Refusal fires FIRST: the plan path does not exist, so reaching plan-load would be an
     # OSError, not the SystemExit gate message. probe_fleet is boobytrapped for good measure.
-    _pf = mao.probe_fleet
-    mao.probe_fleet = lambda *a, **k: (_ for _ in ()).throw(
-        AssertionError('a refused cohort --execute must NOT probe the fleet'))
-    try:
+    def _refusal(width):
         try:
             bsr.run(argparse.Namespace(
                 plan=os.path.join(td, 'q_no_such_plan.json'), coord_dir=os.path.join(td, 'q_cd'),
                 db=os.path.join(td, 'q_no.sqlite'), checkpoint=os.path.join(td, 'q_cp.json'),
-                lease_id=None, execute=True, cohort_width=2, resume=False, report=None,
+                lease_id=None, execute=True, cohort_width=width, resume=False, report=None,
                 coordinator=os.path.join(HERE, 'coordinator.py'), cwd=td, events=None,
                 run_id='q', claude_bin='claude', timeout=5,
                 gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION, only_profile=None,
                 drop_unhealthy=False, stop_before_promote=False,
                 max_windows=None, max_calls=None, max_clean=None, cost_ceiling=None,
                 empty_streak=None, max_accounts=0))
-            raise AssertionError('--execute with cohort width 2 was NOT refused')
         except SystemExit as exc:
-            msg = str(exc)
-            assert 'live-acceptance gate' in msg and 'H1437' in msg, (
-                'the refusal must NAME the missing live-acceptance gate: %r' % msg)
-            assert 'serial' in msg, 'the refusal must state the serial route stays default: %r' % msg
+            return str(exc)
+        raise AssertionError('--execute with cohort width %d was NOT refused' % width)
+
+    _pf = mao.probe_fleet
+    mao.probe_fleet = lambda *a, **k: (_ for _ in ()).throw(
+        AssertionError('a refused cohort --execute must NOT probe the fleet'))
+    _rt_root = bsr.cla._RT_ROOT
+    try:
+        # 1. No acceptance record (the state on master): the Phase 3 refusal, unchanged in
+        #    substance and now carrying the admission reason too.
+        bsr.cla._RT_ROOT = os.path.join(td, 'q_rt_empty')
+        msg = _refusal(2)
+        assert 'live-acceptance gate' in msg and 'H1437' in msg, (
+            'the refusal must NAME the missing live-acceptance gate: %r' % msg)
+        assert 'serial' in msg, 'the refusal must state the serial route stays default: %r' % msg
+        assert 'no acceptance record' in msg, (
+            'the refusal must name WHICH admission condition failed: %r' % msg)
+
+        # 2. A valid acceptance record ADMITS width 2 — and rung 2 still refuses, loudly,
+        #    rather than letting an admitted width run as an ordinary serial window.
+        rt_root = os.path.join(td, 'q_rt_ok')
+        rec_dir = os.path.dirname(bsr.cla.record_path(rt_root))
+        os.makedirs(rec_dir, exist_ok=True)
+        with open(bsr.cla.record_path(rt_root), 'w', encoding='utf-8') as handle:
+            json.dump({
+                'schema': bsr.cla.SCHEMA,
+                'serial_acceptance': {'run_id': 'bsr-q', 'window_id': 'no_pwg_w02',
+                                      'profile': 'c1', 'completed_utc': '2026-09-11T00:00:00Z',
+                                      'byte_identical_to_serial': True,
+                                      'evidence': ['pwg_ru/h4527/PACKET.md']},
+                'reviewer_sign_off': {'reviewer': 'Codex', 'session': 'q', 'verdict': 'PASS',
+                                      'dated': '2026-09-11',
+                                      'evidence': ['pwg_ru/h4527/REVIEW.md']},
+                'max_admitted_width': 2,
+                'admitted_profiles': ['c1', 'c2'],
+            }, handle)
+        bsr.cla._RT_ROOT = rt_root
+        msg2 = _refusal(2)
+        assert 'ADMITTED' in msg2 and 'H4527' in msg2, (
+            'an admitted width must refuse at the WIRING rung, naming it: %r' % msg2)
+        assert 'silent serial' in msg2, (
+            'the rung-2 refusal must say what it is preventing: %r' % msg2)
+
+        # 3. Width 3 is refused by the code cap even while that record is in place.
+        msg3 = _refusal(3)
+        assert 'exceeds the admitted maximum' in msg3, (
+            'width 3 must be refused by the code cap, not by the record: %r' % msg3)
     finally:
+        bsr.cla._RT_ROOT = _rt_root
         mao.probe_fleet = _pf
 
     # The dry-run planning view carries the cohort block (policy visible without a live run).
@@ -1032,12 +1084,17 @@ def test_q_cohort_width_cli_and_live_refusal(td):
     assert cohort.get('requested_width') == 3, view
     assert 'OFFLINE' in (cohort.get('mode') or ''), cohort
     assert 'live-acceptance gate' in (cohort.get('live_policy') or ''), cohort
+    assert cohort.get('live_admission', {}).get('admitted') is False, cohort
+    assert cohort['live_admission'].get('max_admitted_width') == 2, cohort
     serial_view = bsr.plan_view(_plan(['no_pwg_w02']), {'leases': []}, _ceilings(),
                                 os.path.join(td, 'q_v.json'))
     assert (serial_view.get('cohort') or {}).get('requested_width') == 1, serial_view
     assert 'serial' in ((serial_view.get('cohort') or {}).get('mode') or ''), serial_view
-    print('  (q) H1437 P3: --cohort-width defaults 1; --execute width>1 refused naming the '
-          'live-acceptance gate before any plan/db/fleet access; dry-run shows policy: PASS')
+    assert (serial_view['cohort'].get('live_admission') or {}).get('admitted') is True, serial_view
+    print('  (q) H1437 P3 + H4527: --cohort-width defaults 1; --execute width>1 refused '
+          'before any plan/db/fleet access — no record -> live-acceptance gate, valid '
+          'record -> ADMITTED but rung-2 (unwired) refusal, width 3 -> code cap; dry-run '
+          'shows the admission verdict: PASS')
 
 
 def test_r_cohort_offline_serial_equivalence(td):
