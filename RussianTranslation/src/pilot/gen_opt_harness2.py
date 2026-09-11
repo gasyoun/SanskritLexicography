@@ -61,8 +61,13 @@ def resolve_width_policy():
     with open(ADAPT_WIDTH_FROM, encoding='utf-8') as fh:
         raw = json.load(fh)
     rows = raw.get('windows', []) if isinstance(raw, dict) else list(raw or [])
+    # An explicit `--max-wide=N` above the A5-pinned default RAISES the adaptive ceiling for
+    # this run rather than being silently preserved by the policy: the operator's number is
+    # the top of the lane, the policy still only moves inside [1, that number]. Without the
+    # flag the ceiling is the pinned 3, so telemetry can never buy a width raise on its own.
     decision = width_policy.decide_width(
-        rows, current_max_wide=MAX_WIDE, base_stagger_ms=STAGGER_MS)
+        rows, current_max_wide=MAX_WIDE, base_stagger_ms=STAGGER_MS,
+        ceiling=max(width_policy.DEFAULT_MAX_WIDE, MAX_WIDE))
     globals()['WIDTH_DECISION'] = decision
     globals()['MAX_WIDE'] = decision.max_wide
     globals()['STAGGER_MS'] = decision.stagger_ms
