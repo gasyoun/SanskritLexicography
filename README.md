@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21306715.svg)](https://doi.org/10.5281/zenodo.21306715)
 
-_Created: 14-06-2026 · Last updated: 03-09-2026_
+_Created: 14-06-2026 · Last updated: 06-09-2026_
 
 A **data and research workspace** for Sanskrit digital lexicography — not a
 software project. Its focus is Cologne Digital Sanskrit Lexicon headword lists,
@@ -179,6 +179,14 @@ or loaded into scripts. A few files are large enough to be awkward in an editor
 error-list exports — so use streaming/CLI tools on those. All files are UTF-8;
 BOM state is inconsistent across exports, so check before transforming and
 preserve the existing state on write.
+
+**Python floor: ≥ 3.10.** The repo's Python tooling (generators under
+[data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data), the
+pipelines under
+[RussianTranslation/src/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src))
+uses `Path.write_text(newline=)`, which requires Python 3.10+. The repo is
+deliberately not a package, so the floor is declared here rather than in a
+`pyproject.toml` `requires-python` (cf. kosha's `requires-python = ">=3.12"`).
 
 Suggested entry points:
 
