@@ -25,6 +25,7 @@ VALID = {
         'profile': 'c1',
         'completed_utc': '2026-09-11T00:00:00Z',
         'byte_identical_to_serial': True,
+        'via_cohort_path': True,
         'evidence': ['pwg_ru/h4527/SERIAL_ACCEPTANCE_PACKET.md'],
     },
     'reviewer_sign_off': {
@@ -97,6 +98,9 @@ def test_e_every_missing_field_refuses(td):
         ('serial profile', lambda r: r['serial_acceptance'].pop('profile')),
         ('byte-identity', lambda r: r['serial_acceptance'].update(
             {'byte_identical_to_serial': 'yes'})),
+        ('via-cohort-path missing', lambda r: r['serial_acceptance'].pop('via_cohort_path')),
+        ('via-cohort-path not true', lambda r: r['serial_acceptance'].update(
+            {'via_cohort_path': 'yes'})),
         ('serial evidence', lambda r: r['serial_acceptance'].update({'evidence': []})),
         ('reviewer block', lambda r: r.pop('reviewer_sign_off')),
         ('reviewer verdict', lambda r: r['reviewer_sign_off'].update({'verdict': 'INCONCLUSIVE'})),

@@ -1,5 +1,11 @@
 _Created: 11-09-2026 · Last updated: 11-09-2026_
 
+> **Rung 4 of the list below is done** (11-09-2026, later the same day): the live cohort
+> dispatch is wired and `--cohort-path` exists, so rung 1 is runnable —
+> [H4527_COHORT_LIVE_DISPATCH_STATUS_11-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/H4527_COHORT_LIVE_DISPATCH_STATUS_11-09-2026.md)
+> also supersedes this file's live-gate probe row: the receipt is no longer 14 days stale
+> (GO at 05:33Z under `production_v4`), and what blocks width 2 is now a one-slot roster.
+
 # H4527 — cohort width-2 admission: what landed, what the live half still needs
 
 **Executor:** Opus 5 (`claude-opus-5`), unattended handoff worker (pool `sonnet`, executor Claude/c1), ~45-minute unit.

@@ -74,6 +74,7 @@ if HERE not in sys.path:
 
 import bounded_supervisor as bs                      # noqa: E402
 import cohort_live_admission as cla                  # noqa: E402
+import cohort_live_dispatch as cld                   # noqa: E402
 import data_root                                     # noqa: E402
 import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
@@ -97,10 +98,11 @@ COHORT_LIVE_GATE = (
 # no record, an invalid record, a non-PASS sign-off or width > MAX_ADMITTED_WIDTH all keep
 # the Phase 3 refusal exactly as it was. The second rung below is the remaining half.
 COHORT_LIVE_WIRING = (
-    'H4527 rung 2: the --execute path builds a SERIAL bounded supervisor; live cohort '
-    'dispatch (per-profile window binding, one promote + one TM per wave, shared '
-    'reservation run-id) is not wired into it yet, so an admitted width would otherwise '
-    'run as an ordinary serial window under a misleading width label')
+    'H4527 rung 4: the live cohort path dispatches through cohort_engine (per-profile window '
+    'binding, one batched promote per wave, the run\'s one shared call-reservation run-id) '
+    'instead of the serial BoundedSupervisor, and is therefore bounded by --max-calls alone: '
+    'the supervisor-only cost / clean / window / empty-streak ceilings have no cohort '
+    'equivalent and are refused rather than silently dropped')
 
 # The exact-version contract coordinator.promote_ready enforces (rejects '', 'sonnet',
 # 'claude-sonnet'); the staged loop hardcodes this same value. Never a bare tier alias.
@@ -616,6 +618,20 @@ def make_run_window(ctx):
     import time
 
     def run_window(window):
+        # H4527 rung 4: a window may carry a PROFILE BINDING (cohort dispatch). When it does,
+        # this lease is dispatched on that one profile instead of the whole admitted fleet —
+        # that binding is what makes CohortEngine's one-in-flight-job-per-profile invariant
+        # real on the live route. No binding (the serial route, every pre-H4527 caller) keeps
+        # the admitted-fleet behaviour byte-for-byte.
+        bound_profile = window.get('profile') or None
+        window_accounts = ({bound_profile} if bound_profile
+                           else set(ctx.probe_latencies or {}))
+        window_only_profile = bound_profile or ctx.only_profile
+        # H4527 rung 4: in a wave, promotion is the WAVE's act — one batched promote-ready for
+        # the whole accepted set, after the acceptance barrier. The per-lease promote below
+        # must stand down or the wave would promote N times and the "exactly one promote per
+        # wave" contract would be false the first time it ran live.
+        wave_promoted = bool(window.get('wave_promote'))
         if window.get('requeue'):
             lease_id = window.get('origin')
             if not lease_id:
@@ -688,7 +704,7 @@ def make_run_window(ctx):
                 db = mao.connect(ctx.db)
                 # H1437 / audit P1#10: the pre-dispatch parked guard must count only the
                 # ADMITTED fleet (probe_latencies), never a healthy EXCLUDED account.
-                admitted = set(ctx.probe_latencies or {})
+                admitted = set(window_accounts)
                 if admitted:
                     qmarks = ','.join('?' * len(admitted))
                     runnable = db.execute(
@@ -707,8 +723,8 @@ def make_run_window(ctx):
                         'parked — rerun with --resume after the reset' % lease_id)
                 mao.cmd_run_once(argparse.Namespace(
                     db=ctx.db, timeout=ctx.timeout, events=ctx.events, run_id=ctx.run_id,
-                    claude_bin=ctx.claude_bin, only_accounts=set(ctx.probe_latencies),
-                    only_profile=ctx.only_profile,
+                    claude_bin=ctx.claude_bin, only_accounts=set(window_accounts),
+                    only_profile=window_only_profile,
                     # A7 (H1283): plumb the run's coordinator/coord_dir/cwd. Without them
                     # coordinator_command() falls back to the DEFAULT coordinator dir
                     # (PWG_COORDINATOR_DIR unset), so the embedded begin-run/record calls hit
@@ -719,7 +735,7 @@ def make_run_window(ctx):
             mao.cmd_record_done(argparse.Namespace(
                 db=ctx.db, coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
                 only_external_ids=scope))
-            if ctx.stop_before_promote or ctx.auto_promote_until is not None:
+            if wave_promoted or ctx.stop_before_promote or ctx.auto_promote_until is not None:
                 # R10: skip promotion -- the window is recorded + auditable but NOT promoted, so the
                 # store and TM stay untouched. The durable AWAITING_REVIEW terminal checkpoint is
                 # written by the audit wrapper ONLY after a clean audit (an audit-rejected/requeued
@@ -743,7 +759,7 @@ def make_run_window(ctx):
         # clean cards never reach the store while the audit still counts the window productive.
         # One unconditional scoped promote here rescues that lease; it is a harmless no-op ("no
         # ready leases to promote") whenever the in-loop promote already ran.
-        if not ctx.stop_before_promote and ctx.auto_promote_until is None:
+        if not wave_promoted and not ctx.stop_before_promote and ctx.auto_promote_until is None:
             rescue = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
@@ -932,6 +948,11 @@ def run(args):
     # on the serial route. This is the ONLY live-path change: width 1 (the default) leaves
     # every stop policy, probe policy, model pin and promotion semantic byte-for-byte as-is.
     cohort_width = getattr(args, 'cohort_width', 1) or 1
+    # H4527 rung 4: the live cohort path is now WIRED (cohort_live_dispatch) and is entered
+    # deliberately — either by asking for it at width 1 (the live serial-acceptance window
+    # work item 1 needs, and the only way the acceptance record's `via_cohort_path` claim can
+    # ever become true) or by any admitted width > 1, which always runs through it.
+    cohort_path = bool(getattr(args, 'cohort_path', False)) or cohort_width > 1
     if args.execute and cohort_width > 1:
         admitted, why, _rec = cla.admit(cohort_width)
         if not admitted:
@@ -939,18 +960,21 @@ def run(args):
                 'bounded_staged_run: --execute refuses --cohort-width %d — %s. Admission '
                 'refused: %s. The production route stays serial (width 1); cohort width > 1 '
                 'runs OFFLINE ONLY (fake/fixture workers via run_cohort_offline / the '
-                'selftest).' % (cohort_width, COHORT_LIVE_GATE, why))
-        # H4527 rung 2 — admitted by record, but the live dispatch is not wired yet. This
-        # branch exists so that a future acceptance record can NEVER turn into a silent
-        # serial run at the requested width: the live execute path below builds a SERIAL
-        # bounded supervisor, and run_cohort_offline is deliberately unreachable from it
-        # (windows scoped from the plan carry no per-profile binding, which the engine's
-        # one-job-per-profile invariant requires). Refusing loudly here is the fail-closed
-        # half of the flip; wiring the live cohort dispatch is the remaining half.
-        raise SystemExit(
-            'bounded_staged_run: --cohort-width %d is ADMITTED (%s) but the LIVE cohort '
-            'dispatch is not wired yet — %s. Refusing rather than running width %d as a '
-            'silent serial window.' % (cohort_width, why, COHORT_LIVE_WIRING, cohort_width))
+                'selftest) until the record exists.' % (cohort_width, COHORT_LIVE_GATE, why))
+    if args.execute and cohort_path:
+        # The cohort path bounds a run by --max-calls alone: CohortEngine has no equivalent of
+        # BoundedSupervisor's cost / clean / window / empty-streak ceilings. Running with one
+        # of those SET would quietly remove the bound the operator asked for, so it refuses.
+        dropped = cld.unsupported_ceilings({
+            'cost_ceiling': args.cost_ceiling, 'max_clean': args.max_clean,
+            'max_windows': args.max_windows, 'empty_streak': args.empty_streak})
+        if dropped:
+            raise SystemExit(
+                'bounded_staged_run: the live cohort path cannot honour %s — %s. It is '
+                'bounded by --max-calls (shared call-reservation ledger) only. Re-run either '
+                'without those ceilings or on the serial route (no --cohort-path, width 1).'
+                % (', '.join('--' + name.replace('_', '-') for name in dropped),
+                   COHORT_LIVE_WIRING))
     plan = json.load(open(args.plan, encoding='utf-8'))
     coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     coord_state = {}
@@ -1068,10 +1092,54 @@ def run(args):
             db=args.db, only_external_ids=set(scope['lease_ids']),
             coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
-    sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
-                           resume=args.resume, call_counter=call_ledger.spent,
-                           usage_counter=call_ledger.usage)
-    summary = sup.run()
+    if cohort_path:
+        # H4527 rung 4 — the LIVE cohort route. Everything paid-lane about it (the canary
+        # receipt gate, the fleet probe above, --max-calls and the one shared reservation
+        # run-id inside run_window) is already in force; what happens here is only the
+        # dispatch: bind each window to a probed-healthy profile, refuse a width the fleet
+        # cannot fill, and let CohortEngine run the wave with ONE batched promote at its
+        # acceptance barrier. Width 1 through this path IS the serial-acceptance window that
+        # work item 1 needs — the same decisions on one profile, taken through the wiring an
+        # admitted width 2 will later use.
+        healthy = sorted(probe_latencies or {})
+        fleet_ok, fleet_why = cld.fleet_guard(cohort_width, healthy)
+        if not fleet_ok:
+            raise SystemExit('bounded_staged_run: %s' % fleet_why)
+        cohort_windows = cld.assign_profiles(
+            [dict(w, wave_promote=True) for w in windows], healthy)
+
+        import subprocess
+
+        def promote_leases(lease_ids, gen_model_version):
+            """ONE coordinator promote-ready carrying every accepted lease of the wave."""
+            if not lease_ids:
+                return {'returncode': 0, 'promoted_at': mao.now_iso(), 'stdout_tail': ''}
+            cmd = [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
+                   '--gen-model-version', gen_model_version]
+            for lease_id in lease_ids:
+                cmd += ['--lease-id', lease_id]
+            done = subprocess.run(cmd, cwd=os.path.abspath(args.cwd), env=_coord_env(ctx),
+                                  text=True, encoding='utf-8', capture_output=True)
+            blob = (done.stderr or '') + (done.stdout or '')
+            if done.returncode and 'no ready leases to promote' not in blob:
+                raise SystemExit('bounded_staged_run: wave promotion failed for %s: %s'
+                                 % (', '.join(lease_ids), blob[-1000:]))
+            return {'returncode': done.returncode, 'promoted_at': mao.now_iso(),
+                    'stdout_tail': blob[-500:]}
+
+        summary = cld.run_cohort_live(
+            cohort_windows, cohort_width, run_window, args.checkpoint, audit=audit,
+            promote_wave=cld.make_wave_promoter(promote_leases, args.gen_model_version),
+            admitted=set(healthy), max_calls=args.max_calls, coord_dir=args.coord_dir,
+            resume=args.resume)
+        summary = dict(summary or {})
+        summary['cohort'] = {'path': 'live', 'requested_width': cohort_width,
+                             'fleet': healthy, 'reason': fleet_why}
+    else:
+        sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
+                               resume=args.resume, call_counter=call_ledger.spent,
+                               usage_counter=call_ledger.usage)
+        summary = sup.run()
     if isinstance(summary, dict) and 'agent_ops_code' not in summary:
         summary = dict(summary)
         summary['agent_ops_code'] = _agent_ops_map_pwg.map_pwg_stop(
@@ -1113,6 +1181,14 @@ def build_parser():
                          'fake/fixture execution through run_cohort_offline. --execute REFUSES '
                          'any value > 1 until the live-acceptance gate passes; default 1 = the '
                          'existing serial route, byte-for-byte unchanged.')
+    ap.add_argument('--cohort-path', action='store_true',
+                    help='H4527 rung 4: run the LIVE window through the cohort dispatch '
+                         '(per-profile binding + one batched promote per wave) instead of the '
+                         'serial supervisor, at --cohort-width (default 1). Width 1 through '
+                         'this path IS the live serial-acceptance window the width-2 '
+                         'acceptance record requires (`via_cohort_path`). Bounded by '
+                         '--max-calls only: the cost/clean/window/empty-streak ceilings have '
+                         'no cohort equivalent and are refused, never silently dropped.')
     ap.add_argument('--resume', action='store_true',
                     help='resume from --checkpoint (no completed lease re-run/re-promoted)')
     ap.add_argument('--stop-before-promote', action='store_true',
