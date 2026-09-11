@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T05:50:18Z",
+  "generated_at": "2026-09-11T16:05:37Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 801,
+    "youngest_artifact_age_seconds": 49,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,26 +17,26 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T01:37:48Z",
-        "age_seconds": 15147,
+        "age_seconds": 52066,
         "size": 26339285
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1247133,
+        "age_seconds": 1284052,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1247133,
+        "age_seconds": 1284052,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-11T05:36:54Z",
-        "age_seconds": 801,
-        "size": 3570274
+        "mtime": "2026-09-11T16:04:44Z",
+        "age_seconds": 49,
+        "size": 3575386
       }
     }
   },
@@ -52,8 +52,8 @@
     "pending": 29,
     "newest_card_at": "2026-08-29T08:49:35Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 12.88,
-    "campaign_days": 74
+    "days_since_last_card": 13.3,
+    "campaign_days": 75
   },
   "yield_quality": {
     "measured": true,
@@ -111,93 +111,93 @@
   },
   "gates": {
     "measured": true,
-    "gate_summaries": 3796,
-    "exit0": 1995,
+    "gate_summaries": 3805,
+    "exit0": 2003,
     "exit0_pct": 52.6,
     "recent_shown": 200,
     "recent": [
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
+        "ts": "2026-09-11T05:36:54Z",
+        "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-07T06:38:02Z",
-        "root": "_apta",
-        "summary": "ru_style exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
         "ts": "2026-09-11T05:36:54Z",
         "root": null,
-        "summary": "final_schema exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
-      },
-      {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
-        "summary": "nws exit=1 requeue=1",
+        "summary": "ru_style exit=1 requeue=1",
         "returncode": 1,
         "requeue": [
           "arvant~~h0_zz_nws00"
         ]
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
+        "summary": "final_schema exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
+        "summary": "nws exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "translation exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "stage2_mechanical exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "coverage exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "sense_dupes exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T05:36:54Z",
-        "root": null,
+        "ts": "2026-09-11T16:04:44Z",
+        "root": "h4213can091108282902",
         "summary": "ru_style exit=1 requeue=1",
         "returncode": 1,
         "requeue": [
@@ -737,21 +737,20 @@
     "measured": true,
     "min_idle_seconds": 120,
     "list_len": 12,
-    "gap_count": 7,
-    "total_idle_seconds": 4186527,
-    "total_idle_hours": 1162.92,
-    "mean_gap_seconds": 598075.286,
+    "gap_count": 8,
+    "total_idle_seconds": 4224197,
+    "total_idle_hours": 1173.39,
+    "mean_gap_seconds": 528024.625,
     "current_idle_seconds": null,
-    "last_idle_seconds": 341931,
+    "last_idle_seconds": 37670,
     "last_idle": {
-      "from": "2026-09-07T06:38:02Z",
-      "to": "2026-09-11T05:36:53Z",
-      "seconds": 341931,
-      "after_root": "_apta",
-      "before_root": null,
-      "reason": "health_nogo",
-      "reason_source": "health_probe_overlap",
-      "reason_evidence": "probe NO-GO 176814ms @2026-09-08T13:10:44.381Z account=c1"
+      "from": "2026-09-11T05:36:54Z",
+      "to": "2026-09-11T16:04:44Z",
+      "seconds": 37670,
+      "after_root": null,
+      "before_root": "h4213can091108282902",
+      "reason": "unknown",
+      "reason_source": "default"
     },
     "idle_by_month": [
       {
@@ -768,9 +767,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 341931,
-        "idle_days": 3.96,
-        "idle_hours": 94.98
+        "idle_seconds": 379601,
+        "idle_days": 4.39,
+        "idle_hours": 105.44
       }
     ],
     "recent_gaps": [
@@ -837,6 +836,15 @@
         "reason": "health_nogo",
         "reason_source": "health_probe_overlap",
         "reason_evidence": "probe NO-GO 176814ms @2026-09-08T13:10:44.381Z account=c1"
+      },
+      {
+        "from": "2026-09-11T05:36:54Z",
+        "to": "2026-09-11T16:04:44Z",
+        "seconds": 37670,
+        "after_root": null,
+        "before_root": "h4213can091108282902",
+        "reason": "unknown",
+        "reason_source": "default"
       }
     ],
     "all_gaps": [
@@ -903,6 +911,15 @@
         "reason": "health_nogo",
         "reason_source": "health_probe_overlap",
         "reason_evidence": "probe NO-GO 176814ms @2026-09-08T13:10:44.381Z account=c1"
+      },
+      {
+        "from": "2026-09-11T05:36:54Z",
+        "to": "2026-09-11T16:04:44Z",
+        "seconds": 37670,
+        "after_root": null,
+        "before_root": "h4213can091108282902",
+        "reason": "unknown",
+        "reason_source": "default"
       }
     ],
     "reasons": {
@@ -915,13 +932,13 @@
         "waiting_requeue",
         "unknown"
       ],
-      "gap_count": 7,
+      "gap_count": 8,
       "reason_counts": {
-        "unknown": 6,
+        "unknown": 7,
         "health_nogo": 1
       },
       "known_reason_count": 1,
-      "unknown_reason_count": 6,
+      "unknown_reason_count": 7,
       "log_entries": 0,
       "log_path": "idle_reason_log.jsonl",
       "note": "Reasons from operator log or measured auto-rules only; historical silence stays unknown"
@@ -2007,8 +2024,8 @@
         "date": "2026-09-11",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 68386,
-        "idle_hours": 19.0,
+        "idle_seconds": 106056,
+        "idle_hours": 29.46,
         "level": 0,
         "idle": true
       }
@@ -2022,6 +2039,11 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.144.168",
+        "date": "2026-09-11",
+        "bullets": []
+      },
       {
         "version": "1.144.163",
         "date": "2026-09-09",
@@ -2074,11 +2096,6 @@
       },
       {
         "version": "1.144.143",
-        "date": "2026-09-02",
-        "bullets": []
-      },
-      {
-        "version": "1.144.138",
         "date": "2026-09-02",
         "bullets": []
       }
