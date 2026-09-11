@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T18:03:50Z",
+  "generated_at": "2026-09-11T18:05:10Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,34 +9,34 @@
   "activity": {
     "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 76,
+    "youngest_artifact_age_seconds": 29,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
     "artifacts": {
       "store": {
         "exists": true,
-        "mtime": "2026-09-11T01:37:48Z",
-        "age_seconds": 59160,
-        "size": 26339285
+        "mtime": "2026-09-11T18:04:38Z",
+        "age_seconds": 29,
+        "size": 26350965
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1291145,
+        "age_seconds": 1291226,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1291145,
+        "age_seconds": 1291226,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-11T18:02:31Z",
-        "age_seconds": 76,
-        "size": 3588574
+        "mtime": "2026-09-11T18:04:24Z",
+        "age_seconds": 44,
+        "size": 3593424
       }
     }
   },
@@ -50,9 +50,9 @@
     "clean_key_count": 2,
     "translated": 79,
     "pending": 29,
-    "newest_card_at": "2026-08-29T08:49:35Z",
+    "newest_card_at": "2026-09-11T17:57:27Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 13.38,
+    "days_since_last_card": 0.01,
     "campaign_days": 75
   },
   "yield_quality": {
@@ -111,93 +111,91 @@
   },
   "gates": {
     "measured": true,
-    "gate_summaries": 3823,
-    "exit0": 2020,
-    "exit0_pct": 52.8,
+    "gate_summaries": 3832,
+    "exit0": 2029,
+    "exit0_pct": 52.9,
     "recent_shown": 200,
     "recent": [
       {
-        "ts": "2026-09-11T17:56:54Z",
+        "ts": "2026-09-11T18:02:31Z",
         "root": "h4213can091108282902",
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T17:56:54Z",
+        "ts": "2026-09-11T18:02:31Z",
         "root": "h4213can091108282902",
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T17:56:54Z",
-        "root": "h4213can091108282902",
-        "summary": "ru_style exit=1 requeue=1",
-        "returncode": 1,
-        "requeue": [
-          "arvant~~h0_zz_nws00"
-        ]
-      },
-      {
         "ts": "2026-09-11T18:02:31Z",
         "root": "h4213can091108282902",
+        "summary": "ru_style exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "final_schema exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "nws exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "translation exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "stage2_mechanical exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "coverage exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "sense_dupes exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
@@ -507,7 +505,7 @@
   },
   "article_parity": {
     "measured": false,
-    "store_roots": 69,
+    "store_roots": 70,
     "article_roots": null,
     "in_store_not_article": null,
     "in_article_not_store": null,
@@ -518,14 +516,14 @@
   "promote_vs_generate": {
     "measured": true,
     "weekly": {
-      "cards_generated": 0,
+      "cards_generated": 5,
       "clean_windows": 0,
       "windows_total": 0,
       "clean_window_pct": null,
       "promote_events": 0
     },
     "lifetime": {
-      "cards_generated": 11507,
+      "cards_generated": 11512,
       "clean_windows": 3,
       "windows_total": 474,
       "clean_window_pct": 0.63,
@@ -597,12 +595,12 @@
     "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
-    "cards_last_hour": 0,
-    "cards_last_24h": 0,
-    "mean_cards_per_active_day_14d": 125.786,
+    "cards_last_hour": 5,
+    "cards_last_24h": 5,
+    "mean_cards_per_active_day_14d": 78.071,
     "mean_wall_clock_minutes": 18.907,
     "wall_clock_sample_n": 51,
-    "newest_card_at": "2026-08-29T08:49:35Z",
+    "newest_card_at": "2026-09-11T17:57:27Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
     "measured": true
   },
@@ -2068,17 +2066,17 @@
       },
       {
         "date": "2026-09-11",
-        "cards": 0,
+        "cards": 5,
         "windows": 0,
         "idle_seconds": 113115,
         "idle_hours": 31.42,
-        "level": 0,
-        "idle": true
+        "level": 2,
+        "idle": false
       }
     ],
     "max_cards": 6025,
-    "active_days": 21,
-    "idle_days": 46
+    "active_days": 22,
+    "idle_days": 45
   },
   "changelog": {
     "measured": true,
