@@ -41,7 +41,35 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
-from agent_budget import derive_agent_budget
+from agent_budget import derive_agent_budget, refuse_starvation_override
+import width_policy
+
+
+def resolve_width_policy():
+    """H4529: turn per-window telemetry into this window's MAX_WIDE / STAGGER_MS.
+
+    No `--adapt-width-from` => the A5/H1283 pinned defaults stand untouched and the
+    manifest records a null decision, so behaviour is byte-identical to pre-H4529 for
+    every existing runbook. With telemetry, `width_policy.decide_width` narrows on a
+    single degraded window and re-widens only after consecutive measured-healthy,
+    load-representative ones — never above the pinned 3.
+
+    The file may be a list of window rows, or {"windows": [...]} — oldest first.
+    """
+    if not ADAPT_WIDTH_FROM:
+        return None
+    with open(ADAPT_WIDTH_FROM, encoding='utf-8') as fh:
+        raw = json.load(fh)
+    rows = raw.get('windows', []) if isinstance(raw, dict) else list(raw or [])
+    decision = width_policy.decide_width(
+        rows, current_max_wide=MAX_WIDE, base_stagger_ms=STAGGER_MS)
+    globals()['WIDTH_DECISION'] = decision
+    globals()['MAX_WIDE'] = decision.max_wide
+    globals()['STAGGER_MS'] = decision.stagger_ms
+    sys.stderr.write('width_policy: %s -> max_wide=%d stagger_ms=%d (%s)\n'
+                     % (decision.action, decision.max_wide, decision.stagger_ms,
+                        decision.reason))
+    return decision
 import pwg_mask
 import card_fields                                    # C-01: the one restore/promote field set
 import german_anchor                                  # H858 Part B: the anchored-repair twin, authored once
@@ -272,6 +300,12 @@ MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expect
                             #  small/medium words (they never legitimately approach 40, so the
                             #  floor let their runaways run unchecked to 40). H189 follow-up.
 MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across both pools
+FORCE_MAX_AGENTS = False    # --force-max-agents: acknowledge the H1610/H1618 total-vs-width footgun
+                            #  (--max-agents is a TOTAL spawn ceiling, not a concurrency width;
+                            #  N < key count starves every non-b0 card — ledger entry
+                            #  C2_M50_W1_MAX_AGENTS1_2026-07-24). Refused at generation time
+                            #  unless this flag is passed; the refusal lives in agent_budget.
+ADAPT_WIDTH_FROM = None     # --adapt-width-from=PATH: per-window telemetry JSON for width_policy
 # --- low-width staggered dispatch (H255/H811, 2026-07-12) --------------------------
 # The top-level dispatch fans every batch into the Workflow runtime, which runs ~min(16,
 # cores-2) ~= 10 concurrently. H255 w07 proved that on a *degraded* generation API this
@@ -283,8 +317,19 @@ MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across 
 # A5 (H1283): bounded is now the DEFAULT — measured non-null 2/21 (~10-wide) -> 14/18 (<=3-wide),
 # ~10% -> ~78% on the degraded transport; the single highest throughput-per-effort change in the
 # audit. Set --max-wide=0 explicitly to opt back into unbounded on a healthy API.
-MAX_WIDE = 3                # --max-wide=N: at most N translateBatch/healOnly units in flight (0=unbounded)
-STAGGER_MS = 2000           # --stagger-ms=M: delay between the first MAX_WIDE worker starts
+# H4529: the two numbers below are now OWNED by `width_policy.py`, which also owns the rule
+# that moves them. Until H4529 they were free-standing constants here and the per-window
+# telemetry the runtime already returns (kill_timeouts / conn_errors / null_keys / non-null
+# yield) was read by no policy at all (H1403 audit ledger #4) — width was static in both
+# directions. `--adapt-width-from=<telemetry.json>` feeds that telemetry back in: the policy
+# narrows on one degraded window and re-widens ONLY after consecutive measured-healthy
+# load-representative windows, never past the A5-pinned 3 (going above 3 stays a deliberate,
+# separately budgeted calibration act — `calibrate_perf_harness.py --width-arm`).
+MAX_WIDE = width_policy.DEFAULT_MAX_WIDE
+                            # --max-wide=N: at most N translateBatch/healOnly units in flight (0=unbounded)
+STAGGER_MS = width_policy.DEFAULT_STAGGER_MS
+                            # --stagger-ms=M: delay between the first MAX_WIDE worker starts
+WIDTH_DECISION = None       # --adapt-width-from=PATH: telemetry-derived width_policy.WidthDecision
 # --- per-card heal budget (H442, 2026-07-10) --------------------------------------
 # The window-level MAX_AGENTS switch above stops a runaway, but it is a SHARED pool: it
 # cannot stop ONE dense card from spending the WHOLE window budget before the other cards
@@ -537,6 +582,16 @@ def parse_args(argv):
             globals()['MAX_WIDE'] = int(a.split('=', 1)[1])
         elif a.startswith('--stagger-ms='):               # H255/H811: delay between the first MAX_WIDE worker starts (thundering-herd guard)
             globals()['STAGGER_MS'] = int(a.split('=', 1)[1])
+        elif a == '--force-max-agents':                   # H4529/H1610: acknowledge the total-vs-width footgun
+            globals()['FORCE_MAX_AGENTS'] = True
+        elif a.startswith('--adapt-width-from='):         # H4529: telemetry-driven width (width_policy.py)
+            globals()['ADAPT_WIDTH_FROM'] = a.split('=', 1)[1]
+    if MAX_AGENTS_OVERRIDE is not None and not FORCE_MAX_AGENTS:
+        # Early, cheap half of the H1610/H1618 refusal: the flag's own help text. The
+        # key-count-aware refusal fires in build() once the window's keys are known.
+        sys.stderr.write(
+            'note: --max-agents is a TOTAL spawn ceiling across the translate+heal pools, '
+            'not a concurrency width (--max-wide is). See C2_M50_W1_MAX_AGENTS1_2026-07-24.\n')
     if budget_explicit and not output_explicit:
         # An explicit --budget=N with no --output-budget means the caller wants BYTE-mode
         # batching (backward compat: every pre-2026-07-02 documented invocation that tuned
@@ -1513,6 +1568,16 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     runtime_inputs = {k: inputs[k] for k in keys if k in runtime_keys}
     runtime_phmaps = {k: phmaps[k] for k in keys if k in runtime_keys}
     runtime_suggest_tm = {k: v for k, v in suggest_tm.items() if k in runtime_keys}
+    # H1610/H1618 footgun, refused one step before the paid boundary (H4529): `--max-agents`
+    # is a TOTAL spawn ceiling, not a width. Below the key count it cannot finish the window.
+    _starve_note = refuse_starvation_override(
+        len(runtime_keys) or len(keys), MAX_AGENTS_OVERRIDE,
+        force=FORCE_MAX_AGENTS, where='gen_opt_harness2')
+    if _starve_note:
+        sys.stderr.write(_starve_note + '\n')
+
+    resolve_width_policy()
+
     budget_plan = derive_agent_budget(
         len(batches),
         {k: len(v) for k, v in frags.items() if v},
@@ -1635,6 +1700,11 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         # ignores retries and whole-batch selfheal fallback on non-presplit cards.
         'agent_expected_after_tm': agent_expected,
     }
+    if WIDTH_DECISION is not None:
+        # H4529: who moved the width, on what telemetry, and what warm-up the chosen width
+        # now demands (width_policy.probe_plan). The key is ABSENT unless --adapt-width-from
+        # actually ran the policy, so every pre-H4529 manifest/golden stays byte-identical.
+        meta['width_policy'] = width_policy.policy_meta(WIDTH_DECISION, MAX_WIDE)
     print('  lanes: tm_cards=%d frag_tm_cards=%d degenerate_passthrough=%d agent_expected_after_tm=%d'
           % (meta['tm_cards'], len(meta['frag_tm_cards']),
              len(meta['degenerate_passthrough_keys']), meta['agent_expected_after_tm']))
