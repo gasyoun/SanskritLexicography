@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 09-09-2026_
+_Created: 06-08-2026 · Last updated: 13-09-2026_
 
 This file guides Claude Code in this repository.
 
@@ -80,42 +80,14 @@ series, **not** in this union.
 
 ## Releases are PR-gated — push the tag AFTER the merge
 
-`master` carries the required status check **`RussianTranslation gates`**, so a release
-commit only reaches it through a PR. That breaks the one-shot tool route:
-`cut_release.py --apply --tag --push` tags the commit that exists *now* — your branch
-head — and the squash-merge replaces it, so the tag either points at a commit never
-reachable from `master` (the orphan class, [Uprava FINDINGS §646](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md))
-or, far more often here, is never pushed at all.
-
-**Measured 09-09-2026:** 22 `## [x.y.z]` headings on `master` carried no tag — including
-`1.144.161`, promoted that same morning by [PR #2156](https://github.com/gasyoun/SanskritLexicography/pull/2156)
-— against 76 tags carrying no heading. 21 were tagged and released in the backfill; the
-22nd (`1.144.102`) was a renumbering artifact and is annotated in
-[CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md) instead.
-
-The flow that actually works here:
-
-1. Promote on a branch — `python ~/Documents/GitHub/Uprava/tools/cut_release.py . --version x.y.z --apply` (**no** `--tag`, **no** `--push`).
-2. Open the PR, wait for `RussianTranslation gates`, merge it.
-3. `git fetch origin master --tags`, then tag the **merge commit on `origin/master`** — never the branch head:
-
-```sh
-git tag -a vx.y.z <merge-sha> -m "vx.y.z" && git push origin vx.y.z
-gh release create vx.y.z --repo gasyoun/SanskritLexicography --title "vx.y.z" --notes-file <section-file>
-```
-
-4. Prove it landed: `python ~/Documents/GitHub/Uprava/tools/cut_release.py . --verify-tag x.y.z` (exit 1 = orphan).
-
-**Backfilling an older version? add `--latest=false` to `gh release create`.** Without it GitHub hands the Latest badge to whatever release was published most recently — so cutting `v1.0.0` today would advertise a June changelog as this repo's current release. The 09-09-2026 backfill published all 21 with the flag, which is why `v1.144.164` still holds the badge. It is only ever omitted for a genuine new release that really is the newest.
-
-Step 3 is the step that gets dropped: the PR merges, the session reports the release as
-cut, and nothing ever tags it. `--verify-releases` is the backstop, not the plan. **Never
-`git tag -f` a published tag** to repair drift — tag the right commit under the right
-number, or annotate the heading, as the 09-09-2026 backfill did.
-
-The convention the backfill followed, and the one to keep: **`vX.Y.Z` points at the commit
-that introduced `## [X.Y.Z]`.** Bare unprefixed tags (`1.144.6`, `1.144.7`, `1.144.84`) exist
-from an older habit and are invisible to the census, which reads `refs/tags/vX.Y.Z` only.
+`master` requires the `RussianTranslation gates` check, so releases reach it only via PR —
+`cut_release.py --apply --tag --push` on a branch tags a commit the squash-merge orphans
+(or the tag is never pushed; measured 09-09-2026: 22 untagged headings). Working flow:
+**promote on a branch with no `--tag`/`--push` → merge the PR → tag the merge commit on
+`origin/master` (never the branch head) → `--verify-tag` proves it** — full procedure and
+history: [docs/agents/release-tag-flow.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/release-tag-flow.md).
+Backfills need `--latest=false` on `gh release create`; `vX.Y.Z` points at the commit that
+introduced `## [X.Y.Z]`; **never `git tag -f` a published tag**.
 
 ## Encoding — BOM is inconsistent, check before editing
 
@@ -163,84 +135,37 @@ Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
   [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md).
 - **Control plane (H3714):**
   [`src/pwg_pipeline/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src/pwg_pipeline) — supported PWG-lifecycle facade: one campaign DB, one
-  paid-call kernel, pure audit, journal-only promotion. Strangler layer over
-  the proven headless engine; legacy PWG-TM writers still run
-  ([`compat.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_pipeline/compat.py)). Wave 1 closed **PARTIAL** (no provider canary, no
-  independent review, no cutover):
-  [WAVE1_REPORT](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WAVE1_REPORT_RussianTranslation_PWG_CONTROL_PLANE_31-08-2026.md). Tools:
-  [`cohort_engine.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cohort_engine.py), [`no_pwg_residual_ledger.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_residual_ledger.py).
-- **Enumeration tiers are FOUR, not two (H3948):**
-  [`microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py) is the one sanctioned reading of PWG's four
-  printed tiers — never re-derive from a marker's shape. Tier-rule change ⇒
-  re-run [`microstructure_four_tier_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure_four_tier_selftest.py) + re-measure with
-  [`pwg_four_tier_store_impact.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) same PR
-  ([report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3948_four_tier_store_impact.json): 28.02% affected). A tier ambiguous in print
-  stays unsplit, counted unresolved — **never guessed**
-  ([FINDINGS §453](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)).
-- **Gate-evidence contract (H3748):** every pwg_ru gate builds its verdict
-  *through* [`gate_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gate_evidence.py) — hashed inputs, hit counts, a JSON
-  sidecar, `assert_nonvacuous()` (a vacuous PASS is a hard FAIL, #1803).
-  Legitimate emptiness is pre-registered by name (`LEGITIMATE_EMPTY` +
-  [the spike](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/SPIKE_PWG_GATE_EVIDENCE_LEGITIMATE_EMPTY_CLASSES_31-08-2026.md)), never inferred from silence. New/changed gate registers a
-  `gate_id` via `GateEvidence` — CI's `gate_evidence.py --require <gate_id>`
-  fails on a missing sidecar. G9 (`validate_interop.py`) is expected **RED**
-  on shipped [`release/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release) (12,374 duplicated ids, #1798) — re-cutting is a
-  publication decision, not a code fix.
-- **Printed-locus invariant (H3751):** `~~h<N>` in a pwg_ru sub-card key is a
-  0-based `enumerate` index over PWG records, **never** the printed homonym
-  number (source `<h>` starts at 1 — conflating them was #1801). Resolve
-  positionally via
-  [`pwg_homonym.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_homonym.py); never re-spell the key. FINDINGS §617.
-- **`DHĀTUP.`→Palsule concordance — a same-author source is not an
-  independent witness (H4349):** the concordance in
-  [`build_dhatup_palsule.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_dhatup_palsule.py)
-  fills a coordinate from PWG first, then from **sibling passes** that run
-  beside it rather than widening `_L` in place. MW may break a PWG tie — it is
-  a different author, which is the whole coverage argument of H4339. **pw and
-  PWG's dotted-id articles may not**: both are Böhtlingk, so a same-book
-  claimant adds a vote to a tie the multi-claimant filter exists to drop, and
-  may not invent a coordinate PWG never cites (Böhtlingk renumbered between
-  editions — pw's `33,67` is pwg's `33,88`). Both classes are measured and
-  **empty**; that is the result, not a gap. **Sync:** any change to the builder
-  or a new sibling pass re-runs
-  [`dhatup_h4349_verify.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/dhatup_h4349_verify.py)
-  (17 checks, re-derives every published number from the artifact and the raw
-  corpora **without importing the builder**; exits **2** when csl-orig is
-  absent — a green run with zero checks was a real defect) **and**
-  `ls_enrichment_selftest.py` in the same PR, and passes `same_book_conflicted`
-  + `pwg_cited` to the new pass. **Since H4386 both are keyword-only with no
-  default** — forgetting one is a `TypeError`, not an unscreened pass, which is
-  exactly how the first cut shipped two wrong rows — and an empty `pwg_cited`
-  raises rather than admitting everything. **The artifact is pinned to its
-  builder:** `_stats.builder_sha256` carries the sha256 of
-  `build_dhatup_palsule.py`, so a builder change without a rebuild fails the
-  selftest; rebuild and commit the JSON in the same PR
-  (`python src/build_dhatup_palsule.py --xls <the gitignored Palsule XLS>`).
-- **`<ab>`/`<ls>` tooltips + RU-column purity** (grammatical abbreviations
-  stay Latin with a tooltip, editorial ones translate to Russian):
-  [`ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md).
-- **Abbreviation invariant (H3959):** every `<ab>` token belongs to one of
-  three disjoint sets in
-  [`pwg_ab_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab_ru.py) — `RU_MAP` (Bucket A, **must** be Cyrillic),
-  `BUCKET_B` (grammatical, stay Latin), `RESIDUE` (undecided, per-token
-  reason). **Sync:** reclassifying a token runs `python pwg_ab_ru.py census`
-  same PR. Never route Bucket-A to Latin. Ruling: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md);
-  style rules 3.1–3.5: [style guide](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md).
+  paid-call kernel, pure audit, journal-only promotion (strangler layer over
+  the proven headless engine; Wave 1 closed **PARTIAL** —
+  [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/WAVE1_REPORT_RussianTranslation_PWG_CONTROL_PLANE_31-08-2026.md)).
+- **Full lane invariants (H3948 / H3748 / H3751 / H4349 / H3959):** one-line
+  forms here, full detail in
+  [`docs/agents/pwg-lane-invariants.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/pwg-lane-invariants.md) — read it before touching any
+  pwg_ru gate, key, or builder. Enumeration tiers are **FOUR, not two** —
+  [`microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py) is the only sanctioned reading; a print-ambiguous
+  tier stays unsplit, never guessed; tier-rule change re-runs the four-tier
+  selftest + store-impact re-measure same PR. Every gate builds its verdict
+  *through* `gate_evidence.py` (`assert_nonvacuous()`, pre-registered
+  `LEGITIMATE_EMPTY`; G9 stays RED on shipped `release/` by design).
+  `~~h<N>` in a sub-card key is a 0-based record index, **never** the printed
+  homonym number — resolve via `pwg_homonym.py`, never re-spell. Same-author
+  sources are not independent witnesses in the `DHĀTUP.`→Palsule
+  concordance; its artifact is sha-pinned to its builder. `<ab>` tokens live
+  in three disjoint sets (`RU_MAP` must stay Cyrillic, `BUCKET_B` Latin) —
+  reclassify ⇒ `pwg_ab_ru.py census` same PR.
 
 ## Cyrillic proper nouns — a lookup table, never reverse-transliteration rules
 
 Russian scholarly indices print names in Cyrillic; no safe rule turns
 Cyrillic back into SLP1 (FINDINGS §60). Only sanctioned mapping: the lookup
-table
-[cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 534 rows, every key derived from an
-IAST witness printed beside the Cyrillic form, **zero rule-derived keys**.
-
-**Sync rule:** changing the table re-runs its builder
+table [cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 534 rows, every key derived from an
+IAST witness printed beside the Cyrillic form, **zero rule-derived keys**
+(`rule_derived_keys: 0` is the citable invariant). **Sync:** changing the
+table re-runs its builder
 [h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py) and refreshes
-[H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json) **same PR** — `rule_derived_keys: 0` is the
-invariant that makes the table citable. Never hand-add a row without an IAST
-witness; the 20 pure-Cyrillic indices stay unkeyed until an onomasticon
-covers them ([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) §6).
+[H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json) **same PR**. Never hand-add a row
+without an IAST witness; the 20 pure-Cyrillic indices stay unkeyed until an
+onomasticon covers them ([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) §6).
 
 ## Authoring conventions
 
