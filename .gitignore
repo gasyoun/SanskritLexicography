@@ -164,3 +164,9 @@ RussianTranslation/experiments/H2675_w1_prep/first200.remaining.txt
 # README in that directory is the committed contract; the zips are not.
 RussianTranslation/reports/pipeline_blobs/*.zip
 RussianTranslation/reports/pipeline_blobs/*.tmp
+
+# H4408: generated csl-orig key->offset sidecars (rebuilt on demand by
+# HeadwordLists/cdsl_index.py; the builder + consumers are committed, the
+# multi-MB derived .idx files are not).
+data/cdsl_index/*.idx
+data/cdsl_index/*.building

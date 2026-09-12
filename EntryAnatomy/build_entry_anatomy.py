@@ -51,9 +51,28 @@ ACUTE = "́"
 # ---------------------------------------------------------------- extraction
 
 def load_records(path):
-    """Return {L-number-string: (headerline, body)} for the whole file."""
-    recs = {}
+    """Return {L-number-string: (headerline, body)} for the whole file.
+
+    H4408: served from the HeadwordLists/cdsl_index.py SQLite sidecar when the
+    source exists (one-time streaming build, then seek-per-record instead of a
+    66-69MB read + regex sweep). Falls back to the legacy whole-file parse when
+    the sidecar machinery is unavailable (CI without csl-orig).
+    """
+    path = Path(path)
+    if path.exists():
+        try:
+            sys.path.insert(0, str(HERE.parent / "HeadwordLists"))
+            from cdsl_index import CdslIndex
+            idx = CdslIndex.open(str(path))
+            try:
+                return {lid: idx.record(lid) for lid in idx.ids()}
+            finally:
+                idx.close()
+        except Exception as exc:  # noqa: BLE001 -- degrade to the legacy whole-file path
+            print(f"cdsl_index sidecar unavailable for {path.name}: {exc}",
+                  file=sys.stderr)
     txt = path.read_text(encoding="utf-8")
+    recs = {}
     for m in re.finditer(r"<L>(\S+?)<pc>(\S+?)\n(.*?)\n?<LEND>", txt, re.S):
         recs[m.group(1)] = (m.group(2), m.group(3))
     return recs
