@@ -1,6 +1,6 @@
 # H4472 — kRtam "Параллели в Санскритских текстах" (621-object yadisk folder) — header census + dedupe verdict
 
-_Created: 10-09-2026 · Last updated: 10-09-2026_
+_Created: 10-09-2026 · Last updated: 13-09-2026_
 
 ## Source probed
 
@@ -96,7 +96,7 @@ kosha `gasuns-krtam-parallels`") — **it is not novel**, so no new full-size da
 warranted. A 12 KB evidence sample (3 representative files: `Full_NEW/104_1--20.csv`,
 `Стоповые/10_1--1.csv`, `Ramayana/248_1--606.csv`, each truncated to the first ~250–300
 bytes with `rclone cat --head`) is committed alongside this report under
-[`H4472_krtam_parallels_sample/`](https://github.com/gasyoun/SanskritLexicography/tree/master/H4472_krtam_parallels_sample) as the evidence artifact —
+[`H4472_krtam_parallels_sample/`](https://github.com/gasyoun/SanskritLexicography/tree/h4472-drain/H4472_krtam_parallels_sample) as the evidence artifact —
 not as the start of a bulk ingest.
 
 A `gasuns-krtam-parallels` manifest row is **not** being added to kosha's
@@ -104,18 +104,33 @@ A `gasuns-krtam-parallels` manifest row is **not** being added to kosha's
 scope: the content is not distinct from `dcs-parallel-passages-full` /
 `stopovye-parallel-passages`. The correct manifest action — appending a cross-reference note
 to those two existing rows pointing at this yadisk personal-drive copy as an alternate
-uncompressed source location — is left as a follow-up for a session with `kosha` write access
-in its own worktree (this session's worktree is `SanskritLexicography` only; editing another
-repo's guarded main tree is out of scope here per the worktree-isolation rule).
+uncompressed source location — **is DONE**: landed as kosha PR
+[#548](https://github.com/gasyoun/kosha/pull/548) (merged to kosha `main` as `ea1e8dc35`,
+10-09-2026; verified live on kosha main 13-09-2026).
 
 ## Follow-up (not done this pass)
 
 - A full bulk pull of the 4.2 GB folder was **deliberately not attempted** — the dedupe
   verdict makes it redundant with data already in `VisualDCS`/kosha, and WebDAV bulk pulls
   need a `nohup` + done-signal plan per the mission's own scope note.
-- If a future session wants the manifest cross-reference added, it is a small, mechanical
+- ~~If a future session wants the manifest cross-reference added, it is a small, mechanical
   edit to the `dcs-parallel-passages-full` and `stopovye-parallel-passages` notes fields in
-  `kosha/data/manifest/datasets.json`, done from a `kosha` worktree.
+  `kosha/data/manifest/datasets.json`, done from a `kosha` worktree.~~ **DONE — kosha PR
+  [#548](https://github.com/gasyoun/kosha/pull/548), merged 10-09-2026.**
+- Residual for MG: this census + sample land on `SanskritLexicography` branch `h4472-drain`
+  as PR [#2161](https://github.com/gasyoun/SanskritLexicography/pull/2161) (all CI green,
+  MERGEABLE) — product repo, so the merge itself is a human click, not an auto-merge.
+
+## Verification re-probe (13-09-2026, OxAlpha close pass)
+
+All four load-bearing claims re-measured live before close, results identical:
+
+| Claim | Re-probe | Result |
+|---|---|---|
+| 621 objects, 4,176,315,658 B | `rclone size` | **621 / 4,176,315,658 B — exact match** |
+| UTF-8, `;` delimiter, no header, `GOOD` flag | `rclone cat --head 200 …Full_NEW/104_1--20.csv` | confirmed (`Divyāv, 1: 1;1 1;buddho bhagavāñ…;GOOD;;`) |
+| 12 KB evidence sample committed | `du -sh H4472_krtam_parallels_sample` | **12K** |
+| PR #2161 mergeable, CI green | `gh pr view 2161 --json mergeable,statusCheckRollup` | **MERGEABLE/CLEAN, all checks SUCCESS** |
 
 ## Evidence commands (reproducible)
 
