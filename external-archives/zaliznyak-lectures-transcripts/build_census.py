@@ -85,7 +85,7 @@ def main():
     groups = group_by_basename(rows)
     index_rows = build_index(groups)
     with open(out_path, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f, delimiter="\t")
+        w = csv.writer(f, delimiter="\t", lineterminator="\n")
         w.writerow(["folder", "basename", "text_formats", "media_formats", "topic_tags", "text_bytes_total"])
         for r in index_rows:
             w.writerow([r["folder"], r["basename"], r["text_formats"], r["media_formats"], r["topic_tags"], r["text_bytes_total"]])
