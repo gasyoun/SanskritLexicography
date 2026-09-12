@@ -38,6 +38,12 @@ def build_dico_index():
                     idx.setdefault(k, f"DICO/{fname}#{k}")
     return idx
 
+def entries_in_file(text):
+    """Whole-text form of entries_in_lines -- kept as the H4353 offline-suite
+    contract pin (tests/test_headword_normalise.py); the file-reading callers
+    stream lines instead."""
+    return entries_in_lines(text.splitlines(keepends=True))
+
 def entries_in_lines(lines):
     """Yield (raw_key, covered) for each MW entry, grouping consecutive anchors
     that precede a Deva span (the MW hypertext's per-entry anchor cluster)."""
