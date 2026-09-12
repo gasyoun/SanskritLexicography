@@ -24,7 +24,10 @@ sys.stdout.reconfigure(encoding='utf-8'); sys.stderr.reconfigure(encoding='utf-8
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
 import sanskrit_util as su
-ORIG = os.environ.get("CSL_ORIG_V02", r"C:/Users/user/Documents/GitHub/csl-orig/v02")
+_ORIG_DEFAULT = r"C:/Users/user/Documents/GitHub/csl-orig/v02"
+if not os.path.isdir(_ORIG_DEFAULT):                    # macOS/Linux checkout:
+    _ORIG_DEFAULT = os.path.join(HERE, '..', '..', 'csl-orig', 'v02')
+ORIG = os.environ.get("CSL_ORIG_V02", _ORIG_DEFAULT)
 OUT = os.path.join(HERE, "union")
 CODE2DIR = {"PWK": "pw"}
 
@@ -54,14 +57,24 @@ def main():
         p = os.path.join(ORIG, d, d + ".txt")
         if not os.path.exists(p):
             print(f"  skip {code}: no csl-orig source"); continue
-        for rec in open(p, encoding='utf-8').read().split('<L>'):
-            mk = re.search(r'<k1>([^<]+)', rec)
-            if not mk: continue
-            k = mk.group(1).strip()
-            if not k: continue
-            union[k].add(code)
-            for ml in re.finditer(r'<lex>([^<]*)</lex>', rec):
-                gender[k] |= gender_letters(ml.group(1))
+        # H4408: iterate via the cdsl_index sidecar (one streaming build per
+        # dict, then seek-per-record) instead of read().split('<L>') over the
+        # whole ~300MB corpus in RAM. Chunks are the same post-<L> text the
+        # split produced (minus the <LEND> line, which carries no <k1>/<lex>).
+        sys.path.insert(0, HERE)
+        from cdsl_index import CdslIndex
+        idx = CdslIndex.open(p)
+        try:
+            for rec in idx.chunks():
+                mk = re.search(r'<k1>([^<]+)', rec)
+                if not mk: continue
+                k = mk.group(1).strip()
+                if not k: continue
+                union[k].add(code)
+                for ml in re.finditer(r'<lex>([^<]*)</lex>', rec):
+                    gender[k] |= gender_letters(ml.group(1))
+        finally:
+            idx.close()
     codes = DICTS
     print(f"union over {len(DICTS)} dicts: {len(union)} headwords")
     fem_only = lambda k: ('f' in gender.get(k, ())) and ('m' not in gender.get(k, ()))
