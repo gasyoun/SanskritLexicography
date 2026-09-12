@@ -1,6 +1,24 @@
 # А.А.Зализняк archive — text-layer census, classification, index (09-09-2026)
 
-_Created: 09-09-2026 · Last updated: 10-09-2026_
+_Created: 09-09-2026 · Last updated: 13-09-2026_
+
+**Verifier pass, 13-09-2026 (independent session, OxAlpha
+`zai-coding-plan/glm-5.3-flash` — the H4358 `{class: data}` gate):**
+
+1. **Format census re-derived from the frozen listing** — every count in the
+   table below reproduces exactly (txt 266 / srt 200 / json 192 / ans 179 /
+   html 178 / mp4 130 / docx 64 / mkv 41 / webm 29 / vtt 13 / tsv 13 / pdf 4 /
+   mp3 261; 1,570 objects, 461 media). Topic tally from the committed index
+   reproduces exactly: 108 / 66 / 62 / 33 / 2 / 1 = 272 groups.
+2. **Rebuild reproducibility FIXED** — `build_census.py`'s `csv.writer`
+   emitted CRLF, so the documented rebuild did not byte-match the committed
+   LF index (content was identical). Now `lineterminator="\n"`; rebuild is
+   **byte-identical** to [transcript_index.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/transcript_index.tsv).
+3. **Sample filenames de-personalised** — `osankina-` prefix dropped from all
+   five samples (mission rule: uploader names stay in the index, not in the
+   published sample; sample *contents* were already name-free — grep-verified).
+4. **Count correction** — total text-layer objects is **1,109**
+   (1,570 − 461), not the 1,192 first printed.
 
 **Update 10-09-2026:** the kosha manifest row proposed below (§ "Proposed
 kosha manifest row") is now landed — [kosha PR #551](https://github.com/gasyoun/kosha/pull/551)
@@ -34,7 +52,7 @@ any sampled file.
 | `mp3` | 261 | audio (media, out of scope for this census) |
 | `srt` | 200 | SubRip subtitle transcript (timestamped, whisper.cpp output) |
 | `json` | 192 | whisper.cpp structured output — full model/run metadata (`ggml-medium`, `language: ru`) + per-segment `{timestamps, offsets, text}` array |
-| `ans` | 179 | **whisper.cpp plain-text-with-timestamps dump** (`[hh:mm:ss.mmm --> hh:mm:ss.mmm]  text`) — the mission's speculation ("srt=json+ans suggests quiz/answer data") is **refuted**: `.ans` is an ASR artifact, not quiz-answer data; see `samples/osankina-RV1034-27nov2010.ans` |
+| `ans` | 179 | **whisper.cpp plain-text-with-timestamps dump** (`[hh:mm:ss.mmm --> hh:mm:ss.mmm]  text`) — the mission's speculation ("srt=json+ans suggests quiz/answer data") is **refuted**: `.ans` is an ASR artifact, not quiz-answer data; see `samples/rv1034-27nov2010.ans` |
 | `html` | 178 | `ansi2html`-rendered terminal capture of the whisper.cpp CLI run (same text as `.txt`/`.srt`, wrapped in a dark-terminal HTML skin) |
 | `mp4` | 130 | video (media, out of scope) |
 | `docx` | 64 | **manuscript pages of a print book** ("Популярные лекции для юношества" vol. II) at various proofreading stages (`после_первой_читки` / `после_третьей_читки` / `после_предвёрстки` = "after first/third proof read" / "after pre-layout") — not ASR output |
@@ -44,7 +62,9 @@ any sampled file.
 | `tsv` | 13 | same 13 Sanskrit/Vedic items — a `start\tend\ttext` flat table, same content as the `.vtt` |
 | `pdf` | 4 | scans, in `прочее/` (miscellaneous), not further classified here |
 
-**Total text-layer objects: 1,192** (everything except `mp3`/`mp4`/`mkv`/`webm` = 461 media objects).
+**Total text-layer objects: 1,109** (1,570 objects − 461 media = 1,109; the
+1,192 first printed on 09-09 was an addition slip, corrected in the verifier
+pass 13-09-2026).
 
 ## Folder → channel → format map
 
@@ -52,7 +72,7 @@ any sampled file.
 |---|---|---|
 | `текст-канал-Алексей-Головастиков` | 614 | per-lecture `.ans/.html/.json/.srt/.txt` (129 lectures × ~5 files); 13 of these lectures **also** carry `.tsv`+`.vtt` (the Sanskrit/Vedic subset, professionally captioned) |
 | `текст-канал-Анна-Осанкина` | 357 | same 5-format pattern, 69 lectures — heavily Sanskrit/Vedic/Ṛgveda-titled (`Разбор-RV-1034`, `Строй-ведийского-языка`, `Грамматический-строй-санскрита`) |
-| `таймкоды-речи-канал-Анна-Осанкина` | 69 | **timecode-only** `.txt` — a bare list of `hh:mm:ss - hh:mm:ss` speech-segment boundaries, no transcript text at all (see `samples/osankina-timecodes-sanskrit-root-jR.txt`) — looks like a pre-ASR diarization/pause-detection pass, one per lecture matching the same 69 basenames as `текст-канал-Анна-Осанкина` |
+| `таймкоды-речи-канал-Анна-Осанкина` | 69 | **timecode-only** `.txt` — a bare list of `hh:mm:ss - hh:mm:ss` speech-segment boundaries, no transcript text at all (see `samples/timecodes-sanskrit-root-jR.txt`) — looks like a pre-ASR diarization/pause-detection pass, one per lecture matching the same 69 basenames as `текст-канал-Анна-Осанкина` |
 | `обработанные-тексты` | 56 | book-manuscript `.docx`, proofreading-stage naming |
 | `II том Популярных лекций для юношества` | 8 | same manuscript, later duplicate/working copies |
 | `текст`, `прочее`, `аудио*`, `видео*` | ≤4 each | stragglers — one loose `.srt`, misc `.pdf`, and the media folders (out of scope) |
@@ -93,11 +113,11 @@ built from — re-list the remote and rerun for a fresh census).
 Five files, all from the Sanskrit/Vedic slice, chosen for small size and to
 cover every text-layer format family found:
 
-- [`osankina-RV1034-27nov2010.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/osankina-RV1034-27nov2010.txt) — flat ASR text
-- [`osankina-RV1034-27nov2010.srt`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/osankina-RV1034-27nov2010.srt) — SubRip
-- [`osankina-RV1034-27nov2010.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/osankina-RV1034-27nov2010.json) — whisper.cpp structured output
-- [`osankina-RV1034-27nov2010.ans`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/osankina-RV1034-27nov2010.ans) — whisper.cpp bracketed-timestamp dump
-- [`osankina-timecodes-sanskrit-root-jR.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/osankina-timecodes-sanskrit-root-jR.txt) — timecode-only format (`таймкоды-*` folder)
+- [`rv1034-27nov2010.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/rv1034-27nov2010.txt) — flat ASR text
+- [`rv1034-27nov2010.srt`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/rv1034-27nov2010.srt) — SubRip
+- [`rv1034-27nov2010.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/rv1034-27nov2010.json) — whisper.cpp structured output
+- [`rv1034-27nov2010.ans`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/rv1034-27nov2010.ans) — whisper.cpp bracketed-timestamp dump
+- [`timecodes-sanskrit-root-jR.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/external-archives/zaliznyak-lectures-transcripts/samples/timecodes-sanskrit-root-jR.txt) — timecode-only format (`таймкоды-*` folder)
 
 No `.html`/`.vtt`/`.tsv`/`.docx` sample is included — `.html` is a
 byte-identical rewrap of `.txt`/`.srt` (terminal-capture skin, no new
