@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T04:49:54Z",
-  "snapshot_date": "2026-09-08",
+  "generated_at": "2026-09-11T18:18:58Z",
+  "snapshot_date": "2026-09-11",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -46,17 +46,17 @@
   },
   "store": {
     "measured": true,
-    "senses": 11519,
+    "senses": 11521,
     "roots": 221,
     "review": {
       "approved": 3,
-      "ai_translated": 11514,
+      "ai_translated": 11516,
       "needs_review": 2
     },
     "human_reviewed": 3,
     "review_breakdown": {
       "approved": 3,
-      "ai_translated": 11514,
+      "ai_translated": 11516,
       "needs_review": 2,
       "other": 0
     }
