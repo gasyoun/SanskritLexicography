@@ -1,0 +1,31 @@
+hw_slp1	iast	verdict	recommendation	corr_n	corr_dicts	mahavy	dcs_lemma	dcs_form	mw_fold_hit	body_chars
+aSvinIsuta	aśvinīsuta	confirmed-missing	add	4	lrv;pe;shs;wil	0	1	0	0	75
+SIBava	śībhava	confirmed-missing	add	6	bur;mw72;pwg;shs;wil;yat	0	0	0	0	48
+KamBIrapati	khambhīrapati	confirmed-missing	add	2	bhs;sch	1	0	0	0	85
+parijetar	parijetar	confirmed-missing	add	2	bhs;sch	1	0	0	0	94
+bfMhayitar	bṛṃhayitar	confirmed-missing	add	2	bhs;sch	1	0	0	0	98
+klomaka	klomaka	confirmed-missing	add	2	bhs;sch	1	0	0	0	90
+vikazvara	vikaṣvara	confirmed-missing	add	5	mw72;pwg;shs;wil;yat	0	0	0	0	24
+UQakaNkawa	ūḍhakaṅkaṭa	confirmed-missing	add	6	ap;pwg;shs;vcp;wil;yat	0	0	0	0	86
+nAkapfzWa	nākapṛṣṭha	confirmed-missing	add	3	cae;ccs;pwg	0	0	0	0	109
+nfpativallaBa	nṛpativallabha	confirmed-missing	add	2	pwg;vcp	0	0	0	0	126
+trayaDA	trayadhā	confirmed-missing	add	3	cae;ccs;gra	0	0	0	0	108
+masAraka	masāraka	confirmed-missing	add	2	lrv;pwg	0	0	0	0	23
+OparEDika	auparaidhika	confirmed-missing	add	2	mw72;pwg	0	0	0	0	97
+avadAhezwakApaTa	avadāheṣṭakāpatha	confirmed-missing	add	4	shs;vcp;wil;yat	0	0	0	0	23
+BrUkuwika	bhrūkuṭika	confirmed-missing	add	2	bhs;sch	1	0	0	0	113
+duddoli	duddoli	confirmed-missing	check	1	pwg	0	0	0	0	35
+agnisuta	agnisuta	confirmed-missing	check	1	inm	0	0	0	0	103
+CandapratyudDAra	chandapratyuddhāra	confirmed-missing	check	1	sch	1	0	0	0	147
+sAQvA	sāḍhvā	confirmed-missing	check	1	pwg	0	1	1	0	62
+aglAsnu	aglāsnu	confirmed-missing	check	1	sch	0	0	0	0	62
+AjakarORa	ājakarauṇa	confirmed-missing	check	1	pwg	0	0	0	1	73
+AriSmIya	āriśmīya	confirmed-missing	check	1	pwg	0	0	0	0	82
+naqvant	naḍvant	confirmed-missing	check	1	pwg	0	0	0	0	65
+prakrantar	prakrantar	confirmed-missing	check	1	pwg	0	0	0	0	101
+OpakUla	aupakūla	confirmed-missing	check	1	pwg	0	0	0	0	58
+pruzwAy	pruṣṭāy	confirmed-missing	low-priority	0		0	0	0	0	64
+kAlapriyakarI	kālapriyakarī	confirmed-missing	low-priority	0		0	1	1	0	87
+amlapAdapa	amlapādapa	confirmed-missing	low-priority	0		0	0	0	0	90
+saMBalIya	saṃbhalīya	confirmed-missing	low-priority	0		0	0	0	1	50
+kfzRAgruja	kṛṣṇāgruja	confirmed-missing	low-priority	0		0	0	0	0	87

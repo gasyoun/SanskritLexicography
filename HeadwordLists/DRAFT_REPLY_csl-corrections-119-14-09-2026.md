@@ -2,7 +2,7 @@
 
 _Created: 14-09-2026 · Last updated: 14-09-2026_
 
-**Status: DRAFT — upstream posting is MG's ruling** (H4837 gate; a 14-09
+**Status: DRAFT — upstream posting is MG's ruling** (H4837/H4878 gate; a 14-09
 changelog row records a posting approval for the earlier MW72-baseline reply —
 this draft posts only on a fresh word from MG).
 
@@ -22,38 +22,49 @@ Nachträge) with MW: ~30 % of MW99's annexure headwords are verbatim Nachträge
 headwords (1,800 of 6,082; 29.6–30 % under every counting convention we tried).
 A Nachträge headword is ~7.8× more likely to sit in the MW annexure than in
 MW's main body (32.5 % vs 4.1 %, on the standalone Nachträge digitization).
+And MW72 cross-checks show MW99 took ~60 % of the sup_7 pool MW72 lacked —
+while skipping 4,112 words outright (the `kāritra` class proper; 27 more were
+dropped between MW editions).
 
-**2. The skipped remainder is enumerable.** Using the digitizations' own `*`
-insert markers (pw.txt + pwkvn.txt) we freeze the set of Nachträge headwords
-**absent from MW99**: 3,353 unique headwords. Each carries a cross-dictionary
-corroboration profile over 36 Cologne dictionaries, Mahāvyutpatti-citation
-flags (273 cite MAHĀVY), MW stem/near-form checks, and DCS-corpus attestation.
+**2. The skipped remainder is enumerated and adjudicated.** On the
+deterministic `sup_7` pipeline, 4,151 candidate rows were each given a verdict
+(artifacts:
+`HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`,
+`MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`,
+`MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md` in
+[gasyoun/SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)):
 
-**3. A first adjudication pass** (artifacts:
-`HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.{md,tsv}`,
-`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`, `MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`
-in [gasyoun/SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)):
+- **1,751 confirmed missing** from MW (verbatim, stem- and near-form space);
+  **572 of them corroborated by ≥2 of 36 other Cologne dictionaries** — draft
+  MW-entry stubs are written for these, many with Mahāvyutpatti or
+  Buddhist-Hybrid-Sanskrit corroboration (`kāritra` itself: BHS + Śabdakalpadruma).
+- **482 are stem-form doublets** (MW carries the lexeme under a different final
+  form) — editorial calls, not clean omissions.
+- **227 case/vowel-length twins** of MW headwords (the `akalita`/`Akalita`
+  trap — SLP1 case is phonemic, so some are distinct words) and **1,691
+  near-form matches** flagged for human eyes, since fuzzy ~0.9 cannot separate
+  orthographic variants from different words (`kāritra` vs causative
+  `kārita` at 0.92 is exactly that case).
+- Each row carries a cross-dictionary corroboration profile, Mahāvyutpatti
+  citation flags, and DCS-corpus lemma/form attestation.
 
-- **2,743 confirmed missing** (absent verbatim and in stem-normalized space);
-  889 corroborated by ≥2 other dictionaries, 349 of them without any risk flag
-  — draft MW-entry stubs are written for all 889.
-- **610 are stem-form doublets** (MW carries the lexeme under a different final
-  form, e.g. `aścary` ↔ `aścarya`) — editorial calls, not clean omissions.
-- Risk classes flagged per row: vowel-length variants that may still be distinct
-  words (SLP1 `Anumati` gaṇa-entry vs `anumati`), orthographic doublets
-  (metathesis, single/double consonants), the `kāritra`~`kārita` false-friend
-  class (different words at fuzzy 0.92 — exactly why this tier needs human
-  review), and PWK's pratyāhāra/short-form listings.
+**3. A second, wider sweep** over the digitizations' own `*` insert markers
+(pw.txt + pwkvn.txt across all layers) freezes 3,353 unique absent headwords
+with per-row verdicts (`MW-missing-PW-Nachtrag-candidates-14-09-2026.{md,tsv}`,
+`MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv`) — 349 of them corroborated
+Tier-A adds without any risk flag. A stratified 30-sample hand spot-check of
+both passes showed **0/30 false positives**.
 
 **4. Caveats we want on the record.** Absence from MW is not automatically an
-MW error (MW never promised full PWK coverage); MW72 cross-checks split the
-pool into ~4,112 never-seen vs 27 dropped-between-editions; and any number in
-this space is tier-definition-dependent — our counts always ship with their
-definition (see `MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md`).
+MW error (MW never promised full PWK coverage); many `sup_7` entries are
+homonym-number extensions; and any number in this space is
+tier-definition-dependent — our counts always ship with their definition (see
+`MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md` §0).
 
 The full verdict workbook is reproducible from
-`HeadwordLists/pw_nachtrag_vs_mw.py` + `pw_nachtrag_adjudicate.py` (stdlib
-only, deterministic). If useful upstream, we can next turn the 349 clean adds
+`HeadwordLists/mw_pwk_nachtraege_missing_entries.py` +
+`mw_pwk_nachtraege_adjudicate.py` (stdlib only, deterministic, byte-identical
+rerun verified). If useful upstream, we can next turn the corroborated adds
 into a machine-usable proposal list (SLP1 + IAST + gloss + sources per entry).
 
 ---

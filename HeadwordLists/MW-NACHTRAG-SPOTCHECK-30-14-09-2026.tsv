@@ -1,31 +1,31 @@
-hw_slp1	iast	verdict	recommendation	corr_n	corr_dicts	mahavy	dcs_lemma	dcs_form	mw_fold_hit	body_chars
-aSvinIsuta	aśvinīsuta	confirmed-missing	add	4	lrv;pe;shs;wil	0	1	0	0	75
-SIBava	śībhava	confirmed-missing	add	6	bur;mw72;pwg;shs;wil;yat	0	0	0	0	48
-KamBIrapati	khambhīrapati	confirmed-missing	add	2	bhs;sch	1	0	0	0	85
-parijetar	parijetar	confirmed-missing	add	2	bhs;sch	1	0	0	0	94
-bfMhayitar	bṛṃhayitar	confirmed-missing	add	2	bhs;sch	1	0	0	0	98
-klomaka	klomaka	confirmed-missing	add	2	bhs;sch	1	0	0	0	90
-vikazvara	vikaṣvara	confirmed-missing	add	5	mw72;pwg;shs;wil;yat	0	0	0	0	24
-UQakaNkawa	ūḍhakaṅkaṭa	confirmed-missing	add	6	ap;pwg;shs;vcp;wil;yat	0	0	0	0	86
-nAkapfzWa	nākapṛṣṭha	confirmed-missing	add	3	cae;ccs;pwg	0	0	0	0	109
-nfpativallaBa	nṛpativallabha	confirmed-missing	add	2	pwg;vcp	0	0	0	0	126
-trayaDA	trayadhā	confirmed-missing	add	3	cae;ccs;gra	0	0	0	0	108
-masAraka	masāraka	confirmed-missing	add	2	lrv;pwg	0	0	0	0	23
-OparEDika	auparaidhika	confirmed-missing	add	2	mw72;pwg	0	0	0	0	97
-avadAhezwakApaTa	avadāheṣṭakāpatha	confirmed-missing	add	4	shs;vcp;wil;yat	0	0	0	0	23
-BrUkuwika	bhrūkuṭika	confirmed-missing	add	2	bhs;sch	1	0	0	0	113
-duddoli	duddoli	confirmed-missing	check	1	pwg	0	0	0	0	35
-agnisuta	agnisuta	confirmed-missing	check	1	inm	0	0	0	0	103
-CandapratyudDAra	chandapratyuddhāra	confirmed-missing	check	1	sch	1	0	0	0	147
-sAQvA	sāḍhvā	confirmed-missing	check	1	pwg	0	1	1	0	62
-aglAsnu	aglāsnu	confirmed-missing	check	1	sch	0	0	0	0	62
-AjakarORa	ājakarauṇa	confirmed-missing	check	1	pwg	0	0	0	1	73
-AriSmIya	āriśmīya	confirmed-missing	check	1	pwg	0	0	0	0	82
-naqvant	naḍvant	confirmed-missing	check	1	pwg	0	0	0	0	65
-prakrantar	prakrantar	confirmed-missing	check	1	pwg	0	0	0	0	101
-OpakUla	aupakūla	confirmed-missing	check	1	pwg	0	0	0	0	58
-pruzwAy	pruṣṭāy	confirmed-missing	low-priority	0		0	0	0	0	64
-kAlapriyakarI	kālapriyakarī	confirmed-missing	low-priority	0		0	1	1	0	87
-amlapAdapa	amlapādapa	confirmed-missing	low-priority	0		0	0	0	0	90
-saMBalIya	saṃbhalīya	confirmed-missing	low-priority	0		0	0	0	1	50
-kfzRAgruja	kṛṣṇāgruja	confirmed-missing	low-priority	0		0	0	0	0	87
+hw_slp1	iast	pwk_L	pwk_pc	corr_n	corr_dicts	mahavy	dcs_lemma	mw_fuzzy	mw_fold_hit
+avanDyaprasAda	avandhyaprasāda	212985	7-310-d	1	sch	0	0		0
+apratipUjita	apratipūjita	211968	7-304-b	3	cae;sch;stc	0	1		0
+cetaHparyAyajYAna	cetaḥparyāyajñāna	217365	7-342-a	1	sch	1	0		0
+antarjAnukara	antarjānukara	211483	7-301-c	1	sch	0	0		0
+atinanAmin	atinanāmin	210128	7-293-b	1	sch	0	0		0
+avAntaraprakfti	avāntaraprakṛti	213099	7-311-c	1	sch	0	0		0
+aDaScikura	adhaścikura	210538	7-295-d	1	sch	0	0		0
+aviSArada	aviśārada	213232	7-312-b	2	sch;stc	0	1		0
+atipraSAnta	atipraśānta	210164	7-293-c	3	cae;sch;stc	0	0		0
+ASAwavI	āśāṭavī	214403	7-320-a	2	bhs;sch	0	0		0
+tadbudDi	tadbuddhi	222404	7-388-a	3	cae;md;sch	0	0		0
+merukadambaka	merukadambaka	220588	7-369-a	1	sch	0	0		0
+abahumAna	abahumāna	212108	7-305-b	2	bhs;sch	0	0		0
+azwANgahfdayadIpikA	aṣṭāṅgahṛdayadīpikā	213468	7-313-d	1	sch	0	0		0
+aniScAyaka	aniścāyaka	211125	7-299-b	1	sch	0	0		0
+anapisoma	anapisoma	210817	7-297-b	1	sch	0	0		0
+ananyaSAsana	ananyaśāsana	210792	7-297-b	2	ap;sch	0	0		0
+ativijYa	ativijña	210238	7-294-a	1	sch	0	0		0
+atimanoraTa	atimanoratha	210188	7-293-c	1	sch	0	0		0
+analIy	analīy	210882	7-297-d	0		0	0		0
+aprakftisTa	aprakṛtistha	211919	7-304-a	3	sch;vcp;yat	0	0		0
+alaMkAratilaka	alaṃkāratilaka	212844	7-309-d	2	acc;sch	0	0		0
+anaBiDfzRuvant	anabhidhṛṣṇuvant	210831	7-297-c	1	sch	0	0		0
+agnipiRqa	agnipiṇḍa	209719	7-290-d	1	sch	0	0		0
+uBayagrAsarAhUdaya	ubhayagrāsarāhūdaya	215194	7-325-d	2	acc;sch	0	0		0
+argalapASaka	argalapāśaka	212689	7-308-d	1	sch	0	0		0
+arTayitar	arthayitar	212732	7-309-b	1	sch	0	0		0
+aNgaloman	aṅgaloman	209836	7-291-c	1	sch	0	0		0
+anirvedakara	anirvedakara	211111	7-299-a	1	sch	0	0		0
+kUreSavijaya	kūreśavijaya	216299	7-333-d	2	acc;sch	0	0		0
