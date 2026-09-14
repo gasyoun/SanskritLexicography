@@ -63,11 +63,18 @@ filter: `cooc_saturated == false`.**
 | `cooccurrence-only` (no BR window; previously empty, now inferred-only) | 5,603 | 10.6% of total |
 | Median expansion delta (BR-windowed, widened) | 2,305 years | — |
 
-Join rate note: 50,468 of 80,776 co-occurrence stem rows transliterate into the
-17,292-key1 window universe (14.3% direct) — the ceiling is the window file's
-own coverage (numbered-sense headwords only, 19,454 of PWG's ~109k), not the
-transliteration. Partner IDs unresolved by the CSV's own stem list: ~0.01%
-(2 of 20,013 probed), counted, never guessed.
+Join rate note: 50,468 of 353,351 CSV row-instances (14.3%) transliterate into
+the 17,292-key1 window universe — the ceiling is the window file's own coverage
+(numbered-sense headwords only, 19,454 of PWG's ~109k), not the transliteration
+(the row denominator double-counts L+R duplicates of matched stems, so the
+distinct-stem rate is the honest 14.3%-order figure). Partner IDs unresolved by
+the CSV's own stem list: ~0.01% (2 of 20,013 probed), counted, never guessed.
+
+Inherited-field note: the input's constant `basis` field
+(«per Böhtlingk–Roth's citations») is carried through verbatim on every row —
+including `cooccurrence-only` rows, where it describes the WINDOW FILE's basis
+contract, not the new window. `window_basis` is the disambiguating field;
+consumers must key on `window_basis`, never on `basis`.
 
 ## Held-out verification (seed 4713, n=300 windowed senses)
 
@@ -91,8 +98,8 @@ as a replacement for the BR window.
 | key1 | sense | BR window | cooc window (n, w) | expanded | basis |
 | --- | --- | --- | --- | --- | --- |
 | a | 0 | -900…1830 | -1125…1830 (938, 3822) | -1125…1830 | br+cooc (saturated) |
-| avatAraNa | 1 | 70…1150 | -1125…1830 (14, 62) | -1125…1830 | br+cooc (saturated) |
-| upaviZa | 0 | 1150…1150 | -1125…1830 (3, 17) | -1125…1830 | br+cooc (saturated) |
+| avataraRa | 1 | 70…1150 | -1125…1830 (14, 62) | -1125…1830 | br+cooc (saturated) |
+| upaviza | 0 | 1150…1150 | -1125…1830 (3, 17) | -1125…1830 | br+cooc (saturated) |
 | kelikalA | 0 | — | -1125…1830 (3, 6) | -1125…1830 | cooccurrence-only |
 | car | 46 | -1125…70 | -1125…1830 (679, 3164) | -1125…1830 | br+cooc (saturated) |
 | tola | 0 | — | -1125…1830 (5, 10) | -1125…1830 | cooccurrence-only |
@@ -103,7 +110,7 @@ as a replacement for the BR window.
 | kamala | 1 | 80…1830 | -1125…1830 (202, 647) | -1125…1830 | br+cooc (saturated) |
 | raji | 1 | -1125…-1125 | -1125…1830 (7, 17) | -1125…1830 | br+cooc (saturated) |
 | vahana | 1 | -500…1150 | -1125…1830 (23, 55) | -1125…1830 | br+cooc (saturated) |
-| veSya | 2 | -1125…1200 | -1125…1830 (1, 2) | -1125…1830 | br+cooc |
+| veSya | 2 | -1125…1200 | -1125…1830 (1, 2) | -1125…1830 | br+cooc (saturated) |
 | saMropaRa | 0 | 400…400 | **70…1150** (1, 9) | 70…1150 | br+cooc — informative |
 
 <!-- h4713:generated:end -->
