@@ -8,34 +8,34 @@
   "output": "RussianTranslation/src/pwg_sense_attestation_window_cooc_expanded.jsonl",
   "census": {
     "senses_total": 53003,
-    "senses_with_cooc_evidence": 40013,
+    "senses_with_cooc_evidence": 0,
     "senses_br_windowed": 43990,
-    "senses_cooccurrence_only": 5603,
-    "senses_br_widened_by_cooc": 33958,
-    "senses_br_not_widened": 452,
-    "median_expansion_delta_years": 2305,
-    "senses_cooc_saturated_at_corpus_horizon": 35390
+    "senses_cooccurrence_only": 0,
+    "senses_br_widened_by_cooc": 0,
+    "senses_br_not_widened": 0,
+    "median_expansion_delta_years": 0,
+    "senses_cooc_saturated_at_corpus_horizon": 0
   },
   "held_out_verification": {
     "seed": 4713,
     "pass_rule": "intersection_rate >= 0.5",
     "overall": {
-      "n": 300,
-      "intersection_rate": 0.99,
-      "containment_rate": 0.9733
+      "n": 0,
+      "intersection_rate": null,
+      "containment_rate": null
     },
     "by_saturation": {
       "saturated": {
-        "n": 272,
-        "intersection_rate": 1.0,
-        "containment_rate": 1.0
+        "n": 0,
+        "intersection_rate": null,
+        "containment_rate": null
       },
       "non_saturated": {
-        "n": 28,
-        "intersection_rate": 0.8929,
-        "containment_rate": 0.7143
+        "n": 0,
+        "intersection_rate": null,
+        "containment_rate": null
       }
     },
-    "verdict": "PASS"
+    "verdict": "FAIL"
   }
 }
