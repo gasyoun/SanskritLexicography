@@ -1,6 +1,6 @@
 # CLI cache amortisation — purpose-built re-measure of standing truth #1 (06-08-2026)
 
-_Created: 06-08-2026 · Last updated: 06-08-2026_
+_Created: 06-08-2026 · Last updated: 15-09-2026_
 
 **Handoff.** [H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md)
 (**Opus 5**) — PWG CLI cache-amortisation re-measure against standing truth #1.
@@ -25,6 +25,15 @@ creates **zero** cache and reads the first call's `create + read` total.
 | Call #2 `cache_creation` | ~49 165 (re-wrote everything) | **0** |
 | Call #2 `cache_read` | 28 882 (pinned) | **55 125** = call #1's create + read |
 | Verdict | no amortisation | **amortisation** |
+
+> **Correction (15-09-2026, [H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md), from
+> [H4528 §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4528/H4528_WHOLE_CARD_HANG_FORENSICS_14-09-2026.md)).**
+> Throughout this memo "v1.127.0" / "1.127.0" is a **repo release** of this pipeline
+> ([RussianTranslation/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md) `## [1.127.0] - 2026-08-02`), not a Claude Code CLI
+> version. The CLI version that the 02-08-2026 probe ran on was never recorded
+> (`cache_prefix_stability_probe.py` does not stamp one). So read the left column as
+> "the 02-08-2026 measurement" and "1.127.0 → 2.1.223" as "unrecorded CLI → 2.1.223".
+> The verdict stands: the rigs are byte-identical, so the CLI is still the only changed knob.
 
 **This is a CLI behaviour change, not a methodology difference** — see §4, where the two
 probes are shown to issue the same argv, the same prompt string, the same model, the same

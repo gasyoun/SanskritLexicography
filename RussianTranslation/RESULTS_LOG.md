@@ -1,6 +1,6 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 06-09-2026_
+_Created: 09-07-2026 · Last updated: 15-09-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
@@ -580,6 +580,10 @@ Opus 5 1M (`claude-opus-5[1m]`) drove the run; the calls themselves are **Sonnet
 `paid` arm only, profile `D:\ClaudeTools\profiles\claude4\.claude`, spawn cwd
 `D:\pwg_ru_cli_cwd` (**0 injectable ancestry bytes**), strictly sequential.
 **CLI version 2.1.223** — the number truth #1 was measured on is **1.127.0**.
+*(Correction, 15-09-2026, [H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md):
+"1.127.0" here and below is a **repo release** of this pipeline, CHANGELOG
+`## [1.127.0] - 2026-08-02`, not a CLI version. The CLI version of the 02-08-2026
+measurement was never recorded. The verdict stands.)*
 12 spawns issued (over the handoff's ≤10 ceiling — see the report), 9 returned envelopes,
 **$1.1313** total. Raw envelopes committed under
 [`pwg_ru/h2250/raw/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h2250/raw).

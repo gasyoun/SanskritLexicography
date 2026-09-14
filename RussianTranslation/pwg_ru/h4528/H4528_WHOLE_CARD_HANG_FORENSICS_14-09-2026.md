@@ -1,6 +1,6 @@
 # H4528 — whole-card "hang" forensics and the no-output-progress watchdog on the headless worker
 
-_Created: 14-09-2026 · Last updated: 14-09-2026_
+_Created: 14-09-2026 · Last updated: 15-09-2026_
 
 **Handoff:** [H4528](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4528-Opus_RussianTranslation_pwg-ru-whole-card-hang-watchdog_10.09.26.md) (Opus 5, 🔴3 hard). **Executor:** Opus 5 (`claude-opus-5`). **Paid calls:** zero. Every measurement below comes from committed telemetry or from the real `claude` CLI (2.1.251) talking to a fake Messages API on localhost.
 
@@ -132,6 +132,15 @@ So the switch follows the H2189/H2251 precedent: a manifest tri-state `execution
 
 The flip to ON waits for one confirmatory live call under a fresh `/pwg-live-gate` GO with a `--max-calls` reservation. That call should run on a dense card and record `quiet_ms`, `first_progress_ms` and `progress_events`. If the longest quiet stretch on a healthy dense card stays well under 90 s, ON is safe; otherwise the evidence points at `--thinking-display summarized` or a longer window.
 
+### 5a. Addendum, 15-09-2026 — the confirmatory call was NOT run; the default stays OFF
+
+**Executor:** Opus 5 (`claude-opus-5`), via [H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md). **Paid calls:** zero.
+
+1. **No live reading exists.** The call is paid and needs a fresh `/pwg-live-gate` GO with a `--max-calls 1` reservation, given by a human. No GO was given in the H4842 session, so no dense card was run and `first_progress_ms`, `progress_events`, `quiet_ms`, `ttft_ms`, `duration_api_ms` and `api_gap_ms` stay unmeasured on the token stream.
+2. **Decision on that evidence: `DEFAULT_CLI_TOKEN_STREAM = False` is unchanged.** The flip rule needs a longest quiet stretch of at most about 30 000 ms on a healthy dense card; with no reading, the two §5 facts still stand. [headless_worker.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py), its selftest pin and LANG_PARITY are therefore untouched, so no restamp receipt is owed.
+3. **Neither ceiling moves.** The 90 000 ms window and the 600 000 ms hard ceiling are not the fix, whatever the reading shows.
+4. **What the call must record when it runs:** one nakzatra-class whole card (70+ citation units), production profile, `execution.cli_token_stream: true`, through `headless_worker.py`; the six fields above, written into a §5b beside this one. If `quiet_ms` > ~30 000 ms, keep OFF and cost a separate GO for `--thinking-display summarized` (it changes billed output).
+
 ## 6. What was built
 
 1. **The window is derived from argv, not pinned.** In [execution_contract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/execution_contract.py), `progress_window_ms_for_argv` returns 90 000 only for `stream-json` plus `--include-partial-messages`. It returns `None` (observe only) for `json` and for plain `stream-json`, which corrects H2878's assumption that plain `stream-json` streams.
@@ -152,7 +161,7 @@ The change is classified SHARED in [LANG_PARITY.md](https://github.com/gasyoun/S
 
 1. **The confirmatory live call** from §5. It gates the flip to ON, and a human should decide it under a fresh `/pwg-live-gate` GO.
 2. **`--thinking-display summarized`.** It is the candidate fix if the live call shows long silent thinking. It is hidden and changes billed output, so it was not wired here.
-3. **Stale records** that were deliberately not edited in this pass:
+3. **Stale records** that were deliberately not edited in this pass — **all four corrected 15-09-2026 by H4842**, each as a dated correction note beside the original text, not a rewrite. One refinement on contact: the 48 414 ms call has three clocks, harness wall 107 659 ms, CLI `duration_ms` 64 109 ms and API 48 414 ms ([h2189_card_rows.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/raw/b6_card_repeat/h2189_card_rows.json), [h2189_card_paid_nakzatra_1.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/raw/b6_card_repeat/h2189_card_paid_nakzatra_1.json)). The correction states all three.
    - [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md), lines 182–201, gives "48 414 ms over 4 turns" as a wall time. It is API time; the real wall was 107 659 ms and the call produced 0 cards.
    - Line 188 of the same file calls "v1.130.0" a "still-open defect". It is a repo release (the bare-cwd change, CHANGELOG `## [1.130.0]`), not a CLI version, and the defect is not open.
    - The `h2160_batch_shape_probe.py` docstring still says "non-terminating" (§2).
