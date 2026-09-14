@@ -158,16 +158,76 @@ KILLED_REASONS = (KILLED_REASON_HARD_TIMEOUT, KILLED_REASON_NO_OUTPUT_PROGRESS)
 # and no lane can arm it against a buffered format by copying a constant.
 STREAMING_OUTPUT_FORMATS = frozenset({'stream-json'})
 
+# H4528 (10-09-2026 handoff, measured 14-09-2026): `stream-json` ALONE is NOT incremental
+# enough, and the interlock above armed on it. Without `--include-partial-messages` the CLI
+# emits one line per COMPLETED message -- `system/init` at start, then nothing until a whole
+# assistant turn has finished generating. Measured two ways, zero paid calls:
+#   * the real CLI 2.1.251 against a local fake Messages API: plain stream-json went 18 170 ms
+#     silent in an 18 800 ms call; with partial messages the longest silence was 3 030 ms,
+#     exactly the injected time-to-first-token;
+#   * the 31 committed success envelopes (pwg_ru/h4528/): `ttft_ms` -- the CLI's time to the
+#     first COMPLETE message, i.e. plain stream-json's silence -- reaches 391 798 ms (p50
+#     62 487) and exceeds 90 000 ms on 9 of 31 HEALTHY calls. Arming 90 s on plain stream-json
+#     would have killed 29 % of them.
+# So arming now requires the token-stream flag, and the decision is read from the ACTUAL argv
+# (`progress_window_ms_for_argv`) rather than from a format name a call site could mislabel.
+TOKEN_STREAM_FLAG = '--include-partial-messages'
+#: The exact output arguments that make a spawn emit token-level progress on stdout.
+#: `--verbose` is required by the CLI for stream-json under `-p`.
+TOKEN_STREAM_OUTPUT_ARGS = ('--output-format', 'stream-json', '--verbose', TOKEN_STREAM_FLAG)
+#: The historical buffered output arguments (one envelope, written at the end).
+BUFFERED_OUTPUT_ARGS = ('--output-format', 'json')
 
-def progress_window_ms_for(output_format, window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS):
+
+def progress_window_ms_for(output_format, window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS,
+                           partial_messages=False):
     """The no-output-progress window to ARM for a spawn with this ``--output-format``.
 
-    Returns ``window_ms`` for a format that emits incrementally, and ``None`` -- observe
-    only, never kill -- for a buffered one. ``None`` does not mean "unmeasured": the runner
-    still records ``bytes_seen`` and ``quiet_ms`` for every spawn, which is what turns a
-    future arming decision into a reading instead of a guess.
+    Returns ``window_ms`` only for a format that emits TOKEN-level output -- `stream-json`
+    WITH ``--include-partial-messages`` (H4528) -- and ``None`` (observe only, never kill)
+    for everything else, including plain `stream-json`, which buffers per message. ``None``
+    does not mean "unmeasured": the runner still records ``bytes_seen`` and ``quiet_ms`` for
+    every spawn, which is what turns a future arming decision into a reading, not a guess.
     """
-    return window_ms if output_format in STREAMING_OUTPUT_FORMATS else None
+    if output_format in STREAMING_OUTPUT_FORMATS and partial_messages:
+        return window_ms
+    return None
+
+
+def output_shape_of_argv(argv):
+    """``(output_format, partial_messages)`` of a Claude CLI argv. Format defaults to 'text'."""
+    argv = list(argv or ())
+    fmt = 'text'
+    for i, arg in enumerate(argv):
+        if arg == '--output-format' and i + 1 < len(argv):
+            fmt = argv[i + 1]
+        elif isinstance(arg, str) and arg.startswith('--output-format='):
+            fmt = arg.split('=', 1)[1]
+    return fmt, TOKEN_STREAM_FLAG in argv
+
+
+def progress_window_ms_for_argv(argv, window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS):
+    """The window to arm for the spawn this argv WILL run -- derived, never declared."""
+    fmt, partial = output_shape_of_argv(argv)
+    return progress_window_ms_for(fmt, window_ms, partial_messages=partial)
+
+
+# H4528: how a KILLED call is classified when nothing account-level was said on the way out.
+# Before, both bounds came back as the one word 'timeout' and only a side field
+# (`killed_reason`) told them apart; every counter, requeue rule and report keyed on the word.
+# A no-output-progress kill is a different event -- the spawn went silent, it did not merely
+# run long -- so it gets its own classification, shared by the paid lane and the probe so
+# both halves of the gate name it identically (the PR #1837 refusal-split pattern).
+KILL_CLASS_HARD_TIMEOUT = 'timeout'
+KILL_CLASS_NO_PROGRESS = 'no_progress_kill'
+KILL_CLASSES = (KILL_CLASS_HARD_TIMEOUT, KILL_CLASS_NO_PROGRESS)
+
+
+def kill_classification(killed_reason):
+    """'no_progress_kill' for a stalled-output kill, else the historical 'timeout'."""
+    if killed_reason == KILLED_REASON_NO_OUTPUT_PROGRESS:
+        return KILL_CLASS_NO_PROGRESS
+    return KILL_CLASS_HARD_TIMEOUT
 
 
 def assert_progress_window_below_ceiling(window_ms, source,
