@@ -4,10 +4,16 @@ _Created: 14-09-2026 · Last updated: 14-09-2026_
 
 Companion of [`MW-missing-PW-Nachtrag-candidates-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.tsv),
 built by [`pw_nachtrag_vs_mw.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_vs_mw.py),
-adjudicated in [`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv)
+adjudicated in [`MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv)
 (builder [`pw_nachtrag_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_adjudicate.py)).
-Feeds [H4837](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4837-OxAlpha_SanskritLexicography_mw-missing-pw-nachtrag-adjudication_14.09.26.md)
-and [csl-corrections#119](https://github.com/sanskrit-lexicon/csl-corrections/issues/119).
+**Note (H4878):** the CANONICAL H4878 adjudication runs on the `sup_7` deterministic
+pipeline list — [`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv)
+(adjudicator [`mw_pwk_nachtraege_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_adjudicate.py),
+stubs [`MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-TIERA-STUBS-14-09-2026.md));
+this starred sweep is the second, all-layer evidence pass.
+Feeds [H4837](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4837-OxAlpha_SanskritLexicography_mw-missing-pw-nachtrag-adjudication_14.09.26.md) (PARTIAL-superseded)
+and its successor [H4878](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4878-OxAlpha_SanskritLexicography_mw-nachtrag-adjudication-rescoped_14.09.26.md),
+feeding [csl-corrections#119](https://github.com/sanskrit-lexicon/csl-corrections/issues/119).
 
 ## 0 · What this list is
 

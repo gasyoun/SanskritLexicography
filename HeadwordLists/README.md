@@ -102,13 +102,22 @@ paragraph above is contested — the kürzere Fassung is Cologne `pw`, not `pwg`
 **H4837 adjudication — the frozen MW-missing list + verdict workbook (OxAlpha/GLM, 14-09-2026):**
 [`MW-missing-PW-Nachtrag-candidates-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.md)
 + [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.tsv) — starred-k2 Nachträge headwords absent from MW99:
-**3,353** unique (tiers by cross-dict corroboration A 889 / B 1,335 / C 1,129; **273 cite MAHĀVY** — matches the mint's derived stat exactly; MW cleaned union 194,283; `kāritra` canary reproduced). Adjudication:
-[`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv) (2,743 confirmed-missing, 610 variant-form-in-MW, DCS lemma/form attestation),
-Tier-A draft entry stubs [`MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-TIERA-STUBS-14-09-2026.md) (889; 349 clean adds),
-draft #119 reply [`DRAFT_REPLY_csl-corrections-119-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/DRAFT_REPLY_csl-corrections-119-14-09-2026.md) (posting = MG ruling).
-Builders [`pw_nachtrag_vs_mw.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_vs_mw.py) + [`pw_nachtrag_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_adjudicate.py), byte-identical rerun proven.
-30-sample stratified spot-check: **0/30 false positives** ([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-SPOTCHECK-30-14-09-2026.tsv)).
+**3,353** unique (tiers by cross-dict corroboration A 889 / B 1,335 / C 1,129; **273 cite MAHĀVY** — matches the mint's derived stat exactly; MW cleaned union 194,283; `kāritra` canary reproduced). Adjudication (renamed STARRED under H4878):
+[`MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv) (2,743 confirmed-missing, 610 variant-form-in-MW, DCS lemma/form attestation),
+Tier-A draft entry stubs [`MW-STARRED-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-TIERA-STUBS-14-09-2026.md) (889; 349 clean adds),
+ Builders [`pw_nachtrag_vs_mw.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_vs_mw.py) + [`pw_nachtrag_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_adjudicate.py), byte-identical rerun proven.
+Stratified 30-sample spot-check: **0/30 false positives** ([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-SPOTCHECK-30-14-09-2026.tsv)).
 ⚠️ the handoff's quoted 3,024/618/1,427/979 baseline artifacts were never landed (untracked-only); Δ329 documented in the companion §3.
+
+**H4878 canonical adjudication — the `sup_7` deterministic pipeline, every candidate verdicted (OxAlpha/GLM, 14-09-2026):**
+[`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv) — **4,151 rows = re-derived pipeline count** (regen byte-identical to master):
+**1,751 confirmed-missing** (572 corroborated ≥2 dicts), 482 covered-by-MW-stem-form, 227 covered-by-fold-twin-flagged (the `Akalita`/`akalita` trap), 1,691 near-form-needs-eyes;
+MAHĀVY cites + DCS lemma/form attestation per row; rank A/B/C preserved. Tier-A stubs:
+[`MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-TIERA-STUBS-14-09-2026.md) (572).
+Adjudicator [`mw_pwk_nachtraege_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_adjudicate.py); fresh 30-sample spot-check **0/30 false positives**
+([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-SPOTCHECK-30-14-09-2026.tsv)). Draft #119 reply:
+[`DRAFT_REPLY_csl-corrections-119-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/DRAFT_REPLY_csl-corrections-119-14-09-2026.md) (posting = MG ruling).
+Feeds [H4878](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4878-OxAlpha_SanskritLexicography_mw-nachtrag-adjudication-rescoped_14.09.26.md) (supersedes H4837).
 
 **Coverage additions (item B):** [`COVERAGE_ADDITIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) — DCS-corpus
 lemmas absent from all CDSL dicts, ranked by band ([`coverage_additions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/coverage_additions.py)),
