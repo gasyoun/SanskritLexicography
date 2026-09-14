@@ -1,0 +1,174 @@
+{
+ "what": "H4727 independent re-verification, second session (OxAlpha glm-5.3-flash)",
+ "method": "random.seed(4727), 20 rows sampled from 5544 joined rows, exact samudra_link_id lookup against live web/corpus.db (648 MB), NFC-casefold containment both directions",
+ "date": "15-09-2026",
+ "rows_total": 5742,
+ "joined_rows": 5200,
+ "results": [
+  {
+   "cite": "1,4672",
+   "source": "01_mahabharata-adiparva",
+   "link_id": "1.111.21-36",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "7,1057",
+   "source": "07_mahabharata-dronaparva",
+   "link_id": "7.23.15-19",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "4,468",
+   "source": "04_mahabharata-virataparva",
+   "link_id": "4.15.6-14",
+   "join_class": "bori_text",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "9,2386",
+   "source": "09_mahabharata-shalyaparva",
+   "link_id": "9.41.23-31",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "3,2468",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.61.64-71",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "3,14944",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.232.1-9",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "2,2460",
+   "source": "02_mahabharata-sabhaparva",
+   "link_id": "2.66.7-16",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "3,630",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.15.16-22",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "7,4565",
+   "source": "07_mahabharata-dronaparva",
+   "link_id": "7.91.16-23",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "3,2910",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.72.17-22",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "3,2592",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.62.25-33",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "1,1528",
+   "source": "01_mahabharata-adiparva",
+   "link_id": "1.30.8-9",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "1,2599",
+   "source": "01_mahabharata-adiparva",
+   "link_id": "1.60.34-35",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "12,3412",
+   "source": "12_mahabharata-shantiparva",
+   "link_id": "12.92.9",
+   "join_class": "bori_coord",
+   "verdict": "OK"
+  },
+  {
+   "cite": "4,2117",
+   "source": "04_mahabharata-virataparva",
+   "link_id": "4.61.12-18",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "4,1042",
+   "source": "04_mahabharata-virataparva",
+   "link_id": "4.31.1-8",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "13,1898",
+   "source": "13_mahabharata-anushasanaparva",
+   "link_id": "13.29.2",
+   "join_class": "bori_coord",
+   "verdict": "OK"
+  },
+  {
+   "cite": "3,2611",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.63.3-7",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "3,13529",
+   "source": "03_mahabharata-aranyakaparva",
+   "link_id": "3.192.23-24",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  },
+  {
+   "cite": "1,4427",
+   "source": "01_mahabharata-adiparva",
+   "link_id": "1.105.1-14",
+   "join_class": "bori_coord",
+   "verdict": "OK",
+   "ru_present": true
+  }
+ ],
+ "verdict": {
+  "confirmed": 20,
+  "drift": 0,
+  "miss": 0,
+  "with_ru": 18,
+  "total": 20
+ }
+}
