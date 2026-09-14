@@ -88,4 +88,21 @@ python HeadwordLists/mw_pw_sup7_missing_entries.py # Method C  (~40 s)
 3. Three named precision traps for the adjudicator: the `len(hw) < 3` short forms (79), the `kAritra`~`kArita` false-friend class, and the `clean()`-vs-verbatim join convention.
 4. `pwg` (Böhtlingk–Roth 1855–75) is a *separate, noisier* comparison (MW deliberately omits most of its material) — out of scope for H4837 unless ruled otherwise.
 
+## 7 · MW72 baseline — separating "never saw it" from "saw and skipped" (added 14-09-2026, MG question)
+
+MG's point: MW72 (55,390 entries; 51,162 unique verbatim `k1∪k2`) predates the completion of the great PW (1855-75) and the whole *kürzere Fassung* (1879-89), so MW72 never saw the later material. Crossing the `sup_7` headwords with **both** MW editions splits the candidate pool into classes a single MW99 diff conflates — builder [`mw72_baseline_sup7.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_baseline_sup7.py), output [`mw72_baseline_sup7.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_baseline_sup7.tsv):
+
+| class (of 13,094 unique `sup_7` headwords) | n |
+|---|--:|
+| **never-seen** — absent from MW72 AND MW99 (the `kāritra` class proper) | **4,112** |
+| **dropped** — MW72 had it, MW99 lost it | **27** |
+| kept — in both editions | 2,865 |
+| added-since-MW72 — new in MW99 | 6,090 (annexure 1,474, main 4,616) |
+
+MW99 took **~60 %** of the `sup_7` pool MW72 lacked (6,090 of 10,202) — and skipped 4,112 outright. `kAritra` is absent from MW72 (0×), consistent with 1872. The 27 dropped entries are a distinct correction class (deleted-between-editions), worth their own adjudication pass.
+
+Caveat: MW72's coverage is **flat ~20 % across all layers** (`sup_1` 19 % … `sup_7` 22 %), so the layer index is *not* a clean chronology proxy for what MW72 could have seen — the Nachträge sections also add entries for pre-existing words. The flatness rather says MW72 was a smaller dictionary that omitted rare words generally; the MW72-baseline pool is still the right denominator, but "printing timeline" alone does not explain it. (Convention note: this section's MW99 annexure set is the raw `k1∪k2` of `<info n="sup"/>` entries, 11,066 — a superset of the §0 `k1`-only 6,067.)
+
+_Гасунс_
+
 _Гасунс_
