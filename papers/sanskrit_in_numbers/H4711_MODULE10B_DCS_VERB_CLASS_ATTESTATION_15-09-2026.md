@@ -34,8 +34,9 @@ is carried by prefixed formations.
 | **Σ** | **462 rows / 442 distinct** | **281,491** | **8,454** | **781,488** |
 
 (Sum row corrected 15-09-2026 after independent DeepSeek verifier re-sum: bare occ was mis-typed
-391,991, entries Σ now the 8,454 parity constant itself; 442 distinct = 462 rows minus 20 roots
-attested in more than one class; 7,890 of the 8,454 prefixed-inclusive entries are prefixed-only.)
+391,991, entries Σ now the 8,454 parity constant itself; 462 rows − 442 distinct roots = 20 extra
+class-memberships across **19** cross-class roots (vas spans 1/2/6, the rest two classes);
+7,890 of the 8,454 prefixed-inclusive entries are prefixed-only.)
 
 Headline facts the portrait can quote:
 
@@ -55,8 +56,9 @@ Headline facts the portrait can quote:
   resolution pattern as the SanskritGrammar H4178 consumer of the first dataset.
 - **Manifest parity (the verification):** counted 463/463 and 8454/8454 rows vs kosha
   `datasets.json` — **match**; any drift fails the generator with exit 1.
-- **Denominators:** 462 bare-root rows → 442 distinct roots (20 roots attested in more than one
-  class; the 463rd parity row is the junk `0` line in 10.csv) — NOT merged with module 10's
+- **Denominators:** 462 bare-root rows → 442 distinct roots (19 cross-class roots carrying 20
+  extra class-memberships, vas ∈ {1,2,6}; the 463rd parity row is the junk `0` line in 10.csv)
+  — NOT merged with module 10's
   938-root Whitney denominator; the two legs are reported side by side, never summed.
 
 ## Honesty notes (carried in the JSON too)
