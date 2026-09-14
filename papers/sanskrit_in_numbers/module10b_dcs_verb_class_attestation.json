@@ -1,0 +1,292 @@
+{
+  "module": "10b",
+  "title": "DCS corpus attestation of verb classes + prefixed forms (kosha datasets dcs-verb-roots-by-class + dcs-verb-class-prefix-frequency)",
+  "trust_block": {
+    "source": "kosha-registered VisualDCS derived-data (10 per-class CSVs each): dcs-verb-roots-by-class (463 rows) + dcs-verb-class-prefix-frequency (8454 rows); consumed read-only from the sibling VisualDCS checkout, census A5 wiring (H4711) — class inventories cited, never re-derived",
+    "sibling_visualdcs_pin": "d515475da6e227598fed7c64e9cbef62951a9c69",
+    "manifest_parity": {
+      "dcs-verb-roots-by-class": {
+        "counted": 463,
+        "manifest": 463
+      },
+      "dcs-verb-class-prefix-frequency": {
+        "counted": 8454,
+        "manifest": 8454
+      }
+    },
+    "date": "2026-09-15",
+    "model": "OxAlpha (opencode/z-ai/glm-5.3-flash)"
+  },
+  "honesty_notes": [
+    "R2606-01 (Uprava DEAD_ENDS): both datasets are UNACCENTED counts — they cannot separate present class I from VI (only accent does). No I/VI verdict is drawn here.",
+    "roots 10.csv holds one junk row ('0'): counted for the 463-row manifest parity, excluded from every root-level statistic.",
+    "Whitney leg (module 10) and this corpus leg use different denominators (938 lexical roots vs corpus-attested roots); the two views are reported side by side, never merged.",
+    "The prefixed-forms dataset lists mostly roots but also prefixed stems as own entries (āgam, prāp...) and assigns classes more widely than the bare inventory; entries are consumed as-is (re-classification is out of scope by the census contract)."
+  ],
+  "corpus_leg": {
+    "distinct_attested_roots": 442,
+    "per_class_bare_roots": [
+      {
+        "class": "1 (bhvādi)",
+        "attested_roots": 276,
+        "corpus_occurrences": 109469
+      },
+      {
+        "class": "2 (adādi)",
+        "attested_roots": 47,
+        "corpus_occurrences": 111051
+      },
+      {
+        "class": "3 (juhotyādi)",
+        "attested_roots": 12,
+        "corpus_occurrences": 2046
+      },
+      {
+        "class": "4 (divādi)",
+        "attested_roots": 48,
+        "corpus_occurrences": 25727
+      },
+      {
+        "class": "5 (svādi)",
+        "attested_roots": 12,
+        "corpus_occurrences": 1425
+      },
+      {
+        "class": "6 (tudādi)",
+        "attested_roots": 44,
+        "corpus_occurrences": 19566
+      },
+      {
+        "class": "7 (rudhādi)",
+        "attested_roots": 6,
+        "corpus_occurrences": 164
+      },
+      {
+        "class": "8 (tanādi)",
+        "attested_roots": 4,
+        "corpus_occurrences": 4710
+      },
+      {
+        "class": "9 (kryādi)",
+        "attested_roots": 13,
+        "corpus_occurrences": 7333
+      },
+      {
+        "class": "10 (curādi)",
+        "attested_roots": 0,
+        "corpus_occurrences": 0
+      }
+    ],
+    "per_class_incl_prefixed": [
+      {
+        "class": "1 (bhvādi)",
+        "roots": 2631,
+        "occurrences_incl_prefixed": 239087
+      },
+      {
+        "class": "2 (adādi)",
+        "roots": 527,
+        "occurrences_incl_prefixed": 158096
+      },
+      {
+        "class": "3 (juhotyādi)",
+        "roots": 266,
+        "occurrences_incl_prefixed": 21954
+      },
+      {
+        "class": "4 (divādi)",
+        "roots": 745,
+        "occurrences_incl_prefixed": 100545
+      },
+      {
+        "class": "5 (svādi)",
+        "roots": 175,
+        "occurrences_incl_prefixed": 14178
+      },
+      {
+        "class": "6 (tudādi)",
+        "roots": 788,
+        "occurrences_incl_prefixed": 112575
+      },
+      {
+        "class": "7 (rudhādi)",
+        "roots": 187,
+        "occurrences_incl_prefixed": 9046
+      },
+      {
+        "class": "8 (tanādi)",
+        "roots": 493,
+        "occurrences_incl_prefixed": 12500
+      },
+      {
+        "class": "9 (kryādi)",
+        "roots": 303,
+        "occurrences_incl_prefixed": 18549
+      },
+      {
+        "class": "10 (curādi)",
+        "roots": 2339,
+        "occurrences_incl_prefixed": 94958
+      }
+    ],
+    "prefixed_only_entries_count": 7890,
+    "prefixed_only_top15": [
+      {
+        "root": "gam",
+        "occurrences": 15939
+      },
+      {
+        "root": "dṛś",
+        "occurrences": 14292
+      },
+      {
+        "root": "śru",
+        "occurrences": 9422
+      },
+      {
+        "root": "han",
+        "occurrences": 7372
+      },
+      {
+        "root": "ah",
+        "occurrences": 5988
+      },
+      {
+        "root": "prāp",
+        "occurrences": 5288
+      },
+      {
+        "root": "yuj",
+        "occurrences": 5142
+      },
+      {
+        "root": "jñā",
+        "occurrences": 4551
+      },
+      {
+        "root": "grah",
+        "occurrences": 4302
+      },
+      {
+        "root": "āgam",
+        "occurrences": 3787
+      },
+      {
+        "root": "nī",
+        "occurrences": 3582
+      },
+      {
+        "root": "kathay",
+        "occurrences": 3328
+      },
+      {
+        "root": "pravac",
+        "occurrences": 3087
+      },
+      {
+        "root": "paś",
+        "occurrences": 3058
+      },
+      {
+        "root": "upe",
+        "occurrences": 2978
+      }
+    ],
+    "prefixed_share_top15": [
+      {
+        "root": "dā",
+        "bare_occurrences": 8,
+        "incl_prefixed_occurrences": 9884,
+        "prefixed_share_pct": 99.9
+      },
+      {
+        "root": "bhuj",
+        "bare_occurrences": 2310,
+        "incl_prefixed_occurrences": 4620,
+        "prefixed_share_pct": 50.0
+      },
+      {
+        "root": "hṛ",
+        "bare_occurrences": 8,
+        "incl_prefixed_occurrences": 2112,
+        "prefixed_share_pct": 99.6
+      },
+      {
+        "root": "jṛ",
+        "bare_occurrences": 23,
+        "incl_prefixed_occurrences": 1318,
+        "prefixed_share_pct": 98.3
+      },
+      {
+        "root": "naś",
+        "bare_occurrences": 1161,
+        "incl_prefixed_occurrences": 2322,
+        "prefixed_share_pct": 50.0
+      },
+      {
+        "root": "rudh",
+        "bare_occurrences": 2,
+        "incl_prefixed_occurrences": 840,
+        "prefixed_share_pct": 99.8
+      },
+      {
+        "root": "gā",
+        "bare_occurrences": 748,
+        "incl_prefixed_occurrences": 1103,
+        "prefixed_share_pct": 32.2
+      },
+      {
+        "root": "vī",
+        "bare_occurrences": 353,
+        "incl_prefixed_occurrences": 706,
+        "prefixed_share_pct": 50.0
+      },
+      {
+        "root": "dhāv",
+        "bare_occurrences": 311,
+        "incl_prefixed_occurrences": 622,
+        "prefixed_share_pct": 50.0
+      },
+      {
+        "root": "kṛ",
+        "bare_occurrences": 33043,
+        "incl_prefixed_occurrences": 33242,
+        "prefixed_share_pct": 0.6
+      },
+      {
+        "root": "kṛt",
+        "bare_occurrences": 1,
+        "incl_prefixed_occurrences": 180,
+        "prefixed_share_pct": 99.4
+      },
+      {
+        "root": "ṛṣ",
+        "bare_occurrences": 132,
+        "incl_prefixed_occurrences": 264,
+        "prefixed_share_pct": 50.0
+      },
+      {
+        "root": "ūh",
+        "bare_occurrences": 11,
+        "incl_prefixed_occurrences": 68,
+        "prefixed_share_pct": 83.8
+      },
+      {
+        "root": "śad",
+        "bare_occurrences": 11,
+        "incl_prefixed_occurrences": 22,
+        "prefixed_share_pct": 50.0
+      },
+      {
+        "root": "saṁvid",
+        "bare_occurrences": 113,
+        "incl_prefixed_occurrences": 118,
+        "prefixed_share_pct": 4.2
+      }
+    ]
+  },
+  "lexical_leg_crossref": {
+    "module10_source": "WhitneyRoots 938-root gana inventory + 454-root pada subset (module10_verb_class_voice.json, H813)",
+    "relationship": "module 10 = grammar's own classification; module 10b = what the corpus actually attests per class and how much of it is prefixed"
+  }
+}
