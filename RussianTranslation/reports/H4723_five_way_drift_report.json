@@ -1,0 +1,114 @@
+{
+ "built": "2026-09-15",
+ "crosswalk": {
+  "all_four_root_legs": 531,
+  "legs_sizes": {
+   "cslorig_etym": 2662,
+   "mwderiv_matched": 1652,
+   "mws": 857,
+   "sanskritlex": 521,
+   "whitneyroots": 704
+  },
+  "n_sources_histogram": {
+   "1": 1715,
+   "2": 812,
+   "3": 311,
+   "4": 531
+  },
+  "rows": 3369
+ },
+ "handoff": "H4723",
+ "normalization": "form_key = lowercase(s2i(bare(form))) ; bare strips homonym markers/√/NBSP, folds ç→ś (dhatup workbook); s2i/bare vendored from WhitneyRoots/scripts/root_triangulation.py (SHARED_CODE §16)",
+ "sources": {
+  "cslorig_etymology_stats": {
+   "canonical_mw_roots_tsv": {
+    "by_verb_type": {
+     "genuineroot": 750,
+     "root": 1363
+    },
+    "expect": "2113 = 750 genuineroot + 1363 root (kosha mw-roots)",
+    "rows": 2113
+   },
+   "census_drift": "1,163 was a historical third re-scan of mw.txt (kosha dataset mw-roots notes: \"3 repos independently re-scanned mw.txt before this existed (got 750/809/1163)\"). The root oracle counts DERIVED-WORD→root pairs across 10 dicts (3,036 distinct roots), a different population from the MW verbal-root inventory. Canonical MW-side anchor: csl-orig/v02/mw/mw_roots.tsv.",
+   "path": "csl-orig/v02/etymology_stats/root_oracle.tsv",
+   "published": {
+    "distinct_roots_census": 1163
+   },
+   "recounted": {
+    "distinct_form_keys_canonical_mapped": 2662,
+    "oracle_pairs": 62557
+   },
+   "verdict": "DRIFT-EXPLAINED"
+  },
+  "mwderivations": {
+   "path": "MWderivations/step4/all.txt",
+   "published": {
+    "note": "H4700 census §C3",
+    "records": 220248
+   },
+   "recounted": {
+    "TODO_rows": 0,
+    "class_histogram_top10": {
+     "NONE": 6850,
+     "SEE": 3906,
+     "VERB:K": 6382,
+     "f": 32043,
+     "ind": 5624,
+     "m": 64687,
+     "m:f#A:n": 3071,
+     "m:f#I:n": 2754,
+     "m:f:n": 51415,
+     "n": 33628
+    },
+    "distinct_parent_forms": 71048,
+    "parents_matching_root_union": 1652,
+    "records": 220248,
+    "rows_on_matched_parents": 38245
+   },
+   "scope_note": "MWderivations classifies NOMINAL derivations; its parents are bases, not roots. Only parents matching the four root inventories enter the crosswalk (mwderiv column); forms unique to MWderivations are counted here, not emitted as root rows. Census §C3 \"5,667 TODO\" is NOT reproducible from the current tree: step4/all.txt col5 carries gender/verb-class (0 TODO rows); the NTD/TODO status belongs to the analysis pipeline fields (step4/readme.org init: 22,033 NTD / 180,612 TODO) — census-figure drift, not a data defect.",
+   "verdict": "MATCH"
+  },
+  "mws": {
+   "path": "MWS/root_crosswalk/root_crosswalk.csv",
+   "published": {
+    "hub_rows": 935,
+    "in_MW_yes": 809,
+    "note": "ROOT_CROSSWALK_SUMMARY.md"
+   },
+   "recounted": {
+    "distinct_form_keys": 857,
+    "hub_rows": 935,
+    "in_MW_yes_keys": 734,
+    "in_MW_yes_rows": 809
+   },
+   "verdict": "MATCH"
+  },
+  "sanskritlex_dhatup": {
+   "path": "RussianTranslation/src/data/dhatup_multisource_crosswalk.json",
+   "published": {
+    "note": "in-file counts block (H4478)",
+    "rows": 5183,
+    "whitney_root_filled": 1692
+   },
+   "recounted": {
+    "distinct_form_keys": 521,
+    "rows": 5183,
+    "whitney_root_filled": 1692
+   },
+   "verdict": "MATCH"
+  },
+  "whitneyroots": {
+   "census_drift": "H4700 census §A2 said \"620 корней\" — conflated with WhitneyRoots/crosswalk/mw_derivations.json by_whitney_no=620 roots (records=620). Census row stale, file is 750.",
+   "path": "WhitneyRoots/crosswalk/mw_roots.json",
+   "published": {
+    "note": "MWS/root_crosswalk/ROOT_CROSSWALK_SUMMARY.md \"MW verbal-root records: 750\"",
+    "records": 750
+   },
+   "recounted": {
+    "distinct_form_keys": 704,
+    "records": 750
+   },
+   "verdict": "MATCH"
+  }
+ }
+}
