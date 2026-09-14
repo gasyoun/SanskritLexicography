@@ -25,7 +25,8 @@ from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix
                              wrapper_timeout_s)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
-                                config_dir_fingerprint, progress_window_ms_for,
+                                config_dir_fingerprint, kill_classification,
+                                progress_window_ms_for,
                                 validate_manifest, validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
@@ -1537,10 +1538,14 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         # operator down a branch of the exclusion ladder that §266-271 already closed. run_tree_kill
         # attaches the killed child's output (#943), so the provider's message is classifiable here;
         # 'timeout' remains the fall-through when nothing account-level was said.
+        # H4528: split exactly like the worker -- the fall-through names the bound that fired,
+        # 'no_progress_kill' for the watchdog, 'timeout' for the hard ceiling. On today's
+        # buffered probe (PROBE_PROGRESS_WINDOW_MS is None) only the ceiling can fire.
         killed = timeout_output_text(exc)
         cls, matched = _probe_err_match(killed)
         return (int((time.monotonic() - started) * 1000),
-                _fail(cls or 'timeout', killed, matched), 0)
+                _fail(cls or kill_classification(getattr(exc, 'killed_reason', None)),
+                      killed, matched), 0)
     except BaseException:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         raise

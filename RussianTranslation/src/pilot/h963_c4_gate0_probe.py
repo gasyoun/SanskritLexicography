@@ -149,7 +149,8 @@ STRICT_CEILING_MS = CEILING_MS   # == mao.PROBE_LATENCY_CEILING_MS; measured rea
 # it is the one the wall number can never distinguish.
 API_CEILING_MS = probe_log.POLICIES[probe_log.CURRENT_POLICY].get('api_ceil_ms')
 WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on it still do
-CONN_ERR_CLASSES = {"process", "timeout"}
+# H4528: a watchdog kill is the same family of fault as a hard-ceiling kill for this gate.
+CONN_ERR_CLASSES = {"process", "timeout", "no_progress_kill"}
 
 
 def is_linked_worktree(path):
