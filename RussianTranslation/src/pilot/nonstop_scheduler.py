@@ -31,6 +31,7 @@ deliberately inherits current gate behavior unchanged and encodes no new numbers
 import argparse
 import json
 import os
+import shlex
 import subprocess
 import sys
 import time
@@ -190,7 +191,10 @@ class Runners:
             pass
         canary_cmd = self.cfg.get('canary_cmd')
         if canary_cmd:
-            cmd = canary_cmd.replace('{profile}', profile).replace('{receipt}', path)
+            # H4209 (audit F2): shell=True template — quote every substituted value
+            # (a gatelogs dir / profile name containing a space otherwise splits).
+            cmd = canary_cmd.replace('{profile}', shlex.quote(profile)) \
+                            .replace('{receipt}', shlex.quote(path))
             proc = subprocess.run(cmd, shell=True, capture_output=True, text=True,
                                   encoding='utf-8',
                                   timeout=self.cfg.get('canary_timeout', 1800))
@@ -540,10 +544,30 @@ def selftest():
         # (10) next_weekly_reset is strictly ahead and lands on the right weekday
         nr = next_weekly_reset(now_epoch(), 'MON', 0)
         assert nr > now_epoch() and time.gmtime(nr).tm_wday == 0
+
+        # (11) H4209 (audit F2): {profile}/{receipt} are substituted into a
+        # shell=True template; values containing spaces used to split in the
+        # shell and the canary silently became NO-GO. shlex.quote() keeps a
+        # spacey gatelogs dir + profile name working end to end (production
+        # Runners path, not _FakeRunners).
+        gs = os.path.join(td, 'gate logs')
+        os.makedirs(gs)
+        wcode = ("import json,sys;"
+                 "json.dump({'verdict': 'GO', 'judged_at_epoch': %d, "
+                 "'profile': sys.argv[2]}, open(sys.argv[1], 'w'))"
+                 % int(now_epoch()))
+        cfg_sp = dict(cfg, gatelogs_dir=gs,
+                      canary_cmd='%s -c %s {receipt} {profile}'
+                                 % (json.dumps(sys.executable), json.dumps(wcode)))
+        rc = Runners(cfg_sp).canary_receipt('c 4')
+        assert rc and os.path.exists(rc), rc
+        rec_sp = json.load(open(rc, encoding='utf-8'))
+        assert rec_sp['profile'] == 'c 4' and rec_sp['verdict'] == 'GO', rec_sp
     print('nonstop_scheduler selftest: PASS (tick state machine, R5.1 roster, weekly '
           'ceiling, canary + freeze + pause gates, §270 hang vs latency, runner '
           'timeout/exception recorded (H2246), auto-promote fails closed without '
-          'live R4.1 surveillance (H2264), every branch recorded)')
+          'live R4.1 surveillance (H2264), every branch recorded, quoted '
+          '{profile}/{receipt} substitution with spacey values (H4209))')
     return 0
 
 

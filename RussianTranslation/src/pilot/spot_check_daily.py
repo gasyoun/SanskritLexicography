@@ -34,6 +34,7 @@ import math
 import os
 import random
 import re
+import shlex
 import subprocess
 import sys
 import time
@@ -218,7 +219,10 @@ def judge_card(judge_cmd, key, rows, workdir):
     payload_path = os.path.join(workdir, 'judge_payload_%d.json' % abs(hash(key)))
     with open(payload_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump({'key': key, 'rows': rows}, f, ensure_ascii=False, indent=1)
-    cmd = judge_cmd.replace('{payload}', payload_path)
+    # H4209 (audit F2): the template is run with shell=True, so every substituted
+    # value must be POSIX-quoted — a payload path containing a space (or worse)
+    # otherwise splits in the shell and every card comes back judge_error.
+    cmd = judge_cmd.replace('{payload}', shlex.quote(payload_path))
     try:
         proc = subprocess.run(cmd, shell=True, capture_output=True, text=True,
                               encoding='utf-8', timeout=600)
@@ -422,13 +426,28 @@ def selftest():
                             judge_cmd=json.dumps(sys.executable) + ' -c "print(41+"',
                             workdir=td)
         assert all(j['status'] == 'judge_error' for j in rep4['judge']['results'])
+        # H4209 (audit F2): {payload} lands in a shell=True template; a payload
+        # path containing a space used to split in the shell -> judge_error for
+        # every card. The judge below READS the payload, so 'judged' proves the
+        # quoted path both survived the shell and pointed at the right file.
+        work_sp = os.path.join(td, 'work dir')
+        os.makedirs(work_sp)
+        jcode = ("import json,sys;"
+                 "print(json.dumps({'severity': 0, 'notes': "
+                 "json.load(open(sys.argv[1], encoding='utf-8'))['key']}))")
+        judge_sp = '%s -c %s {payload}' % (json.dumps(sys.executable),
+                                           json.dumps(jcode))
+        j = judge_card(judge_sp, 'rootA~~a', [{'ru': 'чистый'}], work_sp)
+        assert j['status'] == 'judged' and j['severity'] == 0 and \
+            j['notes'] == 'rootA~~a', j
         # a promoted key with NO store rows is a sev-3 presence defect
         _mk_promotion(td, 'w3', ['ghost~~g'], now)
         rep5 = build_report(today, 1.0, td, store)
         assert ('ghost~~g', 'presence') in {(d['key'], d['check']) for d in rep5['defects']}
     print('spot_check_daily selftest: PASS (day scoping, deterministic sample, gate '
           'suite severities, store SAN-LOSS scan, judge hook + inconclusive-on-error, '
-          'ghost-key presence)')
+          'quoted {payload} substitution with a spacey path (H4209), ghost-key '
+          'presence)')
     return 0
 
 
