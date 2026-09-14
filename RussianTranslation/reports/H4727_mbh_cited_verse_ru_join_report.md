@@ -93,4 +93,15 @@ H3152's ≈ discipline.
 
 Layer: `data/mbh_cited_verse_ru/h4727_mbh_cited_verse_ru.jsonl`
 
+## Independent re-verification (second session, 15-09-2026)
+
+A second OxAlpha session re-verified the join against the live corpus.db
+without reusing the first session's sample: `random.seed(4727)` over the
+5,544 joined rows, exact `samudra_link_id` lookup, NFC-casefold containment
+both directions.
+
+**20/20 confirmed, 0 drift, 0 miss; 18/20 carry RU** (the 2 sanskrit-only rows
+fall in the Śānti `…`-placeholder class noted above). Full per-row ledger:
+`H4727_second_session_verification.json` beside this report.
+
 _Гасунс_
