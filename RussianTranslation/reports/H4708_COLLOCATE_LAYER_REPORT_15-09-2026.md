@@ -52,7 +52,12 @@ PWG homonyms, so the profile is inherently homonym-ambiguous.
   homonym senses; consumers must treat the profile as k1-level context.
   (2) Source token corruption propagated verbatim by design. (3) The DCS corpus
   span ≠ PWG's textual scope — a headword's corpus collocates may reflect
-  registers PWG never cites.
+  registers PWG never cites. (4) **Duplicate source lemma rows collapse
+  last-wins** (`profiles[lemma] = …`): the file's ~82.8k lines hold 79,985
+  distinct lemmas (FINDINGS §489), so repeated rows overwrite, deterministic but
+  lossy. (5) `to_slp1` merges ṃ/ṁ → `M`, so variant-spelling lemmas collide onto
+  one k1 and the first hit wins. (4)+(5) disclosed by the paired-family verifier
+  (DeepSeek, 15-09-2026, verdict: pass).
 - **Inspect:** `python src/pwg_collocate_layer.py --selftest && python src/pwg_collocate_layer.py --spot-check 10`
 
 _Гасунс_
