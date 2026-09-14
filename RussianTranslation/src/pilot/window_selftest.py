@@ -2696,11 +2696,37 @@ def test_h3627_salvage_never_publishes_an_infra_starved_window():
     salvage got wrong by returning a payload for every HardFailure.
     """
     import headless_worker as hw
-    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded'):
+    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded',
+                   'no_progress_kill'):
         if not hw.is_infra_failure(reason):
             fail('%r must be an infra failure, or salvage will publish a starved window' % reason)
     if hw.is_infra_failure('process'):
         fail("'process' must NOT be infra -- it is exactly the salvageable per-call defect")
+
+def test_h4528_no_progress_kill_is_infra_not_a_content_defect():
+    """H4528: a card whose call the no-output-progress watchdog killed is NOT a defective card.
+
+    The watchdog's kill carries its own class, `no_progress_kill`, so it can never be read as a
+    hard-ceiling `timeout` -- but for the audit's transient-vs-defect split it must land on the
+    SAME side as `timeout`: infra. Filed as content it would denylist a healthy card and discard
+    the TM of the fragments that did translate (H2077 / #947), and salvage would publish a
+    starved window (H2056 #944).
+    """
+    import headless_worker as hw
+    if not hw.is_infra_failure('no_progress_kill'):
+        fail("'no_progress_kill' must be an infra failure")
+    engine = object.__new__(hw.HeadlessEngine)
+    engine.m = {'fragment_groups': {'agni': [[0, 1]]}}
+    engine.failures = {'agni_f0': 'no_progress_kill', 'agni_f1': 'fragment-fidelity-reject'}
+    if engine._selfheal_stop_reason('agni') != 'no_progress_kill':
+        fail('a watchdog-killed heal must surface as no_progress_kill, got %r'
+             % engine._selfheal_stop_reason('agni'))
+    if engine._partial_cause('agni') != 'no_progress_kill':
+        fail('the partial cause must be the infra kill, got %r' % engine._partial_cause('agni'))
+    engine.failures = {'agni_f0': 'fragment-fidelity-reject'}
+    if engine._selfheal_stop_reason('agni') != 'selfheal-nothing-resolved':
+        fail('a genuine content failure must still read as content')
+
 
 def test_lang_parity_ledger_complete():
     """LANG_PARITY.md's ledger must have a verdict for every entry (SHARED /
@@ -9882,6 +9908,7 @@ def main():
         test_h3627_structured_output_exhaustion_is_parked_not_window_fatal,
         test_h3627_aborted_window_still_yields_its_paid_cards,
         test_h3627_salvage_never_publishes_an_infra_starved_window,
+        test_h4528_no_progress_kill_is_infra_not_a_content_defect,
         test_lang_parity_ledger_complete,
         test_lang_parity_coverage,
         test_card_coverage_lang_symmetric,
