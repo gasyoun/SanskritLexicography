@@ -74,6 +74,7 @@ for p in (HERE, SRC):
         sys.path.insert(0, p)
 
 from safe_filename import safe_name  # noqa: E402
+from window_common import DEFERRED_MONSTERS, defer_monster  # noqa: E402
 
 # lease -> (case, [SLP1 keys]) — safe stems derived below. Every fixture case the handoff
 # mandates is present; ADAna (22 senses) presplits via the sense budget (20).
@@ -382,6 +383,10 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
                PWG_INPUT_DIR=INPUT_DIR,
                PWG_OUTPUT_DIR=pilot_out,
                PWG_EVENTS_PATH=os.path.join(sandbox, 'dashboard_events.jsonl'),
+               # The fixture is over the cost ceiling by design (H2253, see prepare
+               # below): its cap-and-defer rows go to the sandbox ledger, never the
+               # tracked src/pilot/deferred_monsters.jsonl.
+               PWG_DEFERRED_MONSTERS=os.path.join(sandbox, 'deferred_monsters.jsonl'),
                CSL_SIBLING_ROOT=sibling_root,
                PYTHONIOENCODING='utf-8')
 
@@ -586,12 +591,31 @@ def main():
     fx_hash = fixture_hash()
     print('fixture: %d files, content hash %s (sandbox input dir %s)' % (
         len(os.listdir(os.path.join(FIXTURE, 'input'))), fx_hash[:16], INPUT_DIR))
+    ledger_before = tracked_ledger_bytes()
     try:
-        return _bench(a, fx_hash)
+        rc = _bench(a, fx_hash)
     finally:
         # H1386 P3f: a bench run leaves the checkout byte-identical -- the sandbox input
         # dir (the only bench artifact outside per-run sandboxes) is always removed.
         shutil.rmtree(INPUT_DIR, ignore_errors=True)
+    if tracked_ledger_bytes() != ledger_before:
+        print('HERMETICITY: FAIL — the bench changed the TRACKED ledger %s; every '
+              'coordinator subprocess must get PWG_DEFERRED_MONSTERS pointing into its '
+              'sandbox. Restore it with `git checkout -- %s`.'
+              % (DEFERRED_MONSTERS, os.path.relpath(DEFERRED_MONSTERS, REPO)),
+              file=sys.stderr)
+        return 1
+    return rc
+
+
+def tracked_ledger_bytes():
+    """The tracked cap-and-defer ledger's exact bytes (None if absent) — the bench and its
+    selftest assert these are unchanged, so a non-hermetic write fails the run."""
+    try:
+        with open(DEFERRED_MONSTERS, 'rb') as fh:
+            return fh.read()
+    except FileNotFoundError:
+        return None
 
 
 def check_signature(expected, signatures, fx_hash):
@@ -736,8 +760,32 @@ def selftest():
     rc, lines = check_signature(good[:10], {good, moved}, fx)
     assert rc != 0 and 'NOT deterministic' in lines[0], lines
 
+    # (5) HERMETICITY: the cap-and-defer write the bench's real `prepare` triggers lands
+    #     in the PWG_DEFERRED_MONSTERS sandbox ledger, and the TRACKED ledger stays
+    #     byte-identical (H4528 / #2201 committed two such rows by accident).
+    before = tracked_ledger_bytes()
+    tmp = tempfile.mkdtemp(prefix='h1339bench_selftest_')
+    sandboxed = os.path.join(tmp, 'deferred_monsters.jsonl')
+    saved = os.environ.get('PWG_DEFERRED_MONSTERS')
+    os.environ['PWG_DEFERRED_MONSTERS'] = sandboxed
+    try:
+        row = defer_monster('nominal:ADAna', 'cost_gate_over_ceiling',
+                            source='coordinator.prepare', keys=['_a_d_ana'])
+        assert row and row.get('target') == 'nominal:ADAna', row
+        with open(sandboxed, encoding='utf-8') as fh:
+            assert [json.loads(ln)['target'] for ln in fh if ln.strip()] == ['nominal:ADAna']
+    finally:
+        if saved is None:
+            os.environ.pop('PWG_DEFERRED_MONSTERS', None)
+        else:
+            os.environ['PWG_DEFERRED_MONSTERS'] = saved
+        shutil.rmtree(tmp, ignore_errors=True)
+    assert tracked_ledger_bytes() == before, \
+        'defer_monster wrote the TRACKED ledger despite PWG_DEFERRED_MONSTERS'
+
     print('h1339_offline_bench selftest: PASS (signature gate positive, moved-output '
-          'negative, changed-fixture reporting, non-determinism refusal)')
+          'negative, changed-fixture reporting, non-determinism refusal, tracked '
+          'deferred-monsters ledger byte-identical)')
     return 0
 
 
