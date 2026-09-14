@@ -136,9 +136,9 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 209713	7-290-d	agnidEva	agnidaiva	nearform1.00		agnideva	
 209719	7-290-d	agnipiRqa	agnipiṇḍa	NO-MATCH	A		B:agnipada;A:agniputra
 209721	7-290-d	agnipUjA	agnipūjā	NO-MATCH	A		A:agniputra
-209722	7-290-d	agnipUta	agnipūta	nearform0.88		agnipAta	
+209722	7-290-d	agnipUta	agnipūta	nearform0.88		agnidUta	
 209724	7-291-a	agnipraskandana	agnipraskandana	NO-MATCH	A		A:agnipraRayana
-209725	7-291-a	agniBaya	agnibhaya	nearform0.88		agnimaya	
+209725	7-291-a	agniBaya	agnibhaya	nearform0.88		agnicaya	
 209734	7-291-a	agnizwomayAgaviDi	agniṣṭomayāgavidhi	NO-MATCH	B		B:agnizwut;B:agnizWa
 209742	7-291-a	agnihotraprAyaScitta	agnihotraprāyaścitta	NO-MATCH	A		A:agnihotraprAyaRa;B:agnihotrin
 209745	7-291-a	agnIvaruRa	agnīvaruṇa	nearform1.00		AgnivAruRa	
@@ -288,8 +288,8 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210037	7-292-d	atadvIryavidvaMs	atadvīryavidvaṃs	NO-MATCH	C		
 210038	7-292-d	atanubala	atanubala	NO-MATCH	C		
 210039	7-292-d	atantumant	atantumant	NO-MATCH	B		B:atantra
-210041	7-292-d	atantrita	atantrita	nearform0.89		Amantrita	
-210045	7-292-d	atarapaRya	atarapaṇya	nearform0.80		apatarpaRa	
+210041	7-292-d	atantrita	atantrita	nearform0.89		atandrita	
+210045	7-292-d	atarapaRya	atarapaṇya	nearform0.80		antarayaRa	
 210047	7-292-d	ataruRa	ataruṇa	NO-MATCH	B		B:ataritra
 210048	7-292-d	atarkaRIya	atarkaṇīya	nearform0.84		akaraRIya	
 210049	7-292-d	atarkAvacara	atarkāvacara	NO-MATCH	B		B:atarkita
@@ -325,7 +325,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210090	7-293-a	atitarpaRa	atitarpaṇa	nearform0.84		avitaraRa	
 210091	7-293-a	atitarza	atitarṣa	NO-MATCH	C		
 210092	7-293-a	atitApa	atitāpa	nearform0.92		atitap	
-210094	7-293-a	atitikzA	atitikṣā	nearform0.80		Acitika	
+210094	7-293-a	atitikzA	atitikṣā	nearform0.80		ativizA	
 210096	7-293-a	atituNga	atituṅga	NO-MATCH	B		B:atitIvra
 210097	7-293-a	atitud	atitud	nearform0.83		atinud	
 210098	7-293-a	atitundila	atitundila	NO-MATCH	C		
@@ -353,7 +353,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210126	7-293-b	atiDarma	atidharma	nearform0.88		aBiDarma	
 210127	7-293-b	atinadIzRa	atinadīṣṇa	NO-MATCH	C		
 210128	7-293-b	atinanAmin	atinanāmin	NO-MATCH	C		
-210129	7-293-b	atinayana	atinayana	nearform0.89		atiSAyana	
+210129	7-293-b	atinayana	atinayana	nearform0.89		atiSayana	
 210130	7-293-b	atinarman	atinarman	nearform0.94		atinAman	
 210131	7-293-b	atiniBftam	atinibhṛtam	NO-MATCH	C		
 210132	7-293-b	atinirGfRa	atinirghṛṇa	NO-MATCH	C		
@@ -364,13 +364,13 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210137	7-293-b	atinirviRRa	atinirviṇṇa	NO-MATCH	C		
 210138	7-293-b	atinirvfta	atinirvṛta	nearform0.86		aBinirvftta	
 210139	7-293-b	atinizevitar	atiniṣevitar	NO-MATCH	C		
-210140	7-293-b	atinIla	atinīla	nearform0.86		atinIca	
+210140	7-293-b	atinIla	atinīla	nearform0.86		aBinIla	
 210141	7-293-b	atipadmin	atipadmin	NO-MATCH	C		
 210142	7-293-b	atipAvana	atipāvana	nearform0.89		atipatana	
 210143	7-293-b	atipiNga	atipiṅga	nearform0.80		apliNga	
 210144	7-293-b	atipiSuna	atipiśuna	NO-MATCH	C		
 210145	7-293-b	atipIqita	atipīḍita	nearform0.89		aBipIqita	
-210146	7-293-c	atipUra	atipūra	nearform0.86		atipara	
+210146	7-293-c	atipUra	atipūra	nearform0.86		atidUra	
 210147	7-293-c	atipelava	atipelava	nearform0.82		aviplava	
 210148	7-293-c	atipOruza	atipauruṣa	nearform0.89		atipUruza	
 210150	7-293-c	atipratiloma	atipratiloma	nearform0.87		aprAtilomya	
@@ -386,7 +386,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210161	7-293-c	atipravftta	atipravṛtta	stem			
 210163	7-293-c	atipraveSa	atipraveśa	nearform0.90		aBipraveSa	
 210164	7-293-c	atipraSAnta	atipraśānta	NO-MATCH	C		
-210165	7-293-c	atipriya	atipriya	nearform0.88		avipriya	
+210165	7-293-c	atipriya	atipriya	nearform0.88		alipriya	
 210166	7-293-c	atiprIta	atiprīta	nearform0.88		aBiprIta	
 210167	7-293-c	atiprezaRa	atipreṣaṇa	nearform0.90		aBiprezaRa	
 210168	7-293-c	atibanDura	atibandhura	NO-MATCH	B		B:atibala
@@ -407,7 +407,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210186	7-293-c	atimatimant	atimatimant	NO-MATCH	C		
 210187	7-293-c	atimada	atimada	nearform0.86		atimodA	
 210188	7-293-c	atimanoraTa	atimanoratha	NO-MATCH	C		
-210189	7-293-c	atimanyu	atimanyu	nearform0.88		ahimanyu	
+210189	7-293-c	atimanyu	atimanyu	nearform0.88		aBimanyu	
 210191	7-293-d	atimahant	atimahant	NO-MATCH	B		B:atimarSam
 210192	7-293-d	atimahArOdra	atimahāraudra	NO-MATCH	C		
 210193	7-293-d	atimahiman	atimahiman	nearform0.80		atibrahman	
@@ -419,21 +419,21 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210202	7-293-d	atimlAni	atimlāni	nearform0.88		atimAnin	
 210203	7-293-d	atiyAcita	atiyācita	nearform0.89		aBiyAcita	
 210205	7-293-d	atirajasvala	atirajasvala	NO-MATCH	A		A:atiyAtrA
-210206	7-293-d	atirati	atirati	nearform0.86		atiraTa	
+210206	7-293-d	atirati	atirati	nearform0.86		aBirati	
 210208	7-293-d	atiramaRIya	atiramaṇīya	nearform0.96		atikramaRIya	
 210209	7-293-d	atiraya	atiraya	nearform0.86		atratya	
 210210	7-293-d	atirasa	atirasa	stem			
-210211	7-293-d	atirasika	atirasika	nearform0.82		atirikta	
-210212	7-293-d	atirAga	atirāga	nearform0.86		atirasA	
+210211	7-293-d	atirasika	atirasika	nearform0.82		aSiraska	
+210212	7-293-d	atirAga	atirāga	nearform0.86		atiroga	
 210213	7-293-d	atiriraMsA	atiriraṃsā	NO-MATCH	B		B:atiruz
 210215	7-293-d	atiruzwa	atiruṣṭa	nearform0.94		atikruzwa	
-210216	7-293-d	atirUQa	atirūḍha	nearform0.86		atirUpa	
+210216	7-293-d	atirUQa	atirūḍha	nearform0.86		aDirUQa	
 210217	7-293-d	atireca	atireca	nearform0.86		atireka	
 210218	7-293-d	atirocamAna	atirocamāna	NO-MATCH	C		
 210219	7-293-d	atirodana	atirodana	NO-MATCH	C		
-210220	7-293-d	atiroza	atiroṣa	nearform0.86		atiroka	
+210220	7-293-d	atiroza	atiroṣa	nearform0.86		atidoza	
 210221	7-293-d	atirozaRa	atiroṣaṇa	nearform0.84		atikarzaRa	
-210222	7-293-d	atiroha	atiroha	nearform0.86		atiroka	
+210222	7-293-d	atiroha	atiroha	nearform0.86		aDiroha	
 210223	7-293-d	atila	atila	nearform0.80		atala	
 210224	7-293-d	atilavaRasAtmya	atilavaṇasātmya	NO-MATCH	C		
 210225	7-293-d	atilAlavant	atilālavant	NO-MATCH	C		
@@ -448,12 +448,12 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210236	7-294-a	ativiklava	ativiklava	nearform0.84		ativikawa	
 210237	7-294-a	ativiGawwita	ativighaṭṭita	NO-MATCH	C		
 210238	7-294-a	ativijYa	ativijña	NO-MATCH	C		
-210239	7-294-a	ativitaTa	ativitatha	nearform0.82		ativyaTA	
+210239	7-294-a	ativitaTa	ativitatha	nearform0.82		avitaTam	
 210240	7-294-a	ativitaTavAc	ativitathavāc	NO-MATCH	C		
 210241	7-294-a	ativiDe	atividhe	stem			
 210242	7-294-a	ativiparyaya	ativiparyaya	nearform0.87		aviparyayAt	
 210244	7-294-a	ativipraDarza	ativipradharṣa	NO-MATCH	B		B:ativipina
-210245	7-294-a	ativiBinna	ativibhinna	nearform0.84		ativipina	
+210245	7-294-a	ativiBinna	ativibhinna	nearform0.84		atisvinna	
 210246	7-294-a	ativiBIzaRa	ativibhīṣaṇa	NO-MATCH	C		
 210247	7-294-a	ativimanas	ativimanas	NO-MATCH	C		
 210248	7-294-a	ativimala	ativimala	NO-MATCH	C		
@@ -523,7 +523,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210337	7-294-c	atisvan	atisvan	stem			
 210339	7-294-c	atiharza	atiharṣa	nearform0.93		atihAra	
 210340	7-294-c	atiharzula	atiharṣula	NO-MATCH	A		A:atihasita
-210343	7-294-c	atihArin	atihārin	nearform0.88		atitArin	
+210343	7-294-c	atihArin	atihārin	nearform0.88		aticArin	
 210345	7-294-c	atihAsya	atihāsya	nearform0.93		atihAsa	
 210347	7-294-c	atihelana	atihelana	NO-MATCH	A		B:atihimam;A:atIcAra
 210352	7-294-c	atundila	atundila	NO-MATCH	B		B:atIvra
@@ -561,7 +561,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210399	7-295-a	atyuzRatA	atyuṣṇatā	NO-MATCH	C		
 210400	7-295-a	atyUrjasvala	atyūrjasvala	NO-MATCH	A		A:atyUrjitam
 210406	7-295-a	atrasta	atrasta	nearform0.92		atrAsa	
-210408	7-295-a	atrARa	atrāṇa	nearform0.91		AraRa	
+210408	7-295-a	atrARa	atrāṇa	nearform0.91		arARa	
 210409	7-295-a	atrAsuka	atrāsuka	NO-MATCH	C		
 210410	7-295-a	atrigotrA	atrigotrā	NO-MATCH	C		
 210411	7-295-a	atrija	atrija	NO-MATCH	C		
@@ -615,7 +615,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210505	7-295-c	advizant	adviṣant	NO-MATCH	A		A:advivarza;A:advIpa
 210507	7-295-c	advezwar	adveṣṭar	nearform0.80		advezwf	
 210516	7-295-c	aDaHpAtra	adhaḥpātra	nearform0.94		aDaHpAta	
-210517	7-295-d	aDaHpuzpikA	adhaḥpuṣpikā	nearform0.82		azwapuzpikA	
+210517	7-295-d	aDaHpuzpikA	adhaḥpuṣpikā	nearform0.82		arkapuzpikA	
 210518	7-295-d	aDanavant	adhanavant	nearform0.84		avaDAnavat	
 210519	7-295-d	aDaray	adharay	stem			
 210521	7-295-d	aDaralakzman	adharalakṣman	NO-MATCH	A		A:aDararucaka;B:aDarasapatna
@@ -652,18 +652,18 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210624	7-296-b	aDUta	adhūta	nearform1.00		ADUta	
 210631	7-296-b	aDobilASfta	adhobilāśṛta	NO-MATCH	A		A:aDobARa;B:aDomuKa
 210633	7-296-b	aDomuKamuKa	adhomukhamukha	NO-MATCH	B		B:aDomuKa;B:aDovarcas
-210635	7-296-b	aDovAma	adhovāma	nearform0.86		aDoSvam	
+210635	7-296-b	aDovAma	adhovāma	nearform0.86		aDorAma	
 210637	7-296-b	aDohasta	adhohasta	NO-MATCH	A		A:aDovAsas
 210638	7-296-b	aDOta	adhauta	NO-MATCH	B		B:aDyagni
 210642	7-296-b	aDyayanamAtravant	adhyayanamātravant	NO-MATCH	A		A:aDyaDvam
 210643	7-296-b	aDyayanasaMpradAna	adhyayanasaṃpradāna	NO-MATCH	C		
 210644	7-296-b	aDyarcikAcAra	adhyarcikācāra	NO-MATCH	C		
 210645	7-296-b	aDyarDaguRa	adhyardhaguṇa	NO-MATCH	C		
-210646	7-296-b	aDyavasitatA	adhyavasitatā	nearform0.83		anaDyavasita	
+210646	7-296-b	aDyavasitatA	adhyavasitatā	nearform0.83		aDyavasAyita	
 210650	7-296-b	aDyAtmopanizad	adhyātmopaniṣad	NO-MATCH	A		A:aDyAcAra
-210651	7-296-c	aDyApin	adhyāpin	nearform0.86		aDyAyin	
+210651	7-296-c	aDyApin	adhyāpin	nearform0.86		aDyAsin	
 210653	7-296-c	aDyAyitf	adhyāyitṛ	nearform0.82		ArADayitf	
-210655	7-296-c	aDyAvasitavya	adhyāvasitavya	nearform0.80		anaDyavasita	
+210655	7-296-c	aDyAvasitavya	adhyāvasitavya	nearform0.80		aDyavasAyita	
 210664	7-296-c	aDvagacCant	adhvagacchant	nearform0.95		aDvagacCat	
 210669	7-296-c	aDvaratva	adhvaratva	nearform0.94		ADAratva	
 210670	7-296-c	aDvaraSrOta	adhvaraśrauta	NO-MATCH	A		A:aDvartavya
@@ -715,7 +715,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210741	7-297-a	ananucara	ananucara	nearform0.82		anuccAra	
 210743	7-297-a	ananutApin	ananutāpin	NO-MATCH	B		B:ananujYAta;B:ananuyAja
 210745	7-297-a	ananuvazawkAra	ananuvaṣaṭkāra	NO-MATCH	A		B:ananuyAja;A:ananuvAkya
-210747	7-297-a	ananuSasta	ananuśasta	nearform0.84		anuSAsita	
+210747	7-297-a	ananuSasta	ananuśasta	nearform0.84		anuSastra	
 210748	7-297-a	ananuzWAtar	ananuṣṭhātar	nearform0.86		ananuzWAna	
 210750	7-297-a	ananusarga	ananusarga	nearform0.80		anupasarga	
 210751	7-297-a	ananusfta	ananusṛta	nearform0.82		anusmfta	
@@ -784,8 +784,8 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210838	7-297-c	anaBiprIta	anabhiprīta	nearform0.90		anaBipreta	
 210840	7-297-c	anaBiBava	anabhibhava	NO-MATCH	B		B:anaBipreta
 210841	7-297-c	anaBiBAzamARa	anabhibhāṣamāṇa	nearform0.88		aBiBAzyamARa	
-210843	7-297-c	anaBimAna	anabhimāna	nearform0.95		AnaBimlAna	
-210845	7-297-c	anaBimuKa	anabhimukha	nearform0.82		agnimuKa	
+210843	7-297-c	anaBimAna	anabhimāna	nearform0.95		anaBimlAna	
+210845	7-297-c	anaBimuKa	anabhimukha	nearform0.82		aBimuKam	
 210846	7-297-c	anaBimfta	anabhimṛta	nearform0.89		anaBimata	
 210847	7-297-c	anaBiyukta	anabhiyukta	nearform0.86		anaBivyakta	
 210848	7-297-c	anaBirati	anabhirati	NO-MATCH	B		B:anaBirUpa
@@ -802,7 +802,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210862	7-297-c	anaByAhatam	anabhyāhatam	NO-MATCH	C		
 210863	7-297-c	anaByudita	anabhyudita	nearform0.80		aByudIrita	
 210865	7-297-c	anamaskAra	anamaskāra	NO-MATCH	A		A:anama
-210866	7-297-c	anaritra	anaritra	nearform0.88		Anardita	
+210866	7-297-c	anaritra	anaritra	nearform0.88		anamitra	
 210867	7-297-c	anarka	anarka	nearform0.91		anaka	
 210870	7-297-d	anarcis	anarcis	nearform0.80		anucarci	
 210871	7-297-d	anarTanA	anarthanā	nearform0.82		aByarTanA	
@@ -831,7 +831,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210906	7-297-d	anavaroDa	anavarodha	nearform0.95		anavaroDya	
 210907	7-298-a	anavaropita	anavaropita	NO-MATCH	A		A:anavarRa
 210909	7-298-a	anavartimuKin	anavartimukhin	NO-MATCH	A		A:anavarRa;B:anavalamba
-210911	7-298-a	anavalipta	anavalipta	nearform0.80		avaliptatA	
+210911	7-298-a	anavalipta	anavalipta	nearform0.80		anavatapta	
 210912	7-298-a	anavalokana	anavalokana	nearform0.91		anavaloBana	
 210913	7-298-a	anavalokayant	anavalokayant	NO-MATCH	C		
 210914	7-298-a	anavavidDa	anavaviddha	NO-MATCH	C		
@@ -854,7 +854,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 210943	7-298-a	anAkasmika	anākasmika	nearform0.84		anakasmAt	
 210944	7-298-a	anAkANkzya	anākāṅkṣya	nearform0.84		anukANkzA	
 210946	7-298-a	anAkftsnagatA	anākṛtsnagatā	NO-MATCH	B		B:anAkula
-210947	7-298-a	anAkfzwa	anākṛṣṭa	nearform0.88		anukfzwa	
+210947	7-298-a	anAkfzwa	anākṛṣṭa	nearform0.88		anADfzwa	
 210949	7-298-b	anAkroSaka	anākrośaka	NO-MATCH	B		B:anAkranda
 210950	7-298-b	anAkroSya	anākrośya	NO-MATCH	B		B:anAkzArita
 210955	7-298-b	anAgamana	anāgamana	nearform0.84		aByAgamana	
@@ -898,7 +898,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211013	7-298-c	anAyatikzama	anāyatikṣama	NO-MATCH	B		B:anAyata
 211014	7-298-c	anAyamya	anāyamya	nearform0.93		AnAyAya	
 211015	7-298-c	anAyasita	anāyasita	nearform0.89		aniyasita	
-211016	7-298-c	anArabDa	anārabdha	nearform0.88		antarADA	
+211016	7-298-c	anArabDa	anārabdha	nearform0.88		anAlabDa	
 211017	7-298-c	anAraByavigarhija	anārabhyavigarhija	NO-MATCH	C		
 211018	7-298-c	anArudDa	anāruddha	nearform0.88		anirudDa	
 211020	7-298-c	anAropya	anāropya	nearform0.88		anArogya	
@@ -915,10 +915,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211033	7-298-c	anAleSa	anāleśa	NO-MATCH	C		
 211034	7-298-d	anAloka	anāloka	nearform0.86		anAroka	
 211036	7-298-d	anAvaSyakatva	anāvaśyakatva	NO-MATCH	B		B:anAlocita
-211037	7-298-d	anAvigna	anāvigna	nearform0.80		AgavIna	
+211037	7-298-d	anAvigna	anāvigna	nearform0.80		anAvila	
 211039	7-298-d	anAvizkurvant	anāviṣkurvant	NO-MATCH	A		A:anAvidDa;A:anAvfta
 211043	7-298-d	anASramaDarmin	anāśramadharmin	NO-MATCH	B		B:anASIrka;B:anASramin
-211045	7-298-d	anASrava	anāśrava	nearform1.00		anAsrAva	
+211045	7-298-d	anASrava	anāśrava	nearform1.00		anAsrava	
 211046	7-298-d	anASvAsa	anāśvāsa	nearform0.93		anASvas	
 211048	7-298-d	anAsanayogavihita	anāsanayogavihita	NO-MATCH	A		A:anASvAsika
 211049	7-298-d	anAsavAKya	anāsavākhya	nearform0.80		ananvavAya	
@@ -927,7 +927,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211053	7-298-d	anAsita	anāsita	nearform1.00		anASita	
 211054	7-298-d	anAseDa	anāsedha	NO-MATCH	C		
 211055	7-298-d	anAstarita	anāstarita	nearform0.90		anantarita	
-211056	7-298-d	anAstfta	anāstṛta	nearform0.80		apAsfta	
+211056	7-298-d	anAstfta	anāstṛta	nearform0.80		anAdfta	
 211058	7-298-d	anAsTita	anāsthita	nearform0.88		anAstika	
 211060	7-298-d	anAhuta	anāhuta	stem			
 211063	7-298-d	anikziptaDura	anikṣiptadhura	nearform1.00		anikziptaDUra	
@@ -944,7 +944,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211093	7-299-a	anirIkzaka	anirīkṣaka	NO-MATCH	A		A:anirAkftin;B:anirukta
 211096	7-299-a	anirudDaka	aniruddhaka	nearform0.80		anirdAhuka	
 211097	7-299-a	anirudDasaMhitA	aniruddhasaṃhitā	NO-MATCH	B		B:anirUpita
-211099	7-299-a	anirdAha	anirdāha	nearform0.88		anirvAha	
+211099	7-299-a	anirdAha	anirdāha	nearform0.88		agnidAha	
 211101	7-299-a	anirBinna	anirbhinna	nearform0.84		antarBinna	
 211102	7-299-a	anirBuja	anirbhuja	NO-MATCH	B		B:anirloqita
 211104	7-299-a	anirvacana	anirvacana	nearform0.86		antarvacana	
@@ -954,7 +954,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211109	7-299-a	anirvizwa	anirviṣṭa	nearform0.89		anirdizwa	
 211111	7-299-a	anirvedakara	anirvedakara	NO-MATCH	A		B:anirvfta;A:anirvedita
 211113	7-299-b	anirhARarca	anirhāṇarca	NO-MATCH	A		A:anirvedita
-211114	7-299-b	anirhuta	anirhuta	nearform0.88		anirhata	
+211114	7-299-b	anirhuta	anirhuta	nearform0.88		agnihuta	
 211115	7-299-b	anilagulmin	anilagulmin	NO-MATCH	A		A:anivartin
 211117	7-299-b	anividDa	anividdha	nearform0.88		aBividDa	
 211118	7-299-b	anivizwa	aniviṣṭa	nearform0.93		anvizwa	
@@ -968,7 +968,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211139	7-299-b	anizWitASa	aniṣṭhitāśa	NO-MATCH	A		A:anisfzwa
 211141	7-299-b	anistizWant	anistiṣṭhant	nearform0.95		anistizWat	
 211142	7-299-b	aniHsarant	aniḥsarant	NO-MATCH	B		B:anIka
-211144	7-299-b	anIkatva	anīkatva	nearform0.88		anekatva	
+211144	7-299-b	anIkatva	anīkatva	nearform0.88		anISatva	
 211148	7-299-b	anIkzA	anīkṣā	nearform0.92		anvIkzA	
 211149	7-299-b	anItiSAstrajYa	anītiśāstrajña	NO-MATCH	C		
 211150	7-299-b	anIdfgAtman	anīdṛgātman	NO-MATCH	C		
@@ -982,7 +982,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211176	7-299-c	anuguRita	anuguṇita	nearform0.89		anugaRita	
 211180	7-299-c	anugrahItar	anugrahītar	nearform0.95		anugrahita	
 211181	7-299-c	anugrahItavya	anugrahītavya	NO-MATCH	C		
-211182	7-299-c	anucarita	anucarita	nearform0.82		anucarci	
+211182	7-299-c	anucarita	anucarita	nearform0.82		antarita	
 211184	7-299-c	anuccita	anuccita	nearform0.93		anucita	
 211185	7-299-c	anucCAstravartin	anucchāstravartin	NO-MATCH	C		
 211186	7-299-c	anucCindant	anucchindant	nearform0.95		anucCindat	
@@ -1006,10 +1006,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211223	7-299-d	anudBava	anudbhava	nearform0.93		anuBava	
 211224	7-299-d	anudBAvita	anudbhāvita	nearform0.95		anuDAvita	
 211225	7-299-d	anudBAsin	anudbhāsin	nearform1.00		anUdBAsin	
-211227	7-299-d	anudrikta	anudrikta	nearform0.82		anurakta	
+211227	7-299-d	anudrikta	anudrikta	nearform0.82		anidrita	
 211234	7-299-d	anunmukta	anunmukta	nearform0.82		anuyukta	
 211235	7-299-d	anupaGnant	anupaghnant	nearform0.95		anupaGnat	
-211237	7-300-a	anupacita	anupacita	nearform0.89		anupahita	
+211237	7-300-a	anupacita	anupacita	nearform0.89		anupaWita	
 211239	7-300-a	anupadeSa	anupadeśa	nearform1.00		anUpadeSa	
 211240	7-300-a	anupaDi	anupadhi	stem			
 211243	7-300-a	anupanamra	anupanamra	nearform0.80		anupramARa	
@@ -1018,7 +1018,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211250	7-300-a	anupamakzant	anupamakṣant	NO-MATCH	B		B:anupaBujyamAna
 211251	7-300-a	anupamasaMhArigranTa	anupamasaṃhārigrantha	NO-MATCH	C		
 211252	7-300-a	anupayAnt	anupayānt	nearform0.94		anupayat	
-211257	7-300-a	anuparoDin	anuparodhin	nearform0.84		anuparoDa	
+211257	7-300-a	anuparoDin	anuparodhin	nearform0.84		anupariDi	
 211259	7-300-a	anupalabDivAda	anupalabdhivāda	NO-MATCH	A		A:anuparvata;B:anupalabDisama
 211262	7-300-a	anupaviSant	anupaviśant	nearform0.82		anupraviSya	
 211263	7-300-a	anupavizwa	anupaviṣṭa	nearform0.90		anupadizwa	
@@ -1039,17 +1039,17 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211302	7-300-b	anuBavasUtra	anubhavasūtra	NO-MATCH	A		A:anuBavam;B:anuBAva
 211306	7-300-b	anuBrazwatejas	anubhraṣṭatejas	NO-MATCH	A		A:anuBAzita;A:anumatavajra
 211309	7-300-b	anumantar	anumantar	nearform0.94		anumantr	
-211310	7-300-b	anumAtar	anumātar	nearform0.93		Anumata	
+211310	7-300-b	anumAtar	anumātar	nearform0.93		anumata	
 211314	7-300-c	anumArjana	anumārjana	nearform0.80		apAmArjana	
-211315	7-300-c	anumAsa	anumāsa	nearform0.86		anuvAsa	
+211315	7-300-c	anumAsa	anumāsa	nearform0.86		anuBAsa	
 211321	7-300-c	anuyAjavant	anuyājavant	nearform0.95		anuyAjavat	
 211325	7-300-c	anurakzitavya	anurakṣitavya	nearform0.80		anvIkzitavya	
 211329	7-300-c	anuroDavatI	anurodhavatī	NO-MATCH	B		B:anurAga;B:anuroha
-211331	7-300-c	anulApin	anulāpin	nearform0.88		anutApin	
+211331	7-300-c	anulApin	anulāpin	nearform0.88		anulepin	
 211333	7-300-c	anulomay	anulomay	stem			
 211335	7-300-c	anullaNGanIya	anullaṅghanīya	nearform0.80		alaNGanIyatA	
 211340	7-300-c	anuvarRayitavya	anuvarṇayitavya	NO-MATCH	A		A:anuvapram
-211341	7-300-c	anuvasu	anuvasu	nearform0.92		anuvAs	
+211341	7-300-c	anuvasu	anuvasu	nearform0.92		anuvas	
 211345	7-300-c	anuvilepana	anuvilepana	NO-MATCH	B		B:anuvAdin;B:anuvft
 211352	7-300-d	anuSaMsana	anuśaṃsana	nearform0.95		anuSAsana	
 211353	7-300-d	anuSayavant	anuśayavant	nearform0.95		anuSayavat	
@@ -1079,7 +1079,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211450	7-301-b	antaHprIti	antaḥprīti	nearform0.86		antaHpariDi	
 211455	7-301-b	antataH	antataḥ	stem			
 211461	7-301-b	antarakrIqA	antarakrīḍā	nearform0.82		anaNgakrIqA	
-211463	7-301-b	antaradfS	antaradṛś	nearform0.82		antardiS	
+211463	7-301-b	antaradfS	antaradṛś	nearform0.82		antarada	
 211467	7-301-b	antarAtri	antarātri	nearform0.89		antarvARi	
 211468	7-301-b	antarAntaratas	antarāntaratas	NO-MATCH	A		A:antarAntarAt
 211470	7-301-b	antarAvedi	antarāvedi	stem			
@@ -1090,7 +1090,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211483	7-301-c	antarjAnukara	antarjānukara	NO-MATCH	B		B:antarjAnu;B:antarjyotis
 211489	7-301-c	antarnAvya	antarnāvya	nearform0.84		antarBAva	
 211491	7-301-c	antarBAvaprakASikA	antarbhāvaprakāśikā	NO-MATCH	A		A:antarBAva
-211492	7-301-c	antarBAvya	antarbhāvya	nearform0.95		antarBava	
+211492	7-301-c	antarBAvya	antarbhāvya	nearform0.95		antarBAva	
 211495	7-301-c	antarmAMsa	antarmāṃsa	nearform0.95		antarAMsa	
 211497	7-301-c	antarmuKatA	antarmukhatā	nearform0.86		antarmuKam	
 211498	7-301-c	antaryAmIya	antaryāmīya	nearform0.86		antaryAmin	
@@ -1103,7 +1103,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211520	7-301-d	andolay	andolay	stem			
 211528	7-301-d	anDaMBavizRu	andhaṃbhaviṣṇu	nearform1.00		anDamBavizRu	
 211530	7-301-d	anDasvant	andhasvant	nearform0.82		apnasvat	
-211532	7-301-d	annacikitsA	annacikitsā	nearform0.82		arkacikitsA	
+211532	7-301-d	annacikitsA	annacikitsā	nearform0.82		aSvacikitsA	
 211536	7-301-d	annapAnaviDi	annapānavidhi	NO-MATCH	A		A:annaparyAyam
 211537	7-301-d	annaprASanaka	annaprāśanaka	NO-MATCH	A		A:annaBuj
 211539	7-301-d	annaMBawIya	annaṃbhaṭīya	NO-MATCH	A		A:annaBuj;B:annarasa
@@ -1122,7 +1122,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211595	7-302-a	anvetavE	anvetavai	nearform1.00		anvetave	
 211596	7-302-a	anvezizizu	anveṣiṣiṣu	NO-MATCH	B		B:anvezwavya
 211600	7-302-a	apakarzaRIya	apakarṣaṇīya	NO-MATCH	A		A:apakartana;B:apakarzasama
-211613	7-302-b	apakzARa	apakṣāṇa	nearform0.88		apekzaRa	
+211613	7-302-b	apakzARa	apakṣāṇa	nearform0.88		apakzIRa	
 211614	7-302-b	apakzigaRasaMGAta	apakṣigaṇasaṃghāta	NO-MATCH	C		
 211615	7-302-b	apakzigaRasaMpAta	apakṣigaṇasaṃpāta	NO-MATCH	A		A:apagatakAlaka
 211617	7-302-b	apagataraSmivant	apagataraśmivant	NO-MATCH	A		A:apagatakAlaka
@@ -1130,7 +1130,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211620	7-302-b	apagrahaRa	apagrahaṇa	nearform0.90		avagrahaRa	
 211625	7-302-b	apacAyitar	apacāyitar	nearform0.95		apacAyita	
 211636	7-302-b	apatandram	apatandram	nearform0.84		apatantra	
-211639	7-302-b	apattana	apattana	nearform0.93		apatAna	
+211639	7-302-b	apattana	apattana	nearform0.93		Apatana	
 211641	7-302-c	apatyaduHKEkamaya	apatyaduḥkhaikamaya	NO-MATCH	B		B:apatyada;B:apatrapizRu
 211644	7-302-c	apaTakalpanA	apathakalpanā	NO-MATCH	A		B:apaTa;A:apaTadAyin
 211651	7-302-c	apadozya	apadoṣya	nearform0.93		apadoza	
@@ -1159,7 +1159,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211711	7-302-d	aparigfhIta	aparigṛhīta	NO-MATCH	B		B:aparigraha
 211715	7-302-d	aparicCedakartar	aparicchedakartar	NO-MATCH	A		A:aparicalita
 211716	7-302-d	aparicCedya	aparicchedya	nearform0.95		aparicCeda	
-211717	7-302-d	aparicyuta	aparicyuta	nearform0.84		apracyuta	
+211717	7-302-d	aparicyuta	aparicyuta	nearform0.84		aparicita	
 211719	7-302-d	aparijYAna	aparijñāna	nearform0.90		aparijyAni	
 211722	7-303-a	apariRAyaka	apariṇāyaka	NO-MATCH	B		B:apariRAmin
 211723	7-303-a	aparitarkita	aparitarkita	NO-MATCH	C		
@@ -1193,7 +1193,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211778	7-303-b	apalakzaRa	apalakṣaṇa	nearform0.95		apalakzmaRa	
 211779	7-303-b	apalakzaRa	apalakṣaṇa	nearform0.95		apalakzmaRa	
 211782	7-303-b	apalAyana	apalāyana	nearform0.89		anAlayana	
-211783	7-303-b	apalAyin	apalāyin	nearform0.88		apalApin	
+211783	7-303-b	apalAyin	apalāyin	nearform0.88		apacAyin	
 211787	7-303-b	apavidDi	apaviddhi	stem			
 211792	7-303-b	apaSabdanirAkaraRa	apaśabdanirākaraṇa	NO-MATCH	A		A:apavyAhAra;A:apaSabdita
 211797	7-303-b	apaSyant	apaśyant	nearform0.93		apaSyat	
@@ -1202,16 +1202,16 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211803	7-303-b	apaskanda	apaskanda	nearform0.89		avaskanda	
 211817	7-303-c	apAkartos	apākartos	NO-MATCH	A		A:apahvara;B:apAkfti
 211819	7-303-c	apAkesTa	apākestha	nearform1.00		ApAkesTa	
-211823	7-303-c	apAwita	apāṭita	nearform0.86		Arawita	
+211823	7-303-c	apAwita	apāṭita	nearform0.86		apAsita	
 211826	7-303-c	apARigrahaRA	apāṇigrahaṇā	stem			
 211827	7-303-c	apAtrI	apātrī	stem			
 211828	7-303-c	apATeya	apātheya	nearform0.86		Apageya	
-211835	7-303-c	apApaka	apāpaka	nearform0.86		ApAnaka	
+211835	7-303-c	apApaka	apāpaka	nearform0.86		apAdaka	
 211837	7-303-c	apApadarSin	apāpadarśin	NO-MATCH	A		A:apApad
 211838	7-303-c	apAparogin	apāparogin	NO-MATCH	A		A:apApAya
 211841	7-303-c	apAmArgI	apāmārgī	stem			
 211847	7-303-c	apArayant	apārayant	nearform0.94		apArayat	
-211848	7-303-c	apArAyaRIya	apārāyaṇīya	nearform0.86		ASrayaRIya	
+211848	7-303-c	apArAyaRIya	apārāyaṇīya	nearform0.86		agrAyaRIya	
 211850	7-303-d	apArTay	apārthay	stem			
 211851	7-303-d	apArTI	apārthī	stem			
 211853	7-303-d	apAvaraRa	apāvaraṇa	nearform1.00		apavaraRa	
@@ -1256,7 +1256,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211935	7-304-b	aprajAyant	aprajāyant	nearform0.80		aparAjayin	
 211937	7-304-b	aprajYAna	aprajñāna	nearform0.94		apajYAna	
 211938	7-304-b	aprajYAyamAna	aprajñāyamāna	nearform0.85		aprayujyamAna	
-211939	7-304-b	apraRata	apraṇata	nearform0.93		aprARat	
+211939	7-304-b	apraRata	apraṇata	nearform0.93		aparata	
 211940	7-304-b	apraRaya	apraṇaya	nearform0.82		apAraRIya	
 211941	7-304-b	apraRayin	apraṇayin	nearform0.84		aparicayin	
 211942	7-304-b	apraRAmita	apraṇāmita	nearform0.84		aparimita	
@@ -1264,13 +1264,13 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211945	7-304-b	apratApin	apratāpin	nearform0.82		apratApa	
 211947	7-304-b	apratikarmakriyA	apratikarmakriyā	NO-MATCH	B		B:aprati
 211948	7-304-b	apratikarza	apratikarṣa	nearform0.95		apratikara	
-211949	7-304-b	apratikArya	apratikārya	nearform0.95		apratikara	
-211950	7-304-b	apratikurvant	apratikurvant	nearform0.80		apratikarman	
+211949	7-304-b	apratikArya	apratikārya	nearform0.95		apratikAra	
+211950	7-304-b	apratikurvant	apratikurvant	nearform0.80		apratibruvat	
 211951	7-304-b	apratikUlakft	apratikūlakṛt	NO-MATCH	C		
-211952	7-304-b	apratikriya	apratikriya	nearform0.86		apratikara	
+211952	7-304-b	apratikriya	apratikriya	nearform0.86		apratikAra	
 211953	7-304-b	apratikriyamARa	apratikriyamāṇa	NO-MATCH	C		
 211954	7-304-b	apratikruDyant	apratikrudhyant	NO-MATCH	C		
-211955	7-304-b	apratikrUra	apratikrūra	nearform0.86		apratikara	
+211955	7-304-b	apratikrUra	apratikrūra	nearform0.86		apratikAra	
 211956	7-304-b	apratikroSant	apratikrośant	nearform0.80		apratikarman	
 211957	7-304-b	apratigaja	apratigaja	NO-MATCH	C		
 211958	7-304-b	apratigata	apratigata	nearform0.90		apratihata	
@@ -1289,7 +1289,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 211978	7-304-c	apratiroDana	apratirodhana	nearform0.80		apratiboDavat	
 211979	7-304-c	apratilInA	apratilīnā	nearform0.80		apratimAna	
 211980	7-304-c	apratilomayant	apratilomayant	nearform0.96		apratilomayat	
-211981	7-304-c	aprativartana	aprativartana	nearform0.85		anupravartana	
+211981	7-304-c	aprativartana	aprativartana	nearform0.85		aBipravartana	
 211983	7-304-c	aprativArita	aprativārita	nearform0.80		anuparivArita	
 211984	7-304-c	aprativiDAna	apratividhāna	nearform0.80		apratidvandva	
 211985	7-304-c	apratividDa	apratividdha	nearform0.91		apratizidDa	
@@ -1326,7 +1326,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212033	7-304-d	apramattavant	apramattavant	nearform0.96		apramattavat	
 212036	7-304-d	apramoza	apramoṣa	nearform0.88		apramoda	
 212037	7-304-d	aprayacCant	aprayacchant	nearform0.86		aprayucCat	
-212038	7-304-d	aprayAnt	aprayānt	nearform0.88		aprayata	
+212038	7-304-d	aprayAnt	aprayānt	nearform0.88		apArayat	
 212042	7-304-d	aprayogin	aprayogin	nearform0.84		anupayogin	
 212043	7-304-d	aprayojya	aprayojya	nearform0.84		aprayojaka	
 212044	7-304-d	apralaya	apralaya	nearform0.94		apravlaya	
@@ -1368,7 +1368,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212109	7-305-b	abahuvyaktinizWa	abahuvyaktiniṣṭha	NO-MATCH	B		B:abahvakzara
 212111	7-305-b	abADamAna	abādhamāna	nearform0.84		abuDyamAna	
 212114	7-305-b	abAleya	abāleya	nearform0.92		Abalya	
-212115	7-305-b	abiBrat	abibhrat	nearform0.86		aBirati	
+212115	7-305-b	abiBrat	abibhrat	nearform0.86		abiByat	
 212116	7-305-b	abilavant	abilavant	nearform0.82		abalavat	
 212120	7-305-b	abudDaDarma	abuddhadharma	NO-MATCH	B		B:abudDa
 212121	7-305-b	abfMhita	abṛṃhita	NO-MATCH	B		B:aboDa
@@ -1389,7 +1389,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212158	7-305-c	aBAvagranTavyAKyA	abhāvagranthavyākhyā	NO-MATCH	B		B:aBAvanA
 212160	7-305-c	aBAvavikalpa	abhāvavikalpa	NO-MATCH	B		B:aBAvanA
 212161	7-305-c	aBAvita	abhāvita	nearform0.86		ABAzita	
-212162	7-305-c	aBAskara	abhāskara	nearform0.88		AyaskAra	
+212162	7-305-c	aBAskara	abhāskara	nearform0.88		ABAsvara	
 212172	7-305-c	aBigamanIya	abhigamanīya	nearform0.91		aDigamanIya	
 212176	7-305-d	aBigrahItar	abhigrahītar	nearform0.86		aBigrahItf	
 212177	7-305-d	aBigrAsa	abhigrāsa	nearform0.94		aBigrasta	
@@ -1404,16 +1404,16 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212203	7-305-d	aBinamana	abhinamana	nearform0.89		aBigamana	
 212204	7-305-d	aBinamitA	abhinamitā	nearform0.84		aBinirmita	
 212205	7-305-d	aBinayadarpaRa	abhinayadarpaṇa	NO-MATCH	C		
-212206	7-305-d	aBinayana	abhinayana	nearform0.82		aBinyAsa	
+212206	7-305-d	aBinayana	abhinayana	nearform0.82		aBiDyAna	
 212207	7-305-d	aBinavakAverImAhAtmya	abhinavakāverīmāhātmya	NO-MATCH	A		A:aBinAmaDeya
 212213	7-306-a	aBinirhAra	abhinirhāra	NO-MATCH	A		A:aBinimroka;A:aBinivizwaka
 212216	7-306-a	aBinizpannatva	abhiniṣpannatva	NO-MATCH	B		B:aBiniveSin
 212217	7-306-a	aBinnanimittopAdAna	abhinnanimittopādāna	NO-MATCH	B		B:aBinnAtman
-212219	7-306-a	aBipatAka	abhipatāka	nearform0.89		aBiGAtaka	
+212219	7-306-a	aBipatAka	abhipatāka	nearform0.89		ahipatAka	
 212221	7-306-a	aBipattimant	abhipattimant	nearform0.96		aBipattimat	
 212224	7-306-a	aBipAraga	abhipāraga	nearform0.89		aBipragAh	
 212225	7-306-a	aBipAlaka	abhipālaka	nearform0.89		aBipAlana	
-212230	7-306-a	aBipratAraRa	abhipratāraṇa	nearform0.92		ABipratAriRa	
+212230	7-306-a	aBipratAraRa	abhipratāraṇa	nearform0.92		aBiprasAraRa	
 212231	7-306-a	aBipratigara	abhipratigara	NO-MATCH	A		A:aBipravrajana
 212233	7-306-a	aBiprasArin	abhiprasārin	nearform0.91		aBipratArin	
 212239	7-306-a	aBiBartsana	abhibhartsana	nearform0.82		avaBartsana	
@@ -1423,7 +1423,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212257	7-306-b	aBimuKIkfti	abhimukhīkṛti	NO-MATCH	B		B:aBimuKI
 212258	7-306-b	aBimfSe	abhimṛśe	stem			
 212265	7-306-b	aBirADana	abhirādhana	nearform0.84		aBivarDana	
-212266	7-306-b	aBirADya	abhirādhya	nearform0.88		aBirAdDa	
+212266	7-306-b	aBirADya	abhirādhya	nearform0.88		aBiprAya	
 212268	7-306-b	aBirAmIya	abhirāmīya	nearform0.82		aBirAmam	
 212269	7-306-b	aBiruqgatA	abhiruḍgatā	NO-MATCH	C		
 212270	7-306-b	aBirodDar	abhiroddhar	nearform0.82		aBirAdDa	
@@ -1485,7 +1485,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212430	7-307-b	amaraSeza	amaraśeṣa	nearform0.82		arDaSeza	
 212432	7-307-b	amaruka	amaruka	NO-MATCH	B		B:amarastrI
 212433	7-307-b	amareSvarakalpa	amareśvarakalpa	NO-MATCH	B		B:amartyatA
-212437	7-307-b	amasvarI	amasvarī	nearform0.80		amAvAsI	
+212437	7-307-b	amasvarI	amasvarī	nearform0.80		amAvasI	
 212438	7-307-b	amahAyajYayAjin	amahāyajñayājin	NO-MATCH	B		B:amA
 212442	7-307-b	amAtfjYa	amātṛjña	nearform0.80		AtmajYa	
 212443	7-307-b	amAtrA	amātrā	stem			
@@ -1529,13 +1529,13 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212539	7-308-a	ayanacayanAdigaRita	ayanacayanādigaṇita	NO-MATCH	B		B:ayanAMSa
 212543	7-308-a	ayamadevatya	ayamadevatya	nearform0.87		anyadevatya	
 212544	7-308-a	ayamasU	ayamasū	NO-MATCH	C		
-212545	7-308-a	ayavana	ayavana	nearform1.00		ayAvana	
+212545	7-308-a	ayavana	ayavana	nearform1.00		Ayavana	
 212547	7-308-a	ayaSoDvaja	ayaśodhvaja	NO-MATCH	B		B:ayavas;B:ayaHSaPa
 212549	7-308-a	ayaHSalmalIvana	ayaḥśalmalīvana	NO-MATCH	B		B:ayaHSaPa;B:ayaHSfNga
 212553	7-308-a	ayastapta	ayastapta	nearform0.94		ayastApa	
 212554	7-308-a	ayaspAtrI	ayaspātrī	stem			
-212557	7-308-a	ayAcitar	ayācitar	nearform0.93		AyAcita	
-212562	7-308-a	ayAdava	ayādava	nearform0.80		Ayadvasu	
+212557	7-308-a	ayAcitar	ayācitar	nearform0.93		ayAcita	
+212562	7-308-a	ayAdava	ayādava	nearform0.80		Aryadeva	
 212568	7-308-a	ayukparRa	ayukparṇa	NO-MATCH	B		B:ayukCada;B:ayugmacCada
 212572	7-308-a	ayudDamati	ayuddhamati	NO-MATCH	B		B:ayuta
 212573	7-308-b	ayudDamanas	ayuddhamanas	NO-MATCH	C		
@@ -1557,7 +1557,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212611	7-308-b	araRasamavasaraRa	araṇasamavasaraṇa	NO-MATCH	A		B:araqA;A:araRAvihArin
 212614	7-308-b	araRyacArI	araṇyacārī	nearform0.90		araRyacara	
 212616	7-308-c	aranDra	arandhra	nearform0.92		araDra	
-212617	7-308-c	aramaRIya	aramaṇīya	nearform0.95		AramBaRIya	
+212617	7-308-c	aramaRIya	aramaṇīya	nearform0.95		AkramaRIya	
 212619	7-308-c	aramya	aramya	nearform0.92		aryamya	
 212622	7-308-c	aravAqa	aravāḍa	NO-MATCH	B		B:arare
 212623	7-308-c	aravindanABi	aravindanābhi	stem			
@@ -1598,7 +1598,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212725	7-309-a	arTapAruzya	arthapāruṣya	NO-MATCH	A		A:arTapAWa
 212726	7-309-a	arTaprADva	arthaprādhva	NO-MATCH	C		
 212727	7-309-a	arTabahula	arthabahula	NO-MATCH	B		B:arTamanas
-212730	7-309-b	arTamAtar	arthamātar	nearform0.89		arTamatta	
+212730	7-309-b	arTamAtar	arthamātar	nearform0.89		arTamAtra	
 212731	7-309-b	arTay	arthay	nearform0.89		arTa	
 212732	7-309-b	arTayitar	arthayitar	NO-MATCH	A		A:arTaracana
 212739	7-309-b	arTaviSArada	arthaviśārada	NO-MATCH	A		A:arTalola;B:arTaSAstraka
@@ -1690,7 +1690,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212913	7-310-b	alpotsuka	alpotsuka	NO-MATCH	B		B:alpeSAKya;B:avaka
 212917	7-310-b	avakarRaprAvfta	avakarṇaprāvṛta	NO-MATCH	A		A:avakara;A:avakalana
 212919	7-310-b	avakalpanA	avakalpanā	nearform0.95		avakalana	
-212922	7-310-c	avakUlana	avakūlana	nearform0.89		avakalana	
+212922	7-310-c	avakUlana	avakūlana	nearform0.89		avaDUlana	
 212924	7-310-c	avakowaka	avakoṭaka	NO-MATCH	A		A:avakeSin
 212925	7-310-c	avakrAma	avakrāma	nearform0.93		avakram	
 212928	7-310-c	avaga	avaga	stem			
@@ -1705,7 +1705,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212959	7-310-c	avatAraRikA	avatāraṇikā	nearform1.00		avataraRikA	
 212966	7-310-d	avadravya	avadravya	nearform0.89		apadravya	
 212968	7-310-d	avaDAnavant	avadhānavant	nearform0.95		avaDAnavat	
-212970	7-310-d	avaDUlay	avadhūlay	nearform0.82		avatUlaya	
+212970	7-310-d	avaDUlay	avadhūlay	nearform0.82		avaDUlana	
 212972	7-310-d	avanatI	avanatī	stem			
 212973	7-310-d	avanaha	avanaha	stem			
 212977	7-310-d	avanipAtam	avanipātam	nearform0.84		avinipAta	
@@ -1716,10 +1716,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 212983	7-310-d	avantIkumAra	avantīkumāra	nearform0.83		aSvinIkumAra	
 212985	7-310-d	avanDyaprasAda	avandhyaprasāda	NO-MATCH	B		B:avanDya
 212986	7-310-d	avapadas	avapadas	stem			
-212987	7-310-d	avapAkin	avapākin	nearform0.80		AvApaka	
-212996	7-310-d	avamUrDa	avamūrdha	nearform0.80		avamUtr	
+212987	7-310-d	avapAkin	avapākin	nearform0.80		avapAka	
+212996	7-310-d	avamUrDa	avamūrdha	nearform0.80		avamUrC	
 212998	7-310-d	avamfdya	avamṛdya	nearform0.88		avamfSya	
-213000	7-311-a	avamya	avamya	nearform0.91		avaya	
+213000	7-311-a	avamya	avamya	nearform0.91		avama	
 213001	7-311-a	avayavakroqa	avayavakroḍa	NO-MATCH	B		B:avayuti
 213003	7-311-a	avayE	avayai	nearform0.91		avaDyE	
 213005	7-311-a	avaragodAnIya	avaragodānīya	NO-MATCH	B		B:avara
@@ -1747,7 +1747,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213069	7-311-b	avastupatita	avastupatita	NO-MATCH	C		
 213070	7-311-b	avastrada	avastrada	nearform0.89		avastratA	
 213071	7-311-c	avasTiticApala	avasthiticāpala	NO-MATCH	C		
-213072	7-311-c	avasnAna	avasnāna	nearform0.93		AvasAna	
+213072	7-311-c	avasnAna	avasnāna	nearform0.93		avasAna	
 213074	7-311-c	avasyuvAta	avasyuvāta	nearform0.80		avahAsyatA	
 213076	7-311-c	avasvadant	avasvadant	nearform0.90		avasvadvat	
 213079	7-311-c	avahant	avahant	stem			
@@ -1761,16 +1761,16 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213096	7-311-c	avAnta	avānta	nearform1.00		Avanta	
 213099	7-311-c	avAntaraprakfti	avāntaraprakṛti	NO-MATCH	B		B:avAntaradIkzA;B:avApta
 213104	7-311-c	avAryamARa	avāryamāṇa	nearform0.86		aDArayamARa	
-213106	7-311-c	avAleya	avāleya	nearform0.86		avaleKA	
+213106	7-311-c	avAleya	avāleya	nearform0.86		Avaneya	
 213111	7-311-c	avikatTin	avikatthin	nearform0.84		avikatTana	
 213112	7-311-c	avikampita	avikampita	nearform0.90		avikalpita	
 213116	7-311-c	avikANkzA	avikāṅkṣā	nearform0.89		aBikANkzA	
 213118	7-311-c	avikAravant	avikāravant	nearform0.95		avikAravat	
 213121	7-311-d	avikAsaBAva	avikāsabhāva	NO-MATCH	A		B:avikArya;A:avikURita
-213134	7-311-d	avigaRita	avigaṇita	nearform0.89		avigalita	
+213134	7-311-d	avigaRita	avigaṇita	nearform0.89		avagaRita	
 213139	7-311-d	avicalant	avicalant	nearform0.94		avicalat	
 213141	7-311-d	avicezwant	aviceṣṭant	NO-MATCH	B		B:avicAra;B:avicyuta
-213144	7-311-d	avijYapti	avijñapti	nearform0.82		avijYAta	
+213144	7-311-d	avijYapti	avijñapti	nearform0.82		avijYatA	
 213145	7-311-d	avijYAtaprAyaScitta	avijñātaprāyaścitta	NO-MATCH	B		B:avitaTa
 213147	7-311-d	avitaTavAc	avitathavāc	NO-MATCH	A		B:avitaTa;A:avitaraRa
 213150	7-311-d	avitarkayant	avitarkayant	NO-MATCH	B		B:avitarka;B:avitarkita
@@ -1781,8 +1781,8 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213161	7-312-a	avidDakarRa	aviddhakarṇa	stem			
 213162	7-312-a	avidyaka	avidyaka	NO-MATCH	B		B:avidviz
 213164	7-312-a	aviDijYa	avidhijña	NO-MATCH	B		B:avidviz;B:aviDipUrvakam
-213167	7-312-a	aviDfta	avidhṛta	nearform0.86		avikfta	
-213168	7-312-a	aviDeya	avidheya	nearform0.92		AviDya	
+213167	7-312-a	aviDfta	avidhṛta	nearform0.86		avaDfta	
+213168	7-312-a	aviDeya	avidheya	nearform0.92		aviDya	
 213172	7-312-a	aviniyoga	aviniyoga	NO-MATCH	B		B:avinipAtita
 213173	7-312-a	aviniryant	aviniryant	nearform0.80		avinirRaya	
 213174	7-312-a	avinivartanIya	avinivartanīya	nearform0.81		avyAvartanIya	
@@ -1802,20 +1802,20 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213212	7-312-b	avirAwsaMpanna	avirāṭsaṃpanna	NO-MATCH	B		B:avirAmam
 213219	7-312-b	aviroDana	avirodhana	nearform0.89		avaroDana	
 213222	7-312-b	avilakzaRa	avilakṣaṇa	nearform0.90		aBilakzaRa	
-213224	7-312-b	avilIna	avilīna	nearform0.86		aviqIna	
+213224	7-312-b	avilIna	avilīna	nearform0.86		aBilIna	
 213226	7-312-b	avivara	avivara	nearform0.93		avivarta	
 213231	7-312-b	aviSaNkin	aviśaṅkin	nearform0.89		aBiSaNkin	
 213232	7-312-b	aviSArada	aviśārada	NO-MATCH	C		
-213233	7-312-b	aviSAla	aviśāla	nearform0.86		ApiSala	
+213233	7-312-b	aviSAla	aviśāla	nearform0.86		avipAla	
 213234	7-312-b	aviSoDana	aviśodhana	NO-MATCH	A		A:aviSrabDa
 213237	7-312-b	aviSramant	aviśramant	nearform0.86		aviSramBatA	
 213239	7-312-c	aviSlizwa	aviśliṣṭa	nearform0.89		aviklizwa	
 213242	7-312-c	aviSvAsya	aviśvāsya	nearform0.94		aviSvAsa	
-213244	7-312-c	avizAditA	aviṣāditā	nearform0.82		AsvAdita	
+213244	7-312-c	avizAditA	aviṣāditā	nearform0.82		avizAdin	
 213245	7-312-c	avizuvatka	aviṣuvatka	NO-MATCH	B		B:avisaMvAda
 213249	7-312-c	aviskanttar	aviskanttar	nearform0.86		aviskanttf	
 213250	7-312-c	avismaya	avismaya	nearform0.82		aBisamaya	
-213254	7-312-c	avisrasta	avisrasta	nearform0.89		avisraMsa	
+213254	7-312-c	avisrasta	avisrasta	nearform0.89		avasrasta	
 213255	7-312-c	avihiMsant	avihiṃsant	nearform0.90		avihiMsana	
 213263	7-312-c	avIrasTa	avīrastha	nearform0.82		aDvarasTa	
 213264	7-312-c	avIrahatya	avīrahatya	nearform0.90		avErahatya	
@@ -1879,10 +1879,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213393	7-313-b	aSrAmaRya	aśrāmaṇya	nearform0.94		aSramaRa	
 213394	7-313-b	aSrAvayant	aśrāvayant	NO-MATCH	B		B:aSri
 213399	7-313-b	aSrutiviroDin	aśrutivirodhin	NO-MATCH	A		B:aSruti;A:aSrunetra
-213404	7-313-c	aSrUyamARa	aśrūyamāṇa	nearform0.80		ApUryamARa	
+213404	7-313-c	aSrUyamARa	aśrūyamāṇa	nearform0.80		apUryamARa	
 213405	7-313-c	aSrotar	aśrotar	nearform0.86		aSrotra	
 213407	7-313-c	aSlakzRa	aślakṣṇa	nearform0.88		alakzaRa	
-213411	7-313-c	aSvakAya	aśvakāya	nearform0.88		aSaNkayA	
+213411	7-313-c	aSvakAya	aśvakāya	nearform0.88		aSvadAya	
 213415	7-313-c	aSvatIrTaka	aśvatīrthaka	NO-MATCH	B		B:aSvagozWa;B:aSvatTa
 213421	7-313-c	aSvapAdAtasArameyamaya	aśvapādātasārameyamaya	NO-MATCH	A		A:aSvaparaSu;A:aSvapUrRa
 213425	7-313-c	aSvapraTama	aśvaprathama	NO-MATCH	A		A:aSvapozaka;B:aSvaprapadana
@@ -1903,11 +1903,11 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213464	7-313-d	azwasTAnaparIkzA	aṣṭasthānaparīkṣā	NO-MATCH	A		B:azwastanA;A:azwANga
 213466	7-313-d	azwANganiGaRwu	aṣṭāṅganighaṇṭu	NO-MATCH	A		A:azwANga;A:azwANgapraRipAta
 213468	7-313-d	azwANgahfdayadIpikA	aṣṭāṅgahṛdayadīpikā	NO-MATCH	A		A:azwANgapraRipAta;B:azwAcatvAriMSaka
-213471	7-313-d	azwAdaSatA	aṣṭādaśatā	nearform0.90		azwAdaSama	
+213471	7-313-d	azwAdaSatA	aṣṭādaśatā	nearform0.90		azwAdaSaDA	
 213472	7-313-d	azwAdaSapurARasAra	aṣṭādaśapurāṇasāra	NO-MATCH	A		A:azwAdaSavakra
 213475	7-313-d	azwAdaSavAda	aṣṭādaśavāda	nearform0.88		azwAdaSavakra	
 213477	7-313-d	azwAvaDAnin	aṣṭāvadhānin	NO-MATCH	B		B:azwAdiS
-213478	7-314-a	azwAvara	aṣṭāvara	nearform0.94		azwavarza	
+213478	7-314-a	azwAvara	aṣṭāvara	nearform0.94		azwAvakra	
 213479	7-314-a	azwAviMSin	aṣṭāviṃśin	nearform0.86		azwAviMSati	
 213480	7-314-a	azwASItisahasra	aṣṭāśītisahasra	nearform0.87		azwaSatasAhasra	
 213483	7-314-a	azwottaraSatadivyadeSanirUpaRa	aṣṭottaraśatadivyadeśanirūpaṇa	NO-MATCH	A		A:azwika;B:azWIla
@@ -1945,14 +1945,14 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213549	7-314-b	asaMcalant	asaṃcalant	NO-MATCH	B		B:asaMcaya
 213550	7-314-b	asaMcetayamAna	asaṃcetayamāna	NO-MATCH	C		
 213551	7-314-b	asaMjAta	asaṃjāta	nearform0.93		asajAta	
-213555	7-314-c	asaMjYin	asaṃjñin	nearform0.82		asaMjYika	
+213555	7-314-c	asaMjYin	asaṃjñin	nearform0.82		asaMjYAna	
 213561	7-314-c	asatpriya	asatpriya	NO-MATCH	A		A:asatpratigraha
 213562	7-314-c	asatyavacana	asatyavacana	NO-MATCH	B		B:asatyavAda
 213564	7-314-c	asatvaram	asatvaram	nearform0.82		avataram	
 213565	7-314-c	asatsaMparka	asatsaṃparka	NO-MATCH	B		B:asadfSa
 213567	7-314-c	asadgati	asadgati	nearform0.88		asaMgati	
 213569	7-314-c	asaDnIcIna	asadhnīcīna	nearform0.84		asamIcIna	
-213572	7-314-c	asant	asant	nearform0.89		asat	
+213572	7-314-c	asant	asant	nearform0.89		asan	
 213573	7-314-c	asaMtardana	asaṃtardana	nearform0.82		asaMdarSana	
 213574	7-314-c	asaMnayant	asaṃnayant	nearform0.80		astamayana	
 213575	7-314-c	asaMnivizwa	asaṃniviṣṭa	nearform0.82		asaMnikfzwa	
@@ -2017,7 +2017,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213694	7-315-b	asfjant	asṛjant	NO-MATCH	A		B:asfkpAta;A:asfRya
 213697	7-315-c	asevana	asevana	nearform1.00		Asevana	
 213700	7-315-c	asoQar	asoḍhar	nearform0.91		asoQa	
-213706	7-315-c	askandamAna	askandamāna	nearform0.91		asyandamAna	
+213706	7-315-c	askandamAna	askandamāna	nearform0.91		aspandamAna	
 213707	7-315-c	askanDa	askandha	nearform0.86		askanna	
 213709	7-315-c	asKalana	askhalana	NO-MATCH	B		B:asKala
 213710	7-315-c	asKalant	askhalant	NO-MATCH	C		
@@ -2038,7 +2038,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213751	7-315-d	asPurant	asphurant	NO-MATCH	C		
 213752	7-315-d	asPya	asphya	NO-MATCH	B		B:asma
 213754	7-315-d	asmaddAtra	asmaddātra	nearform0.84		asmadrAta	
-213756	7-315-d	asmaryamARa	asmaryamāṇa	nearform0.82		aDArayamARa	
+213756	7-315-d	asmaryamARa	asmaryamāṇa	nearform0.82		asampramARa	
 213759	7-315-d	asmftadruh	asmṛtadruh	nearform0.95		asmftaDru	
 213763	7-315-d	asrasta	asrasta	nearform1.00		Asrasta	
 213768	7-315-d	asvarga	asvarga	nearform0.93		asvargya	
@@ -2072,7 +2072,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213850	7-316-c	AkArolleKin	ākārollekhin	NO-MATCH	B		B:AkAlika
 213855	7-316-c	AkASaPena	ākāśaphena	NO-MATCH	A		A:AkASaplavA
 213856	7-316-c	AkASaBErava	ākāśabhairava	NO-MATCH	A		A:AkASamaRi
-213858	7-316-c	AkASarakzitA	ākāśarakṣitā	nearform0.87		AkASaBAzita	
+213858	7-316-c	AkASarakzitA	ākāśarakṣitā	nearform0.87		AkASarakzin	
 213859	7-316-c	AkASasParaRa	ākāśaspharaṇa	NO-MATCH	C		
 213860	7-316-c	AkASADikaraRavAda	ākāśādhikaraṇavāda	NO-MATCH	C		
 213861	7-316-c	AkASAsaNgavimuktinirupalepa	ākāśāsaṅgavimuktinirupalepa	NO-MATCH	A		A:AkiMcanyAyatana
@@ -2082,7 +2082,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213872	7-316-c	AkEwaBavEri	ākaiṭabhavairi	NO-MATCH	A		A:Akowana
 213875	7-316-c	Akopavant	ākopavant	nearform0.94		Akopavat	
 213876	7-316-c	AkoSa	ākośa	nearform0.91		AkroSa	
-213880	7-316-d	Akrandanin	ākrandanin	nearform0.84		agradAnin	
+213880	7-316-d	Akrandanin	ākrandanin	nearform0.84		Akrandana	
 213884	7-316-d	AkrIqaSEla	ākrīḍaśaila	NO-MATCH	B		B:AkrIqagiri;B:Akruzwa
 213886	7-316-d	AkroSanavant	ākrośanavant	NO-MATCH	B		B:Akruzwa
 213887	7-316-d	AkroSayitar	ākrośayitar	nearform0.86		AkroSayitf	
@@ -2094,7 +2094,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 213906	7-316-d	AKyAtaSiromaRi	ākhyātaśiromaṇi	NO-MATCH	B		B:AKyA;B:AKyAtika
 213912	7-316-d	AgamanagamanA	āgamanagamanā	nearform0.80		asamAnagrAma	
 213914	7-316-d	AgamasArasaMgraha	āgamasārasaṃgraha	NO-MATCH	A		B:AgamaSazkulI;A:Agamya
-213921	7-317-a	AgoraRa	āgoraṇa	nearform0.86		AguraRa	
+213921	7-317-a	AgoraRa	āgoraṇa	nearform0.86		ADoraRa	
 213929	7-317-a	AgrayaRadevatA	āgrayaṇadevatā	NO-MATCH	A		B:AgrayaRa;A:AgrayaRIya
 213933	7-317-a	AgrAyaRasUtra	āgrāyaṇasūtra	nearform0.85		AgrayaRapAtra	
 213937	7-317-a	AGAtaka	āghātaka	nearform0.86		aGAtuka	
@@ -2124,7 +2124,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214008	7-317-c	ARqavant	āṇḍavant	nearform0.82		arRavAnta	
 214011	7-317-c	AtaptakArin	ātaptakārin	nearform0.86		anapakArin	
 214013	7-317-c	Atas	ātas	stem			
-214019	7-317-c	AtiyAtrika	ātiyātrika	nearform0.84		Atyantika	
+214019	7-317-c	AtiyAtrika	ātiyātrika	nearform0.84		AtisArika	
 214025	7-317-c	Attaretas	āttaretas	NO-MATCH	A		A:Atfpti;A:Attasva
 214029	7-317-c	AtmajYAnopadeSa	ātmajñānopadeśa	NO-MATCH	B		B:AtmaGoza;B:Atmatantra
 214032	7-317-c	AtmatvajAtisidDivAda	ātmatvajātisiddhivāda	NO-MATCH	B		B:AtmatrARaparigraha;B:AtmadevatA
@@ -2175,12 +2175,12 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214135	7-318-b	AnAkzipa	ānākṣipa	nearform0.88		anakzika	
 214136	7-318-b	AnApAnasmfti	ānāpānasmṛti	NO-MATCH	A		A:AnABi
 214139	7-318-b	Animila	ānimila	nearform0.86		animizA	
-214143	7-318-b	AnugrAhika	ānugrāhika	nearform0.90		anugrAhaka	
+214143	7-318-b	AnugrAhika	ānugrāhika	nearform0.90		AnugrAmika	
 214146	7-318-b	AnupUrvI	ānupūrvī	stem			
 214147	7-318-b	AnuvanDika	ānuvandhika	nearform0.90		AnubanDika	
 214148	7-318-b	AnumatI	ānumatī	stem			
-214153	7-318-b	Anfhata	ānṛhata	nearform0.86		agfhatA	
-214163	7-318-c	ApaReya	āpaṇeya	nearform0.86		Apageya	
+214153	7-318-b	Anfhata	ānṛhata	nearform0.86		anAhata	
+214163	7-318-c	ApaReya	āpaṇeya	nearform0.86		ApaRIya	
 214165	7-318-c	Apattisama	āpattisama	NO-MATCH	A		A:Apatanta;A:ApatsahAya
 214167	7-318-c	ApadevIya	āpadevīya	NO-MATCH	A		A:ApatsahAya;A:Aparuza
 214169	7-318-c	AparvaBaNganipuRa	āparvabhaṅganipuṇa	nearform1.00		aparvaBaNganipuRa	
@@ -2190,7 +2190,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214182	7-318-c	Apin	āpin	nearform0.86		Api	
 214183	7-318-c	ApiSaliSikzA	āpiśaliśikṣā	NO-MATCH	C		
 214184	7-318-c	ApIWAntam	āpīṭhāntam	NO-MATCH	B		B:ApIqa
-214186	7-318-c	ApIqaka	āpīḍaka	nearform0.86		apIqayA	
+214186	7-318-c	ApIqaka	āpīḍaka	nearform0.86		ApIqana	
 214188	7-318-c	ApuNKaSiKam	āpuṅkhaśikham	NO-MATCH	A		A:ApIqin;B:ApfcCya
 214191	7-318-c	Apolupa	āpolupa	nearform0.86		alolupa	
 214196	7-318-d	AptoryAmahOtra	āptoryāmahautra	NO-MATCH	A		A:Apti
@@ -2232,7 +2232,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214331	7-319-c	AryabudDi	āryabuddhi	NO-MATCH	C		
 214332	7-319-c	AryabrahmaviSezacittaparipfcCA	āryabrahmaviśeṣacittaparipṛcchā	NO-MATCH	C		
 214333	7-319-c	Aryamati	āryamati	nearform0.93		aramati	
-214335	7-319-c	Aryavant	āryavant	nearform0.82		Aryayuvan	
+214335	7-319-c	Aryavant	āryavant	nearform0.82		ASrayavat	
 214337	7-319-c	AryasTavirIyaka	āryasthavirīyaka	NO-MATCH	A		A:AryasTavira
 214338	7-319-c	AryAdviSatI	āryādviśatī	nearform0.82		AryAtriSatI	
 214348	7-319-d	AlambanapratyayaDyAnaSAstravyAKyA	ālambanapratyayadhyānaśāstravyākhyā	NO-MATCH	A		A:Alaptaka;B:Alambam
@@ -2260,7 +2260,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214405	7-320-a	ASAtika	āśātika	nearform0.92		Astika	
 214413	7-320-b	ASIHpada	āśīḥpada	NO-MATCH	A		A:ASiKam;A:ASIna
 214416	7-320-b	ASIrpada	āśīrpada	nearform0.88		ASIrvAda	
-214417	7-320-b	ASIrmant	āśīrmant	nearform0.80		aSrAnta	
+214417	7-320-b	ASIrmant	āśīrmant	nearform0.80		aSrImat	
 214418	7-320-b	ASIrvacanamAlA	āśīrvacanamālā	NO-MATCH	B		B:ASIviza
 214423	7-320-b	ASugI	āśugī	stem			
 214428	7-320-b	ASramadvezasaMkarin	āśramadveṣasaṃkarin	NO-MATCH	A		A:ASyAma
@@ -2318,7 +2318,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214564	7-321-b	indrapucCa	indrapuccha	nearform0.80		indrapuzpa	
 214565	7-321-b	indrapuruza	indrapuruṣa	nearform0.86		indrapuzpa	
 214567	7-321-b	indraprasTamAhAtmya	indraprasthamāhātmya	NO-MATCH	A		A:indraprayARa;A:indramaGaSrI
-214570	7-321-b	indrayAjin	indrayājin	nearform0.80		indrayajYa	
+214570	7-321-b	indrayAjin	indrayājin	nearform0.80		indrajAlin	
 214573	7-321-b	indravarRa	indravarṇa	nearform0.95		indrAvaruRa	
 214574	7-321-b	indraSrI	indraśrī	NO-MATCH	B		B:indrasava
 214578	7-321-b	indrARImaha	indrāṇīmaha	NO-MATCH	A		A:indrARIgOrIpUjA;A:indrAvasikta
@@ -2349,7 +2349,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214658	7-322-a	IzADara	īṣādhara	nearform1.00		IzADAra	
 214660	7-322-a	IhAvant	īhāvant	NO-MATCH	B		B:IzIkA;B:ukta
 214665	7-322-a	ukTaBAj	ukthabhāj	NO-MATCH	A		A:uktipratyuktikA;B:ukz
-214667	7-322-a	ukzatva	ukṣatva	nearform0.86		uzRatva	
+214667	7-322-a	ukzatva	ukṣatva	nearform0.86		uktatva	
 214677	7-322-a	ugrarUpin	ugrarūpin	NO-MATCH	A		A:ugraruz;B:ugravIrya
 214681	7-322-a	ucitakArin	ucitakārin	NO-MATCH	B		B:ugravega
 214682	7-322-a	ucitopAyasaMgraha	ucitopāyasaṃgraha	NO-MATCH	A		A:uccakEs
@@ -2374,7 +2374,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214735	7-322-c	utkacakumudgaRavant	utkacakumudgaṇavant	NO-MATCH	B		B:utka
 214736	7-322-c	utkaRWitacintI	utkaṇṭhitacintī	NO-MATCH	C		
 214737	7-322-c	utkay	utkay	stem			
-214740	7-322-c	utkarzatva	utkarṣatva	nearform0.84		utkarzaka	
+214740	7-322-c	utkarzatva	utkarṣatva	nearform0.84		utkarzaRa	
 214741	7-322-c	utkarzavant	utkarṣavant	NO-MATCH	C		
 214742	7-322-c	utkArika	utkārika	stem			
 214743	7-322-c	utkArin	utkārin	nearform0.86		utsArin	
@@ -2384,7 +2384,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214751	7-322-c	utkUlay	utkūlay	stem			
 214752	7-322-c	utkfzwikA	utkṛṣṭikā	NO-MATCH	A		A:utketana
 214756	7-322-d	utkoSay	utkośay	stem			
-214757	7-322-d	utkrazwar	utkraṣṭar	nearform0.82		utkruzwa	
+214757	7-322-d	utkrazwar	utkraṣṭar	nearform0.82		utkrazwf	
 214758	7-322-d	utkrAmuka	utkrāmuka	nearform0.82		utkramya	
 214761	7-322-d	utkzepaRIya	utkṣepaṇīya	NO-MATCH	A		A:utkzepa;A:utKanana
 214764	7-322-d	uttaMsay	uttaṃsay	stem			
@@ -2416,11 +2416,11 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214808	7-323-a	uttarya	uttarya	nearform1.00		uttArya	
 214810	7-323-a	uttAnI	uttānī	stem			
 214818	7-323-a	uttejanA	uttejanā	stem			
-214819	7-323-a	uttrAsana	uttrāsana	nearform0.89		uttrAsaka	
+214819	7-323-a	uttrAsana	uttrāsana	nearform0.89		utprAsana	
 214821	7-323-a	utTapattra	utthapattra	nearform0.90		ukTapattra	
 214824	7-323-b	utTApitotprekzA	utthāpitotprekṣā	NO-MATCH	B		B:utTApanIya
 214825	7-323-b	utTApinI	utthāpinī	nearform0.88		utTApanI	
-214831	7-323-b	utpallava	utpallava	nearform0.84		utpalAvana	
+214831	7-323-b	utpallava	utpallava	nearform0.84		utpalavana	
 214835	7-323-b	utpARqUtpARquka	utpāṇḍūtpāṇḍuka	NO-MATCH	B		B:utpAwa;B:utpAtika
 214841	7-323-b	utpuMsay	utpuṃsay	stem			
 214849	7-323-b	utsadana	utsadana	nearform1.00		utsAdana	
@@ -2442,7 +2442,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214909	7-323-d	udApu	udāpu	stem			
 214911	7-323-d	udAyuvana	udāyuvana	nearform0.82		udBAvana	
 214913	7-323-d	udAracaritra	udāracaritra	nearform0.96		udAracarita	
-214916	7-323-d	udAsitar	udāsitar	nearform0.88		udBAsita	
+214916	7-323-d	udAsitar	udāsitar	nearform0.88		udAsTita	
 214918	7-323-d	udAharaRI	udāharaṇī	stem			
 214924	7-323-d	udIcInapAda	udīcīnapāda	NO-MATCH	B		B:uditvara
 214925	7-323-d	udubrahmIya	udubrahmīya	NO-MATCH	A		A:udumbara
@@ -2454,7 +2454,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 214935	7-323-d	udguraRa	udguraṇa	nearform0.93		udgUrRa	
 214936	7-324-a	udgUrayitar	udgūrayitar	nearform0.86		udgUrayitf	
 214938	7-324-a	udgrahItavya	udgrahītavya	NO-MATCH	A		A:udgUrRa
-214939	7-324-a	udgrAhiRikA	udgrāhiṇikā	nearform0.91		udgrahaRikA	
+214939	7-324-a	udgrAhiRikA	udgrāhiṇikā	nearform0.91		udgrAhaRikA	
 214940	7-324-a	udGawaka	udghaṭaka	nearform1.00		udGAwaka	
 214942	7-324-a	udGAtikA	udghātikā	nearform0.88		udGAtaka	
 214944	7-324-a	uddarpa	uddarpa	NO-MATCH	B		B:udGuzwa;B:uddAna
@@ -2503,16 +2503,16 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215078	7-325-a	upaprAtar	upaprātar	nearform0.89		upaprApta	
 215081	7-325-a	upaBogadeha	upabhogadeha	NO-MATCH	A		A:upabilam;B:upamaDyamA
 215084	7-325-a	upamarditatva	upamarditatva	NO-MATCH	A		A:upamanTana
-215085	7-325-a	upamAtar	upamātar	nearform0.88		upAmantr	
+215085	7-325-a	upamAtar	upamātar	nearform0.88		upamantr	
 215087	7-325-a	upamuKa	upamukha	stem			
 215089	7-325-a	upayuktatamatva	upayuktatamatva	NO-MATCH	A		B:upayama;A:upayoga
 215093	7-325-a	uparamam	uparamam	stem			
 215094	7-325-a	uparAgavant	uparāgavant	nearform0.95		uparAgavat	
-215097	7-325-a	uparima	uparima	nearform0.86		upArAma	
+215097	7-325-a	uparima	uparima	nearform0.86		uparAma	
 215102	7-325-a	uparizwAdAsecanavant	upariṣṭādāsecanavant	NO-MATCH	B		B:uparizwAtsvAhAkAra;B:uparizwAdudarka
 215104	7-325-a	uparizwAddEkza	upariṣṭāddaikṣa	nearform0.83		uparizwAdudarka	
 215109	7-325-a	upalakzitavESizyajYAna	upalakṣitavaiśiṣyajñāna	NO-MATCH	A		A:uparudita;A:upalakzmI
-215112	7-325-b	upavaktar	upavaktar	nearform0.82		upavarta	
+215112	7-325-b	upavaktar	upavaktar	nearform0.82		uparakta	
 215121	7-325-b	upavIRay	upavīṇay	stem			
 215122	7-325-b	upavItitva	upavītitva	nearform0.84		upavIjita	
 215129	7-325-b	upaSlokay	upaślokay	stem			
@@ -2569,7 +2569,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215229	7-326-a	uluka	uluka	nearform1.00		ulUka	
 215231	7-326-a	ulkapAta	ulkapāta	nearform1.00		ulkApAta	
 215232	7-326-a	ullaNGikA	ullaṅghikā	NO-MATCH	C		
-215233	7-326-a	ullaBya	ullabhya	nearform0.80		upalaBya	
+215233	7-326-a	ullaBya	ullabhya	nearform0.80		upAlaBya	
 215238	7-326-a	ulluka	ulluka	nearform0.91		ulUka	
 215242	7-326-a	uSanastArakA	uśanastārakā	NO-MATCH	A		A:ullola;A:uzApariRaya
 215245	7-326-a	uzRagata	uṣṇagata	NO-MATCH	B		B:uzRaga;B:uzRapa
@@ -2626,7 +2626,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215366	7-327-a	ekajyAvargavikala	ekajyāvargavikala	NO-MATCH	A		A:ekacCAyApravizwa
 215367	7-327-a	ekajvAlI	ekajvālī	nearform0.93		ekAvalI	
 215368	7-327-a	ekatantra	ekatantra	stem			
-215371	7-327-a	ekatya	ekatya	nearform0.92		ekAtmya	
+215371	7-327-a	ekatya	ekatya	nearform0.92		ekataya	
 215372	7-327-a	ekatvasidDivAda	ekatvasiddhivāda	NO-MATCH	C		
 215373	7-327-a	ekadIkzin	ekadīkṣin	nearform0.82		ekadIkza	
 215377	7-327-a	ekadvfca	ekadvṛca	nearform0.80		ekadeva	
@@ -2635,11 +2635,11 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215382	7-327-a	ekanATAryaBAgavata	ekanāthāryabhāgavata	NO-MATCH	C		
 215383	7-327-a	ekanArASaMsa	ekanārāśaṃsa	NO-MATCH	A		A:ekaniBa
 215387	7-327-b	ekaparvan	ekaparvan	NO-MATCH	A		A:ekapadam;B:ekapaSuka
-215389	7-327-b	ekapAka	ekapāka	nearform0.86		ekapAda	
+215389	7-327-b	ekapAka	ekapāka	nearform0.86		ekapARa	
 215393	7-327-b	ekapuzkara	ekapuṣkara	nearform0.90		ekapuzkala	
 215395	7-327-b	ekaberapratizWAviDi	ekaberapratiṣṭhāvidhi	NO-MATCH	B		B:ekapuzkala;B:ekaBAga
 215397	7-327-b	ekaBUyaMs	ekabhūyaṃs	nearform0.94		ekaBUyas	
-215398	7-327-b	ekamAlA	ekamālā	nearform0.86		ekamUla	
+215398	7-327-b	ekamAlA	ekamālā	nearform0.86		ekaSAlA	
 215399	7-327-b	ekamAsa	ekamāsa	nearform0.86		ekavAsa	
 215402	7-327-b	ekaraSmi	ekaraśmi	nearform0.93		ekarASi	
 215404	7-327-b	ekavara	ekavara	nearform0.93		ekavarRa	
@@ -2676,7 +2676,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215458	7-327-c	ekAdaSImAhAtmya	ekādaśīmāhātmya	NO-MATCH	B		B:ekAnta
 215460	7-327-d	ekAntI	ekāntī	stem			
 215461	7-327-d	ekABiBAva	ekābhibhāva	NO-MATCH	A		A:ekAyanIBAva
-215463	7-327-d	ekArkamaRi	ekārkamaṇi	nearform0.80		ekAgramati	
+215463	7-327-d	ekArkamaRi	ekārkamaṇi	nearform0.80		eRANkamaRi	
 215465	7-327-d	ekAvacAraka	ekāvacāraka	NO-MATCH	A		A:ekArzeya
 215466	7-327-d	ekASIticakrodDAra	ekāśīticakroddhāra	NO-MATCH	C		
 215467	7-327-d	ekAzwakAdIkzin	ekāṣṭakādīkṣin	NO-MATCH	B		B:ekAsanika
@@ -2711,7 +2711,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215523	7-328-a	EcCantika	aicchantika	NO-MATCH	B		B:Ekzavya;B:EqAdaDa
 215526	7-328-a	EndriyAvata	aindriyāvata	NO-MATCH	B		B:Enasa
 215527	7-328-b	EraRqa	airaṇḍa	NO-MATCH	B		B:ErAvataka
-215529	7-328-b	ErAvant	airāvant	nearform0.86		ErAvata	
+215529	7-328-b	ErAvant	airāvant	nearform0.86		ErAvatI	
 215535	7-328-b	EhipaSyika	aihipaśyika	NO-MATCH	B		B:EzAvIra
 215536	7-328-b	EhilOkika	aihilaukika	nearform0.89		EhalOkika	
 215539	7-328-b	oGI	oghī	stem			
@@ -2737,7 +2737,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215606	7-328-d	kakruca	kakruca	nearform0.92		kakuca	
 215608	7-328-d	kakzimAlikopanizad	kakṣimālikopaniṣad	NO-MATCH	B		B:kakvala
 215609	7-328-d	kakzIvant	kakṣīvant	nearform0.94		kakzIvat	
-215611	7-328-d	kakzyamAlA	kakṣyamālā	nearform0.80		kukzyAmaya	
+215611	7-328-d	kakzyamAlA	kakṣyamālā	nearform0.80		kAzWamalla	
 215615	7-328-d	kaNkapfzWin	kaṅkapṛṣṭhin	nearform0.95		kaNkapfzWI	
 215616	7-328-d	kaNkamaya	kaṅkamaya	NO-MATCH	A		A:kaNkavAjita
 215622	7-328-d	kacavara	kacavara	nearform0.88		kOcavAra	
@@ -2783,7 +2783,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215728	7-329-c	kapiSIrzaka	kapiśīrṣaka	nearform0.91		kawiSIrzaka	
 215729	7-329-c	kapInfpa	kapīnṛpa	NO-MATCH	B		B:kapfT
 215731	7-329-c	kapolamUla	kapolamūla	NO-MATCH	B		B:kapfT;B:kaPagulma
-215738	7-329-c	kamalavallI	kamalavallī	nearform0.86		kamalavatI	
+215738	7-329-c	kamalavallI	kamalavallī	nearform0.86		kalpavallI	
 215739	7-329-d	kamalIy	kamalīy	nearform0.92		kAmalI	
 215740	7-329-d	kamera	kamera	nearform0.92		krameRa	
 215743	7-329-d	kambaladAya	kambaladāya	nearform0.87		kambalavAhya	
@@ -2806,7 +2806,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215802	7-330-a	karRavedin	karṇavedin	nearform0.95		karuRavedin	
 215803	7-330-a	karRasuvarRa	karṇasuvarṇa	nearform0.80		kzudrasuvarRa	
 215805	7-330-a	karRAy	karṇāy	nearform0.91		kArRa	
-215806	7-330-a	karRikAy	karṇikāy	nearform0.93		karRika	
+215806	7-330-a	karRikAy	karṇikāy	nearform0.93		karRikA	
 215811	7-330-b	karpUraprakarakaTA	karpūraprakarakathā	NO-MATCH	B		B:karpUraka;B:karbara
 215813	7-330-b	karmakaRwaka	karmakaṇṭaka	nearform0.96		karakaRwaka	
 215814	7-330-b	karmakarItva	karmakarītva	NO-MATCH	A		A:karmakoSa
@@ -2827,10 +2827,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215856	7-330-c	kalaSapota	kalaśapota	nearform0.84		kalpaSata	
 215857	7-330-c	kalaSodaDi	kalaśodadhi	NO-MATCH	B		B:kalaha
 215859	7-330-c	kalahakaRwaka	kalahakaṇṭaka	NO-MATCH	B		B:kalaha;B:kalahakArin
-215866	7-330-c	kalAma	kalāma	nearform1.00		kalama	
+215866	7-330-c	kalAma	kalāma	nearform1.00		kAlAma	
 215867	7-330-c	kalAmuhUrtAdimaya	kalāmuhūrtādimaya	NO-MATCH	C		
 215868	7-330-c	kalAvatIkAmarUpa	kalāvatīkāmarūpa	NO-MATCH	B		B:kali
-215872	7-330-d	kalirAja	kalirāja	nearform0.88		kASirAja	
+215872	7-330-d	kalirAja	kalirāja	nearform0.88		kavirAja	
 215873	7-330-d	kalivatsala	kalivatsala	NO-MATCH	C		
 215874	7-330-d	kaliviqambana	kaliviḍambana	NO-MATCH	C		
 215875	7-330-d	kaluzay	kaluṣay	stem			
@@ -2856,7 +2856,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215916	7-331-a	kavikarRapASa	kavikarṇapāśa	nearform0.85		kavikarRapUra	
 215917	7-331-a	kavy	kavy	stem			
 215921	7-331-a	kaSambakajAta	kaśambakajāta	NO-MATCH	B		B:kaSa;B:kaSyapottarasaMhitA
-215924	7-331-a	kazAyay	kaṣāyay	nearform0.92		kazAyA	
+215924	7-331-a	kazAyay	kaṣāyay	nearform0.92		kazAya	
 215925	7-331-a	kazwakazwa	kaṣṭakaṣṭa	nearform0.84		kazwakara	
 215927	7-331-a	kahra	kahra	nearform0.89		kara	
 215933	7-331-a	kAkanIla	kākanīla	stem			
@@ -2864,15 +2864,15 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 215940	7-331-b	kAcakAcya	kācakācya	nearform0.82		krAkacya	
 215941	7-331-b	kAcapawala	kācapaṭala	NO-MATCH	B		B:kAciGa
 215945	7-331-b	kAjava	kājava	NO-MATCH	A		A:kAjala;B:kAYcanaka
-215947	7-331-b	kAYcanamAlin	kāñcanamālin	nearform0.87		kAcakAmalin	
-215948	7-331-b	kARay	kāṇay	nearform0.89		kaRA	
+215947	7-331-b	kAYcanamAlin	kāñcanamālin	nearform0.87		kAYcanamAlA	
+215948	7-331-b	kARay	kāṇay	nearform0.89		kARa	
 215950	7-331-b	kARAdasaMgraha	kāṇādasaṃgraha	NO-MATCH	A		A:kARAda;A:kARqa
 215953	7-331-b	kARqarika	kāṇḍarika	nearform0.94		kAraRika	
 215954	7-331-b	kARqalavaRa	kāṇḍalavaṇa	nearform0.86		kAcalavaRa	
 215958	7-331-b	kARvopanizad	kāṇvopaniṣad	nearform1.00		kaRvopanizad	
 215959	7-331-b	kAdalI	kādalī	nearform1.00		kadalI	
 215961	7-331-b	kAnanadvIpa	kānanadvīpa	nearform0.82		kalApadvIpa	
-215962	7-331-b	kAnanIy	kānanīy	nearform0.80		kamanIya	
+215962	7-331-b	kAnanIy	kānanīy	nearform0.80		kaTanIya	
 215964	7-331-b	kAntAy	kāntāy	stem			
 215965	7-331-b	kAntAramaRqUka	kāntāramaṇḍūka	NO-MATCH	B		B:kAntAravAsinI
 215967	7-331-b	kAntAlIya	kāntālīya	nearform0.84		kAkatAlIya	
@@ -2897,13 +2897,13 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216006	7-331-c	kAravAlika	kāravālika	nearform1.00		karavAlikA	
 216008	7-331-c	kArAkAra	kārākāra	nearform1.00		kArakara	
 216010	7-331-d	kArAdDotriyA	kārāddhotriyā	NO-MATCH	A		A:kArAdvIpa;A:kArApaka
-216013	7-331-d	kAritra	kāritra	nearform0.92		kAritA	
+216013	7-331-d	kAritra	kāritra	nearform0.92		kArita	
 216018	7-331-d	kArRAwa	kārṇāṭa	nearform1.00		karRAwa	
 216019	7-331-d	kArtavIryArjuna	kārtavīryārjuna	NO-MATCH	C		
 216020	7-331-d	kArtasvaramaya	kārtasvaramaya	NO-MATCH	C		
 216021	7-331-d	kArttikAtyayika	kārttikātyayika	NO-MATCH	A		A:kArpAsika
 216023	7-331-d	kArmanAmika	kārmanāmika	nearform0.86		karmanAman	
-216026	7-331-d	kArmuta	kārmuta	nearform0.86		karmatA	
+216026	7-331-d	kArmuta	kārmuta	nearform0.86		kArmuka	
 216041	7-332-a	kAladIpikA	kāladīpikā	nearform0.90		kuladIpikA	
 216042	7-332-a	kAlanirmARayoDin	kālanirmāṇayodhin	NO-MATCH	B		B:kAlanemipurARa
 216045	7-332-a	kAlaparyAyaDarman	kālaparyāyadharman	NO-MATCH	B		B:kAlapakva
@@ -2912,7 +2912,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216050	7-332-a	kAlayApanA	kālayāpanā	stem			
 216053	7-332-a	kAlavaYcana	kālavañcana	NO-MATCH	B		B:kAlayoga;B:kAlavAla
 216055	7-332-a	kAlaviDAnapadDati	kālavidhānapaddhati	NO-MATCH	B		B:kAlavAla
-216056	7-332-a	kAlavin	kālavin	nearform0.86		kalApin	
+216056	7-332-a	kAlavin	kālavin	nearform0.86		kAlavid	
 216058	7-332-a	kAlasaptatikA	kālasaptatikā	NO-MATCH	B		B:kAlaSeya
 216059	7-332-a	kAlasamApAdanIya	kālasamāpādanīya	NO-MATCH	B		B:kAlasAra
 216062	7-332-a	kAlahariRa	kālahariṇa	nearform0.86		kalahapriyA	
@@ -2965,7 +2965,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216150	7-332-d	kugaRa	kugaṇa	NO-MATCH	A		A:kukzimatI
 216151	7-332-d	kuguru	kuguru	NO-MATCH	B		B:kuc
 216153	7-332-d	kucapawwikA	kucapaṭṭikā	NO-MATCH	B		B:kuc
-216154	7-332-d	kucasTalI	kucasthalī	nearform0.89		kAcasTAlI	
+216154	7-332-d	kucasTalI	kucasthalī	nearform0.89		kuSasTalI	
 216155	7-332-d	kucelavftta	kucelavṛtta	NO-MATCH	B		B:kuYjarI
 216158	7-332-d	kuwakaRWa	kuṭakaṇṭha	NO-MATCH	B		B:kuw;B:kuwikA
 216160	7-332-d	kuwimaha	kuṭimaha	nearform1.00		kuwImaha	
@@ -2984,9 +2984,9 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216185	7-333-a	kuTahAra	kuthahāra	nearform0.88		kucaharA	
 216186	7-333-a	kudevendra	kudevendra	NO-MATCH	C		
 216187	7-333-a	kudrIcISaPa	kudrīcīśapha	NO-MATCH	C		
-216188	7-333-a	kunaya	kunaya	nearform0.83		kunaka	
+216188	7-333-a	kunaya	kunaya	nearform0.83		kanaya	
 216192	7-333-a	kundaputra	kundaputra	nearform0.80		kanyAputra	
-216194	7-333-a	kupanTan	kupanthan	nearform0.80		kupaTya	
+216194	7-333-a	kupanTan	kupanthan	nearform0.80		kunTana	
 216196	7-333-a	kuberasena	kuberasena	stem			
 216197	7-333-a	kuberI	kuberī	stem			
 216200	7-333-a	kubjottarA	kubjottarā	NO-MATCH	A		A:kubji;B:kuBra
@@ -3014,7 +3014,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216259	7-333-c	kuSalAnAmaya	kuśalānāmaya	nearform0.83		kuSakASamaya	
 216263	7-333-c	kuSeSalocanA	kuśeśalocanā	NO-MATCH	B		B:kuSUla;B:kuz
 216270	7-333-c	kusumabARavilAsa	kusumabāṇavilāsa	NO-MATCH	B		B:kusumanagara
-216271	7-333-c	kusumamAsa	kusumamāsa	nearform0.90		kusumamaya	
+216271	7-333-c	kusumamAsa	kusumamāsa	nearform0.90		kusumamAlA	
 216272	7-333-c	kusumay	kusumay	stem			
 216282	7-333-c	kUcimArasaMhitA	kūcimārasaṃhitā	NO-MATCH	B		B:kuhU;B:kUwa
 216284	7-333-c	kUwadevin	kūṭadevin	NO-MATCH	B		B:kUwa;B:kUwavyavahArin
@@ -3024,11 +3024,11 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216290	7-333-d	kUwAGawita	kūṭāghaṭita	nearform0.86		kAzWaGawita	
 216297	7-333-d	kUpAdijalasTAnalakzaRa	kūpādijalasthānalakṣaṇa	NO-MATCH	B		B:kUpa;B:kUyava
 216299	7-333-d	kUreSavijaya	kūreśavijaya	NO-MATCH	B		B:kUyava
-216300	7-333-d	kUrparaka	kūrparaka	nearform0.89		kUrpAsaka	
+216300	7-333-d	kUrparaka	kūrparaka	nearform0.89		karparaka	
 216302	7-333-d	kUrmaputrakaTA	kūrmaputrakathā	nearform0.81		kumArIputraka	
 216304	7-333-d	kUzmARqadIkzAnukramaRikA	kūṣmāṇḍadīkṣānukramaṇikā	NO-MATCH	A		B:kUlaka;A:kfcCradvitIya
 216306	7-333-d	kfcCravyavAya	kṛcchravyavāya	NO-MATCH	A		A:kfcCradvitIya;B:kfcCrasADya
-216310	7-333-d	kftaDAra	kṛtadhāra	nearform1.00		kftAdara	
+216310	7-333-d	kftaDAra	kṛtadhāra	nearform1.00		kftadAra	
 216316	7-333-d	kftayugAy	kṛtayugāy	stem			
 216320	7-333-d	kftasaMpuwa	kṛtasaṃpuṭa	nearform1.00		kftasampuwa	
 216322	7-334-a	kftAntAy	kṛtāntāy	nearform0.93		kftAntA	
@@ -3054,7 +3054,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216392	7-334-c	keralacintAmaRi	keralacintāmaṇi	nearform0.90		kalpacintAmaRi	
 216394	7-334-c	keralIyadvAdaSaBAva	keralīyadvādaśabhāva	NO-MATCH	A		B:keralikA;A:kerA
 216399	7-334-c	kevalAnvayikevalavyatirekagranTa	kevalānvayikevalavyatirekagrantha	NO-MATCH	B		B:kevalAtman;B:kevalin
-216403	7-334-c	keSavasenA	keśavasenā	nearform0.80		keSavAvAsa	
+216403	7-334-c	keSavasenA	keśavasenā	nearform0.80		keSavadAsa	
 216411	7-334-c	kesarikA	kesarikā	nearform1.00		keSarikA	
 216414	7-334-c	kEwasa	kaiṭasa	nearform0.83		kEkasa	
 216419	7-334-c	kEravakorakIy	kairavakorakīy	stem			
@@ -3071,7 +3071,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216454	7-334-d	kozWI	koṣṭhī	stem			
 216458	7-335-a	kORqapAyin	kauṇḍapāyin	stem			
 216461	7-335-a	kOtUhalajAta	kautūhalajāta	NO-MATCH	A		A:kOtuka;B:kOddAla
-216463	7-335-a	kODuma	kaudhuma	nearform0.83		kOsuma	
+216463	7-335-a	kODuma	kaudhuma	nearform0.83		kOTuma	
 216464	7-335-a	kOnAla	kaunāla	nearform0.92		kOntala	
 216470	7-335-a	kOrpa	kaurpa	stem			
 216476	7-335-a	kOSikapurARa	kauśikapurāṇa	nearform0.87		kOSikAraRya	
@@ -3098,7 +3098,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 216596	7-336-a	kzudraDamanI	kṣudradhamanī	nearform0.83		kzudrakarman	
 216602	7-336-a	kzetranirmARaniDi	kṣetranirmāṇanidhi	NO-MATCH	A		A:kzetraja;B:kzetrapa
 216606	7-336-a	kzetrAnukramaRI	kṣetrānukramaṇī	NO-MATCH	A		A:kzetrasADas;B:kzetriya
-216610	7-336-a	kzemaRIya	kṣemaṇīya	nearform0.89		kzepaRIya	
+216610	7-336-a	kzemaRIya	kṣemaṇīya	nearform0.89		kzamaRIya	
 216619	7-336-b	kzmApavitra	kṣmāpavitra	nearform0.95		kzApavitra	
 216625	7-336-b	KaYjAhva	khañjāhva	NO-MATCH	B		B:KaYja;B:KawakA
 216628	7-336-b	KawuNka	khaṭuṅka	NO-MATCH	B		B:Kawu;B:KawvA
@@ -3269,7 +3269,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 217228	7-341-a	carakasaMdeSa	carakasaṃdeśa	NO-MATCH	A		B:car;A:caraRaka
 217237	7-341-a	caramaSlokacandrikA	caramaślokacandrikā	NO-MATCH	B		B:caramavayas;B:carAcaraguru
 217239	7-341-a	caritaguRa	caritaguṇa	NO-MATCH	B		B:carAcaraguru;B:caritapUrva
-217249	7-341-a	caryApAda	caryāpāda	nearform0.89		carcApada	
+217249	7-341-a	caryApAda	caryāpāda	nearform0.89		cakrapAda	
 217251	7-341-a	calAkzara	calākṣara	NO-MATCH	B		B:carvaRa;B:calitasTAna
 217253	7-341-a	calitendriya	calitendriya	NO-MATCH	B		B:calitasTAna;B:cazaka
 217259	7-341-a	cAkzuzIyanItiSAstra	cākṣuṣīyanītiśāstra	NO-MATCH	B		B:cAkzuza
@@ -3294,10 +3294,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 217362	7-341-d	cUlha	cūlha	nearform0.89		cUla	
 217364	7-342-a	ceNgi	ceṅgi	NO-MATCH	B		B:cUz
 217365	7-342-a	cetaHparyAyajYAna	cetaḥparyāyajñāna	NO-MATCH	C		
-217366	7-342-a	cetanAy	cetanāy	nearform0.92		cetana	
+217366	7-342-a	cetanAy	cetanāy	nearform0.92		cetanA	
 217370	7-342-a	cezwi	ceṣṭi	stem			
 217371	7-342-a	cEkkasa	caikkasa	NO-MATCH	C		
-217372	7-342-a	cEtanaka	caitanaka	nearform0.80		cEtyaka	
+217372	7-342-a	cEtanaka	caitanaka	nearform0.80		cEtanya	
 217373	7-342-a	cEtradaRqika	caitradaṇḍika	nearform0.83		citradaRqaka	
 217379	7-342-a	corapaYcASat	corapañcāśat	NO-MATCH	B		B:codana;B:colaka
 217381	7-342-a	colacarita	colacarita	NO-MATCH	B		B:colaka;B:colapawwaka
@@ -3330,7 +3330,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 217448	7-342-c	jawilay	jaṭilay	stem			
 217449	7-342-c	jawiSilAmAhAtmya	jaṭiśilāmāhātmya	NO-MATCH	B		B:jaWarajvalana
 217458	7-342-d	janapadakalyARa	janapadakalyāṇa	NO-MATCH	B		B:jananATa;B:janapadaGAtaka
-217465	7-342-d	janimant	janimant	nearform0.93		janimat	
+217465	7-342-d	janimant	janimant	nearform0.93		janiman	
 217470	7-342-d	janmagaha	janmagaha	nearform0.89		janmagfha	
 217472	7-342-d	janmatapovidyAcAravarRASramavant	janmatapovidyācāravarṇāśramavant	NO-MATCH	B		B:janmacitraka;B:janman
 217477	7-342-d	janmavarzAdiPala	janmavarṣādiphala	NO-MATCH	B		B:janmabanDa;B:janya
@@ -3342,17 +3342,17 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 217495	7-343-a	jayavant	jayavant	nearform0.93		jayavat	
 217513	7-343-a	jalaruhekzaRA	jalaruhekṣaṇā	stem			
 217520	7-343-a	jalodanapaYcaka	jalodanapañcaka	NO-MATCH	B		B:jalAmatra
-217521	7-343-a	jalpAkay	jalpākay	nearform0.93		jalpaka	
+217521	7-343-a	jalpAkay	jalpākay	nearform0.93		jalpAka	
 217523	7-343-b	javanaprajYa	javanaprajña	NO-MATCH	B		B:jau;B:javita
 217529	7-343-b	jANgalIka	jāṅgalīka	nearform1.00		jANgalika	
 217531	7-343-b	jAqyavant	jāḍyavant	NO-MATCH	B		B:jAqAyana;B:jAtaka
 217539	7-343-b	jAtiKaRqana	jātikhaṇḍana	NO-MATCH	A		A:jAtavedas;A:jAtyantarIyaka
-217543	7-343-b	jAnana	jānana	nearform1.00		janana	
+217543	7-343-b	jAnana	jānana	nearform1.00		jAnAna	
 217551	7-343-b	jAyAMpatika	jāyāṃpatika	nearform1.00		jAyAmpatika	
 217556	7-343-c	jAlImAMsa	jālīmāṃsa	NO-MATCH	B		B:jAlin
 217557	7-343-c	jAva	jāva	stem			
 217558	7-343-c	jAvita	jāvita	nearform1.00		javita	
-217562	7-343-c	jijYAsTi	jijñāsthi	nearform0.80		jijYAsu	
+217562	7-343-c	jijYAsTi	jijñāsthi	nearform0.80		jijYAsA	
 217567	7-343-c	jihIrizu	jihīriṣu	nearform0.93		jihIrzu	
 217569	7-343-c	jihvAniScAraka	jihvāniścāraka	NO-MATCH	A		A:jihmakArin
 217570	7-343-c	jihvAsPowakam	jihvāsphoṭakam	NO-MATCH	B		B:jIrvi
@@ -3380,7 +3380,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 217679	7-344-c	taqilleKAy	taḍillekhāy	nearform0.95		taqilleKA	
 217695	7-344-c	taTAkArin	tathākārin	nearform0.94		tatkArin	
 217696	7-344-c	taTAgatacintyaguhyanirdeSa	tathāgatacintyaguhyanirdeśa	NO-MATCH	B		B:taTAtA
-217717	7-344-d	tanitar	tanitar	nearform0.80		tandritA	
+217717	7-344-d	tanitar	tanitar	nearform0.80		tandrita	
 217722	7-344-d	tanUkartar	tanūkartar	nearform0.90		tanUkaraRa	
 217727	7-344-d	tantumant	tantumant	nearform0.94		tantumat	
 217728	7-344-d	tantrapati	tantrapati	NO-MATCH	B		B:tantrAvApa
@@ -3406,7 +3406,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 217832	7-345-d	timitimiMgala	timitimiṃgala	nearform0.92		timitimiMgila	
 217849	7-345-d	tilakocavaka	tilakocavaka	NO-MATCH	B		B:tilakAvala;B:tilaDenu
 217856	7-345-d	tITenAvA	tīthenāvā	NO-MATCH	B		B:tIkzRalavaRa;B:tIm
-217858	7-345-d	tIyikA	tīyikā	nearform0.83		toyikA	
+217858	7-345-d	tIyikA	tīyikā	nearform0.83		tIrikA	
 217862	7-346-a	tIrTikAvakrAntaka	tīrthikāvakrāntaka	NO-MATCH	B		B:tIrTa
 217863	7-346-a	tIrTodgAraprakIrRaka	tīrthodgāraprakīrṇaka	NO-MATCH	B		B:tuNganATa
 217866	7-346-a	tuRava	tuṇava	NO-MATCH	B		B:tuj;B:tuRqicela
@@ -3451,7 +3451,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218135	7-348-a	dAsIka	dāsīka	stem			
 218141	7-348-a	digvilokita	digvilokita	nearform0.82		digvilokana	
 218143	7-348-a	diNnAda	diṅnāda	nearform0.86		diNnATa	
-218145	7-348-a	diRqika	diṇḍika	nearform0.86		daRqika	
+218145	7-348-a	diRqika	diṇḍika	nearform0.86		dARqika	
 218157	7-348-b	divyavarzasahasraka	divyavarṣasahasraka	NO-MATCH	B		B:divyatA;B:diS
 218163	7-348-b	dIkzitadaRqa	dīkṣitadaṇḍa	NO-MATCH	B		B:dIkz
 218164	7-348-b	dIkzitayAjYika	dīkṣitayājñika	NO-MATCH	C		
@@ -3471,7 +3471,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218248	7-349-a	dUzay	dūṣay	stem			
 218254	7-349-a	dfQikA	dṛḍhikā	nearform0.83		dAQikA	
 218258	7-349-a	dfSvarI	dṛśvarī	NO-MATCH	A		A:dfSIku
-218259	7-349-a	dfzant	dṛṣant	nearform0.91		dfzat	
+218259	7-349-a	dfzant	dṛṣant	nearform0.91		dfzan	
 218265	7-349-a	dfzwAntavant	dṛṣṭāntavant	nearform0.96		dfzwAntavat	
 218269	7-349-a	dfzwipanTan	dṛṣṭipanthan	nearform0.82		dfzwinipAta	
 218296	7-349-b	devikAhavis	devikāhavis	NO-MATCH	A		B:devaheqana;A:devI
@@ -3522,7 +3522,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218542	7-351-b	naktaMBojin	naktaṃbhojin	nearform0.95		naktaBojin	
 218556	7-351-c	nadasy	nadasy	stem			
 218562	7-351-c	nandanaBawwAcArya	nandanabhaṭṭācārya	NO-MATCH	B		B:nandakumAra
-218563	7-351-c	nanditA	nanditā	nearform0.92		nADita	
+218563	7-351-c	nanditA	nanditā	nearform0.92		nAdita	
 218564	7-351-c	nandimitra	nandimitra	nearform0.90		nandamitra	
 218579	7-351-d	nayanAyuDa	nayanāyudha	nearform0.80		naKarAyuDa	
 218581	7-351-d	nayahIna	nayahīna	NO-MATCH	B		B:nayavartman;B:nara
@@ -3544,7 +3544,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218689	7-352-c	nikvARa	nikvāṇa	nearform1.00		nikvaRa	
 218693	7-352-c	nigarhaRIya	nigarhaṇīya	nearform0.82		nirharaRIya	
 218695	7-352-c	nicCuraRa	nicchuraṇa	NO-MATCH	B		B:nicayin
-218696	7-352-c	nijAma	nijāma	nearform0.83		nikAma	
+218696	7-352-c	nijAma	nijāma	nearform0.83		niSAma	
 218710	7-352-d	niDAtar	nidhātar	nearform0.86		niDyAta	
 218719	7-352-d	nipAnI	nipānī	stem			
 218722	7-352-d	niBftI	nibhṛtī	stem			
@@ -3552,7 +3552,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218743	7-353-a	nirudDapakaSa	niruddhapakaśa	nearform0.96		nirudDaprakaSa	
 218748	7-353-a	nirUzmaka	nirūṣmaka	nearform0.89		nirmUzaka	
 218752	7-353-a	nirokAra	nirokāra	nearform0.88		nirAkAra	
-218753	7-353-a	nirodDar	niroddhar	nearform0.80		nirboDa	
+218753	7-353-a	nirodDar	niroddhar	nearform0.80		nirRoda	
 218756	7-353-a	nirgrahasTAna	nirgrahasthāna	nearform0.96		nigrahasTAna	
 218757	7-353-a	nirjalamInAy	nirjalamīnāy	stem			
 218759	7-353-b	nirktara	nirktara	nearform0.88		nirAkAra	
@@ -3574,7 +3574,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218852	7-354-a	nizpramanda	niṣpramanda	nearform0.95		nizpramAda	
 218857	7-354-a	nisamIkzA	nisamīkṣā	NO-MATCH	B		B:niHzyandana
 218858	7-354-a	nistArayitar	nistārayitar	nearform0.87		nistArayitf	
-218865	7-354-a	niHsaraRIya	niḥsaraṇīya	nearform0.91		nirharaRIya	
+218865	7-354-a	niHsaraRIya	niḥsaraṇīya	nearform0.91		nistaraRIya	
 218866	7-354-a	niHsaraDArA	niḥsaradhārā	nearform0.86		niHsADAram	
 218870	7-354-a	nihrAdavant	nihrādavant	nearform0.95		nihrAdavat	
 218873	7-354-b	nIkz	nīkṣ	NO-MATCH	B		B:nihrAdita;B:nIta
@@ -3582,7 +3582,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 218894	7-354-b	nIhArAdri	nīhārādri	nearform0.82		nihrAdin	
 218910	7-354-c	natravAr	natravār	nearform0.88		netravAr	
 218917	7-354-c	nEjAmazAha	naijāmaṣāha	NO-MATCH	B		B:nEcika;B:nEtala
-218921	7-354-c	nEmittaka	naimittaka	nearform0.89		nimittaka	
+218921	7-354-c	nEmittaka	naimittaka	nearform0.89		nEmittika	
 218931	7-354-c	nEvaSEkzASEkza	naivaśaikṣāśaikṣa	NO-MATCH	B		B:nElakaRWi;B:nEvAsika
 218941	7-354-d	nEhArika	naihārika	nearform0.82		nErmARika	
 218943	7-354-d	nOcakrIvant	naucakrīvant	nearform0.95		nOcakrIvat	
@@ -3614,18 +3614,18 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 219088	7-356-a	par	par	stem			
 219103	7-356-b	paraMparaBojana	paraṃparabhojana	nearform1.00		paramparaBojana	
 219109	7-356-b	parAgamana	parāgamana	nearform1.00		pAragamana	
-219110	7-356-b	parAgvadana	parāgvadana	nearform0.91		paryavadAna	
+219110	7-356-b	parAgvadana	parāgvadana	nearform0.91		paryAvadAna	
 219112	7-356-b	parApAtam	parāpātam	nearform0.94		prapAtam	
 219136	7-356-c	parijetar	parijetar	nearform0.82		paretara	
 219143	7-356-c	pariDAnI	paridhānī	stem			
 219144	7-356-c	pariDAsyE	paridhāsyai	nearform0.82		pariDAya	
 219151	7-356-c	paripiRqI	paripiṇḍī	nearform0.84		paripIqita	
-219153	7-356-c	paripUri	paripūri	nearform0.94		paripUrti	
+219153	7-356-c	paripUri	paripūri	nearform0.94		paripUrin	
 219158	7-356-d	pariBakza	paribhakṣa	stem			
-219174	7-356-d	parivfkza	parivṛkṣa	nearform0.89		parivfkta	
+219174	7-356-d	parivfkza	parivṛkṣa	nearform0.89		parivfkRa	
 219180	7-356-d	parivyAkulI	parivyākulī	stem			
 219186	7-356-d	pariSEla	pariśaila	nearform0.82		pariSlaTa	
-219192	7-357-a	parihAyam	parihāyam	nearform0.89		pArihAsya	
+219192	7-357-a	parihAyam	parihāyam	nearform0.89		parihApya	
 219195	7-357-a	parIzaha	parīṣaha	stem			
 219201	7-357-a	paroNhu	paroṅhu	nearform0.92		parohu	
 219203	7-357-a	parj	parj	nearform0.89		pAraj	
@@ -3653,7 +3653,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 219334	7-358-a	piNgARaka	piṅgāṇaka	nearform0.84		piNgalAkza	
 219336	7-358-a	piculikA	piculikā	NO-MATCH	B		B:piNgeSa;B:picColA
 219338	7-358-a	piYjulikA	piñjulikā	NO-MATCH	B		B:picColA;B:piwaka
-219340	7-358-a	piWarikA	piṭharikā	nearform0.88		piWaraka	
+219340	7-358-a	piWarikA	piṭharikā	nearform0.88		pEWarika	
 219342	7-358-b	piRqatakzuka	piṇḍatakṣuka	NO-MATCH	B		B:piRqaka;B:piRqapAtranirhAraka
 219355	7-358-b	pipatizant	pipatiṣant	nearform0.95		pipatizat	
 219360	7-358-b	piSaNgay	piśaṅgay	stem			
@@ -3671,7 +3671,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 219459	7-359-b	puzpAy	puṣpāy	stem			
 219460	7-359-b	puzpy	puṣpy	stem			
 219461	7-359-b	puzyarAga	puṣyarāga	nearform0.89		puzparAga	
-219469	7-359-b	pUtkfta	pūtkṛta	nearform0.80		pitfkfta	
+219469	7-359-b	pUtkfta	pūtkṛta	nearform0.80		pUgakfta	
 219471	7-359-b	pUraRadvitIyA	pūraṇadvitīyā	nearform1.00		purARadvitIyA	
 219472	7-359-b	pUrowi	pūroṭi	nearform1.00		purowi	
 219480	7-359-b	pUrRAmftAMSu	pūrṇāmṛtāṃśu	NO-MATCH	B		B:pUrRaviMSativarza;B:pUrdvAra
@@ -3682,8 +3682,8 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 219527	7-359-d	ponti	ponti	NO-MATCH	C		
 219528	7-359-d	popPala	popphala	nearform0.80		protPala	
 219531	7-359-d	pOsya	pausya	nearform0.91		pOMsya	
-219538	7-359-d	pOroqASIya	pauroḍāśīya	nearform0.90		puroqASIya	
-219542	7-359-d	pyA	pyā	nearform0.86		poyA	
+219538	7-359-d	pOroqASIya	pauroḍāśīya	nearform0.90		pOrodASIya	
+219542	7-359-d	pyA	pyā	nearform0.86		peyA	
 219549	7-360-a	prakzAlayitar	prakṣālayitar	nearform0.88		prakzAlayitf	
 219557	7-360-a	pracalAy	pracalāy	stem			
 219573	7-360-b	praRatAtmavant	praṇatātmavant	nearform0.96		praRatAtmavat	
@@ -3709,7 +3709,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 219713	7-361-c	pratyekarUpa	pratyekarūpa	NO-MATCH	B		B:pratyekanaraka;B:pratyenas
 219718	7-361-c	pradaRqavant	pradaṇḍavant	nearform0.96		pradaRqavat	
 219736	7-361-c	prabADanA	prabādhanā	stem			
-219746	7-361-d	pramAtar	pramātar	nearform0.93		pramata	
+219746	7-361-d	pramAtar	pramātar	nearform0.93		pramATa	
 219758	7-361-d	prayogi	prayogi	stem			
 219759	7-361-d	pralabDar	pralabdhar	nearform0.94		pralabDa	
 219763	7-361-d	pravaRay	pravaṇay	stem			
@@ -3761,7 +3761,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 220121	7-364-d	BalApay	bhalāpay	NO-MATCH	B		B:Bal;B:Balla
 220137	7-365-a	BAgAnuBAga	bhāgānubhāga	NO-MATCH	B		B:BAgapAWa;B:BAgin
 220142	7-365-a	BAkArin	bhākārin	NO-MATCH	B		B:BAgyavEzamya;B:BAjanacArika
-220149	7-365-a	BARqya	bhāṇḍya	nearform0.91		BaRqA	
+220149	7-365-a	BARqya	bhāṇḍya	nearform0.91		BARqa	
 220154	7-365-b	BArgavAy	bhārgavāy	stem			
 220158	7-365-b	BAvaBawa	bhāvabhaṭa	nearform0.94		BAvaBawwa	
 220167	7-365-b	BiRqipAla	bhiṇḍipāla	nearform0.89		BiRqimAla	
@@ -3780,7 +3780,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 220291	7-366-b	maRqUzikA	maṇḍūṣikā	nearform0.94		maqUzikA	
 220292	7-366-b	mataNgasarasa	mataṅgasarasa	nearform0.92		mataMgasarasa	
 220295	7-366-c	matisAgara	matisāgara	NO-MATCH	A		A:matisaciva;B:matkuRa
-220304	7-366-c	madodaka	madodaka	nearform0.94		madodarkA	
+220304	7-366-c	madodaka	madodaka	nearform0.94		mandodaka	
 220305	7-366-c	madguka	madguka	nearform0.92		mAduka	
 220332	7-366-d	mananavant	mananavant	nearform0.95		mananavat	
 220357	7-367-a	mandayitar	mandayitar	nearform0.84		mandatara	
@@ -3821,9 +3821,9 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 220632	7-369-c	yatsatyam	yatsatyam	nearform0.95		yaTAsatyam	
 220635	7-369-c	yaTApi	yathāpi	NO-MATCH	B		B:yaTA;B:yaTAkulam
 220663	7-369-d	yantar	yantar	nearform0.91		yantr	
-220680	7-370-a	yAtaka	yātaka	nearform0.83		yatUkA	
+220680	7-370-a	yAtaka	yātaka	nearform0.83		yAtfka	
 220691	7-370-a	yAvatsaMpAtam	yāvatsaṃpātam	nearform1.00		yAvatsampAtam	
-220694	7-370-a	yAvant	yāvant	nearform0.91		yAvat	
+220694	7-370-a	yAvant	yāvant	nearform0.91		yAvan	
 220709	7-370-b	yogardDirUpavant	yogarddhirūpavant	nearform0.97		yogardDirUpavat	
 220721	7-370-c	rakzApratisara	rakṣāpratisara	nearform1.00		rakzApratiSara	
 220740	7-370-c	ratirAgA	ratirāgā	nearform0.94		rAtrirAga	
@@ -3881,7 +3881,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 221112	7-374-b	vitaTI	vitathī	stem			
 221127	7-374-c	vidyunmaRqalavant	vidyunmaṇḍalavant	nearform0.97		vidyunmaRqalavat	
 221131	7-374-c	viDenAman	vidhenāman	nearform0.84		viDeyAtman	
-221140	7-374-c	vinidrAy	vinidrāy	nearform0.80		viniryA	
+221140	7-374-c	vinidrAy	vinidrāy	nearform0.80		vinindA	
 221151	7-374-d	vinizkraya	viniṣkraya	nearform0.90		vinizkriya	
 221168	7-374-d	vipfzWI	vipṛṣṭhī	NO-MATCH	B		B:vipUyaka;B:viprajana
 221171	7-374-d	vipratisAravant	vipratisāravant	nearform0.97		vipratisAravat	
@@ -3920,10 +3920,10 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 221368	7-377-a	vyasanI	vyasanī	stem			
 221370	7-377-a	vyAkartar	vyākartar	nearform0.89		vyAkaraRa	
 221374	7-377-a	vyAGmAtaka	vyāghmātaka	nearform0.95		vyAGAtaka	
-221383	7-377-a	vyudDAram	vyuddhāram	nearform0.82		vyupAram	
+221383	7-377-a	vyudDAram	vyuddhāram	nearform0.82		vAyudAra	
 221393	7-377-b	SaMsivaMs	śaṃsivaṃs	nearform0.94		SaMsivas	
 221402	7-377-b	SaMkaranftyaraNgadeSa	śaṃkaranṛtyaraṅgadeśa	NO-MATCH	B		B:SaMkara;B:SaNkuDAna
-221412	7-377-b	SatadAna	śatadāna	nearform0.88		SatadalA	
+221412	7-377-b	SatadAna	śatadāna	nearform0.88		SatadAya	
 221421	7-377-c	SateGma	śateghma	nearform0.86		SateDma	
 221426	7-377-c	SabdaprAC	śabdaprāch	nearform0.89		SabdaprAS	
 221433	7-377-c	SaraccandrAy	śaraccandrāy	stem			
@@ -3950,7 +3950,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 221652	7-379-d	sattvavant	sattvavant	nearform0.95		sattvavat	
 221658	7-380-a	sadant	sadant	nearform0.91		sadat	
 221659	7-380-a	sadaMpuzpA	sadaṃpuṣpā	nearform0.95		sadApuzpa	
-221668	7-380-a	madeha	madeha	nearform0.92		mandeha	
+221668	7-380-a	madeha	madeha	nearform0.92		maddeha	
 221670	7-380-a	sadopavAmin	sadopavāmin	nearform0.91		sadopavAsin	
 221675	7-380-b	sant	sant	stem			
 221677	7-380-b	saMdarBavant	saṃdarbhavant	nearform0.96		saMdarBavat	
@@ -3958,7 +3958,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 221682	7-380-b	saMnikASay	saṃnikāśay	nearform0.95		saMnikASa	
 221686	7-380-b	sapatni	sapatni	stem			
 221690	7-380-b	sapfzWI	sapṛṣṭhī	NO-MATCH	B		B:sapfzata;B:saptakfdBavaparama
-221695	7-380-b	saptaSana	saptaśana	nearform0.89		saptaSata	
+221695	7-380-b	saptaSana	saptaśana	nearform0.89		saptaSaPa	
 221701	7-380-c	saPalatA	saphalatā	nearform0.94		saPalatva	
 221714	7-380-c	samanDakArI	samandhakārī	stem			
 221755	7-381-a	samudrakaleKaka	samudrakalekhaka	NO-MATCH	B		B:samudGAta;B:samudrAnta
@@ -3975,7 +3975,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 221769	7-381-b	saMpratigraha	saṃpratigraha	nearform1.00		sampratigraha	
 221770	7-381-b	saMpratiBAsa	saṃpratibhāsa	nearform1.00		sampratiBAsa	
 221771	7-381-b	saMprayuktaka	saṃprayuktaka	nearform1.00		samprayuktaka	
-221772	7-381-b	saMpravAdana	saṃpravādana	nearform1.00		sampravadana	
+221772	7-381-b	saMpravAdana	saṃpravādana	nearform1.00		sampravAdana	
 221773	7-381-b	saMpraharzaRa	saṃpraharṣaṇa	nearform1.00		sampraharzaRa	
 221774	7-381-b	saMprAnta	saṃprānta	nearform1.00		samprAnta	
 221775	7-381-b	saMpriyatA	saṃpriyatā	nearform1.00		sampriyatA	
@@ -3997,7 +3997,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 221821	7-382-a	sarvaroDaviroDasaMpraSamana	sarvarodhavirodhasaṃpraśamana	nearform1.00		sarvaroDaviroDasampraSamana	
 221844	7-382-b	sahaBUmi	sahabhūmi	nearform0.88		sahaBUti	
 221859	7-382-b	sAgarAy	sāgarāy	stem			
-221861	7-382-c	sAMkASikA	sāṃkāśikā	nearform0.89		samAMSika	
+221861	7-382-c	sAMkASikA	sāṃkāśikā	nearform0.89		sAMkArikA	
 221879	7-382-c	sAmaDarmArTanItimant	sāmadharmārthanītimant	nearform0.97		sAmaDarmArTanItimat	
 221915	7-383-a	sudurgraha	sudurgraha	nearform0.84		sudurgama	
 221935	7-383-b	suranirktariRI	suranirktariṇī	nearform0.89		suranirJariRI	
@@ -4043,7 +4043,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 222144	7-385-c	anupadrazwar	anupadraṣṭar	NO-MATCH	B		B:anuniSITam
 222145	7-385-c	anupeyA	anupeyā	stem			
 222146	7-385-c	anuvAha	anuvāha	nearform1.00		anuvaha	
-222153	7-385-c	antarAhuti	antarāhuti	nearform0.84		antyAhuti	
+222153	7-385-c	antarAhuti	antarāhuti	nearform0.84		antarhiti	
 222154	7-385-c	antarukTya	antarukthya	NO-MATCH	B		B:antarDA
 222173	7-385-d	aparasa	aparasa	nearform0.93		aparasad	
 222175	7-385-d	aparus	aparus	nearform0.83		apapru	
@@ -4069,9 +4069,9 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 222246	7-386-c	asaMvasant	asaṃvasant	NO-MATCH	A		A:asijihva
 222258	7-386-c	AtmasaMBAvita	ātmasaṃbhāvita	nearform1.00		AtmasamBAvita	
 222261	7-386-c	Apawaliman	āpaṭaliman	NO-MATCH	A		A:Adi;B:AptakAma
-222265	7-386-c	Amala	āmala	nearform1.00		amalA	
+222265	7-386-c	Amala	āmala	nearform1.00		amala	
 222267	7-386-d	ArAgay	ārāgay	stem			
-222273	7-386-d	Asaritaka	āsaritaka	nearform0.82		asitAkza	
+222273	7-386-d	Asaritaka	āsaritaka	nearform0.82		AstAraka	
 222275	7-386-d	iBavant	ibhavant	NO-MATCH	A		A:AhvAnana;B:irA
 222282	7-386-d	uccitra	uccitra	nearform0.92		uccita	
 222287	7-386-d	utpaTay	utpathay	stem			
@@ -4129,7 +4129,7 @@ pwk_L	pwk_pc	slp1	iast	tier	rank	mw_fuzzy	evidence
 222456	7-388-c	nayanavant	nayanavant	nearform0.95		nayanavat	
 222457	7-388-c	narajANgala	narajāṅgala	nearform1.00		narajaNgala	
 222470	7-388-c	nimnay	nimnay	stem			
-222472	7-388-c	nirnIrita	nirnīrita	nearform0.84		nIranDrita	
+222472	7-388-c	nirnIrita	nirnīrita	nearform0.84		nirnimitta	
 222476	7-388-c	niSvAsAy	niśvāsāy	nearform0.93		niSvAsa	
 222479	7-388-c	nizWIvitA	niṣṭhīvitā	stem			
 222490	7-388-d	patAkAy	patākāy	stem			

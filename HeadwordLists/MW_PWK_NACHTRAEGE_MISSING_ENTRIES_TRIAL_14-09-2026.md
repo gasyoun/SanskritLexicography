@@ -83,6 +83,7 @@ That is direct, measurable support for Andhrabharati's dependency hypothesis —
 
 - [`mw_pwk_nachtraege_missing_entries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_missing_entries.py) — builder (stdlib only, ~49 s).
 - [`mw_pwk_nachtraege_candidates_14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_candidates_14-09-2026.tsv) — 4,151 rows (stem + near-form + absent), columns `pwk_L · pwk_pc · slp1 · iast · tier · rank · mw_fuzzy · evidence`.
+  - **Regenerated 14-09-2026 — `mw_fuzzy` is now deterministic.** The first build picked the near-form among equal difflib scores by set iteration order, so the column changed with `PYTHONHASHSEED` (~396 rows differed between seeds 0 and 1; every other column was stable). `fuzzy_best()` now breaks ties by an explicit rule: highest case-folded ratio, then highest case-sensitive ratio (SLP1 case is phonemic — `Akalita` vs `akalita`, `Agraha` vs `agraha` tie only after folding), then the lexicographically smallest candidate. Seeds 0, 1 and 12345 give byte-identical output. Against the first build, 186 rows change in `mw_fuzzy` only; tiers, ranks, evidence and the 4,151-row count are unchanged. The motivating `kAritra` row now shows `kArita`, the form §4 names (the first build had `kAritA`, same 0.92 score).
 
 ## 6 · Not done here (next steps)
 

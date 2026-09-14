@@ -136,7 +136,7 @@ def main():
 
     # ---- bucket MW for fuzzy ----
     buckets = defaultdict(list)  # (folded first char, length) -> list of MW hw
-    for hw in mw_hw:
+    for hw in sorted(mw_hw):  # sorted: bucket order must not depend on PYTHONHASHSEED
         b = (fold(hw)[0], len(hw))
         buckets[b].append(hw)
 
@@ -148,9 +148,16 @@ def main():
     import difflib
 
     def fuzzy_best(hw):
+        """Best MW near-form for hw by case-folded difflib ratio.
+
+        Tie-break among equal folded ratios (explicit, so the result never depends
+        on set/hash iteration order): higher case-sensitive ratio first — SLP1 case
+        is phonemic (A = ā, a = a), so Akalita/akalita tie only after folding —
+        then the lexicographically smallest candidate.
+        """
         fk = fold(hw)
         b0 = fold(hw)[0]
-        best, bc = 0.0, ""
+        best, bc, bcs = 0.0, "", None  # bcs = case-sensitive ratio of bc, lazily
         cset = set(hw)
         for ln in (len(hw) - 1, len(hw), len(hw) + 1):
             for cand in buckets.get((b0, ln), ()):
@@ -161,7 +168,13 @@ def main():
                     continue
                 r = difflib.SequenceMatcher(None, fk, fold(cand)).ratio()
                 if r > best:
-                    best, bc = r, cand
+                    best, bc, bcs = r, cand, None
+                elif r == best and r > 0.0:
+                    if bcs is None:
+                        bcs = difflib.SequenceMatcher(None, hw, bc).ratio()
+                    cs = difflib.SequenceMatcher(None, hw, cand).ratio()
+                    if cs > bcs or (cs == bcs and cand < bc):
+                        bc, bcs = cand, cs
         return best, bc
 
     rows = []
