@@ -15,7 +15,7 @@ where novel. Raw XLSX stays gitignored (`pwg_ru/eval/`, line 222 of
 precedent and MG's 07-09-2026 yadisk ruling (derived-only landing).
 
 **Method.** `rclone copy yadisk:Sanskrityatina/09_Palsule --include "*.xls*"` → 39
-files, 212 MB (24-09 listing: 28 xlsx flagged unreviewed in
+files, 219.3 MiB / 229 923 823 bytes (24-09 listing: 28 xlsx flagged unreviewed in
 [YADISK_INVENTORY_07-09-2026](https://github.com/gasyoun/Uprava/blob/main/reports/YADISK_INVENTORY_07-09-2026.md)).
 Each opened read-only (`openpyxl 3.1.5`, `read_only=True`, 3-row probe per sheet);
 no values modified anywhere.

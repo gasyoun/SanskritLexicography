@@ -103,10 +103,24 @@ POLICIES = {
     'production_v3': {'latency_ceil_ms': 80_000, 'api_ceil_ms': 45_000, 'conn_error_ceil': 0,
                       'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
                       'require_schema_valid': True},
+    # ✅ `production_v4` IS A HUMAN RULING — MG 10-09-2026, «подними до 240», on the H4213
+    # evidence: the §6.3 injection/refusal class was gone (attempts #8-#9 content-clean) and
+    # the last wall was pure host slowness — a schema-valid success measured 156 802 ms wall
+    # (api 144 327 + gap 12 475) against the 80 000 ceiling, honest NO-GO ×2 in one evening
+    # on a box sitting at 80-85% commit. Host-degradation accommodation, NOT a route-health
+    # claim: api_ceil_ms is SUBSUMED at the wall number because the healthy-schema route on
+    # this box currently runs ~144 s API — an independent route guard derived from one
+    # reading would be pseudo-derivation (the H2118 standard needs a paired series). The
+    # wall gate stays the only binding probe condition under v4. Revert path: flip
+    # CURRENT_POLICY back to `production_v3` when the box recovers; v3 rows stay frozen and
+    # were genuinely judged at 80 000.
+    'production_v4': {'latency_ceil_ms': 240_000, 'api_ceil_ms': 240_000, 'conn_error_ceil': 0,
+                      'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
+                      'require_schema_valid': True},
 }
 # The policy the live dispatch + receipt gates run under. Importers derive their ceiling from
 # `POLICIES[CURRENT_POLICY]` rather than restating the number, so a future bump is one edit here.
-CURRENT_POLICY = 'production_v3'
+CURRENT_POLICY = 'production_v4'
 
 
 def ceiling_for(policy=CURRENT_POLICY):

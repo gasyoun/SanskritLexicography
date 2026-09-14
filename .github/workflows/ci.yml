@@ -304,6 +304,11 @@ jobs:
           python src/pilot/bounded_staged_run_selftest.py
           python src/pilot/sense_count.py
           python src/pilot/window_selftest.py
+          # H4539: nws_split owner-parse regression — the condensed cross-ref
+          # entry must anchor the owner to the LAST Name:page token.  Self-
+          # contained (the aMSa ground-truth half self-skips without the
+          # gitignored pilot/input fixture).
+          python src/nws_split.py selftest
           python src/store_path.py --selftest
           python src/promote_final_cards.py --selftest
           python src/pilot/translation_memory.py selftest
