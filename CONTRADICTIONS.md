@@ -281,4 +281,21 @@ Blocked (now lifted): FAIR release #2 (Q2 WS2.5 of [ROADMAP_STATISTICS_ORG_CENSU
 > **Source:** [Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Q1_DELIVERY_AND_Q2_ANALYTICAL_LAYER_STATISTICS_CENSUS_01-09-2026.md) §3.1 · [H3793](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3793-Opus_SanskritLexicography_statistics-org-census-q2-analytical-layer_31.08.26.md) · 01-09-2026 · Opus 5 `claude-opus-5[1m]`
 
 
+### §18. MG's «PWK» (Böhtlingk 1879–89) is filed under Cologne code `pwg`, but `pwg` is the 1855–75 Große PW
+
+🟠 ✍️ **Two registry surfaces map the 1879 kürzere Fassung to code `pwg`; the Cologne headers, file sizes, entry counts and Nachträge tags all place it at `pw`.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [YADISK census §2](https://github.com/gasyoun/SanskritLexicography/blob/master/YADISK_05_SANSKRIT_LEXICON_TREES_CENSUS_10-09-2026.md) line 19 + the [H4537 corrigenda note](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_CORRIGENDA_PAIRS_11-09-2026.md) § naming trap | yadisk `1879-PWK` = «Sanskrit-Wörterbuch in kürzerer Fassung, Böhtlingk 1879–1889» = csl-orig **`pwg`** (`pwg.txt` 54.6 MB) | census §2 table, row `1879-PWK`; H4537 report's "Naming trap" paragraph |
+| `csl-orig` headers + file probes, 14-09-2026 | **`pw`** = Böhtlingk, *Sanskrit-Wörterbuch in kürzerer Fassung* (1879–89): 31.5 MB, 170,556 entries, carries the `sup_1`…`sup_7` Nachträge tags, holds `kAritra`/`kArApaka` at `pc 7-331-d`. **`pwg`** = Böhtlingk & Roth, *Sanskrit Wörterbuch* (1855–75): 54.6 MB, 123,366 entries, **no** Nachträge tags, contains **neither** word. The Nachträge also have their own code, **`pwkvn`** (24,976 entries), header «kürzerer Fassung, Nachträge und Verbesserungen». | [`v02/pw/pwheader.xml`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pw), [`v02/pwg/pwgheader.xml`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pwg), [`v02/pwkvn/pwkvnheader.xml`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pwkvn); byte/entry/`sup_*`-tag probes |
+
+Status: 🟡 **open — provisional pick: the headers win (the kürzere Fassung is `pw`).** The census's own line 20 maps the Nachträge *inside the PWK volumes* to `pwkvn`, which is only consistent if the kürzere Fassung is `pw` (the `sup_*` tags live in `pw.txt`, not `pwg.txt`) — so the census is internally inconsistent on this row. Its cited size (54.6 MB) is `pwg.txt`'s real size, so the mislabel is in the identity column, not a measurement. What a human should decide: correct the census §2 row and the H4537 filing note, or document why the mapping stands. Local ruling — no `D##` graduation.
+
+Blocks: every filing derived from the H4537 pairs table and every PWK-side comparison (incl. [H4837](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4837-OxAlpha_SanskritLexicography_mw-missing-pw-nachtrag-adjudication_14.09.26.md)) until the target code is settled; the trial report carries the caveat meanwhile.
+
+> **Source:** [MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md) §1 · probes 14-09-2026 · deepseek-v4-flash (`deepseek/deepseek-v4-flash`)
+
 _Dr. Mārcis Gasūns_
