@@ -1975,7 +1975,10 @@ def _test_h2878_probe_records_the_no_output_progress_reading():
         _lat, cls, obytes = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
                                           call_reservation=MemoryCallLedger(),
                                           detail_out=detail)
-        assert cls == 'timeout', cls          # classification unchanged; only the WHY is new
+        # H4528 (the PR #1837 split): the watchdog's kill is its own class, never folded into
+        # the hard-ceiling 'timeout'. Every consumer of a probe class still reads it as a
+        # non-success STOP / NO-GO, and h963_c4_gate0_probe counts it with the conn-errors.
+        assert cls == 'no_progress_kill', cls
         assert obytes == 0, obytes
         assert detail['killed_reason'] == 'no_output_progress', detail
         assert detail['bytes_seen'] == 0 and detail['quiet_ms'] == 90_004, detail
