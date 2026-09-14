@@ -89,6 +89,14 @@ explicit MG typo call) consolidated from MG's 2013-2014 yadisk fuzzy-correction 
 (derived-only, raw stays on yadisk); a **csl-corrections candidate feed**, not yet filed — note
 the naming trap (MG's "PWK" = Cologne `pwg`, not `pwk`) documented at the top of the report.
 
+**MW missing PWK-Nachträge entries (csl-corrections #119):** [`MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md)
++ [`mw_pwk_nachtraege_candidates_14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_candidates_14-09-2026.tsv) — trial comparing MW against the Böhtlingk
+*kürzere Fassung* Nachträge (`sup_7`): 13,208 Nachträge entries → **1,751 absent from MW** (547 ranked A = an
+annexure-carried alphabetical neighbour, the `kāritra` class), 1,918 near-form review flags; **30 %** of MW's
+annexure headwords are verbatim `sup_7` entries. Builder [`mw_pwk_nachtraege_missing_entries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_missing_entries.py).
+Feeds [H4837](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4837-OxAlpha_SanskritLexicography_mw-missing-pw-nachtrag-adjudication_14.09.26.md) (the wider-scope adjudication unit). ⚠️ the code mapping in the
+paragraph above is contested — the kürzere Fassung is Cologne `pw`, not `pwg`: [CONTRADICTIONS §18](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
+
 **Coverage additions (item B):** [`COVERAGE_ADDITIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) — DCS-corpus
 lemmas absent from all CDSL dicts, ranked by band ([`coverage_additions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/coverage_additions.py)),
 then **cross-tagged** with Catalan/Huet external attestation
