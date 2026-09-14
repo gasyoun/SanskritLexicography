@@ -59,6 +59,10 @@ Sanity checks in-run: `kAritra` in MW = False (expected), `kArApaka` in MW = Tru
 | — rank B (neighbour in MW main) | 800 |
 | — rank C (no neighbour in MW) | 404 |
 
+**Accounting note (14-09-2026, independent recheck + DeepSeek verifier finding):** the four tier rows above sum to **13,129**, not 13,208 — the builder's `len(hw) < 3` guard silently drops **79 short headwords** (`A`, `Am`, `Ap`, `As`, `BI`, `BU`, `DA`, `DU`, `E`, `I`, `Ir`, `Ra`, …) before tiering. Verified by direct count: exactly 79 `sup_7` headwords are shorter than 3 characters. The unfiltered 13,208 is the correct denominator; the tier rows partition 13,129 of it. See [`MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md).
+
+**Denominator reconciliation (why the annexure denominator reads 6,082 / 6,067 / 6,068):** the trial derives the annexure headword as `clean(k2 or k1)` (marker-stripped union) → **6,082**; the independent recheck's `k1`-only verbatim set → **6,067**; its cleaned `k1∪k2` union → **6,068**. The deltas are two different causes: 6,067 → 6,068 is the `k2` inclusion (+1); 6,068 → 6,082 (+14) is the trial's `clean()`/dedup convention. All conventions reproduce the reverse share at **29.6–30 %** — the statistic is convention-robust; the denominator label is not. Cite the numerator/denominator pair together, never the percentage alone. Full conventions table: [`MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md) §0.
+
 **Reverse direction — does the MW99 annexure really draw on the letzte Nachträge?**
 
 - 1,800 of 6,082 MW annexure headwords (30 %) are **verbatim** `sup_7` headwords.
