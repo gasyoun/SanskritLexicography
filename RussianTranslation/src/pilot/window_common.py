@@ -50,7 +50,13 @@ def defer_monster(target, reason, estimate=None, source='perf_preflight', keys=N
     """Append one cap-and-defer row, deduped on (target, reason, UTC day) so a daily
     coordinator sweep can't flood the ledger. Returns the row, or None if deduped.
     Best-effort like failure_capture: a ledger write must never break a claim/prepare."""
-    p = path or DEFERRED_MONSTERS
+    # PWG_DEFERRED_MONSTERS is the ledger-side twin of PWG_INPUT_DIR / PWG_OUTPUT_DIR:
+    # a hermetic harness driving the REAL prepare path (h1339_offline_bench) parks its
+    # synthetic over-ceiling windows in a sandbox ledger, never the tracked one — before
+    # this, every bench run appended dated nominal:ADAna / nominal:ABIra rows here and
+    # H4528 (#2201) committed them by accident. Resolved per call, not at import, so an
+    # in-process caller can redirect it too. Unset (production) resolves as before.
+    p = path or os.environ.get('PWG_DEFERRED_MONSTERS') or DEFERRED_MONSTERS
     today = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
     try:
         if os.path.exists(p):
