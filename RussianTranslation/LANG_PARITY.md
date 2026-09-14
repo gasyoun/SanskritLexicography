@@ -155,7 +155,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H1412",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "c279807c05d001631420c7c213c923a17a5cdce4dd3651a05ff2e3540d35c2aa",
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803",
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
       "src/pilot/window_selftest.py": "e4cc19df0f51daca2408b6666bd0ca0e33dd977aeb020a738c115e57b5272057"
     }
@@ -1144,10 +1144,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note_h1940_h2b": "31-07-2026, OpenAI GPT-5.6 Sol (`openrouter/openai/gpt-5.6-sol`): SHARED re-derived against the H2b diff. resolve_group changes only failure-note precedence when a retry is refused by a typed translate budget; manifest schema, field selection, split/heal/stitch, scheduler dispatch and all paid boundaries are untouched. The same HeadlessEngine path serves RU and EN with no language branch. The added two-attempt selftest drives the shared manifest fixture and proves the previous clobber.",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "c279807c05d001631420c7c213c923a17a5cdce4dd3651a05ff2e3540d35c2aa",
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803",
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/max_account_orchestrator.py": "370b2fed775fd7e0f1ade007e5728938d555dfea9676a2b2daf2bde763c5d91c",
       "src/pilot/coordinator.py": "e1cf7262a45a5a35f9d6f8fd01fced069ef81cc043d008b1b185d8de800a21e6",
-      "src/pilot/headless_worker_selftest.py": "b44e22faeabc754daa7aafa4c86a67706b4796e37846a8803eb04f739707e9f5",
+      "src/pilot/headless_worker_selftest.py": "d582134766bd6c1d3472dc49506ca6c7e5434da048063323f6fa189deb9a4ea4",
       "src/pilot/max_account_orchestrator_selftest.py": "e56dea67300e2af108c1308e48c1c828dbca6b472e716e69d117c44bc65f3b29",
       "src/pilot/no_pwg_scale_plan.py": "152a3b12d7b64b750e2621d9e5f43f175df6c05205695efa200413d9d4210e52",
       "src/pilot/windows100_selftest.py": "11c19bdeb665507cc2d40311c5b1da577412c534986fd8e98172231a99c85dea",
@@ -1603,7 +1603,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
       "src/promote_final_cards.py": "d8b50c2780fbd13a0997ce54280fd1bbedce600cd7cb6e983af9d485d82b358d",
       "src/pilot/translation_memory.py": "a1d7f99e7050e2bb5b258d347aacc99861698882312e517a1b2cf203ce123296",
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803",
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/gen_opt_harness2.py": "c279807c05d001631420c7c213c923a17a5cdce4dd3651a05ff2e3540d35c2aa"
     }
   },
@@ -1681,7 +1681,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "c279807c05d001631420c7c213c923a17a5cdce4dd3651a05ff2e3540d35c2aa",
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803"
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d"
     }
   },
   {
@@ -1966,7 +1966,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H3675",
     "verified_sha256": {
       "src/target_anchor.py": "2ff1b8e892e2533cbfbf71cda2c6bfdbec65448f635df79b821bd9a3a7fdb54c",
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803",
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/gen_opt_harness2.py": "c279807c05d001631420c7c213c923a17a5cdce4dd3651a05ff2e3540d35c2aa"
     }
   },
@@ -1988,7 +1988,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H858",
     "verified_sha256": {
       "src/german_anchor.py": "751a6bf9c1cf9bc6201397d28f429cd02c680f668c1b2340be8ca55f54e8a276",
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803",
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/gen_opt_harness2.py": "c279807c05d001631420c7c213c923a17a5cdce4dd3651a05ff2e3540d35c2aa",
       "src/promote_final_cards.py": "d8b50c2780fbd13a0997ce54280fd1bbedce600cd7cb6e983af9d485d82b358d"
     }
@@ -2392,9 +2392,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H4528 (14-09-2026, Opus 5 `claude-opus-5`). The watchdog acts on the CLI child process, below the language layer: the spawn argv, the progress window, the content-line filter (`cli_stream.is_progress_line` reads NDJSON `type` only) and the kill classification are identical for a Russian and an English window, and the manifest target-language field is never consulted. `no_progress_kill` joins `INFRA_FAILURE_REASONS`, so the audit's transient-vs-defect split treats it like `timeout` on both languages. Tests: headless_worker_selftest test_h4528_* (six), window_selftest test_h4528_no_progress_kill_is_infra_not_a_content_defect.",
+    "note": "H4528 (14-09-2026, Opus 5 `claude-opus-5`). The watchdog acts on the CLI child process, below the language layer: the spawn argv, the progress window, the content-line filter (`cli_stream.is_progress_line` reads NDJSON `type` only) and the kill classification are identical for a Russian and an English window, and the manifest target-language field is never consulted. `no_progress_kill` joins `INFRA_FAILURE_REASONS`, so the audit's transient-vs-defect split treats it like `timeout` on both languages. Tests: headless_worker_selftest test_h4528_* (six), window_selftest test_h4528_no_progress_kill_is_infra_not_a_content_defect. H4528 (14-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is the no-output-progress watchdog wiring only -- an opt-in token-streaming spawn shape (`execution.cli_token_stream`, default OFF), a content-line progress filter, the `no_progress_kill` kill class and its telemetry. No language branch is added and no target-language field is read; RU and EN spawns take the identical argv and kill path.",
     "verified_sha256": {
-      "src/pilot/headless_worker.py": "ec31703d3b8b6c3574ba107ef7eee288fb94bd85ba558e0b11c32e3587e39803",
+      "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/proc_tree.py": "be7d39e8f7c177da8d6a33984b9c0b3604d2f1f3a07a9733195e0f79fc327001",
       "src/pilot/execution_contract.py": "d4f100d7b1eda6facf3513abb67731162a796396517689a24719337c607633a5",
       "src/pilot/cli_stream.py": "12c3da90aa95bb3806181f3b073fe1c804eff4dfcd5da827e13943f524b7b4d8",

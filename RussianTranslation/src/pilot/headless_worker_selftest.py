@@ -2489,7 +2489,7 @@ def test_h2878_emitting_spawn_survives_the_production_window():
           '(longest silence %d ms)' % (reading['elapsed_ms'], reading['quiet_ms']))
 
 
-# --- H4528 (issue #1144): the watchdog ARMED on the token stream -----------------------------
+# --- H4528 (corpus record: PR #1144): the watchdog ARMED on the token stream -----------------------------
 #
 # Two children stand in for the two shapes the forensics separated. One prints only the CLI's
 # own `system/api_retry` lines -- what a quota-refused spawn looks like on the token stream --

@@ -91,7 +91,7 @@ DEFAULT_TIMEOUT_S = HARD_TIMEOUT_MS // 1000
 # of a bet. Arming a 90 s stalled-output window against a buffered format would kill healthy
 # spawns wholesale (measured healthy range 49 404-511 908 ms, p50 189 327).
 #
-# H4528 (issue #1144): the window can now be ARMED, per manifest, by spawning on the CLI's
+# H4528 (corpus record: PR #1144): the window can now be ARMED, per manifest, by spawning on the CLI's
 # token-streaming format (`execution_contract.TOKEN_STREAM_OUTPUT_ARGS`). The window is then
 # derived from that argv -- never pinned -- and progress is counted only on CONTENT lines
 # (`cli_stream.is_progress_line`), so the CLI's own `system/api_retry` chatter during a quota
@@ -384,7 +384,7 @@ def resolve_safe_mode(manifest, claude_bin='claude'):
     return True
 
 
-# H4528 (issue #1144): token streaming -- the switch that ARMS the H2878 no-output-progress
+# H4528 (corpus record: PR #1144): token streaming -- the switch that ARMS the H2878 no-output-progress
 # watchdog on generation spawns. Same shape as safe mode on purpose: a cached `--help` probe
 # that fails safe, and a manifest tri-state that travels with the run receipt.
 _token_stream_support = {}

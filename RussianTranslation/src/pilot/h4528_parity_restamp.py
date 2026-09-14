@@ -3,7 +3,7 @@
 """h4528_parity_restamp.py — the H4528 LANG_PARITY re-derivation receipt (same class as
 h2254_/h2504_/h4438_parity_restamp.py).
 
-H4528 (issue #1144) armed the H2878 no-output-progress watchdog on the headless worker's
+H4528 armed the H2878 no-output-progress watchdog on the headless worker's
 token-streaming spawn and split its kill into `no_progress_kill`. Every touched file is
 language-agnostic spawn / kill / classification plumbing, so every ledger entry that tracks
 one of them keeps its SHARED verdict. This driver:
