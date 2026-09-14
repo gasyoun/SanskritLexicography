@@ -99,6 +99,17 @@ annexure headwords are verbatim `sup_7` entries. Builder [`mw_pwk_nachtraege_mis
 Feeds [H4837](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4837-OxAlpha_SanskritLexicography_mw-missing-pw-nachtrag-adjudication_14.09.26.md) (the wider-scope adjudication unit). ⚠️ the code mapping in the
 paragraph above is contested — the kürzere Fassung is Cologne `pw`, not `pwg`: [CONTRADICTIONS §18](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
 
+**H4837 adjudication — the frozen MW-missing list + verdict workbook (OxAlpha/GLM, 14-09-2026):**
+[`MW-missing-PW-Nachtrag-candidates-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.md)
++ [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.tsv) — starred-k2 Nachträge headwords absent from MW99:
+**3,353** unique (tiers by cross-dict corroboration A 889 / B 1,335 / C 1,129; **273 cite MAHĀVY** — matches the mint's derived stat exactly; MW cleaned union 194,283; `kāritra` canary reproduced). Adjudication:
+[`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv) (2,743 confirmed-missing, 610 variant-form-in-MW, DCS lemma/form attestation),
+Tier-A draft entry stubs [`MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-TIERA-STUBS-14-09-2026.md) (889; 349 clean adds),
+draft #119 reply [`DRAFT_REPLY_csl-corrections-119-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/DRAFT_REPLY_csl-corrections-119-14-09-2026.md) (posting = MG ruling).
+Builders [`pw_nachtrag_vs_mw.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_vs_mw.py) + [`pw_nachtrag_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_adjudicate.py), byte-identical rerun proven.
+30-sample stratified spot-check: **0/30 false positives** ([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-SPOTCHECK-30-14-09-2026.tsv)).
+⚠️ the handoff's quoted 3,024/618/1,427/979 baseline artifacts were never landed (untracked-only); Δ329 documented in the companion §3.
+
 **Coverage additions (item B):** [`COVERAGE_ADDITIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) — DCS-corpus
 lemmas absent from all CDSL dicts, ranked by band ([`coverage_additions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/coverage_additions.py)),
 then **cross-tagged** with Catalan/Huet external attestation
