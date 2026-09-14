@@ -103,12 +103,13 @@ def main():
     mw_annex = set()
     cur_annex = False
     cur_hw = None
+    cur_hw_set = set()
     with open(V02 / "mw" / "mw.txt", encoding="utf-8") as f:
         for line in f:
             m = HW_LINE.match(line)
             if m:
                 if cur_hw and cur_annex:
-                    mw_annex.update(clean(cur_hw) for cur_hw in cur_hw_set)
+                    mw_annex.update(clean(c) for c in cur_hw_set)
                 cur_hw_set = set()
                 L, pc, k1, k2 = m.groups()
                 for hw in (k1, k2):
