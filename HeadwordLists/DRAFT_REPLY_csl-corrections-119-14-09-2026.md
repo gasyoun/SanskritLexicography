@@ -1,10 +1,11 @@
 # DRAFT reply — csl-corrections#119 (MW annexure vs PW/PWK Nachtraege)
 
-_Created: 14-09-2026 · Last updated: 14-09-2026_
+_Created: 14-09-2026 · Last updated: 15-09-2026_
 
-**Status: DRAFT — upstream posting is MG's ruling** (H4837/H4878 gate; a 14-09
-changelog row records a posting approval for the earlier MW72-baseline reply —
-this draft posts only on a fresh word from MG).
+**Status: POSTED 15-09-2026** —
+<https://github.com/sanskrit-lexicon/csl-corrections/issues/119#issuecomment-5676473420>
+(posted by gasyoun; MG ruling 15-09-2026 «Да, постить сейчас», H4883. The text
+below the fold is the comment verbatim.)
 
 Posting account: gasyoun. Comment text below the fold.
 
