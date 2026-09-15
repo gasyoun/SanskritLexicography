@@ -1,7 +1,7 @@
 {
  "handoff": "H4746",
  "ak_source": "AMAR/amar.txt (Cologne Amarakosha; NOT in CDSL, H3862)",
- "union_source": "HeadwordLists/union/union_headwords.tsv (12 CDSL dicts)",
+ "union_source": "HeadwordLists/union/union_headwords.tsv (15 CDSL dicts)",
  "join": "exact SLP1 string equality on the union key (house standard)",
  "ak_synsets": 5590,
  "ak_lemma_instances": 14036,

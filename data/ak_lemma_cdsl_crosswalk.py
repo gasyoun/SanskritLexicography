@@ -7,7 +7,7 @@ edge is the DOMAIN level (semdom-amarakosha-crosswalk, A58/H742); the LEMMA
 level — AK lemma x CDSL union key1 — never existed. This builder fills it.
 
 Consumes (never rebuilt here, per the reuse rule):
-  * HeadwordLists/union/union_headwords.tsv — THE 12-dict CDSL headword
+  * HeadwordLists/union/union_headwords.tsv — THE 15-dict CDSL headword
     master (323k rows, exact SLP1 <k1> key; overlap-matrix precedent).
   * AMAR/amar.txt — Cologne Amarakosha source; parsed by the SAME code path
     as the domain-level sibling data/semdom_ak_bridge.py (parse_amar vendored
@@ -143,7 +143,7 @@ def build():
     stats = {
         "handoff": "H4746",
         "ak_source": "AMAR/amar.txt (Cologne Amarakosha; NOT in CDSL, H3862)",
-        "union_source": "HeadwordLists/union/union_headwords.tsv (12 CDSL dicts)",
+        "union_source": "HeadwordLists/union/union_headwords.tsv (15 CDSL dicts)",
         "join": "exact SLP1 string equality on the union key (house standard)",
         "ak_synsets": len(synsets),
         "ak_lemma_instances": inst,
