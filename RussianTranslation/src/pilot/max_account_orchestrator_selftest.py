@@ -24,7 +24,23 @@ _isolation_guard()
 
 import max_account_orchestrator as m
 import headless_worker as hw          # H2299: the paid lane's own bare-cwd helper
-from execution_contract import config_dir_fingerprint
+from execution_contract import ActiveCallClaim, ProbeRationRefused, config_dir_fingerprint
+
+# H4915: the probe ration ledger is machine-wide by design, so no selftest may write it. Point it
+# at scratch for the whole run, and step the ration clock 25 h per reading: the legacy tests probe
+# the same 'cfg' profile dozens of times, and each reading must land on a fresh UTC day >= 6 h after
+# the last. The H4915 pins below install their own root and a clock they control.
+_RATION_SCRATCH = tempfile.TemporaryDirectory(prefix='pwg-probe-ration-selftest-')
+m.PROBE_RATION_ROOT = _RATION_SCRATCH.name
+_LEGACY_RATION_TICK = [1893456000.0]          # 2030-01-01T00:00Z, far from any real ledger row
+
+
+def _legacy_ration_clock():
+    _LEGACY_RATION_TICK[0] += 25 * 3600
+    return _LEGACY_RATION_TICK[0]
+
+
+m._ration_clock = _legacy_ration_clock
 
 
 class MemoryCallLedger:
@@ -1834,7 +1850,152 @@ def main():
     _test_h2326_1172_probe_raw_envelope_capture()
     _test_h2878_probe_records_the_no_output_progress_reading()
     _test_h3642_health_probe_log_follows_evidence_root()
+    _test_h4915_probe_ration_is_code_enforced_across_evidence_roots()
     print('max_account_orchestrator_selftest: PASS')
+
+
+def _test_h4915_probe_ration_is_code_enforced_across_evidence_roots():
+    """H4915: at most 2 readiness-probe attempts per UTC day per profile, at least 6 h apart,
+    refused in `_probe_call` BEFORE any spawn, counted in ONE machine-wide ledger.
+
+    15-09-2026: c1 was probed at 01:35Z, 14:23Z and 14:26:55Z. The third went through for two
+    reasons: nothing in code refused it, and the 14:23Z row sat in another evidence root's
+    health_probe_log, so a session checking its own root saw a clear ration."""
+    import datetime
+
+    def utc(text):
+        return datetime.datetime.strptime(text, '%Y-%m-%dT%H:%MZ').replace(
+            tzinfo=datetime.timezone.utc).timestamp()
+
+    saved = (m.run_tree_kill, m.HEALTH_PROBE_LOG, m.PROBE_RATION_ROOT, m._ration_clock)
+    spawns, now = [], [0.0]
+    envelope = '{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}'
+
+    def runner(*_a, **_k):
+        spawns.append(1)
+        return types.SimpleNamespace(returncode=0, stderr='', stdout=envelope)
+
+    def probe(cfg, at, evidence_root, ledger=None):
+        now[0] = utc(at)
+        m.HEALTH_PROBE_LOG = m.resolve_health_probe_log(evidence_root)
+        return m.live_probe(cfg, sys.executable, 6491, m.EXACT_GEN_MODEL, account='c1',
+                            events_path=os.path.join(evidence_root, 'events.jsonl'),
+                            call_reservation=ledger or MemoryCallLedger())
+
+    def refused(cfg, at, evidence_root):
+        before, ledger = len(spawns), MemoryCallLedger()
+        try:
+            probe(cfg, at, evidence_root, ledger)
+        except ProbeRationRefused as exc:
+            assert not isinstance(exc, SystemExit), 'a ration refusal is not a health verdict'
+            assert len(spawns) == before, 'ration refusal spawned the CLI'
+            assert ledger.next_id == 0, 'ration refusal spent a call reservation'
+            assert exc.next_legal_utc and exc.next_legal_utc in str(exc), str(exc)
+            return exc
+        raise AssertionError('probe at %s was admitted; the ration should refuse it' % at)
+
+    try:
+        m.run_tree_kill = runner
+        m._ration_clock = lambda: now[0]
+        with tempfile.TemporaryDirectory() as td:
+            cfg = os.path.join(td, 'profile-c1')
+            os.makedirs(cfg)
+            roots = [os.path.join(td, name) for name in ('checkout-output', 'pwg_ru_evidence', 'env-root')]
+            for root in roots:
+                os.makedirs(root)
+
+            # (a) + (c): two attempts, each under a DIFFERENT evidence root, then a third the
+            # same UTC day under a third root. Each root's health log holds only its own rows,
+            # which is the 15-09 blind spot, and the ration still counts all of them.
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-a')
+            probe(cfg, '2030-03-10T01:35Z', roots[0])
+            probe(cfg, '2030-03-10T08:00Z', roots[1])
+            assert len(spawns) == 4, spawns                      # 2 attempts x (warm-up + measured)
+            for root in roots[:2]:
+                assert len(ro.read_events(os.path.join(root, 'health_probe_log.jsonl'))) == 2
+            exc = refused(cfg, '2030-03-10T14:26Z', roots[2])
+            # (d) the refusal names the next legal time in UTC: the next UTC midnight here
+            assert exc.next_legal_utc == '2030-03-11T00:00:00Z', exc.next_legal_utc
+            assert '2 attempt(s) already on UTC day 2030-03-10' in str(exc), str(exc)
+            assert not os.path.exists(os.path.join(roots[2], 'health_probe_log.jsonl'))
+            ledger = m.ProbeRation(m.PROBE_RATION_ROOT)
+            assert len(ledger.attempts(config_dir_fingerprint(cfg))) == 2
+            # the next legal time really is legal
+            probe(cfg, '2030-03-11T00:00Z', roots[2])
+            assert len(spawns) == 6, spawns
+
+            # (b) under 6 h after the last attempt refuses and names last + 6 h ...
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-b')
+            probe(cfg, '2030-03-10T01:00Z', roots[0])
+            exc = refused(cfg, '2030-03-10T05:00Z', roots[1])
+            assert exc.next_legal_utc == '2030-03-10T07:00:00Z', exc.next_legal_utc
+            assert 'under 6 h old' in str(exc), str(exc)
+            # ... and the 6 h gap spans a UTC midnight: a fresh day does not reset it
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-b2')
+            probe(cfg, '2030-03-10T23:00Z', roots[0])
+            exc = refused(cfg, '2030-03-11T02:00Z', roots[0])
+            assert exc.next_legal_utc == '2030-03-11T05:00:00Z', exc.next_legal_utc
+
+            # One held claim is ONE attempt (the latency sweep holds one claim for its whole
+            # series); a direct call with no claim is an attempt of its own.
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-claim')
+            now[0] = utc('2030-03-10T01:00Z')
+            with ActiveCallClaim(config_dir_fingerprint(cfg)) as claim:
+                for _ in range(3):
+                    assert m._probe_call(cfg, sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                         MemoryCallLedger(), 'latency-sweep:measured', 'c1',
+                                         active_claim=claim)[1] == 'success'
+            ledger = m.ProbeRation(m.PROBE_RATION_ROOT)
+            assert len(ledger.attempts(config_dir_fingerprint(cfg))) == 1
+            now[0] = utc('2030-03-10T02:00Z')
+            try:
+                m._probe_call(cfg, sys.executable, 6491, m.EXACT_GEN_MODEL, MemoryCallLedger())
+                raise AssertionError('a claimless direct probe bypassed the ration')
+            except ProbeRationRefused:
+                pass
+
+            # probe_fleet refuses the WHOLE fleet before any spawn when one profile is out of
+            # ration -- even with --drop-unhealthy, which would otherwise read it as a NO-GO.
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-fleet')
+            cfg2 = os.path.join(td, 'profile-c2')
+            os.makedirs(cfg2)
+            now[0] = utc('2030-03-10T01:00Z')
+            m.ProbeRation(m.PROBE_RATION_ROOT).record(config_dir_fingerprint(cfg2), now[0])
+            now[0] = utc('2030-03-10T03:00Z')
+            before = len(spawns)
+            try:
+                m.probe_fleet([{'name': 'c1', 'config_dir': cfg}, {'name': 'c2', 'config_dir': cfg2}],
+                              sys.executable, drop_unhealthy=True, call_reservation=MemoryCallLedger())
+                raise AssertionError('fleet probed a profile that is out of ration')
+            except ProbeRationRefused as exc:
+                assert 'profile c2' in str(exc) and '2030-03-10T07:00:00Z' in str(exc), str(exc)
+            assert len(spawns) == before, 'fleet spent account c1 before refusing on c2'
+
+            # An unreadable ledger row fails CLOSED, never "no attempts on record".
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-torn')
+            os.makedirs(m.PROBE_RATION_ROOT)
+            with open(m.ProbeRation(m.PROBE_RATION_ROOT).path(config_dir_fingerprint(cfg)),
+                      'w', encoding='utf-8') as fh:
+                fh.write('{"ts": 1893\n')
+            before = len(spawns)
+            try:
+                probe(cfg, '2030-03-10T01:00Z', roots[0])
+                raise AssertionError('a torn ration ledger was read as empty')
+            except ProbeRationRefused as exc:
+                assert 'unreadable' in str(exc) and exc.next_legal_utc is None, str(exc)
+            assert len(spawns) == before
+
+        # The production ledger is machine-wide: beside the active-call lock dir, never under an
+        # evidence root, and not movable by $PWG_EVIDENCE_DIR.
+        default = m.probe_ration_root()
+        assert os.path.dirname(default) == os.path.dirname(ActiveCallClaim('f' * 64).root), default
+        import inspect
+        assert 'environ' not in inspect.getsource(m.probe_ration_root), \
+            'the ration root must not follow an env var: a per-session root splits the count'
+    finally:
+        m.run_tree_kill, m.HEALTH_PROBE_LOG, m.PROBE_RATION_ROOT, m._ration_clock = saved
+    print('  H4915 probe ration: 3rd same-day attempt and <6 h attempt refused before spawn and '
+          'reservation; two evidence roots share one count; refusal names the next legal UTC time')
 
 
 def _test_h2079_945_probe_emits_api_time():
