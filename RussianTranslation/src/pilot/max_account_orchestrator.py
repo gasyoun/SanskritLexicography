@@ -1360,16 +1360,15 @@ def _probe_prompt(payload_bytes):
     H4277 bridge or the card-less H3157 preamble. The model was reading the prompt correctly.
 
     Where the preamble check H3157 wanted now lives, and where it does NOT. On
-    `bounded_staged_run --execute --only-profile <p>` (the cohort-acceptance route)
-    `canary_gate.enforce` runs in `main` BEFORE `run()` calls `probe_fleet` and requires a GO
-    canary — the production TASK SHAPE block plus a real synthetic card, same profile, <= 6 h
-    old — so there the probe's copy of the block detected nothing the canary had not. On the
-    two-step `/pwg-live-gate` path the canary runs AFTER a probe PASS and still stops a refusing
-    lane before any dense card. Known gaps (an independent critic's list, routed to Uprava
-    H4916): `staged-run` (`cmd_staged_run`) dispatches paid leases on the probe alone with no
-    canary; `--skip-canary-gate`, `--canary-max-age-seconds`, and a multi-profile run without
-    `--only-profile` (one receipt for N profiles) weaken the bounded route; `presplit-canary`
-    probes before its own worker. On those, a production-preamble regression now surfaces as a
+    `bounded_staged_run --execute` (the cohort-acceptance route) and on `staged-run`
+    (`cmd_staged_run`, the four-lease route) `enforce_canary_receipts` runs BEFORE `probe_fleet`
+    and requires one GO canary receipt per profile the run will dispatch on — the production
+    TASK SHAPE block plus a real synthetic card, same profile, <= 6 h old (H4916) — so there the
+    probe's copy of the block detected nothing the canary had not. On the two-step
+    `/pwg-live-gate` path the canary runs AFTER a probe PASS and still stops a refusing lane
+    before any dense card. Known gaps that remain (an independent critic's list, H4916):
+    `--skip-canary-gate` and `--canary-max-age-seconds` still weaken the bounded route, and
+    `presplit-canary` probes before its own worker. On those, a production-preamble regression now surfaces as a
     failed paid call rather than a cheap probe NO-GO — the old probe gave no usable signal
     there either, refusing on healthy routes 4 times in 6. What the probe still asserts is
     unchanged: same spawn (plan mode, exact model, json-schema, bare cwd, the lane's safe mode),
@@ -1818,6 +1817,54 @@ def staged_plan_scope(plan, requested_lease_ids=None):
 STAGED_RUN_IDLE_POLL_SECONDS = 3   # C4: backoff between no-progress staged-run passes (see loop)
 
 
+def enforce_canary_receipts(receipt_paths, profiles, max_age_seconds=None, context='staged-run'):
+    """H4916: refuse a paid run unless EVERY profile it will dispatch on holds its own fresh GO
+    canary receipt. Returns {profile: receipt}; raises SystemExit naming the gap.
+
+    H4527 took the production TASK SHAPE block out of the readiness probe, so the canary
+    (`canary_gate.judge`: production preamble + a real synthetic card) is the only pre-dispatch
+    check left that sees the preamble. Each receipt passes `canary_gate.enforce` (verdict GO,
+    age <= max) unchanged; this adds only the one-receipt-per-profile rule on top:
+      * one profile, one receipt — `enforce(..., only_profile=<p>)`, the bounded route's
+        existing single-profile contract (a receipt naming another slot refuses);
+      * otherwise every receipt must NAME its `profile_slot`, slots must be distinct, and every
+        dispatch profile must be covered — one GO for N profiles is a refusal, not a pass.
+    An empty profile list validates the receipts and returns {}: both callers refuse a
+    zero-account run themselves, before any probe."""
+    import canary_gate
+    paths = [path for path in (receipt_paths or []) if path]
+    profiles = list(profiles)
+    if not paths:
+        raise SystemExit(
+            '%s: refuses before the fleet probe without a canary GO receipt — run the '
+            '/pwg-live-gate canary on each profile, judge it with `canary_gate.py judge '
+            '<wf_output> --receipt <path>`, and pass one --canary-receipt per profile (H4916)'
+            % context)
+    kwargs = {} if max_age_seconds is None else {'max_age_seconds': max_age_seconds}
+    if len(profiles) == 1 and len(paths) == 1:
+        return {profiles[0]: canary_gate.enforce(paths[0], only_profile=profiles[0], **kwargs)}
+    by_profile = {}
+    for path in paths:
+        receipt = canary_gate.enforce(path, **kwargs)
+        slot = receipt.get('profile_slot')
+        if not slot:
+            raise SystemExit(
+                '%s: canary receipt %s names no profile_slot — with %d profile(s) and %d '
+                'receipt(s) each receipt must say which profile it gates (H4916)'
+                % (context, path, len(profiles), len(paths)))
+        if slot in by_profile:
+            raise SystemExit('%s: two canary receipts gate profile %r — one receipt per '
+                             'profile (H4916)' % (context, slot))
+        by_profile[slot] = receipt
+    missing = [name for name in profiles if name not in by_profile]
+    if missing:
+        raise SystemExit(
+            '%s: no canary GO receipt for profile(s) %s — this run dispatches on %s and '
+            'needs one fresh GO receipt for EACH (H4916)'
+            % (context, ', '.join(missing), ', '.join(profiles)))
+    return {name: by_profile[name] for name in profiles}
+
+
 def cmd_staged_run(args):
     plan = json.load(open(args.plan, encoding='utf-8'))
     scope = staged_plan_scope(plan, args.lease_id)
@@ -1847,6 +1894,12 @@ def cmd_staged_run(args):
     if preflight.returncode:
         raise SystemExit('staged-run preflight refused before probe: %s'
                          % (preflight.stderr or preflight.stdout)[-2000:])
+    # H4916: the four-lease route dispatched paid leases on the readiness probe alone. Since
+    # H4527 the probe no longer carries the production preamble, so the canary is the only
+    # pre-dispatch check that does: one fresh GO receipt per profile, before the call ledger
+    # and before probe_fleet spawns anything. No escape flag on this route.
+    enforce_canary_receipts(getattr(args, 'canary_receipt', None),
+                            [account['name'] for account in accounts], context='staged-run')
     reservation_path = getattr(args, 'call_reservation', None)
     if not reservation_path:
         raise SystemExit('staged-run requires --call-reservation')
@@ -2176,6 +2229,9 @@ def main(argv=None):
     p.add_argument('--drop-unhealthy', action='store_true')        # GAP #5: proceed on healthy subset
     p.add_argument('--report', required=True)
     p.add_argument('--events', required=True); p.add_argument('--census', required=True)
+    p.add_argument('--canary-receipt', action='append',
+                   help='H4916: pwg.canary_gate_receipt.v1 GO receipt; REQUIRED, one per '
+                        'dispatch profile (each naming its profile_slot when N > 1)')
     p.add_argument('--run-id'); p.add_argument('--call-reservation'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_staged_run)
     p = sub.add_parser('presplit-canary')
     p.add_argument('--manifest', required=True); p.add_argument('--output', required=True)

@@ -922,6 +922,24 @@ def _validated_accounts(db_path):
         return []
 
 
+def gate_profiles(args):
+    """H4916: the profile slots an --execute run can dispatch on, for the canary gate — the
+    same roster selection `run()` makes (validated, --only-profile, --max-accounts). Reads the
+    db directly rather than via `_validated_accounts`, which turns a locked db into [] for the
+    dry-run: here an unreadable roster must raise, not vouch for an empty fleet."""
+    if args.only_profile:
+        return [args.only_profile]
+    if not args.db or not os.path.exists(args.db):
+        return []   # run() creates an empty db and refuses a zero-account run before probe
+    db = mao.connect(args.db)
+    try:
+        names = [row['name'] for row in
+                 db.execute('SELECT name FROM accounts WHERE validated=1 ORDER BY name')]
+    finally:
+        db.close()
+    return names[:args.max_accounts] if args.max_accounts else names
+
+
 def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resume=False,
                      call_counter=None, usage_counter=None):
     """Construct the BoundedSupervisor with the H963 ceilings wired through. strict_cost_fn is
@@ -1225,11 +1243,12 @@ def build_parser():
                          'unbounded — a deliberate unbounded window must say so in the '
                          'command line where a reviewer can see it.')
     # H2159 (H2025 G4): the canary half of the live gate, consumed MECHANICALLY.
-    ap.add_argument('--canary-receipt',
+    ap.add_argument('--canary-receipt', action='append',
                     help='H2159: path to the pwg.canary_gate_receipt.v1 JSON written by '
                          '`canary_gate.py judge` after the /pwg-live-gate canary. '
                          'REQUIRED on --execute (verdict GO, fresh, same profile) unless '
-                         '--skip-canary-gate is passed.')
+                         '--skip-canary-gate is passed. H4916: repeat it once per dispatch '
+                         'profile — a multi-profile run needs one receipt naming each slot.')
     ap.add_argument('--canary-max-age-seconds', type=int, default=None,
                     help='override the canary GO receipt freshness bound (default: '
                          'canary_gate.DEFAULT_MAX_AGE_SECONDS = 6h)')
@@ -1307,11 +1326,11 @@ def main(argv=None):
                      'canary, judge it with `canary_gate.py judge <wf_output> --receipt '
                      '<path>`, and pass --canary-receipt <path> (H2159). '
                      '--skip-canary-gate is the explicit escape hatch.')
-        import canary_gate
-        gate_kwargs = {'only_profile': args.only_profile}
-        if args.canary_max_age_seconds is not None:
-            gate_kwargs['max_age_seconds'] = args.canary_max_age_seconds
-        canary_gate.enforce(args.canary_receipt, **gate_kwargs)
+        # H4916: one receipt per profile the run will dispatch on — a multi-profile run
+        # without --only-profile used to pass on ONE receipt for N profiles.
+        mao.enforce_canary_receipts(args.canary_receipt, gate_profiles(args),
+                                    max_age_seconds=args.canary_max_age_seconds,
+                                    context='bounded_staged_run')
     return run(args)
 
 

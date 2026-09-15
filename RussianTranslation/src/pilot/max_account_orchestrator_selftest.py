@@ -1638,6 +1638,108 @@ def main():
             m.coordinator_command, m.probe_fleet = original_command, original_probe
     print('  staged-run: coordinator preflight refusal precedes call ledger/probe')
 
+    # H4916: the four-lease staged-run route dispatched paid leases on the readiness probe
+    # alone. H4527 took the production preamble out of that probe, so staged-run now needs one
+    # fresh GO canary receipt per dispatch profile BEFORE the call ledger and probe_fleet; a
+    # refusal spawns nothing. Receipts are real `canary_gate.py judge` output, not stubs.
+    import canary_gate as cg
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'canary.sqlite')
+        for name in ('c4', 'c5'):
+            cfg = os.path.join(td, name)
+            os.makedirs(cfg)
+            m.main(['--db', db, 'init', '--account', name + '=' + cfg, '--skip-profile-check'])
+        plan_path = os.path.join(td, 'plan.json')
+        with open(plan_path, 'w', encoding='utf-8') as f:
+            json.dump({'selected_headwords': 1, 'prepared_headwords': 1,
+                       'windows': [{'root': 'lease-canary', 'headwords': ['k'],
+                                    'headless': {'manifest_sha256': 'x'}}]}, f)
+        card = {'records': [{'senses': [
+            {'russian': 'перевод %d' % i, 'german': 'Übersetzung %d' % i} for i in range(3)]}]}
+
+        def receipt(name, slot, age=0):
+            wf = os.path.join(td, name + '_wf.json')
+            with open(wf, 'w', encoding='utf-8') as fh:
+                json.dump({'meta': {'execution': {'profile_slot': slot}},
+                           'results': [{'key': 'dq_canary_puregloss', 'card': card}]},
+                          fh, ensure_ascii=False)
+            path = os.path.join(td, name + '.json')
+            assert cg.main(['judge', wf, '--receipt', path]) == 0
+            if age:
+                body = cg.load_receipt(path)
+                body['judged_at_epoch'] -= age
+                with open(path, 'w', encoding='utf-8') as fh:
+                    json.dump(body, fh)
+            return path
+
+        r_c4, r_c5 = receipt('r_c4', 'c4'), receipt('r_c5', 'c5')
+        r_c4_stale = receipt('r_c4_stale', 'c4', age=8 * 3600)
+        r_c5_stale = receipt('r_c5_stale', 'c5', age=8 * 3600)
+        probed, spawned = [], []
+
+        class _Probed(Exception):
+            pass
+
+        def fake_probe(accounts, *_a, **_k):
+            probed.append(sorted(acc['name'] for acc in accounts))
+            raise _Probed()
+
+        def no_spawn(*a, **_k):
+            spawned.append(a)
+            raise AssertionError('staged-run spawned a process before its canary gate')
+
+        original = (m.coordinator_command, m.probe_fleet, m.run_tree_kill)
+        m.coordinator_command = lambda *_a, **_k: types.SimpleNamespace(
+            returncode=0, stdout='', stderr='')
+        m.probe_fleet = fake_probe
+        m.run_tree_kill = no_spawn
+
+        def staged(receipts, only_profile=None, tag='x'):
+            calls = os.path.join(td, 'calls-%s.json' % tag)
+            m.cmd_staged_run(m.argparse.Namespace(
+                plan=plan_path, lease_id=None, db=db, only_profile=only_profile,
+                max_accounts=0, coordinator='coordinator.py', coord_dir=td, cwd=td,
+                call_reservation=calls, run_id='canary-' + tag, max_calls=4, resume=False,
+                canary_receipt=receipts, claude_bin='claude', events=None,
+                drop_unhealthy=False))
+            return calls
+
+        def refused(receipts, needle, only_profile=None, tag='r'):
+            calls = os.path.join(td, 'calls-%s.json' % tag)
+            try:
+                staged(receipts, only_profile, tag)
+                raise AssertionError('staged-run passed the canary gate with %r' % receipts)
+            except SystemExit as exc:
+                assert needle in str(exc), (receipts, str(exc))
+            assert not probed and not spawned, (probed, spawned)
+            assert not os.path.exists(calls), 'a refused gate created the call ledger'
+
+        try:
+            refused(None, 'without a canary GO receipt', tag='none')
+            refused([], 'without a canary GO receipt', tag='empty')
+            refused([r_c4_stale], 'FRESH', only_profile='c4', tag='stale')
+            refused([r_c5], 'gate the SAME profile', only_profile='c4', tag='other')
+            refused([r_c4], 'profile(s) c5', tag='one-for-two')
+            refused([r_c4, r_c4], 'two canary receipts', tag='dup')
+            refused([r_c4, r_c5_stale], 'FRESH', tag='two-one-stale')
+            try:
+                staged([r_c4], only_profile='c4', tag='go-one')
+                raise AssertionError('staged-run with a valid receipt never reached the probe')
+            except _Probed:
+                pass
+            assert probed == [['c4']], probed
+            try:
+                staged([r_c4, r_c5], tag='go-two')
+                raise AssertionError('staged-run with N receipts never reached the probe')
+            except _Probed:
+                pass
+            assert probed == [['c4'], ['c4', 'c5']], probed
+            assert not spawned, spawned
+        finally:
+            m.coordinator_command, m.probe_fleet, m.run_tree_kill = original
+    print('  staged-run: H4916 canary gate — no/stale/other-profile/one-for-N receipt refuses '
+          'with zero spawns and no ledger; N valid per-profile receipts reach the probe')
+
     # A done row is not authority to record an arbitrary file: the scheduler must bind both
     # the exact result bytes and the coordinator run identity saved at successful dispatch.
     with tempfile.TemporaryDirectory() as td:
