@@ -223,6 +223,12 @@ therefore **deliberately left in place** instead of being gc'd — removing it b
 would leave the only copy of this work in a dangling local branch. A human ruling on the
 guard (or a push from a session whose primary directory is this repo) is what lands it.
 
+**Resolved 15-09-2026 without any escape marker.** The rebased branch
+`h4531-batches-probe-land` (cherry-picks of `dd6d4460c` + `54b37357f` onto current
+`origin/master`) pushed cleanly — the guard did not fire this time. Why it stayed quiet was not
+investigated (the branch name and base both changed, so the 11-09 false positive was not
+reproduced either way). No `[dup-push-ok]` was added at any point. The work now lives on origin, so the 11-09 worktree no longer holds the only copy.
+
 ## Inspect first
 
 1. This report, then
