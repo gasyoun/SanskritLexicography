@@ -7,8 +7,8 @@ near-formN.NN tiers + rank A/B/C), joins cross-dictionary corroboration
 (36 Cologne dicts), MAHĀVY citations (pw.txt bodies by L), DCS-conllu
 lemma/form attestation, and writes:
 
-  MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv   canonical verdict TSV (4,151 rows)
-  MW-NACHTRAG-TIERA-STUBS-14-09-2026.md     stubs for corroborated Tier A
+  MW-NACHTRAG-ADJUDICATION-<DATE>.tsv   canonical verdict TSV (4,151 rows)
+  MW-NACHTRAG-TIERA-STUBS-<DATE>.md     stubs for corroborated Tier A (NO-MATCH)
 
 Verdict semantics (frozen, explicit):
   confirmed-missing           NO-MATCH tier: absent from MW verbatim, stem AND
@@ -22,6 +22,19 @@ Verdict semantics (frozen, explicit):
                               (kAritra~kArita); corroborated false friends stay
                               missing - the corroboration columns carry that
                               call, never the fuzzy score alone.
+
+H4883 extension (MG ruling 15-09-2026 «Да, авто-подтверждать»): a near-form row
+is AUTO-CONFIRMED (verdict confirmed-missing, review_note token
+`add-check:auto-confirmed-false-friend`) when the matched MW near form is a
+DOCUMENTED false friend - the kArita-class: the near form is itself a separate,
+documented pw.txt entry at a DIFFERENT page location than the candidate
+(kArita = pw 2-052-c 'causativus' vs kAritra = pw 7-331-d '= cezita'), i.e.
+PW documents both as distinct lexemes, so MW carrying the near form does not
+cover the candidate. Rows whose near form is MW-only (not a pw entry) or sits
+at the candidate's own pw location (orthographic-variant suspects) stay
+near-form-needs-eyes. Minimum bar per auto-confirmed row: near-form identity
+(mw_forms + friend pw location in the note) + corroboration profile
+(corr_n/corr_dicts) recorded.
 Stdlib only. Usage: python -u mw_pwk_nachtraege_adjudicate.py [csl-orig-v02]
 """
 import os
@@ -33,7 +46,7 @@ from pathlib import Path
 
 t0 = time.time()
 OUT = Path(__file__).parent
-DATE = "14-09-2026"
+DATE = "15-09-2026"
 
 V02 = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(os.environ.get("CSL_ORIG_V02", ""))
 if not V02 or not V02.exists():
@@ -55,6 +68,13 @@ def iast(s):
 
 def clean(hw):
     return "".join(c for c in hw if c.isalpha())
+
+
+def norm_braces(txt):
+    """H4883: normalise PW {#...#} headword markup (accent '/', '*' etc.) so a
+    body equation can be matched against the plain SLP1 headword."""
+    return re.sub(r"\{#([^#]*)#\}",
+                  lambda m: "{#" + clean(m.group(1)) + "#}", txt)
 
 
 STEM_SUFFIXES = ("aH", "aM", "as", "am", "an", "at", "eH", "oH",
@@ -108,8 +128,9 @@ def main():
             if (V02 / n / f"{n}.txt").exists()}
     print(f"corroboration dictionaries: {len(sets)}", flush=True)
 
-    # ---- MW stem map (for covered-by-stem resolution) ----
+    # ---- MW stem map (for covered-by-stem resolution) + folded headword set ----
     mw_stems = {}
+    mw_hw_all = set()
     with open(V02 / "mw" / "mw.txt", encoding="utf-8") as f:
         for line in f:
             m = HW_LINE.match(line)
@@ -117,20 +138,30 @@ def main():
                 for k in (clean(m.group(3)), clean(m.group(4))):
                     if k:
                         mw_stems.setdefault(stemkey(k), set()).add(k)
+                        mw_hw_all.add(k)
+    mw_fold = {x.lower() for x in mw_hw_all}
     print(f"MW stemkey groups: {len(mw_stems)}", flush=True)
 
-    # ---- pw.txt bodies by L (MAHĀVY cites) ----
+    # ---- pw.txt bodies by L (MAHĀVY cites) + headword -> first-entry pc ----
     pw_body = {}
+    pw_pc_first = {}   # H4883: headword -> pc of its FIRST pw.txt entry
+    pw_first_body = {}  # H4883: headword -> that entry's body lines (shared list)
     cur = None
     with open(V02 / "pw" / "pw.txt", encoding="utf-8") as f:
         for line in f:
             m = HW_LINE.match(line)
             if m:
-                cur = (m.group(1), clean(m.group(3)), [])
+                k1, k2 = clean(m.group(3)), clean(m.group(4))
+                cur = (m.group(1), k1, [])
                 pw_body[m.group(1)] = cur
+                for k in (k1, k2):
+                    if k and k not in pw_pc_first:
+                        pw_pc_first[k] = m.group(2)
+                        pw_first_body[k] = cur[2]
             elif cur is not None:
                 cur[2].append(line)
-    print(f"pw.txt entries indexed: {len(pw_body)}", flush=True)
+    print(f"pw.txt entries indexed: {len(pw_body)} "
+          f"({len(pw_pc_first)} headwords keyed by location)", flush=True)
 
     # ---- DCS ----
     dcs_lemmas, dcs_forms = set(), set()
@@ -189,8 +220,69 @@ def main():
             rec["mw_forms"] = r["mw_fuzzy"]
             notes.append("case/vowel-length twin of MW form (Akalita/akalita trap) - same lexeme or distinct word, needs eyes")
         else:
-            rec["verdict"] = "near-form-needs-eyes"
-            rec["mw_forms"] = r["mw_fuzzy"]
+            # H4883 auto-confirm: a near-form row is a DOCUMENTED false friend
+            # when the matched MW near form is itself a separate pw.txt entry
+            # at a DIFFERENT location than the candidate, carries its OWN sense
+            # (not a redirect / see-reference stub), and the candidate's own pw
+            # entry does not equate it to the near form (the kArita-class:
+            # kArita pw 2-052-c 'causativus' vs kAritra pw 7-331-d '= cezita').
+            # Everything else - MW-only near forms, same-location near forms,
+            # cross-reference stubs, variant equations - stays needs-eyes.
+            friend = r["mw_fuzzy"]
+            fpc = pw_pc_first.get(friend)
+            rec["mw_forms"] = friend
+            withhold = None
+            if friend and fpc and fpc != r["pwk_pc"]:
+                fbody = norm_braces(" ".join("".join(pw_first_body.get(friend, []))
+                                             .replace("<LEND>", "").split()))
+                # candidate bodies to test for an equation: the sup_7 Nachtrag
+                # entry (pwk_L, often just a sense pointer like '{#X#}¦ 5.')
+                # AND the headword's main (first) pw entry, where the equation
+                # 'X = near-form' normally lives.
+                cand_bodies = []
+                if body.strip():
+                    cand_bodies.append(norm_braces(" ".join(body.split())))
+                fb_hw = pw_first_body.get(hw)
+                if fb_hw:
+                    cand_bodies.append(norm_braces(
+                        " ".join("".join(fb_hw).replace("<LEND>", "").split())))
+
+                def eq_re(h):
+                    h = re.escape(h)
+                    return (r"(?:=\s*\{#" + h + r"#\})"
+                            r"|(?:<ab>s\.</ab>\s*\{#" + h + r"#\})"
+                            r"|(?:\{%\s*vgl\.\s*" + h + r"\s*%\})")
+
+                if re.fullmatch(r"\{\{Lbody=\d+\}\}", fbody):
+                    withhold = ("near form is a pw cross-reference entry with no "
+                                "own sense")
+                elif re.fullmatch(r"(?:\*?\{#[^#]+#\}\s*¦?\s*)?"
+                                  r"(?:<lex>[^<]*</lex>\s*)?"
+                                  r"(?:<ab>(?:s|vgl)\.</ab>)\s*\{#[^#]+#\}\.?\s*",
+                                  fbody):
+                    withhold = "near form is a bare see-reference with no own sense"
+                elif hw.lower() in mw_fold:
+                    withhold = ("a case-folded MW headword exists (Akalita/akalita "
+                                "trap: SLP1 case is phonemic) - needs eyes")
+                elif any(re.search(eq_re(friend), cb) for cb in cand_bodies):
+                    withhold = (f"candidate's own pw entry equates it to the near "
+                                f"form ({friend}) - variant/editorial call, not a "
+                                "clean omission")
+                elif re.search(eq_re(hw), fbody):
+                    withhold = (f"near form's own pw entry equates it to the "
+                                f"candidate ({hw}) - variant/editorial "
+                                "call, not a clean omission")
+            if withhold is None and friend and fpc and fpc != r["pwk_pc"]:
+                rec["verdict"] = "confirmed-missing"
+                notes.append(
+                    "add-check:auto-confirmed-false-friend: near form "
+                    f"'{friend}' is a separate pw.txt entry at {fpc} "
+                    f"(candidate at {r['pwk_pc']}) carrying its own distinct "
+                    "sense - omission stands")
+            else:
+                rec["verdict"] = "near-form-needs-eyes"
+                if withhold:
+                    notes.append(f"auto-confirm withheld: {withhold}")
         rec["review_note"] = "; ".join(notes)
         out_rows.append(rec)
 
@@ -204,9 +296,12 @@ def main():
         for rec in out_rows:
             f.write("\t".join(str(rec.get(c, "")) for c in cols) + "\n")
 
-    # ---- Tier-A stubs: confirmed-missing with corr_n >= 2 ----
+    # ---- Tier-A stubs: confirmed-missing NO-MATCH rows with corr_n >= 2 ----
+    # (H4883: stub semantics stay NO-MATCH-only, so the corroborated-add count
+    #  is not inflated by auto-confirmed false-friend rows.)
     tier_a = [r for r in out_rows
-              if r["verdict"] == "confirmed-missing" and r["corr_n"] >= 2]
+              if r["verdict"] == "confirmed-missing"
+              and r["pipeline_tier"] == "NO-MATCH" and r["corr_n"] >= 2]
     tier_a.sort(key=lambda r: (-(2 * r["corr_n"] + 2 * r["mahavy"] + 2 * r["dcs_lemma"]
                                  + (1 if r["body_chars"] > 60 else 0)
                                  - (1 if r["mw_fuzzy"] else 0)), r["hw_slp1"]))
@@ -240,12 +335,23 @@ verbatim (tag-stripped), not translated. Posting anything = MG ruling.
     n_stem = sum(1 for r in out_rows if r["verdict"] == "covered-by-MW-stem-form")
     n_fold = sum(1 for r in out_rows if r["verdict"] == "covered-by-fold-twin-flagged")
     n_near = sum(1 for r in out_rows if r["verdict"] == "near-form-needs-eyes")
+    n_auto = sum(1 for r in out_rows
+                 if "add-check:auto-confirmed-false-friend" in r["review_note"])
+    # H4883 canary: kAritra must come out confirmed-missing in the main pass
+    # (false-negative guard for the near-form auto-confirm).
+    canary = next((r for r in out_rows if r["hw_slp1"] == "kAritra"), None)
+    canary_line = ("canary kAritra: NOT FOUND - FAIL" if canary is None else
+                   f"canary kAritra: {canary['pipeline_tier']} -> {canary['verdict']} "
+                   + ("PASS (false-negative guard)"
+                      if canary["verdict"] == "confirmed-missing" else "FAIL"))
     print(f"""
-== canonical adjudication (H4878) ==
+== canonical adjudication (H4878 + H4883 auto-confirm) ==
 rows: {len(out_rows)} (candidate count {n_candidates})
 confirmed-missing: {n_conf}   covered-by-MW-stem-form: {n_stem}
 covered-by-fold-twin-flagged: {n_fold}   near-form-needs-eyes: {n_near}
+  of confirmed-missing, auto-confirmed false-friend: {n_auto}
 Tier-A stubs: {len(tier_a)} -> {stubs_path.name}
+{canary_line}
 wrote {adj_path.name} in {time.time()-t0:.0f}s""", flush=True)
 
     # ---- spot-check sample (deterministic seed) ----
@@ -253,17 +359,32 @@ wrote {adj_path.name} in {time.time()-t0:.0f}s""", flush=True)
     conf = [r for r in out_rows if r["verdict"] == "confirmed-missing"]
     sample = random.sample(conf, min(30, len(conf)))
     sp_path = OUT / f"MW-NACHTRAG-SPOTCHECK-30-{DATE}.tsv"
+    mw_hw_set = set()
+    with open(V02 / "mw" / "mw.txt", encoding="utf-8") as f:
+        for line in f:
+            m = HW_LINE.match(line)
+            if m:
+                for k in (clean(m.group(3)), clean(m.group(4))):
+                    if k:
+                        mw_hw_set.add(k)
     with open(sp_path, "w", encoding="utf-8") as f:
-        f.write("hw_slp1\tiast\tpwk_L\tpwk_pc\tcorr_n\tcorr_dicts\tmahavy\tdcs_lemma\tmw_fuzzy\tmw_fold_hit\n")
+        f.write("hw_slp1\tiast\tpwk_L\tpwk_pc\tpipeline_tier\tcorr_n\tcorr_dicts\t"
+                "mahavy\tdcs_lemma\tmw_fuzzy\tfriend_pw_pc\t"
+                "mw_exact_hit\tmw_fold_hit\tmw_stem_hit\n")
         fold_set = set()
         for forms in mw_stems.values():
             fold_set |= forms
         fold_lower = {x.lower() for x in fold_set}
+        stem_all = set(mw_stems.keys())
         for r in sample:
-            f.write("\t".join([r["hw_slp1"], r["iast"], r["pwk_L"], r["pwk_pc"],
-                               str(r["corr_n"]), r["corr_dicts"], str(r["mahavy"]),
-                               str(r["dcs_lemma"]), r["mw_fuzzy"],
-                               "1" if r["hw_slp1"].lower() in fold_lower else "0"]) + "\n")
+            f.write("\t".join([
+                r["hw_slp1"], r["iast"], r["pwk_L"], r["pwk_pc"], r["pipeline_tier"],
+                str(r["corr_n"]), r["corr_dicts"], str(r["mahavy"]),
+                str(r["dcs_lemma"]), r["mw_fuzzy"],
+                pw_pc_first.get(r["mw_fuzzy"], ""),
+                "1" if r["hw_slp1"] in mw_hw_set else "0",
+                "1" if r["hw_slp1"].lower() in fold_lower else "0",
+                "1" if stemkey(r["hw_slp1"]) in stem_all else "0"]) + "\n")
     print(f"spot-check sample -> {sp_path.name}", flush=True)
 
 
