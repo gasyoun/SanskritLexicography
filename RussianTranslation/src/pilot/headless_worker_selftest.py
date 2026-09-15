@@ -23,10 +23,14 @@ import headless_worker as h
 import gen_opt_harness2 as generator
 import proc_tree
 from call_reservation import CallReservationLedger
-from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
-                                PRODUCTION_NO_OUTPUT_PROGRESS_MS,
+from execution_contract import (ActiveCallClaim, BUFFERED_OUTPUT_ARGS,
+                                PRODUCTION_HARD_TIMEOUT_MS,
+                                PRODUCTION_NO_OUTPUT_PROGRESS_MS, TOKEN_STREAM_FLAG,
+                                TOKEN_STREAM_OUTPUT_ARGS,
                                 assert_progress_window_below_ceiling,
-                                config_dir_fingerprint, progress_window_ms_for)
+                                config_dir_fingerprint, progress_window_ms_for,
+                                progress_window_ms_for_argv)
+import cli_stream
 
 
 class MemoryCallLedger:
@@ -2154,6 +2158,12 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2878_a_window_that_could_never_fire_is_refused()
     test_h2878_a_killed_attempt_records_which_bound_ended_it()
     test_h2878_emitting_spawn_survives_the_production_window()
+    test_h4528_retry_chatter_is_not_progress_so_a_quota_stall_dies()
+    test_h4528_clean_slow_token_stream_survives_and_parses()
+    test_h4528_token_stream_is_opt_in_and_capability_gated()
+    test_h4528_no_progress_kill_is_its_own_class()
+    test_h4528_content_429_never_reads_as_rate_limit()
+    test_h4528_window_is_sized_from_committed_clean_call_telemetry()
     print('headless_worker_selftest: PASS')
 
 
@@ -2374,17 +2384,22 @@ def test_h2878_window_is_derived_from_the_output_format_not_a_literal():
     assert PRODUCTION_NO_OUTPUT_PROGRESS_MS == 90000, PRODUCTION_NO_OUTPUT_PROGRESS_MS
     # A buffered format cannot be watched for stalled output -- observe only.
     assert progress_window_ms_for('json') is None
-    # A streaming one can, and arms at the ruled default by doing nothing else.
-    assert progress_window_ms_for('stream-json') == PRODUCTION_NO_OUTPUT_PROGRESS_MS
+    # H4528 correction: plain `stream-json` is ALSO buffered -- one line per COMPLETED
+    # message, so a single long turn is one burst at its end (measured against CLI 2.1.251:
+    # 18 170 ms of silence on an 18 800 ms fake turn). Only token streaming arms.
+    assert progress_window_ms_for('stream-json') is None
+    assert progress_window_ms_for('stream-json', partial_messages=True) \
+        == PRODUCTION_NO_OUTPUT_PROGRESS_MS
     # Both paid lanes derive theirs; neither carries a literal.
-    assert h.WORKER_PROGRESS_WINDOW_MS == progress_window_ms_for(h.WORKER_OUTPUT_FORMAT)
+    assert h.WORKER_PROGRESS_WINDOW_MS == progress_window_ms_for_argv(list(BUFFERED_OUTPUT_ARGS))
     assert mao.PROBE_PROGRESS_WINDOW_MS == progress_window_ms_for(mao.PROBE_OUTPUT_FORMAT)
-    # And today both run a buffered format, so neither is armed. This assertion is the
-    # safety interlock, not a wish: if a lane switches to `stream-json` it arms itself.
+    # And by default both run a buffered format, so neither is armed. This assertion is the
+    # safety interlock, not a wish: only an explicit token-stream spawn arms a window.
     assert h.WORKER_PROGRESS_WINDOW_MS is None, h.WORKER_PROGRESS_WINDOW_MS
     assert mao.PROBE_PROGRESS_WINDOW_MS is None, mao.PROBE_PROGRESS_WINDOW_MS
-    print('  H2878: the window is derived from `--output-format` (json -> observe only, '
-          'stream-json -> %d ms), never a copied literal' % PRODUCTION_NO_OUTPUT_PROGRESS_MS)
+    print('  H2878: the window is derived from the spawn shape (json / stream-json -> observe '
+          'only, stream-json + partial messages -> %d ms), never a copied literal'
+          % PRODUCTION_NO_OUTPUT_PROGRESS_MS)
 
 
 def test_h2878_hard_timeout_ceiling_is_unchanged():
@@ -2472,6 +2487,247 @@ def test_h2878_emitting_spawn_survives_the_production_window():
     assert reading['killed_reason'] is None, reading
     print('  H2878: an emitting spawn survived %d ms against the production 90 000 ms window '
           '(longest silence %d ms)' % (reading['elapsed_ms'], reading['quiet_ms']))
+
+
+# --- H4528 (corpus record: PR #1144): the watchdog ARMED on the token stream -----------------------------
+#
+# Two children stand in for the two shapes the forensics separated. One prints only the CLI's
+# own `system/api_retry` lines -- what a quota-refused spawn looks like on the token stream --
+# and must die on the window even though its stdout never stops growing. The other is a
+# healthy slow call: sparse content lines, one of them split across two writes, then a result
+# line. It must outlive its window several times over and still parse.
+
+_RETRY_CHATTER_CHILD = (
+    "import sys, time\n"
+    "line = '{\"type\":\"system\",\"subtype\":\"api_retry\",\"attempt\":%d,"
+    "\"error_status\":429,\"error\":\"rate_limit\"}\\n'\n"
+    "for i in range(40):\n"
+    "    sys.stdout.write(line % i); sys.stdout.flush(); time.sleep(0.1)\n")
+
+_CONTENT_STREAM_CHILD = (
+    "import json, sys, time\n"
+    "w = lambda s: (sys.stdout.write(s), sys.stdout.flush())\n"
+    "w(json.dumps({'type': 'system', 'subtype': 'init'}) + '\\n')\n"
+    "for i in range(15):\n"
+    "    ev = {'type': 'stream_event', 'event': {'type': 'content_block_delta',\n"
+    "          'delta': {'type': 'input_json_delta', 'partial_json': 'Rv. %d, 429 ' % i}}}\n"
+    "    line = json.dumps(ev) + '\\n'\n"
+    "    if i == 7:\n"
+    "        w(line[:20]); time.sleep(0.3); w(line[20:])\n"
+    "    else:\n"
+    "        w(line)\n"
+    "    time.sleep(0.2)\n"
+    "card = {'key1': 'agni', 'records': [{'grammar': '{T1} m.', 'senses': [\n"
+    "    {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} ogon'}]}]}\n"
+    "w(json.dumps({'type': 'result', 'subtype': 'success', 'is_error': False,\n"
+    "              'duration_ms': 3100, 'duration_api_ms': 2900,\n"
+    "              'structured_output': {'cards': [card]}}) + '\\n')\n")
+
+
+def test_h4528_retry_chatter_is_not_progress_so_a_quota_stall_dies():
+    """FINDINGS §270's hang, made killable: bytes flow, content does not, the spawn dies.
+
+    The control half matters as much: the SAME child against the SAME window with no
+    content filter survives, which proves it is the filter -- not the window -- doing the
+    killing, and that H2878's byte-growth rule alone would have kept this spawn alive until
+    the 600 000 ms backstop.
+    """
+    reading = {}
+    started = time.monotonic()
+    try:
+        proc_tree.run_tree_kill([sys.executable, '-c', _RETRY_CHATTER_CHILD],
+                                capture_output=True, timeout=30, progress_window_ms=800,
+                                progress_out=reading,
+                                progress_filter=cli_stream.is_progress_line)
+    except subprocess.TimeoutExpired as exc:
+        elapsed = time.monotonic() - started
+        assert exc.killed_reason == 'no_output_progress', exc.killed_reason
+        assert exc.bytes_seen > 0, 'the child did write -- that is the point of the fixture'
+        assert exc.progress_events == 0, exc.progress_events
+        assert exc.first_progress_ms is None, exc.first_progress_ms
+        assert elapsed < 3.5, elapsed                  # the child would have run ~4 s
+        assert h.classify_timeout(exc)[0] == 'rate_limit', 'the 429 retries are the evidence'
+        assert cli_stream.api_retry_statuses(exc.output)[:2] == [429, 429]
+        killed_quiet, killed_bytes = exc.quiet_ms, exc.bytes_seen
+    else:
+        raise AssertionError('a spawn emitting only api_retry chatter survived its window')
+    control = {}
+    result = proc_tree.run_tree_kill([sys.executable, '-c', _RETRY_CHATTER_CHILD],
+                                     capture_output=True, timeout=30, progress_window_ms=800,
+                                     progress_out=control)
+    assert result.returncode == 0 and control['killed_reason'] is None, control
+    print('  H4528: api_retry chatter is not progress -- killed at %d ms quiet with %d B seen; '
+          'the unfiltered control survives' % (killed_quiet, killed_bytes))
+
+
+def test_h4528_clean_slow_token_stream_survives_and_parses():
+    """The fail condition's mirror: a healthy slow call is NOT killed, and its result parses.
+
+    ~3.3 s of sparse content against a 1 000 ms window, one line split across two writes
+    300 ms apart (a pipe does not respect line boundaries), and `429` inside the content --
+    none of which may kill it or change what the worker reads out of it.
+    """
+    reading = {}
+    result = proc_tree.run_tree_kill([sys.executable, '-c', _CONTENT_STREAM_CHILD],
+                                     capture_output=True, timeout=30, progress_window_ms=1000,
+                                     progress_out=reading,
+                                     progress_filter=cli_stream.is_progress_line)
+    assert result.returncode == 0, (result.returncode, result.stderr)
+    assert reading['killed_reason'] is None, reading
+    assert reading['elapsed_ms'] >= 3000 and reading['quiet_ms'] < 1000, reading
+    assert reading['progress_events'] >= 15, reading
+    assert reading['first_progress_ms'] is not None, reading
+    wrapper = h.parse_cli_wrapper(result.stdout)
+    assert wrapper['subtype'] == 'success' and wrapper['duration_api_ms'] == 2900, wrapper
+    assert h.structured_from_wrapper(wrapper)['cards'][0]['key1'] == 'agni'
+    print('  H4528: a slow token stream survives %d ms against a 1 000 ms window '
+          '(longest silence %d ms, %d content events) and its result line parses'
+          % (reading['elapsed_ms'], reading['quiet_ms'], reading['progress_events']))
+
+
+def _stream_stdout(cards):
+    lines = [{'type': 'system', 'subtype': 'init', 'session_id': 's'},
+             {'type': 'stream_event', 'event': {'type': 'content_block_delta', 'delta': {
+                 'type': 'input_json_delta', 'partial_json': 'RV. 1, 429'}}},
+             {'type': 'result', 'subtype': 'success', 'is_error': False,
+              'duration_ms': 5000, 'duration_api_ms': 4200, 'ttft_stream_ms': 900,
+              'num_turns': 2, 'structured_output': {'cards': cards}}]
+    return '\n'.join(json.dumps(line) for line in lines) + '\n'
+
+
+_AGNI_CARD = {'key1': 'agni', 'records': [{'grammar': '{T1} m.', 'senses': [
+    {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} огонь'}]}]}
+
+
+def test_h4528_token_stream_is_opt_in_and_capability_gated():
+    """Default OFF (measured reason in DEFAULT_CLI_TOKEN_STREAM), explicit ON honoured, and an
+    unsupported CLI degrades to the buffered lane instead of dying in argv parsing."""
+    seen = {}
+
+    def capture(argv, **kwargs):
+        seen['argv'], seen['kwargs'] = argv, kwargs
+        if TOKEN_STREAM_FLAG in argv:
+            return proc(stdout=_stream_stdout([_AGNI_CARD]))
+        return proc(stdout=json.dumps({'structured_output': {'cards': [_AGNI_CARD]}}))
+
+    assert h.DEFAULT_CLI_TOKEN_STREAM is False, 'token streaming flipped ON without a live GO'
+    payload, status, code = execute(manifest(), capture)
+    fmt = seen['argv'].index('--output-format')
+    assert seen['argv'][fmt + 1] == 'json' and TOKEN_STREAM_FLAG not in seen['argv']
+    assert seen['kwargs']['progress_window_ms'] is None
+    assert 'progress_filter' not in seen['kwargs'], 'the buffered call shape must not change'
+    assert status['cli_token_stream_effective'] is False
+    assert status['progress_window_ms_effective'] is None
+
+    m = manifest()
+    m['execution'] = {'cli_token_stream': True}
+    h._token_stream_support[sys.executable] = True
+    try:
+        payload, status, code = execute(m, capture)
+    finally:
+        h._token_stream_support.pop(sys.executable, None)
+    argv = seen['argv']
+    start = argv.index('--output-format')
+    assert tuple(argv[start:start + len(TOKEN_STREAM_OUTPUT_ARGS)]) == TOKEN_STREAM_OUTPUT_ARGS
+    assert seen['kwargs']['progress_window_ms'] == PRODUCTION_NO_OUTPUT_PROGRESS_MS
+    assert seen['kwargs']['progress_filter'] is cli_stream.is_progress_line
+    assert '--json-schema' in argv and argv[argv.index('--permission-mode') + 1] == 'plan'
+    assert code == 0 and status['classification'] == 'success', status
+    assert status['cli_token_stream_effective'] is True
+    assert status['progress_window_ms_effective'] == PRODUCTION_NO_OUTPUT_PROGRESS_MS
+    readings = payload['summary']['progress_readings']
+    assert readings and readings[0]['duration_api_ms'] == 4200, readings
+    assert readings[0]['api_gap_ms'] == readings[0]['elapsed_ms'] - 4200, readings
+    assert 'progress_events' in readings[0] and readings[0]['ttft_stream_ms'] == 900
+
+    h._token_stream_support[sys.executable] = False     # an older CLI
+    try:
+        _payload, status, _code = execute(m, capture)
+    finally:
+        h._token_stream_support.pop(sys.executable, None)
+    assert TOKEN_STREAM_FLAG not in seen['argv'] and seen['kwargs']['progress_window_ms'] is None
+    assert status['cli_token_stream_effective'] is False
+    print('  H4528: token streaming is opt-in (default OFF), arms the 90 000 ms window only '
+          'with the flag, and degrades to the buffered lane on an older CLI')
+
+
+def test_h4528_no_progress_kill_is_its_own_class():
+    """The watchdog's kill is `no_progress_kill`; the backstop's stays `timeout`; neither is
+    a rate limit unless the CLI's own lines say so -- and both count as infra, not content."""
+    def killed_by(reason, output):
+        def runner(argv, **_kwargs):
+            exc = subprocess.TimeoutExpired(argv, 90)
+            exc.killed_reason, exc.bytes_seen, exc.quiet_ms = reason, len(output), 90004
+            exc.progress_events, exc.first_progress_ms = 1, 1200
+            exc.output, exc.stderr = output, ''
+            raise exc
+        return runner
+
+    content_only = _stream_stdout([])
+    payload, status, code = execute(manifest(), killed_by('no_output_progress', content_only))
+    assert code == 0, status
+    killed = [a for a in status['attempts'] if a.get('returncode') == 124]
+    assert killed and killed[0]['classification'] == 'no_progress_kill', killed
+    assert killed[0]['first_progress_ms'] == 1200 and killed[0]['progress_events'] == 1
+    summary = payload['summary']
+    assert summary['no_progress_kills'] >= 1, summary
+    assert summary['kill_timeouts'] >= summary['no_progress_kills'], summary
+    assert h.is_infra_failure('no_progress_kill')
+
+    payload, status, code = execute(manifest(), killed_by('hard_timeout', content_only))
+    killed = [a for a in status['attempts'] if a.get('returncode') == 124]
+    assert killed and killed[0]['classification'] == 'timeout', killed
+    assert payload['summary']['no_progress_kills'] == 0
+
+    retry = ('{"type":"system","subtype":"api_retry","attempt":1,"error_status":429,'
+             '"error":"rate_limit"}\n')
+    _payload, status, code = execute(manifest(), killed_by('no_output_progress', retry * 2))
+    assert code == h.EXIT_RATE_LIMIT and status['classification'] == 'rate_limit', status
+    assert status['attempts'][-1]['api_retry_statuses'] == [429, 429], status['attempts'][-1]
+    print('  H4528: watchdog kill -> no_progress_kill, backstop -> timeout, 429 retries -> '
+          'rate_limit (exit 21); both kills are infra failures')
+
+
+def test_h4528_content_429_never_reads_as_rate_limit():
+    """A PWG card cites `RV. 1, 429`; on the token stream that text sits in stdout. The CLI's
+    lines are classifiable, the model's content is not -- on a kill and on a non-zero exit."""
+    content_only = _stream_stdout([])
+    exc = subprocess.TimeoutExpired(['claude'], 90)
+    exc.output, exc.stderr, exc.killed_reason = content_only, '', 'no_output_progress'
+    assert h.classify_timeout(exc)[0] == 'no_progress_kill'
+    assert h.classify_process(proc(returncode=1, stdout=content_only))[0] == 'process'
+    # The buffered envelope is still read whole, exactly as before.
+    buffered = json.dumps({'is_error': True, 'result': 'API Error: 429 rate limit'})
+    assert h.classify_process(proc(returncode=1, stdout=buffered))[0] == 'rate_limit'
+    print('  H4528: a 429 in model content stays content; a 429 from the CLI stays rate_limit')
+
+
+def test_h4528_window_is_sized_from_committed_clean_call_telemetry():
+    """The 90 000 ms window against the committed census (pwg_ru/h4528/h4528_ttft_census.json).
+
+    Two facts, pinned so a changed census re-opens the decision instead of drifting past it:
+      1. every healthy call's wait for its FIRST streamed event (request build + TTFT-stream)
+         sits far below the window -- the quota/route stall is what the window catches;
+      2. some healthy first COMPLETE messages (thinking included) exceed it -- and thinking is
+         silent on the stream under the CLI's default display, so the default stays OFF.
+    And the fail condition by name: the 511 908 ms clean call survives the default lane.
+    """
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'pwg_ru',
+                        'h4528', 'h4528_ttft_census.json')
+    with open(path, encoding='utf-8') as fh:
+        rows = json.load(fh)['rows']
+    healthy = [r for r in rows if r['subtype'] == 'success' and not r['is_error']]
+    assert len(healthy) >= 30, len(healthy)
+    first_event = max(r['time_to_request_ms'] + r['ttft_stream_ms'] for r in healthy)
+    assert first_event * 3 < PRODUCTION_NO_OUTPUT_PROGRESS_MS, first_event
+    long_first_message = [r for r in healthy if r['ttft_ms'] > PRODUCTION_NO_OUTPUT_PROGRESS_MS]
+    assert long_first_message, 'no healthy ttft_ms above the window -- revisit the default'
+    assert h.DEFAULT_CLI_TOKEN_STREAM is False
+    assert h.WORKER_PROGRESS_WINDOW_MS is None and 511908 < PRODUCTION_HARD_TIMEOUT_MS
+    print('  H4528: healthy first-event max %d ms (%.1fx under the window); %d/%d healthy '
+          'first messages exceed it, so token streaming stays opt-in; 511 908 ms survives'
+          % (first_event, PRODUCTION_NO_OUTPUT_PROGRESS_MS / first_event,
+             len(long_first_message), len(healthy)))
 
 
 if __name__ == '__main__':

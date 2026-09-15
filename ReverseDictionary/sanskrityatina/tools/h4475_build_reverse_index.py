@@ -142,7 +142,7 @@ def main() -> int:
         "dataset": "sanskrityatina-reverse-index",
         "source_file": "yadisk:Sanskrityatina/04_Reverse/187992 headwords.txt",
         "source_size_bytes": raw.stat().st_size,
-        "source_mtime_utc": "2023-08-31T12:59:05Z",    # rclone lsl at fetch time
+        "source_mtime_utc": "2017-05-16T06:59:05Z",    # rclone lsjson ModTime (UTC) at fetch time
         "source_sha256": sha,
         "source_encoding": "ASCII, CRLF line terminators",
         "fetched_at_utc": "2026-09-10T20:25Z",   # constant: keeps provenance.json idempotent

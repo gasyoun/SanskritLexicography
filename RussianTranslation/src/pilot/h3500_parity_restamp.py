@@ -22,19 +22,19 @@ landed with the ledger un-stamped, which is what turned the required
 `RussianTranslation gates` check red on master.
 
 Run: python src/pilot/h3500_parity_restamp.py
+
+H4408: the ledger + checker mechanics live in parity_restamp.py; this receipt
+keeps only its H3510 note and the drifted-file predicate.
 """
-import json
-import subprocess
+import os
 import sys
-from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-ROOT = Path(__file__).resolve().parents[2]          # .../RussianTranslation
-LEDGER = ROOT / "LANG_PARITY.md"
-CHECK = ROOT / "src" / "pilot" / "lang_parity_check.py"
-BLOCK_OPEN = "```json lang_parity_ledger"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import parity_restamp as pr  # noqa: E402
+
 DRIFTED = "src/promote_final_cards.py"
 
 NOTE = (
@@ -49,31 +49,18 @@ NOTE = (
 )
 
 
-def load_block(text):
-    start = text.index(BLOCK_OPEN) + len(BLOCK_OPEN)
-    end = text.index("\n```", start)
-    return start, end, json.loads(text[start:end])
-
-
 def main():
-    text = LEDGER.read_text(encoding="utf-8")
-    start, end, entries = load_block(text)
+    text, start, end, entries = pr.load_ledger()
     touched = []
     for e in entries:
         if DRIFTED in (e.get("verified_sha256") or {}):
             if "H3510 re-stamp" not in (e.get("note") or ""):
                 e["note"] = (e.get("note") or "").rstrip() + NOTE
             touched.append(e["id"])
-    body = json.dumps(entries, ensure_ascii=False, indent=2)
-    LEDGER.write_text(text[:start] + "\n" + body + text[end:], encoding="utf-8", newline="\n")
-    for entry_id in touched:
-        subprocess.run([sys.executable, str(CHECK), "--update-hash", entry_id],
-                       check=True, encoding="utf-8")
-    r = subprocess.run([sys.executable, str(CHECK)], encoding="utf-8",
-                       capture_output=True)
-    print(r.stdout.strip().splitlines()[-1] if r.stdout.strip() else r.stderr.strip()[-300:])
+    pr.write_ledger(text, start, end, entries)
+    rc = pr.finish(touched)
     print(f"re-stamped {len(touched)} entries: {', '.join(touched)}")
-    sys.exit(r.returncode)
+    sys.exit(rc)
 
 
 if __name__ == "__main__":

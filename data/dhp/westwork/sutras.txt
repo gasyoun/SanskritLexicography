@@ -1,0 +1,1637 @@
+01.0001   2 BU sattAyAm
+01.0002   2 udAttaH parasmEBAzA
+01.0003  47 eDa vfdDO
+01.0004  49 spardDa saNGarze
+01.0005  50 gADf pratizWAlipsayorgranTe ca
+01.0006  51 bADf loqane
+01.0007  52 nADf nATf yAYcopatApESvaryASIHzu
+01.0008  55 daDa DAraRe
+01.0009  57 skudi ApravaRe
+01.0010  57 Svidi SvEtye
+01.0011  57 vadi aBivAdanastutyoH
+01.0012  58 Badi kalyARe suKe ca
+01.0013  58 madi stutimodamadasvapnakAntigatizu
+01.0014  58 spadi kiYciccalane
+01.0015  58 klidi paridevane
+01.0016  59 muda harze
+01.0017  60 dada dAne
+01.0018  60 zvada svarda AsvAdane
+01.0019  61 urda mAne krIqAyAM ca
+01.0020  61 kurda Kurda gurda guda krIqAyAmeva
+01.0021  61 zUda kzaraRe
+01.0022  62 hrAda avyakte Sabde
+01.0023  62 hlAdI suKe ca
+01.0024  62 svAda AsvAdane
+01.0025  62 parda kutsite Sabde
+01.0026  63 yatI prayatne
+01.0027  63 yutf jutf BAsane
+01.0028  63 viTf veTf yAcane
+01.0029  63 SraTi SETilye
+01.0030  64 graTi kOwilye
+01.0031  64 katTa SlAGAyAm
+01.0032  64 eDAdaya udAttA anudAttetaH
+01.0033  64 ata sAtatyagamane
+01.0034  65 citI saMjYAne
+01.0035  66 cyutir Asecane
+01.0036  66 Scyutir kzaraRe
+01.0037  67 manTa viloqane
+01.0038  68 kuTi puTi luTi maTi mAnTa hiMsAsaNkleSanayoH
+01.0039  68 ziDa gatyAm
+01.0040  69 ziDU SAstre mANgalye ca
+01.0041  70 KAdf BakzaRe
+01.0042  71 Kada sTErye hiMsAyAM ca
+01.0043  71 bada sTErye
+01.0044  71 gada vyaktAyAM vAci
+01.0045  72 rada vileKane
+01.0046  72 Rada avyakte Sabde
+01.0047  72 arda gatO yAcane ca
+01.0048  73 narda garda Sabde
+01.0049  73 tarda hiMsAyAm
+01.0050  73 karda kutsite Sabde
+01.0051  73 Karda dandaSUke
+01.0052  73 ati adi banDane
+01.0053  74 idi paramESvarye
+01.0054  74 bidi avayave
+01.0055  75 gaqi vadanEkadeSe
+01.0056  75 Ridi kutsAyAm
+01.0057  75 wunadi samfdDO
+01.0058  75 cadi AhlAdane dIptO ca
+01.0059  75 tradi cezwAyAm
+01.0060  75 kadi kradi kladi AhvAne rodane ca
+01.0061  76 klidi paridevane
+01.0062  76 SunDa SudDO
+01.0063  76 atAdayaH udAttA udAtteto gatAH
+01.0064  76 SIkf secane
+01.0065  77 lokf darSane
+01.0066  77 Slokf saNGAte
+01.0067  77 drekf Drekf SabdotsAhayoH
+01.0068  77 rekf SaNkAyAm
+01.0069  77 sekf srekf sraki Sraki Slaki gatyarTAH
+01.0070  77 Saki SaNkAyAm
+01.0071  77 aki lakzaRe
+01.0072  78 vaki kOwilye
+01.0073  78 maki maRqane
+01.0074  78 kaka lOlye
+01.0075  78 kuka vfka AdAne
+01.0076  79 caka tfptO pratiGAte ca
+01.0077  79 kaki vaki Svaki traki QOkf trOkf zvazka vaska maska wikf wIkf raGi laGi gatyarTAH
+01.0078  80 aGi vaGi maGi gatyAkzepe
+01.0079  80 maGi kEtave ca
+01.0080  80 rAGf lAGf drAGf sAmarTye
+01.0081  80 drAGf AyAme ca
+01.0082  80 SlAGf katTane
+01.0083  80 SIkrAdaya udAttA anudAtteto gatAH
+01.0084  81 Pakka nIcErgatO
+01.0085  81 taka hasane
+01.0086  81 taki kfcCrajIvane
+01.0087  81 bukka BazaRe
+01.0088  81 kaKa hasane
+01.0089  81 oKf rAKf lAKf drAKf DrAKf SozaRAlamarTayoH
+01.0090  81 SAKf SlAKf vyAptO
+01.0091  82 uKa uKi vaKa vaKi maKa maKi RaKa RaKi raKa raKi laKa laKi iKa iKi IKi valgi ragi lagi agi vagi magi tagi tvagi Sragi Slagi igi rigi ligi gatyarTAH
+01.0092  84 tvagi kampane ca
+01.0093  84 yugi jugi vugi varjane
+01.0094  84 GaGa hasane
+01.0095  85 maGi maRqane
+01.0096  84 SiGi AGrARe
+01.0097  84 PakkAdaya udAttA udAttetaH
+01.0098  84 varca dIptO
+01.0099  85 zaca secane
+01.0100  85 locf darSane
+01.0101  86 Saca vyaktAyAM vAci
+01.0102  86 Svaca Svaci gatO
+01.0103  86 kaca banDane
+01.0104  86 kaci kAci dIptibanDanayoH
+01.0105  86 maca muci kalkane
+01.0106  86 maci DAraRocCrAyapUjanezu
+01.0107  86 paci vyaktIkaraRe
+01.0108  87 zwuca prasAde
+01.0109  87 fja gatisTAnArjanopArjanezu
+01.0110  88 fji BfjI Barjane
+01.0111  88 ejf Brejf BrAjf dIptO
+01.0112  89 Ija gatikutsanayoH
+01.0113  89 varcAdaya udAttA anudAttetaH
+01.0114  89 Suca Soke
+01.0115  89 kuca Sabde tAre
+01.0116  89 kuYca kruYca kOwilyAlpIBAvayoH
+01.0117  90 luYca apanayane
+01.0118  90 aYcu gatipUjanayoH
+01.0119  92 vaYcu caYcu taYcu tvaYcu mruYcu mluYcu mrucu mlucu gatyarTAH
+01.0120  93 grucu glucu kuju Kuju steyakaraRe
+01.0121  93 gluYcu zasja gatO
+01.0122  94 guji avyakte Sabde
+01.0123  94 arca pUjAyAm
+01.0124  94 mlecCa avyakte Sabde
+01.0125  95 lacCa lACi lakzaRe
+01.0126  95 vACi icCAyAm
+01.0127  95 ACi AyAme
+01.0128  96 hrIcCa lajjAyAm
+01.0129  96 hurCA kOwilye
+01.0130  96 murCA mohasamucCrAyayoH
+01.0131  96 sPurCA vistftO
+01.0132  96 yucCa pramAde
+01.0133  96 uCi uYCe
+01.0134  97 ucCI vivAse
+01.0135  98 Draja Draji Dfja Dfji Dvaja Dvaji gatO
+01.0136  98 kUja avyakte Sabde
+01.0137  98 arja zarja arjane
+01.0138  98 garja Sabde
+01.0139  98 tarja Bartsane
+01.0140  98 karja vyaTane
+01.0141  98 Karja pUjane ca
+01.0142  98 aja gatikzepaRayoH
+01.0143 100 teja pAlane
+01.0144 100 Kaja manTe
+01.0145 100 Kaji gativEkalye
+01.0146 100 ejf kampane
+01.0147 101 wuosPUrjA vajranirGoze
+01.0148 101 kzi kzaye
+01.0149 101 kzIja avyakte Sabde
+01.0150 101 laja laji Barjane
+01.0151 101 lAja lAji Bartsane ca
+01.0152 102 jaja jaji yudDe
+01.0153 102 tuja hiMsAyAm
+01.0154 102 tuji pAlane ca
+01.0155 102 gaja gaji gfja gfji muja muji SabdArTAH
+01.0156 102 gaja madane ca
+01.0157 102 vaja vraja gatO
+01.0158 102 SucAdaya udAttA udAttetaH kzivarjam
+01.0159 103 awwa atikramaRahiMsayoH
+01.0160 103 vezwa vezwane
+01.0161 103 cezwa cezwAyAm
+01.0162 103 gozwa lozwa saNGAte
+01.0163 103 Gawwa calane
+01.0164 103 sPuwa vikasane
+01.0165 103 aWi gatO
+01.0166 104 vaWi ekacaryAyAm
+01.0167 104 maWi kaWi Soke
+01.0168 104 muWi pAlane
+01.0169 104 heWa vibADAyAm
+01.0170 104 eWa ca
+01.0171 104 hiqi gatyanAdarayoH
+01.0172 104 huqi saNGAte
+01.0173 104 kuqi dAhe
+01.0174 104 vaqi viBAjane
+01.0175 104 maqi ca
+01.0176 105 Baqi pariBAzaRe
+01.0177 105 piqi saNGAte
+01.0178 105 muqi mArjane
+01.0179 105 tuqi toqane
+01.0180 105 huqi varaRe
+01.0181 105 caqi kope
+01.0182 105 Saqi rujAyAM saNGAte ca
+01.0183 105 taqi tAqane
+01.0184 106 paqi gatO
+01.0185 106 kaqi made
+01.0186 106 Kaqi manTe
+01.0187 106 heqf hoqf anAdare
+01.0188 106 vAqf AplAvye
+01.0189 107 drAqf DrAqf viSaraRe
+01.0190 107 SAqf SlAGAyAm
+01.0191 107 awwAdaya udAttA anudAttetaH
+01.0192 107 SOwf garve
+01.0193 107 yOwf banDe
+01.0194 107 mrewf mreqf mlewf unmAde
+01.0195 107 kawe varzAvaraRayoH
+01.0196 108 awa pawa gatO
+01.0197 109 rawa pariBAzaRe
+01.0198 109 lawa bAlye
+01.0199 109 Sawa rujAviSaraRagatyavasAdanezu
+01.0200 109 vawa vezwane
+01.0201 109 kiwa Kiwa trAse
+01.0202 109 Siwa ziwa anAdare
+01.0203 109 jawa Jawa saNGAte
+01.0204 110 Bawa BftO
+01.0205 110 tawa ucCrAye
+01.0206 110 Kawa kANkzAyAm
+01.0207 110 Rawa nftO
+01.0208 110 piwa SabdasaNGAtayoH
+01.0209 110 hawa dIptO
+01.0210 111 zawa avayave
+01.0211 111 luwa viloqane
+01.0212 111 ciwa paraprezye
+01.0213 111 viwa Sabde
+01.0214 111 biwa AkroSe
+01.0215 111 iwa kiwa kawI gatO
+01.0216 113 maqi BUzAyAm
+01.0217 113 kuqi vEkalye
+01.0218 113 muwa pramardane
+01.0219 113 cuqi alpIBAve
+01.0220 113 muqi KaRqane
+01.0221 114 ruwi luwi steye
+01.0222 114 sPuwirviSaraRe
+01.0223 114 paWa vyaktAyAM vAci
+01.0224 114 vaWa sTOlye
+01.0225 114 maWa kaWa madanivAsayoH
+01.0226 114 raWa pariBAzaRe
+01.0227 114 haWa plutiSaWatvayoH
+01.0228 115 ruWa luWa uWa upaGAte
+01.0229 115 piWa hiMsAsaMkleSanayoH
+01.0230 115 SaWa ketave ca
+01.0231 115 SuWa gatipratiGAte
+01.0232 115 kuWi ca
+01.0233 115 luWi Alasye pratiGAte ca
+01.0234 115 SuWi SozaRe
+01.0235 115 ruWi luWi gatO
+01.0236 115 cuqqa BAvakaraRe
+01.0237 115 aqqa aBiyoge
+01.0238 115 kaqqa kArkaSye
+01.0239 116 krIqf vihAre
+01.0240 116 tuqf toqane
+01.0241 116 hUqf huqf hoqf gatO
+01.0242 116 rOqf anAdare
+01.0243 116 roqf loqf unmAde
+01.0244 116 aqa udyamane
+01.0245 116 laqa vilAse
+01.0246 116 kaqa made
+01.0247 116 gaqi vadanEkadeSe
+01.0248 116 SOwAdaya udAttA udAttetaH
+01.0249 117 tipf tepf zwipf zwepf kzaraRArTAH
+01.0250 117 tepf kampane ca
+01.0251 117 glepf dEnye
+01.0252 117 wuvepf kampane
+01.0253 117 kepf gepf glepf ca
+01.0254 117 mepf repf lepf gatO
+01.0255 117 trapUz lajjAyAm
+01.0256 118 kapi calane
+01.0257 118 rabi labi abi Sabde
+01.0258 119 labi avasraMsane ca
+01.0259 119 kabf varRe
+01.0260 119 klIbf aDArzwye
+01.0261 119 kzIbf made
+01.0262 119 SIBf katTane
+01.0263 119 cIBf ca
+01.0264 119 reBf Sabde
+01.0265 119 zwaBi skaBi pratibanDe
+01.0266 120 jaBi jfBi gAtravinAme
+01.0267 121 SalBa katTane
+01.0268 121 valBa Bojane
+01.0269 121 galBa DArzwye
+01.0270 121 SramBu pramAde
+01.0271 122 zwuBu stamBe
+01.0272 122 tipyAdaya udAttA anudAttetaH tipivarjam
+01.0273 122 gupU rakzaRe
+01.0274 123 DUpa santApe
+01.0275 123 jalpa japa vyaktAyAM vAci
+01.0276 123 japa mAnase ca
+01.0277 123 capa sAntvane
+01.0278 123 zapa samavAye
+01.0279 124 rapa lapa vyaktAyAM vAci
+01.0280 124 cupa mandAyAM gatO
+01.0281 124 tupa tumpa trupa trumpa tuPa tumPa truPa trumPa hiMsArTAH
+01.0282 124 parpa raPa raPi arba parba larba barba marba karba Karba garba Sarba zarba carba gatO
+01.0283 125 kubi CAdane
+01.0284 125 lubi tubi ardane
+01.0285 125 cubi vaktrasaMyoge
+01.0286 125 zfBu zfmBu hiMsArTO
+01.0287 125 SuBa SumBa BAzaRe hiMsAyAM ca
+01.0288 125 gupAdaya udAttA udAttetaH
+01.0289 125 GiRi GuRi GfRi grahaRe
+01.0290 126 GuRa GUrRa BramaRe
+01.0291 126 paRa vyavahAre stutO ca
+01.0292 126 pana ca
+01.0293 128 BAma kroDe
+01.0294 128 kzamUz sahane
+01.0295 129 kamu kAntO
+01.0296 130 GiRRAdaya udAttA anudAttetaH
+01.0297 130 aRa raRa vaRa BaRa maRa kaRa kvaRa vraRa BraRa DvaRa SabdArTAH
+01.0298 131 oRf apanayane
+01.0299 132 SoRf varRagatyoH
+01.0300 132 SroRf saNGAte
+01.0301 132 SloRf ca
+01.0302 132 prERf gatipreraRaSlezaRezu
+01.0303 132 DraRa Sabde
+01.0304 132 kanI dIptikAntigatizu
+01.0305 132 zwana vana Sabde
+01.0306 133 vana zaRa samBaktO
+01.0307 133 ama gatyAdizu
+01.0308 134 drama hamma mImf gatO
+01.0309 134 camu Camu jamu Jamu adane
+01.0310 135 kramu pAdavikzepe
+01.0311 137 aRAdaya udAttA udAttetaH
+01.0312 137 aya vaya paya maya caya taya Raya gatO
+01.0313 139 daya dAnagatirakzaRahiMsAdAnezu
+01.0314 139 raya gatO
+01.0315 139 UyI tantusaMtAne
+01.0316 139 pUyI viSaraRe durganDe ca
+01.0317 139 knUyI Sabde undane ca
+01.0318 139 kzmAyI viDUnane
+01.0319 139 sPAyI opyAyI vfdDO
+01.0320 140 tAyf santAnapAlanayoH
+01.0321 140 Sala calanasaMvaraRayoH
+01.0322 141 vala valla saMvaraRe saYcaraRe ca
+01.0323 141 mala malla DAraRe
+01.0324 142 Bala Balla pariBAzaRahiMsAdAnezu
+01.0325 142 kala SabdasaMKyAnayoH
+01.0326 142 kalla avyakte Sabde
+01.0327 142 tevf devf devane
+01.0328 143 zevf gevf glevf plevf mlevf secane
+01.0329 143 revf plavagatO
+01.0330 144 AyAdaya udAttA anudAttetaH
+01.0331 144 mavya banDane
+01.0332 144 sUrkzya Irkzya Irzya IrzyArTAH
+01.0333 145 haya gatO
+01.0334 145 Sucya aBizave
+01.0335 146 harya gatikAntyoH
+01.0336 146 ala BUzaRaparyAptivAraRezu
+01.0337 146 YiPalA viSaraRe
+01.0338 147 mIla SmIla smIla kzmIla nimezaRe
+01.0339 147 pIla pratizwamBe
+01.0340 147 RIla varRe
+01.0341 147 SIla samADO
+01.0342 147 kIla banDane
+01.0343 148 kUla AvaraRe
+01.0344 148 SUla rujAyAM saNGAte ca
+01.0345 145 tUla nizkarze
+01.0346 148 pUla saMGAte
+01.0347 148 mUla pratizWAyAm
+01.0348 148 Pala nizpattO
+01.0349 149 culla BAvakaraRe
+01.0350 149 Pulla vikasane
+01.0351 149 cilla SETilye BAvakaraRe ca
+01.0352 149 velf celf kelf Kelf kzvelf vella calane
+01.0353 150 pelf Self Pelf gatO
+01.0354 150 sKala saMcalane
+01.0355 150 Kala saYcaye
+01.0356 150 gala adane
+01.0357 150 zala gatO
+01.0358 151 dala viSaraRe
+01.0359 151 Svala Svalla ASugamane
+01.0360 151 Kolf Korf gatipratiGAte
+01.0361 151 Dorf gaticAturyye
+01.0362 151 tsara CadmagatO
+01.0363 151 kmara hUrCane
+01.0364 151 aBra vaBra maBra cara gatyarTAH
+01.0365 153 zWivu nirasane
+01.0366 153 ji jaye
+01.0367 154 jIva prARaDAraRe
+01.0368 154 pIva mIva tIva RIva sTOlye
+01.0369 155 kzIvu nirasane
+01.0370 155 urvI turvI TurvI durvI DurvI hiMsArTAH
+01.0371 156 gurvI udyamane
+01.0372 156 murvI banDane
+01.0373 156 purva parva Parva marva pUraRe
+01.0374 158 carva adane
+01.0375 158 Barva hiMsAyAm
+01.0376 158 karva Karva garva darpe
+01.0377 158 arva Sarva zarva hiMsAyAm
+01.0378 158 ivi vyAptO
+01.0379 158 pivi mivi Rivi secane
+01.0380 159 hivi divi Divi jivi prIRanArTAH
+01.0381 159 rivi ravi Davi gatyarTAH
+01.0382 159 kfvi hiMsAkaraRayoSca
+01.0383 159 mava banDane
+01.0384 160 ava rakzaRagatikAntiprItitfptyavagamapraveSaSravaRasvAmyarTayAcanakriyecCAdIptyavAptyAliNganahiMsAdAnaBAgavfdDizu
+01.0385 160 mavyAdaya udAttAH udAtteto jayativarjam
+01.0386a 160 DAvu gatiSudDyoH
+01.0387 160 Dukza Dikza sandIpanakleSanajIvanezu
+01.0388 161 vfkza varaRe
+01.0389 161 Sikza vidyopAdAne
+01.0390 161 Bikza yAcYAyAmalABe lABe ca
+01.0391 161 kleSa avyaktAyAM vAci
+01.0392 161 dakza vfdDO SIGrArTe ca
+01.0393 162 dIkza mORqyejyopanayananiyamavratAdeSezu
+01.0394 162 Ikza darSane
+01.0395 162 Iza gatihiMsAdarSanezu
+01.0396 163 BAza vyaktAyAM vAci
+01.0397 163 varza snehane
+01.0398 163 gezf anvicCAyAm
+01.0399 163 ezf prayatne
+01.0400 163 jezf Rezf ezf prezf gatO
+01.0401 163 rezf hezf avyakte Sabde
+01.0402 163 kAsf SabdakutsAyAm
+01.0403 164 BAsf dIptO
+01.0404 164 RAsf rAsf Sabde
+01.0405 165 Rasa kOwilye
+01.0406 165 Byasa Baye
+01.0407 165 ANaH Sasi icCAyAm
+01.0408 165 grasu glasu adane
+01.0409 165 Iha cezwAyAm
+01.0410 165 bahi mahi vfdDO
+01.0411 166 ahi gatO
+01.0412 166 garha galha kutsAyAm
+01.0413 166 barha balha prADAnye
+01.0414 166 varha valha pariBAzaRahiMsAdAnezu
+01.0415 166 pliha gatO
+01.0416 167 vehf jehf bAhf prayatne
+01.0417 167 drAhf nidrAkzaye
+01.0418 167 kASf dIptO
+01.0419 167 Uha vitarke
+01.0420 168 gAhU viloqane
+01.0421 168 gfhU grahaRe
+01.0422 169 Guzi kAntikaraRe
+01.0423 169 DukzAdayaH udAttA anudAttetaH
+01.0424 169 Guzir aviSabdane
+01.0425 169 akzU vyAptO
+01.0426 170 takzU tvakzU tanUkaraRe
+01.0427 171 ukza secane
+01.0428 171 rakza pAlane
+01.0429 171 Rikza cumbane
+01.0430 171 tfkza stfkza Rakza gatO
+01.0431 171 vakza roze
+01.0432 172 mfkza saNGAte
+01.0433 172 takza tvacane
+01.0434 172 zUrkza Adare
+01.0435 172 kAkzi vAkzi mAkzi kANkzAyAm
+01.0436 172 drAkzi DrAkzi DvAkzi GoravAsite ca
+01.0437 172 cUza pAne
+01.0438 172 tUza tuzwO
+01.0439 172 pUza vfdDO
+01.0440 173 mUza steye
+01.0441 173 SUza prasave
+01.0442 173 yUza hiMsAyAm
+01.0443 173 jUza ca
+01.0444 173 BUza alaNkAre
+01.0445 173 Uza rujAyAm
+01.0446 173 Iza uYCe
+01.0447 173 kaza Kaza Siza jaza Jaza Saza vaza maza ruza riza hiMsArTAH
+01.0448 175 Baza Bartsane
+01.0449 175 uza dAhe
+01.0450 176 jizu vizu mizu secane
+01.0451 176 puza puzwO
+01.0452 176 Srizu Slizu pruzu pluzu dAhe
+01.0453 177 pfzu vfzu mfzu secane
+01.0454 177 mfzu sahane ca . itarO hiMsAsaNkleSanayoSca
+01.0455 178 Gfzu saNGarze
+01.0456 178 hfzu alIke
+01.0457 178 tusa hrasa hlasa rasa Sabde
+01.0458 178 lasa SlezaRakrIqanayoH
+01.0459 158 Gasx adane
+01.0460 179 jarja carca JarJa pariBAzaRahiMsAtarjanezu
+01.0461 179 pisf pesf gatO
+01.0462 179 hase hasane
+01.0463 180 RiSa samADO
+01.0464 180 miSa maSa Sabde rozakfte ca
+01.0465 180 Sava gatO
+01.0466 180 SaSa plutagatO
+01.0467 180 Sasu hiMsAyAm
+01.0468 180 SaMsu stutO
+01.0469 181 caha parikalkane
+01.0470 181 maha pUjAyAm
+01.0471 182 raha tyAge
+01.0472 182 rahi gatO
+01.0473 182 dfha dfhi bfha bfhi vfdDO
+01.0474 183 bfhi Sabdane
+01.0475 183 tuhir duhir uhir ardane
+01.0476 184 arha pUjAyAm
+01.0477 184 GuzirAdaya udAttA udAttetaH
+01.0478 184 dyuta dIptO
+01.0479 185 SvitA varRe
+01.0480 185 YimidA snehane
+01.0481 185 YizvidA snehasya mocane ca
+01.0482 185 ruca dIptAvaBiprItO ca
+01.0483 186 Guwa parivarttane
+01.0484 186 ruwa luwa luWa pratIGAte
+01.0485 186 SuBa dIptO
+01.0486 186 kzuBa saYcalane
+01.0487 186 RaBa tuBa hiMsAyAm
+01.0488 187 sraMsu DvaMsu BraMsu avasraMsane
+01.0489 187 DvaMsu gatO ca
+01.0490 187 sramBu viSvAse
+01.0491 187 vftu vartane
+01.0492 188 vfDu vfdDO
+01.0493 188 SfDu SabdakutsAyAm
+01.0494 188 syandU prasravaRe
+01.0495 189 kfpU sAmarTye
+01.0496 189 dyutAdaya udAttA anudAttetaH
+01.0497 189 vft
+01.0498 190 Gawa cezwAyAm
+01.0499 190 vyaTa BayasaYcalanayoH
+01.0500 191 praTa praKyAne
+01.0501 191 prasa vistAre
+01.0502 192 mrada mardane
+01.0503 192 sKada sKadane
+01.0504 192 kzaji gatidAnayoH
+01.0505 192 dakza gatiSAsanayoH
+01.0506 192 krapa kfpAyAM gatO
+01.0507 193 kadi kradi kladi vEklavye
+01.0508 193 YitvarA saMBrame
+01.0509 193 GawAdayaH zitaH
+01.0510 193 udAttA anudAttetaH
+01.0511 193 jvara roge
+01.0512 194 gaqa secane
+01.0513 194 heqa vezwane
+01.0514 194 vawa Bawa pariBAzaRe
+01.0515 194 nawa nfttO
+01.0516 194 zwaka pratiGAte
+01.0517 195 caka tfptO
+01.0518 195 kaKe hasane
+01.0519 195 rage SaNkAyAm
+01.0520 195 lage saNge
+01.0521 195 hrage hlage zage zwage saMvaraRe
+01.0522 195 kage nocyate
+01.0523 195 aka aga kuwilAyAM gatO
+01.0524 196 kaRa raRa gatO
+01.0525 196 caRa SaRa SraRa dAne ca
+01.0526 196 SraTa kraTa klaTa hiMsArTAH
+01.0527 196 cana ca
+01.0528 196 vanu ca nocyate
+01.0529 197 jvala dIptO
+01.0530 197 hvala hmala calane
+01.0531 197 smf ADyAne
+01.0532 197 dF Baye
+01.0533 197 nF naye
+01.0534 139 SrA pAke
+01.0535 198 mAraRatozaRaniSAmanezu jYA
+01.0536 199 kampane caliH
+01.0537 199 CadirUrjane
+01.0538 199 jihvonmaTane laqiH
+01.0539 200 madI harzaglepanayoH
+01.0540 200 Dvana Sabde
+01.0541 200 svana avataMsane
+01.0542 200 GawAdayo mitaH
+01.0543 200 janIjFzknasuraYjo'mantASca
+01.0544 200 jvalahvalahmalanamAmanupasargAdvA
+01.0545 201 glAsnAvanuvamAM ca
+01.0546 201 na kamyamicamAm
+01.0547 201 Samo'darSane
+01.0548 201 yamo'parivezaRe
+01.0549 201 sKadiravapariByAM ca
+01.0550 202 PaRa gatO
+01.0551 202 vft
+01.0552 202 jvarAdaya udAttA udAttetaH
+01.0553 202 rAjf dIptO
+01.0554 202 udAttaH svaritet
+01.0555 204 wuBrAjf wuBrASf wuBlASf dIptO
+01.0556 204 udAttA anudAttetaH
+01.0557 204 syamu svana Dvana Sabde
+01.0558 205 zama zwama vEklavye
+01.0559 206 jvala dIptO
+01.0560 206 cala kalpane
+01.0561 206 jala GAtane
+01.0562 206 wala wvala vEklavye
+01.0563 206 zWala sTAne
+01.0564 207 hala vileKane
+01.0565 207 Rala ganDane
+01.0566 207 pala gatO
+01.0567 208 bala prARane DAnyAvaroDe ca
+01.0568 208 pula mahattve
+01.0569 208 kula saMstyAne banDuzu ca
+01.0570 209 Sala hula patx gatO
+01.0571 209 hula hiMsAsaMvaraRayoSca
+01.0572 213 kvaTe nizpAke
+01.0573 213 paTe gatO
+01.0574 213 maTe viloqane
+01.0575 213 wuvama udgiraRe
+01.0576 213 Bramu calane
+01.0577 214 kzara saMcalane
+01.0578 214 syamAdaya udAttA udAttetaH
+01.0579 214 zaha marzaRe
+01.0580 214 udAtto'nudAttet
+01.0581 216 rama krIqAyAm
+01.0582 216 anudAtto'nudAttet
+01.0583 217 zadx viSaraRagatyavasAdanezu
+01.0584 219 Sadx SAtane
+01.0585 219 kruSa AhvAne rodane ca
+01.0586 219 sadAdayastrayo'nudAttA udAttetaH
+01.0587 220 kuca samparcanakOwilyapratizwamBavileKanezu
+01.0588 220 buDa avagamane
+01.0589 220 ruha bIjajanmani prAdurBAve ca
+01.0590 221 kasa gatO
+01.0591 221 kucAdaya udAttA udAttetaH
+01.0592 221 ruhistvanudAttaH
+01.0593 221 vft
+01.0594 221 hikka avyakte Sabde
+01.0595 221 aYcu gatO yAcane ca
+01.0596 222 wuyAcf yAcYAyAm
+01.0597 222 rewf pariBAzaRe
+01.0598 222 cate cade yAcane ca
+01.0599 224 proTf paryAptO
+01.0600 224 midf medf meDAhiMsanayoH
+01.0601 224 meDf saNgame ca
+01.0602 224 Ridf Redf kutsAsannikarzayoH
+01.0603 224 SfDu mfDu undane
+01.0604 225 buDir boDane
+01.0605 225 u bundir niSAmane
+01.0606 224 veRf gatijYAnacintAniSAmanavAditragrahaRezu
+01.0607 224 Kanu avadAraRe
+01.0608 227 cIvf AdAnasaMvaraRayoH
+01.0609 227 cAyf pUjAniSAmanayoH
+01.0610 227 vyaya gatO
+01.0611 227 dASf dAne
+01.0612 227 Bezf Baye
+01.0613 228 Brezf gatO
+01.0614 228 asa gatidIptyAdAnezu
+01.0615 228 spaSa bADanasparSanayoH
+01.0616 228 laza kAntO
+01.0617 228 caza BakzaRe
+01.0618 228 Caza hiMsAyAm
+01.0619 229 Jaza AdAnasaMvaraRayoH
+01.0620 229 Blakza adane
+01.0621 229 dAsf dAne
+01.0622 229 mAhf mAne
+01.0623 229 guhU saMvaraRe
+01.0624 230 hikkAdaya udAttAH svaritetaH
+01.0625 230 SriY sevAyAm
+01.0626 230 udAttaH
+01.0627 231 BfY BaraRe
+01.0628 232 hfY haraRe
+01.0629 234 DfY DAraRe
+01.0630 235 RIY prApaRe
+01.0631 238 BaratyAdayaScatvAro'nudAttA uBayapadinaH
+01.0632 238 Dew pAne
+01.0633 240 glE mlE harzakzaye
+01.0634 241 dyE nyakkaraRe
+01.0635 241 drE svapne
+01.0636 241 DrE tfptO
+01.0637 241 DyE cintAyAm
+01.0638 241 rE Sabde
+01.0639 241 styE zwyE SabdasaNGAtayoH
+01.0640 243 KE Kadane
+01.0641 243 kzE jE zE kzaye
+01.0642 243 kE gE Sabde
+01.0643 244 SE SrE pAke
+01.0644 244 pE o vE SozaRe
+01.0645 245 zwE vezwane
+01.0646 245 dEp SoDane
+01.0647 245 pA pAne
+01.0648 247 GrA ganDopAdAne
+01.0649 248 DmA SabdAgnisaMyogayoH
+01.0650 248 zWA gatinivfttO
+01.0651 252 mnA aByAse
+01.0652 252 dAR dAne
+01.0653 254 hvf kOwilye
+01.0654 254 svf SabdopatApayoH
+01.0655 255 smf cintAyAm
+01.0656 255 sf gatO
+01.0657 257 f gatiprApaRayoH
+01.0658 260 gf Gf secane
+01.0659 260 Dvf hUrcCane
+01.0660 260 sru gatO
+01.0661 261 zu prasavESvaryayoH
+01.0662 262 Sru SravaRe
+01.0663 263 Dru sTErye
+01.0664 263 du dru gatO
+01.0665 264 ji jri aBiBave
+01.0666 265 DayatyAdayo'nudAttA udAttetaH
+01.0667 265 SrayatistUdAttaH
+01.0668 265 taTA Yita uBayapadinaH
+01.0669 265 zmiN IzadDasane
+01.0670 265 guN avyakte Sabde
+01.0671 266 gAN gatO
+01.0672 267 kuN GuN uN NuN Sabde
+01.0673 267 cyuN jyuN pruN pluN gatO
+01.0674 267 ruN gatirezaRayoH
+01.0675 268 DfN avaDvaMsane
+01.0676 268 meN praRidAne
+01.0677 268 deN rakzaRe
+01.0678 268 SyEN gatO
+01.0679 269 pyEN vfdDO
+01.0680 269 trEN pAlane
+01.0681 270 smiNpraBftaya etadantA anudAttA AtmaneBAzAH
+01.0682 269 pUN pavane
+01.0683 269 mUN banDane
+01.0684 269 qIN vihAyasA gatO
+01.0685 270 pUNAdayastraya ete udAttA AtmanepadinaH
+01.0686 270 tF plavanataraRayoH
+01.0687 270 udAttaH parasmEBAzaH
+01.0688 271 gupa gopane
+01.0689 271 tija niSAne
+01.0690 271 mAna pUjAyAm
+01.0691 271 baDa banDane
+01.0692 272 gupAdayaScatvAra ete'nudAttetaH
+01.0693 272 raBa rABasye
+01.0694 273 qulaBaz prAptO
+01.0695 274 zvaYja parizvaNge
+01.0696 274 hada purIzotsarge
+01.0697 274 raBAdayaScatvAro'nudAttA anudAttetaH
+01.0698 274 YikzvidA avyakte Sabde
+01.0699a 274 ayamudAtta udAttet
+01.0699b 274 skandir gatiSozaRayoH
+01.0700 275 yaBa viparItamETune
+01.0701 276 Rama prahvatve Sabde
+01.0702 276 gamx sfpx gatO
+01.0703 282 yama uparame
+01.0704 283 tapa santApe
+01.0705 284 tyaja hAnO
+01.0706 285 zaYja saNge
+01.0707 286 dfSir prekzaRe
+01.0708 287 daMSa daMSane
+01.0709 288 kfza vileKane
+01.0710 289 daha BasmIkaraRe
+01.0711 289 miha secane
+01.0712 289 skandyAdaya etadantA anudAttA udAttetaH
+01.0713 289 kita nivAse rogApanayane ca
+01.0714 289 ayamudAttet
+01.0715 290 dAna avaKaRqane
+01.0716 290 SAna tejane
+01.0717 290 imAvapi nityasanantO svaritetO
+01.0718 290 qupacaz pAke
+01.0719 291 zaca samavAye
+01.0720 292 Baja sevAyAm
+01.0721 293 raYja rAge
+01.0722 294 Sapa AkroSe
+01.0723 295 tviza dIptO
+01.0724 295 yaja devapUjAsaNgatikaraRadAnezu
+01.0725 297 quvap bIjasantAne
+01.0726 298 vaha prApaRe
+01.0727 299 pacAdayo'nudAttAH svaritetaH
+01.0728 299 sacatistUdAttaH
+01.0729 299 vasa nivAse
+01.0730 299 anudAtta udAttet
+01.0731 302 veY tantusantAne
+01.0732 303 vyeY saMvaraRe
+01.0733 303 hveY sparDAyAM Sabde ca
+01.0734 305 veYAdayastrayo'nudAttA uBayatoBAzAH
+01.0735 305 vada vyaktAyAM vAci
+01.0736 306 wu o Svi gativfdDyoH
+01.0737 306 ayaM vadatiSca parasmEBAzAvudAttetO
+01.0738 308 vft
+02.0001 309 ada BakzaRe
+02.0002 311 hana hiMsAgatyoH
+02.0003 321 adihanI anudAttAvudAttetO
+02.0004 321 dviza aprItO
+02.0005 321 duha prapUraRe
+02.0006 323 diha upacaye
+02.0007 324 liha AsvAdane
+02.0008 324 dvizAdayo'nudAttAH svaritetaH
+02.0009 324 cakziN vyaktAyAM vAci
+02.0010 324 udAtto'nudAttet
+02.0011 329 Ira gatO kampane ca
+02.0012 330 Iqa stutO
+02.0013 330 ISa ESvarye
+02.0014 330 Asa upaveSane
+02.0015 331 ANaSSAsu icCAyAm
+02.0016 333 vasa AcCAdane
+02.0017 333 kasi gatiSAsanayoH
+02.0018 335 Risi cumbane
+02.0019 335 Riji SudDO
+02.0020 335 Siji avyakte Sabde
+02.0021 335 piji varRe
+02.0022 336 vfjI varjane
+02.0023 336 pfcI samparcane
+02.0024 336 irAdaya udAttA anudAttetaH
+02.0025 336 zUN prARigarBavimocane
+02.0026 339 SIN svapne
+02.0027 341 AtmanepadinAvudAttO
+02.0028 341 yu miSraRe
+02.0029 343 ru Sabde
+02.0030 344 Ru stutO
+02.0031 344 wukzu Sabde
+02.0032 345 kzRu tejane
+02.0033 345 zRu prasravaRe
+02.0034 345 yupraBftaya udAttA udAttetaH
+02.0035 345 totistvanudAttaH
+02.0036 345 UrRuY AcCAdane
+02.0037 345 udAtta uBayatoBAzaH
+02.0038 347 dyu aBigamane
+02.0039 347 anudAtta udAttet
+02.0040 347 zu prasavESvaryayoH
+02.0041 347 anudAtta udAttet
+02.0042 347 ku Sabde
+02.0043 347 ayamapyanudAtta udAttet
+02.0044 348 zwuY stutO
+02.0045 348 anudAtta uBayatoBAzaH
+02.0046 349 brUY vyaktAyAM vAci
+02.0047 349 anudAtta uBayatoBAzaH
+02.0048 351 iR gatO
+02.0049 357 iN aDyayane
+02.0050 359 ik smaraRe
+02.0051 360 vI gatiprajanakAntyasanaKAdanezu
+02.0052 360 yA prApaRe
+02.0053 361 vA gatiganDanayoH
+02.0054 362 BA dIptO
+02.0055 362 zRA SOce
+02.0056 363 SrA pAke
+02.0057 363 drA kutsAyAM gatO
+02.0058 363 psA BakzaRe
+02.0059 363 pA rakzaRe
+02.0060 366 rA dAne
+02.0061 366 lA AdAne
+02.0062 367 dAp lavane
+02.0063 367 KyA prakaTane
+02.0064 368 prA pUraRe
+02.0065 374 mA mAne
+02.0066 368 vaca pariBAzaRe
+02.0067 369 iRpraBftayo'nudAttA parasmEpadinaH
+02.0068 369 iN tvAtmanepadI
+02.0069 369 vida jYAne
+02.0070 371 asa Buvi
+02.0071 372 mfjU SudDO
+02.0072 373 rudir aSruvimocane
+02.0073 374 vidAdaya udAttA udAttetaH
+02.0074 374 Yizvap Saye
+02.0075 374 udAttedanudAttaH
+02.0076 375 Svasa prARane
+02.0077 376 ana ca
+02.0078a 376 jakza BakzahasanayoH
+02.0078b 377 rudAdayaH paYca gatAH
+02.0079 377 jAgf nidrAkzaye
+02.0080 378 daridrA durgatO
+02.0081 379 cakAsf dIptO
+02.0082 379 SAsu anuSizwO
+02.0083 380 SvasAdayaH udAttA udAttetaH
+02.0084 380 dIDIN dIptidevanayoH
+02.0085 381 vevIN vetinA tulye
+02.0086 381 jakzityAdayo gatAH
+02.0087 381 zasa zasti svapne
+02.0088 382 vaSa kAntO
+02.0089 382 zasAdaya udAttA udAttetaH
+02.0090 382 carkarItaM ca
+02.0091 382 hnuN apanayane
+02.0092 383 anudAtta AtmaneBAzaH
+03.0001 384 hu dAnAdanayoH
+03.0002 385 Yi BI Baye
+03.0003 383 hrI lajjAyAm
+03.0004 386 juhotyAdayo'nudAttAH parasmEpadinaH
+03.0005 386 pF pAlanapUraRayoH
+03.0006 386 udAttaH parasmEBAzaH
+03.0007 388 quBfY DAraRapozaRayoH
+03.0008 388 anudAtta uBayatoBAzaH
+03.0009 388 mAN mAne Sabde ca
+03.0010 388 anudAtta AtmanepadI
+03.0011 389 o hAN gatO
+03.0012 389 anudAtta AtmaneBAzaH
+03.0013 389 o hAk tyAge
+03.0014 389 anudAttaH parasmEpadI
+03.0015 392 qudAY dAne
+03.0016 392 uBayatoBAzo'nudAttaH
+03.0017 394 quDAY DAraRapozaRayoH
+03.0018 394 anudAtta uBayapadI
+03.0019 396 Rijir SOcapozaRayoH
+03.0020 396 vijir pfTagBAve
+03.0021 397 vizx vyAptO
+03.0022 397 vft
+03.0023 397 nijAdayassvariteto'nudAttAH
+03.0024 397 Gf kzaraRadIptyoH
+03.0025 397 hf prasahyakaraRe
+03.0026 397 f sf gatO
+03.0027 398 GfpraBftaya udAtteto'nudAttAH
+03.0028 398 Basa BartsanadIptyoH
+03.0029 398 ki jYAne
+03.0030 399 anudAttaH
+03.0031 399 tura tvaraRe
+03.0032 399 Diza Sabde
+03.0033 399 Dana DAnye
+03.0034 399 jana janane
+03.0035 399 kyAdaya udAttA udAttetaH
+03.0036 399 gA stutO
+03.0037 399 anudAtta udAttet
+03.0038 399 vft
+04.0001 400 divu krIqAvijigIzAvyavahAradyutistutimodamadasvapnakAntigatizu
+04.0002 402 zivu tantusantAne
+04.0003 403 srivu gatiSozaRayoH
+04.0004 403 zWivu nirasane
+04.0005 403 zRusu adane
+04.0006 403 knasu hvaraRadIptyoH
+04.0007 404 vyuza dAhe
+04.0008 404 pluza ca
+04.0009 404 nftI gAtravikzepe
+04.0010 404 trasI udvege
+04.0011 405 kuTa pUtIBAve
+04.0012 405 puTa hiMsAyAm
+04.0013 405 guDa parivezwane
+04.0014 405 kzipa preraRe
+04.0015 406 puzpa vikasane
+04.0016 406 tima stima zwIma ArdrIBAve
+04.0017 406 vrIqa codane
+04.0018 406 iza gatO
+04.0019 407 zuha cakyarTe
+04.0020 407 jFz JFz vayohAnO
+04.0021 409 divAdayaH parasmEBAzA udAttAH kzipivarjam
+04.0022 409 zUN prARiprasave
+04.0023 409 dUN paritApe
+04.0024 409 AtmaneBAzAvudAttO
+04.0025 409 dIN kzaye
+04.0026 410 qIN vihAyasA gatO
+04.0027 410 DIN AdAne
+04.0028 411 mIN hiMsAyAm
+04.0029 411 rIN sravaRe
+04.0030 411 lIN SlezaRe
+04.0031 412 vrIN vfRotyarTe
+04.0032 412 svAdaya oditaH
+04.0033 412 pIN pAne
+04.0034 412 mAN mAne
+04.0035 413 IN gatO
+04.0036 413 prIN prItO
+04.0037 413 dINAdaya Atmanepadino dINvarjamanudAttAH
+04.0038 413 So tanUkaraRe
+04.0039 414 Co Cedane
+04.0040 414 zo antakarmaRi
+04.0041 415 do avaKaRqane
+04.0042 415 SyatipraBftayo'nudAttAH parasmEBAzAH
+04.0043 415 janI prAdurBAve
+04.0044 417 dIpI dIptO
+04.0045 417 pUrI ApyAyane
+04.0046 417 tUrI gatitvaraRahiMsanayoH
+04.0047 418 DUrI gUrI hiMsAgatyoH
+04.0048 418 GUrI jUrI hiMsAvayohAnyoH
+04.0049 418 SUrI hiMsAstamBanayoH
+04.0050 418 cUrI dAhe
+04.0051 418 tapa ESvarye vA
+04.0052 418 vftu varaRe
+04.0053 418 kliSa upatApe
+04.0054 419 kASf dIptO
+04.0055 419 vASf Sabde
+04.0056 419 janyAdaya udAttA anudAttetaH
+04.0057 419 mfza titikzAyAm
+04.0058 419 I Sucir pUtIBAve
+04.0059 419 udAttO svaritetO
+04.0060 419 Raha banDane
+04.0061 420 ranja rAge
+04.0062 420 Sapa AkroSe
+04.0063 420 nahAdayastrayo'nudAttAH svaritetaH
+04.0064 420 pada gatO
+04.0065 423 Kida dEnye
+04.0066 423 vida sattAyAm
+04.0067 423 buDa avagamane
+04.0068 424 yuDa samprahAre
+04.0069 424 ano ruDa kAme
+04.0070 424 aRa prARane
+04.0071 424 mana jYAne
+04.0072 426 yuja samADO
+04.0073 426 sfja visarge
+04.0074 426 liSa alpIBAve
+04.0075 427 padAdayo'nudAttA anudAttetaH aRyativarjam
+04.0076 427 rADo'karmakAd vfdDAveva
+04.0077 427 vyaDa tAqane
+04.0078 428 puza puzwO
+04.0079 428 Suza SozaRe
+04.0080 428 tuza prItO
+04.0081 428 duza vEkftye
+04.0082 428 Sliza AliNgane
+04.0083 429 Saka viBAzito marzaRe
+04.0084 429 zvidA gAtraprakzaraRe
+04.0085 429 kruDa kope
+04.0086 430 kzuDa buBukzAyAm
+04.0087 430 SuDa SOce
+04.0088 430 ziDu saMrAdDO
+04.0089 430 rADAdayo'nudAttA udAttetaH
+04.0090 430 raDa hiMsAsaMrAdDyoH
+04.0091 431 RaSa adarSane
+04.0092 432 tfpa prIRane
+04.0093 432 dfpa harzaRamohanayoH
+04.0094 432 druha jiGAMsAyAm
+04.0095 433 muha vEcitye
+04.0096 433 zRuha udgiraRe
+04.0097 433 zRiha prItO
+04.0098 434 vft
+04.0099 434 Samu upaSamane
+04.0100 434 tamu kANkzAyAm
+04.0101 435 damu upaSamane
+04.0102 435 Sramu tapasi Kede ca
+04.0103 435 Bramu anavasTAne
+04.0104 435 kzamU sahane
+04.0105 436 klamu glAnO
+04.0106 436 madI harze
+04.0107 436 vft
+04.0108 436 asu kzepaRe
+04.0109 437 yasu prayatne
+04.0110 438 jasu mokzaRe
+04.0111 438 tasu upakzaye
+04.0112 438 dasu ca
+04.0113 438 vasu stamBe
+04.0114 438 vyuza viBAge
+04.0115 438 pluza dAhe
+04.0116 438 bisa preraRe
+04.0117 438 kusa SlezaRe
+04.0118 438 busa utsarge
+04.0119 439 musa KaRqane
+04.0120 439 masI parimARe
+04.0121 439 luwa viloqane
+04.0122 439 uca samavAye
+04.0123 440 BfSu BraMSu aDaHpatane
+04.0124 440 vfSa varaRe
+04.0125 440 kfSa tanUkaraRe
+04.0126 440 Yi tfza pipAsAyAm
+04.0127 440 hfza tuzwO
+04.0128a 441 ruza roze
+04.0129 441 qipa kzepe
+04.0130 441 kupa kroDe
+04.0131 441 gupa vyAkulatve
+04.0132 441 yupa rupa lupa vimohane
+04.0133 441 luBa gArDye
+04.0134 442 kzuBa saYcalane
+04.0135 442 RaBa tuBa hiMsAyAm
+04.0136 442 klidU ArdrIBAve
+04.0137 442 YimidA snehane
+04.0138 442 Yi kzvidA snehanamocanayoH
+04.0139 442 fDu vfdDO
+04.0140 443 gfDu aBikANkzAyAm
+04.0141 443 vft
+04.0142 443 SamAdaya udAttA udAttetaH
+05.0001 444 zuY aBizave
+05.0002 445 ziY banDane
+05.0003 446 SiY niSAne
+05.0004 446 qumiY prakzepaRe
+05.0005 446 ciY cayane
+05.0006 447 stfY AcCAdane
+05.0007 448 kfY hiMsAyAm
+05.0008 448 vfY varaRe
+05.0009 450 DuY kampane
+05.0010 451 svAdayaH uBayatoBAzA vfYvarjamanudAttAH
+05.0011 451 wu du upatApe
+05.0012 451 hi gatO vfdDO ca
+05.0013 452 pf prItO
+05.0014 452 spf prItipAlanayoH
+05.0015 452 Apx vyAptO
+05.0016 454 Sakx SaktO
+05.0017 454 rADa sADa saMsidDO
+05.0018 454 dunotipraBftayo'nudAttAH parasmEpadinaH
+05.0019 454 aSU vyAptO saNGAte ca
+05.0020 456 zwiGa Askandane
+05.0021 456 aSistiGO udAttAvanudAttetO
+05.0022a 456 tika tiga ca
+05.0022b 456 zaGa hiMsAyAm
+05.0023 456 Yi DfzA prAgalBye
+05.0024 457 dunBu damBe
+05.0025 458 fDu vfdDO
+05.0026 458 Candasi
+05.0027 458 aha vyAptO
+05.0028 458 daGa GAtane pAlane ca
+05.0029 458 camu BakzaRe
+05.0030 458 ri kzi ciri jiri dASa df hiMsAyAm
+05.0031 458 vft
+06.0001 459 tuda vyaTane
+06.0002 459 Ruda preraRe
+06.0003 460 diSa atisarjane
+06.0004 460 Brasja pAke
+06.0005 462 kzipa preraRe
+06.0006 462 kfza vileKane
+06.0007 462 tudAdayo'nudAttAH svaritetaH
+06.0008 462 fzI gatO
+06.0009 463 udAtta udAttet
+06.0010 463 juzI prItisevanayoH
+06.0011 463 o vijI BayacalanayoH
+06.0012 464 o lajI o lasjI vrIqe
+06.0013 464 juzAdaya udAttA anudAttetaH
+06.0014 464 o vraScU Cedane
+06.0015 465 vyaca vyAjIkaraRe
+06.0016 465 uCi uYCe
+06.0017 466 uCI vivAse
+06.0018 466 fCa gatIndriyapralayamUrtiBavezu
+06.0019 466 miCa utkleSe
+06.0020 466 jarja carca JarJa pariBAzaRasantarjanayoH
+06.0021 466 tvaca saMvaraRe
+06.0022 466 fca stutO
+06.0023 467 ubja Arjave
+06.0024 468 udJa utsarge
+06.0025 468 luBa vimohane
+06.0026 468 riPa katTanayudDanindAhiMsAdAnezu
+06.0027 468 tfpa tfnPa tfptO
+06.0028 469 tupa tunpa tuPa tunPa hiMsAyAm
+06.0029 469 dfPa dfnPa utkleSe
+06.0030 469 fPa fnPa hiMsAyAm
+06.0031 469 guPa gunPa granTe
+06.0032 469 uBa unBa pUraRe
+06.0033 470 SuBa SunBa SoBArTe
+06.0034 470 dfBI granTe
+06.0035 470 cftI hiMsAgranTanayoH
+06.0036 470 viDa viDAne
+06.0037 470 juqa gatO
+06.0038 470 mfqa suKane
+06.0039 470 pfqa ca
+06.0040 470 pfRa prIRane
+06.0041 471 mfRa hiMsAyAm
+06.0042 471 tuRa kOwilye
+06.0043 471 puRa karmaRi SuBe
+06.0044 471 muRa pratijYAne
+06.0045 471 kuRa SabdopakaraRayoH
+06.0046 471 Suna gatO
+06.0047 471 druRa hiMsAgatikOwilyezu
+06.0048 471 GuRa GUrRa BramaRe
+06.0049 471 zura ESvaryadIptyoH
+06.0050 471 kura Sabde
+06.0051 472 Kura cCedane
+06.0052 472 mura parivezwane
+06.0053 472 kzura vileKane
+06.0054 472 Gura BImArTaSabdayoH
+06.0055 472 pura agragamane
+06.0056 472 vfhU udyamane
+06.0057 472 tfhU stfhU tfnhU hiMsArTAH
+06.0058 473 iza icCAyAm
+06.0059 473 miza spardDAyAm
+06.0060 473 kila SvEtye
+06.0061 473 tila snehane
+06.0062 473 cila nivasane
+06.0063 474 cala vilasane
+06.0064 474 ila svapnakzepaRayoH
+06.0065 474 vila saMvaraRe
+06.0066 474 bila Bedane
+06.0067 474 Rila gahane
+06.0068 474 hila BAvakaraRe
+06.0069 474 Sila zila uYCe
+06.0070 474 mila SlezaRe
+06.0071 474 liKa akzaravinyAse
+06.0072 475 kuwa kOwilye
+06.0073 476 puwa saMSlezaRe
+06.0074 476 kuca saMkocane
+06.0075 476 guja Sabde
+06.0076 476 guqa rakzAyAm
+06.0077 476 qipa kzepe
+06.0078 476 Cura Cedane
+06.0079 476 sPuwa vikasane
+06.0080 476 muwa AkzepapramardanayoH
+06.0081 476 truwa Cedane
+06.0082 476 tuwa kalahakarmaRi
+06.0083 476 cuwa Cuwa Cedane
+06.0084 476 juqa banDane
+06.0085 477 kaqa made
+06.0086 477 luwa saMSlezaRe
+06.0087 477 kfqa Ganatve
+06.0088 477 kuqa bAlye
+06.0089 477 puqa utsarge
+06.0090 477 Guwa pratIGAte
+06.0091 477 tuqa toqane
+06.0092 477 Tuqa sPuqa saMvaraRe
+06.0093 477 sPura sPula saYcalane
+06.0094 478 sPuqa cuqa bruqa saMvaraRe
+06.0095 478 vraScAdaya udAttA udAttetaH
+06.0096 478 gurI udyamane
+06.0097 478 udAtto'nudAttet
+06.0098 478 RU stavane
+06.0099 479 DU viDUnane
+06.0100 479 ayaM pUrvaScodAttaH
+06.0101 479 gu purIzotsarge
+06.0102 479 Dru gatisTEyayoH
+06.0103 479 ayaM guvatiScAnudAttO udAttetO
+06.0104 479 kuN Sabde
+06.0105 479 vft
+06.0106 480 pfN vyAyAme
+06.0107 480 mfN prARatyAge
+06.0108 480 anudAttAvAtmaneBAzO
+06.0109 480 ri pi gatO
+06.0110 481 Di DAraRe
+06.0111 481 kzi nivAsagatyoH
+06.0112 481 riyatyAdayo'nudAttA udAttetaH
+06.0113 481 zU preraRe
+06.0114 482 kF vikzepe
+06.0115 484 gF nigaraRe
+06.0116 485 suvatikIratigirataya udAttAH udAttetaH
+06.0117 485 dfN Adare
+06.0118 486 DfN avasTAne
+06.0119 486 driyatiDriyatI anudAttAvAtmaneBAzO
+06.0120 486 pracCa jYIpsAyAm
+06.0121 486 vft
+06.0122 486 sfja visarge
+06.0123 487 wu masjo SudDO
+06.0124 487 rujo BaNge
+06.0125 488 Bujo kOwilye
+06.0126 488 Cupa sparSe
+06.0127 488 ruSa riSa hiMsAyAm
+06.0128 488 liSa gatO
+06.0129 488 spfSa saMsparSane
+06.0130 489 vicCa gatO . udAttaH udAttet
+06.0131 489 viSa praveSane
+06.0132 490 mfSa AmarSane
+06.0133 490 Ruda preraRe
+06.0134 490 zadx viSaraRagatyavasAdanezu
+06.0135 490 Sadx Satane
+06.0136 490 pfcCatyAdayo'nudAttA udAttetaH . vicCirekaH sew
+06.0137 490 mila saNgamane
+06.0138 490 mucx mokzaRe
+06.0139 491 lupx Cedane
+06.0140 491 vidx lABe
+06.0141 492 lipa upadehe
+06.0142 492 zica kzaraRe
+06.0143 493 mucAdayo'nudAttAH svaritetaH . vindatistu seqekaH
+06.0144 493 kftI Cedane
+06.0145 493 udAtta udAttet
+06.0146 493 Kida pariGAte
+06.0147 493 anudAtta udAttet
+06.0148 493 piSa avayave
+06.0149 493 udAtta udAttet
+06.0150 494 vft
+07.0001 495 ruDir AvaraRe
+07.0002 496 Bidir vidAraRe
+07.0003 496 Cidir dvEDIkaraRe
+07.0004 496 ricir virecane
+07.0005 497 vijir pfTagBAve
+07.0006 497 kzudir sampezaRe
+07.0007 497 yujir yoge
+07.0008 498 ruDAdayo'nudAttAssvaritetaH
+07.0009 498 ucCfdir dIptidevanayoH
+07.0010 499 utfdir hiMsAnAdarayoH
+07.0011 499 udAttO svaritetO
+07.0012 499 kftI vezwane
+07.0013 499 udAtta udAttet
+07.0014 499 Yi inDI dIptO
+07.0015 499 udAtto'nudAttet
+07.0016 500 Kida dEnye
+07.0017 500 vida vicAraRe
+07.0018 500 KidividI anudAttAvanudAttetO
+07.0019 500 vizx viSezaRe
+07.0020 500 pizx saMcUrRane
+07.0021 501 Banjo Amardane
+07.0022 501 Buja pAlanAByavahArayoH
+07.0023 502 SizAdayaScatvAro'nudAttAH udAttetaH
+07.0024 502 tfha hiMsAyAm
+07.0025 503 hisi hiMsAyAm
+07.0026 503 undI kledane
+07.0027 504 anjU vyaktimrakzaRakAntigatizu
+07.0028 504 tancU saNkocane
+07.0029 504 ovijI BayacalanayoH
+07.0030 505 vfjI varjane
+07.0031 505 pfcI samparke
+07.0032 505 tfhAdaya udAttA udAttetaH
+07.0033 505 vft
+08.0001 506 tanu vistAre
+08.0002 507 zaRu dAne
+08.0003 507 kzaRu hiMsAyAm
+08.0004 508 kziRu ca
+08.0005 508 fRu gatO
+08.0006 509 tfRu adane
+08.0007 509 GfRu dIptO
+08.0008 509 tanAdaya udAttAH svaritetaH
+08.0009 509 vanu yAcane
+08.0010 510 manu avaboDane
+08.0011 510 udAttAvanudAttetO
+08.0012 510 qu kfY karaRe
+08.0013 518 anudAtta uBayatoBAzaH
+09.0001 519 qukrIY dravyavinimaye
+09.0002 520 prIY tarpaRe kAntO ca
+09.0003 520 SrIY pAke
+09.0004 520 mIN hiMsAyAm
+09.0005 520 ziY banDane
+09.0006 520 skuY ApravaRe
+09.0007 521 yuY banDane
+09.0008 521 kryAdayo'nudAttA uBayatoBAzAH
+09.0009 521 knUY Sabde
+09.0010 521 drUY hiMsAyAm
+09.0011 521 pUY pavane
+09.0012 522 lUY Cedane
+09.0013 522 stFY AcCAdane
+09.0014 522 kFY hiMsAyAm
+09.0015 522 vFY varaRe
+09.0016 523 DUY kampane
+09.0017 523 knUYAdaya udAttA uBayatoBAzAH
+09.0018 523 SF hiMsAyAm
+09.0019 524 pF pAlanapUraRayoH
+09.0020 524 spF hiMsAyAm
+09.0021 524 vF varaRe
+09.0022 525 BF Bartsane
+09.0023 525 mF hiMsAyAm
+09.0024 525 dF vidAraRe
+09.0025 525 jF vayohAnO
+09.0026 525 nF naye
+09.0027 525 kF hiMsAyAm
+09.0028 525 F gatO
+09.0029 526 gF Sabde
+09.0030 526 SfRAtipraBftaya udAttA udAttetaH
+09.0031 526 jyA vayohAnO
+09.0032 526 rI gatirezaRayoH
+09.0033 527 lI SlezaRe
+09.0034 527 vlI varaRe
+09.0035 527 plI gatO
+09.0036 527 vft
+09.0037 527 vrI varaRe
+09.0038 527 BrI Baye
+09.0039 527 kzIz hiMsAyAm
+09.0040 528 jYA avaboDane
+09.0041 529 banDa banDane
+09.0042 529 jyAdayo'nudAttAH parasmEBAzAH
+09.0043 529 vfN samBaktO
+09.0044 529 udAtta AtmanepadI
+09.0045 530 SranTa vimocanapratiharzayoH
+09.0046 530 manTa viloqane
+09.0047 530 granTa sandarBe
+09.0048 531 kunTa saMSlezaRe
+09.0049 531 mfda kzode
+09.0050 531 mfqa ca
+09.0051 531 guDa roze
+09.0052 531 kuza nizkarze
+09.0053 532 kzuBa saMcalane
+09.0054 532 RaBa tuBa hiMsAyAm
+09.0055 532 kliSu vibADane
+09.0056 532 aSa Bojane
+09.0057 533 u Drasa uYCe
+09.0058 533 iza ABIkzRye
+09.0059 534 viza viprayoge
+09.0060 534 pruza pluza snehanasevanapUraRezu
+09.0061 534 puza puzwO
+09.0062 534 muza steye
+09.0063 534 Kaca BUtaprAdurBAve
+09.0064 534 SranTAdaya udAttA pizivarjam
+09.0065 534 graha upAdAne
+09.0066 534 udAttaH svaritet
+10.0001 537 cura steye
+10.0002 539 citi smftyAm
+10.0003 539 yatri saNkocane
+10.0004 539 sPuqi parihAse
+10.0005 539 lakza darSanANkanayoH
+10.0006 539 kudri anftaBAzaRe
+10.0007 539 laqa upasevAyAm
+10.0008 539 midi snehane
+10.0009 539 o laqi utkzepaRe
+10.0010 540 jala apavAraRe
+10.0011 540 pIqa avagAhane
+10.0012 540 nawa avasyandane
+10.0013 540 SraTa prayatne
+10.0014 540 baDa saMyamane
+10.0015 540 pF pUraRe
+10.0016 540 Urja balaprARanayoH
+10.0017 540 pakza parigrahe
+10.0018 541 varRa cUrRa preraRe
+10.0019 541 praTa praKyAne
+10.0020 541 pfTa prakzepe
+10.0021 541 zamba sambanDane
+10.0022 541 Bakza adane
+10.0023 541 kuwwa CedanaBartsanayoH
+10.0024 541 puwwa cuwwa alpIBAve
+10.0025 541 awwa zuwwa anAdare
+10.0026 541 luRWa steye
+10.0027 542 SaWa SvaWa asaMskAragatyoH
+10.0028 542 tuji piji hiMsAbalAdAnaniketanezu
+10.0029 542 pisa gatO
+10.0030 542 zAntva sAmaprayoge
+10.0031 542 zvalka valka pariBAzaRe
+10.0032 542 zRiha snehane
+10.0033 542 smiwa anAdare
+10.0034 542 Sliza SlezaRe
+10.0035 543 paTi gatO
+10.0036 543 picCa kuwwane
+10.0037 543 Cadi saMvaraRe
+10.0038 543 SraRa dAne
+10.0039 543 taqa AGAte
+10.0040 543 Kaqa Kaqi kaqi Bedane
+10.0041 543 kuqi rakzaRe
+10.0042 543 guqi vezwane
+10.0043 543 Kuqi KaRqane
+10.0044 543 vawi viBAjane
+10.0045 544 maqi BUzAyAM harze ca
+10.0046 544 Baqi kalyARe
+10.0047 544 Carda vamane
+10.0048 544 pusta busta AdarAnAdarayoH
+10.0049 544 cuda saYcodane
+10.0050 544 nakka Dakka nASane
+10.0051 544 cakka cukka vyaTane
+10.0052 544 kzala SOcakarmaRi
+10.0053 544 tala pratizWAyAm
+10.0054 544 tula unmAne
+10.0055 545 dula utkzepe
+10.0056 545 pula mahattve
+10.0057 545 cula samucCrAye
+10.0058 545 mUla rohaRe
+10.0059 545 kala vila kzepe
+10.0060 545 bila Bedane
+10.0061 545 tila snehane
+10.0062 545 cala BftO
+10.0063 545 pAla rakzaRe
+10.0064 545 lUza hiMsAyAm
+10.0065 545 Sulba mAne
+10.0066 545 cuwa Cedane
+10.0067 545 muwa saMcUrRane
+10.0068 546 paqi pasi nASane
+10.0069 546 vraja mArgasaMskAragatyoH
+10.0070 546 Sulka atisparSane
+10.0071 546 capi gatyAm
+10.0072 546 kzapi kzAntyAm
+10.0073 546 kzaji kfcCrajIvane
+10.0074 546 Svarta gatyAm
+10.0075 546 SvaBra ca
+10.0076 546 jYapa micca
+10.0077 548 yama ca parivezaRe
+10.0078 548 caha parikalkane
+10.0079 548 raha tyAge
+10.0080 548 bala prARane
+10.0081 548 ciY cayane
+10.0082 549 nAnye mito'hetO
+10.0083 549 Gawwa calane
+10.0084 549 asta saNGAte
+10.0085 549 Kawwa saMvaraRe
+10.0086 549 zawwa sPiwwa cubi hiMsAyAm
+10.0087 549 pUla saMGAte
+10.0088 549 puMsa aBivarDane
+10.0089 549 waki banDane
+10.0090 549 DUsa kAntikaraRe
+10.0091 549 kIwa varRe
+10.0092 549 cUrRa saNkocane
+10.0093 549 pUja pUjAyAm
+10.0094 549 arka stavane
+10.0095 550 SuWa Alasye
+10.0096 550 SuWi SozaRe
+10.0097 550 juqa preraRe
+10.0098 550 gaja mArja SabdArTe
+10.0099 550 Gf prasravaRe
+10.0100 550 paci vistAravacane
+10.0101 550 tija niSAne
+10.0102 550 kFta saMSabdane
+10.0103 551 varDa CedanapUraRayoH
+10.0104 551 kubi CAdane
+10.0105 551 lubi tubi adarSane
+10.0106 551 hlapa vyaktAyAM vAci
+10.0107 551 cuwi Cedane
+10.0108 551 ila preraRe
+10.0109 551 mrakza mlecCane
+10.0110 551 mlecCa avyaktAyAM vAci
+10.0111 551 brUsa barha hiMsAyAm
+10.0112 552 gurda pUrvaniketane
+10.0113 552 jasi rakzaRe
+10.0114 552 Iqa stutO
+10.0115 552 jasu hiMsAyAm
+10.0116 552 piqi saMGAte
+10.0117 552 ruza roze
+10.0118 552 qipa kzepe
+10.0119 552 zwUpa samucCrAye
+10.0120 552 A kusmAdAtmanepadinaH
+10.0121 552 cita saYcetane
+10.0122 552 daSi daMSane
+10.0123 553 dasi darSanadaMSanayoH
+10.0124 553 qapa qipa saMGAte
+10.0125 553 tatri kuwumbaDAraRe
+10.0126 553 matri guptaBAzaRe
+10.0127 553 spaSa grahasaMSlezaRayoH
+10.0128 553 tarja Bartsa santarjane
+10.0129 553 basta ganDa ardane
+10.0130 553 vizka hiMsAyAm
+10.0131 553 nizka parimARe
+10.0132 553 lala IpsAyAm
+10.0133 553 kURa saNkocane
+10.0134 554 tURa pUraRe
+10.0135 554 BrURa ASAyAm
+10.0136 554 SaWa SlAGAyAm
+10.0137 554 yakza pUjAyAm
+10.0138 554 syama vitarke
+10.0139 554 gUra udyamane
+10.0140 554 Sama lakza Alocane
+10.0141 554 kutsa avakzepaRe
+10.0142 554 truwa Cedane
+10.0143 554 gala SravaRe
+10.0144 554 Bala ABaRqane
+10.0145 554 kUwa apradAne
+10.0146 554 kuwwa pratApane
+10.0147 554 vaYcu pralamBane
+10.0148 555 vfza SaktibanDane
+10.0149 555 mada tfptiyoge
+10.0150 555 divu parikUjane
+10.0151 555 gf vijYAne
+10.0152 555 vida cetanAKyAnanivAsezu
+10.0153 556 mana stamBe
+10.0154 556 yu jugupsAyAm
+10.0155 556 kusma nAmno vA
+10.0156 557 carca aDyayane
+10.0157 557 bukka BAzaRe
+10.0158 557 kaRa nimIlane
+10.0159 557 jaBi nASane
+10.0160 557 zUda kzaraRe
+10.0161 557 jasu tAqane
+10.0162 557 paSa banDane
+10.0163 557 ama roge
+10.0164 558 cawa sPuwa Bedane
+10.0165 558 Gawa saNGAte
+10.0166 558 hantyarTASca
+10.0167 558 divu mardane
+10.0168 558 arja pratiyatne
+10.0169 558 Guzir viSabdane
+10.0170 559 ANaH kranda sAtatye
+10.0171 559 lasa Silpayoge
+10.0172 559 tasi BUza alaNkAre
+10.0173 559 mokza asane
+10.0174 559 arha pUjAyAm
+10.0175 559 jYA niyoge
+10.0176 559 Baja viSrARane
+10.0177 559 SfDu prasahane
+10.0178 559 yata nikAropaskArayoH
+10.0179 559 vasa snehanacCedanApaharaRezu
+10.0180 560 cara saMSaye
+10.0181 560 cyu hasane
+10.0182 560 Buvo'vakalkane
+10.0183 560 kxpeSca
+10.0184 560 raka laga AsvAdane
+10.0185 560 aYcu viSezaRe
+10.0186 560 ligi citrIkaraRe
+10.0187 560 muda saMsarge
+10.0188 560 trasa DAraRe
+10.0189 560 uDrasa uYCe
+10.0190 560 muca pramocane
+10.0191 561 A svadaH sakarmakAt
+10.0192 561 grasa grahaRe
+10.0193 561 puza DAraRe
+10.0194 561 dala vidAraRe
+10.0195 561 pawa puwa luwa tuji miji piji luji Baji laGi trasi pisi kusi daSi kuSi Gawa Gawi bfhi barha valha gupa DUpa vicCa cIva puTa lokf locf Rada kupa tarka vftu vfDu BAzArTAH
+10.0196 562 ruwa laji aji dasi BfSi ruSi rusi SIka nawa puwi juci raGi ahi rahi mahi
+10.0197 563 pUrI ApyAyane
+10.0198 563 ruja hiMsAyAm
+10.0199 563 zvada AsvAdane
+10.0200 563 A DfzAdvA
+10.0201 563 yuja pfca saMyamane
+10.0202 563 arca pUjAyAm
+10.0203 563 zaha marzaRe
+10.0204 563 Ira kzepe
+10.0205 563 lI dravIkaraRe
+10.0206 563 vfjI varjane
+10.0207 564 vfY AvaraRe
+10.0208 564 jF vayohAnO
+10.0209 564 rica viyojanasamparcanayoH
+10.0210 564 Siza asarvopayoge
+10.0211 564 tapa dAhe
+10.0212 564 tfpa tfptO
+10.0213 564 CfdI sandIpane
+10.0214 564 dfBI Baye
+10.0215 564 dfBa sandarBe
+10.0216 565 SraTa mokzaRe
+10.0217 565 mI gatO
+10.0218 565 granTa banDane
+10.0219 565 SIka marzaRe
+10.0220 565 cIka ca
+10.0221 565 arda hiMsAyAm
+10.0222 565 hisi hiMsAyAm
+10.0223 565 ANaH zadaH padyarTe
+10.0224 565 SunDa SOcakarmaRi
+10.0225 565 Cada apavAraRe
+10.0226 565 juza paritarkaRe
+10.0227 565 DUY kampane
+10.0228 566 prIY tarpaRe
+10.0229 566 SranTa granTa sandarBe
+10.0230 566 Apx lamBane
+10.0231 566 tanu SradDopakaraRayoH
+10.0232 566 vada sandeSavacane
+10.0233 566 vaca pariBAzaRe
+10.0234 566 mAna pUjAyAm
+10.0235 566 BU prAptO AtmanepadI
+10.0236 567 garha nindane
+10.0237 567 mArga anvezaRe
+10.0238 567 kaWi Soke
+10.0239 567 mfjU SOcAlaMkaraRayoH
+10.0240 567 mfza titikzAyAm
+10.0241 567 Dfza prasahane
+10.0242 567 kaTa vAkyaprabanDe
+10.0243 567 etadAdayo'dantAH
+10.0244 567 vara IpsAyAm
+10.0245 568 gaRa saMKyAne
+10.0246 568 SaWa SvaWa samyagavaBAzaRe
+10.0247 568 pawa vawa granTe
+10.0248 568 raha tyAge
+10.0249 568 stanagadI devaSabde
+10.0250 568 pata gatO vA
+10.0251 569 paza anupasargAt
+10.0252 569 svara Akzepe
+10.0253 569 raca pratiyatne
+10.0254 569 kala gatO saMKyAne ca
+10.0255 569 caha parikalkane
+10.0256 569 maha pUjAyAm
+10.0257 569 sAra kfpa SraTa dOrbalye
+10.0258 569 spfha IpsAyAm
+10.0259 569 BAma kroDe
+10.0260 569 sUca pESunye
+10.0261 569 Kewa BakzaRe
+10.0262 569 kzowa kzepe
+10.0263 569 goma upalepane
+10.0264 570 kumAra krIqAyAm
+10.0265 570 SIla upaDAraRe
+10.0266 570 sAma sAntvaprayoge
+10.0267 570 vela kAlopadeSe
+10.0268 570 palpUla lavanapavanayoH
+10.0269 570 vAta suKasevanayoH
+10.0270 570 gaveza mArgaRe
+10.0271 570 vAsa upasevAyAm
+10.0272 570 nivAsa AcCAdane
+10.0273 570 BAja pfTakkarmaRi
+10.0274 570 saBAja prItidarSanayoH
+10.0275 570 Una parihARe
+10.0276 570 Dvana Sabde
+10.0277 570 kUwa paritApe
+10.0278 571 saNketa grAma kuRa guRa cAmantraRe
+10.0279 571 stena cOrye
+10.0280 571 A garvAdAtmanepadinaH
+10.0281 572 pada gatO
+10.0282 571 gfha grahaRe
+10.0283 571 mfga anvezaRe
+10.0284 571 kuha vismApane
+10.0285 571 SUra vIra vikrAntO
+10.0286 571 sTUla paribfMhaRe
+10.0287 571 arTa upayAcYAyAm
+10.0288 571 satra santAnakriyAyAm
+10.0289 571 garva mAne
+10.0290 571 sUtra vezwane
+10.0291 571 mUtra prasravaRe
+10.0292 572 rUkza pAruzye
+10.0293 572 pAra tIra karmasamAptO
+10.0294 572 puwa saMsarge
+10.0295 572 katra SETilye
+10.0296 572 prAtipadikAdDAtvarTe bahulamizWavacca
+10.0297 572 tatkaroti . tadAcazwe
+10.0298 572 tenAtikrAmati
+10.0299 573 DAturUpaYca
+10.0300 573 kartfkaraRAdDAtvarTe
+10.0301 573 bazka darSane
+10.0302 573 citra citrakaraRe
+10.0303 573 kadAciddarSane
+10.0304 573 aMsa samAGAte
+10.0305 573 vawa viBAjane
+10.0306 573 laja prakASe
+10.0307 573 miSra samparke
+10.0308 573 saMgrAma yudDe
+10.0309 574 stoma SlAGAyAm
+10.0310 574 Cidra karRaBedane
+10.0311 574 anDa dfzwyupaGAte
+10.0312 574 daRqa daRqanipAtane
+10.0313 574 aNka pade lakzaRe ca
+10.0314 574 aNga ca
+10.0315 574 suKa duHKa tatkriyAyAm
+10.0316 574 rasa AsvAdanasnehanayoH
+10.0317 574 vyaya vittasamutsarge
+10.0318 575 rUpa rUpakriyAyAm
+10.0319 575 Ceda dvEDIkaraRe
+10.0320 575 lABa preraRe
+10.0321 575 vraRa gAtravicUrRane
+10.0322 575 varRa varRakriyAvistAraguRavacanezu
+10.0323 574 bahulametannidarSanam
+10.0324 575 parRa haritaBAve
+10.0325 575 vizka darSane
+10.0326 575 kzapa preraRe
+10.0327 575 vasa nivAse
+10.0328 575 tutTa AvaraRe
+10.0329 575 RiNaNgAnnirasane
+10.0330 575 SvetASvASvataragAloqitAhvarakARAmaSvataretakalopaSca
+10.0331 576 pucCAdizu DAtvarTa ityeva sidDam

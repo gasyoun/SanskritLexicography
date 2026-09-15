@@ -18,39 +18,23 @@ after its existing verdicts have been re-derived.  The drift has four independen
 The new Griffith alignment auditor is not re-stamped here.  LANG_PARITY classifies it as a
 read-only diagnostic exemption: it reads Sanskrit and English witnesses and prints a report,
 but cannot translate, mutate a card/store, or produce a promotion verdict.
+
+H4408: mechanics moved to parity_restamp.py (drift census + in-process N-id hash refresh).
 """
 import os
-import subprocess
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-CHECKER = os.path.join(HERE, 'lang_parity_check.py')
-ROOT = os.path.dirname(os.path.dirname(HERE))
-
-
-def drifted_entry_ids():
-    proc = subprocess.run(
-        [sys.executable, CHECKER], capture_output=True, text=True, encoding='utf-8', cwd=ROOT)
-    ids = []
-    for raw in (proc.stdout or '').splitlines():
-        line = raw.strip()
-        if (line.startswith('- ') and ':' in line
-                and 'changed since last parity verification' in line):
-            entry_id = line[2:].split(':', 1)[0].strip()
-            if entry_id and entry_id not in ids:
-                ids.append(entry_id)
-    return ids
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import parity_restamp as pr  # noqa: E402
 
 
 def main():
-    ids = drifted_entry_ids()
+    ids = pr.drifted_ids()
     print('re-stamping %d re-derived parity entries' % len(ids))
-    for entry_id in ids:
-        subprocess.run(
-            [sys.executable, CHECKER, '--update-hash', entry_id], check=True, cwd=ROOT)
+    pr.update_hashes(ids)
     return 0
 
 

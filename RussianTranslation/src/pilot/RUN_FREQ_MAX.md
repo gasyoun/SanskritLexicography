@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 05-09-2026_
+_Created: 09-07-2026 · Last updated: 15-09-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -187,13 +187,26 @@ tracked-file drift and is wired into `window_selftest.py`
   > "the ceiling was raised" as "the timeouts are fixed" — that hang is a separate, still-open
   > defect (v1.130.0).
   >
+  > **Correction, 15-09-2026 ([H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md), from
+  > [H4528 §1, §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4528/H4528_WHOLE_CARD_HANG_FORENSICS_14-09-2026.md)):**
+  > the paragraph above is superseded on two points. "non-terminating" did not hold: the same
+  > nakzatra card later completed eleven times, at wall times up to 511 908 ms, so it was slow,
+  > not infinite. And "v1.130.0" is a **repo release** (the bare-cwd change, CHANGELOG
+  > `## [1.130.0]`), not a CLI version, and the defect is **not open**. The one kill never
+  > followed by a finish (H2250 b5, 900 000 ms) is censored, not proven infinite.
+  >
   > **Still open on 06-08-2026 at CLI v2.1.223, and 300 000 is now demonstrably too low for
   > a whole card** ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md),
   > incidental to a cache run). Five spawns of the production `build_prompt` surface on
   > `nakzatra`: **three killed** (two at 300 s, one at 900 s), one clean at **511 908 ms
   > wall / 494 603 ms api over 3 turns**, one at 48 414 ms over 4 turns that returned
-  > **zero cards** and failed the schema. So the clean case now runs ~1.7× the 300 s
-  > ceiling, and the non-terminating hang the note above records is still live at 900 s.
+  > **zero cards** and failed the schema. *(Correction, 15-09-2026, H4842: 48 414 ms is API
+  > time, not wall time. The harness wall was 107 659 ms and the CLI's own `duration_ms` was
+  > 64 109 ms, per
+  > [`h2189_card_rows.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/raw/b6_card_repeat/h2189_card_rows.json).)* So the clean case now runs ~1.7× the 300 s
+  > ceiling, and the non-terminating hang the note above records is still live at 900 s
+  > *(superseded: see the 15-09-2026 correction above — the 900 s kill is censored, not a proven
+  > infinite hang)*.
   > Same class as the 05-08 `gate-0 HEALTH_NOGO — the measured leg was killed at
   > 300 000 ms having returned nothing`
   > ([#1144](https://github.com/gasyoun/SanskritLexicography/issues/1144)). Raising the
@@ -711,8 +724,10 @@ Via [h963_c4_gate0_probe.py](https://github.com/gasyoun/SanskritLexicography/blo
 restated here:** the probe reads `probe_log.POLICIES[probe_log.CURRENT_POLICY]` and prints the
 ceiling it judged by on its own `ceiling` header line — read that, not this page. The numbers
 in the H1447 table below were taken under `production_v1` (30 000 ms wall, no route ceiling)
-and are kept as **dated history**; the live policy has since been `production_v2` (65 000) and
-is now `production_v3` (80 000 ms wall **and** 45 000 ms route). A runbook that names a live
+and are kept as **dated history**; the live policy has since been `production_v2` (65 000),
+`production_v3` (80 000 ms wall **and** 45 000 ms route) and is now `production_v4` (240 000 ms
+wall, route ceiling SUBSUMED at the same number — MG's 10-09-2026 host-degradation ruling, not a
+route-health claim; see the `POLICIES` comment). A runbook that names a live
 threshold goes stale within days — this one had, and said "strict: measured ≥ 30 000 ms ⇒
 NO-GO" for two policy generations after that stopped being true (H2254).
 

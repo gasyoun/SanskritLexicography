@@ -2696,11 +2696,37 @@ def test_h3627_salvage_never_publishes_an_infra_starved_window():
     salvage got wrong by returning a payload for every HardFailure.
     """
     import headless_worker as hw
-    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded'):
+    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded',
+                   'no_progress_kill'):
         if not hw.is_infra_failure(reason):
             fail('%r must be an infra failure, or salvage will publish a starved window' % reason)
     if hw.is_infra_failure('process'):
         fail("'process' must NOT be infra -- it is exactly the salvageable per-call defect")
+
+def test_h4528_no_progress_kill_is_infra_not_a_content_defect():
+    """H4528: a card whose call the no-output-progress watchdog killed is NOT a defective card.
+
+    The watchdog's kill carries its own class, `no_progress_kill`, so it can never be read as a
+    hard-ceiling `timeout` -- but for the audit's transient-vs-defect split it must land on the
+    SAME side as `timeout`: infra. Filed as content it would denylist a healthy card and discard
+    the TM of the fragments that did translate (H2077 / #947), and salvage would publish a
+    starved window (H2056 #944).
+    """
+    import headless_worker as hw
+    if not hw.is_infra_failure('no_progress_kill'):
+        fail("'no_progress_kill' must be an infra failure")
+    engine = object.__new__(hw.HeadlessEngine)
+    engine.m = {'fragment_groups': {'agni': [[0, 1]]}}
+    engine.failures = {'agni_f0': 'no_progress_kill', 'agni_f1': 'fragment-fidelity-reject'}
+    if engine._selfheal_stop_reason('agni') != 'no_progress_kill':
+        fail('a watchdog-killed heal must surface as no_progress_kill, got %r'
+             % engine._selfheal_stop_reason('agni'))
+    if engine._partial_cause('agni') != 'no_progress_kill':
+        fail('the partial cause must be the infra kill, got %r' % engine._partial_cause('agni'))
+    engine.failures = {'agni_f0': 'fragment-fidelity-reject'}
+    if engine._selfheal_stop_reason('agni') != 'selfheal-nothing-resolved':
+        fail('a genuine content failure must still read as content')
+
 
 def test_lang_parity_ledger_complete():
     """LANG_PARITY.md's ledger must have a verdict for every entry (SHARED /
@@ -9660,8 +9686,67 @@ def test_h2173_g10_declared_budgets_are_read_or_labelled():
     print('  G10: manifest budgets feed the executor; translation_limit binds from state')
 
 
+def test_h4529_width_policy_and_pool_split():
+    """H4529: width is telemetry-driven, and the two agent pools stay disjoint.
+
+    Three invariants, all offline:
+
+    1. The generator no longer OWNS the width numbers — `width_policy` does, and
+       the pinned A5/H1283 defaults are what the harness still starts from.
+    2. The policy narrows on the H255 w07 degraded fixture and refuses to widen
+       without consecutive measured-healthy load-representative windows, so no
+       code path can re-run the Slice-D/H317 unconditional width raise.
+    3. `--max-agents` below the key count is refused at generation time with the
+       C2_M50 ledger id in the message (H1610/H1618 total-vs-width footgun), and
+       the H437 all-heal window gives every card its full per-card heal ceiling.
+    """
+    import agent_budget
+    import gen_opt_harness2 as gen
+    import width_policy
+
+    assert gen.MAX_WIDE == width_policy.DEFAULT_MAX_WIDE == 3
+    assert gen.STAGGER_MS == width_policy.DEFAULT_STAGGER_MS == 2000
+    assert gen.WIDTH_DECISION is None, 'no telemetry => no decision => manifest key absent'
+
+    degraded = {'keys_total': 36, 'null_keys': 31, 'kill_timeouts': 32, 'max_wide': 0}
+    narrowed = width_policy.decide_width([degraded], current_max_wide=3)
+    assert narrowed.action == 'narrow' and narrowed.max_wide < 3, narrowed
+
+    healthy = {'keys_total': 12, 'null_keys': 0, 'kill_timeouts': 0, 'conn_errors': 0,
+               'max_wide': 3}
+    assert width_policy.decide_width([healthy] * 6, current_max_wide=3).max_wide == 3, \
+        'the adaptive ceiling is the measured A5 default; above it is calibration, not policy'
+    assert width_policy.decide_width([healthy], current_max_wide=2).action == 'hold'
+    assert width_policy.decide_width([healthy, healthy], current_max_wide=2).action == 'widen'
+    assert width_policy.probe_gate_verdict({'concurrency': 1}, 3)[0] == 'NO-GO', \
+        'an isolated warm-up cannot clear a 3-wide window (H255 w07)'
+    # The ceiling binds on every branch, including a caller that starts ABOVE it — otherwise
+    # `hold` parks a width the policy would never have chosen and only a degraded window can
+    # undo it (independent-verifier defect, 11-09-2026).
+    assert width_policy.decide_width([], current_max_wide=5, ceiling=3).max_wide == 3
+    assert width_policy.decide_width([healthy] * 4, current_max_wide=5, ceiling=3).max_wide == 3
+
+    try:
+        agent_budget.refuse_starvation_override(50, 1)
+    except ValueError as exc:
+        assert 'C2_M50_W1_MAX_AGENTS1_2026-07-24' in str(exc)
+    else:
+        raise AssertionError('--max-agents=1 on a 50-key window must be refused')
+    assert agent_budget.refuse_starvation_override(50, 1, force=True).startswith('WARNING')
+
+    all_heal = agent_budget.derive_agent_budget(12, {'k%d' % i: 12 for i in range(12)})
+    per_card = agent_budget._per_card_heal_cap(12, 1.5, 3)
+    assert all_heal.max_heal_agents == 12 * per_card, 'heal pool must be the SUM of card caps'
+    assert all_heal.max_heal_agents - 11 * per_card == per_card, \
+        'the last card to heal still has its whole per-card cap (the H437 starvation class)'
+
+    width_policy.selftest()
+    agent_budget.selftest()
+
+
 def main():
     tests = [
+        test_h4529_width_policy_and_pool_split,
         test_restore_covers_every_promoted_field,
         test_h1339_b21_promoted_pairs_cover_store_write_set,
         test_h1339_b02_stitched_card_schema_complete,
@@ -9823,6 +9908,7 @@ def main():
         test_h3627_structured_output_exhaustion_is_parked_not_window_fatal,
         test_h3627_aborted_window_still_yields_its_paid_cards,
         test_h3627_salvage_never_publishes_an_infra_starved_window,
+        test_h4528_no_progress_kill_is_infra_not_a_content_defect,
         test_lang_parity_ledger_complete,
         test_lang_parity_coverage,
         test_card_coverage_lang_symmetric,

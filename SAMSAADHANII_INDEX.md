@@ -1,6 +1,6 @@
 # SAMSAADHANII_INDEX.md — what Amba Kulkarni's SCL toolchain teaches our repos
 
-_Created: 02-07-2026 · Last updated: 02-07-2026_
+_Created: 02-07-2026 · Last updated: 15-09-2026_
 
 **Prior-art index (external).** [Amba Kulkarni](https://sanskrit.uohyd.ac.in/faculty/amba/)
 (Prof. & Head, Dept. of Sanskrit Studies, University of Hyderabad) leads
@@ -46,7 +46,7 @@ copying source.
 | **kāraka / dependency parse** (constraint-based, Pāṇinian) | Sanskrit Dependency Parser | [`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig) etymology extractors (SKD/VCP kāraka), corpus alignment | Our kāraka-derivation extractors and Sa→Ru alignment can **validate** against SCL's parser output as gold-ish structure. |
 | **word-by-word interlinked reader** that already pulls **Cologne dictionaries** (MW etc.) | Sanskrit Reading Aid | our `csl-app` / dict-web frontends | This is the model UX for dictionary lookup: text → segment → morph → dict gloss, all clickable. Study it before designing any new reader; note **they already integrate our dictionaries** — a downstream consumer to be aware of. |
 | **synonym / semantic network** | Amarakosha Knowledge Network (jñāna-jāla) | headword crosswalks, [`SanskritLexicography`](https://github.com/gasyoun/SanskritLexicography) | A ready structured thesaurus graph — link our headwords into it for synonyms/sense-linking instead of mining synonyms from scratch. |
-| **verb-root authority** | Pāṇinīya Dhātupāṭha e-concordance + Dhātuvṛtti concordance | `mw_roots.tsv` (SHARED_CODE §11), [`WhitneyRoots`](https://github.com/gasyoun/WhitneyRoots), grammar crosswalk | A third independent root source — **cross-validate** our MW/Whitney/DCS root crosswalk against it; flag divergences, don't overwrite reviewed data. |
+| **verb-root authority** | Pāṇinīya Dhātupāṭha e-concordance + Dhātuvṛtti concordance | `mw_roots.tsv` (SHARED_CODE §11), [`WhitneyRoots`](https://github.com/gasyoun/WhitneyRoots), grammar crosswalk | A third independent root source — **cross-validate** our MW/Whitney/DCS root crosswalk against it; flag divergences, don't overwrite reviewed data. ✅ **Validated 15-09-2026 (H4741):** the SCL verb-generator chart (1,591 roots) witnesses **562/750 (74.9 %)** of WhitneyRoots `mw_roots.json` exactly — report [`data/samsaadhanii_dhatupatha_mwroots_xwalk/H4741_PARITY_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/samsaadhanii_dhatupatha_mwroots_xwalk/H4741_PARITY_REPORT.md), builder `tools/h4741_samsaadhanii_dhatupatha_mwroots_xwalk.py`. |
 | **normalized DCS + normalized Ṛgveda-saṃhitā** | SCL validation/normalization datasets | [`VisualDCS`](https://github.com/gasyoun/VisualDCS), VedaWeb work | Their normalization decisions are a cross-check for our DCS ingest (occ-id / lemma normalization gotchas). |
 | **inflection / paradigm generation** | Subanta/Tiṅanta generators, Aṣṭādhyāyī simulator | grammar/paradigm display (currently `vidyut`) | Pāṇinian generator as an alternative/validator to vidyut paradigms. |
 

@@ -1,0 +1,3370 @@
+form_key	n_sources	whitneyroots	mws	cslorig_etym	sanskritlex	mwderiv	whitneyroots_mw_L	whitneyroots_class	whitneyroots_homonym	whitneyroots_records	mws_whitney_id	mws_dcs_status	cslorig_oracle_pairs	sanskritlex_rows	mwderiv_rows	mwderiv_classes	slp1_native
+'nena	1	0	0	1	0	0				0			1	0	0		'nena
+'syām	1	0	0	1	0	0				0			1	0	0		'syAm
+a	2	0	0	1	0	1				0			147	0	5344	m:f:n:2684;m:869;n:552;f:552;ind:252	a
+abh	1	0	0	1	0	0				0			1	0	0		aB
+abhi	2	0	0	1	0	1				0			25	0	980	m:f:n:409;m:159;n:136;f:87;ind:58	aBi
+abhibhavati	1	0	0	1	0	0				0			1	0	0		aBiBavati
+abhibhave	1	0	0	1	0	0				0			1	0	0		aBiBave
+abhidhānāt	1	0	0	1	0	0				0			1	0	0		aBiDAnAt
+abhijan	2	0	0	1	0	1				0			1	0	1	VERB:K:1	aBijan
+abhijñāyate	1	0	0	1	0	0				0			1	0	0		aBijYAyate
+abhr	3	1	0	1	0	1	13687	I		1			46	0	1	VERB:V:1	aBr
+abhyāse	1	0	0	1	0	0				0			1	0	0		aByAse
+abi	1	0	0	1	0	0				0			39	0	0		abi
+abuse	1	0	0	0	1	0				0			0	1	0		
+ac	4	1	1	1	0	1	1767	I	1	1	5	unmatched	4	0	2	VERB:V:1;NONE:1	ac
+accompany	1	0	0	0	1	0				0			0	1	0		
+ad	4	1	1	1	0	1	3575	II	1	1	11	matched	131	0	10	m:f:n:5;ind:2;m:2;VERB:V:1	ad
+adaghātoḥ	1	0	0	1	0	0				0			1	0	0		adaGAtoH
+adhi	2	0	0	1	0	1				0			21	0	232	m:65;m:f:n:54;ind:41;n:41;f:26	aDi
+admire	1	0	0	0	1	0				0			0	1	0		
+adyate	1	0	0	1	0	0				0			1	0	0		adyate
+ag	2	1	0	0	0	1	762	I		1			0	0	1	VERB:V:1	ag
+agh	3	1	0	1	0	1	1348	X		1			5	0	1	VERB:V:1	aG
+aghi	1	0	0	1	0	0				0			9	0	0		aGi
+agi	1	0	0	1	0	0				0			11	0	0		agi
+agni	2	0	0	1	0	1				0			26	0	254	m:87;m:f:n:61;n:57;f:44;m:f#A:n:2	agni
+ah	4	1	1	1	0	1	21629,21630	V	1,2	2	24	matched	50	0	2	VERB:V:2	ah
+ahi	2	0	0	1	0	1				0			79	0	61	m:29;n:11;f:11;m:f:n:9;m:f#GnI:n:1	ahi
+aj	4	1	1	1	0	1	1927	I		1	6	matched	153	0	3	m:f:n:2;VERB:V:1	aj
+ajaga	1	0	0	1	0	0				0			2	0	0		ajaga
+aji	1	0	0	1	0	0				0			23	0	0		aji
+ak	3	1	0	1	0	1	134	I		1			1	0	1	VERB:V:1	ak
+aka	2	0	0	1	0	1				0			45	0	1	NONE:1	aka
+aki	1	0	0	1	0	0				0			35	0	0		aki
+akṣ	4	1	1	1	0	1	423	I,V		1	2,3	homonym_shared	15	0	1	VERB:V:1	akz
+akṣū	1	0	0	1	0	0				0			32	0	0		akzU
+al	3	1	0	1	0	1	16510	I		1			46	0	1	VERB:V:1	al
+alpī	1	0	0	1	0	0				0			2	0	0		alpI
+alternate, altercate	1	0	0	0	1	0				0			0	1	0		
+am	4	1	1	1	0	1	13748		3	1	13	matched	85	0	4	ind:2;VERB:V:1;m:f#I:n:1	am
+amaraḥ	1	0	0	1	0	0				0			1	0	0		amaraH
+amb	2	1	0	0	0	1	14390	I		1			0	0	1	VERB:V:1	amb
+ambh	2	1	0	0	0	1	14564			1			0	0	1	VERB:V:1	amB
+an	4	1	1	1	0	1	4782	II	2	1	12	matched	83	0	1171	m:f:n:626;m:209;n:114;f:101;m:f#A:n:45	an
+anayā	1	0	0	1	0	0				0			1	0	0		anayA
+anca	1	0	0	1	0	0				0			1	0	0		anca
+ancu	1	0	0	1	0	0				0			84	0	0		ancu
+and	2	1	0	0	0	1	8399	I		1			0	0	1	VERB:V:1	and
+andh	3	1	0	1	0	1	8411	X		1			43	0	1	VERB:V:1	anD
+anj	1	0	0	1	0	0				0			1	0	0		anj
+anja	1	0	0	1	0	0				0			10	0	0		anja
+anjū	1	0	0	1	0	0				0			49	0	0		anjU
+ant	3	1	0	1	0	1	7900	I		1			12	0	1	VERB:V:1	ant
+antar	2	0	0	1	0	1				0			22	0	183	m:f:n:55;m:48;n:38;ind:14;f:11	antar
+antarddhāne	1	0	0	1	0	0				0			1	0	0		antardDAne
+anu	2	0	0	1	0	1				0			36	0	831	m:f:n:286;m:161;n:123;ind:104;f:87	anu
+anukūla	1	0	0	1	0	0				0			3	0	0		anukUla
+anādare	1	0	0	1	0	0				0			3	0	0		anAdare
+apa	2	0	0	1	0	1				0			15	0	488	m:f:n:198;m:103;n:72;f:55;ind:25	apa
+apadhvansa	1	0	0	1	0	0				0			1	0	0		apaDvansa
+apagame	1	0	0	1	0	0				0			1	0	0		apagame
+apaharati	1	0	0	1	0	0				0			1	0	0		apaharati
+apelite	1	0	0	1	0	0				0			1	0	0		apelite
+api	2	0	0	1	0	1				0			7	0	42	m:f:n:19;m:7;n:6;f:4;SEE:2	api
+apprehend	1	0	0	0	1	0				0			0	1	0		
+approach stealthily	1	0	0	0	1	0				0			0	1	0		
+arb	2	1	0	0	0	1	16352	I		1			0	0	1	VERB:V:1	arb
+arba	1	0	0	1	0	0				0			34	0	0		arba
+arc	4	1	1	1	0	1	15701	I	1	1	15	matched	67	0	2	VERB:V:1;m:1	arc
+arcca	1	0	0	1	0	0				0			2	0	0		arcca
+ard	3	1	0	1	0	1	16095	I,VI,VII		1			66	0	1	VERB:V:1	ard
+ardane	1	0	0	1	0	0				0			1	0	0		ardane
+ardda	1	0	0	1	0	0				0			1	0	0		ardda
+arddane	1	0	0	1	0	0				0			1	0	0		arddane
+argh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	arG
+arh	4	1	1	1	0	1	16483	I		1	18	matched	77	0	1	VERB:V:1	arh
+arhādyarthe	1	0	0	1	0	0				0			1	0	0		arhAdyarTe
+arhārthe	1	0	0	1	0	0				0			3	0	0		arhArTe
+arj	4	1	1	1	0	1	15739	I		1	16	unmatched	18	0	1	VERB:V:1	arj
+arja	1	0	0	1	0	0				0			17	0	0		arja
+ark	3	1	0	1	0	1	15571			1			40	0	1	NONE:1	ark
+arpi	1	0	0	1	0	0				0			1	0	0		arpi
+art	1	0	1	0	0	0				0	17	unmatched	0	0	0		
+arth	3	1	0	1	0	1	15839	I,X		1			73	0	1	VERB:V:1	arT
+arv	3	1	0	1	0	1	16408	I		1			1	0	1	VERB:V:1	arv
+as	4	1	1	1	0	1	20353,20354	II,IV	1,2	2	22,23	homonym_shared	174	0	3	VERB:V:2;NONE:1	as
+asakṣepe	1	0	0	1	0	0				0			1	0	0		asakzepe
+asau	2	0	0	1	0	1				0			1	0	3	NONE:2;m:f:n:1	asO
+ascend	1	0	0	0	1	0				0			0	1	0		
+ask	1	0	0	0	1	0				0			0	2	0		
+asta	2	0	0	1	0	1				0			2	0	35	m:f:n:11;m:11;n:5;NONE:3;f:2	asta
+asu	2	0	0	1	0	1				0			77	0	20	m:8;m:f:n:5;n:2;SEE:2;m:n:1	asu
+at	4	1	1	1	0	1	2490	I	2	1	10	matched	74	0	2	ind:1;VERB:V:1	at
+atharvvan	1	0	0	1	0	0				0			1	0	0		aTarvvan
+ati	2	0	0	1	0	1				0			51	0	506	m:f:n:230;m:111;f:66;n:43;ind:29	ati
+attach	1	0	0	0	1	0				0			0	1	0		
+attach (?)	1	0	0	0	1	0				0			0	1	0		
+attack	1	0	0	0	1	0				0			0	1	0		
+attain	1	0	0	0	1	0				0			0	2	0		
+attend upon	1	0	0	0	1	0				0			0	1	0		
+attend upon, adorn	1	0	0	0	1	0				0			0	1	0		
+auṇādike	1	0	0	1	0	0				0			1	0	0		ORAdike
+av	4	1	1	1	0	1	16938	I		1	19	matched	108	0	1	VERB:V:1	av
+avadhīra	1	0	0	1	0	0				0			1	0	0		avaDIra
+avasāde	1	0	0	1	0	0				0			1	0	0		avasAde
+avatṝ	2	0	0	1	0	1				0			1	0	1	VERB:K:1	avatF
+avayave	1	0	0	1	0	0				0			1	0	0		avayave
+avyayī	2	0	0	1	0	1				0			1	0	2	m:2	avyayI
+ay	3	0	1	1	0	1				0	14	unmatched	32	0	2	VERB:V:1;n:1	ay
+ayukta	1	0	0	1	0	0				0			1	0	0		ayukta
+ayā	2	0	0	1	0	1				0			1	0	2	ind:1;m:f:n:1	ayA
+añc	3	1	0	1	0	1	2250	I,X	1	1			31	0	2	VERB:V:1;NONE:1	aYc
+añj	4	1	1	1	0	1	2267	VII		1	7	matched	36	0	1	VERB:V:1	aYj
+aś	4	1	1	1	0	1	19412,19416		1,2	2	20,21	homonym_shared	109	0	2	VERB:V:2	aS
+aśū	1	0	0	1	0	0				0			29	0	0		aSU
+aḍ	3	1	0	1	0	1	2386	I	1	1			2	0	1	VERB:V:1	aq
+aḍa	1	0	0	1	0	0				0			14	0	0		aqa
+aḍḍ	3	1	0	1	0	1	2388	I		1			40	0	1	VERB:V:1	aqq
+aṃh	4	1	1	1	0	1	107,114	I,X	1,2	2	1	matched	2	0	2	VERB:V:2	aMh
+aṃs	3	1	0	1	0	1	87			1			43	0	1	VERB:V:1	aMs
+aṃt	1	0	0	1	0	0				0			1	0	0		aMt
+aṃś	3	1	0	1	0	1	9	X		1			9	0	1	VERB:V:1	aMS
+aṅg	4	1	1	1	0	1	1492	I,X		1	4	matched	20	0	1	VERB:V:1	aNg
+aṅgh	2	1	0	0	0	1	1752	I		1			0	0	1	VERB:V:1	aNG
+aṅgu	2	0	0	1	0	1				0			1	0	1	m:f:1	aNgu
+aṅgāra	2	0	0	1	0	1				0			13	0	24	f:11;m:10;n:2;m:n:1	aNgAra
+aṅgī	2	0	0	1	0	1				0			1	0	6	ICF:aNga:1;n:1;m:1;m:f:n:1;f:1	aNgI
+aṅk	3	1	0	1	0	1	1408	I,X		1			26	0	1	VERB:V:1	aNk
+aṅkh	3	1	0	1	0	1	1491	X		1			1	0	1	VERB:V:1	aNK
+aṇ	3	1	0	1	0	1	2390	I,IV		1			55	0	1	VERB:V:1	aR
+aṇṭh	3	1	1	0	0	1	2447	I		1	9	matched	0	0	1	VERB:V:1	aRW
+aṣ	2	1	0	0	0	1	20163	I		1			0	0	1	VERB:V:1	az
+aṭ	4	1	1	1	0	1	2337	I		1	8	matched	102	0	1	VERB:V:1	aw
+aṭh	2	1	0	0	0	1	2383	I		1			0	0	2	VERB:V:2	aW
+aṭṭ	3	1	0	1	0	1	2358	I,X		1			87	0	1	VERB:V:1	aww
+bad	2	0	0	1	0	1				0			4	0	1	VERB:V:1	bad
+badh	2	0	0	1	0	1				0			62	0	1	VERB:V:1	baD
+bah	2	0	0	1	0	1				0			3	0	1	NONE:1	bah
+bahi	1	0	0	1	0	0				0			8	0	0		bahi
+bahulamiti	1	0	0	1	0	0				0			1	0	0		bahulamiti
+baka	2	0	0	1	0	1				0			3	0	29	m:21;n:4;f:2;ind:1;m:f:n:1	baka
+bal	3	0	1	1	0	1				0	495	unmatched	31	0	2	VERB:V:2	bal
+bale	1	0	0	1	0	0				0			1	0	0		bale
+balha	1	0	0	1	0	0				0			12	0	0		balha
+bana	1	0	0	1	0	0				0			1	0	0		bana
+bandh	4	1	1	1	0	1	142512	I,IV,IX		1	494	matched	188	0	1	VERB:V:1	banD
+bandhane	1	0	0	1	0	0				0			4	0	0		banDane
+bandhe	1	0	0	1	0	0				0			1	0	0		banDe
+barba	1	0	0	1	0	0				0			6	0	0		barba
+bargain	1	0	0	0	1	0				0			0	1	0		
+barh	2	0	0	1	0	1				0			38	0	1	VERB:V:1	barh
+bark	1	0	0	0	1	0				0			0	2	0		
+basta	2	0	0	1	0	1				0			9	0	10	f:4;m:2;ind:1;m:f#I:n:1;n:1	basta
+bathe	1	0	0	0	1	0				0			0	1	0		
+baṃdh	1	0	0	1	0	0				0			1	0	0		baMD
+baṃh	3	0	1	1	0	1				0	493	matched	3	0	1	VERB:V:1	baMh
+baṇa	1	0	0	1	0	0				0			10	0	0		baRa
+baṣka	1	0	0	1	0	0				0			15	0	0		bazka
+be	1	0	0	0	1	0				0			0	2	0		
+be abashed	1	0	0	0	1	0				0			0	1	0		
+be able	1	0	0	0	1	0				0			0	1	0		
+be abstinent	1	0	0	0	1	0				0			0	1	0		
+be adapted	1	0	0	0	1	0				0			0	1	0		
+be angry	1	0	0	0	1	0				0			0	4	0		
+be ashamed	1	0	0	0	1	0				0			0	2	0		
+be bleased	1	0	0	0	1	0				0			0	1	0		
+be bright	1	0	0	0	1	0				0			0	1	0		
+be busy	1	0	0	0	1	0				0			0	1	0		
+be consecrated	1	0	0	0	1	0				0			0	1	0		
+be content	1	0	0	0	1	0				0			0	1	0		
+be conṛused	1	0	0	0	1	0				0			0	1	0		
+be craṣed	1	0	0	0	1	0				0			0	1	0		
+be eager	1	0	0	0	1	0				0			0	1	0		
+be eḷhausted	1	0	0	0	1	0				0			0	1	0		
+be eḷhilarated, eḷhilarate	1	0	0	0	1	0				0			0	1	0		
+be gracious	1	0	0	0	1	0				0			0	1	0		
+be greedy	1	0	0	0	1	0				0			0	1	0		
+be hard	1	0	0	0	1	0				0			0	1	0		
+be heated	1	0	0	0	1	0				0			0	1	0		
+be hostile	1	0	0	0	1	0				0			0	2	0		
+be hot	1	0	0	0	1	0				0			0	1	0		
+be hungry	1	0	0	0	1	0				0			0	1	0		
+be hurt	1	0	0	0	1	0				0			0	1	0		
+be jubilant	1	0	0	0	1	0				0			0	1	0		
+be kingly	1	0	0	0	1	0				0			0	1	0		
+be lively	1	0	0	0	1	0				0			0	2	0		
+be lustṛul	1	0	0	0	1	0				0			0	1	0		
+be merry	1	0	0	0	1	0				0			0	1	0		
+be narroṭ or distressing	1	0	0	0	1	0				0			0	1	0		
+be ormake subject	1	0	0	0	1	0				0			0	1	0		
+be pleased	1	0	0	0	1	0				0			0	2	0		
+be pleased, enjoy	1	0	0	0	1	0				0			0	1	0		
+be pointed (?)	1	0	0	0	1	0				0			0	1	0		
+be relaḷed	1	0	0	0	1	0				0			0	1	0		
+be rough or raṭ	1	0	0	0	1	0				0			0	1	0		
+be sharp	1	0	0	0	1	0				0			0	1	0		
+be situated (?)	1	0	0	0	1	0				0			0	1	0		
+be startled (?)	1	0	0	0	1	0				0			0	1	0		
+be stealthy	1	0	0	0	1	0				0			0	1	0		
+be sticky	1	0	0	0	1	0				0			0	1	0		
+be stirred up	1	0	0	0	1	0				0			0	2	0		
+be stiṛṛ	1	0	0	0	1	0				0			0	1	0		
+be strong	1	0	0	0	1	0				0			0	2	0		
+be sṭiṛt	1	0	0	0	1	0				0			0	1	0		
+be thirsty	1	0	0	0	1	0				0			0	1	0		
+be unsteady	1	0	0	0	1	0				0			0	1	0		
+be ḍuiet	1	0	0	0	1	0				0			0	2	0		
+be ṛat	1	0	0	0	1	0				0			0	1	0		
+be ṛirm(?)	1	0	0	0	1	0				0			0	1	0		
+be ṭeary	1	0	0	0	1	0				0			0	3	0		
+be ṭet	1	0	0	0	1	0				0			0	1	0		
+be ṭondrous	1	0	0	0	1	0				0			0	1	0		
+bear	1	0	0	0	1	0				0			0	1	0		
+beat	1	0	0	0	1	0				0			0	1	0		
+beg	1	0	0	0	1	0				0			0	1	0		
+belloṭ	1	0	0	0	1	0				0			0	2	0		
+bend	1	0	0	0	1	0				0			0	2	0		
+bend, boṭ	1	0	0	0	1	0				0			0	1	0		
+bhadi	1	0	0	1	0	0				0			22	0	0		Badi
+bhaj	4	1	1	1	0	1	147598	I		1	505	matched	193	0	1	VERB:V:1	Baj
+bhakṣ	4	1	1	1	0	1	147534	I,X		1	504	matched	43	0	1	VERB:V:1	Bakz
+bhakṣakhe	1	0	0	1	0	0				0			1	0	0		BakzaKe
+bhakṣaṇe	1	0	0	1	0	0				0			5	0	0		BakzaRe
+bhakṣe	1	0	0	1	0	0				0			2	0	0		Bakze
+bhakṣyate	1	0	0	1	0	0				0			1	0	0		Bakzyate
+bhal	3	0	1	1	0	1				0	513	unmatched	13	0	1	VERB:V:1	Bal
+bhall	2	0	0	1	0	1				0			17	0	1	VERB:V:1	Ball
+bhan	2	0	1	0	0	1				0	509	matched	0	0	1	VERB:V:1	
+bhand	4	1	1	1	0	1	148252	I		1	510	matched	5	0	1	VERB:V:1	Band
+bhanja	1	0	0	1	0	0				0			2	0	0		Banja
+bharts	4	1	1	1	0	1	148908	I,X		1	511	matched	13	0	1	VERB:V:1	Barts
+bhartsa	2	0	0	1	0	1				0			4	0	1	NONE:1	Bartsa
+bhartsane	1	0	0	1	0	0				0			1	0	0		Bartsane
+bharv	3	0	1	1	0	1				0	512	matched	1	0	1	VERB:V:1	Barv
+bhas	4	1	1	1	0	1	149289	III	1	1	515	matched	4	0	2	VERB:V:1;NONE:1	Bas
+bhasa	1	0	0	1	0	0				0			37	0	0		Basa
+bhavitavya	2	0	0	1	0	1				0			1	0	3	m:f:n:1;n:1;f:1	Bavitavya
+bhañj	4	1	1	1	0	1	147928	VII	1	1	506	matched	24	0	2	VERB:V:2	BaYj
+bhaḍi	1	0	0	1	0	0				0			23	0	0		Baqi
+bhaṇ	4	1	1	1	0	1	148185	I		1	508	matched	13	0	1	VERB:V:1	BaR
+bhaṣ	4	1	1	1	0	1	149277	I		1	514	matched	10	0	1	VERB:V:1	Baz
+bhaṭ	3	0	1	1	0	1				0	507	unmatched	1	0	1	VERB:V:1	Baw
+bhaṭa	2	0	0	1	0	1				0			10	0	8	m:3;n:3;f:2	Bawa
+bheṣṛ	1	0	0	1	0	0				0			5	0	0		Bezf
+bhid	4	1	1	1	0	1	150727	I,VII	1	1	521	matched	55	0	4	m:f:n:2;VERB:V:1;f:1	Bid
+bhidyate'sau	1	0	0	1	0	0				0			1	0	0		Bidyate'sO
+bhikṣ	4	1	1	1	0	1	150663	I		1	520	matched	3	0	1	VERB:V:1	Bikz
+bhikṣa	1	0	0	1	0	0				0			31	0	0		Bikza
+bhiṣaj	3	0	1	1	0	1				0	522	matched	4	0	4	m:2;VERB:V:1;m:f:n:1	Bizaj
+bhlakṣa	1	0	0	1	0	0				0			32	0	0		Blakza
+bhleṣṛ	1	0	0	1	0	0				0			2	0	0		Blezf
+bhlāśṛ	1	0	0	1	0	0				0			5	0	0		BlASf
+bhojane	1	0	0	1	0	0				0			7	0	0		Bojane
+bhrajj	3	1	0	1	0	1	153489	VI	1	1			7	0	2	VERB:V:1;NONE:1	Brajj
+bhrakṣa	1	0	0	1	0	0				0			19	0	0		Brakza
+bhram	4	1	1	1	0	1	153524	I,IV		1	534	matched	39	0	1	VERB:V:1	Bram
+bhramaṇe	1	0	0	1	0	0				0			1	0	0		BramaRe
+bhramu	1	0	0	1	0	0				0			60	0	0		Bramu
+bhransu	1	0	0	1	0	0				0			9	0	0		Bransu
+bhranśa	1	0	0	1	0	0				0			1	0	0		BranSa
+bhranśu	1	0	0	1	0	0				0			19	0	0		BranSu
+bhrasaja	1	0	0	1	0	0				0			1	0	0		Brasaja
+bhrasja	1	0	0	1	0	0				0			138	0	0		Brasja
+bhraṃś	4	1	1	1	0	1	153448	I,IV		1	533	matched	16	0	1	VERB:V:1	BraMS
+bhraṇ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	BraR
+bhraṇa	1	0	0	1	0	0				0			2	0	0		BraRa
+bhrejṛ	1	0	0	1	0	0				0			2	0	0		Brejf
+bhreṣ	4	1	1	1	0	1	153856	I		1	537	matched	2	0	1	VERB:V:1	Brez
+bhreṣṛ	1	0	0	1	0	0				0			2	0	0		Brezf
+bhruḍa	1	0	0	1	0	0				0			5	0	0		Bruqa
+bhrāj	4	1	1	1	0	1	153678	I	1	1	535	matched	17	0	2	VERB:V:1;f:1	BrAj
+bhrāśṛ	1	0	0	1	0	0				0			4	0	0		BrASf
+bhrī	4	1	1	1	0	1	153766	IX		1	536	matched	4	0	1	VERB:V:1	BrI
+bhrūṇa	2	0	0	1	0	1				0			3	0	11	m:3;n:2;m:f:n:2;f:2;m:f#GnI:n:1	BrURa
+bhuj	4	1	1	1	0	1	151217,151348	VI,VII	1,3	2	524,525	homonym_shared	197	0	8	VERB:V:2;m:f:n:2;m:2;SEE:1;f:1	Buj
+bhur	4	1	1	1	0	1	151434			1	526	matched	4	0	1	VERB:V:1	Bur
+bhuraj	2	0	1	0	0	1				0	527	matched	0	0	1	VERB:V:1	
+bhuraṇa	2	0	0	1	0	1				0			1	0	1	m:f:n:1	BuraRa
+bhuvaḥ	1	0	0	1	0	0				0			54	0	0		BuvaH
+bhyas	3	0	1	1	0	1				0	532	matched	1	0	1	VERB:V:1	Byas
+bhyasa	2	0	0	1	0	1				0			6	0	1	NONE:1	Byasa
+bhā	4	1	1	1	0	1	149418	II	1	1	516	matched	134	0	24	m:11;m:f:n:4;f:3;n:3;SEE:2	BA
+bhāja	1	0	0	1	0	0				0			3	0	0		BAja
+bhām	3	0	1	1	0	1				0	517	unmatched	56	0	1	VERB:V:1	BAm
+bhās	4	1	1	1	0	1	150552	I	1	1	519	matched	38	0	41	m:16;n:10;m:f:n:4;NONE:4;f:3	BAs
+bhāsṛ	1	0	0	1	0	0				0			13	0	0		BAsf
+bhāṣ	4	1	1	1	0	1	150479	I	1	1	518	matched	53	0	2	VERB:V:1;NONE:1	BAz
+bhī	4	1	1	1	0	1	150969	I,III,X	1	1	523	matched	116	0	4	m:f:n:2;VERB:V:1;f:1	BI
+bhū	4	1	1	1	0	1	151456	I	1	1	528	matched	677	0	201	m:102;f:42;n:36;m:f:n:8;m:f#A:4	BU
+bhūprayogaḥ	1	0	0	1	0	0				0			1	0	0		BUprayogaH
+bhūtārthe	1	0	0	1	0	0				0			1	0	0		BUtArTe
+bhūṣ	4	1	1	1	0	1	152466	I		1	529	matched	47	0	1	VERB:V:1	BUz
+bhṛ	4	1	1	1	0	1	152494	I,II,III	1	1	530	matched	41	0	11	m:4;f:3;VERB:V:1;SEE:1;ICF:BrU:1	Bf
+bhṛjj	2	0	1	0	0	1				0	531	matched	0	0	2	SEE:1;NONE:1	
+bhṛjī	1	0	0	1	0	0				0			26	0	0		BfjI
+bhṛś	2	0	0	1	0	1				0			3	0	1	VERB:V:1	BfS
+bhṛśi	1	0	0	1	0	0				0			10	0	0		BfSi
+bhṛśu	1	0	0	1	0	0				0			18	0	0		BfSu
+bhṛḍa	1	0	0	1	0	0				0			4	0	0		Bfqa
+bhṛṣu	1	0	0	1	0	0				0			9	0	0		Bfzu
+bhṝ	2	0	0	1	0	1				0			13	0	1	VERB:V:1	BF
+bid	2	0	0	1	0	1				0			3	0	1	VERB:V:1	bid
+bidi	1	0	0	1	0	0				0			12	0	0		bidi
+bil	2	0	0	1	0	1				0			29	0	1	VERB:V:1	bil
+bind	2	0	0	0	1	1				0			0	5	1	VERB:V:1	
+bis	2	0	0	1	0	1				0			11	0	1	VERB:V:1	bis
+biṭa	1	0	0	1	0	0				0			14	0	0		biwa
+bleṣka	2	0	0	1	0	1				0			12	0	1	m:1	blezka
+bloṭ	1	0	0	0	1	0				0			0	2	0		
+blunder (?)	1	0	0	0	1	0				0			0	1	0		
+blī	2	0	1	0	0	1				0	503	unmatched	0	0	2	NONE:1;VERB:V:1	
+boast	1	0	0	0	1	0				0			0	1	0		
+boil	1	0	0	0	1	0				0			0	1	0		
+break	1	0	0	0	1	0				0			0	4	0		
+break, pain	1	0	0	0	1	0				0			0	1	0		
+breathe	1	0	0	0	1	0				0			0	1	0		
+brust	1	0	0	0	1	0				0			0	1	0		
+brū	4	1	1	1	0	1	147490	II		1	502	matched	22	0	1	VERB:V:1	brU
+budh	4	1	1	1	0	1	145569	I,IV	1	1	497	matched	116	0	2	VERB:V:1;m:f:n:1	buD
+budhir	1	0	0	1	0	0				0			10	0	0		buDir
+bugi	1	0	0	1	0	0				0			3	0	0		bugi
+bukka	2	0	0	1	0	1				0			10	0	3	m:f#A:f#I:n:1;m:1;m:f:1	bukka
+bul	3	0	1	1	0	1				0	498	unmatched	3	0	1	VERB:V:1	bul
+bunch	1	0	0	0	1	0				0			0	2	0		
+bundir	1	0	0	1	0	0				0			23	0	0		bundir
+burn	1	0	0	0	1	0				0			0	8	0		
+burn, ṛlame	1	0	0	0	1	0				0			0	2	0		
+burst	1	0	0	0	1	0				0			0	3	0		
+bus	2	0	0	1	0	1				0			13	0	1	VERB:V:1	bus
+busta	2	0	0	1	0	1				0			6	0	1	m:n:1	busta
+buy	1	0	0	0	1	0				0			0	2	0		
+bā	1	0	0	1	0	0				0			3	0	0		bA
+bādh	4	1	1	1	0	1	144318	I		1	496	matched	38	0	1	VERB:V:1	bAD
+bādhṛ	1	0	0	1	0	0				0			5	0	0		bADf
+bāhulakena	1	0	0	1	0	0				0			1	0	0		bAhulakena
+bāhulakāt	1	0	0	1	0	0				0			7	0	0		bAhulakAt
+bāhulyāt	1	0	0	1	0	0				0			5	0	0		bAhulyAt
+bāhṛ	1	0	0	1	0	0				0			12	0	0		bAhf
+bāḍṛ	1	0	0	1	0	0				0			12	0	0		bAqf
+bṛh	4	1	1	1	0	1	146034,146037	I,VI	1,2	2	500,501	unmatched	10	0	4	VERB:V:3;SEE:1	bfh
+bṛha	1	0	0	1	0	0				0			24	0	0		bfha
+bṛhi	1	0	0	1	0	0				0			44	0	0		bfhi
+bṛhū	1	0	0	1	0	0				0			5	0	0		bfhU
+bṛṃh	2	0	1	0	0	1				0	499	matched	0	0	3	VERB:V:2;NONE:1	
+ca	2	0	0	1	0	1				0			3	0	7	m:4;NONE:1;ind:1;m:f:n:1	ca
+cade	1	0	0	1	0	0				0			1	0	0		cade
+cadi	1	0	0	1	0	0				0			4	0	0		cadi
+caha	1	0	0	1	0	0				0			43	0	0		caha
+cak	3	0	1	1	0	1				0	211	matched	31	0	1	VERB:V:1	cak
+cakās	3	0	1	1	0	1				0	212	matched	1	0	2	VERB:V:1;m:f:n:1	cakAs
+cakāsṛ	1	0	0	1	0	0				0			35	0	0		cakAsf
+cakṣ	3	0	1	1	0	1				0	213	matched	41	0	1	VERB:V:1	cakz
+cakṣiṅ	1	0	0	1	0	0				0			90	0	0		cakziN
+cal	4	1	1	1	0	1	72587	I		1	223	matched	109	0	1	VERB:V:1	cal
+calane	1	0	0	1	0	0				0			1	0	0		calane
+cam	3	0	1	1	0	1				0	219	matched	11	0	1	VERB:V:1	cam
+camu	2	0	0	1	0	1				0			94	0	1	NONE:1	camu
+can	4	1	1	1	0	1	71515		2	1	217	matched	2	0	2	VERB:V:2	can
+cana	2	0	0	1	0	1				0			86	0	1	ind:1	cana
+cand	3	0	1	1	0	1				0	218	matched	4	0	1	VERB:V:1	cand
+capa	2	0	0	1	0	1				0			62	0	1	NONE:1	capa
+capi	1	0	0	1	0	0				0			1	0	0		capi
+car	4	1	1	1	0	1	72173	I		1	220	matched	395	0	1	VERB:V:1	car
+caraṇya	2	0	0	1	0	1				0			1	0	2	VERB:N:1;m:f:n:1	caraRya
+carba	1	0	0	1	0	0				0			1	0	0		carba
+carc	4	1	1	1	0	1	72401	I,X		1	221	unmatched	86	0	1	VERB:V:1	carc
+carcca	1	0	0	1	0	0				0			2	0	0		carcca
+carry	1	0	0	0	1	0				0			0	1	0		
+carv	4	1	1	1	0	1	72562	I,X		1	222	matched	8	0	1	VERB:V:1	carv
+carvva	1	0	0	1	0	0				0			3	0	0		carvva
+cat	3	0	1	1	0	1				0	216	matched	6	0	1	VERB:V:1	cat
+cauryye	1	0	0	1	0	0				0			1	0	0		cOryye
+cay	2	0	0	1	0	1				0			42	0	1	VERB:V:1	cay
+cañc	4	1	1	1	0	1	70764	I		1	214	matched	1	0	1	VERB:V:1	caYc
+caḍi	1	0	0	1	0	0				0			7	0	0		caqi
+caṅkrama	2	0	0	1	0	1				0			1	0	1	m:1	caNkrama
+caṇ	2	0	0	1	0	1				0			9	0	1	VERB:V:1	caR
+caṣa	1	0	0	1	0	0				0			58	0	0		caza
+caṭ	4	1	1	1	0	1	70830	I		1	215	matched	4	0	1	VERB:V:1	caw
+caṭa	2	0	0	1	0	1				0			28	0	1	NONE:1	cawa
+caṭe	1	0	0	1	0	0				0			5	0	0		cawe
+ccho	1	0	0	1	0	0				0			2	0	0		cCo
+cchura	1	0	0	1	0	0				0			1	0	0		cCura
+cel	2	0	0	1	0	1				0			3	0	1	VERB:V:1	cel
+ceṣṭ	3	0	1	1	0	1				0	236	matched	19	0	1	VERB:V:1	cezw
+ceṣṭā	2	0	0	1	0	1				0			1	0	6	f:2;m:f:n:2;m:1;n:1	cezwA
+chad	4	1	1	1	0	1	75390,75556	I,X	1,3	2	239	matched	44	0	5	VERB:V:3;m:f:n:2	Cad
+chadi	2	0	0	1	0	1				0			9	0	1	m:f:n:1	Cadi
+chal	3	1	0	1	0	1	75712	X		1			2	0	1	VERB:V:1	Cal
+challenge	1	0	0	0	1	0				0			0	1	0		
+chamu	1	0	0	1	0	0				0			51	0	0		Camu
+chand	3	0	1	1	0	1				0	240	matched	3	0	2	SEE:1;NONE:1	Cand
+charda	2	0	0	1	0	1				0			9	0	2	SEE:1;NONE:1	Carda
+chardda	1	0	0	1	0	0				0			2	0	0		Cardda
+chase	1	0	0	0	1	0				0			0	1	0		
+chatter	1	0	0	0	1	0				0			0	1	0		
+chaṣa	1	0	0	1	0	0				0			2	0	0		Caza
+cheda	2	0	0	1	0	1				0			6	0	5	m:3;m:f:n:2	Ceda
+chedane	1	0	0	1	0	0				0			3	0	0		Cedane
+cheṭ	1	0	0	0	1	0				0			0	2	0		
+cheṭ up, crush	1	0	0	0	1	0				0			0	1	0		
+chid	4	1	1	1	0	1	75907	IX,VII	1	1	242	matched	55	0	4	VERB:V:1;m:f:n:1;m:1;f:1	Cid
+chide	1	0	0	0	1	0				0			0	1	0		
+chidra	2	0	0	1	0	1				0			6	0	11	m:f:n:3;f:3;n:2;m:2;m:f#A:n:1	Cidra
+cho	2	0	0	1	0	1				0			85	0	1	VERB:V:1	Co
+choose	1	0	0	0	1	0				0			0	1	0		
+chup	2	0	0	1	0	1				0			3	0	1	VERB:V:1	Cup
+chur	3	0	1	1	0	1				0	244	matched	9	0	1	VERB:V:1	Cur
+chuḍ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Cuq
+chuṭ	2	0	1	0	0	1				0	243	unmatched	0	0	1	VERB:V:1	
+chā	2	0	1	0	0	1				0	241	matched	0	0	2	f:1;m:1	
+chṛd	4	1	1	1	0	1	76102	I,VII		1	245	matched	3	0	1	VERB:V:1	Cfd
+chṛdir	1	0	0	1	0	0				0			59	0	0		Cfdir
+chṛdī	1	0	0	1	0	0				0			26	0	0		CfdI
+chṛpa	1	0	0	1	0	0				0			1	0	0		Cfpa
+ci	4	1	1	1	0	1	73297,73362	III,V	1,2	2	225,226	homonym_shared	122	0	3	VERB:V:3	ci
+cihna	2	0	0	1	0	1				0			3	0	5	m:f:n:3;f#A:n:1;f:1	cihna
+cila	1	0	0	1	0	0				0			8	0	0		cila
+cilla	2	0	0	1	0	1				0			45	0	6	m:2;f:2;m:f:n:1;m:n:1	cilla
+cint	3	0	1	1	0	1				0	228	unmatched	26	0	1	VERB:V:1	cint
+cinti	2	0	0	1	0	1				0			1	0	2	m:2	cinti
+ciri	2	0	0	1	0	1				0			49	0	4	m:2;NONE:1;VERB:V:1	ciri
+cit	4	1	1	1	0	1	73474	I,II,III	4	1	227	matched	73	0	20	m:5;m:f:n:4;f:4;SEE:2;n:2	cit
+citadhātor	1	0	0	1	0	0				0			1	0	0		citaDAtor
+citi	2	0	0	1	0	1				0			66	0	12	f:4;m:3;n:2;ind:1;m:f:n:1	citi
+citra	2	0	0	1	0	1				0			39	0	202	m:83;f:47;m:f:n:38;n:22;NONE:4	citra
+citī	2	0	0	1	0	1				0			1	0	1	f:1	citI
+ciñ	1	0	0	1	0	0				0			154	0	0		ciY
+ciṃt	1	0	0	1	0	0				0			1	0	0		ciMt
+clatter	1	0	0	0	1	0				0			0	1	0		
+cleanse	1	0	0	0	1	0				0			0	1	0		
+clear	1	0	0	0	1	0				0			0	1	0		
+cling	1	0	0	0	1	0				0			0	1	0		
+clothe	1	0	0	0	1	0				0			0	1	0		
+coagulate	1	0	0	0	1	0				0			0	1	0		
+color	1	0	0	0	1	0				0			0	1	0		
+combine	1	0	0	0	1	0				0			0	1	0		
+commemorate	1	0	0	0	1	0				0			0	1	0		
+consider	1	0	0	0	1	0				0			0	1	0		
+consume	1	0	0	0	1	0				0			0	2	0		
+contend	1	0	0	0	1	0				0			0	1	0		
+control	1	0	0	0	1	0				0			0	1	0		
+conḍuer	1	0	0	0	1	0				0			0	1	0		
+conṛine	1	0	0	0	1	0				0			0	1	0		
+cough	1	0	0	0	1	0				0			0	1	0		
+cover	1	0	0	0	1	0				0			0	3	0		
+cover up	1	0	0	0	1	0				0			0	1	0		
+crash	1	0	0	0	1	0				0			0	1	0		
+creak	1	0	0	0	1	0				0			0	2	0		
+creep	1	0	0	0	1	0				0			0	1	0		
+crush	1	0	0	0	1	0				0			0	8	0		
+cry out	1	0	0	0	1	0				0			0	1	0		
+cu	1	0	0	1	0	0				0			1	0	0		cu
+cubi	1	0	0	1	0	0				0			10	0	0		cubi
+cucya	1	0	0	1	0	0				0			76	0	0		cucya
+cud	3	0	1	1	0	1				0	229	matched	19	0	1	VERB:V:1	cud
+cukk	2	0	0	1	0	1				0			1	0	1	VERB:V:1	cukk
+cul	2	0	0	1	0	1				0			4	0	1	VERB:V:1	cul
+culla	2	0	0	1	0	1				0			3	0	4	m:3;m:f:n:1	culla
+culump	3	0	1	1	0	1				0	233	unmatched	3	0	1	VERB:V:1	culump
+cumb	4	1	1	1	0	1	74627	I	2	1	231	matched	8	0	2	VERB:V:2	cumb
+cumbane	1	0	0	1	0	0				0			2	0	0		cumbane
+cup	3	0	1	1	0	1				0	230	matched	19	0	2	VERB:V:2	cup
+cur	3	0	1	1	0	1				0	232	unmatched	3	0	2	VERB:V:1;NONE:1	cur
+cut	2	0	0	0	1	1				0			0	2	1	VERB:V:1	
+cut oṛṛ	1	0	0	0	1	0				0			0	1	0		
+cut up	1	0	0	0	1	0				0			0	1	0		
+cuḍa	1	0	0	1	0	0				0			6	0	0		cuqa
+cuḍi	1	0	0	1	0	0				0			2	0	0		cuqi
+cuṃb	1	0	0	1	0	0				0			2	0	0		cuMb
+cuṭa	1	0	0	1	0	0				0			6	0	0		cuwa
+cuṭṭa	1	0	0	1	0	0				0			1	0	0		cuwwa
+cyu	3	0	1	1	0	1				0	237	matched	65	0	2	VERB:V:2	cyu
+cyut	3	0	1	1	0	1				0	238	matched	1	0	3	m:f:n:2;VERB:V:1	cyut
+cyutir	1	0	0	1	0	0				0			6	0	0		cyutir
+cāle	1	0	0	1	0	0				0			1	0	0		cAle
+cāy	3	0	1	1	0	1				0	224	matched	6	0	1	VERB:V:1	cAy
+cāyṛ	1	0	0	1	0	0				0			94	0	0		cAyf
+cībhṛ	1	0	0	1	0	0				0			50	0	0		cIBf
+cīka	1	0	0	1	0	0				0			56	0	0		cIka
+cīva	1	0	0	1	0	0				0			4	0	0		cIva
+cūrī	2	0	0	1	0	1				0			1	0	1	NONE:1	cUrI
+cūrṇ	3	1	0	1	0	1	74801	X		1			15	0	1	VERB:V:1	cUrR
+cūrṇṇa	1	0	0	1	0	0				0			1	0	0		cUrRRa
+cūṣ	4	1	1	1	0	1	74874	I		1	234	matched	52	0	1	VERB:V:1	cUz
+cṛt	3	0	1	1	0	1				0	235	matched	11	0	1	VERB:V:1	cft
+cṛtī	1	0	0	1	0	0				0			1	0	0		cftI
+da	2	0	0	1	0	1				0			11	0	10	NONE:2;m:2;m:n:2;m:f:n:2;m:f#A:n:1	da
+dabh	3	0	1	1	0	1				0	342	matched	8	0	1	VERB:V:1	daB
+dabha	2	0	0	1	0	1				0			21	0	1	m:f:n:1	daBa
+dad	3	0	1	1	0	1				0	339	matched	10	0	4	m:f:n:2;VERB:V:1;SEE:1	dad
+dadadāne	1	0	0	1	0	0				0			1	0	0		dadadAne
+dadh	3	0	1	1	0	1				0	340	unmatched	1	0	1	VERB:V:1	daD
+dadha	2	0	0	1	0	1				0			24	0	1	m:f:n:1	daDa
+dagh	3	0	1	1	0	1				0	338	matched	5	0	1	VERB:V:1	daG
+dagha	1	0	0	1	0	0				0			14	0	0		daGa
+dah	4	1	1	1	0	1	91164	I	1	1	348	matched	134	0	2	VERB:V:1;m:f:n:1	dah
+dai	2	0	0	1	0	1				0			4	0	1	VERB:V:1	dE
+dakṣ	4	1	1	1	0	1	89316	I		1	337	matched	12	0	1	VERB:V:1	dakz
+dal	4	1	1	1	0	1	90700	I		1	346	matched	86	0	1	VERB:V:1	dal
+dam	4	1	1	1	0	1	90246	IV,IX	1	1	343	matched	22	0	4	m:2;VERB:V:1;SEE:1	dam
+damage	1	0	0	0	1	0				0			0	2	0		
+dambh	2	0	0	1	0	1				0			8	0	2	VERB:V:2	damB
+dan	2	0	1	0	0	1				0	341	matched	0	0	1	SEE:1	
+dance	1	0	0	0	1	0				0			0	2	0		
+dance, play	1	0	0	0	1	0				0			0	1	0		
+dane	1	0	0	1	0	0				0			1	0	0		dane
+danśa	1	0	0	1	0	0				0			106	0	0		danSa
+danūsa	1	0	0	1	0	0				0			1	0	0		danUsa
+dare	1	0	0	0	1	0				0			0	2	0		
+daridrā	2	0	1	1	0	0				0	345	unmatched	2	0	0		daridrA
+darśane	1	0	0	1	0	0				0			1	0	0		darSane
+das	3	0	1	1	0	1				0	347	matched	11	0	1	VERB:V:1	das
+dasi	1	0	0	1	0	0				0			26	0	0		dasi
+dasu	1	0	0	1	0	0				0			9	0	0		dasu
+day	3	0	1	1	0	1				0	344	matched	6	0	1	VERB:V:1	day
+daśa	2	0	0	1	0	1				0			1	0	194	m:57;m:f:n:55;n:32;f:24;NONE:12	daSa
+daśasya	2	0	0	1	0	1				0			2	0	1	VERB:N:1	daSasya
+daśi	1	0	0	1	0	0				0			4	0	0		daSi
+daṃbh	1	0	0	1	0	0				0			1	0	0		daMB
+daṃh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	daMh
+daṃs	3	0	1	1	0	1				0	336	matched	2	0	2	VERB:V:2	daMs
+daṃś	3	0	1	1	0	1				0	335	matched	16	0	2	VERB:V:2	daMS
+daṇḍa	2	0	0	1	0	1				0			16	0	114	m:54;m:f:n:22;n:20;NONE:7;f:7	daRqa
+deck	1	0	0	0	1	0				0			0	1	0		
+delight	1	0	0	0	1	0				0			0	1	0		
+desert	1	0	0	0	1	0				0			0	1	0		
+deserve	1	0	0	0	1	0				0			0	1	0		
+design	1	0	0	0	1	0				0			0	1	0		
+desire	1	0	0	0	1	0				0			0	1	0		
+destroy	1	0	0	0	1	0				0			0	2	0		
+dev	3	0	1	1	0	1				0	377	unmatched	24	0	1	VERB:V:1	dev
+devour	1	0	0	0	1	0				0			0	5	0		
+devṛ	2	0	0	1	0	1				0			3	0	3	m:1;m:f:n:1;NONE:1	devf
+dha	2	0	0	1	0	1				0			1	0	6	m:2;n:2;NONE:1;m:f#A:n:1	Da
+dhakka	1	0	0	1	0	0				0			1	0	0		Dakka
+dham	4	1	1	1	0	1	99700	I		1	391	matched	20	0	1	VERB:V:1	Dam
+dhan	4	1	1	1	0	1	99257	III	2	1	389	matched	21	0	2	VERB:V:2	Dan
+dhanv	4	1	1	1	0	1	99639	I		1	390	matched	6	0	4	SEE:1;n:1;m:f:n:1;VERB:V:1	Danv
+dhav	4	1	1	1	0	1	100554	I		1	392	matched	1	0	1	VERB:V:1	Dav
+dhavi	1	0	0	1	0	0				0			5	0	0		Davi
+dhe	3	1	0	1	0	1	102003	I		1			7	0	1	VERB:V:1	De
+dhi	4	1	1	1	0	1	101184	VI	1	1	397	matched	7	0	5	VERB:V:2;NONE:2;m:1	Di
+dhivi	1	0	0	1	0	0				0			13	0	0		Divi
+dhiṣ	2	1	0	0	0	1	101212	III	1	1			0	0	2	VERB:V:1;NONE:1	Diz
+dhiṣa	2	0	0	1	0	1				0			6	0	1	NONE:1	Diza
+dhmā	3	0	1	1	0	1				0	404	unmatched	148	0	4	VERB:V:2;m:2	DmA
+dhor	2	0	0	1	0	1				0			5	0	1	VERB:V:1	Dor
+dhorṛ	1	0	0	1	0	0				0			9	0	0		Dorf
+dhra	2	0	0	1	0	1				0			1	0	1	m:f#I:n:1	Dra
+dhrai	2	0	0	1	0	1				0			4	0	1	VERB:V:1	DrE
+dhraj	3	0	1	1	0	1				0	406	matched	3	0	1	VERB:V:1	Draj
+dhraja	1	0	0	1	0	0				0			47	0	0		Draja
+dhraji	2	0	0	1	0	1				0			2	0	1	NONE:1	Draji
+dhrasa	1	0	0	1	0	0				0			26	0	0		Drasa
+dhraṇ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	DraR
+dhraṇa	1	0	0	1	0	0				0			1	0	0		DraRa
+dhrekṛ	1	0	0	1	0	0				0			5	0	0		Drekf
+dhru	2	0	0	1	0	1				0			14	0	3	SEE:2;VERB:V:1	Dru
+dhrāji	2	0	0	1	0	1				0			1	0	1	f:1	DrAji
+dhrākhṛ	1	0	0	1	0	0				0			1	0	0		DrAKf
+dhrākṣi	1	0	0	1	0	0				0			9	0	0		DrAkzi
+dhrāḍṛ	1	0	0	1	0	0				0			3	0	0		DrAqf
+dhu	2	0	0	1	0	1				0			1	0	3	VERB:V:1;f:1;NONE:1	Du
+dhukṣ	3	0	1	1	0	1				0	399	matched	2	0	1	VERB:V:1	Dukz
+dhukṣa	1	0	0	1	0	0				0			2	0	0		Dukza
+dhurv	2	0	0	1	0	1				0			1	0	2	VERB:V:2	Durv
+dhurvī	1	0	0	1	0	0				0			6	0	0		DurvI
+dhuñ	1	0	0	1	0	0				0			36	0	0		DuY
+dhvaj	2	0	0	1	0	1				0			4	0	2	VERB:V:1;NONE:1	Dvaj
+dhvaji	2	0	0	1	0	1				0			2	0	1	NONE:1	Dvaji
+dhvan	4	1	1	1	0	1	102497	I	2	1	408	matched	75	0	2	NONE:1;VERB:V:1	Dvan
+dhvanau	1	0	0	1	0	0				0			1	0	0		DvanO
+dhvani	2	0	0	1	0	1				0			2	0	17	m:12;f:3;n:1;m:f:n:1	Dvani
+dhvans	1	0	0	1	0	0				0			1	0	0		Dvans
+dhvansa	1	0	0	1	0	0				0			2	0	0		Dvansa
+dhvansu	1	0	0	1	0	0				0			66	0	0		Dvansu
+dhvaṃs	4	1	1	1	0	1	102398	I		1	407	matched	27	0	1	VERB:V:1	DvaMs
+dhvaṇa	1	0	0	1	0	0				0			6	0	0		DvaRa
+dhvākṣi	1	0	0	1	0	0				0			2	0	0		DvAkzi
+dhvṛ	4	1	1	1	0	1	102614	I		1	409	matched	60	0	1	VERB:V:1	Dvf
+dhyai	3	1	0	1	0	1	102185	I,II		1			106	0	1	VERB:V:1	DyE
+dhyā	2	0	1	0	0	1				0	405	matched	0	0	2	SEE:1;f:1	
+dhā	4	1	1	1	0	1	100607	I,II,III,IV	1	1	393,394	homonym_shared	234	0	5	f:2;VERB:V:1;m:f:n:1;m:1	DA
+dhāraṇe	1	0	0	1	0	0				0			1	0	0		DAraRe
+dhāri	2	0	0	1	0	1				0			2	0	1	m:f:n:1	DAri
+dhātoḥ	1	0	0	1	0	0				0			6	0	0		DAtoH
+dhātu	2	0	0	1	0	1				0			1	0	90	m:29;f:28;n:23;m:f:n:6;m:n:3	DAtu
+dhāv	4	1	1	1	0	1	101159,101170	I	1,2	2	395,396	homonym_shared	53	0	2	VERB:V:2	DAv
+dhāvu	1	0	0	1	0	0				0			50	0	0		DAvu
+dhāñ	1	0	0	1	0	0				0			249	0	0		DAY
+dhī	4	1	1	1	0	1	101254	III	1	1	398	matched	24	0	23	f:7;m:7;m:f:n:5;VERB:V:2;n:1	DI
+dhīr	2	0	0	1	0	1				0			2	0	1	NONE:1	DIr
+dhū	4	1	1	1	0	1	101481	I,II,IX,V,VI	1	1	400	matched	49	0	2	VERB:V:1;f:1	DU
+dhūp	2	0	0	1	0	1				0			47	0	1	VERB:V:1	DUp
+dhūrv	3	0	1	1	0	1				0	401	matched	3	0	1	VERB:V:1	DUrv
+dhūrī	1	0	0	1	0	0				0			1	0	0		DUrI
+dhūsa	1	0	0	1	0	0				0			8	0	0		DUsa
+dhūñ	1	0	0	1	0	0				0			65	0	0		DUY
+dhṛ	4	1	1	1	0	1	101815	I		1	402	matched	46	0	1	VERB:V:1	Df
+dhṛj	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Dfj
+dhṛji	1	0	0	1	0	0				0			1	0	0		Dfji
+dhṛṣ	4	1	1	1	0	1	101933	I,V		1	403	matched	34	0	1	VERB:V:1	Dfz
+dhṛṣā	1	0	0	1	0	0				0			43	0	0		DfzA
+dhṝ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	DF
+die	1	0	0	0	1	0				0			0	1	0		
+dig	2	0	0	0	1	1				0			0	2	56	m:23;n:11;m:f:n:10;f:7;NONE:2	
+dih	4	1	1	1	0	1	92642	II	1	1	357	matched	88	0	2	VERB:V:1;SEE:1	dih
+direct	1	0	0	0	1	0				0			0	1	0		
+dissolve	1	0	0	0	1	0				0			0	1	0		
+div	4	1	1	1	0	1	92229	IV	2	1	355	homonym_shared	35	0	8	VERB:V:2;m:f:n:2;m:f:1;ind:1;f:1	div
+divi	2	0	0	1	0	1				0			4	0	29	m:f:n:16;m:9;NONE:3;n:1	divi
+divide	1	0	0	0	1	0				0			0	2	0		
+divide, crush	1	0	0	0	1	0				0			0	1	0		
+divide, share	1	0	0	0	1	0				0			0	2	0		
+divu	1	0	0	1	0	0				0			176	0	0		divu
+diś	4	1	1	1	0	1	92472	III,VI	1	1	356	matched	166	0	3	VERB:V:1;f:1;NONE:1	diS
+do	2	0	0	1	0	1				0			22	0	1	VERB:V:1	do
+doli	1	0	0	1	0	0				0			2	0	0		doli
+drag, plough	1	0	0	0	1	0				0			0	1	0		
+drai	2	0	0	1	0	1				0			9	0	1	VERB:V:1	drE
+dram	3	0	1	1	0	1				0	380	unmatched	1	0	1	VERB:V:1	dram
+drama	1	0	0	1	0	0				0			12	0	0		drama
+draṭ, suck	1	0	0	0	1	0				0			0	2	0		
+drek	2	0	0	1	0	1				0			1	0	1	VERB:V:1	drek
+drekṛ	1	0	0	1	0	0				0			5	0	0		drekf
+drink	1	0	0	0	1	0				0			0	1	0		
+drip	1	0	0	0	1	0				0			0	3	0		
+drive	1	0	0	0	1	0				0			0	1	0		
+drive, produce	1	0	0	0	1	0				0			0	1	0		
+drop	1	0	0	0	1	0				0			0	1	0		
+dru	4	1	1	1	0	1	97846	I	2	1	384	matched	73	0	26	m:10;m:f:n:5;f:5;VERB:V:2;n:2	dru
+drudhātor	1	0	0	1	0	0				0			1	0	0		druDAtor
+druh	4	1	1	1	0	1	97951	IV	1	1	385	matched	84	0	4	VERB:V:1;m:f:n:1;m:f:1;f:1	druh
+druṇa	2	0	0	1	0	1				0			8	0	3	m:1;n:1;SEE:1	druRa
+drā	4	1	1	1	0	1	97755	II	2	1	381,382	homonym_shared	31	0	3	VERB:V:2;SEE:1	drA
+drāghṛ	1	0	0	1	0	0				0			11	0	0		drAGf
+drāhṛ	1	0	0	1	0	0				0			4	0	0		drAhf
+drākhṛ	1	0	0	1	0	0				0			45	0	0		drAKf
+drākṣi	1	0	0	1	0	0				0			4	0	0		drAkzi
+drāḍ	2	0	1	0	0	1				0	383	unmatched	0	0	1	VERB:V:1	
+drāḍṛ	1	0	0	1	0	0				0			5	0	0		drAqf
+drū	2	0	1	0	0	1				0	386	matched	0	0	4	VERB:V:1;m:f:n:1;f:1;m:1	
+drūñ	1	0	0	1	0	0				0			2	0	0		drUY
+du	3	0	1	1	0	1				0	365	homonym_shared	99	0	2	VERB:V:2	du
+dudh	2	0	1	0	0	1				0	366	matched	0	0	1	VERB:V:1	
+duh	4	1	1	1	0	1	94848	II,IV,VI	2	1	369	matched	73	0	3	VERB:V:2;m:f:n:1	duh
+duhir	1	0	0	1	0	0				0			3	0	0		duhir
+dul	3	0	1	1	0	1				0	367	unmatched	16	0	2	VERB:V:1;NONE:1	dul
+dull	1	0	0	0	1	0				0			0	1	0		
+durvī	1	0	0	1	0	0				0			1	0	0		durvI
+duvas	2	0	0	1	0	1				0			3	0	3	m:f:n:2;n:1	duvas
+duḥkha	2	0	0	1	0	1				0			53	0	62	m:f:n:31;m:10;n:9;f:5;m:f#I:n:3	duHKa
+duṣ	4	1	1	1	0	1	94747	IV	2	1	368	matched	28	0	129	m:f:n:74;f:16;n:14;m:14;NONE:5	duz
+duṣa	1	0	0	1	0	0				0			69	0	0		duza
+dvar	1	0	1	0	0	0				0	387	unmatched	0	0	0		
+dvi	2	0	0	1	0	1				0			30	0	455	m:f:n:156;m:117;f:48;n:47;m:f#I:n:36	dvi
+dviṣ	4	1	1	1	0	1	98962	II	2	1	388	matched	93	0	8	ind:2;m:f:n:2;ICF:dvis:1;VERB:V:1;f:1	dviz
+dvṛ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	dvf
+dyai	2	0	0	1	0	1				0			12	0	2	VERB:V:1;ind:1	dyE
+dyu	3	0	1	1	0	1				0	378	unmatched	17	0	67	m:26;f:13;n:10;m:f:n:8;m:n:2	dyu
+dyut	4	1	1	1	0	1	97391	I	2	1	379	matched	38	0	4	m:f:n:1;VERB:V:1;f:1;NONE:1	dyut
+dā	4	1	1	1	0	1	91212,91425	I,III,IV	1,4	2	349,350,351,352	homonym_shared	145	0	12	f:5;NONE:3;VERB:V:2;m:1;m:f:n:1	dA
+dāhe	1	0	0	1	0	0				0			3	0	0		dAhe
+dān	2	0	0	1	0	1				0			6	0	1	VERB:V:1	dAn
+dāne	1	0	0	1	0	0				0			4	0	0		dAne
+dās	3	0	1	1	0	1				0	354	matched	6	0	1	VERB:V:1	dAs
+dāsṛ	1	0	0	1	0	0				0			2	0	0		dAsf
+dāyaḥ	1	0	0	1	0	0				0			1	0	0		dAyaH
+dāś	4	1	1	1	0	1	91851	I,II,V	1	1	353	matched	13	0	3	VERB:V:1;f:1;m:1	dAS
+dāśṛ	1	0	0	1	0	0				0			58	0	0		dASf
+dī	3	0	1	1	0	1				0	358,359	homonym_shared	15	0	5	VERB:V:3;f:1;m:f:n:1	dI
+dīdhī	3	0	1	1	0	1				0	361	unmatched	1	0	2	VERB:V:2	dIDI
+dīkṣ	3	0	1	1	0	1				0	360	matched	40	0	1	VERB:V:1	dIkz
+dīp	4	1	1	1	0	1	92769	IV		1	362	matched	40	0	1	VERB:V:1	dIp
+dīptau	1	0	0	1	0	0				0			4	0	0		dIptO
+dīpī	1	0	0	1	0	0				0			68	0	0		dIpI
+dīv	2	0	1	0	0	1				0	363,364	homonym_shared	0	0	2	f:1;SEE:1	
+dīṅkṣaye	1	0	0	1	0	0				0			1	0	0		dINkzaye
+dū	3	0	1	1	0	1				0	370	homonym_shared	2	0	26	m:f:n:18;VERB:V:2;n:2;ICF:dus:1;f:1	dU
+dūṅ	1	0	0	1	0	0				0			11	0	0		dUN
+dūṣ	1	0	0	1	0	0				0			1	0	0		dUz
+dūṣi	2	0	0	1	0	1				0			1	0	2	m:f:n:1;f:1	dUzi
+dṛ	3	0	1	1	0	1				0	371,372	homonym_shared	16	0	1	VERB:V:1	df
+dṛbh	3	0	1	1	0	1				0	374	matched	3	0	2	VERB:V:2	dfB
+dṛbhī	1	0	0	1	0	0				0			4	0	0		dfBI
+dṛh	3	0	1	1	0	1				0	376	matched	1	0	2	VERB:V:1;NONE:1	dfh
+dṛha	1	0	0	1	0	0				0			56	0	0		dfha
+dṛhi	1	0	0	1	0	0				0			10	0	0		dfhi
+dṛmpha	1	0	0	1	0	0				0			2	0	0		dfmPa
+dṛp	4	1	1	1	0	1	95246	IV	2	1	373	matched	17	0	2	VERB:V:2	dfp
+dṛś	4	1	1	1	0	1	95263		1	1	375	matched	51	0	5	f:2;VERB:V:1;m:1;f:n:1	dfS
+dṛṃh	3	1	0	1	0	1	95068	I,IV		1			2	0	1	VERB:V:1	dfMh
+dṝ	3	1	0	1	0	1	95496	II,IX		1			146	0	1	VERB:V:1	dF
+dṭell	1	0	0	0	1	0				0			0	1	0		
+eat	1	0	0	0	1	0				0			0	1	0		
+eat, devour	1	0	0	0	1	0				0			0	1	0		
+edh	4	1	1	1	0	1	40096	I		1	79	matched	10	0	1	VERB:V:1	eD
+ej	4	1	1	1	0	1	39975	I		1	78	matched	7	0	1	VERB:V:1	ej
+ejṛ	1	0	0	1	0	0				0			62	0	0		ejf
+eka	2	0	0	1	0	1				0			59	0	444	m:f:n:165;m:118;f:60;n:53;ind:14	eka
+elā	2	0	0	1	0	1				0			2	0	9	n:4;f:3;m:1;m:f#ikA:n:1	elA
+embrace	1	0	0	0	1	0				0			0	1	0		
+endure	1	0	0	0	1	0				0			0	1	0		
+enjoy	1	0	0	0	1	0				0			0	2	0		
+enjoy etc	1	0	0	0	1	0				0			0	1	0		
+envelop	1	0	0	0	1	0				0			0	1	0		
+eva	2	0	0	1	0	1				0			1	0	8	m:4;m:f:n:2;ind:1;m:f#arI:n:1	eva
+eḷalt (?)	1	0	0	0	1	0				0			0	1	0		
+eḷchange	1	0	0	0	1	0				0			0	1	0		
+eḷpend	1	0	0	0	1	0				0			0	1	0		
+eḷtend	1	0	0	0	1	0				0			0	1	0		
+eḷult (?)	1	0	0	0	1	0				0			0	2	0		
+eṣ	3	1	0	1	0	1	40241	I	1	1			4	0	2	VERB:V:1;VERB:P:1	ez
+eṣi	1	0	0	1	0	0				0			1	0	0		ezi
+eṣṛ	1	0	0	1	0	0				0			1	0	0		ezf
+eṭh	2	1	0	0	0	1	39986	I		1			0	0	1	VERB:V:1	eW
+ga	2	0	0	1	0	1				0			3	0	10	NONE:3;m:3;m:f#A:n:1;m:f#I:n:1;n:1	ga
+gabh	1	0	1	0	0	0				0	169	unmatched	0	0	0		
+gach	1	0	1	0	0	0				0	166	homonym_shared	0	0	0		
+gad	4	1	1	1	0	1	62868	I,X		1	167	matched	105	0	1	VERB:V:1	gad
+gadgada	2	0	0	1	0	1				0			3	0	15	m:f:n:6;n:4;m:f#A:n:2;m:2;f:1	gadgada
+gadh	3	0	1	1	0	1				0	168	matched	1	0	1	VERB:V:1	gaD
+gadi	2	0	0	1	0	1				0			3	0	2	f:1;m:1	gadi
+gah	2	0	0	1	0	1				0			1	0	1	VERB:V:1	gah
+gai	4	1	1	1	0	1	66852	I,II,III		1	194	unmatched	78	0	1	VERB:V:1	gE
+gain	1	0	0	0	1	0				0			0	1	0		
+gaj	2	0	0	1	0	1				0			8	0	1	VERB:V:1	gaj
+gaji	1	0	0	1	0	0				0			5	0	0		gaji
+gal	4	1	1	1	0	1	64198	I	1	1	174	matched	100	0	2	VERB:V:2	gal
+galbh	3	0	1	1	0	1				0	175	matched	59	0	1	VERB:V:1	galB
+galha	1	0	0	1	0	0				0			3	0	0		galha
+gam	4	1	1	1	0	1	63409	I,II,III	1	1	170	homonym_shared	218	0	2	VERB:V:1;SEE:1	gam
+gamane	1	0	0	1	0	0				0			1	0	0		gamane
+gamble	1	0	0	0	1	0				0			0	1	0		
+gandh	2	0	0	1	0	1				0			37	0	1	VERB:V:1	ganD
+gape	1	0	0	0	1	0				0			0	1	0		
+gard	3	1	1	0	0	1	63914	I,X		1	172	matched	0	0	1	VERB:V:1	gard
+garda	2	0	0	1	0	1				0			2	0	1	m:f#A:n:1	garda
+garddha	1	0	0	1	0	0				0			2	0	0		gardDa
+gardh	1	0	0	1	0	0				0			5	0	0		garD
+gardha	2	0	0	1	0	1				0			2	0	1	m:1	garDa
+garh	4	1	1	1	0	1	64179	I,X		1	173	matched	68	0	1	VERB:V:1	garh
+garhaṇaṃ	1	0	0	1	0	0				0			1	0	0		garhaRaM
+garj	4	1	1	1	0	1	63862	I		1	171	matched	38	0	1	VERB:V:1	garj
+garjja	1	0	0	1	0	0				0			4	0	0		garjja
+garv	2	0	0	1	0	1				0			48	0	1	VERB:V:1	garv
+garvva	1	0	0	1	0	0				0			2	0	0		garvva
+gatau	1	0	0	1	0	0				0			19	0	0		gatO
+gather	1	0	0	0	1	0				0			0	1	0		
+gatyartheti	1	0	0	1	0	0				0			1	0	0		gatyarTeti
+gatyādau	1	0	0	1	0	0				0			1	0	0		gatyAdO
+gatyāṃ	1	0	0	1	0	0				0			1	0	0		gatyAM
+gauṇe	1	0	0	1	0	0				0			1	0	0		gORe
+gaveṣ	2	0	0	1	0	1				0			5	0	1	VERB:V:1	gavez
+gavya	2	0	0	1	0	1				0			1	0	7	VERB:N:1;m:f:n:1;m:1;f:n:1;n:1	gavya
+gaḍ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	gaq
+gaḍa	2	0	0	1	0	1				0			58	0	3	n:2;m:1	gaqa
+gaḍi	2	0	0	1	0	1				0			3	0	1	m:1	gaqi
+gaṇ	3	1	0	1	0	1	62523	X		1			63	0	1	VERB:V:1	gaR
+generate, enliven, impel	1	0	0	0	1	0				0			0	1	0		
+gepṛ	1	0	0	1	0	0				0			62	0	0		gepf
+gevṛ	1	0	0	1	0	0				0			3	0	0		gevf
+geṣṛ	1	0	0	1	0	0				0			4	0	0		gezf
+ghaj	1	0	0	1	0	0				0			1	0	0		Gaj
+ghar	3	0	1	1	0	1				0	203	matched	12	0	1	VERB:V:1	Gar
+ghas	4	1	1	1	0	1	69692	I		1	204	matched	14	0	1	VERB:V:1	Gas
+ghasḷ	1	0	0	1	0	0				0			61	0	0		Gasx
+ghañarthe	1	0	0	1	0	0				0			15	0	0		GaYarTe
+ghañatha	1	0	0	1	0	0				0			1	0	0		GaYaTa
+ghañrthe	1	0	0	1	0	0				0			1	0	0		GaYrTe
+ghañārthe	1	0	0	1	0	0				0			1	0	0		GaYArTe
+ghaḍa	1	0	0	1	0	0				0			1	0	0		Gaqa
+ghaṣa	1	0	0	1	0	0				0			4	0	0		Gaza
+ghaṭ	4	1	1	1	0	1	69219	I		1	201	matched	86	0	1	VERB:V:1	Gaw
+ghaṭi	2	0	0	1	0	1				0			4	0	6	m:2;f:1;m:f:n:1;NONE:1;ICF:Gawin:1	Gawi
+ghaṭṭ	4	1	1	1	0	1	69346	I,X		1	202	matched	41	0	1	VERB:V:1	Gaww
+ghrā	4	1	1	1	0	1	70246	I,II,III		1	210	matched	103	0	1	VERB:V:1	GrA
+ghura	1	0	0	1	0	0				0			1	0	0		Gura
+ghuṇ	2	0	0	1	0	1				0			58	0	1	VERB:V:1	GuR
+ghuṇi	2	0	0	1	0	1				0			5	0	1	m:f:n:1	GuRi
+ghuṣ	4	1	1	1	0	1	69841	I	1	1	206	matched	36	0	2	VERB:V:2	Guz
+ghuṣi	1	0	0	1	0	0				0			50	0	0		Guzi
+ghuṣir	1	0	0	1	0	0				0			95	0	0		Guzir
+ghuṭ	3	0	1	1	0	1				0	205	unmatched	2	0	1	VERB:V:1	Guw
+ghuṭa	2	0	0	1	0	1				0			1	0	1	m:1	Guwa
+ghūrī	1	0	0	1	0	0				0			1	0	0		GUrI
+ghūrṇ	4	1	1	1	0	1	69925	I		1	207	matched	72	0	1	VERB:V:1	GUrR
+ghṛ	4	1	1	1	0	1	69935	I,III,X	1	1	208	matched	53	0	2	VERB:V:2	Gf
+ghṛda	1	0	0	1	0	0				0			1	0	0		Gfda
+ghṛṇ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	GfR
+ghṛṇi	2	0	0	1	0	1				0			11	0	4	m:1;m:f:n:1;ICF:GfRin:1;n:1	GfRi
+ghṛṣ	4	1	1	1	0	1	70114	I	2	1	209	matched	17	0	2	NONE:1;VERB:V:1	Gfz
+ghṛṣu	2	0	0	1	0	1				0			9	0	1	m:f:n:1	Gfzu
+gil	1	0	0	1	0	0				0			4	0	0		gil
+gila	2	0	0	1	0	1				0			2	0	4	m:f:n:2;m:2	gila
+gir	2	0	1	0	0	1				0	179	unmatched	0	0	11	m:f:n:6;m:2;SEE:2;f:1	
+give	1	0	0	0	1	0				0			0	2	0		
+give birth, be born	1	0	0	0	1	0				0			0	1	0		
+glah	4	1	1	1	0	1	69145	I		1	199	matched	1	0	1	VERB:V:1	glah
+glaha	2	0	0	1	0	1				0			59	0	1	m:1	glaha
+glai	3	1	0	1	0	1	69170	I,II		1			5	0	1	VERB:V:1	glE
+glap	2	0	1	0	0	1				0	198	unmatched	0	0	1	VERB:V:1	
+glas	2	0	0	1	0	1				0			1	0	1	VERB:V:1	glas
+glasu	1	0	0	1	0	0				0			2	0	0		glasu
+glean	1	0	0	0	1	0				0			0	1	0		
+glepṛ	1	0	0	1	0	0				0			2	0	0		glepf
+glevṛ	1	0	0	1	0	0				0			2	0	0		glevf
+gleṣṛ	1	0	0	1	0	0				0			6	0	0		glezf
+gluc	2	0	0	1	0	1				0			1	0	1	VERB:V:1	gluc
+gluncu	1	0	0	1	0	0				0			51	0	0		gluncu
+glā	2	0	1	0	0	1				0	200	matched	0	0	2	SEE:1;f:1	
+go	2	0	0	0	1	1				0			0	6	735	m:298;f:135;n:132;m:f:n:87;NONE:29	
+go (?)	1	0	0	0	1	0				0			0	2	0		
+go emulously	1	0	0	0	1	0				0			0	1	0		
+go ṛorth	1	0	0	0	1	0				0			0	1	0		
+go ṭrong	1	0	0	0	1	0				0			0	1	0		
+godhā	2	0	0	1	0	1				0			5	0	7	f:5;n:1;m:1	goDA
+goma	1	0	0	1	0	0				0			37	0	0		goma
+gopāya	2	0	0	1	0	1				0			2	0	2	VERB:N:1;m:f:n:1	gopAya
+goṣṭa	1	0	0	1	0	0				0			50	0	0		gozwa
+goṣṭha	2	0	0	1	0	1				0			5	0	1	VERB:N:1	gozWa
+grabh	3	0	1	1	0	1				0	196	unmatched	12	0	1	NONE:1	graB
+grah	3	1	0	1	0	1	68591	IX		1			342	0	1	VERB:V:1	grah
+grantha	2	0	0	1	0	1				0			69	0	11	m:7;f:2;n:1;NONE:1	granTa
+gras	4	1	1	1	0	1	68546	I	1	1	197	matched	11	0	2	VERB:V:1;m:f:n:1	gras
+grasa	1	0	0	1	0	0				0			21	0	0		grasa
+grasp	1	0	0	0	1	0				0			0	1	0		
+grasu	1	0	0	1	0	0				0			47	0	0		grasu
+grath	4	1	1	1	0	1	68437	I,IX	1	1	195	unmatched	6	0	2	VERB:V:2	graT
+gratha	1	0	0	1	0	0				0			62	0	0		graTa
+grathi	1	0	0	1	0	0				0			23	0	0		graTi
+graṃth	1	0	0	1	0	0				0			1	0	0		graMT
+greet	1	0	0	0	1	0				0			0	2	0		
+groṭ	1	0	0	0	1	0				0			0	3	0		
+grucu	1	0	0	1	0	0				0			43	0	0		grucu
+grāma	2	0	0	1	0	1				0			43	0	108	m:53;m:f:n:20;n:16;f:13;NONE:3	grAma
+gu	4	1	1	1	0	1	65341	I	3	1	180	matched	5	0	6	VERB:V:3;SEE:1;f:1;n:1	gu
+gud	2	0	0	1	0	1				0			52	0	1	VERB:V:1	gud
+gudh	3	1	0	1	0	1	65883	I,IV,IX		1			61	0	1	VERB:V:1	guD
+gudri	1	0	0	1	0	0				0			1	0	0		gudri
+guh	4	1	1	1	0	1	66258	I	1	1	187	matched	30	0	2	VERB:V:1;f:1	guh
+guja	1	0	0	1	0	0				0			3	0	0		guja
+guji	1	0	0	1	0	0				0			6	0	0		guji
+gulph	1	0	1	0	0	0				0	186	unmatched	0	0	0		
+gumph	3	1	0	1	0	1	65966	VI		1			1	0	1	VERB:V:1	gumP
+gunpha	1	0	0	1	0	0				0			42	0	0		gunPa
+gup	3	0	1	1	0	1				0	183	matched	130	0	3	VERB:V:2;m:f:n:1	gup
+guph	3	0	1	1	0	1				0	184	unmatched	1	0	1	VERB:V:1	guP
+gupha	1	0	0	1	0	0				0			26	0	0		guPa
+gupū	1	0	0	1	0	0				0			62	0	0		gupU
+gur	3	0	1	1	0	1				0	185	matched	19	0	1	VERB:V:1	gur
+gurda	1	0	0	1	0	0				0			26	0	0		gurda
+gurvī	2	0	0	1	0	1				0			47	0	3	f:3	gurvI
+gurī	1	0	0	1	0	0				0			72	0	0		gurI
+guñj	4	1	1	1	0	1	65392	I		1	181	matched	4	0	1	VERB:V:1	guYj
+guḍ	2	0	0	1	0	1				0			8	0	1	VERB:V:1	guq
+guḍi	1	0	0	1	0	0				0			2	0	0		guqi
+guṇ	1	0	0	1	0	0				0			1	0	0		guR
+guṇa	2	0	0	1	0	1				0			11	0	151	m:f:n:46;m:41;n:30;f:25;NONE:4	guRa
+guṇḍ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	guRq
+guṇṭh	3	0	1	1	0	1				0	182	matched	3	0	1	VERB:V:1	guRW
+guṣa	1	0	0	1	0	0				0			1	0	0		guza
+gā	4	1	1	1	0	1	64493	II,III	1	1	176,177	homonym_shared	64	0	5	f:2;m:f:n:2;VERB:V:1	gA
+gādhṛ	1	0	0	1	0	0				0			58	0	0		gADf
+gāh	4	1	1	1	0	1	65024	I		1	178	matched	29	0	1	VERB:V:1	gAh
+gāhū	1	0	0	1	0	0				0			59	0	0		gAhU
+gāne	1	0	0	1	0	0				0			1	0	0		gAne
+gātra	2	0	0	1	0	1				0			3	0	30	m:9;m:f:n:7;f:7;n:6;SEE:1	gAtra
+gāṅ	1	0	0	1	0	0				0			21	0	0		gAN
+gītā	2	0	0	1	0	1				0			1	0	1	f:1	gItA
+gūrd	2	0	1	0	0	1				0	188	unmatched	0	0	2	VERB:V:2	
+gūrdh	3	1	1	0	0	1	66407	X		1	189	unmatched	0	0	1	VERB:V:1	gUrD
+gūrī	1	0	0	1	0	0				0			54	0	0		gUrI
+gṛ	3	0	1	1	0	1				0	190,191,192	homonym_shared	51	0	1	VERB:V:1	gf
+gṛdh	4	1	1	1	0	1	66434	IV		1	193	matched	2	0	1	VERB:V:1	gfD
+gṛdhu	2	0	0	1	0	1				0			74	0	2	m:f:n:1;m:1	gfDu
+gṛha	2	0	0	1	0	1				0			6	0	140	m:64;f:37;n:19;m:f:n:11;NONE:8	gfha
+gṛhū	1	0	0	1	0	0				0			17	0	0		gfhU
+gṛja	1	0	0	1	0	0				0			42	0	0		gfja
+gṛji	1	0	0	1	0	0				0			48	0	0		gfji
+gṝ	3	1	0	1	0	1	66808,66809	IX,VI	1,2	2			136	0	3	VERB:V:3	gF
+ha	2	0	0	1	0	1				0			1	0	13	m:2;n:2;ind:2;m:f#A:n:2;SEE:2	ha
+had	4	1	1	1	0	1	260291	I		1	907	unmatched	3	0	1	VERB:V:1	had
+hada	1	0	0	1	0	0				0			1	0	0		hada
+hal	2	0	0	1	0	1				0			12	0	4	m:n:2;VERB:V:1;m:f:n:1	hal
+halantāt	1	0	0	1	0	0				0			1	0	0		halantAt
+hamma	1	0	0	1	0	0				0			2	0	0		hamma
+han	4	1	1	1	0	1	260297	I,II	1	1	908	matched	186	0	2	VERB:V:1;m:f#GnI:n:1	han
+hanadhātor	1	0	0	1	0	0				0			1	0	0		hanaDAtor
+hananaṃ	1	0	0	1	0	0				0			1	0	0		hananaM
+hang	1	0	0	0	1	0				0			0	1	0		
+hang doṭn	1	0	0	0	1	0				0			0	2	0		
+har	1	0	1	0	0	0				0	909	homonym_shared	0	0	0		
+haratīti	1	0	0	1	0	0				0			1	0	0		haratIti
+harm	1	0	0	0	1	0				0			0	1	0		
+hary	3	1	0	1	0	1	261643	I		1			6	0	18	m:9;m:f:n:4;ICF:hari:1;m:f#A:n:1;n:1	hary
+harṣe	1	0	0	1	0	0				0			2	0	0		harze
+has	4	1	1	1	0	1	262056	I	1	1	910	matched	49	0	6	m:2;VERB:V:1;ind:1;f:1;SEE:1	has
+hasane	1	0	0	1	0	0				0			1	0	0		hasane
+hase	1	0	0	1	0	0				0			12	0	0		hase
+hasten	1	0	0	0	1	0				0			0	1	0		
+hate	1	0	0	0	1	0				0			0	1	0		
+hay	2	0	0	1	0	1				0			4	0	1	VERB:V:1	hay
+haṭ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	haw
+haṭa	2	0	0	1	0	1				0			5	0	1	NONE:1	hawa
+haṭha	2	0	0	1	0	1				0			2	0	16	m:8;f:7;n:1	haWa
+heal	1	0	0	0	1	0				0			0	1	0		
+heat	1	0	0	0	1	0				0			0	1	0		
+heed	1	0	0	0	1	0				0			0	2	0		
+hel	2	0	0	1	0	1				0			6	0	1	NONE:1	hel
+heḍ	3	0	1	1	0	1				0	927	unmatched	4	0	1	VERB:V:1	heq
+heḍṛ	1	0	0	1	0	0				0			1	0	0		heqf
+heṣ	4	1	1	1	0	1	264415	I	1	1	928	matched	3	0	2	VERB:V:1;NONE:1	hez
+heṣṛ	1	0	0	1	0	0				0			5	0	0		hezf
+heṭh	3	0	1	1	0	1				0	926	unmatched	11	0	2	VERB:V:2	heW
+hi	4	1	1	1	0	1	262717	V	1	1	914	matched	35	0	2	VERB:V:1;ind:1	hi
+hide	1	0	0	0	1	0				0			0	2	0		
+hide, (?)	1	0	0	0	1	0				0			0	1	0		
+hikk	3	0	1	1	0	1				0	916	matched	4	0	1	VERB:V:1	hikk
+hil	2	0	0	1	0	1				0			1	0	1	VERB:V:1	hil
+hila	2	0	0	1	0	1				0			5	0	1	m:1	hila
+hinsa	1	0	0	1	0	0				0			1	0	0		hinsa
+hire	1	0	0	0	1	0				0			0	1	0		
+hisi	1	0	0	1	0	0				0			16	0	0		hisi
+hiṃs	4	1	1	1	0	1	262731	I,VII,X	1	1	915	matched	9	0	2	VERB:V:1;m:f:n:1	hiMs
+hiṃsane	1	0	0	1	0	0				0			3	0	0		hiMsane
+hiṃsāyām	1	0	0	1	0	0				0			4	0	0		hiMsAyAm
+hiṃsāyāṃ	1	0	0	1	0	0				0			5	0	0		hiMsAyAM
+hiṇḍ	3	0	1	1	0	1				0	917	matched	4	0	1	VERB:V:1	hiRq
+hiṭa	1	0	0	1	0	0				0			1	0	0		hiwa
+hlag	2	1	0	0	0	1	264823	I		1			0	0	1	VERB:V:1	hlag
+hlasa	1	0	0	1	0	0				0			4	0	0		hlasa
+hlād	4	1	1	1	0	1	264827	I		1	935	matched	11	0	1	VERB:V:1	hlAd
+hlādī	1	0	0	1	0	0				0			7	0	0		hlAdI
+hmal	2	0	0	1	0	1				0			2	0	1	VERB:V:1	hmal
+hmala	2	0	0	1	0	1				0			4	0	1	NONE:1	hmala
+hnu	4	1	1	1	0	1	264643	II		1	929	matched	15	0	1	VERB:V:1	hnu
+hnuṅ	1	0	0	1	0	0				0			9	0	0		hnuN
+hold	1	0	0	0	1	0				0			0	1	0		
+hoḍ	2	0	0	1	0	1				0			3	0	1	VERB:V:1	hoq
+hoḍṛ	2	0	0	1	0	1				0			1	0	1	m:1	hoqf
+hoṭl	1	0	0	0	1	0				0			0	1	0		
+hrada	2	0	0	1	0	1				0			4	0	3	m:f#A:n:1;m:1;m:f#A:1	hrada
+hras	4	1	1	1	0	1	264681	I		1	930	matched	7	0	1	VERB:V:1	hras
+hrasa	1	0	0	1	0	0				0			5	0	0		hrasa
+hrasvaśca	1	0	0	1	0	0				0			1	0	0		hrasvaSca
+hrasvaḥ	1	0	0	1	0	0				0			1	0	0		hrasvaH
+hreṣ	3	1	1	0	0	1	264815	I		1	934	matched	0	0	1	VERB:V:1	hrez
+hreṣṛ	1	0	0	1	0	0				0			2	0	0		hrezf
+hru	2	0	0	1	0	1				0			5	0	1	VERB:V:1	hru
+hrād	4	1	1	1	0	1	264747	I		1	931	matched	24	0	1	VERB:V:1	hrAd
+hrī	4	1	1	1	0	1	264772	III	1	1	932	matched	17	0	17	m:f:n:7;m:4;n:3;f:2;VERB:V:1	hrI
+hu	4	1	1	1	0	1	263443	III	1	1	919	matched	91	0	2	VERB:V:1;ind:1	hu
+hul	2	0	0	1	0	1				0			2	0	1	VERB:V:1	hul
+hula	2	0	0	1	0	1				0			5	0	3	m:1;n:1;f:1	hula
+hum	2	0	0	0	1	1				0			0	4	2	ind:1;m:1	
+hurch	2	0	0	1	0	1				0			2	0	1	VERB:V:1	hurC
+hurchā	1	0	0	1	0	0				0			7	0	0		hurCA
+hurl (?)	1	0	0	0	1	0				0			0	1	0		
+huḍi	1	0	0	1	0	0				0			5	0	0		huqi
+huṇḍ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	huRq
+hval	4	1	1	1	0	1	264858	I		1	936	matched	7	0	1	VERB:V:1	hval
+hvala	2	0	0	1	0	1				0			1	0	1	m:f:n:1	hvala
+hve	3	1	0	1	0	1	264875	I		1			42	0	1	VERB:V:1	hve
+hvṛ	4	1	1	1	0	1	264863	I		1	937	matched	10	0	1	VERB:V:1	hvf
+hā	4	1	1	1	0	1	262501,262507	I,III	2,3	2	911,912	homonym_shared	49	0	10	m:4;f:2;VERB:V:2;ind:1;m:f:n:1	hA
+hās	1	0	1	0	0	0				0	913	matched	0	0	0		
+hāṅ	1	0	0	1	0	0				0			5	0	0		hAN
+hīḍ	4	1	1	1	0	1	263406			1	918	matched	3	0	1	VERB:V:1	hIq
+hū	2	0	1	0	0	1				0	921	unmatched	0	0	5	NONE:1;m:f:n:1;ind:1;m:1;SEE:1	
+hūrccha	1	0	0	1	0	0				0			1	0	0		hUrcCa
+hūrch	2	0	1	0	0	1				0	922	matched	0	0	2	VERB:V:1;NONE:1	
+hṛ	4	1	1	1	0	1	263626,263654	I,IX	1,2	2	923,924	homonym_shared	145	0	2	VERB:V:2	hf
+hṛṣ	4	1	1	1	0	1	263915	I,IV		1	925	matched	37	0	1	VERB:V:1	hfz
+hṛṣu	2	0	0	1	0	1				0			9	0	2	m:f:n:1;m:1	hfzu
+i	4	1	1	1	0	1	28539	II	5	1	29,30	homonym_shared	273	0	25	m:8;ind:8;NONE:2;m:f:n:2;LEXID=pron,STEM=idam:1	i
+ich	1	0	1	0	0	0				0	32	homonym_shared	0	0	0		
+id	2	0	0	1	0	1				0			2	0	1	ind:1	id
+idh	2	0	1	0	0	1				0	35	unmatched	0	0	1	NONE:1	
+idi	1	0	0	1	0	0				0			39	0	0		idi
+igi	1	0	0	1	0	0				0			3	0	0		igi
+ik	1	0	0	1	0	0				0			46	0	0		ik
+ikh	3	1	0	1	0	1	28635	I		1			42	0	2	VERB:V:2	iK
+ikhi	1	0	0	1	0	0				0			47	0	0		iKi
+il	4	1	1	1	0	1	29396	VI,X		1	41	matched	60	0	1	VERB:V:1	il
+ilā	2	0	0	1	0	1				0			2	0	7	f:3;n:3;m:1	ilA
+imanico'	1	0	0	1	0	0				0			1	0	0		imanico'
+impel	1	0	0	0	1	0				0			0	2	0		
+impel, generate	1	0	0	0	1	0				0			0	1	0		
+in	3	0	1	1	0	1				0	36	unmatched	5	0	1	NONE:1	in
+inakṣ	3	0	1	1	0	1				0	37	matched	2	0	1	NONE:1	inakz
+ind	2	1	0	0	0	1	28845	I		1			0	0	1	VERB:V:1	ind
+indh	3	1	0	1	0	1	29258	VII		1			20	0	1	VERB:V:1	inD
+injure	1	0	0	0	1	0				0			0	4	0		
+inv	3	1	0	1	0	1	29294	IX,VI,VIII		1			9	0	1	VERB:V:1	inv
+ir	3	1	0	1	0	1	29342	VI		1			2	0	1	VERB:V:1	ir
+iradh	2	0	1	0	0	1				0	40	matched	0	0	1	VERB:V:1	
+irajy	1	0	1	0	0	0				0	39	matched	0	0	0		
+ityasmād	1	0	0	1	0	0				0			1	0	0		ityasmAd
+ityatra	1	0	0	1	0	0				0			1	0	0		ityatra
+ityukte	1	0	0	1	0	0				0			1	0	0		ityukte
+ityādinā	1	0	0	1	0	0				0			4	0	0		ityAdinA
+ivi	1	0	0	1	0	0				0			39	0	0		ivi
+iyakṣ	3	0	1	1	0	1				0	38	matched	1	0	1	VERB:V:1	iyakz
+iḍ	2	0	1	0	0	1				0	34	homonym_shared	0	0	1	NONE:1	
+iṅ	2	0	0	1	0	1				0			78	0	1	NONE:1	iN
+iṅa	1	0	0	1	0	0				0			2	0	0		iNa
+iṅg	4	1	1	1	0	1	28638	I		1	31	matched	6	0	1	VERB:V:1	iNg
+iṅkh	3	1	0	1	0	1	28637	I		1			1	0	2	VERB:V:2	iNK
+iṇ	1	0	0	1	0	0				0			5	0	0		iR
+iṇa	1	0	0	1	0	0				0			6	0	0		iRa
+iṣ	4	1	1	1	0	1	29439,29516	I,IV,VI	1,3	2	42,43	homonym_shared	146	0	9	m:f:n:4;f:3;VERB:V:2	iz
+iṣu	2	0	0	1	0	1				0			4	0	35	m:16;m:f:n:9;n:4;f:2;m:f:1	izu
+iṣūya	2	1	0	0	0	1	29546			1			0	0	1	VERB:V:1	izUya
+iṭ	3	1	1	0	0	1	28677	I		1	33	unmatched	0	0	2	VERB:V:1;m:1	iw
+iṭa	2	0	0	1	0	1				0			3	0	2	m:1;n:1	iwa
+ja	2	0	0	1	0	1				0			7	0	6	m:3;NONE:1;m:f#A:n:1;m:f:n:1	ja
+jabh	2	0	0	1	0	1				0			3	0	2	VERB:V:2	jaB
+jabhi	1	0	0	1	0	0				0			6	0	0		jaBi
+jabhī	1	0	0	1	0	0				0			59	0	0		jaBI
+jagh	1	0	1	0	0	0				0	248	unmatched	0	0	0		
+jah	1	0	1	0	0	0				0	256	unmatched	0	0	0		
+jaj	2	0	0	1	0	1				0			1	0	1	VERB:V:1	jaj
+jaja	2	0	0	1	0	1				0			1	0	1	m:1	jaja
+jaji	1	0	0	1	0	0				0			1	0	0		jaji
+jakṣ	4	1	1	1	0	1	76187	II	2	1	246,247	homonym_shared	55	0	2	VERB:V:2	jakz
+jal	2	0	0	1	0	1				0			25	0	1	VERB:V:1	jal
+jalp	3	0	1	1	0	1				0	254	matched	73	0	1	VERB:V:1	jalp
+jam	3	0	1	1	0	1				0	251	unmatched	3	0	3	SEE:1;VERB:V:1;INFLECTID=m1d,STEM=jampati:1	jam
+jamba	2	0	0	1	0	1				0			2	0	1	m:1	jamba
+jambh	2	0	1	0	0	1				0	252	unmatched	0	0	2	VERB:V:1;NONE:1	
+jambha	2	0	0	1	0	1				0			1	0	10	m:6;n:1;ind:1;m:f:n:1;SEE:1	jamBa
+jamu	1	0	0	1	0	0				0			1	0	0		jamu
+jan	4	1	1	1	0	1	76735	I,II,III,IV,X		1	249	matched	122	0	1	VERB:V:1	jan
+janaḥ	1	0	0	1	0	0				0			1	0	0		janaH
+janeḥ	1	0	0	1	0	0				0			1	0	0		janeH
+janī	2	0	0	1	0	1				0			2	0	1	f:1	janI
+jap	4	1	1	1	0	1	77153	I		1	250	matched	83	0	1	VERB:V:1	jap
+jar	2	0	1	0	0	1				0	253	unmatched	0	0	2	m:1;f:1	
+jarja	1	0	0	1	0	0				0			4	0	0		jarja
+jas	3	0	1	1	0	1				0	255	matched	4	0	1	VERB:V:1	jas
+jasi	1	0	0	1	0	0				0			3	0	0		jasi
+jasu	2	0	0	1	0	1				0			78	0	1	f:1	jasu
+java	2	0	0	1	0	1				0			3	0	5	m:f:n:3;m:2	java
+jaḍa	2	0	0	1	0	1				0			8	0	14	m:f:n:5;m:4;n:2;m:f#A:n:1;f:1	jaqa
+jaṃh	2	0	0	1	0	1				0			4	0	1	VERB:V:1	jaMh
+jaṣa	2	0	0	1	0	1				0			2	0	1	m:1	jaza
+jaṭa	2	0	0	1	0	1				0			14	0	3	m:2;m:f:n:1	jawa
+jeh	3	0	1	1	0	1				0	268	matched	1	0	1	VERB:V:1	jeh
+jehṛ	1	0	0	1	0	0				0			3	0	0		jehf
+jerk etc	1	0	0	0	1	0				0			0	1	0		
+jeṣṛ	1	0	0	1	0	0				0			1	0	0		jezf
+jham	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Jam
+jhamu	1	0	0	1	0	0				0			3	0	0		Jamu
+jhar	1	0	1	0	0	0				0	277	unmatched	0	0	0		
+jharjha	1	0	0	1	0	0				0			2	0	0		JarJa
+jhaṇ	2	0	1	0	0	1				0	276	unmatched	0	0	2	VERB:V:1;NONE:1	
+jhaṣ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Jaz
+jhaṣa	2	0	0	1	0	1				0			9	0	7	m:5;n:2	Jaza
+jhaṭ	2	0	1	0	0	1				0	275	unmatched	0	0	2	VERB:V:1;ind:1	
+jhaṭa	1	0	0	1	0	0				0			1	0	0		Jawa
+jhṝ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	JF
+jhṝṣ	1	0	0	1	0	0				0			4	0	0		JFz
+ji	4	1	1	1	0	1	79180	I,IX	1	1	258,259	homonym_shared	215	0	3	VERB:V:1;m:f:n:1;m:1	ji
+jihma	2	0	0	1	0	1				0			5	0	17	m:f:n:9;n:3;m:3;m:f#A:n:1;f:1	jihma
+jim	2	0	0	1	0	1				0			37	0	1	VERB:V:1	jim
+jinv	3	1	0	1	0	1	79399	I		1			6	0	1	VERB:V:1	jinv
+jiri	2	0	0	1	0	1				0			3	0	1	VERB:V:1	jiri
+jivi	1	0	0	1	0	0				0			44	0	0		jivi
+jiṣu	1	0	0	1	0	0				0			3	0	0		jizu
+join	1	0	0	0	1	0				0			0	1	0		
+jri	3	0	1	1	0	1				0	272	matched	28	0	3	VERB:V:2;SEE:1	jri
+ju	2	0	0	1	0	1				0			106	0	1	VERB:V:1	ju
+jubhi	1	0	0	1	0	0				0			1	0	0		juBi
+jugi	1	0	0	1	0	0				0			2	0	0		jugi
+jur	4	1	1	1	0	1	80005	IV,VI	1	1	261	unmatched	3	0	3	VERB:V:1;m:1;m:f:n:1	jur
+jutṛ	1	0	0	1	0	0				0			4	0	0		jutf
+juḍa	1	0	0	1	0	0				0			12	0	0		juqa
+juṣ	4	1	1	1	0	1	80017	I,III,VI	1	1	262	matched	73	0	2	VERB:V:1;m:f:n:1	juz
+juṣī	1	0	0	1	0	0				0			8	0	0		juzI
+jval	4	1	1	1	0	1	80890	I		1	274	matched	90	0	1	VERB:V:1	jval
+jvar	4	1	1	1	0	1	80857	I		1	273	matched	15	0	1	VERB:V:1	jvar
+jyut	3	0	1	1	0	1				0	271	matched	5	0	1	VERB:V:1	jyut
+jyā	4	1	1	1	0	1	80523	IV,IX	1	1	270	matched	80	0	13	m:5;f:3;NONE:2;VERB:V:1;n:1	jyA
+jñapa	1	0	0	1	0	0				0			64	0	0		jYapa
+jñā	4	1	1	1	0	1	80318	III,IX	1	1	269	matched	295	0	4	f:2;VERB:V:1;m:f:n:1	jYA
+jñāne	1	0	0	1	0	0				0			1	0	0		jYAne
+jā	2	0	1	0	0	1				0	257	unmatched	0	0	6	m:f:n:2;f:1;m:f:1;NONE:1;SEE:1	
+jāgṛ	3	1	0	1	0	1	78427	I,II		1			106	0	1	VERB:V:1	jAgf
+jāmṛ	1	0	0	1	0	0				0			1	0	0		jAmf
+jāta	2	0	0	1	0	1				0			4	0	75	m:f:n:49;f:10;n:8;m:5;m:f#A:n:1	jAta
+jātiranayā	1	0	0	1	0	0				0			1	0	0		jAtiranayA
+jīv	4	1	1	1	0	1	79622	I		1	260	matched	134	0	1	VERB:V:1	jIv
+jū	3	0	1	1	0	1				0	263	matched	8	0	3	VERB:V:1;m:f:n:1;f:1	jU
+jūrv	3	0	1	1	0	1				0	264	matched	2	0	1	VERB:V:1	jUrv
+jūrī	2	0	0	1	0	1				0			1	0	1	f:1	jUrI
+jūṣ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	jUz
+jṛ	4	1	1	1	0	1	80120	I	2	1	265,266	homonym_shared	2	0	2	VERB:V:2	jf
+jṛbhi	1	0	0	1	0	0				0			17	0	0		jfBi
+jṛmbh	3	0	1	1	0	1				0	267	matched	14	0	1	VERB:V:1	jfmB
+jṛṃbh	1	0	0	1	0	0				0			1	0	0		jfMB
+jṝ	3	1	0	1	0	1	80153	I,IV,IX,X	1	1			120	0	2	VERB:V:2	jF
+jṝṣ	1	0	0	1	0	0				0			45	0	0		jFz
+ka	2	0	0	1	0	1				0			9	0	19	m:7;m:f:n:3;NONE:2;n:2;SEE:2	ka
+kab	2	1	0	0	0	1	43736	I		1			0	0	1	VERB:V:1	kab
+kabṛ	1	0	0	1	0	0				0			63	0	0		kabf
+kac	3	1	0	1	0	1	41710	I		1			69	0	2	VERB:V:1;NONE:1	kac
+kacer	1	0	0	1	0	0				0			1	0	0		kacer
+kaci	1	0	0	1	0	0				0			57	0	0		kaci
+kad	4	1	1	1	0	1	42779	I	1	1	82	unmatched	4	0	37	m:f:n:13;m:12;n:8;f:2;VERB:V:1	kad
+kadi	1	0	0	1	0	0				0			65	0	0		kadi
+kag	2	1	0	0	0	1	41600	I		1			0	0	1	VERB:V:1	kag
+kage	1	0	0	1	0	0				0			3	0	0		kage
+kai	2	0	0	1	0	1				0			69	0	1	VERB:V:1	kE
+kaj	2	1	0	0	0	1	41817	I		1			0	0	1	VERB:V:1	kaj
+kaji	1	0	0	1	0	0				0			1	0	0		kaji
+kak	2	1	0	0	0	1	41405	I		1			0	0	1	VERB:V:1	kak
+kaka	1	0	0	1	0	0				0			57	0	0		kaka
+kakh	2	1	0	0	0	1	41598	I		1			0	0	1	VERB:V:1	kaK
+kakha	2	0	0	1	0	1				0			52	0	1	NONE:1	kaKa
+kakhe	1	0	0	1	0	0				0			14	0	0		kaKe
+kaki	1	0	0	1	0	0				0			54	0	0		kaki
+kal	4	1	1	1	0	1	45580,45581	X	2,3	2	86	matched	120	0	7	VERB:V:3;ICF:kad:1;m:1;n:1;f:1	kal
+kall	2	0	0	1	0	1				0			5	0	1	VERB:V:1	kall
+kam	4	1	1	1	0	1	43768	I	2	1	84	matched	38	0	3	ind:1;VERB:V:1;NONE:1	kam
+kamb	3	1	0	1	0	1	43959	I		1			1	0	1	VERB:V:1	kamb
+kameḥ	1	0	0	1	0	0				0			1	0	0		kameH
+kamp	4	1	1	1	0	1	43913	I		1	85	matched	32	0	1	VERB:V:1	kamp
+kampane	1	0	0	1	0	0				0			1	0	0		kampane
+kan	4	1	1	1	0	1	42917	I		1	83	matched	10	0	1	VERB:V:1	kan
+kanayater	1	0	0	1	0	0				0			1	0	0		kanayater
+kand	2	1	0	0	0	1	43192	I		1			0	0	1	VERB:V:1	kand
+kap	2	0	0	1	0	1				0			1	0	1	NONE:1	kap
+kapi	2	0	0	1	0	1				0			71	0	54	m:22;f:17;n:9;m:f:n:3;f#i:f#I:1	kapi
+karba	1	0	0	1	0	0				0			44	0	0		karba
+kard	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kard
+karda	2	0	0	1	0	1				0			2	0	1	m:1	karda
+kardda	1	0	0	1	0	0				0			2	0	0		kardda
+karj	2	1	0	0	0	1	44777	I		1			0	0	1	VERB:V:1	karj
+karja	1	0	0	1	0	0				0			44	0	0		karja
+kark	2	0	0	1	0	1				0			2	0	1	NONE:1	kark
+karma	2	0	0	1	0	1				0			3	0	155	m:69;m:f:n:32;f:27;n:23;m:f#I:n:2	karma
+karmma	1	0	0	1	0	0				0			2	0	0		karmma
+kart	2	0	0	1	0	1				0			26	0	1	VERB:V:1	kart
+karva	2	0	0	1	0	1				0			47	0	1	m:1	karva
+karṇ	3	1	0	1	0	1	44778	X		1			47	0	1	VERB:V:1	karR
+karṣaṇaṃ	1	0	0	1	0	0				0			1	0	0		karzaRaM
+kas	4	1	1	1	0	1	46861	I	1	1	88	matched	16	0	3	NONE:2;VERB:V:1	kas
+kasa	2	0	0	1	0	1				0			46	0	2	m:f:n:1;m:1	kasa
+kasi	1	0	0	1	0	0				0			55	0	0		kasi
+kath	4	1	1	1	0	1	42692	X		1	81	matched	6	0	1	VERB:V:1	kaT
+katham	2	0	0	1	0	1				0			5	0	1	ind:1	kaTam
+katr	2	1	0	0	0	1	42690	X		1			0	0	1	VERB:V:1	katr
+katra	1	0	0	1	0	0				0			58	0	0		katra
+katth	4	1	1	1	0	1	42681	I		1	80	matched	56	0	1	VERB:V:1	katT
+kauṭilye	1	0	0	1	0	0				0			2	0	0		kOwilye
+kav	2	0	0	1	0	1				0			2	0	1	VERB:V:1	kav
+kavala	2	0	0	1	0	1				0			4	0	5	m:3;m:n:1;f:1	kavala
+kañc	3	1	0	1	0	1	41835	I		1			1	0	1	VERB:V:1	kaYc
+kaś	2	0	0	1	0	1				0			61	0	2	VERB:V:1;NONE:1	kaS
+kaḍ	3	1	0	1	0	1	42258	I,VI		1			6	0	1	VERB:V:1	kaq
+kaḍi	1	0	0	1	0	0				0			7	0	0		kaqi
+kaḍḍ	2	1	0	0	0	1	42287	I		1			0	0	1	VERB:V:1	kaqq
+kaḍḍa	1	0	0	1	0	0				0			47	0	0		kaqqa
+kaṃs	2	1	0	0	0	1	41369	II		1			0	0	1	VERB:V:1	kaMs
+kaṅk	2	1	0	0	0	1	41602	I		1			0	0	1	VERB:V:1	kaNk
+kaṇ	3	1	0	1	0	1	42288	I,X		1			88	0	1	VERB:V:1	kaR
+kaṇḍ	2	1	0	0	0	1	42560	I,X		1			0	0	1	VERB:V:1	kaRq
+kaṇḍaya	1	0	0	1	0	0				0			1	0	0		kaRqaya
+kaṇḍū	2	0	0	1	0	1				0			3	0	6	f:3;m:f:n:2;m:1	kaRqU
+kaṇḍūya	2	0	0	1	0	1				0			3	0	1	VERB:N:1	kaRqUya
+kaṇṭ	2	1	0	0	0	1	42355	I		1			0	0	1	VERB:V:1	kaRw
+kaṇṭh	2	1	0	0	0	1	42456	I,X		1			0	0	1	VERB:V:1	kaRW
+kaṣ	4	1	1	1	0	1	46728	I		1	87	matched	105	0	1	VERB:V:1	kaz
+kaṭ	3	1	0	1	0	1	41893,41894	I	1,2	2			5	0	6	VERB:V:2;m:1;f:1;ind:1;SEE:1	kaw
+kaṭe	1	0	0	1	0	0				0			1	0	0		kawe
+kaṭh	3	1	0	1	0	1	42177	I		1			61	0	1	VERB:V:1	kaW
+kaṭhi	1	0	0	1	0	0				0			76	0	0		kaWi
+kaṭi	2	0	0	1	0	1				0			61	0	18	m:8;n:5;f:4;m:f:n:1	kawi
+kaṭī	2	0	0	1	0	1				0			5	0	5	f:2;n:2;m:1	kawI
+kaṭṭ	2	1	0	0	0	1	42169	X		1			0	0	1	VERB:V:1	kaww
+kel	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kel
+kelṛ	1	0	0	1	0	0				0			33	0	0		kelf
+kepse	1	0	0	1	0	0				0			1	0	0		kepse
+kepṛ	1	0	0	1	0	0				0			51	0	0		kepf
+keta	2	0	0	1	0	1				0			31	0	4	m:f:n:3;m:1	keta
+khac	4	1	1	1	0	1	60863	I,IX,X		1	154	matched	1	0	1	VERB:V:1	Kac
+khaca	1	0	0	1	0	0				0			54	0	0		Kaca
+khad	3	0	1	1	0	1				0	156	homonym_shared	44	0	1	VERB:V:1	Kad
+khai	3	1	0	1	0	1	62077	I		1			2	0	1	VERB:V:1	KE
+khaj	2	0	0	1	0	1				0			6	0	1	VERB:V:1	Kaj
+khaji	1	0	0	1	0	0				0			4	0	0		Kaji
+khakkha	1	0	0	1	0	0				0			2	0	0		KakKa
+khal	2	0	0	1	0	1				0			69	0	1	VERB:V:1	Kal
+khall	3	1	1	0	0	1	61663	I		1	159	unmatched	0	0	1	VERB:V:1	Kall
+khan	4	1	1	1	0	1	61265	I		1	157	matched	40	0	1	VERB:V:1	Kan
+khanu	1	0	0	1	0	0				0			113	0	0		Kanu
+kharda	1	0	0	1	0	0				0			3	0	0		Karda
+kharj	4	1	1	1	0	1	61509	I		1	158	matched	3	0	1	VERB:V:1	Karj
+kharja	2	0	0	1	0	1				0			1	0	1	m:f:n:1	Karja
+kharv	2	0	0	1	0	1				0			3	0	1	VERB:V:1	Karv
+khava	1	0	0	1	0	0				0			52	0	0		Kava
+khañj	4	1	1	1	0	1	60884	I	1	1	155	matched	1	0	2	VERB:V:1;m:f:n:1	KaYj
+khaḍ	2	0	0	1	0	1				0			5	0	1	VERB:V:1	Kaq
+khaḍi	1	0	0	1	0	0				0			11	0	0		Kaqi
+khaṇḍ	3	1	0	1	0	1	61072	I,X		1			1	0	1	VERB:V:1	KaRq
+khaṇḍane	1	0	0	1	0	0				0			2	0	0		KaRqane
+khaṣa	1	0	0	1	0	0				0			53	0	0		Kaza
+khaṭ	2	0	0	1	0	1				0			2	0	2	VERB:V:1;ind:1	Kaw
+khaṭṭa	2	0	0	1	0	1				0			1	0	1	m:f:n:1	Kawwa
+khel	3	0	1	1	0	1				0	164	matched	5	0	1	VERB:V:1	Kel
+khelā	2	0	0	1	0	1				0			1	0	1	f:1	KelA
+khelṛ	1	0	0	1	0	0				0			2	0	0		Kelf
+khevṛ	1	0	0	1	0	0				0			3	0	0		Kevf
+kheṭ	2	0	0	1	0	1				0			3	0	1	VERB:V:1	Kew
+khid	4	1	1	1	0	1	61905	IV,VI,VII		1	162	matched	107	0	1	VERB:V:1	Kid
+khila	2	0	0	1	0	1				0			1	0	7	n:3;m:2;m:n:1;m:f:n:1	Kila
+khiṭ	2	0	0	1	0	1				0			5	0	1	VERB:V:1	Kiw
+kholṛ	1	0	0	1	0	0				0			2	0	0		Kolf
+khorṛ	1	0	0	1	0	0				0			41	0	0		Korf
+khoṭ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Kow
+khoṭa	2	0	0	1	0	1				0			2	0	1	m:f:n:1	Kowa
+khud	4	1	1	1	0	1	61977	VI		1	163	matched	1	0	1	VERB:V:1	Kud
+khur	2	0	0	1	0	1				0			4	0	1	VERB:V:1	Kur
+khurda	1	0	0	1	0	0				0			2	0	0		Kurda
+khuḍi	1	0	0	1	0	0				0			1	0	0		Kuqi
+khyā	3	0	1	1	0	1				0	165	matched	165	0	1	VERB:V:1	KyA
+khā	2	0	1	0	0	1				0	160	unmatched	0	0	3	f:1;m:f:n:1;SEE:1	
+khād	4	1	1	1	0	1	61789	I		1	161	homonym_shared	17	0	1	VERB:V:1	KAd
+khādṛ	1	0	0	1	0	0				0			42	0	0		KAdf
+ki	2	0	0	1	0	1				0			40	0	2	NONE:1;VERB:V:1	ki
+kil	2	0	0	1	0	1				0			33	0	1	VERB:V:1	kil
+kindle	1	0	0	0	1	0				0			0	2	0		
+kiss	1	0	0	0	1	0				0			0	2	0		
+kit	2	0	0	1	0	1				0			3	0	1	VERB:V:1	kit
+kiṭ	2	0	0	1	0	1				0			44	0	1	VERB:V:1	kiw
+klad	2	0	0	1	0	1				0			1	0	1	NONE:1	klad
+kladi	1	0	0	1	0	0				0			8	0	0		kladi
+klam	4	1	1	1	0	1	58545	I,IV		1	128	matched	4	0	1	VERB:V:1	klam
+klamu	1	0	0	1	0	0				0			57	0	0		klamu
+kland	3	1	1	0	0	1	58542	I		1	127	unmatched	0	0	1	VERB:V:1	kland
+klapa	1	0	0	1	0	0				0			28	0	0		klapa
+klath	3	1	1	0	0	1	58538	I		1	126	unmatched	0	0	1	VERB:V:1	klaT
+klatha	1	0	0	1	0	0				0			50	0	0		klaTa
+klav	3	0	1	1	0	1				0	129	unmatched	1	0	1	VERB:V:1	klav
+klevṛ	1	0	0	1	0	0				0			47	0	0		klevf
+kleś	2	0	0	1	0	1				0			36	0	1	VERB:V:1	kleS
+klid	4	1	1	1	0	1	58564	IV		1	130	matched	20	0	1	VERB:V:1	klid
+klidi	1	0	0	1	0	0				0			68	0	0		klidi
+klidū	1	0	0	1	0	0				0			45	0	0		klidU
+kliś	3	0	1	1	0	1				0	131	matched	35	0	1	VERB:V:1	kliS
+kliśū	1	0	0	1	0	0				0			23	0	0		kliSU
+klīb	2	0	0	1	0	1				0			3	0	1	VERB:V:1	klIb
+klībṛ	1	0	0	1	0	0				0			6	0	0		klIbf
+klīv	2	0	0	1	0	1				0			1	0	1	VERB:V:1	klIv
+kmar	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kmar
+kmara	1	0	0	1	0	0				0			49	0	0		kmara
+knas	2	0	0	1	0	1				0			2	0	1	VERB:V:1	knas
+knasu	1	0	0	1	0	0				0			60	0	0		knasu
+knatha	1	0	0	1	0	0				0			47	0	0		knaTa
+knoṭ	1	0	0	0	1	0				0			0	2	0		
+knoṭ, ṭake	1	0	0	0	1	0				0			0	1	0		
+knū	3	0	1	1	0	1				0	115	unmatched	1	0	1	VERB:V:1	knU
+knūy	2	0	0	1	0	1				0			1	0	1	VERB:V:1	knUy
+knūyī	1	0	0	1	0	0				0			55	0	0		knUyI
+knūñ	1	0	0	1	0	0				0			46	0	0		knUY
+krad	2	0	0	1	0	1				0			1	0	1	VERB:V:1	krad
+kradi	1	0	0	1	0	0				0			74	0	0		kradi
+krakṣ	3	0	1	1	0	1				0	116	unmatched	2	0	1	VERB:V:1	krakz
+kram	4	1	1	1	0	1	57749	I,IV		1	119	matched	143	0	1	VERB:V:1	kram
+kramu	2	0	0	1	0	1				0			179	0	1	m:1	kramu
+krand	4	1	1	1	0	1	57730	I		1	118	matched	58	0	1	VERB:V:1	krand
+krap	2	0	0	1	0	1				0			1	0	1	VERB:V:1	krap
+krapa	1	0	0	1	0	0				0			62	0	0		krapa
+krath	4	1	1	1	0	1	57713	I		1	117	unmatched	63	0	1	VERB:V:1	kraT
+kraṃd	1	0	0	1	0	0				0			1	0	0		kraMd
+kriyate	1	0	0	1	0	0				0			1	0	0		kriyate
+kru	2	0	1	0	0	1				0	122	unmatched	0	0	1	NONE:1	
+krudh	4	1	1	1	0	1	58231	IV	1	1	123	matched	74	0	2	VERB:V:1;f:1	kruD
+krunca	1	0	0	1	0	0				0			55	0	0		krunca
+kruś	4	1	1	1	0	1	58298	I		1	124	matched	103	0	1	VERB:V:1	kruS
+kruḍa	1	0	0	1	0	0				0			14	0	0		kruqa
+krī	4	1	1	1	0	1	58088	IX	1	1	120	matched	33	0	2	VERB:V:1;SEE:1	krI
+krīñ	1	0	0	1	0	0				0			101	0	0		krIY
+krīḍ	4	1	1	1	0	1	58135	I		1	121	matched	26	0	1	VERB:V:1	krIq
+krīḍane	1	0	0	1	0	0				0			1	0	0		krIqane
+krīḍṛ	1	0	0	1	0	0				0			75	0	0		krIqf
+krūḍ	3	0	1	1	0	1				0	125	unmatched	1	0	1	NONE:1	krUq
+ku	3	0	1	1	0	1				0	93	unmatched	12	0	430	m:138;SEE:93;f:66;m:f:n:65;n:58	ku
+kubi	1	0	0	1	0	0				0			10	0	0		kubi
+kuc	4	1	1	1	0	1	51417	I,VI		1	94	unmatched	84	0	1	VERB:V:1	kuc
+kudri	2	0	0	1	0	1				0			2	0	1	m:1	kudri
+kuh	2	0	0	1	0	1				0			4	0	2	VERB:V:1;SEE:1	kuh
+kuj	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kuj
+kuju	1	0	0	1	0	0				0			42	0	0		kuju
+kuka	2	0	0	1	0	1				0			46	0	1	m:f:n:1	kuka
+kul	2	0	0	1	0	1				0			75	0	1	VERB:V:1	kul
+kumb	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kumb
+kumbh	2	0	0	1	0	1				0			2	0	1	VERB:V:1	kumB
+kumāra	2	0	0	1	0	1				0			31	0	44	m:21;f:13;m:f:n:6;n:4	kumAra
+kunca	1	0	0	1	0	0				0			57	0	0		kunca
+kuntha	2	0	0	1	0	1				0			10	0	1	NONE:1	kunTa
+kup	4	1	1	1	0	1	52181	IV	1	1	99	matched	92	0	2	VERB:V:2	kup
+kur	2	0	0	1	0	1				0			44	0	1	VERB:V:1	kur
+kurd	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kurd
+kurda	1	0	0	1	0	0				0			59	0	0		kurda
+kurdda	1	0	0	1	0	0				0			1	0	0		kurdda
+kus	2	0	0	1	0	1				0			2	0	1	VERB:V:1	kus
+kusa	1	0	0	1	0	0				0			51	0	0		kusa
+kusi	1	0	0	1	0	0				0			9	0	0		kusi
+kusma	1	0	0	1	0	0				0			60	0	0		kusma
+kuth	4	1	1	1	0	1	52041	IV		1	98	unmatched	7	0	1	VERB:V:1	kuT
+kuthi	1	0	0	1	0	0				0			13	0	0		kuTi
+kuts	3	1	0	1	0	1	52017	I,IV,X		1			9	0	1	VERB:V:1	kuts
+kutsane	1	0	0	1	0	0				0			1	0	0		kutsane
+kutsāyām	1	0	0	1	0	0				0			1	0	0		kutsAyAm
+kuñc	3	1	0	1	0	1	51450	I		1			9	0	1	VERB:V:1	kuYc
+kuñj	3	1	1	0	0	1	51471	I		1	95	unmatched	0	0	1	VERB:V:1	kuYj
+kuś	2	0	0	1	0	1				0			10	0	1	VERB:V:1	kuS
+kuśabde	1	0	0	1	0	0				0			1	0	0		kuSabde
+kuśi	2	0	0	1	0	1				0			61	0	5	m:2;ICF:kuSin:1;n:1;f:1	kuSi
+kuḍi	2	0	0	1	0	1				0			14	0	1	m:1	kuqi
+kuṇ	2	0	0	1	0	1				0			34	0	1	VERB:V:1	kuR
+kuṇṭh	3	0	1	1	0	1				0	97	unmatched	6	0	1	VERB:V:1	kuRW
+kuṣ	4	1	1	1	0	1	53477	IX,VI		1	100	matched	9	0	1	VERB:V:1	kuz
+kuṣa	1	0	0	1	0	0				0			75	0	0		kuza
+kuṭ	3	1	0	1	0	1	51515	IV,VI,X		1			43	0	1	VERB:V:1	kuw
+kuṭhi	2	0	0	1	0	1				0			26	0	2	m:f:n:1;m:1	kuWi
+kuṭumba	2	0	0	1	0	1				0			36	0	4	m:n:2;n:1;m:1	kuwumba
+kuṭṭ	4	1	1	1	0	1	51676	X		1	96	matched	42	0	1	VERB:V:1	kuww
+kvath	4	1	1	1	0	1	58702	I		1	133	matched	8	0	1	VERB:V:1	kvaT
+kvathe	1	0	0	1	0	0				0			53	0	0		kvaTe
+kvaṇ	4	1	1	1	0	1	58692	I		1	132	matched	74	0	1	VERB:V:1	kvaR
+kyaṅ	1	0	0	1	0	0				0			1	0	0		kyaN
+kā	3	0	1	1	0	1				0	89	unmatched	2	0	29	m:12;n:6;f:5;NONE:2;m:f:n:2	kA
+kāca	2	0	0	1	0	1				0			2	0	20	n:9;f:5;m:3;m:f:n:2;NONE:1	kAca
+kāci	1	0	0	1	0	0				0			49	0	0		kAci
+kākṣi	2	0	0	1	0	1				0			52	0	1	m:1	kAkzi
+kāla	2	0	0	1	0	1				0			26	0	273	m:136;f:52;n:34;m:f:n:34;NONE:5	kAla
+kālī	2	0	0	1	0	1				0			2	0	26	n:13;m:8;f:3;NONE:1;SEE:1	kAlI
+kās	4	1	1	1	0	1	50091	I	1	1	92	matched	5	0	2	VERB:V:1;f:1	kAs
+kāsṛ	1	0	0	1	0	0				0			38	0	0		kAsf
+kāt	2	0	0	1	0	1				0			2	0	1	ind:1	kAt
+kāyate	1	0	0	1	0	0				0			1	0	0		kAyate
+kāś	4	1	1	1	0	1	49812	I,IV		1	91	matched	41	0	1	VERB:V:1	kAS
+kāśikoktyā	1	0	0	1	0	0				0			1	0	0		kASikoktyA
+kāśṛ	1	0	0	1	0	0				0			10	0	0		kASf
+kāṅkṣ	4	1	1	1	0	1	47271	I		1	90	matched	17	0	1	VERB:V:1	kANkz
+kāṅkṣi	2	0	0	1	0	1				0			1	0	1	f:1	kANkzi
+kīl	2	0	0	1	0	1				0			57	0	1	VERB:V:1	kIl
+kīrt	3	1	0	1	0	1	50788	X		1			6	0	1	VERB:V:1	kIrt
+kīṭ	2	0	0	1	0	1				0			29	0	1	VERB:V:1	kIw
+kū	3	0	1	1	0	1				0	101	matched	4	0	10	ind:2;m:f:n:2;n:2;SEE:1;VERB:V:1	kU
+kūj	4	1	1	1	0	1	53796	I		1	102	matched	68	0	1	VERB:V:1	kUj
+kūjane	1	0	0	1	0	0				0			1	0	0		kUjane
+kūl	2	0	0	1	0	1				0			62	0	2	VERB:V:1;NONE:1	kUl
+kūp	2	0	0	1	0	1				0			10	0	1	VERB:V:1	kUp
+kūrd	4	1	1	1	0	1	54039	I		1	105	matched	4	0	1	VERB:V:1	kUrd
+kūrdda	1	0	0	1	0	0				0			2	0	0		kUrdda
+kūḍ	4	1	1	1	0	1	53917	X	2	1	103	matched	1	0	2	VERB:V:2	kUq
+kūṅ	1	0	0	1	0	0				0			81	0	0		kUN
+kūṇ	4	1	1	1	0	1	53919	I		1	104	unmatched	4	0	1	VERB:V:1	kUR
+kūṇa	1	0	0	1	0	0				0			4	0	0		kURa
+kūṭ	2	0	0	1	0	1				0			59	0	1	VERB:V:1	kUw
+kḷp	3	0	1	1	0	1				0	114	unmatched	22	0	1	VERB:V:1	kxp
+kṛ	4	1	1	1	0	1	54148,54683	I,II,III,V,VIII	1,2	2	106,107,108	homonym_shared	718	0	3	VERB:V:2;SEE:1	kf
+kṛp	4	1	1	1	0	1	54858	VI,X	2	1	111	matched	68	0	2	f:1;VERB:V:1	kfp
+kṛpū	1	0	0	1	0	0				0			62	0	0		kfpU
+kṛt	4	1	1	1	0	1	54777,54810	I,VI,VII	2,3	2	109,110	homonym_shared	39	0	6	m:2;VERB:V:2;m:f:n:1;f:1	kft
+kṛtābhinaye	1	0	0	1	0	0				0			1	0	0		kftABinaye
+kṛtī	2	0	0	1	0	1				0			58	0	2	ICF:kfti:1;m:1	kftI
+kṛś	4	1	1	1	0	1	55010	IV		1	112	matched	74	0	1	VERB:V:1	kfS
+kṛḍ	2	0	0	1	0	1				0			57	0	1	VERB:V:1	kfq
+kṛṣ	4	1	1	1	0	1	55083	I,VI	1	1	113	matched	123	0	2	VERB:V:1;m:f:n:1	kfz
+kṝ	3	1	0	1	0	1	55567	VI	1	1			185	0	3	VERB:V:3	kF
+kṝt	2	0	0	1	0	1				0			4	0	1	VERB:V:1	kFt
+kṝta	1	0	0	1	0	0				0			64	0	0		kFta
+kṝñ	1	0	0	1	0	0				0			10	0	0		kFY
+kṣad	4	1	1	1	0	1	58898	I	1	1	134	matched	3	0	2	VERB:V:1;SEE:1	kzad
+kṣai	3	1	0	1	0	1	60470	I		1			8	0	1	VERB:V:1	kzE
+kṣaji	1	0	0	1	0	0				0			54	0	0		kzaji
+kṣal	4	1	1	1	0	1	59234	X	2	1	139	unmatched	46	0	2	NONE:1;VERB:V:1	kzal
+kṣam	4	1	1	1	0	1	59030	I,II,IV	1	1	137	matched	20	0	2	VERB:V:1;f:1	kzam
+kṣamū	1	0	0	1	0	0				0			42	0	0		kzamU
+kṣamūṣ	1	0	0	1	0	0				0			15	0	0		kzamUz
+kṣan	3	0	1	1	0	1				0	135	matched	6	0	2	VERB:V:1;NONE:1	kzan
+kṣap	4	1	1	1	0	1	58968	I	1	1	136	matched	4	0	4	VERB:V:3;f:1	kzap
+kṣapi	1	0	0	1	0	0				0			66	0	0		kzapi
+kṣar	4	1	1	1	0	1	59141	I,II		1	138	matched	78	0	1	VERB:V:1	kzar
+kṣaraṇe	1	0	0	1	0	0				0			3	0	0		kzaraRe
+kṣaye	1	0	0	1	0	0				0			1	0	0		kzaye
+kṣaṇ	2	0	0	1	0	1				0			7	0	1	VERB:V:1	kzaR
+kṣaṇu	1	0	0	1	0	0				0			60	0	0		kzaRu
+kṣepaṇe	1	0	0	1	0	0				0			2	0	0		kzepaRe
+kṣepe	1	0	0	1	0	0				0			6	0	0		kzepe
+kṣevu	1	0	0	1	0	0				0			51	0	0		kzevu
+kṣi	4	1	1	1	0	1	59266,59272,59376	I,II,IX,V,VI	1,2,4	3	141,142	homonym_shared	195	0	5	VERB:V:3;f:2	kzi
+kṣid	1	0	0	1	0	0				0			1	0	0		kzid
+kṣip	4	1	1	1	0	1	59502	IV,VI	1	1	143	matched	218	0	2	VERB:V:1;f:1	kzip
+kṣiṇu	1	0	0	1	0	0				0			44	0	0		kziRu
+kṣmā	2	0	1	0	0	1				0	150	unmatched	0	0	17	m:11;n:4;f:1;m:n:1	
+kṣmāy	2	0	0	1	0	1				0			2	0	1	VERB:V:1	kzmAy
+kṣmāyī	1	0	0	1	0	0				0			58	0	0		kzmAyI
+kṣmīla	1	0	0	1	0	0				0			48	0	0		kzmIla
+kṣoṭa	1	0	0	1	0	0				0			26	0	0		kzowa
+kṣu	4	1	1	1	0	1	59841	II	1	1	144	matched	80	0	4	VERB:V:1;n:1;m:f:n:1;SEE:1	kzu
+kṣubh	4	1	1	1	0	1	60128	I,IV,IX,V	1	1	148	matched	97	0	2	VERB:V:1;f:1	kzuB
+kṣud	4	1	1	1	0	1	59877	I,VII	1	1	145	matched	9	0	6	m:2;VERB:V:1;SEE:1;ICF:kzuD:1;m:f:n:1	kzud
+kṣudh	4	1	1	1	0	1	60072	IV	1	1	146	matched	67	0	2	VERB:V:1;f:1	kzuD
+kṣudhā	2	0	0	1	0	1				0			2	0	10	m:4;m:f:n:3;f:2;n:1	kzuDA
+kṣup	4	1	1	1	0	1	60118	VI		1	147	unmatched	1	0	1	VERB:V:1	kzup
+kṣur	2	0	0	1	0	1				0			6	0	1	VERB:V:1	kzur
+kṣvel	4	1	1	1	0	1	60659	I		1	153	unmatched	1	0	1	VERB:V:1	kzvel
+kṣvid	3	0	1	1	0	1				0	152	homonym_shared	3	0	1	VERB:V:1	kzvid
+kṣvidā	1	0	0	1	0	0				0			61	0	0		kzvidA
+kṣviḍ	3	0	1	1	0	1				0	151	homonym_shared	6	0	2	VERB:V:2	kzviq
+kṣā	2	0	1	0	0	1				0	140	matched	0	0	5	f:1;m:1;m:n:1;SEE:1;NONE:1	
+kṣāntau	1	0	0	1	0	0				0			1	0	0		kzAntO
+kṣīb	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kzIb
+kṣībṛ	1	0	0	1	0	0				0			12	0	0		kzIbf
+kṣīj	2	0	0	1	0	1				0			49	0	1	VERB:V:1	kzIj
+kṣīv	2	0	0	1	0	1				0			1	0	1	VERB:V:1	kzIv
+kṣīvu	1	0	0	1	0	0				0			3	0	0		kzIvu
+kṣṇu	4	1	1	1	0	1	60596	II		1	149	matched	70	0	1	VERB:V:1	kzRu
+laba	2	0	0	1	0	1				0			1	0	2	m:1;n:1	laba
+labh	4	1	1	1	0	1	181359	I		1	673	matched	58	0	1	VERB:V:1	laB
+labi	1	0	0	1	0	0				0			15	0	0		labi
+lack	1	0	0	0	1	0				0			0	1	0		
+lag	4	1	1	1	0	1	180704	I,X		1	668	matched	15	0	1	VERB:V:1	lag
+lage	1	0	0	1	0	0				0			17	0	0		lage
+laghi	1	0	0	1	0	0				0			16	0	0		laGi
+lagi	1	0	0	1	0	0				0			10	0	0		lagi
+laj	2	0	0	1	0	1				0			25	0	3	VERB:V:3	laj
+laji	1	0	0	1	0	0				0			4	0	0		laji
+lajj	4	1	1	1	0	1	181156	VI		1	670	matched	3	0	1	VERB:V:1	lajj
+lajī	1	0	0	1	0	0				0			53	0	0		lajI
+lakka	1	0	0	1	0	0				0			1	0	0		lakka
+lakṣ	4	1	1	1	0	1	180331	I,X		1	667	matched	52	0	1	VERB:V:1	lakz
+lakṣaṇe	1	0	0	1	0	0				0			1	0	0		lakzaRe
+lal	4	1	1	1	0	1	181587	I		1	676	matched	24	0	1	VERB:V:1	lal
+lam	2	0	1	0	0	1				0	674	unmatched	0	0	1	VERB:V:1	
+lamb	4	1	1	1	0	1	181488	I	1	1	675	matched	29	0	2	VERB:V:2	lamb
+lambh	2	0	0	1	0	1				0			4	0	1	VERB:V:1	lamB
+lament	1	0	0	0	1	0				0			0	1	0		
+lap	4	1	1	1	0	1	181338	I	1	1	672	matched	66	0	2	VERB:V:1;SEE:1	lap
+lapadhātor	1	0	0	1	0	0				0			1	0	0		lapaDAtor
+lapanaṃ	1	0	0	1	0	0				0			1	0	0		lapanaM
+las	4	1	1	1	0	1	181992	I,X	1	1	678	matched	47	0	2	VERB:V:1;m:f:n:1	las
+lasjī	1	0	0	1	0	0				0			21	0	0		lasjI
+laugh	1	0	0	0	1	0				0			0	2	0		
+laḍ	3	0	1	1	0	1				0	671	matched	21	0	2	m:1;VERB:V:1	laq
+laḍi	1	0	0	1	0	0				0			30	0	0		laqi
+laṅgh	4	1	1	1	0	1	181121	I,X		1	669	matched	20	0	1	VERB:V:1	laNG
+laṅghi	1	0	0	1	0	0				0			2	0	0		laNGi
+laṣ	4	1	1	1	0	1	181985	I,IV,X		1	677	matched	46	0	1	VERB:V:1	laz
+laṭ	2	0	0	1	0	1				0			2	0	2	VERB:V:1;NONE:1	law
+laṭa	2	0	0	1	0	1				0			10	0	2	m:1;n:1	lawa
+lead	1	0	0	0	1	0				0			0	1	0		
+leap	1	0	0	0	1	0				0			0	4	0		
+leap, eḷult	1	0	0	0	1	0				0			0	1	0		
+leave	1	0	0	0	1	0				0			0	2	0		
+lepe	1	0	0	1	0	0				0			2	0	0		lepe
+lepṛ	1	0	0	1	0	0				0			3	0	0		lepf
+lick	1	0	0	0	1	0				0			0	2	0		
+ligi	1	0	0	1	0	0				0			9	0	0		ligi
+lih	4	1	1	1	0	1	182726	II	1	1	684	matched	89	0	3	VERB:V:1;m:f:n:1;m:1	lih
+likh	4	1	1	1	0	1	182337	VI		1	681	matched	107	0	1	VERB:V:1	liK
+limp	1	0	0	0	1	0				0			0	1	0		
+lip	4	1	1	1	0	1	182615	I,VI		1	682	matched	51	0	1	VERB:V:1	lip
+live	1	0	0	0	1	0				0			0	1	0		
+liś	4	1	1	1	0	1	182704	IV,VI	1	1	683	matched	5	0	2	VERB:V:1;m:f:n:1	liS
+liśa	2	0	0	1	0	1				0			12	0	1	NONE:1	liSa
+liṅg	2	0	0	1	0	1				0			3	0	1	VERB:V:1	liNg
+liṛt, ṭeigh	1	0	0	0	1	0				0			0	1	0		
+loc	4	1	1	1	0	1	183561	I,X		1	696	unmatched	12	0	1	VERB:V:1	loc
+locṛ	1	0	0	1	0	0				0			8	0	0		locf
+lok	4	1	1	1	0	1	183229	I,X		1	695	matched	32	0	1	VERB:V:1	lok
+lokṛ	1	0	0	1	0	0				0			93	0	0		lokf
+lola	2	0	0	1	0	1				0			19	0	15	m:f:n:7;n:2;m:f#A:n:1;m:1;m:f#I:n:1	lola
+loll, pant	1	0	0	0	1	0				0			0	1	0		
+long	1	0	0	0	1	0				0			0	1	0		
+look	1	0	0	0	1	0				0			0	1	0		
+love	1	0	0	0	1	0				0			0	1	0		
+loḍi	1	0	0	1	0	0				0			3	0	0		loqi
+loḍṛ	1	0	0	1	0	0				0			2	0	0		loqf
+loṣṭ	2	0	0	1	0	1				0			3	0	1	VERB:V:1	lozw
+lubh	4	1	1	1	0	1	183010	IV,VI		1	692	matched	22	0	1	VERB:V:1	luB
+lubha	1	0	0	1	0	0				0			9	0	0		luBa
+lubi	1	0	0	1	0	0				0			7	0	0		lubi
+luca	1	0	0	1	0	0				0			1	0	0		luca
+luji	1	0	0	1	0	0				0			4	0	0		luji
+lul	4	1	1	1	0	1	183058	I		1	693	matched	3	0	1	VERB:V:1	lul
+lup	4	1	1	1	0	1	182956	IV,VI	1	1	691	matched	32	0	3	VERB:V:1;NONE:1;m:f:n:1	lup
+luñc	4	1	1	1	0	1	182888	I		1	687	matched	10	0	1	VERB:V:1	luYc
+luḍ	4	1	1	1	0	1	182922	I,VI		1	690	matched	13	0	1	VERB:V:1	luq
+luṇṭ	3	1	0	1	0	1	182926	I,X		1			2	0	1	VERB:V:1	luRw
+luṇṭh	2	0	0	1	0	1				0			6	0	1	VERB:V:1	luRW
+luṇṭha	2	0	0	1	0	1				0			26	0	2	m:1;f:1	luRWa
+luṭ	3	1	0	1	0	1	182902	I,IV,X	2	1			2	0	3	VERB:V:2;NONE:1	luw
+luṭa	1	0	0	1	0	0				0			18	0	0		luwa
+luṭh	4	1	1	1	0	1	182907,182908	I,VI,X	1,2	2	688,689	homonym_shared	12	0	2	VERB:V:2	luW
+luṭha	1	0	0	1	0	0				0			13	0	0		luWa
+luṭhi	1	0	0	1	0	0				0			1	0	0		luWi
+luṭi	1	0	0	1	0	0				0			10	0	0		luwi
+lā	4	1	1	1	0	1	182054	II	1	1	679	unmatched	3	0	3	f:2;VERB:V:1	lA
+lābh	2	0	0	1	0	1				0			4	0	1	VERB:V:1	lAB
+lābhe	1	0	0	1	0	0				0			1	0	0		lABe
+lāchi	1	0	0	1	0	0				0			2	0	0		lACi
+lāgh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	lAG
+lāghṛ	1	0	0	1	0	0				0			13	0	0		lAGf
+lāja	2	0	0	1	0	1				0			9	0	5	m:f#A:1;n:1;f:1;m:1;ind:1	lAja
+lāji	2	0	0	1	0	1				0			2	0	1	m:1	lAji
+lāñch	4	1	1	1	0	1	182184	I		1	680	unmatched	1	0	1	VERB:V:1	lAYC
+lī	4	1	1	1	0	1	182753	I,IV,IX	1	1	685,686	homonym_shared	160	0	2	VERB:V:1;f:1	lI
+lū	4	1	1	1	0	1	183125	IX	1	1	694	matched	24	0	2	VERB:V:1;m:f:n:1	lU
+lūñ	1	0	0	1	0	0				0			84	0	0		lUY
+lūṣa	2	0	0	1	0	1				0			5	0	1	NONE:1	lUza
+ma	2	0	0	1	0	1				0			5	0	10	m:4;n:3;NONE:2;f:1	ma
+mabhra	1	0	0	1	0	0				0			6	0	0		maBra
+mac	2	0	0	1	0	1				0			1	0	5	VERB:V:1;SEE:1;ICF:mad:1;m:f:n:1;n:1	mac
+maca	1	0	0	1	0	0				0			6	0	0		maca
+maci	1	0	0	1	0	0				0			10	0	0		maci
+mad	4	1	1	1	0	1	155288	I,III,IV	2	1	545	matched	73	0	19	m:f:n:7;m:4;ind:3;VERB:V:2;LEXID=pron,STEM=asmad:1	mad
+made	2	0	0	1	0	1				0			1	0	1	m:f:n:1	made
+madhātuḥ	1	0	0	1	0	0				0			1	0	0		maDAtuH
+madi	2	0	0	1	0	1				0			27	0	1	f:1	madi
+madī	2	0	0	1	0	1				0			120	0	1	f:1	madI
+maghi	1	0	0	1	0	0				0			8	0	0		maGi
+magi	1	0	0	1	0	0				0			2	0	0		magi
+mah	4	1	1	1	0	1	159151	I,X	1	1	547	matched	52	0	2	VERB:V:1;m:f:f#I:n:1	mah
+mahi	2	0	0	1	0	1				0			6	0	30	m:f:n:10;m:8;f:4;ind:2;n:2	mahi
+majj	4	1	1	1	0	1	154347	VI		1	539	matched	21	0	1	VERB:V:1	majj
+makamakāya	2	1	0	0	0	1	153911			1			0	0	1	VERB:V:1	makamakAya
+make	1	0	0	0	1	0				0			0	1	0		
+make a noise	1	0	0	0	1	0				0			0	1	0		
+make big or strong	1	0	0	0	1	0				0			0	1	0		
+make strong	1	0	0	0	1	0				0			0	1	0		
+make ṛirm	1	0	0	0	1	0				0			0	1	0		
+makh	2	0	0	1	0	1				0			5	0	1	VERB:V:1	maK
+makhi	1	0	0	1	0	0				0			3	0	0		maKi
+maki	1	0	0	1	0	0				0			8	0	0		maki
+makṣ	2	0	0	1	0	1				0			1	0	2	VERB:V:1;m:f:1	makz
+mal	2	0	0	1	0	1				0			32	0	1	VERB:V:1	mal
+mall	2	0	0	1	0	1				0			8	0	1	VERB:V:1	mall
+mama	2	0	0	1	0	1				0			3	0	8	n:3;m:f:n:2;NONE:1;m:1;f:1	mama
+man	4	1	1	1	0	1	156626	IV,VIII		1	546	matched	308	0	5	LEXID=pron,STEM=asmad:1;m:f#A:n:1;m:f#I:n:1;VERB:V:1;SEE:1	man
+mand	3	1	0	1	0	1	157643,157684	I	1,2	2			10	0	2	VERB:V:2	mand
+manth	2	0	0	1	0	1				0			55	0	2	VERB:V:2	manT
+mantr	2	0	0	1	0	1				0			29	0	1	VERB:V:1	mantr
+manu	2	0	0	1	0	1				0			28	0	39	m:18;n:7;f:6;m:f:n:5;NONE:1	manu
+manuḥ	1	0	0	1	0	0				0			1	0	0		manuH
+marc	2	0	0	1	0	1				0			4	0	1	VERB:V:1	marc
+marca	1	0	0	1	0	0				0			3	0	0		marca
+marddane	1	0	0	1	0	0				0			1	0	0		marddane
+marj	2	0	0	1	0	1				0			28	0	1	VERB:V:1	marj
+mark	2	0	0	0	1	1				0			0	2	1	NONE:1	
+marva	1	0	0	1	0	0				0			1	0	0		marva
+mas	2	0	0	1	0	1				0			4	0	2	VERB:V:1;NONE:1	mas
+masj	1	0	0	1	0	0				0			1	0	0		masj
+masja	1	0	0	1	0	0				0			4	0	0		masja
+masjo	1	0	0	1	0	0				0			87	0	0		masjo
+maska	1	0	0	1	0	0				0			2	0	0		maska
+masī	2	0	0	1	0	1				0			12	0	1	f:1	masI
+math	4	1	1	1	0	1	155187	I,IX	1	1	544	matched	39	0	3	VERB:V:1;m:f:n:1;m:1	maT
+mathe	1	0	0	1	0	0				0			29	0	0		maTe
+mathi	2	0	0	1	0	1				0			10	0	1	NONE:1	maTi
+mati	2	0	0	1	0	1				0			5	0	43	m:22;m:f:n:7;f:5;n:4;ind:3	mati
+matri	1	0	0	1	0	0				0			4	0	0		matri
+mav	2	0	0	1	0	1				0			4	0	1	VERB:V:1	mav
+mavya	1	0	0	1	0	0				0			59	0	0		mavya
+maya	2	0	0	1	0	1				0			4	0	13	m:6;n:5;f:1;m:f:n:1	maya
+mañc	3	0	1	1	0	1				0	540	unmatched	1	0	1	VERB:V:1	maYc
+maś	2	0	0	1	0	1				0			1	0	1	VERB:V:1	maS
+maśa	2	0	0	1	0	1				0			3	0	3	m:2;f:1	maSa
+maḍi	1	0	0	1	0	0				0			63	0	0		maqi
+maṃh	4	1	1	1	0	1	153892	I,X		1	538	unmatched	7	0	1	VERB:V:1	maMh
+maṃth	1	0	0	1	0	0				0			1	0	0		maMT
+maṅg	2	0	0	1	0	1				0			3	0	1	VERB:V:1	maNg
+maṅk	2	0	0	1	0	1				0			1	0	1	VERB:V:1	maNk
+maṇ	3	0	1	1	0	1				0	541	unmatched	40	0	1	VERB:V:1	maR
+maṇḍ	4	1	1	1	0	1	154854	I		1	543	unmatched	2	0	1	VERB:V:1	maRq
+maṇṭ	2	0	1	0	0	1				0	542	matched	0	0	1	VERB:V:1	
+maṣ	2	0	0	1	0	1				0			9	0	1	VERB:V:1	maz
+maṭh	2	0	0	1	0	1				0			3	0	1	VERB:V:1	maW
+maṭhi	1	0	0	1	0	0				0			2	0	0		maWi
+me	2	0	0	1	0	1				0			5	0	4	VERB:V:1;NONE:1;m:1;SEE:1	me
+measure	1	0	0	0	1	0				0			0	1	0		
+med	2	0	1	0	0	1				0	583	matched	0	0	2	VERB:V:2	
+medh	2	0	0	1	0	1				0			2	0	2	VERB:V:2	meD
+medhṛ	1	0	0	1	0	0				0			33	0	0		meDf
+medṛ	1	0	0	1	0	0				0			1	0	0		medf
+meth	2	0	0	1	0	1				0			1	0	1	VERB:V:1	meT
+mevṛ	1	0	0	1	0	0				0			5	0	0		mevf
+meṅ	1	0	0	1	0	0				0			25	0	0		meN
+mi	4	1	1	1	0	1	164084	V	1	1	552,553	homonym_shared	23	0	2	VERB:V:2	mi
+miccha	1	0	0	1	0	0				0			7	0	0		micCa
+mid	4	1	1	1	0	1	164438	I,IV,X	2	1	557	unmatched	6	0	2	VERB:V:2	mid
+midi	1	0	0	1	0	0				0			4	0	0		midi
+midā	1	0	0	1	0	0				0			38	0	0		midA
+midṛ	1	0	0	1	0	0				0			8	0	0		midf
+migh	2	0	1	0	0	1				0	555	unmatched	0	0	1	NONE:1	
+mih	4	1	1	1	0	1	164576	I	1	1	560	matched	43	0	2	VERB:V:1;f:1	mih
+mikṣ	3	0	1	1	0	1				0	554	matched	3	0	2	VERB:V:1;SEE:1	mikz
+mil	4	1	1	1	0	1	164465	VI		1	558	matched	94	0	1	VERB:V:1	mil
+milk, derive	1	0	0	0	1	0				0			0	1	0		
+mith	4	1	1	1	0	1	164311	I		1	556	matched	9	0	1	VERB:V:1	miT
+mithṛ	1	0	0	1	0	0				0			10	0	0		miTf
+mitra	2	0	0	1	0	1				0			14	0	102	m:38;m:f:n:22;n:19;f:14;NONE:3	mitra
+mivi	1	0	0	1	0	0				0			3	0	0		mivi
+miś	2	0	0	1	0	1				0			9	0	1	VERB:V:1	miS
+miśr	2	0	0	1	0	1				0			14	0	1	VERB:V:1	miSr
+miḷ	1	0	0	0	1	0				0			0	3	0		
+miṣ	4	1	1	1	0	1	164547	VI	1	1	559	matched	30	0	2	VERB:V:2	miz
+miṣu	1	0	0	1	0	0				0			4	0	0		mizu
+mlai	3	1	0	1	0	1	168938	I		1			14	0	1	VERB:V:1	mlE
+mleccha	2	0	0	1	0	1				0			34	0	15	n:5;m:5;m:f:n:2;f:2;m:f#I:1	mlecCa
+mlech	4	1	1	1	0	1	168905	I,X		1	594	matched	1	0	1	VERB:V:1	mleC
+mlevṛ	1	0	0	1	0	0				0			1	0	0		mlevf
+mleṭṛ	1	0	0	1	0	0				0			11	0	0		mlewf
+mluc	4	1	1	1	0	1	168901	I		1	592	unmatched	13	0	1	VERB:V:1	mluc
+mlucu	1	0	0	1	0	0				0			9	0	0		mlucu
+mluncu	1	0	0	1	0	0				0			6	0	0		mluncu
+mlup	3	0	1	1	0	1				0	593	unmatched	1	0	1	NONE:1	mlup
+mlā	1	0	1	0	0	0				0	591	matched	0	0	0		
+mnā	4	1	1	1	0	1	168870	I		1	585	matched	31	0	1	VERB:V:1	mnA
+mock	1	0	0	0	1	0				0			0	2	0		
+mokṣ	4	1	1	1	0	1	168318	I,X		1	584	matched	20	0	1	VERB:V:1	mokz
+mount	1	0	0	0	1	0				0			0	1	0		
+move	1	0	0	0	1	0				0			0	3	0		
+move about	1	0	0	0	1	0				0			0	1	0		
+move crookedly	1	0	0	0	1	0				0			0	1	0		
+move on	1	0	0	0	1	0				0			0	1	0		
+move, stir	1	0	0	0	1	0				0			0	1	0		
+mrad	4	1	1	1	0	1	168881	I		1	587	matched	3	0	1	VERB:V:1	mrad
+mrada	2	0	0	1	0	1				0			9	0	1	NONE:1	mrada
+mrakṣ	3	1	0	1	0	1	168873	I,X		1			23	0	1	VERB:V:1	mrakz
+mreḍ	3	0	1	1	0	1				0	590	matched	3	0	1	VERB:V:1	mreq
+mreḍṛ	1	0	0	1	0	0				0			1	0	0		mreqf
+mreṭṛ	1	0	0	1	0	0				0			5	0	0		mrewf
+mrit	3	0	1	1	0	1				0	588	matched	1	0	1	VERB:V:1	mrit
+mruc	4	1	1	1	0	1	168891	I		1	589	matched	5	0	1	VERB:V:1	mruc
+mrucu	1	0	0	1	0	0				0			11	0	0		mrucu
+mruncu	1	0	0	1	0	0				0			2	0	0		mruncu
+muc	4	1	1	1	0	1	165082	VI	2	1	564	matched	92	0	4	VERB:V:2;m:f:n:1;f:1	muc
+muci	2	0	0	1	0	1				0			13	0	1	m:1	muci
+mucā	1	0	0	1	0	0				0			1	0	0		mucA
+mud	4	1	1	1	0	1	165450	I	2	1	566	matched	61	0	4	VERB:V:2;f:1;m:f:n:1	mud
+muh	4	1	1	1	0	1	166006	IV	1	1	568	matched	65	0	2	VERB:V:1;SEE:1	muh
+muja	1	0	0	1	0	0				0			10	0	0		muja
+muji	1	0	0	1	0	0				0			1	0	0		muji
+mur	2	0	0	1	0	1				0			6	0	4	NONE:2;VERB:V:1;m:1	mur
+murch	3	1	0	1	0	1	165763	I		1			3	0	1	VERB:V:1	murC
+murchā	1	0	0	1	0	0				0			9	0	0		murCA
+murmur, speak	1	0	0	0	1	0				0			0	1	0		
+murvī	1	0	0	1	0	0				0			4	0	0		murvI
+musa	1	0	0	1	0	0				0			19	0	0		musa
+musta	2	0	0	1	0	1				0			2	0	2	m:f:n:1;m:1	musta
+mutilate	1	0	0	0	1	0				0			0	1	0		
+muñja	2	0	0	1	0	1				0			5	0	21	m:12;m:f:n:3;m:f#I:n:2;n:1;NONE:1	muYja
+muḍi	1	0	0	1	0	0				0			22	0	0		muqi
+muṇa	1	0	0	1	0	0				0			3	0	0		muRa
+muṣ	4	1	1	1	0	1	165859	I,IX,VI	2	1	567	matched	61	0	4	VERB:V:2;m:f:n:1;f:1	muz
+muṭ	3	0	1	1	0	1				0	565	unmatched	6	0	1	VERB:V:1	muw
+muṭa	2	0	0	1	0	1				0			19	0	1	m:n:1	muwa
+muṭhi	1	0	0	1	0	0				0			12	0	0		muWi
+myakṣ	4	1	1	1	0	1	168872	I		1	586	matched	7	0	1	VERB:V:1	myakz
+mā	4	1	1	1	0	1	161693,161697	II,III,IV	2,3	2	548,549,550	homonym_shared	169	0	19	ind:7;f:4;VERB:V:2;SEE:2;n:1	mA
+māghaḥ	1	0	0	1	0	0				0			2	0	0		mAGaH
+māhṛ	1	0	0	1	0	0				0			5	0	0		mAhf
+mākṣi	1	0	0	1	0	0				0			3	0	0		mAkzi
+mālā	2	0	0	1	0	1				0			8	0	42	m:16;f:10;n:8;m:f:n:3;m:f#I:1	mAlA
+mān	2	0	0	1	0	1				0			34	0	1	VERB:V:1	mAn
+māntha	1	0	0	1	0	0				0			12	0	0		mAnTa
+mārg	4	1	1	1	0	1	163363	I,X		1	551	matched	23	0	1	VERB:V:1	mArg
+mārja	2	0	0	1	0	1				0			3	0	2	m:f:n:1;m:1	mArja
+mārjj	1	0	0	1	0	0				0			1	0	0		mArjj
+mārjja	1	0	0	1	0	0				0			1	0	0		mArjja
+mī	4	1	1	1	0	1	164607	IX	1	1	561	matched	44	0	3	VERB:V:2;SEE:1	mI
+mīl	4	1	1	1	0	1	164715	I		1	562	matched	17	0	1	VERB:V:1	mIl
+mīmṛ	1	0	0	1	0	0				0			2	0	0		mImf
+mīv	4	1	1	1	0	1	164724	I	1	1	563	matched	7	0	2	VERB:V:2	mIv
+mīva	1	0	0	1	0	0				0			2	0	0		mIva
+mū	3	0	1	1	0	1				0	569	unmatched	1	0	4	VERB:V:1;m:f:n:1;f:1;NONE:1	mU
+mūl	2	0	0	1	0	1				0			24	0	1	VERB:V:1	mUl
+mūrccha	1	0	0	1	0	0				0			1	0	0		mUrcCa
+mūrch	2	0	1	0	0	1				0	570	matched	0	0	1	VERB:V:1	
+mūtra	2	0	0	1	0	1				0			9	0	39	m:17;m:f:n:9;n:6;f:4;m:n:2	mUtra
+mūṅ	1	0	0	1	0	0				0			8	0	0		mUN
+mūṣ	2	0	0	1	0	1				0			1	0	2	VERB:V:1;m:f:1	mUz
+mūṣa	2	0	0	1	0	1				0			3	0	2	m:f#A:f#I:1;m:f:n:1	mUza
+mṛ	4	1	1	1	0	1	166607	I,VI		1	571,572	homonym_shared	35	0	1	VERB:V:1	mf
+mṛc	2	0	1	0	0	1				0	574	matched	0	0	8	f:2;m:2;VERB:V:1;SEE:1;ICF:mfd:1	
+mṛch	2	0	1	0	0	1				0	575	matched	0	0	1	VERB:V:1	
+mṛd	4	1	1	1	0	1	167219	I,IX	1	1	579	matched	54	0	8	f:2;m:2;VERB:V:1;m:f:n:1;n:1	mfd
+mṛdh	3	1	1	0	0	1	167410	I,VI	1	1	580	matched	0	0	2	VERB:V:1;f:1	mfD
+mṛdhu	1	0	0	1	0	0				0			2	0	0		mfDu
+mṛg	3	1	0	1	0	1	166791	IV,X		1			33	0	4	m:2;VERB:V:1;m:n:1	mfg
+mṛj	4	1	1	1	0	1	167121	I,II,VI,X	1	1	576	matched	21	0	2	VERB:V:1;SEE:1	mfj
+mṛjū	1	0	0	1	0	0				0			168	0	0		mfjU
+mṛkṣ	3	0	1	1	0	1				0	573	matched	1	0	2	VERB:V:2	mfkz
+mṛkṣa	2	0	0	1	0	1				0			2	0	1	m:1	mfkza
+mṛś	4	1	1	1	0	1	167423	VI	1	1	581	matched	40	0	2	VERB:V:1;NONE:1	mfS
+mṛḍ	4	1	1	1	0	1	167161	IX,VI,X		1	577	matched	18	0	1	VERB:V:1	mfq
+mṛṇ	3	0	1	1	0	1				0	578	matched	2	0	2	VERB:V:1;NONE:1	mfR
+mṛṇa	1	0	0	1	0	0				0			2	0	0		mfRa
+mṛṣ	4	1	1	1	0	1	167430	I,IV,X	1	1	582	matched	42	0	3	VERB:V:2;NONE:1	mfz
+mṛṣadhātor	1	0	0	1	0	0				0			1	0	0		mfzaDAtor
+mṛṣu	1	0	0	1	0	0				0			2	0	0		mfzu
+mṝ	2	0	0	1	0	1				0			8	0	1	VERB:V:1	mF
+na	2	0	0	1	0	1				0			4	0	95	m:22;m:f:n:20;ind:15;SEE:11;f:9	na
+nabh	4	1	1	1	0	1	103699	I,IV,IX	1	1	415	matched	8	0	3	VERB:V:1;m:f:1;m:1	naB
+nabhogatau	1	0	0	1	0	0				0			2	0	0		naBogatO
+nad	4	1	1	1	0	1	103308	I		1	413	matched	45	0	2	VERB:V:1;NONE:1	nad
+nadi	2	0	0	1	0	1				0			37	0	3	m:2;m:f:n:1	nadi
+nah	4	1	1	1	0	1	104854	IV	1	1	421	matched	45	0	2	VERB:V:1;NONE:1	nah
+naj	2	0	0	1	0	1				0			1	0	1	VERB:V:1	naj
+nakh	2	0	0	1	0	1				0			6	0	1	VERB:V:1	naK
+nakka	1	0	0	1	0	0				0			7	0	0		nakka
+nakṣ	4	1	1	1	0	1	102824	I		1	411	matched	10	0	1	VERB:V:1	nakz
+nal	2	0	0	1	0	1				0			5	0	1	VERB:V:1	nal
+nam	4	1	1	1	0	1	103825	I		1	416	matched	75	0	1	VERB:V:1	nam
+namasya	2	0	0	1	0	1				0			1	0	2	VERB:N:1;m:f:n:1	namasya
+nand	4	1	1	1	0	1	103420	I		1	414	matched	30	0	1	VERB:V:1	nand
+napuṃsake	1	0	0	1	0	0				0			1	0	0		napuMsake
+nard	4	1	1	1	0	1	104307	I		1	417	matched	30	0	1	VERB:V:1	nard
+nas	3	0	1	1	0	1				0	420	matched	4	0	7	NONE:2;VERB:V:1;f:1;ind:1;n:1	nas
+nay	2	0	0	1	0	1				0			1	0	1	VERB:V:1	nay
+naś	4	1	1	1	0	1	104757,104760	I,IV	1,2	2	418,419	homonym_shared	53	0	3	VERB:V:2;m:f:n:1	naS
+naḍ	2	0	0	1	0	1				0			7	0	10	f:3;n:2;VERB:V:1;ICF:naqa:1;m:1	naq
+naṃd	1	0	0	1	0	0				0			1	0	0		naMd
+naṃś	2	0	1	0	0	1				0	410	unmatched	0	0	1	VERB:V:1	
+naṭ	4	1	1	1	0	1	103176	I		1	412	matched	52	0	1	VERB:V:1	naw
+ned	3	0	1	1	0	1				0	434	matched	1	0	1	VERB:V:1	ned
+neglect	1	0	0	0	1	0				0			0	1	0		
+nena	1	0	0	1	0	0				0			1	0	0		nena
+neneti	1	0	0	1	0	0				0			1	0	0		neneti
+ni	2	0	0	1	0	1				0			12	0	356	m:f:n:90;m:70;SEE:53;NONE:33;n:31	ni
+nid	2	0	0	1	0	1				0			3	0	2	VERB:V:1;f:1	nid
+nidi	1	0	0	1	0	0				0			1	0	0		nidi
+nigaraṇe	1	0	0	1	0	0				0			1	0	0		nigaraRe
+nij	4	1	1	1	0	1	108251	II,III		1	425	matched	15	0	1	VERB:V:1	nij
+nikṣ	3	0	1	1	0	1				0	424	matched	7	0	1	VERB:V:1	nikz
+nimīlane	1	0	0	1	0	0				0			1	0	0		nimIlane
+nind	4	1	1	1	0	1	108659	I		1	426	matched	10	0	1	VERB:V:1	nind
+ninde	1	0	0	1	0	0				0			1	0	0		ninde
+nipūrvvavṛ	1	0	0	1	0	0				0			1	0	0		nipUrvvavf
+nivāsa	1	0	0	1	0	0				0			52	0	0		nivAsa
+nivāse	1	0	0	1	0	0				0			1	0	0		nivAse
+niś	2	0	0	1	0	1				0			3	0	33	m:f:n:15;f:5;m:5;NONE:2;m:f#A:n:1	niS
+niṃs	3	0	1	1	0	1				0	423	matched	2	0	1	VERB:V:1	niMs
+niṅ	1	0	0	1	0	0				0			1	0	0		niN
+niṣ	2	0	0	1	0	1				0			11	0	207	m:f:n:103;f:22;m:21;m:f#A:n:21;n:16	niz
+niṣk	2	0	0	1	0	1				0			5	0	1	VERB:V:1	nizk
+niṣṭhā	2	0	0	1	0	1				0			2	0	1	VERB:P:1	nizWA
+node	1	0	0	1	0	0				0			2	0	0		node
+not heed	1	0	0	0	1	0				0			0	1	0		
+note	1	0	0	0	1	0				0			0	1	0		
+note, observe	1	0	0	0	1	0				0			0	2	0		
+nourish	1	0	0	0	1	0				0			0	1	0		
+nu	4	1	1	1	0	1	111762	II,VI	4	1	429,430	homonym_shared	29	0	7	m:2;VERB:V:2;NONE:2;ind:1	nu
+nud	4	1	1	1	0	1	111772	VI	1	1	431	matched	42	0	2	VERB:V:1;m:f:n:1	nud
+nuk	1	0	0	1	0	0				0			1	0	0		nuk
+nād	1	0	0	1	0	0				0			1	0	0		nAd
+nādhṛ	1	0	0	1	0	0				0			1	0	0		nADf
+nāma	2	0	0	1	0	1				0			2	0	87	m:30;n:23;f:12;m:f:n:11;ind:5	nAma
+nāmadhātuḥ	1	0	0	1	0	0				0			3	0	0		nAmaDAtuH
+nāth	4	1	1	1	0	1	105448	I		1	422	matched	5	0	1	VERB:V:1	nAT
+nāthṛ	1	0	0	1	0	0				0			12	0	0		nATf
+nāśe	1	0	0	1	0	0				0			1	0	0		nASe
+nī	4	1	1	1	0	1	111189	I	2	1	427	matched	140	0	72	m:f:n:24;m:14;f:10;m:f#A:n:6;SEE:6	nI
+nīcagatau	1	0	0	1	0	0				0			1	0	0		nIcagatO
+nīḍ	1	0	1	0	0	0				0	428	unmatched	0	0	0		
+nṛ	3	0	1	1	0	1				0	432	unmatched	2	0	212	m:78;n:54;m:f:n:40;f:31;m:f#A:n:3	nf
+nṛt	4	1	1	1	0	1	112031	IV	1	1	433	matched	16	0	2	VERB:V:1;f:1	nft
+nṛtī	1	0	0	1	0	0				0			24	0	0		nftI
+nṝ	2	0	0	1	0	1				0			7	0	1	VERB:V:1	nF
+obstruct	1	0	0	0	1	0				0			0	2	0		
+obtain	1	0	0	0	1	0				0			0	1	0		
+oj	2	1	0	0	0	1	40621	I,X		1			0	0	1	VERB:V:1	oj
+okh	2	1	0	0	0	1	40606	I		1			0	0	1	VERB:V:1	oK
+okhṛ	1	0	0	1	0	0				0			2	0	0		oKf
+olaḍi	1	0	0	1	0	0				0			33	0	0		olaqi
+olaṇḍ	2	1	0	0	0	1	40721	I,VIII,X		1			0	0	1	VERB:V:1	olaRq
+om	2	0	0	1	0	1				0			1	0	1	ind:1	om
+open	1	0	0	0	1	0				0			0	1	0		
+oppress	1	0	0	0	1	0				0			0	1	0		
+overcome	1	0	0	0	1	0				0			0	1	0		
+overpoṭer, injure	1	0	0	0	1	0				0			0	1	0		
+oṇ	3	1	0	1	0	1	40663	I		1			2	0	1	VERB:V:1	oR
+oṇṛ	1	0	0	1	0	0				0			10	0	0		oRf
+oṛṛer	1	0	0	0	1	0				0			0	1	0		
+pa	2	0	0	1	0	1				0			2	0	8	m:4;NONE:1;m:f#pA:f#pI:n:1;m:f:1;m:f:n:1	pa
+pac	4	1	1	1	0	1	113414	I,IV	2	1	435	matched	66	0	9	VERB:V:2;n:2;m:f:n:1;SEE:1;ICF:pad:1	pac
+paci	2	0	0	1	0	1				0			16	0	1	m:1	paci
+pad	4	1	1	1	0	1	115170	IV	2	1	443	matched	254	0	23	m:7;f:4;n:4;SEE:3;VERB:V:2	pad
+pai	2	0	0	1	0	1				0			20	0	1	VERB:V:1	pE
+paiṇṛ	1	0	0	1	0	0				0			6	0	0		pERf
+paj	4	1	1	1	0	1	113507			1	436	unmatched	1	0	4	VERB:V:1;SEE:1;ICF:pad:1;m:1	paj
+pakṣ	2	0	0	1	0	1				0			44	0	1	VERB:V:1	pakz
+pal	2	0	0	1	0	1				0			13	0	1	VERB:V:1	pal
+pali	2	0	0	1	0	1				0			2	0	2	m:2	pali
+palpūla	1	0	0	1	0	0				0			5	0	0		palpUla
+palāya	1	0	0	1	0	0				0			1	0	0		palAya
+pan	4	1	1	1	0	1	115833	I	2	1	444	matched	9	0	9	NONE:3;f:2;m:1;n:1;VERB:V:1	pan
+pana	1	0	0	1	0	0				0			12	0	0		pana
+parba	1	0	0	1	0	0				0			1	0	0		parba
+pard	3	0	1	1	0	1				0	445	unmatched	3	0	1	VERB:V:1	pard
+parda	2	0	0	1	0	1				0			16	0	1	m:1	parda
+pardda	1	0	0	1	0	0				0			1	0	0		pardda
+pari	2	0	0	1	0	1				0			15	0	1440	m:f:n:572;m:279;n:244;f:176;SEE:47	pari
+parimāṇe	1	0	0	1	0	0				0			1	0	0		parimARe
+parp	2	0	0	1	0	1				0			5	0	1	VERB:V:1	parp
+parv	2	0	0	1	0	1				0			1	0	1	VERB:V:1	parv
+parva	2	0	0	1	0	1				0			2	0	39	m:22;f:9;m:f:n:5;ICF:parvan:1;n:1	parva
+parā	2	0	0	1	0	1				0			2	0	95	m:28;m:f:n:25;n:17;f:16;SEE:5	parA
+parṇ	2	0	0	1	0	1				0			11	0	1	VERB:V:1	parR
+pas	2	0	0	1	0	1				0			1	0	1	VERB:V:1	pas
+pasi	1	0	0	1	0	0				0			1	0	0		pasi
+pass	1	0	0	0	1	0				0			0	2	0		
+pat	4	1	1	1	0	1	114698	I	2	1	440,441	homonym_shared	154	0	11	m:f:n:5;VERB:V:2;SEE:2;ICF:pad:1;ind:1	pat
+path	3	0	1	1	0	1				0	442	homonym_shared	9	0	1	VERB:V:1	paT
+pathe	2	0	0	1	0	1				0			47	0	1	m:f:n:1	paTe
+pathi	2	0	0	1	0	1				0			1	0	20	m:f:n:11;m:5;ICF:paTin:1;n:1;ind:1	paTi
+patḷ	1	0	0	1	0	0				0			155	0	0		patx
+paś	4	1	1	1	0	1	120516		1	1	446,447	homonym_shared	116	0	3	VERB:V:2;f:1	paS
+paśau	1	0	0	1	0	0				0			1	0	0		paSO
+paḍi	1	0	0	1	0	0				0			9	0	0		paqi
+paṇ	4	1	1	1	0	1	114550	I		1	439	matched	106	0	1	VERB:V:1	paR
+paṣ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	paz
+paṣa	1	0	0	1	0	0				0			4	0	0		paza
+paṭ	4	1	1	1	0	1	114263	I,X		1	437	matched	69	0	1	VERB:V:1	paw
+paṭh	4	1	1	1	0	1	114524	I		1	438	homonym_shared	32	0	1	VERB:V:1	paW
+paṭu	2	0	0	1	0	1				0			8	0	25	m:f:n:10;f:5;m:4;n:3;m:f#u:f#vI:n:1	pawu
+pelṛ	1	0	0	1	0	0				0			4	0	0		pelf
+perceive	1	0	0	0	1	0				0			0	1	0		
+perceive, knoṭ, appear	1	0	0	0	1	0				0			0	1	0		
+perish	1	0	0	0	1	0				0			0	2	0		
+pesṛ	1	0	0	1	0	0				0			41	0	0		pesf
+pevṛ	1	0	0	1	0	0				0			5	0	0		pevf
+peṣe	1	0	0	1	0	0				0			1	0	0		peze
+peṣṛ	1	0	0	1	0	0				0			3	0	0		pezf
+phakk	2	0	1	0	0	1				0	488	unmatched	0	0	1	VERB:V:1	
+phakka	2	0	0	1	0	1				0			5	0	1	m:1	Pakka
+phal	3	0	1	1	0	1				0	491,492	homonym_shared	48	0	1	VERB:V:1	Pal
+phalā	2	0	0	1	0	1				0			80	0	2	f:2	PalA
+phar	3	0	1	1	0	1				0	490	unmatched	1	0	1	VERB:V:1	Par
+phaṇ	4	1	1	1	0	1	141623	I		1	489	matched	53	0	1	VERB:V:1	PaR
+phaṣa	1	0	0	1	0	0				0			1	0	0		Paza
+phelṛ	1	0	0	1	0	0				0			7	0	0		Pelf
+phula	1	0	0	1	0	0				0			2	0	0		Pula
+phull	2	0	0	1	0	1				0			8	0	1	VERB:V:1	Pull
+pi	3	0	1	1	0	1				0	452	unmatched	30	0	12	m:f:n:4;VERB:V:2;SEE:2;NONE:1;n:1	pi
+pibd	3	0	1	1	0	1				0	454	matched	1	0	1	VERB:V:1	pibd
+piccha	2	0	0	1	0	1				0			2	0	4	n:1;m:1;f:1;m:f:n:1	picCa
+pich	2	1	0	0	0	1	123508	VI,X		1			0	0	1	VERB:V:1	piC
+pierce	1	0	0	0	1	0				0			0	2	0		
+piji	1	0	0	1	0	0				0			11	0	0		piji
+pinv	3	0	1	1	0	1				0	453	matched	2	0	1	VERB:V:1	pinv
+pis	3	0	1	1	0	1				0	457	unmatched	2	0	1	VERB:V:1	pis
+pisṛ	1	0	0	1	0	0				0			4	0	0		pisf
+pivi	1	0	0	1	0	0				0			1	0	0		pivi
+piñj	2	1	0	0	0	1	123559	II,X		1			0	0	1	VERB:V:1	piYj
+piś	4	1	1	1	0	1	124422	VI	1	1	455	matched	12	0	2	VERB:V:1;f:1	piS
+piśa	2	0	0	1	0	1				0			8	0	1	m:1	piSa
+piḍ	1	0	0	1	0	0				0			1	0	0		piq
+piḍi	1	0	0	1	0	0				0			12	0	0		piqi
+piṇḍ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	piRq
+piṣ	4	1	1	1	0	1	124541	VII		1	456	matched	27	0	1	VERB:V:1	piz
+piṣadhātor	1	0	0	1	0	0				0			1	0	0		pizaDAtor
+piṭ	2	0	0	1	0	1				0			7	0	1	VERB:V:1	piw
+piṭha	2	0	0	1	0	1				0			4	0	1	m:1	piWa
+piṭṭa	1	0	0	1	0	0				0			1	0	0		piwwa
+plakṣ	2	0	0	1	0	1				0			6	0	1	VERB:V:1	plakz
+plava	2	0	0	1	0	1				0			3	0	19	m:7;m:f:n:3;m:f#A:n:2;n:2;f:2	plava
+play	1	0	0	0	1	0				0			0	4	0		
+please	1	0	0	0	1	0				0			0	1	0		
+pliha	1	0	0	1	0	0				0			4	0	0		pliha
+plu	4	1	1	1	0	1	141468	I		1	485	matched	52	0	1	VERB:V:1	plu
+plunge	1	0	0	0	1	0				0			0	1	0		
+plutyāṃ	1	0	0	1	0	0				0			1	0	0		plutyAM
+pluṣ	4	1	1	1	0	1	141564	I,IV,IX		1	486	matched	2	0	1	VERB:V:1	pluz
+pluṣa	1	0	0	1	0	0				0			14	0	0		pluza
+pluṣu	1	0	0	1	0	0				0			8	0	0		pluzu
+plī	3	0	1	1	0	1				0	484	unmatched	57	0	1	VERB:V:1	plI
+possess	1	0	0	0	1	0				0			0	1	0		
+pra	2	0	0	1	0	1				0			26	0	1348	m:f:n:344;m:326;n:174;f:167;SEE:160	pra
+prabhavaḥ	1	0	0	1	0	0				0			1	0	0		praBavaH
+prach	4	1	1	1	0	1	130824	VI		1	477	aliased	33	0	1	VERB:V:1	praC
+pradhāna	2	0	0	1	0	1				0			3	0	24	m:8;n:6;m:f:n:5;f:3;m:f#A:n:1	praDAna
+pradhāne	1	0	0	1	0	0				0			1	0	0		praDAne
+praise	1	0	0	0	1	0				0			0	3	0		
+praiṇṛ	1	0	0	1	0	0				0			5	0	0		prERf
+pramāṇa	2	0	0	1	0	1				0			7	0	51	m:15;f:13;n:13;m:f:n:7;f#A:n:1	pramARa
+prasa	1	0	0	1	0	0				0			3	0	0		prasa
+prasāde	1	0	0	1	0	0				0			1	0	0		prasAde
+prate	1	0	0	0	1	0				0			0	1	0		
+prath	4	1	1	1	0	1	134465	I	1	1	478	matched	35	0	2	VERB:V:2	praT
+prati	2	0	0	1	0	1				0			8	0	675	m:165;ind:164;m:f:n:132;f:77;n:77	prati
+prativimba	1	0	0	1	0	0				0			1	0	0		prativimba
+prayatne	1	0	0	1	0	0				0			1	0	0		prayatne
+press	1	0	0	0	1	0				0			0	2	0		
+press out	1	0	0	0	1	0				0			0	1	0		
+prevail	1	0	0	0	1	0				0			0	1	0		
+preṅkhola	2	0	0	1	0	1				0			1	0	1	VERB:N:1	preNKola
+preṣ	2	0	0	1	0	1				0			1	0	2	VERB:V:1;VERB:P:1	prez
+proceed	1	0	0	0	1	0				0			0	1	0		
+prop	1	0	0	0	1	0				0			0	1	0		
+prop,	1	0	0	0	1	0				0			0	1	0		
+protect	1	0	0	0	1	0				0			0	3	0		
+proth	2	0	0	1	0	1				0			2	0	1	VERB:V:1	proT
+prothṛ	1	0	0	1	0	0				0			24	0	0		proTf
+pru	4	1	1	1	0	1	140856	I		1	481	matched	14	0	1	VERB:V:1	pru
+pruth	4	1	1	1	0	1	140858	I		1	482	matched	4	0	1	VERB:V:1	pruT
+pruṣ	4	1	1	1	0	1	140871	IV,IX,V,X	1	1	483	matched	7	0	3	VERB:V:2;NONE:1	pruz
+pruṣa	1	0	0	1	0	0				0			4	0	0		pruza
+pruṣu	1	0	0	1	0	0				0			2	0	0		pruzu
+prā	4	1	1	1	0	1	138761	II	1	1	479	matched	6	0	255	m:73;n:50;m:f:n:38;m:f#I:n:35;f:19	prA
+prāptau	1	0	0	1	0	0				0			1	0	0		prAptO
+prī	4	1	1	1	0	1	140436	IV,IX	1	1	480	matched	17	0	2	VERB:V:1;m:f:n:1	prI
+prīñ	1	0	0	1	0	0				0			86	0	0		prIY
+psā	4	1	1	1	0	1	141584	II	1	1	487	matched	8	0	2	VERB:V:1;f:1	psA
+puccha	2	0	0	1	0	1				0			4	0	18	m:7;n:6;f:3;m:f#A:f#I:n:1;m:f:n:1	pucCa
+puk	1	0	0	1	0	0				0			1	0	0		puk
+pul	2	0	0	1	0	1				0			29	0	1	VERB:V:1	pul
+pur	2	0	0	1	0	1				0			14	0	3	f:2;VERB:V:1	pur
+puriṛy (?)	1	0	0	0	1	0				0			0	1	0		
+pursue	1	0	0	0	1	0				0			0	1	0		
+pursue (?)	1	0	0	0	1	0				0			0	1	0		
+purva	1	0	0	1	0	0				0			28	0	0		purva
+purāṇa	2	0	0	1	0	1				0			8	0	37	m:16;n:10;f:4;m:f:n:3;m:f#A:f#I:n:1	purARa
+push	1	0	0	0	1	0				0			0	2	0		
+push, thrust	1	0	0	0	1	0				0			0	1	0		
+pust	2	0	0	1	0	1				0			4	0	1	VERB:V:1	pust
+put	2	0	0	0	1	1				0			0	1	1	NONE:1	
+put in order	1	0	0	0	1	0				0			0	1	0		
+puth	4	1	1	1	0	1	125645	IV		1	463	unmatched	9	0	1	VERB:V:1	puT
+putha	1	0	0	1	0	0				0			6	0	0		puTa
+puthi	1	0	0	1	0	0				0			4	0	0		puTi
+puḍa	1	0	0	1	0	0				0			1	0	0		puqa
+puḍi	1	0	0	1	0	0				0			5	0	0		puqi
+puṃs	2	0	0	1	0	1				0			4	0	16	m:7;n:4;f:2;VERB:V:1;ind:1	puMs
+puṇ	2	0	0	1	0	1				0			48	0	1	VERB:V:1	puR
+puṣ	4	1	1	1	0	1	126760	I,IV,IX	2	1	464	matched	123	0	3	VERB:V:2;m:f:n:1	puz
+puṣpa	2	0	0	1	0	1				0			17	0	167	m:87;f:34;n:28;m:f:n:12;m:f#I:n:2	puzpa
+puṭ	4	1	1	1	0	1	125192	I,VI,X		1	462	matched	18	0	1	VERB:V:1	puw
+puṭṭ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	puww
+pyai	3	1	0	1	0	1	129743	I		1			8	0	1	VERB:V:1	pyE
+pyā	1	0	1	0	0	0				0	476	matched	0	0	0		
+pyāy	2	0	0	1	0	1				0			4	0	2	VERB:V:2	pyAy
+pyāyī	1	0	0	1	0	0				0			73	0	0		pyAyI
+pā	4	1	1	1	0	1	120795,120935	I,II	1,3	2	448,449,450	homonym_shared	348	0	7	VERB:V:3;f:2;m:f:n:2	pA
+pācayati	1	0	0	1	0	0				0			1	0	0		pAcayati
+pāci	1	0	0	1	0	0				0			1	0	0		pAci
+pāke	1	0	0	1	0	0				0			1	0	0		pAke
+pāl	2	0	0	1	0	1				0			13	0	1	VERB:V:1	pAl
+pālane	1	0	0	1	0	0				0			1	0	0		pAlane
+pāne	1	0	0	1	0	0				0			1	0	0		pAne
+pāra	2	0	0	1	0	1				0			14	0	75	m:f:n:21;m:19;n:14;m:f#I:n:7;m:f#A:n:3	pAra
+pāy	3	1	1	0	0	1	122352	I		1	451	unmatched	0	0	1	VERB:V:1	pAy
+pāśi	2	0	0	1	0	1				0			1	0	1	m:1	pASi
+pāṭhāt	1	0	0	1	0	0				0			2	0	0		pAWAt
+pāṭi	1	0	0	1	0	0				0			1	0	0		pAwi
+pī	4	1	1	1	0	1	124606	I,II,III	2	1	458,459	homonym_shared	4	0	5	VERB:V:2;m:1;m:f:n:1;f:1	pI
+pīla	1	0	0	1	0	0				0			2	0	0		pIla
+pīva	2	0	0	1	0	1				0			3	0	3	m:f:n:1;VERB:N:1;NONE:1	pIva
+pīy	4	1	1	1	0	1	124968	I		1	461	unmatched	4	0	1	VERB:V:1	pIy
+pīyate	1	0	0	1	0	0				0			1	0	0		pIyate
+pīḍ	4	1	1	1	0	1	124649	X		1	460	matched	61	0	1	VERB:V:1	pIq
+pīṭha	2	0	0	1	0	1				0			2	0	22	m:10;n:5;f:3;m:f:n:2;f#I:n:1	pIWa
+pū	4	1	1	1	0	1	127307	I,IX	1	1	465	matched	53	0	3	m:f:n:2;VERB:V:1	pU
+pūj	4	1	1	1	0	1	127377	I,X		1	466	unmatched	25	0	1	VERB:V:1	pUj
+pūla	2	0	0	1	0	1				0			7	0	1	m:1	pUla
+pūr	3	0	1	1	0	1				0	468	unmatched	3	0	11	n:3;f:2;m:2;m:f:n:2;ICF:pur:1	pUr
+pūra	2	0	0	1	0	1				0			9	0	4	m:f:n:1;m:1;n:1;m:f#A:n:1	pUra
+pūraṇe	1	0	0	1	0	0				0			1	0	0		pUraRe
+pūri	1	0	0	1	0	0				0			2	0	0		pUri
+pūrttau	1	0	0	1	0	0				0			1	0	0		pUrttO
+pūrva	2	0	0	1	0	1				0			15	0	288	m:f:n:87;m:78;f:49;n:47;ind:11	pUrva
+pūrvvavat	1	0	0	1	0	0				0			1	0	0		pUrvvavat
+pūrī	2	0	0	1	0	1				0			96	0	1	f:1	pUrI
+pūrṇa	2	0	0	1	0	1				0			6	0	80	m:27;m:f:n:22;f:11;n:9;m:f#A:n:3	pUrRa
+pūttau	1	0	0	1	0	0				0			1	0	0		pUttO
+pūy	4	1	1	1	0	1	127469	I		1	467	matched	1	0	1	VERB:V:1	pUy
+pūñ	1	0	0	1	0	0				0			73	0	0		pUY
+pūṅ	1	0	0	1	0	0				0			55	0	0		pUN
+pūṇ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	pUR
+pūṣa	2	0	0	1	0	1				0			1	0	7	m:3;ICF:pUzan:1;NONE:1;f:1;m:f:n:1	pUza
+pṛ	4	1	1	1	0	1	128300	III,IX	1	1	469,470,471	homonym_shared	16	0	2	VERB:V:2	pf
+pṛc	4	1	1	1	0	1	128314	I,II,III,VII	1	1	472	matched	14	0	2	VERB:V:1;f:1	pfc
+pṛcī	1	0	0	1	0	0				0			24	0	0		pfcI
+pṛj	2	0	0	1	0	1				0			1	0	1	VERB:V:1	pfj
+pṛji	1	0	0	1	0	0				0			6	0	0		pfji
+pṛt	2	0	1	0	0	1				0	474	unmatched	0	0	2	f:1;m:f:1	
+pṛtha	2	0	0	1	0	1				0			5	0	5	m:3;n:1;m:f:n:1	pfTa
+pṛthak	2	0	0	1	0	1				0			7	0	30	m:f:n:9;f:9;ind:4;n:4;m:3	pfTak
+pṛś	1	0	1	0	0	0				0	475	unmatched	0	0	0		
+pṛṇ	3	0	1	1	0	1				0	473	matched	8	0	1	VERB:V:1	pfR
+pṛṣ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	pfz
+pṛṣu	1	0	0	1	0	0				0			76	0	0		pfzu
+pṝ	3	1	0	1	0	1	128909	III,IX,VI		1			128	0	1	VERB:V:1	pF
+r	1	0	0	1	0	0				0			1	0	0		r
+ra	2	0	0	1	0	1				0			1	0	14	n:5;m:4;NONE:2;f:1;m:f:n:1	ra
+rabh	4	1	1	1	0	1	174870	I		1	628	matched	39	0	1	VERB:V:1	raB
+rabhi	2	0	0	1	0	1				0			12	0	1	f:1	raBi
+rabi	1	0	0	1	0	0				0			16	0	0		rabi
+rac	4	1	1	1	0	1	173266	X		1	615	matched	10	0	1	VERB:V:1	rac
+raci	1	0	0	1	0	0				0			1	0	0		raci
+rad	4	1	1	1	0	1	174789	I		1	621	matched	17	0	1	VERB:V:1	rad
+radh	4	1	1	1	0	1	174809	IV		1	622	matched	78	0	1	VERB:V:1	raD
+raghuḥ	1	0	0	1	0	0				0			1	0	0		raGuH
+ragi	1	0	0	1	0	0				0			5	0	0		ragi
+rah	4	1	1	1	0	1	175925	I,X		1	634	matched	7	0	1	VERB:V:1	rah
+raha	2	0	0	1	0	1				0			35	0	4	m:f:n:2;m:1;f:1	raha
+rahi	1	0	0	1	0	0				0			3	0	0		rahi
+rai	2	0	0	1	0	1				0			9	0	4	VERB:V:1;m:1;m:f:1;ind:1	rE
+rain	1	0	0	0	1	0				0			0	1	0		
+raise	1	0	0	0	1	0				0			0	1	0		
+raj	2	0	1	0	0	1				0	616,617	unmatched	0	0	2	NONE:1;VERB:V:1	
+raka	2	0	0	1	0	1				0			10	0	1	m:1	raka
+rakha	1	0	0	1	0	0				0			1	0	0		raKa
+rakhi	1	0	0	1	0	0				0			3	0	0		raKi
+rakṣ	4	1	1	1	0	1	173050	I	1	1	613	matched	70	0	2	VERB:V:1;SEE:1	rakz
+rakṣatīti	1	0	0	1	0	0				0			1	0	0		rakzatIti
+rakṣaṇe	1	0	0	1	0	0				0			3	0	0		rakzaRe
+ram	4	1	1	1	0	1	174928	I		1	629	matched	261	0	1	VERB:V:1	ram
+ramb	3	0	1	1	0	1				0	630	unmatched	1	0	2	VERB:V:2	ramb
+rambh	3	0	1	1	0	1				0	631	unmatched	6	0	3	VERB:V:2;SEE:1	ramB
+ran	2	0	1	0	0	1				0	623,624	homonym_shared	0	0	3	VERB:V:1;SEE:1;NONE:1	
+ranj	1	0	0	1	0	0				0			1	0	0		ranj
+ranja	1	0	0	1	0	0				0			13	0	0		ranja
+rap	4	1	1	1	0	1	174860	I		1	625	matched	5	0	1	VERB:V:1	rap
+rapa	1	0	0	1	0	0				0			13	0	0		rapa
+raph	3	1	1	0	0	1	174867	I		1	627	unmatched	0	0	1	VERB:V:1	raP
+raphi	1	0	0	1	0	0				0			3	0	0		raPi
+rapś	4	1	1	1	0	1	174863			1	626	matched	5	0	1	VERB:V:1	rapS
+ras	4	1	1	1	0	1	175478,175485	I,X	1,2	2	633	matched	72	0	2	VERB:V:2	ras
+ratham	1	0	0	1	0	0				0			1	0	0		raTam
+rauḍṛ	1	0	0	1	0	0				0			6	0	0		rOqf
+rava	2	0	0	1	0	1				0			1	0	1	m:1	rava
+rave	2	0	0	1	1	0				0			1	1	0		rave
+ravi	2	0	0	1	0	1				0			2	0	65	m:41;n:14;f:4;m:f:n:2;m:n:2	ravi
+raya	2	0	0	1	0	1				0			1	0	4	m:3;m:f:n:1	raya
+rañch	2	0	1	0	0	1				0	618	unmatched	0	0	1	NONE:1	
+rañj	3	1	0	1	0	1	173342	I,IV		1			29	0	1	VERB:V:1	raYj
+raś	1	0	1	0	0	0				0	632	unmatched	0	0	0		
+raśa	1	0	0	1	0	0				0			32	0	0		raSa
+raṃh	3	1	1	0	0	1	173028	I,X		1	612	matched	0	0	1	VERB:V:1	raMh
+raṃj	1	0	0	1	0	0				0			2	0	0		raMj
+raṅg	3	0	1	1	0	1				0	614	unmatched	4	0	1	VERB:V:1	raNg
+raṇ	3	1	0	1	0	1	174075,174197	I,IV	1,2	2			25	0	3	VERB:V:3	raR
+raṇv	2	0	1	0	0	1				0	620	matched	0	0	1	VERB:V:1	
+raṭ	4	1	1	1	0	1	174063	I		1	619	matched	15	0	1	VERB:V:1	raw
+rdda	1	0	0	1	0	0				0			1	0	0		rdda
+reach	1	0	0	0	1	0				0			0	1	0		
+reach to	1	0	0	0	1	0				0			0	1	0		
+read	1	0	0	0	1	0				0			0	1	0		
+rebh	2	0	1	0	0	1				0	666	unmatched	0	0	2	VERB:V:1;NONE:1	
+rebha	2	0	0	1	0	1				0			2	0	3	m:2;m:f:n:1	reBa
+rebhṛ	1	0	0	1	0	0				0			25	0	0		reBf
+rej	4	1	1	1	0	1	179363	I	1	1	664	matched	3	0	3	VERB:V:1;m:f:n:1;m:1	rej
+rejoice	1	0	0	0	1	0				0			0	1	0		
+rejṛ	1	0	0	1	0	0				0			8	0	0		rejf
+rekṛ	1	0	0	1	0	0				0			2	0	0		rekf
+relaḷ	1	0	0	0	1	0				0			0	1	0		
+release	1	0	0	0	1	0				0			0	1	0		
+remember	1	0	0	0	1	0				0			0	1	0		
+remove	1	0	0	0	1	0				0			0	1	0		
+repeat	1	0	0	0	1	0				0			0	1	0		
+repel	1	0	0	0	1	0				0			0	1	0		
+reverence	1	0	0	0	1	0				0			0	1	0		
+revile	1	0	0	0	1	0				0			0	2	0		
+revṛ	1	0	0	1	0	0				0			25	0	0		revf
+reḍ	2	0	1	0	0	1				0	665	unmatched	0	0	1	VERB:V:1	
+reṛresh	1	0	0	0	1	0				0			0	1	0		
+reṣṛ	1	0	0	1	0	0				0			12	0	0		rezf
+reṭ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	rew
+rha	1	0	0	1	0	0				0			1	0	0		rha
+ri	3	0	1	1	0	1				0	641	homonym_shared	5	0	4	VERB:V:2;NONE:2	ri
+ribh	4	1	1	1	0	1	178103	I		1	647	matched	2	0	1	VERB:V:1	riB
+ric	4	1	1	1	0	1	177975	I,IV,VII,X		1	644	matched	52	0	1	VERB:V:1	ric
+riga	1	0	0	1	0	0				0			1	0	0		riga
+rigi	1	0	0	1	0	0				0			1	0	0		rigi
+rih	4	1	1	1	0	1	178173	II,VI		1	650	matched	7	0	1	VERB:V:1	rih
+rikh	4	1	1	1	0	1	177953	I,VI		1	642	unmatched	2	0	1	VERB:V:1	riK
+rikha	1	0	0	1	0	0				0			2	0	0		riKa
+rikhi	1	0	0	1	0	0				0			4	0	0		riKi
+ring	1	0	0	0	1	0				0			0	1	0		
+rinse	1	0	0	0	1	0				0			0	1	0		
+rip	4	1	1	1	0	1	178040		1	1	645	matched	4	0	2	VERB:V:1;f:1	rip
+ripau	1	0	0	1	0	0				0			1	0	0		ripO
+riph	4	1	1	1	0	1	178088	VI		1	646	matched	3	0	1	VERB:V:1	riP
+ripha	1	0	0	1	0	0				0			29	0	0		riPa
+rise against	1	0	0	0	1	0				0			0	1	0		
+riti	1	0	0	1	0	0				0			1	0	0		riti
+rivi	1	0	0	1	0	0				0			2	0	0		rivi
+riñkh	1	0	1	0	0	0				0	643	unmatched	0	0	0		
+riś	4	1	1	1	0	1	178131	VI		1	648	matched	2	0	1	VERB:V:1	riS
+riśa	2	0	0	1	0	1				0			8	0	2	m:f:n:1;m:1	riSa
+riṅg	3	1	0	1	0	1	177968	I		1			1	0	1	VERB:V:1	riNg
+riṅkh	3	1	0	1	0	1	177954	I		1			1	0	1	VERB:V:1	riNK
+riṣ	4	1	1	1	0	1	178139	I,IV	1	1	649	matched	12	0	2	VERB:V:1;f:1	riz
+riṣa	2	0	0	1	0	1				0			58	0	1	NONE:1	riza
+rmmakatvāt	1	0	0	1	0	0				0			1	0	0		rmmakatvAt
+roam	1	0	0	0	1	0				0			0	1	0		
+roar	1	0	0	0	1	0				0			0	6	0		
+roast	1	0	0	0	1	0				0			0	1	0		
+rob	1	0	0	0	1	0				0			0	1	0		
+rock	1	0	0	0	1	0				0			0	1	0		
+roge	1	0	0	1	0	0				0			1	0	0		roge
+roll	1	0	0	0	1	0				0			0	1	0		
+roḍṛ	1	0	0	1	0	0				0			2	0	0		roqf
+ru	4	1	1	1	0	1	178213,178231	I,II	1,3	2	652,653	homonym_shared	108	0	4	VERB:V:2;m:2	ru
+rub	1	0	0	0	1	0				0			0	1	0		
+rub, crush	1	0	0	0	1	0				0			0	1	0		
+ruc	4	1	1	1	0	1	178244	I	1	1	654	matched	136	0	2	VERB:V:1;f:1	ruc
+rud	4	1	1	1	0	1	178506	II	1	1	657	matched	17	0	3	VERB:V:1;m:f:n:1;f:1	rud
+rudh	4	1	1	1	0	1	178751,178755	I,VII	1,2	2	658,659	homonym_shared	96	0	4	VERB:V:2;SEE:1;NONE:1	ruD
+rudir	1	0	0	1	0	0				0			37	0	0		rudir
+ruh	4	1	1	1	0	1	178960	I	1	1	662	matched	251	0	2	VERB:V:1;f:1	ruh
+ruj	4	1	1	1	0	1	178446	VI,X	1	1	655	matched	25	0	2	VERB:V:1;NONE:1	ruj
+rule	1	0	0	0	1	0				0			0	1	0		
+rumble	1	0	0	0	1	0				0			0	2	0		
+run	1	0	0	0	1	0				0			0	5	0		
+rup	4	1	1	1	0	1	178856	IV	1	1	660	matched	1	0	2	VERB:V:1;f:1	rup
+rupa	2	0	0	1	0	1				0			5	0	1	m:1	rupa
+rush	1	0	0	0	1	0				0			0	1	0		
+rush, push	1	0	0	0	1	0				0			0	1	0		
+rustle	1	0	0	0	1	0				0			0	1	0		
+ruś	2	1	0	0	0	1	178902	VI		1			0	0	1	VERB:V:1	ruS
+ruśa	1	0	0	1	0	0				0			1	0	0		ruSa
+ruṣ	4	1	1	1	0	1	178916	I,IV,X	1	1	661	matched	7	0	2	VERB:V:1;f:1	ruz
+ruṣa	1	0	0	1	0	0				0			41	0	0		ruza
+ruṭa	1	0	0	1	0	0				0			18	0	0		ruwa
+ruṭh	3	1	1	0	0	1	178489	I		1	656	unmatched	0	0	1	VERB:V:1	ruW
+ruṭha	1	0	0	1	0	0				0			7	0	0		ruWa
+ruṭi	1	0	0	1	0	0				0			1	0	0		ruwi
+rā	4	1	1	1	0	1	176008	II	1	1	635,636	homonym_shared	96	0	5	f:2;VERB:V:1;NONE:1;SEE:1	rA
+rādh	4	1	1	1	0	1	177153	IV,V		1	638	matched	99	0	1	VERB:V:1	rAD
+rāghṛ	1	0	0	1	0	0				0			7	0	0		rAGf
+rāj	4	1	1	1	0	1	176246	I	1	1	637	matched	30	0	4	VERB:V:1;m:f:n:1;m:1;f:1	rAj
+rājṛ	1	0	0	1	0	0				0			26	0	0		rAjf
+rākhṛ	1	0	0	1	0	0				0			3	0	0		rAKf
+rās	4	1	1	1	0	1	177844	I	1	1	639,640	unmatched	1	0	3	VERB:V:2;SEE:1	rAs
+rāsṛ	1	0	0	1	0	0				0			4	0	0		rAsf
+rāśī	2	0	0	1	0	1				0			4	0	6	m:f:n:3;n:2;ICF:rASi:1	rASI
+rī	4	1	1	1	0	1	178179	IV,IX	1	1	651	homonym_shared	45	0	4	f:2;VERB:V:1;NONE:1	rI
+rīṅ	1	0	0	1	0	0				0			21	0	0		rIN
+rūkṣ	2	0	0	1	0	1				0			6	0	1	VERB:V:1	rUkz
+rūp	2	0	0	1	0	1				0			29	0	1	VERB:V:1	rUp
+rūṣ	4	1	1	1	0	1	179276	I,X		1	663	unmatched	3	0	1	VERB:V:1	rUz
+rūṣa	2	0	0	1	0	1				0			4	0	2	m:1;m:f#A:n:1	rUza
+sabhāj	2	0	0	1	0	1				0			8	0	1	VERB:V:1	saBAj
+sac	4	1	1	1	0	1	228852	I	1	1	828	matched	24	0	25	n:8;m:f:n:5;f:4;m:4;VERB:V:2	sac
+sacriṛice	1	0	0	0	1	0				0			0	1	0		
+sad	4	1	1	1	0	1	230505	I,VI	2	1	830	matched	107	0	169	m:57;m:f:n:38;n:27;f:27;NONE:5	sad
+sagh	3	0	1	1	0	1				0	827	matched	1	0	1	VERB:V:1	saG
+sah	4	1	1	1	0	1	239967	I,X	1	1	836	matched	70	0	3	VERB:V:2;m:f:n:1	sah
+saj	2	0	1	0	0	1				0	829	unmatched	0	0	18	m:f:n:5;f:3;m:3;SEE:2;n:2	
+sajñāyāṃ	1	0	0	1	0	0				0			1	0	0		sajYAyAM
+sakala	1	0	0	1	0	0				0			6	0	0		sakala
+sakṣ	2	0	1	0	0	1				0	826	unmatched	0	0	1	VERB:V:1	
+sal	2	0	0	1	0	1				0			1	0	4	VERB:V:1;n:1;NONE:1;m:1	sal
+salopaḥ	1	0	0	1	0	0				0			1	0	0		salopaH
+sam	2	0	0	1	0	1				0			15	0	1581	m:f:n:633;m:359;n:227;f:167;SEE:61	sam
+samaya	2	0	0	1	0	1				0			2	0	3	VERB:V:1;m:f:n:1;m:1	samaya
+sambhavaḥ	1	0	0	1	0	0				0			1	0	0		samBavaH
+samucchrāye	1	0	0	1	0	0				0			1	0	0		samucCrAye
+samāptau	1	0	0	1	0	0				0			1	0	0		samAptO
+samāśrite	1	0	0	1	0	0				0			1	0	0		samASrite
+samī	2	0	0	1	0	1				0			7	0	10	m:2;m:f:n:2;f:2;SEE:2;ICF:sama:1	samI
+san	4	1	1	1	0	1	231023	I,VIII	1	1	831	matched	30	0	34	m:8;n:6;m:f:n:5;NONE:5;SEE:3	san
+sanja	1	0	0	1	0	0				0			1	0	0		sanja
+sap	4	1	1	1	0	1	232210	I	1	1	832	matched	4	0	2	VERB:V:1;SEE:1	sap
+sarj	3	0	1	1	0	1				0	833	matched	30	0	2	VERB:V:2	sarj
+sarvva	1	0	0	1	0	0				0			1	0	0		sarvva
+sas	3	1	1	0	0	1	239787	II		1	835	matched	0	0	1	VERB:V:1	sas
+saurabhye	1	0	0	1	0	0				0			1	0	0		sOraBye
+say	2	0	0	0	1	1				0			0	2	1	VERB:V:1	
+sañj	3	1	0	1	0	1	229218	I	2	1			50	0	2	VERB:V:2	saYj
+saśc	3	0	1	1	0	1				0	834	unmatched	2	0	1	VERB:V:1	saSc
+saśca	1	0	0	1	0	0				0			7	0	0		saSca
+saṃbhaktau	1	0	0	1	0	0				0			1	0	0		saMBaktO
+saṃdarbhe	1	0	0	1	0	0				0			1	0	0		saMdarBe
+saṃjñāyām	1	0	0	1	0	0				0			1	0	0		saMjYAyAm
+saṃjñāyāṃ	1	0	0	1	0	0				0			12	0	0		saMjYAyAM
+saṃstyāne	1	0	0	1	0	0				0			2	0	0		saMstyAne
+saṃvaraṇe	1	0	0	1	0	0				0			2	0	0		saMvaraRe
+saṃvṛtau	1	0	0	1	0	0				0			2	0	0		saMvftO
+saṅgrāma	1	0	0	1	0	0				0			32	0	0		saNgrAma
+saṅketa	1	0	0	1	0	0				0			1	0	0		saNketa
+saṅkhyāne	1	0	0	1	0	0				0			1	0	0		saNKyAne
+saṅkocane	1	0	0	1	0	0				0			1	0	0		saNkocane
+scale	1	0	0	0	1	0				0			0	1	0		
+scatter	1	0	0	0	1	0				0			0	3	0		
+scatter (?)	1	0	0	0	1	0				0			0	1	0		
+scratch	1	0	0	0	1	0				0			0	3	0		
+see	1	0	0	0	1	0				0			0	3	0		
+see, consider	1	0	0	0	1	0				0			0	1	0		
+seek aid	1	0	0	0	1	0				0			0	1	0		
+seek, desire	1	0	0	0	1	0				0			0	1	0		
+seem, please	1	0	0	0	1	0				0			0	1	0		
+seiṣe	1	0	0	0	1	0				0			0	1	0		
+sek	2	0	0	1	0	1				0			2	0	1	VERB:V:1	sek
+sekṛ	1	0	0	1	0	0				0			1	0	0		sekf
+selṛ	1	0	0	1	0	0				0			7	0	0		self
+send	1	0	0	0	1	0				0			0	2	0		
+send ṛorth	1	0	0	0	1	0				0			0	1	0		
+separate	1	0	0	0	1	0				0			0	1	0		
+serve	1	0	0	0	1	0				0			0	1	0		
+set	1	0	0	0	1	0				0			0	1	0		
+set in motion ?	1	0	0	0	1	0				0			0	1	0		
+sev	4	1	1	1	0	1	252262	I		1	856	matched	33	0	1	VERB:V:1	sev
+shake	1	0	0	0	1	0				0			0	3	0		
+share	1	0	0	0	1	0				0			0	1	0		
+shear	1	0	0	0	1	0				0			0	1	0		
+shine	1	0	0	0	1	0				0			0	11	0		
+shorten	1	0	0	0	1	0				0			0	1	0		
+shrink	1	0	0	0	1	0				0			0	1	0		
+shrink, curl	1	0	0	0	1	0				0			0	1	0		
+si	4	1	1	1	0	1	243722	IX,V	1	1	840	matched	14	0	4	VERB:V:1;SEE:1;ind:1;f:1	si
+sic	4	1	1	1	0	1	244032	VI	1	1	841	matched	71	0	3	f:2;VERB:V:1	sic
+sidh	4	1	1	1	0	1	244298,244301	I,IV	2,3	2	842,843	homonym_shared	39	0	3	VERB:V:3	siD
+sing	1	0	0	0	1	0				0			0	5	0		
+sink	1	0	0	0	1	0				0			0	2	0		
+sip	1	0	0	0	1	0				0			0	1	0		
+sit	1	0	0	0	1	0				0			0	2	0		
+siv	3	1	0	1	0	1	244996	IV		1			22	0	1	VERB:V:1	siv
+siṛt	1	0	0	0	1	0				0			0	1	0		
+skabh	2	0	0	1	0	1				0			3	0	1	VERB:V:1	skaB
+skambh	4	1	1	1	0	1	254241	I,IX,V		1	858	matched	9	0	1	VERB:V:1	skamB
+skanbhuḥ	1	0	0	1	0	0				0			50	0	0		skanBuH
+skand	4	1	1	1	0	1	254077	I		1	857	matched	39	0	1	VERB:V:1	skand
+skhad	2	0	0	1	0	1				0			1	0	1	VERB:V:1	sKad
+skhada	1	0	0	1	0	0				0			43	0	0		sKada
+skhal	4	1	1	1	0	1	254272	I		1	861	matched	14	0	1	VERB:V:1	sKal
+sku	4	1	1	1	0	1	254257	IX,V		1	859	matched	6	0	1	VERB:V:1	sku
+skudi	1	0	0	1	0	0				0			10	0	0		skudi
+skumbh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	skumB
+skund	2	0	0	1	0	1				0			1	0	1	VERB:V:1	skund
+skṛ	2	0	1	0	0	1				0	860	unmatched	0	0	1	NONE:1	
+slay	1	0	0	0	1	0				0			0	1	0		
+sleep	1	0	0	0	1	0				0			0	2	0		
+smear	1	0	0	0	1	0				0			0	3	0		
+smell	1	0	0	0	1	0				0			0	1	0		
+smi	4	1	1	1	0	1	257075	I		1	893	matched	19	0	1	VERB:V:1	smi
+smite	1	0	0	0	1	0				0			0	1	0		
+smiṭa	1	0	0	1	0	0				0			7	0	0		smiwa
+smother (?)	1	0	0	0	1	0				0			0	1	0		
+smīla	1	0	0	1	0	0				0			3	0	0		smIla
+smṛ	4	1	1	1	0	1	257112	I	2	1	894	matched	32	0	2	NONE:1;VERB:V:1	smf
+snarl	1	0	0	0	1	0				0			0	1	0		
+sneeṣe	1	0	0	0	1	0				0			0	1	0		
+snih	4	1	1	1	0	1	256298	I,IV,X	1	1	876	matched	7	0	3	VERB:V:1;f:1;m:f:n:1	snih
+snort	1	0	0	0	1	0				0			0	1	0		
+snu	4	1	1	1	0	1	256456	II	1	1	877	matched	9	0	5	VERB:V:1;SEE:1;m:n:1;f:1;NONE:1	snu
+snā	4	1	1	1	0	1	256200	II,IV	1	1	875	matched	34	0	2	VERB:V:1;m:f:n:1	snA
+so	3	1	0	1	0	1	252524	IV	1	1			25	0	2	VERB:V:1;f:1	so
+sob	1	0	0	0	1	0				0			0	1	0		
+sound	1	0	0	0	1	0				0			0	8	0		
+spadi	1	0	0	1	0	0				0			5	0	0		spadi
+spand	4	1	1	1	0	1	256488	I		1	878	matched	15	0	1	VERB:V:1	spand
+sparddha	1	0	0	1	0	0				0			1	0	0		spardDa
+spardh	3	1	0	1	0	1	256521	I		1			12	0	1	VERB:V:1	sparD
+spardha	2	0	0	1	0	1				0			18	0	2	m:f:n:1;f:1	sparDa
+sparś	2	0	0	1	0	1				0			16	0	1	VERB:V:1	sparS
+spaś	4	1	1	1	0	1	256550		1	1	879	unmatched	4	0	4	VERB:V:3;m:1	spaS
+spaśa	2	0	0	1	0	1				0			45	0	1	m:1	spaSa
+speak	1	0	0	0	1	0				0			0	5	0		
+speak barbarously	1	0	0	0	1	0				0			0	1	0		
+sphal	3	0	1	1	0	1				0	887	unmatched	11	0	1	VERB:V:1	sPal
+sphala	1	0	0	1	0	0				0			4	0	0		sPala
+sphar	3	0	1	1	0	1				0	886	matched	7	0	1	VERB:V:1	sPar
+sphara	2	0	0	1	0	1				0			2	0	1	m:1	sPara
+sphaṭ	3	0	1	1	0	1				0	885	unmatched	1	0	1	VERB:V:1	sPaw
+sphiṭa	1	0	0	1	0	0				0			6	0	0		sPiwa
+sphiṭṭa	1	0	0	1	0	0				0			2	0	0		sPiwwa
+sphoṭane	1	0	0	1	0	0				0			1	0	0		sPowane
+sphul	3	1	0	1	0	1	257015	VI		1			14	0	1	VERB:V:1	sPul
+sphur	4	1	1	1	0	1	256968	VI	1	1	890	matched	33	0	2	VERB:V:1;NONE:1	sPur
+sphurchā	1	0	0	1	0	0				0			4	0	0		sPurCA
+sphurj	2	0	0	1	0	1				0			2	0	1	VERB:V:1	sPurj
+sphuḍa	1	0	0	1	0	0				0			2	0	0		sPuqa
+sphuḍi	1	0	0	1	0	0				0			9	0	0		sPuqi
+sphuṭ	4	1	1	1	0	1	256860	I,VI		1	889	matched	34	0	1	VERB:V:1	sPuw
+sphuṭir	1	0	0	1	0	0				0			2	0	0		sPuwir
+sphā	1	0	1	0	0	0				0	888	unmatched	0	0	0		
+sphāy	3	1	0	1	0	1	256812	I		1			10	0	1	VERB:V:1	sPAy
+sphāyī	1	0	0	1	0	0				0			30	0	0		sPAyI
+sphūrj	3	0	1	1	0	1				0	891	matched	4	0	1	VERB:V:1	sPUrj
+sphūrjā	2	0	0	1	0	1				0			29	0	1	m:f:n:1	sPUrjA
+sphṛ	1	0	1	0	0	0				0	892	unmatched	0	0	0		
+spin	1	0	0	0	1	0				0			0	1	0		
+split	1	0	0	0	1	0				0			0	3	0		
+split, bore	1	0	0	0	1	0				0			0	1	0		
+spoil	1	0	0	0	1	0				0			0	1	0		
+sport	1	0	0	0	1	0				0			0	2	0		
+spread	1	0	0	0	1	0				0			0	1	0		
+spring	1	0	0	0	1	0				0			0	2	0		
+sprinkle	1	0	0	0	1	0				0			0	3	0		
+spue, eject	1	0	0	0	1	0				0			0	1	0		
+spūrdh	2	0	1	0	0	1				0	880	unmatched	0	0	1	NONE:1	
+spṛ	4	1	1	1	0	1	256588	V	1	1	881	matched	10	0	2	VERB:V:1;NONE:1	spf
+spṛdh	2	0	1	0	0	1				0	882	matched	0	0	6	m:2;VERB:V:1;f:1;m:f:n:1;SEE:1	
+spṛh	4	1	1	1	0	1	256712	X	1	1	884	matched	1	0	2	VERB:V:1;SEE:1	spfh
+spṛha	1	0	0	1	0	0				0			11	0	0		spfha
+spṛś	4	1	1	1	0	1	256602	VI	1	1	883	matched	43	0	3	VERB:V:1;m:f:n:1;f:1	spfS
+spṛśyate	1	0	0	1	0	0				0			1	0	0		spfSyate
+sraki	1	0	0	1	0	0				0			3	0	0		sraki
+srambh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	sramB
+sranbhu	1	0	0	1	0	0				0			11	0	0		sranBu
+sraṃs	4	1	1	1	0	1	257528	I	1	1	896	matched	22	0	2	VERB:V:1;NONE:1	sraMs
+sraṃsu	1	0	0	1	0	0				0			14	0	0		sraMsu
+srekṛ	1	0	0	1	0	0				0			1	0	0		srekf
+sridh	2	0	1	0	0	1				0	897	matched	0	0	2	VERB:V:1;f:1	
+sriv	2	1	0	0	0	1	257618	IV		1			0	0	1	VERB:V:1	sriv
+srivu	1	0	0	1	0	0				0			9	0	0		srivu
+sru	4	1	1	1	0	1	257621	I		1	899	matched	86	0	1	VERB:V:1	sru
+sruh	2	0	0	1	0	1				0			1	0	1	NONE:1	sruh
+srīv	2	0	1	0	0	1				0	898	unmatched	0	0	1	VERB:V:1	
+stagger	1	0	0	0	1	0				0			0	3	0		
+staka	1	0	0	1	0	0				0			4	0	0		staka
+stambh	4	1	1	1	0	1	254463	I,IX,V		1	863	matched	32	0	1	VERB:V:1	stamB
+stambhe	1	0	0	1	0	0				0			1	0	0		stamBe
+stammer	1	0	0	0	1	0				0			0	1	0		
+stan	4	1	1	1	0	1	254307	I		1	862	matched	30	0	1	VERB:V:1	stan
+stanbha	1	0	0	1	0	0				0			1	0	0		stanBa
+stanbhu	1	0	0	1	0	0				0			43	0	0		stanBu
+stand	1	0	0	0	1	0				0			0	1	0		
+start (?)	1	0	0	0	1	0				0			0	1	0		
+stavane	1	0	0	1	0	0				0			1	0	0		stavane
+steal	1	0	0	0	1	0				0			0	2	0		
+sten	2	0	0	1	0	1				0			12	0	1	VERB:V:1	sten
+sthag	4	1	1	1	0	1	255154	I		1	873	unmatched	1	0	1	VERB:V:1	sTag
+sthal	2	0	0	1	0	1				0			6	0	1	VERB:V:1	sTal
+sthuḍa	1	0	0	1	0	0				0			2	0	0		sTuqa
+sthā	4	1	1	1	0	1	255316	I	1	1	874	matched	184	0	3	VERB:V:1;m:f:n:1;NONE:1	sTA
+sthāpi	1	0	0	1	0	0				0			1	0	0		sTApi
+sthū	2	0	0	1	0	1				0			4	0	1	NONE:1	sTU
+sthūl	2	0	0	1	0	1				0			15	0	1	VERB:V:1	sTUl
+stigh	4	1	1	1	0	1	254590	V		1	865	matched	2	0	1	VERB:V:1	stiG
+stim	3	0	1	1	0	1				0	866	unmatched	3	0	1	VERB:V:1	stim
+stink	1	0	0	0	1	0				0			0	2	0		
+stir	1	0	0	0	1	0				0			0	4	0		
+stir up	1	0	0	0	1	0				0			0	2	0		
+stir, dissolve	1	0	0	0	1	0				0			0	1	0		
+stom	2	0	0	1	0	1				0			8	0	1	NONE:1	stom
+straighten (?)	1	0	0	0	1	0				0			0	1	0		
+stretch	1	0	0	0	1	0				0			0	3	0		
+stretch (?)	1	0	0	0	1	0				0			0	1	0		
+streṭ	1	0	0	0	1	0				0			0	3	0		
+stride	1	0	0	0	1	0				0			0	2	0		
+strike	1	0	0	0	1	0				0			0	1	0		
+striyāṃ	1	0	0	1	0	0				0			2	0	0		striyAM
+stroke	1	0	0	0	1	0				0			0	2	0		
+strī	2	0	0	1	0	1				0			11	0	193	m:66;m:f:n:49;n:47;f:25;m:f#A:n:2	strI
+stu	4	1	1	1	0	1	254632	II	1	1	867,868	homonym_shared	46	0	4	NONE:2;VERB:V:1;SEE:1	stu
+stubh	4	1	1	1	0	1	254799	I	1	1	869	matched	13	0	4	VERB:V:1;m:f:n:1;f:1;m:1	stuB
+studhātor	1	0	0	1	0	0				0			1	0	0		stuDAtor
+stumble	1	0	0	0	1	0				0			0	2	0		
+styai	2	0	0	1	0	1				0			15	0	1	VERB:V:1	styE
+styā	1	0	1	0	0	0				0	872	unmatched	0	0	0		
+styāne	1	0	0	1	0	0				0			1	0	0		styAne
+stā	1	0	1	0	0	0				0	864	unmatched	0	0	0		
+stīm	2	0	0	1	0	1				0			1	0	2	VERB:V:2	stIm
+stūp	2	0	0	1	0	1				0			8	0	1	VERB:V:1	stUp
+stṛ	4	1	1	1	0	1	254842	IX,V	1	1	870	matched	26	0	3	VERB:V:1;m:1;SEE:1	stf
+stṛh	2	0	1	0	0	1				0	871	matched	0	0	1	VERB:V:1	
+stṛhū	1	0	0	1	0	0				0			2	0	0		stfhU
+stṛkṣa	1	0	0	1	0	0				0			4	0	0		stfkza
+stṛtau	1	0	0	1	0	0				0			1	0	0		stftO
+stṝñ	1	0	0	1	0	0				0			40	0	0		stFY
+su	4	1	1	1	0	1	245241	V	3	1	846	matched	47	0	3290	m:f:n:1102;m:851;f:531;n:338;m:f#A:n:215	su
+subh	2	0	1	0	0	1				0	848	matched	0	0	1	VERB:V:1	
+submerge	1	0	0	0	1	0				0			0	1	0		
+succeed	1	0	0	0	1	0				0			0	3	0		
+suck	1	0	0	0	1	0				0			0	1	0		
+suck in	1	0	0	0	1	0				0			0	1	0		
+suh	2	1	0	0	0	1	250630	IV		1			0	0	1	VERB:V:1	suh
+sukh	2	0	0	1	0	1				0			23	0	1	VERB:V:1	suK
+sukhe	2	0	0	1	0	1				0			1	0	1	m:f:n:1	suKe
+sul	2	0	1	0	0	1				0	847	unmatched	0	0	1	NONE:1	
+sur	2	0	0	1	0	1				0			2	0	1	VERB:V:1	sur
+suṭṭa	1	0	0	1	0	0				0			10	0	0		suwwa
+svad	4	1	1	1	0	1	258787	I		1	901	matched	22	0	1	VERB:V:1	svad
+svadhā	2	0	0	1	0	1				0			2	0	1	f:1	svaDA
+svaj	4	1	1	1	0	1	258776	I		1	900	matched	1	0	1	VERB:V:1	svaj
+svan	4	1	1	1	0	1	258909	I	1	1	902	matched	52	0	2	VERB:V:1;SEE:1	svan
+svap	4	1	1	1	0	1	258948	II	1	1	903	matched	21	0	1	VERB:V:1	svap
+svar	3	0	1	1	0	1				0	904	matched	22	0	78	m:f:n:25;m:19;f:17;n:9;SEE:4	svar
+svarta	1	0	0	1	0	0				0			5	0	0		svarta
+svid	4	1	1	1	0	1	259802	I	2	1	906	matched	15	0	3	ind:1;VERB:V:1;NONE:1	svid
+svād	2	0	1	0	0	1				0	905	matched	0	0	1	VERB:V:1	
+svāda	2	0	0	1	0	1				0			5	0	2	m:1;SEE:1	svAda
+svṛ	3	1	0	1	0	1	259868	I		1			25	0	1	VERB:V:1	svf
+syala	1	0	0	1	0	0				0			2	0	0		syala
+syama	1	0	0	1	0	0				0			4	0	0		syama
+syamu	1	0	0	1	0	0				0			6	0	0		syamu
+syand	4	1	1	1	0	1	257403	I		1	895	matched	44	0	1	VERB:V:1	syand
+syandū	1	0	0	1	0	0				0			45	0	0		syandU
+syaṃd	1	0	0	1	0	0				0			1	0	0		syaMd
+syūtau	1	0	0	1	0	0				0			2	0	0		syUtO
+sā	3	0	1	1	0	1				0	837,838	homonym_shared	15	0	5	f:3;NONE:2	sA
+sādh	4	1	1	1	0	1	241500	I,IV,V	1	1	839	matched	46	0	2	VERB:V:1;SEE:1	sAD
+sādhi	1	0	0	1	0	0				0			1	0	0		sADi
+sāma	2	0	0	1	0	1				0			5	0	108	m:36;n:30;m:f:n:21;f:12;ind:3	sAma
+sāmb	2	0	0	1	0	1				0			5	0	1	VERB:V:1	sAmb
+sāntv	3	1	0	1	0	1	241986	X		1			3	0	1	VERB:V:1	sAntv
+sāra	2	0	0	1	0	1				0			12	0	97	f:26;m:25;m:f:n:20;n:16;m:f#A:n:3	sAra
+sāt	2	0	0	1	0	1				0			5	0	4	n:2;SEE:1;NONE:1	sAt
+sātatye	1	0	0	1	0	0				0			1	0	0		sAtatye
+sātiḥ	1	0	0	1	0	0				0			13	0	0		sAtiH
+sī	3	0	1	1	0	1				0	844	unmatched	1	0	2	NONE:2	sI
+sīkṛ	1	0	0	1	0	0				0			5	0	0		sIkf
+sīv	1	0	1	0	0	0				0	845	matched	0	0	0		
+sū	4	1	1	1	0	1	250729,250739	II,VI	1,2	2	849	matched	40	0	38	f:10;m:9;m:f:n:6;n:5;VERB:V:2	sU
+sūc	2	0	0	1	0	1				0			22	0	1	VERB:V:1	sUc
+sūd	4	1	1	1	0	1	251301	I,X	1	1	850	matched	24	0	2	VERB:V:1;SEE:1	sUd
+sūra	2	0	0	1	0	1				0			1	0	15	m:13;m:f:n:2	sUra
+sūrkṣ	3	0	1	1	0	1				0	851	matched	1	0	1	VERB:V:1	sUrkz
+sūrkṣa	1	0	0	1	0	0				0			17	0	0		sUrkza
+sūrkṣya	2	0	0	1	0	1				0			2	0	2	m:f:n:1;m:1	sUrkzya
+sūtr	2	0	0	1	0	1				0			13	0	1	VERB:V:1	sUtr
+sūtreṇa	1	0	0	1	0	0				0			1	0	0		sUtreRa
+sṛ	4	1	1	1	0	1	251838	I,III,X		1	852	matched	222	0	1	VERB:V:1	sf
+sṛj	4	1	1	1	0	1	251924	VI	1	1	854	matched	106	0	2	VERB:V:1;NONE:1	sfj
+sṛk	2	0	1	0	0	1				0	853	unmatched	0	0	1	NONE:1	
+sṛnbhu	1	0	0	1	0	0				0			9	0	0		sfnBu
+sṛp	4	1	1	1	0	1	252008	I		1	855	matched	50	0	1	VERB:V:1	sfp
+sṝ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	sF
+sṭalloṭ	1	0	0	0	1	0				0			0	1	0		
+sṭeat	1	0	0	0	1	0				0			0	1	0		
+sṭeep	1	0	0	0	1	0				0			0	1	0		
+sṭeeten	1	0	0	0	1	0				0			0	1	0		
+sṭell	1	0	0	0	1	0				0			0	1	0		
+sṭell, ṛatten	1	0	0	0	1	0				0			0	1	0		
+sṭing	1	0	0	0	1	0				0			0	1	0		
+ta	2	0	0	1	0	1				0			5	0	14	m:3;n:2;SEE:2;NONE:1;f:1	ta
+tacchīlārthe	1	0	0	1	0	0				0			1	0	0		tacCIlArTe
+tad	2	0	0	1	0	1				0			8	0	113	m:f:n:51;ind:15;n:15;m:10;NONE:7	tad
+tagi	1	0	0	1	0	0				0			1	0	0		tagi
+tak	3	0	1	1	0	1				0	288	matched	8	0	1	VERB:V:1	tak
+taka	2	0	0	1	0	1				0			5	0	1	m:f:n:1	taka
+take	1	0	0	0	1	0				0			0	2	0		
+take hold	1	0	0	0	1	0				0			0	1	0		
+take pleasure	1	0	0	0	1	0				0			0	2	0		
+taki	1	0	0	1	0	0				0			3	0	0		taki
+takṣ	4	1	1	1	0	1	81602	I,II,V	1	1	289	matched	55	0	2	VERB:V:1;SEE:1	takz
+takṣū	1	0	0	1	0	0				0			26	0	0		takzU
+tal	2	0	0	1	0	1				0			9	0	3	n:1;VERB:V:1;SEE:1	tal
+tam	4	1	1	1	0	1	82867	IV		1	297	matched	17	0	1	VERB:V:1	tam
+tamu	1	0	0	1	0	0				0			68	0	0		tamu
+tan	4	1	1	1	0	1	82220,82226	IV,VIII	2,3	2	293,294	homonym_shared	75	0	31	m:f:n:9;n:6;m:4;VERB:V:3;SEE:3	tan
+tancu	1	0	0	1	0	0				0			12	0	0		tancu
+tancū	1	0	0	1	0	0				0			58	0	0		tancU
+tand	2	0	1	0	0	1				0	295	matched	0	0	1	VERB:V:1	
+tandr	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tandr
+tanu	2	0	0	1	0	1				0			133	0	62	m:21;n:13;m:f:n:11;f:10;m:f#A:n:3	tanu
+tanū	2	0	0	1	0	1				0			5	0	37	m:12;m:f:n:11;n:6;f:3;NONE:2	tanU
+tanūkaraṇe	1	0	0	1	0	0				0			1	0	0		tanUkaraRe
+tap	4	1	1	1	0	1	82608	I,IV	2	1	296	matched	242	0	3	VERB:V:2;m:f:n:1	tap
+tapasya	2	0	0	1	0	1				0			1	0	4	VERB:N:1;m:f#A:n:1;m:1;n:1	tapasya
+tarateḥ	1	0	0	1	0	0				0			1	0	0		tarateH
+tard	2	0	0	1	0	1				0			9	0	1	VERB:V:1	tard
+tarj	4	1	1	1	0	1	83427	I		1	299	matched	25	0	1	VERB:V:1	tarj
+tarjja	1	0	0	1	0	0				0			1	0	0		tarjja
+tark	4	1	1	1	0	1	83341	X		1	298	unmatched	19	0	1	VERB:V:1	tark
+tas	2	0	1	0	0	1				0	300	matched	0	0	2	VERB:V:1;m:f:n:1	
+tasi	1	0	0	1	0	0				0			8	0	0		tasi
+tasu	1	0	0	1	0	0				0			2	0	0		tasu
+tathātvam	1	0	0	1	0	0				0			2	0	0		taTAtvam
+tato	2	0	0	1	0	1				0			12	0	4	m:f:n:2;ICF:tatas:1;m:1	tato
+tatra	2	0	0	1	0	1				0			1	0	10	m:f:n:5;m:3;ind:1;f:1	tatra
+tatri	1	0	0	1	0	0				0			40	0	0		tatri
+tañc	3	0	1	1	0	1				0	290	matched	4	0	2	VERB:V:2	taYc
+taḍ	4	1	1	1	0	1	81685	X		1	292	matched	26	0	2	VERB:V:1;ind:1	taq
+taḍi	2	0	0	1	0	1				0			12	0	2	NONE:1;SEE:1	taqi
+taṃk	1	0	0	1	0	0				0			1	0	0		taMk
+taṃs	3	0	1	1	0	1				0	287	matched	8	0	1	VERB:V:1	taMs
+taṅk	2	0	0	1	0	1				0			2	0	1	VERB:V:1	taNk
+taṅkane	1	0	0	1	0	0				0			1	0	0		taNkane
+taṭ	3	0	1	1	0	1				0	291	matched	4	0	1	VERB:V:1	taw
+taṭastha	1	0	0	1	0	0				0			2	0	0		tawasTa
+tear	1	0	0	0	1	0				0			0	7	0		
+teja	2	0	0	1	0	1				0			1	0	7	m:4;NONE:3	teja
+tepṛ	1	0	0	1	0	0				0			12	0	0		tepf
+tevṛ	1	0	0	1	0	0				0			2	0	0		tevf
+thicken, (?)	1	0	0	0	1	0				0			0	1	0		
+think	1	0	0	0	1	0				0			0	4	0		
+threaten	1	0	0	0	1	0				0			0	1	0		
+thrive	1	0	0	0	1	0				0			0	3	0		
+throṭ	1	0	0	0	1	0				0			0	2	0		
+thunder	1	0	0	0	1	0				0			0	1	0		
+thurvī	1	0	0	1	0	0				0			2	0	0		TurvI
+thuḍ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Tuq
+thuṣa	1	0	0	1	0	0				0			1	0	0		Tuza
+ti	2	0	1	0	0	1				0	304	unmatched	0	0	1	NONE:1	
+tie	1	0	0	0	1	0				0			0	2	0		
+tig	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tig
+tij	4	1	1	1	0	1	84753	I		1	305	matched	117	0	1	VERB:V:1	tij
+tik	2	0	0	1	0	1				0			3	0	1	VERB:V:1	tik
+tikṛ	1	0	0	1	0	0				0			6	0	0		tikf
+til	3	0	1	1	0	1				0	308	unmatched	17	0	2	VERB:V:2	til
+tilla	1	0	0	1	0	0				0			1	0	0		tilla
+tim	3	0	1	1	0	1				0	306	matched	12	0	1	VERB:V:1	tim
+tipṛ	1	0	0	1	0	0				0			8	0	0		tipf
+tir	1	0	1	0	0	0				0	307	unmatched	0	0	0		
+tiras	2	0	0	1	0	1				0			8	0	16	f:5;m:f:n:5;m:4;ind:1;m:f#I:n:1	tiras
+to have seḷual intercourse	1	0	0	0	1	0				0			0	1	0		
+to void eḷcrement	1	0	0	0	1	0				0			0	1	0		
+torment	1	0	0	0	1	0				0			0	1	0		
+totter	1	0	0	0	1	0				0			0	2	0		
+tradi	1	0	0	1	0	0				0			1	0	0		tradi
+trai	2	0	0	1	0	1				0			17	0	1	VERB:V:1	trE
+traki	1	0	0	1	0	0				0			5	0	0		traki
+trakṣa	1	0	0	1	0	0				0			8	0	0		trakza
+trap	3	0	1	1	0	1				0	325	matched	10	0	1	VERB:V:1	trap
+trapūṣ	1	0	0	1	0	0				0			58	0	0		trapUz
+tras	4	1	1	1	0	1	87510	I,IV	2	1	326	matched	30	0	2	VERB:V:2	tras
+trasi	1	0	0	1	0	0				0			2	0	0		trasi
+trasī	1	0	0	1	0	0				0			61	0	0		trasI
+traukṛ	1	0	0	1	0	0				0			3	0	0		trOkf
+tremble	1	0	0	0	1	0				0			0	5	0		
+trip	1	0	0	0	1	0				0			0	1	0		
+trisi	1	0	0	1	0	0				0			2	0	0		trisi
+trunpa	1	0	0	1	0	0				0			3	0	0		trunpa
+truṭ	3	0	1	1	0	1				0	328	matched	4	0	1	VERB:V:1	truw
+truṭa	1	0	0	1	0	0				0			3	0	0		truwa
+trā	3	0	1	1	0	1				0	327	matched	6	0	1	m:1	trA
+trāse	1	0	0	1	0	0				0			1	0	0		trAse
+trāṇe	1	0	0	1	0	0				0			1	0	0		trARe
+tsar	3	0	1	1	0	1				0	334	matched	4	0	1	VERB:V:1	tsar
+tsara	1	0	0	1	0	0				0			4	0	0		tsara
+tu	3	0	1	1	0	1				0	309	matched	72	0	2	VERB:V:1;ind:1	tu
+tubha	1	0	0	1	0	0				0			4	0	0		tuBa
+tubi	1	0	0	1	0	0				0			14	0	0		tubi
+tuc	2	0	1	0	0	1				0	310	unmatched	0	0	1	f:1	
+tud	4	1	1	1	0	1	85879	VI	1	1	312	matched	95	0	2	VERB:V:1;m:f:n:1	tud
+tuhir	1	0	0	1	0	0				0			45	0	0		tuhir
+tuj	4	1	1	1	0	1	85813	I,VI	2	1	311	matched	4	0	4	f:2;VERB:V:1;m:f:n:1	tuj
+tuja	2	0	0	1	0	1				0			7	0	1	NONE:1	tuja
+tuji	2	0	0	1	0	1				0			10	0	2	NONE:2	tuji
+tul	4	1	1	1	0	1	86105	X		1	315	unmatched	43	0	1	VERB:V:1	tul
+tump	2	0	0	1	0	1				0			2	0	1	VERB:V:1	tump
+tunpa	1	0	0	1	0	0				0			59	0	0		tunpa
+tunpha	1	0	0	1	0	0				0			7	0	0		tunPa
+tup	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tup
+tupa	1	0	0	1	0	0				0			7	0	0		tupa
+tupha	1	0	0	1	0	0				0			4	0	0		tuPa
+tur	3	0	1	1	0	1				0	313	matched	17	0	2	VERB:V:1;m:f:n:1	tur
+turaṇa	2	0	0	1	0	1				0			1	0	1	m:f#A:n:1	turaRa
+turn	1	0	0	0	1	0				0			0	1	0		
+turn (?)	1	0	0	0	1	0				0			0	2	0		
+turv	3	0	1	1	0	1				0	314	homonym_shared	5	0	1	VERB:V:1	turv
+turvī	1	0	0	1	0	0				0			45	0	0		turvI
+turīya	2	0	0	1	0	1				0			1	0	10	n:4;m:f:n:3;m:2;VERB:N:1	turIya
+tusa	1	0	0	1	0	0				0			3	0	0		tusa
+tuttha	2	0	0	1	0	1				0			35	0	2	m:n:1;n:1	tutTa
+tuś	3	0	1	1	0	1				0	316	matched	4	0	2	VERB:V:2	tuS
+tuḍ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	tuq
+tuḍṛ	1	0	0	1	0	0				0			49	0	0		tuqf
+tuṇa	1	0	0	1	0	0				0			10	0	0		tuRa
+tuṇḍ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tuRq
+tuṣ	4	1	1	1	0	1	86265	IV		1	317	matched	77	0	1	VERB:V:1	tuz
+tuṭ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tuw
+tuṭa	1	0	0	1	0	0				0			2	0	0		tuwa
+tvac	3	0	1	1	0	1				0	331	unmatched	61	0	2	VERB:V:1;f:1	tvac
+tvakṣ	3	0	1	1	0	1				0	329	matched	3	0	1	VERB:V:1	tvakz
+tvakṣū	1	0	0	1	0	0				0			7	0	0		tvakzU
+tvancu	1	0	0	1	0	0				0			2	0	0		tvancu
+tvar	3	0	1	1	0	1				0	332	matched	17	0	1	VERB:V:1	tvar
+tvaraṇe	1	0	0	1	0	0				0			1	0	0		tvaraRe
+tvarā	2	0	0	1	0	1				0			79	0	3	m:f:n:2;f:1	tvarA
+tvaṅg	2	0	1	0	0	1				0	330	matched	0	0	1	VERB:V:1	
+tviṣ	3	0	1	1	0	1				0	333	matched	72	0	2	VERB:V:1;f:1	tviz
+tvopacārāt	1	0	0	1	0	0				0			1	0	0		tvopacArAt
+tvāt	1	0	0	1	0	0				0			1	0	0		tvAt
+tya	2	0	0	1	0	1				0			2	0	2	NONE:1;m:1	tya
+tyaj	4	1	1	1	0	1	87337	I	1	1	324	matched	88	0	2	VERB:V:1;m:f:n:1	tyaj
+tyāge	1	0	0	1	0	0				0			1	0	0		tyAge
+tā	2	0	1	0	0	1				0	301	unmatched	0	0	2	f:2	
+tāv	1	0	1	0	0	0				0	303	matched	0	0	0		
+tāy	3	0	1	1	0	1				0	302	unmatched	3	0	1	VERB:V:1	tAy
+tāyṛ	1	0	0	1	0	0				0			8	0	0		tAyf
+tāḍane	1	0	0	1	0	0				0			1	0	0		tAqane
+tāḍi	1	0	0	1	0	0				0			4	0	0		tAqi
+tīkṛ	1	0	0	1	0	0				0			1	0	0		tIkf
+tīm	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tIm
+tīra	2	0	0	1	0	1				0			12	0	12	m:5;m:f:n:5;n:1;f#A:n:ind:1	tIra
+tīv	2	0	0	1	0	1				0			1	0	1	VERB:V:1	tIv
+tīva	1	0	0	1	0	0				0			3	0	0		tIva
+tūl	2	0	0	1	0	1				0			60	0	1	VERB:V:1	tUl
+tūrv	1	0	1	0	0	0				0	318	homonym_shared	0	0	0		
+tūrī	2	0	0	1	0	1				0			3	0	1	f:1	tUrI
+tūṇ	2	0	0	1	0	1				0			3	0	1	VERB:V:1	tUR
+tūṣa	2	0	0	1	0	1				0			4	0	1	m:n:1	tUza
+tṛ	3	0	1	1	0	1				0	319	matched	1	0	1	n:1	tf
+tṛd	3	0	1	1	0	1				0	320	matched	12	0	1	VERB:V:1	tfd
+tṛdir	1	0	0	1	0	0				0			55	0	0		tfdir
+tṛh	2	0	1	0	0	1				0	323	matched	0	0	1	VERB:V:1	
+tṛha	1	0	0	1	0	0				0			21	0	0		tfha
+tṛhi	1	0	0	1	0	0				0			1	0	0		tfhi
+tṛhū	1	0	0	1	0	0				0			3	0	0		tfhU
+tṛkṣ	2	0	0	1	0	1				0			53	0	1	VERB:V:1	tfkz
+tṛnhū	1	0	0	1	0	0				0			30	0	0		tfnhU
+tṛnpha	1	0	0	1	0	0				0			59	0	0		tfnPa
+tṛp	4	1	1	1	0	1	86723	I,IV,V,VI	1	1	321	matched	144	0	2	VERB:V:1;SEE:1	tfp
+tṛṇ	2	0	0	1	0	1				0			12	0	1	VERB:V:1	tfR
+tṛṇu	1	0	0	1	0	0				0			74	0	0		tfRu
+tṛṣ	4	1	1	1	0	1	86774	IV	1	1	322	matched	85	0	3	VERB:V:1;m:f:n:1;f:1	tfz
+tṝ	3	1	0	1	0	1	86817	I,III,V,VI		1			152	0	1	VERB:V:1	tF
+tṝṃ	1	0	0	1	0	0				0			1	0	0		tFM
+tṭine	1	0	0	0	1	0				0			0	1	0		
+tṭist	1	0	0	0	1	0				0			0	1	0		
+u	4	1	1	1	0	1	30001	I,II,V	4	1	54	matched	3	0	6	m:2;ind:2;NONE:1;VERB:V:1	u
+ubh	4	1	1	1	0	1	37051	IX,VI		1	63	matched	46	0	1	VERB:V:1	uB
+ubj	4	1	1	1	0	1	37050	VI		1	62	matched	59	0	1	VERB:V:1	ubj
+uc	4	1	1	1	0	1	30209	IV		1	57	matched	61	0	126	m:f:n:52;m:28;n:26;f:8;NONE:6	uc
+uch	3	1	1	0	0	1	30535,30536	I	1,2	2	58	unmatched	0	0	2	VERB:V:2	uC
+uchi	1	0	0	1	0	0				0			45	0	0		uCi
+uchī	1	0	0	1	0	0				0			56	0	0		uCI
+ud	4	1	1	1	0	1	32059	VI,VII	2	1	61	unmatched	38	0	680	m:f:n:262;m:167;n:118;f:56;NONE:31	ud
+udbhaṭaḥ	1	0	0	1	0	0				0			1	0	0		udBawaH
+udhras	3	1	0	1	0	1	33764,33765	IX,X	1,2	2			1	0	2	VERB:V:2	uDras
+udhrasa	1	0	0	1	0	0				0			40	0	0		uDrasa
+udyame	1	0	0	1	0	0				0			1	0	0		udyame
+udyayane	1	0	0	1	0	0				0			1	0	0		udyayane
+uh	3	1	0	1	0	1	37931	I		1			1	0	1	VERB:V:1	uh
+uhir	1	0	0	1	0	0				0			41	0	0		uhir
+ujh	1	0	1	0	0	0				0	59	matched	0	0	0		
+ujjh	3	1	0	1	0	1	30600	VI		1			50	0	1	VERB:V:1	ujJ
+ukh	3	1	0	1	0	1	30098	I		1			11	0	1	VERB:V:1	uK
+ukṣ	4	1	1	1	0	1	30072	I	1	1	55,56	homonym_shared	69	0	2	VERB:V:1;m:f:n:1	ukz
+ul	2	0	0	1	0	1				0			1	0	55	m:f:n:25;n:12;m:8;f:5;NONE:2	ul
+ulaḍ	2	1	0	0	0	1	37438	X		1			0	0	1	VERB:V:1	ulaq
+umbh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	umB
+unbha	1	0	0	1	0	0				0			46	0	0		unBa
+und	2	0	0	1	0	1				0			3	0	2	VERB:V:1;SEE:1	und
+undī	1	0	0	1	0	0				0			51	0	0		undI
+unite	1	0	0	0	1	0				0			0	2	0		
+unite (?)	1	0	0	0	1	0				0			0	1	0		
+upahasti	1	0	0	1	0	0				0			1	0	0		upahasti
+upasevāyām	1	0	0	1	0	0				0			1	0	0		upasevAyAm
+upatāpe	1	0	0	1	0	0				0			1	0	0		upatApe
+upayamyate	1	0	0	1	0	0				0			1	0	0		upayamyate
+uras	2	0	0	1	0	1				0			10	0	9	n:3;m:2;ind:2;m:f:n:2	uras
+urda	1	0	0	1	0	0				0			40	0	0		urda
+urge, thrust	1	0	0	0	1	0				0			0	1	0		
+urinate	1	0	0	0	1	0				0			0	1	0		
+urvī	2	0	0	1	0	1				0			38	0	8	m:5;f:2;n:1	urvI
+utsarge	1	0	0	1	0	0				0			1	0	0		utsarge
+uñch	4	1	1	1	0	1	30615	I,VI		1	60	matched	3	0	1	VERB:V:1	uYC
+uḍḍīya	2	0	0	1	0	1				0			1	0	1	m:1	uqqIya
+uṅkh	2	1	0	0	0	1	30208	I		1			0	0	1	VERB:V:1	uNK
+uṣ	4	1	1	1	0	1	37688	I,IX	1	1	64,65	homonym_shared	71	0	3	VERB:V:1;f:1;NONE:1	uz
+uṣas	2	0	0	1	0	1				0			3	0	3	f:1;n:1;NONE:1	uzas
+uṭh	2	1	0	0	0	1	30626	I		1			0	0	1	VERB:V:1	uW
+uṭha	1	0	0	1	0	0				0			2	0	0		uWa
+va	2	0	0	1	0	1				0			1	0	16	m:7;m:f:n:2;ind:2;NONE:1;n:1	va
+vabhra	1	0	0	1	0	0				0			3	0	0		vaBra
+vac	4	1	1	1	0	1	184615	II,III		1	699	matched	153	0	1	VERB:V:1	vac
+vad	4	1	1	1	0	1	185521	I		1	704	matched	336	0	1	VERB:V:1	vad
+vadernañi	1	0	0	1	0	0				0			1	0	0		vadernaYi
+vadh	4	1	1	1	0	1	185579			1	705	matched	22	0	1	VERB:V:1	vaD
+vadhe	1	0	0	1	0	0				0			4	0	0		vaDe
+vadi	2	0	0	1	0	1				0			40	0	1	ind:1	vadi
+vagi	1	0	0	1	0	0				0			5	0	0		vagi
+vah	4	1	1	1	0	1	189238	I	1	1	718	homonym_shared	314	0	2	VERB:V:1;NONE:1	vah
+vahi	2	0	0	1	0	1				0			2	0	1	m:1	vahi
+vai	3	1	0	1	0	1	206544	I	1	1			16	0	2	VERB:V:1;ind:1	vE
+vaiklavye	1	0	0	1	0	0				0			1	0	0		vEklavye
+vaj	3	0	1	1	0	1				0	700	matched	1	0	1	VERB:V:1	vaj
+vaja	1	0	0	1	0	0				0			15	0	0		vaja
+vak	3	0	1	1	0	1				0	697	unmatched	4	0	2	NONE:1;VERB:V:1	vak
+vakha	1	0	0	1	0	0				0			1	0	0		vaKa
+vaki	1	0	0	1	0	0				0			4	0	0		vaki
+vakragatau	1	0	0	1	0	0				0			1	0	0		vakragatO
+vakṣ	4	1	1	1	0	1	184521	I		1	698	matched	5	0	1	VERB:V:1	vakz
+vakṣa	1	0	0	1	0	0				0			5	0	0		vakza
+val	4	1	1	1	0	1	188075	I		1	711	matched	67	0	1	VERB:V:1	val
+valastṛtau	1	0	0	1	0	0				0			1	0	0		valastftO
+valbh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	valB
+valbha	1	0	0	1	0	0				0			5	0	0		valBa
+valg	4	1	1	1	0	1	188205	I		1	712	matched	16	0	1	VERB:V:1	valg
+valh	3	0	1	1	0	1				0	713	matched	4	0	1	VERB:V:1	valh
+valha	1	0	0	1	0	0				0			12	0	0		valha
+valk	2	0	0	1	0	1				0			14	0	1	VERB:V:1	valk
+vall	2	0	0	1	0	1				0			37	0	1	VERB:V:1	vall
+vam	4	1	1	1	0	1	186417	I		1	710	matched	16	0	1	VERB:V:1	vam
+van	4	1	1	1	0	1	185710	I,VIII	1	1	706	matched	51	0	2	VERB:V:1;NONE:1	van
+vanca	1	0	0	1	0	0				0			1	0	0		vanca
+vancu	1	0	0	1	0	0				0			26	0	0		vancu
+vand	4	1	1	1	0	1	186179	I		1	707	matched	15	0	1	VERB:V:1	vand
+vandha	1	0	0	1	0	0				0			1	0	0		vanDa
+vandhane	1	0	0	1	0	0				0			1	0	0		vanDane
+vanu	2	0	0	1	0	1				0			83	0	1	m:1	vanu
+vap	4	1	1	1	0	1	186277,186291	I	1,2	2	708,709	homonym_shared	201	0	2	VERB:V:2	vap
+vara	2	0	0	1	0	1				0			6	0	152	m:51;f:35;n:25;m:f:n:16;NONE:8	vara
+varca	2	0	0	1	0	1				0			13	0	1	m:1	varca
+varddha	1	0	0	1	0	0				0			2	0	0		vardDa
+vardh	3	1	0	1	0	1	187679	X		1			32	0	1	VERB:V:1	varD
+vardha	2	0	0	1	0	1				0			11	0	7	m:4;n:1;m:f:n:1;SEE:1	varDa
+varh	2	0	0	1	0	1				0			2	0	2	VERB:V:2	varh
+varha	2	0	0	1	0	1				0			12	0	1	NONE:1	varha
+varpha	1	0	0	1	0	0				0			3	0	0		varPa
+vartamāne	1	0	0	1	0	0				0			3	0	0		vartamAne
+varttamāne	1	0	0	1	0	0				0			1	0	0		varttamAne
+varttante	1	0	0	1	0	0				0			1	0	0		varttante
+varu	2	0	0	1	0	1				0			1	0	1	NONE:1	varu
+varṇ	3	1	0	1	0	1	187289	X		1			42	0	1	VERB:V:1	varR
+varṇṇa	1	0	0	1	0	0				0			1	0	0		varRRa
+varṣa	2	0	0	1	0	1				0			16	0	89	m:32;n:20;m:f:n:18;f:11;m:f#A:n:3	varza
+vas	4	1	1	1	0	1	188560,188997,188998,189096	I,II,VI,X	2,3,4,5	4	715,716,717	homonym_shared	344	0	9	VERB:V:5;NONE:3;LEXID=pron,STEM=yuzmad:1	vas
+vask	2	0	0	1	0	1				0			1	0	1	VERB:V:1	vask
+vast	2	0	0	1	0	1				0			3	0	1	VERB:V:1	vast
+vasu	2	0	0	1	0	1				0			29	0	191	m:85;f:36;m:f:n:32;n:27;m:n:3	vasu
+vat	3	0	1	1	0	1				0	703	matched	4	0	3	SEE:2;m:1	vat
+vaya	2	0	0	1	0	1				0			11	0	1	m:1	vaya
+vañarthe	1	0	0	1	0	0				0			1	0	0		vaYarTe
+vañc	4	1	1	1	0	1	185127	I		1	701	matched	17	0	1	VERB:V:1	vaYc
+vaś	4	1	1	1	0	1	188394	I,II,III		1	714	matched	82	0	1	VERB:V:1	vaS
+vaḍi	1	0	0	1	0	0				0			16	0	0		vaqi
+vaṃh	2	0	0	1	0	1				0			1	0	1	NONE:1	vaMh
+vaṇ	2	0	0	1	0	1				0			25	0	1	VERB:V:1	vaR
+vaṇṭ	4	1	1	1	0	1	185343	I,X		1	702	matched	1	0	1	VERB:V:1	vaRw
+vaṣa	1	0	0	1	0	0				0			6	0	0		vaza
+vaṭ	2	0	0	1	0	1				0			36	0	2	VERB:V:1;ind:1	vaw
+vaṭhi	1	0	0	1	0	0				0			9	0	0		vaWi
+vaṭi	2	0	0	1	0	1				0			13	0	1	f:1	vawi
+ve	3	1	0	1	0	1	205271	I	1	1			20	0	2	VERB:V:1;NONE:1	ve
+vegagatau	1	0	0	1	0	0				0			1	0	0		vegagatO
+vehṛ	1	0	0	1	0	0				0			10	0	0		vehf
+vel	2	0	0	1	0	1				0			2	0	2	VERB:V:2	vel
+vell	4	1	1	1	0	1	206315	I		1	749	matched	10	0	1	VERB:V:1	vell
+velṛ	1	0	0	1	0	0				0			7	0	0		velf
+ven	4	1	1	1	0	1	206222	I		1	748	matched	4	0	1	VERB:V:1	ven
+vep	2	0	0	1	0	1				0			11	0	1	VERB:V:1	vep
+vepṛ	1	0	0	1	0	0				0			18	0	0		vepf
+vesṛ	1	0	0	1	0	0				0			6	0	0		vesf
+vethṛ	1	0	0	1	0	0				0			1	0	0		veTf
+vevī	2	0	0	1	0	1				0			1	0	1	VERB:V:1	vevI
+vevīṅ	1	0	0	1	0	0				0			19	0	0		vevIN
+veñ	1	0	0	1	0	0				0			43	0	0		veY
+veña	1	0	0	1	0	0				0			1	0	0		veYa
+veṇṛ	1	0	0	1	0	0				0			15	0	0		veRf
+veṣṭ	4	1	1	1	0	1	206478	I		1	750	matched	36	0	1	VERB:V:1	vezw
+vi	2	0	0	1	0	1				0			22	0	3885	m:f:n:1312;m:995;f:533;n:503;SEE:216	vi
+vic	4	1	1	1	0	1	194682	III,VII		1	725,726	homonym_shared	15	0	1	VERB:V:1	vic
+viccha	1	0	0	1	0	0				0			70	0	0		vicCa
+vich	2	0	0	1	0	1				0			2	0	1	VERB:V:1	viC
+vicāraṇe	1	0	0	1	0	0				0			1	0	0		vicAraRe
+vid	4	1	1	1	0	1	195626,195939	II,VI	1,3	2	728,729	homonym_shared	258	0	7	VERB:V:3;m:f:n:1;m:1;f:1;SEE:1	vid
+vide  1 dhā	1	0	0	0	1	0				0			0	1	0		
+vide  1 drā	1	0	0	0	1	0				0			0	1	0		
+vide  1 dā	1	0	0	0	1	0				0			0	1	0		
+vide  1 i	1	0	0	0	1	0				0			0	1	0		
+vide  1 iṣ	1	0	0	0	1	0				0			0	1	0		
+vide  1 kṛ	1	0	0	0	1	0				0			0	1	0		
+vide  1 pṛ	1	0	0	0	1	0				0			0	2	0		
+vide  1 rā	1	0	0	0	1	0				0			0	1	0		
+vide  1 tan	1	0	0	0	1	0				0			0	1	0		
+vide  1 ṛjṛñj	1	0	0	0	1	0				0			0	1	0		
+vide  2 dīv	1	0	0	0	1	0				0			0	1	0		
+vide  2 gṛ	1	0	0	0	1	0				0			0	1	0		
+vide  2 i	1	0	0	0	1	0				0			0	1	0		
+vide  2 mṛ	1	0	0	0	1	0				0			0	1	0		
+vide  2 naś	1	0	0	0	1	0				0			0	1	0		
+vide  arc	1	0	0	0	1	0				0			0	1	0		
+vide  das	1	0	0	0	1	0				0			0	1	0		
+vide  dham	1	0	0	0	1	0				0			0	1	0		
+vide  dhī	1	0	0	0	1	0				0			0	2	0		
+vide  du	1	0	0	0	1	0				0			0	1	0		
+vide  ej	1	0	0	0	1	0				0			0	1	0		
+vide  ghṛ	1	0	0	0	1	0				0			0	2	0		
+vide  glā	1	0	0	0	1	0				0			0	1	0		
+vide  gāh	1	0	0	0	1	0				0			0	1	0		
+vide  hvṛ	1	0	0	0	1	0				0			0	2	0		
+vide  hā	1	0	0	0	1	0				0			0	1	0		
+vide  hīḍ	1	0	0	0	1	0				0			0	1	0		
+vide  jan	1	0	0	0	1	0				0			0	1	0		
+vide  jṛ	1	0	0	0	1	0				0			0	2	0		
+vide  kan	1	0	0	0	1	0				0			0	1	0		
+vide  khan	1	0	0	0	1	0				0			0	1	0		
+vide  krand	1	0	0	0	1	0				0			0	1	0		
+vide  kū	1	0	0	0	1	0				0			0	1	0		
+vide  maṃh	1	0	0	0	1	0				0			0	1	0		
+vide  med	1	0	0	0	1	0				0			0	1	0		
+vide  mih	1	0	0	0	1	0				0			0	1	0		
+vide  mruc	1	0	0	0	1	0				0			0	3	0		
+vide  mīv	1	0	0	0	1	0				0			0	1	0		
+vide  mṛd	1	0	0	0	1	0				0			0	1	0		
+vide  pīy	1	0	0	0	1	0				0			0	1	0		
+vide  ribh	1	0	0	0	1	0				0			0	1	0		
+vide  rādh	1	0	0	0	1	0				0			0	1	0		
+vide  sah	1	0	0	0	1	0				0			0	1	0		
+vide  san	1	0	0	0	1	0				0			0	1	0		
+vide  si	1	0	0	0	1	0				0			0	1	0		
+vide  sphṛ	1	0	0	0	1	0				0			0	2	0		
+vide  spṛdh	1	0	0	0	1	0				0			0	1	0		
+vide  svad	1	0	0	0	1	0				0			0	1	0		
+vide  taṃs	1	0	0	0	1	0				0			0	1	0		
+vide  turv	1	0	0	0	1	0				0			0	1	0		
+vide  tṛ	1	0	0	0	1	0				0			0	2	0		
+vide  van	1	0	0	0	1	0				0			0	1	0		
+vide  viṣṭ	1	0	0	0	1	0				0			0	1	0		
+vide  vlī	1	0	0	0	1	0				0			0	1	0		
+vide  vyac	1	0	0	0	1	0				0			0	1	0		
+vide  vyadh	1	0	0	0	1	0				0			0	1	0		
+vide  vīj	1	0	0	0	1	0				0			0	1	0		
+vide  yaj	1	0	0	0	1	0				0			0	1	0		
+vide  yam	1	0	0	0	1	0				0			0	1	0		
+vide  yas	1	0	0	0	1	0				0			0	1	0		
+vide  ścand	1	0	0	0	1	0				0			0	1	0		
+vide  ṛj	1	0	0	0	1	0				0			0	1	0		
+vide  ṛt	1	0	0	0	1	0				0			0	1	0		
+vidh	3	0	1	1	0	1				0	730,731	homonym_shared	8	0	5	VERB:V:3;NONE:1;m:f:n:1	viD
+vidāre	1	0	0	1	0	0				0			1	0	0		vidAre
+vij	4	1	1	1	0	1	194956	I,III,VI	1	1	727	matched	20	0	2	VERB:V:1;m:f:1	vij
+vijī	1	0	0	1	0	0				0			77	0	0		vijI
+vikalagatau	1	0	0	1	0	0				0			1	0	0		vikalagatO
+vikāse	1	0	0	1	0	0				0			2	0	0		vikAse
+vikṣepe	1	0	0	1	0	0				0			1	0	0		vikzepe
+vila	2	0	0	1	0	1				0			14	0	1	NONE:1	vila
+vile	1	0	0	1	0	0				0			1	0	0		vile
+vind	2	0	0	1	0	1				0			2	0	1	VERB:V:1	vind
+vindh	2	0	1	0	0	1				0	732	unmatched	0	0	1	VERB:V:1	
+vip	4	1	1	1	0	1	197416	I	1	1	733	matched	9	0	3	VERB:V:1;m:f:n:1;f:1	vip
+viratiḥ	1	0	0	1	0	0				0			1	0	0		viratiH
+virāmaḥ	1	0	0	1	0	0				0			1	0	0		virAmaH
+vis	2	0	0	1	0	1				0			1	0	2	VERB:V:2	vis
+vistāre	1	0	0	1	0	0				0			1	0	0		vistAre
+visṛ	2	0	0	1	0	1				0			4	0	1	VERB:K:1	visf
+vitt	2	0	0	1	0	1				0			3	0	1	VERB:V:1	vitt
+vivakṣāyām	1	0	0	1	0	0				0			1	0	0		vivakzAyAm
+viś	4	1	1	1	0	1	200376	VI	1	1	734	matched	201	0	12	m:3;VERB:V:2;m:f:2;SEE:2;f:n:1	viS
+viśaraṇe	1	0	0	1	0	0				0			1	0	0		viSaraRe
+viṣ	4	1	1	1	0	1	201614,201878	I,III,IX	1,4	2	735	matched	32	0	4	VERB:V:2;m:f:n:1;f:1	viz
+viṣama	1	0	0	1	0	0				0			9	0	0		vizama
+viṣka	2	0	0	1	0	1				0			7	0	1	m:1	vizka
+viṣu	2	0	0	1	0	1				0			18	0	7	m:f:n:2;ind:1;n:1;m:f#A:n:1;SEE:1	vizu
+viṣṭ	3	0	1	1	0	1				0	736	matched	1	0	1	NONE:1	vizw
+viṭ	2	0	0	1	0	1				0			20	0	18	m:6;n:3;f:3;VERB:V:2;SEE:2	viw
+vlag	2	0	1	0	0	1				0	764	matched	0	0	1	NONE:1	
+vlī	4	1	1	1	0	1	210822	IX		1	765	matched	11	0	1	VERB:V:1	vlI
+vomit	1	0	0	0	1	0				0			0	1	0		
+vrad	2	0	1	0	0	1				0	758	matched	0	0	1	VERB:V:1	
+vraj	4	1	1	1	0	1	210432	I,X		1	757	matched	68	0	1	VERB:V:1	vraj
+vran	1	0	1	0	0	0				0	759	unmatched	0	0	0		
+vraśc	4	1	1	1	0	1	210711	VI		1	760	matched	26	0	1	VERB:V:1	vraSc
+vraṇ	2	0	0	1	0	1				0			9	0	2	VERB:V:2	vraR
+vruḍ	2	0	1	0	0	1				0	763	unmatched	0	0	1	VERB:V:1	
+vruḍa	1	0	0	1	0	0				0			7	0	0		vruqa
+vrādh	2	0	1	0	0	1				0	761	matched	0	0	1	VERB:V:1	
+vrī	2	0	0	1	0	1				0			17	0	1	VERB:V:1	vrI
+vrīḍ	4	1	1	1	0	1	210765	I,IV,X		1	762	matched	10	0	1	VERB:V:1	vrIq
+vugi	1	0	0	1	0	0				0			2	0	0		vugi
+vukha	1	0	0	1	0	0				0			4	0	0		vuKa
+vyac	4	1	1	1	0	1	208354	III,VI	1	1	751	matched	2	0	2	VERB:V:1;VERB:K:1	vyac
+vyaca	1	0	0	1	0	0				0			23	0	0		vyaca
+vyadh	4	1	1	1	0	1	208671	IV		1	754	matched	55	0	1	VERB:V:1	vyaD
+vyadha	2	0	0	1	0	1				0			38	0	1	m:1	vyaDa
+vyaj	3	0	1	1	0	1				0	752	matched	1	0	2	VERB:K:1;SEE:1	vyaj
+vyath	4	1	1	1	0	1	208633	I		1	753	matched	65	0	1	VERB:V:1	vyaT
+vyavahāre	1	0	0	1	0	0				0			3	0	0		vyavahAre
+vyay	3	0	1	1	0	1				0	755	unmatched	21	0	2	VERB:V:2	vyay
+vye	3	1	0	1	0	1	210345	I		1			17	0	1	VERB:V:1	vye
+vyuṣa	1	0	0	1	0	0				0			30	0	0		vyuza
+vyā	2	0	1	0	0	1				0	756	aliased	0	0	2	NONE:1;m:f:n:1	
+vyājaḥ	1	0	0	1	0	0				0			1	0	0		vyAjaH
+vyāptau	1	0	0	1	0	0				0			1	0	0		vyAptO
+vā	4	1	1	1	0	1	189436	II	2	1	719,720,721	homonym_shared	123	0	3	f:1;ind:1;VERB:V:1	vA
+vāchi	1	0	0	1	0	0				0			10	0	0		vACi
+vādh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	vAD
+vāh	4	1	1	1	0	1	192697	I	1	1	724	homonym_shared	3	0	2	VERB:V:1;NONE:1	vAh
+vāri	2	0	0	1	0	1				0			6	0	111	m:51;m:f:n:17;n:15;f:14;m:f#A:n:6	vAri
+vās	3	1	0	1	0	1	192285	X	2	1			19	0	2	SEE:1;VERB:V:1	vAs
+vāt	2	0	0	1	0	1				0			17	0	2	ind:1;VERB:V:1	vAt
+vāvṛtu	1	0	0	1	0	0				0			18	0	0		vAvftu
+vāñch	4	1	1	1	0	1	190461	I		1	722	matched	7	0	1	VERB:V:1	vAYC
+vāñchanīye	1	0	0	1	0	0				0			1	0	0		vAYCanIye
+vāś	4	1	1	1	0	1	192249	IV		1	723	matched	15	0	1	VERB:V:1	vAS
+vāśṛ	1	0	0	1	0	0				0			30	0	0		vASf
+vāḍṛ	1	0	0	1	0	0				0			6	0	0		vAqf
+vī	4	1	1	1	0	1	203329	II	1	1	737	matched	77	0	30	m:13;f:4;NONE:4;m:f:n:3;n:2	vI
+vīj	4	1	1	1	0	1	203453	I,X		1	738	matched	8	0	1	VERB:V:1	vIj
+vīr	2	0	0	1	0	1				0			18	0	2	VERB:P:1;VERB:V:1	vIr
+vīḍ	3	1	1	0	0	1	203469			1	739	matched	0	0	1	VERB:V:1	vIq
+vṛ	4	1	1	1	0	1	203978,204040	I,IX,V	1,2	2	740,741	homonym_shared	63	0	2	VERB:V:2	vf
+vṛddhau	1	0	0	1	0	0				0			2	0	0		vfdDO
+vṛdh	4	1	1	1	0	1	204573	I,X		1	745	matched	23	0	1	VERB:V:1	vfD
+vṛdhu	2	0	0	1	0	1				0			29	0	1	m:1	vfDu
+vṛh	3	0	1	1	0	1				0	747	matched	10	0	2	VERB:V:2	vfh
+vṛhū	1	0	0	1	0	0				0			7	0	0		vfhU
+vṛj	4	1	1	1	0	1	204309	I,II,VII	1	1	743	matched	30	0	2	VERB:V:1;NONE:1	vfj
+vṛji	2	0	0	1	0	1				0			1	0	3	m:1;f:1;n:1	vfji
+vṛjī	1	0	0	1	0	0				0			79	0	0		vfjI
+vṛk	2	0	0	1	0	1				0			24	0	1	VERB:V:1	vfk
+vṛkṣ	2	0	0	1	0	1				0			16	0	1	VERB:V:1	vfkz
+vṛt	4	1	1	1	0	1	204340	I	1	1	744	matched	129	0	5	SEE:2;VERB:V:1;m:f:n:1;ind:1	vft
+vṛtau	1	0	0	1	0	0				0			1	0	0		vftO
+vṛttyupāye	1	0	0	1	0	0				0			1	0	0		vfttyupAye
+vṛtu	1	0	0	1	0	0				0			106	0	0		vftu
+vṛñ	1	0	0	1	0	0				0			119	0	0		vfY
+vṛś	2	0	0	1	0	1				0			4	0	1	VERB:V:1	vfS
+vṛṃh	3	0	1	1	0	1				0	742	unmatched	3	0	1	VERB:V:1	vfMh
+vṛṅ	1	0	0	1	0	0				0			75	0	0		vfN
+vṛṇ	2	0	0	1	0	1				0			1	0	1	VERB:V:1	vfR
+vṛṇa	1	0	0	1	0	0				0			6	0	0		vfRa
+vṛṣ	4	1	1	1	0	1	204858	I		1	746	matched	32	0	1	VERB:V:1	vfz
+vṛṣu	1	0	0	1	0	0				0			44	0	0		vfzu
+vṝ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	vF
+vṝñ	1	0	0	1	0	0				0			8	0	0		vFY
+ya	2	0	0	1	0	1				0			12	0	13	m:3;ind:3;NONE:2;n:2;LEXID=pron,STEM=yatama:1	ya
+yabh	4	1	1	1	0	1	170253	I		1	599	matched	4	0	1	VERB:V:1	yaB
+yabha	1	0	0	1	0	0				0			32	0	0		yaBa
+yach	1	0	1	0	0	0				0	596	homonym_shared	0	0	0		
+yadvā	2	0	0	1	0	1				0			1	0	1	f:1	yadvA
+yah	1	0	1	0	0	0				0	602	unmatched	0	0	0		
+yaj	4	1	1	1	0	1	169114	I	1	1	597	matched	219	0	2	VERB:V:1;NONE:1	yaj
+yak	1	0	0	1	0	0				0			1	0	0		yak
+yakṣ	3	0	1	1	0	1				0	595	matched	18	0	1	VERB:V:1	yakz
+yam	4	1	1	1	0	1	170258	I		1	600	homonym_shared	329	0	1	VERB:V:1	yam
+yantr	2	0	0	1	0	1				0			2	0	1	VERB:V:1	yantr
+yas	4	1	1	1	0	1	171002	IV		1	601	matched	15	0	1	VERB:V:1	yas
+yasu	1	0	0	1	0	0				0			28	0	0		yasu
+yat	4	1	1	1	0	1	169552	I,X	2	1	598	matched	30	0	30	m:f:n:13;ind:4;NONE:3;m:3;LEXID=prap,STEM=yat,ROOTCLASS=i-2:1	yat
+yatra	2	0	0	1	0	1				0			2	0	10	m:f:n:5;ind:2;m:1;f:1;n:1	yatra
+yatī	1	0	0	1	0	0				0			16	0	0		yatI
+yauṭṛ	1	0	0	1	0	0				0			12	0	0		yOwf
+yaḥ	1	0	0	1	0	0				0			1	0	0		yaH
+yeṣ	3	0	1	1	0	1				0	611	matched	1	0	1	VERB:V:1	yez
+yoddhari	1	0	0	1	0	0				0			1	0	0		yodDari
+yu	4	1	1	1	0	1	171682,171694	II,III,IX,VI	1,2	2	606,607	homonym_shared	194	0	4	VERB:V:2;m:f:n:1;SEE:1	yu
+yuch	2	0	0	1	0	1				0			2	0	1	VERB:V:1	yuC
+yuddhe	1	0	0	1	0	0				0			1	0	0		yudDe
+yudh	4	1	1	1	0	1	172012	I,IV	1	1	609	matched	97	0	3	VERB:V:1;m:1;f:1	yuD
+yuga	2	0	0	1	0	1				0			4	0	38	m:11;n:9;m:f:n:8;f:2;ind:2	yuga
+yugi	1	0	0	1	0	0				0			3	0	0		yugi
+yuj	4	1	1	1	0	1	171731	VII	1	1	608	matched	152	0	3	VERB:V:1;m:f:n:1;m:1	yuj
+yukte	1	0	0	1	0	0				0			1	0	0		yukte
+yumiśraṇe	1	0	0	1	0	0				0			1	0	0		yumiSraRe
+yup	4	1	1	1	0	1	172139	IV		1	610	matched	4	0	1	VERB:V:1	yup
+yupa	1	0	0	1	0	0				0			8	0	0		yupa
+yut	2	0	0	1	0	1				0			1	0	5	m:f:n:2;SEE:2;VERB:V:1	yut
+yutṛ	1	0	0	1	0	0				0			5	0	0		yutf
+yuñ	1	0	0	1	0	0				0			17	0	0		yuY
+yā	4	1	1	1	0	1	171018	II	1	1	603	matched	256	0	5	f:2;VERB:V:1;SEE:1;n:1	yA
+yāc	4	1	1	1	0	1	171236	I		1	604	matched	20	0	3	VERB:V:1;SEE:1;m:f#A:n:1	yAc
+yācane	1	0	0	1	0	0				0			3	0	0		yAcane
+yācṛ	1	0	0	1	0	0				0			27	0	0		yAcf
+yād	3	0	1	1	0	1				0	605	matched	1	0	3	ind:1;VERB:V:1;SEE:1	yAd
+yām	1	0	0	1	0	0				0			2	0	0		yAm
+yūṣ	2	0	0	1	0	1				0			2	0	1	VERB:V:1	yUz
+ñi	1	0	0	1	0	0				0			1	0	0		Yi
+ñiḥ	1	0	0	1	0	0				0			1	0	0		YiH
+ñyantayuja	1	0	0	1	0	0				0			1	0	0		Yyantayuja
+ñīkṣe	1	0	0	1	0	0				0			1	0	0		YIkze
+ā	2	0	0	1	0	1				0			25	0	2072	m:f:n:691;m:407;n:331;f:247;SEE:118	A
+ācchādane	1	0	0	1	0	0				0			3	0	0		AcCAdane
+āchi	1	0	0	1	0	0				0			43	0	0		ACi
+ācāra	2	0	0	1	0	1				0			3	0	1	m:f#I:n:1	AcAra
+ādaraḥ	1	0	0	1	0	0				0			1	0	0		AdaraH
+ādaraṇīye	1	0	0	1	0	0				0			1	0	0		AdaraRIye
+ādare	1	0	0	1	0	0				0			1	0	0		Adare
+ādi	2	0	0	1	0	1				0			6	0	65	m:32;n:16;m:f:n:9;f:5;NONE:2	Adi
+ādit	1	0	0	1	0	0				0			1	0	0		Adit
+āhvaya	1	0	0	1	0	0				0			1	0	0		Ahvaya
+āma	2	0	0	1	0	1				0			1	0	29	m:13;n:5;m:f:n:5;f:2;m:f#A:n:1	Ama
+āndol	1	0	0	1	0	0				0			1	0	0		Andol
+āndola	2	0	0	1	0	1				0			1	0	1	m:1	Andola
+āndoli	1	0	0	1	0	0				0			1	0	0		Andoli
+ānṛtyatīti	1	0	0	1	0	0				0			1	0	0		AnftyatIti
+āp	4	1	1	1	0	1	24743	V	1	1	26	matched	99	0	2	VERB:V:1;VERB:P:1	Ap
+āptau	1	0	0	1	0	0				0			1	0	0		AptO
+āpḷ	1	0	0	1	0	0				0			87	0	0		Apx
+ār	3	1	1	0	0	1	25983	IV	1	1	27	matched	0	0	2	VERB:V:1;VERB:P:1	Ar
+ārambhe	1	0	0	1	0	0				0			2	0	0		AramBe
+ārdrībhāve	1	0	0	1	0	0				0			1	0	0		ArdrIBAve
+ārttanāde	1	0	0	1	0	0				0			1	0	0		ArttanAde
+ās	4	1	1	1	0	1	27851	II	2	1	28	matched	85	0	6	n:2;ind:1;VERB:V:1;VERB:P:1;SEE:1	As
+āsajyate	1	0	0	1	0	0				0			1	0	0		Asajyate
+āstīryyate	1	0	0	1	0	0				0			1	0	0		AstIryyate
+āsvādyate	1	0	0	1	0	0				0			1	0	0		AsvAdyate
+āvaraṇe	1	0	0	1	0	0				0			1	0	0		AvaraRe
+āya	2	0	0	1	0	1				0			2	0	6	n:2;m:1;m:f:n:1;m:n:1;SEE:1	Aya
+āñch	3	0	1	1	0	1				0	25	matched	1	0	1	VERB:V:1	AYC
+āṃdol	1	0	0	1	0	0				0			1	0	0		AMdol
+ī	3	0	1	1	0	1				0	44	matched	25	0	10	f:3;m:2;m:f:n:2;NONE:1;ind:1	I
+īh	4	1	1	1	0	1	29985	I		1	53	matched	8	0	1	VERB:V:1	Ih
+īj	4	1	1	1	0	1	29717	I		1	47	matched	43	0	1	VERB:V:1	Ij
+īkh	2	1	0	0	0	1	29713	I		1			0	0	1	VERB:V:1	IK
+īkhi	1	0	0	1	0	0				0			2	0	0		IKi
+īkṣ	4	1	1	1	0	1	29695	I		1	45	matched	165	0	1	VERB:V:1	Ikz
+īl	2	1	0	0	0	1	29820			1			0	0	1	VERB:V:1	Il
+īnt	2	1	0	0	0	1	29747	I		1			0	0	1	VERB:V:1	Int
+īpsāyāṃ	1	0	0	1	0	0				0			1	0	0		IpsAyAM
+īr	4	1	1	1	0	1	29761	II		1	49	matched	109	0	1	VERB:V:1	Ir
+īrkṣya	1	0	0	1	0	0				0			34	0	0		Irkzya
+īrṣy	4	1	1	1	0	1	29797	I		1	50	matched	2	0	1	VERB:V:1	Irzy
+īrṣya	2	0	0	1	0	1				0			52	0	1	m:f:n:1	Irzya
+īrṣyā	2	0	0	1	0	1				0			2	0	5	m:2;m:f:n:2;f:1	IrzyA
+īś	4	1	1	1	0	1	29827	II	1	1	51	matched	77	0	3	VERB:V:1;m:1;n:1	IS
+īḍ	4	1	1	1	0	1	29721	II	1	1	48	homonym_shared	7	0	2	VERB:V:1;f:1	Iq
+īḍa	1	0	0	1	0	0				0			52	0	0		Iqa
+īṅkh	4	1	1	1	0	1	29714	I		1	46	matched	6	0	1	VERB:V:1	INK
+īṣ	4	1	1	1	0	1	29921	I	1	1	52	matched	18	0	2	VERB:V:1;ind:1	Iz
+śabd	3	1	0	1	0	1	212651	X		1			14	0	1	VERB:V:1	Sabd
+śabde	1	0	0	1	0	0				0			13	0	0		Sabde
+śac	2	0	0	1	0	1				0			2	0	1	VERB:V:1	Sac
+śaca	1	0	0	1	0	0				0			4	0	0		Saca
+śad	4	1	1	1	0	1	212483	I,VI	2	1	770,771	homonym_shared	19	0	2	NONE:1;VERB:V:1	Sad
+śak	4	1	1	1	0	1	210897	V		1	767	matched	61	0	1	VERB:V:1	Sak
+śaki	1	0	0	1	0	0				0			14	0	0		Saki
+śakvṛ	1	0	0	1	0	0				0			3	0	0		Sakvf
+śakyārthe	1	0	0	1	0	0				0			1	0	0		SakyArTe
+śal	3	0	1	1	0	1				0	776	unmatched	7	0	2	VERB:V:1;NONE:1	Sal
+śala	2	0	0	1	0	1				0			13	0	7	m:3;m:f:n:1;m:n:1;f:1;NONE:1	Sala
+śam	4	1	1	1	0	1	212911	IV,IX	1	1	773,774,775	homonym_shared	69	0	11	m:4;m:f:n:2;SEE:2;VERB:V:1;ind:1	Sam
+śamb	2	0	0	1	0	1				0			14	0	1	VERB:V:1	Samb
+śamu	1	0	0	1	0	0				0			61	0	0		Samu
+śansa	1	0	0	1	0	0				0			4	0	0		Sansa
+śap	4	1	1	1	0	1	212543	I,IV	3	1	772	matched	63	0	3	SEE:1;ind:1;VERB:V:1	Sap
+śarba	1	0	0	1	0	0				0			6	0	0		Sarba
+śarv	2	0	0	1	0	1				0			8	0	1	VERB:V:1	Sarv
+śas	4	1	1	1	0	1	214531	I	1	1	778	matched	12	0	4	m:f:n:1;VERB:V:1;SEE:1;NONE:1	Sas
+śasi	1	0	0	1	0	0				0			23	0	0		Sasi
+śasta	2	0	0	1	0	1				0			1	0	5	m:f:n:3;n:1;f:1	Sasta
+śasu	1	0	0	1	0	0				0			12	0	0		Sasu
+śat	2	0	1	0	0	1				0	769	unmatched	0	0	1	NONE:1	
+śauklye	1	0	0	1	0	0				0			1	0	0		SOklye
+śauṭṛ	1	0	0	1	0	0				0			4	0	0		SOwf
+śav	2	0	0	1	0	1				0			8	0	1	VERB:V:1	Sav
+śaś	3	0	1	1	0	1				0	777	unmatched	9	0	1	VERB:V:1	SaS
+śaḍi	1	0	0	1	0	0				0			4	0	0		Saqi
+śaṃs	4	1	1	1	0	1	210841	I		1	766	matched	36	0	1	VERB:V:1	SaMs
+śaṃsu	1	0	0	1	0	0				0			45	0	0		SaMsu
+śaṅk	4	1	1	1	0	1	211426	I		1	768	matched	22	0	1	VERB:V:1	SaNk
+śaṇ	2	0	0	1	0	1				0			11	0	1	VERB:V:1	SaR
+śaṭ	2	0	0	1	0	1				0			11	0	1	VERB:V:1	Saw
+śaṭh	3	1	0	1	0	1	211740	I,X	4	1			19	0	4	VERB:V:4	SaW
+ścala	1	0	0	1	0	0				0			1	0	0		Scala
+ścam	2	0	1	0	0	1				0	802	matched	0	0	1	NONE:1	
+ścand	2	0	1	0	0	1				0	801	unmatched	0	0	1	NONE:1	
+ścar	2	0	0	1	0	1				0			1	0	1	VERB:V:1	Scar
+śceti	1	0	0	1	0	0				0			1	0	0		Sceti
+ścut	4	1	1	1	0	1	221945	I	1	1	803	matched	8	0	2	VERB:V:1;SEE:1	Scut
+ścyut	2	0	0	1	0	1				0			3	0	1	VERB:V:1	Scyut
+ścyutir	1	0	0	1	0	0				0			24	0	0		Scyutir
+śelṛ	1	0	0	1	0	0				0			3	0	0		Self
+śevṛ	1	0	0	1	0	0				0			4	0	0		Sevf
+śi	3	1	0	1	0	1	216481	III,V	1	1			3	0	3	VERB:V:1;m:1;NONE:1	Si
+śighi	1	0	0	1	0	0				0			4	0	0		SiGi
+śiji	1	0	0	1	0	0				0			12	0	0		Siji
+śikhi	2	0	0	1	0	1				0			2	0	28	m:12;n:9;f:4;ICF:SiKin:1;m:f:n:1	SiKi
+śikṣ	4	1	1	1	0	1	216517	I		1	782	matched	11	0	1	VERB:V:1	Sikz
+śikṣa	2	0	0	1	0	1				0			15	0	1	m:1	Sikza
+śila	2	0	0	1	0	1				0			2	0	13	m:4;n:3;m:f:n:2;f:2;m:n:1	Sila
+śim	2	0	1	0	0	1				0	786	matched	0	0	1	VERB:V:1	
+śip	1	0	1	0	0	0				0	785	unmatched	0	0	0		
+śithila	2	0	0	1	0	1				0			4	0	12	m:f:n:6;n:2;f:2;m:f#A:n:1;NONE:1	SiTila
+śiñj	4	1	1	1	0	1	216845	I,II,X		1	784	matched	5	0	1	VERB:V:1	SiYj
+śiṅgh	3	0	1	1	0	1				0	783	unmatched	3	0	1	VERB:V:1	SiNG
+śiṣ	4	1	1	1	0	1	218104	VII,X	2	1	787	matched	53	0	3	VERB:V:2;NONE:1	Siz
+śiṣḷ	1	0	0	1	0	0				0			17	0	0		Sizx
+śiṭa	1	0	0	1	0	0				0			2	0	0		Siwa
+ślath	4	1	1	1	0	1	223994	I		1	817	matched	3	0	1	VERB:V:1	SlaT
+śleṣe	1	0	0	1	0	0				0			1	0	0		Sleze
+śli	2	0	0	1	0	1				0			1	0	1	NONE:1	Sli
+śliṣ	4	1	1	1	0	1	224043	IV	2	1	820	matched	40	0	2	VERB:V:2	Sliz
+ślok	2	0	0	1	0	1				0			4	0	1	VERB:V:1	Slok
+ślokṛ	1	0	0	1	0	0				0			9	0	0		Slokf
+ślā	1	0	1	0	0	0				0	818	unmatched	0	0	0		
+ślāgh	4	1	1	1	0	1	224011	I		1	819	matched	5	0	1	VERB:V:1	SlAG
+ślāghṛ	1	0	0	1	0	0				0			9	0	0		SlAGf
+śmīla	2	0	0	1	0	1				0			5	0	1	n:1	SmIla
+śnath	4	1	1	1	0	1	221953	I		1	804	matched	8	0	1	VERB:V:1	SnaT
+śo	3	1	0	1	0	1	221333	III,IV		1			49	0	1	VERB:V:1	So
+śodhane	1	0	0	1	0	0				0			3	0	0		SoDane
+śodhe	1	0	0	1	0	0				0			1	0	0		SoDe
+śoṇ	2	0	0	1	0	1				0			5	0	1	VERB:V:1	SoR
+śoṇṛ	1	0	0	1	0	0				0			10	0	0		SoRf
+śragi	1	0	0	1	0	0				0			2	0	0		Sragi
+śraki	1	0	0	1	0	0				0			4	0	0		Sraki
+śram	4	1	1	1	0	1	222401	IV	1	1	808	matched	17	0	2	VERB:V:1;ind:1	Sram
+śrambh	3	0	1	1	0	1				0	809	matched	7	0	1	VERB:V:1	SramB
+śramu	1	0	0	1	0	0				0			23	0	0		Sramu
+śran	1	0	1	0	0	0				0	807	unmatched	0	0	0		
+śranbhu	1	0	0	1	0	0				0			20	0	0		SranBu
+śrantha	2	0	0	1	0	1				0			14	0	1	m:1	SranTa
+śrath	4	1	1	1	0	1	222382	IX		1	806	matched	9	0	1	VERB:V:1	SraT
+śratha	2	0	0	1	0	1				0			13	0	1	NONE:1	SraTa
+śraṇ	2	0	0	1	0	1				0			3	0	1	VERB:V:1	SraR
+śraṇa	1	0	0	1	0	0				0			28	0	0		SraRa
+śri	4	1	1	1	0	1	222829	I	1	1	811	matched	73	0	4	NONE:2;VERB:V:1;n:1	Sri
+śriñ	1	0	0	1	0	0				0			36	0	0		SriY
+śriṣ	3	0	1	1	0	1				0	812	matched	3	0	2	VERB:V:1;NONE:1	Sriz
+śriṣu	1	0	0	1	0	0				0			1	0	0		Srizu
+śru	4	1	1	1	0	1	223393	V	1	1	815	matched	131	0	3	VERB:V:1;NONE:1;m:1	Sru
+śruṣ	2	0	1	0	0	1				0	816	matched	0	0	1	NONE:1	
+śrā	4	1	1	1	0	1	222686	I,II,IV		1	810	unmatched	21	0	1	VERB:V:1	SrA
+śrī	4	1	1	1	0	1	222857	IX	1	1	813,814	homonym_shared	24	0	468	m:212;n:116;f:95;m:f:n:26;m:n:6	SrI
+śu	2	0	0	1	0	1				0			8	0	2	VERB:V:1;ind:1	Su
+śubh	4	1	1	1	0	1	219616	I,VI	1	1	793	matched	54	0	2	VERB:V:1;f:1	SuB
+śuc	4	1	1	1	0	1	219184	I,IV	1	1	790	matched	85	0	4	VERB:V:2;m:f:n:1;f:1	Suc
+śucir	1	0	0	1	0	0				0			5	0	0		Sucir
+śucya	1	0	0	1	0	0				0			16	0	0		Sucya
+śuddhau	1	0	0	1	0	0				0			1	0	0		SudDO
+śudh	4	1	1	1	0	1	219366	I,IV		1	792	matched	28	0	1	VERB:V:1	SuD
+śugh	1	0	0	1	0	0				0			1	0	0		SuG
+śuj	2	0	1	0	0	1				0	791	matched	0	0	1	VERB:V:1	
+śuk	2	0	0	1	0	1				0			29	0	1	VERB:V:1	Suk
+śulb	2	0	0	1	0	1				0			6	0	1	VERB:V:1	Sulb
+śulk	2	0	0	1	0	1				0			9	0	1	VERB:V:1	Sulk
+śumbh	2	0	0	1	0	1				0			1	0	1	VERB:V:1	SumB
+śuna	2	0	0	1	0	1				0			1	0	8	m:4;m:f:n:2;n:1;f:1	Suna
+śunbha	1	0	0	1	0	0				0			16	0	0		SunBa
+śundh	2	0	0	1	0	1				0			1	0	2	VERB:V:2	SunD
+śundha	1	0	0	1	0	0				0			20	0	0		SunDa
+śuṣ	4	1	1	1	0	1	219943,220027	IV,VI	1,3	2	794,795	homonym_shared	64	0	3	VERB:V:2;NONE:1	Suz
+śuṭha	1	0	0	1	0	0				0			6	0	0		SuWa
+śuṭhi	1	0	0	1	0	0				0			6	0	0		SuWi
+śvabhr	2	0	0	1	0	1				0			8	0	1	VERB:V:1	SvaBr
+śvaci	1	0	0	1	0	0				0			4	0	0		Svaci
+śval	2	0	0	1	0	1				0			8	0	1	VERB:V:1	Sval
+śvalka	1	0	0	1	0	0				0			2	0	0		Svalka
+śvarta	1	0	0	1	0	0				0			1	0	0		Svarta
+śvas	4	1	1	1	0	1	224373	II	1	1	822	matched	77	0	2	VERB:V:1;ind:1	Svas
+śvañc	2	0	1	0	0	1				0	821	matched	0	0	1	VERB:V:1	
+śvaṭha	2	0	0	1	0	1				0			12	0	1	NONE:1	SvaWa
+śvaṭhi	1	0	0	1	0	0				0			5	0	0		SvaWi
+śvi	3	1	0	1	0	1	224480	I		1			53	0	1	VERB:V:1	Svi
+śvidi	1	0	0	1	0	0				0			11	0	0		Svidi
+śvit	3	0	1	1	0	1				0	824	matched	6	0	2	VERB:V:1;SEE:1	Svit
+śvitā	1	0	0	1	0	0				0			2	0	0		SvitA
+śvā	2	0	1	0	0	1				0	823	unmatched	0	0	20	m:f:n:9;m:4;SEE:3;ICF:Svan:1;m:n:1	
+śvādiśabde	1	0	0	1	0	0				0			2	0	0		SvAdiSabde
+śyai	3	1	0	1	0	1	222309	I		1			6	0	1	VERB:V:1	SyE
+śyaiṅ	1	0	0	1	0	0				0			41	0	0		SyEN
+śyā	1	0	1	0	0	0				0	805	matched	0	0	0		
+śā	1	0	1	0	0	0				0	779	matched	0	0	0		
+śākhṛ	1	0	0	1	0	0				0			11	0	0		SAKf
+śāl	3	1	0	1	0	1	215926	I,X		1			3	0	1	VERB:V:1	SAl
+śāna	2	0	0	1	0	1				0			7	0	2	m:2	SAna
+śāntv	2	0	0	1	0	1				0			1	0	1	VERB:V:1	SAntv
+śās	4	1	1	1	0	1	216290	II	1	1	780,781	homonym_shared	34	0	4	VERB:V:1;f:1;NONE:1;SEE:1	SAs
+śāsu	1	0	0	1	0	0				0			110	0	0		SAsu
+śī	4	1	1	1	0	1	218170	I,II	1	1	788,789	homonym_shared	64	0	4	VERB:V:2;m:f:n:1;f:1	SI
+śīk	3	1	0	1	0	1	218177	I,X		1			1	0	1	VERB:V:1	SIk
+śīka	1	0	0	1	0	0				0			17	0	0		SIka
+śīkṛ	1	0	0	1	0	0				0			9	0	0		SIkf
+śīl	3	1	0	1	0	1	218655	I,X	1	1			26	0	2	VERB:V:1;m:1	SIl
+śīlaya	2	0	0	1	0	1				0			2	0	1	NONE:1	SIlaya
+śīli	1	0	0	1	0	0				0			1	0	0		SIli
+śīṅ	1	0	0	1	0	0				0			265	0	0		SIN
+śū	3	0	1	1	0	1				0	796	unmatched	9	0	7	NONE:2;SEE:2;m:2;m:f:n:1	SU
+śūl	2	0	0	1	0	1				0			31	0	1	VERB:V:1	SUl
+śūr	2	0	0	1	0	1				0			6	0	1	VERB:V:1	SUr
+śūrp	2	0	0	1	0	1				0			27	0	1	VERB:V:1	SUrp
+śūrī	1	0	0	1	0	0				0			6	0	0		SUrI
+śūṣ	2	0	0	1	0	1				0			16	0	1	VERB:V:1	SUz
+śṛ	1	0	1	0	0	0				0	797,798,799	homonym_shared	0	0	0		
+śṛdh	4	1	1	1	0	1	220772	I		1	800	matched	4	0	1	VERB:V:1	SfD
+śṛdhu	2	0	0	1	0	1				0			26	0	1	m:f:1	SfDu
+śṝ	3	1	0	1	0	1	220783	IX		1			114	0	1	VERB:V:1	SF
+ūh	4	1	1	1	0	1	38375,38392	I	1,2	2	67,68	homonym_shared	115	0	2	VERB:V:2	Uh
+ūna	2	0	0	1	0	1				0			36	0	10	m:f:n:3;f:3;n:2;m:2	Una
+ūrd	2	1	0	0	0	1	38104	I		1			0	0	1	VERB:V:1	Urd
+ūrj	3	1	0	1	0	1	38037		1	1			48	0	2	VERB:V:1;f:1	Urj
+ūrjja	1	0	0	1	0	0				0			2	0	0		Urjja
+ūrv	2	1	0	0	0	1	38324	I		1			0	0	5	n:2;m:f#I:n:1;VERB:V:1;SEE:1	Urv
+ūrṇu	4	1	1	1	0	1	38079	II		1	66	unmatched	10	0	1	VERB:V:1	UrRu
+ūrṇuñ	1	0	0	1	0	0				0			105	0	0		UrRuY
+ūy	2	1	0	0	0	1	38000	I		1			0	0	1	VERB:V:1	Uy
+ūyī	1	0	0	1	0	0				0			45	0	0		UyI
+ūṣ	3	1	0	1	0	1	38333	I		1			11	0	1	VERB:V:1	Uz
+ūṭha	1	0	0	1	0	0				0			34	0	0		UWa
+ḍam	2	0	1	0	0	1				0	282	unmatched	0	0	1	VERB:V:1	
+ḍamb	3	0	1	1	0	1				0	283	matched	2	0	1	VERB:V:1	qamb
+ḍapa	1	0	0	1	0	0				0			2	0	0		qapa
+ḍhauk	4	1	1	1	0	1	81523	I		1	286	matched	3	0	1	VERB:V:1	QOk
+ḍhaukṛ	1	0	0	1	0	0				0			51	0	0		QOkf
+ḍhuṇḍh	2	0	0	1	0	1				0			1	0	1	NONE:1	QuRQ
+ḍipa	1	0	0	1	0	0				0			37	0	0		qipa
+ḍuake	1	0	0	0	1	0				0			0	1	0		
+ḍuicken	1	0	0	0	1	0				0			0	1	0		
+ḍuiver	1	0	0	0	1	0				0			0	2	0		
+ḍval	2	0	1	0	0	1				0	285	unmatched	0	0	1	NONE:1	
+ḍāc	1	0	0	1	0	0				0			1	0	0		qAc
+ḍī	4	1	1	1	0	1	81442	I,IV		1	284	matched	12	0	1	VERB:V:1	qI
+ḍīṅ	1	0	0	1	0	0				0			13	0	0		qIN
+ṇabha	1	0	0	1	0	0				0			65	0	0		RaBa
+ṇada	1	0	0	1	0	0				0			93	0	0		Rada
+ṇaha	1	0	0	1	0	0				0			66	0	0		Raha
+ṇakha	1	0	0	1	0	0				0			2	0	0		RaKa
+ṇakhi	1	0	0	1	0	0				0			1	0	0		RaKi
+ṇakṣa	1	0	0	1	0	0				0			3	0	0		Rakza
+ṇala	1	0	0	1	0	0				0			9	0	0		Rala
+ṇama	1	0	0	1	0	0				0			83	0	0		Rama
+ṇasa	1	0	0	1	0	0				0			5	0	0		Rasa
+ṇaya	1	0	0	1	0	0				0			3	0	0		Raya
+ṇaśa	1	0	0	1	0	0				0			111	0	0		RaSa
+ṇaṭa	1	0	0	1	0	0				0			75	0	0		Rawa
+ṇedṛ	1	0	0	1	0	0				0			3	0	0		Redf
+ṇeṣṛ	1	0	0	1	0	0				0			1	0	0		Rezf
+ṇica	1	0	0	1	0	0				0			2	0	0		Rica
+ṇidi	1	0	0	1	0	0				0			4	0	0		Ridi
+ṇidṛ	1	0	0	1	0	0				0			11	0	0		Ridf
+ṇijir	1	0	0	1	0	0				0			79	0	0		Rijir
+ṇikṣa	1	0	0	1	0	0				0			6	0	0		Rikza
+ṇila	1	0	0	1	0	0				0			4	0	0		Rila
+ṇivi	1	0	0	1	0	0				0			1	0	0		Rivi
+ṇiśa	1	0	0	1	0	0				0			1	0	0		RiSa
+ṇiṅa	1	0	0	1	0	0				0			2	0	0		RiNa
+ṇu	1	0	0	1	0	0				0			78	0	0		Ru
+ṇuda	1	0	0	1	0	0				0			89	0	0		Ruda
+ṇyantām	1	0	0	1	0	0				0			1	0	0		RyantAm
+ṇyantāt	1	0	0	1	0	0				0			4	0	0		RyantAt
+ṇāsṛ	1	0	0	1	0	0				0			2	0	0		RAsf
+ṇī	1	0	0	1	0	0				0			1	0	0		RI
+ṇīla	1	0	0	1	0	0				0			16	0	0		RIla
+ṇīva	1	0	0	1	0	0				0			3	0	0		RIva
+ṇīṅ	1	0	0	1	0	0				0			201	0	0		RIN
+ṇū	1	0	0	1	0	0				0			21	0	0		RU
+ṛ	4	1	1	1	0	1	38410	I,III,V	4	1	69	unmatched	199	0	7	m:3;NONE:1;ind:1;f:1;VERB:V:1	f
+ṛail	1	0	0	0	1	0				0			0	1	0		
+ṛaint	1	0	0	0	1	0				0			0	1	0		
+ṛall	1	0	0	0	1	0				0			0	2	0		
+ṛall aṭay	1	0	0	0	1	0				0			0	1	0		
+ṛart	1	0	0	0	1	0				0			0	1	0		
+ṛashion	1	0	0	0	1	0				0			0	3	0		
+ṛatten	1	0	0	0	1	0				0			0	3	0		
+ṛavor	1	0	0	0	1	0				0			0	1	0		
+ṛc	4	1	1	1	0	1	38696	VI	1	1	70	unmatched	7	0	2	VERB:V:1;f:1	fc
+ṛca	2	0	0	1	0	1				0			12	0	2	NONE:1;m:1	fca
+ṛccha	1	0	0	1	0	0				0			42	0	0		fcCa
+ṛch	3	1	0	1	0	1	38773	VI		1			9	0	1	VERB:V:1	fC
+ṛd	1	0	1	0	0	0				0	74	matched	0	0	0		
+ṛdh	4	1	1	1	0	1	38930	II,IV,V,VI,VII		1	75	matched	12	0	1	VERB:V:1	fD
+ṛdhu	1	0	0	1	0	0				0			64	0	0		fDu
+ṛdupatvāt	1	0	0	1	0	0				0			1	0	0		fdupatvAt
+ṛear	1	0	0	0	1	0				0			0	2	0		
+ṛight	1	0	0	0	1	0				0			0	2	0		
+ṛill	1	0	0	0	1	0				0			0	2	0		
+ṛill up	1	0	0	0	1	0				0			0	1	0		
+ṛind	1	0	0	0	1	0				0			0	1	0		
+ṛj	4	1	1	1	0	1	38776	I		1	71,72	homonym_shared	44	0	1	VERB:V:1	fj
+ṛji	1	0	0	1	0	0				0			41	0	0		fji
+ṛju	2	0	0	1	0	1				0			6	0	31	m:f:n:12;f:6;m:5;n:3;ind:2	fju
+ṛkṣa	2	0	0	1	0	1				0			5	0	26	m:13;n:5;m:f:n:4;f:3;m:n:1	fkza
+ṛloat	1	0	0	0	1	0				0			0	1	0		
+ṛloṭ	1	0	0	0	1	0				0			0	6	0		
+ṛly	1	0	0	0	1	0				0			0	2	0		
+ṛly, ṛall	1	0	0	0	1	0				0			0	1	0		
+ṛnpha	1	0	0	1	0	0				0			35	0	0		fnPa
+ṛorce	1	0	0	0	1	0				0			0	1	0		
+ṛorsake	1	0	0	0	1	0				0			0	1	0		
+ṛph	2	1	0	0	0	1	38955	VI		1			0	0	1	VERB:V:1	fP
+ṛpha	1	0	0	1	0	0				0			37	0	0		fPa
+ṛruit	1	0	0	0	1	0				0			0	1	0		
+ṛt	4	1	1	1	0	1	38911			1	73	unmatched	8	0	1	VERB:V:1	ft
+ṛti	2	0	0	1	0	1				0			3	0	2	f:1;m:1	fti
+ṛtiḥ	1	0	0	1	0	0				0			75	0	0		ftiH
+ṛutuere	1	0	0	0	1	0				0			0	1	0		
+ṛñj	3	1	0	1	0	1	38847,38849	I,IV,VI,VII	1,2	2			6	0	2	VERB:V:2	fYj
+ṛś	1	0	1	0	0	0				0	76	unmatched	0	0	0		
+ṛṇ	3	1	0	1	0	1	38854	VIII		1			4	0	1	VERB:V:1	fR
+ṛṇu	1	0	0	1	0	0				0			52	0	0		fRu
+ṛṣ	4	1	1	1	0	1	39001,39039	I,VI	1,2	2	77	matched	14	0	2	VERB:V:2	fz
+ṛṣī	2	0	0	1	0	1				0			44	0	3	m:f:n:2;f:1	fzI
+ṝ	2	0	0	1	0	1				0			1	0	7	m:2;NONE:1;ind:1;f:1;n:1	F
+ṣa	2	0	0	1	0	1				0			2	0	8	n:3;m:2;m:f:n:2;NONE:1	za
+ṣaca	1	0	0	1	0	0				0			19	0	0		zaca
+ṣada	1	0	0	1	0	0				0			3	0	0		zada
+ṣadḷ	1	0	0	1	0	0				0			81	0	0		zadx
+ṣage	1	0	0	1	0	0				0			4	0	0		zage
+ṣagha	1	0	0	1	0	0				0			1	0	0		zaGa
+ṣaha	1	0	0	1	0	0				0			3	0	0		zaha
+ṣai	1	0	0	1	0	0				0			8	0	0		zE
+ṣala	1	0	0	1	0	0				0			4	0	0		zala
+ṣama	1	0	0	1	0	0				0			5	0	0		zama
+ṣamba	1	0	0	1	0	0				0			3	0	0		zamba
+ṣanja	1	0	0	1	0	0				0			25	0	0		zanja
+ṣapa	1	0	0	1	0	0				0			3	0	0		zapa
+ṣasa	2	0	0	1	0	1				0			9	0	1	NONE:1	zasa
+ṣasja	1	0	0	1	0	0				0			16	0	0		zasja
+ṣaṇa	1	0	0	1	0	0				0			24	0	0		zaRa
+ṣaṇu	1	0	0	1	0	0				0			21	0	0		zaRu
+ṣaṭa	1	0	0	1	0	0				0			5	0	0		zawa
+ṣaṭṭa	1	0	0	1	0	0				0			2	0	0		zawwa
+ṣelṛ	1	0	0	1	0	0				0			2	0	0		zelf
+ṣevṛ	1	0	0	1	0	0				0			17	0	0		zevf
+ṣibhi	1	0	0	1	0	0				0			1	0	0		ziBi
+ṣibhu	1	0	0	1	0	0				0			2	0	0		ziBu
+ṣica	1	0	0	1	0	0				0			15	0	0		zica
+ṣidha	1	0	0	1	0	0				0			33	0	0		ziDa
+ṣidhu	1	0	0	1	0	0				0			25	0	0		ziDu
+ṣidhū	1	0	0	1	0	0				0			6	0	0		ziDU
+ṣivu	1	0	0	1	0	0				0			27	0	0		zivu
+ṣmiṅ	1	0	0	1	0	0				0			14	0	0		zmiN
+ṣo	2	0	0	1	0	1				0			43	0	15	m:f:n:3;NONE:3;m:2;SEE:2;ICF:zaz:1	zo
+ṣu	2	0	0	1	0	1				0			11	0	1	m:1	zu
+ṣuha	1	0	0	1	0	0				0			5	0	0		zuha
+ṣura	1	0	0	1	0	0				0			2	0	0		zura
+ṣuṭṭa	1	0	0	1	0	0				0			2	0	0		zuwwa
+ṣvada	1	0	0	1	0	0				0			11	0	0		zvada
+ṣvapa	1	0	0	1	0	0				0			31	0	0		zvapa
+ṣvaṣk	2	0	0	1	0	1				0			1	0	1	VERB:V:1	zvazk
+ṣvaṣka	1	0	0	1	0	0				0			6	0	0		zvazka
+ṣvidā	1	0	0	1	0	0				0			23	0	0		zvidA
+ṣāntva	1	0	0	1	0	0				0			3	0	0		zAntva
+ṣū	2	0	0	1	0	1				0			16	0	1	f:1	zU
+ṣūda	1	0	0	1	0	0				0			12	0	0		zUda
+ṣūṅ	1	0	0	1	0	0				0			16	0	0		zUN
+ṣṇai	1	0	0	1	0	0				0			10	0	0		zRE
+ṣṇasu	1	0	0	1	0	0				0			7	0	0		zRasu
+ṣṇiha	1	0	0	1	0	0				0			25	0	0		zRiha
+ṣṇu	1	0	0	1	0	0				0			4	0	0		zRu
+ṣṇuha	1	0	0	1	0	0				0			3	0	0		zRuha
+ṣṇusu	1	0	0	1	0	0				0			2	0	0		zRusu
+ṣṇā	1	0	0	1	0	0				0			61	0	0		zRA
+ṣṛbhu	1	0	0	1	0	0				0			4	0	0		zfBu
+ṣṛnbhu	1	0	0	1	0	0				0			1	0	0		zfnBu
+ṣṭabhi	1	0	0	1	0	0				0			15	0	0		zwaBi
+ṣṭage	1	0	0	1	0	0				0			1	0	0		zwage
+ṣṭai	1	0	0	1	0	0				0			4	0	0		zwE
+ṣṭaka	1	0	0	1	0	0				0			1	0	0		zwaka
+ṣṭama	1	0	0	1	0	0				0			2	0	0		zwama
+ṣṭana	1	0	0	1	0	0				0			19	0	0		zwana
+ṣṭhala	1	0	0	1	0	0				0			22	0	0		zWala
+ṣṭhiv	3	1	0	1	0	1	225563	I,IV		1			15	0	1	VERB:V:1	zWiv
+ṣṭhivu	1	0	0	1	0	0				0			48	0	0		zWivu
+ṣṭhā	2	0	0	1	0	1				0			1	0	1	NONE:1	zWA
+ṣṭhīv	2	0	1	0	0	1				0	825	matched	0	0	1	VERB:V:1	
+ṣṭima	1	0	0	1	0	0				0			4	0	0		zwima
+ṣṭipṛ	1	0	0	1	0	0				0			1	0	0		zwipf
+ṣṭubhu	1	0	0	1	0	0				0			19	0	0		zwuBu
+ṣṭuca	1	0	0	1	0	0				0			20	0	0		zwuca
+ṣṭupa	1	0	0	1	0	0				0			2	0	0		zwupa
+ṣṭyai	2	0	0	1	0	1				0			25	0	1	NONE:1	zwyE
+ṣṭīma	1	0	0	1	0	0				0			2	0	0		zwIma
+ṭake	1	0	0	0	1	0				0			0	1	0		
+ṭaki	1	0	0	1	0	0				0			8	0	0		waki
+ṭal	3	0	1	1	0	1				0	279	unmatched	8	0	1	VERB:V:1	wal
+ṭander	1	0	0	0	1	0				0			0	2	0		
+ṭash	1	0	0	0	1	0				0			0	2	0		
+ṭaste	1	0	0	0	1	0				0			0	1	0		
+ṭaste aṭay	1	0	0	0	1	0				0			0	1	0		
+ṭaver	1	0	0	0	1	0				0			0	2	0		
+ṭaṅk	3	0	1	1	0	1				0	278	matched	1	0	1	VERB:V:1	waNk
+ṭeaken	1	0	0	0	1	0				0			0	1	0		
+ṭeave	1	0	0	0	1	0				0			0	1	0		
+ṭeep	1	0	0	0	1	0				0			0	1	0		
+ṭet	1	0	0	0	1	0				0			0	2	0		
+ṭhinney	1	0	0	0	1	0				0			0	1	0		
+ṭhirl (?)	1	0	0	0	1	0				0			0	1	0		
+ṭhisper	1	0	0	0	1	0				0			0	1	0		
+ṭikṛ	1	0	0	1	0	0				0			4	0	0		wikf
+ṭin	1	0	0	0	1	0				0			0	1	0		
+ṭink	1	0	0	0	1	0				0			0	2	0		
+ṭip	2	0	0	1	0	1				0			1	0	1	VERB:V:1	wip
+ṭipe	1	0	0	0	1	0				0			0	1	0		
+ṭorship	1	0	0	0	1	0				0			0	1	0		
+ṭound	1	0	0	0	1	0				0			0	1	0		
+ṭrap	1	0	0	0	1	0				0			0	1	0		
+ṭrench	1	0	0	0	1	0				0			0	1	0		
+ṭup	2	0	1	0	0	1				0	281	unmatched	0	0	1	f:1	
+ṭval	2	0	0	1	0	1				0			2	0	1	VERB:V:1	wval
+ṭvala	2	0	0	1	0	1				0			1	0	1	NONE:1	wvala
+ṭīk	3	0	1	1	0	1				0	280	matched	1	0	1	VERB:V:1	wIk
