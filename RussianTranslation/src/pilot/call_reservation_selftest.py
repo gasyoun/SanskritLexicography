@@ -98,6 +98,16 @@ def main():
         cfg = os.path.join(td, 'cfg')
         os.makedirs(cfg)
         original_runner = mao.run_tree_kill
+        # H4915: the probe ration ledger is machine-wide, so this test must not write it. Scratch
+        # root, and a clock that steps 25 h per reading so the three probes below are each legal.
+        original_ration = mao.PROBE_RATION_ROOT, mao._ration_clock
+        tick = [1893456000.0]
+
+        def ration_clock():
+            tick[0] += 25 * 3600
+            return tick[0]
+
+        mao.PROBE_RATION_ROOT, mao._ration_clock = os.path.join(td, 'probe-ration'), ration_clock
         try:
             calls = []
 
@@ -168,6 +178,8 @@ def main():
             raise AssertionError('latency sweep bypassed max_calls=0')
         except CallLimitReached:
             pass
+        finally:
+            mao.PROBE_RATION_ROOT, mao._ration_clock = original_ration
         assert sweep_zero.spent() == 0
     _test_h2079_945_duration_capture()
     print('call_reservation_selftest: PASS (0/1/N, race/resume, finalization, probes/cost, durations)')

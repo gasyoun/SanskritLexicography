@@ -25,8 +25,9 @@ from headless_worker import (DEFAULT_TIMEOUT_S, SAFE_MODE_FLAG, bare_cli_cwd,
                              validate_preflight_artifact, windows_hidden_flags,
                              wrapper_timeout_s)
 from window_common import atomic_write_text
-from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
-                                config_dir_fingerprint, kill_classification,
+from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, ProbeRation,
+                                ProbeRationRefused, config_dir_fingerprint,
+                                kill_classification, probe_ration_root,
                                 progress_window_ms_for,
                                 validate_manifest, validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
@@ -1231,6 +1232,12 @@ PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 # selftest can redirect it into a temp dir instead of writing beside the real probe log.
 PROBE_RAW_DIR = os.path.dirname(HEALTH_PROBE_LOG)
 PROBE_RAW_TAIL_BYTES = 4096          # provider refusals are ~1 KB; 4 KB is generous and still bounded
+# H4915: the machine-wide readiness-probe ration ledger (see execution_contract.ProbeRation). It is
+# NOT derived from HEALTH_PROBE_LOG: that log follows the evidence root, and the per-root split is
+# exactly how the 15-09 third attempt went unseen. Module-level only so a selftest can point it at
+# scratch; `_ration_clock` likewise exists so the pins can stand at a chosen UTC time.
+PROBE_RATION_ROOT = probe_ration_root()
+_ration_clock = time.time
 PROBE_ERR_PATTERN_MAX_CHARS = 40     # the matched regex alternative, never free provider text
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
 # dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
@@ -1473,6 +1480,17 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
     if (not isinstance(active_claim, ActiveCallClaim)
             or not active_claim.is_live_canonical_for(fingerprint)):
         raise ValueError('probe active-call claim does not bind config directory')
+    # H4915: the ration gate. This primitive is the one spawn every paid readiness probe goes
+    # through (live_probe -> probe_fleet / bounded_staged_run / h963_c4_gate0_probe, and
+    # latency_payload_sweep directly), so the refusal lands here, BEFORE the reservation and the
+    # spawn. The first call under a claim spends one attempt; later calls under the same held claim
+    # (the measured leg after its warm-up, the rest of a sweep) are part of that attempt. The
+    # claim is what makes check-then-record safe: no other process can probe this profile now.
+    if not active_claim.ration_admitted:
+        ration, ration_now = ProbeRation(PROBE_RATION_ROOT), _ration_clock()
+        ration.check(fingerprint, ration_now, label=account)
+        ration.record(fingerprint, ration_now, purpose=reservation_purpose, account=account)
+        active_claim.ration_admitted = True
     prompt = _probe_prompt(payload_bytes)
     # H2647: capture the BOX's state at the moment of the spawn, not at emit time -- for a
     # call that can run 600 s, "what the machine looked like when we asked" is the fact that
@@ -1779,6 +1797,12 @@ def probe_fleet(accounts, claude='claude', payload_bytes=6491, model=EXACT_GEN_M
     N==1 is a pure pass-through: ``probe_fleet([acc])`` returns ``{acc: live_probe(acc.config_dir,
     ...)}`` and the single measured latency is identical to the pre-N-profile
     ``live_probe(accounts[0])`` reading — the Windows-100 single-profile path is unchanged."""
+    # H4915: refuse the WHOLE fleet up front when any profile is out of ration, so a fleet never
+    # spends account 1's attempt and then stops on account 2. `_probe_call` still re-checks under
+    # each profile's claim; this is the no-spend preflight, not the gate.
+    ration, ration_now = ProbeRation(PROBE_RATION_ROOT), _ration_clock()
+    for acc in accounts:
+        ration.check(config_dir_fingerprint(acc['config_dir']), ration_now, label=acc['name'])
     latencies = {}
     for acc in accounts:
         name = acc['name']
