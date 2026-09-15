@@ -25,7 +25,7 @@ if ($out -match 'validation failed') { L 'STOP: c1 probe failed (still limited/l
 L 'probe GO - c1 validated'
 # Step 2: drop stale prepared leases so keys free up (legacy static id, harmless no-op
 # once the id is timestamp-unique, kept for leases left over from before this fix)
-& $PY -c "import json; p=r'C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\state.json'; s=json.load(open(p, encoding='utf-8')); s['leases']=[x for x in s.get('leases',[]) if x.get('id') not in ('no_pwg_w10','h4213can02','no_pwg_w11')]; json.dump(s, open(p,'w',encoding='utf-8'), ensure_ascii=False, indent=1)"
+& $PY -c "import json; p=r'C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\state.json'; s=json.load(open(p, encoding='utf-8')); s['leases']=[x for x in s.get('leases',[]) if (x.get('id') not in ('no_pwg_w10','h4213can02','no_pwg_w11')) and not x.get('id','').startswith('h4213can')]; json.dump(s, open(p,'w',encoding='utf-8'), ensure_ascii=False, indent=1)"
 L 'stale leases dropped'
 # Step 2b: remove orphaned artifacts dirs for dropped leases (window-id existence guard)
 Remove-Item -Recurse -Force -ErrorAction SilentlyContinue output\coordinator\artifacts\h4213can02, output\coordinator\artifacts\no_pwg_w10, output\coordinator\artifacts\no_pwg_w11

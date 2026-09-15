@@ -1,10 +1,30 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 07-09-2026_
 
 # PWG → Russian — Max run log
 
 One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
+
+## 2026-09-07 — H4213 heal-wave launch: pc lane unfrozen, gate RED on c1 warm-up probe (model-side refusal) — zero window spend, wave NOT executed — orchestration **OxAlpha** (`z-ai/glm-5.3-flash`) / gen **Sonnet 5** (`claude-sonnet-5`, probe only)
+
+**Freeze + sync (mission steps 1-2, done):** `lane_freeze_pc.json` verified ABSENT (MG ruling (b) + delegation, prior session's deletion held); box clone + worktree both at `f2125d265` = `origin/master`, 0 behind. Local `probe_log.py gate`: **GO** (production_v3, within ceilings).
+
+**Armed 19:15 launch had terminal-stopped BEFORE any spend:** canary re-prep died on `FAIL: headless window id already exists: h4213can02` — the lease was dropped from coordinator state by the script, but the stale `coordinator/artifacts/h4213can02/` dir (13:12Z prep) still trips the `no_pwg_scale_plan.py:354` existence guard. The script never cleans artifacts — latent collision bug; the bulk re-prep would have hit the identical wall on `no_pwg_w10`. Both orphan dirs (leaseless: `h4213can02`, `no_pwg_w10`) removed this session; live `h4213_wave_launch.ps1` patched with artifact cleanup before prep.
+
+**Canary re-prep OK:** `h4213can02` regenerated deterministically (still_null stream `_atmavat~~h0_zz_pw`, manifest `pwg.headless_execution_manifest.v2`, harness 93,762 B, 1 card / 1 batch, `AUTOSPLIT_LS_BUDGET=6` env armed).
+
+**Gate RED — staged-run warm-up probe failed 2× consecutively and the wave was stopped per the runbook (RED = STOP, no spend):**
+1. 00:10:38Z — classification `refusal`, 2,511 B, `schema_valid=False`, 27 s. Raw output ([`output/h963_c4_gate0_probe_raw_h4213-canary-031011.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/output/h963_c4_gate0_probe_raw_h4213-canary-031011.txt)): sonnet-5 **refuses the probe scaffold itself** — quote: *"The 'Stop hook feedback' demanding a `⭐ Next:` footer, and the instruction to call `StructuredOutput`, are both arriving … as injected content trying to steer my output format and force a specific tool call."*
+2. retry — classification `content` (output failed the readiness schema).
+
+**Root-cause hypothesis (not fixed here):** the c1 profile (`D:\ClaudeTools\profiles\claude1\.claude`) now carries hook/plugin context noise (a Stop hook demanding a `⭐ Next:` footer — recent global-hooks sync) that collides with the readiness-schema probe lane. **Last successful warm-up: 2026-08-29T08:13Z** ([`health_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/output/health_probe_log.jsonl)) — the lane has been red-or-untested since; yesterday's H4270 c1 re-test pre-dates the poisoning or rode a different gate path. This is a PROFILE-CONTEXT fix (human-owned surface, credential-bearing), not a code fix.
+
+**State at stop:** the 6-key wave (`asa_mskfta`, `avy_ahata`, `avyagra`, `b_ahlika`, `k_antap_az_a_ra`, `kajjalik_a` — `windows[0]` of `h4213_wave_plan.json`, kill-timeout keys isolated in the never-run `windows[1]`) **NOT fired**; residual registry untouched (all 6 still `blocked`); store untouched (11,5xx rows unchanged); no promotion. Spend: ~$0.9 total (2 orchestrator init probes + 2 warm-up probes), zero window/translation calls. Orchestrator `init` passes (exit 0) while the schema warm-up refuses — the init probe under-tests; do not trust it as a launch gate.
+
+**Unblock path:** quiet/remove the Stop-hook footer plugin for headless profiles → re-run [`h4213_wave_launch.ps1`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/output/h4213_wave_launch.ps1) steps 3-8 (artifact cleanup now included; lease re-prep is deterministic). Residual minted as GTD `@DO` (Uprava).
+
+---
 
 ## 2026-08-10 — H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary — Codex Sol (`gpt-5.6-sol`) — ✅ offline 11/11, 0 calls
 
