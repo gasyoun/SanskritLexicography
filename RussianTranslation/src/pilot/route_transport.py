@@ -25,13 +25,20 @@ SCHEMA = 'pwg.transport_envelope.v1'
 COMPARISON_SCHEMA = 'pwg.route_comparison.v1'
 GATEWAY_ROUTE = 'router-cheap-agent'
 ANTHROPIC_ROUTE = 'anthropic-messages'
-SUPPORTED_ROUTES = (GATEWAY_ROUTE, ANTHROPIC_ROUTE)
+#: H4531: the async Message Batches transport. A separate route token, not a flag on
+#: ``ANTHROPIC_ROUTE``: the billing mode, the latency contract and the failure classes
+#: all differ, and an envelope that could not say which of the two produced it would
+#: make the cost/latency comparison unreadable.
+ANTHROPIC_BATCHES_ROUTE = 'anthropic-batches'
+SUPPORTED_ROUTES = (GATEWAY_ROUTE, ANTHROPIC_ROUTE, ANTHROPIC_BATCHES_ROUTE)
 SYNTHETIC_PROVENANCE = 'synthetic_control'
 FAILURE_CLASSES = (
     'authentication', 'rate_limit', 'connection', 'timeout',
     'model_substitution', 'malformed_output', 'schema_failure',
     'unevaluable_cost', 'content_audit_failure', 'reservation_exhausted',
     'ambiguous_resume', 'transport_error',
+    # H4531 batches-only terminal states reported by the provider per request.
+    'batch_expired', 'batch_canceled',
 )
 TN_RE = re.compile(r'\{T\d+\}')
 LATIN_RE = re.compile(r'[A-Za-z]')
