@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 14-09-2026_
+_Created: 01-08-2026 · Last updated: 15-09-2026_
 
 # FINDINGS — cross-repo empirical registry
 
