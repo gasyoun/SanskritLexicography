@@ -158,14 +158,15 @@ Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
 
 Russian scholarly indices print names in Cyrillic; no safe rule turns
 Cyrillic back into SLP1 (FINDINGS §60). Only sanctioned mapping: the lookup
-table [cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 534 rows, every key derived from an
-IAST witness printed beside the Cyrillic form, **zero rule-derived keys**
+table [cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 622 rows via two intakes,
+every key taken from a named authority, **zero rule-derived keys**
 (`rule_derived_keys: 0` is the citable invariant). **Sync:** changing the
 table re-runs its builder
-[h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py) and refreshes
-[H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json) **same PR**. Never hand-add a row
-without an IAST witness; the 20 pure-Cyrillic indices stay unkeyed until an
-onomasticon covers them ([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) §6).
+[h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py) (witness-first intake) or the backfill tool
+[h4750_cyr_slp1_backfill.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h4750_cyr_slp1_backfill.py) (onomasticon-first intake: key COPIED verbatim from an
+inm/pui `<k1>`, IAST→Cyrillic rendering used only as an exact-match join to the attested spelling) and refreshes
+[H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json) / [H4750_cyr_slp1_backfill.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4750_cyr_slp1_backfill.json) **same PR**. Never hand-add a row
+without an IAST witness or an onomasticon `<k1>`; render-collapsed ambiguous spellings ship disclosed, never resolved ([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) §6).
 
 ## Authoring conventions
 
