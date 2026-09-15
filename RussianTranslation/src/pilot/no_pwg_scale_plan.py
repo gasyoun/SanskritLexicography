@@ -429,7 +429,7 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     }
 
 
-def used_window_indices(prefix, here=HERE, out=OUT):
+def used_window_indices(prefix, here=HERE, out=OUT, coord_dir=None):
     """Return the set of numeric window indices already used for `prefix`.
 
     Scans HERE for `run_pilot_wf.<prefix>NN.js` harnesses and OUT for
@@ -439,10 +439,22 @@ def used_window_indices(prefix, here=HERE, out=OUT):
     H809 W3: `--start-index` was a pure label knob whose stale `.ai_state` value (4)
     silently collided with already-run w04/w05; deriving the used set from disk removes
     the guesswork.
+
+    H4530 (11-09-2026), stall cause 4 upstreamed: the two scans above are the WRONG id
+    space for a `--headless` run. There the window root's existence is decided by
+    `<coord_dir>/artifacts/<root>/execution_manifest.<root>.json` (see `plan_window`),
+    and a run that died after preparing but before producing `wf_output` leaves that
+    directory with NO harness in HERE and NO output in OUT — so the auto-index happily
+    re-picked the SAME root and every retry died on `FAIL: headless window id already
+    exists`, not on a transient error. Three 06/07-09 `h4213can` launch attempts burned
+    exactly this way. A per-run timestamped prefix worked around it in the launcher;
+    counting the artifacts directories removes the collision itself, so a regenerated
+    launcher with a static prefix cannot reintroduce it. `out/headless_dryrun` is the
+    `--dry-run` twin of that directory and is scanned on the same footing.
     """
     pat = re.compile(re.escape(prefix) + r'0*([0-9]+)')
     used = set()
-    for base, prefix, suffix in (
+    for base, name_prefix, suffix in (
         (here, 'run_pilot_wf.', '.js'),
         (out, 'wf_output.', '.json'),
     ):
@@ -451,17 +463,35 @@ def used_window_indices(prefix, here=HERE, out=OUT):
         except OSError:
             continue
         for name in names:
-            if not (name.startswith(prefix) and name.endswith(suffix)):
+            if not (name.startswith(name_prefix) and name.endswith(suffix)):
                 continue
             m = pat.search(name)
+            if m:
+                used.add(int(m.group(1)))
+    # prepared-but-unfinished headless roots: the id space the existence guard uses.
+    # Anchored, and bounded to a plausible window index (roots are `%02d`), so a
+    # timestamp-prefixed leftover such as `h4213can091023345702` is not misread under the
+    # bare `h4213can` prefix as index 91_023_345_702 and does not launch the picker into
+    # the far future. Under its OWN prefix (`h4213can0910233457`) it still reads as 2.
+    root_pat = re.compile(re.escape(prefix) + r'0*([0-9]{1,3})(?:[._-]|$)')
+    root_bases = [os.path.join(out, 'headless_dryrun')]
+    if coord_dir:
+        root_bases.append(os.path.join(os.path.abspath(coord_dir), 'artifacts'))
+    for base in root_bases:
+        try:
+            names = os.listdir(base)
+        except OSError:
+            continue
+        for name in names:
+            m = root_pat.match(name)
             if m:
                 used.add(int(m.group(1)))
     return used
 
 
-def next_free_index(prefix, minimum=2, here=HERE, out=OUT):
+def next_free_index(prefix, minimum=2, here=HERE, out=OUT, coord_dir=None):
     """Lowest unused index >= minimum for `prefix` (max(used)+1, floored at minimum)."""
-    used = used_window_indices(prefix, here, out)
+    used = used_window_indices(prefix, here, out, coord_dir=coord_dir)
     return max([minimum - 1] + sorted(used)) + 1
 
 
@@ -530,12 +560,16 @@ def main(argv=None):
     # `--plan-only` prepares nothing, so a stale/colliding label is harmless there and
     # never blocks a dry-run plan.
     preparing = (not args.plan_only) and args.limit_windows > 0
+    # H4530: a headless run's ids live in the coordinator artifacts dir, so the index
+    # scan must see it — otherwise a prepared-but-unfinished root is invisible here and
+    # fatal in `plan_window`'s existence guard.
+    coord_dir = args.coordinator_dir
     if args.start_index is None:
-        args.start_index = next_free_index(args.prefix)
+        args.start_index = next_free_index(args.prefix, coord_dir=coord_dir)
     elif preparing and not args.force_index:
-        used = used_window_indices(args.prefix)
+        used = used_window_indices(args.prefix, coord_dir=coord_dir)
         if args.start_index in used:
-            free = next_free_index(args.prefix)
+            free = next_free_index(args.prefix, coord_dir=coord_dir)
             raise SystemExit(
                 'FAIL: --start-index %d collides with an index already used on disk for '
                 'prefix %r (used: %s). Next free index is %d. Omit --start-index to '
