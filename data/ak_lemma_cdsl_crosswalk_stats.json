@@ -1,0 +1,155 @@
+{
+ "handoff": "H4746",
+ "ak_source": "AMAR/amar.txt (Cologne Amarakosha; NOT in CDSL, H3862)",
+ "union_source": "HeadwordLists/union/union_headwords.tsv (15 CDSL dicts)",
+ "join": "exact SLP1 string equality on the union key (house standard)",
+ "ak_synsets": 5590,
+ "ak_lemma_instances": 14036,
+ "ak_lemma_distinct": 9759,
+ "exact_instance_hits": 13559,
+ "exact_instance_coverage": 96.6,
+ "exact_distinct_hits": 9310,
+ "exact_distinct_coverage": 95.4,
+ "misses_distinct": 449,
+ "fold_near_miss_distinct_diagnostic_only": 64,
+ "per_varga": {
+  "AK-1.1": {
+   "instances": 690,
+   "hits": 678,
+   "coverage": 98.26
+  },
+  "AK-1.10": {
+   "instances": 353,
+   "hits": 346,
+   "coverage": 98.02
+  },
+  "AK-1.2": {
+   "instances": 25,
+   "hits": 25,
+   "coverage": 100.0
+  },
+  "AK-1.3": {
+   "instances": 362,
+   "hits": 346,
+   "coverage": 95.58
+  },
+  "AK-1.4": {
+   "instances": 255,
+   "hits": 250,
+   "coverage": 98.04
+  },
+  "AK-1.5": {
+   "instances": 160,
+   "hits": 160,
+   "coverage": 100.0
+  },
+  "AK-1.6": {
+   "instances": 211,
+   "hits": 204,
+   "coverage": 96.68
+  },
+  "AK-1.7": {
+   "instances": 319,
+   "hits": 314,
+   "coverage": 98.43
+  },
+  "AK-1.8": {
+   "instances": 103,
+   "hits": 101,
+   "coverage": 98.06
+  },
+  "AK-1.9": {
+   "instances": 30,
+   "hits": 29,
+   "coverage": 96.67
+  },
+  "AK-2.1": {
+   "instances": 146,
+   "hits": 142,
+   "coverage": 97.26
+  },
+  "AK-2.10": {
+   "instances": 355,
+   "hits": 347,
+   "coverage": 97.75
+  },
+  "AK-2.2": {
+   "instances": 151,
+   "hits": 151,
+   "coverage": 100.0
+  },
+  "AK-2.3": {
+   "instances": 68,
+   "hits": 67,
+   "coverage": 98.53
+  },
+  "AK-2.4": {
+   "instances": 1451,
+   "hits": 1416,
+   "coverage": 97.59
+  },
+  "AK-2.5": {
+   "instances": 406,
+   "hits": 398,
+   "coverage": 98.03
+  },
+  "AK-2.6": {
+   "instances": 1107,
+   "hits": 1078,
+   "coverage": 97.38
+  },
+  "AK-2.7": {
+   "instances": 391,
+   "hits": 382,
+   "coverage": 97.7
+  },
+  "AK-2.8": {
+   "instances": 898,
+   "hits": 887,
+   "coverage": 98.78
+  },
+  "AK-2.9": {
+   "instances": 872,
+   "hits": 849,
+   "coverage": 97.36
+  },
+  "AK-3.1": {
+   "instances": 1044,
+   "hits": 1031,
+   "coverage": 98.75
+  },
+  "AK-3.2": {
+   "instances": 354,
+   "hits": 346,
+   "coverage": 97.74
+  },
+  "AK-3.3": {
+   "instances": 3990,
+   "hits": 3744,
+   "coverage": 93.83
+  },
+  "AK-3.4": {
+   "instances": 295,
+   "hits": 268,
+   "coverage": 90.85
+  }
+ },
+ "n_dicts_distribution_matched_instances": {
+  "1": 229,
+  "2": 360,
+  "3": 597,
+  "4": 1018,
+  "5": 1198,
+  "6": 1128,
+  "7": 1106,
+  "8": 1486,
+  "9": 1722,
+  "10": 1670,
+  "11": 1319,
+  "12": 1000,
+  "13": 553,
+  "14": 121,
+  "15": 52
+ },
+ "crosswalk_rows": 14036
+}
