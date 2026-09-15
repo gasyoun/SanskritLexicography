@@ -1,0 +1,573 @@
+hw_slp1	iast	pw_L	pw_pc	corr_n	corr_dicts	mahavy_refs	dcs_band	proposed_action	evidence	gloss
+aMSukapallava	aṃśukapallava	209415	7-289-a	2	ben;sch		0	add-entry	B:aMSu;B:aMSuDAraya	
+aMSumadBedasaMgraha	aṃśumadbhedasaṃgraha	209417	7-289-a	2	acc;sch		0	add-entry	B:aMSuDAraya;B:aMSUdaka	
+akadvada	akadvada	209426	7-289-a	3	md;sch;stc		0	add-entry	B:akatTana	
+akapilacCavi	akapilacchavi	209429	7-289-a	2	md;sch		0	add-entry		
+akarAla	akarāla	209435	7-289-a	3	ben;sch;stc		2	add-entry	B:akaraRa;B:akarRa	
+akarmaprApti	akarmaprāpti	209450	7-289-b	3	ben;md;sch		0	add-entry		
+akarmavant	akarmavant	209451	7-289-b	2	sch;stc		0	add-entry	A:akali	
+akaliprasara	akaliprasara	209455	7-289-b	2	md;sch		0	add-entry		
+akalkakalila	akalkakalila	209458	7-289-b	2	md;sch		0	add-entry	B:akalpa	
+akAku	akāku	209467	7-289-b	3	md;sch;stc		0	add-entry		
+akfcCralaNGya	akṛcchralaṅghya	209509	7-289-d	2	md;sch		0	add-entry	B:akfcCrin	
+akftalakzaRa	akṛtalakṣaṇa	209515	7-289-d	2	md;sch		0	add-entry		
+akftAgas	akṛtāgas	209518	7-289-d	2	ben;sch		0	add-entry		
+akfSAnekakaRwaka	akṛśānekakaṇṭaka	209524	7-289-d	2	sch;stc		0	add-entry	B:akfSalakzmI;A:akfzwa	
+akfzwarohin	akṛṣṭarohin	209526	7-289-d	3	ap;lrv;sch		0	add-entry	A:akfzwa	
+akopayant	akopayant	209531	7-289-d	3	cae;ccs;sch		0	add-entry	B:akopana	
+akOsIdya	akausīdya	209534	7-289-d	2	bhs;sch		0	add-entry	B:akOSala;A:akkA	
+akriyAka	akriyāka	209544	7-290-a	2	md;sch		0	add-entry	B:akriya	
+akzetratara	akṣetratara	209625	7-290-b	3	ccs;md;sch		0	add-entry	B:akzetrajYa	
+akzyupanizad	akṣyupaniṣad	209630	7-290-b	2	acc;sch		0	add-entry	B:akzRayAkfta	
+aKaYja	akhañja	209631	7-290-b	2	md;sch		0	add-entry	A:aKaRqamaRqala	
+aKaRqArTanirUpaRa	akhaṇḍārthanirūpaṇa	209633	7-290-b	2	acc;sch		0	add-entry	A:aKaRqamaRqala	
+aKaRqitAjYa	akhaṇḍitājña	209634	7-290-c	2	md;sch		0	add-entry		
+agaRayant	agaṇayant	209644	7-290-c	4	cae;ccs;sch;stc		0	add-entry		
+agaRya	agaṇya	209645	7-290-c	9	ap;ap90;bhs;md;pwg;sch;stc;vcp;yat		2	add-entry		
+agastyaniGaRwu	agastyanighaṇṭu	209662	7-290-c	2	acc;sch		0	add-entry		
+agastyavawa	agastyavaṭa	209663	7-290-c	3	inm;mci;sch		0	add-entry	A:agastyaSAsta	
+agfDnu	agṛdhnu	209684	7-290-d	4	ben;fri;md;sch		0	add-entry	B:agfha	
+agnijananaviDi	agnijananavidhi	209707	7-290-d	2	acc;sch		0	add-entry	B:agnija;B:agnijihva	
+agnipraskandana	agnipraskandana	209724	7-291-a	2	sch;vcp		0	add-entry	A:agnipraRayana	
+agnizwomayAgaviDi	agniṣṭomayāgavidhi	209734	7-291-a	2	acc;sch		0	add-entry	B:agnizwut;B:agnizWa	
+agnihotraprAyaScitta	agnihotraprāyaścitta	209742	7-291-a	2	acc;sch		0	add-entry	A:agnihotraprAyaRa;B:agnihotrin	
+aGawita	aghaṭita	209787	7-291-b	3	md;sch;stc		0	add-entry		
+aGadIpikA	aghadīpikā	209788	7-291-b	2	acc;sch		0	add-entry	B:aGana	
+aGapaYcavivecana	aghapañcavivecana	209790	7-291-b	2	acc;sch		0	add-entry	B:aGana	
+aGavivecana	aghavivecana	209794	7-291-b	2	acc;sch		0	add-entry	B:aGarma;B:aGaSaMsa	
+aGazawka	aghaṣaṭka	209797	7-291-b	2	acc;sch		0	add-entry	B:aGaSaMsin;B:aGAtuka	
+aGorakalpa	aghorakalpa	209802	7-291-b	3	acc;pui;sch		0	add-entry	B:aGfRin;B:aGoraGoratara	
+aNkanaSAstra	aṅkanaśāstra	209807	7-291-b	2	acc;sch		0	add-entry	B:aNkapASa	
+aNgatvanirukti	aṅgatvanirukti	209826	7-291-c	2	acc;sch		0	add-entry		
+aNgadinna	aṅgadinna	209827	7-291-c	2	bhs;sch		0	add-entry		
+aNgulIPaRahastaka	aṅgulīphaṇahastaka	209857	7-291-d	2	bhs;sch		0	add-entry	B:aNgulivezwaka;A:aNgulIBaNga	
+acakita	acakita	209867	7-291-d	3	md;sch;stc		1	add-entry	A:aNGryavanejana;A:acakravarta	
+acandrasUrya	acandrasūrya	209870	7-291-d	2	sch;stc		0	add-entry	B:acaRqa	
+acalendra	acalendra	209882	7-291-d	3	inm;md;sch		0	add-entry	B:acalapura;A:acAkrika	
+acAturmAsya	acāturmāsya	209885	7-291-d	2	sch;stc		0	add-entry		
+acikitsanIya	acikitsanīya	209886	7-291-d	2	md;sch		0	add-entry	B:acit	
+acintanIya	acintanīya	209889	7-291-d	6	ap;cae;ccs;md;sch;vcp		0	add-entry	B:acittapAjas;B:acintya	
+acetita	acetita	209898	7-292-a	3	md;sch;stc		2	add-entry	B:acetana	
+acCidradarSana	acchidradarśana	209912	7-292-a	2	ben;sch		0	add-entry		
+acyutapraca	acyutapraca	209924	7-292-a	2	pwg;sch		0	add-entry		
+acyutaSataka	acyutaśataka	209928	7-292-a	2	acc;sch		0	add-entry		
+ajaqapramAtfsidDi	ajaḍapramātṛsiddhi	209942	7-292-b	2	acc;sch		0	add-entry	B:ajana	
+ajalpant	ajalpant	209957	7-292-b	3	cae;ccs;sch		0	add-entry	B:ajAgalastana	
+ajigIza	ajigīṣa	209968	7-292-b	3	md;sch;stc		0	add-entry	B:ajASva	
+ajitadevAcArya	ajitadevācārya	209969	7-292-b	2	acc;sch		0	add-entry		
+ajIrRAmftamaYjarI	ajīrṇāmṛtamañjarī	209980	7-292-b	2	acc;sch		0	add-entry	B:ajIrRa;B:ajIrRi	
+ajugupsa	ajugupsa	209984	7-292-c	3	ben;sch;stc		0	add-entry	B:ajIvani;A:ajU	
+aYjanaparvan	añjanaparvan	209996	7-292-c	2	inm;sch		2	add-entry	B:aYjanaka	
+aYjalivEBava	añjalivaibhava	210001	7-292-c	2	acc;sch		0	add-entry		
+atanubala	atanubala	210038	7-292-d	2	md;sch		0	add-entry		
+atAttvika	atāttvika	210055	7-292-d	2	fri;sch		0	add-entry	B:atasTAna	
+atikapila	atikapila	210059	7-292-d	2	pui;sch		0	add-entry		
+atikrAntaBAvanIya	atikrāntabhāvanīya	210070	7-293-a	2	pwg;sch		0	add-entry	A:atikrAntAtikrAnta	
+atigarjin	atigarjin	210075	7-293-a	2	pwg;sch		0	add-entry	B:atiguru	
+atiGana	atighana	210079	7-293-a	3	md;sch;stc		2	add-entry		
+aticCedya	aticchedya	210087	7-293-a	2	sch;stc		0	add-entry	B:aticCattraka	
+atidarpita	atidarpita	210103	7-293-b	3	md;sch;stc		0	add-entry	B:atidagDa	
+atidahanAtmaka	atidahanātmaka	210105	7-293-b	3	md;sch;stc		0	add-entry	B:atidAha	
+atiduHKa	atiduḥkha	210109	7-293-b	2	sch;stc		0	add-entry		
+atidurjana	atidurjana	210110	7-293-b	3	md;sch;stc		0	add-entry		
+atidurbala	atidurbala	210113	7-293-b	3	md;sch;stc		0	add-entry		
+atidurvizaha	atidurviṣaha	210115	7-293-b	2	sch;stc		0	add-entry		
+atidUravartin	atidūravartin	210120	7-293-b	3	ben;ccs;sch		0	add-entry	B:atidUra	
+atinadIzRa	atinadīṣṇa	210127	7-293-b	2	ben;sch		0	add-entry		
+atiniBftam	atinibhṛtam	210131	7-293-b	3	md;sch;stc		0	add-entry		
+atinirGfRa	atinirghṛṇa	210132	7-293-b	5	cae;ccs;md;sch;stc		0	add-entry		
+atinirmaTana	atinirmathana	210133	7-293-b	2	sch;stc		1	add-entry		
+atinirviRRa	atinirviṇṇa	210137	7-293-b	2	cae;sch		0	add-entry		
+atipadmin	atipadmin	210141	7-293-b	2	sch;stc		0	add-entry		
+atipiSuna	atipiśuna	210144	7-293-b	3	md;sch;stc		0	add-entry		
+atipratyAsaNga	atipratyāsaṅga	210151	7-293-c	2	sch;stc		0	add-entry		
+atipraloBita	atipralobhita	210159	7-293-c	2	sch;stc		0	add-entry		
+atipraSAnta	atipraśānta	210164	7-293-c	3	cae;sch;stc		0	add-entry		
+atibanDura	atibandhura	210168	7-293-c	2	sch;stc		0	add-entry	B:atibala	
+atiBaya	atibhaya	210174	7-293-c	3	md;sch;stc		1	add-entry		
+atimaYjula	atimañjula	210185	7-293-c	3	md;sch;stc		0	add-entry		
+atimAnuzastava	atimānuṣastava	210195	7-293-d	2	acc;sch		0	add-entry	B:atimAtra;A:atimAla	
+atimUrKa	atimūrkha	210198	7-293-d	2	fri;sch		0	add-entry	A:atimukti	
+atirajasvala	atirajasvala	210205	7-293-d	2	sch;stc		0	add-entry	A:atiyAtrA	
+atiriraMsA	atiriraṃsā	210213	7-293-d	2	sch;stc		1	add-entry	B:atiruz	
+atirocamAna	atirocamāna	210218	7-293-d	3	md;sch;stc		0	add-entry		
+atilolupa	atilolupa	210227	7-293-d	2	sch;stc		1	add-entry	B:ativakra	
+ativatsala	ativatsala	210229	7-293-d	3	md;sch;stc		0	add-entry	B:ativakra	
+ativAtsalya	ativātsalya	210232	7-293-d	2	sch;stc		0	add-entry		
+ativirAjin	ativirājin	210249	7-294-a	2	md;sch		0	add-entry		
+ativizWita	ativiṣṭhita	210257	7-294-a	3	ap;sch;stc		0	add-entry	B:ativizA	
+ativisaMzWula	ativisaṃṣṭhula	210258	7-294-a	3	cae;ccs;sch		0	add-entry		
+ativismaya	ativismaya	210260	7-294-a	2	sch;stc		2	add-entry		
+ativihvala	ativihvala	210263	7-294-a	2	sch;stc		0	add-entry		
+ativIryavant	ativīryavant	210266	7-294-a	2	cae;sch		0	add-entry	B:ativfdDa	
+atiSaNkitavya	atiśaṅkitavya	210282	7-294-b	2	sch;stc		0	add-entry	B:atiSaNkA;B:atiSaya	
+atiSIGra	atiśīghra	210287	7-294-b	2	md;pwg		0	add-entry	B:atiSizwa	
+atisaMkawa	atisaṃkaṭa	210306	7-294-b	4	cae;md;sch;stc		0	add-entry		
+atisatvaram	atisatvaram	210307	7-294-b	3	md;sch;stc		0	add-entry		
+atisamutkruzwa	atisamutkruṣṭa	210313	7-294-c	2	sch;stc		0	add-entry	B:atisamarTa	
+atisaviSaNkam	atisaviśaṅkam	210320	7-294-c	3	md;sch;stc		0	add-entry	A:atisarga	
+atisuBaga	atisubhaga	210326	7-294-c	2	sch;stc		0	add-entry	B:atisundara;A:atisuhita	
+atisOjanya	atisaujanya	210329	7-294-c	3	md;sch;stc		0	add-entry		
+atisparDin	atispardhin	210334	7-294-c	2	sch;stc		0	add-entry		
+atisPuwa	atisphuṭa	210335	7-294-c	2	sch;stc		0	add-entry		
+atiharzula	atiharṣula	210340	7-294-c	2	md;sch		0	add-entry	A:atihasita	
+atihelana	atihelana	210347	7-294-c	2	sch;stc		1	add-entry	B:atihimam;A:atIcAra	
+atundila	atundila	210352	7-294-c	2	sch;stc		0	add-entry	B:atIvra	
+atyalpabudDi	atyalpabuddhi	210379	7-294-d	2	cae;sch		0	add-entry	B:atyalpa	
+atyasahya	atyasahya	210380	7-294-d	2	sch;stc		0	add-entry		
+atyunnati	atyunnati	210396	7-295-a	4	cae;ccs;pwg;sch		0	add-entry		
+atyUrjasvala	atyūrjasvala	210400	7-295-a	3	md;sch;stc		0	add-entry	A:atyUrjitam	
+atrija	atrija	210411	7-295-a	2	cae;sch		0	add-entry		
+adamBin	adambhin	210430	7-295-a	2	md;sch		2	add-entry	B:adaBra;A:adaridra	
+adfzwarajas	adṛṣṭarajas	210468	7-295-b	2	armh;sch		0	add-entry	B:adfzwi	
+adevajuzwa	adevajuṣṭa	210471	7-295-b	2	md;sch		0	add-entry		
+adehabanDa	adehabandha	210477	7-295-b	3	md;sch;stc		0	add-entry	B:adeSya;A:adEteya	
+adozajYa	adoṣajña	210481	7-295-c	2	cae;sch		0	add-entry	A:adoza	
+advizant	adviṣant	210505	7-295-c	2	sch;stc		0	add-entry	A:advivarza;A:advIpa	
+aDarmaBIru	adharmabhīru	210531	7-295-d	3	cae;ccs;sch		0	add-entry		
+aDarzaRIya	adharṣaṇīya	210536	7-295-d	2	md;sch		1	add-entry	A:aDarmottaratA;B:aDaScara	
+aDikamAsaPala	adhikamāsaphala	210551	7-295-d	2	acc;sch		0	add-entry	B:aDikaraRa	
+aDitalpam	adhitalpam	210566	7-296-a	3	md;sch;stc		0	add-entry	A:aDijarAyu;B:aDidIDiti	
+aDirukmamandiragavAkzam	adhirukmamandiragavākṣam	210581	7-296-a	3	md;sch;stc		0	add-entry	A:aDirajani;A:aDiruh	
+aDilavaNgam	adhilavaṅgam	210592	7-296-a	3	md;sch;stc		0	add-entry	A:aDilaNkam	
+aDOta	adhauta	210638	7-296-b	5	cae;ccs;md;sch;stc		2	add-entry	B:aDyagni	
+aDyAtmopanizad	adhyātmopaniṣad	210650	7-296-b	2	acc;sch		0	add-entry	A:aDyAcAra	
+aDvaraSrOta	adhvaraśrauta	210670	7-296-c	2	acc;sch		0	add-entry	A:aDvartavya	
+anakzatragaRa	anakṣatragaṇa	210677	7-296-c	2	sch;stc		0	add-entry	B:anakzasaNgam	
+anakzigata	anakṣigata	210679	7-296-c	2	sch;stc		0	add-entry	B:anakzasaNgam	
+anaNgavatI	anaṅgavatī	210695	7-296-d	2	pui;sch		2	add-entry	B:anaNgaleKA;B:anaNgaSeKara	
+anaNgIkfta	anaṅgīkṛta	210700	7-296-d	3	md;sch;stc		0	add-entry	B:anaqutka	
+anatitrasnu	anatitrasnu	210707	7-296-d	4	ben;md;sch;stc		1	add-entry	A:anatidfSna	
+anatiprOQa	anatiprauḍha	210716	7-296-d	5	cae;gst;md;sch;stc		2	add-entry	B:anatireca	
+anatilolam	anatilolam	210719	7-296-d	3	md;sch;stc		0	add-entry		
+anativalita	anativalita	210720	7-296-d	4	ben;md;sch;stc		0	add-entry		
+anaDimUrCita	anadhimūrchita	210729	7-296-d	2	bhs;sch		0	add-entry	B:anaDikArin	
+ananukampanIya	ananukampanīya	210737	7-297-a	3	md;sch;stc		0	add-entry		
+anantavratakalpa	anantavratakalpa	210764	7-297-a	2	acc;sch		0	add-entry	B:anantavijaya	
+anantikasTa	anantikastha	210768	7-297-a	2	md;sch		0	add-entry		
+ananyanArIsAmAnya	ananyanārīsāmānya	210783	7-297-b	2	ben;sch		0	add-entry		
+ananyapUrvikA	ananyapūrvikā	210784	7-297-b	2	ben;sch		0	add-entry	B:ananyapratikriya	
+ananyaSAsana	ananyaśāsana	210792	7-297-b	2	ap;sch		0	add-entry		
+ananvizyant	ananviṣyant	210798	7-297-b	3	cae;ccs;sch		0	add-entry	B:ananvita	
+anapaSabdam	anapaśabdam	210811	7-297-b	3	md;sch;stc		0	add-entry	B:anapaspfS	
+anaBiKyAtadoza	anabhikhyātadoṣa	210821	7-297-b	2	md;sch		0	add-entry	A:anapekzamARa	
+anaBijalpita	anabhijalpita	210824	7-297-c	2	sch;stc		1	add-entry		
+anaBiBava	anabhibhava	210840	7-297-c	4	sch;shs;vcp;wil		0	add-entry	B:anaBipreta	
+anaBilapya	anabhilapya	210851	7-297-c	2	bhs;sch		0	add-entry	B:anaBilakzita	
+anaBisnigDa	anabhisnigdha	210859	7-297-c	2	sch;stc		0	add-entry	A:anaByavacAruka	
+anamaskAra	anamaskāra	210865	7-297-c	2	sch;stc		0	add-entry	A:anama	
+anavakarRita	anavakarṇita	210884	7-297-d	3	md;sch;stc		0	add-entry		
+anavakeSin	anavakeśin	210888	7-297-d	2	sch;stc		0	add-entry		
+anavalokayant	anavalokayant	210913	7-298-a	3	cae;sch;stc		0	add-entry		
+anavahiMsita	anavahiṃsita	210923	7-298-a	2	md;sch		0	add-entry	A:anavasnAtA	
+anAkftsnagatA	anākṛtsnagatā	210946	7-298-a	2	bhs;sch		0	add-entry	B:anAkula	
+anAtmavedin	anātmavedin	210968	7-298-b	2	ap;sch		0	add-entry	B:anAtmya	
+anAdarSaka	anādarśaka	210973	7-298-b	2	bhs;sch		0	add-entry		
+anAdimaDyaniDana	anādimadhyanidhana	210980	7-298-b	2	inm;sch		0	add-entry	B:anAdimaDyAnta	
+anAmarzamARa	anāmarṣamāṇa	211005	7-298-c	2	sch;stc		0	add-entry		
+anAyatikzama	anāyatikṣama	211013	7-298-c	3	md;sch;stc		0	add-entry	B:anAyata	
+anAsAdayant	anāsādayant	211050	7-298-d	4	cae;ccs;sch;stc		0	add-entry		
+animizekzaRa	animiṣekṣaṇa	211084	7-299-a	2	cae;sch		0	add-entry	A:animizita	
+animIlitalocana	animīlitalocana	211085	7-299-a	2	sch;stc		0	add-entry	B:animeza	
+anirIkzaka	anirīkṣaka	211093	7-299-a	2	md;sch		0	add-entry	A:anirAkftin;B:anirukta	
+anirudDasaMhitA	aniruddhasaṃhitā	211097	7-299-a	2	acc;sch		0	add-entry	B:anirUpita	
+anirvacanIyavAda	anirvacanīyavāda	211105	7-299-a	2	acc;sch		0	add-entry		
+anirviDitsa	anirvidhitsa	211108	7-299-a	2	sch;stc		0	add-entry	B:anirviRRa	
+anirhARarca	anirhāṇarca	211113	7-299-b	2	md;sch		0	add-entry	A:anirvedita	
+anizkaDfk	aniṣkadhṛk	211132	7-299-b	2	sch;stc		0	add-entry	B:anizuDanva;B:anizkAsita	
+aniHsarant	aniḥsarant	211142	7-299-b	2	sch;stc		0	add-entry	B:anIka	
+anItiSAstrajYa	anītiśāstrajña	211149	7-299-b	2	md;sch		0	add-entry		
+anIdfgAtman	anīdṛgātman	211150	7-299-b	3	md;sch;stc		0	add-entry		
+anIdfgASaya	anīdṛgāśaya	211151	7-299-b	2	sch;stc		0	add-entry		
+anIpsanIya	anīpsanīya	211154	7-299-b	2	sch;stc		0	add-entry	B:anIdfSa;B:anIraSana	
+anugamanaviDAna	anugamanavidhāna	211171	7-299-c	2	acc;sch		0	add-entry	B:anugantavya;A:anugApana	
+anujIvisAt	anujīvisāt	211188	7-299-c	2	gst;sch		0	add-entry	A:anujYApana	
+anutsUtrapadanyAsa	anutsūtrapadanyāsa	211211	7-299-d	2	sch;stc		0	add-entry	B:anutsuka;A:anutsfzwa	
+anudEvatam	anudaivatam	211221	7-299-d	2	sch;stc		0	add-entry	B:anudData	
+anupalabDivAda	anupalabdhivāda	211259	7-300-a	2	acc;sch		0	add-entry	A:anuparvata;B:anupalabDisama	
+anuBavasUtra	anubhavasūtra	211302	7-300-b	2	acc;sch		0	add-entry	A:anuBavam;B:anuBAva	
+anuzWAyajYayajYIya	anuṣṭhāyajñayajñīya	211365	7-300-d	2	pwg;sch		0	add-entry	B:anuzWAna	
+anOSIra	anauśīra	211438	7-301-b	2	cae;sch		0	add-entry	B:anOrasa;A:anOzaDa	
+antarBAvaprakASikA	antarbhāvaprakāśikā	211491	7-301-c	2	acc;sch		0	add-entry	A:antarBAva	
+annapAnaviDi	annapānavidhi	211536	7-301-d	3	acc;gst;sch		2	add-entry	A:annaparyAyam	
+anyAyaDanyacarita	anyāyadhanyacarita	211572	7-302-a	2	acc;sch		0	add-entry	A:anyAyatas;A:anyAyin	
+anyonyajananavftti	anyonyajananavṛtti	211579	7-302-a	2	gst;sch		0	add-entry	A:anyonyakftya;A:anyonyamiTuna	
+anyonyABiBavavftti	anyonyābhibhavavṛtti	211582	7-302-a	2	gst;sch		0	add-entry	A:anyonyApatitatyAgin;B:anyonyASraya	
+anvajiravati	anvajiravati	211586	7-302-a	2	sch;stc		0	add-entry	A:anvagjyezWa	
+apakzigaRasaMpAta	apakṣigaṇasaṃpāta	211615	7-302-b	2	sch;stc		0	add-entry	A:apagatakAlaka	
+apayoDarava	apayodharava	211678	7-302-c	2	sch;stc		0	add-entry	A:apayAtavya	
+aparaviDi	aparavidhi	211685	7-302-d	2	acc;sch		0	add-entry	A:apararAtri;A:aparAktva	
+aparigfhIta	aparigṛhīta	211711	7-302-d	2	sch;vcp		0	add-entry	B:aparigraha	
+apariRAyaka	apariṇāyaka	211722	7-303-a	2	sch;stc		3	add-entry	B:apariRAmin	
+aparituzwa	aparituṣṭa	211725	7-303-a	3	cae;md;sch		2	add-entry		
+aparinizWita	apariniṣṭhita	211731	7-303-a	5	ap;ap90;cae;ccs;sch		1	add-entry		
+apariBUtAjYa	aparibhūtājña	211738	7-303-a	2	sch;stc		0	add-entry	B:apariBraSyamAna	
+aparirakzaRa	aparirakṣaṇa	211743	7-303-a	2	ben;sch		2	add-entry	B:aparivargam	
+aparivraQiman	aparivraḍhiman	211748	7-303-a	2	sch;stc		0	add-entry		
+aparisaMsTita	aparisaṃsthita	211753	7-303-a	3	ap;sch;stc		1	add-entry	B:aparihARa	
+aparokzAnuBUti	aparokṣānubhūti	211764	7-303-a	3	acc;sch;vcp		0	add-entry	B:aparoDuka	
+apaSabdanirAkaraRa	apaśabdanirākaraṇa	211792	7-303-b	2	acc;sch		0	add-entry	A:apavyAhAra;A:apaSabdita	
+apAkartos	apākartos	211817	7-303-c	2	gst;sch		0	add-entry	A:apahvara;B:apAkfti	
+apippalAda	apippalāda	211862	7-303-d	2	sch;stc		1	add-entry		
+apiSasas	apiśasas	211863	7-303-d	2	md;sch		0	add-entry		
+apuRyaSIla	apuṇyaśīla	211873	7-303-d	2	gst;sch		0	add-entry	B:apuRyakft	
+apunarnivartin	apunarnivartin	211876	7-303-d	3	md;sch;stc		0	add-entry	A:apunarABAva	
+apUrvamaRi	apūrvamaṇi	211895	7-304-a	2	acc;sch		0	add-entry	A:apUrva;A:apUrvin	
+apfTagBUta	apṛthagbhūta	211898	7-304-a	3	md;sch;stc		0	add-entry		
+apfTAtmaja	apṛthātmaja	211899	7-304-a	3	md;sch;stc		0	add-entry		
+apOrRamAsa	apaurṇamāsa	211909	7-304-a	2	sch;stc		0	add-entry	B:apOruzeya;B:apOzkalya	
+appakavi	appakavi	211913	7-304-a	2	acc;sch		0	add-entry	B:apnaHsTa	
+aprakftisTa	aprakṛtistha	211919	7-304-a	3	sch;vcp;yat		0	add-entry	B:aprakASin	
+apratikUlakft	apratikūlakṛt	211951	7-304-b	2	sch;stc		0	add-entry		
+apratikruDyant	apratikrudhyant	211954	7-304-b	2	sch;stc		0	add-entry		
+apratigaja	apratigaja	211957	7-304-b	2	sch;stc		0	add-entry		
+apratidruh	apratidruh	211962	7-304-b	2	sch;yat		0	add-entry		
+apratinandant	apratinandant	211963	7-304-b	2	sch;stc		0	add-entry		
+apratinandita	apratinandita	211964	7-304-b	2	sch;stc		0	add-entry	B:apratinoda	
+apratipudgala	apratipudgala	211967	7-304-b	2	bhs;sch	1	0	add-entry	B:apratipatti	
+apratipUjita	apratipūjita	211968	7-304-b	3	cae;sch;stc		1	add-entry	B:apratibanDa	
+apratiSaraRa	apratiśaraṇa	211989	7-304-c	2	bhs;sch	63	0	add-entry	B:apratiSAsana	
+apratizeDita	apratiṣedhita	211995	7-304-c	2	sch;stc		0	add-entry	B:apratizikta;B:apratizWA	
+apratyudAvartya	apratyudāvartya	212019	7-304-d	2	bhs;sch	278	0	add-entry	A:apratyutTAyuka	
+apratyUha	apratyūha	212020	7-304-d	2	sch;stc		0	add-entry		
+apraduzwa	apraduṣṭa	212023	7-304-d	2	gst;sch		2	add-entry	B:apradadi;B:apraDAna	
+aprArTanIyA	aprārthanīyā	212072	7-305-a	2	sch;stc		0	add-entry	B:aprAyu	
+aPalIkfta	aphalīkṛta	212096	7-305-b	2	gst;sch		0	add-entry		
+aPUtkArya	aphūtkārya	212097	7-305-b	3	md;sch;stc		0	add-entry	A:aPenila	
+abanDudAyAda	abandhudāyāda	212100	7-305-b	2	sch;stc		0	add-entry	A:abadDa;A:abanDura	
+abahuBAzin	abahubhāṣin	212107	7-305-b	2	md;sch		0	add-entry		
+abahumAna	abahumāna	212108	7-305-b	2	bhs;sch		0	add-entry		
+aBakzyaBakzyaprakaraRa	abhakṣyabhakṣyaprakaraṇa	212138	7-305-c	2	acc;sch		0	add-entry	B:aBaga	
+aBayapradAnasAra	abhayapradānasāra	212146	7-305-c	2	acc;sch		0	add-entry	A:aBavani	
+aBasmIkaraRa	abhasmīkaraṇa	212150	7-305-c	2	sch;stc		0	add-entry	B:aBAga	
+aBinayadarpaRa	abhinayadarpaṇa	212205	7-305-d	2	acc;sch		0	add-entry		
+aBinavakAverImAhAtmya	abhinavakāverīmāhātmya	212207	7-305-d	2	acc;sch		0	add-entry	A:aBinAmaDeya	
+aBinirhAra	abhinirhāra	212213	7-306-a	2	bhs;sch		3	add-entry	A:aBinimroka;A:aBinivizwaka	
+aBinnanimittopAdAna	abhinnanimittopādāna	212217	7-306-a	2	acc;sch		0	add-entry	B:aBinnAtman	
+aBilapanatA	abhilapanatā	212273	7-306-b	2	bhs;sch	138	0	add-entry	B:aBilakzaRa;B:aBilazaRa	
+aBisamitAvin	abhisamitāvin	212311	7-306-c	2	bhs;sch	142	0	add-entry		
+aBettar	abhettar	212339	7-306-d	2	ccs;sch		0	add-entry	B:aBftaka	
+aBedaKaRqana	abhedakhaṇḍana	212340	7-306-d	2	acc;sch		0	add-entry		
+amajjana	amajjana	212399	7-307-a	3	md;sch;stc		0	add-entry	B:amajjaka;B:amati	
+amanasikAra	amanasikāra	212407	7-307-b	2	bhs;sch	68	0	add-entry		
+amanasvin	amanasvin	212408	7-307-b	6	ap;ap90;mw72;sch;stc;yat		2	add-entry	B:amanAk	
+amanorama	amanorama	212412	7-307-b	2	md;sch		0	add-entry	B:amanuzyanizevita	
+amaraviveka	amaraviveka	212429	7-307-b	2	acc;sch		0	add-entry	A:amaravaDU	
+amareSvarakalpa	amareśvarakalpa	212433	7-307-b	2	acc;sch		0	add-entry	B:amartyatA	
+amahAyajYayAjin	amahāyajñayājin	212438	7-307-b	2	sch;stc		0	add-entry	B:amA	
+amImAMsita	amīmāṃsita	212459	7-307-c	2	sch;stc		0	add-entry	A:amImAMsaka;B:amukta	
+ayajurvedaDArin	ayajurvedadhārin	212529	7-307-d	2	sch;stc		0	add-entry	B:ayajus	
+ayanacayanAdigaRita	ayanacayanādigaṇita	212539	7-308-a	2	acc;sch		0	add-entry	B:ayanAMSa	
+ayoDyAmAhAtmya	ayodhyāmāhātmya	212585	7-308-b	2	acc;sch		0	add-entry	A:ayoni	
+ayonijanman	ayonijanman	212587	7-308-b	3	ap;lrv;sch		0	add-entry	A:ayoni	
+arajovirajonayayukta	arajovirajonayayukta	212606	7-308-b	2	bhs;sch	21	0	add-entry	A:arajovittA	
+araYjita	arañjita	212609	7-308-b	3	md;sch;stc		2	add-entry	B:araqA	
+araRasamavasaraRa	araṇasamavasaraṇa	212611	7-308-b	2	bhs;sch	21	0	add-entry	B:araqA;A:araRAvihArin	
+aravAqa	aravāḍa	212622	7-308-c	2	bhs;sch	167	0	add-entry	B:arare	
+aruRADikaraRamaYjarI	aruṇādhikaraṇamañjarī	212659	7-308-d	2	acc;sch		0	add-entry	B:aruRapsu;B:aruREta	
+arcanAnavanIta	arcanānavanīta	212691	7-308-d	2	acc;sch		0	add-entry	B:arcatrya;B:arcA	
+arcAvEBava	arcāvaibhava	212693	7-308-d	2	acc;sch		0	add-entry	B:arcA	
+arC	arch	212696	7-309-a	6	ben;ccs;gra;md;pwg;sch		0	add-entry	B:arj	
+arTadIpikA	arthadīpikā	212718	7-309-a	2	acc;sch		0	add-entry	B:arTadAna;A:arTanASaka	
+arDanArISvarastotra	ardhanārīśvarastotra	212768	7-309-b	2	acc;sch		0	add-entry	B:arDanArAca;A:arDanizpanna	
+arDalakzya	ardhalakṣya	212792	7-309-c	2	md;sch		0	add-entry	B:arDarcaSasya;B:arDavartman	
+alaMkAratilaka	alaṃkāratilaka	212844	7-309-d	2	acc;sch		0	add-entry	B:alaMkarmIRa	
+alaMkAranikarza	alaṃkāranikarṣa	212845	7-309-d	2	acc;sch		0	add-entry	A:alaMkAraratnAkara	
+alaMkArarahasya	alaṃkārarahasya	212847	7-309-d	2	acc;sch		0	add-entry	A:alaMkAraratnAkara	
+alajjAkara	alajjākara	212854	7-310-a	2	ben;sch		0	add-entry	B:alajja;A:alatikA	
+alabDavya	alabdhavya	212861	7-310-a	2	sch;stc		1	add-entry	A:alabDapada;A:alaBya	
+alamelamaNgAstotra	alamelamaṅgāstotra	212866	7-310-a	2	acc;sch		0	add-entry	A:alamArya	
+alopayant	alopayant	212889	7-310-b	2	sch;stc		0	add-entry	B:alokyatA	
+alOlya	alaulya	212894	7-310-b	2	ben;sch		2	add-entry	B:aloha;A:alpakAya	
+alpotsuka	alpotsuka	212913	7-310-b	2	bhs;sch		0	add-entry	B:alpeSAKya;B:avaka	
+avaYcaka	avañcaka	212949	7-310-c	2	cae;sch		1	add-entry	A:avajvAla;A:avaYcanatA	
+avaragodAnIya	avaragodānīya	213005	7-311-a	2	bhs;sch	154	0	add-entry	B:avara	
+avaraBAgIya	avarabhāgīya	213008	7-311-a	2	bhs;sch	109	0	add-entry	B:avaratas	
+avalokitalakzmI	avalokitalakṣmī	213038	7-311-b	2	bhs;sch		0	add-entry	A:avalokanaka;A:avalopa	
+avikAsaBAva	avikāsabhāva	213121	7-311-d	2	sch;stc		0	add-entry	B:avikArya;A:avikURita	
+avicezwant	aviceṣṭant	213141	7-311-d	2	sch;stc		0	add-entry	B:avicAra;B:avicyuta	
+avidUzaka	avidūṣaka	213159	7-312-a	3	ap;sch;stc		0	add-entry	B:avidita;B:avidoha	
+avirajas	avirajas	213205	7-312-b	2	bhs;sch	251	0	add-entry	B:avimokza;B:avirata	
+aviSArada	aviśārada	213232	7-312-b	2	sch;stc		2	add-entry		
+avErin	avairin	213278	7-312-c	2	sch;stc		0	add-entry		
+avyApakavizayatASUnyatvapattra	avyāpakaviṣayatāśūnyatvapattra	213303	7-312-d	2	acc;sch		0	add-entry	B:avyApaka;B:avyApanna	
+aSaWaDI	aśaṭhadhī	213324	7-313-a	2	sch;yat		0	add-entry	B:aSaNkam	
+aSanEs	aśanais	213330	7-313-a	3	md;sch;stc		0	add-entry	A:aSanISa	
+aSuBaBAvanA	aśubhabhāvanā	213366	7-313-b	2	bhs;sch	52	0	add-entry	A:aSuBacintaka	
+aSfRya	aśṛṇya	213370	7-313-b	3	mw72;sch;yat		0	add-entry	B:aSezas	
+azwapadamUlikA	aṣṭapadamūlikā	213452	7-313-d	2	acc;sch		0	add-entry	B:azwagava	
+azwamAsika	aṣṭamāsika	213456	7-313-d	4	ap;ben;lrv;sch		0	add-entry	A:azwaratni	
+azwaSlokI	aṣṭaślokī	213461	7-313-d	2	acc;sch		0	add-entry	A:azwavArzika	
+azwasTAnaparIkzA	aṣṭasthānaparīkṣā	213464	7-313-d	2	acc;sch		0	add-entry	B:azwastanA;A:azwANga	
+azwANganiGaRwu	aṣṭāṅganighaṇṭu	213466	7-313-d	2	acc;sch		0	add-entry	A:azwANga;A:azwANgapraRipAta	
+azwAdaSapurARasAra	aṣṭādaśapurāṇasāra	213472	7-313-d	2	acc;sch		0	add-entry	A:azwAdaSavakra	
+azwottaraSatadivyadeSanirUpaRa	aṣṭottaraśatadivyadeśanirūpaṇa	213483	7-314-a	2	acc;sch		0	add-entry	A:azwika;B:azWIla	
+asaMyacCant	asaṃyacchant	213489	7-314-a	2	sch;stc		0	add-entry	B:asa;B:asaMyata	
+asaMyamitAlakin	asaṃyamitālakin	213493	7-314-a	2	sch;stc		0	add-entry	B:asaMyukta	
+asaMlakzita	asaṃlakṣita	213499	7-314-a	2	sch;stc		0	add-entry	B:asaMroha	
+asaMkucita	asaṃkucita	213534	7-314-b	2	ben;sch		2	add-entry	A:asaMkIrRa;B:asaMkrAnta	
+asaMgfhItatva	asaṃgṛhītatva	213542	7-314-b	2	sch;stc		0	add-entry	B:asaMgata;A:asaMgraha	
+asaMcetayamAna	asaṃcetayamāna	213550	7-314-b	3	md;sch;stc		0	add-entry		
+asatyavacana	asatyavacana	213562	7-314-c	2	cae;sch		0	add-entry	B:asatyavAda	
+asatsaMparka	asatsaṃparka	213565	7-314-c	2	md;sch		0	add-entry	B:asadfSa	
+asaMprajanya	asaṃprajanya	213607	7-314-d	2	bhs;sch	104	0	add-entry		
+asaMprayuYjant	asaṃprayuñjant	213613	7-314-d	2	sch;stc		0	add-entry	B:asaMpramoza	
+asaMBavapattra	asaṃbhavapattra	213617	7-314-d	2	acc;sch		0	add-entry	A:asaMBava;B:asaMBAzya	
+asahasra	asahasra	213636	7-315-a	2	sch;stc		1	add-entry	B:asahamAna;B:asahAya	
+asADaka	asādhaka	213641	7-315-a	4	cae;ccs;md;sch		3	add-entry	B:asADana	
+asAyaka	asāyaka	213651	7-315-a	3	md;sch;stc		0	add-entry	B:asAmAnya	
+asKalana	askhalana	213709	7-315-c	3	cae;sch;stc		1	add-entry	B:asKala	
+ahirbuDnyasaMhitA	ahirbudhnyasaṃhitā	213813	7-316-b	2	acc;sch		0	add-entry	B:ahirbuDnyas;B:ahiSuzmasatvan	
+aholABakara	aholābhakara	213828	7-316-b	2	ap;sch		0	add-entry	B:ahnavAyya	
+AkArABinirhAra	ākārābhinirhāra	213849	7-316-c	2	bhs;sch		0	add-entry		
+AkASaBErava	ākāśabhairava	213856	7-316-c	2	acc;sch		0	add-entry	A:AkASamaRi	
+AkASasParaRa	ākāśaspharaṇa	213859	7-316-c	2	bhs;sch	21	0	add-entry		
+AkASADikaraRavAda	ākāśādhikaraṇavāda	213860	7-316-c	2	acc;sch		0	add-entry		
+AkASAsaNgavimuktinirupalepa	ākāśāsaṅgavimuktinirupalepa	213861	7-316-c	2	bhs;sch	21	0	add-entry	A:AkiMcanyAyatana	
+AgamasArasaMgraha	āgamasārasaṃgraha	213914	7-316-d	2	acc;sch		0	add-entry	B:AgamaSazkulI;A:Agamya	
+ANgirasakalpa	āṅgirasakalpa	213941	7-317-a	2	pe;sch		0	add-entry	A:ANgirasa;B:ANgirasapavitra	
+AcAradarSana	ācāradarśana	213953	7-317-a	2	acc;sch		0	add-entry	A:AcArya	
+AcAryacampU	ācāryacampū	213957	7-317-a	2	acc;sch		0	add-entry	B:AcAryakaraRa;B:AcAryadeva	
+AcAryaprapatti	ācāryaprapatti	213959	7-317-a	2	acc;sch		0	add-entry	B:AcAryadeva;A:AcAryamuzwi	
+ARqapille	āṇḍapille	214006	7-317-c	2	acc;sch		0	add-entry	A:ARqakoSa;A:ARqapIta	
+AtmajYAnopadeSa	ātmajñānopadeśa	214029	7-317-c	2	acc;sch		0	add-entry	B:AtmaGoza;B:Atmatantra	
+AtmatvajAtisidDivAda	ātmatvajātisiddhivāda	214032	7-317-c	2	acc;sch		0	add-entry	B:AtmatrARaparigraha;B:AtmadevatA	
+AtmaprakASikAvivaraRa	ātmaprakāśikāvivaraṇa	214036	7-317-c	2	acc;sch		0	add-entry	B:Atmanivedana;B:AtmapraBa	
+Atmotkarza	ātmotkarṣa	214062	7-317-d	2	md;sch	127	0	add-entry	A:AtmollAsa	
+AdarSamuKa	ādarśamukha	214068	7-317-d	2	bhs;sch	167	1	add-entry	B:AdarSa	
+AdikuRqanIya	ādikuṇḍanīya	214075	7-317-d	2	acc;sch		0	add-entry		
+AdivimAnajIrRodDAra	ādivimānajīrṇoddhāra	214092	7-318-a	2	acc;sch		0	add-entry	A:AdivarAha	
+ADAtar	ādhātar	214111	7-318-a	4	ccs;fri;pwg;sch		0	add-entry	B:ADAna	
+ApadevIya	āpadevīya	214167	7-318-c	2	acc;sch		0	add-entry	A:ApatsahAya;A:Aparuza	
+AmnAyakriyArTatvAdisUtravicAra	āmnāyakriyārthatvādisūtravicāra	214244	7-319-a	2	acc;sch		0	add-entry	B:Amodin;B:Ambuda	
+ArADanakrama	ārādhanakrama	214291	7-319-b	2	acc;sch		0	add-entry	B:ArAgra;A:ArAmADipati	
+ArUQajAtaka	ārūḍhajātaka	214302	7-319-b	2	acc;sch		0	add-entry	A:ArUQa	
+ASAwavI	āśāṭavī	214403	7-320-a	2	bhs;sch		0	add-entry	B:ASaNkya;A:ASAtanA	
+ASIrvacanamAlA	āśīrvacanamālā	214418	7-320-b	2	acc;sch		0	add-entry	B:ASIviza	
+ASramavAsaparvan	āśramavāsaparvan	214429	7-320-b	2	inm;sch		0	add-entry	A:ASrava	
+AsurakARqa	āsurakāṇḍa	214460	7-320-c	2	acc;sch		0	add-entry	B:AsInapracalAyita;B:Asecanaka	
+AsParaRakasamADi	āspharaṇakasamādhi	214470	7-320-c	2	bhs;sch	67	0	add-entry	B:AsPAla	
+AhitAgnibrAhmaRa	āhitāgnibrāhmaṇa	214495	7-320-d	2	acc;sch		0	add-entry	A:Ahita;B:AhutiBAga	
+AhnikaBAskara	āhnikabhāskara	214501	7-320-d	2	acc;sch		0	add-entry	B:Aheya;A:AhrIkya	
+iNgyaratna	iṅgyaratna	214514	7-321-a	2	acc;sch		0	add-entry		
+icCantika	icchantika	214515	7-321-a	2	bhs;sch	110	2	add-entry	A:icCAsadfSa	
+itTaMgata	itthaṃgata	214526	7-321-a	3	cae;ccs;sch		0	add-entry	B:itTam	
+indirApariRaya	indirāpariṇaya	214540	7-321-a	2	acc;sch		0	add-entry	B:indirA;A:indIvaradfS	
+induratneSvaraprasAda	induratneśvaraprasāda	214549	7-321-b	2	acc;sch		0	add-entry		
+indraprasTamAhAtmya	indraprasthamāhātmya	214567	7-321-b	2	acc;sch		0	add-entry	A:indraprayARa;A:indramaGaSrI	
+indraSrI	indraśrī	214574	7-321-b	2	bhs;sch		0	add-entry	B:indrasava	
+izwinirRaya	iṣṭinirṇaya	214615	7-321-d	2	acc;sch		0	add-entry	B:izwApUrta;A:izwimaya	
+Ikzati	īkṣati	214629	7-321-d	3	lrv;sch;vcp		0	add-entry	B:Ikzaka	
+IkzAraRyamAhAtmya	īkṣāraṇyamāhātmya	214630	7-321-d	2	acc;sch		0	add-entry		
+Ilay	īlay	214640	7-321-d	2	cae;sch		0	add-entry	B:IrapAda	
+ISvaradIkzita	īśvaradīkṣita	214651	7-322-a	2	acc;sch		0	add-entry	B:ISvarakAraRin	
+ISvaraSataka	īśvaraśataka	214652	7-322-a	2	acc;sch		0	add-entry		
+ISvarasuKavAda	īśvarasukhavāda	214653	7-322-a	2	acc;sch		0	add-entry	B:IzatkArya	
+ucitopAyasaMgraha	ucitopāyasaṃgraha	214682	7-322-a	2	acc;sch		0	add-entry	A:uccakEs	
+uccagopura	uccagopura	214686	7-322-b	2	md;sch		0	add-entry	A:uccataratA	
+ucCaNga	ucchaṅga	214706	7-322-b	2	bhs;sch	248	0	add-entry	A:ucCalana	
+ucCiraska	ucchiraska	214709	7-322-b	2	bhs;sch		0	add-entry	A:ucCuzma	
+ujjahistamba	ujjahistamba	214718	7-322-b	2	pwg;sch		0	add-entry	A:ujjigamizA	
+uqigalla	uḍigalla	214729	7-322-c	2	bhs;sch		0	add-entry	A:uwwIkita	
+uqudaSAPala	uḍudaśāphala	214730	7-322-c	2	acc;sch		0	add-entry	B:uqupa	
+utkuwukikA	utkuṭukikā	214748	7-322-c	2	bhs;sch	263,25	0	add-entry	B:utkuwuka;B:utkUjita	
+utkfzwikA	utkṛṣṭikā	214752	7-322-c	2	bhs;sch	263,18	0	add-entry	A:utketana	
+utkzepaRIya	utkṣepaṇīya	214761	7-322-d	2	bhs;sch	265	0	add-entry	A:utkzepa;A:utKanana	
+uttamaSlokacandrikA	uttamaślokacandrikā	214773	7-322-d	2	acc;sch		0	add-entry	B:uttamBana	
+uttarapaYcAla	uttarapañcāla	214781	7-322-d	2	pui;sch		0	add-entry	B:uttaraDAraya	
+uttaraprAyaScitta	uttaraprāyaścitta	214784	7-322-d	2	acc;sch		0	add-entry		
+uttararAGavIya	uttararāghavīya	214788	7-323-a	2	acc;sch		0	add-entry		
+utsfzwaloman	utsṛṣṭaloman	214859	7-323-c	2	md;sch		0	add-entry	A:utsfjya;A:utsekin	
+udakamaRi	udakamaṇi	214870	7-323-c	2	bhs;sch		0	add-entry	A:udakarakzikA	
+udetos	udetos	214929	7-323-d	4	cae;ccs;md;sch		0	add-entry	A:udUrmi	
+uddarpa	uddarpa	214944	7-324-a	3	md;sch;stc		1	add-entry	B:udGuzwa;B:uddAna	
+udBUtarUpakAraRatAvAda	udbhūtarūpakāraṇatāvāda	214964	7-324-a	2	acc;sch		0	add-entry	B:udBUtatva	
+udyApanaviDAna	udyāpanavidhāna	214969	7-324-a	2	acc;sch		0	add-entry	B:udyAva	
+udvijitavya	udvijitavya	214983	7-324-b	3	md;sch;stc		0	add-entry	B:udvAsya;A:udvecam	
+unmAdacikitsApawala	unmādacikitsāpaṭala	214996	7-324-b	2	acc;sch		0	add-entry	B:unmAdaka;A:unmAdin	
+unmUrDan	unmūrdhan	215004	7-324-b	3	md;sch;stc		0	add-entry	B:unmuKa;A:unmokzA	
+upaDivAra	upadhivāra	215050	7-324-d	2	bhs;sch		0	add-entry	A:upaDi;A:upaDenu	
+upapayoDi	upapayodhi	215073	7-325-a	2	sch;stc		0	add-entry		
+upasaMhAravijaya	upasaṃhāravijaya	215134	7-325-b	2	acc;sch		0	add-entry	A:upasaMhAra	
+upANgiraHsmfti	upāṅgiraḥsmṛti	215162	7-325-c	2	acc;sch		0	add-entry	B:upAgama;A:upAttasAra	
+upAdAnatvasamarTana	upādānatvasamarthana	215165	7-325-c	2	acc;sch		0	add-entry		
+upAdAyarUpa	upādāyarūpa	215166	7-325-c	2	bhs;sch	101,10	0	add-entry		
+uBayagrAsarAhUdaya	ubhayagrāsarāhūdaya	215194	7-325-d	2	acc;sch		0	add-entry	A:uBayataHkzRU	
+uBayatoBAgavimukta	ubhayatobhāgavimukta	215199	7-325-d	2	bhs;sch	46	0	add-entry		
+umeSvara	umeśvara	215209	7-326-a	2	bhs;sch		0	add-entry		
+ullaNGikA	ullaṅghikā	215232	7-326-a	2	bhs;sch	263,24	0	add-entry		
+UrDvapuRqraDAraRa	ūrdhvapuṇḍradhāraṇa	215284	7-326-c	2	acc;sch		0	add-entry	A:UrDvaBAgahara	
+UrDvaBAgIya	ūrdhvabhāgīya	215286	7-326-c	2	bhs;sch	109	0	add-entry	A:UrDvaBAgahara;B:UrDvaBAsin	
+fjuvivaraRa	ṛjuvivaraṇa	215319	7-326-d	2	acc;sch		0	add-entry		
+fRaDara	ṛṇadhara	215322	7-326-d	2	bhs;sch		0	add-entry	B:fRa	
+fRavimocanaSAnti	ṛṇavimocanaśānti	215323	7-326-d	2	acc;sch		0	add-entry		
+ekajyAvargavikala	ekajyāvargavikala	215366	7-327-a	2	acc;sch		0	add-entry	A:ekacCAyApravizwa	
+ekatvasidDivAda	ekatvasiddhivāda	215372	7-327-a	2	acc;sch		0	add-entry		
+ekavIcika	ekavīcika	215412	7-327-b	2	bhs;sch	46	0	add-entry	A:ekavfkzIya	
+ekavyUhaviBAga	ekavyūhavibhāga	215418	7-327-b	2	inm;sch		0	add-entry	A:ekavyUha;B:ekavrata	
+ekaSAstravAda	ekaśāstravāda	215425	7-327-c	2	acc;sch		0	add-entry	B:ekaSAKa	
+ekaSIlasamAcAra	ekaśīlasamācāra	215428	7-327-c	2	bop;sch		0	add-entry	A:ekaSUla	
+ekaSlokIvyAKyA	ekaślokīvyākhyā	215432	7-327-c	2	acc;sch		0	add-entry	A:ekaSeza	
+ekasAmi	ekasāmi	215436	7-327-c	2	acc;sch		0	add-entry	B:ekasarga;B:ekasfka	
+ekAdaSaprayoga	ekādaśaprayoga	215454	7-327-c	2	acc;sch		0	add-entry	B:ekAdaSacCadi	
+ekAdaSImAhAtmya	ekādaśīmāhātmya	215458	7-327-c	2	acc;sch		2	add-entry	B:ekAnta	
+ekAvacAraka	ekāvacāraka	215465	7-327-d	2	bhs;sch	245,1027	0	add-entry	A:ekArzeya	
+ekASIticakrodDAra	ekāśīticakroddhāra	215466	7-327-d	2	acc;sch		0	add-entry		
+eqameqa	eḍameḍa	215478	7-327-d	2	bhs;sch		0	add-entry	B:eqa	
+eqAkzipuzpa	eḍākṣipuṣpa	215480	7-327-d	2	bhs;sch		0	add-entry	B:eRaka	
+etadvid	etadvid	215488	7-327-d	2	cae;sch		0	add-entry	B:etadyoni;B:eraka	
+evaMvAdin	evaṃvādin	215495	7-328-a	2	md;sch		3	add-entry	A:evaMvidus	
+EhipaSyika	aihipaśyika	215535	7-328-b	2	bhs;sch	63	0	add-entry	B:EzAvIra	
+oMkAravAda	oṃkāravāda	215541	7-328-b	2	acc;sch		0	add-entry	B:oja	
+oqigalla	oḍigalla	215545	7-328-b	2	bhs;sch		0	add-entry	B:otu	
+Ottarapattra	auttarapattra	215560	7-328-b	2	acc;sch		0	add-entry	A:Otkawya;B:Ottarapadika	
+OdgAtraprayoga	audgātraprayoga	215567	7-328-c	2	acc;sch		0	add-entry	B:Odumbari;B:OddAlaki	
+OpAsanamantra	aupāsanamantra	215584	7-328-c	2	acc;sch		0	add-entry	B:OpavAhya;A:Opendra	
+kakzimAlikopanizad	kakṣimālikopaniṣad	215608	7-328-d	2	acc;sch		0	add-entry	B:kakvala	
+kaRAdanyAyaBUzaRa	kaṇādanyāyabhūṣaṇa	215655	7-329-a	2	acc;sch		0	add-entry	B:kaRAwIra;B:kaRika	
+kanakajAnakI	kanakajānakī	215692	7-329-b	2	acc;sch		0	add-entry	B:kanakadaRqa	
+kanyAmADava	kanyāmādhava	215716	7-329-c	2	acc;sch		0	add-entry	A:kanyAdarSam	
+karuRAkandalI	karuṇākandalī	215781	7-330-a	2	acc;sch		0	add-entry	B:karenduka	
+karmavipAkamahArRava	karmavipākamahārṇava	215831	7-330-b	2	acc;sch		0	add-entry		
+kalandakanivApa	kalandakanivāpa	215853	7-330-c	2	bhs;sch	193	2	add-entry	B:kalatra;B:kalamagopavaDU	
+kalahakaRwaka	kalahakaṇṭaka	215859	7-330-c	2	md;sch		2	add-entry	B:kalaha;B:kalahakArin	
+kalAvatIkAmarUpa	kalāvatīkāmarūpa	215868	7-330-c	2	acc;sch		0	add-entry	B:kali	
+kaliviqambana	kaliviḍambana	215874	7-330-d	2	acc;sch		0	add-entry		
+kalmAzadamya	kalmāṣadamya	215898	7-330-d	2	bhs;sch		0	add-entry		
+kavikaRWapASa	kavikaṇṭhapāśa	215914	7-331-a	2	acc;sch		0	add-entry	B:kavi;A:kavikaRWABaraRa	
+kaSambakajAta	kaśambakajāta	215921	7-331-a	2	bhs;sch	278	0	add-entry	B:kaSa;B:kaSyapottarasaMhitA	
+kAntisuDAmaya	kāntisudhāmaya	215968	7-331-b	2	md;sch		0	add-entry		
+kAmadogDrI	kāmadogdhrī	215976	7-331-b	2	acc;sch		0	add-entry	A:kAmada;B:kAmaDAtu	
+kAmAkzIstava	kāmākṣīstava	215986	7-331-c	2	acc;sch		0	add-entry	B:kAmpIlavAsin	
+kAyakalisaMpramaTana	kāyakalisaṃpramathana	215992	7-331-c	2	bhs;sch	21,116	0	add-entry	B:kAya	
+kArakavAdArTa	kārakavādārtha	216000	7-331-c	2	acc;sch		0	add-entry	B:kAraka;B:kAraRa	
+kArtavIryArjuna	kārtavīryārjuna	216019	7-331-d	2	pe;pui		2	add-entry		
+kArtasvaramaya	kārtasvaramaya	216020	7-331-d	2	md;sch		0	add-entry		
+kAlaviDAnapadDati	kālavidhānapaddhati	216055	7-332-a	2	acc;sch		0	add-entry	B:kAlavAla	
+kAverImAhAtmya	kāverīmāhātmya	216076	7-332-a	2	acc;sch		0	add-entry		
+kAzWahAraka	kāṣṭhahāraka	216090	7-332-b	2	bhs;sch	186,106	0	add-entry	B:kAzWAluka	
+kiMhetu	kiṃhetu	216096	7-332-b	3	cae;ccs;sch		1	add-entry	A:kiMstya	
+kiMpratyaya	kiṃpratyaya	216115	7-332-c	2	bhs;sch		0	add-entry	B:kiri	
+kirIwavatsa	kirīṭavatsa	216119	7-332-c	2	bhs;sch		0	add-entry	B:kirmira;B:kila	
+kiSorAjIya	kiśorājīya	216128	7-332-c	2	acc;sch		0	add-entry	B:kiSoraka;A:kizkuru	
+kucelavftta	kucelavṛtta	216155	7-332-d	2	acc;sch		0	add-entry	B:kuYjarI	
+kuwukuYcaka	kuṭukuñcaka	216163	7-332-d	2	bhs;sch		1	add-entry		
+kutarkaKaRqana	kutarkakhaṇḍana	216178	7-333-a	2	acc;sch		0	add-entry	A:kutapahAra;A:kutastana	
+kubjottarA	kubjottarā	216200	7-333-a	2	bhs;sch		0	add-entry	A:kubji;B:kuBra	
+kurukuci	kurukuci	216225	7-333-b	2	bhs;sch	127,50	0	add-entry	B:kurukzetra	
+kulatattvanirUpaRa	kulatattvanirūpaṇa	216233	7-333-b	2	acc;sch		0	add-entry	B:kulaMkula	
+kulopaka	kulopaka	216245	7-333-b	2	bhs;sch		0	add-entry	B:kulodBava	
+kuSalavopAKyAna	kuśalavopākhyāna	216258	7-333-c	2	acc;sch		0	add-entry	A:kuSamAlin	
+kusumabARavilAsa	kusumabāṇavilāsa	216270	7-333-c	2	acc;sch		0	add-entry	B:kusumanagara	
+kUpAdijalasTAnalakzaRa	kūpādijalasthānalakṣaṇa	216297	7-333-d	2	acc;sch		0	add-entry	B:kUpa;B:kUyava	
+kUreSavijaya	kūreśavijaya	216299	7-333-d	2	acc;sch		0	add-entry	B:kUyava	
+kUzmARqadIkzAnukramaRikA	kūṣmāṇḍadīkṣānukramaṇikā	216304	7-333-d	2	acc;sch		0	add-entry	B:kUlaka;A:kfcCradvitIya	
+kftsnAyatana	kṛtsnāyatana	216334	7-334-a	2	bhs;sch	72	0	add-entry		
+kfzRanAmAzwottara	kṛṣṇanāmāṣṭottara	216359	7-334-b	2	acc;sch		0	add-entry	B:kfzRadaSa;B:kfzRapakza	
+kfzRAnadImAhAtmya	kṛṣṇānadīmāhātmya	216380	7-334-b	2	acc;sch		0	add-entry	B:kfzRAtreya;B:kfzRAlu	
+kfzRAvatAracarita	kṛṣṇāvatāracarita	216382	7-334-b	2	acc;sch		0	add-entry	B:kfzRAlu;A:kfzyakAra	
+keralIyadvAdaSaBAva	keralīyadvādaśabhāva	216394	7-334-c	2	acc;sch		0	add-entry	B:keralikA;A:kerA	
+kevalAnvayikevalavyatirekagranTa	kevalānvayikevalavyatirekagrantha	216399	7-334-c	2	acc;sch		0	add-entry	B:kevalAtman;B:kevalin	
+kowanaka	koṭanaka	216430	7-334-d	3	bhs;mci;sch		2	add-entry	B:kocavaka	
+kowiviraha	koṭiviraha	216435	7-334-d	2	acc;sch		0	add-entry		
+kriyAkEravacandrikA	kriyākairavacandrikā	216498	7-335-b	2	acc;sch		0	add-entry	B:krimRa;B:kriyAguptaka	
+kriyAgopana	kriyāgopana	216500	7-335-b	2	acc;sch		0	add-entry	B:kriyAguptaka;B:kriyAviSAla	
+kzaRikarAhusidDAnta	kṣaṇikarāhusiddhānta	216541	7-335-c	2	acc;sch		0	add-entry	B:kzatajapAta	
+kzatriyajapaviDAna	kṣatriyajapavidhāna	216546	7-335-d	2	acc;sch		0	add-entry	B:kzatriya;B:kzatriyAntakara	
+kzetrAnukramaRI	kṣetrānukramaṇī	216606	7-336-a	2	acc;sch		0	add-entry	A:kzetrasADas;B:kzetriya	
+KaYjAhva	khañjāhva	216625	7-336-b	2	bhs;sch	213,140	0	add-entry	B:KaYja;B:KawakA	
+KaqgalakzaRa	khaḍgalakṣaṇa	216632	7-336-b	2	acc;sch		0	add-entry	A:KaqgavAri	
+KamBIrapati	khambhīrapati	216651	7-336-b	2	bhs;sch	186,33	0	add-entry	A:KanyavAdin;B:Karajru	
+KalupaScAdBaktika	khalupaścādbhaktika	216665	7-336-c	2	bhs;sch	49	0	add-entry	B:Kalu;A:KalekapotanyAya	
+Kavant	khavant	216671	7-336-c	2	pwg;sch		0	add-entry	A:KalvaNga;B:KaSa	
+KARu	khāṇu	216676	7-336-c	3	bhs;ieg;sch	245,564	1	add-entry	B:KAtaka	
+KAdyakacAraka	khādyakacāraka	216681	7-336-c	2	bhs;sch	274,4	0	add-entry	B:KAdanIya;B:KAnam	
+Kusta	khusta	216688	7-336-d	2	bhs;sch		1	add-entry	A:KuramAlin	
+gaganagirimunIndracarita	gaganagirimunīndracarita	216699	7-336-d	2	acc;sch		0	add-entry	B:gaganagaYja;A:gaganapariDAna	
+gajasUtravAda	gajasūtravāda	216711	7-336-d	2	acc;sch		0	add-entry	B:gajasiMha;B:gajaskanDa	
+gajAvartalakzaRa	gajāvartalakṣaṇa	216713	7-336-d	2	acc;sch		0	add-entry	B:gajaskanDa	
+gajendramokza	gajendramokṣa	216716	7-336-d	2	acc;sch		0	add-entry	B:gajAhva	
+gaRaniGaRwu	gaṇanighaṇṭu	216732	7-337-a	2	acc;sch		0	add-entry	B:gaRanApattrikA;B:gaRarAtra	
+gamBIraGozasvaranAdita	gambhīraghoṣasvaranādita	216789	7-337-c	2	bhs;sch	23,42	0	add-entry	B:gamBara	
+garBacikitsA	garbhacikitsā	216805	7-337-d	2	acc;sch		0	add-entry	B:garBa;B:garBanirharaRa	
+garBapurImAhAtmya	garbhapurīmāhātmya	216807	7-337-d	2	acc;sch		0	add-entry	B:garBanirharaRa;B:garBapuroqASa	
+gIrvARaSloka	gīrvāṇaśloka	216869	7-338-b	2	acc;sch		0	add-entry	B:guMkAra	
+guruviDivijaya	guruvidhivijaya	216905	7-338-c	2	acc;sch		0	add-entry	B:guruvAra;B:gulPajAha	
+gfhyapIWikA	gṛhyapīṭhikā	216945	7-338-d	2	acc;sch		0	add-entry	B:gfhya;A:geha	
+gocarapariSudDa	gocarapariśuddha	216956	7-339-a	2	bhs;sch	65,51	0	add-entry	A:gocara	
+godApariRaya	godāpariṇaya	216964	7-339-a	2	acc;sch		0	add-entry	A:godAnavrata	
+goDanagiri	godhanagiri	216965	7-339-a	2	fri;sch		0	add-entry	B:gonihAra	
+gopadmavrata	gopadmavrata	216969	7-339-a	2	acc;sch		0	add-entry	B:gopaticApa	
+gopAlaratnAkara	gopālaratnākara	216974	7-339-a	2	acc;sch		0	add-entry	B:gopAlagiri;B:gopiwaka	
+gopIcandanamAhAtmya	gopīcandanamāhātmya	216977	7-339-a	2	acc;sch		0	add-entry		
+gozWIpurImAhAtmya	goṣṭhīpurīmāhātmya	216999	7-339-b	2	acc;sch		0	add-entry	B:gozWaSva;A:gozWodumbara	
+gOcya	gaucya	217003	7-339-b	2	sch;vcp		0	add-entry		
+gOqabrahmAnanda	gauḍabrahmānanda	217004	7-339-b	2	acc;sch		0	add-entry	B:gOtama	
+gOrAvaskandin	gaurāvaskandin	217010	7-339-b	3	pwg;sch;vcp		0	add-entry	B:gOra;B:gOrijeya	
+grahagocaraPala	grahagocaraphala	217020	7-339-c	2	acc;sch		0	add-entry	B:graB;B:grahaRa	
+grahaRakriyAkrama	grahaṇakriyākrama	217023	7-339-c	2	acc;sch		0	add-entry	A:grahaRaka;B:grahatva	
+grahArcanaprokzaRa	grahārcanaprokṣaṇa	217029	7-339-c	2	acc;sch		0	add-entry	A:grahAntarukTya;B:grahi	
+Gowakamfga	ghoṭakamṛga	217102	7-340-a	2	bhs;sch	213,29	0	add-entry	B:GftAhuti	
+cakawi	cakaṭi	217110	7-340-a	2	bhs;sch		0	add-entry	B:GrA	
+cakArasamarTana	cakārasamarthana	217111	7-340-a	2	acc;sch		0	add-entry	B:cakoradfS	
+caRqaBAskara	caṇḍabhāskara	217141	7-340-b	2	acc;sch		0	add-entry	B:cawulita;B:caRqAntika	
+caturdaSIstotra	caturdaśīstotra	217158	7-340-b	2	acc;sch		0	add-entry	B:caturdaSAkzara;B:caturdvAra	
+catuHSlokI	catuḥślokī	217180	7-340-c	2	acc;sch		0	add-entry	B:catuScakra;B:catuzka	
+catuzkumBikA	catuṣkumbhikā	217183	7-340-c	2	bhs;sch	281,111	0	add-entry	B:catuzkizku;B:catuzpaTa	
+candrikAKaRqana	candrikākhaṇḍana	217215	7-340-d	2	acc;sch		0	add-entry	B:candrASma	
+carakasaMdeSa	carakasaṃdeśa	217228	7-341-a	2	acc;sch		0	add-entry	B:car;A:caraRaka	
+calAkzara	calākṣara	217251	7-341-a	2	acc;sch		0	add-entry	B:carvaRa;B:calitasTAna	
+cAkzuzIyanItiSAstra	cākṣuṣīyanītiśāstra	217259	7-341-a	2	acc;sch		0	add-entry	B:cAkzuza	
+cAturdvIpaka	cāturdvīpaka	217260	7-341-a	2	bhs;sch	154,1	2	add-entry	B:cAturDAkAraRika	
+cApodara	cāpodara	217276	7-341-b	2	bhs;sch	223,133	0	add-entry	B:cApaveda;B:cAmara	
+citraraktapawa	citraraktapaṭa	217321	7-341-c	2	acc;sch		0	add-entry	B:citrApUrRamAsa	
+colacarita	colacarita	217381	7-342-a	2	acc;sch		0	add-entry	B:colaka;B:colapawwaka	
+colapparAjIya	colapparājīya	217383	7-342-a	2	acc;sch		0	add-entry	B:colapawwaka;B:cOtapallava	
+CandaHSloka	chandaḥśloka	217409	7-342-b	2	acc;sch		0	add-entry		
+CAyApuruzAvaboDana	chāyāpuruṣāvabodhana	217422	7-342-c	2	acc;sch		0	add-entry	B:CAyApaTa;B:Cid	
+CurikAlakzaRa	churikālakṣaṇa	217430	7-342-c	2	acc;sch		0	add-entry	B:Cur;B:Cowana	
+jagatsUtravAdArTa	jagatsūtravādārtha	217436	7-342-c	2	acc;sch		0	add-entry	B:jagatkAraRakAraRa;B:jagDa	
+jawAmaRi	jaṭāmaṇi	217444	7-342-c	2	acc;sch		0	add-entry		
+jawAsidDAntacandrikA	jaṭāsiddhāntacandrikā	217447	7-342-c	2	acc;sch		0	add-entry	B:jawAvallI	
+jawiSilAmAhAtmya	jaṭiśilāmāhātmya	217449	7-342-c	2	acc;sch		0	add-entry	B:jaWarajvalana	
+janmavarzAdiPala	janmavarṣādiphala	217477	7-342-d	2	acc;sch		0	add-entry	B:janmabanDa;B:janya	
+jalodanapaYcaka	jalodanapañcaka	217520	7-343-a	2	acc;sch		0	add-entry	B:jalAmatra	
+jAtiKaRqana	jātikhaṇḍana	217539	7-343-b	2	acc;sch		0	add-entry	A:jAtavedas;A:jAtyantarIyaka	
+jvalanolka	jvalanolka	217647	7-344-b	2	bhs;sch	21,94	0	add-entry	B:jvalana;B:jvalita	
+JalaYJalA	jhalañjhalā	217653	7-344-b	8	ap;bur;lrv;sch;shs;vcp;wil;yat		0	add-entry	B:Jara;B:JallIkA	
+qItara	ḍītara	217664	7-344-b	4	mw72;pwg;sch;vcp		0	add-entry	B:qimBa;B:Qakka	
+tantrapati	tantrapati	217728	7-344-d	2	ieg;sch		0	add-entry	B:tantrAvApa	
+tilakocavaka	tilakocavaka	217849	7-345-d	2	bhs;sch	238,29	0	add-entry	B:tilakAvala;B:tilaDenu	
+tuRava	tuṇava	217866	7-346-a	2	bhs;sch	218,8	1	add-entry	B:tuj;B:tuRqicela	
+DanuzkalApaka	dhanuṣkalāpaka	218426	7-350-b	2	bhs;sch	217,33	0	add-entry	B:DanurmArga	
+DavalapurARasamuccaya	dhavalapurāṇasamuccaya	218474	7-350-d	2	pwg;sch		0	add-entry	B:Davalapakza;B:Davalasmfti	
+DUNkzRA	dhūṅkṣṇā	218507	7-351-a	2	sch;vei		0	add-entry	B:Durya;B:DUtaguRa	
+nayahIna	nayahīna	218581	7-351-d	3	cae;ccs;sch		0	add-entry	B:nayavartman;B:nara	
+navalakzaRa	navalakṣaṇa	218604	7-351-d	2	sch;vcp		0	add-entry	B:navavitfRRa	
+nAmANkita	nāmāṅkita	218662	7-352-b	2	cae;sch		0	add-entry	B:nAmAkzara;B:nAmAdeSam	
+nicCuraRa	nicchuraṇa	218695	7-352-c	2	sch;stc		0	add-entry	B:nicayin	
+niScikIrzA	niścikīrṣā	218814	7-353-c	2	bhs;sch	127,15	0	add-entry	B:niScayin;B:niScitArTa	
+paligoDa	paligodha	219229	7-357-b	2	bhs;sch	245,122	0	add-entry	B:palASa;B:palita	
+pElottika	pailottika	219522	7-359-d	2	bhs;sch	281,242	0	add-entry	B:pEnya;B:pESunika	
+boDipakzanirdeSa	bodhipakṣanirdeśa	220050	7-364-b	2	bhs;sch	65,57	0	add-entry	B:boDicittavivaraRa;B:boDisattvacaryA	
+BrUkuwika	bhrūkuṭika	220249	7-366-a	2	bhs;sch	126,56	0	add-entry	B:BrUkuMsa;B:BrURa	
+mahAhatamanda	mahāhatamanda	220435	7-367-c	2	bhs;sch		0	add-entry	B:mahAsvapna;B:mahAhava	
+rasarasAgratA	rasarasāgratā	220770	7-370-d	2	bhs;sch	17,10	0	add-entry	B:rasaBedin	
+lavaNga	lavaṅga	220870	7-371-d	12	cae;ccs;md;mw72;pwg;sch;shs;snp;stc;vcp;wil;yat		0	add-entry	B:lalitoka;B:las	
+vaptar	vaptar	220947	7-372-c	4	cae;ccs;pwg;sch		0	add-entry	B:vapuzmattA;B:vapra	
+vfzikA	vṛṣikā	221304	7-376-b	2	bhs;sch		0	add-entry	B:vfzwi	
+akAraRabanDu	akāraṇabandhu	222073	7-384-1a	2	cae;sch		0	add-entry	B:akalpa;A:akuSala	
+atibalavant	atibalavant	222100	7-385-a	2	cae;sch		0	add-entry	A:atiprasanna;A:atiboDisattva	
+adaMzwrin	adaṃṣṭrin	222110	7-385-a	4	cae;lan;sch;stc		1	add-entry	A:aTarI;B:adattAdAyin	
+apratyudDArya	apratyuddhārya	222185	7-385-d	2	bhs;sch	278	0	add-entry	A:aptur	
+amfzya	amṛṣya	222213	7-386-a	2	mw72;sch		1	add-entry	B:amiTyA;B:ambikA	
+avicintayant	avicintayant	222241	7-386-c	2	sch;stc		0	add-entry	A:avicita;A:aviBakta	
+asaMyamitAlakin	asaṃyamitālakin	222245	7-386-c	2	sch;stc		0	add-entry	B:aSama	
+asaMvasant	asaṃvasant	222246	7-386-c	3	cae;sch;stc		0	add-entry	A:asijihva	
+fcase	ṛcase	222304	7-387-a	5	cae;ccs;pwg;sch;vcp		0	add-entry	A:UrRAyu;A:fjvAgata	
+carkfze	carkṛṣe	222380	7-387-d	2	md;sch		0	add-entry		
+tatsamakzam	tatsamakṣam	222402	7-388-a	2	cae;sch		0	add-entry	A:tatpraDAna	
+taddviguRa	taddviguṇa	222403	7-388-a	2	cae;sch		0	add-entry		
+tadbudDi	tadbuddhi	222404	7-388-a	3	cae;md;sch		0	add-entry		
+tadvaMSya	tadvaṃśya	222405	7-388-a	2	cae;sch		0	add-entry		
+tulyapraBAva	tulyaprabhāva	222412	7-388-a	2	cae;sch		0	add-entry	B:turaga	

@@ -1,0 +1,61 @@
+pool	random_rank	hw_slp1	dcs_band	pool_size
+confirmed-missing from MW (1,751)	1	aBinirhAra	3	1750
+confirmed-missing from MW (1,751)	2	apariRAyaka	3	1750
+confirmed-missing from MW (1,751)	3	asADaka	3	1750
+confirmed-missing from MW (1,751)	4	evaMvAdin	3	1750
+confirmed-missing from MW (1,751)	5	EraRqa	2	1750
+confirmed-missing from MW (1,751)	6	aBAvaka	2	1750
+confirmed-missing from MW (1,751)	7	aDAtu	2	1750
+confirmed-missing from MW (1,751)	8	aDOta	2	1750
+confirmed-missing from MW (1,751)	9	aSOcaka	2	1750
+confirmed-missing from MW (1,751)	10	aYjanaparvan	2	1750
+confirmed-missing corroborated >=2 dicts	1	aBinirhAra	3	571
+confirmed-missing corroborated >=2 dicts	2	apariRAyaka	3	571
+confirmed-missing corroborated >=2 dicts	3	asADaka	3	571
+confirmed-missing corroborated >=2 dicts	4	evaMvAdin	3	571
+confirmed-missing corroborated >=2 dicts	5	aDOta	2	571
+confirmed-missing corroborated >=2 dicts	6	aYjanaparvan	2	571
+confirmed-missing corroborated >=2 dicts	7	acetita	2	571
+confirmed-missing corroborated >=2 dicts	8	adamBin	2	571
+confirmed-missing corroborated >=2 dicts	9	agaRya	2	571
+confirmed-missing corroborated >=2 dicts	10	akarAla	2	571
+confirmed-missing citing MAHĀVY	1	cAturdvIpaka	2	149
+confirmed-missing citing MAHĀVY	2	evaMpramuKa	2	149
+confirmed-missing citing MAHĀVY	3	goSAlIputra	2	149
+confirmed-missing citing MAHĀVY	4	icCantika	2	149
+confirmed-missing citing MAHĀVY	5	kalandakanivApa	2	149
+confirmed-missing citing MAHĀVY	6	AdarSamuKa	1	149
+confirmed-missing citing MAHĀVY	7	KARu	1	149
+confirmed-missing citing MAHĀVY	8	tuRava	1	149
+confirmed-missing citing MAHĀVY	9	ADAraRamudra	0	149
+confirmed-missing citing MAHĀVY	10	ARipratyARInirhArayoga	0	149
+never-seen (absent MW72 & MW99)	1	SA	4	4112
+never-seen (absent MW72 & MW99)	2	arTay	4	4112
+never-seen (absent MW72 & MW99)	3	dUzay	4	4112
+never-seen (absent MW72 & MW99)	4	guRay	4	4112
+never-seen (absent MW72 & MW99)	5	lakzay	4	4112
+never-seen (absent MW72 & MW99)	6	mahant	4	4112
+never-seen (absent MW72 & MW99)	7	pyA	4	4112
+never-seen (absent MW72 & MW99)	8	varRay	4	4112
+never-seen (absent MW72 & MW99)	9	ArAgay	3	4112
+never-seen (absent MW72 & MW99)	10	AwarUzaka	3	4112
+confirmed-missing also in BHS/Edgerton	1	aBinirhAra	3	95
+confirmed-missing also in BHS/Edgerton	2	agaRya	2	95
+confirmed-missing also in BHS/Edgerton	3	cAturdvIpaka	2	95
+confirmed-missing also in BHS/Edgerton	4	icCantika	2	95
+confirmed-missing also in BHS/Edgerton	5	kalandakanivApa	2	95
+confirmed-missing also in BHS/Edgerton	6	kowanaka	2	95
+confirmed-missing also in BHS/Edgerton	7	AdarSamuKa	1	95
+confirmed-missing also in BHS/Edgerton	8	KARu	1	95
+confirmed-missing also in BHS/Edgerton	9	Kusta	1	95
+confirmed-missing also in BHS/Edgerton	10	kuwukuYcaka	1	95
+sup_7 extension headwords (already in PW main body)	1	A	5	4688
+sup_7 extension headwords (already in PW main body)	2	AKyA	5	4688
+sup_7 extension headwords (already in PW main body)	3	Adi	5	4688
+sup_7 extension headwords (already in PW main body)	4	Aditya	5	4688
+sup_7 extension headwords (already in PW main body)	5	Ananda	5	4688
+sup_7 extension headwords (already in PW main body)	6	Ap	5	4688
+sup_7 extension headwords (already in PW main body)	7	As	5	4688
+sup_7 extension headwords (already in PW main body)	8	Atman	5	4688
+sup_7 extension headwords (already in PW main body)	9	BAga	5	4688
+sup_7 extension headwords (already in PW main body)	10	BAz	5	4688
