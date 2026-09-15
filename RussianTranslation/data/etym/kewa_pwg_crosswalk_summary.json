@@ -1,20 +1,21 @@
 {
   "rows": 11418,
-  "matched": 9005,
-  "matched_pct": 78.87,
+  "matched": 9481,
+  "matched_pct": 83.04,
   "by_match_basis": {
     "ambiguous-multi": 46,
     "as-stem-disambiguated": 129,
     "exact": 2023,
+    "feminine->stem": 118,
     "finite-form->root": 632,
     "inflected-form->stem": 634,
     "key-unusable": 16,
+    "present-stem->root": 358,
     "routes-disagree": 612,
+    "rule-rung-applied": 476,
     "sandhi/diacritic-normalized": 5670,
-    "unmatched": 2413,
-    "unmatched-diagnostic:feminine-in-stem": 118,
-    "unmatched-diagnostic:no-nearby-pwg-headword": 1921,
-    "unmatched-diagnostic:present-stem->root": 358
+    "unmatched": 1937,
+    "unmatched-diagnostic:no-nearby-pwg-headword": 1921
   },
   "sources": {
     "pwg_key1": "SanskritLexicography/HeadwordLists/now-2026/PWG-unique-key1-106082.txt",
