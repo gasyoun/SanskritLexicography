@@ -12,10 +12,12 @@ share-alike license and the handoff grants no LICENSE/registration step —
 the committed artifacts are the script + an AGGREGATE parity report.
 Row-level join output is emitted only with --emit-join-tsv (local/temp use).
 
-Transliteration: SCL-WX → estate SLP1 via SCL's OWN converter table
-(converters/wx2slp.lex, GPL; the table's pair mappings are facts) composed
-with canonical `sanskrit_util` SLP1 (ṭ=w, ṭh=W, ḍ=q, ḍh=Q, ṇ=R, ṅ=N, ñ=Y,
-ṛ=f, ṝ=F, ḷ=x, ṣ=z, ś=S). Identity for the shared ASCII remainder.
+Transliteration: SCL-WX → estate SLP1 via a literal char table lifted from
+SCL's OWN converters/wx2slp.lex (the pairings are upstream-attested facts):
+w=t, T=W, x=d, X=D, q=f, Q=F, R=z, t=w, T=W, d=q, D=Q, N=R, F=Y, f=N, L=x,
+z/Z = anubandha markers (stripped); identity for the shared ASCII remainder.
+The table is cross-verified against canonical `sanskrit_util` in --selftest —
+sanskrit_util is NOT in the runtime join path and is never forked.
 Rosetta verification in --selftest uses SCL's own filenames/words:
 XAwu→dhātu, gaNa→gaṇa, parasmEpaxI→parasmaipada, AwmanepaxI→ātmanepada.
 
@@ -212,11 +214,20 @@ def run(dhatu_path, mwroots_path, outdir, emit_join=False, force=False):
             stats["scl_unmatched"] += 1
             unmatched_exact.append(root)
 
-    matched_scl_fold = {fold(r) for r in matched_scl_roots}
-    unmatched_mw = [(slp1, g) for slp1, _h, _c, g in mw
-                    if slp1 not in matched_scl_roots and fold(slp1) not in matched_scl_fold]
+    all_scl_fold = {fold(r) for r in scl["roots"]}
+    mw_matched_exact = 0
+    fold_witnessed_only = 0
+    unmatched_mw = []   # neither exact nor fold vs the FULL SCL root set
+    for slp1, _h, _c, g in mw:
+        if slp1 in matched_scl_roots:
+            mw_matched_exact += 1
+        elif fold(slp1) in all_scl_fold:
+            fold_witnessed_only += 1
+        else:
+            unmatched_mw.append((slp1, g))
     n_mw = len(mw)
-    stats["mw_matched"] = n_mw - len(unmatched_mw)
+    stats["mw_matched"] = mw_matched_exact
+    stats["mw_fold_witnessed"] = fold_witnessed_only
     # residue split: explicitly lexicographic (MW "L.") vs other divergence
     l_flagged = [(k, g) for k, g in unmatched_mw
                  if ", L." in g or g.rstrip().endswith("L.") or " L. " in g]
@@ -249,8 +260,10 @@ _Created: {date.today().strftime('%d-%m-%Y')} · tier: OxAlpha (opencode/z-ai/gl
 | SCL `samsaadhanii/scl` `skt_gen/Sentence/data/dhatu_info_chart_wx.txt` (dhaatupaatha data CC BY-SA 3.0 per dhaatupaatha/README; N Shailaja & Amba Kulkarni) | `{sha256(dhatu_path)[:12]}` | {scl['n_rows']} pada-rows |
 | WhitneyRoots `crosswalk/mw_roots.json` (estate MW root canon) | `{sha256(mwroots_path)[:12]}` | {len(mw)} roots |
 
-Join key: SCL-WX root → estate SLP1 via SCL's own `converters/wx2slp.lex`
-pair table composed with canonical `sanskrit_util` (never forked).
+Join key: SCL-WX root → estate SLP1 via a literal char table lifted from SCL's
+own `converters/wx2slp.lex` (the pairings are upstream-attested facts; the
+table is cross-verified against canonical `sanskrit_util` in `--selftest`,
+which is sanskrit_util's only role — it is not in the runtime join path).
 Anubandha markers (SCL-WX `z`/`Z`/trailing digits) stripped before join.
 
 ## Result — root-count parity
@@ -259,7 +272,9 @@ Anubandha markers (SCL-WX `z`/`Z`/trailing digits) stripped before join.
 |---|---|
 | SCL distinct roots (anubandha/pada-deduped) | {stats['scl_roots']} |
 | WhitneyRoots mw_roots entries | {n_mw} |
-| **mw_roots matched by SCL (exact SLP1)** | **{stats['mw_matched']} / {n_mw} = {cov_mw:.1f} %** |
+| **mw_roots matched by SCL, EXACT SLP1 only** | **{mw_matched_exact} / {n_mw} = {cov_mw:.1f} %** |
+| mw_roots witnessed only via recall-only fold (tier2, not counted above) | {fold_witnessed_only} |
+| mw_roots unmatched vs the FULL SCL root set (exact or fold) | {len(unmatched_mw)} |
 | SCL roots matched in mw_roots (tier1 exact) | {stats['tier1']} / {stats['scl_roots']} = {cov_scl:.1f} % |
 | SCL roots matching only under recall-only ASCII fold (tier2) | {stats['tier2_fold_only']} |
 | SCL roots unmatched | {stats['scl_unmatched']} |
@@ -269,13 +284,16 @@ Anubandha markers (SCL-WX `z`/`Z`/trailing digits) stripped before join.
 
 ## Residue analysis (measured, not guessed)
 
-- {len(unmatched_mw)} mw_roots entries have no SCL chart root even under the
-  recall-only fold; of these **{len(l_flagged)} are explicitly lexicographic**
-  (MW gloss flags ", L." / "L." — late Sanskrit additions a Pāṇinian gaṇa-list
-  does not attest).
-- The rest diverge by **citation-grade convention**, not by key failure:
-  MW cites guṇa/vṛddhi or nasal-infixed shapes where the Pāṇinian chart cites
-  zero-grade (tier2 examples: {", ".join(f"{k}↔{'+'.join(v)}" for k, v in fold_only[:6])}).
+- {len(unmatched_mw)} mw_roots entries have neither an exact nor a case-fold
+  SLP1 partner anywhere in the full SCL root set; of these
+  **{len(l_flagged)} are explicitly lexicographic** (MW gloss flags ", L." /
+  "L." — late Sanskrit additions a Pāṇinian gaṇa-list does not attest); the
+  remainder are genuine generator-chart gaps vs MW's inventory.
+- Citation-grade divergence is measured separately, as {fold_witnessed_only}
+  mw entries + {stats['tier2_fold_only']} SCL roots that pair only under the
+  recall-only fold (MW guṇa/vṛddhi or aspirated citation shapes vs the
+  Pāṇinian zero-grade chart; SCL-side examples:
+  {", ".join(f"{k}↔{'+'.join(v)}" for k, v in fold_only[:6])}).
 - Class agreement {class_agree}/{class_agree + class_disagree}
   ({100.0 * class_agree / max(1, class_agree + class_disagree):.1f} %) on matched
   pairs with classes on both sides — informational only.
@@ -299,8 +317,10 @@ SCL-derived row-level data is committed; join TSV stays local (--emit-join-tsv).
         f.write(report)
 
     print(json.dumps({
-        "scl_roots": stats["scl_roots"], "mw_roots": stats["mw_matched"] + stats["mw_unmatched"],
-        "mw_matched": stats["mw_matched"], "mw_coverage_pct": round(cov_mw, 1),
+        "scl_roots": stats["scl_roots"], "mw_roots": n_mw,
+        "mw_matched_exact": mw_matched_exact, "mw_coverage_pct": round(cov_mw, 1),
+        "mw_fold_witnessed_only": fold_witnessed_only,
+        "mw_unmatched": len(unmatched_mw), "mw_unmatched_L_flagged": len(l_flagged),
         "scl_matched": stats["tier1"], "scl_coverage_pct": round(cov_scl, 1),
         "tier2_fold_only": stats["tier2_fold_only"], "pairs": stats["join_pairs"],
         "class_agree": class_agree, "class_disagree": class_disagree,
