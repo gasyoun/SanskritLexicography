@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 13-09-2026_
+_Created: 06-08-2026 · Last updated: 15-09-2026_
 
 This file guides Claude Code in this repository.
 
@@ -204,5 +204,9 @@ centrally in an org-private hub
 ([Uprava DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md), org members only); the public-safe subset is
 mirrored in the generated block of
 [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/AGENTS.md). Check before running anything that writes.
+
+## Memory store
+
+This repo keeps a committed memory store at [`.claude/projects/SanskritLexicography/memory/`](https://github.com/gasyoun/SanskritLexicography/tree/master/.claude/projects/SanskritLexicography/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
 
 _Dr. Mārcis Gasūns_
