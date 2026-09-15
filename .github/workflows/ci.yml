@@ -402,6 +402,11 @@ jobs:
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py
+      - name: H4530 window-id collision + SAN-LOSS requeue restore selftests
+        working-directory: RussianTranslation
+        run: |
+          python src/pilot/h4530_window_id_collision_selftest.py
+          python src/pilot/h4342_fixes/h4342_requeue_sanloss_selftest.py
       - name: Griffith EN alignment gate (H2361/H3949)
         working-directory: RussianTranslation
         env:

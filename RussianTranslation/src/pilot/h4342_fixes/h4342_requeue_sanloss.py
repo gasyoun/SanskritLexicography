@@ -80,11 +80,37 @@ def find_sanloss_hits(rows, targets):
     return hits
 
 
+def _row_identity(row):
+    return json.dumps(row, sort_keys=True, ensure_ascii=False)
+
+
+def rows_to_restore(quarantined, rows):
+    """Quarantined rows not currently in the store, matched by exact row content (multiset).
+
+    `(subcard, sense_tag)` is not a row key: a subcard carries many sense rows and tags
+    repeat inside one (`m_a~~h0_zz_pw03` holds three `main` rows). The H4530 verifier pass
+    (15-09-2026) found the earlier key-based check silently skipping the quarantined
+    `m_a~~h0_zz_pw03 / main` row because a surviving sibling shared its key — the documented
+    restore would have put back 2 of 3. Content matching keeps restore idempotent (a second
+    run finds every row present) without ever dropping a sibling-keyed row."""
+    have = {}
+    for r in rows:
+        ident = _row_identity(r)
+        have[ident] = have.get(ident, 0) + 1
+    back = []
+    for r in quarantined:
+        ident = _row_identity(r)
+        if have.get(ident):
+            have[ident] -= 1
+        else:
+            back.append(r)
+    return back
+
+
 def do_restore(args):
     quarantined = read_rows(args.restore)
     rows = read_rows(args.store)
-    have = {(r.get("subcard"), r.get("sense_tag")) for r in rows}
-    back = [r for r in quarantined if (r.get("subcard"), r.get("sense_tag")) not in have]
+    back = rows_to_restore(quarantined, rows)
     print("restore: quarantine holds %d row(s), %d not currently in the store"
           % (len(quarantined), len(back)))
     for row in back:
