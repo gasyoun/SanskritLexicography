@@ -988,6 +988,77 @@ def test_q3_execute_requires_canary_go_receipt_h2159(td):
         bsr.run = _run
 
 
+def _canary_receipt(td, name, profile_slot, age_seconds=0):
+    """A real `canary_gate.py judge` GO receipt for `profile_slot` (None = slot-less)."""
+    import canary_gate as cg
+    card = {'records': [{'senses': [
+        {'russian': 'перевод %d' % i, 'german': 'Übersetzung %d' % i} for i in range(3)]}]}
+    res = {'meta': {'execution': {'profile_slot': profile_slot}},
+           'results': [{'key': 'dq_canary_puregloss', 'card': card}]}
+    wf = os.path.join(td, name + '_wf.json')
+    with open(wf, 'w', encoding='utf-8') as fh:
+        json.dump(res, fh, ensure_ascii=False)
+    path = os.path.join(td, name + '.json')
+    assert cg.main(['judge', wf, '--receipt', path]) == 0
+    if age_seconds:
+        receipt = cg.load_receipt(path)
+        receipt['judged_at_epoch'] -= age_seconds
+        with open(path, 'w', encoding='utf-8') as fh:
+            json.dump(receipt, fh)
+    return path
+
+
+def test_q4_multi_profile_needs_one_receipt_per_profile_h4916(td):
+    """H4916: a multi-profile --execute run (no --only-profile) used to pass the canary gate
+    on ONE receipt — `canary_gate.enforce(only_profile=None)` never compared a slot — and then
+    probe_fleet fanned paid calls across N profiles. The gate now reads the dispatch roster
+    (`gate_profiles`, the same selection `run()` makes) and needs a GO receipt NAMING each slot.
+    run() is patched to a sentinel: a refused gate must never reach plan, db probe or fleet."""
+    db = os.path.join(td, 'q4.sqlite')
+    dbc = mao.connect(db)
+    with dbc:
+        for name in ('c4', 'c5'):
+            dbc.execute("INSERT INTO accounts(name,config_dir,validated,updated_at) "
+                        "VALUES(?,?,1,?)", (name, td, mao.now_iso()))
+    dbc.close()
+    c4 = _canary_receipt(td, 'q4_c4', 'c4')
+    c5 = _canary_receipt(td, 'q4_c5', 'c5')
+    c5_stale = _canary_receipt(td, 'q4_c5_stale', 'c5', age_seconds=8 * 3600)
+    slotless = _canary_receipt(td, 'q4_slotless', None)
+    base = ['--plan', os.path.join(td, 'q4p.json'), '--coord-dir', os.path.join(td, 'q4cd'),
+            '--coordinator', os.path.join(HERE, 'coordinator.py'), '--cwd', td, '--db', db,
+            '--events', os.path.join(td, 'q4.events.jsonl'), '--execute',
+            '--max-calls', '1', '--cost-ceiling', '1.0']
+    assert bsr.gate_profiles(bsr.build_parser().parse_args(base)) == ['c4', 'c5']
+    reached = []
+    _run = bsr.run
+    bsr.run = lambda a: reached.append(1) or 'gate-passed'
+
+    def refused(extra, needle):
+        try:
+            bsr.main(base + extra)
+        except SystemExit as exc:
+            assert needle in str(exc), (extra, str(exc))
+            return
+        raise AssertionError('%r passed the canary gate' % extra)
+    try:
+        refused(['--canary-receipt', c4], "profile(s) c5")          # 1 receipt, 2 profiles
+        refused(['--canary-receipt', c4, '--canary-receipt', c4], 'two canary receipts')
+        refused(['--canary-receipt', c4, '--canary-receipt', c5_stale], 'FRESH')
+        refused(['--canary-receipt', c4, '--canary-receipt', slotless], 'names no profile_slot')
+        assert not reached, 'a refused multi-profile gate reached run()'
+        assert bsr.main(base + ['--canary-receipt', c4, '--canary-receipt', c5]) \
+            == 'gate-passed', 'N profiles with N fresh per-profile receipts must pass'
+        # --max-accounts 1 narrows the roster to c4, so one c4 receipt is enough ...
+        assert bsr.main(base + ['--max-accounts', '1', '--canary-receipt', c4]) == 'gate-passed'
+        # ... and --only-profile keeps the single-profile contract: the slot must match.
+        refused(['--only-profile', 'c5', '--canary-receipt', c4], 'gate the SAME profile')
+        assert bsr.main(base + ['--only-profile', 'c5', '--canary-receipt', c5]) == 'gate-passed'
+    finally:
+        bsr.run = _run
+    print('  (q4) H4916: N dispatch profiles need N fresh GO receipts naming each slot: PASS')
+
+
 def test_q_cohort_width_cli_and_live_refusal(td):
     """H1437 Phase 3 + **H4527 deliberate flip**: --cohort-width is still OFFLINE-ONLY on the
     live route, but the refusal is no longer a hardcoded "never" — it is now READ from one
@@ -1578,6 +1649,7 @@ def main():
         test_p_resume_requires_existing_ledger_run(td)
         test_q2_execute_requires_ceilings_h2157(td)
         test_q3_execute_requires_canary_go_receipt_h2159(td)
+        test_q4_multi_profile_needs_one_receipt_per_profile_h4916(td)
         test_q_cohort_width_cli_and_live_refusal(td)
         test_r_cohort_offline_serial_equivalence(td)
         test_s_h7_zero_claim_drain_stops_instead_of_spinning(td)

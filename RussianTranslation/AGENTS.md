@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 15-09-2026_
 
 # AGENTS.md — RussianTranslation repo-local instructions
 
@@ -64,7 +64,8 @@ Since H2159 (02-08-2026) the live-gate canary verdict is consumed
 MECHANICALLY: `canary_gate.py judge` writes a GO/NO-GO receipt from the canary
 wf_output, and `--execute` refuses to start without a fresh (≤6 h) GO receipt
 for the same profile (`--canary-receipt`; `--skip-canary-gate` is the explicit
-escape hatch).
+escape hatch). Since H4916 (15-09-2026) a multi-profile run needs one receipt per
+dispatch profile, each naming its slot — one GO no longer vouches for N profiles.
 
 On Windows, all Claude process trees use a kill-on-close Job Object assigned
 while the child is suspended; timeout and non-timeout cleanup therefore reach
@@ -108,8 +109,11 @@ Coordinator state is deliberately split: `claimed`/`prepared`/`requeue_prepared`
 consume no model runtime; `begin-run` is the only transition to `running`, and `record-output` moves
 that reservation through `auditing` before releasing it. Ordinary/manual execution is globally
 capped at three running leases. Four is available only inside `max_account_orchestrator.py
-staged-run` after its exact per-profile probe writes a fresh matching receipt; missing, stale,
-failed, or mismatched evidence is a hard refusal, and five is never allowed. Do not call
+staged-run`, which first requires one fresh GO canary receipt per dispatch profile
+(`--canary-receipt`, repeated; `canary_gate.py judge` output, <= 6 h, naming its profile slot
+when more than one profile runs; H4916) and then its exact per-profile probe writing a fresh
+matching receipt; missing, stale, failed, or mismatched evidence is a hard refusal, and five is
+never allowed. Do not call
 `record-output` directly on a merely prepared lease. A dead worker must be returned with
 `release-run --confirm-dead --reason ...`; recover stale `preparing`/`auditing` tokens only with
 `recover-operation --confirm-dead` after confirming the subprocess is gone.
