@@ -6,7 +6,7 @@ _Created: 10-09-2026 · Last updated: 11-09-2026_
 - **Provenance:** [H4475](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4475-OxAlpha_SanskritLexicography_sanskrityatina-reverse-index_09.09.26.md) (OxAlpha, `zai-coding-plan/glm-5.3-flash`, 10-09-2026) · source `yadisk:Sanskrityatina/04_Reverse/187992 headwords.txt` (1,706 B, ASCII CRLF, sha256 `c269e11f…`, full facts in [provenance.json](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/sanskrityatina/provenance.json)) · raw gitignored by mission.
 - **Format table + folder census:** [H4475_FORMAT_TABLE_10-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/sanskrityatina/H4475_FORMAT_TABLE_10-09-2026.md).
 - **Rebuild:** `python3 ReverseDictionary/sanskrityatina/tools/h4475_build_reverse_index.py` (idempotent; refetch command in `--help`; needs sibling clone `~/Documents/GitHub/sanskrit-util`).
-- **Consumers:** none yet (registered in kosha as `sanskrityatina-reverse-index`, 10-09-2026).
+- **Consumers:** H4714 (15-09-2026) — class-level consumer in the ReverseDictionary master-list complement join (stock 187,992 = legend context; the per-headword slice came from the sibling `sanskrityatina-sch-cases`); registered in kosha as `sanskrityatina-reverse-index`, 10-09-2026.
 
 ## Ranked improvement backlog
 
@@ -32,5 +32,6 @@ _Created: 10-09-2026 · Last updated: 11-09-2026_
 
 _Revision history:_ v1 (10-09-2026) — initial landing, H4475.
 _Revision history v2 (11-09-2026):_ backlog item 1 landed as `sanskrityatina-sch-cases`, H4533.
+_Revision history v3 (15-09-2026):_ first consumer — H4714 master-list complement join (class-level; row-level slice via the sibling sch-cases dataset).
 
 _Dr. Mārcis Gasūns_
