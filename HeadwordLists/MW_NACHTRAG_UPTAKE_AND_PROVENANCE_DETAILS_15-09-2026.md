@@ -114,4 +114,48 @@ Files: [`nachtrag_uptake_details.py`](https://github.com/gasyoun/SanskritLexicog
 4. **Named false-positive classes**: the `-aya` denominal stems in the never-seen top-10 (§5), the `len(hw) < 3` short forms (trial §3 note), and the `kAritra`~`kArita` near-form pair (recheck §2).
 5. The dropped-between-editions list (§3) includes apparent parse artifacts (`Card`, `var`, `qItara`) — scan-check before any use.
 
+## 10 · H4884 — never-seen (4,112) + dropped (27) adjudicator
+
+MG ruling 15-09-2026 «Оба параллельно»: the two classes named in §3/§5 (never-seen
+absent from MW72 *and* MW99, dropped MW72-had-it-MW99-lost-it) now carry a
+per-row verdict, reusing the corroboration/stem/fold-twin machinery of
+[`mw_pwk_nachtraege_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_adjudicate.py)
+(H4878/H4883) rather than rebuilding it. Builder:
+[`mw72_classes_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_classes_adjudicate.py).
+Output:
+[`MW72-CLASSES-ADJUDICATION-15-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW72-CLASSES-ADJUDICATION-15-09-2026.tsv)
+(4,139 rows = 4,112 + 27) +
+[`MW72-CLASSES-TIERA-STUBS-15-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW72-CLASSES-TIERA-STUBS-15-09-2026.md) +
+[`MW72-CLASSES-SPOTCHECK-30-15-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW72-CLASSES-SPOTCHECK-30-15-09-2026.tsv).
+
+| verdict | rows | meaning |
+|---|--:|---|
+| `confirmed-missing` | 3,384 | no exact/stem/fold hit anywhere in MW99 — omission stands; 1,140 of these corroborate ≥2 of 36 Cologne dicts (Tier A) |
+| `covered-by-MW-stem-form` | 460 | MW99 carries the same stemkey headword |
+| `covered-by-fold-twin-flagged` | 264 | MW99 carries a case/vowel-length twin (Akalita/akalita trap) — needs eyes |
+| `dropped-between-editions` | 27 | all 27 dropped rows, fixed editorial note (§3) |
+| `anomaly-exact-hit-in-mw99` | 4 | baseline TSV said never-seen but the headword is exact-present in `mw.txt` — flagged for a baseline-extraction re-check, not filed |
+
+**Canary — kAritra:** `confirmed-missing`, pointers `pw L620963` (`pw.txt` physical
+line of its `<L>` tag `216013`, `7-331-d`) / `pwkvn L53131` (`pwkvn.txt`
+physical line, tag `16013`) / `bhs L4759` (`bhs.txt` `<L>` tag value — `bhs`
+physical line is 19108, a different numbering convention from `pw`/`pwkvn`,
+both verified against the raw files) / `MAHĀVY 245. 844` (two citations in the
+same PW body: an inline `MAHĀVY. 245` and a second sense via
+`<ls n="MAHĀVY.">844</ls>` with no inline prefix — both regex patterns are
+needed, an earlier pass caught only the first and mis-reported `245`).
+
+**30-sample spot-check:** 0 false positives (every sampled `confirmed-missing`
+row has `mw_exact_hit=0`, `mw_fold_hit=0`, `mw_stem_hit=0` against MW99) — under
+the ≤1 bar.
+
+**Caveat — `sch` dominance in corroboration:** `sch` (Schmidt's *Nachträge zum
+Sanskrit-Wörterbuch*) appears in nearly every sampled `corr_dicts` cell; it is
+one of the 36 corroboration dictionaries and, being itself a PW-Nachträge-era
+supplement, is expected to overlap heavily with `sup_7` headwords. This
+inflates `corr_n`/Tier-A membership toward `sch`-only corroboration — a
+Tier-A row whose only corroborator is `sch` is weaker evidence than one
+corroborated by two independent, later dictionaries; treat `corr_dicts` as a
+ranked list, not a flat count, before any filing pass.
+
 _Гасунс_
