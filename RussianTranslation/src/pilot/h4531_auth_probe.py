@@ -22,8 +22,8 @@ import anthropic_messages_route as amr  # noqa: E402
 
 
 def main():
-    client, note = abr.api_client()
-    print('credential source: %s' % note)
+    client, _ = abr.api_client()
+    print('credential source: %s' % abr.credential_note())
     verdict = amr.check_auth_and_model(client, model=abr.MODEL)
     print(json.dumps(verdict, ensure_ascii=False, sort_keys=True))
     return 0 if verdict.get('authenticated') and verdict.get('model_available') else 4
