@@ -1,11 +1,32 @@
 # H4531 — Anthropic Message Batches API bounded probe: transport built, live arm BLOCKED on an invalid credential
 
-_Created: 11-09-2026 · Last updated: 11-09-2026_
+_Created: 11-09-2026 · Last updated: 15-09-2026_
 
 Model: Opus 5 (`claude-opus-5[1m]`), unattended handoff worker, pool=sonnet.
 Handoff: [H4531](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4531-Opus_RussianTranslation_pwg-ru-messages-batches-api-probe_10.09.26.md)
 (Opus, 🟡2 medium, class money — budget pre-authorized by MG 10-09-2026).
 elapsed: ~75 мин (interactive session, no worker log — no tok/s figure is claimed).
+
+## Re-probe 15-09-2026 — credential still invalid, branch relanded on current master
+
+Worker 1 on executor Claude/c1, Opus 5 (`claude-opus-5[1m]`), re-dispatched by the pool=opus drain.
+
+1. `python src/pilot/h4531_auth_probe.py` → **rc=4**,
+   `{"authenticated": false, "model_available": false, "reason": "AuthenticationError:http_401"}`.
+   `C:\Users\user\.secrets\anthropic.env` is the only Anthropic credential file on this box and
+   its mtime is still 02-08-2026 — no key rotation has reached it since the 11-09 run. No
+   `ANTHROPIC*` variable is set in the worker environment. The paid arm was therefore **not
+   attempted** (a submit would only burn a fresh 23-call ceiling at $0, per § Finding).
+2. The 11-09 commits were cherry-picked onto `origin/master` `fcffedb0e` in a fresh worktree
+   (one conflict, `LAUNCH_FUCKUPS.md` — resolved by keeping both the H4527 and the H4531
+   entries). Gates re-run on the rebased tree, all **PASS**: `anthropic_batches_route_selftest`,
+   `execution_contract_selftest`, `route_compare_selftest` (10/10), `gateway_route_selftest`,
+   `gateway_external_selftest`, `gateway_attestation_selftest` (9/9),
+   `gateway_canary_contract_selftest` (3/3), `call_reservation_selftest`,
+   `usage_accounting_selftest` (6/6), `lang_parity_check` (112 entries, no drift),
+   `window_selftest` (225/225).
+3. Verdict unchanged: **INCONCLUSIVE**, blind spot open, one valid key away from GO/NO-GO.
+   The human step in § What unblocks the live arm is still the only way forward.
 
 ## Verdict: INCONCLUSIVE — neither GO nor NO-GO, and deliberately not a dead end
 
