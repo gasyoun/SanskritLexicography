@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 """Profile-bound manifest-v2 validation and global active-call serialization."""
 import collections
+import datetime
 import hashlib
+import json
 import os
 import tempfile
 
@@ -363,6 +365,10 @@ class ActiveCallClaim:
         self.root = root or os.path.join(tempfile.gettempdir(), 'pwg-active-calls')
         self.path = os.path.join(self.root, fingerprint + '.lock')
         self._fh = None
+        # H4915: one held claim is ONE readiness-probe attempt, however many calls it covers
+        # (live_probe's warm-up + measured pair, a latency sweep's whole series). The first
+        # `_probe_call` under the claim spends the ration and flips this; the rest ride on it.
+        self.ration_admitted = False
 
     def is_live_canonical_for(self, fingerprint):
         """Return True only for the live claim at the one process-wide lock path.
@@ -385,6 +391,7 @@ class ActiveCallClaim:
             fh.close()
             raise RuntimeError('profile already has an active model call')
         self._fh = fh
+        self.ration_admitted = False
         return self
 
     def __exit__(self, _typ, _value, _tb):
@@ -392,3 +399,122 @@ class ActiveCallClaim:
         if fh is not None:
             _os_unlock(fh)
             fh.close()
+
+
+# H4915 (15-09-2026): the readiness-probe ration, enforced in code. The standing ration is at
+# most 2 probe attempts per UTC day per profile, at least 6 h apart. On 15-09 c1 was probed three
+# times in one UTC day (01:35Z, 14:23Z, 14:26:55Z). Two things let the third one through:
+# `ActiveCallClaim` only serialises calls that OVERLAP, and the probe log is split across evidence
+# roots (explicit `--evidence-dir` -> `$PWG_EVIDENCE_DIR` -> checkout), so a session reading one
+# root could not see the other root's row. The ledger below lives in ONE machine-wide place, beside
+# the active-call lock dir, and it is keyed by the same config-directory fingerprint. There is no
+# env override on purpose: a per-session root would split the count again.
+PROBE_RATION_MAX_PER_UTC_DAY = 2
+PROBE_RATION_MIN_GAP_S = 6 * 3600
+
+
+def probe_ration_root():
+    return os.path.join(tempfile.gettempdir(), 'pwg-probe-ration')
+
+
+def _utc(ts):
+    return datetime.datetime.fromtimestamp(ts, datetime.timezone.utc)
+
+
+def _utc_iso(ts):
+    return _utc(ts).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+
+def _next_utc_midnight(ts):
+    day = _utc(ts).date() + datetime.timedelta(days=1)
+    return datetime.datetime(day.year, day.month, day.day,
+                             tzinfo=datetime.timezone.utc).timestamp()
+
+
+class ProbeRationRefused(RuntimeError):
+    """A readiness probe the ration forbids. Raised BEFORE any spawn or call reservation.
+
+    Deliberately NOT a SystemExit: a ration refusal is not a health verdict. The probe CLIs read a
+    SystemExit from `live_probe` as a NO-GO reading, and `probe_fleet --drop-unhealthy` would
+    silently drop the profile as unhealthy."""
+
+    def __init__(self, message, next_legal_ts=None):
+        RuntimeError.__init__(self, message)
+        self.next_legal_ts = next_legal_ts          # None: no legal time until a human repairs
+        self.next_legal_utc = None if next_legal_ts is None else _utc_iso(next_legal_ts)
+
+
+class ProbeRation:
+    """Per-profile ledger of readiness-probe attempts, one JSONL file per fingerprint.
+
+    Callers check and record while they hold the profile's `ActiveCallClaim`. That kernel lock
+    already serialises every probe on one profile across processes, so check-then-append cannot
+    race. A row that cannot be parsed fails CLOSED: the refusal names the file and line, because
+    guessing an attempt's time guards paid spend worse than a stopped profile does."""
+
+    def __init__(self, root=None):
+        self.root = root or probe_ration_root()
+
+    def path(self, fingerprint):
+        return os.path.join(self.root, fingerprint + '.jsonl')
+
+    def attempts(self, fingerprint):
+        path = self.path(fingerprint)
+        try:
+            with open(path, encoding='utf-8') as fh:
+                lines = fh.read().splitlines()
+        except FileNotFoundError:
+            return []
+        stamps = []
+        for number, line in enumerate(lines, 1):
+            if not line.strip():
+                continue
+            try:
+                stamps.append(float(json.loads(line)['ts']))
+            except (ValueError, TypeError, KeyError) as exc:
+                raise ProbeRationRefused(
+                    'probe ration ledger %s line %d is unreadable (%s); refusing the probe '
+                    'rather than guessing when the last attempt was. Repair the line by hand '
+                    '(H4915).' % (path, number, exc))
+        return sorted(stamps)
+
+    def next_legal(self, fingerprint, now):
+        """Earliest time >= now at which one more attempt is legal."""
+        stamps = self.attempts(fingerprint)
+        legal = now
+        if stamps:
+            legal = max(legal, stamps[-1] + PROBE_RATION_MIN_GAP_S)
+        while sum(1 for ts in stamps if _utc(ts).date() == _utc(legal).date()) \
+                >= PROBE_RATION_MAX_PER_UTC_DAY:
+            legal = _next_utc_midnight(legal)
+        return legal
+
+    def check(self, fingerprint, now, label=None):
+        stamps = self.attempts(fingerprint)
+        legal = self.next_legal(fingerprint, now)
+        if legal <= now:
+            return
+        today = _utc(now).date()
+        same_day = [ts for ts in stamps if _utc(ts).date() == today]
+        reasons = []
+        if len(same_day) >= PROBE_RATION_MAX_PER_UTC_DAY:
+            reasons.append('%d attempt(s) already on UTC day %s (max %d)'
+                           % (len(same_day), today.isoformat(), PROBE_RATION_MAX_PER_UTC_DAY))
+        if stamps and now - stamps[-1] < PROBE_RATION_MIN_GAP_S:
+            reasons.append('last attempt at %s is under %d h old'
+                           % (_utc_iso(stamps[-1]), PROBE_RATION_MIN_GAP_S // 3600))
+        raise ProbeRationRefused(
+            'probe ration: profile %s -- %s. Next legal attempt: %s. No call was made and no '
+            'reservation was spent. Ledger: %s (H4915)'
+            % (label or fingerprint[:12], '; '.join(reasons) or 'ration exhausted',
+               _utc_iso(legal), self.path(fingerprint)), legal)
+
+    def record(self, fingerprint, now, purpose=None, account=None):
+        """Append one attempt. Raises on a failed write: an unrecorded attempt must not spawn."""
+        os.makedirs(self.root, exist_ok=True)
+        row = {'ts': now, 'utc': _utc_iso(now), 'purpose': purpose, 'account': account,
+               'pid': os.getpid()}
+        with open(self.path(fingerprint), 'a', encoding='utf-8') as fh:
+            fh.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + '\n')
+            fh.flush()
+            os.fsync(fh.fileno())
