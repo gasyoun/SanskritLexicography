@@ -35,7 +35,7 @@ The `dcs_bhs_loci` column names the exact text(s) per row, so any consumer can r
 2. **T2 form_key** — `slp1_form_key` fold (anusvāra→homorganic nasal, final visarga drop).
 3. **T3 marker_strip** — strip `[˚()\-]` from both sides, exact compare (BHS's bound-stem `˚` and hyphenated-compound conventions).
 4. **T4 marker_strip+form_key.**
-Each tier reported separately; strongest tier wins. DCS side restricted to the 20 Buddhist texts (285,109 tokens, 13,565 distinct lemmas); 265/300 keys match >1 DCS lemma (homographs) — the max-token lemma travels in the TSV, `dcs_lemma_hits` counts the rest.
+Each tier reported separately; strongest tier wins. DCS side restricted to the 20 Buddhist texts (285,109 tokens, 13,565 distinct lemmas); 300 keys match >1 DCS lemma (homographs; 273 at 2 hits, 27 at ≥3) — the max-token lemma travels in the TSV, `dcs_lemma_hits` counts the rest.
 
 ## Verification (30-entry sample — PASS)
 
