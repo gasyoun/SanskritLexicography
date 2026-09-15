@@ -19,7 +19,8 @@ import time
 import host_state
 import probe_log
 from run_observability import append_event, utc_now, write_census
-from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix,
+from headless_worker import (DEFAULT_TIMEOUT_S, SAFE_MODE_FLAG, bare_cli_cwd,
+                             claude_argv_prefix, resolve_safe_mode,
                              run_tree_kill, timeout_output_text,
                              validate_preflight_artifact, windows_hidden_flags,
                              wrapper_timeout_s)
@@ -1484,15 +1485,34 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 detail_out['raw_envelope_path'] = name
         return classification
 
+    argv = claude_argv_prefix(claude) + [
+        '-p', '--output-format', 'json', '--json-schema',
+        '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
+        '--model', model, '--permission-mode', 'plan']
+    # H4527 (15-09-2026): the probe must strip the profile the SAME way the paid lane does —
+    # the H2299 defect class again, one flag over. Since H2251 `headless_worker` spawns every
+    # generation call with `--safe-mode` (no profile CLAUDE.md, skills, plugins, hooks, MCP);
+    # this spawn never adopted it, so the gate certified a call carrying the whole interactive
+    # profile — SessionStart/UserPromptSubmit hook dumps included — that the lane never sends.
+    # That ambient context is what the 07-09 refusal named as its third objection ("the
+    # surrounding system-reminders"), and it is the only input that differed on 11-09, when this
+    # probe answered {"ok": false} (cache_creation 50 209 tokens, 7 312 thinking) on a c1
+    # profile that had passed three paid lane calls — canary x2 and a real window — in the two
+    # hours before. DERIVED from the lane's own resolver with no manifest (= the lane default),
+    # never a literal: it degrades exactly as the lane does when the CLI lacks the flag. The
+    # content check below is untouched — {"ok": true} is still the only passing answer.
+    safe_mode = resolve_safe_mode({}, claude)
+    if safe_mode:
+        argv.append(SAFE_MODE_FLAG)
+    if detail_out is not None:
+        detail_out['cli_safe_mode_effective'] = safe_mode
     reservation = call_reservation.reserve(
         reservation_purpose, profile=account)
     progress = {}
     started = time.monotonic()
     try:
         proc = run_tree_kill(            # D-J: tree-kill on timeout
-            claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
-             '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
-             '--model', model, '--permission-mode', 'plan'],
+            argv,
             input=prompt, env=env, text=True, encoding='utf-8', capture_output=True,
             # H2299: spawn from the SAME bare cwd the paid lane uses. `run_tree_kill`'s
             # `cwd` defaulted to None here, so the probe silently inherited whatever
@@ -1673,6 +1693,8 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
             bytes_seen=(detail or {}).get('bytes_seen'),
             quiet_ms=(detail or {}).get('quiet_ms'),
             killed_reason=(detail or {}).get('killed_reason'),
+            # H4527: which profile surface the reading was taken on (see `_probe_call`).
+            cli_safe_mode_effective=(detail or {}).get('cli_safe_mode_effective'),
         )
         # H2647: the environment the reading was taken in, captured at spawn time. Without
         # these the series cannot tell its SUBJECT (c1's account and route) from its

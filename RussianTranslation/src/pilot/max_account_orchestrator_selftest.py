@@ -896,6 +896,48 @@ def main():
     print('  H2299 probe spawn cwd: == headless_worker.bare_cli_cwd() (%s), not the repo'
           % cap3['cwd'])
 
+    # H4527 (15-09-2026): the probe must strip the profile the SAME way the paid lane does.
+    # Since H2251 the lane spawns with `--safe-mode` by default; the probe never adopted it, so it
+    # certified a call carrying the full interactive profile (hooks, CLAUDE.md, skills) — the
+    # ambient context the 07-09 refusal named, and the only input that differed when the 11-09
+    # probe answered {"ok": false} on a c1 profile that had just passed three paid lane calls.
+    # Asserted as EQUALITY WITH THE LANE'S RESOLVER both ways (supported -> flag present and
+    # recorded; unsupported -> absent, degrading exactly as the lane does), never as a literal.
+    _rtk4 = m.run_tree_kill
+    _support = dict(hw._safe_mode_support)
+    cap4 = {}
+
+    def _capture_argv(*a, **k):
+        cap4['argv'] = list(a[0]) if a else list(k.get('args') or [])
+        return types.SimpleNamespace(
+            returncode=0, stderr='',
+            stdout='{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}')
+
+    try:
+        m.run_tree_kill = _capture_argv
+        for supported in (True, False):
+            hw._safe_mode_support[sys.executable] = supported
+            detail = {}
+            _lat, cls4, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                            call_reservation=MemoryCallLedger(),
+                                            detail_out=detail)
+            assert cls4 == 'success', cls4
+            lane = hw.resolve_safe_mode({}, sys.executable)
+            assert lane is supported, (lane, supported)
+            assert (hw.SAFE_MODE_FLAG in cap4['argv']) is lane, (
+                'probe --safe-mode=%r but the paid lane resolves %r -- the gate is certifying a '
+                'different profile surface than the lane it gates (H4527)'
+                % (hw.SAFE_MODE_FLAG in cap4['argv'], lane))
+            assert detail.get('cli_safe_mode_effective') is lane, detail
+            assert '--permission-mode' in cap4['argv'] and 'plan' in cap4['argv'], cap4['argv']
+        assert 'cli_safe_mode_effective' in ro.ALLOWED
+    finally:
+        m.run_tree_kill = _rtk4
+        hw._safe_mode_support.clear()
+        hw._safe_mode_support.update(_support)
+    print('  H4527 probe --safe-mode: == headless_worker.resolve_safe_mode({}) both ways; '
+          'recorded as cli_safe_mode_effective')
+
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
     with tempfile.TemporaryDirectory() as td:
@@ -1867,7 +1909,10 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             cls, detail = _call('h2326-ok')
             assert cls == 'success', (cls, detail)
             assert 'err_pattern' not in detail and 'raw_envelope_path' not in detail, detail
-            assert set(detail) <= {'host_state'}, (
+            # H4527 widened it once more, for the same reason as H2647: `cli_safe_mode_effective`
+            # is provenance (which profile surface the reading was taken on), not a diagnostic,
+            # and a healthy reading needs it most — it is what a refused one is compared against.
+            assert set(detail) <= {'host_state', 'cli_safe_mode_effective'}, (
                 'success added an unexpected detail key: %s' % sorted(detail))
             assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
 
