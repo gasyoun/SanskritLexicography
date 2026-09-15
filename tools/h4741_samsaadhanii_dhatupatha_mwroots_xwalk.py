@@ -12,10 +12,12 @@ share-alike license and the handoff grants no LICENSE/registration step —
 the committed artifacts are the script + an AGGREGATE parity report.
 Row-level join output is emitted only with --emit-join-tsv (local/temp use).
 
-Transliteration: SCL-WX → estate SLP1 via SCL's OWN converter table
-(converters/wx2slp.lex, GPL; the table's pair mappings are facts) composed
-with canonical `sanskrit_util` SLP1 (ṭ=w, ṭh=W, ḍ=q, ḍh=Q, ṇ=R, ṅ=N, ñ=Y,
-ṛ=f, ṝ=F, ḷ=x, ṣ=z, ś=S). Identity for the shared ASCII remainder.
+Transliteration: SCL-WX → estate SLP1 via a literal char table lifted from
+SCL's OWN converters/wx2slp.lex (the pairings are upstream-attested facts):
+w=t, T=W, x=d, X=D, q=f, Q=F, R=z, t=w, T=W, d=q, D=Q, N=R, F=Y, f=N, L=x,
+z/Z = anubandha markers (stripped); identity for the shared ASCII remainder.
+The table is cross-verified against canonical `sanskrit_util` in --selftest —
+sanskrit_util is NOT in the runtime join path and is never forked.
 Rosetta verification in --selftest uses SCL's own filenames/words:
 XAwu→dhātu, gaNa→gaṇa, parasmEpaxI→parasmaipada, AwmanepaxI→ātmanepada.
 
