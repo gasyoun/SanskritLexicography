@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 15-09-2026_
 
 # PWG-RU launch failure ledger
 
@@ -586,6 +586,54 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "Do not read a warm-up-probe content STOP as lane or profile ill-health without checking whether a non-probe route succeeded on the same profile the same day — on 11-09 it had, three times. This is the evidence H4213 §6.3 option (b) 'retune _probe_prompt task-shape (selftest-backed)' was waiting for, and it now outranks options (a)/(c)/(e): the prompt is the failing component, not the host, the hooks or the ceiling. Any retune stays selftest-backed and must not weaken what the probe asserts (H4213: 'must not be hand-weakened'). RED=STOP was honoured: no retry, and the day's 2-attempt ration for c1 is now spent (05:32Z + 18:08Z).",
   "residual_status": "bug-hunt-handoff",
   "residual_risk": "Every bounded_staged_run --execute path — the whole cohort-acceptance rung of H4527 — is gated behind this probe, so H4527 work item 1 cannot complete while it refuses, even though the prepared lease h4527acc05, the cohort wiring and a valid canary GO receipt were all in place. The receipt (h4527-canary-gate-091116b, judged ~16:19Z) expires ~22:19Z and the ration is spent, so the next attempt needs a fresh probe attempt on a later UTC day. Profile-surface changes remain human-owned (GTD row 0i)."
+ },
+ {
+  "id": "H4527_PROBE_INJECTION_SHAPE_2026-09-15",
+  "handoff": "H4527",
+  "date": "2026-09-15",
+  "title": "cohort acceptance window STOPped on the warm-up probe again, WITH --safe-mode; the transcript names the probe prompt itself as a prompt injection",
+  "lane": "bounded_staged_run --execute --cohort-path --cohort-width 1 --only-profile c1 --max-calls 3 --allow-unbounded, lease h4527acc05",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go, driving MSI over Tailscale ssh",
+  "expected": {
+   "agents": "a fresh canary GO (h4527-canary-150915, judged 14:22:16Z) lets the window through canary_gate; probe_fleet warm-up returns {\"ok\": true}; one nominal cohort-path window dispatches",
+   "tokens": "warm-up in the band of the 15-09 01:35Z safe-mode pass (26 208 ms, ~34 K-token first request)"
+  },
+  "actual": {
+   "agents": "fleet probe STOP on c1: warm-up content -> STOP. Zero windows, zero translation calls, lease untouched; run h4527-acc-150915b",
+   "tokens": "43 424 ms wall of a 240 000 ms production_v4 ceiling; cache_creation 9 155 + cache_read 25 236 input; 2 461 output of which 1 928 thinking; total_cost_usd 0.0695 list; host commit 85.97 %"
+  },
+  "passes": 1,
+  "symptoms": "stop_reason tool_use, result {\"ok\":false}, classification content, cli_safe_mode_effective true. Raw envelope src/pilot/output/h963_c4_gate0_probe_raw_h4527-acc-150915b.txt; session transcript D:\\ClaudeTools\\profiles\\claude1\\.claude\\projects\\D--pwg-ru-cli-cwd\\19cdeffa-935b-4395-b21b-d2665eb46924.jsonl.",
+  "classification": "gate-bug",
+  "root_cause": "The probe prompt reads as a prompt injection, and the model says so in visible text: an embedded \"READINESS CHECK\" block that \"claims to share authority with the top-level task framing\", \"over-justifying itself as not a bypass\", \"an ignore this sample block\", and a translation-batch framing with no cards behind it. Every named feature is a sentence of the H4277 provenance bridge or the card-less H3157 TASK SHAPE prepend. The run had --safe-mode, so the 11-09/15-09 profile-surface theory (#2229) is falsified as the main cause; with the bridge in place the probe read 4 refusals against 2 passes (10-09..15-09). Evidence: pwg_ru/h4527/H4527_PROBE_PROMPT_INJECTION_SHAPE_15-09-2026.md.",
+  "guardrail": "H4213 §6.3 option (b) landed: _probe_prompt now asks one honest question whose true answer is {\"ok\": true} (does the reference text mention the Petersburg Sanskrit dictionary?) over 11 082 B of domain filler, nothing prepended. test_health_probe_carries_no_injection_shape pins every refused feature as ABSENT and the bridge/preamble helpers as deleted; test_health_probe_asks_an_honest_question pins the true answer and the >= 10 729 B size. The H3157 sensitivity is carried by canary_gate.enforce, which runs before probe_fleet on --execute. Spawn shape, ceilings and the {\"ok\": true}-only check are unchanged.",
+  "residual_status": "open-paused",
+  "residual_risk": "The new prompt has no live reading yet: c1's 15-09 ration is exhausted (and breached, see H4527_PROBE_RATION_BREACH_2026-09-15), so the first reading is the warm-up of the h4527acc05 rerun no earlier than 16-09 00:00Z. If it refuses with a transcript naming anything other than the text, the surface theory is back in play."
+ },
+ {
+  "id": "H4527_PROBE_RATION_BREACH_2026-09-15",
+  "handoff": "H4527",
+  "date": "2026-09-15",
+  "title": "c1 probed three times in one UTC day: a lock refusal was retried without checking the probe log, and the other session's row sat in a different evidence root",
+  "lane": "readiness probe on profile c1 (bounded_staged_run warm-up and /pwg-live-gate warm-up)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go (H4527) racing a concurrent H4842 /pwg-live-gate session",
+  "expected": {
+   "agents": "at most 2 probe attempts per UTC day per profile, at least 6 h apart (standing ration)",
+   "tokens": "one probe attempt left on c1 for 15-09 after the 01:35Z reading"
+  },
+  "actual": {
+   "agents": "three attempts on 15-09 UTC: 01:35Z (H4527), 14:23Z (H4842, evidence dir C:\\Users\\user\\.pwg_ru_evidence), 14:26:55Z (H4527). The H4527 14:23:57Z launch was refused by ActiveCallClaim with 0 calls spent while H4842 held the c1 lock; its 14:26:55Z retry became the third attempt.",
+   "tokens": "the third attempt cost 0.0695 USD list (see H4527_PROBE_INJECTION_SHAPE_2026-09-15); no further calls"
+  },
+  "passes": 1,
+  "symptoms": "calls.acceptance.json shows 0 calls and an ActiveCallClaim traceback at 14:23:57Z; the checkout health_probe_log.jsonl showed only the 01:35Z row, while H4842's 14:23Z row sat in C:\\Users\\user\\.pwg_ru_evidence\\health_probe_log.jsonl.",
+  "classification": "operator/process",
+  "root_cause": "(1) The ration is not enforced in code: ActiveCallClaim serialises overlapping calls only and cannot see a finished probe. (2) resolve_health_probe_log() resolves explicit root -> $PWG_EVIDENCE_DIR -> checkout output/, so sessions with different --evidence-dir values keep separate probe logs and a manual ration check reads a false clear. (3) The operator error: after the lock refusal the executing session re-checked the lock but not any probe log before retrying.",
+  "guardrail": "Until H4915 lands: before any paid probe, read BOTH src/pilot/output/health_probe_log.jsonl AND C:\\Users\\user\\.pwg_ru_evidence\\health_probe_log.jsonl on MSI for the profile's rows in the current UTC day; an ActiveCallClaim refusal means another session is probing that profile NOW, which by itself usually spends the day's last attempt, so treat it as a ration signal, not a transient to retry. Structural fix routed to H4915 (Opus 5, medium) — Code-enforce the readiness-probe ration (≤2/UTC day/profile, ≥6 h) across evidence roots.",
+  "residual_status": "bug-hunt-handoff",
+  "residual_risk": "Until H4915 lands, any two sessions sharing a profile can overrun the ration again; the overrun costs one paid probe each time (~0.07-0.28 USD list) and the profile's next-day headroom is unaffected, so the harm is spend and a broken cadence, not a stuck lane."
  }
 ]
 ```
