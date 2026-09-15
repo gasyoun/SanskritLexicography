@@ -61,4 +61,16 @@ host: 2914 MB free of 16229 MB · commit 81.9 %
 4. Audit → compare against the serial route → acceptance packet → `COHORT_LIVE_ACCEPTANCE.json` with `serial_acceptance.via_cohort_path: true`.
 5. Work item 2 (Codex sign-off) and the money-class `## Verifier` PASS: a different session each. Work item 3 (width 2) stays **parked** by MG's 11-09 ruling (no funded second profile).
 
+## 6. Counterexample, 15-09-2026 14:23Z — safe mode on, `{"ok": false}` again
+
+Recorded by H4842 (Opus 5 `claude-opus-5`); full reading in [H4528 memo §5b](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4528/H4528_WHOLE_CARD_HANG_FORENSICS_14-09-2026.md). The same probe on the same code (`07652c51`) ran on `c1` with `cli_safe_mode_effective: true`. The warm-up took 58 316 ms (API 55 345 ms, 4 turns) and came back `structured_output {"ok": false}`, so the gate stopped at GATE-0 NO-GO.
+
+| reading on `c1` | safe mode | warm-up | answer |
+|---|---|---|---|
+| 11-09 18:08Z | no | 113 531 ms | `{"ok": false}` |
+| 15-09 01:35Z (§4) | yes | 26 208 ms | ok |
+| 15-09 14:23Z | yes | 58 316 ms | **`{"ok": false}`** |
+
+The fix still stands: the probe should match the lane. But it does not make the refusal go away. Safe-mode readings are now 1 PASS and 1 refusal, so option (b), the prompt text, is back in play. This reading used the second and last ration attempt for 15-09 UTC. Rung 3 above therefore cannot start before 16-09 00:00Z, and it now needs the refusal diagnosed first.
+
 _Гасунс_

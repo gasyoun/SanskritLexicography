@@ -141,6 +141,29 @@ The flip to ON waits for one confirmatory live call under a fresh `/pwg-live-gat
 3. **Neither ceiling moves.** The 90 000 ms window and the 600 000 ms hard ceiling are not the fix, whatever the reading shows.
 4. **What the call must record when it runs:** one nakzatra-class whole card (70+ citation units), production profile, `execution.cli_token_stream: true`, through `headless_worker.py`; the six fields above, written into a §5b beside this one. If `quiet_ms` > ~30 000 ms, keep OFF and cost a separate GO for `--thinking-display summarized` (it changes billed output).
 
+### 5b. Addendum, 15-09-2026 14:23Z — human GO given, live gate NO-GO at health; the default stays OFF
+
+**Executor:** Opus 5 (`claude-opus-5`), via [H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md), driving the Windows profiles box over Tailscale SSH (the `c1` profile is provisioned only there). **Paid calls:** one, the health warm-up. The canary and the dense card were not run.
+
+1. **The GO was given.** MG answered the H4842 decision brief with «quota is ok», which met its one stated condition (c1 weekly headroom). Ration check: the last `c1` probe was H4527's at 01:35Z, 12 h 48 min earlier, so this was the second and last legal attempt for 15-09 UTC.
+2. **Step 1 of `/pwg-live-gate` returned NO-GO on the warm-up.** Code at `07652c51` (includes the H4527 `--safe-mode` probe fix), policy `production_v4`, ceiling 240 000 ms:
+
+   ```
+   python src\pilot\h963_c4_gate0_probe.py --account c1 --evidence-dir C:\Users\user\.pwg_ru_evidence
+   run_id   h963-c1-single-profile-gate0/2026-09-15T14:23:09Z-pid18072
+   warmup   58 316 ms  classification=content  schema_valid=false  cli_safe_mode_effective=true
+            duration_api_ms 55 345 · api_gap_ms 2 971 · ttft_ms 42 226 · 4 turns · 1 972 thinking tokens
+            structured_output {"ok": false} · stop: completed, is_error false
+   measured — (STOP before it ran)
+   GATE-0 VERDICT: NO-GO   host commit 86-87 %
+   ```
+
+   The first attempt at 14:21Z refused before any spend (`profile already has an active model call`). A no-spend lock test a minute later found the `c1` lock free, so that was another session's brief call, not a stuck lock.
+3. **Class: content, not hang, quota or latency.** The call finished well under both ceilings. The model answered the readiness prompt and chose `{"ok": false}`. That is the same answer as the 11-09 18:08Z probe in [H4527 §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/H4527_PROBE_SAFE_MODE_DIAGNOSIS_15-09-2026.md), but this time `--safe-mode` was on. So the profile surface does not fully explain the intermittent refusal: safe-mode readings on this code are now 1 PASS and 1 `{"ok": false}`. Raw envelope: `C:\Users\user\.pwg_ru_evidence\h963_c4_gate0_probe_raw_h963-c1-single-profile-gate0_2026-09-15T14_23_09Z-pid18072.txt` on the profiles box; the row is also in `health_probe_log.jsonl` and `c1\h963_c1_gate0_probe_events.jsonl` there. The CLI envelope reports $0.192 at list price (Max route).
+4. **Decision: `DEFAULT_CLI_TOKEN_STREAM = False` is unchanged.** Under a health NO-GO the gate forbids the canary and every production call, so the token-stream reading still does not exist. `headless_worker.py`, its selftest pin and LANG_PARITY stay untouched, and no restamp receipt is owed.
+5. **Incidental data point for §5, not a flip input.** The probe is on `json`, not the token stream, but its envelope still shows a first content frame at 22 075 ms and `ttft_ms` 42 226 ms on a ~10.7 KB prompt. That is a short prompt, not a dense card, so it says nothing about `quiet_ms` on a 70-unit card.
+6. **Resume condition.** The next legal `c1` probe is 16-09-2026 00:00Z or later (at most 2 attempts per UTC day, at least 6 h apart). Two `{"ok": false}` readings on the readiness prompt, one with and one without safe mode, make the probe refusal a diagnosis task for H4527 before it is a reason to re-probe. The flip reading still needs a fresh GO, then a PASS health probe, then a canary GO receipt, then one dense card with `--max-calls 1`.
+
 ## 6. What was built
 
 1. **The window is derived from argv, not pinned.** In [execution_contract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/execution_contract.py), `progress_window_ms_for_argv` returns 90 000 only for `stream-json` plus `--include-partial-messages`. It returns `None` (observe only) for `json` and for plain `stream-json`, which corrects H2878's assumption that plain `stream-json` streams.
@@ -159,7 +182,7 @@ The change is classified SHARED in [LANG_PARITY.md](https://github.com/gasyoun/S
 
 ## 8. Residuals
 
-1. **The confirmatory live call** from §5. It gates the flip to ON, and a human should decide it under a fresh `/pwg-live-gate` GO.
+1. **The confirmatory live call** from §5. It gates the flip to ON, and a human should decide it under a fresh `/pwg-live-gate` GO. The 15-09 GO ended at a health NO-GO (§5b), so the call is still owed.
 2. **`--thinking-display summarized`.** It is the candidate fix if the live call shows long silent thinking. It is hidden and changes billed output, so it was not wired here.
 3. **Stale records** that were deliberately not edited in this pass — **all four corrected 15-09-2026 by H4842**, each as a dated correction note beside the original text, not a rewrite. One refinement on contact: the 48 414 ms call has three clocks, harness wall 107 659 ms, CLI `duration_ms` 64 109 ms and API 48 414 ms ([h2189_card_rows.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/raw/b6_card_repeat/h2189_card_rows.json), [h2189_card_paid_nakzatra_1.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/raw/b6_card_repeat/h2189_card_paid_nakzatra_1.json)). The correction states all three.
    - [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md), lines 182–201, gives "48 414 ms over 4 turns" as a wall time. It is API time; the real wall was 107 659 ms and the call produced 0 cards.
