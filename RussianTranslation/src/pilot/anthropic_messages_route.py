@@ -84,6 +84,28 @@ def _read_secret():
     return None, 'no Anthropic API credential found'
 
 
+def credential_note():
+    """Where the credential comes from -- a variable name or file path, never its value.
+
+    Computed apart from `_read_secret()` so nothing a caller prints shares a data flow
+    with the secret (CodeQL py/clear-text-logging-sensitive-data, H4531 PR #2232).
+    """
+    for name in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN'):
+        if (os.environ.get(name) or '').strip():
+            return '%s present in environment' % name
+    if os.path.isfile(SECRETS_ENV):
+        with open(SECRETS_ENV, encoding='utf-8') as handle:
+            for line in handle:
+                line = line.strip()
+                if not line or line.startswith('#') or '=' not in line:
+                    continue
+                name, _, rest = line.partition('=')
+                if name.strip() in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN') \
+                        and rest.strip().strip('"').strip("'"):
+                    return '%s read from %s' % (name.strip(), SECRETS_ENV)
+    return 'no Anthropic API credential found'
+
+
 def api_client():
     import anthropic
     secret, note = _read_secret()

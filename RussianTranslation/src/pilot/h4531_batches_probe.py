@@ -128,7 +128,8 @@ def _call(spot, max_calls=None):
         ledger = CallReservationLedger.open_existing(spot['ledger'], RUN_ID)
     else:
         ledger = CallReservationLedger(spot['ledger'], RUN_ID, max_calls=max_calls)
-    client, note = abr.api_client()
+    client, _ = abr.api_client()
+    note = abr.credential_note()
     if client is None:
         raise TransportRefusal('no Anthropic credential: %s' % note)
     print('credential: %s' % note)

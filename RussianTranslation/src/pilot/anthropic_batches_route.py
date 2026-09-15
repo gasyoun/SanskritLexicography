@@ -350,3 +350,8 @@ class AnthropicBatchesCall:
 def api_client():
     """Authenticated client + a provenance note that never contains the secret."""
     return amr.api_client()
+
+
+def credential_note():
+    """Printable credential provenance, computed without touching the secret's value."""
+    return amr.credential_note()

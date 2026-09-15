@@ -2179,9 +2179,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/route_transport.py": "2674663148f1a653e077081d02f97fdcd6984c531192a4c73096bfadb754713b",
-      "src/pilot/anthropic_messages_route.py": "25dbebd32a92aaf1ce024aa1211f17b5dc47257202a487947fc39c90e76d539e",
+      "src/pilot/anthropic_messages_route.py": "50e2164521ebe14eac1921abfd7107c8b6d71bc07a581986c27a82f06af3a379",
       "src/pilot/route_compare.py": "444b18a75f0b0464f7e6b43c5c3f7922c5d91e5100f42dd9ba5f4452b07068b7",
-      "src/pilot/anthropic_batches_route.py": "000d0b23e699322db95dae8178ae5708da9e39a38c5990b04c12eb685b363a79"
+      "src/pilot/anthropic_batches_route.py": "3b5a319c047504ec8dbdeb455ecbcb8300b549ab7b93566a9e88869b3eae72b3"
     }
   },
   {
