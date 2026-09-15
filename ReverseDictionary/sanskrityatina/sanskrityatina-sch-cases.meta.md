@@ -7,7 +7,7 @@ _Created: 11-09-2026 · Last updated: 11-09-2026_
 - **Format grammar:** [H4475_FORMAT_TABLE_10-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/sanskrityatina/H4475_FORMAT_TABLE_10-09-2026.md) SS4 (census that named this as the natural follow-up).
 - **Rebuild:** `python3 ReverseDictionary/sanskrityatina/tools/h4533_build_sch_cases.py` (idempotent, byte-identical double-run verified; refetch command in `--help`; needs sibling clone `~/Documents/GitHub/sanskrit-util`).
 - **Dependency pin (verifier D3, 11-09-2026):** regen needs `sanskrit-util >= 0.12.0` — the first landed revision was built with 0.11.0, whose `form_key` predates the H3975 medial-anusvāra-before-labial rule; v2 (11-09-2026) regenerated with 0.12.0 corrected **104 rows** (`asaṃprakhyāna`-class: `n`→`m`).
-- **Consumers:** none yet (registered in kosha as `sanskrityatina-sch-cases`, 11-09-2026).
+- **Consumers:** H4714 (15-09-2026) — master-list complement join: all 16,304 rows flagged `in_master` against the ReverseDictionary canonical `266820-reverse-Gasuns.txt` (6,713 in / 9,591 complement, [`sanskrityatina_sch_cases_masterlist_join.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/sanskrityatina/sanskrityatina_sch_cases_masterlist_join.tsv), builder `tools/h4714_masterlist_complement.py`); registered in kosha as `sanskrityatina-sch-cases`, 11-09-2026.
 
 ## Schema
 
@@ -42,6 +42,6 @@ Full counts, per-file sha256 and these notes: [sanskrityatina_sch_cases_provenan
 - [kosha manifest row](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json) `sanskrityatina-sch-cases`.
 - [sanskrit-util](https://github.com/gasyoun/sanskrit-util) — key pipeline authority (SLP1: `R`=ṇ, `N`=ṅ, `f`=ṛ).
 
-_Revision history:_ v1 (11-09-2026) — initial landing, H4533 · v2 (11-09-2026) — verifier D3: `form_key` regenerated on sanskrit-util 0.12.0 (104 rows), dependency pinned.
+_Revision history:_ v1 (11-09-2026) — initial landing, H4533 · v2 (11-09-2026) — verifier D3: `form_key` regenerated on sanskrit-util 0.12.0 (104 rows), dependency pinned · v3 (15-09-2026) — first consumer: H4714 master-list complement join.
 
 _Dr. Mārcis Gasūns_
