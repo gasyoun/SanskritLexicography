@@ -56,6 +56,13 @@ The removed rows stay in
 `pwg-ru-data/gatelogs/h4342_sanloss_requeue_<tag>.quarantine.jsonl`, their keys in the
 `.requeue.keys.txt` sibling, so the work is queued, not discarded.
 
+`--restore` matches quarantined rows to the store by exact row content, not by
+`(subcard, sense_tag)`: sense tags repeat inside a subcard (`m_a~~h0_zz_pw03` holds three
+`main` rows), and the key match skipped 1 of the 3 live quarantined rows (H4530 verifier
+pass, 15-09-2026). Pinned by
+[`h4342_requeue_sanloss_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h4342_fixes/h4342_requeue_sanloss_selftest.py),
+which CI runs beside the window-id collision selftest.
+
 After a clean `--execute`, `pwg-ru-data/gatelogs/lane_freeze_pc.json` is deleted **by a
 human** — its own text says so, and with the cause fixed it is one line.
 
