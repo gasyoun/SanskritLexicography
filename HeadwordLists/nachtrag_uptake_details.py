@@ -157,7 +157,6 @@ with io.open(os.path.join(HERE, "nachtrag_dcs_samples.tsv"), "w", encoding='utf-
 
 # --- 6 machine-usable proposal list
 PROP = os.path.join(HERE, "MW-NACHTRAG-PROPOSALS-15-09-2026.tsv")
-def gloss_of(r): return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", r[ix2["body"] if False else 0])).strip()
 with io.open(PROP, "w", encoding='utf-8', newline='') as f:
     f.write("hw_slp1\tiast\tpw_L\tpw_pc\tcorr_n\tcorr_dicts\tmahavy_refs\tdcs_band\tproposed_action\tevidence\tgloss\n")
     n = 0
