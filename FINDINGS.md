@@ -6758,6 +6758,15 @@ The lock half is closed by a deliberate unvoted re-cut bound at
 the same hash through the collision guard; sample movement vs the published cut
 is attributed on identical inputs to exactly the duplicated-pair rows regaining
 their own German body in the `pw/restate` pool (236 → 257 members).
+
+**Recurrence in the store itself — H4530 verifier pass, 15-09-2026.** The same pair was used
+as a row key on the canonical store by
+[`h4342_requeue_sanloss.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h4342_fixes/h4342_requeue_sanloss.py)
+`--restore`: `m_a~~h0_zz_pw03` holds three `main` rows, so the quarantined one read as
+"already present" and the documented reversal would have put back 2 of 3 rows. Fixed by
+matching on exact row content (multiset), pinned by `h4342_requeue_sanloss_selftest.py`.
+Rule: the store has no row key; anything that dedupes or diffs store rows compares whole-row
+content or carries §551's `row_key`.
 ### §552. SCH does almost only supplement PWG — 3.3 % of its rows correct it — but the signal that proves it is a printed imperative, not the gender conflict the roadmap predicted
 
 🟠 **`classify_edition_rel` could return only `sch_star` or `derived_sense` for
