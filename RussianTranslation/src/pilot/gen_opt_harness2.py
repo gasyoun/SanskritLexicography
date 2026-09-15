@@ -884,8 +884,8 @@ def mask_preamble(field='russian'):
             .replace('`russian`', '`%s`' % field))
 
 
-# The RU rendering stays the module constant: it is what the language-neutral readiness probe
-# (max_account_orchestrator._probe_prompt) prepends, and what the RU lane ships.
+# The RU rendering stays the module constant: it is what the RU lane ships. (The readiness probe
+# stopped prepending it in H4527, 15-09-2026 — the canary gate carries that check now.)
 MASK_PREAMBLE = mask_preamble('russian')
 
 

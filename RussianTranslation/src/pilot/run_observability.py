@@ -81,6 +81,11 @@ ALLOWED = {
     # carrying the whole interactive profile (hooks, CLAUDE.md, skills) — the difference behind
     # the 11-09 false {"ok": false}. One boolean; no path, no payload.
     'cli_safe_mode_effective',
+
+    # H4527 pass 2 (15-09-2026): a 12-hex sha256 prefix of the exact readiness-probe prompt. The
+    # honest-question prompt replaced an order-shaped one of the same `payload_bytes`; this is how
+    # a latency series tells the two apart. A hash, never the text.
+    'probe_prompt_sha',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but

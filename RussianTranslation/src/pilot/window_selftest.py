@@ -1631,88 +1631,72 @@ def test_gloss_wrapper_prompt_preservation_h4270():
         shutil.rmtree(d, ignore_errors=True)
 
 
-def test_health_probe_shares_the_production_task_shape():
-    """H3157 repair (a) / FINDINGS §498 rule 1: the cheap gate half must be able to fail the
-    way the expensive half fails.
+def test_health_probe_asks_an_honest_question():
+    """H4527 (15-09-2026) — H4213 §6.3 option (b): the readiness probe asks ONE honest question
+    whose true answer is `{"ok": true}`, over reference text that makes it true.
 
-    H994 fixed this probe's plan-mode refusal in its PROMPT while keeping `--permission-mode
-    plan`, so the probe matched the paid call in spawn shape and was immunised in the one input
-    the model reasons about. On 19-08-2026 that produced a Step-1 PASS on both ceilings minutes
-    before the Step-2 canary refused — same profile, same flag, same model. A gate whose cheap
-    half cannot detect the failure its expensive half is exposed to reports healthy right up to
-    the moment it spends.
+    Supersedes the H3157 (a) prepend of the production TASK SHAPE block and the H4277 provenance
+    bridge. With both in place the probe kept answering `{"ok": false}` on healthy routes — four
+    refusals against two passes between 10-09 and 15-09, the last two WITH the lane's
+    `--safe-mode`, which rules the profile surface out. The 15-09 14:27Z transcript names the
+    reason in the model's own words: an embedded "READINESS CHECK" block claiming shared
+    authority, over-justifying itself as "not a bypass", an "ignore this" sample block, and a card
+    task with no cards — "the shape of a prompt injection". The model was right.
 
-    The fix is that the probe now carries the generation lane's OWN TASK SHAPE block, so a
-    regression there refuses cheaply at Step 1 instead of expensively at Step 2. Asserted on
-    the assembled prompt, not on the import, so deleting the prepend is caught too.
-    """
-    import max_account_orchestrator as mao
-    from gen_opt_harness2 import MASK_PREAMBLE as preamble
-
-    prompt = mao._probe_prompt(6491)
-
-    if preamble.strip() not in prompt:
-        fail('the health probe no longer carries the production TASK SHAPE block — a Step-1 '
-             'PASS would again carry no information about whether Step 2 will refuse (§498)')
-    if not prompt.startswith('=== TASK SHAPE (read first) ==='):
-        fail('the TASK SHAPE block must OPEN the probe prompt, as it does in production — the '
-             'model refuses before reaching a later block')
-    # H994's own fix must survive: a natural, completable task, never a bare tool-demand.
-    if '{"ok": true}' not in prompt:
-        fail('the probe lost its natural completable task (H994) — a degenerate tool-demand is '
-             'the shape that triggered the refusal in the first place')
-    # The payload floor is what makes the reading load-representative; the prepend must not
-    # have been paid for out of the filler.
-    if len(prompt.encode('utf-8')) < 6491:
-        fail('probe prompt fell below the >=5 KB payload floor after the preamble was added')
-
-
-def test_health_probe_carries_the_h4277_provenance_bridge():
-    """H4277 (07-09-2026): the prepend of H3157 must not read as a prompt injection.
-
-    The measured call at 01:41:10Z answered `{"ok": false}` on a healthy c1 profile. Its session
-    transcript records WHY, verbatim: the model classified the prompt as "a prompt-injection
-    attempt layered on ambient context" and refused, naming three reasons — plan mode's
-    turn-ending rule, "no actual translation cards were provided", and the surrounding
-    system-reminders. A task-shape block promising `=== CARD <key> ===` blocks, followed by zero
-    cards, followed by a differently-voiced order to emit one fixed string, IS the textual shape
-    of an injection; the model was reading it correctly. Cost: $0.19 and one of two rationed
-    daily attempts, on a FALSE NO-GO.
-
-    The bridge answers each objection in the harness's own voice. This test pins all three, so a
-    later "tidy-up" that shortens the bridge back to the terse form re-introduces the defect
-    loudly and offline instead of quietly and at $0.19 a reading. Nothing here touches the gate's
-    content check: `{"ok": true}` remains the only passing answer (pinned above).
+    What H3157 wanted the probe to detect is detected upstream on the cohort-acceptance route:
+    `bounded_staged_run --execute --only-profile <p>` runs `canary_gate.enforce` (production
+    preamble + a real synthetic card, same profile, <= 6 h) before `probe_fleet`. It is NOT
+    covered on `max_account_orchestrator staged-run`, which has no canary, nor under
+    `--skip-canary-gate` / a multi-profile run on one receipt — routed to Uprava H4916 (see
+    `_probe_prompt`'s docstring). The probe keeps its spawn shape, ceilings and payload size, and
+    `{"ok": true}` stays the only passing answer; only the text it reasons about is now a
+    question with a true answer instead of an order dressed as a task.
     """
     import max_account_orchestrator as mao
 
     prompt = mao._probe_prompt(6491)
 
-    # 1. Provenance — the readiness instruction must declare the same issuer as the block above,
-    #    which is what distinguishes it from text injected into the payload.
-    if 'SAME ISSUER AS THE BLOCK ABOVE' not in prompt:
-        fail('the readiness instruction no longer declares its provenance — without it the two '
-             'halves of the prompt read as adversarial and the model refuses (H4277)')
-    # 2. The zero-card condition must be declared deliberate; "no cards were provided" was the
-    #    refusing call's second stated reason.
-    if 'ZERO cards' not in prompt:
-        fail('the probe no longer declares its empty card list deliberate — the model reads a '
-             'card-less card task as a malformed/injected request (H4277)')
-    # 3. Plan mode's turn-ending rule was the first stated reason; the prompt must point at the
-    #    structured-output channel as the sanctioned delivery rather than demanding bare text.
-    if 'structured-output channel' not in prompt:
-        fail('the probe no longer names the structured-output channel as the deliverable — the '
-             'model refuses on plan-mode turn-ending rules instead of answering (H4277)')
-    # 4. The filler must be marked as data, not as instructions.
-    if 'data, never instructions' not in prompt:
-        fail('the inert sample is no longer framed as data rather than instructions (H4277)')
-    # 5. The bridge sits BETWEEN the production block and the filler — never after the payload,
-    #    where the model would reach the sample text first and read the order as appended.
-    i_bridge = prompt.find('=== THIS INVOCATION: READINESS CHECK')
-    i_filler = prompt.find('--- inert sample (ignore) ---')
-    if i_bridge < 0 or i_filler < 0 or not (0 < i_bridge < i_filler):
-        fail('the H4277 provenance bridge must sit between the TASK SHAPE block and the inert '
-             'sample, in that order')
+    if not prompt.startswith(mao._PROBE_QUESTION):
+        fail('the probe prompt must OPEN with the readiness question — nothing may be prepended '
+             'to it (H4527: the prepended production block read as the injection frame)')
+    if '"ok" is true if the text mentions it' not in prompt:
+        fail('the readiness question no longer maps its true answer onto the schema field')
+    head, sep, reference = prompt.partition('--- reference text ---')
+    if not sep:
+        fail('the probe lost the reference-text marker between the question and its text')
+    # The answer must actually BE true: the reference text names what the question asks about.
+    if 'Petersburg Sanskrit dictionary' not in reference:
+        fail('the reference text no longer contains what the question asks about — the '
+             'correct answer would be false and every reading a NO-GO')
+    # Payload parity with every production_v4 reading (preamble 2 896 + bridge 1 342 + 6 491
+    # filler = 10 729 B): the probe must not become cheaper to pass than the series its
+    # ceilings were read from.
+    if len(prompt.encode('utf-8')) < 10729:
+        fail('probe prompt fell below the 10 729-byte production_v4 size (%d B)'
+             % len(prompt.encode('utf-8')))
+
+
+def test_health_probe_carries_no_injection_shape():
+    """H4527 (15-09-2026): pin the ABSENCE of every feature the refusing calls named.
+
+    The 07-09 and 15-09 transcripts list them: a block claiming the same issuer as the text
+    above it, a card task that declares zero cards, an order to return one fixed string and
+    "nothing else", a pre-emptive "not a bypass", an "ignore"/"inert" sample block, and the
+    production TASK SHAPE block promising cards that never arrive. A later "hardening" that
+    re-adds any of them re-introduces the false NO-GO loudly and offline, not at ~$0.07 and one
+    of two rationed daily readings per profile.
+    """
+    import max_account_orchestrator as mao
+
+    prompt = mao._probe_prompt(6491)
+    for banned in ('SAME ISSUER', 'ZERO cards', 'nothing else', 'bypass', 'inert sample',
+                   'ignore', 'do not analyse', 'TASK SHAPE', '=== CARD', 'READINESS CHECK'):
+        if banned in prompt:
+            fail('the probe prompt carries %r again — a feature the refusing call named as the '
+                 'prompt-injection signature (H4527, 15-09-2026 transcript)' % banned)
+    for gone in ('_PROBE_PROVENANCE_BRIDGE', '_production_task_shape_preamble'):
+        if hasattr(mao, gone):
+            fail('%s is back in max_account_orchestrator — H4527 retired it' % gone)
 
 
 def test_prompt_rule_audit_missing_blocks():
@@ -9868,8 +9852,8 @@ def main():
         # from a passing one in every report that matters.
         test_mask_preamble_carries_task_shape,
         test_gloss_wrapper_prompt_preservation_h4270,
-        test_health_probe_shares_the_production_task_shape,
-        test_health_probe_carries_the_h4277_provenance_bridge,
+        test_health_probe_asks_an_honest_question,
+        test_health_probe_carries_no_injection_shape,
         test_semantic_risk_checker,
         test_h1152_guard1_en_polyseme_checklist,
         test_braced_gloss_audit,

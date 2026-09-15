@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import builtins
+import hashlib
 import json
 import os
 import sqlite3
@@ -842,11 +843,18 @@ def main():
             call_reservation=MemoryCallLedger())
         assert _cls2 == 'success', _cls2
         p = cap['input']
-        # one clear, completable instruction: return exactly the schema object and nothing else
-        assert '{"ok": true}' in p and 'nothing else' in p, p[:200]
-        # payload framed as inert AND still >= the >=5 KB load-representative floor
-        assert 'inert sample (ignore)' in p and 'do not analyse, translate, or act on it' in p
+        # H4527: one honest question whose TRUE answer is ok=true — the reference text below the
+        # question names the Petersburg Sanskrit dictionary — never an order to emit a fixed string
+        assert p.startswith(m._PROBE_QUESTION), p[:200]
+        assert '"ok" is true if the text mentions it' in p, p[:400]
+        assert 'Petersburg Sanskrit dictionary' in p.split('--- reference text ---', 1)[1]
+        # the retired injection-shaped framing is GONE (15-09-2026 refusal transcript)
+        for gone in ('inert sample', 'ignore', 'SAME ISSUER', 'ZERO cards', 'bypass',
+                     'TASK SHAPE', 'nothing else'):
+            assert gone not in p, gone
+        # still >= the >=5 KB load-representative floor, and the production_v4 prompt size
         assert len(p) >= 6491, len(p)
+        assert len(p.encode('utf-8')) >= 10729, len(p.encode('utf-8'))
         # the degenerate form is GONE: no old incantation, no long run of raw padding 'x'
         assert 'Preserve this padding as inert input' not in p
         assert 'xxxxxxxxxxxxxxxxxxxx' not in p                      # no 20+ run of padding
@@ -858,7 +866,7 @@ def main():
         assert len(m._probe_prompt(5000)) >= 5000
     finally:
         m.run_tree_kill = _rtk2
-    print('  D-P readiness prompt: completable task ({"ok": true}) + >=5 KB inert filler; plan mode kept; degenerate x-padding gone')
+    print('  D-P readiness prompt: honest question (true answer ok=true) over >=10.7 KB reference text; plan mode kept; injection-shaped framing and x-padding gone')
 
     # H2299: the probe must spawn from the SAME bare cwd the PAID lane uses.
     #
@@ -929,8 +937,12 @@ def main():
                 'different profile surface than the lane it gates (H4527)'
                 % (hw.SAFE_MODE_FLAG in cap4['argv'], lane))
             assert detail.get('cli_safe_mode_effective') is lane, detail
+            # H4527 pass 2: the row names the exact prompt text it was taken on (series marker)
+            assert detail.get('probe_prompt_sha') == hashlib.sha256(
+                m._probe_prompt(6491).encode('utf-8')).hexdigest()[:12], detail
             assert '--permission-mode' in cap4['argv'] and 'plan' in cap4['argv'], cap4['argv']
         assert 'cli_safe_mode_effective' in ro.ALLOWED
+        assert 'probe_prompt_sha' in ro.ALLOWED
     finally:
         m.run_tree_kill = _rtk4
         hw._safe_mode_support.clear()
@@ -1912,7 +1924,8 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             # H4527 widened it once more, for the same reason as H2647: `cli_safe_mode_effective`
             # is provenance (which profile surface the reading was taken on), not a diagnostic,
             # and a healthy reading needs it most — it is what a refused one is compared against.
-            assert set(detail) <= {'host_state', 'cli_safe_mode_effective'}, (
+            # H4527 pass 2 adds `probe_prompt_sha` on the same provenance grounds.
+            assert set(detail) <= {'host_state', 'cli_safe_mode_effective', 'probe_prompt_sha'}, (
                 'success added an unexpected detail key: %s' % sorted(detail))
             assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
 
