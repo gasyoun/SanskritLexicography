@@ -1,6 +1,15 @@
 # SAMSAADHANII_INDEX.md — what Amba Kulkarni's SCL toolchain teaches our repos
 
-_Created: 02-07-2026 · Last updated: 02-07-2026_
+_Created: 02-07-2026 · Last updated: 15-09-2026_
+
+> **Pilot status (15-09-2026):** pilot 3 (*morph.cgi glossary adjudicator*) landed —
+> [`RussianTranslation/src/scl_morph_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/scl_morph_glossary.py)
+> converts live morph.cgi analyses of a stratified DCS form sample into the
+> house glossary-layer record shape; VALIDATION-ONLY (upstream has no LICENSE);
+> coverage report
+> [`reports/H4740_scl_morph_coverage.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4740_scl_morph_coverage.json).
+> Pilots 1 (Sundarakāṇḍa treebank), 2 (DCS×Heritage alignment), 4 (Dhātupāṭha→mw_roots) — see
+> handoffs H4738/H4739/H4741.
 
 **Prior-art index (external).** [Amba Kulkarni](https://sanskrit.uohyd.ac.in/faculty/amba/)
 (Prof. & Head, Dept. of Sanskrit Studies, University of Hyderabad) leads

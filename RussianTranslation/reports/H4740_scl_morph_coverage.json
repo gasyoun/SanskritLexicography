@@ -1,0 +1,39 @@
+{
+  "handoff": "H4740",
+  "date": "2026-09-15",
+  "what": "Samsaadhanii morph.cgi → glossary layer; DCS form-coverage sample (validation-only pilot)",
+  "sample_design": {
+    "population": "DCS token.m_unsandhied distinct single-word forms (5.69M tokens)",
+    "stratum_top": "top 20 forms by corpus frequency (rank ≤500)",
+    "stratum_mid": "20 random forms from rank 500-50000 (pool 49501, seed 4740)",
+    "n_total": 40
+  },
+  "provenance": {
+    "source": "Samsaadhanii/SCL morphological analyzer (Amba Kulkarni, Univ. of Hyderabad)",
+    "endpoint": "https://scl.samsaadhanii.in/cgi-bin/scl/MT/prog/morph/morph.cgi",
+    "license": "NONE — validation-only per SAMSAADHANII_INDEX.md license gate",
+    "retrieved": "2026-09-15",
+    "validation_only": true,
+    "never_overwrites_human_reviewed_data": true
+  },
+  "coverage_overall": {
+    "n": 40,
+    "covered": 34,
+    "coverage_pct": 85.0
+  },
+  "coverage_top": {
+    "n": 20,
+    "covered": 17,
+    "coverage_pct": 85.0
+  },
+  "coverage_mid": {
+    "n": 20,
+    "covered": 17,
+    "coverage_pct": 85.0
+  },
+  "interpretation": "SCL morph.cgi = second independent form→analysis witness beside vidyut.kosha + DCS fallback; VALIDATION-ONLY (no upstream LICENSE) — never overwrites human-reviewed data.",
+  "artifacts": {
+    "sample_jsonl": "reports/H4740_scl_morph_sample.jsonl",
+    "cache_local_only": "glossary/scl_morph_cache.jsonl"
+  }
+}
