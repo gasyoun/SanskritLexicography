@@ -1,0 +1,338 @@
+{
+ "total": 18188,
+ "dcs_exact": 2780,
+ "hybrid_any": 2807,
+ "pm_excluded_any": 2162,
+ "multi_lemma": 300,
+ "tokens_matched": 130416,
+ "classical_only": 364,
+ "tier_counts": {
+  "mw": {
+   "marker_strip": 1472,
+   "unlinked": 13604,
+   "marker_strip+form_key": 263,
+   "exact": 2422,
+   "form_key": 427
+  },
+  "pwg": {
+   "marker_strip": 449,
+   "marker_strip+form_key": 40,
+   "unlinked": 13305,
+   "exact": 3877,
+   "form_key": 517
+  },
+  "dcs": {
+   "marker_strip": 326,
+   "unlinked": 15017,
+   "marker_strip+form_key": 10,
+   "exact": 2780,
+   "form_key": 55
+  }
+ },
+ "sample_30": [
+  {
+   "row": "(-)upaga",
+   "mw": "marker_strip",
+   "pwg": "marker_strip",
+   "dcs_lemma_id": 44846,
+   "tokens": 4,
+   "loci": "Divyāvadāna;Laṅkāvatārasūtra",
+   "dcs_tier": "marker_strip"
+  },
+  {
+   "row": "AgilAy˚",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "Basmita",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "Kajjati",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "SrIkAra",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "aBisaMboDi",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": 220451,
+   "tokens": 2,
+   "loci": "Aṣṭasāhasrikā;Divyāvadāna",
+   "dcs_tier": "exact"
+  },
+  {
+   "row": "alpotsuka",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "anupUrveRa",
+   "mw": "marker_strip",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "avaSayati",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "caRqAlikA",
+   "mw": "exact",
+   "pwg": "exact",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "duHKati",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "grahaRa",
+   "mw": "form_key",
+   "pwg": "exact",
+   "dcs_lemma_id": 156931,
+   "tokens": 34,
+   "loci": "Abhidharmakośa;Abhidharmakośabhāṣya;Aṣṭasāhasrikā;Bodhicaryāvatāra;Buddhacarita;Divyāvadāna;Lalitavistara;Laṅkāvatārasūtra;Saundarānanda;Saṅghabhedavastu;Viṃśatikāvṛtti;Āryāsaptaśatī",
+   "dcs_tier": "exact"
+  },
+  {
+   "row": "janitravatI",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "karavIra",
+   "mw": "marker_strip",
+   "pwg": "exact",
+   "dcs_lemma_id": 2324,
+   "tokens": 2,
+   "loci": "Avadānaśataka;Saṅghabhedavastu",
+   "dcs_tier": "exact"
+  },
+  {
+   "row": "lABin",
+   "mw": "exact",
+   "pwg": "exact",
+   "dcs_lemma_id": 80918,
+   "tokens": 71,
+   "loci": "Avadānaśataka;Aṣṭasāhasrikā;Bodhicaryāvatāra;Divyāvadāna;Lalitavistara;Saddharmapuṇḍarīkasūtra;Saṅghabhedavastu",
+   "dcs_tier": "exact"
+  },
+  {
+   "row": "mahAguRaDarabudDiprAptABijYa",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "nAgabala",
+   "mw": "unlinked",
+   "pwg": "exact",
+   "dcs_lemma_id": 33089,
+   "tokens": 2,
+   "loci": "Lalitavistara",
+   "dcs_tier": "exact"
+  },
+  {
+   "row": "niveSayitar",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "parAkramavikrama",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "prAsAdika",
+   "mw": "exact",
+   "pwg": "exact",
+   "dcs_lemma_id": 153180,
+   "tokens": 82,
+   "loci": "Avadānaśataka;Bodhicaryāvatāra;Divyāvadāna;Lalitavistara;Saddharmapuṇḍarīkasūtra;Saṅghabhedavastu",
+   "dcs_tier": "exact"
+  },
+  {
+   "row": "pratisamayati",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "ratnabudDi",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "saMSozaka",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "samantAvaBAsodgata",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "skamBAkfta",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "tIkzRaM",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "upAya-kOSalya",
+   "mw": "exact",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "vEnAyika",
+   "mw": "exact",
+   "pwg": "exact",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "viBUzitANga",
+   "mw": "marker_strip",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  },
+  {
+   "row": "visaMpAdayati",
+   "mw": "unlinked",
+   "pwg": "unlinked",
+   "dcs_lemma_id": "",
+   "tokens": 0,
+   "loci": "",
+   "dcs_tier": "unlinked"
+  }
+ ],
+ "dcs_input": {
+  "db": "/Users/mac/Documents/GitHub/VisualDCS/src/DCS-data-2026/dcs_full.sqlite",
+  "sha256_sidecar": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc  dcs_full.sqlite",
+  "loci": {
+   "Divyāvadāna": "pm-excluded",
+   "Aṣṭasāhasrikā": "pm-excluded",
+   "Saddharmapuṇḍarīkasūtra": "pm-excluded",
+   "Lalitavistara": "bhs-hybrid",
+   "Avadānaśataka": "bhs-hybrid",
+   "Saṅghabhedavastu": "bhs-hybrid",
+   "Laṅkāvatārasūtra": "bhs-hybrid",
+   "Abhidharmakośa": "buddhist-classical",
+   "Abhidharmakośabhāṣya": "buddhist-classical",
+   "Bodhicaryāvatāra": "buddhist-classical",
+   "Buddhacarita": "buddhist-classical",
+   "Mūlamadhyamakārikāḥ": "buddhist-classical",
+   "Prasannapadā": "buddhist-classical",
+   "Nyāyabindu": "buddhist-classical",
+   "Saundarānanda": "buddhist-classical",
+   "Śikṣāsamuccaya": "buddhist-classical",
+   "Viṃśatikākārikā": "buddhist-classical",
+   "Viṃśatikāvṛtti": "buddhist-classical",
+   "Acintyastava": "buddhist-classical",
+   "Āryāsaptaśatī": "buddhist-classical"
+  },
+  "tokens_in_loci": 285109,
+  "distinct_lemmas_in_loci": 13565
+ },
+ "inputs": {
+  "bhs": "BHS-unique-key2-18188.txt",
+  "mw": "MW-unique-key2-198489.txt",
+  "pwg": "PWG-unique-key2-110438.txt",
+  "slp1_transcoder": "sanskrit-util py to_slp1 (import, not vendored)"
+ }
+}
