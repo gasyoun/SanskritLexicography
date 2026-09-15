@@ -10,7 +10,7 @@ It does not duplicate the data; it records everything *around* it.
 
 ## Subject
 
-- **Dataset:** [RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 622 rows, 631 distinct SLP1 keys, two intake passes (H3985 witness-first 534 · H4750 onomasticon-first 88).
+- **Dataset:** [RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 622 rows, 620 distinct SLP1 keys, two intake passes (H3985 witness-first 534 · H4750 onomasticon-first 88).
 - **Purpose:** the one sanctioned mapping from a Cyrillic Sanskrit proper noun (as printed in Russian scholarly indices) to an SLP1 key. It exists so that no session ever invents Cyrillic→SLP1 *character rules*, which [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §60 established are unsafe (Russian orthography collapses distinctions SLP1 needs: retroflex/dental, long/short, aspirates).
 - **Audience:** any pipeline aligning a Russian-language name index, glossary or translation against Sanskrit keys — `pwg_ru`, `mw_ru`, SamudraManthanam name glossaries, csl-atlas onomastic work.
 - **Schema:** `cyrillic · slp1 · iast_witness · validation · onomasticon · witness_count · seeds`.
