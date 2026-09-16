@@ -1,0 +1,37 @@
+{
+  "schema": "pwg.cohort_engine.v1",
+  "leases": {
+    "h4527acc05": {
+      "phase": "done",
+      "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527acc05\\workflow_result.headless.h4527acc05.json",
+      "report": {
+        "requeue_keys": [
+          "asa_mskfta~~h0_zz_nws00"
+        ],
+        "satisfied_keys": [],
+        "clean_count": 0,
+        "calls": 1,
+        "cost": null,
+        "audit_state": "transient_only",
+        "lease_state": "transient_only",
+        "store_delta": null
+      }
+    }
+  },
+  "wave": {
+    "promoted": true,
+    "tm_done": true,
+    "receipt": null
+  },
+  "calls_spent": 1,
+  "calls_reserved": 1,
+  "peak_concurrency": 1,
+  "requeue_backlog_keys": [
+    "asa_mskfta~~h0_zz_nws00"
+  ],
+  "accepted_order": [],
+  "stop_reason": null,
+  "effective_width": 1,
+  "probed": [],
+  "coord_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator"
+}
