@@ -149,6 +149,20 @@ edition. For anything authoritative or citation-facing, route to
    its origin text — a quick view of which epics/anthologies Böhtlingk drew from,
    without touching the canonical scans.
 
+## DCS locus attestation layer (H4747, 15-09-2026)
+
+[`attestation/H4747_dcs_loci.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/attestation/H4747_dcs_loci.tsv)
+binds the per-saying records to DCS corpus loci by normalized continuous-stream
+text match (per-pada; keying on the synthetic DCS `sentence.id` PK — `sent_id`
+is NOT unique within a chapter, FINDINGS §9). 1,573/7,537 sayings (20.9%) have
+≥1 DCS locus; the unattested bulk cites gnomic anthologies DCS does not carry.
+Method, 30-saying verification sample and honest residual:
+[`attestation/H4747_report.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/attestation/H4747_report.md).
+Rebuild with
+[`tools/h4747_build_dcs_loci.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/tools/h4747_build_dcs_loci.py)
+(needs the local 921 MB `VisualDCS/src/DCS-data-2026/dcs_full.sqlite`; the
+0-byte `VisualDCS/src/dcs_full.sqlite` decoy is refused by a size guard).
+
 ## Rights
 
 Sanskrit text and Böhtlingk's German translation: public domain (author
