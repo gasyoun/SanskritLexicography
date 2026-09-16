@@ -634,6 +634,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "Until H4915 lands: before any paid probe, read BOTH src/pilot/output/health_probe_log.jsonl AND C:\\Users\\user\\.pwg_ru_evidence\\health_probe_log.jsonl on MSI for the profile's rows in the current UTC day; an ActiveCallClaim refusal means another session is probing that profile NOW, which by itself usually spends the day's last attempt, so treat it as a ration signal, not a transient to retry. Structural fix routed to H4915 (Opus 5, medium) — Code-enforce the readiness-probe ration (≤2/UTC day/profile, ≥6 h) across evidence roots.",
   "residual_status": "bug-hunt-handoff",
   "residual_risk": "Until H4915 lands, any two sessions sharing a profile can overrun the ration again; the overrun costs one paid probe each time (~0.07-0.28 USD list) and the profile's next-day headroom is unaffected, so the harm is spend and a broken cadence, not a stuck lane."
+ },
+ {
+  "id": "H4527_COHORT_WINDOW_NULL_CARD_2026-09-16",
+  "handoff": "H4527",
+  "date": "2026-09-16",
+  "title": "First live cohort-path window ran clean mechanically and returned a null card: one paid call, zero clean rows, acceptance record left unwritten",
+  "lane": "bounded_staged_run --execute --cohort-path --cohort-width 1 --only-profile c1 (lease h4527acc05)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) unattended worker on the Mac driving MSI over tailnet ssh",
+  "expected": {
+   "agents": "one wave, one accepted card, a store delta and a promotion receipt to compare byte-for-byte against the serial route",
+   "tokens": "one translation call under --max-calls 3, after one canary call"
+  },
+  "actual": {
+   "agents": "the wave bound, dispatched, audited and settled exactly once (peak_concurrency 1, effective_width 1, one promote + one TM callback), but the returned card did not match the nominal masked key asa~005fmskfta~007e~007eh0~005fzz~005fnws00, so the audit filed missing-or-mismatched-key, the lease settled transient_only, accepted_order is empty and store_delta is null",
+   "tokens": "2 paid calls total (canary 29 427 ms; window 80 818 ms, 6 873 output tokens, 64 343 cache-read, budget_stops 1); observed_cost_usd 0.0 with cost_evaluable false, i.e. not evaluable, not free"
+  },
+  "passes": 1,
+  "symptoms": "wf_output summary: cards 1, ok 0, null 1, failures {asa_mskfta~~h0_zz_nws00: missing-or-mismatched-key}; headless attempt returncode 0 classification success; audit_window report clean keys 0, requeue 1 transient, 0 defect.",
+  "classification": "key/schema-mismatch",
+  "root_cause": "Not diagnosed this pass and deliberately not guessed: the model call succeeded and produced output, but the harness could not bind the returned card to the masked key. budget_stops: 1 in the same summary makes an output-budget truncation the first hypothesis to test offline against the retained wf_output, before any further paid call.",
+  "guardrail": "A null-card window is a transient requeue, never an acceptance: COHORT_LIVE_ACCEPTANCE.json stays unwritten until a window accepts at least one card, because serial_acceptance.via_cohort_path claims byte-identical accepted/promotion accounting that an empty accepted set cannot carry. Re-run is a next-day action (c1's 16-09 ration is spent: 02:46:48Z sibling + 08:48Z this window), and the re-run command must carry --coordinator, --cwd (a bare scratch dir, H2158) and --events, which every armed form recorded in H4527 since 11-09 omitted.",
+  "residual_status": "open-paused",
+  "residual_risk": "The acceptance gate stays fail-closed, so nothing can drift into width 2; the cost is one more paid window on the next UTC day. If the null repeats on the re-run, the class stops being transient and becomes a content/harness defect worth its own diagnosis before a third call."
  }
 ]
 ```
