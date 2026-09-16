@@ -16,8 +16,12 @@ one of them keeps its SHARED verdict. This driver:
 
 Idempotent: a second run finds no drift and no missing entry, and writes nothing.
 Usage: python src/pilot/h4528_parity_restamp.py
+
+H4408 follow-up: the stamp/ensure-entry/restamp mechanics this driver duplicated
+with h4527_/h4527b_/h4861_parity_restamp.py now live once in
+parity_restamp.restamp_receipt(); this file keeps only its own STAMP/NEW_ENTRY
+receipt text.
 """
-import json
 import os
 import sys
 
@@ -25,7 +29,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import lang_parity_check as lpc  # noqa: E402
+import parity_restamp as pr  # noqa: E402
 
 ENTRY_ID = 'whole_card_no_progress_watchdog_h4528'
 STAMP = ('H4528 (14-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is '
@@ -60,27 +64,7 @@ NEW_ENTRY = {
 
 
 def main():
-    entries, _text, _span = lpc.load_ledger()
-    drifted = sorted({v.split(':', 1)[0] for v in lpc.check(entries)})
-    changed = False
-    for entry in entries:
-        if entry.get('id') in drifted and STAMP not in (entry.get('note') or ''):
-            entry['note'] = ((entry.get('note') or '').rstrip() + ' ' + STAMP).strip()
-            changed = True
-    if not any(e.get('id') == ENTRY_ID for e in entries):
-        entries.append(dict(NEW_ENTRY))
-        changed = True
-    if changed:
-        _entries, text, span = lpc.load_ledger()
-        block = json.dumps(entries, indent=2, ensure_ascii=False)
-        with open(lpc.LEDGER_MD, 'w', encoding='utf-8', newline='\n') as fh:
-            fh.write(text[:span[0]] + block + '\n' + text[span[1]:])
-    for entry_id in drifted + [ENTRY_ID]:
-        lpc.update_hash(entry_id)
-    left = lpc.check(lpc.load_ledger()[0])
-    print('re-derived %d drifted entr%s; %d violation(s) left'
-          % (len(drifted), 'y' if len(drifted) == 1 else 'ies', len(left)))
-    return 1 if left else 0
+    return pr.restamp_receipt(STAMP, NEW_ENTRY)
 
 
 if __name__ == '__main__':
