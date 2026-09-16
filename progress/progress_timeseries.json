@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-09-16",
-      "generated_at": "2026-09-16T08:51:01Z",
+      "generated_at": "2026-09-16T08:52:32Z",
       "verb_promoted": 48,
       "verb_dcs_attested": 749,
       "senses": 11521,
@@ -149,8 +149,8 @@
       "kitchen_yield_clean_pct": 0.63,
       "kitchen_health_last_verdict": "GO",
       "kitchen_health_last_go": 1,
-      "kitchen_idle_hours": 1175.35,
-      "kitchen_current_idle_hours": 110.75
+      "kitchen_idle_hours": 1286.11,
+      "kitchen_current_idle_hours": null
     }
   ]
 }
