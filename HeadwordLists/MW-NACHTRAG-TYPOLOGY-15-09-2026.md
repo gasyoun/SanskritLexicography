@@ -1,6 +1,6 @@
 # MW/PWK Nachträge adjudication — typology, near-form subgroups, statistics
 
-_Created: 15-09-2026 · Last updated: 15-09-2026_
+_Created: 15-09-2026 · Last updated: 16-09-2026_
 
 Companion to [`MW-NACHTRAG-ADJUDICATION-15-09-2026.tsv`](MW-NACHTRAG-ADJUDICATION-15-09-2026.tsv)
 (the canonical sup_7 adjudication, 4,151 rows). MG asked 15-09-2026: raw TSV reading is
@@ -220,11 +220,41 @@ Enlisted in full per MG standing rule (small lists go into the issue verbatim, p
   8,418 (64 %) are genuinely new (uptake doc §4).
 - pw.txt volume 7: **1,920 entries with an explicit `<hom>N.</hom>`**; 1,766 spell a word MW
   already heads; **564 have a homonym number exceeding every homonym MW assigns**.
+  *(Superseded 16-09-2026 by §11: deterministic recompute = **571**, canary-locked; the 564 was
+  a defensible but method-sensitive figure — see §11 for the full 498–626 band and the reason.)*
 - Examples: [`kārin <hom>3.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L620966)
   (MW kārin¹⁻²; the entry after kāritra at 7-331-d),
   [`saṃvara <hom>3.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L487483) (MW ¹⁻²),
   [`saṃvalana <hom>2.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L487635) (MW ¹),
   [`saṃśayita <hom>2.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L488220),
   [`saṃśita <hom>2.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L488259).
+
+## 11. Widened census — every class, every layer, POS cross-cut (H5011, 16-09-2026)
+
+MG ruling 16-09-2026 («all such cases, in all parts of speech, widen the findings. What else
+remains unabsorbed by MW?») → full census and builder in
+[`MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md)
+(script `HeadwordLists/mw_unabsorbed_census.py`, ~8 s, deterministic). Supersedes the numbers in
+§10 and adds the sup_1…sup_6 layers this doc did not carry:
+
+- **Homonym-extension class (canary-locked): 571** — volume-7 entries with `<hom>≥2` whose number
+  exceeds MW99's **main-body** max homonym for that `k1`. Method-sensitive band **498–626** (563
+  if MW's *annexure* numbering counts; 507 on the `<h>` attribute; 498 on the entry's own-marker;
+  626 without the MW-headedness requirement). The old **564** falls inside the band; §10's figure
+  is superseded. Canaries: `kāritra` (confirmed-missing, correctly *not* a homonym-extension) and
+  `kārin³` (pw 7-331-d, MW main max 2 ⇒ extension) both reproduce.
+- **POS cross-cut of the 571:** `adj.` 296 (51.8 %) › no-tag 129 › `m.` 69 › `f.` 28 › `n.` 27 ›
+  `adv.` 20. The unabsorbed homonym layer is **adjective-heavy** and 77 % POS-tagged — and it is
+  **disjoint from the §1 adjudication pool** (0/571), because these words MW already heads.
+- **Broad extension class POS cross-cut is refuted by sparsity:** of the 4,688 sup_7 headwords
+  extending the PW main body, **85.6 % carry no `<lex>` tag** — report the sparsity, do not force
+  a POS distribution (per the handoff's refutation clause).
+- **All-layer widening (new here):** sup_1 1,755 (765 ext / 990 new) · sup_2 1,464 (530/934) ·
+  sup_3 1,712 (707/1,005) · sup_4 1,016 (359/657) · sup_5 2,192 (1,056/1,136) · sup_6 1,229
+  (522/707) · sup_7 13,094 (4,688/8,406).
+- **Routing (MG 16-09):** guide → [`MANUAL_LEXICON_WORKSPACE_AGENTS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md)
+  §7 (five-class taxonomy, landed); book/article → [`MW-UNABSORBED-CENSUS-ROUTING-16-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-ROUTING-16-09-2026.md)
+  (names ch12 §3.x / §4.4 / §7 and the csl-atlas article_21 §4). Upstream #119 posting remains
+  MG's ruling only.
 
 _Гасунс_
