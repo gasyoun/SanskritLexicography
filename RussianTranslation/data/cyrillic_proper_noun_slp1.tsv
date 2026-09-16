@@ -1,17 +1,31 @@
 cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
+Адидева	Adideva	ādideva	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
+Аджагара	Ajagara	ājagara	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Астика	AstIka	āstīka	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Ашадха	AzAQa	āṣāḍha	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Бхагиратхи	BAgIraTI	Bhāgīrathī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бхаратаварша	BAratavarza	bhāratavarṣa	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Бхаси	BAsI	Bhāsī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Бхима	BIma	Bhīma	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бхимасена	BImasena	bhīmasena	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Бхишма	BIzma	bhīṣma	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Бхишмака	BIzmaka	bhīṣmaka	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Бхуришравас	BUriSravas	bhūriśravas	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Бхадрамада	BadramadA	Bhadramadā	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Бхагиратха	BagIraTa	Bhagīratha	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бхага	Baga	Bhaga	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бхагадатта	Bagadatta	bhagadatta	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Бхара	Bara	bhara	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Бхарадваджа	BaradvAja	Bharadvāja	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бхарата	Barata	Bharata	onomasticon	inm,pui	3	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бхава	Bava	Bhava	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бхрингараджа	BfNgarAja	bhṛṅgarāja	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Бхринги	BfNgi	bhṛṅgi	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Бхригу	Bfgu	Bhṛgu	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бхригупрасравана	BfguprasravaRa	Bhṛguprasravaṇa	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бхригутунга	BfgutuNga	Bhṛgutuṅga	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бхогавати	BogavatI	Bhogavatī	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бходжаката	Bojakawa	bhojakaṭa	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Дхатар	DAtf	Dhātṛ	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дхатаром	DAtf	Dhātṛ	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Дхумрашва	DUmrASva	Dhūmrāśva	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -23,17 +37,26 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Дхармараджа	DarmarAja	Dharmarāja	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дхармавардхана	DarmavarDana	Dharmavardhana	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дхритараштри	DftarAzwrI	Dhṛtarāṣṭrī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Дхритараштра	DftarAzwra	dhṛtarāṣṭra	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Дхриштакету	Dfzwaketu	Dhṛṣṭaketu	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дхришти	Dfzwi	Dhṛṣṭi	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дхрувасандхи	DruvasaMDi	Dhruvasaṃdhi	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дхундхумара	DunDumAra	Dhundhumāra	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Айравата	ErAvata	Airāvata	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Гхритачи	GftAcI	Ghṛtācī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Ишана	ISAna	īśāna	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Кхандава	KARqava	khāṇḍava	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Кхандавапрастха	KARqavaprasTa	khāṇḍavaprastha	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Кхара	Kara	Khara	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шалмали	SAlmalI	Śālmalī	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шанта	SAntA	Śāntā	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шантану	SAntanu	śāntanu	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Шардули	SArdUlI	Śārdūlī	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Шардула	SArdUla	śārdūla	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Шайвала	SEvala	śaivala	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Шигхрага	SIGraga	Śīghraga	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шура	SUra	śūra	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Шурасена	SUrasena	śūrasena	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Шурпанакха	SUrpaRaKA	Śūrpaṇakhā	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шанкхана	SaNKana	Śaṅkhana	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шанкара	SaNkara	Śaṅkara	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -45,19 +68,29 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Шамбара	Sambara	Śambara	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шарабха	SaraBa	Śarabha	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шарабханга	SaraBaNga	Śarabhaṅga	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шарана	SaraRa	śaraṇa	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Шараданда	SaradaRqA	Śaradaṇḍā	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шатананда	SatAnanda	Śatānanda	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шатадханван	SataDanvan	śatadhanvan	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Шатадру	Satadru	Śatadru	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шатахрада	SatahradA	Śatahradā	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Шатакрату	Satakratu	Śatakratu	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шатругхна	SatruGna	Śatrughna	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шеша	Seza	Śeṣa	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Шрингавера	SfNgavera	Śṛṅgavera	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шрингаверапура	SfNgaverapura	śṛṅgaverapura	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Шикхандин	SiKaRqin	śikhaṇḍin	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Шишупала	SiSupAla	śiśupāla	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Шиби	Sibi	Śibi	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шилаваха	SilAvahA	Śilāvahā	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шини	Sini	śini	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Шириша	SirIza	śirīṣa	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Шива	Siva	Śiva	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шона	SoRA	Śoṇā	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шри	SrI	Śrī	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Шрипарвата	SrIparvata	śrīparvata	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Шриватса	SrIvatsa	śrīvatsa	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Шрутанта	SrutAnta	śrutānta	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Шрутакирти	SrutakIrtI	Śrutakīrtī	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Шуки	SukI	Śukī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Шукра	Sukra	Śukra	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -65,17 +98,25 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Шунака	Sunaka	Śunaka	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Швета	SvetA	Śvetā	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Шветы	Sveta	Śveta	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Шветакету	Svetaketu	śvetaketu	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Шьени	SyenI	Śyenī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Урмила	UrmilA	Ūrmilā	onomasticon	inm	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Аншуман	aNSumAn	Aṅśumān	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Ангарака	aNgAraka	aṅgāraka	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Анга	aNga	Aṅga	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Ангада	aNgada	Aṅgada	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Ангирас	aNgiras	Aṅgiras	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Ашока	aSoka	aśoka	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Ашоканандана	aSokanandana	Aśokanandana	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Ашвагрива	aSvagrIva	Aśvagrīva	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Ашвакарна	aSvakarRa	aśvakarṇa	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
+Ашвамедха	aSvameDa	aśvamedha	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Ашвапати	aSvapati	Aśvapati	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Ашваттхаман	aSvatTAman	aśvatthāman	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Ашваттха	aSvatTa	aśvattha	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Ашвины	aSvinO	Aśvinau	iast-witness-only		2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Анджана	aYjana	Añjana	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Аччхода	acCodA	acchodā	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Адити	aditi	Aditi	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Адрикритастхасли	adrikftasTalI	Adrikṛtasthalī	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Агастья	agastya	Agastya	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -84,10 +125,12 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Ахалья	ahalyA	Ahalyā	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Аджа	aja	Aja	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Акампана	akampana	Akampana	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Акрура	akrUra	akrūra	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Акша	akza	Akṣa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Аламбуша	alambuzA	Alambuṣā	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Аларка	alarka	Alarka	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Амаравати	amarAvatI	Amarāvatī	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Амбалика	ambAlikA	ambālikā	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Амбариша	ambarIza	Ambarīṣa	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Андхака	anDaka	Andhaka	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Ананга	anaNga	Anaṅga	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -96,39 +139,64 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Анасуя	anasUyA	Anasūyā	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Анила	anila	Anila	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Антака	antaka	Antaka	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Антика	antika	antika	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
+Анувинда	anuvinda	anuvinda	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Апаратала	aparatAla	Aparatāla	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Апсара	apsara	apsara	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
+Архат	arhat	arhat	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Ариштанеми	arizwanemi	Ariṣṭanemi	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Арджуна	arjuna	arjuna	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
+Арка	arka	arka	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Аруна	aruRa	Aruṇa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Арундхати	arunDatI	Arundhatī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Арьяман	aryaman	Aryaman	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Асуртараджаса	asUrtarajasa	Asūrtarajasa	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Асаманьджа	asamaYja	Asamañja	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Асита	asita	Asita	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Аста	asta	asta	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
+Асти	asti	asti	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Атри	atri	Atri	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Аватара	avatAra	avatāra	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Айодхья	ayoDyA	Ayodhyā	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Айомукхи	ayomuKI	Ayomukhī	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Бана	bARa	Bāṇa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бахлика	bAhlika	Bāhlika	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Балин	bAlin	Bālin	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бабхрувахана	baBruvAhana	babhruvāhana	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Бадарика	badarikA	badarikā	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Бахупутра	bahuputra	Bahuputra	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Бака	baka	baka	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Бакула	bakula	bakula	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Бала	bala	Bala	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Баладева	baladeva	baladeva	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Бали	bali	Bali	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Брихадратха	bfhadraTa	Bṛhadratha	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Бриханнала	bfhannalA	bṛhannalā	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Брихаспати	bfhaspati	Bṛhaspati	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Бинду	bindu	Bindu	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Брахма	brahmA	Brahmā	onomasticon	pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Брахмадатта	brahmadatta	Brahmadatta	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Будха	buDa	Budha	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Будда	budDa	Buddha	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Чарудешна	cArudezRa	cārudeṣṇa	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Чайтраратха	cEtraraTa	Caitraratha	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Чулин	cUlin	Cūlin	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Чакора	cakora	cakora	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Чакрадева	cakradeva	cakradeva	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Чакравака	cakravAka	cakravāka	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Чандра	candra	Candra	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Чандрасена	candrasena	candrasena	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Чекитана	cekitAna	cekitāna	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Читракута	citrakUwa	Citrakūṭa	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Читраратха	citraraTa	Citraratha	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Чьявана	cyavana	Cyavana	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Дарука	dAruka	dāruka	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Дикша	dIkzA	dīkṣā	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Диргхаюс	dIrGAyus	Dīrghāyus	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Милиус	dOer	Dauer	iast-witness-only		3	SamudraManthanam/Index/lib/x86_64-win64/Data/bhagavadgita-erman.html|SamudraManthanam/web/corpus_builder/jsonl/bhagavadgita-erman.jsonl
+Дурва	dUrva	dūrva	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Душана	dUzaRa	Dūṣaṇa	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Дадхича	daDIca	dadhīca	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Дандака	daRqaka	Daṇḍaka	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дашагрива	daSagrIva	Daśagrīva	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дашаратха	daSaraTa	Daśaratha	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -137,13 +205,26 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Дану	danU	Danū	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Дандака	dandaka	Dandaka	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Дардура	dardura	Dardura	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Девантака	devAntaka	devāntaka	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Деваки	devakI	devakī	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Девака	devaka	devaka	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Девамидха	devamIQa	Devamīḍha	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Деварата	devarAta	Devarāta	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дридханетра	dfQanetra	Dṛḍhanetra	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Диндима	diRqima	diṇḍima	onomasticon	pui	1	SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Дилипа	dilIpa	Dilīpa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дити	diti	Diti	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дравида	drAviqa	Drāviḍa	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Дрона	droRa	droṇa	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Друма	druma	druma	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Друмасена	drumasena	drumasena	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Друпада	drupada	drupada	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Духшасана	duHSAsana	duḥśāsana	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Дундубхи	dunduBi	Dundubhi	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Дурмукха	durmuKa	durmukha	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Дурвасас	durvAsas	durvāsas	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
+Душкарна	duzkarRa	duṣkarṇa	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
+Дварака	dvArakA	dvārakā	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Двивида	dvivida	Dvivida	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Дьюматсена	dyumatsena	Dyumatsena	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Экасала	ekasAla	Ekasāla	lexicon		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -152,9 +233,11 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Рикша	fkza	Ṛkṣa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Рикшараджас	fkzarajas	Ṛkṣarajas	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Рикшават	fkzavat	Ṛkṣavat	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Риши	fzi	ṛṣi	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Ришьяшринга	fzyASfNga	Ṛṣyāśṛṅga	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Ришьямука	fzyamUka	Ṛṣyamūka	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Гадхи	gADi	Gādhi	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Гандива	gARqIva	gāṇḍīva	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Гаруда	gAruqa	Gāruḍa	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Гаятри	gAyatrI	Gāyatrī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Гаутама	gOtama	Gautama	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -162,13 +245,17 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Гандхамадана	ganDamAdana	Gandhamādana	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Гандхарви	ganDarvI	Gandharvī	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Гаруда	garuqa	Garuḍa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
+Гавакша	gavAkza	gavākṣa	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl|SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl
 Гая	gaya	Gaya	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Гиривраджа	girivraja	Girivraja	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Годавари	godAvarI	Godāvarī	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt
 Гокарна	gokarRa	Gokarṇa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Гокула	gokula	gokula	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Гомати	gomatI	Gomatī	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Гопа	gopa	Gopa	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Говардхана	govarDana	govardhana	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Гуха	guha	Guha	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Гуру	guru	guru	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt|SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl
 Хастинапура	hAstinapura	Hāstinapura	onomasticon	inm	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Хаха	hahA	Hahā	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Хануман	hanumAn	Hanumān	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
@@ -176,6 +263,7 @@ cyrillic	slp1	iast_witness	validation	onomasticon	witness_count	seeds
 Хара	hara	Hara	onomasticon	inm,pui	2	SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt|SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Хари	hari	Hari	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Харьяшва	haryaSva	Haryaśva	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
+Хастин	hastin	hastin	onomasticon	inm	1	SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl
 Хавишпанда	havizpanda	Haviṣpanda	iast-witness-only		1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Хема	hemA	Hemā	onomasticon	inm,pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
 Хемачандра	hemacandra	Hemacandra	onomasticon	pui	1	SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt
