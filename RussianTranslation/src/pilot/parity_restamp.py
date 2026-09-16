@@ -21,6 +21,19 @@ This module is the one shared implementation:
 
 The per-handoff scripts stay in-tree as thin callers: their docstrings and NOTE
 receipts are the review evidence and must not be merged away.
+
+H4408 follow-up (16-09-2026): the h4527_/h4527b_/h4528_/h4861_parity_restamp.py
+receipts had each grown their own ~25-line copy of a second mechanic --
+stamp-the-drifted-entries + add-a-new-entry-if-missing + refresh-hashes-and-
+report, using `lang_parity_check` directly rather than this module (h4528's own
+docstring names the class: "same class as h2254_/h2504_/h4438_parity_restamp.py").
+`ensure_entry()`, `stamp_drifted()` and `restamp_receipt()` below are that
+mechanic, extracted once; h4438_parity_restamp.py's hand-rolled ledger block
+parsing and per-id subprocess loop were also folded onto load_ledger()/
+write_ledger()/update_hashes()/run_checker() above. h4529_parity_restamp.py
+stayed separate: it is a dry-run reporter with an `--apply` flag and a distinct
+CRLF-normalized hash comparison (via `lang_parity_check.file_sha256`), not the
+same mutate-then-restamp shape.
 """
 import json
 import re
@@ -105,3 +118,57 @@ def finish(ids):
         return 1
     print("lang parity ledger clean")
     return 0
+
+
+def ensure_entry(entries, new_entry):
+    """Append `new_entry` (a dict with at least an 'id' key) if no entry with that
+    id exists yet. Returns True iff it was added."""
+    if any(e.get("id") == new_entry["id"] for e in entries):
+        return False
+    entries.append(dict(new_entry))
+    return True
+
+
+def stamp_drifted(entries, ids, stamp):
+    """Append `stamp` to the `note` field of every entry in `entries` whose id is
+    in `ids`, unless `stamp` is already present in that note. Returns True iff any
+    note was changed."""
+    ids = set(ids)
+    changed = False
+    for e in entries:
+        if e.get("id") in ids:
+            note = e.get("note") or ""
+            if stamp not in note:
+                e["note"] = (note.rstrip() + " " + stamp).strip()
+                changed = True
+    return changed
+
+
+def restamp_receipt(stamp, new_entry, extra_stamps=()):
+    """The h4527_/h4527b_/h4528_/h4861_parity_restamp.py receipt tail: stamp
+    `stamp` onto the note of every ledger entry the checker reports as drifted
+    (checked in-process via lang_parity_check, the path these four receipts
+    always used -- distinct from drifted_ids()'s subprocess-plus-regex parse
+    above), ensure `new_entry` exists, optionally stamp (ids, text) pairs onto
+    other entries regardless of drift (h4527b's supersession sentence onto the
+    entry its pass retired), refresh hashes for every touched id through
+    lang_parity_check's own writer, and print the receipts' shared summary line.
+    Returns the checker's exit code (0 = clean)."""
+    sys.path.insert(0, str(CHECK.parent))
+    import lang_parity_check as lpc
+    entries, text, span = lpc.load_ledger()
+    drifted = sorted({v.split(":", 1)[0] for v in lpc.check(entries)})
+    changed = stamp_drifted(entries, drifted, stamp)
+    for ids, extra in extra_stamps:
+        changed = stamp_drifted(entries, ids, extra) or changed
+    changed = ensure_entry(entries, new_entry) or changed
+    if changed:
+        block = json.dumps(entries, indent=2, ensure_ascii=False)
+        with open(lpc.LEDGER_MD, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(text[:span[0]] + block + "\n" + text[span[1]:])
+    for entry_id in drifted + [new_entry["id"]]:
+        lpc.update_hash(entry_id)
+    left = lpc.check(lpc.load_ledger()[0])
+    print("re-derived %d drifted entr%s; %d violation(s) left"
+          % (len(drifted), "y" if len(drifted) == 1 else "ies", len(left)))
+    return 1 if left else 0
