@@ -221,7 +221,9 @@ Enlisted in full per MG standing rule (small lists go into the issue verbatim, p
 - pw.txt volume 7: **1,920 entries with an explicit `<hom>N.</hom>`**; 1,766 spell a word MW
   already heads; **564 have a homonym number exceeding every homonym MW assigns**.
   *(Superseded 16-09-2026 by §11: deterministic recompute = **571**, canary-locked; the 564 was
-  a defensible but method-sensitive figure — see §11 for the full 498–626 band and the reason.)*
+  a defensible but method-sensitive figure — see §11 for the full 498–626 band and the reason.
+  The "1,766 spell a word MW already heads" also recomputes to **1,779** on the same
+  strip-`*`/`k1`-membership basis.)*
 - Examples: [`kārin <hom>3.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L620966)
   (MW kārin¹⁻²; the entry after kāritra at 7-331-d),
   [`saṃvara <hom>3.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L487483) (MW ¹⁻²),

@@ -50,10 +50,14 @@ main-body max for that `k1`.
 | … with an explicit `<hom>N.</hom>` | 1,921 |
 | … spanning a word MW99 already heads | 1,779 |
 | **homonym-extensions (hom ≥ 2 > MW main max)** | **571** |
-| … of which MW's *annexure* carries a homonym number ≥ N | 563 (⚠ numbering artifact — see §5) |
-| … with no such annexure number | 8 |
+| … of which MW's *annexure* carries a homonym number ≥ N | 8 (⚠ numbering artifact — see §5) |
+| … with **no** such annexure number | 563 |
 | DCS corpus-attested (band ≥ 1) | 374 (65.5 %) |
 | DCS common+ (band ≥ 3) | 204 (35.7 %) |
+| corroborated by ≥1 dictionary outside the Böhtlingk tradition | 517 (90.5 %) |
+| … by ≥2 outside-tradition dictionaries | 470 (82.3 %) |
+| … by ≥1 dictionary of any tradition | 559 (97.9 %) |
+| pw body cites MAHĀVY | 10 |
 | present in the sup_7 adjudication pool | 0 (the classes are disjoint) |
 
 **The stale figure.** The base artefacts (§10 of the typology doc) stated **564**. The
@@ -78,9 +82,15 @@ and the 7-row spread is a definitional artifact, not a data change.
 (half the class), then masculine nouns. Unlike the generic extension class (§2), it is
 **77 % POS-tagged** — the Nachträge's homonym-bearing stubs carry a `<lex>` far more often than
 bare new headwords do. The class is **disjoint from the adjudication pool** (0/571 in the sup_7
-missing-candidate TSV): these are words MW *already heads*, so they never entered the
-"missing-entry" pipeline — corroboration/MAHĀVY columns are therefore structurally empty for it,
-and POS + DCS are the only usable evidence axes.
+missing-candidate TSV), because these are words MW *already heads* — which is why the
+adjudication TSV carries no rows for them. Corroboration is therefore taken **directly from the
+primary sources**: a 36-dictionary scan (the canonical tuple reused from
+[`mw_pwk_nachtraege_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_adjudicate.py))
+finds **517/571 (90.5 %)** corroborated by ≥1 dictionary *outside* the Böhtlingk tradition
+(`sch`/`pwg` discounted), 470 by ≥2. Top outside witnesses: `cae` 382 · `ccs` 325 · `shs` 265 ·
+`yat` 255 · `wil` 248 · `lrv` 239 · `vcp` 234 · `ap` 226. MAHĀVY is genuinely sparse here
+(**10/571** pw bodies cite it); DCS (374) and outside-tradition corroboration (517) are the two
+strong axes for this class.
 
 **Examples (top DCS band):** `aBi` (√abhí, `adj.`, hom 2, MW max 1) ·
 [`aNga` hom 3, MW max 2](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L599176) ·
@@ -164,10 +174,15 @@ python HeadwordLists/mw_unabsorbed_census.py
    571 rests on the main-body-max reading the canary pins; the count moves to **563** if MW's
    *annexure* homonym numbers are allowed to count, **507** on the `<h>`-attribute base, **498** on
    the entry-own-marker base, and **626** if MW-headedness is not required. All are in the TSV via
-   the `annexure_covers` / `pos_set` / `mw_*_max_hom` columns.
-2. **`annexure_covers = yes` is a numbering coincidence, not semantic coverage.** `kārin` is the
-   proof: MW's annexure `kārin³` ("scattering, destroying") is a *different* word from the pw
-   homonym 3, yet the flag reads `yes`. Do not read the 563 as "MW absorbed them".
+   the `annexure_covers` / `pos_set` / `mw_*_max_hom` columns. **§1's headline read «annexure
+   carries ≥ N = 563 / no such number = 8» in the first cut — inverted; corrected 16-09-2026 to
+   **8 covered / 563 not** (the executor's own TSV column always said `no: 563 / yes: 8`, and an
+   independent DeepSeek re-derivation found the same — see the handoff's `## Verifier` section).**
+2. **`annexure_covers = yes` (8 rows) is a numbering coincidence, not semantic coverage.**
+   `kārin` is the proof: MW's annexure `kārin³` ("scattering, destroying", fr. √kF) is a
+   *different* word from the pw homonym 3, yet the flag reads `yes` — `kārin` is one of the 8.
+   Do not read those 8 as "MW absorbed them"; the other **563 have no MW annexure homonym number
+   ≥ N at all**.
 3. **POS sparsity** — the broad extension class (§2) is 85.6 % untagged; its POS distribution is
    not representative and is not claimed.
 4. **DCS coverage bias** — texts skew Buddhist/epic; band ≥ 1 is not "well attested".
