@@ -618,13 +618,21 @@ def profile_status(config_dir, claude='claude', call_reservation=None, account=N
     if call_reservation is None:
         raise ValueError('paid profile validation requires a call reservation ledger')
     validate_preflight_artifact(preflight_path)
+    # H4436 (16-09-2026): the `profile:init` validation call takes the SAME profile-stripping
+    # posture as the paid lane and as the readiness probe (H4527) — derived from the lane's own
+    # resolver with no manifest, never a literal, so an unsupporting CLI degrades exactly as the
+    # lane does. This was the last paid spawn in this module still carrying the operator's full
+    # interactive profile (CLAUDE.md + 456 skill/command/agent entries + 65 hooks on c1).
+    init_argv = claude_argv_prefix(claude) + [
+        '-p', 'Return exactly OK.', '--output-format', 'json',
+        '--model', 'claude-sonnet-5', '--permission-mode', 'plan']
+    if resolve_safe_mode({}, claude):
+        init_argv.append(SAFE_MODE_FLAG)
     with ActiveCallClaim(config_dir_fingerprint(config_dir)):
         reservation = call_reservation.reserve('profile:init', profile=account)
         try:
             probe = run_tree_kill(               # D-J: tree-kill on timeout
-                claude_argv_prefix(claude) + [
-                    '-p', 'Return exactly OK.', '--output-format', 'json',
-                    '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+                init_argv,
                 env=env, text=True, encoding='utf-8',
                 capture_output=True, timeout=60)
         except subprocess.TimeoutExpired:

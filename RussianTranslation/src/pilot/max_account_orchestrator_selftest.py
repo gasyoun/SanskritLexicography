@@ -966,6 +966,46 @@ def main():
     print('  H4527 probe --safe-mode: == headless_worker.resolve_safe_mode({}) both ways; '
           'recorded as cli_safe_mode_effective')
 
+    # H4436 (16-09-2026): the `profile:init` validation spawn was the LAST paid call in this
+    # module still carrying the operator's full interactive profile. It takes the lane's posture
+    # the same way the readiness probe does — equality with the resolver both ways, no literal.
+    _rtk5 = m.run_tree_kill
+    _support5 = dict(hw._safe_mode_support)
+    with tempfile.TemporaryDirectory() as td5:
+        preflight5 = m.write_synthetic_preflight(os.path.join(td5, 'p.preflight.json'), 'p5')
+        try:
+            for supported in (True, False):
+                hw._safe_mode_support[sys.executable] = supported
+                cap5 = {'n': 0}
+
+                def _init_runner(*a, **k):
+                    cap5['n'] += 1
+                    if cap5['n'] == 1:      # `auth status --json`, free
+                        return types.SimpleNamespace(
+                            returncode=0, stderr='',
+                            stdout=json.dumps({'loggedIn': True, 'subscriptionType': 'max'}))
+                    cap5['argv'] = list(a[0]) if a else list(k.get('args') or [])
+                    return types.SimpleNamespace(
+                        returncode=0, stderr='',
+                        stdout='{"type":"result","subtype":"success","is_error":false}')
+
+                m.run_tree_kill = _init_runner
+                ok5, _d5 = m.profile_status(td5, sys.executable, MemoryCallLedger(), 'acc',
+                                            preflight5)
+                assert ok5, _d5
+                lane5 = hw.resolve_safe_mode({}, sys.executable)
+                assert lane5 is supported, (lane5, supported)
+                assert (hw.SAFE_MODE_FLAG in cap5['argv']) is lane5, (
+                    'profile:init --safe-mode=%r but the paid lane resolves %r -- the validation '
+                    'call is certifying a different profile surface than the lane (H4436)'
+                    % (hw.SAFE_MODE_FLAG in cap5['argv'], lane5))
+                assert '--permission-mode' in cap5['argv'] and 'plan' in cap5['argv'], cap5['argv']
+        finally:
+            m.run_tree_kill = _rtk5
+            hw._safe_mode_support.clear()
+            hw._safe_mode_support.update(_support5)
+    print('  H4436 profile:init --safe-mode: == headless_worker.resolve_safe_mode({}) both ways')
+
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
     with tempfile.TemporaryDirectory() as td:
