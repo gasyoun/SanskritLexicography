@@ -37,6 +37,31 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 SAME_TRADITION = {'sch', 'pwg'}
 
+# Corroboration dictionaries — the canonical 36-dict tuple reused verbatim from
+# mw_pwk_nachtraege_adjudicate.py (H4878), so the join semantics stay identical.
+CORR_DICTS = ["mw72", "pwg", "ap90", "bhs", "cae", "mci", "vei", "yat", "sch", "ap",
+              "skd", "lan", "md", "pe", "pui", "wil", "bor", "bop", "ben", "gra",
+              "gst", "ieg", "inm", "krm", "lrv", "nybj", "shs", "snp", "stc", "vcp",
+              "armh", "acc", "ae", "bur", "ccs", "fri"]
+HW_LINE = re.compile(r"^<L>([^<]+)<pc>([^<]*)<k1>([^<]*)<k2>([^<]*)")
+MAHVY = re.compile(r"MAHĀVY\.?\s*((?:[0-9]+(?:\s*[.,]\s*)?)+)")
+
+
+def _clean(hw):
+    return "".join(c for c in hw if c.isalpha())
+
+
+def dict_set(path):
+    ks = set()
+    with io.open(path, encoding='utf-8') as f:
+        for line in f:
+            m = HW_LINE.match(line)
+            if m:
+                for k in (_clean(m.group(3)), _clean(m.group(4))):
+                    if k:
+                        ks.add(k)
+    return ks
+
 L_RE = re.compile(r"^<L>")
 K1 = re.compile(r"<k1>([^<]+)")
 K2 = re.compile(r"<k2>([^<]+)")
@@ -164,8 +189,10 @@ def main():
             if hm:
                 n_vol7_hom += 1
                 primary, posset = pos_of(body)
+                mh = MAHVY.search(body)
                 vol7_hom_rows.append((lineno, k1, headword(k1, k2), int(hm.group(1)),
-                                      primary, posset, int(sup.group(1)) if sup else 0))
+                                      primary, posset, int(sup.group(1)) if sup else 0,
+                                      mh.group(1).strip() if mh else ''))
     print(f"pw vol-7 entries {n_vol7}; with <hom> {n_vol7_hom}", file=sys.stderr)
 
     # ---------- homonym-extension census (vol-7 <hom> vs MW main max) ----------
@@ -176,14 +203,14 @@ def main():
     # as a sensitivity flag). Canary kArin: N=3 > MW main max 2 -> extension.
     ext_rows = []
     n_mw_heads = 0
-    for lineno, k1, hw, hom, primary, posset, layer in vol7_hom_rows:
+    for lineno, k1, hw, hom, primary, posset, layer, mahavy in vol7_hom_rows:
         maxm = mw_main_max.get(k1, 0)
         maxa = mw_all_max.get(k1, 0)
         if k1 in mw99_keys:
             n_mw_heads += 1
         if k1 in mw99_keys and hom >= 2 and hom > maxm:
             ext_rows.append((lineno, k1, hw, hom, maxm, maxa, primary, posset, layer,
-                             'yes' if maxa >= hom else 'no'))
+                             'yes' if maxa >= hom else 'no', mahavy))
     print(f"vol-7 <hom> spelling a word MW heads: {n_mw_heads}; "
           f"EXTENSIONS (hom>=2 & > MW main max): {len(ext_rows)}; "
           f"of which MW annexure would cover this hom: "
@@ -237,6 +264,18 @@ def main():
         lem = dcs.get('lemmas', {})
         band = {h: (lem.get(h) or {}).get('freqBand', 0) for h in lem}
 
+    # ---------- corroboration dictionary sets (direct primary scan) ----------
+    corr_sets = {}
+    for n in CORR_DICTS:
+        p = os.path.join(ORIG, n, f"{n}.txt")
+        if os.path.exists(p):
+            corr_sets[n] = dict_set(p)
+    print(f"corroboration dictionaries loaded: {len(corr_sets)}/{len(CORR_DICTS)}", file=sys.stderr)
+
+    def corr_for(hw):
+        c = [d for d in CORR_DICTS if d in corr_sets and hw in corr_sets[d]]
+        return c, [d for d in c if d not in SAME_TRADITION]
+
     # ---------- write homonym-extension TSV ----------
     out1 = os.path.join(HERE, "MW-UNABSORBED-CENSUS-HOMONYM-EXTENSIONS-16-09-2026.tsv")
     with io.open(out1, 'w', encoding='utf-8', newline='') as f:
@@ -244,19 +283,20 @@ def main():
                 "annexure_covers\tpos\tpos_set\tsup_layer\tdcs_band\tcorr_n\tcorr_outside_n\t"
                 "corr_outside\tmahavy\tdcs\tverdict\n")
         in_adj = 0
-        for lineno, k1, hw, hom, maxm, maxa, primary, posset, layer, annex_cover in sorted(ext_rows):
-            a = adj_corr.get(hw, {})
-            if a:
+        for lineno, k1, hw, hom, maxm, maxa, primary, posset, layer, annex_cover, mahavy in sorted(ext_rows):
+            corr, outside = corr_for(hw)
+            if hw in adj_corr:
                 in_adj += 1
             f.write('\t'.join(map(str, [
                 lineno, k1, hw, hom, maxm, maxa, annex_cover, primary, posset, layer,
                 band.get(hw, 0),
-                a.get('corr_n', ''), a.get('out_n', ''),
-                ';'.join(a.get('outside', [])), a.get('mahavy', ''),
-                a.get('dcs', ''), a.get('verdict', ''),
+                len(corr), len(outside),
+                ';'.join(outside), mahavy,
+                '1' if band.get(hw, 0) else '0',
+                adj_corr.get(hw, {}).get('verdict', ''),
             ])) + '\n')
         print(f"  extension rows present in the sup_7 adjudication pool: {in_adj}/{len(ext_rows)} "
-              f"(corroboration columns are empty where the row is outside that pool)", file=sys.stderr)
+              f"(corroboration is now a DIRECT 36-dict scan, not that pool)", file=sys.stderr)
 
     # ---------- write POS x class summary TSV ----------
     out2 = os.path.join(HERE, "MW-UNABSORBED-CENSUS-POS-CLASS-16-09-2026.tsv")
@@ -311,16 +351,21 @@ def main():
     print("\n== homonym-extension census (vol-7 <hom> exceeding MW MAIN max) ==")
     print(f"  rows: {len(ext_rows)}")
     print("  by POS:", dict(posA.most_common()))
-    print("  annexure-inclusive override (MW annexure covers this hom):",
-          sum(1 for r in ext_rows if r[9] == 'no'))
-    print("  MAHAVY-cited:", sum(1 for r in ext_rows if adj_corr.get(r[2], {}).get('mahavy') not in ('', '0', None)))
-    print("  DCS-attested (adjudication flag):", sum(1 for r in ext_rows if adj_corr.get(r[2], {}).get('dcs') == '1'))
+    print("  annexure numbering covers this hom (maxa >= hom):",
+          sum(1 for r in ext_rows if r[9] == 'yes'),
+          "| no annexure number >= hom:", sum(1 for r in ext_rows if r[9] == 'no'))
+    print("  MAHAVY-cited (pw body):", sum(1 for r in ext_rows if r[10]))
     print("  DCS band >=1 (direct lookup):", sum(1 for r in ext_rows if band.get(r[2], 0) >= 1))
     print("  DCS band >=3 (common+):", sum(1 for r in ext_rows if band.get(r[2], 0) >= 3))
     print("  >=1 outside-PW dict (excl sch,pwg):",
-          sum(1 for r in ext_rows if adj_corr.get(r[2], {}).get('out_n', 0) >= 1))
+          sum(1 for r in ext_rows if len(corr_for(r[2])[1]) >= 1))
     print("  >=2 outside-PW dicts:",
-          sum(1 for r in ext_rows if adj_corr.get(r[2], {}).get('out_n', 0) >= 2))
+          sum(1 for r in ext_rows if len(corr_for(r[2])[1]) >= 2))
+    print("  >=1 any dict:", sum(1 for r in ext_rows if len(corr_for(r[2])[0]) >= 1))
+    print("  top dicts:",
+          collections.Counter(d for r in ext_rows for d in corr_for(r[2])[0]).most_common(8))
+    print("  top outside dicts:",
+          collections.Counter(d for r in ext_rows for d in corr_for(r[2])[1]).most_common(8))
 
     print("\n== canaries ==")
     for hw in ('kArin', 'kAritra'):
