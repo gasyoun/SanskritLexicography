@@ -26,8 +26,13 @@ Idempotent in content: a second run finds no drift and no missing entry and chan
 whatever the check reports as drifted, so running it after some later, unrelated change would
 mis-attribute that drift to this pass. Re-derive later drift with its own receipt, never this one.
 Usage: python src/pilot/h4527b_parity_restamp.py
+
+H4408 follow-up: the stamp/ensure-entry/restamp mechanics this driver duplicated
+with h4527_/h4528_/h4861_parity_restamp.py now live once in
+parity_restamp.restamp_receipt() (its `extra_stamps` argument carries this
+receipt's one added wrinkle, the BRIDGE_ID supersession sentence); this file
+keeps only its own STAMP/NEW_ENTRY/SUPERSEDED receipt text.
 """
-import json
 import os
 import sys
 
@@ -35,7 +40,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import lang_parity_check as lpc  # noqa: E402
+import parity_restamp as pr  # noqa: E402
 
 ENTRY_ID = 'probe_honest_question_h4527'
 BRIDGE_ID = 'probe_provenance_bridge_h4277'
@@ -77,32 +82,7 @@ NEW_ENTRY = {
 
 
 def main():
-    entries, _text, _span = lpc.load_ledger()
-    drifted = sorted({v.split(':', 1)[0] for v in lpc.check(entries)})
-    changed = False
-    for entry in entries:
-        note = entry.get('note') or ''
-        if entry.get('id') in drifted and STAMP not in note:
-            note = (note.rstrip() + ' ' + STAMP).strip()
-        if entry.get('id') == BRIDGE_ID and SUPERSEDED not in note:
-            note = (note.rstrip() + ' ' + SUPERSEDED).strip()
-        if note != (entry.get('note') or ''):
-            entry['note'] = note
-            changed = True
-    if not any(e.get('id') == ENTRY_ID for e in entries):
-        entries.append(dict(NEW_ENTRY))
-        changed = True
-    if changed:
-        _entries, text, span = lpc.load_ledger()
-        block = json.dumps(entries, indent=2, ensure_ascii=False)
-        with open(lpc.LEDGER_MD, 'w', encoding='utf-8', newline='\n') as fh:
-            fh.write(text[:span[0]] + block + '\n' + text[span[1]:])
-    for entry_id in drifted + [ENTRY_ID]:
-        lpc.update_hash(entry_id)
-    left = lpc.check(lpc.load_ledger()[0])
-    print('re-derived %d drifted entr%s; %d violation(s) left'
-          % (len(drifted), 'y' if len(drifted) == 1 else 'ies', len(left)))
-    return 1 if left else 0
+    return pr.restamp_receipt(STAMP, NEW_ENTRY, extra_stamps=[([BRIDGE_ID], SUPERSEDED)])
 
 
 if __name__ == '__main__':
