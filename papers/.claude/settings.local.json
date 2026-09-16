@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Read(//c/Users/user/Documents/GitHub/SanskritLexicography/**)",
+      "Bash(gh pr *)",
+      "Read(//c/Users/user/Documents/GitHub/Samudra-h821/web/corpus_builder/**)",
+      "Bash(rm -rf ../../nkrya-parallel/export/*/)",
+      "Bash(python nkrya_export.py --all-ru --out ../../nkrya-parallel/export --with-sanskritisms --quiet)",
+      "Bash(echo \"EXIT $?\")"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "graymatter"
+  ]
+}
