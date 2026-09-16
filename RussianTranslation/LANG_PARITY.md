@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 15-09-2026_
+_Created: 01-08-2026 · Last updated: 16-09-2026_
 
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
@@ -1145,10 +1145,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
       "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/coordinator.py": "e1cf7262a45a5a35f9d6f8fd01fced069ef81cc043d008b1b185d8de800a21e6",
       "src/pilot/headless_worker_selftest.py": "d582134766bd6c1d3472dc49506ca6c7e5434da048063323f6fa189deb9a4ea4",
-      "src/pilot/max_account_orchestrator_selftest.py": "3ab136d4cdb1c052918978ae0aab1d1e8957dbade6325563ba71a92775d6e3ff",
+      "src/pilot/max_account_orchestrator_selftest.py": "ce9898db36dede3cae864100bda319f04b093bacb35e01eafa78e82188e42526",
       "src/pilot/no_pwg_scale_plan.py": "152a3b12d7b64b750e2621d9e5f43f175df6c05205695efa200413d9d4210e52",
       "src/pilot/windows100_selftest.py": "11c19bdeb665507cc2d40311c5b1da577412c534986fd8e98172231a99c85dea",
       "src/pilot/run_observability.py": "43156e5fdc858858d2f7ec649dc94f7ac9c1d35242369d81d89d11af6e18d080",
@@ -1662,7 +1662,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "aed9987f5cfd0469cb317f722f5181c34d6cfb6a626bf39031c5a1f6b9541a9d",
       "src/pilot/bounded_supervisor.py": "4317b5af7377ea39d682e356d89d81d0ca73032089f318d4f7f648aec42c30bf",
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743"
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b"
     }
   },
   {
@@ -1841,7 +1841,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "aed9987f5cfd0469cb317f722f5181c34d6cfb6a626bf39031c5a1f6b9541a9d",
       "src/pilot/bounded_supervisor.py": "4317b5af7377ea39d682e356d89d81d0ca73032089f318d4f7f648aec42c30bf",
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/translation_memory.py": "a1d7f99e7050e2bb5b258d347aacc99861698882312e517a1b2cf203ce123296",
       "src/pilot/coordinator.py": "e1cf7262a45a5a35f9d6f8fd01fced069ef81cc043d008b1b185d8de800a21e6",
       "src/promote_final_cards.py": "d8b50c2780fbd13a0997ce54280fd1bbedce600cd7cb6e983af9d485d82b358d",
@@ -2354,7 +2354,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verdict": "SHARED",
     "note": "H4326 (07-09-2026, Opus 5 `claude-opus-5`): the entry H4277 (#2103) owed under policy 1. `_probe_prompt` takes one argument, `payload_bytes`; it has no `lang` parameter, reads no target-language field, translates nothing, and its filler unit is fixed English prose used only to size the request. The gate it feeds is unchanged — `{\"ok\": true}` is still the only passing answer, with no retry inside a sitting, no ceiling raised and no profile switched. Whatever lane a batch is later dispatched for, it passes through the same readiness probe, so the repair is shared by construction. Pinned by `test_health_probe_carries_the_h4277_provenance_bridge`. H4528 (14-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is the no-output-progress watchdog wiring only -- an opt-in token-streaming spawn shape (`execution.cli_token_stream`, default OFF), a content-line progress filter, the `no_progress_kill` kill class and its telemetry. No language branch is added and no target-language field is read; RU and EN spawns take the identical argv and kill path. H4527 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is the readiness probe adopting the paid lane's `--safe-mode` via `headless_worker.resolve_safe_mode({}, claude)` plus one boolean event field (`cli_safe_mode_effective`). Spawn-shape only -- no prompt change, no language branch, no target-language field read; the RU and EN lanes share one readiness probe. H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness probe's TEXT only -- one honest question over the fixed English filler replaces the TASK SHAPE prepend and the H4277 bridge -- plus two re-pinned selftests, two corrected comments (MASK_PREAMBLE, latency_payload_sweep) and one hash-only probe event field (`probe_prompt_sha`, run_observability.ALLOWED). No language branch, no target-language field read; RU and EN share one readiness probe. SUPERSEDED by `probe_honest_question_h4527` (H4527 pass 2, 15-09-2026): with the bridge in place the probe still refused four times against two passes (10-09..15-09), the last two with `--safe-mode`, and the 14:27Z transcript named the bridge's own sentences as the injection signature. `_PROBE_PROVENANCE_BRIDGE` is deleted; its pin became `test_health_probe_carries_no_injection_shape`. H4915 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness-probe ration only -- `execution_contract.ProbeRation` (a machine-wide per-profile attempt ledger keyed by config_dir_fingerprint, at most 2 attempts per UTC day, at least 6 h apart), its check in `_probe_call` before the reservation and spawn, a no-spend preflight in `probe_fleet`, `ActiveCallClaim.ration_admitted`, and the pin `_test_h4915_probe_ration_is_code_enforced_across_evidence_roots`. The probe carries no card and no `--lang` input, so RU and EN windows are rationed by the same ledger.",
     "verified_sha256": {
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/window_selftest.py": "b1e4e68a3035af06453e4e77e9f7fb38f2b032ac01698843d98e40af72027567"
     }
   },
@@ -2398,7 +2398,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/proc_tree.py": "be7d39e8f7c177da8d6a33984b9c0b3604d2f1f3a07a9733195e0f79fc327001",
       "src/pilot/execution_contract.py": "0c9963a4ce78e0c0146d3126081bfeb925f250a21ab35f6a463c3e44f08918cb",
       "src/pilot/cli_stream.py": "12c3da90aa95bb3806181f3b073fe1c804eff4dfcd5da827e13943f524b7b4d8",
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/h963_c4_gate0_probe.py": "f1f53d73905795bae342fc894b20ab8c02f89cd4d8b8572a8f21ca826909b0b0"
     }
   },
@@ -2434,7 +2434,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verdict": "SHARED",
     "note": "H4527 (15-09-2026, Opus 5 `claude-opus-5`). The probe is language-free by construction: zero cards, a fixed {\"ok\": true} schema, and no `--lang` input, so a Russian and an English window are gated by the byte-identical probe call. The flag is derived from the same resolver `headless_worker` uses for BOTH lanes' generation spawns, so the probe and every lane it gates strip the same profile surface. Test: max_account_orchestrator_selftest \"H4527 probe --safe-mode\" pin (flag present and recorded when the resolver says ON, absent when the CLI lacks it -- equality with the lane both ways, never a literal). H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness probe's TEXT only -- one honest question over the fixed English filler replaces the TASK SHAPE prepend and the H4277 bridge -- plus two re-pinned selftests, two corrected comments (MASK_PREAMBLE, latency_payload_sweep) and one hash-only probe event field (`probe_prompt_sha`, run_observability.ALLOWED). No language branch, no target-language field read; RU and EN share one readiness probe. H4915 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness-probe ration only -- `execution_contract.ProbeRation` (a machine-wide per-profile attempt ledger keyed by config_dir_fingerprint, at most 2 attempts per UTC day, at least 6 h apart), its check in `_probe_call` before the reservation and spawn, a no-spend preflight in `probe_fleet`, `ActiveCallClaim.ration_admitted`, and the pin `_test_h4915_probe_ration_is_code_enforced_across_evidence_roots`. The probe carries no card and no `--lang` input, so RU and EN windows are rationed by the same ledger.",
     "verified_sha256": {
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/run_observability.py": "43156e5fdc858858d2f7ec649dc94f7ac9c1d35242369d81d89d11af6e18d080"
     }
   },
@@ -2452,7 +2452,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verdict": "SHARED",
     "note": "H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`). `_probe_prompt` takes one argument, `payload_bytes`; no `lang` parameter, no target-language field, no card. The question and filler are fixed English prose asked of the model, never translated, so a Russian and an English window are gated by the byte-identical probe. On the cohort-acceptance route (`bounded_staged_run --execute --only-profile`) the production TASK SHAPE check it used to duplicate is carried by the canary gate, which renders the lane's own `mask_preamble(field)` for either language; `staged-run` has no canary and is routed to Uprava H4916 -- a gap for both languages alike, so parity is unaffected. Tests: `test_health_probe_asks_an_honest_question`, `test_health_probe_carries_no_injection_shape`, max_account_orchestrator_selftest D-P pin. H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness probe's TEXT only -- one honest question over the fixed English filler replaces the TASK SHAPE prepend and the H4277 bridge -- plus two re-pinned selftests, two corrected comments (MASK_PREAMBLE, latency_payload_sweep) and one hash-only probe event field (`probe_prompt_sha`, run_observability.ALLOWED). No language branch, no target-language field read; RU and EN share one readiness probe. H4916 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands -- the probe text is untouched; the drift is the new per-profile canary gate before `probe_fleet` (entry `staged_run_canary_gate_h4916`), which closes the 'staged-run has no canary' gap named above. H4915 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness-probe ration only -- `execution_contract.ProbeRation` (a machine-wide per-profile attempt ledger keyed by config_dir_fingerprint, at most 2 attempts per UTC day, at least 6 h apart), its check in `_probe_call` before the reservation and spawn, a no-spend preflight in `probe_fleet`, `ActiveCallClaim.ration_admitted`, and the pin `_test_h4915_probe_ration_is_code_enforced_across_evidence_roots`. The probe carries no card and no `--lang` input, so RU and EN windows are rationed by the same ledger.",
     "verified_sha256": {
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/window_selftest.py": "b1e4e68a3035af06453e4e77e9f7fb38f2b032ac01698843d98e40af72027567"
     }
   },
@@ -2473,10 +2473,28 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "Uprava H4916 residual: follow-up mint (slug pwg-ru-canary-judge-en-senses) refused by the mint dup-heuristic on 15-09-2026, awaiting a human ruling; make canary_gate.judge_payload count senses in the run's target-language field",
     "note": "H4916 (15-09-2026, Opus 5 `claude-opus-5`). The gate itself is language-blind: it reads receipt verdict, age and `profile_slot`, never a target-language field, so RU and EN runs face the identical rule. The GAP is in the receipt PRODUCER it relies on: `canary_gate.judge_payload` counts only senses with non-empty `russian` content, so an EN canary card is 0/3 and NO-GO by construction. Before H4916 that made an EN `bounded_staged_run --execute` fail-closed unless `--skip-canary-gate`; since H4916 an EN `staged-run` is fail-closed too, with no escape. Fail-closed is the safe direction for a paid route, but it is an RU/EN asymmetry until the judge reads the run's own language field. Tests: max_account_orchestrator_selftest 'staged-run: H4916 canary gate' block; bounded_staged_run_selftest (q4). H4915 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness-probe ration only -- `execution_contract.ProbeRation` (a machine-wide per-profile attempt ledger keyed by config_dir_fingerprint, at most 2 attempts per UTC day, at least 6 h apart), its check in `_probe_call` before the reservation and spawn, a no-spend preflight in `probe_fleet`, `ActiveCallClaim.ration_admitted`, and the pin `_test_h4915_probe_ration_is_code_enforced_across_evidence_roots`. The probe carries no card and no `--lang` input, so RU and EN windows are rationed by the same ledger.",
     "verified_sha256": {
-      "src/pilot/max_account_orchestrator.py": "184fcb944d1c0a3de5087250a1b41f08f2dbab6d3985bfb807669de0ccf33743",
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
       "src/pilot/bounded_staged_run.py": "aed9987f5cfd0469cb317f722f5181c34d6cfb6a626bf39031c5a1f6b9541a9d",
-      "src/pilot/max_account_orchestrator_selftest.py": "3ab136d4cdb1c052918978ae0aab1d1e8957dbade6325563ba71a92775d6e3ff",
+      "src/pilot/max_account_orchestrator_selftest.py": "ce9898db36dede3cae864100bda319f04b093bacb35e01eafa78e82188e42526",
       "src/pilot/bounded_staged_run_selftest.py": "ab5d37f871bdbf70ed8612b09a9a551647f649eba6c6ff005fc8d40af70ef9c3"
+    }
+  },
+  {
+    "id": "profile_init_safe_mode_h4436",
+    "mechanism": "Profile validation surface: `profile_status`'s paid `profile:init` call appends `--safe-mode` exactly when `headless_worker.resolve_safe_mode({}, claude)` (the paid lane's own resolver) says the lane would -- the last paid spawn in the module that still carried the operator's full interactive profile",
+    "files": [
+      "src/pilot/max_account_orchestrator.py",
+      "src/pilot/max_account_orchestrator_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H4436 (16-09-2026, Fable 5.1 `claude-fable-5-1`). The validation call is language-free by construction: a fixed 'Return exactly OK.' prompt, no cards, no `--lang` input, so a Russian and an English account are validated by the byte-identical spawn. Same resolver as `_probe_call` (probe_safe_mode_h4527) and `headless_worker.call`, so the three cannot drift; an unsupporting CLI degrades identically on every lane. Selftest pin asserts equality with the resolver both ways.",
+    "verified_sha256": {
+      "src/pilot/max_account_orchestrator.py": "678efced967d1ac34dbfb6d6c32e8bc137fa9d63162b8d14d6b2fd8df18b4e8b",
+      "src/pilot/max_account_orchestrator_selftest.py": "ce9898db36dede3cae864100bda319f04b093bacb35e01eafa78e82188e42526"
     }
   }
 ]
