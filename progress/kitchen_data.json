@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T08:49:28Z",
+  "generated_at": "2026-09-16T08:51:06Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": false,
+    "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 398687,
+    "youngest_artifact_age_seconds": 54,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,26 +17,26 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T18:04:38Z",
-        "age_seconds": 398687,
+        "age_seconds": 398785,
         "size": 26350965
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1689884,
+        "age_seconds": 1689982,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1689884,
+        "age_seconds": 1689982,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-11T18:04:24Z",
-        "age_seconds": 398702,
-        "size": 3593424
+        "mtime": "2026-09-16T08:50:09Z",
+        "age_seconds": 54,
+        "size": 3598321
       }
     }
   },
@@ -111,90 +111,98 @@
   },
   "gates": {
     "measured": true,
-    "gate_summaries": 3832,
-    "exit0": 2029,
-    "exit0_pct": 52.9,
+    "gate_summaries": 3841,
+    "exit0": 2034,
+    "exit0_pct": 53.0,
     "recent_shown": 200,
     "recent": [
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:02:31Z",
-        "root": "h4213can091108282902",
+        "ts": "2026-09-11T18:04:23Z",
+        "root": null,
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
         "summary": "final_schema exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
-        "summary": "nws exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
+        "summary": "nws exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "asa_mskfta~~h0_zz_nws00"
+        ]
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
-        "summary": "translation exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
+        "summary": "translation exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "asa_mskfta~~h0_zz_nws00"
+        ]
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
-        "summary": "stage2_mechanical exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
+        "summary": "stage2_mechanical exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "asa_mskfta~~h0_zz_nws00"
+        ]
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
-        "summary": "coverage exit=0 requeue=0",
-        "returncode": 0,
-        "requeue": []
+        "summary": "coverage exit=1 requeue=1",
+        "returncode": 1,
+        "requeue": [
+          "asa_mskfta~~h0_zz_nws00"
+        ]
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
         "summary": "sense_dupes exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-11T18:04:23Z",
+        "ts": "2026-09-16T08:50:09Z",
         "root": null,
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
@@ -590,15 +598,8 @@
         ]
       }
     ],
-    "live_jobs": [
-      {
-        "external_id": "h4527acc05",
-        "state": "in_progress",
-        "started_at": "2026-09-16T08:48:46Z",
-        "profile_slot": "c1"
-      }
-    ],
-    "live_job_count": 1,
+    "live_jobs": [],
+    "live_job_count": 0,
     "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
@@ -752,18 +753,18 @@
     "measured": true,
     "min_idle_seconds": 120,
     "list_len": 12,
-    "gap_count": 10,
-    "total_idle_seconds": 4231256,
-    "total_idle_hours": 1175.35,
-    "mean_gap_seconds": 423125.6,
-    "current_idle_seconds": 398688,
-    "last_idle_seconds": 329,
+    "gap_count": 11,
+    "total_idle_seconds": 4630000,
+    "total_idle_hours": 1286.11,
+    "mean_gap_seconds": 420909.091,
+    "current_idle_seconds": null,
+    "last_idle_seconds": 398744,
     "last_idle": {
-      "from": "2026-09-11T17:56:54Z",
-      "to": "2026-09-11T18:02:23Z",
-      "seconds": 329,
-      "after_root": "h4213can091108282902",
-      "before_root": "h4213rq1",
+      "from": "2026-09-11T18:04:24Z",
+      "to": "2026-09-16T08:50:08Z",
+      "seconds": 398744,
+      "after_root": null,
+      "before_root": null,
       "reason": "unknown",
       "reason_source": "default"
     },
@@ -782,9 +783,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 785348,
+        "idle_seconds": 785404,
         "idle_days": 9.09,
-        "idle_hours": 218.15
+        "idle_hours": 218.17
       }
     ],
     "recent_gaps": [
@@ -876,6 +877,15 @@
         "seconds": 329,
         "after_root": "h4213can091108282902",
         "before_root": "h4213rq1",
+        "reason": "unknown",
+        "reason_source": "default"
+      },
+      {
+        "from": "2026-09-11T18:04:24Z",
+        "to": "2026-09-16T08:50:08Z",
+        "seconds": 398744,
+        "after_root": null,
+        "before_root": null,
         "reason": "unknown",
         "reason_source": "default"
       }
@@ -971,6 +981,15 @@
         "before_root": "h4213rq1",
         "reason": "unknown",
         "reason_source": "default"
+      },
+      {
+        "from": "2026-09-11T18:04:24Z",
+        "to": "2026-09-16T08:50:08Z",
+        "seconds": 398744,
+        "after_root": null,
+        "before_root": null,
+        "reason": "unknown",
+        "reason_source": "default"
       }
     ],
     "reasons": {
@@ -983,13 +1002,13 @@
         "waiting_requeue",
         "unknown"
       ],
-      "gap_count": 10,
+      "gap_count": 11,
       "reason_counts": {
-        "unknown": 9,
+        "unknown": 10,
         "health_nogo": 1
       },
       "known_reason_count": 1,
-      "unknown_reason_count": 9,
+      "unknown_reason_count": 10,
       "log_entries": 0,
       "log_path": "idle_reason_log.jsonl",
       "note": "Reasons from operator log or measured auto-rules only; historical silence stays unknown"
@@ -2030,8 +2049,8 @@
         "date": "2026-09-11",
         "cards": 5,
         "windows": 0,
-        "idle_seconds": 113115,
-        "idle_hours": 31.42,
+        "idle_seconds": 179572,
+        "idle_hours": 49.88,
         "level": 2,
         "idle": false
       },
@@ -2039,51 +2058,51 @@
         "date": "2026-09-12",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 66457,
+        "idle_hours": 18.46,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-13",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 66457,
+        "idle_hours": 18.46,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-14",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 66457,
+        "idle_hours": 18.46,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-15",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 66457,
+        "idle_hours": 18.46,
         "level": 0,
-        "idle": false
+        "idle": true
       },
       {
         "date": "2026-09-16",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 66457,
+        "idle_hours": 18.46,
         "level": 0,
-        "idle": false
+        "idle": true
       }
     ],
     "max_cards": 6025,
     "active_days": 22,
-    "idle_days": 45
+    "idle_days": 50
   },
   "changelog": {
     "measured": true,
