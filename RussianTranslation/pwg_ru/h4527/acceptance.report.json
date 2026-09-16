@@ -1,0 +1,107 @@
+{
+ "schema": "pwg.bounded_staged_run.v1",
+ "run_id": "h4527acc160916",
+ "plan_view": {
+  "schema": "pwg.bounded_staged_run.v1",
+  "mode": "dry-run (no generation call made)",
+  "scope": {
+   "lease_ids": [
+    "h4527acc05"
+   ],
+   "expected_windows": 1,
+   "expected_headwords": 1,
+   "expected_subcards": 1,
+   "projected_calls_from_plan": 1,
+   "importable_prepared_leases": [
+    "h4527acc05"
+   ],
+   "windows_not_prepared_skipped": []
+  },
+  "ceilings": {
+   "max_windows": null,
+   "max_calls": 3,
+   "max_clean": null,
+   "cost_ceiling": null,
+   "empty_streak": null,
+   "max_accounts": 0
+  },
+  "cost_basis": {
+   "evaluable": true,
+   "reason": "no cost ceiling requested"
+  },
+  "account_allocation": {
+   "validated_accounts": [
+    "c1"
+   ],
+   "max_accounts_cap": null,
+   "allocated": [
+    "c1"
+   ]
+  },
+  "checkpoint_path": "..\\..\\pwg_ru\\h4527\\acceptance.checkpoint.json",
+  "stop_policy": [
+   "window-count ceiling (max_windows=None)",
+   "call-count ceiling (max_calls=3)",
+   "clean-rows quota (max_clean=None)",
+   "cost/quota ceiling (cost_ceiling=None; UNEVALUABLE cost -> STOP_COST_UNEVALUABLE, fail closed)",
+   "consecutive non-productive streak (empty_streak=None)",
+   "clean-target drain (plan queue + requeue backlog both empty)",
+   "any failed job or all-accounts-parked -> fail closed"
+  ],
+  "live_requires": "explicit --execute AND a healthy fleet probe (STOP-on-any-NO-GO)",
+  "cohort": {
+   "requested_width": 1,
+   "mode": "serial (production default, width 1)",
+   "live_policy": "H1437 live-acceptance gate: attempt/result/run binding, promotion-receipt reconciliation and the campaign reservation ledger must be proven on a LIVE serial window and signed off by Codex review before any cohort width > 1 may execute",
+   "live_admission": {
+    "admitted": true,
+    "reason": "serial route (width 1)",
+    "record_path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\pwg_ru\\h4527\\COHORT_LIVE_ACCEPTANCE.json"
+   }
+  }
+ },
+ "summary": {
+  "peak_concurrency": 1,
+  "accepted_order": [],
+  "requeue_backlog_keys": [
+   "asa_mskfta~~h0_zz_nws00"
+  ],
+  "calls_spent": 1,
+  "calls_reserved": 1,
+  "effective_width": 1,
+  "coord_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator",
+  "stop_reason": null,
+  "wave": {
+   "promoted": true,
+   "tm_done": true,
+   "receipt": null
+  },
+  "leases": {
+   "h4527acc05": {
+    "phase": "done",
+    "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527acc05\\workflow_result.headless.h4527acc05.json",
+    "report": {
+     "requeue_keys": [
+      "asa_mskfta~~h0_zz_nws00"
+     ],
+     "satisfied_keys": [],
+     "clean_count": 0,
+     "calls": 1,
+     "cost": null,
+     "audit_state": "transient_only",
+     "lease_state": "transient_only",
+     "store_delta": null
+    }
+   }
+  },
+  "cohort": {
+   "path": "live",
+   "requested_width": 1,
+   "fleet": [
+    "c1"
+   ],
+   "reason": "fleet admits width 1: c1"
+  },
+  "agent_ops_code": null
+ }
+}
