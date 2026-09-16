@@ -90,7 +90,7 @@ python HeadwordLists/mw_pw_sup7_missing_entries.py # Method C  (~40 s)
 
 ## 7 · MW72 baseline — separating "never saw it" from "saw and skipped" (added 14-09-2026, MG question)
 
-MG's point: MW72 (55,390 entries; 51,162 unique verbatim `k1∪k2`) predates the completion of the great PW (1855-75) and the whole *kürzere Fassung* (1879-89), so MW72 never saw the later material. Crossing the `sup_7` headwords with **both** MW editions splits the candidate pool into classes a single MW99 diff conflates — builder [`mw72_baseline_sup7.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_baseline_sup7.py), output [`mw72_baseline_sup7.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_baseline_sup7.tsv):
+MG's point: MW72 (55,390 entries; 51,162 unique verbatim `k1∪k2`) predates every printed part of the *kürzere Fassung* (one part per year, 1879 through 1889 — per-volume years, never a blanket range: MG 15-09-2026) and all of the great PW's volumes (Bd 1 1855 · 2 1856 · 3 1857 · 4 1858 · 5 1861 · 6 1863 · 7 1872–75), so MW72 never saw the later material. Crossing the `sup_7` headwords with **both** MW editions splits the candidate pool into classes a single MW99 diff conflates — builder [`mw72_baseline_sup7.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_baseline_sup7.py), output [`mw72_baseline_sup7.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw72_baseline_sup7.tsv):
 
 | class (of 13,094 unique `sup_7` headwords) | n |
 |---|--:|

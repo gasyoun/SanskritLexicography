@@ -8,15 +8,19 @@ Companion details to [`MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md`](h
 
 The whole "MW99's annexure draws on the Nachträge" claim is a claim about **dates**, so every source is cited with its year from here on:
 
-| source | year | role here |
+| source | per-volume publication years | role here |
 |---|---|---|
-| Böhtlingk–Roth, *Sanskrit-Wörterbuch* (**PW**, great Petersburg dictionary) | **1855–1875** | vols 1–7; the *Nachträge und Verbesserungen* sections (vol 7: 1872–75) are tagged `sup_1`…`sup_7` in Cologne `pw.txt` |
-| *Nachträge und Verbesserungen* (standalone digitization, Cologne `pwkvn`) | (sections of the above) | 24,976 entries; `kāritra` L16013 |
-| Böhtlingk, *kürzere Fassung* (MG's «PWK»; Cologne code **`pw`** per the headers — see [CONTRADICTIONS §18](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)) | **1879–1889** | post-dates MW72 entirely |
+| Böhtlingk–Roth, great Petersburg dictionary (Cologne `pwg`) | **Bd 1 1855 · Bd 2 1856 · Bd 3 1857 · Bd 4 1858 · Bd 5 1861 · Bd 6 1863 · Bd 7 1872–75 (issued in parts)** | the other Petersburg work — out of scope for the `sup` tags, see [CONTRADICTIONS §18](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) |
+| Böhtlingk, *kürzere Fassung* (Cologne **`pw`**, MG's «PWK») | **Pt 1 1879 · Pt 2 1880 · … · Pt 7 1889** (one year per part; pts 2–6 to be pinned from the part title pages) | **the `sup_1`…`sup_7` tags live here**; `sup_7` = part 7 (**1889**) — the kāritra locus (7-331-d) |
+| *Nachträge und Verbesserungen* (standalone digitization, Cologne `pwkvn`) | same parts as the kürzere Fassung | 24,976 entries; `kāritra` L16013 |
 | Monier-Williams **MW72** | **1872** | 51,162 unique `k1∪k2`; **no annexure** |
 | Monier-Williams **MW99** | **1899** | 344,684 unique `k1∪k2`; annexure = 6,067 `k1` (`<info n="sup"/>`) |
 | Edgerton, *Buddhist Hybrid Sanskrit Dictionary* (Cologne `bhs`) | **1953** | 17,839 entries; post-dates MW99 by 54 years |
-| *Mahāvyutpatti* (cited by the Nachträge) | ed. **1849** | `kāritra` = MAHĀVY 245/844 |
+| *Mahāvyutpatti* | 9th-century glossary (edition year to be pinned) | `kāritra` = MAHĀVY 245/844 |
+
+**Standing convention (MG, 15-09-2026):** a span like "1855–1875" is a title-page span, **not** per-volume precision — each volume of a multi-volume work has its own single year, and it must always be kept in mind for **PW, PWG, EWA, KEWA** (EWA: Bd I 1992 · II 1996 · III 2001; KEWA: Bd I 1956 · II 1963 · III 1976 · IV 1980). The whole annexure-draws-on-Nachträge argument turns on **which parts were printed when** relative to 1872 and 1899.
+
+**Sharpened by the per-volume reading:** the motivating locus `kāritra` sits in the **kürzere Fassung, part 7 (1889), p. 331 col d** — printed **10 years before MW99 and 17 years after MW72**. MW99 could have taken it; it did not. (MW72 could not have, on any ordering of the 1872 printings of the great PW's last parts — but that comparison belongs to the great-PW layer, where `kāritra` is absent anyway.)
 
 **Why it matters:** every Nachträge layer (PW vol 7, 1872–75) and the whole kürzere Fassung (1879–89) post-date MW72 (1872) and pre-date MW99 (1899). So a Nachträge word present in MW99 but absent from MW72 is a word MW *could only have taken from the Nachträge* — the uptake numbers in §3 are therefore direct evidence of the annexure's dependence, not a coincidence of coverage.
 
@@ -26,9 +30,9 @@ Metric: for a headword set **S**, compare its share among MW99's annexure entrie
 
 | source set S | n(S) | in annexure | in main | enrichment |
 |---|--:|--:|--:|--:|
-| PW Nachträge `sup_7` (letzte Nachträge) | 13,094 | 1,798 (29.6 %) | 7,157 (3.8 %) | **7.79×** |
-| PW Nachträge `sup_1`…`sup_7` (all layers) | 14,401 | 1,956 (32.2 %) | 7,659 (4.1 %) | **7.91×** |
-| `pwkvn` standalone Nachträge digitization | 14,995 | 1,971 (32.5 %) | 7,787 (4.1 %) | **7.84×** |
+| kürzere-Fassung Nachträge `sup_7` (letzte Nachträge, pt 7 = 1889) | 13,094 | 1,798 (29.6 %) | 7,157 (3.8 %) | **7.79×** |
+| kürzere-Fassung Nachträge `sup_1`…`sup_7` (all layers, 1879–1889) | 14,401 | 1,956 (32.2 %) | 7,659 (4.1 %) | **7.91×** |
+| `pwkvn` standalone digitization of the same Nachträge | 14,995 | 1,971 (32.5 %) | 7,787 (4.1 %) | **7.84×** |
 | Edgerton BHS (1953) | 17,777 | 413 (6.8 %) | 6,128 (3.3 %) | **2.09×** |
 
 **Reading:** the MW99 annexure is **~7.8× enriched for PW-Nachträge words** and only **~2.1× enriched for Edgerton's BHS words** — i.e. the annexure is roughly **3.7× more "PW-flavoured" than "BHS-flavoured"**. Edgerton (1953) post-dates MW99 by half a century, so a low BHS enrichment is expected; the PW layers *pre-date* MW99 and the enrichment is high — the asymmetry is the quantitative form of Andhrabharati's postulate.
