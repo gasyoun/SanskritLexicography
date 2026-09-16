@@ -29,7 +29,7 @@ gets a pointer line to §7 in a follow-up translation pass — flagged as a resi
 | census table | lands at | as |
 |---|---|---|
 | ALL-LAYERS table (§3 of the widened doc) | new **§3.x "What MW left on the table"**, after the current §3 (lines 90–130, "What MW inherited — the apparatus") | the *complement* of §3: the per-layer uptake/skip counts are the quantified residual of the inheritance claim |
-| HOMONYM-EXTENSIONS (571) + POS-CLASS table | new **§4.4 "The unabsorbed homonym layer"**, after §4.3 (line 156) | the one class §4 does not yet cover — words MW *heads* but whose further homonyms/senses it did not take |
+| HOMONYM-EXTENSIONS (571) + POS-CLASS table | new **§4.4 "The unabsorbed homonym layer"**, after §4.3 (header at line 147; the §4.3 block ends at line 156) | the one class §4 does not yet cover — words MW *heads* but whose further homonyms/senses it did not take |
 | method (canary-locked MW-max-hom) + `mw_unabsorbed_census.py` | **§7 Reproducibility** (line 217) | regenerate-script link, alongside the committed forensic suite |
 
 ## 3 · Article derivation
