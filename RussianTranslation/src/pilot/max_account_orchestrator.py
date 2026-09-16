@@ -25,10 +25,11 @@ from headless_worker import (DEFAULT_TIMEOUT_S, SAFE_MODE_FLAG, bare_cli_cwd,
                              validate_preflight_artifact, windows_hidden_flags,
                              wrapper_timeout_s)
 from window_common import atomic_write_text
-from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, ProbeRation,
-                                ProbeRationRefused, config_dir_fingerprint,
+from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
+                                PROBE_RATION_MAX_PER_UTC_DAY, PROBE_RATION_MIN_GAP_S,
+                                ProbeRation, ProbeRationRefused, config_dir_fingerprint,
                                 kill_classification, probe_ration_root,
-                                progress_window_ms_for,
+                                progress_window_ms_for, utc_day, utc_iso_ts,
                                 validate_manifest, validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
@@ -1148,6 +1149,52 @@ def cmd_status(args):
     db.close()
 
 
+def cmd_probe_ration(args):
+    """H4527: read-only answer to "may this box probe profile X right now?" — zero calls, zero writes.
+
+    H4915 made the readiness-probe ration a code gate, but left it readable only by ATTEMPTING a
+    probe: `probe_fleet` and `_probe_call` raise `ProbeRationRefused` and that is the only surface.
+    Two consecutive H4527 passes (15-09 (3), 16-09) therefore learned the lane was closed by hand-
+    grepping the ledger JSONL — and a batch drain, which claims a handoff before it reads anything,
+    cannot do even that. This is the preflight a dispatcher can afford: it reports the recorded
+    attempts and the next legal UTC time for every validated profile (or `--account`), and exits 3
+    when no probe is legal now, so a caller can branch without parsing prose.
+
+    Exit 0 = a probe is legal now for every reported profile · 3 = at least one is rationed ·
+    1 = the ledger itself is unreadable (fail closed, the same verdict the gate gives)."""
+    db = connect(args.db)
+    rows = list(db.execute('SELECT name,config_dir FROM accounts WHERE validated=1 ORDER BY name'))
+    db.close()
+    if args.account:
+        rows = [row for row in rows if row['name'] in set(args.account)]
+        if not rows:
+            raise SystemExit('probe-ration: no validated account matches %s' % ', '.join(args.account))
+    ration, now = ProbeRation(PROBE_RATION_ROOT), _ration_clock()
+    report, rationed = [], False
+    for row in rows:
+        fingerprint = config_dir_fingerprint(row['config_dir'])
+        try:
+            stamps = ration.attempts(fingerprint)
+            legal = ration.next_legal(fingerprint, now)
+        except ProbeRationRefused as exc:
+            raise SystemExit('probe-ration: %s' % exc)
+        today = utc_day(now)
+        entry = {'account': row['name'], 'fingerprint': fingerprint,
+                 'ledger': ration.path(fingerprint),
+                 'attempts_today': [utc_iso_ts(ts) for ts in stamps if utc_day(ts) == today],
+                 'last_attempt_utc': utc_iso_ts(stamps[-1]) if stamps else None,
+                 'next_legal_utc': utc_iso_ts(legal),
+                 'legal_now': legal <= now}
+        rationed = rationed or not entry['legal_now']
+        report.append(entry)
+    print(json.dumps({'schema': 'pwg.probe_ration_status.v1', 'now_utc': utc_iso_ts(now),
+                      'max_per_utc_day': PROBE_RATION_MAX_PER_UTC_DAY,
+                      'min_gap_s': PROBE_RATION_MIN_GAP_S,
+                      'profiles': report}, indent=1, sort_keys=True))
+    if rationed:
+        raise SystemExit(3)
+
+
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
 # D-F: health ceiling; a probe reading over this parks the account (probe_fleet) and is NO-GO.
@@ -2242,6 +2289,7 @@ def main(argv=None):
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
     p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
+    p = sub.add_parser('probe-ration', help='H4527: read-only readiness-probe ration status (no calls, no writes); exit 3 when rationed'); p.add_argument('--account', action='append'); p.set_defaults(func=cmd_probe_ration)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
     p.add_argument('--coordinator', required=True); p.add_argument('--lease-id', action='append')
