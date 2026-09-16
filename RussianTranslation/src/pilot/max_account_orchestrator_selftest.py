@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import builtins
+import contextlib
 import hashlib
+import io
 import json
 import os
 import sqlite3
@@ -1891,7 +1893,76 @@ def main():
     _test_h2878_probe_records_the_no_output_progress_reading()
     _test_h3642_health_probe_log_follows_evidence_root()
     _test_h4915_probe_ration_is_code_enforced_across_evidence_roots()
+    _test_h4527_probe_ration_status_is_readable_without_probing()
     print('max_account_orchestrator_selftest: PASS')
+
+
+def _test_h4527_probe_ration_status_is_readable_without_probing():
+    """H4527: `probe-ration` answers "may this box probe now?" with zero calls and zero writes.
+
+    H4915 made the ration a code gate but left it readable only by ATTEMPTING a probe, so a batch
+    drain — which claims a handoff before it reads anything — could only learn the lane was closed
+    by spending an attempt or by hand-grepping a JSONL. The pin asserts the three properties a
+    dispatcher branches on: exit 3 when rationed, exit 0 when legal, and no spawn either way."""
+    import datetime
+
+    def utc(text):
+        return datetime.datetime.strptime(text, '%Y-%m-%dT%H:%MZ').replace(
+            tzinfo=datetime.timezone.utc).timestamp()
+
+    saved = (m.run_tree_kill, m.PROBE_RATION_ROOT, m._ration_clock)
+    spawns, now = [], [utc('2030-04-02T09:00Z')]
+    m.run_tree_kill = lambda *a, **k: spawns.append(1)
+    m._ration_clock = lambda: now[0]
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            cfg = os.path.join(td, 'profile-c1')
+            os.makedirs(cfg)
+            db = os.path.join(td, 'ration-status.sqlite')
+            m.main(['--db', db, 'init', '--account', 'c1=' + cfg, '--skip-profile-check'])
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-status')
+
+            def status(account=None):
+                out = io.StringIO()
+                code = 0
+                try:
+                    with contextlib.redirect_stdout(out):
+                        m.cmd_probe_ration(types.SimpleNamespace(db=db, account=account))
+                except SystemExit as exc:
+                    code = exc.code
+                return code, json.loads(out.getvalue())
+
+            code, report = status()
+            assert code == 0 and report['profiles'][0]['legal_now'] is True, report
+            assert report['profiles'][0]['attempts_today'] == [], report
+            assert report['schema'] == 'pwg.probe_ration_status.v1', report
+
+            # One attempt recorded: still under the 2/day cap, but inside the 6 h gap -> rationed.
+            m.ProbeRation(m.PROBE_RATION_ROOT).record(
+                config_dir_fingerprint(cfg), utc('2030-04-02T08:00Z'), account='c1')
+            code, report = status()
+            entry = report['profiles'][0]
+            assert code == 3, 'a rationed profile must be branchable on the exit code, not prose'
+            assert entry['legal_now'] is False, entry
+            assert entry['next_legal_utc'] == '2030-04-02T14:00:00Z', entry
+            assert entry['attempts_today'] == ['2030-04-02T08:00:00Z'], entry
+
+            # Reporting NEVER spends: the ledger is byte-identical across the reads above.
+            ledger = m.ProbeRation(m.PROBE_RATION_ROOT).path(config_dir_fingerprint(cfg))
+            with open(ledger, encoding='utf-8') as fh:
+                assert len(fh.read().splitlines()) == 1, 'probe-ration wrote to the ration ledger'
+            assert not spawns, 'probe-ration spawned a CLI'
+
+            # An unknown --account is a refusal, not an empty (and falsely green) report.
+            try:
+                m.cmd_probe_ration(types.SimpleNamespace(db=db, account=['c9']))
+                raise AssertionError('probe-ration reported on an unvalidated profile')
+            except SystemExit as exc:
+                assert 'no validated account' in str(exc), exc
+    finally:
+        m.run_tree_kill, m.PROBE_RATION_ROOT, m._ration_clock = saved
+    print('  H4527 probe-ration status: exit 3 when rationed, 0 when legal, zero spawns and zero '
+          'ledger writes either way; unknown --account refuses instead of reporting green')
 
 
 def _test_h4915_probe_ration_is_code_enforced_across_evidence_roots():

@@ -425,6 +425,18 @@ def _utc_iso(ts):
     return _utc(ts).strftime('%Y-%m-%dT%H:%M:%SZ')
 
 
+def utc_day(ts):
+    """The UTC calendar date an epoch stamp falls on — the unit `PROBE_RATION_MAX_PER_UTC_DAY`
+    counts. Public twin of `_utc`, so a read-only ration reporter (H4527) does not have to reach
+    for a private and then drift from what `ProbeRation.check` actually compares."""
+    return _utc(ts).date()
+
+
+def utc_iso_ts(ts):
+    """`YYYY-MM-DDTHH:MM:SSZ` for an epoch stamp. Public twin of `_utc_iso` for the same reason."""
+    return _utc_iso(ts)
+
+
 def _next_utc_midnight(ts):
     day = _utc(ts).date() + datetime.timedelta(days=1)
     return datetime.datetime(day.year, day.month, day.day,

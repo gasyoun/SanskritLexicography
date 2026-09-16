@@ -1,0 +1,226 @@
+{
+  "handoff": "H4750",
+  "census": "Uprava docs/CROSSWALK_CANDIDATES_PENDING_MAPPINGS_14-09-2026.md item 17 (C17)",
+  "measured_at": "2026-09-15T01:42:02.437986+00:00",
+  "model": "OxAlpha (opencode/z-ai/glm-5.3-flash)",
+  "method": "keys COPIED verbatim from inm/pui <k1> headwords; IAST→Cyrillic rendering (src/iast_to_cyrillic.py) used ONLY as an exact-match join key to locate corpus-attested Russian spellings in the fully-Cyrillic name indices; zero keys derived from Cyrillic character rules (FINDINGS §60 fence intact)",
+  "rule_derived_keys": 0,
+  "table_rows_before": 534,
+  "table_rows_after": 622,
+  "new_rows_shipped": 88,
+  "target_new_rows": 88,
+  "renderer_selfcheck_on_own_table_pct": 81.8,
+  "uncovered_index_spellings": 746,
+  "join_candidates_cyr_key_pairs": 441,
+  "ambiguous_spellings": 96,
+  "ambiguous_sample": {
+    "Аванти": [
+      "Avanti",
+      "avantI",
+      "avanti"
+    ],
+    "Адамбара": [
+      "Aqambara",
+      "aqambara"
+    ],
+    "Амба": [
+      "Amba",
+      "aMbA",
+      "ambA"
+    ],
+    "Амбика": [
+      "aMbikA",
+      "ambikA"
+    ],
+    "Амрита": [
+      "amftA",
+      "amfta"
+    ],
+    "Ананта": [
+      "anantA",
+      "ananta"
+    ],
+    "Андхра": [
+      "AnDra",
+      "anDra"
+    ],
+    "Аришта": [
+      "arizwA",
+      "arizwa"
+    ],
+    "Бадари": [
+      "bAdari",
+      "badarI",
+      "badari"
+    ],
+    "Бхадра": [
+      "BadrA",
+      "Badra"
+    ],
+    "Вадава": [
+      "vAqava",
+      "vadavA",
+      "vaqavA"
+    ],
+    "Ваджра": [
+      "vajrA",
+      "vajra"
+    ],
+    "Варанаси": [
+      "vArARasI",
+      "varARasI"
+    ],
+    "Варша": [
+      "varzA",
+      "varza"
+    ],
+    "Вена": [
+      "veRA",
+      "vena"
+    ],
+    "Видиша": [
+      "vidiSA",
+      "vidiSa"
+    ],
+    "Видура": [
+      "vidUra",
+      "vidura"
+    ],
+    "Викарна": [
+      "vikarRA",
+      "vikarRa"
+    ],
+    "Вирата": [
+      "virAta",
+      "virAwa"
+    ],
+    "Вирупа": [
+      "virUpA",
+      "virUpa"
+    ],
+    "Вишока": [
+      "viSokA",
+      "viSoka"
+    ],
+    "Гада": [
+      "gadA",
+      "gada"
+    ],
+    "Гаджа": [
+      "gajA",
+      "gaja"
+    ],
+    "Гайа": [
+      "gayA",
+      "gaya"
+    ],
+    "Гандхари": [
+      "gAnDArI",
+      "gAnDAri"
+    ]
+  },
+  "leftover_unambiguous_pool": 146,
+  "recount_before": {
+    "onomasticon": 446,
+    "lexicon": 50,
+    "iast-witness-only": 38
+  },
+  "recount_after": {
+    "onomasticon": 534,
+    "lexicon": 50,
+    "iast-witness-only": 38
+  },
+  "new_rows_sample": [
+    {
+      "cyrillic": "Адидева",
+      "slp1": "Adideva",
+      "iast_witness": "ādideva",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Аджагара",
+      "slp1": "Ajagara",
+      "iast_witness": "ājagara",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Астика",
+      "slp1": "AstIka",
+      "iast_witness": "āstīka",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Ашадха",
+      "slp1": "AzAQa",
+      "iast_witness": "āṣāḍha",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхаратаварша",
+      "slp1": "BAratavarza",
+      "iast_witness": "bhāratavarṣa",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхимасена",
+      "slp1": "BImasena",
+      "iast_witness": "bhīmasena",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхишма",
+      "slp1": "BIzma",
+      "iast_witness": "bhīṣma",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхишмака",
+      "slp1": "BIzmaka",
+      "iast_witness": "bhīṣmaka",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхуришравас",
+      "slp1": "BUriSravas",
+      "iast_witness": "bhūriśravas",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхагадатта",
+      "slp1": "Bagadatta",
+      "iast_witness": "bhagadatta",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхара",
+      "slp1": "Bara",
+      "iast_witness": "bhara",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Бхрингараджа",
+      "slp1": "BfNgarAja",
+      "iast_witness": "bhṛṅgarāja",
+      "onomasticon": "pui"
+    },
+    {
+      "cyrillic": "Бхринги",
+      "slp1": "BfNgi",
+      "iast_witness": "bhṛṅgi",
+      "onomasticon": "pui"
+    },
+    {
+      "cyrillic": "Бходжаката",
+      "slp1": "Bojakawa",
+      "iast_witness": "bhojakaṭa",
+      "onomasticon": "inm"
+    },
+    {
+      "cyrillic": "Дхритараштра",
+      "slp1": "DftarAzwra",
+      "iast_witness": "dhṛtarāṣṭra",
+      "onomasticon": "inm"
+    }
+  ],
+  "table": "RussianTranslation/data/cyrillic_proper_noun_slp1.tsv"
+}
