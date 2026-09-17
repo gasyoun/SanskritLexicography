@@ -11,6 +11,7 @@
 !BRILL_PROPOSAL.md
 !*/
 !chapters/*.md
+!appendix/*.md
 !LITERATURE_CROSSWALK.md
 !*.meta.md
 !SIGNOFF_M01_glue_framing_calls.md
