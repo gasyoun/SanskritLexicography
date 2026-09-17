@@ -51,6 +51,17 @@
    "n": 17777,
    "source_set": "bhs",
    "status": "OK"
+  },
+  {
+   "annexure_share_pct": 16.5,
+   "enrichment": 0.3307911829319413,
+   "enrichment_fmt": "0.33x",
+   "in_annexure": 1001,
+   "in_main": 93778,
+   "main_share_pct": 49.9,
+   "n": 106082,
+   "source_set": "pwg",
+   "status": "OK"
   }
  ],
  "matrix_dicts": [
@@ -121,6 +132,21 @@
    "share_pwg_pct": 26.9,
    "share_pwkvn_pct": 9.0,
    "source_set": "bhs"
+  },
+  {
+   "n_in_bhs": 4780,
+   "n_in_mw": 94779,
+   "n_in_mw72": 35000,
+   "n_in_pw": 99455,
+   "n_in_pwg": 106082,
+   "n_in_pwkvn": 4041,
+   "share_bhs_pct": 4.5,
+   "share_mw72_pct": 33.0,
+   "share_mw_pct": 89.3,
+   "share_pw_pct": 93.8,
+   "share_pwg_pct": 100.0,
+   "share_pwkvn_pct": 3.8,
+   "source_set": "pwg"
   }
  ],
  "orig": "/Users/mac/Documents/GitHub/csl-orig/v02",

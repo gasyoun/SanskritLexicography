@@ -1,0 +1,44 @@
+{
+ "annexure_tag": "<info n=\"sup\"/>",
+ "conventions": [
+  "C1 k1-only",
+  "C2 annexure = tag-bearing k1",
+  "C3 main = k1_all - annexure (proper partition)",
+  "C4 enrichment = annex_share/main_share",
+  "C5 sup hw = k2.lstrip('*') or k1"
+ ],
+ "enrichment_rows": [
+  {
+   "annexure_share_pct": 16.5,
+   "enrichment": 0.3307911829319413,
+   "enrichment_fmt": "0.33x",
+   "in_annexure": 1001,
+   "in_main": 93778,
+   "main_share_pct": 49.9,
+   "n": 106082,
+   "source_set": "pwg",
+   "status": "OK"
+  }
+ ],
+ "matrix_dicts": [
+  "mw",
+  "pwg"
+ ],
+ "matrix_rows": [
+  {
+   "n_in_mw": 94779,
+   "n_in_pwg": 106082,
+   "share_mw_pct": 89.3,
+   "share_pwg_pct": 100.0,
+   "source_set": "pwg"
+  }
+ ],
+ "orig": "/Users/mac/Documents/GitHub/csl-orig/v02",
+ "target": "mw",
+ "target_counts": {
+  "annexure": 6067,
+  "k1_all": 194083,
+  "main": 188016
+ },
+ "tool": "enrichment_compare.py"
+}
