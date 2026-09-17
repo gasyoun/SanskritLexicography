@@ -1,11 +1,25 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 21-07-2026_
+_Created: 07-07-2026 · Last updated: 17-09-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 17-09-2026 (H5050, MG rulings 17-09-2026)
+
+- **Ch. 12 §3.5 "The unabsorbed residual" (prose) + new Appendix A with the census tables.**
+  §3.5 folds the MW-unabsorbed census into the inheritance part of the chapter as the negative
+  space of §3.3 — the 571 volume-7 homonym-extensions plus the ruled class list (8,406 new ·
+  4,112 never-seen · 27 dropped · 610 variant/fold-twin · 2,743 starred residue), with the
+  498–626 numbering caveat and the Cologne-digitization provenance clause. The ALL-LAYERS and
+  POS-CLASS tables live in
+  [appendix/appendix_A_mw_unabsorbed_census.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/appendix/appendix_A_mw_unabsorbed_census.md)
+  (the chapter keeps its prose; appendix to be renumbered into the unified method appendix at
+  freeze), cited from §3.5 and registered in BOOK_PLAN §6. §7 Reproducibility links the census
+  builder `mw_unabsorbed_census.py`. Frozen numbers, verifier-PASSed 16-09-2026 — no census
+  re-run.
 
 ## [1.0.0] - 2026-08-24
 
