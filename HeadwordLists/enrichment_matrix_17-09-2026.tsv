@@ -1,0 +1,5 @@
+source_set	n_in_mw72	n_in_pw	n_in_pwg	n_in_bhs	n_in_mw	n_in_pwkvn	share_mw72_pct	share_pw_pct	share_pwg_pct	share_bhs_pct	share_mw_pct	share_pwkvn_pct
+pw:sup_7	2892	13086	3855	1549	8955	13085	22.1	99.9	29.4	11.8	68.4	99.9
+pw:sup	3013	14392	3990	1582	9615	14391	20.9	99.9	27.7	11.0	66.8	99.9
+pwkvn	3036	14973	4041	1605	9758	14995	20.2	99.9	26.9	10.7	65.1	100.0
+bhs	3036	6089	4780	17777	6541	1605	17.1	34.3	26.9	100.0	36.8	9.0
