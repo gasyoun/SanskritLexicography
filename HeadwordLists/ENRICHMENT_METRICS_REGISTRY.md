@@ -24,8 +24,9 @@ Tolerance for reproduction: **±0.01× absolute** against the published 2-dp fig
 | 17-09-2026 | pw `sup_1`…`sup_7` all layers (1879–1889) | mw (MW99) | 14,401 | 1,956 (32.2 %) | 7,659 (4.1 %) | **7.91×** | [`enrichment_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_compare.py) | 15-09-2026 report §2 | two-tier PASS 17-09-2026 (§4) |
 | 17-09-2026 | `pwkvn` standalone Nachträge digitization | mw (MW99) | 14,995 | 1,971 (32.5 %) | 7,787 (4.1 %) | **7.84×** | [`enrichment_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_compare.py) | 15-09-2026 report §2 (7.84× first in the 14-09 recheck) | two-tier PASS 17-09-2026 (§4) |
 | 17-09-2026 | `bhs` Edgerton (1953), k1-only | mw (MW99) | 17,777 | 413 (6.8 %) | 6,128 (3.3 %) | **2.09×** | [`enrichment_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_compare.py) | 15-09-2026 report §2/§6 | two-tier PASS 17-09-2026 (§4) |
+| 17-09-2026 | `pwg` Böhtlingk-Roth great PW, 1855–1875, k1-only | mw (MW99) | 106,082 | 1,001 (16.5 %) | 93,778 (49.9 %) | **0.33×** | [`enrichment_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_compare.py) | [`PWG_MW99_ENRICHMENT_17-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/PWG_MW99_ENRICHMENT_17-09-2026.md) §2 (H5058) | probe + DeepSeek 17-09-2026 (report §5) |
 
-Machine-readable: [`enrichment_metrics_registry_17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_metrics_registry_17-09-2026.tsv) + `.json` (full-precision enrichment, conventions echo). Cross-read of the four rows unchanged since 15-09: the MW99 annexure is ~7.8× enriched for PW-Nachträge vocabulary vs ~2.1× for Edgerton BHS — ~3.7× more PW-flavoured than BHS-flavoured, the quantitative form of Andhrabharati's annexure-draws-on-Nachträge postulate.
+Machine-readable: [`enrichment_metrics_registry_17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_metrics_registry_17-09-2026.tsv) + `.json` (full-precision enrichment, conventions echo). Cross-read of the four rows unchanged since 15-09: the MW99 annexure is ~7.8× enriched for PW-Nachträge vocabulary vs ~2.1× for Edgerton BHS — ~3.7× more PW-flavoured than BHS-flavoured, the quantitative form of Andhrabharati's annexure-draws-on-Nachträge postulate. H5058 adds the pwg half: **the great-PW core DEPLETES in the annexure at 0.33×** while occupying 49.9 % of MW99 main — PW-influence on MW99 splits by genre, core absorption into main vs annexure supplement-genre enrichment (Nachträge 7.79–7.91×); shares are set-overlap signatures, not causation (MW99 1899 postdates pwg 1875).
 
 ## 2 · SxD coverage matrix (17-09-2026 run)
 
@@ -37,6 +38,7 @@ Share of S present in each dictionary's k1 set (MW99 split into annexure/main in
 | pw:sup (n=14,401) | 20.9 % | 99.9 % | 27.7 % | 11.0 % | 66.8 % | 99.9 % |
 | pwkvn (n=14,995) | 20.2 % | 99.9 % | 26.9 % | 10.7 % | 65.1 % | 100.0 % |
 | bhs (n=17,777) | 17.1 % | 34.3 % | 26.9 % | 100.0 % | 36.8 % | 9.0 % |
+| pwg (n=106,082) | 33.0 % | 93.8 % | 100.0 % | 4.5 % | 89.3 % | 3.8 % |
 
 Sanity anchors vs the 15-09 report: `sup_7` ∩ MW72 = 2,892 (22 %) and ∩ MW99 = 8,955 (68 %) — both match §3 of the published uptake table.
 
@@ -45,7 +47,7 @@ Sanity anchors vs the 15-09 report: `sup_7` ∩ MW72 = 2,892 (22 %) and ∩ MW99
 ```sh
 python3 HeadwordLists/enrichment_compare.py --selftest
 python3 HeadwordLists/enrichment_compare.py --target mw \
-  --source pw:sup_7 --source pw:sup --source pwkvn --source bhs \
+  --source pw:sup_7 --source pw:sup --source pwkvn --source bhs --source pwg \
   --matrix-dict mw72 --matrix-dict pw --matrix-dict pwg \
   --tsv HeadwordLists/enrichment_metrics_registry_17-09-2026.tsv \
   --matrix-tsv HeadwordLists/enrichment_matrix_17-09-2026.tsv \
