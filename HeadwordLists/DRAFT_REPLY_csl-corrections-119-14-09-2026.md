@@ -1,11 +1,15 @@
 # DRAFT reply — csl-corrections#119 (MW annexure vs PW/PWK Nachtraege)
 
-_Created: 14-09-2026 · Last updated: 15-09-2026_
+_Created: 14-09-2026 · Last updated: 16-09-2026_
 
 **Status: POSTED 15-09-2026** —
 <https://github.com/sanskrit-lexicon/csl-corrections/issues/119#issuecomment-5676473420>
 (posted by gasyoun; MG ruling 15-09-2026 «Да, постить сейчас», H4883. The text
 below the fold is the comment verbatim.)
+
+**Signature replaced 16-09-2026** — MG's final form is
+`Dr. Mārcis Gasūns (draft prepared with a little help from my Chinese friend)`;
+it now stands in both the live comment and the verbatim text below.
 
 Posting account: gasyoun. Comment text below the fold.
 
@@ -70,4 +74,4 @@ into a machine-usable proposal list (SLP1 + IAST + gloss + sources per entry).
 
 ---
 
-_Gasūns (draft prepared with AI assistance, per repo convention)_
+_Gasūns (draft prepared with a little help from my Chinese friend)_
