@@ -1377,6 +1377,9 @@ def find_browser():
     for cand in (r"C:\Program Files\Google\Chrome\Application\chrome.exe",
                  r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
                  r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+                 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+                 "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+                 "/Applications/Chromium.app/Contents/MacOS/Chromium",
                  "chrome", "msedge", "chromium", "google-chrome"):
         exe = cand if Path(cand).exists() else shutil.which(cand)
         if exe:
@@ -1397,6 +1400,305 @@ def export_pdf(html_path):
         check=True, capture_output=True)
     print(f"wrote {pdf_path.name} ({pdf_path.stat().st_size // 1024} KB)")
     return pdf_path
+
+
+# ═══════════════════════════════════════ H4523 scrollytelling tour layer ═══
+# --scrolly re-emits the two committed exemplars (build_pwg / build_mw) as a
+# 5-beat guided tour. One source, no forked template: the SAME rendered sheet
+# and the SAME callout set are wrapped into beat containers; scrolly_tours.json
+# assigns each callout to a beat (target-substring rule, first match wins) and
+# configures the injected beats 4 (digital <L> record) and 5 (PWG<->MW).
+# No-JS / prefers-reduced-motion / print all fall back to the full static
+# sheet (callouts at full opacity), so the print contract is untouched.
+
+SCROLLY_CSS = """
+:root { --scaccent:#005a87; --scaccent2:#00344e; --scmuted:#555; --scrule:#bbb;
+        --scsheet:#fbf9f4; --scbox:#e9f4fa; }
+html { scroll-behavior:smooth; }
+.tourhint { font:12.5px/1.5 'Segoe UI', Arial, sans-serif; color:#555;
+            max-width:1100px; margin:8px 0 0; }
+.progress { position:fixed; top:0; left:0; height:3px; width:0;
+            background:var(--scaccent); z-index:30; transition:width .15s linear; }
+.scroll-runway { height:80vh; }
+.beat-rail { position:fixed; right:18px; top:50%; transform:translateY(-50%);
+             z-index:29; display:flex; flex-direction:column; gap:10px; }
+.beatdot { width:34px; height:34px; border-radius:50%; border:1.5px solid var(--scrule);
+           background:var(--scsheet); color:var(--scmuted);
+           font:600 14px/31px 'Segoe UI', Arial, sans-serif; text-align:center;
+           text-decoration:none; transition:background .2s, color .2s; }
+.beatdot:hover { border-color:var(--scaccent); color:var(--scaccent); }
+.beatdot.on { background:var(--scaccent); border-color:var(--scaccent); color:#fff; }
+.tourbeat { margin-top:34px; padding-top:20px; border-top:2.5px solid var(--scaccent); }
+.beathead { display:flex; gap:14px; align-items:baseline; max-width:1100px; }
+.beatno { flex:none; width:32px; height:32px; border-radius:50%;
+          background:var(--scaccent); color:#fff; text-align:center;
+          font:700 15px/32px 'Segoe UI', Arial, sans-serif; }
+.beathead h2 { font:700 19px/1.25 'Segoe UI', Arial, sans-serif;
+               color:var(--scaccent2); margin:0; }
+.beathead p { font:13px/1.5 'Segoe UI', Arial, sans-serif; color:var(--scmuted);
+              margin:4px 0 0; }
+.rawgrid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:16px; }
+.rawgrid pre.raw { margin:0; }
+.twinrow { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:16px; }
+.excol .entry { font-size:12.8px; }
+.beatnote { font:12px/1.5 'Segoe UI', Arial, sans-serif; color:var(--scmuted);
+            margin-top:12px; }
+.beatnote a { color:var(--scaccent); }
+body[data-beat] .callout { opacity:.16; transition:opacity .3s; }
+body[data-beat="1"] .callout { opacity:.10; }
+body[data-beat="2"] .callout.beat2,
+body[data-beat="3"] .callout.beat3 { opacity:1; }
+.callout.now { outline:2.5px solid var(--scaccent); outline-offset:3px;
+               border-radius:3px; }
+@media (max-width:1100px) {
+  .beat-rail { right:6px; gap:6px; }
+  .beatdot { width:26px; height:26px; font:600 11px/23px 'Segoe UI', Arial, sans-serif; }
+  .rawgrid, .twinrow { grid-template-columns:1fr; }
+}
+@media print {
+  html { scroll-behavior:auto; }
+  .beat-rail, .progress, .tourhint { display:none !important; }
+  .scroll-runway { display:none !important; }
+  body[data-beat] .callout, body[data-beat="1"] .callout { opacity:1 !important; }
+  .callout.now { outline:none; }
+  .tourbeat { break-inside:avoid; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  * { transition:none !important; animation:none !important; }
+}
+"""
+
+SCROLLY_JS = """
+(function () {
+  var tour = window.__TOUR; if (!tour || !tour.beats) return;
+  var REDUCE = window.matchMedia &&
+      matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var beats = tour.beats;
+  var groups = {};
+  beats.forEach(function (b) { if (b.match) groups[b.n] = []; });
+  // 1. assign every callout to its beat (target-substring, first match wins;
+  //    test_scrolly.py replicates this rule statically)
+  document.querySelectorAll('.callout').forEach(function (c) {
+    var t = c.getAttribute('data-target') || '';
+    for (var i = 0; i < beats.length; i++) {
+      var b = beats[i];
+      if (!b.match) continue;
+      for (var j = 0; j < b.match.length; j++) {
+        if (t.indexOf(b.match[j]) !== -1) {
+          c.setAttribute('data-step', b.n);
+          c.classList.add('beat' + b.n);
+          groups[b.n].push(c);
+          return;
+        }
+      }
+    }
+  });
+  // 2. beat rail + progress bar
+  var rail = document.createElement('nav');
+  rail.className = 'beat-rail'; rail.setAttribute('aria-label', 'beats');
+  beats.forEach(function (b) {
+    var a = document.createElement('a');
+    a.className = 'beatdot'; a.setAttribute('data-n', b.n);
+    a.setAttribute('href', '#beat' + b.n);
+    var d = document.createElement('div'); d.innerHTML = b.title;
+    a.title = b.n + '. ' + d.textContent;
+    a.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      pin = b.n;
+      clearTimeout(pinT);
+      pinT = setTimeout(function () { pin = null; }, 1400);
+      var top = beatY(b.n);
+      if (b.n <= 3) top -= window.innerHeight * 0.45;
+      window.scrollTo({ top: Math.max(0, top),
+                        behavior: REDUCE ? 'auto' : 'smooth' });
+    });
+    rail.appendChild(a);
+  });
+  document.body.appendChild(rail);
+  var bar = document.createElement('div'); bar.className = 'progress';
+  document.body.appendChild(bar);
+  // scroll runway: lets the last tour sections reach the top of the viewport
+  var runway = document.createElement('div'); runway.className = 'scroll-runway';
+  document.body.appendChild(runway);
+  // 3. scroll-sync the active beat. Beats 2-3 are anchored to fractions of
+  //    the board's vertical span (their callout labels cluster at the top of
+  //    the board); beats 4-5 to the injected sections. A rail click pins its
+  //    beat until the smooth scroll settles; at the very end of the document
+  //    the last sections engage by a top-of-viewport rule so they stay
+  //    reachable even when the page cannot scroll further.
+  var pin = null, pinT = null;
+  var board = document.querySelector('.board');
+  function beatY(n) {
+    if (n !== 1 && board) {
+      var r = board.getBoundingClientRect();
+      var span = Math.max(0, r.height - window.innerHeight * 0.5);
+      var top = r.top + window.pageYOffset;
+      if (n === 2)
+        return Math.max(window.innerHeight * 0.55, top + 0.30 * span);
+      if (n === 3)
+        return Math.max(beatY(2) + window.innerHeight * 0.30,
+                        top + 0.62 * span);
+    }
+    var el = document.getElementById('beat' + n);
+    return el ? el.getBoundingClientRect().top + window.pageYOffset : 0;
+  }
+  function anchors() {           // fresh every sync — layout() resizes the board
+    return beats.map(function (b) {
+      return { n: b.n, y: beatY(b.n) };
+    });
+  }
+  function sync() {
+    var doc = document.documentElement;
+    var pts = anchors();
+    var y = window.pageYOffset;
+    var vh = window.innerHeight;
+    var maxScroll = Math.max(0, doc.scrollHeight - vh);
+    var mid = y + vh * 0.45;
+    var cur = 1;
+    for (var i = 0; i < pts.length; i++) if (pts[i].y <= mid) cur = pts[i].n;
+    if (y >= maxScroll - 4) {    // end of document: keep beats 4-5 reachable
+      for (i = 0; i < pts.length; i++)
+        if (pts[i].y <= y + vh * 0.05) cur = pts[i].n;
+    }
+    if (pin != null) cur = pin;
+    if (document.body.getAttribute('data-beat') !== String(cur)) {
+      document.body.setAttribute('data-beat', cur);
+      document.querySelectorAll('.beatdot').forEach(function (dot) {
+        dot.classList.toggle('on',
+            +(dot.getAttribute('data-n')) === cur);
+      });
+    }
+    var frac = y / Math.max(1, maxScroll);
+    bar.style.width = (100 * Math.min(1, Math.max(0, frac))) + '%';
+  }
+  window.addEventListener('scroll', sync, { passive: true });
+  window.addEventListener('resize', sync);
+  // 4. sequential emphasis: the in-beat callout nearest the viewport centre
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var c = e.target;
+        var cur = document.body.getAttribute('data-beat');
+        if (c.getAttribute('data-step') === cur) {
+          document.querySelectorAll('.callout.now').forEach(function (x) {
+            x.classList.remove('now');
+          });
+          c.classList.add('now');
+        }
+      });
+    }, { rootMargin: '-40% 0px -40% 0px' });
+    document.querySelectorAll('.callout').forEach(function (c) { io.observe(c); });
+  }
+  if (document.fonts && document.fonts.ready)
+    document.fonts.ready.then(function () { setTimeout(sync, 400); });
+  else window.addEventListener('load', function () { setTimeout(sync, 400); });
+  sync();
+})();
+"""
+
+
+def load_tour_config(path=None):
+    p = Path(path) if path else HERE / "scrolly_tours.json"
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+def raw_record_text(recs, L):
+    """The literal <L>...<LEND> record text (same shape build_generic shows)."""
+    hdr, body = recs[L]
+    return f"<L>{L}<pc>{hdr}\n{body}\n<LEND>"
+
+
+def _beat_head(n, title, text):
+    return (f'<div class="beathead"><span class="beatno">{n}</span>'
+            f"<h2>{title}</h2><p>{text}</p></div>")
+
+
+def scrolly_sections(tour, pwg, mw):
+    """Beats 4-5, injected inside the sheet before the footer: the digital
+    <L> record of the featured headword (raw vs rendered, same pipeline) and
+    the sibling dictionary's excerpt of the same lemma family."""
+    digital = tour["digital"]
+    recs = pwg if digital["dict"] == "pwg" else mw
+    if digital["dict"] == "pwg":
+        rendered = pwg_paragraph(recs, digital["record"])
+    else:
+        rendered = mw_paragraph(recs, [digital["record"]])
+    raw = raw_highlight(raw_record_text(recs, digital["record"]))
+    beat4 = ('<section class="tourbeat" id="beat4">'
+             + _beat_head(4, tour["beats"][3]["title"],
+                          tour["beats"][3]["text"])
+             + '<div class="rawgrid">'
+             + f'<pre class="raw">{raw}</pre>'
+             + '<div class="rendered"><div class="rlabel">renders as</div>'
+             + f"{rendered}</div></div>"
+             + '<p class="beatnote">Полная анатомия цифровой записи: '
+             '<a href="cdsl-record-anatomy.html">cdsl-record-anatomy.html'
+             "</a>.</p></section>")
+
+    sib = tour["sibling"]
+    cols = []
+    for c in sib["columns"]:
+        r2 = pwg if c["dict"] == "pwg" else mw
+        body = (pwg_paragraph(r2, c["records"][0]) if c["dict"] == "pwg"
+                else mw_paragraph(r2, c["records"]))
+        cols.append(f'<div class="excol"><div class="colcap">'
+                    f'{esc(c["cap"])}</div>{body}</div>')
+    beat5 = ('<section class="tourbeat" id="beat5">'
+             + _beat_head(5, tour["beats"][4]["title"],
+                          tour["beats"][4]["text"])
+             + '<div class="twinrow">' + "".join(cols) + "</div>"
+             + f'<p class="beatnote">Продолжение экскурсии: '
+             f'<a href="{sib["stem"]}.html">{sib["title"]}</a>.</p></section>')
+    return beat4 + beat5
+
+
+def scrolly_wrap(page_html, tour, extra_sections):
+    """Wrap a fully rendered exemplar page into the 5-beat tour shell.
+    Additive only: the classic layout, callout JS and print CSS stay as-is."""
+    page_html = page_html.replace(
+        '<meta charset="utf-8">',
+        '<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
+        1)
+    page_html = page_html.replace("<header>", '<header id="beat1">', 1)
+    page_html = page_html.replace(
+        "</header>", '</header><div class="tourhint">' + tour["hint"] + "</div>",
+        1)
+    page_html = page_html.replace(
+        "</style>", SCROLLY_CSS + GENERIC_EXTRA_CSS + "</style>", 1)
+    page_html = page_html.replace("<footer>", extra_sections + "<footer>", 1)
+    tour_js = ("window.__TOUR = "
+               + json.dumps(tour, ensure_ascii=False) + ";")
+    page_html = page_html.replace(
+        "</body>",
+        "<script>" + tour_js + "</script>\n<script>" + SCROLLY_JS
+        + "</script>\n</body>", 1)
+    return page_html
+
+
+def build_scrolly(out_dir=None, tour_path=None, want_pdf=True):
+    """--scrolly: the two committed exemplars as 5-beat guided tours
+    (pwg-entry-anatomy-scrolly.html / mw-entry-anatomy-scrolly.html)."""
+    tours = load_tour_config(tour_path)["tours"]
+    pwg = load_records(PWG_TXT)
+    mw = load_records(MW_TXT)
+    out_dir = Path(out_dir) if out_dir else HERE
+    out_dir.mkdir(parents=True, exist_ok=True)
+    paths = []
+    for stem, base_html in (("pwg-entry-anatomy", build_pwg(pwg)),
+                            ("mw-entry-anatomy", build_mw(mw))):
+        tour = tours[stem]
+        page_html = scrolly_wrap(base_html, tour,
+                                 scrolly_sections(tour, pwg, mw))
+        path = out_dir / f"{stem}-scrolly.html"
+        path.write_text(page_html, encoding="utf-8")
+        print(f"wrote {path.name} ({len(page_html) // 1024} KB)")
+        paths.append(path)
+        if want_pdf:
+            export_pdf(path)
+    return paths
 
 
 # ==================================================================== main
@@ -1423,8 +1725,14 @@ def main(argv=None):
                       help="re-typeset a csl-orig headword (k1, SLP1)")
     mode.add_argument("--image", metavar="PATH",
                       help="annotate a picture or PDF page")
+    mode.add_argument("--scrolly", action="store_true",
+                      help="emit the 5-beat scrollytelling tour for the two "
+                           "committed exemplars (H4523)")
     ap.add_argument("--callouts", metavar="SPEC",
                     help="JSON/TSV callout spec (side, target, note)")
+    ap.add_argument("--tour", metavar="JSON",
+                    help="scrolly tour config (default: scrolly_tours.json "
+                         "beside the script)")
     ap.add_argument("--facsimile", metavar="IMG",
                     help="markup mode: print-inset image "
                          "(default: auto-pull from the Cologne scan server)")
@@ -1441,6 +1749,11 @@ def main(argv=None):
     ap.add_argument("--web", action="store_true",
                     help="emit the interactive HTML (default: both outputs)")
     args = ap.parse_args(argv)
+
+    if args.scrolly:
+        want_pdf = args.pdf or not args.web    # default: both
+        build_scrolly(args.out, args.tour, want_pdf)
+        return
 
     if not args.markup and not args.image:
         build_legacy()
