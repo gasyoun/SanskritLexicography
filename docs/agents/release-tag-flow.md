@@ -37,6 +37,8 @@ cut, and nothing ever tags it. `--verify-releases` is the backstop, not the plan
 `git tag -f` a published tag** to repair drift — tag the right commit under the right
 number, or annotate the heading, as the 09-09-2026 backfill did.
 
+**Worked example of the mirror class (18-09-2026, 0DI):** `v1.144.168`/`v1.144.169` were cut+released from branch heads (H4527/#2186, H4528–H4209/#2202) with no master section ever landing; both annotated in-place in `CHANGELOG.md` between 170 and 167, numbers ledgered as consumed, tags and releases left standing.
+
 The convention the backfill followed, and the one to keep: **`vX.Y.Z` points at the commit
 that introduced `## [X.Y.Z]`.** Bare unprefixed tags (`1.144.6`, `1.144.7`, `1.144.84`) exist
 from an older habit and are invisible to the census, which reads `refs/tags/vX.Y.Z` only.
