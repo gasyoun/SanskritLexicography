@@ -100,6 +100,31 @@ The page JS measures the laid-out sheet and injects a matching `@page` size,
 so the PDF is a single sheet regardless of content height (serve the HTML over
 HTTP or open from disk; both work for printing).
 
+## Scrollytelling tour (H4523)
+
+```
+python build_entry_anatomy.py --scrolly
+```
+
+re-emits the two committed exemplars as 5-beat guided tours:
+`pwg-entry-anatomy-scrolly.html`, `mw-entry-anatomy-scrolly.html`
+(entry → form → sense/citation → digital `<L>` record → PWG↔MW comparison).
+One source, no forked template: the same rendered sheet and callout set are
+wrapped into beat containers; [scrolly_tours.json](scrolly_tours.json) assigns
+each callout to a beat (target-substring, first match wins) and configures the
+injected beats 4–5. Vanilla JS only (IntersectionObserver, sticky-free rail);
+no-JS, `prefers-reduced-motion` and print all fall back to the full static
+sheet at full opacity — the print contract is untouched (legacy HTML
+byte-identical on rebuild, single-sheet PDFs).
+
+Tests: `python3 test_scrolly.py` — shell, self-containment, callout-target
+integrity (a static CSS-subset resolver replicating the hide criterion of the
+layout JS), beat assignment, fallbacks. Verification evidence
+(callout counts, PDF page counts, desktop/mobile screenshots, host +
+publish-safety verdicts): [reports/H4523_scrolly_verification.json](reports/H4523_scrolly_verification.json).
+Storyboard: [STORYBOARD_entry-anatomy-scrolly_10.09.26.md](STORYBOARD_entry-anatomy-scrolly_10.09.26.md)
+(MG-approved 14-09-2026).
+
 ## Provenance
 
 Entries: PWG L 117557–117563 (heman cluster), L 25758 (√cumb); MW L

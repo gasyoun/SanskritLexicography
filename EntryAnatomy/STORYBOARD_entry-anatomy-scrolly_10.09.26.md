@@ -1,12 +1,12 @@
 # Storyboard — EntryAnatomy scrollytelling tour «Как читать словарную статью»
 
-_Created: 10-09-2026 · Last updated: 10-09-2026_
+_Created: 10-09-2026 · Last updated: 18-09-2026_
 
 **Source of truth:** [EntryAnatomy/](https://github.com/gasyoun/SanskritLexicography/tree/master/EntryAnatomy) —
 `build_entry_anatomy.py` emits self-contained HTML + print PDF from one callout set
 ([README](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/README.md)) ·
 **Template:** [SCROLLYTELLING_STORYBOARD_TEMPLATE.md](https://github.com/gasyoun/Uprava/blob/main/docs/SCROLLYTELLING_STORYBOARD_TEMPLATE.md)
-**Status:** awaiting MG read. Host decision (Docusaurus guide page vs standalone HTML) recorded in the build handoff.
+**Status:** MG-approved 14-09-2026 (виза в чате). Built 18-09-2026 (H4523, OxAlpha (opencode/z-ai/glm-5.3-flash)): `--scrolly` emission path, host decision = standalone self-contained HTML in EntryAnatomy/ (csl-guides embedding possible later), analytics unmeasured — accepted; evidence in [reports/H4523_scrolly_verification.json](reports/H4523_scrolly_verification.json).
 
 ## Goal
 
