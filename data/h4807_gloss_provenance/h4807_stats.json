@@ -132,5 +132,8 @@
  },
  "sample_rows": 50,
  "sample_revalidated": 50,
- "sample_d3": []
+ "sample_d3": [],
+ "pages_total": 255348,
+ "pages_with_skt_dict": 255267,
+ "pages_no_skt_dict": 81
 }
