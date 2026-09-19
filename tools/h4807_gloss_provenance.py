@@ -187,6 +187,9 @@ def main():
         "h4807_gloss_provenance"))
     ap.add_argument("--limit", type=int, default=0, help="smoke-run cap")
     ap.add_argument("--sample", type=int, default=50)
+    ap.add_argument("--sweep-stats", default="",
+                    help="h4807_msi_extract.py stats.json (carries pages_total) "
+                         "to merge for the L8 reconciliation figure")
     args = ap.parse_args()
     os.makedirs(args.outdir, exist_ok=True)
 
@@ -286,6 +289,12 @@ def main():
         "sample_revalidated": reval,
         "sample_d3": [[a, b, c] for a, b, c in d3],
     }
+    if args.sweep_stats:
+        with open(args.sweep_stats, encoding="utf-8") as f:
+            sweep = json.load(f)
+        for k in ("pages_total", "pages_with_skt_dict", "pages_no_skt_dict"):
+            if k in sweep:
+                stats[k] = sweep[k]
     with open(os.path.join(args.outdir, "h4807_stats.json"), "w",
               encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=1)
