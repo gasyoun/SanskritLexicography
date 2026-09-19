@@ -1,0 +1,31 @@
+{
+  "handoff": "H4796",
+  "purpose": "corpus-attested Russian (SanskritRussian / sa-ru-glossary lemma layer) as the THIRD reference of the kosha definition-generation eval; three-way census with the EN MW baseline and the H2408 Heritage FR second reference",
+  "census": {
+    "frozen_sample": 500,
+    "fr_overlap": 333,
+    "ru_overlap": 384,
+    "all_three": 287,
+    "skipped_no_fr": 97,
+    "skipped_no_ru": 116
+  },
+  "cells": {
+    "high/mono": 51,
+    "high/poly2_4": 47,
+    "high/poly5p": 48,
+    "low/mono": 6,
+    "low/poly2_4": 13,
+    "low/poly5p": 16,
+    "mid/mono": 30,
+    "mid/poly2_4": 33,
+    "mid/poly5p": 43
+  },
+  "ru_reference_construction": "top 5 distinct renderings by corpus count n, '; '-joined",
+  "rights": "Heritage gloss_fr (LGPLLR) and sa-ru-glossary RU renderings (corpus-derived, tier=restricted) are read at runtime from the local siblings and NEVER copied here: sha256 + word counts pin the joins instead (H2408 contract).",
+  "inputs": {
+    "kosha/frozen_sample.tsv": "a259df13ac9ca3a778eb221a29c11f6505622c21278bff1d767ca84886aacffc",
+    "kosha/heritage/heritage_ref_subset.tsv": "6bd1e772d7e4a142e15e15f6abe6d65d606d29777a931c9b9e478bf2cbe0b33e",
+    "HeadwordLists/heritage_dico_gloss.tsv": "f2ef842b8a6376da23806ed40ecd607e8827f1ddfde296e4d4ccbd700afcf5e8",
+    "SanskritRussian/lemma_glossary.tsv": "eb0ca16e901e2badeb524d565d19b6ea2faab57f3993a63957c07ffdb7ee165c"
+  }
+}
