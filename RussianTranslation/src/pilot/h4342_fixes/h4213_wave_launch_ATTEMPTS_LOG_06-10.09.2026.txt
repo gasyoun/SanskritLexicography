@@ -1,0 +1,147 @@
+[19:15:00] === h4213 wave launch start ===
+[19:15:26] probe: 
+[19:15:26] probe GO - c1 validated
+[19:15:26] stale leases dropped
+[19:15:32] canary prep: merged pilot: 1 key(s), 1 to generate
+ |   arvant     NO-PWG Ú∆“ 2 supplement sub-card(s) [nws/pw] Ú∆“ arvant~~h0_zz_*.raw.txt
+ | wrote 0 merged pilot inputs Ú∆“ C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input
+ |   NO-PWG: 1 PWG-missing headword(s) rendered as 2 supplement-chain sub-card(s) (run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)
+ | preparing h4213can02: 1 headword(s)
+ | python.exe : FAIL: headless window id already exists: h4213can02
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:18 ÁÌ‡Í:6
+ | + $o = & $PY no_pwg_scale_plan.py --headless --headwords 1 --window-siz ...
+ | +      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (FAIL: headless ...sts: h4213can02:String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[19:15:32] STOP: canary prep failed
+[03:13:19] === h4213 wave launch start ===
+[03:13:39] probe: 
+[03:13:39] probe GO - c1 validated
+[03:13:39] stale leases dropped
+[03:13:48] canary prep: merged pilot: 1 key(s), 1 to generate
+ |   arvant     NO-PWG Ú∆“ 2 supplement sub-card(s) [nws/pw] Ú∆“ arvant~~h0_zz_*.raw.txt
+ | wrote 0 merged pilot inputs Ú∆“ C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input
+ |   NO-PWG: 1 PWG-missing headword(s) rendered as 2 supplement-chain sub-card(s) (run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)
+ |   tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) Ú¿‘ no source-SHA matches (all cards will translate)
+ |   selfheal: arvant~~h0_zz_nws00 has no fallback (card does not split Ú¿‘ <2 fragments)
+ |   fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+ |   lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can02\execution_manifest.h4213can02.json | execution manifest pwg.headless_execution_manifest.v2
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can02\run_pilot_wf.h4213can02.js 93762 bytes | 1 cards in 1 batches (sizes [1] ) | mode NOMINAL
+ | preparing h4213can02: 1 headword(s)
+ | wrote output\h4213_canary_plan.json
+ | remaining headwords: 1 | windows: 1 | prepared: 1
+ | next prepared window: h4213can02 (queue) 1 headword(s)
+[03:14:05] canary run: python.exe : fleet probe STOP on account c1: warm-up probe content -> STOP (auth/model/output/rate-limit/timeout)
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:22 ÁÌ‡Í:6
+ | + $o = & $PY max_account_orchestrator.py --db max_orchestrator.sqlite s ...
+ | +      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (fleet probe STO...-limit/timeout):String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[03:14:05] STOP: no canary wf_output at src/pilot/output/wf_output.h4213can02.json
+[03:14:19] === h4213 wave launch start ===
+[03:14:37] probe: 
+[03:14:37] probe GO - c1 validated
+[03:14:37] stale leases dropped
+[03:14:46] canary prep: merged pilot: 1 key(s), 1 to generate
+ |   arvant     NO-PWG Ú∆“ 2 supplement sub-card(s) [nws/pw] Ú∆“ arvant~~h0_zz_*.raw.txt
+ | wrote 0 merged pilot inputs Ú∆“ C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input
+ |   NO-PWG: 1 PWG-missing headword(s) rendered as 2 supplement-chain sub-card(s) (run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)
+ | preparing h4213can02: 1 headword(s)
+ | python.exe : FAIL: headless window id already exists: h4213can02
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:18 ÁÌ‡Í:6
+ | + $o = & $PY no_pwg_scale_plan.py --headless --headwords 1 --window-siz ...
+ | +      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (FAIL: headless ...sts: h4213can02:String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[03:14:46] STOP: canary prep failed
+[16:07:10] === h4213 wave launch start ===
+[16:07:10] canary prefix this attempt: h4213can0908160710
+[16:07:38] probe: 
+[16:07:38] probe GO - c1 validated
+[16:07:38] stale leases dropped
+[16:07:38] orphan artifacts removed
+[16:07:46] canary prep: merged pilot: 1 key(s), 1 to generate
+ |   arvant     NO-PWG Ú∆“ 2 supplement sub-card(s) [nws/pw] Ú∆“ arvant~~h0_zz_*.raw.txt
+ | wrote 0 merged pilot inputs Ú∆“ C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input
+ |   NO-PWG: 1 PWG-missing headword(s) rendered as 2 supplement-chain sub-card(s) (run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)
+ |   tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) Ú¿‘ no source-SHA matches (all cards will translate)
+ |   selfheal: arvant~~h0_zz_nws00 has no fallback (card does not split Ú¿‘ <2 fragments)
+ |   fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+ |   lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can090816071002\execution_manifest.h4213can090816071002.json | execution manifest pwg.headless_execution_manifest.v2
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can090816071002\run_pilot_wf.h4213can090816071002.js 94109 bytes | 1 cards in 1 batches (sizes [1] ) | mode NOMINAL
+ | preparing h4213can090816071002: 1 headword(s)
+ | wrote output\h4213_canary_plan.json
+ | remaining headwords: 1 | windows: 1 | prepared: 1
+ | next prepared window: h4213can090816071002 (queue) 1 headword(s)
+[16:13:07] canary run: python.exe : fleet probe STOP on account c1: measured probe latency 142799 ms is not below 80000 ms health ceiling Ú¿‘ 
+ | honest NO-GO (warm-up already done; no re-roll)
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:39 ÁÌ‡Í:6
+ | + $o = & $PY max_account_orchestrator.py --db max_orchestrator.sqlite s ...
+ | +      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (fleet probe STO...ne; no re-roll):String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[16:13:07] STOP: no canary wf_output at src/pilot/output/wf_output.h4213can090816071002.json
+[20:12:40] === h4213 wave launch start ===
+[20:12:40] canary prefix this attempt: h4213can0908201240
+[10:55:08] === h4213 wave launch start ===
+[10:55:08] canary prefix this attempt: h4213can0909105508
+[10:55:28] probe: 
+[10:55:28] probe GO - c1 validated
+[10:55:28] stale leases dropped
+[10:55:28] orphan artifacts removed
+[10:55:33] canary prep: merged pilot: 1 key(s), 1 to generate
+ |   arvant     NO-PWG Ú∆“ 2 supplement sub-card(s) [nws/pw] Ú∆“ arvant~~h0_zz_*.raw.txt
+ | wrote 0 merged pilot inputs Ú∆“ C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input
+ |   NO-PWG: 1 PWG-missing headword(s) rendered as 2 supplement-chain sub-card(s) (run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)
+ |   tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) Ú¿‘ no source-SHA matches (all cards will translate)
+ |   selfheal: arvant~~h0_zz_nws00 has no fallback (card does not split Ú¿‘ <2 fragments)
+ |   fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+ |   lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can090910550802\execution_manifest.h4213can090910550802.json | execution manifest pwg.headless_execution_manifest.v2
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can090910550802\run_pilot_wf.h4213can090910550802.js 94109 bytes | 1 cards in 1 batches (sizes [1] ) | mode NOMINAL
+ | preparing h4213can090910550802: 1 headword(s)
+ | python.exe : nominal lease keys already active: arvant~~h0_zz_nws00
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:35 ÁÌ‡Í:6
+ | + $o = & $PY no_pwg_scale_plan.py --headless --headwords 1 --window-siz ...
+ | +      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (nominal lease k...nt~~h0_zz_nws00:String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[10:55:33] STOP: canary prep failed
+[11:01:02] === h4213 wave launch start ===
+[11:01:02] canary prefix this attempt: h4213can0909110102
+[11:01:31] probe: 
+[11:01:31] probe GO - c1 validated
+[11:01:31] stale leases dropped
+[11:01:31] orphan artifacts removed
+[11:01:38] canary prep: merged pilot: 1 key(s), 1 to generate
+ |   arvant     NO-PWG Ú∆“ 2 supplement sub-card(s) [nws/pw] Ú∆“ arvant~~h0_zz_*.raw.txt
+ | wrote 0 merged pilot inputs Ú∆“ C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input
+ |   NO-PWG: 1 PWG-missing headword(s) rendered as 2 supplement-chain sub-card(s) (run via gen_opt_harness2.py --nominal --keys=<...~~h0_zz_*>)
+ |   tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) Ú¿‘ no source-SHA matches (all cards will translate)
+ |   selfheal: arvant~~h0_zz_nws00 has no fallback (card does not split Ú¿‘ <2 fragments)
+ |   fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+ |   lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can090911010202\execution_manifest.h4213can090911010202.json | execution manifest pwg.headless_execution_manifest.v2
+ | wrote C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\coordinator\artifacts\h4213can090911010202\run_pilot_wf.h4213can090911010202.js 94109 bytes | 1 cards in 1 batches (sizes [1] ) | mode NOMINAL
+ | preparing h4213can090911010202: 1 headword(s)
+ | wrote output\h4213_canary_plan.json
+ | remaining headwords: 1 | windows: 1 | prepared: 1
+ | next prepared window: h4213can090911010202 (queue) 1 headword(s)
+[11:04:10] canary run: python.exe : fleet probe STOP on account c1: warm-up probe refusal -> STOP (auth/model/output/rate-limit/timeout)
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:39 ÁÌ‡Í:6
+ | + $o = & $PY max_account_orchestrator.py --db max_orchestrator.sqlite s ...
+ | +      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (fleet probe STO...-limit/timeout):String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[11:04:10] STOP: no canary wf_output at src/pilot/output/wf_output.h4213can090911010202.json
+[21:32:10] === h4213 wave launch start ===
+[21:32:10] canary prefix this attempt: h4213can0910213210
+[21:33:12] probe: python.exe : c1: profile validation failed: timeout
+ | C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h4213_wave_launch.ps1:22 ÁÌ‡Í:8
+ | + $out = & $PY max_account_orchestrator.py --db max_orchestrator.sqlite ...
+ | +        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |     + CategoryInfo          : NotSpecified: (c1: profile validation failed: timeout:String) [], RemoteException
+ |     + FullyQualifiedErrorId : NativeCommandError
+[21:33:12] STOP: c1 probe failed (still limited/logout). No spend.
