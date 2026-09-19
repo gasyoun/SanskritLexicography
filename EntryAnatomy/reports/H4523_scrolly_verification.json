@@ -1,0 +1,48 @@
+{
+  "handoff": "H4523",
+  "date": "18-09-2026",
+  "callout_integrity": {
+    "pwg-entry-anatomy": {
+      "callouts": 24,
+      "unresolved": 0
+    },
+    "mw-entry-anatomy": {
+      "callouts": 21,
+      "unresolved": 0
+    }
+  },
+  "test": "python3 EntryAnatomy/test_scrolly.py -> PASS (shell, self-containment, callout integrity, beat assignment, no-JS/print fallbacks)",
+  "live_probe": {
+    "pwg": {
+      "hidden_callouts": 0,
+      "beat_ladder": "1->2->3->4->5 via rail dots, monotonic on scroll-up"
+    },
+    "mw": {
+      "hidden_callouts": 0,
+      "beat_ladder": "1->2->3->4->5 via rail dots"
+    }
+  },
+  "pdf_page_counts": {
+    "pwg-entry-anatomy.pdf": 1,
+    "mw-entry-anatomy.pdf": 1,
+    "pwg-entry-anatomy-scrolly.pdf": 1,
+    "mw-entry-anatomy-scrolly.pdf": 1,
+    "regenerated_legacy_pwg.pdf": 1,
+    "regenerated_legacy_mw.pdf": 1
+  },
+  "print_contract": "legacy HTML byte-identical on rebuild (git diff empty); legacy PDFs regenerate to same page count (1); scrolly pages also print to a single sheet",
+  "screenshots": [
+    "H4523_desktop_mw_beat1.png",
+    "H4523_desktop_mw_beat3.png",
+    "H4523_desktop_mw_beat4.png",
+    "H4523_desktop_pwg_beat1.png",
+    "H4523_desktop_pwg_beat2.png",
+    "H4523_mobile_mw_beat1.png",
+    "H4523_mobile_pwg_beat1.png"
+  ],
+  "host_decision": "standalone self-contained HTML committed in EntryAnatomy/ (candidate later for csl-guides Docusaurus page); analytics: unmeasured - accepted (no tracker on scholar pages)",
+  "publish_safety": {
+    "verdict": "SAFE with restriction",
+    "details": "Cologne scans display-permitted; embedded as data URIs; Duden plate NOT included in the scrolly pages (beat 5 excludes it); no personal data, no secrets; no public hosting performed in this unit"
+  }
+}
