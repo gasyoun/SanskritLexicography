@@ -77,6 +77,13 @@ RESOLVE_FRI_XREF = True
 RU_SOURCES = ['koch', 'kna', 'fri', 'smirnov', 'kow', 'grin12', 'grin3']
 # Non-Russian corroboration lanes (presence-only: present/silent, never a correctness verdict).
 NONRU_LANES = ['apte_hi', 'vedic_rituals_hi', 'kosha_syn', 'meulenbeld', 'corpus']
+# H4119 P1: the verse-aligned Sa-Ru corpus_lexicon as a token-comparable SENSE-support
+# lane (`corpus_lex`), distinct from the presence-only `corpus` lane above — that one
+# answers "an aligned verse exists", this one compares the verse's actual Russian
+# rendering against the sense. OFF by default: switching it on changes `evidence` on
+# ~575 of 11,519 live rows, which is a store rewrite and therefore a promotion
+# decision, not a code default. Measure first with tools/h4119_evidence_probe.py.
+CORPUS_LEX_LANE = False
 # Reserved, not built — see module docstring.
 RESERVED_SOURCES = ['leonov']
 
@@ -207,6 +214,11 @@ def annotate_rows(rows, idx, tally):
     for i, r in enumerate(rows):
         by_key[r.get('key1') or ''].append(i)
 
+    corpus_lex = {}
+    if CORPUS_LEX_LANE:
+        import corpus_lexicon_lane as cll
+        corpus_lex, _lex_stats = cll.load_lane(keys={k for k in by_key if k})
+
     stats = Counter()
     for key1, idxs in sorted(by_key.items()):
         if not key1:
@@ -232,6 +244,12 @@ def annotate_rows(rows, idx, tally):
                     ev.append({'source': code, 'relation': rel, 'gloss_ref': ref, 'match': 'lemma'})
                     ru_supported.add(code)
                     tally[code][rel] += 1
+            if CORPUS_LEX_LANE:
+                import corpus_lexicon_lane as cll
+                rec = cll.evidence_record(r.get('ru') or '', corpus_lex.get(key1) or [])
+                if rec:
+                    ev.append(rec)
+                    tally[cll.SOURCE_CODE][rec['relation']] += 1
             r['evidence'] = ev
             stats['rows'] += 1
             if ev:
