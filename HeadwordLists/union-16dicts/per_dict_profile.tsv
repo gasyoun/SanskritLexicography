@@ -1,0 +1,17 @@
+dict	files	raw_lines	bare_keys	leading_paren_or_digit	not_bare_after_norm	empty	empty_after_norm	k1_not_bare
+AP	AP-unique-key1-88867.txt AP-unique-key2-88828.txt	177695	177683	0	11	0	0	1
+BHS	BHS-unique-key2-18188.txt	18188	18140	27	21	0	0	0
+BUR	BUR-unique-key2-19251.txt	19251	19251	0	0	0	0	0
+CAE	CAE-unique-key2-39280.txt	39280	38796	36	448	0	0	0
+CCS	CCS-unique-key2-29233.txt	29233	29204	25	4	0	0	0
+GRA	GRA-unique-key1-11108.txt GRA-unique-key2-11453.txt	22561	22558	0	3	0	0	0
+INM	INM-unique-key2-9454.txt	9454	9454	0	0	0	0	0
+MD	MD-unique-key2-20107.txt	20107	20106	0	1	0	0	0
+MW	MW-unique-key1-194084.txt MW-unique-key2-198489.txt	392573	392346	0	203	0	0	24
+PD	PD-unique-key1-104959.txt PD-unique-key2-104968.txt	209927	209918	0	9	0	0	0
+PWG	PWG-unique-key1-106082.txt PWG-unique-key2-110438.txt	216520	216466	1	42	0	0	11
+PWK	PWK-unique-key1-151349.txt PWK-unique-key2-155688.txt	307037	306170	807	32	0	1	27
+SCH	SCH-unique-key2-28519.txt	28519	28266	7	246	0	0	0
+SKD	SKD-unique-key1-40817.txt SKD-unique-key2-40817.txt	81634	81628	0	3	0	0	3
+VCP	VCP-unique-key1-48636.txt VCP-unique-key2-48638.txt	97274	97272	0	1	0	0	1
+VEI	VEI-unique-key1-3704.txt VEI-unique-key2-3704.txt	7408	7406	0	0	0	0	2
