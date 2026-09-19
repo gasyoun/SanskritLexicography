@@ -1,0 +1,33 @@
+{
+  "handoff": "H4798",
+  "date": "2026-09-19",
+  "pair1_baseline": {
+    "attestation_rows": 53003,
+    "dating_rows": 7349,
+    "joined": 6988,
+    "gross_conflicts": 233
+  },
+  "cause_counts": {
+    "key_misalignment_sub_sense_rollup": 120,
+    "evidence_base_citation_resolution": 58,
+    "evidence_base_coverage": 24,
+    "key_misalignment_hom_collapse": 23,
+    "bucket_boundary": 5,
+    "evidence_base_work_dating": 3
+  },
+  "verdict_counts": {
+    "join-artifact": 143,
+    "flag-only": 63,
+    "prefer-attestation-year": 24,
+    "cross-layer-fork": 3
+  },
+  "era_bands": {
+    "vedic": "<= -500",
+    "epic-sutra": "-500..300",
+    "classical": "300..600",
+    "early-medieval": "600..1300",
+    "late-medieval": "> 1300"
+  },
+  "join_artifacts": 143,
+  "decide_flags": 3
+}
