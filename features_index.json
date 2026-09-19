@@ -45,7 +45,7 @@
     "id": "A7",
     "section": "I. Data assets — query it, someone already spent the compute",
     "title": "cyrillic_proper_noun_slp1.tsv",
-    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h4750_cyr_slp1_backfill.py",
     "repo": "gasyoun/SanskritLexicography"
   },
   {
@@ -824,6 +824,20 @@
     "repo": "gasyoun/VisualDCS"
   },
   {
+    "id": "I15",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Кампус наглядности",
+    "url": "https://github.com/gasyoun/gasyoun.github.io/tree/master/scripts/campus",
+    "repo": "gasyoun/gasyoun.github.io"
+  },
+  {
+    "id": "I16",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "Карта мастерства",
+    "url": "https://github.com/gasyoun/kosha/tree/main/data/mastery",
+    "repo": "gasyoun/kosha"
+  },
+  {
     "id": "I13",
     "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
     "title": "vk-ors wall retrospective",
@@ -871,6 +885,13 @@
     "title": "kosha data & tools directory",
     "url": "https://github.com/gasyoun/kosha/blob/main/scripts/build_directory.py",
     "repo": "gasyoun/kosha"
+  },
+  {
+    "id": "J22",
+    "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+    "title": "ELI5 explainer hub",
+    "url": "https://github.com/gasyoun/gasyoun.github.io/blob/master/eli5/build_standalone.py",
+    "repo": "gasyoun/gasyoun.github.io"
   },
   {
     "id": "K18",
@@ -996,6 +1017,27 @@
     "section": "IV. Tools — import the toolkit, call the external stacks",
     "title": "PWG four-tier enumeration reader + store-impact meter (H3948)",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L18",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "DHĀTUP.→Palsule coordinate concordance + sibling-source screens (H1333/H4339/H4349)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L19",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "!Gasuns Concordance Palsule-hubbed six-source dhātupāṭha crosswalk (H4478)",
+    "url": "https://github.com/gasyoun/Uprava/blob/main/reports/YADISK_INVENTORY_07-09-2026.md",
+    "repo": "gasyoun/Uprava"
+  },
+  {
+    "id": "L20",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "dhātu-pāṭha XML corpus layer — Westergaard + Scharf Mādhavīya (H4538)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/YADISK_05_SANSKRIT_LEXICON_TREES_CENSUS_10-09-2026.md",
     "repo": "gasyoun/SanskritLexicography"
   },
   {
