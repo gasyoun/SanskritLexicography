@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T09:05:00Z",
+  "generated_at": "2026-09-20T17:58:22Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": true,
+    "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 888,
+    "youngest_artifact_age_seconds": 378488,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T18:04:38Z",
-        "age_seconds": 399618,
+        "age_seconds": 777219,
         "size": 26350965
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1690815,
+        "age_seconds": 2068416,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 1690815,
+        "age_seconds": 2068416,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-09-16T08:50:09Z",
-        "age_seconds": 888,
+        "age_seconds": 378488,
         "size": 3598321
       }
     }
@@ -52,8 +52,8 @@
     "pending": 29,
     "newest_card_at": "2026-09-11T17:57:27Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 4.63,
-    "campaign_days": 79
+    "days_since_last_card": 9.0,
+    "campaign_days": 84
   },
   "yield_quality": {
     "measured": true,
@@ -524,7 +524,7 @@
   "promote_vs_generate": {
     "measured": true,
     "weekly": {
-      "cards_generated": 5,
+      "cards_generated": 0,
       "clean_windows": 0,
       "windows_total": 0,
       "clean_window_pct": null,
@@ -757,7 +757,7 @@
     "total_idle_seconds": 4630000,
     "total_idle_hours": 1286.11,
     "mean_gap_seconds": 420909.091,
-    "current_idle_seconds": null,
+    "current_idle_seconds": 378489,
     "last_idle_seconds": 398744,
     "last_idle": {
       "from": "2026-09-11T18:04:24Z",
@@ -783,9 +783,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 785404,
-        "idle_days": 9.09,
-        "idle_hours": 218.17
+        "idle_seconds": 1163893,
+        "idle_days": 13.47,
+        "idle_hours": 323.3
       }
     ],
     "recent_gaps": [
@@ -1015,46 +1015,10 @@
     }
   },
   "calendar": {
-    "start": "2026-05-20",
-    "end": "2026-09-16",
+    "start": "2026-05-24",
+    "end": "2026-09-20",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-05-20",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-05-21",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-05-22",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-05-23",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-05-24",
         "cards": 0,
@@ -2098,6 +2062,42 @@
         "idle_hours": 18.46,
         "level": 0,
         "idle": true
+      },
+      {
+        "date": "2026-09-17",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-09-18",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-09-19",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-09-20",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6025,
