@@ -21,6 +21,9 @@ characterization/regression case is exercised end to end:
   (s) H7 drain backstop — a zero-claim (and an unrecordable-done) drain polls and then stops
                           naming the stall instead of hot-spinning to max_drain_iterations;
                           forward progress resets the CONSECUTIVE counter
+  (v) exit contract     — the cohort route scores its own terminal states (H5209): a clean
+                          accepted wave exits 0, every gateable outcome non-zero; the serial
+                          route's stop-reason predicate is unchanged
 
   python src/pilot/bounded_staged_run_selftest.py
 """
@@ -1628,6 +1631,91 @@ def test_old_receipt_without_agent_ops_code_still_parses(td):
     print('  old receipts without agent_ops_code still parse: PASS')
 
 
+def test_v_exit_code_contract_per_route(td):
+    """H5209 (FINDINGS §642): the cohort path scores its OWN terminal states.
+
+    Before this, both routes were scored by one predicate over BoundedSupervisor stop
+    reasons. CohortEngine sets none of them, so the first cohort wave that ever finished
+    cleanly — 9/9 gates PASS, 1 clean, 0 requeue, promoted, TM done, store 11521 -> 11524 —
+    exited 1. The clean case below is modelled on that run's recorded summary
+    (`pwg_ru/h4527/acceptance.sen.report.json`).
+    """
+    print('test_v: exit-code contract per route')
+
+    def clean_wave(**over):
+        summary = {
+            'peak_concurrency': 1,
+            'accepted_order': ['h4527sen08'],
+            'requeue_backlog_keys': [],
+            'calls_spent': 1,
+            'calls_reserved': 1,
+            'effective_width': 1,
+            'stop_reason': None,
+            'wave': {'promoted': True, 'tm_done': True,
+                     'receipt': {'members': ['h4527sen08'], 'returncode': 0}},
+            'cohort': {'path': 'live', 'requested_width': 1},
+        }
+        summary.update(over)
+        return summary
+
+    # (1) the real-world clean wave => 0
+    assert bsr.exit_code(clean_wave(), True) == 0
+    print('  cohort: clean accepted wave exits 0: PASS')
+
+    # (2) requeued work => non-zero
+    assert bsr.exit_code(clean_wave(requeue_backlog_keys=['h4527sen09']), True) != 0
+    print('  cohort: non-empty requeue backlog exits non-zero: PASS')
+
+    # (3) accepted nothing => non-zero (stop_reason is None here too, so the None reason
+    #     alone can never be the whole test)
+    assert bsr.exit_code(clean_wave(accepted_order=[]), True) != 0
+    print('  cohort: wave that accepted nothing exits non-zero: PASS')
+
+    # (4) settled but never promoted / TM not rebuilt => non-zero
+    assert bsr.exit_code(clean_wave(wave={'promoted': False, 'tm_done': False}), True) != 0
+    assert bsr.exit_code(clean_wave(wave={'promoted': True, 'tm_done': False}), True) != 0
+    print('  cohort: unpromoted / TM-incomplete wave exits non-zero: PASS')
+
+    # (5) the engine's own terminal reasons => non-zero
+    for reason in ('max_calls=0',
+                   'all admitted profiles parked — no runnable fleet (admitted=[] parked=[])',
+                   'wave settled with 1 runnable lease(s) never dispatched: '
+                   'h4527sen09(profile=c1, budget_exhausted)'):
+        assert bsr.exit_code(clean_wave(stop_reason=reason), True) != 0
+    print('  cohort: engine stop reasons exit non-zero: PASS')
+
+    # (6) cost-unevaluable / error stop => non-zero
+    assert bsr.exit_code(clean_wave(stop_reason=STOP_COST_UNEVALUABLE,
+                                    cost_evaluable=False), True) != 0
+    assert bsr.exit_code(clean_wave(cost_evaluable=False), True) != 0
+    print('  cohort: cost-unevaluable stop exits non-zero: PASS')
+
+    # (7) the SUPERVISOR route is byte-for-byte the old predicate — pinned here so the
+    #     cohort fix cannot quietly move it.
+    for stop in (STOP_CLEAN_TARGET, bs.STOP_WINDOW_COUNT, bs.STOP_CLEAN_QUOTA,
+                 STOP_CALL_COUNT):
+        assert bsr.exit_code({'stop_reason': stop}, False) == 0
+    for stop in (STOP_COST_UNEVALUABLE, STOP_CONSECUTIVE_EMPTY, None, 'anything else'):
+        assert bsr.exit_code({'stop_reason': stop}, False) != 0
+    # and a clean COHORT summary on the serial route is still non-zero: no cross-talk.
+    assert bsr.exit_code(clean_wave(), False) != 0
+    print('  supervisor: existing exit behaviour unchanged: PASS')
+
+    # (8) own-data canary: the ACTUAL recorded summary of run `h4527-acc-200920` — the wave
+    #     whose exit 1 is FINDINGS §642 — scored through the shipped contract. Skipped only
+    #     if the report is absent from the checkout.
+    recorded = os.path.join(HERE, os.pardir, os.pardir, 'pwg_ru', 'h4527',
+                            'acceptance.sen.report.json')
+    if os.path.exists(recorded):
+        with open(recorded, encoding='utf-8') as fh:
+            real = json.load(fh)['summary']
+        assert bsr.supervisor_exit_code(real) == 1, 'the defect must still reproduce'
+        assert bsr.exit_code(real, True) == 0, 'the real clean wave must exit 0'
+        print('  own-data canary: recorded h4527-acc-200920 wave exits 0 (was 1): PASS')
+    else:
+        print('  own-data canary: acceptance.sen.report.json absent — SKIPPED')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_old_receipt_without_agent_ops_code_still_parses(td)
@@ -1657,6 +1745,7 @@ def main():
         test_s3_h7_unrecordable_done_job_also_stops(td)
         test_t_data_root_env_shim(td)
         test_u_auto_promote_until(td)
+        test_v_exit_code_contract_per_route(td)
     print('bounded_staged_run_selftest: PASS')
 
 
