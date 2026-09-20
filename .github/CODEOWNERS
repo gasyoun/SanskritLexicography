@@ -1,0 +1,7 @@
+# CODEOWNERS — SanskritLexicography
+# Default owner: Dr. Mārcis Gasūns (MG) — sole Accountable per the estate RACI
+# map (gasyoun/Uprava docs/RACI_PROCESS_OWNERSHIP_MAP_19-09-2026.md).
+# AI executor tiers are NOT GitHub accounts — recorded there as roles, not owners.
+
+# Default — everything in this repo
+* @gasyoun
