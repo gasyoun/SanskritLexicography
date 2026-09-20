@@ -301,9 +301,30 @@ def cmd_controls(args):
     frozen = _load_frozen()
     spec = json.load(io.open(os.path.join(HERE, "h5069_controls_spec.json"),
                              encoding="utf-8"))
+    # TWIN GUARD (added 20-09-2026, second blinding defect). A control whose
+    # base record ALSO ships unmutated puts the mutation right beside its own
+    # twin, and a reviewer can then find it by diffing two near-identical items
+    # instead of by asking what the German licenses. The first reviewer to pass
+    # this gate did exactly that, and said so: it named the positive control
+    # because a sibling item "renders the byte-identical source" plainly. A
+    # gate passed that way measures near-duplicate detection, not source
+    # support. Bases now come from eligible records OUTSIDE the frozen 30.
+    frozen_ids = {r["record_id"] for r in frozen}
+    twins = [c["id"] for c in spec["controls"]
+             if c["base_record_id"] in frozen_ids]
+    if twins:
+        print("REFUSE: control base(s) also ship unmutated in the packet — %s. "
+              "Draw the base from an eligible record outside the frozen 30."
+              % ", ".join(twins), file=sys.stderr)
+        return 1
+    store_by_id = {r["record_id"]: r for r in _read_store()}
     blind, key = [], []
     for c in spec["controls"]:
-        base = next(r for r in frozen if r["record_id"] == c["base_record_id"])
+        base = store_by_id.get(c["base_record_id"])
+        if base is None:
+            print("REFUSE: control %s — base record not in the store" % c["id"],
+                  file=sys.stderr)
+            return 1
         tgt = base["target_string"]
         if c["find"] not in tgt:
             print("REFUSE: control %s — find-string absent from base target"

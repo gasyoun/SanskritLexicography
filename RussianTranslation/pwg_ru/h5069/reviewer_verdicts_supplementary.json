@@ -1,0 +1,200 @@
+{
+  "reviewer": "independent blind logic critic (opencode orchestrator reviewer, no access to producer verdicts)",
+  "model_version": "zai-coding-plan/glm-5.3-flash",
+  "verdicts": [
+    {
+      "id": "H5069.item:05c8df4918a1bdc28c80bf17951e80de",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"verbünden, vereinigen\"→RU \"союзить, объединять\"; DE \"vergelten (lohnen) oder strafen\"→RU \"воздавать (вознаграждать) или наказывать\"; DE \"damit man es nicht als Fehler rüge\"→RU \"дабы это не поставили в вину\"; DE \"den Lohn für Etwas empfangen … so v. a. dort werde ich dir den Elephanten abtreten\"→RU \"так v. a. там я уступлю тебе слона\". All 15 pairs map 1:1; sense-3 case labels (gen./acc.) kept."
+    },
+    {
+      "id": "H5069.item:05cd537b95034a3ff59d3b44d23ebdc0",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "gloss_pairs ru-nulls are span artifacts; target carries both senses: DE \"herbeikommen, kommen zu, in\"→RU \"прийти, прибыть к, в\"; DE \"sich einstellen, eintreffen; Jmd treffen, heimsuchen\"→RU \"наступить, явиться; постигнуть кого-либо, обрушиться на\". No German qualification dropped."
+    },
+    {
+      "id": "H5069.item:14494edcefc4624149641271667e0211",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "All 115 pairs map 1:1 with case labels intact (Abl./Acc./Loc./Instr.) and hedges kept (\"fortgehen, so v. a. schwinden\"→\"уходить, так v. a. исчезать\"). Two same-sense renderings noted: DE \"kommen\"→RU \"идти\"; DE \"aufbrechen heissen\"→RU \"побуждать отправиться\" (order→induce: causative sense kept, force mildly softened). No boundary moved."
+    },
+    {
+      "id": "H5069.item:236356fde29e7af1fe514d77c91f82f7",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"herumschreiten, umwandeln; umherwandern\"→RU \"обходить кругом, обращаться; странствовать\"; DE \"als obdachloser Bettler umherwandern\"→RU \"вести нищенскую жизнь бездомного скитальца\" — same referent recast as an idiom; nothing added or dropped."
+    },
+    {
+      "id": "H5069.item:24c9382482d8a36599fda7f19215a525",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"in Zweifel ziehen, Bedenken tragen, mit der Entscheidung zögern\"→RU \"сомневаться; колебаться, медлить с решением\"; DE \"(stets am Ende eines Halbverses)\"→RU \"(всегда в конце полустиха)\"; DE \"dieses steht fest, ist ausgemacht\"→RU \"это установлено, решено\". All 10 pairs licensed."
+    },
+    {
+      "id": "H5069.item:35d87f6fb91c1af39d6d28aed0de42be",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "gloss_pairs off-by-one from i4 is a span-folding artifact (RU folded \"erhalten\" into one gloss); judged from target_string: DE \"Kunde von Etwas (acc.) erhalten\"→RU \"получить весть, известие о чём-л. (acc.)\"; DE \"gelesen\"→RU \"читается\"; DE \"die Zeit kommen lassen) abwarten, sich gedulden\"→RU \"дать наступить времени) выждать, набраться терпения\"; DE \"wiederholt sich nähern\"→RU \"неоднократно приближаться\"; desid. \"zu kommen im Begriff sein\"→RU \"собираться прийти\". Every German meaning present."
+    },
+    {
+      "id": "H5069.item:37ef467dee908592cb68d976db022ae4",
+      "verdict": "addition",
+      "confidence": "high",
+      "evidence": "DE \"{#saMprajAtA#} gekalbt habend\"→RU \"отелившаяся впервые\": «впервые» (for the first time / zum ersten Mal) is asserted nowhere in the German span; the German says only \"having calved\". The packet's own twin (84167da79f43606d23d1592157ba6966) renders the identical source as plain \"отелившаяся\". All other 28 pairs of this item are licensed, but this one planted specificity is unsupported."
+    },
+    {
+      "id": "H5069.item:3b58d05f58bccf6ca4ac8c52cc4f594c",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"lösen, ablösen, abnehmen\"→RU \"развязывать, отвязывать, снимать\"; \"(von einem Baume)\"→\"(с дерева)\"; \"wohl fehlerhaft\"→\"вероятно, ошибочно\"; DE \"frei —, erlöst werden (von den Banden der Welt)\"→RU \"(от уз мирского бытия)\". All 8 pairs licensed."
+    },
+    {
+      "id": "H5069.item:4990aa8b23a636119dd1ffe4c71c47dc",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"die Königin hat es gewährt, zugestanden\"→RU \"царица даровала это, дала своё согласие\"; DE \"Auch von leblosen Dingen\"→RU \"Также о неодушевлённых предметах\"; accent-rule sense 8 kept; desid. \"gewähren —, zugestehen wollen\"→RU \"желать даровать —, соглашаться\". All 27 pairs licensed."
+    },
+    {
+      "id": "H5069.item:49d6056bbc21c91bc035f272b46afc43",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"entführen\"→RU \"уводить, похищать\"; DE \"wegführen (die Braut aus dem Elternhause)\"→RU \"уводить (невесту из родительского дома)\"; DE \"geheirathet, verheirathet\"→RU \"женатый, замужняя\"; caus. \"verheirathen (ein Mädchen)\"→RU \"выдавать замуж (девушку)\". All 10 pairs licensed."
+    },
+    {
+      "id": "H5069.item:4b0ec71914c5c01d17795822b32d21c4",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "Identical source to 24c9382482d8a36599fda7f19215a525; sole divergence: DE \"ohne sich zu bedenken\"→RU \"не колеблясь\" (the twin renders \"без раздумий\") — both fully licensed by the German; remaining 9 pairs unchanged and licensed. Convicting this would score surface divergence, not source support."
+    },
+    {
+      "id": "H5069.item:57a20ac99f1645d5cfbb662a1c1612ce",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"hersagen, recitiren\"→RU \"произносить вслед, рецитировать\"; DE \"einladen zu (gen.)\" distributed as RU \"приглашать кого-л. (dat.) … к (gen.)\"; DE \"halten für, anerkennen für\"→RU \"считать кем-л., признавать кем-л.\"; DE \"nachsprechen, auswendiglernen, lernen\"→RU \"повторять вслед за кем-л., учить наизусть, учиться\"."
+    },
+    {
+      "id": "H5069.item:66c6cf880434dffad250aa66b05e6a33",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"anziehen, sich ein Gewand\"→RU \"надевать, облачаться в одежду\"; DE \"eine Form der Erscheinung annehmen\"→RU \"принимать облик, форму явления\"; DE \"wäre nicht gegen das Metrum\"→RU \"не противоречило бы метру\"; DE \"hüllt sich in Vogels Gewand\"→RU \"облачается в птичье одеяние\"."
+    },
+    {
+      "id": "H5069.item:695ee14b488ea2025540961cc8f5c3d9",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"für die Nacht seine Wohnung verlassen) verreisen, sich entfernen\"→RU \"покидать своё жилище на ночь) уезжать, удаляться\"; DE \"etwa entfernen\"→RU \"приблизительно «удалять»\" (hedge kept); DE \"untergegangen (heliakisch)\"→RU \"зашедшее (гелиакически)\"; DE \"fehlerhaft für\"→RU \"ошибочно вместо\"."
+    },
+    {
+      "id": "H5069.item:6c81ab851d12a529bb027edeb2b5cefa",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"das Wissen, Erkenntniss\"→RU \"знание, познание\"; <lex>f.</lex> and <ab>Pl.</ab> markup kept verbatim."
+    },
+    {
+      "id": "H5069.item:72c4bc4d509df3b39e448a3859a250d2",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"fortgehen, weichen, schwinden\"→RU \"уходить, отступать, исчезать\"; DE \"vom Wege abgegangen\"→RU \"сбившийся с пути\"; DE \"aus dem Gesicht gekommen\"→RU \"скрывшийся из виду\"; DE \"vom guten Wandel abgestanden\"→RU \"отступивший от доброго поведения\"."
+    },
+    {
+      "id": "H5069.item:74c30c26ca244759088660569c2e2430",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"Pass. getragen werden von, so v. a. reiten auf (Instr.)\"→RU \"Pass. быть носимым кем-л., чем-л., отсюда v. a. ехать верхом на (Instr.)\" (same hedge function); DE \"heimführen (ein Weib)\"→RU \"вести домой (жену, о браке)\" — contextual explicitation of the implied marriage sense; all caus. senses covered."
+    },
+    {
+      "id": "H5069.item:8000b5c88ea7a3c8b905dc7e2d8751e2",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"zum Weibe nehmen\"→RU \"брать в жёны\" — exact. Markup anomaly reported but not meaning-bearing: the RU gloss is wrapped in {#…#} (Sanskrit class) instead of plain text."
+    },
+    {
+      "id": "H5069.item:84167da79f43606d23d1592157ba6966",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "Clean twin of 68d976db022ae4…: target differs only by absence of «впервые»; DE \"gekalbt habend\"→RU \"отелившаяся\" — exact; all remaining pairs identical to text verified pair-by-pair."
+    },
+    {
+      "id": "H5069.item:85be4e6aa6849db3e68f4a81fa440943",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"fortgehen, sich entfernen, sich zurückziehen, fliehen, weichen von (abl.)\"→RU \"уходить, удаляться, отступать, бежать, отходить от (abl.)\" (5→5); DE \"schert euch\"→RU \"прочь отсюда\"; DE \"wich nicht von meiner Seite\"→RU \"не отходил от моего бока\"; caus. \"entführen, rauben\"→RU \"похищать, уводить силой\"."
+    },
+    {
+      "id": "H5069.item:86969d9acfa5d35e843dca82e49575f0",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"der beim Volke hiess\"→RU \"носивший в народе имя\"; DE \"wird oft —, wird steif und fest behauptet\"→RU \"часто утверждается —, настойчиво утверждается\"; DE \"leicht —, leise singen\"→RU \"петь тихо —, вполголоса\"; DE \"so v. a.\"→RU \"так v. a.\"."
+    },
+    {
+      "id": "H5069.item:8c68d3127f876f9658f8e8da6f265771",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"zurückführen\"→RU \"возвращать, отводить обратно\" — both members licensed by \"lead back\"; locus kept."
+    },
+    {
+      "id": "H5069.item:8cebaa7727ca4cab4011de33f24dfd8a",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "DE \"überheirathen) die erste Frau (acc.) durch eine zweite Frau (instr.) hintansetzen\"→RU \"жениться поверх) ставить первую жену (acc.) позади второй жены (instr.)\" — instrument \"durch\" recast spatially (\"позади\"), same displacement sense, case labels kept; DE \"(von der neuen Frau)\"→RU \"(со стороны новой жены)\"; DE \"eine durch eine Nebenbuhlerin hintangesetzte Frau\"→RU \"жена, отставленная соперницей\"."
+    },
+    {
+      "id": "H5069.item:934c1af44fac88dfeb65a2a59f96ad94",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"verkünden, zu wissen thun\"→RU \"возвестить, дать знать\"; <ab>caus.</ab> kept."
+    },
+    {
+      "id": "H5069.item:a95c83afb0ac91986a4e55498a938bc3",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"von einem Andern abtrennen und aufnehmen; abnehmen\"→RU \"отнимать у другого и принимать; снимать\"; <ab>med.</ab> kept."
+    },
+    {
+      "id": "H5069.item:b8302905777581e767216455213cfd72",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"binden —, gefangen setzen lassen\"→RU «велеть связать — посадить в заключение» (causative \"lassen\"→\"велеть\"); DE \"eine Schuld von hundert hat ihn in's Gefängniss gebracht\"→RU «долг в сто [единиц] посадил его в тюрьму» (bracketed clarifier only); DE \"abdämmen lassen\"→RU «велеть запрудить»."
+    },
+    {
+      "id": "H5069.item:c56caf83a5df5403d8876c3861f250a9",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"zusagen, versprechen\"→RU \"давать согласие, обещать\"."
+    },
+    {
+      "id": "H5069.item:cabcfb640bd68759cc2e8774d0be7f16",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"erlangen, bekommen\"→RU \"обретать, получать\"."
+    },
+    {
+      "id": "H5069.item:cb09c111369bd57c2610596aaf51e32a",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"zusammen herbeikommen, zusammenkommen, hinzukommen, herantreten, kommen, kommen nach, zu\"→RU \"сойтись, собраться вместе, прибыть, подойти, прийти, прийти к, к\" (7→7); DE \"zog auf\"→RU \"выступил в поход\" (mirrors the German's military metaphor); DE \"verstreichen, verfliessen\"→RU \"протекать, истекать (о времени)\" — explicitation of what \"verstreichen\" already denotes."
+    },
+    {
+      "id": "H5069.item:cd0e2ef11bac9d307eea21e485a98713",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"hervorbringen, bewirken, verursachen\"→RU \"производить, совершать, причинять\"; DE \"ist wohl kaum richtig\"→RU \"вряд ли верно\" (hedge kept); caus. \"hinsetzen lassen\"→RU \"велеть посадить\"; desid. \"anlegen wollen\"→RU \"желать наложить\"."
+    },
+    {
+      "id": "H5069.item:ce76878f75bbe143539b56a9bc2e873b",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"anbinden, sich anbinden\"→RU «привязывать», «привязываться»; DE \"gefesselt\"→RU «скованный»; DE \"feststeckend, festsitzend\"→RU «крепко вставленный, прочно сидящий»; DE \"nicht stockend\"→RU «не прерывающийся»."
+    },
+    {
+      "id": "H5069.item:fc0240a6955e12f511904f63043c87b6",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "DE \"zuklappen, zusammenlegen, schliessen\"→RU \"захлопывать, складывать, закрывать\"; DE \"ballt zusammen zu Hagel\"→RU \"скатывается в шар, превращаясь в град\"; participle list \"an —, auf einander gelegt, zusammengefügt, geschlossen, zusammenstossend, anschliessend, eng verbunden\"→ all 7 members present; DE \"wohl so v. a. zusammengesetzt\"→RU \"вероятно так v. a. составной\" (hedge kept)."
+    }
+  ],
+  "challenged_control": "H5069.item:68d976db022ae4… (full id in packet: 05c8… block of √jan, the saMpra-block entry) is, in my judgment, the synthetic item with the planted unsupported assertion: German 'gekalbt habend' is rendered 'отелившаяся впервые', asserting first-time calving («впервые» / 'zum ersten Mal') that the German nowhere states; its clean twin H5069.item:84167da79f43606d23d1592157ba6966 renders the byte-identical source with plain 'отелившаяся', which is the exact licensed rendering. What would prove me wrong: period PWG/Sanskrit lexicographic usage where saMprajAtā of a cow is defined as primipara ('zum ersten Mal gekalbt') — but the packet's own German text carries no such words, and the twin's existence shows the divergence is a single inserted word, the signature of a planted addition. Additionally, the re-worded-but-fully-licensed synthetic pair is H5069.item:24c9382482d8a36599fda7f19215a525 and H5069.item:4b0ec71914c5c01d17795822b32d21c4 (vicAr senses 4–5): byte-identical sources whose only target divergence is 'ohne sich zu bedenken' → 'без раздумий' vs 'не колеблясь', both licensed; I scored both faithful — convicting either would mean scoring surface divergence over source support.",
+  "limitations": "I had no access to the printed PWG (1855–1875) or any scans; the packet's own source_string is my only German ground truth, so I could not check whether PWG itself is being quoted correctly, nor verify Sanskrit quotations, loci, or page references. gloss_pairs alignment is an artifact in items 35d87f… and 11de33… (RU span-folding shifts indices); for those I judged from target_string as the brief directs. 19th-century German idiom (e.g. 'aufbrechen heissen', 'beladen', 'zog auf') was judged from context, not a period dictionary. Markup-class changes ({%…%}→{#…#} in item 05dc7e2d8751e2) are reported in evidence but the brief's single question is meaning, so they did not drive verdicts. I did not read any verdicts*, controls_key* or *AUDIT*.md files, per the blind protocol."
+}

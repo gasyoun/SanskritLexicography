@@ -1,23 +1,24 @@
 {
-  "_comment": "H5069 control specification. Both controls are SYNTHETIC mutations of frozen real records; they never enter any store. The positive control plants ONE unsupported Russian assertion into an otherwise faithful record; the negative control replaces a faithful Russian gloss with a differently-worded but equally licensed paraphrase. A reviewer who misses the positive control cannot detect additions; a reviewer who convicts the negative control over-triggers on surface divergence.",
+  "_comment": "H5069 control specification. Both controls are SYNTHETIC mutations of real eligible records; they never enter any store. The positive control plants ONE unsupported Russian assertion into an otherwise faithful record; the negative control replaces a faithful Russian gloss with a differently-worded but equally licensed paraphrase. A reviewer who misses the positive control cannot detect additions; a reviewer who convicts the negative control over-triggers on surface divergence.",
+  "_base_rule": "A control's base record MUST NOT be one of the frozen 30. The first pair here was built from two of the frozen records, so the packet carried each mutation NEXT TO ITS OWN UNMUTATED TWIN -- and the first blind reviewer to pass the gate said so in its own words: it identified the positive control by noticing that a sibling item 'renders the byte-identical source' with the plain wording. That is detection by near-duplicate comparison, not by source-support reasoning, so the gate it passed measured the wrong thing. Bases are now drawn from eligible records OUTSIDE the sample, and cmd_controls refuses any packet in which a base also appears unmutated.",
   "controls": [
     {
       "id": "H5069.control:pos:001",
       "kind": "positive",
-      "base_record_id": "pwg.tm.v1:exact-card:ru:c5b749b2ac1c1e99124e1465ee32be91bf514a6a8a7420e4970c778cc2c06bbb",
-      "find": "{%отелившаяся%}",
-      "replace": "{%отелившаяся впервые%}",
+      "base_record_id": "pwg.tm.v1:exact-card:ru:c39fe9c2defbf491bfc22167d37c50a9e4135a68aed2480d9b7e58e3e5376ac8",
+      "find": "{%распускать ткань%}",
+      "replace": "{%распускать шёлковую ткань%}",
       "expected_verdict": "addition",
-      "rationale": "German span is {%gekalbt habend%} = 'having calved'. It licenses no ordinality. The planted «впервые» ('for the first time') asserts a first calving — a zoological/ritual specificity absent from the source and unrecoverable from it. Fluent, short, and plausible: exactly the failure mode this audit exists to catch."
+      "rationale": "German span is {%ein Gewebe auflösen%} = 'to unravel a woven fabric'. Gewebe names no material. The planted «шёлковую» ('silk') asserts a fibre the source nowhere states and that nothing in the record recovers -- the only other content is the locus <ls>ṚV. 10,130,1.</ls>, with no Sanskrit quotation to lean on. Short, fluent, and entirely plausible in a Sanskrit dictionary: the failure mode this audit exists to catch."
     },
     {
       "id": "H5069.control:neg:001",
       "kind": "negative",
-      "base_record_id": "pwg.tm.v1:exact-card:ru:1ab1c6d35f2177c0f66e7745d23ef7d362bb05841f4daa38eef785810e67fcbf",
-      "find": "{%не колеблясь%}",
-      "replace": "{%без раздумий%}",
+      "base_record_id": "pwg.tm.v1:exact-card:ru:bc5c4a07aae3d0787382f51dbdd8bb2b7012cc08eb9ddbabc66d79416755f02b",
+      "find": "{%следовать%}",
+      "replace": "{%идти следом%}",
       "expected_verdict": "faithful",
-      "rationale": "German span is {%ohne sich zu bedenken%} = 'without deliberating'. «без раздумий» and «не колеблясь» are both fully licensed renderings; the wording diverges from the published record but the assertion does not. Convicting this one means the reviewer is scoring surface difference, not source support."
+      "rationale": "German span is {%folgen%} = 'to follow'. «идти следом» is a paraphrase rather than a one-word synonym -- structurally different from the published «следовать», semantically identical and fully licensed. Convicting this one means the reviewer is scoring surface divergence, not source support. A paraphrase probes over-triggering better than a synonym, which offers nothing to over-trigger on."
     }
   ]
 }

@@ -121,6 +121,29 @@ def test_packet_ids_differ_per_record():
     assert len(ids) == 500
 
 
+def test_no_control_is_built_from_a_record_the_packet_also_ships_plain():
+    # The second blinding defect, pinned at the data level. When a control's
+    # base is one of the frozen 30, the packet carries the mutation NEXT TO its
+    # own unmutated twin, and a reviewer can find it by diffing two
+    # near-identical items rather than by asking what the German licenses --
+    # which is what the first reviewer to pass the gate actually did, in its
+    # own words. Control bases must come from outside the sample.
+    import json
+    spec_path = os.path.join(SRC, "h5069_controls_spec.json")
+    manifest_path = os.path.join(ROOT, "pwg_ru", "h5069", "manifest.json")
+    if not os.path.exists(manifest_path):          # frozen artifacts not built
+        return
+    with open(spec_path, encoding="utf-8") as fh:
+        spec = json.load(fh)
+    with open(manifest_path, encoding="utf-8") as fh:
+        frozen = {r["record_id"] for r in json.load(fh)["records"]}
+    assert frozen, "manifest must list the frozen records"
+    for c in spec["controls"]:
+        assert c["base_record_id"] not in frozen, (
+            "control %s is built from a record the packet also ships "
+            "unmutated" % c["id"])
+
+
 # --- 3. gradeability -------------------------------------------------------
 
 def test_verdict_vocabulary_is_closed():
