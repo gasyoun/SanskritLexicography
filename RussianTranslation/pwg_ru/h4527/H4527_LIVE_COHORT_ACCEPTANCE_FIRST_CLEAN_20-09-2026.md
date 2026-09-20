@@ -143,7 +143,7 @@ the exit code — a drain lane, a scheduled wrapper, CI — would read this wind
 failure.
 
 Not fixed here: it is money-path code and a distinct concern from work item 1, whose evidence
-is complete. Routed to its own handoff (see below) so the fix arrives selftest-backed rather
+is complete. Routed to [H5209](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5209-Opus_RussianTranslation_cohort-path-exit-code-clean-wave-returns-one_20.09.26.md) (Opus 5, 🟡2 medium) — cohort-path exit code: a clean accepted wave must return 0 so the fix arrives selftest-backed rather
 than bolted onto an acceptance pass.
 
 ## Why `COHORT_LIVE_ACCEPTANCE.json` is still NOT written
@@ -200,7 +200,7 @@ that succeeded, not a launch failure, and it is recorded in FINDINGS instead.
 
 1. **Work item 2 — Codex reviewer sign-off** on this packet. The only thing between here and a
    written acceptance record. A different session, by construction.
-2. **Work item 4 tail — the exit-code defect** above, its own handoff.
+2. **Work item 4 tail — the exit-code defect** above, minted as [H5209](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5209-Opus_RussianTranslation_cohort-path-exit-code-clean-wave-returns-one_20.09.26.md) (Opus 5, 🟡2 medium) — cohort-path exit code: a clean accepted wave must return 0.
 3. **Work item 3 — width 2** stays parked on the 11-09 MG one-lane ruling (`c1` is the whole
    fleet; `c2`'s token expired 24-07). Parked on a **condition, not a decision** — nobody is
    waiting to rule on it.
