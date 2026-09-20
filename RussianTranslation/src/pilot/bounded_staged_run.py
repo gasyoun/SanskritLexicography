@@ -960,6 +960,54 @@ def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resu
     )
 
 
+# --- exit contract (H5209, FINDINGS §642) ------------------------------------------------
+# Callers gate on this process's exit code, so every terminal state a run can end in has to
+# be mapped onto it EXPLICITLY, per route. Until H5209 both routes were scored by one
+# predicate built out of BoundedSupervisor stop reasons; CohortEngine sets none of them, so
+# the cleanest wave it can produce — settled, accepted, promoted, TM rebuilt, nothing
+# requeued, stop_reason None — exited 1. That stayed invisible for nine days because no
+# cohort wave had ever finished cleanly (run `h4527-acc-200920`, 20-09-2026).
+
+SUPERVISOR_CLEAN_STOPS = (bs.STOP_CLEAN_TARGET, bs.STOP_WINDOW_COUNT,
+                          bs.STOP_CLEAN_QUOTA, bs.STOP_CALL_COUNT)
+
+
+def supervisor_exit_code(summary):
+    """0 only on a BoundedSupervisor stop reason a caller treats as a clean finish."""
+    return 0 if (summary or {}).get('stop_reason') in SUPERVISOR_CLEAN_STOPS else 1
+
+
+def cohort_exit_code(summary):
+    """0 only on a clean, accepted, fully settled cohort wave; 1 on everything a caller gates.
+
+    `stop_reason is None` is NECESSARY but far from sufficient on this route: CohortEngine
+    leaves it None both for a wave that finished with nothing to complain about AND for one
+    that settled without ever being promoted (`terminal_ok` False). The clean case is the
+    conjunction of the terminal facts the engine actually records — nothing requeued,
+    something accepted, wave promoted, TM rebuilt. Anything else is non-zero, including the
+    engine's own one-line reasons (all admitted profiles parked, `max_calls=0`, leases that
+    settled undispatched). An error stop never reaches here at all: `_dispatch` re-raises.
+    """
+    summary = summary or {}
+    if summary.get('stop_reason') is not None:
+        return 1
+    if summary.get('cost_evaluable') is False:
+        return 1
+    if summary.get('requeue_backlog_keys'):
+        return 1
+    if not summary.get('accepted_order'):
+        return 1
+    wave = summary.get('wave') or {}
+    if not (wave.get('promoted') and wave.get('tm_done')):
+        return 1
+    return 0
+
+
+def exit_code(summary, cohort_path):
+    """Route the summary to its own exit contract. The serial route is unchanged."""
+    return cohort_exit_code(summary) if cohort_path else supervisor_exit_code(summary)
+
+
 def run(args):
     # H1437 Phase 3: refuse a LIVE cohort before touching the plan, the db, the coordinator
     # or the fleet. getattr keeps pre-P3 programmatic callers (Namespace without the attr)
@@ -1169,8 +1217,8 @@ def run(args):
         mao.atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=1) + '\n')
     print(json.dumps(summary, ensure_ascii=False, indent=1))
     # A cost-unevaluable / non-clean stop is a non-zero exit so callers can gate on it.
-    return 0 if summary.get('stop_reason') in (bs.STOP_CLEAN_TARGET, bs.STOP_WINDOW_COUNT,
-                                               bs.STOP_CLEAN_QUOTA, bs.STOP_CALL_COUNT) else 1
+    # H5209: scored per ROUTE — the cohort engine has its own terminal states (exit_code).
+    return exit_code(summary, cohort_path)
 
 
 def build_parser():
