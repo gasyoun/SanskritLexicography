@@ -116,12 +116,12 @@
    }
   },
   {
-   "date": "2026-09-19",
+   "date": "2026-09-20",
    "source": "build",
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
     "glossary_vidyut_coverage_pct": null,
-    "pwg_citation_coverage_pct": 83.6,
+    "pwg_citation_coverage_pct": 83.5,
     "queue_verdicts": {
      "PASS": 139,
      "DROP": 1,
