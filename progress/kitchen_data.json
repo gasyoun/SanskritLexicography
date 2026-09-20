@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T17:59:55Z",
+  "generated_at": "2026-09-20T18:01:38Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 378582,
+    "youngest_artifact_age_seconds": 378685,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-11T18:04:38Z",
-        "age_seconds": 777313,
+        "age_seconds": 777416,
         "size": 26350965
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 2068510,
+        "age_seconds": 2068613,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 2068510,
+        "age_seconds": 2068613,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-09-16T08:50:09Z",
-        "age_seconds": 378582,
+        "age_seconds": 378685,
         "size": 3598321
       }
     }
@@ -274,15 +274,15 @@
     "measured": true,
     "source_mode": "canonical",
     "ceiling_ms": 65000,
-    "probes": 92,
-    "go_count": 71,
+    "probes": 94,
+    "go_count": 73,
     "nogo_count": 21,
-    "go_pct": 77.2,
+    "go_pct": 77.7,
     "last": {
-      "ts": "2026-09-16T08:48:46.927Z",
+      "ts": "2026-09-20T18:01:31.738Z",
       "account": "c1",
-      "elapsed_ms": 17008,
-      "duration_api_ms": 19523,
+      "elapsed_ms": 23429,
+      "duration_api_ms": 20820,
       "ceiling_ms": 240000,
       "verdict": "GO",
       "model": "claude-sonnet-5",
@@ -290,26 +290,6 @@
     },
     "last_verdict": "GO",
     "recent": [
-      {
-        "ts": "2026-09-09T08:04:10.436Z",
-        "account": "c1",
-        "elapsed_ms": 151327,
-        "duration_api_ms": 140517,
-        "ceiling_ms": 80000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "health_probe_log.jsonl"
-      },
-      {
-        "ts": "2026-09-10T20:11:15.070Z",
-        "account": "c1",
-        "elapsed_ms": 101111,
-        "duration_api_ms": 90133,
-        "ceiling_ms": 80000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "health_probe_log.jsonl"
-      },
       {
         "ts": "2026-09-10T20:13:51.909Z",
         "account": "c1",
@@ -425,6 +405,26 @@
         "account": "c1",
         "elapsed_ms": 17008,
         "duration_api_ms": 19523,
+        "ceiling_ms": 240000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "health_probe_log.jsonl"
+      },
+      {
+        "ts": "2026-09-20T18:01:08.262Z",
+        "account": "c1",
+        "elapsed_ms": 20637,
+        "duration_api_ms": 19045,
+        "ceiling_ms": 240000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "health_probe_log.jsonl"
+      },
+      {
+        "ts": "2026-09-20T18:01:31.738Z",
+        "account": "c1",
+        "elapsed_ms": 23429,
+        "duration_api_ms": 20820,
         "ceiling_ms": 240000,
         "verdict": "GO",
         "model": "claude-sonnet-5",
@@ -598,8 +598,15 @@
         ]
       }
     ],
-    "live_jobs": [],
-    "live_job_count": 0,
+    "live_jobs": [
+      {
+        "external_id": "h4527sen08",
+        "state": "in_progress",
+        "started_at": "2026-09-20T18:01:31Z",
+        "profile_slot": "c1"
+      }
+    ],
+    "live_job_count": 1,
     "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
@@ -757,7 +764,7 @@
     "total_idle_seconds": 4630000,
     "total_idle_hours": 1286.11,
     "mean_gap_seconds": 420909.091,
-    "current_idle_seconds": 378583,
+    "current_idle_seconds": 378686,
     "last_idle_seconds": 398744,
     "last_idle": {
       "from": "2026-09-11T18:04:24Z",
@@ -783,9 +790,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 1163987,
+        "idle_seconds": 1164090,
         "idle_days": 13.47,
-        "idle_hours": 323.33
+        "idle_hours": 323.36
       }
     ],
     "recent_gaps": [
@@ -851,7 +858,7 @@
         "before_root": null,
         "reason": "health_nogo",
         "reason_source": "health_probe_overlap",
-        "reason_evidence": "probe NO-GO 151327ms @2026-09-09T08:04:10.436Z account=c1"
+        "reason_evidence": "probe NO-GO 156802ms @2026-09-10T20:13:51.909Z account=c1"
       },
       {
         "from": "2026-09-11T05:36:54Z",
@@ -953,7 +960,7 @@
         "before_root": null,
         "reason": "health_nogo",
         "reason_source": "health_probe_overlap",
-        "reason_evidence": "probe NO-GO 151327ms @2026-09-09T08:04:10.436Z account=c1"
+        "reason_evidence": "probe NO-GO 156802ms @2026-09-10T20:13:51.909Z account=c1"
       },
       {
         "from": "2026-09-11T05:36:54Z",
