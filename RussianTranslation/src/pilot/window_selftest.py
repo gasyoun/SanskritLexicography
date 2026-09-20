@@ -4639,6 +4639,137 @@ def test_no_pwg_residual_registry_and_audit_command():
             fail('a no-PWG head with only blocked residuals must be omitted')
 
 
+def test_no_pwg_require_senses_gate():
+    """H4527: --require-senses must prove a repair lane before a paid call is spent.
+
+    `agent_budget` derives the per-card self-heal pool from sense groups, so a
+    zero-sense sub-card runs with `max_heal_agents: 0` — one shot, no repair. The
+    16-09-2026 acceptance window paid for exactly that topology and came back null.
+    """
+    import no_pwg_scale_plan as plan
+    from types import SimpleNamespace
+
+    with tempfile.TemporaryDirectory() as tmp:
+        rich = 'darv_i~~h0_zz_pw'
+        poor = 'darv_i~~h0_zz_nws00'
+        with open(os.path.join(tmp, rich + '.portrait.json'), 'w', encoding='utf-8') as f:
+            json.dump({'key': rich, 'source_senses': 3}, f)
+        with open(os.path.join(tmp, rich + '.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write('1\u3009 first sense\n2\u3009 second sense\n')
+        with open(os.path.join(tmp, poor + '.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write('an unnumbered supplement gloss\n')
+
+        # the stamped portrait count wins over a recount of the raw blob
+        if plan.subcard_source_senses(rich, tmp) != 3:
+            fail('--require-senses must read the portrait sidecar stamp first')
+        # no portrait -> deterministic recount, not a guess
+        if plan.subcard_source_senses(poor, tmp) != 0:
+            fail('a sense-poor sub-card without a portrait must recount to 0')
+        # neither sidecar -> unprovable, and unprovable is never zero
+        if plan.subcard_source_senses('absent~~h0_zz_pw', tmp) is not None:
+            fail('a missing sidecar pair must read as None (unprovable), never 0')
+
+        kept, skipped = plan.filter_sense_poor_subcards(
+            [rich, poor, 'absent~~h0_zz_pw'], 1, tmp)
+        if kept != [rich]:
+            fail('--require-senses kept a sub-card that cannot prove the minimum: %r' % kept)
+        if [row['key'] for row in skipped] != [poor, 'absent~~h0_zz_pw']:
+            fail('--require-senses did not report every skipped sub-card')
+        if skipped[0]['source_senses'] != 0 or skipped[1]['source_senses'] is not None:
+            fail('skipped rows must carry the measured count, unknown as None')
+        if plan.filter_sense_poor_subcards([rich], 4, tmp)[0]:
+            fail('--require-senses must refuse a count below the requested minimum')
+
+        # a head whose eligible sub-cards are ALL sense-poor is omitted, like a
+        # fully-blocked head -- and nothing is written to the residual registry
+        originals = {name: getattr(plan, name) for name in
+                     ('run_cmd', 'existing_subcards', 'read_store_keys',
+                      'subcard_source_senses', 'filter_sense_poor_subcards')}
+        plan.run_cmd = lambda *_args, **_kwargs: ''
+        plan.existing_subcards = lambda _head: [poor]
+        plan.read_store_keys = lambda: set()
+        plan.subcard_source_senses = lambda key, input_dir=None: (
+            originals['subcard_source_senses'](key, tmp))
+        try:
+            omitted = plan.prepare_window(
+                SimpleNamespace(prefix='fixture_w', blocked_residuals={},
+                                require_senses=1),
+                1, ['darv_i'], [], False)
+            if not omitted.get('omitted') or omitted.get('subcards'):
+                fail('a head with only sense-poor sub-cards must be omitted')
+            if [row['key'] for row in omitted['sense_skipped']] != [poor]:
+                fail('the omitted window must name the sense-poor sub-cards it skipped')
+            if omitted['residual_skipped']:
+                fail('the sense gate must not invent residual-registry rows')
+
+            # off by default: an args object without the attribute never reaches the gate
+            def refuse(*_args, **_kwargs):
+                fail('--require-senses gate ran while the flag was off')
+            plan.filter_sense_poor_subcards = refuse
+            try:
+                blocked = {poor: {'key': poor, 'reason': 'repeat failure',
+                                  'source_window': 'old'}}
+                legacy = plan.prepare_window(
+                    SimpleNamespace(prefix='fixture_w', blocked_residuals=blocked),
+                    2, ['darv_i'], [], False)
+            finally:
+                plan.filter_sense_poor_subcards = originals['filter_sense_poor_subcards']
+            if not legacy.get('omitted') or legacy.get('sense_skipped'):
+                fail('the historical (flag-off) path must be byte-identical')
+        finally:
+            for name, value in originals.items():
+                setattr(plan, name, value)
+
+        # the manifest records the gate and everything it skipped
+        planner_originals = {name: getattr(plan, name) for name in
+                             ('read_queue', 'read_store_heads', 'read_still_null',
+                              'read_residuals', 'prepare_window')}
+        manifest = os.path.join(tmp, 'plan.json')
+        plan.read_queue = lambda: [{'key1': 'darv_i'}, {'key1': 'gl_ana'}]
+        plan.read_store_heads = lambda: set()
+        plan.read_still_null = lambda: []
+        plan.read_residuals = lambda _path: {}
+
+        def prepare_stub(args, index, heads, _still_null, _tail_mode):
+            if args.require_senses != 2:
+                fail('--require-senses did not reach prepare_window: %r' % args.require_senses)
+            if heads[0] == 'darv_i':
+                return {'omitted': True, 'root': 'sense_w%02d' % index,
+                        'headwords': heads, 'residual_skipped': [],
+                        'sense_skipped': [{'key': poor, 'source_senses': 0,
+                                           'reason': 'source senses 0 < --require-senses 2'}]}
+            return {'root': 'sense_w%02d' % index, 'mode': 'queue', 'headwords': heads,
+                    'subcards': ['gl_ana~~h0_zz_pw'], 'harness': 'run.js',
+                    'workflow_output': 'wf.json', 'preflight': {},
+                    'headless': {'projected_calls': 1},
+                    'residual_skipped': [], 'sense_skipped': []}
+
+        try:
+            plan.prepare_window = prepare_stub
+            plan.main(['--window-size', '1', '--limit-windows', '1',
+                       '--start-index', '920', '--force-index',
+                       '--prefix', 'sense_w', '--manifest', manifest,
+                       '--require-senses', '2'])
+            payload = json.load(open(manifest, encoding='utf-8'))
+            if payload.get('require_senses') != 2:
+                fail('the plan manifest must record the sense gate it ran under')
+            if [row['key'] for row in payload.get('sense_skipped') or []] != [poor]:
+                fail('the plan manifest must carry every sense-skipped sub-card')
+            if payload['prepared_windows'] != 1 or payload['windows'][0]['root'] != 'sense_w921':
+                fail('a sense-omitted head must not consume the preparation quota')
+        finally:
+            for name, value in planner_originals.items():
+                setattr(plan, name, value)
+
+    try:
+        plan.main(['--plan-only', '--require-senses', '-1'])
+    except SystemExit as exc:
+        if '--require-senses must be >= 0' not in str(exc):
+            fail('a negative --require-senses must be refused by name: %s' % exc)
+    else:
+        fail('a negative --require-senses was accepted')
+
+
 def test_no_pwg_preparation_advances_past_omitted_chunks():
     import no_pwg_scale_plan as plan
 
@@ -9831,6 +9962,7 @@ def main():
         test_atomic_control_writes_preserve_previous_file,
         test_no_pwg_residual_registry_and_audit_command,
         test_no_pwg_preparation_advances_past_omitted_chunks,
+        test_no_pwg_require_senses_gate,
         test_no_pwg_card_source_profile_taxonomy,
         test_no_pwg_supplement_card_renders_without_pwg,
         test_h920_sense_count_top_level_ordinals,

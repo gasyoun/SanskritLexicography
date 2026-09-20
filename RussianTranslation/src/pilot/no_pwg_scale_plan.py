@@ -31,6 +31,8 @@ QUEUE = os.path.join(HERE, 'lexical_cores', 'pwg_miss_backfill_queue.md')
 STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 STILL_NULL = os.path.join(OUT, 'no_pwg_w1.still_null.txt')
 RESIDUALS = os.path.join(HERE, 'no_pwg_residuals.jsonl')
+# `_pilot_gen_merged.py`'s OUT — where the per-sub-card sidecars (raw + portrait) land.
+INPUT_DIR = os.path.join(HERE, 'input')
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
@@ -39,6 +41,7 @@ if HERE not in sys.path:
 
 from safe_filename import decode_safe_name, safe_name  # noqa: E402
 from store_path import canonical_store  # noqa: E402
+import sense_count  # noqa: E402
 import coordinator  # noqa: E402
 from window_common import atomic_write_json  # noqa: E402
 
@@ -222,6 +225,66 @@ def filter_residual_subcards(subcards, blocked):
     return [key for key in subcards if key not in blocked], skipped
 
 
+def subcard_source_senses(key, input_dir=None):
+    """Declared top-level source senses for ONE sub-card, or None when unprovable.
+
+    Two readings, in H4527's census order: the portrait sidecar's stamped
+    `source_senses` first, then a deterministic recount of the raw sidecar through
+    `sense_count.count_source_senses`. The census (17-09-2026) cross-checked both over
+    all 34 portraits on disk and they agree everywhere a portrait exists, so the
+    fallback is a recount, not a second opinion.
+
+    None means "the sidecars do not say" (neither file on disk, or an unreadable raw
+    blob) — never zero. A caller gating on a minimum must treat None as unproven.
+    """
+    input_dir = input_dir or INPUT_DIR
+    stamped = sense_count.portrait_source_senses(input_dir, key)
+    if stamped is not None:
+        try:
+            return int(stamped)
+        except (TypeError, ValueError):
+            return None
+    raw = os.path.join(input_dir, key + '.raw.txt')
+    if not os.path.exists(raw):
+        return None
+    try:
+        with open(raw, encoding='utf-8') as f:
+            text = f.read()
+    except OSError:
+        return None
+    return sense_count.count_source_senses(text)
+
+
+def filter_sense_poor_subcards(subcards, minimum, input_dir=None):
+    """Keep only the sub-cards that PROVE `minimum`+ declared source senses (H4527).
+
+    Why it exists: `agent_budget` derives a card's self-heal pool from its sense groups,
+    so a zero-sense sub-card gets `max_heal_agents: 0` — one shot, no repair lane. The
+    16-09-2026 live acceptance window burned a paid call on exactly such a card
+    (`asa_mskfta~~h0_zz_nws00`, `senses: []`) and came back null; the census then showed
+    the zero is structural for the whole `~~h0_zz_nws00` class (0 of 10 declare a sense),
+    so re-running the same topology cannot end differently.
+
+    Strictly narrowing: an unprovable count (None) is skipped, never admitted — the
+    flag's only job is to prove a repair lane exists before a call is paid for. Nothing
+    is written anywhere; a skipped key stays eligible for the next planning run and gets
+    no residual-registry row.
+    """
+    kept, skipped = [], []
+    for key in subcards:
+        senses = subcard_source_senses(key, input_dir)
+        if senses is not None and senses >= minimum:
+            kept.append(key)
+        else:
+            skipped.append({
+                'key': key,
+                'source_senses': senses,
+                'reason': ('source senses %s < --require-senses %d'
+                           % ('unknown' if senses is None else senses, minimum)),
+            })
+    return kept, skipped
+
+
 def chunked(seq, n):
     for i in range(0, len(seq), n):
         yield seq[i:i + n]
@@ -335,12 +398,25 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     subcards = [k for k in subcards if k not in promoted_keys]
     blocked = getattr(args, 'blocked_residuals', {})
     subcards, skipped_rows = filter_residual_subcards(subcards, blocked)
+    # H4527: the sense gate runs AFTER generation because only the sidecars
+    # `_pilot_gen_merged.py` just wrote say how many senses a sub-card declares —
+    # generation is local and unpaid, the call that follows is not.
+    require_senses = getattr(args, 'require_senses', 0) or 0
+    sense_skipped = []
+    if require_senses > 0:
+        subcards, sense_skipped = filter_sense_poor_subcards(subcards, require_senses)
     if not subcards:
-        if skipped_rows:
-            print('omitting %s: every unpromoted subcard is a blocked residual' % root)
+        if skipped_rows or sense_skipped:
+            if sense_skipped and not skipped_rows:
+                print('omitting %s: no unpromoted subcard declares %d+ source sense(s)'
+                      % (root, require_senses))
+            else:
+                print('omitting %s: every unpromoted subcard is a blocked residual'
+                      ' or sense-poor' % root)
             return {
                 'omitted': True, 'root': root, 'headwords': heads,
                 'residual_skipped': residual_summary(skipped_rows),
+                'sense_skipped': sense_skipped,
             }
         raise SystemExit('FAIL: %s produced no no-PWG subcards' % root)
 
@@ -418,6 +494,7 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
         'audit_command': audit_command(wf_out_rel, root, manifest_rel),
         'promote_command': promotion_command(wf_out_rel, args.gen_model_version),
         'residual_skipped': residual_summary(skipped_rows),
+        'sense_skipped': sense_skipped,
         'preflight': {
             'selected_keys': len(preflight.get('selected_keys') or []),
             'batches': preflight.get('batch_count'),
@@ -499,6 +576,14 @@ def main(argv=None):
                     help='durable pwg.no_pwg_residual.v1 JSONL registry')
     ap.add_argument('--include-residuals', action='store_true',
                     help='explicitly retry keys whose latest residual status is blocked')
+    ap.add_argument('--require-senses', type=int, default=0,
+                    help='prepare only sub-cards whose input sidecars declare at least N '
+                         'top-level source senses (0 = off, the historical behaviour). A '
+                         'zero-sense sub-card gets max_heal_agents 0 -- one paid shot and no '
+                         'repair lane (H4527, 16-09-2026 null card). Strictly narrowing: an '
+                         'unprovable count is skipped too, a head whose eligible sub-cards are '
+                         'all sense-poor is omitted like a fully-blocked head, and nothing is '
+                         'written to the residual registry.')
     # H3677: the coordinator's profile binding. Without it the emitted manifest is v1 and
     # production refuses it -- see FINDINGS 604 and `binding_args`.
     ap.add_argument('--profile-slot',
@@ -525,6 +610,8 @@ def main(argv=None):
         raise SystemExit('FAIL: --window-size must be between 1 and 30 for H255')
     if args.gen_model_version in ('sonnet', 'claude-sonnet'):
         raise SystemExit('FAIL: --gen-model-version must be an exact model id')
+    if args.require_senses < 0:
+        raise SystemExit('FAIL: --require-senses must be >= 0')
 
     # H809 W3: resolve the window index from disk unless the caller pins one.
     # `--plan-only` prepares nothing, so a stale/colliding label is harmless there and
@@ -600,6 +687,9 @@ def main(argv=None):
         'still_null_subcards_seen': len(still_null),
         'residual_registry': os.path.relpath(args.residual_file, RT).replace('\\', '/'),
         'include_residuals': args.include_residuals,
+        'require_senses': args.require_senses,
+        'sense_skipped': [row for window in windows + omitted
+                          for row in (window.get('sense_skipped') or [])],
         'residual_skipped': residual_summary({
             row['key']: row for row in initially_skipped + [
                 residuals[item['key']] for window in windows + omitted
