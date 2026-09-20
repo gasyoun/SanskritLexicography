@@ -1,0 +1,23 @@
+{
+  "_comment": "H5069 control specification. Both controls are SYNTHETIC mutations of frozen real records; they never enter any store. The positive control plants ONE unsupported Russian assertion into an otherwise faithful record; the negative control replaces a faithful Russian gloss with a differently-worded but equally licensed paraphrase. A reviewer who misses the positive control cannot detect additions; a reviewer who convicts the negative control over-triggers on surface divergence.",
+  "controls": [
+    {
+      "id": "H5069.control:pos:001",
+      "kind": "positive",
+      "base_record_id": "pwg.tm.v1:exact-card:ru:c5b749b2ac1c1e99124e1465ee32be91bf514a6a8a7420e4970c778cc2c06bbb",
+      "find": "{%отелившаяся%}",
+      "replace": "{%отелившаяся впервые%}",
+      "expected_verdict": "addition",
+      "rationale": "German span is {%gekalbt habend%} = 'having calved'. It licenses no ordinality. The planted «впервые» ('for the first time') asserts a first calving — a zoological/ritual specificity absent from the source and unrecoverable from it. Fluent, short, and plausible: exactly the failure mode this audit exists to catch."
+    },
+    {
+      "id": "H5069.control:neg:001",
+      "kind": "negative",
+      "base_record_id": "pwg.tm.v1:exact-card:ru:1ab1c6d35f2177c0f66e7745d23ef7d362bb05841f4daa38eef785810e67fcbf",
+      "find": "{%не колеблясь%}",
+      "replace": "{%без раздумий%}",
+      "expected_verdict": "faithful",
+      "rationale": "German span is {%ohne sich zu bedenken%} = 'without deliberating'. «без раздумий» and «не колеблясь» are both fully licensed renderings; the wording diverges from the published record but the assertion does not. Convicting this one means the reviewer is scoring surface difference, not source support."
+    }
+  ]
+}
