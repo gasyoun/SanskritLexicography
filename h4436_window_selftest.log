@@ -1,0 +1,493 @@
+width_policy selftest OK
+agent_budget selftest OK
+PASS: test_h4529_width_policy_and_pool_split
+PASS: test_restore_covers_every_promoted_field
+PASS: test_h1339_b21_promoted_pairs_cover_store_write_set
+PASS: test_h1339_b02_stitched_card_schema_complete
+PASS: test_h1339_b03_tm_cards_schema_complete
+PASS: test_h1339_b04_b09_worktree_safe_resolution
+PASS: test_h1339_b10_b19_audit_chain_routing
+PASS: test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal
+PASS: test_h1386_c3_frag_unblock_serves_replacement
+PASS: test_h1386_p3d_p3e_run_py_inproc_exit_semantics
+PASS: test_h1386_p3h_stale_check_pins_v2_execution
+note-kv recovery: {'cards': 20, 'clean': 11, 'tokens': 123456}
+outcome recorded for r1: 11/20 clean, tripped=None
+PASS: test_h1339_b13_b15_telemetry_and_siglum_precision
+PASS: test_every_stitch_emits_record_required
+PASS: test_unmapped_token_is_counted
+PASS: test_validator_has_a_live_caller
+warning: skipping malformed nested result JSON in wf_output.bad.zz.json
+warning: skipping malformed nested result JSON in wf_output.bad.zz.json
+warning: skipping malformed nested result JSON in wf_output.bad.zz.json
+warning: skipping malformed nested result JSON in wf_output.bad.zz.json
+warning: skipping malformed nested result JSON in wf_output.bad.zz.json
+warning: skipping malformed nested result JSON in wf_output.bad.zz.json
+PASS: test_strip_mask_tokens_clears_notes_stranded_anchor
+  D-E: DEFAULT_STORE via canonical_store; explicit --store wins; RU+EN build OK
+translation_memory selftest OK
+PASS: test_translation_memory_addressing
+PASS: test_tm_pre_resolves_cards
+PASS: test_tm_card_sane_rejects_zero_marker_drift
+PASS: test_en_card_tm_serves_english_field_c3
+  selfheal: zz_key_a has no fallback (card does not split — <2 fragments)
+  selfheal: zz_key_b has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 2 no-selfheal-fallback card(s) routed to 2 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+PASS: test_generated_harness_strict_key_matching
+PASS: test_tm_auto_no_sidecar_metadata
+PASS: test_suggest_tm_does_not_skip_agents
+PASS: test_tm_publication_fixtures_validate
+PASS: test_degenerate_passthrough_accounted
+PASS: test_degenerate_passthrough_no_german_in_target
+PASS: test_degenerate_passthrough_rejects_glosses
+PASS: test_perf_preflight_small_tm_and_no_tm
+PASS: test_perf_preflight_dense_presplit
+PASS: test_presplit_group_call_weight_caps_portrait_plus_bytes_h2248
+PASS: test_presplit_group_call_weight_zero_allowance_degrades_to_one_per_call_h2248
+PASS: test_perf_preflight_presplit_counts_fragments_not_one
+PASS: test_perf_preflight_degenerate_zero_agent
+PASS: test_perf_preflight_multi_root_matrix_and_order
+PASS: test_perf_preflight_fragment_tm_empty_warning
+PASS: test_perf_preflight_partitions_mixed_monster_window
+PASS: test_verb_worklist_excludes_missing_rootmaps
+PASS: test_coordinator_state_dashboard_and_cap
+PASS: test_coordinator_nominal_reservations
+lease stage0 -> prepared
+running=race3,race4
+lease prep -> claimed
+lease audit -> running
+PASS: test_coordinator_runtime_state_machine_and_cas
+PASS: test_coordinator_fail_closed_audit_states
+PASS: test_coordinator_promotion_revalidates_artifacts
+PASS: test_coordinator_expired_leases_release_cap
+PASS: test_coordinator_lock_replaces_stale_dead_owner
+PASS: test_coordinator_lock_creates_parent_dir
+wrote fake harness
+requeue root      : nominal_selftest
+requeue source    : defect
+requeue keys      : 1
+tm denylist       : +1 card address(es)
+generated harness : C:\Users\user\AppData\Local\Temp\tmppbxg0lqh\run_pilot_wf.requeue.js
+execution manifest: C:\Users\user\AppData\Local\Temp\tmppbxg0lqh\execution_manifest.requeue.json
+keys:
+  a
+PASS: test_coordinator_defect_requeue_uses_no_tm_and_out
+generated requeue harness
+harness: C:\Users\user\AppData\Local\Temp\tmpuo7i62ad\artifacts\lease\requeue\rq02-transient\run_pilot_wf.lease.rq02-transient.js
+generated requeue harness
+harness: C:\Users\user\AppData\Local\Temp\tmpuo7i62ad\artifacts\lease\requeue\rq03-defect\run_pilot_wf.lease.rq03-defect.js
+PASS: test_coordinator_requeue_attempt_manifests
+lease lease -> needs_requeue
+lease lease -> ready_partial
+backed up prior store -> store.jsonl.premerge.20260916T030011.268290Z.p21576.85fc846dbbd9.bak
+BATCH PROMOTE: 1 lease(s), 1 subcard(s), 1 sense rows; store 0 -> 1 rows
+  lease: 1 subcard(s), 1 row(s)
+promoted 1 lease(s)
+lease lease -> ready
+backed up prior store -> store.jsonl.premerge.20260916T030012.031928Z.p21576.46e09fd07042.bak
+BATCH PROMOTE: 1 lease(s), 1 subcard(s), 1 sense rows; store 1 -> 2 rows
+  lease: 1 subcard(s), 1 row(s)
+promoted 1 lease(s)
+PASS: test_coordinator_mixed_lane_public_state_sequence
+PASS: test_promote_nominal_key1
+PASS: test_build_emits_nominal_keymap
+PASS: test_generation_schema_carries_no_post_generation_field
+PASS: test_no_pwg_supplement_chain_cards_render
+PASS: test_nominals_worklist_exposes_no_pwg_lane
+  selfheal: bagavat~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_no_pwg_source_profile_promotes
+PASS: test_calibration_arm_set_conservative_emit_only
+PASS: test_frag_tm_reuse
+  selfheal: agni~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  selfheal: agni~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  R2/N-4: JS cardTokens is driven by card_fields.js_token_fidelity_spec() (twins cannot drift)
+PASS: test_card_tokens_twins_agree
+  R6: frag-TM v2 supersedes v1; null-owner ([None,g]/[h,None]) rejected from live serve, audit-readable; owners validated
+PASS: test_frag_tm_v2_supersedes_v1
+  R7: degenerate (h,grammar) is proven source identity; unprovable identity is rejected
+PASS: test_degenerate_source_identity
+PASS: test_no_fallback_batch_isolation
+PASS: test_cit_split_never_tears_open_span
+PASS: test_sense_split_never_tears_open_span
+PASS: test_cit_split_caps_single_line_monster_sense
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_selfheal_fragment_si_threaded_and_tags_normalized
+  selfheal: zz~~synthetic_healfid has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  selfheal: zz~~synthetic_healfid has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_heal_lane_target_field_fidelity_wired
+PASS: test_autosplit_stitch_topup_rejects_target_field_drop
+  ! zz~~h0_00_pwgm fidelity-reject (complete stitch drift): german <ls>=1 {#=0, russian <ls>=0 {#=0 vs source <ls>=1 {#=0
+stitched 0 card(s) (0 fully complete, 0 partial); 1 fully-empty kept as accounted nulls ['zz~~h0_00_pwgm'] -> C:\Users\user\AppData\Local\Temp\tmpp3v8lpjd\wf_output.sc.zzmerge.autosplit.json
+  partial: -; fully-failed: ['zz~~h0_00_pwgm'] -- missing fragment keys written to C:\Users\user\Documents\GitHub\SanskritLexicography-h4436-drain\RussianTranslation\src\pilot\output\autosplit_missing_ru_zzmerge.json for a targeted follow-up requeue
+then: python src/promote_final_cards.py --glob 'wf_output.sc.zzmerge.autosplit.json' --merge
+PASS: test_autosplit_merge_rejects_target_field_drop
+  presplit: zz~~synthetic_sense_dense (30 senses/fragments exceed sense budget 20) -> direct fragment translation
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_sense_dense_card_presplit
+  selfheal: zz~~synthetic_kill has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  selfheal: zz~~synthetic_kill has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_kill_gate_wired
+  selfheal: zz~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_no_fallback_single_gets_ceil_kill_budget
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  presplit: zz~~h0_zz_pw (5 <ls> exceeds the per-card citation presplit floor 1 (PRESPLIT_SOLO_CITE_FLOOR, independent of the 1 output budget)) -> direct fragment translation
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_presplit_cite_floor_and_single_ceil
+  selfheal: b~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 2 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=3
+  selfheal: b~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 2 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+PASS: test_default_call_shape_is_one_card_per_call
+  presplit: g~~h0_zz_pw (45 <ls> exceeds the per-card citation presplit floor 40 (PRESPLIT_SOLO_CITE_FLOOR, independent of the 1 output budget); 45 senses/fragments exceed sense budget 20) -> direct fragment translation
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=4
+PASS: test_large_card_presplit_and_heal_under_one_card_default
+  presplit: zz~~h0_zz_pw (50 <ls> exceeds the per-card citation presplit floor 40 (PRESPLIT_SOLO_CITE_FLOOR, independent of the 90 output budget)) -> direct fragment translation
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_presplit_cite_floor_is_not_masked_by_batch_budget
+  selfheal: _c_ay_a~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_nominal_key_echo_tolerance_scoped
+  selfheal: zz~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_selfheal_no_fallback_preserves_upstream_reason
+PASS: test_group_by_budget_count_cap
+  presplit: zz~~synthetic_amortize (30 senses/fragments exceed sense budget 20) -> direct fragment translation
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+PASS: test_presplit_card_uses_amortized_grouping
+PASS: test_kill_gate_recalibrated_envelope
+PASS: test_agent_budget_plan_separates_translate_and_heal_pools
+  presplit: zz~~runtime_pool_a (30 senses/fragments exceed sense budget 20) -> direct fragment translation
+  presplit: zz~~runtime_pool_b (30 senses/fragments exceed sense budget 20) -> direct fragment translation
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=4
+PASS: test_split_agent_pools_all_heal_runtime
+  selfheal: kk1~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  selfheal: kk2~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 2 no-selfheal-fallback card(s) routed to 2 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+  selfheal: kk1~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  selfheal: kk2~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 2 no-selfheal-fallback card(s) routed to 2 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+PASS: test_lowwide_staggered_dispatch
+  selfheal: zz~~synthetic_switch has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_budget_kill_switch_wired
+PASS: test_harness_size_guard
+PASS: test_perf_preflight_cost_gate
+PASS: test_launch_failure_ledger_complete
+PASS: test_launch_failure_ledger_rejects_incomplete_entry
+PASS: test_autosplit_topup_targets_and_reassembles
+PASS: test_workflow_payload_nested
+PASS: test_workflow_payload_missing_results_hard_fail
+PASS: test_sense_dupe_norm_strips_trailing_period
+PASS: test_sense_dupe_batch_override
+PASS: test_sense_dupe_cross_level_exempt
+PASS: test_export_translation_dedup
+PASS: test_requeue_transient_vs_defect_state
+PASS: test_harness_scope_and_tools
+PASS: test_stale_check_key_order_independent
+PASS: test_nominal_provenance_without_rootmap
+PASS: test_atomic_control_writes_preserve_previous_file
+preparing fixture_w01: 1 headword(s)
+omitting fixture_w01: every unpromoted subcard is a blocked residual
+PASS: test_no_pwg_residual_registry_and_audit_command
+wrote C:\Users\user\AppData\Local\Temp\tmpys_lwig8\plan.json
+remaining headwords: 3 | windows: 2 | prepared: 1
+next prepared window: fixture_w901 (queue) 1 headword(s)
+wrote C:\Users\user\AppData\Local\Temp\tmpys_lwig8\blocked-plan.json
+remaining headwords: 3 | windows: 0 | prepared: 0
+PASS: test_no_pwg_preparation_advances_past_omitted_chunks
+PASS: test_no_pwg_card_source_profile_taxonomy
+PASS: test_no_pwg_supplement_card_renders_without_pwg
+PASS: test_h920_sense_count_top_level_ordinals
+PASS: test_h920_sense_shortfall_gate_flags_dropped_sense
+PASS: test_h920_no_pwg_portrait_stamps_source_senses
+PASS: test_h920_en_missing_sense_hard_flag
+PASS: test_en_dup_gate_preserves_sanskrit_referent_c2
+  selfheal: xref~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 1 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+PASS: test_h960_accept_sanloss_soft_gate
+  selfheal: tnp~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+tnmask_offline selftest OK (green: expansion flagged; red: no field -> not measurable, not a silent clean)
+PASS: test_tnmask_persist_and_offline_detect
+PASS: test_h960_dropped_sanskrit_span
+PASS: test_no_pwg_worklist_runnable_lane
+  H3659/612: input sidecars parked beside the manifest; missing one refuses
+PASS: test_h3659_input_sidecars_parked_beside_manifest
+PASS: test_no_pwg_layer_and_profile_survive_promotion
+PASS: test_prompt_rule_audit_template
+PASS: test_prompt_rule_audit_missing_blocks
+PASS: test_mask_preamble_carries_task_shape
+  selfheal: zz_key_a has no fallback (card does not split — <2 fragments)
+  selfheal: zz_key_b has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 2 no-selfheal-fallback card(s) routed to 2 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=2
+PASS: test_gloss_wrapper_prompt_preservation_h4270
+PASS: test_health_probe_asks_an_honest_question
+PASS: test_health_probe_carries_no_injection_shape
+PASS: test_semantic_risk_checker
+PASS: test_h1152_guard1_en_polyseme_checklist
+PASS: test_braced_gloss_audit
+PASS: test_german_residue_keeps_retained_markup
+PASS: test_german_connective_fix
+PASS: test_h1302_german_prose_residue_scan
+PASS: test_h1305_ru_style_mechanical
+PASS: test_h1651_wrapper_defect_gate
+PASS: test_h1651_live_gate_cyrillic_and_guillemet
+PASS: test_h1702_boundary_wrap_gate
+PASS: test_h2144_d4b_bracket_normalize
+PASS: test_semantic_review_prioritizer
+PASS: test_noisy_source_type_not_requeue
+PASS: test_report_only_risks_never_requeue
+PASS: test_attested_text_signal_redesign
+PASS: test_nws_fp_suppressed
+PASS: test_en_gate_strict_has_teeth
+PASS: test_en_gate_dup_has_teeth
+PASS: test_run_py_survives_timeout_and_oserror
+PASS: test_ru_gate_fails_loud_on_unparseable_child
+PASS: test_pwg_mask_latin_cue_behind_ab_tag
+PASS: test_markup_loss_soft_flag_ru
+PASS: test_p8_markup_loss_not_masked_by_unrelated_div
+PASS: test_markup_loss_soft_flag_en
+PASS: test_en_de_residue_french_guard
+PASS: test_h1152_guard3_xref_only_and_nws_de_locked
+PASS: test_p7_missing_en_not_fired_on_xref_only_residue
+PASS: test_ru_coverage_denominator_not_silently_exempt
+PASS: test_coverage_gate_multi_layer_and_presplit
+PASS: test_en_residual_coverage_complete
+whitney_grammar: root 'vas' has no Whitney homonym '999' (has: 1, 2, 3) — returning no grammar rather than a wrong-homonym block
+PASS: test_en_split_triage_keeps_missing_input
+PASS: test_whitney_homonym_safety
+PASS: test_stale_refusal_preserves_requeue
+PASS: test_fixture_audit_does_not_clobber_live_status
+PASS: test_release_manifest_hash_validation
+PASS: test_h3627_structured_output_exhaustion_is_parked_not_window_fatal
+PASS: test_h3627_aborted_window_still_yields_its_paid_cards
+PASS: test_h3627_salvage_never_publishes_an_infra_starved_window
+PASS: test_h4528_no_progress_kill_is_infra_not_a_content_defect
+warning: refusing corrupt frag_prov 38fb3b920730 (senses fail ru fidelity) in wf_output.sc.zz.json
+warning: refusing corrupt frag_prov 38fb3b920730 (senses fail ru fidelity) in wf_output.sc.zz.json
+PASS: test_lang_parity_ledger_complete
+PASS: test_lang_parity_coverage
+PASS: test_card_coverage_lang_symmetric
+PASS: test_degenerate_xref_vocab_single_source
+PASS: test_lang_parity_hash_crlf_independent
+PASS: test_frag_groups_presplit_parity
+PASS: test_defect_fragment_denylist_round_trip
+PASS: test_opt7_last_audit_tm_refuse_without_no_tm
+PASS: test_write_reports_emits_defect_fsha_file
+PASS: test_ledger_stamps_gen_model
+PASS: test_ledger_stamps_host_profile_b8
+PASS: test_h1553_wall_clock_auto_derive
+PASS: test_h1553_stage_boundary_emit
+PASS: test_save_merge_better_attempt_wins
+PASS: test_defer_monster_ledger_dedupes
+PASS: test_coordinator_cost_gate_enforced
+PASS: test_pwg_mask_bom_source_keeps_first_record
+PASS: test_pwg_mask_truncated_final_record_not_silent
+PASS: test_subprocess_gate_calls_hardened
+PASS: test_ls_resolver_rv_av_anchored
+PASS: test_frag_tm_fidelity_gate_and_override
+PASS: test_corpus_gate_evidence_and_db_markers
+promote_lock selftest OK
+PASS: test_promote_claim_contention
+annotate_evidence selftest OK
+PASS: test_annotate_evidence_relation_semantics
+annotate_genres selftest OK
+PASS: test_annotate_genres_sense_join
+koch_xref selftest OK
+PASS: test_koch_xref_resolution
+fri_xref selftest OK
+PASS: test_fri_xref_resolution
+PASS: test_audit_window_tag_routing
+PASS: test_denylist_torn_line_fails_loud
+  selfheal: zz~~synthetic_percard has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+  selfheal: zz~~synthetic_percard has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_per_card_heal_budget_wired
+  selfheal: zz~~synthetic_kill_no_bisect has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_heal_group_kill_timeout_does_not_bisect
+  selfheal: zz~~synthetic_telemetry has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_run_telemetry_counters_returned
+PASS: test_partial_cards_requeue_and_stay_out_of_clean_sample
+PASS: test_h2077_947_infra_partial_is_not_a_content_defect
+PASS: test_h2095_956_en_absence_flags_exempt_infra_partial
+PASS: test_h2095_structured_error_does_not_crash_the_audit
+prompt_semantic threaded gate failed: RuntimeError: synthetic threaded failure
+PASS: test_classify_run_verdicts
+  G5: 3 unaccountable rows now bill as failures (keys 5/5, nulls 4/4)
+PASS: test_h2173_g5_malformed_result_rows_are_accounted
+  G8: promote compares execution_route to the contract, not just its type
+PASS: test_h2173_g8_promote_refuses_route_foreign_artifact
+  G10: classify_run adjudicates the headless lane (and still the JS lane)
+PASS: test_h2173_g10_classify_run_reads_the_live_lane
+  G10: probe defaults track production_v4; boundary pinned at 240000 ms wall / 240000 ms api
+PASS: test_h2173_g10_probe_gate_defaults_and_live_boundary
+  G10: manifest budgets feed the executor; translation_limit binds from state
+PASS: test_h2173_g10_declared_budgets_are_read_or_labelled
+  selfheal: gok~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_grammar_field_restore_behavioral
+
+=== collect ===
+
+
+=== final_schema ===
+final-card schema: 0 checked, 0 invalid
+
+=== nws ===
+
+
+=== translation ===
+FLAGGED_JSON: []
+
+=== stage2_mechanical ===
+FLAGGED_JSON: []
+
+=== coverage ===
+FLAGGED_JSON: []
+
+=== sense_dupes ===
+FLAGGED_JSON: []
+
+=== prompt_semantic ===
+
+
+=== sense_loss ===
+
+
+=== ru_style ===
+FLAGGED_JSON: []
+
+=== AUDIT WINDOW SUMMARY ===
+cards        : 1
+requeue      : 1 (z~~2)
+  transient  : 1 (null cards — cheap re-run at low concurrency)
+  defect     : 0 (real content failures — needs rework)
+null reasons : null_card_no_card_object x1
+clean keys   : 0
+judge sample : 1 (seed 7e4149708fc5df0e)
+report json  : ..\..\..\..\..\AppData\Local\Temp\tmplp69s3et\reports\audit_window.report.json
+report md    : ..\..\..\..\..\AppData\Local\Temp\tmplp69s3et\reports\audit_window.report.md
+status json  : ..\..\..\..\..\AppData\Local\Temp\tmplp69s3et\reports\window_status.json
+status md    : ..\..\..\..\..\AppData\Local\Temp\tmplp69s3et\reports\window_status.md
+judge sample : ..\..\..\..\..\AppData\Local\Temp\tmplp69s3et\reports\judge_sample.keys.txt
+crashed gates: prompt_semantic
+PASS: test_threaded_gate_exception_requeues_full_window
+PASS: test_quarantine_replace_failure_preserves_previous_destination
+selftest_isolation selftest: 5/5 OK
+PASS: test_selftest_isolation_guard
+PASS: test_optional_sibling_bibliography_degrades
+h963_c4_gate0_probe selftest: 9/9 OK (no live call, nothing spent) — incl. #1034 evidence-root matrix (main checkout / worktree refusal / explicit override / independent profile series) and H3642 (HEALTH_PROBE_LOG now follows the same resolved root)
+PASS: test_c4_gate0_probe_run_scope
+german_anchor selftest: 8/8 OK
+PASS: test_german_anchor_selftest
+  selfheal: ga~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_german_anchor_repair_behavioral
+target_anchor selftest: 10/10 OK
+PASS: test_h3675_target_anchor_selftest
+  selfheal: ta~~h0_zz_pw has no fallback (card does not split — <2 fragments)
+  fallback-isolation: 1 no-selfheal-fallback card(s) routed to 1 dedicated batch(es), separate from 0 fallback-having card(s)
+  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1
+PASS: test_h3675_target_anchor_repair_behavioral
+PASS: test_h_reconstructed_regression_guard
+  A1: pid_alive is a real liveness probe; DirLock spares a foreign-owned lock
+PASS: test_h1283_a1_pid_alive_and_dirlock_owner
+  P2: OpenProcess error classification leans alive except no-such-pid (87)
+PASS: test_h1420_p2_win32_openprocess_error_leans_alive
+
+=== stale artifact check ===
+  requested root 'gam' != execution manifest root None
+  workflow meta missing from wf_output; fresh Max output is required
+  no rootmap for 'gam'
+  refusing collect/gates/glue; refresh wf_output.json or rerun with --allow-stale for inspection
+report json  : ..\..\..\..\..\AppData\Local\Temp\tmpk02gqajh\run\audit_window.report.json
+report md    : ..\..\..\..\..\AppData\Local\Temp\tmpk02gqajh\run\audit_window.report.md
+status json  : ..\..\..\..\..\AppData\Local\Temp\tmpk02gqajh\run\window_status.json
+status md    : ..\..\..\..\..\AppData\Local\Temp\tmpk02gqajh\run\window_status.md
+judge sample : ..\..\..\..\..\AppData\Local\Temp\tmpk02gqajh\run\judge_sample.keys.txt
+requeue file : preserved (stale artifact)
+lease run -> stale_artifact
+  P11: record-output binds a supplied --run-id to the running lease run_id
+PASS: test_h1420_p11_record_output_binds_run_id
+  P10: a post-commit derived failure still leaves the RU TM rebuilt
+PASS: test_h1420_p10_promote_rebuilds_tm_in_finally
+PASS: test_h1957_audit_timeout_actually_kills_the_child
+  A5: MAX_WIDE=3 / STAGGER_MS=2000 is the default (0 remains an explicit opt-out)
+PASS: test_h1283_a5_max_wide_default_bounded
+  A6: prep_slice flattens every batch key
+PASS: test_h1283_a6_prep_slice_flattens_batches
+wrote C:\Users\user\AppData\Local\Temp\tmp9k5pd2jp\ok.js 12032 bytes; 8 cards embedded
+PASS: test_h1386_d1_medium50_script_size_cap
+PASS: test_frag_prov_glob_honors_coordinator_dir_c7
+PASS: test_pwg_mask_german_homograph_not_latin_c8
+PASS: test_pwg_mask_gloss_lang_g1
+PASS: test_h2245_canary_manifest_builder
+  ok   prompt identity: A is production, B = A + exactly one PREP block
+  ok   plan hash replays byte-identically and detects tampering
+  ok   context hash replay + TM fence are fail-closed
+  ok   a fuzzy / same-key TM hit is never exact-content reuse
+  ok   missing credit evidence => UNKNOWN billing + explicit authorization
+  ok   16 reservations, each finalized exactly once; the 17th is refused
+  ok   crash/resume replays sealed envelopes without re-spending
+  ok   model substitution stops the run at the first call
+  ok   corrupt/missing usage stops the run and is never priced at zero
+  ok   receipt arithmetic: GO / NO-GO / INCONCLUSIVE all reachable
+  ok   zero-filled usage is a hole, not a measurement; holes force INCONCLUSIVE
+  ok   B1 capture: terminal fields, raw result text, modelUsage cross-check
+  ok   an absent returned model stops the run at call time, not at receipt
+  ok   fragment lane: arm A is production's own group call, check is offline
+  ok   whole-lane plan hash is untouched by the fragment lane
+  ok   group selection caps one card, and records any relaxation
+  ok   fragment audit uses production's per-fragment fidelity rule
+  ok   a timeout is a timeout, not a malformed envelope
+  ok   a dropped usage block is recovered from modelUsage and disclosed
+  ok   the GO rests on the paired margin, not on how fast an arm failed
+  ok   selection is order-independent, disjoint, and two per stratum
+  ok   a sealed pair_count shrinks both the sample and the call ceiling
+  ok   a default-size plan carries no pair_count key, so old hashes replay
+  ok   pair_count may shrink the sample, never grow past the ceiling
+  ok   whole-card membership is production's predicate, order-independent
+  ok   the call ceiling and completeness come from the sealed plan
+  ok   --check is offline, and the offline claim is falsifiable
+prep_context_compare selftest: PASS (27/27 hermetic cases, zero calls)
+PASS: test_h2591_prep_context_compare_matrix
+window selftest: ran 225/225 defined -- 225 passed, 0 failed
+window selftest OK
