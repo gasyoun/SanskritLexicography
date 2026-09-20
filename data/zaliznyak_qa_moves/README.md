@@ -4,9 +4,10 @@ _Created: 20-09-2026 · Last updated: 20-09-2026_
 
 Regex+contextual annotation of **Q&A-ходов** («вопрос → совывыведение → вердикт
 ученику») over the ingested Zaliznyak lecture corpus. Turns the transcripts into
-an eval corpus for the Socratic tutor (spec: [Systema-Sanscriticum
-docs/SOCRATIC_TUTOR_N02_PROMPT_SPEC.md](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/docs/SOCRATIC_TUTOR_N02_PROMPT_SPEC.md),
-handoff [H5170](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5170-OxAlpha_Systema-Sanscriticum_socratic-n02-tutor-prompt-spec_20.09.26.md)).
+an eval corpus for the Socratic tutor (spec: Systema PR
+[#2724](https://github.com/gasyoun/Systema-Sanscriticum/pull/2724) —
+`docs/SOCRATIC_TUTOR_N02_PROMPT_SPEC.md` after merge; handoff
+[H5170](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5170-OxAlpha_Systema-Sanscriticum_socratic-n02-tutor-prompt-spec_20.09.26.md)).
 
 ## Files
 
@@ -87,7 +88,7 @@ film `BZQgfGBtCho` are move-free).
 ## Links (bilateral per H5171)
 
 - Spec → corpus: [H5170](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5170-OxAlpha_Systema-Sanscriticum_socratic-n02-tutor-prompt-spec_20.09.26.md) «золотые диалоги: itkin» + eval baseline.
-- Analysis → corpus: [ZALIZNYAK_HINTING_STYLE_ANALYSIS_19-09-2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/ZALIZNYAK_HINTING_STYLE_ANALYSIS_19-09-2026.md) §6.3, §3.
-- Corpus → spec: this file.
+- Analysis → corpus: [ZALIZNYAK_HINTING_STYLE_ANALYSIS_19-09-2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/ZALIZNYAK_HINTING_STYLE_ANALYSIS_19-09-2026.md) §6.3, §8.
+- Corpus → spec: this file (+ Systema PR [#2724](https://github.com/gasyoun/Systema-Sanscriticum/pull/2724)).
 
 _Гасунс_
