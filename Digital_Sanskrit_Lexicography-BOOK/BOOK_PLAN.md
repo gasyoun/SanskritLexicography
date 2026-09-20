@@ -212,6 +212,7 @@ The book's evidentiary base already exists as committed datasets. Highest-value 
 | 5 (A16) | MW block-economy tables/figures (MWS) | 286,561 entries; G5 P 0.86 / R 0.87 | figures 1–3 |
 | 9 (A35) | `mw_etymology.tsv` + oracle (csl-orig) | 9,377 derivations, 10 dicts | derivation-agreement figure |
 | 11/12 (A08/A50) | `<ls>` citation graph (csl-atlas) | 828,505 citations → 912 texts | flagship network figure |
+| 12 (A50) | [`MW-UNABSORBED-CENSUS-*.tsv` (SanskritLexicography)](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md) | 571 vol-7 homonym-extensions unabsorbed; 8,406 new vol-7 headwords | Appendix A tables (ALL-LAYERS + POS-CLASS), cited from Ch. 12 §3.5 (MG 17-09-2026: chapter stays prose) |
 | 15 (A12) | `correction_events_release.csv` (csl-observatory) | 52,498 events × 43 dicts × 208 correctors (released snapshot, 2014-03-18 → 2026-05-30) | figure + appendix dataset |
 | — (data-hub) | [kosha data-v0.1.0](https://github.com/gasyoun/kosha/releases/tag/data-v0.1.0) | 7 datasets, ~718k rows, CC BY-SA | appendix manifest |
 

@@ -16,8 +16,17 @@ Match ladder, first hit wins:
 | `sandhi/diacritic-normalized` | final visarga / anusvara / neuter -m dropped, then exact |
 | `inflected-form->stem` | a form->lemma witness analyses it as a **nominal** form of a PWG headword |
 | `finite-form->root` | no nominal reading lands in PWG, but a **verbal** one does - the dhatu step |
+| `present-stem->root` | no witness covers it, but stripping a present-class ending lands on a PWG root (H4749 rung) |
+| `feminine->stem` | a feminine `-i` heading whose masculine stem is a PWG headword: `-in` first, then the bare stem (-vat/-ant class), then thematic `-a` (H4749 rung) |
 | `ambiguous-multi` | the chosen route reaches >1 distinct PWG headword |
 | `unmatched` | none of the above - reported, never collapsed onto a near miss |
+
+The last two morphological rungs (`present-stem->root`, `feminine->stem`) are
+the H4749 extension: H3169 used them only to *size* the unmatched residue;
+they are now applied as the **lowest-ranked, flagged** claims - ranked below
+every witness route because a bare rule carries no per-row morphological
+witness, and every row they match carries the `rule-rung-applied` flag so the
+class stays reviewable and never inflates coverage silently.
 
 **Why the rule route outranks the witness route.** Adjudication of the seeded
 sample caught `aknaH` (KEWA अक्नः) being sent to the root `aYc` by DCS while
@@ -100,14 +109,66 @@ def rule_variants(key: str) -> list[str]:
     return out
 
 
-# Truncations the join deliberately does NOT apply, used only to size the
-# unmatched residue.  Applying them would need a morphological witness per row;
-# counting them says how much of the residue is a witness gap rather than a
-# real absence from PWG.
+# Truncations that WERE join rungs only since H4749.  H3169 kept them
+# diagnostic-only: a bare rule carries no per-row morphological witness.
+# They are now the lowest-ranked rungs (below every witness route) and every
+# row they match is flagged `rule-rung-applied`, so the extension stays a
+# reviewable class rather than silent coverage inflation.
+PRESENT_STEM_ENDINGS = ("ati", "ate", "oti", "ute", "Ati", "Iti")
+FEMININE_STEM_TIERS = ("in", "bare", "a")   # -in feminine first (most regular), then -vat/-ant bare stems, then thematic -a
+
+
+def present_stem_rung(key: str, pwg: set[str]) -> str | None:
+    """A finite-verb heading whose present-class ending strips to a PWG root."""
+    for ending in PRESENT_STEM_ENDINGS:
+        if key.endswith(ending) and key[:-len(ending)] in pwg:
+            return key[:-len(ending)]
+    return None
+
+
+def feminine_rung(key: str, pwg: set[str]) -> str | None:
+    """A feminine `-i` heading whose masculine stem is a PWG headword.
+
+    Priority is H3169's own diagnostic order: `-in` stems (SIrI -> SIrin, the
+    most regular -in/-ini correspondence), then the bare stem (the -vat/-ant
+    class: gavatI -> gavat), then the thematic -a stem (devI -> deva).
+    """
+    if not key.endswith("I") or len(key) <= 1:
+        return None
+    stem = key[:-1]
+    for tier in FEMININE_STEM_TIERS:
+        cand = {"in": stem + "in", "bare": stem, "a": stem + "a"}[tier]
+        if cand in pwg:
+            return cand
+    return None
+
+
 DIAGNOSTIC_TRUNCATIONS = {
-    "present-stem->root": ("ati", "ate", "oti", "ute", "Ati", "Iti"),
+    "present-stem->root": PRESENT_STEM_ENDINGS,
     "feminine-in-stem": ("I",),
 }
+
+
+def selftest() -> int:
+    """Pure-function checks on the two H4749 rungs - no files needed."""
+    fake_pwg = {"Kall", "SIrin", "gavat", "gavata", "deva", "BU", "x", "xin"}
+    cases = [
+        (present_stem_rung("Kallate", fake_pwg), "Kall"),     # memo's own example
+        (present_stem_rung("JaRati", fake_pwg), None),        # root absent -> None
+        (present_stem_rung("cUlA", fake_pwg), None),          # not a finite ending
+        (present_stem_rung("Ati", fake_pwg), None),           # would strip to "" - never
+        (feminine_rung("SIrI", fake_pwg), "SIrin"),           # tier -in (memo example)
+        (feminine_rung("gavatI", fake_pwg), "gavat"),         # tier bare (-vat class)
+        (feminine_rung("devI", fake_pwg), "deva"),            # tier -a (thematic)
+        (feminine_rung("xI", fake_pwg), "xin"),               # -in outranks bare when both exist
+        (feminine_rung("cUlA", fake_pwg), None),              # no -i at all
+        (feminine_rung("I", fake_pwg), None),                 # degenerate single char
+    ]
+    bad = [(got, want) for got, want in cases if got != want]
+    for got, want in bad:
+        print(f"FAIL: got {got!r}, want {want!r}")
+    print(f"selftest: {len(cases) - len(bad)}/{len(cases)} checks passed")
+    return 1 if bad else 0
 
 
 def diagnose_unmatched(key: str, pwg: set[str]) -> str:
@@ -126,7 +187,12 @@ def main() -> int:
     ap.add_argument("--github-root", default=DEFAULT_ROOT)
     ap.add_argument("--indir", default=os.path.join(HERE, "..", "..", "data", "etym"))
     ap.add_argument("--outdir", default=os.path.join(HERE, "..", "..", "data", "etym"))
+    ap.add_argument("--selftest", action="store_true",
+                    help="run the pure-function checks on the H4749 rungs and exit")
     args = ap.parse_args()
+
+    if args.selftest:
+        return selftest()
 
     root = args.github_root
     indir, outdir = os.path.abspath(args.indir), os.path.abspath(args.outdir)
@@ -201,6 +267,22 @@ def main() -> int:
                 break
             if basis == "unmatched" and lemma_hits:
                 basis, hits, witness = lemma_basis, lemma_hits, "+".join(wits)
+
+            # H4749 rungs - ranked last (below every witness route), because a
+            # bare rule carries no per-row morphological witness; every row
+            # they land is flagged so the class stays reviewable.
+            if basis == "unmatched":
+                root = present_stem_rung(key, pwg)
+                if root:
+                    basis, hits, witness = "present-stem->root", [root], "rule"
+                    flags.append("rule-rung-applied")
+                    census["rule-rung-applied"] += 1
+            if basis == "unmatched":
+                stem = feminine_rung(key, pwg)
+                if stem:
+                    basis, hits, witness = "feminine->stem", [stem], "rule"
+                    flags.append("rule-rung-applied")
+                    census["rule-rung-applied"] += 1
 
         lemma_route = "|".join(lemma_hits)
         if not lemma_hits:

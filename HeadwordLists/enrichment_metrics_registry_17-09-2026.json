@@ -1,0 +1,160 @@
+{
+ "annexure_tag": "<info n=\"sup\"/>",
+ "conventions": [
+  "C1 k1-only",
+  "C2 annexure = tag-bearing k1",
+  "C3 main = k1_all - annexure (proper partition)",
+  "C4 enrichment = annex_share/main_share",
+  "C5 sup hw = k2.lstrip('*') or k1"
+ ],
+ "enrichment_rows": [
+  {
+   "annexure_share_pct": 29.6,
+   "enrichment": 7.785374067636833,
+   "enrichment_fmt": "7.79x",
+   "in_annexure": 1798,
+   "in_main": 7157,
+   "main_share_pct": 3.8,
+   "n": 13094,
+   "source_set": "pw:sup_7",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 32.2,
+   "enrichment": 7.914392689390719,
+   "enrichment_fmt": "7.91x",
+   "in_annexure": 1956,
+   "in_main": 7659,
+   "main_share_pct": 4.1,
+   "n": 14401,
+   "source_set": "pw:sup",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 32.5,
+   "enrichment": 7.84399419444642,
+   "enrichment_fmt": "7.84x",
+   "in_annexure": 1971,
+   "in_main": 7787,
+   "main_share_pct": 4.1,
+   "n": 14995,
+   "source_set": "pwkvn",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 6.8,
+   "enrichment": 2.0885847806543207,
+   "enrichment_fmt": "2.09x",
+   "in_annexure": 413,
+   "in_main": 6128,
+   "main_share_pct": 3.3,
+   "n": 17777,
+   "source_set": "bhs",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 16.5,
+   "enrichment": 0.3307911829319413,
+   "enrichment_fmt": "0.33x",
+   "in_annexure": 1001,
+   "in_main": 93778,
+   "main_share_pct": 49.9,
+   "n": 106082,
+   "source_set": "pwg",
+   "status": "OK"
+  }
+ ],
+ "matrix_dicts": [
+  "mw72",
+  "pw",
+  "pwg",
+  "bhs",
+  "mw",
+  "pwkvn"
+ ],
+ "matrix_rows": [
+  {
+   "n_in_bhs": 1549,
+   "n_in_mw": 8955,
+   "n_in_mw72": 2892,
+   "n_in_pw": 13086,
+   "n_in_pwg": 3855,
+   "n_in_pwkvn": 13085,
+   "share_bhs_pct": 11.8,
+   "share_mw72_pct": 22.1,
+   "share_mw_pct": 68.4,
+   "share_pw_pct": 99.9,
+   "share_pwg_pct": 29.4,
+   "share_pwkvn_pct": 99.9,
+   "source_set": "pw:sup_7"
+  },
+  {
+   "n_in_bhs": 1582,
+   "n_in_mw": 9615,
+   "n_in_mw72": 3013,
+   "n_in_pw": 14392,
+   "n_in_pwg": 3990,
+   "n_in_pwkvn": 14391,
+   "share_bhs_pct": 11.0,
+   "share_mw72_pct": 20.9,
+   "share_mw_pct": 66.8,
+   "share_pw_pct": 99.9,
+   "share_pwg_pct": 27.7,
+   "share_pwkvn_pct": 99.9,
+   "source_set": "pw:sup"
+  },
+  {
+   "n_in_bhs": 1605,
+   "n_in_mw": 9758,
+   "n_in_mw72": 3036,
+   "n_in_pw": 14973,
+   "n_in_pwg": 4041,
+   "n_in_pwkvn": 14995,
+   "share_bhs_pct": 10.7,
+   "share_mw72_pct": 20.2,
+   "share_mw_pct": 65.1,
+   "share_pw_pct": 99.9,
+   "share_pwg_pct": 26.9,
+   "share_pwkvn_pct": 100.0,
+   "source_set": "pwkvn"
+  },
+  {
+   "n_in_bhs": 17777,
+   "n_in_mw": 6541,
+   "n_in_mw72": 3036,
+   "n_in_pw": 6089,
+   "n_in_pwg": 4780,
+   "n_in_pwkvn": 1605,
+   "share_bhs_pct": 100.0,
+   "share_mw72_pct": 17.1,
+   "share_mw_pct": 36.8,
+   "share_pw_pct": 34.3,
+   "share_pwg_pct": 26.9,
+   "share_pwkvn_pct": 9.0,
+   "source_set": "bhs"
+  },
+  {
+   "n_in_bhs": 4780,
+   "n_in_mw": 94779,
+   "n_in_mw72": 35000,
+   "n_in_pw": 99455,
+   "n_in_pwg": 106082,
+   "n_in_pwkvn": 4041,
+   "share_bhs_pct": 4.5,
+   "share_mw72_pct": 33.0,
+   "share_mw_pct": 89.3,
+   "share_pw_pct": 93.8,
+   "share_pwg_pct": 100.0,
+   "share_pwkvn_pct": 3.8,
+   "source_set": "pwg"
+  }
+ ],
+ "orig": "/Users/mac/Documents/GitHub/csl-orig/v02",
+ "target": "mw",
+ "target_counts": {
+  "annexure": 6067,
+  "k1_all": 194083,
+  "main": 188016
+ },
+ "tool": "enrichment_compare.py"
+}

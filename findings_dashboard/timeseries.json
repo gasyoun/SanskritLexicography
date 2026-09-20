@@ -116,12 +116,12 @@
    }
   },
   {
-   "date": "2026-09-02",
+   "date": "2026-09-20",
    "source": "build",
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
     "glossary_vidyut_coverage_pct": null,
-    "pwg_citation_coverage_pct": 83.6,
+    "pwg_citation_coverage_pct": 83.5,
     "queue_verdicts": {
      "PASS": 139,
      "DROP": 1,
@@ -144,11 +144,11 @@
     "queue_decay_pct": 0.5
    },
    "registry": {
-    "total": 278,
+    "total": 295,
     "by_importance": {
-     "2": 137,
-     "1": 32,
-     "3": 109
+     "2": 141,
+     "1": 36,
+     "3": 118
     },
     "stale": 0
    }

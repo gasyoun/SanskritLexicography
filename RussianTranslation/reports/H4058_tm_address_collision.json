@@ -1,0 +1,379 @@
+{
+ "schema": "h4058-tm-address-collision/v1",
+ "rows": 11519,
+ "distinct_addresses": 2445,
+ "shared_addresses": 1263,
+ "rows_under_shared_addresses": 10328,
+ "shared_addresses_with_differing_sense_identity": 1247,
+ "shared_addresses_with_differing_ru": 1262,
+ "shared_addresses_with_differing_key1": 2,
+ "max_rows_per_address": 100,
+ "h4056_cards_holdout": [
+  {
+   "key1": "Ap",
+   "sense_tag": "note",
+   "address_rows": 8,
+   "sibling_senses_same_address": [
+    [
+     "_ap~~h0_00_pwg01",
+     "6"
+    ],
+    [
+     "_ap~~h0_00_pwg01",
+     "caus-1"
+    ],
+    [
+     "_ap~~h0_00_pwg01",
+     "caus-2"
+    ],
+    [
+     "_ap~~h0_00_pwg01",
+     "caus-3"
+    ],
+    [
+     "_ap~~h0_00_pwg01",
+     "caus-4"
+    ],
+    [
+     "_ap~~h0_00_pwg01",
+     "des-1"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "<ab>Vgl.</ab> {#anApta#}. — <ab>caus.</ab> {#Apayati#}; <ab>gerund.</ab> с <ab>praepp.</ab> {#Apayya#} или {#Apya#}\n<ls>"
+  },
+  {
+   "key1": "Bid",
+   "sense_tag": "1",
+   "address_rows": 3,
+   "sibling_senses_same_address": [
+    [
+     "_bid~~h0_00_pwg00",
+     "head"
+    ],
+    [
+     "_bid~~h0_00_pwg00",
+     "1-sub-einen Damm durchbrechen"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "<div n=\"1\"> 1) {%раскалывать, проламывать, пробивать отверстие в чем-либо, разбивать, разносить, разрывать, разрезать%}:"
+  },
+  {
+   "key1": "Buj",
+   "sense_tag": "ava",
+   "address_rows": 1,
+   "sibling_senses_same_address": [],
+   "holdout": "miss",
+   "hit_keys": null,
+   "hit_ru_equals_card_ru": null,
+   "hit_ru_head": null,
+   "card_ru_head": "<div n=\"p\">— {#ava#} {%загибать вниз, вгибать%}\n<ls>KAUŚ. 19.</ls> {#BagnAvaBugnaBUyizWEH (drumEH)#} {%согнутый вниз, пр"
+  },
+  {
+   "key1": "Cid",
+   "sense_tag": "5",
+   "address_rows": 7,
+   "sibling_senses_same_address": [
+    [
+     "_cid~~h0_00_pwg00",
+     "header"
+    ],
+    [
+     "_cid~~h0_00_pwg00",
+     "1"
+    ],
+    [
+     "_cid~~h0_00_pwg00",
+     "2"
+    ],
+    [
+     "_cid~~h0_00_pwg00",
+     "3"
+    ],
+    [
+     "_cid~~h0_00_pwg00",
+     "4"
+    ],
+    [
+     "_cid~~h0_00_pwg00",
+     "cross-ref"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "5) {#Cinna#} {%пришедший в упадок, обессиленный, утомленный%}: {#strI˚, BAra˚, mArga˚#}\n<ls>VYUTP. 209.</ls>"
+  },
+  {
+   "key1": "DA",
+   "sense_tag": "caus.",
+   "address_rows": 1,
+   "sibling_senses_same_address": [],
+   "holdout": "miss",
+   "hit_keys": null,
+   "hit_ru_equals_card_ru": null,
+   "hit_ru_head": null,
+   "card_ru_head": "<div n=\"p\">— <ab>caus.</ab> {#DApayati#}\n<ls>P. 7,3,36</ls>; <ab>s. u.</ab> {#antar, api, aBi, ava, A, ni, saMni, pari, "
+  },
+  {
+   "key1": "Sam",
+   "sense_tag": "NWS-1",
+   "address_rows": 25,
+   "sibling_senses_same_address": [
+    [
+     "_sam~~h0_zz_nws00",
+     "NWS-2"
+    ],
+    [
+     "_sam~~h0_zz_nws00",
+     "NWS-3"
+    ],
+    [
+     "_sam~~h0_zz_nws00",
+     "NWS-4"
+    ],
+    [
+     "_sam~~h0_zz_nws00",
+     "NWS-5"
+    ],
+    [
+     "_sam~~h0_zz_nws00",
+     "NWS-6"
+    ],
+    [
+     "_sam~~h0_zz_nws00",
+     "NWS-7"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "{#śam (=pw śam 1)#} [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Ins. того, посредством чего или ч"
+  },
+  {
+   "key1": "Sru",
+   "sense_tag": "2",
+   "address_rows": 2,
+   "sibling_senses_same_address": [
+    [
+     "_sru~~h0_00_pwg01",
+     "3"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "<div n=\"1\">— 2) <ab>med.</ab> = <ab>act.</ab> (в эпосе всегда лишь по метрическим соображениям): {#Sf\\Ru\\zva su\\Srava^st"
+  },
+  {
+   "key1": "brU",
+   "sense_tag": "1",
+   "address_rows": 4,
+   "sibling_senses_same_address": [
+    [
+     "br_u~~h0_00_pwg00",
+     "intro"
+    ],
+    [
+     "br_u~~h0_00_pwg00",
+     "1a"
+    ],
+    [
+     "br_u~~h0_00_pwg00",
+     "1b"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "<div n=\"1\"> 1) {%говорить, произносить, сообщать; называть%};"
+  },
+  {
+   "key1": "car",
+   "sense_tag": "header",
+   "address_rows": 5,
+   "sibling_senses_same_address": [
+    [
+     "car~~h0_00_pwg00",
+     "1"
+    ],
+    [
+     "car~~h0_00_pwg00",
+     "2"
+    ],
+    [
+     "car~~h0_00_pwg00",
+     "3"
+    ],
+    [
+     "car~~h0_00_pwg00",
+     "3a"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "{#car#}¦, {#ca/rati#} (ep. также <ab>med.</ab>)\n<ls>DHĀTUP. 15,51.</ls> {#cacAra, cacarTa#} (\n<ls>BHĀG. P. 4,28,52</ls>)"
+  },
+  {
+   "key1": "dA",
+   "sense_tag": "A. Präsensformen",
+   "address_rows": 3,
+   "sibling_senses_same_address": [
+    [
+     "d_a~~h0_00_pwg00",
+     "B. allgemeine Formen"
+    ],
+    [
+     "d_a~~h0_00_pwg00",
+     "1) geben, schenken; verleihen, gewähren"
+    ]
+   ],
+   "holdout": "hit",
+   "hit_keys": [
+    "card",
+    "gate_status",
+    "gate_version",
+    "id",
+    "model",
+    "model_version",
+    "n_senses",
+    "raw_sha256",
+    "reuse_policy",
+    "review_status",
+    "root",
+    "source_kind",
+    "src_key",
+    "supersedes",
+    "trust_level"
+   ],
+   "hit_ru_equals_card_ru": false,
+   "hit_ru_head": "",
+   "card_ru_head": "{#dA#}¦ ({#dad, dAy#}) A. Формы настоящего времени: <div n=\"2\"> a) {#da/dAti#} <ls>DHĀTUP. 25,9.</ls> {#da/ttas, da/dmam"
+  }
+ ]
+}
