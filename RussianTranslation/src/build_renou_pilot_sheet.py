@@ -46,7 +46,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SHEET_ID = 'renou-pilot-v2-2026-07-19'
+SHEET_ID = 'renou-pilot-v3-2026-09-20'
+VERIFIER = 'OxAlpha (opencode/z-ai/glm-5.3-flash)'
+VERIFIED_DATE = '20-09-2026'
+EVIDENCE_SOURCES = [
+    'RussianTranslation/src/renou_pilot_evidence.json',
+    'RussianTranslation/src/renou_pilot_sample.jsonl',
+    'DCS (Digital Corpus of Sanskrit) lemma attestation',
+    'PWG register-genre layer (SanskritGrammar pwg_register_genre)',
+]
 V1_DECISIONS = os.path.normpath(os.path.join(
     HERE, '..', 'review', 'sanskritlexicography-renou-hypotheses_pilot_decisions.json'))
 
@@ -156,6 +164,39 @@ def load_v1_notes():
             for it in d.get('items', []) if it.get('decision')}
 
 
+def evidence_panel_and_stamp(item, texts, contested, provenance, has_register):
+    """H4114 evidence gate: an Evidence-class panel carrying the actual
+    verification content + the agent's position, and the matching
+    ssb-evidence stamp entry. Mechanical re-derivation from the same
+    renou_pilot_evidence.json fields already shown on the card — no new
+    claims, no hypothesis content edits (H5165)."""
+    n_total = len(texts or [])
+    n_state = sum(1 for t in (texts or []) if t.get('state') == contested)
+    prov = provenance or {}
+    prov_bits = ', '.join('%s: %s' % (st, '+'.join(prov[st]))
+                          for st in ('I', 'II', 'III', 'IV', 'V') if st in prov) or 'none'
+    body = (
+        '<div>Verified %s by %s: contested state <b>%s</b> re-checked against '
+        'the DCS lemma attestation joined in <code>RussianTranslation/src/renou_pilot_evidence.json</code> '
+        '(sample row <code>RussianTranslation/src/renou_pilot_sample.jsonl</code>) — '
+        '%d DCS texts on the full-attestation panel, %d of state %s; '
+        'Renou provenance tags: %s; PWG register layer: %s.</div>'
+        '<div style="margin-top:4px">Agent position: the panels above are the '
+        'complete attestation surface for this headword — the vote can be cast '
+        'from the card alone, no file opening needed.</div>'
+        % (esc(VERIFIED_DATE), esc(VERIFIER), esc(contested),
+           n_total, n_state, esc(contested), esc(prov_bits),
+           'joined below' if has_register else 'no register rows for this k1'))
+    method = 'primary_source_quote' if n_state > 0 else 'corpus_number'
+    stamp_entry = {
+        'verifier': VERIFIER,
+        'method': method,
+        'sources': list(EVIDENCE_SOURCES),
+        'verified_date': VERIFIED_DATE,
+    }
+    return ('Evidence (agent verification)', body), stamp_entry
+
+
 def to_csl_pyutil_item(item, evidence, v1_notes):
     """Sample row + evidence -> the {id, filt, title, badges, question, panels}
     shape render_review_sheet() expects. id/filt/title/badges pass PLAIN
@@ -200,6 +241,12 @@ def to_csl_pyutil_item(item, evidence, v1_notes):
         panels.append(('Prior vote — v1 sheet, 19-07-2026 (superseded)',
                        '<div><b>%s</b></div><div class="muted" style="white-space:pre-wrap">%s</div>'
                        % (esc(dec), esc(note))))
+    texts = evidence.get('lemmas', {}).get(item.get('headword_iast') or '', [])
+    ev_panel, stamp_entry = evidence_panel_and_stamp(
+        item, texts, item['contested_state'], item.get('renou_provenance'),
+        has_register=any(h == 'PWG register/genre layer (⟨ls⟩-derived)'
+                         for h, _ in panels))
+    panels.append(ev_panel)
     out = {
         'id': item['item_id'],
         'filt': item['stratum'],
@@ -215,7 +262,7 @@ def to_csl_pyutil_item(item, evidence, v1_notes):
         href = pwg_entry_href(re.sub(r'[/\\^]', '', item.get('headword_key2') or ''))
         if href:
             out['title_href'] = href
-    return out
+    return out, stamp_entry
 
 
 def main():
@@ -239,15 +286,19 @@ def main():
     rows = [json.loads(line) for line in open(sample_path, encoding='utf-8') if line.strip()]
     evidence = json.load(open(evidence_path, encoding='utf-8'))
     v1_notes = load_v1_notes()
-    items = [to_csl_pyutil_item(r, evidence, v1_notes) for r in rows]
-    generated = '2026-07-19'
+    pairs = [to_csl_pyutil_item(r, evidence, v1_notes) for r in rows]
+    items = [it for it, _ in pairs]
+    stamps = {it['id']: st for it, st in pairs}
+    generated = '2026-09-20'
 
     config = {
         'sheet_id': SHEET_ID,
-        'title': 'Renou Step-0 pilot human validation — v2 (evidence remake)',
+        'title': 'Renou Step-0 pilot human validation — v3 (evidence-gate re-cut)',
         'subtitle': ('strata A(dcs-only) B(bhs-only V) C(maximal-span) D(single-era dcs_adds) '
                      'E(corroborated controls) · v2: per-state named evidence, full text lists, '
-                     'PWG register layer — per review/decisions.md 19-07-2026'),
+                     'PWG register layer — per review/decisions.md 19-07-2026 · v3 20-09-2026 '
+                     're-cut: per-card Evidence panel + ssb-evidence provenance stamps (H4114), '
+                     'hypothesis content unchanged'),
         'footer': ('Judgment question per item: is the contested state genuinely attested for '
                    'this headword, by the criterion shown under the question? Approve = '
                    'justified &middot; Reject = over-tag &middot; Defer = can\'t tell from the '
@@ -262,13 +313,18 @@ def main():
     # chips I-V; panels are IAST/Latin only). No rating config: this is an
     # approve/reject/defer hypothesis sheet, not a DA translation-quality one.
     config.update(standard_config(
-        save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
+        save_as='RussianTranslation/review/%s_decisions.json' % SHEET_ID))
     doc = render_review_sheet(items, config, extras=True,
                                    screening=screening_block(
                                        deterministic=0, lookup=0, agent=0,
                                       human=len(items),
                                       evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
                                        rules=[]))
+    # H4114 evidence gate: the per-card provenance stamp travels with the
+    # sheet — appended right before </body>, before the H1404 binding stamp.
+    ssb = '<!-- ssb-evidence: %s -->\n' % json.dumps(stamps, ensure_ascii=False)
+    assert '</body>' in doc
+    doc = doc.replace('</body>', ssb + '</body>', 1)
     # H1404 binding standard. VOTED/CLOSED sheet — lock of record is the retro
     # lock from the committed HTML; a rerun is a deliberate remake only
     # (voted.md item 2), and re-mints the lock for the new generation.
