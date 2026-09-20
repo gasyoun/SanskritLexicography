@@ -1,0 +1,53 @@
+{
+ "schema": "pwg.h4527_acceptance_compare.v1",
+ "ok": true,
+ "serial_lease": "h4213can091108282902",
+ "cohort_lease": "h4527sen08",
+ "same_outcome": false,
+ "sealed_artifacts": {
+  "shared_count": 19,
+  "serial_only": [
+   "requeue/"
+  ],
+  "cohort_only": [
+   "wf_output.clean.<lease>.json"
+  ],
+  "outcome_driven_differences": [
+   "requeue/",
+   "wf_output.clean.<lease>.json"
+  ],
+  "route_driven_differences": [],
+  "schema_mismatches": []
+ },
+ "journal_advancement": {
+  "window_status_keys_identical": true,
+  "window_status_key_count": 31,
+  "ledger_row_key_sets_identical": true,
+  "ledger_rows": {
+   "serial": 1,
+   "cohort": 1
+  }
+ },
+ "promotion_discipline": {
+  "serial": {
+   "state": "needs_requeue",
+   "clean_key_count": 0,
+   "requeue_count": 1,
+   "requeue_keys": [
+    "arvant~~h0_zz_nws00"
+   ],
+   "selected_key_count": 1,
+   "profile": "c1",
+   "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py."
+  },
+  "cohort": {
+   "state": "clean",
+   "clean_key_count": 1,
+   "requeue_count": 0,
+   "requeue_keys": [],
+   "selected_key_count": 1,
+   "profile": "c1",
+   "next_action": "Send judge_sample.keys.txt to sampled semantic judging outside Python."
+  }
+ }
+}
