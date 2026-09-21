@@ -2,7 +2,9 @@
 
 _Created: 21-09-2026 · Last updated: 21-09-2026_
 
-**Status:** the review has **not** happened yet. On 21-09-2026 at 14:09Z, Opus 5 (`claude-opus-5`, interactive `/go`) launched it as `codex exec --sandbox read-only` (`gpt-6-astra`, reasoning effort high). The launch died before the first tool call with `You've hit your usage limit ... try again at 10:02 PM` (Mac local time). Codex thread: `01a0c44c-ab21-7de0-8f6e-424a61e7616b`. There were zero paid PWG calls and zero probe attempts, and nothing was written.
+**Status (updated 21-09-2026, 16:30Z):** the review **ran and returned FAIL**. Codex `gpt-5.6-sol` on MSI, session `01a0c4ac-fbca-7103-a164-7ca779101aa0`; verdict and consequences in [H4527_WORK_ITEM_2_CODEX_VERDICT_FAIL_21-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/H4527_WORK_ITEM_2_CODEX_VERDICT_FAIL_21-09-2026.md). The run checked out, but `byte_identical_to_serial: true` overclaims, so no record is written.
+
+**Earlier status:** the review has **not** happened yet. On 21-09-2026 at 14:09Z, Opus 5 (`claude-opus-5`, interactive `/go`) launched it as `codex exec --sandbox read-only` (`gpt-6-astra`, reasoning effort high). The launch died before the first tool call with `You've hit your usage limit ... try again at 10:02 PM` (Mac local time). Codex thread: `01a0c44c-ab21-7de0-8f6e-424a61e7616b`. There were zero paid PWG calls and zero probe attempts, and nothing was written.
 
 ## 1. The packet's paste-ready record does not validate — use this shape instead
 
