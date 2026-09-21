@@ -1037,6 +1037,175 @@ def test_10_h3_checkpoint_fsync(td):
         raise AssertionError('checkpoint bytes changed (CRLF or missing trailing newline)')
 
 
+def _exit_code_of(summary):
+    """Score a real engine summary through the SHIPPED cohort exit contract (H5209)."""
+    return bsr.cohort_exit_code(summary)
+
+
+def test_11_resume_unparks_a_profile_after_promote_reports_stranded_lease(td):
+    """H5211 state (B): a promoted-but-not-TM-rebuilt wave resumed with a profile UNPARKED.
+
+    Life 1 settles clean with c2 parked (only leaseA runs and is promoted) and crashes
+    between promote and the TM rebuild, leaving promoted=True / tm_done=False. Life 2
+    resumes with c2 unparked. Its lease leaseB is now admitted and runnable, but dispatch
+    is gated on `not promoted`, and the terminal barrier used to BREAK before
+    `stop_reason` was assigned while `_promote_and_tm()` still flipped tm_done — so the
+    wave reported stop_reason None, promoted/tm_done True, accepted ['leaseA'] and exited
+    0 with leaseB absent from `summary['leases']` entirely. Dispatch stays unchanged (a
+    promoted wave admits nothing new); the pin is that the engine SAYS so.
+    """
+    td = os.path.join(td, 't11'); os.makedirs(td)
+    windows = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    checkpoint = os.path.join(td, 'cp.json')
+    promoter = FakePromoter(os.path.join(td, 'store.txt'))
+    contract = ('a resumed wave that cannot dispatch an admitted, unparked plan member '
+                'must record a stop_reason naming it, never settle silently')
+
+    # Life 1: c2 parked; the TM rebuild crashes after the promotion commit.
+    meter1 = ConcurrencyProbe()
+    engine = build_engine(
+        windows, FakeWorker(td, meter1), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=FakeTM(fail_times=1), width=2,
+        admitted={'c1', 'c2'}, parked={'c2'}, contract=contract)
+    crashed = False
+    try:
+        engine.run()
+    except SimulatedCrash:
+        crashed = True
+    assert crashed, 'fixture defect: the injected TM crash must propagate'
+    with open(checkpoint, encoding='utf-8') as f:
+        cp = json.load(f)
+    assert cp['wave']['promoted'] is True and cp['wave']['tm_done'] is False, (
+        'fixture defect: life 1 must end promoted/not-TM-rebuilt: %r' % cp['wave'])
+    assert 'leaseB' not in (cp.get('leases') or {}), (
+        'fixture defect: parked leaseB must never have run in life 1: %r' % cp['leases'])
+    assert cp.get('stop_reason') is None, cp.get('stop_reason')
+
+    _forget_engine_module()
+
+    # Life 2: resume with c2 UNPARKED.
+    meter2 = ConcurrencyProbe()
+    tm2 = FakeTM()
+    engine2 = build_engine(
+        windows, FakeWorker(td, meter2), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm2, width=2, admitted={'c1', 'c2'},
+        parked=(), resume=True, contract=contract)
+    summary = engine2.run()
+
+    # Unchanged behaviour: nothing new dispatched, one promotion, TM finished.
+    assert meter2.launches == [], meter2.launches
+    assert promoter.commits == [('leaseA',)], promoter.commits
+    assert tm2.successes == 1, tm2.successes
+    assert summary['wave']['promoted'] and summary['wave']['tm_done'], summary['wave']
+
+    # THE PIN.
+    reason = summary.get('stop_reason')
+    assert reason, ('state (B): resumed wave stranded leaseB and reported NO stop_reason '
+                    '— exit %d: %r' % (_exit_code_of(summary), summary))
+    assert 'leaseB' in reason and 'c2' in reason, reason
+    assert _exit_code_of(summary) != 0, (
+        'state (B) must not exit 0: %r' % summary)
+    with open(checkpoint, encoding='utf-8') as f:
+        assert json.load(f).get('stop_reason') == reason, 'reason not persisted'
+
+    # Control: the same TM-only resume WITHOUT unparking is a clean wave and stays 0.
+    td_c = os.path.join(td, 'control'); os.makedirs(td_c)
+    cp_c = os.path.join(td_c, 'cp.json')
+    promoter_c = FakePromoter(os.path.join(td_c, 'store.txt'))
+    try:
+        build_engine(windows, FakeWorker(td_c, ConcurrencyProbe()), cp_c,
+                     audit=clean_audit, promote_wave=promoter_c,
+                     rebuild_tm=FakeTM(fail_times=1), width=2, admitted={'c1', 'c2'},
+                     parked={'c2'}, contract=contract).run()
+    except SimulatedCrash:
+        pass
+    _forget_engine_module()
+    clean = build_engine(windows, FakeWorker(td_c, ConcurrencyProbe()), cp_c,
+                         audit=clean_audit, promote_wave=promoter_c, rebuild_tm=FakeTM(),
+                         width=2, admitted={'c1', 'c2'}, parked={'c2'}, resume=True,
+                         contract=contract).run()
+    assert clean.get('stop_reason') is None, clean.get('stop_reason')
+    assert _exit_code_of(clean) == 0, ('control: a TM-only resume with nothing stranded '
+                                       'must still exit 0: %r' % clean)
+
+
+def test_12_settled_wave_resumed_with_a_new_plan_member_reports_it(td):
+    """H5211 state (C): a fully settled wave whose plan later gained a lease.
+
+    The checkpoint is CRAFTED by hand (not produced by a prior engine life): leaseA done,
+    promoted, TM rebuilt. The resumed plan adds leaseB on an admitted, unparked profile.
+    `run()` used to return at the "Already fully settled on resume?" early exit without
+    ever looking at the plan, so leaseB was never dispatched, never named, absent from
+    `summary['leases']`, and the wave exited 0.
+    """
+    td = os.path.join(td, 't12'); os.makedirs(td)
+    checkpoint = os.path.join(td, 'cp.json')
+    wf_a = os.path.join(td, 'wf_leaseA.json')
+    with open(wf_a, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump({'meta': {'window': 'leaseA'}, 'results': []}, f)
+
+    def craft(path):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({
+                'schema': 'pwg.cohort_engine.v1',
+                'leases': {'leaseA': {'phase': 'done', 'wf_output': wf_a,
+                                      'report': clean_audit(wf_a, {})}},
+                'wave': {'promoted': True, 'tm_done': True,
+                         'receipt': {'receipt': 1, 'members': ['leaseA']}},
+                'calls_spent': 1, 'calls_reserved': 1, 'peak_concurrency': 1,
+                'requeue_backlog_keys': [], 'accepted_order': ['leaseA'],
+                'stop_reason': None, 'effective_width': 1, 'probed': [],
+                'coord_dir': None,
+            }, f)
+    craft(checkpoint)
+
+    contract = ('a settled wave resumed with a new admitted plan member must name it, '
+                'never return early as a clean wave')
+    grown = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    meter = ConcurrencyProbe()
+    promoter = FakePromoter(os.path.join(td, 'store.txt'))
+    tm = FakeTM()
+    summary = build_engine(
+        grown, FakeWorker(td, meter), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm, width=2, admitted={'c1', 'c2'},
+        resume=True, contract=contract).run()
+
+    # Unchanged behaviour: a settled wave dispatches, promotes and rebuilds nothing.
+    assert meter.launches == [], meter.launches
+    assert promoter.commits == [], promoter.commits
+    assert tm.attempts == 0, tm.attempts
+
+    # THE PIN.
+    reason = summary.get('stop_reason')
+    assert reason, ('state (C): settled wave never inspected new plan member leaseB and '
+                    'reported NO stop_reason — exit %d: %r' % (_exit_code_of(summary),
+                                                               summary))
+    assert 'leaseB' in reason and 'c2' in reason, reason
+    assert _exit_code_of(summary) != 0, 'state (C) must not exit 0: %r' % summary
+    with open(checkpoint, encoding='utf-8') as f:
+        assert json.load(f).get('stop_reason') == reason, 'reason not persisted'
+
+    # Control: the SAME crafted checkpoint resumed with the ORIGINAL plan stays clean/0.
+    _forget_engine_module()
+    craft(checkpoint)
+    clean = build_engine(
+        [{'id': 'leaseA', 'profile': 'c1'}], FakeWorker(td, ConcurrencyProbe()),
+        checkpoint, audit=clean_audit, promote_wave=promoter, rebuild_tm=tm, width=2,
+        admitted={'c1', 'c2'}, resume=True, contract=contract).run()
+    assert clean.get('stop_reason') is None, clean.get('stop_reason')
+    assert _exit_code_of(clean) == 0, ('control: an unchanged settled wave must still '
+                                       'exit 0: %r' % clean)
+    # ... and a new member on a PARKED profile is not runnable, so it is not stranded.
+    _forget_engine_module()
+    craft(checkpoint)
+    parked = build_engine(
+        grown, FakeWorker(td, ConcurrencyProbe()), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm, width=2, admitted={'c1', 'c2'},
+        parked={'c2'}, resume=True, contract=contract).run()
+    assert parked.get('stop_reason') is None, parked.get('stop_reason')
+    assert _exit_code_of(parked) == 0, parked
+
+
 TESTS = [
     ('1 two profile-bound leases: peak_concurrency >= 2', test_1_barrier_concurrency),
     ('2 reverse completion == serial order/store bytes', test_2_reverse_completion_determinism),
@@ -1048,6 +1217,8 @@ TESTS = [
     ('8 H9: transient probe failure re-probed on resume', test_8_transient_probe_failure_is_reprobed_on_resume),
     ('9 H9: settling with undispatched leases reports stop_reason', test_9_settling_with_undispatched_leases_reports_stop_reason),
     ('10 H3: _save_checkpoint fsyncs the live fd before os.replace', test_10_h3_checkpoint_fsync),
+    ('11 H5211(B): unparked-after-promote resume names its stranded lease', test_11_resume_unparks_a_profile_after_promote_reports_stranded_lease),
+    ('12 H5211(C): settled wave with a new plan member names it', test_12_settled_wave_resumed_with_a_new_plan_member_reports_it),
 ]
 
 

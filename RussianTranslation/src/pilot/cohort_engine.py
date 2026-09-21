@@ -392,6 +392,34 @@ class CohortEngine:
         return ('wave settled with %d runnable lease(s) never dispatched: %s'
                 % (len(undispatched), detail))
 
+    # Causes under which a not-done lease still lets the wave settle (partial-wave
+    # semantics). Any other cause blocks the terminal barrier.
+    _SETTLEABLE_CAUSES = ('budget_exhausted', 'probe_failed')
+
+    def _unsettled_members(self, otherwise):
+        """Every admitted, unparked plan member whose lease is not done, as
+        (lease_id, profile, cause). `otherwise` names the cause when neither the ledger
+        nor a failed probe explains it (H5211: the wave can no longer dispatch it)."""
+        out = []
+        for w in self.plan:
+            profile = w.get('profile')
+            if self.admitted and profile not in self.admitted:
+                continue
+            if profile in self.parked:
+                continue
+            if self._lease_done(w['id']):
+                continue
+            # Budget-exhausted partial wave: allow promote of what finished.
+            if self.max_calls is not None and self.calls_reserved >= self.max_calls:
+                cause = 'budget_exhausted'
+            # Profile probe failed: no work will run for it in THIS life.
+            elif profile in self._failed_profiles:
+                cause = 'probe_failed'
+            else:
+                cause = otherwise
+            out.append((w['id'], profile, cause))
+        return out
+
     # ---- summary --------------------------------------------------------------
 
     def summary(self):
@@ -434,6 +462,13 @@ class CohortEngine:
 
             # Already fully settled on resume?
             if self.wave.get('promoted') and self.wave.get('tm_done'):
+                # H5211 state (C): the plan may have gained an admitted, unparked member
+                # since the wave settled. It will never run in this wave, and it is not in
+                # `leases` at all, so the summary alone cannot show it — name it here.
+                stranded = self._unsettled_members('wave_already_settled')
+                if stranded:
+                    self.stop_reason = self._undispatched_stop_reason(stranded)
+                    self._save_checkpoint()
                 return self.summary()
 
             # max_calls=0: reserve nothing, launch nothing.
@@ -463,26 +498,10 @@ class CohortEngine:
             # Promote when every admitted/unparked plan member is audited, OR the
             # campaign ledger is exhausted (partial wave of what finished), OR the
             # wave was already promoted (TM-only resume).
-            terminal_ok = True
-            undispatched = []   # H9: admitted+unparked leases this wave will never run
-            for w in self.plan:
-                profile = w.get('profile')
-                if self.admitted and profile not in self.admitted:
-                    continue
-                if profile in self.parked:
-                    continue
-                lease = self.leases.get(w['id']) or {}
-                if lease.get('phase') != PHASE_DONE:
-                    # Budget-exhausted partial wave: allow promote of what finished.
-                    if self.max_calls is not None and self.calls_reserved >= self.max_calls:
-                        undispatched.append((w['id'], profile, 'budget_exhausted'))
-                        continue
-                    # Profile probe failed: no work will run for it in THIS life.
-                    if profile in self._failed_profiles:
-                        undispatched.append((w['id'], profile, 'probe_failed'))
-                        continue
-                    terminal_ok = False
-                    break
+            unsettled = self._unsettled_members('wave_already_promoted')
+            # H9: admitted+unparked leases this wave will never run (still settleable).
+            undispatched = [u for u in unsettled if u[2] in self._SETTLEABLE_CAUSES]
+            terminal_ok = len(undispatched) == len(unsettled)
 
             if terminal_ok:
                 # H9: settling while runnable leases were never dispatched used to be
@@ -491,6 +510,12 @@ class CohortEngine:
                 # WHY. Recomputed (not appended) on every settle, so a life that
                 # recovers the stranded leases clears a stale reason from an earlier one.
                 self.stop_reason = self._undispatched_stop_reason(undispatched)
+            elif self.wave.get('promoted'):
+                # H5211 state (B): a resume unparked a profile after the wave was already
+                # promoted. Dispatch is closed to a promoted wave, so its leases will never
+                # run here — yet `_promote_and_tm()` below still settles the TM. This used
+                # to BREAK before any reason was assigned and exit 0. Name every one.
+                self.stop_reason = self._undispatched_stop_reason(unsettled)
 
             if terminal_ok or self.wave.get('promoted'):
                 self._promote_and_tm()
