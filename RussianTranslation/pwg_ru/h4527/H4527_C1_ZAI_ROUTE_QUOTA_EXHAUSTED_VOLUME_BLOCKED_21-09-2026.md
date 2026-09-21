@@ -51,7 +51,7 @@ Anthropic's. The rejection is therefore a quota wall on a GLM coding plan, not a
 limit. The reset stamp has no time zone. If it is Beijing time (UTC+8), the reset is
 **2026-09-23 18:13:42Z**. That is unverified.
 
-## What this does to earlier evidence (unverified, stated as a risk)
+## What this does to earlier evidence
 
 The 20-09 acceptance window (`h4527-acc-200920`, first clean card, store 11521 → 11524) ran at
 18:01Z, **after** the 13:42Z settings change. The profile's session transcripts for that window
@@ -61,9 +61,14 @@ cannot tell whether that card was translated by Claude Sonnet 5 or by GLM 5.3. A
 interactive session on `c1` at 16:50Z the same day recorded `glm-5.3` ×214, so the route was live
 before the window ran.
 
-**Open check, zero paid calls:** does `headless_worker.py` (with `--safe-mode`) inherit the
-profile's `settings.json` `env` block? If it does, every `c1` card promoted since 20-09 13:42Z was
-produced by GLM 5.3 under a `claude-sonnet-5` label.
+**The canary answers whether the headless lane picks up the route.** This pass's canary went
+through `headless_worker.py` with safe mode at the lane default, and z.ai rejected it in z.ai's own
+format. So the headless route **does** inherit the profile's `settings.json` `env` block. The
+settings file has not been written since 20-09 13:42:30Z, so the 18:01Z window took the same route.
+z.ai's Anthropic-compatible endpoint serves only GLM models. **Inference, high confidence, not
+proven from a response header:** the 20-09 acceptance card `darv_i~~h0_zz_pw`, and every `c1` card
+promoted since 20-09 13:42Z, was produced by GLM 5.3 under a `claude-sonnet-5` label. That matters
+for H4527 work item 2: the reviewed window's `gen_model` field is wrong.
 
 ## Mechanical side effects this pass caused, and what was restored
 
