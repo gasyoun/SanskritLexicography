@@ -658,6 +658,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "A null-card window is a transient requeue, never an acceptance: COHORT_LIVE_ACCEPTANCE.json stays unwritten until a window accepts at least one card, because serial_acceptance.via_cohort_path claims byte-identical accepted/promotion accounting that an empty accepted set cannot carry. AMENDED 16-09-2026 by the diagnosis: do NOT resume lease h4527acc05 as 'a cheap re-run'. Re-running a zero-sense card reproduces the same zero heal pool and spends one of two daily ration attempts to re-test a bind that already failed. Prepare a fresh window-size-1 acceptance lease on a card with senses >= 1 (zero paid calls; preparation builds harness+manifest only), then probe -> canary GO -> the corrected --execute --cohort-path form carrying --coordinator, --cwd (a bare scratch dir, H2158) and --events, which every armed form recorded in H4527 since 11-09 omitted.",
   "residual_status": "open-paused",
   "residual_risk": "The acceptance gate stays fail-closed, so nothing can drift into width 2; the cost is one more paid window on a later UTC day, now aimed at a card that can self-heal. If a card WITH senses also returns missing-or-mismatched-key, the class is harness-wide, and the next step is retention (log the raw cards[] on the null path) before any further paid call - not another window."
+ },
+ {
+  "id": "H4527_C1_ZAI_QUOTA_429_CANARY_2026-09-21",
+  "handoff": "H4527",
+  "date": "2026-09-21",
+  "title": "Volume-wave canary on c1 rejected 429 by z.ai: the c1 profile now routes to GLM 5.3 and that plan's weekly/monthly quota is exhausted",
+  "lane": "canary_manifest_build + headless_worker dq_canary_puregloss --only-profile c1 (run h4527vx-canary-210921), ahead of a 5-lease cohort-path width-1 volume launch",
+  "model": "requested claude-sonnet-5; endpoint https://api.z.ai/api/anthropic maps sonnet/opus to glm-5.3[1m]",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go on the Mac driving MSI over tailnet ssh",
+  "expected": {
+   "agents": "one synthetic canary card judged GO, then one launch over five prepared one-card leases (h4527vol09/10/11/14/22)",
+   "tokens": "one canary call, then up to 7 calls under --max-calls 7"
+  },
+  "actual": {
+   "agents": "the canary call returned classification rate_limit, exit 21, after 213 700 ms; canary_gate judge had no out.canary.json to read (FileNotFoundError); no window was launched",
+   "tokens": "0 tokens produced; total_cost_usd 0; api_error_status 429"
+  },
+  "passes": 1,
+  "symptoms": "API Error: Request rejected (429) · [1310][Weekly/Monthly Limit Exhausted. Your limit will reset at 2026-09-24 02:13:42]",
+  "classification": "external-api",
+  "root_cause": "D:\\ClaudeTools\\profiles\\claude1\\.claude\\settings.json, last written 2026-09-20T13:42:30Z, sets ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic with ANTHROPIC_DEFAULT_SONNET_MODEL/OPUS=glm-5.3[1m]; none of the three July backups carries a base URL. The error code and wording are z.ai's. The quota wall belongs to a GLM coding plan, not to Claude Max. Author and purpose of the 20-09 change are unrecorded.",
+  "guardrail": "Before any paid c1 window, read the c1 settings.json env block for ANTHROPIC_BASE_URL (value only, never tokens). A profile slot is a route, not proof of which model answers; transcripts echo the requested model name, so the endpoint, not the log label, decides provenance. No launch until a human settles whether c1 should route to Anthropic or z.ai.",
+  "residual_status": "open-paused",
+  "residual_risk": "Any c1 card promoted since 2026-09-20T13:42:30Z, including the H4527 acceptance card darv_i~~h0_zz_pw (run h4527-acc-200920, 18:01Z), may have been produced by GLM 5.3 under a claude-sonnet-5 label; whether headless_worker --safe-mode inherits the profile env block is unverified. Five prepared leases h4527vol09/10/11/14/22 wait for the route decision."
  }
 ]
 ```
