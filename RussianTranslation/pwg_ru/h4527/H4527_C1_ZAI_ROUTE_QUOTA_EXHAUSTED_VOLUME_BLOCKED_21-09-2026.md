@@ -56,7 +56,7 @@ limit. The reset stamp has no time zone. If it is Beijing time (UTC+8), the rese
 The 20-09 acceptance window (`h4527-acc-200920`, first clean card, store 11521 → 11524) ran at
 18:01Z, **after** the 13:42Z settings change. The profile's session transcripts for that window
 record `"model": "claude-sonnet-5"` (5–9 messages per file, 17:59Z–18:02Z). But the request went to
-`api.z.ai`, and the `model` field in a transcript is whatever the endpoint echoed back. So this pass
+`api.z.ai`, and the `model` field in a transcript is whatever the endpoint echoed back. So the transcript alone
 cannot tell whether that card was translated by Claude Sonnet 5 or by GLM 5.3. A separate
 interactive session on `c1` at 16:50Z the same day recorded `glm-5.3` ×214, so the route was live
 before the window ran.
