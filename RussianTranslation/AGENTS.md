@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 15-09-2026_
+_Created: 01-08-2026 · Last updated: 22-09-2026_
 
 # AGENTS.md — RussianTranslation repo-local instructions
 
@@ -104,6 +104,16 @@ skip-list via `no_pwg_scale_plan.read_residuals`. Run
 **Offline cohort engine (H1437 / H1618):** `src/pilot/cohort_engine.py` — multi-profile
 barrier, crash-resume, atomic `max_calls` reservation; prove with
 `python src/pilot/cohort_engine_selftest.py` (7/7). Not a live production dispatcher yet.
+
+**Repair runs (H4527, 22-09-2026):** a frozen plan cannot carry a `requeue_prepared` lease or a
+re-make of an already-promoted card. `bounded_staged_run.py --repair-lease <id>` (repeatable,
+never with `--lease-id`) scopes a run to those NAMED leases only, under every existing gate:
+a `requeue_prepared` lease drains its prepared attempt, a prepared `defect-repair` lease re-makes
+its sub-cards. For a no-PWG nominal card, claim the repair with `coordinator.py claim --kind
+defect-repair --root <root> --keys <key> --nominal`. An unnamed `requeue_prepared` lease stays
+invisible to plan runs. A repair run is not resumable once dispatched (`--resume` refuses the
+now-`running`/`ready` lease; finish by hand from `coordinator.py status`). Pins:
+`bounded_staged_run_selftest` (w), `coordinator_hardening_selftest` H4527.
 
 Coordinator state is deliberately split: `claimed`/`prepared`/`requeue_prepared` reserve work but
 consume no model runtime; `begin-run` is the only transition to `running`, and `record-output` moves

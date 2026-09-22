@@ -155,6 +155,107 @@ def prepared_lease_ids(coord_state):
             if lease.get('state') == 'prepared'}
 
 
+# H4527 22-09 (2): the two repair shapes a frozen plan can never carry. A requeue attempt is
+# prepared on a lease the plan already holds (and the plan scope only imports 'prepared'
+# leases), and a defect-repair lease re-makes a sub-card whose headword the planner excludes
+# because it is promoted. Both reach a paid call only when an operator NAMES them.
+REPAIR_REQUEUE = 'requeue'
+REPAIR_DEFECT = 'defect-repair'
+
+
+def _json_file(path, what, lease_id):
+    try:
+        with open(path, encoding='utf-8') as f:
+            data = json.load(f)
+    except (OSError, ValueError, TypeError) as exc:
+        raise SystemExit('--repair-lease %s: %s is unreadable: %s: %s'
+                         % (lease_id, what, path, exc)) from exc
+    if not isinstance(data, dict):
+        raise SystemExit('--repair-lease %s: %s is not a JSON object: %s'
+                         % (lease_id, what, path))
+    return data
+
+
+def repair_windows(coord_state, repair_lease_ids):
+    """Return bounded-loop windows for leases named with --repair-lease, and nothing else.
+
+    A named lease must be one of:
+      * state 'requeue_prepared' (any kind): the window drains the lease's PREPARED requeue
+        attempt through materialize_requeue, which imports '<lease>::rqNN-<kind>' and never
+        re-runs prepare-requeue on an already-prepared lease;
+      * state 'prepared' and kind 'defect-repair': imported exactly like a plan lease.
+    Anything else (unknown, promoted, blocked, a plain prepared lease, a duplicate id) is
+    refused loudly. The keys and projected calls come from the attempt's (or the lease's)
+    execution manifest and sealed preflight, the same fields a staged plan freezes.
+    Pure apart from reading those two files."""
+    ids = list(repair_lease_ids or [])
+    if len(ids) != len(set(ids)):
+        raise SystemExit('--repair-lease names a lease more than once')
+    windows = []
+    for lease_id in ids:
+        lease = _lease_by_id(coord_state, lease_id)
+        if not isinstance(lease, dict):
+            raise SystemExit('--repair-lease %s: unknown coordinator lease' % lease_id)
+        state = lease.get('state')
+        if state == 'requeue_prepared':
+            attempt = lease.get('current_attempt') or {}
+            repair = REPAIR_REQUEUE
+            manifest_path = attempt.get('execution_manifest') or lease.get('execution_manifest')
+            preflight_path = attempt.get('preflight') or lease.get('preflight_path')
+            attempt_id = '%s%s%02d-%s' % (
+                lease_id, mao.RQ_ID_SEP,
+                int(attempt.get('number') or lease.get('requeue_attempt') or 0),
+                attempt.get('kind') or lease.get('requeue_kind') or 'requeue')
+        elif state == 'prepared' and lease.get('kind') == REPAIR_DEFECT:
+            repair = REPAIR_DEFECT
+            manifest_path = lease.get('execution_manifest')
+            preflight_path = lease.get('preflight_path')
+            attempt_id = lease_id
+        else:
+            raise SystemExit(
+                '--repair-lease %s: lease is %s/%r; only a requeue_prepared lease or a '
+                'prepared defect-repair lease can be repaired (a plain prepared lease belongs '
+                'in the staged plan)' % (lease_id, lease.get('kind'), state))
+        if not manifest_path or not preflight_path:
+            raise SystemExit('--repair-lease %s: no execution manifest / sealed preflight on '
+                             'record' % lease_id)
+        manifest = _json_file(manifest_path, 'execution manifest', lease_id)
+        preflight = _json_file(preflight_path, 'sealed preflight', lease_id)
+        keys = list((manifest.get('meta') or {}).get('selected_keys') or [])
+        if not keys:
+            raise SystemExit('--repair-lease %s: execution manifest selects no keys' % lease_id)
+        windows.append({
+            'id': lease_id,                   # == coordinator lease id (promote / audit key)
+            'root': lease_id,
+            'headwords': sorted({k.split('~~')[0] for k in keys}),
+            'subcards': keys,
+            'headless': True,
+            'projected_calls': preflight.get('agent_expected_after_tm'),
+            'manifest_sha256': mao.sha256_path(manifest_path),
+            'repair': repair,
+            'repair_job_id': attempt_id,
+        })
+    return windows
+
+
+def run_scope(plan, coord_state, requested_lease_ids=None, repair_lease_ids=None):
+    """The run's (windows, scope): the staged plan's windows, or — with --repair-lease — the
+    named repair leases ONLY. The two never mix, so a repair run cannot drag an unrelated
+    plan window into a paid call, and a plan run never sees a repair lease."""
+    if not repair_lease_ids:
+        return scope_windows(plan, requested_lease_ids)
+    if requested_lease_ids:
+        raise SystemExit('--repair-lease and --lease-id are mutually exclusive: a repair run '
+                         'is scoped to the named repair leases only')
+    windows = repair_windows(coord_state, repair_lease_ids)
+    return windows, {
+        'lease_ids': [w['id'] for w in windows],
+        'windows': windows,
+        'expected_windows': len(windows),
+        'expected_headwords': sum(len(w['headwords']) for w in windows),
+    }
+
+
 # ---------------------------------------------------------------------------
 # Cost fail-closed pre-check — reuse the economy ledger (objective 5/6).
 # ---------------------------------------------------------------------------
@@ -637,6 +738,13 @@ def make_run_window(ctx):
             if not lease_id:
                 return None       # malformed rq item -> the supervisor's A4 guard fails loudly
             scope = {materialize_requeue(ctx, lease_id)}
+        elif window.get('repair') == REPAIR_REQUEUE:
+            # H4527 22-09 (2): a NAMED requeue_prepared lease. Not a supervisor 'requeue' item
+            # (_normalize_plan resets that flag on every plan window), so it is keyed on
+            # 'repair'; materialize_requeue skips prepare-requeue for an already-prepared
+            # lease and only imports its attempt job. Promotion and audit use the lease id.
+            lease_id = window['id']
+            scope = {materialize_requeue(ctx, lease_id)}
         else:
             lease_id = window['id']
             scope = {lease_id}
@@ -849,14 +957,15 @@ def _cohort_view(cohort_width):
 
 
 def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=None,
-              accounts=None, ledger=None, cohort_width=1):
+              accounts=None, ledger=None, cohort_width=1, repair_lease_ids=None):
     """Pure planning view (H963 objective 8): what a live run WOULD do — scoped work,
     ceilings, account allocation, checkpoint path, cost-basis evaluability and the ordered
     stop policy — computed WITHOUT any generation call. `accounts` is the validated-account
     name list (optional); `ledger` is a prebuilt economy ledger (optional; built from the
     frozen probe log when omitted)."""
-    windows, scope = scope_windows(plan, requested_lease_ids)
-    prepared = prepared_lease_ids(coord_state)
+    windows, scope = run_scope(plan, coord_state, requested_lease_ids, repair_lease_ids)
+    # A repair window is importable by construction: repair_windows refuses any other state.
+    prepared = prepared_lease_ids(coord_state) | {w['id'] for w in windows if w.get('repair')}
     importable = [w['id'] for w in windows if w['id'] in prepared]
     not_prepared = [w['id'] for w in windows if w['id'] not in prepared]
     if ledger is None:
@@ -890,6 +999,10 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
             'projected_calls_from_plan': sum((w.get('projected_calls') or 0) for w in windows),
             'importable_prepared_leases': sorted(importable),
             'windows_not_prepared_skipped': sorted(not_prepared),
+            'repair_leases': [{'lease_id': w['id'], 'repair': w['repair'],
+                               'job_id': w['repair_job_id'], 'subcards': w['subcards'],
+                               'projected_calls': w.get('projected_calls')}
+                              for w in windows if w.get('repair')],
         },
         'ceilings': dict(ceilings),
         'cost_basis': {'evaluable': cost_ok, 'reason': cost_reason},
@@ -1041,6 +1154,7 @@ def run(args):
                 'without those ceilings or on the serial route (no --cohort-path, width 1).'
                 % (', '.join('--' + name.replace('_', '-') for name in dropped),
                    COHORT_LIVE_WIRING))
+    repair_lease_ids = list(getattr(args, 'repair_lease', None) or [])
     plan = json.load(open(args.plan, encoding='utf-8'))
     coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     coord_state = {}
@@ -1057,7 +1171,7 @@ def run(args):
         else {'aggregate': {}}
     view = plan_view(plan, coord_state, ceilings, args.checkpoint,
                      requested_lease_ids=args.lease_id, accounts=accounts, ledger=ledger,
-                     cohort_width=cohort_width)
+                     cohort_width=cohort_width, repair_lease_ids=repair_lease_ids)
 
     if not args.execute:
         # DEFAULT: dry-run planning view. No probe, no dispatch, no promotion, no store write.
@@ -1065,7 +1179,7 @@ def run(args):
         return 0
 
     # --- LIVE path (owner-gated). Everything below is only reached with --execute. ---
-    windows, scope = scope_windows(plan, args.lease_id)
+    windows, scope = run_scope(plan, coord_state, args.lease_id, repair_lease_ids)
     if not windows:
         raise SystemExit('bounded_staged_run: staged plan has no prepared headless windows')
     preflight_cmd = ['validate-preflight']
@@ -1155,7 +1269,10 @@ def run(args):
         # SQL scope, so the recovery UPDATE matched zero jobs and a crashed window was
         # checkpointed COMPLETED with zero output (mirrors cmd_staged_run's set(lease_ids)).
         mao.cmd_recover(argparse.Namespace(
-            db=args.db, only_external_ids=set(scope['lease_ids']),
+            # H4527 22-09 (2): a requeue repair's job is '<lease>::rqNN-<kind>', never the lease
+            # id, so its known attempt job id joins the recovery scope explicitly.
+            db=args.db, only_external_ids=set(scope['lease_ids']) | {
+                w['repair_job_id'] for w in windows if w.get('repair')},
             coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
     if cohort_path:
@@ -1238,6 +1355,15 @@ def build_parser():
     ap.add_argument('--claude-bin', default='claude',
                     help='Claude CLI binary/shim (same convention as max_account_orchestrator)')
     ap.add_argument('--lease-id', action='append', help='restrict scope to these lease roots')
+    ap.add_argument('--repair-lease', action='append', metavar='LEASE_ID',
+                    help='H4527: scope the run to these repair leases ONLY (repeatable; '
+                         'mutually exclusive with --lease-id): a requeue_prepared lease drains '
+                         'its prepared requeue attempt, a prepared defect-repair lease re-makes '
+                         'its promoted sub-cards. Any other lease state is refused. Every live '
+                         'gate (probe ration, canary receipt, --max-calls reservation) applies '
+                         'unchanged. Not resumable once dispatched: --resume refuses a '
+                         'running/ready repair lease (finish it by hand from coordinator.py '
+                         'status)')
     ap.add_argument('--checkpoint', default='bounded_staged_run.checkpoint.json')
     ap.add_argument('--execute', action='store_true',
                     help='OPT-IN: run the live drain. Default (absent) is a dry-run planning '
