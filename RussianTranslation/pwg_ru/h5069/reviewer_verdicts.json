@@ -1,0 +1,200 @@
+{
+  "reviewer": "Codex — independent blind logic critic",
+  "model_version": "gpt-6-astra",
+  "verdicts": [
+    {
+      "id": "H5069.item:05c8df4918a1bdc28c80bf17951e80de",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "German “Jmd” / “Etwas” / “an's Herz legen” is rendered jointly as “поручать кому-либо” / “что-либо” / “принять близко к сердцу”; the split wording still conveys urging someone to take something to heart. “nach Andern” → “по другим” and “nach” SĀY. → “согласно” SĀY. preserve attribution; “lohnen” / “strafen” remain “вознаграждать” / “наказывать”."
+    },
+    {
+      "id": "H5069.item:05cd537b95034a3ff59d3b44d23ebdc0",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“herbeikommen, kommen zu, in” → “прийти, прибыть к, в”; “sich einstellen, eintreffen; Jmd treffen, heimsuchen” → “наступить, явиться; постигнуть кого-либо, обрушиться на”. Both meanings remain in target_string despite absent gloss delimiters."
+    },
+    {
+      "id": "H5069.item:14494edcefc4624149641271667e0211",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "“sich zu entziehen suchen” → “пытаться уклониться”; “ausnahmsweise” → “в виде исключения”; “zur Bewillkommnung oder in feindlicher Absicht” → “для приветствия или с враждебным намерением”. The numbered senses, prefix sections, case restrictions and active/passive qualifications survive; regrouped gloss tags do not merge senses."
+    },
+    {
+      "id": "H5069.item:236356fde29e7af1fe514d77c91f82f7",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“als obdachloser Bettler umherwandern” → “вести нищенскую жизнь бездомного скитальца”: begging, homelessness and wandering all survive in a licensed paraphrase. “herumschreiten, umwandeln; umherwandern” → “обходить кругом, обращаться; странствовать”."
+    },
+    {
+      "id": "H5069.item:24c9382482d8a36599fda7f19215a525",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“folgen” → “идти следом”; “mit pass <ab>Bed.</ab>” → “с pass <ab>Bed.</ab>”. Following and the passive qualification are preserved."
+    },
+    {
+      "id": "H5069.item:35d87f6fb91c1af39d6d28aed0de42be",
+      "verdict": "omission",
+      "confidence": "medium",
+      "evidence": "The lexical gloss “{#Agamita#} {%gelesen%}” becomes “{#Agamita#} {%читается%}”. “gelesen” describes something read (прочитанный); “читается” gives an ongoing/general passive or a textual-reading statement, dropping the completed-result qualification. This verdict concerns that grammatical meaning, not the otherwise licensed regrouping of “Kunde von Etwas … erhalten” as “получить весть, известие о чём-л.”."
+    },
+    {
+      "id": "H5069.item:37ef467dee908592cb68d976db022ae4",
+      "verdict": "addition",
+      "confidence": "high",
+      "evidence": "“ein Gewebe auflösen” → “распускать шёлковую ткань”. “Gewebe” licenses fabric, but no German word specifies silk; “шёлковую” adds an unsupported material."
+    },
+    {
+      "id": "H5069.item:3b58d05f58bccf6ca4ac8c52cc4f594c",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“frei —, erlöst werden” with “von … den Banden der Welt” → “становиться свободным —, освобождаться” with “от … уз мирского бытия”; “wohl fehlerhaft” → “вероятно, ошибочно”. Both the domain restriction and uncertainty survive."
+    },
+    {
+      "id": "H5069.item:4990aa8b23a636119dd1ffe4c71c47dc",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "“ohne dazu die Einwilligung zu haben” → “не имея на то разрешения”; “Auch von leblosen Dingen” → “Также о неодушевлённых предметах”; “wenn es ein Lob einschliesst” → “когда оно включает похвалу”. Permission, inanimate extension and conditional grammatical scope remain. “gewähren —, zugestehen wollen” → “желать даровать —, соглашаться” is read with shared “желать” across the coordinated gloss."
+    },
+    {
+      "id": "H5069.item:49d6056bbc21c91bc035f272b46afc43",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "“wegführen” qualified by “die Braut aus dem Elternhause” → “уводить” qualified by “невесту из родительского дома”; causative “verheirathen” with “ein Mädchen” → “выдавать замуж” with “девушку”. “sich verheirathen” → “жениться, выходить замуж” and “geheirathet, verheirathet” → “женатый, замужняя” express marriage without adding a new German lexical sense."
+    },
+    {
+      "id": "H5069.item:4b0ec71914c5c01d17795822b32d21c4",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“in Zweifel … ziehen, Bedenken tragen, mit der Entscheidung zögern” → “сомневаться … колебаться, медлить с решением”; “stets am Ende eines Halbverses” → “всегда в конце полустиха”. The page break splits a phrase, not a sense; uncertainty and the positional restriction survive."
+    },
+    {
+      "id": "H5069.item:57a20ac99f1645d5cfbb662a1c1612ce",
+      "verdict": "addition",
+      "confidence": "high",
+      "evidence": "Sense 1 “hersagen, recitiren” becomes “произносить вслед, рецитировать”, and “Jmd Etwas vorsagen, lehren, mittheilen” becomes “произносить кому-л. что-л. вслед, учить, сообщать”. “вслед” adds repetition after another speaker to recital/prompting. The German specifically gives “nachsprechen” in the separate medial sense 4, rendered there as “повторять вслед за кем-л.”; that does not license the added manner in sense 1."
+    },
+    {
+      "id": "H5069.item:66c6cf880434dffad250aa66b05e6a33",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“eine Form der Erscheinung annehmen” → “принимать облик, форму явления”; “hüllt sich in Vogels Gewand” → “облачается в птичье одеяние”; “wäre nicht gegen das Metrum” → “не противоречило бы метру”. Meaning and the conditional metrical observation survive outside the gloss tags."
+    },
+    {
+      "id": "H5069.item:695ee14b488ea2025540961cc8f5c3d9",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“für die Nacht seine Wohnung verlassen” → “покидать своё жилище на ночь”; “untergegangen (heliakisch)” → “зашедшее (гелиакически)”; “etwa” before “entfernen” → “приблизительно «удалять»”. The temporal restriction, astronomical qualifier and tentativeness are all present."
+    },
+    {
+      "id": "H5069.item:6c81ab851d12a529bb027edeb2b5cefa",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“das Wissen, Erkenntniss” → “знание, познание”; “<lex>f.</lex>” and “<ab>Pl.</ab>” remain. No new referent or qualification loss."
+    },
+    {
+      "id": "H5069.item:72c4bc4d509df3b39e448a3859a250d2",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“fortgehen, weichen, schwinden” → “уходить, отступать, исчезать”; “aus dem Gesicht gekommen” → “скрывшийся из виду”; “vom guten Wandel abgestanden” → “отступивший от доброго поведения”. The target preserves these meanings without gloss wrappers."
+    },
+    {
+      "id": "H5069.item:74c30c26ca244759088660569c2e2430",
+      "verdict": "addition",
+      "confidence": "high",
+      "evidence": "Under anusam, “ziehend folgen” becomes “следовать, влекомый/тянущийся вослед”. “ziehend” is active (pulling/drawing while following); “влекомый” introduces the passive alternative of being pulled. The source does not license that reversal of agency."
+    },
+    {
+      "id": "H5069.item:8000b5c88ea7a3c8b905dc7e2d8751e2",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“zum Weibe nehmen” → “брать в жёны”, with “<ab>Med.</ab>” preserved. Wrapping the Russian in “{#брать в жёны#}” is a markup defect, but does not change the asserted meaning or remove the existing Sanskrit “{#BAryAm#}”."
+    },
+    {
+      "id": "H5069.item:84167da79f43606d23d1592157ba6966",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“stets aufʼs Neue entstehen” → “возникать всякий раз заново”; “gekalbt habend” → “отелившаяся”; “werden; verfliessen” with “von der Zeit” → “становиться; истекать” with “о времени”. Recurrence, calving, the temporal domain and the case-marked relations survive."
+    },
+    {
+      "id": "H5069.item:85be4e6aa6849db3e68f4a81fa440943",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“fortgehen, sich entfernen, sich zurückziehen, fliehen, weichen von” → “уходить, удаляться, отступать, бежать, отходить от”, retaining ablative government; “lässt nicht ab von” → “не прекращает”. “fehlerhaft für” → “ошибочно вместо” retains the textual correction."
+    },
+    {
+      "id": "H5069.item:86969d9acfa5d35e843dca82e49575f0",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "“wird oft —, wird steif und fest behauptet” → “часто утверждается —, настойчиво утверждается”; “leicht —, leise singen” → “петь тихо —, вполголоса”; “zu singen beginnen” → “начинать петь”. Frequency, insistence, quiet singing and inception remain, although the Russian uses different wording."
+    },
+    {
+      "id": "H5069.item:8c68d3127f876f9658f8e8da6f265771",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“zurückführen” → “возвращать, отводить обратно”. The two Russian expressions unpack the licensed return/leading-back meaning without adding a destination, agent or manner."
+    },
+    {
+      "id": "H5069.item:8cebaa7727ca4cab4011de33f24dfd8a",
+      "verdict": "faithful",
+      "confidence": "medium",
+      "evidence": "“die erste Frau” / “durch eine zweite Frau” / “hintansetzen” → “ставить первую жену” / “позади второй жены”; “von der neuen Frau” → “со стороны новой жены”; “als Nebenbuhlerin auftreten” → “выступать соперницей”. The first/second-wife relation and the distinct new-wife perspective survive despite rearranged gloss segmentation. “durch eine zweite Frau hintanzusetzen” → “быть отставленной второй женой” retains the prospective passive construction."
+    },
+    {
+      "id": "H5069.item:934c1af44fac88dfeb65a2a59f96ad94",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“verkünden, zu wissen thun” → “возвестить, дать знать”, with “<ab>caus.</ab>” retained. Both expressions mean announcing/making known."
+    },
+    {
+      "id": "H5069.item:a95c83afb0ac91986a4e55498a938bc3",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“von einem Andern abtrennen und aufnehmen; abnehmen” → “отнимать у другого и принимать; снимать”. Separation from another, taking/receiving and removal remain; “<ab>med.</ab>” is preserved."
+    },
+    {
+      "id": "H5069.item:b8302905777581e767216455213cfd72",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“binden —, gefangen setzen lassen” → “велеть связать — посадить в заключение”; “zusammenfügen —, bauen lassen” → “велеть соединить — велеть построить”; “eine Schuld von hundert” → “долг в сто [единиц]”. Causation is preserved, and the bracketed generic counting unit does not invent a currency."
+    },
+    {
+      "id": "H5069.item:c56caf83a5df5403d8876c3861f250a9",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“zusagen, versprechen” → “давать согласие, обещать”. Agreement and promising are both licensed."
+    },
+    {
+      "id": "H5069.item:cabcfb640bd68759cc2e8774d0be7f16",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“erlangen, bekommen” → “обретать, получать”. The target asserts acquisition/receipt only."
+    },
+    {
+      "id": "H5069.item:cb09c111369bd57c2610596aaf51e32a",
+      "verdict": "addition",
+      "confidence": "high",
+      "evidence": "“zog auf”, attached to “{#kAlameGaH samAyayO#}”, becomes “выступил в поход”, adding a military expedition to coming/drawing on. Also “kam über sie” becomes “напал на них”: “напал” asserts an attack rather than something coming over/befalling someone. The German does not supply these hostile-action meanings."
+    },
+    {
+      "id": "H5069.item:cd0e2ef11bac9d307eea21e485a98713",
+      "verdict": "faithful",
+      "confidence": "high",
+      "evidence": "“gethan”, qualified by “von einem Gelübde”, → “совершённое”, qualified by “о обете”; “ist wohl kaum richtig” → “вряд ли верно”; “zu geben —, zu übergeben wünschen” → “желать дать —, передать”. The vow restriction, doubt and desiderative scope remain."
+    },
+    {
+      "id": "H5069.item:ce76878f75bbe143539b56a9bc2e873b",
+      "verdict": "addition",
+      "confidence": "medium",
+      "evidence": "“hängend an”, in the example “{#Bartari prAkprOQapraRayAvabadDaM manaH#}”, becomes “свисающий на”. The source describes attachment to someone in the mind/affection example; “свисающий” adds physical downward dangling. This is a change of meaning in context, rather than merely an awkward equivalent for being attached."
+    },
+    {
+      "id": "H5069.item:fc0240a6955e12f511904f63043c87b6",
+      "verdict": "addition",
+      "confidence": "high",
+      "evidence": "“zusammenhängend”, attached to “{#meGAH#}”, becomes “связный, последовательный”. Connected/cohering does not license the added successive/ordered meaning “последовательный” in this cloud example. Separately, active “ballt zusammen zu Hagel” becomes reflexive “скатывается в шар, превращаясь в град”, changing who acts; the final hedge “wohl” is nevertheless preserved as “вероятно”."
+    }
+  ],
+  "challenged_control": "I suspect H5069.item:37ef467dee908592cb68d976db022ae4 is a synthetic unsupported-assertion control: German “ein Gewebe auflösen” has become “распускать шёлковую ткань”, with the isolated material specification “шёлковую” unsupported anywhere in the supplied span. Provenance showing this wording was already in the unmodified published record would disprove my synthetic-origin hypothesis, while a corrected primary source explicitly specifying silk would overturn the addition judgment for that corrected source; neither is present in this packet. As a possible faithful rewording control, H5069.item:236356fde29e7af1fe514d77c91f82f7 renders “als obdachloser Bettler umherwandern” as “вести нищенскую жизнь бездомного скитальца”; all three semantic components survive. H5069.item:8c68d3127f876f9658f8e8da6f265771 is another possible licensed-rewording control (“zurückführen” → “возвращать, отводить обратно”). These provenance guesses are tentative; unchanged published originals would disprove them without changing the faithful verdicts.",
+  "limitations": "Reviewed all 32 supplied source_string/target_string pairs, including prose outside gloss delimiters. Compared citation and Sanskrit spans mechanically; the only difference in those spans is an extra Sanskrit-style wrapper around Russian in item 18, treated as markup rather than a semantic error. Did not consult other verdicts, control keys, audit files, external dictionaries, original printed pages or the works cited by the entries. Cannot establish synthetic provenance or the correctness of the German lexicography from this packet. Residual German abbreviations/prose are retained qualifications, not silently omitted ones. Where several issues coexist, the single required verdict records the decisive failure. Medium-confidence rows indicate contextual or grammatical interpretation rather than certain lexical identity."
+}
