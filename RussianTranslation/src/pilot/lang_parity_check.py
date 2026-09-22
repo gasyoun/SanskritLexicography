@@ -100,10 +100,38 @@ def _where(path):
                    for i, p in enumerate(path)) or 'its top level'
 
 
+def _duplicate_entry_ids(data):
+    """[(id, [indexes])] for ids carried by more than one ledger entry, in first-seen order."""
+    seen = {}
+    for i, e in enumerate(data):
+        if isinstance(e, dict) and 'id' in e:
+            seen.setdefault(e['id'], []).append(i)
+    return [(k, ix) for k, ix in seen.items() if len(ix) > 1]
+
+
 def parse_ledger_json(raw, path=LEDGER_MD, block='lang_parity_ledger'):
-    """json.loads for a LANG_PARITY.md block that refuses a repeated key at ANY level."""
+    """json.loads for a LANG_PARITY.md block that refuses a repeated key at ANY level and,
+    in the ledger block, two entries sharing one `id`."""
     data = json.loads(raw, object_pairs_hook=_refuse_duplicate_keys)
     dups = _nested_dups(data, ())
+    # A replay that re-appends a WHOLE entry leaves two list items with one id -- no key
+    # repeats inside either object, so the key check cannot see it. check() would then
+    # evaluate both copies (the stale one reads as drift) and --update-hash would re-stamp
+    # every match, so the duplicate would persist silently. Refuse it the same way.
+    id_dups = (_duplicate_entry_ids(data)
+               if block == 'lang_parity_ledger' and isinstance(data, list) else [])
+    if id_dups:
+        raise DuplicateKeyError(
+            '%s: the ```json %s block has %d entry id(s) carried by more than one entry -- '
+            'refusing to load it:\n  - %s\n'
+            'A repeated entry id is a merge/replay artifact (e.g. an old hunk re-applied on a '
+            'newer base re-appends a whole entry). The checker would evaluate both copies, and a '
+            'stale one reads as false "changed since last parity verification" drift. '
+            'Fix by hand: delete the stale copy of each entry, re-check the kept entry\'s verdict, '
+            'then run `python src/pilot/lang_parity_check.py --update-hash <id>`.'
+            % (path, block, len(id_dups), '\n  - '.join(
+                'entry id %r repeated at list positions %s' % (k, ', '.join(map(str, ix)))
+                for k, ix in id_dups)))
     if not dups:
         return data
     lines = []
@@ -123,11 +151,27 @@ def parse_ledger_json(raw, path=LEDGER_MD, block='lang_parity_ledger'):
         % (path, block, len(dups), '\n  - '.join(lines)))
 
 
+LEDGER_OPEN_RE = re.compile(r'^```json lang_parity_ledger[ \t]*\r?$', re.MULTILINE)
+
+
+def refuse_second_ledger_fence(text, path=LEDGER_MD):
+    """Only the FIRST ledger fence is ever read, so a second one (a replayed block) would be
+    ignored silently -- its entries neither checked nor re-stamped. Refuse it instead."""
+    n = len(LEDGER_OPEN_RE.findall(text))
+    if n > 1:
+        raise DuplicateKeyError(
+            '%s: %d ```json lang_parity_ledger fenced blocks found -- refusing to load it. Only '
+            'the first would be read; a second block is a merge/replay artifact. Fix by hand: '
+            'merge the entries you mean to keep into ONE block (one entry per id) and delete the '
+            'other fence.' % (path, n))
+
+
 def load_ledger(path=LEDGER_MD):
     text = open(path, encoding='utf-8').read()
     m = FENCE_RE.search(text)
     if not m:
         raise SystemExit('no ```json lang_parity_ledger fenced block found in %s' % path)
+    refuse_second_ledger_fence(text, path)
     return parse_ledger_json(m.group(1), path), text, m.span(1)
 
 
@@ -226,7 +270,7 @@ def check(entries):
 
 
 def update_hash(entry_id, path=None):
-    # load_ledger() refuses a repeated key BEFORE anything is rewritten: re-serializing here
+    # load_ledger() refuses a repeated key or entry id BEFORE anything is rewritten: re-serializing here
     # would silently drop every copy but the last, which is the defect this gate reports.
     path = path or LEDGER_MD
     entries, text, span = load_ledger(path)

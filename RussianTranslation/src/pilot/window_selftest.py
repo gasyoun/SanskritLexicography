@@ -2801,6 +2801,66 @@ def test_lang_parity_ledger_refuses_duplicate_keys():
             fail('parse_ledger_json accepted a repeated key: %s' % raw)
 
 
+
+def test_lang_parity_ledger_refuses_duplicate_entry_ids():
+    """H5259 verifier gap (22-09-2026): the duplicate-KEY refusal cannot see a replay that
+    re-appends a WHOLE entry -- two list items with one id and no key repeated inside either.
+    check() would evaluate both copies (the stale one reads as drift) and --update-hash would
+    re-stamp every match, so the duplicate would persist silently. The loader, --update-hash
+    and parity_restamp must refuse it naming the id as a merge/replay artifact; a second
+    ```json lang_parity_ledger fence (only the first is ever read) must be refused too."""
+    import tempfile
+    import lang_parity_check as lpc
+    import parity_restamp
+    one = ('{"id": "%s", "verdict": "SHARED", "files": ["x.py"], '
+           '"verified_sha256": {"x.py": "%s"}}')
+    clean = '[%s, %s]' % (one % ('e_a', 'a' * 64), one % ('e_b', 'a' * 64))
+    dup = '[%s, %s, %s]' % (one % ('e_a', 'a' * 64), one % ('e_b', 'a' * 64),
+                            one % ('e_a', 'b' * 64))
+    fence = '```json lang_parity_ledger\n%s\n```\n'
+    with tempfile.TemporaryDirectory() as tmp:
+        md = os.path.join(tmp, 'LANG_PARITY.md')
+
+        def write(body):
+            with open(md, 'w', encoding='utf-8', newline='\n') as f:
+                f.write('# ledger\n\n' + body)
+
+        write(fence % clean)                                    # control: distinct ids load
+        if [e['id'] for e in lpc.load_ledger(md)[0]] != ['e_a', 'e_b']:
+            fail('a ledger with distinct entry ids no longer loads')
+        for label, body, needles in (
+                ('duplicate entry id', fence % dup,
+                 ("entry id 'e_a' repeated at list positions 0, 2", 'merge/replay')),
+                ('second ledger fence', fence % clean + '\n' + fence % clean,
+                 ('2 ```json lang_parity_ledger fenced blocks', 'merge/replay'))):
+            write(body)
+            before = open(md, 'rb').read()
+            calls = [('load_ledger', lambda: lpc.load_ledger(md)),
+                     ('--update-hash', lambda: lpc.update_hash('e_a', path=md))]
+            old_ledger = parity_restamp.LEDGER
+            parity_restamp.LEDGER = type(old_ledger)(md)
+            calls.append(('parity_restamp.load_ledger', parity_restamp.load_ledger))
+            try:
+                for name, call in calls:
+                    try:
+                        call()
+                    except lpc.DuplicateKeyError as exc:
+                        msg = str(exc)
+                    else:
+                        fail('%s accepted a %s' % (name, label))
+                    for needle in needles:
+                        if needle not in msg:
+                            fail('%s refusal of a %s does not say %r: %s'
+                                 % (name, label, needle, msg))
+            finally:
+                parity_restamp.LEDGER = old_ledger
+            if open(md, 'rb').read() != before:
+                fail('a refused %s ledger was rewritten' % label)
+    # The id check is ledger-only: the coverage block is a map, not an entry list.
+    if lpc.parse_ledger_json('{"exempt": {"a": "r"}}', block='lang_parity_coverage') != {
+            'exempt': {'a': 'r'}}:
+        fail('the coverage block must not go through the entry-id check')
+
 def test_sense_dupe_norm_strips_trailing_period():
     """P5 (H1422): norm() stripped a trailing ')'/'〉' but not '.', so tag '1.' and plain
     '1' hashed to different buckets and a real cross-part duplicate with mismatched
@@ -10084,6 +10144,7 @@ def main():
         test_degenerate_xref_vocab_single_source,
         test_lang_parity_hash_crlf_independent,
         test_lang_parity_ledger_refuses_duplicate_keys,
+        test_lang_parity_ledger_refuses_duplicate_entry_ids,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
         test_opt7_last_audit_tm_refuse_without_no_tm,

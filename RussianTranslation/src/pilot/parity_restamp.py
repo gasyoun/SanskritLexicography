@@ -55,10 +55,12 @@ def load_ledger():
     text = LEDGER.read_text(encoding="utf-8")
     start = text.index(BLOCK_OPEN) + len(BLOCK_OPEN)
     end = text.index("\n```", start)
-    # The checker's strict parser: a repeated key is refused, never silently collapsed
-    # by the write_ledger() re-serialization that follows.
+    # The checker's strict parser: a repeated key or entry id is refused, never silently
+    # collapsed by the write_ledger() re-serialization that follows; a second ledger fence
+    # (never read past the first) is refused too.
     sys.path.insert(0, str(CHECK.parent))
     import lang_parity_check as lpc
+    lpc.refuse_second_ledger_fence(text, LEDGER)
     return text, start, end, lpc.parse_ledger_json(text[start:end], LEDGER)
 
 
