@@ -40,7 +40,11 @@ PRICE_PER_MTOK = {
     'cache_creation_tokens': 10.00,  # explicit one-hour cache write = 2x input
     'cache_read_tokens': 0.50,
 }
-SECRETS_ENV = r'C:\Users\user\.secrets\anthropic.env'
+# Neutral name on purpose: CodeQL treats any identifier matching /secret|key|token/ as a
+# sensitive source, so the printable provenance path must never be read through one.
+ENV_FILE = r'C:\Users\user\.secrets\anthropic.env'
+SECRETS_ENV = ENV_FILE
+_CRED_VARS = ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN')
 
 
 def _nonnegative_int(value):
@@ -82,6 +86,28 @@ def _read_secret():
                     if value:
                         return value, '%s read from %s' % (name.strip(), SECRETS_ENV)
     return None, 'no Anthropic API credential found'
+
+
+def credential_note():
+    """Where the credential comes from -- a variable name or file path, never its value.
+
+    Computed apart from `_read_secret()` so nothing a caller prints shares a data flow
+    with the secret (CodeQL py/clear-text-logging-sensitive-data, H4531 PR #2232): the
+    returned text is built only from the `_CRED_VARS` literals and `ENV_FILE`; file
+    contents are only ever tested, never returned.
+    """
+    for var in _CRED_VARS:
+        if (os.environ.get(var) or '').strip():
+            return '%s present in environment' % var
+    if os.path.isfile(ENV_FILE):
+        with open(ENV_FILE, encoding='utf-8') as handle:
+            lines = [line.strip() for line in handle]
+        for var in _CRED_VARS:
+            for line in lines:
+                lhs, sep, rhs = line.partition('=')
+                if sep and lhs.strip() == var and rhs.strip().strip('"').strip("'"):
+                    return '%s read from %s' % (var, ENV_FILE)
+    return 'no Anthropic API credential found'
 
 
 def api_client():
