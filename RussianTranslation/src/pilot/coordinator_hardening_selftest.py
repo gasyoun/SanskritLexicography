@@ -483,6 +483,122 @@ def test_h4_claim_rejects_duplicate_lease_id():
           'free); a distinct id still claims')
 
 
+def _h4527_defect_repair_args(lease_id, keys, root, nominal):
+    return SimpleNamespace(kind='defect-repair', lane='b0', owner='h4527-pin',
+                           lease_id=lease_id, batch_size=12,
+                           ttl_seconds=coordinator.LEASE_TTL_SECONDS,
+                           keys=keys, root=root, nominal=nominal)
+
+
+def test_h4527_nominal_defect_repair_prepare():
+    """H4527 22-09 (2): a promoted no-PWG nominal card can be re-made through a defect-repair
+    lease. `--nominal` builds it the way no_pwg_scale_plan built the original (--nominal, raw
+    keys) under the lease's own `nominal_<id>` namespace, with --no-tm on BOTH children; the
+    verb-shaped defect-repair prepare stays byte-for-byte as it was; --nominal on any other
+    kind is refused before a lease is written."""
+    calls = []
+
+    def fake_child(argv, timeout=None):
+        calls.append(list(argv))
+        for arg in argv:
+            if arg.startswith('--manifest-out='):
+                with open(arg.split('=', 1)[1], 'w', encoding='utf-8') as f:
+                    json.dump({'meta': {}}, f)
+        stdout = ''
+        if os.path.basename(argv[1]) == 'perf_preflight.py':
+            stdout = json.dumps({'schema': 'pwg.performance_preflight.v1',
+                                 'agent_expected_after_tm': 1,
+                                 'cost_gate': {'over_ceiling': False}})
+        return SimpleNamespace(returncode=0, stdout=stdout, stderr='')
+
+    def prep(lease_id):
+        coordinator.prepare(SimpleNamespace(
+            lease_id=lease_id, profile_slot=None, config_dir=None,
+            executor_lane='serial-whole-card', allow_over_cost=False), run_child=fake_child)
+
+    with _h8_isolated():
+        key = 'darv_i~~h0_zz_pw'
+        with contextlib.redirect_stdout(io.StringIO()):
+            coordinator.claim(_h4527_defect_repair_args('h4527dr-nom', key, 'darv_i', True))
+            prep('h4527dr-nom')
+        preflight_argv, harness_argv = calls
+        want = ['nominal_h4527dr-nom', '--nominal', '--keys=%s' % key, '--no-tm']
+        if preflight_argv[2:6] != want or preflight_argv[6:] != ['--json']:
+            raise AssertionError('nominal repair preflight argv: %r' % preflight_argv)
+        if harness_argv[2:6] != want:
+            raise AssertionError('nominal repair harness argv: %r' % harness_argv)
+        lease = coordinator.lease_by_id(coordinator.load_state(), 'h4527dr-nom')
+        if lease['state'] != 'prepared' or lease['details'].get('nominal') is not True:
+            raise AssertionError('nominal repair lease not prepared: %r' % lease)
+
+        # The verb-shaped defect-repair (no --nominal) is unchanged.
+        del calls[:]
+        with contextlib.redirect_stdout(io.StringIO()):
+            coordinator.claim(_h4527_defect_repair_args('h4527dr-verb', 'k~~h0', 'kf', False))
+            prep('h4527dr-verb')
+        preflight_argv, harness_argv = calls
+        if preflight_argv[2:] != ['kf', '--keys=k~~h0', '--json']:
+            raise AssertionError('verb repair preflight argv changed: %r' % preflight_argv)
+        if harness_argv[2:5] != ['kf', '--keys=k~~h0', '--no-tm']:
+            raise AssertionError('verb repair harness argv changed: %r' % harness_argv)
+
+        before = coordinator.load_state().get('leases') or []
+        args = _h4527_defect_repair_args('h4527-bad', None, None, True)
+        args.kind = 'nominal'
+        expect_refusal(lambda: coordinator.claim(args), '--kind defect-repair only')
+        if (coordinator.load_state().get('leases') or []) != before:
+            raise AssertionError('a refused --nominal claim wrote a lease')
+    print('  H4527: nominal defect-repair prepares as the planner built the card (--nominal, '
+          'raw keys, --no-tm on both children); the verb repair argv is unchanged; --nominal '
+          'on another kind is refused')
+
+
+def test_h4527_defect_repair_requeue_is_tm_off():
+    """H4527 critic finding 3: a TRANSIENT requeue regenerates TM-on by design, but the card a
+    defect-repair lease re-makes is itself in the TM -- a TM-on retry would resolve it to the
+    old defective text with 0 calls and promote it as "repaired". Both requeue children of a
+    defect-repair lease carry --no-tm; any other kind's transient requeue stays TM-on."""
+    saved = coordinator.run_cmd
+    try:
+        for kind, want_no_tm in (('defect-repair', True), ('nominal', False)):
+            calls = []
+            with tempfile.TemporaryDirectory() as td:
+                manifest = os.path.join(td, 'rq.manifest.json')
+                current = os.path.join(td, 'current.manifest.json')
+                with open(current, 'w', encoding='utf-8') as f:
+                    f.write('{}')
+
+                def fake_run_cmd(cmd, cwd=None, check=True, timeout=None):
+                    calls.append(list(cmd))
+                    stdout = ''
+                    if os.path.basename(cmd[1]) == 'perf_preflight.py':
+                        stdout = json.dumps({'schema': 'pwg.performance_preflight.v1',
+                                             'agent_expected_after_tm': 1,
+                                             'cost_gate': {'over_ceiling': False}})
+                    else:
+                        with open(manifest, 'w', encoding='utf-8') as f:
+                            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                                      'meta': {'selected_keys': ['k~~h0']}}, f)
+                    return SimpleNamespace(returncode=0, stdout=stdout, stderr='')
+
+                coordinator.run_cmd = fake_run_cmd
+                attempt_dir = os.path.join(td, 'rq01-transient')
+                coordinator._execute_requeue_attempt(
+                    attempt_dir, os.path.join(attempt_dir, 'requeue.transient.keys.txt'),
+                    ['k~~h0'], {'id': 'L', 'kind': kind}, 'root', True, 'transient', {},
+                    [sys.executable, 'requeue_from_audit.py', 'root', '--transient'],
+                    current, coordinator.sha256_file(current), manifest)
+            preflight_argv, requeue_argv = calls
+            for argv in (preflight_argv, requeue_argv):
+                if ('--no-tm' in argv) != want_no_tm:
+                    raise AssertionError('%s transient requeue --no-tm should be %s: %r'
+                                         % (kind, want_no_tm, argv))
+    finally:
+        coordinator.run_cmd = saved
+    print('  H4527: a defect-repair lease requeues TM-off on both children (transient too); '
+          'another kind\'s transient requeue stays TM-on')
+
+
 def test_h5_corrupt_status_report_is_a_typed_audit_error():
     """H5 (H1811) -- a missing/corrupt window_status.json or audit_window.report.json
     alongside a clean-looking audit exit code (0 or 1) used to be swallowed to `{}`, so
@@ -601,6 +717,8 @@ def main():
     test_h8_claim_preflight_timeout_is_bounded()
     test_h8_claim_preflight_timeout_unwinds_clean()
     test_h4_claim_rejects_duplicate_lease_id()
+    test_h4527_nominal_defect_repair_prepare()
+    test_h4527_defect_repair_requeue_is_tm_off()
     test_h5_corrupt_status_report_is_a_typed_audit_error()
     test_h3754_save_state_dashboard_reuse_matches_full_rescan()
     print('coordinator_hardening_selftest: PASS')
