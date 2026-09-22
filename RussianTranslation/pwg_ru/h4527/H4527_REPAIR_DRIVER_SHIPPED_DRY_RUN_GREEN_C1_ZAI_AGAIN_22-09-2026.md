@@ -33,6 +33,8 @@ Follows [H4527_C1_ANTHROPIC_ROUTE_RESTORED_VOLUME_LAUNCH_22-09-2026.md](https://
    | cohort | width 1, serial route, admitted |
 
    **Acceptance 1 of the (2) spec is met:** the two named leases are importable, 2 calls are projected, and nothing else is in scope.
+
+   Hash note: `13e2547e…` is the CRLF file as written on MSI. The committed copy is LF-normalized by git, and its sha256 is `8a22ad66e737426cad8afcd2fa93a3103126dff881701415b218476618fe9570`.
 3. The dry run rewrote `progress_dashboard/progress_data.json` and `progress_timeseries.json`, the known hazard. Both were restored. Right afterwards `kitchen_data.json` and `quality_timeseries.json` showed as modified. The dry run did not touch those two (they were absent from its post-run status), so they were left alone.
 4. Probe ration for c1 at 20:41:51Z: one attempt today (11:45:13Z), `legal_now: true`. One probe is left for the 22-09 UTC day, and the count resets at 00:00Z.
 
