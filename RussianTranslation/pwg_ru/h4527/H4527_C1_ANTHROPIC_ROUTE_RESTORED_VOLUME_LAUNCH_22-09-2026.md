@@ -150,13 +150,42 @@ python bounded_staged_run.py --plan output\h4527vol\plan.json --coord-dir output
 
 ## What remains on H4527
 
-1. **`kast_ur_i` requeue**: one card call, and a human should approve it, because it falls outside the
-   approved five-card launch.
-2. **The 20-09 `darv_i` card**: GLM-made under a Sonnet label. Whether to remove it, re-make it on
-   Anthropic or re-label it is a decision for a human.
+1. **`kast_ur_i` requeue**: approved by a human on 22-09 («yes»). The requeue is prepared (see the
+   afternoon addendum below); the run waits on a driver change.
+2. **The 20-09 `darv_i` card**: GLM-made under a Sonnet label. On 22-09 a human chose to re-make it on
+   Anthropic in the same run as `kast_ur_i`. Same wait as item 1.
 3. **Check D (`byte_identical_to_serial`)** stays unanswered, as the 21-09 ruling chose. It is also now moot
    for the 20-09 window, because that window ran on a different model than its record would claim.
    `COHORT_LIVE_ACCEPTANCE.json` stays unwritten, and width 2 stays fail-closed.
 4. **The money-class `## Verifier` PASS**: owed by a different session.
+
+## Afternoon addendum (22-09-2026, ~13:00–14:30Z, 0 paid calls): the redo is prepared, the driver cannot run it yet
+
+A human ruled «yes» on the `kast_ur_i` retry and chose to re-make `darv_i` on Anthropic in the same run.
+One run for both is required: the `c1` probe ration allows two attempts per UTC day, six hours apart, and
+the second 22-09 slot opens at 17:45:13Z.
+
+1. **`kast_ur_i`:** `coordinator.py prepare-requeue h4527vol14 --defect` built attempt `rq01-defect`
+   (1 card, harness and v2 execution manifest under
+   `output/coordinator/artifacts/h4527vol14/requeue/rq01-defect/`). The lease is now `requeue_prepared`.
+   As designed, the step appended a `blocked` row for the key to `src/pilot/no_pwg_residuals.jsonl` (it
+   keeps the next volume plan from preparing the card twice) and one TM-denylist address. The ledger row
+   is committed from the Mac byte-identical to the MSI line.
+2. **The driver gap.** A zero-call dry run of `bounded_staged_run.py` with all five `h4527vol*` lease ids
+   lists `importable_prepared_leases: []` and skips `h4527vol14`; `--lease-id h4527vol14` alone is refused
+   («--lease-id set does not match the staged plan»). A requeue runs only as an in-run supervisor item
+   (`window['requeue']` → `materialize_requeue`) on the serial route. The cohort engine records
+   `requeue_backlog_keys` and reloads them on `--resume`, but never dispatches them.
+3. **`darv_i`:** lease `h4527sen08` is `promoted`, and the planner excludes promoted headwords. A
+   `coordinator.py claim --kind defect-repair` lease exists for exactly this case, but no plan window can
+   point the driver at it.
+4. **The store side is already safe.** `promote_final_cards.py merge_store_rows` is better-attempt-wins:
+   ties favour the incoming attempt, and only human-touched rows are protected. The three `darv_i` rows
+   are `ai_translated` with `reviewer: null`, so a complete Anthropic attempt replaces them without
+   `--override-reviewed`.
+5. **Not done:** running the harness or `max_account_orchestrator.py` directly, because that skips the
+   probe ration, the canary receipt and the call cap. The driver change is specified as H4527's next step
+   in the [handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4527-Opus_RussianTranslation_pwg-ru-cohort-live-acceptance-width2_10.09.26.md)
+   (section «Progress — 22-09-2026 (2)»).
 
 _Гасунс_
