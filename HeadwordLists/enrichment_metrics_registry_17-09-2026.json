@@ -62,6 +62,72 @@
    "n": 106082,
    "source_set": "pwg",
    "status": "OK"
+  },
+  {
+   "annexure_share_pct": 5.4,
+   "enrichment": 0.6070688620703306,
+   "enrichment_fmt": "0.61x",
+   "in_annexure": 330,
+   "in_main": 16846,
+   "main_share_pct": 9.0,
+   "n": 34277,
+   "source_set": "ap90",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 9.2,
+   "enrichment": 0.45763485054063957,
+   "enrichment_fmt": "0.46x",
+   "in_annexure": 556,
+   "in_main": 37651,
+   "main_share_pct": 20.0,
+   "n": 88872,
+   "source_set": "ap",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 34.0,
+   "enrichment": 5.1223050590717705,
+   "enrichment_fmt": "5.12x",
+   "in_annexure": 2060,
+   "in_main": 12463,
+   "main_share_pct": 6.6,
+   "n": 28455,
+   "source_set": "sch",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 10.8,
+   "enrichment": 0.5284944379513814,
+   "enrichment_fmt": "0.53x",
+   "in_annexure": 655,
+   "in_main": 38408,
+   "main_share_pct": 20.4,
+   "n": 48636,
+   "source_set": "vcp",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 1.1,
+   "enrichment": 0.23271548641339831,
+   "enrichment_fmt": "0.23x",
+   "in_annexure": 66,
+   "in_main": 8789,
+   "main_share_pct": 4.7,
+   "n": 40817,
+   "source_set": "skd",
+   "status": "OK"
+  },
+  {
+   "annexure_share_pct": 11.1,
+   "enrichment": 0.460898624472428,
+   "enrichment_fmt": "0.46x",
+   "in_annexure": 672,
+   "in_main": 45184,
+   "main_share_pct": 24.0,
+   "n": 51159,
+   "source_set": "mw72",
+   "status": "OK"
   }
  ],
  "matrix_dicts": [
