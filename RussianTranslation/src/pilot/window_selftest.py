@@ -5085,6 +5085,45 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
             fail('coordinator requeue must bind the harness to its exact manifest')
 
 
+def test_transient_requeue_no_tm_flag_h4527():
+    """H4527: a transient requeue stays TM-on by default; `--no-tm` (passed by the coordinator
+    for a defect-repair lease, whose card is in the TM) forces TM-off."""
+    import requeue_from_audit as rq
+
+    for extra, want in (([], False), (['--no-tm'], True)):
+        with tempfile.TemporaryDirectory() as tmp:
+            inp = os.path.join(tmp, 'input')
+            os.makedirs(inp)
+            with open(os.path.join(inp, 'a.raw.txt'), 'w', encoding='utf-8') as f:
+                f.write('raw')
+            rqfile = os.path.join(tmp, 'requeue.transient.keys.txt')
+            with open(rqfile, 'w', encoding='utf-8') as f:
+                f.write('a\n')
+            captured = {}
+
+            class FakeProc:
+                returncode = 0
+                stdout = ''
+                stderr = ''
+
+            def fake_run(cmd, **_kwargs):
+                captured['cmd'] = cmd
+                return FakeProc()
+
+            old_inp, old_run, old_argv = rq.INP, rq.subprocess.run, sys.argv[:]
+            rq.INP = inp
+            rq.subprocess.run = fake_run
+            sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--transient', '--nominal',
+                        '--requeue-file=%s' % rqfile,
+                        '--out=%s' % os.path.join(tmp, 'h.js')] + extra
+            try:
+                rq.main()
+            finally:
+                rq.INP, rq.subprocess.run, sys.argv = old_inp, old_run, old_argv
+        if ('--no-tm' in (captured.get('cmd') or [])) != want:
+            fail('transient requeue %r: --no-tm should be %s' % (extra, want))
+
+
 def test_coordinator_requeue_attempt_manifests():
     import coordinator
     import window_provenance
@@ -10020,6 +10059,7 @@ def main():
         test_coordinator_lock_replaces_stale_dead_owner,
         test_coordinator_lock_creates_parent_dir,
         test_coordinator_defect_requeue_uses_no_tm_and_out,
+        test_transient_requeue_no_tm_flag_h4527,
         test_coordinator_requeue_attempt_manifests,
         test_coordinator_mixed_lane_public_state_sequence,
         test_promote_nominal_key1,

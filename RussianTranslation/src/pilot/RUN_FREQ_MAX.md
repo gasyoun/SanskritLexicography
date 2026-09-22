@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 15-09-2026_
+_Created: 09-07-2026 · Last updated: 22-09-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -612,6 +612,25 @@ not a substitute for it.
   `current_attempt.remaining_pending`, so a transient retry cannot discard pending defects
   (or vice versa). Clean rows with remaining work become `ready_partial`, promotion becomes
   `promoted_partial`, and the lease reaches `promoted` only after the backlog is empty.
+- **Draining a prepared requeue, or re-making a promoted card (H4527, 22-09-2026).** A frozen
+  plan only imports `prepared` leases, and `no_pwg_scale_plan.py` excludes promoted headwords,
+  so neither shape can ride a plan run. Name them instead:
+  `bounded_staged_run.py --plan <plan> --repair-lease <id> [--repair-lease <id> ...]`. The run's
+  scope is then those leases and nothing else (`--lease-id` is refused alongside it). A
+  `requeue_prepared` lease drains its prepared `<lease>::rqNN-<kind>` attempt (prepare-requeue is
+  never re-run); a prepared `defect-repair` lease imports like any prepared lease. Any other state
+  is refused. The dry run lists them under `scope.repair_leases` with their job ids and projected
+  calls. The canary receipt, probe ration, `--max-calls` reservation and preflight validation
+  apply unchanged. A no-PWG nominal card is claimed with `coordinator.py claim --kind
+  defect-repair --root <root> --keys <key> --nominal`; its prepare mirrors the planner's build
+  (`--nominal`, raw keys) and adds `--no-tm` to both children, so the card being replaced cannot
+  feed its own re-make; any later requeue of a defect-repair lease, transient included, stays
+  TM-off for the same reason. The store merge is better-attempt-wins and protects only
+  human-touched rows. A repair run is **not resumable once dispatched**: after a crash the lease
+  is `running`/`ready`/`ready_partial` and `--resume --repair-lease` refuses it (fails closed, no
+  spend). Read `coordinator.py status` and finish by hand (a `ready` lease: `coordinator.py
+  promote-ready --lease-id <id>`). Give each repair run a fresh `--checkpoint`, since the
+  AWAITING_REVIEW record is keyed by lease id.
 - Each retry is preserved under `artifacts/<lease>/requeue/rqNN-{transient|defect}/` with its
   exact key file, conservatively collected defect-fragment hashes, harness, and execution
   manifest. Allocation advances past the highest state/history attempt and any existing
