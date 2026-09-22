@@ -969,6 +969,10 @@ def _claim_target_defect_repair(state, args):
         'keys': keys, 'run_keys': run_keys,
         'keymap': dict(zip(run_keys, keys)),
         'root': root, 'no_tm': True,
+        # H4527 22-09 (2): a no-PWG nominal card has no root map, so the verb-shaped
+        # `<root> --keys=` prepare cannot build its harness; --nominal routes it the way
+        # no_pwg_scale_plan built the card being repaired.
+        'nominal': bool(getattr(args, 'nominal', False)),
     }
     return target, details, keys
 
@@ -992,6 +996,8 @@ def claim(args):
         builder = _CLAIM_TARGET_BUILDERS.get(args.kind)
         if builder is None:
             raise SystemExit('unknown kind: %s' % args.kind)
+        if getattr(args, 'nominal', False) and args.kind != 'defect-repair':
+            raise SystemExit('--nominal applies to --kind defect-repair only')
         target, details, keys = builder(state, args)
 
         lease_id = args.lease_id or make_lease_id(args.kind, args.lane, target)
@@ -1312,11 +1318,22 @@ def prepare(args, run_child=None):
             if not keys or not root:
                 raise SystemExit('defect-repair lease needs details.root and details.keys')
             key_arg = ','.join(keys)
-            preflight_path = _prepare_run_preflight(
-                run_child, adir, root, ['--keys=%s' % key_arg], lease, args, deadline)
-            harness, manifest = _prepare_run_gen_harness(
-                run_child, adir, lease['id'], root, ['--keys=%s' % key_arg, '--no-tm'],
-                binding, deadline)
+            if details.get('nominal'):
+                # H4527 22-09 (2): the no_pwg_scale_plan nominal build (raw keys, grammar on)
+                # under the lease's own namespace, with --no-tm on BOTH children: the card
+                # being re-made is in the TM, so a TM-on preflight would project 0 calls.
+                run_root = 'nominal_%s' % lease['id']
+                flags = ['--nominal', '--keys=%s' % key_arg, '--no-tm']
+                preflight_path = _prepare_run_preflight(
+                    run_child, adir, run_root, flags, lease, args, deadline)
+                harness, manifest = _prepare_run_gen_harness(
+                    run_child, adir, lease['id'], run_root, flags, binding, deadline)
+            else:
+                preflight_path = _prepare_run_preflight(
+                    run_child, adir, root, ['--keys=%s' % key_arg], lease, args, deadline)
+                harness, manifest = _prepare_run_gen_harness(
+                    run_child, adir, lease['id'], root, ['--keys=%s' % key_arg, '--no-tm'],
+                    binding, deadline)
         else:
             raise SystemExit('prepare is only for verb/nominal/defect-repair translation leases')
     except BaseException as exc:
@@ -2712,6 +2729,9 @@ def main(argv=None):
     c.add_argument('--ttl-seconds', type=int, default=LEASE_TTL_SECONDS)
     c.add_argument('--keys', help='comma-separated sub-card keys (required for defect-repair)')
     c.add_argument('--root', help='already-promoted root (required for defect-repair)')
+    c.add_argument('--nominal', action='store_true',
+                   help='defect-repair only: the keys are no-PWG nominal cards (prepare builds '
+                        'them as no_pwg_scale_plan does, --nominal, with --no-tm)')
     c.set_defaults(func=claim)
     p = sub.add_parser('prepare')
     p.add_argument('lease_id')

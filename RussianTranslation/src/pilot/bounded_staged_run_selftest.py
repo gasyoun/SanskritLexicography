@@ -1716,6 +1716,134 @@ def test_v_exit_code_contract_per_route(td):
         print('  own-data canary: acceptance.sen.report.json absent — SKIPPED')
 
 
+def test_w_repair_leases_h4527(td):
+    """H4527 22-09 (2): --repair-lease drains a NAMED requeue_prepared lease (its prepared
+    attempt) and a NAMED prepared defect-repair lease, and nothing else. An unnamed
+    requeue_prepared lease stays invisible to a plan run; every other state is refused."""
+    from execution_contract import config_dir_fingerprint
+    coord = os.path.join(td, 'w_coord')
+    os.makedirs(coord)
+
+    def artifacts(name, key, calls):
+        d = os.path.join(coord, 'artifacts', name)
+        os.makedirs(d)
+        manifest = os.path.join(d, 'execution_manifest.%s.json' % name)
+        with open(manifest, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                       'model': 'claude-sonnet-5',
+                       'meta': {'lang': 'ru', 'selected_keys': [key], 'nominal': True},
+                       'execution': {'profile_slot': 'c1',
+                                     'config_dir_fingerprint': config_dir_fingerprint(td),
+                                     'execution_route': 'claude-cli-headless',
+                                     'executor_lane': 'serial-whole-card',
+                                     'validation_method': 'audit_window+final_schema',
+                                     'model_identifier': 'claude-sonnet-5'},
+                       'key_provenance': {key: 'real'}}, f)
+        preflight = os.path.join(d, 'preflight.json')
+        with open(preflight, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.performance_preflight.v1', 'selected_keys': [key],
+                       'agent_expected_after_tm': calls,
+                       'cost_gate': {'over_ceiling': False}}, f)
+        return d, manifest, preflight
+
+    def requeue_lease(lease_id, key):
+        d, manifest, preflight = artifacts(lease_id + '_rq', key, 1)
+        return {'id': lease_id, 'kind': 'nominal', 'state': 'requeue_prepared',
+                'artifact_dir': d, 'requeue_attempt': 1, 'requeue_kind': 'defect',
+                'pending_requeue': {'transient': [], 'defect': [key]},
+                'current_attempt': {'number': 1, 'kind': 'defect', 'artifact_dir': d,
+                                    'execution_manifest': manifest, 'preflight': preflight,
+                                    'preflight_sha256': mao.sha256_path(preflight)}}
+
+    dr_dir, dr_manifest, dr_preflight = artifacts('w_dr', 'darv_i~~h0_zz_pw', 1)
+    leases = [
+        requeue_lease('w_rq', 'kast_ur_i~~h0_zz_pw'),
+        requeue_lease('w_rq_unnamed', 'other~~h0_zz_pw'),
+        {'id': 'w_dr', 'kind': 'defect-repair', 'state': 'prepared', 'artifact_dir': dr_dir,
+         'execution_manifest': dr_manifest, 'preflight_path': dr_preflight,
+         'preflight_sha256': mao.sha256_path(dr_preflight)},
+        {'id': 'w_plain', 'kind': 'nominal', 'state': 'prepared'},
+        {'id': 'w_prom', 'kind': 'nominal', 'state': 'promoted'},
+    ]
+    state = {'leases': leases}
+    with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
+        json.dump(state, f)
+    # The frozen plan still carries w_rq (the planner prepared it before its defect requeue).
+    plan = _plan(['w_rq', 'w_plain'])
+    ledger = {'aggregate': {}}
+
+    # (1) the repair dry run: exactly the two named leases, importable, projected 2 calls.
+    view = bsr.plan_view(plan, state, _ceilings(max_calls=7), os.path.join(td, 'w.ckpt'),
+                         ledger=ledger, repair_lease_ids=['w_rq', 'w_dr'])
+    scope = view['scope']
+    assert scope['lease_ids'] == ['w_rq', 'w_dr'], scope
+    assert scope['importable_prepared_leases'] == ['w_dr', 'w_rq'], scope
+    assert scope['windows_not_prepared_skipped'] == [], scope
+    assert scope['projected_calls_from_plan'] == 2, scope
+    assert [(r['lease_id'], r['repair'], r['job_id']) for r in scope['repair_leases']] == [
+        ('w_rq', 'requeue', 'w_rq::rq01-defect'), ('w_dr', 'defect-repair', 'w_dr')], scope
+
+    # (2) the refusal pin: a plan run never adopts a requeue_prepared lease — the named plan
+    #     window is skipped as not-prepared, and the unnamed one is not in scope at all.
+    plain = bsr.plan_view(plan, state, _ceilings(), os.path.join(td, 'w2.ckpt'), ledger=ledger)
+    assert plain['scope']['importable_prepared_leases'] == ['w_plain'], plain['scope']
+    assert plain['scope']['windows_not_prepared_skipped'] == ['w_rq'], plain['scope']
+    assert plain['scope']['repair_leases'] == [], plain['scope']
+    assert 'w_rq_unnamed' not in json.dumps(plain['scope'])
+
+    # (3) refusals: plain prepared, promoted, unknown, duplicate, mixed with --lease-id.
+    for bad, needle in ((['w_plain'], 'belongs in the staged plan'),
+                        (['w_prom'], "'promoted'"),
+                        (['ghost'], 'unknown coordinator lease'),
+                        (['w_rq', 'w_rq'], 'more than once')):
+        try:
+            bsr.run_scope(plan, state, None, bad)
+            raise AssertionError('--repair-lease %r was not refused' % bad)
+        except SystemExit as exc:
+            assert needle in str(exc), (bad, str(exc))
+    try:
+        bsr.run_scope(plan, state, ['w_rq', 'w_plain'], ['w_dr'])
+        raise AssertionError('--repair-lease with --lease-id was not refused')
+    except SystemExit as exc:
+        assert 'mutually exclusive' in str(exc), str(exc)
+
+    # (4) the job id the view names is the one materialize_requeue imports (no re-prepare).
+    db = os.path.join(td, 'w_jobs.sqlite')
+    mao.connect(db).close()
+    ctx = bsr.RunContext(db=db, coord_dir=coord,
+                         coordinator=os.path.join(HERE, 'coordinator.py'),
+                         cwd=td, events=None, run_id='w', probe_latencies={})
+
+    def must_not_prepare(argv, **kw):
+        raise AssertionError('prepare-requeue re-run on a requeue_prepared repair lease')
+    assert bsr.materialize_requeue(ctx, 'w_rq', run=must_not_prepare) == 'w_rq::rq01-defect'
+
+    # (5) run_window routing: the requeue repair goes through materialize_requeue, the
+    #     defect-repair through the plain import; the serial supervisor keeps the tag.
+    seen = []
+    saved = (bsr.materialize_requeue, bsr._ensure_imported)
+    bsr.materialize_requeue = lambda c, lid, run=None: seen.append(('rq', lid)) or 'x::rq'
+    bsr._ensure_imported = lambda c, lid: seen.append(('import', lid))
+    try:
+        rw = bsr.make_run_window(bsr.RunContext(
+            db=os.path.join(td, 'w_empty.sqlite'), coord_dir=coord, coordinator='unused',
+            cwd=td, events=None, run_id='w5', probe_latencies={}))
+        mao.connect(os.path.join(td, 'w_empty.sqlite')).close()
+        windows, _ = bsr.run_scope(plan, state, None, ['w_rq', 'w_dr'])
+        for window in windows:
+            assert rw(dict(window, wave_promote=True)) is None
+    finally:
+        bsr.materialize_requeue, bsr._ensure_imported = saved
+    assert seen == [('rq', 'w_rq'), ('import', 'w_dr')], seen
+    assert bs.BoundedSupervisor._normalize_plan(windows[0], 0)['repair'] == 'requeue'
+    args = bsr.build_parser().parse_args(['--plan', 'p', '--repair-lease', 'a',
+                                          '--repair-lease', 'b'])
+    assert args.repair_lease == ['a', 'b'], args.repair_lease
+    print('  (w) H4527 --repair-lease: a named requeue_prepared + defect-repair lease are the '
+          'whole scope (projected 2); an unnamed requeue_prepared lease stays invisible; other '
+          'states refused; run_window routes each through its own import: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_old_receipt_without_agent_ops_code_still_parses(td)
@@ -1746,6 +1874,7 @@ def main():
         test_t_data_root_env_shim(td)
         test_u_auto_promote_until(td)
         test_v_exit_code_contract_per_route(td)
+        test_w_repair_leases_h4527(td)
     print('bounded_staged_run_selftest: PASS')
 
 
