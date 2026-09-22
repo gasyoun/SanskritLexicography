@@ -2748,6 +2748,59 @@ def test_lang_parity_hash_crlf_independent():
             fail('file_sha256 is not CRLF/LF-independent: %s != %s' % (lf_hash, crlf_hash))
 
 
+def test_lang_parity_ledger_refuses_duplicate_keys():
+    """H5259 follow-up (22-09-2026): recovered PR #2305 replayed an old re-hash hunk on a newer
+    base and appended 7 duplicate keys with stale hashes inside one entry's verified_sha256.
+    Plain json.loads keeps the LAST copy silently, so the checker reported 8 misleading
+    "changed since last parity verification" drifts instead of the cause. The loader must
+    refuse a repeated key at any level, naming the entry and the key as a merge/replay
+    artifact, and --update-hash must refuse too -- leaving the file byte-identical rather
+    than silently deduping it on the rewrite."""
+    import tempfile
+    import lang_parity_check as lpc
+    good, stale = 'a' * 64, 'b' * 64
+    entry = ('[{"id": "dup_entry", "verdict": "SHARED", "files": ["x.py"], '
+             '"verified_sha256": {%s}}]')
+    with tempfile.TemporaryDirectory() as tmp:
+        md = os.path.join(tmp, 'LANG_PARITY.md')
+
+        def write(block):
+            with open(md, 'w', encoding='utf-8', newline='\n') as f:
+                f.write('# ledger\n\n```json lang_parity_ledger\n%s\n```\n' % block)
+
+        write(entry % ('"x.py": "%s"' % good))                  # control: clean ledger loads
+        if lpc.load_ledger(md)[0][0]['verified_sha256'] != {'x.py': good}:
+            fail('a clean ledger no longer loads through the strict parser')
+        write(entry % ('"x.py": "%s", "x.py": "%s"' % (good, stale)))
+        before = open(md, 'rb').read()
+        for label, call in (('load_ledger', lambda: lpc.load_ledger(md)),
+                            ('--update-hash', lambda: lpc.update_hash('dup_entry', path=md))):
+            try:
+                call()
+            except lpc.DuplicateKeyError as exc:
+                msg = str(exc)
+            else:
+                fail('%s accepted a repeated verified_sha256 key (kept the stale last copy)'
+                     % label)
+            for needle in ("entry 'dup_entry'", "key 'x.py'", 'verified_sha256', 'merge/replay'):
+                if needle not in msg:
+                    fail('%s refusal does not name %s: %s' % (label, needle, msg))
+        if open(md, 'rb').read() != before:
+            fail('--update-hash rewrote a ledger it refused (silent dedupe)')
+    # Any level: an entry's own field, and the lang_parity_coverage `exempt` map.
+    for raw, needle in (('[{"id": "e1", "verdict": "SHARED", "verdict": "GAP"}]',
+                         "entry 'e1': key 'verdict' repeated in its top level"),
+                        ('{"exempt": {"src/a.py": "r1", "src/a.py": "r2"}}',
+                         "key 'src/a.py' repeated in exempt")):
+        try:
+            lpc.parse_ledger_json(raw)
+        except lpc.DuplicateKeyError as exc:
+            if needle not in str(exc):
+                fail('duplicate-key refusal does not say %r: %s' % (needle, exc))
+        else:
+            fail('parse_ledger_json accepted a repeated key: %s' % raw)
+
+
 def test_sense_dupe_norm_strips_trailing_period():
     """P5 (H1422): norm() stripped a trailing ')'/'〉' but not '.', so tag '1.' and plain
     '1' hashed to different buckets and a real cross-part duplicate with mismatched
@@ -10030,6 +10083,7 @@ def main():
         test_card_coverage_lang_symmetric,
         test_degenerate_xref_vocab_single_source,
         test_lang_parity_hash_crlf_independent,
+        test_lang_parity_ledger_refuses_duplicate_keys,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
         test_opt7_last_audit_tm_refuse_without_no_tm,
