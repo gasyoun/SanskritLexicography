@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 16-09-2026_
+_Created: 01-08-2026 · Last updated: 22-09-2026_
 
 # PWG-RU launch failure ledger
 
@@ -680,8 +680,8 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "classification": "external-api",
   "root_cause": "D:\\ClaudeTools\\profiles\\claude1\\.claude\\settings.json, last written 2026-09-20T13:42:30Z, sets ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic with ANTHROPIC_DEFAULT_SONNET_MODEL/OPUS=glm-5.3[1m]; none of the three July backups carries a base URL. The error code and wording are z.ai's. The quota wall belongs to a GLM coding plan, not to Claude Max. Author and purpose of the 20-09 change are unrecorded.",
   "guardrail": "Before any paid c1 window, read the c1 settings.json env block for ANTHROPIC_BASE_URL (value only, never tokens). A profile slot is a route, not proof of which model answers; transcripts echo the requested model name, so the endpoint, not the log label, decides provenance. No launch until a human settles whether c1 should route to Anthropic or z.ai.",
-  "residual_status": "open-paused",
-  "residual_risk": "Any c1 card promoted since 2026-09-20T13:42:30Z, including the H4527 acceptance card darv_i~~h0_zz_pw (run h4527-acc-200920, 18:01Z), may have been produced by GLM 5.3 under a claude-sonnet-5 label; whether headless_worker --safe-mode inherits the profile env block is unverified. Five prepared leases h4527vol09/10/11/14/22 wait for the route decision."
+  "residual_status": "fixed",
+  "residual_risk": "Route fixed 2026-09-22 on a human ruling («restore Anthropic»): the six z.ai keys were removed from the c1 settings.json (original kept as settings.json.pre-h4527-restore-anthropic-22-09.bak), the canary h4527-canary-220922 went GO, and run h4527-vol-220922 promoted 4 of the 5 prepared leases with Anthropic response ids (msg_011C/req_011C) on every call. Still open: the 20-09 acceptance card darv_i~~h0_zz_pw (run h4527-acc-200920) was produced by GLM 5.3 (transcript id msg_202609…, no requestId) and sits in the store under a claude-sonnet-5 label; the coordinator shows it as the only lease promoted in the z.ai window. Packet: pwg_ru/h4527/H4527_C1_ANTHROPIC_ROUTE_RESTORED_VOLUME_LAUNCH_22-09-2026.md."
  }
 ]
 ```
