@@ -139,7 +139,10 @@ def screen(rows, changed):
     funnel = {"rows": len(rows), "not_ai_translated": 0, "no_stable_identity": 0,
               "corpus_evidence_quarantine": 0, "de_missing": 0,
               "german_residue_or_machine_flags": 0,
-              "h3948_segmentation_quarantine": 0}
+              "h3948_segmentation_quarantine": 0,
+              # H4119 P0: rows the lemma roll-up would have admitted while the SENSE
+              # itself carries no evidence — counted, so the repair is auditable.
+              "rollup_only_no_sense_evidence": 0}
     eligible = []
     for r in rows:
         if r.get("review_status") != "ai_translated":
@@ -149,9 +152,18 @@ def screen(rows, changed):
             funnel["no_stable_identity"] += 1
             continue
         es = r.get("evidence_summary") or {}
-        if not (es.get("evidence_status") == "ok" and not es.get("contradicts")
-                and es.get("supports_senses")):
+        # H4119 P0. `evidence_summary` is the LEMMA roll-up — `annotate_evidence`
+        # attaches one identical dict to every row sharing a `key1`, so
+        # `supports_senses` admitted a sense on a SIBLING sense's evidence (8,584 of
+        # 11,519 live rows are credited by the roll-up alone). The sense-level gate is
+        # `row['evidence']`, the per-sense array; the roll-up keeps only its two
+        # genuinely lemma-level roles, evidence_status and contradicts.
+        sense_evidence = r.get("evidence") or []
+        if not (es.get("evidence_status") == "ok" and not es.get("contradicts")):
             funnel["corpus_evidence_quarantine"] += 1
+            continue
+        if not sense_evidence:
+            funnel["rollup_only_no_sense_evidence"] += 1
             continue
         ru, de = r.get("ru") or "", r.get("de") or ""
         if not de:
@@ -201,8 +213,20 @@ def verdict_panel(r, changed, tm_res):
     def row(k, v):
         return "<tr><td>%s</td><td>%s</td></tr>" % (k, v)
 
+    # H4119 P0: the SENSE's own evidence is `row['evidence']`; `supports_senses` is a
+    # LEMMA roll-up shared by every sense of this key1 and must be labelled as such.
+    sense_ev = r.get("evidence") or []
     supports = es.get("supports_senses") or []
     silent = es.get("silent") or []
+
+    def _ev_html(items):
+        if not items:
+            return "— (у этого значения собственных свидетельств нет)"
+        return "; ".join(
+            "<b>%s</b> — %s%s" % (
+                e.get("source"), e.get("relation"),
+                (": «%s»" % e["gloss_ref"]) if e.get("gloss_ref") else "")
+            for e in items)
     bits = ["<h4>Машинный вердикт и доказательства (не оценка человека)</h4>",
             "<table class=\"verdict\">"]
     bits.append(row("Механические ворота", "немецкий след: нет · машинные флаги D1/D3/D4: нет"
@@ -212,9 +236,12 @@ def verdict_panel(r, changed, tm_res):
                     "<code>%s</code> (печатный омоним h=%s, sense_tag=%s)"
                     % (r.get("subcard"), r.get("h"), r.get("sense_tag"))))
     bits.append(row("Печатная страница", str(r.get("page") or "н/д")))
-    bits.append(row("Корпусные свидетельства (русско-санскритские)",
-                    ", ".join(supports) if supports else "—"))
-    bits.append(row("Корпуса без свидетельства (обучающие и др.)",
+    bits.append(row("Свидетельства ЭТОГО значения (по-сенсовые)", _ev_html(sense_ev)))
+    bits.append(row("Сводка по ЛЕММЕ (не по значению; общая для всех значений "
+                    "этого key1)",
+                    ("поддержали ≥1 значение леммы: %s" % ", ".join(supports))
+                    if supports else "—"))
+    bits.append(row("Молчащие источники (уровень леммы)",
                     ", ".join(silent) if silent else "—"))
     bits.append(row("Противоречия корпусов", "нет" if not es.get("contradicts")
                     else json.dumps(es.get("contradicts"), ensure_ascii=False)))
@@ -535,6 +562,31 @@ def _selftest():
         nonlocal ok
         print(("  ok   " if cond else "  FAIL ") + label)
         ok = ok and bool(cond)
+
+    # 0. H4119 P0 — the eligibility gate is the SENSE's own evidence array, never the
+    #    lemma roll-up, and the panel labels the roll-up as lemma-level.
+    _rollup = {"evidence_status": "ok", "contradicts": [], "silent": [],
+               "supports_senses": ["koch"], "present": []}
+    _base = {"review_status": "ai_translated", "subcard": "agni~~h0", "sense_tag": "1",
+             "key1": "agni", "de": "Feuer", "evidence_summary": _rollup}
+    with_sense = dict(_base, ru="огонь",
+                      evidence=[{"source": "koch", "relation": "provides",
+                                 "gloss_ref": "огонь, пламя", "match": "lemma"}])
+    rollup_only = dict(_base, ru="бог огня", evidence=[])
+    fun, elig = screen([with_sense, rollup_only], changed=set())
+    check(len(elig) == 1 and elig[0] is with_sense,
+          "screen admits only the sense carrying its OWN evidence")
+    check(fun["rollup_only_no_sense_evidence"] == 1,
+          "screen counts the roll-up-only row instead of silently admitting it")
+    _tm = {"address": "ru:abc", "result": "miss", "denied": False,
+           "trust_level": None, "reuse_policy": None}
+    panel = verdict_panel(with_sense, set(), _tm)
+    check("Свидетельства ЭТОГО значения" in panel,
+          "panel renders the per-sense evidence array")
+    check("Сводка по ЛЕММЕ" in panel, "panel labels the roll-up as lemma-level")
+    check("koch</b> — provides" in panel, "panel shows the sense's relation, not a bare code")
+    check("собственных свидетельств нет" in verdict_panel(rollup_only, set(), _tm),
+          "a roll-up-only sense is shown as having no evidence of its own")
 
     # 1. disable_voting removes the visible controls from a rendered fixture.
     ru, de = g5._FIXTURE_CARDS[0]
