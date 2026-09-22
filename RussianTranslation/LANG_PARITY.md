@@ -1149,14 +1149,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/coordinator.py": "48926e49c93c1f5cc459bab67350d9de93517c77d7b4edc1b6f12aa2f555b45e",
       "src/pilot/headless_worker_selftest.py": "d582134766bd6c1d3472dc49506ca6c7e5434da048063323f6fa189deb9a4ea4",
       "src/pilot/max_account_orchestrator_selftest.py": "ad014e63e7e3f64a7082560675252958855cfe59b1e574dcca6bc43a5f6711f0",
-      "src/pilot/no_pwg_scale_plan.py": "e940c4186da6bdc8622f2f2628a9276f2a3a5053fa3a8f80eaecae5a16f4b97a",
-      "src/pilot/gen_opt_harness2.py": "5032ff74aa0e0f6d6236a80359c6917f013460227619d3ae5f8892f4a4fd1b33",
-      "src/pilot/headless_worker.py": "9a1597ca2da3fe40dac137467142157995e7bc3a2c539390f01d42d852f0eb63",
-      "src/pilot/max_account_orchestrator.py": "1212afdc23972fd14ead4c2d5812118bd8bcb6a830177b707971a270ffc4bf3f",
-      "src/pilot/coordinator.py": "e1cf7262a45a5a35f9d6f8fd01fced069ef81cc043d008b1b185d8de800a21e6",
-      "src/pilot/headless_worker_selftest.py": "5ee9cf3b202d46cf43976b2eba5ab28b156e3fc89346c0a8c3d08d80daa9b9cd",
-      "src/pilot/max_account_orchestrator_selftest.py": "e56dea67300e2af108c1308e48c1c828dbca6b472e716e69d117c44bc65f3b29",
-      "src/pilot/no_pwg_scale_plan.py": "769b5ab049eacde928f77b6b2ef57258a107cb1d77d14e6ab2d9a8f5ed3f2100",
+      "src/pilot/no_pwg_scale_plan.py": "3074e60501b8c2fd2ffd4780cc3dd5632d843df042d50c9466eb946f4b60372a",
       "src/pilot/windows100_selftest.py": "11c19bdeb665507cc2d40311c5b1da577412c534986fd8e98172231a99c85dea",
       "src/pilot/run_observability.py": "43156e5fdc858858d2f7ec649dc94f7ac9c1d35242369d81d89d11af6e18d080",
       "src/pilot/run_observability_selftest.py": "75bc960a35080a0c84ca9b5ee62b63134a9e0bde334c5531d564b13019187b60",
@@ -2520,7 +2513,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verdict": "SHARED",
     "note": "H4527 (17-09-2026, Opus 5 `claude-opus-5`). Why it exists: `agent_budget` derives a card's self-heal pool from its sense groups, so a zero-sense sub-card runs with `max_heal_agents: 0` — one paid shot and no repair lane; the 16-09-2026 live acceptance window spent a call on exactly that topology (`asa_mskfta~~h0_zz_nws00`, `senses: []`) and came back null, and the 17-09 census showed the zero is structural for the whole `~~h0_zz_nws00` class (0 of 10 declare a sense). Parity: both readings of the count describe the source entry — the portrait sidecar's stamped `source_senses` and `sense_count.count_source_senses`, which counts line-opening top-level ordinals in the raw German source — and both run before generation, so the RU and EN lanes admit the identical sub-cards. Strictly narrowing: an unprovable count (None) is skipped rather than admitted, and nothing is written to the residual registry. Test: `test_no_pwg_require_senses_gate`.",
     "verified_sha256": {
-      "src/pilot/no_pwg_scale_plan.py": "e940c4186da6bdc8622f2f2628a9276f2a3a5053fa3a8f80eaecae5a16f4b97a",
+      "src/pilot/no_pwg_scale_plan.py": "3074e60501b8c2fd2ffd4780cc3dd5632d843df042d50c9466eb946f4b60372a",
       "src/pilot/window_selftest.py": "bdd29ee1abe2f712a424330820948c20fc4ee8e067d275b72f45c7a1aef88eaa"
     }
   }
