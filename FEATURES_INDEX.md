@@ -73,6 +73,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | ⚪ B10 | `Whitney_DCS_audit.json` | Whitney × DCS root audit vs the 935-root Whitney hub | 415 KB | `{ "root":"aṃh", "dcs_lemma":"aṃh", "status":"matched", "class_verdict":"whitney-missing" }` | 06/26 | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
 | ⚪ B11 | `corpus_class_verdicts.json` | Corpus-verified root-class verdicts. ⚠ unaccented DCS can't split class I vs VI | 514 KB | `{ "aṃh": { "classes": [], "verdict": "not_attested" } }` | 06/26 | [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
 | ⚪ B12 | `dcs_ppp_verified.tsv` | Corpus-attested past-passive-participle forms + counts | 5,181 forms · 147 KB | `vac   ukta   2   P.   7734` (√vac → ukta, 7734×) | 07/26 | [VisualDCS](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Glagolnye-formy) |
+| 🟡 B13 | `kewa_ewa_pwg_crosswalk_extended.tsv` | The modern-IE etymology lane, §7-shaped: 11,418 KEWA heading→PWG rows (78.9 % matched) + `source`/`supersedes`/reserved `ewa_*` slots so Mayrhofer EWA rows land in-place when MG acquires the index (absent from the estate 15-09-2026; readiness census: 900/1,026 Concordance EWA-pointer roots already exact in PWG key1) | 11,418 rows · 968 KB | `modern-IE	KEWA	1	I	13	0	a	exact	a	…	(supersedes empty)` | 09/26 | [ewa_extend.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/etym/ewa_extend.py) |
 
 ### C · Headwords & crosswalks
 
