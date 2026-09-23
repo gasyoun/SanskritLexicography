@@ -13,13 +13,15 @@ CHANGELOG = "RussianTranslation/CHANGELOG.md"
 # H3355: [Unreleased] bullets are hook-blocked; entries land in changelog_queue/ and
 # are consumed at release-cut. A queued entry in the same diff satisfies this guard
 # (02-09-2026, H3864 — the guard predated the queue and refused every queued audit).
-CHANGELOG_QUEUE_PREFIX = "changelog_queue/"
+# git diff paths are repo-root relative, so the RussianTranslation queue is matched with
+# its folder prefix too (23-09-2026, H5261: the bare prefix refused every queued entry).
+CHANGELOG_QUEUE_PREFIXES = ("changelog_queue/", "RussianTranslation/changelog_queue/")
 
 
 def has_changelog_touch(changed):
     if CHANGELOG in changed:
         return True
-    return any(p.startswith(CHANGELOG_QUEUE_PREFIX) and p.endswith(".md") for p in changed)
+    return any(p.startswith(CHANGELOG_QUEUE_PREFIXES) and p.endswith(".md") for p in changed)
 BYPASS_MARKER = "Changelog: not applicable"
 REVIEW_PATTERNS = (
     "RussianTranslation/*REVIEW*.md",
@@ -105,6 +107,8 @@ def selftest():
     assert check(["RussianTranslation/README.md"]) == 0
     assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
                   "changelog_queue/2026-09-02-x.md"]) == 0
+    assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
+                  "RussianTranslation/changelog_queue/2026-09-22-x.md"]) == 0
     with contextlib.redirect_stderr(io.StringIO()):
         assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
                       "changelog_queue/README.txt"]) == 1
