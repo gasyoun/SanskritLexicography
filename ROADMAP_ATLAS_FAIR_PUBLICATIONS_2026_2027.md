@@ -1,7 +1,7 @@
 # Digital Sanskrit Lexicography 2026–2027
 ## Review of csl-atlas, a research programme, and a 12-month publication roadmap
 
-_Created: 12-06-2026 · Last updated: 02-09-2026_
+_Created: 12-06-2026 · Last updated: 23-09-2026_
 
 > **Truth-pass 02-09-2026** (Sonnet 5 `claude-sonnet-5`, H3795). **Verdict: live-with-residual.**
 > Checked against `csl-atlas`/`csl-standards`/`VisualDCS`/`csl-observatory` origin/main and the
@@ -148,7 +148,7 @@ The payload is the tension and its resolution. Apresyan's method was always vuln
 | P5 | *Fifty thousand corrections: an error typology of twelve years of collaborative dictionary maintenance* | OBS-T (52,498 corrections released snapshot, two-axis typology; **κ pending** — the gold sample's second-annotator column is still empty, no measured agreement exists yet) + the [A31 origin-axis census](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A31_fifty_thousand_corrections_error_origin_typology.md) | **Lexikos** | Q2 2027 |
 | P6 | *A frequency-graded reading layer for Sanskrit learners: joining corpus, grammar, and seven dictionaries* | DCS bands + lemma dossier + Whitney + user study (G7) | **Lexikos** (pedagogical) or eLex 2027 | Q2 2027 |
 
-**Book** (proposal to de Gruyter *Lexicographica Series Maior* or Brill, ~Q1 2027 after P1–P2 are under review):
+**Book** (proposal to de Gruyter *Lexicographica Series Maior* or Brill, ~Q1 2027 after P1–P2 are under review; ten-chapter proposal draft with real readiness per chapter: [PROPOSAL_SYNOPSIS_TEN_CHAPTER_PLAN_LSM_BRILL_23-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/PROPOSAL_SYNOPSIS_TEN_CHAPTER_PLAN_LSM_BRILL_23-09-2026.md), H5323 — crosswalked to the 14-chapter M01 [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md); which ToC is sent is an open `@DECIDE`):
 *Sanskrit Lexicography in the Digital Age: Evidence, Inheritance, and Two Traditions* — Ch.1 history & the two civilizations (new); Ch.2 method: evidence-graded lexicography (new, from Part II); Ch.3 ← P1; Ch.4 ← P2; Ch.5 ← P3; Ch.6 ← P4; Ch.7 macrostructure & the kośa type (new, from the gap list); Ch.8 ← P5; Ch.9 ← P6 + the learner's layer; Ch.10 FAIR infrastructure & the four-repo architecture (from observatory + standards).
 
 ---
