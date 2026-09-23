@@ -1908,6 +1908,20 @@ def test_braced_gloss_audit():
         fail('braced gloss audit flagged a gloss that only collided with an embedded '
              'Sanskrit citation substring, not a real leak')
 
+    # H4527 (23-09-2026, kast_ur_i~~h0_zz_pw): a Latin binomial wrapped in PWG markup
+    # ({%<bot>Hibiscus abelmoschus</bot>%}) and kept verbatim in the Russian is the
+    # convention, not an untranslated German gloss -- the anchored LATIN_BINOMIAL used to be
+    # defeated by the leading tag. The other direction must still fire: a bare German
+    # {%Moschus%} echoed with no Cyrillic rendering is a genuine miss, tagged or not.
+    for bot in ('{%<bot>Hibiscus abelmoschus</bot>%}', '{%<bot>Amaryllis zeylanica</bot>%}'):
+        bot_ids = {r['id'] for r in braced_gloss_risks(bot, bot, '1')}
+        if bot_ids & {'untranslated_braced_german_gloss', 'foreign_gloss_translated'}:
+            fail('braced gloss audit flagged a verbatim <bot> Latin binomial: %s' % bot)
+    for ger in ('{%Moschus%}', '{%<bot>Moschus</bot>%}'):
+        ger_ids = {r['id'] for r in braced_gloss_risks(ger, ger, '1')}
+        if 'untranslated_braced_german_gloss' not in ger_ids:
+            fail('braced gloss audit missed a bare untranslated German echo: %s' % ger)
+
 
 def semantic_card_risk_ids(russian, german='{%nachgehen%}'):
     card = {'card': {'key1': 'x', 'iast': 'x', 'notes': '', 'records': [{

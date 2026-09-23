@@ -1,0 +1,52 @@
+{
+ "sources": [
+  {
+   "source": "pw.txt",
+   "braced_spans": 212558,
+   "braced_spans_with_markup": 19232,
+   "masker_gloss_lang_moves": {
+    "de->la": 5705
+   },
+   "class_moves": {
+    "german->foreign": 5705,
+    "foreign->german": 1
+   },
+   "class_moves_by_tag": {
+    "foreign->german sic": 1,
+    "german->foreign bot": 5420,
+    "german->foreign zoo": 285
+   },
+   "examples": {
+    "german->foreign": [
+     "<bot>Musa sapientum</bot>",
+     "<bot>Hedysarum gangeticum</bot>",
+     "<bot>Areca faufel</bot>",
+     "<bot>Areca catechu</bot>",
+     "<bot>Dalbergia ougeinensis</bot>",
+     "<bot>Trophis aspera</bot>",
+     "<bot>Chrysopogon acicularis</bot>",
+     "<bot>Achyranthes aspera</bot>",
+     "<bot>Buchanania latifolia</bot>",
+     "<bot>Andropogon serratus</bot>",
+     "<bot>Dalbergia sissoo</bot>",
+     "<bot>Dalbergia sissoo</bot>",
+     "<bot>Semecarpus anacardium</bot>",
+     "<bot>Plumbago zeylanica</bot>",
+     "<bot>Citrus acida</bot>"
+    ],
+    "foreign->german": [
+     "agreable |<sic/>, pleasing"
+    ]
+   }
+  },
+  {
+   "source": "pwg.txt",
+   "braced_spans": 192763,
+   "braced_spans_with_markup": 7850,
+   "masker_gloss_lang_moves": {},
+   "class_moves": {},
+   "class_moves_by_tag": {},
+   "examples": {}
+  }
+ ]
+}
