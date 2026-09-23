@@ -81,7 +81,34 @@ the PR. Verdict: **PASS-WITH-NOTES**, no blocker.
 - The cheapest path that uses only existing gates is one retry through
   `--repair-lease` (1 card call + probe legs). It runs after this fix is merged and pulled
   on MSI.
-- MSI was offline on the tailnet for this whole session (last seen ~13:30Z). So the
-  pull, the standalone read-only audit and the retry all wait for the box.
+- An earlier probe this session read MSI as offline. That was wrong: MSI was
+  reachable, and the re-audit below ran on it the same day.
+
+## Re-audit of `kast_ur_i` with the fixed gate: clean, 0 paid calls (23-09-2026, evening)
+
+- **Where it ran:** on MSI, from a detached worktree at `5a9d75b85` (the merged fix).
+- **What it read:** the stored rq01-defect output
+  `output/coordinator/artifacts/h4527vol14/requeue/rq01-defect/wf_output.h4527vol14.json`
+  and its execution manifest.
+- **How it ran:**
+  - `PWG_INPUT_DIR` pointed at the main tree's `input/`, so the stale-hash check compared
+    against the same raw/portrait files the run used.
+  - No `--write-requeue` and no `--allow-stale`.
+  - A scratch `--out-dir` under `%TEMP%`.
+  - Coordinator state was not touched.
+- **Result:** `audit_exit=0`, state `clean`, `requeue: 0`, `clean keys: 1`.
+  - Every gate reports PASS.
+  - `prompt_semantic` shows 0 risks for the key. That is the section that raised
+    `untranslated_braced_german_gloss` before the fix.
+- **Receipts:**
+  - [h4527vol14_rq01_reaudit_window_status_23-09-2026.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/h4527vol14_rq01_reaudit_window_status_23-09-2026.json)
+  - [h4527vol14_rq01_reaudit_report_23-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/h4527vol14_rq01_reaudit_report_23-09-2026.md)
+- **A wrong turn, recorded:** the first attempt ran without `PWG_INPUT_DIR`. The fresh
+  worktree has no generated inputs, so the stale check refused. Rerun with `--allow-stale`,
+  it showed `NO-RAW` flags on nws, translation and coverage. Those flags came from the
+  missing inputs, not from the card.
+- **Promotion is still open.** `h4527vol14` is `needs_requeue`. `promote-ready` accepts
+  only `ready` leases. `prepare-requeue` leads to a new paid generation. The two ways
+  forward (a paid retry, or a new re-audit transition) are a human decision.
 
 _Гасунс_
