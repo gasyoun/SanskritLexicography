@@ -172,3 +172,6 @@ RussianTranslation/reports/pipeline_blobs/*.tmp
 # multi-MB derived .idx files are not).
 data/cdsl_index/*.idx
 data/cdsl_index/*.building
+
+# H5330 rendered double-keyed sheets carry csl-orig-derived definition text — regenerable from manifest + seed (data/build_typology_pool_sheets.py), never committed (never-commit-csl-orig guard)
+data/typology_pool_300x7_sheets/
