@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T01:48:47Z",
+  "generated_at": "2026-09-23T01:50:21Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,36 +7,36 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": false,
+    "translation_on": true,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 50319,
+    "youngest_artifact_age_seconds": 19,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
     "artifacts": {
       "store": {
         "exists": true,
-        "mtime": "2026-09-22T11:50:05Z",
-        "age_seconds": 50319,
-        "size": 26379693
+        "mtime": "2026-09-23T01:49:57Z",
+        "age_seconds": 19,
+        "size": 26379779
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 2269442,
+        "age_seconds": 2269534,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 2269442,
+        "age_seconds": 2269534,
         "size": 328707
       },
       "events": {
         "exists": true,
-        "mtime": "2026-09-22T11:50:03Z",
-        "age_seconds": 50321,
-        "size": 3626949
+        "mtime": "2026-09-23T01:49:52Z",
+        "age_seconds": 23,
+        "size": 3636418
       }
     }
   },
@@ -50,9 +50,9 @@
     "clean_key_count": 2,
     "translated": 79,
     "pending": 29,
-    "newest_card_at": "2026-09-21T19:10:52Z",
+    "newest_card_at": "2026-09-22T20:39:53Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 1.28,
+    "days_since_last_card": 0.22,
     "campaign_days": 86
   },
   "yield_quality": {
@@ -111,13 +111,13 @@
   },
   "gates": {
     "measured": true,
-    "gate_summaries": 3895,
-    "exit0": 2087,
-    "exit0_pct": 53.6,
+    "gate_summaries": 3913,
+    "exit0": 2104,
+    "exit0_pct": 53.8,
     "recent_shown": 200,
     "recent": [
       {
-        "ts": "2026-09-22T11:49:10Z",
+        "ts": "2026-09-23T01:49:23Z",
         "root": null,
         "summary": "prompt_semantic exit=1 requeue=1",
         "returncode": 1,
@@ -126,77 +126,77 @@
         ]
       },
       {
-        "ts": "2026-09-22T11:49:10Z",
+        "ts": "2026-09-23T01:49:23Z",
         "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:49:10Z",
+        "ts": "2026-09-23T01:49:23Z",
         "root": null,
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "final_schema exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "nws exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "translation exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "stage2_mechanical exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "coverage exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "sense_dupes exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "prompt_semantic exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "sense_loss exit=0 requeue=0",
         "returncode": 0,
         "requeue": []
       },
       {
-        "ts": "2026-09-22T11:50:03Z",
+        "ts": "2026-09-23T01:49:52Z",
         "root": null,
         "summary": "ru_style exit=0 requeue=0",
         "returncode": 0,
@@ -604,24 +604,17 @@
         ]
       }
     ],
-    "live_jobs": [
-      {
-        "external_id": "h4527vol14::rq01-defect",
-        "state": "in_progress",
-        "started_at": "2026-09-23T01:48:16Z",
-        "profile_slot": "c1"
-      }
-    ],
-    "live_job_count": 1,
+    "live_jobs": [],
+    "live_job_count": 0,
     "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
     "cards_last_hour": 0,
-    "cards_last_24h": 0,
+    "cards_last_24h": 3,
     "mean_cards_per_active_day_14d": 38.857,
     "mean_wall_clock_minutes": 18.907,
     "wall_clock_sample_n": 51,
-    "newest_card_at": "2026-09-21T19:10:52Z",
+    "newest_card_at": "2026-09-22T20:39:53Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
     "measured": true
   },
@@ -766,16 +759,16 @@
     "measured": true,
     "min_idle_seconds": 120,
     "list_len": 12,
-    "gap_count": 13,
-    "total_idle_seconds": 5158982,
-    "total_idle_hours": 1433.05,
-    "mean_gap_seconds": 396844.769,
-    "current_idle_seconds": 50319,
-    "last_idle_seconds": 150221,
+    "gap_count": 14,
+    "total_idle_seconds": 5209341,
+    "total_idle_hours": 1447.04,
+    "mean_gap_seconds": 372095.786,
+    "current_idle_seconds": null,
+    "last_idle_seconds": 50359,
     "last_idle": {
-      "from": "2026-09-20T18:02:50Z",
-      "to": "2026-09-22T11:46:31Z",
-      "seconds": 150221,
+      "from": "2026-09-22T11:50:03Z",
+      "to": "2026-09-23T01:49:22Z",
+      "seconds": 50359,
       "after_root": null,
       "before_root": null,
       "reason": "unknown",
@@ -796,21 +789,12 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 1364705,
+        "idle_seconds": 1364745,
         "idle_days": 15.8,
-        "idle_hours": 379.08
+        "idle_hours": 379.1
       }
     ],
     "recent_gaps": [
-      {
-        "from": "2026-08-25T19:40:43Z",
-        "to": "2026-08-27T19:24:39Z",
-        "seconds": 171836,
-        "after_root": null,
-        "before_root": "dA",
-        "reason": "unknown",
-        "reason_source": "default"
-      },
       {
         "from": "2026-08-27T19:24:44Z",
         "to": "2026-08-29T09:35:42Z",
@@ -905,6 +889,15 @@
         "from": "2026-09-20T18:02:50Z",
         "to": "2026-09-22T11:46:31Z",
         "seconds": 150221,
+        "after_root": null,
+        "before_root": null,
+        "reason": "unknown",
+        "reason_source": "default"
+      },
+      {
+        "from": "2026-09-22T11:50:03Z",
+        "to": "2026-09-23T01:49:22Z",
+        "seconds": 50359,
         "after_root": null,
         "before_root": null,
         "reason": "unknown",
@@ -1028,6 +1021,15 @@
         "before_root": null,
         "reason": "unknown",
         "reason_source": "default"
+      },
+      {
+        "from": "2026-09-22T11:50:03Z",
+        "to": "2026-09-23T01:49:22Z",
+        "seconds": 50359,
+        "after_root": null,
+        "before_root": null,
+        "reason": "unknown",
+        "reason_source": "default"
       }
     ],
     "reasons": {
@@ -1040,12 +1042,12 @@
         "waiting_requeue",
         "unknown"
       ],
-      "gap_count": 13,
+      "gap_count": 14,
       "reason_counts": {
-        "unknown": 13
+        "unknown": 14
       },
       "known_reason_count": 0,
-      "unknown_reason_count": 13,
+      "unknown_reason_count": 14,
       "log_entries": 0,
       "log_path": "idle_reason_log.jsonl",
       "note": "Reasons from operator log or measured auto-rules only; historical silence stays unknown"
@@ -2102,12 +2104,12 @@
       },
       {
         "date": "2026-09-20",
-        "cards": 3,
+        "cards": 0,
         "windows": 0,
         "idle_seconds": 125825,
         "idle_hours": 34.95,
-        "level": 1,
-        "idle": false
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-09-21",
@@ -2120,26 +2122,26 @@
       },
       {
         "date": "2026-09-22",
-        "cards": 0,
+        "cards": 3,
         "windows": 0,
-        "idle_seconds": 50073,
-        "idle_hours": 13.91,
-        "level": 0,
-        "idle": true
+        "idle_seconds": 75252,
+        "idle_hours": 20.9,
+        "level": 1,
+        "idle": false
       },
       {
         "date": "2026-09-23",
         "cards": 0,
         "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
+        "idle_seconds": 25179,
+        "idle_hours": 6.99,
         "level": 0,
-        "idle": false
+        "idle": true
       }
     ],
     "max_cards": 6025,
     "active_days": 24,
-    "idle_days": 54
+    "idle_days": 55
   },
   "changelog": {
     "measured": true,
