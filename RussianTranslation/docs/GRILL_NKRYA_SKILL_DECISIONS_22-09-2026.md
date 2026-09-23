@@ -1,4 +1,4 @@
-_Created: 22-09-2026 · Last updated: 22-09-2026_
+_Created: 22-09-2026 · Last updated: 23-09-2026_
 
 # NKRYa skill: grill decisions (22-09-2026)
 
@@ -38,5 +38,7 @@ The filename token is Opus because the mint lane guard (H3470) lets a Claude Cod
 ## Human step (blocks H5261's live queries)
 
 MG generates a non-expiring API key in the NKRYa account (ruling 1). The H5261 executor stores it; it is never pasted into chat or git.
+
+Follow-up: round 2 (other uses of the key, 23-09-2026) — [GRILL_NKRYA_USES_ROUND2_DECISIONS_23-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/GRILL_NKRYA_USES_ROUND2_DECISIONS_23-09-2026.md).
 
 _Гасунс_
