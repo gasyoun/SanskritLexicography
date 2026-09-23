@@ -1,0 +1,152 @@
+PASS: test_occupied_keys_guard_fails_closed_h2154
+  staged plan scope: prepared lease alone supplies the GO denominators
+no runnable jobs
+no runnable jobs
+  profile-slot migration: bad cross-scope sentinel stays cold; scoped repair revalidates
+  staged scope: unrelated failed/history jobs excluded from claims and counts
+imported=1
+  profile-bound claims: wrong/missing owner refused loudly
+  generic argv guard: all arbitrary enqueues + legacy rows refuse before spawn
+  H1 terminal config: unreadable/invalid manifest + worker configuration verdict fail terminally on attempt 1 (max_attempts=3, zero pre-launch spawns); process failure still retries
+no runnable jobs
+  profile-bound dispatch: late slot selected before slice; busy owner fails loudly
+recovered=1
+imported=1
+imported=1 lease1::rq01-transient
+imported=0 (attempt job exists: lease1::rq01-transient)
+  H1339 A4: import-requeue -> unique ::rqNN job, idempotent, fail-closed on state
+reset=1 (lease1::rq01-transient)
+  H1339 B18: reset-failed audited (reason + events row), scoped, loud on empty scope
+  D-C is_rate_limited: hash-429 ignored; worker-class / real-429 detected
+  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 239999 pass / 240000 NO-GO (derived from PROBE_LATENCY_CEILING_MS); warm-up fail STOPs before measured
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  D-K _probe_call envelope: result-string + structured_output => success; error/is_error => process; {ok:false} => content; rc0 rate/auth wrapper detected; non-envelope => malformed
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  D-P readiness prompt: honest question (true answer ok=true) over >=10.7 KB reference text; plan mode kept; injection-shaped framing and x-padding gone
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H2299 probe spawn cwd: == headless_worker.bare_cli_cwd() (D:\pwg_ru_cli_cwd), not the repo
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H4527 probe --safe-mode: == headless_worker.resolve_safe_mode({}) both ways; recorded as cli_safe_mode_effective
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H4436 profile:init --safe-mode: == headless_worker.resolve_safe_mode({}) both ways
+  D-K census: probe distinguishable; warm-up excluded from latency but counted in quota
+Exception in thread Thread-8 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\subprocess.py", line 1614, in _readerthread
+    buffer.append(fh.read())
+                  ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x88 in position 0: invalid start byte
+Exception in thread Thread-10 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\subprocess.py", line 1614, in _readerthread
+    buffer.append(fh.read())
+                  ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x88 in position 0: invalid start byte
+Exception in thread Thread-12 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Python314\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Python314\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\subprocess.py", line 1614, in _readerthread
+    buffer.append(fh.read())
+                  ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x88 in position 0: invalid start byte
+  D-K hanging-probe: parent->child->grandchild all gone; the next phase never starts
+  D-G one-active-job-per-account: busy acc1 second claim refused; free acc2 claims
+  D-H promotion telemetry: success / not_attempted / conflict distinguished
+  D-G REAL race x8: independent conns, barrier-synced -> one winner + one still-pending, no SQLITE_BUSY
+  D-I exactly-once: 5-key=1 sample; retry distinct; dupe dedup; conflict flagged; context preserved
+  GAP5 probe_fleet: N=4 map + warm-ups excluded; NO-GO STOPs by default; --drop-unhealthy subset; N=1 == old live_probe
+acc1 fan0 -> done
+acc3 fan2 -> done
+acc4 fan3 -> done
+acc2 fan1 -> done
+  GAP5 fair fan-out N=4: 4 accounts claim 4 distinct jobs in one pass; all 4 reach done exactly once
+acc1 oa0 -> done
+acc2 oa1 -> done
+  GAP5 only_accounts dispatch filter: capped-out/unprobed accounts receive NO job
+  GAP5 one-active-job-per-account N=4: 4 distinct claims; each 2nd claim refused; 4 distinct owners
+recovered=2
+  GAP5 recover exactly-once N=4: 2 in_progress -> pending; recorded-done untouched; coordinator_recorded stays 1
+acc1 runtime0 -> done
+acc2 runtime1 -> pending
+  runtime integration: reserve batch before workers; retryable worker releases slot
+  C4 rate-limit: a 429 returns the job to claimable pending (attempts decremented), never a permanently-unclaimable stuck row
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  paid boundaries: profile/canary zero-call; drop-unhealthy cannot swallow ceiling
+  staged-run: coordinator preflight refusal precedes call ledger/probe
+CANARY GO -> C:\Users\user\AppData\Local\Temp\tmp7j5w8e9d\r_c4.json
+CANARY GO -> C:\Users\user\AppData\Local\Temp\tmp7j5w8e9d\r_c5.json
+CANARY GO -> C:\Users\user\AppData\Local\Temp\tmp7j5w8e9d\r_c4_stale.json
+CANARY GO -> C:\Users\user\AppData\Local\Temp\tmp7j5w8e9d\r_c5_stale.json
+  staged-run: H4916 canary gate — no/stale/other-profile/one-for-N receipt refuses with zero spawns and no ledger; N valid per-profile receipts reach the probe
+recorded=1
+RECORD_OUTPUT_BATCH_PROGRESS: {"schema":"pwg.record_output_batch.v1","recorded":["lease-record","lease-b"],"remaining":["lease-c"],"failed":{"lease_id":"lease-c"}}
+synthetic batch failure  record-done: hash+run forwarded; substitution refused; batch partial prefix exact
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H2079 #945: probe emits duration_api_ms + api_gap_ms; ceiling still gates elapsed_ms
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H2326 #1172: non-success probe parks the raw envelope + matched pattern; success lane writes nothing
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H2878 #1680: every probe records bytes_seen/quiet_ms, a stalled kill names itself `no_output_progress`, and all three survive append_event
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H3642: HEALTH_PROBE_LOG follows explicit/env/default precedence like the per-account events root; PROBE_RAW_DIR derives from it; default byte-identical
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+H2189: manifest requested execution.cli_safe_mode but the installed CLI (C:\Python314\python.exe) does not advertise --safe-mode -- spawning WITHOUT it and paying the full profile prefix. Update the CLI or clear the manifest flag.
+  H4915 probe ration: 3rd same-day attempt and <6 h attempt refused before spawn and reservation; two evidence roots share one count; refusal names the next legal UTC time
+max_account_orchestrator_selftest: PASS
