@@ -1,0 +1,207 @@
+{
+ "fetched_utc": "doc-example (ruscorpora/public-api), not live",
+ "request": {
+  "endpoint": "/lex-gramm/concordance",
+  "method": "POST",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lexGramm": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "disambmod",
+        "text": {
+         "v": "main"
+        }
+       },
+       {
+        "fieldName": "distmod",
+        "text": {
+         "v": "with_zeros"
+        }
+       }
+      ],
+      "subsectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "чёрный"
+          }
+         }
+        ]
+       },
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "кошка"
+          }
+         },
+         {
+          "fieldName": "dist",
+          "intRange": {
+           "begin": 1,
+           "end": 3
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "params": {
+    "pageParams": {
+     "docsPerPage": 2,
+     "page": 0,
+     "snippetsPerDoc": 1
+    },
+    "seed": 5261
+   }
+  }
+ },
+ "response": {
+  "groups": [
+   {
+    "docs": [
+     {
+      "info": {
+       "title": "Doc-shaped example A (1958)"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "text": "Мимо",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "text": "прошла",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "text": "чёрная",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "text": "кошка",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": ".",
+              "type": "WORD"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "info": {
+       "title": "Doc-shaped example B (2003)"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "text": "Там",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "text": "сидела",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "text": "чёрная",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "text": "кошка",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "text": ".",
+              "type": "WORD"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "queryStats": {
+   "textCount": 98,
+   "wordUsageCount": 137
+  }
+ }
+}
