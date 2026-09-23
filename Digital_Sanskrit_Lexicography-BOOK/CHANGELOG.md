@@ -1,11 +1,24 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 17-09-2026_
+_Created: 07-07-2026 · Last updated: 23-09-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Added — 23-09-2026 (H5323, Fable 5.1 `claude-fable-5-1`)
+
+- **Ten-chapter proposal draft with real readiness per chapter** —
+  [PROPOSAL_SYNOPSIS_TEN_CHAPTER_PLAN_LSM_BRILL_23-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/PROPOSAL_SYNOPSIS_TEN_CHAPTER_PLAN_LSM_BRILL_23-09-2026.md):
+  the roadmap Part III plan (*Sanskrit Lexicography in the Digital Age*) as synopsis, rationale
+  against ELEXIS / Lexonomy / TEI Lex-0, ten chapter abstracts each tied to its source paper
+  (P1→A16 5/5, P2→A02 4/5, P3→A08 4/5 + A18 3/5, P4→A30 3/5, P5→A31 3/5 + A12 4/5, P6→A32 1/5;
+  Ch. 1, 2, 7, 10 marked new) with readiness copied verbatim from Uprava ARTICLES.md, a
+  readiness ledger, market, timeline and three `@DECIDE` items (one ToC or two, title,
+  submission trigger). §0 crosswalks every chapter to the 14-chapter M01 architecture in
+  BRILL_PROPOSAL.md; neither file replaces the other. Allowlisted in `.gitignore`; pointer added
+  to the roadmap Part III book paragraph. Draft only — not sent.
 
 ### Added — 17-09-2026 (H5050, MG rulings 17-09-2026)
 
