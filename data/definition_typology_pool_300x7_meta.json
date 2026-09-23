@@ -1,0 +1,19 @@
+{
+  "allocator": "proportional-to-predicted-class, min 10/class, largest-remainder, overflow to largest under-cap class",
+  "classifier_module": "data/definition_typology_classifier.py (H1483), reused verbatim",
+  "dicts": [
+    "ap90",
+    "ben",
+    "mw",
+    "pw",
+    "pwg",
+    "skd",
+    "vcp"
+  ],
+  "entries_per_dict": 300,
+  "handoff": "H5330",
+  "input_sha1_12": "ap90:11766345:062aa7b5d546;ben:6575315:987ff842726e;mw:50163993:5c412c3fce06;pw:31495479:5fa8da593e79;pwg:54634244:95dbd007f1f7;skd:22867341:e0946b7666b2;vcp:25107867:655eb769b7cd",
+  "min_quota_per_class": 10,
+  "seed": 5330,
+  "total_rows": 2100
+}
