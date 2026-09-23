@@ -1,7 +1,7 @@
 # Digital Sanskrit Lexicography 2026–2027
 ## Review of csl-atlas, a research programme, and a 12-month publication roadmap
 
-_Created: 12-06-2026 · Last updated: 23-09-2026_
+_Created: 12-06-2026 · Last updated: 24-09-2026_
 
 > **Truth-pass 02-09-2026** (Sonnet 5 `claude-sonnet-5`, H3795). **Verdict: live-with-residual.**
 > Checked against `csl-atlas`/`csl-standards`/`VisualDCS`/`csl-observatory` origin/main and the
@@ -177,7 +177,7 @@ The payload is the tension and its resolution. Apresyan's method was always vuln
 6. Review pool round 2: definition-typology annotation (the missing classical dimension) — 300 entries × 7 dicts, double-keyed.
 
 ### Q2 2027 (Apr–Jun) — *Students, evaluation, book contract*
-1. **Learner's layer v2 + user study (G7)**: task-based evaluation with the review-pool students (find-the-right-sense tasks, timed, vs plain Cologne lookup); results feed P6.
+1. **Learner's layer v2 + user study (G7)**: task-based evaluation with the review-pool students (find-the-right-sense tasks, timed, vs plain Cologne lookup); results feed P6. Protocol written 24-09-2026, before any data: [USER_STUDY_PROTOCOL_LEARNER_LAYER_G7_24-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/USER_STUDY_PROTOCOL_LEARNER_LAYER_G7_24-09-2026.md) (H5336) — within-subject, 2-group Latin square, n = 24 target, 360 eligible items measured on live data, 152-ФЗ regime; open asks are the Russian consent text and the MW sense index.
 2. **P5 submitted** (error typology — the OBS-T dataset is unique in the field; no dictionary project has 12 years of correction telemetry).
 3. **P6 submitted** (learner's layer + study).
 4. **Book writing begins** against the contract; new chapters 1, 2, 7, 10 drafted (everything else is revision of P1–P6).
