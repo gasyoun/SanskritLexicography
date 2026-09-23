@@ -133,7 +133,7 @@ The payload is the tension and its resolution. Apresyan's method was always vuln
 - **Lexicographic portrait → P1.** A corpus Word Sketch over DCS is the automatic portrait that can seed and audit the P1 MW-microanalysis gold sample.
 - **Integral description = the existing spine.** The Whitney-roots + DCS + sense/grammar/citation/review layers diagrammed above *are* интегральное описание in miniature; naming them as such is free framing capital.
 - **Lexical functions** are a candidate collocation export layer once R2 sense alignment stabilises.
-- **@DECIDE seed.** Whether to adopt an explicit, controlled register of **Sanskrit lexicographic types** as a first-class layer of the evidence graph (parallel to the evidence-label vocabulary), or to leave typing implicit in the per-dictionary microstructure. A human should decide before P4 (indigenous microstructure) locks its schema.
+- **@DECIDE seed.** Whether to adopt an explicit, controlled register of **Sanskrit lexicographic types** as a first-class layer of the evidence graph (parallel to the evidence-label vocabulary), or to leave typing implicit in the per-dictionary microstructure. A human should decide before P4 (indigenous microstructure) locks its schema. **Brief written (H5335, 24-09-2026):** [docs/DECISION_BRIEF_LEXICOGRAPHIC_TYPES_REGISTER_H5335_24-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/DECISION_BRIEF_LEXICOGRAPHIC_TYPES_REGISTER_H5335_24-09-2026.md) — recommends a twelve-row, derivation-only, rule-populated register plus one optional `lexType` slot before P4 locks; the `@DECIDE` card is in Uprava GTD.
 
 ---
 
