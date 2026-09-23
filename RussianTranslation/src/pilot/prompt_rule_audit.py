@@ -72,6 +72,11 @@ LATIN_FLAG_CONTEXT = re.compile(
     r'(?:das\s+lat\.|lat\.|latin|latein|griech\.|greek|engl\.|english|Wils\.\s+übersetzt)',
     re.I)
 LATIN_BINOMIAL = re.compile(r'^[A-Z][a-z]+(?:\s+[a-z][a-z.-]+){1,2}$')
+# H4527 (23-09-2026): markup inside a braced gloss ({%<bot>Hibiscus abelmoschus</bot>%},
+# kast_ur_i~~h0_zz_pw) hid the Latin binomial from every classifier below -- LATIN_BINOMIAL is
+# anchored, so the leading tag defeated it, and the literal fell through to looks_german_gloss
+# as untranslated German. Tags are stripped before classifying; their content is kept.
+MARKUP_TAG = re.compile(r'</?[A-Za-z][^<>]*>')
 ENGLISH_GLOSS_WORDS = re.compile(
     r'\b(?:leaving|abandoning|water|fire|sun|moon|king|sacrifice|rice|wind|'
     r'knowledge|law|right|wrong|place|time|body|mind)\b',
@@ -517,7 +522,7 @@ def is_sanskrit_token(value):
 
 
 def looks_foreign_literal(gloss, context):
-    value = (gloss or '').strip()
+    value = MARKUP_TAG.sub('', gloss or '').strip()
     if not value:
         return False
     # H1624 G1: prefer the shared stage-0 gloss_lang classifier (pwg_mask) so residue
