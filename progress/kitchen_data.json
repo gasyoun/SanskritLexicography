@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T02:04:45Z",
+  "generated_at": "2026-09-23T02:06:09Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -7,9 +7,9 @@
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": true,
+    "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 885,
+    "youngest_artifact_age_seconds": 970,
     "window_state": "partial",
     "window_root": "dA",
     "next_action": "Translate pending sub-cards for dA, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-09-23T01:49:57Z",
-        "age_seconds": 885,
+        "age_seconds": 970,
         "size": 26379779
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 2270400,
+        "age_seconds": 2270485,
         "size": 16639
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-27T19:24:42Z",
-        "age_seconds": 2270400,
+        "age_seconds": 2270485,
         "size": 328707
       },
       "events": {
         "exists": true,
         "mtime": "2026-09-23T01:49:52Z",
-        "age_seconds": 890,
+        "age_seconds": 974,
         "size": 3636418
       }
     }
@@ -763,7 +763,7 @@
     "total_idle_seconds": 5209341,
     "total_idle_hours": 1447.04,
     "mean_gap_seconds": 372095.786,
-    "current_idle_seconds": null,
+    "current_idle_seconds": 970,
     "last_idle_seconds": 50359,
     "last_idle": {
       "from": "2026-09-22T11:50:03Z",
@@ -789,9 +789,9 @@
       },
       {
         "month": "2026-09",
-        "idle_seconds": 1364745,
-        "idle_days": 15.8,
-        "idle_hours": 379.1
+        "idle_seconds": 1365715,
+        "idle_days": 15.81,
+        "idle_hours": 379.37
       }
     ],
     "recent_gaps": [
