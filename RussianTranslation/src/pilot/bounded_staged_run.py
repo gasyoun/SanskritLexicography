@@ -1463,6 +1463,11 @@ def main(argv=None):
         ap.error('--coord-dir is required (pass it directly or derive it via --data-root)')
     if args.execute and not (args.coordinator and args.cwd and args.events):
         ap.error('--execute requires --coordinator, --cwd and --events')
+    # H4527 (23-09-2026): the dry run never touches --cwd, so a missing folder passed it and
+    # the PAID run then crashed with NotADirectoryError after preflight. Refuse it here, on
+    # both routes, before anything is reserved or claimed.
+    if args.cwd and not os.path.isdir(args.cwd):
+        ap.error('--cwd %r is not an existing directory; create it first (H4527)' % args.cwd)
     # H2175 R2.1: normalize + fail-closed validate the auto-promote trial authority.
     if args.auto_promote_until is not None:
         import time as _time

@@ -178,8 +178,14 @@ def _has_german_markers(content):
 
 
 def looks_botany_binomial(content):
-    """Genus species (optional third epithet); reject ordinary German noun phrases."""
-    value = (content or '').strip()
+    """Genus species (optional third epithet); reject ordinary German noun phrases.
+
+    H4527 (23-09-2026): tags are stripped first (content kept). PW wraps its botanical and
+    zoological names in markup -- {%<bot>Hibiscus abelmoschus</bot>%}, 5 705 PW spans -- and
+    the anchored BINOMIAL used to fail on the leading tag, so the span went to the model
+    inline as German to translate instead of being masked like a bare binomial.
+    """
+    value = TAG_RE.sub('', content or '').strip()
     if not BINOMIAL.match(value) or _has_german_markers(value):
         return False
     return True
@@ -474,6 +480,22 @@ def _selftest():
     d = classify_pct_detail('Trapa bispinosa', '')
     check(d['gloss_lang'] == 'la' and d['rule_id'] == RULE_BOTANY_BINOMIAL,
           'LA binomial: %r' % d)
+    # H4527: a PW binomial wrapped in <bot>/<zoo> markup is still a binomial, and the
+    # masker hides the WHOLE span (tags included) and restores it byte-for-byte; German
+    # content inside or around the same tag stays German.
+    d = classify_pct_detail('<bot>Hibiscus abelmoschus</bot>', '')
+    check(d['gloss_lang'] == 'la' and d['rule_id'] == RULE_BOTANY_BINOMIAL,
+          'LA <bot> binomial: %r' % d)
+    for de_tagged in ('<bot>Moschus</bot>', 'Name einer <bot>Pflanze</bot>',
+                      '<bot>eine Art Hibiscus</bot>'):
+        d = classify_pct_detail(de_tagged, '')
+        check(d['gloss_lang'] == 'de', 'DE with <bot> markup: %s -> %r' % (de_tagged, d))
+    src = '*{%<bot>Hibiscus abelmoschus</bot>%}. {%Moschus%}'
+    masked, ph, st = mask(src)
+    check('Hibiscus' not in masked and '{%Moschus%}' in masked and st['pct_la'] == 1,
+          'mask hides the <bot> binomial span, keeps German inline: %r' % masked)
+    check(restore(masked, ph) == src,
+          'restore brings the <bot> binomial span back byte-for-byte: %r' % ph)
     # German Capitalized+lowercase must NOT be binomial
     d = classify_pct_detail('Name eines Baumes', '')
     check(d['gloss_lang'] == 'de', 'false binomial: %r' % d)

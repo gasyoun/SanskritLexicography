@@ -1879,6 +1879,32 @@ def test_w_repair_leases_h4527(td):
           'each through its own import: PASS')
 
 
+
+def test_x_missing_cwd_refused_before_run_h4527(td):
+    """H4527 (23-09-2026, run h4527-repair-230923): a --cwd folder that does not exist
+    passed the dry run (which never touches --cwd) and crashed the paid run with
+    NotADirectoryError after preflight. It is now an argparse refusal (exit 2) on the dry
+    run and on --execute alike, before run() is reached; an existing folder passes."""
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        base = ['--plan', os.path.join(td, 'x_p.json'), '--coord-dir', os.path.join(td, 'x_cd')]
+        missing = os.path.join(td, 'x_no_such_cwd')
+        for bad in (base + ['--cwd', missing],
+                    base + ['--cwd', missing, '--execute', '--coordinator', 'c.py',
+                            '--events', os.path.join(td, 'x_ev.jsonl'), '--allow-unbounded',
+                            '--skip-canary-gate']):
+            try:
+                bsr.main(bad)
+                raise AssertionError('missing --cwd must be refused: %r' % bad)
+            except SystemExit as exc:
+                assert getattr(exc, 'code', None) == 2, (bad, exc)
+        present = os.path.join(td, 'x_cwd'); os.makedirs(present)
+        assert bsr.main(base + ['--cwd', present]) == 'gate-passed'
+    finally:
+        bsr.run = _run
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_old_receipt_without_agent_ops_code_still_parses(td)
@@ -1910,6 +1936,7 @@ def main():
         test_u_auto_promote_until(td)
         test_v_exit_code_contract_per_route(td)
         test_w_repair_leases_h4527(td)
+        test_x_missing_cwd_refused_before_run_h4527(td)
     print('bounded_staged_run_selftest: PASS')
 
 
