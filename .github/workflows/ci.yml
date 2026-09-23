@@ -317,6 +317,9 @@ jobs:
           python src/ls_resolver_mbh_selftest.py
           python src/ls_gap_mine.py --selftest
           python src/ls_gap_repair.py --selftest
+          # H5261: NKRYa evidence client + card — offline, doc-shaped fixtures, no token.
+          python src/nkrya_client.py --selftest
+          python src/nkrya_evidence_card.py --selftest
           python src/build_ramayana_concordance.py selftest
           python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
