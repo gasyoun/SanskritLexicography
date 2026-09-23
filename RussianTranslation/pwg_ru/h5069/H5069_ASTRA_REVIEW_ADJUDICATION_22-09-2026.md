@@ -106,3 +106,5 @@ finding stands, and nothing is staged for them.
 3. Dal was consulted through a web rendering of the entry (gufo.me), not a printed page.
 
 _Гасунс_
+
+**Vote, 22-09-2026:** MG voted on C01–C09 in chat. Eight were approved (C03, C05 and C09 with amendments) and C07 was deferred pending NKRYa data: [H5069_CHAT_VOTE_DECISIONS_C01-C09_22-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h5069/H5069_CHAT_VOTE_DECISIONS_C01-C09_22-09-2026.md).
