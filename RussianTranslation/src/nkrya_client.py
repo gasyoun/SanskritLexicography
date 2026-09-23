@@ -183,7 +183,9 @@ class NkryaClient:
 
     # ---- queries ---------------------------------------------------------
     def _portrait(self, lemma, pos, result_type, corpus="MAIN"):
-        payload = {"lemma": lemma, "corpus": {"type": corpus},
+        # word-portrait indexes lemmas without ё: "сплочённый" -> null, "сплоченный" -> 0.94 ipm
+        # (live, 23-09-2026). Concordance search handles ё itself, so only portraits fold it.
+        payload = {"lemma": yo_fold(lemma), "corpus": {"type": corpus},
                    "resultType": [result_type], "seed": SEED}
         if pos:
             payload["pos"] = pos
@@ -265,10 +267,15 @@ def snippet_lines(raw, n):
     return out
 
 
+def yo_fold(s):
+    """ё/Ё -> е/Е — NKRYa word portraits key lemmas without ё."""
+    return s.replace("ё", "е").replace("Ё", "Е") if s else s
+
+
 def rank_in(rows, word):
     """1-based rank of word in a sketch relation list, or None (not in the top 10)."""
     for i, (w, _d) in enumerate(rows, 1):
-        if w == word:
+        if yo_fold(w) == yo_fold(word):
             return i, _d
     return None, None
 
@@ -288,6 +295,9 @@ def selftest():
     assert "nsubj_S_V" in rels and rels["nsubj_S_V"][0][0] == "звучать"
     assert rank_in(rels["amod_S_A"], "добрый") == (4, 8.57147)
     assert rank_in(rels["amod_S_A"], "сплочённый") == (None, None)
+    # ё-fold (23-09-2026): portraits key lemmas without ё; matching ignores ё both ways
+    assert yo_fold("сплочённый") == "сплоченный" and yo_fold("Ёж") == "Еж"
+    assert rank_in([("черный", 1.0)], "чёрный") == (1, 1.0)
 
     # 2. freq parse (official `кошка` example: ipm 44.0418, category 3)
     assert cli.freq("кошка", "S") == {"ipm": 44.0418, "category": 3}
