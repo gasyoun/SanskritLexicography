@@ -76,4 +76,18 @@ if [ -n "$staged_md" ] && [ -f "$(git rev-parse --show-toplevel)/scripts/check_p
     python3 "$(git rev-parse --show-toplevel)/scripts/check_prose_number_drift.py" --check $staged_md || exit 1
 fi
 
+# features_index.html/.json (Uprava H5423, E016 wave 5) — regenerated from
+# FEATURES_INDEX.md and staged into the SAME commit, so the rendered page and its
+# JSON sidecar can never lag the Markdown source again (they were 5 days behind
+# on 24-09-2026). CI re-checks it: .github/workflows/features-index-sync.yml.
+if git diff --cached --name-only -- FEATURES_INDEX.md | grep -q .; then
+    top="$(git rev-parse --show-toplevel)"
+    (cd "$top" && python3 build_features_index_html.py >/dev/null \
+        && python3 build_features_index_html.py --emit-json features_index.json >/dev/null \
+        && git add -- features_index.html features_index.json) || {
+        echo "pre-commit: features_index regeneration failed - run: python3 build_features_index_html.py && python3 build_features_index_html.py --emit-json features_index.json" >&2
+        exit 1
+    }
+fi
+
 exit 0
