@@ -9,17 +9,26 @@ HOW TO REPRODUCE
 ----------------
 Every probe is a single `gh api` / `curl` call; run it verbatim and diff the output against
 the "RESULT" line. Line numbers refer to ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md as of
-commit 19e8fb66 (+ the 24-09-2026 verifier fix). A claim with no live artifact link in the
-roadmap must literally read "not found"; a claim with one must resolve (HTTP 200).
+the branch tip (PR #2318, h5300-drain, incl. the 24-09-2026 verifier fixes + SKD/count
+corrections). A claim with no live artifact link in the roadmap must literally read
+"not found"; a claim with one must resolve (HTTP 200).
 
 --------------------------------------------------------------------------------
 P1 · G2 — TEI Lex-0 pilot EXISTS (the 02-09 drift this pass fixes)
-CLAIM (G2 table + Q4.3): 258 `*.lex0.xml` files exist in csl-standards/data/pilot/tei-lex0/
+CLAIM (G2 table + Q4.3): `*.lex0.xml` files exist in csl-standards/data/pilot/tei-lex0/,
+                         INCLUDING an SKD (indigenous) sample; total is now 298.
 COMMAND: gh api 'repos/sanskrit-lexicon/csl-standards/git/trees/main?recursive=1' \
-           --jq '[.tree[]|select(.path|startswith("data/pilot/tei-lex0/"))]|length'
-RESULT:  258
-STATUS:  CONFIRMED. Severity High -> Medium (residual: no SKD sample, no committed
-         schema-validation run -> "not found").
+           --jq '{total: [.tree[].path|select(startswith("data/pilot/tei-lex0/"))]|length, \
+                  skd:   [.tree[].path|select(startswith("data/pilot/tei-lex0/")) \
+                          |select(test("skd";"i"))]|length}'
+RESULT:  {"skd":47,"total":298}
+HISTORY: the pass window first probed 258 / 0 SKD; a parallel fix commit's raw pack
+         (1d83d7b1, grep -ic skd -> 6 on a local clone) flagged SKD hits, and the live
+         re-probe above found origin had moved MID-PASS to 298 total / 47 SKD files.
+STATUS:  CONFIRMED. Severity High -> Medium (residual: no committed schema-validation
+         run -> "not found"; indigenous coverage is a 47-file SKD pilot, widening owed).
+         The roadmap's earlier "MW/PWG/PWK only: no SKD sample" wording was FALSE as of
+         24-09-2026 and is corrected in this pass (G2 table + Q4.3).
 
 P2 · G3 — PROV-O / evidence-label crosswalk exists IN DRAFT
 CLAIM (G3 table): csl-standards/docs/EVIDENCE_LABEL_CROSSWALK.md exists, names G3, stays draft
@@ -73,7 +82,19 @@ DEFECT (verifier round 1, DeepSeek): Q2 2027 item 4 ("Book writing begins") was 
 Part IV line whose status carried NEITHER a live artifact link NOR the words "not found"
 (it read "not started"). The stop condition requires one of the two for every open line.
 FIX (24-09-2026): status now reads "not found — no new-chapter drafts (1, 2, 7, 10) exist;
-correctly gated on the contract; the proposal draft exists (see Q4)."
+correctly gated on the contract; the proposal draft exists: <link>" — BOTH the words and a
+live link (the link grafted from the parallel fix commit 1d83d7b1 during dual-run
+reconciliation; it resolves on master):
+COMMAND: curl -s -o /dev/null -w '%{http_code}\n' -L https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/PROPOSAL_SYNOPSIS_TEN_CHAPTER_PLAN_LSM_BRILL_23-09-2026.md
+RESULT:  200 (file landed via #2317, in master history)
+
+P8 · Dual-run reconciliation ledger (two executor sessions fixed the same FAIL)
+  - e66c9eaf (origin): Q2.4 "not found" wording + VisualDCS CITATION.cff link repoint +
+    this pack (reproducible form). ADOPTED as base.
+  - 1d83d7b1 (local, unpushed): stronger Q2.4 wording (link + "not found") + its own raw
+    pack whose SKD grep surfaced the P1 discrepancy above. GRAFTED: Q2.4 link; its SKD
+    lead resolved by the live probe (P1). Its duplicate changelog entry was DROPPED —
+    the canonical 022600 entry is amended instead. Nothing silently picked.
 
 --------------------------------------------------------------------------------
 COVERAGE STATEMENT
@@ -83,5 +104,6 @@ Open Part IV lines re-probed and dated this pass (each with link or "not found")
   Q4 2026  : P2 · learner layer v1 · TEI pilot · book proposal draft
   Q1 2027  : megastructure study · P3 · P4 · kośa chapters · book proposal submitted · review pool r2
   Q2 2027  : learner layer v2 + study · P5 · P6 · book writing (FIXED) · co-maintainer
-No checkbox was ticked without a linked artifact. Nothing outside Part IV statuses was edited
-except the two link/word fixes above and this evidence pack + a changelog_queue entry.
+No checkbox was ticked without a linked artifact. Nothing outside Part IV statuses was
+edited except: the Q2.4 word+link fix, the VisualDCS link repoint, the SKD/count
+corrections (G2 + Q4.3, live re-probe 24-09-2026), and this evidence pack + changelog_queue.
