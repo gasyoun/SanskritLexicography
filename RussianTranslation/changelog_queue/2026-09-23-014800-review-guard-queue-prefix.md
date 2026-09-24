@@ -1,1 +1,0 @@
-- review_changelog_guard: a queued entry under `RussianTranslation/changelog_queue/` now satisfies the guard (git diff paths are repo-root relative; the bare `changelog_queue/` prefix refused every queued RussianTranslation review entry, e.g. PR #2296). Grill decisions for the NKRYa skill recorded in `docs/GRILL_NKRYA_SKILL_DECISIONS_22-09-2026.md` (H5261).
