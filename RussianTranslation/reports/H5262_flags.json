@@ -1,0 +1,14 @@
+{
+ "counts": {
+  "clean": 3
+ },
+ "flagged": [],
+ "generated_utc": "2026-09-24T14:09:06Z",
+ "handoff": "H5262",
+ "lemmas_with_verdict": 3,
+ "thresholds": {
+  "archaic_min_hits": 10,
+  "archaic_share": 0.5,
+  "rare_ipm": 1.0
+ }
+}
