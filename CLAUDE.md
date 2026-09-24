@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 15-09-2026_
+_Created: 06-08-2026 · Last updated: 24-09-2026_
 
 This file guides Claude Code in this repository.
 
@@ -30,10 +30,15 @@ No single top-level build, but tests/selftests exist (e.g.
 ([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)) runs Markdown/YAML/Python/JS lint, link-check,
 RussianTranslation gates, docs-site pytest, and an **offline contract-pins**
 job (H4353) running
-[`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — 201 pins over 62 modules, network off,
+[`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **201 pins** over the 62 in-scope modules outside `RussianTranslation`, network off,
 fixtures under `tests/fixtures` only, literal record-count floors per
 headword list (evidence:
-[`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)). **Regenerating a list or
+[`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)).
+**Verify the pin count, never retype it** (H5426): `python tests/run_offline_suite.py --collect-only -q`
+prints the per-test-file breakdown; it summed to **201** on 24-09-2026 (6+4+18+15+30+110+11+7),
+matching this line. The module population (62) is the census
+in that dated evidence doc's title, re-derive it there before quoting it elsewhere.
+**Regenerating a list or
 changing a parser updates the pinned floor/vector in the same PR** — a
 shrink or silent contract change fails CI by design. Pre-commit hooks
 ([`.pre-commit-config.yaml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml)): `check-yaml`, `end-of-file-fixer`,
