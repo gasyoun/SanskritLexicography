@@ -211,12 +211,78 @@ def _load_ledger(path):
     return done
 
 
-def query(census_path, ledger_path, limit=None, offline=False, with_19c=False,
-          client=None):
-    """Resumable, cache-first, throttled ipm lookups. Appends one ledger row per lemma."""
+def risk_order(rows, known=None):
+    """Census rows, most-likely-flagged first — the order a rate-limited pass spends calls.
+
+    The NKRYa key sustains about 60 calls/hour per ACCOUNT (shared by every session), so
+    the full census is days of wall-clock. Spending the first calls where flags live makes
+    a partial pass useful: (1) lemmas pymorphy3's dictionary does not know — the
+    «союзить» class sits here by construction; (2) hapax lemmas, longest first (rare
+    derivations are long); (3) everything else, rarest in the store first.
+    """
+    if known is None:
+        import pymorphy3
+        known = pymorphy3.MorphAnalyzer().word_is_known
+
+    def key(r):
+        tier = 0 if not known(r["lemma"]) else (1 if r["occurrences"] == 1 else 2)
+        return (tier, r["occurrences"], -len(r["lemma"]), r["lemma"])
+    return sorted(rows, key=key)
+
+
+# Below this MAIN ipm a lemma also gets its hit counts (MAIN + 19c slice) — the archaism
+# test and the portrait-less fallback need them. Above it a word is common enough that a
+# 19c over-concentration would be a curiosity, not a gloss defect, and the two extra
+# calls per lemma would triple the pass (budget: ~60 calls/hour per account).
+HITS_BELOW_IPM = 10.0
+
+
+def _conc(client, lexgramm, subcorpus=None):
+    """(hits, corpus_words) for one concordance query; an empty queryStats is 0 hits.
+
+    Goes through the shared client's cached, throttled `_call` because the public
+    `concordance()` drops corpusStats/subcorpStats, and the corpus size is what turns a
+    hit count into an ipm for a lemma the word-portrait index does not carry.
+    """
+    payload = {"corpus": {"type": "MAIN"}, "lexGramm": lexgramm,
+               "params": {"pageParams": {"page": 0, "docsPerPage": 1,
+                                         "snippetsPerDoc": 1}, "seed": 5261}}
+    if subcorpus:
+        payload["subcorpus"] = {"sectionValues": [{"conditionValues": list(subcorpus)}]}
+    raw = client._call("/lex-gramm/concordance", payload, "POST")
+    hits = (raw.get("queryStats") or {}).get("wordUsageCount") or 0
+    stats = (raw.get("subcorpStats") if subcorpus else raw.get("corpusStats")) or {}
+    return hits, stats.get("wordUsageCount")
+
+
+def lookup(client, lemma, pos, forms=(), hits_below=HITS_BELOW_IPM):
+    """One lemma's NKRYa verdict: portrait ipm/category, then hits where they matter."""
+    rec = {}
+    main = client.freq(lemma, pos=_nkrya_pos(pos))
+    rec["ipm"], rec["category"] = main.get("ipm"), main.get("category")
+    if rec["ipm"] is not None and rec["ipm"] >= hits_below:
+        return rec
+    hm, words = _conc(client, _lemma_query(lemma))
+    rec["hits_main"], rec["words_main"] = hm, words
+    if hm == 0 and forms:
+        # Zero lemma hits can mean NKRYa's own lemmatizer does not know the lemma while
+        # the surface form is attested; ABSENT needs the form checked too.
+        rec["form"] = forms[0]
+        rec["form_hits_main"], _ = _conc(client, _lemma_query(forms[0], "form"))
+    if hm:
+        h19, w19 = _conc(client, _lemma_query(lemma), [_slice_19c()])
+        rec["hits_19c"], rec["words_19c"] = h19, w19
+    return rec
+
+
+def query(census_path, ledger_path, limit=None, offline=False, order="risk",
+          hits_below=HITS_BELOW_IPM, client=None, max_errors=3):
+    """Resumable, cache-first, throttled lookups. Appends one ledger row per ANSWERED lemma."""
     census = _read_json(census_path)
     done = _load_ledger(ledger_path)
     todo = [r for r in census["lemmas"] if r["lemma"] not in done]
+    if order == "risk":
+        todo = risk_order(todo)
     if limit is not None:
         todo = todo[:limit]
 
@@ -238,15 +304,7 @@ def query(census_path, ledger_path, limit=None, offline=False, with_19c=False,
             rec = {"lemma": lemma, "pos": pos,
                    "queried_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
             try:
-                main = client.freq(lemma, pos=_nkrya_pos(pos))
-                rec["ipm"] = main.get("ipm")
-                rec["category"] = main.get("category")
-                if with_19c:
-                    rec["hits_main"] = client.concordance(
-                        _lemma_query(lemma), n=0)["hits"]
-                    rec["hits_19c"] = client.concordance(
-                        _lemma_query(lemma), n=0,
-                        subcorpus_conditions=[_slice_19c()])["hits"]
+                rec.update(lookup(client, lemma, pos, row.get("forms") or (), hits_below))
             except Exception as exc:                 # noqa: BLE001 — logged, not fatal
                 # A failure is NEVER persisted: the ledger is the resume key, so a row
                 # written for an uncached-offline miss or a transient API error would
@@ -257,8 +315,9 @@ def query(census_path, ledger_path, limit=None, offline=False, with_19c=False,
                     uncached += 1
                     continue
                 errors += 1
-                if errors >= 3 and not offline:
-                    print("query: stopping after 3 live errors — last: %s" % last_error)
+                if errors >= max_errors and not offline:
+                    print("query: stopping after %d live errors — last: %s"
+                          % (errors, last_error))
                     break
                 continue
             fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
@@ -270,9 +329,9 @@ def query(census_path, ledger_path, limit=None, offline=False, with_19c=False,
     elapsed = time.time() - started
     calls = client.http_calls - calls_before
     print("query: %d verdicts written (%d census lemmas still unanswered), "
-          "%d API calls, %d cache hits, %d uncached-offline, %d errors, %.1fs"
+          "%d API calls, %d uncached-offline, %d errors, %.1fs"
           % (written, len(census["lemmas"]) - len(done) - written, calls,
-             max(written - calls, 0), uncached, errors, elapsed))
+             uncached, errors, elapsed))
     print("  -> " + ledger_path)
     return {"written": written, "api_calls": calls, "uncached": uncached,
             "errors": errors, "last_error": last_error,
@@ -285,8 +344,15 @@ def _nkrya_pos(pos):
             "PRTF": "V", "PRTS": "V", "GRND": "V", "ADVB": "ADV"}.get(pos)
 
 
-def _lemma_query(lemma):
-    return [{"words": [{"reqs": [[{"type": "lex", "vals": [lemma]}]]}]}]
+def _lemma_query(value, field="lex"):
+    # Same sectionValues shape as csl_pyutil.nkrya.pair_query, one subsection. The first
+    # version ({"words": [{"reqs": ...}]}) was never run live and the API answers it with
+    # HTTP 422 «Задан некорректный запрос» (probed 24-09-2026). field="form" searches the
+    # surface form instead of the lemma.
+    return {"sectionValues": [{
+        "conditionValues": [{"fieldName": "disambmod", "text": {"v": "main"}}],
+        "subsectionValues": [
+            {"conditionValues": [{"fieldName": field, "text": {"v": value}}]}]}]}
 
 
 def _slice_19c():
@@ -322,6 +388,18 @@ def flag(census_path, ledger_path, out_path):
             continue
         classes = []
         ipm, cat = rec.get("ipm"), rec.get("category")
+        basis = "portrait"
+        if ipm is None:
+            # No word-portrait record. The portrait index skips low-frequency lemmas, so
+            # "no portrait" is not "absent": fall back to the lemma's concordance hits,
+            # then to its surface form's, and call it ABSENT only when both are zero.
+            ipm, basis = _hits_ipm(rec)
+        if ipm is None and cat is None and "-" in lemma:
+            # NKRYa tokenizes a hyphenated compound («один-единственный», «столько-то»)
+            # into separate words, so a single-token lex/form query can never match it:
+            # zero hits here is a query-shape verdict, not a corpus one (live 24-09-2026).
+            counts["unverifiable-compound"] += 1
+            continue
         if ipm is None and cat is None:
             classes.append("ABSENT")
         elif cat == 1 or (ipm is not None and ipm < RARE_IPM):
@@ -338,7 +416,10 @@ def flag(census_path, ledger_path, out_path):
             counts[c] += 1
         flagged.append({
             "lemma": lemma, "pos": row["pos"], "classes": classes,
-            "ipm": ipm, "category": cat,
+            "ipm": ipm, "category": cat, "ipm_basis": basis,
+            "hits_main": rec.get("hits_main"), "hits_19c": rec.get("hits_19c"),
+            "share_19c": rec.get("share_19c"),
+            "form": rec.get("form"), "form_hits_main": rec.get("form_hits_main"),
             "occurrences": row["occurrences"], "cards": row["cards"][:10],
             "forms": row["forms"],
             "severity": _severity(classes, ipm, row["occurrences"]),
@@ -360,6 +441,16 @@ def flag(census_path, ledger_path, out_path):
              ", ".join("%s=%d" % kv for kv in sorted(counts.items()))))
     print("  -> " + out_path)
     return doc
+
+
+def _hits_ipm(rec):
+    """(ipm, basis) from concordance hits when the portrait has none; (None, ...) if zero."""
+    words = rec.get("words_main")
+    for hits_key, basis in (("hits_main", "hits"), ("form_hits_main", "form")):
+        hits = rec.get(hits_key)
+        if hits and words:
+            return round(hits * 1e6 / float(words), 5), basis
+    return None, "none"
 
 
 def _severity(classes, ipm, occurrences):
@@ -441,6 +532,22 @@ def report(census_path, ledger_path, flags_path, out_path):
         w("Error classes: " + ", ".join("`%s` ×%d" % kv for kv in errs.most_common())
           + ".")
         w("")
+    basis = Counter()
+    for r in flags["flagged"]:
+        basis[r.get("ipm_basis") or "portrait"] += 1
+    stamps = sorted(r["queried_utc"] for r in ledger.values() if r.get("queried_utc"))
+    live = [r for r in ledger.values() if "hits_main" in r or r.get("queried_utc", "") > "2026-09-24T15"]
+    w("Lookup order is **risk-first** (`risk_order`): lemmas pymorphy3's dictionary does not "
+      "know, then hapax lemmas longest-first, then the rest — so a partial pass has already "
+      "spent its calls where the flags are. A lemma below %.0f ipm (or with no NKRYa word "
+      "portrait) also gets its concordance hits in MAIN and in the 1800–1899 slice; a "
+      "zero-hit lemma is re-checked by its surface form before it may be called absent."
+      % HITS_BELOW_IPM)
+    w("")
+    if stamps:
+        w("First verdict %s, last %s; %d verdicts carry live hit counts."
+          % (stamps[0], stamps[-1], len(live)))
+        w("")
     w("## 3. Flags")
     w("")
     if flags["flagged"]:
@@ -449,52 +556,92 @@ def report(census_path, ledger_path, flags_path, out_path):
         for k, v in sorted(flags["counts"].items()):
             w("| %s | %d |" % (k, v))
         w("")
-        w("Top flagged lemmas by severity:")
+        w("ipm basis of the flagged lemmas: " + ", ".join(
+            "%s %d" % kv for kv in sorted(basis.items())) + " (portrait = NKRYa word "
+          "portrait; hits = lemma concordance count ÷ 426.2 M words; form = surface-form "
+          "count, where NKRYa's lemmatizer does not know the lemma).")
         w("")
-        w("| Lemma | POS | Classes | ipm | cat | Occurrences |")
-        w("|---|---|---|---|---|---|")
-        for r in flags["flagged"][:30]:
-            w("| %s | %s | %s | %s | %s | %d |"
+        w("Flagged lemmas by severity:")
+        w("")
+        w("| Lemma | POS | Classes | ipm | Basis | Hits MAIN | Hits 1800–1899 | Store uses |")
+        w("|---|---|---|---|---|---|---|---|")
+        for r in flags["flagged"]:
+            w("| %s | %s | %s | %s | %s | %s | %s | %d |"
               % (r["lemma"], r["pos"], "+".join(r["classes"]),
-                 r["ipm"], r["category"], r["occurrences"]))
+                 "—" if r["ipm"] is None else r["ipm"], r.get("ipm_basis") or "portrait",
+                 _dash(r.get("hits_main")), _dash(r.get("hits_19c")), r["occurrences"]))
     else:
-        w("No flags yet — the ipm ledger carries no verdicts (see §2 and the blocker "
-          "in the handoff close-out).")
+        w("No flags yet.")
     w("")
+
+    spot_path = os.path.join(os.path.dirname(flags_path), "H5262_spotcheck.json")
+    n = 4
+    if os.path.exists(spot_path):
+        spot = _read_json(spot_path)
+        rows = spot["rows"]
+        meas = Counter(r["measurement"] for r in rows)
+        defect = Counter(r["defect"] for r in rows)
+        w("## %d. Precision spot-check (%d flags, by hand)" % (n, len(rows)))
+        w("")
+        w(spot["method"])
+        w("")
+        w("| Measure | Count | Share |")
+        w("|---|---|---|")
+        for label, cnt in (("Measurement correct (the NKRYa verdict describes the word)",
+                            meas.get("correct", 0)),
+                           ("Measurement artifact (tokenizer / lemmatizer / query shape)",
+                            meas.get("artifact", 0)),
+                           ("Gloss defect (a reviewer should replace the word)",
+                            defect.get("yes", 0)),
+                           ("Legitimate word (term, deliberate archaism, fine Russian)",
+                            defect.get("no", 0)),
+                           ("Unclear without the scan", defect.get("unclear", 0))):
+            w("| %s | %d | %.0f %% |" % (label, cnt, 100.0 * cnt / max(len(rows), 1)))
+        w("")
+        w("| Lemma | Classes | Measurement | Defect? | Note |")
+        w("|---|---|---|---|---|")
+        for r in rows:
+            w("| %s | %s | %s | %s | %s |" % (r["lemma"], r["classes"], r["measurement"],
+                                              r["defect"], r["note"]))
+        w("")
+        n += 1
+
+    sheets_path = os.path.join(os.path.dirname(flags_path), "H5262_sheets.json")
+    if os.path.exists(sheets_path):
+        sheets = _read_json(sheets_path)
+        w("## %d. Vote sheets (≤10 cards each)" % n)
+        w("")
+        for s in sheets["sheets"]:
+            w("%d. Sheet %d — %d cards — %s" % (s["batch"], s["batch"], s["cards"], s["url"]))
+        w("")
+        w(sheets.get("note", ""))
+        w("")
+        n += 1
+
     unanswered = census["distinct_lemmas"] - verdicts
+    w("## %d. Coverage and what remains" % n)
+    w("")
     if unanswered > 0:
-        w("## 4. What is blocked, and by what")
-        w("")
-        w("%d of the %d distinct lemmas have no ipm verdict, because **no NKRYa API "
-          "token exists on either box**: `python src/nkrya_client.py probe` reports "
-          "no token in the Windows credential store, and the Mac keychain has no "
-          "`ruscorpora-api` item either (both probed 24-09-2026). The %d verdicts "
-          "above come from the H5261 C07 pilot's disk cache."
-          % (unanswered, census["distinct_lemmas"], verdicts))
-        w("")
-        w("The human step was named when the handoffs were minted and is still open "
-          "(GRILL_NKRYA_SKILL_DECISIONS_22-09-2026.md, «Human step»): MG generates a "
-          "non-expiring key at https://ruscorpora.ru/accounts/profile/for-devs and "
-          "stores it with")
-        w("")
-        w("```bash")
-        w("python -c \"import keyring,getpass; "
-          "keyring.set_password('ruscorpora-api','token',getpass.getpass())\"")
-        w("```")
-        w("")
-        w("Once the key is stored, `query` resumes where it stopped — it re-asks every "
-          "lemma that has no verdict row, because a failed lookup is never written to "
-          "the ledger. At the client's 6 requests/minute throttle the full census is "
-          "about %d hours of wall-clock for the MAIN pass alone, so the intended "
-          "shape is a long unattended drain (or several), not one sitting."
-          % max(1, int(round(unanswered / 6.0 / 60.0))))
-        w("")
-    w("## %d. Reproduce" % (5 if unanswered > 0 else 4))
+        w("%d of the %d distinct lemmas have a verdict; %d are still unqueried. The NKRYa "
+          "key is rate-limited per ACCOUNT (about 60 calls/hour sustained, shared by every "
+          "session using it), and a lemma costs 1–4 calls, so the remainder is a long "
+          "unattended drain, not a sitting. `query` resumes exactly where it stopped: the "
+          "ledger records answers only, so an interrupted or rate-limited lemma is retried, "
+          "never retired (FINDINGS §646)."
+          % (verdicts, census["distinct_lemmas"], unanswered))
+    else:
+        w("Every census lemma has a verdict.")
+    w("")
+    n += 1
+    w("## %d. Reproduce" % n)
     w("")
     w("```bash")
-    w("python src/h5262_ipm_audit.py extract")
-    w("python src/h5262_ipm_audit.py query --limit 60")
+    w("python src/h5262_ipm_audit.py extract          # Windows box: the store lives there")
+    w("python src/h5262_ipm_audit.py query            # risk order, resumable, throttled")
     w("python src/h5262_ipm_audit.py flag")
+    w("python src/h5262_card_context.py --flags reports/H5262_flags.json "
+      "--out reports/H5262_flag_context.json   # Windows box")
+    w("python src/build_h5262_nkrya_flag_sheet.py --batch 1")
     w("python src/h5262_ipm_audit.py report")
     w("```")
     w("")
@@ -506,6 +653,10 @@ def report(census_path, ledger_path, flags_path, out_path):
 
 
 # ------------------------------------------------------------------ helpers
+
+def _dash(v):
+    return "—" if v is None else str(v)
+
 
 def _write_json(path, doc):
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -537,7 +688,8 @@ class _FakeClient(object):
     """Deterministic stand-in for NkryaClient — proves flag/severity without network."""
 
     TABLE = {"близкий": (120.0, 6), "союзить": (None, None), "друг": (300.0, 6),
-             "доверенный": (0.4, 1)}
+             "доверенный": (0.4, 1), "сгинуть": (None, None),
+             "лемматизированный": (None, None), "столько-то": (None, None)}
 
     def __init__(self):
         self.http_calls = 0
@@ -547,8 +699,21 @@ class _FakeClient(object):
         ipm, cat = self.TABLE.get(lemma, (5.0, 4))
         return {"ipm": ipm, "category": cat}
 
-    def concordance(self, *a, **kw):
-        return {"hits": 0, "docs": 0, "lines": []}
+    # (hits MAIN, hits 19c) per lemma/form; the MAIN corpus is 1e8 words, the slice 2e7.
+    HITS = {"союзить": (0, 0), "доверенный": (40, 30), "сгинуть": (60, 5),
+            "лемматизированный": (0, 0), "лемматизированного": (4, 0),
+            "столько-то": (0, 0)}
+
+    def _call(self, endpoint, payload, method):
+        self.http_calls += 1
+        cond = payload["lexGramm"]["sectionValues"][0]["subsectionValues"][0][
+            "conditionValues"][0]
+        main, h19 = self.HITS.get(cond["text"]["v"], (20, 2))
+        if "subcorpus" in payload:
+            return {"queryStats": {"wordUsageCount": h19} if h19 else {},
+                    "subcorpStats": {"wordUsageCount": 20000000}}
+        return {"queryStats": {"wordUsageCount": main} if main else {},
+                "corpusStats": {"wordUsageCount": 100000000}}
 
 
 def selftest():
@@ -576,6 +741,9 @@ def selftest():
         fh.write(json.dumps({"subcard": "c2",
                              "ru": "{%доверенный и союзить%}"},
                             ensure_ascii=False) + "\n")
+        fh.write(json.dumps({"subcard": "c3",
+                             "ru": "{%сгинуть; лемматизированного; столько-то%}"},
+                            ensure_ascii=False) + "\n")
 
     census_p = os.path.join(tmp, "census.json")
     doc = extract(store, census_p)
@@ -583,7 +751,13 @@ def selftest():
     ok("близкий" in lemmas, "adjective lemmatized")
     ok("друг" in lemmas, "noun lemmatized")
     ok("и" not in lemmas, "conjunction dropped as a function word")
-    ok(doc["store_cards"] == 2, "both cards read")
+    ok(doc["store_cards"] == 3, "all cards read")
+
+    rows = [{"lemma": "аа", "occurrences": 5}, {"lemma": "бб", "occurrences": 1},
+            {"lemma": "вввв", "occurrences": 1}, {"lemma": "гг", "occurrences": 9}]
+    ordered = [r["lemma"] for r in risk_order(rows, known=lambda w: w != "гг")]
+    ok(ordered == ["гг", "вввв", "бб", "аа"],
+       "risk order: dictionary-unknown, then hapax longest-first, then the rest")
 
     ledger_p = os.path.join(tmp, "ledger.jsonl")
     fake = _FakeClient()
@@ -617,6 +791,20 @@ def selftest():
     ok("доверенный" in flagged and "RARE" in flagged["доверенный"]["classes"],
        "category-1 ipm is flagged RARE")
     ok("близкий" not in flagged, "an ordinary word stays clean")
+    ok("hits_main" not in _load_ledger(ledger_p)["близкий"],
+       "a common word (portrait ipm >= HITS_BELOW_IPM) costs one call, no hit counts")
+    ok("сгинуть" in flagged and flagged["сгинуть"]["classes"] == ["RARE"]
+       and flagged["сгинуть"]["ipm_basis"] == "hits",
+       "portrait-less but attested: RARE from concordance hits, never ABSENT")
+    by_form = [r for r in fdoc["flagged"] if "лемматизированного" in r["forms"]]
+    ok(by_form and by_form[0]["classes"] == ["RARE"]
+       and by_form[0]["ipm_basis"] == "form",
+       "zero lemma hits but an attested surface form: RARE via the form, not ABSENT")
+    ok(fdoc["counts"].get("unverifiable-compound") == 1
+       and not any("-" in r["lemma"] for r in fdoc["flagged"]),
+       "a zero-hit hyphenated compound is unverifiable, never ABSENT")
+    ok("ARCHAIC" in flagged["доверенный"]["classes"],
+       "19c slice holding >= half the usages is flagged ARCHAIC")
     ok(flagged["союзить"]["severity"] > flagged["доверенный"]["severity"],
        "ABSENT outranks RARE in severity")
 
@@ -647,7 +835,11 @@ def main(argv=None):
     q.add_argument("--ledger", default=LEDGER)
     q.add_argument("--limit", type=int)
     q.add_argument("--offline", action="store_true")
-    q.add_argument("--with-19c", action="store_true")
+    q.add_argument("--order", choices=["risk", "census"], default="risk",
+                   help="risk (default): pymorphy-unknown, then hapax, first")
+    q.add_argument("--hits-below", type=float, default=HITS_BELOW_IPM,
+                   help="also fetch MAIN+19c hits below this portrait ipm")
+    q.add_argument("--max-errors", type=int, default=3)
 
     f = sub.add_parser("flag")
     f.add_argument("--census", default=CENSUS)
@@ -667,7 +859,8 @@ def main(argv=None):
     if args.cmd == "extract":
         extract(args.store or default_store(), args.out, args.limit)
     elif args.cmd == "query":
-        query(args.census, args.ledger, args.limit, args.offline, args.with_19c)
+        query(args.census, args.ledger, args.limit, args.offline, args.order,
+              args.hits_below, max_errors=args.max_errors)
     elif args.cmd == "flag":
         flag(args.census, args.ledger, args.out)
     elif args.cmd == "report":

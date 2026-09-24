@@ -1,11 +1,1269 @@
 {
  "counts": {
-  "clean": 3
+  "ABSENT": 15,
+  "ARCHAIC": 2,
+  "RARE": 38,
+  "clean": 7,
+  "unverifiable-compound": 3
  },
- "flagged": [],
- "generated_utc": "2026-09-24T14:09:06Z",
+ "flagged": [
+  {
+   "cards": [
+    "han~~h0_50_prati_0",
+    "muc~~h0_zz_pw00"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "избегнутый",
+   "form_hits_main": 0,
+   "forms": [
+    "избегнутый"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "избегнутый",
+   "occurrences": 2,
+   "pos": "ADJF",
+   "severity": 102.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_as~~h1_00_pwg01"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "благополучствуй",
+   "form_hits_main": 0,
+   "forms": [
+    "благополучствуй"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "благополучствовать",
+   "occurrences": 1,
+   "pos": "VERB",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "han~~h0_zz_pw00"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "брахманка",
+   "form_hits_main": 0,
+   "forms": [
+    "брахманка"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "брахманка",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "pat~~h0_34_pari"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "вергать",
+   "form_hits_main": 0,
+   "forms": [
+    "вергать"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "вергать",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "han~~h0_zz_pw03"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "взборозденный",
+   "form_hits_main": 0,
+   "forms": [
+    "взборозденный"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "взборозденный",
+   "occurrences": 1,
+   "pos": "ADJF",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vas~~h4_23_pra"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "гелиакически",
+   "form_hits_main": 0,
+   "forms": [
+    "гелиакически"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "гелиакически",
+   "occurrences": 1,
+   "pos": "ADVB",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vas~~h0_zz_pw02"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "гелиактически",
+   "form_hits_main": 0,
+   "forms": [
+    "гелиактически"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "гелиактически",
+   "occurrences": 1,
+   "pos": "ADVB",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "si_d~~h1_00_pwg03"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "достигшийся",
+   "form_hits_main": 0,
+   "forms": [
+    "достигшийся"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "достигшийся",
+   "occurrences": 1,
+   "pos": "ADJF",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "car~~h0_45_vi_1"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "колебайся",
+   "form_hits_main": 0,
+   "forms": [
+    "колебайся"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "колебаяться",
+   "occurrences": 1,
+   "pos": "VERB",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_cid~~h0_zz_pw"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "кусывать",
+   "form_hits_main": 0,
+   "forms": [
+    "кусывать"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "кусывать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "m_a~~h2_10_ni"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "приформовывать",
+   "form_hits_main": 0,
+   "forms": [
+    "приформовывать"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "приформовывать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_bid~~h1_00_pwg00"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "пронзателей",
+   "form_hits_main": 0,
+   "forms": [
+    "пронзателей"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "пронзатель",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "yat~~h0_01_sec_1"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "союзить",
+   "form_hits_main": 0,
+   "forms": [
+    "союзить"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "союзить",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vid~~h0_zz_pw00"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "увещеванный",
+   "form_hits_main": 0,
+   "forms": [
+    "увещеванный"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "увещеванный",
+   "occurrences": 1,
+   "pos": "ADJF",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "ban_d~~h0_21_upasam_0"
+   ],
+   "category": null,
+   "classes": [
+    "ABSENT"
+   ],
+   "form": "хмурение",
+   "form_hits_main": 0,
+   "forms": [
+    "хмурение"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": null,
+   "ipm_basis": "none",
+   "lemma": "хмурение",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 101.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_sam~~h1_07_upa"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE",
+    "ARCHAIC"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "улегаться"
+   ],
+   "hits_19c": 36,
+   "hits_main": 56,
+   "ipm": 0.131398,
+   "ipm_basis": "portrait",
+   "lemma": "улегаться",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 90.87,
+   "share_19c": 0.6429
+  },
+  {
+   "cards": [
+    "iz~~h1_00_pwg00",
+    "su~~h0_zz_pw",
+    "su~~h1_10_pra",
+    "su~~h1_12_a_bipra"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": "побужденный",
+   "form_hits_main": 10,
+   "forms": [
+    "побужденный"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": 0.02346,
+   "ipm_basis": "form",
+   "lemma": "побужденный",
+   "occurrences": 5,
+   "pos": "ADJF",
+   "severity": 64.98,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_cid~~h0_zz_pw"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "рывать",
+    "рывающий"
+   ],
+   "hits_19c": 0,
+   "hits_main": 1,
+   "ipm": 0.00235,
+   "ipm_basis": "hits",
+   "lemma": "рывать",
+   "occurrences": 3,
+   "pos": "INFN",
+   "severity": 63.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "m_a~~h0_zz_pw01",
+    "m_a~~h2_20_pra"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "столько-то"
+   ],
+   "hits_19c": 0,
+   "hits_main": 5,
+   "ipm": 0.011732,
+   "ipm_basis": "portrait",
+   "lemma": "столько-то",
+   "occurrences": 3,
+   "pos": "ADVB",
+   "severity": 62.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vah~~h0_01_sec_1",
+    "vah~~h0_38_sam",
+    "vah~~h0_zz_pw00"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "несомым",
+    "несомый"
+   ],
+   "hits_19c": 9,
+   "hits_main": 63,
+   "ipm": 0.105588,
+   "ipm_basis": "portrait",
+   "lemma": "несомый",
+   "occurrences": 3,
+   "pos": "ADJF",
+   "severity": 62.89,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "gam~~h0_zz_pw02"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "преставляться"
+   ],
+   "hits_19c": 0,
+   "hits_main": 1,
+   "ipm": 0.00235,
+   "ipm_basis": "hits",
+   "lemma": "преставляться",
+   "occurrences": 2,
+   "pos": "INFN",
+   "severity": 62.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "yuvan"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "юпитеровом"
+   ],
+   "hits_19c": 0,
+   "hits_main": 1,
+   "ipm": 0.00235,
+   "ipm_basis": "hits",
+   "lemma": "юпитеровый",
+   "occurrences": 2,
+   "pos": "ADJF",
+   "severity": 62.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "han~~h0_zz_pw03"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "объединенно"
+   ],
+   "hits_19c": 0,
+   "hits_main": 12,
+   "ipm": 0.0211175,
+   "ipm_basis": "portrait",
+   "lemma": "объединенно",
+   "occurrences": 2,
+   "pos": "ADVB",
+   "severity": 61.98,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "ban_d~~h0_zz_pw02",
+    "ban_d~~h0_zz_pwkvn"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "самоповешение"
+   ],
+   "hits_19c": 0,
+   "hits_main": 9,
+   "ipm": 0.0211175,
+   "ipm_basis": "portrait",
+   "lemma": "самоповешение",
+   "occurrences": 2,
+   "pos": "NOUN",
+   "severity": 61.98,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "br_ahm_i"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": "сарасвати",
+   "form_hits_main": 17,
+   "forms": [
+    "сарасвати"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": 0.03989,
+   "ipm_basis": "form",
+   "lemma": "сарасватить",
+   "occurrences": 2,
+   "pos": "VERB",
+   "severity": 61.96,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "rakz~~h0_03_sec_3"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": "блюдомый",
+   "form_hits_main": 2,
+   "forms": [
+    "блюдомый"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": 0.00469,
+   "ipm_basis": "form",
+   "lemma": "блюдомый",
+   "occurrences": 1,
+   "pos": "ADJF",
+   "severity": 61.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_cid~~h0_zz_pw"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "ламывающий"
+   ],
+   "hits_19c": 0,
+   "hits_main": 1,
+   "ipm": 0.00235,
+   "ipm_basis": "hits",
+   "lemma": "ламывать",
+   "occurrences": 1,
+   "pos": "PRTF",
+   "severity": 61.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "asteya~~h0_zz_pw"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "неворовство"
+   ],
+   "hits_19c": 0,
+   "hits_main": 1,
+   "ipm": 0.00235,
+   "ipm_basis": "hits",
+   "lemma": "неворовство",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 61.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "muc~~h0_zz_pw00"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "незагражденный"
+   ],
+   "hits_19c": 1,
+   "hits_main": 1,
+   "ipm": 0.00235,
+   "ipm_basis": "hits",
+   "lemma": "незаградить",
+   "occurrences": 1,
+   "pos": "PRTF",
+   "severity": 61.0,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "jan~~h0_16_nis"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": "бодхисаттв",
+   "form_hits_main": 5,
+   "forms": [
+    "бодхисаттв"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": 0.01173,
+   "ipm_basis": "form",
+   "lemma": "бодхисаттво",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vi_s~~h0_23_pratyupa"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "оппозиционировать"
+   ],
+   "hits_19c": 0,
+   "hits_main": 3,
+   "ipm": 0.00704,
+   "ipm_basis": "hits",
+   "lemma": "оппозиционировать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vac~~h0_02_sec_2"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "подразумеваемость"
+   ],
+   "hits_19c": 1,
+   "hits_main": 6,
+   "ipm": 0.0140783,
+   "ipm_basis": "portrait",
+   "lemma": "подразумеваемость",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vi_s~~h0_07__a_1"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "полузаглохшим"
+   ],
+   "hits_19c": 2,
+   "hits_main": 5,
+   "ipm": 0.011732,
+   "ipm_basis": "portrait",
+   "lemma": "полузаглохнуть",
+   "occurrences": 1,
+   "pos": "PRTF",
+   "severity": 60.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "j_y_a~~h0_12_ava"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "свидетельствующий"
+   ],
+   "hits_19c": 1,
+   "hits_main": 3,
+   "ipm": 0.00704,
+   "ipm_basis": "hits",
+   "lemma": "свидетельствующий",
+   "occurrences": 1,
+   "pos": "ADJF",
+   "severity": 60.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "dah~~h0_zz_pw"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "спалять"
+   ],
+   "hits_19c": 0,
+   "hits_main": 4,
+   "ipm": 0.00939,
+   "ipm_basis": "hits",
+   "lemma": "спалять",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.99,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "han~~h0_zz_pw00"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "отпуганный"
+   ],
+   "hits_19c": 8,
+   "hits_main": 10,
+   "ipm": 0.0234639,
+   "ipm_basis": "portrait",
+   "lemma": "отпугать",
+   "occurrences": 1,
+   "pos": "PRTF",
+   "severity": 60.98,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_cid~~h0_zz_pw"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "грызать"
+   ],
+   "hits_19c": 2,
+   "hits_main": 13,
+   "ipm": 0.0305031,
+   "ipm_basis": "portrait",
+   "lemma": "грызать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.97,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "d_a~~h1_00_pwg00"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "даятель"
+   ],
+   "hits_19c": 6,
+   "hits_main": 16,
+   "ipm": 0.0375423,
+   "ipm_basis": "portrait",
+   "lemma": "даятель",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.96,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vas~~h4_00_pwg00"
+   ],
+   "category": null,
+   "classes": [
+    "RARE"
+   ],
+   "form": "десятикратного",
+   "form_hits_main": 15,
+   "forms": [
+    "десятикратного"
+   ],
+   "hits_19c": null,
+   "hits_main": 0,
+   "ipm": 0.0352,
+   "ipm_basis": "form",
+   "lemma": "десятикратное",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.96,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "ban_d~~h0_00_pwg00"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "закалать"
+   ],
+   "hits_19c": 5,
+   "hits_main": 16,
+   "ipm": 0.0375423,
+   "ipm_basis": "portrait",
+   "lemma": "закалать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.96,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vas~~h0_zz_pw02"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "прокоротавший"
+   ],
+   "hits_19c": 8,
+   "hits_main": 21,
+   "ipm": 0.0492742,
+   "ipm_basis": "portrait",
+   "lemma": "прокоротать",
+   "occurrences": 1,
+   "pos": "PRTF",
+   "severity": 60.95,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "man~~h0_09_a_bi"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "умерщви"
+   ],
+   "hits_19c": 4,
+   "hits_main": 25,
+   "ipm": 0.0586598,
+   "ipm_basis": "portrait",
+   "lemma": "умерщвить",
+   "occurrences": 1,
+   "pos": "VERB",
+   "severity": 60.94,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "j_y_a~~h0_27_prati"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "возжигание"
+   ],
+   "hits_19c": 4,
+   "hits_main": 28,
+   "ipm": 0.0656989,
+   "ipm_basis": "portrait",
+   "lemma": "возжигание",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.93,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "car~~h0_09_apa"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "проступиться"
+   ],
+   "hits_19c": 13,
+   "hits_main": 28,
+   "ipm": 0.0656989,
+   "ipm_basis": "portrait",
+   "lemma": "проступиться",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.93,
+   "share_19c": 0.4643
+  },
+  {
+   "cards": [
+    "han~~h0_25_ud"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "негордый"
+   ],
+   "hits_19c": 5,
+   "hits_main": 34,
+   "ipm": 0.0797773,
+   "ipm_basis": "portrait",
+   "lemma": "негордый",
+   "occurrences": 1,
+   "pos": "ADJF",
+   "severity": 60.92,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_d_a~~h0_62_pari"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "окладывать"
+   ],
+   "hits_19c": 12,
+   "hits_main": 32,
+   "ipm": 0.0750845,
+   "ipm_basis": "portrait",
+   "lemma": "окладывать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.92,
+   "share_19c": 0.375
+  },
+  {
+   "cards": [
+    "_ap~~h2_10_vi"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "преходящести"
+   ],
+   "hits_19c": 0,
+   "hits_main": 34,
+   "ipm": 0.0797773,
+   "ipm_basis": "portrait",
+   "lemma": "преходящесть",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.92,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "car~~h0_00_pwg00"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "самообуздание"
+   ],
+   "hits_19c": 3,
+   "hits_main": 35,
+   "ipm": 0.0821237,
+   "ipm_basis": "portrait",
+   "lemma": "самообуздание",
+   "occurrences": 1,
+   "pos": "NOUN",
+   "severity": 60.92,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "yat~~h0_zz_pw"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "упорядоченно"
+   ],
+   "hits_19c": 0,
+   "hits_main": 42,
+   "ipm": 0.0985484,
+   "ipm_basis": "portrait",
+   "lemma": "упорядоченно",
+   "occurrences": 1,
+   "pos": "ADVB",
+   "severity": 60.9,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_d_a~~h0_zz_pw04"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "схлопываться"
+   ],
+   "hits_19c": 1,
+   "hits_main": 57,
+   "ipm": 0.129051,
+   "ipm_basis": "portrait",
+   "lemma": "схлопываться",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.87,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "_sam~~h0_zz_pw00"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "отвратится"
+   ],
+   "hits_19c": 40,
+   "hits_main": 123,
+   "ipm": 0.288606,
+   "ipm_basis": "portrait",
+   "lemma": "отвратиться",
+   "occurrences": 1,
+   "pos": "VERB",
+   "severity": 60.71,
+   "share_19c": 0.3252
+  },
+  {
+   "cards": [
+    "vi_s~~h0_26_ni_0"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "обустроившийся"
+   ],
+   "hits_19c": 1,
+   "hits_main": 135,
+   "ipm": 0.316763,
+   "ipm_basis": "portrait",
+   "lemma": "обустроиться",
+   "occurrences": 1,
+   "pos": "PRTF",
+   "severity": 60.68,
+   "share_19c": null
+  },
+  {
+   "cards": [
+    "vas~~h4_08__a"
+   ],
+   "category": 1,
+   "classes": [
+    "RARE"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "прелюбодействовать"
+   ],
+   "hits_19c": 62,
+   "hits_main": 243,
+   "ipm": 0.570173,
+   "ipm_basis": "portrait",
+   "lemma": "прелюбодействовать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 60.43,
+   "share_19c": 0.2551
+  },
+  {
+   "cards": [
+    "n_i~~h0_zz_pw02"
+   ],
+   "category": 2,
+   "classes": [
+    "ARCHAIC"
+   ],
+   "form": null,
+   "form_hits_main": null,
+   "forms": [
+    "предводительствовать"
+   ],
+   "hits_19c": 439,
+   "hits_main": 765,
+   "ipm": 1.79499,
+   "ipm_basis": "portrait",
+   "lemma": "предводительствовать",
+   "occurrences": 1,
+   "pos": "INFN",
+   "severity": 39.21,
+   "share_19c": 0.5739
+  }
+ ],
+ "generated_utc": "2026-09-24T15:49:08Z",
  "handoff": "H5262",
- "lemmas_with_verdict": 3,
+ "lemmas_with_verdict": 64,
  "thresholds": {
   "archaic_min_hits": 10,
   "archaic_share": 0.5,

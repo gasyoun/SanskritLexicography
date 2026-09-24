@@ -1,0 +1,215 @@
+{
+ "method": "30 flags drawn with `random.Random(5262).sample` from the 54 flags of the tier-1 snapshot (the 60 lemmas pymorphy3 does not know plus 3 pilot lemmas), judged by hand by Opus 5.5 (claude-opus-5-5) against each card's Russian gloss span and PWG's German meaning (reports/H5262_flag_context.json). Two questions per flag: does the NKRYa measurement describe the word actually written (vs a tokenizer or lemmatizer artifact), and is the word a gloss defect a reviewer should replace. The sample is drawn from the riskiest tier, so its defect rate is an upper bound for the whole store, not an estimate of it.",
+ "rows": [
+  {
+   "lemma": "избегнутый",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "0 hits as lemma and form; passive participle of a genitive-governing verb — «не избегнутый» for «vermieden» wants «не предотвращённый»."
+  },
+  {
+   "lemma": "взборозденный",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "0 hits; nonstandard prefix — the attested word is «изборождённый»."
+  },
+  {
+   "lemma": "гелиакически",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Astronomical term (гелиакический восход/заход); the adverb is rare but correct terminology."
+  },
+  {
+   "lemma": "гелиактически",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "Misspelling of «гелиакически» (extra -т-); 0 hits."
+  },
+  {
+   "lemma": "достигшийся",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "Reflexive participle that does not exist; «достигнутый» is meant."
+  },
+  {
+   "lemma": "колебаяться",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "pymorphy mis-lemmatises the surface «колебайся», which NKRYa has 0 times; the standard imperative is «не колеблись»."
+  },
+  {
+   "lemma": "пронзатель",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "unclear",
+   "note": "Nonce agent noun copying PWG's own nonce «Durchbohrer» in a Vedic verse — may be a deliberate literal rendering."
+  },
+  {
+   "lemma": "союзить",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "Dal'-era word, 0 hits in the corpus; «вступать в союз, объединять» is the living rendering."
+  },
+  {
+   "lemma": "хмурение",
+   "classes": "ABSENT",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "0 hits; the Russian noun is «нахмуривание (бровей)»."
+  },
+  {
+   "lemma": "улегаться",
+   "classes": "RARE+ARCHAIC",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Rare but standard imperfective (буря улегается); the 19c tilt is real, the word is fine in a gloss."
+  },
+  {
+   "lemma": "столько-то",
+   "classes": "RARE",
+   "measurement": "artifact",
+   "defect": "no",
+   "note": "Common word; NKRYa's portrait counts the hyphenated token badly (5 hits for a frequent pronoun) — tokenizer artifact."
+  },
+  {
+   "lemma": "преставляться",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Deliberate archaic euphemism for «abscheiden» (to depart this life); style choice, not an error."
+  },
+  {
+   "lemma": "юпитеровый",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "1 hit; the term is «цикл Юпитера» / «юпитерианский цикл»."
+  },
+  {
+   "lemma": "самоповешение",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "Rare nominalisation as a bracketed gloss; «повешение себя / самоубийство через повешение» reads as Russian."
+  },
+  {
+   "lemma": "сарасватить",
+   "classes": "RARE",
+   "measurement": "artifact",
+   "defect": "no",
+   "note": "pymorphy turns the proper name «Сарасвати» into a verb lemma; the name itself is attested (17 form hits)."
+  },
+  {
+   "lemma": "ламывать",
+   "classes": "RARE",
+   "measurement": "artifact",
+   "defect": "no",
+   "note": "Fragment of an ellipted series «-ламывающий» (раз-/об-ламывающий) split at the hyphen."
+  },
+  {
+   "lemma": "бодхисаттво",
+   "classes": "RARE",
+   "measurement": "artifact",
+   "defect": "no",
+   "note": "pymorphy mis-lemmatises «бодхисаттв»; «бодхисаттва» is the standard Indological term."
+  },
+  {
+   "lemma": "подразумеваемость",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "unclear",
+   "note": "Real but rare abstract noun standing alone as a gloss for a participle («gemeint sein»); the scan decides whether a noun is wanted."
+  },
+  {
+   "lemma": "отпугать",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Lemma of «отпуганный», an ordinary participle; rarity belongs to the lemma form, not the gloss."
+  },
+  {
+   "lemma": "грызать",
+   "classes": "RARE",
+   "measurement": "artifact",
+   "defect": "no",
+   "note": "Fragment «-грызать» of an ellipted series (об-/от-грызать) split at the hyphen."
+  },
+  {
+   "lemma": "десятикратное",
+   "classes": "RARE",
+   "measurement": "artifact",
+   "defect": "no",
+   "note": "pymorphy reads the adjective as a noun; «десятикратный» is common. The phrase is a calque, but the word is not the problem."
+  },
+  {
+   "lemma": "умерщвить",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "yes",
+   "note": "Surface «умерщви» is a Church-Slavonic imperative; modern Russian is «умертви»."
+  },
+  {
+   "lemma": "проступиться",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Attested rare verb (13 of 28 hits in the 19th century); a stylistic choice next to «погрешать»."
+  },
+  {
+   "lemma": "негордый",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Rare but transparent and correct for «nicht stolz»."
+  },
+  {
+   "lemma": "преходящесть",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Philosophical term, 34 hits; right for «Vergänglichkeit» in a śāstra context."
+  },
+  {
+   "lemma": "самообуздание",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Rare but correct for «Selbstbezähmung»; 35 hits."
+  },
+  {
+   "lemma": "упорядоченно",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Ordinary adverb, 42 hits; rarity is lexical, not an error."
+  },
+  {
+   "lemma": "схлопываться",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "unclear",
+   "note": "0 of 57 hits before 1900 — modern technical register for «zusammenschnappen»; possibly anachronistic in a PWG gloss."
+  },
+  {
+   "lemma": "прелюбодействовать",
+   "classes": "RARE",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "Biblical register for adultery with the teacher's wife — the right register for a dharmaśāstra citation."
+  },
+  {
+   "lemma": "предводительствовать",
+   "classes": "ARCHAIC",
+   "measurement": "correct",
+   "defect": "no",
+   "note": "57 % of hits in 1800–1899 — archaic flavour, but a standard word for «anführen»."
+  }
+ ]
+}
