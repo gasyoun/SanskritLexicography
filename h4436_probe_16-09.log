@@ -1,0 +1,31 @@
+========================================================================
+H963 Gate-0 — single-profile c1 D-K health attempt
+========================================================================
+date (UTC)        : 2026-09-16T02:46:48Z
+profile           : c1  (D:\ClaudeTools\profiles\claude1\.claude)
+exact model       : claude-sonnet-5
+payload_bytes arg : 6491
+actual prompt B   : 11082  (floor 5000 B / 5 KiB=5120)
+ceiling           : 240000 ms (strict: either reading >= 240000 ms => NO-GO)
+run_id            : h963-c1-single-profile-gate0/2026-09-16T02:46:48Z-pid31592   (unique to THIS run — #729)
+campaign          : h963-c1-single-profile-gate0   (grouping label only, never a read scope)
+evidence root     : C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output   (source: default (checkout-relative))
+events            : C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h963_c1_gate0_probe_events.jsonl   (per-account series)
+health log        : C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\health_probe_log.jsonl   (canonical cross-account, H3642)
+call ledger       : C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h963_c1_gate0_calls.json
+preflight         : C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\output\h963_c1_gate0_preflight.json
+claude bin        : C:\Users\user\AppData\Roaming\npm\claude.cmd
+host state        : 3339 MB free of 16229 MB phys · commit 40933/48800 MB (83.9%) · node+claude 21 · python 29
+resolved argv     : ['C:\\Program Files\\nodejs\\node.EXE', 'C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\cli-wrapper.cjs']
+------------------------------------------------------------------------
+wall clock        : 18.7 s
+------------------------------------------------------------------------
+RAW READINGS (append-only telemetry, THIS run only — run_id h963-c1-single-profile-gate0/2026-09-16T02:46:48Z-pid31592):
+  purpose=warmup   elapsed_ms=8712    classification=success    output_bytes=2115
+  purpose=measured elapsed_ms=9274    classification=success    output_bytes=1814
+------------------------------------------------------------------------
+
+GATE-0 VERDICT: PASS
+  warm-up  8712 ms (success)
+  measured 9274 ms (success), strictly below 240000 ms
+EXIT=0
