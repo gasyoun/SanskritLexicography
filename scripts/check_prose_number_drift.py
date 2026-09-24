@@ -52,7 +52,17 @@ def build_regex(claim: dict) -> re.Pattern:
 
 
 def is_allowed(rel_posix: str, allow_globs: list[str]) -> bool:
-    return any(fnmatch.fnmatch(rel_posix, pat) for pat in allow_globs)
+    # a slash-free pattern (e.g. "CHANGELOG.md") matches by BASENAME at any
+    # depth -- H5421 bug: a plain fnmatch(rel_posix, "CHANGELOG.md") only
+    # matched a root-level file, silently missing every nested CHANGELOG.md
+    # (SanskritLexicography alone has 3, SanskritGrammar 11, github-spine 5).
+    # A pattern containing "/" still matches the full relative path as before.
+    name = rel_posix.rsplit("/", 1)[-1]
+    for pat in allow_globs:
+        target = rel_posix if "/" in pat else name
+        if fnmatch.fnmatch(target, pat):
+            return True
+    return False
 
 
 def candidate_files(explicit: list[str]) -> list[Path]:
