@@ -1,0 +1,6 @@
+{
+ "sheets": [
+  {"batch": 1, "cards": 10, "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b01_24-09-2026.html"}
+ ],
+ "note": "Sheet 1 is committed on gasyoun.github.io branch h5262-nkrya-flags-b01 (b589c33) with its vote-hub index row; the hub's pre-push guard reserves the publishing push to a human (ALLOW_PUBLISH_PUSH), so the URL goes live when MG pushes that commit to master. Publish-safety: PWG-RU glosses are this project's own translation output, PWG German is 19th-century public domain, NKRYa concordance sentences are deliberately omitted, and a scan found no e-mails, keys or local paths. Sheets 2+ follow the unattended drain."
+}
