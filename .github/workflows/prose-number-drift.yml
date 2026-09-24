@@ -1,0 +1,38 @@
+name: Prose number drift
+
+# H5421 (E016 wave 3) — refuse a stale hand-copied number (e.g. the union
+# headword count) in a living doc. CHANGELOG.md / changelog_queue/ are frozen
+# narrative and are exempt (scripts/prose_number_drift_claims.json allow_paths).
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "**/*.txt"
+      - "**/*.tex"
+      - "scripts/check_prose_number_drift.py"
+      - "scripts/prose_number_drift_claims.json"
+  push:
+    branches: [master]
+    paths:
+      - "**/*.md"
+      - "**/*.txt"
+      - "**/*.tex"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: prose-number-drift-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check pinned numbers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python3 scripts/check_prose_number_drift.py --check

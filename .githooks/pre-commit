@@ -69,4 +69,11 @@ if [ "$norm_toplevel" = "$norm_canonical" ]; then
   echo "pre-commit: main-tree commit approved by approval config (trust slice above)." >&2
 fi
 
+# Prose-number drift (H5421) — refuse a NEW stale copy of a pinned number
+# (e.g. the union headword count) in a staged Markdown/text file.
+staged_md="$(git diff --cached --name-only --diff-filter=ACM -- '*.md' '*.txt' '*.tex')"
+if [ -n "$staged_md" ] && [ -f "$(git rev-parse --show-toplevel)/scripts/check_prose_number_drift.py" ]; then
+    python3 "$(git rev-parse --show-toplevel)/scripts/check_prose_number_drift.py" --check $staged_md || exit 1
+fi
+
 exit 0

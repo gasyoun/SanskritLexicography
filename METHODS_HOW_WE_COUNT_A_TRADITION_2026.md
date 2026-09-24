@@ -35,7 +35,7 @@ headword/entry/sense divergences below the cross-paper layer.
 | Object | Canonical figure | Convention (§) | One-line definition |
 |---|---|---|---|
 | Dictionaries (corpus envelope) | 44 (2026-07) / 43 (2026-06) | §2.1 | CDSL digitizations at a dated snapshot |
-| Union headwords | 323,425 | §2.4 | distinct post-fold SLP1 `<k1>` keys over 15 dicts |
+| Union headwords | 323,422 | §2.4 | distinct post-fold SLP1 `<k1>` keys over 15 dicts |
 | Census total (summed) | 1,206,384 (2026, 18 lists) | §2.5 | per-list line counts summed, duplicates kept |
 | MW records | 286,5xx — pin the snapshot | §2.6 | `<L>` records in `mw.txt` at a named commit |
 | Entry→lemma collapse | 1,496,157 → 410,259 | §2.7 | org-wide records collapsed to distinct lemmas |
@@ -98,7 +98,7 @@ definitions — if the query is missing, the convention is not in this list.
 - **Artifact:** [union/union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv)
   (mirrored as kosha manifest `union-headwords`).
 - **Query:** `python HeadwordLists/build_union.py` → row count of the output TSV.
-- **Canonical figure:** **323,425** (pre-fold raw keys: 323,662 — never cite the raw
+- **Canonical figure:** **323,422** (pre-fold raw keys: 323,662 — never cite the raw
   figure as "the union"). Membership counts inside the union: PWG-bearing 106,054,
   MW-bearing 193,852, MW∩PWG **94,753** — an **intersection, not a union**; older docs
   that used 94,753 as "the union" are wrong and were corrected in
@@ -147,7 +147,7 @@ definitions — if the query is missing, the convention is not in this list.
   [kosha/data/manifest/datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json).
 - **Query:** `python scripts/build_db.py` (kosha), then per-table
   `SELECT COUNT(*) FROM <table>;`.
-- **Canonical figures (manifest build):** 444,773 entries · 323,425 lemmas ·
+- **Canonical figures (manifest build):** 444,773 entries · 323,422 lemmas ·
   692,403 senses · 1,378,401 forms · 6,917,018 inflections · 185,803 heritage_anchor.
 
 ### 2.9 Sense
@@ -195,7 +195,7 @@ Three distinct conventions — never mix:
   One denominator per table, the release always stated (C7 row 11 — the exemplar).
 - **Query:** row counts of the named release asset; cross-walk arithmetic verified in C7
   (89,645+1,761=91,406; 89,645+8,961=98,606).
-- **Attestation-rate caveat:** union-wide attestation **61,340/323,425 = 19.0 %** is a
+- **Attestation-rate caveat:** union-wide attestation **61,340/323,422 = 19.0 %** is a
   **bare-lemma join — an upper bound**, not a per-token match (A40 §5). Two further
   corpus-side figures are *different objects*, not rival denominators: **95,457** =
   distinct lemmas occurring in the 5,688,416-token content-token slice (ch02 §3.6) and
@@ -236,7 +236,7 @@ rows rather than picked between.
 
 | # | Quantity | Figures in print | Reconciliation |
 |---|---|---|---|
-| 1 | Union headwords | **323,425** · 323,662 · 323,426 · "~323k" · 94,753 | 323,425 = post-fold canonical (§2.4). 323,662 = pre-fold raw keys ([ch03](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md) §5; UNION.md's "in N dicts" table computes on this base). "~323k" = sanctioned rounding. 94,753 = MW∩PWG **intersection** mislabeled as union in older docs (fixed in A40 §4). **323,426 (kosha README + three handoffs) is an undocumented off-by-one → §10.** |
+| 1 | Union headwords | **323,422** · 323,662 · 323,422 · "~323k" · 94,753 | 323,422 = post-fold canonical (§2.4). 323,662 = pre-fold raw keys ([ch03](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md) §5; UNION.md's "in N dicts" table computes on this base). "~323k" = sanctioned rounding. 94,753 = MW∩PWG **intersection** mislabeled as union in older docs (fixed in A40 §4). **323,422 (kosha README + three handoffs) is an undocumented off-by-one → §10.** |
 | 2 | Aggregate census headline | **1,055,081→1,206,384 (+14.3 %)** · 605,813→733,617 (+21.1 %) · 1,721,983 | 18-comparable-list census (A40/ch03) is canonical. The 9-list figure in [HeadwordLists/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/README.md) is an earlier, smaller comparable set — a historical subset, now cross-referenced to this report. 1,721,983 = 26-snapshot grand total, never a growth base (§2.5). |
 | 3 | "Size of MW" | 194,084 · 193,852 · 187,506 · 185,803 · 286,5xx | Five different objects: key1 census (§2.2) · distinct union-contributing keys (§2.4) · English-gloss TM rows (`mw_en_tm.json`) · MW→Heritage crosswalk denominator (97.6 % anchor-resolved) · `<L>` records, snapshot-pinned (§2.6, C7 row 1). None is "wrong"; citing any without its convention is. |
 | 4 | "Size of PWG" | 123,366 · 106,082 · 110,438 · 106,054 · 98,639 | Records (RENOU register census base) · key1 (§2.2) · key2 (§2.3) · union-contributing keys (§2.4) · Zaliznyak grammar-index rows ([A56](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) title figure — an *index* row count, not a headword census; A56 must state this). |
@@ -260,7 +260,7 @@ rows rather than picked between.
 Per the H1871 watch-out, where two published numbers cannot be reconciled this report
 logs a contradiction rather than choosing:
 [CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
-**§10** (union 323,425 vs 323,426), **§11** (kosha.db manifest vs live-build drift),
+**§10** (union 323,422 vs 323,422), **§11** (kosha.db manifest vs live-build drift),
 **§12** (Petersburg naive sum 285,799 vs 285,950), **§13** (corpus_lexicon 1,093,391 vs
 1,091,528) — filed in the same pass as this report, with a kosha `[integrity]` issue for
 the two kosha-owned rows.
