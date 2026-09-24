@@ -1,0 +1,148 @@
+{
+ "heads": [
+  {
+   "lemma": "союз",
+   "pos": "S",
+   "freq": {
+    "ipm": 154.383,
+    "category": 4
+   },
+   "relations": {
+    "amod_S_A": 10,
+    "nsubj_S_V": 10,
+    "obj_S_V": 10,
+    "iobj_S_V": 10,
+    "obl_S_V": 10,
+    "conj_S_S": 10
+   }
+  }
+ ],
+ "candidates": [
+  {
+   "surface": "союзить",
+   "lemma": "союзить",
+   "pos": "V",
+   "freq": {
+    "ipm": null,
+    "category": null
+   },
+   "per_head": [
+    {
+     "head": "союз",
+     "sketch": [],
+     "pair_main": null,
+     "pair_19c": null
+    }
+   ]
+  },
+  {
+   "surface": "связывать",
+   "lemma": "связывать",
+   "pos": "V",
+   "freq": {
+    "ipm": 32.6524,
+    "category": 3
+   },
+   "per_head": [
+    {
+     "head": "союз",
+     "sketch": [],
+     "pair_main": 40,
+     "pair_19c": 15
+    }
+   ]
+  },
+  {
+   "surface": "объединять",
+   "lemma": "объединять",
+   "pos": "V",
+   "freq": {
+    "ipm": 15.6786,
+    "category": 3
+   },
+   "per_head": [
+    {
+     "head": "союз",
+     "sketch": [
+      {
+       "relation": "nsubj_S_V",
+       "rank": 6,
+       "dice": 5.67149
+      }
+     ],
+     "pair_main": 53,
+     "pair_19c": null
+    }
+   ]
+  },
+  {
+   "surface": "соединять",
+   "lemma": "соединять",
+   "pos": "V",
+   "freq": {
+    "ipm": 19.7801,
+    "category": 3
+   },
+   "per_head": [
+    {
+     "head": "союз",
+     "sketch": [
+      {
+       "relation": "iobj_S_V",
+       "rank": 4,
+       "dice": 7.18714
+      }
+     ],
+     "pair_main": 29,
+     "pair_19c": 7
+    }
+   ]
+  }
+ ],
+ "cache_keys": [
+  "02579b33256eaf52f6b795c1",
+  "06a50ff8a87256df0e634560",
+  "0f08e589070ff33adcd02a1d",
+  "1399d0158b64f2cf10c420b9",
+  "23de6b33832bed3fdef5f262",
+  "2873c73b402fea0e1ab5ab8f",
+  "38c1f30e60e92c2628ae87da",
+  "484a329da49ebf4f26eec9a0",
+  "4b1395a2e6aa98966b6a1b01",
+  "4c27f01371419c560a8a6a07",
+  "524385c5e3613fc9a4bb3d04",
+  "53738ecf01daaa8c1a7f9352",
+  "5a4415780eeda7a3334506d2",
+  "5ff3e81f825e9022b1c88c11",
+  "63c3c7dd7de5040d02d1f25b",
+  "7146754049b1d343f14a7270",
+  "72033f1493e0c8241b9366a9",
+  "73fc0d5ac4ca4549b327a624",
+  "7487c699c144cd15f75f1767",
+  "7d9adaa05605f0e8e1577f1f",
+  "7fd54e43a1fd54a9c9dfde09",
+  "82b74e576212ab0ce8b1767f",
+  "88bcce92f0fb9a4cf329fcc1",
+  "8c37d0f24df4ad023bef4a97",
+  "8fa4efaddb932befc33a6ed9",
+  "a3f30996141e64997bd501a2",
+  "ac67c56a631f355a77bf24ef",
+  "ad2db82b3ee24417702edf5a",
+  "b93b73e8e26d23f7aff5ecdc",
+  "bde85afb1fed5a95f867bb4e",
+  "c09606ec0fef587cf7c53b37",
+  "c413556b55d8bd7c65ad27b2",
+  "dc2957acc5807ccec2e47d53",
+  "df80a7536efe6c3318c9bcfb",
+  "eadc36529d69047115b1ae10",
+  "eecea1f46d851356f6f451d8",
+  "f04b1aad127a80dd6d8b7ce9",
+  "f17021c63d4557d4ffca7afd",
+  "f31490c5ee047c30cd2aefd5",
+  "fd44a504235d6140e55625a1",
+  "fe5a0f859db0294b64febbc2",
+  "fec4e00cb14b365e98438132",
+  "feda0c99f8535be4082c9f33"
+ ],
+ "card": "yat~~h0_01_sec_1"
+}
