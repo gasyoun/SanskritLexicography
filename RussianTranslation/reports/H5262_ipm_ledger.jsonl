@@ -62,3 +62,284 @@
 {"lemma": "удовлетворительный", "pos": "ADJF", "queried_utc": "2026-09-24T15:42:59Z", "ipm": 8.38835, "category": 2, "hits_main": 3575, "words_main": 426186466, "hits_19c": 1163, "words_19c": 82049244}
 {"lemma": "свидетельствовать", "pos": "INFN", "queried_utc": "2026-09-24T15:43:29Z", "ipm": 50.4521, "category": 3}
 {"lemma": "свидетельствующий", "pos": "ADJF", "queried_utc": "2026-09-24T15:43:39Z", "ipm": null, "category": null, "hits_main": 3, "words_main": 426186466, "hits_19c": 1, "words_19c": 82049244}
+{"lemma": "сосредоточиваться", "pos": "GRND", "queried_utc": "2026-09-24T15:44:09Z", "ipm": 4.47691, "category": 2, "hits_main": 1908, "words_main": 426186466, "hits_19c": 739, "words_19c": 82049244}
+{"lemma": "действительность", "pos": "NOUN", "queried_utc": "2026-09-24T15:44:39Z", "ipm": 70.9642, "category": 3}
+{"lemma": "довольствоваться", "pos": "INFN", "queried_utc": "2026-09-24T15:44:49Z", "ipm": 12.5931, "category": 3}
+{"lemma": "нежизнеспособный", "pos": "ADJF", "queried_utc": "2026-09-24T15:44:59Z", "ipm": 0.469278, "category": 1, "hits_main": 200, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "непозволительный", "pos": "ADJF", "queried_utc": "2026-09-24T15:45:29Z", "ipm": 1.90762, "category": 2, "hits_main": 813, "words_main": 426186466, "hits_19c": 240, "words_19c": 82049244}
+{"lemma": "непритязательный", "pos": "ADJF", "queried_utc": "2026-09-24T15:45:59Z", "ipm": 1.22716, "category": 2, "hits_main": 523, "words_main": 426186466, "hits_19c": 34, "words_19c": 82049244}
+{"lemma": "несправедливость", "pos": "NOUN", "queried_utc": "2026-09-24T15:46:30Z", "ipm": 12.6119, "category": 3}
+{"lemma": "последовательный", "pos": "ADJF", "queried_utc": "2026-09-24T15:46:39Z", "ipm": 14.1135, "category": 3}
+{"lemma": "предосторожность", "pos": "NOUN", "queried_utc": "2026-09-24T15:46:49Z", "ipm": 9.13215, "category": 2, "hits_main": 3892, "words_main": 426186466, "hits_19c": 1288, "words_19c": 82049244}
+{"lemma": "пренебрежительно", "pos": "ADVB", "queried_utc": "2026-09-24T15:47:19Z", "ipm": 3.75657, "category": 2, "hits_main": 1620, "words_main": 426186466, "hits_19c": 204, "words_19c": 82049244}
+{"lemma": "приостанавливать", "pos": "INFN", "queried_utc": "2026-09-24T15:47:49Z", "ipm": 1.01833, "category": 2, "hits_main": 434, "words_main": 426186466, "hits_19c": 41, "words_19c": 82049244}
+{"lemma": "продекламировать", "pos": "INFN", "queried_utc": "2026-09-24T15:48:19Z", "ipm": 1.6589, "category": 2, "hits_main": 707, "words_main": 426186466, "hits_19c": 159, "words_19c": 82049244}
+{"lemma": "производительный", "pos": "ADJF", "queried_utc": "2026-09-24T15:48:49Z", "ipm": 5.8167, "category": 2, "hits_main": 2480, "words_main": 426186466, "hits_19c": 360, "words_19c": 82049244}
+{"lemma": "словообразование", "pos": "NOUN", "queried_utc": "2026-09-24T15:49:22Z", "ipm": 0.445814, "category": 1, "hits_main": 190, "words_main": 426186466, "hits_19c": 9, "words_19c": 82049244}
+{"lemma": "благопристойный", "pos": "ADJF", "queried_utc": "2026-09-24T15:49:49Z", "ipm": 1.10984, "category": 2, "hits_main": 473, "words_main": 426186466, "hits_19c": 118, "words_19c": 82049244}
+{"lemma": "вышеприведенный", "pos": "ADJF", "queried_utc": "2026-09-24T15:50:20Z", "ipm": 2.54583, "category": 2, "hits_main": 1114, "words_main": 426186466, "hits_19c": 458, "words_19c": 82049244}
+{"lemma": "заблаговременно", "pos": "ADVB", "queried_utc": "2026-09-24T15:50:49Z", "ipm": 5.46944, "category": 2, "hits_main": 2331, "words_main": 426186466, "hits_19c": 658, "words_19c": 82049244}
+{"lemma": "мертворожденный", "pos": "ADJF", "queried_utc": "2026-09-24T15:51:19Z", "ipm": 0.617101, "category": 1, "hits_main": 265, "words_main": 426186466, "hits_19c": 44, "words_19c": 82049244}
+{"lemma": "неискусственный", "pos": "ADJF", "queried_utc": "2026-09-24T15:51:49Z", "ipm": 0.0492742, "category": 1, "hits_main": 21, "words_main": 426186466, "hits_19c": 9, "words_19c": 82049244}
+{"lemma": "нерешительность", "pos": "NOUN", "queried_utc": "2026-09-24T15:52:19Z", "ipm": 5.85894, "category": 2, "hits_main": 2497, "words_main": 426186466, "hits_19c": 586, "words_19c": 82049244}
+{"lemma": "предназначаться", "pos": "INFN", "queried_utc": "2026-09-24T15:52:50Z", "ipm": 2.28304, "category": 2, "hits_main": 973, "words_main": 426186466, "hits_19c": 157, "words_19c": 82049244}
+{"lemma": "предоставляться", "pos": "INFN", "queried_utc": "2026-09-24T15:53:19Z", "ipm": 0.595983, "category": 1, "hits_main": 254, "words_main": 426186466, "hits_19c": 54, "words_19c": 82049244}
+{"lemma": "противодействие", "pos": "NOUN", "queried_utc": "2026-09-24T15:53:49Z", "ipm": 8.4822, "category": 2, "hits_main": 3615, "words_main": 426186466, "hits_19c": 789, "words_19c": 82049244}
+{"lemma": "распространение", "pos": "NOUN", "queried_utc": "2026-09-24T15:54:19Z", "ipm": 36.782, "category": 3}
+{"lemma": "сгруппировывать", "pos": "INFN", "queried_utc": "2026-09-24T15:54:29Z", "ipm": null, "category": null, "hits_main": 1, "words_main": 426186466, "hits_19c": 1, "words_19c": 82049244}
+{"lemma": "сосредотачивать", "pos": "INFN", "queried_utc": "2026-09-24T15:54:59Z", "ipm": 0.316763, "category": 1, "hits_main": 135, "words_main": 426186466, "hits_19c": 8, "words_19c": 82049244}
+{"lemma": "употребительный", "pos": "ADJS", "queried_utc": "2026-09-24T15:55:29Z", "ipm": 1.80907, "category": 2, "hits_main": 774, "words_main": 426186466, "hits_19c": 338, "words_19c": 82049244}
+{"lemma": "бездейственный", "pos": "ADJF", "queried_utc": "2026-09-24T15:55:59Z", "ipm": 0.534977, "category": 1, "hits_main": 229, "words_main": 426186466, "hits_19c": 64, "words_19c": 82049244}
+{"lemma": "благодетельный", "pos": "ADJF", "queried_utc": "2026-09-24T15:56:29Z", "ipm": 5.10105, "category": 2, "hits_main": 2174, "words_main": 426186466, "hits_19c": 1338, "words_19c": 82049244}
+{"lemma": "благосостояние", "pos": "NOUN", "queried_utc": "2026-09-24T15:56:59Z", "ipm": 11.6193, "category": 3}
+{"lemma": "вопросительный", "pos": "ADJF", "queried_utc": "2026-09-24T15:57:09Z", "ipm": 4.26339, "category": 2, "hits_main": 1818, "words_main": 426186466, "hits_19c": 405, "words_19c": 82049244}
+{"lemma": "второстепенный", "pos": "ADJF", "queried_utc": "2026-09-24T15:57:39Z", "ipm": 10.6151, "category": 3}
+{"lemma": "доказательство", "pos": "NOUN", "queried_utc": "2026-09-24T15:57:49Z", "ipm": 56.2101, "category": 3}
+{"lemma": "дрессированный", "pos": "ADJF", "queried_utc": "2026-09-24T15:57:59Z", "ipm": 0.305031, "category": 1, "hits_main": 130, "words_main": 426186466, "hits_19c": 5, "words_19c": 82049244}
+{"lemma": "жизнерадостный", "pos": "ADJF", "queried_utc": "2026-09-24T15:58:29Z", "ipm": 5.72285, "category": 2, "hits_main": 2439, "words_main": 426186466, "hits_19c": 158, "words_19c": 82049244}
+{"lemma": "закупориваться", "pos": "INFN", "queried_utc": "2026-09-24T15:58:59Z", "ipm": 0.0703917, "category": 1, "hits_main": 30, "words_main": 426186466, "hits_19c": 7, "words_19c": 82049244}
+{"lemma": "истребительный", "pos": "ADJF", "queried_utc": "2026-09-24T15:59:29Z", "ipm": 2.28304, "category": 2, "hits_main": 973, "words_main": 426186466, "hits_19c": 53, "words_19c": 82049244}
+{"lemma": "констатировать", "pos": "INFN", "queried_utc": "2026-09-24T15:59:59Z", "ipm": 12.3796, "category": 3}
+{"lemma": "метафорический", "pos": "ADJF", "queried_utc": "2026-09-24T16:00:10Z", "ipm": 2.07421, "category": 2, "hits_main": 884, "words_main": 426186466, "hits_19c": 36, "words_19c": 82049244}
+{"lemma": "могущественный", "pos": "ADJF", "queried_utc": "2026-09-24T16:00:40Z", "ipm": 11.1641, "category": 3}
+{"lemma": "неблагоприятно", "pos": "ADVB", "queried_utc": "2026-09-24T16:00:49Z", "ipm": 0.87755, "category": 1, "hits_main": 377, "words_main": 426186466, "hits_19c": 97, "words_19c": 82049244}
+{"lemma": "неодобрительно", "pos": "ADVB", "queried_utc": "2026-09-24T16:01:19Z", "ipm": 3.12305, "category": 2, "hits_main": 1333, "words_main": 426186466, "hits_19c": 160, "words_19c": 82049244}
+{"lemma": "неправильность", "pos": "NOUN", "queried_utc": "2026-09-24T16:01:49Z", "ipm": 2.73824, "category": 2, "hits_main": 1167, "words_main": 426186466, "hits_19c": 305, "words_19c": 82049244}
+{"lemma": "несостоявшийся", "pos": "ADJF", "queried_utc": "2026-09-24T16:02:19Z", "ipm": 2.83444, "category": 2, "hits_main": 1209, "words_main": 426186466, "hits_19c": 30, "words_19c": 82049244}
+{"lemma": "несущественный", "pos": "ADJF", "queried_utc": "2026-09-24T16:02:49Z", "ipm": 3.12539, "category": 2, "hits_main": 1332, "words_main": 426186466, "hits_19c": 155, "words_19c": 82049244}
+{"lemma": "обстоятельство", "pos": "NOUN", "queried_utc": "2026-09-24T16:03:19Z", "ipm": 133.514, "category": 4}
+{"lemma": "общепризнанный", "pos": "ADJF", "queried_utc": "2026-09-24T16:03:29Z", "ipm": 2.21265, "category": 2, "hits_main": 946, "words_main": 426186466, "hits_19c": 83, "words_19c": 82049244}
+{"lemma": "ограниченность", "pos": "NOUN", "queried_utc": "2026-09-24T16:03:59Z", "ipm": 5.65011, "category": 2, "hits_main": 2408, "words_main": 426186466, "hits_19c": 427, "words_19c": 82049244}
+{"lemma": "определенность", "pos": "NOUN", "queried_utc": "2026-09-24T16:04:30Z", "ipm": 5.33569, "category": 2, "hits_main": 2274, "words_main": 426186466, "hits_19c": 344, "words_19c": 82049244}
+{"lemma": "отождествление", "pos": "NOUN", "queried_utc": "2026-09-24T16:04:59Z", "ipm": 2.04605, "category": 2, "hits_main": 872, "words_main": 426186466, "hits_19c": 50, "words_19c": 82049244}
+{"lemma": "переговаривать", "pos": "INFN", "queried_utc": "2026-09-24T16:05:30Z", "ipm": 0.288606, "category": 1, "hits_main": 123, "words_main": 426186466, "hits_19c": 72, "words_19c": 82049244}
+{"lemma": "переправляться", "pos": "INFN", "queried_utc": "2026-09-24T16:05:59Z", "ipm": 2.65377, "category": 2, "hits_main": 1131, "words_main": 426186466, "hits_19c": 371, "words_19c": 82049244}
+{"lemma": "по-человечески", "pos": "ADVB", "queried_utc": "2026-09-24T16:06:29Z", "ipm": 6.71537, "category": 2, "hits_main": 2862, "words_main": 426186466, "hits_19c": 280, "words_19c": 82049244}
+{"lemma": "поддерживаться", "pos": "INFN", "queried_utc": "2026-09-24T16:06:59Z", "ipm": 0.215868, "category": 1, "hits_main": 92, "words_main": 426186466, "hits_19c": 22, "words_19c": 82049244}
+{"lemma": "подкрадываться", "pos": "INFN", "queried_utc": "2026-09-24T16:07:29Z", "ipm": 2.73589, "category": 2, "hits_main": 1166, "words_main": 426186466, "hits_19c": 234, "words_19c": 82049244}
+{"lemma": "подозрительный", "pos": "ADJF", "queried_utc": "2026-09-24T16:07:59Z", "ipm": 19.5243, "category": 3}
+{"lemma": "подтверждаться", "pos": "INFN", "queried_utc": "2026-09-24T16:08:09Z", "ipm": 0.717996, "category": 1, "hits_main": 306, "words_main": 426186466, "hits_19c": 59, "words_19c": 82049244}
+{"lemma": "попрошайничать", "pos": "VERB", "queried_utc": "2026-09-24T16:08:39Z", "ipm": 0.471625, "category": 1, "hits_main": 201, "words_main": 426186466, "hits_19c": 9, "words_19c": 82049244}
+{"lemma": "превозноситься", "pos": "INFN", "queried_utc": "2026-09-24T16:09:09Z", "ipm": 0.42939, "category": 1, "hits_main": 183, "words_main": 426186466, "hits_19c": 54, "words_19c": 82049244}
+{"lemma": "предназначение", "pos": "NOUN", "queried_utc": "2026-09-24T16:09:39Z", "ipm": 4.60831, "category": 2, "hits_main": 1964, "words_main": 426186466, "hits_19c": 128, "words_19c": 82049244}
+{"lemma": "предопределить", "pos": "PRTS", "queried_utc": "2026-09-24T16:10:09Z", "ipm": 4.40183, "category": 2, "hits_main": 1876, "words_main": 426186466, "hits_19c": 156, "words_19c": 82049244}
+{"lemma": "преувеличивать", "pos": "INFN", "queried_utc": "2026-09-24T16:10:39Z", "ipm": 7.39817, "category": 2, "hits_main": 3153, "words_main": 426186466, "hits_19c": 568, "words_19c": 82049244}
+{"lemma": "приготовляться", "pos": "INFN", "queried_utc": "2026-09-24T16:11:09Z", "ipm": 3.22159, "category": 2, "hits_main": 1373, "words_main": 426186466, "hits_19c": 859, "words_19c": 82049244}
+{"lemma": "разграничивать", "pos": "INFN", "queried_utc": "2026-09-24T16:11:39Z", "ipm": 0.701571, "category": 1, "hits_main": 299, "words_main": 426186466, "hits_19c": 33, "words_19c": 82049244}
+{"lemma": "расплачиваться", "pos": "INFN", "queried_utc": "2026-09-24T16:12:09Z", "ipm": 6.2109, "category": 2, "hits_main": 2647, "words_main": 426186466, "hits_19c": 268, "words_19c": 82049244}
+{"lemma": "распределенный", "pos": "ADJF", "queried_utc": "2026-09-24T16:12:39Z", "ipm": 0.197097, "category": 1, "hits_main": 84, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "распределяться", "pos": "INFN", "queried_utc": "2026-09-24T16:13:09Z", "ipm": 2.01555, "category": 2, "hits_main": 859, "words_main": 426186466, "hits_19c": 110, "words_19c": 82049244}
+{"lemma": "рассчитываться", "pos": "INFN", "queried_utc": "2026-09-24T16:13:39Z", "ipm": 1.45476, "category": 2, "hits_main": 620, "words_main": 426186466, "hits_19c": 147, "words_19c": 82049244}
+{"lemma": "сообразоваться", "pos": "PRTF", "queried_utc": "2026-09-24T16:14:09Z", "ipm": 1.99678, "category": 2, "hits_main": 851, "words_main": 426186466, "hits_19c": 335, "words_19c": 82049244}
+{"lemma": "соответственно", "pos": "ADVB", "queried_utc": "2026-09-24T16:14:39Z", "ipm": 30.9677, "category": 3}
+{"lemma": "сформироваться", "pos": "PRTF", "queried_utc": "2026-09-24T16:14:49Z", "ipm": 7.24331, "category": 2, "hits_main": 3087, "words_main": 426186466, "hits_19c": 169, "words_19c": 82049244}
+{"lemma": "удовлетворение", "pos": "NOUN", "queried_utc": "2026-09-24T16:15:19Z", "ipm": 29.236, "category": 3}
+{"lemma": "удостовериться", "pos": "INFN", "queried_utc": "2026-09-24T16:15:29Z", "ipm": 6.02553, "category": 2, "hits_main": 2568, "words_main": 426186466, "hits_19c": 1184, "words_19c": 82049244}
+{"lemma": "удостоверяться", "pos": "INFN", "queried_utc": "2026-09-24T16:15:59Z", "ipm": 0.438775, "category": 1, "hits_main": 187, "words_main": 426186466, "hits_19c": 89, "words_19c": 82049244}
+{"lemma": "факультативный", "pos": "ADJS", "queried_utc": "2026-09-24T16:16:29Z", "ipm": 0.800119, "category": 1, "hits_main": 341, "words_main": 426186466, "hits_19c": 15, "words_19c": 82049244}
+{"lemma": "четырехкратный", "pos": "ADJF", "queried_utc": "2026-09-24T16:16:59Z", "ipm": 0.401233, "category": 1, "hits_main": 171, "words_main": 426186466, "hits_19c": 3, "words_19c": 82049244}
+{"lemma": "безнаказанный", "pos": "ADJF", "queried_utc": "2026-09-24T16:17:29Z", "ipm": 1.69879, "category": 2, "hits_main": 724, "words_main": 426186466, "hits_19c": 120, "words_19c": 82049244}
+{"lemma": "безумствовать", "pos": "INFN", "queried_utc": "2026-09-24T16:17:59Z", "ipm": 0.96202, "category": 1, "hits_main": 410, "words_main": 426186466, "hits_19c": 95, "words_19c": 82049244}
+{"lemma": "благоприятный", "pos": "ADJF", "queried_utc": "2026-09-24T16:18:29Z", "ipm": 24.2265, "category": 3}
+{"lemma": "благословлять", "pos": "INFN", "queried_utc": "2026-09-24T16:18:39Z", "ipm": 10.3359, "category": 3}
+{"lemma": "вздыбливаться", "pos": "INFN", "queried_utc": "2026-09-24T16:18:49Z", "ipm": 0.0868165, "category": 1, "hits_main": 37, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "выбраковывать", "pos": "INFN", "queried_utc": "2026-09-24T16:19:19Z", "ipm": 0.129051, "category": 1, "hits_main": 55, "words_main": 426186466, "hits_19c": 3, "words_19c": 82049244}
+{"lemma": "выбрасываться", "pos": "INFN", "queried_utc": "2026-09-24T16:19:49Z", "ipm": 0.692185, "category": 1, "hits_main": 295, "words_main": 426186466, "hits_19c": 23, "words_19c": 82049244}
+{"lemma": "декламировать", "pos": "INFN", "queried_utc": "2026-09-24T16:20:19Z", "ipm": 4.51211, "category": 2, "hits_main": 1923, "words_main": 426186466, "hits_19c": 411, "words_19c": 82049244}
+{"lemma": "достоверность", "pos": "NOUN", "queried_utc": "2026-09-24T16:20:49Z", "ipm": 9.24243, "category": 2, "hits_main": 3939, "words_main": 426186466, "hits_19c": 654, "words_19c": 82049244}
+{"lemma": "единовластный", "pos": "ADJF", "queried_utc": "2026-09-24T16:21:19Z", "ipm": 0.16894, "category": 1, "hits_main": 73, "words_main": 426186466, "hits_19c": 17, "words_19c": 82049244}
+{"lemma": "захлопываться", "pos": "INFN", "queried_utc": "2026-09-24T16:21:49Z", "ipm": 0.971406, "category": 1, "hits_main": 414, "words_main": 426186466, "hits_19c": 25, "words_19c": 82049244}
+{"lemma": "изглаживаться", "pos": "INFN", "queried_utc": "2026-09-24T16:22:19Z", "ipm": 0.16894, "category": 1, "hits_main": 72, "words_main": 426186466, "hits_19c": 45, "words_19c": 82049244}
+{"lemma": "круговращение", "pos": "NOUN", "queried_utc": "2026-09-24T16:22:49Z", "ipm": 0.375423, "category": 1, "hits_main": 160, "words_main": 426186466, "hits_19c": 19, "words_19c": 82049244}
+{"lemma": "многоголосный", "pos": "ADJF", "queried_utc": "2026-09-24T16:23:19Z", "ipm": 0.192404, "category": 1, "hits_main": 82, "words_main": 426186466, "hits_19c": 7, "words_19c": 82049244}
+{"lemma": "недозволенный", "pos": "ADJF", "queried_utc": "2026-09-24T16:23:49Z", "ipm": 1.27174, "category": 2, "hits_main": 543, "words_main": 426186466, "hits_19c": 81, "words_19c": 82049244}
+{"lemma": "недолговечный", "pos": "ADJF", "queried_utc": "2026-09-24T16:24:19Z", "ipm": 1.59789, "category": 2, "hits_main": 681, "words_main": 426186466, "hits_19c": 91, "words_19c": 82049244}
+{"lemma": "незадержанный", "pos": "ADJF", "queried_utc": "2026-09-24T16:24:49Z", "ipm": null, "category": null, "hits_main": 3, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "неослабленный", "pos": "ADJF", "queried_utc": "2026-09-24T16:25:19Z", "ipm": 0.011732, "category": 1, "hits_main": 5, "words_main": 426186466, "hits_19c": 1, "words_19c": 82049244}
+{"lemma": "непреодолимый", "pos": "ADJF", "queried_utc": "2026-09-24T16:25:49Z", "ipm": 8.13024, "category": 2, "hits_main": 3465, "words_main": 426186466, "hits_19c": 859, "words_19c": 82049244}
+{"lemma": "низвергнуться", "pos": "INFN", "queried_utc": "2026-09-24T16:26:19Z", "ipm": 0.319109, "category": 1, "hits_main": 136, "words_main": 426186466, "hits_19c": 38, "words_19c": 82049244}
+{"lemma": "нищенствовать", "pos": "PRTF", "queried_utc": "2026-09-24T16:26:49Z", "ipm": 0.950288, "category": 1, "hits_main": 405, "words_main": 426186466, "hits_19c": 115, "words_19c": 82049244}
+{"lemma": "обусловливать", "pos": "INFN", "queried_utc": "2026-09-24T16:27:19Z", "ipm": 7.76186, "category": 2, "hits_main": 3308, "words_main": 426186466, "hits_19c": 927, "words_19c": 82049244}
+{"lemma": "окольцовывать", "pos": "INFN", "queried_utc": "2026-09-24T16:27:49Z", "ipm": 0.0516206, "category": 1, "hits_main": 22, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "оплодотворять", "pos": "INFN", "queried_utc": "2026-09-24T16:28:20Z", "ipm": 0.865818, "category": 1, "hits_main": 369, "words_main": 426186466, "hits_19c": 87, "words_19c": 82049244}
+{"lemma": "ослепительный", "pos": "ADJF", "queried_utc": "2026-09-24T16:28:49Z", "ipm": 9.50758, "category": 2, "hits_main": 4052, "words_main": 426186466, "hits_19c": 483, "words_19c": 82049244}
+{"lemma": "перебрасывать", "pos": "INFN", "queried_utc": "2026-09-24T16:29:19Z", "ipm": 2.95411, "category": 2, "hits_main": 1259, "words_main": 426186466, "hits_19c": 88, "words_19c": 82049244}
+{"lemma": "перевязывание", "pos": "NOUN", "queried_utc": "2026-09-24T16:29:49Z", "ipm": 0.0328495, "category": 1, "hits_main": 14, "words_main": 426186466, "hits_19c": 5, "words_19c": 82049244}
+{"lemma": "передвигаться", "pos": "INFN", "queried_utc": "2026-09-24T16:30:19Z", "ipm": 8.82478, "category": 2, "hits_main": 3761, "words_main": 426186466, "hits_19c": 153, "words_19c": 82049244}
+{"lemma": "переодеваться", "pos": "INFN", "queried_utc": "2026-09-24T16:30:49Z", "ipm": 4.3244, "category": 2, "hits_main": 1843, "words_main": 426186466, "hits_19c": 266, "words_19c": 82049244}
+{"lemma": "переправиться", "pos": "PRTF", "queried_utc": "2026-09-24T16:31:19Z", "ipm": 6.65671, "category": 2, "hits_main": 2837, "words_main": 426186466, "hits_19c": 1070, "words_19c": 82049244}
+{"lemma": "перескакивать", "pos": "INFN", "queried_utc": "2026-09-24T16:31:49Z", "ipm": 2.67254, "category": 2, "hits_main": 1139, "words_main": 426186466, "hits_19c": 258, "words_19c": 82049244}
+{"lemma": "перечисленный", "pos": "ADJF", "queried_utc": "2026-09-24T16:32:19Z", "ipm": 0.11028, "category": 1, "hits_main": 48, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "посторониться", "pos": "INFN", "queried_utc": "2026-09-24T16:32:49Z", "ipm": 2.87198, "category": 2, "hits_main": 1224, "words_main": 426186466, "hits_19c": 296, "words_19c": 82049244}
+{"lemma": "почувствовать", "pos": "INFN", "queried_utc": "2026-09-24T16:33:19Z", "ipm": 116.247, "category": 4}
+{"lemma": "прелюбодеяние", "pos": "NOUN", "queried_utc": "2026-09-24T16:33:29Z", "ipm": 1.52515, "category": 2, "hits_main": 650, "words_main": 426186466, "hits_19c": 186, "words_19c": 82049244}
+{"lemma": "препровождать", "pos": "INFN", "queried_utc": "2026-09-24T16:33:59Z", "ipm": 2.30416, "category": 2, "hits_main": 982, "words_main": 426186466, "hits_19c": 383, "words_19c": 82049244}
+{"lemma": "приветственно", "pos": "ADVB", "queried_utc": "2026-09-24T16:34:29Z", "ipm": 0.746152, "category": 1, "hits_main": 323, "words_main": 426186466, "hits_19c": 4, "words_19c": 82049244}
+{"lemma": "применительно", "pos": "ADVB", "queried_utc": "2026-09-24T16:34:59Z", "ipm": 6.66844, "category": 2, "hits_main": 2842, "words_main": 426186466, "hits_19c": 56, "words_19c": 82049244}
+{"lemma": "присматривать", "pos": "INFN", "queried_utc": "2026-09-24T16:35:29Z", "ipm": 3.64864, "category": 2, "hits_main": 1557, "words_main": 426186466, "hits_19c": 281, "words_19c": 82049244}
+{"lemma": "провозгласить", "pos": "PRTF", "queried_utc": "2026-09-24T16:35:59Z", "ipm": 12.5907, "category": 3}
+{"lemma": "произноситься", "pos": "VERB", "queried_utc": "2026-09-24T16:36:09Z", "ipm": 0.502128, "category": 1, "hits_main": 214, "words_main": 426186466, "hits_19c": 38, "words_19c": 82049244}
+{"lemma": "прославляться", "pos": "INFN", "queried_utc": "2026-09-24T16:36:39Z", "ipm": 0.147823, "category": 1, "hits_main": 63, "words_main": 426186466, "hits_19c": 18, "words_19c": 82049244}
+{"lemma": "распорядиться", "pos": "INFN", "queried_utc": "2026-09-24T16:37:09Z", "ipm": 19.5454, "category": 3}
+{"lemma": "согласовывать", "pos": "INFN", "queried_utc": "2026-09-24T16:37:19Z", "ipm": 2.20795, "category": 2, "hits_main": 941, "words_main": 426186466, "hits_19c": 13, "words_19c": 82049244}
+{"lemma": "состоятельный", "pos": "ADJF", "queried_utc": "2026-09-24T16:37:49Z", "ipm": 5.35916, "category": 2, "hits_main": 2289, "words_main": 426186466, "hits_19c": 241, "words_19c": 82049244}
+{"lemma": "стремительный", "pos": "ADJF", "queried_utc": "2026-09-24T16:38:26Z", "ipm": 12.8512, "category": 3}
+{"lemma": "улетучиваться", "pos": "INFN", "queried_utc": "2026-09-24T16:38:29Z", "ipm": 1.19197, "category": 2, "hits_main": 508, "words_main": 426186466, "hits_19c": 107, "words_19c": 82049244}
+{"lemma": "умилостивлять", "pos": "INFN", "queried_utc": "2026-09-24T16:39:00Z", "ipm": 0.145476, "category": 1, "hits_main": 62, "words_main": 426186466, "hits_19c": 23, "words_19c": 82049244}
+{"lemma": "формироваться", "pos": "INFN", "queried_utc": "2026-09-24T16:39:29Z", "ipm": 13.3768, "category": 3}
+{"lemma": "безграничный", "pos": "ADJF", "queried_utc": "2026-09-24T16:39:39Z", "ipm": 9.81495, "category": 2, "hits_main": 4183, "words_main": 426186466, "hits_19c": 1035, "words_19c": 82049244}
+{"lemma": "безошибочный", "pos": "ADJF", "queried_utc": "2026-09-24T16:40:09Z", "ipm": 2.25488, "category": 2, "hits_main": 961, "words_main": 426186466, "hits_19c": 122, "words_19c": 82049244}
+{"lemma": "беспокоиться", "pos": "INFN", "queried_utc": "2026-09-24T16:41:24Z", "ipm": 33.5651, "category": 3}
+{"lemma": "благонравный", "pos": "ADJF", "queried_utc": "2026-09-24T16:43:27Z", "ipm": 0.957327, "category": 1, "hits_main": 408, "words_main": 426186466, "hits_19c": 181, "words_19c": 82049244}
+{"lemma": "благоразумно", "pos": "ADVB", "queried_utc": "2026-09-24T16:44:09Z", "ipm": 2.94472, "category": 2, "hits_main": 1541, "words_main": 426186466, "hits_19c": 626, "words_19c": 82049244}
+{"lemma": "благотворный", "pos": "ADJF", "queried_utc": "2026-09-24T16:44:39Z", "ipm": 4.74675, "category": 2, "hits_main": 2023, "words_main": 426186466, "hits_19c": 912, "words_19c": 82049244}
+{"lemma": "богослужение", "pos": "NOUN", "queried_utc": "2026-09-24T16:45:09Z", "ipm": 15.7349, "category": 3}
+{"lemma": "включительно", "pos": "ADVB", "queried_utc": "2026-09-24T16:45:19Z", "ipm": 5.11513, "category": 2, "hits_main": 2181, "words_main": 426186466, "hits_19c": 464, "words_19c": 82049244}
+{"lemma": "вкрадываться", "pos": "INFN", "queried_utc": "2026-09-24T16:45:49Z", "ipm": 0.558441, "category": 1, "hits_main": 238, "words_main": 426186466, "hits_19c": 111, "words_19c": 82049244}
+{"lemma": "возгордиться", "pos": "INFN", "queried_utc": "2026-09-24T16:46:19Z", "ipm": 1.08403, "category": 2, "hits_main": 462, "words_main": 426186466, "hits_19c": 150, "words_19c": 82049244}
+{"lemma": "востребовать", "pos": "PRTF", "queried_utc": "2026-09-24T16:46:49Z", "ipm": 4.83826, "category": 2, "hits_main": 2085, "words_main": 426186466, "hits_19c": 28, "words_19c": 82049244}
+{"lemma": "враждебность", "pos": "NOUN", "queried_utc": "2026-09-24T16:47:20Z", "ipm": 3.62752, "category": 2, "hits_main": 1546, "words_main": 426186466, "hits_19c": 245, "words_19c": 82049244}
+{"lemma": "встраиваться", "pos": "INFN", "queried_utc": "2026-09-24T16:47:49Z", "ipm": 0.612408, "category": 1, "hits_main": 261, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "встряхнуться", "pos": "INFN", "queried_utc": "2026-09-24T16:48:19Z", "ipm": 2.28538, "category": 2, "hits_main": 974, "words_main": 426186466, "hits_19c": 149, "words_19c": 82049244}
+{"lemma": "вываливаться", "pos": "INFN", "queried_utc": "2026-09-24T16:48:49Z", "ipm": 2.28538, "category": 2, "hits_main": 974, "words_main": 426186466, "hits_19c": 56, "words_19c": 82049244}
+{"lemma": "высказывание", "pos": "NOUN", "queried_utc": "2026-09-24T16:49:19Z", "ipm": 22.7647, "category": 3}
+{"lemma": "выстреливать", "pos": "INFN", "queried_utc": "2026-09-24T16:49:30Z", "ipm": 0.729728, "category": 1, "hits_main": 311, "words_main": 426186466, "hits_19c": 19, "words_19c": 82049244}
+{"lemma": "вытягиваться", "pos": "INFN", "queried_utc": "2026-09-24T16:49:59Z", "ipm": 4.99312, "category": 2, "hits_main": 2128, "words_main": 426186466, "hits_19c": 372, "words_19c": 82049244}
+{"lemma": "вычерпывание", "pos": "NOUN", "queried_utc": "2026-09-24T16:50:29Z", "ipm": 0.0469278, "category": 1, "hits_main": 20, "words_main": 426186466, "hits_19c": 4, "words_19c": 82049244}
+{"lemma": "демонический", "pos": "ADJF", "queried_utc": "2026-09-24T16:51:00Z", "ipm": 2.32762, "category": 2, "hits_main": 992, "words_main": 426186466, "hits_19c": 95, "words_19c": 82049244}
+{"lemma": "доверительно", "pos": "ADVB", "queried_utc": "2026-09-24T16:51:30Z", "ipm": 2.62092, "category": 2, "hits_main": 1127, "words_main": 426186466, "hits_19c": 26, "words_19c": 82049244}
+{"lemma": "догадываться", "pos": "INFN", "queried_utc": "2026-09-24T16:51:59Z", "ipm": 28.5415, "category": 3}
+{"lemma": "дотягиваться", "pos": "INFN", "queried_utc": "2026-09-24T16:52:11Z", "ipm": 0.631179, "category": 1, "hits_main": 269, "words_main": 426186466, "hits_19c": 2, "words_19c": 82049244}
+{"lemma": "единственный", "pos": "ADJF", "queried_utc": "2026-09-24T16:52:40Z", "ipm": 175.958, "category": 4}
+{"lemma": "заворачивать", "pos": "INFN", "queried_utc": "2026-09-24T16:52:50Z", "ipm": 4.23993, "category": 2, "hits_main": 1807, "words_main": 426186466, "hits_19c": 163, "words_19c": 82049244}
+{"lemma": "завязываться", "pos": "INFN", "queried_utc": "2026-09-24T16:53:19Z", "ipm": 2.27365, "category": 2, "hits_main": 969, "words_main": 426186466, "hits_19c": 200, "words_19c": 82049244}
+{"lemma": "закладывание", "pos": "NOUN", "queried_utc": "2026-09-24T16:53:49Z", "ipm": 0.112627, "category": 1, "hits_main": 48, "words_main": 426186466, "hits_19c": 6, "words_19c": 82049244}
+{"lemma": "закрепляться", "pos": "INFN", "queried_utc": "2026-09-24T16:54:19Z", "ipm": 0.966713, "category": 1, "hits_main": 412, "words_main": 426186466, "hits_19c": 5, "words_19c": 82049244}
+{"lemma": "запруживание", "pos": "NOUN", "queried_utc": "2026-09-24T16:54:49Z", "ipm": 0.0164247, "category": 1, "hits_main": 7, "words_main": 426186466, "hits_19c": 2, "words_19c": 82049244}
+{"lemma": "застаиваться", "pos": "INFN", "queried_utc": "2026-09-24T16:55:20Z", "ipm": 0.516206, "category": 1, "hits_main": 220, "words_main": 426186466, "hits_19c": 38, "words_19c": 82049244}
+{"lemma": "искусственно", "pos": "ADVB", "queried_utc": "2026-09-24T16:55:49Z", "ipm": 7.67974, "category": 2, "hits_main": 3327, "words_main": 426186466, "hits_19c": 545, "words_19c": 82049244}
+{"lemma": "испражниться", "pos": "INFN", "queried_utc": "2026-09-24T16:56:19Z", "ipm": 0.0305031, "category": 1, "hits_main": 13, "words_main": 426186466, "hits_19c": 2, "words_19c": 82049244}
+{"lemma": "испытываться", "pos": "INFN", "queried_utc": "2026-09-24T16:56:49Z", "ipm": 0.112627, "category": 1, "hits_main": 48, "words_main": 426186466, "hits_19c": 1, "words_19c": 82049244}
+{"lemma": "исступленный", "pos": "ADJF", "queried_utc": "2026-09-24T16:57:20Z", "ipm": 2.91422, "category": 2, "hits_main": 1243, "words_main": 426186466, "hits_19c": 346, "words_19c": 82049244}
+{"lemma": "музицировать", "pos": "INFN", "queried_utc": "2026-09-24T16:57:49Z", "ipm": 0.612408, "category": 1, "hits_main": 261, "words_main": 426186466, "hits_19c": 12, "words_19c": 82049244}
+{"lemma": "нагромождать", "pos": "INFN", "queried_utc": "2026-09-24T16:58:19Z", "ipm": 0.351959, "category": 1, "hits_main": 150, "words_main": 426186466, "hits_19c": 16, "words_19c": 82049244}
+{"lemma": "накидываться", "pos": "INFN", "queried_utc": "2026-09-24T16:58:51Z", "ipm": 0.797773, "category": 1, "hits_main": 340, "words_main": 426186466, "hits_19c": 119, "words_19c": 82049244}
+{"lemma": "нанизываться", "pos": "VERB", "queried_utc": "2026-09-24T16:59:19Z", "ipm": 0.16894, "category": 1, "hits_main": 72, "words_main": 426186466, "hits_19c": 2, "words_19c": 82049244}
+{"lemma": "недопустимый", "pos": "ADJF", "queried_utc": "2026-09-24T16:59:50Z", "ipm": 6.9242, "category": 2, "hits_main": 2951, "words_main": 426186466, "hits_19c": 26, "words_19c": 82049244}
+{"lemma": "недостижимый", "pos": "ADJF", "queried_utc": "2026-09-24T17:00:19Z", "ipm": 3.48908, "category": 2, "hits_main": 1491, "words_main": 426186466, "hits_19c": 154, "words_19c": 82049244}
+{"lemma": "незамеченный", "pos": "ADJF", "queried_utc": "2026-09-24T17:00:49Z", "ipm": 4.911, "category": 2, "hits_main": 2164, "words_main": 426186466, "hits_19c": 275, "words_19c": 82049244}
+{"lemma": "неизмеренный", "pos": "ADJF", "queried_utc": "2026-09-24T17:01:20Z", "ipm": 0.0187711, "category": 1, "hits_main": 8, "words_main": 426186466, "hits_19c": 1, "words_19c": 82049244}
+{"lemma": "неподобающий", "pos": "ADJF", "queried_utc": "2026-09-24T17:01:49Z", "ipm": 0.659336, "category": 1, "hits_main": 281, "words_main": 426186466, "hits_19c": 23, "words_19c": 82049244}
+{"lemma": "непреходящий", "pos": "ADJF", "queried_utc": "2026-09-24T17:02:19Z", "ipm": 1.81376, "category": 2, "hits_main": 776, "words_main": 426186466, "hits_19c": 27, "words_19c": 82049244}
+{"lemma": "неприятность", "pos": "NOUN", "queried_utc": "2026-09-24T17:02:50Z", "ipm": 29.9376, "category": 3}
+{"lemma": "неузнаваемый", "pos": "ADJF", "queried_utc": "2026-09-24T17:02:59Z", "ipm": 2.82271, "category": 2, "hits_main": 1207, "words_main": 426186466, "hits_19c": 188, "words_19c": 82049244}
+{"lemma": "обвязываться", "pos": "INFN", "queried_utc": "2026-09-24T17:03:30Z", "ipm": 0.0563134, "category": 1, "hits_main": 24, "words_main": 426186466, "hits_19c": 3, "words_19c": 82049244}
+{"lemma": "обесценивать", "pos": "INFN", "queried_utc": "2026-09-24T17:04:00Z", "ipm": 0.647604, "category": 1, "hits_main": 276, "words_main": 426186466, "hits_19c": 6, "words_19c": 82049244}
+{"lemma": "обмолачивать", "pos": "INFN", "queried_utc": "2026-09-24T17:04:29Z", "ipm": 0.154862, "category": 1, "hits_main": 66, "words_main": 426186466, "hits_19c": 22, "words_19c": 82049244}
+{"lemma": "обнадеживать", "pos": "INFN", "queried_utc": "2026-09-24T17:04:59Z", "ipm": 3.2826, "category": 2, "hits_main": 1399, "words_main": 426186466, "hits_19c": 182, "words_19c": 82049244}
+{"lemma": "обозначаться", "pos": "INFN", "queried_utc": "2026-09-24T17:05:29Z", "ipm": 1.21778, "category": 2, "hits_main": 519, "words_main": 426186466, "hits_19c": 180, "words_19c": 82049244}
+{"lemma": "обособленный", "pos": "ADJF", "queried_utc": "2026-09-24T17:05:59Z", "ipm": 1.39141, "category": 2, "hits_main": 598, "words_main": 426186466, "hits_19c": 62, "words_19c": 82049244}
+{"lemma": "обрабатывать", "pos": "INFN", "queried_utc": "2026-09-24T17:06:29Z", "ipm": 11.1735, "category": 3}
+{"lemma": "обустраивать", "pos": "INFN", "queried_utc": "2026-09-24T17:06:39Z", "ipm": 0.802466, "category": 1, "hits_main": 342, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "общепринятый", "pos": "ADJF", "queried_utc": "2026-09-24T17:07:10Z", "ipm": 6.20386, "category": 2, "hits_main": 2644, "words_main": 426186466, "hits_19c": 321, "words_19c": 82049244}
+{"lemma": "объединиться", "pos": "INFN", "queried_utc": "2026-09-24T17:07:39Z", "ipm": 5.53983, "category": 2, "hits_main": 2361, "words_main": 426186466, "hits_19c": 53, "words_19c": 82049244}
+{"lemma": "ограничивать", "pos": "INFN", "queried_utc": "2026-09-24T17:08:09Z", "ipm": 13.7475, "category": 3}
+{"lemma": "одурманивать", "pos": "INFN", "queried_utc": "2026-09-24T17:08:19Z", "ipm": 0.452853, "category": 1, "hits_main": 193, "words_main": 426186466, "hits_19c": 17, "words_19c": 82049244}
+{"lemma": "ознакомиться", "pos": "INFN", "queried_utc": "2026-09-24T17:08:49Z", "ipm": 13.3064, "category": 3}
+{"lemma": "околдовывать", "pos": "INFN", "queried_utc": "2026-09-24T17:08:59Z", "ipm": 0.215868, "category": 1, "hits_main": 92, "words_main": 426186466, "hits_19c": 7, "words_19c": 82049244}
+{"lemma": "определяться", "pos": "VERB", "queried_utc": "2026-09-24T17:09:29Z", "ipm": 1.87477, "category": 2, "hits_main": 799, "words_main": 426186466, "hits_19c": 83, "words_19c": 82049244}
+{"lemma": "опровергнуть", "pos": "PRTF", "queried_utc": "2026-09-24T17:10:00Z", "ipm": 7.55772, "category": 2, "hits_main": 3222, "words_main": 426186466, "hits_19c": 589, "words_19c": 82049244}
+{"lemma": "ослепительно", "pos": "ADVB", "queried_utc": "2026-09-24T17:10:30Z", "ipm": 5.04005, "category": 2, "hits_main": 2403, "words_main": 426186466, "hits_19c": 206, "words_19c": 82049244}
+{"lemma": "основательно", "pos": "ADVB", "queried_utc": "2026-09-24T17:11:00Z", "ipm": 12.3936, "category": 3}
+{"lemma": "отделываться", "pos": "INFN", "queried_utc": "2026-09-24T17:11:09Z", "ipm": 1.89588, "category": 2, "hits_main": 808, "words_main": 426186466, "hits_19c": 312, "words_19c": 82049244}
+{"lemma": "отображаться", "pos": "PRTF", "queried_utc": "2026-09-24T17:11:45Z", "ipm": 0.220561, "category": 1, "hits_main": 94, "words_main": 426186466, "hits_19c": 2, "words_19c": 82049244}
+{"lemma": "перебиваться", "pos": "INFN", "queried_utc": "2026-09-24T17:12:09Z", "ipm": 1.96158, "category": 2, "hits_main": 836, "words_main": 426186466, "hits_19c": 267, "words_19c": 82049244}
+{"lemma": "переваривать", "pos": "VERB", "queried_utc": "2026-09-24T17:12:39Z", "ipm": 2.67019, "category": 2, "hits_main": 1138, "words_main": 426186466, "hits_19c": 133, "words_19c": 82049244}
+{"lemma": "передвижение", "pos": "NOUN", "queried_utc": "2026-09-24T17:13:09Z", "ipm": 11.1641, "category": 3}
+{"lemma": "переноситься", "pos": "VERB", "queried_utc": "2026-09-24T17:13:19Z", "ipm": 2.77343, "category": 2, "hits_main": 1182, "words_main": 426186466, "hits_19c": 360, "words_19c": 82049244}
+{"lemma": "переработать", "pos": "PRTF", "queried_utc": "2026-09-24T17:13:49Z", "ipm": 3.55947, "category": 2, "hits_main": 1517, "words_main": 426186466, "hits_19c": 193, "words_19c": 82049244}
+{"lemma": "переселиться", "pos": "PRTF", "queried_utc": "2026-09-24T17:14:19Z", "ipm": 9.05941, "category": 2, "hits_main": 3861, "words_main": 426186466, "hits_19c": 1352, "words_19c": 82049244}
+{"lemma": "переубеждать", "pos": "INFN", "queried_utc": "2026-09-24T17:14:49Z", "ipm": 0.262796, "category": 1, "hits_main": 112, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "переуступать", "pos": "INFN", "queried_utc": "2026-09-24T17:15:19Z", "ipm": 0.0469278, "category": 1, "hits_main": 20, "words_main": 426186466, "hits_19c": 5, "words_19c": 82049244}
+{"lemma": "повествовать", "pos": "INFN", "queried_utc": "2026-09-24T17:15:50Z", "ipm": 7.57884, "category": 2, "hits_main": 3231, "words_main": 426186466, "hits_19c": 768, "words_19c": 82049244}
+{"lemma": "подкрепление", "pos": "NOUN", "queried_utc": "2026-09-24T17:16:19Z", "ipm": 7.79236, "category": 2, "hits_main": 3321, "words_main": 426186466, "hits_19c": 1120, "words_19c": 82049244}
+{"lemma": "подсказывать", "pos": "INFN", "queried_utc": "2026-09-24T17:16:51Z", "ipm": 10.8849, "category": 3}
+{"lemma": "подстерегать", "pos": "INFN", "queried_utc": "2026-09-24T17:16:59Z", "ipm": 3.57825, "category": 2, "hits_main": 1525, "words_main": 426186466, "hits_19c": 186, "words_19c": 82049244}
+{"lemma": "подстрекнуть", "pos": "PRTF", "queried_utc": "2026-09-24T17:17:29Z", "ipm": 0.415311, "category": 1, "hits_main": 177, "words_main": 426186466, "hits_19c": 128, "words_19c": 82049244}
+{"lemma": "подступиться", "pos": "INFN", "queried_utc": "2026-09-24T17:17:59Z", "ipm": 2.1751, "category": 2, "hits_main": 927, "words_main": 426186466, "hits_19c": 130, "words_19c": 82049244}
+{"lemma": "подхватывать", "pos": "INFN", "queried_utc": "2026-09-24T17:18:29Z", "ipm": 7.60465, "category": 2, "hits_main": 3241, "words_main": 426186466, "hits_19c": 450, "words_19c": 82049244}
+{"lemma": "позаботиться", "pos": "INFN", "queried_utc": "2026-09-24T17:18:59Z", "ipm": 11.0726, "category": 3}
+{"lemma": "постановлять", "pos": "INFN", "queried_utc": "2026-09-24T17:19:09Z", "ipm": 1.7246, "category": 2, "hits_main": 735, "words_main": 426186466, "hits_19c": 236, "words_19c": 82049244}
+{"lemma": "превозносить", "pos": "INFN", "queried_utc": "2026-09-24T17:19:39Z", "ipm": 3.3131, "category": 2, "hits_main": 1413, "words_main": 426186466, "hits_19c": 557, "words_19c": 82049244}
+{"lemma": "превратиться", "pos": "VERB", "queried_utc": "2026-09-24T17:20:10Z", "ipm": 54.0515, "category": 3}
+{"lemma": "преставиться", "pos": "PRTF", "queried_utc": "2026-09-24T17:20:19Z", "ipm": 1.65186, "category": 2, "hits_main": 706, "words_main": 426186466, "hits_19c": 220, "words_19c": 82049244}
+{"lemma": "претендовать", "pos": "INFN", "queried_utc": "2026-09-24T17:20:49Z", "ipm": 13.4894, "category": 3}
+{"lemma": "прибавляться", "pos": "INFN", "queried_utc": "2026-09-24T17:20:59Z", "ipm": 3.28729, "category": 2, "hits_main": 1401, "words_main": 426186466, "hits_19c": 299, "words_19c": 82049244}
+{"lemma": "приверженный", "pos": "ADJF", "queried_utc": "2026-09-24T17:21:31Z", "ipm": 1.28113, "category": 2, "hits_main": 550, "words_main": 426186466, "hits_19c": 203, "words_19c": 82049244}
+{"lemma": "привязывание", "pos": "NOUN", "queried_utc": "2026-09-24T17:21:59Z", "ipm": 0.175979, "category": 1, "hits_main": 75, "words_main": 426186466, "hits_19c": 15, "words_19c": 82049244}
+{"lemma": "пристегивать", "pos": "INFN", "queried_utc": "2026-09-24T17:22:29Z", "ipm": 0.628833, "category": 1, "hits_main": 268, "words_main": 426186466, "hits_19c": 39, "words_19c": 82049244}
+{"lemma": "пристраивать", "pos": "INFN", "queried_utc": "2026-09-24T17:22:59Z", "ipm": 1.26705, "category": 2, "hits_main": 540, "words_main": 426186466, "hits_19c": 64, "words_19c": 82049244}
+{"lemma": "притвориться", "pos": "PRTF", "queried_utc": "2026-09-24T17:23:29Z", "ipm": 4.88753, "category": 2, "hits_main": 2083, "words_main": 426186466, "hits_19c": 645, "words_19c": 82049244}
+{"lemma": "пробуждаться", "pos": "PRTF", "queried_utc": "2026-09-24T17:23:59Z", "ipm": 5.12921, "category": 2, "hits_main": 2186, "words_main": 426186466, "hits_19c": 607, "words_19c": 82049244}
+{"lemma": "продолжаться", "pos": "INFN", "queried_utc": "2026-09-24T17:24:29Z", "ipm": 83.5221, "category": 3}
+{"lemma": "произведение", "pos": "NOUN", "queried_utc": "2026-09-24T17:24:40Z", "ipm": 125.452, "category": 4}
+{"lemma": "произношение", "pos": "NOUN", "queried_utc": "2026-09-24T17:24:49Z", "ipm": 5.85894, "category": 2, "hits_main": 2497, "words_main": 426186466, "hits_19c": 582, "words_19c": 82049244}
+{"lemma": "происшествие", "pos": "NOUN", "queried_utc": "2026-09-24T17:25:20Z", "ipm": 33.1615, "category": 3}
+{"lemma": "равносильный", "pos": "ADJF", "queried_utc": "2026-09-24T17:25:30Z", "ipm": 4.03579, "category": 2, "hits_main": 1720, "words_main": 426186466, "hits_19c": 421, "words_19c": 82049244}
+{"lemma": "разглаживать", "pos": "INFN", "queried_utc": "2026-09-24T17:25:59Z", "ipm": 1.87007, "category": 2, "hits_main": 797, "words_main": 426186466, "hits_19c": 123, "words_19c": 82049244}
+{"lemma": "разгневаться", "pos": "GRND", "queried_utc": "2026-09-24T17:26:29Z", "ipm": 2.02963, "category": 2, "hits_main": 865, "words_main": 426186466, "hits_19c": 302, "words_19c": 82049244}
+{"lemma": "разграничить", "pos": "PRTF", "queried_utc": "2026-09-24T17:26:59Z", "ipm": 1.10984, "category": 2, "hits_main": 473, "words_main": 426186466, "hits_19c": 76, "words_19c": 82049244}
+{"lemma": "размножиться", "pos": "INFN", "queried_utc": "2026-09-24T17:27:29Z", "ipm": 1.14504, "category": 2, "hits_main": 488, "words_main": 426186466, "hits_19c": 134, "words_19c": 82049244}
+{"lemma": "раскаиваться", "pos": "INFN", "queried_utc": "2026-09-24T17:27:59Z", "ipm": 5.17848, "category": 2, "hits_main": 2207, "words_main": 426186466, "hits_19c": 895, "words_19c": 82049244}
+{"lemma": "раскалывание", "pos": "NOUN", "queried_utc": "2026-09-24T17:28:29Z", "ipm": 0.124359, "category": 1, "hits_main": 53, "words_main": 426186466, "hits_19c": 6, "words_19c": 82049244}
+{"lemma": "раскрошиться", "pos": "PRTF", "queried_utc": "2026-09-24T17:28:59Z", "ipm": 0.262796, "category": 1, "hits_main": 112, "words_main": 426186466, "hits_19c": 3, "words_19c": 82049244}
+{"lemma": "расплющивать", "pos": "INFN", "queried_utc": "2026-09-24T17:29:29Z", "ipm": 0.180672, "category": 1, "hits_main": 77, "words_main": 426186466, "hits_19c": 5, "words_19c": 82049244}
+{"lemma": "расправиться", "pos": "INFN", "queried_utc": "2026-09-24T17:29:59Z", "ipm": 4.6482, "category": 2, "hits_main": 1981, "words_main": 426186466, "hits_19c": 201, "words_19c": 82049244}
+{"lemma": "распутничать", "pos": "INFN", "queried_utc": "2026-09-24T17:30:29Z", "ipm": 0.190058, "category": 1, "hits_main": 81, "words_main": 426186466, "hits_19c": 23, "words_19c": 82049244}
+{"lemma": "рассеиваться", "pos": "INFN", "queried_utc": "2026-09-24T17:30:59Z", "ipm": 3.17232, "category": 2, "hits_main": 1352, "words_main": 426186466, "hits_19c": 145, "words_19c": 82049244}
+{"lemma": "руководитель", "pos": "NOUN", "queried_utc": "2026-09-24T17:31:30Z", "ipm": 77.9706, "category": 3}
+{"lemma": "самоубийство", "pos": "NOUN", "queried_utc": "2026-09-24T17:31:39Z", "ipm": 20.8547, "category": 3}
+{"lemma": "своевременно", "pos": "ADVB", "queried_utc": "2026-09-24T17:31:49Z", "ipm": 7.51784, "category": 2, "hits_main": 3261, "words_main": 426186466, "hits_19c": 432, "words_19c": 82049244}
+{"lemma": "свойственный", "pos": "ADJF", "queried_utc": "2026-09-24T17:32:19Z", "ipm": 33.4384, "category": 3}
+{"lemma": "симметричный", "pos": "ADJF", "queried_utc": "2026-09-24T17:32:29Z", "ipm": 3.00573, "category": 2, "hits_main": 1281, "words_main": 426186466, "hits_19c": 262, "words_19c": 82049244}
+{"lemma": "симулировать", "pos": "INFN", "queried_utc": "2026-09-24T17:32:59Z", "ipm": 1.22247, "category": 2, "hits_main": 521, "words_main": 426186466, "hits_19c": 9, "words_19c": 82049244}
+{"lemma": "складываться", "pos": "INFN", "queried_utc": "2026-09-24T17:33:29Z", "ipm": 26.2139, "category": 3}
+{"lemma": "скотоложство", "pos": "NOUN", "queried_utc": "2026-09-24T17:33:39Z", "ipm": 0.0305031, "category": 1, "hits_main": 13, "words_main": 426186466, "hits_19c": 5, "words_19c": 82049244}
+{"lemma": "советоваться", "pos": "INFN", "queried_utc": "2026-09-24T17:34:10Z", "ipm": 7.39113, "category": 2, "hits_main": 3150, "words_main": 426186466, "hits_19c": 812, "words_19c": 82049244}
+{"lemma": "совокупление", "pos": "NOUN", "queried_utc": "2026-09-24T17:34:39Z", "ipm": 1.29755, "category": 2, "hits_main": 553, "words_main": 426186466, "hits_19c": 88, "words_19c": 82049244}
+{"lemma": "сожительство", "pos": "NOUN", "queried_utc": "2026-09-24T17:35:10Z", "ipm": 2.27131, "category": 2, "hits_main": 968, "words_main": 426186466, "hits_19c": 292, "words_19c": 82049244}
+{"lemma": "сомнительный", "pos": "ADJF", "queried_utc": "2026-09-24T17:35:39Z", "ipm": 16.9057, "category": 3}
+{"lemma": "сопоставлять", "pos": "INFN", "queried_utc": "2026-09-24T17:35:49Z", "ipm": 4.26574, "category": 2, "hits_main": 1818, "words_main": 426186466, "hits_19c": 146, "words_19c": 82049244}
+{"lemma": "сопредельный", "pos": "ADJF", "queried_utc": "2026-09-24T17:36:19Z", "ipm": 1.30459, "category": 2, "hits_main": 558, "words_main": 426186466, "hits_19c": 113, "words_19c": 82049244}
+{"lemma": "сравнительно", "pos": "ADVB", "queried_utc": "2026-09-24T17:36:49Z", "ipm": 33.0161, "category": 3}
+{"lemma": "стесненность", "pos": "NOUN", "queried_utc": "2026-09-24T17:36:59Z", "ipm": 0.262796, "category": 1, "hits_main": 112, "words_main": 426186466, "hits_19c": 10, "words_19c": 82049244}
+{"lemma": "традиционный", "pos": "ADJF", "queried_utc": "2026-09-24T17:37:30Z", "ipm": 42.3758, "category": 3}
+{"lemma": "тщательность", "pos": "NOUN", "queried_utc": "2026-09-24T17:37:39Z", "ipm": 2.78047, "category": 2, "hits_main": 1185, "words_main": 426186466, "hits_19c": 180, "words_19c": 82049244}
+{"lemma": "удерживаться", "pos": "INFN", "queried_utc": "2026-09-24T17:38:09Z", "ipm": 4.36429, "category": 2, "hits_main": 1860, "words_main": 426186466, "hits_19c": 544, "words_19c": 82049244}
+{"lemma": "умозаключить", "pos": "PRTF", "queried_utc": "2026-09-24T17:38:39Z", "ipm": 0.150169, "category": 1, "hits_main": 64, "words_main": 426186466, "hits_19c": 20, "words_19c": 82049244}
+{"lemma": "уничтожаться", "pos": "INFN", "queried_utc": "2026-09-24T17:39:09Z", "ipm": 0.746152, "category": 1, "hits_main": 318, "words_main": 426186466, "hits_19c": 130, "words_19c": 82049244}
+{"lemma": "уподобляться", "pos": "INFN", "queried_utc": "2026-09-24T17:39:39Z", "ipm": 2.48483, "category": 2, "hits_main": 1059, "words_main": 426186466, "hits_19c": 298, "words_19c": 82049244}
+{"lemma": "употребление", "pos": "NOUN", "queried_utc": "2026-09-24T17:40:09Z", "ipm": 30.123, "category": 3}
+{"lemma": "упраздняться", "pos": "VERB", "queried_utc": "2026-09-24T17:40:19Z", "ipm": 0.133744, "category": 1, "hits_main": 57, "words_main": 426186466, "hits_19c": 13, "words_19c": 82049244}
+{"lemma": "человеческий", "pos": "ADJF", "queried_utc": "2026-09-24T17:40:49Z", "ipm": 228.266, "category": 4}
+{"lemma": "эмигрировать", "pos": "PRTF", "queried_utc": "2026-09-24T17:40:59Z", "ipm": 4.24227, "category": 2, "hits_main": 1808, "words_main": 426186466, "hits_19c": 91, "words_19c": 82049244}
+{"lemma": "безуспешный", "pos": "ADJF", "queried_utc": "2026-09-24T17:41:29Z", "ipm": 2.6303, "category": 2, "hits_main": 1121, "words_main": 426186466, "hits_19c": 292, "words_19c": 82049244}
+{"lemma": "благоволить", "pos": "INFN", "queried_utc": "2026-09-24T17:41:59Z", "ipm": 4.8101, "category": 2, "hits_main": 2050, "words_main": 426186466, "hits_19c": 761, "words_19c": 82049244}
+{"lemma": "благодарный", "pos": "ADJF", "queried_utc": "2026-09-24T17:42:29Z", "ipm": 27.725, "category": 3}
+{"lemma": "благодеяние", "pos": "NOUN", "queried_utc": "2026-09-24T17:42:39Z", "ipm": 6.88666, "category": 2, "hits_main": 2935, "words_main": 426186466, "hits_19c": 1329, "words_19c": 82049244}
+{"lemma": "благонравие", "pos": "NOUN", "queried_utc": "2026-09-24T17:43:09Z", "ipm": 0.99487, "category": 1, "hits_main": 424, "words_main": 426186466, "hits_19c": 168, "words_19c": 82049244}
+{"lemma": "буйствовать", "pos": "INFN", "queried_utc": "2026-09-24T17:43:39Z", "ipm": 1.31867, "category": 2, "hits_main": 563, "words_main": 426186466, "hits_19c": 80, "words_19c": 82049244}
+{"lemma": "взаимосвязь", "pos": "NOUN", "queried_utc": "2026-09-24T17:44:09Z", "ipm": 5.54921, "category": 2, "hits_main": 2365, "words_main": 426186466, "hits_19c": 4, "words_19c": 82049244}
+{"lemma": "взбалтывать", "pos": "INFN", "queried_utc": "2026-09-24T17:44:39Z", "ipm": 0.490396, "category": 1, "hits_main": 209, "words_main": 426186466, "hits_19c": 34, "words_19c": 82049244}
+{"lemma": "взглядывать", "pos": "INFN", "queried_utc": "2026-09-24T17:45:09Z", "ipm": 6.90777, "category": 2, "hits_main": 2944, "words_main": 426186466, "hits_19c": 1187, "words_19c": 82049244}
+{"lemma": "возглавлять", "pos": "INFN", "queried_utc": "2026-09-24T17:45:39Z", "ipm": 17.2131, "category": 3}
+{"lemma": "воздаваться", "pos": "INFN", "queried_utc": "2026-09-24T17:45:49Z", "ipm": 0.248717, "category": 1, "hits_main": 106, "words_main": 426186466, "hits_19c": 21, "words_19c": 82049244}
+{"lemma": "возноситься", "pos": "INFN", "queried_utc": "2026-09-24T17:46:19Z", "ipm": 2.99399, "category": 2, "hits_main": 1276, "words_main": 426186466, "hits_19c": 315, "words_19c": 82049244}
+{"lemma": "воодушевить", "pos": "VERB", "queried_utc": "2026-09-24T17:46:49Z", "ipm": 2.50595, "category": 2, "hits_main": 1068, "words_main": 426186466, "hits_19c": 167, "words_19c": 82049244}
+{"lemma": "вооруженный", "pos": "ADJF", "queried_utc": "2026-09-24T17:47:19Z", "ipm": 25.7751, "category": 3}
+{"lemma": "воскреснуть", "pos": "PRTF", "queried_utc": "2026-09-24T17:47:29Z", "ipm": 13.4941, "category": 3}
+{"lemma": "воспеваться", "pos": "INFN", "queried_utc": "2026-09-24T17:47:39Z", "ipm": null, "category": null, "hits_main": 1, "words_main": 426186466, "hits_19c": 0, "words_19c": 82049244}
+{"lemma": "впечатление", "pos": "NOUN", "queried_utc": "2026-09-24T17:48:09Z", "ipm": 150.885, "category": 4}
+{"lemma": "вписываться", "pos": "INFN", "queried_utc": "2026-09-24T17:48:19Z", "ipm": 4.61535, "category": 2, "hits_main": 1967, "words_main": 426186466, "hits_19c": 18, "words_19c": 82049244}
+{"lemma": "всасываться", "pos": "INFN", "queried_utc": "2026-09-24T17:48:50Z", "ipm": 0.504474, "category": 1, "hits_main": 215, "words_main": 426186466, "hits_19c": 34, "words_19c": 82049244}
+{"lemma": "вспрыгивать", "pos": "INFN", "queried_utc": "2026-09-24T17:49:19Z", "ipm": 0.391847, "category": 1, "hits_main": 167, "words_main": 426186466, "hits_19c": 34, "words_19c": 82049244}

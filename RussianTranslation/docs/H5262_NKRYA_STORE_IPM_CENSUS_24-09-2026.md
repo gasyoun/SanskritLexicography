@@ -11,14 +11,14 @@ Batch audit of every Russian content word in the PWG-RU store's glosses against 
 | Store cards read | 11534 |
 | Gloss scope | {%...%} spans of the `ru` field only |
 | Cyrillic tokens seen | 39425 |
-| Content tokens kept | 29565 |
+| Content tokens kept | 29549 |
 | Tokens skipped (function word, name, <3 chars) | 4105 |
-| **Distinct content lemmas** | **4912** |
-| Hapax lemmas (1 occurrence) | 1832 |
+| **Distinct content lemmas** | **4901** |
+| Hapax lemmas (1 occurrence) | 1825 |
 | Lemmatizer | pymorphy3 2.0.6 |
-| Extraction wall-clock | 4.0 s |
+| Extraction wall-clock | 2.4 s |
 
-Distinct lemmas by part of speech: INFN 2091, NOUN 1208, ADJF 592, PRTF 540, ADVB 290, VERB 129, ADJS 25, PRTS 18, GRND 15, COMP 4.
+Distinct lemmas by part of speech: INFN 2086, NOUN 1206, ADJF 591, PRTF 538, ADVB 290, VERB 128, ADJS 25, PRTS 18, GRND 15, COMP 4.
 
 Most frequent gloss lemmas (sanity check — these should be ordinary Russian):
 
@@ -44,26 +44,27 @@ Most frequent gloss lemmas (sanity check — these should be ordinary Russian):
 
 | Measure | Value |
 |---|---|
-| Ledger rows | 64 |
-| Rows with an ipm verdict | 64 |
+| Ledger rows | 345 |
+| Rows with an ipm verdict | 345 |
 | Rows with an error | 0 |
-| Census lemmas still unqueried | 4848 |
+| Census lemmas still unqueried | 4556 |
 
 Lookup order is **risk-first** (`risk_order`): lemmas pymorphy3's dictionary does not know, then hapax lemmas longest-first, then the rest — so a partial pass has already spent its calls where the flags are. A lemma below 10 ipm (or with no NKRYa word portrait) also gets its concordance hits in MAIN and in the 1800–1899 slice; a zero-hit lemma is re-checked by its surface form before it may be called absent.
 
-First verdict 2026-09-24T14:09:06Z, last 2026-09-24T15:43:39Z; 61 verdicts carry live hit counts.
+First verdict 2026-09-24T14:09:06Z, last 2026-09-24T17:49:19Z; 342 verdicts carry live hit counts.
 
 ## 3. Flags
 
 | Class | Count |
 |---|---|
-| ABSENT | 15 |
-| ARCHAIC | 2 |
-| RARE | 38 |
-| clean | 7 |
-| unverifiable-compound | 3 |
+| ABSENT | 14 |
+| ARCHAIC | 7 |
+| RARE | 119 |
+| clean | 198 |
+| no-verdict | 6 |
+| unverifiable-compound | 5 |
 
-ipm basis of the flagged lemmas: form 5, hits 9, none 15, portrait 25 (portrait = NKRYa word portrait; hits = lemma concordance count ÷ 426.2 M words; form = surface-form count, where NKRYa's lemmatizer does not know the lemma).
+ipm basis of the flagged lemmas: form 3, hits 10, none 14, portrait 109 (portrait = NKRYa word portrait; hits = lemma concordance count ÷ 426.2 M words; form = surface-form count, where NKRYa's lemmatizer does not know the lemma).
 
 Flagged lemmas by severity:
 
@@ -78,51 +79,133 @@ Flagged lemmas by severity:
 | гелиактически | ADVB | ABSENT | — | none | 0 | — | 1 |
 | достигшийся | ADJF | ABSENT | — | none | 0 | — | 1 |
 | колебаяться | VERB | ABSENT | — | none | 0 | — | 1 |
-| кусывать | INFN | ABSENT | — | none | 0 | — | 1 |
 | приформовывать | INFN | ABSENT | — | none | 0 | — | 1 |
 | пронзатель | NOUN | ABSENT | — | none | 0 | — | 1 |
 | союзить | INFN | ABSENT | — | none | 0 | — | 1 |
 | увещеванный | ADJF | ABSENT | — | none | 0 | — | 1 |
 | хмурение | NOUN | ABSENT | — | none | 0 | — | 1 |
 | улегаться | INFN | RARE+ARCHAIC | 0.131398 | portrait | 56 | 36 | 1 |
+| изглаживаться | INFN | RARE+ARCHAIC | 0.16894 | portrait | 72 | 45 | 1 |
+| переговаривать | INFN | RARE+ARCHAIC | 0.288606 | portrait | 123 | 72 | 1 |
+| подстрекнуть | PRTF | RARE+ARCHAIC | 0.415311 | portrait | 177 | 128 | 1 |
 | побужденный | ADJF | RARE | 0.02346 | form | 0 | — | 5 |
-| рывать | INFN | RARE | 0.00235 | hits | 1 | 0 | 3 |
-| столько-то | ADVB | RARE | 0.011732 | portrait | 5 | 0 | 3 |
 | несомый | ADJF | RARE | 0.105588 | portrait | 63 | 9 | 3 |
 | преставляться | INFN | RARE | 0.00235 | hits | 1 | 0 | 2 |
 | юпитеровый | ADJF | RARE | 0.00235 | hits | 1 | 0 | 2 |
 | объединенно | ADVB | RARE | 0.0211175 | portrait | 12 | 0 | 2 |
 | самоповешение | NOUN | RARE | 0.0211175 | portrait | 9 | 0 | 2 |
-| сарасватить | VERB | RARE | 0.03989 | form | 0 | — | 2 |
 | блюдомый | ADJF | RARE | 0.00469 | form | 0 | — | 1 |
-| ламывать | PRTF | RARE | 0.00235 | hits | 1 | 0 | 1 |
+| воспеваться | INFN | RARE | 0.00235 | hits | 1 | 0 | 1 |
 | неворовство | NOUN | RARE | 0.00235 | hits | 1 | 0 | 1 |
 | незаградить | PRTF | RARE | 0.00235 | hits | 1 | 1 | 1 |
-| бодхисаттво | NOUN | RARE | 0.01173 | form | 0 | — | 1 |
+| сгруппировывать | INFN | RARE | 0.00235 | hits | 1 | 1 | 1 |
+| незадержанный | ADJF | RARE | 0.00704 | hits | 3 | 0 | 1 |
+| неослабленный | ADJF | RARE | 0.011732 | portrait | 5 | 1 | 1 |
 | оппозиционировать | INFN | RARE | 0.00704 | hits | 3 | 0 | 1 |
 | подразумеваемость | NOUN | RARE | 0.0140783 | portrait | 6 | 1 | 1 |
 | полузаглохнуть | PRTF | RARE | 0.011732 | portrait | 5 | 2 | 1 |
 | свидетельствующий | ADJF | RARE | 0.00704 | hits | 3 | 1 | 1 |
 | спалять | NOUN | RARE | 0.00939 | hits | 4 | 0 | 1 |
+| запруживание | NOUN | RARE | 0.0164247 | portrait | 7 | 2 | 1 |
+| неизмеренный | ADJF | RARE | 0.0187711 | portrait | 8 | 1 | 1 |
 | отпугать | PRTF | RARE | 0.0234639 | portrait | 10 | 8 | 1 |
-| грызать | INFN | RARE | 0.0305031 | portrait | 13 | 2 | 1 |
+| испражниться | INFN | RARE | 0.0305031 | portrait | 13 | 2 | 1 |
+| перевязывание | NOUN | RARE | 0.0328495 | portrait | 14 | 5 | 1 |
+| скотоложство | NOUN | RARE | 0.0305031 | portrait | 13 | 5 | 1 |
 | даятель | NOUN | RARE | 0.0375423 | portrait | 16 | 6 | 1 |
 | десятикратное | NOUN | RARE | 0.0352 | form | 0 | — | 1 |
 | закалать | INFN | RARE | 0.0375423 | portrait | 16 | 5 | 1 |
+| вычерпывание | NOUN | RARE | 0.0469278 | portrait | 20 | 4 | 1 |
+| неискусственный | ADJF | RARE | 0.0492742 | portrait | 21 | 9 | 1 |
+| окольцовывать | INFN | RARE | 0.0516206 | portrait | 22 | 0 | 1 |
+| переуступать | INFN | RARE | 0.0469278 | portrait | 20 | 5 | 1 |
 | прокоротать | PRTF | RARE | 0.0492742 | portrait | 21 | 8 | 1 |
+| обвязываться | INFN | RARE | 0.0563134 | portrait | 24 | 3 | 1 |
 | умерщвить | VERB | RARE | 0.0586598 | portrait | 25 | 4 | 1 |
 | возжигание | NOUN | RARE | 0.0656989 | portrait | 28 | 4 | 1 |
+| закупориваться | INFN | RARE | 0.0703917 | portrait | 30 | 7 | 1 |
 | проступиться | INFN | RARE | 0.0656989 | portrait | 28 | 13 | 1 |
 | негордый | ADJF | RARE | 0.0797773 | portrait | 34 | 5 | 1 |
 | окладывать | INFN | RARE | 0.0750845 | portrait | 32 | 12 | 1 |
 | преходящесть | NOUN | RARE | 0.0797773 | portrait | 34 | 0 | 1 |
 | самообуздание | NOUN | RARE | 0.0821237 | portrait | 35 | 3 | 1 |
+| вздыбливаться | INFN | RARE | 0.0868165 | portrait | 37 | 0 | 1 |
 | упорядоченно | ADVB | RARE | 0.0985484 | portrait | 42 | 0 | 1 |
+| закладывание | NOUN | RARE | 0.112627 | portrait | 48 | 6 | 1 |
+| испытываться | INFN | RARE | 0.112627 | portrait | 48 | 1 | 1 |
+| перечисленный | ADJF | RARE | 0.11028 | portrait | 48 | 0 | 1 |
+| раскалывание | NOUN | RARE | 0.124359 | portrait | 53 | 6 | 1 |
+| выбраковывать | INFN | RARE | 0.129051 | portrait | 55 | 3 | 1 |
 | схлопываться | INFN | RARE | 0.129051 | portrait | 57 | 1 | 1 |
+| упраздняться | VERB | RARE | 0.133744 | portrait | 57 | 13 | 1 |
+| обмолачивать | INFN | RARE | 0.154862 | portrait | 66 | 22 | 1 |
+| прославляться | INFN | RARE | 0.147823 | portrait | 63 | 18 | 1 |
+| умилостивлять | INFN | RARE | 0.145476 | portrait | 62 | 23 | 1 |
+| умозаключить | PRTF | RARE | 0.150169 | portrait | 64 | 20 | 1 |
+| единовластный | ADJF | RARE | 0.16894 | portrait | 73 | 17 | 1 |
+| нанизываться | VERB | RARE | 0.16894 | portrait | 72 | 2 | 1 |
+| привязывание | NOUN | RARE | 0.175979 | portrait | 75 | 15 | 1 |
+| расплющивать | INFN | RARE | 0.180672 | portrait | 77 | 5 | 1 |
+| многоголосный | ADJF | RARE | 0.192404 | portrait | 82 | 7 | 1 |
+| распутничать | INFN | RARE | 0.190058 | portrait | 81 | 23 | 1 |
+| распределенный | ADJF | RARE | 0.197097 | portrait | 84 | 0 | 1 |
+| околдовывать | INFN | RARE | 0.215868 | portrait | 92 | 7 | 1 |
+| отображаться | PRTF | RARE | 0.220561 | portrait | 94 | 2 | 1 |
+| поддерживаться | INFN | RARE | 0.215868 | portrait | 92 | 22 | 1 |
+| воздаваться | INFN | RARE | 0.248717 | portrait | 106 | 21 | 1 |
+| переубеждать | INFN | RARE | 0.262796 | portrait | 112 | 0 | 1 |
+| раскрошиться | PRTF | RARE | 0.262796 | portrait | 112 | 3 | 1 |
+| стесненность | NOUN | RARE | 0.262796 | portrait | 112 | 10 | 1 |
 | отвратиться | VERB | RARE | 0.288606 | portrait | 123 | 40 | 1 |
+| дрессированный | ADJF | RARE | 0.305031 | portrait | 130 | 5 | 1 |
+| низвергнуться | INFN | RARE | 0.319109 | portrait | 136 | 38 | 1 |
 | обустроиться | PRTF | RARE | 0.316763 | portrait | 135 | 1 | 1 |
+| сосредотачивать | INFN | RARE | 0.316763 | portrait | 135 | 8 | 1 |
+| нагромождать | INFN | RARE | 0.351959 | portrait | 150 | 16 | 1 |
+| круговращение | NOUN | RARE | 0.375423 | portrait | 160 | 19 | 1 |
+| вспрыгивать | INFN | RARE | 0.391847 | portrait | 167 | 34 | 1 |
+| четырехкратный | ADJF | RARE | 0.401233 | portrait | 171 | 3 | 1 |
+| превозноситься | INFN | RARE | 0.42939 | portrait | 183 | 54 | 1 |
+| удостоверяться | INFN | RARE | 0.438775 | portrait | 187 | 89 | 1 |
+| одурманивать | INFN | RARE | 0.452853 | portrait | 193 | 17 | 1 |
+| словообразование | NOUN | RARE | 0.445814 | portrait | 190 | 9 | 1 |
+| нежизнеспособный | ADJF | RARE | 0.469278 | portrait | 200 | 0 | 1 |
+| попрошайничать | VERB | RARE | 0.471625 | portrait | 201 | 9 | 1 |
+| взбалтывать | INFN | RARE | 0.490396 | portrait | 209 | 34 | 1 |
+| всасываться | INFN | RARE | 0.504474 | portrait | 215 | 34 | 1 |
+| произноситься | VERB | RARE | 0.502128 | portrait | 214 | 38 | 1 |
+| застаиваться | INFN | RARE | 0.516206 | portrait | 220 | 38 | 1 |
+| бездейственный | ADJF | RARE | 0.534977 | portrait | 229 | 64 | 1 |
+| вкрадываться | INFN | RARE | 0.558441 | portrait | 238 | 111 | 1 |
 | прелюбодействовать | INFN | RARE | 0.570173 | portrait | 243 | 62 | 1 |
+| предоставляться | INFN | RARE | 0.595983 | portrait | 254 | 54 | 1 |
+| встраиваться | INFN | RARE | 0.612408 | portrait | 261 | 0 | 1 |
+| музицировать | INFN | RARE | 0.612408 | portrait | 261 | 12 | 1 |
+| мертворожденный | ADJF | RARE | 0.617101 | portrait | 265 | 44 | 1 |
+| дотягиваться | INFN | RARE | 0.631179 | portrait | 269 | 2 | 1 |
+| пристегивать | INFN | RARE | 0.628833 | portrait | 268 | 39 | 1 |
+| обесценивать | INFN | RARE | 0.647604 | portrait | 276 | 6 | 1 |
+| неподобающий | ADJF | RARE | 0.659336 | portrait | 281 | 23 | 1 |
+| выбрасываться | INFN | RARE | 0.692185 | portrait | 295 | 23 | 1 |
+| разграничивать | INFN | RARE | 0.701571 | portrait | 299 | 33 | 1 |
+| подтверждаться | INFN | RARE | 0.717996 | portrait | 306 | 59 | 1 |
+| выстреливать | INFN | RARE | 0.729728 | portrait | 311 | 19 | 1 |
+| приветственно | ADVB | RARE | 0.746152 | portrait | 323 | 4 | 1 |
+| уничтожаться | INFN | RARE | 0.746152 | portrait | 318 | 130 | 1 |
+| накидываться | INFN | RARE | 0.797773 | portrait | 340 | 119 | 1 |
+| обустраивать | INFN | RARE | 0.802466 | portrait | 342 | 0 | 1 |
+| факультативный | ADJS | RARE | 0.800119 | portrait | 341 | 15 | 1 |
+| оплодотворять | INFN | RARE | 0.865818 | portrait | 369 | 87 | 1 |
+| неблагоприятно | ADVB | RARE | 0.87755 | portrait | 377 | 97 | 1 |
+| нищенствовать | PRTF | RARE | 0.950288 | portrait | 405 | 115 | 1 |
+| безумствовать | INFN | RARE | 0.96202 | portrait | 410 | 95 | 1 |
+| благонравный | ADJF | RARE | 0.957327 | portrait | 408 | 181 | 1 |
+| закрепляться | INFN | RARE | 0.966713 | portrait | 412 | 5 | 1 |
+| захлопываться | INFN | RARE | 0.971406 | portrait | 414 | 25 | 1 |
+| благонравие | NOUN | RARE | 0.99487 | portrait | 424 | 168 | 1 |
 | предводительствовать | INFN | ARCHAIC | 1.79499 | portrait | 765 | 439 | 1 |
+| приготовляться | INFN | ARCHAIC | 3.22159 | portrait | 1373 | 859 | 1 |
+| благодетельный | ADJF | ARCHAIC | 5.10105 | portrait | 2174 | 1338 | 1 |
 
 ## 4. Precision spot-check (30 flags, by hand)
 
@@ -177,7 +260,7 @@ Sheet 1 is committed on gasyoun.github.io branch h5262-nkrya-flags-b01 (b589c33)
 
 ## 6. Coverage and what remains
 
-64 of the 4912 distinct lemmas have a verdict; 4848 are still unqueried. The NKRYa key is rate-limited per ACCOUNT (about 60 calls/hour sustained, shared by every session using it), and a lemma costs 1–4 calls, so the remainder is a long unattended drain, not a sitting. `query` resumes exactly where it stopped: the ledger records answers only, so an interrupted or rate-limited lemma is retried, never retired (FINDINGS §646).
+345 of the 4901 distinct lemmas have a verdict; 4556 are still unqueried. The NKRYa key is rate-limited per ACCOUNT (about 60 calls/hour sustained, shared by every session using it), and a lemma costs 1–4 calls, so the remainder is a long unattended drain, not a sitting. `query` resumes exactly where it stopped: the ledger records answers only, so an interrupted or rate-limited lemma is retried, never retired (FINDINGS §646).
 
 ## 7. Reproduce
 
