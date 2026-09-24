@@ -65,7 +65,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   (from A40, Fable 5 `claude-fable-5`; a journal→book conversion — A40 had reached full
   prose in H675, so the plan's "data-only" premise was stale). The 2014-vs-2026 controlled
   census (+14.3 % over 18 comparable lists; Apte +146.7 %, MW/PWG frozen; removals as a
-  stratified QA signal), the 15-dictionary union (323,425 keys; 44.1 % singletons; the
+  stratified QA signal), the 15-dictionary union (323,422 keys; 44.1 % singletons; the
   Böhtlingk–Monier-Williams core) and the corpus-grounding bridge (attestation VEI
   69.8 % … SKD 14.1 % on the DCS-2021 denominator, upper bound, read as coverage geometry
   under ch02 §6.2). Crosswalk grounding woven in: Coward & Grimes headword-status criteria,
