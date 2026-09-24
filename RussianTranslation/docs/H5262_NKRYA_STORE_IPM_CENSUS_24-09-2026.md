@@ -138,7 +138,7 @@ Flagged lemmas by severity:
 
 | Lemma | Classes | Measurement | Defect? | Note |
 |---|---|---|---|---|
-| избегнутый | ABSENT | correct | yes | 0 hits as lemma and form; passive participle of a genitive-governing verb — «не избегнутый» for «vermieden» wants «не предотвращённый». |
+| избегнутый | ABSENT | correct | yes | 0 hits as lemma and form; passive participle of a genitive-governing verb — «не избегнутый» for «vermieden» (not avoided) wants a rephrase such as «чего не избежали». |
 | взборозденный | ABSENT | correct | yes | 0 hits; nonstandard prefix — the attested word is «изборождённый». |
 | гелиакически | ABSENT | correct | no | Astronomical term (гелиакический восход/заход); the adverb is rare but correct terminology. |
 | гелиактически | ABSENT | correct | yes | Misspelling of «гелиакически» (extra -т-); 0 hits. |
