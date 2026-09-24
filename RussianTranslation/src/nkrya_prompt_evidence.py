@@ -174,7 +174,12 @@ def selftest():
         pass
     else:
         raise AssertionError("inject must refuse an unknown card key")
-    print("nkrya_prompt_evidence selftest OK (11 checks, offline committed cache)")
+    # Presplit cards go through fragment_prompt_blocks, not card_block (H5263 A/B finding).
+    group = [{"skeleton": "S1"}, {"skeleton": "S2"}]
+    f_plain = hw.fragment_prompt_blocks(manifest, "c", group, [0])
+    f_ev = hw.fragment_prompt_blocks(after, "c", group, [0])
+    assert f_ev[0] == f_plain[0] and f_ev[1] == f_plain[1] + block, "fragment prompt lost the block"
+    print("nkrya_prompt_evidence selftest OK (12 checks, offline committed cache)")
 
 
 def main(argv=None):

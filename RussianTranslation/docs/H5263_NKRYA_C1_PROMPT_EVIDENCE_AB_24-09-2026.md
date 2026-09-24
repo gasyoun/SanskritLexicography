@@ -122,12 +122,65 @@ would burn a pre-authorized, non-renewable budget on a null measurement.
 - **Inspect:** [`reports/H5263_prompt_evidence_diff.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H5263_prompt_evidence_diff.json) first — it carries the diff, the
   byte deltas, the 29 cache keys used, and `paid_calls: 0`.
 
+## Second pass, 24-09-2026 15:05–15:40Z — Opus 5.5 (`claude-opus-5-5`), Mac + MSI over SSH
+
+The first pass's gate 1 was a **box** gate, not a missing key: the Mac's keychain holds
+`ruscorpora-api` (`nkrya_client.py probe` → `auth: true`). So this pass split the work
+across boxes: NKRYa on the Mac, the paid half on MSI.
+
+1. **Evidence pre-fetched and committed**. [`tools/h5263_ab_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/h5263-drain/RussianTranslation/tools/h5263_ab_evidence.py) `fetch` made 14 live NKRYa calls
+   and wrote [`pwg_ru/h5263/evidence_han.json`](https://github.com/gasyoun/SanskritLexicography/blob/h5263-drain/RussianTranslation/pwg_ru/h5263/evidence_han.json) and [`evidence_yat.json`](https://github.com/gasyoun/SanskritLexicography/blob/h5263-drain/RussianTranslation/pwg_ru/h5263/evidence_yat.json), plus the new cache
+   entries. MSI injects them offline (`inject`), with 0 NKRYa calls.
+   - **The A/B cards carry an MG-voted gold rendering** (the [H5069 chat vote](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h5069/H5069_CHAT_VOTE_DECISIONS_C01-C09_22-09-2026.md)):
+     - `han~~h0_57_sam` is C07, the clouds collocation.
+     - `yat~~h0_01_sec_1` is C02: the store has «союзить»; the gold is «связывать союзом, объединять».
+   - The yat block already shows the signal the A/B is meant to test:
+     - `союзить + союз | ipm n/a | … | pair MAIN n/a`: the store's word has **no reading at all** in the main corpus.
+     - `связывать + союз` has 40 main-corpus pairs and 15 in the 19th-century subcorpus.
+   - **Disclosed leak:** the gold verb is among the yat candidates, as the audit proposal would have put it there in production too.
+2. **Route check: PASS, at 0 extra cost.** A live c1 transcript on MSI (a drain session, 15:04Z)
+   carries `"model":"claude-opus-5"` and a native Anthropic `msg_011C…` id, and c1's
+   `.credentials.json` was refreshed at 14:48Z. That clears the 06:20Z 403 recorded earlier the same day.
+3. **Inputs and manifests built on MSI, 0 calls.**
+   - `_pilot_gen_merged.py --root-split han yat` wrote into a scratch `PWG_INPUT_DIR`. The splitter now keeps
+     the clouds sense in one sub-card, `han~~h0_57_sam`; the store record is the older `…_sam_0` split.
+   - `gen_opt_harness2.py … --no-tm --profile-slot=c1` and `perf_preflight.py` ran per root:
+     - yat: one card, one batch, so 1 call per arm.
+     - han: presplit (136 `<ls>` > the floor of 40), so **3 fragment calls per arm**.
+4. **Finding: the prompt hook missed every presplit card, now fixed.**
+   - A presplit card is prompted through `headless_worker.fragment_prompt_blocks()`, which never called `card_block()`.
+     So the NKRYa block would have silently vanished from `han~~h0_57_sam`, the very clouds card that motivated the handoff.
+   - `fragment_prompt_blocks` now appends `nkrya_block(inp)`. It is still `''` for cards without evidence, so every existing
+     fragment prompt stays byte-identical.
+   - The selftest gained the fragment check (12 checks, PASS), and `headless_worker_selftest.py` still PASSes.
+5. **`/pwg-live-gate` on c1: health PASS, canary NO-GO.**
+   - Health: `h963_c4_gate0_probe.py --account c1`, warm-up 6 356 ms, measured 5 237 ms, against a ceiling of 240 000 ms: **PASS**.
+     The probe warned that MSI had 777 MB of physical memory free.
+   - Canary: `dq_canary_puregloss` through `headless_worker` → `classification: refusal`
+     (`StructuredRefusal`). The model declined the structured output because «plan mode is still
+     active in this session». `canary_gate.py judge` → **CANARY NO-GO** (`null card`).
+     This is the FINDINGS §498 shape from 19-08: the worker always passes `--permission-mode plan`
+     (`headless_worker.py` `_spawn` argv), and the profile is not at fault (`defaultMode: auto`).
+     Receipt: `C:\Users\user\.pwg_h5263\canary\canary_receipt.json` on MSI.
+   - A failed gate stops the run: no retry inside a sitting. **The A/B's own calls were not spent.**
+
+**Spend:** 3 c1 calls, all gate legs (health warm-up + measured, 1 canary at $0.2427).
+**0 of the 5 pre-authorized A/B calls were used.** NKRYa: 14 live calls.
+
+**Keep / drop: still not earned.** Nothing new on the benefit side. On the cost side, the yat block is
++775 bytes per card, well under C07's +1533.
+
 ## What unblocks the A/B
 
-1. **MG generates the non-expiring NKRYa key** at [ruscorpora.ru for-devs](https://ruscorpora.ru/accounts/profile/for-devs)
-   and it is stored on this box (`python -c "import keyring,getpass; keyring.set_password('ruscorpora-api','token',getpass.getpass())"` — it never enters chat or git).
-   *If done:* the evidence block can be built for any card, and the A/B becomes a ~1 h run.
-   *If not:* H5263's A/B half stays parked; the build half above is already live and inert.
-2. **A fresh `/pwg-live-gate` GO on c1**, then the msg_ id route check, then the 5 calls.
+1. **The next legal c1 gate attempt is at or after ~21:20Z on 24-09** (the ration: ≥ 6 h after the 15:20Z
+   probe, ≤ 2 attempts per UTC day). Otherwise it is any time from 25-09.
+   - The recipe is ready on MSI: inputs under `C:\Users\user\.pwg_h5263\`, and the canary script in
+     [`tools/h5263_msi_canary.ps1`](https://github.com/gasyoun/SanskritLexicography/blob/h5263-drain/RussianTranslation/tools/h5263_msi_canary.ps1).
+   - On a GO, the run is:
+     1. yat arm A (as built) and arm B (`h5263_ab_evidence.py inject`): 2 calls.
+     2. If calls remain, han arm A and arm B: 6 calls. That is above the 5-call cap, so it needs a new MG yes.
+2. **If the plan-mode refusal repeats**, it is a lane defect, not an H5263 one. It needs a decision on the
+   `--permission-mode plan` argv. H3157's safe-mode arm (`SAFE_MODE_FLAG`) is the documented
+   mitigation, and turning it on is an operator choice, not something an agent may set itself.
 
 _Гасунс_
