@@ -38,7 +38,11 @@ sys.stderr.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parent.parent
 CLAIMS_PATH = ROOT / "scripts" / "prose_number_drift_claims.json"
 SCAN_EXTS = {".md", ".txt", ".tex"}
-SKIP_DIR_NAMES = {".git", "node_modules", "dist", "build", "__pycache__", ".venv", "vendor"}
+SKIP_DIR_NAMES = {".git", "node_modules", "dist", "build", "__pycache__", ".venv", "vendor", ".claude"}
+# .claude/ -- a repo directory may hold gitignored embedded worktree checkouts
+# (.claude/worktrees/<name>/) from other Claude sessions; those are full stale
+# filesystem copies of the repo's own tracked files and would otherwise surface
+# as phantom "would-fix"/"logged-only" hits that no commit can ever clear.
 
 
 def load_claims() -> list[dict]:
