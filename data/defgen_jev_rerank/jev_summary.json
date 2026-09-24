@@ -1,0 +1,95 @@
+{
+  "n_items": 100,
+  "n_calls": 500,
+  "per_arm": {
+    "A0_random_floor": {
+      "n": 100,
+      "jev_mean_x5": 0.208,
+      "baseline_mean": 0.16,
+      "jev_spearman_vs_chrf": -0.146,
+      "baseline_spearman_vs_chrf_full500": 0.117
+    },
+    "A1_chat_ctx": {
+      "n": 100,
+      "jev_mean_x5": 3.244,
+      "baseline_mean": 4.18,
+      "jev_spearman_vs_chrf": 0.433,
+      "baseline_spearman_vs_chrf_full500": 0.391
+    },
+    "A2_chat_noctx": {
+      "n": 100,
+      "jev_mean_x5": 3.153,
+      "baseline_mean": 3.99,
+      "jev_spearman_vs_chrf": 0.391,
+      "baseline_spearman_vs_chrf_full500": 0.466
+    },
+    "A3_reasoner_ctx": {
+      "n": 100,
+      "jev_mean_x5": 3.325,
+      "baseline_mean": 3.89,
+      "jev_spearman_vs_chrf": 0.402,
+      "baseline_spearman_vs_chrf_full500": 0.423
+    },
+    "F1_fable_ctx": {
+      "n": 100,
+      "jev_mean_x5": 3.646,
+      "baseline_mean": 4.47,
+      "jev_spearman_vs_chrf": 0.513,
+      "baseline_spearman_vs_chrf_full500": 0.415
+    }
+  },
+  "jev_arm_ranking": [
+    "F1_fable_ctx",
+    "A3_reasoner_ctx",
+    "A1_chat_ctx",
+    "A2_chat_noctx",
+    "A0_random_floor"
+  ],
+  "baseline_arm_ranking": [
+    "F1_fable_ctx",
+    "A1_chat_ctx",
+    "A2_chat_noctx",
+    "A3_reasoner_ctx",
+    "A0_random_floor"
+  ],
+  "arm_ranking_match": false,
+  "per_item_spearman_vs_baseline": {
+    "mean": 0.7165,
+    "n": 97
+  },
+  "top1_agreement": {
+    "tie_aware_rate": 0.85,
+    "tie_aware_hits": 85,
+    "n": 100,
+    "strict_rate_where_baseline_singleton": 0.6667,
+    "n_baseline_singleton": 24,
+    "n_baseline_singleton_hit": 16,
+    "note": "baseline adequacies are integers with frequent ties at 5; tie_aware counts Jev's argmax inside the baseline max-set; strict is conditioned on items where baseline has a unique winner"
+  },
+  "floor_separation": {
+    "jev": 3.036,
+    "baseline": 4.02
+  },
+  "cost": {
+    "jev_input_tokens_total": 235545,
+    "jev_usd_total": 0.009893,
+    "jev_usd_per_call": 2e-05,
+    "jev_usd_per_1000_candidates": 0.0198,
+    "note": "output free; $0.042/1M input (H5275 live-probed price); 1 call per (headword, arm) candidate — same billable shape as the baseline judge"
+  },
+  "model": "jev-1.13.0",
+  "primitive": "noul (single question per call, H5277 form)",
+  "generated": "2026-09-24",
+  "canary": {
+    "n_calls": 25,
+    "mean_abs_diff": 0.0052,
+    "exact_rate": 0.56
+  },
+  "score_check_control": {
+    "A0_random_floor": 0.0,
+    "A1_chat_ctx": 2.7,
+    "A2_chat_noctx": 2.453,
+    "A3_reasoner_ctx": 3.007,
+    "F1_fable_ctx": 3.253
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "subset_n": 100,
+  "seed_family": "h5279-subset:730",
+  "from": "kosha data/eval/defgen frozen_sample.tsv (500, seed 730)",
+  "quota_per_cell": {
+    "high/mono": 12,
+    "high/poly2_4": 11,
+    "high/poly5p": 11,
+    "low/mono": 11,
+    "low/poly2_4": 11,
+    "low/poly5p": 11,
+    "mid/mono": 11,
+    "mid/poly2_4": 11,
+    "mid/poly5p": 11
+  },
+  "available_per_cell": {
+    "high/mono": 56,
+    "high/poly2_4": 56,
+    "high/poly5p": 56,
+    "low/mono": 52,
+    "low/poly2_4": 56,
+    "low/poly5p": 56,
+    "mid/mono": 56,
+    "mid/poly2_4": 56,
+    "mid/poly5p": 56
+  },
+  "generated": "2026-09-24"
+}
