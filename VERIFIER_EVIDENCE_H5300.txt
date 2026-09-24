@@ -1,0 +1,109 @@
+H5300 — ATLAS fair-pubs roadmap truth pass — RAW VERIFIER EVIDENCE PACK
+=======================================================================
+Pass: 24-09-2026 · Executor: OxAlpha (opencode/z-ai/glm-5.3-flash)
+Artifact under review: ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md (branch h5300-drain, PR #2318)
+Verifier: independent cross-family session (DeepSeek), read-only — this file is the raw probe
+record it can reproduce, so no claim below is taken on the author's word.
+
+HOW TO REPRODUCE
+----------------
+Every probe is a single `gh api` / `curl` call; run it verbatim and diff the output against
+the "RESULT" line. Line numbers refer to ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md as of
+the branch tip (PR #2318, h5300-drain, incl. the 24-09-2026 verifier fixes + SKD/count
+corrections). A claim with no live artifact link in the roadmap must literally read
+"not found"; a claim with one must resolve (HTTP 200).
+
+--------------------------------------------------------------------------------
+P1 · G2 — TEI Lex-0 pilot EXISTS (the 02-09 drift this pass fixes)
+CLAIM (G2 table + Q4.3): `*.lex0.xml` files exist in csl-standards/data/pilot/tei-lex0/,
+                         INCLUDING an SKD (indigenous) sample; total is now 298.
+COMMAND: gh api 'repos/sanskrit-lexicon/csl-standards/git/trees/main?recursive=1' \
+           --jq '{total: [.tree[].path|select(startswith("data/pilot/tei-lex0/"))]|length, \
+                  skd:   [.tree[].path|select(startswith("data/pilot/tei-lex0/")) \
+                          |select(test("skd";"i"))]|length}'
+RESULT:  {"skd":47,"total":298}
+HISTORY: the pass window first probed 258 / 0 SKD; a parallel fix commit's raw pack
+         (1d83d7b1, grep -ic skd -> 6 on a local clone) flagged SKD hits, and the live
+         re-probe above found origin had moved MID-PASS to 298 total / 47 SKD files.
+STATUS:  CONFIRMED. Severity High -> Medium (residual: no committed schema-validation
+         run -> "not found"; indigenous coverage is a 47-file SKD pilot, widening owed).
+         The roadmap's earlier "MW/PWG/PWK only: no SKD sample" wording was FALSE as of
+         24-09-2026 and is corrected in this pass (G2 table + Q4.3).
+
+P2 · G3 — PROV-O / evidence-label crosswalk exists IN DRAFT
+CLAIM (G3 table): csl-standards/docs/EVIDENCE_LABEL_CROSSWALK.md exists, names G3, stays draft
+COMMAND: gh api repos/sanskrit-lexicon/csl-standards/contents/docs/EVIDENCE_LABEL_CROSSWALK.md --jq '.name,.size'
+RESULT:  EVIDENCE_LABEL_CROSSWALK.md / 14480
+STATUS:  CONFIRMED. Medium -> Low (exporter still open).
+
+P3 · FAIR sprint — CITATION.cff / .zenodo.json presence matrix (4 repos, re-probed 24-09-2026)
+COMMAND: for r in csl-atlas csl-standards VisualDCS csl-observatory; do \
+           c=$(gh api repos/sanskrit-lexicon/$r/contents/CITATION.cff --jq .name); \
+           z=$(gh api repos/sanskrit-lexicon/$r/contents/.zenodo.json --jq .name); echo "$r $c $z"; done
+RESULT (verified 24-09-2026):
+  csl-atlas        CITATION.cff  .zenodo.json
+  csl-standards    CITATION.cff  (404 — never committed)
+  csl-observatory  CITATION.cff  .zenodo.json
+  VisualDCS        lives at gasyoun/VisualDCS (NOT sanskrit-lexicon/VisualDCS) -> CITATION.cff present, .zenodo.json 404
+  gasyoun/VisualDCS CITATION.cff = 1,649 B, default branch main
+STATUS:  CONFIRMED, and one link defect FIXED in this pass — the FAIR-sprint row previously
+         linked VisualDCS to https://github.com/sanskrit-lexicon/VisualDCS/blob/main/CITATION.cff
+         which returns HTTP 404 (web + API). Repointed to
+         https://github.com/gasyoun/VisualDCS/blob/main/CITATION.cff (HTTP 200):
+COMMAND: curl -s -o /dev/null -w '%{http_code}\n' -L https://github.com/sanskrit-lexicon/VisualDCS/blob/main/CITATION.cff
+RESULT:  404
+COMMAND: curl -s -o /dev/null -w '%{http_code}\n' -L https://github.com/gasyoun/VisualDCS/blob/main/CITATION.cff
+RESULT:  200
+
+P4 · Q4.2 — learner's reading layer v1 EXISTS on csl-atlas origin/main
+CLAIM (Q4.2): src/tools/learner-reading-layer.md + scripts/build-learner-index.mjs + src/data/learner/learner-index.json
+COMMAND: gh api repos/sanskrit-lexicon/csl-atlas/contents/src/tools/learner-reading-layer.md --jq '.name'
+RESULT:  learner-reading-layer.md
+STATUS:  CONFIRMED (site live; page not yet in the deployed build -> "not found" for the deployed page).
+
+P5 · Paper statuses re-probed against Uprava ARTICLES.md (24-09-2026)
+COMMAND: grep -n '^| \*\*A16\*\*\|^| \*\*A12\*\*\|^| \*\*A02\*\*\|^| \*\*A08\*\*\|^| \*\*A31\*\*\|^| \*\*A32\*\*' Uprava/ARTICLES.md
+RESULT:  A16 = 5/5, IJL, SUBMIT-15, awaiting MG read-and-sign (SIGNOFF_A16_author_pass.md)
+         A12 = 4/5, LREC-COLING, SUBMIT-15, κ 0.906 cross-model (H1385, 21-07-2026), DOI 10.5281/zenodo.21346705
+         A02 = 4/5, Lexicographica, SUBMIT-15
+         A08 = 4/5, IJL, SUBMIT-15
+         A31 = 3/5, Lexikos, origin-axis κ pending
+         A32 = 1/5, idea only
+STATUS:  CONFIRMED — matches the roadmap's Q3/Q4/Q1/Q2 paper status lines.
+
+P6 · Open handoff cross-references resolve
+COMMAND: ls Uprava/handoffs/ | grep -E 'H5315|H5338'
+RESULT:  H5315-OxAlpha_csl-atlas_h5-divarata-divirata-maker-proposal-draft_23.09.26.md (+ .claim)
+         H5338-OxAlpha_csl-atlas_atlas-data-build-maintainer-runbook_23.09.26.md (+ .claim)
+STATUS:  CONFIRMED — both minted 23-09-2026 and still open, as the roadmap Q3/Q2 lines state.
+
+P7 · The verifier round-1 FAIL and its fix (this pack's reason to exist)
+DEFECT (verifier round 1, DeepSeek): Q2 2027 item 4 ("Book writing begins") was the one open
+Part IV line whose status carried NEITHER a live artifact link NOR the words "not found"
+(it read "not started"). The stop condition requires one of the two for every open line.
+FIX (24-09-2026): status now reads "not found — no new-chapter drafts (1, 2, 7, 10) exist;
+correctly gated on the contract; the proposal draft exists: <link>" — BOTH the words and a
+live link (the link grafted from the parallel fix commit 1d83d7b1 during dual-run
+reconciliation; it resolves on master):
+COMMAND: curl -s -o /dev/null -w '%{http_code}\n' -L https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/PROPOSAL_SYNOPSIS_TEN_CHAPTER_PLAN_LSM_BRILL_23-09-2026.md
+RESULT:  200 (file landed via #2317, in master history)
+
+P8 · Dual-run reconciliation ledger (two executor sessions fixed the same FAIL)
+  - e66c9eaf (origin): Q2.4 "not found" wording + VisualDCS CITATION.cff link repoint +
+    this pack (reproducible form). ADOPTED as base.
+  - 1d83d7b1 (local, unpushed): stronger Q2.4 wording (link + "not found") + its own raw
+    pack whose SKD grep surfaced the P1 discrepancy above. GRAFTED: Q2.4 link; its SKD
+    lead resolved by the live probe (P1). Its duplicate changelog entry was DROPPED —
+    the canonical 022600 entry is amended instead. Nothing silently picked.
+
+--------------------------------------------------------------------------------
+COVERAGE STATEMENT
+-----------------
+Open Part IV lines re-probed and dated this pass (each with link or "not found"):
+  Q3 2026  : FAIR sprint · Gold-standard sprint (DONE) · review pool v1 · Submit P1 · H5 maker proposal
+  Q4 2026  : P2 · learner layer v1 · TEI pilot · book proposal draft
+  Q1 2027  : megastructure study · P3 · P4 · kośa chapters · book proposal submitted · review pool r2
+  Q2 2027  : learner layer v2 + study · P5 · P6 · book writing (FIXED) · co-maintainer
+No checkbox was ticked without a linked artifact. Nothing outside Part IV statuses was
+edited except: the Q2.4 word+link fix, the VisualDCS link repoint, the SKD/count
+corrections (G2 + Q4.3, live re-probe 24-09-2026), and this evidence pack + changelog_queue.
