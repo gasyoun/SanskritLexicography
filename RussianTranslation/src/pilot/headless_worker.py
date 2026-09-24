@@ -711,9 +711,13 @@ def fragment_prompt_blocks(manifest, key, group, indices):
     prompt = manifest['prompt']
     stable = prompt['preamble'] + prompt['translation']
     card_grammar = (prompt.get('grammars') or {}).get(key, '')
-    portrait = (manifest.get('inputs', {}).get(key) or {}).get('portrait') or ''
+    inp = manifest.get('inputs', {}).get(key) or {}
+    portrait = inp.get('portrait') or ''
+    # H5263: a presplit card is translated through THIS builder, never card_block, so the
+    # NKRYa block must be appended here too or every large card silently loses it. '' when
+    # the card carries no `nkrya` input, so existing fragment prompts stay byte-identical.
     volatile = (prompt.get('grammar', '') + card_grammar + ''.join(blocks)
-                + '\n--- portrait (evidence) ---\n' + portrait)
+                + '\n--- portrait (evidence) ---\n' + portrait + nkrya_block(inp))
     return stable, volatile
 
 
