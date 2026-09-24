@@ -1,0 +1,1099 @@
+{
+ "благополучствовать": [
+  {
+   "de_gloss": [
+    "er verhält sich ganz ruhig",
+    "gehabe dich wohl",
+    "wer befindet sich wohl?",
+    "in diesen Verhältnissen befindet sich"
+   ],
+   "iast": "ās",
+   "key1": "As",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "будь здоров, благополучствуй"
+   ],
+   "sense_tag": "4c",
+   "subcard": "_as~~h1_00_pwg01"
+  }
+ ],
+ "блюдомый": [
+  {
+   "de_gloss": [
+    "der fleissig gehütet —, beobachtet wird",
+    "fleissig hütend"
+   ],
+   "iast": "rakṣ",
+   "key1": "rakz",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "тщательно охраняемый —, неустанно блюдомый"
+   ],
+   "sense_tag": "intens.",
+   "subcard": "rakz~~h0_03_sec_3"
+  }
+ ],
+ "бодхисаттво": [
+  {
+   "de_gloss": [
+    "hervortreten, zum Vorschein kommen, sich zeigen",
+    "perfect in the virtues of pāramitā",
+    "tous vraiment parvenus à l'état de Bodhisattvas arrivés à l'autre rive."
+   ],
+   "iast": "jan (nis)",
+   "key1": "jan",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "воистину достигшие состояния бодхисаттв, переправившихся на другой берег."
+   ],
+   "sense_tag": "1",
+   "subcard": "jan~~h0_16_nis"
+  }
+ ],
+ "брахманка": [
+  {
+   "de_gloss": [
+    "nichtsnutzig, verwünscht",
+    "eine nichtsnutzige Brahmanin"
+   ],
+   "iast": "han",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "никчемная брахманка"
+   ],
+   "sense_tag": "14n",
+   "subcard": "han~~h0_zz_pw00"
+  }
+ ],
+ "вергать": [
+  {
+   "de_gloss": [
+    "niederfallen machen, herunterschiessen",
+    "abschiessen",
+    "stürzen in"
+   ],
+   "iast": "pari+pat",
+   "key1": "pat",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "вергать в (что-либо)"
+   ],
+   "sense_tag": "Caus.",
+   "subcard": "pat~~h0_34_pari"
+  }
+ ],
+ "взборозденный": [
+  {
+   "de_gloss": [
+    "aufgerissen, aufgewühlt"
+   ],
+   "iast": "han",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "взрытый, взборозденный"
+   ],
+   "sense_tag": "mit-T46-12a",
+   "subcard": "han~~h0_zz_pw03"
+  }
+ ],
+ "возжигание": [
+  {
+   "de_gloss": [
+    "anerkennen, gut aufnehmen; gutheissen, billigen",
+    "dessen Feueranlegung nicht genehmigt",
+    "ohne Erfolg geblieben ist",
+    "wenn die Schuld anerkannt worden ist",
+    "angenehm, erwünscht"
+   ],
+   "iast": "pratijñā",
+   "key1": "jYA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "чье возжигание огня не было одобрено"
+   ],
+   "sense_tag": "1",
+   "subcard": "j_y_a~~h0_27_prati"
+  }
+ ],
+ "гелиакически": [
+  {
+   "de_gloss": [
+    "für die Nacht seine Wohnung verlassen) verreisen, sich entfernen",
+    "von Hause abwesend, in der Fremde weilend, verreist",
+    "wenn die Sonne vom Himmel verschwindet, nicht mehr scheint",
+    "untergegangen (heliakisch)",
+    "verschwinden, aufhören",
+    "verschwunden, verwischt"
+   ],
+   "iast": "pravas",
+   "key1": "vas",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "зашедшее (гелиакически)"
+   ],
+   "sense_tag": "1",
+   "subcard": "vas~~h4_23_pra"
+  }
+ ],
+ "гелиактически": [
+  {
+   "de_gloss": [
+    "verschwunden, verwischt; heliakisch untergegangen"
+   ],
+   "iast": "vas",
+   "key1": "vas",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "исчезнувший, стершийся; закатившийся гелиактически"
+   ],
+   "sense_tag": "5b",
+   "subcard": "vas~~h0_zz_pw02"
+  }
+ ],
+ "грызать": [
+  {
+   "de_gloss": [
+    "abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren",
+    "ein Loch in die Mauer schlagen",
+    "zerbrechen, -reissen",
+    "abgeschnitten",
+    "aufgerissen, -schnitten; eingeschnitten,",
+    "mit Einschnürungen versehen"
+   ],
+   "iast": "chid",
+   "key1": "Cid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать"
+   ],
+   "sense_tag": "1",
+   "subcard": "_cid~~h0_zz_pw"
+  }
+ ],
+ "даятель": [
+  {
+   "de_gloss": [
+    "Geber",
+    "gebend, verleihend"
+   ],
+   "iast": "dā",
+   "key1": "dA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "даятель"
+   ],
+   "sense_tag": "1",
+   "subcard": "d_a~~h1_00_pwg00"
+  }
+ ],
+ "десятикратное": [
+  {
+   "de_gloss": [
+    "an einem Orte bleiben, Halt machen, übernachten; verweilen, sich aufhalten, wohnen; stehen bleiben bei Etwas",
+    "wo übernachtet ihr?",
+    "bleibe keine Nacht länger in meinem Besitz",
+    "sich nicht zu lange aufhalten",
+    "inne halten",
+    "wo bist du so lange gewesen?"
+   ],
+   "iast": "vas",
+   "key1": "vas",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "после десятикратного ночлега"
+   ],
+   "sense_tag": "1)",
+   "subcard": "vas~~h4_00_pwg00"
+  }
+ ],
+ "достигшийся": [
+  {
+   "de_gloss": [
+    "zu Theil geworden, erreicht, erlangt",
+    "Lebensunterhalt"
+   ],
+   "iast": "sidh",
+   "key1": "siD",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "достигшийся, обретенный, приобретенный"
+   ],
+   "sense_tag": "PPP-siddha-2",
+   "subcard": "si_d~~h1_00_pwg03"
+  }
+ ],
+ "закалать": [
+  {
+   "de_gloss": [
+    "binden, anbinden, anheften, fesseln. gefangen nehmen",
+    "umstricken",
+    "einsperren",
+    "strafen, züchtigen",
+    "ein Opferthier binden",
+    "darbringen, schlachten"
+   ],
+   "iast": "bandh",
+   "key1": "banD",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "приносить в дар, закалать"
+   ],
+   "sense_tag": "1",
+   "subcard": "ban_d~~h0_00_pwg00"
+  }
+ ],
+ "избегнутый": [
+  {
+   "de_gloss": [
+    "zurückgeschlagen, abgewehrt",
+    "zurückgewiesen, abgewiesen",
+    "nicht fern gehalten, — vermieden",
+    "gehemmt, aufgehalten",
+    "unterblieben",
+    "geblendet"
+   ],
+   "iast": "pratihan",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "не удаленный, не избегнутый"
+   ],
+   "sense_tag": "8b",
+   "subcard": "han~~h0_50_prati_0"
+  },
+  {
+   "de_gloss": [
+    "vermeiden, entgehen;",
+    "entgangen,"
+   ],
+   "iast": "muc",
+   "key1": "muc",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "избегнутый,"
+   ],
+   "sense_tag": "preverb_ava",
+   "subcard": "muc~~h0_zz_pw00"
+  }
+ ],
+ "колебаяться": [
+  {
+   "de_gloss": [
+    "in Zweifel",
+    "ziehen, Bedenken tragen, mit der Entscheidung zögern",
+    "keinem Bedenken unterliegend",
+    "was bedenkt man sich lange?",
+    "bedenke dich nicht lange",
+    "ohne sich zu bedenken"
+   ],
+   "iast": "vi+car",
+   "key1": "car",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "не колебайся долго"
+   ],
+   "sense_tag": "caus-4",
+   "subcard": "car~~h0_45_vi_1"
+  }
+ ],
+ "кусывать": [
+  {
+   "de_gloss": [
+    "abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren",
+    "ein Loch in die Mauer schlagen",
+    "zerbrechen, -reissen",
+    "abgeschnitten",
+    "aufgerissen, -schnitten; eingeschnitten,",
+    "mit Einschnürungen versehen"
+   ],
+   "iast": "chid",
+   "key1": "Cid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать"
+   ],
+   "sense_tag": "1",
+   "subcard": "_cid~~h0_zz_pw"
+  }
+ ],
+ "ламывать": [
+  {
+   "de_gloss": [
+    "abschneidend, zerschneidend, -brechend, -reissend, spaltend, durchbohrend"
+   ],
+   "iast": "chid",
+   "key1": "Cid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "срезающий, разрезающий, -ламывающий, -рывающий, раскалывающий, пробуравливающий"
+   ],
+   "sense_tag": "1a",
+   "subcard": "_cid~~h0_zz_pw"
+  }
+ ],
+ "неворовство": [
+  {
+   "de_gloss": [
+    "das Nichtstehlen"
+   ],
+   "iast": "asteya",
+   "key1": "asteya",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "неворовство"
+   ],
+   "sense_tag": "1",
+   "subcard": "asteya~~h0_zz_pw"
+  }
+ ],
+ "негордый": [
+  {
+   "de_gloss": [
+    "hochfahrend, stolz, übermüthig",
+    "pochend auf",
+    "nicht stolz, bescheiden, anspruchlos",
+    "hochfahrendes Wesen (Verwegenheit"
+   ],
+   "iast": "udhan",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "негордый, скромный, непритязательный"
+   ],
+   "sense_tag": "4e",
+   "subcard": "han~~h0_25_ud"
+  }
+ ],
+ "незаградить": [
+  {
+   "de_gloss": [
+    "verlassen",
+    "verlassen, frei gelassen",
+    "frei gelegt",
+    "diejenige Weltgegend, welche [Page5-086-c] die Sonne so eben verlassen hat"
+   ],
+   "iast": "muc",
+   "key1": "muc",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "открытый, незагражденный"
+   ],
+   "sense_tag": "5",
+   "subcard": "muc~~h0_zz_pw00"
+  }
+ ],
+ "несомый": [
+  {
+   "de_gloss": [
+    "tragen",
+    "getragen werden",
+    "sich treiben lassend, getrieben werdend",
+    "getrieben von"
+   ],
+   "iast": "vah",
+   "key1": "vah",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "быть несомым"
+   ],
+   "sense_tag": "4",
+   "subcard": "vah~~h0_01_sec_1"
+  },
+  {
+   "de_gloss": [
+    "zusammenführen; führen, hinüberführen",
+    "ziehen",
+    "mit sich fortziehen, treiben",
+    "getragen werden von, reiten auf"
+   ],
+   "iast": "vah",
+   "key1": "vah",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "быть несомым, ехать верхом на"
+   ],
+   "sense_tag": "1) zusammenführen; führen, hinüberführen",
+   "subcard": "vah~~h0_38_sam"
+  },
+  {
+   "de_gloss": [
+    "getragen, — auf"
+   ],
+   "iast": "vah",
+   "key1": "vah",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "несомый, — на"
+   ],
+   "sense_tag": "3c",
+   "subcard": "vah~~h0_zz_pw00"
+  }
+ ],
+ "обустроиться": [
+  {
+   "de_gloss": [
+    "der sich häuslich niedergelassen hat, verheirathet"
+   ],
+   "iast": "viś",
+   "key1": "viS",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "обустроившийся домом, женатый"
+   ],
+   "sense_tag": "10e) der sich häuslich niedergelassen hat, verheirathet",
+   "subcard": "vi_s~~h0_26_ni_0"
+  }
+ ],
+ "объединенно": [
+  {
+   "de_gloss": [
+    "sich zusammen thuend, in Gemeinschaft, vereint, zusammen, im Verein mit"
+   ],
+   "iast": "han",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "действуя сообща, совместно, объединенно, вместе, в союзе с"
+   ],
+   "sense_tag": "mit-T71-6",
+   "subcard": "han~~h0_zz_pw03"
+  },
+  {
+   "de_gloss": [
+    "sich zusammenthuend, in Gemeinschaft, vereint"
+   ],
+   "iast": "han",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "действуя сообща, совместно, объединенно"
+   ],
+   "sense_tag": "mit-T97-1",
+   "subcard": "han~~h0_zz_pw03"
+  }
+ ],
+ "окладывать": [
+  {
+   "de_gloss": [
+    "herumlegen, herumsetzen, úmlegen",
+    "wir legen dich als eine Wehr (Wall) um uns her",
+    "in dichter Menge herumgestellt, — herumstehend"
+   ],
+   "iast": "paridhā",
+   "key1": "DA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "класть вокруг, расставлять вокруг, окладывать"
+   ],
+   "sense_tag": "1",
+   "subcard": "_d_a~~h0_62_pari"
+  }
+ ],
+ "оппозиционировать": [
+  {
+   "de_gloss": [
+    "sich gegen Jmd",
+    "setzen",
+    "nicht von seiner Seite weichen um ihn zur Nachgiebigkeit zu zwingen",
+    "derjenige, der einem Andern Etwas abtrotzen will und derjenige, welcher die Veranlassung dazu giebt",
+    "Jmd",
+    "entgegentreten, Opposition machen."
+   ],
+   "iast": "viś",
+   "key1": "viS",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "оппозиционировать."
+   ],
+   "sense_tag": "sich gegen Jmd setzen … nicht von seiner Seite weichen … Jmd entgegentreten, Opposition machen",
+   "subcard": "vi_s~~h0_23_pratyupa"
+  }
+ ],
+ "отвратиться": [
+  {
+   "de_gloss": [
+    "abgewehrt sei das Uebel,",
+    "behüte Gott! bei Leibe nicht!",
+    "so wahr mir Gott helfen möge!"
+   ],
+   "iast": "śam",
+   "key1": "Sam",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "да отвратится зло"
+   ],
+   "sense_tag": "3i",
+   "subcard": "_sam~~h0_zz_pw00"
+  }
+ ],
+ "отпугать": [
+  {
+   "de_gloss": [
+    "weggeschlagen, abgetrieben, verscheucht, vertrieben"
+   ],
+   "iast": "han",
+   "key1": "han",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "отогнанный, изгнанный, отпуганный, прогнанный"
+   ],
+   "sense_tag": "prefix-apa-4b",
+   "subcard": "han~~h0_zz_pw00"
+  }
+ ],
+ "побужденный": [
+  {
+   "de_gloss": [
+    "zur Eile getrieben, gesandt; eilig"
+   ],
+   "iast": "iṣ",
+   "key1": "iz",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "побужденный к спеху, посланный; поспешный"
+   ],
+   "sense_tag": "PPP-2",
+   "subcard": "iz~~h1_00_pwg00"
+  },
+  {
+   "de_gloss": [
+    "bewogen, aufgemuntert, aufgefordert"
+   ],
+   "iast": "iṣ",
+   "key1": "iz",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "побужденный, воодушевленный, призванный"
+   ],
+   "sense_tag": "PPP-3",
+   "subcard": "iz~~h1_00_pwg00"
+  },
+  {
+   "de_gloss": [
+    "veranlasst, angetrieben"
+   ],
+   "iast": "su",
+   "key1": "su",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "побужденный, подстрекнутый"
+   ],
+   "sense_tag": "main",
+   "subcard": "su~~h0_zz_pw"
+  }
+ ],
+ "подразумеваемость": [
+  {
+   "de_gloss": [
+    "gemeint sein",
+    "was man im Sinne hat, gemeint, beabsichtigt",
+    "nicht ausdrücklich gemeint",
+    "was nicht zu urgiren ist, unwesentlich, worauf es nicht weiter ankommt",
+    "das Gemeintsein",
+    "weil das"
+   ],
+   "iast": "vac",
+   "key1": "vac",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "подразумеваемость"
+   ],
+   "sense_tag": "desid-2",
+   "subcard": "vac~~h0_02_sec_2"
+  }
+ ],
+ "полузаглохнуть": [
+  {
+   "de_gloss": [
+    "hineingegangen, eingedrungen",
+    "steckend in",
+    "mit halb stockender Stimme",
+    "fest sitzend",
+    "constant",
+    "sitzend auf"
+   ],
+   "iast": "āviś",
+   "key1": "viS",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "с полузаглохшим голосом"
+   ],
+   "sense_tag": "5",
+   "subcard": "vi_s~~h0_07__a_1"
+  }
+ ],
+ "предводительствовать": [
+  {
+   "de_gloss": [
+    "vorwärts geleiten, führen, anführen",
+    "fördern"
+   ],
+   "iast": "nī",
+   "key1": "nI",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "вести вперед, руководить, предводительствовать"
+   ],
+   "sense_tag": "1",
+   "subcard": "n_i~~h0_zz_pw02"
+  }
+ ],
+ "прелюбодействовать": [
+  {
+   "de_gloss": [
+    "beziehen",
+    "zum Aufenthaltsort erwählen, bewohnen",
+    "wurden keine Haushalter, gründeten kein Haus",
+    "das Ehebett des Lehrers beziehen",
+    "mit der Frau des Lehrers Ehebruch treiben"
+   ],
+   "iast": "ā+vas",
+   "key1": "vas",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "прелюбодействовать с женой учителя"
+   ],
+   "sense_tag": "2",
+   "subcard": "vas~~h4_08__a"
+  }
+ ],
+ "преставляться": [
+  {
+   "de_gloss": [
+    "hingehen, abscheiden"
+   ],
+   "iast": "gam",
+   "key1": "gam",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "уходить, преставляться"
+   ],
+   "sense_tag": "ati-nir-2",
+   "subcard": "gam~~h0_zz_pw02"
+  },
+  {
+   "de_gloss": [
+    "dahingehen, abscheiden",
+    "gestorben"
+   ],
+   "iast": "gam",
+   "key1": "gam",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "уходить, преставляться"
+   ],
+   "sense_tag": "pari-4",
+   "subcard": "gam~~h0_zz_pw02"
+  }
+ ],
+ "преходящесть": [
+  {
+   "de_gloss": [
+    "in etwas Anderem eingeschlossen, einbegriffen",
+    "fällt unter den Begriff der Vergänglichkeit",
+    "erfüllt"
+   ],
+   "iast": "vyāp",
+   "key1": "Ap",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "подпадает под понятие преходящести"
+   ],
+   "sense_tag": "1",
+   "subcard": "_ap~~h2_10_vi"
+  }
+ ],
+ "приформовывать": [
+  {
+   "de_gloss": [
+    "anbilden"
+   ],
+   "iast": "nimā",
+   "key1": "mA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "прилаживать, приформовывать"
+   ],
+   "sense_tag": "2)",
+   "subcard": "m_a~~h2_10_ni"
+  }
+ ],
+ "прокоротать": [
+  {
+   "de_gloss": [
+    "zugebracht —, verlebt habend;"
+   ],
+   "iast": "vas",
+   "key1": "vas",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "проведший —, прокоротавший (время);"
+   ],
+   "sense_tag": "5b",
+   "subcard": "vas~~h0_zz_pw02"
+  }
+ ],
+ "пронзатель": [
+  {
+   "de_gloss": [
+    "Spalter, Verwunder",
+    "du durchbohrtest die dämonischen Durchbohrer, wie ihre Burgen"
+   ],
+   "iast": "bhid",
+   "key1": "Bid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "ты пронзил демонических пронзателей, как их крепости"
+   ],
+   "sense_tag": "2a",
+   "subcard": "_bid~~h1_00_pwg00"
+  }
+ ],
+ "проступиться": [
+  {
+   "de_gloss": [
+    "sich vergehen"
+   ],
+   "iast": "apacar",
+   "key1": "car",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "погрешать, проступиться"
+   ],
+   "sense_tag": "1",
+   "subcard": "car~~h0_09_apa"
+  }
+ ],
+ "рывать": [
+  {
+   "de_gloss": [
+    "abschneiden, -hauen, -schlagen, -reissen, -nagen, -beissen, zerschneiden, -hauen, -reissen, spalten, durchbohren",
+    "ein Loch in die Mauer schlagen",
+    "zerbrechen, -reissen",
+    "abgeschnitten",
+    "aufgerissen, -schnitten; eingeschnitten,",
+    "mit Einschnürungen versehen"
+   ],
+   "iast": "chid",
+   "key1": "Cid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "срезать, -рубать, -бивать, -рывать, -грызать, -кусывать, разрезать, -рубать, -рывать, раскалывать, пробуравливать"
+   ],
+   "sense_tag": "1",
+   "subcard": "_cid~~h0_zz_pw"
+  },
+  {
+   "de_gloss": [
+    "abschneidend, zerschneidend, -brechend, -reissend, spaltend, durchbohrend"
+   ],
+   "iast": "chid",
+   "key1": "Cid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "срезающий, разрезающий, -ламывающий, -рывающий, раскалывающий, пробуравливающий"
+   ],
+   "sense_tag": "1a",
+   "subcard": "_cid~~h0_zz_pw"
+  }
+ ],
+ "самообуздание": [
+  {
+   "de_gloss": [
+    "mit Etwas verfahren, sich zu thun machen, Etwas behandeln",
+    "derer die Selbstbezähmung üben",
+    "sich im Schlafe befinden"
+   ],
+   "iast": "car",
+   "key1": "car",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "тех, кто упражняет самообуздание"
+   ],
+   "sense_tag": "3a",
+   "subcard": "car~~h0_00_pwg00"
+  }
+ ],
+ "самоповешение": [
+  {
+   "de_gloss": [
+    "sich erhängen"
+   ],
+   "iast": "bandh",
+   "key1": "banD",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "вешаться (самоповешение)"
+   ],
+   "sense_tag": "mit-T5-sich-erhaengen",
+   "subcard": "ban_d~~h0_zz_pw02"
+  },
+  {
+   "de_gloss": [
+    "sich erhängen"
+   ],
+   "iast": "bandh",
+   "key1": "banD",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "вешаться (самоповешение)"
+   ],
+   "sense_tag": "mit-T5-sich-erhaengen",
+   "subcard": "ban_d~~h0_zz_pwkvn"
+  }
+ ],
+ "сарасватить": [
+  {
+   "de_gloss": [],
+   "iast": "brāhmī",
+   "key1": "brAhmI",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "Сарасвати"
+   ],
+   "sense_tag": "NWS 4",
+   "subcard": "br_ahm_i"
+  },
+  {
+   "de_gloss": [],
+   "iast": "brāhmī",
+   "key1": "brAhmI",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "Сарасвати"
+   ],
+   "sense_tag": "NWS 5",
+   "subcard": "br_ahm_i"
+  }
+ ],
+ "свидетельствующий": [
+  {
+   "de_gloss": [
+    "geringachten, verachten",
+    "eine Gabe, bei der man eine Geringachtung an den Tag legt"
+   ],
+   "iast": "avajñā",
+   "key1": "jYA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "дар, свидетельствующий о пренебрежении"
+   ],
+   "sense_tag": "1",
+   "subcard": "j_y_a~~h0_12_ava"
+  }
+ ],
+ "союзить": [
+  {
+   "de_gloss": [
+    "verbünden, vereinigen",
+    "sich verbünden"
+   ],
+   "iast": "yat",
+   "key1": "yat",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "союзить, объединять"
+   ],
+   "sense_tag": "caus_1",
+   "subcard": "yat~~h0_01_sec_1"
+  }
+ ],
+ "спалять": [
+  {
+   "de_gloss": [
+    "verbrennen, versengen, durch Feuer vernichten"
+   ],
+   "iast": "dah",
+   "key1": "dah",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "жечь, спалять, уничтожать огнем"
+   ],
+   "sense_tag": "c",
+   "subcard": "dah~~h0_zz_pw"
+  }
+ ],
+ "столько-то": [
+  {
+   "de_gloss": [
+    "so und soviel",
+    "messend, aus so und so viel bestehend"
+   ],
+   "iast": "mā",
+   "key1": "mA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "содержащий столько-то"
+   ],
+   "sense_tag": "15a〉",
+   "subcard": "m_a~~h0_zz_pw01"
+  },
+  {
+   "de_gloss": [
+    "gemessen;",
+    "so und so viel messend, so und so gross",
+    "einmal im Monat vorkommend"
+   ],
+   "iast": "mā",
+   "key1": "mA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "содержащий столько-то единиц, имеющий такой-то размер"
+   ],
+   "sense_tag": "pra-mA-1a〉",
+   "subcard": "m_a~~h0_zz_pw01"
+  },
+  {
+   "de_gloss": [
+    "messen",
+    "so und so viel messend, — gross",
+    "einmal im Monat vorkommend",
+    "abgemessen",
+    "mässig, gering, wenig"
+   ],
+   "iast": "mā",
+   "key1": "mA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "имеющий столько-то меры, — величины"
+   ],
+   "sense_tag": "1)",
+   "subcard": "m_a~~h2_20_pra"
+  }
+ ],
+ "схлопываться": [
+  {
+   "de_gloss": [
+    "zusammen-, hineinschnappen in"
+   ],
+   "iast": "dhā",
+   "key1": "DA",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "схлопываться, защелкиваться в"
+   ],
+   "sense_tag": "Mit {#aBisam#} — 1",
+   "subcard": "_d_a~~h0_zz_pw04"
+  }
+ ],
+ "увещеванный": [
+  {
+   "de_gloss": [
+    "ermahnt"
+   ],
+   "iast": "vid",
+   "key1": "vid",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "увещеванный, наставленный"
+   ],
+   "sense_tag": "e",
+   "subcard": "vid~~h0_zz_pw00"
+  }
+ ],
+ "улегаться": [
+  {
+   "de_gloss": [
+    "ruhig —, still werden; aufhören, sich legen, erlöschen",
+    "beruhigt",
+    "aufgehört, sich gelegt habend",
+    "erloschen",
+    "beruhigen, stillen, beschwichtigen, aufhören machen, placare",
+    "zur ewigen Ruhe gebracht"
+   ],
+   "iast": "śam",
+   "key1": "Sam",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "успокаиваться, затихать; прекращаться, улегаться, угасать"
+   ],
+   "sense_tag": "intrans.",
+   "subcard": "_sam~~h1_07_upa"
+  }
+ ],
+ "умерщвить": [
+  {
+   "de_gloss": [
+    "böse Absichten gegen Jmd",
+    "Etwas",
+    "haben, Jmd Etwas anzuthun suchen, nachstellen, bedrohen",
+    "tödten",
+    "der dem Brahmanen diesen Besitz zu beschädigen sucht",
+    "beschädige nicht"
+   ],
+   "iast": "abhiman",
+   "key1": "man",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "умерщви"
+   ],
+   "sense_tag": "2",
+   "subcard": "man~~h0_09_a_bi"
+  }
+ ],
+ "упорядоченно": [
+  {
+   "de_gloss": [
+    "geordnet hinstellen"
+   ],
+   "iast": "yat",
+   "key1": "yat",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "упорядоченно расставлять"
+   ],
+   "sense_tag": "PW_paryat_1",
+   "subcard": "yat~~h0_zz_pw"
+  }
+ ],
+ "хмурение": [
+  {
+   "de_gloss": [
+    "das Binden, Zusammenfügen",
+    "die Errichtung eines Dammes, — einer Brücke",
+    "Abdämmung",
+    "Ueberbrückung",
+    "Fesselung)",
+    "Wall"
+   ],
+   "iast": "bandh",
+   "key1": "banD",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "хмурение бровей"
+   ],
+   "sense_tag": "3",
+   "subcard": "ban_d~~h0_21_upasam_0"
+  }
+ ],
+ "юпитеровый": [
+  {
+   "de_gloss": [
+    "des 9ten Jahres im 60jährigen Jupitercyclus"
+   ],
+   "iast": "yuvan",
+   "key1": "yuvan",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "девятого года в 60-летнем юпитеровом цикле"
+   ],
+   "sense_tag": "PWG 3〉",
+   "subcard": "yuvan"
+  },
+  {
+   "de_gloss": [
+    "das 9te Jahr im 60jährigen Jupitercyclus"
+   ],
+   "iast": "yuvan",
+   "key1": "yuvan",
+   "review_status": "ai_translated",
+   "ru_spans": [
+    "девятый год в 60-летнем юпитеровом цикле"
+   ],
+   "sense_tag": "PW 2〉b〉",
+   "subcard": "yuvan"
+  }
+ ]
+}
