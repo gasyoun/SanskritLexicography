@@ -1,0 +1,57 @@
+name: Features index sync
+
+# Uprava H5423 (E016 wave 5) — features_index.html and features_index.json are
+# generated from FEATURES_INDEX.md by build_features_index_html.py and must never
+# lag it (they were 5 days behind on 24-09-2026). The generator is deterministic
+# (no date stamp), so the check is a plain byte compare: regenerate, then
+# `git diff --exit-code`. The local half is .githooks/pre-commit, which
+# regenerates and stages both files whenever FEATURES_INDEX.md is committed.
+#
+# Check-only on purpose: master is protected by a required status check, so a
+# bot push of a regenerated page would be refused — a red run here is the signal,
+# and Uprava's ci_health sweep turns a red default branch into a repair row.
+
+on:
+  pull_request:
+    paths:
+      - "FEATURES_INDEX.md"
+      - "features_index.html"
+      - "features_index.json"
+      - "build_features_index_html.py"
+      - ".github/workflows/features-index-sync.yml"
+  push:
+    branches: [master]
+    paths:
+      - "FEATURES_INDEX.md"
+      - "features_index.html"
+      - "features_index.json"
+      - "build_features_index_html.py"
+      - ".github/workflows/features-index-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: features-index-sync-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: features_index matches FEATURES_INDEX.md
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Regenerate features_index.html + features_index.json
+        run: |
+          python build_features_index_html.py
+          python build_features_index_html.py --emit-json features_index.json
+      - name: Refuse drift
+        run: |
+          if ! git diff --exit-code --stat -- features_index.html features_index.json; then
+            echo "::error::features_index.html/.json lag FEATURES_INDEX.md. Fix: python build_features_index_html.py && python build_features_index_html.py --emit-json features_index.json, then commit both."
+            exit 1
+          fi

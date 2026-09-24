@@ -105,6 +105,13 @@
     "repo": "gasyoun/VisualDCS"
   },
   {
+    "id": "B13",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "kewa_ewa_pwg_crosswalk_extended.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/etym/ewa_extend.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
     "id": "C13",
     "section": "I. Data assets — query it, someone already spent the compute",
     "title": "union_headwords.tsv",
@@ -1039,6 +1046,13 @@
     "title": "dhātu-pāṭha XML corpus layer — Westergaard + Scharf Mādhavīya (H4538)",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/YADISK_05_SANSKRIT_LEXICON_TREES_CENSUS_10-09-2026.md",
     "repo": "gasyoun/SanskritLexicography"
+  },
+  {
+    "id": "L21",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "VLM OCR for scanned books — RU body + Sanskrit in Latin (tools/ocr_vlm, Uprava, 24-09-2026)",
+    "url": "https://github.com/gasyoun/Uprava/tree/main/tools/ocr_vlm",
+    "repo": "gasyoun/Uprava"
   },
   {
     "id": "L8",
