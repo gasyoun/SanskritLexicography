@@ -140,7 +140,7 @@ rendered as accented IAST on both sides (`bhagá` vs `bhága`), recommend = Colo
 The print list uses the Cologne accents; this is the QA list for the Catalan editors.
 
 **Cross-dict union (the print target):** [`union/UNION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) — a single merged
-headword index across all **15** csl-orig dicts (**323,425** headwords with per-dict provenance
+headword index across all **15** csl-orig dicts (**323,422** headwords with per-dict provenance
 + gender), feminines folded under the masculine (`mf(ā/ī)`; 237 `-inī` auto-folded, 3,995 `-ā/-ī`
 candidates ranked high/low for the editor); built by [`build_union.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py).
 

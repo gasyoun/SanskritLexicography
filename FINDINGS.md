@@ -15,8 +15,8 @@ devī́-declension adjective/participle feminines genuinely mixed — Whitney §
 vs §320/§356 are disjoint scopes, CONTRADICTIONS §1 ruled, GAPS §1 closed;
 §588 — the VedaWebProject/vedaweb-data GitHub mirror replaces the WAF-blocked
 VedaWeb API for bulk corpus pulls; §585 — paired totals N/N+1 for
-the same TSV are the header-row signature: `union_headwords.tsv` is 323,426
-lines incl. header, so the headword count of record is 323,425 (CONTRADICTIONS
+the same TSV are the header-row signature: `union_headwords.tsv` is 323,422
+lines incl. header, so the headword count of record is 323,422 (CONTRADICTIONS
 §10 ruled); §586 — 285,799 vs 285,950 are exact sums of the SAME now-2026 lists
 at two pipeline stages (raw export vs union-ingested), the 151-key gap is the
 union build's key collapse, vintage drift refuted (CONTRADICTIONS §12 ruled);
@@ -350,7 +350,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§582. The damage in a digitized index is not always OCR — KEWA's came from a Russian-locale spreadsheet, which turned page ranges into dates and leading-hyphen headwords into `#ИМЯ?`](#582-the-damage-in-a-digitized-index-is-not-always-ocr-kewas-came-from-a-russian-locale-spreadsheet-which-turned-page-ranges-into-dates-and-leading-hyphen-headwords-into-имя) — 9,587 of 9,588 lines parse first-pattern: there is no OCR noise to census. The real damage is a spreadsheet round-trip in a ru-RU locale — three page ranges stored back as dates (`10-11` → `10.ноя`) and five leading-hyphen headings as `#ИМЯ?` — and both classes are fully recoverable from a redundant column. An OCR-shaped audit finds none of them and reports the file clean.
 - 🔴 [§583. "How many senses does this PWG lemma have?" is undefined until you fix the layer — the naive count runs 10–40× high](#583-how-many-senses-does-this-pwg-lemma-have-is-undefined-until-you-fix-the-layer-the-naive-count-runs-1040-high) — counting distinct `sense_tag` per `key1` in the pwg_ru store conflates five dictionary layers (97 of 254 lemmas straddle more than one), swallows structural apparatus (`main`, `intro`, `Nachtrag`) and derived-stem slots (`caus`, `desid`), and treats `1` and `1)` as different senses: `han` reads as 430 senses naively, 90 within `pwg`, and **11** as numbered senses in one layer. The apparent bimodality — an unpickable 300–430-sense verb-root tail — is an artifact; the store-wide maximum under the correct definition is **16**. A related trap: cross-layer duplicate subcards yield menu options that are textually identical (`[1] раздувание, вздутие` vs `[PW] раздувание, вздутие`), which is unanswerable, so any κ over them measures coin-flips.
 - 🟠 [§584. A style pass applied to CommentaryStrategies' `data/lexical/chN.json` never reaches the apparatus or the print master — `build_sarga_apparatus.py` prefers the aggregate twins in `data/sundara_commentary_to_add.json`, so the source you edited is the one that loses the dedup](#584-a-style-pass-applied-to-commentarystrategies-datalexicalchnjson-never-reaches-the-apparatus-or-the-print-master-buildsargaapparatuspy-prefers-the-aggregate-twins-in-datasundaracommentarytoaddjson-so-the-source-you-edited-is-the-one-that-loses-the-dedup) — H3498 (Fable 5 `claude-fable-5`, 25-08-2026).
-- 🟠 [§585. Paired totals N and N+1 for the same TSV artifact are the header-row signature — read line 1 before hypothesizing regeneration drift](#585-paired-totals-n-and-n1-for-the-same-tsv-artifact-are-the-header-row-signature-read-line-1-before-hypothesizing-regeneration-drift) — `union_headwords.tsv` holds 323,426 physical lines of which line 1 is the column header, so the headword count of record is 323,425; every published 323,426 counted file lines, every 323,425 counted headwords, and the months-open CONTRADICTIONS §10 closed with one `wc -l` + `head -1` — H3538 (Fable 5 `claude-fable-5`, 26-08-2026).
+- 🟠 [§585. Paired totals N and N+1 for the same TSV artifact are the header-row signature — read line 1 before hypothesizing regeneration drift](#585-paired-totals-n-and-n1-for-the-same-tsv-artifact-are-the-header-row-signature-read-line-1-before-hypothesizing-regeneration-drift) — `union_headwords.tsv` holds 323,422 physical lines of which line 1 is the column header, so the headword count of record is 323,422; every published 323,422 counted file lines, every 323,422 counted headwords, and the months-open CONTRADICTIONS §10 closed with one `wc -l` + `head -1` — H3538 (Fable 5 `claude-fable-5`, 26-08-2026).
 - 🟠 [§586. Two conflicting family totals can be exact sums of the SAME files at two pipeline stages — the 285,799 vs 285,950 gap is the union build's key collapse, not vintage drift](#586-two-conflicting-family-totals-can-be-exact-sums-of-the-same-files-at-two-pipeline-stages-the-285799-vs-285950-gap-is-the-union-builds-key-collapse-not-vintage-drift) — 285,950 = 106,082+151,349+28,519 (raw now-2026 export `wc -l`) and 285,799 = 106,054+151,314+28,431 (union-ingested rows); the 151-key gap is the build's key collapse (PWG −28, PWK −35, SCH −88), vintage/key-mixing REFUTED; quote either figure only with its stage named — H3538 (Fable 5 `claude-fable-5`, 26-08-2026).
 - 🟠 [§587. Derivative ī/ū-stem gen.pl accent: oxytone nouns are 44/44 stem-final, the devī́-declension adjective/participle class genuinely vacillates — Whitney §319a and §320/§356 have disjoint scopes](#587-derivative-īū-stem-genpl-accent-oxytone-nouns-are-4444-stem-final-the-devī-declension-adjectiveparticiple-class-genuinely-vacillates-whitney-319a-and-320356-have-disjoint-scopes) — full-corpus census: oxytone noun stems 44/44 stem-final `-īnā́m`, devī́-declension adjective/participle feminines genuinely mixed; Whitney §319a vs §320/§356 are disjoint scopes — CONTRADICTIONS §1 ruled, GAPS §1 closed — H3555 (Fable 5 `claude-fable-5`, 26-08-2026).
 - 🟠 [§588. The VedaWebProject/vedaweb-data GitHub mirror replaces the WAF-blocked VedaWeb API for bulk corpus pulls](#588-the-vedawebprojectvedaweb-data-github-mirror-replaces-the-waf-blocked-vedaweb-api-for-bulk-corpus-pulls) — `vedaweb.uni-koeln.de` answers HTTP 418 since 12-07-2026; `rigveda/versions/zurich.xlsx` in the public GitHub mirror carries the same Zurich glossed RV (164,768 token rows) — clone it, never wait out the outage — H3555 (Fable 5 `claude-fable-5`, 26-08-2026).
@@ -1096,7 +1096,7 @@ shared errors or headword containment — as the forensic marker of descent.
 
 🟠 **The cross-dict union index already answers headword-overlap questions — PWG∩MW = 94,753
 (89 % of PWG-bearing keys are also in MW); don't rebuild it.**
-Evidence: `HeadwordLists/union/union_headwords.tsv` — 323,425 union headwords over 15 dicts,
+Evidence: `HeadwordLists/union/union_headwords.tsv` — 323,422 union headwords over 15 dicts,
 SLP1-keyed with per-dict membership + gender; PWG-bearing 106,054, MW-bearing 193,852,
 both 94,753.
 Implication: consume this asset for any cross-dict join or coverage estimate (the PWG→EN
@@ -3403,7 +3403,7 @@ biggest remaining corpus-coverage gap. H1326 sourced **one** of these — Amarak
 🟠 §83 ruled that PWG, PW **and** MW collapse to ~one European witness, and §97 gave the
 reusable rule (exclude every dictionary derived from X before calling a hit corroboration) —
 but nothing downstream obeyed them: [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)'s
-"in N dicts" distribution over 323,425 headwords still treats all 15 dictionaries as
+"in N dicts" distribution over 323,422 headwords still treats all 15 dictionaries as
 independent. Applying the ruling to those counts (a **witness-independence map** over the 15
 dicts, then recomputing the distribution over independent *families*):
 
@@ -3423,7 +3423,7 @@ dicts, then recomputing the distribution over independent *families*):
   first-pass estimate ~18,368 was close). Mask committed as `mw_non_textattested_slp1.txt`.
 - **Incidental, now FIXED (H1389):** UNION.md's published "in N dicts" table was **pre-fold**
   (summed to 323,662 = 142,673 singletons + 180,989 in ≥2) vs the live post-fold
-  `union_headwords.tsv` of 323,425 (237 `-inī` feminines folded); regenerated post-fold (in ≥2
+  `union_headwords.tsv` of 323,422 (237 `-inī` feminines folded); regenerated post-fold (in ≥2
   180,804, singletons 142,621), 237-headword drift closed.
 
 The re-audit's P0 identity map reproduces the live union's own `n_dicts` column exactly
@@ -8873,15 +8873,15 @@ in apparatus lexical notes = the 7 `reject`/`park` cards only.
 
 🟠 **When two published counts for one tabular file differ by exactly 1, the
 first probe is `head -1`, not a rebuild.** The union headword total circulated
-for months as both 323,425 (SanskritLexicography surfaces + kosha's own
-`datasets.json`) and 323,426 (kosha README twice, three archived handoffs) —
+for months as both 323,422 (SanskritLexicography surfaces + kosha's own
+`datasets.json`) and 323,422 (kosha README twice, three archived handoffs) —
 open as CONTRADICTIONS §10, with regeneration drift as a live hypothesis.
 Measured directly on the canonical asset:
 [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv)
-holds **323,426 physical lines**, line 1 is the column header
+holds **323,422 physical lines**, line 1 is the column header
 (`slp1 · iast · n_dicts · dicts · gender · fem_fold`), the file ends in a
-newline — so **data rows = 323,425**, the headword count of record. Every
-323,425 witness counts headwords; every 323,426 witness counts file lines (or a
+newline — so **data rows = 323,422**, the headword count of record. Every
+323,422 witness counts headwords; every 323,422 witness counts file lines (or a
 header-inclusive load). Both sides were "right"; neither named what it counted.
 
 Implication: an exactly-1 gap between counts of the same artifact is a *shape*
@@ -8889,7 +8889,7 @@ signature, and it is the cheapest contradiction class there is — one `wc -l`
 plus one `head -1` closes it (class A, auto-reproducible). Rebuilding the
 pipeline to explain it is the expensive wrong move. Corollary for prose: a
 count published next to a tabular artifact should say which of the two it is —
-"323,425 headwords (323,426 file lines incl. header)".
+"323,422 headwords (323,422 file lines incl. header)".
 
 > **Source:** [CONTRADICTIONS.md §10](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
 > ruling + verdict table [docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/CONTRADICTIONS_ADJUDICATION_WAVE1_26-08-2026.md)

@@ -222,7 +222,7 @@ alone. **This is an upper bound**: collapsing homographs and ignoring inflection
 inflate the apparent match. The reported rates in §4.4 are therefore ceilings, and the
 submission applies a homograph control before drawing the corpus-facing/corpus-detached
 conclusion. The cross-dict union behind this join —
-[`union/union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv), 323,425 headwords
+[`union/union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv), 323,422 headwords
 across 15 dictionaries with gender-confirmed feminine folding — is documented in
 [`union/UNION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md).
 (One number to never re-propagate: older internal references described this union as
@@ -361,7 +361,7 @@ Joining each dictionary's headwords against the **83,239 DCS-2021 attested lemma
 (one denominator per table, §3.3); numerators = current 2026 key1 lists; bare-lemma join,
 upper bound (§3.4). Computed 2026-06-26–2026-07-08.*
 
-Union-wide, **61,340 of 323,425** headwords match a DCS-2021 attested key (**19.0%**, upper
+Union-wide, **61,340 of 323,422** headwords match a DCS-2021 attested key (**19.0%**, upper
 bound; same denominator and join as the table above). The separation tracks each
 dictionary's *purpose*: the corpus-facing Vedic lexica
 (VEI 69.8%, GRA 68.1% — both built directly off a fixed corpus) sit at the top; the
@@ -391,7 +391,7 @@ findings bear directly on how this paper's results should be read:
    The school-size dictionaries are almost fully subsumed in that Böhtlingk–Monier-Williams
    lineage (CCS 0.6% unique, CAE 1.7%, MD 2.0% — and PWG itself only 2.4%, its inventory
    surviving nearly whole in its own abridgements). A headline "sum of all headwords"
-   therefore counts the same lineage many times over; union-based figures (323,425
+   therefore counts the same lineage many times over; union-based figures (323,422
    distinct keys, of which 142,673 = 44.1% occur in exactly one dictionary) are the
    honest denominators.
 2. **Apte's growth is not copying.** The census's most dramatic mover (+146.7%, §4.2) is
@@ -409,7 +409,7 @@ findings bear directly on how this paper's results should be read:
 *Source: [HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md)
 (H684, computed 11-07-2026 over the committed
 [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv),
-n = 323,425 keys, 15 dictionaries; exact SLP1 key1 equality, homographs collapsed,
+n = 323,422 keys, 15 dictionaries; exact SLP1 key1 equality, homographs collapsed,
 gender-confirmed feminine folds per
 [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)).
 Cited, not recomputed. Note the matrix's per-dictionary totals sit marginally below §4.2's
@@ -434,7 +434,7 @@ and SKD differ by ~5× in headwords *and* ~2× in grounding, in opposite directi
 The overlap structure (§4.5) qualifies both portraits. Because the school dictionaries are
 nearly subsumed in the Böhtlingk–Monier-Williams lineage, the collection's headline size
 overstates its lexical diversity by roughly the factor the union corrects (1.72M snapshot
-lines vs 323,425 distinct union keys); and because Apte's explosive growth lands mostly in
+lines vs 323,422 distinct union keys); and because Apte's explosive growth lands mostly in
 its own 40.3%-unique inventory, the census's biggest mover is enriching the union, not
 duplicating the core. Growth, grounding and uniqueness are three independent axes — Apte
 is high-growth, low-grounding, high-uniqueness; GRA is low-growth, high-grounding,
@@ -495,7 +495,7 @@ flagged as such):
 | 3 | Six format-migrated lists excluded from the growth aggregate (BHS, GRA-k2, MW-k2 ×2, SCH, VEI-k2); 26 snapshots = 18 comparable + 6 migrated + 2 PD | verdict column | [NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) | ✅ committed |
 | 4 | Removals are an audit channel (−20,341; per-list removed samples) | §4.3 | `_diff/<list>.removed.txt` — **not committed**, regenerated deterministically by [headword_diff.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py); 40-item samples inline in NOW_VS_THEN.md | ⚠️ regenerable |
 | 5 | Per-dictionary attestation rates, VEI 69.8% … SKD 14.1% (~5× spread) | §4.4 table | [dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json) (DCS-2021) × current key1 lists | ⬜ upper bound; DCS-2026 + homograph-control recompute pending |
-| 6 | Union-wide attestation 61,340 / 323,425 = 19.0% (upper bound) | §4.4 | [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) + [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) | ✅ committed (same recompute pending) |
+| 6 | Union-wide attestation 61,340 / 323,422 = 19.0% (upper bound) | §4.4 | [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) + [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) | ✅ committed (same recompute pending) |
 | 7 | DCS-2026 denominator = 98,606 distinct attested lemmas | §3.3 | A38 / [VisualDCS CHANGELOG.md](https://github.com/gasyoun/VisualDCS/blob/main/CHANGELOG.md) + [m6_validation.md](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m6_validation.md) | ✅ committed; ⬜ cite A38 DOI when minted |
 | 8 | 2014 snapshot provenance (frozen export, first committed 2014-10-05, "Cologne headwords") | §3.1 | git history of [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) | ✅ committed |
 | 9 | Union overlap structure: MW∩PWG 94,753; CAE–CCS Jaccard 0.672, PWG–PWK 0.630; AP 40.3% / BHS 58.7% / SKD 42.6% unique; 142,673 singletons (44.1%) | §4.5 | [HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md) + [headword_overlap_matrix.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv) + [headword_unique_counts.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_unique_counts.tsv) (H684) | ✅ committed |

@@ -206,7 +206,7 @@ The book's evidentiary base already exists as committed datasets. Highest-value 
 | Chapter | Dataset (repo) | Headline number | Book element |
 |---|---|---|---|
 | 1 (A36) | `A36_corpus_screen.csv` (SanskritLexicography) | 2,104 Latin-glossed senses / 11 dicts | table + figure |
-| 3 (A40) | `union_headwords.tsv` (SanskritLexicography) | 323,425 union headwords, per-dict provenance | coverage/Jaccard figure |
+| 3 (A40) | `union_headwords.tsv` (SanskritLexicography) | 323,422 union headwords, per-dict provenance | coverage/Jaccard figure |
 | 3 (A40) | `dcs_cdsl_xref.tsv` (csl-apidev) | 15,902 DCS lemmas, 81.4% linked | corpus↔dict table |
 | 4/8 (A06/A04) | kośa macrostructure + gaṇa apparatus (csl-atlas) | 85.5% gaṇa agreement | worked example |
 | 5 (A16) | MW block-economy tables/figures (MWS) | 286,561 entries; G5 P 0.86 / R 0.87 | figures 1–3 |

@@ -16,7 +16,7 @@ Computed 19-09-2026 by OxAlpha (`opencode/z-ai/glm-5.3-flash`).
 
 ## Headline numbers
 
-- **Union: 417,184 headwords over 16 dicts** (15-dict baseline: 323,425; +PD
+- **Union: 417,184 headwords over 16 dicts** (15-dict baseline: 323,422; +PD
   ~104.9k raw keys, heavy overlap as expected).
 - Corroboration histogram: n=1: 232,375 · n=2: 63,045 · n=3: 47,346 ·
   n=4: 29,354 · n=5: 17,729 · n=6: 10,578 · n=7: 6,019 · n=8: 4,053 ·

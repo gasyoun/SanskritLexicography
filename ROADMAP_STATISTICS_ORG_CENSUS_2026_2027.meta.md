@@ -48,7 +48,7 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
   [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
   §11 (kosha.db build drift, L2) and §13 (`corpus_lexicon` rows, L4) are 🔴 unresolved, and
   §14 (MW resolves to 5 placeholder nodes in the `<ls>` graph) gates the Q2 network-statistics
-  workstream. §10 and §12 were **ruled** 26-08-2026 — cite 323,425 and name the pipeline stage
+  workstream. §10 and §12 were **ruled** 26-08-2026 — cite 323,422 and name the pipeline stage
   for the Petersburg naive sum.
 - Counts in the register are dated "as of the 06–12-07-2026 census re-measure" per the doc's
   own caveat — re-verify before citing in a paper if it has been more than a few weeks.

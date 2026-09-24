@@ -48,7 +48,7 @@ re-measure; re-verify before a large change.
 | Statistic | Count / status | Where |
 |---|---|---|
 | Dictionaries digitized | **44** ✅ (14 Skt→Eng · 6 Skt→Skt · 5 Skt→Ger · 3 Eng→Skt · 2 Skt→Fr · 1 Skt→Lat · 12 specialized) | FEATURES_INDEX §II |
-| Union headwords (15-dict) | **323,425** ✅ | [`union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) |
+| Union headwords (15-dict) | **323,422** ✅ | [`union_headwords.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) |
 | Pairwise overlap matrix + Jaccard | **105 pairs** ✅ (H684, E40) | [`headword_overlap_matrix.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/headword_overlap_matrix.tsv) |
 | Markup-tag frequency census | **96 tags · 17.5 M hits** ✅ (H683, E39) | [`markup_tag_census.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv) |
 | `<ls>` citation-frequency graph | **828,505 citations → 912 texts** (11 dicts) ✅ (E38) | [csl-atlas `data/citations/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/citations) |

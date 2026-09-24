@@ -85,7 +85,7 @@ What makes counting possible now is the corpus. The Cologne Digital Sanskrit Lex
 reverse bilinguals, specialised indices, and the great indigenous lexica — digitised in a
 shared, lightly-marked source format, continuously corrected, and versioned in public.
 Around it stand the resources that turn a text collection into an evidentiary system: a
-union index of 323,425 headwords across the collection; a citation graph of 828,505
+union index of 323,422 headwords across the collection; a citation graph of 828,505
 literary-source references resolving to 912 distinct texts; a twelve-year ledger of
 52,498 documented corrections; and cross-links to the Digital Corpus of Sanskrit, the
 only large morphologically disambiguated corpus of the language. Both civilizations,
