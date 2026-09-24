@@ -46,4 +46,25 @@ python bounded_staged_run.py --plan output\h4527vol\plan.json --coord-dir output
 5. **Auth reading:** `claude auth status` with `CLAUDE_CONFIG_DIR` set to the `c1` profile returned `loggedIn true`, `authMethod claude.ai`, `subscriptionType max`, `apiProvider firstParty`. CLI version 2.1.278; `.credentials.json` last written 23-09 18:29Z. A direct `claude -p` ping got the same 403, again with 0 tokens.
 6. **Verdict:** `CANARY_FAIL(auth 403)`, a NO-GO. The paid run was not started, no probe legs or card call were made, and `kast_ur_i` stays `requeue_prepared`. Promotion is blocked on `c1` authentication, not on spend. A human needs to log the `c1` profile in again. After that, the whole section 4 recipe runs unchanged: a fresh canary, then up to 3 more calls.
 
+## 6. Second attempt, 24-09-2026 18:20–18:30Z: auth re-login landed, but the `c1` probe ration is spent until 21:20:17Z
+
+Unattended worker pass (Opus 5 `claude-opus-5[1m]`, Mac session over Tailscale SSH to `msi` / `WIN-NJTORH3267V`). Zero paid calls made, zero code changed. Findings, all live-probed:
+
+1. **Auth re-login DID happen.** `D:\ClaudeTools\profiles\claude1\.claude\.credentials.json` was rewritten **2026-09-24T14:48:44Z** — after the 06:22Z 403. `claude auth status` under that `CLAUDE_CONFIG_DIR`: `loggedIn true`, `authMethod claude.ai`, `apiProvider firstParty`, `subscriptionType max`, org `1ccfe5f5-…`. The §5 blocker as written ("a human needs to log the `c1` profile in again") is **retired**.
+2. **Route gate still green.** `settings.json` unchanged since 23-09 20:47:52Z, 0 lines matching `BASE_URL|z\.ai|glm`; no `ANTHROPIC*` variable in either the User or the Machine environment. Anthropic route confirmed.
+3. **Ration gate is RED — this is the new blocker.** `max_account_orchestrator.py probe-ration --account c1` (fingerprint `9321e2c1…acd6b`) returns `legal_now: false`, `attempts_today: ["2026-09-24T15:20:17Z"]`, `next_legal_utc: "2026-09-24T21:20:17Z"`, against `max_per_utc_day: 2` / `min_gap_s: 21600`. The subcommand exits **3** when rationed, so `--execute` cannot legally start before 21:20:17Z.
+4. **Who spent it: the sibling handoff H5403, not H5402.** The ration ledger's only entry today is `{"purpose": "probe:warmup", "utc": "2026-09-24T15:20:17Z", "pid": 13784}`. `artifact_registry.jsonl` shows an H5403 session preparing four nominal leases (`h5403vol25` `kunt_i`, `h5403vol35` `ma_d_uka`, `h5403vol39` `matsy_akz_i`, `h5403vol40` `mayo_bu`) at 14:49:46–14:55:17Z, a plan at `output\h5403vol\plan.json` 15:17:50Z, and a canary manifest at `output\h5403vgate24\` 15:32:54Z. **That canary never ran** — no `status.canary.json`, no `calls*.json` in that folder, and no file anywhere under `pilot\output` written after 15:32:54Z. So no card was generated on `c1` today by anyone, and there is still **no receipt proving a 200 on `c1` since the re-login** — auth is *probably* fixed (§6.1) but is **unproven** until the next canary.
+5. **`kast_ur_i` is untouched and still ready to go.** Lease `h4527vol14` remains `requeue_prepared` at attempt 2 (`rq02-defect`, prepared 06:09:09Z, `selected_keys: ["kast_ur_i~~h0_zz_pw"]`, preflight sha256 `901263660c89c070…e1e00f91d`). The §4 recipe applies unchanged.
+6. **Nothing was overridden.** `legal_now: false` is a gate, and the handoff's own fail condition plus [rules/agent-never-self-authorizes-an-escape.md](https://github.com/gasyoun/claude-config/blob/main/rules/agent-never-self-authorizes-an-escape.md) forbid a session from ruling itself past it. The worker stopped here rather than spend.
+
+### What the next session does (no human action needed)
+
+At or after **2026-09-24T21:20:17Z** — and noting that this is the day's **second and last** probe attempt, so the H5403 session must not take it first — re-run the §4 recipe from the top on `msi`, in `RussianTranslation\src\pilot`:
+
+```text
+python max_account_orchestrator.py probe-ration --account c1
+```
+
+must exit 0 with `legal_now: true`; then the fresh `dq_canary_puregloss` canary (1 call, the auth proof §6.4 is missing), then the §4 `bounded_staged_run.py` line. Cap: 4 paid calls total, per the second ruling. If the canary 403s again, the blocker reverts to auth and belongs to a human.
+
 _Гасунс_
