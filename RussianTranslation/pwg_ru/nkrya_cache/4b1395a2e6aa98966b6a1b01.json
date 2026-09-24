@@ -1,0 +1,1803 @@
+{
+ "fetched_utc": "2026-09-24T12:37:00Z",
+ "request": {
+  "endpoint": "/lex-gramm/concordance",
+  "method": "POST",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lexGramm": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "disambmod",
+        "text": {
+         "v": "main"
+        }
+       },
+       {
+        "fieldName": "distmod",
+        "text": {
+         "v": "with_zeros"
+        }
+       }
+      ],
+      "subsectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "сгущаться"
+          }
+         }
+        ]
+       },
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "облако"
+          }
+         },
+         {
+          "fieldName": "dist",
+          "intRange": {
+           "begin": -3,
+           "end": 3
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "params": {
+    "pageParams": {
+     "docsPerPage": 3,
+     "page": 0,
+     "snippetsPerDoc": 1
+    },
+    "seed": 5261
+   }
+  }
+ },
+ "response": {
+  "corpusStats": {
+   "sentenceCount": 34933864,
+   "textCount": 140804,
+   "wordUsageCount": 426186466
+  },
+  "groups": [
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 1,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "Александр Нежный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sex",
+            "value": [
+             {
+              "valString": {
+               "v": "муж"
+              }
+             }
+            ]
+           },
+           {
+            "name": "birthday",
+            "value": [
+             {
+              "valString": {
+               "v": "1940"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Психопомп"
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "2022"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "художественная"
+              }
+             }
+            ]
+           },
+           {
+            "name": "genre_fi",
+            "value": [
+             {
+              "valString": {
+               "v": "нежанровая проза"
+              }
+             }
+            ]
+           },
+           {
+            "name": "chronotop",
+            "value": [
+             {
+              "valString": {
+               "v": "Россия: постсоветский период, ирреальный мир"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "роман"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "сниженный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "16814"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "162848"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "журнал"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "«Звезда», №№ 9-10, 2022, №№ 2-3, 2023"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "2022-2023"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "«Звезда»"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publisher",
+            "value": [
+             {
+              "valString": {
+               "v": "«Звезда»"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "auto",
+       "source": {
+        "docId": "source/post1950/zhur_russru/zvezda/2022/zvezda_2022_2023_nezhny.xml"
+       },
+       "title": "Александр Нежный. Психопомп (2022) // «Звезда», 2022-2023"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6
+              },
+              "text": "Капотня",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 1
+              },
+              "text": "выбрасывала",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 2
+              },
+              "text": "сероводород",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": "; ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 6,
+               "wordId": 3
+              },
+              "text": "сгущалась",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 4
+              },
+              "text": "в",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 6,
+               "wordId": 5
+              },
+              "text": "облако",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 6
+              },
+              "text": "ртутная",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 7
+              },
+              "text": "гарь",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 8
+              },
+              "text": "мусоросжигательного",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 9
+              },
+              "text": "завода",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 10
+              },
+              "text": "и",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 11
+              },
+              "text": "вместе",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 12
+              },
+              "text": "с",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 13
+              },
+              "text": "клубами",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 14
+              },
+              "text": "дыма",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 15
+              },
+              "text": "улетали",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 16
+              },
+              "text": "в",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 17
+              },
+              "text": "небеса",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 18
+              },
+              "text": "смолы",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 19
+              },
+              "text": "завода",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 6,
+               "wordId": 20
+              },
+              "text": "коксогазового",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "source/post1950/zhur_russru/zvezda/2022/zvezda_2022_2023_nezhny.xml"
+           },
+           "end": 10,
+           "start": 3
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 1,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "Марина Москвина"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sex",
+            "value": [
+             {
+              "valString": {
+               "v": "жен"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Кентавр и Маруся"
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "2017"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "художественная"
+              }
+             }
+            ]
+           },
+           {
+            "name": "genre_fi",
+            "value": [
+             {
+              "valString": {
+               "v": "нежанровая проза"
+              }
+             }
+            ]
+           },
+           {
+            "name": "chronotop",
+            "value": [
+             {
+              "valString": {
+               "v": "Россия: 1900-1914, Россия/СССР: советский период"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "рассказ"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "нейтральный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "908"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "13803"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "журнал"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "«Дружба Народов», № 8, 2017 https://magazines.gorky.media/druzhba/2017/8"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "2017"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "«Дружба Народов», № 8"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publisher",
+            "value": [
+             {
+              "valString": {
+               "v": "«Дружба Народов»"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "auto",
+       "source": {
+        "docId": "source/post1950/zhur_russru/dn/2017/dn2017309.xml"
+       },
+       "title": "Марина Москвина. Кентавр и Маруся // «Дружба Народов», № 8, 2017"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79
+              },
+              "text": "Как-то",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 1
+              },
+              "text": "раз",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 2
+              },
+              "text": "они",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 3
+              },
+              "text": "пришли",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 4
+              },
+              "text": "засветло",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 5
+              },
+              "text": "на",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 6
+              },
+              "text": "каток",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 7
+              },
+              "text": "небо",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 8
+              },
+              "text": "голубое",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 9
+              },
+              "text": "высокое",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 10
+              },
+              "text": "золотой",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 11
+              },
+              "text": "закат",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 12
+              },
+              "text": "но",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 13
+              },
+              "text": "стали",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 14
+              },
+              "text": "наплывать",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 79,
+               "wordId": 15
+              },
+              "text": "облака",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 79,
+               "wordId": 16
+              },
+              "text": "сгущаться",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 17
+              },
+              "text": "сумерки",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 18
+              },
+              "text": "в",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 19
+              },
+              "text": "парке",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 20
+              },
+              "text": "зажгли",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 21
+              },
+              "text": "фонари",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 22
+              },
+              "text": "снежные",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 23
+              },
+              "text": "дорожки",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 24
+              },
+              "text": "окрасились",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 25
+              },
+              "text": "теплым",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 79,
+               "wordId": 26
+              },
+              "text": "светом",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "source/post1950/zhur_russru/dn/2017/dn2017309.xml"
+           },
+           "end": 83,
+           "start": 76
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 1,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "Виктор Бирюлин"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sex",
+            "value": [
+             {
+              "valString": {
+               "v": "муж"
+              }
+             }
+            ]
+           },
+           {
+            "name": "birthday",
+            "value": [
+             {
+              "valString": {
+               "v": "1951"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Семена жизни"
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "2014"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "публицистика, нехудожественная"
+              }
+             }
+            ]
+           },
+           {
+            "name": "topic",
+            "value": [
+             {
+              "valString": {
+               "v": "природа"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "эссе, цикл"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "нейтральный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "415"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "3823"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "журнал"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "«Ковчег», 2014, № 44. http://litbook.ru/article/6876/"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "2014"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "«Ковчег»"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "auto",
+       "source": {
+        "docId": "source/post1950/zhur_russru/kovcheg/kovcheg44_birjulin.xml"
+       },
+       "title": "Виктор Бирюлин. Семена жизни // «Ковчег», 2014"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189
+              },
+              "text": "Изливаясь",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 1
+              },
+              "text": "со",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 2
+              },
+              "text": "всех",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 3
+              },
+              "text": "сторон",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 4
+              },
+              "text": "он",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 189,
+               "wordId": 5
+              },
+              "text": "сгущается",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 6
+              },
+              "text": "в",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 7
+              },
+              "text": "невидимое",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 189,
+               "wordId": 8
+              },
+              "text": "облако",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 9
+              },
+              "text": "вслед",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 10
+              },
+              "text": "за",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 11
+              },
+              "text": "людским",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 12
+              },
+              "text": "вращением",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 13
+              },
+              "text": "заполняющее",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 14
+              },
+              "text": "всё",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 189,
+               "wordId": 15
+              },
+              "text": "пространство",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "source/post1950/zhur_russru/kovcheg/kovcheg44_birjulin.xml"
+           },
+           "end": 193,
+           "start": 186
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "pagination": {
+   "maxAvailablePage": 18,
+   "totalPageCount": 18
+  },
+  "queryStats": {
+   "textCount": 53,
+   "wordUsageCount": 54
+  },
+  "sorting": {
+   "currentSorting": "grstd"
+  },
+  "subcorpStats": {}
+ }
+}
