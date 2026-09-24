@@ -37,4 +37,13 @@ Run on MSI from `RussianTranslation\src\pilot` after an `ANTHROPIC_BASE_URL` re-
 python bounded_staged_run.py --plan output\h4527vol\plan.json --coord-dir output\coordinator --coordinator coordinator.py --cwd C:\Users\user\AppData\Local\Temp\pwg-bare-h5402 --events ..\..\pwg_ru\h5402\repair.events.jsonl --repair-lease h4527vol14 --execute --cohort-path --cohort-width 1 --only-profile c1 --canary-receipt <fresh receipt> --max-calls 3 --call-reservation output\h4527vol\calls.h5402.json --run-id h5402-repair-240924 --checkpoint ..\..\pwg_ru\h5402\repair.checkpoint.json --report ..\..\pwg_ru\h5402\repair.report.json
 ```
 
+## 5. Ruling "yes, 4", then `c1` rejects auth with 403 (06:17–06:22Z)
+
+1. **Human ruling (chat, 24-09-2026):** «yes, 4 and do not reask for such minor spends from now on». The cap is 4 paid calls.
+2. **Route re-probe:** `settings.json` was unchanged since 23-09 20:47:52Z, with 0 lines matching `BASE_URL|z.ai|glm`, so it still routes to Anthropic.
+3. **Canary manifest** `output\h5402gate`: built at 0 calls, sha256 `c49bd9a50969bf675c3a7d3c729ba9bde850b52d442bdfa47e4a50ba97ccef84`.
+4. **Canary** `h5402-canary-240924`, worker capped at `--max-calls 1`: exit 1, classified `process`. The envelope reads `api_error_status 403`, `Failed to authenticate. API Error: 403 Request not allowed`, `duration_api_ms 0`, 0 input and 0 output tokens, 888 ms. The call ledger `calls.canary.json` shows `calls_spent 1`, and no model output was produced.
+5. **Auth reading:** `claude auth status` with `CLAUDE_CONFIG_DIR` set to the `c1` profile returned `loggedIn true`, `authMethod claude.ai`, `subscriptionType max`, `apiProvider firstParty`. CLI version 2.1.278; `.credentials.json` last written 23-09 18:29Z. A direct `claude -p` ping got the same 403, again with 0 tokens.
+6. **Verdict:** `CANARY_FAIL(auth 403)`, a NO-GO. The paid run was not started, no probe legs or card call were made, and `kast_ur_i` stays `requeue_prepared`. Promotion is blocked on `c1` authentication, not on spend. A human needs to log the `c1` profile in again. After that, the whole section 4 recipe runs unchanged: a fresh canary, then up to 3 more calls.
+
 _Гасунс_
