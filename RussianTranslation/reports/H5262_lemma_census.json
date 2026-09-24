@@ -1,7 +1,7 @@
 {
- "distinct_lemmas": 4912,
- "elapsed_s": 4.0,
- "generated_utc": "2026-09-24T14:08:30Z",
+ "distinct_lemmas": 4901,
+ "elapsed_s": 2.4,
+ "generated_utc": "2026-09-24T17:55:38Z",
  "gloss_scope": "{%...%} spans of the `ru` field only",
  "handoff": "H5262",
  "lemmas": [
@@ -4853,54 +4853,6 @@
   },
   {
    "cards": [
-    "car~~h0_42_pra",
-    "car~~h0_45_vi_0",
-    "car~~h1_13_ud",
-    "g_a~~h0_32_pra",
-    "gam~~h0_40_ud",
-    "gam~~h0_51_nis",
-    "gam~~h0_53_vinis",
-    "gam~~h0_zz_pw02",
-    "gam~~h2_24_upa",
-    "gam~~h2_30_nis",
-    "gam~~h3_07_vinis",
-    "h_a~~h0_11_samud",
-    "jan~~h0_16_nis",
-    "pat~~h0_31_vinis",
-    "pat~~h0_zz_pw01",
-    "si_d~~h0_zz_pw00",
-    "vac~~h0_05_a_di",
-    "vas~~h0_zz_pw01",
-    "vi_s~~h0_23_pratyupa",
-    "vi_s~~h0_zz_pw00",
-    "vid~~h0_zz_pw01",
-    "vid~~h2_03_a_di",
-    "vraj~~h0_19_nis",
-    "y_a~~h0_02_sec_2",
-    "y_a~~h0_38_a_byud",
-    "y_a~~h0_49_nis",
-    "y_a~~h0_50_a_binis",
-    "y_a~~h0_52_vinis",
-    "y_a~~h0_56_pra_0",
-    "y_a~~h0_56_pra_1",
-    "y_a~~h0_57_anupra",
-    "y_a~~h0_58_a_bipra",
-    "y_a~~h0_zz_pw01"
-   ],
-   "forms": [
-    "выступать",
-    "выступающий"
-   ],
-   "lemma": "выступать",
-   "occurrences": 43,
-   "pos": "INFN",
-   "pos_all": {
-    "INFN": 39,
-    "PRTF": 4
-   }
-  },
-  {
-   "cards": [
     "_ap~~h0_03_pratyava",
     "_ap~~h0_07_pari",
     "_ap~~h0_09_pra_0",
@@ -4991,6 +4943,54 @@
     "INFN": 40,
     "PRTF": 1,
     "VERB": 1
+   }
+  },
+  {
+   "cards": [
+    "car~~h0_42_pra",
+    "car~~h0_45_vi_0",
+    "car~~h1_13_ud",
+    "g_a~~h0_32_pra",
+    "gam~~h0_40_ud",
+    "gam~~h0_51_nis",
+    "gam~~h0_53_vinis",
+    "gam~~h0_zz_pw02",
+    "gam~~h2_24_upa",
+    "gam~~h2_30_nis",
+    "gam~~h3_07_vinis",
+    "h_a~~h0_11_samud",
+    "jan~~h0_16_nis",
+    "pat~~h0_31_vinis",
+    "pat~~h0_zz_pw01",
+    "si_d~~h0_zz_pw00",
+    "vac~~h0_05_a_di",
+    "vas~~h0_zz_pw01",
+    "vi_s~~h0_23_pratyupa",
+    "vi_s~~h0_zz_pw00",
+    "vid~~h0_zz_pw01",
+    "vid~~h2_03_a_di",
+    "vraj~~h0_19_nis",
+    "y_a~~h0_02_sec_2",
+    "y_a~~h0_38_a_byud",
+    "y_a~~h0_49_nis",
+    "y_a~~h0_50_a_binis",
+    "y_a~~h0_52_vinis",
+    "y_a~~h0_56_pra_0",
+    "y_a~~h0_56_pra_1",
+    "y_a~~h0_57_anupra",
+    "y_a~~h0_58_a_bipra",
+    "y_a~~h0_zz_pw01"
+   ],
+   "forms": [
+    "выступать",
+    "выступающий"
+   ],
+   "lemma": "выступать",
+   "occurrences": 42,
+   "pos": "INFN",
+   "pos_all": {
+    "INFN": 38,
+    "PRTF": 4
    }
   },
   {
@@ -45397,21 +45397,6 @@
   },
   {
    "cards": [
-    "yuvan"
-   ],
-   "forms": [
-    "летнем",
-    "летний"
-   ],
-   "lemma": "летний",
-   "occurrences": 3,
-   "pos": "ADJF",
-   "pos_all": {
-    "ADJF": 3
-   }
-  },
-  {
-   "cards": [
     "n_i~~h0_17_ava",
     "n_i~~h0_45_ni",
     "pat~~h0_00_pwg01"
@@ -48564,36 +48549,6 @@
    "pos": "NOUN",
    "pos_all": {
     "NOUN": 3
-   }
-  },
-  {
-   "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "рубать"
-   ],
-   "lemma": "рубать",
-   "occurrences": 3,
-   "pos": "INFN",
-   "pos_all": {
-    "INFN": 3
-   }
-  },
-  {
-   "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "рывать",
-    "рывающий"
-   ],
-   "lemma": "рывать",
-   "occurrences": 3,
-   "pos": "INFN",
-   "pos_all": {
-    "INFN": 2,
-    "PRTF": 1
    }
   },
   {
@@ -60541,20 +60496,6 @@
   },
   {
    "cards": [
-    "br_ahm_i"
-   ],
-   "forms": [
-    "сарасвати"
-   ],
-   "lemma": "сарасватить",
-   "occurrences": 2,
-   "pos": "VERB",
-   "pos_all": {
-    "VERB": 2
-   }
-  },
-  {
-   "cards": [
     "pat~~h0_42_sam",
     "pat~~h0_zz_pw02"
    ],
@@ -64105,20 +64046,6 @@
   },
   {
    "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "бивать"
-   ],
-   "lemma": "бивать",
-   "occurrences": 1,
-   "pos": "INFN",
-   "pos_all": {
-    "INFN": 1
-   }
-  },
-  {
-   "cards": [
     "man~~h0_06_anu"
    ],
    "forms": [
@@ -64423,20 +64350,6 @@
    "pos": "ADJF",
    "pos_all": {
     "ADJF": 1
-   }
-  },
-  {
-   "cards": [
-    "jan~~h0_16_nis"
-   ],
-   "forms": [
-    "бодхисаттв"
-   ],
-   "lemma": "бодхисаттво",
-   "occurrences": 1,
-   "pos": "NOUN",
-   "pos_all": {
-    "NOUN": 1
    }
   },
   {
@@ -67783,20 +67696,6 @@
    "pos": "NOUN",
    "pos_all": {
     "NOUN": 1
-   }
-  },
-  {
-   "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "грызать"
-   ],
-   "lemma": "грызать",
-   "occurrences": 1,
-   "pos": "INFN",
-   "pos_all": {
-    "INFN": 1
    }
   },
   {
@@ -71623,20 +71522,6 @@
   },
   {
    "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "кусывать"
-   ],
-   "lemma": "кусывать",
-   "occurrences": 1,
-   "pos": "INFN",
-   "pos_all": {
-    "INFN": 1
-   }
-  },
-  {
-   "cards": [
     "vas~~h2_04_a_bi"
    ],
    "forms": [
@@ -71675,20 +71560,6 @@
    "pos": "INFN",
    "pos_all": {
     "INFN": 1
-   }
-  },
-  {
-   "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "ламывающий"
-   ],
-   "lemma": "ламывать",
-   "occurrences": 1,
-   "pos": "PRTF",
-   "pos_all": {
-    "PRTF": 1
    }
   },
   {
@@ -77965,20 +77836,6 @@
   },
   {
    "cards": [
-    "ji~~h3_00_pwg00"
-   ],
-   "forms": [
-    "писанием"
-   ],
-   "lemma": "писание",
-   "occurrences": 1,
-   "pos": "NOUN",
-   "pos_all": {
-    "NOUN": 1
-   }
-  },
-  {
-   "cards": [
     "_buj~~h0_zz_pw"
    ],
    "forms": [
@@ -83295,20 +83152,6 @@
    "pos": "INFN",
    "pos_all": {
     "INFN": 1
-   }
-  },
-  {
-   "cards": [
-    "_cid~~h0_zz_pw"
-   ],
-   "forms": [
-    "резанный"
-   ],
-   "lemma": "резать",
-   "occurrences": 1,
-   "pos": "PRTF",
-   "pos_all": {
-    "PRTF": 1
    }
   },
   {
@@ -89445,11 +89288,21 @@
   }
  ],
  "lemmatizer": "pymorphy3 2.0.6",
+ "precision_filters": {
+  "ellipsis_fragments_skipped": 15,
+  "handoff": "H5468",
+  "proper_name_lemmas_dropped": 2,
+  "term_skiplist_entries": 3,
+  "term_skiplist_skipped": 1
+ },
  "skipped": {
-  "non-content-or-name": 4105
+  "ellipsis-fragment": 15,
+  "non-content-or-name": 4105,
+  "proper-name-capitalised": 3,
+  "term-skiplist": 1
  },
  "store": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pwg_ru_translated.jsonl",
  "store_cards": 11534,
- "tokens_content": 29565,
+ "tokens_content": 29549,
  "tokens_seen": 39425
 }

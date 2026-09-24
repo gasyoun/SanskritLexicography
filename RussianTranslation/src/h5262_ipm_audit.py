@@ -74,6 +74,23 @@ MIN_LEN = 3
 # form would be meaningless. They are abbreviations, which the mission excludes.
 ABBREV_DASH_L = re.compile(r"^[а-яё]+-л$")
 
+# --- H5468 precision filters (H5262 spot-check, 6 of 30 flags were measurement artifacts)
+# 1. Ellipsis fragments. PWG prints a prefix series elliptically and the RU gloss keeps the
+#    shape: "срезающий, разрезающий, -ламывающий, -рывающий". The token after the hyphen is
+#    half a word ("-ламывающий" = раз-/об-ламывающий), so pymorphy invents a lemma
+#    ("ламывать") that NKRYa can only answer 0 to. The hyphen is NOT part of the token —
+#    CYR_WORD starts matching after it — so the fragment is invisible unless the character
+#    in front of the match is inspected. An internal hyphen ("столько-то") is consumed by
+#    CYR_WORD itself, so this test never fires on a real compound.
+# 2. Sentence-internal capitals are proper names. pymorphy's Name/Surn/Geox grammemes miss
+#    Indic onomastics: "Сарасвати" parses as a verb ("сарасватить"). A token capitalised in
+#    every one of its sentence-internal occurrences is a name, whatever pymorphy says.
+# 3. An explicit term list for what neither test catches: Indological terms in the Russian
+#    scholarly register that pymorphy mis-lemmatises ("бодхисаттв" -> "бодхисаттво").
+#    Every entry needs a spot-check witness — see data/h5262_term_skiplist.txt.
+SENTENCE_BREAK = set(".!?;|\n\r")
+TERM_SKIPLIST_FILE = "h5262_term_skiplist.txt"
+
 
 def gloss_text(ru):
     """Concatenated {%...%} gloss spans of a card, apparatus stripped."""
@@ -113,6 +130,39 @@ class Lemmatizer(object):
         return result
 
 
+def load_term_skiplist(path=None):
+    """Lowercased surface/lemma entries of data/h5262_term_skiplist.txt (may be absent)."""
+    path = path or os.path.join(REPO, "data", TERM_SKIPLIST_FILE)
+    out = set()
+    if not os.path.exists(path):
+        return out
+    with io.open(path, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.split("#", 1)[0].strip().lower()
+            if line:
+                out.add(line)
+    return out
+
+
+def is_ellipsis_fragment(text, start):
+    """True when the token at `start` is the tail of an ellipted prefix series.
+
+    "срезающий, разрезающий, -ламывающий" — the hyphen stands for the prefixes printed on
+    the earlier members, so "-ламывающий" is not a word and its lemma is an invention.
+    """
+    return start > 0 and text[start - 1] == "-"
+
+
+def _sentence_internal(text, start):
+    """True when the token at `start` is NOT the first token of its sentence or segment."""
+    i = start - 1
+    while i >= 0 and text[i].isspace():
+        i -= 1
+    if i < 0:
+        return False
+    return text[i] not in SENTENCE_BREAK
+
+
 def iter_store(path, limit=None):
     with io.open(path, encoding="utf-8") as fh:
         for i, line in enumerate(fh):
@@ -124,13 +174,20 @@ def iter_store(path, limit=None):
             yield json.loads(line)
 
 
-def extract(store, out_path, limit=None):
+def extract(store, out_path, limit=None, skiplist=None):
     lem = Lemmatizer()
+    skip_terms = load_term_skiplist() if skiplist is None else skiplist
     per_lemma = {}
     cards = 0
     tokens_seen = 0
     tokens_kept = 0
     skipped_pos = Counter()
+    # Capitalisation evidence per surface token. `cap_internal` counts capitals that are
+    # NOT sentence/segment-initial — those alone prove a name. `cap_any`/`low_any` count
+    # every occurrence, for the weaker second test below.
+    cap_internal = Counter()
+    cap_any = Counter()
+    low_any = Counter()
     started = time.time()
 
     for rec in iter_store(store, limit):
@@ -139,15 +196,31 @@ def extract(store, out_path, limit=None):
         if not text.strip():
             continue
         card_id = rec.get("subcard") or rec.get("key1") or str(cards)
-        for token in CYR_WORD.findall(text):
+        for match in CYR_WORD.finditer(text):
+            token = match.group(0)
             tokens_seen += 1
             if len(token) < MIN_LEN:
+                continue
+            if is_ellipsis_fragment(text, match.start()):
+                skipped_pos["ellipsis-fragment"] += 1
+                continue
+            if token.lower() in skip_terms:
+                skipped_pos["term-skiplist"] += 1
                 continue
             hit = lem(token)
             if hit is None:
                 skipped_pos["non-content-or-name"] += 1
                 continue
             lemma, pos = hit
+            if lemma in skip_terms:
+                skipped_pos["term-skiplist"] += 1
+                continue
+            if token[0].isupper():
+                cap_any[token.lower()] += 1
+                if _sentence_internal(text, match.start()):
+                    cap_internal[token.lower()] += 1
+            else:
+                low_any[token.lower()] += 1
             tokens_kept += 1
             slot = per_lemma.get(lemma)
             if slot is None:
@@ -160,8 +233,24 @@ def extract(store, out_path, limit=None):
             if len(slot["cards"]) < 40:
                 slot["cards"].add(card_id)
 
+    # A surface token capitalised in every one of its sentence-internal occurrences is a
+    # proper name pymorphy failed to tag. Drop a lemma only when ALL of its surface forms
+    # are such tokens — a lemma with any lowercase witness is an ordinary word that merely
+    # happens to also start a name.
+    # Two tests, both requiring no lowercase witness anywhere:
+    #  (a) one sentence-internal capital is already decisive — no ordinary word takes one;
+    #  (b) a token that is ALWAYS capitalised and occurs at least twice is a name even when
+    #      every occurrence opens its gloss segment (PWG-RU glosses open lowercase, so a
+    #      repeated segment-initial capital is onomastics: «Сарасвати», live 24-09-2026).
+    name_tokens = {t for t, n in cap_any.items()
+                   if not low_any.get(t) and (cap_internal.get(t) or n >= 2)}
+    dropped_names = 0
     rows = []
     for slot in per_lemma.values():
+        if name_tokens.issuperset(slot["forms"]):
+            dropped_names += 1
+            skipped_pos["proper-name-capitalised"] += slot["occurrences"]
+            continue
         rows.append({
             "lemma": slot["lemma"],
             "pos": slot["pos"].most_common(1)[0][0],
@@ -182,6 +271,13 @@ def extract(store, out_path, limit=None):
         "tokens_seen": tokens_seen,
         "tokens_content": tokens_kept,
         "skipped": dict(skipped_pos),
+        "precision_filters": {
+            "handoff": "H5468",
+            "ellipsis_fragments_skipped": skipped_pos.get("ellipsis-fragment", 0),
+            "term_skiplist_skipped": skipped_pos.get("term-skiplist", 0),
+            "term_skiplist_entries": len(skip_terms),
+            "proper_name_lemmas_dropped": dropped_names,
+        },
         "distinct_lemmas": len(rows),
         "elapsed_s": round(time.time() - started, 1),
         "lemmas": rows,
@@ -394,10 +490,14 @@ def flag(census_path, ledger_path, out_path):
             # "no portrait" is not "absent": fall back to the lemma's concordance hits,
             # then to its surface form's, and call it ABSENT only when both are zero.
             ipm, basis = _hits_ipm(rec)
-        if ipm is None and cat is None and "-" in lemma:
+        if "-" in lemma:
             # NKRYa tokenizes a hyphenated compound («один-единственный», «столько-то»)
             # into separate words, so a single-token lex/form query can never match it:
             # zero hits here is a query-shape verdict, not a corpus one (live 24-09-2026).
+            # H5468: a NON-zero count is no better. The spot-check caught «столько-то»
+            # flagged RARE on a 5-hit portrait — a frequent pronoun undercounted by the
+            # same tokenization. Any single-token verdict on a hyphenated lemma is
+            # unverifiable, whatever number comes back.
             counts["unverifiable-compound"] += 1
             continue
         if ipm is None and cat is None:
@@ -689,7 +789,10 @@ class _FakeClient(object):
 
     TABLE = {"близкий": (120.0, 6), "союзить": (None, None), "друг": (300.0, 6),
              "доверенный": (0.4, 1), "сгинуть": (None, None),
-             "лемматизированный": (None, None), "столько-то": (None, None)}
+             "лемматизированный": (None, None),
+             # H5468: a hyphenated compound with a REAL portrait — NKRYa's tokenizer
+             # undercounts it, so the number is unverifiable, not rare.
+             "столько-то": (0.4, 1)}
 
     def __init__(self):
         self.http_calls = 0
@@ -744,14 +847,46 @@ def selftest():
         fh.write(json.dumps({"subcard": "c3",
                              "ru": "{%сгинуть; лемматизированного; столько-то%}"},
                             ensure_ascii=False) + "\n")
+        # H5468 precision fixtures, one per artifact class the H5262 spot-check found.
+        fh.write(json.dumps(
+            {"subcard": "c4",
+             "ru": "{%срезающий, разрезающий, -ламывающий%}"
+                   "{%река Сарасвати и Сарасвати снова%}"
+                   "{%состояния бодхисаттв в тексте%}"},
+            ensure_ascii=False) + "\n")
 
     census_p = os.path.join(tmp, "census.json")
-    doc = extract(store, census_p)
+    skiplist = {"бодхисаттв", "бодхисаттво"}
+    doc = extract(store, census_p, skiplist=skiplist)
     lemmas = {r["lemma"] for r in doc["lemmas"]}
     ok("близкий" in lemmas, "adjective lemmatized")
     ok("друг" in lemmas, "noun lemmatized")
     ok("и" not in lemmas, "conjunction dropped as a function word")
-    ok(doc["store_cards"] == 3, "all cards read")
+    ok(doc["store_cards"] == 4, "all cards read")
+
+    # H5468 filter 1 — a hyphen in front of the token means an ellipted prefix series.
+    ok("разрезать" in lemmas,
+       "an intact member of an ellipsis series («разрезающий») is kept")
+    ok("ламывать" not in lemmas,
+       "the fragment after the hyphen («-ламывающий») never reaches the census")
+    ok(doc["precision_filters"]["ellipsis_fragments_skipped"] == 1,
+       "the skipped ellipsis fragment is counted in the census")
+    # H5468 filter 2 — capitalised in every sentence-internal occurrence = a proper name.
+    ok("сарасвати" not in lemmas and "сарасватить" not in lemmas,
+       "an Indic proper name pymorphy reads as a verb is dropped")
+    ok(doc["precision_filters"]["proper_name_lemmas_dropped"] >= 1,
+       "the dropped proper name is counted in the census")
+    ok("река" in lemmas,
+       "a lowercase neighbour of a proper name survives the capitalisation test")
+    # H5468 filter 3 — the explicit Indological term list.
+    ok(not any(l.startswith("бодхисаттв") for l in lemmas),
+       "a skiplisted Indological term never reaches the census")
+    ok(doc["precision_filters"]["term_skiplist_skipped"] == 1,
+       "the skiplist hit is counted in the census")
+    ok(load_term_skiplist() >= {"бодхисаттв"},
+       "the shipped data/h5262_term_skiplist.txt parses and carries its seed entry")
+    ok(not is_ellipsis_fragment("столько-то", 0),
+       "an INTERNAL hyphen is not an ellipsis marker — CYR_WORD consumes the whole token")
 
     rows = [{"lemma": "аа", "occurrences": 5}, {"lemma": "бб", "occurrences": 1},
             {"lemma": "вввв", "occurrences": 1}, {"lemma": "гг", "occurrences": 9}]
@@ -802,7 +937,7 @@ def selftest():
        "zero lemma hits but an attested surface form: RARE via the form, not ABSENT")
     ok(fdoc["counts"].get("unverifiable-compound") == 1
        and not any("-" in r["lemma"] for r in fdoc["flagged"]),
-       "a zero-hit hyphenated compound is unverifiable, never ABSENT")
+       "a hyphenated compound is unverifiable even on a category-1 portrait (H5468)")
     ok("ARCHAIC" in flagged["доверенный"]["classes"],
        "19c slice holding >= half the usages is flagged ARCHAIC")
     ok(flagged["союзить"]["severity"] > flagged["доверенный"]["severity"],
