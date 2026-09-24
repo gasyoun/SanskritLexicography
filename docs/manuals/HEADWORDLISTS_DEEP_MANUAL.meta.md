@@ -20,7 +20,7 @@ VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
 COMMANDS_SPOT_RUN: 9
 ```
 
-H3059 (20-08-2026): now-2026 file count 25 (was 23; PD key1+key2 present); BOM still exactly 6 files; union_headwords.tsv 323,425 data rows; AP-unique-key1-88867.txt line count = 88,867; sanhw1.xlsx 41,221,158 B; heritage gzip 538,102 B; script census 16+5+9=30; `headword_diff.py --help` and `build_union.py --help` exit 0. Earlier 18-07-2026 era `wc -l` / BOM method still holds.
+H3059 (20-08-2026): now-2026 file count 25 (was 23; PD key1+key2 present); BOM still exactly 6 files; union_headwords.tsv 323,422 data rows; AP-unique-key1-88867.txt line count = 88,867; sanhw1.xlsx 41,221,158 B; heritage gzip 538,102 B; script census 16+5+9=30; `headword_diff.py --help` and `build_union.py --help` exit 0. Earlier 18-07-2026 era `wc -l` / BOM method still holds.
 
 ## Improvement backlog
 

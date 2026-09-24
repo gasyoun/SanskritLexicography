@@ -23,7 +23,7 @@ record throughout.
 |---|---|---|---|
 | 2014 exports | [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) | 31 `.txt`: key1/key2 exports for 16 dict codes + 2 `fehlerhaft` + SCH accents + the HK join + the Huet list | **frozen** (extracted 2014-10-05) |
 | 2026 regenerations | [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) | 25 `.txt` (20-08-2026): current key1+key2 for 15 csl-orig dicts **plus PD** from `PD_SRC` (not csl-orig) | regenerable |
-| Cross-dict union | [union/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) | the merged 323,425-headword index + fold/coverage sidecars — **the print target** | regenerable |
+| Cross-dict union | [union/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) | the merged 323,422-headword index + fold/coverage sidecars — **the print target** | regenerable |
 | Alternate/feminine candidates | [f_candidates/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/f_candidates) | MW + SKD fem↔masc / orphan-fem / variant TSVs (print-readiness item F) | regenerable |
 | External spines | [Catalan-Pujol/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/Catalan-Pujol) + [Huet-INRIA-Wordlist-vs-Cologne.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md) | Pujol Sanskrit–Catalan lemma list; INRIA Heritage 2014 stem list; their CDSL/DCS coverage studies | raw lists **frozen imports**; analyses regenerable |
 | Heritage/INRIA layer | `heritage_*` at [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) root | MW↔Heritage crosswalk, French-gloss witness, inflected-forms oracle | regenerable from the **gitignored** mirror (§7) |
@@ -224,7 +224,7 @@ its cause.
 ## 6. The union and print-readiness — current state
 
 [union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md):
-**323,425** headwords across all 15 csl-orig dicts (`slp1, iast, n_dicts,
+**323,422** headwords across all 15 csl-orig dicts (`slp1, iast, n_dicts,
 dicts, gender, fem_fold`), after auto-folding 237 gender-confirmed
 `-inī`→`-in` feminines; post-fold, 180,804 headwords in ≥2 dicts and
 142,621 singletons (measured on the shipped `union_headwords.tsv`).

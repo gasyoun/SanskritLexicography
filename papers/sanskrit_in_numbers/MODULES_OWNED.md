@@ -31,7 +31,7 @@ down to the Petersburg family (PWG+PWK+SCH, D6 basis), not a new census.
 
 | Metric | n |
 |---|---|
-| Full 15-dict de-duplicated union | 323,425 |
+| Full 15-dict de-duplicated union | 323,422 |
 | Petersburg family (PWG+PWK+SCH) headwords, naive sum | 285,799 |
 | Petersburg family, de-duplicated union | 167,904 |
 | **Naive-sum double-count inflation** | **+70.2%** |

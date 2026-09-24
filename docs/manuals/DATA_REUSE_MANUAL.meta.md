@@ -20,7 +20,7 @@ VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
 COMMANDS_SPOT_RUN: 6
 ```
 
-H3059 (20-08-2026): now-2026 25 txt (was 23); BOM still 6; union 323,425 data rows; AP 88,867; headword_index.tsv 98,639 data rows; Indische Sprüche 7,537; relationships_rollup.tsv is an 11-row subtype table summing to 6,374 (not 5,603 per-sense rows).
+H3059 (20-08-2026): now-2026 25 txt (was 23); BOM still 6; union 323,422 data rows; AP 88,867; headword_index.tsv 98,639 data rows; Indische Sprüche 7,537; relationships_rollup.tsv is an 11-row subtype table summing to 6,374 (not 5,603 per-sense rows).
 
 ## Improvement backlog
 
