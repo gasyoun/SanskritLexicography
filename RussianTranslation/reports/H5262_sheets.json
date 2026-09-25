@@ -1,6 +1,120 @@
 {
+ "cards_total": 137,
+ "handoff": "H5468",
+ "note": "Sheet 1 is committed on gasyoun.github.io branch h5262-nkrya-flags-b01 (b589c33) on the Mac with its vote-hub index row; sheets 2-14 are prepared by H5468 in this repo's review/ and still need their hub commit. The hub's pre-push guard reserves the publishing push to a human (ALLOW_PUBLISH_PUSH), so every URL below goes live only when MG pushes. Publish-safety: PWG-RU glosses are this project's own translation output, PWG German is 19th-century public domain, NKRYa concordance sentences are deliberately omitted, and a scan found no e-mails, keys or local paths.",
  "sheets": [
-  {"batch": 1, "cards": 10, "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b01_24-09-2026.html"}
+  {
+   "batch": 1,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b01_10.html",
+   "published": true,
+   "sheet_id": "h5262-nkrya-flags-b01-2026-09-24",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b01_24-09-2026.html"
+  },
+  {
+   "batch": 2,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b02_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b02-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b02_25-09-2026.html"
+  },
+  {
+   "batch": 3,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b03_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b03-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b03_25-09-2026.html"
+  },
+  {
+   "batch": 4,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b04_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b04-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b04_25-09-2026.html"
+  },
+  {
+   "batch": 5,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b05_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b05-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b05_25-09-2026.html"
+  },
+  {
+   "batch": 6,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b06_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b06-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b06_25-09-2026.html"
+  },
+  {
+   "batch": 7,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b07_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b07-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b07_25-09-2026.html"
+  },
+  {
+   "batch": 8,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b08_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b08-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b08_25-09-2026.html"
+  },
+  {
+   "batch": 9,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b09_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b09-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b09_25-09-2026.html"
+  },
+  {
+   "batch": 10,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b10_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b10-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b10_25-09-2026.html"
+  },
+  {
+   "batch": 11,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b11_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b11-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b11_25-09-2026.html"
+  },
+  {
+   "batch": 12,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b12_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b12-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b12_25-09-2026.html"
+  },
+  {
+   "batch": 13,
+   "cards": 10,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b13_10.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b13-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b13_25-09-2026.html"
+  },
+  {
+   "batch": 14,
+   "cards": 7,
+   "local_html": "RussianTranslation/review/sanskritlexicography-h5262-nkrya-flags-b14_7.html",
+   "published": false,
+   "sheet_id": "h5262-nkrya-flags-b14-2026-09-25",
+   "url": "https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b14_25-09-2026.html"
+  }
  ],
- "note": "Sheet 1 is committed on gasyoun.github.io branch h5262-nkrya-flags-b01 (b589c33) with its vote-hub index row; the hub's pre-push guard reserves the publishing push to a human (ALLOW_PUBLISH_PUSH), so the URL goes live when MG pushes that commit to master. Publish-safety: PWG-RU glosses are this project's own translation output, PWG German is 19th-century public domain, NKRYa concordance sentences are deliberately omitted, and a scan found no e-mails, keys or local paths. Sheets 2+ follow the unattended drain."
+ "sheets_total": 14
 }

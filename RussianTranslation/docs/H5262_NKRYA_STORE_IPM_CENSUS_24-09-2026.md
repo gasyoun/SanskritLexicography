@@ -1,4 +1,4 @@
-_Created: 24-09-2026 · Last updated: 24-09-2026_
+_Created: 25-09-2026 · Last updated: 25-09-2026_
 
 # H5262 — NKRYa ipm census of the PWG-RU store's content words
 
@@ -255,8 +255,21 @@ Flagged lemmas by severity:
 ## 5. Vote sheets (≤10 cards each)
 
 1. Sheet 1 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b01_24-09-2026.html
+2. Sheet 2 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b02_25-09-2026.html
+3. Sheet 3 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b03_25-09-2026.html
+4. Sheet 4 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b04_25-09-2026.html
+5. Sheet 5 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b05_25-09-2026.html
+6. Sheet 6 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b06_25-09-2026.html
+7. Sheet 7 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b07_25-09-2026.html
+8. Sheet 8 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b08_25-09-2026.html
+9. Sheet 9 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b09_25-09-2026.html
+10. Sheet 10 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b10_25-09-2026.html
+11. Sheet 11 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b11_25-09-2026.html
+12. Sheet 12 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b12_25-09-2026.html
+13. Sheet 13 — 10 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b13_25-09-2026.html
+14. Sheet 14 — 7 cards — https://gasyoun.github.io/vote/sheets/pwg_ru_nkrya_flags_b14_25-09-2026.html
 
-Sheet 1 is committed on gasyoun.github.io branch h5262-nkrya-flags-b01 (b589c33) with its vote-hub index row; the hub's pre-push guard reserves the publishing push to a human (ALLOW_PUBLISH_PUSH), so the URL goes live when MG pushes that commit to master. Publish-safety: PWG-RU glosses are this project's own translation output, PWG German is 19th-century public domain, NKRYa concordance sentences are deliberately omitted, and a scan found no e-mails, keys or local paths. Sheets 2+ follow the unattended drain.
+Sheet 1 is committed on gasyoun.github.io branch h5262-nkrya-flags-b01 (b589c33) on the Mac with its vote-hub index row; sheets 2-14 are prepared by H5468 in this repo's review/ and still need their hub commit. The hub's pre-push guard reserves the publishing push to a human (ALLOW_PUBLISH_PUSH), so every URL below goes live only when MG pushes. Publish-safety: PWG-RU glosses are this project's own translation output, PWG German is 19th-century public domain, NKRYa concordance sentences are deliberately omitted, and a scan found no e-mails, keys or local paths.
 
 ## 6. Coverage and what remains
 
