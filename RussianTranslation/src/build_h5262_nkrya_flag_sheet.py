@@ -15,10 +15,13 @@ tokenizer miss).
 
   python src/build_h5262_nkrya_flag_sheet.py --batch 1
       [--flags reports/H5262_flags.json] [--context reports/H5262_flag_context.json]
+  python src/build_h5262_nkrya_flag_sheet.py --all      # every batch not yet built
 
 H5262 · Opus 5.5 (claude-opus-5-5) · 24-09-2026
+H5468 · Opus 4.8 (claude-opus-4-8) · 25-09-2026 — append-only batch assignment
 """
 import argparse
+import datetime
 import html
 import io
 import json
@@ -39,7 +42,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 FLAGS = os.path.join(REPO, 'reports', 'H5262_flags.json')
 CONTEXT = os.path.join(REPO, 'reports', 'H5262_flag_context.json')
+ASSIGNMENTS = os.path.join(REPO, 'reports', 'H5262_sheet_assignments.json')
 PER_SHEET = 10
+# Sheet 1 was built on 24-09; every later sheet carries the day it was built, because the
+# NKRYa drain keeps adding flags and a sheet_id must stay unique per batch (H5468).
 GENERATED = '2026-09-24'
 
 CLASS_RU = {
@@ -110,7 +116,10 @@ def cards_panel(ctx_cards):
         items.append(
             '<li style="margin-bottom:8px"><b>%s</b> <span class="muted">(%s, %s)</span>'
             '<div>RU: %s</div><div class="muted">DE (PWG): %s</div></li>'
-            % (esc(c.get('iast') or c.get('key1')), esc(c['subcard']),
+            # The store carries `iast` for almost every card; where it is missing the
+            # fallback must still be transliterated, never raw SLP1 (H5468: «viS» on the
+            # one context card without an `iast`, which the preflight reads as a leak).
+            % (esc(c.get('iast') or slp1_iast(c.get('key1') or '')), esc(c['subcard']),
                esc(c.get('review_status') or '—'), spans,
                esc(' · '.join(human(g) for g in c.get('de_gloss') or []) or '—')))
     return '<ul style="margin:0;padding-left:18px">%s</ul>' % ''.join(items)
@@ -152,34 +161,98 @@ def german_tokens(ctx, rows):
     return tuple(sorted(set(find_slp1(human(text)))))
 
 
-def select(flags, batch):
+ASSIGN_NOTE = (
+    'Append-only lemma -> sheet batch. The NKRYa drain (h5262_ipm_audit.py query) keeps '
+    'adding verdicts, and every new flag is inserted into H5262_flags.json in severity '
+    'order — so slicing that list by position renumbers sheets that are ALREADY '
+    'published. H5468 hit exactly that: at 64 verdicts batch 1 ended on «кусывать», at '
+    '345 verdicts the same slice ends on «приформовывать», which would have silently '
+    'dropped a card off the published sheet 1 and duplicated another onto it. This ledger '
+    'freezes the mapping instead: a lemma already assigned NEVER moves, and new flags '
+    'only ever open batches after the highest one that exists.')
+
+
+def load_assignments(path=ASSIGNMENTS):
+    if os.path.exists(path):
+        with io.open(path, encoding='utf-8') as fh:
+            return json.load(fh)
+    return {'handoff': 'H5468', 'per_sheet': PER_SHEET, 'note': ASSIGN_NOTE,
+            'assigned': {}}
+
+
+def assign(flags, doc, per_sheet=PER_SHEET):
+    """Give every unassigned flag a batch, without touching an existing assignment.
+
+    Batches are sealed on creation: a sheet prepared for the vote hub is a fixed set of
+    cards, so a later drain pass may not backfill its free slots. New flags therefore
+    start at `max(existing) + 1`, even when the last batch is short.
+    """
+    assigned = doc.setdefault('assigned', {})
+    first_new = max(assigned.values()) + 1 if assigned else 1
+    fresh = [r['lemma'] for r in flags['flagged'] if r['lemma'] not in assigned]
+    for i, lemma in enumerate(fresh):
+        assigned[lemma] = first_new + i // per_sheet
+    doc['per_sheet'] = per_sheet
+    doc['note'] = ASSIGN_NOTE
+    doc['lemmas_assigned'] = len(assigned)
+    doc['batches'] = max(assigned.values()) if assigned else 0
+    # A lemma can LEAVE the flag list: H5468's precision filters retire measurement
+    # artifacts the earlier pass flagged. Its sheet keeps the assignment (the card must
+    # never reappear on a later sheet), but the retirement is recorded, because a sheet
+    # already prepared for the hub is now carrying a card its own audit withdrew.
+    live = {r['lemma'] for r in flags['flagged']}
+    doc['retired'] = {lemma: batch for lemma, batch in sorted(assigned.items())
+                      if lemma not in live}
+    doc['retired_note'] = (
+        'Assigned to a sheet by an earlier pass, no longer flagged after the H5468 '
+        'precision filters. Still listed so it can never be re-assigned; a sheet already '
+        'published needs a human decision on whether to re-cut it.')
+    return doc, fresh
+
+
+def save_assignments(doc, path=ASSIGNMENTS):
+    with io.open(path, 'w', encoding='utf-8', newline='\n') as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write('\n')
+
+
+def select(flags, batch, assigned=None):
+    """The flagged rows on one sheet — by frozen assignment when the ledger exists."""
+    if assigned:
+        return [r for r in flags['flagged'] if assigned.get(r['lemma']) == batch]
     rows = [r for r in flags['flagged']]
     lo = (batch - 1) * PER_SHEET
     return rows[lo:lo + PER_SHEET]
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument('--batch', type=int, default=1)
-    ap.add_argument('--flags', default=FLAGS)
-    ap.add_argument('--context', default=CONTEXT)
-    ap.add_argument('--out')
-    a = ap.parse_args(argv)
+def subcard_tokens(ctx, rows):
+    """SLP1 heads of the store ids shown on this sheet.
 
-    with io.open(a.flags, encoding='utf-8') as fh:
-        flags = json.load(fh)
-    ctx = {}
-    if os.path.exists(a.context):
-        with io.open(a.context, encoding='utf-8') as fh:
-            ctx = json.load(fh)
-    rows = select(flags, a.batch)
-    if not rows:
-        raise SystemExit('batch %d is empty (%d flagged lemmas)' % (a.batch,
-                                                                    len(flags['flagged'])))
-    sheet_id = 'h5262-nkrya-flags-b%02d-%s' % (a.batch, GENERATED)
-    out_path = a.out or os.path.join(
+    A card is labelled with its IAST headword and, in parentheses, its store subcard id
+    («rakṣ (rakz~~h0_03_sec_3)»). The id half is SLP1 by construction — it is the store's
+    key — and the preflight's SLP1-in-human-text rule reads it as a transliteration leak
+    (H5468: batch 3 died on «rakz»). Only the ids actually rendered on this sheet are
+    allowed, so a real leak anywhere else still blocks.
+    """
+    from csl_pyutil.evidence import find_slp1
+    ids = ' '.join((c.get('subcard') or '').split('~~')[0]
+                   for r in rows for c in ctx.get(r['lemma']) or [])
+    return tuple(sorted(set(find_slp1(ids))))
+
+
+def sealed(batch, review_dir=None):
+    """True when this batch already has a review-binding lock, whatever date it carries."""
+    import glob
+    pattern = os.path.join(review_dir or os.path.join(REPO, 'review', 'locks'),
+                           'h5262-nkrya-flags-b%02d-*.lock.json' % batch)
+    return bool(glob.glob(pattern))
+
+
+def build_sheet(rows, ctx, batch, generated=GENERATED, out=None):
+    sheet_id = 'h5262-nkrya-flags-b%02d-%s' % (batch, generated)
+    out_path = out or os.path.join(
         REPO, 'review', 'sanskritlexicography-h5262-nkrya-flags-b%02d_%d.html'
-        % (a.batch, len(rows)))
+        % (batch, len(rows)))
     items = [build_item(r, ctx.get(r['lemma']) or []) for r in rows]
 
     manifest = EvidenceManifest(sheet_id, [it['id'] for it in items],
@@ -203,7 +276,7 @@ def main(argv=None):
     config = {
         'sheet_id': sheet_id,
         'title': 'НКРЯ-аудит глосс PWG-RU (H5262), лист %d: редкие и отсутствующие слова'
-                 % a.batch,
+                 % batch,
         'subtitle': ('Каждое содержательное слово русских глосс PWG-RU сверено с частотой в '
                      'Национальном корпусе русского языка. Здесь — слова, которых в корпусе '
                      'нет, которые очень редки (меньше 1 на миллион) или живут в основном в '
@@ -216,9 +289,10 @@ def main(argv=None):
         'reject_labels': REJECT_LABELS,
         'filters': [('absent', 'нет в НКРЯ'), ('rare', 'очень редкие'),
                     ('archaic', 'архаизмы')],
-        'generated': GENERATED,
+        'generated': generated,
         # English words the SLP1 detector reads as transliteration (F/Y/R/z are SLP1).
-        'preflight': {'allow_slp1_tokens': ('NKRYa', 'surface') + german_tokens(ctx, rows)},
+        'preflight': {'allow_slp1_tokens': ('NKRYa', 'surface')
+                      + german_tokens(ctx, rows) + subcard_tokens(ctx, rows)},
         # V13: the only id a question names is the «quoted» gloss word, which is its own
         # real-world identity — a Russian word, glossed with its class right beside it.
         'identity_gate': {
@@ -243,8 +317,56 @@ def main(argv=None):
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with io.open(out_path, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(doc)
-    write_lock(sheet_id, chash, [it['id'] for it in items], GENERATED, source_html=out_path)
+    write_lock(sheet_id, chash, [it['id'] for it in items], generated, source_html=out_path)
     print('wrote %d cards -> %s (sheet_id %s)' % (len(items), out_path, sheet_id))
+    return sheet_id, out_path
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument('--batch', type=int, default=1)
+    ap.add_argument('--all', action='store_true',
+                    help='build every assigned batch whose sheet is not on disk yet')
+    ap.add_argument('--flags', default=FLAGS)
+    ap.add_argument('--context', default=CONTEXT)
+    ap.add_argument('--assignments', default=ASSIGNMENTS)
+    ap.add_argument('--generated', default=None,
+                    help='sheet date (default: today UTC; sheet 1 is %s)' % GENERATED)
+    ap.add_argument('--out')
+    a = ap.parse_args(argv)
+
+    with io.open(a.flags, encoding='utf-8') as fh:
+        flags = json.load(fh)
+    ctx = {}
+    if os.path.exists(a.context):
+        with io.open(a.context, encoding='utf-8') as fh:
+            ctx = json.load(fh)
+
+    doc = load_assignments(a.assignments)
+    doc, fresh = assign(flags, doc)
+    save_assignments(doc, a.assignments)
+    assigned = doc['assigned']
+    if fresh:
+        print('assigned %d new flag(s); %d lemmas over %d batch(es)'
+              % (len(fresh), len(assigned), doc['batches']))
+
+    generated = a.generated or datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
+    batches = sorted(set(assigned.values())) if a.all else [a.batch]
+    built = []
+    for batch in batches:
+        rows = select(flags, batch, assigned)
+        if not rows:
+            if a.all:
+                continue
+            raise SystemExit('batch %d is empty (%d flagged lemmas)'
+                             % (batch, len(flags['flagged'])))
+        # A built sheet leaves a review-binding lock. In --all mode that lock is the seal:
+        # rebuilding it under today's date would mint a second sheet_id for cards a human
+        # may already be voting on.
+        if a.all and sealed(batch):
+            print('batch %d already built (lock present) — left alone' % batch)
+            continue
+        built.append(build_sheet(rows, ctx, batch, generated, a.out))
     return 0
 
 

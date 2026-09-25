@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b11-2026-09-25",
+  "content_hash": "sha256:e04f4b3818b7fb5fbaf1ef9e2c05af9d654fd2744ec5e4cee1940f21cc898758",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-нежизнеспособный",
+    "L-попрошайничать",
+    "L-взбалтывать",
+    "L-всасываться",
+    "L-произноситься",
+    "L-застаиваться",
+    "L-бездейственный",
+    "L-вкрадываться",
+    "L-прелюбодействовать",
+    "L-предоставляться"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b11_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

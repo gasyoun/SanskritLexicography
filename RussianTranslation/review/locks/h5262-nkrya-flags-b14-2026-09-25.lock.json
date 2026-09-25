@@ -1,0 +1,21 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b14-2026-09-25",
+  "content_hash": "sha256:3824284758b5033b8df3d32c106893c3cb374a49cb58635e3535c24703fae7f3",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 7,
+  "ids": [
+    "L-благонравный",
+    "L-закрепляться",
+    "L-захлопываться",
+    "L-благонравие",
+    "L-предводительствовать",
+    "L-приготовляться",
+    "L-благодетельный"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b14_7.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

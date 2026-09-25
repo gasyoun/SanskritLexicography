@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b09-2026-09-25",
+  "content_hash": "sha256:019be7463de5ea5abcc350471f22b2cf20953c282dd866cbbd1fd904a143ed5b",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-околдовывать",
+    "L-отображаться",
+    "L-поддерживаться",
+    "L-воздаваться",
+    "L-переубеждать",
+    "L-раскрошиться",
+    "L-стесненность",
+    "L-отвратиться",
+    "L-дрессированный",
+    "L-низвергнуться"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b09_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

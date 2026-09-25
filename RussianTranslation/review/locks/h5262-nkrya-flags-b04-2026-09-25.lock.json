@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b04-2026-09-25",
+  "content_hash": "sha256:dec81bd6f1ecdc4125b38910f0f952eb3d71dd9b2d0ebbb5172fcaddeb64e8ea",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-незадержанный",
+    "L-неослабленный",
+    "L-оппозиционировать",
+    "L-подразумеваемость",
+    "L-полузаглохнуть",
+    "L-свидетельствующий",
+    "L-спалять",
+    "L-запруживание",
+    "L-неизмеренный",
+    "L-отпугать"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b04_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}
