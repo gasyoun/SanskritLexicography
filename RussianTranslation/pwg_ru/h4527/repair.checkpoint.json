@@ -1,0 +1,66 @@
+{
+  "schema": "pwg.cohort_engine.v1",
+  "leases": {
+    "h4527vol14": {
+      "phase": "done",
+      "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527vol14\\requeue\\rq01-defect\\workflow_result.headless.h4527vol14.rq01-defect.json",
+      "report": {
+        "requeue_keys": [
+          "kast_ur_i~~h0_zz_pw"
+        ],
+        "satisfied_keys": [],
+        "clean_count": 0,
+        "calls": 1,
+        "cost": null,
+        "audit_state": "needs_requeue",
+        "lease_state": "needs_requeue",
+        "store_delta": null
+      }
+    },
+    "h4527dr01": {
+      "phase": "done",
+      "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527dr01\\workflow_result.headless.h4527dr01.json",
+      "report": {
+        "requeue_keys": [],
+        "satisfied_keys": [],
+        "clean_count": 1,
+        "calls": 1,
+        "cost": null,
+        "audit_state": "clean",
+        "lease_state": "ready",
+        "store_delta": null
+      }
+    }
+  },
+  "wave": {
+    "promoted": true,
+    "tm_done": true,
+    "receipt": {
+      "schema": "pwg.cohort_live_dispatch.v1",
+      "members": [
+        "h4527dr01"
+      ],
+      "lease_ids": [
+        "h4527dr01"
+      ],
+      "gen_model_version": "claude-sonnet-5",
+      "promoted": true,
+      "returncode": 0,
+      "stdout_tail": "backed up prior store -> pwg_ru_translated.jsonl.premerge.20260923T014956.193518Z.p23836.16a649e923e1.bak\nBATCH PROMOTE: 1 lease(s), 1 subcard(s), 3 sense rows; store 11534 -> 11534 rows\n  h4527dr01: 1 subcard(s), 3 row(s)\npromoted 1 lease(s)\n",
+      "promoted_at": "2026-09-23T01:50:05Z"
+    }
+  },
+  "calls_spent": 2,
+  "calls_reserved": 2,
+  "peak_concurrency": 1,
+  "requeue_backlog_keys": [
+    "kast_ur_i~~h0_zz_pw"
+  ],
+  "accepted_order": [
+    "h4527dr01"
+  ],
+  "stop_reason": null,
+  "effective_width": 1,
+  "probed": [],
+  "coord_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator"
+}
