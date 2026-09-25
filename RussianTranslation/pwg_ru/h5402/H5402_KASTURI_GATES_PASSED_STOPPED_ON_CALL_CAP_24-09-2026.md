@@ -1,4 +1,4 @@
-_Created: 24-09-2026 · Last updated: 24-09-2026_
+_Created: 24-09-2026 · Last updated: 25-09-2026_
 
 # H5402, 24-09-2026: `kast_ur_i` free gates green, paid run stopped because the minimum spend (4 calls) is over the 3-call cap
 
@@ -66,5 +66,68 @@ python max_account_orchestrator.py probe-ration --account c1
 ```
 
 must exit 0 with `legal_now: true`; then the fresh `dq_canary_puregloss` canary (1 call, the auth proof §6.4 is missing), then the §4 `bounded_staged_run.py` line. Cap: 4 paid calls total, per the second ruling. If the canary 403s again, the blocker reverts to auth and belongs to a human.
+
+## 7. Third attempt, 24-09-2026 23:05–23:20Z: auth 403 RETIRED by a live canary GO — new blocker is the H2157 cost-gate shape, one word from a human
+
+Unattended worker pass 1 on executor Claude/c1 (Opus 5 `claude-opus-5[1m]`), running **locally on MSI** (no SSH hop). **1 paid call spent of the 4 authorized.** `kast_ur_i` is still `requeue_prepared` — not promoted.
+
+### 7.1 Free gates, all green
+
+1. **Route.** `settings.json` `env` keys are `API_TIMEOUT_MS`, `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`, `DEEPPAPERNOTE_OBSIDIAN_VAULT`, `ENABLE_TOOL_SEARCH`, `PYTHONIOENCODING`, `PYTHONUTF8`, `SHUNT_MIN_LINES` — no `ANTHROPIC_BASE_URL`; `grep -ic "BASE_URL|z\.ai|glm"` over the file returns **0**; no `ANTHROPIC*` variable in the shell environment. **Anthropic route.**
+2. **Ration.** `probe-ration --account c1` exit **0**, `legal_now: true`, `attempts_today: ["2026-09-24T15:20:17Z"]` (the H5403 entry from §6.3), `next_legal_utc` now in the past against `min_gap_s: 21600`. Fingerprint `9321e2c1…acd6b`. One of the day's two attempts remains.
+3. **Lease.** `h4527vol14` unchanged at attempt **2** (`rq02-defect`, `current_artifact_dir …/requeue/rq02-defect`), `config_dir` the `c1` profile. The §4 recipe still applies.
+
+### 7.2 The auth blocker of §5 is RETIRED — proven, not inferred
+
+A fresh canary was built and run (1 paid call, the only spend of this pass):
+
+- **Build (0 calls):** `canary_manifest_build.py --profile-slot c1 --outdir src/pilot/output/h5402gate25`, manifest sha256 `16d1596c5b79cebf5f214c6d56f3caac4343c264762f1aa1e29883045294b8a4`.
+- **Execute (1 call):** `headless_worker.py … --only-profile c1 --max-agents 1 --timeout 600 --max-calls 1 --run-id h5402-canary-250925`. Exit **0**, `classification: "success"`, `elapsed_ms 19064`, `result_sha256 15c9a8b2…7084fd1`. Ledger [calls.canary.250925.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h5402/calls.canary.250925.json): `calls_spent 1`, purpose `headless:translate`, profile `c1`.
+- **Judge (0 calls):** `canary_gate.py judge` → **`CANARY GO`**. Receipt [canary_receipt.250925.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h5402/canary_receipt.250925.json): `verdict GO`, `reasons []`, `sense_counts [["dq_canary_puregloss~~h0_zz_pw", 3]]`, `tn_hits []`, `marker_hits []`.
+
+Against §5.4's `403 Request not allowed` / 0 tokens, and §6.4's "no receipt proving a 200 on `c1` since the re-login" — **that receipt now exists.** `c1` authenticates and generates.
+
+### 7.3 Zero-call dry run: still green
+
+`bounded_staged_run.py … --repair-lease h4527vol14 --cohort-path --cohort-width 1 --only-profile c1 --max-calls 3 --run-id h5402-repair-250925` exit **0**, `projected_calls: 1`, cohort `serial (production default, width 1)`, `live_admission.admitted true` (`serial route (width 1)`), `validated_accounts ["c1"]`. The `--cwd` scratch folder was created first, so the §6/23-09 `WinError 267` cannot recur.
+
+### 7.4 The new blocker: the §4 recipe as authorized cannot start
+
+Running the §4 line verbatim with `--execute` exits **2 before any spend**, on argparse:
+
+```text
+bounded_staged_run.py: error: --execute is a PAID run and refuses to start unbounded:
+missing --cost-ceiling (H2157). Pass explicit ceilings, or --allow-unbounded for a
+deliberate unbounded window.
+```
+
+The §4 recipe carries neither flag, so **the authorized command is not runnable as written**. Both ways out were examined and neither is an agent's to take:
+
+1. **`--cost-ceiling <usd>` — provably burns 2 paid calls for 0 cards on this lane.** The fleet probe's two legs land in the same `--call-reservation` ledger *before* the supervisor loop, and Max-route calls carry no usage telemetry, so at the top of iteration 1 `budget_cap is not None and not self._durable_cost_evaluable` fires `STOP_COST_UNEVALUABLE` ([bounded_supervisor.py:301-303](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_supervisor.py#L301)). Measured live **this pass**, not assumed: the canary ledger reads `cost_evaluable: false`, `observed_cost_usd: 0.0`; the 23-09 ledger [calls.repair.230923.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/calls.repair.230923.json) reads `unevaluable_calls: 4` of 4. [H3659](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3659/H3659_NO_PWG_W09_WINDOW_29-08-2026.md) already named the consequence: "while billing telemetry is dormant, a cost-bounded window on this lane is not merely unpriced; it is **unrunnable**." It would also consume the day's last ration attempt.
+2. **`--allow-unbounded` — the disclosed escape, and not mine to issue.** It leaves `budget_cap = None` and skips the guard; `--max-calls 3` and the window cap still bind pre-spawn, so only *dollars* go unbounded, and they are unmeasurable on this lane either way. H3659 ruled on exactly this substitution in exactly these terms: the flag exists to be visible in command review for a *deliberate* unbounded window, "substituting one for the other on an agent's own judgment is exactly the guard-tunnelling defect recorded at H2851. The choice belongs to a human." The H5402 rulings authorized a **spend** (4 calls, «do not reask for such minor spends») — they say nothing about the guard shape, and [rules/agent-never-self-authorizes-an-escape.md](https://github.com/gasyoun/claude-config/blob/main/rules/agent-never-self-authorizes-an-escape.md) rule 1 forbids setting an `ALLOW_*`-shaped override in response to a refusal just hit. Splitting the probe onto a second ledger to leave the supervisor's ledger empty at loop start would tunnel the same guard less visibly, and was rejected for that reason.
+
+Note the 23-09 run that remade `dārvī` and generated this very `kast_ur_i` card completed 4 unpriced calls, so the human's own PowerShell line that day must have carried `--allow-unbounded`; the abridged quote in [the 23-09 packet](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4527/H4527_REPAIR_RUN_DARVI_REMADE_KASTURI_GATE_FALSE_POSITIVE_23-09-2026.md) §1 omits it. That is a human having chosen the escape once, not a standing delegation.
+
+### 7.5 Selftests
+
+`bounded_staged_run_selftest.py` → **PASS** (exit 0); `cohort_engine_selftest.py` → **PASS (12 pins)** (exit 0). Both run from the main checkout's `src/pilot`.
+
+### 7.6 State left behind
+
+- `kast_ur_i` (`h4527vol14`) is `requeue_prepared`, attempt 2 `rq02-defect` — **not promoted**. Prepared leases keep; the run can happen any day.
+- **Spend: 1 paid call** (the canary) of the 4 authorized. 3 remain authorized.
+- **Ration: 1 of 2 attempts still free today** — no fleet probe ran. It resets at 00:00Z.
+- Canary receipt is fresh for 6 h from 23:11Z, i.e. usable until **2026-09-25T05:11Z**; after that a new canary is another call.
+- Nothing was overridden, no code changed.
+
+### 7.7 What a human does — one word
+
+The whole unblock is choosing the dollar-axis flag. In plain words: the runner refuses to start a paid window unless it is told either a dollar ceiling or that dollars are deliberately not capped; on a Max subscription the API reports no per-call price, so a dollar ceiling stops the run dead after it has already paid for two warm-up probes. Reply in chat with **"run it unbounded"** (or decline), and any session runs, from `RussianTranslation\src\pilot` on MSI, within the canary's freshness window:
+
+```text
+python bounded_staged_run.py --plan output\h4527vol\plan.json --coord-dir output\coordinator --coordinator coordinator.py --cwd C:\Users\user\AppData\Local\Temp\pwg-bare-h5402 --events ..\..\pwg_ru\h5402\repair.events.jsonl --repair-lease h4527vol14 --execute --cohort-path --cohort-width 1 --only-profile c1 --canary-receipt output\h5402gate25\receipt.canary.json --allow-unbounded --max-calls 3 --call-reservation output\h4527vol\calls.h5402.json --run-id h5402-repair-250925 --checkpoint ..\..\pwg_ru\h5402\repair.checkpoint.json --report ..\..\pwg_ru\h5402\repair.report.json
+```
+
+**If you say it:** `kast_ur_i` is generated and promoted into the store with Anthropic-id provenance, ~3 more paid calls, ~5 minutes. **If you do not:** the card stays `requeue_prepared` indefinitely — H5402 cannot close, and the H4527 volume-14 lease stays one card short. **Откат:** none needed; a failed window re-requeues the lease with the defect named and spends nothing further.
 
 _Гасунс_
