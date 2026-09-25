@@ -9642,3 +9642,41 @@ H4528 shipped the watchdog opt-in for exactly that reason. The `no_progress_kill
 **Addendum (live pass, same day) — four more traps, all met against the real API.** (3) **The "no token" verdict above was a broken probe.** The Mac has no `keyring` module, so the lookup returned nothing — yet the macOS keychain has carried service `ruscorpora-api` since 23-09; `security find-generic-password -s ruscorpora-api` answered at once and the API authenticated. An empty credential lookup is UNKNOWN until the lookup itself is proven to have run. (4) **An untested concordance query shape returns HTTP 422 «Задан некорректный запрос».** The `{"words":[{"reqs":…}]}` shape is not what `/lex-gramm/concordance` accepts; the working one is `sectionValues → conditionValues(disambmod=main) + subsectionValues → conditionValues(lex|form)`, and an empty `queryStats` means 0 hits. Probe one real lemma (самообуздание: 35 MAIN, 3 in 1800–1899) before a batch spends the hourly budget. (5) **A missing NKRYa word portrait is not absence.** `freq()` returns null for most rare lemmas; the verdict must fall back to concordance hits, then to the surface form (pymorphy mis-lemmatises «колебайся», «бодхисаттв», «Сарасвати»), and a hyphenated compound (один-единственный) gets 0 hits by tokenisation alone — it is held back as unverifiable, never shown as ABSENT. (6) **The store's `subcard` is not unique:** one subcard spans several sense records, so card context must be filtered to records whose gloss actually contains the form. Hand spot-check of 30 flags from the riskiest tier: 24 measurements correct, 6 artifacts; 10 gloss defects, 17 legitimate words, 3 unclear.
 
 > **Source:** [`RussianTranslation/src/h5262_ipm_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h5262_ipm_audit.py) · [`H5262_NKRYA_STORE_IPM_CENSUS_24-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/H5262_NKRYA_STORE_IPM_CENSUS_24-09-2026.md) · [PR #2334](https://github.com/gasyoun/SanskritLexicography/pull/2334) — SanskritLexicography · 24-09-2026 (Claude Code Opus 5.5 `claude-opus-5-5`, [H5262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5262-Opus_SanskritLexicography_nkrya-store-ipm-batch-audit_22.09.26.md); the first draft's "no token on either box" was the broken probe of trap 3)
+
+## §H5468 — A severity-ordered flag list renumbers vote sheets that are already published
+
+**Trap.** `H5262_flags.json` is regenerated from the NKRYa ledger on every drain pass and is
+sorted by severity, so it is an *unstable* list: a new verdict inserts a row anywhere. Any
+sheet builder that slices it positionally (`rows[(batch-1)*10 : batch*10]`) therefore
+produces a different sheet 1 on every run. Measured on our own data: at 64 verdicts batch 1
+ended on «кусывать»; at 345 verdicts the identical slice ends on «приформовывать». Rebuilding
+"sheets 2+" would have silently dropped one card off the already-prepared sheet 1 and
+duplicated another onto it — and nothing in the pipeline would have complained, because each
+individual sheet is internally valid.
+
+**Apply.** When a human-facing batch is cut from a list that a background job keeps appending
+to, persist the assignment, never recompute it: an append-only `item → batch` ledger
+([`reports/H5262_sheet_assignments.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H5262_sheet_assignments.json)),
+seeded from the published artifact rather than from today's list, where an assigned item never
+moves and new items only ever open batches after the highest that exists. Seal a built batch
+against rebuild by an artifact that proves it was built (here the review-binding lock), because
+re-cutting a sheet a human may already be voting on mints a second `sheet_id` for the same
+cards. Corollary: an item can *leave* the list — a later precision filter retired «кусывать»
+as a measurement artifact while it sat on the prepared sheet — so record such retirements
+explicitly instead of letting the card silently vanish; whether to re-cut is a human call.
+
+**Second trap, same pass: two SLP1 leaks that only the evidence preflight caught.** A store
+`subcard` id (`rakz~~h0_03_sec_3`) is SLP1 by construction and is rendered in the human-facing
+card body, so the preflight reads it as a transliteration leak — allow only the ids actually
+shown on that sheet, never a blanket exemption. And a display fallback is a leak surface: the
+one context card lacking an `iast` fell back to raw `key1` («viS»), which must go through
+`slp1_iast` like every other headword.
+
+**Third: the H5262 trap-3 probe, re-run on the other box, is a genuine negative.** On Windows
+`csl_pyutil.nkrya.load_token()` returns `None` — and this time the lookup is *proven to have
+run*: `keyring` imports, the backend resolves to `WinVaultKeyring`, four user-key shapes
+(`token`, `ruscorpora`, `default`, `''`) each return empty, and `cmdkey /list` carries no
+`ruscorpora-api` entry. The NKRYa drain is Mac-only by credential, not by habit. Prove the
+probe before reporting the absence — but having proved it, report the absence plainly.
+
+> **Source:** [`RussianTranslation/src/build_h5262_nkrya_flag_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h5262_nkrya_flag_sheet.py) · [`h5468_seed_sheet_assignments.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h5468_seed_sheet_assignments.py) · [PR #2352](https://github.com/gasyoun/SanskritLexicography/pull/2352) — SanskritLexicography · 25-09-2026 (Claude Code Opus 4.8 `claude-opus-4-8`, [H5468](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5468-Opus_SanskritLexicography_nkrya-store-ipm-drain-remaining-sheets_24.09.26.md))
