@@ -1,0 +1,32 @@
+{
+ "fetched_utc": "2026-09-25T21:30:36Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "правда",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 393.593
+  },
+  "possiblePos": [
+   "S",
+   "ADV",
+   "PARENTH",
+   "PRAEDIC",
+   "CONJ",
+   "A"
+  ]
+ }
+}

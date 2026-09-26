@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T00:36:06Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "пустота",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 33.6731
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

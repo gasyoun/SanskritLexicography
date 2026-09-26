@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T23:12:46Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "скитаться",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 4.75144
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

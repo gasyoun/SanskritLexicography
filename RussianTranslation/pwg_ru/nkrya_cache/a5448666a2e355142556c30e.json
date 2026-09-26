@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T03:50:01Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "распугивать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 1,
+   "ipm": 0.495088
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T00:16:46Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "злой",
+   "pos": "A",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 84.2237
+  },
+  "possiblePos": [
+   "A"
+  ]
+ }
+}

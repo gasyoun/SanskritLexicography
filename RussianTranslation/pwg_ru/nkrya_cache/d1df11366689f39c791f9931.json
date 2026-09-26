@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T21:43:30Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "молва",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 7.95661
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

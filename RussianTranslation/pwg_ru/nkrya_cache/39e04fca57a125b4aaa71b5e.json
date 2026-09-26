@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T21:49:30Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "ткань",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 40.731
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

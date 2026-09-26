@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T00:39:06Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "сбежать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 21.0729
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

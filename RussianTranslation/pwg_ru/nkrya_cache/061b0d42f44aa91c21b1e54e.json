@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T01:45:21Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "усеять",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 7.65862
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

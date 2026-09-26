@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T02:11:12Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "спина",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 160.35
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

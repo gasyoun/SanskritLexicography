@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T02:09:52Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "самка",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 14.611
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

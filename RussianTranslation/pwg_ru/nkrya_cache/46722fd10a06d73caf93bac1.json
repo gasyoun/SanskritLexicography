@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T02:23:21Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "моча",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 4.73502
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-24T20:27:26Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "экскремент",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 1,
+   "ipm": 0.82593
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

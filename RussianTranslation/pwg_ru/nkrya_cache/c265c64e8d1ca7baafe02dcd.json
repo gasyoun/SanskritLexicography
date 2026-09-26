@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-24T19:47:53Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "повелитель",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 6.79515
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

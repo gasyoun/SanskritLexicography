@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T23:46:41Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "дробить",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 2.36047
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T22:02:15Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "шар",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 47.1507
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

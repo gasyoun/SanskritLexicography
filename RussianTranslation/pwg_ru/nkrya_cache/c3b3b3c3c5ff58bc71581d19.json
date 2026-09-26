@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T01:25:07Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "нырять",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 8.93036
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

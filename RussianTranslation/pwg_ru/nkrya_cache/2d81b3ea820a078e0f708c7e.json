@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-25T20:10:59Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "неверный",
+   "pos": "A",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 22.7295
+  },
+  "possiblePos": [
+   "A",
+   "S"
+  ]
+ }
+}
