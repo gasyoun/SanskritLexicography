@@ -469,6 +469,13 @@
     "repo": "gasyoun/Uprava"
   },
   {
+    "id": "F51",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "birthday-collision baseline (MW Herfindahl) + gate",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/birthday_collision_baseline.py",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
     "id": "MW",
     "section": "II. Dictionaries — the 44 digitised from canonical source text",
     "title": "Monier-Williams Sanskrit-English Dictionary",
