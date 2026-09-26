@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "handoff": "H5279",
+  "date": "2026-09-24",
+  "model": "jev-1.13.0 (TypeSafe System One)",
+  "endpoint": "https://api.typesafe.ai/v1/systemone",
+  "sample": "kosha frozen defgen sample (seed 730, n=500)",
+  "scored_items": 500,
+  "candidate_arms": [
+   "A0_random_floor",
+   "A1_chat_ctx",
+   "A2_chat_noctx",
+   "A3_reasoner_ctx",
+   "F1_fable_ctx"
+  ],
+  "candidate_calls": 2500,
+  "state": "headword + grammar + <=5 DCS attestation sentences + ONE candidate gloss (gold gloss NOT in state)",
+  "question": "score per candidate: how faithful to the corpus sense (6-level 0-5 list), one call per candidate (isolated)",
+  "baseline": "deepseek-chat adequacy 0-5 vs MW gold gloss (kosha judge_<arm>.jsonl, H730)",
+  "design_probe": "8 high-freq items: all-candidates-in-one-state score -> floor gap 0.011; isolated-candidate score -> floor gap +4.283 (tools/h5279_jev_design_probe.py)",
+  "seed": 5279
+ },
+ "jev_mean": {
+  "A0_random_floor": 0.7127,
+  "A1_chat_ctx": 4.3481,
+  "A2_chat_noctx": 3.9865,
+  "A3_reasoner_ctx": 4.3419,
+  "F1_fable_ctx": 4.4835
+ },
+ "judge_mean": {
+  "A0_random_floor": 0.186,
+  "A1_chat_ctx": 4.322,
+  "A2_chat_noctx": 4.084,
+  "A3_reasoner_ctx": 4.208,
+  "F1_fable_ctx": 4.6
+ },
+ "chrf_mean": {
+  "A0_random_floor": 11.82,
+  "A1_chat_ctx": 24.61,
+  "A2_chat_noctx": 22.49,
+  "A3_reasoner_ctx": 20.48,
+  "F1_fable_ctx": 30.33
+ },
+ "spearman_jev_judge": {
+  "A0_random_floor": 0.3112,
+  "A1_chat_ctx": 0.3185,
+  "A2_chat_noctx": 0.4144,
+  "A3_reasoner_ctx": 0.1765,
+  "F1_fable_ctx": 0.0999
+ },
+ "spearman_jev_chrf": {
+  "A0_random_floor": 0.1478,
+  "A1_chat_ctx": 0.1019,
+  "A2_chat_noctx": 0.1698,
+  "A3_reasoner_ctx": -0.0016,
+  "F1_fable_ctx": -0.0351
+ },
+ "rank_agreement": {
+  "tau_jev_judge_mean": 0.5815,
+  "tau_jev_chrf_mean": 0.3133,
+  "top1_agree_judge": "127/500",
+  "top1_agree_chrf": "159/500",
+  "items_with_constant_judge_row": 8,
+  "note": "Kendall τ-b is undefined (NaN) on an item whose baseline judge row is constant (all five arms the same adequacy); such items are excluded from the τ means and counted above — they also bound the per-item top-1 agreement."
+ },
+ "arm_ranking": {
+  "jev": [
+   "F1_fable_ctx",
+   "A1_chat_ctx",
+   "A3_reasoner_ctx",
+   "A2_chat_noctx",
+   "A0_random_floor"
+  ],
+  "judge": [
+   "F1_fable_ctx",
+   "A1_chat_ctx",
+   "A3_reasoner_ctx",
+   "A2_chat_noctx",
+   "A0_random_floor"
+  ],
+  "chrf": [
+   "F1_fable_ctx",
+   "A1_chat_ctx",
+   "A2_chat_noctx",
+   "A3_reasoner_ctx",
+   "A0_random_floor"
+  ]
+ },
+ "floor_separation": {
+  "jev": {
+   "A0": 0.7127,
+   "systems_mean": 4.29,
+   "gap": 3.5773
+  },
+  "judge": {
+   "A0": 0.186,
+   "systems_mean": 4.3035,
+   "gap": 4.1175
+  }
+ },
+ "cost": {
+  "jev": {
+   "calls": 2500,
+   "input_tokens": 1499617,
+   "output_tokens": 42500,
+   "usd": 0.06298
+  },
+  "baseline_judge_reconstructed": {
+   "calls": 2500,
+   "est_input_tokens": 595929,
+   "usd": 0.1609,
+   "rate": "deepseek-chat 0.27/1M in (H1210 arm-B historical note)",
+   "note": "the historical run's usage was not recorded; the prompt is reconstructed from the committed judge template and priced at the H1210-documented rate"
+  },
+  "latency_ms": {
+   "call_mean": 1379,
+   "call_p50": 1010
+  }
+ },
+ "verdict": {
+  "arm_ranking_identical": true,
+  "floor_separated": true,
+  "cheaper_than_baseline": true,
+  "go": true
+ }
+}
