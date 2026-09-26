@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T23:24:37Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "насыпать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 7.26677
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

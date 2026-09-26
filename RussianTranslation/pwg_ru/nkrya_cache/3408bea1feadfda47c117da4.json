@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T02:31:25Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "тяга",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 12.762
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

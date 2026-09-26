@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T21:51:12Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "вкус",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 78.9514
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

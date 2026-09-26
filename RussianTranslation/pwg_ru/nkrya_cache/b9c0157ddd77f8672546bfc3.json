@@ -1,0 +1,30 @@
+{
+ "fetched_utc": "2026-09-26T00:16:04Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "горе",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 80.5844
+  },
+  "possiblePos": [
+   "S",
+   "ADV",
+   "PRAEDIC",
+   "A"
+  ]
+ }
+}

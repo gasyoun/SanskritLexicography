@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T02:21:51Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "конь",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 95.9862
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

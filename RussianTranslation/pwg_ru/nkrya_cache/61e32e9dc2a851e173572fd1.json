@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T03:33:09Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "обрызгивать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 1,
+   "ipm": 0.302684
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}
