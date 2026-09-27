@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-26T00:13:50Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "народ",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 526.715
+  },
+  "possiblePos": [
+   "S",
+   "A"
+  ]
+ }
+}

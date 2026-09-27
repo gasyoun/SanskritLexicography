@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-25T23:17:57Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "духовный",
+   "pos": "A",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 127.364
+  },
+  "possiblePos": [
+   "A",
+   "S"
+  ]
+ }
+}

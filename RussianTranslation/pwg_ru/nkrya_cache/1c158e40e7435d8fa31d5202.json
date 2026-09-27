@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T23:34:17Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "понукать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 1.68705
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T05:07:40Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "разрывать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 8.38131
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

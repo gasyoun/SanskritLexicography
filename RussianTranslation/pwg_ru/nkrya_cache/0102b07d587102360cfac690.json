@@ -1,0 +1,34 @@
+{
+ "fetched_utc": "2026-09-26T06:24:28Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "благо",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 49.9453
+  },
+  "possiblePos": [
+   "S",
+   "CONJ",
+   "PARENTH",
+   "PART",
+   "PRAEDIC",
+   "ADV",
+   "A",
+   "ADVPRO"
+  ]
+ }
+}

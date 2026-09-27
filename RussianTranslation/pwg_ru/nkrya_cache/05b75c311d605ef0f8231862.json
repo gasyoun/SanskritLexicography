@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T01:43:10Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "разум",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 65.5722
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

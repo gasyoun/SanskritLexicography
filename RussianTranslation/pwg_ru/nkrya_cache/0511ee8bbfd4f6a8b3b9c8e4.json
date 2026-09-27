@@ -1,0 +1,30 @@
+{
+ "fetched_utc": "2026-09-26T04:49:44Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "тихий",
+   "pos": "A",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 120.506
+  },
+  "possiblePos": [
+   "A",
+   "S",
+   "PRAEDIC",
+   "ADV"
+  ]
+ }
+}

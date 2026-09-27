@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T05:44:45Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "присоединять",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 3.2474
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

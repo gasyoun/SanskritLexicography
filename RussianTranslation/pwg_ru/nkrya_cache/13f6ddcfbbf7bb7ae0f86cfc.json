@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-26T05:19:09Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "мучить",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 29.7475
+  },
+  "possiblePos": [
+   "V",
+   "A"
+  ]
+ }
+}

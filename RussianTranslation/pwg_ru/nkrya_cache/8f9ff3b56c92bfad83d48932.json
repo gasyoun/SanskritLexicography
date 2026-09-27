@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-24T20:00:43Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "проглотить",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 13.8812
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}
