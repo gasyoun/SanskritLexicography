@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T00:01:55Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "застой",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 5.76274
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

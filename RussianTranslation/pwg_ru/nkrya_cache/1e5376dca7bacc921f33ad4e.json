@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T21:47:40Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "слава",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 151.889
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

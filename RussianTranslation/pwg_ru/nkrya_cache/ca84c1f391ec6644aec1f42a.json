@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T04:08:04Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "заклинание",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 6.83269
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

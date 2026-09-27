@@ -1,0 +1,30 @@
+{
+ "fetched_utc": "2026-09-24T20:58:16Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "маленький",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 401.988
+  },
+  "possiblePos": [
+   "A",
+   "S",
+   "ADVPRO",
+   "ADV",
+   "NUM"
+  ]
+ }
+}

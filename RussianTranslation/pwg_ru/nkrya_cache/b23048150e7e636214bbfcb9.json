@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-24T23:30:01Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "свободно",
+   "pos": "ADV",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 39.2575
+  },
+  "possiblePos": [
+   "ADV",
+   "PRAEDIC"
+  ]
+ }
+}

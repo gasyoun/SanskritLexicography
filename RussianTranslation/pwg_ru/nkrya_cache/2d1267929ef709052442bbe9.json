@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T01:40:11Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "тетива",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 1.53923
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-25T02:44:29Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "воспламеняться",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 1.33275
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

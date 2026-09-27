@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T00:16:14Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "губа",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 156.589
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

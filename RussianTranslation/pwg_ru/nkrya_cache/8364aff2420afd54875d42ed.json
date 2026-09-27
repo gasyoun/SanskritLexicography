@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-25T02:10:12Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "сиять",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 43.2674
+  },
+  "possiblePos": [
+   "V",
+   "A"
+  ]
+ }
+}

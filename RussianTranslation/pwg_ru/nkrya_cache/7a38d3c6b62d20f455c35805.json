@@ -1,0 +1,30 @@
+{
+ "fetched_utc": "2026-09-25T21:45:00Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "охота",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 70.1993
+  },
+  "possiblePos": [
+   "S",
+   "PRAEDIC",
+   "V",
+   "PRAEDICPRO"
+  ]
+ }
+}

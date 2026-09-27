@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T02:55:48Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "достоинство",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 76.8584
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}

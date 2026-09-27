@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-26T00:20:58Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "приличествовать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 2.15868
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

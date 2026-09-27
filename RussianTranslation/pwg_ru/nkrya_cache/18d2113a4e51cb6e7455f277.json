@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-24T18:34:19Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "разгуливать",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 2,
+   "ipm": 4.04283
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

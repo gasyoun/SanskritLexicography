@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "2026-09-26T01:45:25Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "брат",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 4,
+   "ipm": 323.45
+  },
+  "possiblePos": [
+   "S",
+   "A"
+  ]
+ }
+}

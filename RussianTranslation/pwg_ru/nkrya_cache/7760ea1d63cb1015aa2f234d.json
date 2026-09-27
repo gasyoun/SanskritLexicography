@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-24T23:04:41Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "оживание",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 1,
+   "ipm": 0.112627
+  },
+  "possiblePos": [
+   "S"
+  ]
+ }
+}
