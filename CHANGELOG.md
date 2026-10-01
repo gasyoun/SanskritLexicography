@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 09-09-2026_
+_Created: 01-08-2026 · Last updated: 01-10-2026_
 
 # Changelog
 
@@ -119,7 +119,11 @@ not an error.
 
 ## 1.144.168 — tagged and released without a master section (flow-doc mirror class) - 2026-09-11
 
-> **No `## [1.144.168]` heading ever existed on `master` and none is created (18-09-2026).** [v1.144.168](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.168) was cut from a branch head — "release: cut v1.144.168 (H4527 cohort live-admission gate + rung-4 live dispatch wiring)" ([PR #2186](https://github.com/gasyoun/SanskritLexicography/pull/2186)) — and tagged + released 11-09, with the section never reaching `master` (same mirror class as 1.144.169 above). Tag and release stand; the number is consumed. **Numbering ledger after this repair: 168, 169 spent by these branch-head cuts; master sections run …167, 170, 171; the next root number is 1.144.172.**
+> **No `## [1.144.168]` heading ever existed on `master` and none is created (18-09-2026).** [v1.144.168](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.168) was cut from a branch head — "release: cut v1.144.168 (H4527 cohort live-admission gate + rung-4 live dispatch wiring)" ([PR #2186](https://github.com/gasyoun/SanskritLexicography/pull/2186)) — and tagged + released 11-09, with the section never reaching `master` (same mirror class as 1.144.169 above). Tag and release stand; the number is consumed. **Numbering ledger (amended 01-10-2026): 168, 169, 172 spent by branch-head cuts; master sections run …167, 170, 171; the next root number is 1.144.173.**
+
+## 1.144.172 — tagged and released without a master section (flow-doc mirror class) - 2026-10-01
+
+> **No `## [1.144.172]` heading ever existed on `master` and none is created (01-10-2026).** [v1.144.172](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.172) was cut 24-09 — "Release 1.144.172 (pwg_ru): consume 14 changelog_queue fragments" ([PR #2340](https://github.com/gasyoun/SanskritLexicography/pull/2340), tag commit an ancestor of `master`) — yet no `## [1.144.172]` section exists at the tag or on `master` (the consume commit landed without one; same mirror class as 1.144.168/169 above). The GitHub release had been missing since the cut and was published 01-10-2026 from generated notes. Tag and release stand; the number is consumed. (GLM 5.3-Flash `zai-start-plan/GLM-5.3-Flash`)
 
 ## [1.144.167] - 2026-09-11
 
