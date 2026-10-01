@@ -1,6 +1,6 @@
 # Content-aware re-glue spec
 
-_Created: 06-07-2026 · Last updated: 16-08-2026_
+_Created: 06-07-2026 · Last updated: 31-08-2026_
 
 **Deliverable 3 of
 [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)**
@@ -173,6 +173,7 @@ distinct things:
 |---|---|---|
 | ⚑ | a real locus no pattern covers | **yes** — the mintable gap |
 | ∅ | a bare abbreviation (`GORR.`, `ed. Bomb.`) with no locus | **no** — nothing to point at, ever |
+| ∅ | an `≈крит.` address (`<span class=lsc>`) | **no** — deliberate: `mbh_locus.bori_href` is `None` by design (the BORI e-text is © BORI 1999, not redistributable), so no target will ever exist. H3501: the old digit-test flagged all 508 of them ⚑ on every card, overstating the mintable gap by exactly that count |
 
 Collapsing them into one "unresolved" count overstates the backlog by about a
 fifth. Per-card totals sit in a coverage strip above the card.
@@ -190,10 +191,25 @@ subtypes collapse to three colour-coded classes:
 | **≈ restatement** (amber) | `restate` | PW says the same thing more briefly — **no new meaning** |
 | **✕ cancels / corrects** (red) | `pw_correct` · `pw_cancels` | PWG's value is overridden; never silently dropped |
 
+> **Read with §13 (H3752).** Three of those names — `restate`, `nws_at_sense`,
+> `a2a` — now take an `_unplaced` twin when no PWG sense was identified, and on
+> the live corpus **most rows carry the twin** (`restate` 562 placed against
+> 4,637 `restate_unplaced`). A twin belongs to the **same class** as its base
+> name, which is what `edition_rel.base_subtype()` is for; the table above is
+> read through it rather than extended with three more rows.
+
 This is not decoration — it is the finding. Across the 15 pilot cards: **1,534
-restatements vs 250 additions vs 1 correction**. Roughly **86 %** of everything
-glued onto PWG is PW abridging what PWG already said. A reviewer who cannot see
-that at a glance will read a card as far richer than it is.
+restatements vs 250 additions vs 1 correction**. A reviewer who cannot see that
+at a glance will read a card as far richer than it is.
+
+> **The «roughly 86 %» that used to stand here has been withdrawn** (§9.1, and
+> issue [#1736](https://github.com/gasyoun/SanskritLexicography/issues/1736)
+> point 2). It was true as *"86 % of supplements came from the PW layer"* and
+> false as *"86 % of the re-glue paraphrases PWG"* — the second is a claim about
+> content, and content was never measured: the label was stamped from the layer
+> without consulting the attachment. What is measured, since §13: **637 of 6,326
+> supplements (10.1 %) have an identified PWG sense at all**, and only those can
+> support any statement about restating it.
 
 **Ordering ruling (answers "are the glued-in entries ABOVE all old?"):** no. PWG
 remains the skeleton (§1) and supplements are rendered *beneath* the PWG sense
@@ -303,6 +319,15 @@ separate fields, and `subtype` must be read together with `placement`.
 
 `subtype` is deliberately **not** renamed on unplaced rows: duplicating one fact
 across two fields guarantees they drift apart.
+
+> **Superseded 31-08-2026 by §13 (H3752).** The ruling above held for two weeks
+> and was half right. Duplication really is the hazard — but the reader of a chip,
+> a rollup row or a published percentage takes `subtype` **on its own** and never
+> sees the boolean beside it, so 4,187 rows went on asserting a relation to a
+> sense that was never identified. §13 does not add a third field: it makes
+> `subtype` a **function** of `placement`, computed in one expression at one site,
+> with the invariant asserted over the whole corpus by gate W5a. The row below is
+> kept as written, and read together with §13.
 
 ### 10.1 `placement_reason` — three phenomena the old `*new` bucket merged
 
@@ -531,5 +556,70 @@ question to ask of one — the same exclusion wave 2 applied to Nachträge. Re-c
 under PLAN decision 8 after checking the vote gate (no `decisions.json` exists
 for the sheet). Waves 1–2 are unchanged and proved so; the canonical store is
 untouched.
+
+## 13. The label follows the attachment (H3752, 31-08-2026)
+
+Wave 1 (§10) split the axes and stopped one step short: it put the truth in a new
+field and left the **old field still saying the false thing**. Measured on the
+live store: **4,187 rows** labelled `restate` — "PW пересказывает *этот* смысл
+PWG" — whose own `target_sense` reads `*new`. Every surface that reads `subtype`
+alone (sheet chips, `relationships_rollup.tsv`, the "86 % is PWG paraphrase"
+headline) therefore still reported a relation to a sense nobody located.
+
+### 13.1 The fix is one field, not two
+
+`subtype` becomes a **function of the placement result** — rewritten from
+`placement` in the same expression that produced it, inside `classify_edition_rel`.
+Three labels name a PWG *sense* as the other end of the relation and gain an
+unplaced twin:
+
+| label | placed | unplaced | twin |
+|---|---:|---:|---|
+| `restate` | 562 | **4,637** | `restate_unplaced` |
+| `nws_at_sense` | 6 | **317** | `nws_at_sense_unplaced` |
+| `a2a` | 10 | **112** | `a2a_unplaced` |
+
+This is issue [#1736](https://github.com/gasyoun/SanskritLexicography/issues/1736)
+**variant C**, with the issue's naming question answered *suffix*: wave 1 already
+shipped the boolean, so the label was the missing half, not a second flag.
+
+### 13.2 What is deliberately left alone
+
+`direction` and `op` survive on every relabelled row — "the PW layer abridges
+PWG" and "this row restates rather than adds" need no target. Dropping them is
+variant B, which would erase the ＋/≈/✕ distinction from ~90 % of supplements;
+gate W5c proves it did not happen. Three subtypes take no suffix, each for its
+own reason: the additive ones (`sch_star`, `derived_sense`, `foreign_fragment`)
+assert a new sense rather than a relation to one; `pw_correct` rests on the
+gender index, a lookup that already succeeded; and `pwg_internal_correction` was
+ruled on by wave 2 (§11.3), where unplaced-by-design is a published result.
+
+### 13.3 Drift is prevented mechanically, not promised
+
+§10's objection is answered by construction: one computation site,
+`placement_label_consistent()` stating the invariant in both directions, and gate
+**W5a** in `placement_axis_check.py` applying it to every row as a STOP. It was
+**RED at 5,066 rows** against the pre-fix sidecar and is 0 after. Consumers learn
+no second vocabulary — `base_subtype()` resolves a twin back to the key their
+tables already use, so `TYPOLOGY` and `CLASS_OF` keep one row per relation kind.
+A twin falling through to a lookup default would have painted these very rows as
+green ＋ additions; a selftest pins that it cannot.
+
+### 13.4 Scope, and what did not move
+
+The canonical store is **untouched** — its `edition_rel` field exists on 86 rows,
+all `base` or `pwg_internal_correction`, none sense-asserting, so 0 rows change
+(gate A5 with the sha pinned). The mirror carries `ru`, which this does not
+touch: `audit_store_gates.py` is byte-identical before and after. The label lives
+in the derived sidecar, and the 5,066 moves are ledgered anyway, in
+`pwg-ru-data/tm/h3752_relabel_ledger.jsonl`, joined on `row_key` (132 pairs
+repeat here; a bare-pair join would ledger the wrong sibling — FINDINGS §551).
+
+**The checkable population does not grow**: 637 placed rows before and after, so
+the evidence sheet's cards are unchanged and it is not re-cut. Mode B — 521 rows
+whose target number leads nowhere — is variant **D**, content alignment, and
+stays out of scope; it remains split into `out_of_range` (387, the renumbering
+phenomenon) and `not_found` (134). Full write-up:
+[reports/H3752_RELATION_LABEL_REVISION_31-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3752_RELATION_LABEL_REVISION_31-08-2026.md).
 
 _Dr. Mārcis Gasūns_

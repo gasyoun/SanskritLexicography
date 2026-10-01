@@ -45,8 +45,19 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.environ.get("PWG_RU_DATA_ROOT", os.path.dirname(HERE))
-STORE = os.path.join(DATA, "src", "pwg_ru_translated.jsonl")
-REL = os.path.join(DATA, "src", "pwg_ru_relationships.jsonl")
+
+# H3300: both inputs are gitignored, local-only artifacts belonging to the MAIN
+# checkout. Resolving them relative to HERE made this module unrunnable in any
+# linked worktree (FileNotFoundError) — i.e. the published sheet's "re-run to
+# reproduce" promise could never even be exercised in the sanctioned workflow.
+# Same resolution `build_reglue.py` already uses via store_path.py.
+from store_path import canonical_store, main_worktree_root          # noqa: E402
+
+STORE = canonical_store(os.path.join(DATA, "src", "pwg_ru_translated.jsonl"))
+_MAIN = main_worktree_root(HERE)
+REL = (os.path.join(_MAIN, "RussianTranslation", "src",
+                    "pwg_ru_relationships.jsonl") if _MAIN
+       else os.path.join(DATA, "src", "pwg_ru_relationships.jsonl"))
 REPORTS = os.path.join(DATA, "reports")
 
 LS_RE = re.compile(r"<ls\b[^>]*>(.*?)</ls>", re.S)
@@ -143,36 +154,75 @@ def compare(pwg_de, supp_de):
 
 
 # ------------------------------------------------------------------ corpus pass
+class StoreIndex:
+    """The store joined losslessly onto sidecar rows (H3300).
+
+    The store itself repeats `(subcard, sense_tag)` pairs (149 pairs, 722 rows
+    today), and a dict keyed on the bare pair keeps only the LAST row — the
+    shadowing FINDINGS §551 recorded. This index keys each record additionally
+    by its occurrence ordinal in file order, which is exactly the `dup_ordinal`
+    the writer stamped on every sidecar row, so a sidecar row resolves to ITS
+    OWN store body instead of an arbitrary sibling's.
+
+    ``lookup(subcard, sense_tag, dup_ordinal=None)`` stays tolerant of legacy
+    sidecar rows without a `dup_ordinal`: they fall back to the historical
+    bare-pair view (last row wins) rather than failing.
+    """
+
+    def __init__(self, records):
+        self.records = list(records)
+        self._legacy = {}            # (subcard, tag) -> last record (old view)
+        self._exact = {}             # (subcard, tag, ordinal) -> record
+        seen = collections.Counter()
+        for d in self.records:
+            key = (d["subcard"], str(d.get("sense_tag")))
+            ordinal = seen[key]
+            seen[key] += 1
+            self._exact[key + (ordinal,)] = d
+            self._legacy[key] = d
+        self.duplicate_pairs = {k: v for k, v in seen.items() if v > 1}
+
+    def lookup(self, subcard, sense_tag, dup_ordinal=None):
+        if dup_ordinal is not None:
+            hit = self._exact.get((subcard, str(sense_tag), dup_ordinal))
+            if hit is not None:
+                return hit
+        return self._legacy.get((subcard, str(sense_tag)))
+
+
 def load():
-    store = {}
-    for line in io.open(STORE, encoding="utf-8"):
-        line = line.strip()
-        if line:
-            d = json.loads(line)
-            store[(d["subcard"], str(d.get("sense_tag")))] = d
-    rel = []
-    for line in io.open(REL, encoding="utf-8"):
-        line = line.strip()
-        if line:
-            rel.append(json.loads(line))
-    return store, rel
+    """Return ``(store_index, rel_rows)``.
+
+    ``store_index`` — a :class:`StoreIndex`; ``rel_rows`` — the sidecar rows in
+    file order (NOT collapsed to a dict: collapsing was defect §551).
+    """
+    index = StoreIndex(
+        json.loads(line) for line in io.open(STORE, encoding="utf-8")
+        if line.strip())
+    rel = [json.loads(line) for line in io.open(REL, encoding="utf-8")
+           if line.strip()]
+    return index, rel
 
 
-def pwg_sense_index(store):
+def pwg_sense_index(store_records):
     """(key1, homonym, normalised sense) -> the PWG sub-card row for that sense.
 
     Keyed on the H2879-normalised tag so the skeleton side and the supplement's
     target go through the same function; ``'1)'`` in the skeleton and ``'1'`` in
     the target are the same sense and must land on the same key.
+
+    H3300: takes an ITERABLE of records (not a pair-keyed dict) — building it
+    from a bare-pair dict would shadow duplicated pairs before indexing even
+    started.
     """
     from edition_rel import normalize_sense_tag
     idx = {}
-    for (sub, st), d in store.items():
+    for d in store_records:
         if d.get("layer") != "pwg":
             continue
-        m = re.search(r"~~(h\d+)", sub or "")
+        m = re.search(r"~~(h\d+)", d.get("subcard") or "")
         idx[(d.get("key1"), m.group(1) if m else "h0",
-             normalize_sense_tag(st))] = d
+             normalize_sense_tag(d.get("sense_tag")))] = d
     return idx
 
 
@@ -203,11 +253,11 @@ PLACEMENT_REASON_RU = {
 
 
 def measure_all():
-    store, rel = load()
-    idx = pwg_sense_index(store)
+    index, rel = load()
+    idx = pwg_sense_index(index.records)
     rows = []
     for r in rel:
-        rec = store.get((r["subcard"], str(r["sense_tag"])))
+        rec = index.lookup(r["subcard"], r["sense_tag"], r.get("dup_ordinal"))
         if not rec or rec.get("layer") == "pwg":
             # H2880: the sidecar now also carries PWG-internal corrections, and
             # this skip keeps them out DELIBERATELY, not by accident. The gloss-
@@ -327,6 +377,25 @@ def selftest():
     e = compare("", "gehen")
     check(e["gloss_overlap"] == 0.0 and e["citation_overlap"] is None,
           "an empty PWG side yields 0.0 / None, not a crash")
+
+    # --- H3300: the store index must join duplicated pairs exactly ----------
+    recs = [{"subcard": "s~~h0_zz_pw01", "sense_tag": "1", "de": "eins",
+             "ru": "один", "layer": "pw"},
+            {"subcard": "s~~h0_zz_pw01", "sense_tag": "1", "de": "eins (2)",
+             "ru": "один (2)", "layer": "pw"},
+            {"subcard": "s~~h0_zz_sch01", "sense_tag": "2", "de": "zwei",
+             "ru": "два", "layer": "sch"}]
+    idx = StoreIndex(recs)
+    check(idx.duplicate_pairs == {("s~~h0_zz_pw01", "1"): 2},
+          "duplicate pairs reported: %r" % idx.duplicate_pairs)
+    check(idx.lookup("s~~h0_zz_pw01", "1", 0)["de"] == "eins"
+          and idx.lookup("s~~h0_zz_pw01", "1", 1)["de"] == "eins (2)",
+          "dup_ordinal resolves each duplicate to ITS OWN record")
+    # legacy tolerance: no ordinal -> the historical bare-pair view
+    check(idx.lookup("s~~h0_zz_pw01", "1")["de"] == "eins (2)",
+          "legacy lookup keeps the last-wins pair view")
+    check(idx.lookup("s~~h0_zz_pw01", "9", 0) is None,
+          "a missing ordinal falls through instead of inventing a row")
 
     print("reglue_overlap selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1

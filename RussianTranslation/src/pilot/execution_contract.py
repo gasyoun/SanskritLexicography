@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 """Profile-bound manifest-v2 validation and global active-call serialization."""
 import collections
+import datetime
 import hashlib
+import json
 import os
 import tempfile
 
@@ -116,6 +118,146 @@ def assert_timeout_within_ceiling(value_ms, source, ceiling_ms=PRODUCTION_HARD_T
             'ruling backed by measured evidence.' % (source, requested, ceiling_ms))
 
 
+# H2878 (issue #1680, FINDINGS §378): the no-output-progress window, in milliseconds.
+#
+# This is NOT a second ceiling and NOT a re-fit of PRODUCTION_HARD_TIMEOUT_MS (H2299 ban).
+# It measures a DIFFERENT quantity. The hard timeout bounds TOTAL WALL CLOCK; this bounds
+# the longest stretch during which the spawn produced no result bytes. The comment above
+# PRODUCTION_HARD_TIMEOUT_MS states the reason in full and names this as its own residual:
+# a total-wall cap "cannot make that distinction from a single constant. Separating 'hung'
+# from 'very slow' for real needs a no-output-progress watchdog (kill on stalled output,
+# not on total elapsed time), left as residual work."
+#
+# 90 000 ms is the H2878 handoff's ruled default. It is deliberately NOT derived from the
+# H2313 wall distribution -- deriving a stalled-output window from total-wall percentiles
+# would be the exact category error this constant exists to end. It is a liveness bound:
+# a healthy streaming spawn that has said nothing for a minute and a half is not slow, it
+# is stopped. PRODUCTION_HARD_TIMEOUT_MS remains the last-resort backstop underneath it.
+PRODUCTION_NO_OUTPUT_PROGRESS_MS = 90000
+
+# The two kill reasons a bounded spawn can report. They are DISTINCT on purpose: before
+# H2878 every killed call came back as a bare `timeout`, so a hung route and a call the
+# production lane would still have been waiting on were the same event row (the 13-08 c1
+# reading -- 300 198 ms, 0 output bytes -- is exactly that shape).
+KILLED_REASON_HARD_TIMEOUT = 'hard_timeout'
+KILLED_REASON_NO_OUTPUT_PROGRESS = 'no_output_progress'
+KILLED_REASONS = (KILLED_REASON_HARD_TIMEOUT, KILLED_REASON_NO_OUTPUT_PROGRESS)
+
+# WHICH `--output-format` values can emit PARTIAL output before the call ends.
+#
+# This set is the whole reason the watchdog is not armed blind. Every production spawn in
+# this tree (`headless_worker`, `_probe_call`, `gen_opt_harness2`) runs
+# `claude -p --output-format json`, which buffers the entire CLI result envelope and writes
+# it in ONE burst when the call finishes. On that shape stdout is legitimately 0 bytes for
+# the whole call, and the H2313 evidence says a healthy card spawn runs 49 404-511 908 ms
+# (p50 189 327). Arming a 90 s stalled-output window against it would kill every healthy
+# call -- the identical defect H2313 diagnosed in the 300 000 ms ceiling ("killing HEALTHY
+# card spawns, not hung ones"), only six times more aggressive. `stream-json` is the format
+# that emits incrementally, and on it the window means what it says.
+#
+# So the window is DERIVED from the spawn's output format rather than pinned by a literal
+# at each call site: a lane that switches to `stream-json` arms the watchdog by doing so,
+# and no lane can arm it against a buffered format by copying a constant.
+STREAMING_OUTPUT_FORMATS = frozenset({'stream-json'})
+
+# H4528 (10-09-2026 handoff, measured 14-09-2026): `stream-json` ALONE is NOT incremental
+# enough, and the interlock above armed on it. Without `--include-partial-messages` the CLI
+# emits one line per COMPLETED message -- `system/init` at start, then nothing until a whole
+# assistant turn has finished generating. Measured two ways, zero paid calls:
+#   * the real CLI 2.1.251 against a local fake Messages API: plain stream-json went 18 170 ms
+#     silent in an 18 800 ms call; with partial messages the longest silence was 3 030 ms,
+#     exactly the injected time-to-first-token;
+#   * the 31 committed success envelopes (pwg_ru/h4528/): `ttft_ms` -- the CLI's time to the
+#     first COMPLETE message, i.e. plain stream-json's silence -- reaches 391 798 ms (p50
+#     62 487) and exceeds 90 000 ms on 9 of 31 HEALTHY calls. Arming 90 s on plain stream-json
+#     would have killed 29 % of them.
+# So arming now requires the token-stream flag, and the decision is read from the ACTUAL argv
+# (`progress_window_ms_for_argv`) rather than from a format name a call site could mislabel.
+TOKEN_STREAM_FLAG = '--include-partial-messages'
+#: The exact output arguments that make a spawn emit token-level progress on stdout.
+#: `--verbose` is required by the CLI for stream-json under `-p`.
+TOKEN_STREAM_OUTPUT_ARGS = ('--output-format', 'stream-json', '--verbose', TOKEN_STREAM_FLAG)
+#: The historical buffered output arguments (one envelope, written at the end).
+BUFFERED_OUTPUT_ARGS = ('--output-format', 'json')
+
+
+def progress_window_ms_for(output_format, window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS,
+                           partial_messages=False):
+    """The no-output-progress window to ARM for a spawn with this ``--output-format``.
+
+    Returns ``window_ms`` only for a format that emits TOKEN-level output -- `stream-json`
+    WITH ``--include-partial-messages`` (H4528) -- and ``None`` (observe only, never kill)
+    for everything else, including plain `stream-json`, which buffers per message. ``None``
+    does not mean "unmeasured": the runner still records ``bytes_seen`` and ``quiet_ms`` for
+    every spawn, which is what turns a future arming decision into a reading, not a guess.
+    """
+    if output_format in STREAMING_OUTPUT_FORMATS and partial_messages:
+        return window_ms
+    return None
+
+
+def output_shape_of_argv(argv):
+    """``(output_format, partial_messages)`` of a Claude CLI argv. Format defaults to 'text'."""
+    argv = list(argv or ())
+    fmt = 'text'
+    for i, arg in enumerate(argv):
+        if arg == '--output-format' and i + 1 < len(argv):
+            fmt = argv[i + 1]
+        elif isinstance(arg, str) and arg.startswith('--output-format='):
+            fmt = arg.split('=', 1)[1]
+    return fmt, TOKEN_STREAM_FLAG in argv
+
+
+def progress_window_ms_for_argv(argv, window_ms=PRODUCTION_NO_OUTPUT_PROGRESS_MS):
+    """The window to arm for the spawn this argv WILL run -- derived, never declared."""
+    fmt, partial = output_shape_of_argv(argv)
+    return progress_window_ms_for(fmt, window_ms, partial_messages=partial)
+
+
+# H4528: how a KILLED call is classified when nothing account-level was said on the way out.
+# Before, both bounds came back as the one word 'timeout' and only a side field
+# (`killed_reason`) told them apart; every counter, requeue rule and report keyed on the word.
+# A no-output-progress kill is a different event -- the spawn went silent, it did not merely
+# run long -- so it gets its own classification, shared by the paid lane and the probe so
+# both halves of the gate name it identically (the PR #1837 refusal-split pattern).
+KILL_CLASS_HARD_TIMEOUT = 'timeout'
+KILL_CLASS_NO_PROGRESS = 'no_progress_kill'
+KILL_CLASSES = (KILL_CLASS_HARD_TIMEOUT, KILL_CLASS_NO_PROGRESS)
+
+
+def kill_classification(killed_reason):
+    """'no_progress_kill' for a stalled-output kill, else the historical 'timeout'."""
+    if killed_reason == KILLED_REASON_NO_OUTPUT_PROGRESS:
+        return KILL_CLASS_NO_PROGRESS
+    return KILL_CLASS_HARD_TIMEOUT
+
+
+def assert_progress_window_below_ceiling(window_ms, source,
+                                         ceiling_ms=PRODUCTION_HARD_TIMEOUT_MS):
+    """Fail closed on a progress window at or above the total-wall ceiling.
+
+    A window that is not STRICTLY below the hard timeout can never fire -- the backstop
+    would always kill first -- so configuring one is a silent no-op, which is precisely the
+    failure mode #983 catalogued for the ceiling itself. ``None`` (observe only) passes.
+    """
+    if window_ms is None:
+        return
+    try:
+        requested = int(window_ms)
+    except (TypeError, ValueError):
+        raise ValueError('%s: no-output-progress window must be an integer number of '
+                         'milliseconds (got %r)' % (source, window_ms))
+    if requested <= 0:
+        raise ValueError('%s requests a %d ms no-output-progress window; a non-positive '
+                         'window would kill every spawn on its first poll' % (source, requested))
+    if requested >= ceiling_ms:
+        raise ValueError(
+            '%s requests a %d ms no-output-progress window, at or above the %d ms total-wall '
+            'ceiling. It could never fire -- the hard timeout would always kill first -- so '
+            'this is REFUSED rather than accepted as a silent no-op.'
+            % (source, requested, ceiling_ms))
+
+
 def canonical_config_dir(path):
     return os.path.normcase(os.path.realpath(os.path.abspath(path)))
 
@@ -223,6 +365,10 @@ class ActiveCallClaim:
         self.root = root or os.path.join(tempfile.gettempdir(), 'pwg-active-calls')
         self.path = os.path.join(self.root, fingerprint + '.lock')
         self._fh = None
+        # H4915: one held claim is ONE readiness-probe attempt, however many calls it covers
+        # (live_probe's warm-up + measured pair, a latency sweep's whole series). The first
+        # `_probe_call` under the claim spends the ration and flips this; the rest ride on it.
+        self.ration_admitted = False
 
     def is_live_canonical_for(self, fingerprint):
         """Return True only for the live claim at the one process-wide lock path.
@@ -245,6 +391,7 @@ class ActiveCallClaim:
             fh.close()
             raise RuntimeError('profile already has an active model call')
         self._fh = fh
+        self.ration_admitted = False
         return self
 
     def __exit__(self, _typ, _value, _tb):
@@ -252,3 +399,134 @@ class ActiveCallClaim:
         if fh is not None:
             _os_unlock(fh)
             fh.close()
+
+
+# H4915 (15-09-2026): the readiness-probe ration, enforced in code. The standing ration is at
+# most 2 probe attempts per UTC day per profile, at least 6 h apart. On 15-09 c1 was probed three
+# times in one UTC day (01:35Z, 14:23Z, 14:26:55Z). Two things let the third one through:
+# `ActiveCallClaim` only serialises calls that OVERLAP, and the probe log is split across evidence
+# roots (explicit `--evidence-dir` -> `$PWG_EVIDENCE_DIR` -> checkout), so a session reading one
+# root could not see the other root's row. The ledger below lives in ONE machine-wide place, beside
+# the active-call lock dir, and it is keyed by the same config-directory fingerprint. There is no
+# env override on purpose: a per-session root would split the count again.
+PROBE_RATION_MAX_PER_UTC_DAY = 2
+PROBE_RATION_MIN_GAP_S = 6 * 3600
+
+
+def probe_ration_root():
+    return os.path.join(tempfile.gettempdir(), 'pwg-probe-ration')
+
+
+def _utc(ts):
+    return datetime.datetime.fromtimestamp(ts, datetime.timezone.utc)
+
+
+def _utc_iso(ts):
+    return _utc(ts).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+
+def utc_day(ts):
+    """The UTC calendar date an epoch stamp falls on — the unit `PROBE_RATION_MAX_PER_UTC_DAY`
+    counts. Public twin of `_utc`, so a read-only ration reporter (H4527) does not have to reach
+    for a private and then drift from what `ProbeRation.check` actually compares."""
+    return _utc(ts).date()
+
+
+def utc_iso_ts(ts):
+    """`YYYY-MM-DDTHH:MM:SSZ` for an epoch stamp. Public twin of `_utc_iso` for the same reason."""
+    return _utc_iso(ts)
+
+
+def _next_utc_midnight(ts):
+    day = _utc(ts).date() + datetime.timedelta(days=1)
+    return datetime.datetime(day.year, day.month, day.day,
+                             tzinfo=datetime.timezone.utc).timestamp()
+
+
+class ProbeRationRefused(RuntimeError):
+    """A readiness probe the ration forbids. Raised BEFORE any spawn or call reservation.
+
+    Deliberately NOT a SystemExit: a ration refusal is not a health verdict. The probe CLIs read a
+    SystemExit from `live_probe` as a NO-GO reading, and `probe_fleet --drop-unhealthy` would
+    silently drop the profile as unhealthy."""
+
+    def __init__(self, message, next_legal_ts=None):
+        RuntimeError.__init__(self, message)
+        self.next_legal_ts = next_legal_ts          # None: no legal time until a human repairs
+        self.next_legal_utc = None if next_legal_ts is None else _utc_iso(next_legal_ts)
+
+
+class ProbeRation:
+    """Per-profile ledger of readiness-probe attempts, one JSONL file per fingerprint.
+
+    Callers check and record while they hold the profile's `ActiveCallClaim`. That kernel lock
+    already serialises every probe on one profile across processes, so check-then-append cannot
+    race. A row that cannot be parsed fails CLOSED: the refusal names the file and line, because
+    guessing an attempt's time guards paid spend worse than a stopped profile does."""
+
+    def __init__(self, root=None):
+        self.root = root or probe_ration_root()
+
+    def path(self, fingerprint):
+        return os.path.join(self.root, fingerprint + '.jsonl')
+
+    def attempts(self, fingerprint):
+        path = self.path(fingerprint)
+        try:
+            with open(path, encoding='utf-8') as fh:
+                lines = fh.read().splitlines()
+        except FileNotFoundError:
+            return []
+        stamps = []
+        for number, line in enumerate(lines, 1):
+            if not line.strip():
+                continue
+            try:
+                stamps.append(float(json.loads(line)['ts']))
+            except (ValueError, TypeError, KeyError) as exc:
+                raise ProbeRationRefused(
+                    'probe ration ledger %s line %d is unreadable (%s); refusing the probe '
+                    'rather than guessing when the last attempt was. Repair the line by hand '
+                    '(H4915).' % (path, number, exc))
+        return sorted(stamps)
+
+    def next_legal(self, fingerprint, now):
+        """Earliest time >= now at which one more attempt is legal."""
+        stamps = self.attempts(fingerprint)
+        legal = now
+        if stamps:
+            legal = max(legal, stamps[-1] + PROBE_RATION_MIN_GAP_S)
+        while sum(1 for ts in stamps if _utc(ts).date() == _utc(legal).date()) \
+                >= PROBE_RATION_MAX_PER_UTC_DAY:
+            legal = _next_utc_midnight(legal)
+        return legal
+
+    def check(self, fingerprint, now, label=None):
+        stamps = self.attempts(fingerprint)
+        legal = self.next_legal(fingerprint, now)
+        if legal <= now:
+            return
+        today = _utc(now).date()
+        same_day = [ts for ts in stamps if _utc(ts).date() == today]
+        reasons = []
+        if len(same_day) >= PROBE_RATION_MAX_PER_UTC_DAY:
+            reasons.append('%d attempt(s) already on UTC day %s (max %d)'
+                           % (len(same_day), today.isoformat(), PROBE_RATION_MAX_PER_UTC_DAY))
+        if stamps and now - stamps[-1] < PROBE_RATION_MIN_GAP_S:
+            reasons.append('last attempt at %s is under %d h old'
+                           % (_utc_iso(stamps[-1]), PROBE_RATION_MIN_GAP_S // 3600))
+        raise ProbeRationRefused(
+            'probe ration: profile %s -- %s. Next legal attempt: %s. No call was made and no '
+            'reservation was spent. Ledger: %s (H4915)'
+            % (label or fingerprint[:12], '; '.join(reasons) or 'ration exhausted',
+               _utc_iso(legal), self.path(fingerprint)), legal)
+
+    def record(self, fingerprint, now, purpose=None, account=None):
+        """Append one attempt. Raises on a failed write: an unrecorded attempt must not spawn."""
+        os.makedirs(self.root, exist_ok=True)
+        row = {'ts': now, 'utc': _utc_iso(now), 'purpose': purpose, 'account': account,
+               'pid': os.getpid()}
+        with open(self.path(fingerprint), 'a', encoding='utf-8') as fh:
+            fh.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + '\n')
+            fh.flush()
+            os.fsync(fh.fileno())

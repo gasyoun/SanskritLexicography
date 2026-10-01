@@ -26,7 +26,7 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 SIBLINGS = REPO.parent  # C:\Users\user\Documents\GitHub on the local machine
 
-IMPORTANCE = {'🔴': 3, '🟠': 2, '🟡': 1}
+IMPORTANCE = {'🔴': 3, '🟠': 2, '🟡': 1, '🟢': 1}  # +green=low (23-08-2026: four findings dotted green by author)
 FINDINGS_URL = 'https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md'
 STALE_DAYS = 180
 
@@ -49,7 +49,7 @@ def parse_index_importance(md_text):
     idx = rest[:nxt.start()] if nxt else rest
     out = {}
     for line in idx.split('\n'):
-        em = re.match(r'^\s*-\s*(🔴|🟠|🟡)\s*\[§(\d+)\.', line)
+        em = re.match(r'^\s*-\s*(🔴|🟠|🟡|🟢)\s*\[§(\d+)\.', line)
         if em:
             out[int(em.group(2))] = IMPORTANCE[em.group(1)]
     return out
@@ -168,6 +168,10 @@ def collect_metrics():
 def main():
     md = (REPO / 'FINDINGS.md').read_text(encoding='utf-8')
     findings = parse_findings(md)
+    if not findings:
+        # Loud refusal, never a silently empty page (H4353).
+        sys.exit(f"REFUSED: {REPO / 'FINDINGS.md'} parsed to 0 findings "
+                 f"(no '### §N. …' headings) — malformed registry, data.json left untouched")
     now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
     by_imp = {}

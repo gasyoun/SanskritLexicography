@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Licensing query — indic-dict / stardict-sanskrit Indic-gloss dictionaries
 
 Draft to send to the indic-dict maintainers (Vishvas Vasuki / `@vvasuki`), e.g. as a
@@ -40,3 +42,5 @@ currently reports no SPDX license and the `.babylon` headers carry only `#bookna
 
 Thanks very much,
 Mārcis Gasūns — Cologne Digital Sanskrit Dictionaries (`sanskrit-lexicon`)
+
+_Dr. Mārcis Gasūns_

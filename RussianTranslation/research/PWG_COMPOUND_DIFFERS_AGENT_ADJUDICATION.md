@@ -5,7 +5,7 @@ _Created: 26-07-2026 · Last updated: 26-07-2026_
 > **§8 supersedes the counts in §3–§6.** Both upstream extractors named in §4 have since
 > been repaired (H1703) and the queue re-adjudicated against the repaired inputs. §3–§6
 > record what H1681 measured on the defective inputs and are kept as the audit trail of
-> how the defects were found; the live numbers are in [§8](#8-h1703-refresh--the-queue-re-adjudicated-after-both-repairs).
+> how the defects were found; the live numbers are in [§8](#8-h1703-refresh-the-queue-re-adjudicated-after-both-repairs).
 
 Adjudicator: [`src/pilot/adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py),
 Opus 5 1M (`claude-opus-5[1m]`), Claude Code.

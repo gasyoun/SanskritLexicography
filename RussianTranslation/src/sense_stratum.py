@@ -22,11 +22,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 sys.path.insert(0, HERE)
 import renou  # noqa: E402
 
 SMAP = renou.load_map('pwg')
-PWG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
+PWG = os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 
 SENSE_RE = re.compile(r'<div n="1">\s*(?:[—-]\s*)?(\d+)\)')
 LS_RE = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)

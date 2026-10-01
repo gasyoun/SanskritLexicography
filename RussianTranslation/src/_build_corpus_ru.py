@@ -6,8 +6,10 @@ import json, os, sys, sqlite3, collections
 sys.stdout.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 LEX = os.path.join(HERE, 'corpus_lexicon.jsonl')
-DB  = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'SamudraManthanam', 'web', 'corpus.db'))
+DB  = os.path.normpath(os.path.join(GITHUB, 'SamudraManthanam', 'web', 'corpus.db'))
 OUT = os.path.normpath(os.path.join(HERE, '..', '..', 'article-comparison'))
 
 WORDS = {

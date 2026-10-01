@@ -25,11 +25,15 @@ if _SRC not in sys.path:
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
 import german_anchor  # noqa: E402  (H858 Part B: source-anchored repair of a dropped `german` span)
+import target_anchor  # noqa: E402  (H3675: the target-side twin -- a span dropped from the TRANSLATION)
 from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
-from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V1,
-                                SCHEMA_V2, assert_timeout_within_ceiling,
-                                config_dir_fingerprint, validate_manifest,
-                                validate_profile)  # noqa: E402
+from execution_contract import (ActiveCallClaim, BUFFERED_OUTPUT_ARGS, KILL_CLASSES,
+                                KILL_CLASS_NO_PROGRESS, PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V1,
+                                SCHEMA_V2, TOKEN_STREAM_FLAG, TOKEN_STREAM_OUTPUT_ARGS,
+                                assert_timeout_within_ceiling, config_dir_fingerprint,
+                                kill_classification, progress_window_ms_for_argv,
+                                validate_manifest, validate_profile)  # noqa: E402
+import cli_stream  # noqa: E402  (H4528: NDJSON liveness / envelope / classification text)
 from call_reservation import (CallLimitReached, CallReservationLedger,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)  # noqa: E402
 
@@ -72,6 +76,29 @@ HARD_TIMEOUT_MS = PRODUCTION_HARD_TIMEOUT_MS
 # asking for nothing gets the maximum, and asking for more than the maximum is an error
 # instead of a rounding. Any lower `--timeout` still binds exactly as before.
 DEFAULT_TIMEOUT_S = HARD_TIMEOUT_MS // 1000
+
+# H2878 (issue #1680, FINDINGS §378): the no-output-progress window for the generation spawn.
+#
+# HARD_TIMEOUT_MS above is unchanged and stays the last-resort backstop. This is the second,
+# orthogonal bound the H2313 ruling explicitly left as residual: the ceiling caps TOTAL WALL
+# CLOCK and therefore cannot tell a hung route from a slow one, while this caps the longest
+# stretch in which the spawn produced no result bytes.
+#
+# It is DERIVED from the spawn's own `--output-format` rather than pinned here, and this lane
+# runs `--output-format json`, which buffers the entire envelope to the end of the call. So it
+# resolves to None -- observe only. Every generation call still RECORDS `bytes_seen` and
+# `quiet_ms` on its attempt, which is what turns arming this later into a measurement instead
+# of a bet. Arming a 90 s stalled-output window against a buffered format would kill healthy
+# spawns wholesale (measured healthy range 49 404-511 908 ms, p50 189 327).
+#
+# H4528 (corpus record: PR #1144): the window can now be ARMED, per manifest, by spawning on the CLI's
+# token-streaming format (`execution_contract.TOKEN_STREAM_OUTPUT_ARGS`). The window is then
+# derived from that argv -- never pinned -- and progress is counted only on CONTENT lines
+# (`cli_stream.is_progress_line`), so the CLI's own `system/api_retry` chatter during a quota
+# refusal cannot keep a dead spawn looking alive. The buffered lane below stays the default;
+# see DEFAULT_CLI_TOKEN_STREAM for why.
+WORKER_OUTPUT_FORMAT = 'json'
+WORKER_PROGRESS_WINDOW_MS = progress_window_ms_for_argv(list(BUFFERED_OUTPUT_ARGS))
 
 # H2254: the SUPERVISOR's wrapper timeout must sit strictly ABOVE the per-call ceiling.
 #
@@ -357,6 +384,113 @@ def resolve_safe_mode(manifest, claude_bin='claude'):
     return True
 
 
+# H4528 (corpus record: PR #1144): token streaming -- the switch that ARMS the H2878 no-output-progress
+# watchdog on generation spawns. Same shape as safe mode on purpose: a cached `--help` probe
+# that fails safe, and a manifest tri-state that travels with the run receipt.
+_token_stream_support = {}
+
+
+def cli_supports_token_stream(claude_bin='claude'):
+    """Whether the installed CLI accepts --include-partial-messages. Cached; unknown => False.
+
+    An unsupported flag would kill every spawn in argument parsing; degrading to the buffered
+    `json` lane (observe-only watchdog) is the historical behaviour, so that is the fallback.
+    """
+    if claude_bin in _token_stream_support:
+        return _token_stream_support[claude_bin]
+    supported = False
+    try:
+        proc = subprocess.run(claude_argv_prefix(claude_bin) + ['--help'],
+                              capture_output=True, text=True, encoding='utf-8', timeout=60)
+        supported = TOKEN_STREAM_FLAG in (proc.stdout or '')
+    except (OSError, subprocess.SubprocessError, ValueError):
+        supported = False
+    _token_stream_support[claude_bin] = supported
+    return supported
+
+
+# H4528: the default is OFF, and the reason is measured, not caution for its own sake.
+#
+# Zero-cost probes of the real CLI 2.1.251 against a local fake Messages API
+# (pwg_ru/h4528/) show the CLI requests `thinking: {type: "adaptive"}` with no `display`, i.e.
+# the API default `"omitted"`: a thinking block streams as an empty `content_block_start`,
+# then NOTHING until its `signature_delta`. On the token-streaming format that thinking phase
+# is therefore a stdout silence exactly as long as the model thinks (25 s think -> 25.0 s
+# longest quiet). The committed census bounds the first COMPLETE message (`ttft_ms`, which
+# contains that thinking) at up to 391 798 ms, with 9 of 31 healthy envelopes over the 90 s
+# window -- so a default-ON window could kill a measured-clean call, which is precisely this
+# handoff's fail condition. What the census does bound tightly is the wait for the FIRST
+# streamed event (`ttft_stream_ms` max 19 759 ms) -- the quota-hang shape -- which is why the
+# window is safe to arm per manifest on runs where thinking is bounded or pings are observed
+# (the CLI forwards API `ping` events as `stream_event` lines, which count as progress).
+#
+# Flipping this to True requires one confirmatory live call under a fresh /pwg-live-gate GO
+# that records `quiet_ms` / `first_progress_ms` on a dense card -- the same "no flip without
+# a measured GO" rule H2189/H2251 applied to safe mode.
+DEFAULT_CLI_TOKEN_STREAM = False
+
+
+def resolve_token_stream(manifest, claude_bin='claude'):
+    """Return True when this run's generation spawns should use the token-streaming format.
+
+    `execution.cli_token_stream` decides. Absent takes DEFAULT_CLI_TOKEN_STREAM; an explicit
+    value is honoured both ways. A request the CLI cannot serve degrades LOUDLY to the
+    buffered lane, whose watchdog is observe-only -- never to a spawn that cannot parse argv.
+    """
+    requested = (manifest.get('execution') or {}).get('cli_token_stream')
+    if requested is None:
+        requested = DEFAULT_CLI_TOKEN_STREAM
+    if not bool(requested):
+        return False
+    if not cli_supports_token_stream(claude_bin):
+        sys.stderr.write(
+            'H4528: manifest requested execution.cli_token_stream but the installed CLI (%s) '
+            'does not advertise %s -- spawning on the buffered json lane, where the '
+            'no-output-progress watchdog can only observe.\n' % (claude_bin, TOKEN_STREAM_FLAG))
+        sys.stderr.flush()
+        return False
+    return True
+
+
+def _is_npm_claude_placeholder(exe):
+    """True only for npm's literal placeholder script (never for real PE or fixtures)."""
+    try:
+        with open(exe, 'rb') as fh:
+            return b'native binary not installed' in fh.read(256)
+    except OSError:
+        return False
+
+
+def ensure_windows_native_binary(base):
+    """Self-heal npm's placeholder bin/claude.exe before spawn (Uprava FINDINGS §542).
+
+    A reinstall that skips the native-binary download leaves npm's ~500-byte
+    placeholder script, which dies at exec time with an opaque Windows error,
+    indistinguishable in call envelopes from quota/auth failures. Fires only on
+    the placeholder's own error-text signature -- never on real binaries or
+    small hermetic-test fixtures; repairs via the package's own install.cjs and
+    fails loud with the manual command when that cannot heal it.
+    """
+    if os.name != 'nt':
+        return
+    exe = os.path.join(base, 'bin', 'claude.exe')
+    if not os.path.isfile(exe) or not _is_npm_claude_placeholder(exe):
+        return
+    node = shutil.which('node')
+    if node:
+        try:
+            subprocess.run([node, 'install.cjs'], cwd=base,
+                           capture_output=True, timeout=600)
+        except (OSError, subprocess.SubprocessError):
+            pass
+    if os.path.isfile(exe) and not _is_npm_claude_placeholder(exe):
+        return
+    raise FileNotFoundError(
+        'refusing to spawn against npm placeholder %s; install.cjs did not '
+        'repair it -- run manually: node "%s"'
+        % (exe, os.path.join(base, 'install.cjs')))
+
+
 def claude_argv_prefix(claude_bin):
     """Return the argv prefix that invokes the Claude CLI directly (Windows-safe).
 
@@ -380,6 +514,7 @@ def claude_argv_prefix(claude_bin):
     node = shutil.which('node')
     shim_dir = os.path.dirname(os.path.abspath(resolved)) or '.'
     base = os.path.join(shim_dir, 'node_modules', '@anthropic-ai', 'claude-code')
+    ensure_windows_native_binary(base)
     entries = sorted(glob.glob(os.path.join(base, 'cli*.cjs')) +
                      glob.glob(os.path.join(base, 'cli*.js')))
     if node and entries:
@@ -575,9 +710,12 @@ def parse_cli_wrapper(stdout):
     envelope parsing separate lets :meth:`HeadlessEngine.call` account for a malformed result
     before it retries.  An unreadable envelope is returned as a loud ``ValueError`` so the caller
     can mark the spawned call cost-unevaluable instead of silently pricing it at zero.
+
+    H4528: a token-streaming stdout (NDJSON) is reduced to its final `type: result` line
+    first -- that line carries the same key set as the buffered envelope.
     """
     try:
-        wrapper = json.loads(stdout)
+        wrapper = json.loads(cli_stream.result_envelope_text(stdout))
     except json.JSONDecodeError as exc:
         raise ValueError('Claude output is not JSON: %s' % exc)
     if not isinstance(wrapper, dict):
@@ -808,6 +946,12 @@ def normalize_batch(manifest, keys, structured):
             if card:
                 card['key1'] = key
         error = None
+        german_stamp = None
+        # H3675: the target-side repair's own trace, twin of `anchor` below.
+        target = None
+        # H3665: `german_anchor_repairs: 0` was unfalsifiable -- it could mean "no card dropped
+        # a german span" or "the repair was never reached". This trace separates the two.
+        anchor = None
         if card is None:
             error = 'missing-or-mismatched-key'
         else:
@@ -832,37 +976,100 @@ def normalize_batch(manifest, keys, structured):
                 ok, info = german_anchor.reanchor(masked, inp.get('skeleton') or '')
                 candidate, cand_unmapped = None, []
                 if ok:
-                    candidate = restore_card(masked, field, phs, cand_unmapped)
+                    # H3675: restore a COPY. `restore_card` unmasks in place, so restoring
+                    # `masked` itself would consume the `{Tn}` tokens the target-side repair
+                    # below still needs as its anchor -- the same reason `masked` exists at all.
+                    candidate = restore_card(copy.deepcopy(masked), field, phs, cand_unmapped)
                 if (candidate is not None
                         and count_card(candidate, '<ls') == inp['ls']
                         and count_card(candidate, '{#') == inp['sk']):
                     card, unmapped = candidate, cand_unmapped
-                    card['german_anchor'] = german_anchor.stamp(info)
+                    german_stamp = german_anchor.stamp(info)
+                    card['german_anchor'] = german_stamp
+                    anchor = {'invoked': True, 'outcome': 'repaired'}
                 else:
                     error = 'fidelity-reject: german-anchor %s' % (
                         'verify-failed' if ok else info.get('reason', 'refused'))
+                    anchor = {'invoked': True,
+                              'outcome': ('verify-failed' if ok
+                                          else 'refused:%s' % info.get('reason', 'refused'))}
                     card = None
             if card is not None:
                 if (count_card_field(card, field, '<ls') != inp['ls']
                         or count_card_field(card, field, '{#') != inp['sk']):
-                    # H1152 parity (C1): german echo is faithful, but the translation dropped a
-                    # span -- requeue instead of promoting a lossy card.
-                    error = 'translation-fidelity-reject'
-                    card = None
+                    # H1152 parity (C1) found this class; H3675 repairs it instead of only
+                    # naming it. The german echo is faithful and the TRANSLATION dropped a
+                    # span -- until now an unconditional requeue, and a requeue reproduces the
+                    # drop for the same reason it does on the german side (it is a property of
+                    # the emission, not of transport). `target_anchor` re-injects the missing
+                    # tokens using THIS SAME sense's german as the anchor, then this identical
+                    # count runs again as the verifier: accepted only when the card becomes
+                    # exactly faithful on BOTH sides, refused cards fall through to the
+                    # identical reject as before, and a card that passed above never enters
+                    # this branch. MG ruled `reanchor` over an explicit requeue on 29-08-2026.
+                    t_ok, t_info = target_anchor.reanchor(masked, field)
+                    t_candidate, t_unmapped = None, []
+                    if t_ok:
+                        t_candidate = restore_card(copy.deepcopy(masked), field, phs, t_unmapped)
+                    if (t_candidate is not None
+                            and count_card(t_candidate, '<ls') == inp['ls']
+                            and count_card(t_candidate, '{#') == inp['sk']
+                            and count_card_field(t_candidate, field, '<ls') == inp['ls']
+                            and count_card_field(t_candidate, field, '{#') == inp['sk']):
+                        card, unmapped = t_candidate, t_unmapped
+                        # Re-restoring from `masked` produced a fresh dict, so a german repair
+                        # already applied to this card must be re-stamped onto it or the
+                        # provenance of the machine-patched german is silently lost.
+                        if german_stamp:
+                            card['german_anchor'] = german_stamp
+                        card['target_anchor'] = target_anchor.stamp(t_info)
+                        target = {'invoked': True, 'outcome': 'repaired'}
+                    else:
+                        # The reject string keeps its `translation-fidelity-reject` prefix so
+                        # every existing reader (summaries, RUN_LOG greps, the H3665 counters)
+                        # still matches, and carries the refusal reason for diagnosis.
+                        error = 'translation-fidelity-reject: target-anchor %s' % (
+                            'verify-failed' if t_ok else t_info.get('reason', 'refused'))
+                        target = {'invoked': True,
+                                  'outcome': ('verify-failed' if t_ok
+                                              else 'refused:%s' % t_info.get('reason', 'refused'))}
+                        card = None
                 elif unmapped:
                     # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
                     error = 'unmapped-token-reject'
                     card = None
+        # H3665: the two states `german_anchor_repairs` alone cannot tell apart.
+        #   not-reached          -- the card was nulled by a LATER guard (the target-field count
+        #                           at line ~902, or the C-42 unmapped check) while the german-only
+        #                           count above passed, so the repair branch was never entered.
+        #                           This is `hasita~~h0_zz_pw` on no_pwg_w09 (H3659): german 2/2,
+        #                           russian short, repairs 0 -- and 0 meant "never invoked", not
+        #                           "nothing to repair".
+        #   repaired-then-rejected -- the repair DID fire and fixed the german echo, but the card
+        #                           still died downstream; the stamp goes with `card = None`, so
+        #                           the stamp-derived `german_anchor_repairs` silently loses it.
+        if anchor is None and (error or '').startswith(
+                ('translation-fidelity-reject', 'unmapped-token-reject')):
+            anchor = {'invoked': False, 'outcome': 'not-reached', 'nulled_by': error}
+        elif anchor is not None and anchor['outcome'] == 'repaired' and card is None:
+            anchor = {'invoked': True, 'outcome': 'repaired-then-rejected', 'nulled_by': error}
         row = {'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                'escalated': False}
         if error:
             row['error'] = error
+        if anchor:
+            row['german_anchor_trace'] = anchor
+        if target:
+            row['target_anchor_trace'] = target
         rows.append(row)
     return rows
 
 
 def classify_process(proc):
-    text = (proc.stdout or '') + '\n' + (proc.stderr or '')
+    # H4528: on a token stream, stdout also carries the model's own content deltas, and a PWG
+    # card legitimately contains `429` (a page or verse number). Only the CLI's own lines are
+    # classifiable; a buffered envelope passes through unchanged.
+    text = cli_stream.classification_text(proc.stdout or '') + '\n' + (proc.stderr or '')
     if AUTH_RE.search(text):
         return 'authentication', EXIT_AUTH
     if RATE_RE.search(text):
@@ -872,6 +1079,31 @@ def classify_process(proc):
     return 'process', proc.returncode or 1
 
 
+# H3627: the CLI's own names for "I could not produce output matching the schema after N
+# attempts". It exits NON-ZERO for this, which `classify_process` reads as 'process' — a
+# window-fatal fault. But the call is a defect of THIS GROUP's payload, not of the run: the
+# profile is healthy, the route is healthy, and every other key in the window is unaffected.
+# Treating it as fatal is what discarded 19 paid successes when the 20th call tripped it
+# (FINDINGS §596). Matched on the envelope, never on stderr text, so a prose mention of the
+# phrase in some other error cannot smuggle a real failure into the park lane.
+STRUCTURED_EXHAUSTED_SUBTYPE = 'error_max_structured_output_retries'
+STRUCTURED_EXHAUSTED_TERMINAL = 'structured_output_retry_exhausted'
+
+
+def structured_output_exhausted(wrapper):
+    """True when the CLI envelope says it exhausted its structured-output retries.
+
+    Read from the parsed envelope's own fields only. A missing/unparseable envelope is
+    False — an unknown non-zero exit stays window-fatal, because 'we could not tell' must
+    not silently become 'keep spending'.
+    """
+    if not isinstance(wrapper, dict):
+        return False
+    if wrapper.get('subtype') == STRUCTURED_EXHAUSTED_SUBTYPE:
+        return True
+    return wrapper.get('terminal_reason') == STRUCTURED_EXHAUSTED_TERMINAL
+
+
 # H2077 / #947: reasons meaning "the CALL died", not "the card is defective". A fragment missing
 # for one of these leaves an otherwise healthy card incomplete, so the audit must not file it as a
 # content defect — that denylists the card AND discards the frag_prov fshas of the fragments that
@@ -879,7 +1111,11 @@ def classify_process(proc):
 # fidelity reject, a mismatched fragment key, malformed output) stays content, because
 # over-exempting would let a genuinely defective card back into the cheap-re-run lane — the
 # 'stubborn null' loop that the fidelity-reject rule exists to stop.
-INFRA_FAILURE_REASONS = ('timeout', 'budget_exceeded', 'rate_limit', 'authentication', 'connection')
+#
+# H4528: `no_progress_kill` joins the list -- the watchdog killed a call that had stopped
+# producing content, which says nothing about the card's content.
+INFRA_FAILURE_REASONS = ('timeout', 'budget_exceeded', 'rate_limit', 'authentication', 'connection',
+                         KILL_CLASS_NO_PROGRESS)
 
 
 def is_infra_failure(reason):
@@ -898,7 +1134,8 @@ def timeout_output_text(exc):
         out = out.decode('utf-8', 'replace')
     if isinstance(err, bytes):
         err = err.decode('utf-8', 'replace')
-    return out + '\n' + err
+    # H4528: a killed token stream carries partial model content; keep the CLI's lines only.
+    return cli_stream.classification_text(out) + '\n' + err
 
 
 def classify_timeout(exc):
@@ -917,7 +1154,10 @@ def classify_timeout(exc):
         return 'authentication', EXIT_AUTH
     if RATE_RE.search(text):
         return 'rate_limit', EXIT_RATE_LIMIT
-    return 'timeout', EXIT_TIMEOUT
+    # H4528: which bound fired decides the local class -- the 600 000 ms backstop stays
+    # 'timeout'; the no-output-progress watchdog is 'no_progress_kill'. Never conflated, and
+    # an account-level cause found above still wins over both (PR #1837's refusal split).
+    return kill_classification(getattr(exc, 'killed_reason', None)), EXIT_TIMEOUT
 
 
 def card_by_key(cards):
@@ -1002,13 +1242,35 @@ class HeadlessEngine:
         # H2189: opt-in, and resolved ONCE here rather than per call, so a mid-run CLI
         # swap cannot make half a window's calls carry the flag and half not.
         self.safe_mode = resolve_safe_mode(manifest, claude)
+        # H4528: resolved once for the same reason. The window is DERIVED from the argv the
+        # spawn will actually carry, so it can never be armed against a buffered format.
+        self.token_stream = resolve_token_stream(manifest, claude)
+        self.output_args = list(TOKEN_STREAM_OUTPUT_ARGS if self.token_stream
+                                else BUFFERED_OUTPUT_ARGS)
+        self.progress_window_ms = progress_window_ms_for_argv(self.output_args)
+        self.progress_filter = cli_stream.is_progress_line if self.token_stream else None
         self.run = runner or run_tree_kill
         self.attempts = []
+        # H3627: salvage state -- rows completed so far and how many were healed.
+        # Read by execute() when a HardFailure aborts the window mid-run.
+        self.partial_rows = []
+        # H3665: `normalize_batch`'s per-key german_anchor trace, kept on the ENGINE because
+        # `resolve_group` consumes its rows for `card`/`error` only and drops everything else.
+        # Re-attached to the output rows in `_finish_payload`, so the summary can tell
+        # "nothing to repair" from "the repair was never reached".
+        self.german_anchor_traces = {}
+        self.target_anchor_traces = {}     # H3675, same reason
+        self.partial_healed = 0
         self.failures = {}
         self.translate_calls = 0
         self.heal_calls = 0
+        # Every kill, whichever bound fired -- classify_run's infra adjudication reads this.
         self.kill_timeouts = 0
+        # H4528: the subset of those kills the no-output-progress watchdog made.
+        self.no_progress_kills = 0
         self.conn_errors = 0
+        # H2878: per-call liveness readings (label / elapsed_ms / bytes_seen / quiet_ms).
+        self.progress_readings = []
         # R3 (C-12/C-13): the manifest agent budgets were write-only -- emitted, validated-adjacent,
         # never read by the executor. Enforce them here. None = unbounded (back-compat). The
         # `--max-agents` override caps the TOTAL across both lanes and binds even without budgets.
@@ -1079,8 +1341,8 @@ class HeadlessEngine:
                     self.profile_fingerprint)):
             raise RuntimeError(
                 'paid headless spawn requires the live canonical profile claim')
-        argv = claude_argv_prefix(self.claude) + [
-                '-p', '--output-format', 'json', '--json-schema',
+        argv = claude_argv_prefix(self.claude) + ['-p'] + self.output_args + [
+                '--json-schema',
                 json.dumps(self.m['output_schema'], ensure_ascii=False, separators=(',', ':')),
                 '--model', self.m['model'], '--permission-mode', 'plan']
         if self.safe_mode:                       # H2189: strips profile CLAUDE.md/skills/hooks
@@ -1098,9 +1360,18 @@ class HeadlessEngine:
             self.heal_calls += 1
         else:
             self.translate_calls += 1
+        progress = {}
+        # H4528: the content-line filter only travels with an armed window, so a buffered
+        # spawn's runner call is byte-for-byte what it was before.
+        watch = {'progress_filter': self.progress_filter} if self.progress_filter else {}
         try:
             proc = self.run(argv, input=prompt, text=True, encoding='utf-8',
-                            capture_output=True, timeout=self.timeout, cwd=self.cli_cwd)
+                            capture_output=True, timeout=self.timeout, cwd=self.cli_cwd,
+                            # H2878: watch the spawn's output progress. On the buffered lane
+                            # the window is None (observe only); on the token stream (H4528)
+                            # it is armed and a silent spawn dies early, with its own class.
+                            progress_window_ms=self.progress_window_ms,
+                            progress_out=progress, **watch)
         except subprocess.TimeoutExpired as exc:
             # A timeout happened after a real spawn. No trustworthy wrapper survived, so count the
             # call and fail closed on cost instead of leaving a paid timeout looking like $0.
@@ -1116,17 +1387,35 @@ class HeadlessEngine:
             # is_rate_limited -> park + requeue_rate_limited fire. Without it the run continues
             # against a locked account, returns all-null cards, and is recorded done/success.
             classification, code = classify_timeout(exc)
+            if classification == KILL_CLASS_NO_PROGRESS:
+                self.no_progress_kills += 1
             attempt = {'label': label, 'keys': keys, 'returncode': 124,
                        'elapsed_ms': int((time.monotonic() - started) * 1000),
                        'classification': classification}
+            # H4528: the CLI's internal retry statuses (e.g. [429, 429, ...]) are the evidence
+            # that separates a quota hang from a model that went silent -- scalars only.
+            retries = cli_stream.api_retry_statuses(getattr(exc, 'output', None))
+            if retries:
+                attempt['api_retry_statuses'] = retries[-20:]
+            # H2878: which bound ended this call, and what the spawn had produced when it did.
+            # Before this every killed attempt read `returncode: 124` and nothing else, so a
+            # silent hang and a slow-but-working call left identical rows. Absent keys are
+            # skipped, so an attempt from a runner that does not watch is unchanged.
+            attempt.update({name: value for name, value in (
+                ('killed_reason', getattr(exc, 'killed_reason', None)),
+                ('bytes_seen', getattr(exc, 'bytes_seen', None)),
+                ('quiet_ms', getattr(exc, 'quiet_ms', None)),
+                ('progress_events', getattr(exc, 'progress_events', None)),
+                ('first_progress_ms', getattr(exc, 'first_progress_ms', None)))
+                if value is not None})
             cleanup = getattr(exc, 'cleanup_trouble', None)
             if cleanup:                                # D-J: diagnostic only, about cleanup not cause
                 attempt['cleanup_trouble'] = cleanup
             self.attempts.append(attempt)
-            if classification != 'timeout':
+            if classification not in KILL_CLASSES:
                 # Account-level: stop the run. Every remaining call would hit the same wall.
                 raise HardFailure(classification, code, timeout_output_text(exc)[-2000:])
-            return None, 'timeout'
+            return None, classification
         except BaseException:
             # Reservation authority is irreversible. A spawn/runner exception
             # cannot turn the attempt back into an apparent zero-cost call.
@@ -1135,10 +1424,29 @@ class HeadlessEngine:
             self._accumulate_usage(telemetry)
             raise
         elapsed = int((time.monotonic() - started) * 1000)
+        # H2878: the same reading on the SUCCESS path. A completed call's longest silence is
+        # the only evidence that says whether a window would have been safe to arm against
+        # this lane -- which is why it is recorded before any window ever is.
+        reading = {'label': label, 'elapsed_ms': elapsed,
+                   'bytes_seen': progress.get('bytes_seen'),
+                   'quiet_ms': progress.get('quiet_ms')}
+        if self.progress_filter:               # H4528: armed lane only -- content-line counts
+            reading['progress_events'] = progress.get('progress_events')
+            reading['first_progress_ms'] = progress.get('first_progress_ms')
+        self.progress_readings.append(reading)
         try:
             wrapper = parse_cli_wrapper(proc.stdout)
         except ValueError:
             wrapper = None
+        # H4528 ceiling hygiene: wall, API time and the gap between them are three different
+        # facts (probes run api 0.25-0.72 of wall; cards api ~= wall), and a ceiling judged on
+        # one must never be read off another. Recorded side by side, never merged.
+        if isinstance(wrapper, dict):
+            for name in ('duration_ms', 'duration_api_ms', 'ttft_stream_ms', 'ttft_ms', 'num_turns'):
+                if isinstance(wrapper.get(name), int):
+                    reading[name] = wrapper[name]
+            if isinstance(reading.get('duration_api_ms'), int):
+                reading['api_gap_ms'] = elapsed - reading['duration_api_ms']
         # Account for EVERY spawned process before classifying its result. This covers non-zero
         # provider exits and rc=0 wrappers whose structured_output is malformed. A missing envelope
         # increments missing_usage_calls and makes the whole run unevaluable.
@@ -1171,6 +1479,21 @@ class HeadlessEngine:
         self.call_reservation.finalize(reservation, telemetry)
         self._accumulate_usage(telemetry)
         if proc.returncode:
+            # H3627 / FINDINGS §596: structured-output exhaustion is a defect of THIS group's
+            # payload, not of the window. Park it the way a refusal/malformed envelope is
+            # parked -- record the attempt, keep the raw envelope, and return so the remaining
+            # batches still run. Everything else non-zero stays window-fatal.
+            if structured_output_exhausted(wrapper):
+                raw_path = write_failed_envelope(
+                    label, 'structured_output_exhausted', proc.stdout,
+                    'CLI exhausted structured-output retries (rc=%s)' % proc.returncode)
+                attempt = {'label': label, 'keys': keys, 'returncode': proc.returncode,
+                           'elapsed_ms': elapsed,
+                           'classification': 'structured_output_exhausted'}
+                if raw_path:
+                    attempt['raw_envelope_path'] = raw_path
+                self.attempts.append(attempt)
+                return None, 'structured_output_exhausted:rc=%s' % proc.returncode
             classification, code = classify_process(proc)
             if classification == 'connection':
                 self.conn_errors += 1
@@ -1217,11 +1540,15 @@ class HeadlessEngine:
                     self.note(key, error, preserve=error.startswith('budget_exceeded'))
                 if error.startswith('budget_exceeded'):
                     break                    # R3: retrying/bisecting would only refuse again
-                timed_out = error == 'timeout'
+                timed_out = error in KILL_CLASSES
                 if timed_out:
                     break
                 continue
             for row in normalize_batch(self.m, pending, structured):
+                if row.get('german_anchor_trace'):
+                    self.german_anchor_traces[row['key']] = row['german_anchor_trace']
+                if row.get('target_anchor_trace'):
+                    self.target_anchor_traces[row['key']] = row['target_anchor_trace']
                 if row['card']:
                     resolved[row['key']] = row['card']
                 else:
@@ -1259,7 +1586,7 @@ class HeadlessEngine:
                     self.note('%s_f%d' % (key, index), error)
                 if error.startswith('budget_exceeded'):
                     break                    # R3: heal ceiling hit -- stop, do not bisect
-                timed_out = error == 'timeout'
+                timed_out = error in KILL_CLASSES
                 if timed_out:
                     break
                 continue
@@ -1487,7 +1814,10 @@ class HeadlessEngine:
         return card
 
     def run_all(self):
-        rows = []
+        # H3627 / FINDINGS §596: rows and the heal count live on the ENGINE, not in locals, so a
+        # HardFailure raised mid-window does not take the already-paid-for cards down with the
+        # stack. `execute()` reads them back to write a partial output instead of nothing.
+        rows = self.partial_rows
         healed = 0
         presplit = set(self.m.get('presplit_keys') or [])
         for index, batch in enumerate(self.m.get('batches') or []):
@@ -1497,6 +1827,7 @@ class HeadlessEngine:
                 if card:
                     resolved[key] = card
                     healed += 1
+                    self.partial_healed = healed
             for key in batch:
                 row = {'key': key, 'card': resolved.get(key), 'judge': None,
                        'judge_sonnet': None, 'escalated': key in pending and key in resolved}
@@ -1511,6 +1842,7 @@ class HeadlessEngine:
                 row['error'] = self.failures.get(key, 'unknown')
             else:
                 healed += 1
+                self.partial_healed = healed
             rows.append(row)
         return rows, healed, len(presplit)
 
@@ -1587,14 +1919,68 @@ def execute(manifest, claude='claude', timeout=DEFAULT_TIMEOUT_S, runner=None,
                 active_claim=active_claim)
             results, healed, presplit = engine.run_all()
     except HardFailure as exc:
-        return None, {'classification': exc.classification, 'error': exc.detail,
-                      'attempts': engine.attempts, 'usage': engine.usage}, exc.code
+        # H3627 / FINDINGS §596: a window that dies on call N must not throw away calls 1..N-1.
+        # Everything already resolved is on the engine, so build the SAME payload shape as a
+        # clean run and let main() write it — the cards are then promotable through the normal
+        # path instead of being paid for and discarded. `window_aborted` marks it as partial so
+        # no reader mistakes a truncated window for a complete one.
+        # ...but NOT for an infrastructure failure. H2056 #944: a hung 429 must never be
+        # recorded as a result — on rate_limit / authentication / connection / timeout /
+        # budget_exceeded the run is compromised rather than merely truncated, the remaining
+        # keys were never attempted, and publishing a payload would let a starved window read
+        # as output. Those keep the pre-existing `payload=None` contract. Salvage is for a
+        # per-call defect (`process`) that leaves the profile and route healthy.
+        salvageable = (engine is not None
+                       and not is_infra_failure(exc.classification)
+                       and any(row.get('card') for row in engine.partial_rows))
+        payload = None
+        if salvageable:
+            payload = _finish_payload(manifest, engine, list(engine.partial_rows),
+                                      engine.partial_healed,
+                                      len(set(manifest.get('presplit_keys') or [])))
+            payload['summary']['window_aborted'] = {
+                'classification': exc.classification, 'error': exc.detail,
+                'cards_salvaged': sum(1 for row in engine.partial_rows if row.get('card'))}
+        return payload, {'classification': exc.classification, 'error': exc.detail,
+                         'attempts': engine.attempts, 'usage': engine.usage,
+                         'partial_output': payload is not None}, exc.code
+    payload = _finish_payload(manifest, engine, results, healed, presplit)
+    status = {'classification': ('completed_with_residuals'
+                                 if payload['summary']['null_keys'] else 'success'),
+              'attempts': engine.attempts, 'null_keys': payload['summary']['null_keys'],
+              # H2251: what the spawn ACTUALLY did, which is not the same fact as
+              # `meta.execution.cli_safe_mode` (what the manifest REQUESTED). They differ
+              # exactly in the loud-downgrade case H2189 built the stderr warning for --
+              # a CLI that cannot parse the flag. That warning is ephemeral; this is the
+              # durable record, so a run whose savings were never actually taken can be
+              # identified afterwards from its own artifacts instead of a lost console.
+              'cli_safe_mode_effective': engine.safe_mode,
+              # H4528: same requested-vs-effective split for the watchdog switch, plus the
+              # window the spawns actually ran under (None = observe-only buffered lane).
+              'cli_token_stream_effective': getattr(engine, 'token_stream', False),
+              'progress_window_ms_effective': getattr(engine, 'progress_window_ms', None)}
+    return payload, status, 0
+
+
+def _finish_payload(manifest, engine, results, healed, presplit):
+    """Assemble the output payload from whatever the engine resolved.
+
+    Shared by the clean path and the H3627 salvage path, so a partial window produces a
+    byte-compatible artifact rather than a second, divergent shape.
+    """
     for key, card in manifest.get('tm_resolved', {}).items():
         results.append({'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                         'escalated': False, 'tm': True})
     for key, card in manifest.get('degenerate_resolved', {}).items():
         results.append({'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                         'escalated': False, 'degenerate_passthrough': True})
+    for row in results:
+        trace = getattr(engine, 'german_anchor_traces', {}).get(row['key'])
+        if trace:
+            row['german_anchor_trace'] = trace
+        trace = getattr(engine, 'target_anchor_traces', {}).get(row['key'])
+        if trace:
+            row['target_anchor_trace'] = trace
     seen = {row['key'] for row in results}
     for key in manifest['meta']['selected_keys']:
         if key not in seen:
@@ -1617,27 +2003,47 @@ def execute(manifest, claude='claude', timeout=DEFAULT_TIMEOUT_S, runner=None,
                                          'reinjected': row['card']['german_anchor']['reinjected']}
                                         for row in results
                                         if (row.get('card') or {}).get('german_anchor')],
+               # H3665: `german_anchor_repairs: 0` is not evidence of a healthy lane on its own --
+               # it is the SAME number whether nothing needed repairing or the repair was never
+               # reached. These two make it falsifiable and are asserted together by
+               # `headless_worker_selftest.test_h3665_german_anchor_counter_is_falsifiable`:
+               #   invocations 0 + not_reached [] -> genuinely nothing to repair
+               #   invocations 0 + not_reached [k] -> the repair never ran on a card that died a
+               #                                      fidelity death (the H3659 `hasita` case)
+               'german_anchor_invocations': sum(
+                   bool((row.get('german_anchor_trace') or {}).get('invoked')) for row in results),
+               'german_anchor_not_reached': [
+                   row['key'] for row in results
+                   if (row.get('german_anchor_trace') or {}).get('outcome') == 'not-reached'],
+               'german_anchor_outcomes': {row['key']: row['german_anchor_trace']['outcome']
+                                          for row in results if row.get('german_anchor_trace')},
+               # H3675: the target-side twin. `repairs` is stamp-derived like the german one;
+               # `invocations`/`outcomes` keep it falsifiable the same way (FINDINGS 608).
+               'target_anchor_repairs': sum(bool((row.get('card') or {}).get('target_anchor'))
+                                            for row in results),
+               'target_anchor_detail': [{'key': row['key'],
+                                         'reinjected': row['card']['target_anchor']['reinjected']}
+                                        for row in results
+                                        if (row.get('card') or {}).get('target_anchor')],
+               'target_anchor_invocations': sum(
+                   bool((row.get('target_anchor_trace') or {}).get('invoked')) for row in results),
+               'target_anchor_outcomes': {row['key']: row['target_anchor_trace']['outcome']
+                                          for row in results if row.get('target_anchor_trace')},
                'translate_agents_spent': engine.translate_calls,
                'heal_agents_spent': engine.heal_calls,
                'budget_stops': engine.budget_stops,
                'usage': engine.usage,
                'kill_timeouts': engine.kill_timeouts, 'conn_errors': engine.conn_errors,
+               # H4528: the watchdog's share of kill_timeouts, and the per-call liveness +
+               # wall/api/gap readings H2878 collected but never emitted.
+               'no_progress_kills': getattr(engine, 'no_progress_kills', 0),
+               'progress_readings': getattr(engine, 'progress_readings', []),
                'headless_attempts': engine.attempts}
     output_meta = dict(manifest['meta'])
     output_meta['execution_manifest_schema'] = manifest.get('schema')
     output_meta['execution'] = manifest.get('execution')
     output_meta['provenance_classes'] = manifest.get('key_provenance')
-    payload = {'meta': output_meta, 'summary': summary, 'results': results}
-    status = {'classification': 'completed_with_residuals' if failures else 'success',
-              'attempts': engine.attempts, 'null_keys': list(failures),
-              # H2251: what the spawn ACTUALLY did, which is not the same fact as
-              # `meta.execution.cli_safe_mode` (what the manifest REQUESTED). They differ
-              # exactly in the loud-downgrade case H2189 built the stderr warning for --
-              # a CLI that cannot parse the flag. That warning is ephemeral; this is the
-              # durable record, so a run whose savings were never actually taken can be
-              # identified afterwards from its own artifacts instead of a lost console.
-              'cli_safe_mode_effective': engine.safe_mode}
-    return payload, status, 0
+    return {'meta': output_meta, 'summary': summary, 'results': results}
 
 
 def main(argv=None):

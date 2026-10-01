@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Oral-corpus ingest — the spoken register of the Sa→Ru TM (H215 Slice 4)
 
 _Created: 07-07-2026 · Last updated: 03-08-2026 (oral→A written-agree promotion, H2193)_

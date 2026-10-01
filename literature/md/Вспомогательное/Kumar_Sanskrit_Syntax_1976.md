@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Kumar_Sanskrit_Syntax_1976
 
 **Source:** `Kumar_Sanskrit_Syntax_1976.pdf`  
@@ -19830,3 +19832,5 @@ Se~a-karaka : 193 Schema : 117, 128, 132, 196, 207,
 '12.7, 239, 240, 241, 243, 258 Scrambling : 29, 50 Selectional restrictions : 14, 20,
 160, 255, 256 Sense
 accidental : 108 purposive : 108 Sentence-types : 13 Sentential derivation 240, 241, 247 Sequence free : 15 Sequential ordering : 15 Sentence embedding : 20 Source : 18, 24, 110, 111, 120, 122, 123, 125, 127, 128, 129
+
+_Dr. Mārcis Gasūns_

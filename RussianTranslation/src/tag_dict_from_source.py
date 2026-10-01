@@ -22,7 +22,9 @@ import renou, renou_sigla
 import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-CSL = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+CSL = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02'))
 DEFAULT_INDEX = os.path.join(HERE, 'dcs_lemma_renou.json')
 STATES = renou.STATES
 _ORDER = {s: i for i, s in enumerate(STATES)}

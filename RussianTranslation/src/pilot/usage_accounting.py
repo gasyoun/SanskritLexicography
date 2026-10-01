@@ -49,6 +49,18 @@ STANDARD_PER_MTOK_USD = {
 BATCH_PER_MTOK_USD = {
     name: rate * 0.5 for name, rate in STANDARD_PER_MTOK_USD.items()
 }
+#: H4531. Sonnet-class direct Anthropic rates, needed because the PWG production lane
+#: runs ``claude-sonnet-5`` while the pinned card above is Opus 5. Carried over from
+#: ``parse_workflow_cost.PRICE`` / ``gateway_route.INDICATIVE_PRICE_PER_MTOK`` so the
+#: repo states one Sonnet number, not two. Callers pass it explicitly as ``rate_card``:
+#: the default stays Opus so no existing receipt changes meaning.
+SONNET_STANDARD_PER_MTOK_USD = {
+    'input_tokens': 3.0,
+    'output_tokens': 15.0,
+    'cache_creation_tokens': 3.75,  # one-hour write is 2x base; 5m write is 1.25x
+    'cache_read_tokens': 0.3,
+}
+SONNET_POLICY = 'anthropic-sonnet-5-list-2026-09-10.v1'
 
 
 def _number(value):
@@ -69,18 +81,26 @@ def _tokens(usage):
     return result
 
 
-def equivalent_usd(tokens, billing_mode):
-    """Calculate a pinned counterfactual; never claim that it was charged."""
+def equivalent_usd(tokens, billing_mode, rate_card=None):
+    """Calculate a pinned counterfactual; never claim that it was charged.
+
+    ``rate_card`` is the STANDARD schedule for a non-Opus model (H4531); the batch
+    schedule is derived from it as the provider's published 50 %, never typed twice.
+    """
     if tokens is None:
         return None
-    rates = BATCH_PER_MTOK_USD if billing_mode == API_BATCH else STANDARD_PER_MTOK_USD
+    standard = STANDARD_PER_MTOK_USD if rate_card is None else dict(rate_card)
+    if billing_mode == API_BATCH:
+        rates = {name: rate * 0.5 for name, rate in standard.items()}
+    else:
+        rates = standard
     return round(sum(tokens[name] * rates[name] for name in TOKEN_FIELDS) / 1_000_000, 9)
 
 
 def build(usage, *, billing_mode=UNKNOWN_GATEWAY, observed_cash_usd=None,
           reported_equivalent_usd=None, credit_claimed=False,
           credit_claim_evidence=None,
-          pricing_policy=POLICY):
+          pricing_policy=POLICY, rate_card=None):
     """Build and validate one accounting envelope.
 
     ``reported_equivalent_usd`` is the CLI/provider's list-price counter. For a
@@ -99,7 +119,7 @@ def build(usage, *, billing_mode=UNKNOWN_GATEWAY, observed_cash_usd=None,
     clean = tokens or {name: 0 for name in TOKEN_FIELDS}
 
     effective_mode = billing_mode
-    list_equivalent = equivalent_usd(tokens, API_STANDARD)
+    list_equivalent = equivalent_usd(tokens, API_STANDARD, rate_card)
     credit_equivalent = None
     cash = observed_cash_usd
     if billing_mode == MAX_AGENT_SDK_CREDIT:
@@ -117,8 +137,9 @@ def build(usage, *, billing_mode=UNKNOWN_GATEWAY, observed_cash_usd=None,
         if reported_equivalent_usd is not None:
             list_equivalent = round(float(reported_equivalent_usd), 9)
     elif billing_mode == API_BATCH:
-        list_equivalent = equivalent_usd(tokens, API_STANDARD)
-        cash = equivalent_usd(tokens, API_BATCH) if cash is None else round(float(cash), 9)
+        list_equivalent = equivalent_usd(tokens, API_STANDARD, rate_card)
+        cash = (equivalent_usd(tokens, API_BATCH, rate_card) if cash is None
+                else round(float(cash), 9))
     elif billing_mode == API_STANDARD:
         cash = list_equivalent if cash is None else round(float(cash), 9)
     else:

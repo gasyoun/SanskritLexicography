@@ -2267,15 +2267,9 @@
 {"key1": "dA", "subcard": "d_a~~h0_00_pwg01", "h": "dā 1 (cont.)", "sense_tag": "2) legen, stellen, thun auf, in; setzen, anlegen, anbringen", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_00_pwg01", "h": "dā 1 (cont.)", "sense_tag": "3) empfangen", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_00_pwg01", "h": "dā 1 (cont.)", "sense_tag": "4) Stamm [dā] — bei sich führen, bewahren, tragen, halten; beschützen; geehrt", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dA", "subcard": "d_a~~h0_02_sec_2", "h": "desid.", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_03_sec_3", "h": "intens.", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_04_ati", "h": "ati+dā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_04_ati", "h": "ati+dā", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anu+dā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anu+dā", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anu+dā", "sense_tag": "3", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anu+dā", "sense_tag": "4", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anu+dā", "sense_tag": "comp.", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_06_a_bi", "h": "abhi+dā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_07_ava", "h": "ava+dā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dA", "subcard": "d_a~~h0_08__a_0", "h": "ā+dā", "sense_tag": "intro", "reason": "card sense-count changed under corrected <> splitter"}
@@ -4647,7 +4641,6 @@
 {"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "Mit {#nis#} — 4", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "Mit {#nis#} — 5", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "Mit {#nis#} — 6", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "<ab>Caus.</ab> <ab>s. u.</ab> {#GAtay#}", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "Mit {#atinis#} übermässig auseinanderziehen", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "Mit {#aDinis#} vertilgen von", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "han", "subcard": "han~~h0_zz_pw02", "h": "han", "sense_tag": "Mit {#parinis#} austreiben", "reason": "card sense-count changed under corrected <> splitter"}
@@ -8873,7 +8866,6 @@
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"p\">", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"p\">", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"p\">", "sense_tag": "main", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "main", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "3", "reason": "card sense-count changed under corrected <> splitter"}
@@ -8902,7 +8894,6 @@
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"p\">", "sense_tag": "main", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"p\">", "sense_tag": "main", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "main", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"m\">", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vas", "subcard": "vas~~h0_zz_pw02", "h": "<div n=\"p\">", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
@@ -10535,7 +10526,6 @@
 {"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "—2〉", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "vid", "subcard": "vid~~h0_zz_pw00", "h": "vid", "sense_tag": "—2〉", "reason": "card sense-count changed under corrected <> splitter"}
@@ -10862,7 +10852,6 @@
 {"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "e", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "f", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "a", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "b", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h0_zz_pw", "h": "dah", "sense_tag": "c", "reason": "card sense-count changed under corrected <> splitter"}
@@ -10875,7 +10864,39 @@
 {"key1": "dah", "subcard": "dah~~h2_00_pwg00", "h": "dah", "sense_tag": "5)", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h2_00_pwg00", "h": "dah", "sense_tag": "intensive/desiderative", "reason": "card sense-count changed under corrected <> splitter"}
 {"key1": "dah", "subcard": "dah~~h3_00_pwg00", "h": "dah", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vedika", "subcard": "vedikA", "h": "", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vedika", "subcard": "vedikA", "h": "", "sense_tag": "1 (PW)", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vedika", "subcard": "vedikA", "h": "", "sense_tag": "NWS-1", "reason": "card sense-count changed under corrected <> splitter"}
-{"key1": "vedika", "subcard": "vedikA", "h": "", "sense_tag": "NWS-2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dohya", "subcard": "dohya", "h": "", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_02_sec_2", "h": "dā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anudā", "sense_tag": "header", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anudā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anudā", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anudā", "sense_tag": "3", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anudā", "sense_tag": "4", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "dA", "subcard": "d_a~~h0_05_anu", "h": "anudā", "sense_tag": "etym", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "1", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "1", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "1", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "1", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "1", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "1", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "2", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kAnana", "subcard": "k_anana", "h": "2", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PWG, основная статья", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PWG, основная статья", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PWG, основная статья", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PWG, Nachträge/Addenda №1 (правка к осн. статье)", "sense_tag": "addendum-1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PW, сокращённая переработка Бётлингка", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PW, сокращённая переработка Бётлингка", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "kzuDA", "subcard": "kzu_d_a", "h": "PW, сокращённая переработка Бётлингка", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "0", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "1", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "1a", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "1b", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "1c", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "1d", "reason": "card sense-count changed under corrected <> splitter"}
+{"key1": "menA", "subcard": "men_a", "h": "menā", "sense_tag": "2", "reason": "card sense-count changed under corrected <> splitter"}

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Corpus Linguistics and Statistics with R_ Introduction to -- Guillaume Desagulier (auth_) -- Quantitative Methods in the Humanities and Social -- isbn13 9783319645704 -- 9e25ead59f7ccd8334181bc65fa0d0b7 -- Anna’s Ar
 
 **Source:** `Corpus Linguistics and Statistics with R_ Introduction to -- Guillaume Desagulier (auth_) -- Quantitative Methods in the Humanities and Social -- isbn13 9783319645704 -- 9e25ead59f7ccd8334181bc65fa0d0b7 -- Anna’s Ar.pdf`  
@@ -37569,3 +37571,5 @@ vector, 15, 24–35, 39, 40, 42–44, 47, 48, 71–86, 88–92, 97–
 99, 101, 102, 105, 106, 108, 117, 123–126, 140–142,
 147, 148, 176, 245, 286
 vocabulary growth curve, 227–234
+
+_Dr. Mārcis Gasūns_

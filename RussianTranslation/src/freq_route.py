@@ -19,7 +19,9 @@ import pwg_mask
 import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SUMMARY = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'VisualDCS', 'dcs_lemma_summary.json'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+SUMMARY = os.path.normpath(os.path.join(GITHUB, 'VisualDCS', 'dcs_lemma_summary.json'))
 RENOU = os.path.join(HERE, 'dcs_lemma_renou.json')
 OUT = os.path.join(HERE, 'pilot', 'output', 'scale_manifest.freq.json')
 

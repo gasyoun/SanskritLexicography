@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # akṣara — imperishable / syllable — PD minimal mode (sense skeleton)
 
 Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
@@ -59,3 +61,5 @@ Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, 
 - **4iii** — name of Kālī ŚaktiSaṃT. i. 1. 38
 - **4iv** — name of one of the śaktis residing in the petals of the Lotus in the heart NityoNi. 81. 4
 - **4v** — name of one of the thirteen wives of Kaśyapa ŚabdaRa.(Vā.) 402
+
+_Dr. Mārcis Gasūns_

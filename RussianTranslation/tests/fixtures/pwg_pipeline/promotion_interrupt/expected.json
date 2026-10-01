@@ -1,0 +1,66 @@
+{
+  "accounting": {
+    "calls": 1,
+    "cost_evaluable": true,
+    "pending_calls": 0,
+    "unevaluable_calls": 0
+  },
+  "artifact_kinds": [
+    "request",
+    "response",
+    "result"
+  ],
+  "intents": [
+    {
+      "intent": "promote"
+    }
+  ],
+  "jobs": [
+    {
+      "calls": [
+        {
+          "cost_evaluable": 1,
+          "failure_class": null,
+          "input_tokens": 120,
+          "output_tokens": 60,
+          "requested_model": "grok-4.6",
+          "route": "xai-tm",
+          "served_model": "grok-4.6",
+          "state": "succeeded"
+        }
+      ],
+      "kind": "card",
+      "source_hash": "85139e8cc79d75353ee04b04ab8118a99a2285da46bd72cbf1814ff1e41300c2",
+      "source_identity": "pwg.interrupt.1",
+      "state": "complete",
+      "transitions": [
+        "->planned",
+        "planned->prepared",
+        "prepared->reserved",
+        "reserved->running",
+        "running->captured",
+        "captured->audited",
+        "audited->awaiting_review",
+        "awaiting_review->apply_prepared",
+        "apply_prepared->store_committed",
+        "store_committed->derived_validated",
+        "derived_validated->coordinator_committed",
+        "coordinator_committed->complete"
+      ],
+      "verdicts": [
+        {
+          "validator_version": "pwg_pipeline.audit.v1",
+          "verdict_class": "clean"
+        }
+      ]
+    }
+  ],
+  "promotion_phases": [
+    "complete"
+  ],
+  "schema": "pwg.pipeline.replay.v1",
+  "store": {
+    "exists": true,
+    "rows": 1
+  }
+}

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Performance of a Lexical and POS Tagger for Sanskrit
 
 **Authors:** Oliver Hellwig (SAI, Universität Heidelberg)  
@@ -589,3 +591,5 @@ In: Proceedings of the 19th International Conference on Computational Linguistic
 9. Weischedel, R., Schwartz, R., Palmucci, J., Meteer, M., Ramshaw, L.: Coping with
 ambiguity and unknown words through probabilistic models. Computational Lin-
 guistics 19(2), 360–382 (1993)
+
+_Dr. Mārcis Gasūns_

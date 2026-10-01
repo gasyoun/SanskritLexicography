@@ -48,6 +48,10 @@ from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
 from sheet_screening import screening_block
 import reglue_overlap as ro
+# H3752: `CLASS_OF`/`QUOTA` are keyed on the placed label. An unplaced twin must
+# resolve through this rather than hit the `"adds"` default, which would paint
+# the very rows issue #1736 is about as green ＋ additions.
+from edition_rel import base_subtype
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -119,8 +123,8 @@ def ru_html(text):
 
 
 def build_items():
-    store, rel = ro.load()
-    idx = ro.pwg_sense_index(store)
+    index, rel = ro.load()
+    idx = ro.pwg_sense_index(index.records)
 
     # Build the CHECKABLE pool: a real PWG target sense, and enough German on
     # both sides to compare. Everything else is a structural fact to report, not
@@ -128,7 +132,13 @@ def build_items():
     pools = collections.defaultdict(list)
     census = collections.Counter()
     for r in rel:
-        st = (r["layer"], r["relationship"]["subtype"])
+        # H3752: keyed on the BASE label. A stratum is a (layer, kind-of-relation)
+        # slot, and `_unplaced` is not a different kind — it is the placement
+        # result, which this sheet already filters on: only checkable (= placed)
+        # pairs are ever drawn, so every card in a stratum carries the plain
+        # label anyway. Keying on the raw name would silently empty every
+        # stratum whose rows are unplaced and leave QUOTA unfillable.
+        st = (r["layer"], base_subtype(r["relationship"]["subtype"]))
         # H2880: the sidecar now also carries PWG-internal corrections. They are
         # deliberately outside THIS sheet's population: its question is "does
         # this supplement from a later layer sit at the right PWG sense?", which
@@ -139,7 +149,9 @@ def build_items():
         if r.get("layer") == "pwg":
             continue
         census["total"] += 1
-        rec = store.get((r["subcard"], str(r["sense_tag"])))
+        # H3300: exact join — dup_ordinal picks THIS row's own store body, not
+        # an arbitrary last-written sibling under the same (subcard, sense_tag).
+        rec = index.lookup(r["subcard"], r["sense_tag"], r.get("dup_ordinal"))
         if not rec:
             continue
         ip = r["relationship"]["insertion_point"]
@@ -169,7 +181,7 @@ def build_items():
             ip = r["relationship"]["insertion_point"]
             m = ro.compare(target.get("de", ""), rec.get("de", ""))
             subtype = r["relationship"]["subtype"]
-            kl = CLASS_OF.get(subtype, "adds")
+            kl = CLASS_OF.get(base_subtype(subtype), "adds")   # H3752
             layer = r["layer"]
 
             pwg_side = (
@@ -206,7 +218,12 @@ def build_items():
                    m["pwg_chars"], m["supp_chars"]))
 
             items.append({
-                "id": "%s::%s" % (r["subcard"], r["sense_tag"]),
+                # H3300: the id IS the sidecar row's unique key. The bare
+                # `%s::%s` pair collided across duplicated pairs — the committed
+                # lock literally carried `vas~~h0_zz_pw01::1` twice, so two
+                # cards shared one vote slot.
+                "id": r.get("row_key")
+                      or "%s::%s" % (r["subcard"], r["sense_tag"]),
                 "filt": layer,
                 "title": "%s · %s → смысл %s" % (slp1_iast(r["key1"]), layer.upper(),
                                                  ip.get("target_sense")),

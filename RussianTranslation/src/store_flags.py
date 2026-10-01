@@ -60,10 +60,17 @@ def row_placeholders_ok(row):
 
 
 def machine_ok(row):
-    """The machine-cleanliness half of print-readiness (no human judgment in it)."""
+    """The machine-cleanliness half of print-readiness (no human judgment in it).
+
+    Since 02-09-2026 this also applies ``row_metalanguage_ok`` (H2876): a row whose
+    DE source is pure German apparatus rendered as an RU gloss is not print-ready.
+    The predicate was exported on 16-08-2026 with no consumer (FULL_DH audit R5).
+    """
     if row.get('ok') is not None:
-        return bool(row.get('ok') and row_placeholders_ok(row) and row_key_match(row))
-    return bool(row_placeholders_ok(row) and row_key_match(row))
+        base = bool(row.get('ok') and row_placeholders_ok(row) and row_key_match(row))
+    else:
+        base = bool(row_placeholders_ok(row) and row_key_match(row))
+    return base and row_metalanguage_ok(row)
 
 
 def is_print_ready(row):

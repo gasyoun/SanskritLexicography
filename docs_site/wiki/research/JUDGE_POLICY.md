@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Judge-model policy for the pwg_ru scale-up (decided 2026-06-25)
 
 **Decision.** The bulk QA judge = **Sonnet**. **Opus** is retained for the **repass of rejects**
@@ -7,7 +9,7 @@ default (`--judge-model opus`) stays until the gate passes, then flips.
 
 > **IMPLEMENTED in the Max harness (2026-06-26).** The A/B gate is near-conclusive
 > (κ=1.0 over 474 cards; ~0.5 % disagreement), so the flip is done:
-> [`../src/pilot/run_pilot_wf.js`](../src/pilot/run_pilot_wf.js) now **judges every card with
+> `../src/pilot/run_pilot_wf.js` now **judges every card with
 > Sonnet** and escalates to **Opus only on a reject** (`isHard` = `ok=false || severity>=3`);
 > the Opus verdict is final (becomes `judge`; Sonnet's original kept as `judge_sonnet`,
 > `escalated:true`). Publishable cards (sev 1–2) spend **no Opus tokens** — the weekly-quota
@@ -37,7 +39,7 @@ kept?).
 - **Cost/quota:** on the top-500 the judge step drops from ~$277 (Opus ×2) to ~$143 (Sonnet ×2)
   in Opus-API-reference terms. We run on **Max**, so the real win is **weekly-quota headroom** —
   far fewer Opus tokens against the cap, which is the binding constraint on scale-up speed, not
-  USD. See [`../PILOT_COST.md`](../PILOT_COST.md) §7.
+  USD. See `../PILOT_COST.md` §7.
 
 ## Rollout (defence in depth — Sonnet bulk, Opus insurance)
 
@@ -82,7 +84,7 @@ cases that *are* decidable from inspection are the rude ones Sonnet already catc
 **The gate instead: sample real production cards with full context.** The current window loop
 does not run both judges over every clean card; it writes `judge_sample.keys.txt` for the semantic
 review spend queue after deterministic Python gates. For historical Opus-vs-Sonnet comparison
-runs, [`../src/judge_disagreements.py`](../src/judge_disagreements.py) still emits a full-context
+runs, `../src/judge_disagreements.py` still emits a full-context
 adjudication queue from paired verdict files.
 
 **Already near-conclusive on real data:** across the ~400 cards judged so far,
@@ -91,3 +93,5 @@ run 4 (209 cards)** — a ~0.5 % conflict rate, i.e. the adjudication queue is e
 The two models almost never disagree, so there is barely anything left to test. The gate is
 therefore mostly a **standing production check**, not a blocker: review the sampled semantic
 queue each mechanically clean window and revisit only if the sampled defect rate climbs.
+
+_Dr. Mārcis Gasūns_

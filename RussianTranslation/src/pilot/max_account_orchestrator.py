@@ -19,14 +19,18 @@ import time
 import host_state
 import probe_log
 from run_observability import append_event, utc_now, write_census
-from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix,
+from headless_worker import (DEFAULT_TIMEOUT_S, SAFE_MODE_FLAG, bare_cli_cwd,
+                             claude_argv_prefix, resolve_safe_mode,
                              run_tree_kill, timeout_output_text,
                              validate_preflight_artifact, windows_hidden_flags,
                              wrapper_timeout_s)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
-                                config_dir_fingerprint, validate_manifest,
-                                validate_profile)
+                                PROBE_RATION_MAX_PER_UTC_DAY, PROBE_RATION_MIN_GAP_S,
+                                ProbeRation, ProbeRationRefused, config_dir_fingerprint,
+                                kill_classification, probe_ration_root,
+                                progress_window_ms_for, utc_day, utc_iso_ts,
+                                validate_manifest, validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
 from dashboard_events import emit_collision
@@ -615,13 +619,21 @@ def profile_status(config_dir, claude='claude', call_reservation=None, account=N
     if call_reservation is None:
         raise ValueError('paid profile validation requires a call reservation ledger')
     validate_preflight_artifact(preflight_path)
+    # H4436 (16-09-2026): the `profile:init` validation call takes the SAME profile-stripping
+    # posture as the paid lane and as the readiness probe (H4527) — derived from the lane's own
+    # resolver with no manifest, never a literal, so an unsupporting CLI degrades exactly as the
+    # lane does. This was the last paid spawn in this module still carrying the operator's full
+    # interactive profile (CLAUDE.md + 456 skill/command/agent entries + 65 hooks on c1).
+    init_argv = claude_argv_prefix(claude) + [
+        '-p', 'Return exactly OK.', '--output-format', 'json',
+        '--model', 'claude-sonnet-5', '--permission-mode', 'plan']
+    if resolve_safe_mode({}, claude):
+        init_argv.append(SAFE_MODE_FLAG)
     with ActiveCallClaim(config_dir_fingerprint(config_dir)):
         reservation = call_reservation.reserve('profile:init', profile=account)
         try:
             probe = run_tree_kill(               # D-J: tree-kill on timeout
-                claude_argv_prefix(claude) + [
-                    '-p', 'Return exactly OK.', '--output-format', 'json',
-                    '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+                init_argv,
                 env=env, text=True, encoding='utf-8',
                 capture_output=True, timeout=60)
         except subprocess.TimeoutExpired:
@@ -1145,6 +1157,52 @@ def cmd_status(args):
     db.close()
 
 
+def cmd_probe_ration(args):
+    """H4527: read-only answer to "may this box probe profile X right now?" — zero calls, zero writes.
+
+    H4915 made the readiness-probe ration a code gate, but left it readable only by ATTEMPTING a
+    probe: `probe_fleet` and `_probe_call` raise `ProbeRationRefused` and that is the only surface.
+    Two consecutive H4527 passes (15-09 (3), 16-09) therefore learned the lane was closed by hand-
+    grepping the ledger JSONL — and a batch drain, which claims a handoff before it reads anything,
+    cannot do even that. This is the preflight a dispatcher can afford: it reports the recorded
+    attempts and the next legal UTC time for every validated profile (or `--account`), and exits 3
+    when no probe is legal now, so a caller can branch without parsing prose.
+
+    Exit 0 = a probe is legal now for every reported profile · 3 = at least one is rationed ·
+    1 = the ledger itself is unreadable (fail closed, the same verdict the gate gives)."""
+    db = connect(args.db)
+    rows = list(db.execute('SELECT name,config_dir FROM accounts WHERE validated=1 ORDER BY name'))
+    db.close()
+    if args.account:
+        rows = [row for row in rows if row['name'] in set(args.account)]
+        if not rows:
+            raise SystemExit('probe-ration: no validated account matches %s' % ', '.join(args.account))
+    ration, now = ProbeRation(PROBE_RATION_ROOT), _ration_clock()
+    report, rationed = [], False
+    for row in rows:
+        fingerprint = config_dir_fingerprint(row['config_dir'])
+        try:
+            stamps = ration.attempts(fingerprint)
+            legal = ration.next_legal(fingerprint, now)
+        except ProbeRationRefused as exc:
+            raise SystemExit('probe-ration: %s' % exc)
+        today = utc_day(now)
+        entry = {'account': row['name'], 'fingerprint': fingerprint,
+                 'ledger': ration.path(fingerprint),
+                 'attempts_today': [utc_iso_ts(ts) for ts in stamps if utc_day(ts) == today],
+                 'last_attempt_utc': utc_iso_ts(stamps[-1]) if stamps else None,
+                 'next_legal_utc': utc_iso_ts(legal),
+                 'legal_now': legal <= now}
+        rationed = rationed or not entry['legal_now']
+        report.append(entry)
+    print(json.dumps({'schema': 'pwg.probe_ration_status.v1', 'now_utc': utc_iso_ts(now),
+                      'max_per_utc_day': PROBE_RATION_MAX_PER_UTC_DAY,
+                      'min_gap_s': PROBE_RATION_MIN_GAP_S,
+                      'profiles': report}, indent=1, sort_keys=True))
+    if rationed:
+        raise SystemExit(3)
+
+
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
 # D-F: health ceiling; a probe reading over this parks the account (probe_fleet) and is NO-GO.
@@ -1191,14 +1249,50 @@ PROBE_LANE = 'claude-cli-headless/readiness-schema'
 # twice. The per-account `events_path` file is kept untouched alongside it — gate reports
 # (H1110/H1447/H858) cite it by path and its exact-run_id read discipline (#729) must not
 # change.
-HEALTH_PROBE_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                'output', 'health_probe_log.jsonl')
+#
+# H3642: this used to be pinned to `HERE/output` unconditionally — the #1034 defect one
+# file over. #1034 taught `h963_c4_gate0_probe.resolve_evidence_root` to route the
+# per-account events series through an explicit `--evidence-dir` / `$PWG_EVIDENCE_DIR` /
+# checkout-relative-default precedence so it survives a disposable worktree; this
+# constant never followed, so a paid probe run with a perfectly durable `--evidence-dir`
+# still wrote its canonical cross-account row into the worktree and lost it on cleanup
+# (measured 28-08-2026 under H2878). `resolve_health_probe_log` gives this constant the
+# SAME precedence. The DEFAULT branch is unchanged on purpose: 21 rows of c4 history and
+# the H1110/H1447/H858 reports cite `HERE/output/health_probe_log.jsonl` by exact path.
+def resolve_health_probe_log(explicit_root=None):
+    """Where the canonical cross-account health_probe_log.jsonl actually lives.
+
+    Same three-tier precedence as `h963_c4_gate0_probe.resolve_evidence_root`: an
+    already-resolved durable root the caller passed (its own `--evidence-dir` or
+    `$PWG_EVIDENCE_DIR` resolution), else `$PWG_EVIDENCE_DIR` read directly (so a bare
+    import of this module without going through that CLI still honours the env tier),
+    else the historical checkout-relative default."""
+    if explicit_root is not None:
+        return os.path.join(str(explicit_root), 'health_probe_log.jsonl')
+    env = os.environ.get('PWG_EVIDENCE_DIR')
+    if env and env.strip():
+        # realpath, not abspath: on macOS a $PWG_EVIDENCE_DIR under /var/folders (a
+        # symlink to /private/var/folders) must normalize to the same bytes the
+        # probe's own resolve_evidence_root produces, or the two resolvers disagree.
+        return os.path.join(os.path.realpath(os.path.expanduser(env.strip())),
+                            'health_probe_log.jsonl')
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        'output', 'health_probe_log.jsonl')
+
+
+HEALTH_PROBE_LOG = resolve_health_probe_log()
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 # H2326 (#1172): where a non-success probe envelope's tail is parked. Same gitignored `output/` dir
 # the canonical health log already lives in, so nothing here is committable. Module-level so a
 # selftest can redirect it into a temp dir instead of writing beside the real probe log.
 PROBE_RAW_DIR = os.path.dirname(HEALTH_PROBE_LOG)
 PROBE_RAW_TAIL_BYTES = 4096          # provider refusals are ~1 KB; 4 KB is generous and still bounded
+# H4915: the machine-wide readiness-probe ration ledger (see execution_contract.ProbeRation). It is
+# NOT derived from HEALTH_PROBE_LOG: that log follows the evidence root, and the per-root split is
+# exactly how the 15-09 third attempt went unseen. Module-level only so a selftest can point it at
+# scratch; `_ration_clock` likewise exists so the pins can stand at a chosen UTC time.
+PROBE_RATION_ROOT = probe_ration_root()
+_ration_clock = time.time
 PROBE_ERR_PATTERN_MAX_CHARS = 40     # the matched regex alternative, never free provider text
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
 # dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
@@ -1288,26 +1382,66 @@ _PROBE_FILLER_UNIT = (
     'grammatical notes, source citations, and numbered German senses. ')
 
 
-def _production_task_shape_preamble():
-    """The generation lane's own TASK SHAPE block, imported rather than copied.
+# H4527 (15-09-2026): the readiness question. ONE honest question about the text that follows,
+# whose true answer is yes — every `_PROBE_FILLER_UNIT` names the Petersburg Sanskrit dictionary
+# — so `{"ok": true}` is simply the correct answer, reached by reading, not an output the prompt
+# orders the model to emit. It deliberately carries none of the features the refusing calls
+# named (see `_probe_prompt`): no claim about who issued it, no "ignore this" block, no
+# pre-emptive "this is not a bypass", no production task block promising cards that never come.
+_PROBE_QUESTION = (
+    'Please read the dictionary reference text below and answer one question about it. '
+    'Everything you need is in this message; no files or tools are involved.\n'
+    '\n'
+    'Question: does the text below mention the Petersburg Sanskrit dictionary? Answer through '
+    'the response schema: "ok" is true if the text mentions it, and false if it does not.\n'
+    '\n'
+    '--- reference text ---\n')
 
-    H3157 repair (a). Imported lazily and fail-open: a probe must not become unrunnable because
-    an import moved. If the block cannot be loaded the probe still runs — it simply loses this
-    particular sensitivity, and says so via the returned empty string.
-    """
-    try:
-        from gen_opt_harness2 import MASK_PREAMBLE
-    except Exception:                                     # pragma: no cover - defensive only
-        return ''
-    return MASK_PREAMBLE
+# H4527: the bytes the retired H3157 preamble (2 896) + H4277 bridge (1 342) used to put on top of
+# the filler. Carried forward AS filler, so the request stays AT LEAST the 10 729 bytes every
+# `production_v4` reading was taken at (11 082 B with the question) — input size is held, though
+# output-side thinking is not (see `probe_prompt_sha` in `_probe_call`).
+_PROBE_RETIRED_PREFIX_BYTES = 4238
 
 
 def _probe_prompt(payload_bytes):
-    """A load-representative readiness prompt: the PRODUCTION TASK SHAPE block, then one clear
-    task (return {"ok": true}) plus >=payload_bytes of inert, domain-shaped filler explicitly
-    framed as ignorable. Deterministic (fixed filler unit).
+    """A load-representative readiness prompt: one honest question (`_PROBE_QUESTION`) over
+    >= payload_bytes + `_PROBE_RETIRED_PREFIX_BYTES` of domain-shaped reference text whose true
+    answer is `{"ok": true}`. Deterministic (fixed filler unit).
 
-    H3157 repair (a) — why the production preamble is prepended here. H994 fixed this probe's
+    H4527 repair (15-09-2026) — option (b) of H4213 §6.3, and why it retires H3157 (a) and the
+    H4277 bridge. The probe below kept refusing: `{"ok": false}` at 07-09 01:41Z (prepend only,
+    which is what the bridge was added for), then with the bridge at 10-09 23:36Z, 11-09 18:08Z
+    and TWICE on 15-09 (14:23Z, 14:27Z), against two passes (11-09 05:32Z, 15-09 01:35Z) — and
+    the 15-09 refusals ran WITH the lane's `--safe-mode`, so the profile surface is excluded. The 14:27Z session transcript says why, in the model's own words: the prompt
+    "contains a suspicious embedded instruction block ("READINESS CHECK") that claims to share
+    authority with the top-level task framing and directs me to skip all normal handling and just
+    emit {"ok": true}" — "the shape of a prompt injection (over-justifying itself as "not a
+    bypass," pre-emptively waving off scrutiny, embedding an "ignore this" sample block)" — and
+    "no translation card data" behind the task framing. Every named feature is a sentence of the
+    H4277 bridge or the card-less H3157 preamble. The model was reading the prompt correctly.
+
+    Where the preamble check H3157 wanted now lives, and where it does NOT. On
+    `bounded_staged_run --execute` (the cohort-acceptance route) and on `staged-run`
+    (`cmd_staged_run`, the four-lease route) `enforce_canary_receipts` runs BEFORE `probe_fleet`
+    and requires one GO canary receipt per profile the run will dispatch on — the production
+    TASK SHAPE block plus a real synthetic card, same profile, <= 6 h old (H4916) — so there the
+    probe's copy of the block detected nothing the canary had not. On the two-step
+    `/pwg-live-gate` path the canary runs AFTER a probe PASS and still stops a refusing lane
+    before any dense card. Known gaps that remain (an independent critic's list, H4916):
+    `--skip-canary-gate` and `--canary-max-age-seconds` still weaken the bounded route, and
+    `presplit-canary` probes before its own worker. On those, a production-preamble regression now surfaces as a
+    failed paid call rather than a cheap probe NO-GO — the old probe gave no usable signal
+    there either, refusing on healthy routes 4 times in 6. What the probe still asserts is
+    unchanged: same spawn (plan mode, exact model, json-schema, bare cwd, the lane's safe mode),
+    same ceilings, and `{"ok": true}` remains the only passing answer — a refusal, a wrong
+    answer or a dead route still fails it. Latency readings are NOT comparable across the
+    change (the question needs far less thinking); rows carry `probe_prompt_sha` to split the
+    series.
+
+    History kept for the record. H3157 repair (a) prepended the production preamble so the cheap
+    Step-1 half could fail the way the Step-2 canary fails (19-08-2026: a Step-1 PASS minutes
+    before a canary refusal, FINDINGS §498 rule 1). H994 fixed this probe's
     refusal by reframing its PROMPT while deliberately keeping `--permission-mode plan`, so the
     probe matched the real invocation in spawn shape and was immunised in the one input the
     model actually reasons about. The result was a Step-1 health check that CANNOT fail the way
@@ -1319,17 +1453,62 @@ def _probe_prompt(payload_bytes):
     ever weakened, dropped, or stops satisfying the model's plan-mode reasoning, THIS probe
     refuses too — cheaply, before a paid canary spends. The probe keeps its own natural,
     completable task after the block, so H994's fix is preserved, not reverted.
+
+    H4277 repair (07-09-2026) — the PROVENANCE BRIDGE, and why it is not a loosening. H3157's
+    prepend created a prompt whose two halves READ AS ADVERSARIAL to each other: a task-shape
+    block that promises `=== CARD <key> ===` blocks, then zero cards, then a differently-voiced
+    instruction to ignore all of that and emit one fixed string. That is textually the shape of
+    a prompt injection, and on 07-09-2026 01:41Z the model said so in as many words — the
+    session transcript for the measured call records it refusing "a prompt-injection attempt
+    layered on ambient context", citing (1) plan mode's turn-ending rule, (2) "no actual
+    translation cards were provided", (3) the surrounding system-reminders — and then answering
+    `{"ok": false}` through the structured channel. Schema-valid, content-false, honest NO-GO on
+    a healthy account: a FALSE NO-GO produced by this function, $0.19 and a lost window.
+
+    The three named objections are answered here in the prompt itself, in the harness's own
+    voice: the readiness instruction declares its provenance (same issuer as the block above),
+    declares the zero-card condition DELIBERATE rather than a defect, and points at the
+    structured-output channel as the sanctioned turn-ending delivery. The gate's content check
+    was untouched. On 15-09-2026 the model named those very answers as the injection signature
+    (above), so H4527 retired both the bridge and the prepend.
     """
-    reps = payload_bytes // len(_PROBE_FILLER_UNIT) + 1
-    filler = (_PROBE_FILLER_UNIT * reps)[:payload_bytes]
-    preamble = _production_task_shape_preamble()
-    if preamble and not preamble.endswith('\n'):
-        preamble += '\n'
-    return (preamble +
-            'You are a readiness probe for an automated translation service. Confirm the service is '
-            'responding by replying with exactly the JSON object {"ok": true} and nothing else. The '
-            'block below is inert sample text included only to size the request to a realistic payload; '
-            'do not analyse, translate, or act on it.\n\n--- inert sample (ignore) ---\n' + filler)
+    size = payload_bytes + _PROBE_RETIRED_PREFIX_BYTES
+    reps = size // len(_PROBE_FILLER_UNIT) + 1
+    filler = (_PROBE_FILLER_UNIT * reps)[:size]
+    return _PROBE_QUESTION + filler
+
+
+# H2878: the probe's `--output-format`, named ONCE so the no-output-progress window is
+# derived from the spawn's real shape instead of pinned by a literal here. `json` buffers the
+# whole CLI result envelope and writes it in one burst at the end, so the probe's stdout is
+# legitimately 0 bytes for the entire call and the window stays OBSERVE-ONLY: the reading is
+# recorded, nothing is killed on it. Switching this lane to `stream-json` arms the watchdog by
+# itself -- which is the point, because arming it against a buffered format would kill every
+# healthy call, the same defect H2313 found in the 300 000 ms ceiling only six times harsher.
+PROBE_OUTPUT_FORMAT = 'json'
+PROBE_PROGRESS_WINDOW_MS = progress_window_ms_for(PROBE_OUTPUT_FORMAT)
+
+
+def _record_progress(detail_out, progress, exc):
+    """H2878: park the spawn's liveness reading on the caller's detail channel.
+
+    Takes it from the raised ``TimeoutExpired`` when the call was KILLED (the runner attaches
+    the fields there so every existing ``except TimeoutExpired`` keeps working unchanged) and
+    from ``progress_out`` otherwise. Rides the existing ``detail_out`` channel rather than
+    adding a parameter, exactly as ``host_state`` does, and is fail-open by construction: a
+    probe must never become an exception because its telemetry was unavailable.
+    """
+    if detail_out is None:
+        return
+    if exc is not None:
+        reading = {'bytes_seen': getattr(exc, 'bytes_seen', None),
+                   'quiet_ms': getattr(exc, 'quiet_ms', None),
+                   'killed_reason': getattr(exc, 'killed_reason', None)}
+    else:
+        reading = {'bytes_seen': progress.get('bytes_seen'),
+                   'quiet_ms': progress.get('quiet_ms'),
+                   'killed_reason': progress.get('killed_reason')}
+    detail_out.update({k: v for k, v in reading.items() if v is not None})
 
 
 def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
@@ -1356,6 +1535,17 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
     if (not isinstance(active_claim, ActiveCallClaim)
             or not active_claim.is_live_canonical_for(fingerprint)):
         raise ValueError('probe active-call claim does not bind config directory')
+    # H4915: the ration gate. This primitive is the one spawn every paid readiness probe goes
+    # through (live_probe -> probe_fleet / bounded_staged_run / h963_c4_gate0_probe, and
+    # latency_payload_sweep directly), so the refusal lands here, BEFORE the reservation and the
+    # spawn. The first call under a claim spends one attempt; later calls under the same held claim
+    # (the measured leg after its warm-up, the rest of a sweep) are part of that attempt. The
+    # claim is what makes check-then-record safe: no other process can probe this profile now.
+    if not active_claim.ration_admitted:
+        ration, ration_now = ProbeRation(PROBE_RATION_ROOT), _ration_clock()
+        ration.check(fingerprint, ration_now, label=account)
+        ration.record(fingerprint, ration_now, purpose=reservation_purpose, account=account)
+        active_claim.ration_admitted = True
     prompt = _probe_prompt(payload_bytes)
     # H2647: capture the BOX's state at the moment of the spawn, not at emit time -- for a
     # call that can run 600 s, "what the machine looked like when we asked" is the fact that
@@ -1377,14 +1567,38 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 detail_out['raw_envelope_path'] = name
         return classification
 
+    argv = claude_argv_prefix(claude) + [
+        '-p', '--output-format', 'json', '--json-schema',
+        '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
+        '--model', model, '--permission-mode', 'plan']
+    # H4527 (15-09-2026): the probe must strip the profile the SAME way the paid lane does —
+    # the H2299 defect class again, one flag over. Since H2251 `headless_worker` spawns every
+    # generation call with `--safe-mode` (no profile CLAUDE.md, skills, plugins, hooks, MCP);
+    # this spawn never adopted it, so the gate certified a call carrying the whole interactive
+    # profile — SessionStart/UserPromptSubmit hook dumps included — that the lane never sends.
+    # That ambient context is what the 07-09 refusal named as its third objection ("the
+    # surrounding system-reminders"), and it is the only input that differed on 11-09, when this
+    # probe answered {"ok": false} (cache_creation 50 209 tokens, 7 312 thinking) on a c1
+    # profile that had passed three paid lane calls — canary x2 and a real window — in the two
+    # hours before. DERIVED from the lane's own resolver with no manifest (= the lane default),
+    # never a literal: it degrades exactly as the lane does when the CLI lacks the flag. The
+    # content check below is untouched — {"ok": true} is still the only passing answer.
+    safe_mode = resolve_safe_mode({}, claude)
+    if safe_mode:
+        argv.append(SAFE_MODE_FLAG)
+    if detail_out is not None:
+        detail_out['cli_safe_mode_effective'] = safe_mode
+        # H4527 pass 2: WHICH prompt text the reading was taken on. The question prompt needs far
+        # less thinking than the retired order-shaped one, so its readings are faster for a reason
+        # that is not the route; `payload_bytes` alone cannot tell the two series apart.
+        detail_out['probe_prompt_sha'] = hashlib.sha256(prompt.encode('utf-8')).hexdigest()[:12]
     reservation = call_reservation.reserve(
         reservation_purpose, profile=account)
+    progress = {}
     started = time.monotonic()
     try:
         proc = run_tree_kill(            # D-J: tree-kill on timeout
-            claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
-             '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
-             '--model', model, '--permission-mode', 'plan'],
+            argv,
             input=prompt, env=env, text=True, encoding='utf-8', capture_output=True,
             # H2299: spawn from the SAME bare cwd the paid lane uses. `run_tree_kill`'s
             # `cwd` defaulted to None here, so the probe silently inherited whatever
@@ -1415,8 +1629,14 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             # standing ban): it imports the number the owner already ruled, which is what
             # `execution_contract` exists for -- #983 found the ceiling restated in five
             # independent places, and this was a sixth that never imported it.
-            cwd=bare_cli_cwd(), timeout=PRODUCTION_HARD_TIMEOUT_MS // 1000)
+            cwd=bare_cli_cwd(), timeout=PRODUCTION_HARD_TIMEOUT_MS // 1000,
+            # H2878: the ceiling above is unchanged and stays the last-resort backstop. What
+            # is new is that the spawn is now WATCHED -- every probe records how long it went
+            # without producing result bytes, so the next arming decision is a reading rather
+            # than a guess. `PROBE_PROGRESS_WINDOW_MS` is None while this lane buffers.
+            progress_window_ms=PROBE_PROGRESS_WINDOW_MS, progress_out=progress)
     except subprocess.TimeoutExpired as exc:
+        _record_progress(detail_out, progress, exc)
         call_reservation.finalize(reservation, unevaluable_telemetry())
         # H2056 / #944: this was the ONLY exit from _probe_call that skipped _probe_err_class, so a
         # rate-limited profile — which hangs instead of returning 429 (FINDINGS §270) — was reported
@@ -1424,14 +1644,19 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         # operator down a branch of the exclusion ladder that §266-271 already closed. run_tree_kill
         # attaches the killed child's output (#943), so the provider's message is classifiable here;
         # 'timeout' remains the fall-through when nothing account-level was said.
+        # H4528: split exactly like the worker -- the fall-through names the bound that fired,
+        # 'no_progress_kill' for the watchdog, 'timeout' for the hard ceiling. On today's
+        # buffered probe (PROBE_PROGRESS_WINDOW_MS is None) only the ceiling can fire.
         killed = timeout_output_text(exc)
         cls, matched = _probe_err_match(killed)
         return (int((time.monotonic() - started) * 1000),
-                _fail(cls or 'timeout', killed, matched), 0)
+                _fail(cls or kill_classification(getattr(exc, 'killed_reason', None)),
+                      killed, matched), 0)
     except BaseException:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         raise
     latency_ms = int((time.monotonic() - started) * 1000)
+    _record_progress(detail_out, progress, None)
     out = proc.stdout or ''
     combined = out + '\n' + (proc.stderr or '')
     output_bytes = len(out.encode('utf-8'))
@@ -1547,6 +1772,17 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
             # healthy lane's row is byte-for-byte what it was.
             err_pattern=(detail or {}).get('err_pattern'),
             raw_envelope_path=(detail or {}).get('raw_envelope_path'),
+            # H2878: the liveness half of the reading. `elapsed_ms` alone cannot say whether a
+            # 300 s call was working or stopped; `bytes_seen` + `quiet_ms` can, and
+            # `killed_reason` names which bound ended it. All three dropped by append_event
+            # when None, so a row from an unwatched spawn is byte-for-byte what it was.
+            bytes_seen=(detail or {}).get('bytes_seen'),
+            quiet_ms=(detail or {}).get('quiet_ms'),
+            killed_reason=(detail or {}).get('killed_reason'),
+            # H4527: which profile surface the reading was taken on (see `_probe_call`).
+            cli_safe_mode_effective=(detail or {}).get('cli_safe_mode_effective'),
+            # H4527 pass 2: which prompt text (12-hex sha256 prefix) — the series break marker.
+            probe_prompt_sha=(detail or {}).get('probe_prompt_sha'),
         )
         # H2647: the environment the reading was taken in, captured at spawn time. Without
         # these the series cannot tell its SUBJECT (c1's account and route) from its
@@ -1616,6 +1852,12 @@ def probe_fleet(accounts, claude='claude', payload_bytes=6491, model=EXACT_GEN_M
     N==1 is a pure pass-through: ``probe_fleet([acc])`` returns ``{acc: live_probe(acc.config_dir,
     ...)}`` and the single measured latency is identical to the pre-N-profile
     ``live_probe(accounts[0])`` reading — the Windows-100 single-profile path is unchanged."""
+    # H4915: refuse the WHOLE fleet up front when any profile is out of ration, so a fleet never
+    # spends account 1's attempt and then stops on account 2. `_probe_call` still re-checks under
+    # each profile's claim; this is the no-spend preflight, not the gate.
+    ration, ration_now = ProbeRation(PROBE_RATION_ROOT), _ration_clock()
+    for acc in accounts:
+        ration.check(config_dir_fingerprint(acc['config_dir']), ration_now, label=acc['name'])
     latencies = {}
     for acc in accounts:
         name = acc['name']
@@ -1654,6 +1896,54 @@ def staged_plan_scope(plan, requested_lease_ids=None):
 STAGED_RUN_IDLE_POLL_SECONDS = 3   # C4: backoff between no-progress staged-run passes (see loop)
 
 
+def enforce_canary_receipts(receipt_paths, profiles, max_age_seconds=None, context='staged-run'):
+    """H4916: refuse a paid run unless EVERY profile it will dispatch on holds its own fresh GO
+    canary receipt. Returns {profile: receipt}; raises SystemExit naming the gap.
+
+    H4527 took the production TASK SHAPE block out of the readiness probe, so the canary
+    (`canary_gate.judge`: production preamble + a real synthetic card) is the only pre-dispatch
+    check left that sees the preamble. Each receipt passes `canary_gate.enforce` (verdict GO,
+    age <= max) unchanged; this adds only the one-receipt-per-profile rule on top:
+      * one profile, one receipt — `enforce(..., only_profile=<p>)`, the bounded route's
+        existing single-profile contract (a receipt naming another slot refuses);
+      * otherwise every receipt must NAME its `profile_slot`, slots must be distinct, and every
+        dispatch profile must be covered — one GO for N profiles is a refusal, not a pass.
+    An empty profile list validates the receipts and returns {}: both callers refuse a
+    zero-account run themselves, before any probe."""
+    import canary_gate
+    paths = [path for path in (receipt_paths or []) if path]
+    profiles = list(profiles)
+    if not paths:
+        raise SystemExit(
+            '%s: refuses before the fleet probe without a canary GO receipt — run the '
+            '/pwg-live-gate canary on each profile, judge it with `canary_gate.py judge '
+            '<wf_output> --receipt <path>`, and pass one --canary-receipt per profile (H4916)'
+            % context)
+    kwargs = {} if max_age_seconds is None else {'max_age_seconds': max_age_seconds}
+    if len(profiles) == 1 and len(paths) == 1:
+        return {profiles[0]: canary_gate.enforce(paths[0], only_profile=profiles[0], **kwargs)}
+    by_profile = {}
+    for path in paths:
+        receipt = canary_gate.enforce(path, **kwargs)
+        slot = receipt.get('profile_slot')
+        if not slot:
+            raise SystemExit(
+                '%s: canary receipt %s names no profile_slot — with %d profile(s) and %d '
+                'receipt(s) each receipt must say which profile it gates (H4916)'
+                % (context, path, len(profiles), len(paths)))
+        if slot in by_profile:
+            raise SystemExit('%s: two canary receipts gate profile %r — one receipt per '
+                             'profile (H4916)' % (context, slot))
+        by_profile[slot] = receipt
+    missing = [name for name in profiles if name not in by_profile]
+    if missing:
+        raise SystemExit(
+            '%s: no canary GO receipt for profile(s) %s — this run dispatches on %s and '
+            'needs one fresh GO receipt for EACH (H4916)'
+            % (context, ', '.join(missing), ', '.join(profiles)))
+    return {name: by_profile[name] for name in profiles}
+
+
 def cmd_staged_run(args):
     plan = json.load(open(args.plan, encoding='utf-8'))
     scope = staged_plan_scope(plan, args.lease_id)
@@ -1683,6 +1973,12 @@ def cmd_staged_run(args):
     if preflight.returncode:
         raise SystemExit('staged-run preflight refused before probe: %s'
                          % (preflight.stderr or preflight.stdout)[-2000:])
+    # H4916: the four-lease route dispatched paid leases on the readiness probe alone. Since
+    # H4527 the probe no longer carries the production preamble, so the canary is the only
+    # pre-dispatch check that does: one fresh GO receipt per profile, before the call ledger
+    # and before probe_fleet spawns anything. No escape flag on this route.
+    enforce_canary_receipts(getattr(args, 'canary_receipt', None),
+                            [account['name'] for account in accounts], context='staged-run')
     reservation_path = getattr(args, 'call_reservation', None)
     if not reservation_path:
         raise SystemExit('staged-run requires --call-reservation')
@@ -2001,6 +2297,7 @@ def main(argv=None):
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
     p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
+    p = sub.add_parser('probe-ration', help='H4527: read-only readiness-probe ration status (no calls, no writes); exit 3 when rationed'); p.add_argument('--account', action='append'); p.set_defaults(func=cmd_probe_ration)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
     p.add_argument('--coordinator', required=True); p.add_argument('--lease-id', action='append')
@@ -2012,6 +2309,9 @@ def main(argv=None):
     p.add_argument('--drop-unhealthy', action='store_true')        # GAP #5: proceed on healthy subset
     p.add_argument('--report', required=True)
     p.add_argument('--events', required=True); p.add_argument('--census', required=True)
+    p.add_argument('--canary-receipt', action='append',
+                   help='H4916: pwg.canary_gate_receipt.v1 GO receipt; REQUIRED, one per '
+                        'dispatch profile (each naming its profile_slot when N > 1)')
     p.add_argument('--run-id'); p.add_argument('--call-reservation'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_staged_run)
     p = sub.add_parser('presplit-canary')
     p.add_argument('--manifest', required=True); p.add_argument('--output', required=True)

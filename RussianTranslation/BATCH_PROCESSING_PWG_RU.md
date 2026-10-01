@@ -1,3 +1,5 @@
+_Created: 11-08-2026 · Last updated: 05-09-2026_
+
 # PWG→RU Message Batches — offline-ready operating contract
 
 _Prepared 11-08-2026. No live API call is authorised by this document._
@@ -72,3 +74,5 @@ upper estimate. Replay produced the same plan hash
 `feb86bb52b1edb3a873908c79042fdb5c37c4cc4dcb4f0ec5b814e0f3ca4e3f5`.
 No credential, network request, reservation, store/TM write, or promotion was
 used.
+
+_Dr. Mārcis Gasūns_

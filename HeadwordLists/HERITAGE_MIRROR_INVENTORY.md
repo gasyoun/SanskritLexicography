@@ -1,6 +1,6 @@
 # Heritage/INRIA GitHub-mirror inventory
 
-_Created: 03-07-2026 · Last updated: 26-07-2026_
+_Created: 03-07-2026 · Last updated: 05-09-2026_
 
 What [darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources)
 (`develop-main`, sparse-checked-out `DATA/ MW/ DICO/ XML/` at
@@ -34,18 +34,18 @@ an uncovered entry carries only `<a name="<key>">`. Verified counts:
   roots/affixes/proper nouns MW covers under different key conventions, and
   some DICO entries have no MW parallel at all).
 - DICO anchor-key conventions **not present in the 2014 stem-list export**
-  ([`then-2014/21562-huet-velthius.txt`](then-2014/21562-huet-velthius.txt)):
+  ([`then-2014/21562-huet-velthius.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/21562-huet-velthius.txt)):
   a leading `U` marks a proper noun (`Uaadinaatha` = `aadinaatha` in the 2014
   list — the 2014 export drops the marker), a leading `-` marks a bound
   affix/suffix fragment, not a free stem (`-a`, `-tva`; **absent** from the
   2014 list entirely), and a trailing `#N` disambiguates homonyms sharing one
-  key. [heritage_stem_extract.py](heritage_stem_extract.py) normalizes all
+  key. [heritage_stem_extract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_stem_extract.py) normalizes all
   three away for a like-for-like current-vs-2014 comparison (Phase 1).
 - The `H_<key>` and DICO `navy` anchor keys use the **same VH-derived
   transliteration convention** and — for entries with a single-word key —
   the **same literal string**, so an MW-covered key can be looked up directly
   against the DICO anchor index without a separate crosswalk table. This is
-  the mechanism [heritage_mw_crosswalk.py](heritage_mw_crosswalk.py) (Phase 2)
+  the mechanism [heritage_mw_crosswalk.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_mw_crosswalk.py) (Phase 2)
   uses.
 
 ## `DATA/*.rem` (OCaml persistent banks) — not parsed this session

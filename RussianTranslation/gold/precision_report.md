@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Harvest precision — gold-standard measurement (2026-06-16)
 
 A stratified random sample of 320 corpus-lexicon alignments (seed=42, balanced across period × kind), each judged against its source verse, errors adversarially verified. "Precision" = correct + lemma-variant + proper-name (accurate renderings); partial = marginal; errors = wrong-sense + hallucinated.
@@ -33,3 +35,5 @@ A stratified random sample of 320 corpus-lexicon alignments (seed=42, balanced a
 ## Label distribution
 
 correct: 200 · lemma-variant: 46 · proper-name: 24 · partial: 28 · wrong-sense: 13 · hallucinated: 9
+
+_Dr. Mārcis Gasūns_

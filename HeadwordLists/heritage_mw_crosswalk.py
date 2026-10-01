@@ -29,21 +29,32 @@ def build_dico_index():
     idx = {}
     for fp in sorted(glob.glob(os.path.join(MIRROR, "DICO", "*.html"))):
         fname = os.path.basename(fp)
-        text = open(fp, encoding='utf-8').read()
-        for k in DICO_ANCHOR_RE.findall(text):
-            idx.setdefault(k, f"DICO/{fname}#{k}")
+        # H4408: stream line-by-line -- the anchor regexes are line-local (no
+        # \\n-crossing gap in either pattern), so a 100s-of-MB read() per file
+        # bought nothing but RSS.
+        with open(fp, encoding='utf-8') as f:
+            for line in f:
+                for k in DICO_ANCHOR_RE.findall(line):
+                    idx.setdefault(k, f"DICO/{fname}#{k}")
     return idx
 
 def entries_in_file(text):
+    """Whole-text form of entries_in_lines -- kept as the H4353 offline-suite
+    contract pin (tests/test_headword_normalise.py); the file-reading callers
+    stream lines instead."""
+    return entries_in_lines(text.splitlines(keepends=True))
+
+def entries_in_lines(lines):
     """Yield (raw_key, covered) for each MW entry, grouping consecutive anchors
     that precede a Deva span (the MW hypertext's per-entry anchor cluster)."""
-    for block in re.finditer(r'((?:<a name="[^"]+"></a>)+)(?:&#160;)*<span class="Deva">', text):
-        names = ENTRY_ANCHOR_RE.findall(block.group(1))
-        covered = any(n.startswith('H_') for n in names)
-        plain = [n for n in names if not n.startswith('H_')]
-        if not plain:
-            continue
-        yield plain[0], covered
+    for line in lines:
+        for block in re.finditer(r'((?:<a name="[^"]+"></a>)+)(?:&#160;)*<span class="Deva">', line):
+            names = ENTRY_ANCHOR_RE.findall(block.group(1))
+            covered = any(n.startswith('H_') for n in names)
+            plain = [n for n in names if not n.startswith('H_')]
+            if not plain:
+                continue
+            yield plain[0], covered
 
 def main():
     mw_files = sorted(glob.glob(os.path.join(MIRROR, "MW", "*.html")))
@@ -55,32 +66,32 @@ def main():
     seen_slp1 = set()
     n_entries = n_covered = n_resolved = 0
     for fp in mw_files:
-        text = open(fp, encoding='utf-8').read()
-        for raw_key, covered in entries_in_file(text):
-            n_entries += 1
-            slp1 = hc.norm_huet(raw_key)
-            if not slp1 or slp1 in seen_slp1:
-                continue
-            seen_slp1.add(slp1)
-            anchor = ""
-            if covered:
-                n_covered += 1
-                anchor = dico_idx.get(raw_key, "")
-                if not anchor:
-                    # DICO indexes proper nouns with a leading 'U' the MW side lacks
-                    anchor = dico_idx.get("U" + raw_key, "")
-                if not anchor:
-                    # MW's plain anchor drops the '#N' homonym suffix DICO keeps
-                    # (e.g. MW "a.mzaka" vs DICO "a.mzaka#1"/"a.mzaka#2"); the
-                    # bare key is ambiguous, so this picks the first homonym
-                    # arbitrarily rather than leaving a resolvable entry blank.
-                    for n in range(1, 10):
-                        anchor = dico_idx.get(f"{raw_key}#{n}", "")
-                        if anchor:
-                            break
-                if anchor:
-                    n_resolved += 1
-            rows.append((slp1, "1" if covered else "0", anchor))
+        with open(fp, encoding='utf-8') as f:           # H4408: streamed, not read()
+            for raw_key, covered in entries_in_lines(f):
+                n_entries += 1
+                slp1 = hc.norm_huet(raw_key)
+                if not slp1 or slp1 in seen_slp1:
+                    continue
+                seen_slp1.add(slp1)
+                anchor = ""
+                if covered:
+                    n_covered += 1
+                    anchor = dico_idx.get(raw_key, "")
+                    if not anchor:
+                        # DICO indexes proper nouns with a leading 'U' the MW side lacks
+                        anchor = dico_idx.get("U" + raw_key, "")
+                    if not anchor:
+                        # MW's plain anchor drops the '#N' homonym suffix DICO keeps
+                        # (e.g. MW "a.mzaka" vs DICO "a.mzaka#1"/"a.mzaka#2"); the
+                        # bare key is ambiguous, so this picks the first homonym
+                        # arbitrarily rather than leaving a resolvable entry blank.
+                        for n in range(1, 10):
+                            anchor = dico_idx.get(f"{raw_key}#{n}", "")
+                            if anchor:
+                                break
+                    if anchor:
+                        n_resolved += 1
+                rows.append((slp1, "1" if covered else "0", anchor))
 
     with open(OUT_TSV, 'w', encoding='utf-8', newline='\n') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')

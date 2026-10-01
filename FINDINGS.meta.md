@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # FINDINGS.meta.md — metadoc for `FINDINGS.md`
 
 _Created: 18-07-2026 · Last updated: 30-07-2026 (H1910: §506–§509 appended; a self-inflicted §463–§466 collision and a stale next-free marker fixed; Index parity + dashboards restored)_

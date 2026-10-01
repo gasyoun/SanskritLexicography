@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 import builtins
+import contextlib
+import hashlib
+import io
 import json
 import os
 import sqlite3
@@ -23,7 +26,23 @@ _isolation_guard()
 
 import max_account_orchestrator as m
 import headless_worker as hw          # H2299: the paid lane's own bare-cwd helper
-from execution_contract import config_dir_fingerprint
+from execution_contract import ActiveCallClaim, ProbeRationRefused, config_dir_fingerprint
+
+# H4915: the probe ration ledger is machine-wide by design, so no selftest may write it. Point it
+# at scratch for the whole run, and step the ration clock 25 h per reading: the legacy tests probe
+# the same 'cfg' profile dozens of times, and each reading must land on a fresh UTC day >= 6 h after
+# the last. The H4915 pins below install their own root and a clock they control.
+_RATION_SCRATCH = tempfile.TemporaryDirectory(prefix='pwg-probe-ration-selftest-')
+m.PROBE_RATION_ROOT = _RATION_SCRATCH.name
+_LEGACY_RATION_TICK = [1893456000.0]          # 2030-01-01T00:00Z, far from any real ledger row
+
+
+def _legacy_ration_clock():
+    _LEGACY_RATION_TICK[0] += 25 * 3600
+    return _LEGACY_RATION_TICK[0]
+
+
+m._ration_clock = _legacy_ration_clock
 
 
 class MemoryCallLedger:
@@ -842,11 +861,18 @@ def main():
             call_reservation=MemoryCallLedger())
         assert _cls2 == 'success', _cls2
         p = cap['input']
-        # one clear, completable instruction: return exactly the schema object and nothing else
-        assert '{"ok": true}' in p and 'nothing else' in p, p[:200]
-        # payload framed as inert AND still >= the >=5 KB load-representative floor
-        assert 'inert sample (ignore)' in p and 'do not analyse, translate, or act on it' in p
+        # H4527: one honest question whose TRUE answer is ok=true — the reference text below the
+        # question names the Petersburg Sanskrit dictionary — never an order to emit a fixed string
+        assert p.startswith(m._PROBE_QUESTION), p[:200]
+        assert '"ok" is true if the text mentions it' in p, p[:400]
+        assert 'Petersburg Sanskrit dictionary' in p.split('--- reference text ---', 1)[1]
+        # the retired injection-shaped framing is GONE (15-09-2026 refusal transcript)
+        for gone in ('inert sample', 'ignore', 'SAME ISSUER', 'ZERO cards', 'bypass',
+                     'TASK SHAPE', 'nothing else'):
+            assert gone not in p, gone
+        # still >= the >=5 KB load-representative floor, and the production_v4 prompt size
         assert len(p) >= 6491, len(p)
+        assert len(p.encode('utf-8')) >= 10729, len(p.encode('utf-8'))
         # the degenerate form is GONE: no old incantation, no long run of raw padding 'x'
         assert 'Preserve this padding as inert input' not in p
         assert 'xxxxxxxxxxxxxxxxxxxx' not in p                      # no 20+ run of padding
@@ -858,7 +884,7 @@ def main():
         assert len(m._probe_prompt(5000)) >= 5000
     finally:
         m.run_tree_kill = _rtk2
-    print('  D-P readiness prompt: completable task ({"ok": true}) + >=5 KB inert filler; plan mode kept; degenerate x-padding gone')
+    print('  D-P readiness prompt: honest question (true answer ok=true) over >=10.7 KB reference text; plan mode kept; injection-shaped framing and x-padding gone')
 
     # H2299: the probe must spawn from the SAME bare cwd the PAID lane uses.
     #
@@ -895,6 +921,92 @@ def main():
         m.run_tree_kill = _rtk3
     print('  H2299 probe spawn cwd: == headless_worker.bare_cli_cwd() (%s), not the repo'
           % cap3['cwd'])
+
+    # H4527 (15-09-2026): the probe must strip the profile the SAME way the paid lane does.
+    # Since H2251 the lane spawns with `--safe-mode` by default; the probe never adopted it, so it
+    # certified a call carrying the full interactive profile (hooks, CLAUDE.md, skills) — the
+    # ambient context the 07-09 refusal named, and the only input that differed when the 11-09
+    # probe answered {"ok": false} on a c1 profile that had just passed three paid lane calls.
+    # Asserted as EQUALITY WITH THE LANE'S RESOLVER both ways (supported -> flag present and
+    # recorded; unsupported -> absent, degrading exactly as the lane does), never as a literal.
+    _rtk4 = m.run_tree_kill
+    _support = dict(hw._safe_mode_support)
+    cap4 = {}
+
+    def _capture_argv(*a, **k):
+        cap4['argv'] = list(a[0]) if a else list(k.get('args') or [])
+        return types.SimpleNamespace(
+            returncode=0, stderr='',
+            stdout='{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}')
+
+    try:
+        m.run_tree_kill = _capture_argv
+        for supported in (True, False):
+            hw._safe_mode_support[sys.executable] = supported
+            detail = {}
+            _lat, cls4, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                            call_reservation=MemoryCallLedger(),
+                                            detail_out=detail)
+            assert cls4 == 'success', cls4
+            lane = hw.resolve_safe_mode({}, sys.executable)
+            assert lane is supported, (lane, supported)
+            assert (hw.SAFE_MODE_FLAG in cap4['argv']) is lane, (
+                'probe --safe-mode=%r but the paid lane resolves %r -- the gate is certifying a '
+                'different profile surface than the lane it gates (H4527)'
+                % (hw.SAFE_MODE_FLAG in cap4['argv'], lane))
+            assert detail.get('cli_safe_mode_effective') is lane, detail
+            # H4527 pass 2: the row names the exact prompt text it was taken on (series marker)
+            assert detail.get('probe_prompt_sha') == hashlib.sha256(
+                m._probe_prompt(6491).encode('utf-8')).hexdigest()[:12], detail
+            assert '--permission-mode' in cap4['argv'] and 'plan' in cap4['argv'], cap4['argv']
+        assert 'cli_safe_mode_effective' in ro.ALLOWED
+        assert 'probe_prompt_sha' in ro.ALLOWED
+    finally:
+        m.run_tree_kill = _rtk4
+        hw._safe_mode_support.clear()
+        hw._safe_mode_support.update(_support)
+    print('  H4527 probe --safe-mode: == headless_worker.resolve_safe_mode({}) both ways; '
+          'recorded as cli_safe_mode_effective')
+
+    # H4436 (16-09-2026): the `profile:init` validation spawn was the LAST paid call in this
+    # module still carrying the operator's full interactive profile. It takes the lane's posture
+    # the same way the readiness probe does — equality with the resolver both ways, no literal.
+    _rtk5 = m.run_tree_kill
+    _support5 = dict(hw._safe_mode_support)
+    with tempfile.TemporaryDirectory() as td5:
+        preflight5 = m.write_synthetic_preflight(os.path.join(td5, 'p.preflight.json'), 'p5')
+        try:
+            for supported in (True, False):
+                hw._safe_mode_support[sys.executable] = supported
+                cap5 = {'n': 0}
+
+                def _init_runner(*a, **k):
+                    cap5['n'] += 1
+                    if cap5['n'] == 1:      # `auth status --json`, free
+                        return types.SimpleNamespace(
+                            returncode=0, stderr='',
+                            stdout=json.dumps({'loggedIn': True, 'subscriptionType': 'max'}))
+                    cap5['argv'] = list(a[0]) if a else list(k.get('args') or [])
+                    return types.SimpleNamespace(
+                        returncode=0, stderr='',
+                        stdout='{"type":"result","subtype":"success","is_error":false}')
+
+                m.run_tree_kill = _init_runner
+                ok5, _d5 = m.profile_status(td5, sys.executable, MemoryCallLedger(), 'acc',
+                                            preflight5)
+                assert ok5, _d5
+                lane5 = hw.resolve_safe_mode({}, sys.executable)
+                assert lane5 is supported, (lane5, supported)
+                assert (hw.SAFE_MODE_FLAG in cap5['argv']) is lane5, (
+                    'profile:init --safe-mode=%r but the paid lane resolves %r -- the validation '
+                    'call is certifying a different profile surface than the lane (H4436)'
+                    % (hw.SAFE_MODE_FLAG in cap5['argv'], lane5))
+                assert '--permission-mode' in cap5['argv'] and 'plan' in cap5['argv'], cap5['argv']
+        finally:
+            m.run_tree_kill = _rtk5
+            hw._safe_mode_support.clear()
+            hw._safe_mode_support.update(_support5)
+    print('  H4436 profile:init --safe-mode: == headless_worker.resolve_safe_mode({}) both ways')
 
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
@@ -1584,6 +1696,108 @@ def main():
             m.coordinator_command, m.probe_fleet = original_command, original_probe
     print('  staged-run: coordinator preflight refusal precedes call ledger/probe')
 
+    # H4916: the four-lease staged-run route dispatched paid leases on the readiness probe
+    # alone. H4527 took the production preamble out of that probe, so staged-run now needs one
+    # fresh GO canary receipt per dispatch profile BEFORE the call ledger and probe_fleet; a
+    # refusal spawns nothing. Receipts are real `canary_gate.py judge` output, not stubs.
+    import canary_gate as cg
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'canary.sqlite')
+        for name in ('c4', 'c5'):
+            cfg = os.path.join(td, name)
+            os.makedirs(cfg)
+            m.main(['--db', db, 'init', '--account', name + '=' + cfg, '--skip-profile-check'])
+        plan_path = os.path.join(td, 'plan.json')
+        with open(plan_path, 'w', encoding='utf-8') as f:
+            json.dump({'selected_headwords': 1, 'prepared_headwords': 1,
+                       'windows': [{'root': 'lease-canary', 'headwords': ['k'],
+                                    'headless': {'manifest_sha256': 'x'}}]}, f)
+        card = {'records': [{'senses': [
+            {'russian': 'перевод %d' % i, 'german': 'Übersetzung %d' % i} for i in range(3)]}]}
+
+        def receipt(name, slot, age=0):
+            wf = os.path.join(td, name + '_wf.json')
+            with open(wf, 'w', encoding='utf-8') as fh:
+                json.dump({'meta': {'execution': {'profile_slot': slot}},
+                           'results': [{'key': 'dq_canary_puregloss', 'card': card}]},
+                          fh, ensure_ascii=False)
+            path = os.path.join(td, name + '.json')
+            assert cg.main(['judge', wf, '--receipt', path]) == 0
+            if age:
+                body = cg.load_receipt(path)
+                body['judged_at_epoch'] -= age
+                with open(path, 'w', encoding='utf-8') as fh:
+                    json.dump(body, fh)
+            return path
+
+        r_c4, r_c5 = receipt('r_c4', 'c4'), receipt('r_c5', 'c5')
+        r_c4_stale = receipt('r_c4_stale', 'c4', age=8 * 3600)
+        r_c5_stale = receipt('r_c5_stale', 'c5', age=8 * 3600)
+        probed, spawned = [], []
+
+        class _Probed(Exception):
+            pass
+
+        def fake_probe(accounts, *_a, **_k):
+            probed.append(sorted(acc['name'] for acc in accounts))
+            raise _Probed()
+
+        def no_spawn(*a, **_k):
+            spawned.append(a)
+            raise AssertionError('staged-run spawned a process before its canary gate')
+
+        original = (m.coordinator_command, m.probe_fleet, m.run_tree_kill)
+        m.coordinator_command = lambda *_a, **_k: types.SimpleNamespace(
+            returncode=0, stdout='', stderr='')
+        m.probe_fleet = fake_probe
+        m.run_tree_kill = no_spawn
+
+        def staged(receipts, only_profile=None, tag='x'):
+            calls = os.path.join(td, 'calls-%s.json' % tag)
+            m.cmd_staged_run(m.argparse.Namespace(
+                plan=plan_path, lease_id=None, db=db, only_profile=only_profile,
+                max_accounts=0, coordinator='coordinator.py', coord_dir=td, cwd=td,
+                call_reservation=calls, run_id='canary-' + tag, max_calls=4, resume=False,
+                canary_receipt=receipts, claude_bin='claude', events=None,
+                drop_unhealthy=False))
+            return calls
+
+        def refused(receipts, needle, only_profile=None, tag='r'):
+            calls = os.path.join(td, 'calls-%s.json' % tag)
+            try:
+                staged(receipts, only_profile, tag)
+                raise AssertionError('staged-run passed the canary gate with %r' % receipts)
+            except SystemExit as exc:
+                assert needle in str(exc), (receipts, str(exc))
+            assert not probed and not spawned, (probed, spawned)
+            assert not os.path.exists(calls), 'a refused gate created the call ledger'
+
+        try:
+            refused(None, 'without a canary GO receipt', tag='none')
+            refused([], 'without a canary GO receipt', tag='empty')
+            refused([r_c4_stale], 'FRESH', only_profile='c4', tag='stale')
+            refused([r_c5], 'gate the SAME profile', only_profile='c4', tag='other')
+            refused([r_c4], 'profile(s) c5', tag='one-for-two')
+            refused([r_c4, r_c4], 'two canary receipts', tag='dup')
+            refused([r_c4, r_c5_stale], 'FRESH', tag='two-one-stale')
+            try:
+                staged([r_c4], only_profile='c4', tag='go-one')
+                raise AssertionError('staged-run with a valid receipt never reached the probe')
+            except _Probed:
+                pass
+            assert probed == [['c4']], probed
+            try:
+                staged([r_c4, r_c5], tag='go-two')
+                raise AssertionError('staged-run with N receipts never reached the probe')
+            except _Probed:
+                pass
+            assert probed == [['c4'], ['c4', 'c5']], probed
+            assert not spawned, spawned
+        finally:
+            m.coordinator_command, m.probe_fleet, m.run_tree_kill = original
+    print('  staged-run: H4916 canary gate — no/stale/other-profile/one-for-N receipt refuses '
+          'with zero spawns and no ledger; N valid per-profile receipts reach the probe')
+
     # A done row is not authority to record an arbitrary file: the scheduler must bind both
     # the exact result bytes and the coordinator run identity saved at successful dispatch.
     with tempfile.TemporaryDirectory() as td:
@@ -1676,7 +1890,223 @@ def main():
 
     _test_h2079_945_probe_emits_api_time()
     _test_h2326_1172_probe_raw_envelope_capture()
+    _test_h2878_probe_records_the_no_output_progress_reading()
+    _test_h3642_health_probe_log_follows_evidence_root()
+    _test_h4915_probe_ration_is_code_enforced_across_evidence_roots()
+    _test_h4527_probe_ration_status_is_readable_without_probing()
     print('max_account_orchestrator_selftest: PASS')
+
+
+def _test_h4527_probe_ration_status_is_readable_without_probing():
+    """H4527: `probe-ration` answers "may this box probe now?" with zero calls and zero writes.
+
+    H4915 made the ration a code gate but left it readable only by ATTEMPTING a probe, so a batch
+    drain — which claims a handoff before it reads anything — could only learn the lane was closed
+    by spending an attempt or by hand-grepping a JSONL. The pin asserts the three properties a
+    dispatcher branches on: exit 3 when rationed, exit 0 when legal, and no spawn either way."""
+    import datetime
+
+    def utc(text):
+        return datetime.datetime.strptime(text, '%Y-%m-%dT%H:%MZ').replace(
+            tzinfo=datetime.timezone.utc).timestamp()
+
+    saved = (m.run_tree_kill, m.PROBE_RATION_ROOT, m._ration_clock)
+    spawns, now = [], [utc('2030-04-02T09:00Z')]
+    m.run_tree_kill = lambda *a, **k: spawns.append(1)
+    m._ration_clock = lambda: now[0]
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            cfg = os.path.join(td, 'profile-c1')
+            os.makedirs(cfg)
+            db = os.path.join(td, 'ration-status.sqlite')
+            m.main(['--db', db, 'init', '--account', 'c1=' + cfg, '--skip-profile-check'])
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-status')
+
+            def status(account=None):
+                out = io.StringIO()
+                code = 0
+                try:
+                    with contextlib.redirect_stdout(out):
+                        m.cmd_probe_ration(types.SimpleNamespace(db=db, account=account))
+                except SystemExit as exc:
+                    code = exc.code
+                return code, json.loads(out.getvalue())
+
+            code, report = status()
+            assert code == 0 and report['profiles'][0]['legal_now'] is True, report
+            assert report['profiles'][0]['attempts_today'] == [], report
+            assert report['schema'] == 'pwg.probe_ration_status.v1', report
+
+            # One attempt recorded: still under the 2/day cap, but inside the 6 h gap -> rationed.
+            m.ProbeRation(m.PROBE_RATION_ROOT).record(
+                config_dir_fingerprint(cfg), utc('2030-04-02T08:00Z'), account='c1')
+            code, report = status()
+            entry = report['profiles'][0]
+            assert code == 3, 'a rationed profile must be branchable on the exit code, not prose'
+            assert entry['legal_now'] is False, entry
+            assert entry['next_legal_utc'] == '2030-04-02T14:00:00Z', entry
+            assert entry['attempts_today'] == ['2030-04-02T08:00:00Z'], entry
+
+            # Reporting NEVER spends: the ledger is byte-identical across the reads above.
+            ledger = m.ProbeRation(m.PROBE_RATION_ROOT).path(config_dir_fingerprint(cfg))
+            with open(ledger, encoding='utf-8') as fh:
+                assert len(fh.read().splitlines()) == 1, 'probe-ration wrote to the ration ledger'
+            assert not spawns, 'probe-ration spawned a CLI'
+
+            # An unknown --account is a refusal, not an empty (and falsely green) report.
+            try:
+                m.cmd_probe_ration(types.SimpleNamespace(db=db, account=['c9']))
+                raise AssertionError('probe-ration reported on an unvalidated profile')
+            except SystemExit as exc:
+                assert 'no validated account' in str(exc), exc
+    finally:
+        m.run_tree_kill, m.PROBE_RATION_ROOT, m._ration_clock = saved
+    print('  H4527 probe-ration status: exit 3 when rationed, 0 when legal, zero spawns and zero '
+          'ledger writes either way; unknown --account refuses instead of reporting green')
+
+
+def _test_h4915_probe_ration_is_code_enforced_across_evidence_roots():
+    """H4915: at most 2 readiness-probe attempts per UTC day per profile, at least 6 h apart,
+    refused in `_probe_call` BEFORE any spawn, counted in ONE machine-wide ledger.
+
+    15-09-2026: c1 was probed at 01:35Z, 14:23Z and 14:26:55Z. The third went through for two
+    reasons: nothing in code refused it, and the 14:23Z row sat in another evidence root's
+    health_probe_log, so a session checking its own root saw a clear ration."""
+    import datetime
+
+    def utc(text):
+        return datetime.datetime.strptime(text, '%Y-%m-%dT%H:%MZ').replace(
+            tzinfo=datetime.timezone.utc).timestamp()
+
+    saved = (m.run_tree_kill, m.HEALTH_PROBE_LOG, m.PROBE_RATION_ROOT, m._ration_clock)
+    spawns, now = [], [0.0]
+    envelope = '{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}'
+
+    def runner(*_a, **_k):
+        spawns.append(1)
+        return types.SimpleNamespace(returncode=0, stderr='', stdout=envelope)
+
+    def probe(cfg, at, evidence_root, ledger=None):
+        now[0] = utc(at)
+        m.HEALTH_PROBE_LOG = m.resolve_health_probe_log(evidence_root)
+        return m.live_probe(cfg, sys.executable, 6491, m.EXACT_GEN_MODEL, account='c1',
+                            events_path=os.path.join(evidence_root, 'events.jsonl'),
+                            call_reservation=ledger or MemoryCallLedger())
+
+    def refused(cfg, at, evidence_root):
+        before, ledger = len(spawns), MemoryCallLedger()
+        try:
+            probe(cfg, at, evidence_root, ledger)
+        except ProbeRationRefused as exc:
+            assert not isinstance(exc, SystemExit), 'a ration refusal is not a health verdict'
+            assert len(spawns) == before, 'ration refusal spawned the CLI'
+            assert ledger.next_id == 0, 'ration refusal spent a call reservation'
+            assert exc.next_legal_utc and exc.next_legal_utc in str(exc), str(exc)
+            return exc
+        raise AssertionError('probe at %s was admitted; the ration should refuse it' % at)
+
+    try:
+        m.run_tree_kill = runner
+        m._ration_clock = lambda: now[0]
+        with tempfile.TemporaryDirectory() as td:
+            cfg = os.path.join(td, 'profile-c1')
+            os.makedirs(cfg)
+            roots = [os.path.join(td, name) for name in ('checkout-output', 'pwg_ru_evidence', 'env-root')]
+            for root in roots:
+                os.makedirs(root)
+
+            # (a) + (c): two attempts, each under a DIFFERENT evidence root, then a third the
+            # same UTC day under a third root. Each root's health log holds only its own rows,
+            # which is the 15-09 blind spot, and the ration still counts all of them.
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-a')
+            probe(cfg, '2030-03-10T01:35Z', roots[0])
+            probe(cfg, '2030-03-10T08:00Z', roots[1])
+            assert len(spawns) == 4, spawns                      # 2 attempts x (warm-up + measured)
+            for root in roots[:2]:
+                assert len(ro.read_events(os.path.join(root, 'health_probe_log.jsonl'))) == 2
+            exc = refused(cfg, '2030-03-10T14:26Z', roots[2])
+            # (d) the refusal names the next legal time in UTC: the next UTC midnight here
+            assert exc.next_legal_utc == '2030-03-11T00:00:00Z', exc.next_legal_utc
+            assert '2 attempt(s) already on UTC day 2030-03-10' in str(exc), str(exc)
+            assert not os.path.exists(os.path.join(roots[2], 'health_probe_log.jsonl'))
+            ledger = m.ProbeRation(m.PROBE_RATION_ROOT)
+            assert len(ledger.attempts(config_dir_fingerprint(cfg))) == 2
+            # the next legal time really is legal
+            probe(cfg, '2030-03-11T00:00Z', roots[2])
+            assert len(spawns) == 6, spawns
+
+            # (b) under 6 h after the last attempt refuses and names last + 6 h ...
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-b')
+            probe(cfg, '2030-03-10T01:00Z', roots[0])
+            exc = refused(cfg, '2030-03-10T05:00Z', roots[1])
+            assert exc.next_legal_utc == '2030-03-10T07:00:00Z', exc.next_legal_utc
+            assert 'under 6 h old' in str(exc), str(exc)
+            # ... and the 6 h gap spans a UTC midnight: a fresh day does not reset it
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-b2')
+            probe(cfg, '2030-03-10T23:00Z', roots[0])
+            exc = refused(cfg, '2030-03-11T02:00Z', roots[0])
+            assert exc.next_legal_utc == '2030-03-11T05:00:00Z', exc.next_legal_utc
+
+            # One held claim is ONE attempt (the latency sweep holds one claim for its whole
+            # series); a direct call with no claim is an attempt of its own.
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-claim')
+            now[0] = utc('2030-03-10T01:00Z')
+            with ActiveCallClaim(config_dir_fingerprint(cfg)) as claim:
+                for _ in range(3):
+                    assert m._probe_call(cfg, sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                         MemoryCallLedger(), 'latency-sweep:measured', 'c1',
+                                         active_claim=claim)[1] == 'success'
+            ledger = m.ProbeRation(m.PROBE_RATION_ROOT)
+            assert len(ledger.attempts(config_dir_fingerprint(cfg))) == 1
+            now[0] = utc('2030-03-10T02:00Z')
+            try:
+                m._probe_call(cfg, sys.executable, 6491, m.EXACT_GEN_MODEL, MemoryCallLedger())
+                raise AssertionError('a claimless direct probe bypassed the ration')
+            except ProbeRationRefused:
+                pass
+
+            # probe_fleet refuses the WHOLE fleet before any spawn when one profile is out of
+            # ration -- even with --drop-unhealthy, which would otherwise read it as a NO-GO.
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-fleet')
+            cfg2 = os.path.join(td, 'profile-c2')
+            os.makedirs(cfg2)
+            now[0] = utc('2030-03-10T01:00Z')
+            m.ProbeRation(m.PROBE_RATION_ROOT).record(config_dir_fingerprint(cfg2), now[0])
+            now[0] = utc('2030-03-10T03:00Z')
+            before = len(spawns)
+            try:
+                m.probe_fleet([{'name': 'c1', 'config_dir': cfg}, {'name': 'c2', 'config_dir': cfg2}],
+                              sys.executable, drop_unhealthy=True, call_reservation=MemoryCallLedger())
+                raise AssertionError('fleet probed a profile that is out of ration')
+            except ProbeRationRefused as exc:
+                assert 'profile c2' in str(exc) and '2030-03-10T07:00:00Z' in str(exc), str(exc)
+            assert len(spawns) == before, 'fleet spent account c1 before refusing on c2'
+
+            # An unreadable ledger row fails CLOSED, never "no attempts on record".
+            m.PROBE_RATION_ROOT = os.path.join(td, 'ration-torn')
+            os.makedirs(m.PROBE_RATION_ROOT)
+            with open(m.ProbeRation(m.PROBE_RATION_ROOT).path(config_dir_fingerprint(cfg)),
+                      'w', encoding='utf-8') as fh:
+                fh.write('{"ts": 1893\n')
+            before = len(spawns)
+            try:
+                probe(cfg, '2030-03-10T01:00Z', roots[0])
+                raise AssertionError('a torn ration ledger was read as empty')
+            except ProbeRationRefused as exc:
+                assert 'unreadable' in str(exc) and exc.next_legal_utc is None, str(exc)
+            assert len(spawns) == before
+
+        # The production ledger is machine-wide: beside the active-call lock dir, never under an
+        # evidence root, and not movable by $PWG_EVIDENCE_DIR.
+        default = m.probe_ration_root()
+        assert os.path.dirname(default) == os.path.dirname(ActiveCallClaim('f' * 64).root), default
+        import inspect
+        assert 'environ' not in inspect.getsource(m.probe_ration_root), \
+            'the ration root must not follow an env var: a per-session root splits the count'
+    finally:
+        m.run_tree_kill, m.HEALTH_PROBE_LOG, m.PROBE_RATION_ROOT, m._ration_clock = saved
+    print('  H4915 probe ration: 3rd same-day attempt and <6 h attempt refused before spawn and '
+          'reservation; two evidence roots share one count; refusal names the next legal UTC time')
 
 
 def _test_h2079_945_probe_emits_api_time():
@@ -1865,7 +2295,11 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             cls, detail = _call('h2326-ok')
             assert cls == 'success', (cls, detail)
             assert 'err_pattern' not in detail and 'raw_envelope_path' not in detail, detail
-            assert set(detail) <= {'host_state'}, (
+            # H4527 widened it once more, for the same reason as H2647: `cli_safe_mode_effective`
+            # is provenance (which profile surface the reading was taken on), not a diagnostic,
+            # and a healthy reading needs it most — it is what a refused one is compared against.
+            # H4527 pass 2 adds `probe_prompt_sha` on the same provenance grounds.
+            assert set(detail) <= {'host_state', 'cli_safe_mode_effective', 'probe_prompt_sha'}, (
                 'success added an unexpected detail key: %s' % sorted(detail))
             assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
 
@@ -1914,6 +2348,170 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             m.run_tree_kill, m._probe_call, m.PROBE_RAW_DIR = _rtk, _pc, _raw_dir
     print('  H2326 #1172: non-success probe parks the raw envelope + matched pattern; '
           'success lane writes nothing')
+
+
+
+
+def _test_h2878_probe_records_the_no_output_progress_reading():
+    """H2878 (issue #1680, FINDINGS §378): every probe records whether it was ALIVE.
+
+    `elapsed_ms` cannot answer that. The 13-08 c1 reading -- 300 198 ms, 0 output bytes --
+    was recorded as a bare `timeout`, and nothing in the row could say whether the route was
+    hung or whether the production lane (which kills at twice that) would still have been
+    waiting on it. `bytes_seen` + `quiet_ms` + `killed_reason` are that missing half.
+
+    Offline by construction: no paid call. The runner is stubbed on both sides -- one spawn
+    that completes and one that is killed on its silence -- and the assertions run all the
+    way to the event row, because a field the runner produces and `append_event` refuses is
+    telemetry that does not exist.
+    """
+    _rtk = m.run_tree_kill
+    try:
+        # (a) a spawn that COMPLETED: the reading rides back on `progress_out`, and a healthy
+        #     row carries no `killed_reason` at all (append_event drops None, so the shape of
+        #     a successful row is unchanged from before H2878).
+        envelope = ('{"type":"result","subtype":"success","is_error":false,'
+                    '"result":"{\\"ok\\":true}"}')
+
+        def completing(*_a, **kwargs):
+            out = kwargs.get('progress_out')
+            if out is not None:
+                out.update({'bytes_seen': len(envelope), 'stderr_bytes_seen': 0,
+                            'quiet_ms': 41_512, 'killed_reason': None,
+                            'elapsed_ms': 44_000})
+            return types.SimpleNamespace(returncode=0, stdout=envelope, stderr='')
+
+        m.run_tree_kill = completing
+        detail = {}
+        _lat, cls, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                       call_reservation=MemoryCallLedger(), detail_out=detail)
+        assert cls == 'success', cls
+        assert detail['bytes_seen'] == len(envelope), detail
+        assert detail['quiet_ms'] == 41_512, detail
+        assert 'killed_reason' not in detail, detail        # healthy row shape unchanged
+
+        # (b) a spawn KILLED on its silence: the runner attaches the reading to the
+        #     TimeoutExpired -- which is what lets every existing `except TimeoutExpired`
+        #     keep working while gaining something to say.
+        def stalled(*_a, **_k):
+            exc = subprocess.TimeoutExpired(['claude'], 90)
+            exc.killed_reason = 'no_output_progress'
+            exc.bytes_seen = 0
+            exc.quiet_ms = 90_004
+            exc.output = ''
+            exc.stderr = ''
+            raise exc
+
+        m.run_tree_kill = stalled
+        detail = {}
+        _lat, cls, obytes = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                                          call_reservation=MemoryCallLedger(),
+                                          detail_out=detail)
+        # H4528 (the PR #1837 split): the watchdog's kill is its own class, never folded into
+        # the hard-ceiling 'timeout'. Every consumer of a probe class still reads it as a
+        # non-success STOP / NO-GO, and h963_c4_gate0_probe counts it with the conn-errors.
+        assert cls == 'no_progress_kill', cls
+        assert obytes == 0, obytes
+        assert detail['killed_reason'] == 'no_output_progress', detail
+        assert detail['bytes_seen'] == 0 and detail['quiet_ms'] == 90_004, detail
+    finally:
+        m.run_tree_kill = _rtk
+
+    # (c) the three fields must survive `append_event`, whose ALLOWED set REFUSES unknown
+    #     keys. A reading the runner produces and the writer rejects is not telemetry.
+    with tempfile.TemporaryDirectory() as td:
+        path = os.path.join(td, 'events.jsonl')
+        row = ro.append_event(
+            path, stage='probe', event='probe_call', classification='timeout',
+            bytes_seen=0, quiet_ms=90_004, killed_reason='no_output_progress')
+        assert row['killed_reason'] == 'no_output_progress', row
+        written = ro.read_events(path)
+        assert len(written) == 1 and written[0]['quiet_ms'] == 90_004, written
+        # and a healthy row still omits them entirely rather than writing nulls
+        healthy = ro.append_event(
+            path, stage='probe', event='probe_call', classification='success',
+            bytes_seen=120, quiet_ms=41_512, killed_reason=None)
+        assert 'killed_reason' not in healthy, healthy
+
+    print('  H2878 #1680: every probe records bytes_seen/quiet_ms, a stalled kill names '
+          'itself `no_output_progress`, and all three survive append_event')
+
+
+def _test_h3642_health_probe_log_follows_evidence_root():
+    """H3642: HEALTH_PROBE_LOG must resolve through the SAME precedence
+    `h963_c4_gate0_probe.resolve_evidence_root` uses (explicit root, then
+    $PWG_EVIDENCE_DIR, then the historical checkout-relative default) — the #1034
+    defect one file over. #1034 fixed the per-account events series; this constant
+    stayed pinned to `HERE/output` regardless, so a paid probe with a perfectly
+    durable `--evidence-dir` still lost its canonical cross-account row to the
+    disposable worktree it was run from (measured 28-08-2026 under H2878).
+
+    `resolve_health_probe_log`'s own precedence is pinned here; the end-to-end rebind
+    inside `h963_c4_gate0_probe.main()` (including the sibling durable-root guard on
+    the derived target) is pinned by that module's own `--selftest`."""
+    import max_account_orchestrator as m
+
+    saved_env = os.environ.pop('PWG_EVIDENCE_DIR', None)
+    try:
+        # (1) no explicit root, no env — BYTE-IDENTICAL to the historical default. 21
+        # rows of c4 history and the H1110/H1447/H858 reports cite this exact path.
+        here = os.path.dirname(os.path.abspath(m.__file__))
+        default_log = m.resolve_health_probe_log()
+        assert default_log == os.path.join(here, 'output', 'health_probe_log.jsonl'), default_log
+        assert default_log == m.HEALTH_PROBE_LOG, (
+            'the module-level constant must be computed by the same function it exposes')
+        assert m.PROBE_RAW_DIR == os.path.dirname(m.HEALTH_PROBE_LOG), (
+            'PROBE_RAW_DIR must be derived from HEALTH_PROBE_LOG, not resolved independently')
+
+        with tempfile.TemporaryDirectory() as td:
+            durable = os.path.join(td, 'durable-evidence')
+
+            # (2) explicit root beats everything, including a set env var.
+            os.environ['PWG_EVIDENCE_DIR'] = os.path.join(td, 'from-env')
+            explicit_log = m.resolve_health_probe_log(durable)
+            assert explicit_log == os.path.join(durable, 'health_probe_log.jsonl'), explicit_log
+
+            # (3) env alone (no explicit root) is honoured too — a caller that never
+            # goes through h963_c4_gate0_probe's CLI still gets the durable root.
+            # realpath (not abspath): the sibling resolve_evidence_root resolves
+            # symlinks, so both resolvers must agree byte-for-byte (macOS /var/folders).
+            env_log = m.resolve_health_probe_log()
+            assert env_log == os.path.join(os.path.realpath(os.path.join(td, 'from-env')),
+                                           'health_probe_log.jsonl'), env_log
+            os.environ.pop('PWG_EVIDENCE_DIR', None)
+
+            # (4) the rebind a caller performs (mirroring h963_c4_gate0_probe.main())
+            # relocates BOTH HEALTH_PROBE_LOG and its derived PROBE_RAW_DIR outside the
+            # checkout, and `_emit` (global lookup, not a captured default) honours it
+            # immediately — no re-import needed.
+            _saved_log, _saved_raw, _rtk = m.HEALTH_PROBE_LOG, m.PROBE_RAW_DIR, m.run_tree_kill
+            try:
+                m.HEALTH_PROBE_LOG = m.resolve_health_probe_log(durable)
+                m.PROBE_RAW_DIR = os.path.dirname(m.HEALTH_PROBE_LOG)
+                assert m.PROBE_RAW_DIR == durable, m.PROBE_RAW_DIR
+
+                m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(
+                    returncode=0, stdout='{"type":"result","subtype":"success",'
+                    '"is_error":false,"structured_output":{"ok":true}}', stderr='')
+                ev = os.path.join(td, 'events.jsonl')
+                m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                             latency_ceiling_ms=65000, events_path=ev, run_id='h3642-live',
+                             account='c1', call_reservation=MemoryCallLedger())
+                canonical_rows = ro.read_events(m.HEALTH_PROBE_LOG)
+                assert canonical_rows and all(r.get('run_id') == 'h3642-live'
+                                              for r in canonical_rows), canonical_rows
+                assert not m.HEALTH_PROBE_LOG.startswith(here), (
+                    'the canonical row must land under the durable root, not the checkout')
+            finally:
+                m.HEALTH_PROBE_LOG, m.PROBE_RAW_DIR, m.run_tree_kill = \
+                    _saved_log, _saved_raw, _rtk
+    finally:
+        os.environ.pop('PWG_EVIDENCE_DIR', None)
+        if saved_env is not None:
+            os.environ['PWG_EVIDENCE_DIR'] = saved_env
+
+    print('  H3642: HEALTH_PROBE_LOG follows explicit/env/default precedence like the '
+          'per-account events root; PROBE_RAW_DIR derives from it; default byte-identical')
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 21-08-2026_
+_Created: 09-07-2026 · Last updated: 22-09-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -166,14 +166,19 @@ tracked-file drift and is wired into `window_selftest.py`
   [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md);
   measurement in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md)
   + [Uprava FINDINGS §284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
-- **Call shape: ONE card per call — and shape is not the lever (H2152, 02-08-2026).** Quota and
-  the per-call wall-clock ceiling (`HARD_TIMEOUT_MS`) bind in **opposite** directions: a quota
+- **Call shape: ONE card per call — and shape is not the lever (H2152, 02-08-2026).** Quota
+  and the per-call wall-clock ceiling (`HARD_TIMEOUT_MS`) bind in **opposite** directions: a quota
   ceiling penalises *many* calls, a wall-clock ceiling penalises *large* ones. Whichever binds
   decides the shape, and as of 02-08 it is wall clock, so the small shape wins — which is also what MG's
-  instrument-everything mandate asks for, so the two are not in conflict. `--output-budget=1`
-  is the existing one-card lane; nothing needs building. **Do not flip to batching to save
-  cost:** batching also makes one unevaluable call destroy per-card attribution for *all* N
-  cards in it. Full reasoning: [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
+  instrument-everything mandate asks for, so the two are not in conflict. **Since H4054
+  (04-09-2026) the shape is structural: the generator default is `OUTPUT_BUDGET = 1`, so a
+  no-flag production preparation already emits one original card per translate call** — the
+  safe shape no longer depends on whoever types the command. Deliberate multi-card packing
+  survives only as an EXPLICIT experiment/calibration lane (`--output-budget=90` reproduces
+  the 2026-07-03 calibrated packing; `calibrate_perf_harness.py` arms pass it explicitly).
+  **Do not flip to batching to save cost:** batching also makes one unevaluable call destroy
+  per-card attribution for *all* N cards in it. Full reasoning:
+  [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
   > **Ceiling status, later the same day: `HARD_TIMEOUT_MS` is now 300 000, and the two lanes
   > diverged.** The heal lane WAS being killed by an outgrown bound — `heal:nakzatra#g2`
   > returned at **176 952 ms**, 3 048 ms inside the old 180 000. But `translate b0` died at
@@ -182,13 +187,26 @@ tracked-file drift and is wired into `window_selftest.py`
   > "the ceiling was raised" as "the timeouts are fixed" — that hang is a separate, still-open
   > defect (v1.130.0).
   >
+  > **Correction, 15-09-2026 ([H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md), from
+  > [H4528 §1, §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h4528/H4528_WHOLE_CARD_HANG_FORENSICS_14-09-2026.md)):**
+  > the paragraph above is superseded on two points. "non-terminating" did not hold: the same
+  > nakzatra card later completed eleven times, at wall times up to 511 908 ms, so it was slow,
+  > not infinite. And "v1.130.0" is a **repo release** (the bare-cwd change, CHANGELOG
+  > `## [1.130.0]`), not a CLI version, and the defect is **not open**. The one kill never
+  > followed by a finish (H2250 b5, 900 000 ms) is censored, not proven infinite.
+  >
   > **Still open on 06-08-2026 at CLI v2.1.223, and 300 000 is now demonstrably too low for
   > a whole card** ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md),
   > incidental to a cache run). Five spawns of the production `build_prompt` surface on
   > `nakzatra`: **three killed** (two at 300 s, one at 900 s), one clean at **511 908 ms
   > wall / 494 603 ms api over 3 turns**, one at 48 414 ms over 4 turns that returned
-  > **zero cards** and failed the schema. So the clean case now runs ~1.7× the 300 s
-  > ceiling, and the non-terminating hang the note above records is still live at 900 s.
+  > **zero cards** and failed the schema. *(Correction, 15-09-2026, H4842: 48 414 ms is API
+  > time, not wall time. The harness wall was 107 659 ms and the CLI's own `duration_ms` was
+  > 64 109 ms, per
+  > [`h2189_card_rows.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/raw/b6_card_repeat/h2189_card_rows.json).)* So the clean case now runs ~1.7× the 300 s
+  > ceiling, and the non-terminating hang the note above records is still live at 900 s
+  > *(superseded: see the 15-09-2026 correction above — the 900 s kill is censored, not a proven
+  > infinite hang)*.
   > Same class as the 05-08 `gate-0 HEALTH_NOGO — the measured leg was killed at
   > 300 000 ms having returned nothing`
   > ([#1144](https://github.com/gasyoun/SanskritLexicography/issues/1144)). Raising the
@@ -211,8 +229,10 @@ tracked-file drift and is wired into `window_selftest.py`
   source"; the `_zz_pw` / `_zz_sch` / `_zz_pwkvn` / `_zz_nws00` card-ID suffixes are the live
   per-layer routing (H178 A-4b).
 - The optimized **translate-only** harness is generated per root by
-  [`gen_opt_harness2.py`](gen_opt_harness2.py) and executed headless. It masks and batches
-  raw/portrait inputs, disables translate-agent tools, auto-uses translation-memory
+  [`gen_opt_harness2.py`](gen_opt_harness2.py) and executed headless. It masks the
+  raw/portrait inputs and emits one original card per translate call (structural
+  `--output-budget=1` default, H4054), disables translate-agent tools, auto-uses
+  translation-memory
   sidecars when present, presplits over-budget dense cards into the selfheal lane, and
   returns provenance metadata used by the audit stale guard.
 - Article-site/root dashboard lazy loading is already shipped; do not spend performance time
@@ -375,23 +395,33 @@ the preflight warns to run
 `python src\pilot\translation_memory.py build-frags --lang ru` after a heal run emits
 `frag_prov`; if no matching `wf_output*.json` contains `frag_prov`, the warning says so.
 
-Generate the harness for the root. **Default: the batched + masked v2 harness**
-([`gen_opt_harness2.py`](gen_opt_harness2.py)) — masks each card (pwg_mask), packs
-several per agent call, and restores `{Tn}` to source markup in-JS so the result is a
-canonical `wf_output.json` (audit consumes it unchanged, no extra step). Measured
-**−72 % cost on a full mixed root** (gam: original per-card **\$16.14 → \$4.45**; a clean
-small batch is −90 %). Current defaults: `--output-budget=90`, selfheal on,
+Generate the harness for the root. **Default: the masked v2 harness, ONE CARD PER CALL**
+([`gen_opt_harness2.py`](gen_opt_harness2.py)) — masks each card (pwg_mask), emits one
+original card per translate call (structural default `--output-budget=1`, H4054 04-09-2026:
+the H2152 one-card ruling as code, no flag needed), and restores `{Tn}` to source markup
+in-JS so the result is a canonical `wf_output.json` (audit consumes it unchanged, no extra
+step). Current defaults: `--output-budget=1` (one card per call), selfheal on,
 binary-split on, presplit routing on, and `--tm=auto` (uses
 `translation_memory.<lang>.json` + `translation_memory.frag.<lang>.jsonl` when present;
-`--no-tm` is the explicit opt-out). Refresh TM after every promotion/heal harvest:
+`--no-tm` is the explicit opt-out). Multi-card packing is an EXPLICIT experiment lane only:
+`--output-budget=90` reproduces the 2026-07-03 calibrated packing; legacy byte mode stays
+reachable via `--budget=N` (e.g. FU1 `--budget=6000`) or `--output-budget=off`. (History:
+the famous **−72 %** gam measurement, `\$16.14 → \$4.45`, compared BATCHED vs legacy
+per-card in the batched-default era — it does not describe today's one-card default.)
+Presplit
+and heal routing are independent of the batch budget: `PRESPLIT_SOLO_CITE_FLOOR=40` and
+`SENSE_PRESPLIT_BUDGET=20` are the per-card triggers, `SELFHEAL_GROUP_BUDGET=12` the heal
+grouping — none of them re-derived from the batch budget. Refresh TM after every
+promotion/heal harvest:
 `python src\pilot\translation_memory.py build --lang ru` and, when fragment provenance was
 created, `python src\pilot\translation_memory.py build-frags --lang ru`. See
 [`../../TLONLY_PROTOTYPE.md`](../../TLONLY_PROTOTYPE.md).
 
 ```powershell
-python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, TM auto, output-budget 90)
+python src\pilot\gen_opt_harness2.py sTA            # default (one card per call, masked, TM auto)
 # -> writes the optimized harness and manifest inputs; do not run the JS manually in Max
-# --output-budget=N tunes citation-weighted output packing (default 90).
+# --output-budget=N is the EXPLICIT experiment batching lane (90 = the 2026-07-03 calibrated
+#   packing); the production default needs no flag and is one card per call (H4054).
 # --budget=N without --output-budget keeps legacy byte-mode packing.
 # --no-tm disables automatic card/fragment translation-memory reuse.
 # A batch retries only its still-unresolved cards; a card whose restored <ls>/{#..#}
@@ -529,8 +559,13 @@ Preparation and audit subprocesses do not hold the global state lock. Their pers
 
 **Default to one bounded headless window at a time; treat ordinary 3-wide as an
 upper bound, not a target, and use `max-wide=1` for the bounded paid route.**
-Each generated window may internally fan out to ~8–14 calls, so N concurrent roots
-can still peak at N×~12 Sonnet calls on a single Max account. Slice D launched 18 at once →
+Under the one-card default (H4054) a generated window's call count equals its card
+count (a root that batched to ~8–14 calls now fans to one call per card), so N
+concurrent roots multiply Sonnet calls on a single Max account even faster than the
+historical N×~12 arithmetic. Concurrent WIDTH is still bounded the same way — the
+profile's `ActiveCallClaim` serializes one active call per profile, and the advisory
+`--max-wide` / `--stagger-ms` dispatch hints bound intra-process fan-out. Slice D
+launched 18 at once →
 ~140–250 peak agents → ~80+ `Server is temporarily limiting requests` 429s → 117 transient
 null cards. H317 then showed that even **3 concurrent medium windows** can collapse if the
 session/provider is already unstable (0/38 clean, and the solo retry still saw repeated
@@ -577,6 +612,25 @@ not a substitute for it.
   `current_attempt.remaining_pending`, so a transient retry cannot discard pending defects
   (or vice versa). Clean rows with remaining work become `ready_partial`, promotion becomes
   `promoted_partial`, and the lease reaches `promoted` only after the backlog is empty.
+- **Draining a prepared requeue, or re-making a promoted card (H4527, 22-09-2026).** A frozen
+  plan only imports `prepared` leases, and `no_pwg_scale_plan.py` excludes promoted headwords,
+  so neither shape can ride a plan run. Name them instead:
+  `bounded_staged_run.py --plan <plan> --repair-lease <id> [--repair-lease <id> ...]`. The run's
+  scope is then those leases and nothing else (`--lease-id` is refused alongside it). A
+  `requeue_prepared` lease drains its prepared `<lease>::rqNN-<kind>` attempt (prepare-requeue is
+  never re-run); a prepared `defect-repair` lease imports like any prepared lease. Any other state
+  is refused. The dry run lists them under `scope.repair_leases` with their job ids and projected
+  calls. The canary receipt, probe ration, `--max-calls` reservation and preflight validation
+  apply unchanged. A no-PWG nominal card is claimed with `coordinator.py claim --kind
+  defect-repair --root <root> --keys <key> --nominal`; its prepare mirrors the planner's build
+  (`--nominal`, raw keys) and adds `--no-tm` to both children, so the card being replaced cannot
+  feed its own re-make; any later requeue of a defect-repair lease, transient included, stays
+  TM-off for the same reason. The store merge is better-attempt-wins and protects only
+  human-touched rows. A repair run is **not resumable once dispatched**: after a crash the lease
+  is `running`/`ready`/`ready_partial` and `--resume --repair-lease` refuses it (fails closed, no
+  spend). Read `coordinator.py status` and finish by hand (a `ready` lease: `coordinator.py
+  promote-ready --lease-id <id>`). Give each repair run a fresh `--checkpoint`, since the
+  AWAITING_REVIEW record is keyed by lease id.
 - Each retry is preserved under `artifacts/<lease>/requeue/rqNN-{transient|defect}/` with its
   exact key file, conservatively collected defect-fragment hashes, harness, and execution
   manifest. Allocation advances past the highest state/history attempt and any existing
@@ -689,8 +743,10 @@ Via [h963_c4_gate0_probe.py](https://github.com/gasyoun/SanskritLexicography/blo
 restated here:** the probe reads `probe_log.POLICIES[probe_log.CURRENT_POLICY]` and prints the
 ceiling it judged by on its own `ceiling` header line — read that, not this page. The numbers
 in the H1447 table below were taken under `production_v1` (30 000 ms wall, no route ceiling)
-and are kept as **dated history**; the live policy has since been `production_v2` (65 000) and
-is now `production_v3` (80 000 ms wall **and** 45 000 ms route). A runbook that names a live
+and are kept as **dated history**; the live policy has since been `production_v2` (65 000),
+`production_v3` (80 000 ms wall **and** 45 000 ms route) and is now `production_v4` (240 000 ms
+wall, route ceiling SUBSUMED at the same number — MG's 10-09-2026 host-degradation ruling, not a
+route-health claim; see the `POLICIES` comment). A runbook that names a live
 threshold goes stale within days — this one had, and said "strict: measured ≥ 30 000 ms ⇒
 NO-GO" for two policy generations after that stopped being true (H2254).
 
@@ -897,3 +953,5 @@ The frequency queue milestone is done when:
 - the cost/quota table has enough windows to estimate the run duration;
 - every non-clean headless/legacy-Workflow/API launch in the window has a complete
   `LAUNCH_FUCKUPS.md` entry and passes `check_launch_ledger.py`.
+
+_Dr. Mārcis Gasūns_

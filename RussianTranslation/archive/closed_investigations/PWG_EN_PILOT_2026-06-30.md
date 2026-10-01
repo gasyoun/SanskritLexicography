@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG tri-lingual pilot sample (DE source -> RU + EN)
 
 ## Bid — 205 aligned sense rows (DE source / RU / EN)
@@ -469,3 +471,5 @@ P. 7,1,43. Schol. to P. 6,1,17. 7,2,62. fg. VOP. 8,124. 133. fg. Schol. to P. 7,
   - DE: 3) med. (instr.): ṚV. 1,98,1. 123,12. 5,4,4. 10,62,11. 3,58,8. 10,113,7. (P. 5,4,36, Vārtt. 3, Sch.) VS. 27,5. 7,45. 10,29. ṚV. 9,97,30
   - RU: 3) med. (instr.): ṚV. 1,98,1. 123,12. 5,4,4. 10,62,11. 3,58,8. 10,113,7. (P. 5,4,36, Vārtt. 3, Sch.) VS. 27,5. 7,45. 10,29. ṚV. 9,97,30
   - EN: 3) med. to join, unite, meet with (instr.): ṚV. 1,98,1. 123,12. 5,4,4. 10,62,11. 3,58,8. 10,113,7. (P. 5,4,36, Vārtt. 3, Sch.) VS. 27,5. 7,45. 10,29. complying with the father's will as a son ṚV. 9,97
+
+_Dr. Mārcis Gasūns_

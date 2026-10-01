@@ -1,0 +1,83 @@
+{
+  "schema": "pwg.tm.wave3.denylist_census.v1",
+  "created": "24-08-2026",
+  "session": "H3434",
+  "method": "every {%...%} inner token, normalized exactly as pwg_tm_wave2_policy.source_token() (inner text, lowercased, non-letter runs stripped)",
+  "sources": [
+    {
+      "path": "RussianTranslation/release/pwg_tm_canonical/canonical.v1.jsonl",
+      "rows": 2392,
+      "rows_with_gloss_span": 2102,
+      "spans_total": 15776,
+      "distinct_normed_tokens": 10557
+    },
+    {
+      "path": "h3434_wave3_out regen pool (promoted+quarantine, gitignored/regenerable; drafted=0)",
+      "rows": 197925
+    }
+  ],
+  "admitted_tokens": {
+    "_comment": "count = occurrences as source-side span content in canonical.v1.jsonl. Zero-count tokens are paradigm completions of the same closed class named by the H3434 brief; dem was already denylisted at zero count by H2684.",
+    "etwas": 47,
+    "zu": 15,
+    "auf": 14,
+    "mit": 12,
+    "von": 11,
+    "sich": 9,
+    "nach": 9,
+    "in": 8,
+    "an": 7,
+    "nicht": 5,
+    "über": 5,
+    "aus": 4,
+    "bei": 4,
+    "gegen": 4,
+    "durch": 2,
+    "des": 2,
+    "einen": 2,
+    "für": 2,
+    "im": 2,
+    "man": 2,
+    "und": 2,
+    "wie": 2,
+    "oder": 2,
+    "als": 1,
+    "am": 1,
+    "bis": 1,
+    "das": 1,
+    "den": 1,
+    "die": 1,
+    "ein": 1,
+    "ohne": 1,
+    "um": 1,
+    "unter": 1,
+    "vor": 1,
+    "zum": 1,
+    "eine": 0,
+    "ans": 0,
+    "zur": 0,
+    "vom": 0,
+    "beim": 0
+  },
+  "previously_present": {
+    "jmd": 209,
+    "jmdm": 10,
+    "die": 1,
+    "der": 6,
+    "das": 1,
+    "den": 1,
+    "dem": 0,
+    "gewachsen": 1
+  },
+  "pool_verification_h3434_wave3_out": {
+    "denylisted-source rows by (class, origin)": {
+      "(example, copy:example)": 16,
+      "(definition_gloss, placeholder)": 11,
+      "(sense, sense_merge)": 10,
+      "(sense, unfilled)": 127,
+      "(definition_gloss, unfilled)": 212
+    },
+    "denylisted sources with exact_source_reuse/reuse_exact fill": 0,
+    "note": "the 16 example rows are verbatim Sanskrit identity copies ({#am#} -> {#am#}); source_token() falls back to the whole string for span-less rows"
+  }
+}

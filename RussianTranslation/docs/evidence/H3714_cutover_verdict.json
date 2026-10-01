@@ -1,0 +1,1 @@
+{"authorizes_writer_disable":false,"canary_green":false,"commit":"working-tree","faults_green":true,"offline_green":true,"packet_sha256":"7c6d59647897ccffc3b31d69205bb82ee85e620198a5e42ced622b5719462a82","receipt_verified":false,"replay_exact":true,"schema":"pwg.pipeline.cutover.v1","shadow_clean":true,"validation_fenced":true,"verdict":"PARTIAL"}

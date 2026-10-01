@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # A history of Indian literature_ Vol_ 5, [Scientific and -- Jan Gonda; Claus Vogel -- A History of Indian literature ; v_ 5, fasc_ 4, History of -- isbn13 9783447020107 -- 4579c411cbff688d8cc761fa6bf2ca41 -- Anna’s A
 
 **Source:** `A history of Indian literature_ Vol_ 5, [Scientific and -- Jan Gonda; Claus Vogel -- A History of Indian literature ; v_ 5, fasc_ 4, History of -- isbn13 9783447020107 -- 4579c411cbff688d8cc761fa6bf2ca41 -- Anna’s A.pdf`  
@@ -6191,3 +6193,5 @@ BETEN
 | 
 <7 
 09-BPO-732
+
+_Dr. Mārcis Gasūns_

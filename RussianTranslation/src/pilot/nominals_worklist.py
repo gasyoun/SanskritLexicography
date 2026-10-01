@@ -24,7 +24,9 @@ Usage:
   python src/pilot/nominals_worklist.py .../pril5.slp1.txt --top 30
   python src/pilot/nominals_worklist.py .../pril5.slp1.txt --report src/pilot/lexical_cores/pril5.coverage.md
 
-Writes: src/pilot/output/nominal_batch_worklist.json (gitignored, regenerable).
+Writes: src/pilot/output/nominal_batch_worklist.json (gitignored) unless --out names
+another path. That default is a SHARED singleton several dashboards read - pass --out for
+any run that is not the standing nominal drain.
 Optional --report writes a committed human-readable coverage table.
 """
 import argparse
@@ -278,11 +280,25 @@ def main():
     ap.add_argument('--top', type=int, default=0, help='print the next N runnable nominals')
     ap.add_argument('--report', help='also write a committed coverage markdown to this path')
     ap.add_argument('--json', action='store_true', help='print the full worklist JSON to stdout')
+    ap.add_argument('--out', default=OUT,
+                    help='write the worklist here instead of the shared '
+                         'output/nominal_batch_worklist.json. Use it for any run that is not the '
+                         'standing nominal drain: the default path is a singleton that '
+                         'progress_dashboard/build_progress_data.py, kitchen_slices.py, '
+                         'kitchen_nominal_selftest.py and h963_c4_pilot_candidates.py all read, '
+                         'and despite the "regenerable" label it needs four external inputs '
+                         '(the gitignored store, scale_manifest.freq.json, csl-orig/v02, '
+                         'VisualDCS) that a clean worktree does not have — H963 C4 call graph, D7.')
+    ap.add_argument('--manifest', default=MANIFEST,
+                    help='scale_manifest.freq.json to score against. It is gitignored, so a '
+                         'linked worktree has none; point this at the main checkout to run the '
+                         'builder under the repo\'s worktree-isolation rule.')
     args = ap.parse_args()
 
-    payload = build_worklist(args.wordlist)
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, 'w', encoding='utf-8') as f:
+    payload = build_worklist(args.wordlist, manifest=args.manifest)
+    out_path = args.out
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+    with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
 
     print('%s: %d lemmas | verbs->H151: %d | nominals: %d (hits %d / miss %d, %.1f%% cov) | '
@@ -295,7 +311,7 @@ def main():
               '(supplement-chain, H214), %d already promoted; %d are true misses (absent everywhere)'
               % (payload['other_layer_hit_count'], payload['no_pwg_runnable_count'],
                  payload['no_pwg_promoted_count'], payload['true_miss_count']))
-    print('worklist written: %s' % OUT)
+    print('worklist written: %s' % out_path)
     if args.report:
         write_report(payload, args.report)
         print('coverage report written: %s' % args.report)

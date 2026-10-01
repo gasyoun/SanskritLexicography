@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # How to Use Corpora in Language Teaching (Studies in Corpus -- John McH Sinclair; John McHardy Sinclair -- John Benjamins Publishing Co_, Amsterdam, -- isbn13 9781282160491 -- 3588caa054ad44b8f47a1a3f131bd033 -- Anna
 
 **Source:** `How to Use Corpora in Language Teaching (Studies in Corpus -- John McH Sinclair; John McHardy Sinclair -- John Benjamins Publishing Co_, Amsterdam, -- isbn13 9781282160491 -- 3588caa054ad44b8f47a1a3f131bd033 -- Anna.pdf`  
@@ -13908,3 +13910,5 @@ ization in English. n.y.p.
 14. NESSELHAUF, Nadja: Collocations in a Learner Corpus. n.y.p.
 15. CRESTI, Emmanuela and Massimo MONEGLIA (eds.): C-ORAL-ROM: Integrated
 Reference Corpora for Spoken Romance Languages. n.y.p.
+
+_Dr. Mārcis Gasūns_

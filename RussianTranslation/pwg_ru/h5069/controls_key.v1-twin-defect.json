@@ -1,0 +1,61 @@
+{
+  "controls": [
+    {
+      "base_record_id": "pwg.tm.v1:exact-card:ru:c5b749b2ac1c1e99124e1465ee32be91bf514a6a8a7420e4970c778cc2c06bbb",
+      "expected_verdict": "addition",
+      "id": "H5069.control:pos:001",
+      "kind": "positive",
+      "original": "{%отелившаяся%}",
+      "packet_id": "H5069.item:37ef467dee908592cb68d976db022ae4",
+      "planted": "{%отелившаяся впервые%}",
+      "rationale": "German span is {%gekalbt habend%} = 'having calved'. It licenses no ordinality. The planted «впервые» ('for the first time') asserts a first calving — a zoological/ritual specificity absent from the source and unrecoverable from it. Fluent, short, and plausible: exactly the failure mode this audit exists to catch."
+    },
+    {
+      "base_record_id": "pwg.tm.v1:exact-card:ru:1ab1c6d35f2177c0f66e7745d23ef7d362bb05841f4daa38eef785810e67fcbf",
+      "expected_verdict": "faithful",
+      "id": "H5069.control:neg:001",
+      "kind": "negative",
+      "original": "{%не колеблясь%}",
+      "packet_id": "H5069.item:24c9382482d8a36599fda7f19215a525",
+      "planted": "{%без раздумий%}",
+      "rationale": "German span is {%ohne sich zu bedenken%} = 'without deliberating'. «без раздумий» and «не колеблясь» are both fully licensed renderings; the wording diverges from the published record but the assertion does not. Convicting this one means the reviewer is scoring surface difference, not source support."
+    }
+  ],
+  "generated": "2026-09-20",
+  "handoff": "H5069",
+  "packet_id_map": {
+    "H5069.item:05c8df4918a1bdc28c80bf17951e80de": "pwg.tm.v1:exact-card:ru:6c2a320deea070815e8b7bcc514a1b79dcbb133d7749606585d33ca80072db0e",
+    "H5069.item:05cd537b95034a3ff59d3b44d23ebdc0": "pwg.tm.v1:exact-card:ru:20810e6e8936a487c355a622befb7da8d7e46b9b846efafbda420fef13aa675e",
+    "H5069.item:14494edcefc4624149641271667e0211": "pwg.tm.v1:exact-card:ru:b9fa0fe720696c78ba3e17c00f2f98dceefff450842a16b8d935a772fc797a6d",
+    "H5069.item:236356fde29e7af1fe514d77c91f82f7": "pwg.tm.v1:exact-card:ru:a172722def8015326710159d4bb8d8262f96d58cc014243dbbaa6a9bb7156f42",
+    "H5069.item:24c9382482d8a36599fda7f19215a525": "H5069.control:neg:001",
+    "H5069.item:35d87f6fb91c1af39d6d28aed0de42be": "pwg.tm.v1:exact-card:ru:b11e71dd6389e65c23e997daf262d862d9d17b90382fb2a6268dc8ba15c591f6",
+    "H5069.item:37ef467dee908592cb68d976db022ae4": "H5069.control:pos:001",
+    "H5069.item:3b58d05f58bccf6ca4ac8c52cc4f594c": "pwg.tm.v1:exact-card:ru:2cd1b48f4dd5eb9a61e9eef5dedd2d7177ef299808577bb7cb59a898872a18e5",
+    "H5069.item:4990aa8b23a636119dd1ffe4c71c47dc": "pwg.tm.v1:exact-card:ru:6483d89d3899637380a6a03f5468e3ff2cce7b3cd381f31d31ab8491c4e35757",
+    "H5069.item:49d6056bbc21c91bc035f272b46afc43": "pwg.tm.v1:exact-card:ru:2c2cfdfdc12e596cf5ef8fa065c3a0454feb41149ab0467639fa44e9b6b72310",
+    "H5069.item:4b0ec71914c5c01d17795822b32d21c4": "pwg.tm.v1:exact-card:ru:1ab1c6d35f2177c0f66e7745d23ef7d362bb05841f4daa38eef785810e67fcbf",
+    "H5069.item:57a20ac99f1645d5cfbb662a1c1612ce": "pwg.tm.v1:exact-card:ru:2e7a61451023ecf7f593a2a521f0f0717cf938000ebf6aa2166118b5b5176042",
+    "H5069.item:66c6cf880434dffad250aa66b05e6a33": "pwg.tm.v1:exact-card:ru:f69aebe57dbc1076f11adb45d9e2bb0be050194b24b7f5467a3802dee59f0cdd",
+    "H5069.item:695ee14b488ea2025540961cc8f5c3d9": "pwg.tm.v1:exact-card:ru:f54d183b9571e8c55dad2fb451e1d6d08ca6132fd17cc1a944172995b67008e0",
+    "H5069.item:6c81ab851d12a529bb027edeb2b5cefa": "pwg.tm.v1:exact-fragment:ru:5a8d6f28b8ef4d16958cae446a2ac43295c983db5daca0ca2e484df086971fb7",
+    "H5069.item:72c4bc4d509df3b39e448a3859a250d2": "pwg.tm.v1:exact-card:ru:30226764f2c3caf41f3302793f4a7393f87258c043bf7803a73305a4ddcb27f3",
+    "H5069.item:74c30c26ca244759088660569c2e2430": "pwg.tm.v1:exact-card:ru:5f87d7ba5df9ac689c992132bd4e9cde3dcc4bb8add816c6764b44cd8ec06938",
+    "H5069.item:8000b5c88ea7a3c8b905dc7e2d8751e2": "pwg.tm.v1:exact-fragment:ru:00a3bb57cbf5d315072cc55ef06a913dd08912ca3f4fc2075e822cc50a40509d",
+    "H5069.item:84167da79f43606d23d1592157ba6966": "pwg.tm.v1:exact-card:ru:c5b749b2ac1c1e99124e1465ee32be91bf514a6a8a7420e4970c778cc2c06bbb",
+    "H5069.item:85be4e6aa6849db3e68f4a81fa440943": "pwg.tm.v1:exact-card:ru:d655bf049c89c2f9d160358eec78b454272aa2cb746e26391a5a06d9bf3b06be",
+    "H5069.item:86969d9acfa5d35e843dca82e49575f0": "pwg.tm.v1:exact-card:ru:4b5fd987d0945110751218ea74fb170ce76725945b52b6fa9f39eef7739f8a41",
+    "H5069.item:8c68d3127f876f9658f8e8da6f265771": "pwg.tm.v1:exact-card:ru:78ec5075c7a0bd8f94783c8940c4c7c7b227d1fcd5327cab6795c5954f072986",
+    "H5069.item:8cebaa7727ca4cab4011de33f24dfd8a": "pwg.tm.v1:exact-card:ru:082f5e20e478d9c9d728b05c573a4e71841e3cb08287ff97e19e2276072d3a3a",
+    "H5069.item:934c1af44fac88dfeb65a2a59f96ad94": "pwg.tm.v1:exact-card:ru:7aaed6a68941c199642e4f0039ec0ee0494ab6fcabab0eafa55ece52a8a03ece",
+    "H5069.item:a95c83afb0ac91986a4e55498a938bc3": "pwg.tm.v1:exact-card:ru:e6306eb63ae68438f5f5d7b695684f32720085530bce3d45456f04d2597d5508",
+    "H5069.item:b8302905777581e767216455213cfd72": "pwg.tm.v1:exact-card:ru:a085399cde883ad3d7d3ce9e54e526d9a04f036d2775b264b1eb88d11a5ce735",
+    "H5069.item:c56caf83a5df5403d8876c3861f250a9": "pwg.tm.v1:exact-card:ru:ce51eb9709b5f67fb8e87dfd788d304a22d548a378b819f7cf571c7d34a8515e",
+    "H5069.item:cabcfb640bd68759cc2e8774d0be7f16": "pwg.tm.v1:exact-card:ru:ecee6044cbc19776e5e31e6ae9b17397b6df1010577dfe9fa50bb7729df7a1ee",
+    "H5069.item:cb09c111369bd57c2610596aaf51e32a": "pwg.tm.v1:exact-card:ru:3cd870d3cb0225a652690b203157c8f0d0406a575bb4ffcaa45f61f985d2c64b",
+    "H5069.item:cd0e2ef11bac9d307eea21e485a98713": "pwg.tm.v1:exact-card:ru:9fd97fb29219baff39a21e01dc4e58426c39e8cc7e4815708f45cd2516a9b387",
+    "H5069.item:ce76878f75bbe143539b56a9bc2e873b": "pwg.tm.v1:exact-card:ru:11b94c0564a77d802f380e1340d51a5b179b9fc42a3f83300ad60391a44693e4",
+    "H5069.item:fc0240a6955e12f511904f63043c87b6": "pwg.tm.v1:exact-card:ru:9e4693af19acf80f4f0b9b2e6a90d0faa3d23688ae996aba7d3c90417b714f6d"
+  },
+  "sealed_until": "independent review recorded"
+}

@@ -27,7 +27,7 @@ rather than re-parsing DICO's anchor scheme from scratch.
 | `mw_heritage_crosswalk.tsv` rows resolved to a DICO anchor | 24,549 | — |
 | glosses extracted | 24,549 | **100.0 %** |
 | skipped (no matching span / empty gloss) | 0 | 0.0 % |
-| joined against kosha's `lemmas.slp1` (323,425 rows) | 24,543 | 99.98 % of gloss rows / **7.59 %** of `lemmas` |
+| joined against kosha's `lemmas.slp1` (323,422 rows) | 24,543 | 99.98 % of gloss rows / **7.59 %** of `lemmas` |
 
 The 6 gloss keys that don't join to `lemmas` are a residual key-normalisation
 mismatch, not a parse defect — out of scope for this handoff (kosha ingest is

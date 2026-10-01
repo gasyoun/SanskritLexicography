@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Windows autostart — PWG→RU dashboards
 
 _Created: 31-07-2026 · Last updated: 31-07-2026 (logon-only ruling)_

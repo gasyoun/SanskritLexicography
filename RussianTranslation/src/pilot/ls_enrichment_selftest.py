@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Fixture selftest for the H1307 <ls> link-enrichment (Pāṇini + Spr. (II)).
+"""Fixture selftest for the <ls> link-enrichment (H1307 Pāṇini + Spr. (II);
+H1333 DHĀTUP. -> Palsule; H4339 the Monier-Williams second coordinate witness).
 
 No network and no RU store are needed. The Pāṇini/edition-guard assertions are
 pure resolver logic; the Spr. (II) full-text lookup uses the tracked, public
@@ -8,6 +9,8 @@ only if that file is genuinely absent.
 
   python src/pilot/ls_enrichment_selftest.py
 """
+import io
+import json
 import os
 import sys
 
@@ -21,6 +24,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 import ls_resolver as lsr        # noqa: E402
 import pwg_sources as pwgsrc     # noqa: E402
 import spr_fulltext as spr       # noqa: E402
+import dhatup_palsule as dhp     # noqa: E402
 
 _PANINI = 'https://ashtadhyayi.com/sutraani'
 _BOESP2 = 'sanskrit-lexicon-scans.github.io/boesp2'
@@ -163,6 +167,680 @@ def test_h2005_ed_bomb_ru_display_not_resolve():
     # (guarded by construction: _ls_html calls _ls_href(..., vis) not display)
 
 
+def test_dhatup_palsule_coordinate_parse():
+    """H1333: both citation splittings normalize to the same `x,y` coordinate, and
+    a gaṇa-only `DHĀTUP.` (no serial) is NOT keyed — Palsule needs the root."""
+    if dhp.coord('', 'DHĀTUP. 26,91') != '26,91':
+        fail('DHĀTUP. 26,91 -> %r' % dhp.coord('', 'DHĀTUP. 26,91'))
+    if dhp.coord('DHĀTUP. 22,', '30.') != '22,30':
+        fail('continuation DHĀTUP. 22, + 30. -> %r' % dhp.coord('DHĀTUP. 22,', '30.'))
+    for bad in ('DHĀTUP.', 'DHĀTUP. 26', 'P. 7,4,71', 'Spr. (II) 2756'):
+        if dhp.coord('', bad) is not None:
+            fail('%r should not key a Palsule lookup, got %r' % (bad, dhp.coord('', bad)))
+
+
+def test_dhatup_palsule_lookup():
+    """H1333: the concordance resolves a coordinate to Palsule's artha glosses for the
+    root Böhtlingk numbers there.
+
+    The assertions use the artha PWG ITSELF prints in parentheses beside the citation —
+    `{#sni/hyati (prItO)#} <ls>DHĀTUP. 26,91</ls>` and `<ls>DHĀTUP. 22,30</ls>
+    ({#gatinivfttO#})` — because that is an independent witness of what the coordinate
+    means. (An earlier cut of this test asserted `snehane` / `sthāne`: both are in the
+    record, but neither is what PWG attests at that coordinate, so they pinned the
+    lookup without testing its correctness. H1333 verifier, 07-09-2026.)"""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_palsule_lookup (concordance absent)')
+        return
+    rec = dhp.record('', 'DHĀTUP. 26,91')
+    if not rec or rec.get('root_iast') != 'snih':
+        fail('DHĀTUP. 26,91 record: %r' % rec)
+    if 'prītau' not in (rec.get('arthas') or []):
+        fail('26,91 must carry PWG-attested prītau, got %r' % rec.get('arthas'))
+    rec2 = dhp.record('DHĀTUP. 22,', '30.')
+    if not rec2 or 'gatinivṛttau' not in (rec2.get('arthas') or []):
+        fail('22,30 must carry PWG-attested gatinivṛttau, got %r'
+             % (rec2 or {}).get('arthas'))
+    # aṅg 5,38: PWG's German gloss «gehen» = gatau.
+    rec3 = dhp.record('', 'DHĀTUP. 5,38')
+    if not rec3 or 'gatau' not in (rec3.get('arthas') or []):
+        fail('5,38 aṅg must carry gatau, got %r' % (rec3 or {}).get('arthas'))
+    tip = dhp.palsule_for('', 'DHĀTUP. 26,91')
+    if not tip or 'Palsule √snih' not in tip or 'P175' not in tip:
+        fail('tooltip: %r' % tip)
+    # NEVER a fabricated href: Palsule has no online edition, the datum is text.
+    if 'http' in tip:
+        fail('Palsule tooltip must not carry a URL: %r' % tip)
+    # A coordinate Böhtlingk lists under two root spellings is DROPPED, not guessed.
+    # 2,8 (skand/skund) stays dropped after H4339 as well, and for a reason worth
+    # knowing: MW's Westergaard field DOES number it (`skudi,2.8`), but `skudi` carries
+    # the nasal as an anubandha-marked infix, so the article headword is not contained
+    # in it and the claimant test — deliberately containment, never a stripping rule
+    # (H328) — declines to confirm. A conservative miss, not a resolution.
+    if dhp.record('', 'DHĀTUP. 2,8') is not None:
+        fail('conflicted coordinate 2,8 must not resolve')
+
+
+def test_dhatup_palsule_record_is_complete_and_clean():
+    """H1333 verifier fixes: `arthas` is stored in FULL (an 8-item cut silently dropped
+    bhū's canonical `sattāyām` from DHĀTUP. 1,1 while artha_count still said 11), and no
+    displayed root carries the footnote digits the XLS captured (`gādh39`)."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_palsule_record_is_complete_and_clean')
+        return
+    import re as _re
+    rec = dhp.record('', 'DHĀTUP. 1,1')
+    if not rec or rec.get('root_iast') != 'bhū':
+        fail('1,1 record: %r' % rec)
+    if 'sattāyām' not in (rec.get('arthas') or []):
+        fail('bhū 1,1 must carry sattāyām, got %r' % rec.get('arthas'))
+    if len(rec['arthas']) != rec['artha_count']:
+        fail('arthas truncated: %d stored vs artha_count %d'
+             % (len(rec['arthas']), rec['artha_count']))
+    for coord, r in dhp._load().items():
+        if _re.search(r'\d$', r.get('palsule_root') or ''):
+            fail('%s: footnote digits leaked into palsule_root %r'
+                 % (coord, r['palsule_root']))
+
+
+def test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg():
+    """H4339: the MW second witness may ADD coordinates, never rewrite Böhtlingk's.
+
+    Three separable claims, each of which would be a real defect if it failed:
+      1. every row declares a provenance the consumer knows how to read;
+      2. the PWG-derived row count still equals H1333's shipped number, so the MW pass
+         demonstrably added rows instead of moving existing ones;
+      3. where the two dictionaries disagree, a row Böhtlingk attributed keeps HIS root.
+         MW's dissent is published for adjudication, never acted on. The one case where
+         MW's spelling does ship is `mw-respell` — Palsule has no entry under
+         Böhtlingk's spelling, so there was no PWG row to displace — and such a row must
+         still carry `pwg_root_slp1`, so the reading it set aside stays recoverable."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg')
+        return
+    import json as _json
+    table = dhp._load()
+    st = dhp.stats()
+    known = set(dhp._SOURCE_MARK)
+    seen = {}
+    for c, r in table.items():
+        src = r.get('source')
+        if src not in known:
+            fail('%s: unknown provenance %r (known: %s)' % (c, src, sorted(known)))
+        seen[src] = seen.get(src, 0) + 1
+    if seen.get('pwg') != st.get('coords_linked_pwg'):
+        fail('pwg rows %r != _stats.coords_linked_pwg %r'
+             % (seen.get('pwg'), st.get('coords_linked_pwg')))
+    if seen.get('mw') != st.get('coords_filled_from_mw'):
+        fail('mw rows %r != _stats.coords_filled_from_mw %r'
+             % (seen.get('mw'), st.get('coords_filled_from_mw')))
+    if len(table) != st.get('coords_linked'):
+        fail('table size %d != _stats.coords_linked %r' % (len(table), st['coords_linked']))
+
+    with open(dhp._JSON, encoding='utf-8') as f:
+        payload = _json.load(f)
+    dis = payload.get('_mw_disagreements')
+    if not dis:
+        fail('_mw_disagreements must be published, not summarized away')
+    for d in dis:
+        for k in ('coord', 'pwg_root_slp1', 'mw_root_slp1', 'shape', 'shipped_reading'):
+            if not d.get(k):
+                fail('disagreement %r missing %s' % (d.get('coord'), k))
+        row = table.get(d['coord'])
+        if row is None:
+            if d['shipped_reading'] != 'dropped':
+                fail('%s: shipped_reading %r but no row' % (d['coord'], d['shipped_reading']))
+            continue
+        if row['source'] == 'pwg' and row['root_slp1'] != d['pwg_root_slp1']:
+            fail('%s: MW overrode a PWG row (%r shipped, PWG says %r)'
+                 % (d['coord'], row['root_slp1'], d['pwg_root_slp1']))
+        if row['source'] == 'mw':
+            fail('%s: a disputed coordinate cannot be a pure MW fill — PWG named a root'
+                 % d['coord'])
+        if row['source'] == 'mw-respell' and not row.get('pwg_root_slp1'):
+            fail('%s: mw-respell row must keep the PWG reading it set aside' % d['coord'])
+        if row['source'] != d['shipped_reading']:
+            fail('%s: shipped_reading %r != row source %r'
+                 % (d['coord'], d['shipped_reading'], row['source']))
+
+
+def test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg():
+    """H4349: pw is screened as the SAME AUTHOR, and today it fills nothing.
+
+    The first cut of this pass treated pw as an independent witness, the way H4339
+    treats MW, and shipped two rows an independent verifier refuted: `32,56 → cukk`
+    (PWG splits that coordinate between `cakk` and a `v. l.` `cikk`, and puts `cukk` at
+    `34,21`) and `33,67 → tras` (PWG never cites `33,67`; the identical article is its
+    `33,88`). Both are now refused by screens this test pins:
+      1. the coverage totals in `_stats` add up to the table actually shipped;
+      2. no shipped coordinate lies outside the set PWG cites — `match_rate` divides by
+         that set, so a row outside it is counted against a denominator excluding it;
+      3. any `pw` row that ever does ship fills a gap and carries its own provenance;
+      4. `1,840` and `1,960` are REFUSED and PUBLISHED with the ceiling they failed.
+         PWG and MW cite gaṇa 1 only as `1,1`, so a gaṇa-1 serial of 840 is a
+         citation-split artifact. A build that quietly shipped OR quietly dropped them
+         fails here."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg')
+        return
+    import json as _json
+    table = dhp._load()
+    st = dhp.stats()
+
+    for coord in ('32,56', '33,67'):
+        if coord in table:
+            fail('%s was refuted by an independent verifier and must not ship: %r'
+                 % (coord, table[coord].get('root_slp1')))
+    if st.get('coords_filled_from_pw') != 0:
+        fail('pw filled %r coordinates; every candidate is currently refused by the '
+             'same-book, membership or ceiling screen — a new fill needs adjudicating'
+             % st.get('coords_filled_from_pw'))
+    pw_rows = {c: r for c, r in table.items() if r['source'] == 'pw'}
+    if len(pw_rows) != st.get('coords_filled_from_pw'):
+        fail('pw rows %d != _stats.coords_filled_from_pw %r'
+             % (len(pw_rows), st.get('coords_filled_from_pw')))
+    if st.get('coords_linked') != len(table):
+        fail('_stats.coords_linked %r != table size %d'
+             % (st.get('coords_linked'), len(table)))
+    expected = (st.get('coords_linked_after_mw', 0)
+                + st.get('coords_filled_from_pw', 0)
+                + st.get('coords_filled_from_pwg-dotted', 0))
+    if expected != len(table):
+        fail('H4339 rows + H4349 fills = %d, table has %d' % (expected, len(table)))
+
+    with open(dhp._JSON, encoding='utf-8') as f:
+        payload = _json.load(f)
+    for c, r in pw_rows.items():
+        if r.get('pwg_root_slp1'):
+            fail('%s: a pw row displaced a PWG attribution (%r)'
+                 % (c, r['pwg_root_slp1']))
+        if not r.get('pw_root_slp1') or not r.get('arthas'):
+            fail('%s: pw row missing its provenance root or its Palsule arthas' % c)
+
+    out = payload.get('_out_of_coordinate_space')
+    if not out:
+        fail('_out_of_coordinate_space must be published, not netted out')
+    for x in out:
+        if x['coord'] in table:
+            fail('%s was refused as out-of-space and shipped anyway' % x['coord'])
+        if not x.get('attested_ceiling') or x['serial'] <= x['attested_ceiling']:
+            fail('%s: refused without a ceiling that explains the refusal (%r)'
+                 % (x['coord'], x.get('attested_ceiling')))
+    if {x['coord'] for x in out} != {'1,840', '1,960'}:
+        fail('out-of-space set moved: %r' % sorted(x['coord'] for x in out))
+
+
+def test_dhatup_pwg_dotted_class_is_measured_and_empty():
+    """H4349: PWG's 636 dotted-id articles cite ONE coordinate, and it ships nothing.
+
+    This pins a negative result, which is the only kind of result that rots silently.
+    The `_L` pattern H1333 measured PWG on accepts an all-digit `<L>` id, so 636 of
+    PWG's articles are invisible to it; the widened pass exists to say how much that
+    hides. The answer is one coordinate — `15,89`, claimed by `4. kar` — and PWG
+    already contests it (`<L>18794` heads it `kfv`, and Böhtlingk's own prose there
+    says the root is `kṛv`, placed under `kar`, its final `-v` unjustified). A
+    same-book pass may not break a tie its own book declared, so it is refused.
+
+    If a corpus update ever puts real coordinates into that id space, `coords_cited`
+    moves and this test fails — which is the point. It is not asserting that the class
+    is worthless; it is asserting that today's emptiness is measured, not assumed."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_pwg_dotted_class_is_measured_and_empty')
+        return
+    st = dhp.stats()
+    if st.get('pwg-dotted_articles') != 636:
+        fail('dotted-id article count moved: %r (was 636)'
+             % st.get('pwg-dotted_articles'))
+    if st.get('pwg-dotted_coords_cited') != 1:
+        fail('dotted-id articles now cite %r coordinates, not 1 — re-adjudicate before '
+             'trusting the class' % st.get('pwg-dotted_coords_cited'))
+    if st.get('coords_filled_from_pwg-dotted'):
+        fail('the dotted-id class shipped %r rows; it must ship none until the one '
+             'contested coordinate is adjudicated'
+             % st.get('coords_filled_from_pwg-dotted'))
+    if st.get('pw_refused_same_book_conflict') != 16:
+        fail('pw same-book refusals moved: %r (was 16 after H4438; 11 before it)'
+             % st.get('pw_refused_same_book_conflict'))
+    if st.get('pw_refused_not_cited_by_pwg') != 3:
+        fail('pw membership refusals moved: %r (was 3)'
+             % st.get('pw_refused_not_cited_by_pwg'))
+    if st.get('pwg-dotted_refused_same_book_conflict') != 1:
+        fail('15,89 must be refused by the same-book guard, not by accident: %r'
+             % st.get('pwg-dotted_refused_same_book_conflict'))
+    if any(r['source'] == 'pwg-dotted' for r in dhp._load().values()):
+        fail('a pwg-dotted row is in the table but _stats says none were filled')
+    if 'pwg-dotted' not in dhp._SOURCE_MARK:
+        fail('the pwg-dotted siglum must be registered so a future row renders marked')
+
+
+def test_dhatup_sibling_screens_are_mandatory_not_opt_in():
+    """H4386: a sibling pass constructed without the screens RAISES rather than ships.
+
+    Both screens used to be keyword arguments defaulting to `frozenset()`, and the
+    membership screen was written `if pwg_cited and coord not in pwg_cited`, so
+    forgetting either one produced a silently UNSCREENED pass — which is not a
+    hypothetical failure mode but the one H4349 actually shipped in PR #2148, where
+    `same_book_conflicted` reached the `pwg-dotted` call and not the `pw` call and
+    `32,56 → cukk` went into the artifact against both pwg and mw.
+
+    Three things are pinned, because each is a different way back to the permissive
+    state: omitting a screen is a TypeError (keyword-only and defaultless); passing the
+    OLD default explicitly is a ValueError for `pwg_cited`, whose empty set used to
+    mean "screen off" rather than "screen against nothing"; and a non-set
+    `same_book_conflicted` is a TypeError rather than a silently non-membership-testing
+    object. No corpora and no artifact are needed — this is a signature contract."""
+    import build_dhatup_palsule as bld   # noqa: E402
+    import inspect
+
+    sig = inspect.signature(bld._sibling_pass)
+    for name in ('same_book_conflicted', 'pwg_cited'):
+        p = sig.parameters[name]
+        if p.default is not inspect.Parameter.empty:
+            fail('_sibling_pass.%s has default %r — a caller that forgets it gets an '
+                 'unscreened pass, which is how 32,56 shipped' % (name, p.default))
+        if p.kind is not inspect.Parameter.KEYWORD_ONLY:
+            fail('_sibling_pass.%s must be keyword-only so it cannot be supplied by '
+                 'position and mistaken for the other screen' % name)
+
+    args = ('pw', {'1,1': {}}, 1, 'pw.txt', {}, {}, {}, {1: 1})
+    try:
+        bld._sibling_pass(*args)
+    except TypeError:
+        pass
+    else:
+        fail('_sibling_pass ran with no screens at all')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset())
+    except TypeError:
+        pass
+    else:
+        fail('_sibling_pass ran without pwg_cited')
+    try:
+        bld._sibling_pass(*args, pwg_cited=frozenset({'1,1'}))
+    except TypeError:
+        pass
+    else:
+        fail('_sibling_pass ran without same_book_conflicted')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset(),
+                          pwg_cited=frozenset())
+    except ValueError:
+        pass
+    else:
+        fail('an EMPTY pwg_cited was accepted — that is the old permissive path under '
+             'a new name: every coordinate admitted, including ones outside the '
+             'denominator match_rate divides by')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=None,
+                          pwg_cited=frozenset({'1,1'}))
+    except TypeError:
+        pass
+    else:
+        fail('same_book_conflicted=None was accepted as a screen')
+
+    # THE TWO ROUTES AN ADVERSARIAL VERIFIER FOUND STILL OPEN after the first H4386 cut,
+    # and the reason they matter more than the signature: the shipped H4349 defect was
+    # never a MISSING argument. It was a CALL SITE passing the permissive value — the
+    # same-book screen reached the `pwg-dotted` call and not the `pw` one — and a
+    # defaultless signature cannot see that.
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=frozenset(),
+                          pwg_cited=frozenset({'1,1'}))
+    except ValueError:
+        pass
+    else:
+        fail('an EMPTY same_book_conflicted was accepted. The first cut checked '
+             'pwg_cited only, and a verifier rebuilt with this exact call and shipped '
+             '32,56 → cukk — the H4349 defect reproduced against the hardened code')
+
+    class _AlwaysContains(object):
+        def __contains__(self, item):
+            return True
+
+        def __bool__(self):
+            return True
+
+    for bogus in (_AlwaysContains(), ['1,1'], {'1,1': True}):
+        try:
+            bld._sibling_pass(*args, same_book_conflicted=frozenset({'9,9'}),
+                              pwg_cited=bogus)
+        except TypeError:
+            continue
+        fail('pwg_cited=%r was accepted: `if not pwg_cited` is a truthiness test, not a '
+             'screening-space test, so an always-contains object screens nothing while '
+             'looking non-empty' % type(bogus).__name__)
+
+    # The one sanctioned exemption is named, so it is greppable at every call site.
+    if not isinstance(bld.NO_SAME_BOOK_CONFLICTS, frozenset):
+        fail('NO_SAME_BOOK_CONFLICTS must be a frozenset the screen logic can use')
+    if bld.NO_SAME_BOOK_CONFLICTS:
+        fail('NO_SAME_BOOK_CONFLICTS must be empty — it is an exemption, not a set')
+    try:
+        bld._sibling_pass(*args, same_book_conflicted=bld.NO_SAME_BOOK_CONFLICTS,
+                          pwg_cited=frozenset({'1,1'}))
+    except ValueError:
+        fail('the named exemption must be accepted where a bare frozenset() is not — '
+             'otherwise a different-author source has no way to say so')
+    except TypeError:
+        fail('the named exemption tripped the type check')
+
+
+def test_dhatup_artifact_is_pinned_to_its_builder():
+    """H4386: a stale artifact committed beside a changed builder fails here.
+
+    Nothing used to connect `src/data/dhatup_palsule.json` to the code that wrote it.
+    This selftest reads only the JSON and `dhatup_h4349_verify.py` reads the JSON plus
+    the corpora; neither rebuilds, so a hand-edited or stale artifact stayed green and
+    H4349's verifier had to rebuild manually to establish that the two agreed. The
+    builder now stamps the sha256 of its own source into `_stats.builder_sha256`, and
+    this recomputes it from the committed file — corpus-free, so it runs everywhere CI
+    does.
+
+    What it does NOT claim: that the artifact is what the builder would produce from
+    today's corpora. It says the artifact came from THIS code. A corpus change moves
+    the counts, and that is what the corpus-backed checks in `dhatup_h4349_verify.py`
+    are for. Failing here means: rebuild (`python src/build_dhatup_palsule.py`) and
+    commit the artifact together with the builder change."""
+    import hashlib
+    if not dhp.available():
+        print('  .. skipped test_dhatup_artifact_is_pinned_to_its_builder')
+        return
+    builder = os.path.join(SRC, 'build_dhatup_palsule.py')
+    if not os.path.exists(builder):
+        fail('the builder is missing at %s — the artifact has nothing to be pinned to'
+             % builder)
+    with open(builder, 'rb') as f:
+        digest = hashlib.sha256(f.read()).hexdigest()
+    stamped = dhp.stats().get('builder_sha256')
+    if not stamped:
+        fail('_stats.builder_sha256 is absent: the artifact predates the H4386 pin, '
+             'so nothing proves which code wrote it. Rebuild.')
+    if stamped != digest:
+        fail('the artifact was built by a DIFFERENT build_dhatup_palsule.py '
+             '(stamped %s…, committed file %s…). Rebuild and commit both together, or '
+             'the JSON is stale.' % (stamped[:12], digest[:12]))
+
+
+def test_dhatup_pw_refusal_split_matches_the_published_table():
+    """H4386: all six published pw refusal terms and their sum are pinned.
+
+    `ABBREVIATIONS_RU.md` publishes pw's 40 citations as 12 nominal-head / 4 body-only
+    / 11 same-book-conflicted / 3 not-cited-by-PWG / 2 out-of-coordinate-space / 8
+    surviving every screen. Only two of those six were asserted anywhere, so the doc
+    could drift from `_stats` in silence — and an earlier version of that table summed
+    to 42 against its own header of 40, which is exactly the drift this catches.
+
+    The sum is asserted as a PARTITION, not as an accident of six numbers: every one of
+    pw's cited coordinates leaves the screen chain through exactly one bucket, so the
+    eight buckets (the six published ones plus the two that are empty today,
+    multiple-claimants and variant-reading) must add to `pw_coords_cited`. A future
+    screen that forgets to count its refusals fails here even if every published number
+    still looks right."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_pw_refusal_split_matches_the_published_table')
+        return
+    st = dhp.stats()
+    published = {
+        'pw_refused_nominal_head': 11,
+        'pw_refused_body_only': 3,
+        'pw_refused_same_book_conflict': 16,
+        'pw_refused_not_cited_by_pwg': 3,
+        'pw_refused_out_of_coordinate_space': 2,
+        'pw_coords_single_verbal_claimant': 6,
+    }
+    for key, want in sorted(published.items()):
+        if st.get(key) != want:
+            fail('%s is %r, ABBREVIATIONS_RU.md publishes %d — one of the two is now '
+                 'wrong; re-adjudicate before changing either' % (key, st.get(key), want))
+    if sum(published.values()) != 41:
+        fail('the published split no longer sums to 41: %r' % published)
+    if st.get('pw_coords_cited') != 41:
+        fail('pw now cites %r coordinates, not the published 41' % st.get('pw_coords_cited'))
+    buckets = dict(published)
+    buckets['pw_refused_multiple_claimants'] = st.get('pw_refused_multiple_claimants')
+    buckets['pw_refused_variant_reading'] = st.get('pw_refused_variant_reading')
+    total = sum(v for v in buckets.values() if isinstance(v, int))
+    if total != st.get('pw_coords_cited'):
+        fail('the screen chain is not a partition: buckets %r sum to %d, pw cites %r'
+             % (buckets, total, st.get('pw_coords_cited')))
+    # The 6 survivors ship nothing, and the reason is itemised rather than netted:
+    # 5 coordinates the table already holds, 1 whose root Palsule does not gloss.
+    # (8 = 7 + 1 before H4438: two of pw's survivors became same-book conflicts once
+    # PWG's third citation form let PWG resolve the same coordinates itself.)
+    if st.get('coords_filled_from_pw') != 0:
+        fail('pw now fills %r coordinates; the published table says 0 shipped'
+             % st.get('coords_filled_from_pw'))
+    if st.get('pw_candidates_without_palsule_row') != 1:
+        fail('pw survivors without a Palsule row moved: %r (was 1)'
+             % st.get('pw_candidates_without_palsule_row'))
+    already = (published['pw_coords_single_verbal_claimant']
+               - st.get('pw_candidates_without_palsule_row', 0)
+               - st.get('coords_filled_from_pw', 0))
+    if already != 5:
+        fail('survivors already in the table: %d, published reasoning says 5' % already)
+
+
+def test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349():
+    """The shipped composition stays derivable FROM the artifact.
+
+    Not a rebuild — the selftest has no corpus — but the weaker claim that still
+    catches a silent drift: the per-source split, the artha-accuracy pair and the row
+    total must be readable off `_stats` and must match the table row by row.
+
+    H4438 MOVED EVERY NUMBER HERE, and the reason is one line long: PWG writes its
+    dhātupāṭha citations in THREE forms and this concordance read two. Admitting
+    `<ls n="DHĀTUP.">4,13</ls>` (320 occurrences, 270 coordinates, 141 cited no other
+    way) grew the denominator from 1751 to 1890 and the table from 1465 to 1573.
+    83.7% and 83.2% are NOT COMPARABLE — different denominators, and the second is the
+    better table: over the same change, agreement with Monier-Williams, the one
+    independent witness here, rose 77.7% -> 80.1% and `mw_only_coords` fell 124 -> 33.
+    Do not "restore" a number in this function without rebuilding.
+    """
+    if not dhp.available():
+        print('  .. skipped test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349')
+        return
+    table = dhp._load()
+    st = dhp.stats()
+    counts = {}
+    for r in table.values():
+        counts[r['source']] = counts.get(r['source'], 0) + 1
+    if counts.get('pwg') != 1302:
+        fail('PWG-derived rows moved: %r, not the 1302 H4438 shipped' % counts.get('pwg'))
+    if (st.get('inline_artha_agree'), st.get('inline_artha_examined')) != (147, 250):
+        fail('artha accuracy moved: %r of %r'
+             % (st.get('inline_artha_agree'), st.get('inline_artha_examined')))
+    if (counts.get('mw'), counts.get('mw-respell')) != (178, 93):
+        fail('MW composition moved: mw=%r mw-respell=%r'
+             % (counts.get('mw'), counts.get('mw-respell')))
+    if len(table) != 1573:
+        fail('the shipped table is %d rows, not the 1573 H4438 built' % len(table))
+    if st.get('coords_linked_after_mw') != 1302 + 178 + 93:
+        fail('_stats.coords_linked_after_mw %r != the 1573 rows shipped'
+             % st.get('coords_linked_after_mw'))
+    if (st.get('coords_cited'), st.get('match_rate')) != (1890, 83.2):
+        fail('the denominator or the rate moved: %r cited, %r%% — 83.7%% was 1465/1751 '
+             'over two citation forms and is RETIRED'
+             % (st.get('coords_cited'), st.get('match_rate')))
+    if st.get('cross_agreement_rate') != 80.1:
+        fail('agreement with the independent witness moved: %r%% (H4438 shipped 80.1, '
+             'up from 77.7) — that number is why the smaller coverage rate is an '
+             'improvement, so it may not drift silently'
+             % st.get('cross_agreement_rate'))
+
+
+def test_dhatup_h4438_third_citation_form_refusals_are_published():
+    """H4438. The third citation form spells `DHĀTUP.` in an ATTRIBUTE, so a gaṇa can be
+    carried over from the citation before it — PWG's `<ls n="DHĀTUP.">27,71</ls>` is
+    MW's `xxvi, 71`. Two coordinates arrived that way above everything their gaṇa's
+    spelled-out citations attest, with no MW to confirm either, and both are refused
+    BEFORE resolution so they never enter the denominator.
+
+    Pinned here because a refusal nobody can inspect is a refusal a reader must take on
+    trust: each row carries the ceiling it failed and who claimed it."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_h4438_third_citation_form_refusals_are_published')
+        return
+    st = dhp.stats()
+    # The published refusal lists are payload keys, not `_stats`, and `dhp` only
+    # exposes the table and the stats — read the artifact directly.
+    payload = json.load(io.open(dhp._JSON, encoding='utf-8'))
+    if st.get('coords_refused_form_c_out_of_space') != 2:
+        fail('the form-C ceiling screen refuses %r coordinates, not the adjudicated 2'
+             % st.get('coords_refused_form_c_out_of_space'))
+    rows = (payload or {}).get('_refused_form_c_out_of_space')
+    if rows is None:
+        return
+    if sorted(r['coord'] for r in rows) != ['27,71', '6,113']:
+        fail('the refused coordinates moved: %r — 6,113 is Böhtlingk\'s own '
+             'Bhartṛhari locus, 27,71 is MW\'s 26,71 with the gaṇa carried forward'
+             % sorted(r['coord'] for r in rows))
+    for r in rows:
+        if not isinstance(r.get('spelled_out_ceiling'), int) or not r.get('claimants'):
+            fail('refusal %r ships without the ceiling or the claimants that explain it'
+                 % r)
+
+
+def test_dhatup_h4438_sole_nominal_head_claimants_are_refused():
+    """H4438. A coordinate whose ONLY head-line claimant is a `<lex>` noun article used
+    to win untested: 23,39 shipped as spardhā off an article that says in so many words
+    the coordinate is `als Bed. von {#hvA#}`. Six such coordinates are now refused and
+    the winner is whatever single verbal claimant remains, or nothing."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_h4438_sole_nominal_head_claimants_are_refused')
+        return
+    st = dhp.stats()
+    if st.get('coords_sole_nominal_head_dropped') != 6:
+        fail('the sole-nominal screen drops %r coordinates, not the adjudicated 6'
+             % st.get('coords_sole_nominal_head_dropped'))
+    # The published refusal lists are payload keys, not `_stats`, and `dhp` only
+    # exposes the table and the stats — read the artifact directly.
+    payload = json.load(io.open(dhp._JSON, encoding='utf-8'))
+    rows = (payload or {}).get('_dropped_sole_nominal_head')
+    if rows is None:
+        return
+    got = sorted((r['coord'] for r in rows), key=lambda c: [int(x) for x in c.split(',')])
+    if got != ['7,3', '19,54', '20,27', '23,39', '32,109', '33,73']:
+        fail('the refused nominal head claimants moved: %r' % got)
+    if '23,39' not in got:
+        fail('23,39 -> spardhā is the case this screen was built for and it is not here')
+
+
+def test_dhatup_mw_tooltip_marks_the_second_witness():
+    """H4339: a reader can tell a Böhtlingk attribution from an MW one at a glance.
+
+    2,19 (ūrd/urd — Böhtlingk spells it both ways and claims neither) is MW-derived and
+    must carry `[MW]`; 26,91 (snih) is Böhtlingk's own and must stay unmarked."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_mw_tooltip_marks_the_second_witness')
+        return
+    rec = dhp.record('', 'DHĀTUP. 2,19')
+    if not rec or rec.get('source') != 'mw':
+        print('  .. skipped: 2,19 is not MW-derived in this build (%r)'
+              % (rec or {}).get('source'))
+        return
+    tip = dhp.palsule_for('', 'DHĀTUP. 2,19')
+    if '[MW]' not in (tip or ''):
+        fail('MW-derived tooltip must mark its witness: %r' % tip)
+    if 'http' in (tip or ''):
+        fail('no fabricated href, MW rows included: %r' % tip)
+    plain = dhp.palsule_for('', 'DHĀTUP. 26,91')
+    if 'MW' in (plain or ''):
+        fail('a PWG-attributed tooltip must carry no MW mark: %r' % plain)
+
+
+def test_dhatup_roman_gana_reading():
+    """H4339: MW writes Böhtlingk's gaṇa as a Roman numeral, and the whole range 1–35
+    must read back exactly — an off-by-one here silently files a root under the wrong
+    gaṇa, which no later check would catch."""
+    sys.path.insert(0, SRC)
+    import build_dhatup_palsule as bld   # noqa: E402
+    for roman, want in (('i', 1), ('iv', 4), ('v', 5), ('ix', 9), ('x', 10),
+                        ('xxiv', 24), ('xxxiii', 33), ('xxxv', 35), ('XXVI', 26)):
+        got = bld.roman_to_int(roman)
+        if got != want:
+            fail('roman_to_int(%r) = %r, want %r' % (roman, got, want))
+    for bad in ('', 'abc', '26'):
+        if bld.roman_to_int(bad) is not None:
+            fail('roman_to_int(%r) should be None' % bad)
+
+
+def test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim():
+    """H4339 adjudication (07-09-2026): a prose citation on a `<ab>v.l.</ab>` line
+    states which reading MW REJECTS, so harvesting it inverts the source.
+
+    Coordinate 20,21 is the case that shipped wrong and was caught by the independent
+    verifier. MW's article reads, in full:
+
+        <hom>1.</hom> <s>kzal</s> ¦ <ab>v.l.</ab> for √ <s>kzar</s>, <ls>Dhātup. xx, 21</ls>.
+
+    PWG could not choose between `kzal` and `kzar`, no `<info westergaard>` numbers
+    20,21 anywhere, so the prose fallback ran — and filled the coordinate with `kzal`,
+    the one root that sentence disowns. Both roots are in Palsule, so the wrong one was
+    reachable. The coordinate is now DROPPED rather than guessed: MW attributes it to
+    `kzar` in words the parser does not read, and inventing that attribution would be
+    the fabrication this file exists to prevent."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_mw_variant_reading (concordance absent)')
+        return
+    # 32,130 is the depth case: the `)` closes the parenthesis the note itself sits in,
+    # so it ends nothing and the note still governs the citation after it. PWG agrees —
+    # its `paRq` article says `v. l. für {#piRq#}` and its `piRqay` article attributes
+    # 32,130 positively — so shipping `paṇḍ` was a root BOTH dictionaries disown.
+    for coord, away_to in (('20,21', 'kṣar'), ('32,43', 'tāḍ'), ('32,130', 'piṇḍ')):
+        rec = dhp.record('', 'DHĀTUP. %s' % coord)
+        if rec is not None and rec.get('source') in ('mw', 'mw-respell'):
+            fail('%s shipped from MW as %r — MW\'s own sentence assigns it to %s and '
+                 'names this root the rejected reading'
+                 % (coord, rec.get('palsule_root'), away_to))
+
+    # ...AND THE INVERSE MUST SURVIVE. A first, line-scoped version of the guard read
+    # any `v.l.` on the line as disqualifying and so destroyed two correct rows. Which
+    # side of the citation the note sits on is what it means:
+    #   juq  `<ls n="Dhātup. xxviii,">37</ls> (<ab>v.l.</ab> √ <s>jun</s>)`   note AFTER
+    #        -> 28,37 is the headword's, `jun` is the variant. Must SHIP.
+    #   dAs  `(<ab>v.l.</ab> for <s>dAS</s>, <ls>Vop.</ls>; <ab>ib.</ab> <ls>xxvii, 32</ls>)`
+    #        -> a `;` ends the note's clause, so it governs the Vop. citation, not this
+    #        one. 27,32 agrees with Böhtlingk and must stay in the cross-validation.
+    juq = dhp.record('', 'DHĀTUP. 28,37')
+    if not juq or juq.get('source') != 'mw':
+        fail('28,37 must ship from MW (the v.l. note follows the citation and names '
+             'the OTHER root) — got %r' % (juq and juq.get('source')))
+    das = dhp.record('', 'DHĀTUP. 27,32')
+    if not das or das.get('source') != 'pwg':
+        fail('27,32 must keep Böhtlingk\'s own attribution — got %r'
+             % (das and das.get('source')))
+    st = dhp.stats()
+    if not st.get('mw_prose_claims_refused_variant_reading'):
+        fail('the v.l. refusal is not being counted — %r'
+             % st.get('mw_prose_claims_refused_variant_reading'))
+    # The prose-only fills are the weak branch and must stay a published, small number:
+    # if this ever approaches the field-backed count, the field-first rule has stopped
+    # being what the coverage rests on.
+    prose_only = st.get('coords_filled_from_mw_prose_only')
+    total_mw = (st.get('coords_filled_from_mw', 0)
+                + st.get('coords_filled_from_mw_respell', 0))
+    if prose_only is None or prose_only > total_mw * 0.25:
+        fail('prose-only fills %r of %r MW fills — the fallback is carrying the pass'
+             % (prose_only, total_mw))
+
+
+def test_dhatup_palsule_wired_into_tooltip():
+    """H1333: the shared _ls_tooltip layer (which the H1301 review sheets reuse)
+    returns the Palsule enrichment, and a non-DHĀTUP. citation is unaffected."""
+    if not dhp.available():
+        print('  .. skipped test_dhatup_palsule_wired_into_tooltip (concordance absent)')
+        return
+    sys.path.insert(0, HERE)
+    import build_article_site as bas   # noqa: E402
+    got = bas._ls_tooltip('n="DHĀTUP. 26,"', '91')
+    if not got or 'Palsule √snih' not in got:
+        fail('_ls_tooltip DHĀTUP. -> %r' % got)
+    # gaṇa-only DHĀTUP. falls back to the pwgbib source title, never to Palsule
+    plain = bas._ls_tooltip('', 'DHĀTUP.')
+    if plain and 'Palsule' in plain:
+        fail('gaṇa-only DHĀTUP. must not carry a Palsule record: %r' % plain)
+
+
 def main():
     tests = [
         test_panini_full_form,
@@ -172,6 +850,22 @@ def main():
         test_spr_second_ed_number,
         test_spr_fulltext_lookup,
         test_h2005_ed_bomb_ru_display_not_resolve,
+        test_dhatup_palsule_coordinate_parse,
+        test_dhatup_palsule_lookup,
+        test_dhatup_palsule_record_is_complete_and_clean,
+        test_dhatup_mw_provenance_is_stamped_and_never_overrides_pwg,
+        test_dhatup_mw_tooltip_marks_the_second_witness,
+        test_dhatup_roman_gana_reading,
+        test_dhatup_mw_variant_reading_is_never_harvested_as_a_claim,
+        test_dhatup_palsule_wired_into_tooltip,
+        test_dhatup_pw_sibling_is_screened_and_never_displaces_pwg,
+        test_dhatup_pwg_dotted_class_is_measured_and_empty,
+        test_dhatup_h1333_and_h4339_baselines_are_readable_after_h4349,
+        test_dhatup_sibling_screens_are_mandatory_not_opt_in,
+        test_dhatup_artifact_is_pinned_to_its_builder,
+        test_dhatup_pw_refusal_split_matches_the_published_table,
+        test_dhatup_h4438_third_citation_form_refusals_are_published,
+        test_dhatup_h4438_sole_nominal_head_claimants_are_refused,
     ]
     for t in tests:
         t()

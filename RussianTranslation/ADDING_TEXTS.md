@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Adding new corpus texts later
 
 The corpus lexicon is incremental and resumable — new parallel texts can be added
@@ -63,3 +65,5 @@ SLP1-keyed lexicon, just not via citation matching.
   row count (see FAILURE_GALLERY F7).
 - After adding texts, regenerate dependent artefacts if needed: the post-build
   period re-stamp, and `build_ls_map.py` if `<ls>` coverage changed.
+
+_Dr. Mārcis Gasūns_

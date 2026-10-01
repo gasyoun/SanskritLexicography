@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff research — sense ordering across the core dictionaries (2026-06-23)
 
 **Question.** In what order does each core Sanskrit dictionary arrange the senses
@@ -225,3 +227,5 @@ first), with citations that *lean* oldest-first** (PWG: sense-1 = oldest 73.5 %,
 a tendency, not a sort); Apte orders them **by pedagogical salience**. For `pwg_ru`, **keep
 PWG's printed sense order** and attach the Renou period tag as a per-sense badge rather than
 re-sorting (a re-sort would move the lead sense for ~1 in 4 entries).
+
+_Dr. Mārcis Gasūns_

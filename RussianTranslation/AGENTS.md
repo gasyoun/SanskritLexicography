@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 22-09-2026_
+
 # AGENTS.md — RussianTranslation repo-local instructions
 
 This file extends the org-level Sanskrit Lexicon instructions for this repo only.
@@ -24,7 +26,11 @@ pipeline, with article-comparison Russian review work as the secondary track.
   calls reused it, five with zero new creation), but misses are possible and not
   explained by elapsed time alone. Budget the cold write and never make a run
   depend on a hit. **Batching is still not the fix** because wall time and
-  per-card attribution bind. Full rules:
+  per-card attribution bind. Since H4054 (04-09-2026) the one-card shape is
+  **structural**: `gen_opt_harness2.py` defaults to `OUTPUT_BUDGET = 1`, so a
+  no-flag production preparation already emits one original card per translate
+  call; multi-card packing exists only as an explicit experiment flag
+  (`--output-budget=90`). Full rules:
   [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
   § Current operating truth.
 
@@ -58,7 +64,8 @@ Since H2159 (02-08-2026) the live-gate canary verdict is consumed
 MECHANICALLY: `canary_gate.py judge` writes a GO/NO-GO receipt from the canary
 wf_output, and `--execute` refuses to start without a fresh (≤6 h) GO receipt
 for the same profile (`--canary-receipt`; `--skip-canary-gate` is the explicit
-escape hatch).
+escape hatch). Since H4916 (15-09-2026) a multi-profile run needs one receipt per
+dispatch profile, each naming its slot — one GO no longer vouches for N profiles.
 
 On Windows, all Claude process trees use a kill-on-close Job Object assigned
 while the child is suspended; timeout and non-timeout cleanup therefore reach
@@ -98,12 +105,25 @@ skip-list via `no_pwg_scale_plan.read_residuals`. Run
 barrier, crash-resume, atomic `max_calls` reservation; prove with
 `python src/pilot/cohort_engine_selftest.py` (7/7). Not a live production dispatcher yet.
 
+**Repair runs (H4527, 22-09-2026):** a frozen plan cannot carry a `requeue_prepared` lease or a
+re-make of an already-promoted card. `bounded_staged_run.py --repair-lease <id>` (repeatable,
+never with `--lease-id`) scopes a run to those NAMED leases only, under every existing gate:
+a `requeue_prepared` lease drains its prepared attempt, a prepared `defect-repair` lease re-makes
+its sub-cards. For a no-PWG nominal card, claim the repair with `coordinator.py claim --kind
+defect-repair --root <root> --keys <key> --nominal`. An unnamed `requeue_prepared` lease stays
+invisible to plan runs. A repair run is not resumable once dispatched (`--resume` refuses the
+now-`running`/`ready` lease; finish by hand from `coordinator.py status`). Pins:
+`bounded_staged_run_selftest` (w), `coordinator_hardening_selftest` H4527.
+
 Coordinator state is deliberately split: `claimed`/`prepared`/`requeue_prepared` reserve work but
 consume no model runtime; `begin-run` is the only transition to `running`, and `record-output` moves
 that reservation through `auditing` before releasing it. Ordinary/manual execution is globally
 capped at three running leases. Four is available only inside `max_account_orchestrator.py
-staged-run` after its exact per-profile probe writes a fresh matching receipt; missing, stale,
-failed, or mismatched evidence is a hard refusal, and five is never allowed. Do not call
+staged-run`, which first requires one fresh GO canary receipt per dispatch profile
+(`--canary-receipt`, repeated; `canary_gate.py judge` output, <= 6 h, naming its profile slot
+when more than one profile runs; H4916) and then its exact per-profile probe writing a fresh
+matching receipt; missing, stale, failed, or mismatched evidence is a hard refusal, and five is
+never allowed. Do not call
 `record-output` directly on a merely prepared lease. A dead worker must be returned with
 `release-run --confirm-dead --reason ...`; recover stale `preparing`/`auditing` tokens only with
 `recover-operation --confirm-dead` after confirming the subprocess is gone.
@@ -134,7 +154,7 @@ Canonical loop from the repo root:
 
 ```powershell
 python src\pilot\root_window_status.py <root>
-python src\pilot\gen_opt_harness2.py <root>          # batched+masked, canonical (-72..-90% cost)
+python src\pilot\gen_opt_harness2.py <root>          # one card per call (structural default, H4054), masked, TM auto
 # HEADLESS route (H1110): execute the emitted manifest v2 via headless_worker.py with
 # CLAUDE_CONFIG_DIR bound to the profile, driven by bounded_staged_run.py / the coordinator,
 # saving wf_output.json. The legacy Max-Workflow lane (run_pilot_wf.opt2.js in a Workflow) is
@@ -143,7 +163,9 @@ python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 > The legacy per-card `gen_opt_harness.py` / `run_pilot_wf.opt.js` is deprecated;
-> use `gen_opt_harness2.py` / `run_pilot_wf.opt2.js` for all production windows.
+> use `gen_opt_harness2.py` (manifest v2 via the headless route) for all
+> production windows. Multi-card packing is an explicit experiment lane only
+> (`--output-budget=90`); the production default needs no flag.
 
 Current queue: see [`.ai_state.md`](.ai_state.md) `## Next Steps` — the queue
 lives in the journal, not here.
@@ -154,7 +176,11 @@ The generated optimized harness:
 - disables translate-agent tools with `tools: []`;
 - carries provenance metadata for root, selected keys, rootmap hash, and input
   hashes;
-- is the supported in-chat Workflow route.
+- emits **one original card per translate call** with no flag (H4054, 04-09-2026:
+  `OUTPUT_BUDGET = 1` is the structural default implementing the H2152 one-card
+  ruling; the manifest's `batches` each carry exactly one key);
+- is consumed by the headless manifest-v2 route above — never run in a
+  Workflow session for production (H1110: forensics only).
 
 Any Max run where translate agents use file reads is using an obsolete harness.
 
@@ -287,3 +313,5 @@ Maintain `.ai_state.md` using the existing section structure:
 During work, record logical milestones, persistent bugs, and changed hypotheses.
 On handoff, make next steps concrete. Avoid letting `.ai_state.md` diverge from
 the actual operational state.
+
+_Dr. Mārcis Gasūns_

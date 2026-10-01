@@ -20,7 +20,7 @@ Files (all gitignored, in this dir):
   _batch_in.jsonl          current batch input (one record per line, with i, placeholders)
   pwg_ru_translated.jsonl  append-only store: {i,key1,ru,verdict,ok,...}
 """
-import csv, json, os, re, sys, glob, hashlib, subprocess, datetime, shutil
+import csv, json, os, re, sys, glob, hashlib, subprocess, datetime
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -29,8 +29,12 @@ import store_flags
 import corpus_gate as cg
 import assemble
 import pipeline_version
+from store_write import locked_store_rewrite  # H2146/H3350 locked writer
+from promote_lock import PromoteClaim
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
 STORE = os.environ.get('PWG_RU_STORE') or os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -60,7 +64,7 @@ def _prompt_set_sha():
 
 
 def _pwg_commit():
-    repo = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig'))
+    repo = os.path.normpath(os.path.join(GITHUB, 'csl-orig'))
     try:
         r = subprocess.run(['git', '-C', repo, 'rev-parse', '--short', 'HEAD'],
                            capture_output=True, text=True, timeout=10)
@@ -245,8 +249,13 @@ def cmd_collect(args):
         needs += 1 if review_status == 'needs_review' else 0
     # One append syscall instead of one-per-row shrinks the window in which a crash
     # can leave a torn final JSONL line that breaks every later json.loads pass.
-    with open(STORE, 'a', encoding='utf-8', newline='') as out:
-        out.write(''.join(out_lines))
+    # H3350: the append window holds the H2146 PromoteClaim so a concurrent
+    # promote or mutator cannot interleave with this store mutation (ClaimBusy
+    # propagates loudly instead of last-writer-wins).
+    _ensure_parent(STORE)
+    with PromoteClaim(STORE):
+        with open(STORE, 'a', encoding='utf-8', newline='') as out:
+            out.write(''.join(out_lines))
     print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d, needs_review %d)'
           % (appended, os.path.basename(STORE), ok, bad, mism, needs))
     pl = prov['pipeline']
@@ -631,16 +640,14 @@ def cmd_apply_review(args):
         print('no non-blank reviewer decisions to apply')
         return
 
-    backup = STORE + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-    shutil.copy2(STORE, backup)
-    tmp = STORE + '.tmp'
-    _ensure_parent(STORE)
-    with open(tmp, 'w', encoding='utf-8', newline='') as out:
-        for r in store:
-            out.write(json.dumps(r, ensure_ascii=False) + '\n')
-    os.replace(tmp, STORE)
+    # H3350: the review-apply lane (this is the code that CREATES reviewed
+    # stamps) rewrites the store only through the H2146 lock — PromoteClaim
+    # serialization, fsynced per-run backup, atomic replace. ClaimBusy from a
+    # concurrent promote/mutator propagates loudly instead of last-writer-wins.
+    backup = locked_store_rewrite(STORE, store, tag='applyreview')
     print('applied %d review decision(s) → %s; backup: %s'
-          % (changed, os.path.basename(STORE), os.path.basename(backup)))
+          % (changed, os.path.basename(STORE),
+             os.path.basename(backup) if backup else '(fresh store)'))
 
 
 def _legacy_provenance(migrated_at):
@@ -696,16 +703,13 @@ def cmd_migrate_legacy(args):
     if not changed:
         print('store already migrated; review status: %s' % dict(sorted(review_counts.items())))
         return
-    backup = STORE + '.backup.' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-    shutil.copy2(STORE, backup)
-    tmp = STORE + '.tmp'
-    _ensure_parent(STORE)
-    with open(tmp, 'w', encoding='utf-8', newline='') as out:
-        for r in rows:
-            out.write(json.dumps(r, ensure_ascii=False) + '\n')
-    os.replace(tmp, STORE)
+    # H3350: legacy migration rewrites the store only through the H2146 lock
+    # (PromoteClaim + fsynced backup + atomic replace); ClaimBusy propagates
+    # loudly instead of last-writer-wins.
+    backup = locked_store_rewrite(STORE, rows, tag='migratelegacy')
     print('migrated %d/%d row(s) → %s; backup: %s'
-          % (changed, len(rows), os.path.basename(STORE), os.path.basename(backup)))
+          % (changed, len(rows), os.path.basename(STORE),
+             os.path.basename(backup) if backup else '(fresh store)'))
     print('review status:', dict(sorted(review_counts.items())))
 
 

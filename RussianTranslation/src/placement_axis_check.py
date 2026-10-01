@@ -26,12 +26,23 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-STORE = os.path.join(HERE, "pwg_ru_translated.jsonl")
-REL = os.path.join(HERE, "pwg_ru_relationships.jsonl")
+# H3300: both inputs live in the MAIN checkout (gitignored); resolving them
+# relative to HERE made this gate unrunnable — and the sheet unverifiable — in
+# any linked worktree, i.e. exactly the sanctioned workflow.
+from store_path import canonical_store, main_worktree_root          # noqa: E402
+from rt_io import read_jsonl                                        # noqa: E402
+
+STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
+_MAIN = main_worktree_root(HERE)
+REL = (os.path.join(_MAIN, "RussianTranslation", "src",
+                    "pwg_ru_relationships.jsonl") if _MAIN
+       else os.path.join(HERE, "pwg_ru_relationships.jsonl"))
 
 from edition_rel import (  # noqa: E402
-    build_pwg_sense_index, homonym_of, lead_int, normalize_sense_tag,
-    pwg_correction_marker, sch_correction_marker, _max_numeric_sense,
+    ALL_SUBTYPES, SENSE_ASSERTING, base_subtype, build_pwg_sense_index,
+    homonym_of, is_unplaced_label, lead_int, normalize_sense_tag,
+    placement_label_consistent, pwg_correction_marker, sch_correction_marker,
+    _max_numeric_sense,
 )
 
 REASONS = ("found", "no_target_marker", "out_of_range", "not_found")
@@ -43,16 +54,6 @@ def sha256_of(path):
         for chunk in iter(lambda: fh.read(1 << 20), b""):
             h.update(chunk)
     return h.hexdigest()
-
-
-def read_jsonl(path):
-    out = []
-    with io.open(path, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if line:
-                out.append(json.loads(line))
-    return out
 
 
 def main():
@@ -266,14 +267,23 @@ def main():
     # it, and that cue must still be findable in the row's DE. A row pulled out
     # of the additive class without a reproducible printed instruction is an
     # invented relationship, not a recorded one.
+    # H3300: DE fetched by the pair's occurrence ordinal, not bare pair —
+    # duplicated pairs must not show each other's body to this gate.
     de_by_key = {}
+    _seen = collections.Counter()
     for d in store:
         if (d.get("layer") or "") == "sch":
-            de_by_key[(d.get("subcard"), str(d.get("sense_tag")))] = d.get("de")
+            k = (d.get("subcard"), str(d.get("sense_tag")))
+            de_by_key[k + (_seen[k],)] = d.get("de")
+            de_by_key[k] = d.get("de")          # legacy fallback view
+            _seen[k] += 1
     bad_w3 = []
     for r in w3:
         marker = r["relationship"].get("correction_marker")
-        de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag"))))
+        de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag")),
+                            r.get("dup_ordinal")))
+        if de is None:
+            de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag"))))
         if not marker or sch_correction_marker(de) is None:
             bad_w3.append((r.get("subcard"), marker))
     print("W3a corrective SCH rows with no reproducible printed cue: %d"
@@ -317,6 +327,147 @@ def main():
         notes.append("W3e %d SCH rows keep a correction clause in a "
                      "non-leading section and stay additive by the "
                      "conservative default: %r" % (len(residue), residue))
+
+    # ---- W5 — the label follows the attachment (H3752, issue #1736) -------
+    # A1 above proves the *insertion point* of an unplaced row asserts nothing.
+    # W5 proves the same of its LABEL, which A1 never looked at: 4,132 rows read
+    # `restate` ("PW пересказывает этот смысл PWG") while their own target_sense
+    # said `*new`. Every chip, rollup row and headline percentage takes `subtype`
+    # on its own, so the boolean beside it never reached the reader.
+    w5_rows = [(r, r["relationship"]) for r in rel]
+
+    # W5a — STOP: the invariant. The suffix is present exactly when a
+    # sense-asserting relation has no identified target. Both directions are
+    # checked, so neither a stale label nor a stale flag survives a rebuild.
+    inconsistent = [
+        (r.get("row_key") or r.get("subcard"), rr.get("subtype"),
+         rr.get("placement"))
+        for r, rr in w5_rows
+        if not placement_label_consistent(rr.get("subtype"),
+                                          bool(rr.get("placement")))]
+    print("W5a rows whose label and placement disagree: %d" % len(inconsistent))
+    if inconsistent:
+        fail("W5a", "STOP — %d rows assert a relation to a sense that was "
+                    "never identified (issue #1736), e.g. %r"
+                    % (len(inconsistent), inconsistent[:5]))
+
+    # W5b — the population, printed so the repair stays reconcilable against
+    # the issue's own 16-08-2026 measurement on every future run.
+    w5_unplaced = collections.Counter()
+    w5_placed = collections.Counter()
+    for _r, rr in w5_rows:
+        st = rr.get("subtype") or ""
+        base = base_subtype(st)
+        if base not in SENSE_ASSERTING:
+            continue
+        (w5_unplaced if is_unplaced_label(st) else w5_placed)[base] += 1
+    print("W5b sense-asserting labels · unplaced %d / placed %d · %s"
+          % (sum(w5_unplaced.values()), sum(w5_placed.values()),
+             " ".join("%s=%d+%d" % (k, w5_placed[k], w5_unplaced[k])
+                      for k in sorted(SENSE_ASSERTING))))
+
+    # W5c — STOP: the fix must not have emptied the corpus. `direction` and `op`
+    # are properties of the layer and the row (REGLUE_SPEC §10) and must survive
+    # on every relabelled row — losing them is issue #1736's rejected variant B,
+    # which drops the ＋/≈/✕ distinction from ~90 % of supplements.
+    stripped = [r.get("row_key") or r.get("subcard") for r, rr in w5_rows
+                if is_unplaced_label(rr.get("subtype") or "")
+                and not (rr.get("direction") and rr.get("op"))]
+    print("W5c relabelled rows that lost direction/op: %d" % len(stripped))
+    if stripped:
+        fail("W5c", "STOP — %d relabelled rows dropped the layer axis, e.g. %r"
+                    % (len(stripped), stripped[:5]))
+
+    # W5d — no invented vocabulary: every emitted label is a declared one.
+    undeclared = sorted({rr.get("subtype") for _r, rr in w5_rows
+                         if rr.get("subtype") not in ALL_SUBTYPES})
+    print("W5d labels outside the declared vocabulary: %d" % len(undeclared))
+    if undeclared:
+        fail("W5d", "the sidecar emits undeclared labels: %r" % undeclared[:5])
+
+    # W5e — an unplaced label must never sit on a row whose target resolves;
+    # A1's structural twin, now on the label side.
+    mislabelled = []
+    for r, rr in w5_rows:
+        if not is_unplaced_label(rr.get("subtype") or ""):
+            continue
+        ip = rr.get("insertion_point") or {}
+        nt = normalize_sense_tag(ip.get("target_sense"))
+        key = (r.get("key1") or "", ip.get("homonym", "h0"))
+        if nt != "*new" and nt in senses.get(key, set()):
+            mislabelled.append((r.get("subcard"), nt))
+    print("W5e unplaced labels whose target nonetheless resolves: %d"
+          % len(mislabelled))
+    if mislabelled:
+        fail("W5e", "%d rows are labelled unplaced but point at a real sense, "
+                    "e.g. %r" % (len(mislabelled), mislabelled[:5]))
+
+    # ---- W7 — sidecar key uniqueness (H3300, FINDINGS §551) --------------
+    # §551: 133 `(subcard, sense_tag)` pairs repeated in the sidecar, so every
+    # consumer that built a dict on the bare pair silently dropped all but the
+    # last row (468 of 6,009 rows on the wave-1 baseline; worst case 25:1).
+    # The fix is writer-side: every row now carries `row_key` (unique) +
+    # `dup_ordinal` (the pair's occurrence index in store order), and readers
+    # join on it. Pairs still repeat — that is a fact of the untouched store;
+    # what must never come back is a row without its own key.
+    pair_counts = collections.Counter(
+        (r.get("subcard"), str(r.get("sense_tag"))) for r in rel)
+    dup_pairs = {k: v for k, v in pair_counts.items() if v > 1}
+    rows_under_dups = sum(dup_pairs.values())
+    print("W7  sidecar rows=%d · duplicate pairs=%d · rows under them=%d"
+          % (len(rel), len(dup_pairs), rows_under_dups))
+
+    no_key = [r for r in rel if "row_key" not in r or "dup_ordinal" not in r]
+    print("W7a rows missing row_key/dup_ordinal: %d" % len(no_key))
+    if no_key:
+        fail("W7a", "%d rows carry no unique key (pre-H3300 sidecar? "
+                    "regenerate with src/build_relationships.py), e.g. %r"
+             % (len(no_key), [r.get("subcard") for r in no_key[:5]]))
+    else:
+        keys = collections.Counter(r["row_key"] for r in rel)
+        colliding = {k: v for k, v in keys.items() if v > 1}
+        print("W7a colliding row_keys: %d" % len(colliding))
+        if colliding:
+            fail("W7a", "%d row_keys are not unique, e.g. %r"
+                 % (len(colliding), list(colliding)[:5]))
+        malformed = [
+            r["row_key"] for r in rel
+            if r["row_key"] != "%s::%s#%d" % (r.get("subcard"),
+                                              r.get("sense_tag"),
+                                              r["dup_ordinal"])]
+        print("W7a malformed row_keys: %d" % len(malformed))
+        if malformed:
+            fail("W7a", "%d row_keys disagree with (subcard, sense_tag, "
+                        "dup_ordinal), e.g. %r" % (len(malformed),
+                                                   malformed[:5]))
+
+    # W7b — the ordinals must be exactly the file-order occurrence counts of
+    # each pair: that is the whole join contract readers rely on.
+    bad_ord = []
+    seen_ord = collections.Counter()
+    for r in rel:
+        k = (r.get("subcard"), str(r.get("sense_tag")))
+        if r.get("dup_ordinal") != seen_ord[k]:
+            bad_ord.append((r["row_key"] if "row_key" in r else k,
+                            r.get("dup_ordinal"), seen_ord[k]))
+        seen_ord[k] += 1
+    print("W7b ordinals out of sequence: %d" % len(bad_ord))
+    if bad_ord:
+        fail("W7b", "%d dup_ordinals do not count occurrences in file order, "
+                    "e.g. %r" % (len(bad_ord), bad_ord[:5]))
+
+    # W7c — the shadow census, restated against consumers: with unique keys in
+    # place nothing is unreachable, but the number stays printed so the
+    # published before/after (§551: 468 shadowed on the wave-1 baseline → 0)
+    # keeps reconciling on every future run.
+    by_layer = collections.Counter()
+    for r in rel:
+        k = (r.get("subcard"), str(r.get("sense_tag")))
+        if dup_pairs.get(k):
+            by_layer[r.get("layer")] += 1
+    print("W7c rows under duplicate pairs by layer: "
+          + (" ".join("%s=%d" % kv for kv in sorted(by_layer.items()))
+             or "(none)"))
 
     print()
     if failures:

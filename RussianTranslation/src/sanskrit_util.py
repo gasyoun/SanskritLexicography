@@ -18,8 +18,10 @@ import os
 import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(_HERE)
 _SIBLING = os.path.normpath(os.path.join(
-    _HERE, '..', '..', '..', 'sanskrit-util', 'py', 'sanskrit_util', '__init__.py'))
+    GITHUB, 'sanskrit-util', 'py', 'sanskrit_util', '__init__.py'))
 _VENDORED = os.path.join(_HERE, '_sanskrit_util_vendored.py')
 
 # The API surface pwg_ru actually consumes; a sibling checkout that predates it

@@ -73,11 +73,14 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import bounded_supervisor as bs                      # noqa: E402
+import cohort_live_admission as cla                  # noqa: E402
+import cohort_live_dispatch as cld                   # noqa: E402
 import data_root                                     # noqa: E402
 import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
 from call_reservation import CallReservationLedger, run_ids  # noqa: E402
 from bounded_supervisor import BoundedSupervisor, strict_cost_fn   # noqa: E402
+import agent_ops_map_pwg as _agent_ops_map_pwg  # noqa: E402  vendored Uprava map_pwg
 
 SCHEMA = 'pwg.bounded_staged_run.v1'
 
@@ -89,6 +92,17 @@ COHORT_LIVE_GATE = (
     'H1437 live-acceptance gate: attempt/result/run binding, promotion-receipt '
     'reconciliation and the campaign reservation ledger must be proven on a LIVE serial '
     'window and signed off by Codex review before any cohort width > 1 may execute')
+
+# H4527: the gate above is no longer a hardcoded "never" — it is now READ from one
+# evidence-bearing acceptance record (cohort_live_admission.RECORD_RELPATH), fail-closed:
+# no record, an invalid record, a non-PASS sign-off or width > MAX_ADMITTED_WIDTH all keep
+# the Phase 3 refusal exactly as it was. The second rung below is the remaining half.
+COHORT_LIVE_WIRING = (
+    'H4527 rung 4: the live cohort path dispatches through cohort_engine (per-profile window '
+    'binding, one batched promote per wave, the run\'s one shared call-reservation run-id) '
+    'instead of the serial BoundedSupervisor, and is therefore bounded by --max-calls alone: '
+    'the supervisor-only cost / clean / window / empty-streak ceilings have no cohort '
+    'equivalent and are refused rather than silently dropped')
 
 # The exact-version contract coordinator.promote_ready enforces (rejects '', 'sonnet',
 # 'claude-sonnet'); the staged loop hardcodes this same value. Never a bare tier alias.
@@ -139,6 +153,107 @@ def prepared_lease_ids(coord_state):
     advanced past prepared is silently skipped by cmd_staged_run's import filter)."""
     return {lease.get('id') for lease in (coord_state or {}).get('leases', [])
             if lease.get('state') == 'prepared'}
+
+
+# H4527 22-09 (2): the two repair shapes a frozen plan can never carry. A requeue attempt is
+# prepared on a lease the plan already holds (and the plan scope only imports 'prepared'
+# leases), and a defect-repair lease re-makes a sub-card whose headword the planner excludes
+# because it is promoted. Both reach a paid call only when an operator NAMES them.
+REPAIR_REQUEUE = 'requeue'
+REPAIR_DEFECT = 'defect-repair'
+
+
+def _json_file(path, what, lease_id):
+    try:
+        with open(path, encoding='utf-8') as f:
+            data = json.load(f)
+    except (OSError, ValueError, TypeError) as exc:
+        raise SystemExit('--repair-lease %s: %s is unreadable: %s: %s'
+                         % (lease_id, what, path, exc)) from exc
+    if not isinstance(data, dict):
+        raise SystemExit('--repair-lease %s: %s is not a JSON object: %s'
+                         % (lease_id, what, path))
+    return data
+
+
+def repair_windows(coord_state, repair_lease_ids):
+    """Return bounded-loop windows for leases named with --repair-lease, and nothing else.
+
+    A named lease must be one of:
+      * state 'requeue_prepared' (any kind): the window drains the lease's PREPARED requeue
+        attempt through materialize_requeue, which imports '<lease>::rqNN-<kind>' and never
+        re-runs prepare-requeue on an already-prepared lease;
+      * state 'prepared' and kind 'defect-repair': imported exactly like a plan lease.
+    Anything else (unknown, promoted, blocked, a plain prepared lease, a duplicate id) is
+    refused loudly. The keys and projected calls come from the attempt's (or the lease's)
+    execution manifest and sealed preflight, the same fields a staged plan freezes.
+    Pure apart from reading those two files."""
+    ids = list(repair_lease_ids or [])
+    if len(ids) != len(set(ids)):
+        raise SystemExit('--repair-lease names a lease more than once')
+    windows = []
+    for lease_id in ids:
+        lease = _lease_by_id(coord_state, lease_id)
+        if not isinstance(lease, dict):
+            raise SystemExit('--repair-lease %s: unknown coordinator lease' % lease_id)
+        state = lease.get('state')
+        if state == 'requeue_prepared':
+            attempt = lease.get('current_attempt') or {}
+            repair = REPAIR_REQUEUE
+            manifest_path = attempt.get('execution_manifest') or lease.get('execution_manifest')
+            preflight_path = attempt.get('preflight') or lease.get('preflight_path')
+            attempt_id = '%s%s%02d-%s' % (
+                lease_id, mao.RQ_ID_SEP,
+                int(attempt.get('number') or lease.get('requeue_attempt') or 0),
+                attempt.get('kind') or lease.get('requeue_kind') or 'requeue')
+        elif state == 'prepared' and lease.get('kind') == REPAIR_DEFECT:
+            repair = REPAIR_DEFECT
+            manifest_path = lease.get('execution_manifest')
+            preflight_path = lease.get('preflight_path')
+            attempt_id = lease_id
+        else:
+            raise SystemExit(
+                '--repair-lease %s: lease is %s/%r; only a requeue_prepared lease or a '
+                'prepared defect-repair lease can be repaired (a plain prepared lease belongs '
+                'in the staged plan)' % (lease_id, lease.get('kind'), state))
+        if not manifest_path or not preflight_path:
+            raise SystemExit('--repair-lease %s: no execution manifest / sealed preflight on '
+                             'record' % lease_id)
+        manifest = _json_file(manifest_path, 'execution manifest', lease_id)
+        preflight = _json_file(preflight_path, 'sealed preflight', lease_id)
+        keys = list((manifest.get('meta') or {}).get('selected_keys') or [])
+        if not keys:
+            raise SystemExit('--repair-lease %s: execution manifest selects no keys' % lease_id)
+        windows.append({
+            'id': lease_id,                   # == coordinator lease id (promote / audit key)
+            'root': lease_id,
+            'headwords': sorted({k.split('~~')[0] for k in keys}),
+            'subcards': keys,
+            'headless': True,
+            'projected_calls': preflight.get('agent_expected_after_tm'),
+            'manifest_sha256': mao.sha256_path(manifest_path),
+            'repair': repair,
+            'repair_job_id': attempt_id,
+        })
+    return windows
+
+
+def run_scope(plan, coord_state, requested_lease_ids=None, repair_lease_ids=None):
+    """The run's (windows, scope): the staged plan's windows, or — with --repair-lease — the
+    named repair leases ONLY. The two never mix, so a repair run cannot drag an unrelated
+    plan window into a paid call, and a plan run never sees a repair lease."""
+    if not repair_lease_ids:
+        return scope_windows(plan, requested_lease_ids)
+    if requested_lease_ids:
+        raise SystemExit('--repair-lease and --lease-id are mutually exclusive: a repair run '
+                         'is scoped to the named repair leases only')
+    windows = repair_windows(coord_state, repair_lease_ids)
+    return windows, {
+        'lease_ids': [w['id'] for w in windows],
+        'windows': windows,
+        'expected_windows': len(windows),
+        'expected_headwords': sum(len(w['headwords']) for w in windows),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -604,10 +719,31 @@ def make_run_window(ctx):
     import time
 
     def run_window(window):
+        # H4527 rung 4: a window may carry a PROFILE BINDING (cohort dispatch). When it does,
+        # this lease is dispatched on that one profile instead of the whole admitted fleet —
+        # that binding is what makes CohortEngine's one-in-flight-job-per-profile invariant
+        # real on the live route. No binding (the serial route, every pre-H4527 caller) keeps
+        # the admitted-fleet behaviour byte-for-byte.
+        bound_profile = window.get('profile') or None
+        window_accounts = ({bound_profile} if bound_profile
+                           else set(ctx.probe_latencies or {}))
+        window_only_profile = bound_profile or ctx.only_profile
+        # H4527 rung 4: in a wave, promotion is the WAVE's act — one batched promote-ready for
+        # the whole accepted set, after the acceptance barrier. The per-lease promote below
+        # must stand down or the wave would promote N times and the "exactly one promote per
+        # wave" contract would be false the first time it ran live.
+        wave_promoted = bool(window.get('wave_promote'))
         if window.get('requeue'):
             lease_id = window.get('origin')
             if not lease_id:
                 return None       # malformed rq item -> the supervisor's A4 guard fails loudly
+            scope = {materialize_requeue(ctx, lease_id)}
+        elif window.get('repair') == REPAIR_REQUEUE:
+            # H4527 22-09 (2): a NAMED requeue_prepared lease. Not a supervisor 'requeue' item
+            # (_normalize_plan resets that flag on every plan window), so it is keyed on
+            # 'repair'; materialize_requeue skips prepare-requeue for an already-prepared
+            # lease and only imports its attempt job. Promotion and audit use the lease id.
+            lease_id = window['id']
             scope = {materialize_requeue(ctx, lease_id)}
         else:
             lease_id = window['id']
@@ -676,7 +812,7 @@ def make_run_window(ctx):
                 db = mao.connect(ctx.db)
                 # H1437 / audit P1#10: the pre-dispatch parked guard must count only the
                 # ADMITTED fleet (probe_latencies), never a healthy EXCLUDED account.
-                admitted = set(ctx.probe_latencies or {})
+                admitted = set(window_accounts)
                 if admitted:
                     qmarks = ','.join('?' * len(admitted))
                     runnable = db.execute(
@@ -695,8 +831,8 @@ def make_run_window(ctx):
                         'parked — rerun with --resume after the reset' % lease_id)
                 mao.cmd_run_once(argparse.Namespace(
                     db=ctx.db, timeout=ctx.timeout, events=ctx.events, run_id=ctx.run_id,
-                    claude_bin=ctx.claude_bin, only_accounts=set(ctx.probe_latencies),
-                    only_profile=ctx.only_profile,
+                    claude_bin=ctx.claude_bin, only_accounts=set(window_accounts),
+                    only_profile=window_only_profile,
                     # A7 (H1283): plumb the run's coordinator/coord_dir/cwd. Without them
                     # coordinator_command() falls back to the DEFAULT coordinator dir
                     # (PWG_COORDINATOR_DIR unset), so the embedded begin-run/record calls hit
@@ -707,7 +843,7 @@ def make_run_window(ctx):
             mao.cmd_record_done(argparse.Namespace(
                 db=ctx.db, coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
                 only_external_ids=scope))
-            if ctx.stop_before_promote or ctx.auto_promote_until is not None:
+            if wave_promoted or ctx.stop_before_promote or ctx.auto_promote_until is not None:
                 # R10: skip promotion -- the window is recorded + auditable but NOT promoted, so the
                 # store and TM stay untouched. The durable AWAITING_REVIEW terminal checkpoint is
                 # written by the audit wrapper ONLY after a clean audit (an audit-rejected/requeued
@@ -731,7 +867,7 @@ def make_run_window(ctx):
         # clean cards never reach the store while the audit still counts the window productive.
         # One unconditional scoped promote here rescues that lease; it is a harmless no-op ("no
         # ready leases to promote") whenever the in-loop promote already ran.
-        if not ctx.stop_before_promote and ctx.auto_promote_until is None:
+        if not wave_promoted and not ctx.stop_before_promote and ctx.auto_promote_until is None:
             rescue = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
@@ -784,15 +920,52 @@ def run_cohort_offline(windows, width, run_window, checkpoint_path, audit=None,
     return engine.run()
 
 
+def _cohort_view(cohort_width):
+    """H4527: the dry-run cohort block — now including the live-admission verdict, so the
+    planning view answers "would --execute take this width, and if not, why" without a run.
+    Width 1 keeps the serial wording byte-for-byte."""
+    if cohort_width <= 1:
+        return {
+            'requested_width': cohort_width,
+            'mode': 'serial (production default, width 1)',
+            'live_policy': COHORT_LIVE_GATE,
+            'live_admission': {'admitted': True,
+                               'reason': 'serial route (width 1)',
+                               'record_path': cla.record_path()},
+        }
+    admitted, why, record = cla.admit(cohort_width)
+    if admitted:
+        # Record-admitted, but rung 2 (live dispatch wiring) still refuses the live path.
+        mode = ('OFFLINE-EXPERIMENTAL (record-ADMITTED width; --execute still refuses '
+                'pending live cohort dispatch wiring)')
+    else:
+        mode = ('OFFLINE-EXPERIMENTAL (fake/fixture execution only; '
+                '--execute refuses this width)')
+    return {
+        'requested_width': cohort_width,
+        'mode': mode,
+        'live_policy': COHORT_LIVE_GATE,
+        'live_wiring': COHORT_LIVE_WIRING,
+        'live_admission': {
+            'admitted': admitted,
+            'reason': why,
+            'record_path': cla.record_path(),
+            'max_admitted_width': cla.MAX_ADMITTED_WIDTH,
+            'admitted_profiles': list((record or {}).get('admitted_profiles') or []),
+        },
+    }
+
+
 def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=None,
-              accounts=None, ledger=None, cohort_width=1):
+              accounts=None, ledger=None, cohort_width=1, repair_lease_ids=None):
     """Pure planning view (H963 objective 8): what a live run WOULD do — scoped work,
     ceilings, account allocation, checkpoint path, cost-basis evaluability and the ordered
     stop policy — computed WITHOUT any generation call. `accounts` is the validated-account
     name list (optional); `ledger` is a prebuilt economy ledger (optional; built from the
     frozen probe log when omitted)."""
-    windows, scope = scope_windows(plan, requested_lease_ids)
-    prepared = prepared_lease_ids(coord_state)
+    windows, scope = run_scope(plan, coord_state, requested_lease_ids, repair_lease_ids)
+    # A repair window is importable by construction: repair_windows refuses any other state.
+    prepared = prepared_lease_ids(coord_state) | {w['id'] for w in windows if w.get('repair')}
     importable = [w['id'] for w in windows if w['id'] in prepared]
     not_prepared = [w['id'] for w in windows if w['id'] not in prepared]
     if ledger is None:
@@ -826,6 +999,10 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
             'projected_calls_from_plan': sum((w.get('projected_calls') or 0) for w in windows),
             'importable_prepared_leases': sorted(importable),
             'windows_not_prepared_skipped': sorted(not_prepared),
+            'repair_leases': [{'lease_id': w['id'], 'repair': w['repair'],
+                               'job_id': w['repair_job_id'], 'subcards': w['subcards'],
+                               'projected_calls': w.get('projected_calls')}
+                              for w in windows if w.get('repair')],
         },
         'ceilings': dict(ceilings),
         'cost_basis': {'evaluable': cost_ok, 'reason': cost_reason},
@@ -837,13 +1014,7 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
         'checkpoint_path': checkpoint_path,
         'stop_policy': stop_policy,
         'live_requires': "explicit --execute AND a healthy fleet probe (STOP-on-any-NO-GO)",
-        'cohort': {
-            'requested_width': cohort_width,
-            'mode': ('serial (production default, width 1)' if cohort_width <= 1
-                     else 'OFFLINE-EXPERIMENTAL (fake/fixture execution only; '
-                          '--execute refuses this width)'),
-            'live_policy': COHORT_LIVE_GATE,
-        },
+        'cohort': _cohort_view(cohort_width),
     }
 
 
@@ -862,6 +1033,24 @@ def _validated_accounts(db_path):
         return names
     except Exception:  # noqa: BLE001 — a missing/locked db must not crash the dry-run
         return []
+
+
+def gate_profiles(args):
+    """H4916: the profile slots an --execute run can dispatch on, for the canary gate — the
+    same roster selection `run()` makes (validated, --only-profile, --max-accounts). Reads the
+    db directly rather than via `_validated_accounts`, which turns a locked db into [] for the
+    dry-run: here an unreadable roster must raise, not vouch for an empty fleet."""
+    if args.only_profile:
+        return [args.only_profile]
+    if not args.db or not os.path.exists(args.db):
+        return []   # run() creates an empty db and refuses a zero-account run before probe
+    db = mao.connect(args.db)
+    try:
+        names = [row['name'] for row in
+                 db.execute('SELECT name FROM accounts WHERE validated=1 ORDER BY name')]
+    finally:
+        db.close()
+    return names[:args.max_accounts] if args.max_accounts else names
 
 
 def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resume=False,
@@ -884,18 +1073,88 @@ def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resu
     )
 
 
+# --- exit contract (H5209, FINDINGS §642) ------------------------------------------------
+# Callers gate on this process's exit code, so every terminal state a run can end in has to
+# be mapped onto it EXPLICITLY, per route. Until H5209 both routes were scored by one
+# predicate built out of BoundedSupervisor stop reasons; CohortEngine sets none of them, so
+# the cleanest wave it can produce — settled, accepted, promoted, TM rebuilt, nothing
+# requeued, stop_reason None — exited 1. That stayed invisible for nine days because no
+# cohort wave had ever finished cleanly (run `h4527-acc-200920`, 20-09-2026).
+
+SUPERVISOR_CLEAN_STOPS = (bs.STOP_CLEAN_TARGET, bs.STOP_WINDOW_COUNT,
+                          bs.STOP_CLEAN_QUOTA, bs.STOP_CALL_COUNT)
+
+
+def supervisor_exit_code(summary):
+    """0 only on a BoundedSupervisor stop reason a caller treats as a clean finish."""
+    return 0 if (summary or {}).get('stop_reason') in SUPERVISOR_CLEAN_STOPS else 1
+
+
+def cohort_exit_code(summary):
+    """0 only on a clean, accepted, fully settled cohort wave; 1 on everything a caller gates.
+
+    `stop_reason is None` is NECESSARY but far from sufficient on this route: CohortEngine
+    leaves it None both for a wave that finished with nothing to complain about AND for one
+    that settled without ever being promoted (`terminal_ok` False). The clean case is the
+    conjunction of the terminal facts the engine actually records — nothing requeued,
+    something accepted, wave promoted, TM rebuilt. Anything else is non-zero, including the
+    engine's own one-line reasons (all admitted profiles parked, `max_calls=0`, leases that
+    settled undispatched). An error stop never reaches here at all: `_dispatch` re-raises.
+    """
+    summary = summary or {}
+    if summary.get('stop_reason') is not None:
+        return 1
+    if summary.get('cost_evaluable') is False:
+        return 1
+    if summary.get('requeue_backlog_keys'):
+        return 1
+    if not summary.get('accepted_order'):
+        return 1
+    wave = summary.get('wave') or {}
+    if not (wave.get('promoted') and wave.get('tm_done')):
+        return 1
+    return 0
+
+
+def exit_code(summary, cohort_path):
+    """Route the summary to its own exit contract. The serial route is unchanged."""
+    return cohort_exit_code(summary) if cohort_path else supervisor_exit_code(summary)
+
+
 def run(args):
     # H1437 Phase 3: refuse a LIVE cohort before touching the plan, the db, the coordinator
     # or the fleet. getattr keeps pre-P3 programmatic callers (Namespace without the attr)
     # on the serial route. This is the ONLY live-path change: width 1 (the default) leaves
     # every stop policy, probe policy, model pin and promotion semantic byte-for-byte as-is.
     cohort_width = getattr(args, 'cohort_width', 1) or 1
+    # H4527 rung 4: the live cohort path is now WIRED (cohort_live_dispatch) and is entered
+    # deliberately — either by asking for it at width 1 (the live serial-acceptance window
+    # work item 1 needs, and the only way the acceptance record's `via_cohort_path` claim can
+    # ever become true) or by any admitted width > 1, which always runs through it.
+    cohort_path = bool(getattr(args, 'cohort_path', False)) or cohort_width > 1
     if args.execute and cohort_width > 1:
-        raise SystemExit(
-            'bounded_staged_run: --execute refuses --cohort-width %d — %s. The production '
-            'route stays serial (width 1); cohort width > 1 runs OFFLINE ONLY '
-            '(fake/fixture workers via run_cohort_offline / the selftest).'
-            % (cohort_width, COHORT_LIVE_GATE))
+        admitted, why, _rec = cla.admit(cohort_width)
+        if not admitted:
+            raise SystemExit(
+                'bounded_staged_run: --execute refuses --cohort-width %d — %s. Admission '
+                'refused: %s. The production route stays serial (width 1); cohort width > 1 '
+                'runs OFFLINE ONLY (fake/fixture workers via run_cohort_offline / the '
+                'selftest) until the record exists.' % (cohort_width, COHORT_LIVE_GATE, why))
+    if args.execute and cohort_path:
+        # The cohort path bounds a run by --max-calls alone: CohortEngine has no equivalent of
+        # BoundedSupervisor's cost / clean / window / empty-streak ceilings. Running with one
+        # of those SET would quietly remove the bound the operator asked for, so it refuses.
+        dropped = cld.unsupported_ceilings({
+            'cost_ceiling': args.cost_ceiling, 'max_clean': args.max_clean,
+            'max_windows': args.max_windows, 'empty_streak': args.empty_streak})
+        if dropped:
+            raise SystemExit(
+                'bounded_staged_run: the live cohort path cannot honour %s — %s. It is '
+                'bounded by --max-calls (shared call-reservation ledger) only. Re-run either '
+                'without those ceilings or on the serial route (no --cohort-path, width 1).'
+                % (', '.join('--' + name.replace('_', '-') for name in dropped),
+                   COHORT_LIVE_WIRING))
+    repair_lease_ids = list(getattr(args, 'repair_lease', None) or [])
     plan = json.load(open(args.plan, encoding='utf-8'))
     coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     coord_state = {}
@@ -912,7 +1171,7 @@ def run(args):
         else {'aggregate': {}}
     view = plan_view(plan, coord_state, ceilings, args.checkpoint,
                      requested_lease_ids=args.lease_id, accounts=accounts, ledger=ledger,
-                     cohort_width=cohort_width)
+                     cohort_width=cohort_width, repair_lease_ids=repair_lease_ids)
 
     if not args.execute:
         # DEFAULT: dry-run planning view. No probe, no dispatch, no promotion, no store write.
@@ -920,7 +1179,7 @@ def run(args):
         return 0
 
     # --- LIVE path (owner-gated). Everything below is only reached with --execute. ---
-    windows, scope = scope_windows(plan, args.lease_id)
+    windows, scope = run_scope(plan, coord_state, args.lease_id, repair_lease_ids)
     if not windows:
         raise SystemExit('bounded_staged_run: staged plan has no prepared headless windows')
     preflight_cmd = ['validate-preflight']
@@ -1010,20 +1269,73 @@ def run(args):
         # SQL scope, so the recovery UPDATE matched zero jobs and a crashed window was
         # checkpointed COMPLETED with zero output (mirrors cmd_staged_run's set(lease_ids)).
         mao.cmd_recover(argparse.Namespace(
-            db=args.db, only_external_ids=set(scope['lease_ids']),
+            # H4527 22-09 (2): a requeue repair's job is '<lease>::rqNN-<kind>', never the lease
+            # id, so its known attempt job id joins the recovery scope explicitly.
+            db=args.db, only_external_ids=set(scope['lease_ids']) | {
+                w['repair_job_id'] for w in windows if w.get('repair')},
             coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
-    sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
-                           resume=args.resume, call_counter=call_ledger.spent,
-                           usage_counter=call_ledger.usage)
-    summary = sup.run()
+    if cohort_path:
+        # H4527 rung 4 — the LIVE cohort route. Everything paid-lane about it (the canary
+        # receipt gate, the fleet probe above, --max-calls and the one shared reservation
+        # run-id inside run_window) is already in force; what happens here is only the
+        # dispatch: bind each window to a probed-healthy profile, refuse a width the fleet
+        # cannot fill, and let CohortEngine run the wave with ONE batched promote at its
+        # acceptance barrier. Width 1 through this path IS the serial-acceptance window that
+        # work item 1 needs — the same decisions on one profile, taken through the wiring an
+        # admitted width 2 will later use.
+        healthy = sorted(probe_latencies or {})
+        fleet_ok, fleet_why = cld.fleet_guard(cohort_width, healthy)
+        if not fleet_ok:
+            raise SystemExit('bounded_staged_run: %s' % fleet_why)
+        cohort_windows = cld.assign_profiles(
+            [dict(w, wave_promote=True) for w in windows], healthy)
+
+        import subprocess
+
+        def promote_leases(lease_ids, gen_model_version):
+            """ONE coordinator promote-ready carrying every accepted lease of the wave."""
+            if not lease_ids:
+                return {'returncode': 0, 'promoted_at': mao.now_iso(), 'stdout_tail': ''}
+            cmd = [sys.executable, os.path.abspath(args.coordinator), 'promote-ready',
+                   '--gen-model-version', gen_model_version]
+            for lease_id in lease_ids:
+                cmd += ['--lease-id', lease_id]
+            done = subprocess.run(cmd, cwd=os.path.abspath(args.cwd), env=_coord_env(ctx),
+                                  text=True, encoding='utf-8', capture_output=True)
+            blob = (done.stderr or '') + (done.stdout or '')
+            if done.returncode and 'no ready leases to promote' not in blob:
+                raise SystemExit('bounded_staged_run: wave promotion failed for %s: %s'
+                                 % (', '.join(lease_ids), blob[-1000:]))
+            return {'returncode': done.returncode, 'promoted_at': mao.now_iso(),
+                    'stdout_tail': blob[-500:]}
+
+        summary = cld.run_cohort_live(
+            cohort_windows, cohort_width, run_window, args.checkpoint, audit=audit,
+            promote_wave=cld.make_wave_promoter(promote_leases, args.gen_model_version),
+            admitted=set(healthy), max_calls=args.max_calls, coord_dir=args.coord_dir,
+            resume=args.resume)
+        summary = dict(summary or {})
+        summary['cohort'] = {'path': 'live', 'requested_width': cohort_width,
+                             'fleet': healthy, 'reason': fleet_why}
+    else:
+        sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
+                               resume=args.resume, call_counter=call_ledger.spent,
+                               usage_counter=call_ledger.usage)
+        summary = sup.run()
+    if isinstance(summary, dict) and 'agent_ops_code' not in summary:
+        summary = dict(summary)
+        summary['agent_ops_code'] = _agent_ops_map_pwg.map_pwg_stop(
+            summary.get('stop_reason'),
+            {'cost_evaluable': summary.get('cost_evaluable')},
+        )
     report = {'schema': SCHEMA, 'run_id': run_id, 'plan_view': view, 'summary': summary}
     if args.report:
         mao.atomic_write(args.report, json.dumps(report, ensure_ascii=False, indent=1) + '\n')
     print(json.dumps(summary, ensure_ascii=False, indent=1))
     # A cost-unevaluable / non-clean stop is a non-zero exit so callers can gate on it.
-    return 0 if summary.get('stop_reason') in (bs.STOP_CLEAN_TARGET, bs.STOP_WINDOW_COUNT,
-                                               bs.STOP_CLEAN_QUOTA, bs.STOP_CALL_COUNT) else 1
+    # H5209: scored per ROUTE — the cohort engine has its own terminal states (exit_code).
+    return exit_code(summary, cohort_path)
 
 
 def build_parser():
@@ -1043,6 +1355,15 @@ def build_parser():
     ap.add_argument('--claude-bin', default='claude',
                     help='Claude CLI binary/shim (same convention as max_account_orchestrator)')
     ap.add_argument('--lease-id', action='append', help='restrict scope to these lease roots')
+    ap.add_argument('--repair-lease', action='append', metavar='LEASE_ID',
+                    help='H4527: scope the run to these repair leases ONLY (repeatable; '
+                         'mutually exclusive with --lease-id): a requeue_prepared lease drains '
+                         'its prepared requeue attempt, a prepared defect-repair lease re-makes '
+                         'its promoted sub-cards. Any other lease state is refused. Every live '
+                         'gate (probe ration, canary receipt, --max-calls reservation) applies '
+                         'unchanged. Not resumable once dispatched: --resume refuses a '
+                         'running/ready repair lease (finish it by hand from coordinator.py '
+                         'status)')
     ap.add_argument('--checkpoint', default='bounded_staged_run.checkpoint.json')
     ap.add_argument('--execute', action='store_true',
                     help='OPT-IN: run the live drain. Default (absent) is a dry-run planning '
@@ -1052,6 +1373,14 @@ def build_parser():
                          'fake/fixture execution through run_cohort_offline. --execute REFUSES '
                          'any value > 1 until the live-acceptance gate passes; default 1 = the '
                          'existing serial route, byte-for-byte unchanged.')
+    ap.add_argument('--cohort-path', action='store_true',
+                    help='H4527 rung 4: run the LIVE window through the cohort dispatch '
+                         '(per-profile binding + one batched promote per wave) instead of the '
+                         'serial supervisor, at --cohort-width (default 1). Width 1 through '
+                         'this path IS the live serial-acceptance window the width-2 '
+                         'acceptance record requires (`via_cohort_path`). Bounded by '
+                         '--max-calls only: the cost/clean/window/empty-streak ceilings have '
+                         'no cohort equivalent and are refused, never silently dropped.')
     ap.add_argument('--resume', action='store_true',
                     help='resume from --checkpoint (no completed lease re-run/re-promoted)')
     ap.add_argument('--stop-before-promote', action='store_true',
@@ -1088,11 +1417,12 @@ def build_parser():
                          'unbounded — a deliberate unbounded window must say so in the '
                          'command line where a reviewer can see it.')
     # H2159 (H2025 G4): the canary half of the live gate, consumed MECHANICALLY.
-    ap.add_argument('--canary-receipt',
+    ap.add_argument('--canary-receipt', action='append',
                     help='H2159: path to the pwg.canary_gate_receipt.v1 JSON written by '
                          '`canary_gate.py judge` after the /pwg-live-gate canary. '
                          'REQUIRED on --execute (verdict GO, fresh, same profile) unless '
-                         '--skip-canary-gate is passed.')
+                         '--skip-canary-gate is passed. H4916: repeat it once per dispatch '
+                         'profile — a multi-profile run needs one receipt naming each slot.')
     ap.add_argument('--canary-max-age-seconds', type=int, default=None,
                     help='override the canary GO receipt freshness bound (default: '
                          'canary_gate.DEFAULT_MAX_AGE_SECONDS = 6h)')
@@ -1133,6 +1463,11 @@ def main(argv=None):
         ap.error('--coord-dir is required (pass it directly or derive it via --data-root)')
     if args.execute and not (args.coordinator and args.cwd and args.events):
         ap.error('--execute requires --coordinator, --cwd and --events')
+    # H4527 (23-09-2026): the dry run never touches --cwd, so a missing folder passed it and
+    # the PAID run then crashed with NotADirectoryError after preflight. Refuse it here, on
+    # both routes, before anything is reserved or claimed.
+    if args.cwd and not os.path.isdir(args.cwd):
+        ap.error('--cwd %r is not an existing directory; create it first (H4527)' % args.cwd)
     # H2175 R2.1: normalize + fail-closed validate the auto-promote trial authority.
     if args.auto_promote_until is not None:
         import time as _time
@@ -1170,11 +1505,11 @@ def main(argv=None):
                      'canary, judge it with `canary_gate.py judge <wf_output> --receipt '
                      '<path>`, and pass --canary-receipt <path> (H2159). '
                      '--skip-canary-gate is the explicit escape hatch.')
-        import canary_gate
-        gate_kwargs = {'only_profile': args.only_profile}
-        if args.canary_max_age_seconds is not None:
-            gate_kwargs['max_age_seconds'] = args.canary_max_age_seconds
-        canary_gate.enforce(args.canary_receipt, **gate_kwargs)
+        # H4916: one receipt per profile the run will dispatch on — a multi-profile run
+        # without --only-profile used to pass on ONE receipt for N profiles.
+        mao.enforce_canary_receipts(args.canary_receipt, gate_profiles(args),
+                                    max_age_seconds=args.canary_max_age_seconds,
+                                    context='bounded_staged_run')
     return run(args)
 
 

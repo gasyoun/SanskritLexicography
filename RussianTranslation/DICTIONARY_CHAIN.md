@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Petersburg dictionary chain — research + architecture for a complete pwg_ru
 
 To make the Russian translation **as complete as possible**, it must draw on the
@@ -214,3 +216,5 @@ record back-references the main entry's sense numbers; we render the patch under
 
 ## Open questions
 See this turn's message.
+
+_Dr. Mārcis Gasūns_

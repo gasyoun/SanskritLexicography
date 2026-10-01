@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 ### r001 [pilot] vad~~h0_22_ni (ni+vad) stratum=unspecified
 DE: <div n="p">— {#ni#} <ab>caus.</ab> <ab>med.</ab> {%erschallen lassen%}: {#BerIsahasrARi SaNKAnAmayutAni ca#}
 <ls>MBH. 5,7656. fg.</ls>
@@ -2534,3 +2536,4 @@ DE: <div n="p">— {#upa#} <ab>s.</ab> {#upavAsana#} .
 EN: <div n="p"> — {#upa#} <ab>s.</ab> {#upavAsana#}.
 MW [subcard:upavas]: √ 5. , to abide or dwell with or at; to stay, wait, wait for, to abide in a state of abstinence, abstain from food, fast, on; xi; &c.; to encamp (with ), to dwell on, give one's self up to, apply one's self to, : to cause to abide or wait, to cause to fast
 
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Fast Print/DH Acceleration Review
 
 Date: 2026-06-29
@@ -137,3 +139,5 @@ python src\release_readiness.py
 ```
 
 Do not cut an immutable edition or claim print readiness until G5/G6/G7/G10 pass.
+
+_Dr. Mārcis Gasūns_

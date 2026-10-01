@@ -35,7 +35,7 @@ REPORT = os.path.join(GOLD, 'saru_gloss_precision_report.md')
 GOLD_SET = os.path.join(GOLD, 'saru_gloss_gold_set.jsonl')
 DISAGREE = os.path.join(GOLD, 'saru_gloss_disagreements.jsonl')
 
-TIERS = ('dcs', 'vidyut', 'marker')
+TIERS = ('dcs', 'vidyut', 'marker', 'marker-head')
 BANDS = ('hapax(1)', 'low(2-9)', 'mid(10-99)', 'high(100+)')
 
 

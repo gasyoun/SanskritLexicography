@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # SamudraManthanam integration — roadmap
 
 How the **SamudraManthanam** parallel-corpus tool feeds the Russian-translation
@@ -332,3 +334,5 @@ interface.
 5. **Coverage reporting.** Measured 2026-06-15 (§2.3): correctness 16.4 %, KOW
    8.0 %, corpus ≈14–15 % (sampling-noisy). The LLM verdict distribution still
    awaits the `pwg_ru` run.
+
+_Dr. Mārcis Gasūns_

@@ -1,0 +1,198 @@
+{
+  "schema": "release-envelope-v1",
+  "envelope_id": "sanskritlexicography/v1.144.164",
+  "hub": "SanskritLexicography FAIR Release #1 — CDSL statistics-census data exports (E39 markup-tag census, E40 headword-overlap matrix + companion unique-counts)",
+  "release_kind": "data",
+  "release_tag": "v1.144.164",
+  "created": "2026-09-10",
+  "authored_by": "H4255 (OxAlpha, zai-coding-plan/glm-5.3-flash) — release-envelope-v1 portfolio adoption, per Uprava docs/SPEC_RELEASE_ENVELOPE_V6_PORTFOLIO_2026.md §6 item 2; reference implementation: kosha data-v0.5.0 (H4239). Every digest in this envelope was recomputed from bytes, not copied from prose.",
+  "code_revision": {
+    "repo_url": "https://github.com/gasyoun/SanskritLexicography",
+    "tag": "v1.144.164",
+    "commit": "971c8a6ecfc77b66b96a7c71cf2ad05c49ad986c"
+  },
+  "pinned_artifacts": [
+    {
+      "path": "data/markup_tag_census.tsv",
+      "role": "E39 markup-tag frequency census — per-dict per-tag counts over all 44 csl-orig v02 dictionaries (FAIR Release #1 dataset)",
+      "sha256": "a8ebc33e901223dba2f92ee650660a6ee64258106c17ac4d3343c31881b91934",
+      "sha256_form": "lf-canonical"
+    },
+    {
+      "path": "data/headword_overlap_matrix.tsv",
+      "role": "E40 pairwise headword-overlap + Jaccard matrix over the 15-dict union — 105 dictionary pairs (FAIR Release #1 dataset)",
+      "sha256": "60d5f30c29109ce548294ba1c26f072c4d912efe9e967e78ebbd48756f391556",
+      "sha256_form": "lf-canonical"
+    },
+    {
+      "path": "data/headword_unique_counts.tsv",
+      "role": "companion output of the E40 builder — per-dict headword and unique counts",
+      "sha256": "0c60309bb76b2280f4a1d7db1829fb06828630f3f3cd01cb9c9cd3e1821f9679",
+      "sha256_form": "lf-canonical"
+    },
+    {
+      "path": "data/FAIR_RELEASE_1.md",
+      "role": "FAIR Release #1 deposit package — metadata, provenance, licence, Zenodo deposit JSON, status",
+      "sha256": "cb345b1380eb7292db362535793997edac9313842ff2fc752c3ec582635c967b",
+      "sha256_form": "lf-canonical"
+    }
+  ],
+  "source_pins": [
+    {
+      "dataset": "markup-tag-census-e39",
+      "source_repo": "https://github.com/sanskrit-lexicon/csl-orig",
+      "source_path": "v02/<code>/<code>.txt (the 44 main-text files, one per dictionary)",
+      "pin_commit": "78cbb257d9c655f7464e342d17507f8133140c96",
+      "pin_rule": "the checkout state named by data/MARKUP_TAG_CENSUS_CSLORIG_2026.md as the census input (commit dated 2026-07-04). NOT re-derivable by rev-list --before: origin/main had already advanced to 7985b701 by the 2026-07-11 run date, and the run used this explicit checkout. Re-derived mechanically by digesting the 44 v02/<code>/<code>.txt blobs at the pin commit.",
+      "sha256": "e150c5bbaef5a277a09b76afec93e4dd79e5c46e60b476ce5ae67bd8d87ba89e",
+      "sha256_form": "set-digest:census — sha256 over the LF bytes of the path-sorted line sequence 'v02/<code>/<code>.tx<tab><sha256-of-lf-canonical-blob>' (one line per file, newline-terminated), files enumerated as v02/<code>/<code>.txt at the pin commit"
+    },
+    {
+      "dataset": "headword-overlap-matrix-e40",
+      "source_repo": "https://github.com/gasyoun/SanskritLexicography",
+      "source_path": "HeadwordLists/union/union_headwords.tsv",
+      "pin_commit": "d3e7fecc18c3c8df721bfb68a9652b4bdb2bc823",
+      "pin_rule": "git rev-list -1 --before=2026-07-11T00:00:00Z <this repo> -- HeadwordLists/union/union_headwords.tsv (the consumed input's last change before the 2026-07-11 overlap run); re-derivation verified to return the pin commit",
+      "sha256": "4d5d35311e26c7d175ffd93486b5dc18feaefeb64b751a603b8a298434643e09",
+      "sha256_form": "lf-canonical"
+    }
+  ],
+  "output_digests": {
+    "carried_in": "data/FAIR_RELEASE_1.md",
+    "note": "The release asset files ARE the pinned artifacts (byte-identical), so each block restates recomputed values so a consumer verifies without trusting the pinned file beyond its own pin digest. rows = data rows excluding the single header line.",
+    "datasets": {
+      "markup-tag-census-e39": {
+        "release_asset": "data/markup_tag_census.tsv",
+        "sha256": "a8ebc33e901223dba2f92ee650660a6ee64258106c17ac4d3343c31881b91934",
+        "rows": 671,
+        "size_bytes": 17820
+      },
+      "headword-overlap-matrix-e40": {
+        "release_asset": "data/headword_overlap_matrix.tsv",
+        "sha256": "60d5f30c29109ce548294ba1c26f072c4d912efe9e967e78ebbd48756f391556",
+        "rows": 105,
+        "size_bytes": 2791
+      },
+      "headword-unique-counts-e40b": {
+        "release_asset": "data/headword_unique_counts.tsv",
+        "sha256": "0c60309bb76b2280f4a1d7db1829fb06828630f3f3cd01cb9c9cd3e1821f9679",
+        "rows": 15,
+        "size_bytes": 370
+      }
+    }
+  },
+  "config": {
+    "selection_rule": "the repo's repo-wide release tag v1.144.164; the envelope wraps the FAIR Release #1 data exports that ship inside the tracked tree — the three TSVs are unchanged since their 2026-07-11 landing commits (66d0f1c3, 79338e73) and were verified byte-identical at the tag and at HEAD",
+    "builders": {
+      "markup-tag-census-e39": "data/markup_tag_census.py (H683, run 2026-07-11) over csl-orig v02 --csl-orig <clone>/v02",
+      "headword-overlap-matrix-e40": "data/headword_overlap_matrix.py (H684, run 2026-07-11) over HeadwordLists/union/union_headwords.tsv"
+    },
+    "digest_form": "sha256 over the LF-canonical form (CRLF normalised; this repo's .gitattributes already enforces eol=lf, so working-tree bytes equal canonical bytes)",
+    "rows_convention": "rows = data rows excluding the single header line",
+    "build_timestamps": {
+      "markup-tag-census-e39": "2026-07-11 (H683, Fable 5 claude-fable-5)",
+      "headword-overlap-matrix-e40": "2026-07-11 (H684, Fable 5 claude-fable-5)"
+    },
+    "declared_tolerances": "Rebuild at the PINS reproduces every declared digest exactly (verified 2026-09-10: census rerun against a git-archive extraction of csl-orig 78cbb257 v02 reproduces a8ebc33e byte-for-byte; overlap rerun against the pinned union blob reproduces 60d5f30c byte-for-byte). Rebuild against CURRENT upstream differs and is not a defect: csl-orig v02 has drifted past 78cbb257 since the run (working-clone rerun yields 0ac35fc9), and the in-repo union_headwords.tsv was refreshed post-build (de986505, 2026-09-05, H4075: 323,425 → 323,422 data rows) — the pinned inputs are authoritative for this release."
+  },
+  "tool_versions": {
+    "builders": "data/markup_tag_census.py + data/headword_overlap_matrix.py, stdlib-only, committed beside the outputs",
+    "envelope_checker": "scripts/envelope_check.py — stdlib-only, Python >= 3.9, --envelope required, --source-root to override sibling-clone lookup",
+    "model_note": "no model-generated content enters the datasets; the envelope's prose was authored by H4255 (OxAlpha, zai-coding-plan/glm-5.3-flash) and every number in it is recomputed by scripts/envelope_check.py"
+  },
+  "licence": {
+    "code": "MIT (LICENSE)",
+    "data_public_tier": "CC-BY-4.0 (DATA_LICENSE.md) — covers exactly the two named FAIR Release #1 TSVs",
+    "per_dataset": {
+      "markup-tag-census-e39": "CC-BY-4.0",
+      "headword-overlap-matrix-e40": "CC-BY-4.0",
+      "headword-unique-counts-e40b": "CC-BY-4.0 (companion of the covered E40 builder)"
+    },
+    "restricted_rows": "none excluded — the covered datasets contain no restricted tier; the cross-linked <ls> citation graph (E38) lives in csl-atlas under that repo's own CC-BY-SA-4.0 and is deliberately not bundled"
+  },
+  "checks": [
+    {
+      "id": "CHK-1-schema",
+      "desc": "envelope carries every release-envelope-v1 required field with a non-empty value",
+      "result": "pass",
+      "ran_at": "2026-09-10",
+      "evidence": "scripts/envelope_check.py CHK-1 on the authored envelope"
+    },
+    {
+      "id": "CHK-2-pinned-artifacts",
+      "desc": "every pinned artifact's lf-canonical sha256 recomputes from the file's bytes; all four verified byte-identical at tag v1.144.164 and at HEAD",
+      "result": "pass",
+      "ran_at": "2026-09-10",
+      "evidence": "scripts/envelope_check.py CHK-2 (4/4); git show v1.144.164:<path> byte-comparison"
+    },
+    {
+      "id": "CHK-3-output-parity",
+      "desc": "per-dataset sha256/rows/size_bytes in output_digests recompute from disk and agree with the pinned-artifact digests (double-entry)",
+      "result": "pass",
+      "ran_at": "2026-09-10",
+      "evidence": "scripts/envelope_check.py CHK-3 (3/3 datasets)"
+    },
+    {
+      "id": "CHK-4-source-pins",
+      "desc": "census pin: set-digest re-derived over the 44 v02 main-text blobs at 78cbb257 matches. union pin: rev-list --before re-derivation returns d3e7fecc exactly, and the blob at the pin digests to the recorded sha256 (working tree deliberately differs — declared tolerance)",
+      "result": "pass",
+      "ran_at": "2026-09-10",
+      "evidence": "scripts/envelope_check.py CHK-4 (2/2 resolved, 2/2 match); skipped-not-failed when a sibling clone is absent on the checking box"
+    },
+    {
+      "id": "CHK-5-rerun",
+      "desc": "independent rerun reproduces declared outputs at the pinned inputs (V6 verification); tolerances declared in config",
+      "result": "pass",
+      "ran_at": "2026-09-10",
+      "evidence": "census: git archive of csl-orig 78cbb257 (v02) extracted fresh + data/markup_tag_census.py rerun reproduced a8ebc33e byte-for-byte; overlap: data/headword_overlap_matrix.py against the pinned union blob reproduced 60d5f30c byte-for-byte (both reruns executed 2026-09-10, independent of the recorded digests)"
+    },
+    {
+      "id": "CHK-6-code-revision",
+      "desc": "release tag resolves and pins the recorded commit",
+      "result": "pass",
+      "ran_at": "2026-09-10",
+      "evidence": "git rev-parse v1.144.164^{commit} == 971c8a6ecfc77b66b96a7c71cf2ad05c49ad986c"
+    }
+  ],
+  "review": [
+    {
+      "reviewer": "H683 census authoring (Fable 5, claude-fable-5)",
+      "verdict": "markup-tag census computed and methodology committed beside the output; <L> = <LEND> cross-check clean in all 44 dicts",
+      "date": "2026-07-11"
+    },
+    {
+      "reviewer": "H684 overlap authoring (Fable 5, claude-fable-5)",
+      "verdict": "overlap matrix + unique counts computed over the committed 15-dict union; exact SLP1 key equality, no extra normalisation",
+      "date": "2026-07-11"
+    },
+    {
+      "reviewer": "H817 FAIR Release #1 packaging",
+      "verdict": "deposit metadata, licence and provenance prepared in data/FAIR_RELEASE_1.md; curated deposit upload parked as a human @DO",
+      "date": "2026-07-13"
+    },
+    {
+      "reviewer": "H3961 Zenodo governance ruling (Sonnet 5, claude-sonnet-5)",
+      "verdict": "live repo-level Zenodo-GitHub integration (concept DOI 10.5281/zenodo.21306715, software record) is the intended posture; the curated CC-BY dataset deposit remains the only dataset-level DOI path",
+      "date": "2026-09-07"
+    },
+    {
+      "reviewer": "H4255 envelope authoring (OxAlpha, zai-coding-plan/glm-5.3-flash)",
+      "verdict": "envelope authored and mechanically verified; every digest recomputed from bytes, reruns executed at the pins, tolerances declared rather than hidden",
+      "date": "2026-09-10"
+    }
+  ],
+  "citation": {
+    "concept_doi": "10.5281/zenodo.21306715",
+    "concept_doi_note": "repo-level Zenodo-GitHub record, typed software/MIT — its own description states it covers the repository, not any dataset within it",
+    "curated_dataset_doi": "pending — metadata prepared in data/FAIR_RELEASE_1.md; the manual Zenodo upload is an open human @DO",
+    "cff": "CITATION.cff",
+    "policy": "DATA_LICENSE.md",
+    "record": "data/FAIR_RELEASE_1.md"
+  },
+  "publication_state": {
+    "state": "published",
+    "zenodo_archived": true,
+    "github_release": "https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.164",
+    "note": "repo-wide releases archive to Zenodo via the live GitHub integration (H3961 ruling); a dataset-level citable DOI awaits the prepared manual deposit (open @DO in data/FAIR_RELEASE_1.md) — until then this envelope is the dataset's verifiable pin"
+  }
+}
