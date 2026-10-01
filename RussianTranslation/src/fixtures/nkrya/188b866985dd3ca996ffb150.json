@@ -1,0 +1,207 @@
+{
+ "fetched_utc": "doc-example (ruscorpora/public-api), not live",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "слово",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_SKETCH"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "possiblePos": [
+   "S"
+  ],
+  "sketchData": {
+   "collocates": [
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "честный"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 10.3028
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "последний"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 9.53909
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "божий"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.68628
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "добрый"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.57147
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "ласковый"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.44075
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "ключевой"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.16321
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "русский"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.07674
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "следующий"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.87569
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "простой"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.86013
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "единый"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.85749
+        }
+       ]
+      }
+     ],
+     "sketchSynRelation": "amod_S_A"
+    },
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "звучать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.70832
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "означать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.08745
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "прозвучать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.42895
+        }
+       ]
+      }
+     ],
+     "sketchSynRelation": "nsubj_S_V"
+    }
+   ],
+   "lex": "слово"
+  }
+ }
+}

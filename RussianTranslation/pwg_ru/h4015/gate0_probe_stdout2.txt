@@ -1,0 +1,30 @@
+========================================================================
+H963 Gate-0 — single-profile c1 D-K health attempt
+========================================================================
+date (UTC)        : 2026-09-06T18:28:42Z
+profile           : c1  (D:\ClaudeTools\profiles\claude1\.claude)
+exact model       : claude-sonnet-5
+payload_bytes arg : 6491
+actual prompt B   : 8617  (floor 5000 B / 5 KiB=5120)
+ceiling           : 80000 ms (strict: either reading >= 80000 ms => NO-GO)
+run_id            : h963-c1-single-profile-gate0/2026-09-06T18:28:42Z-pid13360   (unique to THIS run — #729)
+campaign          : h963-c1-single-profile-gate0   (grouping label only, never a read scope)
+evidence root     : C:\Users\user\.pwg_ru_evidence   (source: PWG_EVIDENCE_DIR)
+events            : C:\Users\user\.pwg_ru_evidence\c1\h963_c1_gate0_probe_events.jsonl   (per-account series)
+health log        : C:\Users\user\.pwg_ru_evidence\health_probe_log.jsonl   (canonical cross-account, H3642)
+call ledger       : C:\Users\user\.pwg_ru_evidence\c1\h963_c1_gate0_calls.json
+preflight         : C:\Users\user\.pwg_ru_evidence\c1\h963_c1_gate0_preflight.json
+claude bin        : C:\Users\user\AppData\Roaming\npm\claude.cmd
+host state        : 2749 MB free of 16229 MB phys · commit 23857/32458 MB (73.5%) · node+claude 6 · python 7
+resolved argv     : ['C:\\Program Files\\nodejs\\node.EXE', 'C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\cli-wrapper.cjs']
+------------------------------------------------------------------------
+wall clock        : 81.8 s
+------------------------------------------------------------------------
+RAW READINGS (append-only telemetry, THIS run only — run_id h963-c1-single-profile-gate0/2026-09-06T18:28:42Z-pid13360):
+  purpose=warmup   elapsed_ms=56049   classification=success    output_bytes=1824
+  purpose=measured elapsed_ms=25736   classification=success    output_bytes=1811
+------------------------------------------------------------------------
+
+GATE-0 VERDICT: PASS
+  warm-up  56049 ms (success)
+  measured 25736 ms (success), strictly below 80000 ms

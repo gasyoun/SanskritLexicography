@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # BOOK_PLAN.meta.md — metadoc for `BOOK_PLAN.md`
 
 _Created: 13-07-2026 · Last updated: 18-07-2026 (H1240 backlog-1/2 close — 14 of 14 chapters)_

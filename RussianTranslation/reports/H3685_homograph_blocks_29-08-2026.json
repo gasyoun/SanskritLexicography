@@ -1,0 +1,285 @@
+{
+ "rows_in_store": 11462,
+ "class1b_block_count": 34,
+ "class1b_schema_invalid_rows": 0,
+ "class1b_class2_leaks_open": 7,
+ "blocks": [
+  {
+   "key1": "Cid",
+   "subcards": [
+    "_cid~~h0_07_ava",
+    "_cid~~h2_00_pwg00"
+   ],
+   "ru_preview": "<div n=\"p\">— {#ava#}"
+  },
+  {
+   "key1": "DA",
+   "subcards": [
+    "_d_a~~h0_80_anusam",
+    "_d_a~~h6_23_anusam"
+   ],
+   "ru_preview": "<div n=\"p\">— {#anusam#}"
+  },
+  {
+   "key1": "DA",
+   "subcards": [
+    "_d_a~~h0_81_a_bisam",
+    "_d_a~~h6_24_a_bisam"
+   ],
+   "ru_preview": "<div n=\"p\">— {#aBisam#}"
+  },
+  {
+   "key1": "DA",
+   "subcards": [
+    "_d_a~~h0_83_upasam",
+    "_d_a~~h10_07_upasam"
+   ],
+   "ru_preview": "<div n=\"p\">— {#upasam#}"
+  },
+  {
+   "key1": "DA",
+   "subcards": [
+    "_d_a~~h10_03_vi",
+    "_d_a~~h6_20_vi"
+   ],
+   "ru_preview": "<div n=\"p\">— {#vi#}"
+  },
+  {
+   "key1": "DA",
+   "subcards": [
+    "_d_a~~h10_05_prativi",
+    "_d_a~~h6_21_prativi"
+   ],
+   "ru_preview": "<div n=\"p\">— {#prativi#}"
+  },
+  {
+   "key1": "DA",
+   "subcards": [
+    "_d_a~~h10_06_sam",
+    "_d_a~~h6_22_sam"
+   ],
+   "ru_preview": "<div n=\"p\">— {#sam#}"
+  },
+  {
+   "key1": "banD",
+   "subcards": [
+    "ban_d~~h1_00_pwg00",
+    "ban_d~~h2_00_pwg00"
+   ],
+   "ru_preview": "<div n=\"p\">— {#ud#}"
+  },
+  {
+   "key1": "banD",
+   "subcards": [
+    "ban_d~~h1_00_pwg00",
+    "ban_d~~h2_00_pwg00"
+   ],
+   "ru_preview": "<div n=\"p\">— {#ni#}"
+  },
+  {
+   "key1": "diS",
+   "subcards": [
+    "di_s~~h0_04_anu",
+    "di_s~~h2_00_pwg00"
+   ],
+   "ru_preview": "<div n=\"p\">— {#anu#}"
+  },
+  {
+   "key1": "gam",
+   "subcards": [
+    "gam~~h0_zz_pw00",
+    "gam~~h0_zz_pw01",
+    "gam~~h0_zz_pw03"
+   ],
+   "ru_preview": "<div n=\"m\">— <ab>Caus.</ab>"
+  },
+  {
+   "key1": "hA",
+   "subcards": [
+    "h_a~~h1_15_pari",
+    "h_a~~h1_20_vi"
+   ],
+   "ru_preview": "<div n=\"1\">— 3) <ab>pass.</ab>"
+  },
+  {
+   "key1": "han",
+   "subcards": [
+    "han~~h0_zz_pw00",
+    "han~~h0_zz_pw01",
+    "han~~h0_zz_pw02",
+    "han~~h0_zz_pw03"
+   ],
+   "ru_preview": "<div n=\"m\">— <ab>Caus.</ab> <ab>s. u.</ab> {#GAtay#}."
+  },
+  {
+   "key1": "jan",
+   "subcards": [
+    "jan~~h0_zz_pw02",
+    "jan~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#pratyA#} II. 3."
+  },
+  {
+   "key1": "jan",
+   "subcards": [
+    "jan~~h0_zz_pw02",
+    "jan~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#nis#} 3. 5."
+  },
+  {
+   "key1": "jan",
+   "subcards": [
+    "jan~~h0_zz_pw02",
+    "jan~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#pra#} II. 4."
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "15〉 {#mita/#} наряду с {#saM/mita#} <ls>MAITR. S. 2,11,1 (140,4)</ls>."
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#A#} 1〉 {%создавать, производить%} <ls>ṚV. 3,38,7</ls>."
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "2〉 добывать, доставлять <ls>ṚV. 10,56,2</ls>."
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "{#mA#} с <ab>Präs.</ab> {%чтобы не%} <ls>R. GORR. 1,65,21</ls>. {#purA mA#} с <a"
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#A#} 5."
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#pra#} <ab>Desid.</ab> желать составить правильное представление о чем-либо"
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h0_zz_pw03",
+    "m_a~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "— С {#sam#} V. 5."
+  },
+  {
+   "key1": "mA",
+   "subcards": [
+    "m_a~~h1_00_pwg00",
+    "m_a~~h2_11_pari_ri"
+   ],
+   "ru_preview": "<div n=\"p\">— {#pariRi#}, ˚{#mimIte#}\n<ls>P. 8,4,17</ls>, <ab>Sch.</ab>"
+  },
+  {
+   "key1": "man",
+   "subcards": [
+    "man~~h0_zz_pw02",
+    "man~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "С {#samanu#} <ab>Caus.</ab> <ab>dass.</ab> <ls n=\"JĀTAKAM.\">22. 22,73</ls>."
+  },
+  {
+   "key1": "man",
+   "subcards": [
+    "man~~h0_zz_pw02",
+    "man~~h0_zz_pwkvn"
+   ],
+   "ru_preview": "С {#prati#} <ab>Caus.</ab> V. {%чтить в ответ, воздавать кому-л.%} (<ab>Acc.</ab"
+  },
+  {
+   "key1": "muc",
+   "subcards": [
+    "muc~~h0_zz_pw00",
+    "muc~~h0_zz_pw01"
+   ],
+   "ru_preview": "<div n=\"1\">— 6〉 {%погашать%} (долг)."
+  },
+  {
+   "key1": "muc",
+   "subcards": [
+    "muc~~h0_zz_pw00",
+    "muc~~h0_zz_pw01"
+   ],
+   "ru_preview": "<div n=\"m\">— <ab>Caus.</ab>"
+  },
+  {
+   "key1": "pat",
+   "subcards": [
+    "pat~~h0_zz_pw01",
+    "pat~~h0_zz_pw02"
+   ],
+   "ru_preview": "<div n=\"1\">— 5〉 {%попадать в%} (<ab>Loc.</ab>)."
+  },
+  {
+   "key1": "pat",
+   "subcards": [
+    "pat~~h0_zz_pw01",
+    "pat~~h0_zz_pw02"
+   ],
+   "ru_preview": "<div n=\"m\">— <ab>Caus.</ab>"
+  },
+  {
+   "key1": "vas",
+   "subcards": [
+    "vas~~h0_zz_pw00",
+    "vas~~h0_zz_pw02"
+   ],
+   "ru_preview": "<div n=\"m\">— <ab>Caus.</ab>"
+  },
+  {
+   "key1": "viS",
+   "subcards": [
+    "vi_s~~h0_zz_pw00",
+    "vi_s~~h0_zz_pw02"
+   ],
+   "ru_preview": "<div n=\"2\">— a〉 с <ab>act.</ab> <ab>Bed.</ab>"
+  },
+  {
+   "key1": "viS",
+   "subcards": [
+    "vi_s~~h0_zz_pw00",
+    "vi_s~~h0_zz_pw02"
+   ],
+   "ru_preview": "<div n=\"2\">— b〉 с <ab>pass.</ab> <ab>Bed.</ab>"
+  },
+  {
+   "key1": "viS",
+   "subcards": [
+    "vi_s~~h0_zz_pw00",
+    "vi_s~~h0_zz_pw01",
+    "vi_s~~h0_zz_pw02",
+    "vi_s~~h0_zz_pw03"
+   ],
+   "ru_preview": "<div n=\"m\">— <ab>Caus.</ab>"
+  }
+ ]
+}

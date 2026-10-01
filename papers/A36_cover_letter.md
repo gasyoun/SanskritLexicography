@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Cover letter — submission to *Beiträge zur Geschichte der Sprachwissenschaft*
 
 *(Draft, 2026-07-02. English version; a German version can be supplied — see note at the end.)*
@@ -68,3 +70,5 @@ letter and adapts cleanly).
 **Suggested reviewers / contacts** *(optional, to be completed)*: a historian of Indology /
 Sanskrit lexicography; a historian of nineteenth-century philological practice; a digital-
 humanities scholar working on historical dictionaries.
+
+_Dr. Mārcis Gasūns_

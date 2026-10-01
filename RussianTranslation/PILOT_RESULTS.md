@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru pilot — end-to-end run (2026-06-15)
 
 A 6-card pilot that runs the **full De→Ru pipeline** on real PWG entries with
@@ -61,3 +63,5 @@ intact**, and every Sanskrit `{#…#}`, source ref `<ls>`, abbreviation `<ab>`,
 - **Scale-up:** the same translate/judge workflow, looped/scheduled over batches
   ("Sonnet nonstop"), is the production run. See
   [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md).
+
+_Dr. Mārcis Gasūns_

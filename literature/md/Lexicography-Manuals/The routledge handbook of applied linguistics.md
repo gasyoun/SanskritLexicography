@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The routledge handbook of applied linguistics_ volume one -- Li Wei (editor), Zhu Hua (editor), James Simpson (editor) -- Routledge Handbooks in -- isbn13 9780367536213 -- 7aed65b4810138aacbb00ddc367a725c -- Anna’s 
 
 **Source:** `The routledge handbook of applied linguistics_ volume one -- Li Wei (editor), Zhu Hua (editor), James Simpson (editor) -- Routledge Handbooks in -- isbn13 9780367536213 -- 7aed65b4810138aacbb00ddc367a725c -- Anna’s .pdf`  
@@ -25918,3 +25920,5 @@ vocabulary learning 218–219, 221–226, 228–229
 Vygotsky, L. S. 386–389, 391–392, 394–395 
 word characteristics 219–220, 229 
 416
+
+_Dr. Mārcis Gasūns_

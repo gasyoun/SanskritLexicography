@@ -62,7 +62,9 @@ import pwg_mask                                            # noqa: E402 G1 gloss
 from government_census import extract_government           # noqa: E402 G2
 from form_labels import extract_form_notes                 # noqa: E402 form layer
 from citation_edges import extract_citation_edges          # noqa: E402 G3
-from edition_rel import classify_edition_rel, homonym_of   # noqa: E402 G4
+from edition_rel import (  # noqa: E402 G4
+    base_subtype, classify_edition_rel, homonym_of,
+)
 
 DEFAULT_ROWS = os.path.join(HERE, 'fixtures', 'pwg_de_edition.fixture.jsonl')
 DEFAULT_OUT = os.path.join(HERE, '..', 'release', 'fixture', 'de_edition')
@@ -786,8 +788,12 @@ def selftest():
           'form_notes: %r' % lay['form_notes'])
     check([e['siglum'] for e in lay['citation_edges']] == ['ṚV', 'MBH'],
           'citation_edges: %r' % lay['citation_edges'])
-    check(lay['edition_rel'].get('subtype') in ('restate', 'pw_correct', 'derived_sense',
-                                                'unknown'),
+    # H3752: compared on the BASE label. This fixture is a lone PW row with no
+    # PWG skeleton beside it, so nothing can be placed and the fallback classify
+    # returns `restate_unplaced` — correctly. What this check is about is the
+    # KIND of relation, and `base_subtype` is exactly the seam for that.
+    check(base_subtype(lay['edition_rel'].get('subtype'))
+          in ('restate', 'pw_correct', 'derived_sense', 'unknown'),
           'edition_rel subtype: %r' % lay['edition_rel'])
     definition, equivalents, examples = sense_text(row['de'])
     check(equivalents == ['sich freuen', 'erquicken'], 'equivalents: %r' % equivalents)

@@ -39,6 +39,7 @@ for p in (HERE, SRC):
 
 from store_path import canonical_store            # noqa: E402
 import promote_final_cards as pfc                 # noqa: E402
+from promote_lock import PromoteClaim              # noqa: E402
 import spot_check_daily as scd                    # noqa: E402
 
 SCHEMA = 'pwg.lane_freeze.v1'
@@ -73,8 +74,39 @@ def revert_windows(records, store, quarantine_path, execute=False):
     keys = set(scd.promoted_keys(records))
     if not keys or not os.path.exists(store):
         return [], [], sorted(keys)
-    with open(store, encoding='utf-8') as f:
-        rows = [json.loads(line) for line in f if line.strip()]
+
+    def read_and_partition():
+        with open(store, encoding='utf-8') as f:
+            rows = [json.loads(line) for line in f if line.strip()]
+        return _partition(rows, keys)
+
+    if not execute:
+        # Dry run is a pure read: no claim is taken, and none is needed. Holding the
+        # promote claim just to compute a report would block live promotes for nothing.
+        removed, _kept, protected = read_and_partition()
+        return removed, sorted(protected), sorted(keys)
+
+    # H3748 (#1800 C5-3): an EXECUTING revert is a whole-store rewrite, and it took no
+    # claim at all — it read, filtered, and called pfc._atomic_write_rows with nothing
+    # serializing it against a concurrent promote. That is precisely the
+    # read-existing-store / merge / os.replace window promote_lock.py exists to guard,
+    # so it now takes the same claim, across the READ as well as the write. ClaimBusy
+    # propagates deliberately: a revert that cannot serialize must fail loudly rather
+    # than race the promote it is reverting.
+    with PromoteClaim(store):
+        removed, kept, protected = read_and_partition()
+        if removed:
+            backup = pfc._backup_path(store, 'lane_guard_revert')
+            pfc._fsynced_backup(store, backup)
+            with open(quarantine_path, 'w', encoding='utf-8', newline='\n') as f:
+                for row in removed:
+                    f.write(json.dumps(row, ensure_ascii=False) + '\n')
+            pfc._atomic_write_rows(store, kept)
+    return removed, sorted(protected), sorted(keys)
+
+
+def _partition(rows, keys):
+    """(removed, kept, protected_subcards) — the selection logic, unchanged and pure."""
 
     def affected(row):
         sub = row.get('subcard') or ''
@@ -90,14 +122,7 @@ def revert_windows(records, store, quarantine_path, execute=False):
                 removed.append(row)
         else:
             kept.append(row)
-    if execute and removed:
-        backup = pfc._backup_path(store, 'lane_guard_revert')
-        pfc._fsynced_backup(store, backup)
-        with open(quarantine_path, 'w', encoding='utf-8', newline='\n') as f:
-            for row in removed:
-                f.write(json.dumps(row, ensure_ascii=False) + '\n')
-        pfc._atomic_write_rows(store, kept)
-    return removed, sorted(protected), sorted(keys)
+    return removed, kept, protected
 
 
 def run(args):

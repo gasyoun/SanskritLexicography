@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Entsiklopedicheskiy_slovar_yunogo_filologa_Yazykoznanie 1984
 
 **Source:** `Entsiklopedicheskiy_slovar_yunogo_filologa_Yazykoznanie 1984.pdf`  
@@ -36487,3 +36489,5 @@ IОI закрытое 83, 194—196 (М. В. Панов)
 Замеченные опечатки
 с. 274. Левая колонка, 1-я строка сверху. Надо читать:
 Если бы все, что написано Пешков-
+
+_Dr. Mārcis Gasūns_

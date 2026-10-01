@@ -1,0 +1,439 @@
+{
+  "handoff": "H3985",
+  "reproduces": "H1746 / FINDINGS §495",
+  "gap": "SanskritLexicography/GAPS.md §6",
+  "measured_at": "2026-09-03T09:58:45.350340+00:00",
+  "model": "Opus 5 (claude-opus-5)",
+  "roots": [
+    "/Users/mac/Documents/GitHub/SamudraManthanam",
+    "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation"
+  ],
+  "files_scanned": 85,
+  "files_with_inline_iast": 32,
+  "files_cyrillic_heavy_no_iast": 20,
+  "h1746_reference": {
+    "files_scanned": 152,
+    "with_iast": 61,
+    "pure_cyr": 47
+  },
+  "seeds_with_iast": [
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "bytes": 4902257,
+      "lines_scanned": 4668,
+      "cyrillic_lines": 4378,
+      "iast_paren_hits": 977
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/pwg_ru/rv_renou_citation_index.jsonl",
+      "rel": "SanskritLexicography-h3985-73254/RussianTranslation/pwg_ru/rv_renou_citation_index.jsonl",
+      "bytes": 811143,
+      "lines_scanned": 2213,
+      "cyrillic_lines": 2213,
+      "iast_paren_hits": 547
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Рамаяны 1-2.txt",
+      "bytes": 88476,
+      "lines_scanned": 463,
+      "cyrillic_lines": 463,
+      "iast_paren_hits": 186
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/bhagavadgita-erman.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/bhagavadgita-erman.html",
+      "bytes": 830046,
+      "lines_scanned": 720,
+      "cyrillic_lines": 720,
+      "iast_paren_hits": 100
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/bhagavadgita-erman.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/bhagavadgita-erman.jsonl",
+      "bytes": 1565617,
+      "lines_scanned": 1701,
+      "cyrillic_lines": 1701,
+      "iast_paren_hits": 99
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/Рамаяна 3. Словарь.txt",
+      "bytes": 42986,
+      "lines_scanned": 209,
+      "cyrillic_lines": 209,
+      "iast_paren_hits": 81
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/pwg_ru/H1302_GERMAN_RESIDUE_REQUEUE_WORKLIST_2026-07-19.jsonl",
+      "rel": "SanskritLexicography-h3985-73254/RussianTranslation/pwg_ru/H1302_GERMAN_RESIDUE_REQUEUE_WORKLIST_2026-07-19.jsonl",
+      "bytes": 126232,
+      "lines_scanned": 465,
+      "cyrillic_lines": 282,
+      "iast_paren_hits": 15
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/ZALIZNYAK_INDEX.md",
+      "rel": "SanskritLexicography-h3985-73254/RussianTranslation/ZALIZNYAK_INDEX.md",
+      "bytes": 11151,
+      "lines_scanned": 180,
+      "cyrillic_lines": 6,
+      "iast_paren_hits": 2
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika-literatura.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika-literatura.html",
+      "bytes": 23899,
+      "lines_scanned": 47,
+      "cyrillic_lines": 45,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika-ob-avtore.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika-ob-avtore.html",
+      "bytes": 7709,
+      "lines_scanned": 16,
+      "cyrillic_lines": 14,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika-preface.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika-preface.html",
+      "bytes": 26858,
+      "lines_scanned": 27,
+      "cyrillic_lines": 25,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/kadambara-svikarana-karika.html",
+      "bytes": 65255,
+      "lines_scanned": 133,
+      "cyrillic_lines": 131,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/docs/H2738_MBH_WORD_ARTICLES_INDEXES.md",
+      "rel": "SamudraManthanam/docs/H2738_MBH_WORD_ARTICLES_INDEXES.md",
+      "bytes": 5125,
+      "lines_scanned": 76,
+      "cyrillic_lines": 30,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX.txt",
+      "bytes": 55267,
+      "lines_scanned": 1831,
+      "cyrillic_lines": 1831,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_phrases.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_phrases.txt",
+      "bytes": 57728,
+      "lines_scanned": 721,
+      "cyrillic_lines": 721,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_intersection.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_intersection.txt",
+      "bytes": 54129,
+      "lines_scanned": 1794,
+      "cyrillic_lines": 1794,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/Ram3_automated_index_forms.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/Ram3_automated_index_forms.txt",
+      "bytes": 28452,
+      "lines_scanned": 376,
+      "cyrillic_lines": 376,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/Ramayana_names.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/Ramayana_names.txt",
+      "bytes": 13311,
+      "lines_scanned": 525,
+      "cyrillic_lines": 525,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/Ramayana_names_clean.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/Ramayana_names_clean.txt",
+      "bytes": 11822,
+      "lines_scanned": 414,
+      "cyrillic_lines": 414,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/Ramayana_names_clean_united.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/Ramayana_names_clean_united.txt",
+      "bytes": 11121,
+      "lines_scanned": 380,
+      "cyrillic_lines": 380,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_01.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_01.txt",
+      "bytes": 19736,
+      "lines_scanned": 779,
+      "cyrillic_lines": 779,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_02.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_02.txt",
+      "bytes": 16396,
+      "lines_scanned": 591,
+      "cyrillic_lines": 591,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_01.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_01.txt",
+      "bytes": 58923,
+      "lines_scanned": 779,
+      "cyrillic_lines": 779,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_02.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_02.txt",
+      "bytes": 43713,
+      "lines_scanned": 591,
+      "cyrillic_lines": 591,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_Рам_01_02.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_Рам_01_02.txt",
+      "bytes": 82458,
+      "lines_scanned": 1103,
+      "cyrillic_lines": 1103,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_Рам_03.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_Рам_03.txt",
+      "bytes": 43701,
+      "lines_scanned": 578,
+      "cyrillic_lines": 578,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_Рамаяна_3.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_Рамаяна_3.txt",
+      "bytes": 28452,
+      "lines_scanned": 376,
+      "cyrillic_lines": 376,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_Рам_01_02.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_Рам_01_02.txt",
+      "bytes": 27173,
+      "lines_scanned": 1103,
+      "cyrillic_lines": 1103,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_Рам_03.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_Рам_03.txt",
+      "bytes": 15615,
+      "lines_scanned": 578,
+      "cyrillic_lines": 578,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_Рамаяна_3.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_Рамаяна_3.txt",
+      "bytes": 11117,
+      "lines_scanned": 376,
+      "cyrillic_lines": 376,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index_declined_manual_gold.json",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index_declined_manual_gold.json",
+      "bytes": 25667,
+      "lines_scanned": 109,
+      "cyrillic_lines": 107,
+      "iast_paren_hits": 1
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/chronology/index.html",
+      "rel": "SamudraManthanam/web/corpus_builder/chronology/index.html",
+      "bytes": 287978,
+      "lines_scanned": 166,
+      "cyrillic_lines": 2,
+      "iast_paren_hits": 1
+    }
+  ],
+  "seeds_pure_cyrillic": [
+    {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/release/reverse_index.jsonl",
+      "rel": "SanskritLexicography-h3985-73254/RussianTranslation/release/reverse_index.jsonl",
+      "bytes": 19815236,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 5000,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/add/To_add2/ramayana-potapovoy.html",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add2/ramayana-potapovoy.html",
+      "bytes": 2002776,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 2467,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_oneword.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_oneword.txt",
+      "bytes": 19825,
+      "lines_scanned": 1206,
+      "cyrillic_lines": 1206,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_extra.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_extra.txt",
+      "bytes": 10818,
+      "lines_scanned": 785,
+      "cyrillic_lines": 785,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl",
+      "bytes": 234493,
+      "lines_scanned": 597,
+      "cyrillic_lines": 597,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt",
+      "rel": "SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt",
+      "bytes": 63493,
+      "lines_scanned": 465,
+      "cyrillic_lines": 465,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl",
+      "bytes": 282430,
+      "lines_scanned": 464,
+      "cyrillic_lines": 464,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl",
+      "bytes": 235821,
+      "lines_scanned": 339,
+      "cyrillic_lines": 339,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index.txt",
+      "bytes": 8670,
+      "lines_scanned": 293,
+      "cyrillic_lines": 293,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index_declined.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index_declined.txt",
+      "bytes": 68748,
+      "lines_scanned": 293,
+      "cyrillic_lines": 293,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h3985-73254/RussianTranslation/glossary/SAMPLE_root_glossary.md",
+      "rel": "SanskritLexicography-h3985-73254/RussianTranslation/glossary/SAMPLE_root_glossary.md",
+      "bytes": 6790,
+      "lines_scanned": 238,
+      "cyrillic_lines": 182,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.jsonl",
+      "bytes": 85319,
+      "lines_scanned": 128,
+      "cyrillic_lines": 128,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.raw.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.raw.jsonl",
+      "bytes": 85319,
+      "lines_scanned": 128,
+      "cyrillic_lines": 128,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-literatura.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-literatura.jsonl",
+      "bytes": 30914,
+      "lines_scanned": 42,
+      "cyrillic_lines": 42,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_options.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_options.txt",
+      "bytes": 4893,
+      "lines_scanned": 38,
+      "cyrillic_lines": 38,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_lack.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_lack.txt",
+      "bytes": 1028,
+      "lines_scanned": 33,
+      "cyrillic_lines": 33,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_01_part.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_01_part.txt",
+      "bytes": 749,
+      "lines_scanned": 32,
+      "cyrillic_lines": 32,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_01_part.txt",
+      "rel": "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_01_part.txt",
+      "bytes": 1951,
+      "lines_scanned": 32,
+      "cyrillic_lines": 32,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/templates/index.html",
+      "rel": "SamudraManthanam/web/templates/index.html",
+      "bytes": 14960,
+      "lines_scanned": 369,
+      "cyrillic_lines": 28,
+      "iast_paren_hits": 0
+    },
+    {
+      "path": "/Users/mac/Documents/GitHub/SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-preface.jsonl",
+      "rel": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-preface.jsonl",
+      "bytes": 42792,
+      "lines_scanned": 22,
+      "cyrillic_lines": 22,
+      "iast_paren_hits": 0
+    }
+  ]
+}

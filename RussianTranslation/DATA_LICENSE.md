@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru data & edition licence
 
 `SPDX-License-Identifier: CC-BY-SA-4.0`
@@ -69,3 +71,5 @@ A machine-readable [CITATION.cff](https://github.com/gasyoun/SanskritLexicograph
 sits beside this file and declares the same `CC-BY-SA-4.0` licence. It stays at
 `version: unreleased` until the immutable edition cut is archived and a DOI is
 registered against it — see [DOI_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DOI_PLAN.md).
+
+_Dr. Mārcis Gasūns_

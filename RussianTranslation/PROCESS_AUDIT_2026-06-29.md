@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG→Russian Pipeline — Ultracode Retrospective (2026-06-29)
 
 Prepared for Mārcis Gasūns. Source: a 7-dimension parallel audit (speed, tokens,
@@ -203,3 +205,5 @@ over-production (hard-fail + re-translate); (7) stratum auto-fill authoritative?
 facts (per-run vs account concurrency cap; catchable 429 + in-harness await;
 programmatic launch?); (17) willing to spend one deliberate run-to-cap window to
 measure the Max divisor + throttle-onset concurrency?
+
+_Dr. Mārcis Gasūns_

@@ -25,7 +25,9 @@ import renou
 import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-MW = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'mw', 'mw.txt'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+MW = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'mw', 'mw.txt'))
 DEFAULT_INDEX = os.path.join(HERE, 'dcs_lemma_renou.json')
 OUT = os.path.join(HERE, 'mw_renou.jsonl')
 STATES = renou.STATES

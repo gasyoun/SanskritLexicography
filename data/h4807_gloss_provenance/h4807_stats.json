@@ -1,0 +1,139 @@
+{
+ "gloss_blocks_total": 708875,
+ "class_census": {
+  "cologne_ap90": 70724,
+  "cologne_mw": 177507,
+  "cologne_other": 389681,
+  "other_external": 70963
+ },
+ "top_sources": [
+  [
+   "Cologne Digital Sanskrit Dictionaries: Monier-Williams Sanskrit-English Dictionary",
+   177507
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Böhtlingk and Roth Grosses Petersburger Wörterbuch",
+   97933
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Sanskrit-Wörterbuch in kürzerer Fassung",
+   88479
+  ],
+  [
+   "DDSA: The practical Sanskrit-English dictionary",
+   70724
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Shabda-Sagara Sanskrit-English Dictionary",
+   44808
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Yates Sanskrit-English Dictionary",
+   41542
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Cappeller Sanskrit-English Dictionary",
+   38916
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Aufrecht Catalogus Catalogorum",
+   32120
+  ],
+  [
+   "DILA Glossaries: Sanskrit-Chinese-English (dictionary of Buddhism)",
+   25296
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Benfey Sanskrit-English Dictionary",
+   22394
+  ],
+  [
+   "DDSA: Paia-sadda-mahannavo; a comprehensive Prakrit Hindi dictionary (S)",
+   19704
+  ],
+  [
+   "Alar: Kannada-English corpus",
+   17370
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Edgerton Buddhist Hybrid Sanskrit Dictionary",
+   17012
+  ],
+  [
+   "Cologne Digital Sanskrit Dictionaries: Goldstücker Sanskrit-English Dictionary",
+   6477
+  ],
+  [
+   "Sutta: Tipiṭaka Pāḷi-Myanmar Dictionary (တိပိဋက-ပါဠိမြန်မာ အဘိဓာန်)",
+   2799
+  ],
+  [
+   "Sutta: Pali Word Grammar from Pali Myanmar Dictionary",
+   2797
+  ],
+  [
+   "DDSA: Paia-sadda-mahannavo; a comprehensive Prakrit Hindi dictionary",
+   2143
+  ],
+  [
+   "moedict.tw: Mengdian Mandarin Chinese Dictionary",
+   175
+  ],
+  [
+   "CC-CEDICT: Community maintained free Chinese-English dictionary",
+   163
+  ],
+  [
+   "Sutta: The Pali Text Society's Pali-English Dictionary",
+   155
+  ],
+  [
+   "NTI Reader: Chinese-English dictionary",
+   110
+  ],
+  [
+   "DILA Glossaries: Digital Dictionary of Buddhism",
+   107
+  ],
+  [
+   "DILA Glossaries: Vietnamese-Chinese-English (dictionary of Buddhism)",
+   68
+  ],
+  [
+   "DILA Glossaries: Pali-Chinese-English (dictionary of Buddhism)",
+   47
+  ],
+  [
+   "DILA Glossaries: Tibetan-Chinese-English (dictionary of Buddhism)",
+   18
+  ],
+  [
+   "DDSA: The Molesworth Marathi and English Dictionary (Sanskrit)",
+   7
+  ],
+  [
+   "DDSA: The Molesworth Marathi and English Dictionary",
+   2
+  ],
+  [
+   "DDSA: The Aryabhusan school dictionary, Marathi-English",
+   2
+  ]
+ ],
+ "mwap_attributed": 248231,
+ "mw_attributed": 177507,
+ "ap90_attributed": 70724,
+ "verdict_census": {
+  "match_G2": 74362,
+  "D1_headword_miss": 123362,
+  "D2_no_text_match": 43347,
+  "match_G3": 6941,
+  "match_G1": 219
+ },
+ "sample_rows": 50,
+ "sample_revalidated": 50,
+ "sample_d3": [],
+ "pages_total": 255348,
+ "pages_with_skt_dict": 255267,
+ "pages_no_skt_dict": 81
+}

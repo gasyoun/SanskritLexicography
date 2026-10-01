@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # internet lexicography -- Annette Klosa-Kückelhaus -- 1, 2024 -- dr gruyter -- b8b6fa356dcc7b33e79a9192b1375072 -- Anna’s Archive
 
 **Source:** `internet lexicography -- Annette Klosa-Kückelhaus -- 1, 2024 -- dr gruyter -- b8b6fa356dcc7b33e79a9192b1375072 -- Anna’s Archive.pdf`  
@@ -13122,3 +13124,5 @@ XSD 115
 XSLT 105
 312
 Index
+
+_Dr. Mārcis Gasūns_

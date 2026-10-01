@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 22-09-2026_
+
 # PWG-RU launch failure ledger
 
 _Created: 07-07-2026 · Owner: every session that launches Workflow/API work_
@@ -560,6 +562,150 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "Never pass --max-agents 1 on multi-key or heal-capable windows. Use it only for true single-spawn canaries (one key that must finish in one call) or when deliberately starving the run. Production multi-card windows rely on manifest budgets (max_translate_agents / max_heal_agents) with --max-agents omitted or set to their sum. When diagnosing only-b0/all-nulls: check budget_stops and translate_agents_spent BEFORE rate_limit/content theories. Prefer failures that retain budget_exceeded if a code fix later prevents note-overwrite (optional hardening).",
   "residual_status": "structurally-guarded",
   "residual_risk": "Bounded-run docs (H1447/H1110 ladder) still recommend --max-agents 1 for tiny canaries; copy-pasting that flag onto medium50/nominal windows re-creates the incident. c2 Pro also hit session limit mid fix-run (resets 15:30 Europe/Moscow) — separate concurrency/api residual; do not conflate with the budget flag."
+ },
+ {
+  "id": "H4527_ACCEPTANCE_PROBE_REFUSAL_2026-09-11",
+  "handoff": "H4527",
+  "date": "2026-09-11",
+  "title": "cohort acceptance window STOPped on the readiness warm-up probe while the same profile translated a real card clean 40 minutes earlier",
+  "lane": "bounded_staged_run --execute --cohort-path --cohort-width 1, profile c1 Max",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go",
+  "expected": {
+   "agents": "probe_fleet warm-up returns a schema-valid readiness answer on c1, then one nominal window (h4527acc05, 1 subcard) dispatches through the cohort path",
+   "tokens": "warm-up comparable to the same day's successful readings: 73 075 ms measured probe at 05:33Z, two dq_canary_puregloss GO windows at 15:58Z and 16:19Z"
+  },
+  "actual": {
+   "agents": "fleet probe STOP on account c1: warm-up probe content -> STOP. Zero windows dispatched, zero translation calls, the prepared lease h4527acc05 untouched.",
+   "tokens": "113 531 ms wall / 93 090 ms api against a 240 000 ms production_v4 ceiling; 8038 output tokens of which 7312 thinking; total_cost_usd 0.28122 costBasis list; the reservation ledger records cost_evaluable=false (Max-route credit billing dormant), so ledger cost is UNKNOWN, not zero"
+  },
+  "passes": 1,
+  "symptoms": "stop_reason \"tool_use\", terminal_reason \"completed\", is_error false, num_turns 2, result {\"ok\":false}, structured_output {\"ok\":false}, schema_valid false, classification content. Raw envelope: src/pilot/output/h963_c4_gate0_probe_raw_h4527-acc-091118.txt",
+  "classification": "gate-bug",
+  "root_cause": "The §6.2/§6.3 readiness-probe refusal class H4213 recorded three times (c1 profile surface noise read as injection; answer {\"ok\":false}), with a sharper mechanism now visible in the envelope: the probe ends on stop_reason \"tool_use\" after 7312 thinking tokens — the model reaches for a tool instead of answering the plain readiness question, then returns {\"ok\":false}. Latency is NOT implicated: 113 531 ms sits less than half of the 240 000 ms production_v4 ceiling, and host commit was 80.38%, the same band as the day's successful readings. The decisive new evidence is a same-day counterexample on the SAME profile: three paid calls succeeded through headless_worker.py — dq_canary_puregloss GO at 15:58Z (82 862 ms) and 16:19Z (50 824 ms), and a real nominal translation window at 17:58Z (210 912 ms, audit 1/1 clean, promoted, store 11516 -> 11521). headless_worker.py does not call probe_fleet; bounded_staged_run --execute does. So the lane, the profile, the credentials and the route are all demonstrably healthy, and the ONLY thing refusing is the readiness warm-up prompt itself.",
+  "guardrail": "Do not read a warm-up-probe content STOP as lane or profile ill-health without checking whether a non-probe route succeeded on the same profile the same day — on 11-09 it had, three times. This is the evidence H4213 §6.3 option (b) 'retune _probe_prompt task-shape (selftest-backed)' was waiting for, and it now outranks options (a)/(c)/(e): the prompt is the failing component, not the host, the hooks or the ceiling. Any retune stays selftest-backed and must not weaken what the probe asserts (H4213: 'must not be hand-weakened'). RED=STOP was honoured: no retry, and the day's 2-attempt ration for c1 is now spent (05:32Z + 18:08Z).",
+  "residual_status": "bug-hunt-handoff",
+  "residual_risk": "Every bounded_staged_run --execute path — the whole cohort-acceptance rung of H4527 — is gated behind this probe, so H4527 work item 1 cannot complete while it refuses, even though the prepared lease h4527acc05, the cohort wiring and a valid canary GO receipt were all in place. The receipt (h4527-canary-gate-091116b, judged ~16:19Z) expires ~22:19Z and the ration is spent, so the next attempt needs a fresh probe attempt on a later UTC day. Profile-surface changes remain human-owned (GTD row 0i)."
+ },
+ {
+  "id": "H4527_PROBE_INJECTION_SHAPE_2026-09-15",
+  "handoff": "H4527",
+  "date": "2026-09-15",
+  "title": "cohort acceptance window STOPped on the warm-up probe again, WITH --safe-mode; the transcript names the probe prompt itself as a prompt injection",
+  "lane": "bounded_staged_run --execute --cohort-path --cohort-width 1 --only-profile c1 --max-calls 3 --allow-unbounded, lease h4527acc05",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go, driving MSI over Tailscale ssh",
+  "expected": {
+   "agents": "a fresh canary GO (h4527-canary-150915, judged 14:22:16Z) lets the window through canary_gate; probe_fleet warm-up returns {\"ok\": true}; one nominal cohort-path window dispatches",
+   "tokens": "warm-up in the band of the 15-09 01:35Z safe-mode pass (26 208 ms, ~34 K-token first request)"
+  },
+  "actual": {
+   "agents": "fleet probe STOP on c1: warm-up content -> STOP. Zero windows, zero translation calls, lease untouched; run h4527-acc-150915b",
+   "tokens": "43 424 ms wall of a 240 000 ms production_v4 ceiling; cache_creation 9 155 + cache_read 25 236 input; 2 461 output of which 1 928 thinking; total_cost_usd 0.0695 list; host commit 85.97 %"
+  },
+  "passes": 1,
+  "symptoms": "stop_reason tool_use, result {\"ok\":false}, classification content, cli_safe_mode_effective true. Raw envelope src/pilot/output/h963_c4_gate0_probe_raw_h4527-acc-150915b.txt; session transcript D:\\ClaudeTools\\profiles\\claude1\\.claude\\projects\\D--pwg-ru-cli-cwd\\19cdeffa-935b-4395-b21b-d2665eb46924.jsonl.",
+  "classification": "gate-bug",
+  "root_cause": "The probe prompt reads as a prompt injection, and the model says so in visible text: an embedded \"READINESS CHECK\" block that \"claims to share authority with the top-level task framing\", \"over-justifying itself as not a bypass\", \"an ignore this sample block\", and a translation-batch framing with no cards behind it. Every named feature is a sentence of the H4277 provenance bridge or the card-less H3157 TASK SHAPE prepend. The run had --safe-mode, so the 11-09/15-09 profile-surface theory (#2229) is falsified as the main cause; with the bridge in place the probe read 4 refusals against 2 passes (10-09..15-09). Evidence: pwg_ru/h4527/H4527_PROBE_PROMPT_INJECTION_SHAPE_15-09-2026.md.",
+  "guardrail": "H4213 §6.3 option (b) landed: _probe_prompt now asks one honest question whose true answer is {\"ok\": true} (does the reference text mention the Petersburg Sanskrit dictionary?) over 11 082 B of domain filler, nothing prepended. test_health_probe_carries_no_injection_shape pins every refused feature as ABSENT and the bridge/preamble helpers as deleted; test_health_probe_asks_an_honest_question pins the true answer and the >= 10 729 B size. The H3157 sensitivity is carried by canary_gate.enforce, which runs before probe_fleet on --execute. Spawn shape, ceilings and the {\"ok\": true}-only check are unchanged.",
+  "residual_status": "open-paused",
+  "residual_risk": "The new prompt has no live reading yet: c1's 15-09 ration is exhausted (and breached, see H4527_PROBE_RATION_BREACH_2026-09-15), so the first reading is the warm-up of the h4527acc05 rerun no earlier than 16-09 00:00Z. If it refuses with a transcript naming anything other than the text, the surface theory is back in play."
+ },
+ {
+  "id": "H4527_PROBE_RATION_BREACH_2026-09-15",
+  "handoff": "H4527",
+  "date": "2026-09-15",
+  "title": "c1 probed three times in one UTC day: a lock refusal was retried without checking the probe log, and the other session's row sat in a different evidence root",
+  "lane": "readiness probe on profile c1 (bounded_staged_run warm-up and /pwg-live-gate warm-up)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go (H4527) racing a concurrent H4842 /pwg-live-gate session",
+  "expected": {
+   "agents": "at most 2 probe attempts per UTC day per profile, at least 6 h apart (standing ration)",
+   "tokens": "one probe attempt left on c1 for 15-09 after the 01:35Z reading"
+  },
+  "actual": {
+   "agents": "three attempts on 15-09 UTC: 01:35Z (H4527), 14:23Z (H4842, evidence dir C:\\Users\\user\\.pwg_ru_evidence), 14:26:55Z (H4527). The H4527 14:23:57Z launch was refused by ActiveCallClaim with 0 calls spent while H4842 held the c1 lock; its 14:26:55Z retry became the third attempt.",
+   "tokens": "the third attempt cost 0.0695 USD list (see H4527_PROBE_INJECTION_SHAPE_2026-09-15); no further calls"
+  },
+  "passes": 1,
+  "symptoms": "calls.acceptance.json shows 0 calls and an ActiveCallClaim traceback at 14:23:57Z; the checkout health_probe_log.jsonl showed only the 01:35Z row, while H4842's 14:23Z row sat in C:\\Users\\user\\.pwg_ru_evidence\\health_probe_log.jsonl.",
+  "classification": "operator/process",
+  "root_cause": "(1) The ration is not enforced in code: ActiveCallClaim serialises overlapping calls only and cannot see a finished probe. (2) resolve_health_probe_log() resolves explicit root -> $PWG_EVIDENCE_DIR -> checkout output/, so sessions with different --evidence-dir values keep separate probe logs and a manual ration check reads a false clear. (3) The operator error: after the lock refusal the executing session re-checked the lock but not any probe log before retrying.",
+  "guardrail": "Until H4915 lands: before any paid probe, read BOTH src/pilot/output/health_probe_log.jsonl AND C:\\Users\\user\\.pwg_ru_evidence\\health_probe_log.jsonl on MSI for the profile's rows in the current UTC day; an ActiveCallClaim refusal means another session is probing that profile NOW, which by itself usually spends the day's last attempt, so treat it as a ration signal, not a transient to retry. Structural fix routed to H4915 (Opus 5, medium) — Code-enforce the readiness-probe ration (≤2/UTC day/profile, ≥6 h) across evidence roots.",
+  "residual_status": "bug-hunt-handoff",
+  "residual_risk": "Until H4915 lands, any two sessions sharing a profile can overrun the ration again; the overrun costs one paid probe each time (~0.07-0.28 USD list) and the profile's next-day headroom is unaffected, so the harm is spend and a broken cadence, not a stuck lane."
+ },
+ {
+  "id": "H4527_COHORT_WINDOW_NULL_CARD_2026-09-16",
+  "handoff": "H4527",
+  "date": "2026-09-16",
+  "title": "First live cohort-path window ran clean mechanically and returned a null card: one paid call, zero clean rows, acceptance record left unwritten",
+  "lane": "bounded_staged_run --execute --cohort-path --cohort-width 1 --only-profile c1 (lease h4527acc05)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) unattended worker on the Mac driving MSI over tailnet ssh",
+  "expected": {
+   "agents": "one wave, one accepted card, a store delta and a promotion receipt to compare byte-for-byte against the serial route",
+   "tokens": "one translation call under --max-calls 3, after one canary call"
+  },
+  "actual": {
+   "agents": "the wave bound, dispatched, audited and settled exactly once (peak_concurrency 1, effective_width 1, one promote + one TM callback), but the returned card did not match the nominal masked key asa~005fmskfta~007e~007eh0~005fzz~005fnws00, so the audit filed missing-or-mismatched-key, the lease settled transient_only, accepted_order is empty and store_delta is null",
+   "tokens": "2 paid calls total (canary 29 427 ms; window 80 818 ms, 6 873 output tokens, 64 343 cache-read, budget_stops 1); observed_cost_usd 0.0 with cost_evaluable false, i.e. not evaluable, not free"
+  },
+  "passes": 1,
+  "symptoms": "wf_output summary: cards 1, ok 0, null 1, failures {asa_mskfta~~h0_zz_nws00: missing-or-mismatched-key}; headless attempt returncode 0 classification success; audit_window report clean keys 0, requeue 1 transient, 0 defect.",
+  "classification": "key/schema-mismatch",
+  "root_cause": "DIAGNOSED offline 16-09-2026 (0 paid calls), and the first hypothesis recorded here was wrong. budget_stops is NOT an output-budget truncation: headless_worker.HeadlessEngine.call() increments it only when _budget_ok() refuses another spawn or the reservation ledger raises CallLimitReached. The refused spawn was the per-card SELF-HEAL (heal_agents_spent 0 against max_heal_agents 0). max_heal_agents is 0 by construction for this card: agent_budget.plan() derives the heal pool from per-card SENSE GROUPS, and asa_mskfta~~h0_zz_nws00 is a zero-marker no_pwg_supplement_chain stub with senses [] / source_senses 0 / ls 0 / sk 0, so groups == {} and heal_default == 0. The window therefore had exactly one shot and no repair lane. The H220 nominal key-echo recovery in normalize_batch was present and satisfiable (nominal_keymap {asa_mskfta~~h0_zz_nws00: asaMskfta}, reverse map unambiguous), so the model echoed neither the stem nor asaMskfta; WHAT it echoed is unknowable from disk, because the parsed cards[] is discarded once normalize_batch has run - a retention gap in this failure class. The ~005f-escaped form quoted in 'actual' above is the output meta key-escaping, not what the matcher used. The window's own audit filed one semantic risk, score 100: missing_senses.",
+  "guardrail": "A null-card window is a transient requeue, never an acceptance: COHORT_LIVE_ACCEPTANCE.json stays unwritten until a window accepts at least one card, because serial_acceptance.via_cohort_path claims byte-identical accepted/promotion accounting that an empty accepted set cannot carry. AMENDED 16-09-2026 by the diagnosis: do NOT resume lease h4527acc05 as 'a cheap re-run'. Re-running a zero-sense card reproduces the same zero heal pool and spends one of two daily ration attempts to re-test a bind that already failed. Prepare a fresh window-size-1 acceptance lease on a card with senses >= 1 (zero paid calls; preparation builds harness+manifest only), then probe -> canary GO -> the corrected --execute --cohort-path form carrying --coordinator, --cwd (a bare scratch dir, H2158) and --events, which every armed form recorded in H4527 since 11-09 omitted.",
+  "residual_status": "open-paused",
+  "residual_risk": "The acceptance gate stays fail-closed, so nothing can drift into width 2; the cost is one more paid window on a later UTC day, now aimed at a card that can self-heal. If a card WITH senses also returns missing-or-mismatched-key, the class is harness-wide, and the next step is retention (log the raw cards[] on the null path) before any further paid call - not another window."
+ },
+ {
+  "id": "H4527_C1_ZAI_QUOTA_429_CANARY_2026-09-21",
+  "handoff": "H4527",
+  "date": "2026-09-21",
+  "title": "Volume-wave canary on c1 rejected 429 by z.ai: the c1 profile now routes to GLM 5.3 and that plan's weekly/monthly quota is exhausted",
+  "lane": "canary_manifest_build + headless_worker dq_canary_puregloss --only-profile c1 (run h4527vx-canary-210921), ahead of a 5-lease cohort-path width-1 volume launch",
+  "model": "requested claude-sonnet-5; endpoint https://api.z.ai/api/anthropic maps sonnet/opus to glm-5.3[1m]",
+  "orchestrator": "Claude Code Opus 5 (claude-opus-5) interactive /go on the Mac driving MSI over tailnet ssh",
+  "expected": {
+   "agents": "one synthetic canary card judged GO, then one launch over five prepared one-card leases (h4527vol09/10/11/14/22)",
+   "tokens": "one canary call, then up to 7 calls under --max-calls 7"
+  },
+  "actual": {
+   "agents": "the canary call returned classification rate_limit, exit 21, after 213 700 ms; canary_gate judge had no out.canary.json to read (FileNotFoundError); no window was launched",
+   "tokens": "0 tokens produced; total_cost_usd 0; api_error_status 429"
+  },
+  "passes": 1,
+  "symptoms": "API Error: Request rejected (429) · [1310][Weekly/Monthly Limit Exhausted. Your limit will reset at 2026-09-24 02:13:42]",
+  "classification": "external-api",
+  "root_cause": "D:\\ClaudeTools\\profiles\\claude1\\.claude\\settings.json, last written 2026-09-20T13:42:30Z, sets ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic with ANTHROPIC_DEFAULT_SONNET_MODEL/OPUS=glm-5.3[1m]; none of the three July backups carries a base URL. The error code and wording are z.ai's. The quota wall belongs to a GLM coding plan, not to Claude Max. Author and purpose of the 20-09 change are unrecorded.",
+  "guardrail": "Before any paid c1 window, read the c1 settings.json env block for ANTHROPIC_BASE_URL (value only, never tokens). A profile slot is a route, not proof of which model answers; transcripts echo the requested model name, so the endpoint, not the log label, decides provenance. No launch until a human settles whether c1 should route to Anthropic or z.ai.",
+  "residual_status": "fixed",
+  "residual_risk": "Route fixed 2026-09-22 on a human ruling («restore Anthropic»): the six z.ai keys were removed from the c1 settings.json (original kept as settings.json.pre-h4527-restore-anthropic-22-09.bak), the canary h4527-canary-220922 went GO, and run h4527-vol-220922 promoted 4 of the 5 prepared leases with Anthropic response ids (msg_011C/req_011C) on every call. Still open: the 20-09 acceptance card darv_i~~h0_zz_pw (run h4527-acc-200920) was produced by GLM 5.3 (transcript id msg_202609…, no requestId) and sits in the store under a claude-sonnet-5 label; the coordinator shows it as the only lease promoted in the z.ai window. Packet: pwg_ru/h4527/H4527_C1_ANTHROPIC_ROUTE_RESTORED_VOLUME_LAUNCH_22-09-2026.md."
+  },
+  {
+  "id": "H4531_BATCHES_SUBMIT_401_2026-09-11",
+  "handoff": "H4531",
+  "date": "2026-09-11",
+  "title": "Batches API first submit refused 401 invalid-key; the pre-submit reservation burned the whole 23-call ceiling at $0 spend",
+  "lane": "anthropic-batches transport (new), root d_a, 23 one-card requests, claude-sonnet-5, run_id h4531-batches-probe",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Opus 5 (claude-opus-5[1m]) unattended handoff worker + h4531_batches_probe.py",
+  "expected": {
+   "agents": "one Message Batch of 23 single-card requests, async, retrieved within 24 h",
+   "tokens": "ESTIMATE ~92k input / ~27.6k output, ~$0.35 at the 50 % batch schedule"
+  },
+  "actual": {
+   "agents": "zero requests processed; the provider refused the batch create call",
+   "tokens": "0 tokens, $0 billed; ledger max_calls=23 calls_spent=23 finalized_calls=0 pending_calls=23"
+  },
+  "passes": 1,
+  "symptoms": "anthropic.AuthenticationError: 401 {\"type\": \"authentication_error\", \"message\": \"API key is invalid.\"} raised from client.messages.batches.create. The independent zero-token probe h4531_auth_probe.py returns rc=4 with authenticated=false, model_available=false, reason AuthenticationError:http_401 against the same credential, so the failure is the key and not the Batches endpoint. The credential was read from the prepared secrets file, never typed.",
+  "classification": "external-api",
+  "root_cause": "The prepared ANTHROPIC_API_KEY in the lane secrets file is no longer valid (rotated, revoked, or from a different workspace). Secondary, and the part that is ours: AnthropicBatchesCall.submit reserves one ledger call per request BEFORE the provider call -- correct and required by the money contract -- so a failure that bills nothing still consumes the entire ceiling, and the retry cannot reuse the run. Inherited from anthropic_messages_route, which documents the same irreversibility.",
+  "guardrail": "h4531_auth_probe.py now exists as a zero-token authenticated GET and is the documented first step of the probe runbook, turning this class of ceiling burn into a $0 rc=4. The reservation is deliberately NOT released on a provider refusal: a release path mis-scoped by one failure class would let a genuinely billable failure look free. A retry uses a fresh run directory (a fresh run_id), never a raised ceiling on the burnt run.",
+  "residual_status": "open-paused",
+  "residual_risk": "H4531 cannot reach a GO/NO-GO verdict until a valid key reaches C:\\Users\\user\\.secrets\\anthropic.env (human, ~2 min). The H1403 ledger #8 / A8 Batches blind spot therefore stays OPEN; no DEAD_ENDS entry was written, because nothing about the route was measured. The burnt ledger run h4531-batches-probe keeps 23 pending reservations against $0 of real spend -- do not read them as cost."
  }
 ]
 ```

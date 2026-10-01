@@ -91,3 +91,12 @@ def test_review_counts_over_a_live_shaped_store(tmp_path, monkeypatch):
         assert release_readiness.review_counts()['print_ready'] == 2
     finally:
         sys.modules.pop('release_readiness', None)
+
+
+def test_print_ready_rejects_apparatus_as_gloss():
+    """H2876 gate wired (02-09-2026): pure apparatus rendered as gloss is not print-ready."""
+    bad = dict(LIVE_APPROVED, de='eines', ru='поручать кому-л.')
+    assert not store_flags.row_metalanguage_ok(bad)
+    assert not store_flags.machine_ok(bad)
+    assert not store_flags.is_print_ready(bad)
+    assert store_flags.is_print_ready(dict(LIVE_APPROVED, de='Name eines Baumes', ru='название дерева'))

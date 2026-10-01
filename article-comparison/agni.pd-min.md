@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # agni — fire — PD minimal mode (sense skeleton)
 
 Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, all etymology and citation bulk removed. Full PD kept in the verbatim/IAST files.
@@ -134,3 +136,5 @@ Deccan **PD** definition outline only — `{@…@}` sense markers with glosses, 
 - **28i** — fiery, vehement
 - **ii** — a fiery person
 - **29** — gold
+
+_Dr. Mārcis Gasūns_

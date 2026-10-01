@@ -46,14 +46,32 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 
 def unique_backup_path(store, tag):
-    """Collision-resistant per-run backup name (never a fixed suffix)."""
+    """Collision-resistant per-run backup name (never a fixed suffix).
+
+    THE SANCTIONED WAY TO NAME A pwg_ru BACKUP. A manual ad-hoc backup outside
+    this function drifts from the convention every `.gitignore` pattern in
+    this repo is written against -- ``<store>.<tag>.<bak>`` where ``<tag>``
+    is free-form but the filename always ends ``.bak``. That drift is not
+    hypothetical: a manual copy taken during H3500 work
+    (``pwg_ru_translated.jsonl.h3500-backup-25-08``, no trailing ``.bak``)
+    sat untracked-and-uncovered on the shared main checkout for six days
+    before a session noticed it (H3747 follow-up, 31-08-2026) -- fixed by
+    renaming the file, not by teaching `.gitignore` a second convention.
+    Call this (or ``_backup_path`` in ``promote_final_cards.py``, which
+    wraps it) for every backup of a canonical store; never hand-roll a name.
+    """
     import datetime
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
     return '%s.%s.%s.p%d.%s.bak' % (store, tag, stamp, os.getpid(), uuid.uuid4().hex[:12])
 
 
 def _fsynced_backup(source, destination):
-    """Exclusive fsynced copy; refuses to overwrite a prior recovery artifact."""
+    """Exclusive fsynced copy; refuses to overwrite a prior recovery artifact.
+
+    Pair this with ``unique_backup_path`` above for the destination -- the
+    O_EXCL guarantee here only protects against overwriting a *recovery*
+    artifact, not against a caller inventing its own non-conventional name.
+    """
     import shutil
     fd = os.open(destination, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
     try:

@@ -77,6 +77,7 @@ from sheet_screening import screening_block
 from review_binding import stamp, write_lock
 from review_residue_gate import machine_flags, visible_german
 from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
+from etym import card_advisory
 import g5_card_render as cardrender
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -365,9 +366,14 @@ def main():
                     default=os.environ.get("PWG_RU_STORE",
                                            os.path.join(HERE, "pwg_ru_translated.jsonl")))
     ap.add_argument("--review-csv", default=os.path.join(HERE, "_review_queue.csv"))
-    ap.add_argument("--no-residue-gate", action="store_true",
-                    help="present ungated cards (forensics only — the gate is "
+    ap.add_argument("--no-residue-gate", action="store_true",                    help="present ungated cards (forensics only — the gate is "
                          "the batch1 abort's standing mandate)")
+    ap.add_argument("--no-etym-advisory", action="store_true",
+                    help="drop the KEWA etymology advisory block from cards "
+                         "(default: render it read-only when the crosswalk "
+                         "exists; audit Q3 advises edge)")
+    ap.add_argument("--etym-crosswalk", default=card_advisory.DEFAULT_CROSSWALK,
+                    help="kewa_pwg_crosswalk.tsv path (H3169)")
     ap.add_argument("--out", default=os.path.join(REVIEW, "g5_batch1v3_sheet.html"))
     ap.add_argument("--locks-dir", default=None)
     ap.add_argument("--pin-ids", metavar="LOCK",
@@ -439,6 +445,11 @@ def main():
 
 def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_lock):
     items, digests = [], {}
+    # Audit Q3 advises edge (MG ruling 28-08-2026): read-only KEWA advisory on
+    # the card. Display-only — card_digest hashes ru/de, so this can never
+    # invalidate a cast vote; empty crosswalk = silent no-op.
+    etym_cw = {} if args.no_etym_advisory else card_advisory.load_crosswalk(
+        getattr(args, "etym_crosswalk", None))
     for r in chosen:
         rec = store_rec(r)
         root = (rec.get("provenance") or {}).get("root") or r.get("key1") or ""
@@ -447,6 +458,9 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         de = rec.get("de") or "(store row not found)"
         digests[r["review_id"]] = card_digest(ru, de)
         tags = cardrender.card_tags(ru)
+        left, right, store_markup = card_split_surfaces(ru, de, tags)
+        right += card_advisory.advisory_html(
+            r.get("key1") or root, etym_cw, iast=rec.get("iast"))
         items.append({
             "id": r["review_id"],
             "filt": stratum,
@@ -463,8 +477,7 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
                          "в needs_review)</span>"),
             "note_placeholder": "если отклонено → что именно не так; частичная правка — тоже сюда",
             "panels": [],
-            **dict(zip(("left", "right", "store_markup"),
-                       card_split_surfaces(ru, de, tags))),
+            "left": left, "right": right, "store_markup": store_markup,
         })
 
     force_lock = False

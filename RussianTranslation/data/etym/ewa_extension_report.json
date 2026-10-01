@@ -1,0 +1,52 @@
+{
+  "handoff": "H4726",
+  "built": "2026-09-15",
+  "shape": "H3169 memo section 7: source column beside lane, supersedes relation (both stay), vol as string",
+  "rows_extended": 11418,
+  "ewa_rows_emitted": 0,
+  "why_zero_ewa_rows": "no EWA heading index exists in the estate (probed 15-09-2026); the only on-disk EWA footprint is H4478's Concordance pointer columns with unconfirmed semantics - see readiness below and EWA_ACQUISITION_REPORT_15-09-2026.md",
+  "coverage_recount_vs_baseline": "PASS (all seven counts identical)",
+  "baseline_counts": {
+    "pwg_key1_headwords": 106082,
+    "lane_modern_ie_kewa": 7157,
+    "lane_traditional_cologne": 11087,
+    "both_lanes": 1665,
+    "modern_only": 5492,
+    "traditional_only": 9422,
+    "pwg_with_no_lane": 89503
+  },
+  "ewa_readiness_census": {
+    "source": "dhatup_multisource_crosswalk.json (H4478)",
+    "caveat": "Column semantics UNCONFIRMED - ewa_volcol is numeric-monotonic (page/column-like), ewa_no mixes entry numbers with German glosses; sibling columns (whitney_root, verba_root) carry page numbers. READINESS STAT ONLY - none of this may enter the crosswalk until the Concordance columns are documented and the real EWA index lands.",
+    "rows_with_any_ewa_pointer": 1619,
+    "with_palsule_root": 1026,
+    "exact_in_pwg_key1": 900,
+    "transcode_failed": 0,
+    "not_in_pwg": 126,
+    "examples_exact": [
+      "AYC",
+      "Ap",
+      "Ar",
+      "As",
+      "BA",
+      "BAs",
+      "BAz",
+      "BI",
+      "BU",
+      "BUz"
+    ],
+    "examples_not_in_pwg": [
+      "BF",
+      "BIz",
+      "Bf",
+      "Bfj",
+      "Biz",
+      "Cal",
+      "Cfd",
+      "DUp",
+      "DUs",
+      "De"
+    ],
+    "examples_transcode_failed": []
+  }
+}

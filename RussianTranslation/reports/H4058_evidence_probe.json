@@ -1,0 +1,890 @@
+{
+ "schema": "h4058-evidence-probe/v1",
+ "store": "C:\\Users\\user\\Documents\\GitHub\\pwg-ru-data\\tm\\pwg_ru_translated.jsonl",
+ "store_sha256": "79d72dbcb4b33fc88d9e907dec9ecaa0e56ebfb72495a5115ce951a623f8ca65",
+ "rows": 11519,
+ "store_keys": {
+  "column": 11167,
+  "de": 11519,
+  "differentia": 11519,
+  "equivalence_type": 11519,
+  "evidence": 10805,
+  "evidence_summary": 10805,
+  "h": 11519,
+  "human_review": 5,
+  "iast": 11519,
+  "key1": 11519,
+  "layer": 11519,
+  "page": 11167,
+  "page_all": 11167,
+  "pc_all": 11167,
+  "provenance": 11519,
+  "review_status": 11519,
+  "reviewer": 11519,
+  "ru": 11519,
+  "sense_tag": 11519,
+  "source_type": 11519,
+  "stratum": 11519,
+  "subcard": 11519,
+  "volume": 11167,
+  "grammar": 551,
+  "advisory_enrichment": 6,
+  "government": 86,
+  "form_labels": 86,
+  "form_notes": 86,
+  "citation_edges": 86,
+  "edition_rel": 86
+ },
+ "has_en_column": false,
+ "evidence_census": {
+  "rows_without_evidence_summary": 714,
+  "rows_zero_supports_senses": 3,
+  "rows_with_any_dictionary_support(koch/kna/fri/smirnov/kow)": 10802,
+  "rows_parallel_corpus_present": 8852,
+  "rows_parallel_corpus_supports_sense": 0,
+  "rows_teaching_corpus_supports(kna)": 10585,
+  "rows_teaching_corpus_only_support": 0,
+  "rows_with_evidence_array": 2218,
+  "supports_senses_by_source": {
+   "koch": 10802,
+   "kna": 10585,
+   "smirnov": 8808,
+   "kow": 4916,
+   "fri": 1791
+  },
+  "present_by_source": {
+   "apte_hi": 10675,
+   "corpus": 8852,
+   "kosha_syn": 2229,
+   "vedic_rituals_hi": 317
+  },
+  "silent_by_source": {
+   "grin12": 10805,
+   "grin3": 10805,
+   "meulenbeld": 10805,
+   "vedic_rituals_hi": 10488,
+   "kosha_syn": 8576,
+   "fri": 8312,
+   "kow": 5754,
+   "smirnov": 1997,
+   "corpus": 1953,
+   "apte_hi": 130,
+   "kna": 3
+  },
+  "contradicts_count_hist": {
+   "0": 9748,
+   "1": 1057
+  },
+  "evidence_status": {
+   "ok": 10805
+  },
+  "corpus_status": {
+   "ok": 10805
+  },
+  "evidence_match_kind": {
+   "lemma": 3591
+  },
+  "evidence_relation": {
+   "provides": 1699,
+   "supports": 1892
+  },
+  "equivalence_type": {
+   "explanatory": 3157,
+   "equivalent": 8145,
+   "near-exact": 1,
+   "primary": 5,
+   "secondary": 6,
+   "grammatical_note": 1,
+   "verbal phrase": 1,
+   "null": 203
+  },
+  "review_status": {
+   "approved": 3,
+   "ai_translated": 11514,
+   "needs_review": 2
+  },
+  "human_review_decision": {
+   "approved": 3,
+   "null": 11514,
+   "reject": 2
+  }
+ },
+ "sanskrit_preservation": {
+  "rows_with_{#skt#}_in_de": 8254,
+  "rows_dropping_a_de_sanskrit_token_in_ru": 60,
+  "rows_adding_sanskrit_token_absent_in_de": 68,
+  "rows_ls_citation_count_mismatch_de_vs_ru": 118,
+  "rows_de_has_{%gloss%}": 8740
+ },
+ "corpus_assets": {
+  "koch": {
+   "rows": 29177,
+   "bytes": 5305729
+  },
+  "kna": {
+   "rows": 3271,
+   "bytes": 759328
+  },
+  "fri": {
+   "rows": 8151,
+   "bytes": 1200542
+  },
+  "smirnov": {
+   "rows": 3547,
+   "bytes": 1514149
+  },
+  "kow": {
+   "rows": 13488,
+   "bytes": 3859196
+  },
+  "grin12": {
+   "rows": 457,
+   "bytes": 105556
+  },
+  "grin3": {
+   "rows": 206,
+   "bytes": 50506
+  },
+  "apte_hi": {
+   "rows": 111235,
+   "bytes": 31779203
+  },
+  "kosha_syn": {
+   "rows": 88839,
+   "bytes": 48365189
+  },
+  "vedic_rituals_hi": {
+   "rows": 6166,
+   "bytes": 4424257
+  },
+  "meulenbeld_plants": {
+   "rows": 453,
+   "bytes": 205761
+  },
+  "corpus_lexicon": {
+   "rows": 1093391,
+   "bytes": 290543363,
+   "sample_first_200k_tier": {
+    "<none>": 200000
+   },
+   "sample_first_200k_top_texts": {
+    "02_ramayana-ayodhyakanda": 47735,
+    "03_ramayana-aranyakanda": 29272,
+    "manavadharmashastra": 25763,
+    "05_ramayana-sundarakanda": 25638,
+    "03_mahabharata-aranyakaparva": 23427,
+    "01_ramayana-balakanda": 21888,
+    "01_mahabharata-adiparva": 19904,
+    "12_mahabharata-shantiparva": 3546,
+    "01_atharvaveda": 2827
+   },
+   "sample_first_200k_with_ru": 200000,
+   "sample_first_line_keys": [
+    "date",
+    "genre",
+    "group",
+    "kind",
+    "passage",
+    "period",
+    "ru",
+    "sa",
+    "slp1",
+    "work"
+   ]
+  },
+  "corpus_lexicon.mined": null,
+  "en_store": [
+   "translation_memory.denylist.jsonl"
+  ]
+ },
+ "h4056_cards": [
+  {
+   "review_id": "row:000002:subcard:_ap~~h0_00_pwg01#note",
+   "key1": "Ap",
+   "iast": "āp",
+   "h": "<div n=\"v\">",
+   "equivalence_type": "explanatory",
+   "de": "<div n=\"v\">— <ab>Vgl.</ab> {#anApta#} . — <ab>caus.</ab> {#Apayati#}; <ab>gerund.</ab> mit <ab>praepp.</ab> {#Apayya#} oder {#Apya#}\n<ls>P. 6,4,57.</ls>\n<ls>VOP. 26,215.</ls>",
+   "ru": "<ab>Vgl.</ab> {#anApta#}. — <ab>caus.</ab> {#Apayati#}; <ab>gerund.</ab> с <ab>praepp.</ab> {#Apayya#} или {#Apya#}\n<ls>P. 6,4,57.</ls>\n<ls>VOP. 26,215.</ls>",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "kow",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi",
+    "corpus"
+   ],
+   "silent": [
+    "fri",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "anApta",
+    "Apayati",
+    "Apayya",
+    "Apya"
+   ],
+   "skt_ru": [
+    "anApta",
+    "Apayati",
+    "Apayya",
+    "Apya"
+   ],
+   "ls_de": 2,
+   "ls_ru": 2,
+   "input_raw_sha256": "71f0be8e603ec0a24a3dd404e5d89b64f5929b96ba687aae4f5a14faef989691",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:000244:subcard:_bid~~h0_00_pwg00#1",
+   "key1": "Bid",
+   "iast": "bhid",
+   "h": "Bid",
+   "equivalence_type": "equivalent",
+   "de": "<div n=\"1\"> 1) {%spalten, einbrechen, ein Loch in Etwas schlagen, zerschlagen, zersprengen, aufreissen, schlitzen%}: {#puraH#}\n<ls>ṚV. 1,53,8.</ls> <ls n=\"ṚV.\">2,14,6.</ls>\n<ls>AIT. BR. 1,25.</ls> {#adrim#}\n<ls>ṚV. 1,62,",
+   "ru": "<div n=\"1\"> 1) {%раскалывать, проламывать, пробивать отверстие в чем-либо, разбивать, разносить, разрывать, разрезать%}: {#puraH#}\n<ls>ṚV. 1,53,8.</ls> <ls n=\"ṚV.\">2,14,6.</ls>\n<ls>AIT. BR. 1,25.</ls> {#adrim#}\n<ls>ṚV. 1",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "kow",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi",
+    "kosha_syn"
+   ],
+   "silent": [
+    "fri",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "meulenbeld",
+    "corpus"
+   ],
+   "evidence_n": 1,
+   "evidence_first": "1. bhid 7 кл. ( bhinatti, bhintte ), 1) раскалывать, —разбивать; 2) ссорить, посѣвать раздоръ ( М. и МБ .); 3) нарушать ( Ragh. и Bhaṭṭ. ); 4) быть различнымъ, ",
+   "skt_de": [
+    "puraH",
+    "adrim",
+    "valam",
+    "Bi\\nDi dveza^H",
+    "aSmA^naM ci\\dye bi^Bi\\durvaco^BiH",
+    "girim",
+    "SiraH",
+    "pAtrA",
+    "yaH SuzRa^syA\\RqAni\\ Beda^ti",
+    "muzkO",
+    "nA\\qyO^",
+    "sapatnAn",
+    "BinnA nOH",
+    "keSaH sahasraDA BinnaH",
+    "yadvE kiM ca yajYe mfnmayaM Bidyate",
+    "hatvA BittvA ca SIrzARi",
+    "nyagroDaPalaM BinDi",
+    "hatvA CittvA ca BittvA ca",
+    "CinDi BinDi praDAva",
+    "prahara hara cCindDi BindDi",
+    "vane kAzWAni BindataH (me)",
+    "lakzyaM BittvA",
+    "lakzaRam",
+    "sAyakEH kAMScidaBinat",
+    "DanuzA hfdi BinnaH",
+    "tAnpakzanaKatuRqAgrEraBinadvinatAsutaH",
+    "Bindanti",
+    "mama",
+    "maRqalam",
+    "aBittvA paramarmARi",
+    "vajraM vajreRa Bidyate",
+    "darBaBinnapeSalapAdA",
+    "pfTivIM lANgaleneha BittvA",
+    "Binatti BImaM karirAjakumBam (siMhaH)",
+    "DaraRItalam . biBiduH — vajrasparSasamErBujEH",
+    "atiSItalamapyamBaH kiM Binatti na BUBftaH",
+    "nABidyata mahAvyUho BImena",
+    "girIRAmiva BidyatAm (adrIRAmiva BindatAm",
+    "svayameva kAzWaM Bidyate, aBedi",
+    "nirGozo Bindanniva rasAtalam",
+    "(DvaniH) yajYamuzAM manAMsi Bindan",
+    "BidyerandarSanAdasyA BIrURAM hfdayAni ca",
+    "(amitram) BindyAdGawamivASmani",
+    "aRqAni biBrati svAni na Bindanti pipIlikAH",
+    "BImo gadAGAtEstavoru Betsyate",
+    "BinnA nOH",
+    "Gawa",
+    "BARqa",
+    "BAjana",
+    "Asana",
+    "BinnaSfNgAkziKurEH ",
+    " (DuryEH)",
+    "tUryaGozErdvizAM sEnyaM BindannAnandayannijam",
+    "kawakaM biBiduH",
+    "Binne sEnye",
+    "BinnasAraNgayUTa (gaja)",
+    "SItena Bidyate",
+    "BerI",
+    "Binna = dArita, dIrRa"
+   ],
+   "skt_ru": [
+    "puraH",
+    "adrim",
+    "valam",
+    "Bi\\nDi dveza^H",
+    "aSmA^naM ci\\dye bi^Bi\\durvaco^BiH",
+    "girim",
+    "SiraH",
+    "pAtrA",
+    "yaH SuzRa^syA\\RqAni\\ Beda^ti",
+    "muzkO",
+    "nA\\qyO^",
+    "sapatnAn",
+    "BinnA nOH",
+    "keSaH sahasraDA BinnaH",
+    "yadvE kiM ca yajYe mfnmayaM Bidyate",
+    "hatvA BittvA ca SIrzARi",
+    "nyagroDaPalaM BinDi",
+    "hatvA CittvA ca BittvA ca",
+    "CinDi BinDi praDAva",
+    "prahara hara cCindDi BindDi",
+    "vane kAzWAni BindataH (me)",
+    "lakzyaM BittvA",
+    "lakzaRam",
+    "sAyakEH kAMScidaBinat",
+    "DanuzA hfdi BinnaH",
+    "tAnpakzanaKatuRqAgrEraBinadvinatAsutaH",
+    "Bindanti",
+    "mama",
+    "maRqalam",
+    "aBittvA paramarmARi",
+    "vajraM vajreRa Bidyate",
+    "darBaBinnapeSalapAdA",
+    "pfTivIM lANgaleneha BittvA",
+    "Binatti BImaM karirAjakumBam (siMhaH)",
+    "DaraRItalam . biBiduH — vajrasparSasamErBujEH",
+    "atiSItalamapyamBaH kiM Binatti na BUBftaH",
+    "nABidyata mahAvyUho BImena",
+    "girIRAmiva BidyatAm (adrIRAmiva BindatAm",
+    "svayameva kAzWaM Bidyate, aBedi",
+    "nirGozo Bindanniva rasAtalam",
+    "(DvaniH) yajYamuzAM manAMsi Bindan",
+    "BidyerandarSanAdasyA BIrURAM hfdayAni ca",
+    "(amitram) BindyAdGawamivASmani",
+    "aRqAni biBrati svAni na Bindanti pipIlikAH",
+    "BImo gadAGAtEstavoru Betsyate",
+    "BinnA nOH",
+    "Gawa",
+    "BARqa",
+    "BAjana",
+    "Asana",
+    "BinnaSfNgAkziKurEH ",
+    " (DuryEH)",
+    "tUryaGozErdvizAM sEnyaM BindannAnandayannijam",
+    "kawakaM biBiduH",
+    "Binne sEnye",
+    "BinnasAraNgayUTa (gaja)",
+    "SItena Bidyate",
+    "BerI",
+    "Binna = dArita, dIrRa"
+   ],
+   "ls_de": 102,
+   "ls_ru": 102,
+   "input_raw_sha256": "512fdc28650367afba5ee4d30323c68b7bfe32b0c3c7378de780a156fe83627c",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:000449:subcard:_buj~~h0_01_ava#ava",
+   "key1": "Buj",
+   "iast": "bhuj",
+   "h": "ava",
+   "equivalence_type": "equivalent",
+   "de": "<div n=\"p\">— {#ava#} {%einbiegen%}\n<ls>KAUŚ. 19.</ls> {#BagnAvaBugnaBUyizWEH (drumEH)#} {%niedergebogen%}\n<ls>MBH. 1,5891.</ls>",
+   "ru": "<div n=\"p\">— {#ava#} {%загибать вниз, вгибать%}\n<ls>KAUŚ. 19.</ls> {#BagnAvaBugnaBUyizWEH (drumEH)#} {%согнутый вниз, пригнутый%}\n<ls>MBH. 1,5891.</ls>",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "kow",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi",
+    "corpus"
+   ],
+   "silent": [
+    "fri",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "ava",
+    "BagnAvaBugnaBUyizWEH (drumEH)"
+   ],
+   "skt_ru": [
+    "ava",
+    "BagnAvaBugnaBUyizWEH (drumEH)"
+   ],
+   "ls_de": 2,
+   "ls_ru": 2,
+   "input_raw_sha256": "7c14b42bf52c4f3248e001338e81e65f86d9bc1cf46850b1a83669e282fcb2a4",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:000557:subcard:_cid~~h0_00_pwg00#5",
+   "key1": "Cid",
+   "iast": "chid",
+   "h": "Cid",
+   "equivalence_type": "equivalent",
+   "de": "<div n=\"1\">— 5) {#Cinna#} {%heruntergekommen, entkräftet, ermüdet%}: {#strI˚, BAra˚, mArga˚#}\n<ls>VYUTP. 209.</ls>",
+   "ru": "5) {#Cinna#} {%пришедший в упадок, обессиленный, утомленный%}: {#strI˚, BAra˚, mArga˚#}\n<ls>VYUTP. 209.</ls>",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi"
+   ],
+   "silent": [
+    "fri",
+    "kow",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld",
+    "corpus"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "Cinna",
+    "strI˚, BAra˚, mArga˚"
+   ],
+   "skt_ru": [
+    "Cinna",
+    "strI˚, BAra˚, mArga˚"
+   ],
+   "ls_de": 1,
+   "ls_ru": 1,
+   "input_raw_sha256": "62df0af43387f5daefee53becfc15e0fc3afebcf75bbd4f6f73bda8df16de22a",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:000718:subcard:_d_a~~h0_01_sec_1#caus.",
+   "key1": "DA",
+   "iast": "dhā",
+   "h": "dhā",
+   "equivalence_type": "explanatory",
+   "de": "<div n=\"p\">— <ab>caus.</ab> {#DApayati#}\n<ls>P. 7,3,36</ls>; <ab>s. u.</ab> {#antar, api, aBi, ava, A, ni, saMni, pari, pra#} .",
+   "ru": "<div n=\"p\">— <ab>caus.</ab> {#DApayati#}\n<ls>P. 7,3,36</ls>; <ab>s. u.</ab> {#antar, api, aBi, ava, A, ni, saMni, pari, pra#} .",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi",
+    "corpus"
+   ],
+   "silent": [
+    "fri",
+    "kow",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "DApayati",
+    "antar, api, aBi, ava, A, ni, saMni, pari, pra"
+   ],
+   "skt_ru": [
+    "DApayati",
+    "antar, api, aBi, ava, A, ni, saMni, pari, pra"
+   ],
+   "ls_de": 1,
+   "ls_ru": 1,
+   "input_raw_sha256": "da726140554cdd8fc62755fce223887f2077fcd95296fdae95f4a1a1d4b7acc2",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:001509:subcard:_sam~~h0_zz_nws00#NWS-1",
+   "key1": "Sam",
+   "iast": "śam",
+   "h": "śam",
+   "equivalence_type": "explanatory",
+   "de": "{#śam (=pw śam 1)#} [Ved , unsp] wirken, mit Eifer thätig sein, sich abmühen (mit dem Instr dessen, wodurch oder womit man thätig ist). beim Gottesdienst thätig sein (durch Opferbereiten), eifrig beten. e. Gotte (Dat) ei",
+   "ru": "{#śam (=pw śam 1)#} [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Ins. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться.",
+   "supports_senses": [
+    "kna",
+    "koch"
+   ],
+   "present": [
+    "apte_hi",
+    "corpus"
+   ],
+   "silent": [
+    "fri",
+    "smirnov",
+    "kow",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "śam (=pw śam 1)"
+   ],
+   "skt_ru": [
+    "śam (=pw śam 1)"
+   ],
+   "ls_de": 0,
+   "ls_ru": 0,
+   "input_raw_sha256": "e3c1f67716d3e21ebf892e05973026fe0838fbbe6cf0a0b0f06a4c5b73eb1a04",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:001682:subcard:_sru~~h0_00_pwg01#2",
+   "key1": "Sru",
+   "iast": "śru",
+   "h": "śru",
+   "equivalence_type": "equivalent",
+   "de": "<div n=\"1\">— 2) <ab>med.</ab> = <ab>act.</ab> (im Epos stets nur aus metrischen Rücksichten): {#Sf\\Ru\\zva su\\Srava^stamaH#}\n<ls>ṚV. 1,131,7.</ls> {#karRAByAM BUri SuSruve#}\n<ls>PĀR. GṚHY. 3,15.</ls> {#SfRuzvEkamanA Bava#",
+   "ru": "<div n=\"1\">— 2) <ab>med.</ab> = <ab>act.</ab> (в эпосе всегда лишь по метрическим соображениям): {#Sf\\Ru\\zva su\\Srava^stamaH#}\n<ls>ṚV. 1,131,7.</ls> {#karRAByAM BUri SuSruve#}\n<ls>PĀR. GṚHY. 3,15.</ls> {#SfRuzvEkamanA Ba",
+   "supports_senses": [
+    "kna",
+    "koch"
+   ],
+   "present": [
+    "apte_hi"
+   ],
+   "silent": [
+    "fri",
+    "smirnov",
+    "kow",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld",
+    "corpus"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "Sf\\Ru\\zva su\\Srava^stamaH",
+    "karRAByAM BUri SuSruve",
+    "SfRuzvEkamanA Bava",
+    "SfRvekAgramanAH",
+    "SfRuDvam",
+    "ityaSfRmahi",
+    "tatputrapOtranaptFRAM gotrARi ca na SfRmahe",
+    "tacCfRuzva",
+    "SfRuDvaM ca vaco mama",
+    "SfRvIta",
+    "pUrvezAM SfRvAnaScaritaM mahat",
+    "taM SabdaM SuSruve",
+    "Srozye",
+    "SvaH Srozyase",
+    "˚te) Sirastasya sEnDavasya raRe hftam",
+    "SfRuzvAvahito mama",
+    "SuSruve"
+   ],
+   "skt_ru": [
+    "Sf\\Ru\\zva su\\Srava^stamaH",
+    "karRAByAM BUri SuSruve",
+    "SfRuzvEkamanA Bava",
+    "SfRvekAgramanAH",
+    "SfRuDvam",
+    "ityaSfRmahi",
+    "tatputrapOtranaptFRAM gotrARi ca na SfRmahe",
+    "tacCfRuzva",
+    "SfRuDvaM ca vaco mama",
+    "SfRvIta",
+    "pUrvezAM SfRvAnaScaritaM mahat",
+    "taM SabdaM SuSruve",
+    "Srozye",
+    "SvaH Srozyase",
+    "˚te) Sirastasya sEnDavasya raRe hftam",
+    "SfRuzvAvahito mama",
+    "SuSruve"
+   ],
+   "ls_de": 36,
+   "ls_ru": 36,
+   "input_raw_sha256": "fde11e22e828e549a05708776e0274fef460c5a0307bf9123d3eeefc28f392a9",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:001897:subcard:br_u~~h0_00_pwg00#1",
+   "key1": "brU",
+   "iast": "brū",
+   "h": "brū",
+   "equivalence_type": "equivalent",
+   "de": "<div n=\"1\"> 1) {%sagen, aussprechen, berichten; nennen%};",
+   "ru": "<div n=\"1\"> 1) {%говорить, произносить, сообщать; называть%};",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "kow",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi"
+   ],
+   "silent": [
+    "fri",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld",
+    "corpus"
+   ],
+   "evidence_n": 4,
+   "evidence_first": "ब्रू /brū/ (U. pr. /bravīti/ /brute/—II- fut. /vakṣyati/ /vakṣyate/- pf. /uvāca/ /ūca/- aor. /avo-cat/ /avocata/- pp. /ukta/ ) говорить",
+   "skt_de": [],
+   "skt_ru": [],
+   "ls_de": 0,
+   "ls_ru": 0,
+   "input_raw_sha256": "bdaf9520d7fd2a15b55a7b8215e66054ef7db0c989206b2777a6c033beca2e54",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:002006:subcard:car~~h0_00_pwg00#header",
+   "key1": "car",
+   "iast": "car",
+   "h": "car",
+   "equivalence_type": "explanatory",
+   "de": "{#car#}¦, {#ca/rati#} (ep. auch <ab>med.</ab>)\n<ls>DHĀTUP. 15,51.</ls> {#cacAra, cacarTa#} (\n<ls>BHĀG. P. 4,28,52</ls>), {#cere#} (\n<ls>BHĀG. P. 3,1,19</ls>); {#carizyati, ˚te; acArIt, (pari) cacArIt#} (\n<ls>CHĀND. UP. 4",
+   "ru": "{#car#}¦, {#ca/rati#} (ep. также <ab>med.</ab>)\n<ls>DHĀTUP. 15,51.</ls> {#cacAra, cacarTa#} (\n<ls>BHĀG. P. 4,28,52</ls>), {#cere#} (\n<ls>BHĀG. P. 3,1,19</ls>); {#carizyati, ˚te; acArIt, (pari) cacArIt#} (\n<ls>CHĀND. UP. ",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi"
+   ],
+   "silent": [
+    "fri",
+    "kow",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld",
+    "corpus"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "car",
+    "ca/rati",
+    "cacAra, cacarTa",
+    "cere",
+    "carizyati, ˚te; acArIt, (pari) cacArIt",
+    "caritvA, cartvA",
+    "cIrtvA",
+    "caritum",
+    "cartum",
+    "cara/DyE, ca/ritave, ca/rase; carita",
+    "cIrRa"
+   ],
+   "skt_ru": [
+    "car",
+    "ca/rati",
+    "cacAra, cacarTa",
+    "cere",
+    "carizyati, ˚te; acArIt, (pari) cacArIt",
+    "caritvA, cartvA",
+    "cIrtvA",
+    "caritum",
+    "cartum",
+    "cara/DyE, ca/ritave, ca/rase; carita",
+    "cIrRa"
+   ],
+   "ls_de": 15,
+   "ls_ru": 15,
+   "input_raw_sha256": "049a44f75dc2adb4af90d184af58d17b74abc606737f363833f999ba10812663",
+   "model_version": "claude-sonnet-5"
+  },
+  {
+   "review_id": "row:002263:subcard:d_a~~h0_00_pwg00#A. Präsensformen",
+   "key1": "dA",
+   "iast": "dā",
+   "h": "dā 1",
+   "equivalence_type": "explanatory",
+   "de": "{#dA#}¦ ({#dad, dAy#}) A. Präsensformen: <div n=\"2\"> a) {#da/dAti#} <ls>DHĀTUP. 25,9.</ls> {#da/ttas, da/dmam, da/dmasi, da/dati; dehi/#} ( <ls>P. 6,4,119</ls>), {#dadDi/#} ( <ls>ṚV. 2,17,7</ls>), {#dattAt, da/dAtu, datt",
+   "ru": "{#dA#}¦ ({#dad, dAy#}) A. Формы настоящего времени: <div n=\"2\"> a) {#da/dAti#} <ls>DHĀTUP. 25,9.</ls> {#da/ttas, da/dmam, da/dmasi, da/dati; dehi/#} (<ls>P. 6,4,119</ls>), {#dadDi/#} (<ls>ṚV. 2,17,7</ls>), {#dattAt, da/d",
+   "supports_senses": [
+    "kna",
+    "koch",
+    "smirnov"
+   ],
+   "present": [
+    "apte_hi",
+    "corpus"
+   ],
+   "silent": [
+    "fri",
+    "kow",
+    "grin12",
+    "grin3",
+    "vedic_rituals_hi",
+    "kosha_syn",
+    "meulenbeld"
+   ],
+   "evidence_n": 0,
+   "evidence_first": "",
+   "skt_de": [
+    "dA",
+    "dad, dAy",
+    "da/dAti",
+    "da/ttas, da/dmam, da/dmasi, da/dati; dehi/",
+    "dadDi/",
+    "dattAt, da/dAtu, datta/m, datta/, da/datu; dadyA/t; a/dadAt, a/dattam, a/dadAta",
+    "a/dattana, a/dadus",
+    "dadAs, dadAt, dadAta",
+    "da/dat, da/datam",
+    "A",
+    " datte/, datse",
+    "da/dvahe, da/dmahe; datsva, dattAm; dadImahi, dadIran; adatta",
+    "datte",
+    "dadate",
+    "dAti",
+    "dAtu",
+    "dadati",
+    "dadanti",
+    "dada",
+    "adadat",
+    "da/dat, da/das, da/dan",
+    "dade/",
+    "da/date",
+    "da/dante; da/damAna, dadAna/",
+    "da/dAna; adadanta, adadizwa",
+    "adedizwa",
+    "dadasva",
+    "dadmi",
+    "(A) dadmi",
+    "(A) dAyamAna",
+    "(A) dadAyan"
+   ],
+   "skt_ru": [
+    "dA",
+    "dad, dAy",
+    "da/dAti",
+    "da/ttas, da/dmam, da/dmasi, da/dati; dehi/",
+    "dadDi/",
+    "dattAt, da/dAtu, datta/m, datta/, da/datu; dadyA/t; a/dadAt, a/dattam, a/dadAta",
+    "a/dattana, a/dadus",
+    "dadAs, dadAt, dadAta",
+    "da/dat, da/datam",
+    "A",
+    " datte/, datse",
+    "da/dvahe, da/dmahe; datsva, dattAm; dadImahi, dadIran; adatta",
+    "datte",
+    "dadate",
+    "dAti",
+    "dAtu",
+    "dadati",
+    "dadanti",
+    "dada",
+    "adadat",
+    "da/dat, da/das, da/dan",
+    "dade/",
+    "da/date",
+    "da/dante; da/damAna, dadAna/",
+    "da/dAna; adadanta, adadizwa",
+    "adedizwa",
+    "dadasva",
+    "dadmi",
+    "(A) dadmi",
+    "(A) dAyamAna",
+    "(A) dadAyan"
+   ],
+   "ls_de": 39,
+   "ls_ru": 39,
+   "input_raw_sha256": "c51aca351830a73f9699cd60695925e9f72b44a3e885c51abf92e806a506310d",
+   "model_version": "claude-sonnet-5"
+  }
+ ],
+ "tm_holdout_replay": {
+  "cards": 10,
+  "full_tm_hits": 10,
+  "holdout_tm_hits": 8,
+  "per_card": [
+   {
+    "key1": "Ap",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "Bid",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "Buj",
+    "full_tm": "hit",
+    "holdout_tm": "miss"
+   },
+   {
+    "key1": "Cid",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "DA",
+    "full_tm": "hit",
+    "holdout_tm": "miss"
+   },
+   {
+    "key1": "Sam",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "Sru",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "brU",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "car",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   },
+   {
+    "key1": "dA",
+    "full_tm": "hit",
+    "holdout_tm": "hit"
+   }
+  ],
+  "scratch_dir": "C:\\Users\\user\\AppData\\Local\\Temp\\h4058_tm_7qejv3db",
+  "store_distinct_input_addresses": 2445,
+  "store_rows_with_address": 11510,
+  "addresses_shared_by_2plus_rows": 1263,
+  "denylist_addresses": 113
+ }
+}

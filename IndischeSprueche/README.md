@@ -1,6 +1,6 @@
 # Indische Sprüche (Böhtlingk)
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 05-09-2026_
 
 ## ⚠️ Read this first: canonical editions live elsewhere
 
@@ -80,7 +80,7 @@ full corpus here, not a duplicate source.
 
 ## Data
 
-[`data/indische_sprueche.jsonl`](data/indische_sprueche.jsonl) — 7,537 records,
+[`data/indische_sprueche.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/data/indische_sprueche.jsonl) — 7,537 records,
 one per line:
 
 ```json
@@ -148,6 +148,20 @@ edition. For anything authoritative or citation-facing, route to
 6. **Source-attribution analytics.** `source_attribution` maps each saying to
    its origin text — a quick view of which epics/anthologies Böhtlingk drew from,
    without touching the canonical scans.
+
+## DCS locus attestation layer (H4747, 15-09-2026)
+
+[`attestation/H4747_dcs_loci.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/attestation/H4747_dcs_loci.tsv)
+binds the per-saying records to DCS corpus loci by normalized continuous-stream
+text match (per-pada; keying on the synthetic DCS `sentence.id` PK — `sent_id`
+is NOT unique within a chapter, FINDINGS §9). 1,573/7,537 sayings (20.9%) have
+≥1 DCS locus; the unattested bulk cites gnomic anthologies DCS does not carry.
+Method, 30-saying verification sample and honest residual:
+[`attestation/H4747_report.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/attestation/H4747_report.md).
+Rebuild with
+[`tools/h4747_build_dcs_loci.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/IndischeSprueche/tools/h4747_build_dcs_loci.py)
+(needs the local 921 MB `VisualDCS/src/DCS-data-2026/dcs_full.sqlite`; the
+0-byte `VisualDCS/src/dcs_full.sqlite` decoy is refused by a size guard).
 
 ## Rights
 

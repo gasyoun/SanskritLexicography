@@ -31,6 +31,8 @@ QUEUE = os.path.join(HERE, 'lexical_cores', 'pwg_miss_backfill_queue.md')
 STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 STILL_NULL = os.path.join(OUT, 'no_pwg_w1.still_null.txt')
 RESIDUALS = os.path.join(HERE, 'no_pwg_residuals.jsonl')
+# `_pilot_gen_merged.py`'s OUT — where the per-sub-card sidecars (raw + portrait) land.
+INPUT_DIR = os.path.join(HERE, 'input')
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
@@ -39,6 +41,7 @@ if HERE not in sys.path:
 
 from safe_filename import decode_safe_name, safe_name  # noqa: E402
 from store_path import canonical_store  # noqa: E402
+import sense_count  # noqa: E402
 import coordinator  # noqa: E402
 from window_common import atomic_write_json  # noqa: E402
 
@@ -53,6 +56,60 @@ def sha256_path(path):
         for chunk in iter(lambda: f.read(1024 * 1024), b''):
             h.update(chunk)
     return h.hexdigest()
+
+
+INPUT_SIDECAR_SUFFIXES = ('.raw.txt', '.portrait.json')
+
+
+def park_input_sidecars(subcards, artifact_dir):
+    """Copy every selected key's INPUT sidecars next to the window's manifest (§612).
+
+    The durable evidence root preserved everything a paid window PRODUCED -- output,
+    status, calls, manifest, preflight, receipt, failed envelopes -- and nothing it
+    CONSUMED. The `.raw.txt` / `.portrait.json` pair lives in the checkout-relative,
+    gitignored `src/pilot/input/`, so it dies with the planning worktree (§603's class).
+    `audit_window.py` hashes those files, and refuses `collect/gates/glue` when they are
+    absent -- which is how `no_pwg_w09`'s two audit-clean cards became permanently
+    unpromotable after 8 priced calls had already been spent on them.
+
+    Parking them beside `execution_manifest.<root>.json` puts them on the same durable
+    path every other window artifact already travels, at a cost of two small files per
+    key. Returns `{key: {'raw': sha, 'portrait': sha}}` for the caller to record.
+
+    Fail-CLOSED: a missing sidecar is raised HERE, at plan time, before a single call is
+    paid for. Discovering it after the window has run is exactly the loss this prevents,
+    and by then no unpaid work can recover it.
+    """
+    gen_dir = os.path.join(SRC, 'pilot', 'input')
+    dest = os.path.join(artifact_dir, 'input')
+    missing = []
+    for key in subcards:
+        for suffix in INPUT_SIDECAR_SUFFIXES:
+            if not os.path.isfile(os.path.join(gen_dir, key + suffix)):
+                missing.append(key + suffix)
+    if missing:
+        raise SystemExit(
+            'FAIL: input sidecars missing before any spend (FINDINGS 612) -- the window\n'
+            '  would run, then be unpromotable because audit_window.py cannot re-derive\n'
+            '  its inputs. Regenerate via _pilot_gen_merged.py and re-plan.\n'
+            '  source dir : %s\n'
+            '  missing    : %s' % (gen_dir, ', '.join(missing)))
+    os.makedirs(dest, exist_ok=True)
+    parked = {}
+    for key in subcards:
+        entry = {}
+        for suffix, label in zip(INPUT_SIDECAR_SUFFIXES, ('raw', 'portrait')):
+            src_path = os.path.join(gen_dir, key + suffix)
+            dst_path = os.path.join(dest, key + suffix)
+            with open(src_path, 'rb') as fh:
+                blob = fh.read()
+            tmp = dst_path + '.tmp'
+            with open(tmp, 'wb') as fh:
+                fh.write(blob)
+            os.replace(tmp, dst_path)
+            entry[label] = hashlib.sha256(blob).hexdigest()
+        parked[key] = entry
+    return parked
 
 
 def read_store_keys(path=STORE):
@@ -168,6 +225,66 @@ def filter_residual_subcards(subcards, blocked):
     return [key for key in subcards if key not in blocked], skipped
 
 
+def subcard_source_senses(key, input_dir=None):
+    """Declared top-level source senses for ONE sub-card, or None when unprovable.
+
+    Two readings, in H4527's census order: the portrait sidecar's stamped
+    `source_senses` first, then a deterministic recount of the raw sidecar through
+    `sense_count.count_source_senses`. The census (17-09-2026) cross-checked both over
+    all 34 portraits on disk and they agree everywhere a portrait exists, so the
+    fallback is a recount, not a second opinion.
+
+    None means "the sidecars do not say" (neither file on disk, or an unreadable raw
+    blob) — never zero. A caller gating on a minimum must treat None as unproven.
+    """
+    input_dir = input_dir or INPUT_DIR
+    stamped = sense_count.portrait_source_senses(input_dir, key)
+    if stamped is not None:
+        try:
+            return int(stamped)
+        except (TypeError, ValueError):
+            return None
+    raw = os.path.join(input_dir, key + '.raw.txt')
+    if not os.path.exists(raw):
+        return None
+    try:
+        with open(raw, encoding='utf-8') as f:
+            text = f.read()
+    except OSError:
+        return None
+    return sense_count.count_source_senses(text)
+
+
+def filter_sense_poor_subcards(subcards, minimum, input_dir=None):
+    """Keep only the sub-cards that PROVE `minimum`+ declared source senses (H4527).
+
+    Why it exists: `agent_budget` derives a card's self-heal pool from its sense groups,
+    so a zero-sense sub-card gets `max_heal_agents: 0` — one shot, no repair lane. The
+    16-09-2026 live acceptance window burned a paid call on exactly such a card
+    (`asa_mskfta~~h0_zz_nws00`, `senses: []`) and came back null; the census then showed
+    the zero is structural for the whole `~~h0_zz_nws00` class (0 of 10 declare a sense),
+    so re-running the same topology cannot end differently.
+
+    Strictly narrowing: an unprovable count (None) is skipped, never admitted — the
+    flag's only job is to prove a repair lane exists before a call is paid for. Nothing
+    is written anywhere; a skipped key stays eligible for the next planning run and gets
+    no residual-registry row.
+    """
+    kept, skipped = [], []
+    for key in subcards:
+        senses = subcard_source_senses(key, input_dir)
+        if senses is not None and senses >= minimum:
+            kept.append(key)
+        else:
+            skipped.append({
+                'key': key,
+                'source_senses': senses,
+                'reason': ('source senses %s < --require-senses %d'
+                           % ('unknown' if senses is None else senses, minimum)),
+            })
+    return kept, skipped
+
+
 def chunked(seq, n):
     for i in range(0, len(seq), n):
         yield seq[i:i + n]
@@ -246,6 +363,22 @@ def audit_command(workflow_output, root, execution_manifest=None):
     return command
 
 
+def binding_args(args):
+    """The profile binding `coordinator.prepare` hands to `gen_opt_harness2`, or `[]`.
+
+    An unbound manifest is schema v1, which `bounded_staged_run` refuses in production
+    (FINDINGS 604). Kept byte-identical to `coordinator.prepare`'s own list so a planner
+    lease and a coordinator lease are production-eligible on the same terms.
+    """
+    if not args.profile_slot:
+        return []
+    return ['--profile-slot=%s' % args.profile_slot,
+            '--config-dir=%s' % os.path.abspath(args.config_dir),
+            '--execution-route=%s' % args.execution_route,
+            '--executor-lane=%s' % args.executor_lane,
+            '--validation-method=%s' % args.validation_method]
+
+
 def prepare_window(args, index, heads, still_null_keys, tail_mode):
     root = '%s%02d' % (args.prefix, index)
     print('preparing %s: %d headword(s)%s' %
@@ -265,12 +398,25 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     subcards = [k for k in subcards if k not in promoted_keys]
     blocked = getattr(args, 'blocked_residuals', {})
     subcards, skipped_rows = filter_residual_subcards(subcards, blocked)
+    # H4527: the sense gate runs AFTER generation because only the sidecars
+    # `_pilot_gen_merged.py` just wrote say how many senses a sub-card declares —
+    # generation is local and unpaid, the call that follows is not.
+    require_senses = getattr(args, 'require_senses', 0) or 0
+    sense_skipped = []
+    if require_senses > 0:
+        subcards, sense_skipped = filter_sense_poor_subcards(subcards, require_senses)
     if not subcards:
-        if skipped_rows:
-            print('omitting %s: every unpromoted subcard is a blocked residual' % root)
+        if skipped_rows or sense_skipped:
+            if sense_skipped and not skipped_rows:
+                print('omitting %s: no unpromoted subcard declares %d+ source sense(s)'
+                      % (root, require_senses))
+            else:
+                print('omitting %s: every unpromoted subcard is a blocked residual'
+                      ' or sense-poor' % root)
             return {
                 'omitted': True, 'root': root, 'headwords': heads,
                 'residual_skipped': residual_summary(skipped_rows),
+                'sense_skipped': sense_skipped,
             }
         raise SystemExit('FAIL: %s produced no no-PWG subcards' % root)
 
@@ -297,6 +443,12 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     ]
     if execution_manifest:
         gen_cmd.append('--manifest-out=' + execution_manifest)
+        # H3677 (FINDINGS 604 gate 3): without the coordinator's profile binding
+        # `gen_opt_harness2` stamps `pwg.headless_execution_manifest.v1`, and production
+        # refuses anything but v2 -- so every planner-prepared lease was unrunnable and
+        # H3659 had to rebuild the manifest by hand before it could spend. Same five flags
+        # `coordinator.prepare` passes, in the same order, so the two paths cannot drift.
+        gen_cmd.extend(binding_args(args))
     run_cmd(gen_cmd)
     preflight = preflight_json(root, subcards)
     if preflight_path:
@@ -307,17 +459,27 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
             execution = json.load(f)
         if execution.get('meta', {}).get('selected_keys') != subcards:
             raise SystemExit('FAIL: %s manifest key drift' % root)
+        # FINDINGS 612: park the CONSUMED half of the window beside the produced half,
+        # before any call is paid for. Without this the sidecars die with the planning
+        # worktree and audit_window.py can never re-validate the cards.
+        parked_sidecars = park_input_sidecars(
+            subcards, os.path.dirname(execution_manifest))
         headless_meta = {
             'execution_manifest': os.path.relpath(execution_manifest, RT).replace('\\', '/'),
             'manifest_sha256': sha256_path(execution_manifest),
             'harness_sha256': sha256_path(harness),
             'presplit_keys': execution.get('presplit_keys') or [],
             'projected_calls': preflight.get('agent_expected_after_tm'),
+            'input_sidecars': parked_sidecars,
         }
         if args.headless:
             coordinator.register_prepared_lease(
                 root, 'no_pwg_windows100', subcards, harness, execution_manifest,
-                preflight_path, artifact_path=os.path.dirname(execution_manifest))
+                preflight_path, artifact_path=os.path.dirname(execution_manifest),
+                profile_slot=args.profile_slot,
+                config_dir=(os.path.abspath(args.config_dir)
+                            if args.config_dir else None),
+                executor_lane=args.executor_lane)
     wf_out = os.path.join(OUT, 'wf_output.%s.json' % root)
     wf_out_rel = os.path.relpath(wf_out, RT).replace('\\', '/')
     manifest_rel = (os.path.relpath(execution_manifest, RT).replace('\\', '/')
@@ -332,6 +494,7 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
         'audit_command': audit_command(wf_out_rel, root, manifest_rel),
         'promote_command': promotion_command(wf_out_rel, args.gen_model_version),
         'residual_skipped': residual_summary(skipped_rows),
+        'sense_skipped': sense_skipped,
         'preflight': {
             'selected_keys': len(preflight.get('selected_keys') or []),
             'batches': preflight.get('batch_count'),
@@ -343,7 +506,7 @@ def prepare_window(args, index, heads, still_null_keys, tail_mode):
     }
 
 
-def used_window_indices(prefix, here=HERE, out=OUT):
+def used_window_indices(prefix, here=HERE, out=OUT, coord_dir=None):
     """Return the set of numeric window indices already used for `prefix`.
 
     Scans HERE for `run_pilot_wf.<prefix>NN.js` harnesses and OUT for
@@ -353,10 +516,22 @@ def used_window_indices(prefix, here=HERE, out=OUT):
     H809 W3: `--start-index` was a pure label knob whose stale `.ai_state` value (4)
     silently collided with already-run w04/w05; deriving the used set from disk removes
     the guesswork.
+
+    H4530 (11-09-2026), stall cause 4 upstreamed: the two scans above are the WRONG id
+    space for a `--headless` run. There the window root's existence is decided by
+    `<coord_dir>/artifacts/<root>/execution_manifest.<root>.json` (see `plan_window`),
+    and a run that died after preparing but before producing `wf_output` leaves that
+    directory with NO harness in HERE and NO output in OUT — so the auto-index happily
+    re-picked the SAME root and every retry died on `FAIL: headless window id already
+    exists`, not on a transient error. Three 06/07-09 `h4213can` launch attempts burned
+    exactly this way. A per-run timestamped prefix worked around it in the launcher;
+    counting the artifacts directories removes the collision itself, so a regenerated
+    launcher with a static prefix cannot reintroduce it. `out/headless_dryrun` is the
+    `--dry-run` twin of that directory and is scanned on the same footing.
     """
     pat = re.compile(re.escape(prefix) + r'0*([0-9]+)')
     used = set()
-    for base, prefix, suffix in (
+    for base, name_prefix, suffix in (
         (here, 'run_pilot_wf.', '.js'),
         (out, 'wf_output.', '.json'),
     ):
@@ -365,17 +540,35 @@ def used_window_indices(prefix, here=HERE, out=OUT):
         except OSError:
             continue
         for name in names:
-            if not (name.startswith(prefix) and name.endswith(suffix)):
+            if not (name.startswith(name_prefix) and name.endswith(suffix)):
                 continue
             m = pat.search(name)
+            if m:
+                used.add(int(m.group(1)))
+    # prepared-but-unfinished headless roots: the id space the existence guard uses.
+    # Anchored, and bounded to a plausible window index (roots are `%02d`), so a
+    # timestamp-prefixed leftover such as `h4213can091023345702` is not misread under the
+    # bare `h4213can` prefix as index 91_023_345_702 and does not launch the picker into
+    # the far future. Under its OWN prefix (`h4213can0910233457`) it still reads as 2.
+    root_pat = re.compile(re.escape(prefix) + r'0*([0-9]{1,3})(?:[._-]|$)')
+    root_bases = [os.path.join(out, 'headless_dryrun')]
+    if coord_dir:
+        root_bases.append(os.path.join(os.path.abspath(coord_dir), 'artifacts'))
+    for base in root_bases:
+        try:
+            names = os.listdir(base)
+        except OSError:
+            continue
+        for name in names:
+            m = root_pat.match(name)
             if m:
                 used.add(int(m.group(1)))
     return used
 
 
-def next_free_index(prefix, minimum=2, here=HERE, out=OUT):
+def next_free_index(prefix, minimum=2, here=HERE, out=OUT, coord_dir=None):
     """Lowest unused index >= minimum for `prefix` (max(used)+1, floored at minimum)."""
-    used = used_window_indices(prefix, here, out)
+    used = used_window_indices(prefix, here, out, coord_dir=coord_dir)
     return max([minimum - 1] + sorted(used)) + 1
 
 
@@ -413,26 +606,57 @@ def main(argv=None):
                     help='durable pwg.no_pwg_residual.v1 JSONL registry')
     ap.add_argument('--include-residuals', action='store_true',
                     help='explicitly retry keys whose latest residual status is blocked')
+    ap.add_argument('--require-senses', type=int, default=0,
+                    help='prepare only sub-cards whose input sidecars declare at least N '
+                         'top-level source senses (0 = off, the historical behaviour). A '
+                         'zero-sense sub-card gets max_heal_agents 0 -- one paid shot and no '
+                         'repair lane (H4527, 16-09-2026 null card). Strictly narrowing: an '
+                         'unprovable count is skipped too, a head whose eligible sub-cards are '
+                         'all sense-poor is omitted like a fully-blocked head, and nothing is '
+                         'written to the residual registry.')
+    # H3677: the coordinator's profile binding. Without it the emitted manifest is v1 and
+    # production refuses it -- see FINDINGS 604 and `binding_args`.
+    ap.add_argument('--profile-slot',
+                    help='validated account slot to bind the execution manifest to (e.g. c1). '
+                         'Required with --config-dir for a production-eligible v2 manifest')
+    ap.add_argument('--config-dir',
+                    help='CLI config dir whose fingerprint seals the manifest; '
+                         'supply together with --profile-slot')
+    ap.add_argument('--execution-route', default='claude-cli-headless',
+                    help='execution route stamped into the manifest (default %(default)s; '
+                         'the headless executor refuses any other)')
+    ap.add_argument('--executor-lane', default='serial-whole-card',
+                    help='executor lane stamped into the manifest (default %(default)s)')
+    ap.add_argument('--validation-method', default='audit_window+final_schema',
+                    help='validation method stamped into the manifest (default %(default)s)')
     args = ap.parse_args(argv)
 
     if args.headless:
         os.environ['PWG_COORDINATOR_DIR'] = os.path.abspath(args.coordinator_dir)
 
+    if bool(args.profile_slot) != bool(args.config_dir):
+        raise SystemExit('FAIL: --profile-slot and --config-dir must be supplied together')
     if args.window_size < 1 or args.window_size > 30:
         raise SystemExit('FAIL: --window-size must be between 1 and 30 for H255')
     if args.gen_model_version in ('sonnet', 'claude-sonnet'):
         raise SystemExit('FAIL: --gen-model-version must be an exact model id')
+    if args.require_senses < 0:
+        raise SystemExit('FAIL: --require-senses must be >= 0')
 
     # H809 W3: resolve the window index from disk unless the caller pins one.
     # `--plan-only` prepares nothing, so a stale/colliding label is harmless there and
     # never blocks a dry-run plan.
     preparing = (not args.plan_only) and args.limit_windows > 0
+    # H4530: a headless run's ids live in the coordinator artifacts dir, so the index
+    # scan must see it — otherwise a prepared-but-unfinished root is invisible here and
+    # fatal in `plan_window`'s existence guard.
+    coord_dir = args.coordinator_dir
     if args.start_index is None:
-        args.start_index = next_free_index(args.prefix)
+        args.start_index = next_free_index(args.prefix, coord_dir=coord_dir)
     elif preparing and not args.force_index:
-        used = used_window_indices(args.prefix)
+        used = used_window_indices(args.prefix, coord_dir=coord_dir)
         if args.start_index in used:
-            free = next_free_index(args.prefix)
+            free = next_free_index(args.prefix, coord_dir=coord_dir)
             raise SystemExit(
                 'FAIL: --start-index %d collides with an index already used on disk for '
                 'prefix %r (used: %s). Next free index is %d. Omit --start-index to '
@@ -497,6 +721,9 @@ def main(argv=None):
         'still_null_subcards_seen': len(still_null),
         'residual_registry': os.path.relpath(args.residual_file, RT).replace('\\', '/'),
         'include_residuals': args.include_residuals,
+        'require_senses': args.require_senses,
+        'sense_skipped': [row for window in windows + omitted
+                          for row in (window.get('sense_skipped') or [])],
         'residual_skipped': residual_summary({
             row['key']: row for row in initially_skipped + [
                 residuals[item['key']] for window in windows + omitted

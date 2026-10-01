@@ -1,8 +1,8 @@
 # ACC x NCC P1 -- crosswalk candidate counts
 
-_Created: 06-07-2026 · Last updated: 26-07-2026_
+_Created: 06-07-2026 · Last updated: 05-09-2026_
 
-Produced by [`build_works_crosswalk.py`](build_works_crosswalk.py) against the current `acc.jsonl` / `ncc.jsonl` (P0 outputs, read-only inputs here).
+Produced by [`build_works_crosswalk.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_works_crosswalk.py) against the current `acc.jsonl` / `ncc.jsonl` (P0 outputs, read-only inputs here).
 
 | Tier | Candidate rows | Distinct ACC keys | Distinct NCC keys |
 |---|---:|---:|---:|
@@ -30,3 +30,5 @@ Proper PREFIX containment (not general substring) between remaining distinct key
 Edit distance (rapidfuzz `Levenshtein.distance`) <= `max(1, len(key)//7)`, computed only within (first-letter, length//4-bucket) blocks for tractability against the full 32k x 125k cross-product. **Flagged for adjudication, not auto-merged.** Every row carries a 0-1 `score` (`1 - dist/max_len`) for the adjudication sheet to rank by. 1,575 candidate rows.
 
 No tier's output was capped for size -- all measured counts above are the actual, uncapped totals.
+
+_Dr. Mārcis Gasūns_

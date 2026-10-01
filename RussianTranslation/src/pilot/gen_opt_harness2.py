@@ -41,10 +41,44 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from window_common import INP, REPO, SRC, input_paths, load_json, read_text, rootmap_path, sha256_file, write_text
-from agent_budget import derive_agent_budget
+from agent_budget import derive_agent_budget, refuse_starvation_override
+import width_policy
+
+
+def resolve_width_policy():
+    """H4529: turn per-window telemetry into this window's MAX_WIDE / STAGGER_MS.
+
+    No `--adapt-width-from` => the A5/H1283 pinned defaults stand untouched and the
+    manifest records a null decision, so behaviour is byte-identical to pre-H4529 for
+    every existing runbook. With telemetry, `width_policy.decide_width` narrows on a
+    single degraded window and re-widens only after consecutive measured-healthy,
+    load-representative ones — never above the pinned 3.
+
+    The file may be a list of window rows, or {"windows": [...]} — oldest first.
+    """
+    if not ADAPT_WIDTH_FROM:
+        return None
+    with open(ADAPT_WIDTH_FROM, encoding='utf-8') as fh:
+        raw = json.load(fh)
+    rows = raw.get('windows', []) if isinstance(raw, dict) else list(raw or [])
+    # An explicit `--max-wide=N` above the A5-pinned default RAISES the adaptive ceiling for
+    # this run rather than being silently preserved by the policy: the operator's number is
+    # the top of the lane, the policy still only moves inside [1, that number]. Without the
+    # flag the ceiling is the pinned 3, so telemetry can never buy a width raise on its own.
+    decision = width_policy.decide_width(
+        rows, current_max_wide=MAX_WIDE, base_stagger_ms=STAGGER_MS,
+        ceiling=max(width_policy.DEFAULT_MAX_WIDE, MAX_WIDE))
+    globals()['WIDTH_DECISION'] = decision
+    globals()['MAX_WIDE'] = decision.max_wide
+    globals()['STAGGER_MS'] = decision.stagger_ms
+    sys.stderr.write('width_policy: %s -> max_wide=%d stagger_ms=%d (%s)\n'
+                     % (decision.action, decision.max_wide, decision.stagger_ms,
+                        decision.reason))
+    return decision
 import pwg_mask
 import card_fields                                    # C-01: the one restore/promote field set
 import german_anchor                                  # H858 Part B: the anchored-repair twin, authored once
+import target_anchor                                  # H3675: the target-side twin, same rule
 from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
@@ -79,16 +113,17 @@ SELFHEAL_GROUP_BUDGET = 12   # --selfheal-budget=N: fragments are grouped (in do
 # 448 fragments -> 174 groups (~2.6 frags/group) -> the framework re-cached ~230x ->
 # cache-write was 60% of a $80 / 3-card bill. The fix: group PRESPLIT cards at a budget
 # close to the proven-safe whole-card ceiling instead. A single fragment-lane agent() call
-# can safely emit as much as the batch lane already emits for a whole card (OUTPUT_BUDGET=90
-# citation-units / SENSE_PRESPLIT_BUDGET=20 senses); staying just UNDER both keeps the same
-# retry-cap safety while packing ~6x more fragments per call. Measured on pril10_w1's real
+# can safely emit as much as the calibrated whole-card packing emits for a whole card
+# (--output-budget=90 citation-units, or SENSE_PRESPLIT_BUDGET=20 senses); staying just
+# UNDER both keeps the same retry-cap safety while packing ~6x more fragments per call. Measured on pril10_w1's real
 # fragment weights: 60/18 takes 174 -> 69 groups (kAla 32->11, antara 32->9), i.e. the
 # framework is re-cached ~2.5x fewer times, at zero new output-size risk (each group stays
 # smaller than a batch the batch lane already runs). The heal-of-a-failed-whole-card path
 # keeps SELFHEAL_GROUP_BUDGET; only the presplit-PRIMARY grouping uses these.
 PRESPLIT_GROUP_CITE_BUDGET = 60  # --presplit-group-budget=N: citation-weighted (1+<ls>) cap
-                   #  per presplit-lane agent() call. 60 < OUTPUT_BUDGET 90 -> each call is
-                   #  strictly lighter than a batch the batch lane already handles.
+                   #  per presplit-lane agent() call. 60 < the calibrated 90 whole-card
+                   #  packing (--output-budget=90) -> each call is strictly lighter than a
+                   #  batch the batch lane already handles.
 PRESPLIT_GROUP_SENSE_CAP = 18    # AND at most this many fragments (== senses emitted) per call,
                    #  so a run of many tiny (0-<ls>) fragments can't silently pack >18 senses
                    #  into one call and re-trigger the sense-density failure. 18 < the
@@ -126,18 +161,29 @@ BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole 
                    #  batch — isolates a single poison card without re-billing the cards around
                    #  it. Bottoms out at single cards, which fall through to selfheal as before.
                    #  --no-binary-split restores the flat-retry loop.
-OUTPUT_BUDGET = 90 # DEFAULT 90 citation-weighted units since 2026-07-03 (raised from the
-                   #  untuned S10-era 60 after a calibration A/B on the hA root: 90 clearly
-                   #  won on both cost and quality — 60 agents/4.03M tok/496s vs 60's
-                   #  66 agents/4.68M tok/1082s, both 56/56 ok with 0 null — see
-                   #  KNOB_CALIBRATION_2026-07-03.md): size the main batches by estimated
-                   #  OUTPUT complexity (1 + <ls> count per card — same metric as
-                   #  --selfheal-budget) instead of INPUT bytes (skeleton+portrait). Input
-                   #  bytes don't predict StructuredOutput failure (TOKEN_LEVER_FINDING_2026-06-30:
-                   #  the portrait-slim byte lever was a non-lever); citation density does.
-                   #  Byte mode is still reachable: an EXPLICIT --budget=N (without
-                   #  --output-budget) or --output-budget=off — keeps documented byte-budget
-                   #  invocations (e.g. FU1 --budget=6000) exact.
+OUTPUT_BUDGET = 1  # DEFAULT 1 citation-weighted unit since H4054 (04-09-2026): ONE ORIGINAL
+                   #  CARD PER TRANSLATE CALL, with no flag — the ruled production shape
+                   #  (H2152, 02-08-2026: the per-call wall clock binds, and one unevaluable
+                   #  batch call destroys per-card attribution for ALL N cards in it; the
+                   #  one-card operator policy in RUN_FREQ_MAX.md / AGENTS.md now matches the
+                   #  generated call shape structurally instead of relying on whoever types
+                   #  the command). At budget 1 no second card ever fits a group (any card
+                   #  weighs >= 1), so `_group_by_budget` emits exactly one card per batch;
+                   #  an over-budget giant card simply takes its own group and is
+                   #  never dropped. Presplit routing is INDEPENDENT of this number —
+                   #  PRESPLIT_SOLO_CITE_FLOOR=40 is the per-card citation trigger since
+                   #  H2160 and SENSE_PRESPLIT_BUDGET=20 the sense trigger — so budget 1
+                   #  does NOT force ordinary cards into the heal lane (H255/H823).
+                   #  EXPLICIT batching stays available for calibration experiments:
+                   #  --output-budget=N (e.g. --output-budget=90 reproduces the 2026-07-03
+                   #  calibrated packing — 90 citation-weighted units, raised from the
+                   #  untuned S10-era 60 after the hA-root A/B in
+                   #  KNOB_CALIBRATION_2026-07-03.md — sized by estimated OUTPUT complexity
+                   #  (1 + <ls> per card) instead of INPUT bytes, which don't predict
+                   #  StructuredOutput failure: TOKEN_LEVER_FINDING_2026-06-30), or legacy
+                   #  byte mode via an EXPLICIT --budget=N (without --output-budget) or
+                   #  --output-budget=off — keeps documented byte-budget invocations
+                   #  (e.g. FU1 --budget=6000) exact.
 BATCH_MAX_OUTPUT_TOKENS = None  # opt-in manifest-bound Message Batches ceiling
 SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECOND, orthogonal
                    #  presplit trigger added 2026-07-04 (H155, tyaj~~h0_zz_pw stall). The
@@ -157,8 +203,8 @@ SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECO
                    #  into zero. Threshold 20 sits on a clean shelf: only ~0.2% of cards carry
                    #  >20 senses (survey 2026-07-04), and every known-good whole-card head is far
                    #  below it (sam 6, pari 8). Senses are far heavier per unit than citations
-                   #  (sam translates fine at 34 <ls>), so this budget is intentionally much
-                   #  lower than OUTPUT_BUDGET and independent of byte/citation batching mode.
+#  (sam translates fine at 34 <ls>), so this budget is intentionally independent of
+#  OUTPUT_BUDGET and of byte/citation batching mode.
 PRESPLIT_SOLO_CITE_FLOOR = 40  # --presplit-solo-cite-floor=N. THE citation presplit threshold,
                    #  and since H2160 the only one: a card presplits when (1 + <ls>) exceeds this
                    #  value. It is a per-CARD fail-solo fact — >=40 citation-units is well above
@@ -259,6 +305,12 @@ MAX_AGENTS_HEADROOM = 10    # additive jitter allowance so a TINY window (expect
                             #  small/medium words (they never legitimately approach 40, so the
                             #  floor let their runaways run unchecked to 40). H189 follow-up.
 MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across both pools
+FORCE_MAX_AGENTS = False    # --force-max-agents: acknowledge the H1610/H1618 total-vs-width footgun
+                            #  (--max-agents is a TOTAL spawn ceiling, not a concurrency width;
+                            #  N < key count starves every non-b0 card — ledger entry
+                            #  C2_M50_W1_MAX_AGENTS1_2026-07-24). Refused at generation time
+                            #  unless this flag is passed; the refusal lives in agent_budget.
+ADAPT_WIDTH_FROM = None     # --adapt-width-from=PATH: per-window telemetry JSON for width_policy
 # --- low-width staggered dispatch (H255/H811, 2026-07-12) --------------------------
 # The top-level dispatch fans every batch into the Workflow runtime, which runs ~min(16,
 # cores-2) ~= 10 concurrently. H255 w07 proved that on a *degraded* generation API this
@@ -270,8 +322,19 @@ MAX_AGENTS_OVERRIDE = None  # --max-agents=N: combined ceiling allocated across 
 # A5 (H1283): bounded is now the DEFAULT — measured non-null 2/21 (~10-wide) -> 14/18 (<=3-wide),
 # ~10% -> ~78% on the degraded transport; the single highest throughput-per-effort change in the
 # audit. Set --max-wide=0 explicitly to opt back into unbounded on a healthy API.
-MAX_WIDE = 3                # --max-wide=N: at most N translateBatch/healOnly units in flight (0=unbounded)
-STAGGER_MS = 2000           # --stagger-ms=M: delay between the first MAX_WIDE worker starts
+# H4529: the two numbers below are now OWNED by `width_policy.py`, which also owns the rule
+# that moves them. Until H4529 they were free-standing constants here and the per-window
+# telemetry the runtime already returns (kill_timeouts / conn_errors / null_keys / non-null
+# yield) was read by no policy at all (H1403 audit ledger #4) — width was static in both
+# directions. `--adapt-width-from=<telemetry.json>` feeds that telemetry back in: the policy
+# narrows on one degraded window and re-widens ONLY after consecutive measured-healthy
+# load-representative windows, never past the A5-pinned 3 (going above 3 stays a deliberate,
+# separately budgeted calibration act — `calibrate_perf_harness.py --width-arm`).
+MAX_WIDE = width_policy.DEFAULT_MAX_WIDE
+                            # --max-wide=N: at most N translateBatch/healOnly units in flight (0=unbounded)
+STAGGER_MS = width_policy.DEFAULT_STAGGER_MS
+                            # --stagger-ms=M: delay between the first MAX_WIDE worker starts
+WIDTH_DECISION = None       # --adapt-width-from=PATH: telemetry-derived width_policy.WidthDecision
 # --- per-card heal budget (H442, 2026-07-10) --------------------------------------
 # The window-level MAX_AGENTS switch above stops a runaway, but it is a SHARED pool: it
 # cannot stop ONE dense card from spending the WHOLE window budget before the other cards
@@ -524,6 +587,16 @@ def parse_args(argv):
             globals()['MAX_WIDE'] = int(a.split('=', 1)[1])
         elif a.startswith('--stagger-ms='):               # H255/H811: delay between the first MAX_WIDE worker starts (thundering-herd guard)
             globals()['STAGGER_MS'] = int(a.split('=', 1)[1])
+        elif a == '--force-max-agents':                   # H4529/H1610: acknowledge the total-vs-width footgun
+            globals()['FORCE_MAX_AGENTS'] = True
+        elif a.startswith('--adapt-width-from='):         # H4529: telemetry-driven width (width_policy.py)
+            globals()['ADAPT_WIDTH_FROM'] = a.split('=', 1)[1]
+    if MAX_AGENTS_OVERRIDE is not None and not FORCE_MAX_AGENTS:
+        # Early, cheap half of the H1610/H1618 refusal: the flag's own help text. The
+        # key-count-aware refusal fires in build() once the window's keys are known.
+        sys.stderr.write(
+            'note: --max-agents is a TOTAL spawn ceiling across the translate+heal pools, '
+            'not a concurrency width (--max-wide is). See C2_M50_W1_MAX_AGENTS1_2026-07-24.\n')
     if budget_explicit and not output_explicit:
         # An explicit --budget=N with no --output-budget means the caller wants BYTE-mode
         # batching (backward compat: every pre-2026-07-02 documented invocation that tuned
@@ -734,7 +807,12 @@ def conv_text():
 # plan mode's read-only constraint is already satisfied and its approval workflow has nothing
 # to attach to. Pinned by `test_mask_preamble_carries_task_shape` — if this text is ever
 # dropped, the next paid window refuses again and reports a parser bug.
-MASK_PREAMBLE = """=== TASK SHAPE (read first) ===
+# H4270 (06-09-2026): the closing GLOSS WRAPPERS block orders {%…%} preservation. German
+# {%…%} glosses are NOT masked (pwg_mask.mask keeps DE spans inline), so the model used to
+# translate them as bare prose — two c1 windows dropped 7/8 wrappers on _apta (H4015) with
+# all {Tn} spans intact. H3658 Lane B: not deterministically repairable post-hoc; the prompt
+# IS the fix. Pinned by test_gloss_wrapper_prompt_preservation_h4270.
+MASK_PREAMBLE_TEMPLATE = """=== TASK SHAPE (read first) ===
 This is a self-contained, read-only text-transformation task, complete in a single turn.
 Everything it needs is inline below: there is no repository to explore, no file to open or
 write, no command to run, and nothing outside this message is consulted or modified. The
@@ -758,7 +836,57 @@ its {Tn} tokens). In the `russian` field, put your translation, placing the rele
 tokens where the source cited a masked span. Translate EACH card; return one object per
 headword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit nothing.
 
+=== GLOSS WRAPPERS {%…%} — PRESERVE THE WRAPPER ===
+A German span wrapped as {%…%} in the source is a lexicographic gloss marker (the GAPS §17
+GLOSS-DE-RESIDUE convention). The wrapper is markup, not decoration: EVERY {%…%} span in a
+card's source MUST reappear in your translation as {%…%} around its translated gloss in the
+`russian` field. Never drop the wrapper, never replace it with «…» quotes, never leave the
+German word untranslated inside it.
+{{GLOSS_WRAPPER_EXAMPLE}}
+This rule applies ONLY to {%…%} spans you can SEE in your masked source. A {Tn} masked span
+stays {Tn} VERBATIM in both fields — never translate it, never wrap it in {%…%} or any other
+markup, never reconstruct its content; the deterministic post-step restores the original
+span exactly.
+
 """
+
+
+# #2109 (07-09-2026): the wrapper RULE above is shared by construction — both lanes read the
+# same constant, parameterized only by `.replace('`russian`', field)`. Its worked example was
+# not: an `--lang en` window was shown a Russian target string as the model for its own
+# English output. The example is now language-keyed next to `field`, so each lane sees a
+# demonstration in the language it must produce. Pinned (both lanes) by
+# test_gloss_wrapper_prompt_preservation_h4270.
+GLOSS_WRAPPER_EXAMPLE = {
+    'russian': """Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
+RU `а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
+`a〉 {%ein%} {T1} {T2}.` and your translation must read `а) {%некий%} {T1} {T2}.` — the
+{Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
+""",
+    'english': """Worked example — DE `a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.` becomes
+EN `a) {%a certain%} <is>Arhant</is> <ls>H. 25</ls>.`. As masked input the same sense reads
+`a〉 {%ein%} {T1} {T2}.` and your translation must read `a) {%a certain%} {T1} {T2}.` — the
+{Tn} tokens verbatim, the {%…%} wrapper kept around the translated gloss.
+""",
+}
+
+
+def mask_preamble(field='russian'):
+    """The masked-regime preamble for one lane: target field name + worked example keyed to it.
+
+    `field` is the per-sense translation field ('russian' | 'english'), i.e. exactly what
+    build() derives from `--lang`. Unknown values fall back to the RU rendering, which is what
+    MASK_PREAMBLE itself is.
+    """
+    example = GLOSS_WRAPPER_EXAMPLE.get(field, GLOSS_WRAPPER_EXAMPLE['russian'])
+    return (MASK_PREAMBLE_TEMPLATE
+            .replace('{{GLOSS_WRAPPER_EXAMPLE}}', example.rstrip('\n'))
+            .replace('`russian`', '`%s`' % field))
+
+
+# The RU rendering stays the module constant: it is what the RU lane ships. (The readiness probe
+# stopped prepending it in H4527, 15-09-2026 — the canary gate carries that check now.)
+MASK_PREAMBLE = mask_preamble('russian')
 
 
 def _rename_sense_field(schema, old, new):
@@ -896,6 +1024,7 @@ def mw_tm_block(root, mw_tm_path):
 
 # H1425 W2: single source, shared with audit_window_en.xref_only (was an independent copy in each).
 from xref_vocab import DEGENERATE_XREF_WORDS as _DEGENERATE_WORDS  # noqa: E402
+from xref_vocab import render_xref_ru  # noqa: E402
 _DEGENERATE_CORRECTION_RE = re.compile(r'\b(lies|lesen|streichen)\b', re.I)
 
 
@@ -1004,18 +1133,26 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     if identity is None:
         return None       # R7: the source-record identity cannot be proven -> reject the pass-through
     rec_h, rec_grammar = identity
+    # H3658: P3 (H1422) left the target field EMPTY here so verbatim German could never leak
+    # into the russian/english column. Correct about German, but it also meant every xref stub
+    # failed the window audit on `empty_russian` + `dropped_sanskrit_span` and landed on
+    # requeue.defect.keys.txt — permanently unpromotable, and (the guard being all-or-nothing)
+    # able to block a whole paid batch. `pa_tin` in H3654 is exactly that. `render_xref_ru`
+    # rebuilds the apparatus instead: `{#..#}` spans and `<ab>`/`<ls>`/`<hom>` regions verbatim
+    # (the article site resolves `<ab>` to Russian itself via pwg_ab_ru.RU_MAP), only a BARE
+    # closed-vocabulary German word rewritten. It returns None on anything it cannot render, and
+    # that falls straight back to P3's empty field — so the German-leak guarantee is unchanged.
+    rendered = render_xref_ru(body) if field == 'russian' else None
     sense = {
         'tag': 'xref',
         'german': body,
-        # P3 (H1422): body is German (plus the {#..#}/<ls>/<ab> markup) -- there is
-        # nothing here to translate, so the target field stays empty rather than
-        # silently carrying verbatim German into the russian/english column. The
-        # German is still visible via the 'german' key above for editorial reference.
-        field: '',
+        field: rendered or '',
         'equivalence_type': 'explanatory',
         'source_type': 'lexicographic',
         'stratum': '',
-        'differentia': 'Deterministic pass-through: cross-reference stub with no translatable gloss.',
+        'differentia': ('Deterministic pass-through: cross-reference apparatus rendered in '
+                        'Russian; no gloss content.') if rendered else
+                       'Deterministic pass-through: cross-reference stub with no translatable gloss.',
     }
     return {
         'key1': key,
@@ -1367,18 +1504,21 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             presplit.append(k)
             why = []
             if cite_hit:
-                why.append('%d <ls> exceeds output budget %d' % (inputs[k]['ls'], cite_budget))
+                why.append('%d <ls> exceeds the per-card citation presplit floor %d '
+                           '(PRESPLIT_SOLO_CITE_FLOOR, independent of the %s output budget)'
+                           % (inputs[k]['ls'], PRESPLIT_SOLO_CITE_FLOOR, cite_budget))
             if sense_hit:
                 why.append('%d senses/fragments exceed sense budget %d'
                            % (frag_n[k], SENSE_PRESPLIT_BUDGET))
             print('  presplit: %s (%s) -> direct fragment translation' % (k, '; '.join(why)))
     batch_keys = [k for k in keys if k not in presplit and k not in tm_keys and k not in degenerate_keys]
 
-    # --output-budget=N (default 60): size batches by citation-weighted OUTPUT complexity
-    # (1 + <ls> per card) instead of input bytes — bytes don't predict StructuredOutput
-    # failure (a dense card's masked bytes can be small while its sense/citation count is
-    # what blows the retry cap). Byte mode (explicit --budget=N / --output-budget=off)
-    # keeps the original input-byte behavior.
+    # --output-budget=N (default 1 = one original card per call, H4054): size batches by
+    # citation-weighted OUTPUT complexity (1 + <ls> per card) instead of input bytes — bytes
+    # don't predict StructuredOutput failure (a dense card's masked bytes can be small while
+    # its sense/citation count is what blows the retry cap). An EXPLICIT --output-budget=N>1
+    # is the experiment/calibration batching lane; byte mode (explicit --budget=N /
+    # --output-budget=off) keeps the original input-byte behavior.
     #
     # Fallback isolation (2026-07-04, collateral-null fix): a card with NO selfheal fallback
     # (split_plan() < 2 fragments, or a lossy fragment mask — see the `frags` loop above)
@@ -1433,6 +1573,16 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
     runtime_inputs = {k: inputs[k] for k in keys if k in runtime_keys}
     runtime_phmaps = {k: phmaps[k] for k in keys if k in runtime_keys}
     runtime_suggest_tm = {k: v for k, v in suggest_tm.items() if k in runtime_keys}
+    # H1610/H1618 footgun, refused one step before the paid boundary (H4529): `--max-agents`
+    # is a TOTAL spawn ceiling, not a width. Below the key count it cannot finish the window.
+    _starve_note = refuse_starvation_override(
+        len(runtime_keys) or len(keys), MAX_AGENTS_OVERRIDE,
+        force=FORCE_MAX_AGENTS, where='gen_opt_harness2')
+    if _starve_note:
+        sys.stderr.write(_starve_note + '\n')
+
+    resolve_width_policy()
+
     budget_plan = derive_agent_budget(
         len(batches),
         {k: len(v) for k, v in frags.items() if v},
@@ -1555,6 +1705,11 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         # ignores retries and whole-batch selfheal fallback on non-presplit cards.
         'agent_expected_after_tm': agent_expected,
     }
+    if WIDTH_DECISION is not None:
+        # H4529: who moved the width, on what telemetry, and what warm-up the chosen width
+        # now demands (width_policy.probe_plan). The key is ABSENT unless --adapt-width-from
+        # actually ran the policy, so every pre-H4529 manifest/golden stays byte-identical.
+        meta['width_policy'] = width_policy.policy_meta(WIDTH_DECISION, MAX_WIDE)
     print('  lanes: tm_cards=%d frag_tm_cards=%d degenerate_passthrough=%d agent_expected_after_tm=%d'
           % (meta['tm_cards'], len(meta['frag_tm_cards']),
              len(meta['degenerate_passthrough_keys']), meta['agent_expected_after_tm']))
@@ -1586,7 +1741,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'execution': execution,
         'key_provenance': key_provenance,
         'prompt': {
-            'preamble': MASK_PREAMBLE.replace('`russian`', '`%s`' % field),
+            'preamble': mask_preamble(field),
             'grammar': single_grammar,
             'grammars': grammars,
             'translation': tr,
@@ -1824,6 +1979,15 @@ const TNMASK_DETAIL = []
 // away, and only lands when it verifies exactly source-faithful, so there is nothing to arm.
 let GERMAN_ANCHOR_REPAIRS = 0
 const GERMAN_ANCHOR_DETAIL = []
+// H3665: `german_anchor_repairs: 0` reads the same whether nothing needed repairing or the
+// repair was never reached. The batch lane keeps the same two extra counters as the headless
+// twin (headless_worker.normalize_batch), so a summary from either route is read the same way.
+let GERMAN_ANCHOR_INVOCATIONS = 0
+const GERMAN_ANCHOR_NOT_REACHED = []
+// H3675: the target-side repair's own telemetry, same shape as the german one.
+let TARGET_ANCHOR_REPAIRS = 0
+let TARGET_ANCHOR_INVOCATIONS = 0
+const TARGET_ANCHOR_DETAIL = []
 const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))
@@ -1860,6 +2024,7 @@ const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
 // the Python lane omitting `grammar` while this JS lane hard-coded rec.grammar + s.german).
 const TOKEN_FIDELITY_SPEC = %(token_fidelity_spec)s
 %(german_anchor_js)s
+%(target_anchor_js)s
 const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { for (const f of TOKEN_FIDELITY_SPEC.record) a = a.concat((rec[f] || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) for (const f of TOKEN_FIDELITY_SPEC.sense) a = a.concat((s[f] || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
 // Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
@@ -1953,6 +2118,7 @@ const accept = (c, k) => {
   // tokens, which restoreCard consumes — after it a dropped span is indistinguishable from
   // prose and can no longer be anchored. Python twin: headless_worker.normalize_batch.
   const masked = JSON.parse(JSON.stringify(c))
+  let germanStamp = null
   c = restoreCard(c, k)
   // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a mismatch
   // means misalignment / dropped {Tn}. Reject -> deterministic requeue, never emit garbled.
@@ -1965,15 +2131,17 @@ const accept = (c, k) => {
     // Accepted only when the repair makes the card exactly source-faithful; anything else
     // falls through to the identical reject as before. A card that passed the count above
     // never enters this branch, so clean cards are byte-untouched.
+    GERMAN_ANCHOR_INVOCATIONS++
     const rep = gaReanchor(masked, INPUTS[k].skeleton || '')
-    const cand = rep.ok ? restoreCard(masked, k) : null
+    const cand = rep.ok ? restoreCard(JSON.parse(JSON.stringify(masked)), k) : null
     const cls = cand ? countOf(cand, /<ls\\b/g) : -1, csk = cand ? countOf(cand, /\\{#/g) : -1
     if (cand && cls === INPUTS[k].ls && csk === INPUTS[k].sk) {
       // `masked` was snapshotted AFTER the tnmask block above, so the repaired card already
       // carries the same H1226 pre-restore pairing — the stamp keeps describing what the model
       // actually emitted, never the repaired text.
       c = cand
-      c.german_anchor = gaStamp(rep)
+      germanStamp = gaStamp(rep)          // H3675: survives the target repair's re-restore
+      c.german_anchor = germanStamp
       GERMAN_ANCHOR_REPAIRS++
       GERMAN_ANCHOR_DETAIL.push({ key: k, reinjected: c.german_anchor.reinjected })
       log('german-anchor repair: ' + k + ' re-injected ' + c.german_anchor.reinjected.join(',') + ' from source')
@@ -1998,8 +2166,33 @@ const accept = (c, k) => {
   // translation-only drop can no longer hide behind a clean source echo.
   const lsT = countOfField(c, TARGET_FIELD, /<ls\\b/g), skT = countOfField(c, TARGET_FIELD, /\\{#/g)
   if (lsT !== INPUTS[k].ls || skT !== INPUTS[k].sk) {
-    noteFail(k, 'translation-fidelity-reject: <ls> ' + lsT + '/' + INPUTS[k].ls + ', {# ' + skT + '/' + INPUTS[k].sk)
-    return null
+    // H3665: the german-only guard above passed, so the german repair branch was never
+    // entered -- this card is invisible to `german_anchor_repairs` in BOTH directions.
+    GERMAN_ANCHOR_NOT_REACHED.push(k)
+    // H3675: repair-then-verify on the TARGET side. The german echo is faithful, so THIS
+    // sense's german still carries every {Tn} in order and is a sound anchor; re-inject the
+    // dropped ones and re-run this same count as the verifier. Refused cards fall through to
+    // the identical reject as before. MG ruled `reanchor` over an explicit requeue 29-08-2026.
+    TARGET_ANCHOR_INVOCATIONS++
+    const trep = taReanchor(masked, TARGET_FIELD)
+    const tcand = trep.ok ? restoreCard(JSON.parse(JSON.stringify(masked)), k) : null
+    const tls = tcand ? countOf(tcand, /<ls\\b/g) : -1, tsk = tcand ? countOf(tcand, /\\{#/g) : -1
+    const tlsT = tcand ? countOfField(tcand, TARGET_FIELD, /<ls\\b/g) : -1
+    const tskT = tcand ? countOfField(tcand, TARGET_FIELD, /\\{#/g) : -1
+    if (!(tcand && tls === INPUTS[k].ls && tsk === INPUTS[k].sk
+          && tlsT === INPUTS[k].ls && tskT === INPUTS[k].sk)) {
+      noteFail(k, 'translation-fidelity-reject: <ls> ' + lsT + '/' + INPUTS[k].ls + ', {# ' + skT + '/' + INPUTS[k].sk +
+        '; target-anchor ' + (trep.ok ? 'verify-failed' : (trep.reason || 'refused')))
+      return null
+    }
+    c = tcand
+    // The re-restore produced a fresh object, so a german repair already applied to this card
+    // must be re-stamped or its provenance is silently lost.
+    if (germanStamp) c.german_anchor = germanStamp
+    c.target_anchor = taStamp(trep)
+    TARGET_ANCHOR_REPAIRS++
+    TARGET_ANCHOR_DETAIL.push({ key: k, reinjected: c.target_anchor.reinjected })
+    log('target-anchor repair: ' + k + ' re-injected ' + c.target_anchor.reinjected.join(',') + ' into ' + TARGET_FIELD)
   }
   // H960 SAN-LOSS shortfall guard (H920's deferred deepest fix). The ls/sk fidelity check
   // above is blind to a whole dropped sense that carries neither a citation nor a {#..#} span
@@ -2504,6 +2697,14 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   tnmask_detail: TNMASK_DETAIL,
                   german_anchor_repairs: GERMAN_ANCHOR_REPAIRS,
                   german_anchor_detail: GERMAN_ANCHOR_DETAIL,
+                  // H3665: repairs 0 + invocations 0 + not_reached [k] == the repair never ran
+                  // on a card that died a fidelity death (the `hasita` no_pwg_w09 shape).
+                  german_anchor_invocations: GERMAN_ANCHOR_INVOCATIONS,
+                  german_anchor_not_reached: GERMAN_ANCHOR_NOT_REACHED,
+                  // H3675: the target-side twin's telemetry.
+                  target_anchor_repairs: TARGET_ANCHOR_REPAIRS,
+                  target_anchor_invocations: TARGET_ANCHOR_INVOCATIONS,
+                  target_anchor_detail: TARGET_ANCHOR_DETAIL,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -2520,6 +2721,8 @@ return { meta: META, summary, results: out }
         # here, for the same reason as the two constants above -- a hand-copied second lane is
         # exactly how restoreCard (C-01) and cardTokens (C-17) drifted apart.
         'german_anchor_js': german_anchor.js_source(),
+        # H3675: the target-side twin, authored in target_anchor.py for the same reason.
+        'target_anchor_js': target_anchor.js_source(),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
         # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
         # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.
@@ -2527,7 +2730,7 @@ return { meta: META, summary, results: out }
         'tgt_lang': 'English' if lang == 'en' else 'Russian',
         'gen_label': 'Sonnet 5' if lang == 'en' else 'Sonnet',
         'model': 'claude-sonnet-5',
-        'preamble': json.dumps(MASK_PREAMBLE.replace('`russian`', '`%s`' % field), ensure_ascii=True),
+        'preamble': json.dumps(mask_preamble(field), ensure_ascii=True),
         'grammar': json.dumps(single_grammar, ensure_ascii=True),
         'grammars': json.dumps(grammars, ensure_ascii=True),
         'iasts': json.dumps({k: _portrait_key_iast((v.get('portrait') or ''), k)

@@ -18,3 +18,4 @@
 {"schema": "pwg.no_pwg_residual.v1", "key": "_sibi~~h0_zz_pw", "status": "blocked", "reason": "2x selfheal-nothing-resolved", "source_window": "no_pwg_w05", "updated_at": "2026-07-15T00:00:00Z"}
 {"schema": "pwg.no_pwg_residual.v1", "key": "a_sud_da~~h0_zz_pw", "status": "blocked", "reason": "2x selfheal-nothing-resolved", "source_window": "no_pwg_w05", "updated_at": "2026-07-15T00:00:00Z"}
 {"schema": "pwg.no_pwg_residual.v1", "key": "aklizwa~~h0_zz_pw", "status": "blocked", "reason": "2x selfheal-nothing-resolved", "source_window": "no_pwg_w05", "updated_at": "2026-07-15T00:00:00Z"}
+{"schema": "pwg.no_pwg_residual.v1", "key": "kast_ur_i~~h0_zz_pw", "status": "blocked", "reason": "defect requeue via requeue_from_audit", "source_window": "h4527vol14", "updated_at": "2026-09-22T13:28:46Z"}

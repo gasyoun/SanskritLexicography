@@ -15,6 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import pipeline_version
+from store_write import locked_store_rewrite
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -126,11 +127,10 @@ def mark_unresolved(rows):
 
 
 def write_rows(path, rows):
-    tmp = path + '.tmp'
-    with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
-    os.replace(tmp, path)
+    # H3350: every rewrite of the canonical store goes through the H2146 lock
+    # (PromoteClaim serialization + fsynced backup + atomic replace); ClaimBusy
+    # propagates loudly when a promote or another mutator holds the claim.
+    locked_store_rewrite(path, rows, tag='provaudit')
 
 
 def print_report(result):

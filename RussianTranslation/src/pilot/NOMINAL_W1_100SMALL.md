@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # NOMINAL_W1_100SMALL — first cheap nominal window
 
 _Prepared: 05-07-2026 · Executor: Codex/GPT-5 · No Max/Workflow run performed._

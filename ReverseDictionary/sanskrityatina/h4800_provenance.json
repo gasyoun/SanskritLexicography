@@ -1,0 +1,84 @@
+{
+  "dataset": "sanskrityatina-reverse-vs-union16",
+  "handoff": "H4800",
+  "generated": "2026-09-19",
+  "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash), drain worker on Claude/c4",
+  "stock_source": {
+    "path": "yadisk:Sanskrityatina/04_Reverse/.doc.pdf/reverse-index-full.doc",
+    "local_size_bytes": 13846528,
+    "sha256": "79ae7a5562e5a44ea9e15ee5e0c92badac467e26a97d87bb620419125b284826",
+    "worddocument_stream_bytes": 13555774,
+    "extraction": "WordDocument stream decoded UTF-16LE, split on \\r; entries = lines entirely within the IAST word alphabet; coded lines 'SOURCE_CODE<TAB|SP>word' (single capital letter); binary junk lines excluded"
+  },
+  "union_source": {
+    "path": "HeadwordLists/union-16dicts/union_headwords_16.tsv (H4797)",
+    "rows": 417184,
+    "join_key": "sanskrit-util slp1_form_key(union slp1) == form_key(headword_iast)"
+  },
+  "counts": {
+    "raw_entries_extracted": 266709,
+    "junk_nonentry_lines": 6691,
+    "duplicate_headwords": 6,
+    "unique_headwords": 266703,
+    "coded": 134797,
+    "uncoded": 131906,
+    "source_code_distribution": {
+      "A": 20987,
+      "B": 6851,
+      "G": 7551,
+      "H": 12549,
+      "I": 6714,
+      "M": 57176,
+      "N": 3542,
+      "P": 1919,
+      "R": 6620,
+      "S": 10311,
+      "V": 577
+    },
+    "legend_stock_total_for_reference": 187992,
+    "legend_anchor_examples_present": {
+      "aṃśagaṇa": false,
+      "paryantīkṛta": true,
+      "paryavadāpayitar": true
+    },
+    "in_union": 243985,
+    "residue_not_in_union": 22718,
+    "coverage_pct": 91.48,
+    "per_dict_overlapping_stock_headwords": {
+      "MW": 196281,
+      "PWK": 147381,
+      "PWG": 108392,
+      "AP": 43798,
+      "VCP": 43156,
+      "CAE": 37976,
+      "CCS": 29156,
+      "MD": 20415,
+      "BUR": 19880,
+      "BHS": 18000,
+      "SCH": 16611,
+      "SKD": 14769,
+      "GRA": 10559,
+      "PD": 10054,
+      "INM": 9506,
+      "VEI": 3896
+    },
+    "residue_by_source_code": {
+      "A": 12171,
+      "I": 5464,
+      "P": 1438,
+      "R": 1170,
+      "S": 1032,
+      "M": 749,
+      "B": 240,
+      "(none)": 170,
+      "G": 158,
+      "N": 63,
+      "H": 47,
+      "V": 16
+    }
+  },
+  "notes": [
+    "The doc is the FULL working reverse index (superset of the legend's 187,992 'class 0' stock); single-letter source codes are carried verbatim, semantics NOT adjudicated here (H4475 legend names IEG/PD/BHS/MW/SCH as the coding's source-dict universe).",
+    "Residue (in_union=0) = forms attested in MG's Schwarz-based reverse stock but absent from ALL 16 Cologne dictionaries of the H4797 union — the Russian-school-only slice."
+  ]
+}

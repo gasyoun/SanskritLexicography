@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — Claude Code Max staged PWG run
 
 Date: 2026-06-29
@@ -222,3 +224,5 @@ Canonical runbook:
 ```text
 src/pilot/RUN_FREQ_MAX.md
 ```
+
+_Dr. Mārcis Gasūns_

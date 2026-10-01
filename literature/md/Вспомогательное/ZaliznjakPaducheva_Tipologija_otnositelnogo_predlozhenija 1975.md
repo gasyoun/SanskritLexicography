@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # ZaliznjakPaducheva_Tipologija_otnositelnogo_predlozhenija 1975
 
 **Source:** `ZaliznjakPaducheva_Tipologija_otnositelnogo_predlozhenija 1975.pdf`  
@@ -2083,3 +2085,5 @@ mкля"» ([1, с. 53-54)). Не вполне очевидно, однако, �
 А. А. Зализняк, Е. В. Падучева «К типологии относительного предложения» языка// Доклады на конференции по обработке информации, машин­
 ному переводу и автоматическому чтению текста. М., 1961. 4. Иванов В. В. Хеттский язык. М., 1963. 5. Жолковский А. К. Синтаксис сомали. М., 1971. б. Q u i n е W. О. Word and object. Cambridge, Mass., 1960. 7. Reichenbach Н. Elements ofsymЬolic logic. N. У., 1948. 8. С h о m s k у N. Language and Mind. N. У., 1968. Впервые опубликовано в: СиИ, No 6, 1975 г., с. 51-101.
 107
+
+_Dr. Mārcis Gasūns_

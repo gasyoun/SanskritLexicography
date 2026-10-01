@@ -1,0 +1,15 @@
+<L>1<pc>1,1<k1>a<k2>a<h>1<lex>ind<ls>
+{#a#}¦ the first letter of the alphabet <ls>L.</ls>
+<LEND>
+<L>2<pc>1,1<k1>akza<k2>akza<h>1<lex>m
+{#akza#}¦ m. an axle, <s>akza</s> <s1 slp1="akza">akza</s1> <ls>RV. i, 1</ls> {%axis%} {@bold@} <ab>cf.</ab> <info lex="m"/>
+<LEND>
+<L>3<pc>1,1<k1>agni<k2>agni/<h>1<lex>m
+{#agni#}¦ m. fire, the god of fire <ls>RV.</ls> <ls>AV.</ls>
+<LEND>
+<L>4<pc>1,1<k1>deva<k2>deva/, devI<h>1<lex>mfn
+{#deva#}¦ mfn. heavenly, divine <ls>L.</ls>
+<LEND>
+<L>5<pc>1,1<k1>devatA<k2>deva-tA<h>1<lex>f
+{#devatA#}¦ f. godhead, divinity <ls>MBh.</ls>
+<LEND>

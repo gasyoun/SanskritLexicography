@@ -1,0 +1,34 @@
+{
+ "handoff": "H4055",
+ "ts": "20260905T001247Z",
+ "action": "mirror refreshed from src store",
+ "mode": "apply",
+ "src_rows": 3,
+ "mirror_rows_before": 3,
+ "mirror_rows_after": 3,
+ "only_mirror_dropped": 0,
+ "dropped_quarantined": 0,
+ "dropped_id_churn": 0,
+ "dropped_superseded_acked": 0,
+ "dropped_unexplained": 0,
+ "ack_superseded_file": null,
+ "only_src_added": 0,
+ "src_sha256": "cfb96fefb2800814373e1255a59ab82d68e4b953ebc613026e8016d642ee4054",
+ "noop": false,
+ "shared_ids": 3,
+ "ru_equal": 2,
+ "changed_ru": 1,
+ "changed_ru_keys": [
+  [
+   "k2",
+   "s",
+   "1",
+   "de2"
+  ]
+ ],
+ "changed_ru_keys_truncated": false,
+ "forced": false,
+ "mirror_sha_before": "1e09ce6437ea8052979ece142376496f05237ae18390d48d43384f35b719ddaf",
+ "mirror_sha_after": "cfb96fefb2800814373e1255a59ab82d68e4b953ebc613026e8016d642ee4054",
+ "backup": "mirror_content.jsonl.h4055.20260905T001247.287385Z.p5814.c403ce47cf61.bak"
+}

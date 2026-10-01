@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff research — microstructure conventions across the core dictionaries (2026-06-23)
 
 **Question.** For each core dictionary, *how* are the four microstructure conventions
@@ -54,7 +56,7 @@ homonyms + its two-source attested/lexicographic distinction, already in our sch
 - Sense order → [`HANDOFF_sense_ordering.md`](HANDOFF_sense_ordering.md).
 - What `pwg_ru` already implements (homonym `h`-keying, equivalence_type, two-source
   attested/lexicographic, Apresjan discrimination, Renou I–V) →
-  [`../DICTIONARY_CHAIN.md`](../DICTIONARY_CHAIN.md), [`../APRESJAN.md`](../APRESJAN.md),
+  `../DICTIONARY_CHAIN.md`, `../APRESJAN.md`,
   the final-card schema. The research output should say, per convention, **keep / adapt /
   drop** against what we already do.
 
@@ -105,8 +107,8 @@ SCH `°`/`*` markers). Evidence quotes are from the OCRed prefaces and the entry
 
 `pwg_ru`'s schema (homonym `h`-keying, `equivalence_type`, two-source
 attested/lexicographic, Apresjan discrimination, Renou I–V) was checked against each
-convention. See [`../DICTIONARY_CHAIN.md`](../DICTIONARY_CHAIN.md),
-[`../APRESJAN.md`](../APRESJAN.md).
+convention. See `../DICTIONARY_CHAIN.md`,
+`../APRESJAN.md`.
 
 - **Homonyms → KEEP, unchanged.** Our `h`-keying *is* the PWG/PW `<h>`/`<hom>` numbered,
   etymology-based split — the dominant convention (4 of 6 dicts number; GRA/SCH key to a
@@ -152,3 +154,5 @@ illustrative quotation as an *optional pedagogical* enrichment — never as the 
 backbone. This keeps `pwg_ru` aligned with its own already-built schema: only the **gloss
 default** (toward толкование) and the **citation density per layer** need new policy; the
 rest is already implemented.
+
+_Dr. Mārcis Gasūns_

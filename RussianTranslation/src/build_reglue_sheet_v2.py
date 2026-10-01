@@ -76,6 +76,8 @@ from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href, DA
 from sheet_screening import screening_block
 from ls_links import LsLinks, HIT, NO_LOCUS, MINTABLE
 import reglue_delta as rd   # H3152: one delta sign instead of four labels
+# H3752: resolve `<subtype>_unplaced` back to the label TYPOLOGY is keyed on.
+from edition_rel import base_subtype
 
 #: H3152 B4 (MG review 5a) — say which relation holds, not just which number.
 BOUND_LABEL = "привязано к смыслу PWG %s"
@@ -99,7 +101,7 @@ REVIEW = os.path.join(DATA, "review")
 # The 16-08 generation was built but never published; its inputs (the wave-3
 # reglue jsons) moved the same day, so it can no longer be reproduced and its
 # lock was retired rather than re-bound. 17-08 is the generation that ships.
-GENERATED = "2026-08-21"
+GENERATED = "2026-08-25"
 
 ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5), ("yat", 5),
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
@@ -259,7 +261,12 @@ EXTRA_CSS = G5_CSS + """  .tchip { display:inline-block; padding:1px 7px; border
 
 #: build_article_site renders an UNRESOLVED citation as `<span class=ls …>`
 #: (attribute values deliberately unquoted). Mark it with WHY it is unresolved.
-_UNRESOLVED_LS = re.compile(r"(<span class=ls[^>]*>)(.*?)(</span>)", re.S)
+#: H3501: the coordinate triple's CRITICAL address renders as `<span class=lsc …>`
+#: and `class=ls[^>]*` prefix-matched it too — so every ≈крит. address carried ⚑
+#: "mintable". It is not: mbh_locus.bori_href is None by design (the BORI e-text
+#: is © BORI 1999, not redistributable, no deep link is ever invented), so a
+#: critical address is deliberately unlinkable — ∅-class, never work.
+_UNRESOLVED_LS = re.compile(r"(<span class=(lsc|ls)[^>]*>)(.*?)(</span>)", re.S)
 _TAGS = re.compile(r"<[^>]+>")
 
 
@@ -268,11 +275,14 @@ def _mark_gaps(html_body):
     stats = collections.Counter()
 
     def sub(m):
-        visible = _TAGS.sub("", m.group(2))
-        status = MINTABLE if re.search(r"\d", visible) else NO_LOCUS
+        visible = _TAGS.sub("", m.group(3))
+        if m.group(2) == "lsc":
+            status = NO_LOCUS          # deliberate: no target will ever exist
+        else:
+            status = MINTABLE if re.search(r"\d", visible) else NO_LOCUS
         stats[status] += 1
         mark = "⚑" if status == MINTABLE else "∅"
-        return "%s%s<sup>%s</sup>%s" % (m.group(1), m.group(2), mark, m.group(3))
+        return "%s%s<sup>%s</sup>%s" % (m.group(1), m.group(3), mark, m.group(4))
 
     out = _UNRESOLVED_LS.sub(sub, html_body)
     stats[HIT] = out.count("<a class=ls ")
@@ -332,8 +342,15 @@ def _supp_head(sup):
     does not.
     """
     subtype = sup.get("subtype", "?")
+    # H3752: the sidecar now emits `restate_unplaced` / `nws_at_sense_unplaced` /
+    # `a2a_unplaced` when no PWG sense was identified. TYPOLOGY deliberately does
+    # NOT grow a twin row for each — the unplaced fact is already on the card as
+    # the `PLACEMENT_REASON_LABEL` chip below (H2879 S6), and a second copy of it
+    # in this table is exactly the drift REGLUE_SPEC §10 warned about. The lookup
+    # resolves through the base name, so the gloss and the class stay right.
     op, direction, klass, gloss = TYPOLOGY.get(
-        subtype, (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
+        base_subtype(subtype),
+        (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
     sign = sup.get("sign") or rd.ABRIDGE
     tip = sup.get("delta_tip") or gloss
     lang = (' <span class="tchip t-meta">‹<code>%s</code>›</span>' % esc(sup["lang"])
@@ -612,9 +629,9 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v6-2026-08-21"
+    sheet_id = "h180-reglue-spotcheck-v7-2026-08-25"
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v6.decisions.json")
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v7.decisions.json")
     config.update({
         "sheet_id": sheet_id,
         "split_layout": True,
@@ -682,14 +699,14 @@ def main():
             r'<details class="store-details"[^>]*>.*?</details>', "", doc, flags=re.S):
         raise SystemExit("anatomy leaked outside closed details")
 
-    sample = os.path.join(REVIEW, "h180_reglue_v6_sample.jsonl")
+    sample = os.path.join(REVIEW, "h180_reglue_v7_sample.jsonl")
     # newline="\n": the tracked sample is LF in git, and a Windows run without
     # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
     with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
-    out = os.path.join(REVIEW, "h180_reglue_v6_sheet.html")
+    out = os.path.join(REVIEW, "h180_reglue_v7_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
     write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED, source_html=out)
@@ -714,6 +731,20 @@ def selftest():
         nonlocal ok
         print(("  ok   " if cond else "  FAIL ") + msg)
         ok = ok and bool(cond)
+
+    # ---- H3501: a critical address (span.lsc) is ∅-class, never ⚑ mintable —
+    # mbh_locus.bori_href is None by design, no BORI deep link will ever exist
+    _crit = ('<span class=lsc title="этот стих есть и в критическом издании">'
+             ' = ≈крит. 05,147.14a</span>')
+    out, st = _mark_gaps(_crit)
+    check("⚑" not in out and "<sup>∅</sup>" in out,
+          "the ≈крит address carries ∅, not the mintable flag")
+    check(st[NO_LOCUS] == 1 and st[MINTABLE] == 0,
+          "…and is counted as no-locus (%s)" % dict(st))
+    _unres = '<span class=ls title="t">KĀTH. 24,5.</span>'
+    out2, st2 = _mark_gaps(_unres)
+    check("<sup>⚑</sup>" in out2 and st2[MINTABLE] == 1,
+          "a digit-bearing UNRESOLVED citation stays mintable ⚑")
 
     # the H2827 motivating case — gā, NWS, five clusters visible in the first line
     ga = ("{#gā (=pw gā 1)#} идти, приходить, странствовать. уходить. приходить "
@@ -750,11 +781,25 @@ def selftest():
     check(from_spec <= set(TYPOLOGY), "every ADDENDA_TYPOLOGY subtype is classified")
     # H2880: the sidecar is the authority on what can appear, so read it rather
     # than trusting the literal above to stay in step with the classifier.
-    from edition_rel import SUBTYPES as _SUBTYPES
-    unclassified = {s for s in _SUBTYPES
-                    if s not in ("base", "unknown")} - set(TYPOLOGY)
+    # H3752: read ALL_SUBTYPES, which includes the unplaced twins, and resolve
+    # each through `base_subtype` — that is the contract this file relies on, so
+    # it is the one asserted. A twin that failed to strip back would land in the
+    # "неклассифицированный подтип" fallback and print a wrong class on a card.
+    from edition_rel import ALL_SUBTYPES as _SUBTYPES
+    unclassified = {base_subtype(s) for s in _SUBTYPES
+                    if base_subtype(s) not in ("base", "unknown")} - set(TYPOLOGY)
     check(not unclassified,
           "every classifier subtype is in TYPOLOGY (missing: %r)" % unclassified)
+    for _s in ("restate_unplaced", "nws_at_sense_unplaced", "a2a_unplaced"):
+        _op, _dir, _kl, _gl = TYPOLOGY.get(
+            base_subtype(_s), (None, None, "restates", "неклассифицированный подтип"))
+        check(_gl != "неклассифицированный подтип",
+              "an unplaced twin must not fall through to the fallback: %r" % _s)
+    # …and the class it resolves to is the PLACED one's: an unplaced restate is
+    # still an abridgement, not an addition. Reading it as `adds` would turn the
+    # #1736 defect into a green ＋ chip, which is worse than the amber one.
+    check(TYPOLOGY[base_subtype("restate_unplaced")][2] == "restates",
+          "an unplaced restate keeps the ≈ class")
 
     # ---------------------------------------------------------------- H2844 P1
     # The newline-collapse fixtures. Three things must hold at once: an

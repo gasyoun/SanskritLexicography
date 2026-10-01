@@ -1,0 +1,20 @@
+{
+ "store": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pwg_ru_translated.jsonl",
+ "flattened_key1": {
+  "apta": 0,
+  "gawa": 0,
+  "asru": 0
+ },
+ "conflating_key1": {
+  "vasa": 0,
+  "bara": 0,
+  "vasin": 0
+ },
+ "junk_key1": {
+  "durg_a~~h0_zz_sch": 0
+ },
+ "degraded_iast": {
+  "gaṭa": 0,
+  "manorata": 0
+ }
+}

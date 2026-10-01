@@ -66,7 +66,10 @@ from promote_final_cards import (
     TN_RE, UnrestoredPlaceholder, PromotionContractError,
     _fsynced_backup, _atomic_write_rows, model_tier,
     load_defect_keys, discover_defect_keys_path, refuse_defect_keys,
-    clean_keys_from_report)
+    clean_keys_from_report,
+    # H3748 (#1800 C5-1): the content-mass gate promote_en did not have. Imported,
+    # never restated -- one threshold, one field list, one refusal message.
+    content_mass, refuse_content_mass_loss)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -501,95 +504,107 @@ def main():
     print('store: %s' % os.path.relpath(args.store, ROOT))
     print('ingesting %d EN wf_output file(s)' % len(paths))
 
-    rows = [json.loads(l) for l in open(args.store, encoding='utf-8') if l.strip()]
-    try:
-        idx, prov = en_index(paths, gen_model_version=args.gen_model_version)
-    except PromotionContractError as exc:
-        # B20: model-identity mismatch — refuse before any attach/write.
-        sys.exit('EN promotion refused: %s' % exc)
-    print('gen model: %s (%s)' % (model_tier(args.gen_model_version), args.gen_model_version))
-
-    # H1553 / H2224: refuse EN sub-cards the latest audit marked as content defect.
-    defect_path = discover_defect_keys_path(args.glob, args.defect_keys)
-    defect_keys = []
-    if args.defect_keys and not os.path.exists(args.defect_keys):
-        sys.exit('REFUSED: --defect-keys path does not exist: %s' % args.defect_keys)
-    if defect_path and os.path.exists(defect_path):
-        defect_keys = load_defect_keys(defect_path)
-        print('defect_guard: loaded %d key(s) from %s' % (len(defect_keys), defect_path))
-    else:
-        print('defect_guard: skipped_no_list')
-    blocked = refuse_defect_keys(list(idx.keys()), defect_keys, force=False)
-    if blocked and not args.force:
-        sys.exit(
-            'REFUSED: %d incoming EN key(s) are on the defect list (H1403 A3 / H1553). '
-            'Re-translate or pass --force to override. Keys: %s'
-            % (len(blocked), ', '.join(blocked[:20])
-               + (' …' if len(blocked) > 20 else '')))
-    if blocked and args.force:
-        print('defect_guard: --force overrides %d defect key(s): %s'
-              % (len(blocked), ', '.join(blocked[:10])
-                 + (' …' if len(blocked) > 10 else '')))
-    elif defect_keys and not blocked:
-        print('defect_guard: no intersection with incoming keys')
-
-    # H1553 residual: optional clean-subset filter from an audit report.
-    if args.ready_partial_report:
-        try:
-            with open(args.ready_partial_report, encoding='utf-8') as f:
-                report = json.load(f)
-        except (OSError, json.JSONDecodeError) as e:
-            sys.exit('REFUSED: cannot load --ready-partial-report: %s' % e)
-        clean = set(clean_keys_from_report(report))
-        before = len(idx)
-        for k in list(idx.keys()):
-            if k not in clean:
-                del idx[k]
-                prov.pop(k, None)
-        print('ready_partial: kept %d/%d EN sub-card(s) (clean keys only)'
-              % (len(idx), before))
-        if not idx:
-            sys.exit('REFUSED: ready_partial filter left zero EN sub-cards to attach')
-
-    judge = load_judge(args.judge, judge_model_version=args.judge_model_version) if args.judge else None
-    if args.judge:
-        print('judge verdicts: %d (from %s); judge model: opus (%s)'
-              % (len(judge), os.path.basename(args.judge), args.judge_model_version))
-    en_senses = sum(len(v) for v in idx.values())
-    try:
-        stats = attach(rows, idx, args.threshold, prov=prov, judge=judge)
-    except UnrestoredPlaceholder as exc:
-        # C6: refuse loudly, before any backup/store write, exactly like the RU lane.
-        sys.exit('EN promotion refused: %s' % exc)
-
-    eligible = len(rows) - stats['no-en-file']
-    print('\n=== EN MERGE COVERAGE ===')
-    print('store rows              : %d' % len(rows))
-    print('EN sub-cards / senses   : %d / %d' % (len(idx), en_senses))
-    print('rows with EN sub-card   : %d' % eligible)
-    print('  en attached           : %d (exact %d, exact-ambig %d, fuzzy %d)' % (
-        stats['attached'], stats['exact'], stats['exact-ambiguous'], stats['fuzzy']))
-    if stats.get('better-attempt-kept'):
-        print('  better-attempt kept   : %d (store EN ranked higher — B08)'
-              % stats['better-attempt-kept'])
-    if args.judge:
-        print('  with opus judge block : %d' % stats['judged'])
-    print('  unmatched (left absent): %d (below-threshold %d, fuzzy-ambig %d, no-en-sense %d, no-de-key %d)' % (
-        stats['below-threshold'] + stats['fuzzy-ambiguous'] + stats['no-en-sense'] + stats['no-de-key'],
-        stats['below-threshold'], stats['fuzzy-ambiguous'], stats['no-en-sense'], stats['no-de-key']))
-    print('rows with no EN file yet: %d (roots beyond the EN run — EN absent, expected)' % stats['no-en-file'])
-
-    if args.dry_run:
-        print('\n(dry run — store not written)')
-        return
-
-    # H336/H-1 (LANG_PARITY: SHARED with promote_final_cards.py): claim the store across
-    # the backup+write window so two concurrent promote_en runs can't race the same LWW
-    # write, and give each run its own timestamped backup instead of clobbering one
-    # '.preEN.bak'. See promote_lock.py for why staleness is TTL-only, not PID-based.
+    # H3748 (#1800 C5-1): the claim now wraps the WHOLE read-modify-write span, not
+    # just the write. It used to be taken 88 lines after the store was read into
+    # `rows`, and `_atomic_write_rows` then wrote that stale snapshot back -- so a
+    # promote landing in the window was silently overwritten. The read below is the
+    # start of the span promote_lock.py has always documented itself as guarding
+    # ("the read-existing-store / merge-in-new-rows / os.replace window"), and
+    # LANG_PARITY line 771 already asserted as SHARED with promote_final_cards.py.
+    # Holding it across the EN ingest costs a longer lock; losing a rival promote
+    # costs rows.
     ttl_kwargs = {'ttl_seconds': args.lock_ttl_seconds} if args.lock_ttl_seconds else {}
     try:
         with PromoteClaim(args.store, steal=args.steal_lock, **ttl_kwargs):
+            rows = [json.loads(l) for l in open(args.store, encoding='utf-8') if l.strip()]
+            # `attach()` mutates `rows` in place, so a before/after row copy would mean
+            # duplicating ~11.6k dicts. The gate only needs the scalar, so take it here.
+            mass_before = content_mass(rows)
+            try:
+                idx, prov = en_index(paths, gen_model_version=args.gen_model_version)
+            except PromotionContractError as exc:
+                # B20: model-identity mismatch — refuse before any attach/write.
+                sys.exit('EN promotion refused: %s' % exc)
+            print('gen model: %s (%s)' % (model_tier(args.gen_model_version), args.gen_model_version))
+
+            # H1553 / H2224: refuse EN sub-cards the latest audit marked as content defect.
+            defect_path = discover_defect_keys_path(args.glob, args.defect_keys)
+            defect_keys = []
+            if args.defect_keys and not os.path.exists(args.defect_keys):
+                sys.exit('REFUSED: --defect-keys path does not exist: %s' % args.defect_keys)
+            if defect_path and os.path.exists(defect_path):
+                defect_keys = load_defect_keys(defect_path)
+                print('defect_guard: loaded %d key(s) from %s' % (len(defect_keys), defect_path))
+            else:
+                print('defect_guard: skipped_no_list')
+            blocked = refuse_defect_keys(list(idx.keys()), defect_keys, force=False)
+            if blocked and not args.force:
+                sys.exit(
+                    'REFUSED: %d incoming EN key(s) are on the defect list (H1403 A3 / H1553). '
+                    'Re-translate or pass --force to override. Keys: %s'
+                    % (len(blocked), ', '.join(blocked[:20])
+                       + (' …' if len(blocked) > 20 else '')))
+            if blocked and args.force:
+                print('defect_guard: --force overrides %d defect key(s): %s'
+                      % (len(blocked), ', '.join(blocked[:10])
+                         + (' …' if len(blocked) > 10 else '')))
+            elif defect_keys and not blocked:
+                print('defect_guard: no intersection with incoming keys')
+
+            # H1553 residual: optional clean-subset filter from an audit report.
+            if args.ready_partial_report:
+                try:
+                    with open(args.ready_partial_report, encoding='utf-8') as f:
+                        report = json.load(f)
+                except (OSError, json.JSONDecodeError) as e:
+                    sys.exit('REFUSED: cannot load --ready-partial-report: %s' % e)
+                clean = set(clean_keys_from_report(report))
+                before = len(idx)
+                for k in list(idx.keys()):
+                    if k not in clean:
+                        del idx[k]
+                        prov.pop(k, None)
+                print('ready_partial: kept %d/%d EN sub-card(s) (clean keys only)'
+                      % (len(idx), before))
+                if not idx:
+                    sys.exit('REFUSED: ready_partial filter left zero EN sub-cards to attach')
+
+            judge = load_judge(args.judge, judge_model_version=args.judge_model_version) if args.judge else None
+            if args.judge:
+                print('judge verdicts: %d (from %s); judge model: opus (%s)'
+                      % (len(judge), os.path.basename(args.judge), args.judge_model_version))
+            en_senses = sum(len(v) for v in idx.values())
+            try:
+                stats = attach(rows, idx, args.threshold, prov=prov, judge=judge)
+            except UnrestoredPlaceholder as exc:
+                # C6: refuse loudly, before any backup/store write, exactly like the RU lane.
+                sys.exit('EN promotion refused: %s' % exc)
+
+            eligible = len(rows) - stats['no-en-file']
+            print('\n=== EN MERGE COVERAGE ===')
+            print('store rows              : %d' % len(rows))
+            print('EN sub-cards / senses   : %d / %d' % (len(idx), en_senses))
+            print('rows with EN sub-card   : %d' % eligible)
+            print('  en attached           : %d (exact %d, exact-ambig %d, fuzzy %d)' % (
+                stats['attached'], stats['exact'], stats['exact-ambiguous'], stats['fuzzy']))
+            if stats.get('better-attempt-kept'):
+                print('  better-attempt kept   : %d (store EN ranked higher — B08)'
+                      % stats['better-attempt-kept'])
+            if args.judge:
+                print('  with opus judge block : %d' % stats['judged'])
+            print('  unmatched (left absent): %d (below-threshold %d, fuzzy-ambig %d, no-en-sense %d, no-de-key %d)' % (
+                stats['below-threshold'] + stats['fuzzy-ambiguous'] + stats['no-en-sense'] + stats['no-de-key'],
+                stats['below-threshold'], stats['fuzzy-ambiguous'], stats['no-en-sense'], stats['no-de-key']))
+            print('rows with no EN file yet: %d (roots beyond the EN run — EN absent, expected)' % stats['no-en-file'])
+
+            if args.dry_run:
+                print('\n(dry run — store not written)')
+                return
+
+            # H336/H-1 (LANG_PARITY: SHARED with promote_final_cards.py): claim the store across
+            # the backup+write window so two concurrent promote_en runs can't race the same LWW
+            # write, and give each run its own timestamped backup instead of clobbering one
+            # '.preEN.bak'. See promote_lock.py for why staleness is TTL-only, not PID-based.
             if not args.no_backup:
                 # C9: collision-resistant name (µs+pid+uuid) + O_EXCL fsynced copy, so two
                 # lock-serialized runs in the SAME second can no longer clobber the earlier recovery
@@ -604,6 +619,16 @@ def main():
             # the rename. Under --no-backup this write is the ONLY thing standing between an
             # interrupted write and total loss, so it must be genuinely durable. Single-sourced
             # with the RU bridge, so both lanes write the store byte-identically ('\n' newlines).
+            # H3748 (#1800 C5-1): promote_en had NO content-mass shrink guard at all,
+            # while its RU sibling refuses a promote that would shed more than
+            # CONTENT_MASS_MAX_LOSS of the store's content mass. An EN attach should only
+            # ever ADD an `en` field, so this must never fire -- which is exactly why its
+            # absence was invisible, and exactly why it belongs here.
+            try:
+                refuse_content_mass_loss(mass_before, content_mass(rows),
+                                         len(rows), len(rows), force=args.force)
+            except PromotionContractError as exc:
+                sys.exit('REFUSED: %s' % exc)
             _atomic_write_rows(args.store, rows)
             print('wrote tri-lingual store -> %s (%d rows, %d now carry en)'
                   % (os.path.relpath(args.store, ROOT), len(rows), stats['attached']))

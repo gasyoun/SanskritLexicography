@@ -1,0 +1,17 @@
+_Parsed: 19-09-2026 (H4807) — commit: data/h4807_gloss_provenance/h4807_stats.json + H4807_GLOSS_PROVENANCE_REPORT.md_
+
+| metric | value |
+|---|---|
+| definition pages swept | 255,348 (= L8 index rows, zero drift) |
+| pages without Sanskrit-dictionary section | 81 |
+| gloss blocks | 708,875 |
+| Cologne-attributed (MW+AP90+other) | 637,912 (89.99 %) |
+| Cologne MW | 177,507 (25.04 %) |
+| Cologne AP90 (DDSA practical Sanskrit-English) | 70,724 (9.98 %) |
+| Cologne other | 389,681 (54.97 %) |
+| own / other-external | 70,963 (10.01 %) |
+| MW/AP-attributed rows text-verified | 248,231 |
+| text-proven borrowed (G1-G3) | 81,522 (32.84 %) — MW 42.0 %, AP90 10.0 % |
+| D1 headword-miss | 123,362 (49.70 %) |
+| D2 attributed-but-no-text-match | 43,347 (17.46 %) |
+| sample50 revalidation | 50/50 PASS |
