@@ -62,8 +62,11 @@ def _atomic_write_text(path: Path, text: str) -> None:
     A crash mid-write can no longer leave a truncated JSON behind, and a
     concurrent builder can never be observed half-written: the payload lands
     in a sibling tmp file (unique per pid) that is flushed + fsync'd, then
-    moved over the target with os.replace (atomic on POSIX and Windows).
-    Output bytes are identical to ``Path.write_text`` (same open defaults).
+    moved over the target with os.replace (atomic on POSIX and Windows; on
+    Windows a target held open by another process can make os.replace raise
+    PermissionError — the old target then stays intact and the error is
+    re-raised). Output bytes are identical to ``Path.write_text`` (same
+    open defaults).
     """
     tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
     try:

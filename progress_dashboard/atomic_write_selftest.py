@@ -10,8 +10,8 @@ build_kitchen_data.py / build_progress_data.py:
   3. failure path    — if os.replace fails, the old target survives intact
                        and no tmp litter is left behind.
   4. CRASH SIMULATION — a child process is hard-killed (TerminateProcess /
-                       SIGKILL) mid-write while looping atomic writes of a
-                       ~20 MB JSON payload; after every kill the target file
+                       SIGKILL) mid-write while looping atomic writes of an
+                       ~80 MB JSON payload; after every kill the target file
                        still parses as valid JSON. Never truncated.
   5. contrast (informational) — the same kill loop against the OLD plain
                        Path.write_text; expected to produce at least one
