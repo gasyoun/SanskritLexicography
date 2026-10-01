@@ -8,10 +8,37 @@ quietly to measured=False — never raise.
 from __future__ import annotations
 
 import json
+import os
 import re
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Write *text* to *path* atomically: tmp file + os.replace (H5582).
+
+    Same helper shape H5534 landed in build_kitchen_data.py /
+    build_progress_data.py (PR #2360): a crash mid-write can no longer leave
+    a truncated quality_timeseries.json behind, and a concurrent builder can
+    never be observed half-written — the payload lands in a sibling tmp file
+    (unique per pid) that is flushed + fsync'd, then moved over the target
+    with os.replace (atomic on POSIX and Windows). Output bytes are identical
+    to ``Path.write_text`` (same open defaults).
+    """
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8") as fh:
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
 
 
 def _parse_ts(raw):
@@ -664,7 +691,7 @@ def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, t
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
-    ts_path.write_text(json.dumps(ts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    _atomic_write_text(ts_path, json.dumps(ts, ensure_ascii=False, indent=2) + "\n")
     return ts
 
 
