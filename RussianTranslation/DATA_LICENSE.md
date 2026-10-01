@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru data & edition licence
 
 `SPDX-License-Identifier: CC-BY-SA-4.0`
@@ -39,6 +41,23 @@ relicense third-party material:
   This is a separate copy/rights posture from the Elizarenkova text inside the
   `SamudraManthanam` corpus (grey-rights, not redistributed here or anywhere public).
 
+## Released TM pack — distinct licence (CC BY 4.0)
+
+The four-format translation-memory pack released as
+[`release/pwg_tm/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release/pwg_tm)
+(GitHub release [`pwg-tm-canonical-v1.0.0`](https://github.com/gasyoun/SanskritLexicography/releases/tag/pwg-tm-canonical-v1.0.0),
+Zenodo DOI [10.5281/zenodo.21932900](https://doi.org/10.5281/zenodo.21932900)) is
+licensed **CC BY 4.0**, not this file's CC BY-SA 4.0 — its own
+[LICENSE-DATA](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_tm/LICENSE-DATA)
+and [CITATION.cff](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_tm/CITATION.cff)
+declare it. The duality is deliberate: the pack contains only
+own-machine-translation-of-public-domain-source rows, so no share-alike
+obligation from third-party-approved material attaches to it. The same CC BY 4.0
+governs the sibling public surfaces enumerated in
+[PUBLISH_PACKET.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/PUBLISH_PACKET.md)
+§1: `release/translation_memory/`, `release/corpus_tm/public_full.*`, and
+`release/sa_ru_terminology/`.
+
 The **code** in this repository is licensed separately; see the repository's
 top-level `LICENSE`.
 
@@ -52,3 +71,5 @@ A machine-readable [CITATION.cff](https://github.com/gasyoun/SanskritLexicograph
 sits beside this file and declares the same `CC-BY-SA-4.0` licence. It stays at
 `version: unreleased` until the immutable edition cut is archived and a DOI is
 registered against it — see [DOI_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DOI_PLAN.md).
+
+_Dr. Mārcis Gasūns_

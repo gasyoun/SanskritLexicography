@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b12-2026-09-25",
+  "content_hash": "sha256:6deb2615be923921cab2bbdb2ae1be04649c47aa83071d8469fc4148f614fd8b",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-встраиваться",
+    "L-музицировать",
+    "L-мертворожденный",
+    "L-дотягиваться",
+    "L-пристегивать",
+    "L-обесценивать",
+    "L-неподобающий",
+    "L-выбрасываться",
+    "L-разграничивать",
+    "L-подтверждаться"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b12_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

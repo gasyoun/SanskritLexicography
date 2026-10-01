@@ -126,27 +126,86 @@ def lead_int(st):
     return m.group(1) if m else None
 
 
+def sense_sort_key(st):
+    """Skeleton ordering for one sense tag (H3501).
+
+    `lead_int` only matches a LEADING digit, so a prefixed tag like `verb.10`
+    used to fall to the lexicographic bucket and sorted 1, 10, 2, … — sense 10
+    rendered before sense 2 on the viS card (MG review point 1). The same
+    defect sat in every preverb branch with ten-plus senses (`sam 1` …
+    `sam 12` in gA/DA). Two buckets, as before — a leading digit goes first,
+    numerically — but the second bucket is now ordered by FAMILY (everything
+    before the tag's first integer) with numeric order inside the family and
+    unnumbered members (`verb.intro`, `prati`) after numbered ones. Families
+    never merge: a preverb branch keeps its place among the other branches,
+    exactly where the old whole-string sort put it.
+    """
+    st = str(st)
+    m = re.search(r"(\d+)", st) if not lead_int(st) else None
+    if m:
+        return (1, st[:m.start()], False, int(m.group(1)), st[m.end():])
+    if lead_int(st):
+        return (0, "", False, int(lead_int(st)), "")
+    return (1, st, True, 0, "")
+
+
 def homonym_of(subcard):
     m = re.search(r"~~(h\d+)", subcard or "")
     return m.group(1) if m else "h0"
 
 
+class RelSidecar:
+    """The relationship sidecar, looked up WITHOUT dict-shadowing (H3300).
+
+    ``load()`` used to fold the whole sidecar into ``rel[(subcard, sense_tag)]``
+    — last row wins — so on duplicated pairs every earlier row silently
+    disappeared from every card (FINDINGS §551: 133 pairs, 468 of 6,009 rows).
+    Rows written since H3300 carry a unique ``row_key``/``dup_ordinal`` and are
+    joined exactly by ``(subcard, sense_tag, dup_ordinal)``, where the ordinal
+    is the pair's occurrence count in file order on BOTH sides. Legacy rows
+    without an ordinal fall back to the historical bare-pair view, so an old
+    sidecar keeps working.
+    """
+
+    def __init__(self, path):
+        self._legacy = {}          # (subcard, sense_tag) -> relationship
+        self._by_pair_ord = {}     # (subcard, sense_tag, dup_ordinal) -> rel
+        with io.open(path, encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                r = json.loads(line)
+                key = (r["subcard"], r["sense_tag"])
+                self._legacy[key] = r["relationship"]
+                if "dup_ordinal" in r:
+                    self._by_pair_ord[key + (r["dup_ordinal"],)] = \
+                        r["relationship"]
+
+    def get(self, subcard, sense_tag, dup_ordinal=None):
+        if dup_ordinal is not None:
+            hit = self._by_pair_ord.get((subcard, sense_tag, dup_ordinal))
+            if hit is not None:
+                return hit
+        return self._legacy.get((subcard, sense_tag))
+
+
 def load():
     store = collections.defaultdict(list)          # key1 -> [record]
+    pair_seen = collections.Counter()
     with io.open(STORE, encoding="utf-8") as fh:
         for line in fh:
             line = line.strip()
             if line:
                 d = json.loads(line)
+                # H3300: this row's occurrence ordinal for its (subcard,
+                # sense_tag) pair, in file order — the exact number the writer
+                # stamped as the row's dup_ordinal.
+                pair = (d["subcard"], str(d.get("sense_tag")))
+                d["_pair_ordinal"] = pair_seen[pair]
+                pair_seen[pair] += 1
                 store[d["key1"]].append(d)
-    rel = {}                                        # (subcard, sense_tag) -> relationship
-    with io.open(REL, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if line:
-                r = json.loads(line)
-                rel[(r["subcard"], r["sense_tag"])] = r["relationship"]
-    return store, rel
+    return store, RelSidecar(REL)
 
 
 def reglue_one(key1, records, rel):
@@ -175,8 +234,7 @@ def reglue_one(key1, records, rel):
                 and not pwg_correction_marker(d.get("sense_tag"))]
 
     def sort_key(d):
-        si = lead_int(d.get("sense_tag"))
-        return (0, int(si)) if si else (1, str(d.get("sense_tag")))
+        return sense_sort_key(d.get("sense_tag"))
 
     for d in sorted(pwg_rows, key=sort_key):
         h = hom_slot(homonym_of(d["subcard"]))
@@ -199,7 +257,9 @@ def reglue_one(key1, records, rel):
         if layer == "pwg" and not pwg_correction_marker(d.get("sense_tag")):
             continue
         st = str(d.get("sense_tag"))
-        r = rel.get((d["subcard"], st))
+        # H3300: exact join on the pair's occurrence ordinal — a duplicated
+        # pair's second row now reaches the card with ITS OWN typology.
+        r = rel.get(d["subcard"], st, d.get("_pair_ordinal"))
         if not r:
             continue
         ip = r["insertion_point"]
@@ -535,6 +595,23 @@ def selftest():
     def check(cond, msg):
         print(("  ok   " if cond else "  FAIL ") + msg)
         ok[0] = ok[0] and bool(cond)
+
+    # ---- H3501: prefixed numeric senses sort numerically, not lexicographically
+    check([t for t in sorted(["verb.1", "verb.10", "verb.2", "verb.intro"],
+                             key=sense_sort_key)]
+          == ["verb.1", "verb.2", "verb.10", "verb.intro"],
+          "prefixed tags sort numerically: verb.10 after verb.2, intro last")
+    check(sorted(["2", "10"], key=sense_sort_key) == ["2", "10"],
+          "bare numeric tags still sort numerically")
+    # a preverb branch is a FAMILY of its own: it keeps its place among the
+    # other branches, never interleaves with the bare skeleton numbers
+    check([t for t in sorted(["3", "sam 2", "sam 10", "prati"],
+                             key=sense_sort_key)]
+          == ["3", "prati", "sam 2", "sam 10"],
+          "a preverb branch stays its own family, numeric inside (gA/DA class)")
+    check([t for t in sorted(["caus-1", "mit-nis", "intro"], key=sense_sort_key)]
+          == ["caus-1", "intro", "mit-nis"],
+          "the unnumbered bucket keeps its own order after the numbered one")
 
     obj = {"key1": "gA", "homonyms": [{
         "h": "h0",

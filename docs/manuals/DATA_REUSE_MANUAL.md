@@ -83,7 +83,7 @@ Naming: `{DICT}-unique-{key1|key2}-{N}.txt`, one headword per line, sorted.
   manual's 18-07-2026 re-measurement).
 - **The union is the print target:**
   [union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)
-  — 323,425 headwords across 15 dicts with per-dict provenance + gender.
+  — 323,422 headwords across 15 dicts with per-dict provenance + gender.
 - **Ready-made comparison:**
   [mw-apte-mcdonell-hk.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt)
   (~202k lines, HK, MW ∪ Apte ∪ Macdonell).

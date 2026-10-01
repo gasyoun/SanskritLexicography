@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Root-entry architecture — decision + handoff research (2026-06-23)
 
 ## The problem
@@ -157,7 +159,7 @@ presence of a separate headword.
 Before building anything: per the "check prior art first" rule, swept the sibling repos.
 The root-record prefix segmenter sketched in §"Implementation sketch" above is **already
 built** by Jim Funderburk in [`PWG/verbs01/`](https://github.com/sanskrit-lexicon/PWG/tree/main/verbs01) (flagged in
-[`SHARED_CODE.md`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/SHARED_CODE.md) §4 "verb/preverb morphology"). It does **more** than the sketch
+`SHARED_CODE.md` §4 "verb/preverb morphology"). It does **more** than the sketch
 asked for, on real data, and its outputs are committed.
 
 ### What `verbs01` already computes
@@ -417,3 +419,5 @@ build #3 hardening folds them into "both".
 upstream; PWG linker hardened; Apte oracle independent. Remaining: Apte roles (b)/(c)/(d)
 beyond the oracle, the per-gloss `keep` alignment, and the `_pilot_gen_merged` `--root-split`
 hook to run the frequency-first queue.
+
+_Dr. Mārcis Gasūns_

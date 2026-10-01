@@ -1,0 +1,19 @@
+{
+ "max_per_utc_day": 2,
+ "min_gap_s": 21600,
+ "now_utc": "2026-09-24T19:11:15Z",
+ "profiles": [
+  {
+   "account": "c1",
+   "attempts_today": [
+    "2026-09-24T15:20:17Z"
+   ],
+   "fingerprint": "9321e2c138f02c1d19ec9c249ad096841813c82414b76d6caf3e3f3b518acd6b",
+   "last_attempt_utc": "2026-09-24T15:20:17Z",
+   "ledger": "C:\\Users\\user\\AppData\\Local\\Temp\\pwg-probe-ration\\9321e2c138f02c1d19ec9c249ad096841813c82414b76d6caf3e3f3b518acd6b.jsonl",
+   "legal_now": false,
+   "next_legal_utc": "2026-09-24T21:20:17Z"
+  }
+ ],
+ "schema": "pwg.probe_ration_status.v1"
+}

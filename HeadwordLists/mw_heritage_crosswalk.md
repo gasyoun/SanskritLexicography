@@ -1,19 +1,19 @@
 # MW ↔ Heritage entry-level crosswalk
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 05-09-2026_
 
 Phase 2 of the [Heritage reuse roadmap](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md):
 which Monier-Williams entries the Sanskrit Heritage Platform's lexicon covers,
 built from the mirror's own MW↔DICO alignment (see
-[HERITAGE_MIRROR_INVENTORY.md](HERITAGE_MIRROR_INVENTORY.md)) — no OCR or
+[HERITAGE_MIRROR_INVENTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/HERITAGE_MIRROR_INVENTORY.md)) — no OCR or
 fuzzy matching needed, since covered MW entries carry the DICO anchor key
 directly (`<a name="H_<key>">`).
 
-**Output:** [`mw_heritage_crosswalk.tsv`](mw_heritage_crosswalk.tsv) —
+**Output:** [`mw_heritage_crosswalk.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) —
 `mw_key1` (SLP1, via `huet_coverage.py`'s validated VH→IAST→SLP1 transcoder)
 · `covered_flag` (`1`/`0`) · `heritage_entry_anchor` (`DICO/<file>.html#<key>`
-or empty). Built by [`heritage_mw_crosswalk.py`](heritage_mw_crosswalk.py),
-reported by [`heritage_crosswalk_report.py`](heritage_crosswalk_report.py).
+or empty). Built by [`heritage_mw_crosswalk.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_mw_crosswalk.py),
+reported by [`heritage_crosswalk_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_crosswalk_report.py).
 
 ## Coverage
 
@@ -45,7 +45,7 @@ frequency rank is **12,526** and **807 are in the kosha top-1,000** — Heritage
 coverage skews toward genuinely common vocabulary (63.6 % corpus-attested vs.
 28.9 % for MW as a whole), the same "reader's working lexicon, not the full
 dictionary spine" pattern documented for the 2014 stem list in
-[Huet-INRIA-Wordlist-vs-Cologne.md §4](Huet-INRIA-Wordlist-vs-Cologne.md).
+[Huet-INRIA-Wordlist-vs-Cologne.md §4](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md).
 
 ## Hand-verification (12 sampled rows, per the roadmap's ≥20-row sanity check
 combined with the 8 non-random boundary cases below = 20 total)

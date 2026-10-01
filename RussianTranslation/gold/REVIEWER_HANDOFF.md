@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Reviewer Handoff
 
 This handoff prepares the remaining human gates. Do not change IDs, Sanskrit
@@ -61,3 +63,5 @@ python src/gold_packet_verify.py gold/_human_gold_review.csv gold/reviewer_packe
 python src/gold_double_review_verify.py gold/_double_review_queue.csv --sample-size 80
 python src/preflight_remaining_gates.py
 ```
+
+_Dr. Mārcis Gasūns_

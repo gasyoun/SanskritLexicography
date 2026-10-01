@@ -1,8 +1,10 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # «Санскрит в цифрах» — a quantitative portrait of Sanskrit, after Duden's *Sprache in Zahlen*
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix
 
-_Created: 12-07-2026 · Last updated: 29-07-2026_
+_Created: 12-07-2026 · Last updated: 01-09-2026 (H3825: wave-2 print booklet shipped; waves 3–4 deferred to 2027 by MG the same day)_
 
 > **What this is.** A plan to build the Sanskrit analog of Duden's *Sprache in Zahlen* — the
 > quantitative "language in numbers" appendix that closes the [Duden Universalwörterbuch](https://www.duden.de/)
@@ -62,6 +64,7 @@ future session does **not** re-litigate them.
 | D4 | Primary language | **Russian primary; English + German after** | The samskrte.ru student audience is Tier 0; EN serves the monograph, DE closes the loop with the Duden/Böhtlingk German heritage. |
 | D5 | Public portrait home | **samskrte.ru (web) + PDF booklet as an appendix to the Gasuns Sanskrit Manual** | Puts the portrait in front of the paying student audience and inside the учебник — the exact structural place *Sprache in Zahlen* holds in the Duden. |
 | D6 | Which Böhtlingk exactly | **The whole Petersburg family (PWG + PW + PWK + SCH)** | Portrays the tradition as it actually layered (cf. [A49](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)); accepts the fuzzy-union caveat below in exchange for completeness. |
+| D7 | Manual home (ruled 01-09-2026, MG: «учебнику давать, но приватный») | **Own book repo, PRIVATE: [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual)** | Closes the §8.1 `@DECIDE` (approve + private). Book-repo precedent: [buhler-sanskrit-book](https://github.com/gasyoun/buhler-sanskrit-book). Name + render toolchain (Pandoc → XeLaTeX) were the agent-side technical fork per the decision card; recorded in the new repo's README. Unblocks the wave-2 PDF booklet render. |
 
 **Caveat forced by D2 + D6 (state it on the portrait's face).** Summing family headword counts
 double-counts massively — PWK abridges PWG, PW abridges further, SCH is addenda. The honest
@@ -83,7 +86,7 @@ Counts from this repo's [`HeadwordLists/now-2026/`](https://github.com/gasyoun/S
 | PWG | große Petersburger Wörterbuch (Böhtlingk-Roth, 1855–75) | **110,438** | the 7-volume "big" PW — the *Universalwörterbuch*-scale anchor |
 | PWK | Böhtlingk, kürzere Fassung (1879–89) | **155,688** | the abridgement is *larger* by headword count (finer splitting) |
 | SCH | Schmidt, *Nachträge* | **28,519** | addenda layer |
-| PW / PD | kleineres PW | **104,968** (now-2026 re-export) | prerequisite satisfied — see [§8](#8-open-decisions--prerequisites) |
+| PW / PD | kleineres PW | **104,968** (now-2026 re-export) | prerequisite satisfied — see [§8](#8-open-decisions-prerequisites) |
 
 The de-duplicated union is **not** the sum; it comes from the A40/A55 overlap matrix.
 
@@ -152,23 +155,49 @@ Shipped under [H813](https://github.com/gasyoun/Uprava/blob/main/handoffs/H813-S
   tatpuruṣa/bahuvrīhi split is explicitly NOT auto-classified (would risk fabricated percentages)
   and is left as a flagged follow-up with a hand-typing sample included.
 
-### Wave 2 — The RU portrait (gates on wave 1 + Manual home)
+### Wave 2 — The RU portrait (gates on wave 1 + Manual home) — ✅ RU source text DONE 01-09-2026; renders remain
 *Unblocked by:* all 10 module datasets; confirmation of the Manual repo/build (see §8).
 
 - Assemble the 10 modules into the **«Санскрит в цифрах»** page: RU prose in the *Sprache in
   Zahlen* register (a question header per module, a chart, a trust block: source · n · date).
+  **Shipped 01-09-2026** under [H3792](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3792-Fable_SanskritLexicography_sanskrit-in-numbers-w2-ru-portrait_31.08.26.md)
+  (Fable 5 `claude-fable-5`): [`papers/sanskrit_in_numbers/WAVE2_PORTRAIT_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/sanskrit_in_numbers/WAVE2_PORTRAIT_RU.md)
+  — all 10 modules, a question header + trust block each, every number traced to its module
+  dataset; written **home-agnostically** because the §8 Manual-home `@DECIDE` is still open
+  (the fork is surfaced in the portrait's §11, not settled).
 - Two renders from one source: an interactive **web page for samskrte.ru** and a **print PDF
   booklet** sized as an appendix to the Gasuns Sanskrit Manual.
+  - **Print booklet — SHIPPED 01-09-2026** under
+    [H3825](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3825-Opus_gasuns-sanskrit-manual_sanskrit-in-numbers-pdf-booklet-render_01.09.26.md)
+    (Opus 5 `claude-opus-5`), in the private
+    [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual) repo the D7
+    ruling gave it: 9 pages B5, one command (`make` / `./build.ps1`), release
+    [v0.1.0](https://github.com/gasyoun/gasuns-sanskrit-manual/releases/tag/v0.1.0). The
+    proposed Pandoc → XeLaTeX toolchain is no longer a proposal — it is built and documented
+    (the org's first LaTeX/PDF build). The portrait source stays here as the source of record;
+    the booklet repo holds a byte-identical copy whose divergence is caught mechanically by
+    `make check-source`.
+  - **Web render — still owed**, and it belongs to wave 4's publish gate, not here.
 
-### Wave 3 — EN + DE + monograph appendix (gates on wave 2)
-*Unblocked by:* the frozen RU portrait.
+> **Waves 3 and 4 are DEFERRED TO 2027 (MG, 01-09-2026: «волны 3-4 тоже до 2027»,
+> extending the same day's «работа по сути откладывается до 2027» over the учебник).**
+> This is a calendar decision, not a blocker: nothing technical stands in the way, and
+> both waves' own gates below are unchanged and still accurate. An agent does **not**
+> start either wave, does not mint a handoff for it, and does not offer it as a next
+> action before 2027 — regardless of what the gates say. What closes in 2026 is
+> waves 0–2: the modules, the RU portrait, and its print booklet. The booklet's home
+> repo carries the same ruling in its
+> [`.ai_state.md`](https://github.com/gasyoun/gasuns-sanskrit-manual/blob/main/.ai_state.md).
+
+### Wave 3 — EN + DE + monograph appendix (gates on wave 2) — **deferred to 2027**
+*Unblocked by:* the frozen RU portrait. *Held by:* the 2027 deferral above.
 
 - Translate to **EN** (monograph register) and **DE** (the Duden/Böhtlingk parallel).
 - Fold the EN portrait into **M01** as the *Sanskrit in Numbers* appendix; wire it into the
   monograph's evidence-graded-lexicography spine.
 
-### Wave 4 — Publish (gates on rights + design)
-*Unblocked by:* [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) GO; a Zenodo dataset DOI.
+### Wave 4 — Publish (gates on rights + design) — **deferred to 2027**
+*Unblocked by:* [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) GO; a Zenodo dataset DOI. *Held by:* the 2027 deferral above.
 
 - Design pass; per-figure trust blocks; Zenodo deposit of the module datasets ([`/data-release`](https://github.com/gasyoun/claude-config/blob/main/commands/data-release.md) + [`/cut-release`](https://github.com/gasyoun/claude-config/blob/main/commands/cut-release.md)); GO/NO-GO before samskrte.ru go-live.
 
@@ -212,10 +241,11 @@ Considered and ruled out — a future session should not re-propose these withou
 
 ## 8. Open decisions / prerequisites
 
-1. **Gasuns Sanskrit Manual — repo + build path.** No dedicated repo was found in the org for the
-   учебник that the PDF booklet appends to (D5). **`@DECIDE`:** name its repo/build (is it a
-   Systema-Sanscriticum asset, an ORS-FAQ asset, or a separate LaTeX/book project?). Blocks
-   wave 2's PDF render only — not wave 0/1.
+1. ~~**Gasuns Sanskrit Manual — repo + build path.**~~ **DONE (ruled 01-09-2026, MG:
+   «учебнику давать, но приватный» — ruling D7).** The учебник gets its own **private**
+   book repo: [gasuns-sanskrit-manual](https://github.com/gasyoun/gasuns-sanskrit-manual)
+   (scaffolded same pass: README + proposed Pandoc → XeLaTeX toolchain). The wave-2 PDF
+   render is no longer blocked.
 2. ~~**PW / PD now-2026 re-export.**~~ **DONE (verified 29-07-2026).** The kleineres PW
    now-2026 re-export already exists —
    [`now-2026/PD-unique-key1-104959.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/PD-unique-key1-104959.txt) /

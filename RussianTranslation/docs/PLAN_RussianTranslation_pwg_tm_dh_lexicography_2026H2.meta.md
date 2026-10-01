@@ -1,3 +1,5 @@
+_Created: 13-08-2026 · Last updated: 05-09-2026_
+
 ---
 title: PWG TM digital-humanities and digital-lexicography execution plan
 created: 2026-08-13
@@ -9,3 +11,5 @@ canonical: RussianTranslation/docs/PLAN_RussianTranslation_pwg_tm_dh_lexicograph
 ---
 
 Layered `/ask` plan based on a repository audit, standards check, and twenty owner rulings. Supersedes the older single “70% built” estimate with separate infrastructure and coverage denominators.
+
+_Dr. Mārcis Gasūns_

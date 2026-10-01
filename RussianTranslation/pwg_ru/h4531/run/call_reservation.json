@@ -1,0 +1,254 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h4531-batches-probe": {
+   "max_calls": 23,
+   "calls_spent": 23,
+   "next_ordinal": 24,
+   "reservations": [
+    {
+     "reservation_id": "9e8ca8f789b24379b784ad72e4827ce9",
+     "ordinal": 1,
+     "reserved_at_ns": 1789103454507176900,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h12_00_pwg00",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0001-438cf0d78c0f52f931295228",
+     "idempotency_key": "4b61621c3a7950c41b26b4cfa53a8974f754332a9f1041abea265223c7c4a613"
+    },
+    {
+     "reservation_id": "1dc3ccfe33854a5da2e2df1461fa2b00",
+     "ordinal": 2,
+     "reserved_at_ns": 1789103454511230700,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h5_00_pwg00",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0002-1877095f987e3aa8a56f0ed0",
+     "idempotency_key": "4ac9cc2d4602f4aae1ac22776f1fc1cd6c8447eb78d907fd7f1453e00ab1e5b7"
+    },
+    {
+     "reservation_id": "1a54ee58b06d46fa8aebcb5e2fa66189",
+     "ordinal": 3,
+     "reserved_at_ns": 1789103454514574300,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h7_00_pwg00",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0003-f835bbd64bdb60e45c9532af",
+     "idempotency_key": "c3bcfe8a94bd6fa95d7d501cb115c8e4dbc371f0080ff1d21e466bb072f1e9a0"
+    },
+    {
+     "reservation_id": "e30d11ba0de744f9a463bdd0bdefe8a6",
+     "ordinal": 4,
+     "reserved_at_ns": 1789103454518061000,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h9_05_samup_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0004-b8683b2bb1d98b7c48900b19",
+     "idempotency_key": "35c5220c491f7391d68fe05ffc5888fa6318b13846cf7b3ba0c3b46cb1dd4f69"
+    },
+    {
+     "reservation_id": "b048c484418a4025b28d878c795eee1e",
+     "ordinal": 5,
+     "reserved_at_ns": 1789103454521604400,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_06_a_bi",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0005-f2bc2499136ce1d4494606b7",
+     "idempotency_key": "8548365eee2522477bfa39a19928fb032030e14960a4a25e11313781802b825b"
+    },
+    {
+     "reservation_id": "398bf94d903c4f0aa95b39047d2fbd74",
+     "ordinal": 6,
+     "reserved_at_ns": 1789103454524774400,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_03_sec_3",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0006-083737f48dcf74ef907415db",
+     "idempotency_key": "90bae9de476a373393a186af1a2931c6d20eaabbf60b70666ab47f7118010505"
+    },
+    {
+     "reservation_id": "9585446087f24b828aa58486aeaff003",
+     "ordinal": 7,
+     "reserved_at_ns": 1789103454528095400,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h2_09_pari_ri",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0007-fcbaa6c59ef0876afa945b7f",
+     "idempotency_key": "af8d2c01205a762575801f6e01c536c6bae49203e34fc9d3c8043e6e53bb5d24"
+    },
+    {
+     "reservation_id": "c467b190101342319d3088375a97d44f",
+     "ordinal": 8,
+     "reserved_at_ns": 1789103454531037900,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_27_pari_ri",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0008-8f5f8cfc5b062de1eacd4f0e",
+     "idempotency_key": "26daa2a05cca153023cbd7953125f86c3180bfe8367a55695570acba4a6242f2"
+    },
+    {
+     "reservation_id": "1e15fa3b56e3403c942119f650ffe228",
+     "ordinal": 9,
+     "reserved_at_ns": 1789103454534409300,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_33_atipra",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0009-54768168d5c9e37871454741",
+     "idempotency_key": "d0b6323f833c165131b1f68937c30d20b215da4be3d285cb3a7f3bd0d6a07772"
+    },
+    {
+     "reservation_id": "1f87eec215f448f486afd29bcd6a3eb2",
+     "ordinal": 10,
+     "reserved_at_ns": 1789103454538183100,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_21_apavy_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0010-8799139b7360c3d7063e2f9f",
+     "idempotency_key": "b09886dcc85ad69454a04de53cae6b6b79cd5bf300de9ee0fa711b428b7afaad"
+    },
+    {
+     "reservation_id": "adfb86ba69384f47850ad437a82de3f9",
+     "ordinal": 11,
+     "reserved_at_ns": 1789103454542145400,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h2_01_api",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0011-6eb8372a48bf8681d50bd4e7",
+     "idempotency_key": "476e6c8af075fbc40db8ffe2a94837ed665fa88bc2aaa68a9204e6f663a3cf92"
+    },
+    {
+     "reservation_id": "dc7a044e825c4883906e17189efe0bc7",
+     "ordinal": 12,
+     "reserved_at_ns": 1789103454545705900,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_07_ava",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0012-26494997fb757f132b8c05d5",
+     "idempotency_key": "ad11178bb4e08f06b4dbd764a5778201708038086f31856d9b13ecb3c8fc25bb"
+    },
+    {
+     "reservation_id": "386df131eaaa4f3eb641dfb977c45e70",
+     "ordinal": 13,
+     "reserved_at_ns": 1789103454549344500,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h11_00_pwg00",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0013-ad3562734c539cd1858cd77b",
+     "idempotency_key": "b785ef496c3314f5f67680345dbcb595a96f2b0251a3538b25c01a24fda0966f"
+    },
+    {
+     "reservation_id": "e6169f9a75a24c5caa5b9ab3294e4de8",
+     "ordinal": 14,
+     "reserved_at_ns": 1789103454553087400,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h2_06_vyava",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0014-232974409eb4d9b817c4172b",
+     "idempotency_key": "42af40322d1adead933aecbf22f4596e62b80c488a1fe6eb2c1cae0bfc116c67"
+    },
+    {
+     "reservation_id": "3169ccdff25348a88197ea5c8c151878",
+     "ordinal": 15,
+     "reserved_at_ns": 1789103454556921900,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_29_nis",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0015-77c741a42ac954dbdf6e9c02",
+     "idempotency_key": "ad2672a518af558ff22b88782e66b823a49c363abda3cd293a6b582620ad964c"
+    },
+    {
+     "reservation_id": "5c40f35e647149e2842743391c7cf6e0",
+     "ordinal": 16,
+     "reserved_at_ns": 1789103454560591500,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h9_06_vy_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0016-a320d512073de23856ef070b",
+     "idempotency_key": "ca0ab05008d68e2399cac498432e178fdeb67dc00360c3c0b68c8ce5ce219279"
+    },
+    {
+     "reservation_id": "7ae9a805556045cd9e37b2ca598d83b5",
+     "ordinal": 17,
+     "reserved_at_ns": 1789103454564313500,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h2_03_a_byava",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0017-d8a771b4a9099cd820b0ccc7",
+     "idempotency_key": "93af7f29e19e051d40360997c770c7b21edace53650ffa0c612b35a12a8abfe6"
+    },
+    {
+     "reservation_id": "6ad0bf193746492cb1d61c638ae8292f",
+     "ordinal": 18,
+     "reserved_at_ns": 1789103454568343600,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_09_anv_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0018-3bf6f8bdb22846b98fc72571",
+     "idempotency_key": "5a428c17018a5d28b7e926d71c7dfa1ccefc842250664dd1e86a5bbbfde07dc2"
+    },
+    {
+     "reservation_id": "59188ddbd870438a8d653b35fd78c5c6",
+     "ordinal": 19,
+     "reserved_at_ns": 1789103454571862200,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_13_ud_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0019-e0fadbaca3e1dce824f0b6bf",
+     "idempotency_key": "bb79707a5da43956ae85d6a4573fa7f7bba8c3011741a5ad86467a4d72053b51"
+    },
+    {
+     "reservation_id": "c69b3431639e4460a83295767c1edc6d",
+     "ordinal": 20,
+     "reserved_at_ns": 1789103454575914100,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_15_a_byup_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0020-5128e59b59671e9967d895ff",
+     "idempotency_key": "715780b01651ace81ddfe04b9acfd3e45fa6482ba50934e0c00b21efc9b067b7"
+    },
+    {
+     "reservation_id": "cee6770394ff4ea9b12db29c5fa3120f",
+     "ordinal": 21,
+     "reserved_at_ns": 1789103454592523000,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h2_05_paryava",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0021-38065acf3157082c9da45bd0",
+     "idempotency_key": "c47480ad9ae882507a977d7e910e8f8df3886b986aec129a9bd887f26509308e"
+    },
+    {
+     "reservation_id": "015013f0e34a4ad5a878c8160c617711",
+     "ordinal": 22,
+     "reserved_at_ns": 1789103454608352100,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h0_12_sama_by_a",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0022-3febc9b92fc99dd0a720a084",
+     "idempotency_key": "e82bacc5f879d3079fcec252b70d0830da195b5d0dddb7b7fbab4c2ef9787b5a"
+    },
+    {
+     "reservation_id": "3f0244ee51b14b92b6e2367773f12bb3",
+     "ordinal": 23,
+     "reserved_at_ns": 1789103454624247700,
+     "pid": 22540,
+     "purpose": "h4531_batches_probe:one_card:d_a~~h2_11_nis",
+     "profile": "claude-sonnet-5",
+     "detail": "anthropic-batches:r0023-69974efe3242a5dd8c14bb29",
+     "idempotency_key": "d68c7dcf810523481d435f1518d099c3689f21f0396ece23ae04a0889cedfc3f"
+    }
+   ],
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "subagent_tokens": 0,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "finalized_calls": 0,
+    "unevaluable_calls": 0,
+    "pending_calls": 23
+   }
+  }
+ }
+}

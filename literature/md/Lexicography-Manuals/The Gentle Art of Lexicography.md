@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Gentle Art of Lexicography -- Eric Partridge -- 1963 -- a16bd0ceea54627bd0ae82dc91d9292e -- Anna’s Archive
 
 **Source:** `The Gentle Art of Lexicography -- Eric Partridge -- 1963 -- a16bd0ceea54627bd0ae82dc91d9292e -- Anna’s Archive.pdf`  
@@ -2178,3 +2180,5 @@ Andre Deutsch
 €19esue| ae
 
 LO
+
+_Dr. Mārcis Gasūns_

@@ -68,7 +68,7 @@ the vote carried forward**.
 ### `okas` — Elizarenkova, all 12 RV attestations
 
 Source: the local **rvlinks** build,
-[rvlinks/rvhymns/](https://github.com/sanskrit-lexicon/rvlinks/tree/main/rvhymns) — one file per
+rvlinks/rvhymns/ — one file per
 hymn, carrying Elizarenkova's Russian beside Geldner and Griffith, verse-granular, for all
 1 028 hymns. Nothing was re-translated; every rendering below is hers as published.
 

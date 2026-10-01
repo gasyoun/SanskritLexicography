@@ -1,3 +1,5 @@
+_Created: 17-08-2026 · Last updated: 05-09-2026_
+
 # Compound-marker typography across the Sanskrit dictionaries — consolidated census
 
 _Created: 17-08-2026 · Last updated: 19-08-2026 (§576 — cross-reference conventions)_
@@ -8,7 +10,7 @@ digitizations, the OCRed Cologne front matter (§4.5),
 `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
 in-copyright content, never on GitHub),
 [wg_text.txt](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt) and the
-[csl-whitroot print scans](https://github.com/sanskrit-lexicon/csl-whitroot/tree/master/jpg).
+csl-whitroot print scans.
 Trigger: the pwg_ru compound-position glyph vote (лист `h2805_q3_deploy` on the
 [vote hub](https://gasyoun.github.io/vote/)). PRs:
 [#1760](https://github.com/gasyoun/SanskritLexicography/pull/1760) ·
@@ -133,7 +135,7 @@ not profiled (same method applies; markup per dict).
   §4.5), classic elision rings.
 - **Whitney** (§561): no ring at all. Roots 1885: leading hyphen = bound stem
   (`-kartin`, `-karttṛ`; read from the
-  [whit-023 scan](https://github.com/sanskrit-lexicon/csl-whitroot/blob/master/jpg/whit-023-kft2.jpg));
+  whit-023 scan);
   Grammar: attested compounds quoted solid with accent, hyphens only in
   analysis. Böhtlingk abbreviates, Whitney classifies.
 - **Mylius** (§557): **named gap** — no digitization in the org (only the
@@ -246,7 +248,16 @@ item in this order:**
 1. **Accent digitization** — `/` (udātta) and `\` (svarita) in `<k2>` and
    bodies: which dicts carry Vedic accent, on what fraction of lemmas, and
    whether accent survives in compounds (PWG vs MW vs GRA vs MD disagree on
-   where the accent sits in `agni/—hotra`-type lemmas).
+   where the accent sits in `agni/—hotra`-type lemmas). **measured → FINDINGS
+   [§578](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2978): three devices, not one — `/` headword accentuation in exactly 9 of 44 dicts
+   (mw 47 589 / 16.6 %, pw 21 543, pwg 20 876, cae+ccs 28 % each, gra 83.7 %, lan 45 %,
+   sch 3.9 %, pwkvn 8.4 %); `\` svarita survives in 17 lemma marks corpus-wide;
+   stc/fri/bur/md carry accent only as acute-vowel translit that never reaches `<k2>`.
+   The compound disagreement resolves into data: pw-family slashes sit in the first member
+   100 % of the time and the pair `agnihotra/` n. vs `agni/hotra` mfn. makes the slash a
+   sense disambiguator; GRA puts ~20 % of compound accents in the later member
+   (`gotra-Bi/d`); MW mirrors with em-dash (`agni/—hotra<h>1` vs `agni—hotra/<h>2`).
 2. **Homonym splitting** — `<h>` / `<hom>` density per dict: who splits
    agnihotra n. from agnihotra adj. as separate lemmas vs one article; drives
    any headword-join between dictionaries. **measured → FINDINGS
@@ -275,7 +286,11 @@ item in this order:**
    well as by §18.**
 4. **Citation apparatus density** — `<ls>` per entry, per dict: which
    dictionaries *prove* senses and which assert; the §18 measurement extended
-   from 4 dictionaries to all 44.
+   from 4 dictionaries to all 44. **measured → FINDINGS
+   [§579](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2981): cliff, not spectrum — pwg 94.4 % / 6.50 per entry (801 788 total),
+   mw 79.1 %, ap90 31.2 %; 22 dicts carry zero `<ls>`; GRA cites heavily in print
+   but wraps only 12.0 % in markup.
 5. **Cross-reference conventions** — `см. / s. / vide / Vgl. / q.v. / =` — the
    internal reference graph of each dict, and its ring interaction (`˚`-refs).
    **measured → FINDINGS

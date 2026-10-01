@@ -1,0 +1,25 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "c2p2-work-dating-2026-09-01",
+  "content_hash": "sha256:2c674bf1e203629f054b56b90c9122d76d874df9c0563b5c4fbffee2a62db837",
+  "generated": "2026-09-01",
+  "gate": null,
+  "n_items": 11,
+  "ids": [
+    "C2P2-D1",
+    "C2P2-D2",
+    "C2P2-D3",
+    "C2P2-D4",
+    "C2P2-D5",
+    "C2P2-D6",
+    "C2P2-D7",
+    "C2P2-D8",
+    "C2P2-D9",
+    "C2P2-D10",
+    "C2P2-D11"
+  ],
+  "source_html": "sanskritlexicography-c2p2-work-dating_11.html",
+  "mode": "stamped",
+  "created": "2026-09-01",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

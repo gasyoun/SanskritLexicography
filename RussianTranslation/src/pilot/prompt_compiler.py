@@ -28,6 +28,7 @@ if H1209 not in sys.path:
     sys.path.insert(0, H1209)
 
 import cache_identity as ident  # noqa: E402
+import gate_evidence as ge  # noqa: E402
 import deepseek_arm as ds_arm  # noqa: E402
 import headless_worker as hw  # noqa: E402
 import prep_pack  # noqa: E402
@@ -338,9 +339,39 @@ def write_golden_fixtures(directory=None):
     return directory
 
 
-def selftest():
+GOLDEN_NAMES = ('legacy_claude_prompt.json', 'legacy_deepseek_payload.json')
+
+
+def selftest(evidence_path=None):
+    # W1 (H3748, #1803 C3-1). The assertions below are unchanged. What is new is that
+    # the run records WHICH bytes it compared against — and, specifically, whether
+    # write_golden_fixtures() below overwrote the committed goldens before reading them.
+    # That is C3-1 exactly: when it does, the "golden comparison" is the compiler against
+    # itself and the committed fixtures are rewritten on every CI run. The defect stays
+    # filed (fixing it is a predicate change, out of W1 scope); it is no longer invisible.
+    ev = ge.GateEvidence('prompt_compiler_golden',
+                         'legacy prompt reconstruction against committed goldens (C3-1)')
+    before = {}
+    for name in GOLDEN_NAMES:
+        path = os.path.join(FIXTURE_DIR, name)
+        before[name] = ge.sha256_file(path) if os.path.isfile(path) else None
+
     os.makedirs(FIXTURE_DIR, exist_ok=True)
     write_golden_fixtures(FIXTURE_DIR)
+
+    rewritten = []
+    for name in GOLDEN_NAMES:
+        path = os.path.join(FIXTURE_DIR, name)
+        ev.add_input('golden:%s' % name, path=path, units=1)
+        if before[name] is not None and before[name] != ge.sha256_file(path):
+            rewritten.append(name)
+    if rewritten:
+        ev.warnings.append(
+            'C3-1: write_golden_fixtures() rewrote %s before the comparison below, so '
+            'that half of this selftest is the compiler against itself'
+            % ', '.join(rewritten))
+    ev.note('goldens_rewritten', rewritten)
+    ev.note('sha256_before', before)
     claude = load_json('legacy_claude_prompt.json')
     deep = load_json('legacy_deepseek_payload.json')
     rec_c = reconstruct_legacy_claude(claude)
@@ -381,7 +412,23 @@ def selftest():
         raise AssertionError('PREP compiler diverged from prep_pack.flash_messages')
     if prep_compiled['system'] != prep_pack.PREP_FLASH_SYSTEM:
         raise AssertionError('PREP compiler lost PREP_FLASH_SYSTEM')
-    print('prompt_compiler selftest: PASS')
+
+    # The three predicates, separated because they are NOT of equal strength. The
+    # golden reconstruction is self-referential when the goldens were just rewritten
+    # (C3-1); the identity mutation and the live-builder oracle are not — the oracle
+    # compares compiler bytes against headless_worker/DeepSeek/PREP production builders,
+    # which is the real invariant and does hold. Recording them apart is what lets a
+    # reader see that the weak one is weak.
+    ev.add_predicate('golden_request_id_reconstruction', evaluations=2, hits=0,
+                     detail='self-referential when goldens_rewritten is non-empty (C3-1)')
+    ev.add_predicate('identity_mutation', evaluations=2, hits=0)
+    ev.add_predicate('live_builder_oracle', evaluations=3, hits=0)
+    ev.set_verdict('pass')
+    ev.assert_nonvacuous()
+    ev.emit(evidence_path or ge.default_sidecar('prompt_compiler_golden'))
+    print('prompt_compiler selftest: PASS (%s)' % ev.summary())
+    if rewritten:
+        print('  ^ %s' % ev.warnings[-1])
     return 0
 
 

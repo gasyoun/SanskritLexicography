@@ -1,0 +1,44 @@
+[200] [https://sanskrit.uohyd.ac.in/cgi-bin/SKT/sktreader?lex=MW&cache=t&st=f&us=f&font=roma&t=SL&text=nivAryate&topic=&mode=g&corpmode=&corpdir=&sentno=]
+
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Sanskrit Reader Companion</title>
+<meta name="author" content="Gérard Huet">
+<meta property="dc:datecopyrighted" content="2026">
+<meta property="dc:rightsholder" content="Gérard Huet">
+<meta name="keywords" content="sanskrit,dictionary,heritage,dictionnaire,sanscrit,india,inde,indology,linguistics,panini,digital humanities,digital libraries,cultural heritage,computational linguistics,hypertext lexicon">
+<link rel="stylesheet" type="text/css" href="/SKT/DICO/style.css" media="screen,tv">
+<link rel="shortcut icon" href="/SKT/IMAGES/favicon.ico">
+<script type="text/javascript" src="/SKT/DICO/utf82VH.js"></script>
+<script type="text/javascript" src="/SKT/DICO/util.js"></script>
+</head>
+<body class="chamois_back">
+<h1 class="title">The Sanskrit Reader Companion</h1>
+<table class="chamois_back" border="0" cellpadding="0%" cellspacing="15pt" width="100%">
+<tr><td>
+<table class="yellow_cent" border="0" cellspacing="20pt">
+<tr><th><span class="red">Fatal error </span><span class="blue">Unknown mode g</span>
+</th></tr></table>
+<br>
+</td></tr></table>
+<table class="pad60">
+<tr><td></td></tr></table>
+<div class="enpied">
+<table class="bandeau"><tr><td>
+<a href="https://ocaml.org"><img src="/SKT/IMAGES/icon_ocaml.png" alt="Le chameau Ocaml" height="50"></a>
+</td><td>
+<table class="center">
+<tr><td>
+<a href="/SKT/index.fr.html"><b>Top</b></a> | 
+<a href="/SKT/DICO/index.fr.html"><b>Index</b></a> | 
+<a href="/SKT/DICO/grammar.fr.html"><b>Grammar</b></a> | 
+<a href="/SKT/DICO/sandhi.fr.html"><b>Sandhi</b></a> | 
+<a href="/SKT/DICO/reader.fr.html"><b>Reader</b></a> | 
+<a href="/SKT/DICO/corpus.fr.html"><b>Corpus</b></a>
+</td></tr><tr><td>
+© Gérard Huet 1994-2026</td></tr></table></td><td>
+<a href="https://www.inria.fr/"><img src="/SKT/IMAGES/logo_inria.png" alt="Logo Inria" height="50"></a>
+<br></td></tr></table></div>
+</body>
+</html>

@@ -36,6 +36,8 @@ GITHUB = os.path.normpath(os.path.join(REPO, '..'))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+from rt_io import read_jsonl as load_jsonl, write_jsonl  # noqa: E402
+
 DEFAULT_GRADE_GOLD = os.path.join(ROOT, 'gold', 'grade_gold.jsonl')
 DEFAULT_SAMPLE = os.path.join(
     ROOT, 'release', 'pwg_tm_canonical', 'wave1_b_receipt', 'sample400.jsonl')
@@ -72,22 +74,6 @@ def sha256_file(path):
 
 def sha256_text(s):
     return hashlib.sha256((s or '').encode('utf-8')).hexdigest()
-
-
-def load_jsonl(path):
-    rows = []
-    with open(path, encoding='utf-8') as f:
-        for line in f:
-            if line.strip():
-                rows.append(json.loads(line))
-    return rows
-
-
-def write_jsonl(path, rows):
-    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
-    with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
 
 
 def levenshtein(a, b):

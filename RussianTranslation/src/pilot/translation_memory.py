@@ -359,6 +359,20 @@ def stamp_denylist_from_last_audit(keys, lang='ru', fshas=(), root='',
         timespec='seconds').replace('+00:00', 'Z')
     # H1386 / gen_opt: PWG_INPUT_DIR can redirect raw inputs for hermetic harnesses.
     base_inp = inp_dir or os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
+    # H3748 (#1800 C5-4): the denial side used to append UNLOCKED while `append_unblock`
+    # does a locked read-modify-REPLACE of the same file. A denial landing inside that
+    # window was simply deleted — the unblock rewrote the file from the bytes it had read
+    # before the denial arrived. The lock is asymmetric no longer: both sides of the
+    # denylist take `_sidecar_lock`, so an append can never be lost to a concurrent
+    # replace. Held around the whole loop rather than per row, so a multi-key stamp is
+    # one atomic unit rather than N racing appends.
+    with _sidecar_lock(p):
+        return _stamp_denylist_rows(p, keys, fshas, base_inp, lang, root, reason, now,
+                                    sha256_file)
+
+
+def _stamp_denylist_rows(p, keys, fshas, base_inp, lang, root, reason, now, sha256_file):
+    """The append bodies, unchanged — factored out only so the lock above wraps them."""
     n = 0
     for k in keys or ():
         raw = os.path.join(base_inp, k + '.raw.txt')

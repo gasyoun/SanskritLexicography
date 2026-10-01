@@ -212,19 +212,19 @@ def pilot_distribution(store_path=None, roots=None):
                              "pwg_ru_relationships.jsonl") if main else br.REL)
 
     store = collections.defaultdict(list)
+    pair_seen = collections.Counter()
     with io.open(store_path or canonical_store(HERE), encoding="utf-8") as fh:
         for line in fh:
             line = line.strip()
             if line:
                 d = json.loads(line)
+                # H3300: same exact-join discipline as build_reglue.load() —
+                # occurrence ordinal in file order on both sides of the join.
+                pair = (d["subcard"], str(d.get("sense_tag")))
+                d["_pair_ordinal"] = pair_seen[pair]
+                pair_seen[pair] += 1
                 store[d["key1"]].append(d)
-    rel = {}
-    with io.open(rel_path, encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if line:
-                r = json.loads(line)
-                rel[(r["subcard"], r["sense_tag"])] = r["relationship"]
+    rel = br.RelSidecar(rel_path)
 
     from edition_rel import normalize_sense_tag, pwg_correction_marker
     signs = collections.Counter()
@@ -242,7 +242,8 @@ def pilot_distribution(store_path=None, roots=None):
             layer = d.get("layer")
             if layer == "pwg" and not pwg_correction_marker(d.get("sense_tag")):
                 continue
-            r = rel.get((d["subcard"], str(d.get("sense_tag"))))
+            r = rel.get(d["subcard"], str(d.get("sense_tag")),
+                        d.get("_pair_ordinal"))
             if not r:
                 continue
             # Pair on `target_sense`, NOT on the sidecar's `placement` verdict.

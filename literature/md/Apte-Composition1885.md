@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Apte-Composition1885
 
 **Source:** `Apte-Composition1885.pdf`  
@@ -20642,3 +20644,5 @@ i... t
 19
 ~6
 25
+
+_Dr. Mārcis Gasūns_

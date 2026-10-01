@@ -1,0 +1,48 @@
+{
+  "schema": "pwg.cohort_engine.v1",
+  "leases": {
+    "h4527sen08": {
+      "phase": "done",
+      "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527sen08\\workflow_result.headless.h4527sen08.json",
+      "report": {
+        "requeue_keys": [],
+        "satisfied_keys": [],
+        "clean_count": 1,
+        "calls": 1,
+        "cost": null,
+        "audit_state": "clean",
+        "lease_state": "ready",
+        "store_delta": null
+      }
+    }
+  },
+  "wave": {
+    "promoted": true,
+    "tm_done": true,
+    "receipt": {
+      "schema": "pwg.cohort_live_dispatch.v1",
+      "members": [
+        "h4527sen08"
+      ],
+      "lease_ids": [
+        "h4527sen08"
+      ],
+      "gen_model_version": "claude-sonnet-5",
+      "promoted": true,
+      "returncode": 0,
+      "stdout_tail": "backed up prior store -> pwg_ru_translated.jsonl.premerge.20260920T180252.674138Z.p16840.a157b201ebab.bak\nBATCH PROMOTE: 1 lease(s), 1 subcard(s), 3 sense rows; store 11521 -> 11524 rows\n  h4527sen08: 1 subcard(s), 3 row(s)\npromoted 1 lease(s)\n",
+      "promoted_at": "2026-09-20T18:02:59Z"
+    }
+  },
+  "calls_spent": 1,
+  "calls_reserved": 1,
+  "peak_concurrency": 1,
+  "requeue_backlog_keys": [],
+  "accepted_order": [
+    "h4527sen08"
+  ],
+  "stop_reason": null,
+  "effective_width": 1,
+  "probed": [],
+  "coord_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator"
+}

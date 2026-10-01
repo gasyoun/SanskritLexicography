@@ -5,9 +5,14 @@ Runs the repository's own D-K two-phase protocol (`max_account_orchestrator.live
 at >= v1.9.17 (natural, schema-carrying, load-representative prompt) against the exact
 generation model.
 
-    python src/pilot/h963_c4_gate0_probe.py                 # c4 (unchanged default)
+    python src/pilot/h963_c4_gate0_probe.py                 # default: $PWG_PROFILE_SLOT / .env, fallback c4
     python src/pilot/h963_c4_gate0_probe.py --account c5
     python src/pilot/h963_c4_gate0_probe.py --account c5 --config-dir <path>
+
+The default account resolves through `profile_lane` (MG 24-08-2026): the real
+environment wins, then RussianTranslation/.env, and only bare invocation with
+nothing configured falls back to the historical c4. An explicit --account
+always wins over every config source.
 
 PROFILE SCOPE (25-07-2026)
 --------------------------
@@ -86,6 +91,7 @@ from headless_worker import claude_argv_prefix  # noqa: E402
 # ledger reserves each call BEFORE it is issued and raises CallLimitReached instead, which is
 # exactly the discipline a one-no-reroll-attempt gate wants.
 from call_reservation import CallLimitReached, CallReservationLedger  # noqa: E402
+import profile_lane  # noqa: E402  - one-knob active-slot resolver (.env / $PWG_PROFILE_SLOT)
 
 
 def resolve_claude_bin():
@@ -143,7 +149,8 @@ STRICT_CEILING_MS = CEILING_MS   # == mao.PROBE_LATENCY_CEILING_MS; measured rea
 # it is the one the wall number can never distinguish.
 API_CEILING_MS = probe_log.POLICIES[probe_log.CURRENT_POLICY].get('api_ceil_ms')
 WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on it still do
-CONN_ERR_CLASSES = {"process", "timeout"}
+# H4528: a watchdog kill is the same family of fault as a hard-ceiling kill for this gate.
+CONN_ERR_CLASSES = {"process", "timeout", "no_progress_kill"}
 
 
 def is_linked_worktree(path):
@@ -380,8 +387,15 @@ def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS,
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="H963 Gate-0 single-profile D-K health attempt")
-    ap.add_argument("--account", default=ACCOUNT,
-                    help="profile slot to gate (default %s)" % ACCOUNT)
+    # MG 24-08-2026: the DEFAULT account resolves through the one-knob profile
+    # resolver ($PWG_PROFILE_SLOT / RussianTranslation/.env) and only falls back
+    # to the historical c4 when nothing is configured. ACCOUNT itself stays the
+    # literal 'c4' — it is also the historical-campaign identity compared below,
+    # so an env-selected lane still gets its own per-account paths.
+    default_account = profile_lane.active_profile() or ACCOUNT
+    ap.add_argument("--account", default=default_account,
+                    help="profile slot to gate (default: $PWG_PROFILE_SLOT or .env, fallback %s)"
+                         % ACCOUNT)
     ap.add_argument("--config-dir", default=None,
                     help="that profile's CLAUDE_CONFIG_DIR (default: derived from --account)")
     ap.add_argument("--evidence-dir", default=None,
@@ -399,6 +413,21 @@ def main(argv=None):
     evidence_root, evidence_source = resolve_evidence_root(args.evidence_dir)
     explicit_root = None if evidence_source.startswith("default") else evidence_root
     assert_durable_evidence_root(evidence_root, evidence_source, paid=True)
+
+    # H3642: `max_account_orchestrator.HEALTH_PROBE_LOG` used to stay pinned to its
+    # checkout-relative default no matter what the assert above just validated -- the
+    # #1034 defect one file over. Rebind it (and the raw-envelope dir it derives) to the
+    # SAME resolved root, so the canonical cross-account row lands wherever the
+    # per-account series just did rather than splitting into the disposable worktree.
+    mao.HEALTH_PROBE_LOG = mao.resolve_health_probe_log(explicit_root)
+    mao.PROBE_RAW_DIR = os.path.dirname(mao.HEALTH_PROBE_LOG)
+    # Defense in depth, not a second independent resolution: HEALTH_PROBE_LOG now derives
+    # from the exact evidence_root the assert above already cleared, so this can only ever
+    # re-confirm today -- but it means a future change that decouples the two paths again
+    # trips a refusal immediately instead of silently reintroducing the #1034/H3642 split.
+    assert_durable_evidence_root(Path(mao.PROBE_RAW_DIR),
+                                 "canonical health log (derived from %s)" % evidence_source,
+                                 paid=True)
 
     events = events_for(account, explicit_root)
     events.parent.mkdir(parents=True, exist_ok=True)
@@ -433,6 +462,7 @@ def main(argv=None):
     print("campaign          : %s   (grouping label only, never a read scope)" % campaign)
     print("evidence root     : %s   (source: %s)" % (evidence_root, evidence_source))
     print("events            : %s   (per-account series)" % events)
+    print("health log        : %s   (canonical cross-account, H3642)" % mao.HEALTH_PROBE_LOG)
     print("call ledger       : %s" % call_ledger_path)
     print("preflight         : %s" % preflight_path)
     print("claude bin        : %s" % claude_bin)
@@ -745,14 +775,70 @@ def selftest():
             assert is_linked_worktree(deep_unborn) == here_verdict, deep_unborn
             # a path with no existing repo ancestor at all is still not disposable
             assert is_linked_worktree(Path(d) / "no-such-dir") in (True, False)
+
+            # 9. H3642 — HEALTH_PROBE_LOG must follow the SAME resolved root, not stay
+            #    pinned to its checkout-relative default while the assert above validates
+            #    a totally different (durable) path. This is the #1034-one-file-over
+            #    incident itself, as a test.
+            _saved_log, _saved_raw = mao.HEALTH_PROBE_LOG, mao.PROBE_RAW_DIR
+            try:
+                # 9a. no explicit root, no env — the historical default reproduces
+                #     BYTE-IDENTICALLY (21 rows of c4 history cite this exact path).
+                os.environ.pop("PWG_EVIDENCE_DIR", None)
+                default_log = mao.resolve_health_probe_log()
+                assert default_log == os.path.join(str(HERE), "output", "health_probe_log.jsonl"), \
+                    default_log
+
+                # 9b. explicit durable root beats env, exactly like resolve_evidence_root.
+                os.environ["PWG_EVIDENCE_DIR"] = str(Path(d) / "from-env")
+                explicit_log = mao.resolve_health_probe_log(str(durable))
+                assert explicit_log == os.path.join(str(durable), "health_probe_log.jsonl"), \
+                    explicit_log
+
+                # 9c. env-only (no explicit root) is also picked up, independent of any CLI arg.
+                env_log = mao.resolve_health_probe_log()
+                assert env_log == os.path.join(str((Path(d) / "from-env").resolve()),
+                                               "health_probe_log.jsonl"), env_log
+                os.environ.pop("PWG_EVIDENCE_DIR", None)
+
+                # 9d. the main() rebind sequence: HEALTH_PROBE_LOG and its derived
+                #     PROBE_RAW_DIR both move to the durable root — the split is closed
+                #     because there is no longer a second, independently-resolved target.
+                mao.HEALTH_PROBE_LOG = mao.resolve_health_probe_log(durable)
+                mao.PROBE_RAW_DIR = os.path.dirname(mao.HEALTH_PROBE_LOG)
+                assert mao.PROBE_RAW_DIR == str(durable), mao.PROBE_RAW_DIR
+                assert not str(mao.HEALTH_PROBE_LOG).startswith(str(HERE)), (
+                    'HEALTH_PROBE_LOG must leave the checkout when a durable root is given')
+
+                # 9e. defense-in-depth guard: a canonical-log target that DOES resolve
+                #     inside a linked worktree is REFUSED exactly like the events path is
+                #     (section 8d) — never a silent write into the disposable checkout.
+                real_is_linked = globals()["is_linked_worktree"]
+                globals()["is_linked_worktree"] = lambda p: str(p).endswith("disposable")
+                try:
+                    disposable_log_dir = Path(d) / "disposable"
+                    try:
+                        assert_durable_evidence_root(disposable_log_dir,
+                                                     "canonical health log (derived)", paid=True)
+                    except SystemExit as exc:
+                        assert "EVIDENCE-ROOT REFUSAL" in str(exc), exc
+                    else:
+                        raise AssertionError(
+                            'a paid probe whose canonical health log resolves into a linked '
+                            'worktree must REFUSE, exactly like the per-account events path')
+                finally:
+                    globals()["is_linked_worktree"] = real_is_linked
+            finally:
+                mao.HEALTH_PROBE_LOG, mao.PROBE_RAW_DIR = _saved_log, _saved_raw
         finally:
             os.environ.pop("PWG_EVIDENCE_DIR", None)
             if saved_env is not None:
                 os.environ["PWG_EVIDENCE_DIR"] = saved_env
 
-        print("h963_c4_gate0_probe selftest: 8/8 OK (no live call, nothing spent) — "
+        print("h963_c4_gate0_probe selftest: 9/9 OK (no live call, nothing spent) — "
               "incl. #1034 evidence-root matrix (main checkout / worktree refusal / "
-              "explicit override / independent profile series)")
+              "explicit override / independent profile series) and H3642 (HEALTH_PROBE_LOG "
+              "now follows the same resolved root)")
     finally:
         shutil.rmtree(d, ignore_errors=True)
 

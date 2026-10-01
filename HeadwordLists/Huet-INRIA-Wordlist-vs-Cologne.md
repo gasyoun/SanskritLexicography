@@ -1,10 +1,12 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Huet / INRIA Heritage word list vs the Cologne (CDSL) wordlists + DCS
 
-**File analysed:** [`21562-huet-velthius.txt`](then-2014/21562-huet-velthius.txt) — 21,562 lines, UTF-8 **with BOM**, in Huet's **VH (Velthuis) transliteration**.
+**File analysed:** [`21562-huet-velthius.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/21562-huet-velthius.txt) — 21,562 lines, UTF-8 **with BOM**, in Huet's **VH (Velthuis) transliteration**.
 **Source work:** the stem list of the **INRIA "Sanskrit Heritage" reader** ([sanskrit.inria.fr/DICO/reader.fr.html](https://sanskrit.inria.fr/DICO/reader.fr.html), Gérard Huet) — an **older export**, non-Cologne.
-**Date:** 2026-06-26 · script: [`huet_coverage.py`](huet_coverage.py)
+**Date:** 2026-06-26 · script: [`huet_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/huet_coverage.py)
 
-A non-Cologne control alongside the [Catalan-Pujol study](Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md): an independent Sanskrit headword spine, measured the same two ways — coverage by the CDSL dictionaries, and attestation in the DCS corpus.
+A non-Cologne control alongside the [Catalan-Pujol study](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/Sanskrit-Catalan-Wordlist-vs-Cologne.md): an independent Sanskrit headword spine, measured the same two ways — coverage by the CDSL dictionaries, and attestation in the DCS corpus.
 
 ## 1. Transliteration
 
@@ -48,7 +50,7 @@ Like the Catalan list, it is **MW-dominated** — MW alone covers 83.5 %, and ev
 ## 5. Use cases
 
 1. **A corpus-weighted core vocabulary.** At 60 % DCS-attested, the Huet stem list is a higher-precision base for a learner's lexicon or a parser dictionary than a full dictionary spine — most of it is vocabulary actually met in texts.
-2. **VH↔SLP1 bridge for ingesting INRIA Heritage data.** The validated Velthuis→IAST→SLP1 map in [`huet_coverage.py`](huet_coverage.py) lets the INRIA Heritage reader's output be joined to the CDSL/SLP1 and DCS ecosystems on a common key — the prerequisite for linking Heritage analyses to Cologne entries.
+2. **VH↔SLP1 bridge for ingesting INRIA Heritage data.** The validated Velthuis→IAST→SLP1 map in [`huet_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/huet_coverage.py) lets the INRIA Heritage reader's output be joined to the CDSL/SLP1 and DCS ecosystems on a common key — the prerequisite for linking Heritage analyses to Cologne entries.
 3. **Lemmatisation-interoperability check.** The 131 corpus-attested-no-CDSL keys map INRIA's lemmatisation conventions (prefixed/denominative units) onto CDSL's root-based headwording — a small crosswalk for tools that consume both.
 4. **A control/benchmark.** Side by side with Pujol it quantifies the "reader's lexicon vs dictionary spine" axis (60 % vs 46 % corpus density at similar ~85 % MW coverage) — a reusable yardstick when evaluating any new Sanskrit wordlist's character.
 
@@ -62,10 +64,10 @@ the 2014 file above is the *reader's* curated stem list; the
 GitHub mirror's `DICO/` HTML is the **full current Heritage dictionary** — a
 different-scope asset, not a version bump of the same list, so the comparison
 below is "reader export vs. full dictionary," not "2014 vs 2026 of the same
-thing." [`heritage_stem_extract.py`](heritage_stem_extract.py) pulls
+thing." [`heritage_stem_extract.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_stem_extract.py) pulls
 38,343 unique current stem keys from `DICO/`'s anchor index (see
-[HERITAGE_MIRROR_INVENTORY.md](HERITAGE_MIRROR_INVENTORY.md) for the
-anchor-normalisation rules); [`heritage_coverage_current.py`](heritage_coverage_current.py)
+[HERITAGE_MIRROR_INVENTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/HERITAGE_MIRROR_INVENTORY.md) for the
+anchor-normalisation rules); [`heritage_coverage_current.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_coverage_current.py)
 reruns `huet_coverage.py`'s pipeline on it and diffs against the 2014 set.
 
 | | 2014 reader export | Current DICO (full dict) |
@@ -93,4 +95,6 @@ reruns `huet_coverage.py`'s pipeline on it and diffs against the 2014 set.
 
 ---
 
-*Method: VH→IAST→SLP1, accent- and (where applicable) hyphen-insensitive lemma-identity match against `<k1>` of CDSL dictionaries in `csl-orig/v02` and against the DCS-2021 lemma index. Reproducible via [`huet_coverage.py`](huet_coverage.py) (includes a transcoder self-check).*
+*Method: VH→IAST→SLP1, accent- and (where applicable) hyphen-insensitive lemma-identity match against `<k1>` of CDSL dictionaries in `csl-orig/v02` and against the DCS-2021 lemma index. Reproducible via [`huet_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/huet_coverage.py) (includes a transcoder self-check).*
+
+_Dr. Mārcis Gasūns_

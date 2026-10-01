@@ -31,7 +31,7 @@ down to the Petersburg family (PWG+PWK+SCH, D6 basis), not a new census.
 
 | Metric | n |
 |---|---|
-| Full 15-dict de-duplicated union | 323,425 |
+| Full 15-dict de-duplicated union | 323,422 |
 | Petersburg family (PWG+PWK+SCH) headwords, naive sum | 285,799 |
 | Petersburg family, de-duplicated union | 167,904 |
 | **Naive-sum double-count inflation** | **+70.2%** |
@@ -122,5 +122,16 @@ Built separately, each with its own generator + dataset + trust block:
 | 10 | verb classes + voice | [module10_verb_class_voice.py](module10_verb_class_voice.py) | [module10_verb_class_voice.json](module10_verb_class_voice.json) |
 
 See [WAVE1_SUMMARY.md](WAVE1_SUMMARY.md) for the headline numbers and trust blocks.
+
+## Wave 2 addendum — module 10b (corpus leg)
+
+| # | Module | Generator | Dataset |
+|---|---|---|---|
+| 10b | DCS corpus attestation of verb classes + prefixed forms | [module10b_dcs_verb_class_attestation.py](module10b_dcs_verb_class_attestation.py) | [module10b_dcs_verb_class_attestation.json](module10b_dcs_verb_class_attestation.json) |
+
+H4711 (census A5): consumes the two kosha datasets `dcs-verb-roots-by-class` (463 rows) +
+`dcs-verb-class-prefix-frequency` (8454 rows) — manifest parity 463/8454 verified, class
+inventories cited never re-derived, no I/VI verdict (R2606-01). Report:
+[H4711_MODULE10B_DCS_VERB_CLASS_ATTESTATION_15-09-2026.md](H4711_MODULE10B_DCS_VERB_CLASS_ATTESTATION_15-09-2026.md).
 
 _Dr. Mārcis Gasūns_

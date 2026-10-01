@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-03T21:39:34Z",
+ "generated_at": "2026-09-19T18:15:51Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 172,
+  "total": 295,
   "by_importance": {
-   "3": 54,
-   "2": 93,
-   "1": 25
+   "3": 118,
+   "2": 141,
+   "1": 36
   },
   "by_origin": {
    "auto": 0,
-   "human": 172
+   "human": 295
   }
  },
  "layers": [
@@ -101,15 +101,15 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 13,
+   "total": 18,
    "by_importance": {
-    "3": 2,
-    "2": 8,
+    "3": 1,
+    "2": 11,
     "1": 2
    },
    "by_origin": {
     "auto": 0,
-    "human": 13
+    "human": 18
    },
    "categories": 3,
    "interlinks": 6,
@@ -133,10 +133,10 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#3--resolved--kosha-plan-d13--generated-side-is-forms-not-inflections"
     },
     {
-     "title": "§4. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)",
-     "importance": 3,
+     "title": "§4. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes) — ✅ RULED",
+     "importance": null,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#4-grammatical-ab-abbreviations-in-pwgru-stay-latin-10-07-ruling-vs-translate-to-ru-19-07-da-vote-notes"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#4-grammatical-ab-abbreviations-in-pwgru-stay-latin-10-07-ruling-vs-translate-to-ru-19-07-da-vote-notes---ruled"
     },
     {
      "title": "§5. Krylov's 2014 Palsule-exclusion charge vs vidyut dhātupāṭha",
@@ -187,10 +187,40 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#12-petersburg-family-naive-sum-285799-vs-285950"
     },
     {
-     "title": "§13. corpus_lexicon row count: 1,093,391 vs 1,091,528",
+     "title": "§13. corpus_lexicon row count: 1,093,391 vs 1,091,528 — ✅ RULED",
      "importance": 1,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#13-corpuslexicon-row-count-1093391-vs-1091528"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#13-corpuslexicon-row-count-1093391-vs-1091528---ruled"
+    },
+    {
+     "title": "§14. ls-citation-graph MW lane: CANON-CORE builds on it, CITE-4AXIS rejects it as an artifact-generator",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#14-ls-citation-graph-mw-lane-canon-core-builds-on-it-cite-4axis-rejects-it-as-an-artifact-generator"
+    },
+    {
+     "title": "§15. `nominal_batch_worklist.json`: one audit calls it a NOT-A-RISK regenerable worklist, the other shows it cannot be rebuilt at all",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#15-nominalbatchworklistjson-one-audit-calls-it-a-not-a-risk-regenerable-worklist-the-other-shows-it-cannot-be-rebuilt-at-all"
+    },
+    {
+     "title": "§16. Style-guide §12.2 says never translate an apparatus span; the independent gate rewards translating one, because the span is a clause fragment and not apparatus",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#16-style-guide-122-says-never-translate-an-apparatus-span-the-independent-gate-rewards-translating-one-because-the-span-is-a-clause-fragment-and-not-apparatus"
+    },
+    {
+     "title": "§17. Repo-wide Zenodo archival: two governance docs say it is deliberately NOT used; the committed configuration says it is live and has minted 143 times",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#17-repo-wide-zenodo-archival-two-governance-docs-say-it-is-deliberately-not-used-the-committed-configuration-says-it-is-live-and-has-minted-143-times"
+    },
+    {
+     "title": "§18. MG's «PWK» (Böhtlingk 1879–89) is filed under Cologne code `pwg`, but `pwg` is the 1855–75 Große PW",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#18-mgs-pwk-böhtlingk-187989-is-filed-under-cologne-code-pwg-but-pwg-is-the-185575-große-pw"
     }
    ]
   },
@@ -198,36 +228,36 @@
    "key": "GAPS",
    "act": "not-yet-knowing (the frontier)",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
-   "total": 14,
+   "total": 18,
    "by_importance": {
     "3": 1,
-    "2": 6,
-    "1": 7
+    "2": 4,
+    "1": 9
    },
    "by_origin": {
     "auto": 5,
-    "human": 9
+    "human": 13
    },
    "categories": 3,
    "interlinks": 11,
    "entries": [
     {
-     "title": "§1. Derivative ī/ū gen.pl accent split (D3) — n=2, unresolvable",
-     "importance": 1,
-     "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#1-derivative-īū-genpl-accent-split-d3--n2-unresolvable"
-    },
-    {
-     "title": "§2. Error population of 40 of 43 dictionaries",
+     "title": "§2. Error population of the 26 dictionaries whose two correction eras never overlap",
      "importance": 2,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#2-error-population-of-40-of-43-dictionaries"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#2-error-population-of-the-26-dictionaries-whose-two-correction-eras-never-overlap"
     },
     {
      "title": "§3. Heritage inflected-form morphology XML — never ingested",
-     "importance": 2,
+     "importance": null,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#3-heritage-inflected-form-morphology-xml--never-ingested"
+    },
+    {
+     "title": "§19. Which prompt, glossary and script bytes produced the 10,773 pre-04-07-2026 pwg_ru rows",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#19-which-prompt-glossary-and-script-bytes-produced-the-10773-pre-04-07-2026-pwgru-rows"
     },
     {
      "title": "§4. Homonym token frequency beyond the 26+5 splittable groups",
@@ -243,9 +273,27 @@
     },
     {
      "title": "§6. Cyrillic-only Sanskrit name glossaries — no join key exists",
-     "importance": 2,
+     "importance": 1,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#6-cyrillic-only-sanskrit-name-glossaries--no-join-key-exists"
+    },
+    {
+     "title": "§16. 289 rows of the live pwg_ru store carry an `Instr.`→`Ins.` / `Akk.`→`Acc.` case-label rewrite that no repo script produces and the mirror lacks",
+     "importance": null,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#16-289-rows-of-the-live-pwgru-store-carry-an-instrins--akkacc-case-label-rewrite-that-no-repo-script-produces-and-the-mirror-lacks"
+    },
+    {
+     "title": "§17. Nothing gates a *promoted* pwg_ru fragment on its own surface form — untranslated German and translated `<ab>` tokens both reached the promoted tier",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#17-nothing-gates-a-promoted-pwgru-fragment-on-its-own-surface-form--untranslated-german-and-translated-ab-tokens-both-reached-the-promoted-tier"
+    },
+    {
+     "title": "§18. The fragmentizer splits DISCONTINUOUS glosses at `<is>` boundaries, orphaning fragments that cannot be translated at all",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#18-the-fragmentizer-splits-discontinuous-glosses-at-is-boundaries-orphaning-fragments-that-cannot-be-translated-at-all"
     },
     {
      "title": "§7. `dcs-stem-cooccurrence-full` (353,352 stem-pair rows) is uncharacterised",
@@ -285,9 +333,15 @@
     },
     {
      "title": "§14. Which `-ī` stems are the monosyllabic type, and which `-at` citations are genuine `-ant` stems?",
-     "importance": 2,
+     "importance": null,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#14-which--ī-stems-are-the-monosyllabic-type-and-which--at-citations-are-genuine--ant-stems"
+    },
+    {
+     "title": "§15. BLI B1 gold pass-1 labels not yet collected — real P@1/P@5/MRR on the stratified frame is unmeasured",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#15-bli-b1-gold-pass-1-labels-not-yet-collected--real-p1p5mrr-on-the-stratified-frame-is-unmeasured"
     },
     {
      "title": "§13. No Russian Uttarakāṇḍa (or Kiṣkindhā, or Yuddha) exists — 1,765 PWG `R.` book-7 citations wait on a translator",
@@ -301,18 +355,18 @@
    "key": "DEAD_ENDS",
    "act": "abandoning an approach",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
-   "total": 14,
+   "total": 16,
    "by_importance": {
-    "3": 10,
-    "2": 3,
-    "1": 0
+    "3": 11,
+    "2": 4,
+    "1": 1
    },
    "by_origin": {
     "auto": 1,
-    "human": 13
+    "human": 15
    },
    "categories": 4,
-   "interlinks": 13,
+   "interlinks": 15,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -340,7 +394,7 @@
     },
     {
      "title": "§8b. Fitting a continuous locus index for the **full Mahābhārata** against any free bulk e-text — ✅ REOPENED & DONE for ALL 18 PARVANS (the \"no free vulgate\" premise was refuted, 12-07-2026)",
-     "importance": null,
+     "importance": 1,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8b-fitting-a-continuous-locus-index-for-the-full-mahābhārata-against-any-free-bulk-e-text---reopened--done-for-all-18-parvans-the-no-free-vulgate-premise-was-refuted-12-07-2026"
     },
@@ -355,6 +409,12 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#12-deriving-a-safe-sanloss-countsourcesenses-cap-from-text-structure-alone--escalated-no-safe-fix"
+    },
+    {
+     "title": "§15. Propagating a DCS `Formation` tag onto non-indicative past tokens from the same surface form attested in the indicative — measured 3.39 %, NO-GO",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#15-propagating-a-dcs-formation-tag-onto-non-indicative-past-tokens-from-the-same-surface-form-attested-in-the-indicative--measured-339--no-go"
     },
     {
      "title": "§4. Bulk-respell of \"typo\" headword-correction lists — abandoned",
@@ -397,6 +457,12 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#13-building-a-bombaycorpus-verse-concordance-for-pwgs-r-book-7--abandoned-before-the-ocr-was-spent"
+    },
+    {
+     "title": "§14. Waiting on Druzhinin's Russian Aṣṭāṅgahṛdaya to reach the `guda` chapters — abandoned on the translator's own pace",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#14-waiting-on-druzhinins-russian-aṣṭāṅgahṛdaya-to-reach-the-guda-chapters--abandoned-on-the-translators-own-pace"
     }
    ]
   },
@@ -607,19 +673,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 186,
+  "rows": 197,
   "auto": 120,
-  "human": 66,
+  "human": 77,
   "by_importance": {
    "3": 25,
-   "2": 35,
-   "1": 10
+   "2": 37,
+   "1": 13
   },
   "layers": 7,
-  "entry_rows": 72,
+  "entry_rows": 83,
   "candidates": 6,
   "categories": 21,
-  "interlinks": 60,
-  "findings": 172
+  "interlinks": 62,
+  "findings": 295
  }
 }

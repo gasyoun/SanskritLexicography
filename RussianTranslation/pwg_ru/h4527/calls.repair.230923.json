@@ -1,0 +1,166 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h4527-repair-230923": {
+   "max_calls": 4,
+   "calls_spent": 4,
+   "next_ordinal": 5,
+   "reservations": [
+    {
+     "reservation_id": "7400f8a5a0ae4f5c8acf76cdf39f7a6f",
+     "ordinal": 1,
+     "reserved_at_ns": 1790128085588100400,
+     "pid": 17620,
+     "purpose": "probe:warmup",
+     "profile": "c1",
+     "finalized": true,
+     "finalized_at_ns": 1790128089756589100,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 144,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 30461,
+      "subagent_tokens": 30607,
+      "observed_cost_usd": 0,
+      "duration_ms": 2997,
+      "duration_api_ms": 2683,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 144,
+       "cache_creation_tokens": 30461,
+       "cache_read_tokens": 0,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     }
+    },
+    {
+     "reservation_id": "67b1e697693a4409affc574b65f7a9fa",
+     "ordinal": 2,
+     "reserved_at_ns": 1790128089790629000,
+     "pid": 17620,
+     "purpose": "probe:measured",
+     "profile": "c1",
+     "finalized": true,
+     "finalized_at_ns": 1790128095966568100,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 120,
+      "cache_read_tokens": 21574,
+      "cache_creation_tokens": 8888,
+      "subagent_tokens": 30584,
+      "observed_cost_usd": 0,
+      "duration_ms": 5287,
+      "duration_api_ms": 5187,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 120,
+       "cache_creation_tokens": 8888,
+       "cache_read_tokens": 21574,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     }
+    },
+    {
+     "reservation_id": "77ebabb52e224bb680063ce07275b326",
+     "ordinal": 3,
+     "reserved_at_ns": 1790128097099055700,
+     "pid": 9804,
+     "purpose": "headless:translate",
+     "profile": "c1",
+     "detail": "b0",
+     "finalized": true,
+     "finalized_at_ns": 1790128161979056100,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 4,
+      "output_tokens": 3185,
+      "cache_read_tokens": 56818,
+      "cache_creation_tokens": 14987,
+      "subagent_tokens": 74994,
+      "observed_cost_usd": 0,
+      "duration_ms": 63831,
+      "duration_api_ms": 63665,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 4,
+       "output_tokens": 3185,
+       "cache_creation_tokens": 14987,
+       "cache_read_tokens": 56818,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     }
+    },
+    {
+     "reservation_id": "7a4493ec2d674015b054982a66231e34",
+     "ordinal": 4,
+     "reserved_at_ns": 1790128165759034400,
+     "pid": 23640,
+     "purpose": "headless:translate",
+     "profile": "c1",
+     "detail": "b0",
+     "finalized": true,
+     "finalized_at_ns": 1790128191031100100,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 2029,
+      "cache_read_tokens": 22236,
+      "cache_creation_tokens": 12316,
+      "subagent_tokens": 36583,
+      "observed_cost_usd": 0,
+      "duration_ms": 23941,
+      "duration_api_ms": 23710,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 2029,
+       "cache_creation_tokens": 12316,
+       "cache_read_tokens": 22236,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 10,
+    "output_tokens": 5478,
+    "cache_read_tokens": 100628,
+    "cache_creation_tokens": 66652,
+    "subagent_tokens": 172768,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "finalized_calls": 4,
+    "unevaluable_calls": 4,
+    "pending_calls": 0
+   }
+  }
+ }
+}

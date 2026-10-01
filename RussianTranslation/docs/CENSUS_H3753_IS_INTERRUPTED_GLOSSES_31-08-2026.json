@@ -1,0 +1,231 @@
+{
+  "schema": "h3753.is_interrupted_gloss_census.v1",
+  "source": "release/translation_memory/translation_memory.ru.publication.jsonl",
+  "parent_record_count": 2392,
+  "total_senses": 11129,
+  "senses_with_is_interrupted_glosses": 58,
+  "records_with_is_interrupted_glosses": 53,
+  "is_interruption_events": 73,
+  "sample": [
+    {
+      "entry_id": "pwg.entry:iz",
+      "tag": "verb",
+      "homonym": "homonym 2",
+      "events": 1,
+      "first_event": [
+        "{%in rasche Bewegung setzen, schnellen, schleudern%} <ab>u. s. w.</ab>: {#izya\\nvAca^mupava\\kteva\\ hotu^H#} <ls>ṚV. 9,95,5.</ls> {#hi\\nvA\\no vAca^mizyasi#} <ls n=\"ṚV. 9,\">64,9.</ls> <ls n=\"ṚV. 9,64,\">25.</ls> <ls n=\"ṚV. 9,\">30,1.</ls> {%die Stimme ertönen lassen%}, wie <lang n=\"greek\">ὄπα ἵει</lang> <ls>IL. 3,221.</ls> {#apa izya hotarityapa icCa hotarityevEtadAha#} <ls>ŚAT. BR. 3,9,3,15</ls> (wo die Erklärung des <ls>BRĀHMAṆA</ls> dem ganzen alten Sprachgebrauch zuwiderläuft; ursprünglich entweder: {%sprenge die Wasser!%} oder = {#prezya#}). <ab>med.</ab>: {#ye vA^smiM Cu\\klamI^zi\\re#} {%schleudern, werfen%} <ls>AV. 5,19,3.</ls> Hierher dürfte vielleicht als <ab>aor.</ab> zu ziehen sein: {#stomE^rizemA\\gnaye^#} {%unter Lobpreisungen wollen wir dem%}",
+        "<is>Agni</is>",
+        "{%sprengen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:vad",
+      "tag": "1",
+      "homonym": "anu+vad",
+      "events": 3,
+      "first_event": [
+        "{%nachsprechen%}, (Laute) {%nachahmen%}; <ab>act.</ab>: {#cittaM vA idaM mano vAganuvadati#}\n<ls>ŚAT. BR. 3,2,4,16.</ls> {#pUrvamevoditamanuvadati#}\n<ls>KĀṬH. 19,4.</ls>\n<ls>AIT. BR. 2,40.</ls> {#iti vAcaM vadantIM sarve prARA anuvadanti#}\n<ls>KAUṢ. UP. 3,2.</ls>\n<ls>SĀH. D. 192,1.</ls>\n<ls>SARVADARŚANAS. 28,10.</ls> {#giraM naH — anuvadati SukaH#}\n<ls>RAGH. 5,74.</ls> {#tatkUjitAnyanuvadadBiH — gfhakapotaSatEH#}\n<ls>SĀH. D. 41,9.</ls> {%mit Worten begleiten%}: {#anveko^ vadati\\ yaddadA^ti\\ tat#}\n<ls>ṚV. 2,13,3.</ls> {%nachtönen%}: {#anuvadati vIRA#}\n<ls>P. 1,3,49</ls>, <ab>Schol.</ab> Als <ab>intrans.</ab> <ab>med.</ab>\n<ls>P. 1,3,49.</ls>\n<ls>VOP. 23,40.</ls> {#anuvadate kaWaH kalApasya#} {%der%}",
+        "<is>Kaṭha</is>",
+        "{%wiederholt die Worte des%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:vA",
+      "tag": "section-T91",
+      "homonym": "vā 4",
+      "events": 1,
+      "first_event": [
+        "{%in feindlicher Absicht sich nähern%}: {#pa\\rA\\Sa\\ro ha^vi\\rmaTI^nAma\\ByA\\3^\\ vivA^satAm#}\n<ls>ṚV. 7,104,21.</ls> = {#AgacCatAm#}\n<ls>SĀY.</ls>, nach <ls>DURGA</ls> {%derjenigen Verehrer, welche%}",
+        "<is>Yātu</is>",
+        "{%sind%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:gA",
+      "tag": "1)",
+      "homonym": "upagā",
+      "events": 1,
+      "first_event": [
+        "{%Jmd%} (<ab>dat.</ab> <ab>acc.</ab>) {%zusingen; in den Gesang einfallen%}: {#pra sto^za\\dupa^ #}\n[Page2-0726]\n{# gAsiza\\cCrava\\tsAma^ gI\\yamA^nam#}\n<ls>ṚV. 9,70,5.</ls> {#upA^smE gAyatA naraH#}\n<ls n=\"ṚV. 9,\">11,1.</ls> {#ga\\RAstvopa^ gAyantu\\ mAru^tAH#}\n<ls>AV. 4,15,4.</ls> {#tAnhEtadupajagO#}\n<ls>ŚAT. BR. 11,5,5,8.</ls> {#no 'Dva\\ryurupa^gAyet#}\n<ls>TS. 6,3,1,5.</ls> {#patna^yaH#}\n(<ab>vgl.</ab> <ls>P. 3,1,85</ls>, <is>Kār.</is>, <ab>Sch.</ab>) <ls n=\"TS.\">7,5,8,3.</ls>\n<ls>KĀTY. ŚR. 13,3,16.</ls> {#upagAtAra upagAyanti#}\n<ls>ŚAT. BR. 13,2,3,2.</ls> {#atirecayedyadanya upagAyet tasmAtsvayaMprastutamanupagItam#}\n<ls n=\"ŚAT. BR.\">4,6,9,17.</ls> <ls>LĀṬY. 4,2,5.</ls> {%vor Jmd%} (<ab>acc.</ab>) {%singen%}: {#upagAyanti bIBatsuM nftyantyapsarasAM gaRAH#}\n<ls>MBH. 1,4809.</ls> {#upagIyamAnA narIBiH#}\n<ls n=\"MBH.\">2,2027.</ls> {#upagItopanfttaSca ganDarvApsarasAM gaREH#}\n<ls n=\"MBH.\">5,4100.</ls> <ls n=\"MBH.\">13,2075.</ls> {#ganDarvErupagIyantaH#} (<ab>partic.</ab> <ab>pass.</ab>)\n<ls n=\"MBH.\">15,883.</ls> {#upagItA#} {%die vorzusingen begonnen hat%}\n<ls>ŚIŚ. 4,57.</ls> {#vIRayopagAyati#} wohl {%unter Begleitung der%}",
+        "<is>Vīṇā</is>",
+        "{%vorsingen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:hA",
+      "tag": "1",
+      "homonym": "ud+hā",
+      "events": 1,
+      "first_event": [
+        "{%auffahren, sich aufrichten, sich erheben%}: der Wolf\n<ls>ṚV. 1,105,8.</ls> Kräuter nach Regen\n<ls n=\"ṚV.\">5,83,4.</ls> <ls>AV. 8,7,21.</ls> <ls>VS. 11,38.</ls> {#uda\\gnayo^ jihatA\\M jyoti^zA bf\\hat#}\n<ls>ṚV. 10,35,6.</ls> <ls n=\"ṚV. 10,\">142,6.</ls>\n<ls>TBR. 2,5,4,5.</ls> {%auffahren%} so <ab>v. a.</ab> {%sich aufthun%}: Thüren\n<ls>ṚV. 9,5,5.</ls> {#SirasA yUpamujjihIte#} {%hebt sich mit dem Kopfe über den%}",
+        "<is>Yūpa</is>",
+        "{%hinaus%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:vas",
+      "tag": "main",
+      "homonym": "adhivas",
+      "events": 1,
+      "first_event": [
+        "{%beziehen, zum Aufenthaltsort erwählen, einnehmen%} (einen Platz), {%bewohnen%}; mit <ab>acc.</ab>\n<ls>P. 1,4,48.</ls> {#girimaDivasestatra viSrAmahetoH#}\n<ls>MEGH. 26.</ls>\n<ls>RAGH. 5,63.</ls> <ls n=\"RAGH.\">13,79.</ls>\n<ls>KUMĀRAS. 1,55.</ls>\n<ls>KATHĀS. 24,92.</ls>\n<ls>BHĀG. P. 7,4,8.</ls> {#sa rAjA brahmadattastu purImaDyavasattadA . kAmpilyAm#}\n<ls>R. 1,34,46.</ls>\n<ls>R. GORR. 1,27,26.</ls>\n<ls>KIR. 5,21. 27.</ls>\n<ls>UTTARAR. 42,3 (55,16).</ls> <ls>KATHĀS. 30,42.</ls> <ls>BHĀG. P. 3,21,25.</ls> {#daRqakAmaDyavAttAM yO#}\n<ls>BHAṬṬ. 5,6.</ls> {#tanum#}\n<ls>RAGH. 9,17.</ls> {#BAskaraSca diSamaDyuvAsa yAm#}\n<ls n=\"RAGH.\">11,61.</ls> {#sahAsanaM gotraBidADyavAtsIt#} {%nahm mit%}",
+        "<is>Indra</is>",
+        "{%denselben Sitz ein%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:DA",
+      "tag": "2",
+      "homonym": "abhinidhā",
+      "events": 1,
+      "first_event": [
+        "{%berühren, nahe kommen%}: {#kzureRABinidaDAti#}\n<ls>ŚAT. BR. 3,1,2,7.</ls> {#asinA#}\n<ls n=\"ŚAT. BR. 3,\">8,2,12.</ls> <ls n=\"ŚAT. BR. 3,8,2,\">13.</ls> <ls n=\"ŚAT. BR. 3,\">4,1,22.</ls> <ls n=\"ŚAT. BR.\">1,3,4,12.</ls> {#dakziRaM karRamaBiniDAya vAgvAgiti triH#} (den Mund) {%nahe an das Ohr%} (des Kindes) {%bringend%}\n<ls n=\"ŚAT. BR.\">14,9,4,25.</ls> {#mUrDannaBiniDAyASrAvayati#}\n<ls n=\"ŚAT. BR.\">4,4,3,9.</ls> <ls>KĀTY. ŚR. 2,8,2.</ls> <ls n=\"KĀTY. ŚR.\">6,6,9.</ls> <ls>GOBH. 2,9,11.</ls> <ls>KAUŚ. 53. 86.</ls> <ab>partic.</ab> {#aBinihita#} {%berührt%}: {#aBinihita eva savyena pARinA Bavati#}\n<ls>ŚAT. BR. 1,3,4,12.</ls> {#anaBinihito vE puruzo 'nnena ca prARena ca#} {%sich nicht berührend mit%}\n<ls n=\"ŚAT. BR.\">7,4,2,9.</ls> {%der nahegerückte, berührende%} heisst der <is>Saṃdhi</is>, {%welcher eintritt bei der Verschmelzung eines anlautenden%} {#a#} {%mit einem vorangehenden%} {#e, o#}, {%und der auf einer solchen Silbe%} (<ab>urspr.</ab> wohl diphthongisch ea, oa gesprochen) {%ruhende Ton%},\n<ls>ṚV. PRĀT. 2,13.</ls> <ls n=\"ṚV. PRĀT.\">3,7.</ls> <ls n=\"ṚV. PRĀT. 3,\">10.</ls> <ls n=\"ṚV. PRĀT. 3,\">19.</ls> <ls n=\"ṚV. PRĀT.\">13,10.</ls>\n<ls>VS. PRĀT. 1,114.</ls> <ls n=\"VS. PRĀT. 1,\">125.</ls>\n<ls>AV. PRĀT. 3,54.</ls>\n<ls>TAITT. PRĀT. 2,8.</ls>\n<ls>ŚĀṄKH. ŚR. 12,13,5</ls> in <ls>Ind. St. 4,230.</ls> Die unter {#aBiniDAna#}\n<ls n=\"Ind. St.\">2.</ls> gegebene Erklärung ist zu verbessern: {%Annäherung%} (der Laute in der Aussprache, im Unterschied von unmittelbarer Verbindung, {#saMyoga)#}.{# ete ca dvEpadA yaTAgfhItamaBiniDIyante#} {%unterliegen dem%}",
+        "<is>abhinihita</is>",
+        "{%genannten%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:vah",
+      "tag": "mit5-9",
+      "homonym": "vah",
+      "events": 1,
+      "first_event": [
+        "{%an sich tragen, haben, besitzen%} <ls>HEM. PAR. 1,411</ls>. {#devISabdam#} {%den Titel%}",
+        "<is>Devī</is>",
+        "{%führen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:gam",
+      "tag": "5",
+      "homonym": "gam",
+      "events": 1,
+      "first_event": [
+        "{%in einen Zustand, eine Lage, ein Verhältniss kommen, gerathen; theilhaft werden, erlangen%}: {#ja\\ri\\mARa^m#}\n<ls>ṚV. 1,116,25.</ls> {#dIrGAyutvam#}\n<ls>ŚĀṄKH. ŚR. 14,12,5.</ls> {#mA\\turheqa^m#}\n<ls>AV. 12,4,32.</ls> {#tamA^Msi#}\n<ls n=\"AV.\">2,25,5.</ls> {#ADi^patyam#}\n<ls n=\"AV.\">18,4,54.</ls> {#aga^nnidra\\ Sravo^ bf\\hat#}\n<ls>ṚV. 3,37,10.</ls> {#gama^nna\\ indra^H sa\\KyA vaya^Sca#}\n<ls n=\"ṚV. 3,\">178,2.</ls> {#juzwiM te gameyam#}\n<ls>LĀṬY. 3,6,3.</ls> {#yo yajYasya saMsTAmagan#}\n<ls>ŚAT. BR. 1,1,1,3.</ls> {#SUdratvam#}\n<ls>M. 2,168.</ls> {#amaralokatAm#}\n<ls n=\"M. 2,\">5.</ls> {#aByarhaRIyatAm#}\n<ls n=\"M.\">9,23.</ls> {#vaDyatAm#}\n<ls>N. 9,8.</ls> {#upahAsyatAm#}\n<ls>RAGH. 1,3.</ls> {#vEklavyam#}\n<ls>N. 23,21.</ls> {#AnfRyam#} <ls>M. 4,257.</ls>\n<ls n=\"M.\">9,229.</ls> {#utkarzaM cApakarzam#}\n<ls n=\"M.\">10,42.</ls> {#kulasaMKyAm#}\n<ls n=\"M.\">3,66.</ls> {#nASam#}\n<ls n=\"M.\">8,17.</ls> <ls>HIT. I,59.</ls> {#pralayam#}\n<ls>MATSYOP. 27.</ls> {#kzayam#}\n<ls>R. 2,109,11.</ls> {#dizwAntam#}\n<ls n=\"R. 2,\">66,12.</ls> {#jarAm#}\n<ls n=\"R.\">3,53,59.</ls> {#vizAdam#}\n<ls n=\"R. 2,\">68,5.</ls> <ls>MBH. 1,7677.</ls> <ls>VID. 154.</ls> {#vismayam#}\n<ls>PAÑCAT. 192,2.</ls> {#paritozam#}\n<ls>R. 1,58,21.</ls> {#kroDam#}\n<ls n=\"R. 1,\">64,18.</ls> {#Bayam#}\n<ls>MBH. 1,7629.</ls> {#Artim#}\n<ls n=\"MBH. 1,\">7679.</ls> {#nirvedam#}\n<ls>BHAG. 2,52.</ls> {#niScayam#}\n<ls>R. 1,42,27.</ls> {#pratizWAm#}\n<ls n=\"R. 1,\">2,18.</ls> {#nidrAm#}\n<ls>MEGH. 110.</ls> {#umAKyAm#} {%den Namen%}",
+        "<is>Umā</is>",
+        "{%erhalten%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:pA",
+      "tag": "PPP_2",
+      "homonym": "1",
+      "events": 1,
+      "first_event": [
+        "{%getrunken habend%}: {#BuktapItaH#} <ls>KATHĀS. 39,157.</ls> {#pItapratibadDavatsA (Denu)#} <ls>RAGH. 2,1.</ls> {#a˚#} {%noch nicht getrunken habend%} <ls>MBH. 2,1902.</ls> <ls>ŚĀK. 84.</ls> in <ab>comp.</ab> mit dem <ab>obj.</ab>: {#surApIta/#} {%der%}",
+        "<is>Surā</is>",
+        "{%getrunken hat%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:Buj:bhuj 1 (PWG)",
+      "tag": "1",
+      "homonym": "bhuj 1 (PWG)",
+      "events": 1,
+      "first_event": [
+        "{%biegen%}\n<ls>DHĀTUP. 28,124.</ls> <ab>partic.</ab> {#Bugna#}\n<ls>P. 8,2,45.</ls>\n<ls>VOP. 26,88. fg.</ls> {%gebogen, gekrümmt, krumm%}\n<ls>AK. 3,2,21.</ls> <ls n=\"AK. 3,2,\">40.</ls>\n<ls>H. 1457.</ls> <ls n=\"H.\">1483.</ls>\n<ls>HALĀY. 4,11.</ls> {#darBAndviguRAnBugnAn#}\n<ls>ĀŚV. GṚHY. 4,7,8.</ls> {#vAyuBugnANga#}\n<ls>MBH. 13,2281.</ls> {#kzuDA BugnaH#}\n<ls n=\"MBH.\">12,4265.</ls> {#BaraBugnavitatabAhu#}\n<ls>VĀSAVAD. 2,4.</ls> {#nyubjo Bugne rujA#}\n<ls>AK. 2,6,2,12.</ls> {#pARiruha#}\n<ls>BHAṬṬ. 11,8.</ls> {#BruvO ca BugnO#} (<ab>masc.</ab>!) {%gefurcht%}\n<ls>Spr. 4036.</ls> {%zur Seite gedrängt%}\n<ls n=\"Spr.\">777.</ls> {#˚netra#} {%verdrehte Augen%}\n<ls>Verz. d. Oxf. H. 319,a,8. b, No. 758</ls> {#(Bagnanetra#} <ab>gedr.</ab>). {#Bugna#} heisst {%der%}",
+        "<is>Saṃdhi</is>",
+        "{%von%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:iz",
+      "tag": "3",
+      "homonym": "iṣ",
+      "events": 2,
+      "first_event": [
+        "{%anerkennen, ansehen für%}: {#jyezWAmUlIyamicCanti mAsamAzAQapUrvajam#} {%den dem%}",
+        "<is>Ā.</is>",
+        "{%vorangehenden Monat sieht man für den%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:han",
+      "tag": "9",
+      "homonym": "nihan",
+      "events": 1,
+      "first_event": [
+        "{%mit gesenktem Tone%} <ab>d. i.</ab> {%mit dem%}",
+        "<is>Anudātta</is>",
+        "{%sprechen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:han",
+      "tag": "11c",
+      "homonym": "nihan",
+      "events": 1,
+      "first_event": [
+        "{%mit dem%}",
+        "<is>Anudātta</is>",
+        "{%gesprochen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:viS",
+      "tag": "1",
+      "homonym": "praviś (pra + viś), part 1/3",
+      "events": 1,
+      "first_event": [
+        "{%eingehen, eintreten; eindringen, sich verstecken; gerathen in; sich begeben zu, — unter%}: mit <ab>acc.</ab> und <ab>loc.</ab>: {#gf\\ham#}\n<ls>ṚV. 10,16,10.</ls>\n<ls>R. 2,42,22.</ls>\n<ls>KATHĀS. 12,101.</ls> <ls n=\"KATHĀS.\">18,255.</ls> <ls n=\"KATHĀS.\">64,54.</ls>\n<ls>PAÑCAT. 96,6.</ls> {#Bavanam#}\n<ls>M. 11,187.</ls> {#veSma#}\n<ls>MBH. 3,2144.</ls> <ls n=\"MBH. 3,\">2279.</ls>\n<ls>R. 2,26,5.</ls> {#praviSennarendraBavane kapotakaH#}\n<ls>VARĀH. BṚH. S. 46,68.</ls> {#veSmani#}\n<ls>RĀJA-TAR. 5,393.</ls> {#aSvakuwyAm#}\n<ls>PAÑCAT. 253,21.</ls> {#geham#}\n<ls>Spr. 990.</ls> {#mandiram#}\n<ls>KATHĀS. 18,399.</ls> <ls n=\"KATHĀS.\">42,156.</ls> {#maWam#}\n<ls n=\"KATHĀS.\">18,106.</ls> <ls n=\"KATHĀS. 18,\">318.</ls> {#parRaSAlAm#}\n<ls>RAGH. 12,40.</ls> {#antaHpuram#}\n<ls>M. 7,224.</ls> {#bilam#}\n<ls>MBH. 1,8394.</ls> {#Cidram#}\n<ls>Spr. 1884.</ls> {#puram, nagaram#}\n<ls>MBH. 1,8141.</ls> <ls n=\"MBH.\">3,2634.</ls> <ls n=\"MBH. 3,\">2853.</ls> <ls n=\"MBH. 3,\">3060.</ls> <ls n=\"MBH.\">5,7339.</ls> <ls n=\"MBH.\">13,7697</ls> (<ab>med.</ab>). <ls>HARIV. 7459.</ls> <ls>R. 1,18,18.</ls> <ls n=\"R.\">2,51,19</ls> (<ab>med.</ab>). <ls n=\"R. 2,\">86,19</ls> (<ab>med.</ab>). <ls>RAGH. 2,74.</ls> <ls>KATHĀS. 18,118.</ls> <ls>RĀJA-TAR. 5,451.</ls> {#nagare#}\n<ls>MBH. 5,7099.</ls>\n<ls>R. 2,59,13.</ls> {#ASramapadam#}\n<ls n=\"R.\">1,2,25.</ls> <ls n=\"R.\">2,64,7.</ls> {#saBAm#}\n<ls>M. 7,145.</ls> <ls n=\"M.\">8,1.</ls> <ls n=\"M. 8,\">10.</ls>\n<ls>VET. in LA. (III) 2,4.</ls> {#raNgam#}\n<ls>MBH. 3,2198.</ls> {#vanam#}\n<ls>R. 2,35,32.</ls> <ls n=\"R. 2,\">52,91.</ls> <ls n=\"R. 2,\">74,27.</ls> <ls n=\"R. 2,\">107,16.</ls> <ls n=\"R. 2,107,\">17</ls> (<ab>med.</ab>). <ls>ŚĀK. 32.</ls> {#SmaSAnam#}\n<ls>KATHĀS. 18,146.</ls> {#a\\paH#}\n<ls>ṚV. 10,51,1.</ls>\n<ls>R. 5,15,57</ls> (<ab>med.</ab>). {#samudram#}\n<ls>MBH. 1,3340</ls> (<ab>med.</ab>). {#jalASayam#}\n<ls>HIT. 43,20.</ls> {#sarasi snAtuM praviSati#}\n<ls n=\"HIT.\">12,2.</ls> {#rasAtalaM praviSate (viSeddevI#} die neuere <ab>Ausg.</ab>) {#paNke gOriva durbalA#}\n<ls>HARIV. 12343.</ls> {#hutASanam, agnim#} <ab>u. s. w.</ab> so <ab>v. a.</ab> {%den Scheiterhaufen besteigen%}\n<ls>MBH. 1,6908.</ls> <ls n=\"MBH.\">3,2863.</ls> <ls n=\"MBH.\">5,7388.</ls>\n<ls>R. 2,21,17.</ls> <ls n=\"R. 2,\">47,8.</ls> <ls n=\"R. 2,\">66,12.</ls> <ls n=\"R.\">3,51,29.</ls> <ls n=\"R. 3,51,\">41.</ls> <ls n=\"R.\">6,101,29.</ls>\n<ls>VARĀH. BṚH. S. 74,16.</ls>\n<ls>RĀJA-TAR. 4,368.</ls>\n<ls>MĀRK. P. 136,6</ls> (<ab>med.</ab>). {#vahnO#}\n<ls>PAÑCAT. 43,23.</ls> {#maDyamagneH#}\n<ls>MBH. 3,2610.</ls> {#citAyAm#}\n<ls>VET. in LA. (III) 14,1.</ls> {#mahAcamUm#}\n<ls>MBH. 5,5367.</ls> {#cakravyUham#}\n<ls>KATHĀS. 48,6.</ls> {#sArTam#}\n<ls>BHĀG. P. 5,13,19.</ls> {#viSo^ viSaH praviviSivAMsa^m#}\n<ls>AV. 4,23,1.</ls> {#praviSadBiH sEnyAdIn — DvANkzEH#}\n<ls>VARĀH. BṚH. S. 95,46.</ls> {#vihagAn — vawavfkze praviSataH#}\n<ls>KATHĀS. 26,26.</ls> {#atra, tatra#}\n<ls>MBH. 1,8382.</ls>\n<ls>Spr. (II) 2136.</ls>\n<ls>KATHĀS. 18,76.</ls> <ls n=\"KATHĀS. 18,\">172.</ls> <ls n=\"KATHĀS. 18,\">325.</ls>\n<ls>PAÑCAT. 97,16.</ls> {#nahi suptasya siMhasya praviSanti muKe mfgAH#}\n<ls>Spr. (II) 1249.</ls> {#uttarApaTam#}\n<ls>RĀJA-TAR. 5,214.</ls> {#udIcImASAm#}\n<ls>BHĀG. P. 1,15,44.</ls> {#pAdamUlaM me#}\n<ls n=\"BHĀG. P.\">3,25,43.</ls> {#vidvattA pratidinamaDo 'DaH praviSati#}\n<ls>Spr. 1802.</ls> {#bAhvorantaram#}\n<ls>MBH. 3,2861. fg.</ls> {#maDye tayoH#}\n<ls>PAÑCAT. 35,6.</ls> {#antare#}\n<ls>KATHĀS. 18,212.</ls> {#devasmitAntikam#}\n<ls n=\"KATHĀS.\">13,127.</ls> {#svEraM suptasya sahasEvAntikaM kiM praviSyate#} (so ist zu lesen)\n<ls n=\"KATHĀS.\">45,247.</ls> {#alaMkAravatIpArSvam#}\n<ls n=\"KATHĀS.\">52,31.</ls> {#mahIM SarAgryAH#}\n<ls>MBH. 3,15681.</ls> {#sAyakAH SarIrARi#}\n<ls>R. GORR. 2,91,15.</ls> <ls>RAGH. 3,54.</ls> {#BUCAyAM svagrahaRe BAskaramarkagrahaRe praviSatInduH#}\n<ls>VARĀH. BṚH. S. 5,8.</ls> {#samudramApaH, kAmA yaMm#}\n<ls>Spr. (II) 971.</ls> {#rasa^H pfTi\\vIm#}\n<ls>TS. 3,5,7,1.</ls> {#tama^H pA\\pmAna^m#}\n<ls n=\"TS.\">2,1,10,3.</ls> <ls n=\"TS. 2,\">4,12,6.</ls> {#puruzo 'SvaM prAviSat#}\n<ls>AIT. BR. 2,8.</ls> {#asurA yajYaM prAviSan#}\n<ls n=\"AIT. BR.\">6,4.</ls> {#patirjAyAM praviSati garBo BUtvA#}\n<ls n=\"AIT. BR.\">7,13.</ls> <ls>ŚAT. BR. 1,1,4,16.</ls> <ls n=\"ŚAT. BR.\">2,3,4,2.</ls> {#aTEnadvAkpraviveSa#}\n<ls>KAUṢ. UP. 2,14.</ls>\n<ls>BHĀG. P. 5,17,15.</ls> {#GaRwAmAbaDya karRayoH . mama na praviSennAma vizRoriti vicintayan#} {%der Name%}",
+        "<is>Viṣṇu's</is>",
+        "{%komme mir nicht zu Ohren%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:car",
+      "tag": "pw-T18-6",
+      "homonym": "car",
+      "events": 2,
+      "first_event": [
+        "{%übertragen, übergeben;%} mit <ab>Acc.</ab> der Sache und <ab>Loc.</ab> der Person. {#sumantrasaMcAritAkzara#} <lex>Adj.</lex> {%der dem%}",
+        "<is>Sumantra</is>",
+        "{%die Worte übergeben hat,%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:DA",
+      "tag": "mit_T110_1",
+      "homonym": "dhā",
+      "events": 1,
+      "first_event": [
+        "{%niederlegen, aufsetzen, auflegen, — auf%} (<ab>Loc.</ab>), {%ansetzen, anlegen%} (ein Messer <ab>u. s. w.</ab>), {%hineinstecken in,%} so <ab>v. a.</ab> {%einfassen in%} (<ab>Loc.</ab>). {#praRihita#} {%niedergelegt%} <ab>u. s. w.</ab>, {%aufgelegt auf%} (im <ab>Comp.</ab> vorangehend) <ls>BĀLAR. 265,3</ls>. {#veda˚#} {%im%}",
+        "<is>Veda</is>",
+        "{%enthalten,%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:nI",
+      "tag": "PW-prefix-T47",
+      "homonym": "nī",
+      "events": 1,
+      "first_event": [
+        "{%nach Jmd schöpfen, — füllen%} {#ho/tuScamasa/m#} {%nach Füllung der Schale des%}",
+        "<is>Hotar</is>",
+        "{%die seinige füllen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:yaj",
+      "tag": "pref-apa-1",
+      "homonym": "yaj 1",
+      "events": 1,
+      "first_event": [
+        "{%den%}",
+        "<is>Anuyāja</is>",
+        "{%darbringen%}"
+      ]
+    },
+    {
+      "entry_id": "pwg.entry:yaj",
+      "tag": "pref-sam-a-Kaus",
+      "homonym": "yaj 1",
+      "events": 1,
+      "first_event": [
+        "{%zusammen opfern lassen, die%}",
+        "<is>Patnīsaṃyāja</is>",
+        "{%machen%}"
+      ]
+    }
+  ]
+}

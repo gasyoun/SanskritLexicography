@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # The Routledge Handbook of Corpus Linguistics (Routledge -- O'Keeffe, Anne; McCarthy, Michael; -- Taylor & Francis (Unlimited), New York, NY, 2010 -- isbn13 9780203856949 -- 717caf1d4028a02014e69c33b4cce5f3 -- Anna’
 
 **Source:** `The Routledge Handbook of Corpus Linguistics (Routledge -- O'Keeffe, Anne; McCarthy, Michael; -- Taylor & Francis (Unlimited), New York, NY, 2010 -- isbn13 9780203856949 -- 717caf1d4028a02014e69c33b4cce5f3 -- Anna’.epub`  
@@ -30640,3 +30642,5 @@ Zurich English Newspaper Corpus (ZEN) [113](#ch020.xhtml_page_113)
 
 Zwier, L.J. [373](#ch040.xhtml_page_373)
 :::
+
+_Dr. Mārcis Gasūns_

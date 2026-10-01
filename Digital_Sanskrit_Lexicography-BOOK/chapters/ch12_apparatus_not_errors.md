@@ -1,6 +1,6 @@
 # Chapter 12 — Apparatus, Not Errors: How Monier-Williams Inherited the Petersburg Lexicon
 
-_Created: 13-07-2026 · Last updated: 13-07-2026_
+_Created: 13-07-2026 · Last updated: 17-09-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Apparatus, Not Errors:
 > How Monier-Williams Inherited the Petersburg Lexicon* (source draft:
@@ -10,7 +10,9 @@ _Created: 13-07-2026 · Last updated: 13-07-2026_
 > count and table below is carried over unchanged and regenerable from the committed forensic
 > suite
 > ([`scripts/forensic/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/scripts/forensic),
-> [`data/forensic/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/forensic)).
+> [`data/forensic/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/forensic)) —
+> with the single addition of §3.5's MW-unabsorbed census, regenerable from its own committed
+> builder (§7).
 > Only the framing has been converted from journal to book form — the abstract folded into the
 > opening, companion-paper labels remapped to this book's chapters, and the stemmatic and
 > comparative literature engaged at the monograph's depth. Section numbering is chapter-internal
@@ -128,6 +130,37 @@ independent Apte 0.42. MW did not merely consult Böhtlingk's sources; it assemb
 is structural, not lexical — the dictionary-archaeology analogue of the *Viermännerkommentar*'s
 recorded ordering (§1).
 
+**3.5 The unabsorbed residual.** Everything §3.1–§3.4 measures is the inheritance that
+*succeeded*; the Petersburg Nachträge — the seven supplement volumes that carried the headword
+inventory into the twentieth century — preserve a measurable record of what did not. A
+canary-locked census of the largest layer, volume 7 (35,581 entries), finds that beyond the
+**8,406** headwords it adds that are new even to the Petersburg main body, the unabsorbed
+material holds a class
+unlike any §3.1–§3.4 could see: **571 homonym-extensions** — words MW *already heads*, for which
+volume 7 records a further homonym that MW's main body never reaches. The worked example is
+*kārin*: the Nachträge give the word a third homonym (`pw.txt` line 620966, `7-331-d`) where
+MW's main body tops out at two; MW's own annexure does carry a *kārin* 3 ("scattering,
+destroying," from √kṛ) — but that is a different derivation altogether, a numbering coincidence
+the census refuses to score as absorption. Around the 571 the census
+sets the rest of the residual, each class already adjudicated in the workspace's forensic
+passes: **4,112** volume-7 words absent from *both* MW editions, **27** present in 1872 but
+dropped by 1899, **610** absorbed only as variant or fold-twin forms, and a **2,743**-word
+confirmed-missing residue from the starred sweep. The class is the exact negative space of
+§3.3: there, MW matched the Petersburg homonym divisions 64–77 % of the time on the deep splits
+both works carry; here, on splits only the Nachträge carry, the match fails outright —
+inheritance of *how to divide* is real, but it stops at the material Böhtlingk added last. Two
+clauses of honesty travel with the numbers. First, MW's `<h>` and Petersburg's `<hom>` numbering
+are not proven 1:1 comparable, and the 571 moves within a 498–626 band across defensible
+definitions of "extension" — the census reports the canary-locked main-body reading, not a point
+of dogma. Second, every figure describes the Cologne digitizations, not the printed page (the
+canary *kāritra*, `pw.txt` line 620963, reproduces from the digitized source alone), as §4.1's
+error list already does for its own source. The full layer-by-layer and part-of-speech tables
+are consigned to Appendix A; this chapter keeps its prose. For the inheritance verdict of §5 the
+census draws the boundary precisely: MW's debt to the Petersburg apparatus runs deeper than its
+grasp of the Petersburg *Nachträge* — the supplement's newest material is where the copying
+signal runs out, with 4,112 words never seen in either MW edition and 571 further homonyms left
+unrecorded on the other side of the ledger.
+
 ## 4. What MW did *not* inherit — the errors
 
 **4.1 The decisive test.** A scholar-curated list (compiled by M. Ahlborn with P. Scharf and
@@ -219,7 +252,12 @@ enough to leave no error behind.
 All figures regenerate from the forensic and content-lift scripts over the canonical `csl-orig`
 source, the CDSL corrections corpus, and the headword snapshot; per-run provenance travels in
 `.source.json` sidecars beside each dataset, and every reported number is walkable to its
-generator under the discipline of Chapter 2.
+generator under the discipline of Chapter 2. The one exception to the forensic suite is the
+MW-unabsorbed census of §3.5 (and Appendix A), which regenerates with
+[`mw_unabsorbed_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_unabsorbed_census.py)
+(deterministic, stdlib-only, ~8 s, committed beside its frozen outputs — the three census TSVs
+of [`HeadwordLists/`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md)
+the appendix tables reproduce verbatim).
 
 ## References
 

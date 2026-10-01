@@ -362,14 +362,20 @@ function renderProgress(d) {
     document.getElementById('cards').innerHTML = '<p class="note">progress_data.json not found.</p>';
     return;
   }
-  const v = d.lanes.verb, nm = d.lanes.nominal, st = d.store, cov = d.coverage, cor = d.corpus;
+  const v = d.lanes.verb, nm = d.lanes.nominal, st = d.store, cov = d.coverage, cor = d.corpus, tp = d.translation_progress;
   if (d.site_url) document.getElementById('sitelink').href = d.site_url;
 
   document.getElementById('cards').innerHTML = [
+    // H4342 (f): leads with actual translation output (promoted / target headwords,
+    // both lanes) -- distinct from the DCS-attestation card below, which measures
+    // scope-in-view, not work done, and stayed flat through a 41-day production gap.
+    (tp && tp.measured
+      ? `<div class="card"><b>${tp.pct}%</b><span class="sub">of target headwords translated (${fmt(tp.promoted)} / ${fmt(tp.target)})</span></div>`
+      : `<div class="card"><b>—</b><span class="sub">translation progress not measured this build</span></div>`),
     `<div class="card"><b>${fmt(st.senses)}</b><span class="sub">sense-rows translated (RU)</span></div>`,
     `<div class="card"><b>${fmt(st.roots)}</b><span class="sub">roots with translations</span></div>`,
     `<div class="card"><b>${fmt(v.promoted)}<span class="sub" style="display:inline;font-size:1rem"> / ${fmt(v.dcs_attested)}</span></b><span class="sub">verb roots promoted</span></div>`,
-    `<div class="card"><b>${cov.pct}%</b><span class="sub">of PWG is DCS-attested</span></div>`,
+    `<div class="card"><b>${cov.pct}%</b><span class="sub">of PWG is DCS-attested (scope, not translated)</span></div>`,
   ].join('');
 
   const vf = document.getElementById('verbfunnel');

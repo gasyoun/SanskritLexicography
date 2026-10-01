@@ -24,11 +24,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DCS = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'VisualDCS', 'src',
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+DCS = os.path.normpath(os.path.join(GITHUB, 'VisualDCS', 'src',
                                     'DCS-data-2026', 'conllu'))
 FILES = os.path.join(DCS, 'files')
 CHAPTER_INFO = os.path.join(DCS, 'lookup', 'chapter-info.xml')
-CLEAN = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'VisualDCS',
+CLEAN = os.path.normpath(os.path.join(GITHUB, 'VisualDCS',
                                       'visual', 'dcs_texts_clean.json'))
 OUT = os.path.join(HERE, 'dcs_lemma_renou.json')
 

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # PWG→RU LOD graph — OntoLex-Lemon + vartrans + PROV-O + LiLa lemma bank (E7 / H350)
 
 _Created: 08-07-2026 · Last updated: 13-07-2026 (H781)_

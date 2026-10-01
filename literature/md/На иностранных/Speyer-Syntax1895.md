@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Speyer, *Vedische und Sanskrit-Syntax* (1895)
 
 **Machine OCR** (RapidOCR/ONNX, 200 dpi, 54 pp) of the previously un-OCR'd image PDF. Expect artifacts: lost macrons/diacritics (ā ū ṛ ś ṣ ṇ → a u r s s n), ß→SS, two-column interleave, and noisy Devanagari. Use as a searchable text layer, verify against the source PDF before citing.
@@ -6085,3 +6087,5 @@ sonalia)124-- [28; I. P.plur.
 201, 204, 205 A.; (auf -ana !
 10 f.; 2. P. plur. 10 g; (Re- I Zwischensatz 294.
 blh. iniv, Lirry. svsteM
+
+_Dr. Mārcis Gasūns_

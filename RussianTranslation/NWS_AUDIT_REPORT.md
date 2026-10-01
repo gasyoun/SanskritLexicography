@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # NWS attribution-parser audit — cumulative report
 
 **Status: COMPLETE.** Every SLP1 section has been audited. Sections **b–z** are
@@ -144,3 +146,5 @@ Cyrillic initials (`Īdfkza…`, `ргаdA`, `араnI`, `расбpacati…`, `�
 `араbrU`). All 10 are non-SLP1 index artifacts and **none carries an NWS
 fragment** (0 NWS entries), so they are out of scope here; they are an index
 hygiene matter, not an NWS attribution one.
+
+_Dr. Mārcis Gasūns_

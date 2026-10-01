@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Pilot cost & scaling to the full dictionary
 
 ## 1. What the pilot actually cost
@@ -245,3 +247,5 @@ top-500 are costed as 1 unit but will be sense-chunked into K parts → K×); th
 are placeholders to verify against current pricing; and the cache figure models cached reads
 at ~0.1× input but **ignores the one-time per-window cache-write surcharge** (negligible at
 scale). None of this changes the Max conclusion; it only refines the API-reference figure.
+
+_Dr. Mārcis Gasūns_

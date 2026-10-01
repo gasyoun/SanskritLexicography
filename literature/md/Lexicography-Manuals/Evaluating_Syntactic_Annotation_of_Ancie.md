@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Evaluating_Syntactic_Annotation_of_Ancie
 
 **Source:** `Evaluating_Syntactic_Annotation_of_Ancie.pdf`  
@@ -1092,3 +1094,5 @@ verb or as case depending on a noun.
 
 Old World: Journal of Ancient AfricaDaownndloadEeud rfroamsBiraill.c(o2m0120/13)0/210-231212:54:55PM
 via free access
+
+_Dr. Mārcis Gasūns_

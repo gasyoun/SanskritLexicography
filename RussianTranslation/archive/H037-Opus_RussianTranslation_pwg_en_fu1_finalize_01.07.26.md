@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — finalize PWG→English FU1 (giant-heads → hard-flags → dashboard → Phase 2)
 
 **For:** a fresh chat with Max/Workflow access.
@@ -120,3 +122,5 @@ Ground truth = **faithful to the PWG German** (MW = cross-check only). `review_s
   merge [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/src/promote_en.py).
 - Schema: [`schemas/pwg_ru_final_card.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/feat/pwg-en-fu1-phase0/RussianTranslation/schemas/pwg_ru_final_card.schema.json)
   (EN path relaxes per-sense `required` in-code, not in the file).
+
+_Dr. Mārcis Gasūns_

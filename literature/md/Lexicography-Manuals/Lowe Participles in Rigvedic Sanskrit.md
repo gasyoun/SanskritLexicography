@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Lowe Participles in Rigvedic Sanskrit
 
 **Source:** `Lowe Participles in Rigvedic Sanskrit.pdf`  
@@ -17513,3 +17515,5 @@ Quantitative Historical Linguistics Barbara McGillivray and Gard Jenset
 Syntactic Change and Stability Joel Wallenberg
 The History of Negation in the Languages of Europe and the Mediterranean Volume II: Patterns and Processes
 Edited by David Willis, Christopher Lucas, and Anne Breitbarth
+
+_Dr. Mārcis Gasūns_

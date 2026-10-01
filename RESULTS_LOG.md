@@ -25,3 +25,5 @@ _Dr. Mārcis Gasūns_
 | SL §6 Cyrillic names | §495 | 61 IAST seeds / 47 pure-Cyrillic; rules unsafe |
 
 Handoffs: H1745, H1746, H1747. Model: Grok 4.5 (`grok-4.5`).
+
+_Dr. Mārcis Gasūns_

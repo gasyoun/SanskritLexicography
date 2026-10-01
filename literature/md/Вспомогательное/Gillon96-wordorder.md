@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Gillon96-wordorder
 
 **Source:** `Gillon96-wordorder.pdf`  
@@ -1840,3 +1842,5 @@ Staal, J. F. 1967 Word Order in Sanskrit and Universal Grammar. Dordrecht, Holla
 
 Series: v. 5). Tikkanen, Bertil 1987 The Sanskrit Gerund: A Synchronic, Diachronic and Typological Analysis. Helsinki, Finland: Finnish Oriental Society (Studia Orientalia: v. 62).
 39
+
+_Dr. Mārcis Gasūns_

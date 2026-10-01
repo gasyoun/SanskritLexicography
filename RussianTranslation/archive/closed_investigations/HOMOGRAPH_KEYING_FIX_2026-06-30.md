@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Homograph keying — FIXED (supersedes the handoff)
 
 **Date:** 2026-06-30. The homograph multiplication in the bridge preview is **fixed**, verified
@@ -47,3 +49,5 @@ Preview export (`--review-status ai_translated`) over a `dA`+`vah` fixture:
   redundancy (the assembled cards overlap) and is out of scope here — this fix targets the
   translation multiplication + the duplicate IDs. Collapsing redundant sibling entries is an
   edition-modelling choice for the renderer stage.
+
+_Dr. Mārcis Gasūns_

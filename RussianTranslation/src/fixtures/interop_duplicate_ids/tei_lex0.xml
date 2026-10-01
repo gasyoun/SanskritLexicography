@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc><titleStmt><title>G9 duplicate-entry-id fixture (#1798)</title></titleStmt><publicationStmt><p>Fixture, not a release artifact.</p></publicationStmt><sourceDesc><p>Hand-built: three entries, two sharing xml:id="pwg-ac" -- the shape measured 12,374 times in release/tei_lex0.xml.</p></sourceDesc></fileDesc></teiHeader>
+  <text><body>
+    <entry xml:id="pwg-a">
+      <form><orth>a</orth><pron notation="iast">a</pron></form>
+      <sense source="dict" n="koch"><def>первая буква алфавита</def></sense>
+    </entry>
+    <entry xml:id="pwg-ac">
+      <form><orth>ac</orth><pron notation="iast">ac</pron></form>
+      <sense source="dict" n="koch"><def>сгибать</def></sense>
+    </entry>
+    <entry xml:id="pwg-ac">
+      <form><orth>ac</orth><pron notation="iast">ac</pron></form>
+      <sense source="dict" n="fri"><def>to bend, a SECOND entry emitted under the SAME id</def></sense>
+    </entry>
+  </body></text>
+</TEI>

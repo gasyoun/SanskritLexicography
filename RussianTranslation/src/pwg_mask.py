@@ -26,7 +26,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
+PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 
 # untranslatable PAIRED spans (tag + content both go) — order matters.
 # Opening tags use \b[^>]*> so ATTRIBUTED tags (<ls n="ṚV.">…</ls>) are masked
@@ -96,10 +98,22 @@ ENGLISH_STRONG = re.compile(
     r'girdle|sleepy|lazy|fellow|terrestrial|latitude|mimic|conflict|'
     r'rind|fruit|boundary|passion|soft|down|homes|persons|hogweed)\b',
     re.I)
-# Shared/ambiguous short words — never alone sufficient for english_content.
-# Note: German "war" (was) and "an" (preposition) are deliberate exclusions from
-# any single-hit path; "a"/"of"/"and"/"or"/"with"/"as"/"one" need a second weak
-# or any strong hit.
+# Shared/ambiguous short words, split by homograph risk (H4312, measured
+# 07-09-2026: probe RussianTranslation/pwg_ru/h4277r/H4277R_PWG_MASK_PROBE_ENGLISH_GLOSS_07-09-2026.md).
+# "a"/"an"/"war"/"one" are frequent German/Italian homographs (Mangel an
+# Vertrauen, an demselben Tage, oltre a quindeci di, war = German "was") and
+# stay on the >=2-distinct-weak-hit bar from §464. "of"/"or"/"and"/"with"/"as"
+# have no comparable German-prose collision, so a single hit is sufficient —
+# without this split, 'equation of degree' (one weak hit: "of") fell through
+# to default_de/translate:True and was never masked (933-span blast radius).
+ENGLISH_WEAK_HOMOGRAPH = re.compile(
+    r'\b(?:a|an|war|one)\b',
+    re.I)
+ENGLISH_WEAK_SINGLE = re.compile(
+    r'\b(?:of|or|and|with|as)\b',
+    re.I)
+# Back-compat: union of both subsets, for any external reader expecting the
+# pre-split "weak marker" set as one pattern.
 ENGLISH_WEAK = re.compile(
     r'\b(?:a|an|of|or|and|with|as|one|war)\b',
     re.I)
@@ -164,8 +178,14 @@ def _has_german_markers(content):
 
 
 def looks_botany_binomial(content):
-    """Genus species (optional third epithet); reject ordinary German noun phrases."""
-    value = (content or '').strip()
+    """Genus species (optional third epithet); reject ordinary German noun phrases.
+
+    H4527 (23-09-2026): tags are stripped first (content kept). PW wraps its botanical and
+    zoological names in markup -- {%<bot>Hibiscus abelmoschus</bot>%}, 5 705 PW spans -- and
+    the anchored BINOMIAL used to fail on the leading tag, so the span went to the model
+    inline as German to translate instead of being masked like a bare binomial.
+    """
+    value = TAG_RE.sub('', content or '').strip()
     if not BINOMIAL.match(value) or _has_german_markers(value):
         return False
     return True
@@ -174,16 +194,20 @@ def looks_botany_binomial(content):
 def looks_english_content(content):
     """High-confidence English braced gloss (Wilson EN / engl. literals).
 
-    Strong English markers (or dual -ing forms) are enough alone. Weak markers
-    (a/an/of/and/or/with/as/one/war) need ≥2 distinct hits so German/Latin
-    residue does not take the english_content → translate:False path (§464).
+    Strong English markers (or dual -ing forms) are enough alone. Homograph
+    weak markers (a/an/war/one) need >=2 distinct hits so German/Latin residue
+    does not take the english_content -> translate:False path (§464).
+    Non-homograph weak markers (of/or/and/with/as) have no comparable German
+    collision, so a single hit already suffices (H4312).
     """
     value = (content or '').strip()
     if not value or _has_german_markers(value):
         return False
     if ENGLISH_STRONG.search(value):
         return True
-    weak = {m.group(0).lower() for m in ENGLISH_WEAK.finditer(value)}
+    if ENGLISH_WEAK_SINGLE.search(value):
+        return True
+    weak = {m.group(0).lower() for m in ENGLISH_WEAK_HOMOGRAPH.finditer(value)}
     if len(weak) >= 2:
         return True
     # Two distinct -ing tokens ("leaving, abandoning") without a listed lemma.
@@ -456,6 +480,22 @@ def _selftest():
     d = classify_pct_detail('Trapa bispinosa', '')
     check(d['gloss_lang'] == 'la' and d['rule_id'] == RULE_BOTANY_BINOMIAL,
           'LA binomial: %r' % d)
+    # H4527: a PW binomial wrapped in <bot>/<zoo> markup is still a binomial, and the
+    # masker hides the WHOLE span (tags included) and restores it byte-for-byte; German
+    # content inside or around the same tag stays German.
+    d = classify_pct_detail('<bot>Hibiscus abelmoschus</bot>', '')
+    check(d['gloss_lang'] == 'la' and d['rule_id'] == RULE_BOTANY_BINOMIAL,
+          'LA <bot> binomial: %r' % d)
+    for de_tagged in ('<bot>Moschus</bot>', 'Name einer <bot>Pflanze</bot>',
+                      '<bot>eine Art Hibiscus</bot>'):
+        d = classify_pct_detail(de_tagged, '')
+        check(d['gloss_lang'] == 'de', 'DE with <bot> markup: %s -> %r' % (de_tagged, d))
+    src = '*{%<bot>Hibiscus abelmoschus</bot>%}. {%Moschus%}'
+    masked, ph, st = mask(src)
+    check('Hibiscus' not in masked and '{%Moschus%}' in masked and st['pct_la'] == 1,
+          'mask hides the <bot> binomial span, keeps German inline: %r' % masked)
+    check(restore(masked, ph) == src,
+          'restore brings the <bot> binomial span back byte-for-byte: %r' % ph)
     # German Capitalized+lowercase must NOT be binomial
     d = classify_pct_detail('Name eines Baumes', '')
     check(d['gloss_lang'] == 'de', 'false binomial: %r' % d)
@@ -470,14 +510,28 @@ def _selftest():
     # Wilson + German content stays DE (WILS übersetzt … durch {%Honig%})
     d = classify_pct_detail('Honig', 'WILS. übersetzt durch ')
     check(d['gloss_lang'] == 'de', 'Wilson+German stays DE: %r' % d)
-    # §464 FP class: lone weak markers / German "war" must not take english_content
+    # §464 FP class: lone homograph weak markers must not take english_content
     d = classify_pct_detail('war', '')
     check(d['gloss_lang'] == 'de' and d['translate'], 'German war not EN: %r' % d)
-    d = classify_pct_detail('and', '')
-    check(d['gloss_lang'] == 'de' and d['translate'], 'lone weak and not EN: %r' % d)
     d = classify_pct_detail('an', '')
     check(d['rule_id'] != RULE_ENGLISH_CONTENT,
           'bare an not english_content: %r' % d)
+    # H4312: non-homograph weak markers (of/or/and/with/as) suffice on ONE hit —
+    # 'equation of degree' was default_de/translate:True and never masked.
+    d = classify_pct_detail('equation of degree', '')
+    check(d['gloss_lang'] == 'en' and not d['translate'],
+          'H4312 single-hit EN (of): %r' % d)
+    # H4312: homograph markers (a/an/war/one) still need >=2 distinct hits —
+    # German/Italian phrases must stay de/translate:True, not regress to EN.
+    d = classify_pct_detail('Mangel an Vertrauen', '')
+    check(d['gloss_lang'] == 'de' and d['translate'],
+          'H4312 homograph an stays DE: %r' % d)
+    d = classify_pct_detail('an demselben Tage', '')
+    check(d['gloss_lang'] == 'de' and d['translate'],
+          'H4312 homograph an stays DE (2): %r' % d)
+    d = classify_pct_detail('reich an Fasern, Schossen, Stengeln', '')
+    check(d['gloss_lang'] == 'de' and d['translate'],
+          'H4312 homograph an stays DE (3): %r' % d)
     # true English without cue still works via strong markers
     d = classify_pct_detail('terrestrial latitude', '')
     check(d['gloss_lang'] == 'en' and d['rule_id'] == RULE_ENGLISH_CONTENT,

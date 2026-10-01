@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-IMPORTANCE = {"🔴": 3, "🟠": 2, "🟡": 1}
+IMPORTANCE = {"🔴": 3, "🟠": 2, "🟡": 1, "🟢": 1}
 # layer key -> (the epistemic act it holds)
 LAYERS = [
     ("ASSUMPTIONS", "relying on an unproven premise"),
@@ -36,7 +36,7 @@ LAYERS = [
     ("GLOSSARY", "defining canonical terms"),
 ]
 ENTRY = re.compile(r"^### (.+?)\s*$")
-DOT = re.compile(r"(🔴|🟠|🟡)")
+DOT = re.compile(r"(🔴|🟠|🟡|🟢)")
 ORIGIN = re.compile(r"(⚙️|✍️)")
 STALE_ROW = re.compile(r"^\|\s*\[§(\d+)\]")
 STALE_FLAG = re.compile(r"(🔴|🟡|🟢|⬜)")
@@ -44,7 +44,7 @@ STALE_FLAG = re.compile(r"(🔴|🟡|🟢|⬜)")
 # uses `### §N.` ATX headings, the infra side uses inline `🔴 **§N.**` bold.
 FINDING_ATX = re.compile(r"^### §(\d+)\.", re.M)
 FINDING_INLINE = re.compile(r"^(?:🔴|🟠|🟡)\s*\*\*§(\d+)\.", re.M)
-IMP = {"🔴": 3, "🟠": 2, "🟡": 1}
+IMP = {"🔴": 3, "🟠": 2, "🟡": 1, "🟢": 1}
 
 
 def gh_slug(heading):
@@ -116,7 +116,7 @@ def _findings_index_importance(text):
     idx = rest[:nxt.start()] if nxt else rest
     out = {}
     for line in idx.split("\n"):
-        em = re.match(r"^\s*-\s*(🔴|🟠|🟡)\s*\[§(\d+)\.", line)
+        em = re.match(r"^\s*-\s*(🔴|🟠|🟡|🟢)\s*\[§(\d+)\.", line)
         if em:
             out[int(em.group(2))] = em.group(1)
     return out
@@ -211,6 +211,16 @@ def main():
                 "url": f"{args.repo_url}/FINDINGS.md",
                 "total": f_total, "by_importance": f_imp,
                 "by_origin": {"auto": 0, "human": f_total}}
+
+    # Loud refusal, never a silently empty page (H4353): a directory with no
+    # registry, or a FINDINGS.md that yields zero findings, is a wrong --dir or
+    # a broken file — not a dashboard with nothing in it.
+    if not layers and core is None:
+        sys.exit(f"REFUSED: no epistemic registry ({', '.join(k for k, _ in LAYERS)} or "
+                 f"FINDINGS.md) found under {root} — wrong --dir?")
+    if core is not None and core["total"] == 0:
+        sys.exit(f"REFUSED: {fp} parsed to 0 findings (no '### §N.' headings) — "
+                 f"malformed registry, not an empty dashboard")
 
     # verifiability (H1362) — the re-derivability class split over FINDINGS, if the sidecar exists
     verifiability = None

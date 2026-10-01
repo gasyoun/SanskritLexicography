@@ -64,3 +64,5 @@ applied here; see [A33_review_fable5.md](https://github.com/gasyoun/SanskritLexi
 for the existing hostile-review memo, which this checklist supplements rather than replaces.
 
 _Sonnet 5 (`claude-sonnet-5`), 11-07-2026, H666 dry run._
+
+_Dr. Mārcis Gasūns_

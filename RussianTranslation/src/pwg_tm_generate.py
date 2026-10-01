@@ -34,6 +34,7 @@ import pwg_tm_canonical as C  # noqa: E402
 import pwg_tm_fragmentize as F  # noqa: E402
 import pwg_tm_gates as G  # noqa: E402
 import pwg_tm_wave2_policy as W2  # noqa: E402
+from rt_io import append_jsonl, save_json  # noqa: E402
 
 ROUTE_ID = 'grok-4.6'
 MODEL_ID = 'grok-4.6'
@@ -99,7 +100,7 @@ FORMULA_RU = {
     'dgl.': 'то же',
     'sc.': 'т. е.',
     'scil.': 'т. е.',
-    'v. a.': 'т. е.',
+    'v. a.': 'особенно',
     'schol.': 'схолия',
     'sch.': 'схолия',
     'übertr.': 'перен.',
@@ -150,6 +151,32 @@ FORMULA_RU = {
 FORMULA_COPY = {
     'nom. act.', 'pronom.', 'impers.', 'simpl.', 'autt.',
 }
+
+# H3299: argument-slot placeholders must render placeholder-style RU,
+# never an invented verb phrase. H2684's independent gate convicted
+# `{%Jmd%}` -> «поручать кому-л.» (>=5 of 20 decisive rows): grok-4.6 drafted
+# the bare slot pronoun as the entry's verb, the wave-1 gate passed it, and
+# sense_merge then spread it into every sense of the entry (canonical.v1.jsonl
+# vas/yat/dA rows). Tokens harvested from the tracked corpus census
+# (wave1_b_slice + canonical.v1.jsonl spans): Jmd x209, Etwas x47, Jmdm x10.
+PLACEHOLDER_RU = {
+    'Jmd': 'кто-л.',      # jemand (nom.)
+    'Jmdm': 'кому-л.',    # jemandem (dat.)
+    'Jmdn': 'кого-л.',    # jemanden (acc.)
+    'Jmds': 'кого-л.',    # jemands (gen.)
+    'Etwas': 'что-л.',
+    'Etw.': 'что-л.',
+}
+PURE_PLACEHOLDER_SPAN = re.compile(r'^\{%\s*([A-Za-zäöüßÄÖÜ.]+)\s*%\}$')
+
+
+def placeholder_ru(source_string):
+    """Placeholder-style RU target for a PURE argument-slot span, else None."""
+    m = PURE_PLACEHOLDER_SPAN.match((source_string or '').strip())
+    if not m:
+        return None
+    return PLACEHOLDER_RU.get(m.group(1))
+
 
 TAG_STRIP = re.compile(r'<[^>]+>')
 PURE_LS = re.compile(r'^<ls\b[^>]*>.*?</ls>$', re.S)
@@ -213,18 +240,7 @@ def load_checkpoint(path):
         return json.load(f)
 
 
-def save_json(path, obj):
-    C.write_json(path, obj)
-
-
 _FID_RE = re.compile(r'"fragment_id"\s*:\s*"([^"]+)"')
-
-
-def append_jsonl(path, rows):
-    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
-    with open(path, 'a', encoding='utf-8', newline='\n') as f:
-        for row in rows:
-            f.write(json.dumps(row, ensure_ascii=False) + '\n')
 
 
 def load_seen_ids(out_dir):
@@ -331,6 +347,9 @@ def deterministic_target(fragment):
     klass = fragment.get('fragment_class')
     if not src:
         return None, None
+    ru = placeholder_ru(src)
+    if ru is not None:
+        return '{%%%s%%}' % ru, 'placeholder'
     if klass == 'citation' and PURE_LS.match(src):
         return src, 'copy:citation'
     if klass == 'example' and PURE_SA.match(src):
@@ -448,6 +467,10 @@ def apply_targets(fragments, drafts, reuse_index, source_lexicon=None):
         usage = {'input_tokens': 0, 'output_tokens': 0, 'cost_usd': 0.0}
         reuse_key = frag.get('reuse_key')
         hit = reuse_index.get(reuse_key) if reuse_key else None
+        # H3434: a denylisted source must never take an exact_reuse target —
+        # wave-1-carried rows are how {%an%}/{%einen%} verb phrases re-entered.
+        if hit and W2.is_denied_short_gloss(src):
+            hit = None
         if hit and hit.get('target_string') and hit.get('reuse_policy') == 'auto_exact':
             frag['target_string'] = hit['target_string']
             origin = 'exact_reuse'
@@ -479,7 +502,12 @@ def apply_targets(fragments, drafts, reuse_index, source_lexicon=None):
                     origin = 'unfilled'
         if (frag.get('fragment_class') == 'definition_gloss'
                 and frag.get('target_string')):
-            gloss_map[src] = frag['target_string']
+            ph = placeholder_ru(src)
+            safe = ph is None or (
+                (frag.get('target_string') or '').strip()
+                == '{%%%s%%}' % ph)
+            if safe:
+                gloss_map[src] = frag['target_string']
         pending.append((frag, origin, usage))
     for frag, origin, usage in pending:
         if origin == 'unfilled' and frag.get('fragment_class') == 'sense':
@@ -510,6 +538,8 @@ def reuse_index_from_publication(path):
         if frag.get('reuse_policy') != 'auto_exact':
             continue
         if not frag.get('target_string'):
+            continue
+        if W2.is_denied_short_gloss(frag.get('source_string')):
             continue
         index[key] = frag
     return index
@@ -1221,7 +1251,128 @@ def live_complete(items, batch_size=LIVE_BATCH_SIZE):
     return out
 
 
+def selftest_placeholder_fill():
+    """H3299 pin: the three known-bad wave-1 fragments
+    (wave1_b_receipt/adjudication400.jsonl ids 3e0c74c3…, e747ebfb…,
+    ff034285…) must freeze-and-fill to placeholder-style RU, a poisoned
+    draft must be shadowed by the deterministic rule, and sense_merge must
+    never inherit a verb-phrase target for a pure placeholder span."""
+    def mk(key, klass='definition_gloss'):
+        return {
+            'fragment_id': 'pin:%s' % key,
+            'fragment_class': klass,
+            'source_string': '{%Jmd%}',
+            'reuse_key': None,
+        }
+
+    frags = [mk('a'), mk('b'), mk('c')]
+    filled, stats = apply_targets(frags, {}, {})
+    assert stats['deterministic'] >= 3, stats
+    for frag in filled:
+        assert frag['target_string'] == '{%кто-л.%}', frag['target_string']
+        assert frag['generation']['origin'] == 'placeholder'
+    # poisoned draft is shadowed: deterministic precedes drafts
+    drafts = {
+        f['fragment_id']: {'fragment_id': f['fragment_id'],
+                           'target_string': '{%поручать кому-л.%}',
+                           'origin': 'grok-4.6-draft'}
+        for f in frags}
+    filled2, _stats2 = apply_targets(frags, drafts, {})
+    for frag in filled2:
+        assert frag['target_string'] == '{%кто-л.%}', frag['target_string']
+    # every placeholder variant maps, non-placeholders untouched
+    for src, want in (('{%Etwas%}', '{%что-л.%}'),
+                      ('{%Jmdm%}', '{%кому-л.%}'),
+                      ('{%verkehren, Umgang haben mit%}', None),
+                      ('zu Jmd', None)):
+        det, origin = deterministic_target(
+            {'fragment_class': 'definition_gloss', 'source_string': src})
+        assert det == want and (origin == 'placeholder') == (want is not None), \
+            (src, det, origin)
+    # gloss_map guard: a poisoned definition_gloss row never enters the map,
+    # so an unfilled sense containing {%Jmd%} cannot inherit the verb phrase
+    dg_poison = {
+        'fragment_id': 'pin:dg-poison',
+        'fragment_class': 'definition_gloss',
+        'source_string': '{%Jmd%}',
+        'target_string': '{%поручать кому-л.%}',
+        'reuse_key': None,
+    }
+    sense_with_slot = {
+        'fragment_id': 'pin:sense',
+        'fragment_class': 'sense',
+        'source_string': '— 6〉 {%Jmd%} (<ab>Acc.</ab>) {%betragen%}',
+        'reuse_key': None,
+    }
+    filled3, stats3 = apply_targets([dg_poison, sense_with_slot], {}, {})
+    dg_out = [f for f in filled3
+              if f['fragment_id'] == 'pin:dg-poison'][0]
+    assert dg_out['target_string'] == '{%кто-л.%}', dg_out['target_string']
+    merged = [f for f in filled3 if f['fragment_id'] == 'pin:sense'][0]
+    assert merged.get('target_string') == (
+        '— 6〉 {%кто-л.%} (<ab>Acc.</ab>) {%betragen%}'), merged
+    assert merged['generation']['origin'] == 'sense_merge', merged
+    print('H3299 placeholder-fill selftest OK: 3 pins, shadow, variants, '
+          'gloss-map guard')
+    return 0
+
+
+def selftest_denylist_no_fill():
+    """H3434 pin: no denylisted short-gloss source can produce any target
+    through the exact_reuse or source-lexicon fill paths, and the v. a.
+    formula renders «особенно». (Curated drafts remain the sanctioned
+    channel for eventually filling these spans by hand.)"""
+    import pwg_tm_wave2_policy as W2L
+    poisoned_reuse = {}
+    poisoned_lexicon = {}
+    frags = []
+    for i, token in enumerate(sorted(W2.SHORT_GLOSS_DENYLIST)):
+        src = '{%%%s%%}' % token
+        fid = 'pin:deny%d:%s' % (i, token)
+        frags.append({
+            'fragment_id': fid,
+            'fragment_class': 'definition_gloss',
+            'source_string': src,
+            'reuse_key': 'rk:%s' % token,
+        })
+        poisoned_reuse['rk:%s' % token] = {
+            'fragment_id': 'poison',
+            'target_string': '{%поручать кому-л.%}',
+            'reuse_policy': 'auto_exact',
+        }
+        poisoned_lexicon[source_lexicon_key('definition_gloss', src)] = (
+            '{%поручать кому-л.%}')
+    filled, _stats = apply_targets(frags, {}, poisoned_reuse, poisoned_lexicon)
+    assert len(filled) == len(frags)
+    for frag in filled:
+        origin = frag['generation']['origin']
+        if origin == 'placeholder':
+            # sanctioned placeholder-style render ({%Etwas%} -> «что-л.»)
+            assert frag['target_string'] == '{%что-л.%}', frag
+            continue
+        assert origin == 'unfilled', (frag['source_string'], origin)
+        assert not frag.get('target_string'), frag
+    # verb-phrase poison never survives on a bare function-word span
+    for frag in filled:
+        tgt = frag.get('target_string') or ''
+        assert 'поручать' not in tgt, frag
+    # H3434 formula repair: German v. a. = vor allem = «особенно», never «т. е.»
+    ru, key = _formula_lookup('<ab>v. a.</ab>')
+    assert ru == 'особенно' and key == 'v. a.', (ru, key)
+    det, origin = deterministic_target({
+        'fragment_class': 'recurring_formula', 'source_string': '<ab>v. a.</ab>'})
+    assert det == '<ab>особенно</ab>' and origin == 'formula', (det, origin)
+    # neighbours checked 24-08-2026: absent from FORMULA_RU, pinned absent
+    for absent in ('v. a', 'u.a.', 'u.a', 'u. a.', 'va'):
+        assert absent not in FORMULA_RU, absent
+    print('H3434 denylist/formula selftest OK: %d tokens unfilled through '
+          'exact_reuse+lexicon, v. a. -> особенно' % len(frags))
+    return 0
+
+
 def verify():
+    selftest_placeholder_fill()
+    selftest_denylist_no_fill()
     if DEFAULT_PRODUCTION_ROUTE is not None:
         return False, 'default production route must be unset'
     if prompt_sha256() != C.sha256_text(prompt_text()):
