@@ -114,6 +114,12 @@ HeadwordLists/heritage_mirror/
 # handoff; only data/shiva_sutras_pratyahara_ranges.{tsv,json} are committed.
 data/_raw_local/
 
+# H5279: Jev defgen rerank — the raw per-call JSONL and run log are regenerable
+# (2,500 live calls); the aggregate + per-item JSON and the dated report are the
+# committed evidence.
+data/defgen_jev_rerank/jev_scores_raw.jsonl
+data/defgen_jev_rerank/run.log
+
 # H264 review sheets (personal working artifacts, not repo deliverables) —
 # anchored to the repo root so the ACTIVE RussianTranslation/review/ stays tracked
 /review/
