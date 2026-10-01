@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Legacy Max Artifacts
 
 Archived on 2026-06-28 during production-window cleanup.
@@ -12,3 +14,5 @@ python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 The active runbook is `src/pilot/RUN_FREQ_MAX.md`.
+
+_Dr. Mārcis Gasūns_

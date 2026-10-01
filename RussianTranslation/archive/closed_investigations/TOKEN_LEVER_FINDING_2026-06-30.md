@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Token lever: portrait-slim is a non-lever; the real lever is batch budget
 
 **Date:** 2026-06-30 · **Context:** PROCESS_AUDIT rec 4 proposed "portrait-slim": strip
@@ -55,3 +57,5 @@ The harness was already lean on the dimension the audit targeted. The remaining 
 are: (a) this budget bump (shipped), (b) further budget tuning pending a retry-rate measurement,
 (c) the lean-TR trim (already tested twice and **rejected** for quality loss). There is no free
 portrait cut.
+
+_Dr. Mārcis Gasūns_

@@ -133,6 +133,9 @@ def main():
                     help='resolve keys directly as nominal cards instead of requiring a rootmap')
     ap.add_argument('--no-grammar', action='store_true',
                     help='pass --no-grammar through for nominal requeues')
+    ap.add_argument('--no-tm', action='store_true',
+                    help='H4527: regenerate without the TM for a transient requeue too (a '
+                         'defect-repair lease -- the card being re-made is in the TM)')
     ap.add_argument('--profile-slot')
     ap.add_argument('--config-dir')
     ap.add_argument('--executor-lane', default='serial-whole-card')
@@ -217,7 +220,7 @@ def main():
         cmd.append('--no-grammar')
     if lang != 'ru':
         cmd.append('--lang=%s' % lang)
-    if which != 'transient':
+    if which != 'transient' or args.no_tm:
         cmd.append('--no-tm')
     p = subprocess.run(cmd, cwd=os.path.dirname(os.path.dirname(HERE)),
                        text=True, encoding='utf-8', capture_output=True)

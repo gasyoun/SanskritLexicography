@@ -100,7 +100,7 @@ FORMULA_RU = {
     'dgl.': 'то же',
     'sc.': 'т. е.',
     'scil.': 'т. е.',
-    'v. a.': 'т. е.',
+    'v. a.': 'особенно',
     'schol.': 'схолия',
     'sch.': 'схолия',
     'übertr.': 'перен.',
@@ -467,6 +467,10 @@ def apply_targets(fragments, drafts, reuse_index, source_lexicon=None):
         usage = {'input_tokens': 0, 'output_tokens': 0, 'cost_usd': 0.0}
         reuse_key = frag.get('reuse_key')
         hit = reuse_index.get(reuse_key) if reuse_key else None
+        # H3434: a denylisted source must never take an exact_reuse target —
+        # wave-1-carried rows are how {%an%}/{%einen%} verb phrases re-entered.
+        if hit and W2.is_denied_short_gloss(src):
+            hit = None
         if hit and hit.get('target_string') and hit.get('reuse_policy') == 'auto_exact':
             frag['target_string'] = hit['target_string']
             origin = 'exact_reuse'
@@ -534,6 +538,8 @@ def reuse_index_from_publication(path):
         if frag.get('reuse_policy') != 'auto_exact':
             continue
         if not frag.get('target_string'):
+            continue
+        if W2.is_denied_short_gloss(frag.get('source_string')):
             continue
         index[key] = frag
     return index
@@ -1311,8 +1317,62 @@ def selftest_placeholder_fill():
     return 0
 
 
+def selftest_denylist_no_fill():
+    """H3434 pin: no denylisted short-gloss source can produce any target
+    through the exact_reuse or source-lexicon fill paths, and the v. a.
+    formula renders «особенно». (Curated drafts remain the sanctioned
+    channel for eventually filling these spans by hand.)"""
+    import pwg_tm_wave2_policy as W2L
+    poisoned_reuse = {}
+    poisoned_lexicon = {}
+    frags = []
+    for i, token in enumerate(sorted(W2.SHORT_GLOSS_DENYLIST)):
+        src = '{%%%s%%}' % token
+        fid = 'pin:deny%d:%s' % (i, token)
+        frags.append({
+            'fragment_id': fid,
+            'fragment_class': 'definition_gloss',
+            'source_string': src,
+            'reuse_key': 'rk:%s' % token,
+        })
+        poisoned_reuse['rk:%s' % token] = {
+            'fragment_id': 'poison',
+            'target_string': '{%поручать кому-л.%}',
+            'reuse_policy': 'auto_exact',
+        }
+        poisoned_lexicon[source_lexicon_key('definition_gloss', src)] = (
+            '{%поручать кому-л.%}')
+    filled, _stats = apply_targets(frags, {}, poisoned_reuse, poisoned_lexicon)
+    assert len(filled) == len(frags)
+    for frag in filled:
+        origin = frag['generation']['origin']
+        if origin == 'placeholder':
+            # sanctioned placeholder-style render ({%Etwas%} -> «что-л.»)
+            assert frag['target_string'] == '{%что-л.%}', frag
+            continue
+        assert origin == 'unfilled', (frag['source_string'], origin)
+        assert not frag.get('target_string'), frag
+    # verb-phrase poison never survives on a bare function-word span
+    for frag in filled:
+        tgt = frag.get('target_string') or ''
+        assert 'поручать' not in tgt, frag
+    # H3434 formula repair: German v. a. = vor allem = «особенно», never «т. е.»
+    ru, key = _formula_lookup('<ab>v. a.</ab>')
+    assert ru == 'особенно' and key == 'v. a.', (ru, key)
+    det, origin = deterministic_target({
+        'fragment_class': 'recurring_formula', 'source_string': '<ab>v. a.</ab>'})
+    assert det == '<ab>особенно</ab>' and origin == 'formula', (det, origin)
+    # neighbours checked 24-08-2026: absent from FORMULA_RU, pinned absent
+    for absent in ('v. a', 'u.a.', 'u.a', 'u. a.', 'va'):
+        assert absent not in FORMULA_RU, absent
+    print('H3434 denylist/formula selftest OK: %d tokens unfilled through '
+          'exact_reuse+lexicon, v. a. -> особенно' % len(frags))
+    return 0
+
+
 def verify():
     selftest_placeholder_fill()
+    selftest_denylist_no_fill()
     if DEFAULT_PRODUCTION_ROUTE is not None:
         return False, 'default production route must be unset'
     if prompt_sha256() != C.sha256_text(prompt_text()):

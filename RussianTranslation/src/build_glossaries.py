@@ -25,12 +25,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from build_src import iast_to_slp1, bad_initial
+from sibling_root import sibling_root
 
-DEFAULT_SM = os.path.normpath(os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'SamudraManthanam'))
+HERE = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_SM = os.path.normpath(os.path.join(sibling_root(HERE), 'SamudraManthanam'))
 SM = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SM
 DATA = os.path.join(SM, "Index", "lib", "x86_64-win64", "Data")
-OUT = os.path.dirname(os.path.abspath(__file__))
+OUT = HERE
 
 # filename in SamudraManthanam/Data -> our gate code
 SOURCES = [

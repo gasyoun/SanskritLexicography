@@ -28,4 +28,10 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
-      - run: python scripts/changelog_duplicate_bullets.py
+      # H3748 (W1, #1803 C8-3): run the checker through the evidence wrapper, so the
+      # green line names what it compared — and names the sibling changelogs it did NOT
+      # (this repo carries two in one version namespace; only the root is in scope).
+      # The checker itself is untouched: it is a copy of the canonical github-spine
+      # script, and the wrapper exists precisely so it stays byte-identical.
+      - run: python scripts/changelog_dupe_evidence_gate.py
+      - run: python RussianTranslation/src/pilot/gate_evidence.py --require changelog_duplicate_bullets

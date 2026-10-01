@@ -1,0 +1,1522 @@
+{
+ "schema": "pwg.tm.wave4.carried_fill_census.v3",
+ "pool": "h3434_wave3_out (gitignored, regenerable; $0 drafted=0)",
+ "rows_by_origin": {
+  "exact_source_reuse": 3081,
+  "sense_merge": 370
+ },
+ "distinct_carried_pairs": 188,
+ "agent_verdicts": {
+  "minor": 3,
+  "correct": 178,
+  "wrong": 5,
+  "suspect": 2
+ },
+ "sheet_items": 9,
+ "pairs": [
+  {
+   "source_span": "eine <ab>best.</ab> Pflanze",
+   "carried_target": "одно <ab>best.</ab> растение",
+   "n_rows": 128,
+   "example_fragment": "pwg.frag.v1:sense:d049e125e9ed0ada70d9cb06a41eabcd02f26f87382f4fd26f0f4f3f43e4a01e",
+   "key1": "DunDumAra",
+   "agent_verdict": "minor"
+  },
+  {
+   "source_span": "Nacht",
+   "carried_target": "ночь",
+   "n_rows": 24,
+   "example_fragment": "pwg.frag.v1:definition_gloss:10e23c8b014f1941f80f286ba6de5544aeed4241b19696060ce36aafc091f00a",
+   "key1": "kzap",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "die Erde",
+   "carried_target": "землю",
+   "n_rows": 18,
+   "example_fragment": "pwg.frag.v1:sense:d22b188cd5b41435df1490bd0fbbf0ee0d75c77b9f1dab26b4464b4801fe45ee",
+   "key1": "kuja",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Tod",
+   "carried_target": "смерть",
+   "n_rows": 18,
+   "example_fragment": "pwg.frag.v1:definition_gloss:26df79dfe2474480998cf75233fee068c6023965d205cca0155b49f193094c62",
+   "key1": "mfti",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Stadt",
+   "carried_target": "городу",
+   "n_rows": 14,
+   "example_fragment": "pwg.frag.v1:definition_gloss:41288c2c2ebf035450b47e7cb855248998968f78b3600179ad6083967ef56045",
+   "key1": "ganDarvanagara",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Sohn",
+   "carried_target": "сын",
+   "n_rows": 14,
+   "example_fragment": "pwg.frag.v1:sense:ec9190973029516030fe98e4c7fb7f011eb3df6ca9f73457db97337c9bd27280",
+   "key1": "tanUja",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Erde",
+   "carried_target": "земля",
+   "n_rows": 12,
+   "example_fragment": "pwg.frag.v1:definition_gloss:5bd2172c3d7e42adb0aa0fbcc4bd2d7a2d5ee8e672565283238f086f97b774f1",
+   "key1": "mOli",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "der Planet Mercur",
+   "carried_target": "планета Меркурий",
+   "n_rows": 12,
+   "example_fragment": "pwg.frag.v1:sense:10805425f8aadc739a5b1b68c86706791e05078f0d633e6860741bd7f62709be",
+   "key1": "roDana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gehörig",
+   "carried_target": "надлежащим образом",
+   "n_rows": 12,
+   "example_fragment": "pwg.frag.v1:definition_gloss:7cd47a8d6cc40d7a6adf6e4b3fbeb30a431331ae336b32e0d10c8c163777b81b",
+   "key1": "nEzAda",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Körper",
+   "carried_target": "тело",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:definition_gloss:d319084b19ecc02b46fa1179bde703b1eb530addba973e47b571bc94380b56a1",
+   "key1": "buDna",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "habend",
+   "carried_target": "от",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:sense:c4f97b91849d9dfe74ea9c2b89c31ac1d80151a5655cc82561b2aa67030168a9",
+   "key1": "dvika",
+   "agent_verdict": "wrong"
+  },
+  {
+   "source_span": "Jmd",
+   "carried_target": "кто-л.",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:sense:315f3fec72753cbbcf8bd5583ad278796e7ae5372deb5677d64b0084b8fbbf26",
+   "key1": "lap",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Wald",
+   "carried_target": "лес",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:definition_gloss:204a442d485348ce01dd537a1d5ef968c3fa8c698098be5ba1ba8b093f386725",
+   "key1": "dAva",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "ertönen",
+   "carried_target": "звучать, раздаваться",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c3b087795fd01f03d6be6edd251eb8033cceffd82f881f9b41101607e8d6a813",
+   "key1": "Guz",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Gesang",
+   "carried_target": "пение",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c0b9f6e62b9abf07148d045dc6aa89fc2c580a72eafcd73e326777865ba2a265",
+   "key1": "krOYca",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gehen",
+   "carried_target": "идти",
+   "n_rows": 10,
+   "example_fragment": "pwg.frag.v1:definition_gloss:8abe1692f448e975ada6aab46dd38ea04b13da6163d93482f112e88ef6614df1",
+   "key1": "urugAya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sich erheben",
+   "carried_target": "подниматься",
+   "n_rows": 8,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ed65994a7c5663a97a8e0f3d53eabe8dcff8ad70077c27deef01f5dcc32d56b1",
+   "key1": "ej",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Zuneigung",
+   "carried_target": "привязанность",
+   "n_rows": 8,
+   "example_fragment": "pwg.frag.v1:definition_gloss:d108d507f35a2ecc5bddb5763ab6bb0d035d1ea705bcce836fbecf60403ff71b",
+   "key1": "anumati",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "enthaltend",
+   "carried_target": "содержащий",
+   "n_rows": 8,
+   "example_fragment": "pwg.frag.v1:definition_gloss:f513c68540199bd543e7bd11b4376db7d8c52f0c1e4ca88896f3ddcd703e454a",
+   "key1": "DAna",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "geboren",
+   "carried_target": "рождённый",
+   "n_rows": 8,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c6f4f0b7e0844ced8c367b17c1686e7d2cf097246a44ed9970cc2035b16371d6",
+   "key1": "mfgaSiras",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "ununterbrochen",
+   "carried_target": "непрерывный",
+   "n_rows": 8,
+   "example_fragment": "pwg.frag.v1:definition_gloss:7ea8b0b36d39dc9f6f58a47803667ce77eaca8d8132ed39fa3ef7c828e58d2dc",
+   "key1": "saMtata",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Fischer",
+   "carried_target": "рыбак",
+   "n_rows": 8,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ef4945417689f98fc1bc074d36b7e83debb6f998d472513ef9ffaf4fb03ce898",
+   "key1": "DIvara",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verbunden",
+   "carried_target": "соединённый",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:definition_gloss:98464e2670019d9cb14cfd0485da4334fb62d743f43037453bee998588f6c6d4",
+   "key1": "zoqaSin",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "krank",
+   "carried_target": "больной",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:sense:7f4072c67a10e2ad1af540620cc90e895c45926bd025f70697072b844a9eef92",
+   "key1": "AmayAvin",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gehend",
+   "carried_target": "идущий",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:sense:02add1c2966a695cc1aa347c134ae6f035b15f16fe03e22b042aab15dde3a3c5",
+   "key1": "aDvaga",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zitternd",
+   "carried_target": "дрожащий",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:definition_gloss:64688db44cba820549476b88dd40c6ed3ba3ea6dd57c2b0367195870315d1c37",
+   "key1": "vepaTu",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Wunsch",
+   "carried_target": "желание",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:sense:1554de043c3f5402b5adcd56d88be949836aa855036841909b102e9c4f6d995e",
+   "key1": "aBikAma",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "ertönen lassen",
+   "carried_target": "заставлять звучать",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:definition_gloss:e1cff80dd4b6626e684b1178668807a8c7c5077d61f9ebe31e7a9a53bf707bb1",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verschwunden",
+   "carried_target": "исчезнувший",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:definition_gloss:39a8fc01333fe60f9fb1e7fe73ec9f567561458e8337689391437eecb5142468",
+   "key1": "antarDAna",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "trinkend",
+   "carried_target": "пьющий",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:definition_gloss:da49caf12cb1042b3a5812508c7cbc6646d06fc8a1ef1a76938a66c8ea3a52d5",
+   "key1": "pAvan",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Schmerz",
+   "carried_target": "боль",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:sense:e5dd7dc67de3975a445b12094b612006b7b2e2ef510b97eecb0cc3cb179c645f",
+   "key1": "ABIla",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "umwinden",
+   "carried_target": "обвивать",
+   "n_rows": 6,
+   "example_fragment": "pwg.frag.v1:definition_gloss:eac5b5ee776fd91f528711981948f27fda84ba2b7986a808a4607bdfd5f69af4",
+   "key1": "vezw",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Mund",
+   "carried_target": "рте",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:437a43f630b121281bb54ecd338e07962bc5102924ea90009e6b9f58c90e5dc7",
+   "key1": "pratIka",
+   "agent_verdict": "wrong"
+  },
+  {
+   "source_span": "steht",
+   "carried_target": "стоит",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:2a53cc9bdbe24e66896c2f1c6ef2251474d482899b6253d38e2104fb7098f962",
+   "key1": "cEtra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "geöffnet",
+   "carried_target": "раскрывшийся",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:0826f7361ffa8d6173c59c14bbafd8ad1d8f104261e6e5fd391bf4673d600f05",
+   "key1": "vikaca",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sprechen",
+   "carried_target": "обращаться (с речью)",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:32687a366f8902c5c19f45d3170f60b8af7ef91de7e7c3d792b2667fd414af14",
+   "key1": "lap",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sich unterhalten",
+   "carried_target": "беседовать, разговаривать",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6f9020f2eee0aea5b5ad74a828aab57af7ee4592f31d159d1ca7343fa619fd2a",
+   "key1": "lap",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "ausrufend",
+   "carried_target": "восклицая",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:b16c2d753cb9b195bb1229378efe8efb643a282cea3fde8d90b0cf9d08734c7a",
+   "key1": "hAhAkfta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "in Bewegung setzen",
+   "carried_target": "приводить в движение",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6be2326e165287d019ca916ee4c82ed2fe56925361a31a9b5f31c740ab57f083",
+   "key1": "ej",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Bewegung",
+   "carried_target": "движении",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:152aa4a2ee90b142d02fdeb63f653f271434259f58fd7b6c637938d27838d5b7",
+   "key1": "spandana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sterben",
+   "carried_target": "умирать",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c88df5bc74c39a0e41fba196c176527b41b8261b1a225cbcf045f1a30eb9dc1d",
+   "key1": "mahApaTa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "unangefochten",
+   "carried_target": "неоспариваемый",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ff37e921372ea4381ce798170db42e6f884395624aa77c661faae87e11b361c6",
+   "key1": "pratIGAta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "froh",
+   "carried_target": "радостный",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:d6d7e27b945dfd7635c56366b6b671ba2993fc03be3d9d2b5ef6d149f7de2136",
+   "key1": "Anandin",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Lebensunterhalt",
+   "carried_target": "средства к существованию",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:95382816d86ecb2a95454b30a0af3deb60a365872e74c315613c32828426fdd3",
+   "key1": "jIvaka",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zertheilen",
+   "carried_target": "расчленять, разделять",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:fbcb01634e77e346cf307dc6b4871816c90606b868b2619c93ce14cda8d7ebdb",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Jmd anführen, betrügen",
+   "carried_target": "водить кого-либо за нос, обманывать",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:7f1479d25ebebcd1cee0ac4841873ff69b07731d7d7eb870362dd4933bdc4a03",
+   "key1": "vaYcana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "die Bewohner von",
+   "carried_target": "жители",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:7647d1ef39d844e5515f514de83e7057a5225f21fac68b4584a9082c07edd527",
+   "key1": "paYcanada",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Gattin",
+   "carried_target": "супруга",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:1b6373d54bc666993d960c8e05084b865ad1e48800aafcf556b0c0bdffe806c9",
+   "key1": "BArya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gestorben",
+   "carried_target": "умерший",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:54e86d2d0cb7fd106d7266c7b351599e0364a1007bc757a0992762ae2bacf9a5",
+   "key1": "svargata",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "alt",
+   "carried_target": "возраста",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:67199bfcab5b717e28713f4ca718136c8d36aff58040ebb4cf7e604aa4f2f97f",
+   "key1": "sana",
+   "agent_verdict": "wrong"
+  },
+  {
+   "source_span": "sein",
+   "carried_target": "быть",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:882ecaac30b1eb34759ea7c9e93b65a5a82a467af8a9add5d99e12fa9379a50d",
+   "key1": "Bavya",
+   "agent_verdict": "wrong"
+  },
+  {
+   "source_span": "Schutz",
+   "carried_target": "защита, охрана",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c700f909b02480e62e7daaca283fcba9e211abc6d48d39c074ac45a7c0c94ff4",
+   "key1": "pITa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "wenig",
+   "carried_target": "мало",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:c3f6fae2d1f5c57e6a1bdd3f9f7ddd72f33f4c273c2565e45e8f0b767497bd6a",
+   "key1": "am",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Blüthe",
+   "carried_target": "цветок",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:89a4cafa9cd5f28e4e76cc492f35dd22176b48bec7d5f2fe8d49f7da69b598bb",
+   "key1": "bakula",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "fliessend",
+   "carried_target": "текущий",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:cf73d5e443659e0ea9a50aefe0f25ffa164223bca5b527d1ed72c58601c395ee",
+   "key1": "snu",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "begleitet von",
+   "carried_target": "сопровождаемый",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:e945d9fa8bff3b1fccf89c117e7087f9bc87ba55f5b766c823f386bb2e0982cc",
+   "key1": "sacABU",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "unbeweglich",
+   "carried_target": "неподвижный",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:060ffba64b3e20dc205b0afa52016b08802a8a42ae939fd42426f5386a267ae1",
+   "key1": "nizpanda",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "ein <ab>best.</ab> Opfer",
+   "carried_target": "совершать",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:sense:aef089e2be07da2156d335a411d16168751993b3dc9751cb792c3e85e693e2b8",
+   "key1": "udBid",
+   "agent_verdict": "wrong"
+  },
+  {
+   "source_span": "ersticken",
+   "carried_target": "гасить, заглушать",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:27736ed856b368160fcbc1ae11eb1b2884388ca9c5d1bfebfc5b4e262cbd9d51",
+   "key1": "tam",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "befreiend von",
+   "carried_target": "освобождающий от",
+   "n_rows": 4,
+   "example_fragment": "pwg.frag.v1:definition_gloss:208fa2c5eb74e61bceb1b8f99a92bf38b382a409a9abd90473f6b7c74506f89f",
+   "key1": "vimokzaRa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "dass",
+   "carried_target": "что",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:489d93226bada77b8ec0812e28824dcdbeb609bff86647c863dbfba52c87469b",
+   "key1": "ta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "feindselig",
+   "carried_target": "враждебный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ee27d1896edecf6e9458a32871ed73af7800985abb2c835db1f5b5c248c0ec65",
+   "key1": "vErin",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "tragen",
+   "carried_target": "нести",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:b986d1c9d3516d94e8d072e60803c84f4e8f6e882824870f2a07d8f933828ea1",
+   "key1": "DAnA",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "eingeschlafen",
+   "carried_target": "уснувший",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:14b2f4c5c53a256f5e246b01fb9930af5f8ea608cb1e94e772b5a1ce996364ee",
+   "key1": "svApa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "das Reinigen",
+   "carried_target": "очищение",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:3e9f43630493fdbbc6f7b3ba3fc41a86abb100430407f540a34d915905773561",
+   "key1": "saMSoDana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "freudig",
+   "carried_target": "радостно",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:a641e9e32edcc158d9f8a38bfd6b8dd7174e7f5f811220e315fcb1583c80eef3",
+   "key1": "sUnfta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "aufgeblüht",
+   "carried_target": "расцветший",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:550ed1c83fed0787022322e510824ceec52b5b8448f9d42bbe312eab1650f118",
+   "key1": "vinidra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zu Jmd",
+   "carried_target": "к кому-л.",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:cf6712bde5bd28e9f1747f01aae9aa2c3d2c3c3fedf30bf387fad13e54090f5a",
+   "key1": "lap",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "werfen",
+   "carried_target": "бросать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:acd3eeb127c1877c7de8d6fbd0238ed036ff97806c5fcc59b26bae1840e6fbd4",
+   "key1": "kzap",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "vertraut mit",
+   "carried_target": "знакомый с",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:08865d0dd8beb7d25fdcac0446f4eee01a338a5b140f94d4598e2b2cb26557ef",
+   "key1": "tajjYa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "berühren",
+   "carried_target": "касаться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:4c8e6df43cbb420c7d3df0d7f65f513e4fb3732d87cad689b059389bd49cc5bc",
+   "key1": "luW",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "tödten",
+   "carried_target": "убивать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:58b12e694ef9d4da56cb96252cf08f87e49b6fc671fad64caf6c3377a228be10",
+   "key1": "Guz",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "essen",
+   "carried_target": "есть",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c9a18d0e5ebe51c3db447714ad5990548b5fd30880e84a9dad7e47c17473e6a0",
+   "key1": "samad",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "nicht vorhanden",
+   "carried_target": "отсутствующий",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:237afce6df24684de8ec24e44f239586cacde9d61cb2176e6b99256b8cffdfd3",
+   "key1": "avftti",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "entfernen",
+   "carried_target": "удалять",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:e6cece96ea55d54f773049bf9973fa3159353e2e90b85190d8f9b0ea0dee7150",
+   "key1": "vidUra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "behaftet",
+   "carried_target": "поражённый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:40b10e26727c1fddbf29f08c4f582a37ce7892c143c85d2c3e1da3aa048a8205",
+   "key1": "tEjasa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "züchtigen",
+   "carried_target": "наказывать, карать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6b5f64672c51eccca9fc52bc9cf0003b9cd16954abfe95967d0d2938e25f474d",
+   "key1": "uz",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "bekannt",
+   "carried_target": "известный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:9414285b03479e64ff5afc7274a5a65db2ea1d8b39e759ed02731f8b80e750a9",
+   "key1": "vEdika",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sich nähern",
+   "carried_target": "приближаться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:0dde1223e62f86d107694ac0e8dc3193fd58d392461f8bbdeb7c4ddd61519c30",
+   "key1": "nikawa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "einen Wandel erfahren",
+   "carried_target": "претерпевать перемену",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:d17c6c08b548584ad9b6a72f6348dd651a3c632095ea8b3e31931e5885200b0c",
+   "key1": "vikaraRa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "ruhig",
+   "carried_target": "тихий, спокойный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:0a7359fd875b4045c816155cf653da4d72bf71947329246b661638132bd88bfc",
+   "key1": "svEra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verhasst",
+   "carried_target": "ненавистный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:525cf36b8dd8e4e3064a5852ffe1d09cc98e13f3fc9a3527cbcefb12ad31b494",
+   "key1": "niHsneha",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "herbeischaffen, verschaffen",
+   "carried_target": "доставлять, добывать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:6b222bf8a672f41afc29d79527753a604926d066987ad29da0dfedc6d9df0706",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sich verschaffen",
+   "carried_target": "добывать для себя",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:6b222bf8a672f41afc29d79527753a604926d066987ad29da0dfedc6d9df0706",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "erheben",
+   "carried_target": "поднимать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:d588e0e362500ca49c012db47d028890b4ab6b28a36f715760537d88a1d66cdc",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "herausbringen",
+   "carried_target": "извлекать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:2cd38402a18b0b70cb90b231b184b02b8c3abfc04f16cf7a68d7a0184e2f6f8b",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "geschleudert",
+   "carried_target": "брошенный, метнутый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:5efe58dc03d67866f62c9db24a19e895c9db0d4d32c0e5076d0241f192498bc8",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "aufsetzen",
+   "carried_target": "ставить",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:446b8b7c715c9af418b1b15a2d4b0d251fe9575d9840185a65906bd90655da6d",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verleihen",
+   "carried_target": "даровать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:5576eecf22b8b94df3a678dfc4835dd16502ac1bce91ed8bca52422747b899a8",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "genannt werden",
+   "carried_target": "называться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:fbcb01634e77e346cf307dc6b4871816c90606b868b2619c93ce14cda8d7ebdb",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "herbeischaffen",
+   "carried_target": "доставлять, приносить",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:fbcb01634e77e346cf307dc6b4871816c90606b868b2619c93ce14cda8d7ebdb",
+   "key1": "Ir",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "angewiesen",
+   "carried_target": "получивший указание",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:cbca177a275318eea8e84ffc5427809c26756cd0459287ecb8bddaba9ce4f8ad",
+   "key1": "Sizwa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zu einem Stelldichein",
+   "carried_target": "на свидание",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:7fe7ca0e1f798e7c29ca447bde64ba79d1a3fdcf2056245b59d665b6622b6458",
+   "key1": "saMketa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "binden",
+   "carried_target": "вязать, связывать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:701aca3a137c54201610ea63ad1b5448f96cb69f5d4b20c54879350e5d89a7a0",
+   "key1": "gfDrasI",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "hat",
+   "carried_target": "воодушевил",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:2d1fa83cd60af0861682bd86bb2496cf076d625033bc3cf4dfd83cf7c7cca2cc",
+   "key1": "susTita",
+   "agent_verdict": "suspect"
+  },
+  {
+   "source_span": "von Etwas",
+   "carried_target": "утверждать о чём-л.",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:2d21a99f2902137c006cf3682fbff869fcd7bc9670dc679c33083f2386320464",
+   "key1": "day",
+   "agent_verdict": "suspect"
+  },
+  {
+   "source_span": "trocken",
+   "carried_target": "сухой",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:c93e55fc1c54fe2a8bab61078886214fcc687bea1ba7796daa9dfc54b5a557ac",
+   "key1": "awwa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "erschlafft",
+   "carried_target": "ослабевший",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:93bdfec902077b491f8de2127dec79ade8cd14e7ad10d57550451a9db1e656b5",
+   "key1": "mlA",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "opfernd",
+   "carried_target": "приносящий жертву",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ffd378f61f001abff3814dbb56ad1fb28ca5e5f5e43875ac6252062e11f22cb6",
+   "key1": "yajizWa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zertheilend",
+   "carried_target": "разделяющий",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:573d21be522a28103f16d7ca8ed2ab41a4ab52c6c725d7753900937bcc207895",
+   "key1": "Sakala",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gebunden, gefesselt",
+   "carried_target": "связанный, скованный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:8bdf0be02744d63282b9952d87d8d95cc2d03b5a02c0a8e5d2e4bf3c1cf9e4ac",
+   "key1": "yantray",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "weich, schmiegsam",
+   "carried_target": "мягкий, гибкий",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c9ca0173711e9001df161e65a66591624ae79d244244bf3dc5c49e06794c51ec",
+   "key1": "SAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zahm, mild, freundlich",
+   "carried_target": "кроткий, мягкий, благоприятный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ca9ce819d33ca79ffc2fdd48a20bd580e8817be60acd4aadebbb1b15ca058961",
+   "key1": "SAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "wild, der Ordnung widerstrebend",
+   "carried_target": "дикому, противящемуся порядку",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:1d1f684be2ccdb917a4fc017bf1c882dc4bd0aa48fcb9f1ca8808f23268a9c47",
+   "key1": "SAnta",
+   "agent_verdict": "minor"
+  },
+  {
+   "source_span": "erloschen",
+   "carried_target": "угасший",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:9dfdbb6f1d5329a48e94fd966c9dbec16b0a0b26fa070534043b5791c2f678eb",
+   "key1": "SAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "nachgelassen, aufgehört, gewichen",
+   "carried_target": "ослабший, прекратившийся, отступивший",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:3e2897abb55b095e474127e17d09d9a07a0617cecb25c6737efeb6c8a06a175e",
+   "key1": "SAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "behüte Gott! bei Leibe nicht!",
+   "carried_target": "упаси Бог! ни в коем случае!",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:a46a250c9cae6c45b8201633e22e4fb0ffb4936c24ecef5b5aef9297d69c452c",
+   "key1": "SAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "so wahr mir Gott helfen möge!",
+   "carried_target": "да поможет мне Бог!",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ea6841ab4a7d58496bfbc4eaf924f133d2de3b63b5d268bd334389fe592f0f2e",
+   "key1": "SAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "das Volk der",
+   "carried_target": "народ",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:d02e558c0e22de4d66d7337c4622087734c56277909483006c1063becbd5c34c",
+   "key1": "nEzAda",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "beruhigt",
+   "carried_target": "успокоенный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:f977a949d4f60595182de009f0d5b385ac1fb2f6a6dd6de6825e9812f7ace3a2",
+   "key1": "vIta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zu Nichte machen",
+   "carried_target": "уничтожать, сводить на нет",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6549b767c905b2c01f9b7b0317250cd7efbd51fdbbbbc3f42f98250a57df0e86",
+   "key1": "vilaya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verkehren mit",
+   "carried_target": "общаться с",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:4b8045b9fc826cb0da4a3bdb7c19f7a2b25ccec769c81ef64331c17662720a9c",
+   "key1": "samyaYc",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "das Richten der Aufmerksamkeit auf Etwas",
+   "carried_target": "направление внимания на что-либо",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:3f973576ac4f8b3a34423bf017d436b93e49c984eb82ee54324f30eb521d25a6",
+   "key1": "anusaMDAna",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verletzen",
+   "carried_target": "кусать, ранить",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:8c81fb4187425591bd120ab20c9f1b78c079b89d9dd654939e3847892ae772a6",
+   "key1": "tur",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Trommel",
+   "carried_target": "барабан",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:7f8d1ad81a3ebecde2f2b5f68db1e8cbcdf7905d56cd57d92b61fd7dda5dde5d",
+   "key1": "pattana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "bedeckt mit",
+   "carried_target": "покрытый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:b57cb83fd99995b3a413f172679ed0b1a9f583156e30476f7b8c0b68dd08e887",
+   "key1": "Avila",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Wunsch, Verlangen",
+   "carried_target": "желание, стремление",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:4e228240b4c7f1a88d5f11376cd0b3a5351b277b3ed085c2b436d9a8aa73ba24",
+   "key1": "hfcCaya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sich verbünden",
+   "carried_target": "вступать в союз",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:536fc6e8d59c5e9b2fbe209a3a0584a06717e94dd2dd4e5129981d310336e095",
+   "key1": "am",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "angelegt",
+   "carried_target": "устроенный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:0410ba393a40adfb9cf05a9e920701c3e23e8319e91635f43ffcaededaa8a82a",
+   "key1": "dAnta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "vollständig",
+   "carried_target": "полностью, совершенно",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:720eaa86e2e28a668918fc7b5f2b7bd1e81a005efde15cc1b66ade9b9138e2fd",
+   "key1": "kArtsnya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "unaufhaltsam, unwiderstehlich",
+   "carried_target": "неудержимый, непреодолимый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6d4a06169cdf7f2d4c4be04d2d8e24fa9ce313f20fc5173f5f3b0e2c563d32fb",
+   "key1": "aDrigu",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Pfand",
+   "carried_target": "залог",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:579cb3536d0c1ab1243150e01701ee5093066435713e5839b55e884d85f4e53b",
+   "key1": "ADeya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verscheuchen",
+   "carried_target": "отгонять",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:077bbdf0fbf64fb7f68e4f46d102fd4791ee59b1ececb0c6e20f14a4dcd56a66",
+   "key1": "vij",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "erschrecken",
+   "carried_target": "испугаться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:d1c2292655cbcbc416c728d3d09bb61e2e4f548ee04fc33675d884acac6ff149",
+   "key1": "vij",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "geehrt",
+   "carried_target": "почтённый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:55ae945368387b4bce4be253a415efae54d05cdb7e59712b928c9c8ee395d919",
+   "key1": "yaSasya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Speer",
+   "carried_target": "копьё",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:5b458e1f5e9c6cbe407a951ed141fff92eb80a6eb0355383c54205069e6e6f2e",
+   "key1": "Saru",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "der dem",
+   "carried_target": "тот, кто",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:1a9faf30a1f248e291a383f5384beb18479e4765c6b758e6d968bda9a6b4e37d",
+   "key1": "nirukta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "bersten",
+   "carried_target": "трескаться, лопаться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:748fb815e57ef5852f767109098f500ca7c042ef26bfa7accf6fbc574bc0c3ef",
+   "key1": "dadru",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zusammenkommen, sich vereinigen",
+   "carried_target": "сходиться, соединяться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:30ad0f6c6e2df254ae3d9b99a372267cfe3b78c4e18a5deec0fba4a189983dad",
+   "key1": "nas",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "unfehlbar",
+   "carried_target": "безошибочный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:9f57ec40e5b5454bc58db23c57e5037124f776db8295167d1c3c503fbabb5a1b",
+   "key1": "nirapAya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Verbindung",
+   "carried_target": "соединение",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:4c26d5d87099d622733fb3f539d61e0b227f71a55622e542a8f3b00b5bc55043",
+   "key1": "saMhanana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gebunden",
+   "carried_target": "привязанный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:664edd64b541c1f236cd12355c4c3afa7da9e08b9e3b655cd47dc6b9548f05db",
+   "key1": "si",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verbunden mit, begleitet von",
+   "carried_target": "связанный с, сопровождаемый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6a4a42c0d55d519e6ff14ef013d6ccd37da8a5cfb86b4e145aadb8a5c7e32390",
+   "key1": "si",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "schleudern",
+   "carried_target": "метать, бросать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ca111f9d1be5e54a96e9907a5a6ad657a104c8cb12c8c4bedc9b01aabe3497a1",
+   "key1": "si",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "durch die",
+   "carried_target": "посредством строфы",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:27d142ce4dac1b75588b01c578648c2a6c3b0b41b5193eb2ad01c306f33cfcb0",
+   "key1": "sAvitra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "sich nicht bewegend",
+   "carried_target": "не движущийся",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:725369e314755c013a5b62d723d07545edc54227b2d6d3720abf0738dabc2902",
+   "key1": "nizpanda",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Art, Species",
+   "carried_target": "вид, разновидность",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:2c01d46f7459ce770a6080ef3724bb5aaa257c9de5cca56290440a9eb10628bd",
+   "key1": "BidA",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "erlangen",
+   "carried_target": "получать, достигать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:9ac60c1fbc7c8095203c1c833ff4cc38918cef4aaacb58d66e9759675078e5e8",
+   "key1": "vanus",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verheirathet",
+   "carried_target": "выданная замуж",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:7850126597bb8ba9abfcf3cebd08a8d934295acae3d18454d821f555bbe2813c",
+   "key1": "kftadAra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gebildet",
+   "carried_target": "образованный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:997256f1524a36de9912cf9cf4ad2b12b24b2a4f9c0fcd102dbde35b33543003",
+   "key1": "pAwala",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "singen",
+   "carried_target": "петь",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:8769bafeaaea8676667e4f727c7e77fbc7a06eed5b1ad95f7d247519a01b797e",
+   "key1": "gAya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Spielball",
+   "carried_target": "мяч",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:3012e41ac75828c768f8cbb6ed649d58591dafab2920b44bf6f1910d2cbacd37",
+   "key1": "kanduka",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verlassen",
+   "carried_target": "покидать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:b21518885907aea9a4b08dd4e0d4045c4601cfeca77740cac78295ceba90a8bb",
+   "key1": "hIna",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Ziel",
+   "carried_target": "цель",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6f36475dc9c0579d28bf0b036560e8d303c02526a6dd81d1c2e842c78555ede0",
+   "key1": "tAtparya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "stehend in",
+   "carried_target": "стоящий в",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:25072f4e51dacfd3ef14889a50737959fa9c59a8e01fe6589de2501b6740adb2",
+   "key1": "upaga",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Theil",
+   "carried_target": "часть, доля",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:0ba739e830f5f170eb94440e76db40149e0b8564c16118e3722921616d67fc54",
+   "key1": "praviBAga",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "dienen",
+   "carried_target": "служить",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ae0afbb001860f65a4ebacec44e3dc94f4d990ef1682a45902b2243a69bf473b",
+   "key1": "aram",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Berühmtheit",
+   "carried_target": "известность, слава",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:b97dac74952edd16e3990c2f02b84fcb3ce8f2925767ab1a08730e609d36c41d",
+   "key1": "Ayoga",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "aufregen",
+   "carried_target": "возбуждать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:a705dda51418c03f438d90c79a2105b126b390f1a0c26e0e8715c700f2d7e74a",
+   "key1": "tviz",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "geben",
+   "carried_target": "давать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:0fe3b7b11a4c4484cad1bb8d1a97cba6839663e569d6e0b908450538b84ae6ce",
+   "key1": "tviz",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "einer <ab>best.</ab> Truppenaufstellung",
+   "carried_target": "построения <ab>best.</ab> войск",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:2f2e5a70984adeed90a873e96b12469c8449cef4f58297a00a283af66cadcae2",
+   "key1": "sTURAkarRa",
+   "agent_verdict": "minor"
+  },
+  {
+   "source_span": "erschöpft",
+   "carried_target": "истощённый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:40faf20510addb5e162f4270a55bc09d993cea9c9751f54d87fb9c00c4ad2a0c",
+   "key1": "tam",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "messen",
+   "carried_target": "измерять",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:c08abef0e08b496a97521176fbf77306e3ed4cd492baa844f29ad52acc71575e",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "befestigt",
+   "carried_target": "прикреплённый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:29cc112fb45b1ba11b8b903ec4d81f6cfc1d3dde97abc44299a9da1302355610",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gleichzeitig",
+   "carried_target": "одновременно",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:fd643eb98c1d1a70de5f0ccb4b1c50db2246799463772f0582f4cefbff4327d0",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verfehlen",
+   "carried_target": "уклониться",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:4562fa8e47e61fc4dbdc7902c9f91fa6abd131465ea1911d04a69c6350ec4cb6",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "vernichtet",
+   "carried_target": "уничтоженный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:04684bda17a5b7033b1a567bfb318ec5cc4a7df854da4dfe6eb0f13c4f257fd6",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "geht zu Grunde",
+   "carried_target": "погибает",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:00dd6e749af5ecfb19e5dc0c4c2516d66add5f43fe88609f8c30952e273a6535",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "gestorben, todt",
+   "carried_target": "умерший, мёртвый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:7053164d929d1543b2f7c86fdd4ab4137bc18e0191c8d79ef03701bb34287508",
+   "key1": "mi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "weil",
+   "carried_target": "так как",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c83c3d5cdc7468c90ec5f3b49670d63953e333da4348ce0ccd0382795d954070",
+   "key1": "vizayatva",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "fliessen",
+   "carried_target": "течь",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:c9da4b27e8439705cda03854cb746d58935b02358368b36a69582cba91fe4a42",
+   "key1": "drAvaka",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "umfassen",
+   "carried_target": "охватывать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:19f84bfd7d82e3dd8aec15aa57889a2594d07d767927bce137cf806b1dcd590d",
+   "key1": "AliNg",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "zu Grunde gehen",
+   "carried_target": "погибать, приходить в упадок",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:398c8b35615f17cd418dd8ba1966f0445793d4a70106f75febaf511759f09b31",
+   "key1": "dI",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "mit Ausnahme von",
+   "carried_target": "за исключением",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:2f343146ac43cb0348d46adaaf5a228a5da28c16cf3c94890cb2a4decc94709b",
+   "key1": "varjam",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "verkünden, mittheilen",
+   "carried_target": "возвещать, сообщать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:bb3a084e426bb6f6f2c0cfb29e848013526e196f150f0634844264740bdfe36d",
+   "key1": "Sabday",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "genannt",
+   "carried_target": "названный",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:942693b11d8b0c955088303e06f62761c15af032098d63e6e551a5b0344938b7",
+   "key1": "Sabday",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "fliegend",
+   "carried_target": "летя",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:6b17c800027aa4955c597db67372ab7ade558bc2806d0b58df674b680d971155",
+   "key1": "pAtin",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "enthalten in",
+   "carried_target": "заключённый в",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:33c844983a71a0268b3d6af45db2fc6a50fce4509f9063ac6294887dae463131",
+   "key1": "maDyaga",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Flug",
+   "carried_target": "полёт",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:68da9d0ab262101f006cd70064eb91cee44cdd7d46618d514945ad1fd090f423",
+   "key1": "pata",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "schliessen",
+   "carried_target": "запирать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:4fd007c955d0c91e4b41ef647af0f1b6f954796e3dd5ad2e2c201fc9ec5fe5ac",
+   "key1": "vezw",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "belegen, bedecken",
+   "carried_target": "покрывать, закрывать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:259d2a5701fd6e9a7228233958268cca8e36640e0cd00533e1c8c1b7a6e5ebe3",
+   "key1": "vezw",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "überzogen mit",
+   "carried_target": "покрытый",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:a62b81cc9336f927c771a4c177b1ebe8763601a4d807c26b129b23bc2d99c0bb",
+   "key1": "vezw",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "besetzt mit",
+   "carried_target": "усеянный чем-л.",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ef54bb42e5d517b6e70c3c3788a9b71aed81d25d7817597f36daefa4a2bfe9c1",
+   "key1": "vezw",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "singend",
+   "carried_target": "поющий",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:3c9e78b3e6c31fc7abf1323285ff4ae1bae5635fc4bd216c4f3cd2426b2d64fd",
+   "key1": "geya",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "eingefallen",
+   "carried_target": "ввалившийся",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:d8ee062a7e95a0f6a3325e91549eb16cbdad7c169ee0d8c80b6db87b835d042b",
+   "key1": "saMSuzka",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "erzürnt",
+   "carried_target": "разгневавшись",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:8dbcf230ce458e915de979343de8037dcaf2c31229d69b505a096112393574e0",
+   "key1": "kroDana",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "herbeigekommen",
+   "carried_target": "прибывший",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:376a0b256d605a202873105a0988af972eb3d551a2ae50837de734d6b4aff5ca",
+   "key1": "eta",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Band, Fessel",
+   "carried_target": "узы, оковы",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:f9202eba761a711ac1e57721419720fd10607caf0a6353baffb4f4aa0a15fe68",
+   "key1": "nibanDa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "abschneiden",
+   "carried_target": "отрезать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:57ee0d2b76c3e4d81382cd5bd90033ac6ffaede8a8ff035f254e6d388c8e8231",
+   "key1": "Sas",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "theilhaftig werden",
+   "carried_target": "становиться причастным, получать долю",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:625a045fb1c13c64d0e651d264061eab73694682b449e2c15c37befa46b3537f",
+   "key1": "saMSleza",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Absicht",
+   "carried_target": "намерение",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:ebbb48d17f169988a88cd2d75a72432880f378856e52b60a100c3d42e3d24077",
+   "key1": "aBisaMDi",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "schützen",
+   "carried_target": "защищать",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:b066f46db4bbc78150240921844d5a3651f520d462034af6604dae42b384afda",
+   "key1": "gopITa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "trinken",
+   "carried_target": "пить",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:71ebd63239d4eb191cad7568c6cffc1216f3b2e91082f13d9248d5256107fc70",
+   "key1": "gopITa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "nach Wunsch",
+   "carried_target": "по желанию",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:b9fea81953ed6e03d65c8b29bd0823e52a6483196b8b9eeadfd384e3e21ae922",
+   "key1": "anukAma",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "das Trinken",
+   "carried_target": "питьё, акт питья",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:definition_gloss:0217d8bfd792b52ce022fb2bafc67233addcd4558c5ca25e4e2c58cc895c74fb",
+   "key1": "pa",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "in Bewegung versetzen",
+   "carried_target": "приводить в движение",
+   "n_rows": 2,
+   "example_fragment": "pwg.frag.v1:sense:d5d50c374f674f9ade5d08f75714fceb73bfa36e4e714827d4bc7c7fb4cff0c6",
+   "key1": "lul",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Jmds",
+   "carried_target": "кого-л.",
+   "n_rows": 1,
+   "example_fragment": "pwg.frag.v1:sense:bfd4e807bcb4f527f8293b3bc059fb48a3c6124c899ff610afd621bd8be20171",
+   "key1": "kAmakAra",
+   "agent_verdict": "correct"
+  },
+  {
+   "source_span": "Etwas",
+   "carried_target": "что-л.",
+   "n_rows": 1,
+   "example_fragment": "pwg.frag.v1:sense:5b38e7e9500dae5bd38561ea638665f30a358217e084cf686567f8eb94d75525",
+   "key1": "prekzaka",
+   "agent_verdict": "correct"
+  }
+ ]
+}

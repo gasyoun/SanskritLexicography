@@ -1,0 +1,597 @@
+{
+  "handoff": "H3985",
+  "gap": "SanskritLexicography/GAPS.md §6",
+  "measured_at": "2026-09-03T10:08:05.104495+00:00",
+  "model": "Opus 5 (claude-opus-5)",
+  "method": "keys transcoded from IAST present in the seed line (indic_transliteration IAST→SLP1); zero keys derived from Russian character rules",
+  "seeds_iast_bearing": 32,
+  "seeds_pure_cyrillic_unkeyed": 20,
+  "pairs_extracted": 673,
+  "pairs_rejected": 1175,
+  "table_rows": 534,
+  "distinct_cyrillic": 518,
+  "distinct_slp1": 532,
+  "rule_derived_keys": 0,
+  "validation_tiers": {
+    "onomasticon": 446,
+    "iast-witness-only": 38,
+    "lexicon": 50
+  },
+  "onomasticon_sources": {
+    "inm": 9454,
+    "pui": 11730
+  },
+  "lexicon_sources": {
+    "mw": 194083
+  },
+  "ambiguous_cyrillic": {
+    "Шарабханга": [
+      "SaraBaNga",
+      "saraBaNga"
+    ],
+    "Дандака": [
+      "daRqaka",
+      "dandaka"
+    ],
+    "Ришьямука": [
+      "fSyamUka",
+      "fzyamUka"
+    ],
+    "Гаруда": [
+      "gAruqa",
+      "garuqa"
+    ],
+    "Хари": [
+      "harI",
+      "hari"
+    ],
+    "Джатаюс": [
+      "jatAyus",
+      "jawAyus"
+    ],
+    "Кашьяпа": [
+      "kASyapa",
+      "kaSyapa"
+    ],
+    "Какутстха": [
+      "kAkutsTa",
+      "kakutsTa"
+    ],
+    "Калака": [
+      "kAlaka",
+      "kalakA"
+    ],
+    "Матанги": [
+      "mAtaNgI",
+      "mataNga"
+    ],
+    "Сома": [
+      "somA",
+      "soma"
+    ],
+    "Сумати": [
+      "sumatI",
+      "sumati"
+    ],
+    "Тара": [
+      "tArA",
+      "tAra"
+    ],
+    "Вамана": [
+      "vAmanA",
+      "vAmana"
+    ],
+    "Видхатар": [
+      "viDAtf",
+      "viDatf"
+    ],
+    "Вишала": [
+      "viSAlA",
+      "viSAla"
+    ]
+  },
+  "reject_reasons": {
+    "mixed-script witness (Cyrillic inside the IAST parens)": 696,
+    "witness not capitalised — common noun, not a proper noun": 251,
+    "Cyrillic run is running prose, not an index headword": 200,
+    "witness is an all-caps siglum or numeral, not a name": 20,
+    "witness outside the IAST alphabet": 8
+  },
+  "rejected_sample": [
+    {
+      "cyrillic": "Она рассматривается как буква",
+      "witness": "варна",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 264,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Он рассматривается как буква",
+      "witness": "варна",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 265,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Пратишакхьи к гласным",
+      "witness": "долгим",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 295,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Термин джит",
+      "witness": "джит",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 313,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Этот избыток контакта",
+      "witness": "atisparśa",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 361,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Панини в упадешестватах",
+      "witness": "P. VII. 2.62",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 380,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Панини",
+      "witness": "ср. upadeśejanunāsika it и т. д. I.3.2 до 9",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 491,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "диорст"
+    },
+    {
+      "cyrillic": "Резонанс",
+      "witness": "высказывания висарги",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 617,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "авгзикнрсыя"
+    },
+    {
+      "cyrillic": "Чандра Вьякаране",
+      "witness": "C. Vy. I.4.70",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 734,
+      "reason": "witness outside the IAST alphabet",
+      "detail": "C. Vy. I.4.70"
+    },
+    {
+      "cyrillic": "Патанджали",
+      "witness": "см. Мбх на I.4.1",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 749,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "Мабмнсх"
+    },
+    {
+      "cyrillic": "Нирукте в слове аваса",
+      "witness": "ав + аса",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 753,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Невозможность совершения",
+      "witness": "используется в связи с операцией",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 760,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "авезийлопрстуцья"
+    },
+    {
+      "cyrillic": "Термин",
+      "witness": "asiddha",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 774,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Пады",
+      "witness": "VI.4.175",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 774,
+      "reason": "witness is an all-caps siglum or numeral, not a name",
+      "detail": "VI.4.175"
+    },
+    {
+      "cyrillic": "Аффикс Унади как",
+      "witness": "асун",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 779,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Хемачандры",
+      "witness": "Hem. I.3.25",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 783,
+      "reason": "witness outside the IAST alphabet",
+      "detail": "Hem. I.3.25"
+    },
+    {
+      "cyrillic": "Сравните этот термин",
+      "witness": "Ātmanepada",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 837,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Увеличение",
+      "witness": "āp",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 881,
+      "reason": "witness not capitalised — common noun, not a proper noun"
+    },
+    {
+      "cyrillic": "Вьяди",
+      "witness": "пар. 51",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1037,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "апр"
+    },
+    {
+      "cyrillic": "Чандрагомина",
+      "witness": "пар. 28",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1037,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "апр"
+    },
+    {
+      "cyrillic": "Катантры",
+      "witness": "пар. 46",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1037,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "апр"
+    },
+    {
+      "cyrillic": "Калапы",
+      "witness": "пар. 46",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1037,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "апр"
+    },
+    {
+      "cyrillic": "Вьяди",
+      "witness": "Pari.11",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1048,
+      "reason": "witness outside the IAST alphabet",
+      "detail": "Pari.11"
+    },
+    {
+      "cyrillic": "Раматаркавагиши",
+      "witness": "или Рамашармы",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1059,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "Раилмршы"
+    },
+    {
+      "cyrillic": "Поскольку Патанджали пропустил сутру",
+      "witness": "VI. 2.134",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1109,
+      "reason": "witness is an all-caps siglum or numeral, not a name",
+      "detail": "VI. 2.134"
+    },
+    {
+      "cyrillic": "Термин убхайахрасва",
+      "witness": "ubhayahrasvā",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1170,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Вишаджанию и х",
+      "witness": "хакару",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1324,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Она может заменять висаргу",
+      "witness": "левое дуновение",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1330,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Ее последняя глава",
+      "witness": "Caturtha-Adhyāya",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1417,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Дургасимхи",
+      "witness": "также известного как  Дургасимха  или другого с таким же именем",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1422,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "Давгдежзиклмнорстух"
+    },
+    {
+      "cyrillic": "Викараны",
+      "witness": "ник в грамматике Панини и in в Катантре",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1474,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "КПавгеикмнрт"
+    },
+    {
+      "cyrillic": "Хари Дикшиты и",
+      "witness": "b",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1492,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Панини",
+      "witness": "P.II.4.70",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1578,
+      "reason": "witness is an all-caps siglum or numeral, not a name",
+      "detail": "P.II.4.70"
+    },
+    {
+      "cyrillic": "Аффикс тават",
+      "witness": "kṛt",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1582,
+      "reason": "witness not capitalised — common noun, not a proper noun"
+    },
+    {
+      "cyrillic": "Отыменный аффикс",
+      "witness": "vikaraṇa",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1594,
+      "reason": "witness not capitalised — common noun, not a proper noun"
+    },
+    {
+      "cyrillic": "Этот класс",
+      "witness": "kṣubhnādigaṇa",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1638,
+      "reason": "Cyrillic run is running prose, not an index headword"
+    },
+    {
+      "cyrillic": "Гласная вриддхи",
+      "witness": "ā",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1650,
+      "reason": "witness not capitalised — common noun, not a proper noun"
+    },
+    {
+      "cyrillic": "Каши",
+      "witness": "Варанаси",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1679,
+      "reason": "mixed-script witness (Cyrillic inside the IAST parens)",
+      "detail": "Ваинрс"
+    },
+    {
+      "cyrillic": "Васудевы Шастри Абхьянкара",
+      "witness": "1863-1942",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1718,
+      "reason": "witness not capitalised — common noun, not a proper noun"
+    },
+    {
+      "cyrillic": "Аффикс",
+      "witness": "cphañ",
+      "seed": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add/dsg_index.html",
+      "line": 1867,
+      "reason": "witness not capitalised — common noun, not a proper noun"
+    }
+  ],
+  "coverage_cyrillic_indices": [
+    {
+      "index": "SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl",
+      "headwords_detected": 478,
+      "covered_by_table": 174,
+      "coverage_pct": 36.4,
+      "covered_sample": [
+        "Агастья",
+        "Агни",
+        "Айодхья",
+        "Айомукхи",
+        "Айравата",
+        "Акампана",
+        "Амаравати",
+        "Анала",
+        "Анаранья",
+        "Ангада",
+        "Ангирас",
+        "Анджана",
+        "Андхака",
+        "Арундхати",
+        "Атри",
+        "Ашвапати",
+        "Ашвины",
+        "Бахлика",
+        "Брахма",
+        "Брахмадатта",
+        "Брихаспати",
+        "Бхарадваджа",
+        "Бхарата",
+        "Бхима",
+        "Валин"
+      ]
+    },
+    {
+      "index": "SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt",
+      "headwords_detected": 393,
+      "covered_by_table": 130,
+      "coverage_pct": 33.1,
+      "covered_sample": [
+        "Агастья",
+        "Агни",
+        "Адити",
+        "Айодхья",
+        "Айравата",
+        "Аларка",
+        "Анджана",
+        "Андхака",
+        "Аруна",
+        "Арундхати",
+        "Бали",
+        "Балин",
+        "Бана",
+        "Брахма",
+        "Брихадратха",
+        "Брихаспати",
+        "Будда",
+        "Будха",
+        "Бхагиратха",
+        "Бхарата",
+        "Бхима",
+        "Бхригу",
+        "Варуна",
+        "Варуни",
+        "Васиштха"
+      ]
+    },
+    {
+      "index": "SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl",
+      "headwords_detected": 393,
+      "covered_by_table": 130,
+      "coverage_pct": 33.1,
+      "covered_sample": [
+        "Агастья",
+        "Агни",
+        "Адити",
+        "Айодхья",
+        "Айравата",
+        "Аларка",
+        "Анджана",
+        "Андхака",
+        "Аруна",
+        "Арундхати",
+        "Бали",
+        "Балин",
+        "Бана",
+        "Брахма",
+        "Брихадратха",
+        "Брихаспати",
+        "Будда",
+        "Будха",
+        "Бхагиратха",
+        "Бхарата",
+        "Бхима",
+        "Бхригу",
+        "Варуна",
+        "Варуни",
+        "Васиштха"
+      ]
+    },
+    {
+      "index": "SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl",
+      "headwords_detected": 326,
+      "covered_by_table": 128,
+      "coverage_pct": 39.3,
+      "covered_sample": [
+        "Агастья",
+        "Агни",
+        "Аджа",
+        "Адити",
+        "Айодхья",
+        "Айравата",
+        "Акампана",
+        "Акша",
+        "Амаравати",
+        "Амбариша",
+        "Ангада",
+        "Анила",
+        "Аншуман",
+        "Ашвапати",
+        "Ашвины",
+        "Бала",
+        "Брахма",
+        "Брихаспати",
+        "Будха",
+        "Бхарадваджа",
+        "Бхарата",
+        "Бхригутунга",
+        "Вальмики",
+        "Вамана",
+        "Варуни"
+      ]
+    },
+    {
+      "index": "SamudraManthanam/Index/lib/x86_64-win64/add/To_add2/ramayana-potapovoy.html",
+      "headwords_detected": 77,
+      "covered_by_table": 2,
+      "coverage_pct": 2.6,
+      "covered_sample": [
+        "Кайкейи",
+        "Сита"
+      ]
+    },
+    {
+      "index": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.jsonl",
+      "headwords_detected": 3,
+      "covered_by_table": 0,
+      "coverage_pct": 0.0,
+      "covered_sample": []
+    },
+    {
+      "index": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.raw.jsonl",
+      "headwords_detected": 3,
+      "covered_by_table": 0,
+      "coverage_pct": 0.0,
+      "covered_sample": []
+    },
+    {
+      "index": "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-literatura.jsonl",
+      "headwords_detected": 1,
+      "covered_by_table": 1,
+      "coverage_pct": 100.0,
+      "covered_sample": [
+        "Кама"
+      ]
+    },
+    {
+      "index": "SamudraManthanam/web/templates/index.html",
+      "headwords_detected": 1,
+      "covered_by_table": 0,
+      "coverage_pct": 0.0,
+      "covered_sample": []
+    }
+  ],
+  "unkeyed_pure_cyrillic_seeds": [
+    "SanskritLexicography-h3985-73254/RussianTranslation/release/reverse_index.jsonl",
+    "SamudraManthanam/Index/lib/x86_64-win64/add/To_add2/ramayana-potapovoy.html",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_oneword.txt",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_extra.txt",
+    "SamudraManthanam/web/corpus_builder/jsonl/erman-temkin.jsonl",
+    "SamudraManthanam/Index/lib/x86_64-win64/Data/Словарь Гринцера из Бада Кадамбари.txt",
+    "SamudraManthanam/web/corpus_builder/jsonl/slovar-grintsera-iz-bada-kadambari.jsonl",
+    "SamudraManthanam/web/corpus_builder/jsonl/slovar-potapovoy.jsonl",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index.txt",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/rus_index_declined.txt",
+    "SanskritLexicography-h3985-73254/RussianTranslation/glossary/SAMPLE_root_glossary.md",
+    "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.jsonl",
+    "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika.raw.jsonl",
+    "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-literatura.jsonl",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/3_INDEX_options.txt",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/INDEX3_lack.txt",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_01_part.txt",
+    "SamudraManthanam/nkrya-parallel/diplom-rubanova/automated_index_forms_01_part.txt",
+    "SamudraManthanam/web/templates/index.html",
+    "SamudraManthanam/web/corpus_builder/jsonl/kadambara-svikarana-karika-preface.jsonl"
+  ],
+  "table": "RussianTranslation/data/cyrillic_proper_noun_slp1.tsv"
+}

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # QA-судья V4 (tag_dropped + pre-filter + Yandex-slim)
 
 Готовый к внедрению апдейт QA-судьи. Включает изменения из рабочего
@@ -303,3 +305,5 @@ Pre-filter может пропустить тонкий semantic-баг. Mitigat
 | 2026-05-18 | v2 | + правило про `<ab>` теги |
 | 2026-05-18 | v3 | Перебалансировка калибровки, sev=3 semantic, BAD_with_ab_kept |
 | 2026-05-18 | v4 (draft) | `tag_dropped` категория, Stage-D-style OK, Yandex-slim, pre-filter |
+
+_Dr. Mārcis Gasūns_

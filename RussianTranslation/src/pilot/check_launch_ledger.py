@@ -20,6 +20,11 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+import gate_evidence as ge                                          # noqa: E402
+
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 LEDGER_MD = os.path.join(REPO_ROOT, 'LAUNCH_FUCKUPS.md')
 RUN_LOG_MD = os.path.join(HERE, 'RUN_LOG.md')
@@ -187,19 +192,53 @@ def main(argv=None):
     p.add_argument('--handoff', help='require at least one entry for this H### handoff')
     p.add_argument('--since', help='scan RUN_LOG launch headings since YYYY-MM-DD')
     p.add_argument('--ledger', default=LEDGER_MD, help=argparse.SUPPRESS)
+    p.add_argument('--evidence', default=None, help=argparse.SUPPRESS)
     args = p.parse_args(argv)
+    if not args.evidence:
+        args.evidence = ge.default_sidecar('launch_ledger')
 
     entries = load_ledger(args.ledger)
+    # W1 (H3748, #1803): the verdict is built THROUGH a GateEvidence record, so a green
+    # line names what it checked. The predicate logic below is unchanged -- what is new
+    # is that "0 entries, 0 violations" can no longer read as a clean audit.
+    ev = ge.GateEvidence('launch_ledger', 'LAUNCH_FUCKUPS.md completeness (C8-4)')
+    ev.add_input('ledger', path=args.ledger, units=len(entries))
     violations = check_entries(entries)
+    # Each entry is evaluated against the required-field / vocabulary / shape suite.
+    ev.add_predicate('entry_completeness', evaluations=len(entries), hits=len(violations))
     if args.handoff or args.since:
         since = parse_date(args.since) if args.since else None
-        violations.extend(check_requested(entries, args.handoff, since))
+        requested = check_requested(entries, args.handoff, since)
+        headings = launch_headings_since(since) if since else []
+        if since:
+            ev.add_input('run_log', path=RUN_LOG_MD, units=len(headings))
+        ev.add_predicate('handoff_cross_check',
+                         evaluations=len(headings) + (1 if args.handoff else 0),
+                         hits=len(requested))
+        if since and not headings:
+            ev.declare_expected_empty(
+                'no_runlog_launch_headings',
+                'no launch-shaped RUN_LOG heading since %s to cross-check' % since)
+        violations.extend(requested)
+    if not entries:
+        ev.declare_expected_empty(
+            'no_launch_failures_recorded',
+            'the ledger records incidents; an empty one is a clean history, not a dead gate')
+    ev.set_verdict('fail' if violations else 'pass')
+    try:
+        ev.assert_nonvacuous()
+    except ge.VacuousGateError as exc:
+        print('LAUNCH FAILURE LEDGER: %s' % exc)
+        ev.set_verdict('fail')
+        ev.emit(args.evidence)
+        return 1
+    ev.emit(args.evidence)
     if violations:
         print('LAUNCH FAILURE LEDGER: %d violation(s)' % len(violations))
         for v in violations:
             print('  - ' + v)
         return 1
-    print('LAUNCH FAILURE LEDGER: %d entries complete' % len(entries))
+    print('LAUNCH FAILURE LEDGER: %d entries complete (%s)' % (len(entries), ev.summary()))
     return 0
 
 

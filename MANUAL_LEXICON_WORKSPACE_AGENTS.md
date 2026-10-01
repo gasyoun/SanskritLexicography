@@ -1,6 +1,6 @@
 # SanskritLexicography workspace manual — for agents
 
-_Created: 10-07-2026 · Last updated: 20-08-2026_
+_Created: 10-07-2026 · Last updated: 16-09-2026_
 
 Human twin (Russian):
 [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md).
@@ -115,5 +115,32 @@ merged 09-07-2026 and is not the gate.
   markdown checkboxes are banned.
 - Session end → tidy the right `.ai_state.md`, mirror human items to GTD,
   `/handoff` for future-session work.
+
+## 7. How to check MW against the PW/PWK Nachträge — the five-class taxonomy
+
+When asked "is X missing from MW?" or "what did MW skip?", do **not** answer from a bare
+headword join. Every candidate belongs to exactly one of five classes, and each class has its
+own evidence bar (H5011, 16-09-2026; full census
+[`HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md)):
+
+1. **New headword** — the word is absent from MW72 *and* MW99. Strongest claim; check
+   `mw_exact_hit`/`mw_stem_hit`/`mw_fold_hit` = 0 first. Never-seen count (sup_7): 4,112.
+2. **Homonym/sense extension** — MW already heads the word, but the Nachträge entry's
+   `<hom>N.</hom>` **exceeds MW's main-body maximum `<h>N`** for that `k1`. Class size: 571.
+   ⚠ Do **not** let the MW annexure (`<info n="sup"/>`) homonym numbers suppress the claim —
+   `kārin` is the canary: MW's annexure `kārin³` is a *different* derivation, so the main-body
+   max alone is the comparable quantity.
+3. **Variant/fold form** — MW carries a case/vowel-length twin (`a-A`, `m-M`,
+   `akalita/akalita`); the weakest class, needs eyes. Counts: 610 `variant-form-in-MW`,
+   227 fold-twin.
+4. **Dropped between editions** — MW72 had it, MW99 lost it. Class size: 27.
+5. **Starred sweep residue** — star-flagged all-layer sweep, 2,743 confirmed-missing.
+
+**Evidence discipline.** Corroboration outside the Böhtlingk tradition only — `sch` and `pwg`
+are the *same tradition* as the sup_7 source and must be **discounted**, never counted (typology
+doc §4). DCS corpus attestation is the strongest non-lexicon axis. Regenerate everything with
+`python HeadwordLists/mw_unabsorbed_census.py` (~8 s, stdlib). POS cross-cuts are informative
+for the homonym-extension class (77 % tagged) but **not** for the broad extension class (85.6 %
+untagged — report the sparsity, do not force counts).
 
 _Dr. Mārcis Gasūns_

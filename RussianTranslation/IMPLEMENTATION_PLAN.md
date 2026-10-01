@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Implementation plan — the `pwg_ru` / `mw_ru` translation pipeline
 
 > Engineering plan (English) for the shared dictionary-digitization engine behind
@@ -470,3 +472,5 @@ selection effect, not headline coverage).
 7. **Corpus transport for P1/P5.** Pick the SamudraManthanam access path
    (read-only open of `corpus.db` / offline `dict.db`, or the FastAPI shim) —
    open item carried from [SAMUDRA_INTEGRATION.md](SAMUDRA_INTEGRATION.md) §7.
+
+_Dr. Mārcis Gasūns_

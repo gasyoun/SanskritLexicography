@@ -1,6 +1,6 @@
 # ROADMAP_CEILING_2026.meta.md — metadoc for `ROADMAP_CEILING_2026.md`
 
-_Created: 18-07-2026 · Last updated: 19-08-2026_
+_Created: 18-07-2026 · Last updated: 01-09-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md)
@@ -32,7 +32,7 @@ it. Kept per the standing "one metadoc per important document" convention
 
 | # | Improvement | Why | Status |
 |---|---|---|---|
-| 1 | C2 Phase 1 — join each sense's `<ls>` citations to `ls_source_map.json`'s date/period/renou fields for a per-sense attestation window | Named "Wave 1 (parallel with translation, cheap derivables)" — deterministic, no external dependency | parked — Wave 1, no handoff minted at time of this metadoc |
+| 1 | C2 Phase 1 — join each sense's `<ls>` citations to `ls_source_map.json`'s date/period/renou fields for a per-sense attestation window | Named "Wave 1 (parallel with translation, cheap derivables)" — deterministic, no external dependency | **done** — shipped 23-08-2026 (H3168); phase 2's curated dating table followed 01-09-2026 (H3790) |
 | 2 | C4 — KEWA normalization + join using the already-OCRed KEWA index | Rights are unlocked (MG holds written Mayrhofer permission); the index already exists on disk — this is a "locate + quote terms verbatim, then join" task, not new acquisition | parked — Wave 1; GTD `@DO` to locate/quote the permission terms verbatim before publication-tier use |
 | 3 | C8 — DharmaMitra license-gated probe + outreach draft | Named Wave 1; rights-gated, so gated on `/license-gated-ingest` + `/outreach-draft` completing first | parked — Wave 1, rights-gated |
 | 4 | C1 embedding-WSD baseline + gold set (Wave 2) | Sequenced deliberately after ~50% translation coverage per the doc's own phasing — the highest-value ceiling item (in-context WSD) but intentionally not startable yet | parked — Wave 2, coverage-gated |
@@ -71,12 +71,17 @@ Wave 1 is now minted — C2 phase 1 as H3168, C4 as H3169, C8 as H3170 — after
 weeks in which the doc's own "handoffs are minted after H335 lands" promise had
 nothing watching for H335 landing. Wave 2 stays coverage-gated at ~50 % translation
 and is deliberately unminted, except its gold-set prerequisite (H3172), which is
-not coverage-gated. Residual programme:
+not coverage-gated. **C2 phase 2 left Wave 2 early (01-09-2026, H3790):** the sequencing
+ruling gates *model/benchmark* phases on coverage, and a curated dating table is neither —
+its Wave 2 membership was packaging, not a dependency. C1's two model items stay gated and
+unminted. That ruling is written into the subject document's own phasing section, so a
+future reader does not have to reconstruct it from this metadoc. Residual programme:
 [docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_CEILING_RESIDUAL_2026H2.md).
 
 ## Related documents
 - [ROADMAP_ACL_LESSONS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.md) — "Roadmap B," the explicit companion this doc cross-references.
-- [ls_source_map.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_source_map.json) — the per-work dating source C2 Phase 1 joins against.
+- [ls_source_map.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_source_map.json) — the per-work dating source C2 Phase 1 joins against. Its 45 point dates carry no provenance; phase 2 supplies that.
+- [C2P2_WORK_DATING_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/C2P2_WORK_DATING_TABLE.md) + [work_dating_table.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/work_dating_table.json) — C2 phase 2's curated ranges, one scholarly citation per date, and the two dating-invalid sigla.
 - [LEARNER_APPARATUS_SPEC.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/LEARNER_APPARATUS_SPEC.md) — documents the KEWA dhātu-form join gotcha referenced under C4.
 - [REVIEW_AND_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REVIEW_AND_ROADMAP.md) — the higher-level pipeline roadmap this feeds into.
 
@@ -85,5 +90,6 @@ not coverage-gated. Residual programme:
 | Date | Event | Who |
 |---|---|---|
 | 18-07-2026 | Metadoc created (backfill sweep) | Sonnet 5 (`claude-sonnet-5`), H968 |
+| 01-09-2026 | C2 row flipped to both-phases-built; the Wave 2 early-exit reasoning recorded; C2P2 artifacts added to Related documents | Opus 5 (`claude-opus-5`), H3790 |
 
 _Dr. Mārcis Gasūns_

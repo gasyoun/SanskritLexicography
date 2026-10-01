@@ -43,6 +43,7 @@ import pwg_ab  # noqa: E402  (<ab> grammar/usage abbreviation -> DE/EN expansion
 import pwg_ab_ru  # noqa: E402  (<ab> -> RU display text for the editorial/cross-ref bucket)
 import pwg_sources as pwgsrc  # noqa: E402  (<ls> siglum -> full source title, for tooltips)
 import spr_fulltext as spr  # noqa: E402  (<ls> Spr. (II) N -> Indische Sprüche full text, for tooltips; H1307)
+import dhatup_palsule as dhp  # noqa: E402  (<ls> DHĀTUP. x,y -> Palsule artha index, for tooltips; H1333)
 import iast_to_cyrillic as i2c  # noqa: E402  (<is> proper name -> Cyrillic, RU column only)
 import government_census as govc  # noqa: E402  (<ab> case-government extractor; powers government.html, H1308)
 import ls_links  # noqa: E402  (<ls> MBh scan URL -> vulgate e-text URL + presence verdict, H2845)
@@ -290,12 +291,20 @@ def _ls_tooltip(attrs, visible):
     the pwgbib source expansion (`_ls_title`). The 1st-edition `Spr. N` form is
     edition-guarded inside spr_fulltext and never reaches the 2nd-ed corpus.
 
-    Language-independent (the saying/source is the same in the DE/RU/EN editions),
-    so this shared helper is what the review-sheet emitter (H1301) reuses too."""
+    For a `DHĀTUP. x,y` citation (H1333) it is the Palsule artha-index record for the
+    root Böhtlingk numbers at that coordinate — its meaning glosses and Palsule pages.
+    The gaṇa-level Westergaard *link* is untouched; this only enriches the hover.
+
+    Language-independent (the saying/source/dhātu is the same in the DE/RU/EN
+    editions), so this shared helper is what the review-sheet emitter (H1301) reuses
+    too."""
     m = _N_ATTR.search(attrs or '')
     n_attr = m.group(1) if m else None
     vis = (visible or '').strip()
     rich = spr.tooltip(n_attr, vis)
+    if rich:
+        return rich
+    rich = dhp.palsule_for(n_attr, vis)
     if rich:
         return rich
     return _ls_title(attrs, visible)

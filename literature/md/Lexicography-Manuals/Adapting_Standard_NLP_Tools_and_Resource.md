@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Adapting Standard NLP Tools and Resources to the Processing of Ritual Descriptions
 
 **Authors:** Reiter, Hellwig, Mishra, Gossmann, Larios, Rodrigues, Zeller & Frank  
@@ -1121,3 +1123,5 @@ model-theoretic coreference scoring scheme’, in MUC6 ’95: Proceed-
 ings of the 6th conference on Message understanding, pp. 45–52, Mor-
 ristown, NJ, USA, (1995).
 46
+
+_Dr. Mārcis Gasūns_

@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21306715.svg)](https://doi.org/10.5281/zenodo.21306715)
 
-_Created: 14-06-2026 · Last updated: 31-07-2026_
+_Created: 14-06-2026 · Last updated: 06-09-2026_
 
 A **data and research workspace** for Sanskrit digital lexicography — not a
 software project. Its focus is Cologne Digital Sanskrit Lexicon headword lists,
@@ -30,7 +30,7 @@ see [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/mas
 | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) | Markdown and HTML lecture material (mostly Russian) on Sanskrit particles and syntax, including the interactive [particle explorer](https://github.com/gasyoun/SanskritLexicography/blob/master/Syntax-Lectures/sanskrit_particles_explorer.html). |
 | [literature/md/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature/md) | Full-text markdown extractions of the research literature collection, plus a set of paraphrase digests (citation + scope summary, no reproduced text) — for the nine Russian/Soviet works the digest and the full text sit side by side; elsewhere a digest may stand alone in place of a work not redistributed here. See [literature/md/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/README.md) for which is which. See [literature/md/INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/INDEX.md) for the cross-repo relevance map (sources tagged by which dictionary repo, corpus pipeline, or paper they serve). Source PDFs/EPUBs/DOCs are not versioned in this repo. |
 | [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes, referee reviews, and supporting CSV data for the A33–A43 manuscripts. |
-| [data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data) | Derived cross-dictionary datasets (headword-overlap matrix, csl-orig markup-tag census, **definition typology** — synonym/equivalent/encyclopedic over all 44 csl-orig dicts) with the generator scripts that produced them. See [DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md). |
+| [data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data) | Derived cross-dictionary datasets (headword-overlap matrix, csl-orig markup-tag census, **definition typology** — synonym/equivalent/encyclopedic over all 44 csl-orig dicts) with the generator scripts that produced them, plus the byte-exact **dhātu-pāṭha XML corpus layer** [data/dhp/](https://github.com/gasyoun/SanskritLexicography/tree/master/data/dhp) (Westergaard + Scharf Mādhavīya, H4538). See [DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md) and [data/dhp/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/dhp/README.md). |
 | [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static research-site builder (`build_site.py`, zettelkastenwiki) over [docs_site/wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research), plus its pytest suite. Built and tested; not deployed. |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Draft of the English article-based monograph (book plan, Brill proposal, rights table, early chapters). |
 | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) | Working materials for an unpublished reverse dictionary of Sanskrit (sorted by word ending; ~266,820 headwords). |
@@ -106,6 +106,8 @@ disagreeing, not-yet-knowing, abandoning, reproducing, decaying, defining):
 - [RussianTranslation/NWS_AUDIT_REPORT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NWS_AUDIT_REPORT.md) — living cumulative report of the NWS attribution-parser audit (per-section roll-up, real-loss taxonomy, source errata).
 - [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) — how a PWG entry is assembled from up to 5 dictionary layers (PWG/PW/SCH/PWKVN/NWS), the fixed merge order in `dict_merge.py`, and a measured co-occurrence tally showing no-PWG combinations (esp. PW-only) are common, not edge cases.
 - [RussianTranslation/LITERATURE_FOR_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LITERATURE_FOR_PWG_RU.md) — the reference-shelf harvest for the Sanskrit→Russian PWG translation, mined by pipeline insertion point; with the per-manual audit [RussianTranslation/MANUALS_FOR_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FOR_PWG_RU.md) and the five-manual theory deep-dive [RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/MANUALS_FIVE_DEEP_DIVE.md).
+- [RussianTranslation/src/pwg_four_tier_store_impact.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_four_tier_store_impact.py) — the measured store impact of PWG's **four** enumeration tiers (H3948): how many existing `pwg_ru` rows corrected segmentation *would* change, reported as a range (12 precise · 990 unaffected · 2,210 unresolvable out of the 3,212 affected rows of 11,462) rather than a single number; the tier rules themselves live in [RussianTranslation/src/microstructure.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py) and the verdict in [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §453. **Nothing was rewritten** — the re-translation call is a human decision.
+- [RussianTranslation/data/cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — the validated **Cyrillic→SLP1 proper-noun table** (534 rows) keyed only from IAST witnesses printed beside the Cyrillic name, never from reverse-transliteration rules (GAPS §6 half-closed, [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §629); built by [RussianTranslation/tools/h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py) with the tier/coverage report [RussianTranslation/reports/H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json). The 20 fully-Cyrillic name indices with no IAST witness are left **unkeyed on purpose**.
 - [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md) — provenance for the large reference assets.
 - [literature/md/INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/INDEX.md) — cross-repo relevance map for the research literature collection.
 
@@ -177,6 +179,14 @@ or loaded into scripts. A few files are large enough to be awkward in an editor
 error-list exports — so use streaming/CLI tools on those. All files are UTF-8;
 BOM state is inconsistent across exports, so check before transforming and
 preserve the existing state on write.
+
+**Python floor: ≥ 3.10.** The repo's Python tooling (generators under
+[data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data), the
+pipelines under
+[RussianTranslation/src/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src))
+uses `Path.write_text(newline=)`, which requires Python 3.10+. The repo is
+deliberately not a package, so the floor is declared here rather than in a
+`pyproject.toml` `requires-python` (cf. kosha's `requires-python = ">=3.12"`).
 
 Suggested entry points:
 

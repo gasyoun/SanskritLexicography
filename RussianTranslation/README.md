@@ -1,6 +1,6 @@
 # RussianTranslation — Sanskrit dictionaries into Russian, at scale
 
-_Created: 28-06-2026 · Last updated: 02-08-2026_
+_Created: 28-06-2026 · Last updated: 30-08-2026_
 
 This directory holds two independent machine-translation efforts that bring the
 great 19th-century Sanskrit dictionaries to Russian readers, plus the
@@ -139,6 +139,7 @@ forced the change):
 Cold-start for *what to improve next* (not the day-to-day translate loop): the full-audit
 `/ask` umbrella sequences factory residues → health-gated drain → existing TM/gloss plans.
 
+- **Current control-plane redesign:** [`docs/PLAN_RussianTranslation_PWG_CONTROL_PLANE_STRANGLER_2026H2.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_PWG_CONTROL_PLANE_STRANGLER_2026H2.md) — strangler migration to one transactional campaign model, shared xAI/DeepSeek paid-call kernel, pure audit, and journal-only promotion; Wave 1 preserves the proven Claude compiler/worker/gates and canonical data.
 - **PLAN index:** [`docs/PLAN_RussianTranslation_full_audit_improvement_2026H2.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_full_audit_improvement_2026H2.md)
 - Also indexes (do not supersede): [pubgrade TM](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pubgrade_tm_oral_2026H2.md) · [Sa→Ru gloss](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_saru-gloss-quality_2026H2.md)
 

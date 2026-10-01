@@ -1,6 +1,6 @@
 # Laukika-nyāya (Jacob's "Handful of Popular Maxims")
 
-_Created: 13-07-2026 · Last updated: 21-07-2026_
+_Created: 13-07-2026 · Last updated: 05-09-2026_
 
 ## Status: ✅ target met — 404 records (≥400)
 
@@ -16,7 +16,7 @@ a DIFFERENT entry's own closing verse" (an ordinary pattern in this text,
 wrongly rejected). Fix: only reject when that preceding line does NOT
 itself close with a verse-final daṇḍa/double-daṇḍa (।/॥ — trailing OCR
 noise such as quotes, digits, or a parenthetical page ref is tolerated
-after it). See [`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py)'s
+after it). See [`tools/build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py)'s
 `prev_is_prose()`/`VERSE_CLOSE_TAIL` for the implementation.
 
 Re-running the fixed pipeline alone recovers 27 more headword-boundary
@@ -25,7 +25,7 @@ lost** (verified by diffing the full `good_idx` boundary set before/after).
 Of the 12 hand-verified 20-07-2026 follow-up records, 9 are now recovered
 automatically (their own preceding line does close with a clean daṇḍa); 3
 are not (OCR noise obscures the daṇḍa) and remain a documented manual
-addition in [`tools/apply_h803_followup2_prevprose_fix.py`](tools/apply_h803_followup2_prevprose_fix.py).
+addition in [`tools/apply_h803_followup2_prevprose_fix.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/apply_h803_followup2_prevprose_fix.py).
 
 Because Sanskrit verse padas commonly end in a daṇḍa even mid-citation,
 the relaxed heuristic also risks false positives — so every one of the 18
@@ -44,7 +44,7 @@ check):
 - **3 rejected as duplicates** of content already present in the dataset
   under a different OCR lane/spelling, not fresh discoveries (OCR lines
   2134, 5844, 9963 — see
-  [`tools/apply_h803_followup2_prevprose_fix.py`](tools/apply_h803_followup2_prevprose_fix.py)
+  [`tools/apply_h803_followup2_prevprose_fix.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/apply_h803_followup2_prevprose_fix.py)
   docstring for exactly which existing record each duplicates). These 3
   remain real text-boundary points (correctly stopping their preceding
   neighbour's runaway explanation) but are never emitted as their own
@@ -90,7 +90,7 @@ an earlier looser check produced several false "gaps" that turned out to already
 present under OCR spelling drift, e.g. index token `आशामोदकठृसन्याय` ==
 committed `आशामोदकतृघ्तन्यायः`) surfaced **12 genuinely new, manually-verified
 records** (full methodology and root-cause analysis in
-[`tools/append_h803_followup_records.py`](tools/append_h803_followup_records.py)'s
+[`tools/append_h803_followup_records.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/append_h803_followup_records.py)'s
 docstring): अन्धगजन्यायः, उष्ट्कण्टकभक्षणन्यायः, दग्धपटन्यायः, दण्डापूपिकान्यायः,
 शुकनलिकान्यायः, झङ्गम्ाहिकान्यायः (OCR for शृङ्गग्राहिकान्यायः, disclosed not
 silently corrected), उत्खातदंष्ट्रोरगन्यायः, उपजीव्यविरोधस्यायुक्तत्वस्‌
@@ -136,7 +136,7 @@ session fetched all 378 page images and OCR'd them locally with Tesseract's `san
 Sanskrit-aware model, producing **301 clean-scan entries with REAL per-entry printed-page
 citations** (a first for this dataset), independently cross-validating and correcting
 several of the original scan's known OCR errors. Reconciled against the corrected 302-record
-file (below) via [`tools/reconcile_clean_scan_lane.py`](tools/reconcile_clean_scan_lane.py)
+file (below) via [`tools/reconcile_clean_scan_lane.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/reconcile_clean_scan_lane.py)
 (headword-skeleton + gloss fuzzy matching, requiring BOTH headword and gloss signals to
 corroborate — an early looser threshold produced false matches, caught by a post-merge
 duplicate check, fixed before this number): **223 matched** (193 took the clean-scan lane's
@@ -173,7 +173,7 @@ Reconciled as a straight union — **390 records**, deduplicated by `nyaya_slp1`
 common entry keeping whichever lane's `explanation` field was longer/more complete (the
 300-lane's bug fix won 120/150 of those picks). This file was, at that point, a
 **manual merge of two independent extraction runs**, not directly reproducible by a
-single invocation of [`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py) --
+single invocation of [`tools/build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py) --
 see the correction above for why that turned out to matter.
 
 **19-07-2026 update (Sonnet 5 `claude-sonnet-5`, H803 follow-up pass):** phrase-tier
@@ -298,7 +298,7 @@ in `build_laukika_nyaya.py`:
 
 ## Data
 
-[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — **404 records** (up from 389,
+[`data/laukika_nyaya.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/data/laukika_nyaya.jsonl) — **404 records** (up from 389,
 ≥400 target met), one per line, mirroring the IndischeSprueche field style. This
 file is now a **union of FOUR independently-produced passes** — not directly reproducible
 by a single script invocation: `tools/build_laukika_nyaya.py` reproduces only the
@@ -306,17 +306,17 @@ raw 329-record djvu lane (21-07-2026's `prev_is_prose()` fix, 302 pre-fix),
 `tools/apply_h803_followup2_prevprose_fix.py` applies the verified exclusions/additions
 on top of that (still 329, but a different 27-record delta vs. the pre-fix 302 — see the
 top-of-file banner), `tools/build_laukika_nyaya_clean_scan.py` writes the separate
-[`data/laukika_nyaya_clean_scan.jsonl`](data/laukika_nyaya_clean_scan.jsonl) (301 records,
+[`data/laukika_nyaya_clean_scan.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/data/laukika_nyaya_clean_scan.jsonl) (301 records,
 the clean-scan lane on its own, with real page citations throughout) rather than the merged
 file directly, `tools/reconcile_clean_scan_lane.py` documents (and can redo, from a matching
 starting state) the one-time base+clean-scan merge (302+301→377 pre-fix; **re-run 21-07-2026
 against the corrected 329-record base lane → 329+301→404**, the currently-committed state),
-[`tools/append_h803_followup_records.py`](tools/append_h803_followup_records.py) documents
+[`tools/append_h803_followup_records.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/append_h803_followup_records.py) documents
 (and can redo, from a matching starting state) the **historical** 20-07-2026 index-crossref
 follow-up's 377→389 manual addition (superseded by the 21-07-2026 pipeline fix, which
 auto-recovers 9 of those same 12 records and folds the remaining 3 in earlier in the chain —
 kept as an audit trail, not re-run), and
-[`tools/apply_h803_followup2_prevprose_fix.py`](tools/apply_h803_followup2_prevprose_fix.py)
+[`tools/apply_h803_followup2_prevprose_fix.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/apply_h803_followup2_prevprose_fix.py)
 documents (and can redo, from a matching starting state) the 21-07-2026 `prev_is_prose()`
 fix's verified exclusions (3 duplicates of already-existing content) and residual manual
 additions (the 3 known-good records the fix still can't auto-recover) — see the banner
@@ -608,7 +608,7 @@ Sanskrit-aware OCR pass this dataset never had before.
 
 ### No back-matter index in this source (unlike the 300-record lane)
 
-[`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py)'s 300-record lane closed
+[`tools/build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py)'s 300-record lane closed
 part of its gap by cross-referencing the primary `YKTn_...` scan's own back-matter index of
 nyāyas. This alternate source's back matter (checked: last ~6 pages of each volume) is
 publisher advertisements and a university-library due-date stamp, not an index — that
@@ -617,7 +617,7 @@ the full gap on its own.
 
 ### Pipeline
 
-[`tools/fetch_clean_scan_ocr.py`](tools/fetch_clean_scan_ocr.py) fetches each volume's page
+[`tools/fetch_clean_scan_ocr.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/fetch_clean_scan_ocr.py) fetches each volume's page
 images via IIIF (`iiif.archive.org/image/iiif/2/<ident>%2f<ident>_jp2.zip%2f<ident>_jp2%2f<ident>_NNNN.jp2/full/pct:65/0/default.jpg`,
 found by following the IIIF `info.json` redirect rather than guessing the leaf-filename
 convention), OCRs each with `tesseract -l san+eng --psm 6`, and concatenates per-volume
@@ -626,7 +626,7 @@ into `raw/handfulofpopular0{1,2,3}jacoiala_ocr_san_eng.txt` with `=== PAGE N ===
 lanes). 375 of 378 pages fetched successfully; pages 77 (vol 1), 109 (vol 2), and 183
 (vol 3) failed consistently across retries — not the intermittent flakiness seen
 elsewhere, so flagged as a genuine per-leaf gap rather than re-attempted indefinitely.
-[`tools/build_laukika_nyaya_clean_scan.py`](tools/build_laukika_nyaya_clean_scan.py) reuses
+[`tools/build_laukika_nyaya_clean_scan.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya_clean_scan.py) reuses
 the **same** headword/false-positive heuristics as `build_laukika_nyaya.py` (named-tier:
 line containing न्याय; phrase-tier: Devanagari line + a following English gloss sentence)
 with one real bug fix found by spot-check: the strict "pure Devanagari line" regex

@@ -6,7 +6,9 @@ RussianTranslation/src/pilot/.claude/
 # Claude Code worktree-management config for a repo-root session (settings.local.json,
 # worktrees/) — machine/session-local, not repo content. Matches at ANY level since a
 # worktree session can start in any subdirectory, not just RussianTranslation/.
-.claude/
+.claude/*
+# committed memory store (H4547)
+!.claude/projects/
 RussianTranslation/tmp.md
 RussianTranslation/src/audit[0-9].py
 RussianTranslation/src/audit_fidelity.py
@@ -107,6 +109,11 @@ papers/MDF_2000.pdf
 # only derived measurements/crosswalks are committed.
 HeadwordLists/heritage_mirror/
 
+# H4471: raw ShivaSutras.xlsx/.docx staged from yadisk:Panini/ for schema
+# inspection — rights not cleared for redistribution, derived-only per the
+# handoff; only data/shiva_sutras_pratyahara_ranges.{tsv,json} are committed.
+data/_raw_local/
+
 # H264 review sheets (personal working artifacts, not repo deliverables) —
 # anchored to the repo root so the ACTIVE RussianTranslation/review/ stays tracked
 /review/
@@ -150,3 +157,21 @@ RussianTranslation/experiments/H2675_w1_prep/*.manifest.json
 RussianTranslation/experiments/H2675_w1_prep/calls.jsonl
 RussianTranslation/experiments/H2675_w1_prep/first200.remaining.txt
 
+
+# H3982: pwg_ru component blob archive — the bytes behind every recorded
+# `<name>_sha`. Content-addressed, write-once, and RUNTIME data in the same
+# sense as the pwg_ru store itself (RussianTranslation/src/*.jsonl above):
+# it grows one ~300 KB zip per distinct pipeline state, and its unique value
+# is precisely the states git never had (uncommitted working trees). The
+# README in that directory is the committed contract; the zips are not.
+RussianTranslation/reports/pipeline_blobs/*.zip
+RussianTranslation/reports/pipeline_blobs/*.tmp
+
+# H4408: generated csl-orig key->offset sidecars (rebuilt on demand by
+# HeadwordLists/cdsl_index.py; the builder + consumers are committed, the
+# multi-MB derived .idx files are not).
+data/cdsl_index/*.idx
+data/cdsl_index/*.building
+
+# H5330 rendered double-keyed sheets carry csl-orig-derived definition text — regenerable from manifest + seed (data/build_typology_pool_sheets.py), never committed (never-commit-csl-orig guard)
+data/typology_pool_300x7_sheets/

@@ -294,11 +294,18 @@ def load_state():
 
 
 def prepare_state_for_save(state, updated_at=None):
-    """Normalize state exactly once so promotion can seal the bytes before replacement."""
+    """Normalize state exactly once so promotion can seal the bytes before replacement.
+
+    Returns (paths, running) -- `running` is the running-translation-lease scan this
+    function already had to do to compute runtime_mode/runtime_limit. save_state passes
+    it on to write_dashboard so the immediately-following dashboard write does not repeat
+    an expire_stale_leases + running_translation_leases scan over an unchanged state
+    (H3754 W7: measured redundant full-lease-list rescans in the claim/save hot path).
+    """
     p = ensure_dirs()
     expire_stale_leases(state)
     normalize_lease_reservations(state)
-    running = running_translation_leases(state)
+    running = running_translation_leases(state, skip_expire=True)
     state['runtime_mode'] = ('staged-probed' if any(
         lease.get('runtime_mode') == 'staged-probed' for lease in running) else 'standard')
     state['runtime_limit'] = (max(
@@ -306,7 +313,7 @@ def prepare_state_for_save(state, updated_at=None):
         default=TRANSLATION_LIMIT) if state['runtime_mode'] == 'staged-probed'
                               else TRANSLATION_LIMIT)
     state['updated_at'] = updated_at or utc_now()
-    return p
+    return p, running
 
 
 def serialized_state(state):
@@ -314,9 +321,11 @@ def serialized_state(state):
 
 
 def save_state(state, updated_at=None):
-    p = prepare_state_for_save(state, updated_at=updated_at)
+    p, running = prepare_state_for_save(state, updated_at=updated_at)
     atomic_write_json(p['state'], state, indent=1)
-    write_dashboard(state)
+    # expire_stale_leases already ran (inside prepare_state_for_save, above); reuse it.
+    reserved = reserved_translation_leases(state, skip_expire=True)
+    write_dashboard(state, running=running, reserved=reserved)
 
 
 def terminal_state(state):
@@ -355,7 +364,7 @@ def expire_stale_leases(state):
 
 
 def translation_lease(lease):
-    return lease.get('kind') in ('verb', 'nominal')
+    return lease.get('kind') in ('verb', 'nominal', 'defect-repair')
 
 
 def _validate_reserved_keys(value):
@@ -438,16 +447,23 @@ def active_reserved_nominal_keys(state, exclude_lease_id=None, strict=True):
     return reserved
 
 
-def reserved_translation_leases(state):
-    expire_stale_leases(state)
+def reserved_translation_leases(state, skip_expire=False):
+    """`skip_expire=True` is an opt-in for a caller that already ran expire_stale_leases
+    on this exact state object earlier in the same synchronous call (H3754 W7: the
+    default re-scan is a measured hotspot when several derived views are read back to
+    back in the claim/save path -- see prepare_state_for_save / save_state)."""
+    if not skip_expire:
+        expire_stale_leases(state)
     return [
         lease for lease in state.get('leases', [])
         if translation_lease(lease) and not terminal_state(lease.get('state'))
     ]
 
 
-def running_translation_leases(state):
-    expire_stale_leases(state)
+def running_translation_leases(state, skip_expire=False):
+    """See reserved_translation_leases' skip_expire note."""
+    if not skip_expire:
+        expire_stale_leases(state)
     return [
         lease for lease in state.get('leases', [])
         if translation_lease(lease) and lease.get('state') in ('running', 'auditing')
@@ -896,6 +912,79 @@ def make_lease_id(kind, lane, target):
         '%s-%s-%s-%s-%d' % (kind, lane, safe, stamp, os.getpid()))
 
 
+def _claim_target_verb(state, args):
+    candidates, worklist = verb_candidates(state)
+    if not candidates:
+        blocked = len(worklist.get('blocked_missing_rootmap') or []) if isinstance(worklist, dict) else 0
+        raise SystemExit('no runnable verb candidate; missing rootmaps=%d' % blocked)
+    chosen = candidates[0]
+    target = chosen['root']
+    details = {'preflight': chosen}
+    return target, details, None
+
+
+def _claim_target_nominal(state, args):
+    keys = nominal_candidates(state, batch_size=args.batch_size)
+    if not keys:
+        raise SystemExit('no nominal/non-root candidate')
+    target = 'nominal:%s' % keys[0]
+    run_keys = [safe_name(k) for k in keys]
+    details = {'keys': keys, 'run_keys': run_keys,
+               'keymap': dict(zip(run_keys, keys))}
+    return target, details, keys
+
+
+def _claim_target_rootmap(state, args):
+    payload = verb_worklist.build_worklist()
+    blocked = [root for root in payload.get('blocked_missing_rootmap', [])
+               if root not in active_targets(state)]
+    if not blocked:
+        raise SystemExit('no missing-rootmap candidate')
+    target = blocked[0]
+    details = {'blocked_missing_rootmap_count': len(blocked)}
+    return target, details, None
+
+
+def _claim_target_defect_repair(state, args):
+    keys = [k.strip() for k in (args.keys or '').split(',') if k.strip()]
+    root = (args.root or '').strip()
+    if not keys:
+        raise SystemExit(
+            'defect-repair requires --keys=k1,k2 (already-promoted sub-cards)')
+    if not root:
+        raise SystemExit(
+            'defect-repair requires --root <already-promoted-root>')
+    reserved = set(active_reserved_nominal_keys(state, strict=False))
+    for lease in state.get('leases', []):
+        if (lease.get('kind') == 'defect-repair'
+                and not terminal_state(lease.get('state'))):
+            reserved.update(lease.get('reserved_keys') or [])
+    overlap = sorted(set(keys) & reserved)
+    if overlap:
+        raise SystemExit(
+            'defect-repair keys already reserved: %s' % ','.join(overlap))
+    target = 'defect-repair:%s' % root
+    run_keys = [safe_name(k) for k in keys]
+    details = {
+        'keys': keys, 'run_keys': run_keys,
+        'keymap': dict(zip(run_keys, keys)),
+        'root': root, 'no_tm': True,
+        # H4527 22-09 (2): a no-PWG nominal card has no root map, so the verb-shaped
+        # `<root> --keys=` prepare cannot build its harness; --nominal routes it the way
+        # no_pwg_scale_plan built the card being repaired.
+        'nominal': bool(getattr(args, 'nominal', False)),
+    }
+    return target, details, keys
+
+
+_CLAIM_TARGET_BUILDERS = {
+    'verb': _claim_target_verb,
+    'nominal': _claim_target_nominal,
+    'rootmap': _claim_target_rootmap,
+    'defect-repair': _claim_target_defect_repair,
+}
+
+
 def claim(args):
     p = ensure_dirs()
     with DirLock(p['lock']):
@@ -904,32 +993,12 @@ def claim(args):
                 and len(reserved_translation_leases(state)) >=
                 state.get('preparation_limit', PREPARATION_LIMIT)):
             raise SystemExit('translation preparation cap reached (%d)' % state.get('preparation_limit', PREPARATION_LIMIT))
-        if args.kind == 'verb':
-            candidates, worklist = verb_candidates(state)
-            if not candidates:
-                blocked = len(worklist.get('blocked_missing_rootmap') or []) if isinstance(worklist, dict) else 0
-                raise SystemExit('no runnable verb candidate; missing rootmaps=%d' % blocked)
-            chosen = candidates[0]
-            target = chosen['root']
-            details = {'preflight': chosen}
-        elif args.kind == 'nominal':
-            keys = nominal_candidates(state, batch_size=args.batch_size)
-            if not keys:
-                raise SystemExit('no nominal/non-root candidate')
-            target = 'nominal:%s' % keys[0]
-            run_keys = [safe_name(k) for k in keys]
-            details = {'keys': keys, 'run_keys': run_keys,
-                       'keymap': dict(zip(run_keys, keys))}
-        elif args.kind == 'rootmap':
-            payload = verb_worklist.build_worklist()
-            blocked = [root for root in payload.get('blocked_missing_rootmap', [])
-                       if root not in active_targets(state)]
-            if not blocked:
-                raise SystemExit('no missing-rootmap candidate')
-            target = blocked[0]
-            details = {'blocked_missing_rootmap_count': len(blocked)}
-        else:
+        builder = _CLAIM_TARGET_BUILDERS.get(args.kind)
+        if builder is None:
             raise SystemExit('unknown kind: %s' % args.kind)
+        if getattr(args, 'nominal', False) and args.kind != 'defect-repair':
+            raise SystemExit('--nominal applies to --kind defect-repair only')
+        target, details, keys = builder(state, args)
 
         lease_id = args.lease_id or make_lease_id(args.kind, args.lane, target)
         # H4 (H1940 Phase 2): register_prepared_lease has refused a duplicate id since it was
@@ -964,7 +1033,7 @@ def claim(args):
             'artifact_dir': adir,
             'details': details,
         }
-        if args.kind == 'nominal':
+        if args.kind in ('nominal', 'defect-repair'):
             lease['reserved_keys'] = list(keys)
         os.makedirs(adir, exist_ok=True)
         state['leases'].append(lease)
@@ -974,7 +1043,9 @@ def claim(args):
 
 
 def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_path,
-                            artifact_path=None, owner='no_pwg_scale_plan'):
+                            artifact_path=None, owner='no_pwg_scale_plan',
+                            profile_slot=None, config_dir=None,
+                            executor_lane=None):
     """Register an already-generated deterministic nominal window without consuming a runtime slot."""
     with DirLock(paths()['lock']):
         state = load_state()
@@ -1016,6 +1087,11 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
             'preflight_path': os.path.abspath(preflight_path),
             'preflight_sha256': sha256_file(preflight_path),
             'preflight_allow_over_cost': False,
+            # H3677: the profile binding `prepare` records, so a planner-registered lease
+            # and a coordinator-prepared one carry the same production-eligibility facts.
+            'profile_slot': profile_slot,
+            'config_dir': config_dir,
+            'executor_lane': executor_lane,
         }
         state['leases'].append(lease)
         save_state(state)
@@ -1161,6 +1237,40 @@ def prepare_batch(args):
         prepare(one, run_child=_run_child_inproc)
 
 
+def _prepare_run_preflight(run_child, adir, root, extra_args, lease, args, deadline):
+    """Run perf_preflight.py for `root`, write its output, enforce the cost gate.
+
+    `extra_args` are the kind-specific flags (e.g. `--nominal --no-grammar
+    --keys=...`) inserted between `root` and the trailing `--json`. Returns
+    the preflight artifact path.
+    """
+    preflight_path = os.path.join(adir, 'preflight.json')
+    p = run_child(
+        [sys.executable, os.path.join(HERE, 'perf_preflight.py'), root] +
+        extra_args + ['--json'],
+        timeout=remaining_operation_timeout(deadline, 'prepare'))
+    atomic_write_text(preflight_path, p.stdout)
+    enforce_cost_gate(preflight_path, lease.get('target'),
+                      allow_over_cost=getattr(args, 'allow_over_cost', False))
+    return preflight_path
+
+
+def _prepare_run_gen_harness(run_child, adir, lease_id, root, extra_args, binding, deadline):
+    """Run gen_opt_harness2.py for `root`, returning (harness_path, manifest_path).
+
+    `extra_args` are the kind-specific flags inserted between `root` and the
+    trailing `--out=.../--manifest-out=...`/binding flags.
+    """
+    harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease_id)
+    manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease_id)
+    run_child(
+        [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'), root] +
+        extra_args +
+        ['--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
+        timeout=remaining_operation_timeout(deadline, 'prepare'))
+    return harness, manifest
+
+
 def prepare(args, run_child=None):
     run_child = run_child or run_cmd
     if bool(args.profile_slot) != bool(args.config_dir):
@@ -1185,39 +1295,47 @@ def prepare(args, run_child=None):
                        '--validation-method=audit_window+final_schema']
         if lease['kind'] == 'verb':
             root = lease['target']
-            preflight_path = os.path.join(adir, 'preflight.json')
-            p = run_child([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
-                           root, '--json'],
-                          timeout=remaining_operation_timeout(deadline, 'prepare'))
-            atomic_write_text(preflight_path, p.stdout)
-            enforce_cost_gate(preflight_path, lease.get('target'),
-                              allow_over_cost=getattr(args, 'allow_over_cost', False))
-            harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
-            manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
-            run_child([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
-                       root, '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
-                      timeout=remaining_operation_timeout(deadline, 'prepare'))
+            preflight_path = _prepare_run_preflight(
+                run_child, adir, root, [], lease, args, deadline)
+            harness, manifest = _prepare_run_gen_harness(
+                run_child, adir, lease['id'], root, [], binding, deadline)
         elif lease['kind'] == 'nominal':
             keys = lease.get('details', {}).get('run_keys') or lease.get('details', {}).get('keys') or []
             if not keys:
                 raise SystemExit('nominal lease has no keys')
-            preflight_path = os.path.join(adir, 'preflight.json')
             root = 'nominal_%s' % lease['id']
             key_arg = ','.join(keys)
-            p = run_child([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
-                           root, '--nominal', '--no-grammar', '--keys=%s' % key_arg, '--json'],
-                          timeout=remaining_operation_timeout(deadline, 'prepare'))
-            atomic_write_text(preflight_path, p.stdout)
-            enforce_cost_gate(preflight_path, lease.get('target'),
-                              allow_over_cost=getattr(args, 'allow_over_cost', False))
-            harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
-            manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
-            run_child([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
-                       root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
-                       '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
-                      timeout=remaining_operation_timeout(deadline, 'prepare'))
+            preflight_path = _prepare_run_preflight(
+                run_child, adir, root, ['--nominal', '--no-grammar', '--keys=%s' % key_arg],
+                lease, args, deadline)
+            harness, manifest = _prepare_run_gen_harness(
+                run_child, adir, lease['id'], root,
+                ['--nominal', '--no-grammar', '--keys=%s' % key_arg], binding, deadline)
+        elif lease['kind'] == 'defect-repair':
+            details = lease.get('details') or {}
+            keys = details.get('keys') or lease.get('reserved_keys') or []
+            root = details.get('root')
+            if not keys or not root:
+                raise SystemExit('defect-repair lease needs details.root and details.keys')
+            key_arg = ','.join(keys)
+            if details.get('nominal'):
+                # H4527 22-09 (2): the no_pwg_scale_plan nominal build (raw keys, grammar on)
+                # under the lease's own namespace, with --no-tm on BOTH children: the card
+                # being re-made is in the TM, so a TM-on preflight would project 0 calls.
+                run_root = 'nominal_%s' % lease['id']
+                flags = ['--nominal', '--keys=%s' % key_arg, '--no-tm']
+                preflight_path = _prepare_run_preflight(
+                    run_child, adir, run_root, flags, lease, args, deadline)
+                harness, manifest = _prepare_run_gen_harness(
+                    run_child, adir, lease['id'], run_root, flags, binding, deadline)
+            else:
+                preflight_path = _prepare_run_preflight(
+                    run_child, adir, root, ['--keys=%s' % key_arg], lease, args, deadline)
+                harness, manifest = _prepare_run_gen_harness(
+                    run_child, adir, lease['id'], root, ['--keys=%s' % key_arg, '--no-tm'],
+                    binding, deadline)
         else:
-            raise SystemExit('prepare is only for verb/nominal translation leases')
+            raise SystemExit('prepare is only for verb/nominal/defect-repair translation leases')
     except BaseException as exc:
         block_operation(args.lease_id, token, 'preparing', exc)
         raise
@@ -1878,6 +1996,100 @@ def record_output_batch(args):
         _record_batch_progress(recorded, records)
 
 
+def _hydrate_pending_requeue(lease, current_meta):
+    """Rebuild `pending_requeue` from the lease's audit artifacts when the
+    lease predates provenance-bound pending backlog. Raises SystemExit on
+    any hydration failure -- identical checks to the pre-extraction inline
+    `if not pending:` body in prepare_requeue.
+    """
+    if int(lease.get('requeue_attempt') or 0):
+        raise SystemExit(
+            '%s: attempted legacy lease has no provenance-bound pending backlog' %
+            lease['id'])
+    try:
+        status = json.load(open(lease['status_path'], encoding='utf-8'))
+        report = json.load(open(lease['audit_report'], encoding='utf-8'))
+    except (KeyError, OSError, json.JSONDecodeError) as e:
+        raise SystemExit('%s: cannot hydrate pending requeue: %s' % (lease['id'], e))
+    errors = validate_promotable_audit(
+        lease['wf_output'], status, report, lease.get('audit_state'),
+        lease.get('audit_returncode'))
+    if errors:
+        raise SystemExit('%s: cannot hydrate pending requeue: %s' %
+                         (lease['id'], '; '.join(errors)))
+    return pending_from_report(
+        report, lease['audit_report'], current_meta.get('selected_keys') or [])
+
+
+def _write_requeue_defect_fshas(attempt_dir, pending, requeue_keys):
+    """Collect requeue_defect_fshas from every source audit report the
+    requeued keys came from, and write the union to
+    requeue.defect.fshas.txt in `attempt_dir`.
+    """
+    fshas = set()
+    source_paths = {
+        pending['sources'][key]['audit_report'] for key in requeue_keys
+    }
+    for source_path in source_paths:
+        with open(source_path, encoding='utf-8') as f:
+            source_report = json.load(f)
+        fshas.update(source_report.get('requeue_defect_fshas') or [])
+    atomic_write_text(
+        os.path.join(attempt_dir, 'requeue.defect.fshas.txt'),
+        '\n'.join(sorted(fshas)) + ('\n' if fshas else ''))
+
+
+def _execute_requeue_attempt(attempt_dir, rq, requeue_keys, lease, root, nominal,
+                              which, pending, cmd, current_manifest_path,
+                              old_manifest_sha256, manifest):
+    """Write the requeue key file, preflight+cost-gate the attempt, run
+    requeue_from_audit.py via `cmd`, and validate the resulting manifest.
+
+    On any failure, removes attempt_dir if this call created it, then
+    re-raises -- identical cleanup to the pre-extraction inline try/except
+    in prepare_requeue. Returns (preflight_path, cmd's subprocess result).
+    """
+    created = False
+    try:
+        os.makedirs(attempt_dir, exist_ok=False)
+        created = True
+        atomic_write_text(rq, '\n'.join(requeue_keys) + '\n')
+        preflight_path = os.path.join(attempt_dir, 'preflight.json')
+        preflight_cmd = [
+            sys.executable, os.path.join(HERE, 'perf_preflight.py'),
+            ('nominal_%s' % lease['id']) if nominal else root,
+            '--keys=%s' % ','.join(requeue_keys), '--json',
+        ]
+        if nominal:
+            preflight_cmd += ['--nominal', '--no-grammar']
+        if lease.get('kind') == 'defect-repair':
+            # H4527: the card a defect-repair lease re-makes is in the TM, so any requeue of
+            # it -- transient included -- must regenerate TM-off, or a 0-call TM hit would
+            # "repair" the card with its own defective text.
+            preflight_cmd.append('--no-tm')
+            cmd = cmd + ['--no-tm']
+        preflight = run_cmd(preflight_cmd, timeout=PREPARE_TIMEOUT_SECONDS)
+        atomic_write_text(preflight_path, preflight.stdout)
+        enforce_cost_gate(
+            preflight_path, lease.get('target'),
+            allow_over_cost=bool(lease.get('preflight_allow_over_cost')))
+        if which == 'defect':
+            _write_requeue_defect_fshas(attempt_dir, pending, requeue_keys)
+        p = run_cmd(cmd, timeout=PREPARE_TIMEOUT_SECONDS)
+        if sha256_file(current_manifest_path) != old_manifest_sha256:
+            raise SystemExit(
+                '%s: previous execution manifest changed during requeue preparation' %
+                lease['id'])
+        prepared_manifest = read_execution_manifest(manifest)
+        if (prepared_manifest['meta'].get('selected_keys') or []) != requeue_keys:
+            raise SystemExit('%s: requeue execution manifest key drift' % lease['id'])
+    except BaseException:
+        if created:
+            shutil.rmtree(attempt_dir, ignore_errors=True)
+        raise
+    return preflight_path, p
+
+
 def prepare_requeue(args):
     with DirLock(paths()['lock']):
         state = load_state()
@@ -1907,23 +2119,7 @@ def prepare_requeue(args):
 
         pending = lease.get('pending_requeue')
         if not pending:
-            if int(lease.get('requeue_attempt') or 0):
-                raise SystemExit(
-                    '%s: attempted legacy lease has no provenance-bound pending backlog' %
-                    lease['id'])
-            try:
-                status = json.load(open(lease['status_path'], encoding='utf-8'))
-                report = json.load(open(lease['audit_report'], encoding='utf-8'))
-            except (KeyError, OSError, json.JSONDecodeError) as e:
-                raise SystemExit('%s: cannot hydrate pending requeue: %s' % (lease['id'], e))
-            errors = validate_promotable_audit(
-                lease['wf_output'], status, report, lease.get('audit_state'),
-                lease.get('audit_returncode'))
-            if errors:
-                raise SystemExit('%s: cannot hydrate pending requeue: %s' %
-                                 (lease['id'], '; '.join(errors)))
-            pending = pending_from_report(
-                report, lease['audit_report'], current_meta.get('selected_keys') or [])
+            pending = _hydrate_pending_requeue(lease, current_meta)
             lease['pending_requeue'] = pending
         pending = validate_pending_requeue(lease, pending, origin_manifest)
         requeue_keys = list(pending.get(which) or [])
@@ -1949,48 +2145,9 @@ def prepare_requeue(args):
                     '--executor-lane=%s' % (lease.get('executor_lane') or 'serial-whole-card')]
         if nominal:
             cmd += ['--nominal', '--no-grammar']
-        created = False
-        try:
-            os.makedirs(attempt_dir, exist_ok=False)
-            created = True
-            atomic_write_text(rq, '\n'.join(requeue_keys) + '\n')
-            preflight_path = os.path.join(attempt_dir, 'preflight.json')
-            preflight_cmd = [
-                sys.executable, os.path.join(HERE, 'perf_preflight.py'),
-                ('nominal_%s' % lease['id']) if nominal else root,
-                '--keys=%s' % ','.join(requeue_keys), '--json',
-            ]
-            if nominal:
-                preflight_cmd += ['--nominal', '--no-grammar']
-            preflight = run_cmd(preflight_cmd, timeout=PREPARE_TIMEOUT_SECONDS)
-            atomic_write_text(preflight_path, preflight.stdout)
-            enforce_cost_gate(
-                preflight_path, lease.get('target'),
-                allow_over_cost=bool(lease.get('preflight_allow_over_cost')))
-            if which == 'defect':
-                fshas = set()
-                source_paths = {
-                    pending['sources'][key]['audit_report'] for key in requeue_keys
-                }
-                for source_path in source_paths:
-                    with open(source_path, encoding='utf-8') as f:
-                        source_report = json.load(f)
-                    fshas.update(source_report.get('requeue_defect_fshas') or [])
-                atomic_write_text(
-                    os.path.join(attempt_dir, 'requeue.defect.fshas.txt'),
-                    '\n'.join(sorted(fshas)) + ('\n' if fshas else ''))
-            p = run_cmd(cmd, timeout=PREPARE_TIMEOUT_SECONDS)
-            if sha256_file(current_manifest_path) != old_manifest_sha256:
-                raise SystemExit(
-                    '%s: previous execution manifest changed during requeue preparation' %
-                    lease['id'])
-            prepared_manifest = read_execution_manifest(manifest)
-            if (prepared_manifest['meta'].get('selected_keys') or []) != requeue_keys:
-                raise SystemExit('%s: requeue execution manifest key drift' % lease['id'])
-        except BaseException:
-            if created:
-                shutil.rmtree(attempt_dir, ignore_errors=True)
-            raise
+        preflight_path, p = _execute_requeue_attempt(
+            attempt_dir, rq, requeue_keys, lease, root, nominal, which, pending,
+            cmd, current_manifest_path, old_manifest_sha256, manifest)
         history = lease.setdefault('execution_manifest_history', [])
         origin_path = lease['origin_execution_manifest']
         origin_abs = os.path.abspath(origin_path)
@@ -2372,6 +2529,52 @@ def reconcile_promotion_journals():
             finish_promotion_journal(active[0])
 
 
+def _validate_lease_for_promotion(lease):
+    """Validate one ready lease's promotion artifacts and return its batch entry.
+
+    Raises SystemExit (promotion refused) on any validation failure --
+    identical checks to the pre-extraction inline loop body in promote_ready.
+    """
+    source = lease['clean_output']
+    try:
+        status = json.load(open(lease['status_path'], encoding='utf-8'))
+        report = json.load(open(lease['audit_report'], encoding='utf-8'))
+        clean_payload = json.load(open(source, encoding='utf-8'))
+    except (KeyError, OSError, json.JSONDecodeError) as e:
+        raise SystemExit('%s: promotion artifacts are unreadable: %s' % (lease['id'], e))
+    errors = validate_promotable_audit(
+        lease['wf_output'], status, report, lease.get('audit_state'),
+        lease.get('audit_returncode'))
+    pending = lease.get('pending_requeue') or empty_pending_requeue()
+    try:
+        origin_manifest = ensure_origin_manifest(lease)
+        pending = validate_pending_requeue(lease, pending, origin_manifest)
+    except SystemExit as e:
+        errors.append(str(e))
+    has_pending = bool(pending_key_set(pending))
+    expected_lease_state = 'ready_partial' if has_pending else 'ready'
+    if lease.get('state') != expected_lease_state:
+        errors.append('lease state does not match audited promotion class')
+    clean_rows = clean_payload.get('results') or []
+    if not clean_rows or any(not row.get('card') for row in clean_rows):
+        errors.append('clean output is empty or contains null cards')
+    if len(clean_rows) != lease.get('clean_count'):
+        errors.append('clean output count does not match lease')
+    if sha256_file(source) != lease.get('clean_output_sha256'):
+        errors.append('clean output hash does not match recorded artifact')
+    if errors:
+        raise SystemExit('%s: promotion refused: %s' %
+                         (lease['id'], '; '.join(errors)))
+    binding = completed_run_binding(lease)
+    return {
+        'lease_id': lease['id'],
+        'run_id': binding['run_id'],
+        'attempt_id': binding['attempt_id'],
+        'glob': os.path.abspath(source),
+        'expected_subcards': sorted({row.get('key') for row in clean_rows}),
+    }
+
+
 def promote_ready(args):
     if not args.gen_model_version or args.gen_model_version in ('sonnet', 'claude-sonnet'):
         raise SystemExit('exact --gen-model-version is required')
@@ -2391,46 +2594,7 @@ def promote_ready(args):
         # replacement -- instead of a full store read/copy/rewrite + interpreter startup
         # PER LEASE. All-or-nothing: any diverging lease fails the bundle with the store
         # byte-identical; per-lease attribution comes back in the batch report.
-        batch = []
-        for lease in ready:
-            source = lease['clean_output']
-            try:
-                status = json.load(open(lease['status_path'], encoding='utf-8'))
-                report = json.load(open(lease['audit_report'], encoding='utf-8'))
-                clean_payload = json.load(open(source, encoding='utf-8'))
-            except (KeyError, OSError, json.JSONDecodeError) as e:
-                raise SystemExit('%s: promotion artifacts are unreadable: %s' % (lease['id'], e))
-            errors = validate_promotable_audit(
-                lease['wf_output'], status, report, lease.get('audit_state'),
-                lease.get('audit_returncode'))
-            pending = lease.get('pending_requeue') or empty_pending_requeue()
-            try:
-                origin_manifest = ensure_origin_manifest(lease)
-                pending = validate_pending_requeue(lease, pending, origin_manifest)
-            except SystemExit as e:
-                errors.append(str(e))
-            has_pending = bool(pending_key_set(pending))
-            expected_lease_state = 'ready_partial' if has_pending else 'ready'
-            if lease.get('state') != expected_lease_state:
-                errors.append('lease state does not match audited promotion class')
-            clean_rows = clean_payload.get('results') or []
-            if not clean_rows or any(not row.get('card') for row in clean_rows):
-                errors.append('clean output is empty or contains null cards')
-            if len(clean_rows) != lease.get('clean_count'):
-                errors.append('clean output count does not match lease')
-            if sha256_file(source) != lease.get('clean_output_sha256'):
-                errors.append('clean output hash does not match recorded artifact')
-            if errors:
-                raise SystemExit('%s: promotion refused: %s' %
-                                 (lease['id'], '; '.join(errors)))
-            binding = completed_run_binding(lease)
-            batch.append({
-                'lease_id': lease['id'],
-                'run_id': binding['run_id'],
-                'attempt_id': binding['attempt_id'],
-                'glob': os.path.abspath(source),
-                'expected_subcards': sorted({row.get('key') for row in clean_rows}),
-            })
+        batch = [_validate_lease_for_promotion(lease) for lease in ready]
         promotion_id = promotion_identity(ready, args.gen_model_version)
         promotion_files = journal_paths(promotion_id)
         batch_manifest = promotion_files['manifest']
@@ -2499,10 +2663,16 @@ def daily_close(args):
         raise SystemExit(1)
 
 
-def write_dashboard(state, daily=None):
+def write_dashboard(state, daily=None, running=None, reserved=None):
+    """`running`/`reserved` let a caller that already scanned this exact state (e.g.
+    save_state, right after prepare_state_for_save) pass the result through instead of
+    triggering another expire_stale_leases + full lease-list scan (H3754 W7)."""
     p = ensure_dirs()
     leases = state.get('leases', [])
-    running = running_translation_leases(state)
+    if running is None:
+        running = running_translation_leases(state)
+    if reserved is None:
+        reserved = reserved_translation_leases(state)
     runtime_mode = ('staged-probed' if any(
         lease.get('runtime_mode') == 'staged-probed' for lease in running) else 'standard')
     runtime_limit = (state.get('runtime_limit', STAGED_TRANSLATION_LIMIT)
@@ -2512,7 +2682,7 @@ def write_dashboard(state, daily=None):
         'schema': DASHBOARD_SCHEMA,
         'generated_at': utc_now(),
         'translation_limit': state.get('translation_limit', TRANSLATION_LIMIT),
-        'reserved_translation_leases': len(reserved_translation_leases(state)),
+        'reserved_translation_leases': len(reserved),
         'running_translation_leases': len(running),
         'runtime_limit': runtime_limit,
         'runtime_mode': runtime_mode,
@@ -2550,13 +2720,24 @@ def main(argv=None):
     sub = ap.add_subparsers(dest='cmd', required=True)
     s = sub.add_parser('status')
     s.set_defaults(func=status)
-    c = sub.add_parser('claim')
+    c = sub.add_parser(
+        'claim',
+        help='reserve a translation (verb/nominal) or defect-repair lease')
     c.add_argument('--lane', required=True)
-    c.add_argument('--kind', required=True, choices=('verb', 'nominal', 'rootmap'))
+    c.add_argument(
+        '--kind', required=True,
+        choices=('verb', 'nominal', 'rootmap', 'defect-repair'),
+        help='defect-repair: already-promoted root + --keys; prepare stamps --no-tm '
+             '(do not improvise gen_opt_harness2 --keys)')
     c.add_argument('--owner', required=True)
     c.add_argument('--lease-id')
     c.add_argument('--batch-size', type=int, default=12)
     c.add_argument('--ttl-seconds', type=int, default=LEASE_TTL_SECONDS)
+    c.add_argument('--keys', help='comma-separated sub-card keys (required for defect-repair)')
+    c.add_argument('--root', help='already-promoted root (required for defect-repair)')
+    c.add_argument('--nominal', action='store_true',
+                   help='defect-repair only: the keys are no-PWG nominal cards (prepare builds '
+                        'them as no_pwg_scale_plan does, --nominal, with --no-tm)')
     c.set_defaults(func=claim)
     p = sub.add_parser('prepare')
     p.add_argument('lease_id')

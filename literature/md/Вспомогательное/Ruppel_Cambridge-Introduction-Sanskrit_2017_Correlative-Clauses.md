@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Ruppel_Cambridge-Introduction-Sanskrit_2017_Correlative-Clauses
 
 **Source:** `Ruppel_Cambridge-Introduction-Sanskrit_2017_Correlative-Clauses.pdf`  
@@ -379,3 +381,5 @@ to overcome
 Hitopadeśa 3.187
 
 240
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — test the homograph `(key1, h)` keying fix on 2 real cases
 
 **For:** a fresh agent session. **Goal:** validate, on `dA` and `vah`, whether promoted
@@ -141,3 +143,5 @@ Concretely:
 - data: `src/pwg_ru_translated.jsonl` (store, gitignored), `src/assembled_cards.jsonl` (structural)
 - context: [`BRIDGE_FOLLOWUPS_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/closed_investigations/BRIDGE_FOLLOWUPS_2026-06-30.md), PR #18 (the bridge)
 - coordination: an autonomous account also works pwg_ru on `master`; do this on a branch + PR.
+
+_Dr. Mārcis Gasūns_

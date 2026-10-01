@@ -1,0 +1,5 @@
+;v{<s>svargavarga</s>}
+<eid>1<syns><s>svar-m,svarga-m,nAka-m</s></syns>
+<eid>2<syns><s>deva-m,sura-m</s></syns>
+;v{<s>vyomavarga</s>}
+<eid>3<syns><s>vyoman-n</s></syns>

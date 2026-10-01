@@ -1,6 +1,6 @@
 # ROADMAP — Sa→Ru gloss layer (2026 H2)
 
-_Created: 19-07-2026 · Last updated: 19-07-2026_
+_Created: 19-07-2026 · Last updated: 03-09-2026_
 
 Index: [PLAN_RussianTranslation_saru-gloss-quality_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_saru-gloss-quality_2026H2.md).
 Four waves, strict dependency order (D2). Each states what unblocks it.
@@ -63,6 +63,17 @@ Deliverables:
   compounds (≥14 chars). Splitter output feeds the existing rightmost-element / joined-form retry.
 - **W3.3** — Re-measure the affected strata against wave 2; a form recovered but wrong is a
   regression, not a win.
+- **W3.4 — DONE 03-09-2026 (H3876)** — the *marker-residual* stratum (1,389 forms / 2,312 tokens),
+  which needs no segmentation at all: the corpus's `+`/`-` marks already decompose the form, and
+  the rightmost element is simply lemmatized through the DCS form→lemma map. **1,018 forms /
+  1,783 tokens recovered**, coverage 87.11 % → 87.28 %, lemma precision 25/25 on the canonical
+  D5 sample, 27 top-1 gloss flips in 40,387 lemma entries.
+  [REPORT_H3876_saru_marker_head_recovery_03-09-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/REPORT_H3876_saru_marker_head_recovery_03-09-2026.md).
+
+W3.2 remains **NO-GO** as measured
+([gold/saru_gloss_wave3_cheda_coverage.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/saru_gloss_wave3_cheda_coverage.md));
+the long-compound stratum waits on a context-aware neural segmenter over the aligned verse text
+("wave 3.5"), not on `vidyut.cheda` over isolated forms.
 
 Acceptance: coverage delta table + a precision check on a sample of newly-resolved forms showing
 no precision regression vs wave 2.

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — Scope A, SLICE C: parallel verb-root translation workstream
 
 Date: 2026-06-29 · Audience: Claude Code (new chat, runs CONCURRENTLY with the Slice A chat) ·
@@ -61,3 +63,5 @@ Co-Authored-By line); `wf_output.sc.json` is a gitignored local artifact.
 - **Cleanup:** `run_pilot_wf.sc.js` and `wf_output.sc.json` are throwaway — delete when done.
 - **What to bring back:** per root clean/total, requeue count, $ cost
   (`parse_workflow_cost.py <transcript_dir>`), accept/flag decision; Slice C running totals.
+
+_Dr. Mārcis Gasūns_

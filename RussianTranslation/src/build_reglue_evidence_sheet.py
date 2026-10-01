@@ -48,6 +48,10 @@ from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
 from sheet_screening import screening_block
 import reglue_overlap as ro
+# H3752: `CLASS_OF`/`QUOTA` are keyed on the placed label. An unplaced twin must
+# resolve through this rather than hit the `"adds"` default, which would paint
+# the very rows issue #1736 is about as green ＋ additions.
+from edition_rel import base_subtype
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -128,7 +132,13 @@ def build_items():
     pools = collections.defaultdict(list)
     census = collections.Counter()
     for r in rel:
-        st = (r["layer"], r["relationship"]["subtype"])
+        # H3752: keyed on the BASE label. A stratum is a (layer, kind-of-relation)
+        # slot, and `_unplaced` is not a different kind — it is the placement
+        # result, which this sheet already filters on: only checkable (= placed)
+        # pairs are ever drawn, so every card in a stratum carries the plain
+        # label anyway. Keying on the raw name would silently empty every
+        # stratum whose rows are unplaced and leave QUOTA unfillable.
+        st = (r["layer"], base_subtype(r["relationship"]["subtype"]))
         # H2880: the sidecar now also carries PWG-internal corrections. They are
         # deliberately outside THIS sheet's population: its question is "does
         # this supplement from a later layer sit at the right PWG sense?", which
@@ -171,7 +181,7 @@ def build_items():
             ip = r["relationship"]["insertion_point"]
             m = ro.compare(target.get("de", ""), rec.get("de", ""))
             subtype = r["relationship"]["subtype"]
-            kl = CLASS_OF.get(subtype, "adds")
+            kl = CLASS_OF.get(base_subtype(subtype), "adds")   # H3752
             layer = r["layer"]
 
             pwg_side = (

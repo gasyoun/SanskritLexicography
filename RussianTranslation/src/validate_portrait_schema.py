@@ -26,7 +26,12 @@ CARD_REQUIRED = {
     'pos', 'diasystem', 'labels', 'senses',
 }
 SENSE_REQUIRED = {
-    'n', 'sub', 'equivalents_de', 'gloss_de', 'equivalence_type',
+    # 'div' (roman division) and 'sub2' (greek sub-sub-sense) are H3948's two
+    # added enumeration tiers; both are None on every record the pre-H3948
+    # parser could already see. This gate runs against LIVE portrait() output,
+    # so requiring them here is a regression guard, while the JSON schema keeps
+    # them optional so portraits emitted before H3948 stay valid.
+    'div', 'n', 'sub', 'sub2', 'equivalents_de', 'gloss_de', 'equivalence_type',
     'grammar', 'ab_labels', 'diasystem', 'citations', 'citations_resolved',
     'strata', 'examples_sa',
 }

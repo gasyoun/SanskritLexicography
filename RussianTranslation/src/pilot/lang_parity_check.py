@@ -9,6 +9,8 @@ This does NOT diff behavior between languages — it only checks that every ledg
 entry has a verdict (and the verdict's required field), and that no file a SHARED /
 INTENTIONAL-DIVERGENCE / GAP entry depends on has drifted since it was last verified.
 Drift means a human must re-open the entry and re-affirm (or correct) its verdict.
+Both the check and --update-hash refuse a ledger block that repeats a JSON key at any
+level (a merge/replay artifact) instead of silently keeping the last copy.
 """
 import hashlib
 import json
@@ -48,18 +50,135 @@ LANG_SIGNAL = [
 ]
 
 
+# --- Duplicate-key refusal ------------------------------------------------
+# Plain json.loads keeps the LAST value of a repeated key and drops the rest without a
+# word. On 22-09-2026 the recovered PR #2305 (H4530) replayed an old re-hash hunk on a
+# newer base and appended 7 duplicate keys with STALE hashes inside
+# `headless_execution_manifest_h818.verified_sha256`; the checker read the stale last
+# values and reported 8 "changed since last parity verification" drifts instead of the
+# real cause, and master stayed red until #2306 (H5259). The ledger is hand-merged JSON,
+# so a repeated key is always a merge/replay artifact: refuse it at parse time.
+class DuplicateKeyError(SystemExit):
+    """A ledger block repeats a JSON key. A SystemExit like this module's other refusals
+    (the CLI exits 1 with the message); its own type so callers and the selftest can tell
+    it apart from them."""
+
+
+class _DupObject(dict):
+    """A parsed JSON object that repeats a key at or below itself; `dups` = [(path, key)]."""
+    dups = ()
+
+
+def _nested_dups(value, path):
+    if isinstance(value, _DupObject):
+        return [(path + p, k) for p, k in value.dups]
+    if isinstance(value, list):
+        return [d for i, v in enumerate(value) for d in _nested_dups(v, path + (i,))]
+    return []
+
+
+def _refuse_duplicate_keys(pairs):
+    """object_pairs_hook. json calls it innermost-object-first, so the object that holds
+    the repeat cannot see which entry it belongs to: it marks itself instead of raising,
+    the mark bubbles up through every enclosing object, and parse_ledger_json() raises
+    once the whole block is parsed, naming the entry id, where and which key."""
+    obj, dups = {}, []
+    for k, v in pairs:
+        dups += _nested_dups(v, (k,))
+        if k in obj:
+            dups.append(((), k))
+        obj[k] = v
+    if not dups:
+        return obj
+    marked = _DupObject(obj)
+    marked.dups = dups
+    return marked
+
+
+def _where(path):
+    return ''.join('[%d]' % p if isinstance(p, int) else ('.' if i else '') + p
+                   for i, p in enumerate(path)) or 'its top level'
+
+
+def _duplicate_entry_ids(data):
+    """[(id, [indexes])] for ids carried by more than one ledger entry, in first-seen order."""
+    seen = {}
+    for i, e in enumerate(data):
+        if isinstance(e, dict) and 'id' in e:
+            seen.setdefault(e['id'], []).append(i)
+    return [(k, ix) for k, ix in seen.items() if len(ix) > 1]
+
+
+def parse_ledger_json(raw, path=LEDGER_MD, block='lang_parity_ledger'):
+    """json.loads for a LANG_PARITY.md block that refuses a repeated key at ANY level and,
+    in the ledger block, two entries sharing one `id`."""
+    data = json.loads(raw, object_pairs_hook=_refuse_duplicate_keys)
+    dups = _nested_dups(data, ())
+    # A replay that re-appends a WHOLE entry leaves two list items with one id -- no key
+    # repeats inside either object, so the key check cannot see it. check() would then
+    # evaluate both copies (the stale one reads as drift) and --update-hash would re-stamp
+    # every match, so the duplicate would persist silently. Refuse it the same way.
+    id_dups = (_duplicate_entry_ids(data)
+               if block == 'lang_parity_ledger' and isinstance(data, list) else [])
+    if id_dups:
+        raise DuplicateKeyError(
+            '%s: the ```json %s block has %d entry id(s) carried by more than one entry -- '
+            'refusing to load it:\n  - %s\n'
+            'A repeated entry id is a merge/replay artifact (e.g. an old hunk re-applied on a '
+            'newer base re-appends a whole entry). The checker would evaluate both copies, and a '
+            'stale one reads as false "changed since last parity verification" drift. '
+            'Fix by hand: delete the stale copy of each entry, re-check the kept entry\'s verdict, '
+            'then run `python src/pilot/lang_parity_check.py --update-hash <id>`.'
+            % (path, block, len(id_dups), '\n  - '.join(
+                'entry id %r repeated at list positions %s' % (k, ', '.join(map(str, ix)))
+                for k, ix in id_dups)))
+    if not dups:
+        return data
+    lines = []
+    for p, key in dups:
+        if p and isinstance(p[0], int) and isinstance(data, list) and isinstance(data[p[0]], dict):
+            lines.append('entry %r: key %r repeated in %s'
+                         % (data[p[0]].get('id', '<entry %d>' % p[0]), key, _where(p[1:])))
+        else:
+            lines.append('key %r repeated in %s' % (key, _where(p)))
+    raise DuplicateKeyError(
+        '%s: the ```json %s block repeats %d JSON key(s) -- refusing to load it:\n  - %s\n'
+        'A repeated key is a merge/replay artifact (e.g. an old hunk re-applied on a newer '
+        'base appends a second copy). Plain JSON parsing would silently keep the LAST copy, and '
+        'a stale hash there reads as false "changed since last parity verification" drift. '
+        'Fix by hand: delete the stale copy of each repeated key, re-check the entry\'s verdict, '
+        'then run `python src/pilot/lang_parity_check.py --update-hash <id>`.'
+        % (path, block, len(dups), '\n  - '.join(lines)))
+
+
+LEDGER_OPEN_RE = re.compile(r'^```json lang_parity_ledger[ \t]*\r?$', re.MULTILINE)
+
+
+def refuse_second_ledger_fence(text, path=LEDGER_MD):
+    """Only the FIRST ledger fence is ever read, so a second one (a replayed block) would be
+    ignored silently -- its entries neither checked nor re-stamped. Refuse it instead."""
+    n = len(LEDGER_OPEN_RE.findall(text))
+    if n > 1:
+        raise DuplicateKeyError(
+            '%s: %d ```json lang_parity_ledger fenced blocks found -- refusing to load it. Only '
+            'the first would be read; a second block is a merge/replay artifact. Fix by hand: '
+            'merge the entries you mean to keep into ONE block (one entry per id) and delete the '
+            'other fence.' % (path, n))
+
+
 def load_ledger(path=LEDGER_MD):
     text = open(path, encoding='utf-8').read()
     m = FENCE_RE.search(text)
     if not m:
         raise SystemExit('no ```json lang_parity_ledger fenced block found in %s' % path)
-    return json.loads(m.group(1)), text, m.span(1)
+    refuse_second_ledger_fence(text, path)
+    return parse_ledger_json(m.group(1), path), text, m.span(1)
 
 
 def load_coverage(path=LEDGER_MD):
     """Parse the optional lang_parity_coverage block ({exempt: {path: reason}}). Absent => {}."""
     m = COVERAGE_FENCE_RE.search(open(path, encoding='utf-8').read())
-    return json.loads(m.group(1)) if m else {}
+    return parse_ledger_json(m.group(1), path, 'lang_parity_coverage') if m else {}
 
 
 def candidate_files():
@@ -150,8 +269,11 @@ def check(entries):
     return violations
 
 
-def update_hash(entry_id):
-    entries, text, span = load_ledger()
+def update_hash(entry_id, path=None):
+    # load_ledger() refuses a repeated key or entry id BEFORE anything is rewritten: re-serializing here
+    # would silently drop every copy but the last, which is the defect this gate reports.
+    path = path or LEDGER_MD
+    entries, text, span = load_ledger(path)
     found = False
     for e in entries:
         if e.get('id') == entry_id:
@@ -165,7 +287,7 @@ def update_hash(entry_id):
         raise SystemExit('no ledger entry with id %r' % entry_id)
     new_block = json.dumps(entries, indent=2, ensure_ascii=False)
     new_text = text[:span[0]] + new_block + '\n' + text[span[1]:]
-    open(LEDGER_MD, 'w', encoding='utf-8', newline='\n').write(new_text)
+    open(path, 'w', encoding='utf-8', newline='\n').write(new_text)
     print('updated verified_sha256 for %r' % entry_id)
 
 

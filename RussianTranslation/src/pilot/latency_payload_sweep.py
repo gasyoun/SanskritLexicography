@@ -14,11 +14,16 @@ load-representative task (one clear ``{"ok": true}`` instruction + ``padding_byt
 domain-shaped filler) under ``--permission-mode plan`` -- NOT the old 63 B ``PREFIX`` + N*'x'
 (that padding tripped Sonnet-5's plan-mode refusal, a false NO-GO). Two byte counts are reported
 and must not be conflated (sol.md #4):
-  * ``padding_bytes``       -- the ``--ladder`` / ``MEASURED_SIZE`` argument (the filler size).
+  * ``padding_bytes``       -- the ``--ladder`` / ``MEASURED_SIZE`` argument (since H4527 the
+                               filler is padding_bytes + 4 238 B, the retired prefix's bytes).
   * ``actual_prompt_bytes`` -- the TRUE encoded prompt size, derived from the SAME
                                ``_probe_prompt`` the probe sends (single source of truth, cannot
                                drift; == ``total_input_bytes``, kept under both names).
-For the D-K measured acceptance size, padding_bytes=6491 -> actual_prompt_bytes=6828 (v1.9.17+).
+For the D-K measured acceptance size, padding_bytes=6491 -> actual_prompt_bytes=6828 (v1.9.17+),
+10 729 after H3157/H4277 prepended the TASK SHAPE block and bridge, 11 082 since H4527 (15-09-2026)
+replaced both with one honest question and kept their bytes as reference text. Readings across
+that change are NOT latency-comparable (the question needs far less thinking); probe event rows
+carry ``probe_prompt_sha`` to split the series.
 Output is validated by result-envelope structure ({"ok": true}); only its BYTE
 COUNT is recorded -- never the output content, never credentials.
 

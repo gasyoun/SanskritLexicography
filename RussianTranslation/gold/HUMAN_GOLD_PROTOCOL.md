@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Human gold-set protocol for `pwg_ru`
 
 This protocol turns the existing LLM-judged scaffold
@@ -68,3 +70,4 @@ as errors.
 - The final report clearly separates human-confirmed precision from the older
   LLM-judged estimate.
 
+_Dr. Mārcis Gasūns_

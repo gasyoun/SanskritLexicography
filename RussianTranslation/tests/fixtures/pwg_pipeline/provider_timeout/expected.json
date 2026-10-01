@@ -1,0 +1,97 @@
+{
+  "accounting": {
+    "calls": 2,
+    "cost_evaluable": false,
+    "pending_calls": 0,
+    "unevaluable_calls": 1
+  },
+  "artifact_kinds": [
+    "audit",
+    "request",
+    "response"
+  ],
+  "intents": [
+    {
+      "intent": "requeue"
+    },
+    {
+      "intent": "requeue"
+    }
+  ],
+  "jobs": [
+    {
+      "calls": [
+        {
+          "cost_evaluable": 1,
+          "failure_class": "malformed_response",
+          "input_tokens": 40,
+          "output_tokens": 0,
+          "requested_model": "grok-4.6",
+          "route": "xai-tm",
+          "served_model": "grok-4.6",
+          "state": "malformed"
+        }
+      ],
+      "kind": "fragment",
+      "source_hash": "5152ec6ac9dfe5b7551a402e150f31974c63a57545d4f3fe509ffde3d64b55d9",
+      "source_identity": "pwg.malformed.1",
+      "state": "planned",
+      "transitions": [
+        "->planned",
+        "planned->prepared",
+        "prepared->reserved",
+        "reserved->running",
+        "running->captured",
+        "captured->audited",
+        "audited->needs_requeue",
+        "needs_requeue->planned"
+      ],
+      "verdicts": [
+        {
+          "validator_version": "pwg_pipeline.audit.v1",
+          "verdict_class": "requeue"
+        }
+      ]
+    },
+    {
+      "calls": [
+        {
+          "cost_evaluable": 0,
+          "failure_class": "timeout",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "requested_model": "grok-4.6",
+          "route": "xai-tm",
+          "served_model": null,
+          "state": "timed_out"
+        }
+      ],
+      "kind": "card",
+      "source_hash": "cac219d632468766b161dd9771bf1029252681d3143cc0a49c622dbd3aec49a2",
+      "source_identity": "pwg.timeout.1",
+      "state": "planned",
+      "transitions": [
+        "->planned",
+        "planned->prepared",
+        "prepared->reserved",
+        "reserved->running",
+        "running->captured",
+        "captured->audited",
+        "audited->needs_requeue",
+        "needs_requeue->planned"
+      ],
+      "verdicts": [
+        {
+          "validator_version": "pwg_pipeline.audit.v1",
+          "verdict_class": "requeue"
+        }
+      ]
+    }
+  ],
+  "promotion_phases": [],
+  "schema": "pwg.pipeline.replay.v1",
+  "store": {
+    "exists": false,
+    "rows": 0
+  }
+}

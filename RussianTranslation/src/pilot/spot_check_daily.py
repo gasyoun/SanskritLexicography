@@ -34,6 +34,7 @@ import math
 import os
 import random
 import re
+import shlex
 import subprocess
 import sys
 import time
@@ -48,12 +49,14 @@ for p in (HERE, SRC):
         sys.path.insert(0, p)
 
 from store_path import canonical_store  # noqa: E402
+import gate_evidence as ge  # noqa: E402
 
 SCHEMA = 'pwg.spotcheck_daily.v1'
 
 # single-sourced content policies (promote_final_cards owns TN_RE; canary_gate owns
 # the SAN-LOSS literal class) — import, never restate (H2158 lesson).
 import promote_final_cards as pfc  # noqa: E402
+import markup_fidelity_gates  # noqa: E402 — real span-survival gate (H3593/FINDINGS §589)
 
 SAN_LOSS_RE = re.compile(r'SAN-LOSS|UNMAPPED')
 CONTENT_FIELDS = pfc.CONTENT_MASS_FIELDS
@@ -172,22 +175,42 @@ def check_card(key, rows):
 
 
 def store_san_loss_scan(store):
-    """ANY SAN-LOSS/UNMAPPED literal anywhere in the store's ru/en fields (R4.1's
-    unconditional freeze trigger) — full scan, not sample-bounded."""
+    """ANY row where the real span-survival gate fires SAN-LOSS (R4.1's unconditional
+    freeze trigger) — full scan, not sample-bounded.
+
+    Calls markup_fidelity_gates.markup_span_flags(de, ru, check_ab=False) per row — the
+    exact gate + threshold audit_store_gates.py runs over the RU path — instead of
+    grepping the literal ``SAN-LOSS``/``UNMAPPED`` marker string in ``ru``. The marker-grep
+    never recomputes ``{#...#}`` span preservation, so a real head-line SAN-LOSS row (source
+    spans silently dropped, no literal marker text) returned ``san_loss_in_store=False``
+    (FINDINGS §589, SanskritLexicography#1902).
+    """
+    return store_san_loss_census(store)[0]
+
+
+def store_san_loss_census(store):
+    """(hits, rows_scanned) — same scan, plus the denominator.
+
+    W1 (H3748, #1803): the hit list alone cannot distinguish "scanned 11,603 rows, found
+    no span loss" from "the store was not there". The scan itself is unchanged; the row
+    count is the evidence that it happened.
+    """
     hits = []
+    scanned = 0
     if not os.path.exists(store):
-        return hits
+        return hits, scanned
     with open(store, encoding='utf-8') as f:
         for line in f:
             try:
                 row = json.loads(line)
             except ValueError:
                 continue
-            for field in ('ru', 'en'):
-                value = row.get(field)
-                if isinstance(value, str) and SAN_LOSS_RE.search(value):
-                    hits.append({'subcard': row.get('subcard'), 'field': field})
-    return hits
+            scanned += 1
+            de, ru = row.get('de') or '', row.get('ru') or ''
+            for flag in markup_fidelity_gates.markup_span_flags(de, ru, check_ab=False):
+                if flag.startswith('SAN-LOSS'):
+                    hits.append({'subcard': row.get('subcard'), 'field': 'ru', 'flag': flag})
+    return hits, scanned
 
 
 def judge_card(judge_cmd, key, rows, workdir):
@@ -196,7 +219,10 @@ def judge_card(judge_cmd, key, rows, workdir):
     payload_path = os.path.join(workdir, 'judge_payload_%d.json' % abs(hash(key)))
     with open(payload_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump({'key': key, 'rows': rows}, f, ensure_ascii=False, indent=1)
-    cmd = judge_cmd.replace('{payload}', payload_path)
+    # H4209 (audit F2): the template is run with shell=True, so every substituted
+    # value must be POSIX-quoted — a payload path containing a space (or worse)
+    # otherwise splits in the shell and every card comes back judge_error.
+    cmd = judge_cmd.replace('{payload}', shlex.quote(payload_path))
     try:
         proc = subprocess.run(cmd, shell=True, capture_output=True, text=True,
                               encoding='utf-8', timeout=600)
@@ -217,7 +243,7 @@ def build_report(date, fraction, records_dir, store, judge_cmd=None, workdir=Non
     defects = []
     for key in sampled:
         defects.extend(check_card(key, rows_by_key.get(key) or []))
-    san_hits = store_san_loss_scan(store)
+    san_hits, store_rows = store_san_loss_census(store)
     judge_results = []
     if judge_cmd:
         for key in sampled:
@@ -238,11 +264,60 @@ def build_report(date, fraction, records_dir, store, judge_cmd=None, workdir=Non
         'sampled': sampled,
         'defects': defects,
         'sev3_count': len(sev3),
+        # W1 accounting (#1803 C6-05): the denominators. `store_rows` is how many store
+        # rows the SAN-LOSS scan actually read, `judged`/`judge_errors` how many sampled
+        # cards the judge returned a verdict for vs failed on. An all-errors judge day is
+        # judged=0 -- the shape C6-05 names, now countable instead of silent.
+        'store_rows': store_rows,
+        'judged': sum(1 for j in judge_results if j.get('status') == 'judged'),
+        'judge_errors': sum(1 for j in judge_results if j.get('status') == 'judge_error'),
         'san_loss_in_store': bool(san_hits),
         'san_loss_hits': san_hits[:100],
         'judge': ({'cmd_template': judge_cmd, 'results': judge_results} if judge_cmd
                   else 'skipped'),
     }
+
+
+def write_evidence(report, records_dir, store, evidence_path):
+    """The W1 gate-evidence sidecar for one spot-check report (#1803 C6-05).
+
+    Predicate logic untouched: the verdict below is exactly `sev3_count` plus the store
+    SAN-LOSS flag, the same two facts `lane_guard` already reads. What is new is that the
+    record names what was examined -- how many promotion records, how many store rows,
+    how many sampled cards each gate ran over -- so a clean day cannot be confused with a
+    day on which nothing was checked. A date with zero auto-promotions is the one declared
+    legitimate emptiness; an all-errors judge day is stamped as a warning, because
+    "inconclusive is never PASS" is this module's own contract.
+    """
+    ev = ge.GateEvidence('spot_check_daily',
+                         'R4.1 daily spot check over promoted cards (C6-05)')
+    ev.add_input('promotion_records', path=records_dir,
+                 units=len(report['promotion_records']))
+    ev.add_input('store', path=store, units=report['store_rows'])
+    sampled = len(report['sampled'])
+    ev.add_predicate('card_gates', evaluations=sampled, hits=report['sev3_count'])
+    ev.add_predicate('store_san_loss', evaluations=report['store_rows'],
+                     hits=len(report.get('san_loss_hits') or []))
+    if report['judge'] != 'skipped':
+        ev.add_predicate('judge', evaluations=report['judged'],
+                         hits=sum(1 for d in report['defects'] if d.get('check') == 'judge'))
+        if report['judge_errors']:
+            ev.warnings.append(
+                'C6-05: %d of %d sampled card(s) came back judge_error — inconclusive, '
+                'and this gate does not (yet) trip R4.1 on them'
+                % (report['judge_errors'], sampled))
+    ev.note('population', report['population'])
+    ev.note('fraction', report['fraction'])
+    ev.set_verdict('fail' if (report['sev3_count'] or report['san_loss_in_store'])
+                   else 'pass')
+    if not report['population']:
+        ev.declare_expected_empty(
+            'no_promotions_for_date',
+            'no auto-promotion landed on %s: sampling 10%% of nothing is not a failure '
+            'of the sampler' % report['date'])
+    ev.assert_nonvacuous()
+    ev.emit(evidence_path)
+    return ev
 
 
 def main(argv=None):
@@ -275,6 +350,7 @@ def main(argv=None):
         json.dump(report, f, ensure_ascii=False, indent=1)
         f.write('\n')
     os.replace(tmp, out)
+    write_evidence(report, args.records_dir, store, ge.sidecar_for(out))
     print('spot-check %s: population=%d sampled=%d sev3=%d san_loss_in_store=%s -> %s'
           % (args.date, report['population'], len(report['sampled']),
              report['sev3_count'], report['san_loss_in_store'], out))
@@ -310,8 +386,13 @@ def selftest():
              'provenance': {'total_senses': 1}},
             {'subcard': 'rootA~~b', 'ru': 'плохой {T3}', 'h': 'b', 'grammar': 'm',
              'layer': 'pwg'},                                  # sev-3 tn_residue
-            {'subcard': 'rootB~~c', 'ru': 'x SAN-LOSS y', 'h': 'c', 'grammar': 'f',
-             'layer': 'zzz'},                                  # sev-3 san_loss + sev-1 layer
+            {'subcard': 'rootB~~c', 'de': '{#a#} {#b#} {#c#}', 'ru': 'x SAN-LOSS y',
+             'h': 'c', 'grammar': 'f', 'layer': 'zzz'},         # sev-3 san_loss + sev-1 layer
+            # H3593 regression (SanskritLexicography#1902, FINDINGS §589): a real dA-shaped
+            # head-line SAN-LOSS with NO literal marker text in `ru` — the marker-grep this
+            # replaces returned san_loss_in_store=False for exactly this shape.
+            {'subcard': 'dA~~h0_regress', 'de': '{#di/tsati#} {#ditsate#} P. 7,4,54.',
+             'ru': 'желать дать', 'h': 'dA', 'grammar': 'v', 'layer': 'pwg'},
         ]
         with open(store, 'w', encoding='utf-8', newline='\n') as f:
             for r in rows:
@@ -327,6 +408,10 @@ def selftest():
         assert not any(d['key'] == 'rootA~~a' and d['severity'] == 3
                        for d in rep['defects']), 'clean card flagged'
         assert rep['sev3_count'] >= 2 and rep['san_loss_in_store'] is True
+        san_hit_subcards = {h['subcard'] for h in store_san_loss_scan(store)}
+        assert 'dA~~h0_regress' in san_hit_subcards, (
+            'real span-loss with no literal marker must be caught by the gate, not '
+            'missed like the old marker-grep: %r' % san_hit_subcards)
         assert rep['judge'] == 'skipped'
         # determinism: same date -> same sample
         rep2 = build_report(today, 1.0, td, store)
@@ -341,13 +426,28 @@ def selftest():
                             judge_cmd=json.dumps(sys.executable) + ' -c "print(41+"',
                             workdir=td)
         assert all(j['status'] == 'judge_error' for j in rep4['judge']['results'])
+        # H4209 (audit F2): {payload} lands in a shell=True template; a payload
+        # path containing a space used to split in the shell -> judge_error for
+        # every card. The judge below READS the payload, so 'judged' proves the
+        # quoted path both survived the shell and pointed at the right file.
+        work_sp = os.path.join(td, 'work dir')
+        os.makedirs(work_sp)
+        jcode = ("import json,sys;"
+                 "print(json.dumps({'severity': 0, 'notes': "
+                 "json.load(open(sys.argv[1], encoding='utf-8'))['key']}))")
+        judge_sp = '%s -c %s {payload}' % (json.dumps(sys.executable),
+                                           json.dumps(jcode))
+        j = judge_card(judge_sp, 'rootA~~a', [{'ru': 'чистый'}], work_sp)
+        assert j['status'] == 'judged' and j['severity'] == 0 and \
+            j['notes'] == 'rootA~~a', j
         # a promoted key with NO store rows is a sev-3 presence defect
         _mk_promotion(td, 'w3', ['ghost~~g'], now)
         rep5 = build_report(today, 1.0, td, store)
         assert ('ghost~~g', 'presence') in {(d['key'], d['check']) for d in rep5['defects']}
     print('spot_check_daily selftest: PASS (day scoping, deterministic sample, gate '
           'suite severities, store SAN-LOSS scan, judge hook + inconclusive-on-error, '
-          'ghost-key presence)')
+          'quoted {payload} substitution with a spacey path (H4209), ghost-key '
+          'presence)')
     return 0
 
 

@@ -12,7 +12,11 @@ tree-kill runner so every claude-spawning kill point (worker calls, the outer wo
 import os
 import subprocess
 import sys
+import threading
 import time
+
+from execution_contract import (KILLED_REASON_HARD_TIMEOUT,          # noqa: E402
+                                KILLED_REASON_NO_OUTPUT_PROGRESS)
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -190,8 +194,186 @@ def terminate_tree(proc, deadline):
     return trouble
 
 
+# H2878 (issue #1680, FINDINGS §378) -- the no-output-progress watchdog.
+#
+# The stdlib path below (`proc.communicate(timeout=)`) can only answer ONE question: has the
+# call exceeded its total wall budget? That is the question `PRODUCTION_HARD_TIMEOUT_MS`
+# already answers, and H2313 established it cannot separate a hung route from a slow one --
+# 300 000 ms sat below p90 of the COMPLETED spawn distribution, so it was manufacturing
+# failures on the healthy tail. Raising it to 600 000 ms stopped that, and bought no ability
+# to detect a hang at all: a spawn that dies silently at second 3 is now held for ten minutes.
+#
+# These helpers answer the other question: how long has this spawn produced NOTHING? That is
+# a liveness signal, it is orthogonal to total elapsed time, and it is what makes a kill
+# readable after the fact (`killed_reason=no_output_progress` vs `hard_timeout`).
+#
+# WHY BINARY PIPES. Progress has to be observed at BYTE granularity. A text-mode
+# `TextIOWrapper.read(n)` blocks until n characters or EOF and `readline()` blocks until a
+# newline, so under either one a spawn dribbling bytes without newlines is indistinguishable
+# from a dead one. `os.read` on the raw fd returns as soon as ANY bytes are available, so the
+# progress path opens the pipes in binary and decodes once at the end, with the caller's own
+# `encoding`. The classic path is untouched and still used whenever no progress observation
+# was asked for.
+
+_PROGRESS_POLL_SECONDS = 0.05
+
+
+def _mark_progress(state, now):
+    state['last_progress'] = now
+    state['progress_events'] += 1
+    if state['first_progress_s'] is None:
+        state['first_progress_s'] = now - state['start']
+
+
+def _drain_pipe(stream, chunks, state, lock, is_result, progress_filter=None):
+    """Read one pipe to EOF, recording byte arrivals as progress.
+
+    Only RESULT bytes (stdout) reset the quiet window. Stderr is counted separately and
+    deliberately does NOT count as progress: a CLI retrying internally against a locked
+    account chatters on stderr while producing no result at all (FINDINGS §270), and treating
+    that chatter as liveness would make the watchdog blind to the one hang it most needs to
+    see. The stderr count is still recorded, so a reading can say which pipe was alive.
+
+    H4528: ``progress_filter`` (a callable over one complete stdout line, bytes) narrows
+    "result bytes" to "result LINES the filter accepts". A token-streaming CLI puts its own
+    bookkeeping on stdout too — `system/api_retry` lines every few seconds while it retries a
+    429 internally — so on that format "any stdout byte" is the same blind spot stderr was.
+    Without a filter the byte-granular behaviour above is unchanged, byte for byte.
+    ``bytes_seen`` still counts EVERY stdout byte either way; only the liveness clock moves.
+    """
+    fd = stream.fileno()
+    pending = b''
+    try:
+        while True:
+            block = os.read(fd, 65536)
+            if not block:
+                break
+            with lock:
+                chunks.append(block)
+                if not is_result:
+                    state['stderr_bytes_seen'] += len(block)
+                    continue
+                state['bytes_seen'] += len(block)
+                now = time.monotonic()
+                if progress_filter is None:
+                    _mark_progress(state, now)
+                    continue
+                pending += block
+                *lines, pending = pending.split(b'\n')
+                if any(progress_filter(line) for line in lines):
+                    _mark_progress(state, now)
+    except (OSError, ValueError):
+        # The pipe is closed under us when the tree is killed. That is the normal end of
+        # this thread, not a fault: whatever was drained before the kill is kept.
+        pass
+    if pending and progress_filter is not None and progress_filter(pending):
+        with lock:                                   # a final line with no trailing newline
+            _mark_progress(state, time.monotonic())
+
+
+def _feed_stdin(proc, payload):
+    """Write the prompt and close stdin, in a thread, so a full pipe cannot deadlock the poll
+    loop. A child killed mid-write breaks the pipe; that is expected, never fatal here."""
+    try:
+        if payload:
+            proc.stdin.write(payload)
+        proc.stdin.close()
+    except (OSError, ValueError):
+        pass
+
+
+def _communicate_with_progress(proc, payload, timeout, window_s, state, progress_filter=None):
+    """`communicate` with a stalled-output watchdog. Returns (stdout_bytes, stderr_bytes).
+
+    Raises ``subprocess.TimeoutExpired`` carrying ``killed_reason`` / ``bytes_seen`` /
+    ``quiet_ms`` when either bound fires. The caller performs the tree kill -- this function
+    only decides, and never leaves the decision implicit.
+    """
+    lock = threading.Lock()
+    out_chunks, err_chunks = [], []
+    threads = []
+    if proc.stdin is not None:
+        threads.append(threading.Thread(target=_feed_stdin, args=(proc, payload), daemon=True))
+    if proc.stdout is not None:
+        threads.append(threading.Thread(
+            target=_drain_pipe, args=(proc.stdout, out_chunks, state, lock, True, progress_filter),
+            daemon=True))
+    if proc.stderr is not None:
+        threads.append(threading.Thread(
+            target=_drain_pipe, args=(proc.stderr, err_chunks, state, lock, False), daemon=True))
+    for thread in threads:
+        thread.start()
+    state['threads'] = threads
+    state['out_chunks'] = out_chunks
+    state['err_chunks'] = err_chunks
+    state['lock'] = lock
+
+    def _snapshot():
+        now = time.monotonic()
+        with lock:
+            quiet = now - state['last_progress']
+            if quiet > state['quiet_s']:
+                state['quiet_s'] = quiet          # LONGEST silence, not the trailing one
+            return now, quiet, state['bytes_seen']
+
+    while True:
+        returncode = proc.poll()
+        now, quiet, _seen = _snapshot()
+        if returncode is not None:
+            break
+        if timeout is not None and now - state['start'] >= timeout:
+            state['killed_reason'] = KILLED_REASON_HARD_TIMEOUT
+            raise subprocess.TimeoutExpired(proc.args, timeout)
+        if window_s is not None and quiet >= window_s:
+            # The whole point of the unit: this is a kill on STALLED OUTPUT, and the
+            # exception carries the window that fired -- not the total-wall ceiling, which
+            # this spawn never reached and which would misreport the cause.
+            state['killed_reason'] = KILLED_REASON_NO_OUTPUT_PROGRESS
+            raise subprocess.TimeoutExpired(proc.args, window_s)
+        time.sleep(_PROGRESS_POLL_SECONDS)
+
+    # Exited on its own. Join the readers so nothing the child wrote just before exit is lost.
+    for thread in threads:
+        thread.join(timeout=10.0)
+    _snapshot()
+    with lock:
+        return b''.join(out_chunks), b''.join(err_chunks)
+
+
+def _progress_state():
+    start = time.monotonic()
+    return {'start': start, 'last_progress': start, 'bytes_seen': 0,
+            'stderr_bytes_seen': 0, 'quiet_s': 0.0, 'killed_reason': None,
+            'progress_events': 0, 'first_progress_s': None}
+
+
+def _first_progress_ms(state):
+    first = state['first_progress_s']
+    return None if first is None else int(first * 1000)
+
+
+def _publish_progress(state, progress_out):
+    """Copy the bounded reading into the caller's dict. Seven scalars, no payload.
+
+    H4528 adds ``progress_events`` (how many arrivals counted as liveness) and
+    ``first_progress_ms`` (spawn start -> first counted arrival; None if there never was one).
+    On a token-streaming spawn the second is the time-to-first-token the no-progress window
+    has to clear, recorded per call so the window can be re-derived from production itself.
+    """
+    if progress_out is None:
+        return
+    progress_out['bytes_seen'] = state['bytes_seen']
+    progress_out['stderr_bytes_seen'] = state['stderr_bytes_seen']
+    progress_out['quiet_ms'] = int(state['quiet_s'] * 1000)
+    progress_out['killed_reason'] = state['killed_reason']
+    progress_out['elapsed_ms'] = int((time.monotonic() - state['start']) * 1000)
+    progress_out['progress_events'] = state['progress_events']
+    progress_out['first_progress_ms'] = _first_progress_ms(state)
+
+
 def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
-                  capture_output=False, cwd=None, env=None, **_ignored):
+                  capture_output=False, cwd=None, env=None, progress_window_ms=None,
+                  progress_out=None, progress_filter=None, **_ignored):
     """Drop-in for ``subprocess.run`` (Popen + ``communicate(timeout=)``) that, on timeout,
     performs bounded best-effort termination of the ENTIRE process tree instead of just the
     immediate child — so a killed call is bounded and no orphaned native binary keeps holding the
@@ -199,10 +381,35 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
     the pipes and reaps the parent using the REMAINING kill budget to an absolute deadline (a small
     grace beyond the call budget, not an independent fixed window). Cleanup trouble is attached
     diagnostically to the raised ``subprocess.TimeoutExpired`` — the caller still records exactly
-    one ``timeout`` event."""
+    one ``timeout`` event.
+
+    H2878: ``progress_window_ms`` and ``progress_out`` select the no-output-progress path.
+
+    * ``progress_out`` (a dict) alone is OBSERVE ONLY -- the spawn is bounded exactly as
+      before, and the dict comes back holding ``bytes_seen`` / ``stderr_bytes_seen`` /
+      ``quiet_ms`` (the LONGEST stretch with no result bytes) / ``elapsed_ms`` /
+      ``killed_reason``. This is how a lane learns whether a window would be safe to arm
+      before arming one, which is the difference between a reading and a guess.
+    * ``progress_window_ms`` additionally ARMS the watchdog: a spawn silent for that long is
+      killed with ``killed_reason=no_output_progress``, distinct from the total-wall
+      ``hard_timeout``. Both are attached to the raised ``TimeoutExpired`` alongside
+      ``bytes_seen`` and ``quiet_ms``, so every caller's existing ``except TimeoutExpired``
+      still fires and simply has more to say.
+
+    Both require ``capture_output`` -- there are no pipes to watch otherwise, so the request
+    degrades to the classic path rather than pretending to observe something.
+
+    H4528: ``progress_filter`` (callable over one complete stdout line, as bytes) decides which
+    stdout lines count as liveness; see ``_drain_pipe``. None keeps H2878's byte-granular rule.
+    """
     pipe = subprocess.PIPE if capture_output else None
+    # H2878: the watchdog needs byte-granular arrivals, which only raw binary pipes give
+    # (see the helpers above). Without capture_output there is nothing to watch, so the
+    # request degrades to the classic path instead of silently observing nothing.
+    watching = capture_output and (progress_window_ms is not None or progress_out is not None)
     popen_kw = dict(stdin=subprocess.PIPE, stdout=pipe, stderr=pipe,
-                    text=text, encoding=encoding, cwd=cwd, env=env)
+                    text=(False if watching else text),
+                    encoding=(None if watching else encoding), cwd=cwd, env=env)
     job = None
     setup_trouble = None
     if os.name == 'nt':
@@ -258,6 +465,9 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
                 except (OSError, subprocess.TimeoutExpired):
                     pass
                 raise OSError('Windows Job Object setup failed: %s' % setup_trouble) from exc
+    if watching:
+        return _run_watched(proc, argv, input, timeout, encoding, text,
+                            progress_window_ms, progress_out, progress_filter)
     start = time.monotonic()
     try:
         out, err = proc.communicate(input=input, timeout=timeout)
@@ -312,4 +522,88 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
     finally:
         if proc.poll() is not None and getattr(proc, '_tree_job', None) is not None:
             proc._tree_job.close()
+    return subprocess.CompletedProcess(argv, proc.returncode, out, err)
+
+
+def _run_watched(proc, argv, payload, timeout, encoding, text, progress_window_ms, progress_out,
+                 progress_filter=None):
+    """The H2878 progress-watched half of ``run_tree_kill``, split out so the classic path
+    above stays byte-for-byte what it was. Same contract, same tree-kill, same bounded drain;
+    the only additions are the stalled-output bound and the reading it produces."""
+    codec = encoding or 'utf-8'
+    if payload is not None and isinstance(payload, str):
+        payload = payload.encode(codec)
+    window_s = None if progress_window_ms is None else progress_window_ms / 1000.0
+    state = _progress_state()
+    try:
+        try:
+            out, err = _communicate_with_progress(proc, payload, timeout, window_s, state,
+                                                  progress_filter)
+        except subprocess.TimeoutExpired as exc:
+            # Identical bounded-cleanup shape to the classic path: terminate the TREE while the
+            # parent still lives, then reap within a small proportional grace. The budget is
+            # taken from the bound that actually fired, so a 90 s progress kill is not given a
+            # ten-minute cleanup window derived from a ceiling it never reached.
+            fired_s = exc.timeout or 0
+            grace = min(10.0, fired_s * 0.1 + 2.0)
+            deadline = time.monotonic() + grace
+            trouble = terminate_tree(proc, deadline)
+            for thread in state.get('threads') or []:
+                thread.join(timeout=max(0.5, deadline - time.monotonic()))
+            try:
+                proc.wait(timeout=max(0.5, deadline - time.monotonic()))
+            except subprocess.TimeoutExpired:
+                trouble = (trouble or '') + ';reap-timeout'
+                try:
+                    proc.kill()
+                    proc.wait(timeout=2)
+                except (OSError, subprocess.TimeoutExpired):
+                    pass
+            lock = state.get('lock')
+            with lock:
+                out = b''.join(state.get('out_chunks') or [])
+                err = b''.join(state.get('err_chunks') or [])
+            if trouble:
+                exc.cleanup_trouble = trouble
+            # H2056 / #943: the drained text is the ONLY copy of what the killed child said,
+            # and a rate-limited CLI says it there rather than exiting 429. Same slots as the
+            # classic path, so `timeout_output_text` / `classify_timeout` read a progress kill
+            # exactly as they read a wall kill.
+            exc.output = out.decode(codec, 'replace')
+            exc.stderr = err.decode(codec, 'replace')
+            # The three fields the unit exists to produce. `killed_reason` is what separates a
+            # hung route from a call the production lane would still have been waiting on.
+            exc.killed_reason = state['killed_reason']
+            exc.bytes_seen = state['bytes_seen']
+            exc.stderr_bytes_seen = state['stderr_bytes_seen']
+            exc.quiet_ms = int(state['quiet_s'] * 1000)
+            exc.progress_events = state['progress_events']          # H4528
+            exc.first_progress_ms = _first_progress_ms(state)
+            _publish_progress(state, progress_out)
+            raise
+        except BaseException as exc:
+            deadline = time.monotonic() + 10.0
+            trouble = terminate_tree(proc, deadline)
+            for thread in state.get('threads') or []:
+                thread.join(timeout=max(0.5, deadline - time.monotonic()))
+            try:
+                proc.wait(timeout=max(0.5, deadline - time.monotonic()))
+            except BaseException as reap_exc:
+                trouble = _join_trouble(trouble, 'exception-reap:%s' % type(reap_exc).__name__)
+                try:
+                    proc.kill()
+                    proc.wait(timeout=2)
+                except (OSError, subprocess.TimeoutExpired):
+                    pass
+            if trouble:
+                exc.cleanup_trouble = trouble
+            _publish_progress(state, progress_out)
+            raise
+    finally:
+        if proc.poll() is not None and getattr(proc, '_tree_job', None) is not None:
+            proc._tree_job.close()
+    _publish_progress(state, progress_out)
+    if text:
+        out = out.decode(codec)
+        err = err.decode(codec)
     return subprocess.CompletedProcess(argv, proc.returncode, out, err)

@@ -26,6 +26,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 from sibling_root import sibling_root  # noqa: E402
 from build_src import iast_to_slp1    # noqa: E402  (sinonimy IAST→SLP1)
+if os.path.join(HERE, 'pilot') not in sys.path:
+    sys.path.insert(0, os.path.join(HERE, 'pilot'))
+import gate_evidence as ge            # noqa: E402
 GITHUB = sibling_root(HERE)
 PWG_KEY1 = os.path.join(HERE, '..', '..', 'HeadwordLists', 'then-2014', 'PWG-unique-key1-106085.txt')
 CORPUS_DB = os.environ.get('SAMUDRA_CORPUS_DB',
@@ -623,7 +626,57 @@ def _coverage_counts(keys, idx, sidx, kidx, pidx, sin_syn_idx, sin_sense_idx,
     }
 
 
+def coverage_evidence(idx, counts, corpus_n, corp_hit, kow_zone, label):
+    """W1 gate-evidence for the coverage census (#1803 C2-5).
+
+    C2-5: the census prints 0 % corpus/dictionary coverage when the sources were simply
+    never built — indistinguishable from a measured zero. The percentages below are
+    unchanged; what the record adds is (a) every source jsonl as a NAMED, hashed input
+    whose ``units`` is its row count and whose ``exists`` is false when it was never
+    built, and (b) the module's own :func:`evidence_status`. With no independent
+    authority loaded the verdict is **inconclusive**, never a pass — the same refusal
+    ``build_card`` already makes when it stamps ``evidence_unavailable`` rather than
+    degrading to the LLM verdict.
+    """
+    ev = ge.GateEvidence('corpus_gate_coverage',
+                         'external-dictionary + corpus coverage census (C2-5)')
+    for code in INDEP + [REF]:
+        path = os.path.join(HERE, code + '.jsonl')
+        rows = sum(1 for hit in idx.values() if hit.get(code))
+        ev.add_input('source:%s' % code, path=path, units=rows)
+    ev.add_input('pwg_headwords', units=counts['tot'])
+    ev.add_predicate('independent_dict_coverage', evaluations=counts['tot'],
+                     hits=counts['per'])
+    ev.add_predicate('reference_kow_in_zone', evaluations=counts['kow_zone_n'],
+                     hits=counts['kow_n'])
+    ev.add_predicate('corpus_examples', evaluations=corpus_n, hits=corp_hit)
+    ev.add_predicate('hindi_sense', evaluations=counts['tot'], hits=counts['sense_n'])
+    ev.add_predicate('kosha_synonyms', evaluations=counts['tot'], hits=counts['syn_n'])
+    ev.add_predicate('plant_binomials', evaluations=counts['tot'], hits=counts['plant_n'])
+    ev.add_predicate('sinonimy', evaluations=counts['tot'],
+                     hits=counts['sin_syn_n'] + counts['sin_sense_n'])
+    status = evidence_status()
+    ev.note('evidence_status', status)
+    ev.note('sources_present', sorted(SOURCES_PRESENT))
+    ev.note('sample', label)
+    ev.note('kow_zone', ''.join(sorted(kow_zone)))
+    if status != 'ok':
+        ev.warnings.append(
+            'C2-5: no independent correctness authority (%s) is present, so every '
+            'coverage percentage below is UNMEASURED, not a measured zero'
+            % '/'.join(INDEP))
+    ev.set_verdict('pass' if status == 'ok' else 'inconclusive')
+    ev.assert_nonvacuous()
+    return ev
+
+
 def cmd_coverage(idx, args):
+    args = list(args)
+    evidence_path = None
+    if '--evidence' in args:
+        i = args.index('--evidence')
+        evidence_path = args[i + 1]
+        del args[i:i + 2]
     n = int(args[0]) if args else None
     rng = random.Random(COVERAGE_SEED)
     keys, label = _select_sample(rng, n)
@@ -667,6 +720,11 @@ def cmd_coverage(idx, args):
     print('--- Sinonimy (Leonchenko, SPECIALIST/SENSE corroboration) ---')
     print('  synonym set:  %d (%.1f%%)' % (counts['sin_syn_n'], 100.0 * counts['sin_syn_n'] / tot))
     print('  sense entry:  %d (%.1f%%)' % (counts['sin_sense_n'], 100.0 * counts['sin_sense_n'] / tot))
+    ev = coverage_evidence(idx, counts, corpus_n, corp_hit, kow_zone, label)
+    ev.emit(evidence_path or ge.default_sidecar('corpus_gate_coverage'))
+    print(ev.summary())
+    if ev.verdict != 'pass':
+        print('  ^ %s' % '; '.join(ev.warnings))
 
 def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent

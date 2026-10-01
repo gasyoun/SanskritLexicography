@@ -1,8 +1,24 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 21-08-2026_
+_Created: 09-07-2026 · Last updated: 15-09-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 06-09-2026 - H4270 (OxAlpha GLM 5.3 Flash) - gloss-wrapper prompt hardening + one `_apta` c1 re-test: funded defect fixed, new single-sense defect named, audit requeue (no ship)
+
+OxAlpha (`glm-5.3-flash`, opencode lane), 1 paid call on c1 (window 139.9 s; fresh 18:37Z GO receipt reused, probe ration 2/2). Record: [pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md](pwg_ru/h4270/H4270_C1_RETEST_RESULT_06-09-2026.md).
+
+| Metric | H4015 (old prompt) | H4270 (hardened prompt) |
+|---|---:|---:|
+| RU `{%…%}` wrappers (DE 8: 7 DE + 1 EN-masked) | 1 | **8** |
+| `markup_wrapper_dropped` | ×2 (hard requeue) | **0** |
+| `<ls>` paired refs preserved | 7/7 | 7/7 |
+| `{#…#}` spans preserved | 8/8 | 8/8 |
+| `«…»` guillemets | 0 | 0 |
+| Semantic risk score / high-confidence | 67 / 0 | 170 / **1** |
+| Audit verdict | requeue (wrapper drop) | **requeue — NEW defect: masked EN span translated** (`{%equation of a degree%}`→`{%уравнение степени%}`, sense 4b) |
+
+Named stop: AUDIT_DEFECT_REQUEUE 3rd occurrence — residual to MG (rule-tightening + 4th window, or option b/c). Store untouched.
 
 ## 22-08-2026 - H3291 (Fable) - full DH-standards audit: released pack verified green; wave-1 gate FAIL confirmed honest; wave-2 payload lost (regenerable)
 
@@ -564,6 +580,10 @@ Opus 5 1M (`claude-opus-5[1m]`) drove the run; the calls themselves are **Sonnet
 `paid` arm only, profile `D:\ClaudeTools\profiles\claude4\.claude`, spawn cwd
 `D:\pwg_ru_cli_cwd` (**0 injectable ancestry bytes**), strictly sequential.
 **CLI version 2.1.223** — the number truth #1 was measured on is **1.127.0**.
+*(Correction, 15-09-2026, [H4842](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4842-Opus_RussianTranslation_watchdog-token-stream-default-flip-stale-records_14.09.26.md):
+"1.127.0" here and below is a **repo release** of this pipeline, CHANGELOG
+`## [1.127.0] - 2026-08-02`, not a CLI version. The CLI version of the 02-08-2026
+measurement was never recorded. The verdict stands.)*
 12 spawns issued (over the handoff's ≤10 ceiling — see the report), 9 returned envelopes,
 **$1.1313** total. Raw envelopes committed under
 [`pwg_ru/h2250/raw/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h2250/raw).
@@ -1529,7 +1549,7 @@ budget**, so the gate provides no differentiation and a ceiling change moves eve
 
 ### Independently corroborated by H2011, from the opposite direction — and it bounds this fix
 
-[H2011](#02-08-2026-h2011-at-the-old-180-s-ceiling--c4-gate-pass-canary-pass-and-the-first-per-card-observed-economics-on-the-production-route)
+[H2011](#02-08-2026-h2011-at-the-old-180-s-ceiling-c4-gate-pass-canary-pass-and-the-first-per-card-observed-economics-on-the-production-route)
 ran the same morning and reached the same place by spending instead of reading. Its decisive
 control: **calls 2–4 were the *identical* fragment `rAtra_f0`, at 180.0 / 180.1 / 142.6 s
 success.** Same input, same lane, same profile — three outcomes. Held against this entry's
@@ -3483,3 +3503,31 @@ ceiling, different driving config dir — that separates self-contention from ac
 in a single call, which no amount of re-probing from this seat can.
 
 Model: Opus 5 (`claude-opus-5`).
+
+_Dr. Mārcis Gasūns_
+
+---
+
+## 06-09-2026 — c1 `_apta` re-translation window: gate GO ×2 legs, window success, audit re-defects the card (H4015)
+
+OxAlpha (`glm-5.3-flash`) executing [H4015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4015-OxAlpha_SanskritLexicography_hapta-1key-retranslation-window_03.09.26.md).
+**Store untouched at 11 519 rows; nothing promoted; `_apta` stays on the defect list.**
+
+| leg | result |
+|---|---|
+| gate attempt 1, 12:27:57Z | NO-GO — warm-up `rate_limit`, 429 "session limit · resets 7:10pm MSK"; fail-closed, no measured leg; 1 call, cost not evaluable |
+| gate attempt 2, 18:28:42Z | PASS — measured 25 736 ms vs 80 000; spacing honoured: 6 h 0 m 45 s after attempt 1 (MG chat ruling: wait out the wall; the 19:10 reset alone did not reopen the lane) |
+| canary | GO — 31.3 s, 3/3 senses, `null_keys: []` |
+| window `_apta` | success — 137.2 s, first attempt, result sha `f9f133e8…` |
+
+Ration closed 06-09 at **2 of 2 probe attempts**; durable evidence root `~/.pwg_ru_evidence/c1`.
+The card itself: DE **8** `{%…%}` gloss wrappers → RU **1**, zero «» — wrappers dropped, not
+converted (`{%ein%}` → plain `некий`, `<is>`/`<ls>` refs all preserved). `audit_window.py`
+unit gates 1/1 clean, but `requeue.defect.keys.txt` contains `_apta` — the promotable verdict.
+**Named stop: AUDIT_DEFECT_REQUEUE — the sanctioned recipe reproduces the defect, now 2 windows
+running (H3654 b2, H4015).** Promotion and the H3654 defect-list removal correctly not attempted.
+
+Record: [`pwg_ru/h4015/H4015_C1_WINDOW_RESULT_06-09-2026.md`](pwg_ru/h4015/H4015_C1_WINDOW_RESULT_06-09-2026.md).
+Spend: 5 paid calls, cost not evaluable (FINDINGS §597). Model: generation `claude-sonnet-5`.
+
+_Dr. Mārcis Gasūns_

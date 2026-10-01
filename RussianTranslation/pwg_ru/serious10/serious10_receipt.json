@@ -1,0 +1,253 @@
+{
+  "schema": "pwg.tm.serious10.receipt.v1",
+  "handoff": "H2877",
+  "gate_sample": "H2684 n=400 seed 2684",
+  "sample_n": 400,
+  "serious_n": 10,
+  "serious_rate_before": 0.025,
+  "policy": "pwg.tm.wave2.defaults.v1",
+  "taxonomy": {
+    "T1": {
+      "label": "unsafe short-gloss source reuse",
+      "scope": "definition_gloss",
+      "mechanism": "A whole-fragment short or function-word German span matched the exact-source lexicon, and the Russian it carried belongs to a longer collocation in the publication record.",
+      "covered_by": "pwg.tm.wave2.defaults.v1 SHORT_GLOSS_DENYLIST"
+    },
+    "T2": {
+      "label": "short-gloss defect propagated into a sense wrapper",
+      "scope": "sense",
+      "mechanism": "Sense-class exact-source reuse is off, but merge_glosses copies the gloss_map into the wrapper, so a T1 defect resurfaces at sense level.",
+      "covered_by": "pwg.tm.wave2.defaults.v1 SHORT_GLOSS_DENYLIST (transitive)"
+    },
+    "T3": {
+      "label": "untranslated German residue promoted inside a sense wrapper",
+      "scope": "sense",
+      "mechanism": "A promoted sense wrapper still carries source-language {%...%} spans; no gate rejects a wrapper for source-language residue.",
+      "covered_by": null
+    },
+    "T4": {
+      "label": "archaic-orthography content gloss reuse",
+      "scope": "sense",
+      "mechanism": "An archaic spelling (thun for tun) is a content word, so the function-word denylist does not reach it, and the exact-source lexicon reused an unrelated Russian target.",
+      "covered_by": null
+    },
+    "T5": {
+      "label": "ambiguous abbreviation collision",
+      "scope": "recurring_formula",
+      "mechanism": "The house table read <ab>v. a.</ab> as videlicet and emitted a translated Russian abbreviation; PWG uses it for vor allem, and house convention is to copy <ab> tokens verbatim in any case.",
+      "covered_by": null
+    }
+  },
+  "defect_action_counts": {
+    "T1": 5,
+    "T5": 1,
+    "T2": 3,
+    "T3": 3,
+    "T4": 1
+  },
+  "rows_changed": 10,
+  "rows_with_residue": 9,
+  "judge_spans_unaddressed": 0,
+  "false_russian_claims_after": 0,
+  "paid_claude_calls": 0,
+  "independent_rescore": {
+    "judge": "Grok 4.5 (grok-4.5)",
+    "protocol": "H2684 independent gate, 8 shards x 50",
+    "status": "not_run",
+    "xai_api_key_present": false,
+    "reason": "XAI_API_KEY unset. An OPENROUTER_API_KEY exists but is a different route from the recorded H2684 gate, and firing it is an unbudgeted paid call this handoff never authorised. Handoff fence: leave repairs as candidates, do not self-score."
+  },
+  "wave1_immutable": {
+    "before": {
+      "wave1_b": {
+        "present": false
+      },
+      "wave1_b_slice": {
+        "present": true,
+        "files": {
+          "checkpoint.json": {
+            "sha256": "8a60d9e73f7c414fd54ccdc4e61c4f636623e2e1cf29a1b6e1de6dba3918f78a",
+            "bytes": 71394
+          },
+          "cost_ledger.json": {
+            "sha256": "c899c1f3260f079e53d14bc5d50da29d5c35fd4b0fce11a7d268174008ce06ef",
+            "bytes": 548
+          },
+          "extract_receipt.json": {
+            "sha256": "41c7150bb8c083b90900df91c0c1dd0ebe263fa0b47a67d15586f7a84e033b79",
+            "bytes": 623
+          },
+          "extracted_fragments.jsonl": {
+            "sha256": "f26aae5eecd3d9bd60027e986d38776597456ca054d1a6923cdf107e0c3be553",
+            "bytes": 828841
+          },
+          "extracted_parents.jsonl": {
+            "sha256": "01a6896e874bf2ac9239d7b02fbb4f1a025e3a004123dcf3fc8acee6755917fc",
+            "bytes": 97337
+          },
+          "gate_receipts.jsonl": {
+            "sha256": "36bf958b402f69d2145c2c4ac8aa21cd37622821221d55cab59a0bb5b9057077",
+            "bytes": 269447
+          },
+          "grok46_drafts.jsonl": {
+            "sha256": "fd5297f9582df970a3ca6db30bc6ba1c9af297db1b36f1451de2fb77cc12a1d9",
+            "bytes": 24345
+          },
+          "independent_packet.jsonl": {
+            "sha256": "34f73bb62c8a0ab46528261a7e49da9bcc1be502c3374d255e2f656a86a22f99",
+            "bytes": 563508
+          },
+          "promoted.jsonl": {
+            "sha256": "e2df9471e30f1030fe59a57c519a3d27e512ec68b883716b32c1eefd7eeb9c15",
+            "bytes": 1507873
+          },
+          "quality_report.json": {
+            "sha256": "744cb73342531b965a87f55b28eeb8ef6f70cdede750983875acac3f15c303c4",
+            "bytes": 2170
+          },
+          "quarantine.jsonl": {
+            "sha256": "3ad7d7d7acc7cef9005f4864be8e3d260f69afef0464873b1773c90e809593d6",
+            "bytes": 144630
+          },
+          "reconciliation.json": {
+            "sha256": "be704f027dff1dbf0298d23e31ee412002f765080854fa44e067b7d2c48ddecc",
+            "bytes": 1671
+          },
+          "sample400.jsonl": {
+            "sha256": "7d0b4d494cd2764219dee4aa60df5a7610fbf21fbec1b9d6df8884e1fc6f3813",
+            "bytes": 918532
+          },
+          "sample400.jsonl.meta.json": {
+            "sha256": "c53bcaa75ffe2c891d2de34350a13f225147f2d46121fe41f7ff5149e8f8ba60",
+            "bytes": 1713
+          },
+          "slice_manifest.json": {
+            "sha256": "15031fc551f19bc30c0aec19d0c80d89cc3a34f52dafa4680bbb1b18ef9eb19f",
+            "bytes": 733
+          }
+        }
+      },
+      "wave1_b_receipt": {
+        "present": true,
+        "files": {
+          "adjudication400.jsonl": {
+            "sha256": "cff9ce740f0041d1b07bf6bf0dd9698bce261027d1b2512450d8c31f4bc7df09",
+            "bytes": 595659
+          },
+          "quality_report.json": {
+            "sha256": "cefa85e85047a595ab6e392e80546de6f48ce5ec37101b043744d64d1e4aa2f4",
+            "bytes": 7495
+          },
+          "reconciliation.json": {
+            "sha256": "2183e96aa962c06007ec631bfa93f174d0f396af3e6b52df2dbe3d665b30a09c",
+            "bytes": 871
+          },
+          "sample400.jsonl": {
+            "sha256": "2bfc826c0517d94fe727b136c8e5cce9e02d6d6ae741d9ff7af3d1adfcb7bb44",
+            "bytes": 925351
+          },
+          "sample400.jsonl.meta.json": {
+            "sha256": "0cb6e6fc03f1b8669739bfd3b07665f64dca0562033e1d36e4a24b38c93567c3",
+            "bytes": 5884
+          }
+        }
+      }
+    },
+    "after": {
+      "wave1_b": {
+        "present": false
+      },
+      "wave1_b_slice": {
+        "present": true,
+        "files": {
+          "checkpoint.json": {
+            "sha256": "8a60d9e73f7c414fd54ccdc4e61c4f636623e2e1cf29a1b6e1de6dba3918f78a",
+            "bytes": 71394
+          },
+          "cost_ledger.json": {
+            "sha256": "c899c1f3260f079e53d14bc5d50da29d5c35fd4b0fce11a7d268174008ce06ef",
+            "bytes": 548
+          },
+          "extract_receipt.json": {
+            "sha256": "41c7150bb8c083b90900df91c0c1dd0ebe263fa0b47a67d15586f7a84e033b79",
+            "bytes": 623
+          },
+          "extracted_fragments.jsonl": {
+            "sha256": "f26aae5eecd3d9bd60027e986d38776597456ca054d1a6923cdf107e0c3be553",
+            "bytes": 828841
+          },
+          "extracted_parents.jsonl": {
+            "sha256": "01a6896e874bf2ac9239d7b02fbb4f1a025e3a004123dcf3fc8acee6755917fc",
+            "bytes": 97337
+          },
+          "gate_receipts.jsonl": {
+            "sha256": "36bf958b402f69d2145c2c4ac8aa21cd37622821221d55cab59a0bb5b9057077",
+            "bytes": 269447
+          },
+          "grok46_drafts.jsonl": {
+            "sha256": "fd5297f9582df970a3ca6db30bc6ba1c9af297db1b36f1451de2fb77cc12a1d9",
+            "bytes": 24345
+          },
+          "independent_packet.jsonl": {
+            "sha256": "34f73bb62c8a0ab46528261a7e49da9bcc1be502c3374d255e2f656a86a22f99",
+            "bytes": 563508
+          },
+          "promoted.jsonl": {
+            "sha256": "e2df9471e30f1030fe59a57c519a3d27e512ec68b883716b32c1eefd7eeb9c15",
+            "bytes": 1507873
+          },
+          "quality_report.json": {
+            "sha256": "744cb73342531b965a87f55b28eeb8ef6f70cdede750983875acac3f15c303c4",
+            "bytes": 2170
+          },
+          "quarantine.jsonl": {
+            "sha256": "3ad7d7d7acc7cef9005f4864be8e3d260f69afef0464873b1773c90e809593d6",
+            "bytes": 144630
+          },
+          "reconciliation.json": {
+            "sha256": "be704f027dff1dbf0298d23e31ee412002f765080854fa44e067b7d2c48ddecc",
+            "bytes": 1671
+          },
+          "sample400.jsonl": {
+            "sha256": "7d0b4d494cd2764219dee4aa60df5a7610fbf21fbec1b9d6df8884e1fc6f3813",
+            "bytes": 918532
+          },
+          "sample400.jsonl.meta.json": {
+            "sha256": "c53bcaa75ffe2c891d2de34350a13f225147f2d46121fe41f7ff5149e8f8ba60",
+            "bytes": 1713
+          },
+          "slice_manifest.json": {
+            "sha256": "15031fc551f19bc30c0aec19d0c80d89cc3a34f52dafa4680bbb1b18ef9eb19f",
+            "bytes": 733
+          }
+        }
+      },
+      "wave1_b_receipt": {
+        "present": true,
+        "files": {
+          "adjudication400.jsonl": {
+            "sha256": "cff9ce740f0041d1b07bf6bf0dd9698bce261027d1b2512450d8c31f4bc7df09",
+            "bytes": 595659
+          },
+          "quality_report.json": {
+            "sha256": "cefa85e85047a595ab6e392e80546de6f48ce5ec37101b043744d64d1e4aa2f4",
+            "bytes": 7495
+          },
+          "reconciliation.json": {
+            "sha256": "2183e96aa962c06007ec631bfa93f174d0f396af3e6b52df2dbe3d665b30a09c",
+            "bytes": 871
+          },
+          "sample400.jsonl": {
+            "sha256": "2bfc826c0517d94fe727b136c8e5cce9e02d6d6ae741d9ff7af3d1adfcb7bb44",
+            "bytes": 925351
+          },
+          "sample400.jsonl.meta.json": {
+            "sha256": "0cb6e6fc03f1b8669739bfd3b07665f64dca0562033e1d36e4a24b38c93567c3",
+            "bytes": 5884
+          }
+        }
+      }
+    },
+    "identical": true
+  }
+}

@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # pwg_ru — merged-layer translate prompt (LOCKED v1, 2026-06-17)
 
 The translation stage for the **full supplement chain** (PWG + PW + SCH + PWKVN +
@@ -189,3 +191,5 @@ full a-section. Source-language routing for the whole a-section is precompiled b
 [`compile_translatable.py`](../src/compile_translatable.py) (`all` mode → one manifest per
 headword, each unit tagged de/fr/en/sa/en?); audit NWS attribution with
 [`nws_split.py check`](../src/nws_split.py) as a deterministic, judge-independent F12 gate.
+
+_Dr. Mārcis Gasūns_

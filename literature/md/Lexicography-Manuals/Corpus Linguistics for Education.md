@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Corpus Linguistics for Education _ A Guide for Research -- Pérez-Paredes, Pascual -- Routledge Corpus Linguistics Guides, 1, 2020 -- Routledge, Taylor -- isbn13 9780367198435 -- 46900d873f86b642d7bf89b023cac245 -- 
 
 **Source:** `Corpus Linguistics for Education _ A Guide for Research -- Pérez-Paredes, Pascual -- Routledge Corpus Linguistics Guides, 1, 2020 -- Routledge, Taylor -- isbn13 9780367198435 -- 46900d873f86b642d7bf89b023cac245 -- .epub`  
@@ -6080,3 +6082,5 @@ Page numbers in *italic* denote figures and in **bold** denote tables.
 []{#ch19.xhtml_pg176 .pagebreak role="doc-pagebreak" title="176"}
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+_Dr. Mārcis Gasūns_

@@ -127,3 +127,5 @@ a passage* — noted as future judge-pass candidates, not applied retroactively 
 - Opus judge run on all; verdicts inlined.
 - Gold sample double-annotated, κ + error rate documented; G5 human review flips approved rows
   to `review_status='approved'` (only then does `export_interop.py` publish them).
+
+_Dr. Mārcis Gasūns_

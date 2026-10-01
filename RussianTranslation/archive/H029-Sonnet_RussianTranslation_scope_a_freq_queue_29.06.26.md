@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Handoff — Scope A: continue the PWG→Russian frequency (dhātu) queue
 
 Date: 2026-06-29 · Audience: Claude Code (new chat) · Repo:
@@ -87,3 +89,5 @@ documented residuals**. Real mechanical failures → `python src\pilot\requeue_f
 
 Per root: clean/total, requeue count, $ cost (`parse_workflow_cost.py <transcript_dir>`),
 and the accept/requeue decision. Running totals for the queue.
+
+_Dr. Mārcis Gasūns_

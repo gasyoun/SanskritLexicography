@@ -21,6 +21,11 @@ Subtypes (rollup classes; display names from H180 sheets are optional later)::
                     PWG sense rather than being one (H2880, wave 2)
   unknown         — non-pwg layer not classified
 
+Three of those name a PWG *sense* as the other end of the relation. Since H3752
+(wave 5) each has an unplaced twin, used when no target was identified::
+
+  restate_unplaced · nws_at_sense_unplaced · a2a_unplaced
+
 Shape (stored on the sense row)::
 
   {
@@ -78,6 +83,82 @@ SUBTYPES = (
     "pwg_internal_correction",
     "unknown",
 )
+
+# --- wave 5 (H3752): the label must survive its own attachment result -------
+# Issue #1736 measured the residue wave 1 left behind: 4,132 rows labelled
+# `restate` ("PW пересказывает этот смысл PWG") while the same row's
+# `target_sense` reads `*new` — the pipeline's own marker for "no such sense was
+# identified". Wave 1 (H2879) added `placement` beside the label and deliberately
+# left the label alone (REGLUE_SPEC §10: "duplicating one fact across two fields
+# guarantees they drift apart"). That reasoning is sound about duplication and
+# wrong about this field: a reader who takes `subtype` on its own — every sheet
+# chip, every rollup row, the "86 % is PWG paraphrase" headline — still reads an
+# assertion about a sense that was never found. The wave-5 ruling is therefore
+# NOT "add a second field": it is that `subtype` becomes a FUNCTION of the
+# placement result, computed once, at one site, immediately below the placement
+# block. Two fields that are computed from the same variable in the same
+# expression cannot drift; `placement_label_consistent()` pins that as an
+# invariant and `placement_axis_check.py` gate W5a asserts it over the corpus.
+#
+# Only labels that name a PWG SENSE as the other end of the relation take the
+# twin. The exclusions are deliberate, and each one is a different mechanism:
+#   * `sch_star`, `derived_sense`, `foreign_fragment` — additive. They assert a
+#     new sense, not a relation TO one; having no target is their normal state.
+#   * `pw_correct` — grounded in the gender index, which is a separate lookup
+#     that already succeeded. Its evidence does not come from `placement`.
+#   * `pwg_internal_correction` — wave 2 (H2880 §11.3) ruled on exactly this
+#     case: a bare `Nachtrag` is unplaced by design and the distribution of
+#     placed-vs-unplaced corrections is one of that wave's results. Renaming it
+#     here would overturn a decided question this handoff was not asked to reopen.
+#   * `base`, `unknown` — no relation asserted at all.
+#
+# Caveat kept in the open: `a2a` is Nachträge-to-Nachträge, so its true other end
+# may be another addendum rather than a PWG sense, while `placement` is measured
+# only against the PWG skeleton. `a2a_unplaced` is honest under either reading —
+# it says no target was identified, which is true — but it is not evidence that a
+# PWG sense was sought and missed. Content alignment (issue #1736 variant D) is
+# the only thing that would settle it, and it stays out of scope here.
+SENSE_ASSERTING = frozenset({"restate", "nws_at_sense", "a2a"})
+
+UNPLACED_SUFFIX = "_unplaced"
+
+UNPLACED_SUBTYPES = tuple(sorted(s + UNPLACED_SUFFIX for s in SENSE_ASSERTING))
+
+ALL_SUBTYPES = SUBTYPES + UNPLACED_SUBTYPES
+
+
+def unplaced_name(subtype: str) -> str:
+    """The unplaced twin of a sense-asserting label. Idempotent."""
+    s = str(subtype or "")
+    return s if s.endswith(UNPLACED_SUFFIX) else s + UNPLACED_SUFFIX
+
+
+def base_subtype(subtype: str) -> str:
+    """Strip the unplaced twin back to the label a consumer can group on.
+
+    Every rollup, sheet legend and count that wants "how much of this corpus is
+    PW restatement, placed or not" reads this; nothing has to learn a second
+    vocabulary to keep working.
+    """
+    s = str(subtype or "")
+    return s[: -len(UNPLACED_SUFFIX)] if s.endswith(UNPLACED_SUFFIX) else s
+
+
+def is_unplaced_label(subtype: str) -> bool:
+    return str(subtype or "").endswith(UNPLACED_SUFFIX)
+
+
+def placement_label_consistent(subtype: str, placement: bool) -> bool:
+    """The W5 invariant: the label and the placement flag say the same thing.
+
+    True iff the label carries the unplaced suffix exactly when the row is a
+    sense-asserting relation with no identified target. This is the anti-drift
+    device wave 1 was right to want — asserted, not assumed.
+    """
+    base = base_subtype(subtype)
+    if base not in SENSE_ASSERTING:
+        return not is_unplaced_label(subtype)
+    return is_unplaced_label(subtype) == (not placement)
 
 # --- wave 2 (H2880): corrections that live INSIDE the PWG skeleton ----------
 # Some rows carried on the `pwg` layer are not senses of PWG at all — they are
@@ -394,7 +475,12 @@ def classify_edition_rel(
             evidence = "NWS fragment in %s (heuristic); sense_tag=%r" % (lang.upper(), st)
         else:
             subtype = "nws_at_sense"
-            evidence = "NWS additive at PWG sense %s; sense_tag=%r" % (target_sense, st)
+            # H3752: never print "at PWG sense *new" — `*new` is the marker for
+            # "no sense was named", so spelling it into the prose reads as a
+            # sense number to anyone skimming the evidence column.
+            evidence = ("NWS additive at PWG sense %s; sense_tag=%r"
+                        % (target_sense, st) if target_sense != "*new"
+                        else "NWS additive, no PWG sense named; sense_tag=%r" % st)
         if re.match(r"\s*nws", st, re.I):
             target_sense = "*new"
     elif layer == "pw":
@@ -450,6 +536,18 @@ def classify_edition_rel(
                         "method": "normalized_tag_match",
                         "confidence": "low",
                     }
+
+    # --- label re-derivation (H3752, wave 5) ------------------------------
+    # The single site where the label is made a function of the attachment
+    # result. `direction` and `op` are NOT touched: "the PW layer abridges PWG"
+    # and "this row restates rather than adds" are properties of the layer and
+    # of the row, true whether or not a target was located — that half of
+    # REGLUE_SPEC §10's two-axis split stands. What changes is only the claim
+    # that named a specific PWG sense.
+    if subtype in SENSE_ASSERTING and not placement:
+        subtype = unplaced_name(subtype)
+        evidence = "%s; no identified PWG target (%s)" % (
+            evidence or "supplement", placement_reason)
 
     rel = {
         "subtype": subtype,
@@ -592,12 +690,18 @@ def selftest() -> None:
     check(r["subtype"] == "base" and r["layer"] == "pwg", "base: %r" % r)
     check(r["source_layers"] == ["pwg"], "source_layers: %r" % r)
 
-    # PW restate (no gender conflict)
+    # PW restate (no gender conflict). H3752: the sense index is now supplied,
+    # because without one there is no target and the honest label is the
+    # unplaced twin — the case immediately below pins that.
     r = classify_edition_rel("pw", "1", "<lex>m.</lex> {%gehen%}", key1="gam",
                              subcard="gam~~h0_zz_pw01",
-                             pwg_genders={"m."})
+                             pwg_genders={"m."}, pwg_senses={"1"})
     check(r["subtype"] == "restate" and r["op"] == "restate", "restate: %r" % r)
     check(r["direction"] == "abridging", "pw direction: %r" % r)
+    r = classify_edition_rel("pw", "1", "<lex>m.</lex> {%gehen%}", key1="gam",
+                             subcard="gam~~h0_zz_pw01", pwg_genders={"m."})
+    check(r["subtype"] == "restate_unplaced" and r["op"] == "restate",
+          "no index at all -> the label must not claim a sense: %r" % r)
 
     # PW correct (gender change)
     r = classify_edition_rel("pw", "1", "<lex>f.</lex> {%x%}", key1="x",
@@ -610,14 +714,16 @@ def selftest() -> None:
     r = classify_edition_rel("sch", "anu_desid", "{%einstimmen%}", subcard="a~~h0_zz_sch")
     check(r["subtype"] == "derived_sense", "sch derived: %r" % r)
 
-    # PWKVN a2a vs derived
-    r = classify_edition_rel("pwkvn", "3", "{%x%}", subcard="a~~h0_zz_pwkvn")
+    # PWKVN a2a vs derived (H3752: index supplied so the target resolves)
+    r = classify_edition_rel("pwkvn", "3", "{%x%}", subcard="a~~h0_zz_pwkvn",
+                             pwg_senses={"3"})
     check(r["subtype"] == "a2a" and r["op"] == "relocate", "a2a: %r" % r)
     r = classify_edition_rel("pwkvn", "ava_caus", "{%x%}", subcard="a~~h0_zz_pwkvn")
     check(r["subtype"] == "derived_sense", "pwkvn derived: %r" % r)
 
     # NWS
-    r = classify_edition_rel("nws", "2", "der und die mit sich", subcard="a~~h0_zz_nws")
+    r = classify_edition_rel("nws", "2", "der und die mit sich",
+                             subcard="a~~h0_zz_nws", pwg_senses={"2"})
     check(r["subtype"] == "nws_at_sense", "nws_at_sense: %r" % r)
     check(r["insertion_point"]["target_sense"] == "2", "nws target: %r" % r)
     r = classify_edition_rel(
@@ -715,11 +821,15 @@ def selftest() -> None:
           isinstance(r["placement_hypothesis"], dict),
           "hypothesis shape: %r" % r)
 
-    # placement is orthogonal to subtype: a restate can be unplaced
+    # H3752 supersedes the wave-1 expectation here. This same case used to
+    # assert `subtype == "restate"` with `placement False` — that pairing IS
+    # issue #1736: a paraphrase label over a sense that was never identified.
     r = classify_edition_rel("pw", "Nachtrag", "{%x%}", key1="x",
                              subcard="x~~h0_zz_pw01", pwg_senses=senses)
-    check(r["subtype"] == "restate" and r["placement"] is False,
-          "restate may be unplaced: %r" % r)
+    check(r["subtype"] == "restate_unplaced" and r["placement"] is False,
+          "an unplaced restate is labelled unplaced: %r" % r)
+    check(base_subtype(r["subtype"]) == "restate",
+          "…and still groups as a restate: %r" % r)
 
     # sense index build + row helper
     srows = [
@@ -926,9 +1036,107 @@ def selftest() -> None:
     # other layers are untouched by the SCH rule, cue text notwithstanding
     for lay, want in (("pw", "restate"), ("pwkvn", "a2a")):
         r = classify_edition_rel(lay, "1", "Z. 2 lies {%x%}", key1="x",
-                                 subcard="x~~h0_zz_%s" % lay)
+                                 subcard="x~~h0_zz_%s" % lay,
+                                 pwg_senses={"1"})
         check(r["subtype"] == want,
               "layer %s must ignore the sch cue: %r" % (lay, r))
+
+    # --- wave 5: the label follows the attachment (H3752, issue #1736) ------
+    # THE RED PIN. Every assertion in this block fails against the pre-H3752
+    # classifier, which labelled all four rows `restate` / `nws_at_sense` /
+    # `a2a` while their own `target_sense` read `*new`.
+    w5 = {"1", "2", "3"}
+    for lay, tag, de, want in (
+        # mode A — no leading number on the supplement's own tag
+        ("pw", "caus", "{%kurz%}", "restate_unplaced"),
+        ("nws", "NWS-add", "der die und mit sich", "nws_at_sense_unplaced"),
+        ("pwkvn", "Nachtrag", "{%x%}", "a2a_unplaced"),
+        # mode B — a target number that leads nowhere
+        ("pw", "9", "{%kurz%}", "restate_unplaced"),
+    ):
+        r = classify_edition_rel(lay, tag, de, key1="x",
+                                 subcard="x~~h0_zz_%s" % lay, pwg_senses=w5)
+        check(r["subtype"] == want,
+              "unplaced %s must not keep the placed label: %r -> %r"
+              % (lay, tag, r["subtype"]))
+        check(r["placement"] is False, "…and stays unplaced: %r" % r)
+        check(r["insertion_point"]["target_sense"] != "*new"
+              or "no identified PWG target" in r["evidence"],
+              "the evidence string must say the target is missing: %r" % r)
+
+    # the placed twins keep the plain label — the fix must not empty the corpus
+    for lay, tag, de, want in (
+        ("pw", "2", "{%kurz%}", "restate"),
+        ("nws", "2", "der die und mit sich", "nws_at_sense"),
+        ("pwkvn", "3", "{%x%}", "a2a"),
+    ):
+        r = classify_edition_rel(lay, tag, de, key1="x",
+                                 subcard="x~~h0_zz_%s" % lay, pwg_senses=w5)
+        check(r["subtype"] == want and r["placement"] is True,
+              "a placed %s keeps its label: %r" % (lay, r))
+
+    # `direction` and `op` are LAYER/ROW properties and must survive untouched —
+    # losing them is issue #1736 variant B, the over-correction this rejects.
+    r = classify_edition_rel("pw", "caus", "{%kurz%}", key1="x",
+                             subcard="x~~h0_zz_pw01", pwg_senses=w5)
+    check(r["direction"] == "abridging" and r["op"] == "restate",
+          "an unplaced restate is still an abridging restatement: %r" % r)
+
+    # subtypes that assert no sense relation are NOT suffixed
+    for lay, tag, de in (("sch", "neu", "{%neu%}"),
+                         ("sch", "anu_desid", "{%x%}"),
+                         ("nws", "NWS-1", "the of and in with is for from by as"),
+                         ("pwg", "Nachtrag", "{%x%}")):
+        r = classify_edition_rel(lay, tag, de, key1="x",
+                                 subcard="x~~h0_zz_%s" % lay, pwg_senses=w5)
+        check(not is_unplaced_label(r["subtype"]),
+              "%s/%s asserts no sense relation and must keep its label: %r"
+              % (lay, tag, r["subtype"]))
+
+    # pw_correct is grounded in the gender index, not in `placement`
+    r = classify_edition_rel("pw", "9", "<lex>f.</lex> {%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01", pwg_genders={"m."},
+                             pwg_senses=w5)
+    check(r["subtype"] == "pw_correct" and r["placement"] is False,
+          "pw_correct is not suffixed by the placement result: %r" % r)
+
+    # helpers
+    check(unplaced_name("restate") == "restate_unplaced", "unplaced_name")
+    check(unplaced_name("restate_unplaced") == "restate_unplaced",
+          "unplaced_name is idempotent")
+    check(base_subtype("restate_unplaced") == "restate", "base_subtype")
+    check(base_subtype("restate") == "restate", "base_subtype is idempotent")
+    check(base_subtype("sch_star") == "sch_star", "base_subtype leaves others")
+
+    # the invariant the corpus gate (W5a) asserts
+    check(placement_label_consistent("restate", True), "consistent: placed")
+    check(placement_label_consistent("restate_unplaced", False),
+          "consistent: unplaced")
+    check(not placement_label_consistent("restate", False),
+          "INCONSISTENT: the exact #1736 shape must be rejected")
+    check(not placement_label_consistent("restate_unplaced", True),
+          "INCONSISTENT: an unplaced label on a placed row")
+    check(placement_label_consistent("sch_star", False),
+          "an additive subtype is consistent either way")
+    check(not placement_label_consistent("sch_star_unplaced", False),
+          "a suffix on a non-asserting subtype is itself a defect")
+
+    # every classifier output satisfies the invariant, by construction
+    for lay, tag, de in (("pw", "1", "{%x%}"), ("pw", "caus", "{%x%}"),
+                         ("pw", "9", "{%x%}"), ("nws", "1", "der die und"),
+                         ("nws", "nws-x", "der die und"), ("pwkvn", "2", "{%x%}"),
+                         ("pwkvn", "ava_caus", "{%x%}"), ("sch", "1", "{%x%}"),
+                         ("pwg", "Nachtrag", "{%x%}"), ("zz", "1", "{%x%}")):
+        r = classify_edition_rel(lay, tag, de, key1="x",
+                                 subcard="x~~h0_zz_%s" % lay, pwg_senses=w5)
+        check(placement_label_consistent(r["subtype"], r["placement"]),
+              "classifier output violates the W5 invariant: %s/%s -> %r"
+              % (lay, tag, r))
+
+    # every emitted label is a declared one — no silently invented vocabulary
+    check(set(UNPLACED_SUBTYPES) <= set(ALL_SUBTYPES), "unplaced names declared")
+    check(all(base_subtype(s) in SUBTYPES for s in UNPLACED_SUBTYPES),
+          "every unplaced twin strips back to a declared subtype")
 
     # all rollup subtypes reachable
     seen = {
@@ -946,6 +1154,11 @@ def selftest() -> None:
         classify_edition_rel("sch", "1", "Z. 2 lies {%x%}")["subtype"],
         classify_edition_rel("sch", "1", "3. streiche <ls>Med.</ls>")["subtype"],
     }
+    # H3752: grouped on the BASE name — these calls pass no sense index, so the
+    # three sense-asserting labels come back as their unplaced twins. That is the
+    # point of the fix, and `base_subtype` is exactly the seam that keeps every
+    # existing consumer's grouping working without learning a second vocabulary.
+    seen = {base_subtype(s) for s in seen}
     for need in ("base", "restate", "pw_correct", "sch_star", "derived_sense",
                  "a2a", "nws_at_sense", "foreign_fragment",
                  "pwg_internal_correction", "sch_correct", "sch_cancel"):

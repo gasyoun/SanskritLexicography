@@ -1,3 +1,5 @@
+_Created: 01-08-2026 · Last updated: 05-09-2026_
+
 # Ancient Greek Scholarship _ A Guide to Finding, Reading, and -- Eleanor Dickey; American Philological Association -- Oxford University Press USA, New -- isbn13 9780195312928 -- ecf4077b5322a293d68d84768364b80a -- An
 
 **Source:** `Ancient Greek Scholarship _ A Guide to Finding, Reading, and -- Eleanor Dickey; American Philological Association -- Oxford University Press USA, New -- isbn13 9780195312928 -- ecf4077b5322a293d68d84768364b80a -- An.pdf`  
@@ -20248,3 +20250,5 @@ mentioned in excerpts, 150, 164
 Zonaras, 15–16, 99, 102
 GENERAL INDEX
 345
+
+_Dr. Mārcis Gasūns_

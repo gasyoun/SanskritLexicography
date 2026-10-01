@@ -1,0 +1,27 @@
+{
+ "fetched_utc": "2026-09-24T16:43:27Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "беспокоиться",
+   "pos": "V",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 33.5651
+  },
+  "possiblePos": [
+   "V"
+  ]
+ }
+}

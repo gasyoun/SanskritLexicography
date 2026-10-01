@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 10-08-2026_
+_Created: 04-07-2026 · Last updated: 07-09-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,64 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1333 — the concordance was inside the dictionary all along (07-09-2026)
+
+H1307 shipped the `<ls>` enrichment for Pāṇini and `Spr. (II)` and had to stop at its third
+arm: `DHĀTUP. x,y` → Palsule. The reason was recorded as a data absence — no machine-readable
+Palsule-numbered dhātupāṭha, no Böhtlingk→Palsule concordance anywhere in the org — and the
+plan that followed from it was a data acquisition: get Palsule as a spreadsheet, then join
+gaṇa + normalized dhātu, and expect the H328 ablaut problem (a naive it-stripped join matched
+454 of 930 Whitney roots) to eat most of the coverage.
+
+MG supplied the XLS on 07-09. It turned out to be Palsule's *artha* index — 8,170 rows of
+`<artha> : ⎷<root>` with a printed page — and it carries **no Böhtlingk coordinate at all**,
+which by the spec's own reasoning was the bad branch. It was not, because the spec had the
+join backwards. **PWG is Böhtlingk.** A `DHĀTUP. x,y` citation is not an external reference
+to be reconciled; it stands inside the article of the very root it numbers, and that
+article's `<k1>` key is the dhātu. The coordinate→root half is therefore *read off the source
+text*, exactly and with no normalization at all — the ablaut risk that shaped the whole plan
+never touches it. Only root→Palsule is a join, and it is a join of one citation form against
+itself in two transliterations.
+
+The work that remained was not matching but **disambiguation**, and it is where the honest
+numbers come from. A coordinate is quoted by more than one article: the root's, and any
+nominal article that glosses it (`{#loqana#}¦ <lex>n.</lex> … als Erkl. von {#bAD#}
+<ls>DHĀTUP. 2,4</ls>`). Two filters, both readable off the markup — a head-line citation
+outranks a body one, and a `<lex>`-bearing claimant loses to the verbal article — take the
+crosswalk from 65.3% to 70.0%. What is left is Böhtlingk's own doubled spellings
+(`skand`/`skund`, `cut`/`cyut`, 271 coordinates) and 254 roots Palsule's artha index simply
+does not cover. Those are **dropped, not resolved by citation count**: a majority vote would
+have bought perhaps five more points and made every number in the table unfalsifiable.
+
+Coverage: 1,226 / 1,751 distinct coordinates (70.0%; 1,144 = 65.3% without the two
+filters), 1,441 / 2,760 citations (52.2%; 54.2% of the 2,657 that carry a coordinate at all) — both re-derivable from `python src/ls_coverage.py --md`, which is where the citation-level tally lives; the builder counts coordinates, not citation occurrences, shipped as tooltip text with Palsule's printed
+page — Palsule has no online edition, so there is no href to give, and inventing one was
+the failure mode the spec named first.
+
+**The verifier pass is the more useful half of this entry.** An independent adversarial
+review (Fable 5.1) reproduced every number exactly and then found the documentation
+wrong where the code was right. Two of the three spot-checks this session published —
+`snih` 26,91 → *snehane*, `sthā` 22,30 → *sthāne* — named arthas that are in the record
+but are **not what PWG attests at those coordinates**: Böhtlingk prints `(prItO)` and
+`({#gatinivfttO#})` right beside those citations. The tooltips were never wrong; the
+evidence offered for them was. Chasing that down produced the check the pass should have
+had from the start — Böhtlingk's parenthesized artha is an *independent witness* of what
+a coordinate means, so agreement with it is a measurable accuracy rate rather than an
+anecdote: **139/232 exact (59.9%)**, 174/232 (75.0%) allowing citation-form variation.
+The same review caught an 8-item truncation that had silently dropped `sattāyām` — bhū's
+canonical artha, the first entry of the entire dhātupāṭha — from `DHĀTUP. 1,1` while
+`artha_count` still reported 11; removing it raised measured agreement by 2.6 points,
+which is how one knows the defect was substantive and not cosmetic.
+
+**Transferable, second:** a coverage number and an accuracy number are different claims,
+and a crosswalk that reports only coverage is reporting the easy half. Look for a witness
+already inside the source that says what the mapping *should* produce — here it had been
+sitting in parentheses next to every citation all along.
+
+**Transferable:** when a crosswalk between an old dictionary and an index looks impossible for
+want of a third table, check whether the dictionary is itself an edition of the thing being
+crosswalked. Half of this join was always sitting in the corpus that needed it.
 
 ### H2152/H2158 — the ceiling was never the problem: every call re-writes its own cache (02-08-2026)
 
@@ -1018,6 +1076,24 @@ editor-facing:
 [pwg_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md);
 deep manual:
 [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
+
+### H3751 — `~~h<N>` was never a homonym number, and the counter that watched it said "matched" (31-08-2026)
+
+Do not read a sub-card key's `~~h<N>` as a printed homonym. It is the 0-based
+`enumerate` position `_pilot_gen_merged.gen_root_split` assigned over the
+headword's PWG record list, and that list interleaves homonyms with `<h>`-less
+Nachträge from later volumes (`Ap` = four records, zero `<h>`; `As` =
+`<h>1`/`<h>2`/`<h>3` plus two more `<h>2` Nachträge). `pwg_page_index` compared
+it against the source `<h>` — which starts at 1 — so `~~h0_` never matched,
+selection fell back to every record sharing the `key1`, and the card's
+`column`/`volume`/`page` came from the **lowest column across all homographs**:
+1,278 of 5,205 mappable pwg-layer rows, shipped into the DE edition graph beside
+a `pwglex:homonym` label ([#1801](https://github.com/gasyoun/SanskritLexicography/issues/1801)).
+Resolve **positionally** through [`pwg_homonym.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_homonym.py)
+— the one module that knows what the token means — and omit the scalars rather
+than guess when the index addresses no record. The rewrite was ledgered (1,969
+rows, `delta == ledger`, `changed_ru=0`); the sub-card key text is deliberately
+unchanged, because it is the identity of 11k promoted rows. FINDINGS §617.
 
 ## Where to go next
 

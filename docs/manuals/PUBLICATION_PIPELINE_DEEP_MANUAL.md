@@ -308,7 +308,7 @@ python -m pytest docs_site/test_docs_site.py  # 4 tests (re-run 20-08-2026: 4 pa
   importorskip) and runs `pytest docs_site/test_docs_site.py -q` — a red
   docs-site job is a real site-build failure. Locally, install the pin first or
   the tests skip silently.
-- Link-rewrite policy in `_rewrite_md_links`: a `[label](FILE.md)` link whose
+- Link-rewrite policy in `_rewrite_md_links`: a `label` link whose
   stem is one of the 10 site pages becomes an on-site `[[FILE|label]]` link;
   a link to any *other* repo doc is **deliberately reduced to plain text**
   (it would 404 on the static site). Do not "fix" the dropped links.
