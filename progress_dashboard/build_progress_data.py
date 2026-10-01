@@ -56,6 +56,30 @@ TOTAL_HEADWORDS_FALLBACK = 106082
 CORPUS_RECALL_PCT = 95.4
 
 
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Write *text* to *path* atomically: tmp file + os.replace (H5534).
+
+    A crash mid-write can no longer leave a truncated JSON behind, and a
+    concurrent builder can never be observed half-written: the payload lands
+    in a sibling tmp file (unique per pid) that is flushed + fsync'd, then
+    moved over the target with os.replace (atomic on POSIX and Windows).
+    Output bytes are identical to ``Path.write_text`` (same open defaults).
+    """
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8") as fh:
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
+
+
 def _load_json(rel):
     p = RT / rel
     try:
@@ -435,8 +459,8 @@ def main():
         "review_throughput": rt_x,
     }
 
-    (OUT / "progress_data.json").write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    _atomic_write_text(
+        OUT / "progress_data.json", json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     )
     print(f"progress_data.json written ({generated_at}).")
 
@@ -473,7 +497,7 @@ def main():
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
-    ts_path.write_text(json.dumps(ts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    _atomic_write_text(ts_path, json.dumps(ts, ensure_ascii=False, indent=2) + "\n")
     print(f"progress_timeseries.json: {len(ts['snapshots'])} snapshot(s).")
 
     # console summary

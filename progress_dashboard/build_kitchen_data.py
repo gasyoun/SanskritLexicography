@@ -87,6 +87,30 @@ DEFAULT_PRICE_USD_PER_M = {
 }
 
 
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Write *text* to *path* atomically: tmp file + os.replace (H5534).
+
+    A crash mid-write can no longer leave a truncated JSON behind, and a
+    concurrent builder can never be observed half-written: the payload lands
+    in a sibling tmp file (unique per pid) that is flushed + fsync'd, then
+    moved over the target with os.replace (atomic on POSIX and Windows).
+    Output bytes are identical to ``Path.write_text`` (same open defaults).
+    """
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8") as fh:
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
+
+
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
@@ -782,7 +806,7 @@ def main():
     }
 
     out_path = OUT / "kitchen_data.json"
-    out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    _atomic_write_text(out_path, json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(f"kitchen_data.json written ({data['generated_at']}).")
 
     # B4 — append-only quality/fidelity/judge timeseries (one row per build date).
