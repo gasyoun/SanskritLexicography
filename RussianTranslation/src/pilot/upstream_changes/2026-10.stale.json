@@ -1,0 +1,37 @@
+{
+  "schema": "pwg_ru.upstream_stale.v1",
+  "month": "2026-10",
+  "generated_at": "2026-10-01T17:42:27",
+  "sources": {
+    "cologne": {
+      "per_layer": {
+        "pwg": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0
+        },
+        "pw": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0
+        },
+        "sch": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0
+        },
+        "pwkvn": {
+          "changed": 0,
+          "added": 0,
+          "removed": 0,
+          "flagged_rows": 0
+        }
+      },
+      "stale": [],
+      "csl_orig_head": "55e8addbd96e8d9001b8789026b026763f4049c1"
+    }
+  }
+}
