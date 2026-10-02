@@ -41,6 +41,38 @@ def _atomic_write_text(path: Path, text: str) -> None:
         raise
 
 
+# A hard kill (SIGKILL / power loss) mid-write leaves .{name}.{pid}.tmp behind
+# with no owner to unlink it; the exception path above never runs. Sweep such
+# leftovers once they are clearly not a live writer's (a live tmp exists only
+# for the instant between create and os.replace, so an age floor cannot race
+# one).
+_STALE_TMP_SECONDS = 3600
+
+
+def _sweep_stale_tmp(path: Path, now: float | None = None) -> None:
+    """Best-effort removal of crash-leftover atomic-write tmp siblings of *path*.
+
+    Matches only the per-pid tmp shape ``.{name}.{pid}.tmp`` written next to
+    *path*, only when the file's mtime is older than ``_STALE_TMP_SECONDS``.
+    Never raises: hygiene must not take a build down.
+    """
+    pattern = re.compile(r"^\." + re.escape(path.name) + r"\.\d+\.tmp$")
+    own_tmp = f".{path.name}.{os.getpid()}.tmp"
+    cutoff = (now if now is not None else datetime.now(timezone.utc).timestamp()) - _STALE_TMP_SECONDS
+    try:
+        entries = list(os.scandir(path.parent))
+    except OSError:
+        return
+    for entry in entries:
+        if entry.name == own_tmp or not pattern.match(entry.name):
+            continue
+        try:
+            if entry.stat(follow_symlinks=False).st_mtime < cutoff:
+                os.unlink(entry.path)
+        except OSError:
+            continue
+
+
 def _parse_ts(raw):
     if not raw or not isinstance(raw, str):
         return None
@@ -692,6 +724,7 @@ def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, t
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
     _atomic_write_text(ts_path, json.dumps(ts, ensure_ascii=False, indent=2) + "\n")
+    _sweep_stale_tmp(ts_path)
     return ts
 
 
