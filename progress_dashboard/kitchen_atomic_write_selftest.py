@@ -19,6 +19,10 @@ build_kitchen_data.py). Proves:
                        while looping quality_timeseries_append over a
                        pre-seeded ~20 MB snapshots payload; after every kill
                        the target still parses as valid JSON. Never truncated.
+  5. STALE-TMP SWEEP — a crash-leftover .{name}.{pid}.tmp (mtime past the
+                       age floor) is removed by the next successful append,
+                       while a fresh foreign tmp (possibly a live writer's)
+                       and the target payload are untouched.
 
 Hermetic: writes only under tempfile.mkdtemp(); reads no repo data.
 Exit 0 = PASS, nonzero = FAIL.
@@ -220,12 +224,38 @@ def test_hard_kill_mid_write_leaves_valid_json():
         )
 
 
+def test_stale_tmp_sweep():
+    """A crash-leftover tmp (old mtime) is swept by the next successful
+    append; a fresh foreign tmp (possibly a live writer's) is not."""
+    with tempfile.TemporaryDirectory() as td:
+        workdir = Path(td)
+        target = workdir / "quality_timeseries.json"
+        stale = workdir / f".{target.name}.999999.tmp"
+        stale.write_text("{}", encoding="utf-8")
+        old = time.time() - 4 * 3600
+        os.utime(stale, (old, old))
+        fresh = workdir / f".{target.name}.{os.getpid() + 1}.tmp"
+        fresh.write_text("{}", encoding="utf-8")
+        ks.quality_timeseries_append(
+            target,
+            {"fidelity": {"precision": 1.0, "n": 1}},
+            "2026-10-02T00:00:00Z",
+            "2026-10-02",
+        )
+        assert not stale.exists(), "stale crash-leftover tmp was not swept"
+        assert fresh.exists(), "a fresh (possibly live) foreign tmp was swept"
+        data = json.loads(target.read_text(encoding="utf-8"))
+        assert data["snapshots"], "target payload damaged by the sweep"
+    print("PASS: test_stale_tmp_sweep")
+
+
 def main() -> int:
     if len(sys.argv) > 2 and sys.argv[1] == "--child":
         return _child(sys.argv[2])
     test_helper_parity()
     test_byte_parity()
     test_replace_failure_keeps_old_target()
+    test_stale_tmp_sweep()
     test_hard_kill_mid_write_leaves_valid_json()
     print("\nALL PASS: kitchen_atomic_write_selftest (H5582)")
     return 0
