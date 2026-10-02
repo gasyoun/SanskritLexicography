@@ -782,7 +782,7 @@ def main():
     }
 
     out_path = OUT / "kitchen_data.json"
-    out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    ks._atomic_write_text(out_path, json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     print(f"kitchen_data.json written ({data['generated_at']}).")
 
     # B4 — append-only quality/fidelity/judge timeseries (one row per build date).

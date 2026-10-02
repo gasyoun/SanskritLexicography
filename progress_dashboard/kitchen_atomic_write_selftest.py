@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""H5582 selftest — quality_timeseries_append writes are atomic (tmp + os.replace).
+"""H5582/H5625 selftest — dashboard JSON writes are atomic (tmp + os.replace).
 
-Companion to atomic_write_selftest.py (H5534, PR #2360) scoped to the one
-remaining direct write site: kitchen_slices.quality_timeseries_append (the
-writer behind progress_dashboard/quality_timeseries.json, called from
-build_kitchen_data.py). Proves:
+Covers the single shared writer kitchen_slices._atomic_write_text (H5582):
+quality_timeseries_append and — since H5625 — the JSON writes of
+build_kitchen_data.py / build_progress_data.py. Proves:
 
-  1. helper-parity   — kitchen_slices._atomic_write_text is code-identical
-                       (modulo docstring) to the H5534 helpers in
-                       build_kitchen_data.py / build_progress_data.py when
-                       those modules carry one (post-#2360 state); skipped
-                       with a note while #2360 is still open.
+  1. helper-parity   — ONE shared helper: kitchen_slices._atomic_write_text;
+                       neither builder carries a local copy, and each
+                       builder's main() routes its writes through it
+                       (H5625 closes H5534's unfinished merge — the old
+                       "PR #2360" reference was a registry error, no such PR
+                       ever landed).
   2. byte-parity     — atomic output is byte-identical to Path.write_text.
   3. failure path    — if os.replace fails, the old target survives intact
                        and no tmp litter is left behind; the error propagates.
@@ -28,7 +28,6 @@ Run:  python progress_dashboard/kitchen_atomic_write_selftest.py
 
 from __future__ import annotations
 
-import ast
 import importlib.util
 import json
 import os
@@ -63,21 +62,6 @@ def _load_module(name: str):
     return mod
 
 
-def _func_source_without_docstring(func) -> str:
-    """Normalized AST dump of a function's code, docstring stripped."""
-    tree = ast.parse(inspect_source(func))
-    fn = tree.body[0]
-    assert isinstance(fn, (ast.FunctionDef, ast.AsyncFunctionDef))
-    if (
-        fn.body
-        and isinstance(fn.body[0], ast.Expr)
-        and isinstance(fn.body[0].value, ast.Constant)
-        and isinstance(fn.body[0].value.value, str)
-    ):
-        fn.body = fn.body[1:]
-    return ast.dump(fn)
-
-
 def inspect_source(func) -> str:
     import inspect
 
@@ -86,28 +70,25 @@ def inspect_source(func) -> str:
 
 # ---------------------------------------------------------------- tests
 def test_helper_parity():
-    parity_targets = []
+    # H5625 post-merge contract: ONE shared helper in kitchen_slices; the
+    # builders carry no local copy and route their JSON writes through it.
+    assert ks._atomic_write_text.__module__ == "kitchen_slices", (
+        "kitchen_slices._atomic_write_text went missing — the shared helper "
+        "must stay defined exactly once, in kitchen_slices"
+    )
     for name in ("build_kitchen_data", "build_progress_data"):
         mod = _load_module(name)
-        helper = getattr(mod, "_atomic_write_text", None)
-        if helper is None:
-            print(
-                f"SKIP(no helper yet): {name}._atomic_write_text — "
-                "PR #2360 not merged; parity checked once it lands"
-            )
-            continue
-        parity_targets.append((name, helper))
-    if not parity_targets:
-        print("PASS: test_helper_parity (nothing to compare yet — #2360 open)")
-        return
-    mine = _func_source_without_docstring(ks._atomic_write_text)
-    for name, helper in parity_targets:
-        theirs = _func_source_without_docstring(helper)
-        assert mine == theirs, (
-            f"kitchen_slices._atomic_write_text drifted from {name}"
-            "._atomic_write_text (H5534 pattern) — keep the helpers identical"
+        assert mod is not None, f"could not load {name}"
+        local = getattr(mod, "_atomic_write_text", None)
+        assert local is None or local.__module__ == "kitchen_slices", (
+            f"{name} carries its own _atomic_write_text — keep ONE shared "
+            "helper in kitchen_slices (H5582/H5625), never two copies"
         )
-        print(f"PASS: test_helper_parity vs {name}._atomic_write_text")
+        assert "_atomic_write_text" in inspect_source(mod.main), (
+            f"{name}.main no longer routes its JSON writes through "
+            "kitchen_slices._atomic_write_text"
+        )
+        print(f"PASS: test_helper_parity — {name}.main routes through the shared helper")
 
 
 def test_byte_parity():
