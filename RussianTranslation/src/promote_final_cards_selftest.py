@@ -732,6 +732,160 @@ def selftest():
     dry2 = promote_ready_partial_clean(clean_report, dry_run=True, store=tstore)
     assert dry2['status'] == 'dry_run_ok'
     print('H1553 defect refusal + ready_partial clean-subset (temp store) OK')
+
+    # H5706 / FINDINGS §611.2: --apply is the ONE write switch. A plain --merge
+    # used to promote for real (the H3663 accident); it must now refuse and write
+    # nothing, while --merge --apply keeps writing with the automatic .premerge.*.bak.
+    # The H2089 default-store interplay and the refusal gates (defect guard,
+    # duplicate-identity -> content-mass -> row-shrink order) are pinned unchanged.
+    # Everything below drives the REAL main() on a fixture store in a tempdir —
+    # the live pwg_ru store is never touched.
+    import contextlib
+    import io
+    import promote_final_cards as pfc
+    hdir = tempfile.mkdtemp()
+    hstore = os.path.join(hdir, 'store.jsonl')
+    hwf = os.path.join(hdir, 'wf_output.h5706.json')
+    hdef_empty = os.path.join(hdir, 'requeue.defect.keys.txt')
+    open(hdef_empty, 'w', encoding='utf-8').close()      # explicit inert defect list
+    hdef_hit = os.path.join(hdir, 'requeue.defect.hit.txt')
+    with open(hdef_hit, 'w', encoding='utf-8') as f:
+        f.write('p_a~~h5_00_pwg00\n')                    # §611.1: the promotable verdict
+    with open(hwf, 'w', encoding='utf-8') as f:
+        json.dump({'meta': meta, 'results': [
+            {'key': 'p_a~~h5_00_pwg00', 'card': entry['card']}]}, f)
+    hseed = {'key1': 'keep', 'subcard': 'y~~keep', 'h': 'y', 'sense_tag': '1',
+             'de': 'x', 'ru': 'y', 'review_status': 'ai_translated',
+             'layer': 'pwg', 'provenance': {}}
+
+    def _seed_store():
+        with open(hstore, 'w', encoding='utf-8') as f:
+            f.write(json.dumps(hseed, ensure_ascii=False) + '\n')
+
+    def _run_main(argv):
+        """Run the real CLI dispatch in-process; return (exit_code, stdout)."""
+        buf = io.StringIO()
+        old_argv = sys.argv
+        sys.argv = argv
+        try:
+            with contextlib.redirect_stdout(buf):
+                pfc.main()
+        except SystemExit as e:
+            return e.code, buf.getvalue()
+        finally:
+            sys.argv = old_argv
+        return None, buf.getvalue()
+
+    def _h5706_argv(*extra):
+        return ['promote_final_cards.py', '--merge', '--glob', hwf, '--store', hstore,
+                '--gen-model-version', SELFTEST_MODEL_VERSION,
+                '--defect-keys', hdef_empty] + list(extra)
+
+    def _baks():
+        return sorted(n for n in os.listdir(hdir)
+                      if '.premerge.' in n and n.endswith('.bak'))
+
+    old_tm_dir = os.environ.get('PWG_RU_TM_DIR')
+    os.environ['PWG_RU_TM_DIR'] = hdir
+    try:
+        # (1) plain --merge: REFUSED, zero bytes written, no backup taken.
+        _seed_store()
+        before = open(hstore, 'rb').read()
+        code, out = _run_main(_h5706_argv())
+        assert isinstance(code, str) and 'H5706' in code and '--apply' in code, (code, out)
+        assert open(hstore, 'rb').read() == before, 'plain --merge wrote the store'
+        assert _baks() == [], 'plain --merge took a premerge backup'
+        assert not [n for n in os.listdir(hdir) if n.endswith('.tmp')], 'tmp residue'
+        # (2) --merge --dry-run keeps its explicit-preview meaning (exit clean, no write).
+        code, out = _run_main(_h5706_argv('--dry-run'))
+        assert code in (None, 0), (code, out)
+        assert open(hstore, 'rb').read() == before, '--merge --dry-run wrote the store'
+        # (3) --merge --apply: writes, keeps unrelated rows, automatic .premerge.*.bak.
+        code, out = _run_main(_h5706_argv('--apply'))
+        assert code in (None, 0), (code, out)
+        after = open(hstore, 'rb').read()
+        assert after != before, '--merge --apply did not write'
+        assert b'y~~keep' in after and b'pA' in after, 'merge must keep+land rows'
+        baks = _baks()
+        assert len(baks) == 1, 'expected exactly one premerge backup, got %s' % baks
+        assert open(os.path.join(hdir, baks[0]), 'rb').read() == before, \
+            'the premerge backup must hold the pre-write store bytes'
+        # (4) §611.1: the defect guard still gates the WRITE form — requeue.defect.
+        # keys.txt is the promotable verdict, and an incoming key on it refuses.
+        _seed_store()
+        before = open(hstore, 'rb').read()
+        code, out = _run_main(['promote_final_cards.py', '--merge', '--glob', hwf,
+                               '--store', hstore,
+                               '--gen-model-version', SELFTEST_MODEL_VERSION,
+                               '--defect-keys', hdef_hit, '--apply'])
+        assert isinstance(code, str) and 'defect list' in code, (code, out)
+        assert open(hstore, 'rb').read() == before, 'defect-keyed --merge --apply wrote'
+        # (5) gate ORDER unchanged (H3748/§611): duplicate identity first, then
+        # content mass, then row shrink. A batch violating mass AND shrink must
+        # refuse on content mass, not on the row count.
+        fat_store = os.path.join(hdir, 'fat-store.jsonl')
+        with open(fat_store, 'w', encoding='utf-8') as f:
+            f.write(json.dumps(hseed, ensure_ascii=False) + '\n')
+            for i in range(6):
+                f.write(json.dumps({'key1': 'pA', 'subcard': 'p_a~~h5_00_pwg00',
+                                    'h': 'pā', 'sense_tag': str(i + 1),
+                                    'de': 'y' * 50, 'ru': 'x' * 200,
+                                    'provenance': {}}, ensure_ascii=False) + '\n')
+        code, out = _run_main(['promote_final_cards.py', '--merge', '--glob', hwf,
+                               '--store', fat_store,
+                               '--gen-model-version', SELFTEST_MODEL_VERSION,
+                               '--defect-keys', hdef_empty, '--apply'])
+        assert isinstance(code, str) and 'content mass' in code \
+            and 'shrink store' not in code, (code, out)
+        dup_card = {'key1': 'p_a~~h5_00_pwg00', 'iast': 'pā', 'notes': '', 'records': [
+            {'h': 'pā', 'grammar': '', 'senses': [
+                {'tag': '1', 'russian': 'пить', 'german': 'trinken',
+                 'equivalence_type': 'equivalent', 'source_type': 'attested',
+                 'stratum': '', 'differentia': ''}]},
+            {'h': 'pā', 'grammar': '', 'senses': [
+                {'tag': '1', 'russian': 'выпить', 'german': 'trinken',
+                 'equivalence_type': 'equivalent', 'source_type': 'attested',
+                 'stratum': '', 'differentia': ''}]}]}
+        dup_wf = os.path.join(hdir, 'wf_output.h5706.dup.json')
+        with open(dup_wf, 'w', encoding='utf-8') as f:
+            json.dump({'meta': meta, 'results': [
+                {'key': 'p_a~~h5_00_pwg00', 'card': dup_card}]}, f)
+        _seed_store()
+        before = open(hstore, 'rb').read()
+        code, out = _run_main(['promote_final_cards.py', '--merge', '--glob', dup_wf,
+                               '--store', hstore,
+                               '--gen-model-version', SELFTEST_MODEL_VERSION,
+                               '--defect-keys', hdef_empty, '--apply'])
+        assert isinstance(code, str) and 'duplicate sense identity' in code, (code, out)
+        assert open(hstore, 'rb').read() == before, 'duplicate batch wrote the store'
+        # (6) H2089 interplay on the WRITE form only: with DEFAULT_STORE pointed at
+        # the fixture store, --merge --apply without --promotion-id is a coordinator
+        # bypass and refuses; --promotion-id and --allow-raw-default-merge both clear it.
+        real_default = pfc.DEFAULT_STORE
+        pfc.DEFAULT_STORE = hstore
+        try:
+            _seed_store()
+            before = open(hstore, 'rb').read()
+            code, out = _run_main(_h5706_argv('--apply'))
+            assert isinstance(code, str) and 'H2089' in code, (code, out)
+            assert open(hstore, 'rb').read() == before
+            code, out = _run_main(_h5706_argv('--apply', '--promotion-id',
+                                              'h5706-selftest'))
+            assert code in (None, 0), (code, out)
+            assert open(hstore, 'rb').read() != before, 'promotion-id route must write'
+            _seed_store()
+            code, out = _run_main(_h5706_argv('--apply', '--allow-raw-default-merge'))
+            assert code in (None, 0), (code, out)
+            assert open(hstore, 'rb').read() != before, '--allow-raw-default-merge must write'
+        finally:
+            pfc.DEFAULT_STORE = real_default
+    finally:
+        if old_tm_dir is None:
+            os.environ.pop('PWG_RU_TM_DIR', None)
+        else:
+            os.environ['PWG_RU_TM_DIR'] = old_tm_dir
+    print('H5706 --merge write gate (plain --merge refuses; --apply writes; '
+          'H2089 + gate order pinned) OK')
     print('promote_final_cards selftest OK')
 
 

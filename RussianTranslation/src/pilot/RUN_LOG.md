@@ -1,10 +1,43 @@
-_Created: 01-08-2026 · Last updated: 07-09-2026_
+_Created: 01-08-2026 · Last updated: 02-10-2026_
 
 # PWG → Russian — Max run log
 
 One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
+
+## 2026-10-02 — H5706 Tier-0 repair pair: citation-TM vālakhilya typed miss + `--merge` write gate — no run, no spend — **GLM 5.3** (`account:zai-individual-coding-plan/GLM-5.3`, ZCode) · named executor OxAlpha (provenance)
+
+**Not a run — a safety-contract change to two tools every promotion uses** (repair queue
+[PLAN_RussianTranslation_PWGRU_REPAIR_QUEUE_2026-10.md](../../docs/PLAN_RussianTranslation_PWGRU_REPAIR_QUEUE_2026-10.md) Tier 0, items 1-2). Zero model calls; verified on fixture stores only.
+
+**(1) `citation_tm.py` EN lane refuses RV 8.49–8.103 (FINDINGS §524).** The Griffith EN column of
+`griffith_en_1896.json` is displaced by the eleven vālakhilya hymns (keyed inline in the corpus,
+appended in the English source), so `lookup('ṚV.','8,60,1',lang='en')` returned a fluent `hit`
+verse of the **wrong hymn**. Now: `miss` / `en-numbering-unverified` for mandala 8, sūkta ≥ 49,
+no canonical_id, no griffith_location — exactly the `_rama_gorresio` refuse-don't-guess shape.
+Controls pinned: 8.48.1 still hits (pre-block, aligned); 1.1.1 / 10.90.1 unchanged; the RU lane
+is untouched (corpus `#ru`/`#sa` agree throughout — h2361). Until the asset itself is repaired
+upstream (h2361 recipe step 2) and `audit_griffith_en_alignment.py --selftest` wired into CI
+(step 3), the EN pilot stays refuse-by-construction for the block.
+
+**(2) `promote_final_cards.py --merge` is dry-run by default (FINDINGS §611.2, the H3663
+accident).** `--apply` used to gate only `--ready-partial-report`; a plain `--merge` promoted for
+real. Since H5706 `--apply` is the **one write switch for every single-mode lane**: plain
+`--merge` → `REFUSED: --merge is dry-run by default since H5706`; `--merge --apply` writes with
+the automatic `.premerge.*.bak`. Unchanged and pinned in the selftest: the H2089 default-store
+interplay (`--promotion-id` / `--allow-raw-default-merge` / env twin), the defect guard
+(§611.1: `requeue.defect.keys.txt` is the promotable verdict), and the refusal-gate order
+(duplicate identity → content mass → row shrink). H3654/H3663 recipes annotated to the corrected
+contract. **Recipe delta for every future promote: the write form is now
+`--merge --apply --glob <explicit> --defect-keys <file> --gen-model-version <id>` (+ `--promotion-id`
+into the default store).**
+
+**Checks:** `python src/citation_tm.py selftest` — all green incl. 8 new §524 pins;
+`python src/promote_final_cards.py --selftest` — all green incl. the 6-part H5706 write-gate
+block driving the real `main()` on fixture stores (live store never touched).
+
+---
 
 ## 2026-09-07 — H4213 heal-wave launch: pc lane unfrozen, gate RED on c1 warm-up probe (model-side refusal) — zero window spend, wave NOT executed — orchestration **OxAlpha** (`z-ai/glm-5.3-flash`) / gen **Sonnet 5** (`claude-sonnet-5`, probe only)
 
