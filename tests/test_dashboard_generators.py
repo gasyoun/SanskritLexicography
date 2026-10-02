@@ -184,8 +184,9 @@ def test_progress_dashboard_selftest(name):
     assert "PASS" in r.stdout or "OK" in r.stdout or "pass" in r.stdout.lower(), r.stdout[-500:]
 
 
-def test_selftest_roster_is_the_seven_known():
-    assert SELFTESTS == ["health_ribbon_selftest.py", "kitchen_collision_selftest.py",
+def test_selftest_roster_is_the_eight_known():
+    assert SELFTESTS == ["health_ribbon_selftest.py", "kitchen_atomic_write_selftest.py",
+                         "kitchen_collision_selftest.py",
                          "kitchen_instrumentation_selftest.py", "kitchen_multi_lane_selftest.py",
                          "kitchen_nominal_selftest.py", "kitchen_progress_slice_selftest.py",
                          "kitchen_promote_selftest.py"]
