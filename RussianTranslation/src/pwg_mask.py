@@ -271,7 +271,16 @@ def classify_pct(content, preceding, following=''):
     return classify_pct_detail(content, preceding, following)['gloss_lang']
 
 
-def gloss_lang_spans(body, context_window=100):
+# One classifier-window contract for BOTH consumers of classify_pct_detail:
+# production `mask()` and the durable sidecar `gloss_lang_spans()` (H5707 L5 —
+# the two paths used to run 100/80 vs 100/100, so a sidecar could disagree
+# with what was actually masked). Pin with the parity selftest below.
+CLASSIFY_PREC_WINDOW = 100
+CLASSIFY_FOLL_WINDOW = 80
+
+
+def gloss_lang_spans(body, prec_window=CLASSIFY_PREC_WINDOW,
+                     foll_window=CLASSIFY_FOLL_WINDOW):
     """Durable per-span metadata for every `{%…%}` in a DE body (no rewrite).
 
     Each item::
@@ -285,13 +294,15 @@ def gloss_lang_spans(body, context_window=100):
       }
 
     Safe to attach to a portrait/sidecar; never mutates the DE string.
+    Uses the SAME classify context windows as production ``mask`` so the
+    annotation cannot drift from the masking decision.
     """
     body = body or ''
     out = []
     for m in PCT_RE.finditer(body):
         start, end = m.start(), m.end()
-        prec = plain_context(body[max(0, start - context_window):start])
-        foll = plain_context(body[end:end + context_window])
+        prec = plain_context(body[max(0, start - prec_window):start])
+        foll = plain_context(body[end:end + foll_window])
         detail = classify_pct_detail(m.group(1), prec, foll)
         out.append({
             'span': m.group(1).strip(),
@@ -335,8 +346,8 @@ def mask(body):
     out, last = [], 0
     for m in PCT_RE.finditer(body):
         out.append(body[last:m.start()])
-        prec = _cue_context(body[max(0, m.start() - 100):m.start()])
-        foll = _cue_context(body[m.end():m.end() + 80])
+        prec = _cue_context(body[max(0, m.start() - CLASSIFY_PREC_WINDOW):m.start()])
+        foll = _cue_context(body[m.end():m.end() + CLASSIFY_FOLL_WINDOW])
         detail = classify_pct_detail(m.group(1).strip(), prec, foll)
         kind = detail['gloss_lang']
         if kind in NON_TRANSLATE_LANGS:
@@ -459,8 +470,10 @@ def cmd_gloss_langs(args):
 def _selftest():
     """Fixture selftest for G1 gloss_lang (also pinned in window_selftest)."""
     fails = []
+    nchecks = [0]
 
     def check(cond, msg):
+        nchecks[0] += 1
         if not cond:
             fails.append(msg)
 
@@ -566,11 +579,20 @@ def _selftest():
     check('{%Gabe, Geschenk%}' in sk, 'DE not inline: %r' % sk)
     check(restore(sk, ph) == body, 'round-trip failed')
 
+    # H5707 L5 parity: the sidecar spans and the production mask must agree —
+    # a span the sidecar says "do not translate" must NOT survive masking
+    # inline, and vice versa (same classify windows, same body).
+    for s in spans:
+        inline = ('{%' + s['span'] + '%}') in sk
+        check(inline == s['translate'],
+              'mask/sidecar parity drift for %r: inline=%s translate=%s'
+              % (s['span'], inline, s['translate']))
+
     if fails:
         for f in fails:
             print('FAIL:', f, file=sys.stderr)
         sys.exit(1)
-    print('pwg_mask --selftest: %d checks OK' % 20)
+    print('pwg_mask --selftest: %d checks OK' % nchecks[0])
 
 
 def main():

@@ -354,6 +354,18 @@ headless execution → sealed batch record + deterministic audit →
 these steps. The generated Workflow JS remains useful as historical/forensic
 evidence, not as the production execution surface.
 
+**Ops: a `running` lease never expires by TTL (H5707 L3).** `lease_expired`
+only reclaims `claimed` leases, so a lease left `running` by a crashed box
+holds one of the 3 runtime slots forever. If a lane idles with slots shown as
+busy, list the stuck lease and free it deliberately — the operator, not the
+TTL, is the reclaimer, because auto-expiring a genuinely live run would
+double-write:
+
+```powershell
+python src\pilot\coordinator.py status
+python src\pilot\coordinator.py release-run <lease> --confirm-dead
+```
+
 For enough data to estimate speed and quality, use the live runnable queue plus
 `perf_preflight.py`:
 
