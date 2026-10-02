@@ -157,6 +157,35 @@ def week_spend(tick_ledger_path, week):
     return total
 
 
+def _window_cost(calls_ledger_path):
+    """(cost_usd, ledger_rows, unevaluable_reason) for one finished window.
+
+    H5707 L2: the cost is UNEVALUABLE (cost None) when the reservation ledger
+    is missing/unparsable, or when any call row carries telemetry that cannot
+    answer "what did this call cost" (cost_evaluable False, observed_cost_usd
+    absent/None). A reserved-but-never-made call (no telemetry at all) is
+    $0-known, not unevaluable. Mirrors the run-level rule (AGENTS.md,
+    25-07-2026): an unknown cost must never enter the weekly wall as 0.0."""
+    try:
+        with open(calls_ledger_path, encoding='utf-8') as f:
+            ledger = json.load(f)
+    except (OSError, ValueError) as exc:
+        return None, [], 'unreadable reservation ledger (%s: %s)' % (
+            type(exc).__name__, str(exc)[:120])
+    rows = ledger.get('calls') or []
+    cost = 0.0
+    for row in rows:
+        usage = row.get('telemetry') or {}
+        if not usage:
+            continue                    # reserved, no call evidence -> $0 known
+        if (usage.get('cost_evaluable') is False
+                or usage.get('observed_cost_usd') is None):
+            return None, rows, 'unevaluable cost telemetry in call row %s' % (
+                row.get('reservation_id') or row.get('purpose') or '?')
+        cost += float(usage['observed_cost_usd'])
+    return cost, rows, None
+
+
 def append_tick(tick_ledger_path, record):
     os.makedirs(os.path.dirname(tick_ledger_path), exist_ok=True)
     with open(tick_ledger_path, 'a', encoding='utf-8', newline='\n') as f:
@@ -225,17 +254,8 @@ class Runners:
             cmd += ['--stop-before-promote']
         proc = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8',
                               timeout=cfg.get('window_timeout', 4 * 3600))
-        cost, rows = 0.0, []
-        try:
-            ledger = json.load(open(checkpoint + '.calls.json', encoding='utf-8'))
-            rows = ledger.get('calls') or []
-            for row in rows:
-                usage = (row.get('telemetry') or {})
-                if usage.get('observed_cost_usd'):
-                    cost += float(usage['observed_cost_usd'])
-        except (OSError, ValueError):
-            pass
-        return proc.returncode, cost, rows
+        cost, rows, unevaluable = _window_cost(checkpoint + '.calls.json')
+        return proc.returncode, cost, rows, unevaluable
 
     def commit_telemetry(self, message):
         """git add/commit/push the data root; best-effort (offline tick still counts)."""
@@ -327,9 +347,23 @@ def tick(cfg, runners):
                                  % lane)
             record['spotcheck'] = os.path.basename(fresh)
         # 6. the bounded window
-        code, cost, rows = runners.bounded_run(profile, receipt, remaining)
+        code, cost, rows, unevaluable = runners.bounded_run(profile, receipt, remaining)
         record['window_exit'] = code
         record['window_cost_usd'] = cost
+        # H5707 L2 stop-closed: a paid window whose cost cannot be evaluated
+        # must pause the lane for the rest of the week — the run-level ceiling
+        # already stops closed on unevaluable telemetry, but this weekly layer
+        # used to book the window as $0.0 and keep spending against a wall that
+        # could not see it. Reconcile the ledger, append the true cost to the
+        # tick ledger, then clear the pause.
+        if unevaluable:
+            record['window_cost_unevaluable'] = unevaluable
+            reset = next_weekly_reset(started, cfg.get('reset_day', 'MON'),
+                                      cfg.get('reset_hour', 0))
+            write_pause(cfg['gatelogs_dir'], lane, reset,
+                        'window_cost_unevaluable — %s' % unevaluable)
+            return done('window_failed', 'window_cost_unevaluable_stop_closed',
+                        paused_until=int(reset), week_spent_usd=spent)
         # 7. §270 quota-hang classification -> pause until the next weekly reset
         if code != 0 and classify_quota_hang(rows):
             reset = next_weekly_reset(started, cfg.get('reset_day', 'MON'),
@@ -406,7 +440,7 @@ def main(argv=None):
 
 
 class _FakeRunners:
-    def __init__(self, gate=None, canary='receipt.json', run=(0, 1.0, []),
+    def __init__(self, gate=None, canary='receipt.json', run=(0, 1.0, [], None),
                  log=None):
         self.gate = {'c4': True} if gate is None else gate
         self.canary = canary
@@ -475,7 +509,7 @@ def selftest():
         # and the NEXT tick skips on the pause
         hang_rows = [{'reserved_at_ns': 0, 'finalized_at_ns': int(180_100 * 1e6),
                       'telemetry': {}}]
-        rec6 = tick(cfg, _FakeRunners(run=(1, 0.0, hang_rows)))
+        rec6 = tick(cfg, _FakeRunners(run=(1, 0.0, hang_rows, None)))
         assert rec6['verdict'] == 'window_failed' and rec6['paused_until'] > now_epoch()
         rec7 = tick(cfg, _FakeRunners())
         assert rec7['verdict'] == 'skip' and rec7['reason'] == 'paused_until_reset'
@@ -520,6 +554,34 @@ def selftest():
             rec8c['reason'] == 'runner_exception' and \
             rec8c['exception'].startswith('OSError'), rec8c
 
+        # (8f) H5707 L2: a window whose cost is UNEVALUABLE fails the tick and
+        # pauses the lane until the weekly reset — never books $0.0 into the wall.
+        rec8f = tick(cfg, _FakeRunners(run=(0, None, [],
+                                             'unreadable reservation ledger')))
+        assert rec8f['verdict'] == 'window_failed', rec8f
+        assert rec8f['reason'] == 'window_cost_unevaluable_stop_closed', rec8f
+        assert rec8f['window_cost_usd'] is None and rec8f['paused_until'] > now_epoch()
+        assert os.path.exists(pause_path(cfg['gatelogs_dir'], 'pc'))
+        os.remove(pause_path(cfg['gatelogs_dir'], 'pc'))   # unpause for 8d
+        # ...and the _window_cost classifier itself: missing ledger, unevaluable
+        # telemetry row, reserved-no-call row, healthy row.
+        with tempfile.TemporaryDirectory() as td:
+            missing = os.path.join(td, 'none.calls.json')
+            assert _window_cost(missing)[2] and _window_cost(missing)[0] is None
+            good = os.path.join(td, 'good.calls.json')
+            json.dump({'calls': [
+                {'reservation_id': 'r1', 'telemetry': {'observed_cost_usd': 0.5}},
+                {'reservation_id': 'r2'},                    # reserved, no call
+            ]}, open(good, 'w'))
+            assert _window_cost(good)[:1] == (0.5,) and _window_cost(good)[2] is None
+            bad = os.path.join(td, 'bad.calls.json')
+            json.dump({'calls': [
+                {'reservation_id': 'r1', 'telemetry': {'observed_cost_usd': 0.5}},
+                {'reservation_id': 'r2',
+                 'telemetry': {'observed_cost_usd': 0, 'cost_evaluable': False}},
+            ]}, open(bad, 'w'))
+            assert _window_cost(bad)[0] is None and 'r2' in _window_cost(bad)[2]
+
         # (8d) H2264: with auto-promote ON and no fresh spotcheck, the tick REFUSES
         # the window (fail closed — R4.1 surveillance is auto-promote's safety case).
         cfg_ap = dict(cfg, auto_promote_until='2099-01-01')
@@ -538,7 +600,7 @@ def selftest():
 
         # (9) EVERY branch above appended a tick record (the ≥95% metric source)
         rows = [json.loads(l) for l in open(ledger, encoding='utf-8')]
-        assert len(rows) == 12, len(rows)
+        assert len(rows) == 13, len(rows)      # 12 + the 8f unevaluable-cost tick
         assert all(r0.get('verdict') for r0 in rows)
 
         # (10) next_weekly_reset is strictly ahead and lands on the right weekday

@@ -96,9 +96,7 @@ def detect(text, owner=None):
 # ---------------------------------------------------------------- masking
 GRAM = re.compile(r'\b(Subst|Adj|Adv|Indekl|PostP)\b\s*(mfn|ifc|m\.?|n\.?|f\.?)?'
                   r'|\b(mfn|ifc|NPr|Pl|Sg|Du|Akk|Lok|Dat|Gen|Instr|Nom|Vok)\b:?')
-INLINE_SA = re.compile(r'\{#.*?#\}|<is>.*?</is>')
-LS = re.compile(r'<ls\b[^>]*>.*?</ls>|<ab\b[^>]*>.*?</ab>|<lex\b[^>]*>.*?</lex>'
-                r'|<[^>]+>')
+INLINE_SA = re.compile(r'\{#.*?#\}|<is>.*?</is>', re.S)
 PCT = re.compile(r'\{%(.*?)%\}', re.S)
 # a {%…%} span that is purely lowercase IAST (a Sanskrit headword like aṃśa,
 # kenāṃśena) is NOT a German gloss — keep it verbatim, never translate it
@@ -123,13 +121,22 @@ def mask_nws_gloss(gloss, owner):
     # (it is what slid av's + upa gloss from Geldner onto Rivelex).
     g = re.sub(r'^[\s,;]*[^>]*?;\s*[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:]*?\s:\s[\dIVXLCDM]+[A-Za-z]?\s*>\s*', '', g)
     if owner:                                       # drop the trailing owner cite
-        g = re.sub(re.escape(owner.split(' (s.v')[0]).replace(r'\ ', r'\s*')
-                   + r'.*$', '', g).rstrip(' .')
+        # H5707 L1: cut from the LAST occurrence only when it actually sits at
+        # the tail — the old first-occurrence `.*$` cut destroyed everything
+        # after a mid-gloss mention of the same source, and without re.S a
+        # cite followed by a newline was never stripped at all. When a lot of
+        # prose follows the last occurrence it is a mid-gloss reference, not
+        # the attribution: keep it (a leaked cite in translation is noise;
+        # a wrong cut is unrecoverable text loss).
+        base = re.escape(owner.split(' (s.v')[0]).replace(r'\ ', r'\s*')
+        last = None
+        for last in re.finditer(base, g):
+            pass
+        if last and (len(g) - last.start()) <= 2 * len(base) + 40:
+            g = g[:last.start()].rstrip(' .')
     for m in INLINE_SA.findall(g):
         keep.append(m)
     g = INLINE_SA.sub(' ', g)
-    for m in GRAM.findall(re.sub(r'\s+', ' ', g)):
-        pass
     g = GRAM.sub(' ', g)
     # pull internal references (kept verbatim, never translated)
     for m in REF.finditer(g):

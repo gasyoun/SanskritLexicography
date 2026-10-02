@@ -163,20 +163,29 @@ def assemble_entry(key1, recs):
 
 # ------------------------------------------------- failure #4: watcher-safe land
 
+def land_atomic(text, final_path):
+    """One write/replace cycle of the watcher-safe landing -> expected sha."""
+    os.makedirs(os.path.dirname(final_path) or ".", exist_ok=True)
+    data = text.encode("utf-8")
+    tmp = final_path + ".landing.tmp"
+    with open(tmp, "wb") as fh:
+        fh.write(data)
+    os.replace(tmp, final_path)
+    return hashlib.sha256(data).hexdigest()
+
+
 def land_watcher_safe(text, final_path, recheck_s=LAND_RECHECK_S,
                       retries=LAND_RETRIES, _post_land_hook=None):
     """Land `text` at final_path the watcher-safe way: atomic replace, sha
     verify, wait, re-verify the file survived (the repo watcher wipes
     untracked files mid-build — failure #4). Returns the number of landing
-    attempts used; raises RuntimeError if the file will not stay put."""
-    os.makedirs(os.path.dirname(final_path) or ".", exist_ok=True)
-    data = text.encode("utf-8")
-    want = hashlib.sha256(data).hexdigest()
+    attempts used; raises RuntimeError if the file will not stay put.
+
+    BLOCKING (it sleeps the recheck window): the dispatcher itself must use
+    the non-blocking split (land_atomic + Dispatcher._confirm_landing) so the
+    kill-guard keeps polling while a landing is in flight."""
     for attempt in range(1, retries + 1):
-        tmp = final_path + ".landing.tmp"
-        with open(tmp, "wb") as fh:
-            fh.write(data)
-        os.replace(tmp, final_path)
+        want = land_atomic(text, final_path)
         if sha256_file(final_path) != want:
             continue
         if _post_land_hook:            # selftest hook: simulate a watcher wipe
@@ -198,6 +207,10 @@ class Attempt:
         self.started = time.monotonic()
         self.last_growth = self.started
         self.size = -1
+        # non-blocking watcher-safe landing state (H5707 L8)
+        self.land_sha = None
+        self.land_attempts = 0
+        self.land_confirm_at = None
 
     @property
     def id(self):
@@ -288,12 +301,39 @@ class Dispatcher:
         if not (os.path.exists(att.staging) and os.path.getsize(att.staging) > 0):
             return False
         text = io.open(att.staging, encoding="utf-8").read()
-        n = land_watcher_safe(text, job.final_path, recheck_s=self.land_recheck_s)
-        job.state = "landed"
-        job.history.append(f"landed by {att.id} (landing attempts {n})")
-        log(f"LANDED {att.id} -> {os.path.basename(job.final_path)} "
-            f"({os.path.getsize(job.final_path)} B)")
-        return True
+        # Start the watcher-safe landing NON-blocking: land atomically now and
+        # confirm on a later poll pass (H5707 L8 — the old time.sleep(recheck_s)
+        # here stalled kill-guard polling for every concurrently running worker
+        # during each landing/re-verify window). None = pending confirmation.
+        att.land_sha = land_atomic(text, job.final_path)
+        att.land_attempts = 1
+        att.land_confirm_at = time.monotonic() + self.land_recheck_s
+        return None
+
+    def _confirm_landing(self, att):
+        """Second half of _maybe_land, run from the poll loop: after the
+        recheck window, re-verify the landed file survived the watcher.
+        True = confirmed landed; False = still waiting (or re-landed and
+        waiting again). Raises RuntimeError when retries are exhausted."""
+        if att.land_confirm_at is None or time.monotonic() < att.land_confirm_at:
+            return False
+        job = att.job
+        if os.path.exists(job.final_path) and sha256_file(job.final_path) == att.land_sha:
+            job.state = "landed"
+            job.history.append(f"landed by {att.id} (landing attempts {att.land_attempts})")
+            log(f"LANDED {att.id} -> {os.path.basename(job.final_path)} "
+                f"({os.path.getsize(job.final_path)} B)")
+            return True
+        att.land_attempts += 1
+        if att.land_attempts > LAND_RETRIES:
+            raise RuntimeError(f"could not keep {job.final_path} in place after "
+                               f"{LAND_RETRIES} landings")
+        text = io.open(att.staging, encoding="utf-8").read()
+        att.land_sha = land_atomic(text, job.final_path)
+        att.land_confirm_at = time.monotonic() + self.land_recheck_s
+        log(f"WATCHER wiped/changed {os.path.basename(job.final_path)} after landing "
+            f"(attempt {att.land_attempts}/{LAND_RETRIES}) — re-landing")
+        return False
 
     def _fail_or_redispatch(self, att, why):
         job = att.job
@@ -316,14 +356,28 @@ class Dispatcher:
                 self._start(self.queue.pop(0))
             for key in list(self.running):
                 att = self.running[key]
+                if att.land_confirm_at is not None:
+                    # landing in flight — confirm without blocking the loop, so
+                    # every OTHER running worker's kill-guard keeps polling
+                    try:
+                        if self._confirm_landing(att):
+                            del self.running[key]
+                    except RuntimeError as exc:
+                        self._fail_or_redispatch(att, str(exc))
+                    continue
                 rc = att.proc.poll()
                 if rc is not None:                      # worker exited by itself
-                    if rc == 0 and self._maybe_land(att):
-                        del self.running[key]
+                    if rc != 0:
+                        self._fail_or_redispatch(att, f"exit rc={rc}")
                     else:
-                        self._fail_or_redispatch(
-                            att, f"exit rc={rc}"
-                            + ("" if rc else " with empty/unlandable output"))
+                        landed = self._maybe_land(att)
+                        if landed is None:              # landing started, confirm later
+                            continue
+                        if landed is not True:
+                            self._fail_or_redispatch(
+                                att, "exit rc=0 with empty/unlandable output")
+                        else:
+                            del self.running[key]
                 elif not self._alive_by_output(att):    # failure #1/#3 kill-guard
                     self._kill_confirm_dead(att)        # confirmed dead BEFORE re-dispatch
                     self._fail_or_redispatch(
