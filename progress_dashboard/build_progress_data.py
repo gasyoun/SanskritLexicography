@@ -435,8 +435,12 @@ def main():
         "review_throughput": rt_x,
     }
 
-    (OUT / "progress_data.json").write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    # H5625: shared atomic writer (kitchen_slices, H5582) — no local copy;
+    # local import keeps the module import surface small (H2268 pin).
+    import kitchen_slices as ks  # noqa: PLC0415
+
+    ks._atomic_write_text(
+        OUT / "progress_data.json", json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     )
     print(f"progress_data.json written ({generated_at}).")
 
@@ -473,7 +477,7 @@ def main():
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
-    ts_path.write_text(json.dumps(ts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    ks._atomic_write_text(ts_path, json.dumps(ts, ensure_ascii=False, indent=2) + "\n")
     print(f"progress_timeseries.json: {len(ts['snapshots'])} snapshot(s).")
 
     # console summary
