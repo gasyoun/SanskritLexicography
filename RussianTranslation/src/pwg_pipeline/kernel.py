@@ -20,6 +20,7 @@ second accounting authority.
 from __future__ import annotations
 
 import dataclasses
+import json
 import os
 import sys
 import threading
@@ -188,8 +189,17 @@ class PaidCallKernel:
                 attempt_id: str | None = None,
                 timeout_ms: int = DEFAULT_TIMEOUT_MS,
                 max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS,
-                estimated_input_tokens: int = 1000) -> CallOutcome:
-        """Reserve, dispatch, seal and finalize exactly one provider call."""
+                estimated_input_tokens: int | None = None) -> CallOutcome:
+        """Reserve, dispatch, seal and finalize exactly one provider call.
+
+        ``estimated_input_tokens`` feeds only the pre-spend ceiling projection;
+        left unset it is derived from the payload size (~4 chars/token floor,
+        H5707 L4 — the old flat 1000-token guess under-projected real windows,
+        which are ≥5 KB). A timeout abandons the worker thread (SDK calls are
+        not cancellable): the ledger records the call as terminal `timeout`
+        while the provider may still complete and bill it — a known, accepted
+        undercount of ``observed_cost_usd`` against the provider invoice.
+        """
         route = adapter.route
         model.require_choice(route, model.ROUTES, 'adapter.route')
         if route not in model.BILLABLE_ROUTES:
@@ -199,6 +209,11 @@ class PaidCallKernel:
         if not job_ids:
             raise KernelRefusal('a call must be bound to at least one job',
                                 failure_class=FAILURE_BUDGET)
+
+        if estimated_input_tokens is None:
+            payload_chars = len(json.dumps(job_payloads, ensure_ascii=False,
+                                           default=str))
+            estimated_input_tokens = max(1000, payload_chars // 4)
 
         # 1. validate budget -- strictly before any I/O.
         self.assert_budget(route, input_tokens=estimated_input_tokens,
