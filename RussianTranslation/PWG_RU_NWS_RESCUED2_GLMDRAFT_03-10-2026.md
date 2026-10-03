@@ -56,12 +56,18 @@ per the stage-1 prompt rules ([1_perevod.txt](https://github.com/gasyoun/Sanskri
 German/English prose translated, sigla and cross-references kept verbatim,
 lexicographic abbreviations by the Russian tradition (s. v. → см.).
 
-**DanaMjaya (draft-ru):** см. dhanañjaya (Kulkarni 1951 : 69; PW). — Gen,
-unsp. — **[Кулкарни: «имя лексикографа» — НЕ ПОДТВЕРЖДАЕТСЯ, см. корректуру ниже].** — см. также dhanaṃjaya (PW)
+**DanaMjaya (draft-ru):** см. dhanañjaya (Kulkarni 1951 : 69; PW). — **имя
+лексикографа.** — см. также dhanaṃjaya (PW)
 
 **jIvaMjIvaka (draft-ru):** см. также jīvañjīvaka (Renou 1954 (2) : 120; PW). —
-Kāv, unsp. — **как название одного из видов литературного заимствования**
-(Dalal 1934, S. 77, Z. 3). — см. также jīvaṃjīvaka (PW)
+**как название одного из видов литературного заимствования** (Dalal 1934, S. 77,
+Z. 3). — см. также jīvaṃjīvaka (PW)
+
+(The NWS diasystem classification tags — `Gen , unsp`, `Kāv , unsp`, `Śā , Med`
+… — are the dictionary's own German register abbreviations, NWS metadata like
+the owner cite; they are NOT part of the gloss and stay out of the Russian
+card. The first draft of these cards wrongly glued them into the RU line —
+see the correction section.)
 
 Route honesty: these drafts are **not** promotable cards. The promoter's
 contract requires the headless execution route; an in-session model output
@@ -69,32 +75,34 @@ contract requires the headless execution route; an in-session model output
 the A/B reference for whenever a real lane translates these words. Nothing
 was written to any store.
 
-## Fact-check correction (MG, 03-10-2026): «имя лексикографа» — uncorroborated claim
+## Draft correction (MG, 03-10-2026, second round): the tag glue, not the claim
 
-MG rejected the DanaMjaya draft line «имя лексикографа» («нет такого имени»).
-Cross-check against the local csl-orig dictionaries confirms him — the claim
-exists ONLY in Kulkarni's NWS gloss and in neither ancestor dictionary:
+MG's first note («Gen, unsp. — имя лексикографа — неверно, нет такого имени»)
+was read here too deeply at first: the previous revision of this doc declared
+Kulkarni's «N of a lexicographer» an uncorroborated condensation and floated
+an NWS erratum. MG's ruling corrects that reading:
 
-- **MW** `DanaMjaya` (mw.txt L99288–99300) has NO "lexicographer" sense. Its
-  author-sense reads «of the author of the *Dala-rūpaka* &c. (see below)»
-  (CDSL's spelling; = PWG's *Daśarūpaka*, the dramaturgy treatise — its author
-  is a dramatist/theorist). The dictionaries appear as SEPARATE headwords:
-  `DanaMjayakośa` / `DanaMjayanāmamālā` / `DanaMjayanighaṇṭu` = "N. of
-  dictionaries" — titles, with no author named Dhanaṃjaya.
-- **PWG** `DanaMjaya` 2〉h〉 likewise: «auch N. pr. des Verfassers des
-  *Daśarūpaka*. {#˚niGaRwu#} Titel eines Wörterbuchs … {#˚saMgraha#} Titel
-  eines Werkes» — author of the Daśarūpaka + dictionary/work TITLES, no
-  «Lexikograph».
+- **«Gen, unsp» are two German abbreviations** — the NWS's own diasystem
+  classification (register tags; `Gen` is a first-token of the tag set in
+  [`nws_split.py` DIASET](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nws_split.py)
+  alongside `Ved`, `Tan`, `Buddh`, `Śā`, `Kāv`, `Lex`…, `unsp` = unspecified),
+  cf. the `Śā , Med` tag on the medical sub-entry of this very word. The
+  defect was **this draft's formatting**: it glued the tags into the Russian
+  line right before the claim, so «Gen, unsp.» read like a lexicographer's
+  name. The draft lines above now omit the tags entirely, as the pipeline's
+  unit model does (tags are peeled into `tag`, never into the translatable
+  prose).
+- **The Kulkarni claim stands.** The NWS is the freshest Sanskrit dictionary
+  available; it legitimately contains material the ancestors never had —
+  absence from MW/PWG is not a defect and **no erratum is warranted** (the
+  MW/PWG quotes from the previous revision remain below purely as context,
+  not as a refutation).
 
-Verdict: Kulkarni's "N of a lexicographer" is a **lossy/incorrect condensation**
-(most plausibly of MW's "author of the Daśarūpaka &c." + the "N. of
-dictionaries" title entries collapsed into "lexicographer"). The corrected
-draft line above marks it as uncorroborated; the final card should carry the
-corroborated content («имя автора „Даша-рупаки"»), drop or flag the
-lexicographer claim per editorial ruling. This is also an **erratum candidate**
-for the consolidated NWS erratum flow ([NWS_ERRATUM_EMAIL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NWS_ERRATUM_EMAIL.md))
-— but that list is deliberately consolidated and sent by hand, so adding/
-sending is MG's call, not done here.
+Context kept from the first check (NOT a verdict): MW `DanaMjaya`
+(L99288–99300) has an author-of-Daśarūpaka sense and the kośa/nāmamālā/
+nighaṇṭu as separate "N. of dictionaries" title headwords; PWG 2〉h〉 has
+«Verfasser des Daśarūpaka» + dictionary titles. Ancestor silence ≠ source
+error.
 
 ## Recommended next step
 
@@ -102,7 +110,6 @@ Do nothing now for `DanaMjaya` (the frequency queue owns it; rank 594). For
 `jIvaMjIvaka`, fold it into the first available NWS-side pass (it has no
 frequency path at all). When either lands, diff the lane's Russian against
 the drafts above — that comparison IS the GLM-vs-Claude quality probe MG
-asked about, at zero extra cost. The DanaMjaya card that lands must use the
-corrected line (corroborated Daśarūpaka attribution), not «имя лексикографа».
+asked about, at zero extra cost.
 
 _Гасунс_
