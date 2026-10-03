@@ -99,10 +99,22 @@ an NWS erratum. MG's ruling corrects that reading:
   not as a refutation).
 
 Context kept from the first check (NOT a verdict): MW `DanaMjaya`
-(L99288–99300) has an author-of-Daśarūpaka sense and the kośa/nāmamālā/
-nighaṇṭu as separate "N. of dictionaries" title headwords; PWG 2〉h〉 has
-«Verfasser des Daśarūpaka» + dictionary titles. Ancestor silence ≠ source
-error.
+(L99288–99300) has an author-of-Daśarūpaka sense (L99297) and the
+kośa/nāmamālā/nighaṇṭu as separate "N. of dictionaries" title headwords
+(L99300–99301.1) — no lexicographer sense. The round-1 PWG quotes were from
+the part-5 addenda entry only (L76433, pc 5-1518: «auch N. pr. des
+Verfassers des Daśarūpaka», «˚niGaRwu Titel eines Wörterbuchs»).
+Ancestor silence ≠ source error.
+
+H5717 verification (03-10-2026, independent re-probe of csl-orig v02): the
+MAIN PWG entry 2〉h〉 (L36018, pc 3-0854) additionally reads
+«eines Lexicographen PRAUḌHAMANOR.» — the lexicographer sense IS directly
+attested in PWG. Kulkarni's standing «имя лексикографа» is therefore
+corroborated not only by the NWS-freshness argument but by PWG itself
+(witness: Prauḍhamanorama; MW remains silent on the sense). This also
+confirms the round-2 verdict: the round-1 «no Lexikograph in PWG» reading
+was an artifact of quoting only the addenda entry. No card change — the
+claim was already restored unmarked by H5751.
 
 ## Recommended next step
 
