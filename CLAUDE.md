@@ -215,4 +215,12 @@ mirrored in the generated block of
 
 This repo keeps a committed memory store at [`.claude/projects/SanskritLexicography/memory/`](https://github.com/gasyoun/SanskritLexicography/tree/master/.claude/projects/SanskritLexicography/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
 
+## Repo guards
+
+The shared main tree is guarded: `.githooks/pre-commit` blocks main-tree commits
+(escape `ALLOW_MAIN_TREE_COMMIT=1`, solo only) and `.githooks/post-checkout`
+auto-reverts a foreign branch-switch back to `master` (shared-tree branch-switch guard,
+03-10-2026, PR #2375; escape `ALLOW_MAIN_TREE_CHECKOUT=1`). Work in a session-unique
+worktree; `core.hooksPath=.githooks`.
+
 _Dr. Mārcis Gasūns_
