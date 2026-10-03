@@ -307,7 +307,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§536. The re-glue cards' citations were dead because nothing called the repo's own resolver — and Cologne's precomputed table would have been a downgrade](#536-the-re-glue-cards-citations-were-dead-because-nothing-called-the-repos-own-resolver-and-colognes-precomputed-table-would-have-been-a-downgrade) — `ls_resolver` 83.6% vs csl-lslink table 79.3% over 41,115 store `<ls>`, zero table-only wins, zero href disagreements; "unresolved" is two buckets and only the locus-bearing one is work. Its sizing of that bucket is superseded by §537.
 - 🔴 [§537. The mintable citation gap is 60 occurrences, not ~7,000 — the resolver is at the ceiling its scan corpus allows](#537-the-mintable-citation-gap-is-60-occurrences-not-7000-the-resolver-is-at-the-ceiling-its-scan-corpus-allows) — 5,197 of 5,257 cite works Cologne never digitised; the resolver already routes to 49 of 53 hosted text scans. A prefix is not a work: first-token grouping over-counted the cheap bucket 4×, so classify by repair-and-retest, not regex.
 - 🔴 [§541. The re-glue typology label is assigned independently of whether an insertion target was found, so 90 % of it asserts a relation to a sense that is not there](#541-the-re-glue-typology-label-is-assigned-independently-of-whether-an-insertion-target-was-found-so-90-of-it-asserts-a-relation-to-a-sense-that-is-not-there) — 5,054 of 5,603 supplements are `target_sense='*new'` yet still labelled `restate`; only 4.4 % are checkable. Gloss-word overlap was measured as an evidence axis and rejected (median 0.000 both classes); `{%…%}` is the German gloss, not Sanskrit — stripping it fakes a finding. **Wave 1 RESOLVED 16-08-2026** (H2879): `placement` splits the pair-claim from the label; the 90 % was three phenomena, of which only 130 rows (2.2 %) are a real defect and 383 are renumbering evidence. Attributable gain measured against identical inputs: +7 checkable pairs, not the +11 a stale baseline implied.
-- 🟠 [§539. Kochergina corrections have no tracked home — the org's correction store is CDSL-scoped, and Kochergina is not a CDSL dictionary](#539-kochergina-corrections-have-no-tracked-home-the-orgs-correction-store-is-cdsl-scoped-and-kochergina-is-not-a-cdsl-dictionary) — inherited index row added by H2859; see the section for the finding.
+- 🟢 [§539. Kochergina corrections: the store exists (H798 executed 15-08-2026); CORRECTIONS stays CDSL-scoped](#539-kochergina-corrections-the-store-exists-h798-executed-15-08-2026-corrections-stays-cdsl-scoped) — resolved by H5764 re-adjudication 03-10-2026; BLI consumer-side integration still open.
 - 🟠 [§540. Mixed-script words hide from every search that assumes one alphabet per word — and the repair map has to be transliteration, not visual shape](#540-mixed-script-words-hide-from-every-search-that-assumes-one-alphabet-per-word-and-the-repair-map-has-to-be-transliteration-not-visual-shape) — inherited index row added by H2859; see the section for the finding.
 - 🟠 [§542. A review sheet's stated apply target is not the carrier set — the hand-authored strings can live in a generator, and an apply that trusts the sheet reverts on the next build](#542-a-review-sheets-stated-apply-target-is-not-the-carrier-set-the-hand-authored-strings-can-live-in-a-generator-and-an-apply-that-trusts-the-sheet-reverts-on-the-next-build) — the agni sheet named `agni.pd-min.ru.md` col. 3; the glosses are actually authored in a `GLOSS` dict in `_build_agni_ru.py`, with two more copies downstream. Grep a current cell string, not the filename, before applying any vote — the unvoted aksara/ananta/anya sheets have the same shape with a different layout again.
 - 🟠 [§538. A Latin siglum inside a `{#…#}` span is silently transliterated — `pw` became `pṭ`, an abbreviation that does not exist](#538-a-latin-siglum-inside-a-span-is-silently-transliterated-pw-became-pṭ-an-abbreviation-that-does-not-exist) — inherited index row added by H2859; see the section for the finding.
@@ -6279,51 +6279,89 @@ still SLP1. The store is **not** edited: `pw` is correct there; only the render 
 > Opus 5 (`claude-opus-5`) · 15-08-2026 · [H2848 (Sonnet 5) — Latin sigla trapped in `{#…#}` render as Sanskrit (`pw` → `pṭ`) + NWS entry deep links](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2848-Sonnet_SanskritLexicography_sigla-in-sanskrit-span-translit-bug-and-nws-deeplinks_15.08.26.md), under [H2843 (Opus 5) — MG crosswalk review umbrella](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2843-Opus_Uprava_mg-crosswalk-review-8-point-vote-contour-umbrella_15.08.26.md) · class A (reproduce: `python src/g5_card_render.py --selftest`).
 
 
-### §539. Kochergina corrections have no tracked home — the org's correction store is CDSL-scoped, and Kochergina is not a CDSL dictionary
+### §539. Kochergina corrections: the store exists (H798 executed 15-08-2026); CORRECTIONS stays CDSL-scoped
 
-Measured 15-08-2026 (Opus 5 `claude-opus-5`), closing prerequisite 2 of
-[H798](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H798-Sonnet_SanskritLexicography_h779-apply-okas-guda-sphic-decisions_12.07.26.md),
-which has sat 🟡 QUEUED since 12-07-2026 with four approved corrections
-(`okas` · `okya` · `guda` · `sphic`) and nowhere to write them.
+**Resolution (re-adjudicated 03-10-2026, [H5764](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5764-OxAlpha_SanskritLexicography_kochergina-store-verdict_03.10.26.md), OxAlpha `opencode/z-ai/glm-5.3-flash`).**
+The 15-08-2026 state narrated below — H798 🟡 QUEUED since 12-07-2026, four approved votes
+with nowhere to write them — did not survive the month. [H798](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H798-Sonnet_SanskritLexicography_h779-apply-okas-guda-sphic-decisions_12.07.26.md)
+was **executed 15-08-2026** (Opus 5 `claude-opus-5`, [v1.144.60](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.60),
+Uprava close [e0075c0](https://github.com/gasyoun/Uprava/commit/e0075c0ec5e47eae245689b82177848b5e87e005)):
+the store it said did not exist was **created the same day** as
+[KOCHERGINA_CORRECTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md)
+(+ [metadoc](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.meta.md))
+at this repo's root, and all four approved votes are **recorded** there. Date hygiene: the
+archive header reads "Last updated 17-07-2026" — that is the *provenance* update (MG's
+second decisions.json capture with the Elizarenkova/Druzhinin notes), not the execution
+date; execution was 15-08.
 
-**Kochergina is present in the org three times, and none of them is a correction ledger.**
+**Where the four corrections landed:** rows 1–4 of [the store's table](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md),
+all `recorded` — `okas` (final wording settled against Elizarenkova over all 12 RV loci:
+place-sense promoted over pleasure-sense, «родина» unattested), `okya`, `guda`
+(intestines-first with an Ayurvedic-register rider: «прямая кишка»), `sphic`/`sphigī`.
+The `guda` gender fix is row 3b, **refuted** (the separate `gudā` f. entry already
+exists — do not re-raise). Both cross-checks MG attached to the vote closed 16-08-2026
+under [H2863](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2863-Opus_SanskritLexicography_kochergina-guda-druzhinin-crosscheck_16.08.26.md)
+([PR #1739](https://github.com/gasyoun/SanskritLexicography/pull/1739) merged); the
+Druzhinin lane ended as [DEAD_ENDS §14](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md)
+— a Russian Aṣṭāṅgahṛdaya translation that is not coming.
 
-| Where | What it is | Correctable? |
+**Kochergina is present in the org four ways, and one of them is now the ledger.**
+
+| Where | What it is | Role |
 |---|---|---|
-| [`CORRECTIONS/Kochergina-1987_29007.txt`](https://github.com/sanskrit-lexicon/CORRECTIONS/blob/main/Kochergina-1987_29007.txt) | a 29 006-line letter-spaced **headword list** | no — a word list, no entry bodies, no sense structure |
-| `SanskritGrammar/KocherginaUchebnik_1998/` | the 1998 **textbook** (methodichka, exercise coverage, gradation metalanguage) | no — pedagogy, not the 1987 dictionary |
-| the BLI B1 gold set | **500 of 500 cards** carry a `Kochergina` gloss label | it is the *consumer*, not the source |
+| [`KOCHERGINA_CORRECTIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md) | the tracked correction ledger (created 15-08-2026 under H798) | **the store** — recorded + refuted rows, per-row consumer actions |
+| [`CORRECTIONS/Kochergina-1987_29007.txt`](https://github.com/sanskrit-lexicon/CORRECTIONS/blob/main/Kochergina-1987_29007.txt) | a 29 006-line letter-spaced **headword list** | not a ledger — no entry bodies, no sense structure |
+| `SanskritGrammar/KocherginaUchebnik_1998/` | the 1998 **textbook** (methodichka, exercise coverage, gradation metalanguage) | pedagogy, not the 1987 dictionary |
+| the BLI B1 gold set | **500 of 500 cards** carry a `Kochergina` gloss label | the *consumer*, not the source |
 
-**Why the obvious home does not fit.** [CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS)
-is purpose-built for exactly this — "where every correction ever accepted across the whole
-project is recorded, per dictionary, as a durable audit trail". But its `dictionaries/`
-tree and its `cfr.tsv` correction-form report are keyed by **CDSL dictionary codes**
-(`ACC AE AP AP90 BEN BHS BOP BOR BUR CAE CCS GRA GST IEG INM KRM MCI MD MW MW72 MWE PD PE
-PGN PUI PW PWG SCH SHS SKD` …). Kochergina 1987 is a third-party Russian dictionary Cologne
-does not publish, so it has **no code, no `dictionaries/` slot, and zero rows in
-`cfr.tsv`** — only that stray headword list. The correction store is scoped to what CDSL
-owns; this dictionary sits outside it by construction, not by oversight.
+**Why the store is not a row in [CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS)**
+— unchanged from the 15-08 finding, and now load-bearing as the store's *design
+rationale* rather than a gap report: [CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS)
+is keyed by **CDSL dictionary codes** (`ACC AE AP AP90 BEN BHS BOP BOR BUR CAE CCS GRA GST
+IEG INM KRM MCI MD MW MW72 MWE PD PE PGN PUI PW PWG SCH SHS SKD` …). Kochergina 1987 is a
+third-party Russian dictionary Cologne does not publish — no code, no `dictionaries/`
+slot, zero `cfr.tsv` rows, only the stray headword list above. So the ledger lives in the
+repo that **consumes** Kochergina, corrects nothing automatically, and keeps refuted
+claims deliberately so they are never re-raised as new.
 
-**The integration need H798 said would justify creating a store now exists.** H798's
-prerequisite 2 offered "create a lightweight store now vs. defer until a real integration
-need appears". The BLI B1 gold set is that need: Kochergina is the gloss authority on
-**every one of its 500 cards**, that set is live in the Do Today queue awaiting human
-annotation, and it feeds P@1/P@5/MRR scoring. Two of the four pending corrections are
-sense-level (`okas` — drop the unattested «родина»; `guda` — sense order), so an uncorrected
-Kochergina propagates straight into gold and then into the retrieval metric.
+**The BLI B1 integration need: store-side met, consumer-side still open (03-10-2026).**
+What the 15-08 finding called the need — Kochergina is the gloss authority on **every one
+of the 500 cards**, the set awaits human annotation, it feeds P@1/P@5/MRR — is exactly why
+the store was created then and there. What is **still unmet**: the
+[`bli_gold_b1_500`](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+sheet is still ⏳ awaiting MG's pass-1 vote (rebuilt byte-identical 15-08,
+[H2778](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2778-Opus_SanskritLexicography_bli-gold-b1-500-rebuild-host-h1210-inputs-gone_15.08.26.md)),
+and the [annotation protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md)
+does not yet cross-link [the store](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md)
+(metadoc backlog item 4) — an annotator labelling `okas`/`okya`/`guda` today still does
+not meet the corrections at annotation time, so the corrections reach gold only through an
+annotator who read the store unprompted.
 
-**How to apply:** the four votes are blocked on a human ruling about *where*, not on
-lexicography — treat "no store" as the finding, never as licence to edit blind (H798's own
-instruction). Two caveats survive into whatever store is chosen: H779's canonical
-re-verification **REFUTED** the `guda` gender defect (Kochergina already carries a separate
-`gudā` f. entry, so "m.pl.→f.pl." is likely a no-op — verify before applying), and MG's
-17-07 notes require cross-checks against Elizarenkova's Ригведа for `okas` and Druzhinin's
-Aṣṭāṅgahṛdaya for `guda` before the sense wording is final. Kin: the CDSL-scoped store is
-also why `learnsanskrit.ru` errata have never had a home.
+**Name-collision guard.** `Systema-Sanscriticum` kochergina branches — merged as
+`fix/h5233-polish-rebased` ([PR #2888](https://github.com/gasyoun/Systema-Sanscriticum/pull/2888),
+28-09-2026; the literal `fix/h5233-kochergina-polish` no longer exists on the remote) —
+are **Kochergina the teacher's** public group canvas on `/raspisanie/kochergina`
+([H5233](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5233-OxAlpha_Systema-Sanscriticum_public-groups-canvas-join_21.09.26.md)):
+a product surface named after a person, with nothing to do with the 1987 dictionary. Any
+"Kochergina work in Systema" signal is this homonym, not the lexicon.
+
+**How the correction takes effect now:** through the store's *Consumer action* column —
+BLI annotation, RussianTranslation equivalence work and the future learnsanskrit.ru report
+follow it; nothing edits Kochergina itself, which is not ours to edit (H798's own
+instruction, still standing). Kin: the CDSL-scoped store is also why `learnsanskrit.ru`
+errata have never had a home outside this ledger.
 
 > Opus 5 (`claude-opus-5`) · 15-08-2026 · H798 prerequisite 2 (store located: none exists).
 > Evidence: `CORRECTIONS/dictionaries/` listing + `cut -f2 cfr.tsv | sort -u` (no Kochergina
 > code); `grep -c Kochergina` over the BLI B1 500-card sheet = 500/500. §540 takes the next number.
+>
+> OxAlpha (`opencode/z-ai/glm-5.3-flash`) · 03-10-2026 · [H5764](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5764-OxAlpha_SanskritLexicography_kochergina-store-verdict_03.10.26.md)
+> re-adjudication. Evidence: store commit `5499a0a4` + [v1.144.60](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.60);
+> [H2863](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2863-Opus_SanskritLexicography_kochergina-guda-druzhinin-crosscheck_16.08.26.md)
+> [PR #1739](https://github.com/gasyoun/SanskritLexicography/pull/1739) merged; Uprava close
+> [e0075c0](https://github.com/gasyoun/Uprava/commit/e0075c0ec5e47eae245689b82177848b5e87e005);
+> `bli_gold_b1_500` registry row still ⏳ awaiting vote; Systema `git ls-remote --heads` carries
+> no `fix/h5233-kochergina-polish` (merged as `fix/h5233-polish-rebased`, #2888).
 
 ### §540. Mixed-script words hide from every search that assumes one alphabet per word — and the repair map has to be transliteration, not visual shape
 
