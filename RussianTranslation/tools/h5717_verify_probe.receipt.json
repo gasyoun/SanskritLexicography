@@ -1,0 +1,59 @@
+{
+  "probe": "h5717_verify_probe.py",
+  "generated": "2026-10-03T05:40:27+00:00",
+  "handoff": "H5717",
+  "target_commit": "c27a073c",
+  "baseline_commit": "3369fb2d",
+  "primaries": [
+    "/Users/mac/Documents/GitHub/csl-orig/v02/mw/mw.txt",
+    "/Users/mac/Documents/GitHub/csl-orig/v02/pwg/pwg.txt"
+  ],
+  "checks": [
+    {
+      "check": "MW: no lexicographer sense in DanaMjaya records",
+      "ok": true,
+      "evidence": "scanned bodies of L99287–L99299 for 'lexicograph' (case-insensitive): 0 hits"
+    },
+    {
+      "check": "MW L99297: author-of-Dala-rūpaka sense",
+      "ok": true,
+      "evidence": "<L>99297<pc>508,2<k1>DanaMjaya<k2>Dana—M-jaya/<e>3B\n¦ of the author of the <s1>Dala-rūpaka</s1> &c. (see below)<info lex"
+    },
+    {
+      "check": "MW L99300–99301.1: dictionary TITLE headwords",
+      "ok": true,
+      "evidence": "koSa/nAmamAlA/niGaRwu records carry '<ab>N.</ab> of dictionaries'"
+    },
+    {
+      "check": "PWG L36018 2〈h〉: 'eines Lexicographen PRAUḌHAMANOR.'",
+      "ok": true,
+      "evidence": "<div n=\"2\">— h〉 <ab>N. pr.</ab> eines <is>Vyāsa</is> <ls>VP. 273</ls>. <ls>DEVĪBHĀG. P.</ls>_in_<ls>Verz. d. Oxf. H. 80,a,13</ls>. eines Kön"
+    },
+    {
+      "check": "PWG L36018 2〈h〉: 'Verfassers des Dharmapradīpa'",
+      "ok": true,
+      "evidence": "same record body"
+    },
+    {
+      "check": "PWG L76433: addenda/corrigendum entry (pc 5-1518)",
+      "ok": true,
+      "evidence": "corrigendum 'Z. 3 lies ... st. ...' present in body"
+    },
+    {
+      "check": "PWG L76433 h〉: Daśarūpaka author + Wörterbuch title",
+      "ok": true,
+      "evidence": "<div n=\"2\">— h〉 auch <ab>N. pr.</ab> des Verfassers des <is>Daśarūpaka</is>. {#˚niGaRwu#} Titel eines Wörterbuchs <ls>Verz. d. Oxf. H. 162,b"
+    },
+    {
+      "check": "commit c27a073c touches exactly the two intended files",
+      "ok": true,
+      "evidence": "['RussianTranslation/PWG_RU_NWS_RESCUED2_GLMDRAFT_03-10-2026.md', 'RussianTranslation/changelog_queue/2026-10-03-h5717-nws-factcheck-verification.md']"
+    },
+    {
+      "check": "draft card lines unchanged vs 3369fb2d",
+      "ok": true,
+      "evidence": "both card two-line regions byte-identical across the edit"
+    }
+  ],
+  "verdict": "PASS"
+}
