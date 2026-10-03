@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 24-09-2026_
+_Created: 06-08-2026 · Last updated: 03-10-2026_
 
 This file guides Claude Code in this repository.
 
@@ -65,6 +65,15 @@ checking digitized text against the scan).
 
 Dictionary codes: AP, BHS, BUR, CAE, CCS, GRA, INM, MD, MW, PD, PWG, PWK, SCH,
 SKD, VCP, VEI (table: [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md)).
+
+**Tooling routes (wired H5790, 03-10-2026):** entry-level census/anatomy of an
+export (lemma/grammar/etymology/senses/citations into teaching assets) goes
+through [`/entry-anatomy`](https://github.com/gasyoun/claude-config/blob/main/commands/entry-anatomy.md);
+regenerating `now-2026/` from live csl-orig and diffing against the frozen
+`then-2014/` snapshot is [`/headword-export-regen`](https://github.com/gasyoun/claude-config/blob/main/commands/headword-export-regen.md);
+a falsifiable two-dictionary comparative test (omission / sense-order /
+fitted-index, independent control + shuffled null) runs through
+[`/dict-comparative-test`](https://github.com/gasyoun/claude-config/blob/main/commands/dict-comparative-test.md).
 
 ## Dual changelog — shared 1.144.x namespace (H3258)
 
