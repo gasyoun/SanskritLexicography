@@ -1,6 +1,6 @@
 # PUBLICATION_PIPELINE_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 20-08-2026_
+_Created: 18-07-2026 · Last updated: 04-10-2026_
 
 Companion record for [docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) (subsystem deep manual, H608).
 
@@ -15,10 +15,12 @@ Authored 11-07-2026 (H608), touched 14-07 and 18-07 (H740 verdict). Refreshed 18
 ## Verification
 
 ```
-LAST_VERIFIED: 20-08-2026
-VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
-COMMANDS_SPOT_RUN: 3
+LAST_VERIFIED: 04-10-2026
+VERIFIED_BY: GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash), H5991
+COMMANDS_SPOT_RUN: 4
 ```
+
+H5991 (04-10-2026): 12 cited paths exist; book `.gitignore` still allowlists `!chapters/*.md`; `test_docs_site.py` still 4 tests, `build_site.py` still 103 lines, wiki/research still 10 docs, `merge_BU.md` still copy-only (source absent as documented); CONTRADICTIONS §8 false-DOI ruling in place. Commands run for real: `build_site.py --sync` (exit 0, synced 10 docs — 8 wiki copies were stale vs sources, restored uncommitted) and `pytest docs_site/test_docs_site.py -q` (4 passed, 0.18 s). Drift fixed: §1 papers row + a §2 sweep note for the same-day paper-priv sweep (#2385 — manuscripts now private-repo-only).
 
 H3059 (20-08-2026): `pytest docs_site/test_docs_site.py -q` — 4 passed in 0.59 s; `build_site.py` still 103 lines; wiki/research still 10 files; papers/ is 27 `.md` + 9 `.csv`; `chapters/` now has all 14 `ch01`–`ch14` files plus intro, 5 bridges, conclusion.
 
@@ -49,6 +51,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 04-10-2026 | H5991 manual_staleness refresh (LAST_VERIFIED bump + 4 spot probes incl. real --sync + pytest; papers row/sweep note for #2385) | GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash) |
 | 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |

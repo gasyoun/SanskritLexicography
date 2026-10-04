@@ -1,6 +1,6 @@
 # REVIEW_GOLD_VOTING_DEEP_MANUAL.md — metadoc
 
-_Created: 25-07-2026 · Last updated: 20-08-2026_
+_Created: 25-07-2026 · Last updated: 04-10-2026_
 
 Companion record for
 [REVIEW_GOLD_VOTING_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md).
@@ -23,10 +23,12 @@ Companion record for
 ## Staleness contract (H1246 detector)
 
 ```text
-LAST_VERIFIED: 20-08-2026
-VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
-COMMANDS_SPOT_RUN: 6
+LAST_VERIFIED: 04-10-2026
+VERIFIED_BY: GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash), H5991
+COMMANDS_SPOT_RUN: 4
 ```
+
+H5991 (04-10-2026): 19 component paths exist; `validate_decisions.py --selftest` OK (10 checks, output matches §3.3 verbatim); `validate_decisions.py review/decisions.json` still REJECTED (UNBOUND, named reason); locks dir holds 52 locks incl. both §3.1 starters; gold chain still **15** `gold_*.py`. Drift fixed: `src/build_*sheet*.py` census 13 → **16**; emitter pin line updated (requirements.txt pins a git commit `b1606944`, not `v0.17.1`; local `csl_pyutil.__version__` 0.20.0 → 0.25.0).
 
 ## Verification block — what ran, 25-07-2026 (authoring pass)
 
@@ -81,6 +83,7 @@ secret grep clean, no personal data (reviewer fields empty).
 
 | Date | Change | Model |
 |---|---|---|
+| 04-10-2026 | H5991 manual_staleness refresh (LAST_VERIFIED bump + 4 spot probes; sheet-script census 13→16; csl-pyutil pin line corrected) | GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash) |
 | 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | Manual + metadoc authored; binding standard shipped; starter packet generated (Wave 1, H1404) | Fable 5 (`claude-fable-5`) |
