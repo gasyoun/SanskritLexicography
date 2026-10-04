@@ -1,6 +1,6 @@
 # Руководство по рабочему пространству SanskritLexicography — для человека
 
-_Created: 10-07-2026 · Last updated: 20-08-2026_
+_Created: 10-07-2026 · Last updated: 04-10-2026_
 
 Парное руководство для агентов (по-английски):
 [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md).
@@ -80,10 +80,12 @@ PWG→русский), исследовательские заметки и че
 
 ## 5. Что ждет именно человека
 
-- **Голосование P2 ACC×NCC** — HTML-лист на 49 019 строк (локальный,
-  вне git), потом `apply_p2_decisions.py`. Внимание:
+- **Спот-чек P2 ACC×NCC — 686 карточек** ([P2_AGENT_ADJUDICATION_REPORT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md),
+  H1657): все 49 019 строк Tier C/D уже получили вердикты агента
+  (`p2_agent_verdicts.jsonl.gz`); человек меряет арбитра на стратифицированной
+  выборке, потом `p2_precision_gate.py` + `apply_p2_decisions.py`. Внимание:
   [PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264) слит еще
-  09-07-2026 — воротами остается именно голос, а не PR.
+  09-07-2026 — воротами был голос по полному листу, теперь спот-чек арбитра.
 - **Листы H178** — 4 HTML-листа оценочного bake-off (`review/h178_*_sheet.html`).
 - **Листы H180** — типология κ, порог learner-словника, spot-check склейки.
 - **Печатная готовность** — подать ~16 опечаток MW/PWG, решить по ~8/~7
